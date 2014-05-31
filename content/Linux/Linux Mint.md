@@ -64,7 +64,6 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-lang-cjk](http://packages.ubuntu.com/ja/texlive-lang-cjk)
 - [Ubuntu -- パッケージ検索結果 -- texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
 - [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
