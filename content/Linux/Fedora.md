@@ -20,6 +20,7 @@ pukiwiki: "Linux/Fedora"
 Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
 
 - [Fedora Project](http://fedoraproject.org/)
+- [http://wiki.sugarlabs.org/go/Fedora](http://wiki.sugarlabs.org/go/Fedora)
 
 ## ダウンロード {#j75c78dc}
 
