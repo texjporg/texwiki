@@ -45,7 +45,7 @@ KDE
 
 ### Arch Linux {#c209770f}
 
-- [https://www.archlinux.org/packages/?q=kdegraphics-okular](https://www.archlinux.org/packages/?q=kdegraphics-okular)
+- [https://www.archlinux.org/packages/?name=kdegraphics-okular](https://www.archlinux.org/packages/?name=kdegraphics-okular)
 
 ### Linux Mint {#d3c8be06}
 
