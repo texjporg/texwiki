@@ -97,12 +97,10 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 ### Linux Mint {#x6d699a5}
 
 - [http://packages.ubuntu.com/ja/texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
-- [http://packages.ubuntu.com/ja/latex-beamer](http://packages.ubuntu.com/ja/latex-beamer)
 
 ### Debian {#h1b8334f}
 
 - [https://packages.debian.org/ja/texlive-latex-recommended](https://packages.debian.org/ja/texlive-latex-recommended)
-- [https://packages.debian.org/ja/latex-beamer](https://packages.debian.org/ja/latex-beamer)
 
 ## Beamer 関連パッケージ {#k4220bf5}
 
