@@ -62,24 +62,17 @@ $ sudo dpkg -i texlive-local_2013-1_all.deb
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
 - [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
 
+TeX Live/Debian をフルインストールする場合は
+
 ```
-$ sudo apt-get install texlive-full
-$ sudo apt-get install xzdec
+$ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-#### 注意点 {#sec567fd}
+Debian GNU/Linux sid で日本語関連のパッケージのみインストールする場合は
 
 ```
-$ tlmgr update --self
-(running on Debian, switching to user mode!)
-cannot setup TLPDB in /home/`logname`/texmf at /usr/bin/tlmgr line 5335.
-```
-
-と表示される場合は
-
-```
-$ sudo apt-get install xzdec
+$ sudo apt-get install texlive-lang-japanese xzdec
 $ tlmgr init-usertree
 ```
 
