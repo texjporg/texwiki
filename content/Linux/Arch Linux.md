@@ -224,6 +224,7 @@ $ wine AdbeRdr11007_ja_JP.exe
 インストールが途中で終了してしまう場合は
 
 ```
+$ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 $ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 ```
 
