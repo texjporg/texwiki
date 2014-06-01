@@ -58,13 +58,20 @@ chrome://plugins
 
 を入力
 
-### Chrome PDF Viewer <a id="chromepdfviewer"></a> {#wfd819f9}
+### Chrome/Chromium PDF Viewer <a id="chromepdfviewer"></a> {#wfd819f9}
 
 - [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
 - [http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api](http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api)
 
-Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があります．<br>
-Linux 版の Chromium にコマンドラインから引数を与えて Chrome PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要はありません．<br>
+Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があります．<br>
+Linux 版の Chromium にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要はありません．<br>
+
+#### PDFium <a id="pdfium"></a> {#l83f1380}
+
+PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリングエンジンです．<br>
+
+- [https://code.google.com/p/pdfium/](https://code.google.com/p/pdfium/)
+- [https://pdfium.googlesource.com/pdfium/](https://pdfium.googlesource.com/pdfium/)
 
 ## 拡張機能 {#u71b1117}
 
