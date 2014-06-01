@@ -38,6 +38,7 @@ pukiwiki: "Linux/Ubuntu"
 ## Ubuntu とは {#i6bcb07d}
 
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
+高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) をおすすめします．<br>
 
 - [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
 - [Home - Ubuntu Wiki](https://wiki.ubuntu.com/)
@@ -74,6 +75,7 @@ Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの 
 Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Lubuntu](http://lubuntu.net/)
+- [Lubuntu 日本語情報サイト - lubuntu を使おう](http://lubuntu-japan.jimdo.com/)
 
 ### 派生版 {#m65a8766}
 
@@ -117,24 +119,17 @@ $ sudo dpkg -i texlive-local_2013-1_all.deb
 
 ### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
+TeX Live/Debian をフルインストールする場合は
+
 ```
-$ sudo apt-get install texlive-full
-$ sudo apt-get install xzdec
+$ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-#### 注意点 {#u1cbe355}
+Ubuntu 14.10 以降で日本語関連のパッケージのみインストールする場合は
 
 ```
-$ tlmgr update --self
-(running on Debian, switching to user mode!)
-cannot setup TLPDB in /home/`logname`/texmf at /usr/bin/tlmgr line 5335.
-```
-
-と表示される場合は
-
-```
-$ sudo apt-get install xzdec
+$ sudo apt-get install texlive-lang-japanese xzdec
 $ tlmgr init-usertree
 ```
 
@@ -199,6 +194,36 @@ $ sudo apt-get install mupdf
 [Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
+
+```
+$ sudo apt-get install wine wine-gecko wine-mono
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.07/ja_JP/AdbeRdr11007_ja_JP.exe
+$ wine AdbeRdr11007_ja_JP.exe
+```
+
+インストールが途中で終了してしまう場合は
+
+```
+$ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+$ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行します．<br>
+
+```
+$ wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe
+```
+
+```
+Adobe Reader の保護モード
+システム設定の互換性に問題があるので、 Adobe Reader を保護モードで開けません。保護モードを無効にして Adobe Reader を開きますか？
+```
+
+```
+ ◯ 保護モードを無効にして開く(O)
+(●)常に保護モードを無効にして開く(A) ← 常に保護モードを無効にして開くを選択
+ ◯ 保護モードを無効にした状態では開かない(D)
+```
 
 ## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
