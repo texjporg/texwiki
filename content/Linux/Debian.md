@@ -29,8 +29,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
 - [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
-- [Debian -- パッケージ検索結果 -- texlive-latex-recommended](https://packages.debian.org/ja/texlive-latex-recommended)
-- [Debian -- パッケージ検索結果 -- texlive-fonts-recommended](https://packages.debian.org/ja/texlive-fonts-recommended)
+- [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
 - [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
 - [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
@@ -69,10 +68,10 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Debian GNU/Linux sid で日本語関連のパッケージのみインストールする場合は
+Debian GNU/Linux sid で日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
-$ sudo apt-get install texlive-lang-japanese xzdec
+$ sudo apt-get install texlive-lang-japanese texlive xzdec
 $ tlmgr init-usertree
 ```
 
@@ -129,7 +128,7 @@ $ sudo apt-get install qpdfview
 ## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#fff66c5d}
 
 ```
-$ sudo apt-get install mupdf
+$ sudo apt-get install mupdf mupdf-tools
 ```
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine <a id="adobereader"></a> {#o1495f80}
@@ -190,6 +189,11 @@ $ wine AdbeRdr11007_ja_JP.exe
 
 ```
 $ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行して
+
+```
 $ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 ```
 
