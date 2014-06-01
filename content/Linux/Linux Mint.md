@@ -64,8 +64,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
-- [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
+- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
@@ -100,10 +99,10 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Linux Mint 18 以降で日本語関連のパッケージのみインストールする場合は
+Linux Mint 18 以降で日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
-$ sudo apt-get install texlive-lang-japanese xzdec
+$ sudo apt-get install texlive-lang-japanese texlive xzdec
 $ tlmgr init-usertree
 ```
 
@@ -160,7 +159,7 @@ $ sudo apt-get install qpdfview
 ## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#c80fa1e6}
 
 ```
-$ sudo apt-get install mupdf
+$ sudo apt-get install mupdf mupdf-tools
 ```
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#bdbc2c20}
@@ -179,6 +178,11 @@ $ wine AdbeRdr11007_ja_JP.exe
 
 ```
 $ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行して
+
+```
 $ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 ```
 
