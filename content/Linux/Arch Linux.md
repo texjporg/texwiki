@@ -225,6 +225,11 @@ $ wine AdbeRdr11007_ja_JP.exe
 
 ```
 $ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行して
+
+```
 $ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 ```
 
