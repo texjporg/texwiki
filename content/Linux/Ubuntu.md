@@ -15,11 +15,11 @@ pukiwiki: "Linux/Ubuntu"
 
 <div style="text-align:left"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png" alt="Ubuntu GNOME" style="float:right"></div>
 
-<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right"></div>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right">
 
-<div style="text-align:left"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right"></div>
+<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right"></div>
 
-<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right"></div>
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -82,8 +82,7 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
-- [Ubuntu -- パッケージ検索結果 -- texlive-fonts-recommended](http://packages.ubuntu.com/ja/texlive-fonts-recommended)
+- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
@@ -114,10 +113,10 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Ubuntu 14.10 以降で日本語関連のパッケージのみインストールする場合は
+Ubuntu 14.10 以降で日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
-$ sudo apt-get install texlive-lang-japanese xzdec
+$ sudo apt-get install texlive-lang-japanese texlive xzdec
 $ tlmgr init-usertree
 ```
 
@@ -174,7 +173,7 @@ $ sudo apt-get install qpdfview
 ## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#s8c9b663}
 
 ```
-$ sudo apt-get install mupdf
+$ sudo apt-get install mupdf mupdf-tools
 ```
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#jc822238}
@@ -193,6 +192,11 @@ $ wine AdbeRdr11007_ja_JP.exe
 
 ```
 $ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行して
+
+```
 $ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
 ```
 
