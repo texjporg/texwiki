@@ -283,3 +283,4 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Open Source Watershed](http://oswatershed.org/)
 - [30 人の Linux カーネル開発者](https://jp.linux.com/linux-community/30linuxkerneldevelopers)
 - [Linux のシステム管理，Linux でソフトウエア開発環境やデスクトップ環境を作る](http://www.kkaneko.com/rinkou/linux/)
+- [デスクトップ環境 OS 紹介サイト - Linux を入れよう](http://installlinux.jimdo.com/)
