@@ -248,7 +248,7 @@ SVN　　　　　　　　　　　　　　Asymptote PDFチェーン　\[txs:/
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ Replace Tab by Whitespace<br>
+コマンドの補完　　　　　　　　字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ タブを空白で置換<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
@@ -317,7 +317,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
 
-詳細なエディタ設定　　　　　 字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ Replace Tab by Whitespace<br>
+詳細なエディタ設定　　　　　 字下げモード:　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[字下げと字下げの解除を自動的に行う　　▼\]</ins></span> ☐ タブを空白で置換<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
 
