@@ -38,6 +38,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 ### 公式派生版 {#i77fdd5e}
 
 - [Derivatives](http://www.ubuntu.com/about/about-ubuntu/derivatives)
+- [Ubuntu 派生ディストリビューション その3 - Ubuntu・Kubuntu・Xubuntu・Lubuntu・Ubuntu GNOMEの比較 （14.04版）](http://kledgeb.blogspot.jp/2014/04/ubuntu-3-ubuntukubuntuxubuntulubuntuubu.html)
 
 #### Ubuntu GNOME とは {#fa2981c9}
 
