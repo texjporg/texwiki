@@ -138,7 +138,7 @@ $ sudo apt-get install mupdf
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
-### Debian GNU/Linux wheezy x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
+### Debian GNU/Linux sid x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
 
 #### 64-bit OS 上での 32-bit バイナリの取り扱いに関して {#u2fe7284}
 
@@ -181,10 +181,22 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 ```
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
-$ sudo apt-get install wine-bin:i386
+$ sudo apt-get install wine
 $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.07/ja_JP/AdbeRdr11007_ja_JP.exe
 $ wine AdbeRdr11007_ja_JP.exe
-$ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Reader/AcroRd32.exe
+```
+
+インストールが途中で終了してしまう場合は
+
+```
+$ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+$ wine ~/.wine/drive_c/Program\ Files/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
+```
+
+を実行します．<br>
+
+```
+$ wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe
 ```
 
 ```
