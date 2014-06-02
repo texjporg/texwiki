@@ -195,6 +195,7 @@ TeX Live に収録されていないプログラムを使用したい場合は W
 - Fortran
 - D
 - Go
+- Rust
 - Haskell
 - F#
 - C#
@@ -207,6 +208,7 @@ TeX Live に収録されていないプログラムを使用したい場合は W
 - [Perl](/Perl/)
 - Lua
 - LuaJIT
+- Julia
 - [Lisp](/Lisp/)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
