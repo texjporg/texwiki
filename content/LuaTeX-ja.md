@@ -212,4 +212,5 @@ polyglossia は TeX Live にも W32TeX にもインストールされていま�
 - [Conflict between luatex-ja and fontspec](http://tex.stackexchange.com/questions/95764/conflict-between-luatex-ja-and-fontspec)
 - [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
 - [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
+- [LuaTeX で名刺作り](http://fugenji.org/thomas/diary/index.php?no=r1169)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
