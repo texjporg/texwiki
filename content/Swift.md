@@ -13,4 +13,9 @@ pukiwiki: "Swift"
 - [Welcome to Swift](https://developer.apple.com/library/prerelease/ios/referencelibrary/GettingStarted/LandingPage/)
 - [The Swift Programming Language: About Swift](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/)
 - [http://qiita.com/tags/swift](http://qiita.com/tags/swift)
-- [Objective-Cに替わる新しいプログラミング言語Swiftの登場](http://dev.classmethod.jp/smartphone/swift/)
+- [http://dev.classmethod.jp/tag/swift/](http://dev.classmethod.jp/tag/swift/)
+- [Swift言語ブログ](http://8kpixel.blogspot.jp/)
+
+### IDE・エディタ {#f99db546}
+
+- [Xcode](https://developer.apple.com/xcode/)
