@@ -124,6 +124,11 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 使い方 {#qabeb774}
 
+### コマンドラインオプション {#tc481bdb}
+
+[http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup)
+の do_args を参照．
+
 ### PDF のバージョンを指定する {#b272a636}
 
 - [pdfの図が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=690)
