@@ -58,6 +58,7 @@ Windows, OS X, Linux, Android, iOS
 
 ### Arch Linux {#y10f7abd}
 
+- [https://www.archlinux.org/packages/?name=mupdf](https://www.archlinux.org/packages/?name=mupdf)
 - [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
 
 ### Linux Mint {#od9b1036}
