@@ -684,6 +684,7 @@ W32TeX, TeX Live の他に MiKTeX もあります．
 - Fortran
 - D
 - Go
+- Rust
 - Haskell
 - Java
 - JavaScript
@@ -693,6 +694,7 @@ W32TeX, TeX Live の他に MiKTeX もあります．
 - [Perl](/Perl/)
 - Lua
 - LuaJIT
+- Julia
 - [Lisp](/Lisp/)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
