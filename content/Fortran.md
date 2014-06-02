@@ -34,6 +34,7 @@ pukiwiki: "Fortran"
 - [Fortran日記](http://fortran.cscblog.jp/)
 - [なんとなく始めたブログ: fortran](http://sak12.blogspot.jp/search/label/fortran)
 - [Fortrantips](http://pmt.sakura.ne.jp/wiki/index.php?title=Fortrantips)
+- [&quot;fortran&quot; - 記事一覧 - いぐにすさんのメモログ](http://ig.hateblo.jp/archive/category/fortran)
 - [Fortranで水理計算](http://fortran.godo-tys.jp/dokuwiki/fortran)
 - [https://github.com/OpenFortranProject](https://github.com/OpenFortranProject)
 - [Fortran Archives - Moonmile Solutions Blog](http://www.moonmile.net/blog/archives/category/dev/fortran)
