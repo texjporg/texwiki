@@ -638,6 +638,7 @@ VirtualBox などの仮想マシン上に Linux をインストールして TeX 
 　　　　　Fedora<br>
 　　　　　Gentoo Linux<br>
 　　　　　Linux Mint<br>
+　　　　　Lubuntu<br>
 　　　　　openSUSE<br>
 　　　　　Vine Linux<br>
 
