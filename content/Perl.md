@@ -55,6 +55,10 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 
 がシステム環境変数 Path に追加されます．
 
+#### ActivePerl {#jad19d56}
+
+- [http://downloads.activestate.com/ActivePerl/releases/](http://downloads.activestate.com/ActivePerl/releases/)
+
 #### MSYS2 {#wedf6406}
 
 ```
