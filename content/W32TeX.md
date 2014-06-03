@@ -243,9 +243,8 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 32-bit バイナリは 32-bit Windows と 64-bit Windows の両方で動作します。<br>
 64-bit バイナリは 64-bit Windows でのみ動作します。<br>
-64-bit バイナリを使用する場合は、必ず対応する 32-bit 用アーカイブも<br>
-入手してください。何故ならば、64-bit 用アーカイブには、バイナリだけしか<br>
-入っていないからです。<br>
+64-bit バイナリを使用する場合は、必ず対応する 32-bit 用アーカイブも入手してください。<br>
+何故ならば、64-bit 用アーカイブには、バイナリだけしか入っていないからです。<br>
 また、64-bit バイナリは、Ghostscript が必要な場合、64-bit の Ghostscript<br>
 を使用するようになっていますから、64-bit の Ghostscript (例えば gs910w64full-gpl.exe)<br>
 をインストールしておいて下さい。<br>
@@ -646,8 +645,9 @@ Windows PowerShell やコマンド プロンプトあるいは TeX 関連のソ�
 [Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です。<br>
 PS ファイルを PDF ファイルに変換することができます。
 
-もし古い Ghostscript がインストールされている場合は，環境変数 GS_LIB は
-必ず削除しておきます（方法は上で説明した 「環境変数 PATH の設定」 の場合と同じです）。
+もし古い Ghostscript がインストールされていて環境変数 GS_LIB が存在する場合は<br>
+環境変数 GS_LIB を必ず削除しておきます。<br>
+環境変数 GS_LIB を削除する方法は上で説明した 「環境変数 PATH の設定」 の場合と同じです。<br>
 
 インストールの詳細に関しては<br>
 
