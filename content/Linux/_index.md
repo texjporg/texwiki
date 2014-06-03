@@ -199,7 +199,6 @@ TeX Live に収録されていないプログラムを使用したい場合は W
 - Haskell
 - F#
 - C#
-- VB
 - Java
 - JavaScript
 - PHP
