@@ -32,10 +32,14 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 ### 派生版 {#w5708e1c}
 
-- [IronRuby](http://ironruby.codeplex.com/)
 - [JRuby](http://jruby.org/)
 - [Rubinius](http://rubini.us/)
 - [Topaz](http://topazruby.com/)
+
+#### mruby (組み込み向け Ruby) {#we4042fb}
+
+- [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
+- [mruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/mruby)
 
 ## インストール {#oe1e1c67}
 
@@ -109,11 +113,6 @@ $ pacman -S ruby
 #### Gentoo Linux {#wf560410}
 
 - [https://packages.gentoo.org/package/dev-lang/ruby](https://packages.gentoo.org/package/dev-lang/ruby)
-
-## mruby (組み込み向け Ruby) {#we4042fb}
-
-- [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
-- [mruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/mruby)
 
 ## fwdevince <a id="fwdevince"></a> {#x681ced4}
 
