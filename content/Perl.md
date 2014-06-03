@@ -9,7 +9,7 @@ pukiwiki: "Perl"
 
 ## [Perl](http://www.perl.org/) → 問題が発生する場合は [Python](/Python/), [Ruby](/Ruby/), JavaScript, PHP を使用する {#rf8f3586}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/200px-Camelia.svg.png" alt="Perl" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/500px-Camelia.svg.png" alt="Perl" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -17,6 +17,10 @@ pukiwiki: "Perl"
 
 - [Perl 6](http://perl6.org/)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
+
+### インストール (Windows) {#jc58fcd6}
+
+- [http://rakudo.org/downloads/star/](http://rakudo.org/downloads/star/)
 
 ### インストール (Linux) {#yc5da695}
 
