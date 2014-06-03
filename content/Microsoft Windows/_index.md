@@ -673,30 +673,6 @@ W32TeX, TeX Live の他に MiKTeX もあります．
 - [Chocolatey NuGet](http://chocolatey.org/)
     <!-- - -http://chocolatey.org/packages/texlive -->
 
-## プログラミング言語 {#ub9d2035}
-
-- C, C++
-    - Microsoft Visual Studio Express
-    - [MinGW](/MinGW/)
-    - [Cygwin](/Cygwin/)
-- F#, C#, VB
-    - Microsoft Visual Studio Express
-- Fortran
-- D
-- Go
-- Rust
-- Haskell
-- Java
-- JavaScript
-- PHP
-- [Python](/Python/)
-- [Ruby](/Ruby/)
-- [Perl](/Perl/)
-- Lua
-- LuaJIT
-- Julia
-- [Lisp](/Lisp/)
-
 ## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
 
 LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
