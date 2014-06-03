@@ -94,6 +94,7 @@ make latexpdfja
 を実行します．<br>
 
 - [https://bitbucket.org/keik/sphinx-lualatex](https://bitbucket.org/keik/sphinx-lualatex)
+- [SphinxのLaTeXのフォーマットをいじる](http://gadget-mac.undo.jp/blog/2014/06/sphinx%E3%81%AElatex%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%82%92%E3%81%84%E3%81%98%E3%82%8B)
 - [WindowsでSphinxからPDFファイルを作成する](http://hidemium.hatenablog.com/entry/2014/05/28/070000)
 - [Succeeded to make a PDF including CJK text by sphinx](https://groups.google.com/forum/#!topic/sphinx-users/iaRNBHC_f5o)
 - [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
