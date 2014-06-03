@@ -11,7 +11,7 @@ pukiwiki: "OCaml"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## OCaml {#s5b2a93b}
+## Summary {#s5b2a93b}
 
 - [The Caml language: Home](http://caml.inria.fr/)
 - [OCaml.jp](http://ocaml.jp/)
