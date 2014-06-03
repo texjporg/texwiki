@@ -19,7 +19,9 @@ pukiwiki: "Swift"
 - [Swift言語ブログ](http://8kpixel.blogspot.jp/)
 - [http://stackoverflow.com/questions/tagged/swift-language](http://stackoverflow.com/questions/tagged/swift-language)
     - [http://stackoverflow.com/questions/24004732/how-to-call-c-from-swift](http://stackoverflow.com/questions/24004732/how-to-call-c-from-swift)
+    - [http://stackoverflow.com/questions/24002821/how-do-you-use-namespaces-in-swift](http://stackoverflow.com/questions/24002821/how-do-you-use-namespaces-in-swift)
 - [Xcode 6 beta 入れた](http://xoyip.hatenablog.com/entry/2014/06/03/065140)
+- [一生涯プログラマ : Swift](http://blog.livedoor.jp/rapple_lab/archives/cat_361083.html)
 
 ### benchmark {#h3bbff60}
 
