@@ -9,12 +9,13 @@ pukiwiki: "OCaml"
 
 ## OCaml {#y1d08e58}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆目次◆</strong>　　</span><br>
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## OCaml 4.01.0 {#s5b2a93b}
+## OCaml {#s5b2a93b}
 
 - [The Caml language: Home](http://caml.inria.fr/)
 - [OCaml.jp](http://ocaml.jp/)
+- [http://lists.idyll.org/pipermail/caml-news-weekly/](http://lists.idyll.org/pipermail/caml-news-weekly/)
 - [OCaml Advent Calendar 2012](http://partake.in/events/680a8735-b35c-4911-aaba-03aaf0f400b2)
 - [Random memo of OCaml programming](https://bitbucket.org/camlspotter/ocaml-zippy-tutorial-in-japanese/src/8c85565b137193d324dfd4a2e8e9a577c700c8e2/random_memo.rst?at=default)
 - [https://github.com/realworldocaml](https://github.com/realworldocaml)
