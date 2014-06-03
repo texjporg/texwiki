@@ -188,28 +188,6 @@ TeX Live に収録されていないプログラムを使用したい場合は W
 
 - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
 
-## プログラミング言語 {#ccef7053}
-
-- C
-- C++
-- Fortran
-- D
-- Go
-- Rust
-- Haskell
-- F#
-- C#
-- Java
-- JavaScript
-- PHP
-- [Python](/Python/)
-- [Ruby](/Ruby/)
-- [Perl](/Perl/)
-- Lua
-- LuaJIT
-- Julia
-- [Lisp](/Lisp/)
-
 ## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
 
 LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
@@ -242,10 +220,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
-- [Kile](/Kile/)
-- LaTeXila
-- [Geany](/Geany/)
-- [gedit](/gedit/)
 
 ## PDF ファイルビューア {#uf722ec6}
 
