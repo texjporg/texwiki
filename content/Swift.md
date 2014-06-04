@@ -15,6 +15,7 @@ pukiwiki: "Swift"
 - [Wikipedia.en:Swift\_(programming_language)](https://en.wikipedia.org/wiki/Swift_%28programming_language%29)
 - [Wikipedia.ja:Swift\_(プログラミング言語)](https://ja.wikipedia.org/wiki/Swift_%28%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%29)
 - [http://qiita.com/tags/swift](http://qiita.com/tags/swift)
+    - [Swiftをコマンドラインから実行](http://qiita.com/smurakami/items/a11643cf2cb93df27720)
     - [Swiftの「?」とか「!」などのOptional Valueの挙動を調べてみた](http://qiita.com/yuichiroharai/items/7e2b8b0922f76c5c5cad)
 - [http://dev.classmethod.jp/tag/swift/](http://dev.classmethod.jp/tag/swift/)
 - [Swift言語ブログ](http://8kpixel.blogspot.jp/)
@@ -22,6 +23,8 @@ pukiwiki: "Swift"
     - [http://stackoverflow.com/questions/24004732/how-to-call-c-from-swift](http://stackoverflow.com/questions/24004732/how-to-call-c-from-swift)
     - [http://stackoverflow.com/questions/24002821/how-do-you-use-namespaces-in-swift](http://stackoverflow.com/questions/24002821/how-do-you-use-namespaces-in-swift)
 - [Xcode 6 beta 入れた](http://xoyip.hatenablog.com/entry/2014/06/03/065140)
+- [http://oropon.hatenablog.com/search?q=swift](http://oropon.hatenablog.com/search?q=swift)
+    - [Swiftでコマンドライン引数を取る](http://oropon.hatenablog.com/entry/2014/06/05/025326)
 - [一生涯プログラマ : Swift](http://blog.livedoor.jp/rapple_lab/archives/cat_361083.html)
 
 ### benchmark {#h3bbff60}
