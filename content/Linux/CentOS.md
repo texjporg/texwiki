@@ -24,6 +24,10 @@ pukiwiki: "Linux/CentOS"
 Red Hat Enterprise Linux (RHEL) は Red Hat が開発・販売している Linux ディストリビューションです．<br>
 
 - [Red Hat Enterprise Linux](http://www.redhat.com/products/enterprise-linux/)
+- [http://ftp.redhat.com/redhat/linux/enterprise/](http://ftp.redhat.com/redhat/linux/enterprise/)
+- [ftp://ftp.redhat.com/redhat/linux/enterprise/](ftp://ftp.redhat.com/redhat/linux/enterprise/)
+- [http://ftp.redhat.com/redhat/rhel/](http://ftp.redhat.com/redhat/rhel/)
+- [ftp://ftp.redhat.com/redhat/rhel/](ftp://ftp.redhat.com/redhat/rhel/)
 
 ## CentOS とは {#hc0603c9}
 
