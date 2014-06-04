@@ -15,6 +15,7 @@ pukiwiki: "Swift"
 - [Wikipedia.en:Swift\_(programming_language)](https://en.wikipedia.org/wiki/Swift_%28programming_language%29)
 - [Wikipedia.ja:Swift\_(プログラミング言語)](https://ja.wikipedia.org/wiki/Swift_%28%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%29)
 - [http://qiita.com/tags/swift](http://qiita.com/tags/swift)
+    - [Swiftの「?」とか「!」などのOptional Valueの挙動を調べてみた](http://qiita.com/yuichiroharai/items/7e2b8b0922f76c5c5cad)
 - [http://dev.classmethod.jp/tag/swift/](http://dev.classmethod.jp/tag/swift/)
 - [Swift言語ブログ](http://8kpixel.blogspot.jp/)
 - [http://stackoverflow.com/questions/tagged/swift-language](http://stackoverflow.com/questions/tagged/swift-language)
