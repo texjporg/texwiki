@@ -7,8 +7,9 @@ pukiwiki: "dviout"
 
 # dviout
 
-dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
-[ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
+<span style="font-size:40px">dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。</span><br>
+
+<span style="font-size:40px">[ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。</span><br>
 
 ## dviout for Windows → 画像が表示されないなどの問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#rfded337}
 
