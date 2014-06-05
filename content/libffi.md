@@ -18,9 +18,9 @@ pukiwiki: "libffi"
 #### MinGW {#nfb2cfde}
 
 ```
-$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.0.13.tar.gz
-$ tar xvf libffi-3.0.13.tar.gz
-$ pushd libffi-3.0.13
+$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.1.tar.gz
+$ tar xvf libffi-3.1.tar.gz
+$ pushd libffi-3.1
 $ ./configure --prefix=/mingw
 $ make
 $ make install
