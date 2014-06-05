@@ -64,6 +64,10 @@ pukiwiki: "Fortran"
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
+- [https://gist.github.com/ledyba](https://gist.github.com/ledyba)
+    - [Fortranは書きやすいなぁ（棒読み）](https://gist.github.com/ledyba/074d7d23916565b1ab59)
+    - [闇のFortran](https://gist.github.com/ledyba/6e604cadd1b572367a58)
+    - [Fortranで任意のx86コードを実行する](https://gist.github.com/ledyba/cb75d5d16ed2d87e182a)
 
 ### 処理系 {#xfad745a}
 
@@ -94,6 +98,8 @@ pukiwiki: "Fortran"
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
+- [サクラエディタ](</サクラエディタ/>)
+    - [FORTRAN 強調キーワード・カラー定義](http://sakura.qp.land.to/?Customize%2F%C5%EA%B9%C6%2F39)
 
 ## Fortran 2008 の使い方 {#r3bbac60}
 
