@@ -20,6 +20,7 @@ pukiwiki: "Haskell"
 - [The Libraries Archives](http://www.haskell.org/pipermail/libraries/)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+- [Real World Haskell の古いところ](http://d.hatena.ne.jp/kazu-yamamoto/touch/20140206/1391666962)
 - [ゆるふわHaskell (Light &amp; Airy Haskell)](http://kzfm.github.io/laskell/)
 - [http://maoe.hatenadiary.jp/archive/category/Haskell](http://maoe.hatenadiary.jp/archive/category/Haskell)
 - [本物のプログラマはHaskellを使う](http://itpro.nikkeibp.co.jp/article/COLUMN/20060915/248215/)
