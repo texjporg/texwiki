@@ -7,8 +7,9 @@ pukiwiki: "WinShell"
 
 # WinShell
 
-WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．<br>
-問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用してください．<br>
+<span style="font-size:40px">WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．</span><br>
+
+<span style="font-size:40px">問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用してください．</span><br>
 
 ## [WinShell](http://www.winshell.org/) → エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するなどの問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
