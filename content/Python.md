@@ -20,6 +20,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 - [Welcome to Python.org](https://www.python.org/)
 - [プログラミング言語 Python](http://www.python.jp/)
+- [The Python-list Archives](https://mail.python.org/pipermail/python-list/)
 
 ### 派生版 {#h517ae27}
 
@@ -29,6 +30,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 - [Jython](http://www.jython.org/)
 - [PyPy](http://pypy.org/)
 - [Cython](http://cython.org/)
+- [Micro Python](http://micropython.org/)
 
 ## インストール {#y6c76d8e}
 
