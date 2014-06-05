@@ -99,7 +99,7 @@ make latexpdfja
 - [Succeeded to make a PDF including CJK text by sphinx](https://groups.google.com/forum/#!topic/sphinx-users/iaRNBHC_f5o)
 - [LaTeX経由でのPDF作成](http://sphinx-users.jp/cookbook/pdf/latex.html)
 - [sphinxでplantumlの図入り日本語テキストをlatexpdfjaでPDF化してみた](http://qiita.com/hnakamur/items/8360a481a3820f374e3d)
-- [Ubuntu trusty testing No2:14.04でSphinxを使ってPDF作成をする](http://nekomatu.blogspot.jp/2014/03/ubuntu-trusty-testing-no2-howto-sphinx.html)
+- [Ubuntu 14.04 でSphinxを使ってPDFを作成する方法](http://nekomatu.blogspot.jp/2014/03/ubuntu-trusty-testing-no2-howto-sphinx.html)
 - [テキストからHTMLやTeX,pdf,docxをつくれるSphinxがドキュメント作成にかなり便利だったのでメモ](http://nwpct1.hatenablog.com/entry/2013/10/03/212309)
 - [Sphinx と LaTeX を使うときの 小技](https://gist.github.com/uchida/4545280)
 - [使い始めたばかりのSphinxでPDFを生成してみた](http://kanonji.info/blog/2013/04/12/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%81%9F%E3%81%B0%E3%81%8B%E3%82%8A%E3%81%AEsphinx%E3%81%A7pdf%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
