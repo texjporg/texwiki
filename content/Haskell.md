@@ -17,6 +17,7 @@ pukiwiki: "Haskell"
 
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
+- [The Libraries Archives](http://www.haskell.org/pipermail/libraries/)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
 - [ゆるふわHaskell (Light &amp; Airy Haskell)](http://kzfm.github.io/laskell/)
@@ -46,6 +47,7 @@ pukiwiki: "Haskell"
 - [Haskell Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/haskell)
 - [Theorem Prover Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/theorem_prover)
 - [Haskell for OCaml programmers](http://staff.science.uva.nl/~poss/haskell-for-ocaml-programmers.html)
+- [HaskellにおけるConfigurations Problemを解決する](http://cx4a.org/posts/2014-06-03-solve-the-configurations-problem-for-haskell.html)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
