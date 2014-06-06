@@ -15,6 +15,10 @@ pukiwiki: "libpng"
 
 ### Installation {#jc84d550}
 
+<!-- ***MSYS2 [#y6f8bc09] -->
+<!--  -->
+<!-- $ pacman -S libpng libpng-devel -->
+
 #### MinGW {#hb8b32d9}
 
 <!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.11/libpng-1.6.11.tar.xz -->
