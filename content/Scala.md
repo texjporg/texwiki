@@ -13,6 +13,13 @@ pukiwiki: "Scala"
 - [Better Java としての Scala](https://gist.github.com/Shinpeim/6740436)
 - [Effective Scala](http://twitter.github.io/effectivescala/)
 - [Java to Scala converter](http://javatoscala.com/)
+- [http://qiita.com/tags/scala](http://qiita.com/tags/scala)
+    - [第6章：Scalaのプリミティブ型を語る](http://qiita.com/f81@github/items/c43803f4a8da94615c9c)
+- [http://stackoverflow.com/questions/tagged/scala](http://stackoverflow.com/questions/tagged/scala)
+    - [http://stackoverflow.com/questions/6286044/scala-c-integration](http://stackoverflow.com/questions/6286044/scala-c-integration)
+    - [http://stackoverflow.com/questions/8821461/scala-arraystring-to-java-collectionstring](http://stackoverflow.com/questions/8821461/scala-arraystring-to-java-collectionstring)
+- [http://www.ne.jp/asahi/hishidama/home/tech/scala/](http://www.ne.jp/asahi/hishidama/home/tech/scala/)
+- [ScalaからCライブラリを読み込んで実行する](http://fukaoi.org/2010/12/13/Scala%E3%81%8B%E3%82%89C%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%93%E3%81%A7%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B)
 - [Scala Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/scala)
 
 ### ライブラリ {#f02ba6e6}
