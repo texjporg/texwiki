@@ -15,6 +15,12 @@ pukiwiki: "libffi"
 
 ### Installation {#e885e478}
 
+#### MSYS2 {#q3d54d39}
+
+```
+$ pacman -S libffi libffi-devel
+```
+
 #### MinGW {#nfb2cfde}
 
 ```
