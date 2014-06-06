@@ -22,8 +22,8 @@ pukiwiki: "Visual Basic"
 
 ### vbc {#b8a94c02}
 
-- [Microsoft Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
 - Microsoft Visual Studio Express
+- [Microsoft Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#cd033ba4}
 
