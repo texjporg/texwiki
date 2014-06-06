@@ -14,6 +14,14 @@ pukiwiki: "GLib"
 
 ### Installation {#d8092964}
 
+#### MSYS2 {#c72e704a}
+
+```
+$ pacman -S glib2
+$ pacman -S gettext
+$ pacman -S pkg-config
+```
+
 #### MinGW {#s8134160}
 
 - Install libffi.
