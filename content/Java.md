@@ -65,7 +65,7 @@ Java でプログラミングをしたい人は JDK をインストールしま�
 - [Java Native Access (JNA)](https://github.com/twall/jna)
 
 が必要です．<br>
-JDK 8, JDDE 2.0.3, JRegistry 1.8.1, JNA 4.0.0 で動作確認しています．<br>
+JDK 8, JDDE 2.0.3, JRegistry 1.8.1, JNA 4.1.0 で動作確認しています．<br>
 
 ```
 >javac -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf.java
@@ -115,8 +115,7 @@ import com.sun.jna.WString;
 import com.sun.jna.Structure;
 import com.sun.jna.Pointer;
 
-public class Fwdsumatrapdf
-{
+public class Fwdsumatrapdf {
     public static class STARTUPINFOW extends Structure {
         public int cb;
         public WString lpReserved;
@@ -137,7 +136,7 @@ public class Fwdsumatrapdf
         public Pointer hStdOutput;
         public Pointer hStdError;
         @Override
-        protected List getFieldOrder() {
+        protected List<String> getFieldOrder() {
             return Arrays.asList(
                     "cb",
                     "lpReserved",
@@ -166,7 +165,7 @@ public class Fwdsumatrapdf
         public int dwProcessId;
         public int dwThreadId;
         @Override
-        protected List getFieldOrder() {
+        protected List<String> getFieldOrder() {
             return Arrays.asList(
                     "hProcess",
                     "hThread",
@@ -195,8 +194,7 @@ public class Fwdsumatrapdf
                 int dwMilliseconds);
     }
 
-    public static void usage(String[] args)
-    {
+    public static void usage(String[] args) {
         if (args.length != 3) {
             String s = "usage: java -cp .;pretty-tools-JDDE-2.0.3.jar;jregistry-1.8.1.jar;jna-4.1.0.jar Fwdsumatrapdf pdf tex line";
             System.err.println(s);
@@ -204,10 +202,8 @@ public class Fwdsumatrapdf
         }
     }
 
-    public static void ddeExecute(String[] args)
-    {
-        try
-        {
+    public static void ddeExecute(String[] args) {
+        try {
             final RegistryKey root = RegistryKey.getRootKeyForIndex(RegistryKey.HKEY_LOCAL_MACHINE_INDEX);
             final String subKey = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe";
             final RegistryKey regKey = new RegistryKey(root, subKey);
@@ -223,8 +219,7 @@ public class Fwdsumatrapdf
             kernel32.CreateProcessW(Pointer.NULL, cmd, Pointer.NULL, Pointer.NULL, false, 0, Pointer.NULL, Pointer.NULL, si, pi);
             user32.WaitForInputIdle(pi.hProcess, TIMEOUT);
 
-            try
-            {
+            try {
                 final String SERVER = "SUMATRA";
                 final String TOPIC = "control";
                 conversation.connect(SERVER, TOPIC);
@@ -235,32 +230,26 @@ public class Fwdsumatrapdf
                 final String forwadSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + active + ")]";
                 conversation.execute(forwadSearch);
             }
-            finally
-            {
+            finally {
                 conversation.disconnect();
             }
         }
-        catch (DDEMLException e)
-        {
+        catch (DDEMLException e) {
             System.err.println("DDEMLException: 0x" + Integer.toHexString(e.getErrorCode()) + " " + e.getMessage());
             System.exit(1);
         }
-        catch (DDEException e)
-        {
+        catch (DDEException e) {
             System.err.println("DDEClientException: " + e.getMessage());
             System.exit(1);
         }
-        catch (Exception e)
-        {
+        catch (Exception e) {
             System.err.println("Exception: " + e);
             System.exit(1);
         }
     }
 
-    public static void main(String[] args)
-    {
-        try
-        {
+    public static void main(String[] args) {
+        try {
             usage(args);
             ddeExecute(args);
 
