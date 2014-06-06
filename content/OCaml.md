@@ -14,6 +14,7 @@ pukiwiki: "OCaml"
 ## Summary {#s5b2a93b}
 
 - [The Caml language: Home](http://caml.inria.fr/)
+- [OCaml for Windows &mdash; Wodi](http://wodi.forge.ocamlcore.org/)
 - [OCaml.jp](http://ocaml.jp/)
 - [http://lists.idyll.org/pipermail/caml-news-weekly/](http://lists.idyll.org/pipermail/caml-news-weekly/)
 - [OCaml Advent Calendar 2012](http://partake.in/events/680a8735-b35c-4911-aaba-03aaf0f400b2)
