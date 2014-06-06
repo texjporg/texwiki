@@ -29,7 +29,7 @@ LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語�
 
 LuaTeX-ja は
 
-- [TeX Live](</TeX Live/>) (最新版は TeX Live 2013 以降で動作)
+- [TeX Live](</TeX Live/>)
 - [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/) ([MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja))
 
@@ -37,20 +37,16 @@ LuaTeX-ja は
 
 ### リリース情報 {#g1f2f88f}
 
-- [git.sourceforge.jp Git - luatex-ja/luatexja.git/tags](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=tags)
+- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags)
 
 ### ChangeLog {#ka55de08}
 
-- [git.sourceforge.jp Git - luatex-ja/luatexja.git/summary](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git)
+- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/)
+    - [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
 - [http://sourceforge.jp/users/h7k/history](http://sourceforge.jp/users/h7k/history)
 - [http://sourceforge.jp/users/kmaeda/history](http://sourceforge.jp/users/kmaeda/history)
-
-### ダウンロード {#xa9091b6}
-
-- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=HEAD;sf=tgz)
-- [http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz](http://git.sourceforge.jp/view?p=luatex-ja/luatexja.git;a=snapshot;h=master;sf=tgz)
 
 ### インストール {#p4234337}
 
@@ -59,7 +55,6 @@ LuaTeX-ja は
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
 TeX Live には luatexja が含まれています．<br>
-最新版は TeX Live 2013 以降で動作します．<br>
 
 #### [W32TeX](/W32TeX/) {#a565ecc6}
 
