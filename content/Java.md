@@ -254,8 +254,7 @@ public class Fwdsumatrapdf {
             ddeExecute(args);
 
         }
-        catch (Exception e)
-        {
+        catch (Exception e) {
             System.err.println("Exception: " + e);
             System.exit(1);
         }
