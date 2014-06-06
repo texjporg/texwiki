@@ -52,7 +52,7 @@ pukiwiki: "C++"
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
     - [http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)
 - Microsoft Visual Studio Express
-    - [Visual C++ Compiler November 2013 CTP](http://www.microsoft.com/en-us/download/details.aspx?id=41151)
+    - [Visual Studio "14" CTP Downloads](http://www.visualstudio.com/en-us/downloads/visual-studio-14-ctp-vs)
     - [Support For C++11 Features (Modern C++)](http://msdn.microsoft.com/en-us/library/vstudio/hh567368.aspx)
     - [C++11 の機能 (Modern C++) のサポート](http://msdn.microsoft.com/ja-jp/library/vstudio/hh567368.aspx)
 
@@ -90,7 +90,7 @@ $ cd /c/w32tex/bin
 $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
 ```
 
-Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+Microsoft Visual Studio "14" CTP 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
 >cd /d c:\w32tex\bin
@@ -131,11 +131,7 @@ Microsoft Visual Studio Express 2013 以降の C/C++ Optimizing Compiler for x86
 #include <cwchar>
 #include <cerrno>
 
-#if defined _MSC_VER
-#define constexpr const
-#endif
-
-auto static constexpr TIMEOUT = 10000;
+auto static constexpr timeout = 10000;
 auto static existSumatraHWND = FALSE;
 
 auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
@@ -262,7 +258,7 @@ namespace sumatrapdfclient
                 return ::DdeGetLastError(this->idInstance);
             }
 
-            if ((this->hDdeTransactionData = ::DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), this->hConvClient, nullptr, 0, XTYP_EXECUTE, TIMEOUT, nullptr)) == nullptr) {
+            if ((this->hDdeTransactionData = ::DdeClientTransaction(reinterpret_cast<BYTE*>(this->hDdeData), static_cast<DWORD>(-1), this->hConvClient, nullptr, 0, XTYP_EXECUTE, timeout, nullptr)) == nullptr) {
                 std::wcerr << L"DdeClientTransaction error" << std::endl;
                 return ::DdeGetLastError(this->idInstance);
             }
@@ -357,7 +353,7 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
         return err;
     }
 
-    ::WaitForInputIdle(pi.hProcess, TIMEOUT);
+    ::WaitForInputIdle(pi.hProcess, timeout);
 
     return err;
 }
