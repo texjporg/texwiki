@@ -17,12 +17,18 @@ pukiwiki: "OpenSSL"
 
 ### Installation {#w1d4f4bd}
 
+#### MSYS2 {#zbdba2e5}
+
+```
+$ pacman -S openssl openssl-devel
+```
+
 #### MinGW {#h2041c43}
 
 ```
-$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1g.tar.gz
-$ tar xvf openssl-1.0.1g.tar.gz
-$ pushd openssl-1.0.1g
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1h.tar.gz
+$ tar xvf openssl-1.0.1h.tar.gz
+$ pushd openssl-1.0.1h
 $ ./config --prefix=/mingw shared
 $ make
 $ make install
