@@ -15,6 +15,12 @@ pukiwiki: "zlib"
 
 ### Installation {#zce96073}
 
+#### MSYS2 {#wc650371}
+
+```
+$ pacman -S zlib zlib-devel
+```
+
 #### MinGW {#p5c8b387}
 
 <!-- -http://sourceforge.net/projects/mingw/files/MinGW/Base/zlib/ -->
