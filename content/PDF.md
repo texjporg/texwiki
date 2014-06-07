@@ -49,3 +49,4 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 
 - [Open Source PDF Libraries and Tools](http://pdf-house.blogspot.com/)
 - [PDF開発の基礎](http://www.slideshare.net/field-works/pdf-29001511)
+- [Windows ストア アプリで PDF コンテンツをレンダリングする](http://msdn.microsoft.com/ja-jp/magazine/dn532207.aspx)
