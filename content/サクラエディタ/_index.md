@@ -37,6 +37,7 @@ pukiwiki: "サクラエディタ"
 - [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/)
 - [Mocaのブログ](http://mocaskr.blog42.fc2.com/)
+- [https://github.com/mocaskr/sakura/](https://github.com/mocaskr/sakura/)
 
 ### 動作環境 {#vfdecfda}
 
