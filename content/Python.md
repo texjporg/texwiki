@@ -333,6 +333,132 @@ $ invevince "hoge.pdf" "texstudio '%f' -line %l"
 
 のように実行して Evince 上で Ctrl + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
 
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#y837d96a}
+
+### Python 版 {#w284c2eb}
+
+Python 3.4.1 で動作確認しています．<br>
+
+***
+
+```
+# vim: ts=4 sw=4 expandtab:
+# -*- coding: utf-8 -*-
+
+import sys
+import argparse
+import os.path
+from ctypes import *
+from winreg import *
+
+class STARTUPINFOW(Structure):
+    _fields_ = [('cb', c_uint), \
+            ('lpReserved', c_wchar_p), \
+            ('lpDesktop', c_wchar_p), \
+            ('lpTitle', c_wchar_p), \
+            ('dwX', c_uint), \
+            ('dwY', c_uint), \
+            ('dwXSize', c_uint), \
+            ('dwYSize', c_uint), \
+            ('dwXCountChars', c_uint), \
+            ('dwYCountChars', c_uint), \
+            ('dwFillAttribute', c_uint), \
+            ('dwFlags', c_uint), \
+            ('wShowWindow', c_ushort), \
+            ('cbReserved2', c_ushort), \
+            ('lpReserved2', c_void_p), \
+            ('hStdInput', c_void_p), \
+            ('hStdOutput', c_void_p), \
+            ('hStdError', c_void_p)]
+
+class PROCESS_INFORMATION(Structure):
+    _fields_ = [('hProcess', c_void_p), \
+            ('hThread', c_void_p), \
+            ('dwProcessId', c_uint), \
+            ('dwThreadId', c_uint)]
+
+class FwdSumatraPDF:
+    def __init__(self):
+        self.pdf = ''
+        self.tex = ''
+        self.line = ''
+        self.server = c_wchar_p('SUMATRA')
+        self.topic = c_wchar_p('control')
+        self.command = c_wchar_p(None)
+        self.timeout = c_ulong(10000)
+
+    def parse_args(self):
+        parser = argparse.ArgumentParser(description='Forward search with SumatraPDF')
+        parser.add_argument('pdf', nargs=1, help='PDF file')
+        parser.add_argument('tex', nargs=1, help='TeX file')
+        parser.add_argument('line', nargs=1, type=int, help='Line')
+        return parser.parse_args()
+
+    def runSumatraPDF(self):
+        regValue = None
+        with OpenKeyEx(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe') as key:
+            regValue = QueryValue(key, None)
+        sumatraPDFCommandLine = c_wchar_p(None)
+        if os.path.exists(regValue):
+            sumatraPDFCommandLine = c_wchar_p('"' + regValue + '" -reuse-instance')
+        else:
+            sumatraPDFCommandLine = c_wchar_p(r'C:\Windows\System32\rundll32.exe shell32,ShellExec_RunDLL SumatraPDF -reuse-instance')
+        si = STARTUPINFOW()
+        pi = PROCESS_INFORMATION()
+        windll.kernel32.CreateProcessW(c_void_p(None), sumatraPDFCommandLine, c_void_p(None), c_void_p(None), False, c_uint(0), c_void_p(None), c_void_p(None), byref(si), byref(pi))
+        windll.user32.WaitForInputIdle(pi.hProcess, self.timeout)
+
+    def sumatraDDECallback(self, uType, uFmt, hconv, hsz1, hsz2, hdata, dwData1, dwData2):
+        return c_void_p(None)
+
+    def ddeExecute(self):
+        idInstance = c_uint(0)
+        APPCMD_CLIENTONLY = c_uint(0x10)
+        CP_WINUNICODE = c_int(1200)
+        CF_UNICODETEXT = c_uint(13)
+        XCLASS_FLAGS = c_uint(0x4000)
+        XTYP_EXECUTE = c_uint(c_uint(0x0050).value | XCLASS_FLAGS.value)
+        DDECALLBACK = WINFUNCTYPE(c_uint, c_uint, POINTER(c_int), POINTER(c_int), POINTER(c_int), POINTER(c_int), c_uint, c_uint)
+        try:
+            windll.user32.DdeInitializeW(byref(idInstance), DDECALLBACK(self.sumatraDDECallback), APPCMD_CLIENTONLY, c_int(0))
+            if idInstance == c_uint(0): raise Exception("DdeInitializeW error")
+            hszServer = windll.user32.DdeCreateStringHandleW(idInstance, self.server, CP_WINUNICODE)
+            if hszServer == None: raise Exception("DdeCreateStringHandleW error")
+            hszTopic = windll.user32.DdeCreateStringHandleW(idInstance, self.topic, CP_WINUNICODE)
+            if hszTopic == None: raise Exception("DdeCreateStringHandleW error")
+            hConvClient = windll.user32.DdeConnect(idInstance, hszServer, hszTopic, c_void_p(None))
+            if hConvClient == None: raise Exception("DdeConnect error")
+            hDdeData = windll.user32.DdeCreateDataHandle(idInstance, self.command, (cdll.msvcrt.wcslen(self.command) + 1)*sizeof(c_wchar), 0, c_void_p(None), CF_UNICODETEXT, 0)
+            if hDdeData == None: raise Exception("DdeCreateDataHandle error")
+            hDdeTransactionData = windll.user32.DdeClientTransaction(hDdeData, -1, hConvClient, c_void_p(None), 0, XTYP_EXECUTE, self.timeout, c_void_p(None))
+            if hDdeTransactionData == None: raise Exception("DdeClientTransaction error")
+        finally:
+            if hDdeTransactionData != None: windll.user32.DdeFreeDataHandle(hDdeTransactionData)
+            if hDdeData != None: windll.user32.DdeFreeDataHandle(hDdeData)
+            if hszServer != None: windll.user32.DdeFreeStringHandle(idInstance, hszServer)
+            if hszTopic != None: windll.user32.DdeFreeStringHandle(idInstance, hszTopic)
+            if hConvClient != None: windll.user32.DdeDisconnect(hConvClient)
+            if idInstance != c_uint(0): windll.user32.DdeUninitialize(idInstance)
+
+    def run(self):
+        args = self.parse_args()
+        self.pdf = os.path.abspath(args.pdf[0])
+        self.tex = os.path.abspath(args.tex[0])
+        self.line = str(args.line[0])
+        self.command = c_wchar_p('[ForwardSearch("' + self.pdf \
+                + '","' + self.tex + '",' + self.line + ',0,0,0)]')
+        self.runSumatraPDF()
+        self.ddeExecute()
+
+if __name__ == '__main__':
+    try:
+        FwdSumatraPDF().run()
+    except Exception as e:
+        print(e, file=sys.stderr)
+```
+
+***
+
 ## 関連リンク {#z55d6188}
 
 - [Wikipedia.ja:Python](https://ja.wikipedia.org/wiki/Python)
