@@ -21,6 +21,8 @@ Atom はテキストエディタです．<br>
 - [https://atom.io/](https://atom.io/)
 - [https://github.com/atom](https://github.com/atom)
 - [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
+- [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/)
+- [What is Use React Editor?](http://discuss.atom.io/t/what-is-use-react-editor/8865)
 
 ### System Requirements {#aed34ff8}
 
