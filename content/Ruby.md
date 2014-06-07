@@ -29,6 +29,7 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 - [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://takai.tumblr.com/post/13843318337/shebang-bin-env-ruby-0)
 - [Ruby 2.1.1 で Hash#reject のデグレ](http://diary.sorah.jp/2014/02/28/ruby211-hash-reject) → [Ruby 2.1.2](https://www.ruby-lang.org/ja/news/2014/05/09/ruby-2-1-2-is-released/) で修正されました
+- [Ruby: コマンドライン引数の解析で使うoptparseをもっと柔軟に](http://sky-y.hatenablog.jp/entry/20120817/1345195421)
 
 ### 派生版 {#w5708e1c}
 
