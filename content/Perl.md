@@ -91,3 +91,4 @@ TeX Live の Windows 版には Perl の処理系が収録されています．<b
 
 - [This Perl goes to 11](http://perl11.org/)
 - [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
+- [https://metacpan.org/pod/FFI::Raw](https://metacpan.org/pod/FFI::Raw)
