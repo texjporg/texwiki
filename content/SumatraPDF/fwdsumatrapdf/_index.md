@@ -62,6 +62,10 @@ F Sharp を参照．<br>
 
 Haskell を参照．<br>
 
+### Python 版 {#kb7260ce}
+
+[Python](/Python/#fwdsumatrapdf) を参照．<br>
+
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
 fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使用可能です．
