@@ -31,7 +31,9 @@ pukiwiki: "TeX"
 ### TeX プログラミング {#ff81e0cc}
 
 - \[[プログラミング\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
-- \[[プログラミング\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D), \[[TeX\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5BTeX%5D)
+- \[[TeX\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5BTeX%5D)
+- \[[プログラミング\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
+- \[[TeX\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5BTeX%5D)
 - [「expl3」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=expl3)
 - [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
 - [ドラゴン曲線（TeXブック付録Dのあれ）](http://qiita.com/items/1551)
