@@ -30,11 +30,11 @@ TeX インストーラを色々な視点から比較してみます。
 
 初心者の方は 
 
-- 「install-tl.zip」
+- 「install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip」
 
 がおすすめです。
 
-## install-tl.zip {#g1a25b59}
+## install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip {#g1a25b59}
 
 - <strong>ウェブサイト</strong>：[mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
 - <strong>作者</strong>：[TUG](http://www.tug.org/)さん
