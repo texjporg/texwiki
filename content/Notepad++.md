@@ -104,6 +104,7 @@ Windows
 　　入力補完<br>
 　　Multi-Instance<br>
 　　Delimiter<br>
+　　Cloud<br>
 　　その他<br>
 
 ***
@@ -157,6 +158,7 @@ Windows
 　　入力補完<br>
 　　Multi-Instance<br>
 　　Delimiter<br>
+　　Cloud<br>
 　　その他<br>
 
 ***
@@ -215,6 +217,7 @@ Windows
 　　<span style="color:White;background-color:#1188FF;">入力補完　　　　　　　　　</span><br>
 　　Multi-Instance<br>
 　　Delimiter<br>
+　　Cloud<br>
 　　その他<br>
 
 ***
@@ -272,6 +275,7 @@ Windows
 　　入力補完<br>
 　　Multi-Instance<br>
 　　Delimiter<br>
+　　Cloud<br>
 　　<span style="color:White;background-color:#1188FF;">その他　　　　　　　　　　</span><br>
 
 ***
@@ -280,14 +284,14 @@ Windows
 
 <br>
 
-　　　　　　　　　ビューを切り替える(Ctrl+Tab)　　　　　　　　　　　　　　　　　　　　　URLリンク設定<br>
+　　　　　　　　　ビューを切り替える(Ctrl+Tab)　　　　　　　　　　　　　　　　　　　　　　　 URLリンク設定<br>
 　　　　　☑有効　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☑有効<br>
 　　　　　☑最近使用した順にビューを切り替える　　　　　　　　　　　　　☐下線を引かない<br>
-　　　　　　　　　　　　SmartHighlighting　　　　　　　　　　　　　　　　　　　　　　　　　ファイルの状態監視<br>
+　　　　　　　　　　　　SmartHighlighting　　　　　　　　　　　　　　　　　　　　　　　　　　ファイルの状態監視<br>
 　　　　　☑スマート強調表示を有効　　　　　　　　　　　　　　　　　　　　　☑有効<br>
 　　　　　☐Match case　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐自動で最新状態に更新<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☐更新後最後の行にスクロール<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一致しているタグを強調する<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　一致しているタグを強調する<br>
 　　　　☑Autodetect character encoding　　　　　　　　　　　　　　　　　　☑有効<br>
 　　　　☑オートインデント　　　　　　　　　　　　　　　　　　　　　　　　　　　 ☑タグの属性を強調する<br>
 　　　　☐タスクトレイに格納　　　　　　　　　　　　　　　　　　　　　　　　　　☐コメント/PHP/ASP 領域を強調する<br>
