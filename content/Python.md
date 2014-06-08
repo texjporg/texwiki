@@ -46,6 +46,10 @@ Windows Installer の Python を C:\Python34 にインストールした場合�
 
 を環境変数 PATH に追加します．<br>
 
+#### ActivePython {#r5e477dd}
+
+- [http://downloads.activestate.com/ActivePython/releases/](http://downloads.activestate.com/ActivePython/releases/)
+
 #### MSYS2 {#zf164903}
 
 ```
@@ -400,14 +404,14 @@ class FwdSumatraPDF:
         regValue = None
         with OpenKeyEx(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe') as key:
             regValue = QueryValue(key, None)
-        sumatraPDFCommandLine = c_wchar_p(None)
+        sumatraPDFCommandLine = None
         if regValue and os.path.exists(regValue):
-            sumatraPDFCommandLine = c_wchar_p('"' + regValue + '" -reuse-instance')
+            sumatraPDFCommandLine = '"' + regValue + '" -reuse-instance'
         else:
-            sumatraPDFCommandLine = c_wchar_p(r'C:\Windows\System32\rundll32.exe shell32,ShellExec_RunDLL SumatraPDF -reuse-instance')
+            sumatraPDFCommandLine = r'C:\Windows\System32\rundll32.exe shell32,ShellExec_RunDLL SumatraPDF -reuse-instance'
         si = STARTUPINFOW()
         pi = PROCESS_INFORMATION()
-        windll.kernel32.CreateProcessW(c_void_p(None), sumatraPDFCommandLine, c_void_p(None), c_void_p(None), False, c_uint(0), c_void_p(None), c_void_p(None), byref(si), byref(pi))
+        windll.kernel32.CreateProcessW(c_void_p(None), c_wchar_p(sumatraPDFCommandLine), c_void_p(None), c_void_p(None), False, c_uint(0), c_void_p(None), c_void_p(None), byref(si), byref(pi))
         windll.user32.WaitForInputIdle(pi.hProcess, self.timeout)
 
     def sumatraDDECallback(self, uType, uFmt, hconv, hsz1, hsz2, hdata, dwData1, dwData2):
