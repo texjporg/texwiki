@@ -85,7 +85,6 @@ control folders
 を選択します．<br>
 
 - 登録されている拡張子は表示しない
-- 保護されたオペレーティング システム ファイルを表示しない (推奨)
 
 のチェックをはずします．<br>
 
@@ -129,7 +128,7 @@ control folders
 　　　　☐ 常にメニューを表示する<br>
 　　　　<span style="color:black;background-color:yellow;"><strong>☐ 登録されている拡張子は表示しない ← チェックをはずす</strong></span><br>
 　　　　☐ 別のプロセスでフォルダー ウィンドウを開く<br>
-　　　　<span style="color:black;background-color:yellow;"><strong>☐ 保護されたオペレーティング システム ファイルを表示しない (推奨) ← チェックをはずす</strong></span><br>
+　　　　☑ 保護されたオペレーティング システム ファイルを表示しない (推奨)<br>
 
 <br>
 
