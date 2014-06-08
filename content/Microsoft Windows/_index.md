@@ -52,6 +52,14 @@ TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照し�
 
 TeX Live (Win64, Win32) は Visual C++ 2010 でビルドされているため Windows XP 以降で動作します．<br>
 
+#### ウイルス対策ソフトについて {#w1959e65}
+
+TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
+
+#### プロキシ経由でインストールする場合 {#wd612118}
+
+プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget の設定をしてからインストールしてください．<br>
+
 #### TeX Live のインストール {#ca517ea6}
 
 - [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
@@ -148,16 +156,63 @@ control folders
 
 ■■■ ダウンロード ■■■<br>
 
-[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl.zip をダウンロードして install-tl.zip を展開します．<br>
+[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip をダウンロードします．<br>
+install-tl.zip をダウンロードした場合は install-tl.zip を展開します．<br>
 Cygwin の unzip は install-tl.zip の展開に使用しないでください．<br>
 インストールに失敗する可能性があります．<br>
 
 - [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
 - [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
-install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
+install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
 
 ***
+
+■■■ install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) の場合 ■■■<br>
+
+install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブルクリックします．<br>
+全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．<br>
+install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブルクリックして実行した場合は以下の様な画面が表示されます．<br>
+
+***
+
+<span style="color:#007BBB;background-color:#007BBB;"><ins>　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeX Live installer</strong></span>　　　　　　　　　　<span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#007BBB;background-color:#007BBB;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+<br>
+
+　Only single-user install possible.<br>
+　For an all-users installation, abort now and re-run as administrator.<br>
+
+<br>
+
+<br>
+
+<br>
+
+　(●) Simple install (big)<br>
+　 ◯ Custom install<br>
+　 ◯ Unpack only<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　\[　　Cancel　　\]　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\[ 　Next >　 \]<br>
+
+***
+
+インストールする場合は \[ 　Next >　 \] をクリックします．<br>
+インストールしない場合は \[　　Cancel　　\] をクリックします．<br>
 
 ■■■ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) の場合 ■■■<br>
 
@@ -207,7 +262,6 @@ Do you want to continue with the exact same settings as before (y/N): y
 ■ GUI でインストールする場合<br>
 
 install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) をダブルクリックします．<br>
-プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget の設定をしてからインストールしてください．<br>
 install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
 
 ***
