@@ -14,7 +14,11 @@ pukiwiki: "Microsoft Windows"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## お知らせ {#ya6914d3}
+## Windows サポート ライフサイクル {#vc8606da}
+
+- [Windows ライフサイクルのファクト シート - Microsoft Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
+
+### お知らせ {#ya6914d3}
 
 Windows XP のサポートは終了しました．<br>
 
@@ -23,10 +27,6 @@ Windows XP のサポートは終了しました．<br>
 - [サポート終了に関するよくあるご質問 | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/faq.aspx)
 - [Windows XP のサポートは終了しました - Microsoft Windows](http://windows.microsoft.com/ja-jp/windows/end-support-help)
 - [Windows XP - Microsoft Windows](http://www.microsoft.com/windows/ja-jp/xp/)
-
-## Windows サポート ライフサイクル {#vc8606da}
-
-- [Windows ライフサイクルのファクト シート - Microsoft Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
 
 ## TeX ディストリビューション {#vb660ba1}
 
@@ -95,7 +95,6 @@ control folders
 を選択します．<br>
 
 - 登録されている拡張子は表示しない
-- 保護されたオペレーティング システム ファイルを表示しない (推奨)
 
 のチェックをはずします．<br>
 
@@ -139,7 +138,7 @@ control folders
 　　　　☐ 常にメニューを表示する<br>
 　　　　<span style="color:black;background-color:yellow;"><strong>☐ 登録されている拡張子は表示しない ← チェックをはずす</strong></span><br>
 　　　　☐ 別のプロセスでフォルダー ウィンドウを開く<br>
-　　　　<span style="color:black;background-color:yellow;"><strong>☐ 保護されたオペレーティング システム ファイルを表示しない (推奨) ← チェックをはずす</strong></span><br>
+　　　　☑ 保護されたオペレーティング システム ファイルを表示しない (推奨)<br>
 
 <br>
 
@@ -333,7 +332,7 @@ install-tl-advanced.bat を選択して右クリックして \[管理者とし�
 
 ***
 
-install-tl-advanced.bat を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
+install-tl-advanced.bat を -no-gui オプションを指定せずに管理者権限で実行した場合は以下の様な画面が表示されます．<br>
 
 ***
 
@@ -573,8 +572,8 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
-[TeXLive 2014 pretest](http://progress.tistory.com/214)
-: 2014-04-27
+[TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
+: 2014-06-08
 
 [Windows 8.1 Update &amp; TeX Live](http://cygx1.axialz.com/?eid=293)
 : 2014-04-21
