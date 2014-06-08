@@ -103,6 +103,8 @@ pip や easy_install を使用して error: Setup script exited with error: Unab
 
 ## fwdevince <a id="fwdevince"></a> {#p46d6b08}
 
+### Python 版 {#u6122dc4}
+
 Evince 3.12.1, Python 3.4.0, dbus-python 1.2.0, PyGObject 3.12.1 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
@@ -399,7 +401,7 @@ class FwdSumatraPDF:
         with OpenKeyEx(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe') as key:
             regValue = QueryValue(key, None)
         sumatraPDFCommandLine = c_wchar_p(None)
-        if os.path.exists(regValue):
+        if regValue and os.path.exists(regValue):
             sumatraPDFCommandLine = c_wchar_p('"' + regValue + '" -reuse-instance')
         else:
             sumatraPDFCommandLine = c_wchar_p(r'C:\Windows\System32\rundll32.exe shell32,ShellExec_RunDLL SumatraPDF -reuse-instance')
