@@ -22,8 +22,8 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 ### お知らせ {#ebfb06f5}
 
 SumatraPDF はコマンドラインオプション -forward-search &lt;texfile> &lt;linenumber> を使用して forward search することが可能です．<br>
-forward search するときに SumatraPDF を前面に表示したい場合は fwdsumatrapdf.exe を使用せずに SumatraPDF のコマンドラインオプションを使用してください．<br>
-forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf.exe を使ってください．<br>
+forward search するときに SumatraPDF を前面に表示したい場合は fwdsumatrapdf を使用せずに SumatraPDF のコマンドラインオプションを使用してください．<br>
+forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．<br>
 ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
 
 ### C, C++ 版 {#qf7ea8bf}
@@ -66,9 +66,13 @@ Haskell を参照．<br>
 
 [Python](/Python/#fwdsumatrapdf) を参照．<br>
 
+### Ruby 版 {#i32dcfa3}
+
+[Ruby](/Ruby/#fwdsumatrapdf) を参照．<br>
+
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
-fwdsumatrapdf.exe は以下のエディタ・マクロ・プラグインで使用可能です．
+fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可能です．
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
