@@ -162,7 +162,7 @@ window['org.gnome.evince.Window'].SyncView(tex, [line, 1], 0)
 
 ### Ruby 版 {#p8b1b4df}
 
-ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] で動作確認しています．<br>
+RubyInstaller for Windows の ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] で動作確認しています．<br>
 
 ***
 
@@ -267,7 +267,7 @@ def runSumatraPDF()
         regValue = reg.read(nil)[1]
     end
     sumatraPDFCommandLine = nil
-    if regValue != nil and File.exists?(regValue) then
+    if regValue and File.exists?(regValue) then
         sumatraPDFCommandLine = "\"" + regValue + "\" -reuse-instance"
     else
         sumatraPDFCommandLine = "C:\\Windows\\System32\\rundll32.exe shell32,ShellExec_RunDLL SumatraPDF -reuse-instance"
