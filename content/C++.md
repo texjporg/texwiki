@@ -17,7 +17,6 @@ pukiwiki: "C++"
 
 - [http://www.stroustrup.com/](http://www.stroustrup.com/)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
-    - [http://ja.wikipedia.org/wiki/C++11](http://ja.wikipedia.org/wiki/C++11)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
 - [cpprefjp - C++ Library Reference](https://sites.google.com/site/cpprefjp/)
@@ -46,6 +45,7 @@ pukiwiki: "C++"
 - [C++ Advent Calendar 2013 - PARTAKE](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
 - [C++ (fork) Advent Calendar 2013](http://www.adventar.org/calendars/211)
 - [main() のすり替え in C++](http://yak-ex.blogspot.jp/2013/12/main-in-c.html)
+- [C++ による Windows プログラミングの学習](<http://msdn.microsoft.com/ja-jp/library/windows/desktop/ff381399(v=vs.85).aspx>)
 
 ### 処理系 {#zc4c802d}
 
