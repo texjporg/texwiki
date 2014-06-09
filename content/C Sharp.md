@@ -21,6 +21,7 @@ pukiwiki: "C Sharp"
 - [http://www.wgag.net/csharp/](http://www.wgag.net/csharp/)
 - [C# Advent Calendar 2013](http://www.adventar.org/calendars/119)
 - [.NET Foundation](http://www.dotnetfoundation.org/)
+- [AnyCPUなC#モジュールからx86/x64のDLLを呼び分ける方法まとめ](http://cflat-inc.hatenablog.com/entry/20130723/1374535605)
 
 ## 処理系 {#h8ce0ca0}
 
