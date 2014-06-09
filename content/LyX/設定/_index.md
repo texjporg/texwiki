@@ -134,6 +134,28 @@ Input report.layout
 
 ***
 
+#### bxjsbook.layout {#p03557b7}
+
+bxjsbook.layout ファイルを新規作成して以下の内容を編集します．
+
+***
+
+```
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{Japanese Book (bxjsbook)}
+#  \DeclareCategory{Books}
+# Japanese new book textclass definition file.
+
+# This style provides japanese features 
+Format 54
+Provides japanese 1
+
+# Input general definitions
+Input book.layout
+```
+
+***
+
 #### ltjsarticle.layout {#v6cea741}
 
 ltjsarticle.layout ファイルを新規作成して以下の内容を編集します．
