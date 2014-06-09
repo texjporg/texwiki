@@ -16,7 +16,10 @@ pukiwiki: "Perl"
 ## Perl 6 {#xd216707}
 
 - [Perl 6](http://perl6.org/)
+- [Official Perl 6 Documentation](http://perlcabal.org/syn/)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
+- [Perl6 Advent Calendar 2012](http://qiita.com/advent-calendar/2012/perl6)
+- [Perl6 Advent Calendar 2011](http://atnd.org/events/22820)
 
 ### インストール (Windows) {#jc58fcd6}
 
