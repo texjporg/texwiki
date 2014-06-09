@@ -14,6 +14,8 @@ pukiwiki: "Go"
 ## Summary {#hb43659d}
 
 - [The Go Programming Language](http://golang.org/)
+- [http://golang-jp.org/](http://golang-jp.org/)
+    - [https://github.com/gophersjp/go](https://github.com/gophersjp/go)
 - [https://code.google.com/p/go/](https://code.google.com/p/go/)
 
 ### ChangeLog {#pdc98ad9}
@@ -39,30 +41,33 @@ pukiwiki: "Go"
 
 ## インストール {#v5dc7237}
 
-- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+- [http://golang.org/dl/](http://golang.org/dl/)
 
 ### Windows {#a8588e8a}
 
-- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+- [http://golang.org/dl/](http://golang.org/dl/)
+
+### OS X {#n933f186}
+
+- [http://golang.org/dl/](http://golang.org/dl/)
 
 ### Linux {#ia995211}
 
-- [https://code.google.com/p/go/downloads/list](https://code.google.com/p/go/downloads/list)
+- [http://golang.org/dl/](http://golang.org/dl/)
 
 #### Arch Linux {#x3280c12}
 
-- [https://www.archlinux.org/packages/community/x86_64/go/](https://www.archlinux.org/packages/community/x86_64/go/)
-- [https://www.archlinux.org/packages/community/i686/go/](https://www.archlinux.org/packages/community/i686/go/)
+- [https://www.archlinux.org/packages/?name=go](https://www.archlinux.org/packages/?name=go)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#u3fb5150}
 
 ### Go 版 {#j2bc8fe8}
 
-go 1.2.1 でビルドできます．<br>
+go version go1.3rc1 windows/amd64 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
-PS C:\w32tex\bin> go build fwdsumatrapdf.go
+go build fwdsumatrapdf.go
 ```
 
 ***
@@ -285,18 +290,27 @@ func ddeExecute(server, topic, command string) {
         uintptr(unsafe.Pointer(nil)),
         uintptr(appcmd_clientonly),
         uintptr(0))
+    if idInstance == uint32(0) {
+        panic("DdeInitializeW error")
+    }
     defer ddeUninitialize.Call(uintptr(idInstance))
 
     hszServer, _, _ := ddeCreateStringHandleW.Call(
         uintptr(idInstance),
         uintptr(unsafe.Pointer(syscall.StringToUTF16Ptr(server))),
         uintptr(cp_winunicode))
+    if hszServer == uintptr(unsafe.Pointer(nil)) {
+        panic("DdeCreateStringHandleW error")
+    }
     defer ddeFreeStringHandle.Call(uintptr(idInstance), uintptr(hszServer))
 
     hszTopic, _, _ := ddeCreateStringHandleW.Call(
         uintptr(idInstance),
         uintptr(unsafe.Pointer(syscall.StringToUTF16Ptr(topic))),
         uintptr(cp_winunicode))
+    if hszTopic == uintptr(unsafe.Pointer(nil)) {
+        panic("DdeCreateStringHandleW error")
+    }
     defer ddeFreeStringHandle.Call(uintptr(idInstance), uintptr(hszTopic))
 
     hConvClient, _, _ := ddeConnect.Call(
@@ -304,6 +318,9 @@ func ddeExecute(server, topic, command string) {
         uintptr(hszServer),
         uintptr(hszTopic),
         uintptr(unsafe.Pointer(nil)))
+    if hConvClient == uintptr(unsafe.Pointer(nil)) {
+        panic("DdeConnect error")
+    }
     defer ddeDisconnect.Call(uintptr(hConvClient))
 
     hDdeData, _, _ := ddeCreateDataHandle.Call(
@@ -314,6 +331,9 @@ func ddeExecute(server, topic, command string) {
         uintptr(unsafe.Pointer(nil)),
         uintptr(cf_unicodetext),
         uintptr(0))
+    if hDdeData == uintptr(unsafe.Pointer(nil)) {
+        panic("DdeCreateDataHandle error")
+    }
     defer ddeFreeDataHandle.Call(uintptr(hDdeData))
 
     hDdeTransactionData, _, _ := ddeClientTransaction.Call(
@@ -325,6 +345,9 @@ func ddeExecute(server, topic, command string) {
         uintptr(xtyp_execute),
         uintptr(timeout),
         uintptr(unsafe.Pointer(nil)))
+    if hDdeTransactionData == uintptr(unsafe.Pointer(nil)) {
+        panic("DdeClientTransaction error")
+    }
     defer ddeFreeDataHandle.Call(uintptr(hDdeTransactionData))
 }
 
