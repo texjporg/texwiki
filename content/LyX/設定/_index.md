@@ -103,7 +103,7 @@ bxjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 49
+Format 54
 Provides japanese 1
 
 # Input general definitions
@@ -125,7 +125,7 @@ bxjsreport.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new report textclass definition file.
 
 # This style provides japanese features 
-Format 49
+Format 54
 Provides japanese 1
 
 # Input general definitions
@@ -147,7 +147,7 @@ ltjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 49
+Format 54
 Provides japanese 1
 
 # Input general definitions
@@ -169,7 +169,7 @@ ltjsbook.layout ファイルを新規作成して以下の内容を編集しま�
 # Japanese new book textclass definition file.
 
 # This style provides japanese features 
-Format 49
+Format 54
 Provides japanese 1
 
 # Input general definitions
