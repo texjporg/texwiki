@@ -55,15 +55,15 @@ pukiwiki: "Haskell"
 ### Haskell 版 {#cbd580e5}
 
 The Glorious Glasgow Haskell Compilation System, version 7.6.3 でビルドできます．<br>
-Windows PowerShell から以下のようにしてビルドします．<br>
+Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
-PS C:\w32tex\bin> ghc fwdsumatrapdf.hs
+ghc fwdsumatrapdf.hs
 ```
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.hs
+- fwdsumatrapdf.hs
 
 ***
 
