@@ -28,3 +28,9 @@ pukiwiki: "PHP"
 - [PHP Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/php)
 - [PHP Advent Calendar 2013](http://www.adventar.org/calendars/101)
 - [Hack](http://hacklang.org/)
+
+### ドキュメント {#df37b373}
+
+- [http://www.php.net/download-docs.php](http://www.php.net/download-docs.php)
+- [http://docs.php.net/docs.php](http://docs.php.net/docs.php)
+- [http://www.php.net/manual/en/funcref.php](http://www.php.net/manual/en/funcref.php)
