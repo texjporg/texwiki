@@ -39,14 +39,14 @@ Texmaker でかな漢字変換をする際に，文字と背景が黒く表示�
 
     よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
 
-## dviout のエラーメッセージ → dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする {#lb61846e}
+## dviout のエラーメッセージ → dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#lb61846e}
 
-dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューする</strong>方法があります。<br>
+dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
-## xdvi のエラーメッセージ → xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする {#x72af3e8}
+## xdvi のエラーメッセージ → xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#x72af3e8}
 
-xdvi で日本語が表示されないなどの問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする</strong>方法があります。<br>
+xdvi で日本語が表示されないなどの問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。<br>
 [ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
 
 ## TeX本体のエラーメッセージ {#s54a975c}
