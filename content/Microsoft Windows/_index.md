@@ -56,9 +56,15 @@ TeX Live (Win64, Win32) は Visual C++ 2010 でビルドされているため Wi
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
 
+- [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
+- [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
+
 #### プロキシ経由でインストールする場合 {#wd612118}
 
-プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget の設定をしてからインストールしてください．<br>
+プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget で使用するプロキシの設定をしてからインストールしてください．<br>
+
+- [Tex Live 2013をWin7 64-bitマシンにインストール](http://wshinya.hatenablog.com/entry/2013/12/04/140746)
+- [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
 
 #### TeX Live のインストール {#ca517ea6}
 
