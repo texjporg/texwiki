@@ -54,7 +54,7 @@ pukiwiki: "LyX/設定"
 ☐外国語をマークする(F)[^9] ← 外国語をマークするのチェックをはずします．<br>
 右から左書きの言語をサポート<br>
 　☑右横書きサポートを有効化(R)[^10]<br>
-　カーソルの動き: (●) 論理的(L)　◯ 視覚的(V)<br>
+　カーソルの動き: 🔘 論理的(L)　◯ 視覚的(V)<br>
 
 ***
 
@@ -288,7 +288,7 @@ lyx ファイル自体は常に UTF-8 で保存されます．<br>
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　(●)その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
 
 <br>
 
@@ -312,7 +312,7 @@ babel を使用して文書を作成する場合は babel を on にします．
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　(●)その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
 
 <br>
 
@@ -336,7 +336,7 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
 文字コード<br>
 　◯言語既定値(D)<br>
-　(●)その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
+　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
 
 <br>
 
