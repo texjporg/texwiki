@@ -560,9 +560,9 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
-クラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
+uplatex + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
+他の文書クラスを使用していてクラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -572,13 +572,13 @@ dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設�
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>uplatex,dvipdfmx,12pt,papersize</ins><br>
+　任意設定(T):　　　 <ins>uplatex,dvipdfmx,12pt,ja=standard</ins><br>
 
 <br>
 
@@ -588,8 +588,9 @@ dvipdfmx を使用する場合は，クラスオプションに dvipdfmx を設�
 
 #### uplatex + dvips + ps2pdf の場合 {#p803a02d}
 
-文書クラスで 日本語Article (jsarticle) を選択し，クラスオプションを設定します．<br>
-dvips を使用する場合は，グラフィックドライバに 既定値 または Dvips を指定します．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
+uplatex + dvips + ps2pdf で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvips を設定してグラフィックドライバに 既定値を指定します．<br>
+他の文書クラスを使用していてクラスオプションに dvips を設定しない場合はグラフィックドライバに  既定値 または Dvips を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -599,13 +600,13 @@ dvips を使用する場合は，グラフィックドライバに 既定値 ま
 <br>
 
 　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[日本語Article (jsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>uplatex,12pt,papersize</ins><br>
+　任意設定(T):　　　 <ins>uplatex,dvips,12pt,ja=standard</ins><br>
 
 <br>
 
@@ -618,7 +619,8 @@ dvips を使用する場合は，グラフィックドライバに 既定値 ま
 <!-- 文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．~ -->
 
 文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-pdflatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
+pdflatex で bxjsarticle を使用する場合は，クラスオプションに pdflatex を設定してグラフィックドライバに 既定値を指定します．<br>
+他の文書クラスを使用していてクラスオプションに pdflatex を設定しない場合はグラフィックドライバに  既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -645,7 +647,7 @@ pdflatex を使用する場合は，グラフィックドライバに 既定値 
 #### lualatex, luajitlatex の場合 {#l1a666c4}
 
 文書クラスで Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．<br>
-lualatex, luajitlatex を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
+lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
@@ -672,7 +674,8 @@ lualatex, luajitlatex を使用する場合は，グラフィックドライバ�
 #### xelatex の場合 {#ce0db196}
 
 文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-xelatex を使用する場合は，グラフィックドライバに 既定値 または XeTeX を指定します．<br>
+xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex を設定してグラフィックドライバに 既定値を指定します．<br>
+他の文書クラスを使用していてクラスオプションに xelatex を設定しない場合はグラフィックドライバに  既定値 または XeTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
 ***
