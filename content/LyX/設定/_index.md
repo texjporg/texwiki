@@ -210,7 +210,7 @@ Input book.layout
     <!-- -C:\Program Files (x86)\LyX 2.1\Resources\layouts\ (64-bit Windows の場合) -->
 
 フォルダーにコピーします．<br>
-\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
 \[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
 
 - Japanese Article (bxjsarticle)
@@ -229,7 +229,7 @@ Input book.layout
 - &#x7e;/Library/Application Support/LyX-2.1/layouts/
 
 フォルダにコピーします．<br>
-\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
 \[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
 
 - Japanese Article (bxjsarticle)
@@ -247,7 +247,7 @@ Input book.layout
 - &#x7e;/.lyx/layouts/
 
 ディレクトリにコピーします．<br>
-\[ツール(T)\]-\[再初期設定(R)\] をクリックして LyX を再起動します．<br>
+\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
 \[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
 
 - Japanese Article (bxjsarticle)
