@@ -13,6 +13,10 @@ pukiwiki: "iOS"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
+## 日本語ドキュメント {#z01b76c2}
+
+- [https://developer.apple.com/jp/devcenter/ios/library/japanese.html](https://developer.apple.com/jp/devcenter/ios/library/japanese.html)
+
 <!-- *TeX Live [#w97b9c35] -->
 <!--  -->
 <!-- -[[TeX Live for iPhone:http://gamma-level.com/iphoneos/ports/texlive]] -->
