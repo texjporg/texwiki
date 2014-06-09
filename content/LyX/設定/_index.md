@@ -631,7 +631,7 @@ pdflatex を使用する場合は，グラフィックドライバに 既定値 
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>pdflatex,12pt,jadriver=standard</ins><br>
+　任意設定(T):　　　 <ins>pdflatex,12pt,ja=standard</ins><br>
 
 <br>
 
@@ -685,7 +685,7 @@ xelatex を使用する場合は，グラフィックドライバに 既定値 �
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>xelatex,12pt,jadriver=standard</ins><br>
+　任意設定(T):　　　 <ins>xelatex,12pt,ja=standard</ins><br>
 
 <br>
 
