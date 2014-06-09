@@ -24,12 +24,12 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 ### 派生版 {#h517ae27}
 
+- [PyPy](http://pypy.org/)
+- [Cython](http://cython.org/)
 - [IronPython](http://ironpython.net/)
     - [http://ironpython.codeplex.com/](http://ironpython.codeplex.com/)
     - [https://github.com/IronLanguages/ironpython3](https://github.com/IronLanguages/ironpython3)
 - [Jython](http://www.jython.org/)
-- [PyPy](http://pypy.org/)
-- [Cython](http://cython.org/)
 - [Micro Python](http://micropython.org/)
 
 ## インストール {#y6c76d8e}
@@ -62,6 +62,8 @@ $ pacman -S python
 
 - [https://www.archlinux.org/packages/?name=python](https://www.archlinux.org/packages/?name=python)
 - [https://www.archlinux.org/packages/?name=python2](https://www.archlinux.org/packages/?name=python2)
+- [https://www.archlinux.org/packages/?name=pypy3](https://www.archlinux.org/packages/?name=pypy3)
+- [https://www.archlinux.org/packages/?name=pypy](https://www.archlinux.org/packages/?name=pypy)
 
 #### Linux Mint {#fb9002c1}
 
@@ -343,7 +345,7 @@ $ invevince "hoge.pdf" "texstudio '%f' -line %l"
 
 ### Python 版 {#w284c2eb}
 
-Python 3.4.1 で動作確認しています．<br>
+Python 3.4.1 と PyPy3 2.1 Beta 1 で動作確認しています．<br>
 
 ***
 
