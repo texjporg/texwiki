@@ -383,6 +383,7 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 12pt で文書を作成する場合は基本寸法を 12 に変更します．<br>
 10pt, 11pt, 12pt 以外の大きさの基本寸法を使用する場合は文書クラスのクラスオプションで指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
+XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/ZXjatype](/xeCJK/), [LuaTeX-ja](/LuaTeX-ja/) を使用して LaTeXプリアンブルに日本語文書に使用するフォントの設定を記述してください．<br>
 
 ***
 
