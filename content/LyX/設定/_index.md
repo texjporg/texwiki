@@ -215,6 +215,7 @@ Input book.layout
 
 - Japanese Article (bxjsarticle)
 - Japanese Report (bxjsreport)
+- Japanese Book (bxjsbook)
 - Japanese Article (ltjsarticle)
 - Japanese Book (ltjsbook)
 
@@ -233,6 +234,7 @@ Input book.layout
 
 - Japanese Article (bxjsarticle)
 - Japanese Report (bxjsreport)
+- Japanese Book (bxjsbook)
 - Japanese Article (ltjsarticle)
 - Japanese Book (ltjsbook)
 
@@ -250,6 +252,7 @@ Input book.layout
 
 - Japanese Article (bxjsarticle)
 - Japanese Report (bxjsreport)
+- Japanese Book (bxjsbook)
 - Japanese Article (ltjsarticle)
 - Japanese Book (ltjsbook)
 
