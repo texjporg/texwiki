@@ -24,6 +24,7 @@ Google Chrome は Google が開発している Web ブラウザです．<br>
 Chromium は Google Chrome で使用されているオープンソースの Web ブラウザです．<br>
 
 - [The Chromium Projects](http://www.chromium.org/)
+- [http://chromium.woolyss.com/](http://chromium.woolyss.com/)
 
 ### 派生版 {#gc229b7d}
 
