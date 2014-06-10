@@ -11,6 +11,8 @@ pukiwiki: "Google Chrome"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Chrome_icon_%282011%29.svg/200px-Google_Chrome_icon_%282011%29.svg.png" alt="Google Chrome" style="float:right">
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chromium_11_Logo.svg/200px-Chromium_11_Logo.svg.png" alt="Chromium" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Google Chrome とは {#sada177b}
@@ -24,7 +26,10 @@ Google Chrome は Google が開発している Web ブラウザです．<br>
 Chromium は Google Chrome で使用されているオープンソースの Web ブラウザです．<br>
 
 - [The Chromium Projects](http://www.chromium.org/)
-- [http://chromium.woolyss.com/](http://chromium.woolyss.com/)
+
+### ダウンロード/インストール {#m19ade28}
+
+- [Download latest stable Chromium binaries (64-bit and 32-bit)](http://chromium.woolyss.com/)
 
 ### 派生版 {#gc229b7d}
 
