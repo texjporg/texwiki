@@ -31,6 +31,12 @@ ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
     - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log)
 
+## 注意点 {#g4630026}
+
+### OS X の TeXstudio で ptex2pdf が動作しない → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除して ~/.bash_profile に export PATH=$PATH:/usr/texbin を追加する {#v4d20b34}
+
+- [(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)
+
 ## 不具合 {#n3e20d7f}
 
 ### TeX Live 2013/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#g2950b8d}
