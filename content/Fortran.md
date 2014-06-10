@@ -150,12 +150,12 @@ module c_stdio
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_puts
+    public :: puts
     interface
-        subroutine c_puts(s) bind(c, name='puts')
+        subroutine puts(s) bind(c, name='puts')
             import
             character(kind=c_char), intent(in) :: s
-        end subroutine c_puts
+        end subroutine puts
     end interface
 end module c_stdio
 
@@ -163,36 +163,36 @@ program hello_world
     use, intrinsic :: iso_c_binding
     use c_stdio
     implicit none
-    call c_puts("Hello World" // c_null_char)
+    call puts("Hello World" // c_null_char)
 end program hello_world
 ```
 
 ***
 
 ```
-module c_windows
+module windows_api
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_MessageBoxA
+    public :: MessageBoxA
     interface
-        subroutine c_MessageBoxA(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxA')
+        subroutine MessageBoxA(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxA')
             import
-            !gcc$ attributes stdcall :: c_MessageBoxA
+            !gcc$ attributes stdcall :: MessageBoxA
             type(c_ptr), value :: hWnd
             character(kind=c_char), intent(in) :: lpText
             character(kind=c_char), intent(in) :: lpCaption
             integer(kind=c_int), value :: uType
-        end subroutine c_MessageBoxA
+        end subroutine MessageBoxA
     end interface
-end module c_windows
+end module windows_api
 
 program hello_world
     use, intrinsic :: iso_c_binding
-    use c_windows
+    use windows_api
     implicit none
     character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
-    call c_MessageBoxA(c_null_ptr, msg, msg, 0)
+    call MessageBoxA(c_null_ptr, msg, msg, 0)
 end program hello_world
 ```
 
@@ -203,57 +203,57 @@ module c_string
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_memset
+    public :: memset
     interface
-        subroutine c_memset(buf, ch, n) bind(c, name='memset')
+        subroutine memset(buf, ch, n) bind(c, name='memset')
             import
             type(c_ptr), value :: buf
             integer(kind=c_int), value :: ch
             integer(kind=c_size_t), value :: n
-        end subroutine c_memset
+        end subroutine memset
     end interface
 end module c_string
 
-module c_windows
+module windows_api
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_MessageBoxW, c_MultiByteToWideChar
+    public :: MessageBoxW, MultiByteToWideChar
     interface
-        subroutine c_MessageBoxW(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxW')
+        subroutine MessageBoxW(hWnd, lpText, lpCaption, uType) bind(c, name='MessageBoxW')
             import
-            !gcc$ attributes stdcall :: c_MessageBoxW
+            !gcc$ attributes stdcall :: MessageBoxW
             type(c_ptr), value :: hWnd
             type(c_ptr), value :: lpText
             type(c_ptr), value :: lpCaption
             integer(kind=c_int), value :: uType
-        end subroutine c_MessageBoxW
-        function c_MultiByteToWideChar(codePage, dwFlags, lpMultiByteStr, cchMultiByte, lpWideCharStr, cchWideChar) &
-                & result(wideCharBufSize) bind(c, name='MultiByteToWideChar')
+        end subroutine MessageBoxW
+        integer(kind=c_int) function MultiByteToWideChar( &
+                & codePage, dwFlags, lpMultiByteStr, cchMultiByte, lpWideCharStr, cchWideChar) &
+                & bind(c, name='MultiByteToWideChar')
             import
-            !gcc$ attributes stdcall :: c_MultiByteToWideChar
+            !gcc$ attributes stdcall :: MultiByteToWideChar
             integer(kind=c_int), value :: codePage
             integer(kind=c_int), value :: dwFlags
             character(kind=c_char), intent(in) :: lpMultiByteStr
             integer(kind=c_int), value :: cchMultiByte
             type(c_ptr), value :: lpWideCharStr
             integer(kind=c_int), value :: cchWideChar
-            integer(kind=c_int) :: wideCharBufSize
-        end function c_MultiByteToWideChar
+        end function MultiByteToWideChar
     end interface
-end module c_windows
+end module windows_api
 
 program hello_world
     use, intrinsic :: iso_c_binding
     use c_string
-    use c_windows
+    use windows_api
     implicit none
     character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
     integer(kind=1), dimension(1:2*len(msg)), target :: hello_world_wchar
     integer(kind=c_int) :: bufSize
-    call c_memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
-    bufSize = c_MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
-    if (bufSize /= 0) call c_MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
+    call memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
+    bufSize = MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
+    if (bufSize /= 0) call MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
 end program hello_world
 ```
 
