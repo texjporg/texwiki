@@ -28,6 +28,7 @@ pukiwiki: "OCaml"
 - [http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface](http://www.cl.cam.ac.uk/projects/ocamllabs/tasks/platform.html#Foreign%20Function%20Interface)
 - [https://github.com/ocamllabs/ocaml-ctypes](https://github.com/ocamllabs/ocaml-ctypes)
 - [https://realworldocaml.org/v1/en/html/](https://realworldocaml.org/v1/en/html/)
+- [http://alain.frisch.fr/flexdll.html](http://alain.frisch.fr/flexdll.html)
 
 ### ChangeLog {#j264cfdf}
 
