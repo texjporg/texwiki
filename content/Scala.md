@@ -22,6 +22,7 @@ pukiwiki: "Scala"
 - [http://www.ne.jp/asahi/hishidama/home/tech/scala/](http://www.ne.jp/asahi/hishidama/home/tech/scala/)
 - [ScalaからCライブラリを読み込んで実行する](http://fukaoi.org/2010/12/13/Scala%E3%81%8B%E3%82%89C%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%82%92%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%93%E3%81%A7%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B)
 - [Scala Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/scala)
+- [Hello, Win32 API(Scala) World!](http://cx20.main.jp/blog/hello/2013/01/08/hello-win32-api-scala-world/)
 
 ### ライブラリ {#f02ba6e6}
 
