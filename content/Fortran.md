@@ -27,6 +27,7 @@ pukiwiki: "Fortran"
 - [インテル® Fortran コンパイラー XE 13.1 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
 - [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
 - [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
+- [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
 - [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
@@ -548,3 +549,393 @@ end program cat2
 - [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
 - [メモリマップドファイルを使ったデータの共有](http://rakasaka.fc2web.com/delphi/mapping.html)
+
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#uf675bd5}
+
+### Fortran 版 {#k22b610d}
+
+GNU Fortran (gfortran) 4.8.1 で動作確認しています．<br>
+[MinGW](/MinGW/) の gfortran でビルドできます．<br>
+
+```
+$ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90 -luser32 -ladvapi32
+```
+
+***
+
+```
+! vim: ts=4 sw=4 expandtab:
+! $ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90 -luser32 -ladvapi32
+module c_string
+    use, intrinsic :: iso_c_binding
+    implicit none
+    private
+    public :: memset, wcslen, wcscat
+    interface
+        subroutine memset(buf, ch, n) bind(c, name='memset')
+            use, intrinsic :: iso_c_binding
+            type(c_ptr), value :: buf
+            integer(kind=c_int), value :: ch
+            integer(kind=c_size_t), value :: n
+        end subroutine memset
+        integer(kind=c_int) function wcslen(s) bind(c, name='wcslen')
+            use, intrinsic :: iso_c_binding
+            type(c_ptr), value :: s
+        end function wcslen
+        subroutine wcscat(dst, src) bind(c, name='wcscat')
+            use, intrinsic :: iso_c_binding
+            type(c_ptr), value :: dst
+            type(c_ptr), value :: src
+        end subroutine wcscat
+    end interface
+end module c_string
+
+module windows_api
+    use, intrinsic :: iso_c_binding
+    implicit none
+    private
+    public :: MultiByteToWideChar, &
+        & RegOpenKeyExW, &
+        & RegQueryValueExW, &
+        & RegCloseKey, &
+        & CreateProcessW, &
+        & WaitForInputIdle, &
+        & DdeInitializeW, &
+        & DdeUninitialize, &
+        & DdeCreateStringHandleW, &
+        & DdeFreeStringHandle, &
+        & DdeCreateDataHandle, &
+        & DdeFreeDataHandle, &
+        & DdeConnect, &
+        & DdeDisconnect, &
+        & DdeClientTransaction, &
+        & DdeGetLastError, &
+        & STARTUPINFOW, &
+        & PROCESS_INFORMATION, &
+        & HKEY_LOCAL_MACHINE, &
+        & KEY_QUERY_VALUE, &
+        & DMLERR_NO_ERROR, &
+        & APPCMD_CLIENTONLY, &
+        & CP_WINUNICODE, &
+        & CF_UNICODETEXT, &
+        & XCLASS_FLAGS, &
+        & XTYP_EXECUTE, &
+        & TIMEOUT
+    integer(kind=c_long), parameter :: HKEY_LOCAL_MACHINE = 2147483650
+    integer(kind=c_int), parameter :: KEY_QUERY_VALUE = 1
+    integer(kind=c_int), parameter :: DMLERR_NO_ERROR = 0
+    integer(kind=c_int), parameter :: APPCMD_CLIENTONLY = 16
+    integer(kind=c_int), parameter :: CP_WINUNICODE = 1200
+    integer(kind=c_int), parameter :: CF_UNICODETEXT = 13
+    integer(kind=c_int), parameter :: XCLASS_FLAGS = 16384
+    integer(kind=c_int), parameter :: XTYP_EXECUTE = ior(80, XCLASS_FLAGS)
+    integer(kind=c_int), parameter :: TIMEOUT = 10000
+    type, bind(c) :: STARTUPINFOW
+        integer(kind=c_int) :: cb
+        type(c_ptr) :: lpReserved
+        type(c_ptr) :: lpDesktop
+        type(c_ptr) :: lpTitle
+        integer(kind=c_int) :: dwX
+        integer(kind=c_int) :: dwY
+        integer(kind=c_int) :: dwXSize
+        integer(kind=c_int) :: dwYSize
+        integer(kind=c_int) :: dwXCountChars
+        integer(kind=c_int) :: dwYCountChars
+        integer(kind=c_int) :: dwFillAttributes
+        integer(kind=c_int) :: dwFlags
+        integer(kind=c_short) :: dwShowWindow
+        integer(kind=c_short) :: cbReserved2
+        type(c_ptr) :: lpReserved2
+        type(c_ptr) :: hStdInput
+        type(c_ptr) :: hStdOutput
+        type(c_ptr) :: hStdError
+    end type STARTUPINFOW
+    type, bind(c) :: PROCESS_INFORMATION
+        type(c_ptr) :: hProcess
+        type(c_ptr) :: hThread
+        integer(kind=c_int) :: dwProcessId
+        integer(kind=c_int) :: dwThreadId
+    end type PROCESS_INFORMATION
+    interface
+        subroutine RegOpenKeyExW(hKey, lpSubKey, ulOptions, samDesired, phkResult) bind(c, name='RegOpenKeyExW')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: RegOpenKeyExW
+            integer(c_long), value :: hKey
+            type(c_ptr), value :: lpSubKey
+            integer(kind=c_int), value :: ulOptions
+            integer(kind=c_int), value :: samDesired
+            type(c_ptr), value :: phkResult
+        end subroutine RegOpenKeyExW
+        subroutine RegQueryValueExW(hKey, lpValueName, lpReserved, lpType, lpData, lpcbData) bind(c, name='RegQueryValueExW')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: RegQueryValueExW
+            type(c_ptr), value :: hKey
+            type(c_ptr), value :: lpValueName
+            type(c_ptr), value :: lpReserved
+            type(c_ptr), value :: lpType
+            type(c_ptr), value :: lpData
+            type(c_ptr), value :: lpcbData
+        end subroutine RegQueryValueExW
+        subroutine RegCloseKey(hKey) bind(c, name='RegCloseKey')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: RegCloseKey
+            type(c_ptr), value :: hKey
+        end subroutine RegCloseKey
+        subroutine CreateProcessW( &
+                & lpApplicationName, lpCommandLine, lpProcessAttributes, lpThreadAttributes, bInheritHandles, dwCreationFlags, &
+                & lpEnvironment, lpCurrentDirectory, lpStartupInfo, lpProcessInformation) bind(c, name='CreateProcessW')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: CreateProcessW
+            type(c_ptr), value :: lpApplicationName
+            type(c_ptr), value :: lpCommandLine
+            type(c_ptr), value :: lpProcessAttributes
+            type(c_ptr), value :: lpThreadAttributes
+            integer(c_int), value :: bInheritHandles
+            integer(c_int), value :: dwCreationFlags
+            type(c_ptr), value :: lpEnvironment
+            type(c_ptr), value :: lpCurrentDirectory
+            type(c_ptr), value :: lpStartupInfo
+            type(c_ptr), value :: lpProcessInformation
+        end subroutine CreateProcessW
+        subroutine WaitForInputIdle(hProcess, dwMilliseconds) bind(c, name='WaitForInputIdle')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: WaitForInputIdle
+            type(c_ptr), value :: hProcess
+            integer(kind=c_int), value :: dwMilliseconds
+        end subroutine WaitForInputIdle
+        integer(kind=c_int) function MultiByteToWideChar( &
+                & codePage, dwFlags, lpMultiByteStr, cchMultiByte, lpWideCharStr, cchWideChar) &
+                & bind(c, name='MultiByteToWideChar')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: MultiByteToWideChar
+            integer(kind=c_int), value :: codePage
+            integer(kind=c_int), value :: dwFlags
+            character(kind=c_char), intent(in) :: lpMultiByteStr
+            integer(kind=c_int), value :: cchMultiByte
+            type(c_ptr), value :: lpWideCharStr
+            integer(kind=c_int), value :: cchWideChar
+        end function MultiByteToWideChar
+        subroutine DdeInitializeW(pidInst, pfnCallback, afCmd, ulRes) bind(c, name='DdeInitializeW')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeInitializeW
+            type(c_ptr), value :: pidInst
+            type(c_ptr), value :: pfnCallback
+            integer(c_int), value :: afCmd
+            integer(c_int), value :: ulRes
+        end subroutine DdeInitializeW
+        subroutine DdeUninitialize(idInst) bind(c, name='DdeUninitialize')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeUninitialize
+            integer(c_int), value :: idInst
+        end subroutine DdeUninitialize
+        type(c_ptr) function DdeCreateStringHandleW(idInst, psz, iCodePage) bind(c, name='DdeCreateStringHandleW')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeCreateStringHandleW
+            integer(c_int), value :: idInst
+            type(c_ptr), value :: psz
+            integer(c_int), value :: iCodePage
+        end function DdeCreateStringHandleW
+        subroutine DdeFreeStringHandle(idInst, hsz) bind(c, name='DdeFreeStringHandle')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeFreeStringHandle
+            integer(c_int), value :: idInst
+            type(c_ptr), value :: hsz
+        end subroutine DdeFreeStringHandle
+        type(c_ptr) function DdeCreateDataHandle(idInst, pSrc, cb, cbOff, hszItem, wFmt, afCmd) bind(c, name='DdeCreateDataHandle')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeCreateDataHandle
+            integer(c_int), value :: idInst
+            type(c_ptr), value :: pSrc
+            integer(c_int), value :: cb
+            integer(c_int), value :: cbOff
+            type(c_ptr), value :: hszItem
+            integer(c_int), value :: wFmt
+            integer(c_int), value :: afCmd
+        end function DdeCreateDataHandle
+        subroutine DdeFreeDataHandle(hData) bind(c, name='DdeFreeDataHandle')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeFreeDataHandle
+            type(c_ptr), value :: hData
+        end subroutine DdeFreeDataHandle
+        type(c_ptr) function DdeConnect(idInst, hszServer, hszTopic, pCC) bind(c, name='DdeConnect')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeConnect
+            integer(c_int), value :: idInst
+            type(c_ptr), value :: hszServer
+            type(c_ptr), value :: hszTopic
+            type(c_ptr), value :: pCC
+        end function DdeConnect
+        subroutine DdeDisconnect(hConvList) bind(c, name='DdeDisconnect')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeDisconnect
+            type(c_ptr), value :: hConvList
+        end subroutine DdeDisconnect
+        type(c_ptr) function DdeClientTransaction( &
+                & pData, cbData, hConv, hszItem, wFmt, wType, dwTimeout, pdwResult) bind(c, name='DdeClientTransaction')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeClientTransaction
+            type(c_ptr), value :: pData
+            integer(c_int), value :: cbData
+            type(c_ptr), value :: hConv
+            type(c_ptr), value :: hszItem
+            integer(c_int), value :: wFmt
+            integer(c_int), value :: wType
+            integer(c_int), value :: dwTimeout
+            type(c_ptr), value :: pdwResult
+        end function DdeClientTransaction
+        integer function DdeGetLastError(idInst) bind(c, name='DdeGetLastError')
+            use, intrinsic :: iso_c_binding
+            !gcc$ attributes stdcall :: DdeGetLastError
+            integer(c_int), value :: idInst
+        end function DdeGetLastError
+    end interface
+end module windows_api
+
+subroutine runSumatraPDF()
+    use, intrinsic :: iso_c_binding
+    use windows_api
+    use c_string
+    implicit none
+    character(len=*, kind=c_char), parameter :: keyPath = &
+        & 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' // c_null_char
+    integer(kind=1), dimension(:), allocatable, target :: keyPath_wchar
+    integer(kind=1), dimension(:), allocatable, target :: sumatraPDFRegistry_wchar
+    character(len=*, kind=c_char), parameter :: doubleQuote = '"' // c_null_char
+    integer(kind=1), dimension(:), allocatable, target :: doubleQuote_wchar
+    character(len=*, kind=c_char), parameter :: reuseInstance = '" -reuse-instance' // c_null_char
+    integer(kind=1), dimension(:), allocatable, target :: reuseInstance_wchar
+    integer(kind=1), dimension(:), allocatable, target :: sumatraPDFCommandLine_wchar
+    integer(kind=c_int) :: bufSize
+    type(c_ptr), target :: subKey
+    integer(c_int), target :: dwType = 0
+    integer(c_int), target :: sz = 0
+    type(STARTUPINFOW), target :: si
+    type(PROCESS_INFORMATION), target :: pi
+
+    allocate(keyPath_wchar(1:2*len_trim(keyPath)))
+    allocate(doubleQuote_wchar(1:2*len_trim(doubleQuote)))
+    allocate(reuseInstance_wchar(1:2*len_trim(reuseInstance)))
+    bufSize = MultiByteToWideChar(0, 1, keyPath, -1, c_loc(keyPath_wchar), len(keyPath))
+    bufSize = MultiByteToWideChar(0, 1, doubleQuote, -1, c_loc(doubleQuote_wchar), len(doubleQuote))
+    bufSize = MultiByteToWideChar(0, 1, reuseInstance, -1, c_loc(reuseInstance_wchar), len(reuseInstance))
+    call RegOpenKeyExW(HKEY_LOCAL_MACHINE, c_loc(keyPath_wchar), 0, KEY_QUERY_VALUE, c_loc(subKey))
+    call RegQueryValueExW(subKey, c_null_ptr, c_null_ptr, c_loc(dwType), c_null_ptr, c_loc(sz))
+    allocate(sumatraPDFRegistry_wchar(sz))
+    call RegQueryValueExW(subKey, c_null_ptr, c_null_ptr, c_loc(dwType), c_loc(sumatraPDFRegistry_wchar), c_loc(sz))
+    call RegCloseKey(subKey)
+    allocate(sumatraPDFCommandLine_wchar( &
+        & 2*(wcslen(c_loc(doubleQuote_wchar))+wcslen(c_loc(sumatraPDFRegistry_wchar))+wcslen(c_loc(reuseInstance_wchar)))))
+    call memset(c_loc(sumatraPDFCommandLine_wchar), 0, size(sumatraPDFCommandLine_wchar))
+    call memset(c_loc(si), 0, c_sizeof(si))
+    call memset(c_loc(pi), 0, c_sizeof(pi))
+    call wcscat(c_loc(sumatraPDFCommandLine_wchar), c_loc(doubleQuote_wchar))
+    call wcscat(c_loc(sumatraPDFCommandLine_wchar), c_loc(sumatraPDFRegistry_wchar))
+    call wcscat(c_loc(sumatraPDFCommandLine_wchar), c_loc(reuseInstance_wchar))
+    call CreateProcessW(c_null_ptr, c_loc(sumatraPDFCommandLine_wchar), c_null_ptr, c_null_ptr, 0, 0, c_null_ptr, c_null_ptr, &
+        & c_loc(si), c_loc(pi))
+    call WaitForInputIdle(pi%hProcess, TIMEOUT)
+    deallocate(sumatraPDFCommandLine_wchar)
+    deallocate(sumatraPDFRegistry_wchar)
+    deallocate(reuseInstance_wchar)
+    deallocate(doubleQuote_wchar)
+    deallocate(keyPath_wchar)
+end subroutine runSumatraPDF
+
+subroutine ddeExecute()
+    use, intrinsic :: iso_fortran_env
+    use, intrinsic :: iso_c_binding
+    use windows_api
+    use c_string
+    implicit none
+    character(len=*, kind=c_char), parameter :: server = "SUMATRA" // c_null_char
+    character(len=*, kind=c_char), parameter :: topic = "control" // c_null_char
+    character(len=256, kind=c_char) :: pdf
+    character(len=256, kind=c_char) :: tex
+    character(len=256, kind=c_char) :: line
+    character(len=1024, kind=c_char) :: command
+    integer(kind=1), dimension(:), allocatable, target :: server_wchar
+    integer(kind=1), dimension(:), allocatable, target :: topic_wchar
+    integer(kind=1), dimension(:), allocatable, target :: command_wchar
+    integer(kind=c_int) :: bufSize
+    integer(kind=c_int), target :: idInstance = 0
+    type(c_ptr), target :: hszServer
+    type(c_ptr), target :: hszTopic
+    type(c_ptr), target :: hConvClient
+    type(c_ptr), target :: hDdeData
+    type(c_ptr), target :: hDdeTransactionData
+
+    block
+        integer :: i
+        character(len=256) :: arg
+        if (command_argument_count() /= 3) then
+            write(unit=error_unit, fmt='(*(g0))') "Usage: fwdsumatrapdf pdf tex line"
+            stop
+        end if
+        do i = 1, command_argument_count()
+            call get_command_argument(i, arg)
+            select case (i)
+            case (1)
+                pdf = arg
+            case (2)
+                tex = arg
+            case (3)
+                line = arg
+            case default
+                error stop "Too many arguments!"
+            end select
+        end do
+    end block
+    command = '[ForwardSearch("' // trim(pdf) // '","' // trim(tex) // '",' // trim(line) // ',0,0,0)]' // c_null_char
+    allocate(server_wchar(1:2*len_trim(server)))
+    allocate(topic_wchar(1:2*len_trim(topic)))
+    allocate(command_wchar(1:2*len_trim(command)))
+    call memset(c_loc(server_wchar), 0, size(server_wchar))
+    call memset(c_loc(topic_wchar), 0, size(topic_wchar))
+    call memset(c_loc(command_wchar), 0, size(command_wchar))
+    bufSize = MultiByteToWideChar(0, 1, server, -1, c_loc(server_wchar), len(server))
+    bufSize = MultiByteToWideChar(0, 1, topic, -1, c_loc(topic_wchar), len(topic))
+    bufSize = MultiByteToWideChar(0, 1, command, -1, c_loc(command_wchar), len(command))
+    call runSumatraPDF()
+    call DdeInitializeW(c_loc(idInstance), c_null_ptr, APPCMD_CLIENTONLY, 0)
+    if (idInstance == 0) then
+        error stop "DdeInitializeW error"
+    end if
+    hszServer = DdeCreateStringHandleW(idInstance, c_loc(server_wchar), CP_WINUNICODE)
+    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+        error stop "DdeCreateStringHandleW error"
+    end if
+    hszTopic = DdeCreateStringHandleW(idInstance, c_loc(topic_wchar), CP_WINUNICODE)
+    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+        error stop "DdeCreateStringHandleW error"
+    end if
+    hConvClient = DdeConnect(idInstance, hszServer, hszTopic, c_null_ptr)
+    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+        error stop "DdeConnect error"
+    end if
+    hDdeData = DdeCreateDataHandle( &
+        & idInstance, c_loc(command_wchar), ((wcslen(c_loc(command_wchar)) + 1)*2), 0, c_null_ptr, CF_UNICODETEXT, 0)
+    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+        error stop "DdeCreateDataHandle error"
+    end if
+    hDdeTransactionData = DdeClientTransaction(hDdeData, -1, hConvClient, c_null_ptr, 0, XTYP_EXECUTE, TIMEOUT, c_null_ptr)
+    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+        error stop "DdeClientTransaction error"
+    end if
+    call DdeFreeDataHandle(hDdeTransactionData)
+    call DdeFreeDataHandle(hDdeData)
+    call DdeFreeStringHandle(idInstance, hszServer)
+    call DdeFreeStringHandle(idInstance, hszTopic)
+    call DdeDisconnect(hConvClient)
+    call DdeUninitialize(idInstance)
+    deallocate(server_wchar)
+    deallocate(topic_wchar)
+    deallocate(command_wchar)
+end subroutine ddeExecute
+
+program fwdsumatrapdf
+    implicit none
+    call ddeExecute()
+end program fwdsumatrapdf
+```
+
+***
