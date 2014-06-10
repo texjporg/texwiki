@@ -250,7 +250,7 @@ module User32
                            'DWORD dwFillAttribute', \
                            'DWORD dwFlags', \
                            'WORD wShowWindow', \
-                           'WORD lpReserved2', \
+                           'WORD cbReserved2', \
                            'LPBYTE lpReserved2', \
                            'HANDLE hStdInput', \
                            'HANDLE hStdOutput', \
