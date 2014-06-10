@@ -780,6 +780,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．[SumatraPDF](/SumatraPDF/) などで使われています．
 - [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
+- [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
 
 ## [BibTeX 関連](</BibTeX関連ツール/>) {#s7d96524}
 
