@@ -411,13 +411,12 @@ module c_stdlib
     use, intrinsic :: iso_c_binding
     implicit none
     private
-    public :: c_atoi
+    public :: atoi
     interface
-        function c_atoi(s) result(i) bind(c, name='atoi')
+        integer(kind=c_int) function atoi(s) bind(c, name='atoi')
             import
             character(kind=c_char), intent(in) :: s
-            integer(kind=c_int) :: i
-        end function c_atoi
+        end function atoi
     end interface
 end module c_stdlib
 
@@ -437,7 +436,7 @@ program sum_from_1_to_n
     do i = 1, command_argument_count()
         call get_command_argument(i, arg)
 
-        n = c_atoi(trim(arg) // c_null_char)
+        n = atoi(trim(arg) // c_null_char)
 
         if (n > 0 .and. n <= huge(n)) then
             print '(*(g0))', "Sum from 1 to ", n, " = ", &
