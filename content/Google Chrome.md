@@ -35,17 +35,9 @@ Chromium は Google Chrome で使用されているオープンソースの Web 
 
 - [Chromium派生ブラウザ総合 まとめWiki](http://www49.atwiki.jp/chromiumbased/)
 
-#### Windows, OS X, Linux {#j22a66b2}
-
 - [SRWare Iron](http://www.srware.net/en/)
     - [Download](http://www.srware.net/en/software_srware_iron_download.php)
-
-#### Windows, OS X {#ad57c82e}
-
 - [Opera](http://www.opera.com/ja/)
-
-#### Windows {#k7a99ec2}
-
 - [Comodo Dragon](http://www.comodo.com/home/browsers-toolbars/browser.php)
 
 ## プラグイン {#y795a936}
