@@ -54,7 +54,7 @@ pukiwiki: "Haskell"
 
 ### Haskell 版 {#cbd580e5}
 
-The Glorious Glasgow Haskell Compilation System, version 7.6.3 でビルドできます．<br>
+The Glorious Glasgow Haskell Compilation System, version 7.8.2 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
@@ -87,8 +87,7 @@ import Debug.Trace
 import Graphics.Win32.GDI.Types
 import Control.Concurrent
 import Control.Exception
-import Control.Monad.Error
-import Control.Monad.Reader
+import Control.Monad
 import Text.Printf
 import Foreign.C.Types
 import Foreign.C.String
