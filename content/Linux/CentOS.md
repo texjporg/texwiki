@@ -40,6 +40,12 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 - [the status of CentOS mirrors#jp](http://mirror-status.centos.org/#jp)
 
+### ChangeLog {#q632c241}
+
+- [https://git.centos.org/](https://git.centos.org/)
+    - [https://git.centos.org/activity/](https://git.centos.org/activity/)
+    - [https://git.centos.org/summary/?r=centos-git-common.git](https://git.centos.org/summary/?r=centos-git-common.git)
+
 ## Scientific Linux (SL) とは {#d9e440c7}
 
 Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．<br>
