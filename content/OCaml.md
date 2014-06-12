@@ -14,7 +14,6 @@ pukiwiki: "OCaml"
 ## Summary {#s5b2a93b}
 
 - [The Caml language: Home](http://caml.inria.fr/)
-- [OCaml for Windows &mdash; Wodi](http://wodi.forge.ocamlcore.org/)
 - [OCaml.jp](http://ocaml.jp/)
 - [http://lists.idyll.org/pipermail/caml-news-weekly/](http://lists.idyll.org/pipermail/caml-news-weekly/)
 - [OCaml Advent Calendar 2012](http://partake.in/events/680a8735-b35c-4911-aaba-03aaf0f400b2)
@@ -29,6 +28,24 @@ pukiwiki: "OCaml"
 - [https://github.com/ocamllabs/ocaml-ctypes](https://github.com/ocamllabs/ocaml-ctypes)
 - [https://realworldocaml.org/v1/en/html/](https://realworldocaml.org/v1/en/html/)
 - [http://alain.frisch.fr/flexdll.html](http://alain.frisch.fr/flexdll.html)
+- [0005465: Increase stack size of ocamlopt.opt for windows](http://caml.inria.fr/mantis/view.php?id=5465)
+- [WinGW版OCamlのocamloptをcygwinなしで実行……](http://d.hatena.ne.jp/aldente39/20121015/1350252794)
+
+<!-- $ ocamlopt hoge.ml -->
+<!-- ** Fatal error: Cannot find file "libws2_32" -->
+<!-- File "caml_startup", line 1: -->
+<!-- Error: Error during linking -->
+<!--  -->
+<!-- $ ocamlopt -ccopt "-L c:/msys64/mingw64/x86_64-w64-mingw32/lib" hoge.ml -->
+
+### ダウンロード {#lee13824}
+
+- [http://caml.inria.fr/download.en.html](http://caml.inria.fr/download.en.html)
+
+#### Windows {#f2419a94}
+
+- [OCaml for Windows &mdash; Wodi](http://wodi.forge.ocamlcore.org/)
+- [The OCaml installer for Windows](http://protz.github.io/ocaml-installer/)
 
 ### ChangeLog {#j264cfdf}
 
