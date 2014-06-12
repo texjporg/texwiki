@@ -46,6 +46,7 @@ pukiwiki: "JavaScript"
 - [node.js](http://nodejs.org/)
 - [Node.js 日本ユーザグループ](http://nodejs.jp/)
 - [ビギナーのための Node.jsプログラミング入門](http://libro.tuyano.com/index2?id=1115003)
+- [Node Webkit から ネイティブDLLを呼ぶサンプル](http://qiita.com/essa/items/5e16f20b2b680fbafb70)
 
 ## jQuery {#i3ba4ee4}
 
