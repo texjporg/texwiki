@@ -7,7 +7,7 @@ pukiwiki: "Perl"
 
 # Perl
 
-## [Perl](http://www.perl.org/) → 問題が発生する場合は [Python](/Python/), [Ruby](/Ruby/), JavaScript, PHP を使用する {#rf8f3586}
+## [Perl](http://www.perl.org/) → 問題が発生する場合は [Python](/Python/), [Ruby](/Ruby/), Julia, JavaScript, PHP を使用する {#rf8f3586}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/500px-Camelia.svg.png" alt="Perl" style="float:right">
 
@@ -18,6 +18,7 @@ pukiwiki: "Perl"
 - [Perl 6](http://perl6.org/)
 - [Official Perl 6 Documentation](http://perlcabal.org/syn/)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
+- [https://github.com/jnthn/zavolaj/](https://github.com/jnthn/zavolaj/)
 - [Perl6 Advent Calendar 2012](http://qiita.com/advent-calendar/2012/perl6)
 - [Perl6 Advent Calendar 2011](http://atnd.org/events/22820)
 
