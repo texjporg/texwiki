@@ -38,33 +38,33 @@ C++ を参照．<br>
 
 D を参照．<br>
 
-### Fortran 版 {#a3d40116}
-
-Fortran を参照．<br>
-
 ### Go 版 {#af383c2e}
 
 Go を参照．<br>
 
-### Java 版 {#adf40b65}
+### Fortran 版 {#a3d40116}
 
-Java を参照．<br>
+Fortran を参照．<br>
 
-### VB 版 {#hc64ff38}
+### Haskell 版 {#m42b08da}
 
-Visual Basic を参照．<br>
-
-### C# 版 {#de1b4851}
-
-C Sharp を参照．<br>
+Haskell を参照．<br>
 
 ### F# 版 {#pd9dd173}
 
 F Sharp を参照．<br>
 
-### Haskell 版 {#m42b08da}
+### C# 版 {#de1b4851}
 
-Haskell を参照．<br>
+C Sharp を参照．<br>
+
+### VB 版 {#hc64ff38}
+
+Visual Basic を参照．<br>
+
+### Java 版 {#adf40b65}
+
+Java を参照．<br>
 
 ### Python 版 {#kb7260ce}
 
