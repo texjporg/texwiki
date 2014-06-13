@@ -65,6 +65,7 @@ pukiwiki: "Fortran"
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
+- [Fortranが書きたくないなら機械語を埋め込めばいいじゃないっ！](http://ledyba.org/2014/06/13235005.php)
 - [https://gist.github.com/ledyba](https://gist.github.com/ledyba)
     - [Fortranは書きやすいなぁ（棒読み）](https://gist.github.com/ledyba/074d7d23916565b1ab59)
     - [闇のFortran](https://gist.github.com/ledyba/6e604cadd1b572367a58)
