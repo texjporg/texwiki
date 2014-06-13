@@ -39,6 +39,7 @@ pukiwiki: "Go"
 - [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
 - [Go Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/go)
 - [golang で複数のエラーをハンドリングする方法](http://mattn.kaoriya.net/software/lang/go/20140416212413.htm)
+- [Go言語でエラーを書くときに気をつけること](http://d.hatena.ne.jp/taknb2nch/20140307/1394169432)
 
 ## インストール {#v5dc7237}
 
@@ -64,7 +65,7 @@ pukiwiki: "Go"
 
 ### Go 版 {#j2bc8fe8}
 
-go version go1.3rc1 windows/amd64 で動作確認しています．<br>
+go version go1.3rc2 windows/amd64 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
