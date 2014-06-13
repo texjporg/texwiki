@@ -32,14 +32,12 @@ pukiwiki: "Visual Basic"
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
->C:
->cd C:\w32tex\bin
-C:\w32tex\bin>vbc fwdsumatrapdf.vb
+vbc fwdsumatrapdf.vb
 ```
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.vb
+- fwdsumatrapdf.vb
 
 ***
 
