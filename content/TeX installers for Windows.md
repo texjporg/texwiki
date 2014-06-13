@@ -30,11 +30,11 @@ TeX インストーラを色々な視点から比較してみます。
 
 初心者の方は 
 
-- 「install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip」
+- 「install-tl-windows.exe または install-tl.zip」
 
 がおすすめです。
 
-## install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip {#g1a25b59}
+## install-tl-windows.exe または install-tl.zip {#g1a25b59}
 
 - <strong>ウェブサイト</strong>：[mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
 - <strong>作者</strong>：[TUG](http://www.tug.org/)さん
@@ -48,7 +48,7 @@ TeX インストーラを色々な視点から比較してみます。
 - <strong>短所</strong>：
     サイズが大きいのでインストールする場合は空き容量に注意する必要があります。
 
-- <strong>備考</strong>： install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) の他に詳細な設定ができる install-tl-advanced.bat もあります。
+- <strong>備考</strong>： install-tl-windows.bat の他に詳細な設定ができる install-tl-advanced.bat もあります。
 - <strong>参考</strong>：[Microsoft Windows - TeX Wiki](</Microsoft Windows/>)
 
 ## texinst {#v558e4b5}
