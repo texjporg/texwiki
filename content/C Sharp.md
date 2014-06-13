@@ -46,22 +46,18 @@ pukiwiki: "C Sharp"
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
->C:
->cd C:\w32tex\bin
-C:\w32tex\bin>csc /r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
+csc /r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
 ```
 
 Mono C# compiler (mcs) でもビルドできます．<br>
 
 ```
->C:
->cd C:\w32tex\bin
-C:\w32tex\bin>mcs -r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
+mcs -r:Microsoft.VisualBasic.dll fwdsumatrapdf.cs
 ```
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.cs
+- fwdsumatrapdf.cs
 
 ***
 
