@@ -59,17 +59,13 @@ pukiwiki: "Fortran"
 - [Fortranでの配列の要素へのアクセス順序について](http://d.hatena.ne.jp/aldente39/20120209/1328800255)
 - [MinGW Fortran でプログラミング　Excelで使用](http://pub.ne.jp/TakeA/?entry_id=4584618)
 - [計算機に関する雑多なTips](http://daweb.ism.ac.jp/~saitohm/top/_tRlEvpW.html)
+- [FortranをCっぽく書く](http://lochtext.hatenablog.com/entry/20140606/1402058404)
 - [Fortran 90 with Excel – gfortran example](http://sukhbinder.wordpress.com/2010/07/20/fortran-90-with-excel-gfortran-example/)
 - [using gfortran to call windows api functions](http://compgroups.net/comp.lang.fortran/using-gfortran-to-call-windows-api-function/226148)
 - [Bug 34112 - Add $!DEC ATTRIBUTE support for 32bit Windows' STDCALL](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=34112)
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
-- [Fortranが書きたくないなら機械語を埋め込めばいいじゃないっ！](http://ledyba.org/2014/06/13235005.php)
-- [https://gist.github.com/ledyba](https://gist.github.com/ledyba)
-    - [Fortranは書きやすいなぁ（棒読み）](https://gist.github.com/ledyba/074d7d23916565b1ab59)
-    - [闇のFortran](https://gist.github.com/ledyba/6e604cadd1b572367a58)
-    - [Fortranで任意のx86コードを実行する](https://gist.github.com/ledyba/cb75d5d16ed2d87e182a)
 
 ### 処理系 {#xfad745a}
 
@@ -549,6 +545,15 @@ end program cat2
 - [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
 - [メモリマップドファイルを使ったデータの共有](http://rakasaka.fc2web.com/delphi/mapping.html)
+
+### Fortran を書かずに Fortran を使う方法 {#y2fbc907}
+
+- [Fortranを書かずにFortranを書いた](https://github.com/ledyba/FortranWithoutFortran)
+- [Fortranが書きたくないなら機械語を埋め込めばいいじゃないっ！](http://ledyba.org/2014/06/13235005.php)
+- [https://gist.github.com/ledyba](https://gist.github.com/ledyba)
+    - [Fortranは書きやすいなぁ（棒読み）](https://gist.github.com/ledyba/074d7d23916565b1ab59)
+    - [闇のFortran](https://gist.github.com/ledyba/6e604cadd1b572367a58)
+    - [Fortranで任意のx86コードを実行する](https://gist.github.com/ledyba/cb75d5d16ed2d87e182a)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#uf675bd5}
 
