@@ -61,12 +61,12 @@ F# 版の fwdsumatrapdf.exe のビルド・実行には F# が必要です．<br
 
 - fwdsumatrapdf.exe の作成方法
     - F# をインストールします．
-    - C:\w32tex\bin\fwdsumatrapdf.fs または C:\w32tex\bin\fwdsumatrapdf.fsx を作成します．
+    - C:\texlive\2014\bin\win32\fwdsumatrapdf.fs または C:\texlive\2014\bin\win32\fwdsumatrapdf.fsx を作成します．
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.fs
-- C:\w32tex\bin\fwdsumatrapdf.fsx
+- C:\texlive\2014\bin\win32\fwdsumatrapdf.fs
+- C:\texlive\2014\bin\win32\fwdsumatrapdf.fsx
 
 ***
 
@@ -231,21 +231,21 @@ module Main =
 
 - fwdsumatrapdf.fs または fwdsumatrapdf.fsx をビルドして fwdsumatrapdf.exe を作成します．
 
-C:\w32tex\bin\fwdsumatrapdf.fsx を fsc.exe でコンパイルすると C:\w32tex\bin\fwdsumatrapdf.exe が作成されます．<br>
+C:\texlive\2014\bin\win32\fwdsumatrapdf.fsx を fsc.exe でコンパイルすると C:\texlive\2014\bin\win32\fwdsumatrapdf.exe が作成されます．<br>
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
 >C:
->cd C:\w32tex\bin
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
+>cd C:\texlive\2014\bin\win32
+C:\texlive\2014\bin\win32>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fs
+C:\texlive\2014\bin\win32>fsc -r:Microsoft.VisualBasic.dll fwdsumatrapdf.fsx
 ```
 
 上記のコマンドでうまく動作しない場合は
 
 ```
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fs
-C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fsx
+C:\texlive\2014\bin\win32>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fs
+C:\texlive\2014\bin\win32>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals -r:SMDiagnostics --standalone fwdsumatrapdf.fsx
 ```
 
 ***
@@ -256,11 +256,13 @@ C:\w32tex\bin>fsc -r:Microsoft.VisualBasic.dll -r:System.ServiceModel.Internals 
 
 ```
 C:.
-├─w32tex
-│  └─bin
-│      ├─fwdsumatrapdf.exe
-│      ├─fwdsumatrapdf.fs
-│      └─fwdsumatrapdf.fsx
+├─texlive
+│  └─2014
+│      └─bin
+│          └─win32
+│              ├─fwdsumatrapdf.exe
+│              ├─fwdsumatrapdf.fs
+│              └─fwdsumatrapdf.fsx
 └─Program Files (x86)
     └─Microsoft SDKs
         └─F#
@@ -279,11 +281,13 @@ C:.
 
 ```
 C:.
-├─w32tex
-│  └─bin
-│      ├─fwdsumatrapdf.exe
-│      ├─fwdsumatrapdf.fs
-│      └─fwdsumatrapdf.fsx
+├─texlive
+│  └─2014
+│      └─bin
+│          └─win32
+│              ├─fwdsumatrapdf.exe
+│              ├─fwdsumatrapdf.fs
+│              └─fwdsumatrapdf.fsx
 └─Program Files
     └─Microsoft SDKs
         └─F#
@@ -300,7 +304,7 @@ fwdsumatrapdf.fsx のように拡張子を .fsx とすればビルドせずに f
 ただしビルドした場合に比べると動作は遅くなります．<br>
 
 ```
->fsi C:\w32tex\bin\fwdsumatrapdf.fsx hoge.pdf hoge.tex 30
+>fsi C:\texlive\2014\bin\win32\fwdsumatrapdf.fsx hoge.pdf hoge.tex 30
 ```
 
 引数に渡すパラメータや状況によって例外が発生することがあります．<br>
