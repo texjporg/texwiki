@@ -262,15 +262,13 @@ C, C++ 版は他の言語で作られたバイナリよりも高速に動作し�
 C の場合
 
 ```
-$ cd /c/w32tex/bin
-$ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 C++ の場合
 
 ```
-$ cd /c/w32tex/bin
-$ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Clang/LLVM でもビルド可能です．<br>
@@ -278,15 +276,13 @@ Clang/LLVM でもビルド可能です．<br>
 C の場合
 
 ```
-$ cd /c/w32tex/bin
-$ clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
+clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 C++ の場合
 
 ```
-$ cd /c/w32tex/bin
-$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
@@ -294,21 +290,19 @@ Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でも
 C の場合
 
 ```
->cd /d c:\w32tex\bin
->cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
+cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
 ```
 
 C++ の場合
 
 ```
->cd /d c:\w32tex\bin
->cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
+cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 ```
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.c
-- C:\w32tex\bin\fwdsumatrapdf.cpp
+- fwdsumatrapdf.c
+- fwdsumatrapdf.cpp
 
 ***
 
