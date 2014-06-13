@@ -81,27 +81,24 @@ pukiwiki: "C++"
 [MinGW](/MinGW/) の GCC でビルドできます．<br>
 
 ```
-$ cd /c/w32tex/bin
-$ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
+g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
 Clang/LLVM でもビルド可能です．<br>
 
 ```
-$ cd /c/w32tex/bin
-$ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
+clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
 ```
 
 Microsoft Visual Studio "14" CTP 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
->cd /d c:\w32tex\bin
->cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
+cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 ```
 
 ***
 
-- C:\w32tex\bin\fwdsumatrapdf.cpp
+- fwdsumatrapdf.cpp
 
 ***
 
