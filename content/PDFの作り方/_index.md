@@ -467,11 +467,10 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です。<br
 
 #### バウンディングボックス（BoundingBox）ファイルの作成 {#rf074b4b}
 
-[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
+[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて， <!-- ここはextractbbの自動実行の話なのでbmpsizeが出てくるのは不適当. -->
 
 ```
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 ```
 
 のようにすると，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。<br>
@@ -519,14 +518,13 @@ extractbb zu.png
 
 ```
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 ...
 \includegraphics[width=8cm]{zu.png}
 ```
 
 のようにして graphicx
 パッケージを読み込む際に必ず \[dvipdfmx\] オプションを与えます。<br>
-これで LaTeX と dvipdfmx で処理します。<br>
+これで LaTeX と dvipdfmx で処理します。<br> <!-- TODO:bmpsizeの説明を入れる. このページじゃない気がするけど. -->
 
 Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます。<br>
 詳しくは [Ghostscript](/Ghostscript/)
@@ -741,7 +739,6 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 ```
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 \begin{document}
 ...
 \includegraphics[bb=100 400 500 700,clip,width=5cm]{zu.pdf}
