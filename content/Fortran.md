@@ -557,14 +557,18 @@ GNU Fortran (gfortran) 4.8.1 で動作確認しています．<br>
 [MinGW](/MinGW/) の gfortran でビルドできます．<br>
 
 ```
-$ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90 -luser32 -ladvapi32
+$ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 ```
+
+***
+
+- fwdsumatrapdf.f90
 
 ***
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90 -luser32 -ladvapi32
+! $ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 module c_string
     use, intrinsic :: iso_c_binding
     implicit none
