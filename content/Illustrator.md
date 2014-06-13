@@ -34,13 +34,12 @@ TeX文書内への図の挿入は EPS ファイルの場合と同様に処理さ
 
 例（hoge.ai を挿入）：
 
-dvipdfmx.def \[2014/04/28 v4.01 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br>
+dvipdfmx.def \[2014/04/28 v4.01 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br> <!-- .aiはPDFの一種なのでbmpsizeは無意味. -->
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass[uplatex]{jsarticle}
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 \begin{document}
 \includegraphics{hoge.ai}
 \end{document}
