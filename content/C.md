@@ -344,6 +344,11 @@ using namespace std;
 #include <errno.h>
 #include <locale.h>
 #endif
+#if defined (_MSC_VER)
+#pragma comment(lib, "user32.lib")
+#pragma comment(lib, "advapi32.lib")
+#pragma comment(lib, "shlwapi.lib")
+#endif
 
 #if defined (__cplusplus)
 #define restrict
