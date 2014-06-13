@@ -162,7 +162,7 @@ control folders
 
 ■■■ ダウンロード ■■■<br>
 
-[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl.zip をダウンロードします．<br>
+[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl-windows.exe または install-tl.zip をダウンロードします．<br>
 install-tl.zip をダウンロードした場合は install-tl.zip を展開します．<br>
 Cygwin の unzip は install-tl.zip の展開に使用しないでください．<br>
 インストールに失敗する可能性があります．<br>
@@ -170,15 +170,15 @@ Cygwin の unzip は install-tl.zip の展開に使用しないでください�
 - [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
 - [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
-install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) または install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
+install-tl-windows.exe または install-tl-windows.bat または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
 
 ***
 
-■■■ install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) の場合 ■■■<br>
+■■■ install-tl-windows.exe の場合 ■■■<br>
 
-install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブルクリックします．<br>
+install-tl-windows.exe をダブルクリックします．<br>
 全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．<br>
-install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブルクリックして実行した場合は以下の様な画面が表示されます．<br>
+install-tl-windows.exe をダブルクリックして実行した場合は以下の様な画面が表示されます．<br>
 
 ***
 
@@ -220,7 +220,7 @@ install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブル�
 インストールする場合は \[ 　Next >　 \] をクリックします．<br>
 インストールしない場合は \[　　Cancel　　\] をクリックします．<br>
 
-■■■ install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) の場合 ■■■<br>
+■■■ install-tl-windows.bat の場合 ■■■<br>
 
 ■ テキストモードでインストールする場合<br>
 
@@ -228,12 +228,6 @@ install-tl-windows.exe (TeX Live 2013 の場合は install-tl.exe) をダブル�
 
 ```
 .\install-tl-windows.bat -no-gui --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
-```
-
-TeX Live 2013 の場合は
-
-```
-.\install-tl.bat -no-gui --repository http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/
 ```
 
 を実行します．<br>
@@ -267,8 +261,8 @@ Do you want to continue with the exact same settings as before (y/N): y
 
 ■ GUI でインストールする場合<br>
 
-install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) をダブルクリックします．<br>
-install-tl-windows.bat (TeX Live 2013 の場合は install-tl.bat) を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
+install-tl-windows.bat をダブルクリックします．<br>
+install-tl-windows.bat を -no-gui オプションを指定せずに実行した場合は以下の様な画面が表示されます．<br>
 
 ***
 
@@ -549,13 +543,6 @@ TEXMFLOCAL の値を確認します．<br>
 ```
 PS C:\Users\$Env:USERNAME> kpsewhich -var-value TEXMFLOCAL
 C:/texlive/texmf-local
-```
-
-TeX Live 2013 ではこれは以下のように表示されます(同じ場所ですが):
-
-```
-PS C:\Users\$Env:USERNAME> kpsewhich -var-value TEXMFLOCAL
-C:/texlive/2013/../texmf-local
 ```
 
 C:\texlive\texmf-local\web2c\texmf.cnf を作成して編集します．<br>
