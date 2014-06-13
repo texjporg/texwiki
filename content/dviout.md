@@ -783,14 +783,6 @@ dviout は，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタ
 初期設定では「ニコニコマーク」ボタンが表示されていないと思います。<br>
 「ニコニコマーク」ボタンは，メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。<br>
 PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。<br>
-dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します：
-
-```
-\usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
-```
-
-PDF ファイルの作成がうまくいかない場合は Windows PowerShell またはコマンド プロンプトから dvipdfmx を実行してください．<br>
 
 ***
 
@@ -805,6 +797,24 @@ PDF ファイルの作成がうまくいかない場合は Windows PowerShell �
 　　　　From:<ins>　　1\[<strong>⇕</strong>\]</ins>　　To:<ins>　　8\[<strong>⇕</strong>\]</ins>　　　　　　　　☐ View PDF ?<br>
 
 ***
+
+ただし，graphicx や color 等の「ドライバ依存」があるパッケージを使用する場合は注意が必要です．<br>
+このようなパッケージを使う場合，一般には
+
+```
+\usepackage[dviout]{graphicx} % dviout でDVIファイルを見る場合
+\usepackage[dvipdfmx]{graphicx} % dvipdfmx でPDFに変換する場合
+```
+
+のように，DVIウェアに応じてオプションを変えて tex 文書をコンパイルし直す必要があります．<br>
+「ニコニコマーク」ボタンは dviout から dvipdfmx を簡便に実行できる機能ですが，この「ドライバの取換」については全く何の補助も行いません．<br>
+ただ，「dviout 用」の DVI ファイルを無理やり dvipdfmx で処理しようとするだけで，これでは不正な出力になる可能性があります．<br>
+従って，オプションを dvipdfmx に変えてコンパイルする必要があるわけですが，この際に dviout で DVI の再読込が行われると今度は dviout の表示が不正になってしまいます．<br>
+このような面倒を避けたい場合は Windows PowerShell またはコマンド プロンプトから dvipdfmx を実行してください．<br>
+
+※graphicx や color 等のパッケージの仕様が常態化した現在では，このような連携機能の有用性が薄らいでいるのかも知れません．<br>
+dviout の使用が主流だった昔は，「図を入れる」といっても picture 環境や「後で手で入れる（！）」等の graphicx を使わない方法も採られていました．<br>
+また，昔は dvips と dvipdfmx の互換性がある程度担保されていたので，「dvips ドライバを指定すれば dviout と dvipdfmx の両方が使える」という裏技が使えたようです．<br> <!-- ここでbmpsizeを持ち出すのは論理的に奇妙です. --> <!-- ・epsにはbmpsizeは無関係. --> <!-- ・dviout用ドライバでのビットマップ読込にはbmpsizeは非対応. --> <!-- ・だからdvioutとdvipdfmxを行き来している状況では, ビットマップの \includegraphics には bb が指定されているはず. -->
 
 ### dvips + ps2pdf.bat (Ghostscript) {#bbe5941f}
 
