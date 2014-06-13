@@ -129,6 +129,11 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 #include <cstdlib>
 #include <cwchar>
 #include <cerrno>
+#if defined _MSC_VER
+#pragma comment(lib, "user32.lib")
+#pragma comment(lib, "advapi32.lib")
+#pragma comment(lib, "shlwapi.lib")
+#endif
 
 auto static constexpr timeout = 10000;
 auto static existSumatraHWND = FALSE;
