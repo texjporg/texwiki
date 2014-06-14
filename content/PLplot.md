@@ -45,6 +45,7 @@ LGPL
 
 - [http://www.miscdebris.net/plplot_wiki/](http://www.miscdebris.net/plplot_wiki/)
 - [https://sites.google.com/site/makeplplot/](https://sites.google.com/site/makeplplot/)
+- [PLplotを使ってsin波を表示してみる](http://qiita.com/make_now_just/items/a92babdd32b955a276f6)
 - [PLplot でコマンドライン引数にデータファイルを指定する方法](http://krustf.hateblo.jp/entry/20130310/1362920130)
 - [Momma's Wiki: PLplot - プロットライブラリ http://plplot.sourceforge.net/](http://www.eml.ele.cst.nihon-u.ac.jp/~momma/wiki/wiki.cgi/PLplot.html)
 - [グラフ描画ライブラリ"PLplot"のインストール](http://d.hatena.ne.jp/A7M/20080125/1201242751)
