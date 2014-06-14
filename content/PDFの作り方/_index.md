@@ -175,7 +175,7 @@ Web 用なら 最小ファイルサイズ，論文提出用には低品位でよ
 ［設定］ → ［Adobe PDF 設定\] の \[編集］は次のように設定します。<br>
 
 - ［一般］で「互換性のある形式」が標準で Acrobat 8.0 (PDF1.7) または Acrobat 7.0 (PDF1.6) または Acrobat 6.0 (PDF1.5) になっている場合は Acrobat 5.0 (PDF 1.4) までにしておくほうが無難です。
-    Acrobat 8.0 (PDF1.7), Acrobat 7.0 (PDF1.6), Acrobat 6.0 (PDF1.5) の場合は extractbb を使用するとエラーが発生することがあります。
+    Acrobat 8.0 (PDF1.7), Acrobat 7.0 (PDF1.6), Acrobat 6.0 (PDF1.5) の場合は extractbb を使用するとエラーが発生することがあります (→ [xbbファイルが作成できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=817))。
 
 - デフォルトページサイズが米国のレターサイズ（8.5 inches × 11 inches，21.59 cm × 27.94 cm）になっていて
     A4サイズを主に使うなら，ここを 21.0 cm × 29.7 cm に直します（ただし文書側の設定が優先されます）。
