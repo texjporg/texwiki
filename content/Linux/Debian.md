@@ -59,6 +59,7 @@ $ sudo dpkg -i texlive-local_2013-1_all.deb
 ### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
 - [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
+- [pTeX in TeXLive 2014](http://www1.pm.tokushima-u.ac.jp/~kohda/tex/texlive.html)
 - [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
 
 TeX Live/Debian をフルインストールする場合は
