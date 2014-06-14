@@ -7,7 +7,7 @@ pukiwiki: "MinGW"
 
 # MinGW
 
-## [MinGW](http://www.mingw.org/) {#c9002cc1}
+## [MinGW](http://www.mingw.org/)/[MinGW-W64](http://mingw-w64.sourceforge.net/) {#c9002cc1}
 
 ## MinGW とは {#tb48dbc4}
 
@@ -17,9 +17,22 @@ MinGW を使用すれば TeX Live の最新の開発版を自分でビルドし�
 
 - [MinGW | Minimalist GNU for Windows](http://www.mingw.org/)
 
-## インストーラー {#x50e277a}
+### インストーラー {#x50e277a}
 
-[http://sourceforge.net/projects/mingw/files/Installer/](http://sourceforge.net/projects/mingw/files/Installer/)
+#### MinGW {#p15af726}
+
+- [http://sourceforge.net/projects/mingw/files/Installer/](http://sourceforge.net/projects/mingw/files/Installer/)
+
+## MinGW-W64 とは {#s3583e6b}
+
+MinGW-W64 は 64-bit Windows と 32-bit Windows のネイティブバイナリを出力するためのソフトウェアです．<br>
+64-bit Windows ネイティブバイナリを出力したい場合は MinGW-W64 を使用してください．<br>
+
+### インストーラー {#v86f2622}
+
+#### MinGW-W64 {#z3531af9}
+
+- [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/)
 
 ## MSYS {#o619b52f}
 
@@ -219,7 +232,7 @@ fixwwps.exe       pdftex.exe             wovp2ovf.exe
 fmtutil-sys.exe   pdftosrc.exe
 ```
 
-64-bit Windows のネイティブなバイナリをビルドしたい場合は [MinGW-w64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
+64-bit Windows のネイティブバイナリをビルドしたい場合は [MinGW-W64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
 
 ## 関連リンク {#e987affa}
 
