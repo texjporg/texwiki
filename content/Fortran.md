@@ -586,7 +586,7 @@ GNU Fortran (gfortran) 4.8.1 で動作確認しています．<br>
 [MinGW](/MinGW/) の gfortran でビルドできます．<br>
 
 ```
-$ gfortran -Wall -Ofast -march=native -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
+$ gfortran -Wall -Ofast -march=native -std=f2008 -static -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 ```
 
 ***
@@ -597,7 +597,7 @@ $ gfortran -Wall -Ofast -march=native -std=f2008 -static -fno-range-check -o fwd
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -Wall -Ofast -march=native -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
+! $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 module c_string
     use, intrinsic :: iso_c_binding
     implicit none
@@ -653,15 +653,15 @@ module windows_api
         & XCLASS_FLAGS, &
         & XTYP_EXECUTE, &
         & TIMEOUT
-    integer(kind=c_long), parameter :: HKEY_LOCAL_MACHINE = 2147483650
-    integer(kind=c_int), parameter :: KEY_QUERY_VALUE = 1
-    integer(kind=c_int), parameter :: DMLERR_NO_ERROR = 0
-    integer(kind=c_int), parameter :: APPCMD_CLIENTONLY = 16
-    integer(kind=c_int), parameter :: CP_WINUNICODE = 1200
-    integer(kind=c_int), parameter :: CF_UNICODETEXT = 13
-    integer(kind=c_int), parameter :: XCLASS_FLAGS = 16384
-    integer(kind=c_int), parameter :: XTYP_EXECUTE = ior(80, XCLASS_FLAGS)
-    integer(kind=c_int), parameter :: TIMEOUT = 10000
+    integer(kind=c_long), parameter :: HKEY_LOCAL_MACHINE = transfer(z'80000002', mold=c_long)
+    integer(kind=c_int), parameter :: KEY_QUERY_VALUE = transfer(z'1', mold=c_int)
+    integer(kind=c_int), parameter :: DMLERR_NO_ERROR = transfer(0, mold=c_int)
+    integer(kind=c_int), parameter :: APPCMD_CLIENTONLY = transfer(z'10', mold=c_int)
+    integer(kind=c_int), parameter :: CP_WINUNICODE = transfer(1200, mold=c_int)
+    integer(kind=c_int), parameter :: CF_UNICODETEXT = transfer(13, mold=c_int)
+    integer(kind=c_int), parameter :: XCLASS_FLAGS = transfer(z'4000', mold=c_int)
+    integer(kind=c_int), parameter :: XTYP_EXECUTE = transfer(ior(transfer(z'50', mold=c_int), XCLASS_FLAGS), mold=c_int)
+    integer(kind=c_int), parameter :: TIMEOUT = transfer(10000, mold=c_int)
     type, bind(c) :: STARTUPINFOW
         integer(kind=c_int) :: cb
         type(c_ptr) :: lpReserved
@@ -839,8 +839,8 @@ subroutine runSumatraPDF()
     integer(kind=1), dimension(:), allocatable, target :: sumatraPDFCommandLine_wchar
     integer(kind=c_int) :: bufSize
     type(c_ptr), target :: subKey
-    integer(kind=c_int), target :: dwType = 0
-    integer(kind=c_int), target :: sz = 0
+    integer(kind=c_int), target :: dwType = transfer(0, mold=c_int)
+    integer(kind=c_int), target :: sz = transfer(0, mold=c_int)
     type(STARTUPINFOW), target :: si
     type(PROCESS_INFORMATION), target :: pi
 
@@ -889,7 +889,7 @@ subroutine ddeExecute()
     integer(kind=1), dimension(:), allocatable, target :: topic_wchar
     integer(kind=1), dimension(:), allocatable, target :: command_wchar
     integer(kind=c_int) :: bufSize
-    integer(kind=c_int), target :: idInstance = 0
+    integer(kind=c_int), target :: idInstance = transfer(0, mold=c_int)
     type(c_ptr), target :: hszServer
     type(c_ptr), target :: hszTopic
     type(c_ptr), target :: hConvClient
