@@ -7,7 +7,7 @@ pukiwiki: "Fortran"
 
 # Fortran
 
-## Fortran {#pbb06ff1}
+## Fortran → 使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic, Java, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
@@ -116,7 +116,7 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html)
 - [http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm)
 
-### 標準出力，MessageBox に "Hello World" を出力 {#x79017be}
+### 標準出力 に "Hello World" を出力 {#x79017be}
 
 ***
 
@@ -167,6 +167,40 @@ end program hello_world
 
 ***
 
+GNU Fortran 4.8.1 で動作確認しています．<br>
+データの出力は print 文や write 文で行います．<br>
+g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
+print 文や write 文でフォーマットに &#x2a; のみを指定して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
+gfortran と ifort で出力フォーマットが異なる場合は書式指定してください．<br>
+C の puts 関数を呼び出して出力することもできます．<br>
+Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
+
+```
+$ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
+$ ./helloworld
+```
+
+MinGW の gfortran でビルドしたバイナリで
+
+- Windows PowerShell から実行するとなにも表示されない
+- コマンド プロンプトから実行するとアプリケーションエラーが発生する
+
+といった現象が発生する場合は
+
+```
+ $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
+```
+
+のように -static オプションを追加してビルドすれば OK です．<br>
+
+### MessageBox に "Hello World" を出力 {#i3cc6f7f}
+
+***
+
+- helloworldmessagebox.f90
+
+***
+
 ```
 module windows_api
     use, intrinsic :: iso_c_binding
@@ -185,13 +219,13 @@ module windows_api
     end interface
 end module windows_api
 
-program hello_world
+program hello_world_message_box_a
     use, intrinsic :: iso_c_binding
     use windows_api
     implicit none
     character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
     call MessageBoxA(c_null_ptr, msg, msg, 0)
-end program hello_world
+end program hello_world_message_box_a
 ```
 
 ***
@@ -241,7 +275,7 @@ module windows_api
     end interface
 end module windows_api
 
-program hello_world
+program hello_world_message_box_w
     use, intrinsic :: iso_c_binding
     use c_string
     use windows_api
@@ -252,37 +286,21 @@ program hello_world
     call memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
     bufSize = MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
     if (bufSize /= 0) call MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
-end program hello_world
+end program hello_world_message_box_w
 ```
 
 ***
 
-GNU Fortran 4.8.1 で動作確認しています．<br>
-データの出力は print 文や write 文で行います．<br>
-g0 編集記述子は print 文や write 文で整数や文字列などの任意の組み込み型に対して使用できます．<br>
-print 文や write 文でフォーマットに &#x2a; のみを指定して出力した場合は gfortran と ifort で出力フォーマットが異なる場合があるかもしれません．<br>
-gfortran と ifort で出力フォーマットが異なる場合は書式指定してください．<br>
-C の puts 関数や Windows API の MessageBox 関数を呼び出して出力することもできます．<br>
-Fortran の文字列は null 終端文字列ではないので C の関数に文字列を渡す場合は c_null_char を末尾に追加して渡す必要があります．<br>
-Fortran はデフォルトでは参照渡しなので C の関数に値渡しをしたい場合は仮引数に value 属性を追加する必要があります．<br>
+Windows API の MessageBoxA 関数, MessageBoxW 関数を呼び出して出力することもできます．<br>
+Fortran の文字列はデフォルトでは ANSI なので Unicode 版の関数を使用する場合は MultiByteToWideChar 関数を使用して Unicode に変換します．<br>
+gfortran で呼出規約 (calling convention) に stdcall を使用する場合は 
 
 ```
-$ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
-$ ./helloworld
+!gcc$ attributes stdcall :: MessageBoxA
 ```
 
-MinGW の gfortran でビルドしたバイナリで
-
-- Windows PowerShell から実行するとなにも表示されない
-- コマンド プロンプトから実行するとアプリケーションエラーが発生する
-
-といった現象が発生する場合は
-
-```
- $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o helloworld helloworld.f90
-```
-
-のように -static オプションを追加してビルドすれば OK です．<br>
+のように記述します．<br>
+Fortran はデフォルトでは参照渡しなのでポインタの値などを C の関数に値渡しで渡したい場合は仮引数に value 属性を追加する必要があります．<br>
 
 ### 標準出力に 1 から 100 までの和を出力 {#m969de65}
 
@@ -538,6 +556,10 @@ end program cat2
 
 ***
 
+command_argument_count でコマンドライン引数の個数を取得できます．<br>
+get_command_argument でコマンドライン引数を取得できます．<br>
+open 文で newunit を使用すれば自分で unit 番号 (装置番号) を指定しなくても自動的に空いた unit 番号を割り振ってくれます．<br>
+
 ### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
 
 - [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
@@ -563,7 +585,7 @@ GNU Fortran (gfortran) 4.8.1 で動作確認しています．<br>
 [MinGW](/MinGW/) の gfortran でビルドできます．<br>
 
 ```
-$ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
+$ gfortran -Wall -Ofast -march=native -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 ```
 
 ***
@@ -574,7 +596,7 @@ $ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapd
 
 ```
 ! vim: ts=4 sw=4 expandtab:
-! $ gfortran -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
+! $ gfortran -Wall -Ofast -march=native -std=f2008 -static -fno-range-check -o fwdsumatrapdf.exe fwdsumatrapdf.f90
 module c_string
     use, intrinsic :: iso_c_binding
     implicit none
@@ -699,8 +721,8 @@ module windows_api
             type(c_ptr), value :: lpCommandLine
             type(c_ptr), value :: lpProcessAttributes
             type(c_ptr), value :: lpThreadAttributes
-            integer(c_int), value :: bInheritHandles
-            integer(c_int), value :: dwCreationFlags
+            integer(kind=c_int), value :: bInheritHandles
+            integer(kind=c_int), value :: dwCreationFlags
             type(c_ptr), value :: lpEnvironment
             type(c_ptr), value :: lpCurrentDirectory
             type(c_ptr), value :: lpStartupInfo
@@ -729,37 +751,37 @@ module windows_api
             !gcc$ attributes stdcall :: DdeInitializeW
             type(c_ptr), value :: pidInst
             type(c_ptr), value :: pfnCallback
-            integer(c_int), value :: afCmd
-            integer(c_int), value :: ulRes
+            integer(kind=c_int), value :: afCmd
+            integer(kind=c_int), value :: ulRes
         end subroutine DdeInitializeW
         subroutine DdeUninitialize(idInst) bind(c, name='DdeUninitialize')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeUninitialize
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
         end subroutine DdeUninitialize
         type(c_ptr) function DdeCreateStringHandleW(idInst, psz, iCodePage) bind(c, name='DdeCreateStringHandleW')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeCreateStringHandleW
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
             type(c_ptr), value :: psz
-            integer(c_int), value :: iCodePage
+            integer(kind=c_int), value :: iCodePage
         end function DdeCreateStringHandleW
         subroutine DdeFreeStringHandle(idInst, hsz) bind(c, name='DdeFreeStringHandle')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeFreeStringHandle
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
             type(c_ptr), value :: hsz
         end subroutine DdeFreeStringHandle
         type(c_ptr) function DdeCreateDataHandle(idInst, pSrc, cb, cbOff, hszItem, wFmt, afCmd) bind(c, name='DdeCreateDataHandle')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeCreateDataHandle
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
             type(c_ptr), value :: pSrc
-            integer(c_int), value :: cb
-            integer(c_int), value :: cbOff
+            integer(kind=c_int), value :: cb
+            integer(kind=c_int), value :: cbOff
             type(c_ptr), value :: hszItem
-            integer(c_int), value :: wFmt
-            integer(c_int), value :: afCmd
+            integer(kind=c_int), value :: wFmt
+            integer(kind=c_int), value :: afCmd
         end function DdeCreateDataHandle
         subroutine DdeFreeDataHandle(hData) bind(c, name='DdeFreeDataHandle')
             use, intrinsic :: iso_c_binding
@@ -769,7 +791,7 @@ module windows_api
         type(c_ptr) function DdeConnect(idInst, hszServer, hszTopic, pCC) bind(c, name='DdeConnect')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeConnect
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
             type(c_ptr), value :: hszServer
             type(c_ptr), value :: hszTopic
             type(c_ptr), value :: pCC
@@ -784,18 +806,18 @@ module windows_api
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeClientTransaction
             type(c_ptr), value :: pData
-            integer(c_int), value :: cbData
+            integer(kind=c_int), value :: cbData
             type(c_ptr), value :: hConv
             type(c_ptr), value :: hszItem
-            integer(c_int), value :: wFmt
-            integer(c_int), value :: wType
-            integer(c_int), value :: dwTimeout
+            integer(kind=c_int), value :: wFmt
+            integer(kind=c_int), value :: wType
+            integer(kind=c_int), value :: dwTimeout
             type(c_ptr), value :: pdwResult
         end function DdeClientTransaction
-        integer function DdeGetLastError(idInst) bind(c, name='DdeGetLastError')
+        integer(kind=c_int) function DdeGetLastError(idInst) bind(c, name='DdeGetLastError')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeGetLastError
-            integer(c_int), value :: idInst
+            integer(kind=c_int), value :: idInst
         end function DdeGetLastError
     end interface
 end module windows_api
@@ -816,8 +838,8 @@ subroutine runSumatraPDF()
     integer(kind=1), dimension(:), allocatable, target :: sumatraPDFCommandLine_wchar
     integer(kind=c_int) :: bufSize
     type(c_ptr), target :: subKey
-    integer(c_int), target :: dwType = 0
-    integer(c_int), target :: sz = 0
+    integer(kind=c_int), target :: dwType = 0
+    integer(kind=c_int), target :: sz = 0
     type(STARTUPINFOW), target :: si
     type(PROCESS_INFORMATION), target :: pi
 
