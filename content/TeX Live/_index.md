@@ -35,6 +35,9 @@ TeX Live は TeX のディストリビューションです．<br>
 TeX Live には e-upTeX, XeTeX, LuaTeX, LuaJITTeX が収録されています．<br>
 [SyncTeX](/SyncTeX/) にも対応しています．<br>
 
+- \[[texlive\] Index of /tags](http://www.tug.org/svn/texlive/tags/)
+    - [log](http://www.tug.org/svn/texlive/tags/?view=log)
+
 ### ChangeLog {#g68f0fa7}
 
 - [TeX Live and Subversion](http://www.tug.org/texlive/svn/)
