@@ -78,7 +78,7 @@ pukiwiki: "C++"
 
 ### C++11 版 {#qea0161e}
 
-[MinGW](/MinGW/) の GCC でビルドできます．<br>
+[MinGW/MinGW-W64](/MinGW/) の GCC でビルドできます．<br>
 
 ```
 g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
@@ -105,7 +105,7 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 ```
 /* vim: ts=4 sw=4 expandtab:
  *
- * MinGW
+ * MinGW/MinGW-W64
  * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Clang/LLVM
