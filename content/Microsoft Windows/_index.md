@@ -606,7 +606,7 @@ ptex2pdf -u -l -ot "-synctex=1" -od "-f uptex-ipaex.map" hoge.tex
 
 #### 文字コードの自動判別 {#se4397b3}
 
-TeX Live 2014 以降はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．<br>
+デフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．<br>
 texmf.cnf には以下のように設定されています．<br>
 
 ```
