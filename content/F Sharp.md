@@ -52,6 +52,10 @@ pukiwiki: "F Sharp"
 
 [Use F# on Linux](http://fsharp.org/use/linux/) を参照．<br>
 
+#### Arch Linux {#pfcfbb1b}
+
+- [https://aur.archlinux.org/packages/fsharp/](https://aur.archlinux.org/packages/fsharp/)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
 
 ### F# 版 {#cfffdb72}
