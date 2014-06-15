@@ -257,7 +257,7 @@ main(int argc, char** argv)
 ### C, C++ 版 {#a48a3eb3}
 
 C, C++ 版は他の言語で作られたバイナリよりも高速に動作します．<br>
-[MinGW](/MinGW/) の GCC でビルドできます．<br>
+[MinGW/MinGW-W64](/MinGW/) の GCC でビルドできます．<br>
 
 C の場合
 
@@ -309,7 +309,7 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 ```
 /* vim: ts=4 sw=4 expandtab:
  *
- * MinGW
+ * MinGW/MinGW-W64
  * $ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
  * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
