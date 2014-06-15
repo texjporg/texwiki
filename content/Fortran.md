@@ -301,7 +301,7 @@ gfortran で呼出規約 (calling convention) に stdcall を使用する場合�
 ```
 
 のように記述します．<br>
-Fortran はデフォルトでは参照渡しなのでポインタの値などを C の関数に値渡しで渡したい場合は仮引数に value 属性を追加する必要があります．<br>
+Fortran はデフォルトでは参照渡し (call by reference) なのでポインタの値などを C の関数に値渡し (call by value) で渡したい場合は仮引数に value 属性を追加する必要があります．<br>
 
 ### 標準出力に 1 から 100 までの和を出力 {#m969de65}
 
