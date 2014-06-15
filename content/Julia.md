@@ -13,7 +13,7 @@ pukiwiki: "Julia"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-### Julia とは {#lf53506c}
+### Summary {#lf53506c}
 
 Julia は科学技術計算向けのプログラミング言語です．<br>
 
