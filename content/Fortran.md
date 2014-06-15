@@ -15,6 +15,8 @@ pukiwiki: "Fortran"
 
 ## Summary {#o355751c}
 
+Fortran は科学技術計算向けのプログラミング言語です．<br>
+
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
     - [Fortran 2008 status](http://fortranwiki.org/fortran/show/Fortran+2008+status)
@@ -71,13 +73,13 @@ pukiwiki: "Fortran"
 
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
     - [GFortranBinaries - GCC Wiki](https://gcc.gnu.org/wiki/GFortranBinaries)
+        - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などにも収録されています．
+        - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からもバイナリが取得できます．
+        - [http://gfortran.com/](http://gfortran.com/) gfortran daily builds
     - [TS29113Status - GCC Wiki](http://gcc.gnu.org/wiki/TS29113Status)
     - [Fortran2008Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2008Status)
     - [Fortran2003Status - GCC Wiki](http://gcc.gnu.org/wiki/Fortran2003Status)
     - [http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html](http://gcc.gnu.org/onlinedocs/gfortran/Fortran-2003-and-2008-status.html)
-    - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などに収録されています．
-    - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からバイナリが取得できます．
-    - [http://gfortran.com/](http://gfortran.com/) gfortran daily builds
 - [Intel Fortran Compiler (ifort)](http://software.intel.com/en-us/fortran-compilers)
     - [http://software.intel.com/en-us/non-commercial-software-development](http://software.intel.com/en-us/non-commercial-software-development) (Linux, 非商用での使用のみ可)
     - [Ubuntu14.04 64bit にIntel® Parallel Studio XE 2013 for Linuxのインストール](http://d.hatena.ne.jp/cmphys/20140501/1398925683)
