@@ -286,8 +286,8 @@ program hello_world_message_box_w
     character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
     integer(kind=1), dimension(1:2*len(msg)), target :: hello_world_wchar
     integer(kind=c_int) :: bufSize
-    call memset(c_loc(hello_world_wchar), 0, size(hello_world_wchar))
-    bufSize = MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len(msg))
+    call memset(c_loc(hello_world_wchar), 0, int(size(hello_world_wchar), kind=c_size_t))
+    bufSize = MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len_trim(msg))
     if (bufSize /= 0) call MessageBoxW(c_null_ptr, c_loc(hello_world_wchar), c_loc(hello_world_wchar), 0)
 end program hello_world_message_box_w
 ```
@@ -584,8 +584,8 @@ open 文で newunit を使用すれば自分で unit 番号 (装置番号) を�
 
 ### Fortran 版 {#k22b610d}
 
-GNU Fortran (gfortran) 4.8.1 で動作確認しています．<br>
-[MinGW](/MinGW/) の gfortran でビルドできます．<br>
+GNU Fortran (gfortran) 4.9.0 で動作確認しています．<br>
+[MinGW/MinGW-W64](/MinGW/) の gfortran でビルドできます．<br>
 
 ```
 $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o fwdsumatrapdf.exe fwdsumatrapdf.f90
@@ -655,7 +655,7 @@ module windows_api
         & XCLASS_FLAGS, &
         & XTYP_EXECUTE, &
         & TIMEOUT
-    integer(kind=c_long), parameter :: HKEY_LOCAL_MACHINE = transfer(z'80000002', mold=c_long)
+    integer(kind=c_intptr_t), parameter :: HKEY_LOCAL_MACHINE = transfer(z'80000002', mold=c_intptr_t)
     integer(kind=c_int), parameter :: KEY_QUERY_VALUE = transfer(z'1', mold=c_int)
     integer(kind=c_int), parameter :: DMLERR_NO_ERROR = transfer(0, mold=c_int)
     integer(kind=c_int), parameter :: APPCMD_CLIENTONLY = transfer(z'10', mold=c_int)
@@ -694,7 +694,7 @@ module windows_api
         subroutine RegOpenKeyExW(hKey, lpSubKey, ulOptions, samDesired, phkResult) bind(c, name='RegOpenKeyExW')
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: RegOpenKeyExW
-            integer(c_long), value :: hKey
+            integer(kind=c_intptr_t), value :: hKey
             type(c_ptr), value :: lpSubKey
             integer(kind=c_int), value :: ulOptions
             integer(kind=c_int), value :: samDesired
@@ -753,7 +753,7 @@ module windows_api
             use, intrinsic :: iso_c_binding
             !gcc$ attributes stdcall :: DdeInitializeW
             type(c_ptr), value :: pidInst
-            type(c_ptr), value :: pfnCallback
+            type(c_funptr), value :: pfnCallback
             integer(kind=c_int), value :: afCmd
             integer(kind=c_int), value :: ulRes
         end subroutine DdeInitializeW
@@ -849,9 +849,9 @@ subroutine runSumatraPDF()
     allocate(keyPath_wchar(1:2*len_trim(keyPath)))
     allocate(doubleQuote_wchar(1:2*len_trim(doubleQuote)))
     allocate(reuseInstance_wchar(1:2*len_trim(reuseInstance)))
-    bufSize = MultiByteToWideChar(0, 1, keyPath, -1, c_loc(keyPath_wchar), len(keyPath))
-    bufSize = MultiByteToWideChar(0, 1, doubleQuote, -1, c_loc(doubleQuote_wchar), len(doubleQuote))
-    bufSize = MultiByteToWideChar(0, 1, reuseInstance, -1, c_loc(reuseInstance_wchar), len(reuseInstance))
+    bufSize = MultiByteToWideChar(0, 1, keyPath, -1, c_loc(keyPath_wchar), len_trim(keyPath))
+    bufSize = MultiByteToWideChar(0, 1, doubleQuote, -1, c_loc(doubleQuote_wchar), len_trim(doubleQuote))
+    bufSize = MultiByteToWideChar(0, 1, reuseInstance, -1, c_loc(reuseInstance_wchar), len_trim(reuseInstance))
     call RegOpenKeyExW(HKEY_LOCAL_MACHINE, c_loc(keyPath_wchar), 0, KEY_QUERY_VALUE, c_loc(subKey))
     call RegQueryValueExW(subKey, c_null_ptr, c_null_ptr, c_loc(dwType), c_null_ptr, c_loc(sz))
     allocate(sumatraPDFRegistry_wchar(sz))
@@ -859,7 +859,7 @@ subroutine runSumatraPDF()
     call RegCloseKey(subKey)
     allocate(sumatraPDFCommandLine_wchar( &
         & 2*(wcslen(c_loc(doubleQuote_wchar))+wcslen(c_loc(sumatraPDFRegistry_wchar))+wcslen(c_loc(reuseInstance_wchar)))))
-    call memset(c_loc(sumatraPDFCommandLine_wchar), 0, size(sumatraPDFCommandLine_wchar))
+    call memset(c_loc(sumatraPDFCommandLine_wchar), 0, int(size(sumatraPDFCommandLine_wchar), kind=c_size_t))
     call memset(c_loc(si), 0, c_sizeof(si))
     call memset(c_loc(pi), 0, c_sizeof(pi))
     call wcscat(c_loc(sumatraPDFCommandLine_wchar), c_loc(doubleQuote_wchar))
@@ -883,10 +883,10 @@ subroutine ddeExecute()
     implicit none
     character(len=*, kind=c_char), parameter :: server = "SUMATRA" // c_null_char
     character(len=*, kind=c_char), parameter :: topic = "control" // c_null_char
-    character(len=256, kind=c_char) :: pdf
-    character(len=256, kind=c_char) :: tex
-    character(len=256, kind=c_char) :: line
-    character(len=1024, kind=c_char) :: command
+    character(len=:, kind=c_char), allocatable :: pdf
+    character(len=:, kind=c_char), allocatable :: tex
+    character(len=:, kind=c_char), allocatable :: line
+    character(len=:, kind=c_char), allocatable :: command
     integer(kind=1), dimension(:), allocatable, target :: server_wchar
     integer(kind=1), dimension(:), allocatable, target :: topic_wchar
     integer(kind=1), dimension(:), allocatable, target :: command_wchar
@@ -913,6 +913,9 @@ subroutine ddeExecute()
             case (2)
                 tex = arg
             case (3)
+                if (.not. valid_number(trim(arg))) then
+                    error stop "Invalid argument!"
+                end if
                 line = arg
             case default
                 error stop "Too many arguments!"
@@ -923,14 +926,14 @@ subroutine ddeExecute()
     allocate(server_wchar(1:2*len_trim(server)))
     allocate(topic_wchar(1:2*len_trim(topic)))
     allocate(command_wchar(1:2*len_trim(command)))
-    call memset(c_loc(server_wchar), 0, size(server_wchar))
-    call memset(c_loc(topic_wchar), 0, size(topic_wchar))
-    call memset(c_loc(command_wchar), 0, size(command_wchar))
-    bufSize = MultiByteToWideChar(0, 1, server, -1, c_loc(server_wchar), len(server))
-    bufSize = MultiByteToWideChar(0, 1, topic, -1, c_loc(topic_wchar), len(topic))
-    bufSize = MultiByteToWideChar(0, 1, command, -1, c_loc(command_wchar), len(command))
+    call memset(c_loc(server_wchar), 0, int(size(server_wchar), kind=c_size_t))
+    call memset(c_loc(topic_wchar), 0, int(size(topic_wchar), kind=c_size_t))
+    call memset(c_loc(command_wchar), 0, int(size(command_wchar), kind=c_size_t))
+    bufSize = MultiByteToWideChar(0, 1, server, -1, c_loc(server_wchar), len_trim(server))
+    bufSize = MultiByteToWideChar(0, 1, topic, -1, c_loc(topic_wchar), len_trim(topic))
+    bufSize = MultiByteToWideChar(0, 1, command, -1, c_loc(command_wchar), len_trim(command))
     call runSumatraPDF()
-    call DdeInitializeW(c_loc(idInstance), c_null_ptr, APPCMD_CLIENTONLY, 0)
+    call DdeInitializeW(c_loc(idInstance), c_null_funptr, APPCMD_CLIENTONLY, 0)
     if (idInstance == 0) then
         error stop "DdeInitializeW error"
     end if
@@ -964,6 +967,22 @@ subroutine ddeExecute()
     deallocate(server_wchar)
     deallocate(topic_wchar)
     deallocate(command_wchar)
+  contains
+    function valid_number(arg) result(ok)
+        character(len=*), intent(in) :: arg
+        integer(kind=4) :: i
+        logical(kind=4) :: ok
+
+        ok = .false.
+        do i = 1, len_trim(arg)
+            if (arg(i:i) < '0' .or. arg(i:i) > '9') then
+                ok = .false.
+                exit
+            else
+                ok = .true.
+            end if
+        end do
+    end function valid_number
 end subroutine ddeExecute
 
 program fwdsumatrapdf
