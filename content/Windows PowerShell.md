@@ -24,10 +24,8 @@ Windows PowerShell はコマンドラインシェルまたはオブジェクト�
 ## インストール {#o9ec2561}
 
 Windows 8.1 には Windows PowerShell 4.0 が標準搭載されています．<br>
-Windows 8 には Windows PowerShell 3.0 が標準搭載されています．<br>
 Windows 7 には Windows PowerShell 2.0 が標準搭載されています．<br> <!-- Windows 7 の場合は [スタート]-[すべてのプログラム]-[アクセサリ]-[Windows PowerShell]-[Windows PowerShell] で Windows PowerShell を起動できます．~ -->
 
-Windows 8 は Windows 8.1 にアップグレードすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 Windows 7 SP1 は [Windows Management Framework 4.0](http://www.microsoft.com/ja-jp/download/details.aspx?id=40855) をダウンロードしてインストールすれば Windows PowerShell 4.0 にアップグレードできます．<br>
 
 Windows 8.1 ではタスク バーとナビゲーションのプロパティで「左下隅を右クリックするか Windows キー + X キーを押したときに表示されるメニューで、コマンド プロンプトを Windows PowerShell に置き換える」を ON にするとコマンド プロンプトから Windows PowerShell に置き換えることができます．<br>
