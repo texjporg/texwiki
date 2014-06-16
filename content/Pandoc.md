@@ -139,6 +139,8 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=luala
 - [Pandoc ユーザーズガイド 日本語版](http://sky-y.github.io/site-pandoc-jp/users-guide/)
 - [http://qiita.com/tags/pandoc](http://qiita.com/tags/pandoc)
 - [pandoc : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/pandoc)
+- [アマゾンからの出版メモ](http://reinforce-lab.github.io/blog/2014/06/12/self-publishing-through-amazon/)
+    - [PandocをつかったKindle出版のサンプル](https://github.com/reinforce-lab/pandoc_kindle_sample)
 - [Arch Linux に Pandoc で PDF 出力できる環境を整えた](http://pocke.hatenablog.com/entry/2014/05/27/221525)
 - [texを書かずにtex原稿をつくる](http://d.hatena.ne.jp/at_akada/20140522/1400771773)
 - [pandoc から直接 beamer プレゼンテーション](http://kreisel.fam.cx/webmaster/clog/2014-04-27-1.html)
