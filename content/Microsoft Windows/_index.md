@@ -68,6 +68,8 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 #### TeX Live のインストール {#ca517ea6}
 
+- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
+- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
 - フォルダー オプション
 
@@ -615,46 +617,7 @@ guess_input_kanji_encoding = 1
 
 (e-)upTeX で UTF-8 を使用している場合に文字コードの自動判別が失敗する場合は [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
 
-#### インストールのやり方などの事例 {#w0a33f0d}
-
-[TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
-: 2014-06-08
-
-[Windows 8.1 Update &amp; TeX Live](http://cygx1.axialz.com/?eid=293)
-: 2014-04-21
-
-[Installing TeX Live 2013 on Windows 8.1 Tablet (32bit) and Solution for some errors](http://www.am.ics.keio.ac.jp/~keimiya/wordpress/?p=746)
-: 2014-04-15
-
-[TeX Live 2013をインストール](http://blankrune.hateblo.jp/entry/2014/04/07/224434)
-: 2014-04-07
-
-[Windows 7 における TeX Live 2013 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-792.html)
-: 2014-02-19
-
-[Windows7でTeX環境を構築するメモ](http://cuteleaf.seesaa.net/article/389041860.html)
-: 2014-02-18
-
-[TeX Live 2013 インストール](http://83bismuth.blog.fc2.com/blog-entry-8.html)
-: 2014-02-15
-
-[Tex Live 2013をWin7 64-bitマシンにインストール](http://wshinya.hatenablog.com/entry/2013/12/04/140746)
-: 2013-12-04
-
-[WindowsへのTeXのインストール](http://www.ic.daito.ac.jp/~mizutani/tex/install_win.html)
-: 2013-10-27
-
-[Windows環境でTeXLive 2013 と TeXworks を使う](http://xaro.hatenablog.jp/entry/2013/09/05/002235)
-: 2013-09-05
-
-[TeX Live 2013のインストール](http://next1.msi.sk.shibaura-it.ac.jp/MATHEQN/latex/node4.html)
-: 2013-08-26
-
-[Windows 8にTeX環境を構築(1)](http://ubutun.blogspot.jp/2013/08/windows-8tex1.html), [Windows 8にTex環境を構築(2) YaTeXの設定 ドル記号入力で数式入力モードへ](http://ubutun.blogspot.jp/2013/08/windows-8tex2-yatex.html)
-: 2013-08-17
-
-[TeX/Install](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
-: 2013-07-01
+<!-- ***インストールのやり方などの事例 [#w0a33f0d] -->
 
 ### [TeX Live](</TeX Live/>) ([Cygwin](/Cygwin/)) <a id="texlive-cygwin"></a> {#sfbd073e}
 
