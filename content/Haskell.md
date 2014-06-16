@@ -50,6 +50,12 @@ pukiwiki: "Haskell"
 - [Haskell for OCaml programmers](http://staff.science.uva.nl/~poss/haskell-for-ocaml-programmers.html)
 - [HaskellにおけるConfigurations Problemを解決する](http://cx4a.org/posts/2014-06-03-solve-the-configurations-problem-for-haskell.html)
 
+## Haskell で LaTeX {#b3f747e0}
+
+### HaTeX {#vb17eba3}
+
+- [HaTeX - HaskellWiki](http://www.haskell.org/haskellwiki/HaTeX)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#j60bcd39}
 
 ### Haskell 版 {#cbd580e5}
