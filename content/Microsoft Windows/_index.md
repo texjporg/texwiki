@@ -304,9 +304,7 @@ install-tl-windows.bat を -no-gui オプションを指定せずに実行した
 
 <br>
 
-<!-- 　　　&color(black,yellow){''☑ 既定リポジトリを変更 ← リポジトリを指定する場合はチェックする''};&br; -->
-
-<br>
+　　　<span style="color:black;background-color:yellow;"><strong>☑ 既定リポジトリを変更 ← リポジトリを指定する場合はチェックする</strong></span><br>
 
 <br>
 
@@ -429,7 +427,6 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに管理者�
 ■ HTTP<br>
 
 - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
 - [http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
@@ -438,11 +435,11 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに管理者�
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
 - [http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 
 ■ FTP<br>
 
 - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-- [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
 - [ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
@@ -451,6 +448,7 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに管理者�
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
 - [ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
+- [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 
 から TeX Live の 64-bit バイナリ (tl-win64.zip) が入手できます．<br>
 インストール方法は 00README.TLW64 を読んでください．<br>
