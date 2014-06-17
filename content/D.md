@@ -178,30 +178,29 @@ struct DDEClient {
         this.hDdeTransactionData = null;
     }
 
-    ~this()
-    {
-        if (this.hDdeTransactionData != null) DdeFreeDataHandle(this.hDdeTransactionData);
-        if (this.hDdeData != null) DdeFreeDataHandle(this.hDdeData);
-        if (this.hszServer != null) DdeFreeStringHandle(this.idInstance, this.hszServer);
-        if (this.hszTopic != null) DdeFreeStringHandle(this.idInstance, this.hszTopic);
-        if (this.hConvClient != null) DdeDisconnect(this.hConvClient);
-        if (this.idInstance != 0) DdeUninitialize(this.idInstance);
-    }
-
     auto execute(in string command)
     {
-        DdeInitializeW(&this.idInstance, sumatraDdeCallback, APPCMD_CLIENTONLY, 0);
-        if (this.idInstance == 0u) throw new DdemlError("DdeInitializeW error");
-        this.hszServer = DdeCreateStringHandleW(this.idInstance, toUTF16z(server), CP_WINUNICODE);
-        if (this.hszServer == null) throw new DdemlError("DdeCreateStringHandleW error");
-        this.hszTopic = DdeCreateStringHandleW(this.idInstance, toUTF16z(topic), CP_WINUNICODE);
-        if (this.hszTopic == null) throw new DdemlError("DdeCreateStringHandleW error");
-        this.hConvClient = DdeConnect(this.idInstance, this.hszServer, this.hszTopic, null);
-        if (this.hConvClient == null) throw new DdemlError("DdeConnect error");
-        this.hDdeData = DdeCreateDataHandle(this.idInstance, toUTF16z(command), to!uint((command.length + 1)*wchar.sizeof), 0, null, CF_UNICODETEXT, 0u);
-        if (this.hDdeData == null) throw new DdemlError("DdeCreateDataHandle error");
-        this.hDdeTransactionData = DdeClientTransaction(this.hDdeData, cast(uint)-1, this.hConvClient, null, 0, XTYP_EXECUTE, to!uint(TIMEOUT), null);
-        if (this.hDdeTransactionData == null) throw new DdemlError("DdeClientTransaction error");
+        try {
+            DdeInitializeW(&this.idInstance, sumatraDdeCallback, APPCMD_CLIENTONLY, 0);
+            if (this.idInstance == 0u) throw new DdemlError("DdeInitializeW error");
+            this.hszServer = DdeCreateStringHandleW(this.idInstance, toUTF16z(server), CP_WINUNICODE);
+            if (this.hszServer == null) throw new DdemlError("DdeCreateStringHandleW error");
+            this.hszTopic = DdeCreateStringHandleW(this.idInstance, toUTF16z(topic), CP_WINUNICODE);
+            if (this.hszTopic == null) throw new DdemlError("DdeCreateStringHandleW error");
+            this.hConvClient = DdeConnect(this.idInstance, this.hszServer, this.hszTopic, null);
+            if (this.hConvClient == null) throw new DdemlError("DdeConnect error");
+            this.hDdeData = DdeCreateDataHandle(this.idInstance, toUTF16z(command), to!uint((command.length + 1)*wchar.sizeof), 0, null, CF_UNICODETEXT, 0u);
+            if (this.hDdeData == null) throw new DdemlError("DdeCreateDataHandle error");
+            this.hDdeTransactionData = DdeClientTransaction(this.hDdeData, cast(uint)-1, this.hConvClient, null, 0, XTYP_EXECUTE, to!uint(TIMEOUT), null);
+            if (this.hDdeTransactionData == null) throw new DdemlError("DdeClientTransaction error");
+        } finally {
+            if (this.hDdeTransactionData != null) DdeFreeDataHandle(this.hDdeTransactionData);
+            if (this.hDdeData != null) DdeFreeDataHandle(this.hDdeData);
+            if (this.hszServer != null) DdeFreeStringHandle(this.idInstance, this.hszServer);
+            if (this.hszTopic != null) DdeFreeStringHandle(this.idInstance, this.hszTopic);
+            if (this.hConvClient != null) DdeDisconnect(this.hConvClient);
+            if (this.idInstance != 0) DdeUninitialize(this.idInstance);
+        }
 
         return;
     }
