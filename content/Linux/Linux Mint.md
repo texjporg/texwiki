@@ -81,9 +81,9 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 $ sudo apt-get install equivs
-$ wget http://www.tug.org/texlive/files/debian-equivs-2013-ex.txt
-$ equivs-build debian-equivs-2013-ex.txt
-$ sudo dpkg -i texlive-local_2013-1_all.deb
+$ wget http://www.tug.org/texlive/files/debian-equivs-2014-ex.txt
+$ equivs-build debian-equivs-2014-ex.txt
+$ sudo dpkg -i texlive-local_2014-1_all.deb
 ```
 
 #### LMDE <a id="lmde"></a> {#q5d1118e}
