@@ -361,6 +361,10 @@ Python 3.4.1 と PyPy3 2.1 Beta 1 で動作確認しています．<br>
 
 ***
 
+- fwdsumatrapdf.py
+
+***
+
 ```
 # vim: ts=4 sw=4 expandtab:
 # -*- coding: utf-8 -*-
