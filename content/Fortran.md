@@ -32,7 +32,9 @@ Fortran が使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic
 - [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
-- [Tagged "Fortran2003" | ドウジンテイスウ.log](http://sage-t.tumblr.com/tagged/Fortran2003)
+- [ドウジンテイスウ.log](http://sage-t.tumblr.com/)
+    - [http://sage-t.tumblr.com/tagged/Fortran](http://sage-t.tumblr.com/tagged/Fortran)
+    - [http://sage-t.tumblr.com/tagged/Fortran2003](http://sage-t.tumblr.com/tagged/Fortran2003)
 - [fortran66のブログ](http://fortran66.hatenablog.com/)
 - [fortran66の日記](http://d.hatena.ne.jp/fortran66/)
 - [Fortran日記](http://fortran.cscblog.jp/)
@@ -51,6 +53,7 @@ Fortran が使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic
 - [http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm](http://publib.boulder.ibm.com/infocenter/comphelp/v8v101/index.jsp?topic=%2Fcom.ibm.xlf101a.doc%2Fxlflr%2Finterop-iso-c-binding-module.htm)
 - [http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN](http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/FORTRAN)
 - [高速化プログラミング](http://fast-programming.aglk.net/)
+- [メモリマップドファイルを使ったデータの共有](http://rakasaka.fc2web.com/delphi/mapping.html)
 - [Fortran 覚書](http://www.gcxx.jp/memo/?fortran)
 - [Fortranスマートプログラミング](http://www.ile.osaka-u.ac.jp/research/cmp/text.html) (PDF)
 - [Fortran 90/95 入門①](http://www.hucc.hokudai.ac.jp/~a10019/kosyu/pdf2/Fortran_1.pdf) (PDF)
@@ -74,7 +77,7 @@ Fortran が使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic
 
 - [GNU Fortran (gfortran)](http://gcc.gnu.org/wiki/GFortran)
     - [GFortranBinaries - GCC Wiki](https://gcc.gnu.org/wiki/GFortranBinaries)
-        - Windows では [MinGW](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などにも収録されています．
+        - Windows では [MinGW/MinGW-W64](/MinGW/), [Cygwin](/Cygwin/), [Strawberry Perl](http://strawberryperl.com/) などにも収録されています．
         - OS X では [High Performance Computing for Mac OS X](http://hpc.sourceforge.net/) からもバイナリが取得できます．
         - [http://gfortran.com/](http://gfortran.com/) gfortran daily builds
     - [TS29113Status - GCC Wiki](http://gcc.gnu.org/wiki/TS29113Status)
@@ -486,9 +489,121 @@ C の atoi 関数で文字列から数値へ変換することもできます．
 ただし Fortran の組み込みの型を使用して大きな数を扱うのは限界があります．<br>
 大きな数で正確な演算結果が必要な場合は[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することをおすすめします．<br>
 多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
-C で簡単に記述できます．<br>
+[GMP](http://gmplib.org/) は[任意精度演算](https://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97)を扱うためのライブラリで C を使って簡単に記述できます．<br>
 
-- C を参照．
+***
+
+- nsum.c
+
+***
+
+```
+// vim: ts=4 sw=4 expandtab:
+// gcc -Wall -Ofast -march=native -std=c11 -static -o nsum nsum.c -lgmp
+// gcc -Wall -Ofast -march=native -std=c11 -static -DNSUM1 -o nsum nsum.c -lgmp
+#include <ctype.h>
+#include <stdbool.h>
+#include <stdio.h>
+#include <string.h>
+#include <gmp.h>
+
+void usage(const char* restrict);
+bool valid_number(const char* restrict);
+void nsum1(const char* restrict);
+void nsum2(const char* restrict);
+
+void
+usage(const char* restrict s)
+{
+    fprintf(stderr, "usage: %s N ...\n", s);
+}
+
+bool
+valid_number(const char* restrict s)
+{
+    for (int i = 0; i < strlen(s); i++) {
+        if (!isdigit(s[i])) {
+            return false;
+        }
+    }
+    return true;
+}
+
+void
+nsum1(const char* restrict s)
+{
+    mpz_t n;
+    mpz_t k;
+    mpz_t inc;
+    mpz_t arg;
+    mpz_init_set_str(inc, "1", 10);
+    mpz_init_set_str(k, "1", 10);
+    mpz_init_set_str(n, "0", 10);
+    mpz_init_set_str(arg, s, 10);
+    while (mpz_cmp(k, arg) <= 0) {
+        mpz_add(n, n, k);
+        mpz_add(k, k, inc);
+    }
+    gmp_printf("Sum from 1 to %Zd = %Zd\n", arg, n);
+    mpz_clear(arg);
+    mpz_clear(inc);
+    mpz_clear(k);
+    mpz_clear(n);
+}
+
+void
+nsum2(const char* restrict s)
+{
+    mpq_t n;
+    mpq_t k;
+    mpq_t inc;
+    mpq_t arg;
+    mpq_init(n);
+    mpq_init(k);
+    mpq_init(inc);
+    mpq_init(arg);
+    mpq_set_str(inc, "1", 10);
+    mpq_set_str(k, "1/2", 10);
+    mpq_set_str(n, "0", 10);
+    mpq_set_str(arg, s, 10);
+    mpq_add(n, arg, inc);
+    mpq_mul(n, n, arg);
+    mpq_mul(n, n, k);
+    gmp_printf("Sum from 1 to %Qd = %Qd\n", arg, n);
+    mpq_clear(arg);
+    mpq_clear(inc);
+    mpq_clear(k);
+    mpq_clear(n);
+}
+
+int
+main(int argc, char** argv)
+{
+    void (*nsum)(const char* restrict);
+
+    if (argc < 2) {
+        usage(argv[0]);
+        return 2;
+    }
+
+#if defined (NSUM1)
+    nsum = nsum1;
+#else
+    nsum = nsum2;
+#endif
+
+    for (int i = 1; i < argc; i++) {
+        if (valid_number(argv[i]) == false) {
+            continue;
+        }
+        nsum(argv[i]);
+    }
+
+    return 0;
+}
+```
+
+***
 
 ### cat ライクなコマンド {#s0a9990f}
 
@@ -564,13 +679,84 @@ command_argument_count でコマンドライン引数の個数を取得できま
 get_command_argument でコマンドライン引数を取得できます．<br>
 open 文で newunit を使用すれば自分で unit 番号 (装置番号) を指定しなくても自動的に空いた unit 番号を割り振ってくれます．<br>
 
-### Python や C などのプログラミング言語から Fortran を呼び出す {#kaea5749}
+### C から Fortran の関数を呼び出す {#ub949845}
 
-- [Calling Fortran from Python](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_python.html)
-- [Calling Fortran from C](http://www.sfu.ca/~mawerder/notes/calling_fortran_from_c.html)
+Fortran の関数
+
+***
+
+- fsin.f90
+
+***
+
+```
+pure function f_sin(x) result(y) bind(c, name='f_sin')
+    use, intrinsic :: iso_c_binding
+    real(kind=c_double), value :: x
+    real(kind=c_double) :: y
+    y = sin(x)
+end function f_sin
+```
+
+***
+
+```
+elemental pure function f_sin(x) result(y) bind(c, name='f_sin')
+```
+
+とするとエラーになります．<br>
+
+```
+$ gfortran -c fsin.f90
+$ nm fsin.o
+00000000 b .bss
+00000000 d .data
+00000000 r .eh_frame
+00000000 r .rdata$zzz
+00000000 t .text
+00000000 T _f_sin
+         U _sin
+```
+
+C の関数
+
+***
+
+- sin.c
+
+***
+
+```
+#include <stdio.h>
+#define _USE_MATH_DEFINES
+#include <math.h>
+
+extern double f_sin(double);
+
+int
+main(int argc, char** argv)
+{
+    double x = M_PI * 0.5;
+    printf("f_sin(%f) = %f\n", x, f_sin(x));
+    printf("sin(%f) = %f\n", x, sin(x));
+
+    return 0;
+}
+```
+
+***
+
+```
+$ gcc -o sin sin.c fsin.o
+$ ./sin
+f_sin(1.570796) = 1.000000
+sin(1.570796) = 1.000000
+```
+
+### Python から Fortran の関数を呼び出す {#kaea5749}
+
 - [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
-- [メモリマップドファイルを使ったデータの共有](http://rakasaka.fc2web.com/delphi/mapping.html)
 
 ### Fortran を書かずに Fortran を使う方法 {#y2fbc907}
 
@@ -613,7 +799,7 @@ module c_string
             integer(kind=c_int), value :: ch
             integer(kind=c_size_t), value :: n
         end subroutine memset
-        integer(kind=c_int) function wcslen(s) bind(c, name='wcslen')
+        integer(kind=c_size_t) function wcslen(s) bind(c, name='wcslen')
             use, intrinsic :: iso_c_binding
             type(c_ptr), value :: s
         end function wcslen
@@ -950,8 +1136,8 @@ subroutine ddeExecute()
     if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
         error stop "DdeConnect error"
     end if
-    hDdeData = DdeCreateDataHandle( &
-        & idInstance, c_loc(command_wchar), ((wcslen(c_loc(command_wchar)) + 1)*2), 0, c_null_ptr, CF_UNICODETEXT, 0)
+    hDdeData = DdeCreateDataHandle(idInstance, c_loc(command_wchar), &
+        & transfer((wcslen(c_loc(command_wchar)) + 1)*2, mold=c_int), 0, c_null_ptr, CF_UNICODETEXT, 0)
     if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
         error stop "DdeCreateDataHandle error"
     end if
