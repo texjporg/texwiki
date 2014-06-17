@@ -311,17 +311,21 @@ def ddeExecute(server, topic, command)
     end
 end
 
-if $0 == __FILE__
-    opt = OptionParser.new
-    opt.permute!(ARGV)
-    pdf = File.expand_path(ARGV[0])
-    tex = File.expand_path(ARGV[1])
-    line = ARGV[2]
-    server = 'SUMATRA'
-    topic = 'control'
-    command = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,0)]'
-    runSumatraPDF()
-    ddeExecute(server, topic, command)
+if $0 == __FILE__ then
+    begin
+        opt = OptionParser.new
+        opt.permute!(ARGV)
+        pdf = File.expand_path(ARGV[0])
+        tex = File.expand_path(ARGV[1])
+        line = ARGV[2]
+        server = 'SUMATRA'
+        topic = 'control'
+        command = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,0)]'
+        runSumatraPDF()
+        ddeExecute(server, topic, command)
+    rescue => e
+        p e
+    end
 end
 ```
 
