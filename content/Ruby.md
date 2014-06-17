@@ -166,6 +166,10 @@ RubyInstaller for Windows の ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] で動
 
 ***
 
+- fwdsumatrapdf.rb
+
+***
+
 ```
 # vim: ts=4 sw=4 expandtab:
 # -*- coding: utf-8 -*-
@@ -191,7 +195,7 @@ end
 module Msvcrt
     extend Fiddle::Importer
     dlload 'msvcrt.dll'
-    extern 'int wcslen(wchar_t*)'
+    extern 'size_t wcslen(const wchar_t*)'
 end
 
 module Kernel32
