@@ -124,6 +124,7 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
 #include <iostream>
 #include <sstream>
 #include <iomanip>
+#include <array>
 #include <string>
 #include <cstring>
 #include <cstdlib>
@@ -143,15 +144,15 @@ auto CALLBACK GetSumatraHWND(HWND hwnd, LPARAM lParam) -> BOOL
     UNREFERENCED_PARAMETER(lParam);
 
     auto constexpr maxSize = 1024;
-    auto windowText = std::basic_string<wchar_t>(maxSize, L'\0');
-    ::GetWindowTextW(hwnd, const_cast<wchar_t*>(windowText.c_str()), maxSize);
+    auto windowText = std::array<wchar_t, maxSize>{L""};
+    ::GetWindowTextW(hwnd, windowText.data(), maxSize);
 
-    if (windowText.at(0) == L'\0') {
+    if (windowText[0] == L'\0') {
         return TRUE;
     }
 
     wchar_t* title = nullptr;
-    if ((title = std::wcsrchr(const_cast<wchar_t*>(windowText.c_str()), L'S')) == nullptr) {
+    if ((title = std::wcsrchr(windowText.data(), L'S')) == nullptr) {
         return TRUE;
     }
 
