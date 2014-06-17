@@ -7,7 +7,7 @@ pukiwiki: "Fortran"
 
 # Fortran
 
-## Fortran → 使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic, Java, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
+## Fortran → 使いにくい場合は C, C++, D, Go, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
@@ -16,7 +16,7 @@ pukiwiki: "Fortran"
 ## Summary {#o355751c}
 
 Fortran は科学技術計算向けのプログラミング言語です．<br>
-Fortran が使いにくい場合は C, C++, D, Go, Haskell, F#, C#, Visual Basic, Java, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出せば OK です．<br>
+Fortran が使いにくい場合は C, C++, D, Go, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出せば OK です．<br>
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
@@ -288,7 +288,7 @@ program hello_world_message_box_w
     use windows_api
     implicit none
     character(len=*, kind=c_char), parameter :: msg = "Hello World" // c_null_char
-    integer(kind=1), dimension(1:2*len(msg)), target :: hello_world_wchar
+    integer(kind=1), dimension(1:2*len_trim(msg)), target :: hello_world_wchar
     integer(kind=c_int) :: bufSize
     call memset(c_loc(hello_world_wchar), 0, int(size(hello_world_wchar), kind=c_size_t))
     bufSize = MultiByteToWideChar(0, 1, msg, -1, c_loc(hello_world_wchar), len_trim(msg))
@@ -758,7 +758,7 @@ sin(1.570796) = 1.000000
 - [f2pyを使ってfortranでpythonのモジュールを書く](http://qiita.com/airtoxin/items/b632f2b3f219610f3990)
 - [PythonからFortranのサブルーチンを呼ぶ。](http://d.hatena.ne.jp/ignisan/20121017/p1)
 
-### Fortran を書かずに Fortran を使う方法 {#y2fbc907}
+### Fortran に機械語を埋め込んで実行 {#y2fbc907}
 
 - [Fortranを書かずにFortranを書いた](https://github.com/ledyba/FortranWithoutFortran)
 - [Fortranが書きたくないなら機械語を埋め込めばいいじゃないっ！](http://ledyba.org/2014/06/13235005.php)
