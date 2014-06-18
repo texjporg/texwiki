@@ -7,7 +7,7 @@ pukiwiki: "Perl"
 
 # Perl
 
-## [Perl](http://www.perl.org/) → 問題が発生する場合は [Python](/Python/), [Ruby](/Ruby/), Julia, JavaScript, PHP を使用する {#rf8f3586}
+## [Perl](http://www.perl.org/) {#rf8f3586}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Camelia.svg/500px-Camelia.svg.png" alt="Perl" style="float:right">
 
@@ -18,6 +18,8 @@ pukiwiki: "Perl"
 - [Perl 6](http://perl6.org/)
 - [Official Perl 6 Documentation](http://perlcabal.org/syn/)
 - [https://github.com/perl6/specs](https://github.com/perl6/specs)
+- [Wikipedia.en:Perl_6](https://en.wikipedia.org/wiki/Perl_6)
+- [Wikipedia.ja:Perl6](https://ja.wikipedia.org/wiki/Perl6)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
 - [MoarVM - A VM for NQP and Rakudo Perl 6](http://moarvm.com/)
 - [https://github.com/jnthn/zavolaj/](https://github.com/jnthn/zavolaj/)
@@ -94,6 +96,206 @@ TeX Live の Windows 版には Perl の処理系が収録されています．<b
 
 - [TeX-DVI - CPAN](http://search.cpan.org/~janpaz/TeX-DVI-1.01/)
 - [TeX-XDV-Parse - CPAN](http://search.cpan.org/~jrm/TeX-XDV-Parse-0.02/)
+
+## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#m5826a55}
+
+### Perl 版 {#ea342970}
+
+Strawberry Perl 5.20.0.1 で動作確認しています．<br>
+
+***
+
+- fwdsumatrapdf.pl
+
+***
+
+```
+# vim: ts=4 sw=4 expandtab:
+# -*- coding: utf-8 -*-
+
+use v5.20;
+use feature ':all';
+use warnings;
+use utf8;
+use File::Spec;
+use FFI::Raw;
+use Win32::API;
+use Encode::Locale;
+use Encode;
+
+my $TIMEOUT = 10000;
+
+sub wchar($str) {
+    return encode('UTF-16LE', $str . "\0");
+}
+
+sub runSumatraPDF() {
+    my $HKEY_LOCAL_MACHINE = 0x80000002;
+    my $KEY_QUERY_VALUE = 0x01;
+    my $keyPath = 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe';
+    my $RegOpenKeyExW = Win32::API->new('advapi32', "RegOpenKeyExW", "NPNNP", "N");
+    my $RegQueryValueExW = Win32::API->new('advapi32', "RegQueryValueExW", "NPPPPP", "N");
+    my $RegCloseKey = Win32::API->new('advapi32', "RegCloseKey", "N", "N");
+    my $CreateProcessW = Win32::API->new("kernel32", "CreateProcessW", "PPPPINPPSS", "I");
+    my $WaitForInputIdle = Win32::API->new("user32", "WaitForInputIdle", "NN", "N");
+#*********************************
+#    LPWSTR does **NOT** work!
+#*********************************
+#    Win32::API::Struct->typedef('STARTUPINFOW', qw(
+#        DWORD cb;
+#        LPWSTR lpReserved;
+#        LPWSTR lpDesktop;
+#        LPWSTR lpTitle;
+#        DWORD dwX;
+#        DWORD dwY;
+#        DWORD dwXSize;
+#        DWORD dwYSize;
+#        DWORD dwXCountChars;
+#        DWORD dwYCountChars;
+#        DWORD dwFillAttribute;
+#        DWORD dwFlags;
+#        WORD wShowWindow;
+#        WORD cbReserved2;
+#        LPBYTE lpReserved2;
+#        HANDLE hStdInput;
+#        HANDLE hStdOutput;
+#        HANDLE hStdError;
+#    ));
+#*********************************
+#    LPWSTR -> DWORD
+#*********************************
+    Win32::API::Struct->typedef('STARTUPINFOW', qw(
+        DWORD cb;
+        DWORD lpReserved;
+        DWORD lpDesktop;
+        DWORD lpTitle;
+        DWORD dwX;
+        DWORD dwY;
+        DWORD dwXSize;
+        DWORD dwYSize;
+        DWORD dwXCountChars;
+        DWORD dwYCountChars;
+        DWORD dwFillAttribute;
+        DWORD dwFlags;
+        WORD wShowWindow;
+        WORD cbReserved2;
+        LPBYTE lpReserved2;
+        HANDLE hStdInput;
+        HANDLE hStdOutput;
+        HANDLE hStdError;
+    ));
+    Win32::API::Struct->typedef('PROCESS_INFORMATION', qw(
+        HANDLE hProcess;
+        HANDLE hThread;
+        DWORD dwProcessId;
+        DWORD dwThreadId;
+    ));
+    my $si = Win32::API::Struct->new('STARTUPINFOW');
+    my $pi = Win32::API::Struct->new('PROCESS_INFORMATION');
+    my $subKey = pack('I', 0);
+    my $dwType = pack('I', 0);
+    my $sz = pack('I', 0);
+    $RegOpenKeyExW->Call($HKEY_LOCAL_MACHINE, wchar($keyPath), 0, $KEY_QUERY_VALUE, $subKey);
+    $subKey = unpack('I', $subKey);
+    $RegQueryValueExW->Call($subKey, 0, 0, $dwType, 0, $sz);
+    my $sumatraPDFRegistry = "\0" x unpack('I', $sz);
+    $RegQueryValueExW->Call($subKey, 0, 0, $dwType, $sumatraPDFRegistry, $sz);
+    $RegCloseKey->Call($subKey);
+    my $sumatrapdfRegStrSz = (sprintf("%d", unpack('I', $sz)) - 2) / 2;
+    my $regValue = pack('A' . $sumatrapdfRegStrSz, decode('UTF-16LE', $sumatraPDFRegistry));
+    my $sumatraPDFCommandLine = '"' . $regValue . '" -reuse-instance';
+    $CreateProcessW->Call(0, wchar($sumatraPDFCommandLine), 0, 0, 0, 0, 0, 0, $si, $pi);
+    $WaitForInputIdle->Call($pi->{hProcess}, $TIMEOUT);
+}
+
+sub ddeExecute($server, $topic, $command) {
+    my $wcslen = FFI::Raw->new(
+        'msvcrt.dll', 'wcslen',
+        FFI::Raw::uint,
+        FFI::Raw::str
+    );
+    my $DdeInitializeW = FFI::Raw->new(
+        'user32.dll', 'DdeInitializeW',
+        FFI::Raw::uint,
+        FFI::Raw::str, FFI::Raw::ptr, FFI::Raw::uint, FFI::Raw::uint
+    );
+    my $DdeUninitialize = FFI::Raw->new(
+        'user32.dll', 'DdeUninitialize',
+        FFI::Raw::int,
+        FFI::Raw::uint
+    );
+    my $DdeCreateStringHandleW = FFI::Raw->new(
+        'user32.dll', 'DdeCreateStringHandleW',
+        FFI::Raw::ptr,
+        FFI::Raw::uint, FFI::Raw::str, FFI::Raw::uint
+    );
+    my $DdeFreeStringHandle = FFI::Raw->new(
+        'user32.dll', 'DdeFreeStringHandle',
+        FFI::Raw::int,
+        FFI::Raw::uint, FFI::Raw::ptr
+    );
+    my $DdeConnect = FFI::Raw->new(
+        'user32.dll', 'DdeConnect',
+        FFI::Raw::ptr,
+        FFI::Raw::uint, FFI::Raw::ptr, FFI::Raw::ptr, FFI::Raw::ptr
+    );
+    my $DdeDisconnect = FFI::Raw->new(
+        'user32.dll', 'DdeDisconnect',
+        FFI::Raw::int,
+        FFI::Raw::ptr
+    );
+    my $DdeCreateDataHandle = FFI::Raw->new(
+        'user32.dll', 'DdeCreateDataHandle',
+        FFI::Raw::ptr,
+        FFI::Raw::uint, FFI::Raw::str, FFI::Raw::uint, FFI::Raw::uint, FFI::Raw::ptr, FFI::Raw::uint, FFI::Raw::uint
+    );
+    my $DdeFreeDataHandle = FFI::Raw->new(
+        'user32.dll', 'DdeFreeDataHandle',
+        FFI::Raw::int,
+        FFI::Raw::ptr
+    );
+    my $DdeClientTransaction = FFI::Raw->new(
+        'user32.dll', 'DdeClientTransaction',
+        FFI::Raw::ptr,
+        FFI::Raw::ptr, FFI::Raw::uint, FFI::Raw::ptr, FFI::Raw::ptr, FFI::Raw::uint, FFI::Raw::uint, FFI::Raw::uint, FFI::Raw::ptr
+    );
+    my $idInstance = pack('I', 0);
+    my $APPCMD_CLIENTONLY = 0x10;
+    my $CP_WINUNICODE = 1200;
+    my $CF_UNICODETEXT = 13;
+    my $XCLASS_FLAGS = 0x4000;
+    my $XTYP_EXECUTE = (0x0050 | $XCLASS_FLAGS);
+    $DdeInitializeW->call($idInstance, 0, $APPCMD_CLIENTONLY, 0);
+    $idInstance = unpack('I', $idInstance);
+    $idInstance or die "DdeInitializeW error";
+    my $hszServer = $DdeCreateStringHandleW->call($idInstance, wchar($server), $CP_WINUNICODE) or die "DdeCreateStringHandleW error";
+    my $hszTopic = $DdeCreateStringHandleW->call($idInstance, wchar($topic), $CP_WINUNICODE) or die "DdeCreateStringHandleW error";
+    my $hConvClient = $DdeConnect->call($idInstance, $hszServer, $hszTopic, 0) or die "DdeConnect error";
+    my $hDdeData = $DdeCreateDataHandle->call($idInstance, wchar($command), ($wcslen->call(wchar($command)) + 1)*2, 0, 0, $CF_UNICODETEXT, 0) or die "DdeCreateDataHandle error";
+    my $hDdeTransactionData = $DdeClientTransaction->call($hDdeData, -1, $hConvClient, 0, 0, $XTYP_EXECUTE, $TIMEOUT, 0) or die "DdeClientTransaction error";
+    $hDdeTransactionData and $DdeFreeDataHandle->call($hDdeTransactionData);
+    $hDdeData and $DdeFreeDataHandle->call($hDdeData);
+    $hszServer and $DdeFreeStringHandle->call($idInstance, $hszServer);
+    $hszTopic and $DdeFreeStringHandle->call($idInstance, $hszTopic);
+    $hConvClient and $DdeDisconnect->call($hConvClient);
+    $idInstance and $DdeUninitialize->call($idInstance);
+}
+
+if ($0 eq __FILE__) {
+    Encode::Locale::decode_argv;
+    $#ARGV == 2 or say "Usage: $0 pdf tex line" and exit 2;
+    my $pdf = File::Spec->rel2abs($ARGV[0]);
+    my $tex = File::Spec->rel2abs($ARGV[1]);
+    my $line = sprintf("%d", $ARGV[2]) or die "Invalid argument!";
+    my $server = 'SUMATRA';
+    my $topic = 'control';
+    my $command = '[ForwardSearch("' . $pdf . '","' . $tex . '",' . $line . ',0,0,0)]';
+    runSumatraPDF();
+    ddeExecute($server, $topic, $command);
+}
+```
+
+***
 
 ## 関連リンク {#lbc0c2cf}
 
