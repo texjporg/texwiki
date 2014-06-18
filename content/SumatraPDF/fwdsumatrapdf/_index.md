@@ -74,6 +74,10 @@ Java を参照．<br>
 
 [Ruby](/Ruby/#fwdsumatrapdf) を参照．<br>
 
+### Perl 版 {#t94bc67d}
+
+[Perl](/Perl/#fwdsumatrapdf) を参照．<br>
+
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
 fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可能です．
