@@ -248,9 +248,9 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /UnJamoDotum                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/un-fonts/UnJamoDotum.ttf)  >> ;
 /UnJamoNovel                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/un-fonts/UnJamoNovel.ttf)  >> ;
 
-%%% OpenType fonts with PostScript outlines in Adobe Reader/Acrobat XI
+%%% OpenType fonts with PostScript outlines in Adobe Acrobat Reader DC/Acrobat DC
 %%% See http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Mac
-%%%     ftp://ftp.adobe.com/pub/adobe/reader/mac/11.x/11.0.00/misc/
+%%%     ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/misc/
 %%%     /Library/"Application Support"/Adobe/Fonts/
 %/Ryumin-Light                 /KozMinPr6N-Regular     ;
 %/GothicBBB-Medium             /KozGoPr6N-Medium       ;
