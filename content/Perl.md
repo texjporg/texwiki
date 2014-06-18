@@ -40,6 +40,7 @@ pukiwiki: "Perl"
 - [http://dev.perl.org/](http://dev.perl.org/)
 - [https://github.com/Perl](https://github.com/Perl)
 - [http://perldoc.jp/](http://perldoc.jp/)
+    - [http://perldoc.jp/func/pack](http://perldoc.jp/func/pack)
 
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
@@ -100,3 +101,4 @@ TeX Live の Windows 版には Perl の処理系が収録されています．<b
 - [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
 - [https://metacpan.org/release/FFI-Raw](https://metacpan.org/release/FFI-Raw)
 - [http://dcbpw.org/dcbpw2014/talk/5394](http://dcbpw.org/dcbpw2014/talk/5394)
+- [http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/](http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/)
