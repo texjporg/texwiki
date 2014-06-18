@@ -65,7 +65,7 @@ pukiwiki: "Go"
 
 ### Go 版 {#j2bc8fe8}
 
-go version go1.3rc2 windows/amd64 で動作確認しています．<br>
+go version go1.3 windows/amd64 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
