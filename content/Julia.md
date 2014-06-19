@@ -25,6 +25,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 - [RユーザのためのJulia入門（行列編）](http://rishida.hatenablog.com/entry/2013/11/30/194733)
 - [30分で分かる最先端プログラミング言語Julia](http://mechawooser.blogspot.jp/2013/06/30julia.html)
 - [Julia : スクリプト言語最速? 手軽さと速さを求めた科学技術計算向け言語](http://yohshiy.blog.fc2.com/blog-entry-246.html)
+- [Pythonのコマンドライン引数処理の決定版 docopt (あとJuliaに移植したよ)](http://bicycle1885.hatenablog.com/entry/2014/06/08/103010)
 
 ### Julia Benchmarks {#ob1e5eb8}
 
