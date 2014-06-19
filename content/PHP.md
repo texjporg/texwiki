@@ -28,6 +28,7 @@ pukiwiki: "PHP"
 - [PHP Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/php)
 - [PHP Advent Calendar 2013](http://www.adventar.org/calendars/101)
 - [Hack](http://hacklang.org/)
+- [PHPでクリップボードを操作](http://www.pahoo.org/e-soul/webtech/php04/php04-09-01.shtm)
 
 ### ドキュメント {#df37b373}
 
