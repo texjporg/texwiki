@@ -162,13 +162,13 @@ sub runSumatraPDF() {
 #        HANDLE hStdError;
 #    ));
 #*********************************
-#    LPWSTR -> DWORD
+#    LPWSTR -> LPBYTE
 #*********************************
     Win32::API::Struct->typedef('STARTUPINFOW', qw(
         DWORD cb;
-        DWORD lpReserved;
-        DWORD lpDesktop;
-        DWORD lpTitle;
+        LPBYTE lpReserved;
+        LPBYTE lpDesktop;
+        LPBYTE lpTitle;
         DWORD dwX;
         DWORD dwY;
         DWORD dwXSize;
@@ -201,8 +201,8 @@ sub runSumatraPDF() {
     my $sumatraPDFRegistry = "\0" x unpack('I', $sz);
     $RegQueryValueExW->Call($subKey, 0, 0, $dwType, $sumatraPDFRegistry, $sz);
     $RegCloseKey->Call($subKey);
-    my $sumatrapdfRegStrSz = (sprintf("%d", unpack('I', $sz)) - 2) / 2;
-    my $regValue = pack('A' . $sumatrapdfRegStrSz, decode('UTF-16LE', $sumatraPDFRegistry));
+    my $sumatrapdfRegStrLength = (sprintf("%d", unpack('I', $sz)) - 2) / 2;
+    my $regValue = pack('A' . $sumatrapdfRegStrLength, decode('UTF-16LE', $sumatraPDFRegistry));
     my $sumatraPDFCommandLine = '"' . $regValue . '" -reuse-instance';
     $CreateProcessW->Call(0, wchar($sumatraPDFCommandLine), 0, 0, 0, 0, 0, 0, $si, $pi);
     $WaitForInputIdle->Call($pi->{hProcess}, $TIMEOUT);
