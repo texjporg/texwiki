@@ -15,6 +15,8 @@ pukiwiki: "Haskell"
 
 ## Summary {#j02438c3}
 
+Haskell は非正格な純粋関数型プログラミング言語です．<br>
+
 - [Haskell](http://www.haskell.org/)
 - [HaskellWiki](http://www.haskell.org/haskellwiki/Haskell)
 - [The Libraries Archives](http://www.haskell.org/pipermail/libraries/)
