@@ -163,7 +163,7 @@ window['org.gnome.evince.Window'].SyncView(tex, [line, 1], 0)
 
 ### Ruby 版 {#p8b1b4df}
 
-RubyInstaller for Windows の ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] で動作確認しています．<br>
+RubyInstaller for Windows の ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] と ActiveScriptRuby の ruby 2.1.2p95 (2014-05-08 revision 45877) \[i386-mswin32_100\] で動作確認しています．<br>
 
 ***
 
@@ -269,7 +269,7 @@ end
 def runSumatraPDF()
     regValue = nil
     Win32::Registry::HKEY_LOCAL_MACHINE.open('SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe') do |reg|
-        regValue = reg.read(nil)[1]
+        regValue = reg.read("")[1]
     end
     sumatraPDFCommandLine = nil
     if regValue and File.exists?(regValue) then
@@ -318,7 +318,7 @@ if $0 == __FILE__ then
         opt.permute!(ARGV)
         pdf = File.expand_path(ARGV[0])
         tex = File.expand_path(ARGV[1])
-        line = ARGV[2]
+        line = ARGV[2] and Integer(line)
         server = 'SUMATRA'
         topic = 'control'
         command = '[ForwardSearch("' + pdf + '","' + tex + '",' + line + ',0,0,0)]'
