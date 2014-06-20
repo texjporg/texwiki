@@ -17,6 +17,9 @@ pukiwiki: "C"
 
 ## Summary {#k4c5d2ad}
 
+C は汎用プログラミング言語です．<br>
+C で記述されたライブラリは C++, D, Go, Rust, Fortran, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などから呼び出すこともできます．<br>
+
 - [Wikipedia.ja:C言語](https://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
 - [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
