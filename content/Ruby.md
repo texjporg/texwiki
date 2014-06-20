@@ -51,6 +51,7 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 - [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
+- [rubyinstallerを使って完璧なRuby-2.1.0/2.1.1をコンパイル/ビルドする方法](http://dari88.hatenablog.com/entry/2014/03/07/202034)
 
 RubyInstaller for Windows の Ruby を C:\Ruby200-x64 にインストールした場合は
 
