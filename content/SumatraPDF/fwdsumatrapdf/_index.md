@@ -70,6 +70,10 @@ Java を参照．<br>
 
 [Python](/Python/#fwdsumatrapdf) を参照．<br>
 
+### Julia 版 {#d6b5d40e}
+
+Julia を参照．<br>
+
 ### Ruby 版 {#i32dcfa3}
 
 [Ruby](/Ruby/#fwdsumatrapdf) を参照．<br>
