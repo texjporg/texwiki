@@ -43,6 +43,38 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 
+## インストール {#m58994ce}
+
+### Windows {#x1bdf474}
+
+- [http://julialang.org/downloads/](http://julialang.org/downloads/)
+
+### OS X {#l34a1fe9}
+
+- [http://julialang.org/downloads/](http://julialang.org/downloads/)
+
+### Linux {#ze24622a}
+
+#### Arch Linux {#ha701234}
+
+- [https://www.archlinux.org/packages/?name=julia](https://www.archlinux.org/packages/?name=julia)
+
+#### Linux Mint {#m3c6af99}
+
+- [http://packages.ubuntu.com/ja/julia](http://packages.ubuntu.com/ja/julia)
+
+#### Debian {#f3f3a8ca}
+
+- [https://packages.debian.org/ja/julia](https://packages.debian.org/ja/julia)
+
+#### openSUSE {#ha05c419}
+
+- [http://software.opensuse.org/package/julia](http://software.opensuse.org/package/julia)
+
+#### Gentoo Linux {#lc2b8837}
+
+- [https://packages.gentoo.org/package/dev-lang/julia](https://packages.gentoo.org/package/dev-lang/julia)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#me14be9e}
 
 ### Julia 版 {#yd2ce169}
