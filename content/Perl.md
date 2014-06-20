@@ -26,6 +26,13 @@ pukiwiki: "Perl"
 - [Perl6 Advent Calendar 2012](http://qiita.com/advent-calendar/2012/perl6)
 - [Perl6 Advent Calendar 2011](http://atnd.org/events/22820)
 
+### ChangeLog {#fbf40da7}
+
+- [https://github.com/rakudo/rakudo](https://github.com/rakudo/rakudo)
+    - [https://github.com/rakudo/rakudo/commits/](https://github.com/rakudo/rakudo/commits/)
+- [https://github.com/MoarVM/MoarVM](https://github.com/MoarVM/MoarVM)
+    - [https://github.com/MoarVM/MoarVM/commits/](https://github.com/MoarVM/MoarVM/commits/)
+
 ### インストール (Windows) {#jc58fcd6}
 
 - [http://rakudo.org/downloads/star/](http://rakudo.org/downloads/star/)
