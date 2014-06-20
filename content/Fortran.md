@@ -7,7 +7,9 @@ pukiwiki: "Fortran"
 
 # Fortran
 
-## Fortran → 使いにくい場合は C, C++, D, Go, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
+Fortran が使いにくい場合は C, C++, D, Go, Rust, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などを使用して Fortran で記述されたライブラリを呼び出せば OK です．<br>
+
+## Fortran → 使いにくい場合は C, C++, D, Go, Rust, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
@@ -16,7 +18,6 @@ pukiwiki: "Fortran"
 ## Summary {#o355751c}
 
 Fortran は科学技術計算向けのプログラミング言語です．<br>
-Fortran が使いにくい場合は C, C++, D, Go, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), [Ruby](/Ruby/), Julia などを使用して Fortran で記述されたライブラリを呼び出せば OK です．<br>
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
@@ -488,8 +489,8 @@ C の atoi 関数で文字列から数値へ変換することもできます．
 数が大きくなると N(N+1)/2 の計算式のほうが早く計算できます．<br>
 ただし Fortran の組み込みの型を使用して大きな数を扱うのは限界があります．<br>
 大きな数で正確な演算結果が必要な場合は[多倍長整数ライブラリ](http://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97#.E3.83.A9.E3.82.A4.E3.83.96.E3.83.A9.E3.83.AA)を使用してプログラムを作成することをおすすめします．<br>
-多倍長整数を扱うライブラリとして例えば [GMP](http://gmplib.org/) があります．<br>
-[GMP](http://gmplib.org/) は[任意精度演算](https://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97)を扱うためのライブラリで C を使って簡単に記述できます．<br>
+多倍長整数を扱うライブラリとして例えば GMP があります．<br>
+GMP は[任意精度演算](https://ja.wikipedia.org/wiki/%E4%BB%BB%E6%84%8F%E7%B2%BE%E5%BA%A6%E6%BC%94%E7%AE%97)を扱うためのライブラリで C を使って簡単に記述できます．<br>
 
 ***
 
