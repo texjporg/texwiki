@@ -81,7 +81,7 @@ $ pacman -S perl
 
 #### tlperl {#x3549067}
 
-TeX Live の Windows 版には Perl の処理系が収録されています．<br>
+TeX Live の Win32 版には Perl の処理系が収録されています．<br>
 
 - [http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/?view=log)
@@ -102,6 +102,12 @@ TeX Live の Windows 版には Perl の処理系が収録されています．<b
 ### Perl 版 {#ea342970}
 
 Strawberry Perl 5.20.0.1 で動作確認しています．<br>
+FFI::Raw がインストールされていない場合は以下を実行して FFI::Raw をインストールします．<br>
+
+```
+>cpan
+cpan> install FFI::Raw
+```
 
 ***
 
