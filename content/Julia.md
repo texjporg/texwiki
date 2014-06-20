@@ -47,7 +47,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 
 ### Julia 版 {#yd2ce169}
 
-julia version 0.3.0-prerelease+3590 で動作確認しています．<br>
+julia version 0.3.0-prerelease+3789 で動作確認しています．<br>
 
 ***
 
