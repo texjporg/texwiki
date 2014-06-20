@@ -7,9 +7,7 @@ pukiwiki: "Fortran"
 
 # Fortran
 
-Fortran が使いにくい場合は C, C++, D, Go, Rust, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などを使用して Fortran で記述されたライブラリを呼び出せば OK です．<br>
-
-## Fortran → 使いにくい場合は C, C++, D, Go, Rust, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などを使用して Fortran で記述されたライブラリを呼び出す {#pbb06ff1}
+## Fortran {#pbb06ff1}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/0/07/Fortran_acs_cover.jpeg" alt="Fortran" width="203" height="260" style="float:right">
 
@@ -18,6 +16,7 @@ Fortran が使いにくい場合は C, C++, D, Go, Rust, Haskell, OCaml, F#, C#,
 ## Summary {#o355751c}
 
 Fortran は科学技術計算向けのプログラミング言語です．<br>
+Fortran で記述されたライブラリは C, C++, D, Go, Rust, Haskell, OCaml, F#, C#, Visual Basic, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などから呼び出すこともできます．<br>
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
