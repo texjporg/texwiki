@@ -13,6 +13,8 @@ pukiwiki: "Go"
 
 ## Summary {#hb43659d}
 
+Go は汎用プログラミング言語です．<br>
+
 - [The Go Programming Language](http://golang.org/)
 - [http://golang-jp.org/](http://golang-jp.org/)
     - [https://github.com/gophersjp/go](https://github.com/gophersjp/go)
