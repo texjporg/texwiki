@@ -15,6 +15,8 @@ pukiwiki: "D"
 
 ## Summary {#m0ebe189}
 
+D は汎用プログラミング言語です．<br>
+
 - [http://dlang.org/](http://dlang.org/)
     - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
 - [http://gdcproject.org/](http://gdcproject.org/)
