@@ -30,6 +30,8 @@ pukiwiki: "Perl"
 
 - [https://github.com/rakudo/rakudo](https://github.com/rakudo/rakudo)
     - [https://github.com/rakudo/rakudo/commits/](https://github.com/rakudo/rakudo/commits/)
+- [https://github.com/perl6/nqp/](https://github.com/perl6/nqp/)
+    - [https://github.com/perl6/nqp/commits/](https://github.com/perl6/nqp/commits/)
 - [https://github.com/MoarVM/MoarVM](https://github.com/MoarVM/MoarVM)
     - [https://github.com/MoarVM/MoarVM/commits/](https://github.com/MoarVM/MoarVM/commits/)
 
