@@ -79,10 +79,6 @@ RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場
 $ pacman -S ruby
 ```
 
-#### ビルド {#m4a4d031}
-
-- [Windows で ruby 2.1.1 をビルドする](http://blog.oogatta.com/entry/20140318/1395161294)
-
 ### OS X {#def5cf73}
 
 - [brewとrbenvを使ってRuby2.1.2を突っ込む](http://qiita.com/217/items/2d4f2d9551572e2c7352)
