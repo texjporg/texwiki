@@ -923,6 +923,7 @@ TeX ソースの先頭行に例えば，
 ## 関連リンク {#fcad5d2d}
 
 - [モダンな日本語 TeX 環境を整える](http://qiita.com/ynakayama/items/706ae9e59c1b6fd3e3d2)
+- [Ubuntu 14.04でのEmacsの設定](http://ubutun.blogspot.jp/2014/06/ubuntu-1404emacs.html)
 - [Linux Mintを導入する（８）](http://note.chiebukuro.yahoo.co.jp/detail/n220718)
 - [NTEmacsでYaTeXによるフルパス内に日本語を含む .tex のタイプセット](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12106481462), [（再）NTEmacsでYaTeXによるフルパス内に日本語を含む .tex のタイプセット](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11106826351)
 - [文字コード毎の tex-command and bibtex-command 切り替え for yatex](http://meq-yo.sblo.jp/article/64863422.html)
