@@ -18,8 +18,6 @@ pukiwiki: "D"
 D は汎用プログラミング言語です．<br>
 
 - [http://dlang.org/](http://dlang.org/)
-    - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
-- [http://gdcproject.org/](http://gdcproject.org/)
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [Wikipedia.ja:D言語](https://ja.wikipedia.org/wiki/D%E8%A8%80%E8%AA%9E)
 - [http://qiita.com/tags/dlang](http://qiita.com/tags/dlang)
@@ -27,6 +25,22 @@ D は汎用プログラミング言語です．<br>
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
 - [D言語でShift-JISを入出力する](http://qiita.com/___uhu/items/9fc09e6aea9939395d74)
 - [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
+
+### 処理系 {#k1224503}
+
+#### DMD - Digital Mars D Programming Language version 2 {#ncac50d9}
+
+- [http://dlang.org/download.html](http://dlang.org/download.html)
+- [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
+
+#### GDC - D Programming Language for GCC {#d74ebb32}
+
+- [http://gdcproject.org/](http://gdcproject.org/)
+
+#### LDC – the LLVM-based D Compiler {#u3305dec}
+
+- [https://github.com/ldc-developers/ldc](https://github.com/ldc-developers/ldc)
+    - [https://github.com/ldc-developers/ldc/releases/](https://github.com/ldc-developers/ldc/releases/)
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#nfc264ca}
 
