@@ -87,7 +87,7 @@ import System.Environment (getArgs, getProgName)
 import System.Exit (exitWith, ExitCode(ExitSuccess, ExitFailure))
 import System.IO.Unsafe (unsafePerformIO)
 import System.Win32.Registry (regOpenKeyEx, regQueryValue, regCloseKey, hKEY_LOCAL_MACHINE, kEY_QUERY_VALUE)
-import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, LPWSTR, HANDLE, LPARAM)
+import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, UINT, LPARAM, LPBYTE, LPDWORD, LPWSTR, LPCWSTR, LPVOID, HANDLE)
 import Graphics.Win32.GDI.Types (HWND)
 import Data.Bits ((.|.))
 import Data.IORef (newIORef, readIORef, writeIORef, IORef)
@@ -104,40 +104,40 @@ foreign import ccall "wchar.h wcscmp"
 foreign import ccall "wchar.h wcsrchr"
     c_wcsrchr :: CWString -> CWchar -> IO (Ptr CWchar)
 foreign import stdcall "windows.h GetWindowTextW"
-    getWindowTextW :: HWND -> CWString -> CInt -> IO CInt
+    getWindowTextW :: HWND -> LPWSTR -> CInt -> IO CInt
 foreign import stdcall "wrapper"
     mkEnumWindowsProc :: EnumWindowsProc -> IO (FunPtr EnumWindowsProc)
 foreign import stdcall "windows.h EnumWindows"
     enumWindows :: FunPtr EnumWindowsProc -> LPARAM -> IO BOOL
 foreign import stdcall "windows.h CreateProcessW"
-    createProcessW :: CWString -> CWString -> Ptr () -> Ptr () -> BOOL -> DWORD -> Ptr () -> CWString -> Ptr STARTUPINFOW -> Ptr PROCESS_INFORMATION -> IO BOOL
+    createProcessW :: LPCWSTR -> LPWSTR -> Ptr () -> Ptr () -> BOOL -> DWORD -> LPVOID -> LPCWSTR -> LPSTARTUPINFOW -> LPPROCESS_INFORMATION -> IO BOOL
 foreign import stdcall "windows.h WaitForInputIdle"
     waitForInputIdle :: HANDLE -> DWORD -> IO DWORD
 foreign import stdcall "wrapper"
     mkDdeCallback ::  DdeCallback -> IO (FunPtr DdeCallback)
 foreign import stdcall "ddeml.h DdeInitializeW"
-    ddeInitializeW :: Ptr CUInt -> FunPtr DdeCallback -> CUInt -> CUInt -> IO CUInt
+    ddeInitializeW :: LPDWORD -> FunPtr DdeCallback -> DWORD -> DWORD -> IO UINT
 foreign import stdcall "ddeml.h DdeUninitialize"
-    ddeUninitialize :: CUInt -> IO BOOL
+    ddeUninitialize :: DWORD -> IO BOOL
 foreign import stdcall "ddeml.h DdeCreateStringHandleW"
-    ddeCreateStringHandleW :: CUInt -> CWString -> CInt -> IO HANDLE
+    ddeCreateStringHandleW :: DWORD -> LPWSTR -> CInt -> IO HANDLE
 foreign import stdcall "ddeml.h DdeFreeStringHandle"
-    ddeFreeStringHandle :: CUInt -> HANDLE -> IO BOOL
+    ddeFreeStringHandle :: DWORD -> HANDLE -> IO BOOL
 foreign import stdcall "ddeml.h DdeGetLastError"
-    ddeGetLastError :: CUInt -> IO CUInt
+    ddeGetLastError :: DWORD -> IO UINT
 foreign import stdcall "ddeml.h DdeCreateDataHandle"
-    ddeCreateDataHandle :: CUInt -> CWString -> CInt -> CInt -> Ptr () -> CUInt -> CInt -> IO HANDLE
+    ddeCreateDataHandle :: DWORD -> LPBYTE -> DWORD -> DWORD -> HANDLE -> UINT -> UINT -> IO HANDLE
 foreign import stdcall "ddeml.h DdeFreeDataHandle"
     ddeFreeDataHandle :: HANDLE -> IO BOOL
 foreign import stdcall "ddeml.h DdeClientTransaction"
-    ddeClientTransaction :: Ptr BYTE -> CUInt -> Ptr () -> Ptr () -> CInt -> CUInt -> CInt -> Ptr () -> IO HANDLE
+    ddeClientTransaction :: LPBYTE -> DWORD -> HANDLE -> HANDLE -> UINT -> UINT -> DWORD -> LPDWORD -> IO HANDLE
 foreign import stdcall "ddeml.h DdeConnect"
-    ddeConnect :: CUInt -> Ptr () -> Ptr () -> Ptr () -> IO HANDLE
+    ddeConnect :: DWORD -> HANDLE -> HANDLE -> Ptr () -> IO HANDLE
 foreign import stdcall "ddeml.h DdeDisconnect"
     ddeDisconnect :: HANDLE -> IO BOOL
 
 type EnumWindowsProc = HWND -> LPARAM -> IO BOOL
-type DdeCallback = CUInt -> CUInt -> Ptr () -> Ptr () -> Ptr () -> Ptr () -> DWORD -> DWORD -> IO (Ptr ())
+type DdeCallback = UINT -> UINT -> HANDLE -> HANDLE -> HANDLE -> HANDLE -> DWORD -> DWORD -> IO HANDLE
 
 type LPPROCESS_INFORMATION = Ptr PROCESS_INFORMATION
 data PROCESS_INFORMATION = PROCESS_INFORMATION
@@ -239,22 +239,22 @@ instance Storable STARTUPINFOW where
             siStdOutput     =  vhStdOutput,
             siStdError      =  vhStdError}
 
-aPPCMD_CLIENTONLY :: CUInt
+aPPCMD_CLIENTONLY :: DWORD
 aPPCMD_CLIENTONLY = 0x10
 
 cP_WINUNICODE :: CInt
 cP_WINUNICODE = 1200
 
-cF_UNICODETEXT :: CUInt
+cF_UNICODETEXT :: UINT
 cF_UNICODETEXT = 13
 
-xCLASS_FLAGS :: CUInt
+xCLASS_FLAGS :: UINT
 xCLASS_FLAGS = 0x4000
 
-xTYP_EXECUTE :: CUInt
+xTYP_EXECUTE :: UINT
 xTYP_EXECUTE = 0x0050 .|. xCLASS_FLAGS
 
-timeout :: CInt
+timeout :: DWORD
 timeout = 10000
 
 {-# NOINLINE existSumatraHWND #-}
@@ -333,7 +333,7 @@ runSumatraPDF pdf = do
                         pi <- peek p_pi
                         waitForInputIdle (piProcess pi) (fromIntegral timeout)
 
-ddeExecute :: String -> String -> String -> IO (CUInt, HANDLE, HANDLE, HANDLE, HANDLE, Ptr ())
+ddeExecute :: String -> String -> String -> IO (DWORD, HANDLE, HANDLE, HANDLE, HANDLE, HANDLE)
 ddeExecute server topic command = do
     bracket
         (getIdInstance)
@@ -399,7 +399,7 @@ ddeExecute server topic command = do
 
         getHDdeData idInstance command = do
             withCWStringLen command $ \(cmd, len) -> do
-                hDdeData <- ddeCreateDataHandle idInstance cmd (fromIntegral ((len + 1) * (sizeOf (undefined :: CWchar)))) 0 nullPtr cF_UNICODETEXT 0
+                hDdeData <- ddeCreateDataHandle idInstance (castPtr cmd) (fromIntegral ((len + 1) * (sizeOf (undefined :: CWchar)))) 0 nullPtr cF_UNICODETEXT 0
                 if hDdeData == nullPtr then throwIO $ userError "ddeCreateDataHandle Error" else return True
                 return hDdeData
 
