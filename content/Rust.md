@@ -19,3 +19,5 @@ pukiwiki: "Rust"
 - [http://qiita.com/tags/rust](http://qiita.com/tags/rust)
 - [http://wontfix.blogspot.jp/search/label/rust](http://wontfix.blogspot.jp/search/label/rust)
 - [Rust Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/rust)
+- [http://stackoverflow.com/questions/tagged/rust](http://stackoverflow.com/questions/tagged/rust)
+    - [http://stackoverflow.com/questions/21569718/exit-rust-program-early](http://stackoverflow.com/questions/21569718/exit-rust-program-early)
