@@ -33,6 +33,7 @@ Haskell は非正格な純粋関数型プログラミング言語です．<br>
 - [Haskellの構造体をCと同期させる](http://tsubaki.hatenablog.com/entry/20110112/1294759187)
 - [Haskell@Windowsのコンソールで日本語が文字化けする話の対策](http://tsubaki.hatenablog.com/entry/2013/02/20/090115)
 - [How do I use Haskell's FFI on structs?](http://stackoverflow.com/questions/670221/how-do-i-use-haskells-ffi-on-structs)
+- [http://www.cse.unsw.edu.au/~chak/haskell/ffi/ffi/ffise6.html](http://www.cse.unsw.edu.au/~chak/haskell/ffi/ffi/ffise6.html)
 - [http://darcs.haskell.org/testsuite/timeout/](http://darcs.haskell.org/testsuite/timeout/)
     - [http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc](http://darcs.haskell.org/testsuite/timeout/WinCBindings.hsc)
 - [https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc](https://bitbucket.org/dionthegod/fuzzywuzzy/src/cfd324244691/System/Win32/DebugProcess.hsc)
@@ -81,29 +82,22 @@ ghc fwdsumatrapdf.hs
 
 module Main where
 
-import System.Directory
-import System.Environment
-import System.Exit
-import System.Process
-import System.Win32.Registry
-import System.Win32.Types
-import System.IO.Unsafe
-import Data.Bits
-import Data.Int
-import Data.IORef
-import Debug.Trace
-import Graphics.Win32.GDI.Types
-import Control.Concurrent
-import Control.Exception
-import Control.Monad
-import Text.Printf
-import Foreign.C.Types
-import Foreign.C.String
-import Foreign.Ptr
-import Foreign.Marshal.Alloc
-import Foreign.Marshal.Array
-import Foreign.ForeignPtr
-import Foreign.Storable
+import System.Directory (doesFileExist)
+import System.Environment (getArgs, getProgName)
+import System.Exit (exitWith, ExitCode(ExitSuccess, ExitFailure))
+import System.IO.Unsafe (unsafePerformIO)
+import System.Win32.Registry (regOpenKeyEx, regQueryValue, regCloseKey, hKEY_LOCAL_MACHINE, kEY_QUERY_VALUE)
+import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, LPWSTR, HANDLE, LPARAM)
+import Graphics.Win32.GDI.Types (HWND)
+import Data.Bits ((.|.))
+import Data.IORef (newIORef, readIORef, writeIORef, IORef)
+import Control.Exception (bracket, catch, throwIO, SomeException)
+import Foreign.C.String (newCWString, withCWString, withCWStringLen, CWString)
+import Foreign.C.Types (CInt(..), CUInt(..), CWchar(..))
+import Foreign.Ptr (castPtr, Ptr, FunPtr)
+import Foreign.Marshal.Alloc (alloca, free)
+import Foreign.Marshal.Array (mallocArray)
+import Foreign.Storable (alignment, sizeOf, peek, peekByteOff, poke, pokeByteOff, Storable)
 
 foreign import ccall "wchar.h wcscmp"
     c_wcscmp :: CWString -> CWString -> IO CInt
@@ -116,9 +110,9 @@ foreign import stdcall "wrapper"
 foreign import stdcall "windows.h EnumWindows"
     enumWindows :: FunPtr EnumWindowsProc -> LPARAM -> IO BOOL
 foreign import stdcall "windows.h CreateProcessW"
-    createProcessW :: CWString -> CWString -> Ptr () -> Ptr () -> CInt -> CInt -> Ptr () -> Ptr () -> Ptr STARTUPINFOW -> Ptr PROCESS_INFORMATION -> IO BOOL
+    createProcessW :: CWString -> CWString -> Ptr () -> Ptr () -> BOOL -> DWORD -> Ptr () -> CWString -> Ptr STARTUPINFOW -> Ptr PROCESS_INFORMATION -> IO BOOL
 foreign import stdcall "windows.h WaitForInputIdle"
-    waitForInputIdle :: HANDLE -> CUInt -> IO CUInt
+    waitForInputIdle :: HANDLE -> DWORD -> IO DWORD
 foreign import stdcall "wrapper"
     mkDdeCallback ::  DdeCallback -> IO (FunPtr DdeCallback)
 foreign import stdcall "ddeml.h DdeInitializeW"
@@ -335,7 +329,7 @@ runSumatraPDF pdf = do
             withCWString sumatrapdfCommandLine $ \cmd -> do
                 alloca $ \p_si -> do
                     alloca $ \p_pi -> do
-                        createProcessW nullPtr cmd nullPtr nullPtr 0 0 nullPtr nullPtr p_si p_pi
+                        createProcessW nullPtr cmd nullPtr nullPtr False 0 nullPtr nullPtr p_si p_pi
                         pi <- peek p_pi
                         waitForInputIdle (piProcess pi) (fromIntegral timeout)
 
@@ -405,7 +399,7 @@ ddeExecute server topic command = do
 
         getHDdeData idInstance command = do
             withCWStringLen command $ \(cmd, len) -> do
-                hDdeData <- ddeCreateDataHandle idInstance cmd (fromIntegral ((len + 1) * (sizeOf $ CWchar 0))) 0 nullPtr cF_UNICODETEXT 0
+                hDdeData <- ddeCreateDataHandle idInstance cmd (fromIntegral ((len + 1) * (sizeOf (undefined :: CWchar)))) 0 nullPtr cF_UNICODETEXT 0
                 if hDdeData == nullPtr then throwIO $ userError "ddeCreateDataHandle Error" else return True
                 return hDdeData
 
