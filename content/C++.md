@@ -340,7 +340,7 @@ auto static RunSumatraPDF(const std::basic_string<wchar_t>& pdf) -> int
     STARTUPINFOW si;
     PROCESS_INFORMATION pi;
 
-#if defined _MSC_VER
+#if defined SecureZeroMemory
     SecureZeroMemory(&si, sizeof(si));
     SecureZeroMemory(&pi, sizeof(pi));
 #else
