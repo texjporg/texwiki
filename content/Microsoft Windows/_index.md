@@ -617,7 +617,10 @@ guess_input_kanji_encoding = 1
 
 (e-)upTeX で UTF-8 を使用している場合に文字コードの自動判別が失敗する場合は [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
 
-<!-- ***インストールのやり方などの事例 [#w0a33f0d] -->
+#### インストールのやり方などの事例 {#w0a33f0d}
+
+[TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
+: 2014-06-21
 
 ### [TeX Live](</TeX Live/>) ([Cygwin](/Cygwin/)) <a id="texlive-cygwin"></a> {#sfbd073e}
 
