@@ -292,7 +292,7 @@ RunSumatraPDF(const wchar_t* restrict pdf)
         }
     }
 
-#if defined (_MSC_VER)
+#if defined (SecureZeroMemory)
     SecureZeroMemory(&si, sizeof(si));
     SecureZeroMemory(&pi, sizeof(pi));
 #else
