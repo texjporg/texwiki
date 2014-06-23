@@ -15,7 +15,7 @@ pukiwiki: "Standard ML"
 
 ### 処理系 {#f73475e7}
 
-- [Standard ML of New Jersey](http://www.smlnj.org/)
+- [Standard ML of New Jersey](http://www.smlnj.org/) (SML/NJ)
 - [MLton](http://www.mlton.org/)
 - [SML# - SML＃プロジェクト](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/)
     - [http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html](http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html)
@@ -37,16 +37,22 @@ $ mingw-get install smlsharp
 
 ### FFI {#l0fcfe26}
 
+#### SML/NJ {#pb212d79}
+
+- [他言語との連携 ～ NLFFIをつかう](http://daweb.ism.ac.jp/~saitohm/top/_tnUp6t-.html)
+- [http://daweb.ism.ac.jp/~saitohm/code/sml-toy/win32test/](http://daweb.ism.ac.jp/~saitohm/code/sml-toy/win32test/)
+
+#### MLton {#qcc7200c}
+
+- [mlton-20070826のFFI](http://d.hatena.ne.jp/uenoB/20070829/1188392658)
+- [http://www.mlton.org/CallingFromSMLToCFunctionPointer](http://www.mlton.org/CallingFromSMLToCFunctionPointer)
+
+#### SML# {#z15b6c9c}
+
 - [SML# - Cとのシームレスな連携](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?FeatureInteroperability)
 - [SML# - C言語バインディング まとめ (ML/LL AdventCalendar20日目)](http://d.hatena.ne.jp/eldesh/20121220/1355970020)
 - [SML#の威力](http://d.hatena.ne.jp/sumii/20070402/p1)
 - [SML# 0.20 から Tcl を呼ぶ](http://rainyday.blog.so-net.ne.jp/2007-03-31)
-- [他言語との連携 ～ NLFFIをつかう](http://daweb.ism.ac.jp/~saitohm/top/_tnUp6t-.html)
-- [mlton-20070826のFFI](http://d.hatena.ne.jp/uenoB/20070829/1188392658)
-- [http://www.mlton.org/CallingFromSMLToCFunctionPointer](http://www.mlton.org/CallingFromSMLToCFunctionPointer)
-- [http://daweb.ism.ac.jp/~saitohm/code/sml-toy/win32test/](http://daweb.ism.ac.jp/~saitohm/code/sml-toy/win32test/)
-
-#### SML# {#z15b6c9c}
 
 ***
 
