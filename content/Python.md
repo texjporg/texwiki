@@ -15,6 +15,7 @@ pukiwiki: "Python"
 
 ## Summary {#d9180565}
 
+Python は汎用スクリプト言語です．<br>
 TeX 関連プログラムには Python で書かれたスクリプトがあります．<br>
 [PythonTeX](/PythonTeX/) などの Python で書かれたスクリプトを実行するには Python の処理系が必要です．<br>
 
@@ -79,23 +80,23 @@ $ pacman -S python
 
 #### Linux Mint {#fb9002c1}
 
-- [http://packages.ubuntu.com/ja/python](http://packages.ubuntu.com/ja/python)
 - [http://packages.ubuntu.com/ja/python3](http://packages.ubuntu.com/ja/python3)
+- [http://packages.ubuntu.com/ja/python](http://packages.ubuntu.com/ja/python)
 
 #### Debian {#h38e333d}
 
-- [https://packages.debian.org/ja/python](https://packages.debian.org/ja/python)
 - [https://packages.debian.org/ja/python3](https://packages.debian.org/ja/python3)
+- [https://packages.debian.org/ja/python](https://packages.debian.org/ja/python)
 
 #### Fedora {#y61bb303}
 
-- [https://apps.fedoraproject.org/packages/python](https://apps.fedoraproject.org/packages/python)
 - [https://apps.fedoraproject.org/packages/python3](https://apps.fedoraproject.org/packages/python3)
+- [https://apps.fedoraproject.org/packages/python](https://apps.fedoraproject.org/packages/python)
 
 #### openSUSE {#v8959680}
 
-- [http://software.opensuse.org/package/python](http://software.opensuse.org/package/python)
 - [http://software.opensuse.org/package/python3](http://software.opensuse.org/package/python3)
+- [http://software.opensuse.org/package/python](http://software.opensuse.org/package/python)
 
 #### Gentoo Linux {#u2a01502}
 
@@ -357,7 +358,7 @@ $ invevince "hoge.pdf" "texstudio '%f' -line %l"
 
 ### Python 版 {#w284c2eb}
 
-Python 3.4.1 と PyPy3 2.1 Beta 1 で動作確認しています．<br>
+Python 3.4.1 と PyPy3 2.3.1 で動作確認しています．<br>
 
 ***
 
@@ -498,3 +499,4 @@ if __name__ == '__main__':
 - [http://stackoverflow.com/questions/210629/python-unsigned-32-bit-bitwise-arithmetic](http://stackoverflow.com/questions/210629/python-unsigned-32-bit-bitwise-arithmetic)
 - [http://www.gesource.jp/programming/python/code/](http://www.gesource.jp/programming/python/code/)
 - [Python - アンサイクロペディア](http://ja.uncyclopedia.info/wiki/Python) ← Python は C よりも高速に動作するようです (ネタ)
+    <!-- -[http://coreblog.org/ats/statements-to-expressions-python-31/ print文に続き，if文やfor文，def文などが関数に - Python 3.1から] (2009-04-01 04:50) -->
