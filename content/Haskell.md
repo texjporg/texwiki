@@ -99,41 +99,41 @@ import Foreign.Marshal.Alloc (alloca, free)
 import Foreign.Marshal.Array (mallocArray)
 import Foreign.Storable (alignment, sizeOf, peek, peekByteOff, poke, pokeByteOff, Storable)
 
-foreign import ccall "wchar.h wcscmp"
+foreign import ccall unsafe "wchar.h wcscmp"
     c_wcscmp :: CWString -> CWString -> IO CInt
-foreign import ccall "wchar.h wcsrchr"
+foreign import ccall unsafe "wchar.h wcsrchr"
     c_wcsrchr :: CWString -> CWchar -> IO (Ptr CWchar)
-foreign import stdcall "windows.h GetWindowTextW"
+foreign import stdcall unsafe "windows.h GetWindowTextW"
     getWindowTextW :: HWND -> LPWSTR -> CInt -> IO CInt
-foreign import stdcall "wrapper"
+foreign import stdcall unsafe "wrapper"
     mkEnumWindowsProc :: EnumWindowsProc -> IO (FunPtr EnumWindowsProc)
-foreign import stdcall "windows.h EnumWindows"
+foreign import stdcall safe "windows.h EnumWindows"
     enumWindows :: FunPtr EnumWindowsProc -> LPARAM -> IO BOOL
-foreign import stdcall "windows.h CreateProcessW"
+foreign import stdcall unsafe "windows.h CreateProcessW"
     createProcessW :: LPCWSTR -> LPWSTR -> Ptr () -> Ptr () -> BOOL -> DWORD -> LPVOID -> LPCWSTR -> LPSTARTUPINFOW -> LPPROCESS_INFORMATION -> IO BOOL
-foreign import stdcall "windows.h WaitForInputIdle"
+foreign import stdcall unsafe "windows.h WaitForInputIdle"
     waitForInputIdle :: HANDLE -> DWORD -> IO DWORD
-foreign import stdcall "wrapper"
+foreign import stdcall unsafe "wrapper"
     mkDdeCallback ::  DdeCallback -> IO (FunPtr DdeCallback)
-foreign import stdcall "ddeml.h DdeInitializeW"
+foreign import stdcall unsafe "ddeml.h DdeInitializeW"
     ddeInitializeW :: LPDWORD -> FunPtr DdeCallback -> DWORD -> DWORD -> IO UINT
-foreign import stdcall "ddeml.h DdeUninitialize"
+foreign import stdcall unsafe "ddeml.h DdeUninitialize"
     ddeUninitialize :: DWORD -> IO BOOL
-foreign import stdcall "ddeml.h DdeCreateStringHandleW"
+foreign import stdcall unsafe "ddeml.h DdeCreateStringHandleW"
     ddeCreateStringHandleW :: DWORD -> LPWSTR -> CInt -> IO HANDLE
-foreign import stdcall "ddeml.h DdeFreeStringHandle"
+foreign import stdcall unsafe "ddeml.h DdeFreeStringHandle"
     ddeFreeStringHandle :: DWORD -> HANDLE -> IO BOOL
-foreign import stdcall "ddeml.h DdeGetLastError"
+foreign import stdcall unsafe "ddeml.h DdeGetLastError"
     ddeGetLastError :: DWORD -> IO UINT
-foreign import stdcall "ddeml.h DdeCreateDataHandle"
+foreign import stdcall unsafe "ddeml.h DdeCreateDataHandle"
     ddeCreateDataHandle :: DWORD -> LPBYTE -> DWORD -> DWORD -> HANDLE -> UINT -> UINT -> IO HANDLE
-foreign import stdcall "ddeml.h DdeFreeDataHandle"
+foreign import stdcall unsafe "ddeml.h DdeFreeDataHandle"
     ddeFreeDataHandle :: HANDLE -> IO BOOL
-foreign import stdcall "ddeml.h DdeClientTransaction"
+foreign import stdcall unsafe "ddeml.h DdeClientTransaction"
     ddeClientTransaction :: LPBYTE -> DWORD -> HANDLE -> HANDLE -> UINT -> UINT -> DWORD -> LPDWORD -> IO HANDLE
-foreign import stdcall "ddeml.h DdeConnect"
+foreign import stdcall unsafe "ddeml.h DdeConnect"
     ddeConnect :: DWORD -> HANDLE -> HANDLE -> Ptr () -> IO HANDLE
-foreign import stdcall "ddeml.h DdeDisconnect"
+foreign import stdcall unsafe "ddeml.h DdeDisconnect"
     ddeDisconnect :: HANDLE -> IO BOOL
 
 type EnumWindowsProc = HWND -> LPARAM -> IO BOOL
