@@ -15,6 +15,7 @@ pukiwiki: "Ruby"
 
 ## Summary {#z9c2e043}
 
+Ruby は汎用スクリプト言語です．<br>
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります．<br>
 [convbkmk.rb](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/convbkmk/convbkmk.rb?view=markup) などの Ruby で書かれたスクリプトを実行するには Ruby の処理系が必要です．<br>
 
