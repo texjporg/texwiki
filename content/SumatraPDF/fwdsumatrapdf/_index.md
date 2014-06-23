@@ -62,6 +62,10 @@ C Sharp を参照．<br>
 
 Visual Basic を参照．<br>
 
+### Nemerle 版 {#s374b71c}
+
+Nemerle を参照．<br>
+
 ### Java 版 {#adf40b65}
 
 Java を参照．<br>
