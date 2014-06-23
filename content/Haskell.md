@@ -52,6 +52,8 @@ Haskell は非正格な純粋関数型プログラミング言語です．<br>
 - [Theorem Prover Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/theorem_prover)
 - [Haskell for OCaml programmers](http://staff.science.uva.nl/~poss/haskell-for-ocaml-programmers.html)
 - [HaskellにおけるConfigurations Problemを解決する](http://cx4a.org/posts/2014-06-03-solve-the-configurations-problem-for-haskell.html)
+- [Haskell 2010 言語報告書](http://www.sampou.org/haskell/haskell2010-report-htja/)
+    - [Chapter 8 外部関数インターフェイス](http://www.sampou.org/haskell/haskell2010-report-htja/haskellch8.html)
 
 ## Haskell で LaTeX {#b3f747e0}
 
