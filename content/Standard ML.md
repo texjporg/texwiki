@@ -12,11 +12,13 @@ pukiwiki: "Standard ML"
 - [http://www.standardml.org/](http://www.standardml.org/)
     - [http://www.standardml.org/Basis/](http://www.standardml.org/Basis/)
         - [http://www.standardml.org/Basis/command-line.html](http://www.standardml.org/Basis/command-line.html)
+- [https://github.com/SMLFamily/sml97](https://github.com/SMLFamily/sml97)
 
 ### 処理系 {#f73475e7}
 
 - [Standard ML of New Jersey](http://www.smlnj.org/) (SML/NJ)
 - [MLton](http://www.mlton.org/)
+- [Poly/ML](http://www.polyml.org/)
 - [SML# - SML＃プロジェクト](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/)
     - [http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html](http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html)
 
@@ -46,6 +48,10 @@ $ mingw-get install smlsharp
 
 - [mlton-20070826のFFI](http://d.hatena.ne.jp/uenoB/20070829/1188392658)
 - [http://www.mlton.org/CallingFromSMLToCFunctionPointer](http://www.mlton.org/CallingFromSMLToCFunctionPointer)
+
+#### Poly/ML {#w02b8a16}
+
+- [Poly/MLのFFIでTclを呼ぶ](http://rainyday.blog.so-net.ne.jp/2013-09-28)
 
 #### SML# {#z15b6c9c}
 
