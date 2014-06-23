@@ -53,6 +53,7 @@ pukiwiki: "Perl"
 - [http://perldoc.jp/](http://perldoc.jp/)
     - [http://perldoc.jp/func/pack](http://perldoc.jp/func/pack)
 
+Perl 5 は汎用スクリプト言語です．<br>
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
 TeX Live (Win32) 版には Perl 5 の処理系が含まれています．<br>
