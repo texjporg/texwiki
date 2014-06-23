@@ -32,6 +32,7 @@ D は汎用プログラミング言語です．<br>
 
 - [http://dlang.org/download.html](http://dlang.org/download.html)
 - [https://github.com/D-Programming-Language/dmd](https://github.com/D-Programming-Language/dmd)
+- [http://dlang.org/changelog.html](http://dlang.org/changelog.html)
 
 #### GDC - D Programming Language for GCC {#d74ebb32}
 
