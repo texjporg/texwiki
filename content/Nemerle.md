@@ -24,6 +24,11 @@ pukiwiki: "Nemerle"
 - [Nemerle で hello world](http://pasberth.github.io/blog/entry/2013-11-18/)
 - [Nemerleでコンパイル時に迷路を解いてみた](http://kmizu.hatenablog.com/entry/20100113/1263375171)
 
+### IDE・エディタ {#pb442386}
+
+- [Vim](/Vim/)
+    - [VimのNemerle用設定](http://rakugakist.youpage.jp/?p=114)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#i8d36f0c}
 
 ### Nemerle 版 {#w7a71c40}
