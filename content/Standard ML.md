@@ -18,8 +18,14 @@ pukiwiki: "Standard ML"
 
 - [Standard ML of New Jersey](http://www.smlnj.org/) (SML/NJ)
 - [MLton](http://www.mlton.org/)
+- [Moscow ML](http://mosml.org/)
+    - [http://www.itu.dk/~sestoft/mosml.html](http://www.itu.dk/~sestoft/mosml.html)
 - [Poly/ML](http://www.polyml.org/)
 - [SML# - SML＃プロジェクト](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/)
+    - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library)
+        - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/lib/Basis/doc/api/](http://www.pllab.riec.tohoku.ac.jp/smlsharp/lib/Basis/doc/api/)
+        - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FFFI](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FFFI)
+        - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FLMLML](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FLMLML)
     - [http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html](http://www.ueda.info.waseda.ac.jp/~shinobu/smlsharp/install_mingw.html)
 
 C:\MinGW\var\lib\mingw-get\data\profile.xml に以下の行を追加
