@@ -101,7 +101,7 @@ namespace SumatraPDFClient
     using Microsoft.VisualBasic;
     using Ddeml;
 
-    public class ForwardSearch
+    public module ForwardSearch
     {
         private static timeout: int = 10000;
 
@@ -125,7 +125,7 @@ namespace SumatraPDFClient
                     try {
                         mutable sumatrapdfRegistry = "SumatraPDF.exe";
                         def keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
-                        using (def rKey = Registry.LocalMachine.OpenSubKey(keyPath)) {
+                        using (rKey = Registry.LocalMachine.OpenSubKey(keyPath)) {
                             sumatrapdfRegistry = rKey.GetValue(string.Empty).ToString();
                         }
                         if (File.Exists(sumatrapdfRegistry)) {
