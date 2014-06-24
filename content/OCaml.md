@@ -54,3 +54,12 @@ pukiwiki: "OCaml"
 - [http://caml.inria.fr/cgi-bin/viewvc.cgi/ocaml/trunk/](http://caml.inria.fr/cgi-bin/viewvc.cgi/ocaml/trunk/)
     - [log](http://caml.inria.fr/cgi-bin/viewvc.cgi/ocaml/trunk/?view=log)
     - [Changes](http://caml.inria.fr/cgi-bin/viewvc.cgi/ocaml/trunk/Changes?view=markup)
+
+### OCaml → JavaScript {#s4e80e56}
+
+- [js_of_ocaml](http://ocsigen.org/js_of_ocaml/)
+
+### 派生版 {#o040132e}
+
+- F#
+- [OCaml-Java](http://ocamljava.x9c.fr/)
