@@ -48,6 +48,10 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 ### Windows {#j2a4eaa7}
 
+#### ActiveScriptRuby {#y961023d}
+
+- [ActiveScriptRuby and Other packages](http://www.artonx.org/data/asr/)
+
 #### RubyInstaller for Windows {#p44e196d}
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
@@ -69,10 +73,6 @@ RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場
 ```
 
 を環境変数 PATH に追加します
-
-#### ActiveScriptRuby {#y961023d}
-
-- [ActiveScriptRuby and Other packages](http://www.artonx.org/data/asr/)
 
 #### MSYS2 {#a7424fa6}
 
