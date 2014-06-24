@@ -39,6 +39,7 @@ pukiwiki: "JavaScript"
 - [RedScript](http://redscript.org/)
 - [LiveScript](http://livescript.net/)
 - [ClojureScript](https://github.com/clojure/clojurescript)
+- OCaml
 - F#
 
 ## Node.js {#s744dce3}
