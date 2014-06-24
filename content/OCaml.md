@@ -32,6 +32,7 @@ pukiwiki: "OCaml"
 - [http://alain.frisch.fr/flexdll.html](http://alain.frisch.fr/flexdll.html)
 - [0005465: Increase stack size of ocamlopt.opt for windows](http://caml.inria.fr/mantis/view.php?id=5465)
 - [WinGW版OCamlのocamloptをcygwinなしで実行……](http://d.hatena.ne.jp/aldente39/20121015/1350252794)
+- [http://www.math.nagoya-u.ac.jp/~garrigue/papers/ocamlum2010.pdf](http://www.math.nagoya-u.ac.jp/~garrigue/papers/ocamlum2010.pdf)
 - [http://www.itpl.co.jp/ocaml/](http://www.itpl.co.jp/ocaml/)
 - [http://book.mynavi.jp/support/bookmook/ocaml/](http://book.mynavi.jp/support/bookmook/ocaml/)
 
