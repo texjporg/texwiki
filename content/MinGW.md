@@ -254,3 +254,4 @@ fmtutil-sys.exe   pdftosrc.exe
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
 - [MinGW (64bit) + MSYS 環境の構築 (1)](http://www.devlog.alt-area.org/?p=2802)
 - [MinGW (64bit) + MSYS 環境の構築 (2)](http://www.devlog.alt-area.org/?p=2900)
+- [#if defined(\__MINGW32_\_) &amp;&amp; !defined(\__MINGW64_VERSION_MAJOR)](https://github.com/joyent/libuv/pull/1296)
