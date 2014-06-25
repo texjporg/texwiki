@@ -55,11 +55,11 @@ namespace Ddeml
     };
 
     using DdeCallback = void* (*)(unsigned int uType, unsigned int uFmt, void* hconv, void* hsz1, void* hsz2, void* hdata, unsigned int dwData1, unsigned int dwData2);
-    const unsigned int APPCMD_CLIENTONLY = 0x10u;
-    const int CP_WINUNICODE = 1200;
-    const unsigned int CF_UNICODETEXT = 13u;
-    const unsigned int XCLASS_FLAGS = 0x4000u;
-    const unsigned int XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
+    constexpr unsigned int APPCMD_CLIENTONLY = 0x10u;
+    constexpr int CP_WINUNICODE = 1200;
+    constexpr unsigned int CF_UNICODETEXT = 13u;
+    constexpr unsigned int XCLASS_FLAGS = 0x4000u;
+    constexpr unsigned int XTYP_EXECUTE = (0x0050u | XCLASS_FLAGS);
     [DllImport(R"(user32.dll)", EntryPoint="DdeInitializeW", CharSet=CharSet::Unicode)]
     extern "C" auto DdeInitializeW(void* pidInst, DdeCallback pfnCallback, unsigned int afCmd, unsigned int ulRes) -> unsigned int;
     [DllImport(R"(user32.dll)", EntryPoint="DdeUninitialize", CharSet=CharSet::Unicode)]
@@ -92,11 +92,11 @@ namespace SumatraPDFClient
     public class ForwardSearch
     {
     private:
-        static const int timeout = 10000;
+        static constexpr int timeout = 10000;
 
         auto static Usage(cli::array<System::String^>^ args) -> void
         {
-            System::String^ s = "usage: " + Environment::GetCommandLineArgs()[0] + " pdffile texfile line";
+            System::String^ const s = "usage: " + Environment::GetCommandLineArgs()[0] + " pdffile texfile line";
             if (args->Length == 3) {
                 return;
             }
@@ -106,7 +106,7 @@ namespace SumatraPDFClient
             }
         }
 
-        auto static RunSumatraPDF(String^ pdf) -> void
+        auto static RunSumatraPDF(System::String^ pdf) -> void
         {
             if (Process::GetProcessesByName("SumatraPDF")->Length != 0) {
                 return;
@@ -115,7 +115,7 @@ namespace SumatraPDFClient
                 auto ps = gcnew Process();
                 try {
                     System::String^ sumatrapdfRegistry = "SumatraPDF.exe";
-                    System::String^ keyPath = R"(SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe)";
+                    System::String^ const keyPath = R"(SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe)";
                     RegistryKey^ rKey = nullptr;
                     try {
                         rKey = Registry::LocalMachine->OpenSubKey(keyPath);
@@ -134,8 +134,8 @@ namespace SumatraPDFClient
                     }
                 }
                 catch (System::Exception^) {
-                    System::String^ sumatrapdfWin32Default = R"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
-                    System::String^ sumatrapdfWin64Default = R"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
+                    System::String^ const sumatrapdfWin32Default = R"(C:\Program Files\SumatraPDF\SumatraPDF.exe)";
+                    System::String^ const sumatrapdfWin64Default = R"#(C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe)#";
                     if (File::Exists(sumatrapdfWin32Default)) {
                         ps->StartInfo->FileName = sumatrapdfWin32Default;
                     }
@@ -152,7 +152,7 @@ namespace SumatraPDFClient
             }
         }
 
-        auto static DdeExecute(System::String^ server, System::String^ topic, System::String^ command) -> void
+        auto static DdeExecute(System::String^ const server, System::String^ const topic, System::String^ const command) -> void
         {
             unsigned int idInstance = 0u;
             void* hszServer = nullptr;
@@ -185,19 +185,19 @@ namespace SumatraPDFClient
         }
 
     public:
-        auto static Main(cli::array<String^>^ args) -> void
+        auto static Main(cli::array<System::String^>^ args) -> void
         {
             Usage(args);
-            auto pdf = args[0];
-            auto tex = args[1];
-            auto line = args[2];
+            auto const pdf = args[0];
+            auto const tex = args[1];
+            auto const line = args[2];
             try {
                 System::Int32::Parse(line);
                 RunSumatraPDF(pdf);
-                System::Int32 active = 0;
-                System::String^ server = "SUMATRA";
-                System::String^ topic = "control";
-                System::String^ forwardSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + active.ToString() + ")]";
+                System::Int32 constexpr active = 0;
+                System::String^ const server = "SUMATRA";
+                System::String^ const topic = "control";
+                System::String^ const forwardSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + active.ToString() + ")]";
                 DdeExecute(server, topic, forwardSearch);
             }
             catch (System::ComponentModel::Win32Exception^ e) {
