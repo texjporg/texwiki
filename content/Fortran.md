@@ -16,7 +16,7 @@ pukiwiki: "Fortran"
 ## Summary {#o355751c}
 
 Fortran は科学技術計算向けのプログラミング言語です．<br>
-Fortran で記述されたライブラリは C, C++, D, Go, Rust, Pascal, Haskell, Standard ML, OCaml, F#, C#, Visual Basic, Nemerle, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などから呼び出すこともできます．<br>
+Fortran で記述されたライブラリは C, C++, D, Go, Rust, Pascal, Haskell, Standard ML, OCaml, F#, C#, Visual Basic, C++/CLI, Nemerle, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などから呼び出すこともできます．<br>
 
 - [Wikipedia.ja:FORTRAN](https://ja.wikipedia.org/wiki/FORTRAN)
 - [Fortran Wiki](http://fortranwiki.org/)
