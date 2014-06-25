@@ -62,6 +62,10 @@ C Sharp を参照．<br>
 
 Visual Basic を参照．<br>
 
+### C++/CLI 版 {#k49e25be}
+
+C++/CLI を参照．<br>
+
 ### Nemerle 版 {#s374b71c}
 
 Nemerle を参照．<br>
