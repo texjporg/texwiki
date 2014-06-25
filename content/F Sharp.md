@@ -56,6 +56,14 @@ pukiwiki: "F Sharp"
 
 - [https://aur.archlinux.org/packages/fsharp/](https://aur.archlinux.org/packages/fsharp/)
 
+### 派生版 {#p7256a00}
+
+#### F\* {#q4500a04}
+
+- [http://research.microsoft.com/en-us/projects/fstar/](http://research.microsoft.com/en-us/projects/fstar/)
+- [https://github.com/FStarLang/FStar](https://github.com/FStarLang/FStar)
+- [Wikipedia.en:F\*\_(programming_language)](https://en.wikipedia.org/wiki/F%2A_%28programming_language%29)
+
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#d94cb19a}
 
 ### F# 版 {#cfffdb72}
