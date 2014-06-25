@@ -26,6 +26,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 ### 派生版 {#h517ae27}
 
 - [PyPy](http://pypy.org/)
+- [Pyston](https://github.com/dropbox/pyston)
 - [Cython](http://cython.org/)
 - [IronPython](http://ironpython.net/)
     - [http://ironpython.codeplex.com/](http://ironpython.codeplex.com/)
