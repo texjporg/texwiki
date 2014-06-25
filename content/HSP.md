@@ -9,6 +9,8 @@ pukiwiki: "HSP"
 
 ## [HSP](http://hsp.tv/) {#ue2632c6}
 
+- [http://hsp.tv/](http://hsp.tv/)
+- [http://www.onionsoft.net/hsp/openhsp/](http://www.onionsoft.net/hsp/openhsp/)
 - [HSP3.0 プログラミングの基礎　メインメニュー](http://masudahp.web.fc2.com/hsp3/kiso/)
     - [HSP3.0-コマンドライン取得](http://masudahp.web.fc2.com/hsp3/kiso/hspk053.html)
 - [コマンドライン文字列を解析して取得](http://codetter.com/?p=819)
