@@ -22,6 +22,8 @@ Haskell は非正格な純粋関数型プログラミング言語です．<br>
 - [The Libraries Archives](http://www.haskell.org/pipermail/libraries/)
 - [HaskellJP wiki](http://wiki.haskell.jp/)
 - [Learn You a Haskell for Great Good!](http://learnyouahaskell.com/)
+- [https://github.com/yallop/haskell2014-papers](https://github.com/yallop/haskell2014-papers)
+- [http://www.reddit.com/r/haskell/](http://www.reddit.com/r/haskell/)
 - [Real World Haskell の古いところ](http://d.hatena.ne.jp/kazu-yamamoto/touch/20140206/1391666962)
 - [ゆるふわHaskell (Light &amp; Airy Haskell)](http://kzfm.github.io/laskell/)
 - [http://maoe.hatenadiary.jp/archive/category/Haskell](http://maoe.hatenadiary.jp/archive/category/Haskell)
