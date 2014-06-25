@@ -42,6 +42,7 @@ Go は汎用プログラミング言語です．<br>
 - [Go Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/go)
 - [golang で複数のエラーをハンドリングする方法](http://mattn.kaoriya.net/software/lang/go/20140416212413.htm)
 - [Go言語でエラーを書くときに気をつけること](http://d.hatena.ne.jp/taknb2nch/20140307/1394169432)
+- [http://welovy.hatenablog.com/category/Go](http://welovy.hatenablog.com/category/Go)
 
 ## インストール {#v5dc7237}
 
