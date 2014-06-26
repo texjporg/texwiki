@@ -55,7 +55,8 @@ fpc -Twin32 -Pi386 -Mobjfpc -Ciort -ofwdsumatrapdf.exe fwdsumatrapdf.pas
 program fwdsumatrapdf;
 {$MODE OBJFPC}{$H+}
 
-uses SysUtils, Windows;
+uses
+    SysUtils, Windows;
 
 var
     i: integer;
@@ -68,14 +69,10 @@ var
     pdf: UnicodeString;
     tex: UnicodeString;
     lineNumber: UnicodeString;
-    server: array [0..6] of UnicodeChar;
-    topic: array [0..6] of UnicodeChar;
     command: array [0..1023] of UnicodeChar;
-    keyPath: array [0..65] of UnicodeChar;
     sumatraPDFRegStrLength: integer;
     sumatraPDFRegistry: array [0..511] of UnicodeChar;
     sumatraPDFCommandLine: array [0..1023] of UnicodeChar;
-    reuseInstance: array [0..16] of UnicodeChar;
     subKey: HKEY;
     dwType: DWORD;
     sz: DWORD;
@@ -90,13 +87,16 @@ const
     XTYP_EXECUTE: DWORD = ($0050 or $4000);
     //XTYP_EXECUTE: DWORD = ($0050 or XCLASS_FLAGS);
     TIMEOUT: DWORD = 10000;
+    server: array [0..6] of UnicodeChar = 'SUMATRA';
+    topic: array [0..6] of UnicodeChar = 'control';
+    keyPath: array [0..65] of UnicodeChar = 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe';
+    reuseInstance: array [0..16] of UnicodeChar = '" -reuse-instance';
 
-procedure runSumatraPDF();
+procedure RunSumatraPDF();
 begin
     FillChar(sinfo, SizeOf(StartupInfo), #0);
     FillChar(pinfo, SizeOf(Process_Information), #0);
     sinfo.cb := SizeOf(StartupInfo);
-    keyPath := 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe';
     RegOpenKeyExW(HKEY_LOCAL_MACHINE, @keyPath, 0, KEY_QUERY_VALUE, @subKey);
     RegQueryValueExW(subKey, nil, nil, @dwType, nil, @sz);
     RegQueryValueExW(subKey, nil, nil, @dwType, @sumatraPDFRegistry, @sz);
@@ -106,7 +106,6 @@ begin
     for i := 0 to sumatraPDFRegStrLength-1 do begin
         sumatraPDFCommandLine[i+1] := sumatraPDFRegistry[i];
     end;
-    reuseInstance := '" -reuse-instance';
     for i := sumatraPDFRegStrLength to sumatraPDFRegStrLength+Length(reuseInstance)-1 do begin
         sumatraPDFCommandLine[i+1] := reuseInstance[i-sumatraPDFRegStrLength];
     end;
@@ -114,7 +113,7 @@ begin
     WaitForInputIdle(pinfo.hProcess, TIMEOUT);
 end;
 
-procedure ddeExecute(
+procedure DdeExecute(
     var server: array of UnicodeChar;
     var topic: array of UnicodeChar;
     var command: array of UnicodeChar);
@@ -155,12 +154,10 @@ begin
             else break;
         end;
     end;
-    server := 'SUMATRA';
-    topic := 'control';
     command := '[ForwardSearch("' + pdf + '","' + tex + '",' + lineNumber + ',0,0,0)]';
     try
-        runSumatraPDF();
-        ddeExecute(server, topic, command);
+        RunSumatraPDF();
+        DdeExecute(server, topic, command);
     except
         on Ex: Exception do begin
             Writeln(StdErr, Ex.Message);
