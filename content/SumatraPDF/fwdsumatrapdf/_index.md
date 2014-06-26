@@ -42,6 +42,10 @@ D を参照．<br>
 
 Go を参照．<br>
 
+### Pascal 版 {#k507022c}
+
+Pascal を参照．<br>
+
 ### Fortran 版 {#a3d40116}
 
 Fortran を参照．<br>
