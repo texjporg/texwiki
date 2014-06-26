@@ -149,11 +149,11 @@ sub runSumatraPDF() {
     my $HKEY_LOCAL_MACHINE = 0x80000002;
     my $KEY_QUERY_VALUE = 0x01;
     my $keyPath = 'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe';
-    my $RegOpenKeyExW = Win32::API->new('advapi32', "RegOpenKeyExW", "NPNNP", "N");
-    my $RegQueryValueExW = Win32::API->new('advapi32', "RegQueryValueExW", "NPPPPP", "N");
-    my $RegCloseKey = Win32::API->new('advapi32', "RegCloseKey", "N", "N");
-    my $CreateProcessW = Win32::API->new("kernel32", "CreateProcessW", "PPPPINPPSS", "I");
-    my $WaitForInputIdle = Win32::API->new("user32", "WaitForInputIdle", "NN", "N");
+    my $RegOpenKeyExW = Win32::API::More->new('advapi32', "RegOpenKeyExW", "NPNNP", "N");
+    my $RegQueryValueExW = Win32::API::More->new('advapi32', "RegQueryValueExW", "NPPPPP", "N");
+    my $RegCloseKey = Win32::API::More->new('advapi32', "RegCloseKey", "N", "N");
+    my $CreateProcessW = Win32::API::More->new("kernel32", "CreateProcessW", "PPPPINPPTT", "I");
+    my $WaitForInputIdle = Win32::API::More->new("user32", "WaitForInputIdle", "NN", "N");
 #*********************************
 #    LPWSTR does **NOT** work!
 #*********************************
