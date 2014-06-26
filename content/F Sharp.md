@@ -68,10 +68,9 @@ pukiwiki: "F Sharp"
 
 ### F# 版 {#cfffdb72}
 
-F# 版の fwdsumatrapdf は他の静的型付け言語で記述されたものに比べると短いことがわかると思います．<br>
-F# 版の fwdsumatrapdf.exe のビルド・実行には F# が必要です．<br>
+F# 版の fwdsumatrapdf のビルド・実行には F# が必要です．<br>
 
-- fwdsumatrapdf.exe の作成方法
+- fwdsumatrapdf の作成方法
     - F# をインストールします．
     - C:\texlive\2014\bin\win32\fwdsumatrapdf.fs または C:\texlive\2014\bin\win32\fwdsumatrapdf.fsx を作成します．
 
