@@ -53,7 +53,9 @@ fpc -Twin32 -Pi386 -Mobjfpc -Ciort -ofwdsumatrapdf.exe fwdsumatrapdf.pas
 // >fpc -Twin32 -Pi386 -Mobjfpc -Ciort -ofwdsumatrapdf.exe fwdsumatrapdf.pas
 
 program fwdsumatrapdf;
+{$IFDEF FPC}
 {$MODE OBJFPC}{$H+}
+{$ENDIF}
 
 uses
     SysUtils, Windows;
@@ -71,7 +73,7 @@ var
     lineNumber: UnicodeString;
     command: array [0..1023] of UnicodeChar;
     sumatraPDFRegStrLength: integer;
-    sumatraPDFRegistry: array [0..511] of UnicodeChar;
+    sumatraPDFRegistry: array of UnicodeChar;
     sumatraPDFCommandLine: array [0..1023] of UnicodeChar;
     subKey: HKEY;
     dwType: DWORD;
@@ -94,14 +96,18 @@ const
 
 procedure RunSumatraPDF();
 begin
-    FillChar(sinfo, SizeOf(StartupInfo), #0);
-    FillChar(pinfo, SizeOf(Process_Information), #0);
-    sinfo.cb := SizeOf(StartupInfo);
-    RegOpenKeyExW(HKEY_LOCAL_MACHINE, @keyPath, 0, KEY_QUERY_VALUE, @subKey);
-    RegQueryValueExW(subKey, nil, nil, @dwType, nil, @sz);
-    RegQueryValueExW(subKey, nil, nil, @dwType, @sumatraPDFRegistry, @sz);
-    RegCloseKey(subKey);
-    sumatraPDFRegStrLength := round((sz - 2)/2);
+    try
+        RegOpenKeyExW(HKEY_LOCAL_MACHINE, @keyPath, 0, KEY_QUERY_VALUE, @subKey);
+        if subKey = 0 then raise Exception.Create('RegOpenKeyExW error');
+        RegQueryValueExW(subKey, nil, nil, @dwType, nil, @sz);
+        sumatraPDFRegStrLength := round((sz - 2)/2);
+        SetLength(sumatraPDFRegistry, sumatraPDFRegStrLength);
+        RegQueryValueExW(subKey, nil, nil, @dwType, PByte(sumatraPDFRegistry), @sz);
+    finally
+        if subKey <> 0 then begin
+            RegCloseKey(subKey);
+        end;
+    end;
     sumatraPDFCommandLine[0] := '"';
     for i := 0 to sumatraPDFRegStrLength-1 do begin
         sumatraPDFCommandLine[i+1] := sumatraPDFRegistry[i];
@@ -109,6 +115,9 @@ begin
     for i := sumatraPDFRegStrLength to sumatraPDFRegStrLength+Length(reuseInstance)-1 do begin
         sumatraPDFCommandLine[i+1] := reuseInstance[i-sumatraPDFRegStrLength];
     end;
+    FillChar(sinfo, SizeOf(StartupInfo), #0);
+    FillChar(pinfo, SizeOf(Process_Information), #0);
+    sinfo.cb := SizeOf(StartupInfo);
     CreateProcessW(nil, @sumatraPDFCommandLine, nil, nil, False, 0, nil, nil, @sinfo, @pinfo);
     WaitForInputIdle(pinfo.hProcess, TIMEOUT);
 end;
