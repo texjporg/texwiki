@@ -107,6 +107,10 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 - [Linux/Arch Linux](</Linux/Arch Linux/#f6223c5b>)
 
+#### Linux Mint {#tbddc176}
+
+- [Linux/Linux Mint](</Linux/Linux Mint/#bdbc2c20>)
+
 #### Debian {#gf95f954}
 
 - Linux/Debian
