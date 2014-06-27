@@ -94,6 +94,10 @@ Julia を参照．<br>
 
 [Perl](/Perl/#fwdsumatrapdf) を参照．<br>
 
+### Windows PowerShell 版 {#nc9c835c}
+
+Windows PowerShell を参照．<br>
+
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
 fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可能です．
