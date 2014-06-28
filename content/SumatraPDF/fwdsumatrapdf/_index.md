@@ -26,11 +26,11 @@ forward search するときに SumatraPDF を前面に表示したい場合は f
 forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．<br>
 ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
 
-### C, C++ 版 {#qf7ea8bf}
+### C 版 {#qf7ea8bf}
 
 C を参照．<br>
 
-### C++11 版 {#p11a58d5}
+### C++ 版 {#p11a58d5}
 
 C++ を参照．<br>
 
