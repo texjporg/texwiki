@@ -91,11 +91,13 @@ import System.Environment (getArgs, getProgName)
 import System.Exit (exitWith, ExitCode(ExitSuccess, ExitFailure))
 import System.IO.Unsafe (unsafePerformIO)
 import System.Win32.Registry (regOpenKeyEx, regQueryValue, regCloseKey, hKEY_LOCAL_MACHINE, kEY_QUERY_VALUE)
-import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, UINT, LPARAM, LPBYTE, LPDWORD, LPWSTR, LPCWSTR, LPVOID, HANDLE)
+import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, UINT, LPARAM, LPBYTE, LPDWORD, LPWSTR, LPCWSTR, LPVOID, HANDLE, MbHANDLE)
 import Graphics.Win32.GDI.Types (HWND)
 import Data.Bits ((.|.))
 import Data.IORef (newIORef, readIORef, writeIORef, IORef)
+import Data.Maybe (fromJust, isJust)
 import Control.Exception (bracket, catch, throwIO, SomeException)
+import Control.Monad (return, when, void)
 import Foreign.C.String (newCWString, withCWString, withCWStringLen, CWString)
 import Foreign.C.Types (CInt(..), CUInt(..), CWchar(..))
 import Foreign.Ptr (castPtr, Ptr, FunPtr)
@@ -149,7 +151,7 @@ data PROCESS_INFORMATION = PROCESS_INFORMATION
     , piThread :: HANDLE
     , piProcessId :: DWORD
     , piThreadId :: DWORD
-    } deriving Show
+    } deriving (Show)
 
 instance Storable PROCESS_INFORMATION where
     sizeOf = const (16)
@@ -188,7 +190,7 @@ data STARTUPINFOW = STARTUPINFOW
     , siStdInput :: HANDLE
     , siStdOutput :: HANDLE
     , siStdError :: HANDLE
-    } deriving Show
+    } deriving (Show)
 
 instance Storable STARTUPINFOW where
     sizeOf = const (68)
@@ -337,80 +339,100 @@ runSumatraPDF pdf = do
                         pi <- peek p_pi
                         waitForInputIdle (piProcess pi) (fromIntegral timeout)
 
-ddeExecute :: String -> String -> String -> IO (DWORD, HANDLE, HANDLE, HANDLE, HANDLE, HANDLE)
+ddeExecute :: String -> String -> String -> IO (Maybe DWORD, MbHANDLE, MbHANDLE, MbHANDLE, MbHANDLE, MbHANDLE)
 ddeExecute server topic command = do
     bracket
         (getIdInstance)
         (\idInstance -> do
-            if idInstance /= 0 then ddeUninitialize idInstance else return False)
+            when
+                (isJust idInstance)
+                (void $ ddeUninitialize (fromJust idInstance)))
         (\idInstance -> do
             bracket
-                (getHszServer idInstance server)
+                (getHszServer (fromJust idInstance) server)
                 (\hszServer -> do
-                    if hszServer /= nullPtr then ddeFreeStringHandle idInstance hszServer else return False)
+                    when
+                        (isJust hszServer)
+                        (void $ ddeFreeStringHandle (fromJust idInstance) (fromJust hszServer)))
                 (\hszServer -> do
                     bracket
-                        (getHszTopic idInstance topic)
+                        (getHszTopic (fromJust idInstance) topic)
                         (\hszTopic -> do
-                            if hszTopic /= nullPtr then ddeFreeStringHandle idInstance hszTopic else return False)
+                            when
+                                (isJust hszTopic)
+                                (void $ ddeFreeStringHandle (fromJust idInstance) (fromJust hszTopic)))
                         (\hszTopic -> do
                             bracket
-                                (getHConvClient idInstance hszServer hszTopic)
+                                (getHConvClient (fromJust idInstance) (fromJust hszServer) (fromJust hszTopic))
                                 (\hConvClient -> do
-                                    if hConvClient /= nullPtr then ddeDisconnect hConvClient else return False)
+                                    when
+                                        (isJust hConvClient)
+                                        (void $ ddeDisconnect (fromJust hConvClient)))
                                 (\hConvClient -> do
                                     bracket
-                                        (getHDdeData idInstance command)
+                                        (getHDdeData (fromJust idInstance) command)
                                         (\hDdeData -> do
-                                            if hDdeData /= nullPtr then ddeFreeDataHandle hDdeData else return False)
+                                            when
+                                                (isJust hDdeData)
+                                                (void $ ddeFreeDataHandle (fromJust hDdeData)))
                                         (\hDdeData -> do
                                             bracket
-                                                (getHDdeTransactionData hDdeData hConvClient)
+                                                (getHDdeTransactionData (fromJust hDdeData) (fromJust hConvClient))
                                                 (\hDdeTransactionData -> do
-                                                    if hDdeTransactionData /= nullPtr then ddeFreeDataHandle hDdeTransactionData else return False)
+                                                    when
+                                                        (isJust hDdeTransactionData)
+                                                        (void $ ddeFreeDataHandle (fromJust hDdeTransactionData)))
                                                 (\hDdeTransactionData -> do
                                                     return (idInstance, hszServer, hszTopic, hConvClient, hDdeData, hDdeTransactionData)))))))
     where
-        sumatraDdeCallback uType uFmt hconv hsz1 hsza2 hdata dwData1 dwData2 = do
-            return nullPtr
-
         getIdInstance = do
+            let sumatraDdeCallback uType uFmt hconv hsz1 hsza2 hdata dwData1 dwData2 = return nullPtr
             alloca $ \p_idInstance -> do
                 ddecallback <- mkDdeCallback sumatraDdeCallback
                 e <- ddeInitializeW p_idInstance ddecallback aPPCMD_CLIENTONLY 0
                 idInstance <- peek p_idInstance
                 if idInstance == 0 || e /= 0 then do
                     throwIO $ userError "ddeInitializeW Error"
-                    return idInstance
-                else return idInstance
+                    return Nothing
+                else return $ Just idInstance
 
         getHszServer idInstance server = do
             withCWString server $ \sv -> do
                 hszServer <- ddeCreateStringHandleW idInstance sv cP_WINUNICODE
-                if hszServer == nullPtr then throwIO $ userError "ddeCreateStringHandleW Error" else return True
-                return hszServer
+                if hszServer == nullPtr then do
+                    throwIO $ userError "ddeCreateStringHandleW Error"
+                    return Nothing
+                else return $ Just hszServer
 
         getHszTopic idInstance topic = do
             withCWString topic $ \tp -> do
                 hszTopic <- ddeCreateStringHandleW idInstance tp cP_WINUNICODE
-                if hszTopic == nullPtr then throwIO $ userError "ddeCreateStringHandleW Error" else return True
-                return hszTopic
+                if hszTopic == nullPtr then do
+                    throwIO $ userError "ddeCreateStringHandleW Error"
+                    return Nothing
+                else return $ Just hszTopic
 
         getHConvClient idInstance hszServer hszTopic = do
             hConvClient <- ddeConnect idInstance hszServer hszTopic nullPtr
-            if hConvClient == nullPtr then throwIO $ userError "ddeConnect Error" else return True
-            return hConvClient
+            if hConvClient == nullPtr then do
+                throwIO $ userError "ddeConnect Error"
+                return Nothing
+            else return $ Just hConvClient
 
         getHDdeData idInstance command = do
             withCWStringLen command $ \(cmd, len) -> do
                 hDdeData <- ddeCreateDataHandle idInstance (castPtr cmd) (fromIntegral ((len + 1) * (sizeOf (undefined :: CWchar)))) 0 nullPtr cF_UNICODETEXT 0
-                if hDdeData == nullPtr then throwIO $ userError "ddeCreateDataHandle Error" else return True
-                return hDdeData
+                if hDdeData == nullPtr then do
+                    throwIO $ userError "ddeCreateDataHandle Error"
+                    return Nothing
+                else return $ Just hDdeData
 
         getHDdeTransactionData hDdeData hConvClient = do
             hDdeTransactionData <- ddeClientTransaction (castPtr hDdeData) (-1) hConvClient nullPtr 0 xTYP_EXECUTE timeout nullPtr
-            if hDdeTransactionData == nullPtr then throwIO $ userError "ddeClientTransaction Error" else return True
-            return hDdeTransactionData
+            if hDdeTransactionData == nullPtr then do
+                throwIO $ userError "ddeClientTransaction Error"
+                return Nothing
+            else return $ Just hDdeTransactionData
 
 main :: IO a
 main = do
