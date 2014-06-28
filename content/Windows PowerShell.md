@@ -140,7 +140,7 @@ Windows PowerShell 2.0 で動作確認しています．<br>
 
 ```
 #// vim: ts=4 sw=4 expandtab:
-#// >powershell -ExecutionPolicy RemoteSigned .\fwdsumatrapdf.ps1
+#// >powershell -ExecutionPolicy RemoteSigned .\fwdsumatrapdf.ps1 pdf tex line
 
 param($pdf, $tex, $line)
 
@@ -148,7 +148,7 @@ $assemblies = (
     "Microsoft.VisualBasic"
 )
 
-$csharp = @"
+$source = @"
 namespace Ddeml
 {
     using System;
@@ -205,7 +205,7 @@ namespace SumatraPDFClient
 
         private static void Usage(string[] args)
         {
-            string s = "usage: " + Environment.GetCommandLineArgs()[0] + " pdffile texfile line";
+            var s = "usage: " + Environment.GetCommandLineArgs()[0] + " pdffile texfile line";
             if (args.Length == 3) {
                 return;
             }
@@ -221,11 +221,11 @@ namespace SumatraPDFClient
                 return;
             }
             else {
-                Process ps = new Process();
+                var ps = new Process();
                 try {
-                    string sumatrapdfRegistry = "SumatraPDF.exe";
-                    string keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
-                    using (RegistryKey rKey = Registry.LocalMachine.OpenSubKey(keyPath)) {
+                    var sumatrapdfRegistry = "SumatraPDF.exe";
+                    var keyPath = @"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
+                    using (var rKey = Registry.LocalMachine.OpenSubKey(keyPath)) {
                         sumatrapdfRegistry = rKey.GetValue(string.Empty).ToString();
                     }
                     if (File.Exists(sumatrapdfRegistry)) {
@@ -236,8 +236,8 @@ namespace SumatraPDFClient
                     }
                 }
                 catch (Exception) {
-                    string sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe";
-                    string sumatrapdfWin64Default = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
+                    var sumatrapdfWin32Default = @"C:\Program Files\SumatraPDF\SumatraPDF.exe";
+                    var sumatrapdfWin64Default = @"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe";
                     if (File.Exists(sumatrapdfWin32Default)) {
                         ps.StartInfo.FileName = sumatrapdfWin32Default;
                     }
@@ -254,21 +254,16 @@ namespace SumatraPDFClient
             }
         }
 
-        private static IntPtr sumatraDdeCallback(uint uType, uint uFmt, IntPtr hconv, IntPtr hsz1, IntPtr hsz2, IntPtr hdata, uint dwData1, uint dwData2)
-        {
-            return IntPtr.Zero;
-        }
-
         private static void DdeExecute(string server, string topic, string command)
         {
-            uint idInstance = 0u;
-            IntPtr hszServer = IntPtr.Zero;
-            IntPtr hszTopic = IntPtr.Zero;
-            IntPtr hConvClient = IntPtr.Zero;
-            IntPtr hDdeData = IntPtr.Zero;
-            IntPtr hDdeTransactionData = IntPtr.Zero;
+            var idInstance = 0u;
+            var hszServer = IntPtr.Zero;
+            var hszTopic = IntPtr.Zero;
+            var hConvClient = IntPtr.Zero;
+            var hDdeData = IntPtr.Zero;
+            var hDdeTransactionData = IntPtr.Zero;
             try {
-                Ddeml.DdeInitializeW(ref idInstance, sumatraDdeCallback, Ddeml.APPCMD_CLIENTONLY, 0u);
+                Ddeml.DdeInitializeW(ref idInstance, (uType, uFmt, hconv, hsz1, hsz2, hdata, dwData1, dwData2) => IntPtr.Zero, Ddeml.APPCMD_CLIENTONLY, 0u);
                 if (idInstance == 0u) throw new Ddeml.DdemlError("DdeInitializeW error");
                 hszServer = Ddeml.DdeCreateStringHandleW(idInstance, server, Ddeml.CP_WINUNICODE);
                 if (hszServer == IntPtr.Zero) throw new Ddeml.DdemlError("DdeCreateStringHandleW error");
@@ -295,14 +290,14 @@ namespace SumatraPDFClient
         public static void Main(string[] args)
         {
             Usage(args);
-            string pdf = args[0];
-            string tex = args[1];
-            string line = args[2];
+            var pdf = args[0];
+            var tex = args[1];
+            var line = args[2];
             try {
                 int.Parse(line);
                 RunSumatraPDF(pdf);
-                int active = 0;
-                string forwardSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + active.ToString() + ")]";
+                var active = 0;
+                var forwardSearch = "[ForwardSearch(\"" + pdf + "\",\"" + tex + "\"," + line + ",0,0," + active.ToString() + ")]";
                 DdeExecute("SUMATRA", "control", forwardSearch);
             }
             catch (Win32Exception e) {
@@ -320,19 +315,10 @@ namespace SumatraPDFClient
         }
     }
 }
-
-public class Fwdsumatrapdf
-{
-    public static void DdeExecute(string pdf, string tex, string line)
-    {
-        string[] args = {pdf, tex, line};
-        SumatraPDFClient.ForwardSearch.Main(args);
-    }
-}
 "@
 
-Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $csharp -Language CSharp
-[Fwdsumatrapdf]::DdeExecute($pdf, $tex, $line)
+Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSharpVersion3
+[SumatraPDFClient.ForwardSearch]::Main(@($pdf, $tex, $line))
 ```
 
 ***
@@ -369,6 +355,7 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $csharp -Language CSh
 - [Windows batでコマンドの結果を変数に格納](http://qiita.com/long_long_float/items/f1a19816ef0d0070b68f)
 - [PowerShell の コマンドレット例外を取得する](http://tech.guitarrapc.com/entry/2013/07/22/000738)
 - [コマンドプロンプトから色々な処理系でワンライナー：2012年バージョン](http://d.hatena.ne.jp/eel3/20120319/1332090071)
+- [PowerShell 2.0の新機能（6）――他言語の利用](http://codezine.jp/article/detail/5007)
 - [PowerShellスクリプト内でC#コードを書いて使う](http://yomon.hatenablog.com/entry/2013/06/05/PowerShell%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E5%86%85%E3%81%A7C%23%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E4%BD%BF%E3%81%86)
     <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
     <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
