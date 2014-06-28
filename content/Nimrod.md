@@ -9,6 +9,8 @@ pukiwiki: "Nimrod"
 
 ## Nimrod {#f42016e9}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ## Summary {#jb4aa136}
 
 - [http://nimrod-lang.org/](http://nimrod-lang.org/)
