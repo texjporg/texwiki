@@ -66,55 +66,29 @@ C で記述されたライブラリは C++, D, Go, Rust, Pascal, Fortran, Haskel
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
 
-### C, C++ 版 {#a48a3eb3}
+### C 版 {#a48a3eb3}
 
-C, C++ 版は他の言語で作られたバイナリよりも高速に動作します．<br>
 [MinGW/MinGW-W64](/MinGW/) の GCC でビルドできます．<br>
-
-C の場合
 
 ```
 gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
-C++ の場合
-
-```
-g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
-```
-
 Clang/LLVM でもビルド可能です．<br>
-
-C の場合
 
 ```
 clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
-C++ の場合
-
-```
-clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
-```
-
 Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
-
-C の場合
 
 ```
 cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
 ```
 
-C++ の場合
-
-```
-cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
-```
-
 ***
 
 - fwdsumatrapdf.c
-- fwdsumatrapdf.cpp
 
 ***
 
@@ -123,15 +97,12 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
  *
  * MinGW/MinGW-W64
  * $ gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
- * $ g++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Clang/LLVM
  * $ clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
- * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
  * Microsoft Visual Studio Express
  * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
- * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
  */
 
 #include <windows.h>
