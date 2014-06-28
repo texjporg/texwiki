@@ -78,7 +78,7 @@ C++ は汎用プログラミング言語です．<br>
 
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#m066ad0f}
 
-### C++11 版 {#qea0161e}
+### C++ 版 {#qea0161e}
 
 [MinGW/MinGW-W64](/MinGW/) の GCC でビルドできます．<br>
 
