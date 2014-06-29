@@ -27,8 +27,7 @@ PukiWiki から使うには
 
 と書けば <!-- #mimetex(\sqrt{x^2+y^2}=z^2) -->
 
-<span style="font-size:40px">　　</span><span style="font-size:30px">2</span><span style="font-size:40px">　</span> <span style="font-size:30px">2</span><span style="font-size:40px">　</span> <span style="font-size:30px">2</span><br>
-
+    <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span><br>
 <span style="font-size:40px">√x</span> <span style="font-size:40px">+</span> <span style="font-size:40px">y</span> <span style="font-size:40px">=</span> <span style="font-size:40px">z</span><br>
 
 のようになります。
@@ -39,7 +38,7 @@ PukiWiki から使うには
 
 <!-- インライン数式にも対応したようです。&mimetex(\sqrt{x^2+y^2}=z^2); のような具合に。 -->
 
-　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:40px">　　</span><span style="font-size:30px">2</span><span style="font-size:40px">　</span> <span style="font-size:30px">2</span><span style="font-size:40px">　</span> <span style="font-size:30px">2</span><br>
+                   <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span><br>
 インライン数式にも対応したようです。<span style="font-size:40px">√x</span> <span style="font-size:40px">+</span> <span style="font-size:40px">y</span> <span style="font-size:40px">=</span> <span style="font-size:40px">z</span> のような具合に。
 
 ## Web上で数式を表示するための各種方法 {#v9c19ee5}
