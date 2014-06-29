@@ -84,6 +84,8 @@ PSTricks 2005 及び PSTricks 2006 は Herbert Voss が管理しています。
 
 PSTricks は [CTAN:graphics/pstricks/](https://mirror.ctan.org/graphics/pstricks/) ディレクトリにあります。
 
+TeX Live, W32TeX, MikTeX ではインストール済です。
+
 以下では、 $TEXMFLOCAL は /usr/share/texmf-local や $HOME/texmf
 更には /usr/local/share/texmf 等に適宜読み替えて下さい。
 パッケージのファイルには通常 \*.tex (TeX マクロ本体)と\*.sty (LaTeX 用ラッパ)
@@ -661,9 +663,6 @@ x 座標が B と同じ、 y 座標が O と同じ点として、定義してい
 #### 逆ポーランド式記法 {#lb61b314}
 
 適当な計算式 <!-- #mimetex((x^{2}-x)2^{x(x+1)}) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21%28x%5E%7B2%7D-x%292%5E%7Bx%28x%2B1%29%7D.gif" alt="">
-
 を例にします。この式は加法、減法、乗法、冪と言った、二項演算を
 繰り返す事で、計算できますが、その手順を樹形図で表す事ができます。
 
@@ -693,25 +692,11 @@ $
 そこで、二変数の関数
 
 <!-- #mimetex(f_{\mathrm{add}}[x,y]=x+y) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21f_%7B%5Cmathrm%7Badd%7D%7D%5Bx%2Cy%5D%3Dx%2By.gif" alt="">
-
 <!-- #mimetex(f_{\mathrm{exp}}[x,y]=x^{y}) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21f_%7B%5Cmathrm%7Be%7B%7Dx%7B%7Dp%7D%7D%5Bx%2Cy%5D%3Dx%5E%7By%7D.gif" alt="">
-
 <!-- #mimetex(f_{\mathrm{mul}}[x,y]=xy) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21f_%7B%5Cmathrm%7Bmul%7D%7D%5Bx%2Cy%5D%3Dxy.gif" alt="">
-
 <!-- #mimetex(f_{\mathrm{sub}}[x,y]=x-y) -->
 
-<img src="http://www.texify.com/img/%5CLARGE%5C%21f_%7B%5Cmathrm%7Bsub%7D%7D%5Bx%2Cy%5D%3Dx-y.gif" alt="">
-
 を定義してやると、この計算式は <!-- #mimetex(f_{\mathrm{mul}}[f_{\mathrm{sub}}[f_{\mathrm{exp}}[x,2],x],f_{\mathrm{exp}}[2,f_{\mathrm{mul}}[x,f_{\mathrm{add}}[x,1]]]]) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21f_%7B%5Cmathrm%7Bmul%7D%7D%5Bf_%7B%5Cmathrm%7Bsub%7D%7D%5Bf_%7B%5Cmathrm%7Be%7B%7Dx%7B%7Dp%7D%7D%5Bx%2C2%5D%2Cx%5D%2Cf_%7B%5Cmathrm%7Be%7B%7Dx%7B%7Dp%7D%7D%5B2%2Cf_%7B%5Cmathrm%7Bmul%7D%7D%5Bx%2Cf_%7B%5Cmathrm%7Badd%7D%7D%5Bx%2C1%5D%5D%5D%5D.gif" alt="">
-
 と、計算の優先順位を示す ( ) を使わずに、表されます。ここで、更に、関数を
 引数を並べた右側に置く記法を使うと、
 
@@ -758,9 +743,6 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 もちろん、 \RPN は \psplot の最後の引数にそのまま使えます。
 三角関数を扱う時には、 PostScript では角度を度数法で測る事に
 注意しなければなりません。例えば、 <!-- #mimetex(z=\frac{2\cos\left(x^{2}-y^{2}\right)}{x^{2}+y^{2}+1}) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21z%3D%5Cfrac%7B2%5Ccos%5Cleft%28x%5E%7B2%7D-y%5E%7B2%7D%5Cright%29%7D%7Bx%5E%7B2%7D%2By%5E%7B2%7D%2B1%7D.gif" alt="">
-
 をプロットするには
 
 ```
@@ -920,42 +902,19 @@ x 成分と y 成分は | で区切ります。
 ```
 
 これは、次数の低い Chebyshev 多項式の零点を図示する物です。
-まず、 Chebyshev 多項式を漸化式 <!-- #mimetex(T_{0}(x)=1) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21T_%7B0%7D%28x%29%3D1.gif" alt="">
-
-<!-- #mimetex(T_{1}(x)=x) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21T_%7B1%7D%28x%29%3Dx.gif" alt="">
-
-<!-- #mimetex(T_{n+2}(x)=2xT_{n+1}(x)-T_{n}(x)) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21T_%7Bn%2B2%7D%28x%29%3D2xT_%7Bn%2B1%7D%28x%29-T_%7Bn%7D%28x%29.gif" alt="">
-
+まず、 Chebyshev 多項式を漸化式 <!-- #mimetex(T_{0}(x)=1) --> <!-- #mimetex(T_{1}(x)=x) --> <!-- #mimetex(T_{n+2}(x)=2xT_{n+1}(x)-T_{n}(x)) -->
 で定義します。 <!-- &mimetex(T_{n}(x)); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21T_%7Bn%7D%28x%29.gif)
 をプロットし、 <!-- &mimetex(k=1,\ldots,n); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21k%3D1%2C%5Cldots%2Cn.gif)
 に対し、このグラフと x 軸の交点のうち、 <!-- &mimetex(x=\frac{2(k-1)}{n}-1); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21x%3D%5Cfrac%7B2%28k-1%29%7D%7Bn%7D-1.gif)
 の近傍にあるものを求め、 <!-- &mimetex(C_{k}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21C_%7Bk%7D.gif)
 と名付けます。 <!-- &mimetex(n); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21n.gif)
 が小さければ、これで、すべての零点が、洩れも重複もなく、求まります。 <!-- &mimetex(n); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21n.gif)
 が大きい時は、この場合、正確な値 <!-- &mimetex(-\cos\frac{(2k-1)\pi}{n}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21-%5Ccos%5Cfrac%7B%282k-1%29%5Cpi%7D%7Bn%7D.gif)
 が分かっている訳ですから、それを第一近似として与えてやれば良いでしょう。
 さて、 <!-- &mimetex(C_{k}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21C_%7Bk%7D.gif)
 を y 軸方向に 1 平行移動した点を <!-- &mimetex(C^{\prime}_{k}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21C%5E%7B%5Cprime%7D_%7Bk%7D.gif)
 と名付けます。原点を中心として半径 1 の円を描き、その円と直線 <!-- &mimetex(C_{k}C^{\prime}_{k}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21C_%7Bk%7DC%5E%7B%5Cprime%7D_%7Bk%7D.gif)
-の交点を <!-- &mimetex(D_{k});, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21D_%7Bk%7D.gif), <!-- &mimetex(E_{k}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21E_%7Bk%7D.gif)
+の交点を <!-- &mimetex(D_{k});, --> <!-- &mimetex(E_{k}); -->
 と名付けます。
 
 #### 例(2) {#ye01953c}
@@ -971,28 +930,11 @@ Newton-Raphson 法により、方程式の実数解の近似値を計算して�
 ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。
 
 三体問題に於ける、 Lagrange の正三角形解をプロットしてみます。
-質量 <!-- &mimetex(m_1);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21m_1.gif), <!-- &mimetex(m_2);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21m_2.gif), <!-- &mimetex(m_3); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21m_3.gif)
-の質点 <!-- &mimetex(P_1);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_1.gif), <!-- &mimetex(P_2);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_2.gif), <!-- &mimetex(P_3); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_3.gif)
-の重心を原点にとると、 <!-- #mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21%7CP_1-P_2%7C%3D%7CP_2-P_3%7C%3D%7CP_3-P_1%7C.gif" alt="">
-
-<!-- #mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0}) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21m_1P_1%2Bm_2P_2%2Bm_3P_3%3D%5Cvec%7B0%7D.gif" alt="">
-
+質量 <!-- &mimetex(m_1);, --> <!-- &mimetex(m_2);, --> <!-- &mimetex(m_3); -->
+の質点 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
+の重心を原点にとると、 <!-- #mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|) --> <!-- #mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0}) -->
 なので、簡単のために <!-- &mimetex(m_1+m_2+m_3=1);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21m_1%2Bm_2%2Bm_3%3D1.gif),
-更に、質点 <!-- &mimetex(P_1);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_1.gif), <!-- &mimetex(P_2);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_2.gif), <!-- &mimetex(P_3); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_3.gif)
+更に、質点 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
 は反時計廻りに
 配置されていると仮定し、まず、これを pst-eucl で作図してみます。
 
@@ -1032,32 +974,14 @@ Newton-Raphson 法により、方程式の実数解の近似値を計算して�
 ここで、赤で描かれた矢印は、質点にかかる『力』ではなく、『加速度』に
 比例した大きさになっています。
 この図の設定と同じ初期値を用いて、いよいよ、軌道をプロットしてみます。
-まず、記号 <!-- &mimetex(P_1);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_1.gif), <!-- &mimetex(P_2);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_2.gif), <!-- &mimetex(P_3); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_3.gif)
+まず、記号 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
 で各々の質点の
-位置ベクトルも表す事にすると、 <!-- #mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&-\sqrt{3}m_3\\\sqrt{3}m_3&(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21P_2%3D%5Cfrac%7B1%7D%7B2%28%7Bm_2%7D%5E%7B2%7D%2Bm_2m_3%2B%7Bm_2%7D%5E%7B2%7D%29%7D%5Cleft%28%5Cbegin%7Bmatrix%7D%28m_3-m_1%29%28m_3-m_2%29-m_1m_2%26-%5Csqrt%7B3%7Dm_3%5C%5C%5Csqrt%7B3%7Dm_3%26%28m_3-m_1%29%28m_3-m_2%29-m_1m_2%5Cend%7Bmatrix%7D%5Cright%29P_1.gif" alt="">
-
-<!-- #mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&\sqrt{3}m_2\\-\sqrt{3}m_2&(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21P_3%3D%5Cfrac%7B1%7D%7B2%28%7Bm_2%7D%5E%7B2%7D%2Bm_2m_3%2B%7Bm_2%7D%5E%7B2%7D%29%7D%5Cleft%28%5Cbegin%7Bmatrix%7D%28m_2-m_3%29%28m_2-m_1%29-m_3m_1%26%5Csqrt%7B3%7Dm_2%5C%5C-%5Csqrt%7B3%7Dm_2%26%28m_2-m_3%29%28m_2-m_1%29-m_3m_1%5Cend%7Bmatrix%7D%5Cright%29P_1.gif" alt="">
-
+位置ベクトルも表す事にすると、 <!-- #mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&-\sqrt{3}m_3\\\sqrt{3}m_3&(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1) --> <!-- #mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&\sqrt{3}m_2\\-\sqrt{3}m_2&(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1) -->
 となり、質点 <!-- &mimetex(P_1); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21P_1.gif)
 の運動方程式は、整理すると、 <!-- #mimetex(\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}P_1=-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{|P_1|^{2}}P_1) -->
-
-<img src="http://www.texify.com/img/%5CLARGE%5C%21%5Cfrac%7B%5Cmathrm%7Bd%7D%5E%7B2%7D%7D%7B%5Cmathrm%7Bd%7Dt%5E%7B2%7D%7DP_1%3D-%5Cfrac%7B%28%7Bm_2%7D%5E%7B2%7D%2Bm_2m_3%2B%7Bm_2%7D%5E%7B2%7D%29%5E%7B3/2%7D%7D%7B%7CP_1%7C%5E%7B2%7D%7DP_1.gif" alt="">
-
 になります。高校生にも解ける(？)単純な方程式ですから、数値積分などしなくても、
 プロットはできますが、ここでは、あえて、 PostScript に数値積分を計算させてみます。
-そこで、従属変数のスタックには、順に <!-- &mimetex(x);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21x.gif), <!-- &mimetex(y);, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21y.gif), <!-- &mimetex(\frac{\mathrm{d}x}{\mathrm{d}t});, -->
-![](http://www.texify.com/img/%5CLARGE%5C%21%5Cfrac%7B%5Cmathrm%7Bd%7Dx%7D%7B%5Cmathrm%7Bd%7Dt%7D.gif), <!-- &mimetex(\frac{\mathrm{d}y}{\mathrm{d}t}); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21%5Cfrac%7B%5Cmathrm%7Bd%7Dy%7D%7B%5Cmathrm%7Bd%7Dt%7D.gif),
+そこで、従属変数のスタックには、順に <!-- &mimetex(x);, --> <!-- &mimetex(y);, --> <!-- &mimetex(\frac{\mathrm{d}x}{\mathrm{d}t});, --> <!-- &mimetex(\frac{\mathrm{d}y}{\mathrm{d}t}); -->
 を積む事にします。
 従属変数のスタックは PostScript 言語の記法では y (array) として、
 algebraic な記法では y\[index\] として、アクセスするので、対応表を作ると、
@@ -1069,36 +993,9 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 </table>
 
 <!-- |y[0]|&mimetex(x);|&mimetex(x^\prime);| -->
-
-<table>
-<tbody>
-<tr><td>y[0]</td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21x.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21x%5E%5Cprime.gif" alt=""></td></tr>
-</tbody>
-</table>
-
 <!-- |y[1]|&mimetex(y);|&mimetex(y^\prime);| -->
-
-<table>
-<tbody>
-<tr><td>y[1]</td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21y.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21y%5E%5Cprime.gif" alt=""></td></tr>
-</tbody>
-</table>
-
 <!-- |y[2]|&mimetex(x^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x);| -->
-
-<table>
-<tbody>
-<tr><td>y[2]</td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21x%5E%5Cprime.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21-%5Cfrac%7B%28%7Bm_2%7D%5E%7B2%7D%2Bm_2m_3%2B%7Bm_2%7D%5E%7B2%7D%29%5E%7B3/2%7D%7D%7B%28x%5E%7B2%7D%2By%5E%7B2%7D%29%5E%7B3/2%7D%7Dx.gif" alt=""></td></tr>
-</tbody>
-</table>
-
 <!-- |y[3]|&mimetex(y^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y);| -->
-
-<table>
-<tbody>
-<tr><td>y[3]</td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21y%5E%5Cprime.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21-%5Cfrac%7B%28%7Bm_2%7D%5E%7B2%7D%2Bm_2m_3%2B%7Bm_2%7D%5E%7B2%7D%29%5E%7B3/2%7D%7D%7B%28x%5E%7B2%7D%2By%5E%7B2%7D%29%5E%7B3/2%7D%7Dy.gif" alt=""></td></tr>
-</tbody>
-</table>
 
 したがって、基本的にはマクロ
 
@@ -1109,7 +1006,6 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 ```
 
 で、区間 <!-- &mimetex((t,T)); -->
-![](http://www.texify.com/img/%5CLARGE%5C%21%28t%2CT%29.gif)
 の数値積分がプロットされる事になります。
 algebraic は algebraic=true と同じ意味です。このマクロの最後の引数は、微係数のスタックです。
 このままでは、独立変数が横軸 (abscissa) 、従属変数の最初のスタックが縦軸 (ordinate)
