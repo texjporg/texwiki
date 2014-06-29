@@ -220,6 +220,10 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+- [Kile](/Kile/)
+- LaTeXila
+- [gedit](/gedit/)
+- [Geany](/Geany/)
 
 ## PDF ファイルビューア {#uf722ec6}
 
