@@ -37,6 +37,7 @@ C で記述されたライブラリは C++, D, Go, Rust, Pascal, Fortran, Haskel
 - [C言語機能の比較](http://www.6809.net/tenk/?C%E8%A8%80%E8%AA%9E%E6%A9%9F%E8%83%BD%E3%81%AE%E6%AF%94%E8%BC%83)
 - [C言語で可変個引数を型拘束したい](http://mattn.kaoriya.net/software/lang/c/20140312213057.htm)
 - [連載：C言語の最新事情を知る](http://www.buildinsider.net/small/clang)
+- [CPP(コンパイルしない方の関数型なC言語)プログラミング入門。とりあえずFizzBuzzまで](http://qiita.com/alucky0707/items/3599cdcf973382df978b)
 
 ### 処理系 {#d2633a16}
 
