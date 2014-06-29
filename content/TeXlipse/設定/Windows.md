@@ -492,6 +492,45 @@ TeXworks を使用する場合は，
 
 の優先度を一番上にします．
 
+#### [TeXstudio](/TeXstudio/) {#k839b89f}
+
+***
+
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　新規(W)...　　　　　\]</span>　</span>　</span><br>
+
+***
+
+<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>新規ビューアー構成の追加</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　 ビューアーを構成します。<br>
+　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXstudio</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files (x86)\TeXstudio\texstudio.exe</ins> (64-bit Windows の場合) <ins>C:\Program Files\TeXstudio\texstudio.exe</ins> (32-bit Windows の場合)<br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>--pdf-viewer-only "&#x25;file"</ins><br>
+　　　　ビューで送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+
+<br>
+
+　　　　再ビルド前に送信する DDE メッセージ<br>
+　　　　コマンド： <br>
+　　　　サーバー： 　　　　　　　　　　　　　　　　　　　　　　　　　　 トピック： <br>
+　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
+　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
+
+<br>
+
+　　　File ok.
+
+***
+
+TeXstudio を使用する場合は，
+
+> <span style="color:White;background-color:#1188FF;">　TeXstudio (C:\Program Files (x86)\TeXstudio\texstudio.exe (64-bit Windows の場合) C:\Program Files\TeXstudio\texstudio.exe (32-bit Windows の場合))　</span><br>
+
+の優先度を一番上にします．
+
 #### Mozilla Firefox (pdf.js) {#r5d56a20}
 
 ***
@@ -625,6 +664,7 @@ Adobe Reader を使用する場合は，
 　ビューアー構成 (優先度降順)：<br>
 　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))<br>
 　TeXworks (C:\texlive\2014\tlpkg\texworks\texworks.exe (TeX Live の場合) C:\w32tex\share\texworks\TeXworks.exe (W32TeX の場合))<br>
+　TeXstudio (C:\Program Files (x86)\TeXstudio\texstudio.exe (64-bit Windows の場合) C:\Program Files\TeXstudio\texstudio.exe (32-bit Windows の場合))<br>
 　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
 　acroread (C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe (32-bit Windows の場合))<br>
