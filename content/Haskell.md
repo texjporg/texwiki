@@ -71,39 +71,34 @@ The Glorious Glasgow Haskell Compilation System, version 7.8.2 で動作確認�
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
-ghc fwdsumatrapdf.hs
+hsc2hs fwdsumatrapdf_ffi.hsc
+ghc -cpp fwdsumatrapdf.hs fwdsumatrapdf_ffi.hs
 ```
 
 ***
 
-- fwdsumatrapdf.hs
+- fwdsumatrapdf_ffi.hsc
 
 ***
 
 ```
--- vim: ts=4 sw=4 expandtab:
--- >ghc fwdsumatrapdf.hs
+{-# LANGUAGE ForeignFunctionInterface #-}
 
-module Main where
+module FwdSumatraPDF where
 
-import System.Directory (doesFileExist)
-import System.Environment (getArgs, getProgName)
-import System.Exit (exitWith, ExitCode(ExitSuccess, ExitFailure))
-import System.IO.Unsafe (unsafePerformIO)
-import System.Win32.Registry (regOpenKeyEx, regQueryValue, regCloseKey, hKEY_LOCAL_MACHINE, kEY_QUERY_VALUE)
-import System.Win32.Types (nullPtr, nullFinalHANDLE, BOOL, BYTE, WORD, DWORD, UINT, LPARAM, LPBYTE, LPDWORD, LPWSTR, LPCWSTR, LPVOID, HANDLE, MbHANDLE)
 import Graphics.Win32.GDI.Types (HWND)
 import Data.Bits ((.|.))
-import Data.IORef (newIORef, readIORef, writeIORef, IORef)
-import Data.Maybe (fromJust, isJust)
-import Control.Exception (bracket, catch, throwIO, SomeException)
-import Control.Monad (return, when, void)
-import Foreign.C.String (newCWString, withCWString, withCWStringLen, CWString)
+import System.Win32.Types (BOOL, BYTE, WORD, DWORD, UINT, LPARAM, LPBYTE, LPDWORD, LPWSTR, LPCWSTR, LPVOID, HANDLE)
+import Foreign.C.String (CWString)
 import Foreign.C.Types (CInt(..), CUInt(..), CWchar(..))
-import Foreign.Ptr (castPtr, Ptr, FunPtr)
-import Foreign.Marshal.Alloc (alloca, free)
-import Foreign.Marshal.Array (mallocArray)
+import Foreign.Ptr (Ptr, FunPtr)
 import Foreign.Storable (alignment, sizeOf, peek, peekByteOff, poke, pokeByteOff, Storable)
+
+#include <windows.h>
+
+##ifdef x86_64_BUILD_ARCH
+##define stdcall ccall
+##endif
 
 foreign import ccall unsafe "wchar.h wcscmp"
     c_wcscmp :: CWString -> CWString -> IO CInt
@@ -142,36 +137,26 @@ foreign import stdcall unsafe "ddeml.h DdeConnect"
 foreign import stdcall unsafe "ddeml.h DdeDisconnect"
     ddeDisconnect :: HANDLE -> IO BOOL
 
+aPPCMD_CLIENTONLY :: DWORD
+aPPCMD_CLIENTONLY = 0x10
+
+cP_WINUNICODE :: CInt
+cP_WINUNICODE = 1200
+
+cF_UNICODETEXT :: UINT
+cF_UNICODETEXT = 13
+
+xCLASS_FLAGS :: UINT
+xCLASS_FLAGS = 0x4000
+
+xTYP_EXECUTE :: UINT
+xTYP_EXECUTE = 0x0050 .|. xCLASS_FLAGS
+
+timeout :: DWORD
+timeout = 10000
+
 type EnumWindowsProc = HWND -> LPARAM -> IO BOOL
 type DdeCallback = UINT -> UINT -> HANDLE -> HANDLE -> HANDLE -> HANDLE -> DWORD -> DWORD -> IO HANDLE
-
-type LPPROCESS_INFORMATION = Ptr PROCESS_INFORMATION
-data PROCESS_INFORMATION = PROCESS_INFORMATION
-    { piProcess :: HANDLE
-    , piThread :: HANDLE
-    , piProcessId :: DWORD
-    , piThreadId :: DWORD
-    } deriving (Show)
-
-instance Storable PROCESS_INFORMATION where
-    sizeOf = const (16)
-    alignment = sizeOf
-    poke buf pi = do
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 0))  buf (piProcess   pi)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 4))  buf (piThread    pi)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 8))  buf (piProcessId pi)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 12)) buf (piThreadId  pi)
-
-    peek buf = do
-        vhProcess    <- ((\hsc_ptr -> peekByteOff hsc_ptr 0))  buf
-        vhThread     <- ((\hsc_ptr -> peekByteOff hsc_ptr 4))  buf
-        vdwProcessId <- ((\hsc_ptr -> peekByteOff hsc_ptr 8))  buf
-        vdwThreadId  <- ((\hsc_ptr -> peekByteOff hsc_ptr 12)) buf
-        return $ PROCESS_INFORMATION {
-            piProcess   = vhProcess,
-            piThread    = vhThread,
-            piProcessId = vdwProcessId,
-            piThreadId  = vdwThreadId}
 
 type LPSTARTUPINFOW = Ptr STARTUPINFOW
 data STARTUPINFOW = STARTUPINFOW
@@ -193,41 +178,41 @@ data STARTUPINFOW = STARTUPINFOW
     } deriving (Show)
 
 instance Storable STARTUPINFOW where
-    sizeOf = const (68)
+    sizeOf = const #size STARTUPINFOW
     alignment = sizeOf
     poke buf si = do
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 0))  buf (siCb si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 8))  buf (siDesktop si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 12)) buf (siTitle si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 16)) buf (siX si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 20)) buf (siY si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 24)) buf (siXSize si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 28)) buf (siYSize si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 32)) buf (siXCountChars si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 36)) buf (siYCountChars si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 40)) buf (siFillAttribute si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 44)) buf (siFlags si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 48)) buf (siShowWindow si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 56)) buf (siStdInput si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 60)) buf (siStdOutput si)
-        ((\hsc_ptr -> pokeByteOff hsc_ptr 64)) buf (siStdError si)
+        (#poke STARTUPINFOW, cb)              buf (siCb si)
+        (#poke STARTUPINFOW, lpDesktop)       buf (siDesktop si)
+        (#poke STARTUPINFOW, lpTitle)         buf (siTitle si)
+        (#poke STARTUPINFOW, dwX)             buf (siX si)
+        (#poke STARTUPINFOW, dwY)             buf (siY si)
+        (#poke STARTUPINFOW, dwXSize)         buf (siXSize si)
+        (#poke STARTUPINFOW, dwYSize)         buf (siYSize si)
+        (#poke STARTUPINFOW, dwXCountChars)   buf (siXCountChars si)
+        (#poke STARTUPINFOW, dwYCountChars)   buf (siYCountChars si)
+        (#poke STARTUPINFOW, dwFillAttribute) buf (siFillAttribute si)
+        (#poke STARTUPINFOW, dwFlags)         buf (siFlags si)
+        (#poke STARTUPINFOW, wShowWindow)     buf (siShowWindow si)
+        (#poke STARTUPINFOW, hStdInput)       buf (siStdInput si)
+        (#poke STARTUPINFOW, hStdOutput)      buf (siStdOutput si)
+        (#poke STARTUPINFOW, hStdError)       buf (siStdError si)
 
     peek buf = do
-        vcb              <- ((\hsc_ptr -> peekByteOff hsc_ptr 0))  buf
-        vlpDesktop       <- ((\hsc_ptr -> peekByteOff hsc_ptr 8))  buf
-        vlpTitle         <- ((\hsc_ptr -> peekByteOff hsc_ptr 12)) buf
-        vdwX             <- ((\hsc_ptr -> peekByteOff hsc_ptr 16)) buf
-        vdwY             <- ((\hsc_ptr -> peekByteOff hsc_ptr 20)) buf
-        vdwXSize         <- ((\hsc_ptr -> peekByteOff hsc_ptr 24)) buf
-        vdwYSize         <- ((\hsc_ptr -> peekByteOff hsc_ptr 28)) buf
-        vdwXCountChars   <- ((\hsc_ptr -> peekByteOff hsc_ptr 32)) buf
-        vdwYCountChars   <- ((\hsc_ptr -> peekByteOff hsc_ptr 36)) buf
-        vdwFillAttribute <- ((\hsc_ptr -> peekByteOff hsc_ptr 40)) buf
-        vdwFlags         <- ((\hsc_ptr -> peekByteOff hsc_ptr 44)) buf
-        vwShowWindow     <- ((\hsc_ptr -> peekByteOff hsc_ptr 48)) buf
-        vhStdInput       <- ((\hsc_ptr -> peekByteOff hsc_ptr 56)) buf
-        vhStdOutput      <- ((\hsc_ptr -> peekByteOff hsc_ptr 60)) buf
-        vhStdError       <- ((\hsc_ptr -> peekByteOff hsc_ptr 64)) buf
+        vcb              <- (#peek STARTUPINFOW, cb)              buf
+        vlpDesktop       <- (#peek STARTUPINFOW, lpDesktop)       buf
+        vlpTitle         <- (#peek STARTUPINFOW, lpTitle)         buf
+        vdwX             <- (#peek STARTUPINFOW, dwX)             buf
+        vdwY             <- (#peek STARTUPINFOW, dwY)             buf
+        vdwXSize         <- (#peek STARTUPINFOW, dwXSize)         buf
+        vdwYSize         <- (#peek STARTUPINFOW, dwYSize)         buf
+        vdwXCountChars   <- (#peek STARTUPINFOW, dwXCountChars)   buf
+        vdwYCountChars   <- (#peek STARTUPINFOW, dwYCountChars)   buf
+        vdwFillAttribute <- (#peek STARTUPINFOW, dwFillAttribute) buf
+        vdwFlags         <- (#peek STARTUPINFOW, dwFlags)         buf
+        vwShowWindow     <- (#peek STARTUPINFOW, wShowWindow)     buf
+        vhStdInput       <- (#peek STARTUPINFOW, hStdInput)       buf
+        vhStdOutput      <- (#peek STARTUPINFOW, hStdOutput)      buf
+        vhStdError       <- (#peek STARTUPINFOW, hStdError)       buf
         return $ STARTUPINFOW {
             siCb            =  vcb,
             siDesktop       =  vlpDesktop,
@@ -245,23 +230,66 @@ instance Storable STARTUPINFOW where
             siStdOutput     =  vhStdOutput,
             siStdError      =  vhStdError}
 
-aPPCMD_CLIENTONLY :: DWORD
-aPPCMD_CLIENTONLY = 0x10
+type LPPROCESS_INFORMATION = Ptr PROCESS_INFORMATION
+data PROCESS_INFORMATION = PROCESS_INFORMATION
+    { piProcess :: HANDLE
+    , piThread :: HANDLE
+    , piProcessId :: DWORD
+    , piThreadId :: DWORD
+    } deriving (Show)
 
-cP_WINUNICODE :: CInt
-cP_WINUNICODE = 1200
+instance Storable PROCESS_INFORMATION where
+    sizeOf = const #size PROCESS_INFORMATION
+    alignment = sizeOf
+    poke buf pi = do
+        (#poke PROCESS_INFORMATION, hProcess)    buf (piProcess   pi)
+        (#poke PROCESS_INFORMATION, hThread)     buf (piThread    pi)
+        (#poke PROCESS_INFORMATION, dwProcessId) buf (piProcessId pi)
+        (#poke PROCESS_INFORMATION, dwThreadId)  buf (piThreadId  pi)
 
-cF_UNICODETEXT :: UINT
-cF_UNICODETEXT = 13
+    peek buf = do
+        vhProcess    <- (#peek PROCESS_INFORMATION, hProcess)    buf
+        vhThread     <- (#peek PROCESS_INFORMATION, hThread)     buf
+        vdwProcessId <- (#peek PROCESS_INFORMATION, dwProcessId) buf
+        vdwThreadId  <- (#peek PROCESS_INFORMATION, dwThreadId)  buf
+        return $ PROCESS_INFORMATION {
+            piProcess   = vhProcess,
+            piThread    = vhThread,
+            piProcessId = vdwProcessId,
+            piThreadId  = vdwThreadId}
+```
 
-xCLASS_FLAGS :: UINT
-xCLASS_FLAGS = 0x4000
+***
 
-xTYP_EXECUTE :: UINT
-xTYP_EXECUTE = 0x0050 .|. xCLASS_FLAGS
+- fwdsumatrapdf.hs
 
-timeout :: DWORD
-timeout = 10000
+***
+
+```
+-- vim: ts=4 sw=4 expandtab:
+-- >hsc2hs fwdsumatrapdf_ffi.hsc
+-- >ghc -cpp fwdsumatrapdf.hs fwdsumatrapdf_ffi.hs
+
+module Main where
+
+import System.Directory (doesFileExist)
+import System.Environment (getArgs, getProgName)
+import System.Exit (exitWith, ExitCode(ExitSuccess, ExitFailure))
+import System.IO.Unsafe (unsafePerformIO)
+import System.Win32.Registry (regOpenKeyEx, regQueryValue, regCloseKey, hKEY_LOCAL_MACHINE, kEY_QUERY_VALUE)
+import System.Win32.Types (nullPtr, nullFinalHANDLE, DWORD, MbHANDLE)
+import Graphics.Win32.GDI.Types (HWND)
+import Data.IORef (newIORef, readIORef, writeIORef, IORef)
+import Data.Maybe (fromJust, isJust)
+import Control.Exception (bracket, catch, throwIO, SomeException)
+import Control.Monad (return, when, void)
+import Foreign.C.String (newCWString, withCWString, withCWStringLen, CWString)
+import Foreign.C.Types (CWchar(..))
+import Foreign.Ptr (castPtr)
+import Foreign.Marshal.Alloc (alloca, free)
+import Foreign.Marshal.Array (mallocArray)
+import Foreign.Storable (sizeOf, peek)
+import FwdSumatraPDF
 
 {-# NOINLINE existSumatraHWND #-}
 existSumatraHWND :: IORef Bool
