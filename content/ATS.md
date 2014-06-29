@@ -7,6 +7,7 @@ pukiwiki: "ATS"
 
 # ATS
 
-## ATS {#l46a4d9b}
+## ATS {#z29a8c17}
 
-- [The ATS Programming Language](http://www.ats-lang.org/)
+- [http://www.ats-lang.org/](http://www.ats-lang.org/)
+- [http://jats-ug.metasepi.org/](http://jats-ug.metasepi.org/)
