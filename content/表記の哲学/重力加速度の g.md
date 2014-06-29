@@ -80,14 +80,14 @@ pukiwiki: "表記の哲学/重力加速度の g"
 <tr><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png" alt=""></a></td></tr>
 </tbody></table>
 
-- (参考) PukiWiki + [mimeTeX](/mimeTeX/) では以下のように表示される．
+- (参考) PukiWiki + [mimeTeX](/mimeTeX/) では設定によっては以下のように表示されることがあるかもしれません．
     <!-- , g , &#39;&#39;&#39;g&#39;&#39;&#39; , &amp;mimetex(\mathrm{g}); , &amp;mimetex(g); -->
     <!-- , g , '''g''' , &mimetex(\mathrm{g}); , &mimetex(g);  -->
 
 <table>
 <tbody>
 <tr><td>g</td><td>&#39;&#39;&#39;g&#39;&#39;&#39;</td><td>&amp;mimetex(\mathrm{g});</td><td>&amp;mimetex(g);</td></tr>
-<tr><td>g</td><td><em>g</em></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21%5Cmathrm%7Bg%7D.gif" alt=""></td><td><img src="http://www.texify.com/img/%5CLARGE%5C%21g.gif" alt=""></td></tr>
+<tr><td>g</td><td><em>g</em></td><td>𝑔</td><td>𝑔</td></tr>
 </tbody>
 </table>
 
