@@ -96,7 +96,6 @@ ptex2pdf -u -l hoge.tex
 
 - [chocolatey](http://chocolatey.org/)
     - [packages](http://chocolatey.org/packages)
-        - [texlive](http://chocolatey.org/packages/texlive)
     - [wiki](https://github.com/chocolatey/chocolatey/wiki)
 
 ## ConEmu {#y7b6d9fc}
