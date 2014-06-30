@@ -18,6 +18,7 @@ pukiwiki: "C++"
 C++ は汎用プログラミング言語です．<br>
 
 - [http://www.stroustrup.com/](http://www.stroustrup.com/)
+- [https://github.com/cplusplus/draft](https://github.com/cplusplus/draft)
 - [http://ja.wikipedia.org/wiki/C++](http://ja.wikipedia.org/wiki/C++)
 - [http://ja.wikibooks.org/wiki/C++](http://ja.wikibooks.org/wiki/C++)
 - [http://www.cplusplus.com/](http://www.cplusplus.com/)
