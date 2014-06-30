@@ -48,13 +48,7 @@ pukiwiki: "表記の哲学/重力加速度の g"
     \usepackage[varg]{newtxmath}
     ```
 
-    txfonts の場合は
-
-    ```
-    \usepackage[varg]{txfonts}
-    ```
-
-    と，varg オプションを指定すればよい．
+    のように varg オプションを指定すればよい．
 
 <table><tbody>
 <tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">$\mathrm{g}$</td><td style="text-align:center">$g$</td></tr>
@@ -67,27 +61,21 @@ pukiwiki: "表記の哲学/重力加速度の g"
     \usepackage{newtxmath}
     ```
 
-    txfonts の場合は
-
-    ```
-    \usepackage{txfonts}
-    ```
-
-    と，デフォルトの場合は以下のように表示される．
+    にように varg オプションを指定せずにデフォルトのままでは以下のように表示される．
 
 <table><tbody>
 <tr><td style="text-align:center">g</td><td style="text-align:center">\itshape g</td><td style="text-align:center">$\mathrm{g}$</td><td style="text-align:center">$g$</td></tr>
 <tr><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalUpright.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsNormalItalic.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathRoman.png" alt=""></a></td><td style="text-align:center"><a href="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png"><img src="/attach/%E8%A1%A8%E8%A8%98%E3%81%AE%E5%93%B2%E5%AD%A6/%E9%87%8D%E5%8A%9B%E5%8A%A0%E9%80%9F%E5%BA%A6%E3%81%AE%20g/gTxfontsMathItalic.png" alt=""></a></td></tr>
 </tbody></table>
 
-- (参考) PukiWiki + [mimeTeX](/mimeTeX/) では設定によっては以下のように表示されることがあるかもしれません．
+- (参考) PukiWiki では以下のように表示されます．(設定の仕方によって表示が異なることがあります)
     <!-- , g , &#39;&#39;&#39;g&#39;&#39;&#39; , &amp;mimetex(\mathrm{g}); , &amp;mimetex(g); -->
     <!-- , g , '''g''' , &mimetex(\mathrm{g}); , &mimetex(g);  -->
 
 <table>
 <tbody>
-<tr><td>g</td><td>&#39;&#39;&#39;g&#39;&#39;&#39;</td><td>&amp;mimetex(\mathrm{g});</td><td>&amp;mimetex(g);</td></tr>
-<tr><td>g</td><td><em>g</em></td><td>𝑔</td><td>𝑔</td></tr>
+<tr><td>g (U+0067)</td><td>&#39;&#39;&#39;g&#39;&#39;&#39; (U+0067)</td><td>𝑔 (U+1D454)</td><td>&#39;&#39;&#39;𝑔&#39;&#39;&#39; (U+1D454)</td></tr>
+<tr><td>g</td><td><em>g</em></td><td>𝑔</td><td><em>𝑔</em></td></tr>
 </tbody>
 </table>
 
