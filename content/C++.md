@@ -29,6 +29,7 @@ C++ は汎用プログラミング言語です．<br>
 - [本の虫](http://cpplover.blogspot.jp/)
 - [Faith and Brave - C++で遊ぼう](http://faithandbrave.hateblo.jp/)
     - [C++14でのreturnとreturn (…)の違い](http://faithandbrave.hateblo.jp/entry/2014/06/11/164158)
+- [モダン C++ プログラミング](https://cybozu.atlassian.net/wiki/pages/viewpage.action?pageId=8159240)
 - [http://ppp-lab.sakura.ne.jp/index_ppp.shtml](http://ppp-lab.sakura.ne.jp/index_ppp.shtml)
 - [n次正方行列の逆行列をTeX形式で出力するプログラム](http://nazolab.net/notes/n/145)
 - [http://msdn.microsoft.com/ja-jp/library/60k1461a.aspx](http://msdn.microsoft.com/ja-jp/library/60k1461a.aspx)
