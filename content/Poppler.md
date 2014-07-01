@@ -219,20 +219,9 @@ $ pushd poppler-0.26.2
 
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)
 
-<!-- ■ Qt 5 mingw バイナリをインストールした場合 -->
-
 ```
-$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.3.0/5.3.0/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.3.0/5.3.0/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.3.0/5.3.0/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.3.0/5.3.0/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.3.1/5.3.1/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.3.1/5.3.1/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.3.1/5.3.1/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.3.1/5.3.1/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
-
-<!-- goo/gfile.cc -->
-<!-- #define _WIN32_WINNT 0x0501 -->
-<!-- #include <windows.h> -->
-<!-- を追加 -->
-
-<!-- ■ Qt 4 mingw バイナリをインストールした場合 -->
-<!--  -->
-<!-- $ POPPLER_QT4_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_LIBS="-LC:/Qt/4.8.4/lib -lQtCore4 -lQtGui4 -lQtNetwork4 -lQtWebKit4 -lQtXml4 -lQtXmlPatterns4" POPPLER_QT4_TEST_CFLAGS="-IC:/Qt/4.8.4/include" POPPLER_QT4_TEST_LIBS="-LC:/Qt/4.8.4/bin" LIBOPENJPEG_CFLAGS="`pkg-config - -cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config - -libs libopenjp2`" ./configure - -prefix=/mingw - -with-font-configuration=fontconfig - -enable-xpdf-headers - -enable-zlib - -enable-libcurl - -enable-poppler-glib - -disable-gtk-test -->
 
 ```
 Building poppler with support for:
