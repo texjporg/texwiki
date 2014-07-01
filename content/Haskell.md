@@ -302,12 +302,8 @@ runSumatraPDF pdf = do
     existSumatraPDF <- readIORef existSumatraHWND
     case existSumatraPDF of
         True  -> return True
-        False -> do
-            findSumatraPDFInRegistry
-            return True
+        False -> findSumatraPDFInRegistry
     where
-        sumatrapdfWin32 = "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"
-        sumatrapdfWin64 = "C:\\Program Files (x86)\\SumatraPDF\\SumatraPDF.exe"
         reuseInstance = "-reuse-instance"
         lParam = 0
 
@@ -338,25 +334,16 @@ runSumatraPDF pdf = do
         findSumatraPDFInRegistry = do
             let keyPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe"
             regKey <- regOpenKeyEx hKEY_LOCAL_MACHINE keyPath kEY_QUERY_VALUE
-            if regKey /= nullFinalHANDLE
-                then do
+            if regKey == nullFinalHANDLE
+                then return False
+                else do
                     sumatrapdfRegistry <- regQueryValue regKey Nothing
                     regCloseKey regKey
-                    startSumatraPDF sumatrapdfRegistry
-                    return True
-                else do
-                    findSumatraPDF sumatrapdfWin32
-                    findSumatraPDF sumatrapdfWin64
-                    return False
-
-        findSumatraPDF file = do
-            exist <- doesFileExist file
-            if exist
-                then do
-                    startSumatraPDF file
-                    return True
-                else do
-                    return False
+                    exist <- doesFileExist sumatrapdfRegistry
+                    if exist then do
+                        startSumatraPDF sumatrapdfRegistry
+                        return True
+                    else return False
 
         startSumatraPDF file = do
             let sumatrapdfCommandLine = "\"" ++ file ++ "\" " ++ reuseInstance ++ " " ++ "\"" ++ pdf ++ "\""
