@@ -73,5 +73,6 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 
 - [「BXjscls」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=BXjscls)
 - [http://zrbabbler.sp.land.to/bxjscls.html](http://zrbabbler.sp.land.to/bxjscls.html)
+- [BXjscls の pdflatex で日本語組版をしてみた](http://konoyonohana.blog.fc2.com/blog-entry-76.html)
 
 を参照．<br>
