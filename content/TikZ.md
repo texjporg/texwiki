@@ -154,7 +154,7 @@ texdoc tikz
 <tbody>
 <tr><td> コマンド</td><td> 正式名 </td><td colspan="2"> 機能やオプション</td></tr>
 <tr><td> \draw </td><td> \path[draw] </td><td colspan="2">線を描く（線の太さ ultra thin (0.1pt) 〜 ultra thick (1.6pt)、色指定も可能）</td></tr>
-<tr><td> \draw[-&gt;]</td><td>\path[draw, -&gt;]</td><td>終点／始点／両端に矢印、二重矢印、latex風矢印</td><td><strong>[-&gt;]</strong>／<strong>[&lt;-]</strong>／<strong>[&lt;-&gt;]</strong>／<strong>[-&gt;&gt;]</strong>／<strong>[&gt;=latex]</strong></td></tr>
+<tr><td> \draw[-&gt;]</td><td>\path[draw, -&gt;]</td><td>終点／始点／両端に矢印、二重矢印、latex風矢印、ステルス機風矢印</td><td><strong>[-&gt;]</strong>／<strong>[&lt;-]</strong>／<strong>[&lt;-&gt;]</strong>／<strong>[-&gt;&gt;]</strong>／<strong>[&gt;=latex]</strong>／<strong>[&gt;=stealth]</strong></td></tr>
 <tr><td> \fill </td><td> \path[fill] </td><td> 描かれた図形の内側を塗る（色・透明度の指定も可能）  </td><td><strong>例：[red, opacity=.5]</strong> </td></tr>
 <tr><td> \filldraw </td><td> \path[fill, draw] </td><td> パス自身の色と内側の色をそれぞれ別に指定する </td><td> <strong>例：[fill=cyan, draw=blue]</strong> </td></tr>
 </tbody>
