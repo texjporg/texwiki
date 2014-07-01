@@ -44,18 +44,22 @@ PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
 ### 初期設定 {#e634a5d8}
 
 dviware の指定をしてから、tikz パッケージを読み込みます。<br>
-graphicx パッケージのオプションが PGF に自動的に適用されます（pgf自身、graphicxを読み込みます）。<br>
 dvipdfmx を使用する場合は次のように設定します。<br>
 
 ```
-\usepackage[dvipdfmx]{graphicx}%
-%\def\pgfsysdriver{pgfsys-dvipdfmx.def}%（graphicxパッケージを使用しない場合はこの行を有効に）
-\usepackage{tikz}%（これで、pgfとpgfforが読み込まれます。）
+\documentclass[uplatex,dvipdfmx]{jsarticle}
 ```
 
-PGF はデフォルトでは dvips を使用する設定になっています。<br>
-dvips 以外に dvipdfmx, dvisvgm, pdfTeX, LuaTeX, XeTeX などもサポートされています。<br>
-なお、PGF の機能を 100% サポートしているのは LuaTeX です。（[Troubleshootingを参照](#i0cba852)）<br>
+dvipdfmx をグローバル指定すると都合が悪い場合は、graphicx パッケージのオプションが PGF に自動的に適用されますので以下のように指定します（pgf自身、graphicx を読み込みます）。<br>
+
+```
+\usepackage[dvipdfmx]{graphicx}%
+%\def\pgfsysdriver{pgfsys-dvipdfmx.def}%（graphicx パッケージを使用しない場合はこの行を有効に）
+\usepackage{tikz}%（これで、pgf と pgffor も読み込まれます。）
+```
+
+PGF は dvips, dvipdfmx, dvisvgm, pdfTeX, LuaTeX, XeTeX などをサポートしています。<br>
+なお、PGF の機能を 100% サポートしているのは LuaTeX (pdfTeX) ですが、最近のバージョンでは dvipdfmx でもほぼすべての機能が使えます。（[Troubleshootingを参照](#i0cba852)）<br>
 
 <br>
 
@@ -63,7 +67,7 @@ graphicx を使用しない場合は、以下のいずれかを tikz（または
 
 ```
 \def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmxの場合
-\def\pgfsysdriver{pgfsys-dvips.def}%デフォルト
+\def\pgfsysdriver{pgfsys-dvips.def}%dvipsの場合
 \def\pgfsysdriver{pgfsys-dvisvgm.def}%dvisvgmの場合
 \def\pgfsysdriver{pgfsys-pdftex.def}%最も高機能
 \def\pgfsysdriver{pgfsys-xetex.def}%XeTeXの場合
@@ -145,16 +149,23 @@ texdoc tikz
     - <strong>(x,y)</strong> とすると、xy平面（デカルト平面）上の座標を表す（基本単位は1cm）
     - <strong>(θ:r)</strong> とすると極座標（円座標）形式の座標表示となり、θが偏角（右方向が0で、-360から720まで）で r が原点（基準点）からの距離を示す（基本単位は1cm）
 - 線画の指定…\draw と \fill の基本
-    - \draw は \path\[draw\] の短縮形で、線を描く（線の太さ ultra thin (0.1pt) 〜 ultra thick (1.6pt)、色指定も可能）
-        - オプションに<strong>\[->\]</strong>とつけると「終点に矢印」、<strong>\[&lt;-\]</strong>とつけると「始点に矢印」となる
-    - \fillは \path\[fill\] の短縮形で、描かれた図形の内側を塗る（色・透明度の指定も可能）<strong>例：\[red, opacity=.5\]</strong>
-    - \filldraw は \path\[fill, draw\] の短縮形で、パス自身の色と内側の色をそれぞれ別に指定できる <strong>例：\[fill=cyan, draw=blue\]</strong>
+
+<table>
+<tbody>
+<tr><td> コマンド</td><td> 正式名 </td><td colspan="2"> 機能やオプション</td></tr>
+<tr><td> \draw </td><td> \path[draw] </td><td colspan="2">線を描く（線の太さ ultra thin (0.1pt) 〜 ultra thick (1.6pt)、色指定も可能）</td></tr>
+<tr><td> \draw[-&gt;]</td><td>\path[draw, -&gt;]</td><td>終点／始点／両端に矢印、二重矢印、latex風矢印</td><td><strong>[-&gt;]</strong>／<strong>[&lt;-]</strong>／<strong>[&lt;-&gt;]</strong>／<strong>[-&gt;&gt;]</strong>／<strong>[&gt;=latex]</strong></td></tr>
+<tr><td> \fill </td><td> \path[fill] </td><td> 描かれた図形の内側を塗る（色・透明度の指定も可能）  </td><td><strong>例：[red, opacity=.5]</strong> </td></tr>
+<tr><td> \filldraw </td><td> \path[fill, draw] </td><td> パス自身の色と内側の色をそれぞれ別に指定する </td><td> <strong>例：[fill=cyan, draw=blue]</strong> </td></tr>
+</tbody>
+</table>
+
 - 描画順
     - 記述された順番に描画される
 - 環境オプション
-    - 座標系を x 倍に拡大縮小するときは \[scale = x\] とする<br>
+    - 座標系を p 倍に拡大縮小するときは \[scale = p\] とする。縦横の縮小率をそれぞれ指定するときは \[xscale = p, yscale = q\] とする。<br>
         このとき拡大縮小されるのは座標系だけで、<strong>線の太さや文字の大きさは変化しない</strong>
-    - 文字や線の太さも含めて拡大縮小したいときは transform shape を追加して \[scale = x, transform shape\] とすればよいが、すべての要素が適切に拡大縮小されるとは限らない（tikz の作者は画像の拡大縮小は推奨していない）
+    - 文字や線の太さも含めて拡大縮小したいときは transform shape を追加して \[scale = p, transform shape\] とすればよいが、すべての要素が適切に拡大縮小されるとは限らない（tikz の作者は画像の拡大縮小は推奨していない）
         - tikzpicture 環境全体を拡大縮小する別の方法として、全体を \scalebox で囲うやり方もある（縦の倍率は省略可能）
 
             ```
@@ -166,7 +177,7 @@ texdoc tikz
 #### ライブラリの読み込み {#p4b035b0}
 
 PGF/TIkZ は初期設定の段階でも高い描画力がありますが、付属のライブラリを読み込むことでさらに多彩な表現力を得ます。<br>
-ライブラリには、たとえば交点を求める intersections、座標計算をする calc、矢印の種類を増やす arrows、パスを飾る decorations などがあります。<br>
+ライブラリには、たとえば背景パターンを塗る patterns、交点を求める intersections、座標計算をする calc、矢印の種類を増やす arrows、パスを飾る decorations、角度記号を描く angles などがあります。<br>
 ライブラリを用いるときは、tikzパッケージを読み込んだ後で<br>
 
 ```
@@ -896,12 +907,13 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 - \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
-- dvipdfmx を使用することによる制約。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0 の場合)）
-    - パスで画像をマスクできない／パターンを使用できない／シェーディングが使用できない
-        - 実際には <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）
-        - 実際には <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）
-            <!-- path pictureも使用可能？手元の環境ではマニュアルのサンプルをまだ機能させられません… -->
-        - [TikZ は dvipdfmx をどこまでサポートするか？ (1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://slashdot.jp/~ujimushi/journal/551945)参照
+- dvipdfmx を使用することによる制約が以前はいくつかありましたが、3.0.0 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0)。以下同）
+    - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.172）
+    - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.175）
+    - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.174）
+    - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1068）
+    - \[remember picture\] を dvipdfmx で使用するためには pxpgfmark を読み込む必要があります。（[TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html)）
+        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [あなたが知らない(かもしれない)PGF/TikZの世界](http://slashdot.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが、品質は落ちる／透明度は最近のGhostscriptを必要とする
 
