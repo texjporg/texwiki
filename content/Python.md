@@ -37,6 +37,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 ### Shell {#seaca303}
 
 - [IPython](http://ipython.org/)
+- [bpython](http://bpython-interpreter.org/)
 
 ### IDE・エディタ {#f2a95253}
 
