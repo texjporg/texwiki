@@ -304,7 +304,6 @@ runSumatraPDF pdf = do
         True  -> return True
         False -> findSumatraPDFInRegistry
     where
-        reuseInstance = "-reuse-instance"
         lParam = 0
 
         getSumatraHWND hwnd lParam = do
@@ -346,7 +345,7 @@ runSumatraPDF pdf = do
                     else return False
 
         startSumatraPDF file = do
-            let sumatrapdfCommandLine = "\"" ++ file ++ "\" " ++ reuseInstance ++ " " ++ "\"" ++ pdf ++ "\""
+            let sumatrapdfCommandLine = "\"" ++ file ++ "\" " ++ "-reuse-instance" ++ " " ++ "\"" ++ pdf ++ "\""
             withCWString sumatrapdfCommandLine $ \cmd -> do
                 alloca $ \p_si -> do
                     alloca $ \p_pi -> do
