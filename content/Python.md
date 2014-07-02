@@ -33,6 +33,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
     - [https://github.com/IronLanguages/ironpython3](https://github.com/IronLanguages/ironpython3)
 - [Jython](http://www.jython.org/)
 - [Micro Python](http://micropython.org/)
+- [Brython](http://www.brython.info/)
 
 ### Shell {#seaca303}
 
