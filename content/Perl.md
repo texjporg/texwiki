@@ -320,3 +320,5 @@ if ($0 eq __FILE__) {
 - [https://metacpan.org/release/FFI-Raw](https://metacpan.org/release/FFI-Raw)
 - [http://dcbpw.org/dcbpw2014/talk/5394](http://dcbpw.org/dcbpw2014/talk/5394)
 - [http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/](http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/)
+- [Perl勉強日誌 - スマートマッチ](http://straitwalk.hatenablog.com/entry/2013/06/18/230159)
+- [perlのスマートマッチ演算子が怖い](http://itochin2.hatenablog.com/entry/2013/04/09/193633)
