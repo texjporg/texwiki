@@ -401,7 +401,7 @@ mpost,\
 repstopdf,\
 ```
 
-デフォルトでは extractbb が自動実行されません．<br>
+TeX Live 2014/Cygwin はデフォルトでは extractbb が自動実行されません．<br>
 
 TEXMFLOCAL の値を確認します．<br>
 
