@@ -41,6 +41,7 @@ Windows, OS X, Linux
 ### Windows {#d8e05887}
 
 - [Atom Builds for Windows](http://atom.someguy123.com/)
+- [Github 製エディタ ATOM for Windows.](http://mimumimu.net/blog/2014/07/04/github-%E8%A3%BD%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF-atom-for-windows/)
 
 ### OS X {#o272a8e0}
 
