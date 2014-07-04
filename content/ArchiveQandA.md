@@ -70,29 +70,44 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
 ## 画像の作り方、扱い方 {#kbcf5f4a}
 
-- “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG など）が取り込めない
+- “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG ファイル）が取り込めない
     - 画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
-        Windows PowerShell またはコマンド プロンプトで画像ファイルのあるディレクトリに移動します．<br>
-        [TeX入門/図表#図のファイル形式に応じた記述法・設定法](</TeX入門/図表/#o967961d>)を参照して<br>
-        PDF ファイルの場合は
+        [TeX入門/図表#図のファイル形式に応じた記述法・設定法](</TeX入門/図表/#o967961d>)を参照します．<br>
+        PDF ファイルの場合は texmf.cnf に
 
         ```
-        extractbb filename.pdf
+        shell_escape_commands = \
+        bibtex,bibtex8,bibtexu,upbibtex,biber,\
+        kpsewhich,\
+        makeindex,mendex,texindy,xindy,\
+        mpost,upmpost,\
+        repstopdf,epspdf,extractbb
         ```
 
-        PNG ファイルの場合は
+        を記述してプリアンブルに
 
         ```
-        extractbb filename.png
+        \usepackage[dvipdfmx]{graphicx}
         ```
 
-        JPG ファイルの場合は
+        を記述します．<br>
+        PNG ファイルの場合はプリアンブルに
 
         ```
-        extractbb filename.jpg
+        \usepackage[dvipdfmx]{graphicx}
+        \usepackage{bmpsize}
         ```
 
-        を実行します．すると、filename.pdf または filename.png または filename.jpg と同じディレクトリに filename.xbb ファイルが作られ、画像が取り込めるようになります．<br>
+        を記述します．<br>
+        JPG ファイルの場合はプリアンブルに
+
+        ```
+        \usepackage[dvipdfmx]{graphicx}
+        \usepackage{bmpsize}
+        ```
+
+        を記述します．<br>
+        すると、画像が取り込めるようになります．<br>
 
 - 複数ページのPDFファイルの任意のページを取り込む
     - [PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
