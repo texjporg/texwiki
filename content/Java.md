@@ -45,6 +45,9 @@ Java でプログラミングをしたい人は JDK をインストールしま�
 ### ライブラリ {#t5f9c39b}
 
 - [Java Native Access (JNA)](https://github.com/twall/jna)
+- [WinRun4J](https://github.com/poidasmith/winrun4j)
+    - [http://winrun4j.sourceforge.net/](http://winrun4j.sourceforge.net/)
+    - [https://github.com/poidasmith/winrun4j/blob/master/org.boris.winrun4j.test/java/src/org/boris/winrun4j/winapi/DDEML.java](https://github.com/poidasmith/winrun4j/blob/master/org.boris.winrun4j.test/java/src/org/boris/winrun4j/winapi/DDEML.java)
 - [JDDE (Dynamic Data Exchange For Java)](http://jdde.pretty-tools.com/)
     - [http://sourceforge.net/projects/jdde/](http://sourceforge.net/projects/jdde/)
 - [JRegistry](http://sourceforge.net/projects/jregistry/)
