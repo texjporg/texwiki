@@ -35,6 +35,7 @@ pukiwiki: "OCaml"
 - [http://www.math.nagoya-u.ac.jp/~garrigue/papers/ocamlum2010.pdf](http://www.math.nagoya-u.ac.jp/~garrigue/papers/ocamlum2010.pdf)
 - [http://www.itpl.co.jp/ocaml/](http://www.itpl.co.jp/ocaml/)
 - [http://book.mynavi.jp/support/bookmook/ocaml/](http://book.mynavi.jp/support/bookmook/ocaml/)
+- [http://logic.cs.tsukuba.ac.jp/~kam/jikken/](http://logic.cs.tsukuba.ac.jp/~kam/jikken/)
 
 <!-- $ ocamlopt hoge.ml -->
 <!-- ** Fatal error: Cannot find file "libws2_32" -->
