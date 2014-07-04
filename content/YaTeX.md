@@ -449,6 +449,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 ```
 (setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 (setq dvi2-command "texworks")
+(setq dvi2-command "texstudio --pdf-viewer-only")
 (setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
 (setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
 (setq dvi2-command "/usr/bin/open -a Preview")
@@ -469,17 +470,17 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("SumatraPDF\\|TeXworks\\|evince\\|okular\\|firefox\\|chrome\\|AcroRd32\\|pdfopen" . ".pdf")))
+      '(("SumatraPDF\\|TeXworks\\|texstudio\\|evince\\|okular\\|firefox\\|chrome\\|AcroRd32\\|pdfopen" . ".pdf")))
 ```
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("open\\|Preview\\|TeXShop\\|TeXworks\\|Skim\\|mupdf\\|Firefox\\|Adobe" . ".pdf")))
+      '(("open\\|Preview\\|Skim\\|TeXShop\\|TeXworks\\|texstudio\\|mupdf\\|Firefox\\|Adobe" . ".pdf")))
 ```
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("xdg-open\\|evince\\|okular\\|zathura\\|qpdfview\\|texworks\\|mupdf\\|firefox\\|chromium\\|acroread\\|pdfopen" . ".pdf")))
+      '(("xdg-open\\|evince\\|okular\\|zathura\\|qpdfview\\|texworks\\|texstudio\\|mupdf\\|firefox\\|chromium\\|acroread\\|pdfopen" . ".pdf")))
 ```
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
