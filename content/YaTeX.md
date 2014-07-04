@@ -513,14 +513,15 @@ AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設
 (add-hook 'yatex-mode-hook '(lambda () (reftex-mode t)))
 ```
 
-YaTeX の comment region, uncomment region のキーバインドを優先させる場合は以下のようにします．
+YaTeX の comment region, uncomment region, insert parens region のキーバインドを優先させる場合は以下のようにします．(参照 [YaTeXとRefTeXの共存](http://ubutun.blogspot.jp/2011/06/yatexreftex.html))
 
 ```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (reftex-mode 1)
              (define-key reftex-mode-map (concat YaTeX-prefix ">") 'YaTeX-comment-region)
-             (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)))
+             (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)
+             (define-key reftex-mode-map (concat YaTeX-prefix ")") 'YaTeX-insert-parens-region)))
 ```
 
 ### auto fill mode {#ua5c62a9}
