@@ -475,7 +475,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です。<br
 
 のようにすると，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。<br>
 
-[TeX Live](</TeX Live/>), [MacTeX](/Mac/#mactex) では extractbb の実行は自動化されていません。<br>
+[TeX Live](</TeX Live/>) 2014, [MacTeX](/Mac/#mactex)-2014 では extractbb の実行は自動化されていません。<br>
 自動化したい場合は
 
 - Windows の場合は C:\texlive\texmf-local\web2c\texmf.cnf
