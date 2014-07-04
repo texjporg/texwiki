@@ -28,8 +28,9 @@ Fortran で記述されたライブラリは C, C++, D, Go, Rust, Pascal, Haskel
 - [インテル® Fortran Composer XE 2013 Linux\* 版入門](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/get_started_lf.htm)
 - [User and Reference Guide for the Intel® Fortran Compiler 14.0](http://nf.nci.org.au/facilities/software/intel-ct/14.0.080/Documentation/en_US/compiler_f/main_for/index.htm)
 - [インテル® Fortran コンパイラー XE 13.1 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
-- [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
 - [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
+- [Fortran Language Reference Manual, Volume 3 S-3694-55 - Dec 2005](http://docs.cray.com/books/S-3694-55/)
+- [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
 - [Fortran2003のページ](http://www.geocities.jp/wjtcx143/fortran.html)
 - [ドウジンテイスウ.log](http://sage-t.tumblr.com/)
@@ -1027,7 +1028,7 @@ subroutine runSumatraPDF()
     integer(kind=1), dimension(:), allocatable, target :: reuseInstance_wchar
     integer(kind=1), dimension(:), allocatable, target :: sumatraPDFCommandLine_wchar
     integer(kind=c_int) :: bufSize
-    type(c_ptr), target :: subKey
+    type(c_ptr), target :: subKey = c_null_ptr
     integer(kind=c_int), target :: dwType = transfer(0, mold=c_int)
     integer(kind=c_int), target :: sz = transfer(0, mold=c_int)
     type(STARTUPINFOW), target :: si
@@ -1079,11 +1080,11 @@ subroutine ddeExecute()
     integer(kind=1), dimension(:), allocatable, target :: command_wchar
     integer(kind=c_int) :: bufSize
     integer(kind=c_int), target :: idInstance = transfer(0, mold=c_int)
-    type(c_ptr), target :: hszServer
-    type(c_ptr), target :: hszTopic
-    type(c_ptr), target :: hConvClient
-    type(c_ptr), target :: hDdeData
-    type(c_ptr), target :: hDdeTransactionData
+    type(c_ptr), target :: hszServer = c_null_ptr
+    type(c_ptr), target :: hszTopic = c_null_ptr
+    type(c_ptr), target :: hConvClient = c_null_ptr
+    type(c_ptr), target :: hDdeData = c_null_ptr
+    type(c_ptr), target :: hDdeTransactionData = c_null_ptr
 
     block
         integer :: i
@@ -1120,37 +1121,46 @@ subroutine ddeExecute()
     bufSize = MultiByteToWideChar(0, 1, topic, -1, c_loc(topic_wchar), len_trim(topic))
     bufSize = MultiByteToWideChar(0, 1, command, -1, c_loc(command_wchar), len_trim(command))
     call runSumatraPDF()
-    call DdeInitializeW(c_loc(idInstance), c_null_funptr, APPCMD_CLIENTONLY, 0)
-    if (idInstance == 0) then
-        error stop "DdeInitializeW error"
-    end if
-    hszServer = DdeCreateStringHandleW(idInstance, c_loc(server_wchar), CP_WINUNICODE)
-    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
-        error stop "DdeCreateStringHandleW error"
-    end if
-    hszTopic = DdeCreateStringHandleW(idInstance, c_loc(topic_wchar), CP_WINUNICODE)
-    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
-        error stop "DdeCreateStringHandleW error"
-    end if
-    hConvClient = DdeConnect(idInstance, hszServer, hszTopic, c_null_ptr)
-    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
-        error stop "DdeConnect error"
-    end if
-    hDdeData = DdeCreateDataHandle(idInstance, c_loc(command_wchar), &
-        & transfer((wcslen(c_loc(command_wchar)) + 1)*2, mold=c_int), 0, c_null_ptr, CF_UNICODETEXT, 0)
-    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
-        error stop "DdeCreateDataHandle error"
-    end if
-    hDdeTransactionData = DdeClientTransaction(hDdeData, -1, hConvClient, c_null_ptr, 0, XTYP_EXECUTE, TIMEOUT, c_null_ptr)
-    if (DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
-        error stop "DdeClientTransaction error"
-    end if
-    call DdeFreeDataHandle(hDdeTransactionData)
-    call DdeFreeDataHandle(hDdeData)
-    call DdeFreeStringHandle(idInstance, hszServer)
-    call DdeFreeStringHandle(idInstance, hszTopic)
-    call DdeDisconnect(hConvClient)
-    call DdeUninitialize(idInstance)
+    do
+        call DdeInitializeW(c_loc(idInstance), c_null_funptr, APPCMD_CLIENTONLY, 0)
+        if (idInstance == 0) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeInitializeW error"
+            exit
+        end if
+        hszServer = DdeCreateStringHandleW(idInstance, c_loc(server_wchar), CP_WINUNICODE)
+        if (.not. c_associated(hszServer) .or. DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeCreateStringHandleW error"
+            exit
+        end if
+        hszTopic = DdeCreateStringHandleW(idInstance, c_loc(topic_wchar), CP_WINUNICODE)
+        if (.not. c_associated(hszTopic) .or. DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeCreateStringHandleW error"
+            exit
+        end if
+        hConvClient = DdeConnect(idInstance, hszServer, hszTopic, c_null_ptr)
+        if (.not. c_associated(hConvClient) .or. DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeConnect error"
+            exit
+        end if
+        hDdeData = DdeCreateDataHandle(idInstance, c_loc(command_wchar), &
+            & transfer((wcslen(c_loc(command_wchar)) + 1)*2, mold=c_int), 0, c_null_ptr, CF_UNICODETEXT, 0)
+        if (.not. c_associated(hDdeData) .or. DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeCreateDataHandle error"
+            exit
+        end if
+        hDdeTransactionData = DdeClientTransaction(hDdeData, -1, hConvClient, c_null_ptr, 0, XTYP_EXECUTE, TIMEOUT, c_null_ptr)
+        if (.not. c_associated(hDdeTransactionData) .or. DdeGetLastError(idInstance) /= DMLERR_NO_ERROR) then
+            write(unit=error_unit, fmt='(*(g0))') "DdeClientTransaction error"
+            exit
+        end if
+        exit
+    end do
+    if (c_associated(hDdeTransactionData)) call DdeFreeDataHandle(hDdeTransactionData)
+    if (c_associated(hDdeData)) call DdeFreeDataHandle(hDdeData)
+    if (c_associated(hszServer)) call DdeFreeStringHandle(idInstance, hszServer)
+    if (c_associated(hszTopic)) call DdeFreeStringHandle(idInstance, hszTopic)
+    if (c_associated(hConvClient)) call DdeDisconnect(hConvClient)
+    if (idInstance /= 0) call DdeUninitialize(idInstance)
     deallocate(server_wchar)
     deallocate(topic_wchar)
     deallocate(command_wchar)
