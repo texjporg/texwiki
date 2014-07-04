@@ -32,7 +32,7 @@ pukiwiki: "Rust"
 ### Rust 版 {#j7127f95}
 
 rustc 0.11.0 で動作確認しています．<br>
-Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
+MinGW Shell (MSYS) から以下のようにしてビルドします．<br>
 
 ```
 rustc fwdsumatrapdf.rs
