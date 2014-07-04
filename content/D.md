@@ -47,7 +47,7 @@ D は汎用プログラミング言語です．<br>
 
 ### D 版 {#b96c322d}
 
-DMD32 D Compiler v2.065 でビルドできます．<br>
+DMD32 D Compiler v2.066 でビルドできます．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
