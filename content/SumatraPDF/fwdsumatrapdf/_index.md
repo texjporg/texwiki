@@ -42,6 +42,10 @@ D を参照．<br>
 
 Go を参照．<br>
 
+### Rust 版 {#wa031c69}
+
+Rust を参照．<br>
+
 ### Pascal 版 {#k507022c}
 
 Pascal を参照．<br>
