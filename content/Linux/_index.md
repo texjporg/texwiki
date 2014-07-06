@@ -207,6 +207,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [TeXworks](/TeXworks/)
+- TexitEasy
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
