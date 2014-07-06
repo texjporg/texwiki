@@ -77,6 +77,10 @@ pdfjs
 メニューのオプションからオプションをクリックします．<br>
 プログラムタブのファイルの種類 (Content Type) の PDF 文書 (PDF) の取り扱い方法のリストから Firefox でプレビュー表示を選択します．<br>
 
+### 派生版 {#icd1120b}
+
+- [Laddu Reader](https://github.com/iraycd/laddu-reader)
+
 ## SyncTeX {#v2e4d11f}
 
 ### forward search {#l3d0efe3}
