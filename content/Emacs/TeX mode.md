@@ -209,7 +209,7 @@ C-x C-f ~/
         ("/usr/bin/open -a Skim.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a Preview.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a TeXShop.app %r.pdf" "%r.pdf")
-        ("/usr/bin/open -a TeXworks.app %r.pdf" "%r.pdf")
+        ("/Applications/TeXworks.app/Contents/MacOS/TeXworks %r.pdf" "%r.pdf")
         ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("/usr/bin/open -a Firefox.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a \"Adobe Reader.app\" %r.pdf" "%r.pdf")))
