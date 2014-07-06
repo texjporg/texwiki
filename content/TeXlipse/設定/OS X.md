@@ -401,8 +401,8 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a TeXworks.app "&#x25;file"</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/Applications/TeXworks.app/Contents/MacOS/TeXworks</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;file"</ins><br>
 
 <br>
 
