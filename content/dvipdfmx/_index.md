@@ -131,6 +131,8 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ### PDF のバージョンを指定する {#b272a636}
 
+- [出力 PDF のバージョン（とか）を指定する](http://d.hatena.ne.jp/zrbabbler/20140705/1404540914), [出力 PDF のバージョン（とか）を指定する（補足）](http://d.hatena.ne.jp/zrbabbler/20140706/1404618797)
+- [https://github.com/zr-tex8r/BXpdfver](https://github.com/zr-tex8r/BXpdfver)
 - [pdfの図が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=690)
 - [mediabb パッケージが（あまり）役に立たない話](http://d.hatena.ne.jp/zrbabbler/20140530/1401462549)
 
@@ -140,10 +142,22 @@ PDF 1.4 で出力したい場合はプリアンブルに
 \special{pdf: minorversion=4}
 ```
 
+bxpdfver パッケージを使用する場合は
+
+```
+\usepackage[dvipdfmx,1.4]{bxpdfver}
+```
+
 PDF 1.5 で出力したい場合はプリアンブルに
 
 ```
 \special{pdf: minorversion=5}
+```
+
+bxpdfver パッケージを使用する場合は
+
+```
+\usepackage[dvipdfmx,1.5]{bxpdfver}
 ```
 
 PDF 1.6 で出力したい場合はプリアンブルに
@@ -152,10 +166,22 @@ PDF 1.6 で出力したい場合はプリアンブルに
 \special{pdf: minorversion=6}
 ```
 
+bxpdfver パッケージを使用する場合は
+
+```
+\usepackage[dvipdfmx,1.6]{bxpdfver}
+```
+
 PDF 1.7 で出力したい場合はプリアンブルに
 
 ```
 \special{pdf: minorversion=7}
+```
+
+bxpdfver パッケージを使用する場合は
+
+```
+\usepackage[dvipdfmx,1.7]{bxpdfver}
 ```
 
 と記述すれば OK です．<br>
