@@ -195,6 +195,10 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
+                                   '("TeXstudio"
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
+                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
+                      (add-to-list 'TeX-command-list
                                    '("Firefox"
                                      "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
@@ -236,6 +240,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
@@ -371,8 +376,12 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
                                      TeX-run-discard-or-function t t :help "Run TeXShop"))
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
-                                     "/usr/bin/open -a TeXworks.app %s.pdf"
+                                     "/usr/texbin/synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/TeXworks.app/Contents/MacOS/TeXworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
+                      (add-to-list 'TeX-command-list
+                                   '("TeXstudio"
+                                     "/usr/texbin/synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
+                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox"
                                      "/usr/bin/open -a Firefox.app %s.pdf"
@@ -413,6 +422,7 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>AdobeReader</td><td>C-c C-c adobereader RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
 > </tbody>
@@ -572,6 +582,10 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
+                                   '("TeXstudio"
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
+                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
+                      (add-to-list 'TeX-command-list
                                    '("MuPDF"
                                      "mupdf %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run MuPDF"))
@@ -618,6 +632,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>fwdzathura</td><td>C-c C-c fwdzathura RET</td><td>forward search (PDF)</td></tr>
 > <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー (PDF)</td></tr>
