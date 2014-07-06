@@ -101,6 +101,7 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$p)}\"" "%r.pdf")
         ("texworks %r.pdf" "%r.pdf")
+        ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
         ("pdfopen --rxi --file %r.pdf" "%r.pdf")))
@@ -209,6 +210,7 @@ C-x C-f ~/
         ("/usr/bin/open -a Preview.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a TeXShop.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a TeXworks.app %r.pdf" "%r.pdf")
+        ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("/usr/bin/open -a Firefox.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a \"Adobe Reader.app\" %r.pdf" "%r.pdf")))
 
@@ -301,6 +303,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
         ("zathura -s -x \"emacsclient --no-wait +%%{line} %%{input}\" %r.pdf &" "%r.pdf")
         ("qpdfview --unique %r.pdf &" "%r.pdf")
         ("texworks %r.pdf &" "%r.pdf")
+        ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
         ("chromium --new-window %r.pdf &" "%r.pdf")))
