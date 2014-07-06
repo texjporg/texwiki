@@ -15,6 +15,8 @@ pukiwiki: "JavaScript"
 
 - [Wikipedia.ja:JavaScript](https://ja.wikipedia.org/wiki/JavaScript)
 - [Wikipedia.ja:ECMAScript](https://ja.wikipedia.org/wiki/ECMAScript)
+    <!-- -[http://dotinstall.com/lessons/basic_javascript_v2 JavaScript入門 (全24回) - プログラミングならドットインストール] -->
+
 - [JavaScript入門](http://www.pori2.net/js/)
 - [イヌでもわかるJavaScript講座](http://www.red.oit-net.jp/tatsuya/java/)
     <!-- -[[とほほのJavaScriptリファレンス:http://www.tohoho-web.com/js/]] -->
