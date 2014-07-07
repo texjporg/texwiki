@@ -40,6 +40,10 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 - [IPython](http://ipython.org/)
 - [bpython](http://bpython-interpreter.org/)
 
+### ライブラリ {#r44ec77d}
+
+- [Numba](http://numba.pydata.org/)
+
 ### IDE・エディタ {#f2a95253}
 
 - [Eclipse](/Eclipse/)
