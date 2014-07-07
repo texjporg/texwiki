@@ -409,7 +409,7 @@ contains
         write(unit=error_unit, fmt='(*(g0))') "usage: ", trim(cmd), " N ..."
     end subroutine usage
 
-    function valid_number(arg) result(ok)
+    elemental pure function valid_number(arg) result(ok)
         character(len=*), intent(in) :: arg
         integer(kind=4) :: i
         logical(kind=4) :: ok
@@ -788,6 +788,7 @@ $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o fwdsumatrapdf.exe fw
 ```
 ! vim: ts=4 sw=4 expandtab:
 ! $ gfortran -Wall -Ofast -march=native -std=f2008 -static -o fwdsumatrapdf.exe fwdsumatrapdf.f90
+
 module c_string
     use, intrinsic :: iso_c_binding
     implicit none
@@ -836,6 +837,8 @@ module windows_api
         & PROCESS_INFORMATION, &
         & HKEY_LOCAL_MACHINE, &
         & KEY_QUERY_VALUE, &
+        & CP_ACP, &
+        & MB_PRECOMPOSED, &
         & DMLERR_NO_ERROR, &
         & APPCMD_CLIENTONLY, &
         & CP_WINUNICODE, &
@@ -845,6 +848,8 @@ module windows_api
         & TIMEOUT
     integer(kind=c_intptr_t), parameter :: HKEY_LOCAL_MACHINE = transfer(z'80000002', mold=c_intptr_t)
     integer(kind=c_int), parameter :: KEY_QUERY_VALUE = transfer(z'1', mold=c_int)
+    integer(kind=c_int), parameter :: CP_ACP = transfer(0, mold=c_int)
+    integer(kind=c_int), parameter :: MB_PRECOMPOSED = transfer(1, mold=c_int)
     integer(kind=c_int), parameter :: DMLERR_NO_ERROR = transfer(0, mold=c_int)
     integer(kind=c_int), parameter :: APPCMD_CLIENTONLY = transfer(z'10', mold=c_int)
     integer(kind=c_int), parameter :: CP_WINUNICODE = transfer(1200, mold=c_int)
@@ -1037,9 +1042,9 @@ subroutine runSumatraPDF()
     allocate(keyPath_wchar(1:2*len_trim(keyPath)))
     allocate(doubleQuote_wchar(1:2*len_trim(doubleQuote)))
     allocate(reuseInstance_wchar(1:2*len_trim(reuseInstance)))
-    bufSize = MultiByteToWideChar(0, 1, keyPath, -1, c_loc(keyPath_wchar), len_trim(keyPath))
-    bufSize = MultiByteToWideChar(0, 1, doubleQuote, -1, c_loc(doubleQuote_wchar), len_trim(doubleQuote))
-    bufSize = MultiByteToWideChar(0, 1, reuseInstance, -1, c_loc(reuseInstance_wchar), len_trim(reuseInstance))
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, keyPath, -1, c_loc(keyPath_wchar), len_trim(keyPath))
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, doubleQuote, -1, c_loc(doubleQuote_wchar), len_trim(doubleQuote))
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, reuseInstance, -1, c_loc(reuseInstance_wchar), len_trim(reuseInstance))
     call RegOpenKeyExW(HKEY_LOCAL_MACHINE, c_loc(keyPath_wchar), 0, KEY_QUERY_VALUE, c_loc(subKey))
     call RegQueryValueExW(subKey, c_null_ptr, c_null_ptr, c_loc(dwType), c_null_ptr, c_loc(sz))
     allocate(sumatraPDFRegistry_wchar(sz))
@@ -1056,25 +1061,22 @@ subroutine runSumatraPDF()
     call CreateProcessW(c_null_ptr, c_loc(sumatraPDFCommandLine_wchar), c_null_ptr, c_null_ptr, 0, 0, c_null_ptr, c_null_ptr, &
         & c_loc(si), c_loc(pi))
     call WaitForInputIdle(pi%hProcess, TIMEOUT)
-    deallocate(sumatraPDFCommandLine_wchar)
-    deallocate(sumatraPDFRegistry_wchar)
-    deallocate(reuseInstance_wchar)
-    deallocate(doubleQuote_wchar)
-    deallocate(keyPath_wchar)
+    if (allocated(sumatraPDFCommandLine_wchar)) deallocate(sumatraPDFCommandLine_wchar)
+    if (allocated(sumatraPDFRegistry_wchar)) deallocate(sumatraPDFRegistry_wchar)
+    if (allocated(reuseInstance_wchar)) deallocate(reuseInstance_wchar)
+    if (allocated(doubleQuote_wchar)) deallocate(doubleQuote_wchar)
+    if (allocated(keyPath_wchar)) deallocate(keyPath_wchar)
 end subroutine runSumatraPDF
 
-subroutine ddeExecute()
+subroutine ddeExecute(server, topic, command)
     use, intrinsic :: iso_fortran_env
     use, intrinsic :: iso_c_binding
     use windows_api
     use c_string
     implicit none
-    character(len=*, kind=c_char), parameter :: server = "SUMATRA" // c_null_char
-    character(len=*, kind=c_char), parameter :: topic = "control" // c_null_char
-    character(len=:, kind=c_char), allocatable :: pdf
-    character(len=:, kind=c_char), allocatable :: tex
-    character(len=:, kind=c_char), allocatable :: line
-    character(len=:, kind=c_char), allocatable :: command
+    character(len=*, kind=c_char), intent(in) :: server
+    character(len=*, kind=c_char), intent(in) :: topic
+    character(len=*, kind=c_char), intent(in) :: command
     integer(kind=1), dimension(:), allocatable, target :: server_wchar
     integer(kind=1), dimension(:), allocatable, target :: topic_wchar
     integer(kind=1), dimension(:), allocatable, target :: command_wchar
@@ -1086,41 +1088,15 @@ subroutine ddeExecute()
     type(c_ptr), target :: hDdeData = c_null_ptr
     type(c_ptr), target :: hDdeTransactionData = c_null_ptr
 
-    block
-        integer :: i
-        character(len=256) :: arg
-        if (command_argument_count() /= 3) then
-            write(unit=error_unit, fmt='(*(g0))') "Usage: fwdsumatrapdf pdf tex line"
-            stop
-        end if
-        do i = 1, command_argument_count()
-            call get_command_argument(i, arg)
-            select case (i)
-            case (1)
-                pdf = arg
-            case (2)
-                tex = arg
-            case (3)
-                if (.not. valid_number(trim(arg))) then
-                    error stop "Invalid argument!"
-                end if
-                line = arg
-            case default
-                error stop "Too many arguments!"
-            end select
-        end do
-    end block
-    command = '[ForwardSearch("' // trim(pdf) // '","' // trim(tex) // '",' // trim(line) // ',0,0,0)]' // c_null_char
     allocate(server_wchar(1:2*len_trim(server)))
     allocate(topic_wchar(1:2*len_trim(topic)))
     allocate(command_wchar(1:2*len_trim(command)))
     call memset(c_loc(server_wchar), 0, int(size(server_wchar), kind=c_size_t))
     call memset(c_loc(topic_wchar), 0, int(size(topic_wchar), kind=c_size_t))
     call memset(c_loc(command_wchar), 0, int(size(command_wchar), kind=c_size_t))
-    bufSize = MultiByteToWideChar(0, 1, server, -1, c_loc(server_wchar), len_trim(server))
-    bufSize = MultiByteToWideChar(0, 1, topic, -1, c_loc(topic_wchar), len_trim(topic))
-    bufSize = MultiByteToWideChar(0, 1, command, -1, c_loc(command_wchar), len_trim(command))
-    call runSumatraPDF()
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, server, -1, c_loc(server_wchar), len_trim(server))
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, topic, -1, c_loc(topic_wchar), len_trim(topic))
+    bufSize = MultiByteToWideChar(CP_ACP, MB_PRECOMPOSED, command, -1, c_loc(command_wchar), len_trim(command))
     do
         call DdeInitializeW(c_loc(idInstance), c_null_funptr, APPCMD_CLIENTONLY, 0)
         if (idInstance == 0) then
@@ -1161,11 +1137,53 @@ subroutine ddeExecute()
     if (c_associated(hszTopic)) call DdeFreeStringHandle(idInstance, hszTopic)
     if (c_associated(hConvClient)) call DdeDisconnect(hConvClient)
     if (idInstance /= 0) call DdeUninitialize(idInstance)
-    deallocate(server_wchar)
-    deallocate(topic_wchar)
-    deallocate(command_wchar)
-  contains
-    function valid_number(arg) result(ok)
+    if (allocated(server_wchar)) deallocate(server_wchar)
+    if (allocated(topic_wchar)) deallocate(topic_wchar)
+    if (allocated(command_wchar)) deallocate(command_wchar)
+end subroutine ddeExecute
+
+program fwdsumatrapdf
+    use, intrinsic :: iso_fortran_env
+    use, intrinsic :: iso_c_binding
+    implicit none
+    character(len=*, kind=c_char), parameter :: server = "SUMATRA" // c_null_char
+    character(len=*, kind=c_char), parameter :: topic = "control" // c_null_char
+    character(len=:, kind=c_char), allocatable :: command
+
+    block
+        integer :: i
+        character(len=256) :: arg
+        character(len=:, kind=c_char), allocatable :: pdf
+        character(len=:, kind=c_char), allocatable :: tex
+        character(len=:, kind=c_char), allocatable :: line
+
+        if (command_argument_count() /= 3) then
+            call get_command_argument(0, arg)
+            write(unit=error_unit, fmt='(*(g0))') "Usage: ", trim(arg), " pdf tex line"
+            stop
+        end if
+        do i = 1, command_argument_count()
+            call get_command_argument(i, arg)
+            select case (i)
+            case (1)
+                pdf = arg
+            case (2)
+                tex = arg
+            case (3)
+                if (.not. valid_number(trim(arg))) then
+                    error stop "Invalid argument!"
+                end if
+                line = arg
+            case default
+                error stop "Too many arguments!"
+            end select
+        end do
+        command = '[ForwardSearch("' // trim(pdf) // '","' // trim(tex) // '",' // trim(line) // ',0,0,0)]' // c_null_char
+    end block
+    call runSumatraPDF()
+    call ddeExecute(server, topic, command)
+contains
+    elemental pure function valid_number(arg) result(ok)
         character(len=*), intent(in) :: arg
         integer(kind=4) :: i
         logical(kind=4) :: ok
@@ -1180,11 +1198,6 @@ subroutine ddeExecute()
             end if
         end do
     end function valid_number
-end subroutine ddeExecute
-
-program fwdsumatrapdf
-    implicit none
-    call ddeExecute()
 end program fwdsumatrapdf
 ```
 
