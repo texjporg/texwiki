@@ -236,6 +236,7 @@ fmtutil-sys.exe   pdftosrc.exe
 
 ## 関連リンク {#e987affa}
 
+- [http://win-builds.org/](http://win-builds.org/)
 - [MinGW-builds](http://sourceforge.net/projects/mingwbuilds/)
 - [News - nuwen.net](http://nuwen.net/)
     - [MinGW Distro - nuwen.net](http://nuwen.net/mingw.html)
