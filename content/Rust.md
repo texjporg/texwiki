@@ -9,6 +9,8 @@ pukiwiki: "Rust"
 
 ## [Rust](http://www.rust-lang.org/) {#ybc68f10}
 
+<img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Rust_programming_language_black_logo.svg/200px-Rust_programming_language_black_logo.svg.png" alt="Rust" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#jf7ccbcc}
