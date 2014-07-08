@@ -31,6 +31,11 @@ pukiwiki: "PHP"
 - [PHP-CPP](http://www.php-cpp.com/)
 - [PHPでクリップボードを操作](http://www.pahoo.org/e-soul/webtech/php04/php04-09-01.shtm)
 
+### パッケージ管理 {#o13d63b9}
+
+- [Composer](https://getcomposer.org/)
+    - [https://packagist.org/](https://packagist.org/)
+
 ### ドキュメント {#df37b373}
 
 - [http://www.php.net/download-docs.php](http://www.php.net/download-docs.php)
