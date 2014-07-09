@@ -165,6 +165,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 - [beamer : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/beamer)
 - [岩崎 隆盛/「Beamer」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=Beamer)
 - [Newest &#39;beamer&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer)
+    - [http://tex.stackexchange.com/questions/188605/easy-list-with-beamer](http://tex.stackexchange.com/questions/188605/easy-list-with-beamer)
 - [Newest &#39;beamer tikz-pgf&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/beamer+tikz-pgf)
 - [Beamer &mdash; Tasuku Soma&#39;s Homepage](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/beamer.html)
 - [LyXでbeamer使うテンプレート](https://twitter.com/econometror/status/409287233372291072)
