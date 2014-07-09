@@ -27,6 +27,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 - [RユーザのためのJulia入門（行列編）](http://rishida.hatenablog.com/entry/2013/11/30/194733)
 - [30分で分かる最先端プログラミング言語Julia](http://mechawooser.blogspot.jp/2013/06/30julia.html)
 - [Julia : スクリプト言語最速? 手軽さと速さを求めた科学技術計算向け言語](http://yohshiy.blog.fc2.com/blog-entry-246.html)
+- [「私がJuliaを推す理由」（翻訳）](http://d.hatena.ne.jp/isobe1978/20140330/1396201066)
 - [Pythonのコマンドライン引数処理の決定版 docopt (あとJuliaに移植したよ)](http://bicycle1885.hatenablog.com/entry/2014/06/08/103010)
 
 ### Julia Benchmarks {#ob1e5eb8}
@@ -197,61 +198,69 @@ function ddeExecute(server, topic, command)
     XCLASS_FLAGS = uint32(0x4000)
     XTYP_EXECUTE = (uint32(0x0050) | XCLASS_FLAGS)
     idInstance = Cuint[0]
-    ccall((:DdeInitializeW, "user32"), stdcall,
-        Cuint,
-        (Ptr{Cuint}, Ptr{Void}, Cuint, Cuint),
-        pointer(idInstance), C_NULL, APPCMD_CLIENTONLY, 0)
-    idInstance = idInstance[1]
-    if idInstance == uint32(0) throw(ErrorException("DdeInitializeW error")) end
-    hszServer = ccall((:DdeCreateStringHandleW, "user32"), stdcall,
-        Ptr{Void},
-        (Cuint, Ptr{Cwchar_t}, Cint),
-        idInstance, wstring(server), CP_WINUNICODE)
-    if hszServer == C_NULL throw(ErrorException("DdeCreateStringHandleW error")) end
-    hszTopic = ccall((:DdeCreateStringHandleW, "user32"), stdcall,
-        Ptr{Void},
-        (Cuint, Ptr{Cwchar_t}, Cint),
-        idInstance, wstring(topic), CP_WINUNICODE)
-    if hszTopic == C_NULL throw(ErrorException("DdeCreateStringHandleW error")) end
-    hConvClient = ccall((:DdeConnect, "user32"), stdcall,
-        Ptr{Void},
-        (Cuint, Ptr{Void}, Ptr{Void}, Ptr{Void}),
-        idInstance, hszServer, hszTopic, C_NULL)
-    if hConvClient == C_NULL throw(ErrorException("DdeConnect error")) end
-    hDdeData = ccall((:DdeCreateDataHandle, "user32"), stdcall,
-        Ptr{Void},
-        (Cuint, Ptr{Cwchar_t}, Cuint, Cuint, Ptr{Void}, Cuint, Cuint),
-        idInstance, wstring(command), (length(command) + 1)*sizeof(Cwchar_t), 0, C_NULL, CF_UNICODETEXT, 0)
-    if hDdeData == C_NULL throw(ErrorException("DdeCreateDataHandle error")) end
-    hDdeTransactionData = ccall((:DdeClientTransaction, "user32"), stdcall,
-        Ptr{Void},
-        (Ptr{Void}, Cuint, Ptr{Void}, Ptr{Void}, Cuint, Cuint, Cuint, Ptr{Cuint}),
-        hDdeData, convert(Cuint, -1), hConvClient, C_NULL, 0, XTYP_EXECUTE, TIMEOUT, C_NULL)
-    if hDdeTransactionData == C_NULL throw(ErrorException("DdeClientTransaction error")) end
-    ccall((:DdeFreeDataHandle, "user32"), stdcall,
-        Cint,
-        (Ptr{Void},),
-        hDdeTransactionData)
-    ccall((:DdeFreeDataHandle, "user32"), stdcall,
-        Cint,
-        (Ptr{Void},),
-        hDdeData)
-    ccall((:DdeFreeStringHandle, "user32"), stdcall,
-        Cint,
-        (Cuint, Ptr{Void}),
-        idInstance, hszServer)
-    ccall((:DdeFreeStringHandle, "user32"), stdcall,
-        Cint,
-        (Cuint, Ptr{Void}),
-        idInstance, hszTopic)
-    ccall((:DdeDisconnect, "user32"), stdcall,
-        Cint,
-        (Ptr{Void},),
-        hConvClient)
-    ccall((:DdeUninitialize, "user32"), stdcall,
-        Cint,
-        (Cuint,),
-        idInstance)
+    hszServer = C_NULL
+    hszTopic = C_NULL
+    hConvClient = C_NULL
+    hDdeData = C_NULL
+    hDdeTransactionData = C_NULL
+    try
+        ccall((:DdeInitializeW, "user32"), stdcall,
+            Cuint,
+            (Ptr{Cuint}, Ptr{Void}, Cuint, Cuint),
+            pointer(idInstance), C_NULL, APPCMD_CLIENTONLY, 0)
+        idInstance = idInstance[1]
+        if idInstance == uint32(0) throw(ErrorException("DdeInitializeW error")) end
+        hszServer = ccall((:DdeCreateStringHandleW, "user32"), stdcall,
+            Ptr{Void},
+            (Cuint, Ptr{Cwchar_t}, Cint),
+            idInstance, wstring(server), CP_WINUNICODE)
+        if hszServer == C_NULL throw(ErrorException("DdeCreateStringHandleW error")) end
+        hszTopic = ccall((:DdeCreateStringHandleW, "user32"), stdcall,
+            Ptr{Void},
+            (Cuint, Ptr{Cwchar_t}, Cint),
+            idInstance, wstring(topic), CP_WINUNICODE)
+        if hszTopic == C_NULL throw(ErrorException("DdeCreateStringHandleW error")) end
+        hConvClient = ccall((:DdeConnect, "user32"), stdcall,
+            Ptr{Void},
+            (Cuint, Ptr{Void}, Ptr{Void}, Ptr{Void}),
+            idInstance, hszServer, hszTopic, C_NULL)
+        if hConvClient == C_NULL throw(ErrorException("DdeConnect error")) end
+        hDdeData = ccall((:DdeCreateDataHandle, "user32"), stdcall,
+            Ptr{Void},
+            (Cuint, Ptr{Cwchar_t}, Cuint, Cuint, Ptr{Void}, Cuint, Cuint),
+            idInstance, wstring(command), (length(command) + 1)*sizeof(Cwchar_t), 0, C_NULL, CF_UNICODETEXT, 0)
+        if hDdeData == C_NULL throw(ErrorException("DdeCreateDataHandle error")) end
+        hDdeTransactionData = ccall((:DdeClientTransaction, "user32"), stdcall,
+            Ptr{Void},
+            (Ptr{Void}, Cuint, Ptr{Void}, Ptr{Void}, Cuint, Cuint, Cuint, Ptr{Cuint}),
+            hDdeData, convert(Cuint, -1), hConvClient, C_NULL, 0, XTYP_EXECUTE, TIMEOUT, C_NULL)
+        if hDdeTransactionData == C_NULL throw(ErrorException("DdeClientTransaction error")) end
+    finally
+        if hDdeTransactionData != C_NULL ccall((:DdeFreeDataHandle, "user32"), stdcall,
+            Cint,
+            (Ptr{Void},),
+            hDdeTransactionData) end
+        if hDdeData != C_NULL ccall((:DdeFreeDataHandle, "user32"), stdcall,
+            Cint,
+            (Ptr{Void},),
+            hDdeData) end
+        if hszServer != C_NULL ccall((:DdeFreeStringHandle, "user32"), stdcall,
+            Cint,
+            (Cuint, Ptr{Void}),
+            idInstance, hszServer) end
+        if hszTopic != C_NULL ccall((:DdeFreeStringHandle, "user32"), stdcall,
+            Cint,
+            (Cuint, Ptr{Void}),
+            idInstance, hszTopic) end
+        if hConvClient != C_NULL ccall((:DdeDisconnect, "user32"), stdcall,
+            Cint,
+            (Ptr{Void},),
+            hConvClient) end
+        if idInstance != 0 ccall((:DdeUninitialize, "user32"), stdcall,
+            Cint,
+            (Cuint,),
+            idInstance) end
+    end
 end
 
 if !isinteractive()
