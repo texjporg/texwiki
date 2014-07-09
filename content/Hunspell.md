@@ -16,13 +16,13 @@ pukiwiki: "Hunspell"
 Hunspell はスペルチェッカーです．<br>
 
 - [Hunspell](http://hunspell.sourceforge.net/)
-- [NHunspell](http://nhunspell.sourceforge.net/)
 
 以下のフリーソフトウェア (オープンソースソフトウェア) の統合環境・エディタで使用されています．
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [TeXworks](/TeXworks/)
+- TexitEasy
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
 ### 辞書 {#q4b7f294}
@@ -32,6 +32,10 @@ Hunspell はスペルチェッカーです．<br>
 - [http://sourceforge.net/projects/lyxwininstaller/files/hunspell/](http://sourceforge.net/projects/lyxwininstaller/files/hunspell/)
 
 などから入手できます．
+
+### 派生版 {#z489a458}
+
+- [NHunspell](http://nhunspell.sourceforge.net/)
 
 ## Installation {#y7b755eb}
 
