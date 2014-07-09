@@ -130,6 +130,10 @@ ulimit -t 10 -f 1024
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [compileonline.com](http://www.compileonline.com/)
 
+### Web で数式 {#m2a3514f}
+
+- [mimeTeX](/mimeTeX/)
+
 ### 関連リンク {#cfaeb364}
 
 - [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
