@@ -45,7 +45,7 @@ Windows, OS X, Linux
 
 ### License {#ibc5e002}
 
-[GPL](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
+[GPLv3, GPLv2](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
 
 ### リリース情報 {#d961699f}
 
@@ -84,11 +84,12 @@ monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,kart
 
 を記述して Inkscape を再起動するとメイリオで表示されるようになりました．
 
-## PDF+LaTeX/EPS+LaTeX/PS+LaTeX {#d6b72996}
+## PDF/EPS/PS + LaTeX {#d6b72996}
 
-- [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
-- [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
-- [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
+- [Inkscape Wiki](http://wiki.inkscape.org)
+    - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
+    - [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
+    - [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
 - [svg-inkscape](http://www.ctan.org/pkg/svg-inkscape), [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html)
     - 使い方は texdoc で確認してください
 
