@@ -236,7 +236,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
 
-- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), TexitEasy などは PDF ファイルビューアを内蔵しています．
 - [Evince](/Evince/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
