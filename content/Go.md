@@ -21,6 +21,8 @@ Go は汎用プログラミング言語です．<br>
 - [http://golang-jp.org/](http://golang-jp.org/)
     - [https://github.com/gophersjp/go](https://github.com/gophersjp/go)
 - [https://code.google.com/p/go/](https://code.google.com/p/go/)
+- [http://stackoverflow.com/questions/tagged/go](http://stackoverflow.com/questions/tagged/go)
+    - [http://stackoverflow.com/questions/22153309/extension-methods-in-golang](http://stackoverflow.com/questions/22153309/extension-methods-in-golang)
 
 ### ChangeLog {#pdc98ad9}
 
@@ -167,8 +169,8 @@ func runSumatraPDF() {
     dwType := uint32(0)
     sz := uint32(0)
     var sumatrapdfRegistry [1024]uint16
-    const keyPath = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\SumatraPDF.exe"
-    sumatrapdf := "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"
+    const keyPath = `SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe`
+    sumatrapdf := `C:\Program Files\SumatraPDF\SumatraPDF.exe`
     existSumatraPDF := false
 
     regOpenKeyExW.Call(
@@ -210,7 +212,7 @@ func runSumatraPDF() {
     if existSumatraPDF {
         sumatrapdfCommandLine = "\"" + sumatrapdf + "\"" + " -reuse-instance"
     } else {
-        sumatrapdfCommandLine = "C:\\Windows\\System32\\rundll32 shell32,ShellExec_RunDLL SumatraPDF" + " -reuse-instance"
+        sumatrapdfCommandLine = `C:\Windows\System32\rundll32 shell32,ShellExec_RunDLL SumatraPDF` + " -reuse-instance"
     }
 
     si := syscall.StartupInfo{}
