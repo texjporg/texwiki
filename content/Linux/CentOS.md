@@ -35,6 +35,7 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 - [CentOS project](http://www.centos.org/)
 - [FrontPage - CentOS Wiki](http://wiki.centos.org/)
+- [Systemdコマンド早見表(CentOS 7対応)](http://blog.yuryu.jp/2014/07/systemd-quick-guide.html)
 
 ### ミラーサイト {#tf7026af}
 
