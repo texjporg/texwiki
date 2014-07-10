@@ -727,7 +727,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#m5a5dc1e}
 
-- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), TexitEasy などは PDF ファイルビューアを内蔵しています．
 - [SumatraPDF](/SumatraPDF/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．[SumatraPDF](/SumatraPDF/) などで使われています．
 - [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks などで使われています．
