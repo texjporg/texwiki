@@ -105,7 +105,7 @@ LuaJITLaTeX を実行すると以下のような MessageBox が表示されま�
 
 ***
 
-<span style="color:Black;background-color:#ACDEFE;"><ins>　<strong>LuaJITTeX</strong>　　　　　　　　<span style="color:Black;background-color:#CC3333;">\[　 <span style="color:White;"><strong>✕</strong></span> 　\]</span> </ins></span><br>
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　<span style="color:Black;"><strong>LuaJITTeX</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Happy LuaJITLaTeXing!
 
