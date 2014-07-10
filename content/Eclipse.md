@@ -9,8 +9,6 @@ pukiwiki: "Eclipse"
 
 ## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/thumb/5/55/Eclipse-logo-2014.svg/500px-Eclipse-logo-2014.svg.png" alt="Eclipse" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
