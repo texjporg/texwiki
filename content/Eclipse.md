@@ -43,7 +43,7 @@ Eclipse は Java アプリケーションなので Java のランタイムが必
 
 ## Eclipse のインストール {#r143ba66}
 
-Windows の場合 [Pleiades All in One](http://mergedoc.sourceforge.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
+Windows の場合 [Pleiades All in One](http://mergedoc.osdn.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
@@ -51,7 +51,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 を解凍し，
 
-- [Pleiades 本体の最新版](http://mergedoc.sourceforge.jp/) (Eclipse 本体とプラグインの日本語化)
+- [Pleiades 本体の最新版](http://mergedoc.osdn.jp/) (Eclipse 本体とプラグインの日本語化)
 
 を Eclipse のルートフォルダに解凍して eclipse.ini の最終行に
 
@@ -68,7 +68,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 ## 関連リンク {#o908ecbb}
 
 - Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
-- Pleiades - [http://mergedoc.sourceforge.jp/](http://mergedoc.sourceforge.jp/)
+- Pleiades - [http://mergedoc.osdn.jp/](http://mergedoc.osdn.jp/)
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
 - [OpenJDK](http://openjdk.java.net/)
