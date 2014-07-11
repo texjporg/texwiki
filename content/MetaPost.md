@@ -538,7 +538,7 @@ pool ファイルは無くなっています。) 1.501 から mem ファイル�
 TeX Live 2013 では MetaPost のバージョンは 1.803 になっています。eps, svg に加えてビットマップの png
 も出力可 (outputformat := "png";)。
 
-TeX Live 2014 には バージョン 1.902 が入る予定です。
+TeX Live 2014 には バージョン 1.902 が入っています。
 
 Version 1.999 では -numbersystem=binary, および -numbersystem=decimal
 の場合に，numberprecision が使用できます。最大値は 1000 になっています。
