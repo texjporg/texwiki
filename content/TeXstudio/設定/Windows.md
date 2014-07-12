@@ -209,9 +209,9 @@ DviPng
 Ps2Pdf
 : &nbsp;
 
-: ps2pdf.bat %.ps
-
 : ps2pdf.exe %.ps
+
+: ps2pdf.bat %.ps
 
 DviPdf
 : &nbsp;
