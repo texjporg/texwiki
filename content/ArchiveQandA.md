@@ -70,10 +70,9 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
 ## 画像の作り方、扱い方 {#kbcf5f4a}
 
-- “! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically.”というエラーが出て画像（PDF, PNG, JPG ファイル）が取り込めない
-    - 画像に対応する“枠”を記述した .xbb ファイル（Bounding Box）がないからです。<br>
-        [TeX入門/図表#図のファイル形式に応じた記述法・設定法](</TeX入門/図表/#o967961d>)を参照します．<br>
-        PDF ファイルの場合は texmf.cnf に
+- TeX Live 2014 で“runpopen command not allowed: extractbb ! LaTeX Error: Cannot run pipe command. Try --shell-escape”というエラーが出て画像が取り込めない
+    - 画像に対応する“枠”(Bounding Box) を出力するためのコマンド extractbb が実行できないからです。<br>
+        texmf.cnf に
 
         ```
         shell_escape_commands = \
@@ -85,21 +84,6 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
         ```
 
         を記述してプリアンブルに
-
-        ```
-        \usepackage[dvipdfmx]{graphicx}
-        ```
-
-        を記述します．<br>
-        PNG ファイルの場合はプリアンブルに
-
-        ```
-        \usepackage[dvipdfmx]{graphicx}
-        \usepackage{bmpsize}
-        ```
-
-        を記述します．<br>
-        JPG ファイルの場合はプリアンブルに
 
         ```
         \usepackage[dvipdfmx]{graphicx}
