@@ -103,13 +103,6 @@ yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペースト�
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 [&#x7e;/.emacs.d/init.el 見せてください．](/YaTeX/#uc0145ec) を参照して設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
-.xbb がないと怒られる場合は [TeX入門/図表#図のファイル形式に応じた記述法・設定法](</TeX入門/図表/#o967961d>) を参照して texmf.cnf の shell_escape_commands に extractbb を追加してください．<br>
-追加できない場合は以下のように -shell-escape を追加してもいいです．→ [https://twitter.com/UEDA_Hiroshi/status/406738419058876416](https://twitter.com/UEDA_Hiroshi/status/406738419058876416)
-
-```
-(setq tex-command "ptex2pdf -u -l -ot \"-shell-escape -kanji=utf8 -no-guess-input-enc -synctex=1\"")
-```
-
 SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search をタイプします．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 fwdsumatrapdf の forward search は C-c w または M-x fwdsumatrapdf-forward-search をタイプします．<br>
@@ -948,7 +941,7 @@ TeX ソースの先頭行に例えば，
 - [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okada.jp.org/RWiki/?Sweave%A4%C7%A5%A8%A5%C7%A5%A3%A5%BF%A4%C8DVI%A5%D3%A5%E5%A1%BC%A5%A2%B4%D6%A4%CE%C1%EA%B8%DF%B0%DC%C6%B0)
 - [MacWiki - CarbonEmacsAndYatex](http://macwiki.sourceforge.jp/wiki/index.php/CarbonEmacsAndYatex)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
-- [「わたしのやてふ環境」独り反省会](http://d.hatena.ne.jp/munepi/20111023/texconf11lt)
+- [http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX](http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX)
 - [yatex-modeになったときにマイナーモードcdlatexを起動する](http://d.hatena.ne.jp/daharu/20111106/1320562641)
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [File #osqaqi27-12106](http://www.sourcepod.com/osqaqi27-12106)
