@@ -11,6 +11,5 @@ pukiwiki: "ReVIEW"
 
 - [Re:VIEW](https://github.com/kmuto/review)
 - [Re:VIEW フォーマット](https://github.com/kmuto/review/blob/master/doc/format.rdoc)
-    <!-- -[[ReVIEW の使い方:http://d.hatena.ne.jp/Kenji_s/20110927/1317105278]] -->
-
+- [BasicTeXをインストールしてReVIEWでpdfを生成するまで](http://masawada.hatenablog.jp/entry/2014/07/12/153947)
 - [http://qiita.com/tags/review](http://qiita.com/tags/review)
