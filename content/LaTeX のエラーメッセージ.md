@@ -412,28 +412,6 @@ LaTeX のカウンタの値を \alph，\Alph，\fnsymbol などで文字列化�
     パッケージ類のインストールを行った際には mktexlsr（に相当する処理）
     も行ってファイル ls-R を更新してください．
 
-- ! LaTeX Error: File \`filename.xbb' not found. Use -shell-escape option to generate automatically. と表示される場合は<br>
-    Windows PowerShell またはコマンド プロンプトで画像ファイルのあるディレクトリに移動します．<br>
-    PDF ファイルの場合は
-
-    ```
-    extractbb filename.pdf
-    ```
-
-    PNG ファイルの場合は
-
-    ```
-    extractbb filename.png
-    ```
-
-    JPG ファイルの場合は
-
-    ```
-    extractbb filename.jpg
-    ```
-
-    を実行します．すると、filename.pdf または filename.png または filename.jpg と同じディレクトリに filename.xbb ファイルが作られ、画像が取り込めるようになります．
-
 - LaTeX のクラスファイルやパッケージは，
     cls ファイルや sty ファイルそのものではなく
     dtx ファイルと ins ファイルの形で配布されることもあります．
