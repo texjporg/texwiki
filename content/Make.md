@@ -240,12 +240,14 @@ distclean: clean
 
 ### 画像やLaTeXファイルが挿入されている場合 {#mf500793}
 
-Makeは基本的に、必須項目として指定されているファイルが更新された場合に実行されます。
-LaTeXソースファイルで \includegraphics 命令によって挿入された画像や、\include や \input 命令で挿入された LaTeX ファイルが更新されていても、上記の Makefile では Make が実行されず反映されないことがあります。
+Makeは基本的に、必須項目として指定されているファイルが更新された場合に実行されます。<br>
+LaTeXソースファイルで \includegraphics 命令によって挿入された画像や、\include や \input 命令で挿入された LaTeX ファイルが更新されていても、上記の Makefile では Make が実行されず反映されないことがあります。<br>
 
-さらに、EPS以外の形式の画像ファイルを挿入しているときは、.xbb（バウンディング情報ファイル）が必要です（LaTeXの設定により、.xbbファイル作成を明示しなくても、エラーにならない場合もあります）。
+さらに、PDF, PNG, JPEG 形式の画像ファイルを挿入しているときは、バウンディング情報が必要です。
 
-そのため、画像および.xbbファイルやLaTeXファイルの依存関係は、Makefileに反映する必要があります。たとえば、画像 tiger.pdf を挿入している場合は、次のようにMakefileを記述します。「test.dvi: tiger.pdf tiger.xbb」が、画像および.xbbファイルの依存関係を表します。また、パターンルールで.xbbファイルの作成方法を設定しています。
+そのため、画像ファイルおよびLaTeXファイルの依存関係は、Makefileに反映する必要があります。<br>
+たとえば、画像 tiger.pdf を挿入している場合は、次のようにMakefileを記述します。<br>
+「test.dvi: tiger.pdf」が、画像ファイルの依存関係を表します。<br>
 
 ```
 TARGET := test.pdf
@@ -256,7 +258,7 @@ CNT := 1
 
 all: $(TARGET)
 
-test.dvi: tiger.pdf tiger.xbb
+test.dvi: tiger.pdf
 
 clean:
 	$(RM) *.aux *.log *.dvi
@@ -270,9 +272,6 @@ distclean: clean
 %.dvi: %.tex
 	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
 	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then uplatex -interaction=batchmode $<; else exit 0; fi; done
-
-%.xbb: %.pdf
-	extractbb $<
 ```
 
 #### 挿入された画像やLaTeXファイルの調査 {#h0229340}
