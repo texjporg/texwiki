@@ -11,8 +11,9 @@ pukiwiki: "Lisp"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Lisp {#ge8108db}
+## Summary {#ge8108db}
 
+- [Wikipedia.en:Lisp\_(programming_language)](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29)
 - [Wikipedia.ja:LISP](https://ja.wikipedia.org/wiki/LISP)
 - [Lisp Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com//advent-calendar/2013/lisp)
 
@@ -41,6 +42,7 @@ pukiwiki: "Lisp"
 
 - [Emacs](/Emacs/)
 
-## Lisp on TeX {#ha83bcef}
+## LISP on TeX {#ha83bcef}
 
 - [http://www.ctan.org/tex-archive/macros/latex/contrib/lisp-on-tex](http://www.ctan.org/tex-archive/macros/latex/contrib/lisp-on-tex)
+- [「LISP on TeX」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=LISP%20on%20TeX)
