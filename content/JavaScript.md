@@ -29,12 +29,13 @@ pukiwiki: "JavaScript"
 - [FirefoxのJavaScriptデバッガ拡張Firebugの進化がすごい](http://efcl.info/2011/0424/res2647/)
 - [今更だけどFirefoxでJavaScriptを無効化する方法をメモ（アドオン未使用）](http://ideahacker.net/2013/10/21/6676/)
 
-## JavaScript を出力できる言語 {#ya021e3a}
+## JavaScript を出力できる言語 (altJS) {#ya021e3a}
 
 - [https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS](https://github.com/jashkenas/coffee-script/wiki/List-of-languages-that-compile-to-JS)
 - [Dart](https://www.dartlang.org/)
 - [TypeScript](http://www.typescriptlang.org/)
 - [Haxe](http://haxe.org/)
+- [Ć](http://cito.sourceforge.net/)
 - [JSX](http://jsx.github.io/)
 - [CoffeeScript](http://coffeescript.org/)
 - [GorillaScript](http://ckknight.github.io/gorillascript/)
