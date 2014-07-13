@@ -465,7 +465,7 @@ dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます。<b
 EPS 挿入には外部プログラムとして Ghostscript が必要です。<br>
 ベクトル画像は PDF 形式，ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう。<br>
 
-#### バウンディングボックス（BoundingBox）ファイルの作成 {#rf074b4b}
+#### extractbb の自動実行 {#rf074b4b}
 
 [W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて， <!-- ここはextractbbの自動実行の話なのでbmpsizeが出てくるのは不適当. -->
 
@@ -473,7 +473,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です。<br
 \usepackage[dvipdfmx]{graphicx}
 ```
 
-のようにすると，自動的に extractbb が実行されるので，バウンディングボックスファイルをあらかじめ作成しておく必要はありません。<br>
+のようにすると，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません。<br>
 
 [TeX Live](</TeX Live/>) 2014, [MacTeX](/Mac/#mactex)-2014 では extractbb の実行は自動化されていません。<br>
 自動化したい場合は
@@ -506,25 +506,30 @@ mktexlsr
 
 を実行します。
 
-自動的に extractbb が実行されない場合は，あらかじめ Windows PowerShell またはコマンド プロンプトで
-
-```
-extractbb zu.png
-```
-
-と打ち込んで zu.xbb というバウンディングボックスファイルを作っておきます。
-
 また，LaTeX ファイル中では
 
 ```
 \usepackage[dvipdfmx]{graphicx}
+\usepackage{bmpsize}
 ...
 \includegraphics[width=8cm]{zu.png}
 ```
 
-のようにして graphicx
-パッケージを読み込む際に必ず \[dvipdfmx\] オプションを与えます。<br>
-これで LaTeX と dvipdfmx で処理します。<br> <!-- TODO:bmpsizeの説明を入れる. このページじゃない気がするけど. -->
+のようにします。<br>
+graphicx パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます。<br>
+
+```
+\usepackage[dvipdfmx]{graphicx}
+```
+
+PNG, JPEG 画像を include する場合は
+
+```
+\usepackage{bmpsize}
+```
+
+も記述します．<br>
+これを LaTeX と dvipdfmx で処理します。<br>
 
 Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます。<br>
 詳しくは [Ghostscript](/Ghostscript/)
@@ -581,7 +586,7 @@ TeX Live では，“-Ppdf” オプションは不要です。<br>
 
 欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします。
 
-通常のドキュメントクラスでは，\[a4paper\] オプションを付けても，Acrobat Distiller
+通常のドキュメントクラスでは，a4paper オプションを付けても，Acrobat Distiller
 のデフォルト設定では用紙がレターサイズになってしまいます。<br>
 A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
 に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）。<br>
@@ -595,8 +600,7 @@ A4 にするには，Distiller のジョブオプションの設定でページ�
 \usepackage[dvips]{graphicx}
 ```
 
-のように \[dvips\]
-オプションを指定します。<br>
+のように dvips オプションを指定します。<br>
 図として EPS を挿入できます。<br>
 
 ### 図の描き方 {#yca8607c}
