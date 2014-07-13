@@ -133,6 +133,15 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 - [xetex \[WIN32\]: Accept Unicode characters from STDIN on console](http://sourceforge.net/p/xetex/code/ci/3aff45f7aa7128fb489e2f0c78738a365d3dd630/)
 - [xetex \[win32\]: Display output of Unicode characters on console](http://sourceforge.net/p/xetex/code/ci/1da0e01d6a99108f284953aac94b4f874bdd997f/)
 
+## 不具合 {#u41787d2}
+
+### Windows 版 の TeX Live 2014, W32TeX において [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325) → \setmainfont{ipam.ttf} を使用する {#ne138062}
+
+Windows 版 の TeX Live 2014, W32TeX において XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．<br>
+この場合は \setmainfont{ipam.ttf} を使用すれば OK です．<br>
+
+- [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
+
 ## インストール {#p3eca5bb}
 
 ### Windows でのインストール {#j287e7c2}
