@@ -119,7 +119,7 @@ pukiwiki: "PDFの作り方"
 
 ## LaTeX で PDF {#k0e3280f}
 
-(La)TeX のインストールについては
+LaTeX のインストールについては
 [Windows へのインストール](</Microsoft Windows/>)，
 [OS X へのインストール](/Mac/)，
 [Linux へのインストール](/Linux/)
@@ -127,17 +127,24 @@ pukiwiki: "PDFの作り方"
 
 ### 要約 {#gf004f58}
 
-TeX で日本語の PDF ファイルを作る場合の標準的な方法は，dvipdfmx を使うものです。<br>
+#### 日本語の PDF ファイルを作成する場合 {#j5accec9}
+
+upLaTeX で日本語の PDF ファイルを作る場合は dvipdfmx を使用します。<br>
 具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください。<br>
 
-dvipdfmx 以外の方法としては，dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
-で PDF に変換するものがあります。<br>
+dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
+で PDF に変換する方法もあります。<br>
 詳しくは [dvips の使い方](#lf015a28) をご覧ください。<br>
 
-欧文のみの原稿ならば，pdfLaTeX が簡単です。<br>
-BXcjkjatype を使用すると pdfLaTeX で日本語の PDF ファイルも作成できます。<br>
+#### 欧文のみの PDF ファイルを作成する場合 {#sb4de6fd}
 
-Unicode を使用する場合は，[LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) がおすすめです。<br>
+欧文のみの原稿ならば，pdfLaTeX が簡単です。<br>
+[BXcjkjatype](/LaTeX-CJK/) を使用すると pdfLaTeX で日本語の PDF ファイルも作成できます。<br>
+
+#### Unicode を使用して多言語 PDF ファイルを作成する場合 {#ff1f7cd1}
+
+Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) がおすすめです。<br>
+日本語の PDF ファイルを作成する場合は [LuaTeX-ja](/LuaTeX-ja/) や [ZXjatype](/xeCJK/) を使用します．<br>
 
 #### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
 
@@ -197,7 +204,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 
 ### 読み手に親切な PDF ファイルの作り方 {#hb3bee4c}
 
-- 目次から本文のページなどへリンクジャンプ可能だと読み手が楽です。例としてプリアンブルに下記を入れると良いようです。
+- 目次から本文のページなどへリンクジャンプ可能だと読み手が楽です。dvipdfmx を使用する場合はプリアンブルに下記を入れると良いようです。
 
     ```
     \usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,urlcolor=black,%
@@ -410,13 +417,10 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
 きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。<br>
 処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません。<br>
 
-Acrobat をお持ちであれば Windows 上でダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます。<br>
+Acrobat をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます。<br>
 dvipdfmx を使うほうがトラブルは少ないかもしれません。<br>
 
-dvips はできるだけ新しいものを使いましょう。<br>
-W32TeX の場合は Computer Modern Type 1 フォントの入った t1fonts.tar.xz も必ずインストールしておきます。<br>
-
-foo.dvi という DVI ファイルを Distiller 入力用の PostScript ファイル foo.ps
+foo.dvi という DVI ファイルを PostScript ファイル foo.ps
 に変換するには，W32TeX では Windows PowerShell またはコマンド プロンプトで次のように打ち込みます。<br>
 
 ```
@@ -450,45 +454,45 @@ A4 にするには，Distiller のジョブオプションの設定でページ�
 
 <div style="text-align:right">See <a href="/TeX入門/図表/">TeX入門/図表</a>, <a href="/描画・グラフツール/">描画・グラフツール</a></div>
 
-せっかく PDF にするのなら図はペイント系（ラスターグラフィックツール）ではなくドロー系（ベクトルグラフィックツール）で描きましょう。
-前者は拡大するとギザギザになりますが，後者はいくら拡大しても滑らかです。
+せっかく PDF にするのなら図はペイント系（ラスターグラフィックツール）ではなくドロー系（ベクトルグラフィックツール）で描きましょう。<br>
+ペイント系は拡大するとギザギザになりますが，ドロー系はいくら拡大しても滑らかです。<br>
 
 フリーソフトウェアでは
 [Inkscape](/Inkscape/)，[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/)
 Draw
-などがドロー系，[GIMP](https://ja.wikipedia.org/wiki/GIMP) などがペイント系です。
+などがドロー系，[GIMP](https://ja.wikipedia.org/wiki/GIMP) などがペイント系です。<br>
 ラスターイメージとして出力するなら
-[Blender](https://ja.wikipedia.org/wiki/Blender) も使えます。
+[Blender](https://ja.wikipedia.org/wiki/Blender) も使えます。<br>
 
-商品では [Illustrator](/Illustrator/) や Visio がドロー系，Photoshop がペイント系です。
+商品では [Illustrator](/Illustrator/) や Visio がドロー系，Photoshop がペイント系です。<br>
 
-ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます。
-dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, LuaJITTeX/LuaJITLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう。
+ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます。<br>
+dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, LuaJITTeX/LuaJITLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう。<br>
 
 [gnuplot](https://okumuralab.org/~okumura/linux/?gnuplot) などのグラフツールも PDF 形式や EPS 形式で出力できます。([28.6 グラフを画像として保存する | HWB](http://hwb.ecc.u-tokyo.ac.jp/current/applications/gnuplot/output/), [GNUPLOTを用いたグラフ作成](http://www.cse.kyoto-su.ac.jp/~oomoto/lecture/program/gnuplot/gnuplot.html), [gnuplotの出力をマージンを調整してpdfに変換する](http://d.hatena.ne.jp/yambi/20130717/1374064507), [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html))
 
-Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です。
+Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です。<br>
 画面や非 PostScript プリンターへの出力ではラスター画像が使われ，PostScript
-プリンター（Distiller も含む）への出力にはベクトル画像が使われます。
-LaTeX に挿入するときはプレビュー画像は不要です。
+プリンター（Distiller も含む）への出力にはベクトル画像が使われます。<br>
+LaTeX に挿入するときはプレビュー画像は不要です。<br>
 
 画面キャプチャーなどのラスター画像は，dvips などを使って PS を作るなら，EPS
-に変換しておくといいでしょう。
+に変換しておくといいでしょう。<br>
 Illustrator や Acrobat などに貼り付けたり開いたりしてから EPS
 で保存することもできますし，[ImageMagick](http://www.imagemagick.org/)
 や [sam2p](https://code.google.com/p/sam2p/)
-などのツールを使う方法もあります。
+などのツールを使う方法もあります。<br>
 
 PostScript Level 2 の EPS は JPEG 形式を含んでいますので，
-正しいツールを使えば，サイズをあまり変えずに JPEG → EPS 変換できます。
-詳しくは「[変換ツール](</変換ツール/>)」の項目をご覧ください。
+正しいツールを使えば，サイズをあまり変えずに JPEG → EPS 変換できます。<br>
+詳しくは「[変換ツール](</変換ツール/>)」の項目をご覧ください。<br>
 
-ドロー系の図には太さ 0.1 mm 以下の線を含めないでください。
-高解像度のイメージセッタで出力すると見えなくなってしまいます。
+ドロー系の図には太さ 0.1 mm 以下の線を含めないでください。<br>
+高解像度のイメージセッタで出力すると見えなくなってしまいます。<br>
 
-写真などのラスター画像の場合，解像度は 300&ndash;600 dpi でかまいません。
+写真などのラスター画像の場合，解像度は 300&ndash;600 dpi でかまいません。<br>
 
-dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG で保存しておくほうが楽です。
+dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG で保存しておくほうが楽です。<br>
 
 <!-- ***DVI/PDF 両形式を作成する場合の，画像の用意の仕方 [#l580b75f] -->
 <!-- RIGHT:[[qa:32795]] -->
@@ -627,43 +631,43 @@ control printers
 を実行して［デバイスとプリンター］画面を表示します．<br>
 ［プリンターと FAX］にある「Adobe PDF」プリンターが「通常使うプリンターに設定」されていることを確認します。<br>
 
-テンプレートが指定されている場合には，それをユーザテンプレート用のフォルダに入れておきます。
+テンプレートが指定されている場合には，それをユーザテンプレート用のフォルダに入れておきます。<br>
 ユーザテンプレート用のフォルダは，Word
 を立ち上げて ［ツール］ → ［オプション］ → ［規定のフォルダ］ で確認できます
-（見にくい場合には，とりあえず［変更］を押してみるといいでしょう）。
+（見にくい場合には，とりあえず［変更］を押してみるといいでしょう）。<br>
 
-Word を立ち上げます。
-テンプレートがあるなら「新規作成」でテンプレート名を指定します。
-テンプレートがないなら，［ファイル］ → ［ページ設定］ で決められた値を設定します。
-用紙は，日欧では A4，米国ではレターサイズが一般的です。
+Word を立ち上げます。<br>
+テンプレートがあるなら「新規作成」でテンプレート名を指定します。<br>
+テンプレートがないなら，［ファイル］ → ［ページ設定］ で決められた値を設定します。<br>
+用紙は，日欧では A4，米国ではレターサイズが一般的です。<br>
 
-欧文論文なら，すぐにフォントを欧文フォントに切り替えます。
+欧文論文なら，すぐにフォントを欧文フォントに切り替えます。<br>
 理系論文用の欧文フォントとしては，本文は Times New Roman，見出しは Arial
-が一般的です。
+が一般的です。<br>
 ちなみに Word で Century
-を使うとイタリック体が本来のイタリック体ではなく機械的に斜めにしたものになってしまいます。
+を使うとイタリック体が本来のイタリック体ではなく機械的に斜めにしたものになってしまいます。<br>
 
-欧文論文では全角文字は一切使ってはいけません。
-記号類は Symbol フォントを使いましょう。
+欧文論文では全角文字は一切使ってはいけません。<br>
+記号類は Symbol フォントを使いましょう。<br>
 
-欧文・和文を問わず，ローマ数字は I，II，III，IV，V のように欧文アルファベットを並べて表します。
+欧文・和文を問わず，ローマ数字は I，II，III，IV，V のように欧文アルファベットを並べて表します。<br>
 
-和文論文なら，本文は「リュウミンL-KL」，見出しは「中ゴシックBBB」にします。
+和文論文なら，本文は「リュウミンL-KL」，見出しは「中ゴシックBBB」にします。<br>
 これらのフォントが一覧に現れない場合には，「Acrobat
-Distiller」プリンターが「通常使うプリンターに設定」されていないことが考えられます。
+Distiller」プリンターが「通常使うプリンターに設定」されていないことが考えられます。<br>
 
-和文フォントの文字飾り（ボールド，斜体，ワードアートなど）は使ってはいけません。
+和文フォントの文字飾り（ボールド，斜体，ワードアートなど）は使ってはいけません。<br>
 
-挿入する図についても，フォントは正しく設定しましょう。
-Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっていませんか。
+挿入する図についても，フォントは正しく設定しましょう。<br>
+Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっていませんか。<br>
 
-完成したら，［ファイル］ → ［印刷］ でプリンター名が Acrobat Distiller になっていることを確認し，印刷します。
-PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます。
+完成したら，［ファイル］ → ［印刷］ でプリンター名が Acrobat Distiller になっていることを確認し，印刷します。<br>
+PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます。<br>
 
 Adobe Reader （または Adobe Acrobat） が立ち上がりますので，
-拡大して文字がギザギザにならないことを確認します。
+拡大して文字がギザギザにならないことを確認します。<br>
 また，全ページをスクロールし表示した後で，［ファイル］ → ［プロパティ］ → ［フォント］
-ですべての使用フォントを確認します。
+ですべての使用フォントを確認します。<br>
 確認項目：
 
 - 欧文フォントの「実際のフォント」（4.0 では「使用フォント」）が（Times，Helvetica
@@ -671,16 +675,16 @@ Adobe Reader （または Adobe Acrobat） が立ち上がりますので，
 
 - 和文の場合には，和文フォントの「オリジナルフォント」（4.0 では「PDFのフォント」）が「リュウミンL-KL」と「中ゴシックBBB」になっている
 
-紙に印刷するには，Word ではなく Adobe Reader （または Adobe Acrobat） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します。
-印刷ダイアログの「用紙サイズに合わせてページを縮小」はデフォルトでオンになっているようですが，等サイズで印刷するときはオフにしておかないと微妙に縮小されることがあります。
-「画像として印刷」もオフにしておかないとガタガタの印刷になります。
-「2バイトフォントのダウンロード」も通常はオフにします。
+紙に印刷するには，Word ではなく Adobe Reader （または Adobe Acrobat） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します。<br>
+印刷ダイアログの「用紙サイズに合わせてページを縮小」はデフォルトでオンになっているようですが，等サイズで印刷するときはオフにしておかないと微妙に縮小されることがあります。<br>
+「画像として印刷」もオフにしておかないとガタガタの印刷になります。<br>
+「2バイトフォントのダウンロード」も通常はオフにします。<br>
 
-Word の極細 (0.25 pt) の罫線は使わないほうが無難です。
-画面では見えても，印刷すると飛んでしまうことがあります。
-これは他のソフトでも同様です。
+Word の極細 (0.25 pt) の罫線は使わないほうが無難です。<br>
+画面では見えても，印刷すると飛んでしまうことがあります。<br>
+これは他のソフトでも同様です。<br>
 
-なお，PDF ではなく Word のファイルとして保存する場合には，プリンターフォントではなく Windows 標準の TrueType フォントを使わないと，開いた環境により文字がずれてしまいます。
+なお，PDF ではなく Word のファイルとして保存する場合には，プリンターフォントではなく Windows 標準の TrueType フォントを使わないと，開いた環境により文字がずれてしまいます。<br>
 
 「リュウミンL-KL」「中ゴシックBBB」にする意味ですが，こうしておけば埋め込まなくても Reader
 が適当なフォントに置き換えてくれるし，PDF
