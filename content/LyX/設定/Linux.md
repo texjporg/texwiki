@@ -142,8 +142,6 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
     - [Funtoo Linux](https://sites.google.com/site/6eskymemo/note/funtoo-linux)
     - [TeX/LyX 関連](https://sites.google.com/site/6eskymemo/note/tex-lyx)
 - [lyxで日本語を使う。(ubuntu 11.10)](http://d.hatena.ne.jp/hiroki_f/20111114/1321227216)
-- [lyxで日本語を使う。(ubuntu 11.04)](http://d.hatena.ne.jp/hiroki_f/20110928/1317173244)
-- [lyxで日本語を使う。(ubuntu 10.04)](http://d.hatena.ne.jp/hiroki_f/20100827/1282932912)
 - [Lyx 2.0 の設定](http://d.hatena.ne.jp/hasundue/20110710/1310300350)
 - [LyX2.0でpdfの画像ファイルを埋め込む](http://blogs.yahoo.co.jp/pentainformation/29055437.html)
 - [Lyxを使ってみました](http://d.hatena.ne.jp/mFumi/20090902/1251900233)
