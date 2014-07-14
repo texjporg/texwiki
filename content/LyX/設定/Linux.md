@@ -96,7 +96,7 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
-　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$t:$$n:0"</ins><br>
+　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$f:$$n:0"</ins><br>
 
 ***
 
