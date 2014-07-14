@@ -133,6 +133,8 @@ $ tlmgr update --self --all
 
 - [TeX Live texmf-localの扱いに関して。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1149)
 
+TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
+
 TEXMFLOCAL の値を確認します．<br>
 
 ```
