@@ -29,6 +29,27 @@ Windows, OS X, Linux
 
 - [https://github.com/Bramas/texiteasy/commits/master](https://github.com/Bramas/texiteasy/commits/master)
 
+## 不具合 {#k3a7bcbb}
+
+### OS X の TexitEasy で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう → Karabiner で Backslash が優先されるようにキーバインドを変更する {#g400e330}
+
+OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt-project.org/browse/QTBUG-10543)<br>
+Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
+
+***
+
+<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDD00;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+
+　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>Change Key</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
+　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins>　Change Yen　　　　　　　　　　　　　　　　　　</ins>)</span>　　☐ Show enabled only (1 item)　　　　　　　　　　<ins>\[ <strong>↻</strong> ReloadXML \]</ins><br>
+　　　　remapping<br>
+　　　　▼For Japanese<br>
+　　　　　　▼Change Yen(￥) Key<br>
+　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
+　　　　　　　　　　　　(except virtual machine, X11, RDC)<br>
+
+***
+
 ## 組み込みの PDF ビューアに日本語を表示させる {#f5e8075e}
 
 ### Windows の場合 {#la147e36}
