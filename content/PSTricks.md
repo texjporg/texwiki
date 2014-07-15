@@ -17,7 +17,7 @@ pukiwiki: "PSTricks"
 ### What is PSTricks {#v92f1d4b}
 
 PSTricks は TeX，LaTeX 文書ファイルの中で PostScript
-の命令を直接使って簡単に表現力豊かな描画ができる便利なパッケージ（スタイルファイル）です。
+の命令を直接使って簡単に表現力豊かな描画ができる便利なパッケージ（スタイルファイル）です。<br>
 ただし，dvi ファイルに \special で PostScript
 ヘッダ(プロファイル)の内容に依存した PostScript
 の命令を埋め込むので，<strong>dvi</strong> ドライバには、
@@ -29,31 +29,32 @@ PSTricks は TeX，LaTeX 文書ファイルの中で PostScript
 - PostScript を解釈せずに(ヘッダとユーザ・コマンドを埋め込むのみで)
     次の段階に受け渡す dvips(k), dvipsone, texture 等のドライバ
 
-のいずれかを、使う必要があります。 <!-- 現在では、ほとんど使われていない古いドライバにも --> <!-- PSTricks を部分的にサポートする物がいろいろあります。 --> <!-- xdvipdfmx は建前としては、 dvipdfmx の上位互換なので、 pTeX で生成した --> <!-- dvi ファイルも PDF に変換できる可能性が高いです。もちろん、そのためには --> <!-- xdvipdfmx 用の pstricks.con を使用しなければなりません。 -->
+のいずれかを、使う必要があります。<br> <!-- 現在では、ほとんど使われていない古いドライバにも --> <!-- PSTricks を部分的にサポートする物がいろいろあります。 --> <!-- xdvipdfmx は建前としては、 dvipdfmx の上位互換なので、 pTeX で生成した --> <!-- dvi ファイルも PDF に変換できる可能性が高いです。もちろん、そのためには --> <!-- xdvipdfmx 用の pstricks.con を使用しなければなりません。 -->
 PSTricks マクロの生成する PostScript コード断片は
 EPS や、 MetaPost の生成する疑似 EPS のように、
-独立して解釈できる物ではありません。
+独立して解釈できる物ではありません。<br>
 この辺りの事情も含め、<strong>dvi</strong> ドライバ固有の設定は pstricks.con ファイルに
-書き込んでおく事になっています。 pstricks.con では pstricks.tex で定義された、
+書き込んでおく事になっています。<br>
+pstricks.con では pstricks.tex で定義された、
 すべての TeX マクロを再定義できるので、特定のドライバのみ、異なる実装を
-使用して、他の方法では対応できない機能をサポートする事もできます。
-このファイルは dvi ドライバではなく、 TeX コンパイラの検索パスに置きます。
+使用して、他の方法では対応できない機能をサポートする事もできます。<br>
+このファイルは dvi ドライバではなく、 TeX コンパイラの検索パスに置きます。<br>
 <strong>dvi</strong> ドライバの生成物がプロファイルを埋め込んだ PostScript フォーマットの場合は、
 
-PostScript プリンタ（あるいは Ghostscript など）の利用が前提になります。
+PostScript プリンタ（あるいは Ghostscript など）の利用が前提になります。<br>
 PostScript 言語はスタックの積み降ろしを直接記述しなければならない、大変、
-低レベルの言語であり、設計思想もそれに準じた物になっています。
+低レベルの言語であり、設計思想もそれに準じた物になっています。<br>
 PostScript 命令への TeX マクロを通しての完全なアクセスを実現する、 PSTricks
 のコアのユーザ・インタフェースも、その影響もあり、
 METAFONT や [MetaPost](/MetaPost/)
 ほど洗練されていないかもしれませんが，
-PostScript でできることは何でもできます。
+PostScript でできることは何でもできます。<br>
 更に、<strong>ノード</strong>の概念と xkeyval を使う事により、高級言語としての
 ユーザ・インタフェースを与える事も可能であり、それを実現したパッケージには、
-pst-eucl や uml があります。
+pst-eucl や uml があります。<br>
 ドライバが対応していれば、
 日本語も使えますし，
-曲線のパス長も METAFONT や MetaPost より長くても大丈夫のようです。
+曲線のパス長も METAFONT や MetaPost より長くても大丈夫のようです。<br>
 
 ### History &amp; License {#qdc38f1e}
 
@@ -902,32 +903,122 @@ x 成分と y 成分は | で区切ります。
 ```
 
 これは、次数の低い Chebyshev 多項式の零点を図示する物です。
-まず、 Chebyshev 多項式を漸化式 <!-- #mimetex(T_{0}(x)=1) --> <!-- #mimetex(T_{1}(x)=x) --> <!-- #mimetex(T_{n+2}(x)=2xT_{n+1}(x)-T_{n}(x)) -->
-で定義します。 <!-- &mimetex(T_{n}(x)); -->
+まず、 Chebyshev 多項式を漸化式<br> <!-- #mimetex(T_{0}(x)=1) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑇</td><td></td><td rowspan="2">(𝑥)</td><td rowspan="2">=</td><td rowspan="2">1</td></tr>
+<tr><td>0</td></tr>
+</tbody>
+</table>
+
+<!-- #mimetex(T_{1}(x)=x) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑇</td><td></td><td rowspan="2">(𝑥)</td><td rowspan="2">=</td><td rowspan="2">𝑥</td></tr>
+<tr><td>1</td></tr>
+</tbody>
+</table>
+
+<!-- #mimetex(T_{n+2}(x)=2xT_{n+1}(x)-T_{n}(x)) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑇</td><td></td><td rowspan="2">(𝑥)</td><td rowspan="2">=</td><td rowspan="2">2𝑥𝑇</td><td></td><td rowspan="2">(𝑥)</td><td rowspan="2">&minus;</td><td rowspan="2">𝑇</td><td></td><td rowspan="2">(𝑥)</td></tr>
+<tr><td>𝑛 + 2</td><td>𝑛 + 1</td><td>𝑛</td></tr>
+</tbody>
+</table>
+
+で定義します。<br> <!-- &mimetex(T_{n}(x)); -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑇</td><td></td><td rowspan="2">(𝑥)</td></tr>
+<tr><td>𝑛</td></tr>
+</tbody>
+</table>
+
 をプロットし、 <!-- &mimetex(k=1,\ldots,n); -->
+𝑘=1,&#x2026;,𝑛
 に対し、このグラフと x 軸の交点のうち、 <!-- &mimetex(x=\frac{2(k-1)}{n}-1); -->
+
+<table>
+<tbody>
+<tr><td rowspan="3">𝑥</td><td rowspan="3">=</td><td style="text-align:center">2(𝑘&minus;1)</td><td rowspan="3">&minus;</td><td rowspan="3">1</td></tr>
+<tr><td>&#x2015;&#x2015;&#x2015;</td></tr>
+<tr><td style="text-align:center">𝑛</td></tr>
+</tbody>
+</table>
+
 の近傍にあるものを求め、 <!-- &mimetex(C_{k}); -->
-と名付けます。 <!-- &mimetex(n); -->
-が小さければ、これで、すべての零点が、洩れも重複もなく、求まります。 <!-- &mimetex(n); -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝐶</td><td></td></tr>
+<tr><td>𝑘</td></tr>
+</tbody>
+</table>
+
+と名付けます。<br> <!-- &mimetex(n); -->
+𝑛
+が小さければ、これで、すべての零点が、洩れも重複もなく、求まります。<br> <!-- &mimetex(n); -->
+𝑛
 が大きい時は、この場合、正確な値 <!-- &mimetex(-\cos\frac{(2k-1)\pi}{n}); -->
-が分かっている訳ですから、それを第一近似として与えてやれば良いでしょう。
+が分かっている訳ですから、それを第一近似として与えてやれば良いでしょう。<br>
 さて、 <!-- &mimetex(C_{k}); -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝐶</td><td></td></tr>
+<tr><td>𝑘</td></tr>
+</tbody>
+</table>
+
 を y 軸方向に 1 平行移動した点を <!-- &mimetex(C^{\prime}_{k}); -->
-と名付けます。原点を中心として半径 1 の円を描き、その円と直線 <!-- &mimetex(C_{k}C^{\prime}_{k}); -->
-の交点を <!-- &mimetex(D_{k});, --> <!-- &mimetex(E_{k}); -->
-と名付けます。
+
+<table>
+<tbody>
+<tr><td rowspan="3">𝐶</td><td>&#x2032;</td></tr>
+<tr><td></td></tr>
+<tr><td>𝑘</td></tr>
+</tbody>
+</table>
+
+と名付けます。<br>
+原点を中心として半径 1 の円を描き、その円と直線 <!-- &mimetex(C_{k}C^{\prime}_{k}); -->
+の交点を <!-- &mimetex(D_{k});, -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝐷</td><td></td></tr>
+<tr><td>𝑘</td></tr>
+</tbody>
+</table>
+
+, <!-- &mimetex(E_{k}); -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝐸</td><td></td></tr>
+<tr><td>𝑘</td></tr>
+</tbody>
+</table>
+
+と名付けます。<br>
 
 #### 例(2) {#ye01953c}
 
 PostScript は PDF や SVG と言った、静的なページ記述言語とは異なり、
-動的なプログラミング言語です。これを TeX と組み合わせる事により、
+動的なプログラミング言語です。<br>
+これを TeX と組み合わせる事により、
 数値計算などの、 TeX 自身の苦手な処理を担わせ、多彩なグラフィックを
-その場で動的に生成する事ができます。
+その場で動的に生成する事ができます。<br>
 pst-text パッケージの pstextpath は、 PostScript 言語のテキスト描画ルーティンを
 再実装して実現されていますし、既に見たように、 pst-eucl パッケージは
-Newton-Raphson 法により、方程式の実数解の近似値を計算してくれます。
+Newton-Raphson 法により、方程式の実数解の近似値を計算してくれます。<br>
 
-ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。
+ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。<br>
 
 三体問題に於ける、 Lagrange の正三角形解をプロットしてみます。
 質量 <!-- &mimetex(m_1);, --> <!-- &mimetex(m_2);, --> <!-- &mimetex(m_3); -->
@@ -979,10 +1070,11 @@ Newton-Raphson 法により、方程式の実数解の近似値を計算して�
 位置ベクトルも表す事にすると、 <!-- #mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&-\sqrt{3}m_3\\\sqrt{3}m_3&(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1) --> <!-- #mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&\sqrt{3}m_2\\-\sqrt{3}m_2&(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1) -->
 となり、質点 <!-- &mimetex(P_1); -->
 の運動方程式は、整理すると、 <!-- #mimetex(\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}P_1=-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{|P_1|^{2}}P_1) -->
-になります。高校生にも解ける(？)単純な方程式ですから、数値積分などしなくても、
-プロットはできますが、ここでは、あえて、 PostScript に数値積分を計算させてみます。
+になります。<br>
+高校生にも解ける(？)単純な方程式ですから、数値積分などしなくても、
+プロットはできますが、ここでは、あえて、 PostScript に数値積分を計算させてみます。<br>
 そこで、従属変数のスタックには、順に <!-- &mimetex(x);, --> <!-- &mimetex(y);, --> <!-- &mimetex(\frac{\mathrm{d}x}{\mathrm{d}t});, --> <!-- &mimetex(\frac{\mathrm{d}y}{\mathrm{d}t}); -->
-を積む事にします。
+を積む事にします。<br>
 従属変数のスタックは PostScript 言語の記法では y (array) として、
 algebraic な記法では y\[index\] として、アクセスするので、対応表を作ると、
 
@@ -1006,12 +1098,14 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 ```
 
 で、区間 <!-- &mimetex((t,T)); -->
-の数値積分がプロットされる事になります。
-algebraic は algebraic=true と同じ意味です。このマクロの最後の引数は、微係数のスタックです。
+(𝑡,𝑇)
+の数値積分がプロットされる事になります。<br>
+algebraic は algebraic=true と同じ意味です。<br>
+このマクロの最後の引数は、微係数のスタックです。<br>
 このままでは、独立変数が横軸 (abscissa) 、従属変数の最初のスタックが縦軸 (ordinate)
-にプロットされてしまうので、オプションで、横軸と縦軸を指定します。
+にプロットされてしまうので、オプションで、横軸と縦軸を指定します。<br>
 その際に、最も一般的な plotfuncx や plotfuncy を使うと、 algebraic 記法は
-現状では使えないようです。
+現状では使えないようです。<br>
 
 ```
 \documentclass[dvipsnames]{minimal}
@@ -1056,7 +1150,7 @@ algebraic は algebraic=true と同じ意味です。このマクロの最後の
 以前から、 PostScript に通じた人々の間では、
 [同じような試み](http://www.aihara.co.jp/~taiji/tex/index-j.html)も行われて
 いましたが、 TeX マクロが整備され、特別な知識を持たなくても、
-このようなことができるようになった意義は大きいと思います。
+このようなことができるようになった意義は大きいと思います。<br>
 
 最後に山田 泰司さんが取り上げているのと同じ、 Duffing 方程式の解曲線を
 プロットしてみます。
@@ -1078,35 +1172,40 @@ algebraic は algebraic=true と同じ意味です。このマクロの最後の
 ```
 
 psplot の実装はおろか、 PostScript の知識が全く無くても、容易に書ける事が
-わかります。ただし、ここでは、刻み幅をプロット区間の 1/1000 に固定して
-いますので、このプロットはあまり正確な物ではありません。
+わかります。<br>
+ただし、ここでは、刻み幅をプロット区間の 1/1000 に固定して
+いますので、このプロットはあまり正確な物ではありません。<br>
 このような場合は、 method=varrkiv として、 adaptive な数値積分を行った方が
-よいでしょう。 <!-- いくらかでも、ましでしょう。 -->
+よいでしょう。<br> <!-- いくらかでも、ましでしょう。 -->
 
 ### 実際に<em>使える</em>画像ファイルを作るには {#d57cdc19}
 
 独立の EPS を作るためには，PSTricks の中の pst-eps
-パッケージの PSTtoEPS という命令を使います。
+パッケージの PSTtoEPS という命令を使います。<br>
 ただし，これを使うと図中に文字を書き込む命令 \rput
-などが使えなくなります。
+などが使えなくなります。<br>
 文字を含む EPS を作るには，PSTtoEPS を使わず，
 いったん dvi ファイルにしておいて，
-dvips の -E オプションを使う方法しかないようです。
+dvips の -E オプションを使う方法しかないようです。<br>
 しかし，これではバウンディングボックス情報が正しく入らないため，
-後で EPS ファイルを編集する必要があり，面倒です。
+後で EPS ファイルを編集する必要があり，面倒です。<br>
 
 そこで PSTtoEPS や dvips の -E オプションを使わずに PSTricks の PDF 変換の
-ためのマクロ pstpdfmx を作りました．目標は dvipdfmx を使って PSTricks の
-図をPDFで取り込み，完全なPDFを作成することです．まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
-ダウンロードしてください (Unix 系 OS 専用です，要 bash/Make/gcc)．
+ためのマクロ pstpdfmx を作りました．<br>
+目標は dvipdfmx を使って PSTricks の
+図をPDFで取り込み，完全なPDFを作成することです．<br>
+まずは『丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)を
+ダウンロードしてください (Unix 系 OS 専用です，要 bash/Make/gcc)．<br>
 これを使うとデバイスドライバに dvipdfmx を使って PSTricks のある程度のマクロを
-使えるようになります．使い方はmakeするだけです．個別にPDFファイルを作成するには
+使えるようになります．<br>
+使い方はmakeするだけです．<br>
+個別にPDFファイルを作成するには
 
 ```
 ./genpdf.sh filename
 ```
 
-とします．
+とします．<br>
 
 丸ごとパック [pstpsrc.tgz](/attach/PSTricks/pstpsrc.tgz)
 : pstpdfmx, bbb, genpdf.sh 等がすべて含まれています．
@@ -1128,12 +1227,14 @@ gs -sDEVICE=pbm -fig.ps -sOutputFile=fig.pbm
 bbb < fig.pbm > fib.bb
 ```
 
-上記の作業 genpdf.sh が図の数だけ自動的に行います．そうすると正しいバウンディングボックス
-情報 fig.bb と，PSTricks 画像から PDF に変換したファイル fig.pdf ができます．元原稿では
-ファイル fig.pdf が存在する時だけ fig.pdf を読み込むようにしています．
+上記の作業 genpdf.sh が図の数だけ自動的に行います．<br>
+そうすると正しいバウンディングボックス
+情報 fig.bb と，PSTricks 画像から PDF に変換したファイル fig.pdf ができます．<br>
+元原稿では
+ファイル fig.pdf が存在する時だけ fig.pdf を読み込むようにしています．<br>
 
-上記の PDF を生成するスクリプトは genpdf.sh というファイルにまとめています．
-すると完全な PDF ファイル file.pdf は次のように作ることになります．
+上記の PDF を生成するスクリプトは genpdf.sh というファイルにまとめています．<br>
+すると完全な PDF ファイル file.pdf は次のように作ることになります．<br>
 
 ```
 uplatex file
@@ -1146,7 +1247,7 @@ dvips を指定し， genpdf.sh の中で fig.ps の BoundingBox を awk/perl �
 プログラム bbb が出力した正しいものに置換するだけです)．<br>
 しかし、やはり大変面倒です．<br>
 LuaLaTeX で LuaTeX-ja を使用すれば pdftricks や ps4pdf などのパッケージが使える
-と思います．
+と思います．<br>
 
 ### 実際に<em>使える</em>画像ファイルを作るには (別解) {#cddb53cd}
 
@@ -1222,6 +1323,7 @@ $ extractbb foo.pdf
 - [PSTricks で図を作成](http://rexpit.blog29.fc2.com/blog-entry-67.html)
 - [PSTricksパッケージ](http://www.cityfujisawa.ne.jp/~huzinami/tex/g-pack2.html)
 - [PSTricks入門](http://surgery.matrix.jp/comp/tex/PSTricks/pstricks.html)
+- [「PSTricks」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=PSTricks)
 
 <!-- * コメント [#j6e07b43] -->
 <!-- 質問です。 -->
