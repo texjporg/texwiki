@@ -116,6 +116,7 @@ $ sudo tlmgr update --self --all
 
 #### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
 
+TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
 TEXMFLOCAL の値を確認します．<br>
 
 ```
