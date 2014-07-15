@@ -664,6 +664,14 @@ x 座標が B と同じ、 y 座標が O と同じ点として、定義してい
 #### 逆ポーランド式記法 {#lb61b314}
 
 適当な計算式 <!-- #mimetex((x^{2}-x)2^{x(x+1)}) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">(</td><td rowspan="2">𝑥</td><td>2</td><td rowspan="2">&minus;</td><td rowspan="2">𝑥</td><td rowspan="2">)</td><td rowspan="2">2</td><td>𝑥(𝑥+1)</td></tr>
+<tr><td></td><td></td></tr>
+</tbody>
+</table>
+
 を例にします。この式は加法、減法、乗法、冪と言った、二項演算を
 繰り返す事で、計算できますが、その手順を樹形図で表す事ができます。
 
@@ -693,9 +701,41 @@ $
 そこで、二変数の関数
 
 <!-- #mimetex(f_{\mathrm{add}}[x,y]=x+y) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑓</td><td></td><td rowspan="2">[𝑥,𝑦]</td><td rowspan="2">=</td><td rowspan="2">𝑥+𝑦</td></tr>
+<tr><td>add</td></tr>
+</tbody>
+</table>
+
 <!-- #mimetex(f_{\mathrm{exp}}[x,y]=x^{y}) -->
+
+<table>
+<tbody>
+<tr><td rowspan="3">𝑓</td><td></td><td rowspan="3">[𝑥,𝑦]</td><td rowspan="3">=</td><td rowspan="3">𝑥</td><td rowspan="2">𝑦</td></tr>
+<tr><td rowspan="2">exp</td></tr>
+<tr><td></td></tr>
+</tbody>
+</table>
+
 <!-- #mimetex(f_{\mathrm{mul}}[x,y]=xy) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑓</td><td></td><td rowspan="2">[𝑥,𝑦]</td><td rowspan="2">=</td><td rowspan="2">𝑥𝑦</td></tr>
+<tr><td>mul</td></tr>
+</tbody>
+</table>
+
 <!-- #mimetex(f_{\mathrm{sub}}[x,y]=x-y) -->
+
+<table>
+<tbody>
+<tr><td rowspan="2">𝑓</td><td></td><td rowspan="2">[𝑥,𝑦]</td><td rowspan="2">=</td><td rowspan="2">𝑥&minus;𝑦</td></tr>
+<tr><td>sub</td></tr>
+</tbody>
+</table>
 
 を定義してやると、この計算式は <!-- #mimetex(f_{\mathrm{mul}}[f_{\mathrm{sub}}[f_{\mathrm{exp}}[x,2],x],f_{\mathrm{exp}}[2,f_{\mathrm{mul}}[x,f_{\mathrm{add}}[x,1]]]]) -->
 と、計算の優先順位を示す ( ) を使わずに、表されます。ここで、更に、関数を
