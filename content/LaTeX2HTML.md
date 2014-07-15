@@ -45,6 +45,7 @@ LaTeX2HTML は Perl で記述されています．<br>
 
 ### Linux {#v5b81e24}
 
+- [LaTeX HTMLに変換 (latex2html)](http://www.yamamo10.jp/yamamoto/comp/latex/latex2html/latex2html.html)
 - [latex2html](http://fugenji.org/thomas/diary/index.php?no=r785), [latex2html (2)](http://fugenji.org/thomas/diary/index.php?no=r786), [latex2html（まとめ）](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=814)
 - [2012年のコンピューターノウハウ (Mac, CentOS)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2012/knowhow-2012.html)
     - [LaTeX2HTML (LaTeX を WWW 用のデータに変換)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2012/node73.html)
