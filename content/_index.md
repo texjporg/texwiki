@@ -72,6 +72,7 @@ pukiwiki: "FrontPage"
         [Atom](/Atom/),
         [Brackets](/Brackets/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
+        [TeXnicCenter](/TeXnicCenter/),
         [Notepad++](/Notepad++/)
         ([NppExec](/NppExec/),
         [jN](/jN/),
