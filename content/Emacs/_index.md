@@ -112,6 +112,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [Org mode](</Emacs/Org mode/>) Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
 - [TeX mode](</Emacs/TeX mode/>) Emacs 標準の TeX mode
 - [YASnippet](/YASnippet/) スニペットプラグイン
+- [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer) magical syntax highlighting for LaTeX-mode buffers.
 - [AUCTeX](/AUCTeX/) GNU Emacs や XEmacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/) Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs や Meadow でプレビューするための Emacs Lisp
