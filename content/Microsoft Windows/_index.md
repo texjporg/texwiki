@@ -526,18 +526,7 @@ tlmgr update --self --all
 
 #### extractbb の追加 {#tf06ef9d}
 
-<!-- [[C:\texlive\2014\texmf-dist\web2c\texmf.cnf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/web2c/texmf.cnf?view=markup]] に shell_escape_commands が以下のように記述されていると思います． -->
-<!--  -->
-<!-- shell_escape_commands = \ -->
-<!-- bibtex,bibtex8,\ -->
-<!-- kpsewhich,\ -->
-<!-- makeindex,\ -->
-<!-- mpost,\ -->
-<!-- repstopdf,\ -->
-<!--  -->
-<!-- デフォルトでは extractbb が自動実行されません．~ -->
-<!--  -->
-
+TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
 TEXMFLOCAL の値を確認します．<br>
 
 ```
