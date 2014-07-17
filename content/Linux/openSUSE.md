@@ -95,6 +95,12 @@ $ sudo zypper install lyx
 $ sudo zypper install texstudio
 ```
 
+## [Texmaker](/Texmaker/) {#fa598615}
+
+```
+$ sudo zypper install texmaker
+```
+
 ## [TeXworks](/TeXworks/) {#n8431fb2}
 
 ```
