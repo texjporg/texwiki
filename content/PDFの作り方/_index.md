@@ -235,7 +235,7 @@ dvipdfmx foo.dvi
 
 と打ち込むだけです。<br>
 これで foo.dvi が foo.pdf に変換されます。<br>
-コマンドラインを使用するのが苦手なかたは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/)
+コマンドラインを使用するのが苦手なかたは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
 などで dvipdfmx を使うように設定できます。<br>
 
 以下では dvipdfmx について説明します。<br>
@@ -599,7 +599,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 
 これで ptex2pdf で PDF にして，「プレビュー」または Adobe Reader
 で印刷します。<br>
-あるいは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/)
+あるいは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/)
 などを使えばボタンをクリックするだけで PDF ができます。<br>
 
 <!-- **Computer Modern Type 1 フォント [#k3985a6a] -->
