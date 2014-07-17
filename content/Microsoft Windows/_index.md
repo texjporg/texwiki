@@ -690,6 +690,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - TexitEasy
 - [Eclipse](/Eclipse/)
@@ -717,10 +718,10 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#m5a5dc1e}
 
-- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), TexitEasy などは PDF ファイルビューアを内蔵しています．
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy などは PDF ファイルビューアを内蔵しています．
 - [SumatraPDF](/SumatraPDF/)
 - [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．[SumatraPDF](/SumatraPDF/) などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, TeXworks, TexitEasy などで使われています．
+- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, TexitEasy などで使われています．
 - [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>)
 - [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
 
