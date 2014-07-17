@@ -233,6 +233,12 @@ $ sudo apt-get install lyx
 $ sudo apt-get install texstudio
 ```
 
+## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe09ab85}
+
+```
+$ sudo apt-get install texmaker
+```
+
 ## [TeXworks](/TeXworks/) <a id="texworks"></a> {#r265d7ea}
 
 ```
