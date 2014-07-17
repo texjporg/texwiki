@@ -56,6 +56,7 @@ pukiwiki: "FrontPage"
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X, Linux</strong> </span>：
         [LyX](/LyX/),
         [TeXstudio](/TeXstudio/),
+        [Texmaker](/Texmaker/),
         [TeXworks](/TeXworks/),
         TexitEasy,
         [Eclipse](/Eclipse/)
