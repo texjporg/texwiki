@@ -126,6 +126,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 文字コードのリストからエディタで使用する文字コードを指定できます．<br>
 デフォルトの文字コードは UTF-8 です．<br>
+かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる場合は Dark theme を選択します．<br>
 日本語の文書を作成する場合はスペルチェック辞書のインラインのチェックを外します．<br>
 重要なファイルを作成する場合は 10 分ごとにバックアップをとる にチェックを入れます．<br>
 
@@ -198,7 +199,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 > </table>
 >
 
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><span style="color:black;background-color:yellow;"><strong>← かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる場合は Dark theme を選択する</strong></span><br>
 　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　デフォルトのテーマ　　　　\]</span><br>
 
 <div style="clear:both"></div>
