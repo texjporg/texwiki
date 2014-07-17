@@ -67,7 +67,7 @@ Haskell は非正格な純粋関数型プログラミング言語です．<br>
 
 ### Haskell 版 {#cbd580e5}
 
-The Glorious Glasgow Haskell Compilation System, version 7.8.2 で動作確認しています．<br>
+The Glorious Glasgow Haskell Compilation System, version 7.8.3 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
