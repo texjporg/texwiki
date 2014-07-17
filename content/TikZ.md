@@ -920,6 +920,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 ## TikZ 対応エディタ {#ta16acba}
 
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TikzEdt](http://www.tikzedt.org/)
 - [TikZiT](http://tikzit.sourceforge.net/)
 - [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
