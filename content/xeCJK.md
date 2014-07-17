@@ -166,6 +166,37 @@ kpathsea: Appending font creation commands to missfont.log.
 \setCJKmonofont{ipaexg.ttf}
 ```
 
+W32TeX で \setCJKmainfont{IPAexMincho} を使用する場合は
+
+```
+fc-list | nkf -W8 -s | grep "IPAexMincho"
+```
+
+を実行して
+
+```
+c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明朝:style=Regular
+```
+
+が表示されれば使用できます．<br>
+何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．<br>
+
+***
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<!-- local.conf file to configure local font access -->
+<fontconfig>
+
+<dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
+
+</fontconfig>
+```
+
+***
+
 #### MS Mincho, MS Gothic の場合 {#u1a0c13b}
 
 ```
@@ -376,6 +407,37 @@ kpathsea: Appending font creation commands to missfont.log.
 \setjasansfont{ipaexg.ttf}
 \setjamonofont{ipaexg.ttf}
 ```
+
+W32TeX で \setjamainfont{IPAexMincho} を使用する場合は
+
+```
+fc-list | nkf -W8 -s | grep "IPAexMincho"
+```
+
+を実行して
+
+```
+c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明朝:style=Regular
+```
+
+が表示されれば使用できます．<br>
+何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．<br>
+
+***
+
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<!-- local.conf file to configure local font access -->
+<fontconfig>
+
+<dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
+
+</fontconfig>
+```
+
+***
 
 zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場合は以下のようにします．
 
