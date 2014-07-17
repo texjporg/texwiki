@@ -35,7 +35,7 @@ W32TeX は Visual C++ 2010 でビルドされているため Windows XP 以降�
 
 ### 統合環境・エディタ {#o7f5ab09}
 
-Windows PowerShell やコマンド プロンプトでの作業が苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/), TexitEasy などの [TeX 専用の統合環境・エディタ](</TeX用エディタ/>) を使用すればマウスを使って作業することができます。<br>
+Windows PowerShell やコマンド プロンプトでの作業が苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy などの [TeX 専用の統合環境・エディタ](</TeX用エディタ/>) を使用すればマウスを使って作業することができます。<br>
 
 [Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) などのオープンソースの TeX 対応テキストエディタでも TeX ファイルを編集できます．<br>
 [Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) は UTF-8 に対応しています．<br>
