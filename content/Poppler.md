@@ -21,7 +21,7 @@ Programs using Poppler.<br>
 
 <table>
 <tbody>
-<tr><th style="color:#468">LaTeX editor</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/TeXworks/">TeXworks</a>, TexitEasy</td></tr>
+<tr><th style="color:#468">LaTeX editor</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a>, TexitEasy</td></tr>
 <tr><th style="color:#468">PDF viewer</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a> (zathura-pdf-poppler), <a href="/qpdfview/">qpdfview</a> (pdf-plugin)</td></tr>
 </tbody>
 </table>
