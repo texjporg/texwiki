@@ -69,7 +69,7 @@ graphicx を使用しない場合は、以下のいずれかを tikz（または
 \def\pgfsysdriver{pgfsys-dvipdfmx.def}%dvipdfmxの場合
 \def\pgfsysdriver{pgfsys-dvips.def}%dvipsの場合
 \def\pgfsysdriver{pgfsys-dvisvgm.def}%dvisvgmの場合
-\def\pgfsysdriver{pgfsys-pdftex.def}%最も高機能
+\def\pgfsysdriver{pgfsys-pdftex.def}%pdfTeX, LuaTeX, LuaJITTeXの場合．最も高機能
 \def\pgfsysdriver{pgfsys-xetex.def}%XeTeXの場合
 ```
 
