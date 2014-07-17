@@ -8,11 +8,7 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-<span style="font-size:40px">Texmaker は日本語入力に関する不具合とコマンドのパラメータの処理に関する不具合が発生することがあるかもしれません．</span><br>
-
-<span style="font-size:40px">問題が発生する場合は Texmaker の派生版の [TeXstudio](/TeXstudio/) を使用してください．</span><br>
-
-## [Texmaker](http://www.xm1math.net/texmaker/) → 日本語入力に関する不具合が発生する場合は派生版の [TeXstudio](/TeXstudio/) を使用する {#x838d855}
+## [Texmaker](http://www.xm1math.net/texmaker/) → かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる場合は Dark theme を選択する {#x838d855}
 
 <img src="http://www.xm1math.net/texmaker/texmaker128.png" alt="Texmaker" style="float:right">
 
@@ -142,13 +138,14 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ***
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → Texmaker 修正版または [TeXstudio](/TeXstudio/) を使用する {#c698d89f}
+### かな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → Dark theme を選択する {#c698d89f}
 
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって判読不能になるという不具合があります．<br>
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
 Windows, Linux で不具合が発生して OS X では発生しないようです．<br>
 ■ Windows の場合<br>
-Windows の場合は Texmaker の修正版を使用することで回避できます．<br>
+Windows の場合は Dark theme を選択することで回避できます．<br>
+Dark theme を使用しても判読不能になる場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
 ■ Linux で ibus を使用している場合<br>
 Arch Linux, Texmaker 4.1, ibus-kkc の組み合わせでは特に問題なく日本語入力できています．<br>
 Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
@@ -161,8 +158,6 @@ uim を使用している場合は背景が黒く表示されて判読不能に�
 
 バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．<br>
 また，同じく Qt を使用している [TeXworks でもハイライトに関する不具合が存在する](/TeXworks/#s5bfc44e)ので，もしかすると Qt の不具合 (仕様？) かもしれません．<br>
-
-Texmaker の日本語入力を直した修正版か派生版の [TeXstudio](/TeXstudio/) を使用するといいでしょう．<br>
 
 #### 修正方法 (Windows) {#e1ab5b1e}
 
@@ -520,3 +515,4 @@ C:.
 - [Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
 - [GateKeeperに引っかかった時の対処(OS X)](http://hnsn1202.hateblo.jp/entry/2013/04/09/193136)
 - [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
+- [texのエディタ](http://masashiabe665.wordpress.com/2014/07/14/tex%E3%81%AE%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/)
