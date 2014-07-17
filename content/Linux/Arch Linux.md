@@ -274,6 +274,12 @@ $ sudo pacman -S lyx
 $ sudo pacman -S texstudio
 ```
 
+## [Texmaker](/Texmaker/) {#gbe0fd81}
+
+```
+$ sudo pacman -S texmaker
+```
+
 ## [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
