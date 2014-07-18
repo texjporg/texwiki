@@ -50,7 +50,6 @@ C-x C-f ~/
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 &#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
 ***
@@ -86,14 +85,14 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
   (tex-send-command "pdfopen --rxi --file" (tex-append tex-print-file ".pdf")))
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
-        ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.bat %r.ps" "%f" "%r.pdf")
+        ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.exe %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("luajitlatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("xelatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("latexmk %f" "%f" "%r.pdf")
         ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %f" "%f" "%r.pdf")
-        ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.bat %%O %%S %%D/\" -norc -gg -pdfps %f" "%f" "%r.pdf")
+        ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %f" "%f" "%r.pdf")
         ("latexmk -e \"$pdflatex=q/pdflatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
         ("latexmk -e \"$pdflatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
         ("latexmk -e \"$pdflatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
