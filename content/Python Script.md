@@ -73,7 +73,7 @@ class Command:
         c = os.path.dirname(notepad.getCurrentFilename())
         uplatex = 'uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "' + b + '"'
         dvips = 'dvips -Ppdf -z -f "' + b + '.dvi" | convbkmk -u > "' + b + '.ps"'
-        ps2pdf = 'ps2pdf.bat "' + b + '.ps"'
+        ps2pdf = 'ps2pdf.exe "' + b + '.ps"'
         uplatex_dvips_ps2pdf = uplatex + ' && ' + dvips + ' && ' + ps2pdf
         notepad.save()
         os.chdir(c)
