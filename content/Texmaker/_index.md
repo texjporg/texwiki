@@ -145,7 +145,7 @@ OS やインプットメソッドフレームワークの種類などの違い�
 Windows, Linux で不具合が発生して OS X では発生しないようです．<br>
 ■ Windows の場合<br>
 Windows の場合は Dark theme を選択することで回避できます．<br>
-Dark theme を使用しても判読不能になる場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
+Dark theme を選択しても判読不能になる場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
 ■ Linux で ibus を使用している場合<br>
 Arch Linux, Texmaker 4.1, ibus-kkc の組み合わせでは特に問題なく日本語入力できています．<br>
 Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
@@ -297,7 +297,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\Qt5.3.0\5.3.0\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.3.1\5.3.1\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) を使用する {#i1222dd8}
 
@@ -332,12 +332,13 @@ Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプ
 Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．<br>
 この場合は Ruby を使用して設定を記述してください．<br>
 
-### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
+### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → TeX Live を使用するまたは dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
 
 <!-- -[[Issue 364: Embedded PDF viewer doesn't show text in a certain font:https://code.google.com/p/texmaker/issues/detail?id=364]] -->
 - [Windows にTexmakerを導入](http://blog.sqr-main.net/2012/06/windows-texmaker.html)
 
 W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．<br>
+TeX Live では表示されます．<br>
 
 ```
 dvipdfmx -f dlbase14.map %.dvi
@@ -524,8 +525,6 @@ C:.
 <fontconfig>
 <dir>c:/texlive/2014/texmf-dist/fonts/opentype</dir>
 <dir>c:/texlive/2014/texmf-dist/fonts/truetype</dir>
-<dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
-<dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
 <dir>c:/Windows/Fonts</dir>
 
 <match target="pattern">
