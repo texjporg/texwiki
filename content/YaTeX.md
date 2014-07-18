@@ -102,7 +102,6 @@ yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペースト�
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 [&#x7e;/.emacs.d/init.el 見せてください．](/YaTeX/#uc0145ec) を参照して設定します．<br>
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search をタイプします．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 fwdsumatrapdf の forward search は C-c w または M-x fwdsumatrapdf-forward-search をタイプします．<br>
