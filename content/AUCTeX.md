@@ -109,7 +109,6 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 #### 設定 {#g637a7d7}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．<br>
@@ -147,14 +146,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX"
-                                     "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\" %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
-                      (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2"
-                                     "uplatex -kanji=utf8 -no-guess-input-enc %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf.bat %f"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk"
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
@@ -164,7 +155,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfupLaTeX2"
-                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.bat %%O %%S %%D/\" -norc -gg -pdfps %t"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/mendex %%O -U -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfupLaTeX2"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX"
@@ -228,8 +219,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>pdfupLaTeX</td><td>C-c C-c pdfuplatex RET</td><td>タイプセット (upLaTeX + dvipdfmx)</td></tr>
-> <tr><td>pdfupLaTeX2</td><td>C-c C-c pdfuplatex2 RET</td><td>タイプセット (upLaTeX + dvips + ps2pdf)</td></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX</td><td>C-c C-c latexmk-pdfupLaTeX RET</td><td>タイプセット (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX2</td><td>C-c C-c latexmk-pdfuplatex2 RET</td><td>タイプセット (Latexmk-pdfupLaTeX2)</td></tr>
@@ -323,14 +312,6 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX"
-                                     "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)' %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
-                      (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2"
-                                     "/usr/texbin/uplatex %S %(mode) %t && /usr/texbin/dvips -Ppdf -z -f %d | /usr/texbin/convbkmk -u > %f && /usr/local/bin/ps2pdf %f"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk"
                                      "/usr/texbin/latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
@@ -408,8 +389,6 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>pdfupLaTeX</td><td>C-c C-c pdfuplatex RET</td><td>タイプセット (upLaTeX + dvipdfmx)</td></tr>
-> <tr><td>pdfupLaTeX2</td><td>C-c C-c pdfuplatex2 RET</td><td>タイプセット (upLaTeX + dvips + ps2pdf)</td></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX</td><td>C-c C-c latexmk-pdfuplatex RET</td><td>タイプセット (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX2</td><td>C-c C-c latexmk-pdfuplatex2 RET</td><td>タイプセット (Latexmk-pdfupLaTeX2)</td></tr>
@@ -514,14 +493,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX"
-                                     "ptex2pdf -u -l -ot '%S %(mode)' %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX and dvipdfmx"))
-                      (add-to-list 'TeX-command-list
-                                   '("pdfupLaTeX2"
-                                     "uplatex %S %(mode) %t && dvips -Ppdf -z -f %d | convbkmk -u > %f && ps2pdf %f"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeX, dvips, and ps2pdf"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk"
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
@@ -615,8 +586,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>pdfupLaTeX</td><td>C-c C-c pdfuplatex RET</td><td>タイプセット (upLaTeX + dvipdfmx)</td></tr>
-> <tr><td>pdfupLaTeX2</td><td>C-c C-c pdfuplatex2 RET</td><td>タイプセット (upLaTeX + dvips + ps2pdf)</td></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX</td><td>C-c C-c latexmk-pdfuplatex RET</td><td>タイプセット (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX2</td><td>C-c C-c latexmk-pdfuplatex2 RET</td><td>タイプセット (Latexmk-pdfupLaTeX2)</td></tr>
