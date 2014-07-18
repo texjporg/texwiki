@@ -9,9 +9,9 @@ pukiwiki: "WinShell"
 
 <span style="font-size:40px">WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．</span><br>
 
-<span style="font-size:40px">問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用してください．</span><br>
+<span style="font-size:40px">問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用してください．</span><br>
 
-## [WinShell](http://www.winshell.org/) → エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するなどの問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+## [WinShell](http://www.winshell.org/) → エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するなどの問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -57,7 +57,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 エンコーディングを UTF-8 に変更して
 
@@ -112,6 +112,7 @@ UTF-8 を使用したい方は
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 
 などの UTF-8 で問題の発生しないオープンソースの統合環境を使用してください．
@@ -514,8 +515,7 @@ LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します�
 
 #### Latexmk-pdfupLaTeX の場合 {#kf0c5dfa}
 
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
-以下の設定は [Ruby](/Ruby/) を使用しているので [RubyInstaller for Windows](http://rubyinstaller.org/) も必要です．<br>
+以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
 
 ***
 
@@ -621,8 +621,7 @@ LaTeXを先に実行 のチェックを外します．<br>
 
 #### Latexmk-pdfupLaTeX2 の場合 {#c693c76d}
 
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
-以下の設定は [Ruby](/Ruby/) を使用しているので [RubyInstaller for Windows](http://rubyinstaller.org/) も必要です．<br>
+以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
 
 ***
 
@@ -643,7 +642,7 @@ W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryp
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/mendex '+0x25.chr+'O'+' -U -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvips=q/dvips '+0x25.chr+'O'+' -z -f '+0x25.chr+'S'+' '+0x7c.chr+' convbkmk -u '+0x3e.chr+' '+0x25.chr+'D'+'/'+0x22.chr+' -e '+0x22.chr+'$ps2pdf=q/ps2pdf.bat '+0x25.chr+'O'+' '+0x25.chr+'S'+' '+0x25.chr+'D'+'/'+0x22.chr+' -norc -gg -pdfps '+'%s.tex';system(cmd)"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/mendex '+0x25.chr+'O'+' -U -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvips=q/dvips '+0x25.chr+'O'+' -z -f '+0x25.chr+'S'+' '+0x7c.chr+' convbkmk -u '+0x3e.chr+' '+0x25.chr+'D'+'/'+0x22.chr+' -e '+0x22.chr+'$ps2pdf=q/ps2pdf.exe '+0x25.chr+'O'+' '+0x25.chr+'S'+' '+0x25.chr+'D'+'/'+0x22.chr+' -norc -gg -pdfps '+'%s.tex';system(cmd)"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
