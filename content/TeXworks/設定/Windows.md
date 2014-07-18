@@ -163,8 +163,6 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 
 - C:\texlive\2014\bin\win64\pdfuplatex2.bat
 - C:\texlive\2014\bin\win32\pdfuplatex2.bat
-- C:\w32tex\bin64\pdfuplatex2.bat
-- C:\w32tex\bin\pdfuplatex2.bat
 
 ***
 
@@ -173,7 +171,7 @@ Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールでき�
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps"
+ps2pdf.exe "%~n1.ps"
 ```
 
 ***
@@ -353,7 +351,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.bat %O %S %D/</ins><br>
+　　　　　　　　　<ins>$ps2pdf=q/ps2pdf.exe %O %S %D/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfps</ins><br>
@@ -634,7 +632,7 @@ pdfuplatex2S.bat を作成します．
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps" && ^
+ps2pdf.exe "%~n1.ps" && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
@@ -974,7 +972,7 @@ pdfclose --rxi --file "%~n1.pdf" & ^
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps" && ^
+ps2pdf.exe "%~n1.ps" && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
 ```
 
