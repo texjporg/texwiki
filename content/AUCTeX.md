@@ -239,8 +239,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
@@ -421,8 +421,8 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 > <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>AdobeReader</td><td>C-c C-c adobereader RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
 > </tbody>
@@ -631,8 +631,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>fwdzathura</td><td>C-c C-c fwdzathura RET</td><td>forward search (PDF)</td></tr>
 > <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー (PDF)</td></tr>
