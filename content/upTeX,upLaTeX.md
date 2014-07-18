@@ -379,6 +379,7 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 - [「upTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=upTeX)
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
+- [e-upTeX と LuaTeX とを使ってみる](http://kainokikaede.hatenablog.com/entry/2014/07/18/060128)
 
 [^1]: 内部 Unicode になっているのは、CJK の文字。欧文の処理は欧文 TeX, pTeX と同様、8-bit のままです。
 [^2]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
