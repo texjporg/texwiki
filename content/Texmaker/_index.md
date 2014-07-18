@@ -143,17 +143,24 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって判読不能になるという不具合があります．<br>
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
 Windows, Linux で不具合が発生して OS X では発生しないようです．<br>
-■ Windows の場合<br>
+
+#### Windows の場合 {#z3a8b3e4}
+
 Windows の場合は Dark theme を選択することで回避できます．<br>
 Dark theme を選択しても判読不能になる場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
-■ Linux で ibus を使用している場合<br>
+
+#### Linux の場合 {#nd7d6ba8}
+
+■ ibus を使用している場合<br>
 Arch Linux, Texmaker 4.1, ibus-kkc の組み合わせでは特に問題なく日本語入力できています．<br>
 Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
 Fedora を使用している場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
-■ Linux で fcitx を使用している場合<br>
+
+■ fcitx を使用している場合<br>
 fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．<br>
 fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が ON の場合は背景が黒く表示されて判読不能になることがあるようです．<br>
-■ Linux で uim を使用している場合<br>
+
+■ uim を使用している場合<br>
 uim を使用している場合は背景が黒く表示されて判読不能になることがあるようです．<br>
 
 <!-- バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．~ -->
