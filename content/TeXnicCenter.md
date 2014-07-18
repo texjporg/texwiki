@@ -143,8 +143,6 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2014\bin\win64</ins><br>
 　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2014\bin\win32</ins><br>
-　　　　　　　　　　　　　　　　　　　<ins>C:\w32tex\bin64</ins><br>
-　　　　　　　　　　　　　　　　　　　<ins>C:\w32tex\bin</ins><br>
 
 <br>
 
@@ -377,10 +375,6 @@ Path to the (La)TeX<br>
 
 <ins>C:\texlive\2014\bin\win32\uplatex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\uplatex.exe</ins><br>
-
-<ins>C:\w32tex\bin\uplatex.exe</ins><br>
-
 Command line arguments to pass to the compiler:<br>
 <ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
@@ -391,10 +385,6 @@ Path to BibTeX<br>
 
 <ins>C:\texlive\2014\bin\win32\upbibtex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\upbibtex.exe</ins><br>
-
-<ins>C:\w32tex\bin\upbibtex.exe</ins><br>
-
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
 
@@ -404,10 +394,6 @@ Path to MakeIndex<br>
 <ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
 <ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -432,10 +418,6 @@ Path to the (La)TeX<br>
 
 <ins>C:\texlive\2014\bin\win32\pdflatex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\pdflatex.exe</ins><br>
-
-<ins>C:\w32tex\bin\pdflatex.exe</ins><br>
-
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
@@ -446,10 +428,6 @@ Path to BibTeX<br>
 
 <ins>C:\texlive\2014\bin\win32\bibtex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\bibtex.exe</ins><br>
-
-<ins>C:\w32tex\bin\bibtex.exe</ins><br>
-
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
 
@@ -459,10 +437,6 @@ Path to MakeIndex<br>
 <ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
 <ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -488,10 +462,6 @@ Path to the (La)TeX<br>
 
 <ins>C:\texlive\2014\bin\win32\lualatex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\lualatex.exe</ins><br>
-
-<ins>C:\w32tex\bin\lualatex.exe</ins><br>
-
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
@@ -502,10 +472,6 @@ Path to BibTeX<br>
 
 <ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
 
-<ins>C:\w32tex\bin64\bibtexu.exe</ins><br>
-
-<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
-
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
 
@@ -515,10 +481,6 @@ Path to MakeIndex<br>
 <ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
 <ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -541,10 +503,6 @@ Path to the (La)TeX<br>
 
 <ins>C:\texlive\2014\bin\win32\luajitlatex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\luajitlatex.exe</ins><br>
-
-<ins>C:\w32tex\bin\luajitlatex.exe</ins><br>
-
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
@@ -555,10 +513,6 @@ Path to BibTeX<br>
 
 <ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
 
-<ins>C:\w32tex\bin64\bibtexu.exe</ins><br>
-
-<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
-
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
 
@@ -568,10 +522,6 @@ Path to MakeIndex<br>
 <ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
 <ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -596,10 +546,6 @@ Path to the (La)TeX<br>
 
 <ins>C:\texlive\2014\bin\win32\xelatex.exe</ins><br>
 
-<ins>C:\w32tex\bin64\xelatex.exe</ins><br>
-
-<ins>C:\w32tex\bin\xelatex.exe</ins><br>
-
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
@@ -610,10 +556,6 @@ Path to BibTeX<br>
 
 <ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
 
-<ins>C:\w32tex\bin64\bibtexu.exe</ins><br>
-
-<ins>C:\w32tex\bin\bibtexu.exe</ins><br>
-
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
 
@@ -623,10 +565,6 @@ Path to MakeIndex<br>
 <ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
 
 <ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin64\makeindex.exe</ins><br>
-
-<ins>C:\w32tex\bin\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -669,7 +607,7 @@ LaTeX => DVI => PDF<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin64\dvipdfmx.exe</ins> または <ins>C:\w32tex\bin\dvipdfmx.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvipdfmx.exe</ins><br>
 Arguments　　　　　 <ins>"%bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -710,7 +648,7 @@ Ghostscript (ps2pdf)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvips.exe</ins> または <ins>C:\w32tex\bin64\dvips.exe</ins> または <ins>C:\w32tex\bin\dvips.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvips.exe</ins><br>
 Arguments　　　　　 <ins>-Ppdf -o "%Bm.ps" "%Bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -744,7 +682,7 @@ DviPs (PDF)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\rungs.exe</ins> または <ins>C:\texlive\2014\bin\win32\rungs.exe</ins> または <ins>C:\w32tex\bin64\rungs.exe</ins> または <ins>C:\w32tex\bin\rungs.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2014\bin\win64\rungs.exe</ins> または <ins>C:\texlive\2014\bin\win32\rungs.exe</ins><br>
 Arguments　　　　　 <ins>-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"</ins><br>
 Input<br>
 Output<br>
