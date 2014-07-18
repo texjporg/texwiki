@@ -22,9 +22,6 @@ PDF ビューアは，組み込みビューアと外部ビューアを選択す�
 コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．<br>
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
-Texmaker のデフォルトの文字コードは UTF-8 です．<br>
-コンパイルエラーが発生する場合は[サクラエディタ](</サクラエディタ/>)で文字コードを UTF-8，改行コードを CR+LF にして保存するとコンパイルが通るそうです． → [やっと見つけたTeXエディタ](http://yaplog.jp/stdwave/archive/215)<br>
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 
 ***
 
@@ -142,8 +139,6 @@ Dvipdfm
 
 ps2pdf
 : &nbsp;
-
-: ps2pdf.bat %.ps
 
 : ps2pdf.exe %.ps
 
@@ -337,7 +332,7 @@ pdfclose --rxi --file "%~n1.pdf" & ^
 uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps" && ^
+ps2pdf.exe "%~n1.ps" && ^
 synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
 ```
 
