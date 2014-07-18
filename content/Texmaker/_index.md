@@ -399,20 +399,81 @@ if (builtinpdfview && (comd==viewpdf_command))
 
 で落ちているようです．
 
+## 組み込みの PDF ビューアに日本語を表示させる {#a258817b}
+
+### OS X の場合 {#m8993d2f}
+
+OS X の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．<br>
+poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
+[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /Users/pascalbrachet/poppler64/share/poppler にコピーして使用することもできます．<br>
+poppler-data を配置する場所は
+
+```
+$ strings -a /Applications/texmaker.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
+@executable_path/../Frameworks/libpoppler.??.dylib
+Unknown CID font collection, please report to poppler bugzilla.
+/Users/pascalbrachet/poppler64/share/poppler
+%Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
+```
+
+で調べることができます．<br>
+この場合は /Users/pascalbrachet/poppler64/share/poppler が poppler-data を配置するディレクトリになります．<br>
+コマンドラインから poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置する場合は以下のように実行します．<br>
+
+```
+$ brew install poppler
+$ sudo mkdir -p /Users/pascalbrachet/poppler64/share
+$ sudo ln -s /usr/local/share/poppler /Users/pascalbrachet/poppler64/share/poppler
+```
+
+または
+
+```
+$ cd ~
+$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.6.tar.gz
+$ tar xvf poppler-data-0.4.6.tar.gz
+$ sudo mkdir -p /Users/pascalbrachet/poppler64/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.6/* /Users/pascalbrachet/poppler64/share/poppler
+```
+
+***
+
+```
+/
+└─Users/
+    └─pascalbrachet/
+        └─poppler64/
+            └─share/
+                └─poppler/
+                    ├─cidToUnicode/
+                    ├─cMap/
+                    ├─nameToUnicode/
+                    ├─unicodeMap/
+                    ├─CMakeLists.txt
+                    ├─COPYING
+                    ├─COPYING.adobe
+                    ├─COPYING.gpl2
+                    ├─Makefile
+                    └─README
+```
+
+***
+
 ## 組み込みの PDF ビューアで日本語を表示するために使用される代替フォント {#h2a20ebd}
 
 ### Windows の Texmaker の場合 {#h82370cc}
 
-Texmaker の公式サイトで配布されている Windows バイナリと Texmaker 修正版は poppler-data が適切な位置に配置されており fontconfig も適切に設定されています．<br>
+Texmaker の Windows 版は poppler-data が適切な位置に配置されており fontconfig も適切に設定されています．<br>
 
 ***
 
 ```
 C:.
-└─Texmaker
-    ├─texmaker.exe
-    └─share
-        └─poppler
+└─Program Files (x86) または Program Files
+    └─Texmaker
+        ├─texmaker.exe
+        └─share
+            └─poppler
 ```
 
 ***
@@ -425,9 +486,10 @@ fontconfig を適切に設定すれば PDF ファイルに日本語のフォン�
 
 ```
 C:.
-└─Texmaker
-    ├─texmaker.exe
-    └─WINDOWSTEMPDIR_FONTCONFIG_CACHE
+└─Program Files (x86) または Program Files
+    └─Texmaker
+        ├─texmaker.exe
+        └─WINDOWSTEMPDIR_FONTCONFIG_CACHE
 ```
 
 ***
@@ -438,14 +500,15 @@ PDF ビューアで表示される代替フォントは texmaker.exe と同じ�
 
 ```
 C:.
-└─Texmaker
-    ├─texmaker.exe
-    └─etc
-        └─fonts
-            ├─conf.d
-            ├─fonts.conf
-            ├─fonts.dtd
-            └─local.conf
+└─Program Files (x86) または Program Files
+    └─Texmaker
+        ├─texmaker.exe
+        └─etc
+            └─fonts
+                ├─conf.d
+                ├─fonts.conf
+                ├─fonts.dtd
+                └─local.conf
 ```
 
 ***
