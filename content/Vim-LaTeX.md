@@ -94,23 +94,19 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
-### NeoBundle を使用する場合 {#adee180e}
+### NeoBundle を使用して Git リポジトリからインストールする場合 {#adee180e}
 
-[NeoBundle](https://github.com/Shougo/neobundle.vim) を使ってインストールができます．
+[NeoBundle](https://github.com/Shougo/neobundle.vim) を使って Git リポジトリからインストールできます．
 
 ```
-  NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
 ```
 
-<!-- → [[vim-latexはneobundleでインストールしよう:http://wp.raa0121.info/2013/04/vim-latexneobundle.html]]~ ※リンク先のリポジトリアドレスではインストール出来ません（2013/06/21確認）． -->
-
-### Windows {#eb85b35a}
-
-[Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
-
-#### 公式サイトのパッケージを使用する場合 {#g7a904f1}
+### 公式サイトのパッケージをインストールする場合 {#g7a904f1}
 
 [http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
+
+#### Windows の場合 {#ob7fb0a1}
 
 Vim を起動し
 
@@ -132,7 +128,35 @@ Vim を起動し
 
 を配置します．
 
-#### 設定 {#q8a0044b}
+#### OS X, Linux の場合 {#w3182b39}
+
+[http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
+
+Vim を起動し
+
+```
+ :echo $HOME
+```
+
+で，$HOME の場所を確認します．
+
+パッケージを展開し，$HOME/.vim/ に
+
+- compiler/
+- doc/
+- ftplugin/
+- indent/
+- plugin/
+- latextags
+- ltags
+
+を配置します．
+
+## 設定 {#bdb0aee6}
+
+### Windows {#eb85b35a}
+
+[Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
 
 $HOME/vimfiles/vimrc に設定を記述します．<br>
 
@@ -161,7 +185,7 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc
 "let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 "let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_pdf = 'ps2pdf.bat $*.ps'
+"let g:Tex_CompileRule_pdf = 'ps2pdf.exe $*.ps'
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
 let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'upbibtex'
@@ -182,32 +206,6 @@ SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携
 動作未確認です．<br>
 
 [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
-
-#### 公式サイトのパッケージを使用する場合 {#kf230ea5}
-
-[http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
-
-Vim を起動し
-
-```
- :echo $HOME
-```
-
-で，$HOME の場所を確認します．
-
-パッケージを展開し，$HOME/.vim/ に
-
-- compiler/
-- doc/
-- ftplugin/
-- indent/
-- plugin/
-- latextags
-- ltags
-
-を配置します．
-
-#### 設定 {#hf6d9f36}
 
 $HOME/.vim/vimrc に設定を記述します．<br>
 
@@ -281,32 +279,6 @@ let g:Tex_MultipleCompileFormats = 'pdf'
 参考：[http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho](http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho)
 
 ### Linux {#f59a6b76}
-
-#### 公式サイトのパッケージを使用する場合 {#o23d2f9e}
-
-[http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
-
-Vim を起動し
-
-```
- :echo $HOME
-```
-
-で，$HOME の場所を確認します．
-
-パッケージを展開し，$HOME/.vim/ に
-
-- compiler/
-- doc/
-- ftplugin/
-- indent/
-- plugin/
-- latextags
-- ltags
-
-を配置します．
-
-#### 設定 {#j3b0f658}
 
 $HOME/.vim/vimrc に設定を記述します．<br>
 
@@ -473,8 +445,6 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 と補完されます．
 
 &#x3c;+options+>, &lt;+class+>, &lt;++> は place-holder で，&#x3c;Ctrl-J> をタイプすると place-holder が表示されている場所へジャンプします．
-
-place-holder を使った移動は [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) にも実装されています．
 
 EDO を表示したい場合は，EDo をタイプして &#x3c;Esc> (&#x3c;Ctrl-\[> または &#x3c;Ctrl-C> でも OK) をタイプして ~ をタイプします．
 
