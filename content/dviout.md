@@ -816,10 +816,10 @@ PDF 化は dviout から dvipdfmx を起動して行われるので，各種設�
 dviout の使用が主流だった昔は，「図を入れる」といっても picture 環境や「後で手で入れる（！）」等の graphicx を使わない方法も採られていました．<br>
 また，昔は dvips と dvipdfmx の互換性がある程度担保されていたので，「dvips ドライバを指定すれば dviout と dvipdfmx の両方が使える」という裏技が使えたようです．<br> <!-- ここでbmpsizeを持ち出すのは論理的に奇妙です. --> <!-- ・epsにはbmpsizeは無関係. --> <!-- ・dviout用ドライバでのビットマップ読込にはbmpsizeは非対応. --> <!-- ・だからdvioutとdvipdfmxを行き来している状況では, ビットマップの \includegraphics には bb が指定されているはず. -->
 
-### dvips + ps2pdf.bat (Ghostscript) {#bbe5941f}
+### dvips + ps2pdf.exe (Ghostscript) {#bbe5941f}
 
-dvipdfmx 以外では dvips + ps2pdf.bat (Ghostscript) でも PDF ファイルを作成することが可能です。<br>
-dvips + ps2pdf.bat を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvips オプションを指定します：
+dvipdfmx 以外では dvips + ps2pdf.exe (Ghostscript) でも PDF ファイルを作成することが可能です。<br>
+dvips + ps2pdf.exe を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvips オプションを指定します：
 
 ```
 \usepackage[dvips]{graphicx}
@@ -868,7 +868,7 @@ raw PBM を BMP (full color) に変更して \[Save\]-\[適用(A)\]-\[OK\] を�
 
 dviout の印刷は Windows に依存しています。<br>
 特に画像の印刷は Windows のバージョンによってはトラブルが生じることがあります。<br>
-dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2pdf.bat (Ghostscript) で PDF ファイルに変換して印刷してみてください。<br>
+dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2pdf.exe (Ghostscript) で PDF ファイルに変換して印刷してみてください。<br>
 
 ## EPS 以外の画像を使うには {#z97e7e7b}
 
