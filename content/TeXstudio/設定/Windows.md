@@ -211,8 +211,6 @@ Ps2Pdf
 
 : ps2pdf.exe %.ps
 
-: ps2pdf.bat %.ps
-
 DviPdf
 : &nbsp;
 
@@ -421,7 +419,7 @@ pdfclose --rxi --file "%~n1.pdf" & ^
 uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
-ps2pdf.bat "%~n1.ps" && ^
+ps2pdf.exe "%~n1.ps" && ^
 synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --rxi --file '%%{output}' --page %%{page+1}"
 ```
 
