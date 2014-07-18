@@ -226,7 +226,7 @@ function! PdfupLaTeX(type)
     if has('win32') || has('win64')
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
       let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
-      let ps2pdf = 'ps2pdf.bat' . ' "' . masterBaseName . '.ps"'
+      let ps2pdf = 'ps2pdf.exe' . ' "' . masterBaseName . '.ps"'
       if g:viewer == 'adobereader'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
