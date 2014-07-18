@@ -59,7 +59,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             var cd = "cd /d " + ["\"", c, "\""].join("");
             var uplatex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal" + " " + ["\"", b, "\""].join("");
             var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
-            var ps2pdf = "ps2pdf.bat" + " " + ["\"", b, ".ps", "\""].join("");
+            var ps2pdf = "ps2pdf.exe" + " " + ["\"", b, ".ps", "\""].join("");
             var uplatex_dvips_ps2pdf = uplatex + " && " + dvips + " && " + ps2pdf;
             var cmd = "cmd /c " + cd + " && " + uplatex_dvips_ps2pdf;
             execute(cmd);
