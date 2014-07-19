@@ -69,9 +69,10 @@ TeX, LaTeX はフリーウェアです。<br>
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
 日本では TeX，LaTeX
-を株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化した
+を日本語化した
 [pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 が使用されています。<br>
+pTeX, pLaTeX は株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。<br>
 pTeX，pLaTeX の頭文字の
 p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
 アスキーでは pTeX，pLaTeX
@@ -145,7 +146,7 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 
 <div style="text-align:center"><a href="/Microsoft Windows/">Microsoft Windows - TeX Wiki</a> をご覧ください。</div>
 
-### [Mac](/Mac/) {#m050163b}
+### [OS X](/Mac/) {#m050163b}
 
 <div style="text-align:center"><a href="/Mac/">Mac - TeX Wiki</a> をご覧ください。</div>
 
