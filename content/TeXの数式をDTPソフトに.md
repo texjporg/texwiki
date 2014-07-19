@@ -22,31 +22,33 @@ TeX なら簡単にきれいな数式ができます。
 ## 数式用のフォント {#td464375}
 
 TeX で無指定で使われるフォントは，本文は Computer Modern Roman 10 pt (cmr10)，
-数式は Computer Modern Math Italic 10 pt (cmmi10) です。
+数式は Computer Modern Math Italic 10 pt (cmmi10) です。<br>
 これらは（PostScript アウトラインデータ形式の） OpenType フォント，TrueType
 フォント，Type 1 フォントのそれぞれの形式で配布されていますので，
-これらを他のアプリケーションで使うことができます。
+これらを他のアプリケーションで使うことができます。<br>
 
 Computer Modern フォントの OpenType 形式が
 [CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/) から，Latin Modern フォントの
-OpenType 形式が [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) から入手できます。
+OpenType 形式が [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) から入手できます。<br>
 
 TrueType 形式の Computer Modern フォントの一つである BaKoMa フォントは，
 例えば [CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/)
 や[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) から入手
-できます。Type 1 フォント形式の一つである PFB 形式のフォントは TeX に標準で
-入っています。$TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。 
+できます。<br>
+Type 1 フォント形式の一つである PFB 形式のフォントは TeX に標準で
+入っています。<br>
+$TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。<br>
 
 ## 数式を EPS にする {#hf9c85f7}
 
-複雑な数式は EPS などの形式でインポートします。 
+複雑な数式は EPS などの形式でインポートします。<br>
 
 ### お手軽なツールを使う方法 (Windows / Mac) {#oe0e5138}
 
 Windows および Mac 環境の場合，TeX の数式をクリック一つで EPS 形式の画像に変換する
-ツール [TeX2img](http://island.geocities.jp/loveinequality/) があります。
+ツール [TeX2img](http://island.geocities.jp/loveinequality/) があります。<br>
 コマンドラインを使いたくない人は，このツールで EPS ファイルを
-生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
+生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。<br>
 
 ### コマンドラインを使う方法 {#ma3ea888}
 
@@ -69,10 +71,10 @@ Windows および Mac 環境の場合，TeX の数式をクリック一つで EP
 
 ***
 
-これを例えば “testeq.tex” というファイル名で保存します。 
+これを例えば “testeq.tex” というファイル名で保存します。<br>
 
 LaTeX がインストールしてあるとして，次のようにコマンドを打ちます
-（あるいはマウスでこれに相当する操作をします）。 
+（あるいはマウスでこれに相当する操作をします）。<br>
 
 ```
 $ latex testeq.tex
@@ -80,20 +82,22 @@ $ dvips -E -Ppdf testeq.dvi -o testeq.eps
 ```
 
 これで[testeq.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という
-EPS ファイルができます。ここで “-E” は EPS 形式で保存するオプションです。
-これを忘れると EPS でない PostScript 形式になってしまいます。 
+EPS ファイルができます。<br>
+ここで “-E” は EPS 形式で保存するオプションです。<br>
+これを忘れると EPS でない PostScript 形式になってしまいます。~ 
 
 ## InDesign に配置 {#n2deff3f}
 
 上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，
-次のようになります。 
+次のようになります。
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。 
 
 「[数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」
-のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 
+のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。<br>
+InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/) が便利です。<br>
 
 ## Illustrator に配置 1 {#q2427dd4}
 
@@ -111,45 +115,51 @@ PDF を範囲指定してクロップできます。
 </tbody>
 </table>
 
-EPS を作るところまでは上と同じです。
+EPS を作るところまでは上と同じです。<br>
 ただ，この EPS をそのまま Illustrator に ［ファイル］→［配置...］
 （「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）
 すると，「所在不明のフォントは、初期設定のフォントで代用されます。」という
-メッセージが出て，文字化けします。 
+メッセージが出て，文字化けします。<br>
 
 別の方法も後で書きますが，簡単かつ確実な方法は，「配置」ダイアログボックスの
-「リンク」チェックボックスをオンにすることです。dvips の出力する EPS には
-プレビュー画像が附いていませんので，配置してもただの箱に見えます。
+「リンク」チェックボックスをオンにすることです。<br>
+dvips の出力する EPS には
+プレビュー画像が附いていませんので，配置してもただの箱に見えます。<br>
 これでも PostScript デバイス（PS プリンタや Distiller \[Adobe PDF\]）に
-出力すれば，きれいに出ます。また，Illustrator から EPS で保存しても大丈夫です
-（保存時に「配置した画像を含む」チェックボックスをオンにします）。 
+出力すれば，きれいに出ます。<br>
+また，Illustrator から EPS で保存しても大丈夫です
+（保存時に「配置した画像を含む」チェックボックスをオンにします）。<br>
 
 EPS にプレビューを付けておけば，
 配置したときにプレビューを見ることができますので，
-便利です。GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられます。 
+便利です。<br>
+GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられます。<br>
 
 この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化
-するならいったん EPS で保存してから Distiller で処理してください。 
+するならいったん EPS で保存してから Distiller で処理してください。<br>
 
 ## Illustrator に配置 2 (Microsoft Windows) {#wfad6f6b}
 
 箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には
-次のようにします。ただし，Illustrator のフォントリストに
-たくさんのフォントが追加されてしまいますのでご注意ください。 
+次のようにします。<br>
+ただし，Illustrator のフォントリストに
+たくさんのフォントが追加されてしまいますのでご注意ください。~ 
 
 あらかじめ $TEXMF\fonts\type1\ フォルダー
-（例えば C:\w32tex\share\texmf-dist\fonts\type1\）を
+（例えば C:\texlive\2014\texmf-dist\fonts\type1\）を
 フォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーに
 コピーまたはリンクしておきます
-（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。こうすると，TeX で
+（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。<br>
+こうすると，TeX で
 使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で
-使うことができます。Illustrator から直接 PDF で保存しても大丈夫です。 
+使うことができます。<br>
+Illustrator から直接 PDF で保存しても大丈夫です。<br>
 
-times，mathpazo，txfonts，pxfonts 等のパッケージを使った場合は，dvips に
+times，mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に
 PostScript Level 2 での基本35書体をダウンロードするオプションを付け
 （“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”），
 さらに Ghostscript 付属の Type 1 (PFB) フォントをやはり Illustrator から
-見える場所にコピーしておけばいいのではないかと思います（テストしていません）。
+見える場所にコピーしておけばいいのではないかと思います（テストしていません）。<br>
 
 ↑訂正1： txfonts の場合は config.ps に “p +txr2.map” という行を書くのでした
 （←訂正： W32TeX では “-Pdl” オプションで
@@ -163,9 +173,9 @@ PostScript Level 2 での基本35書体をダウンロードするオプショ�
 （この項については内山さんからご教示をいただきました。）
 
 OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが
-使えますが，一般のアプリケーションからは使えません。
+使えますが，一般のアプリケーションからは使えません。<br>
 [http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/](http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください
-（フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
+（フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。<br>
 
 インストールの場所は，Adobe 製品だけから使うなら
 /Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では次の場所のいずれかに入れるのがいいかもしれません。<br>
