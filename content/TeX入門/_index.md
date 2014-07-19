@@ -68,14 +68,14 @@ TeX, LaTeX はフリーウェアです。<br>
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
-日本では TeX，LaTeX
+日本では TeX, LaTeX
 を日本語化した
-[pTeX，pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
+[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 が使用されています。<br>
 pTeX, pLaTeX は株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。<br>
-pTeX，pLaTeX の頭文字の
+pTeX, pLaTeX の頭文字の
 p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
-アスキーでは pTeX，pLaTeX
+アスキーでは pTeX, pLaTeX
 およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用していました。<br>
@@ -156,11 +156,13 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 
 ### [Web](</TeXをWebで/>) {#j1241f24}
 
-<div style="text-align:center">インストール不要で TeX が使えるウェブページ</div>
+<div style="text-align:center">インストール不要で LaTeX が使えるウェブページ</div>
 
 <div style="text-align:center">「<a href="http://glc.l.u-tokyo.ac.jp/texonweb/">TeXを使ってみよう（upTeX版）</a>」</div>
 
 <div style="text-align:center">「<a href="http://oku.edu.mie-u.ac.jp/~okumura/texonweb/">TeXを使ってみよう</a>」</div>
+
+<div style="text-align:center">「<a href="https://cloudlatex.io/ja">Cloud LaTeX</a>」</div>
 
 <div style="text-align:center">もあります。</div>
 
