@@ -261,10 +261,6 @@ Ghostscript
 
 : rungs.exe
 
-: gswin64c.exe
-
-: gswin32c.exe
-
 Latexmk
 : &nbsp;
 
