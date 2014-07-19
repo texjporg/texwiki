@@ -157,10 +157,6 @@ ghostscript
 
 : rungs.exe
 
-: gswin64c.exe
-
-: gswin32c.exe
-
 R Sweave
 : &nbsp;
 
