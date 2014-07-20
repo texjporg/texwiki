@@ -166,7 +166,7 @@ kpathsea: Appending font creation commands to missfont.log.
 \setCJKmonofont{ipaexg.ttf}
 ```
 
-W32TeX で \setCJKmainfont{IPAexMincho} を使用する場合は
+W32TeX で \setCJKmainfont{IPAexMincho} を使用する場合はコマンドラインから
 
 ```
 fc-list | nkf -W8 -s | grep "IPAexMincho"
@@ -191,6 +191,8 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 
 <dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
 <dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
+<dir>c:/w32tex/share/texmf-local/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 
 </fontconfig>
 ```
@@ -408,7 +410,7 @@ kpathsea: Appending font creation commands to missfont.log.
 \setjamonofont{ipaexg.ttf}
 ```
 
-W32TeX で \setjamainfont{IPAexMincho} を使用する場合は
+W32TeX で \setjamainfont{IPAexMincho} を使用する場合はコマンドラインから
 
 ```
 fc-list | nkf -W8 -s | grep "IPAexMincho"
@@ -433,6 +435,8 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 
 <dir>c:/w32tex/share/texmf-dist/fonts/opentype</dir>
 <dir>c:/w32tex/share/texmf-dist/fonts/truetype</dir>
+<dir>c:/w32tex/share/texmf-local/fonts/opentype</dir>
+<dir>c:/w32tex/share/texmf-local/fonts/truetype</dir>
 
 </fontconfig>
 ```
