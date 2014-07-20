@@ -251,7 +251,7 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 を使用するようになっていますから、64-bit の Ghostscript (例えば gs910w64full-gpl.exe)<br>
 をインストールしておいて下さい。<br>
 頻繁に更新されていますのでバージョン番号は下と異なるかもしれません。<br>
-なお，W32TeX のウェブサイトの標準インストールには<br>
+なお，W32TeX の標準インストールには<br>
 NTT JTeX
 ([jtex-w64.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/jtex-w64.tar.xz), [jtex-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/jtex-w32.tar.xz))
 も含まれていますが<br>
