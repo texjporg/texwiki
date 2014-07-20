@@ -9,6 +9,8 @@ pukiwiki: "TeXをWebで"
 
 ## TeX を Web 上で提供する方法 {#xdac6c3a}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
 ### はじめに {#vd570d76}
 
 [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
@@ -117,7 +119,7 @@ ulimit -t 10 -f 1024
 
 ### オンライン LaTeX エディタ {#u7712307}
 
-#### フリーソフトウェア (オープンソフトウェア) {#g834836b}
+#### フリーソフトウェア (オープンソースソフトウェア) {#g834836b}
 
 - [ShareLaTeX](https://github.com/sharelatex/sharelatex)
 - [JaxEdit](http://jaxedit.com/)
@@ -128,7 +130,6 @@ ulimit -t 10 -f 1024
 
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
-- [compileonline.com](http://www.compileonline.com/)
 
 ### Web で数式 {#m2a3514f}
 
