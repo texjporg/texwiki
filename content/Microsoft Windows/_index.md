@@ -31,18 +31,14 @@ Windows XP のサポートは終了しました．<br>
 ## TeX ディストリビューション {#vb660ba1}
 
 Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
-Windows 上では，国際的には [MiKTeX](/MiKTeX/) と [TeX Live](</TeX Live/>) が広く使われています．<br>
-しかし日本語を扱う上では，問題点の少なさや日本人ユーザの数，日本語情報の多さなどの理由から，W32TeX または TeX Live を選択されることをお薦めします．<br>
+Windows 上では，国際的には [TeX Live](</TeX Live/>) と [MiKTeX](/MiKTeX/) が広く使われています．<br>
+しかし日本語を扱う上では，問題点の少なさや日本人ユーザの数，日本語情報の多さなどの理由から，TeX Live または W32TeX を選択されることをお薦めします．<br>
 
-- 最新のバイナリを使いたい場合は W32TeX
 - CTAN の豊富なパッケージを使いたい場合は TeX Live
+- 最新バイナリを使いたい場合は W32TeX
 
 を選択するといいと思います．<br>
-普段はパッケージが豊富な TeX Live を使用して最新のバイナリをテストしたり TeX Live に収録されていないプログラムを使用したりする場合に W32TeX を使用するといった使い方も可能です．<br>
-
-### [W32TeX](/W32TeX/) <a id="w32tex"></a> {#yd4deb73}
-
-W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
+普段はパッケージが豊富な TeX Live を使用して最新バイナリの新機能をテストしたり TeX Live に収録されていないプログラムを使用したりする場合に W32TeX を使用するといった使い方もできます．<br>
 
 ### [TeX Live](</TeX Live/>) (Win64, Win32) <a id="texlive"></a><a id="texlive-win64-win32"></a> {#ia336ed2}
 
@@ -71,7 +67,8 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
-- フォルダー オプション
+
+■■■ フォルダー オプション ■■■<br>
 
 Windows PowerShell または コマンド プロンプトを起動します．<br>
 
@@ -164,19 +161,10 @@ control folders
 
 ■■■ ダウンロード ■■■<br>
 
-[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから install-tl-windows.exe または install-tl.zip をダウンロードします．<br>
-install-tl.zip をダウンロードした場合は install-tl.zip を展開します．<br>
-Cygwin の unzip は install-tl.zip の展開に使用しないでください．<br>
-インストールに失敗する可能性があります．<br>
+[TeX Live - TeX Wiki#Network Based Installer](</TeX Live/#tlnet>) のミラーサイトから<br>
+install-tl-windows.exe または install-tl.zip をダウンロードします．<br>
 
-- [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
-- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
-
-install-tl-windows.exe または install-tl-windows.bat または install-tl-advanced.bat を使用して TeX Live をインストールします．<br>
-
-***
-
-■■■ install-tl-windows.exe の場合 ■■■<br>
+■■■ install-tl-windows.exe を使用する場合 ■■■<br>
 
 install-tl-windows.exe をダブルクリックします．<br>
 全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．<br>
@@ -222,7 +210,16 @@ install-tl-windows.exe をダブルクリックして実行した場合は以下
 インストールする場合は \[ 　Next >　 \] をクリックします．<br>
 インストールしない場合は \[　　Cancel　　\] をクリックします．<br>
 
-■■■ install-tl-windows.bat の場合 ■■■<br>
+■■■ install-tl.zip を使用する場合 ■■■<br>
+
+install-tl.zip を展開します．<br>
+Cygwin の unzip は install-tl.zip の展開に使用しないでください．<br>
+インストールに失敗する可能性があります．<br>
+
+- [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
+- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
+
+■■ install-tl-windows.bat の場合 ■■<br>
 
 ■ テキストモードでインストールする場合<br>
 
@@ -323,7 +320,7 @@ install-tl-windows.bat を -no-gui オプションを指定せずに実行した
 
 ***
 
-■■■ install-tl-advanced.bat の場合 ■■■<br>
+■■ install-tl-advanced.bat の場合 ■■<br>
 
 ■ テキストモードでインストールする場合<br>
 
@@ -604,7 +601,8 @@ texmf.cnf には以下のように設定されています．<br>
 guess_input_kanji_encoding = 1
 ```
 
-(e-)upTeX で UTF-8 を使用している場合に文字コードの自動判別が失敗する場合は [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
+文字コードの自動判別は失敗することがあります．<br>
+[uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
@@ -613,7 +611,7 @@ guess_input_kanji_encoding = 1
 
 ### [TeX Live](</TeX Live/>) ([Cygwin](/Cygwin/)) <a id="texlive-cygwin"></a> {#sfbd073e}
 
-Microsoft Windows 上で動く Linux ライクな環境である [Cygwin](/Cygwin/) に日本語 TeX 環境を作るという手もあります。
+Microsoft Windows 上で動く Linux ライクな環境である [Cygwin](/Cygwin/) に TeX Live をインストールする方法もあります．
 
 - [Cygwin - TeX Wiki](/Cygwin/)
 
@@ -661,9 +659,13 @@ Primary author of e-upTeX: Peter Breitenlohner.
 
 ***
 
+### [W32TeX](/W32TeX/) <a id="w32tex"></a> {#yd4deb73}
+
+W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
+
 ### [MiKTeX](/MiKTeX/) {#x2459fb9}
 
-W32TeX, TeX Live の他に MiKTeX もあります．
+TeX Live, W32TeX の他に MiKTeX もあります．
 
 - [MiKTeX - TeX Wiki](/MiKTeX/)
 
