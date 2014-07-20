@@ -27,10 +27,10 @@ pukiwiki: "ArchiveQandA"
 
 - TeXworks など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-## Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる → Dark theme を選択する {#r552b47f}
+## Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる → Dark theme を選択する {#r552b47f}
 
-Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，判読不能になる場合は Dark theme を選択してください。<br>
-Dark theme を選択しても判読不能になる場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください。<br>
+Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択してください。<br>
+Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください。<br>
 
 ## TeXworks のエラーメッセージ {#g1eb4223}
 
