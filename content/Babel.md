@@ -15,8 +15,8 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 - [CTAN web interface: Directory listing for /macros/latex/required/babel](http://www.ctan.org/tex-archive/macros/latex/required/babel)
 - [「Babel」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Babel)
 - [日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)
-- [pTeXと多言語処理](</pTeXと多言語処理/>)
-- [新 pTeX とBabel](</新 pTeX とBabel/>)
+- [upTeX, pTeX と多言語処理](</pTeXと多言語処理/>)
+- [upTeX, 新 pTeX と Babel](</新 pTeX とBabel/>)
 
 ### japanese {#h2523f84}
 
