@@ -752,6 +752,7 @@ Hello, \TeX !
 - [XeLaTeXでレポートかきたい。](http://pushl.hatenablog.com/entry/2012/05/27/000233)
 - [Imported from http://ustunozgur.blogspot.com - Filed under 'XeLaTeX'](http://import-chki.posterous.com/tag/xelatex)
 - [Ubuntu日本語フォーラム / xelatex で日本語をかく仕方](https://forums.ubuntulinux.jp/viewtopic.php?id=9469)
+- [250びぼーろく;xelatex を使う](http://phys-diary.blogspot.jp/2014/07/250xelatex.html)
 - [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
 - [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
