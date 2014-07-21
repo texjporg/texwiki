@@ -75,7 +75,7 @@ M-x list-packages RET でリストを表示して auctex を選択
 
 ### Windows {#w81a725c}
 
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．
+[EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．
 
 Emacs を起動して
 
