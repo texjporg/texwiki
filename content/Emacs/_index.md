@@ -65,6 +65,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 #### Windows {#k091604e}
 
+- [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861)
 - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
     - [http://sourceforge.jp/projects/gnupack/releases/?package_id=10839](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839)
@@ -132,7 +133,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [pdf-tools](https://github.com/politza/pdf-tools)
 - [emacs-jp/migemo · GitHub](https://github.com/emacs-jp/migemo)
 
-#### [DocView](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/doc-view.el) <a id="docview"></a> {#s0614314}
+### [DocView](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/doc-view.el) <a id="docview"></a> {#s0614314}
 
 DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示することができます．
 
