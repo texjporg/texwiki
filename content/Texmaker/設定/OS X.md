@@ -135,7 +135,7 @@ Makeindex
 dvips
 : &nbsp;
 
-: "/usr/texbin/dvips" -Ppdf -o %.ps %.dvi
+: ruby -e "cmd='/usr/texbin/dvips -Ppdf -z -f '+0x22.chr+ARGV\[0\]+'.dvi'+0x22.chr+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+0x22.chr+ARGV\[0\]+'.ps'+0x22.chr;system(cmd)" %
 
 Dvipdfm
 : &nbsp;
