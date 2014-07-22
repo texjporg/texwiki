@@ -56,7 +56,8 @@ pukiwiki: "Ispell"
     [7ビット入力ファイルを新正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/german.png)
 
 - 
-    Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Deutsch8 Dict (8ビット旧正書法用) あるいは German8 Dict (8ビット新正書法用) 辞書を選択し，deutsch8.tex または german8.tex を開いてスペルチェックをかけてみてください。
+    Emacs の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。<br>
+    Emacs 上で Deutsch8 Dict (8ビット旧正書法用) あるいは German8 Dict (8ビット新正書法用) 辞書を選択し，deutsch8.tex または german8.tex を開いてスペルチェックをかけてみてください。<br>
 
 - 
     [8ビット入力ファイルを旧正書法でチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/deutsch8.png)
@@ -92,7 +93,7 @@ pukiwiki: "Ispell"
     ```
     $ mkdir work
     $ cd work
-    $ tar xzvf ispell-3.3.02.tar.gz
+    $ tar xvf ispell-3.3.02.tar.gz
     ```
 
     します。
@@ -143,7 +144,7 @@ pukiwiki: "Ispell"
     ```
     $ mv hk2-deutsch.tar.gz work/
     $ cd work
-    $ tar xzvf hk2-deutsch.tar.gz
+    $ tar xvf hk2-deutsch.tar.gz
     ```
 
     としてやると，Makefile が現れますので，必要に応じて編集します。例えば，
@@ -173,7 +174,7 @@ pukiwiki: "Ispell"
     次に，新正書法辞書を作成します。ファイルのあるカレントディレクトリで展開すれば OK です。
 
     ```
-    $ tar xjvf igerman98-20030222.tar.bz2
+    $ tar xvf igerman98-20030222.tar.bz2
     $ cd igerman98-20030222
     $ emacs Makefile
     ```
@@ -275,7 +276,8 @@ M-x german-mode （トグル）で何が起こるのかは，お楽しみ！(man
     [7ビット入力ファイルをチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/francais-tex.png)
 
 - 
-    Meadow の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。Meadow 上で Francais Dict 辞書を選択し，fraincais.tex を開いてスペルチェックをかけてみてください。
+    Emacs の場合は，さらに 8ビット入力ファイル (latin-1 コード) もそのまま扱えます。<br>
+    Emacs 上で Francais Dict 辞書を選択し，fraincais.tex を開いてスペルチェックをかけてみてください。<br>
 
 - 
     [8ビット入力ファイルをチェックの様子](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/francais.png)
