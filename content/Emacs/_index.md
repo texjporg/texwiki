@@ -116,8 +116,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer) magical syntax highlighting for LaTeX-mode buffers.
 - [AUCTeX](/AUCTeX/) GNU Emacs や XEmacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/) Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
-- [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs や Meadow でプレビューするための Emacs Lisp
-    - [Windows XP で latex-math-preview.el を使う](http://transitive.info/software/latex-math-preview/meadow/)
+- [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
     - [EmacsWiki:LaTeXMathPreview](http://www.emacswiki.org/emacs/LaTeXMathPreview)
     - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
     - [QA: YaTeXで数式のpreview](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=349)
