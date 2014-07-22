@@ -50,7 +50,7 @@ Emacs 24.3 を使用している場合は YaTeX 1.77 以降を使用してくだ
 
 ### " を入力しようとすると \`\` が入力される → C-q " {#ibf10abb}
 
-- [Emacs (Meadow) + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
+- [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
 YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力されます．<br>
 \`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
@@ -925,7 +925,7 @@ TeX ソースの先頭行に例えば，
 - [YaTeX の設定と利用法](http://www.proton.jp/main/latex/yatex.html)
 - [yatex-modeでPDFプレビュー](http://d.hatena.ne.jp/hico_horiuchi/20130329/1364563601)
 - [YaTeXモードで句読点と全角英数字を変換して保存するEmacsLisp](http://d.hatena.ne.jp/FromAtom/20130112/1358009997)
-- [Meadowへフォーカス](http://d.hatena.ne.jp/eggtoothcroc/20121106/p1)
+- [Emacsへフォーカス](http://d.hatena.ne.jp/eggtoothcroc/20121106/p1)
 - [YaTeXメモ](http://d.hatena.ne.jp/su48us/20120731)
 - [YaTeX でタイプセットからプレビューまで一括して行う](http://ryo1miya.hatenablog.com/entry/20120614/1339697123)
 - [Yatex導入](http://blogs.yahoo.co.jp/echotechsoft/158191.html)
