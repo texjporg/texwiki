@@ -54,7 +54,7 @@ AUCTeX は Emacs の TeX モードです．<br>
 
 ### " を入力しようとすると \`\` が入力される → C-q " {#q07274ce}
 
-- [Emacs (Meadow) + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
+- [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
 AUCTeX, TeX mode, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
 \`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
