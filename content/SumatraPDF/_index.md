@@ -82,6 +82,7 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
+- [Texmaker](/Texmaker/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
@@ -91,6 +92,7 @@ forward search を行うには LaTeX コマンドのオプションに -synctex=
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
     - [Vim-LaTeX](/Vim-LaTeX/)
+- [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
