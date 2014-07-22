@@ -31,7 +31,7 @@ GPLv3
 
 ### " を入力しようとすると \`\` が入力される → C-q " {#y76d0516}
 
-- [Emacs (Meadow) + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
+- [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
 TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
 \`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
@@ -463,7 +463,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 - [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
 - [Using pdfTeX in Emacs \`tex-mode'](http://www.emacswiki.org/emacs/PdfTeX)
 - [LaTeX メモ#Emacs との連携](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/latex/#emacs)
-- [Meadow で LaTeX を使う](http://www.cymric.jp/old/tex/meadow.html)
 - [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
 - [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
