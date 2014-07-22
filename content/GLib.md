@@ -28,9 +28,9 @@ $ pacman -S pkg-config
 - Install GLib.
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.40/glib-2.40.0.tar.xz
-$ tar xvf glib-2.40.0.tar.xz
-$ pushd glib-2.40.0
+$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.41/glib-2.41.2.tar.xz
+$ tar xvf glib-2.41.2.tar.xz
+$ pushd glib-2.41.2
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
@@ -39,9 +39,9 @@ $ popd
 
 <!-- -Install [[GObject Introspection:https://wiki.gnome.org/GObjectIntrospection]]. -->
 <!--  -->
-<!-- $ curl - -insecure -R -L -O https://download.gnome.org/sources/gobject-introspection/1.40/gobject-introspection-1.40.0.tar.xz -->
-<!-- $ tar xvf gobject-introspection-1.40.0.tar.xz -->
-<!-- $ pushd gobject-introspection-1.40.0 -->
+<!-- $ curl - -insecure -R -L -O https://download.gnome.org/sources/gobject-introspection/1.41/gobject-introspection-1.41.4.tar.xz -->
+<!-- $ tar xvf gobject-introspection-1.41.4.tar.xz -->
+<!-- $ pushd gobject-introspection-1.41.4 -->
 <!-- $ ./configure - -prefix=/mingw -->
 <!-- $ make -->
 <!-- $ make install -->
