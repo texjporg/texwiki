@@ -63,10 +63,10 @@ Windows
 - [New features and fixed bugs](http://notepad-plus-plus.org/download/)
 - [コミットログ](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/?view=log)
 
-### 派生版 {#l02b5ab5}
-
-- [Notepad++ 派生ビルド](http://freesftys.wkeya.com/app/npp/)
-    - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
+<!-- **派生版 [#l02b5ab5] -->
+<!-- -[[Notepad++ 派生ビルド:http://freesftys.wkeya.com/app/npp/]] -->
+<!-- - -https://code.google.com/p/freesftys-project/ -->
+<!-- - -EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません． -->
 
 ### 日本語言語ファイル {#i35c46e6}
 
