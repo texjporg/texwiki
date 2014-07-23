@@ -116,12 +116,12 @@ dviout を管理者として実行した場合はこのエラーは発生しな�
 ## dviout 非対応パッケージ → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#pd5bea65}
 
 PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
-dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください．<br>
+dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください．<br>
 
 ### [TikZ](/TikZ/) {#m7bcebf4}
 
 dviout は [TikZ](/TikZ/) に対応していません．<br>
-PDF に変換して PDF ビューアで表示・印刷するといいでしょう。<br>
+PDF または SVG に変換して PDF・SVG ビューアで表示・印刷するといいでしょう。<br>
 
 ### [media9](/media9/) {#h55cad77}
 
@@ -883,7 +883,12 @@ PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。<br
 - [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
 
 から WIC Susie Plug-in をダウンロードしてください。<br>
-展開後 64-bit dviout の場合は iftwic.sph を 32-bit dviout の場合は iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+展開後
+
+- 64-bit dviout の場合は iftwic.sph
+- 32-bit dviout の場合は iftwic.spi
+
+を dviout.exe と同じフォルダーに配置します．<br>
 他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。<br>
 プリアンブルに
 
@@ -899,7 +904,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 \usepackage{bmpsize}
 ```
 
-PNG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
+PNG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください。<br>
 
 ### JPEG 形式 {#s4f7def7}
 
@@ -908,7 +913,12 @@ JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。<b
 - [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
 
 から WIC Susie Plug-in をダウンロードしてください。<br>
-展開後 64-bit dviout の場合は iftwic.sph を 32-bit dviout の場合は iftwic.spi を dviout.exe と同じフォルダーに配置します．<br>
+展開後
+
+- 64-bit dviout の場合は iftwic.sph
+- 32-bit dviout の場合は iftwic.spi
+
+を dviout.exe と同じフォルダーに配置します．<br>
 他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。<br>
 プリアンブルに
 
@@ -924,7 +934,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 \usepackage{bmpsize}
 ```
 
-JPEG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) でプレビューしてください。<br>
+JPEG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください。<br>
 
 ## Warning を無視する {#fa72a1b5}
 
