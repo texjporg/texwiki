@@ -24,7 +24,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ### Ports {#j8583985}
 
-- [Ports svn r317904 UPDATING 20130511](http://svnweb.freebsd.org/ports/head/UPDATING?r1=317568&r2=317904) にて，Port make時の変数 TEX_DEFAULT を tetex （2013年7月現在こちらが既定値）にするか texlive にするかで，teTeXにするかTeXliveにするかを選べるようになりました．
+- [Ports svn r362648 UPDATING 20140727](http://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
 
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
@@ -46,7 +46,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 - [Storage@Anthesphoria: TeX Live on FreeBSD | TeX Live 2014 on FreeBSD | Notes for FreeBSD users](http://anthesphoria.net/FreeBSD/TeXLive-2014/)
 - [freebsd-texlive](https://code.google.com/p/freebsd-texlive/)
     - [print/texlive-core](https://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
-    - [print/texlive-collection-langcjk](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langcjk/)
+    - [print/texlive-collection-langjapanese](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langjapanese/)
 - [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
 - [FreeBSDへのTeXliveインストール](http://sphinx-users.jp/cookbook/pdf/latex-install-freebsd.html)
 - [「texlive」の検索結果 - msllの日記](http://d.hatena.ne.jp/msll/searchdiary?word=texlive)
@@ -56,7 +56,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 Portsですので，
 make &amp;&amp; make installで導入できます．
 
-（多くのPortがまだteTeXを前提としているため，TeXliveとは共存しないものが多数あります．Makefile中の変数 USE_TEX の中身を確認してください．USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．）
+（TeXlive と共存しないものが存在する場合は Makefile 中の変数 USE_TEX の中身を確認してください．USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．）
 
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
@@ -64,10 +64,10 @@ make &amp;&amp; make installで導入できます．
 #### TeXソースの入力支援 {#z413bd5e}
 
 <!-- |[[TeXmacs]]|editors/texmacs|A free WYSIWYG scientific text editor| -->
-<!-- |[[Texmaker]]|editors/texmaker|LaTeX Development Environment| -->
 
 <table>
 <tbody>
+<tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
 <tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
 <tr><td><a href="/YaTeX/">YaTeX</a></td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
