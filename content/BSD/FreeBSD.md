@@ -31,6 +31,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
+- [http://svnweb.freebsd.org/ports/head/print/texlive-full/](http://svnweb.freebsd.org/ports/head/print/texlive-full/)
 - [FreshPorts -- print/texlive-full](http://www.freshports.org/print/texlive-full/)
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
@@ -61,6 +62,18 @@ make &amp;&amp; make installで導入できます．
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
 
+#### TeXをバックエンドとして使うアプリケーション {#ba4b7bf1}
+
+<table>
+<tbody>
+<tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
+</tbody>
+</table>
+
+<!-- |jadetex|print/jadetex|A TeX backend for Jade, for typesetting SGML documents| -->
+<!-- |ja-jadetex|japanese/jadetex-ptex|A pTeX backend for Jade, for typesetting SGML documents| -->
+<!-- |smartdoc|textproc/smartdoc|XML utility to create various documents| -->
+
 #### TeXソースの入力支援 {#z413bd5e}
 
 <!-- |[[TeXmacs]]|editors/texmacs|A free WYSIWYG scientific text editor| -->
@@ -83,7 +96,7 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td>dvipdfmx</td><td>print/dvipdfmx</td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
+<tr><td>dvipdfmx</td><td>print/tex-dvipdfmx</td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
 </tbody>
 </table>
 
@@ -101,15 +114,3 @@ make &amp;&amp; make installで導入できます．
 
 <!-- |psutils-a4|print/psutils-a4|Utilities for manipulating PostScript documents| -->
 <!-- |psutils-letter|print/psutils-letter|Utilities for manipulating PostScript documents| -->
-
-#### TeXをバックエンドとして使うアプリケーション {#ba4b7bf1}
-
-<table>
-<tbody>
-<tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
-</tbody>
-</table>
-
-<!-- |jadetex|print/jadetex|A TeX backend for Jade, for typesetting SGML documents| -->
-<!-- |ja-jadetex|japanese/jadetex-ptex|A pTeX backend for Jade, for typesetting SGML documents| -->
-<!-- |smartdoc|textproc/smartdoc|XML utility to create various documents| -->
