@@ -142,6 +142,13 @@ Windows 版 の TeX Live 2014, W32TeX において XeLaTeX で \setmainfont{ipae
 
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
 
+### W32TeX において XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される → \setmainfont{ipag.ttf} を使用する {#p1bacfda}
+
+W32TeX において XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．<br>
+この場合は \setmainfont{ipag.ttf} を使用すれば OK です．<br>
+
+- [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
+
 ## インストール {#p3eca5bb}
 
 ### Windows でのインストール {#j287e7c2}
