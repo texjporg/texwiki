@@ -19,9 +19,7 @@ Kile は LaTeX の統合環境です．<br>
 SyncTeX に対応しています．<br>
 エディタ部分は [Kate](http://kate-editor.org/) を使用しています．<br>
 
-- [Kile](http://kile.sourceforge.net/)
-- [SourceForge.net: kile](http://sourceforge.net/apps/mediawiki/kile/)
-    - [Live Preview](http://sourceforge.net/apps/mediawiki/kile/index.php?title=Live_Preview)
+- [Kile - an Integrated LaTeX Environment](http://kile.sourceforge.net/)
 
 ### 動作環境 {#fc95c26d}
 
