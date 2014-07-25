@@ -41,7 +41,6 @@ Notepad++ は
     - [Members](http://sourceforge.net/p/notepad-plus/_members/)
         - [Don HO](http://sourceforge.net/u/donho/)
     - [インタビュー](http://sourceforge.net/blog/potm-201002/)
-- [NpWiki++](http://sourceforge.net/apps/mediawiki/notepad-plus/)
 
 ### 動作環境 {#p5d7567d}
 
@@ -64,9 +63,6 @@ Windows
 - [コミットログ](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/?view=log)
 
 <!-- **派生版 [#l02b5ab5] -->
-<!-- -[[Notepad++ 派生ビルド:http://freesftys.wkeya.com/app/npp/]] -->
-<!-- - -https://code.google.com/p/freesftys-project/ -->
-<!-- - -EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません． -->
 
 ### 日本語言語ファイル {#i35c46e6}
 
@@ -305,9 +301,6 @@ Windows
 ***
 
 ## プラグイン (Plugins) {#k2155ff2}
-
-- [NotePad++ プラグイン](http://freesftys.wkeya.com/)
-- [SourceForge.net: Plugin Central - notepad-plus](http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Plugin_Central)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
