@@ -26,13 +26,11 @@ TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイ
 ### リリース情報 {#t6f93e11}
 
 - [dvisvgm: News](http://dvisvgm.sourceforge.net/News)
-- [dvisvgm / News](http://sourceforge.net/p/dvisvgm/news/)
 - [dvisvgm / Code / tip / NEWS](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/NEWS)
 
 ### ChangeLog {#j5462a82}
 
 - [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
-- [dvisvgm / Code / Browse Commits](http://sourceforge.net/p/dvisvgm/code/commit_browser)
 - \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/ChangeLog?view=markup)
