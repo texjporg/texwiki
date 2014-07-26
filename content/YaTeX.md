@@ -73,7 +73,7 @@ Linux ではこの現象は起きませんでした．<br>
 
 ### Windows {#n699538a}
 
-[64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html) または [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．<br>
+[64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/) をインストールします．<br>
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
 展開したフォルダ名を yatex に変更します．<br>
 
