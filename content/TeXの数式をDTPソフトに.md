@@ -13,11 +13,10 @@ pukiwiki: "TeXの数式をDTPソフトに"
 
 ## 初めに {#g4e20e7a}
 
-Illustrator できれいな数式を作るのって，たいへんですよね。 
-
-TeX なら簡単にきれいな数式ができます。 
-
-このページはまだ作り始めたばかりです。ご要望をお寄せください。 
+Illustrator できれいな数式を作るのって，たいへんですよね。<br>
+TeX なら簡単にきれいな数式ができます。<br>
+このページはまだ作り始めたばかりです。<br>
+ご要望をお寄せください。<br>
 
 ## 数式用のフォント {#td464375}
 
@@ -155,7 +154,7 @@ GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられ�
 使うことができます。<br>
 Illustrator から直接 PDF で保存しても大丈夫です。<br>
 
-times，mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に
+mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に
 PostScript Level 2 での基本35書体をダウンロードするオプションを付け
 （“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”），
 さらに Ghostscript 付属の Type 1 (PFB) フォントをやはり Illustrator から
@@ -316,9 +315,9 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 
 ### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
 
-[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](http://sourceforge.net/projects/latexee/) です。
-本来は MiKTeX を必要とするソフトウェアですが、MiKTeX の texify.exe の代わりに W32TeX の platex.exe を指定すれば MiKTeX がなくても動作します。
-PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の背景色が透過されず白地のままであるという注意点があります。
+[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](http://sourceforge.net/projects/latexee/) です。<br>
+本来は MiKTeX を必要とするソフトウェアですが、MiKTeX の texify.exe の代わりに TeX Live や W32TeX の uplatex.exe を指定すれば MiKTeX がなくても動作します。<br>
+PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の背景色が透過されず白地のままであるという注意点があります。<br>
 
 ### 上記以外の方法 {#m911530d}
 
