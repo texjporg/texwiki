@@ -355,6 +355,7 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSh
 - [PowerShell の コマンドレット例外を取得する](http://tech.guitarrapc.com/entry/2013/07/22/000738)
 - [コマンドプロンプトから色々な処理系でワンライナー：2012年バージョン](http://d.hatena.ne.jp/eel3/20120319/1332090071)
 - [PowerShell 2.0の新機能（6）――他言語の利用](http://codezine.jp/article/detail/5007)
+- [PC98の起動音をC# とWindows PowerShellで](https://gist.github.com/rsato/9707353)
 - [PowerShellスクリプト内でC#コードを書いて使う](http://yomon.hatenablog.com/entry/2013/06/05/PowerShell%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E5%86%85%E3%81%A7C%23%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E4%BD%BF%E3%81%86)
     <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
     <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
