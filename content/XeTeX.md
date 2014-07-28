@@ -9,6 +9,7 @@ pukiwiki: "XeTeX"
 
 ## [XeTeX](http://scripts.sil.org/xetex) {#a81f78a6}
 
+<!-- XǝTeX -->
 <!-- RIGHT:&size(50){X};&size(30){Ǝ};&size(50){T};&size(30){E};&size(50){X};~ -->
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/XeTeX_Logo.svg/500px-XeTeX_Logo.svg.png" alt="XeTeX" style="float:right">
