@@ -473,7 +473,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("xdg-open\\|evince\\|okular\\|zathura\\|qpdfview\\|texworks\\|texstudio\\|mupdf\\|firefox\\|chromium\\|acroread\\|pdfopen" . ".pdf")))
+      '(("xdg-open\\|evince\\|okular\\|zathura\\|qpdfview\\|texworks\\|texstudio\\|mupdf\\|firefox\\|chromium\\|AcroRd32\\|pdfopen" . ".pdf")))
 ```
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
