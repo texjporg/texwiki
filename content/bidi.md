@@ -9,6 +9,12 @@ pukiwiki: "bidi"
 
 ## bidi {#n2b51f0e}
 
+### bidi {#w2512f78}
+
 - [https://github.com/vafa/bidi/](https://github.com/vafa/bidi/)
 - [http://ctan.org/pkg/bidi](http://ctan.org/pkg/bidi)
 - [http://tex.stackexchange.com/questions/tagged/bidi](http://tex.stackexchange.com/questions/tagged/bidi)
+
+### luabidi {#vd408e52}
+
+- [http://ctan.org/pkg/luabidi](http://ctan.org/pkg/luabidi)
