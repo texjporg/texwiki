@@ -18,7 +18,7 @@ pukiwiki: "Adobe Reader"
 Adobe Reader は PDF ファイルを表示・印刷するためのソフトウェアです．
 
 Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) や [TeXworks](/TeXworks/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
 
 - [Adobe Reader](http://www.adobe.com/jp/products/reader.html)
 - [モバイル版Adobe Reader](http://www.adobe.com/jp/products/reader-mobile.html)
@@ -102,6 +102,9 @@ Adobe Reader XI は Wine 上でも動作します．<br>
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
 
 ### Linux {#v6f09b59}
+
+- [Acrobat Reader for Linux removed | Hacker News](https://news.ycombinator.com/item?id=8092582)
+- [https://twitter.com/Acrobat/status/494222119757033472](https://twitter.com/Acrobat/status/494222119757033472)
 
 #### Arch Linux {#afe89c55}
 
