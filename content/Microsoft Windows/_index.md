@@ -606,6 +606,9 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+[Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．](http://qiita.com/ConHumi/items/f0d12ab1ad433591c192)
+: 2014-07-31
+
 [TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
 : 2014-06-21
 
