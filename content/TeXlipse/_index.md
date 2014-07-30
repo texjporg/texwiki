@@ -114,11 +114,11 @@ TeXlipse は自前で LaTeX のパーサを持っていて，ほとんどの場�
 - [Word wrap in Juno](http://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
 - [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
 
-### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは TeXworks, SumatraPDF, Mozilla Firefox, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示する {#c876c383}
+### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは SumatraPDF, TeXworks, TeXstudio, Mozilla Firefox, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示する {#c876c383}
 
 - [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) → closed
 
-PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない場合は PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは TeXworks, SumatraPDF, Mozilla Firefox, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示することができます．<br>
+PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない場合は PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは SumatraPDF, TeXworks, TeXstudio, Mozilla Firefox, Chrome PDF Viewer, Adobe Reader などの外部ビューアで表示することができます．<br>
 
 <!-- **TeXlipse 1.5.0 で \bibliography がうまく動作しない [#i3d2f9c0] -->
 <!--  -->
