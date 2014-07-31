@@ -576,7 +576,7 @@ mupdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ***
 
-#### Mozilla Firefox (pdf.js) {#h50b5c23}
+#### Mozilla Firefox (PDF.js) {#h50b5c23}
 
 ***
 
