@@ -73,7 +73,7 @@ PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリ�
 
 ## 拡張機能 {#u71b1117}
 
-### PDF Viewer (pdf.js) {#q878e075}
+### PDF Viewer (PDF.js) {#q878e075}
 
 - [https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm)
 
