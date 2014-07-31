@@ -71,6 +71,14 @@ PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリ�
 - [https://code.google.com/p/pdfium/](https://code.google.com/p/pdfium/)
 - [https://pdfium.googlesource.com/pdfium/](https://pdfium.googlesource.com/pdfium/)
 
+#### PDFium.js <a id="pdfiumjs"></a> {#ead12fcd}
+
+PDFium.js は PDFium を JavaScript に移植したものです．<br>
+
+- [http://coolwanglu.github.io/PDFium.js/](http://coolwanglu.github.io/PDFium.js/)
+- [http://coolwanglu.github.io/PDFium.js/viewer/](http://coolwanglu.github.io/PDFium.js/viewer/)
+- [https://github.com/coolwanglu/PDFium.js](https://github.com/coolwanglu/PDFium.js)
+
 ## 拡張機能 {#u71b1117}
 
 ### PDF Viewer (PDF.js) {#q878e075}
