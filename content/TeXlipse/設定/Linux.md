@@ -499,7 +499,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-#### [Mozilla Firefox](</Mozilla Firefox/>) (pdf.js) {#f3e29620}
+#### [Mozilla Firefox](</Mozilla Firefox/>) (PDF.js) {#f3e29620}
 
 ***
 
