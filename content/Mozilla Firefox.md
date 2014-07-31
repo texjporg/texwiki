@@ -31,21 +31,21 @@ Mozilla Firefox は Mozilla が開発している Web ブラウザです．<br>
 - [Pale Moon](http://www.palemoon.org/)
 - [Waterfox](http://www.waterfoxproject.org/)
 
-## [pdf.js](http://mozilla.github.com/pdf.js/) <a id="pdfjs"></a> {#n3aa2497}
+## [PDF.js](http://mozilla.github.io/pdf.js/) <a id="pdfjs"></a> {#n3aa2497}
 
-pdf.js は JavaScript で書かれた PDF Viewer です．<br>
+PDF.js は JavaScript で書かれた PDF Viewer です．<br>
 Mozilla Firefox 19 以降は PDF Viewer がデフォルトで有効になっています．<br>
 
-- [pdf.js](http://mozilla.github.com/pdf.js/)
+- [PDF.js](http://mozilla.github.io/pdf.js/)
 - [https://github.com/mozilla/pdf.js/wiki/Viewer-options](https://github.com/mozilla/pdf.js/wiki/Viewer-options)
-- [pdf.js：PDF を HTML5 と JavaScript で表示する](https://dev.mozilla.jp/2012/07/pdf-js/)
 - [https://addons.mozilla.org/ja/firefox/addon/pdfjs/](https://addons.mozilla.org/ja/firefox/addon/pdfjs/)
+    <!-- -[[pdf.js：PDF を HTML5 と JavaScript で表示する:https://dev.mozilla.jp/2012/07/pdf-js/]] -->
 
-Google Chrome でも pdf.js が動作するようです．<br>
+Google Chrome でも PDF.js が動作するようです．<br>
 
 - [https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm)
 
-Opera でも pdf.js が動作するようです．<br>
+Opera でも PDF.js が動作するようです．<br>
 
 - [https://github.com/operasoftware/pdf.js](https://github.com/operasoftware/pdf.js)
 - [https://addons.opera.com/ja/extensions/details/pdf-viewer/](https://addons.opera.com/ja/extensions/details/pdf-viewer/)
