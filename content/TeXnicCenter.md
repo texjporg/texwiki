@@ -826,7 +826,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### [Mozilla Firefox](</Mozilla Firefox/>) (pdf.js) {#y4109c68}
+#### [Mozilla Firefox](</Mozilla Firefox/>) (PDF.js) {#y4109c68}
 
 ***
 
