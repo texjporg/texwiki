@@ -531,7 +531,7 @@ TeXstudio を使用する場合は，
 
 の優先度を一番上にします．
 
-#### Mozilla Firefox (pdf.js) {#r5d56a20}
+#### Mozilla Firefox (PDF.js) {#r5d56a20}
 
 ***
 
@@ -564,7 +564,7 @@ TeXstudio を使用する場合は，
 
 ***
 
-Mozilla Firefox (pdf.js) を使用する場合は，
+Mozilla Firefox (PDF.js) を使用する場合は，
 
 > <span style="color:White;background-color:#1188FF;">　Mozilla Firefox (C:\Windows\System32\cmd.exe)　</span><br>
 
