@@ -467,7 +467,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 ***
 
-#### [Mozilla Firefox](</Mozilla Firefox/>) (pdf.js) {#b755b1a1}
+#### [Mozilla Firefox](</Mozilla Firefox/>) (PDF.js) {#b755b1a1}
 
 ***
 
