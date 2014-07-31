@@ -98,7 +98,7 @@ pukiwiki: "FrontPage"
         [TeXstudio](/TeXstudio/),
         [MuPDF](/MuPDF/),
         [Poppler](/Poppler/),
-        [Mozilla Firefox (pdf.js)](</Mozilla Firefox/#pdfjs>),
+        [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>),
         [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
         [SumatraPDF](/SumatraPDF/)
