@@ -176,9 +176,9 @@ Texmaker のソースコードを修正してビルドすれば日本語入力�
 - Texmaker のソースコードを修正してビルドします．
 
 ```
-$ curl -R -L -O http://www.xm1math.net/texmaker/texmaker-4.2.tar.bz2
-$ tar xvf texmaker-4.2.tar.bz2
-$ cd texmaker-4.2
+$ curl -R -L -O http://www.xm1math.net/texmaker/texmaker-4.3.tar.bz2
+$ tar xvf texmaker-4.3.tar.bz2
+$ cd texmaker-4.3
 ```
 
 Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() メソッドの中の
