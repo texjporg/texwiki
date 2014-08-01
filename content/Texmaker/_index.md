@@ -153,7 +153,7 @@ Dark theme を選択しても読めない場合は Texmaker 修正版または�
 #### Linux の場合 {#nd7d6ba8}
 
 ■ ibus を使用している場合<br>
-Arch Linux, Texmaker 4.1, ibus-kkc の組み合わせでは特に問題なく日本語入力できています．<br>
+Arch Linux の ibus-kkc では特に問題なく日本語入力できています．<br>
 Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
 Fedora で ibus-kkc を使用している場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
 
