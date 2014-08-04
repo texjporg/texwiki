@@ -333,11 +333,11 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法　　　　　　　　　　　　　　☐ 含まれるファイルを自動的に読み込む<br>
+文法　　　　　　　　　　　　　　☑ Check non tex files<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
-プレビュー<br>
+プレビュー　　　　　　　　　　☐ 含まれるファイルを自動的に読み込む<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
