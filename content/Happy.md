@@ -42,7 +42,7 @@ HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．<br>
 Type=Tokyo
 
 [Program]
-TeXbin=C:\w32tex\bin
+TeXbin=C:\w32tex\bin64
 dviout=C:\w32tex\dviout-x64\dviout.exe
 GSmain=C:\gs\gs9.10
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
