@@ -71,6 +71,7 @@ Fortran で記述されたライブラリは C, C++, D, Go, Rust, Pascal, Haskel
 - [using gfortran to call windows api functions](http://compgroups.net/comp.lang.fortran/using-gfortran-to-call-windows-api-function/226148)
 - [Bug 34112 - Add $!DEC ATTRIBUTE support for 32bit Windows' STDCALL](http://gcc.gnu.org/bugzilla/show_bug.cgi?id=34112)
 - [gfortran, DLL, underscore](http://stackoverflow.com/questions/1985819/gfortran-dll-underscore)
+- [Summary of Fortran 77 to 90 converter](http://myfuturesightforpast.blogspot.jp/2014/08/summary-of-fortran-77-to-90-converter.html)
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-Compiler-Directives.html)
 - [http://gcc.gnu.org/wiki/Coarray](http://gcc.gnu.org/wiki/Coarray)
 
