@@ -19,56 +19,50 @@ yhmathを紹介してくださった本田さんに感謝します。
 
 ### インストール {#xdd91a7e}
 
-[yhcmex.pfa](https://mirror.ctan.org/fonts/yhmath/yhcmex.pfa)
-ではなく，これを [t1utils](http://www.lcdf.org/~eddietwo/type/#t1utils)
-[FontForge](http://fontforge.sourceforge.net/)
-で変換した [yhcmex.pfb](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb) を使う方法を説明します。
+TeX Live であれば既にインストールされています。
 
-ダウンロードするもの：
-
-- [yhmath.ps](https://mirror.ctan.org/fonts/yhmath/yhmath.ps) (マニュアル)
-- [yhmath.dtx](https://mirror.ctan.org/macros/latex/contrib/yhmath/yhmath.dtx) (適当なフォルダに)
-- [yhmath.ins](https://mirror.ctan.org/macros/latex/contrib/yhmath/yhmath.ins) (上と同じフォルダに)
-- [yhmath.sty](https://mirror.ctan.org/fonts/yhmath/yhmath.sty) (.../texmf-dist/tex/latex/yhmath/ に)
-- [yhcmex.pfb](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb)
-    (.../texmf-dist/fonts/type1/public/yhmath/ に) \[29149バイトです。古いものと混同されないように\]
-
-- [yhcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yhcmex10.tfm) (.../texmf-dist/fonts/tfm/public/yhmath/ に)
-- [yrcmex10.tfm](https://mirror.ctan.org/fonts/yhmath/yrcmex10.tfm) (.../texmf-dist/fonts/tfm/public/yhmath/ に)
-- [yhcmex10.vf](https://mirror.ctan.org/fonts/yhmath/yhcmex10.vf) (.../texmf-dist/fonts/vf/public/yhmath/ に)
-
-yhmath.ins のあるフォルダに移動して，yhmath.ins を tex で処理します：
-
-```
-tex yhmath.ins
-```
-
-できた \*.fd を .../texmf-dist/tex/latex/yhmath/ に移します。
-
-もし ls-R を作っているなら mktexlsr を実行します。
-
-.../texmf/fonts/map/dvips/updmap/psfonts.map と .../texmf/fonts/map/pdftex/updmap/pdftex.map に次のように書き足します。
+texmf-dist/fonts/map/dvips/yhmath/yhmath.map に
 
 ```
 yrcmex10 Yhcmex <yhcmex.pfb
 ```
 
-.../texmf/fonts/map/dvipdfmx/updmap/yhmath.map を作成して次のように書き足します：
+と記述されています。<br>
 
-```
-yrcmex10 default yhcmex
-```
-
-以上で使えるはずです。
-
-teTeX ベースのものなら，適当なマップファイル（たとえば texmf/dvips/misc/yhmath.map）に
-
-```
-yrcmex10 Yhcmex <yhcmex.pfb
-```
-
-と書いておいて texmf/web2c/updmap.cfg に MixedMap yhmath.map
-と追加して updmap を実行するのが簡単かつ間違いがありません。
+<!-- [[yhcmex.pfa>CTAN:fonts/yhmath/yhcmex.pfa]] -->
+<!-- ではなく，これを [[t1utils:http://www.lcdf.org/~eddietwo/type/#t1utils]] -->
+<!-- [[FontForge:http://fontforge.sourceforge.net/]] -->
+<!-- で変換した [[yhcmex.pfb:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb]] を使う方法を説明します。 -->
+<!--  -->
+<!-- ダウンロードするもの： -->
+<!--  -->
+<!-- -[[yhmath.ps>CTAN:fonts/yhmath/yhmath.ps]] (マニュアル) -->
+<!-- -[[yhmath.dtx>CTAN:macros/latex/contrib/yhmath/yhmath.dtx]] (適当なフォルダに) -->
+<!-- -[[yhmath.ins>CTAN:macros/latex/contrib/yhmath/yhmath.ins]] (上と同じフォルダに) -->
+<!-- -[[yhmath.sty>CTAN:fonts/yhmath/yhmath.sty]] (.../texmf-dist/tex/latex/yhmath/ に) -->
+<!-- -[[yhcmex.pfb:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb]] -->
+<!-- (.../texmf-dist/fonts/type1/public/yhmath/ に) [29149バイトです。古いものと混同されないように] -->
+<!-- -[[yhcmex10.tfm>CTAN:fonts/yhmath/yhcmex10.tfm]] (.../texmf-dist/fonts/tfm/public/yhmath/ に) -->
+<!-- -[[yrcmex10.tfm>CTAN:fonts/yhmath/yrcmex10.tfm]] (.../texmf-dist/fonts/tfm/public/yhmath/ に) -->
+<!-- -[[yhcmex10.vf>CTAN:fonts/yhmath/yhcmex10.vf]] (.../texmf-dist/fonts/vf/public/yhmath/ に) -->
+<!--  -->
+<!-- yhmath.ins のあるフォルダに移動して，yhmath.ins を tex で処理します： -->
+<!--  -->
+<!-- tex yhmath.ins -->
+<!--  -->
+<!-- できた *.fd を .../texmf-dist/tex/latex/yhmath/ に移します。 -->
+<!--  -->
+<!-- もし ls-R を作っているなら mktexlsr を実行します。 -->
+<!--  -->
+<!-- .../texmf/fonts/map/dvips/updmap/psfonts.map と .../texmf/fonts/map/pdftex/updmap/pdftex.map に次のように書き足します。 -->
+<!--  -->
+<!-- yrcmex10 Yhcmex <yhcmex.pfb -->
+<!--  -->
+<!-- .../texmf/fonts/map/dvipdfmx/updmap/yhmath.map を作成して次のように書き足します： -->
+<!--  -->
+<!-- yrcmex10 default yhcmex -->
+<!--  -->
+<!-- 以上で使えるはずです。 -->
 
 ### バグ {#vc558236}
 
