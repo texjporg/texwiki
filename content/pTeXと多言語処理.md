@@ -74,14 +74,13 @@ ASCII 翻字入力についての詳細は
 入力ソフト (input method) を必要としないという点で有用な手段ですが，
 中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
 作成し，これを TeX で処理したいという方もいらっしゃるでしょう。<br>
-現在では upTeX が
+現在では
+[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
+[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+が
 [TeX Live](</TeX Live/>) と
 [W32TeX](/W32TeX/) で
 利用可能になっています。<br>
-[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
-[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
-（pTeX の内部 Unicode 版）の Ver.1.11 がリリースされています
-（なお [ptetexWiki:UTF-8対応(4)](http://tutimura.ath.cx/ptetex/?UTF-8%E5%AF%BE%E5%BF%9C%284%29) もご覧ください）。<br>
 
 ### Unicode のテキストファイルを作るには？ {#j8063098}
 
