@@ -460,7 +460,7 @@ dvipdfmx は以下のフォントを「知って」います。
 
 <!-- 「知って」いるフォントのうち，中韓の Adobe... のフォントは，Adobe が付かない部分だけでは ? -->
 <!-- 2003年11月25日以降のバージョンでは、これで正しい筈です。 -->
-<!-- // (/home/cvsroot -> ) /usr/local/src/tetex-src-3.0/texk/dvipdfmx/src/cid_basefont.h を見て確認しました (m__m) -->
+<!-- // http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/cid_basefont.h を見て確認しました (m__m) -->
 
 そこで、これらのフォント名を cid-x.map のエントリー
 
