@@ -15,6 +15,8 @@ MathTime
 （\mathit{MathT\kern-.05em{\i}me}）Pro Fonts は Times ベースの数式用フォントで，商品です。<br>
 [Personal TeX Inc.](http://www.pctex.com/)から MathTime Professional 2 Fonts (MTPro2 Complete) が販売されています。<br>
 
+- [MathTime Professional 2 fonts on TeX Live](http://cims.nyu.edu/~fennell/mtpro2/)
+
 ## MathTime フォント {#n653d321}
 
 \[FIXME\] 現状を反映していないかもしれません。
@@ -25,7 +27,9 @@ MathTime
 （\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。<br>
 以前はY&amp;Y Inc.から MathTime がオンライン購入できました。<br>
 
-\[2005-09-15追記\] 2005年9月現在、MathTimeを販売していたY&amp;Yのサイトはありません（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。
+\[2014-08-10追記\] Y&amp;Y TeX はオープンソースとなり Clerk Ma さんによって開発が続けられています (→ [yytex](https://code.google.com/p/yytex/))。
+
+\[2005-09-15追記\] MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。MathTimeを販売していた Y&amp;Y Inc. は倒産しました（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。<br>
 
 \[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
 以下にある他のベンダについても古い情報ですのでご注意ください。
@@ -305,12 +309,12 @@ jarticle 等を fix する。<br>
 
 #### 辻褄を合わせる方法その2 {#d089c836}
 
-pTeX で細い太字（b）もゴシックで代用するようにする：
+upTeX で細い太字（b）もゴシックで代用するようにする：
 
 ```
-\DeclareFontShape{JY1}{mc}{b}{n}{ssub*gt/m/n}{}
-\DeclareFontShape{JT1}{mc}{b}{n}{ssub*gt/m/n}{}
+\DeclareFontShape{JY2}{mc}{b}{n}{ssub*gt/m/n}{}
+\DeclareFontShape{JT2}{mc}{b}{n}{ssub*gt/m/n}{}
 ```
 
-これなら jarticle 等もそのままで使えます。<br>
+これなら ujarticle 等もそのままで使えます。<br>
 明朝とゴシックの2書体の場合はこれで辻褄が合うでしょうが，多書体化を考えると，やはりまともな実装を最初からしたほうがいいように思います。<br>
