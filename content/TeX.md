@@ -18,6 +18,7 @@ pukiwiki: "TeX"
 ### TeX 処理系 {#g6783551}
 
 - [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
+- [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 - [LuaTeX](/LuaTeX/)
