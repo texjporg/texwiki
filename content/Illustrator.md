@@ -34,7 +34,7 @@ TeX文書内への図の挿入は EPS ファイルの場合と同様に処理さ
 
 例（hoge.ai を挿入）：
 
-dvipdfmx.def \[2014/04/28 v4.01 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br> <!-- .aiはPDFの一種なのでbmpsizeは無意味. -->
+dvipdfmx.def \[2014/07/25 v4.03 LaTeX color/graphics driver for dvipdfmx (TeX Live/ChoF)\] 以降にアップデートします．<br>
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
