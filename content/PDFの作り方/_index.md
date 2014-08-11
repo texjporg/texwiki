@@ -317,7 +317,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です。<br
 
 #### extractbb の自動実行 {#rf074b4b}
 
-[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて， <!-- ここはextractbbの自動実行の話なのでbmpsizeが出てくるのは不適当. -->
+[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
 
 ```
 \usepackage[dvipdfmx]{graphicx}
@@ -360,7 +360,6 @@ mktexlsr
 
 ```
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 ...
 \includegraphics[width=8cm]{zu.png}
 ```
@@ -372,13 +371,6 @@ graphicx パッケージを読み込む際には次のように必ず dvipdfmx �
 \usepackage[dvipdfmx]{graphicx}
 ```
 
-PNG, JPEG 画像を include する場合は
-
-```
-\usepackage{bmpsize}
-```
-
-も記述します．<br>
 これを LaTeX と dvipdfmx で処理します。<br>
 
 Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます。<br>
@@ -507,7 +499,7 @@ dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG �
 <!-- → xbb ファイルの作成が面倒。また \includegraphics で画像の使い分けをする分岐命令が面倒，煩雑。([[qa:32749]]) -->
 <!-- - -texmf.cnf の shell_escape_commands に extractbb を追加する~ -->
 <!-- → xbb ファイルの作成が不要となる -->
-<!-- - -\usepackage[dvipdfmx]{graphicx}&br;\usepackage{bmpsize}~ -->
+<!-- - -\usepackage[dvipdfmx]{graphicx} -->
 <!-- → いちいち EPS/PDF 画像の選択を \includegraphics 命令の分岐で行う必要がなくなる -->
 <!--  -->
 <!-- >いずれにせよ，''画像の EPS 版と PDF 版との間の整合性''には充分な注意を払う必要がある。 -->
