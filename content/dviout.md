@@ -814,7 +814,7 @@ PDF 化は dviout から dvipdfmx を起動して行われるので，各種設�
 
 ※graphicx や color 等のパッケージの仕様が常態化した現在では，このような連携機能の有用性が薄らいでいるのかも知れません．<br>
 dviout の使用が主流だった昔は，「図を入れる」といっても picture 環境や「後で手で入れる（！）」等の graphicx を使わない方法も採られていました．<br>
-また，昔は dvips と dvipdfmx の互換性がある程度担保されていたので，「dvips ドライバを指定すれば dviout と dvipdfmx の両方が使える」という裏技が使えたようです．<br> <!-- ここでbmpsizeを持ち出すのは論理的に奇妙です. --> <!-- ・epsにはbmpsizeは無関係. --> <!-- ・dviout用ドライバでのビットマップ読込にはbmpsizeは非対応. --> <!-- ・だからdvioutとdvipdfmxを行き来している状況では, ビットマップの \includegraphics には bb が指定されているはず. -->
+また，昔は dvips と dvipdfmx の互換性がある程度担保されていたので，「dvips ドライバを指定すれば dviout と dvipdfmx の両方が使える」という裏技が使えたようです．<br>
 
 ### dvips + ps2pdf.exe (Ghostscript) {#bbe5941f}
 
@@ -901,7 +901,6 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 ```
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 ```
 
 PNG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください。<br>
@@ -931,7 +930,6 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 ```
 \usepackage[dvipdfmx]{graphicx}
-\usepackage{bmpsize}
 ```
 
 JPEG ファイルが表示できない場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください。<br>
