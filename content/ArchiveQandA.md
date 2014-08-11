@@ -88,7 +88,6 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
         ```
         \usepackage[dvipdfmx]{graphicx}
-        \usepackage{bmpsize}
         ```
 
         を記述します．<br>
