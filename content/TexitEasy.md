@@ -110,10 +110,10 @@ $ brew install poppler
 
 ```
 $ cd ~
-$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.6.tar.gz
-$ tar xvf poppler-data-0.4.6.tar.gz
+$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ tar xvf poppler-data-0.4.7.tar.gz
 $ sudo mkdir -p /usr/local/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.6/* /usr/local/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
 ```
 
 ***
