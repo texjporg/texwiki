@@ -182,7 +182,7 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
 $ sudo apt-get install wine
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.07/ja_JP/AdbeRdr11007_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.08/ja_JP/AdbeRdr11008_ja_JP.exe
 $ wine AdbeRdr11007_ja_JP.exe
 ```
 
