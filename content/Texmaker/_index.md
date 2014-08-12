@@ -439,10 +439,10 @@ $ sudo ln -s /usr/local/share/poppler /Users/pascalbrachet/poppler64/share/poppl
 
 ```
 $ cd ~
-$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.6.tar.gz
-$ tar xvf poppler-data-0.4.6.tar.gz
+$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ tar xvf poppler-data-0.4.7.tar.gz
 $ sudo mkdir -p /Users/pascalbrachet/poppler64/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.6/* /Users/pascalbrachet/poppler64/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.7/* /Users/pascalbrachet/poppler64/share/poppler
 ```
 
 ***
