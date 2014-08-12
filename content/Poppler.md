@@ -319,9 +319,9 @@ C:/MinGW/share/poppler
 poppler-data を C:\MinGW\share にコピーします．
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-data-0.4.6.tar.gz
-$ tar xvf poppler-data-0.4.6.tar.gz
-$ cp -pR poppler-data-0.4.6 /mingw/share/poppler
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ tar xvf poppler-data-0.4.7.tar.gz
+$ cp -pR poppler-data-0.4.7 /mingw/share/poppler
 ```
 
 ### OS X {#l3620b9b}
