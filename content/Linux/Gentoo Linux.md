@@ -35,7 +35,7 @@ Gentoo Linux はソフトウェアをソースコードからコンパイルし�
 ### TeX Live 公式パッケージ {#n27bff2f}
 
 - [Linux](/Linux/#texliveinstall)
-- [TeX Live 2013 on Gentoo Linux](http://blogs.yahoo.co.jp/igproj_fusion/17319986.html)
+- [Linuxに手動で最小構成のTeX Liveをインストール](http://alainp.hatenablog.com/entry/2014/08/13/105712)
 
 ### TeX Live/Gentoo Linux {#f27289b4}
 
