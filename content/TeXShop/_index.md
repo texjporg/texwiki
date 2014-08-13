@@ -10,7 +10,7 @@ pukiwiki: "TeXShop"
 
 ## [TeXShop](http://pages.uoregon.edu/koch/texshop/) {#of2f7ba2}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png" alt="TeXShop" width="240" height="240" style="float:right">
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png,right,around,nolink,240x240,TeXShop) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
