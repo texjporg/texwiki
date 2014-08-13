@@ -16,7 +16,7 @@ pukiwiki: "dvipdfmx"
 
 dvipdfmx は DVI ファイルを PDF ファイルに変換するソフトウェアです．<br>
 xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフトウェアです．<br>
-[XeTeX, XeLaTeX](/XeTeX/) を実行すると内部で xdvipdfmx が自動的に実行されます．<br>
+[XeTeX, XeLaTeX](/XeTeX/) を -no-pdf オプションを指定しないで実行すると xdvipdfmx が自動的に実行されます．<br>
 
 ### License {#w1524716}
 
