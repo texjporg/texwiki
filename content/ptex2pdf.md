@@ -89,13 +89,13 @@ ptex2pdf <オプション> <ファイル名.tex>
 - upLaTeX でコンパイル、synctex 有効（TeXShop の設定プロファイルから upTeX (ptex2pdf) を設定したときのデフォルト）
 
     ```
-    ptex2pdf -u -l -ot "-synctex=1" hoge.tex
+    ptex2pdf -u -l -ot "-synctex=1 -file-line-error" hoge.tex
     ```
 
 - upLaTeX でコンパイル、synctex 有効、-shell-escape 有効、B5 サイズ指定、PDF 暗号化、印刷のみ許可
 
     ```
-    ptex2pdf -u -l -ot "-synctex=1 -shell-escape" -od "-p b5 -S -P 0x0804" hoge.tex
+    ptex2pdf -u -l -ot "-synctex=1 -file-line-error -shell-escape" -od "-p b5 -S -P 0x0804" hoge.tex
     ```
 
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
