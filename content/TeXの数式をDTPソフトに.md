@@ -142,7 +142,7 @@ GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられ�
 箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には
 次のようにします。<br>
 ただし，Illustrator のフォントリストに
-たくさんのフォントが追加されてしまいますのでご注意ください。~ 
+たくさんのフォントが追加されてしまいますのでご注意ください。<br>
 
 あらかじめ $TEXMF\fonts\type1\ フォルダー
 （例えば C:\texlive\2014\texmf-dist\fonts\type1\）を
@@ -155,17 +155,8 @@ GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられ�
 Illustrator から直接 PDF で保存しても大丈夫です。<br>
 
 mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に
-PostScript Level 2 での基本35書体をダウンロードするオプションを付け
-（“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”），
-さらに Ghostscript 付属の Type 1 (PFB) フォントをやはり Illustrator から
-見える場所にコピーしておけばいいのではないかと思います（テストしていません）。<br>
-
-↑訂正1： txfonts の場合は config.ps に “p +txr2.map” という行を書くのでした
-（←訂正： W32TeX では “-Pdl” オプションで
-同じことになるのでした。TeX Live では “-Pdownload35” です）。 
-
-↑訂正2： Ghostscript のフォントはすでに W32TeX にも入っていました
-（TeX Live 同様）。コピーは不要です。 
+PostScript Level 2 での基本35書体をダウンロードするオプションを付けます
+（“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”）。<br>
 
 ## Illustrator に配置 3 (OS X) {#z9ef5010}
 
