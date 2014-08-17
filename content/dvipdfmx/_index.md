@@ -129,6 +129,107 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 [http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup)
 の do_args を参照．
 
+### フォントの設定 {#tbddb566}
+
+フォントの設定は map ファイルで行います。map ファイルの役割は、TeX が認識するフォント名と実際に PDF 出力に使うべき実フォントとを対応付けることです。map ファイルの書式は
+
+```
+ tfm[@SFD@] enc font options
+```
+
+のようになります。ここで <em>tfm</em> は TeX において使われるフォント名、<em>enc</em> は使用すべきフォントのエンコーディング、<em>font</em> は PDF 出力に用いられる実フォント名（通常はファイル名）で <em> options</em> で様々なオプションを指定します。\[@SFD@\] の項は CJK パッケージで用いられるフォントの分割方法の指定で、pLaTeX などでは通常不要です。
+
+#### エンコーディング {#y16b9bc3}
+
+<em>enc</em> を正しく指定しないと正しい出力は得られません。dvipdfmx でサポートされているものは
+
+```
+ dvips の .enc 名
+ PostScript CMap リソース名
+ unicode
+```
+
+の3種類です。dvips の .enc ファイルは 8-bit エンコーディング用のエンコーディングファイルで、どのコードポイントにどの文字 (グリフ) が割り当てられているかを PostScript の書式で記述します。例えば、8r.enc では
+
+```
+  /TeXBase1Encoding [
+  % 0x00
+    /.notdef /dotaccent /fi /fl
+    /fraction /hungarumlaut /Lslash /lslash
+    ...(略)...
+    /udieresis /yacute /thorn /ydieresis
+  ] def
+```
+
+のような記述が見られます。コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。文字の識別は PostScript グリフ名で行われます。OpenType/TrueType フォントでは Unicode値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での文字の指定も可能です。
+
+```
+ foo 8r Foo
+```
+
+というマップエントリは TeX フォント foo を Foo に対応付けます。その際 TeX で用いられたエンコーディングは 8r.enc に記述されてあるものとします。
+
+PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字の識別番号で識別する場合に用いられます。CMap ファイルは一般的に用いられるエンコーディング (Shift-JIS など) からの CID への対応付けを記述したファイルです。例えば、UniJIS-UCS2-H は Unicode の JIS サブセットの範囲で UCS2 でエンコードされた文字列を Adobe-Japan1 で定められた文字集合の CID 値の並びに変換するのに用いられます。拡張子が ".otf" の 和文 OpenType フォントでは通常これを使います。pTeX/pLaTeX でよく用いられる設定は:
+
+```
+ rml  H Ryumin-Light
+ gbm  H GothicBBB-Medium
+```
+
+などです。
+
+最後に unicode は OpenType/TrueType フォントに内臓の Unicode マッピングテーブルを使って Unicode 値からフォント内の字形データを得ることを指定します。upLaTeX や Omega など DVI ファイル内のエンコーディングが Unicode となる場合にはこれが使えます。
+
+```
+ uprml-h unicode ipaexm.ttf
+```
+
+#### フォント関連のよくあるエラーと警告 {#p3025758}
+
+フォントとエンコーディング関連と PostScript ファイルの取り込みではエラーが多発します。よくあるエラー・警告とその原因です:
+
+```
+ Could not find encoding file "H".
+```
+
+pTeX/pLaTeX で通常必要な PostScript CMap リソース "H" が見つかりませんでした。これらのファイルが正しくインストールされていない可能性があります。
+
+```
+ No character mapping available.
+ CMap name: H
+ input str: <7c>
+```
+
+CMap "H" での文字コード変換に失敗しました。おそらくエンコーディングの指定が誤っています。自身が DVI への出力にどのようなエンコーディングを使っているか把握する必要があります。H (JIS) で未定義の文字コードを使っている可能性もあります。
+
+```
+ Glyph missing in font. (CID=19141, code=0x4e23)
+```
+
+お使いのフォントには CID 19141 に対応する文字データがありません。フォントを代えるなどの対処が必要です。
+
+#### ファイルが見つからない場合の対処法 {#x37a3e64}
+
+ファイルが見つからないというエラーが出た場合は、dvipdfmx がどこを探していてるかなどを知る必要があります。TeX 関連の多くのプログラムは kpathsea というライブラリにファイル検索を依頼しており、dvipdfmx も kpathsea ライブラリを利用しています。kpsewhich というコマンドラインプログラムがファイルを置くべき場所を知るのに利用できます。例えば、PostScript CMap "H" が dvipdfmx に見える場所にあるか確かめるには
+
+```
+ kpsewhich -progname=dvipdfmx -format=cmap H
+```
+
+とします。ファイルが存在する場合はその場所が出力されます。空行しか出力されない場合は dvipdfmx の検索パスにファイルが存在しません。CMap ファイルがどこにインストールされているべきなのか知るには
+
+```
+ kpsewhich -progname=dvipdfmx -show-path=cmap
+```
+
+のようにします。区切り文字 (Windows では ";") で区切られたフォルダのリストが出力されます。kpsewhich の使い方については
+
+```
+ kpsewhich -help
+```
+
+などを参照してください。
+
 ### PDF のバージョンを指定する {#b272a636}
 
 - [出力 PDF のバージョン（とか）を指定する](http://d.hatena.ne.jp/zrbabbler/20140705/1404540914), [出力 PDF のバージョン（とか）を指定する（補足）](http://d.hatena.ne.jp/zrbabbler/20140706/1404618797)
