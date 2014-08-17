@@ -161,7 +161,7 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
   ] def
 ```
 
-のような記述が見られます。コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。文字の識別は PostScript グリフ名で行われます。OpenType/TrueType フォントでは Unicode値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での文字の指定も可能です。
+のような記述が見られます。コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。文字の識別は PostScript グリフ名で行われます。OpenType/TrueType フォントでは Unicode値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での文字の指定も可能です。必要な .enc ファイルは通常のインストールでほぼすべてインストールされています。
 
 ```
  foo 8r Foo
@@ -176,13 +176,15 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  gbm  H GothicBBB-Medium
 ```
 
-などです。
+などです。CMap ファイルは通常は Adobe によって管理されたものが一式インストールされているはずです。
 
 最後に unicode は OpenType/TrueType フォントに内臓の Unicode マッピングテーブルを使って Unicode 値からフォント内の字形データを得ることを指定します。upLaTeX や Omega など DVI ファイル内のエンコーディングが Unicode となる場合にはこれが使えます。
 
 ```
  uprml-h unicode ipaexm.ttf
 ```
+
+エンコーディングに unicode を指定する場合は追加の外部ファイルを必要としません。
 
 #### フォント関連のよくあるエラーと警告 {#p3025758}
 
@@ -207,6 +209,12 @@ CMap "H" での文字コード変換に失敗しました。おそらくエン�
 ```
 
 お使いのフォントには CID 19141 に対応する文字データがありません。フォントを代えるなどの対処が必要です。
+
+```
+ Failed to load AGL file "glyphlist.txt"...
+```
+
+PostScript グリフ名と Unicode との対応を記述したファイル "glyphlist.txt" が読み込めませんでした。(主に欧文フォントで) 稀に文字が欠落したり、生成された PDF ファイルで文字列の検索やコピー &amp; ペーストがうまくいかなくなるかも知れません。
 
 #### ファイルが見つからない場合の対処法 {#x37a3e64}
 
