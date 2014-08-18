@@ -124,10 +124,77 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 使い方 {#qabeb774}
 
+- [Dvipdfm マニュアル](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) をまず読んでください。
+
 ### コマンドラインオプション {#tc481bdb}
 
-[http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup)
-の do_args を参照．
+```
+ $ dvipdfmx -h
+```
+
+```
+ Usage: dvipdfmx [options] [dvifile[.dvi|.xdv]]
+        dvipdfmx --extractbb|--xbb|--ebb [options]     "extractbb" になる
+        dvipdfmx --help|--version
+```
+
+```
+ Options:
+   -c            カラースペシャルを無視する (モノクロ印刷用)
+   --dvipdfm     DVIPDFM 互換モードを有効にする
+   -d 数値       PDF 出力の小数点以下の桁数を設定 (0-5) [2]
+   -f ファイル名 マップファイル名を設定 [pdftex.map]
+   -g 寸法       アノーテーションの余白 [0.0in]
+   -h | --help   このメッセージを表示し終了
+   -l            ランドスケープモード
+   -m 数値       追加の拡大率を設定 [1.0]
+   -o ファイル名 出力ファイル名を設定, "-" で標準出力 [dvifile.pdf]
+   -p 用紙サイズ 用紙サイズを設定 [a4]
+   -q            静かに
+   -r 解像度     ビットマップフォントの解像度を DPI で指定 [600]
+   -s ページ範囲 ページ範囲を指定 (-)
+   -t            PNG 形式のサムネイルを埋め込む [dvifile.1]
+   --version     バージョン情報を出力し終了
+   -v            うるさく
+   -vv           よりうるさく
+   --kpathsea-debug 数値      　kpathsearch デバッグフラグを設定 [0]
+   -x 寸法       水平方向のオフセットを指定 [1.0in]
+   -y 寸法       垂直方向のオフセットを指定 [1.0in]
+   -z 数値       zlib の圧縮レベルを指定 (0-9) [9]
+   -C 数値       様々なオプションフラグ [0]:
+                   0x0001 予約済み
+                   0x0002 TPIC シェーディングコマンドに不透明なグレーの代わりに
+                          半透明な塗りつぶしを使う (PDF 1.4 が必要)
+                   0x0004 CID フォントを固定幅として扱う
+                   0x0008 重複したフォントマップエントリーを置き換えない
+                   0x0010 PDF デスティネーションの最適化を抑制する
+                 正の値は常に前に与えられた値と OR される
+                 負の値を指定すると前の値を置き換える
+   -D 文字列     PS->PDF 変換コマンドラインテンプレート [none]
+   -E            フォントライセンスフラグに関わらず常にフォントを埋め込む
+   -I 数値       画像キャッシュの寿命 [-2]
+                  0: すべての古い画像を消去し新しい画像を残す
+                 -1: すべての古い画像を消去し新しい画像も消去する
+                 -2: 画像キャッシュを無視する
+   -K 数値       暗号化キー長 [40]
+   -M            MetaPost PostScript 出力を処理
+   -O 数値       開いたブックマークアイテムの最大深度 [0]
+   -P 数値       暗号化の許可フラグを設定 [0x003C]
+   -S            PDF 暗号化を有効に
+   -V 数値       PDF のマイナーバージョンを設定 [4]
+```
+
+```
+ コマンドラインから入力されるすべての寸法は "True" 付きと解釈される。
+ "-s" の引数はコンマで分離されたページレンジを列挙したものです、
+         例えば、"-s 1-3,5-6".
+ ページサイズは用紙フォーマット (例: "a4")
+         あるいは w<unit>,h<unit> (例: "20cm,30cm") で指定。
+```
+
+```
+ バグ報告は電子メールで: tex-k@tug.org.
+```
 
 ### フォントの設定 {#tbddb566}
 
@@ -235,7 +302,7 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  -w 1
 ```
 
-"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。"w" はエンコーディングが unicode のときのみ有効で、値が 2 のときは縦書き用であることを示します。
+"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。"w" はエンコーディングが unicode のときのみ有効で、値が 1 のときは縦書き用であることを示します。
 
 ```
 
@@ -317,6 +384,73 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 ```
 
 などを参照してください。
+
+### 画像の取り込み {#a1cabace}
+
+dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPEG 2000 (2014/08/11 より) です。これに加えて PDF のページも取り込めます。PostScript (EPS) はサポートされていないことに注意してください。PS ファイルの取り込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してから取り込みます。
+
+#### PostScript ファイルの取り込み {#q1c3abbe}
+
+PostScript ファイルを取り込む際には通常は GhostScript が自動的に起動し、PDF へ一時的に変換したうえで取り込みます。具体的には dvipdfmx.cfg のオプションの記述を見ましょう
+
+```
+ kpsewhich -progname=dvipdfmx -format=othertext dvipdfmx.cfg
+```
+
+で示されるファイルに
+
+```
+ D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop \
+         -sDEVICE=pdfwrite ...(略)... -sOutputFile='%o' '%i' -c quit"
+```
+
+のような一行があるはずです。("%" で始まる行はコメント行です) この部分の指示により dvipdfmx は PostScript の図を埋め込むように指示されたとき、自動的に rungs (gs へのラッパー) を起動し PDF へ変換するように動作します。"D" オプションの基本的な書式は
+
+```
+ D command %i %o
+```
+
+のような形です。ここで　"%o"、"%i" はそれぞれ出力 (dvipdfmx が定める一時ファイル名)、入力ファイル名に置き換わります。取り込まれた PostScript の図に問題があるようでしたらこのオプションを見直してください。PostScript ファイルはトラブルの大きな原因です。フォントをすべて埋め込んだはずなのに埋め込まれていないフォントがある。和文フォントを使わないようにしたはずなのに実際は使ってある。など、取り込まれた PostScript ファイルが原因となっている場合があります。また変換が失敗する場合はまず "D" オプションで指定されたコマンドを直接実行してみて、どのようなエラーがでるのか調べてください。dvipdfmx が
+
+```
+ Filtering file via command -->rungs -q ...(略)... failed.
+ Image format conversion for "./foo.eps" failed...
+```
+
+のようなエラーメッセージを出力する場合は PostScript の変換プログラムが変換に失敗しています。
+
+### \special で遊ぶ {#a807a6c0}
+
+- [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります。
+
+ファイルを添付
+
+```
+ \special{pdf:fstream @fileobj (ファイル名をここに)}%
+ \special{pdf:ann width 5bp height 10bp
+            << /Type /Annot
+               /Subtype /FileAttachment
+               /FS <<
+                     /Type /Filespec
+                     /F    (ファイル名をここに)
+                     /EF   << /F @fileobj >>
+                   >>
+               /Name /Paperclip
+               /C    [0.8 0.4 0.4]
+               /T    (タイトルをここに)
+            >>
+          }%
+```
+
+TeX のソースを埋め込んでおくこともできます。
+
+ページの開始時に任意の PDF 描画コードを挿入
+
+```
+ \special{pdf:bop 0.4 0.4 0.6 rg 0 0 596 842 re 72 72 452 700 re f*}
+```
+
+余白の部分を塗りつぶします。
 
 ### PDF のバージョンを指定する {#b272a636}
 
