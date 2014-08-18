@@ -200,9 +200,68 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
 
 エンコーディングに unicode を指定する場合は追加の外部ファイルを必要としません。
 
+#### 実フォント名 {#he05780d}
+
+<em>font</em> の項には出力 PDF で使用されるフォント名がきます。これは通常フォントファイル名です。
+
+```
+ ugoth10  unicode  Gothic.ttf
+```
+
+は TeX フォント ugoth10 を TrueType フォント Gothic.ttf に結びつけます。また、フォントファイルが TrueType Collection の場合は
+
+```
+ ugoth10  unicode  :1:GothicB.ttc
+```
+
+のようにファイル名の前に :n: を付けることで n 番目のフォントを選べます。
+
+#### オプション {#d4922a30}
+
+"変形" オプション
+
+```
+ -s .167
+ -e 1.2
+ -b 1.0
+```
+
+"s" は斜体に、"e" は横に伸縮し、"b" は太字にするオプションです。"b" の利用は推奨されません。
+
+フォントオプション
+
+```
+ -i 2
+ -w 1
+```
+
+"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。"w" はエンコーディングが unicode のときのみ有効で、値が 2 のときは縦書き用であることを示します。
+
+```
+
+```
+
 #### フォント関連のよくあるエラーと警告 {#p3025758}
 
 フォントとエンコーディング関連、PostScript ファイルの取り込みではエラーが多発します。よくあるエラー・警告とその原因です:
+
+```
+ Could not locate a virtual/physical font for TFM “gbm-jis”.
+ There are no valid font mapping entry for this font.
+ Font file name “gbm-jis” was assumed but failed to locate that font.
+ Cannot proceed without .vf or “physical” font for PDF output…
+```
+
+この種のエラーは mktexpk が実行され失敗した後表示されます。TeX フォント "gbm-jis" にはなんら実フォントとの対応付けがなされておらず、"gbm-jis" という名のフォントを試そうとして失敗しました。おそらくフォントの設定が適切になされてません。類似のエラーとして:
+
+```
+ Could not locate a virtual/physical font for TFM "hgothr-h".
+ This font is mapped to a physical font "HiraKakuProN-W3.otf".
+ Please check if kpathsea library can find this font: HiraKakuProN-W3.otf
+ Cannot proceed without .vf or "physical" font for PDF output...
+```
+
+のようなメッセージが出る場合は、フォント "HiraKakuProN-W3.otf" がインストールされていないか dvipdfmx が見つけられる場所にありません。
 
 ```
  Could not find encoding file "H".
@@ -235,7 +294,7 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
  Some chracters may not be displayed or printed.
 ```
 
-使用している CMap が新しい改訂版でフォント "Ryumin-Light" に含まれない文字を使用する可能性があります。文字が欠落する可能性があり、"No character mapping available." の警告が出ないか注意する必要があります。
+使用している CMap が新しい改訂版であるため、フォント "Ryumin-Light" に含まれない文字が使用される可能性があります。文字が欠落する可能性があり、"Glyph missing in font." の警告が出ないか注意する必要があります。
 
 #### ファイルが見つからない場合の対処法 {#x37a3e64}
 
