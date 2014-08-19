@@ -9,7 +9,7 @@ pukiwiki: "QPDF"
 
 ## QPDF とは？ {#y4152cbf}
 
-QPDF は PDF ファイルの、内容を維持したままの構造的な変換をおこなうコマンドラインプログラムです。QPDF は pdf-to-pdf とでも呼ぶべきものです。QPDF はまた、PDF 生成ソフト開発者向けの有用な機能を提供します。それらは PDF がどのようなもの知るために PDF ファイルの中身をのぞき見たい人々のために役立ちます。
+QPDF は PDF ファイルの、内容を維持したままの構造的な変換をおこなうコマンドラインプログラムです。QPDF は pdf-to-pdf とでも呼ぶべきものです。QPDF はまた、PDF 生成ソフト開発者向けの有用な機能を提供します。それらは PDF がどのようなものかを知るために PDF ファイルの中身をのぞき見たい人々のために役立ちます。
 
 QPDF は PDF をリニアライズド ("WEB に最適化された") にしたり、暗号化したりできます。また、(PDF の比較的新しい機能である) オブジェクトストリームを持つ PDF ファイルからそれを持たない PDF に変換したり、逆にオブジェクトストリームを生成したりできます。QPDF は PDF ファイルをテキストエディタで編集するのを助ける特別なモードをサポートします。詳しくは [QPDF のドキュメント](http://qpdf.sourceforge.net/files/qpdf-manual.html) を見てください。
 
@@ -28,7 +28,7 @@ QPDF は PDF を暗号化したり、WEB 用に最適化 (ここではリニア�
 とりあえず暗号化するには
 
 ```
- qpdf --encrypt user-passwd owner-passwd 40 --modify=n -- input.pdf output.pdf
+ qpdf --encrypt upasswd opasswd 40 --modify=n -- input.pdf output.pdf
 ```
 
 のようにします。
@@ -89,4 +89,5 @@ PDF の簡単な解説については[手書き PDF 入門](http://www.kobu.com/
 
 ### libqpdf {#l2e5ffe5}
 
-PDF を読み込み操作したりする C++ のライブラリ。
+PDF を読み込み操作したりする C++ のライブラリ。[https://github.com/qpdf/qpdf](https://github.com/qpdf/qpdf) の
+[examples](https://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](https://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
