@@ -435,6 +435,8 @@ PostScript ファイルを取り込む際には通常は GhostScript が自動�
  D "inkscape -z -A %o %i"
 ```
 
+実際の運用では様々な画像フォーマットに対して分岐処理をするスクリプトを呼び出すことになるでしょう。
+
 ### special コマンド {#p133bd5e}
 
 dvipdfmx は様々な special 拡張をサポートしています。文書やページの設定を行うものとして
@@ -443,7 +445,7 @@ dvipdfmx は様々な special 拡張をサポートしています。文書や�
  papersize landscape pdf:pagesize pdf:encrypt pdf:minorversion
 ```
 
-や、dvips 由来のもの、HTML 形式のハイパーリンクなど様々です。dvipdfmx 自身も独自の special による拡張機能を持ちます。
+など、dvips 由来のもの、HTML 形式のハイパーリンクなど様々です。dvipdfmx 自身も独自の special による拡張機能を持ちます。
 
 #### \special で遊ぶ {#a807a6c0}
 
@@ -478,7 +480,7 @@ dvipdfmx は様々な special 拡張をサポートしています。文書や�
 
 これは余白の部分を塗りつぶします。"bop" はページの開始時に指定された PDF 描画コードを埋め込みます。
 
-Watermark 風のものを入れます:
+ウォーターマーク風のものを入れます:
 
 ```
  \documentclass[]{article}
@@ -504,6 +506,8 @@ Watermark 風のものを入れます:
 ```
 
 (bophook.sty が必要です) やや複雑な例です。"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています。"eop" は "bop" とは違って、ページの終了時に指定された PDF 描画コードを挿入します。"put" の部分では resources で識別される辞書オブジェクト (ここではページリソース) に与えられたオブジェクトを追加します。ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で追加しています。
+
+上の例ではページに直接 Sample という文字を書き込みましたがアノーテーションを使ってウォーターマークを入れることもできます。
 
 ### PDF のバージョンを指定する {#b272a636}
 
