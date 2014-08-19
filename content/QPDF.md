@@ -91,3 +91,5 @@ PDF の簡単な解説については[手書き PDF 入門](http://www.kobu.com/
 
 PDF を読み込み操作したりする C++ のライブラリ。[https://github.com/qpdf/qpdf](https://github.com/qpdf/qpdf) の
 [examples](https://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](https://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
+
+libqpdf でプログラミングするには PDF の構造や仕組みに関する詳細な知識を必要とします。これは PDF の構造をあまり意識しないで済む高水準の API を提供する PDFlib とは対照的です。PDF の生成もできますが、libqpdf にはグラフィックス描画関数などはありません。
