@@ -377,7 +377,13 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
  kpsewhich -progname=dvipdfmx -show-path=cmap
 ```
 
-のようにします。区切り文字 (Windows では ";") で区切られたフォルダのリストが出力されます。kpsewhich の使い方については
+のようにします。区切り文字 (Windows では ";") で区切られたフォルダのリストが出力されます。検索パス等は
+
+```
+ kpsewhich -a -format=cnf texmf.cnf
+```
+
+で示されるファイルで設定されています。kpsewhich の使い方については
 
 ```
  kpsewhich -help
@@ -389,9 +395,11 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 
 dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPEG 2000 (2014/08/11 より) および MetaPost が出力した EPS (MPS) です。これに加えて PDF のページも取り込めます。通常の EPS はサポートされていないことに注意してください。通常の EPS ファイルの取り込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してから取り込みます。
 
+dvipdfmx はダウンサンプルは行いません。画像を埋め込むとファイルサイズが異様に大きくなるような場合は画像加工ソフトで適切な解像度になるように画像のサイズを調整してください。
+
 #### PostScript ファイルの取り込み {#q1c3abbe}
 
-PostScript ファイルを取り込む際には通常は GhostScript が自動的に起動し、PDF へ一時的に変換したうえで取り込みます。具体的には dvipdfmx.cfg のオプションの記述を見ましょう
+PostScript ファイルを取り込む際には通常は GhostScript が自動的に起動し、PDF へ一時的に変換したうえで取り込みます。具体的には dvipdfmx.cfg のオプションの記述を見ましょう:
 
 ```
  kpsewhich -progname=dvipdfmx -format=othertext dvipdfmx.cfg
@@ -419,11 +427,29 @@ PostScript ファイルを取り込む際には通常は GhostScript が自動�
 
 のようなエラーメッセージを出力する場合は PostScript の変換プログラムが変換に失敗しています。
 
-### \special で遊ぶ {#a807a6c0}
+#### SVG を取り込む {#o8c48aab}
+
+"D" オプションは EPS ファイルを取り込むためだけのものではありません。これは dvipdfmx がサポートしない形式のファイルを処理するための一般的なものです。Inkscape などに SVG から PDF への変換を依頼して図を取り込むこともできます:
+
+```
+ D "inkscape -z -A %o %i"
+```
+
+### special コマンド {#p133bd5e}
+
+dvipdfmx は様々な special 拡張をサポートしています。文書やページの設定を行うものとして
+
+```
+ papersize landscape pdf:pagesize pdf:encrypt pdf:minorversion
+```
+
+や、dvips 由来のもの、HTML 形式のハイパーリンクなど様々です。dvipdfmx 自身も独自の special による拡張機能を持ちます。
+
+#### \special で遊ぶ {#a807a6c0}
 
 - [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります。
 
-ファイルを添付
+ファイルを添付:
 
 ```
  \special{pdf:fstream @fileobj (ファイル名をここに)}%
@@ -442,15 +468,42 @@ PostScript ファイルを取り込む際には通常は GhostScript が自動�
           }%
 ```
 
-TeX のソースを埋め込んでおくこともできます。
+上の例ではまず最初の special で外部ファイルを取り込み、それを fileobj と名付けます。次の special で "添付ファイル" アノーテーションを作ります。出来上がった PDF には小さなグリップが表示され、その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです。(ビューアーによって操作は異なります) このようにして TeX のソースを埋め込んでおくこともできます。
 
-ページの開始時に任意の PDF 描画コードを挿入
+ページの開始時に任意の PDF 描画コードを挿入することもできます:
 
 ```
  \special{pdf:bop 0.4 0.4 0.6 rg 0 0 596 842 re 72 72 452 700 re f*}
 ```
 
-余白の部分を塗りつぶします。
+これは余白の部分を塗りつぶします。"bop" はページの開始時に指定された PDF 描画コードを埋め込みます。
+
+Watermark 風のものを入れます:
+
+```
+ \documentclass[]{article}
+ \usepackage{bophook}
+ \AtBeginDocument{
+   \special{pdf:obj @Courier-Bold
+     <<
+       /Type /Font
+       /Subtype /Type1
+       /BaseFont /Courier-Bold
+       /Encoding /WinAnsiEncoding
+     >>
+   }
+   \special{pdf:eop BT 1 Tr /_Fn01 200 Tf
+                    0.707 0.707 -0.707 0.707 72 216 Tm (Sample) Tj ET}
+ }
+ \AtBeginPage{
+   \special{pdf:put @resources << /Font << /_Fn01 @Courier-Bold >> >>}
+ }
+ \begin{document}
+ Hello, world.
+ \end{document}
+```
+
+(bophook.sty が必要です) やや複雑な例です。"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています。"eop" は "bop" とは違って、ページの終了時に指定された PDF 描画コードを挿入します。"put" の部分では resources で識別される辞書オブジェクト (ここではページリソース) に与えられたオブジェクトを追加します。ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で追加しています。
 
 ### PDF のバージョンを指定する {#b272a636}
 
