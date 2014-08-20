@@ -265,7 +265,7 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  uprml-h unicode ipaexm.ttf
 ```
 
-エンコーディングに unicode を指定する場合は追加の外部ファイルを必要としません。
+エンコーディング unicode が PostScript Type1 フォントに対して指定された場合は、Adobe グリフリストの記述に従い PostScript グリフ名と Unicode 値とを対応付けます。ファイル glyphlist.txt がインストールされている必要があります。
 
 #### 実フォント名 {#he05780d}
 
