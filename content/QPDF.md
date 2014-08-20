@@ -93,3 +93,66 @@ PDF を読み込み操作したりする C++ のライブラリ。[http://github
 [examples](http://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](http://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
 
 libqpdf でプログラミングするには PDF の構造や仕組みに関する詳細な知識を必要とします。これは PDF の構造をあまり意識しないで済む高水準の API を提供する PDFlib とは対照的です。PDF の生成もできますが、libqpdf にはグラフィックス描画関数などはありません。
+
+試しに mingw32 環境で最新の gcc-4.8.1 でコンパイルしてみましたがうまく動かないようです。gcc-4.6.2 にダウングレードしたら動きました。
+
+とりあえず [examples/pdf-create.cc](http://github.com/qpdf/qpdf/tree/master/examples/pdf-create.cc) を参考に簡単な PDF 生成プログラムを書いてみます:
+
+```
+ #include <qpdf/QPDF.hh>
+ #include <qpdf/QPDFObjectHandle.hh>
+ #include <qpdf/QPDFWriter.hh>
+ #include <stdlib.h>
+```
+
+```
+ static void create_pdf (char const* filename)
+ {
+   QPDF pdf;
+```
+
+```
+   // 空の　PDF を用意する
+   pdf.emptyPDF();
+   // ページオブジェクト
+   QPDFObjectHandle page = pdf.makeIndirectObject(
+     QPDFObjectHandle::parse(
+       "<< /Type /Page"
+       "   /MediaBox [0 0 200 200]"
+       "   /Resources << /ProcSet [/PDF] >> >>")
+     );
+   // ページ内容: (50, 50) に 100×100 の正方形を描画
+   QPDFObjectHandle contents =
+     QPDFObjectHandle::newStream(&pdf, "50 50 100 100 re s");
+   page.replaceKey("/Contents", contents);
+   // ページを追加
+   pdf.addPage(page, true);
+```
+
+```
+   // ファイルに書き出し
+   QPDFWriter w(pdf, filename);
+   w.write();
+ }
+```
+
+```
+ int main (int argc, char* argv[])
+ {
+   try
+   {
+     create_pdf("test.pdf");
+   }
+   catch (std::exception& e)
+   {
+     std::cerr << e.what() << std::endl;
+     exit(2);
+   }
+```
+
+```
+   return 0;
+ }
+```
+
+コンパイルして実行すると test.pdf ができるはずです。
