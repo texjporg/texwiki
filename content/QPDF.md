@@ -9,7 +9,7 @@ pukiwiki: "QPDF"
 
 ## QPDF とは？ {#y4152cbf}
 
-QPDF は PDF ファイルの、内容を維持したままの構造的な変換をおこなうコマンドラインプログラムです。QPDF は pdf-to-pdf とでも呼ぶべきものです。QPDF はまた、PDF 生成ソフト開発者向けの有用な機能を提供します。それらは PDF がどのようなものかを知るために PDF ファイルの中身をのぞき見たい人々のために役立ちます。
+QPDF は PDF ファイルの、内容を維持したままの構造的な変換をおこなうコマンドラインプログラムです。QPDF は pdf-to-pdf とでも呼ぶべきものです。QPDF はまた、PDF 生成ソフト開発者や PDF の中身を覗き見てみたい人たち向けの有用な機能を提供します。それらは PDF がどのようなものかを学ぶために役立ちます。
 
 QPDF は PDF をリニアライズド ("WEB に最適化された") にしたり、暗号化したりできます。また、(PDF の比較的新しい機能である) オブジェクトストリームを持つ PDF ファイルからそれを持たない PDF に変換したり、逆にオブジェクトストリームを生成したりできます。QPDF は PDF ファイルをテキストエディタで編集するのを助ける特別なモードをサポートします。詳しくは [QPDF のドキュメント](http://qpdf.sourceforge.net/files/qpdf-manual.html) を見てください。
 
@@ -31,7 +31,7 @@ QPDF は PDF を暗号化したり、WEB 用に最適化 (ここではリニア�
  qpdf --encrypt upasswd opasswd 40 --modify=n -- input.pdf output.pdf
 ```
 
-のようにします。
+のようにします。ここで upasswd と opasswd はそれぞれユーザー、オーナーパスワードで、40 は暗号化キー長です。それ以降から "--" まで許可設定フラグが続きます。"n" ("y") は "modify" = 編集が非許可 (許可) であることを表します。パスワードが不要な場合は空文字列 "" にしましょう。
 
 リニアライズするには
 
@@ -77,7 +77,7 @@ PDF の中身をテキストエディタでいじりたいときに役に立ち�
  qpdf --qdf input.pdf output.qdf
 ```
 
-で output.qdf (中身は PDF だが拡張子を <em>q</em>df に代えてある) をつくり、テキストエディタで編集する。(この時点でホントは xref テーブルや Stream オブジェクトの Length 等がおかしくなる) その後
+で output.qdf (中身は PDF だが拡張子を <em>q</em>df に代えてある) をつくり、テキストエディタで編集する。(この時点でホントは xref テーブルや Stream オブジェクトの Length 等がおかしくなり壊れた PDF になる) その後
 
 ```
 fix-qdf < output.qdf > output.pdf
@@ -89,7 +89,7 @@ PDF の簡単な解説については[手書き PDF 入門](http://www.kobu.com/
 
 ### libqpdf {#l2e5ffe5}
 
-PDF を読み込み操作したりする C++ のライブラリ。[https://github.com/qpdf/qpdf](https://github.com/qpdf/qpdf) の
-[examples](https://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](https://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
+PDF を読み込み操作したりする C++ のライブラリ。[http://github.com/qpdf/qpdf](http://github.com/qpdf/qpdf) の
+[examples](http://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](http://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
 
 libqpdf でプログラミングするには PDF の構造や仕組みに関する詳細な知識を必要とします。これは PDF の構造をあまり意識しないで済む高水準の API を提供する PDFlib とは対照的です。PDF の生成もできますが、libqpdf にはグラフィックス描画関数などはありません。
