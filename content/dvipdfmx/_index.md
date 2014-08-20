@@ -124,7 +124,7 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 使い方 {#qabeb774}
 
-- [Dvipdfm マニュアル](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) をまず読んでください。
+- [Dvipdfm マニュアル](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) (英語) をまず読んでください。
 
 ### コマンドラインオプション {#tc481bdb}
 
@@ -467,7 +467,31 @@ dvipdfmx は様々な special 拡張をサポートしています。文書や�
 
 これらの機能のうちほとんどはユーザーが直接意識することはありません。通常はパッケージの製作者が LaTeX 等の為の使い易いインターフェイスを提供します。しかしながら様々な特殊効果を出す為にこれらの拡張機能を直接使いたい場合もあります。dvipdfm(x) 独自の機能を使う場合は、それにより他の DVI ドライバとの互換性を酷く損なうという事に注意してください。いくつかの機能は DVI の設計思想に反することもあります。
 
-#### \special で遊ぶ {#a807a6c0}
+#### ページ設定 {#zbee7ac4}
+
+landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます。
+
+```
+ \special{landscape}
+```
+
+は用紙を横置きに、
+
+```
+ \special{papersize=210mm,297mm}
+```
+
+は用紙サイズを 210mm × 297mm に設定します。
+
+pagesize は文書の途中でも使えますが、これが実行されるタイミングによっては予期せぬ結果となります。特にページがシャッフルされる時は意図したようにはなりません。
+
+```
+  \special{pdf:pagesize width 210mm height 297mm}
+```
+
+のように使います。
+
+#### special で遊ぶ {#a807a6c0}
 
 - [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります。
 
@@ -490,7 +514,7 @@ dvipdfmx は様々な special 拡張をサポートしています。文書や�
           }%
 ```
 
-上の例ではまず最初の special で外部ファイルを取り込み、それを fileobj と名付けます。次の special で "添付ファイル" アノーテーションを作ります。出来上がった PDF には小さなグリップが表示され、その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです。(ビューアーによって操作は異なります) このようにして TeX のソースを埋め込んでおくこともできます。
+上の例ではまず最初の special で外部ファイルを取り込み、それを fileobj と名付けます。次の special で "添付ファイル" アノーテーションを作ります。出来上がった PDF には小さなクリップが表示され、その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです。(ビューアーによって操作は異なります) このようにして TeX のソースを埋め込んでおくこともできます。
 
 ページの開始時に任意の PDF 描画コードを挿入することもできます:
 
