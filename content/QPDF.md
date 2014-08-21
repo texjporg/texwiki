@@ -105,12 +105,12 @@ PDF の簡単な解説については[手書き PDF 入門](http://www.kobu.com/
 
 ### libqpdf {#l2e5ffe5}
 
-PDF を読み込み操作したりする C++ のライブラリ。[http://github.com/qpdf/qpdf](http://github.com/qpdf/qpdf) の
-[examples](http://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](http://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照。
+libqpdf は PDF を読み込み操作したりする C++ のライブラリです。詳しくは [http://github.com/qpdf/qpdf](http://github.com/qpdf/qpdf) の
+[examples](http://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](http://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照してください。
 
 libqpdf でプログラミングするには PDF の構造や仕組みに関する詳細な知識を必要とします。これは PDF の構造をあまり意識しないで済む高水準の API を提供する PDFlib とは対照的です。PDF の生成もできますが、libqpdf にはグラフィックス描画関数などはありません。
 
-試しに mingw32 環境で最新の gcc-4.8.1 でコンパイルしてみましたがうまく動かないようです。gcc-4.6.2 にダウングレードしたら動きました。
+試しに mingw32 環境で最新 (2014/08/20) の gcc-4.8.1 でサンプルコードをコンパイルしてみましたがうまく動かないようです。gcc-4.6.2 にダウングレードしたら動きました。
 
 とりあえず [examples/pdf-create.cc](http://github.com/qpdf/qpdf/tree/master/examples/pdf-create.cc) を参考に簡単な PDF 生成プログラムを書いてみます:
 
@@ -128,7 +128,7 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 ```
 
 ```
-   // 空の　PDF を用意する
+   // 空の PDF を用意する
    pdf.emptyPDF();
    // ページオブジェクト
    QPDFObjectHandle page = pdf.makeIndirectObject(
