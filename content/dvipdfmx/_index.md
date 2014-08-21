@@ -391,6 +391,16 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 
 などを参照してください。
 
+#### フォント関連の重要なファイル {#d0149545}
+
+pTeX/pLaTeX で日本語を使うのに最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2" または "Adobe-Japan1-UCS4" というファイルが必要となります。"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。TrueType フォントを利用する場合は
+
+```
+ JIS --> Adobe-Japan1 --> Unicode
+```
+
+という 2 重の文字コード (識別子) 変換を伴います。
+
 ### 画像の取り込み {#a1cabace}
 
 dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPEG 2000 (2014/08/11 より) および MetaPost が出力した EPS (MPS) です。これに加えて PDF のページも取り込めます。通常の EPS はサポートされていないことに注意してください。通常の EPS ファイルの取り込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してから取り込みます。
