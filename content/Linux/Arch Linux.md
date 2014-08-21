@@ -103,7 +103,7 @@ $ yaourt -S texlive-dummy
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
 ```
-$ sudo pacman -S texlive-langcjk texlive-most
+$ sudo pacman -S texlive-langjapanese texlive-most
 ```
 
 ## [Ghostscript](/Ghostscript/) {#q940a9dc}
