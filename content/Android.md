@@ -19,9 +19,9 @@ pukiwiki: "Android"
 
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
     - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
+    - [TeXLive for Android インストールマニュアル](http://tkyon.blogspot.jp/2014/08/texlive-for-android.html)
     - [TeXLive-for-Android : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeXLive-for-Android)
     - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
-    - [Android でTeXLive](http://tkyon.blogspot.jp/2014/02/android-texlive.html)
     - [http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones](http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones)
 
 TeX Live for Android を起動して TeX Live をインストールします．
