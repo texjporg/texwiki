@@ -40,6 +40,8 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
     - [cl-pdf はもともと日本語 True Type フォントが使えたよ](http://read-eval-print.blogspot.com/2011/07/cl-pdf-true-type.html)
 - [CamlPDF](http://www.coherentpdf.com/ocaml-libraries.html) OCaml
     - [https://github.com/johnwhitington/camlpdf](https://github.com/johnwhitington/camlpdf)
+- [QPDF](http://qpdf.sourceforge.net) C++ のライブラリも付属しています。[TeXWiki:QPDF](/QPDF/) も参照。
+- [Origami](http://esec-lab.sogeti.com/pages/Origami) Ruby
 
 ### PDF 作成 {#w4991875}
 
