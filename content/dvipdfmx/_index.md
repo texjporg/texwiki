@@ -45,7 +45,7 @@ dvipdfmx での主な変更・拡張は
 
 [XeTeX, XeLaTeX](/XeTeX/) を -no-pdf オプションを指定しないで実行すると xdvipdfmx が自動的に実行されます．<br>
 
-### License {#w1524716}
+### ライセンス {#w1524716}
 
 [GPLv3, GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)<br>
 
@@ -235,7 +235,7 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 のようになります。ここで <em>tfm</em> は TeX において使われるフォント名、<em>enc</em> は使用すべきフォントのエンコーディング、<em>font</em> は PDF 出力に用いられる実フォント名（通常はファイル名）で <em> options</em> で様々なオプションを指定します。\[@SFD@\] の項は CJK パッケージで用いられるフォントの分割方法の指定で、pLaTeX などでは通常不要です。
 
-TeX Live などの通常のインストールではおそらく各 OS で利用可能なフォントのマップファイルは既にインストールされているでしょう。ない場合は [jfontmaps パッケージ](http://www.ctan.org/pkg/jfontmaps)(TeX Live の場合) を導入します。使用するマップファイルの切り替えには updmap プログラムを使います。マップファイルが用意されていないフォントを使いたい場合は自分で用意しなければなりません。
+W32TeX や TeX Live などの通常のインストールではおそらく各 OS で利用可能なフォントのマップファイルは既にインストールされているでしょう。ない場合は [jfontmaps パッケージ](http://www.ctan.org/pkg/jfontmaps) (TeX Live の場合) を導入します。使用するマップファイルの切り替えには updmap プログラムを使います。マップファイルが用意されていないフォントを使いたい場合は自分で用意しなければなりません。
 
 以下にマップファイルの書き方について簡単に解説します。
 
@@ -633,12 +633,25 @@ OpenType と Windows 向け TrueType フォントにはフォントファイル�
 
 OpenType/TrueType フォントファイルに記載できるフォントの埋め込み許可情報は簡易なものです。詳細については必ずそのフォントの EULA を参照するようにしてください。
 
-以下にいくつかのフォント・フォントベンダーにおけるフォント埋め込み許可に関する情報をあげておきます:
+Adobe のフォントに関しては、Adobe のサイト "[フォントの埋め込みや編集などに関する許可](http://www.adobe.com/jp/type/browser/info/embedding.html)" を参照してください。なお、Adobe Reader に付属の小塚フォントは Adobe Reader からの利用のみが可能ですので dvipdfmx で流用することはできません。注意してください。
 
-- Adobe のフォント: [フォントの埋め込みや編集などに関する許可](http://www.adobe.com/jp/type/browser/info/embedding.html)
-    - MS 明朝・MS ゴシック: かつてはフォントを埋め込んだ文書を (不特定多数の人間に) 配布することはライセンスに抵触するのではないかという議論がありました。しかしながら、フォントの利用に関して供給元であるリコーと Microsoft の見解に変化があったようです ([ゆず屋：\[豆知識\] MS明朝、MSゴシックは（今は）商用利用できる](http://yuzuya.style.coocan.jp/blog/archives/2010/12/22223803.php)) ので再度調査が必要です。
+MS 明朝・MS ゴシックに関して、かつてはフォントを埋め込んだ文書を (不特定多数の人間に) 配布することはライセンスに抵触するのではないかという議論がありました。しかしながら、フォントの利用に関して供給元であるリコーと Microsoft の見解に変化があったようです ([ゆず屋：\[豆知識\] MS明朝、MSゴシックは（今は）商用利用できる](http://yuzuya.style.coocan.jp/blog/archives/2010/12/22223803.php)) ので再度調査が必要です。
 
-なお、Adobe Reader に付属の小塚フォントは Adobe Reader からの利用のみが可能ですので dvipdfmx で流用することはできません。注意してください。
+Windows 標準搭載フォントのうち Microsoft に著作権があるものに関しては、"[マイクロソフトの著作物の使用について](http://www.microsoft.com/ja-jp/mscorp/legal/permission/default.aspx)" によると、Windows の使用許諾契約書内にあるフォントの条項で規定されているようです。Microsoft による[ライセンス条項のページ](http://www.microsoft.com/ja-jp/mscorp/legal/useterms/)からたどれる"マイクロソフト ソフトウェア ライセンス条項" には (Windows 7 Professional の場合)
+
+> · フォントの埋め込みに関する制限の下で許容される範囲でコンテンツにフォントを埋め込む。
+
+ことが許可されるとの記載があります。"フォントの埋め込みに関する制限の下で許容される範囲" というものが何を指しているのかは不明です。また、別のサイト "[Microsoft Typography - Font Redistribution FAQ](http://www.microsoft.com/typography/RedistributionFAQ.mspx)" にはフォントの "プロパティー" (フォントファイルの上で右クリック) の詳細のタブにある "フォント埋め込み可能" の項目を参照するように書かれています。この情報はおそらく dvipdfmx がフォントの埋め込みの際に参照するライセンス情報と同じものです。
+
+Mac OS X に関しては、Apple による[ハードウェアおよびソフトウェア製品規約](https://www.apple.com/jp/legal/sla/)のページを参照してください。"[OS X（Mountain Lion 10.8.2）ソフトウェアライセンス](https://www.apple.com/legal/sla/docs/OSX1082.pdf)" の p.41 には
+
+> E. フォント　本契約の契約条件に従って、お客様は、Appleソフトウェアの起動中にコンテンツ
+> を表示およびプリントするために、Appleソフトウェアに入っているフォントを使用することが
+> できます。しかし、お客様は、問題になっているフォントに付属する組み込み制限が許諾する場
+> 合のみ、コンテンツの中にフォントを組み込むことができます。これらの組み込み制限は、Font
+> Book/プレビュー/フォント情報を表示、においてご覧になれます。
+
+との記載があります。
 
 ### PDF のバージョンを指定する {#b272a636}
 
