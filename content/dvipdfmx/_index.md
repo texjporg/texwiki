@@ -14,8 +14,35 @@ pukiwiki: "dvipdfmx"
 
 ## dvipdfmx/xdvipdfmx とは {#ia9746cb}
 
-dvipdfmx は DVI ファイルを PDF ファイルに変換するソフトウェアです．<br>
-xdvipdfmx は X&#x44;V ファイルを PDF ファイルに変換するソフトウェアです．<br>
+dvipdfmx は Mark A. Wicks 氏によって開発された DVI-to-PDF 変換ソフトウェア、dvipdfm の拡張版で、xdvipdfmx は X&#x44;V ファイルを処理するための dvipdfmx の拡張版です。dvipdfm の主な特徴は、
+
+- アウトラインやアノーテーション (注釈機能) など Acrobat Distiller の pdfmark に対応した多くの機能を提供します。
+- HyperTeX (HTML)、TPIC、カラー、PSFile、その他 PostScript special など "標準的な" DVI special 機能を提供します。
+- MetaPost 出力を PDF に取り込む際のネイティブな対応と、任意の PostScript ファイルを外部プログラムの助けを借りて取り込む機能を提供します。
+- サムネイル埋め込み機能 (GhostScript を利用します) を提供します。
+- 組み版結果に対する任意のネストした線形変換 (変形) 機能を提供します。テキストを含む、すべてのページ上の描画物に対し伸縮や回転の操作を行えます。
+- PDFの最初のページを (ページを描画するのに必要な) フォントなどのリソースとともにカプセル化し取り込むことができます。
+- JPEG と PNG 画像を取り込むことができます。
+- 内部カラー・スタック。色設定に対するスタック操作 (push、pop) が可能です。これは例えば、ヘッドラインなどで一時的に色を変えたりするのに役に立ちます。
+- ファイル・サイズを小さくするためにフォントの部分埋め込みと Flate 圧縮に対応しています。
+- Acrobat 製品群では不完全な (dvipdfm マニュアルが書かれた当時) エンコーディングの問題に対処するために、フォントの再エンコーディングの機能を提供します。
+- ページとデスティネーション・ツリーに対する平衡木の利用により、巨大な文書における PDF ビューアのアクセスを高速化します。
+
+Dvipdfm User's Manual Version 0.12.4 より
+
+dvipdfmx での主な変更・拡張は
+
+- OpenType/TrueType に対するより完全な対応、特に2バイトフォントとしての利用や縦組み用のグリフ置換機能を提供します。
+- Subfont Definition ファイルへの対応。CJK-LaTeX を使う際のフォントの問題を解消します。
+- PostScript CMap リソースを利用して多様な旧来のエンコーディングに対応します。
+- 入力エンコーディングとしての Unicode への対応や ToUnicode CMap の自動生成など Unicode 関連の機能の強化を提供します。
+- アスキー pTeX 拡張への対応。
+- pdfTeX 互換 special などいくつかの special コマンドを追加します。
+- Type1 フォントの CFF (Type1C) への変換や オブジェクト・ストリーム対応などファイル・サイズ削減のための様々な機能を提供します。
+- アルファ・チャンネルや埋め込み ICC プロファイル対応などの改善されたラスタ画像への対応。
+
+などです。
+
 [XeTeX, XeLaTeX](/XeTeX/) を -no-pdf オプションを指定しないで実行すると xdvipdfmx が自動的に実行されます．<br>
 
 ### License {#w1524716}
@@ -198,6 +225,8 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ### フォントの設定 {#tbddb566}
 
+フォントの設定は TeX 関連プログラムを使う際に大きな困難となる部分です。TeX とその関連プログラムがどのようにフォントを取り扱うのか、あまり理解していない場合は各ディストリビューションのデフォルト設定に従うのが賢明です。フォント管理ツール (updmap など) が利用可能であればそれを利用しましょう。
+
 フォントの設定はマップファイルで行います。マップファイルの役割は、TeX が認識するフォント名と実際に PDF 出力に使うべき実フォントとを対応付けることです。このファイルの書式は
 
 ```
@@ -212,17 +241,17 @@ TeX Live などの通常のインストールではおそらく各 OS で利用�
 
 #### TeX フォント名 {#ua7d8a2c}
 
-マップファイルの <em>tfm</em> の項には TeX で使用されるフォント名、あるいは Virtual font から最終的に辿り着く TeX フォントがきます。cmr10 や rml などです。オプションとして @ SFD@ をつけることができます。ここで SFD は Subfont Difinition ファイル名です。このオプションは <em>SFD</em> の規則にしたがい分割されたサブフォントを一つのフォントにまとめあげるときに指定します。
+マップファイルの <em>tfm</em> のフィールドには TeX で使用されるフォント名、あるいは Virtual font から最終的に辿り着く TeX フォントがきます。cmr10 や rml などです。オプションとして @ SFD@ をつけることができます。ここで SFD は SubFont Difinition 名です。このオプションは <em>SFD</em> の規則に従い分割されたサブフォントを一つのフォントにまとめあげる (復元する) ときに指定します。
 
 ```
  min@Unicode@  unicode  Mincho
 ```
 
-は、Unicode.sfd の規則にしたがって分割されたサブフォント群 min00, min01, ... を逆にひとつの Unicode フォントにまとめ上げます。その後このひとつに束ねられた仮想的なフォントは Mincho というフォントにマップされます。
+は、Unicode.sfd の規則にしたがって分割されたサブフォント群 min00, min01, ... を逆にひとつの Unicode フォントとして復元します。その後このひとつに束ねられた仮想的なフォントは Mincho というフォントにマップされます。
 
 #### エンコーディング {#y16b9bc3}
 
-<em>enc</em> を正しく指定しないと正しい出力は得られません。dvipdfmx でサポートされているものは
+エンコーディング・フィールド <em>enc</em> を正しく指定しないと正しい出力は得られません。dvipdfmx でサポートされているは
 
 ```
  dvips の .enc 名
@@ -230,7 +259,9 @@ TeX Live などの通常のインストールではおそらく各 OS で利用�
  unicode
 ```
 
-の3種類です。dvips の .enc ファイルは 8-bit エンコーディング用のエンコーディングファイルで、どのコードポイントにどの文字 (グリフ) が割り当てられているかを PostScript の書式で記述します。例えば、8r.enc では
+の3種類です
+
+dvips の .enc ファイルは 8-bit エンコーディング用のエンコーディングファイルで、どのコードポイントにどの文字 (グリフ) が割り当てられているかを PostScript の書式で記述します。例えば、8r.enc では
 
 ```
   /TeXBase1Encoding [
@@ -242,7 +273,7 @@ TeX Live などの通常のインストールではおそらく各 OS で利用�
   ] def
 ```
 
-のような記述が見られます。コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。文字の識別は PostScript グリフ名で行われます。OpenType/TrueType フォントでは Unicode値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での文字の指定も可能です。必要な .enc ファイルは通常のインストールでほぼすべてインストールされています。
+のような記述が見られます。コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。ここでは文字の識別は PostScript グリフ名で行われます。dvipdfmx では OpenType/TrueType フォントに対して dvips enc ファイルを適用する場合は、Unicode 値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での指定も可能です。必要な dvips enc ファイルは通常のインストールでほぼすべてインストールされています。
 
 ```
  foo 8r Foo
@@ -250,7 +281,7 @@ TeX Live などの通常のインストールではおそらく各 OS で利用�
 
 というマップエントリは TeX フォント foo を Foo に対応付けます。その際 TeX で用いられたエンコーディングは 8r.enc に記述されてあるものとします。
 
-PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字の識別番号で識別する場合に用いられます。CMap ファイルは一般的に用いられるエンコーディング (Shift-JIS など) からの CID への対応付けを記述したファイルです。例えば、UniJIS-UCS2-H は Unicode の JIS サブセットの範囲で UCS2 でエンコードされた文字列を Adobe-Japan1 で定められた文字集合の CID 値の並びに変換するのに用いられます。拡張子が ".otf" の 和文 OpenType フォントでは通常これを使います。pTeX/pLaTeX でよく用いられる設定は:
+PostScript CMap リソースは dvipdfmx が文字を CID (Character IDentifier) と呼ばれる文字の識別番号で識別する場合に用いられます。PostScript CMap ファイルは一般的によく用いられるエンコーディング (Shift-JIS など) から CID への対応付けを記述したファイルです。例えば、UniJIS-UCS2-H は Unicode の JIS サブセットの範囲で UCS2 で表現された文字列を Adobe-Japan1 で定められた文字集合の CID の並びに変換するのに用いられます。dvipdfmx では拡張子が ".otf" の 和文 OpenType フォントに対しては通常これを使います。pTeX/pLaTeX でよく用いられる設定は:
 
 ```
  rml  H Ryumin-Light
@@ -265,7 +296,7 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  uprml-h unicode ipaexm.ttf
 ```
 
-エンコーディング unicode が PostScript Type1 フォントに対して指定された場合は、Adobe グリフリストの記述に従い PostScript グリフ名と Unicode 値とを対応付けます。ファイル glyphlist.txt がインストールされている必要があります。
+エンコーディング unicode は PostScript Type1 フォントに対しても指定が可能です。この場合は、Adobe グリフリストの記述に従い PostScript グリフ名と Unicode 値とを対応付けます。ファイル "glyphlist.txt" がインストールされている必要があります。
 
 #### 実フォント名 {#he05780d}
 
@@ -281,11 +312,17 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  ugoth10  unicode  :1:GothicB.ttc
 ```
 
-のようにファイル名の前に :n: を付けることで n 番目のフォントを選べます。
+のようにファイル名の前に :n: を付けることで n 番目のフォントを選べます。実フォント名の前に "!" スイッチを付けることでフォントを非埋め込みにすることも可能です:
+
+```
+ ugoth10 unicode   !Gothic.ttf
+```
+
+フォントを非埋め込みにすることでファイルサイズをかなり小さくできますが、表示に問題が生じる場合が多々あります。特に文書の再現性と (長期的な) 保存という観点からは推奨されません。実際、PDF を長期保存可能なフォーマットとして利用することを目標として、国際標準化機構（ISO） により制定された PDF/A ではフォントをすべて埋め込むことを求めています。
 
 #### オプション {#d4922a30}
 
-"変形" オプション
+オプション・フィールドではフォントに対して様々なオプションを与えます。例えば、"変形" オプション
 
 ```
  -s .167
@@ -293,16 +330,16 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  -b 1.0
 ```
 
-"s" は斜体に、"e" は横に伸縮し、"b" は太字にするオプションです。"b" の利用は推奨されません。
+のうち、"s" は斜体 (slanted) に、"e" は横に伸張 (extended) し、"b" は "太字" にするオプションです。"b" オプションによる疑似太字の結果は酷いもので、これの利用は推奨されません。将来削除される可能性もあります。
 
-フォントオプション
+フォント・オプション:
 
 ```
  -i 2
  -w 1
 ```
 
-"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。"w" はエンコーディングが unicode のときのみ有効で、値が 1 のときは縦書き用であることを示します。オプション "w" の値が 1 のとき縦書き用の OpenType グリフ置換機能が有効になります。
+"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。"w" はエンコーディングが unicode のときのみ有効で、値が 1 のときは縦書き用であることを示します。オプション "w" の値が 1 のとき縦書き用の OpenType グリフ置換機能が有効になります。エンコーディングを unicode に指定して縦組みを行う場合、"-w 1"　を指定しないと括弧や句読点が正しく表示されないことに注意してください。
 
 ```
 
@@ -310,7 +347,7 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
 
 #### フォント関連のよくあるエラーと警告 {#p3025758}
 
-フォントとエンコーディング関連、PostScript ファイルの取り込みではエラーが多発します。よくあるエラー・警告とその原因です:
+フォントとエンコーディング関連、PostScript ファイルの取り込みではエラーが多発します。フォント関連でよくあるエラー・警告とその原因です:
 
 ```
  Could not locate a virtual/physical font for TFM “gbm-jis”.
@@ -319,7 +356,7 @@ PostScript CMap リソースは dvipdfmx が文字を CID と呼ばれる文字�
  Cannot proceed without .vf or “physical” font for PDF output…
 ```
 
-この種のエラーは mktexpk が実行され失敗した後表示されます。TeX フォント "gbm-jis" にはなんら実フォントとの対応付けがなされておらず、"gbm-jis" という名のフォントを試そうとして失敗しました。おそらくフォントの設定が適切になされてません。類似のエラーとして:
+この種のエラーは mktexpk (ビットマップ・フォント生成プログラム) が実行され失敗した後表示されます。TeX フォント "gbm-jis" にはなんら実フォントとの対応付けがなされておらず、"gbm-jis" という名のフォントを試そうとして失敗しました。おそらくフォントの設定が適切になされてません。類似のエラーとして:
 
 ```
  Could not locate a virtual/physical font for TFM "hgothr-h".
@@ -358,14 +395,14 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 
 ```
  CMap has higher supplement number than CIDFont: Ryumin-Light
- Some chracters may not be displayed or printed.
+ Some characters may not be displayed or printed.
 ```
 
 使用している CMap が新しい改訂版であるため、フォント "Ryumin-Light" に含まれない文字が使用される可能性があります。文字が欠落する可能性があり、"Glyph missing in font." の警告が出ないか注意する必要があります。
 
 #### ファイルが見つからない場合の対処法 {#x37a3e64}
 
-ファイルが見つからないというエラーが出た場合は、dvipdfmx がどこを探していてるかを知る必要があります。TeX 関連の多くのプログラムは kpathsea というライブラリにファイル検索を依頼しており、dvipdfmx も kpathsea ライブラリを利用しています。kpsewhich というコマンドラインプログラムがファイルを置くべき場所を知るのに利用できます。例えば、PostScript CMap "H" が dvipdfmx に見える場所にあるか確かめるには
+ファイルが見つからないというエラーが出た場合は、dvipdfmx が実際にどこを探していてるかを知る必要があります。TeX 関連の多くのプログラムは kpathsea というライブラリにファイル検索を依頼しており、dvipdfmx も kpathsea ライブラリを利用しています。kpsewhich というコマンドラインプログラムがファイルを置くべき場所を知るのに利用できます。例えば、PostScript CMap "H" が dvipdfmx に見える場所にあるか確かめるには
 
 ```
  kpsewhich -progname=dvipdfmx -format=cmap H
@@ -393,7 +430,7 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 
 #### フォント関連の重要なファイル {#d0149545}
 
-pTeX/pLaTeX で日本語を使うために最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2"  というファイルが必要となります。"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。TrueType フォントを利用する場合は
+pTeX/pLaTeX で日本語を使うために最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2"  というファイルが必要となります。"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。TrueType フォントを (PostScript CMap リソースとともに) 利用する場合は
 
 ```
  JIS --> Adobe-Japan1 --> Unicode
@@ -401,7 +438,7 @@ pTeX/pLaTeX で日本語を使うために最低限必要なファイルは Post
 
 という 2 重の (文字コード) 変換を伴います。
 
-他に Unicode に関連した重要なものとして Adobe グリフリストがあります。これは glyphlist.txt という名前でインストールされている必要があります。このファイルは PostScript グリフ名を Unicode に対応付ける必要がある場合に利用されます。PostScript Type1 フォントを Unicode で使う場合がそのひとつです。生成されたPDF ファイル内の文字列の検索やコピー &amp; ペーストを可能にするためにも重要な役割を果たします。
+他に Unicode に関連した重要なものとして Adobe グリフリストがあります。これは "glyphlist.txt" という名前でインストールされている必要があります。このファイルは PostScript グリフ名を Unicode に対応付ける必要がある場合に利用されます。PostScript Type1 フォントを Unicode で使う場合がそのひとつです。生成されたPDF ファイル内の文字列の検索やコピー &amp; ペーストを可能にするためにも重要な役割を果たします。
 
 ### 画像の取り込み {#a1cabace}
 
