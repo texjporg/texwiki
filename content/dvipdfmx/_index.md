@@ -393,13 +393,15 @@ PostScript グリフ名と Unicode との対応を記述したファイル "glyp
 
 #### フォント関連の重要なファイル {#d0149545}
 
-pTeX/pLaTeX で日本語を使うのに最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2" または "Adobe-Japan1-UCS4" というファイルが必要となります。"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。TrueType フォントを利用する場合は
+pTeX/pLaTeX で日本語を使うために最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2"  というファイルが必要となります。"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。TrueType フォントを利用する場合は
 
 ```
  JIS --> Adobe-Japan1 --> Unicode
 ```
 
-という 2 重の文字コード (識別子) 変換を伴います。
+という 2 重の (文字コード) 変換を伴います。
+
+他に Unicode に関連した重要なものとして Adobe グリフリストがあります。これは glyphlist.txt という名前でインストールされている必要があります。このファイルは PostScript グリフ名を Unicode に対応付ける必要がある場合に利用されます。PostScript Type1 フォントを Unicode で使う場合がそのひとつです。生成されたPDF ファイル内の文字列の検索やコピー &amp; ペーストを可能にするためにも重要な役割を果たします。
 
 ### 画像の取り込み {#a1cabace}
 
