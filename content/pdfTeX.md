@@ -23,6 +23,12 @@ pdfTeX の Microtypography 拡張は次の二つの部分からなります:
 - マージン・カーニング -- 特定の種類の文字を余白に僅かにはみ出させることで、テキストの端がよりきれいに揃ったように見せることができます。マージン・カーニングなしでは、ある種の文字が端にきたとき、錯覚によりテキストの端ががたついているような印象を受けることがあります。マージン・カーニングはぶら下げ組み (hanging punctuation) と似たようなものです。適切な設定をした上でこれを適用することでテキスト・ブロックの見た目をかなり改善することができます。
 - フォント・エクスパンション -- これはわずかに横に伸縮させたフォントを利用することで単語間のスペースをより均一にするテクニックです。これはまたより良い位置でのライン・ブレイキングを行うことに使うこともできます。
 
+マニュアル (英語) は
+
+- [ftp://ctan.tug.org/tex-archive/systems/pdftex/manual/pdftex-l.pdf](ftp://ctan.tug.org/tex-archive/systems/pdftex/manual/pdftex-l.pdf)
+
+です。
+
 ### ChangeLog {#j6e7e366}
 
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/pdftexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/)
@@ -32,7 +38,38 @@ pdfTeX の Microtypography 拡張は次の二つの部分からなります:
 
 ## pdfLaTeX で日本語 {#dfcf126c}
 
-[CJK LaTeX/BXcjkjatype](/LaTeX-CJK/)<br>
-[My Future Sight for Past: pdflatex](http://myfuturesightforpast.blogspot.jp/search/label/pdflatex)<br>
+pdfLaTeX で日本語を扱うには CJK パッケージを使います。CJK パッケージについては
 
-を参照．<br>
+- [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/)
+- [My Future Sight for Past: pdflatex](http://myfuturesightforpast.blogspot.jp/search/label/pdflatex)
+
+を参照してください。
+
+とりあえず IPA 明朝を使って日本語を出してみましょう。まず TFM や fd ファイルの準備が必要です。ttf2tfm プログラムでサブフォントを生成します：
+
+```
+ ttf2tfm  ipam.ttf ipam@Unicode@ &> log
+```
+
+大量の TFM ファイルができます。そして fd ファイル "c70ipam.fd" を作ります。以下のような内容です：
+
+```
+ \ProvidesFile{c70ipam.fd}
+ \DeclareFontShape{C70}{ipam}{m}{n}{<-> CJK * ipam}{}
+ \endinput
+```
+
+LaTeX ソースを書きます。
+
+```
+ \documentclass{article}
+ \usepackage{CJK}
+ \pdfmapline{=ipam@Unicode@ <ipam.ttf}
+ \begin{document}
+ \begin{CJK}{UTF8}{ipam}
+ こんにちは。
+ \end{CJK}
+ \end{document}
+```
+
+ここで、"\pdfmapline" はフォントマップを定義する pdfTeX の拡張コマンドです。
