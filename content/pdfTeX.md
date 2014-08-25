@@ -36,6 +36,29 @@ pdfTeX の Microtypography 拡張は次の二つの部分からなります:
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/ChangeLog?view=markup)
     - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/NEWS?view=markup)
 
+## 使い方 {#m3e1918c}
+
+ここでは pdfTeX の拡張機能についてその使用法を解説します。
+
+### マージン・カーニング {#dc432ab6}
+
+マージン・カーニングのもっとも簡単な使用法は以下のようなものです:
+
+```
+ \input protcode.tex
+ \font\f=cmr10
+ \rpcode\f‘\-=700
+ \adjustprotcode\f
+ \f
+ \pdfprotrudechars=1
+ Some text...
+```
+
+ここで \rpcode は  ”right protruding code” ("右ぶら下げコード") です。最初のパラメータはフォントの識別子、そして二番目は文字コードです。三番目のパラメータは右のマージン (余白) に対してどれだけの量突き出すかを指定します。上の例では、フォント \f のハイフンが右マージンの境界に来たとき、それがマージンに文字幅の 700 / 1000 (つまり 70%) だけ突き出すことを表します。
+
+それぞれの文字に対してぶら下げ係数 (protruding factor) を文字幅の千分率で指定することで都合よく処理できます。pdfTeX のバージョン 0.14h までは \rpcode はこのように実装されています。しかしながら、この方法は文字幅ゼロのもの  (”faked” characters that can be used to protrude other elements than normal characters) に対しては上手くいきません。このためバージョン 0.14h とそれ以降ではぶら下げ量はフォントのエムサイズに対する千分率で指定します。
+ここでは、マクロ \adjustprotcode (ファイル protrude.tex で定義されている)  が、使用されている pdfTeX のバージョンが 0.14h より古いものかチェックし、もしそうならばバージョン 0.14h 以前 の設定 (つまり文字幅の千分率指定) からそれ以降のバージョンの対応する設定 (エムサイズの千分率) に変換します。
+
 ## pdfLaTeX で日本語 {#dfcf126c}
 
 pdfLaTeX で日本語を扱うには CJK パッケージを使います。CJK パッケージについては
