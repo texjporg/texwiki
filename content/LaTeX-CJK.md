@@ -15,10 +15,11 @@ pukiwiki: "LaTeX-CJK"
 
 ## [The CJK package for LaTeX](http://cjk.ffii.org/)/[BXcjkjatype](https://github.com/zr-tex8r/BXcjkjatype) {#ue7194c1}
 
-- [http://www.ctan.org/pkg/cjk](http://www.ctan.org/pkg/cjk)
-- [http://www.ctan.org/pkg/bxcjkjatype](http://www.ctan.org/pkg/bxcjkjatype)
+CJK パッケージは FreeType プロジェクトのオリジナルの著者の一人で現メンテナーである Werner Lemberg 氏によって書かれた LaTeX 用のマクロパッケージです。オリジナルの TeX に修正を加えずとも動作し、[pdfLaTeX](/pdfTeX/) で CJK 文書を作成するために使えます。
 
-CJK パッケージは [pdfLaTeX](/pdfTeX/) で CJK 文書を作成するためのパッケージです．<br>
+- [http://www.ctan.org/pkg/cjk](http://www.ctan.org/pkg/cjk)
+- [http://tug.org/TUGboat/tb18-3/cjkintro600.pdf](http://tug.org/TUGboat/tb18-3/cjkintro600.pdf)
+- [http://www.ctan.org/pkg/bxcjkjatype](http://www.ctan.org/pkg/bxcjkjatype)
 
 ### ChangeLog {#j34716cd}
 
