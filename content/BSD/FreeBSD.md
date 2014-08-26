@@ -24,6 +24,8 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ### Ports {#j8583985}
 
+- [Ports svn r365720 UPDATING 20140823](http://svnweb.freebsd.org/ports/head/UPDATING?r1=365599&r2=365720) にて，Ports は TeX Live 2014ベースとなりました．
+
 - [Ports svn r362648 UPDATING 20140727](http://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
 
 - [About FreeBSD Ports](http://www.freebsd.org/ports/)
@@ -113,6 +115,9 @@ $ sudo tlmgr update --self --all
 ```
 
 を実行すれば OK です．<br>
+（Portsでインストールした場合は tlmgr は使えないようにしているそうです．
+こちらを参照:
+[http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html](http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html) ）
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
 
