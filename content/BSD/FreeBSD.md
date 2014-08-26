@@ -58,7 +58,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 ```
 $ sudo pkg install wget
-$ wget http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．<br>
@@ -77,7 +77,7 @@ root 権限でインストーラを実行します．<br>
 オプションでダウンロードするリポジトリを指定できます．<br>
 
 ```
-$ sudo ./install-tl --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
 
 ...
 
