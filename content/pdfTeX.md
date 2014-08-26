@@ -82,6 +82,30 @@ pdfTeX の Microtypography 拡張は次の二つの部分からなります:
 
 フォント・エクスパンションの効果を実際に確かめるには狭い幅に長い文章を組んでみるとよいです。\pdfadjustspacing の値を変化させながら結果の違いを確かめてみましょう。
 
+### microtype パッケージ {#g8eee99d}
+
+pdfLaTeX で Microtypography 拡張を使う場合は [microtype パッケージ](http://ctan.org/pkg/microtype) が便利です。
+
+```
+ \usepackage{microtype}
+```
+
+microtype パッケージはデフォルトで Microtypography 機能を可能な限り有効にします。
+
+やや極端な例でその効果を試してみましょう:
+
+```
+ \documentclass{article}
+ \usepackage[stretch=100,shrink=100]{microtype}
+ \begin{document}
+ \begin{minipage}{3cm}
+ ...適当な長い英文をここに...
+ \end{minipage}
+ \end{document}
+```
+
+この例では幅 3cm という狭い領域に比較的長い文章を押し込んでいます。また、microtype パッケージのオプションでかなりのフォントの伸張・収縮を (10% まで) 許可しています。microtype パッケージを読み込まない場合と比較すると大きな違いがでるでしょう。パッケージを読み込んだ場合は Underfull がほとんど出なくなると思います。
+
 ## pdfLaTeX で日本語 {#dfcf126c}
 
 pdfLaTeX で日本語を扱うには CJK パッケージを使います。CJK パッケージについては
@@ -119,3 +143,12 @@ LaTeX ソースを書きます。(この例ではエンコーディングを UTF
 ```
 
 ここで、"\pdfmapline" はフォントマップを定義する pdfTeX の拡張コマンドです。
+
+このままでは生成された PDF では文字列の検索やコピー&amp;ペーストができません。これを可能にするには CJK の代わりに CJKutf8 を使います。また、ブックマークなどに日本語を使うには、unicode オプション付きで hyperref パッケージを読み込みます:
+
+```
+ \usepackage{CJKutf8}
+ \usepackage[bookmarks,unicode]{hyperref}
+```
+
+エンコーディングには UTF-8 を使います。
