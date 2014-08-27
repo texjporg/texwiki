@@ -9,6 +9,10 @@ pukiwiki: "pdfTeX"
 
 ## [pdfTeX](http://www.tug.org/applications/pdftex/) {#wed85f46}
 
+<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+
+## pdfTeX とは {#c0f592e3}
+
 pdfTeX は Hàn Thế Thành により開発された TeX の派生プログラムです。
 主な特徴として
 
@@ -127,6 +131,31 @@ Microtypography に関連した別の機能としてトラッキングがあり�
 
 pdfTeX は PDF 出力用に PDF 関連の様々な拡張機能を備えます。それらのほとんどは pdfLaTeX を使う限りは使用することはないでしょう。hyperref など様々なマクロ・パッケージがこれらの機能に対する、より使いやすいインターフェースを提供します。
 
+## フォントの設定 {#n545b089}
+
+フォントの設定はフォントマップ・ファイルで行います。フォントマップの役割は TFM ファイルと (アウトライン) フォント・ファイルとを結びづけることです。このファイルにはまた、フォントの再エンコーディングに関する情報やフォントの部分埋め込み (サブセッティング) 、文字変形パラメータ (SlantFont や ExtendFont) の設定を記述します。
+
+デフォルトでは pdfTeX は pdftex.map を読み込みます。Web2c システムにおいては、マップファイルは TEXFONTMAPS で設定される場所で検索されます。フォントマップ・ファイル中では、一行ごとに各フォントに関する設定を記述します。書式は dvips のそれの拡張で、以下のようなものです:
+
+```
+ tfmname basename fontflags special encodingfile fontfile
+```
+
+最初のフィールドは tfmname である必要があります。もし basename を与えるとすれば、それは二番目のフィールドでなければなりません。同様に fontflags はあるとすれば二番目か三番目に (basename のあるなしで変わる) 来ます。special、encodingfile、fontfile の順番は決まっていませんが、最初の三つのフィールドの順序は固定です。 
+
+いくつかの例を挙げます:
+
+```
+ ptmri8r Times-Italic <8r.enc <ptmri8a.pfb
+ cmr10 CMR10 <cmr10.pfb
+ psyro StandardSymL ".167 SlantFont" <usyr.pfb
+ pcrr8rn Courier ".85 ExtendFont" <8r.enc <pcrr8a.pfb
+```
+
+fontfile 名の先頭の "&lt;" はフォントが部分埋め込みであることを指示します。最初と最後の例では "8r" エンコーディングが用いられ、後の二つでは斜体にしたりフォントを横方向に収縮したりしています。上の例ではすべてフォントの basename (ここでは PostScript フォント名) が指定されています。これは必須ではありませんが、常に使用することを強く推奨します。
+
+fontflags はフォントの特徴を記述したフラグです。上記の例では全く使われていません。これはフォントが埋め込まれていない場合などに、PDF ビューアが代替フォントを見つけてくるのに利用されることがあります。フォントを埋め込まないことはあまり推奨されませんのでこのフラグは通常使いません。
+
 ## pdfLaTeX で日本語 {#dfcf126c}
 
 pdfLaTeX で日本語を扱うには CJK パッケージを使います。CJK パッケージについては
@@ -176,7 +205,7 @@ LaTeX ソースを書きます。(この例ではエンコーディングを UTF
 
 この場合、エンコーディングには UTF-8 を使います。
 
-CJK\* 環境では平仮名や漢字に続くスペースは無視されます。和文と英単語の間にスペース（四分アキ）を入れたい場合は \CJKTilde と "~" を使います。
+CJK\* 環境では平仮名や漢字に続くスペースは無視されます。和文と英単語の間にスペース（四分アキ）を入れたい場合は \CJKtilde と "~" を使います。
 
 ```
  \begin{CJK*}{UTF8}{ipam}
@@ -185,4 +214,4 @@ CJK\* 環境では平仮名や漢字に続くスペースは無視されます�
  \end{CJK*}
 ```
 
-pdfLaTeX で利用する場合、PDF 出力におけるフォントの取り扱いに難がありますが、多言語環境を考える場合は有用です。
+pdfLaTeX で CJK を利用する場合、PDF 出力におけるフォントの取り扱いに難がありますが、多言語環境を考える場合は有用です。
