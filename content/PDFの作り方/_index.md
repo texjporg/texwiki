@@ -309,7 +309,7 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 日本語版 dvipdfm にはこの問題はないようです。<br>
 （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
 The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
-sets may be used.）(--> これは ISO 32000-1 で加わった仕様で、PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません。Acrobat Distiller 等も同様の問題を抱えているようです。)
+sets may be used.）(--> これは ISO 32000-1 で加わった仕様で、PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません。このため ISO 32000-1 は過去の PDF のバージョンと非互換です。Acrobat Distiller 等も同様の問題を抱えているようです。)
 
 dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます。<br>
 EPS 挿入には外部プログラムとして Ghostscript が必要です。<br>
