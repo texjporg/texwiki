@@ -80,7 +80,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 
 ### Julia 版 {#yd2ce169}
 
-julia version 0.3.0-prerelease+3911 で動作確認しています．<br>
+julia version 0.3.0 で動作確認しています．<br>
 
 ***
 
@@ -264,22 +264,10 @@ function ddeExecute(server, topic, command)
 end
 
 if !isinteractive()
-    CP_ACP = uint32(0)
-    MB_PRECOMPOSED = uint32(1)
-    pdf_wchar = wstring(ARGS[1])
-    tex_wchar = wstring(ARGS[2])
-    ccall((:MultiByteToWideChar, "kernel32"), stdcall,
-        Cint,
-        (Cuint, Cuint, Ptr{Cchar}, Cint, Ptr{Cwchar_t}, Cint),
-        CP_ACP, MB_PRECOMPOSED, ARGS[1], -1, pdf_wchar, length(pdf_wchar))
-    ccall((:MultiByteToWideChar, "kernel32"), stdcall,
-        Cint,
-        (Cuint, Cuint, Ptr{Cchar}, Cint, Ptr{Cwchar_t}, Cint),
-        CP_ACP, MB_PRECOMPOSED, ARGS[2], -1, tex_wchar, length(tex_wchar))
     server = "SUMATRA"
     topic = "control"
-    pdf = string(pdf_wchar)
-    tex = string(tex_wchar)
+    pdf = ARGS[1]
+    tex = ARGS[2]
     line = uint(ARGS[3])
     command = "[ForwardSearch(\"$pdf\",\"$tex\",$line,0,0,0)]"
     try
