@@ -606,6 +606,9 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+[TeX Live 2014 for Windows](http://www.baldanders.info/spiegel/log2/000730.shtml)
+: 2014-09-03
+
 [Windows 8.1 に TeX Live 2014 をインストール](http://qiita.com/ignorant/items/21545cde3c9bbafaa264)
 : 2014-08-29
 
