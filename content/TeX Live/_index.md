@@ -309,6 +309,7 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 #### Momonga Linux {#o6bf5db0}
 
 - [TeX Live 2014 - その 1](http://lugia.hatenablog.com/entry/2014/06/22/195105)
+- [TeX Live 2014 - その2](http://lugia.hatenablog.com/entry/2014/09/06/201158)
 
 #### Beyond Linux From Scratch {#pd2ee686}
 
