@@ -194,6 +194,7 @@ polyglossia は TeX Live にも W32TeX にもインストールされていま�
 - [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
 - [LuaTeX-ja を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=LuaTeX-ja)
 - [LuaTex-ja : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LuaTex-ja)
+- [LuaLaTeX をとにかく使えるようにする 〜補足篇〜](http://exoterisch.hatenablog.com/entry/2014/09/07/081927)
 - [LuaTeX-jaでフォント指定するときのメモ](http://rinx.tk/blog/2014/05/13/luatex-fontspec/)
 - [RStudio(Windows)でSweave(.Rnw)を使って一発でpdf作りたい](http://d.hatena.ne.jp/teramonagi/20140203/1391429752)
 - [LuaLaTeXやXeLaTeXって奴を使ってみたいんです、私](http://d.hatena.ne.jp/teramonagi/20140129/1390994315)
