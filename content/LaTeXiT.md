@@ -65,6 +65,7 @@ OS X
 
 ## 関連リンク {#tab9989c}
 
+- [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](http://ottan.xyz/mac-latex-presentation-92/)
 - [MacにLaTeXiT (+LaTeX) を導入＆日本語に対応](http://harulab.info/?p=631)
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
