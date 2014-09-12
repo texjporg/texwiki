@@ -226,7 +226,7 @@ Cygwin の unzip は install-tl.zip の展開に使用しないでください�
 テキストモードでリポジトリを指定してインストールする場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
-.\install-tl-windows.bat -no-gui --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+.\install-tl-windows.bat -no-gui --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
 ```
 
 を実行します．<br>
@@ -327,7 +327,7 @@ install-tl-windows.bat を -no-gui オプションを指定せずに実行した
 テキストモードでリポジトリを指定してインストールする場合は管理者として実行した Windows PowerShell またはコマンド プロンプトから
 
 ```
-.\install-tl-advanced.bat -no-gui --repository http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/
+.\install-tl-advanced.bat -no-gui --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
 ```
 
 を実行します．<br>
