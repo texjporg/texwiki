@@ -44,8 +44,8 @@ $TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。<br>
 
 ### お手軽なツールを使う方法 (Windows / Mac) {#oe0e5138}
 
-Windows および Mac 環境の場合，TeX の数式をクリック一つで EPS 形式の画像に変換する
-ツール TeX2img ([Windows 版](http://d.hatena.ne.jp/abenori/20140914), [Mac 版](http://island.geocities.jp/loveinequality/)) があります。<br>
+TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式の画像に変換するツール
+[TeX2img](/TeX2img/) があります。<br>
 コマンドラインを使いたくない人は，このツールで EPS ファイルを
 生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。<br>
 
