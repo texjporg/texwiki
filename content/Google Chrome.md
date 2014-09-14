@@ -58,7 +58,7 @@ chrome://plugins
 
 ### Chrome/Chromium PDF Viewer <a id="chromepdfviewer"></a> {#wfd819f9}
 
-- [PDF ビューア](http://support.google.com/chrome/bin/answer.py?answer=1060734)
+- [PDF ビューア](https://support.google.com/chrome/answer/1060734)
 - [http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api](http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api)
 
 Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があるかもしれません．<br>
