@@ -122,6 +122,7 @@ ulimit -t 10 -f 1024
 #### フリーソフトウェア (オープンソースソフトウェア) {#g834836b}
 
 - [ShareLaTeX](https://github.com/sharelatex/sharelatex)
+    - [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
 - [JaxEdit](http://jaxedit.com/)
 - [texlive.js](http://manuels.github.io/texlive.js/)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
