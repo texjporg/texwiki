@@ -30,7 +30,7 @@ Windows, OS X
 
 #### Mac 版 {#nc589b01}
 
-GPL
+GPLv2
 
 ### 出力形式 {#n63a1aac}
 
