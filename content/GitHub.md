@@ -17,6 +17,7 @@ pukiwiki: "GitHub"
 - [munepi (Munehiro Yamamoto) · GitHub](https://github.com/munepi)
 - [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
 - [abenori · GitHub](https://github.com/abenori)
+- [clerkma (Clerk Ma) · GitHub](https://github.com/clerkma)
 - [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
 - [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
