@@ -18,6 +18,7 @@ pukiwiki: "GitHub"
 - [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
 - [abenori · GitHub](https://github.com/abenori)
 - [clerkma (Clerk Ma) · GitHub](https://github.com/clerkma)
+- [asm256 (asm_\_) · GitHub](https://github.com/asm256)
 - [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
 - [TeXの処理系とマクロ](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/tex.md)
 - [pp4tex](https://github.com/nishio/pp4tex/tree/alnum_tokens) TeX用のプリプロセッサ ([西尾 泰和 さん](http://www.nishiohirokazu.org/) ([hatena](http://d.hatena.ne.jp/nishiohirokazu/), [twitter](https://twitter.com/nishio)))
