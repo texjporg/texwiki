@@ -69,6 +69,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
 - [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861)
 - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
+- [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
 - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
     - [http://sourceforge.jp/projects/gnupack/releases/?package_id=10839](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
@@ -160,7 +161,7 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 
 あるいは [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を利用して forward search を行うことも可能です．<br>
 sumatra-forward.el を使用する場合は，あらかじめ SumatraPDF を起動しておいてください．<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html), [emacs for gnupack](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839) には ddeclient.exe が含まれているので別途ダウンロードする必要はありません．<br>
+Emacs の Windows 版には ddeclient.exe が含まれているので別途ダウンロードする必要はありません．<br>
 
 ### inverse search {#a06810d6}
 
