@@ -38,6 +38,7 @@ pukiwiki: "Perl"
 
 ### インストール (Windows) {#jc58fcd6}
 
+- [http://rakudo.org/downloads/star/](http://rakudo.org/downloads/star/)
 - [http://sourceforge.net/projects/parrotwin32/](http://sourceforge.net/projects/parrotwin32/)
 
 ### インストール (Linux) {#yc5da695}
