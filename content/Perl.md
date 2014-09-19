@@ -60,7 +60,7 @@ pukiwiki: "Perl"
 Perl 5 は汎用スクリプト言語です．<br>
 TeX 関連プログラムには Perl 5 で書かれたスクリプトがあります．<br>
 latexmk.pl などの Perl 5 で書かれたスクリプトを実行するには Perl 5 の処理系が必要です．<br>
-TeX Live (Win32) 版には Perl 5 の処理系が含まれています．<br>
+TeX Live の Win32 版には tlperl (Perl 5 の処理系) が含まれています．<br>
 W32TeX を使用する場合は Strawberry Perl をインストールしてください．<br>
 
 ### ChangeLog {#i169c6d8}
@@ -70,6 +70,13 @@ W32TeX を使用する場合は Strawberry Perl をインストールしてく�
     - [https://github.com/Perl/perl5/commits/](https://github.com/Perl/perl5/commits/)
 
 ### インストール (Windows) {#l06514b7}
+
+#### tlperl {#x3549067}
+
+TeX Live の Win32 版には Perl 5 の処理系が収録されています．<br>
+
+- [http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/?view=log)
 
 #### Strawberry Perl {#bfff8462}
 
@@ -92,13 +99,6 @@ Strawberry Perl を C:\strawberry にインストールした場合は
 ```
 $ pacman -S perl
 ```
-
-#### tlperl {#x3549067}
-
-TeX Live の Win32 版には Perl の処理系が収録されています．<br>
-
-- [http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/?view=log)
 
 ### インストール (Linux) {#y6a5abef}
 
