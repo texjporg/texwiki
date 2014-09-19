@@ -224,7 +224,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-pdfupLaTeX</td><td>C-c C-c latexmk-pdfupLaTeX RET</td><td>タイプセット (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Latexmk-pdfupLaTeX</td><td>C-c C-c latexmk-pdfuplatex RET</td><td>タイプセット (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Latexmk-pdfupLaTeX2</td><td>C-c C-c latexmk-pdfuplatex2 RET</td><td>タイプセット (Latexmk-pdfupLaTeX2)</td></tr>
 > <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
