@@ -18,9 +18,9 @@ pukiwiki: "XZ Utils"
 #### MinGW {#ca66da1c}
 
 ```
-$ curl -R -L -O http://tukaani.org/xz/xz-5.0.6.tar.xz
-$ tar xvf xz-5.0.6.tar.xz
-$ pushd xz-5.0.6
+$ curl -R -L -O http://tukaani.org/xz/xz-5.0.7.tar.xz
+$ tar xvf xz-5.0.7.tar.xz
+$ pushd xz-5.0.7
 $ ./configure --prefix=/mingw
 $ make
 $ make install
