@@ -29,7 +29,6 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 - [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 - [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://takai.tumblr.com/post/13843318337/shebang-bin-env-ruby-0)
-- [Ruby 2.1.1 で Hash#reject のデグレ](http://diary.sorah.jp/2014/02/28/ruby211-hash-reject) → [Ruby 2.1.2](https://www.ruby-lang.org/ja/news/2014/05/09/ruby-2-1-2-is-released/) で修正されました
 - [Ruby: コマンドライン引数の解析で使うoptparseをもっと柔軟に](http://sky-y.hatenablog.jp/entry/20120817/1345195421)
 - [RubyのFile.expand_path('相対パス', \__FILE_\_)の意味](http://d.hatena.ne.jp/maeharin/20130104/p1)
 
@@ -48,31 +47,30 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 ### Windows {#j2a4eaa7}
 
-#### ActiveScriptRuby {#y961023d}
-
-- [ActiveScriptRuby and Other packages](http://www.artonx.org/data/asr/)
-
 #### RubyInstaller for Windows {#p44e196d}
 
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 - [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
-- [rubyinstallerを使って完璧なRuby-2.1.0/2.1.1をコンパイル/ビルドする方法](http://dari88.hatenablog.com/entry/2014/03/07/202034)
 
-RubyInstaller for Windows の Ruby を C:\Ruby200-x64 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby21-x64 にインストールした場合は
 
 ```
-;C:\Ruby200-x64\bin
+;C:\Ruby21-x64\bin
+```
+
+を環境変数 PATH に追加します
+
+RubyInstaller for Windows の Ruby を C:\Ruby21 にインストールした場合は
+
+```
+;C:\Ruby21\bin
 ```
 
 を環境変数 PATH に追加します
 
-RubyInstaller for Windows の Ruby を C:\Ruby200 にインストールした場合は
+#### ActiveScriptRuby {#y961023d}
 
-```
-;C:\Ruby200\bin
-```
-
-を環境変数 PATH に追加します
+- [ActiveScriptRuby and Other packages](http://www.artonx.org/data/asr/)
 
 #### MSYS2 {#a7424fa6}
 
@@ -82,7 +80,7 @@ $ pacman -S ruby
 
 ### OS X {#def5cf73}
 
-- [brewとrbenvを使ってRuby2.1.2を突っ込む](http://qiita.com/217/items/2d4f2d9551572e2c7352)
+- [ruby-buildを最新にしてrbenvでRuby2.1.3をインストールする](http://qiita.com/ryosy383/items/6991f9aaacecc45e3c58)
 
 ### Linux {#pfcca84f}
 
@@ -160,7 +158,7 @@ window['org.gnome.evince.Window'].SyncView(tex, [line, 1], 0)
 
 ### Ruby 版 {#p8b1b4df}
 
-RubyInstaller for Windows の ruby 2.0.0p481 (2014-05-08) \[x64-mingw32\] と ActiveScriptRuby の ruby 2.1.2p95 (2014-05-08 revision 45877) \[i386-mswin32_100\] で動作確認しています．<br>
+RubyInstaller for Windows の ruby 2.1.3p242 (2014-09-19 revision 47630) \[x64-mingw32\] と ActiveScriptRuby の ruby 2.1.2p95 (2014-05-08 revision 45877) \[i386-mswin32_100\] で動作確認しています．<br>
 
 ***
 
