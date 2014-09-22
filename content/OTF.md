@@ -126,7 +126,7 @@ GothicBBB-Meduim は
 は埋め込まれていない
 Ryumin-Light と GothicBBB-Medium
 を適切なフォントに代替して表示・印刷します。<br>
-Adobe Reader XI で使えるアジア・拡張言語フォントパック
+Adobe Reader で使えるアジア・拡張言語フォントパック
 
 - [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Windows)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5508)
 - [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Mac)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5509)
@@ -228,7 +228,7 @@ char=0x20bb7(134071)
 Tried to set a nonexistent character in a virtual font
 ```
 
-と表示されて Adobe Reader XI で 𠮷 (U+20BB7) の字が表示されませんでした．<br>
+と表示されて Adobe Reader で 𠮷 (U+20BB7) の字が表示されませんでした．<br>
 
 ***
 
@@ -319,7 +319,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 #### Microsoft Windows の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。<br>
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。<br>
 
@@ -365,7 +365,7 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
-とりあえず Windows 版 Adobe Reader XI の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
+とりあえず Windows 版 Adobe Reader の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下から
 シンボリックリンクします。<br>
 
@@ -392,9 +392,9 @@ Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
 U-PRESS用の文字を含む23,058グリフの文字セットです。<br>
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。<br>
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Reader XI 日本語版または Adobe Reader XI に用いるアジア・拡張言語フォントパックに含まれているので
-Adobe Reader XI を使用すれば豊富なフォントを利用できます。<br>
-Microsoft Windows 版の Adobe Reader XI に
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Reader 日本語版または Adobe Reader に用いるアジア・拡張言語フォントパックに含まれているので
+Adobe Reader を使用すれば豊富なフォントを利用できます。<br>
+Microsoft Windows 版の Adobe Reader に
 対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/)には
 
 - KozMinPr6N-Regular.otf ［Adobe-Japan1-6 対応の日本語明朝体フォント］
