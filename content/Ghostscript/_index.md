@@ -38,7 +38,16 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 8.71 およびそれ以前の Ver. には脆弱性がありますので、最新版に更新してください．<br>
+Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に更新してください．<br>
+
+- [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
+- [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
+- [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](http://bugs.ghostscript.com/show_bug.cgi?id=695175)
+- [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
+- \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
+- [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
+
+Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版に更新してください．<br>
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
 - [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
@@ -98,20 +107,7 @@ Ghostscript 7.07 には脆弱性が存在するので縦書きが必要ない場
 Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります。<br>
 これらはいずれも背後で Ghostscript を動かしています。<br>
 
-## 不具合 {#o389845b}
-
-### Ghostscript 9.14 でハイパーリンクが動作しない → Ghostscript 9.10 を使用する → commit [c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c) で修正されました {#g8a715bc}
-
-commit [c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c) で修正されました．<br>
-Ghostscript 9.14 はハイパーリンクが動作しません．<br>
-Ghostscript 9.10 はハイパーリンクが動作します．<br>
-
-- [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
-- [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
-- [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](http://bugs.ghostscript.com/show_bug.cgi?id=695175)
-- [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
-- \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
-- [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
+<!-- *不具合 [#o389845b] -->
 
 ## Ghostscript for Microsoft Windows {#w33eec77}
 
