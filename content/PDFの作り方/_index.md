@@ -742,6 +742,11 @@ Distiller の［ファイル］ → ［環境設定］で「PDFファイルの�
 
 まず，Acrobat XI では［Adobe PDF 設定］の［デフォルト設定］で選びます。<br>
 Web 用なら 最小ファイルサイズ，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう。<br>
+なお、Acrobat は最小ファイルサイズ設定にしてフォントを埋め込まないようにすると仕様に違反した PDF を生成するようです。<br>
+（参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
+The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
+sets may be used.）
+
 プレス品質は論文では必要ないでしょう。<br>
 
 ［設定］ → ［Adobe PDF 設定\] の \[編集］は次のように設定します。<br>
