@@ -17,7 +17,7 @@ pukiwiki: "Ghostscript/Linux"
 
 #### Arch Linux {#icf0081e}
 
-- [https://www.archlinux.org/packages/?q=ghostscript](https://www.archlinux.org/packages/?q=ghostscript)
+- [https://www.archlinux.org/packages/?name=ghostscript](https://www.archlinux.org/packages/?name=ghostscript)
 
 #### Linux Mint {#eef2e142}
 
@@ -26,6 +26,10 @@ pukiwiki: "Ghostscript/Linux"
 #### Debian {#e2250e99}
 
 - [https://packages.debian.org/ja/ghostscript](https://packages.debian.org/ja/ghostscript)
+
+#### CentOS {#hf131f80}
+
+- [CentOSにGhostScript9.1をソースから入れる](http://qiita.com/moonsubaru/items/f21247c5b43de9820b31)
 
 #### Fedora {#v3e95c6b}
 
