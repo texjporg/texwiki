@@ -86,6 +86,7 @@ ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を
 
 mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
 LuaJITTeX を使用すると 1.3 倍ぐらい早くなることがあるようです． → [luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)<br>
+逆に大きなフォントを使用する場合など，LuaJITTeX のほうが極端に遅くなる場合もあります．
 
 使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
 (u)jarticle や jsarticle などの (e-)(u)pTeX の使用を前提としたものは使用できません．<br>
