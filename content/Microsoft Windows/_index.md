@@ -606,6 +606,9 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+[TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
+: 2014-10-01
+
 [TeX Live 2014 for Windows](http://www.baldanders.info/spiegel/log2/000730.shtml)
 : 2014-09-03
 
