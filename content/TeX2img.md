@@ -26,7 +26,7 @@ Windows, OS X
 
 #### Windows 版 {#t3c9d1be}
 
-[BSD 3-Clause](https://github.com/abenori/TeX2img/blob/master/TeX2img.txt)
+[BSD 2-Clause](https://github.com/abenori/TeX2img/blob/master/license.txt)
 
 #### Mac 版 {#nc589b01}
 
