@@ -9,15 +9,17 @@ pukiwiki: "Linux/Ubuntu"
 
 [Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
 
-## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](https://ubuntu-mate.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
 <div style="text-align:center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right"></div>
 
 <div style="text-align:left"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png" alt="Ubuntu GNOME" style="float:right"></div>
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right">
+<img src="https://ubuntu-mate.org/gallery/Artwork/Ubuntu_MATE.png" alt="Ubuntu MATE" style="float:right">
 
-<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right"></div>
+<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right"></div>
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right">
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right">
 
@@ -45,6 +47,12 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 Ubuntu GNOME はデスクトップ環境に GNOME を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Ubuntu GNOME](http://ubuntugnome.org/)
+
+#### Ubuntu MATE とは {#l023b1d2}
+
+Ubuntu MATE はデスクトップ環境に MATE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
+
+- [Ubuntu MATE](https://ubuntu-mate.org/)
 
 #### Kubuntu とは {#d3ca4531}
 
