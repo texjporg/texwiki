@@ -54,7 +54,8 @@ Windows PowerShell または コマンド プロンプトを起動します．<b
 > <tr><th style="text-align:center">バージョン</th><th style="text-align:center">Windows PowerShell の起動方法</th></tr>
 > </thead>
 > <tbody>
-> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］<br>［Windows キー + X キーを押す］または［左下隅を右クリック］-［Windows PowerShell］</td></tr>
+> <tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
+> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
 > <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
 > </tbody>
 > </table>
@@ -65,7 +66,8 @@ Windows PowerShell または コマンド プロンプトを起動します．<b
 > <tr><th style="text-align:center">バージョン</th><th style="text-align:center">コマンド プロンプトの起動方法</th></tr>
 > </thead>
 > <tbody>
-> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］<br>［Windows キー + X キーを押す］または［左下隅を右クリック］-［コマンド プロンプト］</td></tr>
+> <tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
+> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
 > <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
 > </tbody>
 > </table>
@@ -474,6 +476,7 @@ W32TeX は環境変数 PATH を設定する必要があります。<br>
 <tr><th style="text-align:center">バージョン</th><th style="text-align:center">システムのプロパティの起動方法</th></tr>
 </thead>
 <tbody>
+<tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 </tbody>
