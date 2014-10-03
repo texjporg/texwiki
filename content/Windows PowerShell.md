@@ -115,16 +115,6 @@ Windows PowerShell のオープンソース実装．<br>
 
 - [Pash](https://github.com/Pash-Project/Pash)
 
-## WSH {#i8928798}
-
-- [http://wsh.style-mods.net/](http://wsh.style-mods.net/)
-    - [http://wsh.style-mods.net/topic10.htm](http://wsh.style-mods.net/topic10.htm)
-- [http://msdn.microsoft.com/en-us/library/windows/desktop/bb774094(v=vs.85).aspx](<http://msdn.microsoft.com/en-us/library/windows/desktop/bb774094(v=vs.85).aspx>)
-- [http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx](<http://msdn.microsoft.com/en-us/library/windows/desktop/gg537745(v=vs.85).aspx>)
-- [runas 使ってコマンドプロンプトを VBScript で管理者として実行](http://exvbs.seesaa.net/article/380424475.html)
-- [WSHを始めよう](http://www.atmarkit.co.jp/ait/articles/0606/02/news116.html)
-- [x64には存在しないScriptControlの代わり](http://d.hatena.ne.jp/junjun777/20130617/x64_scriptcontrol)
-
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#l14444b1}
 
 ### Windows PowerShell 版 {#sd5e7a03}
@@ -353,7 +343,6 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSh
 - [Windows 8.1 でなくなった Windows エクスペリエンス インデックス GUI表示の代りに PowerShell で測定する](http://tech.guitarrapc.com/entry/2013/10/25/075010)
 - [Windows batでコマンドの結果を変数に格納](http://qiita.com/long_long_float/items/f1a19816ef0d0070b68f)
 - [PowerShell の コマンドレット例外を取得する](http://tech.guitarrapc.com/entry/2013/07/22/000738)
-- [コマンドプロンプトから色々な処理系でワンライナー：2012年バージョン](http://d.hatena.ne.jp/eel3/20120319/1332090071)
 - [PowerShell 2.0の新機能（6）――他言語の利用](http://codezine.jp/article/detail/5007)
 - [PC98の起動音をC# とWindows PowerShellで](https://gist.github.com/rsato/9707353)
 - [PowerShellスクリプト内でC#コードを書いて使う](http://yomon.hatenablog.com/entry/2013/06/05/PowerShell%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E5%86%85%E3%81%A7C%23%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E4%BD%BF%E3%81%86)
