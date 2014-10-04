@@ -311,6 +311,13 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 [SumatraPDF - TeX Wiki](/SumatraPDF/) を参照してください．
 
+#### Ghostscript.NET.Viewer {#ha9e1164}
+
+- [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
+- [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
+
+を参照してください．
+
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
 フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります(例えば dvipdfmx, Inkscape)．<br>
