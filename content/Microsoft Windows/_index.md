@@ -16,7 +16,7 @@ pukiwiki: "Microsoft Windows"
 
 ## Windows サポート ライフサイクル {#vc8606da}
 
-- [Windows ライフサイクルのファクト シート - Microsoft Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/products/lifecycle)
+- [Windows ライフサイクルのファクト シート - Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/lifecycle)
 
 ### お知らせ {#ya6914d3}
 
