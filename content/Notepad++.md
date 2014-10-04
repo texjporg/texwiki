@@ -36,11 +36,6 @@ Notepad++ は
     - [donho](http://projects.tuxfamily.org/?do=user;name=donho)
         - [twitter](https://twitter.com/ho_don/)
         - [facebook](http://www.facebook.com/D0N.H0)
-- [npp-community](https://github.com/npp-community)
-- [Notepad++ Project on SourceForge](http://sourceforge.net/projects/notepad-plus/)
-    - [Members](http://sourceforge.net/p/notepad-plus/_members/)
-        - [Don HO](http://sourceforge.net/u/donho/)
-    - [インタビュー](http://sourceforge.net/blog/potm-201002/)
 
 ### 動作環境 {#p5d7567d}
 
@@ -53,9 +48,6 @@ Windows
 ### リリース情報 {#d2ceb628}
 
 [News](http://notepad-plus-plus.org/news/) を参照．<br>
-
-<!-- Notepad++ v6.2.3 以降はデフォルトの Encoding は UTF-8 without BOM です．~ -->
-<!-- Notepad++ v6.1 以降は Unicode 版のみのリリースです．~ -->
 
 ### ChangeLog {#q10cf331}
 
