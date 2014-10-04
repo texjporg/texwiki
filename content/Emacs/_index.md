@@ -71,7 +71,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
 - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
-    - [http://sourceforge.jp/projects/gnupack/releases/?package_id=10839](http://sourceforge.jp/projects/gnupack/releases/?package_id=10839)
+    - [http://sourceforge.jp/projects/gnupack/releases/46675/](http://sourceforge.jp/projects/gnupack/releases/46675/)
     - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
     - [gnupack Users Guide](http://gnupack.sourceforge.jp/docs/current/UsersGuide.html)
     - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
