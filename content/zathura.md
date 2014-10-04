@@ -98,6 +98,10 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 - [http://packages.gentoo.org/package/app-text/zathura](http://packages.gentoo.org/package/app-text/zathura)
 
+## 不具合 {#ue94eec4}
+
+- [http://bugs.pwmt.org/](http://bugs.pwmt.org/)
+
 ## 使い方 {#w279d8d0}
 
 ### キーボード操作 {#ta398819}
