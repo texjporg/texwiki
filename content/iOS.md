@@ -7,7 +7,7 @@ pukiwiki: "iOS"
 
 # iOS
 
-## [iOS](http://www.apple.com/jp/ios) {#h8fdec00}
+## [iOS](http://www.apple.com/jp/ios/) {#h8fdec00}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Apple_iOS.svg/200px-Apple_iOS.svg.png" alt="iOS" style="float:right">
 
@@ -24,7 +24,10 @@ pukiwiki: "iOS"
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
-[iTextEditors](http://brettterpstra.com/ios-text-editors/) を参照．
+- [http://appcrawlr.com/ios-apps/best-apps-latex-editor](http://appcrawlr.com/ios-apps/best-apps-latex-editor)
+- [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
+
+を参照．<br>
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#o1e16332}
 
