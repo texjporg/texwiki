@@ -82,8 +82,11 @@ Auto-refresh の項目をチェックするとファイルを自動的に更新�
 　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
+　　　　Save database interval:　　　　　　　<ins>\[5 min　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Synchronize presentation:　　　　　☐<br>
 　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+　　　　Synchronize outline view:　　　　　☐<br>
+　　　　Zoom factor:　　　　　　　　　　　　　<ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
 　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
@@ -145,8 +148,11 @@ texstudio "%1" -line %2
 　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
 　　　　Restore bookmarks:　　　　　　　　　☐<br>
 　　　　Restore per-file settings:　　　　　　☐<br>
+　　　　Save database interval:　　　　　　　<ins>\[5 min　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Synchronize presentation:　　　　　☐<br>
 　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+　　　　Synchronize outline view:　　　　　☐<br>
+　　　　Zoom factor:　　　　　　　　　　　　　<ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
 　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
 　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
