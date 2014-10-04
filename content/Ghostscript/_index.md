@@ -34,11 +34,12 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.15 で XeTeX 上の PSTricks で問題が発生する場合は Ghostscript 9.10 を使用してください．<br>
+Ghostscript 9.15 以降で XeTeX 上の PSTricks で問題が発生する場合は TeX Live 2015 以降に更新してください．<br>
 
 - [QA: gs9.15 and gs9.10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
+- \[[texlive\] Revision 35312](http://www.tug.org/svn/texlive?view=revision&revision=35312)
 
-Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に更新または Ghostscript 9.10 を使用してください．<br>
+Ghostscript 9.14 はハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．<br>
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
@@ -47,14 +48,22 @@ Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に
 - \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
 - [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
 
-Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版に更新または Ghostscript 9.10 を使用してください．<br>
+Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．<br>
+
+```
+
+```
+
+- [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
+
+Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版の TeX Live, 最新版の Ghostscript に更新してください．<br>
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
 - [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
 - [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
 
 GSview は CTAN から提供されなくなりました．<br>
-GSview 以外では SumatraPDF や PS_View でも PS ファイルを表示することが可能です．<br>
+GSview 以外では SumatraPDF, PS_View, Ghostscript.NET.Viewer でも PS ファイルを表示することが可能です．<br>
 
 - [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
 
@@ -87,14 +96,6 @@ AFPL 版は商業的な配布に制限があります。<br>
 - [git.ghostscript.com Git - ghostpdl.git/summary](http://git.ghostscript.com/?p=ghostpdl.git)
     - [コミットログ](http://git.ghostscript.com/?p=ghostpdl.git;a=shortlog)
 
-Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
-
-```
-
-```
-
-- [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
-
 ### 縦書きに関して {#o39e11da}
 
 GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い (縦書き) に優れています。<br>
@@ -105,7 +106,7 @@ Ghostscript 7.07 には脆弱性が存在するので縦書きが必要ない場
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では GSview や PS_View，UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります。<br>
+Microsoft Windows では GSview, SumatraPDF, PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります。<br>
 これらはいずれも背後で Ghostscript を動かしています。<br>
 
 <!-- *不具合 [#o389845b] -->
