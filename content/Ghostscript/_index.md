@@ -28,17 +28,17 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
     - [The gs-bugs Archives](http://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](http://ghostscript.com/pipermail/gs-devel/)
 - [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
-- [http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/](http://sourceforge.net/projects/ghostscript/files/GPL%20Ghostscript/)
-    - [http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](http://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
-    - [ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/](ftp://ftp.jaist.ac.jp/pub/sourceforge/g/gh/ghostscript/GPL%20Ghostscript/)
-- [https://code.google.com/p/ghostscript/downloads/list](https://code.google.com/p/ghostscript/downloads/list)
 - [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
 - [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
 - [Ghostscript Studio - Home](https://ghostscriptstudio.codeplex.com/)
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に更新してください．<br>
+Ghostscript 9.15 で XeTeX 上の PSTricks で問題が発生する場合は Ghostscript 9.10 を使用してください．<br>
+
+- [QA: gs9.15 and gs9.10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
+
+Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に更新または Ghostscript 9.10 を使用してください．<br>
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
@@ -47,7 +47,7 @@ Ghostscript 9.14 はハイパーリンクが動作しないので，最新版に
 - \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
 - [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
 
-Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版に更新してください．<br>
+Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版に更新または Ghostscript 9.10 を使用してください．<br>
 
 - [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
 - [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
@@ -66,9 +66,10 @@ Windows, OS X, Linux などの UNIX 互換 OS
 
 [GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
 
-最新版の Ghostscript のライセンスは GNU Affero General Public License (AGPL) ですが，過去のバージョンには [AFPL](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING.AFPL;hb=HEAD) 版の Ghostscript があります。<br>
+最新版の Ghostscript のライセンスは GNU Affero General Public License (AGPL) です．<br>
+過去の Ghostscript のバージョンには [AFPL](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING.AFPL;hb=HEAD) 版があります。<br>
 AFPL 版は商業的な配布に制限があります。<br>
-このあたりの事情は，ちょっと古いですが，Ghostscript の作者
+このあたりの事情は，古いですが，Ghostscript の作者
 [L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください。
 
 - [L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
