@@ -64,7 +64,7 @@ TeX, LaTeX はフリーウェアです。<br>
     OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
     など）
 
-- モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios) など）
+- モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios/) など）
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
@@ -72,7 +72,7 @@ TeX, LaTeX はフリーウェアです。<br>
 を日本語化した
 [pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 が使用されています。<br>
-pTeX, pLaTeX は株式会社アスキー（現：[株式会社KADOKAWA](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。<br>
+pTeX, pLaTeX は株式会社アスキー（現：[株式会社KADOKAWA・DWANGO](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。<br>
 pTeX, pLaTeX の頭文字の
 p（ピー）は <strong>p</strong>ublishing（出版）の意味です。<br>
 アスキーでは pTeX, pLaTeX
