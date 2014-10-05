@@ -208,7 +208,7 @@ TeX Live は OS ごとにインストール方法が異なります．<br>
 ## [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/) <a id="tlptexlive"></a> {#r64bfbe1}
 
 - [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/)
-- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+- [tlptexlive Archives - There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 - [Japanese TeX Live adaptions development - Gitorious](https://gitorious.org/tlptexlive)
 
 ## [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
