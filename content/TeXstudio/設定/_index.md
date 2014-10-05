@@ -361,7 +361,7 @@ SVN<br>
 
 ### 詳細なエディタ設定 {#wbe91d52}
 
-#### 高度なオプションの表示が ON の場合 \[#waccd93e\]c {#gf7693e4}
+#### 高度なオプションの表示が ON の場合 {#a0833273}
 
 Windows の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
 行番号を表示する場合は外観の行番号を表示ですべての行番号を選択します．<br>
@@ -376,15 +376,15 @@ Windows の TeXstudio で日本語入力するとカーソルが文字の位置�
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　☑ 行変更の状態を表示<br>
+コマンド　　　　　　　　　　　　☑ 行変更の状態を表示　　　　　　　　　　　　　　　　　　　　☐ 空白を表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
-ビルド　　　　　　　　　　　　　☑ 状態パネルを表示<br>
+ビルド　　　　　　　　　　　　　☑ 状態パネルを表示　　　　　　　　　　　　　　　　　　　　　　タブ幅:　<ins>4　　\[<strong>⇕</strong>\]</ins><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット　　　行番号を表示:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[すべての行番号　　　　　　　　　　　　　▼\]</ins></span><br>
+キーボードショートカット　　　行番号を表示:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[すべての行番号　　　　▼\]</ins></span>　　　　　　　　☑ 太いカーソル<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
@@ -392,7 +392,7 @@ Windows の TeXstudio で日本語入力するとカーソルが文字の位置�
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
 
-ツールバー　　　　　　　　　　☑ 検索・置換パネルを共に閉じる<br>
+ツールバー　　　　　　　　　　☐ 検索・置換パネルを共に閉じる<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
 
@@ -408,38 +408,46 @@ Windows の TeXstudio で日本語入力するとカーソルが文字の位置�
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
 
-カスタム強調表示　　　　　　　☑ 括弧の自動補完<br>
+カスタム強調表示　　　　　　　☑ 括弧の自動補完　　　　　　　　　　　　　　　　　　　 ☑ ツールチップとしてエディタ上のテキストにヘルプを表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
 
-コマンドの補完　　　　　　　　　☑ マウスホイールによるズームbr;
+コマンドの補完　　　　　　　　　☑ マウスホイールによるズーム　　　　　　　　　　　　☑ ツールチップとしてエディタ上の式のプレビューを表示<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法　　　　　　　　　　　　　　　　☑ なめらかなスクロール<br>
+文法　　　　　　　　　　　　　　　 ☑ なめらかなスクロール　　　　　　　　　　　　　　　　 ☑ 組み込みpdfビューワーでコマンドのヘルプを表示(texdoc)<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
-プレビュー　　　　　　　　　　　　 ☑ プレースホルダ前の開き括弧を上書き<br>
+プレビュー　　　　　　　　　　　　☑ プレースホルダ前の開き括弧を上書き<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
-SVN　　　　　　　　　　　　　　　　 ☑ プレースホルダ後の閉括弧を上書き<br>
+SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後の閉括弧を上書き<br>
 
 <br>
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　☑ 高度なオプションの表示
-
-<br>
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　行のワードラップ:　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ウィンドウ端で緩やかに行のワードラップを行う　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　最大文字数:　　　　　　　　　　　　　　　　　<ins>80　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　全てのファイルを自動保存:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[しない　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 暗黙的に、保存したファイルを再読み込みして外部での変更を適用（アンドゥ／リドゥスタックを破棄）<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 記号をユニコード文字として挿入　　　　　　　　　　 ☐ 「Esc」キーで全画面表示モードを閉じることを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ログ項目のクリック時にログマーカーを表示　　　　☑ ログの表示時にエラー行へ移動<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　Spellchecking via context menu:　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[Add Entries Directly To Context Menu　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　文書の構造パネル<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 構造ツリーに含まれるもののインデントを維持する<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューでの参照コマンド:　<ins>\ref</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　表の自動整形<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンド:　　　　　<ins>\hline,\cline,\intertext,\shortintertext,\toprule,\midrule,\bottomrule</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンドの位置:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[別の行（最初の列にインデントする　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ セルあたり1行<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　追加の検索パス<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　Bibファイル:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　画像ファイル:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　Bi-Di（双方向表記）<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LRM(left-to-right mark)文字を自動的に挿入<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ビジュアルコラムカーソルモード（右から左へ読むテキストで矢印キーの方向にカーソルを移動させる）<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　ハック/回避策<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ アクセント記号タイプ時に回避策を無効化（Mac OS Xのみ）<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ 最適なディスプレイオプションの自動選択 ← チェックをはずす</strong></span><br>
@@ -447,5 +455,11 @@ SVN　　　　　　　　　　　　　　　　 ☑ プレースホルダ後
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 文字幅のキャッシュを無効化<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 描画された行のキャッシュを無効化<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>描画モード:</strong></span> <span style="color:Black;background-color:#EEEEEE;">\[ Qt　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><span style="color:black;background-color:yellow;"><strong> ← Qt に変更する</strong></span><br>
+
+<br>
+
+　☑ 高度なオプションの表示
+
+<br>
 
 ***
