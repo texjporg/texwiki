@@ -27,8 +27,8 @@ Fortran で記述されたライブラリは C, C++, D, Go, Rust, Pascal, Haskel
 - [Getting Started with the Intel® Fortran Composer XE 2013 SP1 for Linux\* OS](http://nf.nci.org.au/facilities/software/intel-ct/14.0.080/Documentation/en_US/get_started_lf.htm)
 - [インテル® Fortran Composer XE 2013 Linux\* 版入門](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/get_started_lf.htm)
 - [User and Reference Guide for the Intel® Fortran Compiler 14.0](http://nf.nci.org.au/facilities/software/intel-ct/14.0.080/Documentation/en_US/compiler_f/main_for/index.htm)
-- [インテル® Fortran コンパイラー XE 13.1 ユーザー・リファレンス・ガイド](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/index.htm)
-- [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-81/)
+- [インテル&reg; Fortran コンパイラー 14.0 ユーザー・リファレンス・ガイド](http://www.xlsoft.com/jp/products/intel/compilers/manual/14/for/index.htm)
+- [Cray Fortran Reference Manual](http://docs.cray.com/books/S-3901-83/)
 - [Fortran Language Reference Manual, Volume 3 S-3694-55 - Dec 2005](http://docs.cray.com/books/S-3694-55/)
 - [http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp](http://pic.dhe.ibm.com/infocenter/lnxpcomp/v121v141/index.jsp)
 - [http://qiita.com/tags/fortran](http://qiita.com/tags/fortran)
@@ -123,7 +123,7 @@ GNU Fortran と Intel Fortran Compiler を両方使用してプログラムを�
 </table>
 
 - [http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html](http://gcc.gnu.org/onlinedocs/gfortran/GNU-Fortran-and-GCC.html)
-- [http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm](http://nf.nci.org.au/facilities/software/intel-ct/13.5.192/Documentation/ja_JP/compiler_f/main_for/GUID-75F416C4-ADD7-41D0-AEFE-E61F50C04A82.htm)
+- [http://www.xlsoft.com/jp/products/intel/compilers/manual/14/for/GUID-6777447B-5053-449F-AF9A-4FC57492F00C.htm](http://www.xlsoft.com/jp/products/intel/compilers/manual/14/for/GUID-6777447B-5053-449F-AF9A-4FC57492F00C.htm)
 
 ### 標準出力 に "Hello World" を出力 {#x79017be}
 
