@@ -358,3 +358,94 @@ SVN<br>
 <br>
 
 ***
+
+### 詳細なエディタ設定 {#wbe91d52}
+
+#### 高度なオプションの表示が ON の場合 \[#waccd93e\]c {#gf7693e4}
+
+Windows の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
+行番号を表示する場合は外観の行番号を表示ですべての行番号を選択します．<br>
+
+***
+
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+
+一般　　　　　　　　　　　　　　外観<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+
+コマンド　　　　　　　　　　　　☑ 行変更の状態を表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+
+ビルド　　　　　　　　　　　　　☑ 状態パネルを表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+
+キーボードショートカット　　　行番号を表示:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[すべての行番号　　　　　　　　　　　　　▼\]</ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
+
+メニュー　　　　　　　　　　　　検索パネル<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
+
+ツールバー　　　　　　　　　　☑ 検索・置換パネルを共に閉じる<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+
+エディタ　　　　　　　　　　　　 ☑ 単語検索として単一行選択を使用<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
+
+<span style="color:Black;background-color:#DAEAFF;">詳細なエディタ設定　　　</span>　　☑ 検索範囲を既存の選択部に制限<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+
+構文の強調表示　　　　　　　 特別なオプション<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
+
+カスタム強調表示　　　　　　　☑ 括弧の自動補完<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+
+コマンドの補完　　　　　　　　　☑ マウスホイールによるズームbr;
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+
+文法　　　　　　　　　　　　　　　　☑ なめらかなスクロール<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+
+プレビュー　　　　　　　　　　　　 ☑ プレースホルダ前の開き括弧を上書き<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+
+SVN　　　　　　　　　　　　　　　　 ☑ プレースホルダ後の閉括弧を上書き<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　☑ 高度なオプションの表示
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　ハック/回避策<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ アクセント記号タイプ時に回避策を無効化（Mac OS Xのみ）<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ 最適なディスプレイオプションの自動選択 ← チェックをはずす</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 固定ピッチモードを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 文字幅のキャッシュを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 描画された行のキャッシュを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>描画モード:</strong></span> <span style="color:Black;background-color:#EEEEEE;">\[ Qt　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><span style="color:black;background-color:yellow;"><strong> ← Qt に変更する</strong></span><br>
+
+***
