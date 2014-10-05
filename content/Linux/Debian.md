@@ -20,7 +20,7 @@ pukiwiki: "Linux/Debian"
 Debian はフリーなオペレーティングシステムを作成するためのプロジェクトです．<br>
 Debian GNU/Linux は Debian Project によって作成された Linux ディストリビューションです．<br>
 
-- [Debian](https://www.debian.org)
+- [Debian -- ユニバーサルオペレーティングシステム](https://www.debian.org)
 
 <!-- **設定 [#n0611da8] -->
 <!-- -[[Debianリポジトリの設定方法:http://ftp-admin.blogspot.jp/2013/02/debian.html]] -->
@@ -36,14 +36,13 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary)
 - [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary)
 - [http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk](http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk)
-- [http://people.debian.org/~preining/TeX/](http://people.debian.org/~preining/TeX/)
+- [https://people.debian.org/~preining/TeX/](https://people.debian.org/~preining/TeX/)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
 - [Linux](/Linux/#texliveinstall)
-- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
+- [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
 - [TeX Live を使おう──Linux ユーザと Mac OS X ユーザのために──](http://www.fugenji.org/~thomas/texlive-guide/)
-- [Debian 7 wheezy stable への TeX Live 2013 導入の備忘録](http://skalldan.wordpress.com/2013/11/25/debian-7-wheezy-stable-%E3%81%B8%E3%81%AE-tex-live-2013-%E5%B0%8E%E5%85%A5%E3%81%AE%E5%82%99%E5%BF%98%E9%8C%B2/)
 - [TeX / ChangeLog::hjk](http://kreisel.fam.cx/webmaster/clog/cat_tex.html)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
@@ -58,9 +57,9 @@ $ sudo dpkg -i texlive-local_2014-1_all.deb
 
 ### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
-- [There and back again &middot; TeX Live](http://www.preining.info/blog/tag/tex-live/)
+- [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
+- [Debian 8 jessie での日本語 TeX 環境の構築](https://blog.ymyzk.com/2014/10/debian-8-jessie-japanese-tex/)
 - [pTeX in TeXLive 2014](http://www1.pm.tokushima-u.ac.jp/~kohda/tex/texlive.html)
-- [TeXLive 2013 in Debian](http://uwabami.junkhub.org/log/20130526p01.html)
 
 TeX Live/Debian をフルインストールする場合は
 
@@ -69,7 +68,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Debian GNU/Linux sid で日本語関連のパッケージと texlive パッケージをインストールする場合は
+Debian sid, jessie で日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive xzdec
