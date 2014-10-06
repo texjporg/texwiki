@@ -71,16 +71,35 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 ### TeX Live/RHEL/CentOS/SL {#w0c3dfae}
 
 CentOS 7.0 の TeX Live は TeX Live 2013 です．<br>
-最新版の TeX Live が必要な場合は TeX Live 公式パッケージを使用してください．<br>
+sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかったので CentOS 7.0 の TeX Live は (u)pTeX が収録されていないかもしれません．<br>
+最新版の TeX Live または (u)pTeX が必要な場合は TeX Live 公式パッケージを使用してください．<br>
 
 ```
-$ sudo yum install texlive-scheme-full
+$ sudo yum install texlive-*
+```
+
+## [Ghostscript](/Ghostscript/) {#j27db6cf}
+
+CentOS 7.0 の Ghostscript は Ghostscript 9.07 です．<br>
+
+```
+$ sudo yum install ghostscript
 ```
 
 ## [Evince](/Evince/) {#b582893c}
 
+CentOS 7.0 の Evince は Evince 3.8.3 です．<br>
+
 ```
 $ sudo yum install evince
+```
+
+## [Okular](/Okular/) {#nf124489}
+
+CentOS 7.0 の Okular は Okular 0.16.5 です．<br>
+
+```
+$ sudo yum install okular
 ```
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#eb6955fb}
@@ -97,3 +116,5 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 <!-- $ sudo yum install nspluginwrapper.i686 AdobeReader_enu -->
 
 ## [TeXstudio](/TeXstudio/) {#d3954fd9}
+
+TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．<br>
