@@ -68,7 +68,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
         <!-- -[http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4 TeX Live 2013 on Scientific Linux 6.4] -->
         <!-- -[http://kousei42.s246.xrea.com/wiki/index.cgi?page=%23014%2ELyX #014.LyX - kosewiki] -->
 
-### TeX Live/RHEL/CentOS/SL {#w0c3dfae}
+### TeX Live/RHEL/CentOS/SL → TeX Live 公式パッケージを使用する {#w0c3dfae}
 
 CentOS 7.0 の TeX Live は TeX Live 2013 です．<br>
 sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかったので CentOS 7.0 の TeX Live は (u)pTeX が収録されていないかもしれません．<br>
