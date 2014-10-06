@@ -55,7 +55,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 ### ミラーサイト {#vbf06ac5}
 
-- [Scientific Linux - Public Mirrors](http://www.scientificlinux.org/download/mirrors)
+- [SL Mirrors | Scientific Linux](http://www.scientificlinux.org/downloads/sl-mirrors/)
 
 ## TeX Live {#od75da14}
 
