@@ -7,7 +7,7 @@ pukiwiki: "Okular"
 
 # Okular
 
-## [Okular](http://okular.kde.org/) {#x3070edc}
+## [Okular](https://okular.kde.org/) {#x3070edc}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/200px-KDE-graphics-viewer-document.svg.png" alt="Okular" style="float:right">
 
@@ -19,7 +19,7 @@ Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビ�
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
-- [Okular](http://okular.kde.org/)
+- [Okular](https://okular.kde.org/)
 
 ### 動作環境 {#ca9192aa}
 
@@ -31,7 +31,7 @@ KDE
 
 ### リリース情報 {#v4dc0489}
 
-[Development News](http://okular.kde.org/news.php) を参照．<br>
+[Development News](https://okular.kde.org/news.php) を参照．<br>
 
 ### ChangeLog {#h7a9328d}
 
