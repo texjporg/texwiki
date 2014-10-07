@@ -134,6 +134,11 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 <!-- $ sudo rpm -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-2.noarch.rpm -->
 <!-- $ sudo yum install wine -->
+<!-- $ sudo yum install cabextract -->
+<!-- $ wget http://winetricks.org/winetricks -->
+<!-- $ chmod +x winetricks -->
+<!-- $ sudo cp -p winetricks /usr/local/bin -->
+<!-- $ winetricks -q mspatcha -->
 <!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.09/ja_JP/AdbeRdr11009_ja_JP.exe -->
 <!-- $ wine AdbeRdr11009_ja_JP.exe -->
 
