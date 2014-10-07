@@ -41,6 +41,7 @@ Windows, OS X, Linux, Android, iOS
 
 - [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
     - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
+    - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
 
 <!-- **fork [#d573b664] -->
 <!-- -https://github.com/monami-ya/mupdf/ -->
