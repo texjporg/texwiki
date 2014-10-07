@@ -49,12 +49,12 @@ $ sudo yum install texlive-scheme-full
 
 ## [Ghostscript](/Ghostscript/) {#w3eeacef}
 
+デフォルトの設定では Ghostscript で日本語が表示できないかもしれません．<br>
+Ghostscript を適切に設定することで 日本語が表示できるようになります．<br>
+
 ```
 $ sudo yum install ghostscript
 ```
-
-デフォルトの設定では Ghostscript で日本語が表示できないかもしれません．<br>
-Ghostscript を適切に設定することで 日本語が表示できるようになります．<br>
 
 ## [Python](/Python/) {#z2c220a1}
 
