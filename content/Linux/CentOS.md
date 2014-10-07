@@ -86,6 +86,30 @@ CentOS 7.0 の Ghostscript は Ghostscript 9.07 です．<br>
 $ sudo yum install ghostscript
 ```
 
+## [Python](/Python/) {#r2377e5f}
+
+CentOS 7.0 の Python は Python 2.7.5 です．<br>
+
+```
+$ sudo yum install python
+```
+
+## [Ruby](/Ruby/) {#pa5990a1}
+
+CentOS 7.0 の Ruby は ruby 2.0.0p353 (2013-11-22) \[x86_64-linux\] です．<br>
+
+```
+$ sudo yum install ruby
+```
+
+## [Perl](/Perl/) {#ye8ee108}
+
+CentOS 7.0 の Perl は Perl 5.16.3 です．<br>
+
+```
+$ sudo yum install perl
+```
+
 ## [Evince](/Evince/) {#b582893c}
 
 CentOS 7.0 の Evince は Evince 3.8.3 です．<br>
@@ -108,6 +132,11 @@ $ sudo yum install okular
 Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
+<!-- $ sudo rpm -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-2.noarch.rpm -->
+<!-- $ sudo yum install wine -->
+<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.09/ja_JP/AdbeRdr11009_ja_JP.exe -->
+<!-- $ wine AdbeRdr11009_ja_JP.exe -->
+
 <!-- -[[CentOS 6.xにAdobe Readerインストール設定（yum）:http://boota.mydns.jp/blog/?p=2028]] -->
 <!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
 <!--  -->
@@ -118,3 +147,5 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 ## [TeXstudio](/TeXstudio/) {#d3954fd9}
 
 TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．<br>
+
+- [http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/)
