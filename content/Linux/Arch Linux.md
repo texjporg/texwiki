@@ -101,6 +101,7 @@ $ yaourt -S texlive-dummy
 ### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
+- [arch linuxにてplatex使用中にエラーが起きた (Fatal format error)](http://tatslock.blogspot.jp/2014/10/arch-linuxplatex-fatal-format-error.html)
 
 ```
 $ sudo pacman -S texlive-langjapanese texlive-most
