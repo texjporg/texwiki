@@ -365,7 +365,7 @@ $ invevince "hoge.pdf" "texstudio '%f' -line %l"
 
 ### Python 版 {#w284c2eb}
 
-Python 3.4.1 と PyPy3 2.3.1 で動作確認しています．<br>
+Python 3.4.2 と PyPy3 2.3.1 で動作確認しています．<br>
 
 ***
 
