@@ -199,7 +199,7 @@ jsarticle.cls では、uplatex オプションを追加してください。<br>
 
 ### dviware {#e548f906}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2ttyは、upTeX対応済みです。
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる [dvipdfmx](/dvipdfmx/), [dvips](/dvips/), dvi2tty, [dvisvgm](/dvisvgm/)は、upTeX対応済みです。
 
 ### 日本語ファイル名 {#z3e68b41}
 
