@@ -14,7 +14,7 @@ pukiwiki: "dvisvgm"
 ## dvisvgm とは {#xb898030}
 
 dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
-TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
+TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
 - [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
@@ -41,7 +41,7 @@ dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF
 
 ### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
-TeX Live 2014 (dvisvgm 1.6) 以降は (e-)upTeX で作成された DVI ファイルと XeTeX で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
+TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
 
 ```
 \ifdefined\kanjiskip
