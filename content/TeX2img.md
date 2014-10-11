@@ -44,5 +44,6 @@ GPLv2
 
 ## 関連リンク {#g449c714}
 
+- [続報：TeX2imgのWindows版アップデート](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
 - [速報：TeX2imgのWindows版、5年ぶりの更新](http://acetaminophen.hatenablog.com/entry/2014/09/15/062324)
 - [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
