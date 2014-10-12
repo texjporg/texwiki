@@ -9,7 +9,7 @@ pukiwiki: "Go"
 
 ## [Go](http://golang.org/) {#vc3e64fe}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/2/23/Golang.png" alt="Go" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Golang.png/320px-Golang.png" alt="Go" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
