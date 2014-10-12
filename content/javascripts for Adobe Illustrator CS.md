@@ -77,7 +77,7 @@ eq.tex -> eq.dvi -> eq.eps -> outline.eps という処理を行うバッチフ�
 cd /d C:\AI\
 uplatex -no-guess-input-enc -kanji=utf8 eq
 dvips -Pdl -E eq -o eq.eps
-rungs -q -sDEVICE=epswrite -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
+rungs -q -sDEVICE=eps2write -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
 ```
 
 ### TeX(&amp;T).js {#w5a4bc73}
@@ -407,7 +407,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- cd /d c:\AI\ -->
 <!-- latex eq -->
 <!-- dvips -Pdl -E eq -o eq.eps -->
-<!-- rungs -q -sDEVICE=epswrite -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps -->
+<!-- rungs -q -sDEVICE=eps2write -sOutputFile=outline.eps -r9600 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop eq.eps -->
 
 <!-- テキストドキュメントに次のように記述して、"bat.ini" という名前で"C:\AI\" に保存します(埋め込み配置のみでよいならば不要)。 -->
 
@@ -644,7 +644,7 @@ var environment = "align*";//補完する際に使う数式環境
 
 <!-- W32TeX およびGhostscript がインストールされている通常の環境であれば、 -->
 <!-- Illustrator に特別な設定をしなくとも数式が確認できるはずです。 -->
-<!-- 上記のスクリプト( とバッチファイル )は、Ghostscript のepswrite で数式のアウトラインを書き出し、得られたクローズドパスを埋め込み配置するように設定されています。 -->
+<!-- 上記のスクリプト( とバッチファイル )は、Ghostscript のeps2write で数式のアウトラインを書き出し、得られたクローズドパスを埋め込み配置するように設定されています。 -->
 
 <!-- これは、フォント関連の問題を回避したい場合(例えばA0サイズのポスターの印刷を外注)に有効です。特にIllustrator CS では、一部のフォントだけがＭＳ　ゴシックに強制的に置き換わるという問題( [[qa:27936]]を参照。) があり、Illustrator 上で何らかの編集を行う上ではアウトライン化しておくほうが安全だと思われます。 -->
 
