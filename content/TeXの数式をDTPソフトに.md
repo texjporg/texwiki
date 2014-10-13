@@ -224,8 +224,8 @@ WMF や EMF に変換できます。
 
 ## Ghostscript でアウトライン化する方法 {#bf206395}
 
-Ghostscript の epswrite デバイスを使って
-アウトラインを取る方法もあります（→ [qa:20472](https://okumuralab.org/~okumura/texfaq/qa/20472.html)）。
+Ghostscript の eps2write デバイスを使ってアウトラインを取る方法もあります（→ [qa:20472](https://okumuralab.org/~okumura/texfaq/qa/20472.html)）。<br>
+eps2write は gs9.14 以降で追加されたデバイスなので，お使いのバージョンが gs9.10 以前の場合は以下 epswrite と読み替えてください．
 
 まず，次のように充分大きいサイズで式を作ります
 （[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
@@ -252,13 +252,13 @@ $ dvips -E -Ppdf testeq.dvi -o testeq.eps
 $ eps2eps testeq.eps testeq2.eps
 ```
 
-この eps2eps は Ghostscript で epswrite デバイスを使う
+この eps2eps は Ghostscript で eps2write デバイスを使う
 シェルスクリプトです。Microsoft Windows ならおそらく次に相当します
 （さらに正確には “-dDEVICEWIDTH=250000 -dDEVICEHEIGHT=250000” という
 オプションも含んでいます）。
 
 ```
->rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -sOutputFile=testeq2.eps testeq.eps
+>rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -sOutputFile=testeq2.eps testeq.eps
 ```
 
 これでアウトラインが取れます。日本語も大丈夫です
@@ -293,7 +293,7 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 なく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
 
 ```
- >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=epswrite -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
+ >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
 ```
 
 端が欠ける場合は “-dEPSCrop” を外せばいいようです。
