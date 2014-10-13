@@ -33,8 +33,8 @@ pukiwiki: "Rust"
 
 ### Rust 版 {#j7127f95}
 
-rustc 0.11.0 で動作確認しています．<br>
-MinGW Shell (MSYS) から以下のようにしてビルドします．<br>
+rustc 0.12.0 (ba4081a5a 2014-10-07 13:44:41 -0700) で動作確認しています．<br>
+Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
 rustc fwdsumatrapdf.rs
@@ -58,12 +58,12 @@ use std::os;
 use std::mem;
 use std::ptr;
 
-static timeout: c_uint = 10000;
-static hkey_local_machine: u32 = 0x80000002;
-static key_query_value: u32 = 0x01;
-static key_path: &'static str = r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
-static cp_acp: u32 = 0;
-static wc_no_best_fit_chars: u32 = 1024;
+static TIMEOUT: c_uint = 10000;
+static HKEY_LOCAL_MACHINE: u32 = 0x80000002;
+static KEY_QUERY_VALUE: u32 = 0x01;
+static KEY_PATH: &'static str = r"SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe";
+static CP_ACP: u32 = 0;
+static WC_NO_BEST_FIT_CHARS: u32 = 1024;
 
 type BOOL = c_int;
 type LPBOOL = *mut c_int;
@@ -123,7 +123,7 @@ struct PROCESS_INFORMATION {
 }
 type LPPROCESS_INFORMATION = *mut PROCESS_INFORMATION;
 
-#[cfg(target_os = "win32", target_arch = "x86")]
+#[cfg(all(target_os = "windows"))]
 #[link_name = "advapi32"]
 #[allow(non_snake_case_functions)]
 extern "stdcall" {
@@ -147,7 +147,7 @@ extern "stdcall" {
         -> LONG;
 }
 
-#[cfg(target_os = "win32", target_arch = "x86")]
+#[cfg(all(target_os = "windows"))]
 #[link_name = "user32"]
 #[allow(non_snake_case_functions)]
 extern "stdcall" {
@@ -155,23 +155,23 @@ extern "stdcall" {
     fn DdeUninitialize(idInst: DWORD) -> c_int;
     fn DdeCreateStringHandleW(idInst: DWORD, psz: LPWSTR, iCodePage: c_int) -> HSZ;
     fn DdeFreeStringHandle(idInst: DWORD, hsz: HSZ) -> BOOL;
-    fn DdeCreateDataHandle(idInst: DWORD, pSrc: LPBYTE, cb: DWORD, cbOff: DWORD, hszItem: *c_int, wFmt: c_uint, afCmd: c_uint) -> HDDEDATA;
+    fn DdeCreateDataHandle(idInst: DWORD, pSrc: LPBYTE, cb: DWORD, cbOff: DWORD, hszItem: *const c_int, wFmt: c_uint, afCmd: c_uint) -> HDDEDATA;
     fn DdeFreeDataHandle(hData: HDDEDATA) -> BOOL;
     fn DdeConnect(idInst: DWORD, hszService: HSZ, hszTopic: HSZ, pCC: *mut c_void) -> HCONV;
     fn DdeDisconnect(hConv: HCONV) -> BOOL;
-    fn DdeClientTransaction(pData: LPBYTE, cbData: DWORD, hConv: HCONV, hszItem: *c_int, wFmt: c_uint, wType: c_uint, dwTimeout: c_uint, pdwResult: *c_int) -> HDDEDATA;
+    fn DdeClientTransaction(pData: LPBYTE, cbData: DWORD, hConv: HCONV, hszItem: *const c_int, wFmt: c_uint, wType: c_uint, dwTimeout: c_uint, pdwResult: *const c_int) -> HDDEDATA;
     fn WaitForInputIdle(hProcess: HANDLE, dwMilliseconds: DWORD) -> DWORD;
 }
 
-#[cfg(target_os = "win32", target_arch = "x86")]
+#[cfg(all(target_os = "windows"))]
 #[link_name = "kernel32"]
 #[allow(non_snake_case_functions)]
 extern "stdcall" {
     fn CreateProcessW(
         lpApplicationName: LPCWSTR,
         lpCommandLine: LPWSTR,
-        lpProcessAttributes: *c_int,
-        lpThreadAttributes: *c_int,
+        lpProcessAttributes: *const c_int,
+        lpThreadAttributes: *const c_int,
         bInheritHandles: BOOL,
         dwCreationFlags: DWORD,
         lpEnvironment: LPVOID,
@@ -196,9 +196,9 @@ fn runSumatraPDF() {
     unsafe {
         let mut si = STARTUPINFOW {
             cb: 0,
-            lpReserved: ptr::mut_null(),
-            lpDesktop: ptr::mut_null(),
-            lpTitle: ptr::mut_null(),
+            lpReserved: ptr::null_mut(),
+            lpDesktop: ptr::null_mut(),
+            lpTitle: ptr::null_mut(),
             dwX: 0,
             dwY: 0,
             dwXSize: 0,
@@ -209,30 +209,30 @@ fn runSumatraPDF() {
             dwFlags: 0,
             wShowWindow: 0,
             cbReserved2: 0,
-            lpReserved2: ptr::mut_null(),
-            hStdInput: ptr::mut_null(),
-            hStdOutput: ptr::mut_null(),
-            hStdError: ptr::mut_null()};
+            lpReserved2: ptr::null_mut(),
+            hStdInput: ptr::null_mut(),
+            hStdOutput: ptr::null_mut(),
+            hStdError: ptr::null_mut()};
         let mut pi = PROCESS_INFORMATION {
-            hProcess: ptr::mut_null(),
-            hThread: ptr::mut_null(),
+            hProcess: ptr::null_mut(),
+            hThread: ptr::null_mut(),
             dwProcessId: 0,
             dwThreadId: 0};
-        let mut subKey = ptr::mut_null();
+        let mut subKey = ptr::null_mut();
         let mut dwType = 0u32;
         let mut sz = 0u32;
-        RegOpenKeyExW(hkey_local_machine as HKEY, key_path.to_utf16().as_ptr(), 0, key_query_value, &mut subKey);
-        RegQueryValueExW(subKey, ptr::null(), ptr::mut_null(), &mut dwType, ptr::mut_null(), &mut sz);
+        RegOpenKeyExW(HKEY_LOCAL_MACHINE as HKEY, KEY_PATH.to_utf16().as_ptr(), 0, KEY_QUERY_VALUE, &mut subKey);
+        RegQueryValueExW(subKey, ptr::null(), ptr::null_mut(), &mut dwType, ptr::null_mut(), &mut sz);
         let mut sumatraPDFRegistry_wchar: Vec<u8> = Vec::from_fn(sz as uint, |idx| 0);
-        RegQueryValueExW(subKey, ptr::null(), ptr::mut_null(), &mut dwType, sumatraPDFRegistry_wchar.as_mut_ptr(), &mut sz);
+        RegQueryValueExW(subKey, ptr::null(), ptr::null_mut(), &mut dwType, sumatraPDFRegistry_wchar.as_mut_ptr(), &mut sz);
         RegCloseKey(subKey);
         let sumatraPDFRegLength = ((sz - 2) / 2) as c_uint;
         let mut sumatraPDFRegistry: Vec<u8> = Vec::from_fn(sumatraPDFRegLength as uint, |idx| 0);
-        WideCharToMultiByte(cp_acp, wc_no_best_fit_chars, sumatraPDFRegistry_wchar.as_ptr() as *u16, -1, sumatraPDFRegistry.as_mut_ptr() as *mut i8, sumatraPDFRegLength as i32, ptr::null(), ptr::mut_null());
-        let sumatraPDFCommandLine = format!("\"{}\" -reuse-instance", sumatraPDFRegistry.into_ascii().into_str());
+        WideCharToMultiByte(CP_ACP, WC_NO_BEST_FIT_CHARS, sumatraPDFRegistry_wchar.as_ptr() as *const u16, -1, sumatraPDFRegistry.as_mut_ptr() as *mut i8, sumatraPDFRegLength as i32, ptr::null(), ptr::null_mut());
+        let sumatraPDFCommandLine = format!("\"{}\" -reuse-instance", sumatraPDFRegistry.into_ascii().into_string());
         si.cb = mem::size_of::<STARTUPINFOW>() as DWORD;
-        CreateProcessW(ptr::null(), sumatraPDFCommandLine.to_utf16().as_mut_ptr(), ptr::null(), ptr::null(), 0, 0, ptr::mut_null(), ptr::null(), &mut si, &mut pi);
-        WaitForInputIdle(pi.hProcess, timeout);
+        CreateProcessW(ptr::null(), sumatraPDFCommandLine.to_utf16().as_mut_ptr(), ptr::null(), ptr::null(), 0, 0, ptr::null_mut(), ptr::null(), &mut si, &mut pi);
+        WaitForInputIdle(pi.hProcess, TIMEOUT);
     }
 }
 
@@ -245,49 +245,47 @@ fn ddeExecute(server: &str, topic: &str, command: &str) {
         let xclass_flags = 0x4000;
         let xtyp_execute = (0x0050 | xclass_flags);
         let mut idInstance = 0u32;
-        let mut hszServer = ptr::mut_null();
-        let mut hszTopic = ptr::mut_null();
-        let mut hConvClient = ptr::mut_null();
-        let mut hDdeData = ptr::mut_null();
-        let mut hDdeTransactionData = ptr::mut_null();
+        let mut hszServer = ptr::null_mut();
+        let mut hszTopic = ptr::null_mut();
+        let mut hConvClient = ptr::null_mut();
+        let mut hDdeData = ptr::null_mut();
+        let mut hDdeTransactionData = ptr::null_mut();
         loop {
-            DdeInitializeW(&mut idInstance, ptr::mut_null(), appcmd_clientonly, 0);
+            DdeInitializeW(&mut idInstance, ptr::null_mut(), appcmd_clientonly, 0);
             if idInstance == 0u32 { writeln!(io::stderr(), "DdeInitializeW error"); break; }
             hszServer = DdeCreateStringHandleW(idInstance, server.to_utf16().as_mut_ptr(), cp_winunicode);
-            if hszServer == ptr::mut_null() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
+            if hszServer == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
             hszTopic = DdeCreateStringHandleW(idInstance, topic.to_utf16().as_mut_ptr(), cp_winunicode);
-            if hszTopic == ptr::mut_null() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
-            hConvClient = DdeConnect(idInstance, hszServer, hszTopic, ptr::mut_null());
-            if hConvClient == ptr::mut_null() {
-                runSumatraPDF();
-                hConvClient = DdeConnect(idInstance, hszServer, hszTopic, ptr::mut_null());
-                if hConvClient == ptr::mut_null() { writeln!(io::stderr(), "DdeConnect error"); break; }
-            }
+            if hszTopic == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
+            hConvClient = DdeConnect(idInstance, hszServer, hszTopic, ptr::null_mut());
+            if hConvClient == ptr::null_mut() { writeln!(io::stderr(), "DdeConnect error"); break; }
             hDdeData = DdeCreateDataHandle(idInstance, command.to_utf16().as_mut_ptr() as LPBYTE, ((command.char_len() + 1)*mem::size_of::<wchar_t>()) as DWORD, 0, ptr::null(), cf_unicodetext, 0);
-            if hDdeData == ptr::mut_null() { writeln!(io::stderr(), "DdeCreateDataHandle error"); break; }
-            hDdeTransactionData = DdeClientTransaction(hDdeData as LPBYTE, -1 as DWORD, hConvClient, ptr::null(), 0, xtyp_execute, timeout, ptr::null());
-            if hDdeTransactionData == ptr::mut_null() { writeln!(io::stderr(), "DdeClientTransaction error"); break; }
+            if hDdeData == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateDataHandle error"); break; }
+            hDdeTransactionData = DdeClientTransaction(hDdeData as LPBYTE, -1 as DWORD, hConvClient, ptr::null(), 0, xtyp_execute, TIMEOUT, ptr::null());
+            if hDdeTransactionData == ptr::null_mut() { writeln!(io::stderr(), "DdeClientTransaction error"); break; }
             break;
         }
-        if hDdeTransactionData != ptr::mut_null() { DdeFreeDataHandle(hDdeTransactionData); }
-        if hDdeData != ptr::mut_null() { DdeFreeDataHandle(hDdeData); }
-        if hszServer != ptr::mut_null() { DdeFreeStringHandle(idInstance, hszServer); }
-        if hszTopic != ptr::mut_null() { DdeFreeStringHandle(idInstance, hszTopic); }
-        if hConvClient != ptr::mut_null() { DdeDisconnect(hConvClient); }
+        if hDdeTransactionData != ptr::null_mut() { DdeFreeDataHandle(hDdeTransactionData); }
+        if hDdeData != ptr::null_mut() { DdeFreeDataHandle(hDdeData); }
+        if hszServer != ptr::null_mut() { DdeFreeStringHandle(idInstance, hszServer); }
+        if hszTopic != ptr::null_mut() { DdeFreeStringHandle(idInstance, hszTopic); }
+        if hConvClient != ptr::null_mut() { DdeDisconnect(hConvClient); }
         if idInstance != 0u32 { DdeUninitialize(idInstance); }
     }
 }
 
+#[allow(non_snake_case)]
 fn main() {
     let args = os::args();
     if args.len() != 4 {
         writeln!(io::stderr(), "Usage: {} pdf tex line", args.get(0));
         unsafe { libc::exit(2 as libc::c_int); }
     }
-    let pdf = args.get(1);
-    let tex = args.get(2);
-    let line = args.get(3);
+    let ref pdf = args[1];
+    let ref tex = args[2];
+    let ref line = args[3];
     let forwardSearch = format!("[ForwardSearch(\"{}\",\"{}\",{},0,0,0)]", pdf, tex, line);
+    runSumatraPDF();
     match forwardSearch.to_c_str().as_str() {
         //Some(ref command) => {
         //    runSumatraPDF();
