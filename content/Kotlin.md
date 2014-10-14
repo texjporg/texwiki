@@ -9,7 +9,7 @@ pukiwiki: "Kotlin"
 
 ## Kotlin {#gaf7c268}
 
-- [Kotlin](http://kotlin.jetbrains.org/)
+- [Project Kotlin](http://kotlinlang.org/)
 - [https://github.com/JetBrains/kotlin](https://github.com/JetBrains/kotlin)
     - [https://github.com/JetBrains/kotlin/releases](https://github.com/JetBrains/kotlin/releases)
 - [Kotlin Advent Calendar 2013](http://www.adventar.org/calendars/148)
