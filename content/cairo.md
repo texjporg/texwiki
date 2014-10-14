@@ -20,9 +20,9 @@ pukiwiki: "cairo"
 - Install [pixman](http://cgit.freedesktop.org/pixman/).
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/pixman-0.32.4.tar.gz
-$ tar xvf pixman-0.32.4.tar.gz
-$ pushd pixman-0.32.4
+$ curl -R -L -O http://cairographics.org/releases/pixman-0.32.6.tar.gz
+$ tar xvf pixman-0.32.6.tar.gz
+$ pushd pixman-0.32.6
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -32,12 +32,12 @@ $ popd
 - Install cairo.
 
 ```
-$ curl -R -L -O http://cairographics.org/releases/cairo-1.12.16.tar.xz
-$ tar xvf cairo-1.12.16.tar.xz
-$ pushd cairo-1.12.16
+$ curl -R -L -O http://cairographics.org/releases/cairo-1.14.0.tar.xz
+$ tar xvf cairo-1.14.0.tar.xz
+$ pushd cairo-1.14.0
 $ ./configure --prefix=/mingw
 
-cairo (version 1.12.16 [release]) will be compiled with:
+cairo (version 1.14.0 [release]) will be compiled with:
 
 The following surface backends:
   Image:         yes (always builtin)
