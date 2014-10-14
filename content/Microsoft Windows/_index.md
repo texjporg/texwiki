@@ -608,6 +608,9 @@ guess_input_kanji_encoding = 1
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+[TeX Live（TeX環境）のインストール](http://ryskiwt.blog.fc2.com/blog-entry-28.html)
+: 2014-10-14
+
 [Texインストール](http://arb-computer.seesaa.net/article/406943877.html)
 : 2014-10-11
 
