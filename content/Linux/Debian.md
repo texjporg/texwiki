@@ -145,9 +145,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ```
 
-<!-- Linux 版、Windows 版の双方に関して、[[Adobe Reader]] は、ia32（32-bit 版）バイナリのみが配布されています。~ -->
-
-64-bit の Linux 上で Adobe Reader を使用する場合は 32-bit バイナリを動作させなければなりません。<br>
+64-bit の Linux 上でも 32-bit バイナリは動作します。<br>
 Debian GNU/Linux では [Multiarch](http://wiki.debian.org/Multiarch) によってこれを実現しています。<br>
 
 ```
@@ -156,10 +154,7 @@ $ sudo dpkg --add-architecture <architecture>
 
 を実行することにより、システムのセカンドアーキテクチャが登録され、インストール・実行が可能となります。<br>
 このとき、セカンドアーキテクチャのパッケージ名末尾には ":&lt;architecture>" が付与されます。<br>
-
 wine を使用して Windows 用バイナリを実行する際にも、Multiarch による 32-bit アーキテクチャのサポートが必須となります。<br>
-Windows 版の [Adobe Reader](</Adobe Reader/>) は、ia32（32-bit 版）バイナリのみが配布されています。<br>
-これに関しては、wine のインストール時に apt が説明のメッセージを出しますので、詳細はそちらを御参照下さい。<br>
 
 <!-- *** Linux 版 Adobe Reader のインストール [#l44b42e5] -->
 <!--  -->
