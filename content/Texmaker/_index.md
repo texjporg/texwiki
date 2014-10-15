@@ -150,6 +150,86 @@ OS X では不具合が発生しないようです．<br>
 Windows の場合は Dark theme を選択することで回避できます．<br>
 Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
 
+***
+
+<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">エディタ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>メイリオ　　　　　　　　　　　<strong>ᐯ</strong></ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">文字コード　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　▼\]</ins></span><span style="color:Black;background-color:#F5F5F5;">　☑ 行番号の表示</span><br>
+
+　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
+
+<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　<span style="color:black;background-color:yellow;"><strong>☐ インライン ← 日本語の文書を作成する場合はチェックをはずす</strong></span></span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
+
+<span style="color:Black;background-color:#F5F5F5;">色</span><br>
+
+<br>
+
+　　　<strong>クイックビルド</strong><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>エディタ</strong>　　　</span><br>
+
+<div style="clear:both"></div>
+
+<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
+
+>
+> : &nbsp;
+>
+
+>
+> : &nbsp;
+>
+
+> <table>
+> <tbody>
+> <tr><td style="color:#555">Background</td><td>#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
+> <tr><td style="color:#555">Current line</td><td>#ececec</td></tr>
+> <tr><td style="color:#555">Highlighted line</td><td>#ff0000</td></tr>
+> <tr><td style="color:#555">Text</td><td>#000000</td></tr>
+> <tr><td style="color:#555">Comment</td><td>#606060</td></tr>
+> <tr><td style="color:#555">Math</td><td>#008000</td></tr>
+> <tr><td style="color:#555">...</td><td>...</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><span style="color:black;background-color:yellow;"><strong>← かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する</strong></span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　デフォルトのテーマ　　　　\]</span><br>
+
+<div style="clear:both"></div>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
+
+***
+
 #### Linux の場合 {#nd7d6ba8}
 
 ■ ibus を使用している場合<br>
@@ -581,6 +661,7 @@ C:.
     - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
     - [Configure forward search with Texmaker + SumatraPDF](http://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
+- [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
 - [http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/](http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/)
 - [Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
 - [GateKeeperに引っかかった時の対処(OS X)](http://hnsn1202.hateblo.jp/entry/2013/04/09/193136)
