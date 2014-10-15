@@ -333,7 +333,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
 
-文法　　　　　　　　　　　　　　☑ Check non tex files<br>
+文法　　　　　　　　　　　　　　☑ 非texファイルの確認<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
 
@@ -428,13 +428,13 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　行のワードラップ:　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ウィンドウ端で緩やかに行のワードラップを行う　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　行のワードラップ:　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ウィンドウ端で緩やかに行のワードラップを行う　　　　　　　　　　　　▼\]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　最大文字数:　　　　　　　　　　　　　　　　　<ins>80　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　全てのファイルを自動保存:　　　　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[しない　　　　　▼\]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 暗黙的に、保存したファイルを再読み込みして外部での変更を適用（アンドゥ／リドゥスタックを破棄）<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 記号をユニコード文字として挿入　　　　　　　　　　 ☐ 「Esc」キーで全画面表示モードを閉じることを無効化<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ログ項目のクリック時にログマーカーを表示　　　　☑ ログの表示時にエラー行へ移動<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　Spellchecking via context menu:　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[Add Entries Directly To Context Menu　　　　　　　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューからのスペルチェック:　　　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[項目をコンテキストメニューへ直接追加　　　　　　　　　　　▼\]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　文書の構造パネル<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 構造ツリーに含まれるもののインデントを維持する<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューでの参照コマンド:　<ins>\ref</ins><br>
