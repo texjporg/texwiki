@@ -18,6 +18,7 @@ pukiwiki: "Julia"
 Julia は科学技術計算向けのプログラミング言語です．<br>
 
 - [The Julia Language](http://julialang.org/)
+- [http://docs.julialang.org/en/latest/](http://docs.julialang.org/en/latest/)
 - [http://julia.readthedocs.org/en/latest/](http://julia.readthedocs.org/en/latest/)
 - [http://qiita.com/tags/julia](http://qiita.com/tags/julia)
 - [Wikipedia:Julia\_(programming_language)](https://www.wikipedia.org/wiki/Julia_%28programming_language%29)
