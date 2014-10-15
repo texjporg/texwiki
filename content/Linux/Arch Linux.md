@@ -127,6 +127,12 @@ $ sudo pacman -S python python-dbus python-gobject
 $ sudo pacman -S python2 python2-dbus python2-gobject
 ```
 
+## Julia {#xdaa5ad2}
+
+```
+$ sudo pacman -S julia
+```
+
 ## [Ruby](/Ruby/) {#f4286b29}
 
 ```
