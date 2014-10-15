@@ -40,6 +40,7 @@ Ghostscript 9.15 以降で XeTeX 上の PSTricks で問題が発生する場合�
 - \[[texlive\] Revision 35312](http://www.tug.org/svn/texlive?view=revision&revision=35312)
 
 また Ghostscript 9.15 では，output device から epswrite が廃止され，9.14 で追加・推奨されていた eps2write に完全に置き換わりました．<br>
+eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript/使い方/>) を参照してください．<br>
 以下のようなアプリケーションは，すでに対応を完了しています．
 
 - [TeXソースコードをTeXでコンパイルして画像で出力するアプリケーション「TeX2img」](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
