@@ -89,6 +89,12 @@ $ sudo apt-get install ghostscript
 $ sudo apt-get install python python3
 ```
 
+## Julia <a id="julia"></a> {#wfa371af}
+
+```
+$ sudo apt-get install julia
+```
+
 ## [Ruby](/Ruby/) <a id="ruby"></a> {#b036c19c}
 
 ```
