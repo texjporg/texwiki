@@ -88,11 +88,22 @@ $ sudo yum install ghostscript
 
 ## [Python](/Python/) {#r2377e5f}
 
+### Python 3 {#h7df1ef5}
+
+- [https://copr.fedoraproject.org/coprs/interrupted/python3/](https://copr.fedoraproject.org/coprs/interrupted/python3/)
+
+### Python 2 {#b51e9b09}
+
 CentOS 7.0 の Python は Python 2.7.5 です．<br>
 
 ```
 $ sudo yum install python
 ```
+
+## Julia {#p0236f37}
+
+- [https://copr.fedoraproject.org/coprs/nalimilan/julia/](https://copr.fedoraproject.org/coprs/nalimilan/julia/)
+- [https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/](https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/)
 
 ## [Ruby](/Ruby/) {#pa5990a1}
 
