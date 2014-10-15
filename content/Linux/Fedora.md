@@ -20,6 +20,7 @@ pukiwiki: "Linux/Fedora"
 Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
 
 - [Fedora Project](http://fedoraproject.org/)
+- [https://copr.fedoraproject.org/](https://copr.fedoraproject.org/)
 - [http://wiki.sugarlabs.org/go/Fedora](http://wiki.sugarlabs.org/go/Fedora)
 
 ## ダウンロード {#j75c78dc}
@@ -61,6 +62,11 @@ $ sudo yum install ghostscript
 ```
 $ sudo yum install python python3
 ```
+
+## Julia {#h3524e63}
+
+- [https://copr.fedoraproject.org/coprs/nalimilan/julia/](https://copr.fedoraproject.org/coprs/nalimilan/julia/)
+- [https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/](https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/)
 
 ## [Ruby](/Ruby/) {#j99de34a}
 
