@@ -19,7 +19,7 @@ Happy は TeX を便利に使うためのスクリプトです．<br>
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
     - HappyInput (TeX 入力支援スクリプト)
-- [http://www.autoitscript.com/](http://www.autoitscript.com/)
+- [https://www.autoitscript.com/](https://www.autoitscript.com/)
 
 ### 動作環境 {#l8517280}
 
