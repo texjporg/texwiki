@@ -147,21 +147,21 @@ LaTeX を実行する場合は \[実行\] をクリックします．<br>
 ***
 
 LaTeX　　　　　　　　　　　　　　　　　　　　　出力ファイル<br>
-　◯ pLaTeX　　　(●) upLaTeX　　　　　　　(●) dvi → PDF　　◯ ps → PDF<br>
+　◯ pLaTeX　　　🔘 upLaTeX　　　　　　　　🔘 dvi → PDF　　◯ ps → PDF<br>
 　◯ LuaLaTeX　　◯ LuaJITLaTeX　　　　　<span style="color:#888888;">◯ PDF</span><br>
 　◯ XeLaTeX　　 ◯ pdfLaTeX　　　　　　　 ◯ dvi　　　　　　　 ◯ ps<br>
 
 <br>
 
 途中経過　　　　　　　　　　　　　　　　　　　　出力ファイルの表示<br>
-　(●) 毎回表示する　　☐ 確認する　　　　　(●) 表示する　　☐ 非アクティブに<br>
+　🔘 毎回表示する　　☐ 確認する　　　　　🔘 表示する　　☐ 非アクティブに<br>
 　◯ 今回のみ表示する　　　　　　　　　　　　 ◯ 表示しない（TeX 起動 1回）<br>
 　◯ 表示しない　　　　　　　　　　　　　　　　　◯ 表示しない（TeX 起動複数回）<br>
 
 <br>
 
 Warning<br>
-　(●) Font Warning 以外をチェックする　　　オプション（mendex）<br>
+　🔘 Font Warning 以外をチェックする　　　オプション（mendex）<br>
 　◯ すべてチェックする<br>
 　◯ 無視する<br>
 
