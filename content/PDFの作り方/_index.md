@@ -17,7 +17,7 @@ pukiwiki: "PDFの作り方"
 
 ## PDF を作るためのソフト {#mde22763}
 
-### フリーウェア派 (Windows/OS X/Linux/\*BSD/...) {#d8e4c485}
+### フリーソフトウェア派 (Windows/OS X/Linux/\*BSD/...) {#d8e4c485}
 
 - upLaTeX + dvipdfmx
 - upLaTeX + dvips + ps2pdf (Ghostscript)
@@ -25,7 +25,7 @@ pukiwiki: "PDFの作り方"
 - [LuaLaTeX](/LuaTeX/)
 - LuaJITLaTeX
 - [XeLaTeX](/XeTeX/)
-- Adobe Reader （確認用）
+- [SumatraPDF](/SumatraPDF/), [Skim](/Skim/), [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) （確認用）
 
 ### ソフト購入派 (Windows/OS X) {#efe1e3d8}
 
