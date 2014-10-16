@@ -44,14 +44,14 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin64
 dviout=C:\w32tex\dviout-x64\dviout.exe
-GSmain=C:\Program Files\gs\gs9.15
+GSmain=C:\Program Files\gs\gs9.16
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
-pdfviewer=C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe
+pdfviewer=C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR11/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewR15/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
@@ -96,14 +96,14 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin
 dviout=C:\w32tex\dviout\dviout.exe
-GSmain=C:\Program Files\gs\gs9.15
+GSmain=C:\Program Files\gs\gs9.16
 gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
 
-pdfviewer=C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe
+pdfviewer=C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR11/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewR15/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
