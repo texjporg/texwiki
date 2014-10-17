@@ -115,13 +115,7 @@ $ pacman -S perl
 
 ### Perl 版 {#ea342970}
 
-Strawberry Perl 5.20.0.1 で動作確認しています．<br>
-FFI::Raw がインストールされていない場合は以下を実行して FFI::Raw をインストールします．<br>
-
-```
->cpan
-cpan> install FFI::Raw
-```
+Strawberry Perl 5.20.1.1 で動作確認しています．<br>
 
 ***
 
