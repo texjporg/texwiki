@@ -51,6 +51,8 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
+- Microsoft Visual Studio Express
+    - [Python Tools for Visual Studio](http://pytools.codeplex.com/)
 
 ## インストール {#y6c76d8e}
 
@@ -134,7 +136,7 @@ pip や easy_install を使用して error: Setup script exited with error: Unab
 Evince 3.12.1, Python 3.4.0, dbus-python 1.2.0, PyGObject 3.12.1 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
-- [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
+- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
 - Ruby 版の fwdevince を使用する
 - Python 版の fwdevince をうまく動作するように修正する
 
