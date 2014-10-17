@@ -16,7 +16,7 @@ pukiwiki: "Perl"
 ## Perl 6 {#xd216707}
 
 - [Perl 6](http://perl6.org/)
-- [http://doc.perl6.org/](http://doc.perl6.org/)
+- [Perl 6 Documentation](http://doc.perl6.org/)
 - [Official Perl 6 Documentation](http://perlcabal.org/syn/)
 - [https://github.com/perl6/specs](https://github.com/perl6/specs)
 - [Wikipedia.en:Perl_6](https://en.wikipedia.org/wiki/Perl_6)
