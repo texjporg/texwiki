@@ -44,6 +44,7 @@ GPLv2
 
 ## 関連リンク {#g449c714}
 
+- [Ghostscriptのこと(2)：不具合？](http://acetaminophen.hatenablog.com/entry/2014/10/17/145447)
 - [Ghostscriptのこと(1)：アウトライン化の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/16/110255)
 - [続報：TeX2imgのWindows版アップデート](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
 - [速報：TeX2imgのWindows版、5年ぶりの更新](http://acetaminophen.hatenablog.com/entry/2014/09/15/062324)
