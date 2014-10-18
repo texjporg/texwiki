@@ -702,7 +702,7 @@ function! Tex_ForwardSearchLaTeX()
 SumatraPDF で inverse search を使用するには LaTeX コマンドに -synctex=1 を追加します．<br>
 Vim-LaTeX で SumatraPDF の inverse search をする場合は，tex.vim, quickrun, LaTeX Box の設定とは異なる記述が必要です．<br>
 
-Vim-LaTeX の場合 inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+Vim-LaTeX の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
 "C:\vim\gvim.exe" -n -c ":RemoteOpen +%l %f"
