@@ -781,7 +781,7 @@ endlocal
 
 <!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.1\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
 
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
 
 ```
 "C:\Users\Lydia\AppData\Local\LyX 2.1\bin\lyxeditor.cmd" "%f" %l
