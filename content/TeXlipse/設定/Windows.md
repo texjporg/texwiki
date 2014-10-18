@@ -706,7 +706,7 @@ java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.5.0\texlipse.jar"
 
 ***
 
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で C:\eclipse\invtexlipse.bat を指定し，
+SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で C:\eclipse\invtexlipse.bat を指定し，
 
 ```
 C:\eclipse\invtexlipse.bat "%f" %l
