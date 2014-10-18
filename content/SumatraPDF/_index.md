@@ -110,7 +110,7 @@ forward search するときに SumatraPDF を前面に表示したくない場�
 
 inverse search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
 inverse search は SumatraPDF の画面をダブルクリックすると実行されます．<br>
-SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で inverse search で実行されるコマンドラインの設定を行います．<br>
+SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] で inverse search で実行されるコマンドラインの設定を行います．<br>
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．<br>
 この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．<br>
 どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．<br>
