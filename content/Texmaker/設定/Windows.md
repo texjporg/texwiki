@@ -249,7 +249,7 @@ fwdsumatrapdf.exe %.pdf #.tex @
 
 ### inverse search {#p850b553}
 
-inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下のように設定します．<br>
+inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下のように設定します．<br>
 
 ■ 64-bit Windows の場合
 
