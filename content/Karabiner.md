@@ -35,14 +35,14 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ***
 
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDD00;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#595857;background-color:#D3D3D3;"><ins>　<span style="color:#FF0000;background-color:#D3D3D3;">●</span> <span style="color:#FFD700;background-color:#D3D3D3;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
-　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>Change Key</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
+　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#0F5FFF;"><span style="color:#0F5FFF;">\[</span>　<strong>Change Key</strong>　<span style="color:#0F5FFF;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
 　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins>　Change Yen　　　　　　　　　　　　　　　　　　</ins>)</span>　　☐ Show enabled only (1 item)　　　　　　　　　　<ins>\[ <strong>↻</strong> ReloadXML \]</ins><br>
 　　　　remapping<br>
 　　　　▼For Japanese<br>
 　　　　　　▼Change Yen(￥) Key<br>
-　　　　　　　　　<span style="color:Black;background-color:#9FCFFB;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
+　　　　　　　　　<span style="color:White;background-color:#0F5FFF;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
 　　　　　　　　　　　　(except virtual machine, X11, RDC)<br>
 
 ***
