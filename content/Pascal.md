@@ -9,6 +9,8 @@ pukiwiki: "Pascal"
 
 ## Pascal {#wce5df79}
 
+<img src="http://upload.wikimedia.org/wikipedia/commons/8/8f/FPClogogif.gif" alt="Pascal" style="float:right">
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#s6ca61dc}
