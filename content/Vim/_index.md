@@ -172,7 +172,7 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 #### tex.vim, quickrun, LaTeX Box の場合 {#b099e4df}
 
-tex.vim, quickrun, LaTeX Box の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に<br>
+tex.vim, quickrun, LaTeX Box の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
