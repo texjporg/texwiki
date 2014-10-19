@@ -36,13 +36,13 @@ TeX Live に随時追加・アップデートされるパッケージなどを�
 
 ***
 
-<span style="color:Black;background-color:#CCCCCC;">　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDD00;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX Live ユーティリティ</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:#595857;background-color:#D3D3D3;">　<span style="color:#FF0000;background-color:#D3D3D3;">●</span> <span style="color:#FFD700;background-color:#D3D3D3;">●</span> <span style="color:#00DD00;background-color:#D3D3D3;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX Live ユーティリティ</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-<span style="color:Black;background-color:#CCCCCC;">　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　\]</ins></span>　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[&#x68;ttp://... 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</ins></span>　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>(dvi　　　　　　　　　　　　　)</ins></span>　　</span><br>
+<span style="color:Black;background-color:#D3D3D3;">　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　\]</ins></span>　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[&#x68;ttp://... 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</ins></span>　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>(dvi　　　　　　　　　　　　　)</ins></span>　　</span><br>
 
-<span style="color:Black;background-color:#CCCCCC;"><ins>　　ホーム　　　　　　　　　　　　　　リポジトリ アドレス　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　検索　　　　　　　　</ins></span><br>
+<span style="color:Black;background-color:#D3D3D3;"><ins>　　ホーム　　　　　　　　　　　　　　リポジトリ アドレス　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　検索　　　　　　　　</ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>更新分</strong>　\]</span><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>パッケージ</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>バックアップ</strong>　\]</span></ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:Black;background-color:#EEEEEE;">\[　<strong>更新分</strong>　\]</span><span style="color:#F1F1F1;background-color:#0F5FFF;"><span style="color:#0F5FFF;">\[</span>　<strong>パッケージ</strong>　<span style="color:#0F5FFF;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>バックアップ</strong>　\]</span></ins><br>
 パッケージ　　　　　　　　　｜説明　　　　　　　　　　　　　　　　　　　　　　　　　　　　　｜状態<br>
 ▶<span style="color:#BA55E3;">dtl　　　　　　　　　　　　　　Tools to dis-assemble and re-assemble DVI files.　　　　 混在</span><br>
 ▶<span style="color:#BA55E3;">dvi2tty　　　　　　　　　　　Produce ASCII from DVI.　　　　　　　　　　　　　　　　　　　混在</span><br>
