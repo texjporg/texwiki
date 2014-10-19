@@ -1000,7 +1000,7 @@ Command line arguments to pass to the compiler: に -synctex=1 を追加しま�
 ### forward and inverse search {#e049aa23}
 
 forward and inverse search は PDF Viewer の [SumatraPDF](/TeXnicCenter/#pdc24230) の項を参考に設定してください．<br>
-inverse search は Executable path に追加する代わりに SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に以下の設定を追加しても OK です．<br>
+inverse search は Executable path に追加する代わりに SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下の設定を追加しても OK です．<br>
 
 ```
 "C:\Program Files\TeXnicCenter\TeXnicCenter.exe" /ddecmd "[goto('%f', '%l')]"
