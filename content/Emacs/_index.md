@@ -173,7 +173,7 @@ Emacs の Windows 版には ddeclient.exe が含まれているので別途ダ�
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に
 
 ```
 C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
