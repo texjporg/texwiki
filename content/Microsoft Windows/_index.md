@@ -48,27 +48,9 @@ TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照し�
 
 TeX Live (Win64, Win32) は Visual C++ 2010 でビルドされているため Windows XP 以降で動作します．<br>
 
-#### ウイルス対策ソフトについて {#w1959e65}
+#### フォルダー オプション {#la12fe35}
 
-TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
-
-- [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
-- [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
-
-#### プロキシ経由でインストールする場合 {#wd612118}
-
-プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget で使用するプロキシの設定をしてからインストールしてください．<br>
-
-- [Tex Live 2013をWin7 64-bitマシンにインストール](http://wshinya.hatenablog.com/entry/2013/12/04/140746)
-- [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
-
-#### TeX Live のインストール {#ca517ea6}
-
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
-
-■■■ フォルダー オプション ■■■<br>
+TeX Live をインストールする前に拡張子や隠しファイル、隠しフォルダーおよび隠しドライブを表示する設定をします．<br>
 
 Windows PowerShell または コマンド プロンプトを起動します．<br>
 
@@ -160,6 +142,26 @@ control folders
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値に戻す(D)　　\]</span><br>
 
 ***
+
+#### ウイルス対策ソフトについて {#w1959e65}
+
+TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
+
+- [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
+- [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
+
+#### プロキシ経由でインストールする場合 {#wd612118}
+
+プロキシ経由でインストールする場合は [Proxies - GNU Wget Manual](http://www.gnu.org/software/wget/manual/html_node/Proxies.html) を参照して wget で使用するプロキシの設定をしてからインストールしてください．<br>
+
+- [Tex Live 2013をWin7 64-bitマシンにインストール](http://wshinya.hatenablog.com/entry/2013/12/04/140746)
+- [プロキシ環境下で Windowsマシンに TeX Live を入れる際のメモ](http://ichiro-maruta.blogspot.jp/2012/04/windows-tex-live.html)
+
+#### TeX Live のインストール {#ca517ea6}
+
+- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
+- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
 
 ■■■ ダウンロード ■■■<br>
 
