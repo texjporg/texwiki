@@ -32,6 +32,17 @@ Windows, OS X
 
 GPLv2
 
+### ChangeLog {#c3216979}
+
+#### Windows 版 {#w82758cc}
+
+- [https://github.com/abenori/TeX2img/commits/master](https://github.com/abenori/TeX2img/commits/master)
+- [https://github.com/abenori/TeX2img/blob/master/TeX2img.txt](https://github.com/abenori/TeX2img/blob/master/TeX2img.txt)
+
+#### Mac 版 {#g1fc886b}
+
+- [http://island.geocities.jp/loveinequality/#history](http://island.geocities.jp/loveinequality/#history)
+
 ### 出力形式 {#n63a1aac}
 
 入力した TeX ソースコードを TeX でコンパイルして，次のような形式の画像で出力します．<br>
