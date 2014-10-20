@@ -19,7 +19,7 @@ OS X
 
 ### License {#qb66f01c}
 
-[Public Domain](https://github.com/tekezo/Karabiner/blob/master/COPYING)
+[Public Domain](https://github.com/tekezo/Karabiner/blob/master/LICENSE.md)
 
 ### ChangeLog {#i8edb00b}
 
