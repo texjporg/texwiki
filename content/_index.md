@@ -127,9 +127,11 @@ pukiwiki: "FrontPage"
     LuaJITTeX,
     [XeTeX](/XeTeX/),
     [pdfTeX](/pdfTeX/),
+    [pTeX-ng](/pTeX-ng/),
     [e-upTeX](/upTeX,upLaTeX/),
     [e-pTeX](/e-pTeX/),
     [e-TeX](/e-TeX/),
+    [TeX](/TeX/),
     [ConTeXt](/ConTeXt/)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>パッケージ</strong> </span>：
