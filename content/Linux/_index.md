@@ -226,7 +226,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
 
-#### Linux, (Windows) {#v89b4b6c}
+#### Linux, Windows {#v89b4b6c}
 
 - [Kile](/Kile/)
 - LaTeXila
@@ -236,7 +236,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 ## PDF ファイルビューア {#uf722ec6}
 
 - [Common Applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/Common_Applications/Documents)
-    <!-- -http://pdfreaders.org/ -->
+- [http://pdfreaders.org/](http://pdfreaders.org/)
     <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
 
 を参照．
