@@ -73,7 +73,7 @@ C:.
 OS X の TexitEasy で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．<br>
 poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．<br>
-poppler-data を配置する場所は
+poppler-data を配置する場所は strings と grep で調べることができます．
 
 ```
 $ strings -a /Applications/texiteasy.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
@@ -84,7 +84,6 @@ Unknown CID font collection, please report to poppler bugzilla.
 %Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
 ```
 
-で調べることができます．<br>
 この場合は /usr/local/share/poppler が poppler-data を配置するディレクトリになります．<br>
 コマンドラインから poppler-data を /usr/local/share/poppler に配置する場合は以下のように実行します．<br>
 
