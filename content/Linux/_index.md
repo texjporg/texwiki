@@ -226,7 +226,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
 
-#### Linux {#v89b4b6c}
+#### Linux, (Windows) {#v89b4b6c}
 
 - [Kile](/Kile/)
 - LaTeXila
