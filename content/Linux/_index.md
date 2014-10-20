@@ -205,6 +205,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
 
+#### Linux, Windows, OS X {#ef19350f}
+
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
@@ -223,6 +225,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+
+#### Linux {#v89b4b6c}
+
 - [Kile](/Kile/)
 - LaTeXila
 - [gedit](/gedit/)
