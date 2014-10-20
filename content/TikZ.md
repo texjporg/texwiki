@@ -922,6 +922,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [TikzEdt](http://www.tikzedt.org/)
+- [TikZ Editor](https://github.com/fredokun/TikZ-Editor)
+    - [TikZ Editor (Mac) で \\(backslash)が入力できない場合の対処法](http://yt-siden-memo.tumblr.com/post/96350093900/tikz-editor-mac-backslash)
 - [TikZiT](http://tikzit.sourceforge.net/)
 - [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
 - [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
