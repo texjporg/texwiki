@@ -50,8 +50,8 @@ OS X
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>処理に使用するプログラム</strong><br>
 　　　　　　　　　　　　　　　　　　　　　　　　構成： <span style="color:Black;background-color:#FAFAFA;"><ins>\[ デフォルト　　　　　　　　　　　 <strong>⇕</strong> \]</ins></span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#555555;"><span style="color:#555555;">\[</span>　<strong>コマンド</strong>　<span style="color:#555555;">\]</span></span><span style="color:Black;background-color:#EEEEEE;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
-　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span> latex+dvipdf<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>コマンド</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
+　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:White;background-color:#0F7FFF;">🔘</span> latex+dvipdf<br>
 
 　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
 　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
