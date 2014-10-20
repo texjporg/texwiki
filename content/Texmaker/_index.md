@@ -97,10 +97,9 @@ GPLv2
 > </table>
 >
 
-### 派生版・修正版 {#n8123b82}
+### 派生版 {#n8123b82}
 
 - [TeXstudio](/TeXstudio/)
-- [texmaker(Win)修正版](http://blogs.yahoo.co.jp/igproj_fusion/folder/566040.html)
 - [bidiTeXmaker3](https://bitbucket.org/srazi/biditexmaker3)
 
 ## ダウンロード/インストール {#q69dea61}
@@ -148,7 +147,7 @@ OS X では不具合が発生しないようです．<br>
 #### Windows の場合 {#z3a8b3e4}
 
 Windows の場合は Dark theme を選択することで回避できます．<br>
-Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
+Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
 
 ***
 
@@ -385,7 +384,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\Qt5.3.1\5.3.1\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.3.2\5.3.2\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) を使用する {#i1222dd8}
 
@@ -446,47 +445,6 @@ PDF ファイルのフォントの埋め込みについては
 - [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#z0e1001a>)
 
 を参照してください．
-
-### [Beamer ポスター入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/poster.html) のサンプルを [lualatex や pdflatex で -synctex=1 オプションを有効にした状態でクイックビルドを実行して組み込みビューアで PDF ファイルを表示しようとすると Texmaker が落ちる](http://blog.livedoor.jp/ti5942/archives/7423368.html) → -synctex=1 オプションをはずす {#b257516a}
-
-[Beamer ポスター入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/poster.html) のサンプルを [lualatex や pdflatex で -synctex=1 オプションを有効にした状態でクイックビルドを実行して組み込みビューアで PDF ファイルを表示しようとすると Texmaker が落ちる](http://blog.livedoor.jp/ti5942/archives/7423368.html)という不具合があります．<br>
-この不具合が発生する場合は -synctex=1 オプションをはずしてください．<br>
-
-***
-
-- texmaker.cpp
-
-***
-
-```
-void Texmaker::RunCommand(QString comd,bool waitendprocess)
-```
-
-メソッドの中の
-
-```
-if (builtinpdfview && (comd==viewpdf_command))
-  {
-    if (embedinternalpdf)
-      {
-      if (pdfviewerWidget)
-	{
-	pdfviewerWidget->openFile(outputName(finame,".pdf"),viewpdf_command,ghostscript_command);
-	StackedViewers->setCurrentWidget(pdfviewerWidget);
-	//pdfviewerWidget->raise();
-      	showpdfview=true;
-	ShowPdfView(false);
-	pdfviewerWidget->show();
-	if ( (pdflatex_command.contains("synctex=1")) || (latex_command.contains("synctex=1")) ) pdfviewerWidget->jumpToPdfFromSource(getName(),currentline);
-```
-
-の部分の
-
-```
-	if ( (pdflatex_command.contains("synctex=1")) || (latex_command.contains("synctex=1")) ) pdfviewerWidget->jumpToPdfFromSource(getName(),currentline);
-```
-
-で落ちているようです．
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#a258817b}
 
