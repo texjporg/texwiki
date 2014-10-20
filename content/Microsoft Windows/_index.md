@@ -27,6 +27,8 @@ Windows XP のサポートは終了しました．<br>
 - [サポート終了に関するよくあるご質問 | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/faq.aspx)
 - [Windows XP のサポートは終了しました - Microsoft Windows](http://windows.microsoft.com/ja-jp/windows/end-support-help)
 - [Windows XP - Microsoft Windows](http://www.microsoft.com/windows/ja-jp/xp/)
+- [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0)
+- [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0)
 
 ## TeX ディストリビューション {#vb660ba1}
 
