@@ -19,12 +19,12 @@ pukiwiki: "TeX"
 
 - [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
 - [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
-- [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 - [LuaTeX](/LuaTeX/)
 - LuaJITTeX
 - [XeTeX](/XeTeX/)
 - [pdfTeX](/pdfTeX/)
+- [pTeX-ng](/pTeX-ng/)
 - [e-upTeX](/upTeX,upLaTeX/)
 - [e-pTeX](/e-pTeX/)
 - [e-TeX](/e-TeX/)
@@ -58,3 +58,7 @@ pukiwiki: "TeX"
 - [TeX &amp; LaTeX Advent Calendar 2013](http://www.adventar.org/calendars/187)
 - [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
 - [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
+
+### 不具合 {#e730befe}
+
+- [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
