@@ -29,7 +29,6 @@ pukiwiki: "Mac"
 - [http://sourceforge.net/projects/mactextoolbox/](http://sourceforge.net/projects/mactextoolbox/)
 - [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
-- [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 - MacWiki:リスト/TeX
 - [MacTeXにおける実行ファイルの場所](http://d.hatena.ne.jp/seinzumtode/20141001/1412154972)
 
@@ -44,6 +43,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 ### OS X Yosemite 関連 {#lf4fc119}
 
 - [TeX on Yosemite](http://tug.org/mactex/yosemite.html)
+- [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 
 ### リリース情報 {#c5157a75}
 
@@ -328,8 +328,8 @@ MacTeX-2014 には以下のパッケージが収録されています．
     $ kpsewhich -var-value TEXMF
     ```
 
-- MacTeX/TeX Live 2013より，最上位の texmf/ は簡便化のため texmf-dist/ と統合されました。TEXMFMAIN も TEXMFDIST も共に texmf-dist/ を示します。
-- ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため、/usr/local/texlive 以下の設定よりも優先されます。また、mktexlsr（ls-Rの作成）は不要です。（実際，ターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。）
+- MacTeX/TeX Live 2013より，最上位の texmf/ は簡便化のため texmf-dist/ と統合されました。<br>TEXMFMAIN も TEXMFDIST も共に texmf-dist/ を示します。
+- ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため、/usr/local/texlive 以下の設定よりも優先されます。<br>また、mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
 > <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2014/texmf-config</td></tr>
@@ -427,6 +427,8 @@ $ sudo mktexlsr
 
 日本語環境を整備するには以下の作業をするとよいでしょう。<br>
 
+#### ヒラギノフォント {#d19a1537}
+
 - ヒラギノフォントを利用可能にする設定
     - [［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)では既に設定済みです。<br>
     - MacTeX インストールの初期設定のままでは、TeXでヒラギノフォントを用いることはできません。<br>
@@ -478,19 +480,36 @@ $ sudo mktexlsr
         $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
         ```
 
-    - IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので、上記の updmap-sys の設定だけですぐに pdf に埋め込めます。<br>
-        MSフォント、小塚、モリサワを利用する場合は、上のヒラギノと同様にシンボリックリンクを TEXMFLOCAL 以下にまずは作成する必要があります。<br>
-        - OS X の游明朝・游ゴシックフォントに関しては [游明朝体・游ゴシック体をMac OS XのLaTeXで使う](http://tandoori.hatenablog.com/entry/20131117/1384696037) を参考にしてください．<br>
-    - <strong>注意</strong> updmap-sys ではなく updmap を使用した場合は ユーザー個別の texmf（TEXMFHOME）に設定が書き込まれ、その個別設定の方が updmap-sys によるシステム全体の設定よりも優先されます。<br>
-        tlmgr は updmap-sys を内部で呼びだしますが、後述の kanji-config-updmap は -sys なしで使用すると updmap を内部で呼びだして実行します。<br>
-        <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は、-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
-    - updmap-sys は TEXMFLOCAL を検索対象とはしますが、TEXMFHOME は検索しませんので、フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [About Shell Escape and Installing Fonts in 2012, 2013 and 2014](http://tug.org/mactex/TeXLive2012+Changes.pdf) を参照)<br>
-        TEXMFHOME にフォントを置く場合は、updmap（-sys なし）を実行する必要があります。<br>
-        - 埋め込むフォントを細かく制御したい場合は、[OTF](/OTF/#gb0b4cc5)を参照して手動でmapファイルを書き換えます。
-        - [みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や、その他の日本語書体を埋め込みたい場合は、そのためのスタイルファイルを利用するのが便利でしょう。<br>
-            設定は、多少面倒です。<br>
-            [PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。<br>
-            自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。<br>
+#### IPAexフォント/IPAフォント {#x667dd85}
+
+IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので、updmap-sys の設定だけですぐに pdf に埋め込めます。<br>
+
+#### MS，小塚，モリサワフォント {#w0d23b74}
+
+MSフォント、小塚、モリサワを利用する場合は、上のヒラギノと同様にシンボリックリンクを TEXMFLOCAL 以下にまずは作成する必要があります。<br>
+
+#### 游明朝・游ゴシックフォント {#l68bf523}
+
+OS X の游明朝・游ゴシックフォントに関しては [游明朝体・游ゴシック体をMac OS XのLaTeXで使う](http://tandoori.hatenablog.com/entry/20131117/1384696037) を参考にしてください．<br>
+
+#### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
+
+[みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や、その他の日本語書体を埋め込みたい場合は、そのためのスタイルファイルを利用するのが便利でしょう。<br>
+設定は、多少面倒です。<br>
+[PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。<br>
+自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。<br>
+
+#### updmap(-sys) の使用に関する注意点 {#qdce07c2}
+
+- <strong>注意</strong> updmap-sys ではなく updmap を使用した場合は ユーザー個別の texmf（TEXMFHOME）に設定が書き込まれ、その個別設定の方が updmap-sys によるシステム全体の設定よりも優先されます。<br>
+    tlmgr は updmap-sys を内部で呼びだしますが、後述の kanji-config-updmap は -sys なしで使用すると updmap を内部で呼びだして実行します。<br>
+    <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は、-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
+
+- updmap-sys は TEXMFLOCAL を検索対象とはしますが、TEXMFHOME は検索しませんので、フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [About Shell Escape and Installing Fonts in 2012, 2013 and 2014](http://tug.org/mactex/TeXLive2012+Changes.pdf) を参照)<br>
+    TEXMFHOME にフォントを置く場合は、updmap（-sys なし）を実行する必要があります。<br>
+    - 埋め込むフォントを細かく制御したい場合は、[OTF](/OTF/#gb0b4cc5)を参照して手動でmapファイルを書き換えます。
+
+#### kanji-config-updmap(-sys) {#hf34afcc}
 
 - [kanji-config-updmap](https://gitorious.org/tlptexlive/jfontmaps/source/script/kanji-config-updmap.pl) を使用すれば PDFへの埋め込みフォントの指定、および埋め込み状況の確認ができます。<br>
     ターミナル上で実行します。<br>
