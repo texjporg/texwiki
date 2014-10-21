@@ -56,6 +56,7 @@ GPLv2
 ## 関連リンク {#g449c714}
 
 - [&quot;TeX2img&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/TeX2img)
+    - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/2014/10/22/011143)
     - [TeX2img (Windows/Mac) の動作の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/18/214403)
     - [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
     - [続報：TeX2imgのWindows版アップデート](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754): Windows 版 1.2.3 の詳細
