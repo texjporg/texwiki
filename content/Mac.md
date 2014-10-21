@@ -351,7 +351,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 <br>
 
 　　　　　　　　　　　　　　　　　　<strong>Choose a system wide TeX distribution:</strong><br>
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DDDDDD;"> <span style="color:White;background-color:#0F7FFF;">🔘</span>[^1]TeXLive-2014　　　　　　　　　　　　Intel 64　　　　<strong>⇕</strong></span><br>
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DDDDDD;">　<span style="color:White;background-color:#0F7FFF;">🔘</span>[^1] TeXLive-2014　　　　　　　　　　　　Intel 64　　　　<strong>⇕</strong></span><br>
 　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">　◯　　TeXLive-2013　　　　　　　　　　　　Intel 64　　　　<strong>⇕</strong></span><br>
 
 <br>
