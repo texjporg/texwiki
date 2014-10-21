@@ -44,8 +44,6 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 [Releases](http://www.gnu.org/software/emacs/#Releases) を参照．<br>
 
-- [WHAT’S NEW IN EMACS 24.4](http://www.masteringemacs.org/articles/2013/12/29/whats-new-in-emacs-24-4/)
-
 #### ChangeLog {#eba94bf5}
 
 - [Browsing /emacs - Savannah Bazaar repositories](http://bzr.savannah.gnu.org/lh/emacs/)
@@ -65,38 +63,29 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 #### Windows {#k091604e}
 
-- [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
-- [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
-- [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)
-- [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861)
-- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
-- [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
-- [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
-    - [http://sourceforge.jp/projects/gnupack/releases/46675/](http://sourceforge.jp/projects/gnupack/releases/46675/)
-    - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
-    - [gnupack Users Guide](http://gnupack.sourceforge.jp/docs/current/UsersGuide.html)
-    - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
-    - [ビルド記録](http://gnupack.sourceforge.jp/docs/current/UsersGuide_build_procedure.html#_emacs)
-    - [http://jaist.dl.sourceforge.jp/gnupack/](http://jaist.dl.sourceforge.jp/gnupack/)
-- [Emacs for Windows Modified](http://vgoulet.act.ulaval.ca/en/emacs/windows/)
+- 64-bit binary
+    - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
+    - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
+    - [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)
+- 32-bit binary
+    - [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861)
+    - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
+    - [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
+    - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
+        - [http://sourceforge.jp/projects/gnupack/releases/46675/](http://sourceforge.jp/projects/gnupack/releases/46675/)
+        - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
+        - [gnupack Users Guide](http://gnupack.sourceforge.jp/docs/current/UsersGuide.html)
+        - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
+        - [ビルド記録](http://gnupack.sourceforge.jp/docs/current/UsersGuide_build_procedure.html#_emacs)
+        - [http://jaist.dl.sourceforge.jp/gnupack/](http://jaist.dl.sourceforge.jp/gnupack/)
 
 #### OS X {#v2ece0ad}
 
 - [MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
-        - [Mac OS X での Emacs (2)](http://skalldan.wordpress.com/2011/08/05/mac-os-x-%E3%81%A7%E3%81%AE-emacs-2/)
-        - [Emacs Mac port を使う](http://kouzuka.blogspot.com/2011/03/emacs-mac-port.html)
 - [Emacs For Mac OS X](http://www.emacsformacosx.com/)
     - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://www.emacsformacosx.com/builds)
-- [Emacs for OS X Modified](http://vgoulet.act.ulaval.ca/en/emacs/mac/)
-
-#### Windows, OS X, Linux {#l1a2cc42}
-
-- [XEmacs: The next generation of Emacs](http://www.xemacs.org/)
-    - [xemacs &mdash; Bitbucket](https://bitbucket.org/xemacs/)
-        - [コミットログ](https://bitbucket.org/xemacs/xemacs/changesets)
-- [ErgoEmacs](http://ergoemacs.org/)
 
 <!-- ***Android [#meb27277] -->
 
@@ -118,7 +107,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [TeX mode](</Emacs/TeX mode/>) Emacs 標準の TeX mode
 - [YASnippet](/YASnippet/) スニペットプラグイン
 - [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer) magical syntax highlighting for LaTeX-mode buffers.
-- [AUCTeX](/AUCTeX/) GNU Emacs や XEmacs で TeX ファイルを編集するための拡張パッケージ
+- [AUCTeX](/AUCTeX/) GNU Emacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/) Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
     - [EmacsWiki:LaTeXMathPreview](http://www.emacswiki.org/emacs/LaTeXMathPreview)
