@@ -71,7 +71,9 @@ pukiwiki: "FrontPage"
         [Vim-LaTeX](/Vim-LaTeX/),
         ATP),
         [Atom](/Atom/),
-        [Brackets](/Brackets/)
+        [Brackets](/Brackets/),
+        [gedit](/gedit/),
+        [Geany](/Geany/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
         [TeXnicCenter](/TeXnicCenter/),
         [Notepad++](/Notepad++/)
@@ -86,9 +88,7 @@ pukiwiki: "FrontPage"
         [CotEditor](/CotEditor/)
     - <span style="color:White;background-color:#00A497;"> <strong>Linux</strong> </span>：
         [Kile](/Kile/),
-        LaTeXila,
-        [gedit](/gedit/),
-        [Geany](/Geany/)
+        LaTeXila
     - <span style="color:White;background-color:#00A497;"> <strong>Web</strong> </span>：
         [TeXをWebで](</TeXをWebで/>)
 
