@@ -13,7 +13,7 @@ pukiwiki: "pTeX-ng"
 
 ### pTeX-ng とは {#bdeeaf1c}
 
-pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系です．<br>
+pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指したプロジェクトです．<br>
 pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力しません．<br>
 
 - [https://github.com/clerkma/ptex-ng](https://github.com/clerkma/ptex-ng)
