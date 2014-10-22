@@ -84,8 +84,8 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
-- [Emacs For Mac OS X](http://www.emacsformacosx.com/)
-    - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://www.emacsformacosx.com/builds)
+- [Emacs For Mac OS X](http://emacsformacosx.com/)
+    - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://emacsformacosx.com/builds)
 
 <!-- ***Android [#meb27277] -->
 
