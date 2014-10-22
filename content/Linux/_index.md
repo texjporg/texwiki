@@ -225,13 +225,13 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+- [gedit](/gedit/)
+- [Geany](/Geany/)
 
-#### Linux, Windows {#v89b4b6c}
+#### Linux {#v89b4b6c}
 
 - [Kile](/Kile/)
 - LaTeXila
-- [gedit](/gedit/)
-- [Geany](/Geany/)
 
 ## PDF ファイルビューア {#uf722ec6}
 
