@@ -780,6 +780,8 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+- [gedit](/gedit/)
+- [Geany](/Geany/)
 
 #### OS X {#be65e2ea}
 
