@@ -189,7 +189,7 @@ TeX Live のインストールに関しては
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　カスタマイズ　 \]</ins></span><span style="color:black;background-color:yellow;"> ← \[カスタマイズ\] をクリック</span>　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　インストール　 \]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#0F7FFF;"><ins><span style="color:#0F7FFF;">\[</span> 　カスタマイズ　 <span style="color:#0F7FFF;">\]</span></ins></span><span style="color:black;background-color:yellow;"> ← \[カスタマイズ\] をクリック</span>　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　インストール　 \]</ins></span><br>
 
 ***
 
@@ -241,7 +241,7 @@ Homebrew または MacPorts で Ghostscript をインストールする場合は
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　標準インストール　 \]</ins></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　インストール　 \]</ins></span><span style="color:black;background-color:yellow;"> ← インストールするパッケージを選択して \[インストール\] をクリック</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　標準インストール　 \]</ins></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:White;background-color:#0F7FFF;"><ins><span style="color:#0F7FFF;">\[</span> 　インストール　 <span style="color:#0F7FFF;">\]</span></ins></span><span style="color:black;background-color:yellow;"> ← インストールするパッケージを選択して \[インストール\] をクリック</span><br>
 
 ***
 
