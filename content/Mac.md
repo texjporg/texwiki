@@ -708,6 +708,9 @@ $ sudo port install texlive-lang-japanese texlive
 
 #### インストールのやり方などの事例 {#o82ead82}
 
+[SphinxでLatex拡張を使ってPDF出力する](http://qiita.com/H-A-L/items/8222d894daf1552cef67)
+: 2014-10-03
+
 [LaTeXをmacportsを使ってインストール](http://regry358.hatenablog.com/entry/2014/06/02/155405)
 : 2014-06-02
 
