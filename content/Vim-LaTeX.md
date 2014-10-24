@@ -240,7 +240,8 @@ let g:Tex_CompileRule_dvi = '/usr/texbin/uplatex -synctex=1 -interaction=nonstop
 let g:Tex_BibtexFlavor = '/usr/texbin/upbibtex'
 let g:Tex_MakeIndexFlavor = '/usr/texbin/mendex -U $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
+let g:Tex_ViewRule_pdf = 'Skim'
+"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
 "let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXShop.app'
 "let g:Tex_ViewRule_pdf = '/Applications/TeXworks.app/Contents/MacOS/TeXworks'
@@ -285,13 +286,13 @@ Skim で forward search をする場合は
 let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
 ```
 
-を
+ではなく
 
 ```
 let g:Tex_ViewRule_pdf = 'Skim'
 ```
 
-に修正しないと動作しないようです．<br>
+にしないと正しく動作しないようです．<br>
 参考：[Mac のvim-latexでForward Searchをする方法](http://inaka-boyaki.hatenablog.com/entry/2014/10/24/010145)
 
 ### Linux {#f59a6b76}
