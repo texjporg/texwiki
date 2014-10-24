@@ -269,14 +269,30 @@ set imdisable を設定すると問題が発生する場合は set imdisable を
 
 ***
 
-bibtexを使うなど，複数回のコンパイルが必要な場合は，「g:Tex_MultipleCompileFormats」オプションを設定する必要があります．例えば，pdfでbibtexを使う場合は，
+bibtexを使うなど，複数回のコンパイルが必要な場合は，「g:Tex_MultipleCompileFormats」オプションを設定する必要があります．<br>
+例えば，pdfでbibtexを使う場合は，
 
 ```
 let g:Tex_MultipleCompileFormats = 'pdf'
 ```
 
-という設定を書き加えます．
+という設定を書き加えます．<br>
 参考：[http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho](http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho)
+
+Skim で forward search をする場合は
+
+```
+let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
+```
+
+を
+
+```
+let g:Tex_ViewRule_pdf = 'Skim'
+```
+
+に修正しないと動作しないようです．<br>
+参考：[Mac のvim-latexでForward Searchをする方法](http://inaka-boyaki.hatenablog.com/entry/2014/10/24/010145)
 
 ### Linux {#f59a6b76}
 
