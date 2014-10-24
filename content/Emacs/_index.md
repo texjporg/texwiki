@@ -65,6 +65,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 - 64-bit binary
     - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
+        - [http://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](http://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
     - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
     - [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)
     - [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
