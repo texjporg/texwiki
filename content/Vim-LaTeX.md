@@ -650,7 +650,7 @@ $HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連�
 
 ### SumatraPDF を前面に表示したい場合 {#r8a125e8}
 
-[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=blob;f=ftplugin/latex-suite/compiler.vim) を修正します．
+[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/ftplugin/latex-suite/compiler.vim) を修正します．
 
 ***
 
@@ -683,7 +683,7 @@ function! Tex_ForwardSearchLaTeX()
 
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://vim-latex.git.sourceforge.net/git/gitweb.cgi?p=vim-latex/vim-latex;a=blob;f=ftplugin/latex-suite/compiler.vim) を修正します．
+[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/ftplugin/latex-suite/compiler.vim) を修正します．
 
 ***
 
