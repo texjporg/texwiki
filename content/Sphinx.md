@@ -76,7 +76,7 @@ make html
 
 ## Sphinx → LaTeX → PDF {#wb4c36d7}
 
-[TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) をインストールします．<br>
+[TeX Live](</TeX Live/>) をインストールします．<br>
 
 LaTeX 経由で PDF ファイルを作成する場合は<br>
 
@@ -93,8 +93,11 @@ make latexpdfja
 
 を実行します．<br>
 
+- [LaTeX documentation example for SphinxCon JP 2014](https://github.com/jj1bdx/sphinxconjp2014-examples)
+    - [Sphinxcon JP 2014 presentation: SphinxとLaTeXで作る英文マニュアル](http://sssslide.com/speakerdeck.com/jj1bdx/sphinxcon-jp-2014-presentation-sphinxtolatexdezuo-ruying-wen-maniyuaru)
 - [menes-pdf](http://menes-pdf.info/)
     - [SphinxをPDFにするwebサービス](http://www.python.jp/pipermail/sphinx-users/2014-June/000984.html)
+- [SphinxでLatex拡張を使ってPDF出力する](http://qiita.com/H-A-L/items/8222d894daf1552cef67)
 - [https://bitbucket.org/keik/sphinx-lualatex](https://bitbucket.org/keik/sphinx-lualatex)
 - [SphinxのLaTeXのフォーマットをいじる](http://gadget-mac.undo.jp/blog/2014/06/sphinx%E3%81%AElatex%E3%81%AE%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%82%92%E3%81%84%E3%81%98%E3%82%8B)
 - [WindowsでSphinxからPDFファイルを作成する](http://hidemium.hatenablog.com/entry/2014/05/28/070000)
