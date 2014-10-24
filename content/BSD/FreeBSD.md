@@ -202,21 +202,20 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 
 ### TeX Live/FreeBSD {#p4fe1144}
 
-- [freebsd-texlive](https://code.google.com/p/freebsd-texlive/)
-    - [print/texlive-core](https://code.google.com/p/freebsd-texlive/source/browse/trunk/print/texlive-core/)
-    - [print/texlive-collection-langjapanese](https://code.google.com/p/freebsd-texlive/source/browse/branches/releng/print/texlive-collection-langjapanese/)
-- [print/texlive-tlptexlive](https://github.com/HirotoKagotani/freebsd-texlive-tlptexlive)
+- [http://www.freshports.org/print/texlive-full/](http://www.freshports.org/print/texlive-full/)
+- [FreeBSD における TeXLive の導入](http://homepage3.nifty.com/maikaze/texlive1.html)
 - [FreeBSDへのTeXliveインストール](http://sphinx-users.jp/cookbook/pdf/latex-install-freebsd.html)
-- [「texlive」の検索結果 - msllの日記](http://d.hatena.ne.jp/msll/searchdiary?word=texlive)
 - [FreeBSD のports TeXLive &amp; evince : 日本語フォントの設定 fonts.conf](http://blog.goo.ne.jp/koyusoma5102/e/4936476b9a197dda36799498a4bfd5c9)
 - \[[FreeBSD\]texlive](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20140726#p02)
 
 ## その他関連Ports {#k9078aba}
 
 Portsですので，
-make &amp;&amp; make installで導入できます．
+make &amp;&amp; make installで導入できます．<br>
 
-（TeXlive と共存しないものが存在する場合は Makefile 中の変数 USE_TEX の中身を確認してください．USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．）
+TeXlive と共存しないものが存在する場合は Makefile 中の変数 USE_TEX の中身を確認してください．<br>
+USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．<br>
+なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．<br>
 
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
