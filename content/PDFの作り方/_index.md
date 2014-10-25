@@ -44,18 +44,18 @@ pukiwiki: "PDFの作り方"
 [Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，LuaJITTeX, [xdvipdfmx](/dvipdfmx/)
 ([XeTeX](/XeTeX/)) の他に，次のソフトがあります。
 
-- 無償，フリーウェア，オープンソース
-    - OS X ならプリント機能を持ったどんなアプリケーションからも PDF 出力できます。
+- フリーソフトウェア，オープンソース
     - [LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) は PDF 出力機能を持っています
+    - [PDFCreator](http://www.pdfforge.org/) (オープンソース)
+        - [PDFCreator 日本語対応版](http://super777.o.oo7.jp/page004.html)
+    - [qvPDF](http://sourceforge.net/projects/qvpdf/) (オープンソース)
+    - [CubePDF](http://www.cube-soft.jp/cubepdf/) ([オープンソース](https://github.com/cube-soft/cubepdf))
+        - IE 用ツールバーの [Cubeツールバー](http://www.cube-soft.jp/cubetoolbar/) と [Baidu IME](http://ime.baidu.jp/) も含まれているようです．
+- フリーウェア (無償)
     - [Google Drive](https://drive.google.com/)
         は PDF 形式で保存できます
     - [Zoho Docs](http://www.zoho.jp/docs/)
         は PDF 形式で保存できます
-    - [PDFCreator](http://www.pdfforge.org/) (オープンソース)
-        - [PDFCreator 日本語対応版](http://super777.o.oo7.jp/page004.html)
-    - [CubePDF](http://www.cube-soft.jp/cubepdf/) ([オープンソース](https://github.com/cube-soft/cubepdf))
-        - IE 用ツールバーの [Cubeツールバー](http://www.cube-soft.jp/cubetoolbar/) と [Baidu IME](http://ime.baidu.jp/) も含まれているようです．
-    - [qvPDF](http://sourceforge.net/projects/qvpdf/) (オープンソース)
     - [Foxit Reader](http://www.foxitsoftware.com/) (Free)
     - [PDF Download](http://www.pdfdownload.org/) (Free)
         - Web ページを PDF に変換することができる
@@ -83,6 +83,7 @@ pukiwiki: "PDFの作り方"
         - [RedMon による PDF 作成](</PDFの作り方/#mbf7209f>)
 
 - 有償，商用，シェアウェア
+    - OS X ならプリント機能を持ったどんなアプリケーションからも PDF 出力できます。
     - [Adobe Acrobat](http://www.adobe.com/jp/products/acrobat.html)
         ([Adobe Systems](http://www.adobe.com/jp/))
     - [Microsoft Office](</Microsoft Office/>)
@@ -98,7 +99,7 @@ pukiwiki: "PDFの作り方"
     - [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
     - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
     - [pdfFactory](http://www.nsd.co.jp/fineprint/pdf.html) と [FinePrint](http://www.nsd.co.jp/fineprint/) ([NSD](http://www.nsd.co.jp/))
-    - [gDoc Creator](http://www.gdoc.com/creator/) ([Global Graphics Software](http://www.globalgraphics.com/))
+    - [gDoc Creator](http://www.gdoc.com/showcase/creator/) ([Global Graphics Software](http://www.globalgraphics.com/))
     - [Expert PDF Creator](http://www.visagesoft.com/)
     - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp)
 
@@ -111,7 +112,7 @@ pukiwiki: "PDFの作り方"
     - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり、結合したり、回転したりできる
     - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
     - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する　（名前も同じですが下記とは別物）
-    - [PDFCROP](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
+    - [pdfcrop](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
         - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
     - [QPDF](http://qpdf.sourceforge.net/) Web表示用に最適化したり，暗号化したりできる．[W32TeX](/W32TeX/) に含まれています．
     - [pdfsizeopt](https://code.google.com/p/pdfsizeopt/) PDF file size optimizer
