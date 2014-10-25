@@ -231,7 +231,7 @@ pukiwiki: "FrontPage"
         D,
         Go,
         Rust,
-        Nimrod,
+        Nim,
         Pascal,
         Fortran,
         Haskell,
