@@ -76,9 +76,7 @@ M-x list-packages RET でリストを表示して auctex を選択
 ### Windows {#w81a725c}
 
 64-bit Windows の場合は<br>
-[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)<br>
-32-bit Windows の場合は<br>
-[EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)<br>
+[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64)<br> <!-- 32-bit Windows の場合は~ --> <!-- [[EmacsのMinGWビルド:http://www.rainyman.net/nest/?p=861]] または [[NTEmacs:http://cha.la.coocan.jp/doc/NTEmacs.html]] または [[emacs for gnupack:http://sourceforge.jp/projects/gnupack/]]~ -->
 をインストールします．<br>
 
 Emacs を起動して
