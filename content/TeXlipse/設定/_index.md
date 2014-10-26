@@ -141,7 +141,7 @@ pukiwiki: "TeXlipse/設定"
 
 ***
 
-[http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/](http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/) などから辞書をダウンロードします． <!-- http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texlipse/dictionaries/ などから辞書をダウンロードします． -->
+[http://sourceforge.net/projects/texlipse/files/dictionaries/](http://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします． <!-- http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/ などから辞書をダウンロードします． --> <!-- http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texlipse/dictionaries/ などから辞書をダウンロードします． -->
 
 辞書ファイルを展開します．
 
