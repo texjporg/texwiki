@@ -63,10 +63,6 @@ pip install Sphinx
 
 - [Python 和訳ドキュメント](http://docs.python.jp/)
 
-### [python-doc-ja - Pythonドキュメント日本語翻訳プロジェクト](https://code.google.com/p/python-doc-ja/) {#wb6e2415}
-
-- [LaTeX のビルド手順](https://code.google.com/p/python-doc-ja/wiki/LaTeXBuild)
-
 ## Sphinx → HTML {#xba45212}
 
 HTML ファイルを作成する場合は<br>
