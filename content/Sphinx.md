@@ -28,6 +28,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 ### ChangeLog {#b34742d0}
 
 - [http://sphinx-doc.org/latest/changes.html](http://sphinx-doc.org/latest/changes.html)
+- [http://docs.sphinx-users.jp/latest/changes.html](http://docs.sphinx-users.jp/latest/changes.html)
 - [https://bitbucket.org/birkenfeld/sphinx/](https://bitbucket.org/birkenfeld/sphinx/)
     - [https://bitbucket.org/birkenfeld/sphinx/commits/](https://bitbucket.org/birkenfeld/sphinx/commits/)
 
@@ -39,6 +40,8 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
     - [Windowsへのインストール](http://sphinx-users.jp/gettingstarted/install_windows.html)
     - [Windowsへのインストール(スタンドアロンインストール)](http://sphinx-users.jp/gettingstarted/install_windows_standalone.html)
     - [Mac OS X, Linuxへのインストール](http://sphinx-users.jp/gettingstarted/install_unix.html)
+- [http://docs.sphinx-users.jp/latest/](http://docs.sphinx-users.jp/latest/)
+    - [http://docs.sphinx-users.jp/latest/contents.html](http://docs.sphinx-users.jp/latest/contents.html)
 - [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/)
 - [Sphinx-users 保存書庫](http://www.python.jp/pipermail/sphinx-users/)
 
