@@ -332,6 +332,7 @@ Source editor:
 ## 設定に関するリンク {#pd1c5cfc}
 
 - [Emacsに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/Emacs)
+- [eval-after-load設定すべきもの, hookで設定すべきもの](http://d.hatena.ne.jp/syohex/20141004/1412385064)
 
 ### Windows {#a1ddfe8b}
 
