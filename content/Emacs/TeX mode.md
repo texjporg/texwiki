@@ -41,7 +41,7 @@ TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力�
 ### Windows {#m2df1dd4}
 
 64-bit Windows の場合は<br>
-[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)<br>
+[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64)<br>
 32-bit Windows の場合は<br>
 [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)<br>
 をインストールします．<br>
