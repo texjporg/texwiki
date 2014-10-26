@@ -123,24 +123,23 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(eval-after-load "tex-jp"
-  '(progn
-     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                        "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                        "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                        "euptex")))
-     (setq japanese-TeX-engine-default 'pdfuptex)
-     ;(setq japanese-TeX-engine-default 'luatex)
-     ;(setq japanese-TeX-engine-default 'xetex)
-     (setq TeX-view-program-list '(("SumatraPDF"
-                                    "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
-     (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
-                                        (output-pdf "SumatraPDF")))
-     (setq japanese-LaTeX-default-style "jsarticle")
-     ;(setq japanese-LaTeX-default-style "ltjsarticle")
-     ;(setq japanese-LaTeX-default-style "bxjsarticle")
-     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
-       (delq (assoc command TeX-command-list) TeX-command-list))))
+(with-eval-after-load "tex-jp"
+  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                     "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                     "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
+                                     "euptex")))
+  (setq japanese-TeX-engine-default 'pdfuptex)
+  ;(setq japanese-TeX-engine-default 'luatex)
+  ;(setq japanese-TeX-engine-default 'xetex)
+  (setq TeX-view-program-list '(("SumatraPDF"
+                                 "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
+  (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
+                                     (output-pdf "SumatraPDF")))
+  (setq japanese-LaTeX-default-style "jsarticle")
+  ;(setq japanese-LaTeX-default-style "ltjsarticle")
+  ;(setq japanese-LaTeX-default-style "bxjsarticle")
+  (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+    (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -289,24 +288,23 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 ;;
 ;; AUCTeX
 ;;
-(eval-after-load "tex-jp"
-  '(progn
-     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                        "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
-                                        "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
-                                        "euptex")))
-     (setq japanese-TeX-engine-default 'pdfuptex)
-     ;(setq japanese-TeX-engine-default 'luatex)
-     ;(setq japanese-TeX-engine-default 'xetex)
-     (setq TeX-view-program-selection '((output-dvi "displayline")
-                                        (output-pdf "displayline")))
-     ;(setq TeX-view-program-selection '((output-dvi "Skim")
-     ;                                   (output-pdf "Skim")))
-     (setq japanese-LaTeX-default-style "jsarticle")
-     ;(setq japanese-LaTeX-default-style "ltjsarticle")
-     ;(setq japanese-LaTeX-default-style "bxjsarticle")
-     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
-       (delq (assoc command TeX-command-list) TeX-command-list))))
+(with-eval-after-load "tex-jp"
+  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                     "/usr/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
+                                     "/usr/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
+                                     "euptex")))
+  (setq japanese-TeX-engine-default 'pdfuptex)
+  ;(setq japanese-TeX-engine-default 'luatex)
+  ;(setq japanese-TeX-engine-default 'xetex)
+  (setq TeX-view-program-selection '((output-dvi "displayline")
+                                     (output-pdf "displayline")))
+  ;(setq TeX-view-program-selection '((output-dvi "Skim")
+  ;                                   (output-pdf "Skim")))
+  (setq japanese-LaTeX-default-style "jsarticle")
+  ;(setq japanese-LaTeX-default-style "ltjsarticle")
+  ;(setq japanese-LaTeX-default-style "bxjsarticle")
+  (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+    (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -470,24 +468,23 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
-(eval-after-load "tex-jp"
-  '(progn
-     (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                        "ptex2pdf -u -e -ot '%S %(mode)'"
-                                        "ptex2pdf -u -l -ot '%S %(mode)'"
-                                        "euptex")))
-     (setq japanese-TeX-engine-default 'pdfuptex)
-     ;(setq japanese-TeX-engine-default 'luatex)
-     ;(setq japanese-TeX-engine-default 'xetex)
-     (setq TeX-view-program-selection '((output-dvi "Evince")
-                                        (output-pdf "Evince")))
-     ;(setq TeX-view-program-selection '((output-dvi "Okular")
-     ;                                   (output-pdf "Okular")))
-     (setq japanese-LaTeX-default-style "jsarticle")
-     ;(setq japanese-LaTeX-default-style "ltjsarticle")
-     ;(setq japanese-LaTeX-default-style "bxjsarticle")
-     (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
-       (delq (assoc command TeX-command-list) TeX-command-list))))
+(with-eval-after-load "tex-jp"
+  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
+                                     "ptex2pdf -u -e -ot '%S %(mode)'"
+                                     "ptex2pdf -u -l -ot '%S %(mode)'"
+                                     "euptex")))
+  (setq japanese-TeX-engine-default 'pdfuptex)
+  ;(setq japanese-TeX-engine-default 'luatex)
+  ;(setq japanese-TeX-engine-default 'xetex)
+  (setq TeX-view-program-selection '((output-dvi "Evince")
+                                     (output-pdf "Evince")))
+  ;(setq TeX-view-program-selection '((output-dvi "Okular")
+  ;                                   (output-pdf "Okular")))
+  (setq japanese-LaTeX-default-style "jsarticle")
+  ;(setq japanese-LaTeX-default-style "ltjsarticle")
+  ;(setq japanese-LaTeX-default-style "bxjsarticle")
+  (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
+    (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
