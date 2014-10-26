@@ -38,10 +38,6 @@ pukiwiki: "Java"
 Java で書かれたアプリケーションを使用する場合は JRE をインストールします．<br>
 Java でプログラミングをしたい人は JDK をインストールします．<br>
 
-- [Java Portable](http://sourceforge.net/projects/portableapps/files/Java%20Portable/Additional%20Versions/)
-
-もあります．
-
 ### ライブラリ {#t5f9c39b}
 
 - [Java Native Access (JNA)](https://github.com/twall/jna)
