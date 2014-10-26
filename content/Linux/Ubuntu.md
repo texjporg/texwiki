@@ -9,7 +9,7 @@ pukiwiki: "Linux/Ubuntu"
 
 [Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
 
-## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](https://ubuntu-mate.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](https://ubuntu-mate.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) → 高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) を選択する {#m38e62cf}
 
 <div style="text-align:center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right"></div>
 
@@ -122,7 +122,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Ubuntu 14.10 以降で日本語関連のパッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive xzdec
