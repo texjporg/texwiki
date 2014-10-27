@@ -29,7 +29,7 @@ YaTeX（野鳥）は Emacs の TeX モードです．
 
 [yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．<br>
 
-Emacs 24.3 を使用している場合は YaTeX 1.77 以降を使用してください．<br>
+Emacs 24.3 以降を使用している場合は YaTeX 1.77 以降を使用してください．<br>
 
 ### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
 
