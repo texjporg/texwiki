@@ -110,6 +110,7 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 
 #### 設定 {#g637a7d7}
 
+Emacs 24.4 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
@@ -278,6 +279,7 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 #### 設定 {#n55816de}
 
 動作未確認です．<br>
+Emacs 24.4 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 
 ***
@@ -457,6 +459,7 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 
 #### 設定 {#p2d711b9}
 
+Emacs 24.4 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
