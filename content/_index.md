@@ -142,7 +142,7 @@ pukiwiki: "FrontPage"
     [BXjscls](/BXjscls/),
     [jsclasses](/jsclasses/),
     [KOMA-Script](/KOMA-Script/),
-    [TikZ &amp; PGF](/TikZ/),
+    [TikZ/PGF](/TikZ/),
     [Beamer](/Beamer/),
     [media9](/media9/),
     [Biblatex](/Biblatex/),
