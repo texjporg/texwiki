@@ -104,7 +104,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 ## Beamer 関連パッケージ {#k4220bf5}
 
-### [TikZ &amp; PGF](/TikZ/) {#o6f8726a}
+### [TikZ/PGF](/TikZ/) {#o6f8726a}
 
 - [TikZ - TeX Wiki](/TikZ/)
 - [latex-beamerと日本語とdvipdfmxでtikzを使う](http://slashdot.jp/~ujimushi/journal/526101)
