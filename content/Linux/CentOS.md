@@ -63,10 +63,17 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 - [Linux](/Linux/#texliveinstall)
 - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
-    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-6](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-6)
+    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
         <!-- -[http://optipessimist.blog108.fc2.com/blog-entry-404.html CentOS6.5での文書作成環境構築（備忘録）] -->
         <!-- -[http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4 TeX Live 2013 on Scientific Linux 6.4] -->
         <!-- -[http://kousei42.s246.xrea.com/wiki/index.cgi?page=%23014%2ELyX #014.LyX - kosewiki] -->
+
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．<br>
+texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存するパッケージが TeX Live/RHEL/CentOS/SL をインストールするのを防止できます．<br>
+
+```
+$ sudo rpm -ivh http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
+```
 
 ### TeX Live/RHEL/CentOS/SL → TeX Live 公式パッケージを使用する {#w0c3dfae}
 
