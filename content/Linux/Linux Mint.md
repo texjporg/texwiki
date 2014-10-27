@@ -99,7 +99,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Linux Mint 18 以降で日本語関連のパッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive パッケージをインストールする場合は Linux Mint 18 以降にアップグレードして
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive xzdec
