@@ -68,7 +68,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-Debian sid, jessie で日本語関連のパッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive パッケージをインストールする場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive xzdec
