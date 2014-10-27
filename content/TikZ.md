@@ -7,7 +7,7 @@ pukiwiki: "TikZ"
 
 # TikZ
 
-## [TikZ &amp; PGF](http://pgf.sourceforge.net/) {#w315bc8f}
+## [TikZ/PGF](http://pgf.sourceforge.net/) {#w315bc8f}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -19,12 +19,12 @@ Beamer が基礎としている描画エンジンもPGFです。<br>
 
 また、R や gnuplot と連携させて描画させることもできます。<br>
 
-PGF/TikZ が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）<br>
-PGF/TikZ 自身が持っているライブラリで機能が拡充されるほか、PGF/TikZ を利用し、拡張するパッケージも数多く作られています。<br>
-PGF/TikZ を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。<br>
+TikZ/PGF が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）<br>
+TikZ/PGF 自身が持っているライブラリで機能が拡充されるほか、TikZ/PGF を利用し、拡張するパッケージも数多く作られています。<br>
+TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。<br>
 同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは、PostScript (PS) を経由せずに PDF を作成できる点です。<br>
 
-PGF/TikZ は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
+TikZ/PGF は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
 
 - [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
 - [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/)
@@ -77,12 +77,12 @@ graphicx を使用しない場合は、以下のいずれかを tikz（または
 
 ### マニュアルについて {#x910ebfe}
 
-PGF/TikZには
+TikZ/PGF には
 
 - 1165ページの長大なマニュアル (ver 3.0.0 の場合)
 
 が付属しています．<br>
-PGF/TikZ のマニュアルはコマンドラインから
+TikZ/PGF のマニュアルはコマンドラインから
 
 ```
 texdoc tikz
@@ -172,11 +172,11 @@ texdoc tikz
             \scalebox{横の倍率}[縦の倍率]{\begin{tikzpicture}...\end{tikzpicture} }  
             ```
 
-### PGF/TikZの拡張 {#i2fd58ae}
+### TikZ/PGF の拡張 {#i2fd58ae}
 
 #### ライブラリの読み込み {#p4b035b0}
 
-PGF/TIkZ は初期設定の段階でも高い描画力がありますが、付属のライブラリを読み込むことでさらに多彩な表現力を得ます。<br>
+TikZ/PGF は初期設定の段階でも高い描画力がありますが、付属のライブラリを読み込むことでさらに多彩な表現力を得ます。<br>
 ライブラリには、たとえば背景パターンを塗る patterns、交点を求める intersections、座標計算をする calc、矢印の種類を増やす arrows、パスを飾る decorations、角度記号を描く angles などがあります。<br>
 ライブラリを用いるときは、tikzパッケージを読み込んだ後で<br>
 
@@ -192,7 +192,7 @@ pgfパッケージは内部で[xcolor](http://www.ring.gr.jp/pub/text/CTAN/help/
 
 red、green、blue、cyan、magenta、yellow、black、gray、white、darkgray、lightgray、brown、lime、olive、orange、pink、purple、teal、violet
 
-PGF/TikZでの色指定は基本的にxcolorの形式を踏襲しますので、色指定の際に複数の色をブレンドしたものを使用することができます。<br>
+TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので、色指定の際に複数の色をブレンドしたものを使用することができます。<br>
 たとえば、red!30!gray は「30%の red＋70%の gray」の意味します。<br>
 単に red!30 とした場合は、white とのブレンドと解釈されます。<br>
 3色以上のブレンドも可能です。<br>
@@ -937,7 +937,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ## 関連リンク {#rdbc5335}
 
-### PGF/TikZを利用・拡張するもの {#e2a3bdfe}
+### TikZ/PGF を利用・拡張するもの {#e2a3bdfe}
 
 - [Beamer](/Beamer/)
 - [PGFPlots](http://pgfplots.sourceforge.net/)
@@ -949,7 +949,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [% -\*- coding: utf-8 -\*- % Only for XeLaTeX. % need to install tikz-dependency pa - Pastebin.com](http://pastebin.com/2RTcBAA3)
 - [tkz-euclide](http://altermundus.fr/pages/euclide.html)
 - [Altermundus.com](http://altermundus.com/index.html)
-    - PGF/TikZをベースにしたtkz-base、tkz-euclideパッケージなどの紹介
+    - TikZ/PGF をベースにしたtkz-base、tkz-euclideパッケージなどの紹介
 - [tikzDevice: A Device for R Graphics Output in PGF/TikZ Format](http://cran.r-project.org/web/packages/tikzDevice/index.html)
     - マニュアルは[こちら](http://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf)
 
