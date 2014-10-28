@@ -112,7 +112,7 @@ pukiwiki: "PDFの作り方"
     - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり、結合したり、回転したりできる
     - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
     - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する　（名前も同じですが下記とは別物）
-    - [pdfcrop](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
+    - [pdfcrop](/pdfcrop/) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
         - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
     - [QPDF](http://qpdf.sourceforge.net/) Web表示用に最適化したり，暗号化したりできる．[W32TeX](/W32TeX/) に含まれています．
     - [pdfsizeopt](https://code.google.com/p/pdfsizeopt/) PDF file size optimizer
