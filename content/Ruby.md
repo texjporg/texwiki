@@ -80,7 +80,7 @@ $ pacman -S ruby
 
 ### OS X {#def5cf73}
 
-- [ruby-buildを最新にしてrbenvでRuby2.1.3をインストールする](http://qiita.com/ryosy383/items/6991f9aaacecc45e3c58)
+- [Mac OS X 10.10にrbenvを使って複数バージョンのRubyをインストールする](http://qiita.com/ryam/items/73ae65fc430c2e99cb83)
 
 ### Linux {#pfcca84f}
 
