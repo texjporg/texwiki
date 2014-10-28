@@ -78,10 +78,6 @@ Windows, OS X, Linux, Android, iOS
 
 - [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
 
-### Gentoo Linux {#d1a956ba}
-
-- [http://packages.gentoo.org/package/app-text/mupdf](http://packages.gentoo.org/package/app-text/mupdf)
-
 ## ビルド {#ddb9bb15}
 
 ### Windows {#o34a88ba}
