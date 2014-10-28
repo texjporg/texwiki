@@ -236,6 +236,8 @@ Makeindex
 Texindy
 : &nbsp;
 
+: ptexindy %.idx
+
 : texindy %.idx
 
 Makeglossary
