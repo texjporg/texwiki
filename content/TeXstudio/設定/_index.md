@@ -67,7 +67,7 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　<span style="color:Black;background-color:#EEEEEE;">\[DVI->PDFチェーン　　　　　　　　　　　　▼\]</span><br>
+コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　<span style="color:Black;background-color:#EEEEEE;">\[DVI->PDFチェーン　　　　　　　　　　　　▼\]</span><span style="color:black;background-color:yellow;"><strong>← DVI->PDFチェーン に変更する</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -133,7 +133,7 @@ Latexmk を実行して PDF ファイルを表示する場合は ビルド &amp;
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
 
-コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　　　　\[txs:///dvi-pdf-chain　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<br>
+コマンド　　　　　　　　　　　　　ビルド &amp; 表示　　　　　　\[txs:///dvi-pdf-chain　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]<span style="color:black;background-color:yellow;"><strong>← txs:///dvi-pdf-chain に変更する</strong></span><br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
 
@@ -441,7 +441,7 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューでの参照コマンド:　<ins>\ref</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　表の自動整形<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンド:　　　　　<ins>\hline,\cline,\intertext,\shortintertext,\toprule,\midrule,\bottomrule</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンドの位置:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[別の行（最初の列にインデントする）　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンドの位置:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[改行の後ろ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</ins></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ セルあたり1行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　追加の検索パス<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　Bibファイル:<br>
@@ -464,3 +464,7 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 <br>
 
 ***
+
+### 構文の強調表示 {#w15e140c}
+
+- [http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio](http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio)
