@@ -94,10 +94,6 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 - [http://software.opensuse.org/package/zathura](http://software.opensuse.org/package/zathura)
 
-### Gentoo Linux {#z80dcad8}
-
-- [http://packages.gentoo.org/package/app-text/zathura](http://packages.gentoo.org/package/app-text/zathura)
-
 ## 不具合 {#ue94eec4}
 
 - [http://bugs.pwmt.org/](http://bugs.pwmt.org/)
