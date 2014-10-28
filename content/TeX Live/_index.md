@@ -191,7 +191,6 @@ TeX Live は OS ごとにインストール方法が異なります．<br>
 - Linux/Debian - TeX Wiki#TeX Live
 - [Linux/Fedora - TeX Wiki#TeX Live](/Linux/Fedora/#u412c2cf)
 - [Linux/openSUSE - TeX Wiki#TeX Live](/Linux/openSUSE/#n3c200b7)
-- Linux/Gentoo Linux - TeX Wiki#TeX Live
 - Linux/CentOS - TeX Wiki#TeX Live
 - Linux/Vine Linux - TeX Wiki#TeX Live
 
