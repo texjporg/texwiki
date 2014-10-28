@@ -73,10 +73,6 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 
 - [http://software.opensuse.org/package/julia](http://software.opensuse.org/package/julia)
 
-#### Gentoo Linux {#lc2b8837}
-
-- [https://packages.gentoo.org/package/dev-lang/julia](https://packages.gentoo.org/package/dev-lang/julia)
-
 ## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#me14be9e}
 
 ### Julia 版 {#yd2ce169}
