@@ -39,10 +39,6 @@ pukiwiki: "Ghostscript/Linux"
 
 - [http://software.opensuse.org/package/ghostscript](http://software.opensuse.org/package/ghostscript)
 
-#### Gentoo Linux {#ze142c19}
-
-- [http://packages.gentoo.org/package/app-text/ghostscript-gpl](http://packages.gentoo.org/package/app-text/ghostscript-gpl)
-
 #### ソースコードからインストール {#u4ad1919}
 
 [http://git.ghostscript.com/?p=ghostpdl.git](http://git.ghostscript.com/?p=ghostpdl.git)
