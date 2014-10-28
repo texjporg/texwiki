@@ -234,7 +234,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
+> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー &amp; forward search or 印刷 (PDF)</td></tr>
 > </tbody>
 > </table>
 >
