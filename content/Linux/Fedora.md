@@ -41,6 +41,10 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
 - [Linux](/Linux/#texliveinstall)
+- [https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/)
+
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/) をインストールします．<br>
+texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．<br>
 
 ### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
