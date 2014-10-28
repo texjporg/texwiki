@@ -239,6 +239,8 @@ Makeindex
 Texindy
 : &nbsp;
 
+: ptexindy.exe %.idx
+
 : texindy.exe %.idx
 
 Makeglossary
