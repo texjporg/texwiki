@@ -108,10 +108,6 @@ $ pacman -S ruby
 
 - [http://software.opensuse.org/package/ruby](http://software.opensuse.org/package/ruby)
 
-#### Gentoo Linux {#wf560410}
-
-- [https://packages.gentoo.org/package/dev-lang/ruby](https://packages.gentoo.org/package/dev-lang/ruby)
-
 ## fwdevince <a id="fwdevince"></a> {#x681ced4}
 
 ### Ruby 版 {#bf356aaf}
