@@ -223,6 +223,8 @@ Makeindex
 Texindy
 : &nbsp;
 
+: "/usr/texbin/ptexindy" %.idx
+
 : "/usr/texbin/texindy" %.idx
 
 Makeglossary
