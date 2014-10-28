@@ -107,10 +107,6 @@ $ pacman -S python
 - [http://software.opensuse.org/package/python3](http://software.opensuse.org/package/python3)
 - [http://software.opensuse.org/package/python](http://software.opensuse.org/package/python)
 
-#### Gentoo Linux {#u2a01502}
-
-- [https://packages.gentoo.org/package/dev-lang/python](https://packages.gentoo.org/package/dev-lang/python)
-
 ## パッケージ管理 {#n7b5e91b}
 
 ### pip {#q07300c6}
