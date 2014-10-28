@@ -543,15 +543,15 @@ Cygwin では問題なく動作するようです．<br>
 
 #### Homebrew {#db279f00}
 
-- brew install pdf2htmlex
 - [https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb)
-    <!-- - -[[Pdf2htmlex.rb:https://gist.github.com/3758157]] -->
-    <!-- - -[[pdf2htmlex brew formula rough draft:https://gist.github.com/3758431]] -->
+
+```
+brew install pdf2htmlex
+```
 
 #### MacPorts {#ub0beda7}
 
-- [pdf2htmlEX-macport](https://github.com/iapain/pdf2htmlEX-macport)
-    <!-- -[[#36028 (pdf2htmlEX port) – MacPorts:https://trac.macports.org/ticket/36028]] -->
+- [http://trac.macports.org/browser/trunk/dports/textproc/pdf2htmlex/Portfile](http://trac.macports.org/browser/trunk/dports/textproc/pdf2htmlex/Portfile)
 
 ### Linux {#bbc3ecf8}
 
@@ -570,10 +570,6 @@ $ sudo apt-add-repository ppa:coolwanglu/pdf2htmlex
 $ sudo apt-get update
 $ sudo apt-get install pdf2htmlex
 ```
-
-#### Gentoo Linux {#d917d3e1}
-
-- [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
 
 #### CentOS {#q04cd947}
 
