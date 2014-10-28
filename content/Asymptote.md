@@ -12,7 +12,8 @@ pukiwiki: "Asymptote"
 ### はじめに {#w5cb2317}
 
 [Asymptote](http://asymptote.sourceforge.net/)
-は [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述言語。
+は [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述言語。<br>
+TeX Live に標準で含まれています。
 
 - [Asymptote](http://asymptote.sourceforge.net/)
 - [Asymptote project on SourceForge](http://sourceforge.net/projects/asymptote/)
