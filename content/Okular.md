@@ -63,10 +63,6 @@ KDE
 
 - [http://software.opensuse.org/package/okular](http://software.opensuse.org/package/okular)
 
-### Gentoo Linux {#rfafd9c6}
-
-- [http://packages.gentoo.org/package/kde-base/okular](http://packages.gentoo.org/package/kde-base/okular)
-
 ### Beyond Linux From Scratch {#zf4b2d67}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
