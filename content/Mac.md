@@ -605,7 +605,6 @@ VirtualBox などの仮想マシン上に Linux をインストールして TeX 
 　　　　　CentOS<br>
 　　　　　Debian<br>
 　　　　　Fedora<br>
-　　　　　Gentoo Linux<br>
 　　　　　Linux Mint<br>
 　　　　　Lubuntu<br>
 　　　　　openSUSE<br>
