@@ -58,6 +58,15 @@ dvipdfmx をグローバル指定すると都合が悪い場合は、graphicx �
 \usepackage{tikz}%（これで、pgf と pgffor も読み込まれます。）
 ```
 
+LuaLaTeX + LuaTeX-ja を使用する場合は次のように設定します。<br>
+
+```
+\documentclass{ltjsarticle}
+\usepackage{graphicx}%
+%\def\pgfsysdriver{pgfsys-pdftex.def}%（graphicx パッケージを使用しない場合はこの行を有効に）
+\usepackage{tikz}%（これで、pgf と pgffor も読み込まれます。）
+```
+
 PGF は dvips, dvipdfmx, dvisvgm, pdfTeX, LuaTeX, XeTeX などをサポートしています。<br>
 なお、PGF の機能を 100% サポートしているのは LuaTeX (pdfTeX) ですが、最近のバージョンでは dvipdfmx でもほぼすべての機能が使えます。（[Troubleshootingを参照](#i0cba852)）<br>
 
@@ -213,10 +222,17 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 ### 簡単な図形描画の例 {#c4bd1edb}
 
 ```
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-% \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
-\usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[dvipdfmx]{graphicx}
+  % \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
+  \usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{graphicx}
+  % \def\pgfsysdriver{pgfsys-pdftex.def}%(graphicxパッケージを使用しない場合)
+  \usepackage[svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+\fi
 \usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}
@@ -464,8 +480,13 @@ intersectionsライブラリを読み込んでおく必要があります。<br>
 2つ目の例では、2曲線の交点を順に3つ a, b, c と名前を付けて、ラベルを付けてます。<br>
 
 ```
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[dvipdfmx]{graphicx}
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{graphicx}
+\fi
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -498,6 +519,7 @@ intersectionsライブラリを読み込んでおく必要があります。<br>
 (c) circle (2pt) node [below left] at (c) {c};
 \end{scope}
 \end{tikzpicture}
+\end{document}
 ```
 
 #### 計算による座標設定（例：三角形の重心と垂心を求めてみる） {#vc9ec410}
@@ -559,8 +581,13 @@ calc ライブラリを読み込むことで、簡単な座標計算ができま
 三角形の重心と垂心を求める例。<br>
 
 ```
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[dvipdfmx]{graphicx}
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{graphicx}
+\fi
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -627,7 +654,11 @@ calc ライブラリを読み込むことで、簡単な座標計算ができま
 角度記号をつける例。<br>
 
 ```
-\documentclass[uplatex,dvipdfmx]{jsarticle}
+\ifdefined\kanjiskip
+  \documentclass[uplatex,dvipdfmx]{jsarticle}
+\else
+  \documentclass{ltjsarticle}
+\fi
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{calc, quotes, angles}%quotesは角度のラベルオプション内に記述するために使用
@@ -703,8 +734,13 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば、
 三角形の外心と内心を求める例。<br>
 
 ```
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
+\ifdefined\kanjiskip
+  \documentclass[uplatex]{jsarticle}
+  \usepackage[dvipdfmx]{graphicx}
+\else
+  \documentclass{ltjsarticle}
+  \usepackage{graphicx}
+\fi
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc, through}
 \begin{document}
