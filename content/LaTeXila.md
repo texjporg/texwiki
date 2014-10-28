@@ -7,7 +7,7 @@ pukiwiki: "LaTeXila"
 
 # LaTeXila
 
-## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) → 問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#e966f73d}
+## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) {#e966f73d}
 
 <img src="https://git.gnome.org/browse/latexila/plain/data/images/app/logo.png" alt="LaTeXila" style="float:right">
 
@@ -39,18 +39,7 @@ GNOME
     - [NEWS](https://github.com/GNOME/latexila/blob/master/NEWS)
     - [コミットログ](https://github.com/GNOME/latexila/commits/master)
 
-## 不具合 {#o7b20b21}
-
-### LaTeXila 2.8.2 で \section{hoge} で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) → [TeXstudio](/TeXstudio/) を使用する {#xf55798b}
-
-LaTeXila 2.8.2 で
-
-```
-\section{hoge}
-```
-
-で hoge を削除して fcitx-mozc や ibus-kkc でかな漢字変換をすると Segmentation fault (コアダンプ) が発生します．<br>
-[TeXstudio](/TeXstudio/) を使用することで回避できます．<br>
+<!-- *不具合 [#o7b20b21] -->
 
 ## Build Tool {#t1320044}
 
