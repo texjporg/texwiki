@@ -709,12 +709,12 @@ SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search 
 
 (add-hook 'yatex-mode-hook
           '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c w") 'fwdsumatrapdf-forward-search)))
+             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
 ```
 
 fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-fwdsumatrapdf での forward search は C-c w または M-x fwdsumatrapdf-forward-search をタイプします．
+fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forward-search をタイプします．
 
 ### Skim との連携 (forward search) {#f978a43b}
 
