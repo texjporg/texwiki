@@ -201,7 +201,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/HYGungSo-Bold                /MunhwaGungSeoHeulim-Light      ;
 
 %%% Wadalab Maru Gothic (JIS X 0213)
-%%% See http://sourceforge.jp/projects/jis2004/wiki/FrontPage
+%%% See http://osdn.jp/projects/jis2004/wiki/FrontPage
 /WadaLabMaruGo20044           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20044.ttf) >> ;
 /WadaLabMaruGo20004           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20004.ttf) >> ;
 
