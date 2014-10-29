@@ -159,7 +159,7 @@ W32TeX には dviout が含まれていないので dviout をダウンロード
 
 - [64bit dviout](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1171)
 
-Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/01/29以降)。
+64-bit 版 Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/01/29以降)。
 
 #### 32-bit dviout {#h6957949}
 
