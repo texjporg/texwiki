@@ -139,7 +139,7 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
 
 (add-hook 'latex-mode-hook
           '(lambda ()
-             (define-key latex-mode-map (kbd "C-c w") 'fwdsumatrapdf-forward-search)))
+             (define-key latex-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
 
 ;;
 ;; RefTeX with TeX mode
