@@ -733,6 +733,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+- [Light Table](</Light Table/>)
 - [gedit](/gedit/)
 - [Geany](/Geany/)
 
