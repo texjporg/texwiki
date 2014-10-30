@@ -154,7 +154,7 @@ window['org.gnome.evince.Window'].SyncView(tex, [line, 1], 0)
 
 ### Ruby 版 {#p8b1b4df}
 
-RubyInstaller for Windows の ruby 2.1.3p242 (2014-09-19 revision 47630) \[x64-mingw32\] と ActiveScriptRuby の ruby 2.1.2p95 (2014-05-08 revision 45877) \[i386-mswin32_100\] で動作確認しています．<br>
+RubyInstaller for Windows の ruby 2.1.4p265 (2014-10-27 revision 48166) \[x64-mingw32\] で動作確認しています．<br>
 
 ***
 
