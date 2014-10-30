@@ -72,6 +72,7 @@ pukiwiki: "FrontPage"
         ATP),
         [Atom](/Atom/),
         [Brackets](/Brackets/),
+        [Light Table](</Light Table/>),
         [gedit](/gedit/),
         [Geany](/Geany/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
