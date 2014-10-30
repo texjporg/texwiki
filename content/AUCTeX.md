@@ -619,11 +619,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 #### Emacs 標準のパッケージ管理システムを使用してインストールした場合 {#c3acf208}
 
-AUCTeX 11.87 は &#x7e;/.emacs.d/elpa/auctex-11.87 にインストールされます．<br>
-AUCTeX 11.87 が自動ロードされない場合は ~/.emacs.d/init.el に次のように記述します．<br>
+AUCTeX 11.88 は &#x7e;/.emacs.d/elpa/auctex-11.88 にインストールされます．<br>
+AUCTeX 11.88 が自動ロードされない場合は ~/.emacs.d/init.el に次のように記述します．<br>
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.87")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.88")
 (require 'tex-site)
 ```
 
@@ -976,7 +976,7 @@ inverse search については [Emacs#SumatraPDF との連携#inverse search](/E
 forward search は [AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de) を参照してください．<br>
 C-c C-c displayline で forward search ができます．<br>
 
-AUCTeX 2013-04-09 以降は Skim の forward search に対応しています．<br>
+AUCTeX 11.88 以降は Skim の forward search に対応しています．<br>
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている displayline を指定します．<br>
 
 ```
@@ -1018,7 +1018,7 @@ TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリック�
 forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．<br>
 C-c C-c okular で forward search ができます．<br>
 
-AUCTeX 2013-05-30 以降は Okular の forward search に対応しています．<br>
+AUCTeX 11.88 以降は Okular の forward search に対応しています．<br>
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Okular を指定します．<br>
 
 ```
