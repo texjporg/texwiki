@@ -782,6 +782,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - ATP
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
+- [Light Table](</Light Table/>)
 - [gedit](/gedit/)
 - [Geany](/Geany/)
 
