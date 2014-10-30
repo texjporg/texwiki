@@ -180,24 +180,25 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 #### PDF形式ファイル（図）の挿入について {#n20e1824}
 
 - EPS 形式を使用せずに PDF 形式の挿入図を用いて，「pdflatex, lualatex, luajitlatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い。
-- 図の挿入は、一般的には，BoundingBox 情報の処理が必要（→[TeX入門/図表](</TeX入門/図表/>)）。BoundingBox とは、EPS 形式で定義されているような、描画図をぴったり囲む矩形のこと。
 
-- pdf ファイルの BoundingBox 情報
-    - PDF ファイルも、EPS形式と同様の BoundingBox （の概念）を持っているようで、Adobe [Illustrator](/Illustrator/) で作成・保存したPDF ファイル（また .ai ファイル）では実際に書き込まれる。この場合は挿入図の処理は EPS 形式と同様となる。
-        <!-- - - ただし，Adobe [[Illustrator]] で作成・保存した PDF形式の挿入図に対しては不必要。cf. http://www.nn.iij4u.or.jp/~tutimura/tex/dvipdfm.html -->
+- PDF ファイルを画像として取り込むときには、\includegraphics が利用するバウンディングボックスの情報が必要。
+    - 一般に \includegraphics で外部ファイルを画像として取り込むには、出力されるページ上で画像の境界がどこに設定されるかを指定する必要がある。この領域のことをバウンディングボックス（bounding box）と呼ぶ。
+    - EPS ファイルは、もともと PostScript の画像を埋め込むための形式として開発されたこともあって、バウンディングボックスを表す情報が必ずファイル内に埋め込まれている（BoundingBox）。 EPSの取り込みでは、この BoundingBox の値が使われる。EPS 以外を取り込むときは、別の方法でバウンディングボックスの情報を手に入れるしかない。
 
-- PDF ファイルは、BoundingBoxとは別に、ArtBox、TrimBox、BleedBox、CropBox、MediaBox という概念を持っている。pdfファイルを作成するアプリケーションは、少なくともArtBoxもしくはMediaBoxの値をファイル内に書き込むことが多い。
-    - extractbb コマンドは書き込まれているこれらの値の一つを読み取って、BoundingBox情報として見なす。もしも、BoundingBoxとしては相応しい値でない場合には、問題が生じることになる。
-        - 最近のバージョンの Adobe [Illustrator](/Illustrator/) では、作成・保存したPDF ファイル内に BoundingBox と ArtBox とを同じ値で書き込む。
-        - 情報を読み取る例：
+- dvipdfmx を使う場合は、 extractbb というコマンドを使って画像 PDF のバウンディングボックスの値を用意する。
 
-            ```
-            $ pdfinfo -box foo.pdf
-            $ extractbb -O foo.pdf 
-            $ cat foo.pdf | strings | grep -e '%%\(HiRes\)*BoundingBox'
-            $ rungs -q -dSAFER -dNOPAUSE -dBATCH -sDEVICE=bbox  foo.pdf
-            $ epstool --dump foo.eps | grep -e "box "
-            ```
+```
+$ extractbb foo.pdf
+```
+
+- 後述の [extractbbの自動実行](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?PDF%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9#rf074b4b) も参照。
+    - PDF ファイルには、コンテンツが画像であるかどうかに関係なく、ドキュメントのページ上のさまざまな領域を表す 5 種類のボックスが定義されている。
+        - CropBox、ArtBox、TrimBox、BleedBox、MediaBox
+    - PDF に対して extractbb を実行すると、これら PDF のボックスの値をもとに、バウンディングボックスの値が返される。
+        - 詳しくは [http://d.hatena.ne.jp/zrbabbler/20140629/1404010741](http://d.hatena.ne.jp/zrbabbler/20140629/1404010741) を参照。
+
+- \includegraphics のオプションとしてバウンディングボックスの情報を手動で指定することもできる。
+    - 詳しくは graphics/graphicx パッケージのマニュアルや『LaTeX コンパニオン』などを参照。
 
 <!-- - pdf ファイルの bounding box 情報 -->
 <!-- - - PDF ファイル（Adobe [[Illustrator]] による保存を除く）の bounding box 情報の仕様（正確には bounding-box-like な矩形領域情報は複数種類が定義されている）は、EPS ファイルのそれとは正確には異なる。 -->
