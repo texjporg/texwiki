@@ -795,7 +795,8 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 
 ### TeX-PDF-mode {#bf4992a9}
 
-TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．
+TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．<br>
+AUCTeX 11.88 以降は TeX-PDF-mode がデフォルトで有効になっています．<br>
 
 ```
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
