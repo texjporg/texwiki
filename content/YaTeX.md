@@ -9,7 +9,7 @@ pukiwiki: "YaTeX"
 
 [Emacs](/Emacs/) > YaTeX
 
-## [YaTeX](https://www.yatex.org/) → エラー行にジャンプしないなどの問題が発生する場合は [Org mode](</Emacs/Org mode/>) または [TeX mode](</Emacs/TeX mode/>) または [AUCTeX](/AUCTeX/) を使用する {#o2c95a66}
+## [YaTeX](https://www.yatex.org/) → Windows の Emacs で C-c ' でエラー行にジャンプしないなどの問題が発生する場合は [Org mode](</Emacs/Org mode/>) または [TeX mode](</Emacs/TeX mode/>) または [AUCTeX](/AUCTeX/) を使用する {#o2c95a66}
 
 <img src="https://www.yatex.org/yalogo.gif" alt="YaTeX" style="float:right">
 
@@ -949,4 +949,3 @@ TeX ソースの先頭行に例えば，
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [File #osqaqi27-12106](http://www.sourcepod.com/osqaqi27-12106)
 - [TeX Memo \[Internet Archive\]](http://web.archive.org/web/20100601184838/http://homepages.inf.ed.ac.uk/s0675112/tex_memo.html)
-- [野鳥（YaTeX） \[物理のかぎしっぽ\]](http://hooktail.sub.jp/tex/yatex/)
