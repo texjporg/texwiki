@@ -297,6 +297,8 @@ Windows
 
 ## プラグイン (Plugins) {#k2155ff2}
 
+- [http://npp-wiki.tuxfamily.org/index.php?title=Plugin_Central](http://npp-wiki.tuxfamily.org/index.php?title=Plugin_Central)
+
 ### [NppExec](/NppExec/) {#cb7d631d}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
