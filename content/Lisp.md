@@ -21,7 +21,6 @@ pukiwiki: "Lisp"
 
 - [Racket](http://racket-lang.org/)
 - [Gauche](http://practical-scheme.net/gauche/index-j.html)
-- [Scheme によるプログラミング入門](http://www.kkaneko.com/pro/)
 - [非公式PDF版SICPの全訳を公開しました](http://d.hatena.ne.jp/minghai/20140402/p1)
     - [https://github.com/minghai/sicp-pdf](https://github.com/minghai/sicp-pdf)
 
