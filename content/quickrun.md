@@ -29,6 +29,8 @@ quickrun が動作しない場合は [tex.vim](/Vim/tex.vim/) または LaTeX Bo
 
 ### Windows {#i23c9f0a}
 
+#### 注意点 {#i19f98f7}
+
 <span style="color:red;"><strong>Windows 環境では set shellslash を設定している場合は quickrun がうまく動作しない可能性があります．</strong></span><br>
 
 <span style="color:red;"><strong>quickrun がうまく動作しない場合は set noshellslash を設定してください．</strong></span><br>
