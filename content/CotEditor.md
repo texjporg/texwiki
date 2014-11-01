@@ -7,12 +7,9 @@ pukiwiki: "CotEditor"
 
 # CotEditor
 
-## [CotEditor](http://coteditor.github.io/) {#hbea6b64}
+## [CotEditor](http://coteditor.com/) {#hbea6b64}
 
 <img src="https://raw.githubusercontent.com/coteditor/CotEditor/develop/CotEditor/CotEditor.help/Contents/Resources/Shared/gfx/icon_128x128@2x.png" alt="CotEditor" style="float:right">
-
-<!-- #ref(http://coteditor.github.io/img/appicon/256@2x.png,right,around,nolink,256x256,CotEditor) -->
-<!-- #ref(http://usami-k-mac.up.seesaa.net/image/0408_CotEditor-thumbnail2.png,right,around,nolink,CotEditor) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -20,8 +17,8 @@ pukiwiki: "CotEditor"
 
 CotEditor はテキストエディタです．
 
-- [CotEditor -Text Editor for OS X](http://coteditor.github.io/)
-    - [CotEditor Beta](http://coteditor.github.io/beta)
+- [CotEditor -Text Editor for OS X](http://coteditor.com/)
+    - [CotEditor Beta](http://coteditor.com/beta)
 - [CotEditor Project · GitHub](https://github.com/coteditor/)
 - [https://twitter.com/coteditor](https://twitter.com/coteditor)
 
