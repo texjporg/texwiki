@@ -15,3 +15,4 @@ ChemFig は TeX Live, W32TeX に含まれています．<br>
 - [http://blog.livedoor.jp/ti5942/archives/cat_238011.html](http://blog.livedoor.jp/ti5942/archives/cat_238011.html)
 - [http://blog.livedoor.jp/ti5942/tag/chemfig](http://blog.livedoor.jp/ti5942/tag/chemfig)
 - [TeXで分子構造式を描くパッケージ「chemfig」](http://hitgot.org/archives/chemfig-instal/)
+- [ChemFig: Chemie &amp; LaTeX ―LaTeX で化学式を書(描)いてみる―](https://sites.google.com/site/madchemiker/latex/chemie-latex)
