@@ -22,4 +22,5 @@ pukiwiki: "KaTeX"
 
 ## 関連リンク {#afb5b0be}
 
+- [KaTeX and MathJax Comparison Demo](http://www.intmath.com/cg5/katex-mathjax-comparison.php)
 - [KaTeXを試してみた](http://rinx.tk/blog/2014/09/20/katex/)
