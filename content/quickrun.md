@@ -377,6 +377,7 @@ Vim で TeX ファイルを開いてノーマルモードで \r をタイプし�
 
 ## 関連リンク {#p20fe037}
 
+- [latexmkとquickrun.vimを使ってVimでLaTeXを書く。](http://ksmzn.hatenablog.com/entry/latexmk-quickrun-vim)
 - [TeXShop からの脱却](http://d.hatena.ne.jp/alto_homotopy/20140409)
 - [latexmkとvim-quickrunとneosnippetでVim-LaTeXを卒業しよう](http://rutto-ysgr.net/post/75144999302/latexmk-vim-quickrun-neosnippet-vim-latex)
 - [http://twilog.org/ti5942/search?word=quickrun](http://twilog.org/ti5942/search?word=quickrun)
