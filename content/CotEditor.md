@@ -9,8 +9,6 @@ pukiwiki: "CotEditor"
 
 ## [CotEditor](http://coteditor.com/) {#hbea6b64}
 
-<img src="https://raw.githubusercontent.com/coteditor/CotEditor/develop/CotEditor/CotEditor.help/Contents/Resources/Shared/gfx/icon_128x128@2x.png" alt="CotEditor" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## CotEditor とは {#x19d88d4}
