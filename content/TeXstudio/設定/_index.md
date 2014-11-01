@@ -465,6 +465,106 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 
 ***
 
+### コマンドの補完 {#o8d22117}
+
+#### 高度なオプションの表示が ON の場合 {#qff82cf9}
+
+自動補完機能でキーワードを補完したあとでプレースホルダーに日本語入力して確定すると確定した日本語が二重に入力されます．<br>
+
+\begin{do とタイプして Enter を入力すると自動補完機能で以下のような状態になります．<br>
+
+```
+\begin{document}
+	content...
+\end{document}
+```
+
+この状態でプレースホルダー (ここでは content...) に日本語入力して確定すると確定した日本語が二重に入力されます．<br>
+
+```
+\begin{document}
+	日本語日本語
+\end{document}
+```
+
+高度なオプションの表示を ON にしてコマンドの補完のプレースホルダーを使用を OFF にすることで回避できます．<br>
+
+***
+
+<span style="color:#3F43EF;background-color:#3F43EF;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXstudioの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3F43EF;background-color:#3F43EF;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+
+一般　　　　　　　　　　　　　　コマンドの補完<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
+
+コマンド　　　　　　　　　　　　☑ LaTeXコマンド入力時に自動的に補完を開始　　　　　　　　　　　　　　　好みのコマンドセット:　<span style="color:Black;background-color:#EEEEEE;"><ins>\[典型的　　　　▼\]</ins></span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
+
+ビルド　　　　　　　　　　　　　☑ 大文字と小文字を区別する　　　　　　　　　　　　　　　　　　　　　　　　　　☑ LaTeXコマンドの自動置換<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
+
+キーボードショートカット　　　　　　☑ 最初の文字で区別　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ツールチップヘルプ<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
+
+メニュー　　　　　　　　　　　　☑ 共通する接頭語の自動補完<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
+
+ツールバー　　　　　　　　　　☑ 非文字キャラクタを押すと選択したテキストを補完　　　　　　　　　　　　タブバーの大きさ　<ins>100&#x25;　　\[<strong>⇕</strong>\]</ins><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
+
+エディタ　　　　　　　　　　　　 <span style="color:black;background-color:yellow;"><strong>☐ プレースホルダーを使用 ← チェックをはずす</strong></span>　　　　　　　　　　　　　　☑ プレースホルダーを表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
+
+詳細なエディタ設定　　　　　次の補完ファイルを使用:<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
+
+構文の強調表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
+
+カスタム強調表示<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
+
+<span style="color:Black;background-color:#DAEAFF;">コマンドの補完　　　　　　</span><br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
+
+文法<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
+
+プレビュー<br>
+
+<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
+
+SVN<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　☑ 高度なオプションの表示
+
+<br>
+
+***
+
 ### 構文の強調表示 {#w15e140c}
 
 - [http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio](http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio)
