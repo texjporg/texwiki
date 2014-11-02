@@ -53,6 +53,10 @@ LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の�
 
 LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
 
+## その他パッケージ {#u56aae1f}
+
+- [enumerator.sty](https://github.com/chemicl-t/enumerator) simple package for LuaLaTeX to enumerate files recursively.
+
 ## 不具合 {#v600e2c1}
 
 - [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
