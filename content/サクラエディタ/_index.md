@@ -130,8 +130,8 @@ UTF-8 を選択します．<br>
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ スクリーン \]\[ カラー \]</ins></span><strong>\[ ウィンドウ \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 支援　\]\[ 正規表現キーワード \]\[ キーワードヘルプ \]</ins></span><br>
 　　　 入力モード<br>
 　　　　デフォルトの文字コード　　　　　　　　　　　　　　　　　　　起動時のIME（日本語入力変換）<br>
-　　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　<strong>ᐯ</strong>\]</span> ☐BOM　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　 <strong>ᐯ</strong>\]</span><br>
+　　　　改行コード(E)　　<span style="color:Black;background-color:#EEEEEE;">\[ CR+LF　　　　　　<strong>ᐯ</strong>\]</span> ☐BOM　　　　　　　ON/OFF状態(M)　　<span style="color:Black;background-color:#EEEEEE;">\[そのまま　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　文字コード(C)　　<span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　<strong>ᐯ</strong>\]</span> ☐CP　　　　　　　　　　入力モード(D)　　<span style="color:Black;background-color:#EEEEEE;">\[標準設定　　　　　 <strong>ᐯ</strong>\]</span><br>
 　　　　☐自動判別時にCESU-8 を優先する(U)<br>
 
 <br>
@@ -141,7 +141,7 @@ UTF-8 を選択します．<br>
 　　　　行番号の表示　　　　　　　行番号区切り　　　　　　　　　背景画像<br>
 　　　　◯ 折り返し単位(R)　　　　◯ なし(N)　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
 　　　 (●) 改行単位(W)　　　　　(●) 縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
-　　　　　　　　　　　　　　　　　　　◯ 任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 <strong>ᐯ</strong>\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+　　　　　　　桁数　　<ins>2　　　\[<strong>⇕</strong>\]</ins>　　 ◯ 任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 <strong>ᐯ</strong>\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 
 ***
@@ -155,8 +155,8 @@ UTF-8 を選択します．<br>
 
 <span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>文字コードの指定</strong></span>　　　　　　　　　　　　　　　</ins></span><br>
 
-　　文字コードセット(C): <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　<strong>ᐯ</strong>\]</span>　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span><br>
-　　　　　　　　　　　　　　☐BOM　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　キャンセル(X)　\]</span><br>
+　　文字コードセット(C): <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　<strong>ᐯ</strong>\]</span>　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　 OK 　　　　\]</span><br>
+　　　　　　　　　　　　　　　☐CP　　☐BOM　　 <span style="color:Black;background-color:#EEEEEE;">\[　キャンセル(X)　\]</span><br>
 
 ***
 
