@@ -299,7 +299,7 @@ platex -jobname=構造 構造.tex
 platex -jobname=ソフトウェア ソフトウェア.tex
 ```
 
-のように -jobname= で指定してコンパイルする方法があります． → [TeX Live 2013 を使うときの通称「バカ文字」への配慮](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1430), [platexでダメ文字を含むファイルを処理する](http://d.hatena.ne.jp/tailriver/20101022/1291955342), [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
+のように -jobname= で指定してコンパイルする方法があります． → [TeX Live 2013 を使うときの通称「だめ文字（駄目文字）」への配慮](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1430), [platexでダメ文字を含むファイルを処理する](http://d.hatena.ne.jp/tailriver/20101022/1291955342), [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
 
 【参考】
 
