@@ -105,7 +105,7 @@ W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
 
 ## 不具合 {#z01f418a}
 
-### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップデート {#c01c14c0}
+### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップグレード {#c01c14c0}
 
 TeX Live 2014 (MetaPost 1.902), W32TeX (MetaPost 1.999) では修正されています．<br>
 
