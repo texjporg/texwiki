@@ -55,53 +55,11 @@ texdoc metapost
 
 ### TeX Live {#l36a3b95}
 
-TeX Live の場合は
-
-- [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/)
-
-から入手可能です．<br>
-
-#### インストール (Windows) {#h80cb69d}
-
-```
-PS C:\Users\$Env:USERNAME> tlmgr update --self --all
-PS C:\Users\$Env:USERNAME> tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-PS C:\Users\$Env:USERNAME> tlmgr pinning add tlptexlive "*"
-PS C:\Users\$Env:USERNAME> tlmgr install pmetapost
-```
-
-#### インストール (Cygwin) {#w370c0b7}
-
-```
-$ tlmgr update --self --all
-$ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ tlmgr pinning add tlptexlive "*"
-$ tlmgr install pmetapost
-$ tlmgr path add
-```
-
-#### インストール (OS X) {#q808c38d}
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pmetapost
-```
-
-#### インストール (Linux) {#adc6bf92}
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pmetapost
-$ sudo tlmgr path add
-```
+TeX Live 2015 以降には MetaPost の日本語版 (upmpost) が含まれています．
 
 ### W32TeX {#ab245e27}
 
-W32TeX には MetaPost の日本語版 (upmpost) が含まれています．<br>
+W32TeX には MetaPost の日本語版 (upmpost) が含まれています．
 
 ## 不具合 {#z01f418a}
 
