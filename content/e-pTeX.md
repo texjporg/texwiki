@@ -269,9 +269,9 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 ## 不具合 {#xf84e130}
 
-### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降にアップデート {#p4d23466}
+### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降にアップグレード {#p4d23466}
 
-TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414) を参照) で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．<br>
+TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414), [W32TeX#漢字入出力対応状況](/W32TeX/#qc9f2e7d) を参照) で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．<br>
 TeX Live 2013 ではファイル名に日本語を使用した場合，ファイル名を正しく処理できない場合があります．<br>
 
 ```
