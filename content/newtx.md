@@ -16,7 +16,7 @@ pukiwiki: "newtx"
 newtx は TX フォントを改良したものです．<br>
 
 - [Michael Sharpe Home Page](http://math.ucsd.edu/~msharpe/)
-    - [MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
+    - [MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
 - [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
 - [http://www.ctan.org/pkg/newtxtt](http://www.ctan.org/pkg/newtxtt)
@@ -34,7 +34,7 @@ newtx は TX フォントを改良したものです．<br>
 
 ### News {#s0ef87dd}
 
-[MSharpe TeX software](http://dl.dropboxusercontent.com/u/3825336/TeX/index.html) を参照．<br>
+[MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html) を参照．<br>
 
 ### インストール {#va9608e1}
 
