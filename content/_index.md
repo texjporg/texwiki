@@ -146,6 +146,7 @@ pukiwiki: "FrontPage"
     [TikZ/PGF](/TikZ/),
     [Beamer](/Beamer/),
     [media9](/media9/),
+    [animate](/animate/),
     [Biblatex](/Biblatex/),
     [PythonTeX](/PythonTeX/),
     [The AcroTeX eDucation Bundle](/AeB/),
