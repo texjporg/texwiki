@@ -40,8 +40,7 @@ pukiwiki: "TeXが苦手とする処理"
 - [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)： 吉永徹美氏。
     実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
 
-なお，欧文のみで
-よければ，[ulem パッケージ](http://www.ctan.org/pkg/ulem)が
+なお，欧文のみでよければ，[ulem パッケージ](http://www.ctan.org/pkg/ulem)が
 下線・二重下線・打ち消し線・波線などを提供しています。
 
 ### 飾り枠（ときとしてページ分割可能なもの） {#t43fb31c}
@@ -53,12 +52,16 @@ TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手�
 
 - 画像にする
 - [TikZ](/TikZ/) などの「描画用」パッケージを用いる
+    - [tcolorbox パッケージ](http://www.ctan.org/pkg/tcolorbox)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）<br>
+        参考：[tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
 枠の途中でのページ分割の必要がなければ，比較的単純な形状の枠については
 ascmac パッケージが提供する itembox 環境といったものが存在します。<br>
 さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます。<br>
+ascmac を pict2e パッケージと共存させると \oval が衝突するので，
+ZR さんの [bxascmac パッケージ](http://zrbabbler.sp.land.to/bxptool.html)を代わりに使いましょう。[qa:57384](https://okumuralab.org/~okumura/texfaq/qa/57384.html), [qa:57396](https://okumuralab.org/~okumura/texfaq/qa/57396.html)<br>
 また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は
 「飾り文字を並べて作成した枠（ページ分割は不可）」を
 作成するマクロを提供しています。<br>
@@ -247,7 +250,7 @@ $\bm{\phi}=\left(\phi_1,\,\phi_2\right)$
 1\unit{\mu / s^2}
 ```
 
-> sistyle パッケージを用いると，大体そのような形で記述可能． <!-- 単純なものでよければ，次のサンプル程度のマクロを自作してもいい． --> <!-- \documentclass{ujarticle} --> <!-- \makeatletter --> <!-- \def\unitprespace{\,} --> <!-- \DeclareRobustCommand*\unit{\@ifstar{\@unit\relax}{\@unit\unitprespace}} --> <!-- \def\@unit#1{% --> <!--    \ifmmode\else --> <!--       \ifvmode \leavevmode \fi --> <!--       \unskip --> <!--    \fi --> <!--    #1% --> <!--    \ifmmode \expandafter\@math@unit --> <!--    \else    \expandafter\@text@unit --> <!--    \fi} --> <!-- \def\@text@unit{\@@unit\f@size} --> <!-- \def\@math@unit#1{% --> <!--     \mathchoice{\@@unit\tf@size{#1}}{\@@unit\tf@size{#1}}% --> <!--                {\@@unit\sf@size{#1}}{\@@unit\ssf@size{#1}}} --> <!-- \def\@@unit#1#2{% --> <!--    \hbox{\fontsize#1\f@baselineskip\upshape --> <!--       \expandafter\let\csname unit \endcsname\mbox --> <!--       \def\@tempa{\mu}% --> <!--       \ifx\@@micro\@tempa\else \let\mu\@@micro \fi --> <!--       \@tfor\@tempa:=% --> <!--          {\@@b\b}{\@@c\c}{\@@d\d}{\@@t\t}{\@@H\H}% --> <!--          {\'\acute}{\'\grave}{\.\dot}{\"\ddot}{\^\hat}% --> <!--          {\v\check}{\u\breve}{\~\tilde}{\=\bar}% --> <!--          {\r\mathring}%%% 実際には，おそらく，この場合のみ処理するだけでも充分 --> <!--          {\b\b@in@unit}{\c\c@in@unit}{\d\d@in@unit}{\t\t@in@unit}{\H\H@in@unit}% --> <!--          \do{\expandafter\let\@tempa}% --> <!--       \medmuskip=2mu --> <!--       \edef\@tempa{\f@series}\edef\@tempa{\expandafter\@car\@tempa\@empty\@nil}% --> <!--       \if \@tempa b\relax \mathversion{bold}\fi --> <!--       $\mathrm{#2}$}} --> <!-- \def\b@in@unit#1{\hbox{\@@b{#1}}} --> <!-- \def\c@in@unit#1{\hbox{\@@c{#1}}} --> <!-- \def\d@in@unit#1{\hbox{\@@d{#1}}} --> <!-- \def\t@in@unit#1{\hbox{\@@t{#1}}} --> <!-- \def\H@in@unit#1{\hbox{\@@H{#1}}} --> <!-- \DeclareRobustCommand*\micro{\@@micro} --> <!-- \AtBeginDocument{% --> <!--    \@ifundefined{textmu}% --> <!--       {\@ifundefined{muup}% --> <!--          {\def\@@micro{\mu}}% --> <!--          {\def\@@micro{\muup}}}% --> <!--       {\def\@@micro{\mbox{\textmu}}}} --> <!-- \makeatother --> <!--  --> <!-- \usepackage{txfonts}%%% \muup を提供 --> <!--  --> <!-- \begin{document} --> <!-- 10 \unit{m \cdot s^{-1}} and 12\unit{\micro g/l} --> <!--  --> <!-- $v = 10 \unit{m/s}$ and $c = 12\unit{\mu g/l}$ --> <!-- $X = \sup_{v \geq 10\unit{m/s}} f(v)$ --> <!--  --> <!-- 10\,[\unit*{m/s}]%%% このような場合には \unit* とする． --> <!-- \end{document} -->
+[siunitx パッケージ](http://www.ctan.org/tex-archive/macros/latex/contrib/siunitx)を用いると，大体そのような形で記述可能． <!-- 単純なものでよければ，次のサンプル程度のマクロを自作してもいい． --> <!-- \documentclass{ujarticle} --> <!-- \makeatletter --> <!-- \def\unitprespace{\,} --> <!-- \DeclareRobustCommand*\unit{\@ifstar{\@unit\relax}{\@unit\unitprespace}} --> <!-- \def\@unit#1{% --> <!--    \ifmmode\else --> <!--       \ifvmode \leavevmode \fi --> <!--       \unskip --> <!--    \fi --> <!--    #1% --> <!--    \ifmmode \expandafter\@math@unit --> <!--    \else    \expandafter\@text@unit --> <!--    \fi} --> <!-- \def\@text@unit{\@@unit\f@size} --> <!-- \def\@math@unit#1{% --> <!--     \mathchoice{\@@unit\tf@size{#1}}{\@@unit\tf@size{#1}}% --> <!--                {\@@unit\sf@size{#1}}{\@@unit\ssf@size{#1}}} --> <!-- \def\@@unit#1#2{% --> <!--    \hbox{\fontsize#1\f@baselineskip\upshape --> <!--       \expandafter\let\csname unit \endcsname\mbox --> <!--       \def\@tempa{\mu}% --> <!--       \ifx\@@micro\@tempa\else \let\mu\@@micro \fi --> <!--       \@tfor\@tempa:=% --> <!--          {\@@b\b}{\@@c\c}{\@@d\d}{\@@t\t}{\@@H\H}% --> <!--          {\'\acute}{\'\grave}{\.\dot}{\"\ddot}{\^\hat}% --> <!--          {\v\check}{\u\breve}{\~\tilde}{\=\bar}% --> <!--          {\r\mathring}%%% 実際には，おそらく，この場合のみ処理するだけでも充分 --> <!--          {\b\b@in@unit}{\c\c@in@unit}{\d\d@in@unit}{\t\t@in@unit}{\H\H@in@unit}% --> <!--          \do{\expandafter\let\@tempa}% --> <!--       \medmuskip=2mu --> <!--       \edef\@tempa{\f@series}\edef\@tempa{\expandafter\@car\@tempa\@empty\@nil}% --> <!--       \if \@tempa b\relax \mathversion{bold}\fi --> <!--       $\mathrm{#2}$}} --> <!-- \def\b@in@unit#1{\hbox{\@@b{#1}}} --> <!-- \def\c@in@unit#1{\hbox{\@@c{#1}}} --> <!-- \def\d@in@unit#1{\hbox{\@@d{#1}}} --> <!-- \def\t@in@unit#1{\hbox{\@@t{#1}}} --> <!-- \def\H@in@unit#1{\hbox{\@@H{#1}}} --> <!-- \DeclareRobustCommand*\micro{\@@micro} --> <!-- \AtBeginDocument{% --> <!--    \@ifundefined{textmu}% --> <!--       {\@ifundefined{muup}% --> <!--          {\def\@@micro{\mu}}% --> <!--          {\def\@@micro{\muup}}}% --> <!--       {\def\@@micro{\mbox{\textmu}}}} --> <!-- \makeatother --> <!--  --> <!-- \usepackage{txfonts}%%% \muup を提供 --> <!--  --> <!-- \begin{document} --> <!-- 10 \unit{m \cdot s^{-1}} and 12\unit{\micro g/l} --> <!--  --> <!-- $v = 10 \unit{m/s}$ and $c = 12\unit{\mu g/l}$ --> <!-- $X = \sup_{v \geq 10\unit{m/s}} f(v)$ --> <!--  --> <!-- 10\,[\unit*{m/s}]%%% このような場合には \unit* とする． --> <!-- \end{document} -->
 
 ## Comments {#ada1c094}
 
