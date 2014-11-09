@@ -25,20 +25,27 @@ pukiwiki: "iOS"
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
 - [http://appcrawlr.com/ios-apps/best-apps-latex-editor](http://appcrawlr.com/ios-apps/best-apps-latex-editor)
-- [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
 
 を参照．<br>
 
-### フリーソフトウェア (オープンソースソフトウェア) {#o1e16332}
+### TeX Writer {#q0ac10e0}
 
-- [MobileOrg](https://itunes.apple.com/jp/app/mobileorg/id634225528)
-    - [http://mobileorg.github.io/](http://mobileorg.github.io/)
-    - [https://github.com/mobileorg](https://github.com/mobileorg)
-    - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
-- [Vim](https://itunes.apple.com/jp/app/vim/id492668168)
-    - [http://applidium.com/en/applications/vim/](http://applidium.com/en/applications/vim/)
-    - [https://github.com/applidium/Vim](https://github.com/applidium/Vim)
-    - [Vim - TeX Wiki](/Vim/)
+TeX Writer は日本語の文書をローカルでコンパイルできるそうです．<br>
+TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています．<br>
+
+- [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
+- [https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8](https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8)
+- [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
+
+<!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
+<!-- -[[MobileOrg:https://itunes.apple.com/jp/app/mobileorg/id634225528]] -->
+<!-- - -http://mobileorg.github.io/ -->
+<!-- - -https://github.com/mobileorg -->
+<!-- - -[[Emacs/Org mode - TeX Wiki>Emacs/Org mode]] -->
+<!-- -[[Vim:https://itunes.apple.com/jp/app/vim/id492668168]] -->
+<!-- - -http://applidium.com/en/applications/vim/ -->
+<!-- - -https://github.com/applidium/Vim -->
+<!-- - -[[Vim - TeX Wiki>Vim]] -->
 
 ## PDF ビューア {#cf5b731d}
 
