@@ -41,10 +41,11 @@ sudo port install pdftk
 
 ### 使い方 {#m37fe2x6}
 
-[本家ドキュメント](https://www.pdflabs.com/docs/pdftk-man-page/)参照。<br>
+[本家ドキュメント](https://www.pdflabs.com/docs/pdftk-man-page/)参照．
 pdftk --help または pdftk -h と入力すれば詳しいマニュアルが現れます．
 
 ### 関連リンク {#ex5bb0d4}
 
+- [pdftk: Linux Wiki](http://oku.edu.mie-u.ac.jp/~okumura/linux/?pdftk)
 - [PDFをコマンドラインから編集できるPDFtk使い方メモ ](http://nwpct1.hatenablog.com/entry/2013/12/14/192914)
-- Tips: PDFの作り方(1) pdftkの活用 http://acetaminophen.hatenablog.com/entry/2014/11/10/000559
+- [Tips: PDFの作り方(1) pdftkの活用](http://acetaminophen.hatenablog.com/entry/2014/11/10/000559)
