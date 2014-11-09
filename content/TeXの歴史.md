@@ -116,6 +116,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2012</td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf12/">TeX ユーザの集い 2012</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2013</td><td>10</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">『[改訂第6版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://tug.org/tug2013/">TUG 2013</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2014</td><td>11</td><td style="text-align:center"></td><td><a href="http://texconf14.tumblr.com/">TeX ユーザの集い 2014</a> が開催される。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
