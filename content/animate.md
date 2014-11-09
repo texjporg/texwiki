@@ -7,6 +7,8 @@ pukiwiki: "animate"
 
 # animate
 
+## animate {#g9cn24sb}
+
 animate は PDF ファイルにアニメーションを付加するためのパッケージです．
 GIF アニメのような動く画像を取り込む際に便利です．<br>
 TeX Live, W32TeX に含まれています．<br>
