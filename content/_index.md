@@ -27,7 +27,7 @@ pukiwiki: "FrontPage"
         [TeX 入門](</TeX入門/>),
         [TeX の本](</TeXの本/>)（[BibTeX 書式リスト](</TeXの本/文献データベース/>)）
 
-- <span style="color:White;background-color:#0095D9;"> <strong>TeX ディストリビューション</strong> </span>：
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX ディストリビューション</strong> </span>：使用する TeX ディストリビューションを選択します
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, Cygwin, OS X, Linux</strong> </span>：
         [TeX Live](</TeX Live/>)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
@@ -37,22 +37,24 @@ pukiwiki: "FrontPage"
         [MacTeX](/Mac/#mactex),
         [BasicTeX](/Mac/#basictex)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>Q &amp; A</strong> </span>：
-    [質問の仕方](</質問のしかた/>)（[エラー報告用の標準データセット](</エラー報告用の標準データセット/>)）,
-    [回答の仕方](</回答のしかた/>),
-    [Q &amp; A サマリ](/ArchiveQandA/),
-    [TeX と「TeX 以外」](</TeX と「TeX 以外」/>),
-    [TeX が苦手とする処理](</TeXが苦手とする処理/>),
-    [ご意見はこちらへ](</ご意見はこちらへ/>)
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX Q &amp; A</strong> </span>：質問・回答の仕方について
+    - <span style="color:White;background-color:#00A497;"> <strong>質問・回答</strong> </span>：
+        [質問の仕方](</質問のしかた/>)（[エラー報告用の標準データセット](</エラー報告用の標準データセット/>)）,
+        [回答の仕方](</回答のしかた/>),
+        [Q &amp; A サマリ](/ArchiveQandA/),
+        [TeX と「TeX 以外」](</TeX と「TeX 以外」/>),
+        [TeX が苦手とする処理](</TeXが苦手とする処理/>),
+        [ご意見はこちらへ](</ご意見はこちらへ/>)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>TeX のエラー/警告メッセージ</strong> </span>：
-    [TeX のエラー](</TeX のエラーメッセージ/>),
-    [LaTeX のエラー](</LaTeX のエラーメッセージ/>),
-    [LaTeX の警告](</LaTeX の警告メッセージ/>),
-    [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX のエラー/警告メッセージ</strong> </span>：TeX のエラー/警告メッセージの解説
+    - <span style="color:White;background-color:#00A497;"> <strong>エラー/警告メッセージ</strong> </span>：
+        [TeX のエラー](</TeX のエラーメッセージ/>),
+        [LaTeX のエラー](</LaTeX のエラーメッセージ/>),
+        [LaTeX の警告](</LaTeX の警告メッセージ/>),
+        [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>統合環境・エディタ</strong> </span>：
-    [TeX 用統合環境・エディタ](</TeX用エディタ/>)
+- <span style="color:White;background-color:#0095D9;"> <strong>統合環境・エディタ</strong> </span>：使用する統合環境・エディタを選択します
+    → [TeX 用統合環境・エディタ](</TeX用エディタ/>)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X, Linux</strong> </span>：
         [LyX](/LyX/),
         [TeXstudio](/TeXstudio/),
@@ -93,7 +95,7 @@ pukiwiki: "FrontPage"
     - <span style="color:White;background-color:#00A497;"> <strong>Web</strong> </span>：
         [TeXをWebで](</TeXをWebで/>)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>PDF Viewer</strong> </span>：
+- <span style="color:White;background-color:#0095D9;"> <strong>PDF Viewer</strong> </span>：使用する PDF ビューアを選択します
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X, Linux</strong> </span>：
         [TeXworks](/TeXworks/),
         [TeXstudio](/TeXstudio/),
