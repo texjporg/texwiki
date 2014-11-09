@@ -46,6 +46,10 @@ eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript
 - [TeXソースコードをTeXでコンパイルして画像で出力するアプリケーション「TeX2img」](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
 - [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/)
 
+Ghostscript 9.15 では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．<br>
+
+- [Bug 695671 - eps2write gives incorrect bounding box with rotated text](http://bugs.ghostscript.com/show_bug.cgi?id=695671)
+
 Ghostscript 9.14 はハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．<br>
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
