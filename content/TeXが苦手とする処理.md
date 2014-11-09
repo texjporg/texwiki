@@ -53,7 +53,7 @@ TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手�
 - 画像にする
 - [TikZ](/TikZ/) などの「描画用」パッケージを用いる
     - [tcolorbox パッケージ](http://www.ctan.org/pkg/tcolorbox)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）<br>
-        参考：[tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)
+        参考：[tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)，[LaTeX におけるページをまたいだ囲み記事スタイルのまとめ](http://note.golden-lucky.net/2009/07/latex.html)
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
