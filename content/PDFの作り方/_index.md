@@ -107,7 +107,7 @@ pukiwiki: "PDFの作り方"
 
 - 無償，フリーウェア，オープンソース
 
-- [pdftk](http://oku.edu.mie-u.ac.jp/~okumura/linux/?pdftk) PDF ファイルに対して様々なことができるツール
+- [pdftk](/pdftk/) PDF ファイルに対して様々なことができるツール
     - [PDFedit](http://pdfedit.petricek.net/) PDF ファイルエディタ
     - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり、結合したり、回転したりできる
     - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
