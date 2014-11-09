@@ -9,23 +9,23 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
-<strong>★ [TeX ユーザの集い 2014](http://texconf14.tumblr.com) 2014年11月8日(土)開催</strong>
+## CONTENTS {#w5692639}
 
-## 目次 {#w5692639}
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX のインストール</strong> </span>：使用している OS を選択します
+    - <span style="color:White;background-color:#00A497;"> <strong>動作環境</strong> </span>：
+        [MS Windows](</Microsoft Windows/>),
+        [Cygwin](/Cygwin/),
+        [OS X](/Mac/),
+        [Linux OS](/Linux/),
+        [BSD](/BSD/),
+        [Android OS](/Android/),
+        [iOS](/iOS/),
+        本の付録 DVD-ROM から → [TeXの本](</TeXの本/>)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>インストール</strong> </span>：
-    [MS Windows](</Microsoft Windows/>),
-    [Cygwin](/Cygwin/),
-    [OS X](/Mac/),
-    [Linux OS](/Linux/),
-    [BSD](/BSD/),
-    [Android OS](/Android/),
-    [iOS](/iOS/),
-    本の付録 DVD-ROM から → [TeXの本](</TeXの本/>)
-
-- <span style="color:White;background-color:#0095D9;"> <strong>入門</strong> </span>：
-    [TeX 入門](</TeX入門/>),
-    [TeX の本](</TeXの本/>)（[BibTeX 書式リスト](</TeXの本/文献データベース/>)）
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX の使い方</strong> </span>：TeX の基本的な使い方の解説
+    - <span style="color:White;background-color:#00A497;"> <strong>入門, 解説書</strong> </span>：
+        [TeX 入門](</TeX入門/>),
+        [TeX の本](</TeXの本/>)（[BibTeX 書式リスト](</TeXの本/文献データベース/>)）
 
 - <span style="color:White;background-color:#0095D9;"> <strong>TeX ディストリビューション</strong> </span>：
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, Cygwin, OS X, Linux</strong> </span>：
@@ -45,7 +45,7 @@ pukiwiki: "FrontPage"
     [TeX が苦手とする処理](</TeXが苦手とする処理/>),
     [ご意見はこちらへ](</ご意見はこちらへ/>)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>エラー/警告メッセージ</strong> </span>：
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX のエラー/警告メッセージ</strong> </span>：
     [TeX のエラー](</TeX のエラーメッセージ/>),
     [LaTeX のエラー](</LaTeX のエラーメッセージ/>),
     [LaTeX の警告](</LaTeX の警告メッセージ/>),
