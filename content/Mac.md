@@ -131,7 +131,7 @@ TeX Live のインストールに関しては
         - <strong>ターミナル初心者への注意：</strong> 上記コマンドの先頭の <strong>$</strong> はターミナルを起動すると示される「コマンド入力待ちの記号（プロンプト）」を表します。従って、実際に入力するのは echo $PATH です。
         - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)からインストールした場合など、別途 Ghostscript をインストールして使用する場合は、そのために改めてパスを通す必要があるかもしれません。
         - 以前に MacPorts または Fink からインストールした TeX が残っている場合は、パスの優先順位の再設定が必要です。（[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
-1. tlmgr（ターミナル上で動作）またはそのGUIアプリケーションの TeX Live Utility を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
+1. ターミナル上で sudo tlmgr update --self --all または tlmgr の GUI アプリケーションである TeX Live Utility を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
 1. MacTeX-2014 の場合は texmf.cnf を編集して、利便性を高める設定をします。 (→[texmf.cnf への extractbb などの追加](/Mac/#h357d047))
     - texmf.cnf の shell_escape_commands のリストに extractbb を加えることで、dvipdfmx 用の Bounding Box を作成するコマンド extractbb の実行を自動化できます。
 1. 日本語環境を整えます。
@@ -544,7 +544,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 <!-- 参考事例を紹介するのがよろしいかと思います。 -->
 
 [2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
-: 2014-10-01
+: 2014-11-01
 
 [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
 : 2014-09-14
