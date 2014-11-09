@@ -119,11 +119,15 @@ pukiwiki: "FrontPage"
     [PDF](/PDF/),
     [PostScript](/PostScript/)
 
-- <span style="color:White;background-color:#0095D9;"> <strong>DVIware</strong> </span>：
-    [dvipdfmx](/dvipdfmx/),
-    [dvips](/dvips/),
-    [dvisvgm](/dvisvgm/),
-    [dvipng](/dvipng/)
+- <span style="color:White;background-color:#0095D9;"> <strong>DVIware</strong> </span>：DVIware の解説
+    - <span style="color:White;background-color:#00A497;"> <strong>DVI -&gt; PDF</strong> </span>：
+        [dvipdfmx](/dvipdfmx/)
+    - <span style="color:White;background-color:#00A497;"> <strong>DVI -&gt; PS</strong> </span>：
+        [dvips](/dvips/)
+    - <span style="color:White;background-color:#00A497;"> <strong>DVI -&gt; SVG</strong> </span>：
+        [dvisvgm](/dvisvgm/)
+    - <span style="color:White;background-color:#00A497;"> <strong>DVI -&gt; PNG</strong> </span>：
+        [dvipng](/dvipng/)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>Unicode 版 TeX と TeX 拡張</strong> </span>：
     [LuaTeX](/LuaTeX/),
