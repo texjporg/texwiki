@@ -142,31 +142,8 @@ pukiwiki: "FrontPage"
     [ConTeXt](/ConTeXt/)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>パッケージ</strong> </span>：
-    [LuaTeX-ja](/LuaTeX-ja/),
-    [xeCJK/ZXjatype](/xeCJK/),
-    [CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/),
-    [BXbase/PXbase](/BXbase/),
-    [BXjscls](/BXjscls/),
-    [jsclasses](/jsclasses/),
-    [KOMA-Script](/KOMA-Script/),
-    [TikZ/PGF](/TikZ/),
-    [Beamer](/Beamer/),
-    [media9](/media9/),
-    [animate](/animate/),
-    [Biblatex](/Biblatex/),
-    [PythonTeX](/PythonTeX/),
-    [The AcroTeX eDucation Bundle](/AeB/),
-    [hyperref](/hyperref/),
-    [OTF](/OTF/),
-    [bidi](/bidi/),
-    [AMS-LaTeX](/AMS-LaTeX/),
-    [Babel](/Babel/),
-    [XyMTeX](/XyMTeX/),
-    ChemFig,
-    [mhchem](/mhchem/),
-    [学会スタイル等](</学会スタイル等/>),
-    [クラスファイル一覧](</クラスファイル一覧/>),
-    [各種記号やフォント](</各種記号やフォント/>)
+    [目的別パッケージ簡易リファレンス](</目的別パッケージ簡易リファレンス/>),
+    [TeX入門/各種パッケージの利用](</TeX入門/各種パッケージの利用/>)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>関連ツールなど</strong> </span>：
     [Latexmk](/Latexmk/),
