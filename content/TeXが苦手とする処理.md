@@ -45,6 +45,8 @@ pukiwiki: "TeXが苦手とする処理"
 
 ### 飾り枠（ときとしてページ分割可能なもの） {#t43fb31c}
 
+[目的別パッケージ簡易リファレンス](</目的別パッケージ簡易リファレンス/#w5826b14>) も参照．<br>
+
 - [LaTeX2e で定理などを枠を囲む方法](http://nalab.mind.meiji.ac.jp/~mk/labo/tex/how-to-waku/how-to-waku.html)
 
 TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手とします。<br>
