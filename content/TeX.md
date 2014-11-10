@@ -59,6 +59,13 @@ pukiwiki: "TeX"
 - [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
 - [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
 
+### 実行速度 → Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用する {#d99944d5}
+
+Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください．<br>
+
+- [TeXLiveのlatexが遅い件](http://pman0214.blog37.fc2.com/blog-entry-305.html)
+- [MacとUbuntuでのLaTeX実行速度の違い](http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
+
 ### 不具合 {#e730befe}
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
