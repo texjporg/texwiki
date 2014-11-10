@@ -641,7 +641,8 @@ Microsoft Windows 上で動く Linux ライクな環境である [Cygwin](/Cygwi
 
 ### [TeX Live](</TeX Live/>) ([Linux](/Linux/)) <a id="texlive-linux"></a> {#h0f78970}
 
-VirtualBox などの仮想マシン上に Linux をインストールして TeX Live を使用する方法もあります．
+VirtualBox などの仮想マシン上に Linux をインストールして TeX Live を使用する方法もあります．<br>
+Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください．<br>
 
 - [Linux - TeX Wiki](/Linux/)
 
