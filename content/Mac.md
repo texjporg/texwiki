@@ -664,23 +664,10 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr install collection-langjapanese
 ```
 
-<!-- ***インストールのやり方などの事例 [#u370c983] -->
-<!--  -->
-<!-- :[http://xoyip.hatenablog.com/entry/2014/07/29/200000 MacでTexの数式を！LaTeXiTを使えるようになるまで] | 2014-07-29 -->
-<!--  -->
-<!-- :[http://www.misakit.com/post/91833270781/macbook-air-tex MacBook Air に TeX 環境を入れなおす] | 2014-07-15 -->
-<!--  -->
-<!-- :[http://masawada.hatenablog.jp/entry/2014/07/12/153947 BasicTeXをインストールしてReVIEWでpdfを生成するまで] | 2014-07-12 -->
-<!--  -->
-<!-- :[[[proxy対応]brewとtlmgrによるTeX環境構築 (ヒラギノ, times埋め込み設定):http://qiita.com/yyamnk/items/2da2791bcee82643984f]] | 2014-05-09 -->
-<!--  -->
-<!-- :[[Macbook Air に TeX を入れてみた:http://heureux.jp/blog/2014/04/06/226.html]] | 2014-04-06 -->
-<!--  -->
-<!-- :[[MacBookAirにTeXを入れなおした話。:http://sakueji.com/mactex-reinstall/]] | 2014-02-14 -->
-<!--  -->
-<!-- :[[Homebrewで最小構成のTeX環境を構築する:http://web-salad.hateblo.jp/entry/2014/02/03/000000]] | 2014-02-03 -->
-<!--  -->
-<!-- :[[BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで:http://gongo.hatenablog.com/entry/2014/01/13/225304]] | 2014-01-13 -->
+#### インストールのやり方などの事例 {#u370c983}
+
+[『Fuzoku実践入門』サンプルリポジトリの紹介](http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019)<br>[Fuzoku実践入門 環境サンプルファイル](https://github.com/akinomurasame/learning-fuzoku-sample)
+: 2014-11-11
 
 ### [MacPorts](http://www.macports.org/) {#ebd5afd3}
 
