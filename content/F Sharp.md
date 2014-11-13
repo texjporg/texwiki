@@ -35,11 +35,9 @@ pukiwiki: "F Sharp"
 #### Windows {#a1ea7f03}
 
 [Use F# on Windows](http://fsharp.org/use/windows/)<br>
-[Announcing Visual F# Tools 3.1.1, with support for Desktop and Web express](http://blogs.msdn.com/b/fsharpteam/archive/2014/01/22/announcing-visual-f-3-1-1-and-support-for-desktop-express.aspx)<br>
+[Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)<br>
 
 を参照．<br>
-
-[Microsoft Visual Studio Express 2013 for Windows Desktop](http://www.microsoft.com/ja-jp/download/details.aspx?id=40787) または [Microsoft Visual Studio Express 2013 for Web](http://www.microsoft.com/ja-jp/download/details.aspx?id=40747) を使用している場合は [Visual F# Out of Band Release 3.1.1](http://www.microsoft.com/en-us/download/details.aspx?id=41654) をインストールすれば F# が使用できます．<br>
 
 #### OS X {#ja93cdf9}
 
