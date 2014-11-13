@@ -21,7 +21,7 @@ pukiwiki: "C++/CLI"
 
 ### C++/CLI 版 {#i266eeec}
 
-Microsoft Visual Studio "14" CTP の Microsoft (R) C/C++ Optimizing Compiler Version 19.00.21730.1 で動作確認しています．<br>
+Microsoft Visual Studio 2015 の Microsoft (R) C/C++ Optimizing Compiler でビルドできます．<br>
 コマンドラインからビルドする場合は以下のようにしてビルドします．<br>
 
 ```
