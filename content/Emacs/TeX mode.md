@@ -152,7 +152,7 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
 ### OS X {#g5794e10}
 
 動作未確認です．<br>
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490) または [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
+[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
 Emacs を起動して<br>
 
 ```
