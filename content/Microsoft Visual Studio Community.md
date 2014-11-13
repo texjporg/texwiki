@@ -14,3 +14,4 @@ Microsoft Visual Studio Community を使用すれば自分でビルドして使�
 
 - [http://www.microsoft.com/ja-jp/dev/products/community.aspx](http://www.microsoft.com/ja-jp/dev/products/community.aspx)
 - [http://www.visualstudio.com/news/vs2015-preview-vs](http://www.visualstudio.com/news/vs2015-preview-vs)
+- [【Unity】Visual Studio Community 2013 で Visual Studio Tools for Unity を使用する](http://baba-s.hatenablog.com/entry/2014/11/13/150428)
