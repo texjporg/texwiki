@@ -126,7 +126,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 を参照．
 
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490) または [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
+[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
 展開したフォルダ名を yatex に変更します．<br>
 
