@@ -7,7 +7,7 @@ pukiwiki: "zathura"
 
 # zathura
 
-## [zathura](http://pwmt.org/projects/zathura/) {#z4200d90}
+## [zathura](https://pwmt.org/projects/zathura/) {#z4200d90}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -18,17 +18,17 @@ PDF ファイルや PS ファイルが表示できます．<br>
 SyncTeX に対応しています．<br>
 ファイルの自動更新機能もあります．<br>
 
-- [Home | pwmt.org](http://pwmt.org/)
-    - [zathura](http://pwmt.org/projects/zathura/)
-    - [girara](http://pwmt.org/projects/girara/)
-- [The zathura Archives](http://lists.pwmt.org/archive/zathura/)
-- [The girara Archives](http://lists.pwmt.org/archive/girara/)
+- [Home | pwmt.org](https://pwmt.org/)
+    - [zathura](https://pwmt.org/projects/zathura/)
+    - [girara](https://pwmt.org/projects/girara/)
+- [The zathura Archives](https://lists.pwmt.org/archive/zathura/)
+- [The girara Archives](https://lists.pwmt.org/archive/girara/)
 
 ### 動作環境 {#q9b59e7d}
 
 OS X, Linux, BSD
 
-[Known supported distributions](http://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
+[Known supported distributions](https://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
 
 ### License {#v6901e72}
 
@@ -38,7 +38,7 @@ OS X, Linux, BSD
 
 - [https://git.pwmt.org/?p=zathura.git;a=tags](https://git.pwmt.org/?p=zathura.git;a=tags)
 - [https://git.pwmt.org/?p=girara.git;a=tags](https://git.pwmt.org/?p=girara.git;a=tags)
-- [News](http://pwmt.org/news/)
+- [News](https://pwmt.org/news/)
 
 を参照．<br>
 
@@ -55,16 +55,6 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 - [https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
 - [https://git.pwmt.org/?p=girara.git](https://git.pwmt.org/?p=girara.git) (summary)
-
-<!-- **派生版 [#oea86148] -->
-<!--  -->
-<!-- zathura を SyncTeX に対応させた zathura-synctex が作成されています． → 本家にマージされました．~ -->
-<!--  -->
-<!-- -[[zathura-synctex:https://github.com/rschatz/zathura-synctex]] -->
-<!-- -[[[zathura] [PATCH] synctex forward synchronization:http://lists.pwmt.org/archive/zathura/2013-December/001324.html]] -->
-<!-- -[[[zathura] Synctex support:http://lists.pwmt.org/archive/zathura/2011-August/000047.html]] -->
-<!-- -[[[zathura]  Synctex support:http://www.mail-archive.com/zathura@lists.pwmt.org/msg00042.html]] -->
-<!-- -[[Re: [zathura] Synctex support:http://www.mail-archive.com/zathura@lists.pwmt.org/msg00019.html]] -->
 
 ## ダウンロード/インストール {#w2221884}
 
@@ -96,7 +86,7 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 ## 不具合 {#ue94eec4}
 
-- [http://bugs.pwmt.org/](http://bugs.pwmt.org/)
+- [https://bugs.pwmt.org/](https://bugs.pwmt.org/)
 
 ## 使い方 {#w279d8d0}
 
@@ -107,8 +97,7 @@ zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
 
 ### コマンドラインオプション {#u4f91695}
 
-<!-- -https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c;hb=develop -->
-- [https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c](https://git.pwmt.org/?p=zathura.git;a=blob_plain;f=main.c)
+- [https://git.pwmt.org/?p=zathura.git;a=blob;f=zathura/main.c;hb=HEAD](https://git.pwmt.org/?p=zathura.git;a=blob;f=zathura/main.c;hb=HEAD)
 
 ```
 $ zathura --help
@@ -134,12 +123,6 @@ Application Options:
   --synctex-pid=pid                    Highlight given position in the given process
   --mode=mode                          Start in a non-default mode
 ```
-
-<!-- $ zathura - -version -->
-<!-- zathura 0.2.6 -->
-<!-- (plugin) djvu (0.2.3) (/usr/lib/zathura/djvu.so) -->
-<!-- (plugin) pdf-poppler (0.2.4) (/usr/lib/zathura/pdf.so) -->
-<!-- (plugin) ps (0.2.2) (/usr/lib/zathura/ps.so) -->
 
 ## SyncTeX {#g93d0312}
 
