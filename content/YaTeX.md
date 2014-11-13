@@ -463,6 +463,29 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq dvi2-command "chromium --new-window")
 ```
 
+### pdf preview {#ia0437ce}
+
+```
+(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq tex-pdfview-command "texworks")
+(setq tex-pdfview-command "texstudio --pdf-viewer-only")
+(setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
+(setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
+(setq tex-pdfview-command "/usr/bin/open -a Preview")
+(setq tex-pdfview-command "/usr/bin/open -a Skim")
+(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
+(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
+(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
+(setq tex-pdfview-command "/usr/bin/open -a Firefox")
+(setq tex-pdfview-command "evince")
+(setq tex-pdfview-command "okular --unique")
+(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+(setq tex-pdfview-command "qpdfview --unique")
+(setq tex-pdfview-command "mupdf")
+(setq tex-pdfview-command "firefox -new-window")
+(setq tex-pdfview-command "chromium --new-window")
+```
+
 ### YaTeX-dvi2-command-ext-alist {#x19206ad}
 
 ```
