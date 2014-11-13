@@ -45,7 +45,7 @@ C で記述されたライブラリは C++, D, Go, Rust, Pascal, Fortran, Haskel
     - [MinGW/MinGW-W64](/MinGW/)
     - [Cygwin](/Cygwin/)
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
-- Microsoft Visual Studio Express
+- [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)
     - [C99 library support in Visual Studio 2013](http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx)
 - [TCC : Tiny C Compiler](http://bellard.org/tcc/)
 
@@ -81,7 +81,7 @@ Clang/LLVM でもビルド可能です．<br>
 clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
 ```
 
-Microsoft Visual Studio Express の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+Microsoft Visual Studio Community の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
 cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
@@ -102,7 +102,7 @@ cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
  * Clang/LLVM
  * $ clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
  *
- * Microsoft Visual Studio Express
+ * Microsoft Visual Studio Community
  * >cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
  */
 
