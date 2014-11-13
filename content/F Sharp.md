@@ -36,6 +36,7 @@ pukiwiki: "F Sharp"
 
 [Use F# on Windows](http://fsharp.org/use/windows/)<br>
 [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)<br>
+[http://blogs.msdn.com/b/fsharpteam/archive/2014/11/12/announcing-a-preview-of-f-4-0-and-the-visual-f-tools-in-vs-2015.aspx](http://blogs.msdn.com/b/fsharpteam/archive/2014/11/12/announcing-a-preview-of-f-4-0-and-the-visual-f-tools-in-vs-2015.aspx)
 
 を参照．<br>
 
