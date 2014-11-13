@@ -51,7 +51,7 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 - [Notepad++](/Notepad++/)
-- Microsoft Visual Studio Express
+- [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)
     - [Python Tools for Visual Studio](http://pytools.codeplex.com/)
 
 ## インストール {#y6c76d8e}
