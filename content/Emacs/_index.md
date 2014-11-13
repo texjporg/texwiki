@@ -70,19 +70,10 @@ GNU Emacs は，フリーソフトウェアです．<br>
     - [64 bits emacs for Windows](http://semantic.supelec.fr/popineau/programming-emacs.html)
     - [http://aikotobaha.blogspot.jp/search/label/gnupack](http://aikotobaha.blogspot.jp/search/label/gnupack)
 - 32-bit binary
-    - [EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861)
     - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
-    - [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)
-        - [http://sourceforge.jp/projects/gnupack/releases/46675/](http://sourceforge.jp/projects/gnupack/releases/46675/)
-        - [gnupackの開発メモ](http://d.hatena.ne.jp/ksugita0510/)
-        - [gnupack Users Guide](http://gnupack.sourceforge.jp/docs/current/UsersGuide.html)
-        - [gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html)[#emacs for gnupack](http://gnupack.sourceforge.jp/docs/current/UsersGuide_download.html#_download_emacs)
-        - [ビルド記録](http://gnupack.sourceforge.jp/docs/current/UsersGuide_build_procedure.html#_emacs)
-        - [http://jaist.dl.sourceforge.jp/gnupack/](http://jaist.dl.sourceforge.jp/gnupack/)
 
 #### OS X {#v2ece0ad}
 
-- [MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490)
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
 - [Emacs For Mac OS X](http://emacsformacosx.com/)
@@ -336,6 +327,7 @@ Source editor:
 
 ### Windows {#a1ddfe8b}
 
+- [Window版emacs24.4をclangでビルドする](http://blog.livedoor.jp/tek_nishi/archives/8597627.html)
 - [NTEmacs の設定](http://www49.atwiki.jp/ntemacs/pages/1.html)
 - [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
 - [C/Migemo を Windows 8 にインストール (Emacs 24 に移行のため)](http://uep.ipe.media.kyoto-u.ac.jp/cmigemo-%E3%82%92-windows-8-%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-emacs-24-%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%AE%E3%81%9F%E3%82%81/)
