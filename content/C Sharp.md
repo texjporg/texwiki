@@ -22,14 +22,12 @@ pukiwiki: "C Sharp"
 - [C# Advent Calendar 2013](http://www.adventar.org/calendars/119)
 - [.NET Foundation](http://www.dotnetfoundation.org/)
 - [AnyCPUなC#モジュールからx86/x64のDLLを呼び分ける方法まとめ](http://cflat-inc.hatenablog.com/entry/20130723/1374535605)
-- [Visual Studio 14 CTPでC# vNextを試す](http://xin9le.net/articles/185)
-- [Visual Studio 2014 CTP](http://ufcpp.wordpress.com/2014/06/06/visual-studio-2014-ctp/)
 
 ## 処理系 {#h8ce0ca0}
 
 ### csc {#fbf8c36a}
 
-- Microsoft Visual Studio Express
+- [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)
 - [Microsoft Build Tools 2013](http://www.microsoft.com/ja-jp/download/details.aspx?id=40760) MSBuild, C# コンパイラ, VB コンパイラ
 
 ### mcs {#zfadab82}
