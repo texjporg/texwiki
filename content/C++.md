@@ -58,8 +58,8 @@ C++ は汎用プログラミング言語です．<br>
 - [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
 - ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
     - [http://clang.llvm.org/cxx_status.html](http://clang.llvm.org/cxx_status.html)
-- Microsoft Visual Studio Express
-    - [Visual Studio "14" CTP Downloads](http://www.visualstudio.com/en-us/downloads/visual-studio-14-ctp-vs)
+- [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)
+    - [http://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs](http://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs)
     - [Support For C++11 Features (Modern C++)](http://msdn.microsoft.com/en-us/library/vstudio/hh567368.aspx)
     - [C++11 の機能 (Modern C++) のサポート](http://msdn.microsoft.com/ja-jp/library/vstudio/hh567368.aspx)
 
@@ -95,7 +95,7 @@ Clang/LLVM でもビルド可能です．<br>
 clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
 ```
 
-Microsoft Visual Studio "14" CTP 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
+Microsoft Visual Studio 2015 以降の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
 
 ```
 cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
@@ -116,7 +116,7 @@ cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
  * Clang/LLVM
  * $ clang++ -std=c++11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.cpp -luser32 -lshell32 -ladvapi32 -lshlwapi -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++ -isystem /mingw/lib/gcc/mingw32/4.8.1/include/c++/mingw32
  *
- * Microsoft Visual Studio Express
+ * Microsoft Visual Studio Community
  * >cl fwdsumatrapdf.cpp user32.lib advapi32.lib shlwapi.lib
  */
 
