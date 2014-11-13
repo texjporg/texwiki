@@ -258,7 +258,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 - [AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/)
 - [Build Latex environments](http://sorabu.tumblr.com/post/6703335969/build-latex-environments)
 
-[MacEmacs JP](http://sourceforge.jp/projects/macemacsjp/releases/?package_id=13490) または [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
+[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
 
 Emacs を起動して
 
