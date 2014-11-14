@@ -46,6 +46,7 @@ GPLv2
 ### 出力形式 {#n63a1aac}
 
 入力した TeX ソースコードを TeX でコンパイルして，次のような形式の画像で出力します．<br>
+出力した画像は Word/Excel/PowerPoint/Illustrator/InDesign 等に貼り付けて利用可能です．
 
 - アウトラインをとった EPS ファイル
 - JPEG ファイル
