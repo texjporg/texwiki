@@ -12,6 +12,7 @@ pukiwiki: "Microsoft Visual Studio Community"
 TeX 関連プログラムには C, C++, C#, F#, VB で書かれたプログラムがあります．<br>
 Microsoft Visual Studio Community を使用すれば自分でビルドして使用することができます．<br>
 
+- [http://www.visualstudio.com/products/visual-studio-community-vs](http://www.visualstudio.com/products/visual-studio-community-vs)
 - [http://www.microsoft.com/ja-jp/dev/products/community.aspx](http://www.microsoft.com/ja-jp/dev/products/community.aspx)
 - [http://www.visualstudio.com/news/vs2015-preview-vs](http://www.visualstudio.com/news/vs2015-preview-vs)
 - [【Unity】Visual Studio Community 2013 で Visual Studio Tools for Unity を使用する](http://baba-s.hatenablog.com/entry/2014/11/13/150428)
