@@ -210,13 +210,17 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
 
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/TeX/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
 
 #### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
 
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/TeX/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/)
+- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/)
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
