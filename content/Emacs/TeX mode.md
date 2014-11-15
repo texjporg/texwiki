@@ -166,6 +166,12 @@ C-x C-f ~/
 
 ```
 ;;
+;; PATH
+;;
+(setenv "PATH"
+        (concat (getenv "PATH") ":/usr/texbin"))
+
+;;
 ;; TeX mode
 ;;
 (setq auto-mode-alist
