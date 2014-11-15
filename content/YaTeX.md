@@ -440,7 +440,14 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq makeindex-command "mendex -U")
 ```
 
-### preview {#t737f278}
+### YaTeX-dvi2-command-ext-alist {#x19206ad}
+
+```
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+```
+
+### dvi2-command (C-c C-t j でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#t737f278}
 
 ```
 (setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
@@ -463,7 +470,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq dvi2-command "chromium --new-window")
 ```
 
-### pdf preview {#ia0437ce}
+### tex-pdfview-command (C-c C-t d でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#ia0437ce}
 
 ```
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
@@ -484,23 +491,6 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq tex-pdfview-command "mupdf")
 (setq tex-pdfview-command "firefox -new-window")
 (setq tex-pdfview-command "chromium --new-window")
-```
-
-### YaTeX-dvi2-command-ext-alist {#x19206ad}
-
-```
-(setq YaTeX-dvi2-command-ext-alist
-      '(("SumatraPDF\\|TeXworks\\|texstudio\\|evince\\|okular\\|firefox\\|chrome\\|AcroRd32\\|pdfopen" . ".pdf")))
-```
-
-```
-(setq YaTeX-dvi2-command-ext-alist
-      '(("open\\|Preview\\|Skim\\|TeXShop\\|TeXworks\\|texstudio\\|mupdf\\|Firefox\\|Adobe" . ".pdf")))
-```
-
-```
-(setq YaTeX-dvi2-command-ext-alist
-      '(("xdg-open\\|evince\\|okular\\|zathura\\|qpdfview\\|texworks\\|texstudio\\|mupdf\\|firefox\\|chromium\\|AcroRd32\\|pdfopen" . ".pdf")))
 ```
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
