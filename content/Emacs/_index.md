@@ -46,18 +46,12 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 #### ChangeLog {#eba94bf5}
 
-- [Browsing /emacs - Savannah Bazaar repositories](http://bzr.savannah.gnu.org/lh/emacs/)
-    - [コミットログ](http://bzr.savannah.gnu.org/lh/emacs/trunk/changes/)
-    - [ChangeLog](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/ChangeLog)
-- [emacs.git - Git mirror of Emacs bzr repo](http://git.savannah.gnu.org/cgit/emacs.git)
+- [emacs.git - Emacs source repository](http://git.savannah.gnu.org/cgit/emacs.git)
     - [コミットログ](http://git.savannah.gnu.org/cgit/emacs.git/log/)
     - [ChangeLog](http://git.savannah.gnu.org/cgit/emacs.git/tree/ChangeLog)
 - [Savannah Git Hosting - emacs.git/summary](http://git.savannah.gnu.org/gitweb/?p=emacs.git)
     - [コミットログ](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=shortlog)
     - [ChangeLog](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=ChangeLog;hb=HEAD)
-- [Public Git Hosting - emacs.git/summary](http://repo.or.cz/w/emacs.git)
-    - [コミットログ](http://repo.or.cz/w/emacs.git/shortlog)
-    - [ChangeLog](http://repo.or.cz/w/emacs.git/blob/master:/ChangeLog)
 
 ### 派生版 {#n86b811e}
 
@@ -117,7 +111,7 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [pdf-tools](https://github.com/politza/pdf-tools)
 - [emacs-jp/migemo · GitHub](https://github.com/emacs-jp/migemo)
 
-### [DocView](http://bzr.savannah.gnu.org/lh/emacs/trunk/annotate/head:/lisp/doc-view.el) <a id="docview"></a> {#s0614314}
+### [DocView](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/doc-view.el) <a id="docview"></a> {#s0614314}
 
 DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示することができます．
 
