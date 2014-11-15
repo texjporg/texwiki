@@ -76,7 +76,9 @@ M-x list-packages RET でリストを表示して auctex を選択
 ### Windows {#w81a725c}
 
 64-bit Windows の場合は<br>
-[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64)<br> <!-- 32-bit Windows の場合は~ --> <!-- [[EmacsのMinGWビルド:http://www.rainyman.net/nest/?p=861]] または [[NTEmacs:http://cha.la.coocan.jp/doc/NTEmacs.html]] または [[emacs for gnupack:http://sourceforge.jp/projects/gnupack/]]~ -->
+[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
+32-bit Windows の場合は<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
 をインストールします．<br>
 
 Emacs を起動して
@@ -96,9 +98,9 @@ C-x C-f ~/
 
 - [CTAN:support/auctex/](https://mirror.ctan.org/support/auctex/)
 
-から auctex-11.87-e24.2-msw.zip をダウンロードして展開します．
+から auctex-11.88-e24.4-msw.zip をダウンロードして展開します．
 
-auctex-11.87-e24.2-msw フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
+auctex-11.88-e24.4-msw-msw フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
 
 load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
 
