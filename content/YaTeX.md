@@ -74,9 +74,9 @@ Linux ではこの現象は起きませんでした．<br>
 ### Windows {#n699538a}
 
 64-bit Windows の場合は<br>
-[emacs-w64](http://emacsbinw64.sourceforge.net/) または [NTEmacs64](https://github.com/chuntaro/NTEmacs64)<br>
+[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
 32-bit Windows の場合は<br>
-[EmacsのMinGWビルド](http://www.rainyman.net/nest/?p=861) または [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs for gnupack](http://sourceforge.jp/projects/gnupack/)<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
 をインストールします．<br>
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
 展開したフォルダ名を yatex に変更します．<br>
