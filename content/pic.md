@@ -23,8 +23,7 @@ picとは，A Graphics Language for Typesetting
 
 ## xy-pic {#b9215e15}
 
-- [http://tug.org/applications/Xy-pic/](http://tug.org/applications/Xy-pic/)
-- [http://www.math.columbia.edu/~lauda/xy/](http://www.math.columbia.edu/~lauda/xy/)
+- [http://tug.org/applications/Xy-pic/Xy-pic.html](http://tug.org/applications/Xy-pic/Xy-pic.html)
 - [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
 - [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
 - [http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
@@ -60,7 +59,3 @@ picとは，A Graphics Language for Typesetting
 }
 \end{document}
 ```
-
-## ketpic {#d0d77e0e}
-
-- [http://ketpic.com/](http://ketpic.com/)
