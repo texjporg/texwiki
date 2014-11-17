@@ -186,6 +186,11 @@ pukiwiki: "FrontPage"
 - <span style="color:White;background-color:#0095D9;"> <strong>TUG</strong> </span>：
     [<strong>TUG 2013</strong>（第34回TeX Users Group年次大会）](http://tug.org/tug2013/jp/), [チュートリアルを日本語で聞く会](http://tug.org/tug2013/jp/followup.html)
 
+- <span style="color:White;background-color:#0095D9;"> <strong>TeX ＆ LaTeX Advent Calendar</strong> </span>：
+    [2014](http://www.adventar.org/calendars/553),
+    [2013](http://www.adventar.org/calendars/187),
+    [2012](https://atnd.org/events/34318)
+
 - <span style="color:White;background-color:#0095D9;"> <strong>関連リンク</strong> </span>：
     [国内リンク](</国内リンク/>),
     [海外リンク](</海外リンク/>),
