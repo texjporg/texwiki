@@ -289,7 +289,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 > Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください．<br>
 > MacTeX-2014 に収録されている Ghostscript 9.10 は古いので [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版の Ghostscript をダウンロードしてください．<br>
-> MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます．<br>
+> MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます． (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))<br>
 
 ### インストールディレクトリ {#laf8fccf}
 
