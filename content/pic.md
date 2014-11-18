@@ -9,7 +9,7 @@ pukiwiki: "pic"
 
 ## pic {#ce82732b}
 
-picとは，A Graphics Language for Typesetting
+picとは，簡単なフローチャートのような図を作成するためのプログラミング言語 (A Graphics Language for Typesetting) です．
 
 - [http://www.cs.bell-labs.com/10thEdMan/pic.pdf](http://www.cs.bell-labs.com/10thEdMan/pic.pdf)  by Brian W. Kernighan
 
@@ -21,13 +21,14 @@ picとは，A Graphics Language for Typesetting
 
 - [http://www.math.uiuc.edu/~west/gpic.html](http://www.math.uiuc.edu/~west/gpic.html)  by  Douglas B. West
 
-## xy-pic {#b9215e15}
+## Xy-pic {#b9215e15}
 
 - [http://tug.org/applications/Xy-pic/Xy-pic.html](http://tug.org/applications/Xy-pic/Xy-pic.html)
 - [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
 - [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
 - [http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
 - [http://akagi.ms.u-tokyo.ac.jp/ftp-j.html](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html) （日本語での解説，より詳しい解説）
+- [http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/xypic.html](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/xypic.html)
 
 ### 例 {#xd92553b}
 
