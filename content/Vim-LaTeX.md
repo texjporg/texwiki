@@ -208,8 +208,8 @@ SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携
 [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
 
 $HOME/.vim/vimrc に設定を記述します．<br>
-ただし Skim で \ls を使った Forward search を行う
-場合、let g:Tex_ViewRule_pdf = 'Skim" とします。<br>
+Skim で \ls を使った Forward search を行う
+場合、let g:Tex_ViewRule_pdf = 'Skim' とします。<br>
 
 ***
 
