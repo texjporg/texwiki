@@ -38,16 +38,7 @@ MinGW-W64 は 64-bit Windows と 32-bit Windows のネイティブバイナリ�
 
 ### MSYS2 {#x1532c23}
 
-- [http://www.mingw.org/wiki/MSYS2](http://www.mingw.org/wiki/MSYS2)
-- [http://sourceforge.net/projects/msys2/](http://sourceforge.net/projects/msys2/)
-- [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
-
-MSYS2 では LANG が ja_JP.UTF-8 になっています．<br>
-
-```
-$ echo $LANG
-ja_JP.UTF-8
-```
+[MSYS2 - TeX Wiki](/MSYS2/)
 
 ### MSYS1 {#pb3bd48b}
 
