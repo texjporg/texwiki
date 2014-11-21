@@ -118,10 +118,10 @@ TeX Live のインストールに関しては
 ### MacTeX インストールの概略 {#t244993f}
 
 1. [MacTeX のホームページ](http://tug.org/mactex/)または上記の各ミラーサイトから MacTeX.pkg をダウンロードします。<br>
-    - 「本家」の MacTeX からのダウンロードも、自動的にミラーサイトからのダウンロードとなります。
+    - 「本家」の MacTeX からのダウンロードも、自動的に CTAN のミラーサイトからのダウンロードとなります。
     - MacTeXtras.zip は、追加のフロントエンドなどですから、必須のものではありません。（[MacTeXtrasの説明](http://tug.org/mactex/mactextras.html)）
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
-    - PATH、MANPATH はインストール時に適切に自動設定されます。<strong>手動でパスを通す必要はありません</strong>。（[What is Installed.pdf を参照](http://tug.org/mactex/What_Is_Installed.pdf)）<br>
+    - PATH、MANPATH はインストール時に適切に自動設定されます。<br><strong>手動でパスを通す必要はありません</strong>。（[What is Installed.pdf を参照](http://tug.org/mactex/What_Is_Installed.pdf)）<br>
         ターミナルで以下のコマンドを実行し、返ってきた PATH に <strong>/usr/texbin</strong> が含まれていれば大丈夫です。
 
         ```
