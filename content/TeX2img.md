@@ -30,7 +30,7 @@ Windows, OS X
 
 #### Mac 版 {#nc589b01}
 
-GPLv2
+[GPLv2](https://github.com/doraTeX/TeX2img/blob/master/LICENSE.txt)
 
 ### ChangeLog {#c3216979}
 
