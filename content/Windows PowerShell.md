@@ -348,3 +348,6 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSh
 - [PowerShellスクリプト内でC#コードを書いて使う](http://yomon.hatenablog.com/entry/2013/06/05/PowerShell%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E5%86%85%E3%81%A7C%23%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E6%9B%B8%E3%81%84%E3%81%A6%E4%BD%BF%E3%81%86)
     <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
     <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
+
+- [http://qiita.com/tags/powershell](http://qiita.com/tags/powershell)
+    - [「 Linux ならできるのに、だから Windows は...」「それ PowerShell でできるよ」](http://qiita.com/cd01/items/da9a36582372e7d0a7f6)
