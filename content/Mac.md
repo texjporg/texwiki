@@ -666,6 +666,8 @@ $ sudo tlmgr install collection-langjapanese
 
 #### インストールのやり方などの事例 {#u370c983}
 
+<!-- :[http://qiita.com/misakit/items/23df393c4b8cd3b79fd7 MacBook Air に TeX 環境を入れなおす] | 2014-11-19 -->
+
 [『Fuzoku実践入門』サンプルリポジトリの紹介](http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019)<br>[Fuzoku実践入門 環境サンプルファイル](https://github.com/akinomurasame/learning-fuzoku-sample)
 : 2014-11-11
 
