@@ -14,6 +14,7 @@ pukiwiki: "TeX2img"
 ## TeX2img とは {#icba8205}
 
 TeX2img は TeX ソースコードを画像に変換するアプリケーションです．<br>
+しばしば「数式の画像化」ツールとして紹介されますが，実際は「地の文を含めて TeX 文書全体を画像化」することを想定して作られています．<br>
 
 - [TeX2img](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
 - [TeX2img](http://island.geocities.jp/loveinequality/) (Mac 版)
@@ -50,10 +51,11 @@ Windows, OS X
 出力した画像は Word/Excel/PowerPoint/Illustrator/InDesign 等に貼り付けて利用可能です．
 
 - アウトラインをとった EPS ファイル
+- アウトラインをとった PDF ファイル
+- テキストを保持した PDF ファイル（Mac 版のみ）
 - JPEG ファイル
 - PNG ファイル
 - 背景を透過させた PNG ファイル
-- PDF ファイル
 
 ## 関連リンク {#g449c714}
 
