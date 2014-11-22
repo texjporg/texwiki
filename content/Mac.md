@@ -119,9 +119,9 @@ TeX Live のインストールに関しては
 
 1. [MacTeX のホームページ](http://tug.org/mactex/)または上記の各ミラーサイトから MacTeX.pkg をダウンロードします。<br>
     - 「本家」の MacTeX からのダウンロードも、自動的に CTAN のミラーサイトからのダウンロードとなります。
-    - MacTeXtras.zip は、追加のフロントエンドなどですから、必須のものではありません。（[MacTeXtrasの説明](http://tug.org/mactex/mactextras.html)）
+    - MacTeXtras.zip は、追加のフロントエンドなどですから、必須のものではありません。（→[MacTeXtrasの説明](http://tug.org/mactex/mactextras.html)）
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
-    - PATH、MANPATH はインストール時に適切に自動設定されます。<br><strong>手動でパスを通す必要はありません</strong>。（[What is Installed.pdf を参照](http://tug.org/mactex/What_Is_Installed.pdf)）<br>
+    - <strong>手動でパスを通す必要はありません</strong>。（→[What is Installed.pdf を参照](http://tug.org/mactex/What_Is_Installed.pdf)）<br>PATH、MANPATH はインストール時に適切に自動設定されます。<br>
         ターミナルで以下のコマンドを実行し、返ってきた PATH に <strong>/usr/texbin</strong> が含まれていれば大丈夫です。
 
         ```
@@ -130,7 +130,7 @@ TeX Live のインストールに関しては
 
         - <strong>ターミナル初心者への注意：</strong> 上記コマンドの先頭の <strong>$</strong> はターミナルを起動すると示される「コマンド入力待ちの記号（プロンプト）」を表します。従って、実際に入力するのは echo $PATH です。
         - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)からインストールした場合など、別途 Ghostscript をインストールして使用する場合は、そのために改めてパスを通す必要があるかもしれません。
-        - 以前に MacPorts または Fink からインストールした TeX が残っている場合は、パスの優先順位の再設定が必要です。（[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
+        - 以前に MacPorts または Fink からインストールした TeX が残っている場合は、パスの優先順位の再設定が必要です。（→[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
 1. ターミナル上で sudo tlmgr update --self --all または tlmgr の GUI アプリケーションである TeX Live Utility を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
 1. MacTeX-2014 の場合は texmf.cnf を編集して、利便性を高める設定をします。 (→[texmf.cnf への extractbb などの追加](/Mac/#h357d047))
     - texmf.cnf の shell_escape_commands のリストに extractbb を加えることで、dvipdfmx 用の Bounding Box を作成するコマンド extractbb の実行を自動化できます。
