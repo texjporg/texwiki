@@ -21,7 +21,7 @@ D は汎用プログラミング言語です．<br>
 - [http://www.kmonos.net/alang/d/](http://www.kmonos.net/alang/d/)
 - [Wikipedia.ja:D言語](https://ja.wikipedia.org/wiki/D%E8%A8%80%E8%AA%9E)
 - [http://qiita.com/tags/dlang](http://qiita.com/tags/dlang)
-- [D言語 Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/dlang)
+- [D言語 Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/dlang)
 - [D言語基礎文法最速マスター](https://gist.github.com/repeatedly/2470712)
 - [D言語でShift-JISを入出力する](http://qiita.com/___uhu/items/9fc09e6aea9939395d74)
 - [Windows API: Strange behaviour after calling GetModuleFileNameExA](http://forum.dlang.org/thread/fieksv$pa7$1@digitalmars.com)
