@@ -26,7 +26,7 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 - [http://ruby.morphball.net/](http://ruby.morphball.net/)
 - [「若手エンジニア／初心者のためのRuby 2.1入門」最新記事一覧](http://www.atmarkit.co.jp/ait/kw/ruby_nyumon.html)
-- [Ruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/ruby)
+- [Ruby Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/ruby)
 - [Rubyで外部コマンドを実行して結果を受け取る方法あれこれ](http://qiita.com/tyabe/items/56c9fa81ca89088c5627)
 - [shebangが/bin/envかruby直接指定かで$0利用時の挙動がかわる](http://takai.tumblr.com/post/13843318337/shebang-bin-env-ruby-0)
 - [Ruby: コマンドライン引数の解析で使うoptparseをもっと柔軟に](http://sky-y.hatenablog.jp/entry/20120817/1345195421)
