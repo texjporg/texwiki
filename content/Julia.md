@@ -30,6 +30,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 - [Julia : スクリプト言語最速? 手軽さと速さを求めた科学技術計算向け言語](http://yohshiy.blog.fc2.com/blog-entry-246.html)
 - [「私がJuliaを推す理由」（翻訳）](http://d.hatena.ne.jp/isobe1978/20140330/1396201066)
 - [Pythonのコマンドライン引数処理の決定版 docopt (あとJuliaに移植したよ)](http://bicycle1885.hatenablog.com/entry/2014/06/08/103010)
+- [Julia Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/julialang)
 
 ### Julia Benchmarks {#ob1e5eb8}
 
@@ -45,7 +46,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 - [Emacs](/Emacs/)
 - [Vim](/Vim/)
 
-## インストール {#m58994ce}
+## Installation {#m58994ce}
 
 ### Windows {#x1bdf474}
 
