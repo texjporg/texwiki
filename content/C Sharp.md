@@ -19,7 +19,7 @@ pukiwiki: "C Sharp"
 - [http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx](http://msdn.microsoft.com/ja-jp/library/vstudio/kx37x362.aspx)
 - [http://ufcpp.net/study/csharp/](http://ufcpp.net/study/csharp/)
 - [http://www.wgag.net/csharp/](http://www.wgag.net/csharp/)
-- [C# Advent Calendar 2013](http://www.adventar.org/calendars/119)
+- [C# Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/csharp)
 - [.NET Foundation](http://www.dotnetfoundation.org/)
 - [AnyCPUなC#モジュールからx86/x64のDLLを呼び分ける方法まとめ](http://cflat-inc.hatenablog.com/entry/20130723/1374535605)
 
