@@ -142,7 +142,7 @@ UTF-8 を選択します．<br>
 　　　　◯ 折り返し単位(R)　　　　◯ なし(N)　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　</ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
 　　　 (●) 改行単位(W)　　　　　(●) 縦線(V)　　　　　　　　　　　表示位置　　　　　Offset　Repeat　　　Scroll<br>
 　　　　　　　桁数　　<ins>2　　　\[<strong>⇕</strong>\]</ins>　　 ◯ 任意(Y)　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[左上　　　 <strong>ᐯ</strong>\]</span> X　<ins>0</ins>　　　　　☑　　　　　　☑<br>
-　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
+　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">半角(S)　　<ins>:</ins></span>　　　　　　　　　　　　　　　　　　　Y　<ins>0</ins>　　　　　☑　　　　　　☑<br>
 
 ***
 
