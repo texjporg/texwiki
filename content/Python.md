@@ -496,7 +496,7 @@ if __name__ == '__main__':
 - [Dive Into Python 3 日本語版](http://diveintopython3-ja.rdy.jp/)
 - [Pythonのコマンドライン引数処理の決定版 docopt (あとJuliaに移植したよ)](http://bicycle1885.hatenablog.com/entry/2014/06/08/103010)
 - [Python3でpdfを作る多分一番簡単な方法](http://qiita.com/yasunori/items/5342d5311a655057782b)
-- [Python Advent Calendar 2013](http://www.adventar.org/calendars/166)
+- [Python Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/python)
 - [pythonで心理実験](http://www.s12600.net/psy/python/)
 - [科学計算における均質化、あるいはなぜPythonが着実に他言語のシェアを奪っているか](http://chezou.wordpress.com/2014/01/18/%E7%A7%91%E5%AD%A6%E8%A8%88%E7%AE%97%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E5%9D%87%E8%B3%AA%E5%8C%96%E3%80%81%E3%81%82%E3%82%8B%E3%81%84%E3%81%AF%E3%81%AA%E3%81%9Cpython%E3%81%8C%E7%9D%80%E5%AE%9F/)
 - [python3.3環境構築](http://oceanmarine.sakura.ne.jp/sphinx/python_env.html)
