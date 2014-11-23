@@ -48,8 +48,7 @@ C++ は汎用プログラミング言語です．<br>
 - [C++で大規模な配列追記のパフォーマンス](http://d.hatena.ne.jp/ponkotuy/20111216/1324027752)
 - [http://www.slideshare.net/adankevich/c11-15621074](http://www.slideshare.net/adankevich/c11-15621074)
 - [You cannot override a class (static) constant](https://gist.github.com/MihailJP/4236262)
-- [C++ Advent Calendar 2013 - PARTAKE](http://partake.in/events/91328710-3c7b-436e-bd4e-4d98d88333f9)
-- [C++ (fork) Advent Calendar 2013](http://www.adventar.org/calendars/211)
+- [C++ Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/cpp)
 - [main() のすり替え in C++](http://yak-ex.blogspot.jp/2013/12/main-in-c.html)
 - [C++ による Windows プログラミングの学習](<http://msdn.microsoft.com/ja-jp/library/windows/desktop/ff381399(v=vs.85).aspx>)
 
