@@ -32,7 +32,7 @@ pukiwiki: "Rust"
 
 ### Rust 版 {#j7127f95}
 
-rustc 0.12.0 (ba4081a5a 2014-10-07 13:44:41 -0700) で動作確認しています．<br>
+rustc 1.0.0-nightly (f46c4e158 2015-04-20) (built 2015-04-21) で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
@@ -49,11 +49,13 @@ rustc fwdsumatrapdf.rs
 // vim: ts=4 sw=4 expandtab:
 // rustc fwdsumatrapdf.rs
 
+#![feature(collections, libc)]
 extern crate libc;
+#[allow(unused_imports)]
 use libc::{c_int, c_uint, c_short, c_ushort, c_long, c_ulong, c_char, c_void, size_t, wchar_t};
 
-use std::io;
-use std::os;
+use std::io::{self, Write};
+use std::env;
 use std::mem;
 use std::ptr;
 
@@ -90,8 +92,11 @@ type LPCWSTR = *const WCHAR;
 type LPWSTR = *mut WCHAR;
 type LPCSTR = *const CHAR;
 type LPSTR = *mut CHAR;
+#[allow(non_camel_case_types)]
 type SIZE_T = size_t;
 
+#[allow(dead_code)]
+#[allow(non_snake_case)]
 struct STARTUPINFOW {
     cb: DWORD,
     lpReserved: LPWSTR,
@@ -114,17 +119,20 @@ struct STARTUPINFOW {
 }
 type LPSTARTUPINFOW = *mut STARTUPINFOW;
 
+#[allow(dead_code)]
+#[allow(non_camel_case_types)]
+#[allow(non_snake_case)]
 struct PROCESS_INFORMATION {
     hProcess: HANDLE,
     hThread: HANDLE,
     dwProcessId: DWORD,
     dwThreadId: DWORD
 }
+#[allow(non_camel_case_types)]
 type LPPROCESS_INFORMATION = *mut PROCESS_INFORMATION;
 
 #[cfg(all(target_os = "windows"))]
 #[link_name = "advapi32"]
-#[allow(non_snake_case_functions)]
 extern "stdcall" {
     fn RegOpenKeyExW(
         hKey: HKEY,
@@ -148,7 +156,6 @@ extern "stdcall" {
 
 #[cfg(all(target_os = "windows"))]
 #[link_name = "user32"]
-#[allow(non_snake_case_functions)]
 extern "stdcall" {
     fn DdeInitializeW(pidInst: *mut DWORD, pfnCallback: *mut c_void, afCmd: c_uint, ulRes: c_uint) -> c_uint;
     fn DdeUninitialize(idInst: DWORD) -> c_int;
@@ -164,7 +171,7 @@ extern "stdcall" {
 
 #[cfg(all(target_os = "windows"))]
 #[link_name = "kernel32"]
-#[allow(non_snake_case_functions)]
+#[allow(improper_ctypes)]
 extern "stdcall" {
     fn CreateProcessW(
         lpApplicationName: LPCWSTR,
@@ -190,7 +197,8 @@ extern "stdcall" {
         -> c_int;
 }
 
-#[allow(non_snake_case_functions)]
+#[allow(non_snake_case)]
+#[allow(unused_variables)]
 fn runSumatraPDF() {
     unsafe {
         let mut si = STARTUPINFOW {
@@ -220,29 +228,30 @@ fn runSumatraPDF() {
         let mut subKey = ptr::null_mut();
         let mut dwType = 0u32;
         let mut sz = 0u32;
-        RegOpenKeyExW(HKEY_LOCAL_MACHINE as HKEY, KEY_PATH.to_utf16().as_ptr(), 0, KEY_QUERY_VALUE, &mut subKey);
+        RegOpenKeyExW(HKEY_LOCAL_MACHINE as HKEY, KEY_PATH.utf16_units().collect::<Vec<u16>>().as_ptr(), 0, KEY_QUERY_VALUE, &mut subKey);
         RegQueryValueExW(subKey, ptr::null(), ptr::null_mut(), &mut dwType, ptr::null_mut(), &mut sz);
-        let mut sumatraPDFRegistry_wchar: Vec<u8> = Vec::from_fn(sz as uint, |idx| 0);
+        let mut sumatraPDFRegistry_wchar = (0..sz as u32).map(|idx| 0).collect::<Vec<u8>>();
         RegQueryValueExW(subKey, ptr::null(), ptr::null_mut(), &mut dwType, sumatraPDFRegistry_wchar.as_mut_ptr(), &mut sz);
         RegCloseKey(subKey);
         let sumatraPDFRegLength = ((sz - 2) / 2) as c_uint;
-        let mut sumatraPDFRegistry: Vec<u8> = Vec::from_fn(sumatraPDFRegLength as uint, |idx| 0);
+        let mut sumatraPDFRegistry = (0..sumatraPDFRegLength as u32).map(|idx| 0).collect::<Vec<u8>>();
         WideCharToMultiByte(CP_ACP, WC_NO_BEST_FIT_CHARS, sumatraPDFRegistry_wchar.as_ptr() as *const u16, -1, sumatraPDFRegistry.as_mut_ptr() as *mut i8, sumatraPDFRegLength as i32, ptr::null(), ptr::null_mut());
-        let sumatraPDFCommandLine = format!("\"{}\" -reuse-instance", sumatraPDFRegistry.into_ascii().into_string());
+        let sumatraPDFCommandLine = format!("\"{}\" -reuse-instance", String::from_utf8(sumatraPDFRegistry).unwrap());
         si.cb = mem::size_of::<STARTUPINFOW>() as DWORD;
-        CreateProcessW(ptr::null(), sumatraPDFCommandLine.to_utf16().as_mut_ptr(), ptr::null(), ptr::null(), 0, 0, ptr::null_mut(), ptr::null(), &mut si, &mut pi);
+        CreateProcessW(ptr::null(), sumatraPDFCommandLine.utf16_units().collect::<Vec<u16>>().as_mut_ptr(), ptr::null(), ptr::null(), 0, 0, ptr::null_mut(), ptr::null(), &mut si, &mut pi);
         WaitForInputIdle(pi.hProcess, TIMEOUT);
     }
 }
 
-#[allow(non_snake_case_functions)]
+#[allow(non_snake_case)]
+#[allow(unused_must_use)]
 fn ddeExecute(server: &str, topic: &str, command: &str) {
     unsafe {
         let appcmd_clientonly = 0x10;
         let cp_winunicode = 1200;
         let cf_unicodetext = 13;
         let xclass_flags = 0x4000;
-        let xtyp_execute = (0x0050 | xclass_flags);
+        let xtyp_execute = 0x0050 | xclass_flags;
         let mut idInstance = 0u32;
         let mut hszServer = ptr::null_mut();
         let mut hszTopic = ptr::null_mut();
@@ -251,17 +260,17 @@ fn ddeExecute(server: &str, topic: &str, command: &str) {
         let mut hDdeTransactionData = ptr::null_mut();
         loop {
             DdeInitializeW(&mut idInstance, ptr::null_mut(), appcmd_clientonly, 0);
-            if idInstance == 0u32 { writeln!(io::stderr(), "DdeInitializeW error"); break; }
-            hszServer = DdeCreateStringHandleW(idInstance, server.to_utf16().as_mut_ptr(), cp_winunicode);
-            if hszServer == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
-            hszTopic = DdeCreateStringHandleW(idInstance, topic.to_utf16().as_mut_ptr(), cp_winunicode);
-            if hszTopic == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateStringHandleW error"); break; }
+            if idInstance == 0u32 { writeln!(&mut io::stderr(), "DdeInitializeW error"); break; }
+            hszServer = DdeCreateStringHandleW(idInstance, server.utf16_units().collect::<Vec<u16>>().as_mut_ptr(), cp_winunicode);
+            if hszServer == ptr::null_mut() { writeln!(&mut io::stderr(), "DdeCreateStringHandleW error"); break; }
+            hszTopic = DdeCreateStringHandleW(idInstance, topic.utf16_units().collect::<Vec<u16>>().as_mut_ptr(), cp_winunicode);
+            if hszTopic == ptr::null_mut() { writeln!(&mut io::stderr(), "DdeCreateStringHandleW error"); break; }
             hConvClient = DdeConnect(idInstance, hszServer, hszTopic, ptr::null_mut());
-            if hConvClient == ptr::null_mut() { writeln!(io::stderr(), "DdeConnect error"); break; }
-            hDdeData = DdeCreateDataHandle(idInstance, command.to_utf16().as_mut_ptr() as LPBYTE, ((command.char_len() + 1)*mem::size_of::<wchar_t>()) as DWORD, 0, ptr::null(), cf_unicodetext, 0);
-            if hDdeData == ptr::null_mut() { writeln!(io::stderr(), "DdeCreateDataHandle error"); break; }
-            hDdeTransactionData = DdeClientTransaction(hDdeData as LPBYTE, -1 as DWORD, hConvClient, ptr::null(), 0, xtyp_execute, TIMEOUT, ptr::null());
-            if hDdeTransactionData == ptr::null_mut() { writeln!(io::stderr(), "DdeClientTransaction error"); break; }
+            if hConvClient == ptr::null_mut() { writeln!(&mut io::stderr(), "DdeConnect error"); break; }
+            hDdeData = DdeCreateDataHandle(idInstance, command.utf16_units().collect::<Vec<u16>>().as_mut_ptr() as LPBYTE, ((command.len() + 1)*mem::size_of::<wchar_t>()) as DWORD, 0, ptr::null(), cf_unicodetext, 0);
+            if hDdeData == ptr::null_mut() { writeln!(&mut io::stderr(), "DdeCreateDataHandle error"); break; }
+            hDdeTransactionData = DdeClientTransaction(hDdeData as LPBYTE, 4294967295 as DWORD, hConvClient, ptr::null(), 0, xtyp_execute, TIMEOUT, ptr::null());
+            if hDdeTransactionData == ptr::null_mut() { writeln!(&mut io::stderr(), "DdeClientTransaction error"); break; }
             break;
         }
         if hDdeTransactionData != ptr::null_mut() { DdeFreeDataHandle(hDdeTransactionData); }
@@ -274,25 +283,19 @@ fn ddeExecute(server: &str, topic: &str, command: &str) {
 }
 
 #[allow(non_snake_case)]
+#[allow(unused_must_use)]
 fn main() {
-    let args = os::args();
+    let args = env::args().collect::<Vec<String>>();
     if args.len() != 4 {
-        writeln!(io::stderr(), "Usage: {} pdf tex line", args.get(0));
+        writeln!(&mut io::stderr(), "Usage: {} pdf tex line", args[0]);
         unsafe { libc::exit(2 as libc::c_int); }
     }
     let ref pdf = args[1];
     let ref tex = args[2];
     let ref line = args[3];
-    let forwardSearch = format!("[ForwardSearch(\"{}\",\"{}\",{},0,0,0)]", pdf, tex, line);
+    let forwardSearch = ["[ForwardSearch(\"", pdf.as_ref(), "\",\"", tex.as_ref(), "\",", line.as_ref(), ",0,0,0)]"].connect("");
     runSumatraPDF();
-    match forwardSearch.to_c_str().as_str() {
-        //Some(ref command) => {
-        //    runSumatraPDF();
-        //    ddeExecute("SUMATRA", "control", *command);
-        //},
-        Some(ref command) => ddeExecute("SUMATRA", "control", *command),
-        None => ()
-    }
+    ddeExecute("SUMATRA", "control", forwardSearch.as_ref());
 }
 ```
 
