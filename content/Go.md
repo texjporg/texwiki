@@ -43,12 +43,12 @@ Go は汎用プログラミング言語です．<br>
 - [Go言語でDLLの読み込み](http://mattn.kaoriya.net/software/lang/go/20130805173059.htm)
 - [unsafeでポインタを使って構造体のプライベートフィールドの値を書き換える例。](https://gist.github.com/hnakamur/6648237)
 - [&quot;golang&quot; - 記事一覧 - memoメモ](http://atotto.hatenadiary.jp/archive/category/golang)
-- [Go Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/go)
+- [Go Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/go)
 - [golang で複数のエラーをハンドリングする方法](http://mattn.kaoriya.net/software/lang/go/20140416212413.htm)
 - [Go言語でエラーを書くときに気をつけること](http://d.hatena.ne.jp/taknb2nch/20140307/1394169432)
 - [http://welovy.hatenablog.com/category/Go](http://welovy.hatenablog.com/category/Go)
 
-## インストール {#v5dc7237}
+## Installation {#v5dc7237}
 
 - [http://golang.org/dl/](http://golang.org/dl/)
 
