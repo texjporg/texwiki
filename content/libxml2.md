@@ -18,9 +18,9 @@ pukiwiki: "libxml2"
 #### MinGW {#e764be72}
 
 ```
-$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.1.tar.gz
-$ tar xvf libxml2-2.9.1.tar.gz
-$ pushd libxml2-2.9.1
+$ curl -R -L -O ftp://xmlsoft.org/libxml2/libxml2-2.9.2.tar.gz
+$ tar xvf libxml2-2.9.2.tar.gz
+$ pushd libxml2-2.9.2
 $ make
 $ make install
 $ popd
