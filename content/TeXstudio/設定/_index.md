@@ -452,10 +452,10 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　ハック/回避策<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ アクセント記号タイプ時に回避策を無効化（Mac OS Xのみ）<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>☐ 最適なディスプレイオプションの自動選択 ← チェックをはずす</strong></span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 固定ピッチモードを無効化<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 文字幅のキャッシュを無効化<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 描画された行のキャッシュを無効化<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>描画モード:</strong></span> <span style="color:Black;background-color:#EEEEEE;">\[ Qt　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><span style="color:black;background-color:yellow;"><strong> ← Qt に変更する</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 文字幅のキャッシュを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 固定ピッチモードを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 描画された行のキャッシュを無効化<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:black;background-color:yellow;"><strong>描画モード:</strong></span> <span style="color:Black;background-color:#EEEEEE;">\[ Qt　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><span style="color:black;background-color:yellow;"><strong> ← Qt に変更する</strong></span><br>
 
 <br>
 
@@ -507,7 +507,7 @@ SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後�
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
 
-キーボードショートカット　　　　　　☑ 最初の文字で区別　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ツールチップヘルプ<br>
+キーボードショートカット　　　　☑ 最初の文字で区別　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ツールチップヘルプ<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
 
