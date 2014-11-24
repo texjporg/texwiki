@@ -24,9 +24,9 @@ $ pacman -S libffi libffi-devel
 #### MinGW {#nfb2cfde}
 
 ```
-$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.1.tar.gz
-$ tar xvf libffi-3.1.tar.gz
-$ pushd libffi-3.1
+$ curl -R -L -O ftp://sourceware.org/pub/libffi/libffi-3.2.1.tar.gz
+$ tar xvf libffi-3.2.1.tar.gz
+$ pushd libffi-3.2.1
 $ ./configure --prefix=/mingw
 $ make
 $ make install
