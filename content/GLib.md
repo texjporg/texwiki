@@ -28,9 +28,9 @@ $ pacman -S pkg-config
 - Install GLib.
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.41/glib-2.41.2.tar.xz
-$ tar xvf glib-2.41.2.tar.xz
-$ pushd glib-2.41.2
+$ curl --insecure -R -L -O https://download.gnome.org/sources/glib/2.42/glib-2.42.1.tar.xz
+$ tar xvf glib-2.42.1.tar.xz
+$ pushd glib-2.42.1
 $ CFLAGS="-Wall -Ofast -march=native" ./configure --prefix=/mingw
 $ make
 $ make install
@@ -50,9 +50,9 @@ $ popd
 - Install [gettext](http://www.gnu.org/software/gettext/).
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.18.3.2.tar.gz
-$ tar xvf gettext-0.18.3.2.tar.gz
-$ pushd gettext-0.18.3.2
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.19.3.tar.xz
+$ tar xvf gettext-0.19.3.tar.xz
+$ pushd gettext-0.19.3
 $ ./configure --prefix=/mingw
 ```
 
