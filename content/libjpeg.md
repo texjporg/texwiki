@@ -38,9 +38,9 @@ $ popd
 #### MinGW {#l1391267}
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.0.tar.gz
-$ tar xvf libjpeg-turbo-1.3.0.tar.gz
-$ pushd libjpeg-turbo-1.3.0
+$ curl -R -L -O http://download.sourceforge.net/libjpeg-turbo/libjpeg-turbo-1.3.1.tar.gz
+$ tar xvf libjpeg-turbo-1.3.1.tar.gz
+$ pushd libjpeg-turbo-1.3.1
 $ ./configure --prefix=/mingw
 $ make
 $ make install
