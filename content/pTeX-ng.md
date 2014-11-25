@@ -35,4 +35,5 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 ## 関連リンク {#re1f2eda}
 
+- [天地有情 \[LaTeX\] pTeX-ng 備忘録 -- 新しい TeX 処理系](http://konoyonohana.blog.fc2.com/blog-entry-90.html)
 - [ptex-ng を使ってみました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1409)
