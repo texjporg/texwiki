@@ -402,6 +402,65 @@ PFA → PFB 変換には [FontForge](http://fontforge.sourceforge.net/) が使�
 
 <div style="text-align:right">See <a href="/HyperTeX/#ubbc3ac6">HyperTeX#hyperref を上手に呼んで便利な PDF を作る</a></div>
 
+#### BoundingBox の指定 → 問題が発生する場合は extractbb を使用する {#z06f5ff9}
+
+手動で BoundingBox を直接指定することも可能です。<br>
+
+BoundingBox を直接指定する場合は
+
+```
+\includegraphics[bb=0 0 横ポイント数 縦ポイント数,width=幅]{ファイル名}
+```
+
+を挿入します。
+
+なお “bb” とは “bounding box” を意味しています。<br>
+bb の単位は既定では bp (big point) です．<br>
+
+- 1in = 72bp = 72.27pt = 25.40mm = 2.540 cm
+- [https://twitter.com/zr_tex8r/status/463680032204791808](https://twitter.com/zr_tex8r/status/463680032204791808)
+- [BoundingBox について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=998)
+- [用語・略語集](</用語・略語集/#bp>)
+- [Wikipedia.ja:ポイント](https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88)
+- [単位](http://www.math.kobe-u.ac.jp/~kodama/tips-measure.html)
+- [TeXの10ptとDTPソフトの10ptは違う](http://www.dab.hi-ho.ne.jp/t-wata/tex/10pt.html)
+
+bb で直接指定する方法は
+
+- 値を指定する手間がかかる
+- 間違った値を指定してしまうと適切に表示されなくなる可能性がある
+
+といった問題が発生することがあります。<br>
+問題が発生する場合は bb で直接指定せずに extractbb を使用してください．<br>
+
+TeX Live, W32TeX には dvipdfmx 用の BoundingBox を作成する extractbb というツールが付属しています。<br>
+
+```
+extractbb hoge.pdf
+```
+
+とすると hoge.xbb というファイルが生成されます。<br>
+extractbb は TeX ソースの本文に記述するものではなく、ターミナルまたはコマンドプロンプトから実行するコマンドです。<br>
+
+extractbb を使用して
+
+```
+extractbb:warning: Streams with DecodeParms not supported.
+extractbb:warning: Cannot parse cross-reference stream.
+extractbb:warning: Error while parsing PDF file.
+extractbb:warning: ./hoge.pdf does not look like a PDF file...
+```
+
+などとエラーが表示されて .xbb ファイルが出力されない場合は TeX Live 2015 または W32TeX \[2014/08/14\] 以降の dvipdfmx にアップグレードしてください．<br>
+
+- [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
+- [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
+- [xbbファイルが作成できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=817)
+- [inclusion of images and dvipdfmx](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1326)
+- [実験レポート：LaTeX + dvipdfmx による画像ファイル挿入](http://d.hatena.ne.jp/zrbabbler/20140614/1402762227)
+- [dvipdfmx で画像する時に色々とアレな話](http://d.hatena.ne.jp/zrbabbler/20140814/1408040710)
+- [bbox とか ﾅﾝﾄｶBox に関する補足](http://d.hatena.ne.jp/zrbabbler/20140817/1408239981)
+
 ### dvips の使い方 {#lf015a28}
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです。
