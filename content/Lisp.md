@@ -15,7 +15,7 @@ pukiwiki: "Lisp"
 
 - [Wikipedia.en:Lisp\_(programming_language)](https://en.wikipedia.org/wiki/Lisp_%28programming_language%29)
 - [Wikipedia.ja:LISP](https://ja.wikipedia.org/wiki/LISP)
-- [Lisp Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com//advent-calendar/2013/lisp)
+- [Lisp Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/lisp)
 
 ## Scheme {#o84ab52a}
 
