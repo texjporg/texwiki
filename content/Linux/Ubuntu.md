@@ -65,7 +65,7 @@ Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの L
 Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Xubuntu](http://xubuntu.org/)
-- [xubuntuが一番いいと思う訳](http://takoejplus.blogspot.jp/2013/11/xubuntu.html), [Xubuntuを勧める10の理由](http://takoejplus.blogspot.jp/2014/01/xubuntu10.html) → [結局ArchLinuxに戻る](http://takoejplus.blogspot.jp/2014/01/archlinux.html)
+- [xubuntuが一番いいと思う訳](http://lespedeza93.blogspot.jp/2013/11/xubuntu.html), [Xubuntuを勧める10の理由](http://lespedeza93.blogspot.jp/2014/01/xubuntu10.html) → [結局ArchLinuxに戻る](http://lespedeza93.blogspot.jp/2014/01/archlinux.html)
 
 #### Lubuntu とは {#zdc5ee41}
 
