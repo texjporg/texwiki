@@ -23,7 +23,8 @@ pukiwiki: "F Sharp"
 - [F#入門](http://fsharp.web.fc2.com/)
 - [F# - 七誌の開発Wiki](http://seesaawiki.jp/w/n7shi/d/F%23)
 - [静的に型付けされた関数型プログラミング言語を使用するべきではない10の理由](https://github.com/yukitos/notes/blob/master/tenreasons/index.md)
-- [F# Advent Calendar 2013](http://connpass.com/event/3935/)
+- [F# Advent Calendar 2014 - connpass](http://connpass.com/event/9758/)
+- [F# Advent Calendar in English 2014](http://sergeytihon.wordpress.com/2014/11/24/f-advent-calendar-in-english-2014/)
 - [http://fsharp.github.io/FAKE/](http://fsharp.github.io/FAKE/)
 
 ### F# → JavaScript {#c5c64235}
