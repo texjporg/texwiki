@@ -40,7 +40,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 
 #### フリーソフトウェア (オープンソースソフトウェア) {#ob9c9c6e}
 
-- [Julia Studio](http://forio.com/julia/)
+- [Julia Studio](http://forio.com/labs/julia-studio/)
     - [https://github.com/forio/julia-studio](https://github.com/forio/julia-studio)
     - [Julia Studio で始める Julia 入門](http://cointoss.hatenablog.com/entry/2014/01/02/213638)
 - [Emacs](/Emacs/)
@@ -78,7 +78,7 @@ Julia は科学技術計算向けのプログラミング言語です．<br>
 
 ### Julia 版 {#yd2ce169}
 
-julia version 0.3.2 で動作確認しています．<br>
+julia version 0.3.3 で動作確認しています．<br>
 
 ***
 
