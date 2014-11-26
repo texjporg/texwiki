@@ -35,7 +35,7 @@ pukiwiki: "Lisp"
 ## Closure {#vcbb46a7}
 
 - [Clojure](http://clojure.org/)
-- [Clojure Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/clojure)
+- [Clojure Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/clojure)
 
 ## Emacs Lisp {#j7378fb1}
 
