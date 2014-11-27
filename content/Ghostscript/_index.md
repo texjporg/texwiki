@@ -140,6 +140,7 @@ Ghostscript/OS X を参照．
 
 ## 関連リンク {#we8f22aa}
 
+- [GhostScriptあれこれ](http://xanadu62.blogspot.jp/2014/11/ghostscript_22.html)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/gs.html)
 - [ghoastscriptの日本語文字化けについて。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
