@@ -78,7 +78,7 @@ TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex �
 
 ### W32TeX {#z4ee6291}
 
-[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
+[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
 これを例えば C:\temp\ に入れます。<br>
 Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
 
