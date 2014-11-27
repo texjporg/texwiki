@@ -63,12 +63,6 @@ CTAN の世界的なミラーリングとして次の URI があります。
     - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTP, anonymous FTP)
 
-- [KDDI 研究所](http://www.kddilabs.jp/)
-    - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, anonymous FTP)
-        <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
-        <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
-
 - [理化学研究所](http://www.riken.jp/)
     - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
         (HTTP, anonymous FTP)
