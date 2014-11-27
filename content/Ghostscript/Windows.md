@@ -90,8 +90,6 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 
 #### 角藤版 Ghostscript {#sbee10cb}
 
-- [http://ftp.kddilabs.jp/pub/tex/ptex-win32/gs/](http://ftp.kddilabs.jp/pub/tex/ptex-win32/gs/)
-- [http://ftp.ne.jp/pub/tex/ptex-win32/gs/](http://ftp.ne.jp/pub/tex/ptex-win32/gs/)
 - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
