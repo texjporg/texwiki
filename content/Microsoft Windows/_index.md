@@ -432,28 +432,26 @@ install-tl-advanced.bat を -no-gui オプションを指定せずに管理者�
 ■ HTTP<br>
 
 - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-- [http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](http://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
-- [http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](http://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
-- [http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
-- [http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
 - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 
 ■ FTP<br>
 
 - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-- [ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/TLW64/)
-- [ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/](ftp://ftp.ne.jp/TeX/ptex-win32/current/TLW64/)
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
-- [ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/TLW64/)
-- [ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/](ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/TLW64/)
 - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 - [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+- [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 
 から TeX Live の 64-bit バイナリ (tl-win64.zip) が入手できます．<br>
 インストール方法は 00README.TLW64 を読んでください．<br>
