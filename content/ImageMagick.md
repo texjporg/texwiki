@@ -13,8 +13,6 @@ pukiwiki: "ImageMagick"
 
 ### ミラーサイト <a id="mirror"></a> {#b913ec3c}
 
-- [http://ftp.kddilabs.jp/graphics/ImageMagick/binaries/](http://ftp.kddilabs.jp/graphics/ImageMagick/binaries/)
-- [http://ftp.ne.jp/graphics/ImageMagick/binaries/](http://ftp.ne.jp/graphics/ImageMagick/binaries/)
 - [http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 - [http://www.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://www.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 - [http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
