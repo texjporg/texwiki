@@ -147,10 +147,6 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 ### [FTP](https://ja.wikipedia.org/wiki/File_Transfer_Protocol) {#z04bbc8a}
 
-<!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
-- [KDDI研究所](http://www.kddilabs.jp/)
-    - [ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/)
-    - [ftp://ftp.ne.jp/TeX/ptex-win32/current/](ftp://ftp.ne.jp/TeX/ptex-win32/current/)
 - [Ring Server](http://www.ring.gr.jp/)
     - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
     - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
@@ -173,8 +169,6 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
     - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
     - [ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
     - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/](ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/)
-    - [ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/](ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/)
     - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/)
     - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
@@ -188,9 +182,6 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/)
     - [http://ctan.ijs.si/mirror/w32tex/current/](http://ctan.ijs.si/mirror/w32tex/current/)
-- [KDDI研究所](http://www.kddilabs.jp/)
-    - [http://ftp.kddilabs.jp/TeX/ptex-win32/current/](http://ftp.kddilabs.jp/TeX/ptex-win32/current/)
-    - [http://ftp.ne.jp/TeX/ptex-win32/current/](http://ftp.ne.jp/TeX/ptex-win32/current/)
 - [Ring Server](http://www.ring.gr.jp/)
     - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
     - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
@@ -207,8 +198,6 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
     - [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
     - [http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
     - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/](http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/)
-    - [http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/](http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
     - [http://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/win32/w32tex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/win32/w32tex/)
