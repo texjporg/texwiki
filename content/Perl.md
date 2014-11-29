@@ -314,7 +314,7 @@ if ($0 eq __FILE__) {
 ## 関連リンク {#lbc0c2cf}
 
 - [This Perl goes to 11](http://perl11.org/)
-- [Perl Advent Calendar Japan](http://perl-users.jp/articles/advent-calendar/)
+- [Perl Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/perl)
 - [https://metacpan.org/release/FFI-Raw](https://metacpan.org/release/FFI-Raw)
 - [http://dcbpw.org/dcbpw2014/talk/5394](http://dcbpw.org/dcbpw2014/talk/5394)
 - [http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/](http://eli.thegreenplace.net/2006/12/04/compiling-c-dlls-and-using-them-from-perl/)
