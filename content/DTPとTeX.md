@@ -11,10 +11,9 @@ pukiwiki: "DTPとTeX"
 
 ## DTPとTeX {#c60998c7}
 
-- [Illustratorの図をTeXに](/Illustrator/)
+- [Illustratorの図をTeXに &amp; Illustrator上でTeX処理 &amp; 自動配置](/Illustrator/)
 - [TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/>)
 - [TeXと外字](</TeXと外字/>)
-- Illustrator上でTeX処理 &amp; 自動配置
 
 ### DTP関係リンク {#mab90aa8}
 
