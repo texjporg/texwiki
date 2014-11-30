@@ -25,6 +25,24 @@ pukiwiki: "Illustrator"
 - [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
 - [Illustrator CC の新機能](http://helpx.adobe.com/jp/illustrator/using/whats-new.html)
 
+### トラブル {#id16611b}
+
+Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html), [qa:27942](https://okumuralab.org/~okumura/texfaq/qa/27942.html) のスレッド（未解決）。
+
+### その他 {#a59267c4}
+
+- [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
+    Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
+    - [ファイルダウンロード](http://www.ritsumei.ac.jp/se/~morimoto/files.html)
+
+【参考情報】
+
+- [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
+- \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
+- [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
+- [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
+- [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
+
 ## Illustrator の図を TeX に {#sa00c636}
 
 ### ai/PDF 形式ファイル {#l3862bb1}
@@ -86,29 +104,11 @@ W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” �
 >fixill.exe <old.eps >new.eps
 ```
 
-### トラブル {#id16611b}
-
-Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html), [qa:27942](https://okumuralab.org/~okumura/texfaq/qa/27942.html) のスレッド（未解決）。
-
-### その他 {#a59267c4}
-
-- [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
-    Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
-    - [ファイルダウンロード](http://www.ritsumei.ac.jp/se/~morimoto/files.html)
-
-【参考情報】
-
-- [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
-- \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
-- [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
-- [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
-- [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
-
 ## Illustrator上でTeX処理 &amp; 自動配置 {#paf3cb46}
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/javascripts.html -->
 
-## はじめに {#ae063b79}
+### はじめに {#ae063b79}
 
 [TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．<br>
 フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．<br>
@@ -134,16 +134,16 @@ TeX 関係のなんらかの処理を変えたい時は[ini.tex](/Illustrator/#u
 Illustrator 上でのjavascript に関するマニュアルはインストールCD中にあります
 (CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)．<br>
 
-## 準備 {#d06797b4}
+### 準備 {#d06797b4}
 
-### 作業フォルダの作成 {#q425d35e}
+#### 作業フォルダの作成 {#q425d35e}
 
 eq.tex -> eq.dvi -> eq.eps -> outline.eps という処理を行うフォルダを用意します．
 以下では説明の便宜上"C:\AI\\" を作ったことにして説明します．
 別の場所に作る場合は，[makeEPS.bat](/Illustrator/#p0c06018) および
 [TeX(&amp;T).js](/Illustrator/#w5a4bc73) を適宜書き換えてください．
 
-### ini.tex {#ubf2a4af}
+#### ini.tex {#ubf2a4af}
 
 eq.tex の雛形になるテキストファイルです．テキストドキュメントを新規作成し，
 以下の内容を書き込んでini.texという名前で[作業用フォルダの作成](/Illustrator/#q425d35e)で
@@ -164,7 +164,7 @@ bm%
 
 <!-- 最後の<r>をテキストオブジェクトの内容で置き換えて（場合によっては数式環境も補完して）eq.tex を書き出します． -->
 
-### MakeEPS.bat {#p0c06018}
+#### MakeEPS.bat {#p0c06018}
 
 eq.tex -> eq.dvi -> eq.eps -> outline.eps という処理を行うバッチファイルです．
 テキストドキュメントを新規作成し，以下の内容を書き込んでMakeEPS.batという名前で
@@ -179,7 +179,7 @@ dvips -Pdl -E eq -o eq.eps
 rungs -q -sDEVICE=eps2write -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutputFile=outline.eps eq.eps
 ```
 
-### TeX(&amp;T).js {#w5a4bc73}
+#### TeX(&amp;T).js {#w5a4bc73}
 
 Illustrator CC で作業中に呼び出すことになるスクリプトです．<br>
 テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
@@ -654,9 +654,9 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 
 <!-- 最後に、C:\AI\Link\ というフォルダを作ってください(これも埋め込み配置のみで良いならば不要)。 -->
 
-<!-- *埋め込み配置 [#l35eb979] -->
+<!-- **埋め込み配置 [#l35eb979] -->
 
-## スクリプトの利用 {#h8061542}
+### スクリプトの利用 {#h8061542}
 
 Illustrator を起動してください．<br>
 TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．<br>
@@ -747,7 +747,7 @@ var environment = "align*";//補完する際に使う数式環境
 
 <!-- これは、フォント関連の問題を回避したい場合(例えばA0サイズのポスターの印刷を外注)に有効です。特にIllustrator CS では、一部のフォントだけがＭＳ　ゴシックに強制的に置き換わるという問題( [[qa:27936]]を参照。) があり、Illustrator 上で何らかの編集を行う上ではアウトライン化しておくほうが安全だと思われます。 -->
 
-<!-- *リンク配置 [#x5d180c8] -->
+<!-- **リンク配置 [#x5d180c8] -->
 
 <!-- 数式に対して拡大縮小や回転といった単純な編集だけで十分で、自分の環境でPDF化または印刷が可能な場合は、作成したEPS画像をリンク配置すればよいでしょう。リンク配置した画像を含むファイルをPDF形式、EPS形式などで保存すれば、フォント情報を保ったままTeX で作成した文書に挿入することが可能です。また、PDF形式で保存すればAdobe Reader などで通常どおり閲覧できます。 -->
 
