@@ -27,6 +27,7 @@ pukiwiki: "Mac"
 - [ftp://ftp.tug.org/tex/mactex/](ftp://ftp.tug.org/tex/mactex/)
 - [ftp://tug.org/historic/systems/mactex/](ftp://tug.org/historic/systems/mactex/)
 - [http://sourceforge.net/projects/mactextoolbox/](http://sourceforge.net/projects/mactextoolbox/)
+- [http://qiita.com/tags/mactex](http://qiita.com/tags/mactex)
 - [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
 - MacWiki:リスト/TeX
