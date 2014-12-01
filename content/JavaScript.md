@@ -24,10 +24,10 @@ pukiwiki: "JavaScript"
 - [モダンな言語でHTML5を開発しよう！ 俯瞰して理解するaltJSの比較 (前篇 – TypeScript, CoffeeScript, Haxe)](http://html5experts.jp/clockmaker/2183/)
 - [続々出てきた JavaScript 系新言語。どれを使う?](http://yohshiy.blog.fc2.com/blog-entry-183.html)
 - [新・三大JavaScriptフレームワークの実践(Backbone.js Knockout.js Angular.js)](http://qiita.com/icoxfog417/items/3c68e1a4de7121658e29)
-- [JavaScript - Client Side - Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/javascript)
 - [とりあえずJavaScriptを記述して動作を確認したいって時はFirefoxに搭載のスクラッチパッドが断然便利](http://wp.yat-net.com/?p=3648)
 - [FirefoxのJavaScriptデバッガ拡張Firebugの進化がすごい](http://efcl.info/2011/0424/res2647/)
 - [今更だけどFirefoxでJavaScriptを無効化する方法をメモ（アドオン未使用）](http://ideahacker.net/2013/10/21/6676/)
+- [JavaScript Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/javascript)
 
 ## JavaScript を出力できる言語 (altJS) {#ya021e3a}
 
