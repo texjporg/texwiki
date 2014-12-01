@@ -53,6 +53,7 @@ pukiwiki: "OCaml"
 #### Windows {#f2419a94}
 
 - [OCaml for Windows &mdash; Wodi](http://wodi.forge.ocamlcore.org/)
+- [TypeRex: OCaml for Windows](http://www.typerex.org/ocpwin.html)
 - [The OCaml installer for Windows](http://protz.github.io/ocaml-installer/)
 
 ### ChangeLog {#j264cfdf}
