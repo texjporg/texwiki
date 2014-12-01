@@ -90,7 +90,7 @@ julia version 0.3.3 で動作確認しています．<br>
 # vim: ts=4 sw=4 expandtab:
 # -*- coding: utf-8 -*-
 
-TIMEOUT = 10000
+const TIMEOUT = 10000
 
 type STARTUPINFOW
     cb::Cuint
@@ -190,11 +190,11 @@ function runSumatraPDF()
 end
 
 function ddeExecute(server, topic, command)
-    APPCMD_CLIENTONLY = uint32(0x10)
-    CP_WINUNICODE = int32(1200)
-    CF_UNICODETEXT = uint32(13)
-    XCLASS_FLAGS = uint32(0x4000)
-    XTYP_EXECUTE = (uint32(0x0050) | XCLASS_FLAGS)
+    const APPCMD_CLIENTONLY = uint32(0x10)
+    const CP_WINUNICODE = int32(1200)
+    const CF_UNICODETEXT = uint32(13)
+    const XCLASS_FLAGS = uint32(0x4000)
+    const XTYP_EXECUTE = (uint32(0x0050) | XCLASS_FLAGS)
     idInstance = Cuint[0]
     hszServer = C_NULL
     hszTopic = C_NULL
@@ -262,8 +262,8 @@ function ddeExecute(server, topic, command)
 end
 
 if !isinteractive()
-    server = "SUMATRA"
-    topic = "control"
+    const server = "SUMATRA"
+    const topic = "control"
     pdf = ARGS[1]
     tex = ARGS[2]
     line = uint(ARGS[3])
