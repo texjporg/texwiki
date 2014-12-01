@@ -7,10 +7,9 @@ pukiwiki: "Illustrator"
 
 # Illustrator
 
-## Adobe Illustrator {#w6d2965c}
+## [Adobe Illustrator CC](http://www.adobe.com/jp/products/illustrator.html) {#w6d2965c}
 
-[Adobe Illustrator](http://www.adobe.com/jp/products/illustrator.html) 関連の
-話題を書き込んでください。
+[Adobe Illustrator CC](http://www.adobe.com/jp/products/illustrator.html) 関連の話題を書き込んでください。<br>
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -18,7 +17,7 @@ pukiwiki: "Illustrator"
 
 ### リリース情報 {#u178a7b2}
 
-- Illustrator CC 17.1.0 2014年
+- Adobe Illustrator CC 17.1.0 2014年
 
 情報等
 
