@@ -37,6 +37,7 @@ pukiwiki: "OCaml"
 - [http://www.itpl.co.jp/ocaml/](http://www.itpl.co.jp/ocaml/)
 - [http://book.mynavi.jp/support/bookmook/ocaml/](http://book.mynavi.jp/support/bookmook/ocaml/)
 - [http://logic.cs.tsukuba.ac.jp/~kam/jikken/](http://logic.cs.tsukuba.ac.jp/~kam/jikken/)
+- [http://www.slideshare.net/yoriyuki/ocamlunicode](http://www.slideshare.net/yoriyuki/ocamlunicode)
 
 <!-- $ ocamlopt hoge.ml -->
 <!-- ** Fatal error: Cannot find file "libws2_32" -->
