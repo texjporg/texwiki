@@ -40,6 +40,7 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 ### 公式派生版 {#i77fdd5e}
 
 - [Derivatives](http://www.ubuntu.com/about/about-ubuntu/derivatives)
+- [Ubuntu・フレーバー紹介 - Ubuntu となかまたち](http://ubuntujp.jimdo.com/)
 - [Ubuntu 派生ディストリビューション その3 - Ubuntu・Kubuntu・Xubuntu・Lubuntu・Ubuntu GNOMEの比較 （14.04版）](http://kledgeb.blogspot.jp/2014/04/ubuntu-3-ubuntukubuntuxubuntulubuntuubu.html)
 
 #### Ubuntu GNOME とは {#fa2981c9}
@@ -72,7 +73,6 @@ Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの 
 Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
 
 - [Lubuntu](http://lubuntu.net/)
-- [Lubuntu 日本語情報サイト - lubuntu を使おう](http://lubuntu-japan.jimdo.com/)
 
 ### 派生版 {#m65a8766}
 
