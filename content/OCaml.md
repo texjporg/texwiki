@@ -48,7 +48,7 @@ pukiwiki: "OCaml"
 
 ### ダウンロード {#lee13824}
 
-- [http://caml.inria.fr/download.en.html](http://caml.inria.fr/download.en.html)
+- [http://ocaml.org/docs/install.html](http://ocaml.org/docs/install.html)
 
 #### Windows {#f2419a94}
 
