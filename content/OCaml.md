@@ -13,7 +13,7 @@ pukiwiki: "OCaml"
 
 ## Summary {#s5b2a93b}
 
-- [The Caml language: Home](http://caml.inria.fr/)
+- [OCaml &#8211; OCaml](http://ocaml.org/)
 - [OCaml.jp](http://ocaml.jp/)
 - [http://lists.idyll.org/pipermail/caml-news-weekly/](http://lists.idyll.org/pipermail/caml-news-weekly/)
 - [https://github.com/ocaml/ocaml](https://github.com/ocaml/ocaml)
