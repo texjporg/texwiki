@@ -9,10 +9,11 @@ pukiwiki: "Standard ML"
 
 ## Standard ML {#w51925e4}
 
-- [http://www.standardml.org/](http://www.standardml.org/)
-    - [http://www.standardml.org/Basis/](http://www.standardml.org/Basis/)
-        - [http://www.standardml.org/Basis/command-line.html](http://www.standardml.org/Basis/command-line.html)
-- [https://github.com/SMLFamily/sml97](https://github.com/SMLFamily/sml97)
+- [http://sml-family.org/](http://sml-family.org/)
+    - [http://sml-family.org/Basis/](http://sml-family.org/Basis/)
+        - [http://sml-family.org/Basis/command-line.html](http://sml-family.org/Basis/command-line.html)
+- [https://github.com/SMLFamily](https://github.com/SMLFamily)
+    - [https://github.com/SMLFamily/The-Definition-of-Standard-ML-Revised](https://github.com/SMLFamily/The-Definition-of-Standard-ML-Revised)
 
 ### 処理系 {#f73475e7}
 
