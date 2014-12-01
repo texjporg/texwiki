@@ -39,7 +39,6 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 - [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
 - \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
 - [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
-- [チュートリアル/Illustratorの図をTeXに - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?%A5%C1%A5%E5%A1%BC%A5%C8%A5%EA%A5%A2%A5%EB%2FIllustrator%A4%CE%BF%DE%A4%F2TeX%A4%CB)
 - [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
 
 ## Illustrator の図を TeX に {#sa00c636}
