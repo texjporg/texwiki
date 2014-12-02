@@ -11,3 +11,5 @@ pukiwiki: "ATS"
 
 - [http://www.ats-lang.org/](http://www.ats-lang.org/)
 - [http://jats-ug.metasepi.org/](http://jats-ug.metasepi.org/)
+- [http://www.cs.bu.edu/~hwxi/](http://www.cs.bu.edu/~hwxi/)
+- [https://github.com/githwxi](https://github.com/githwxi)
