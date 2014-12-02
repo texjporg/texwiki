@@ -8,7 +8,7 @@ pukiwiki: "SumatraPDF"
 
 # SumatraPDF
 
-## [SumatraPDF](http://blog.kowalczyk.info/software/sumatrapdf/) {#afa7a42e}
+## [SumatraPDF](http://www.sumatrapdfreader.org/) {#afa7a42e}
 
 <img src="http://sumatrapdf.googlecode.com/svn/trunk/gfx/SumatraPDF-256x256x32.png" alt="SumatraPDF" style="float:right">
 
@@ -24,10 +24,10 @@ PDF ファイルだけではなく PostScript ファイルも表示可能です�
 プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．<br>
 forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> オプションを追加します．<br>
 
-- [SumatraPDF 公式サイト](http://blog.kowalczyk.info/software/sumatrapdf/)
-    - [News](http://blog.kowalczyk.info/software/sumatrapdf/news.html)
-    - [ダウンロード](http://blog.kowalczyk.info/software/sumatrapdf/download-free-pdf-viewer-ja.html)
-    - [SumatraPDF pre-release builds](http://blog.kowalczyk.info/software/sumatrapdf/prerelease.html) テスト用のプレリリースビルド版
+- [SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
+    - [News](http://www.sumatrapdfreader.org/news.html)
+    - [ダウンロード](http://www.sumatrapdfreader.org/download-free-pdf-viewer-ja.html)
+    - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
 - [sumatrapdf - PDF viewer for Windows - Google Project Hosting](https://code.google.com/p/sumatrapdf/)
     - [コミットログ](https://code.google.com/p/sumatrapdf/source/list)
     - [Wiki](https://code.google.com/p/sumatrapdf/w/)
@@ -48,7 +48,7 @@ Windows
 
 ### リリース情報/ChangeLog {#b67b5a28}
 
-[News](http://blog.kowalczyk.info/software/sumatrapdf/news.html)<br>
+[News](http://www.sumatrapdfreader.org/news.html)<br>
 [コミットログ](https://code.google.com/p/sumatrapdf/source/list)<br>
 
 を参照．<br>
@@ -66,7 +66,7 @@ Windows
 
 ### コマンドラインオプション {#d9cff28c}
 
-- [http://blog.kowalczyk.info/software/sumatrapdf/manual-ja.html](http://blog.kowalczyk.info/software/sumatrapdf/manual-ja.html)
+- [http://www.sumatrapdfreader.org/manual-ja.html](http://www.sumatrapdfreader.org/manual-ja.html)
 - [https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp](https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp)
 
 ## SyncTeX {#m55b995b}
