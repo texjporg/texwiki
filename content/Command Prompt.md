@@ -26,3 +26,5 @@ pukiwiki: "Command Prompt"
 - [http://stackoverflow.com/questions/tagged/batch-file](http://stackoverflow.com/questions/tagged/batch-file)
 - [DOS コマンド一覧](http://pf-j.sakura.ne.jp/program/dos/doscmd/)
 - [コマンドプロンプトから色々な処理系でワンライナー：2012年バージョン](http://d.hatena.ne.jp/eel3/20120319/1332090071)
+- [(バッチ)レジストリの値を取得し変数に格納](http://jehupc.exblog.jp/19944153/)
+- [レジストリの値をコマンド プロンプトで取得する](http://ziomatrix18.blog68.fc2.com/blog-entry-477.html)
