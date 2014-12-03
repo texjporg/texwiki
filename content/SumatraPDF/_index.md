@@ -10,7 +10,7 @@ pukiwiki: "SumatraPDF"
 
 ## [SumatraPDF](http://www.sumatrapdfreader.org/) {#afa7a42e}
 
-<img src="http://sumatrapdf.googlecode.com/svn/trunk/gfx/SumatraPDF-256x256x32.png" alt="SumatraPDF" style="float:right">
+<img src="https://github.com/sumatrapdfreader/sumatrapdf/raw/master/gfx/SumatraPDF-256x256x32.png" alt="SumatraPDF" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -28,10 +28,9 @@ forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> �
     - [News](http://www.sumatrapdfreader.org/news.html)
     - [ダウンロード](http://www.sumatrapdfreader.org/download-free-pdf-viewer-ja.html)
     - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
-- [sumatrapdf - PDF viewer for Windows - Google Project Hosting](https://code.google.com/p/sumatrapdf/)
-    - [コミットログ](https://code.google.com/p/sumatrapdf/source/list)
-    - [Wiki](https://code.google.com/p/sumatrapdf/w/)
-        - [DDEcommands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
+- [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
+    - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
+        - [DDE commands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
 - [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
     <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
     <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
@@ -49,7 +48,7 @@ Windows
 ### リリース情報/ChangeLog {#b67b5a28}
 
 [News](http://www.sumatrapdfreader.org/news.html)<br>
-[コミットログ](https://code.google.com/p/sumatrapdf/source/list)<br>
+[コミットログ](https://github.com/sumatrapdfreader/sumatrapdf/commits/master)<br>
 
 を参照．<br>
 
@@ -60,14 +59,13 @@ Windows
 - [SumatraPDF 先読み対応バージョン](https://gist.github.com/miau/5277670)
 - [PDFlite](http://www.pdflite.com/)
 - [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
-- TeX ユーザのための [SumatraPDF-TeX](http://william.famille-blum.org/software/sumatra/) → 本家にマージされました．
 
 ## 使い方 {#wd50e1d3}
 
 ### コマンドラインオプション {#d9cff28c}
 
 - [http://www.sumatrapdfreader.org/manual-ja.html](http://www.sumatrapdfreader.org/manual-ja.html)
-- [https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp](https://code.google.com/p/sumatrapdf/source/browse/trunk/src/ParseCommandLine.cpp)
+- [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp)
 
 ## SyncTeX {#m55b995b}
 
