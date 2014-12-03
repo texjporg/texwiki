@@ -130,14 +130,13 @@ fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可
 
 ## 関連リンク {#c84cbf92}
 
-- [SumatraPDF Revision: r8607 - tweak DDEExecute (fix some edge cases)](https://code.google.com/p/sumatrapdf/source/detail?r=8607)
+- [tweak DDEExecute (fix some edge cases)](https://github.com/sumatrapdfreader/sumatrapdf/commit/aa5b9fd2f4299af6be74934fc897c05b0ca114a3)
 - [Sumatra portable 2.4_Forward Search color not used?](http://forums.fofou.org/sumatrapdf/topic?id=3184115)
 - [DDEML Functions (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/ff468833(v=vs.85).aspx>)
 - [Windows Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa383751(v=vs.85).aspx>)
 - [The New Data Types (Windows)](<http://msdn.microsoft.com/en-us/library/windows/desktop/aa384264(v=vs.85).aspx>)
 - [NDde](http://ndde.codeplex.com/)
 - [nsisDDE](http://wiz0u.free.fr/prog/nsisDDE/)
-- [レジストリの値をコマンド プロンプトで取得する](http://ziomatrix18.blog68.fc2.com/blog-entry-477.html)
 - [USBメモリ活用講座【基礎編・PDFビューアのポータブル化－Sumatra PDF】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/pdf/sumatra.shtml)
 - [Windows 7 で W32TeX を導入して日本語 SyncTeX を試してみる](http://skalldan.wordpress.com/2011/11/11/windows-7-%E3%81%A7-w32tex-%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E6%97%A5%E6%9C%AC%E8%AA%9E-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
 - [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okada.jp.org/RWiki/?Sweave%A4%C7%A5%A8%A5%C7%A5%A3%A5%BF%A4%C8DVI%A5%D3%A5%E5%A1%BC%A5%A2%B4%D6%A4%CE%C1%EA%B8%DF%B0%DC%C6%B0)
