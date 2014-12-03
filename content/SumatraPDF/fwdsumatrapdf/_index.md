@@ -126,7 +126,7 @@ fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可
     - [jN](/jN/)
     - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
-    - [fwdsumatrapdf.js](</サクラエディタ/マクロ/#ce8c0353>)
+    - [Typeset.js](</サクラエディタ/マクロ/#i861969f>)
 
 ## 関連リンク {#c84cbf92}
 
