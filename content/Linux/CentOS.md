@@ -57,6 +57,11 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 - [SL Mirrors | Scientific Linux](http://www.scientificlinux.org/downloads/sl-mirrors/)
 
+## Software Collections {#m01d8b64}
+
+- [Software Collections &mdash; Software Collections](https://www.softwarecollections.org/)
+- [http://wiki.centos.org/AdditionalResources/Repositories/SCL](http://wiki.centos.org/AdditionalResources/Repositories/SCL)
+
 ## TeX Live {#od75da14}
 
 ### TeX Live 公式パッケージ {#jc67c0a8}
@@ -97,7 +102,7 @@ $ sudo yum install ghostscript
 
 ### Python 3 {#h7df1ef5}
 
-- [https://copr.fedoraproject.org/coprs/interrupted/python3/](https://copr.fedoraproject.org/coprs/interrupted/python3/)
+- [https://www.softwarecollections.org/scls/?search=Python](https://www.softwarecollections.org/scls/?search=Python)
 
 ### Python 2 {#b51e9b09}
 
