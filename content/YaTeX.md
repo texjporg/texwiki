@@ -63,6 +63,30 @@ YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' でエラー行にジャンプ�
 YaTeX 1.75, 1.74 では C-c ' でエラー行にジャンプします．<br>
 Linux ではこの現象は起きませんでした．<br>
 エラー行にジャンプしたい場合は [AUCTeX](/AUCTeX/) を使用してください．<br>
+どうしても YaTeX でエラー行にジャンプしたい場合は
+&#x7e;/.emacs.d/init.el に
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+  (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
+```
+
+を設定して texmf.cnf に
+
+```
+TEXEDIT = emacsclientw --no-wait +%d "%s"
+```
+
+を設定 (emacsclientw.exe の存在するディレクトリに PATH を設定していない場合はフルパスで指定) して Emacs を起動して
+
+```
+M-x server-start
+```
+
+を実行します．<br>
+
+タイプセットしてエラーが発生したときに e を入力して Enter を押すとエラー行にジャンプできます．<br>
 
 ## ダウンロード {#g0fb682c}
 
@@ -79,7 +103,7 @@ Linux ではこの現象は起きませんでした．<br>
 [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
 をインストールします．<br>
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダ名を yatex に変更します．<br>
+展開したフォルダー名を yatex に変更します．<br>
 
 Emacs を起動して
 
@@ -89,7 +113,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
 
-yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
+yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
 
 ***
 
@@ -128,7 +152,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダ名を yatex に変更します．<br>
+展開したフォルダー名を yatex に変更します．<br>
 
 Emacs を起動して
 
@@ -138,7 +162,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
+yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
 
 ***
 
@@ -159,7 +183,7 @@ yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペースト�
 ### Linux {#e2cbcccd}
 
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダ名を yatex に変更します．<br>
+展開したフォルダー名を yatex に変更します．<br>
 
 Emacs を起動して
 
@@ -169,7 +193,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-yatex フォルダをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
+yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
 
 ***
 
@@ -414,12 +438,52 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ### TeX typeset {#h9687728}
 
+#### upLaTeX (ptex2pdf) {#u98acf96}
+
 ```
-(setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-(setq tex-command "pdflatex -synctex=1")
-(setq tex-command "lualatex -synctex=1")
-(setq tex-command "luajitlatex -synctex=1")
-(setq tex-command "xelatex -synctex=1")
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+  (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
+```
+
+#### pdfLaTeX {#haa09a91}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c pdflatex -synctex=1")
+  (setq tex-command "pdflatex -synctex=1"))
+```
+
+#### LuaLaTeX {#r2c74452}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c lualatex -synctex=1")
+  (setq tex-command "lualatex -synctex=1"))
+```
+
+#### LuaJITLaTeX {#kfa37927}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c luajitlatex -synctex=1")
+  (setq tex-command "luajitlatex -synctex=1"))
+```
+
+#### XeLaTeX {#h279d9b8}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c xelatex -synctex=1")
+  (setq tex-command "xelatex -synctex=1"))
+```
+
+#### Latexmk {#me8a1b75}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk")
+  (setq tex-command "latexmk"))
 ```
 
 ### upbibtex の指定 {#q198d21d}
@@ -449,48 +513,178 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ### dvi2-command (C-c C-t j でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#t737f278}
 
+#### SumatraPDF {#d0c29303}
+
 ```
 (setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
-(setq dvi2-command "texworks")
-(setq dvi2-command "texstudio --pdf-viewer-only")
-(setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
-(setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
-(setq dvi2-command "/usr/bin/open -a Preview")
-(setq dvi2-command "/usr/bin/open -a Skim")
-(setq dvi2-command "/usr/bin/open -a TeXShop")
-(setq dvi2-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
-(setq dvi2-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
-(setq dvi2-command "/usr/bin/open -a Firefox")
-(setq dvi2-command "evince")
-(setq dvi2-command "okular --unique")
-(setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
-(setq dvi2-command "qpdfview --unique")
+```
+
+#### TeXworks {#v93f2569}
+
+```
+(if (eq system-type 'darwin)
+    (setq dvi2-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
+  (setq dvi2-command "texworks"))
+```
+
+#### TeXstudio {#y5d1ba30}
+
+```
+(if (eq system-type 'darwin)
+    (setq dvi2-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
+  (setq dvi2-command "texstudio --pdf-viewer-only"))
+```
+
+#### MuPDF {#n79f13fd}
+
+```
 (setq dvi2-command "mupdf")
-(setq dvi2-command "firefox -new-window")
-(setq dvi2-command "chromium --new-window")
+```
+
+#### Firefox (PDF.js) {#r971ee00}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
+  (setq dvi2-command "firefox -new-window"))
+```
+
+#### Chrome/Chromium PDF Viewer (PDFium) {#r552a7fd}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq dvi2-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
+  (setq dvi2-command "chromium --new-window"))
+```
+
+#### Preview {#j3fea9fe}
+
+```
+(setq dvi2-command "/usr/bin/open -a Preview")
+```
+
+#### Skim {#vb4cc051}
+
+```
+(setq dvi2-command "/usr/bin/open -a Skim")
+```
+
+#### TeXShop {#w3687acc}
+
+```
+(setq dvi2-command "/usr/bin/open -a TeXShop")
+```
+
+#### Evince {#k6ed9ab5}
+
+```
+(setq dvi2-command "evince")
+```
+
+#### Okular {#uf59e41d}
+
+```
+(setq dvi2-command "okular --unique")
+```
+
+#### zathura {#g500937c}
+
+```
+(setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+```
+
+#### qpdfview {#ze129dad}
+
+```
+(setq dvi2-command "qpdfview --unique")
 ```
 
 ### tex-pdfview-command (C-c C-t d でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#ia0437ce}
 
+#### SumatraPDF {#i2f07080}
+
 ```
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
-(setq tex-pdfview-command "texworks")
-(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
-(setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
-(setq tex-pdfview-command "/usr/bin/open -a Preview")
-(setq tex-pdfview-command "/usr/bin/open -a Skim")
-(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
-(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
-(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
-(setq tex-pdfview-command "/usr/bin/open -a Firefox")
-(setq tex-pdfview-command "evince")
-(setq tex-pdfview-command "okular --unique")
-(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
-(setq tex-pdfview-command "qpdfview --unique")
+```
+
+#### TeXworks {#y4efa0cf}
+
+```
+(if (eq system-type 'darwin)
+    (setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
+  (setq tex-pdfview-command "texworks"))
+```
+
+#### TeXstudio {#wb93592a}
+
+```
+(if (eq system-type 'darwin)
+    (setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
+  (setq tex-pdfview-command "texstudio --pdf-viewer-only"))
+```
+
+#### MuPDF {#q15298f3}
+
+```
 (setq tex-pdfview-command "mupdf")
-(setq tex-pdfview-command "firefox -new-window")
-(setq tex-pdfview-command "chromium --new-window")
+```
+
+#### Firefox (PDF.js) {#j10835f3}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($args),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"")
+  (setq tex-pdfview-command "firefox -new-window"))
+```
+
+#### Chrome/Chromium PDF Viewer (PDFium) {#k977257b}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-pdfview-command "powershell -Command \"& {$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($args),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"")
+  (setq tex-pdfview-command "chromium --new-window"))
+```
+
+#### Preview {#u986e521}
+
+```
+(setq tex-pdfview-command "/usr/bin/open -a Preview")
+```
+
+#### Skim {#c9ac9d17}
+
+```
+(setq tex-pdfview-command "/usr/bin/open -a Skim")
+```
+
+#### TeXShop {#g2f83bb4}
+
+```
+(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
+```
+
+#### Evince {#j390cbe8}
+
+```
+(setq tex-pdfview-command "evince")
+```
+
+#### Okular {#y8537029}
+
+```
+(setq tex-pdfview-command "okular --unique")
+```
+
+#### zathura {#v709670e}
+
+```
+(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+```
+
+#### qpdfview {#l8d529be}
+
+```
+(setq tex-pdfview-command "qpdfview --unique")
 ```
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
@@ -620,16 +814,6 @@ off の場合
    ("bigop"     "bigoplus"      "_\n(+)~")
    ("bigot"     "bigotimes"     "_\n(x)\n ~")
    ))
-```
-
-### Latexmkを使う場合 {#naf0d69e}
-
-```
-(setq tex-command "latexmk")
-(setq tex-command "latexmk -gg -pdfdvi")
-(setq tex-command "latexmk -gg -pdfps")
-(setq tex-command "latexmk -pvc -gg -pdfdvi")
-(setq tex-command "latexmk -pvc -gg -pdfps")
 ```
 
 ### テンプレート {#pff757f3}
