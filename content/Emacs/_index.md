@@ -317,6 +317,7 @@ Source editor:
 ## 設定に関するリンク {#pd1c5cfc}
 
 - [Emacsに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/Emacs)
+- [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [eval-after-load設定すべきもの, hookで設定すべきもの](http://d.hatena.ne.jp/syohex/20141004/1412385064)
 
 ### Windows {#a1ddfe8b}
@@ -338,7 +339,6 @@ Source editor:
 - \[[ソフトウェア\] NTEmacs 23.2 のインストール・設定](http://d.hatena.ne.jp/itouhiro/20100605)
 - \[[ソフトウェア\] NTEmacs 23.1 のインストール・設定](http://d.hatena.ne.jp/itouhiro/20091027)
 - [NTEmacs23起動バッチ](http://ameblo.jp/tonjiru2121/entry-10469734020.html)
-- [Emacs23 日本語向け設定例](http://nijino.homelinux.net/emacs/emacs23-ja.html)
 
 ### OS X {#pa8b5a16}
 
