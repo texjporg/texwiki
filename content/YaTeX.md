@@ -61,7 +61,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' でエラー行にジャンプしません．<br>
 YaTeX 1.75, 1.74 では C-c ' でエラー行にジャンプします．<br>
-Linux ではこの現象は起きませんでした．<br>
+Linux の Emacs ではこの現象は起きませんでした．<br>
 エラー行にジャンプしたい場合は [AUCTeX](/AUCTeX/) を使用してください．<br>
 どうしても YaTeX でエラー行にジャンプしたい場合は
 &#x7e;/.emacs.d/init.el に
