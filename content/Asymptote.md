@@ -45,7 +45,7 @@ TeX Live に標準で含まれています。
 ソースからコンパイルするのも簡単。<br>
 OS Xでコンパイルする際は，OSのreadlineライブラリが古いので，あらかじめ新しいreadlineライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになる。<br>
 Asymptoteソースを展開したディレクトリに
-[gc-7.4.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.4.0.tar.gz)
+[gc-7.4.2.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.4.2.tar.gz)
 を展開せずに置き，
 
 ```
@@ -185,13 +185,11 @@ yaxis("$y$",LeftRight,RightTicks);
 ### 関連リンク {#xbb02c40}
 
 - [Asymptote のつかいかた](http://2nd.geocities.jp/asy_zenkin/) → ひととおりの使い方が説明された数少ない日本語リソース。TeX Live 2014 対応
+- [W32Tex や Asymptote の導入(インストール)に成功するまで経緯（１）](http://blogs.yahoo.co.jp/eikei375/38640701.html)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
-- [Asymptoteでハマった…](http://forest.edu.u-toyama.ac.jp/blog/2012/12/asymptote-1.html)
 - [Asymptote 問題集](http://d.hatena.ne.jp/denpoya/)
-- [Asymptote - laclefwiki](http://saekiyoshiyasu.org/wiki/Asymptote)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
 - [実験室(Asymptote)](http://homepage2.nifty.com/domae/asymptote.html)
 - [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
 - [Asymptoteにおける\tate](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1077)
 - [Asymptoteで日本語を表示させられませんでした](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=765)
-- [シンプット (A_Symptote)さん](https://twitter.com/A_Symptote)
