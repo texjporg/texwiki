@@ -7,6 +7,9 @@ pukiwiki: "Java"
 
 # Java
 
+<!-- CENTER:&size(60){あなたとJAVA, };&br; -->
+<!-- CENTER:&size(60){今すぐダウンロード};&br; -->
+
 ## Java {#m5391c84}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Java_logo_and_wordmark.svg/200px-Java_logo_and_wordmark.svg.png" alt="Java" style="float:right">
@@ -23,7 +26,8 @@ pukiwiki: "Java"
 - [http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna](http://stackoverflow.com/questions/15050391/how-to-make-structure-in-jna)
 - [http://qiita.com/tags/java](http://qiita.com/tags/java)
 - [http://qiita.com/tags/jvm](http://qiita.com/tags/jvm)
-    - [見せてやろうJVMが持つ真のチカラを！ JVMのオプションを一覧する方法について。](http://qiita.com/taichi@github/items/7d2bb7d4af7fec8530c3)
+    <!-- - -[http://qiita.com/taichi@github/items/7d2bb7d4af7fec8530c3 見せてやろうJVMが持つ真のチカラを！ JVMのオプションを一覧する方法について。] -->
+
 - [大刷新リリース Java 8の新機能](http://news.mynavi.jp/special/2014/java8/)
 - [Java/「現在ディレクトリ」(Current Working Directory)の変更](http://www.glamenv-septzen.net/view/1213)
 - [Java からコマンドを実行 - Runtime クラスの利用 -](http://www.whitemark.co.jp/tec/java/javaExamples9.html)
