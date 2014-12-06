@@ -58,6 +58,7 @@ $ sudo dpkg -i texlive-local_2014-1_all.deb
 ### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
 - [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
+- [Debian 8.x (Jessie) での TeX 環境](http://uwabami.junkhub.org/log/20141205.html#p01)
 - [Debian 8 jessie での日本語 TeX 環境の構築](https://blog.ymyzk.com/2014/10/debian-8-jessie-japanese-tex/)
 - [pTeX in TeXLive 2014](http://www1.pm.tokushima-u.ac.jp/~kohda/tex/texlive.html)
 
