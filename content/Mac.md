@@ -749,7 +749,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
     - 組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください．(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))<br>
 - [TeXworks](/TeXworks/)
-    - 【注意】OS X では Qt のバグのため最新版ではバックスラッシュ（半角の＼）が入力できません。[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) なら大丈夫なようです。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
+    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) なら大丈夫なようです。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
     - OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
 - TexitEasy
