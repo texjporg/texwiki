@@ -617,7 +617,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
     dvipdfmx-20070409 以降が必要です。更に商用フォントも使いました。
     そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
-        - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（cvs 版 Fri Jan 19 10:57:22 2007 UTC, [svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
+        - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（[cvs 版 Fri Jan 19 10:57:22 2007 UTC](http://cvs.ktug.org/viewcvs/dvipdfmx/src/fontmap.c?r1=1.33&r2=1.34), [svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
         - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
             の二つのファイルに分けないと、SIP の文字を文書の最初に使えない。
         - 商用フォントを使う設定になっている。これは、cid-x.map を書き換えて、[HAN NOM FONTs](http://vietunicode.sourceforge.net/fonts/fonts_hannom.html) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
