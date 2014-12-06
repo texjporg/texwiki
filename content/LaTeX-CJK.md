@@ -60,7 +60,7 @@ ipaex-type1, BXjscls &amp; BXcjkjatype を使用すると [pdfLaTeX](/pdfTeX/) �
 ***
 
 ```
-\documentclass[pdflatex,jadriver=standard]{bxjsarticle}
+\documentclass[pdflatex,ja=standard]{bxjsarticle}
 \begin{document}
 
 吾輩は猫である。名前はまだ無い。
