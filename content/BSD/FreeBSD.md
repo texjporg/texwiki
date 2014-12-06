@@ -238,6 +238,7 @@ USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb
 
 <table>
 <tbody>
+<tr><td><a href="/TeXstudio/">TeXstudio</a></td><td>editors/texstudio</td><td>Integrated writing environment for creating LaTeX documents</td></tr>
 <tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
 <tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
