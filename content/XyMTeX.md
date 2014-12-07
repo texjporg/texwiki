@@ -9,28 +9,14 @@ pukiwiki: "XyMTeX"
 
 ## XyMTeX {#j669bd8c}
 
+XyMTeX は[藤田眞作さん](http://xymtex.com/fujitas/)@[湘南情報数理化学研究所](http://xymtex.com/)による化学構造式を描画するマクロ集です．<br>
+TeX Live, W32TeX に含まれています．<br>
+
 - [湘南情報数理化学研究所 xymtex.com](http://xymtex.com/)
     - [XyMTeX 化学構造式描画](http://xymtex.com/fujitas3/xymtex/)
 - [http://www.ctan.org/pkg/xymtex](http://www.ctan.org/pkg/xymtex)
 
-一般に化学の学術雑誌への投稿には，化学者専用の化学構造描画パッケージとして
-[ChemDraw](http://www.chem-station.com/yukitopics/chemdraw.htm)，
-またはアカデミックユーザーのみ無料で使用可能であり登録する必要もない
-[ISIS/Draw](http://www.chem-station.com/yukitopics/3dmethod2.htm)
-などのソフトを利用することが化学者の間では常識であります。
-
-欧米および日本において一流の化学の学術雑誌では TeX での原稿を受け付けて
-いない現状を見ますと，数学・物理での状況とは大きく異なっているようです。
-
-実際に化学雑誌の場合では
-ごく限られた物となりますが，TeX による原稿でも受理可能な雑誌等への投稿の折
-には[藤田眞作さん](http://xymtex.com/fujitas/)@[湘南情報数理化学研究所](http://xymtex.com/)の
-[XyMTeX （キュムテフ）](http://xymtex.com/fujitas3/xymtex/)が
-参考になることでしょう。
-
-XymTeX は TeX Live, W32TeX に含まれています．<br>
-
-なお，簡単な参照ページとして
+簡単な参照ページとして
 「[LaTeX で化学構造式 &mdash; XyMTeX の紹介（Internet Archive のウェブアーカイブ）](http://web.archive.org/web/20090224162250/http://www.klavis.info/xym.html)」
 および
 「[PukiWiki XyMTeX プラグイン（Internet Archive のウェブアーカイブ）](http://web.archive.org/web/20060113004208/http://tec-tech.org/?PukiWiki/Plugin/xymtex.inc.php)」
