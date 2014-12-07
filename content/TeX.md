@@ -18,6 +18,7 @@ pukiwiki: "TeX"
 ### TeX 処理系 {#g6783551}
 
 - [Writing Japanese in LaTeX : Part 1 – Introduction](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-1-introduction/)
+- [Writing Japanese in LaTeX : Part 2 – Characters and Encodings](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-2-characters-and-encodings/)
 - [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
 - [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
