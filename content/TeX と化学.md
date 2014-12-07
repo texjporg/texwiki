@@ -65,4 +65,4 @@ TeX による原稿でも受理可能な雑誌等への投稿の折には以下�
 
 - 簡単な構造式をマクロで描画し，mhchem パッケージにより整形した反応式中に挿入．<br>
     より複雑な構造式は [TeX2img](/TeX2img/) や Illustrator，Inkscape を使って編集して \includegraphics する
-    - [TeXによる化学組版](http://doratex.hatenablog.jp/entry/20131203/1386068127) ：　pict2e マクロ + [mhchem](/mhchem/) (+ [TeX2img](/TeX2img/) + Illustrator)
+    - [TeXによる化学組版](http://doratex.hatenablog.jp/entry/20131203/1386068127) ： pict2e マクロ + [mhchem](/mhchem/) (+ [TeX2img](/TeX2img/) + Illustrator)
