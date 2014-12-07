@@ -88,6 +88,25 @@ mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理�
 LuaJITTeX を使用すると 1.3 倍ぐらい早くなることがあるようです． → [luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)<br>
 逆に大きなフォントを使用する場合など，LuaJITTeX のほうが極端に遅くなる場合もあります．
 
+たとえばファイルサイズが大きい SourceHanSans-Regular を
+使った次の例の場合，
+
+```
+%
+% test.tex
+%
+\starttext
+\definedfont [name:SourceHanSans-Regular at 100pt]%
+漢字
+\stoptext
+```
+
+```
+compile_time(contextjit test.tex) / compile_time(context test.tex) = 8.4
+```
+
+ぐらいになり，LuaJITTeX の方が約 8 倍長い時間がかかります．
+
 使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
 (u)jarticle や jsarticle などの (e-)(u)pTeX の使用を前提としたものは使用できません．<br>
 
