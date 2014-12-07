@@ -77,6 +77,8 @@ pukiwiki: "FrontPage"
         [Light Table](</Light Table/>),
         [gedit](/gedit/),
         [Geany](/Geany/)
+    - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X</strong> </span>：
+        [TeX2img](/TeX2img/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
         [TeXnicCenter](/TeXnicCenter/),
         [Notepad++](/Notepad++/)
@@ -156,8 +158,7 @@ pukiwiki: "FrontPage"
     [DTP と TeX](</DTPとTeX/>),
     [Asymptote](/Asymptote/),
     [MetaPost](/MetaPost/),
-    [METAFONT](/METAFONT/),
-    [楽譜](</楽譜/>)
+    [METAFONT](/METAFONT/)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>スペルチェッカー</strong> </span>：
     [Hunspell](/Hunspell/),
