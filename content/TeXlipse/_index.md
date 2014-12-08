@@ -23,7 +23,7 @@ TeXlipse は
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
     - [All news](http://texlipse.sourceforge.net/news.php)
     - [FAQ](http://texlipse.sourceforge.net/faq.php)
-- [TeXlipse at SourceForge.net](http://sourceforge.net/projects/texlipse/)
+- [TeXlipse | SourceForge.net](http://sourceforge.net/projects/texlipse/)
     - [Files](http://sourceforge.net/projects/texlipse/files/)
         - [texlipse plugin](http://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
         - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
