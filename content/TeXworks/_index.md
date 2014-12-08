@@ -244,27 +244,15 @@ $ ./src/TeXworks.exe &
 ```
 $ objdump -p ./src/TeXworks.exe | grep "DLL Name" | sort | uniq
         DLL Name: KERNEL32.dll
-        DLL Name: QtCore4.dll
-        DLL Name: QtGui4.dll
-        DLL Name: QtScript4.dll
-        DLL Name: QtScriptTools4.dll
-        DLL Name: QtXml4.dll
+        DLL Name: Qt5Core.dll
+        DLL Name: Qt5Gui.dll
+        DLL Name: Qt5Script.dll
+        DLL Name: Qt5ScriptTools.dll
+        DLL Name: Qt5Widgets.dll
+        DLL Name: Qt5Xml.dll
         DLL Name: USER32.dll
         DLL Name: libgcc_s_dw2-1.dll
         DLL Name: libhunspell-1.3-0.dll
-        DLL Name: libpoppler-qt4.dll
-        DLL Name: libpoppler.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: msvcrt.dll
-```
-
-```
-$ objdump -p /mingw/bin/libpoppler-qt4.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: QtCore4.dll
-        DLL Name: QtGui4.dll
-        DLL Name: QtXml4.dll
-        DLL Name: libgcc_s_dw2-1.dll
         DLL Name: libpoppler.dll
         DLL Name: libstdc++-6.dll
         DLL Name: msvcrt.dll
@@ -308,7 +296,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\4.8.6\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.3.2\5.3.2\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ## 文字コードの変換 {#e8ba5265}
 
