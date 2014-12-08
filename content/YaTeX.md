@@ -129,16 +129,134 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 #### 設定 {#edc51324}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-[&#x7e;/.emacs.d/init.el 見せてください．](/YaTeX/#uc0145ec) を参照して設定します．<br>
-SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search をタイプします．<br>
+プレビューと forward search は [SumatraPDF](/SumatraPDF/) を使用します．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
-fwdsumatrapdf の forward search は C-c w または M-x fwdsumatrapdf-forward-search をタイプします．<br>
 SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．<br>
-YaTeX-inhibit-prefix-letter は t に設定しました．<br>
-YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード以外の TeX ファイルも指定した文字コードで保存されてしまう</strong>ので nil を指定することをおすすめします．<br>
 
-- [8.4.3 文字エンコーディングの設定](http://hwb.ecc.u-tokyo.ac.jp/current/literacy/editor/emacs/encoding/)
-- [http://www.mzks.org/wiki/index.php?Emacs](http://www.mzks.org/wiki/index.php?Emacs)
+***
+
+```
+;;
+;; YaTeX
+;;
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
+(setq auto-mode-alist
+      (append '(("\\.tex$" . yatex-mode)
+                ("\\.ltx$" . yatex-mode)
+                ("\\.cls$" . yatex-mode)
+                ("\\.sty$" . yatex-mode)
+                ("\\.clo$" . yatex-mode)
+                ("\\.bbl$" . yatex-mode)) auto-mode-alist))
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-kanji-code nil)
+(setq YaTeX-latex-message-code 'utf-8)
+(setq YaTeX-use-LaTeX2e t)
+(setq YaTeX-use-AMS-LaTeX t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c pdflatex -synctex=1")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c lualatex -synctex=1")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c luajitlatex -synctex=1")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c xelatex -synctex=1")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+(setq bibtex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq makeindex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+;(setq dvi2-command "texworks")
+;(setq dvi2-command "texstudio --pdf-viewer-only")
+(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+;(setq tex-pdfview-command "texworks")
+;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
+(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process pdfopen -ArgumentList ('--rxi','--file',$p)}\"")
+
+(defun sumatrapdf-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "sumatrapdf"
+      nil
+      "rundll32"
+      "shell32,ShellExec_RunDLL"
+      "SumatraPDF"
+      "-reuse-instance"
+      (expand-file-name
+       (concat (file-name-sans-extension (or YaTeX-parent-file
+                                             (save-excursion
+                                               (YaTeX-visit-main t)
+                                               buffer-file-name)))
+               ".pdf"))
+      "-forward-search"
+      (buffer-name)
+      (number-to-string (save-restriction
+                          (widen)
+                          (count-lines (point-min) (point))))))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
+
+(defun fwdsumatrapdf-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "fwdsumatrapdf"
+      nil
+      "fwdsumatrapdf"
+      (expand-file-name
+       (concat (file-name-sans-extension (or YaTeX-parent-file
+                                             (save-excursion
+                                               (YaTeX-visit-main t)
+                                               buffer-file-name)))
+               ".pdf"))
+      (buffer-name)
+      (number-to-string (save-restriction
+                          (widen)
+                          (count-lines (point-min) (point))))))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (auto-fill-mode -1)))
+
+;;
+;; RefTeX with YaTeX
+;;
+;(add-hook 'yatex-mode-hook 'turn-on-reftex)
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (reftex-mode 1)
+             (define-key reftex-mode-map (concat YaTeX-prefix ">") 'YaTeX-comment-region)
+             (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)))
+```
+
+***
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
+> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search</td><td>fwdsumatrapdf で forward search</td></tr>
+> </tbody>
+> </table>
+>
 
 ### OS X {#p7238e02}
 
@@ -178,7 +296,109 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 #### 設定 {#qe563613}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-[&#x7e;/.emacs.d/init.el 見せてください．](/YaTeX/#uc0145ec) を参照して設定します．<br>
+プレビューと forward search は [Skim](/Skim/) を使用します．<br>
+Skim の inverse search については [Emacs#Skim との連携#inverse search](/Emacs/#e9c08b3d) を参照してください．<br>
+
+***
+
+```
+;;
+;; YaTeX
+;;
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
+(setq auto-mode-alist
+      (append '(("\\.tex$" . yatex-mode)
+                ("\\.ltx$" . yatex-mode)
+                ("\\.cls$" . yatex-mode)
+                ("\\.sty$" . yatex-mode)
+                ("\\.clo$" . yatex-mode)
+                ("\\.bbl$" . yatex-mode)) auto-mode-alist))
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-kanji-code nil)
+(setq YaTeX-latex-message-code 'utf-8)
+(setq YaTeX-use-LaTeX2e t)
+(setq YaTeX-use-AMS-LaTeX t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq tex-command "/usr/texbin/ptex2pdf -u -l -ot '-synctex=1'")
+;(setq tex-command "/usr/texbin/pdflatex -synctex=1")
+;(setq tex-command "/usr/texbin/lualatex -synctex=1")
+;(setq tex-command "/usr/texbin/luajitlatex -synctex=1")
+;(setq tex-command "/usr/texbin/xelatex -synctex=1")
+;(setq tex-command "/usr/texbin/latexmk")
+;(setq tex-command "/usr/texbin/latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "/usr/texbin/latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps")
+;(setq tex-command "/usr/texbin/latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "/usr/texbin/latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "/usr/texbin/latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "/usr/texbin/latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+(setq bibtex-command "/usr/texbin/latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command "/usr/texbin/latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq dvi2-command "/usr/bin/open -a Skim")
+;(setq dvi2-command "/usr/bin/open -a Preview")
+;(setq dvi2-command "/usr/bin/open -a TeXShop")
+;(setq dvi2-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
+;(setq dvi2-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
+(setq tex-pdfview-command "/usr/bin/open -a Skim")
+;(setq tex-pdfview-command "/usr/bin/open -a Preview")
+;(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
+;(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
+;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
+(setq dviprint-command-format "/usr/bin/open -a \"Adobe Reader\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+
+(defun skim-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process  
+      "displayline"
+      nil
+      "/Applications/Skim.app/Contents/SharedSupport/displayline"
+      (number-to-string (save-restriction
+                          (widen)
+                          (count-lines (point-min) (point))))
+      (expand-file-name
+       (concat (file-name-sans-extension (or YaTeX-parent-file
+                                             (save-excursion
+                                               (YaTeX-visit-main t)
+                                               buffer-file-name)))
+               ".pdf"))
+      buffer-file-name))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c s") 'skim-forward-search)))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (auto-fill-mode -1)))
+
+;;
+;; RefTeX with YaTeX
+;;
+;(add-hook 'yatex-mode-hook 'turn-on-reftex)
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (reftex-mode 1)
+             (define-key reftex-mode-map (concat YaTeX-prefix ">") 'YaTeX-comment-region)
+             (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)))
+```
+
+***
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
+> <tr><td></td><td>C-c s または M-x skim-forward-search</td><td>Skim で forward search</td></tr>
+> </tbody>
+> </table>
+>
 
 ### Linux {#e2cbcccd}
 
@@ -209,9 +429,218 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 #### 設定 {#nec42ee2}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
-[&#x7e;/.emacs.d/init.el 見せてください．](/YaTeX/#uc0145ec) を参照して設定します．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．<br>
+
+***
+
+```
+;;
+;; YaTeX
+;;
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+(autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
+(setq auto-mode-alist
+      (append '(("\\.tex$" . yatex-mode)
+                ("\\.ltx$" . yatex-mode)
+                ("\\.cls$" . yatex-mode)
+                ("\\.sty$" . yatex-mode)
+                ("\\.clo$" . yatex-mode)
+                ("\\.bbl$" . yatex-mode)) auto-mode-alist))
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-kanji-code nil)
+(setq YaTeX-latex-message-code 'utf-8)
+(setq YaTeX-use-LaTeX2e t)
+(setq YaTeX-use-AMS-LaTeX t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
+;(setq tex-command "pdflatex -synctex=1")
+;(setq tex-command "lualatex -synctex=1")
+;(setq tex-command "luajitlatex -synctex=1")
+;(setq tex-command "xelatex -synctex=1")
+;(setq tex-command "latexmk")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps")
+;(setq tex-command "latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+;(setq tex-command "latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
+(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq dvi2-command "xdg-open")
+;(setq dvi2-command "evince")
+;(setq dvi2-command "okular --unique")
+;(setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+;(setq dvi2-command "qpdfview --unique")
+;(setq dvi2-command "texworks")
+;(setq dvi2-command "texstudio --pdf-viewer-only")
+(setq tex-pdfview-command "xdg-open")
+;(setq tex-pdfview-command "evince")
+;(setq tex-pdfview-command "okular --unique")
+;(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+;(setq tex-pdfview-command "qpdfview --unique")
+;(setq tex-pdfview-command "texworks")
+;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
+(setq dviprint-command-format "xdg-open `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+
+(defun evince-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "fwdevince"
+      nil
+      "fwdevince"
+      (expand-file-name
+       (concat (file-name-sans-extension (or YaTeX-parent-file
+                                             (save-excursion
+                                               (YaTeX-visit-main t)
+                                               buffer-file-name)))
+               ".pdf"))
+      (number-to-string (save-restriction
+                          (widen)
+                          (count-lines (point-min) (point))))
+      (buffer-name)))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c e") 'evince-forward-search)))
+
+(require 'dbus)
+
+(defun un-urlify (fname-or-url)
+  "A trivial function that replaces a prefix of file:/// with just /."
+  (if (string= (substring fname-or-url 0 8) "file:///")
+      (substring fname-or-url 7)
+    fname-or-url))
+
+(defun evince-inverse-search (file linecol &rest ignored)
+  (let* ((fname (un-urlify file))
+         (buf (find-file fname))
+         (line (car linecol))
+         (col (cadr linecol)))
+    (if (null buf)
+        (message "[Synctex]: %s is not opened..." fname)
+      (switch-to-buffer buf)
+      (goto-line (car linecol))
+      (unless (= col -1)
+        (move-to-column col)))))
+
+(dbus-register-signal
+ :session nil "/org/gnome/evince/Window/0"
+ "org.gnome.evince.Window" "SyncSource"
+ 'evince-inverse-search)
+
+(defun okular-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "okular"
+      nil
+      "okular"
+      "--unique"
+      (concat (expand-file-name
+               (concat (file-name-sans-extension (or YaTeX-parent-file
+                                                     (save-excursion
+                                                       (YaTeX-visit-main t)
+                                                       buffer-file-name)))
+                       ".pdf"))
+              "#src:"
+              (number-to-string (save-restriction
+                                  (widen)
+                                  (count-lines (point-min) (point))))
+              (buffer-file-name))))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c o") 'okular-forward-search)))
+
+(defun zathura-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "zathura"
+      nil
+      "zathura"
+      "--synctex-forward"
+      (concat (number-to-string (save-restriction
+                                  (widen)
+                                  (count-lines (point-min) (point))))
+              ":0:"
+              (buffer-name))
+      (expand-file-name
+       (concat (file-name-sans-extension (or YaTeX-parent-file
+                                             (save-excursion
+                                               (YaTeX-visit-main t)
+                                               buffer-file-name)))
+               ".pdf"))))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c z") 'zathura-forward-search)))
+
+(defun qpdfview-forward-search ()
+  (interactive)
+  (progn
+    (process-kill-without-query
+     (start-process
+      "qpdfview"
+      nil
+      "qpdfview"
+      "--unique"
+      (concat (expand-file-name
+               (concat (file-name-sans-extension (or YaTeX-parent-file
+                                                     (save-excursion
+                                                       (YaTeX-visit-main t)
+                                                       buffer-file-name)))
+                       ".pdf"))
+              "#src:"
+              (buffer-name)
+              ":"
+              (number-to-string (save-restriction
+                                  (widen)
+                                  (count-lines (point-min) (point))))
+              ":0")))))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (define-key YaTeX-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
+
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (auto-fill-mode -1)))
+
+;;
+;; RefTeX with YaTeX
+;;
+;(add-hook 'yatex-mode-hook 'turn-on-reftex)
+(add-hook 'yatex-mode-hook
+          '(lambda ()
+             (reftex-mode 1)
+             (define-key reftex-mode-map (concat YaTeX-prefix ">") 'YaTeX-comment-region)
+             (define-key reftex-mode-map (concat YaTeX-prefix "<") 'YaTeX-uncomment-region)))
+```
+
+***
+
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
+> <tr><td></td><td>C-c e または M-x evince-forward-search</td><td>Evince で forward search</td></tr>
+> <tr><td></td><td>C-c o または M-x okular-forward-search</td><td>Okular で forward search</td></tr>
+> <tr><td></td><td>C-c z または M-x zathura-forward-search</td><td>zathura で forward search</td></tr>
+> <tr><td></td><td>C-c q または M-x qpdfview-forward-search</td><td>qpdfview で forward search</td></tr>
+> </tbody>
+> </table>
+>
 
 ## 使い方 {#v90b1615}
 
@@ -383,7 +812,8 @@ if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (
 
 ## &#x7e;/.emacs.d/init.el 見せてください． {#uc0145ec}
 
-あくまで一例です。ぜひ修正、加筆お願いします。
+あくまで一例です。<br>
+ぜひ修正、加筆お願いします。<br>
 
 ### ‘load-path’に yatex.el が存在するフォルダー (ディレクトリ) を追加 {#pe637e19}
 
@@ -419,6 +849,9 @@ if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (
 ### Kanji code {#j78164d5}
 
 YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード以外の TeX ファイルも指定した文字コードで保存されてしまう</strong>ので nil を指定することをおすすめします．
+
+- [8.4.3 文字エンコーディングの設定](http://hwb.ecc.u-tokyo.ac.jp/current/literacy/editor/emacs/encoding/)
+- [http://www.mzks.org/wiki/index.php?Emacs](http://www.mzks.org/wiki/index.php?Emacs)
 
 ```
 ;;;   nil=YaTeX-kanji-code が nil なら coding-system に感知しない
@@ -484,6 +917,54 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (if (eq system-type 'windows-nt)
     (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk")
   (setq tex-command "latexmk"))
+```
+
+#### Latexmk-pdfupLaTeX {#bc88da07}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+  (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
+```
+
+#### Latexmk-pdfupLaTeX2 {#od385031}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.bat %O %S %D/\" -norc -gg -pdfps")
+  (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps"))
+```
+
+#### Latexmk-pdfLaTeX {#n70096b8}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+  (setq tex-command "latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
+```
+
+#### Latexmk-LuaLaTeX {#d4a80fb8}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+  (setq tex-command "latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
+```
+
+#### Latexmk-LuaJITLaTeX {#wfb7e387}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+  (setq tex-command "latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
+```
+
+#### Latexmk-XeLaTeX {#gac50540}
+
+```
+(if (eq system-type 'windows-nt)
+    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+  (setq tex-command "latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
 ```
 
 ### upbibtex の指定 {#q198d21d}
