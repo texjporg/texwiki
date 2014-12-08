@@ -33,6 +33,8 @@ SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, e
 
 ## SyncTeX 対応 PDF ビューア {#yf457304}
 
+- [TeXworks](/TeXworks/)
+- [TeXstudio](/TeXstudio/)
 - [SumatraPDF](/SumatraPDF/)
 - [Skim](/Skim/)
 - [Evince](/Evince/)
