@@ -19,8 +19,8 @@ pukiwiki: "TeXnicCenter"
 
 TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
-- [TeXnicCenter 公式ページ](http://www.texniccenter.org/)
-- [TeXnicCenter | Free Business &amp; Enterprise software downloads at SourceForge.net](http://sourceforge.net/projects/texniccenter/)
+- [TeXnicCenter](http://www.texniccenter.org/)
+- [TeXnicCenter | SourceForge.net](http://sourceforge.net/projects/texniccenter/)
 
 ### 動作環境 {#sa939c6e}
 
@@ -32,7 +32,7 @@ Windows
 
 ### リリース情報 {#da101e5c}
 
-- [TeXnicCenter News](http://www.texniccenter.org/news)
+- [TeXnicCenter  &raquo; News](http://www.texniccenter.org/news/)
 - [http://sourceforge.net/p/texniccenter/code/ref/default/tags/](http://sourceforge.net/p/texniccenter/code/ref/default/tags/)
 
 を参照．
