@@ -182,8 +182,8 @@ wine で [Adobe Reader](</Adobe Reader/>) XI (Windows 版/日本語版) を使�
 $ sudo dpkg --add-architecture i386
 $ sudo apt-get update
 $ sudo apt-get install wine
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.09/ja_JP/AdbeRdr11009_ja_JP.exe
-$ wine AdbeRdr11009_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.10/ja_JP/AdbeRdr11010_ja_JP.exe
+$ wine AdbeRdr11010_ja_JP.exe
 ```
 
 インストールが途中で終了してしまう場合は
