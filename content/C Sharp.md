@@ -22,6 +22,7 @@ pukiwiki: "C Sharp"
 - [C# Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/csharp)
 - [.NET Foundation](http://www.dotnetfoundation.org/)
 - [AnyCPUなC#モジュールからx86/x64のDLLを呼び分ける方法まとめ](http://cflat-inc.hatenablog.com/entry/20130723/1374535605)
+- [http://tex.stackexchange.com/questions/44528/how-to-make-the-correct-hash-symbol-in-c-sharp-c](http://tex.stackexchange.com/questions/44528/how-to-make-the-correct-hash-symbol-in-c-sharp-c)
 
 ## 処理系 {#h8ce0ca0}
 
