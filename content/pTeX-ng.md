@@ -13,7 +13,7 @@ pukiwiki: "pTeX-ng"
 
 ### pTeX-ng とは {#bdeeaf1c}
 
-pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指したプロジェクトです．<br>
+pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指すプロジェクトです．<br>
 pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力しません．<br>
 
 - [https://github.com/clerkma/ptex-ng](https://github.com/clerkma/ptex-ng)
@@ -35,6 +35,7 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 ## 関連リンク {#re1f2eda}
 
+- [ptex-ng - tlptexlive バイナリ](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1451)
 - [ptex-ng](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1447)
 - [天地有情 \[LaTeX\] pTeX-ng 備忘録 -- 新しい TeX 処理系](http://konoyonohana.blog.fc2.com/blog-entry-90.html)
 - [ptex-ng を使ってみました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1409)
