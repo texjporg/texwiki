@@ -162,8 +162,8 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 <!-- $ chmod +x winetricks -->
 <!-- $ sudo cp -p winetricks /usr/local/bin -->
 <!-- $ winetricks -q mspatcha -->
-<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.09/ja_JP/AdbeRdr11009_ja_JP.exe -->
-<!-- $ wine AdbeRdr11009_ja_JP.exe -->
+<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.10/ja_JP/AdbeRdr11010_ja_JP.exe -->
+<!-- $ wine AdbeRdr11010_ja_JP.exe -->
 
 <!-- -[[CentOS 6.xにAdobe Readerインストール設定（yum）:http://boota.mydns.jp/blog/?p=2028]] -->
 <!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
