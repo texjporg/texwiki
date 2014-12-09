@@ -245,14 +245,14 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search</td><td>SumatraPDF で forward search</td></tr>
-> <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search</td><td>fwdsumatrapdf で forward search</td></tr>
+> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -388,13 +388,13 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c s または M-x skim-forward-search</td><td>Skim で forward search</td></tr>
+> <tr><td></td><td>C-c s または M-x skim-forward-search RET</td><td>Skim で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -627,16 +627,16 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c e または M-x evince-forward-search</td><td>Evince で forward search</td></tr>
-> <tr><td></td><td>C-c o または M-x okular-forward-search</td><td>Okular で forward search</td></tr>
-> <tr><td></td><td>C-c z または M-x zathura-forward-search</td><td>zathura で forward search</td></tr>
-> <tr><td></td><td>C-c q または M-x qpdfview-forward-search</td><td>qpdfview で forward search</td></tr>
+> <tr><td></td><td>C-c e または M-x evince-forward-search RET</td><td>Evince で forward search</td></tr>
+> <tr><td></td><td>C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
+> <tr><td></td><td>C-c z または M-x zathura-forward-search RET</td><td>zathura で forward search</td></tr>
+> <tr><td></td><td>C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -673,10 +673,10 @@ Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最�
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>タイプセット</td></tr>
 > <tr><td>Process -&gt; LaTeX+PDF</td><td>C-c C-t d</td><td>latex + dvipdfmx</td></tr>
 > <tr><td>Process -&gt; Kill LaTeX</td><td>C-c C-t k</td><td>タイプセットを中断</td></tr>
-> <tr><td>Process -&gt; Preview</td><td>C-c C-t p</td><td>プレビュー</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b</td><td>BibTeX</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i</td><td>MakeIndex</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l</td><td>LPR (印刷)</td></tr>
+> <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>プレビュー</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>BibTeX</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>MakeIndex</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>LPR (印刷)</td></tr>
 > <tr><td></td><td>C-c '</td><td>エラー行にジャンプ</td></tr>
 > <tr><td></td><td>M-x yatex</td><td>親ファイルの再設定</td></tr>
 > </tbody>
@@ -1360,7 +1360,7 @@ off の場合
              (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
 ```
 
-SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search をタイプします．
+SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
 
 #### SumatraPDF を前面に表示したくない場合 {#d9c64d40}
 
@@ -1391,7 +1391,7 @@ SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search 
 
 fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forward-search をタイプします．
+fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタイプします．
 
 ### Skim との連携 (forward search) {#f978a43b}
 
@@ -1420,7 +1420,7 @@ fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forwar
              (define-key YaTeX-mode-map (kbd "C-c s") 'skim-forward-search)))
 ```
 
-displayline での forward search は C-c s または M-x skim-forward-search をタイプします．
+displayline での forward search は C-c s または M-x skim-forward-search RET をタイプします．
 
 - [skim-forward-search.el](https://gist.github.com/ryseto/5710882), [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836) も参照してください．
 
@@ -1457,7 +1457,7 @@ displayline での forward search は C-c s または M-x skim-forward-search �
 
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
-fwdevince での forward search は C-c e または M-x evince-forward-search をタイプします．
+fwdevince での forward search は C-c e または M-x evince-forward-search RET をタイプします．
 
 <!-- -[[SyncTeXの設定。 Emacs(YaTeX) + Evince:http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html]] も参照してください． -->
 
@@ -1494,7 +1494,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
              (define-key YaTeX-mode-map (kbd "C-c o") 'okular-forward-search)))
 ```
 
-okular での forward search は C-c o または M-x okular-forward-search をタイプします．
+okular での forward search は C-c o または M-x okular-forward-search RET をタイプします．
 
 ### zathura との連携 (forward search) {#j4034f6b}
 
@@ -1525,7 +1525,7 @@ okular での forward search は C-c o または M-x okular-forward-search を�
              (define-key YaTeX-mode-map (kbd "C-c z") 'zathura-forward-search)))
 ```
 
-zathura での forward search は C-c z または M-x zathura-forward-search をタイプします．
+zathura での forward search は C-c z または M-x zathura-forward-search RET をタイプします．
 
 ### qpdfview との連携 (forward search) {#ic7abdb4}
 
@@ -1558,7 +1558,7 @@ zathura での forward search は C-c z または M-x zathura-forward-search を
              (define-key YaTeX-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
 ```
 
-qpdfview での forward search は C-c q または M-x qpdfview-forward-search をタイプします．
+qpdfview での forward search は C-c q または M-x qpdfview-forward-search RET をタイプします．
 
 ## その他（改造など） {#q5a5c09f}
 
