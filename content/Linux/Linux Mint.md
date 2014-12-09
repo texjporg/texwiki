@@ -176,8 +176,8 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ```
 $ sudo apt-get install wine wine-gecko wine-mono
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.09/ja_JP/AdbeRdr11009_ja_JP.exe
-$ wine AdbeRdr11009_ja_JP.exe
+$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.10/ja_JP/AdbeRdr11010_ja_JP.exe
+$ wine AdbeRdr11010_ja_JP.exe
 ```
 
 インストールが途中で終了してしまう場合は
