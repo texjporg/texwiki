@@ -30,6 +30,10 @@ Windows XP のサポートは終了しました．<br>
 - [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0)
 - [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0)
 
+## Windows Update {#k1690f5c}
+
+- [Windows Update 利用の手順](http://www.microsoft.com/ja-jp/security/pc-security/j_musteps.aspx)
+
 ## TeX ディストリビューション {#vb660ba1}
 
 Microsoft Windows に TeX をインストールする場合，TeX ディストリビューションの選択肢が複数存在します．<br>
@@ -624,6 +628,9 @@ guess_input_kanji_encoding = 1
 
 [Windows 8.1 に TeX Live 2014 をインストール](http://qiita.com/ignorant/items/21545cde3c9bbafaa264)
 : 2014-08-29
+
+[docs/TeX/TeX on Windows - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows)
+: 2014-08-11
 
 [Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．](http://qiita.com/ConHumi/items/f0d12ab1ad433591c192)
 : 2014-07-31
