@@ -349,5 +349,6 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSh
     <!-- try{(Get-ItemProperty -Path 'HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe' -ErrorAction Stop).'(default)'}catch{Write-Output 'rundll32 shell32,ShellExec_RunDLL SumatraPDF'} -->
     <!-- try{(Get-ItemProperty -Path "HKLM:\SOFTWARE\\Microsoft\Windows\CurrentVersion\App Paths\SumatraPDF.exe" -ErrorAction Stop)."(default)"}catch{Write-Output "rundll32 shell32,ShellExec_RunDLL SumatraPDF"} -->
 
+- [Windows で sudo なことをする。](http://mimumimu.net/blog/2014/12/11/windows-%E3%81%A7-sudo-%E3%81%AA%E3%81%93%E3%81%A8%E3%82%92%E3%81%99%E3%82%8B%E3%80%82/)
 - [http://qiita.com/tags/powershell](http://qiita.com/tags/powershell)
     - [「 Linux ならできるのに、だから Windows は...」「それ PowerShell でできるよ」](http://qiita.com/cd01/items/da9a36582372e7d0a7f6)
