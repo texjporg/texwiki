@@ -35,10 +35,9 @@ Chromium は Google Chrome で使用されているオープンソースの Web 
 
 - [Chromium派生ブラウザ総合 まとめWiki](http://www49.atwiki.jp/chromiumbased/)
 
+- [Opera](http://www.opera.com/ja/)
 - [SRWare Iron](http://www.srware.net/en/)
     - [Download](http://www.srware.net/en/software_srware_iron_download.php)
-- [Opera](http://www.opera.com/ja/)
-- [Comodo Dragon](http://www.comodo.com/home/browsers-toolbars/browser.php)
 
 ## プラグイン {#y795a936}
 
@@ -89,3 +88,5 @@ PDFium.js は PDFium を JavaScript に移植したものです．<br>
 
 - [ChromiumでChrome PDF Viewerを使う](http://hikaru.6.ql.bz/memo.php?id=chrome)
 - [Linux Mint - Google Chrome をインストール！](http://www.mk-mode.com/wordpress/2012/11/04002054/)
+- [http://www.japan-secure.com/](http://www.japan-secure.com/)
+    - [http://www.japan-secure.com/entry/blog-entry-389.html](http://www.japan-secure.com/entry/blog-entry-389.html)
