@@ -1598,6 +1598,7 @@ TeX ソースの先頭行に例えば，
 
 ## 関連リンク {#fcad5d2d}
 
+- [YaTeX \[ShotakahaDokuWiki](http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:yatex:start)\]
 - [モダンな日本語 TeX 環境を整える](http://qiita.com/ynakayama/items/706ae9e59c1b6fd3e3d2)
 - [Ubuntu 14.04でのEmacsの設定](http://ubutun.blogspot.jp/2014/06/ubuntu-1404emacs.html)
 - [Linux Mintを導入する（８）](http://note.chiebukuro.yahoo.co.jp/detail/n220718)
