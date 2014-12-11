@@ -41,7 +41,7 @@ TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 
 Microsoft Windows，OS X, GNU/Linux で利用できます．<br>
 TeXworks の Windows 版は，Windows XP 以降の Windows で動作します．<br>
-TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://qt-project.org/doc/qt-5/supported-platforms.html) で動作します．<br>
+TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html) で動作します．<br>
 
 ### License {#lccd03cb}
 
@@ -296,7 +296,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\Qt5.3.2\5.3.2\mingw48_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.4.0\5.4\mingw491_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ## 文字コードの変換 {#e8ba5265}
 
