@@ -9,7 +9,7 @@ pukiwiki: "YaTeX"
 
 [Emacs](/Emacs/) > YaTeX
 
-## [YaTeX](https://www.yatex.org/) → Windows の Emacs で C-c ' でエラー行にジャンプしないなどの問題が発生する場合は [Org mode](</Emacs/Org mode/>) または [TeX mode](</Emacs/TeX mode/>) または [AUCTeX](/AUCTeX/) を使用する {#o2c95a66}
+## [YaTeX](https://www.yatex.org/) → Windows の Emacs で C-c ' を入力してもエラー行にジャンプしないなどの問題が発生する場合は [Org mode](</Emacs/Org mode/>) または [TeX mode](</Emacs/TeX mode/>) または [AUCTeX](/AUCTeX/) を使用する {#o2c95a66}
 
 <img src="https://www.yatex.org/yalogo.gif" alt="YaTeX" style="float:right">
 
@@ -57,10 +57,10 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' でエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
+### YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
 
-YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' でエラー行にジャンプしません．<br>
-Linux の Emacs や YaTeX 1.75, 1.74 では C-c ' でエラー行にジャンプします．<br>
+YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしません．<br>
+Linux の Emacs や YaTeX 1.75, 1.74 では C-c ' を入力するとエラー行にジャンプします．<br>
 エラー行にジャンプしたい場合は [AUCTeX](/AUCTeX/) を使用してください．<br>
 どうしても YaTeX でエラー行にジャンプしたい場合は
 &#x7e;/.emacs.d/init.el に
