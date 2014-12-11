@@ -220,7 +220,7 @@ $ pushd poppler-0.29.0
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.3.2/5.3.2/mingw48_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.3.2/5.3.2/mingw48_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.3.2/5.3.2/mingw48_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.3.2/5.3.2/mingw48_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.4.0/5.4/mingw491_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.4.0/5.4/mingw491_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.4.0/5.4/mingw491_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.4.0/5.4/mingw491_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
