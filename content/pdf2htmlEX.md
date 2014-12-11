@@ -222,9 +222,9 @@ see [https://github.com/coolwanglu/pdf2htmlEX/wiki/Building](https://github.com/
 [pango](http://www.pango.org/) をインストールします．<br>
 
 ```
-$ curl --insecure -R -L -O https://download.gnome.org/sources/pango/1.36/pango-1.36.3.tar.xz
-$ tar xvf pango-1.36.3.tar.xz
-$ pushd pango-1.36.3
+$ curl --insecure -R -L -O https://download.gnome.org/sources/pango/1.36/pango-1.36.8.tar.xz
+$ tar xvf pango-1.36.8.tar.xz
+$ pushd pango-1.36.8
 $ ./configure --prefix=/mingw
 $ make
 $ make install
@@ -305,23 +305,23 @@ $ popd
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-1.00.tar.gz
-$ tar xvf ttfautohint-1.00.tar.gz
-$ pushd ttfautohint-1.00
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-1.2.tar.gz
+$ tar xvf ttfautohint-1.2.tar.gz
+$ pushd ttfautohint-1.2
 $ ./configure --prefix=/mingw
 $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.3.15.3.1mingw48_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.3.15.3.1mingw48_32lib'
+../libtool: line 6013: cd: C:QtQt5.4.05.4mingw491_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.4.05.4mingw491_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-1.00/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.3.1\5.3.1\mingw48_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.3.1/5.3.1/mingw48_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.4.0\5.4\mingw491_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.4.0/5.4/mingw491_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
@@ -546,7 +546,7 @@ Cygwin では問題なく動作するようです．<br>
 - [https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb)
 
 ```
-brew install pdf2htmlex
+$ brew install pdf2htmlex
 ```
 
 #### MacPorts {#ub0beda7}
