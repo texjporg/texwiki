@@ -80,7 +80,7 @@ Go は汎用プログラミング言語です．<br>
 
 ### Go 版 {#j2bc8fe8}
 
-go version go1.4rc2 windows/amd64 で動作確認しています．<br>
+go version go1.4 windows/amd64 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
