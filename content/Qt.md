@@ -10,7 +10,6 @@ pukiwiki: "Qt"
 ## Qt {#i2e83951}
 
 - [http://www.qt.io/](http://www.qt.io/)
-    - [http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/)
 - [Qt Project](http://qt-project.org/)
 - [Wikipedia.en:Qt](https://en.wikipedia.org/wiki/Qt)
 - [Wikipedia.ja:Qt](https://ja.wikipedia.org/wiki/Qt)
@@ -19,6 +18,11 @@ pukiwiki: "Qt"
 - [http://www.qt-users.jp/](http://www.qt-users.jp/)
 - [Qt関連情報](http://uilabo.web.fc2.com/Qt/index.html)
 - [Connect to DDE Server](http://qt-project.org/forums/viewthread/16309/)
+
+### Download {#ud83434e}
+
+- [http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/)
+- [http://download.qt-project.org/archive/qt/](http://download.qt-project.org/archive/qt/)
 
 ### Supported Platforms {#p35925a9}
 
