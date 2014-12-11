@@ -97,6 +97,13 @@ Vim は，チャリティウェアです．<br>
 - [Applidium &mdash; Vim](http://applidium.com/en/applications/vim/)
     - [Vim - iTunes App Store](https://itunes.apple.com/jp/app/vim/id492668168?mt=8)
 
+#### Web {#s4320361}
+
+- Vim.js
+    - [http://coolwanglu.github.io/vim.js/web/vim.html](http://coolwanglu.github.io/vim.js/web/vim.html)
+    - [http://coolwanglu.github.io/vim.js/experimental/vim.html](http://coolwanglu.github.io/vim.js/experimental/vim.html)
+    - [https://github.com/coolwanglu/vim.js](https://github.com/coolwanglu/vim.js)
+
 ### ヘルプ {#b043417b}
 
 - [Vim documentation: help](http://vim-jp.org/vimdoc-ja/)
