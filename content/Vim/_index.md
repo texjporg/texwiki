@@ -36,7 +36,7 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
         <!-- [[Vim team:http://sourceforge.net/project/memberlist.php?group_id=8] -->
         <!-- [[develop:http://sourceforge.net/projects/vim/develop]] -->
 
-- [Vim Advent Calendar 2013 : ATND](http://atnd.org/events/45072)
+- [Vim Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/vim)
 
 ### 動作環境 {#w6b94f3c}
 
@@ -55,7 +55,7 @@ Vim は，チャリティウェアです．<br>
 
 #### Neovim {#i20f720c}
 
-- [Home &middot; Neovim](http://neovim.org/)
+- [Home - Neovim](http://neovim.org/)
 - [https://github.com/neovim/neovim](https://github.com/neovim/neovim)
 
 #### Windows {#mcb80f41}
@@ -66,15 +66,8 @@ Vim は，チャリティウェアです．<br>
     - [Vim昔語/遭遇編 &mdash; KaoriYa](http://www.kaoriya.net/blog/201108/20110811)
         <!-- -[[gVim Portable:http://sf.net/projects/portableapps/files/gVim%20Portable/]] -->
 
-#### Windows, Linux {#o0f5036e}
-
 - [Vim UTF-8 日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban)
     UTF-8 化した vim/gvim
-
-#### Windows, GNU/Linux, FreeBSD {#q4511794}
-
-- [Cream](http://cream.sf.net/)
-    モーダルな Vim をモードレスに
 
 #### OS X {#gb7dcad0}
 
