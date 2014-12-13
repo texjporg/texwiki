@@ -28,6 +28,11 @@ pukiwiki: "JavaScript"
 - [FirefoxのJavaScriptデバッガ拡張Firebugの進化がすごい](http://efcl.info/2011/0424/res2647/)
 - [今更だけどFirefoxでJavaScriptを無効化する方法をメモ（アドオン未使用）](http://ideahacker.net/2013/10/21/6676/)
 - [JavaScript Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/javascript)
+- [http://qiita.com/tags/javascript](http://qiita.com/tags/javascript)
+    - [即時関数をcall(this)で呼ぶことについて](http://qiita.com/osakanafish/items/7c0240f195f36e66b101)
+- [http://stackoverflow.com/questions/6287511/reason-behind-this-self-invoking-anonymous-function-variant](http://stackoverflow.com/questions/6287511/reason-behind-this-self-invoking-anonymous-function-variant)
+- [http://stackoverflow.com/questions/8035822/why-write-callthis-at-the-end-of-an-javascript-anonyms-function](http://stackoverflow.com/questions/8035822/why-write-callthis-at-the-end-of-an-javascript-anonyms-function)
+- [http://stackoverflow.com/questions/18970112/why-use-function-callthis](http://stackoverflow.com/questions/18970112/why-use-function-callthis)
 
 ## JavaScript を出力できる言語 (altJS) {#ya021e3a}
 
