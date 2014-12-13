@@ -11,8 +11,6 @@ pukiwiki: "BSD/OpenBSD"
 
 ## [OpenBSD](http://www.openbsd.org/) {#xa96e58c}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/thumb/8/83/OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg/200px-OpenBSD_Logo_-_Cartoon_Puffy_with_textual_logo_below.svg.png" alt="OpenBSD" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## OpenBSD とは {#vae9e6c5}
