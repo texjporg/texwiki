@@ -61,11 +61,9 @@ Windows, OS X
 
 - [&quot;TeX2img&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/TeX2img)
     - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/2014/10/22/011143)
-    - [TeX2imgのコマンドライン版の使い方](http://acetaminophen.hatenablog.com/entry/2014/11/22/011725)
+    - [TeX2imgのコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/2014/11/22/011725)
     - [TeX2img (Windows/Mac) の動作の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/18/214403)
     - [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
-    - [続報：TeX2imgのWindows版アップデート](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754): Windows 版 1.2.3 の詳細
-    - [速報：TeX2imgのWindows版、5年ぶりの更新](http://acetaminophen.hatenablog.com/entry/2014/09/15/062324): Windows 版 1.2.0 の詳細
 - [&quot;Ghostscript&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/Ghostscript)
     - [Ghostscriptのこと(1)：アウトライン化の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/16/110255)
     - [Ghostscriptのこと(2)：不具合？](http://acetaminophen.hatenablog.com/entry/2014/10/17/145447)
