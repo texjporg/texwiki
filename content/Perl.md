@@ -20,12 +20,11 @@ pukiwiki: "Perl"
 - [Official Perl 6 Documentation](http://perlcabal.org/syn/)
 - [https://github.com/perl6/specs](https://github.com/perl6/specs)
 - [Wikipedia.en:Perl_6](https://en.wikipedia.org/wiki/Perl_6)
-- [Wikipedia.ja:Perl6](https://ja.wikipedia.org/wiki/Perl6)
+- [Wikipedia.ja:Perl_6](https://ja.wikipedia.org/wiki/Perl_6)
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
 - [MoarVM - A VM for NQP and Rakudo Perl 6](http://moarvm.com/)
 - [https://github.com/jnthn/zavolaj/](https://github.com/jnthn/zavolaj/)
-- [Perl6 Advent Calendar 2012](http://qiita.com/advent-calendar/2012/perl6)
-- [Perl6 Advent Calendar 2011](http://atnd.org/events/22820)
+- [Perl 6 Advent Calendar 2014: Table of Contents | Perl 6 Advent Calendar](http://perl6advent.wordpress.com/2014/12/01/perl-6-advent-calendar-2014-table-of-contents/)
 
 ### ChangeLog {#fbf40da7}
 
