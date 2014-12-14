@@ -25,7 +25,7 @@ quickrun は Vim のプラグインです．<br>
 
 ## 設定 {#j9d8b43e}
 
-quickrun が動作しない場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box を使用してタイプセットしてください．<br>
+quickrun が動作しない場合は [tex.vim](/Vim/tex.vim/) または vim-latex または LaTeX Box を使用してタイプセットしてください．<br>
 
 ### Windows {#i23c9f0a}
 
