@@ -120,6 +120,7 @@ Vim は，チャリティウェアです．<br>
 - LaTeX Box
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
+- [UltiSnips](https://github.com/SirVer/ultisnips)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - [Vim-LaTeX](/Vim-LaTeX/)
 - ATP
