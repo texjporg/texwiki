@@ -9,7 +9,7 @@ pukiwiki: "quickrun"
 
 [Vim](/Vim/) > quickrun
 
-## quickrun → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box を使用する {#f53cc325}
+## quickrun → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または vim-latex または LaTeX Box を使用する {#f53cc325}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
