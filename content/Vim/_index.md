@@ -116,6 +116,7 @@ Vim は，チャリティウェアです．<br>
 ## Vim で LaTeX {#i2be46c6}
 
 - [tex.vim](/Vim/tex.vim/)
+- vim-latex
 - LaTeX Box
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
