@@ -220,7 +220,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + LaTeX Box + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+    - [tex.vim](/Vim/tex.vim/) + (vim-latex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
     - [Vim-LaTeX](/Vim-LaTeX/)
     - ATP
 - [Atom](/Atom/)
