@@ -55,7 +55,7 @@ latexmk.vim の<br>
 
 に修正します．<br>
 
-プレビュー (ノーマルモードで \lv コマンドラインモードで :LatexView) が動作しない場合は<br>
+プレビュー (ノーマルモードで \lv コマンドラインモードで :LatexView) で PDF ファイルが開けない場合は<br>
 common.vim の<br>
 
 ```
