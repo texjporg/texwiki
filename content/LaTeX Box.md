@@ -9,7 +9,7 @@ pukiwiki: "LaTeX Box"
 
 [Vim](/Vim/) > LaTeX Box
 
-## LaTeX Box → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または [quickrun](/quickrun/) を使用する {#qb2360b5}
+## LaTeX Box → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または vim-latex または [quickrun](/quickrun/) を使用する {#qb2360b5}
 
 <img src="https://raw.github.com/LaTeX-Box-Team/LaTeX-Box/master/doc/LaTeX-BoX.png" alt="LaTeX Box" width="255" height="255" style="float:right">
 
@@ -38,6 +38,38 @@ LaTeX Box が動作しない場合は [tex.vim](/Vim/tex.vim/) または [quickr
 
 ### Windows {#o6005237}
 
+タイプセット (ノーマルモードで \ll) すると Compiling to pdf ... there were warnings! が表示されて PDF ファイルが作成されない場合は<br>
+latexmk.vim の<br>
+
+```
+	let cmd .= ' -e ' . shellescape('$pdflatex =~ s/ / -file-line-error /')
+	let cmd .= ' -e ' . shellescape('$latex =~ s/ / -file-line-error /')
+```
+
+を
+
+```
+	"let cmd .= ' -e ' . shellescape('$pdflatex =~ s/ / -file-line-error /')
+	"let cmd .= ' -e ' . shellescape('$latex =~ s/ / -file-line-error /')
+```
+
+に修正します．<br>
+
+プレビュー (ノーマルモードで \lv コマンドラインモードで :LatexView) が動作しない場合は<br>
+common.vim の<br>
+
+```
+let cmd = g:LatexBox_viewer . ' ' . lvargs . ' ' . shellescape(outfile)
+```
+
+を<br>
+
+```
+let cmd = g:LatexBox_viewer . ' ' . lvargs . ' ' . outfile
+```
+
+に修正します．<br>
+
 ***
 
 ```
@@ -46,7 +78,7 @@ LaTeX Box が動作しない場合は [tex.vim](/Vim/tex.vim/) または [quickr
 ""
 let g:LatexBox_output_type = 'pdf'
 let g:LatexBox_latexmk_options = '-pdfdvi'
-let g:LatexBox_viewer = ' ' . 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
+let g:LatexBox_viewer = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
 ```
 
 ***
