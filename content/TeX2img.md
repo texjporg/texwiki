@@ -59,6 +59,7 @@ Windows, OS X
 
 ## 関連リンク {#g449c714}
 
+- [「TeX2img」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TeX2img)
 - [&quot;TeX2img&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/TeX2img)
     - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/2014/10/22/011143)
     - [TeX2imgのコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/2014/11/22/011725)
