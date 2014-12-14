@@ -27,6 +27,12 @@ MIT License
 
 - [https://github.com/lervag/vim-latex/commits/master](https://github.com/lervag/vim-latex/commits/master)
 
+## 設定 {#i0954e9c}
+
+vim-latex はタイプセットに Latexmk を使用します．<br>
+[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
+vim-latex が動作しない場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
+
 ## 使い方 {#r2f5a425}
 
 ### タイプセット・プレビュー {#w62b0f3d}
