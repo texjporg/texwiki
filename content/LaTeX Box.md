@@ -34,7 +34,7 @@ GPLv3
 
 LaTeX Box はタイプセットに Latexmk を使用します．<br>
 [Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
-LaTeX Box が動作しない場合は [tex.vim](/Vim/tex.vim/) または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
+LaTeX Box が動作しない場合は [tex.vim](/Vim/tex.vim/) または vim-latex または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
 
 ### Windows {#o6005237}
 
