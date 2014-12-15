@@ -24,6 +24,7 @@ pukiwiki: "Perl"
 - [Perl6入門書（Using Perl6）の日本語版を公開しました](http://perl.g.hatena.ne.jp/bosh/20140322/p1)
 - [MoarVM - A VM for NQP and Rakudo Perl 6](http://moarvm.com/)
 - [https://github.com/jnthn/zavolaj/](https://github.com/jnthn/zavolaj/)
+- [http://ifnx.com/blog/forget-perl-6](http://ifnx.com/blog/forget-perl-6)
 - [Perl 6 Advent Calendar 2014: Table of Contents | Perl 6 Advent Calendar](http://perl6advent.wordpress.com/2014/12/01/perl-6-advent-calendar-2014-table-of-contents/)
 
 ### ChangeLog {#fbf40da7}
