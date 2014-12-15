@@ -80,6 +80,7 @@ pukiwiki: "FrontPage"
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X</strong> </span>：
         [TeX2img](/TeX2img/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
+        [Visual Studio Community](</Microsoft Visual Studio Community/>),
         [TeXnicCenter](/TeXnicCenter/),
         [Notepad++](/Notepad++/)
         ([NppExec](/NppExec/),
