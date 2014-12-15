@@ -32,7 +32,6 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [SyncTeX](http://wiki.lyx.org/LyX/SyncTeX)
     - [Logotype](http://wiki.lyx.org/LyX/Logotype)
     - [SplashScreen](http://wiki.lyx.org/LyX/SplashScreen)
-- [The LyX Project - Google+](https://plus.google.com/110001097193208807095)
 - [LyXWinInstaller](http://sourceforge.net/projects/lyxwininstaller/)
 - [LyX in Launchpad](https://launchpad.net/lyx)
 - [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
