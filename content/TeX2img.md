@@ -37,8 +37,8 @@ Windows, OS X
 
 #### Windows 版 {#w82758cc}
 
-- [https://github.com/abenori/TeX2img/commits/master](https://github.com/abenori/TeX2img/commits/master)
 - [https://github.com/abenori/TeX2img/blob/master/TeX2img.txt](https://github.com/abenori/TeX2img/blob/master/TeX2img.txt)
+- [https://github.com/abenori/TeX2img/commits/master](https://github.com/abenori/TeX2img/commits/master)
 
 #### Mac 版 {#g1fc886b}
 
