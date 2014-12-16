@@ -18,9 +18,9 @@ pukiwiki: "CMake"
 #### MinGW {#t16b8c71}
 
 ```
-$ curl -R -L -O http://www.cmake.org/files/v2.8/cmake-2.8.12.2.tar.gz
-$ tar xvf cmake-2.8.12.2.tar.gz
-$ pushd cmake-2.8.12.2
+$ curl -R -L -O http://www.cmake.org/files/v3.0/cmake-3.0.2.tar.gz
+$ tar xvf cmake-3.0.2.tar.gz
+$ pushd cmake-3.0.2
 $ mkdir build
 $ pushd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw
