@@ -29,6 +29,14 @@ yrcmex10 Yhcmex <yhcmex.pfb
 
 と記述されています。<br>
 
+W32TeX の場合は，
+
+```
+2014/12/05 以降の web2c-lib.tar.xz
+```
+
+を入手した場合，インストールされます。
+
 <!-- [[yhcmex.pfa>CTAN:fonts/yhmath/yhcmex.pfa]] -->
 <!-- ではなく，これを [[t1utils:http://www.lcdf.org/~eddietwo/type/#t1utils]] -->
 <!-- [[FontForge:http://fontforge.sourceforge.net/]] -->
