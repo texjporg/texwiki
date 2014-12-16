@@ -41,7 +41,6 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 #### mruby (組み込み向け Ruby) {#we4042fb}
 
 - [https://github.com/mruby/mruby](https://github.com/mruby/mruby)
-- [mruby Advent Calendar 2013 - Qiita \[キータ\]](http://qiita.com/advent-calendar/2013/mruby)
 
 ## インストール {#oe1e1c67}
 
@@ -68,9 +67,9 @@ RubyInstaller for Windows の Ruby を C:\Ruby21 にインストールした場�
 
 を環境変数 PATH に追加します
 
-#### ActiveScriptRuby {#y961023d}
-
-- [ActiveScriptRuby and Other packages](http://www.artonx.org/data/asr/)
+<!-- ***ActiveScriptRuby [#y961023d] -->
+<!--  -->
+<!-- -[[ActiveScriptRuby and Other packages:http://www.artonx.org/data/asr/]] -->
 
 #### MSYS2 {#a7424fa6}
 
