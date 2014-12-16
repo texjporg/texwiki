@@ -91,7 +91,8 @@ pukiwiki: "FrontPage"
     - <span style="color:White;background-color:#00A497;"> <strong>OS X</strong> </span>：
         [TeXShop](/TeXShop/),
         TeXnicle,
-        [CotEditor](/CotEditor/)
+        [CotEditor](/CotEditor/),
+        [LaTeXiT](/LaTeXiT/)
     - <span style="color:White;background-color:#00A497;"> <strong>Linux</strong> </span>：
         [Kile](/Kile/),
         LaTeXila
@@ -167,16 +168,7 @@ pukiwiki: "FrontPage"
     [Ispell](/Ispell/)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>フォント</strong> </span>：
-    [フォント](</フォント/>),
-    [Latin Modern](</Latin Modern/>),
-    [TeX Gyre](</TeX Gyre/>),
-    [newtx](/newtx/),
-    [Mathptmx](/Mathptmx/),
-    [mathabx](/mathabx/),
-    [MathTime](/MathTime/),
-    [yhmath](/yhmath/),
-    [TIPA](/TIPA/),
-    [hieroglf](/hieroglf/)
+    [フォント](</フォント/>)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>TeX ユーザの集い</strong> </span>：
     [2014](http://texconf14.tumblr.com),
@@ -207,7 +199,6 @@ pukiwiki: "FrontPage"
     [Sphinx](/Sphinx/),
     Jekyll,
     [Re:VIEW](/ReVIEW/),
-    AsciiDoc,
     MediaWiki,
     DokuWiki,
     PukiWiki,
