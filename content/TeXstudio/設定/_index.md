@@ -341,7 +341,7 @@ SVN<br>
 
 <img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
 
-SVN<br>
+SVN　　　　　　　　　　　　　　☑ Scan LaTeX distribution for installed packages<br>
 
 <br>
 
