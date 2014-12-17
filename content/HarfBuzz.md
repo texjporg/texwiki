@@ -19,9 +19,9 @@ pukiwiki: "HarfBuzz"
 #### MinGW {#q26159fe}
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.36.tar.bz2
-$ tar xvf harfbuzz-0.9.36.tar.bz2
-$ pushd harfbuzz-0.9.36
+$ curl -R -L -O http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-0.9.37.tar.bz2
+$ tar xvf harfbuzz-0.9.37.tar.bz2
+$ pushd harfbuzz-0.9.37
 $ ./configure --prefix=/mingw
 $ make
 $ make install
