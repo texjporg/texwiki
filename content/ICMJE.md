@@ -54,14 +54,11 @@ ICMJE は [国際医学雑誌編集者委員会（International Committee of Med
 
 ### ダブルスペース {#j474cf50}
 
-簡単にダブルスペース化するには、setspace.sty または doublespace.sty を使う。<br>
-特別な理由がない限り、setspace.sty を使った方が無難。<br>
-
-- setspace の最新版は 2000 年であり、一方、doublespace の方は 1986 年である
-- doublespace スタイルを使うと、backgrnd や pdfdraftcopy のように color を使う場合にエラーになる。詳細と解決策 [qa:37934](https://okumuralab.org/~okumura/texfaq/qa/37934.html)
-
+簡単にダブルスペース化するには、setspace.sty を使う。<br>
 部分的にシングルスペースや任意のスペーシングをしたい場合のコマンド・環境が setspace.sty に用意されている。<br>
 詳細は setspace.sty の中をのぞく。
+
+- \[[TeX\]論文を添削してもらう時のダブルスペース](http://cocomoff.hatenablog.com/entry/2012/02/10/143142)
 
 ### タイトルページの作成 {#h7ddae99}
 
