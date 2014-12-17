@@ -965,7 +965,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [TikZ Editor (Mac) で \\(backslash)が入力できない場合の対処法](http://yt-siden-memo.tumblr.com/post/96350093900/tikz-editor-mac-backslash)
 - [TikZiT](http://tikzit.sourceforge.net/)
 - [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
-- [KtikZ/QtikZ](http://www.hackenberger.at/blog/ktikz-editor-for-the-tikz-language/)
+- [KtikZ/QtikZ](http://kde-apps.org/content/show.php/ktikz?content=63188)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入、メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
 - [GeoGebra](http://www.geogebra.org/cms/ja)
     - GeoGebraの使い方…[GeoGebra日本](https://sites.google.com/site/geogebrajp/)
