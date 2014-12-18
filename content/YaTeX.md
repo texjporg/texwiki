@@ -1169,7 +1169,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
 
-YaTeX 1.77.3 以降は YaTeX-use-AMS-LaTeX が t になりました．<br>
+YaTeX 1.78 以降は YaTeX-use-AMS-LaTeX が t になりました．<br>
 AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設定してみてください．(参照 [その1](https://twitter.com/hiroseyuuji/status/173544126686572544), [その2](https://twitter.com/liquid_amber/status/173975511570194432))
 
 ```
