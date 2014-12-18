@@ -107,6 +107,8 @@ pukiwiki: "FrontPage"
         [Poppler](/Poppler/),
         [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>),
         [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
+    - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X</strong> </span>：
+        [Adobe Reader](</Adobe Reader/>)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
         [SumatraPDF](/SumatraPDF/)
     - <span style="color:White;background-color:#00A497;"> <strong>OS X</strong> </span>：
