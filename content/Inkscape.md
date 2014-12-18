@@ -7,9 +7,9 @@ pukiwiki: "Inkscape"
 
 # Inkscape
 
-## [Inkscape](http://inkscape.org/) {#ycda5b1e}
+## [Inkscape](https://inkscape.org/) {#ycda5b1e}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Inkscape_logo_2.svg/120px-Inkscape_logo_2.svg.png" alt="Inkscape" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Inkscape_Logo.svg/200px-Inkscape_Logo.svg.png" alt="Inkscape" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -28,7 +28,7 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 
 [PostScriptやEPSをインポートするには、Ghostscriptをインストールする必要があり、ps2pdfがPATH上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
 
-- [Inkscape 公式サイト](http://inkscape.org/)
+- [Inkscape 公式サイト](https://inkscape.org/)
 - [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
     - [コミットログ](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
 - [Inkscape Wiki](http://wiki.inkscape.org)
@@ -49,7 +49,7 @@ Windows, OS X, Linux
 
 ### リリース情報 {#d961699f}
 
-[最新ニュース](http://inkscape.org/ja/news/)を参照．<br>
+[最新ニュース](https://inkscape.org/ja/news/)を参照．<br>
 
 ### ChangeLog {#q8a7ad68}
 
@@ -148,7 +148,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
 
 コマンドラインから PDF+LaTeX, EPS+LaTeX, PS+LaTeX で出力することも可能です．
 
-<!-- -http://inkscape.modevia.com/inkscape-man.html -->
+<!-- -https://inkscape.modevia.com/inkscape-man.html -->
 
 ```
 inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
@@ -383,7 +383,7 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 ***
 
-### [inkscape2tikz](https://code.google.com/p/inkscape2tikz/) {#u5ee2f7d}
+### [SVG2TikZ](https://github.com/kjellmf/svg2tikz) {#u5ee2f7d}
 
 ### [JessyInk](https://code.google.com/p/jessyink/) {#k0206a78}
 
