@@ -27,21 +27,128 @@ MIT License
 
 - [https://github.com/lervag/vim-latex/commits/master](https://github.com/lervag/vim-latex/commits/master)
 
+## 不具合 {#s52eaaa5}
+
+### let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示される → view.vim の let outfile = g:latex#data\[b:latex.id\].out() を let outfile = fnamemodify(g:latex#data\[b:latex.id\].base, ":p:r") . '.pdf' に修正する {#x9b144a5}
+
+let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示されます．<br>
+g:latex_latexmk_output の設定が outfile の拡張子に反映されてしまうのが原因です．<br>
+
+view.vim の
+
+```
+let outfile = g:latex#data[b:latex.id].out()
+```
+
+をコメントアウトして
+
+```
+"let outfile = g:latex#data[b:latex.id].out()
+```
+
+次の行に
+
+```
+let outfile = fnamemodify(g:latex#data[b:latex.id].base, ":p:r") . '.pdf'
+```
+
+を追加します．<br>
+
 ## 設定 {#i0954e9c}
 
 vim-latex はタイプセットに Latexmk を使用します．<br>
 [Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
 vim-latex が動作しない場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
 
+### Windows {#u832ac80}
+
+SumatraPDF.exe が存在するディレクリを環境変数 PATH に追加します．<br>
+PATH に追加したくない場合は<br>
+view.vim の
+
+```
+call s:check_method_sumatrapdf()
+```
+
+をコメントアウトして<br>
+
+```
+"call s:check_method_sumatrapdf()
+```
+
+view.vim の
+
+```
+let exe.cmd = 'SumatraPDF ' . g:latex_view_sumatrapdf_options
+```
+
+を
+
+```
+let exe.cmd = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF ' . g:latex_view_sumatrapdf_options
+```
+
+に修正します．<br>
+
+***
+
+```
+""
+"" vim-latex
+""
+let g:latex_latexmk_continuous = 1
+let g:latex_latexmk_background = 1
+"let g:latex_latexmk_output = 'pdf'
+let g:latex_latexmk_output = 'pdfdvi'
+let g:latex_view_method = 'sumatrapdf'
+let g:latex_view_sumatrapdf_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
+```
+
+***
+
+### OS X {#qb1b9436}
+
+***
+
+```
+""
+"" vim-latex
+""
+let g:latex_latexmk_continuous = 1
+let g:latex_latexmk_background = 1
+"let g:latex_latexmk_output = 'pdf'
+let g:latex_latexmk_output = 'pdfdvi'
+```
+
+***
+
+### Linux {#wb2cfac5}
+
+***
+
+```
+""
+"" vim-latex
+""
+let g:latex_latexmk_continuous = 1
+let g:latex_latexmk_background = 1
+"let g:latex_latexmk_output = 'pdf'
+let g:latex_latexmk_output = 'pdfdvi'
+```
+
+***
+
 ## 使い方 {#r2f5a425}
 
 ### タイプセット・プレビュー {#w62b0f3d}
 
+let g:latex_latexmk_continuous = 1 の場合は latexmk のオプションに -pvc が追加され，\ll を実行したあとでファイルを保存すれば自動的にタイプセットが行われます．<br>
+
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#57E;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#57E;text-align:center">機能</th></tr>
-> <tr><td>\ll</td><td>タイプセット</td></tr>
-> <tr><td>\lv</td><td>プレビュー</td></tr>
+> <tr><td>\ll</td><td>タイプセット (let g:latex_latexmk_continuous = 1 の場合はタイプセット &amp; プレビュー)</td></tr>
+> <tr><td>\lv</td><td>プレビュー &amp; forward search</td></tr>
 > </tbody>
 > </table>
 >
