@@ -185,8 +185,8 @@ LaTeX と連携するためのエクステンション．<br>
 
 #### インストール (Windows) {#v77ed75c}
 
-pstoedit, dvisvgm, dvips, latex は [W32TeX](/W32TeX/) に含まれています．<br>
-dvisvgm, dvips, latex は [TeX Live](</TeX Live/>) に含まれています．<br>
+[W32TeX](/W32TeX/) には pstoedit, dvisvgm, dvips, latex が含まれています．<br>
+[TeX Live](</TeX Live/>) には dvisvgm, dvips, latex が含まれています．<br>
 
 ***
 
