@@ -12,8 +12,8 @@ pukiwiki: "METAFONT"
 - [http://www.ctan.org/pkg/metafont](http://www.ctan.org/pkg/metafont)
 
 METAFONTは、主に TeX で使用するためのフォントを作成するプログラムです。<br>
-[TeX](</TeX入門/#nef9fd41>) と同じく Knuth によって作られました。<br>
-TeX の標準フォントである Computer Modern は、METAFONT プログラム言語で設計されています。<br>
+[TeX](/TeX/) と同じく Knuth によって作られました。<br>
+TeX の標準フォントである Computer Modern は、METAFONT プログラミング言語で設計されています。<br>
 現在のバージョン番号は 2.7182818 です。<br>
 
 METAFONT 言語で書かれたソースファイルをコンパイルすると、TeX で利用する形式のフォントメトリックファイル (tfm) と、出力装置にあわせたビットマップのグリフファイル (gf) が生成されます。
