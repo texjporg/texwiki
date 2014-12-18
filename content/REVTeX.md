@@ -7,14 +7,14 @@ pukiwiki: "REVTeX"
 
 # REVTeX
 
-## [REVTeX](http://publish.aps.org/revtex/) {#cfdc01cb}
+## [REVTeX](http://journals.aps.org/revtex/) {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
 TeX Live や 角藤さんの W32TeX
 などにはインストール済みですので，改めてインストールする必要はありません。
 使い方をもっと詳しくすべきですね。
 
-- [REVTeX Home Page](http://publish.aps.org/revtex/)
+- [REVTeX Home Page](http://journals.aps.org/revtex/)
 
 ### リリース情報 {#i3bdc15f}
 
