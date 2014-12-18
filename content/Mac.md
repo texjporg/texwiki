@@ -504,7 +504,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 
 - updmap-sys は TEXMFLOCAL を検索対象とはしますが、TEXMFHOME は検索しませんので、フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [About Shell Escape and Installing Fonts in 2012, 2013 and 2014](http://tug.org/mactex/TeXLive2012+Changes.pdf) を参照)<br>
     TEXMFHOME にフォントを置く場合は、updmap（-sys なし）を実行する必要があります。<br>
-    - 埋め込むフォントを細かく制御したい場合は、[OTF](/OTF/#gb0b4cc5)を参照して手動でmapファイルを書き換えます。
+    - 埋め込むフォントを細かく制御したい場合は、手動で map ファイルを書き換えます。
 
 #### kanji-config-updmap(-sys) {#hf34afcc}
 
@@ -541,7 +541,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 <!-- 参考事例を紹介するのがよろしいかと思います。 -->
 
 [2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
-: 2014-11-01
+: 2014-12-01
 
 [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
 : 2014-09-14
