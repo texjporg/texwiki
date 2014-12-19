@@ -20,10 +20,11 @@ TeX 関連のファイルやソフトウェアを集めたウェブサイトで�
 
 アメリカのウェブサイトは [www.ctan.org](http://www.ctan.org/)
 ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
-での CTAN のミラーリングの利用をお勧めします（Ring Server
-のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください）。この
+での CTAN のミラーリングの利用をお勧めします。<br>
 Ring Server
-のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，ここをクリックすれば検索の画面になります。
+のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください。<br>
+Ring Server
+のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，ここをクリックすれば検索の画面になります。<br>
 
 上位のディレクトリから辿っていく場合には，[Ring Server の /pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
 から始めるのが良いでしょう。
@@ -65,7 +66,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [KDDI 研究所](http://www.kddilabs.jp/)
     - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, anonymous FTP) ← obsolete, support, systems, tds, usergrps, web ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
+        (HTTP, anonymous FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
         <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
