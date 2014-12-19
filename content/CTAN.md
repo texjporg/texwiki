@@ -35,7 +35,7 @@ Ring Server
     - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
         による動的な負荷分散を行う）
     - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/)
-- Anonymous FTP
+- FTP
     - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
         URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
     - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
@@ -62,17 +62,19 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [北陸先端科学技術大学院大学 \[JAIST\]](http://www.jaist.ac.jp/)
     - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
-        (HTTP, anonymous FTP)
+        (HTTP, FTP)
 
 - [KDDI 研究所](http://www.kddilabs.jp/)
     - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, anonymous FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
+        (HTTP, FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
+    - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
+        (HTTP, FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
         <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
 - [理化学研究所](http://www.riken.jp/)
     - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
-        (HTTP, anonymous FTP)
+        (HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
 - [会津大学](http://www.u-aizu.ac.jp/)
@@ -81,7 +83,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTP, anonymous FTP)
+        (HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
 
 ### オリジナルの CTAN {#original}
@@ -93,7 +95,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
         <!-- tug.ctan.org = www.ctan.org -->
     - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
     - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
-- Anonymous FTP
+- FTP
     - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
         <!-- www.ctan.org = tug.ctan.org -->
     - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
@@ -108,7 +110,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 ### その他の日本国内での CTAN のミラーサイト（一部） {#others}
 
-#### HTTP, Anonymous FTP {#HTTP-FTP}
+#### HTTP, FTP {#HTTP-FTP}
 
 - [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/)
     - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
