@@ -61,6 +61,11 @@ MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
+    <!-- -http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/ -->
+    <!-- -http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/ -->
+    <!-- -http://ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
+    <!-- -http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
+
 - [http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/)
@@ -82,6 +87,11 @@ MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
+    <!-- -ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/ -->
+    <!-- -ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/ -->
+    <!-- -ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
+    <!-- -ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
+
 - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/)
 - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/)
@@ -741,21 +751,21 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [LyX の不具合](/LyX/#h17851b4))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
 - [TeXstudio](/TeXstudio/)
+    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください．(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))<br>
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXstudio の不具合](/TeXstudio/#k30ccccc))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
-    - 組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください．(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))<br>
 - [Texmaker](/Texmaker/)
+    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください．(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))<br>
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
-    - 組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください．(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))<br>
 - [TeXworks](/TeXworks/)
+    - 【注意】OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) なら大丈夫なようです。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
-    - OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
 - TexitEasy
+    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください．(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)<br>
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ TexitEasy の不具合)
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
-    - 組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください．(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)<br>
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
 - [Emacs](/Emacs/)
