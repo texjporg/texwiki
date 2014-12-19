@@ -104,9 +104,7 @@ pukiwiki: "FrontPage"
         [TeXworks](/TeXworks/),
         [TeXstudio](/TeXstudio/),
         [MuPDF](/MuPDF/),
-        [Poppler](/Poppler/),
-        [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>),
-        [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
+        [Poppler](/Poppler/)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows, OS X</strong> </span>：
         [Adobe Reader](</Adobe Reader/>)
     - <span style="color:White;background-color:#00A497;"> <strong>Windows</strong> </span>：
@@ -119,6 +117,9 @@ pukiwiki: "FrontPage"
         [Okular](/Okular/),
         [zathura](/zathura/),
         [qpdfview](/qpdfview/)
+    - <span style="color:White;background-color:#00A497;"> <strong>Web</strong> </span>：
+        [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>),
+        [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
 
 - <span style="color:White;background-color:#0095D9;"> <strong>Ghostscript</strong> </span>：
     [Ghostscript](/Ghostscript/),
