@@ -102,6 +102,7 @@ let g:latex_latexmk_background = 1
 let g:latex_latexmk_output = 'pdfdvi'
 let g:latex_view_method = 'sumatrapdf'
 let g:latex_view_sumatrapdf_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
+let g:latex_view_general_viewer = 'texworks'
 ```
 
 ***
@@ -118,6 +119,7 @@ let g:latex_latexmk_continuous = 1
 let g:latex_latexmk_background = 1
 "let g:latex_latexmk_output = 'pdf'
 let g:latex_latexmk_output = 'pdfdvi'
+let g:latex_view_general_viewer = 'open'
 ```
 
 ***
@@ -134,6 +136,8 @@ let g:latex_latexmk_continuous = 1
 let g:latex_latexmk_background = 1
 "let g:latex_latexmk_output = 'pdf'
 let g:latex_latexmk_output = 'pdfdvi'
+let g:latex_view_method = 'mupdf'
+let g:latex_view_general_viewer = 'xdg-open'
 ```
 
 ***
