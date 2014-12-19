@@ -77,7 +77,9 @@ let cmd = g:LatexBox_viewer . ' ' . lvargs . ' ' . outfile
 "" LaTeX Box
 ""
 let g:LatexBox_output_type = 'pdf'
+"let g:LatexBox_latexmk_options = '-pdf'
 let g:LatexBox_latexmk_options = '-pdfdvi'
+"let g:LatexBox_latexmk_options = '-pdfps'
 let g:LatexBox_viewer = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
 ```
 
@@ -92,7 +94,9 @@ let g:LatexBox_viewer = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-ins
 "" LaTeX Box
 ""
 let g:LatexBox_output_type = 'pdf'
+"let g:LatexBox_latexmk_options = '-pdf'
 let g:LatexBox_latexmk_options = '-pdfdvi'
+"let g:LatexBox_latexmk_options = '-pdfps'
 let g:LatexBox_viewer = 'open'
 ```
 
@@ -107,7 +111,9 @@ let g:LatexBox_viewer = 'open'
 "" LaTeX Box
 ""
 let g:LatexBox_output_type = 'pdf'
+"let g:LatexBox_latexmk_options = '-pdf'
 let g:LatexBox_latexmk_options = '-pdfdvi'
+"let g:LatexBox_latexmk_options = '-pdfps'
 let g:LatexBox_viewer = 'xdg-open'
 ```
 
