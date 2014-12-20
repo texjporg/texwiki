@@ -77,12 +77,14 @@ Windows や OS X を使用していて LaTeX の実行速度が遅い場合は L
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
 
-### 私は TeX を続けるよ {#gadbb81f}
+### 私は TeX を続けるよ！ {#gadbb81f}
 
+- [私がTeXを使い続ける理由 - くるるの数学ノート](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
 - [私がTeXを使い続ける1個+6個の理由 - わさっき](http://d.hatena.ne.jp/takehikom/20100218/1266441239)
 
 ### 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
 - [LaTexに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTex)
+- [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
 - [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
