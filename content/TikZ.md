@@ -1003,6 +1003,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [Tikz&amp;pgf | LaTeX工作室](http://www.latexstudio.net/category/tex-graphics/tikz-example/)
 - [「TikZ」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=TikZ)
 - [ZR-TeXnobabbler/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=TikZ)
+    - [TikZで"インラインな"図を描く](http://qiita.com/zr_tex8r/items/61d14cec3f54972578ea)
 - [TikZ - TeX Alchemist Online](http://doratex.hatenablog.jp/category/TikZ)
     - [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
         - TikZによるグラフ作成（折れ線グラフ、棒グラフ）の例
