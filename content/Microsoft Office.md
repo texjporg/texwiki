@@ -26,13 +26,15 @@ pukiwiki: "Microsoft Office"
 
 ## TeX との比較 {#k678548a}
 
+- [PLOS ONE: An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069)
 - [TeXは本当によいものか?](http://hdmr.org/d/?e=1947)
 - [WordとTexって結局どっちがええのんか](http://yakyuzuki.blogspot.jp/2013/05/wordtex.html)
 - [僕がTeXで仕様書を書く理由](http://setsulla.hatenablog.com/entry/2012/10/09/144243)
 - [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
 - [TeXからWordへの乗り換えを試みた](http://d.hatena.ne.jp/moccos_info/20110801/p1)
-- [私がTeXを使い続ける理由](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
 - [なぜ，我々はWordの絵がどっか言ってしまうと文句を言い募るだろうか？](http://d.hatena.ne.jp/smectic_g/20100223/1266934286)
+- [私がTeXを使い続ける理由 - くるるの数学ノート](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
+- [私がTeXを使い続ける1個+6個の理由 - わさっき](http://d.hatena.ne.jp/takehikom/20100218/1266441239)
 - [僕が TeX を使うのを辞めた3つの理由](http://d.hatena.ne.jp/ufcpp/20100216/1266337507)
 - [僕が TeX を使うのを辞めた 10 の理由](http://d.hatena.ne.jp/ufcpp/20100219/1266594885)
 - [僕が TeX を使うのを辞めた30の理由](http://d.hatena.ne.jp/ufcpp/20100220/1266661449)
