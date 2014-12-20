@@ -17,6 +17,8 @@ Hunspell はスペルチェッカーです．<br>
 
 - [Hunspell](http://hunspell.sourceforge.net/)
 
+### 統合環境・エディタ {#t2a70fb7}
+
 以下のフリーソフトウェア (オープンソースソフトウェア) の統合環境・エディタで使用されています．
 
 - [LyX](/LyX/)
@@ -45,12 +47,12 @@ Hunspell はスペルチェッカーです．<br>
 
 #### MinGW {#deab3978}
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.2/hunspell-1.3.2.tar.gz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/hunspell-1.3.3.tar.gz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.2.tar.gz
-$ tar xvf hunspell-1.3.2.tar.gz
-$ pushd hunspell-1.3.2
+$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.3.tar.gz
+$ tar xvf hunspell-1.3.3.tar.gz
+$ pushd hunspell-1.3.3
 $ ./configure --prefix=/mingw
 $ make
 $ make install
