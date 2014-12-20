@@ -60,11 +60,13 @@ Windows, OS X
 ## 関連リンク {#g449c714}
 
 - [「TeX2img」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TeX2img)
+- [http://twilog.org/doraTeX/search?word=TeX2img](http://twilog.org/doraTeX/search?word=TeX2img)
 - [&quot;TeX2img&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/TeX2img)
-    - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/2014/10/22/011143)
-    - [TeX2imgのコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/2014/11/22/011725)
+    - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/tex2img-gui)
+    - [TeX2imgのコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-cui)
     - [TeX2img (Windows/Mac) の動作の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/18/214403)
     - [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
 - [&quot;Ghostscript&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/Ghostscript)
     - [Ghostscriptのこと(1)：アウトライン化の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/16/110255)
     - [Ghostscriptのこと(2)：不具合？](http://acetaminophen.hatenablog.com/entry/2014/10/17/145447)
+- [USBメモリ活用講座【付録・TeX2img ポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/tex2img.shtml)
