@@ -37,6 +37,7 @@ Hunspell はスペルチェッカーです．<br>
 ### 派生版 {#z489a458}
 
 - [NHunspell](http://nhunspell.sourceforge.net/)
+- [Typo.js](https://github.com/cfinke/Typo.js)
 
 ## Installation {#y7b755eb}
 
