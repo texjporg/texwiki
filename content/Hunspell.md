@@ -19,13 +19,16 @@ Hunspell はスペルチェッカーです．<br>
 
 ### 統合環境・エディタ {#t2a70fb7}
 
-以下のフリーソフトウェア (オープンソースソフトウェア) の統合環境・エディタで使用されています．
+以下の統合環境・エディタで使用されています．
+
+#### フリーソフトウェア (オープンソースソフトウェア) {#f0db729e}
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 - TexitEasy
+- [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
 ### 辞書 {#q4b7f294}
@@ -38,7 +41,7 @@ Hunspell はスペルチェッカーです．<br>
 
 ### 派生版 {#z489a458}
 
-- [NHunspell](http://nhunspell.sourceforge.net/)
+- [NHunspell](http://sourceforge.net/projects/nhunspell/)
 - [Typo.js](https://github.com/cfinke/Typo.js)
 
 ## Installation {#y7b755eb}
