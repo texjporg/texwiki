@@ -9,6 +9,13 @@ pukiwiki: "gnuplot"
 
 ## [gnuplot](http://www.gnuplot.info/) {#f17477be}
 
+### ChangeLog {#g96dff3f}
+
+- [http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/ChangeLog?view=markup](http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/ChangeLog?view=markup)
+- [http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/NEWS?view=markup](http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/NEWS?view=markup)
+
+### Related Links {#mba731ab}
+
 - [gnuplot (Takeno Lab)](http://takeno.iee.niit.ac.jp/~foo/gp-jman/gp-jman.html)
 - [Wikipedia.ja:gnuplot](https://ja.wikipedia.org/wiki/gnuplot)
 - [LinuxWiki:gnuplot](https://okumuralab.org/~okumura/linux/?gnuplot)
