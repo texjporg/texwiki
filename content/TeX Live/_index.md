@@ -63,11 +63,10 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
-    <!-- -http://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/ -->
-    <!-- -http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/ -->
-    <!-- -http://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/ -->
-    <!-- -http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/ -->
-
+- [http://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/](http://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/)
+- [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
+- [http://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](http://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
+- [http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
 - [http://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/)
@@ -89,11 +88,10 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
-    <!-- -ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/ -->
-    <!-- -ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/ -->
-    <!-- -ftp://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/ -->
-    <!-- -ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/ -->
-
+- [ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/](ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/)
+- [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
+- [ftp://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](ftp://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
+- [ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
 - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/texlive/tlnet/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/texlive/tlnet/)
 - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
@@ -128,11 +126,10 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
 - [http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
-    <!-- -http://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/ -->
-    <!-- -http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/ -->
-    <!-- -http://ftp.ne.jp/pub/ctan/systems/texlive/Images/ -->
-    <!-- -http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/ -->
-
+- [http://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/](http://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/)
+- [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
+- [http://ftp.ne.jp/pub/ctan/systems/texlive/Images/](http://ftp.ne.jp/pub/ctan/systems/texlive/Images/)
+- [http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
 - [http://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/)
 - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
 - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/)
@@ -154,11 +151,10 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
-    <!-- -ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/ -->
-    <!-- -ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/ -->
-    <!-- -ftp://ftp.ne.jp/pub/ctan/systems/texlive/Images/ -->
-    <!-- -ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/ -->
-
+- [ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/](ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/)
+- [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
+- [ftp://ftp.ne.jp/pub/ctan/systems/texlive/Images/](ftp://ftp.ne.jp/pub/ctan/systems/texlive/Images/)
+- [ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
 - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/)
 - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/texlive/Images/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/texlive/Images/)
 - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/texlive/Images/)
