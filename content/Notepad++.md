@@ -128,7 +128,7 @@ Windows
 
 ### 新規ドキュメント (New Document) {#eb38bb7e}
 
-デフォルトの Encoding は UTF-8 without BOM です．<br>
+デフォルトの Encoding は UTF-8 w/o BOM (UTF-8 without BOM) です．<br>
 
 ***
 
