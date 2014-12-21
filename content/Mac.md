@@ -61,11 +61,10 @@ MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
-    <!-- -http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/ -->
-    <!-- -http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/ -->
-    <!-- -http://ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
-    <!-- -http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
-
+- [http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
+- [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+- [http://ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+- [http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
 - [http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
 - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/)
@@ -87,11 +86,10 @@ MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
-    <!-- -ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/ -->
-    <!-- -ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/ -->
-    <!-- -ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
-    <!-- -ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/ -->
-
+- [ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
+- [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+- [ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+- [ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
 - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
 - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/)
 - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/)
@@ -347,7 +345,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 - 問題が発生した場合は TeX Live 2013 などの以前にインストールしていた古い TeX 環境に切り替えて使用することもできます．<br>
     「システム環境設定」の TeX Distribution で変更できます．<br>
-    - OS X Yosemite にアップグレードするとシステム環境設定の TeX Distribution でエラーが発生する場合は [http://pages.uoregon.edu/koch/LocalTeX.zip](http://pages.uoregon.edu/koch/LocalTeX.zip) を使用します．<br>
+    - システム環境設定の TeX Distribution でエラーが発生する場合は [http://sourceforge.net/projects/mactextoolbox/files/TeXDist/](http://sourceforge.net/projects/mactextoolbox/files/TeXDist/) から最新版をダウンロードして使用します．<br>
 
 ***
 
@@ -365,7 +363,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 <br>
 
-　　　　　　　　　　　　<span style="color:Gray;">V 250</span>　　　Full TeX Live 2014 Distribution.　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins><strong>？</strong></ins>)</span><br>
+　　　　　　　　　　　　<span style="color:Gray;">V 271</span>　　　Full TeX Live 2014 Distribution.　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins><strong>？</strong></ins>)</span><br>
 　　　　　　　　　　　　　　　　　　 See [The MacTeX Distribution.](http://tug.org/mactex/)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　texdistmgr　 \]</ins></span>
 
@@ -558,6 +556,9 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 
 [OS X+Homebrew+zshでMacTeXをインストール](http://qiita.com/enokawa/items/3e12c419ca6ded097e0f)
 : 2014-09-01
+
+[docs/TeX/TeX on Mac - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Mac)
+: 2014-08-11
 
 [MacTeX 2014 - 一歩前進](http://succzero.hatenablog.com/entry/2014/07/17/041211)
 : 2014-07-17
