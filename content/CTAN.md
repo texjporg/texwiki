@@ -66,9 +66,9 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [KDDI 研究所](http://www.kddilabs.jp/)
     - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
+        (HTTP, FTP)
     - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
-        (HTTP, FTP) ← systems/texlive ディレクトリが 403 Forbidden でアクセスできないようです (2014年12月現在)
+        (HTTP, FTP)
         <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
