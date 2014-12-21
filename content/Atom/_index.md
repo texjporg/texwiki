@@ -20,9 +20,6 @@ Atom はテキストエディタです．<br>
 
 - [https://atom.io/](https://atom.io/)
 - [https://github.com/atom](https://github.com/atom)
-- [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
-- [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/)
-- [What is Use React Editor?](http://discuss.atom.io/t/what-is-use-react-editor/8865)
 
 ### System Requirements {#aed34ff8}
 
@@ -41,8 +38,7 @@ Windows, OS X, Linux
 ### Windows {#d8e05887}
 
 - [https://atom.io/](https://atom.io/)
-    <!-- -[[Atom Builds for Windows:http://atom.someguy123.com/]] -->
-    <!-- -[[Github 製エディタ ATOM for Windows.:http://mimumimu.net/blog/2014/07/04/github-%E8%A3%BD%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF-atom-for-windows/]] -->
+- [Windows Installer and Auto Updater](http://blog.atom.io/2014/12/10/a-windows-installer-and-updater.html)
 
 ### OS X {#o272a8e0}
 
@@ -59,14 +55,36 @@ Windows, OS X, Linux
 ## atom-latex {#c420e42b}
 
 - [https://atom.io/packages/latex](https://atom.io/packages/latex)
+- [https://github.com/thomasjo/atom-latex](https://github.com/thomasjo/atom-latex)
 - [http://discuss.atom.io/users/thomasjo/activity](http://discuss.atom.io/users/thomasjo/activity)
+
+### ChangeLog {#vf78041c}
+
+- [https://github.com/thomasjo/atom-latex/commits/master](https://github.com/thomasjo/atom-latex/commits/master)
 
 ## language-latex {#ge4d0d65}
 
 - [https://atom.io/packages/language-latex](https://atom.io/packages/language-latex)
+- [https://github.com/area/language-latex](https://github.com/area/language-latex)
 - [http://discuss.atom.io/users/area/activity](http://discuss.atom.io/users/area/activity)
 - [http://discuss.atom.io/t/latex-language-support/541](http://discuss.atom.io/t/latex-language-support/541)
+
+### ChangeLog {#i91f25b7}
+
+- [https://github.com/area/language-latex/commits/master](https://github.com/area/language-latex/commits/master)
 
 ## vim-mode {#q7e40896}
 
 - [https://atom.io/packages/vim-mode](https://atom.io/packages/vim-mode)
+- [https://github.com/atom/vim-mode](https://github.com/atom/vim-mode)
+
+### ChangeLog {#v42c33b1}
+
+- [https://github.com/atom/vim-mode/commits/master](https://github.com/atom/vim-mode/commits/master)
+
+## Related Links {#s3ae987b}
+
+- [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
+- [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/)
+- [What is Use React Editor?](http://discuss.atom.io/t/what-is-use-react-editor/8865)
+- [Atom入門 (全12回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_atom)
