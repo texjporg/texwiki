@@ -81,6 +81,52 @@ yatexprc.el の
 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
 ```
 
+### YaTeX 1.77.6 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する {#ka79bca3}
+
+YaTeX 1.77.6 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．<br>
+yatexprc.el を修正します．<br>
+yatexprc.el の
+
+```
+		  ((string-match "qpdfview" previewer)	;;??
+```
+
+の次の行の
+
+```
+		   (format "%s '%s.pdf' '#src:%s:%d:0'"
+```
+
+を以下のように修正します．<br>
+
+```
+		   (format "%s '%s.pdf#src:%s:%d:0'"
+```
+
+### YaTeX 1.77.6 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
+
+YaTeX 1.77.6 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．<br>
+yatexprc.el を修正します．<br>
+yatexprc.el の
+
+```
+		  ((string-match "okular" previewer)	;;?
+```
+
+の次の行の
+
+```
+		   (format "%s '%s.pdf' '#src:%d' '%s'"
+			   previewer bnr line cf)))))
+```
+
+を以下のように修正します．<br>
+
+```
+		   (format "%s '%s.pdf#src:%d %s/%s'"
+			   previewer bnr line pdir cf)))))
+```
+
 ### YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
 
 YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしません．<br>
