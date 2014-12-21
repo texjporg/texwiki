@@ -47,6 +47,14 @@ Windows, OS X, Linux
 
 - [https://github.com/thehogfather/brackets-latex](https://github.com/thehogfather/brackets-latex)
 
+### ChangeLog {#c9e41d70}
+
+- [https://github.com/thehogfather/brackets-latex/commits/master](https://github.com/thehogfather/brackets-latex/commits/master)
+
 ## brackets-vim {#b1f7e26d}
 
 - [https://github.com/megalord/brackets-vim](https://github.com/megalord/brackets-vim)
+
+### ChangeLog {#m8bd7e32}
+
+- [https://github.com/megalord/brackets-vim/commits/master](https://github.com/megalord/brackets-vim/commits/master)
