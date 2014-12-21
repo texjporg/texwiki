@@ -59,35 +59,26 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.77.5 で C-c C-g を入力して SumatraPDF で forward search ができない → yatexprc.el を修正する {#vf49c2d2}
+### YaTeX 1.77.6 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する {#vf49c2d2}
 
-YaTeX 1.77.5 で C-c C-g を入力して SumatraPDF で forward search ができません．<br>
+YaTeX 1.77.6 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．<br>
 yatexprc.el を修正します．<br>
 yatexprc.el の
 
 ```
-((string-match "sumatra" previewer)
+		  ((string-match "sumatra" previewer)	;;??
 ```
 
 の次の行の
 
 ```
-		   (format "%s %s.pdf %d %s"
-			   previewer bnr line cf))
+		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d %s"
 ```
 
-をコメントアウトして
-
-```
-;		   (format "%s %s.pdf %d %s"
-;			   previewer bnr line cf))
-```
-
-次の行に以下を追加します．<br>
+を以下のように修正します．<br>
 
 ```
 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
-			   previewer bnr cf line))
 ```
 
 ### YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
@@ -667,9 +658,9 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g または C-c e または M-x evince-forward-search RET</td><td>Evince で forward search</td></tr>
-> <tr><td></td><td>C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
+> <tr><td></td><td>C-c C-g または C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
 > <tr><td></td><td>C-c z または M-x zathura-forward-search RET</td><td>zathura で forward search</td></tr>
-> <tr><td></td><td>C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
+> <tr><td></td><td>C-c C-g または C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -1499,7 +1490,7 @@ fwdevince での forward search は C-c e または M-x evince-forward-search RE
 
 Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．<br>
 
-### Okular との連携 (forward search) {#o8772291}
+### Okular との連携 (forward search) → YaTeX 1.77.6 以降は Okular の forward search に対応しています {#o8772291}
 
 ```
 (defun okular-forward-search ()
@@ -1561,7 +1552,7 @@ okular での forward search は C-c o または M-x okular-forward-search RET �
 
 zathura での forward search は C-c z または M-x zathura-forward-search RET をタイプします．
 
-### qpdfview との連携 (forward search) {#ic7abdb4}
+### qpdfview との連携 (forward search) → YaTeX 1.77.6 以降は qpdfview の forward search に対応しています {#ic7abdb4}
 
 ```
 (defun qpdfview-forward-search ()
