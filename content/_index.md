@@ -282,7 +282,7 @@ pukiwiki: "FrontPage"
     [TeX の歴史](</TeXの歴史/>),
     [TeX で作られた本](</TeXで作られた本/>),
     [表記の哲学](</表記の哲学/>),
-    [著作権（案）](</著作権/>)
+    [著作権](</著作権/>)
 
 ## TeX 関連情報 <span style="font-size:10px">（ユーザ名・パスワードは左の<span style="color:#FF2800;background-color:white;"><strong>赤色の文</strong></span>を参照）</span> {#i40caa06}
 
