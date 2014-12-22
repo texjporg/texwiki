@@ -88,7 +88,7 @@ Unicode のテキストファイルを作成して多言語処理をするため
 (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](https://www.google.co.jp/) などで探してみましょう。<br>
-参考までに，[フランス語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_12.htm)，[ドイツ語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_13.htm)，[スペイン語入力](http://wm.tamagawa.ac.jp/manual/Bb/user/FirstStepMyPC_ja_JP/appendix/FirstStepMyPC_c14appendix_14.htm)，[ギリシャ語入力](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?eLearning%2FInputMethod%2FGreek%2FWindows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://kazajirushi.blog81.fc2.com/blog-entry-977.html)，[スペイン語入力](http://www.spaingo.jp/input.html)，[ギリシャ語入力](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?eLearning%2FInputMethod%2FGreek%2FWindows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では
 元々付属しているメモ帳 (Notepad) の他に
@@ -298,10 +298,9 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 タイ語はthailatexを使って記述できます。<br>
 ただし，タイ文字を7ビット化するなど，一工夫必要です。<br>
 
-まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと [libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV) の組み合わせが必要です。<br>
+まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと iconv が必要です。<br>
 TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。<br>
-
-[libiconv + iconv.exe \[Internet Archive\]](http://web.archive.org/web/20100528215838/http://www.kaoriya.net/#LIBICONV)をお使いの場合は，Libiconv DLL for Windowsをダウンロード後，展開（解凍）し，iconv.exeとiconv.dllをC:\w32tex\binなど，PATHの通ったところにコピーします。<br>
+iconv は [MSYS2](/MSYS2/) に含まれています．<br>
 
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
@@ -396,13 +395,13 @@ C:\w32tex\bin\ など PATH の通ったところにコピーします
 Unicodeでタイ語文書を記述可能なエディタを用いてタイ語を編集して保存します。<br>
 [Emacs](/Emacs/) をお使いの場合は，それを用いてタイ語を書き，UTF-8で保存します。<br>
 これをthaiutf8.txtとします。<br>
-Windows PowerShell またはコマンド プロンプトで次を実行し，TIS-620という文字コードに変換します。<br>
+コマンドラインから iconv を実行し，TIS-620という文字コードに変換します。<br>
 
 ```
 iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 ```
 
-TIS-620 の文字コードで編集して保存した場合は上のようなiconvでの変換作業は不要です。
+TIS-620 の文字コードで編集して保存した場合は上のような iconv での変換作業は不要です。
 
 これらの方法などで出来た thaimemo.txt を Windows PowerShell またはコマンド プロンプトにて SWATH で
 処理し，単語の切れ目に \wbr という目印を付けます。<br>
@@ -1440,7 +1439,7 @@ uplatex  でコンパイルします。<br>
 
 ## 謝辞 {#mlathbos}
 
-本文書を作るにあたり，[「TeX Q &amp; A」掲示板](https://okumuralab.org/~okumura/texfaq/qa/index.html)でご教示くださった方々に
+本文書を作るにあたり，[TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html)でご教示くださった方々に
 心より御礼申し上げます。
 
 ## Comments {#mlcomeiz}
@@ -1465,5 +1464,5 @@ uplatex  でコンパイルします。<br>
 - ASCII転写入力について記述を少し加えてみました。こんな感じでいかがでしょうか。 -- 栗山 2007-02-22 (木) 23:26:49
 - 上記に関連して若干記述を追加しました（かえって見づらくなったかも...）。 -- 栗山 2007-02-24 (土) 21:13:48
 - Babel &amp; hebrew について簡単に追加。-- ttk 2008-01-14 (月) 05:37:55
-- Windows上のUnicode対応テキストエディタなら秀丸も便利です -- 書いた人 2008-01-15 (火) 22:13:03
+- Windows上のUnicode対応テキストエディタならNotepad++も便利です -- 書いた人 2008-01-15 (火) 22:13:03
 - Unicode (UTF-8) 対応テキストエディタとして挙げられているものに、たとえばサクラエディタの通常版のように、内部コードがShiftJISになっているもの、つまり実質UNICODEが扱えないものは混ざっていないでしょうか？ -- ken 2011-06-14 (火) 05:03:27
