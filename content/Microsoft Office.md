@@ -26,6 +26,7 @@ pukiwiki: "Microsoft Office"
 
 ## TeX との比較 {#k678548a}
 
+- [学術論文を書くときは Microsoft Word と LaTeX のどちらが効率的か？｜Colorless Green Ideas](http://id.fnshr.info/2014/12/21/word-or-latex/)
 - [PLOS ONE: An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069)
 - [TeXは本当によいものか?](http://hdmr.org/d/?e=1947)
 - [WordとTexって結局どっちがええのんか](http://yakyuzuki.blogspot.jp/2013/05/wordtex.html)
