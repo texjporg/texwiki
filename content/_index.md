@@ -89,6 +89,7 @@ pukiwiki: "FrontPage"
         [サクラエディタ](</サクラエディタ/>)
         ([Happy](/Happy/))
     - <span style="color:White;background-color:#00A497;"> <strong>OS X</strong> </span>：
+        [Xcode](/Xcode/),
         [TeXShop](/TeXShop/),
         TeXnicle,
         [CotEditor](/CotEditor/),
