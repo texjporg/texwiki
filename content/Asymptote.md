@@ -184,6 +184,7 @@ yaxis("$y$",LeftRight,RightTicks);
 
 ### 関連リンク {#xbb02c40}
 
+- [http://qiita.com/tags/asymptote](http://qiita.com/tags/asymptote)
 - [Asymptote のつかいかた](http://2nd.geocities.jp/asy_zenkin/) → ひととおりの使い方が説明された数少ない日本語リソース。TeX Live 2014 対応
 - [W32Tex や Asymptote の導入(インストール)に成功するまで経緯（１）](http://blogs.yahoo.co.jp/eikei375/38640701.html)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
