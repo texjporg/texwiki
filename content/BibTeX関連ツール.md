@@ -16,7 +16,7 @@ pukiwiki: "BibTeX関連ツール"
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 | [Zotero](https://www.zotero.org/) | Firefox, Windows, OS X, Linux | フリーソフトウェア． |
-|  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト（旧称 [JBibtexManager](http://jbibtexmanager.sourceforge.net/)）[bibkeeper](http://bibkeeper.sourceforge.net)もJabRefにマージされた模様。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
+|  [JabRef](http://jabref.sourceforge.net)  | Java  | BibTeXファイル編集ソフト。日本語の読込書込OK、検索、PDFとの連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできる。文献リストをhtmlへエクスポートでき、[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると、より詳しい情報の入った文献リストhtmlが作成できる。 |
 | [QRef](http://members3.jcom.home.ne.jp/qref/) | Windows<br>OS X<br>Linux | フリーソフトウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://members3.jcom.home.ne.jp/qref/html/latex.htm) |
 |  [BibDesk](http://bibdesk.sourceforge.net/)  | OS X |  BibTeXファイル編集ソフト。検索機能やBibTeXエントリとPDFを関連づける機能も持っているので、簡易的な論文データベースを構築できます  |
 |  [KBibTeX](http://home.gna.org/kbibtex/) |  KDE  | KDE 用の BibTeX エディタ。 |
@@ -34,19 +34,18 @@ pukiwiki: "BibTeX関連ツール"
 |---|---|---|
 | bibtex.el  |  emacs  |  文献の効率的入力を支援 |
 | [reftex.el](http://www.gnu.org/software/auctex/reftex.html)  |  emacs  |  LaTeX文書とbibファイルの連携機能を提供 |
+| [Ebib](http://joostkremers.github.io/ebib/) | emacs | emacs用のBibTeXデータベースマネージャ。複数のbibファイルを同時に操作できる。 |
 |  bibfind  | perl | bibファイルの中を検索  |
 |  bibindex  | UNIX | bibファイルをbixファイルに変換。bixファイルの中を検索  |
 |  bible  | windows | bibファイル作成  |
 |  bibextract  | UNIX | bibファイルから検索条件に合致したエントリを抽出  |
 |  bibsort  | UNIX  | .bibファイルの中の文献データをsortするプログラム。emacsのBiBTeXモードのM-x bibtex-sort-bufferよりの断然速い  |
-| [BiBTeX 文献リスト作成支援マクロ](http://hide.maruo.co.jp/lib/macro/biblist102.html) | 秀丸 | Hidemaruで編集するときに便利なマクロ及び強調表示の定義ファイル |
 | [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | gtk+ | .bib ファイルの作成・検索などを対話的に行う GUI プログラム。日本語が通らない。 |
 | [tkbibtex](https://mirror.ctan.org/biblio/bibtex/utils/tkbibtex/) | tcl/tk | .bib ファイル作成編集プログラム。日本語表示 OK だが、atokx では入力できない。 |
 | [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
 | [bibcursed](http://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト。ncursesを利用したインターフェイスで非常に高速に入力できる。日本語OK |
 | [BibFile Editor](http://www.h7.dion.ne.jp/~yochian/macro.htm) | Windows95 | 簡易エディタ。 |
 | [bibclean](http://ftp.math.utah.edu/pub//bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム。日本語可。 |
-| [Ebib](http://ebib.sourceforge.net/) | emacs | emacs用のBibTeXデータベースマネージャ。複数のbibファイルを同時に操作できる。 |
 
 emacsを使う人はbibtex-mode (bibtex.el) が断然効率的。日本語文献ではyomiが欲しいので、&#x7e;/.emacs.d/init.el に、
 
