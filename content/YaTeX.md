@@ -59,9 +59,9 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.77.6 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する {#vf49c2d2}
+### YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する {#vf49c2d2}
 
-YaTeX 1.77.6 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．<br>
+YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．<br>
 yatexprc.el を修正します．<br>
 yatexprc.el の
 
@@ -81,9 +81,9 @@ yatexprc.el の
 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
 ```
 
-### YaTeX 1.77.6 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する {#ka79bca3}
+### YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する {#ka79bca3}
 
-YaTeX 1.77.6 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．<br>
+YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．<br>
 yatexprc.el を修正します．<br>
 yatexprc.el の
 
@@ -103,9 +103,9 @@ yatexprc.el の
 		   (format "%s '%s.pdf#src:%s:%d:0'"
 ```
 
-### YaTeX 1.77.6 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
+### YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
 
-YaTeX 1.77.6 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．<br>
+YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．<br>
 yatexprc.el を修正します．<br>
 yatexprc.el の
 
