@@ -21,21 +21,21 @@ pukiwiki: "libpng"
 
 #### MinGW {#hb8b32d9}
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.16/libpng-1.6.16.tar.xz -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.17/libpng-1.6.17.tar.xz -->
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.16.tar.xz
-$ tar xvf libpng-1.6.16.tar.xz
-$ pushd libpng-1.6.16
+$ curl -R -L -O http://download.sourceforge.net/libpng/libpng-1.6.17.tar.xz
+$ tar xvf libpng-1.6.17.tar.xz
+$ pushd libpng-1.6.17
 $ ./configure --prefix=/mingw
 $ make
 $ make install
 $ popd
 ```
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.16/libpng-1.6.16.tar.xz -->
-<!-- $ tar xvf libpng-1.6.16.tar.xz -->
-<!-- $ pushd libpng-1.6.16 -->
+<!-- $ curl -R -L -O http://sourceforge.net/projects/libpng/files/libpng16/1.6.17/libpng-1.6.17.tar.xz -->
+<!-- $ tar xvf libpng-1.6.17.tar.xz -->
+<!-- $ pushd libpng-1.6.17 -->
 <!-- $ mkdir build -->
 <!-- $ pushd build -->
 <!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -->
