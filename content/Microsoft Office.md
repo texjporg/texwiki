@@ -50,4 +50,4 @@ pukiwiki: "Microsoft Office"
 
 - [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
 - [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
-- [「ネ申Excel」はなぜ問題なのか](http://it.slashdot.jp/story/13/10/23/037221)
+- [「ネ申Excel」はなぜ問題なのか](http://it.srad.jp/story/13/10/23/037221)
