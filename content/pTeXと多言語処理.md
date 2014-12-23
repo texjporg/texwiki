@@ -199,8 +199,8 @@ PDF ファイルをプレビューしてみて，
 アラビア語についてはArabTeX上で扱えますし，ヘブライ語はArabTeXによる方法とBabelから用いる方法の2種類があるようです。<br>
 詳細は，
 [ArabTeX User's Manualの日本語訳](http://www.kotoito.net/arabtex.html),
-[ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364),
-[TeX &amp; ArabTeX \[Internet Archive\]](http://web.archive.org/web/20080420234244/http://www.osaka-gaidai.ac.jp/~mes/multi/multi_02.html) などをご覧ください。
+[ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364)
+などをご覧ください。
 
 インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
 
@@ -1133,7 +1133,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 /UnJamoDotum                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoDotum.ttf)  >> ;
 /UnJamoNovel                  << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (UnJamoNovel.ttf)  >> ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7
+%%% monospaced TrueType outline fonts in Windows 10/8.1/8/7
 %%% See C:\Windows\Fonts\
 /MS-Mincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 0 >> ;
 /MS-Gothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 0 >> ;
@@ -1146,7 +1146,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 /GulimChe                     << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 1 >> ;
 /GungsuhChe                   << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 3 >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7
+%%% proportional TrueType outline fonts in Windows 10/8.1/8/7
 %%% See C:\Windows\Fonts\
 /MS-PMincho                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msmincho.ttc)  /SubfontID 1 >> ;
 /MS-PGothic                   << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/msgothic.ttc)  /SubfontID 1 >> ;
@@ -1158,14 +1158,14 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 /Gulim                        << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/gulim.ttc)     /SubfontID 0 >> ;
 /Gungsuh                      << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (C:/Windows/Fonts/batang.ttc)    /SubfontID 2 >> ;
 
-%%% monospaced TrueType outline fonts in Windows 8.1/8/7
+%%% monospaced TrueType outline fonts in Windows 10/8.1/8/7
 %%% See C:\Windows\Fonts\
 /SimSun-ExtB                  << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simsunb.ttf) >> ;
 /KaiTi                        << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simkai.ttf)  >> ;
 /FangSong                     << /FileType /TrueType  /CSI [(GB1) 5]     /Path (C:/Windows/Fonts/simfang.ttf) >> ;
 /DFKaiShu-SB-Estd-BF          << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (C:/Windows/Fonts/kaiu.ttf)    >> ;
 
-%%% proportional TrueType outline fonts in Windows 8.1/8/7
+%%% proportional TrueType outline fonts in Windows 10/8.1/8/7
 %%% See C:\Windows\Fonts\
 /Meiryo                       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 0 >> ;
 /Meiryo-Italic                << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/meiryo.ttc)    /SubfontID 1 >> ;
@@ -1284,8 +1284,10 @@ ps2pdf cjkintro.ps
 
 モンゴル語に
 ついては，[MonTeX](http://www.ring.gr.jp/pub/text/CTAN/help/Catalogue/entries/montex.html)
-というパッケージがあります。また，日本語とモンゴル語を共存させる際に
-役立つ LRTate.sty というものもあります。詳細は
+というパッケージがあります。<br>
+また，日本語とモンゴル語を共存させる際に
+役立つ LRTate.sty というものもあります。<br>
+詳細は
 「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://www2.tba.t-com.ne.jp/ing/babel.html#gcinst)」
 にもありますが，ここではインストール方法について解説します。
 
@@ -1303,15 +1305,16 @@ montex.tgz のファイルを tar + gzip 形式に対応した展開（解凍）
 
 また，LRtate.sty や diagnose.sty も $TEXMF/tex/latex/montex/ にコピーします。
 
-$TEXMF/tex/generic/config/language.dat に次を追記します。
+$TEXMF/tex/generic/config/language.dat に次を追記します。<br>
 私は texmf/tex/generic/config/language.dat を
-texmf-local/tex/generic/config/ にコピーして用いています。
+texmf-local/tex/generic/config/ にコピーして用いています。<br>
 
 ```
 mongolian	mnhyphen.tex % mnhyphex.tex % No exceptions now.
 ```
 
-あとは次を実行します。最初の mktexlsr が必要ない方は実行しなくても構いません。
+あとは次を実行します。<br>
+最初の mktexlsr が必要ない方は実行しなくても構いません。<br>
 
 ```
 mktexlsr
@@ -1319,7 +1322,7 @@ fmtutil --byfmt latex
 fmtutil --byfmt platex
 ```
 
-以上で終わりです。
+以上で終わりです。<br>
 
 [栗山雅俊さん](http://ethics.let.hokudai.ac.jp/~gpae/plus2/?Staff/Kuriyama)が
 作成された[横書き](https://okumuralab.org/~okumura/texfaq/qa/36989.html)と[縦書き](https://okumuralab.org/~okumura/texfaq/qa/36993.html)の2種類のサンプルが
