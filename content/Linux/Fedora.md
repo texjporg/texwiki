@@ -9,7 +9,7 @@ pukiwiki: "Linux/Fedora"
 
 [Linux](/Linux/) > Fedora
 
-## [Fedora](http://fedoraproject.org/) {#l0a22986}
+## [Fedora](https://getfedora.org/) {#l0a22986}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fedora_logo_and_wordmark.svg/500px-Fedora_logo_and_wordmark.svg.png" alt="Fedora" style="float:right">
 
@@ -19,7 +19,7 @@ pukiwiki: "Linux/Fedora"
 
 Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
 
-- [Fedora Project](http://fedoraproject.org/)
+- [Fedora](https://getfedora.org/)
 - [https://copr.fedoraproject.org/](https://copr.fedoraproject.org/)
 - [http://wiki.sugarlabs.org/go/Fedora](http://wiki.sugarlabs.org/go/Fedora)
 
@@ -32,7 +32,7 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 ## [TeX Live](</TeX Live/>) {#u412c2cf}
 
 - [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
-    - [Features/TeXLive](http://fedoraproject.org/wiki/Features/TeXLive)
+    - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
