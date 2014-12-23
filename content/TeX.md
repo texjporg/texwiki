@@ -77,6 +77,28 @@ Windows や OS X を使用していて LaTeX の実行速度が遅い場合は L
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
 
+### TeXユーザの集い {#e38306bd}
+
+- [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
+- [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
+- [TeXユーザの集い 2011](http://oku.edu.mie-u.ac.jp/texconf11/)
+- [TeXユーザの集い 2010](http://oku.edu.mie-u.ac.jp/texconf10/)
+- [TeXユーザの集い 2009](http://oku.edu.mie-u.ac.jp/texconf09/)
+
+### バッドノウハウ {#hcd7e588}
+
+- [バッドノウハウからグッドラッパーへ](http://www.hyuki.com/techinfo/knowhow.html)
+- [TeX はバッドノウハウか？](http://d.hatena.ne.jp/apkz/20040311#p4)
+- [バッドノウハウについて、ふたたび](http://d.hatena.ne.jp/apkz/20040316#p1)
+- [バッドノウハウと TeX と書籍組版](http://d.hatena.ne.jp/apkz/20040322/p1)
+- [mktexlsr は有害だ (mktexlsr Considered Harmful)](http://0xcc.net/misc/mktexlsr.html)
+- [texmf の ls-R の必要性](http://d.hatena.ne.jp/lugia/20110923/1316736886)
+- [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
+    - [TeXソース内での全角スペースは有害](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700#p3831)
+- [表示的意味論の二重四角括弧の出し方，および latex のバッドノウハウについて](http://alohakun.blog7.fc2.com/blog-entry-302.html)
+- [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
+- [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
+
 ### 私は TeX を続けるよ！ {#gadbb81f}
 
 - [私がTeXを使い続ける理由 - くるるの数学ノート](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
