@@ -32,7 +32,7 @@ OS X
 
 ### License {#x8f63441}
 
-GPL
+GPLv2
 
 ### リリース情報/ChangeLog {#td599942}
 
