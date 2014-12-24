@@ -8,7 +8,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://www.gihyo.co.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。<br>
-本章のサポート責任は[稲垣徹](http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。<br>
+本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。<br>
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。<br>
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。<br>
 
@@ -26,7 +26,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 364 表 J.5 \[ \] 内に示したフォントエンコーディング名に関して，複数のエンコーディングに属するものを優先順位を付けて表示していますが，特に OT2 と表示したテキスト命令は原則 T2A/T2B/T2C/T2D フォントエンコーディング指定時にも使用できる場合があります（\cyrizh，\cyrfita，\cyryat の3字母を除く）。（安田）
 
-- p. 364, p. 369 本書で言及しているキリル文字フォントエンコーディング OT2/T2A/T2B/T2C/T2D/X2 は，キリル文字に限定すれば，(OT2 ∪ T2A ∪ T2B ∪ T2C) ⊂ X2 の関係にあります。X2 を使えば OT2 にないキリル文字をほとんどカバーできます。T2D には X2 にはない教会スラヴ語文字・古スラヴ語文字が含まれています。X2 の使い方については，稲垣さんのサイト（「CTAN Directory &mdash; “[Russian / Cyrillic Language](http://www2.tba.t-com.ne.jp/ing/ctan/russian.html)”」など）に解説があります。（安田）
+- p. 364, p. 369 本書で言及しているキリル文字フォントエンコーディング OT2/T2A/T2B/T2C/T2D/X2 は，キリル文字に限定すれば，(OT2 ∪ T2A ∪ T2B ∪ T2C) ⊂ X2 の関係にあります。X2 を使えば OT2 にないキリル文字をほとんどカバーできます。T2D には X2 にはない教会スラヴ語文字・古スラヴ語文字が含まれています。X2 の使い方については，稲垣さんのサイト（「CTAN Directory &mdash; “[Russian / Cyrillic Language \[Internet Archive\]](http://web.archive.org/web/20130727041721/http://www2.tba.t-com.ne.jp/ing/ctan/russian.html)”」など）に解説があります。（安田）
 
 - p. 364 「ロシア語におけるいくつかの補足」—数式モードにおけるキリル文字の利用について，amsmath.sty (AMS-LaTeX)，mathtext.sty を使った例を[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)にしました。（安田）
 
@@ -51,13 +51,13 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 372 「T1 フォントエンコーディング」—本文 12.2 節（p. 188 以下）にも詳しく記述されていますので参照ください。
 
-- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧ください。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 —試案— を[ここ](http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
+- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧ください。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 —試案— を[ここ \[Internet Archive\]](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
 
 - p. 374 「ギリシア語……は……直接入力を行うことは出来ません」—上記 p. 365 註28 errata を参照ください。
 
 - p. 377 註62 図 J.4 がありませんが，横の「CJK 字体」図のことです。
 
-- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に掲載しました。（稲垣）
+- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを「[日本語 LaTeX による多言語処理 &mdash; CTAN directory \[Internet Archive\]](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に掲載しました。（稲垣）
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
