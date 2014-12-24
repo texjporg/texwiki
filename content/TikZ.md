@@ -37,6 +37,11 @@ TikZ/PGF は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
         <!-- - -[[ChangeLog:http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog]] -->
 
+### TikZ の読み方 → てぃくす {#qa783648}
+
+- [http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz)
+- [TikZって何て発音すればいいの?](https://twitter.com/keno_ss/status/354006358468739072)
+
 ### ChangeLog {#off3b30e}
 
 - [http://pgf.sourceforge.net/pgf_CVS.ChangeLog](http://pgf.sourceforge.net/pgf_CVS.ChangeLog)
@@ -1033,3 +1038,4 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - 初等幾何の作図例（扇型、円を組み合わせた面積、角度）
 - [http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ)
 - [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
+- [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
