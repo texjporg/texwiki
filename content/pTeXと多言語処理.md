@@ -18,9 +18,9 @@ pukiwiki: "pTeXと多言語処理"
 [upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。<br>
 
 pTeX 上で多言語混在文書を扱う方法を
-まとめたものとして，[稲垣徹さん](http://www2.tba.t-com.ne.jp/ing/)による
-「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
-「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」
+まとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による
+「[pTeX 3.1.41とBabel 3.8 \[Internet Archive\]](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や
+「[日本語 LaTeX による多言語処理 &mdash; CTAN directory \[Internet Archive\]](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.htmll)」
 が知られています。<br>
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，
 中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては
@@ -116,8 +116,8 @@ OS X や Linux などでは
 至れり尽くせりのパッケージです。<br>
 インストールについては，基本的な言語のみで
 あれば [TwXWiki:新 pTeX と Babel](</新 pTeX とBabel/>) あるいは
-「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://www2.tba.t-com.ne.jp/ing/babel.html)」や
-「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
+「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」や
+「[pTeX 3.1.41とBabel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」
 をご覧ください。<br>
 
 ### 各パッケージによる方法 {#otpckgsd}
@@ -125,7 +125,7 @@ OS X や Linux などでは
 文字がラテンアルファベットやキリル文字でない場合，
 各種パッケージを用いることになるかもしれません。<br>
 欧米の諸言語であれば
-「[pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)」
+「[pTeX 3.1.41とBabel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」
 でも取り扱っていますが，ここでは例としてグルジア語について紹介します。<br>
 
 #### グルジア語 {#mxeldrul}
@@ -305,7 +305,7 @@ iconv は [MSYS2](/MSYS2/) に含まれています．<br>
 以下のスクリプトの実行には
 [Strawberry Perl](http://strawberryperl.com/)
 など，Perl が必要になりますので，忘れずにインストールしてください。<br>
-[8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
+[8bt2ptex.pl](http://web.archive.org/web/20121121181915/http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
 
 ```
 #!perl
@@ -480,7 +480,7 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 
 その他の言語についてもパッケージがあると思います。
 詳細は稲垣徹さんのウェブサイト
-「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を
+「[日本語 LaTeX による多言語処理](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)」を
 ご覧ください。
 
 ## 東アジアの言語 {#easapflq}
