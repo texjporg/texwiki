@@ -9,7 +9,7 @@ pukiwiki: "Cygwin"
 
 [Microsoft Windows](</Microsoft Windows/>) > Cygwin
 
-## [Cygwin](http://www.cygwin.com/) {#y69b4c00}
+## [Cygwin](https://www.cygwin.com/) {#y69b4c00}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cygwin_logo.svg/200px-Cygwin_logo.svg.png" alt="Cygwin" style="float:right">
 
@@ -20,7 +20,7 @@ pukiwiki: "Cygwin"
 Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システム) ライクな環境です．<br>
 64-bit 版と 32-bit 版のインストーラーがあります．<br>
 
-- [Cygwin](http://www.cygwin.com/)
+- [Cygwin](https://www.cygwin.com/)
     - [The Cygwin Project mailing list archives](http://cygwin.com/ml/cygwin/)
     - [The cygwin-announce mailing list archives](http://cygwin.com/ml/cygwin-announce/)
     - [The cygwin-apps mailing list archives](http://cygwin.com/ml/cygwin-apps/)
@@ -33,8 +33,8 @@ Cygwin は Microsoft Windows 上で動作する Linux (UNIX&reg; 互換システ
 
 GPLv3
 
-- [http://www.cygwin.com/faq.html#faq.what.free](http://www.cygwin.com/faq.html#faq.what.free)
-- [http://cygwin.com/licensing.html](http://cygwin.com/licensing.html)
+- [https://www.cygwin.com/faq.html#faq.what.free](https://www.cygwin.com/faq.html#faq.what.free)
+- [https://cygwin.com/licensing.html](https://cygwin.com/licensing.html)
 - [https://cygwin.com/viewvc/src/winsup/COPYING?view=markup](https://cygwin.com/viewvc/src/winsup/COPYING?view=markup)
 
 ### ChangeLog {#t7089ab8}
@@ -261,7 +261,7 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.852 (64 bit or 32 bit)</strong></span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[http://www.cygwin.com/](http://www.cygwin.com/)</span>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[https://www.cygwin.com/](https://www.cygwin.com/)</span>
 
 ***
 
