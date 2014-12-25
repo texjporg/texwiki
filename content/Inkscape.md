@@ -392,10 +392,14 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 ## Inkscape で TeX 数式 {#f9da7d32}
 
+[TeX2img](/TeX2img/) (Windows/Mac) を使用して，TeX ソースから数式画像を EPS/PDF 形式でアウトライン化して出力するのが簡単です．<br>
+なお，TeX2img は数式以外の地の文や日本語も問題なく処理できます．
+
 - [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
 - [Inkscapeでtex数式を使う(数式はアウトラインに)](http://www.my-chicken-heart.com/2007/09/inkscapetex.html)
 - [Latexの数式をsvgに](http://blog.livedoor.jp/les_paul_sp/archives/317234.html)
 - [TeX, EPS, Inkscape for Win](http://researchmap.jp/jo8ju0xue-10163/#_10163)
+- [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
 
 ## 関連リンク {#l46f1d34}
 
