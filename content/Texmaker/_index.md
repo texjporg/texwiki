@@ -652,6 +652,8 @@ C:.
     - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
     - [Configure forward search with Texmaker + SumatraPDF](http://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
+- [Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
+- [texmakerのスペルチェックを米語にする](https://gist.github.com/tos-kamiya/1c091f80be9c7e98f70c)
 - [Texmakerにスペルチェックを追加する](http://sweettips.take-uma.net/latex/texmaker%E3%81%AB%E3%82%B9%E3%83%9A%E3%83%AB%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)
 - [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
