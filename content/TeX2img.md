@@ -15,6 +15,7 @@ pukiwiki: "TeX2img"
 
 TeX2img は TeX ソースコードを画像に変換するアプリケーションです．<br>
 しばしば「数式の画像化」ツールとして紹介されますが，実際は「地の文を含めて TeX 文書全体を画像化」することを想定して作られています．<br>
+奥村先生の [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) には，Windows版/Mac版が標準インストールソフトウェアとしてバンドルされています．
 
 - [TeX2img](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
 - [TeX2img](http://island.geocities.jp/loveinequality/) (Mac 版)
@@ -62,7 +63,7 @@ Windows, OS X
 - [「TeX2img」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TeX2img)
 - [http://twilog.org/doraTeX/search?word=TeX2img](http://twilog.org/doraTeX/search?word=TeX2img)
 - [&quot;TeX2img&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/TeX2img)
-    - [TeX2imgのすゝめ：詳しい使い方](http://acetaminophen.hatenablog.com/entry/tex2img-gui)
+    - [TeX2imgのすゝめ：詳しい使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-gui)
     - [TeX2imgのコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-cui)
     - [TeX2img (Windows/Mac) の動作の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/18/214403)
     - [PDFのトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
