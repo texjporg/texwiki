@@ -39,7 +39,11 @@ TikZ/PGF は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
 
 ### TikZ の読み方 → てぃくす {#qa783648}
 
-- [http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz)
+TikZ の発音について、“公式”のものは特に定められていないようです。<br>
+実際に使われる発音としては、Tik- は /tik/（ティク）で、-Z は /s/ か /ts/ か“Zの文字名”で読まれています。
+
+- [http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz) ― /tiks/ という答え。
+- [http://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee](http://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee) ― /tikts/ という答え。
 - [TikZって何て発音すればいいの?](https://twitter.com/keno_ss/status/354006358468739072)
 
 ### ChangeLog {#off3b30e}
