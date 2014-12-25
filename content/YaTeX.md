@@ -29,7 +29,7 @@ YaTeX（野鳥）は Emacs の TeX モードです．
 
 [yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．<br>
 
-Emacs 24.3 以降を使用している場合は YaTeX 1.77 以降を使用してください．<br>
+Emacs 24.4 以降を使用している場合は YaTeX 1.78 以降を使用してください．<br>
 
 ### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
 
@@ -59,77 +59,44 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する {#vf49c2d2}
+<!-- **YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する [#vf49c2d2] -->
+<!--  -->
+<!-- YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．~ -->
+<!-- yatexprc.el を修正します．~ -->
+<!-- yatexprc.el の -->
+<!-- 		  ((string-match "sumatra" previewer)	;;?? -->
+<!-- の次の行の -->
+<!-- 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d %s" -->
+<!-- を以下のように修正します．~ -->
+<!-- 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d" -->
+<!--  -->
+<!-- **YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する [#ka79bca3] -->
+<!--  -->
+<!-- YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．~ -->
+<!-- yatexprc.el を修正します．~ -->
+<!-- yatexprc.el の -->
+<!-- 		  ((string-match "qpdfview" previewer)	;;?? -->
+<!-- の次の行の -->
+<!-- 		   (format "%s '%s.pdf' '#src:%s:%d:0'" -->
+<!-- を以下のように修正します．~ -->
+<!-- 		   (format "%s '%s.pdf#src:%s:%d:0'" -->
+<!--  -->
+<!-- **YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する [#l5f1c74e] -->
+<!--  -->
+<!-- YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．~ -->
+<!-- yatexprc.el を修正します．~ -->
+<!-- yatexprc.el の -->
+<!-- 		  ((string-match "okular" previewer)	;;? -->
+<!-- の次の行の -->
+<!-- 		   (format "%s '%s.pdf' '#src:%d' '%s'" -->
+<!-- 			   previewer bnr line cf))))) -->
+<!-- を以下のように修正します．~ -->
+<!-- 		   (format "%s '%s.pdf#src:%d %s/%s'" -->
+<!-- 			   previewer bnr line pdir cf))))) -->
 
-YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．<br>
-yatexprc.el を修正します．<br>
-yatexprc.el の
+### YaTeX 1.78, 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
 
-```
-		  ((string-match "sumatra" previewer)	;;??
-```
-
-の次の行の
-
-```
-		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d %s"
-```
-
-を以下のように修正します．<br>
-
-```
-		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
-```
-
-### YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する {#ka79bca3}
-
-YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．<br>
-yatexprc.el を修正します．<br>
-yatexprc.el の
-
-```
-		  ((string-match "qpdfview" previewer)	;;??
-```
-
-の次の行の
-
-```
-		   (format "%s '%s.pdf' '#src:%s:%d:0'"
-```
-
-を以下のように修正します．<br>
-
-```
-		   (format "%s '%s.pdf#src:%s:%d:0'"
-```
-
-### YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
-
-YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．<br>
-yatexprc.el を修正します．<br>
-yatexprc.el の
-
-```
-		  ((string-match "okular" previewer)	;;?
-```
-
-の次の行の
-
-```
-		   (format "%s '%s.pdf' '#src:%d' '%s'"
-			   previewer bnr line cf)))))
-```
-
-を以下のように修正します．<br>
-
-```
-		   (format "%s '%s.pdf#src:%d %s/%s'"
-			   previewer bnr line pdir cf)))))
-```
-
-### YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
-
-YaTeX 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしません．<br>
+YaTeX 1.78, 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしません．<br>
 Linux の Emacs や YaTeX 1.75, 1.74 では C-c ' を入力するとエラー行にジャンプします．<br>
 エラー行にジャンプしたい場合は [AUCTeX](/AUCTeX/) を使用してください．<br>
 どうしても YaTeX でエラー行にジャンプしたい場合は
@@ -321,7 +288,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c C-g または C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
 > </table>
@@ -537,15 +504,15 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq tex-command "latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf")
 (setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq dvi2-command "xdg-open")
-;(setq dvi2-command "evince")
+;(setq dvi2-command "xdg-open")
+(setq dvi2-command "evince")
 ;(setq dvi2-command "okular --unique")
 ;(setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
 ;(setq dvi2-command "qpdfview --unique")
 ;(setq dvi2-command "texworks")
 ;(setq dvi2-command "texstudio --pdf-viewer-only")
-(setq tex-pdfview-command "xdg-open")
-;(setq tex-pdfview-command "evince")
+;(setq tex-pdfview-command "xdg-open")
+(setq tex-pdfview-command "evince")
 ;(setq tex-pdfview-command "okular --unique")
 ;(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
 ;(setq tex-pdfview-command "qpdfview --unique")
@@ -704,9 +671,9 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g または C-c e または M-x evince-forward-search RET</td><td>Evince で forward search</td></tr>
-> <tr><td></td><td>C-c C-g または C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
+> <tr><td></td><td>C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
 > <tr><td></td><td>C-c z または M-x zathura-forward-search RET</td><td>zathura で forward search</td></tr>
-> <tr><td></td><td>C-c C-g または C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
+> <tr><td></td><td>C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -1398,7 +1365,7 @@ off の場合
 
 ```
 
-### SumatraPDF との連携 (forward search) → YaTeX 1.77.5 以降は SumatraPDF の forward search に対応しています {#ra95ecfb}
+### SumatraPDF との連携 (forward search) {#ra95ecfb}
 
 #### SumatraPDF を前面に表示したい場合 {#x4a4f83a}
 
@@ -1464,7 +1431,7 @@ fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwd
 
 fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタイプします．
 
-### Skim との連携 (forward search) → YaTeX 1.77.5 以降は Skim の forward search に対応しています {#f978a43b}
+### Skim との連携 (forward search) → YaTeX 1.78 以降は Skim の forward search に対応しています {#f978a43b}
 
 ```
 (defun skim-forward-search ()
@@ -1499,7 +1466,7 @@ displayline での forward search は C-c s または M-x skim-forward-search RE
 
 - [https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el](https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el)
 
-### Evince との連携 (forward search) → YaTeX 1.77.5 以降は Evince の forward search に対応しています {#h118b5e5}
+### Evince との連携 (forward search) → YaTeX 1.78 以降は Evince の forward search に対応しています {#h118b5e5}
 
 ```
 (defun evince-forward-search ()
@@ -1536,7 +1503,7 @@ fwdevince での forward search は C-c e または M-x evince-forward-search RE
 
 Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．<br>
 
-### Okular との連携 (forward search) → YaTeX 1.77.6 以降は Okular の forward search に対応しています {#o8772291}
+### Okular との連携 (forward search) {#o8772291}
 
 ```
 (defun okular-forward-search ()
@@ -1598,7 +1565,7 @@ okular での forward search は C-c o または M-x okular-forward-search RET �
 
 zathura での forward search は C-c z または M-x zathura-forward-search RET をタイプします．
 
-### qpdfview との連携 (forward search) → YaTeX 1.77.6 以降は qpdfview の forward search に対応しています {#ic7abdb4}
+### qpdfview との連携 (forward search) {#ic7abdb4}
 
 ```
 (defun qpdfview-forward-search ()
