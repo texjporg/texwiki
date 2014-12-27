@@ -98,6 +98,7 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 ```
 
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
+- \[[LaTeX\] biblatex ～初歩の初歩～ ---- もう一つの［参考文献］生成ツール](http://konoyonohana.blog.fc2.com/blog-entry-96.html)
 
 ### インストール {#d62d0a5a}
 
