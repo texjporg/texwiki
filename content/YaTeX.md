@@ -175,19 +175,15 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
   (progn
     (process-kill-without-query
      (start-process
-      "sumatrapdf"
+      "fwdsumatrapdf"
       nil
-      "rundll32"
-      "shell32,ShellExec_RunDLL"
-      "SumatraPDF"
-      "-reuse-instance"
+      "fwdsumatrapdf"
       (expand-file-name
        (concat (file-name-sans-extension (or YaTeX-parent-file
                                              (save-excursion
                                                (YaTeX-visit-main t)
                                                buffer-file-name)))
                ".pdf"))
-      "-forward-search"
       (buffer-name)
       (number-to-string (save-restriction
                           (widen)
@@ -196,29 +192,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
-
-(defun fwdsumatrapdf-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "fwdsumatrapdf"
-      nil
-      "fwdsumatrapdf"
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      (buffer-name)
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
 
 (add-hook 'yatex-mode-hook
           '(lambda ()
@@ -245,8 +218,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c C-g または C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
-> <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
+> <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -340,29 +313,6 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
 (setq dviprint-command-format "/usr/bin/open -a \"Adobe Reader\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
-(defun skim-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process  
-      "displayline"
-      nil
-      "/Applications/Skim.app/Contents/SharedSupport/displayline"
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      buffer-file-name))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c s") 'skim-forward-search)))
-
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
@@ -388,7 +338,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c C-g または C-c s または M-x skim-forward-search RET</td><td>Skim で forward search</td></tr>
+> <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -477,29 +427,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "xdg-open `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
-(defun evince-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "fwdevince"
-      nil
-      "fwdevince"
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))
-      (buffer-name)))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c e") 'evince-forward-search)))
-
 (require 'dbus)
 
 (defun un-urlify (fname-or-url)
@@ -575,33 +502,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
           '(lambda ()
              (define-key YaTeX-mode-map (kbd "C-c z") 'zathura-forward-search)))
 
-(defun qpdfview-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "qpdfview"
-      nil
-      "qpdfview"
-      "--unique"
-      (concat (expand-file-name
-               (concat (file-name-sans-extension (or YaTeX-parent-file
-                                                     (save-excursion
-                                                       (YaTeX-visit-main t)
-                                                       buffer-file-name)))
-                       ".pdf"))
-              "#src:"
-              (buffer-name)
-              ":"
-              (number-to-string (save-restriction
-                                  (widen)
-                                  (count-lines (point-min) (point))))
-              ":0")))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
-
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
@@ -627,10 +527,9 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c C-g または C-c e または M-x evince-forward-search RET</td><td>Evince で forward search</td></tr>
+> <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>qpdfview で forward search</td></tr>
 > <tr><td></td><td>C-c o または M-x okular-forward-search RET</td><td>Okular で forward search</td></tr>
 > <tr><td></td><td>C-c z または M-x zathura-forward-search RET</td><td>zathura で forward search</td></tr>
-> <tr><td></td><td>C-c q または M-x qpdfview-forward-search RET</td><td>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -1316,25 +1215,35 @@ off の場合
 
 #### SumatraPDF を前面に表示したい場合 → YaTeX 1.78.1 以降は SumatraPDF の forward search に対応しています {#x4a4f83a}
 
+YaTeX 1.78.1 以降は
+
+```
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+```
+
+を設定して C-c C-g を入力すれば SumatraPDF で forward seasrch ができます．<br>
+
+#### SumatraPDF を前面に表示したくない場合 {#d9c64d40}
+
 ```
 (defun sumatrapdf-forward-search ()
   (interactive)
   (progn
     (process-kill-without-query
      (start-process
-      "sumatrapdf"
+      "fwdsumatrapdf"
       nil
-      "rundll32"
-      "shell32,ShellExec_RunDLL"
-      "SumatraPDF"
-      "-reuse-instance"
+      "fwdsumatrapdf"
       (expand-file-name
        (concat (file-name-sans-extension (or YaTeX-parent-file
                                              (save-excursion
                                                (YaTeX-visit-main t)
                                                buffer-file-name)))
                ".pdf"))
-      "-forward-search"
       (buffer-name)
       (number-to-string (save-restriction
                           (widen)
@@ -1345,38 +1254,9 @@ off の場合
              (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
 ```
 
-SumatraPDF の forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
-
-#### SumatraPDF を前面に表示したくない場合 {#d9c64d40}
-
-```
-(defun fwdsumatrapdf-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "fwdsumatrapdf"
-      nil
-      "fwdsumatrapdf"
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      (buffer-name)
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
-```
-
 fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタイプします．
+fwdsumatrapdf での forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
 
 ### Skim との連携 (forward search) → YaTeX 1.78 以降は Skim の forward search に対応しています {#f978a43b}
 
@@ -1384,40 +1264,13 @@ YaTeX 1.78 以降は
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "/usr/bin/open -a Skim")
 (setq tex-pdfview-command "/usr/bin/open -a Skim")
 ```
 
 を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．<br>
-
-```
-(defun skim-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process  
-      "displayline"
-      nil
-      "/Applications/Skim.app/Contents/SharedSupport/displayline"
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      buffer-file-name))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c s") 'skim-forward-search)))
-```
-
-displayline での forward search は C-c s または M-x skim-forward-search RET をタイプします．
-
-- [skim-forward-search.el](https://gist.github.com/ryseto/5710882), [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836) も参照してください．
 
 ### Evince との連携 (forward and inverse search) {#g214bbe8}
 
@@ -1429,42 +1282,13 @@ YaTeX 1.78 以降は Evince/fwdevince の fwdevince をインストールして
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "evince")
 (setq tex-pdfview-command "evince")
 ```
 
 を設定して C-c C-g を入力すれば Evince で forward seasrch ができます．<br>
-
-```
-(defun evince-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "fwdevince"
-      nil
-      "fwdevince"
-      (expand-file-name
-       (concat (file-name-sans-extension (or YaTeX-parent-file
-                                             (save-excursion
-                                               (YaTeX-visit-main t)
-                                               buffer-file-name)))
-               ".pdf"))
-      (number-to-string (save-restriction
-                          (widen)
-                          (count-lines (point-min) (point))))
-      (buffer-name)))))
-
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c e") 'evince-forward-search)))
-```
-
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
-
-fwdevince での forward search は C-c e または M-x evince-forward-search RET をタイプします．
-
-<!-- -[[SyncTeXの設定。 Emacs(YaTeX) + Evince:http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html]] も参照してください． -->
 
 ### Evince との連携 (inverse search) {#tfced2b6}
 
@@ -1534,36 +1358,17 @@ zathura での forward search は C-c z または M-x zathura-forward-search RET
 
 ### qpdfview との連携 (forward search) → YaTeX 1.78.1 以降は qpdfview の forward search に対応しています {#ic7abdb4}
 
-```
-(defun qpdfview-forward-search ()
-  (interactive)
-  (progn
-    (process-kill-without-query
-     (start-process
-      "qpdfview"
-      nil
-      "qpdfview"
-      "--unique"
-      (concat (expand-file-name
-               (concat (file-name-sans-extension (or YaTeX-parent-file
-                                                     (save-excursion
-                                                       (YaTeX-visit-main t)
-                                                       buffer-file-name)))
-                       ".pdf"))
-              "#src:"
-              (buffer-name)
-              ":"
-              (number-to-string (save-restriction
-                                  (widen)
-                                  (count-lines (point-min) (point))))
-              ":0")))))
+YaTeX 1.78.1 以降は
 
-(add-hook 'yatex-mode-hook
-          '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
+```
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq dvi2-command "qpdfview --unique")
+(setq tex-pdfview-command "qpdfview --unique")
 ```
 
-qpdfview での forward search は C-c q または M-x qpdfview-forward-search RET をタイプします．
+を設定して C-c C-g を入力すれば qpdfview で forward seasrch ができます．<br>
 
 ## その他（改造など） {#q5a5c09f}
 
@@ -1578,14 +1383,14 @@ yatexadd.elのYaTeX:includegraphicsの最後を下記のように変更
 
 ### コンパイルプログラムの使い分け {#ga20e87e}
 
-普段は ptex2pdf (uplatex + dvipdfmx) を使っていても，投稿先のスタイルシートによっては pdflatex を前提としているものがあります．<br>
+普段は upLaTeX (ptex2pdf) を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．<br>
 TeX ソースの先頭行に例えば，
 
 ```
 %#!pdflatex
 ```
 
-と書いておくと、普段は typeset の時に ptex2pdf (uplatex + dvipdfmx) で処理されていても，この場合だけ pdflatex で処理してくれます．
+と書いておくと、普段は typeset の時に upLaTeX (ptex2pdf) で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
 
 記述例をいくつかあげると，Windows では、
 
