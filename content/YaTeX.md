@@ -9,7 +9,7 @@ pukiwiki: "YaTeX"
 
 [Emacs](/Emacs/) > YaTeX
 
-## [YaTeX](https://www.yatex.org/) → Windows の Emacs で C-c ' を入力してもエラー行にジャンプしないなどの問題が発生する場合は [Org mode](</Emacs/Org mode/>) または [TeX mode](</Emacs/TeX mode/>) または [AUCTeX](/AUCTeX/) を使用する {#o2c95a66}
+## [YaTeX](https://www.yatex.org/) {#o2c95a66}
 
 <img src="https://www.yatex.org/yalogo.gif" alt="YaTeX" style="float:right">
 
@@ -28,8 +28,6 @@ YaTeX（野鳥）は Emacs の TeX モードです．
 ### リリース情報 {#w889e1b2}
 
 [yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．<br>
-
-Emacs 24.4 以降を使用している場合は YaTeX 1.78 以降を使用してください．<br>
 
 ### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
 
@@ -59,70 +57,27 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-<!-- **YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができない → yatexprc.el を修正する [#vf49c2d2] -->
-<!--  -->
-<!-- YaTeX 1.77.7 で C-c C-g を入力して SumatraPDF で forward search をしようとすると Not enough arguments for format string と表示されて forward search ができません．~ -->
-<!-- yatexprc.el を修正します．~ -->
-<!-- yatexprc.el の -->
-<!-- 		  ((string-match "sumatra" previewer)	;;?? -->
-<!-- の次の行の -->
-<!-- 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d %s" -->
-<!-- を以下のように修正します．~ -->
-<!-- 		   (format "%s \"%s.pdf\" -forward-search \"%s\" %d" -->
-<!--  -->
-<!-- **YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができない → yatexprc.el を修正する [#ka79bca3] -->
-<!--  -->
-<!-- YaTeX 1.77.7 で C-c C-g を入力して qpdfview で forward search をしようとすると Could not match file type of '#src:hoge.tex:行番号:0' ! と表示されて forward search ができません．~ -->
-<!-- yatexprc.el を修正します．~ -->
-<!-- yatexprc.el の -->
-<!-- 		  ((string-match "qpdfview" previewer)	;;?? -->
-<!-- の次の行の -->
-<!-- 		   (format "%s '%s.pdf' '#src:%s:%d:0'" -->
-<!-- を以下のように修正します．~ -->
-<!-- 		   (format "%s '%s.pdf#src:%s:%d:0'" -->
-<!--  -->
-<!-- **YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができない → yatexprc.el を修正する [#l5f1c74e] -->
-<!--  -->
-<!-- YaTeX 1.77.7 で C-c C-g を入力して Okular で forward search をしようとすると forward search ができません．~ -->
-<!-- yatexprc.el を修正します．~ -->
-<!-- yatexprc.el の -->
-<!-- 		  ((string-match "okular" previewer)	;;? -->
-<!-- の次の行の -->
-<!-- 		   (format "%s '%s.pdf' '#src:%d' '%s'" -->
-<!-- 			   previewer bnr line cf))))) -->
-<!-- を以下のように修正します．~ -->
-<!-- 		   (format "%s '%s.pdf#src:%d %s/%s'" -->
-<!-- 			   previewer bnr line pdir cf))))) -->
+### YaTeX 1.78.2 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
 
-### YaTeX 1.78, 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしない → [AUCTeX](/AUCTeX/) を使用する {#w3a7f06f}
-
-YaTeX 1.78, 1.77, 1.76 で Windows の Emacs で C-c ' を入力してもエラー行にジャンプしません．<br>
-Linux の Emacs や YaTeX 1.75, 1.74 では C-c ' を入力するとエラー行にジャンプします．<br>
-エラー行にジャンプしたい場合は [AUCTeX](/AUCTeX/) を使用してください．<br>
-どうしても YaTeX でエラー行にジャンプしたい場合は
-&#x7e;/.emacs.d/init.el に
+YaTeX 1.78.2 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
+Okular は TeX ファイルをフルパスで指定しないと forward search ができません．<br>
+yatexprc.el を修正します．<br>
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-  (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
+--- yatexprc.el.org	2014-12-29 11:29:13.059719136 +0900
++++ yatexprc.el	2014-12-29 11:41:52.891469727 +0900
+@@ -877,9 +877,9 @@
+ 			   ;;Send patch to the author, please
+ 		  	   previewer bnr cf line))
+ 		  ((string-match "okular" previewer)	;;??
+-		   (format "%s '%s.pdf#src:%d' '%s'"
++		   (format "%s '%s.pdf#src:%d %s'"
+ 			   ;;Send patch to the author, please
+-		  	   previewer bnr line cf))
++		  	   previewer bnr line (expand-file-name cf)))
+ 		  )))
+ 	(YaTeX-system cmd "jump-line" 'noask pdir)))))
 ```
-
-を設定して texmf.cnf に
-
-```
-TEXEDIT = emacsclientw --no-wait +%d "%s"
-```
-
-を設定 (emacsclientw.exe の存在するディレクトリに PATH を設定していない場合はフルパスで指定) して Emacs を起動して
-
-```
-M-x server-start
-```
-
-を実行します．<br>
-
-タイプセットしてエラーが発生したときに e を入力して Enter を押すとエラー行にジャンプできます．<br>
 
 ## ダウンロード {#g0fb682c}
 
@@ -132,6 +87,8 @@ M-x server-start
 ## インストール {#b2ec65b9}
 
 ### Windows {#n699538a}
+
+Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．<br>
 
 64-bit Windows の場合は<br>
 [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
@@ -191,20 +148,20 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c pdflatex -synctex=1")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c lualatex -synctex=1")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c luajitlatex -synctex=1")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c xelatex -synctex=1")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %O %S %D/\" -norc -gg -pdfps")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
-;(setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
-(setq bibtex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-(setq makeindex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+;(setq tex-command "pdflatex -synctex=1")
+;(setq tex-command "lualatex -synctex=1")
+;(setq tex-command "luajitlatex -synctex=1")
+;(setq tex-command "xelatex -synctex=1")
+;(setq tex-command "latexmk")
+;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %O %S %D/\" -norc -gg -pdfps")
+;(setq tex-command "latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+;(setq tex-command "latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+(setq bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq makeindex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
 (setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ;(setq dvi2-command "texworks")
 ;(setq dvi2-command "texstudio --pdf-viewer-only")
@@ -288,7 +245,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td></td><td>C-c C-g または C-c s または M-x sumatrapdf-forward-search RET</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
 > </table>
@@ -912,55 +869,45 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+    (setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
   (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
 ```
 
 #### pdfLaTeX {#haa09a91}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c pdflatex -synctex=1")
-  (setq tex-command "pdflatex -synctex=1"))
+(setq tex-command "pdflatex -synctex=1")
 ```
 
 #### LuaLaTeX {#r2c74452}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c lualatex -synctex=1")
-  (setq tex-command "lualatex -synctex=1"))
+(setq tex-command "lualatex -synctex=1")
 ```
 
 #### LuaJITLaTeX {#kfa37927}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c luajitlatex -synctex=1")
-  (setq tex-command "luajitlatex -synctex=1"))
+(setq tex-command "luajitlatex -synctex=1")
 ```
 
 #### XeLaTeX {#h279d9b8}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c xelatex -synctex=1")
-  (setq tex-command "xelatex -synctex=1"))
+(setq tex-command "xelatex -synctex=1")
 ```
 
 #### Latexmk {#me8a1b75}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk")
-  (setq tex-command "latexmk"))
+(setq tex-command "latexmk")
 ```
 
 #### Latexmk-pdfupLaTeX {#bc88da07}
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+    (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
   (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
@@ -968,7 +915,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %O %S %D/\" -norc -gg -pdfps")
+    (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/mendex %O -U -o %D %S/\" -e \"$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %O %S %D/\" -norc -gg -pdfps")
   (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps"))
 ```
 
@@ -976,7 +923,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+    (setq tex-command "latexmk -e \"$pdflatex=q/pdflatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
   (setq tex-command "latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
 ```
 
@@ -984,7 +931,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+    (setq tex-command "latexmk -e \"$pdflatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
   (setq tex-command "latexmk -e '$pdflatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
 ```
 
@@ -992,7 +939,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+    (setq tex-command "latexmk -e \"$pdflatex=q/luajitlatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
   (setq tex-command "latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
 ```
 
@@ -1000,7 +947,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "rundll32 shell32,ShellExec_RunDLL cmd /c latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
+    (setq tex-command "latexmk -e \"$pdflatex=q/xelatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex %O -o %D %S/\" -norc -gg -pdf")
   (setq tex-command "latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf"))
 ```
 
@@ -1367,7 +1314,7 @@ off の場合
 
 ### SumatraPDF との連携 (forward search) {#ra95ecfb}
 
-#### SumatraPDF を前面に表示したい場合 {#x4a4f83a}
+#### SumatraPDF を前面に表示したい場合 → YaTeX 1.78.1 以降は SumatraPDF の forward search に対応しています {#x4a4f83a}
 
 ```
 (defun sumatrapdf-forward-search ()
@@ -1433,6 +1380,16 @@ fwdsumatrapdf での forward search は C-c f または M-x fwdsumatrapdf-forwar
 
 ### Skim との連携 (forward search) → YaTeX 1.78 以降は Skim の forward search に対応しています {#f978a43b}
 
+YaTeX 1.78 以降は
+
+```
+(setq YaTeX-inhibit-prefix-letter t)
+(setq dvi2-command "/usr/bin/open -a Skim")
+(setq tex-pdfview-command "/usr/bin/open -a Skim")
+```
+
+を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．<br>
+
 ```
 (defun skim-forward-search ()
   (interactive)
@@ -1467,6 +1424,16 @@ displayline での forward search は C-c s または M-x skim-forward-search RE
 - [https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el](https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el)
 
 ### Evince との連携 (forward search) → YaTeX 1.78 以降は Evince の forward search に対応しています {#h118b5e5}
+
+YaTeX 1.78 以降は Evince/fwdevince の fwdevince をインストールして
+
+```
+(setq YaTeX-inhibit-prefix-letter t)
+(setq dvi2-command "evince")
+(setq tex-pdfview-command "evince")
+```
+
+を設定して C-c C-g を入力すれば Evince で forward seasrch ができます．<br>
 
 ```
 (defun evince-forward-search ()
@@ -1565,7 +1532,7 @@ okular での forward search は C-c o または M-x okular-forward-search RET �
 
 zathura での forward search は C-c z または M-x zathura-forward-search RET をタイプします．
 
-### qpdfview との連携 (forward search) {#ic7abdb4}
+### qpdfview との連携 (forward search) → YaTeX 1.78.1 以降は qpdfview の forward search に対応しています {#ic7abdb4}
 
 ```
 (defun qpdfview-forward-search ()
