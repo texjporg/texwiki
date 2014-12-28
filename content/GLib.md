@@ -50,9 +50,9 @@ $ popd
 - Install [gettext](http://www.gnu.org/software/gettext/).
 
 ```
-$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.19.3.tar.xz
-$ tar xvf gettext-0.19.3.tar.xz
-$ pushd gettext-0.19.3
+$ curl -R -L -O http://ftp.jaist.ac.jp/pub/GNU/gettext/gettext-0.19.4.tar.xz
+$ tar xvf gettext-0.19.4.tar.xz
+$ pushd gettext-0.19.4
 $ ./configure --prefix=/mingw
 ```
 
