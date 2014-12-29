@@ -20,7 +20,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 359 註10 ラテンアルファベットによる対応づけによる入力（ASCII 翻字入力）では inputenc 指定は不要です。
 
-- p. 359 註12 「pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による [upTeX](/upTeX,upLaTeX/) は TeX Live 2012 以降で使用可能です。
+- p. 359 註12 「pTeX-Unicode」— [ttk (TANAKA, Takuji) さん](http://www.t-lab.opal.ne.jp/tex/)による [upTeX](/upTeX,upLaTeX/) は TeX Live 2012 以降で使用可能です。
 
 - p. 360 下から13&ndash;10行目「ギユメ」→「ギュメ」（稲垣）—「ギユメ」「ギュメ」どちらの表現も使われているようです。（栗山補記）
 
