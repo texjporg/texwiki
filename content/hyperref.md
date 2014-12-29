@@ -159,7 +159,7 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場�
 ```
 
 補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex/UTF8-UTF16?view=markup) を使用します．<br>
-[TeX memo - upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．<br>
+[TeX memo - upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．<br>
 TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場合は UTF8-UTF16 はインストール済みです．<br>
 
 ```
