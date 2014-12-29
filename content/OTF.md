@@ -39,7 +39,7 @@ pukiwiki: "OTF"
 ### ChangeLog {#k32bef0c}
 
 - [変更履歴](http://psitau.kitunebi.com/otf.html)
-- [主な更新箇所](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 
 を参照．<br>
 
