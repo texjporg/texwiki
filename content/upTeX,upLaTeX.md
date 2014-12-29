@@ -13,7 +13,7 @@ pukiwiki: "upTeX,upLaTeX"
 
 ## upTeX, upLaTeXとは {#ge195750}
 
-[upTeX, upLaTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版。<br>
+[upTeX, upLaTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版。<br>
 pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
 upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
 また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
@@ -26,12 +26,12 @@ upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして
     - 日本語字種の拡張
     - CJK(日中韓)各言語の混植
     - 欧文 TeX の Unicode 入力、babel との親和性向上
-- [http://homepage3.nifty.com/ttk/comp/tex/01uptex_doc_utf8.txt](http://homepage3.nifty.com/ttk/comp/tex/01uptex_doc_utf8.txt)
+- [http://www.t-lab.opal.ne.jp/tex/01uptex_doc_utf8.txt](http://www.t-lab.opal.ne.jp/tex/01uptex_doc_utf8.txt)
 - [http://tug.org/tug2013/slides/TUG2013_upTeX.pdf](http://tug.org/tug2013/slides/TUG2013_upTeX.pdf)
 
 ### ChangeLog {#le7df259}
 
-- [主な更新箇所](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 
 を参照．<br>
 
@@ -376,7 +376,7 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 
 ## 関連リンク {#of92a3e9}
 
-- [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+- [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - [「upTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=upTeX)
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
