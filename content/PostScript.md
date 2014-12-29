@@ -48,6 +48,6 @@ Ghostscript は PostScript/PDF インタープリタ (ソフトウェア RIP) �
 
 - [sudoku.ps](https://gist.github.com/naohaq/5161653)
 - [「PostScript」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=PostScript)
-- [convbkmk.rb](http://homepage3.nifty.com/ttk/comp/tex/uptex.html) dvips で出力した PostScript ファイルを PDF ファイルに変換するときに日本語のしおりの文字化けを防止するためのスクリプト
+- [convbkmk.rb](http://www.t-lab.opal.ne.jp/tex/uptex.html) dvips で出力した PostScript ファイルを PDF ファイルに変換するときに日本語のしおりの文字化けを防止するためのスクリプト
 - [PDF bookmark.py - a python script embed bookmark to PDF](https://github.com/turky/pdf-bookmark) 既存のPDFファイルに後から目次を埋め込むためのツール
 - [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
