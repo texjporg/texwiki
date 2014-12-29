@@ -415,16 +415,16 @@ gs\gs$(rungs --version)\Resource\CMap\ に入っています。主なものを�
 - H
 - V
     <!-- -JISX0213-2004-H -->
-    <!-- ［[[ttk (TANAKA, Takuji) さん:http://homepage3.nifty.com/ttk/comp/tex/]]の -->
+    <!-- ［[[ttk (TANAKA, Takuji) さん:http://www.t-lab.opal.ne.jp/tex/]]の -->
     <!-- ウェブサイト -->
-    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://homepage3.nifty.com/ttk/comp/tex/jisx0213.html]]」に -->
-    <!-- ある&ref(http://homepage3.nifty.com/ttk/comp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
+    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://www.t-lab.opal.ne.jp/tex/jisx0213.html]]」に -->
+    <!-- ある&ref(http://www.t-lab.opal.ne.jp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
     <!-- 中から入手できる。］ -->
     <!-- -JISX0213-2004-V -->
-    <!-- ［[[ttk (TANAKA, Takuji) さん:http://homepage3.nifty.com/ttk/comp/tex/]]の -->
+    <!-- ［[[ttk (TANAKA, Takuji) さん:http://www.t-lab.opal.ne.jp/tex/]]の -->
     <!-- ウェブサイト -->
-    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://homepage3.nifty.com/ttk/comp/tex/jisx0213.html]]」に -->
-    <!-- ある&ref(http://homepage3.nifty.com/ttk/comp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
+    <!-- 「[[TeX memo&mdash;jisx0212 &amp; jisx0213:http://www.t-lab.opal.ne.jp/tex/jisx0213.html]]」に -->
+    <!-- ある&ref(http://www.t-lab.opal.ne.jp/tex/jishojo_004.tar.gz,JIS X 0212 （JIS補助漢字）対応 jishojo パッケージ);の -->
     <!-- 中から入手できる。］ -->
 
 - UniJIS-UTF16-H
