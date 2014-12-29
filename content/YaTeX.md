@@ -1325,7 +1325,17 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 okular での forward search は C-c o または M-x okular-forward-search RET をタイプします．
 
-### zathura との連携 (forward search) {#j4034f6b}
+### zathura との連携 (forward and inverse search) {#j4034f6b}
+
+```
+(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-dvi2-command-ext-alist
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+(setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+(setq tex-pdfview-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
+```
+
+を設定します．<br>
 
 ```
 (defun zathura-forward-search ()
@@ -1354,7 +1364,7 @@ okular での forward search は C-c o または M-x okular-forward-search RET �
              (define-key YaTeX-mode-map (kbd "C-c z") 'zathura-forward-search)))
 ```
 
-zathura での forward search は C-c z または M-x zathura-forward-search RET をタイプします．
+zathura での forward search は C-c C-t p で zathura を起動させた状態で C-c z または M-x zathura-forward-search RET をタイプします．
 
 ### qpdfview との連携 (forward search) → YaTeX 1.78.1 以降は qpdfview の forward search に対応しています {#ic7abdb4}
 
