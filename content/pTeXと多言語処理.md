@@ -75,8 +75,8 @@ ASCII 翻字入力についての詳細は
 中にはそれぞれの外国語を input method で直接入力して多言語混在 Unicode 文書を
 作成し，これを TeX で処理したいという方もいらっしゃるでしょう。<br>
 現在では
-[ttk (TANAKA, Takuji) さん](http://homepage3.nifty.com/ttk/comp/tex/)による
-[upTeX](http://homepage3.nifty.com/ttk/comp/tex/uptex.html)
+[ttk (TANAKA, Takuji) さん](http://www.t-lab.opal.ne.jp/tex/)による
+[upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 が
 [TeX Live](</TeX Live/>) と
 [W32TeX](/W32TeX/) で
