@@ -55,6 +55,7 @@ Go は汎用プログラミング言語です．<br>
 - [golang で複数のエラーをハンドリングする方法](http://mattn.kaoriya.net/software/lang/go/20140416212413.htm)
 - [Go言語でエラーを書くときに気をつけること](http://d.hatena.ne.jp/taknb2nch/20140307/1394169432)
 - [http://welovy.hatenablog.com/category/Go](http://welovy.hatenablog.com/category/Go)
+- [goでWin 64/32ビット、両方のバイナリをビルドできるようにするには](http://ja.stackoverflow.com/questions/2555/go%E3%81%A7win-64-32%E3%83%93%E3%83%83%E3%83%88-%E4%B8%A1%E6%96%B9%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF)
 
 ## Installation {#v5dc7237}
 
