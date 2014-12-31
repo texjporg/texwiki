@@ -57,9 +57,9 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.78.2 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
+### YaTeX 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
 
-YaTeX 1.78.2 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
+YaTeX 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
 Okular は TeX ファイルをフルパスで指定しないと forward search ができません．<br>
 yatexprc.el を修正します．<br>
 
