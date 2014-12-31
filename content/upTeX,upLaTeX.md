@@ -28,6 +28,7 @@ upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして
     - 欧文 TeX の Unicode 入力、babel との親和性向上
 - [http://www.t-lab.opal.ne.jp/tex/01uptex_doc_utf8.txt](http://www.t-lab.opal.ne.jp/tex/01uptex_doc_utf8.txt)
 - [http://tug.org/tug2013/slides/TUG2013_upTeX.pdf](http://tug.org/tug2013/slides/TUG2013_upTeX.pdf)
+- [upTeX — Unicode version of pTeX with CJK extensions](https://www.tug.org/TUGboat/tb34-3/tb108tanaka.pdf), [TUGboat 34:3](https://www.tug.org/TUGboat/Contents/contents34-3.html)
 
 ### ChangeLog {#le7df259}
 
