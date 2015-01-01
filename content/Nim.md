@@ -16,3 +16,4 @@ pukiwiki: "Nim"
 - [http://nim-lang.org/](http://nim-lang.org/)
 - [https://github.com/nim-lang](https://github.com/nim-lang)
 - [https://github.com/Araq](https://github.com/Araq)
+- [https://github.com/Araq/Nim](https://github.com/Araq/Nim)
