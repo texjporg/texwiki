@@ -35,8 +35,6 @@ YaTeX（野鳥）は Emacs の TeX モードです．
     - [コミットログ](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/shortlog/)
     - [変更点](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/file/tip/yatex.new)
     - [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
-- [https://github.com/emacsmirror/yatex](https://github.com/emacsmirror/yatex)
-    - [コミットログ](https://github.com/emacsmirror/yatex/commits/)
 - [http://twilog.org/hiroseyuuji/search?word=YaTeX](http://twilog.org/hiroseyuuji/search?word=YaTeX)
 - [http://twilog.org/ryseto/search?word=YaTeX](http://twilog.org/ryseto/search?word=YaTeX)
 
