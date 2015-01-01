@@ -110,6 +110,8 @@ let g:latex_view_general_viewer = 'texworks'
 
 ### OS X {#qb1b9436}
 
+- [LaTeX-suite じゃない vim-latex を使ってvimによるLaTeX作成環境を整える](http://mmi.hatenablog.com/entry/2015/01/02/003517)
+
 ***
 
 ```
