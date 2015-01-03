@@ -27,32 +27,22 @@ MIT License
 
 - [https://github.com/lervag/vim-latex/commits/master](https://github.com/lervag/vim-latex/commits/master)
 
-## 不具合 {#s52eaaa5}
-
-### let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示される → view.vim の let outfile = g:latex#data\[b:latex.id\].out() を let outfile = fnamemodify(g:latex#data\[b:latex.id\].base, ":p:r") . '.pdf' に修正する {#x9b144a5}
-
-let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示されます．<br>
-g:latex_latexmk_output の設定が outfile の拡張子に反映されてしまうのが原因です．<br>
-
-view.vim の
-
-```
-let outfile = g:latex#data[b:latex.id].out()
-```
-
-をコメントアウトして
-
-```
-"let outfile = g:latex#data[b:latex.id].out()
-```
-
-次の行に
-
-```
-let outfile = fnamemodify(g:latex#data[b:latex.id].base, ":p:r") . '.pdf'
-```
-
-を追加します．<br>
+<!-- *不具合 [#s52eaaa5] -->
+<!--  -->
+<!-- **let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示される → 2015/1/1 以降の vim-latex に更新する [#x9b144a5] -->
+<!--  -->
+<!-- COLOR(red):2015/1/1の更新によりこの不具合は解決されました~ -->
+<!--  -->
+<!-- let g:latex_latexmk_output = 'pdfdvi' を設定して \lv でプレビューしようとすると Can't view: Output file is not readable! と表示されます．~ -->
+<!-- g:latex_latexmk_output の設定が outfile の拡張子に反映されてしまうのが原因です．~ -->
+<!--  -->
+<!-- view.vim の -->
+<!-- let outfile = g:latex#data[b:latex.id].out() -->
+<!-- をコメントアウトして -->
+<!-- "let outfile = g:latex#data[b:latex.id].out() -->
+<!-- 次の行に -->
+<!-- let outfile = fnamemodify(g:latex#data[b:latex.id].base, ":p:r") . '.pdf' -->
+<!-- を追加します．~ -->
 
 ## 設定 {#i0954e9c}
 
@@ -90,6 +80,8 @@ let exe.cmd = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF ' . g:latex_view_sum
 
 に修正します．<br>
 
+COLOR(red):2015/1/1の変更により g:latex_latexmk_output は廃止となり g:latex_latexmk_optionsにlatexmkのオプションを記述するようになりました．
+
 ***
 
 ```
@@ -98,9 +90,9 @@ let exe.cmd = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF ' . g:latex_view_sum
 ""
 let g:latex_latexmk_continuous = 1
 let g:latex_latexmk_background = 1
-"let g:latex_latexmk_output = 'pdf'
-let g:latex_latexmk_output = 'pdfdvi'
-"let g:latex_latexmk_output = 'pdfps'
+"let g:latex_latexmk_options = '-pdf'
+let g:latex_latexmk_options = '-pdfdvi'
+"let g:latex_latexmk_options = '-pdfps'
 let g:latex_view_method = 'sumatrapdf'
 let g:latex_view_sumatrapdf_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
 let g:latex_view_general_viewer = 'texworks'
@@ -120,9 +112,9 @@ let g:latex_view_general_viewer = 'texworks'
 ""
 let g:latex_latexmk_continuous = 1
 let g:latex_latexmk_background = 1
-"let g:latex_latexmk_output = 'pdf'
-let g:latex_latexmk_output = 'pdfdvi'
-"let g:latex_latexmk_output = 'pdfps'
+"let g:latex_latexmk_options = '-pdf'
+let g:latex_latexmk_options = '-pdfdvi'
+"let g:latex_latexmk_options = '-pdfps'
 let g:latex_view_general_viewer = 'open'
 ```
 
@@ -138,9 +130,9 @@ let g:latex_view_general_viewer = 'open'
 ""
 let g:latex_latexmk_continuous = 1
 let g:latex_latexmk_background = 1
-"let g:latex_latexmk_output = 'pdf'
-let g:latex_latexmk_output = 'pdfdvi'
-"let g:latex_latexmk_output = 'pdfps'
+"let g:latex_latexmk_options = '-pdf'
+let g:latex_latexmk_options = '-pdfdvi'
+"let g:latex_latexmk_options = '-pdfps'
 let g:latex_view_method = 'mupdf'
 let g:latex_view_general_viewer = 'xdg-open'
 ```
