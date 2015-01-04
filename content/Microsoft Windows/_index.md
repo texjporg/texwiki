@@ -18,16 +18,12 @@ pukiwiki: "Microsoft Windows"
 
 - [Windows ライフサイクルのファクト シート - Windows ヘルプ](http://windows.microsoft.com/ja-jp/windows/lifecycle)
 
-### お知らせ {#ya6914d3}
+### Desktop Operating System Market Share {#zf1b1e52}
 
-Windows XP のサポートは終了しました．<br>
-
-- [Windows XP、Office 2003 サポート終了の重要なお知らせ | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos.aspx)
-- [Windows XP/Office 2003 サポート終了のお知らせ - Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/consumer/default.aspx)
-- [サポート終了に関するよくあるご質問 | Microsoft](http://www.microsoft.com/ja-jp/windows/lifecycle/xp_eos/faq.aspx)
-- [Windows XP のサポートは終了しました - Microsoft Windows](http://windows.microsoft.com/ja-jp/windows/end-support-help)
-- [Windows XP - Microsoft Windows](http://www.microsoft.com/windows/ja-jp/xp/)
 - [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=10&qpcustomd=0)
+
+### Desktop Top Operating System Share Trend {#q5f4996d}
+
 - [http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0](http://www.netmarketshare.com/operating-system-market-share.aspx?qprid=11&qpcustomb=0)
 
 ## Windows Update {#k1690f5c}
