@@ -61,14 +61,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-- [http://qt-project.org/downloads](http://qt-project.org/downloads) から Qt 5 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の Qt 関連バイナリが存在する bin フォルダー (qmake.exe や moc.exe のあるフォルダー) に PATH を通します．
-    <!-- - -[[Qt 5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
-
 <!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
-
-- [Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
-
-- [CMake - Cross Platform Make](http://www.cmake.org/cmake/resources/software.html) から Binary distributions の Windows ZIP File をダウンロードして展開し，bin フォルダー (cmake.exe のあるフォルダー) に PATH を通します．
 
 - [GTK+ Download: Windows (32-bit)](http://www.gtk.org/download/win32.php) から
 
@@ -89,6 +82,8 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
     - pkg-config.exe
 
 を C:\MinGW\bin にコピーします．
+
+- Install [Qt](/Qt/).
 
 - Install [Python](/Python/).
 
@@ -210,9 +205,9 @@ CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用で�
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.29.0.tar.xz
-$ tar xvf poppler-0.29.0.tar.xz
-$ pushd poppler-0.29.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.30.0.tar.xz
+$ tar xvf poppler-0.30.0.tar.xz
+$ pushd poppler-0.30.0
 ```
 
 ***
