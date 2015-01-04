@@ -22,7 +22,7 @@ pukiwiki: "Qt"
 ### Download {#ud83434e}
 
 - [http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/)
-- [http://download.qt-project.org/archive/qt/](http://download.qt-project.org/archive/qt/)
+- [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/)
 
 ### Supported Platforms {#p35925a9}
 
@@ -35,3 +35,10 @@ pukiwiki: "Qt"
 ### Language Bindings {#fa8c1a37}
 
 [http://qt-project.org/wiki/Category:LanguageBindings](http://qt-project.org/wiki/Category:LanguageBindings)
+
+## Installation {#z45b02a6}
+
+### MinGW-W64 {#u6922425}
+
+- [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/) から Qt 5 の mingw バイナリをダウンロードしてインストールします．インストールした Qt の Qt 関連バイナリが存在する bin フォルダー (qmake.exe や moc.exe のあるフォルダー) に PATH を通します．
+    <!-- - -[[Qt 5 の mingwバイナリ:http://sourceforge.net/projects/mingwbuilds/files/external-binary-packages/Qt-Builds/]] -->
