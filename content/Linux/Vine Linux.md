@@ -91,10 +91,6 @@ $ sudo apt-get install evince
 $ sudo apt-get install okular
 ```
 
-## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#p1d90d24}
-
-Adobe Reader XI は Wine 上でも動作します．<br>
-
 ## [LyX](/LyX/) {#f3133664}
 
 - [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
