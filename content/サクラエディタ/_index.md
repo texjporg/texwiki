@@ -282,12 +282,6 @@ bregonig.dll Ver.3.06 with Onigmo 5.15.0
 
 ### 正規表現を使った色分け {#qadc6790}
 
-- [$と$の色分けを正規表現で](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?tree=r7172)
-    (桜でtex さん, ds14050 さん, a さん)
-
-- [サクラエディタでの色分け](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1236918647)
-    (angel_o_f_hell さん, pa10user さん)
-
 次のうちのどちらかを実行します．
 
 - タイプ別設定一覧から TeX を選択し，設定変更
