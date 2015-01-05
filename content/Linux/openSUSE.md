@@ -79,7 +79,7 @@ $ sudo zypper install okular
 
 Adobe Reader XI は Wine 上でも動作します．<br>
 
-- [http://en.opensuse.org/Adobe_Reader](http://en.opensuse.org/Adobe_Reader)
+- [https://en.opensuse.org/Adobe_Reader](https://en.opensuse.org/Adobe_Reader)
 
 ## [LyX](/LyX/) {#uad65708}
 
