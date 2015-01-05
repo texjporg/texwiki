@@ -140,8 +140,6 @@ $ sudo apt-get install mupdf mupdf-tools
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine <a id="adobereader"></a> {#o1495f80}
 
-[Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
-Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
 ### Debian GNU/Linux sid x86_64 (amd64) での [Adobe Reader](</Adobe Reader/>) のインストール {#p857c294}
