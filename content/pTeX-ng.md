@@ -85,6 +85,7 @@ W32TeX には pTeX-ng が含まれています．<br>
 
 ## 関連リンク {#re1f2eda}
 
+- [http://twilog.org/clerk_ma/search?word=pTeX-ng](http://twilog.org/clerk_ma/search?word=pTeX-ng)
 - [「pTeX-ng」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=pTeX-ng)
 - [ptex-ngとtlptexlive](http://www.preining.info/blog/2014/12/ptex-ng-tlptexlive/)
 - [ptex-ng - tlptexlive バイナリ](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1451)
