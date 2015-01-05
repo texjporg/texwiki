@@ -149,27 +149,6 @@ RHEL/CentOS/SL 7.0 の Okular は Okular 0.16.5 です．<br>
 $ sudo yum install okular
 ```
 
-## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#eb6955fb}
-
-Adobe Reader XI は Wine 上でも動作します．<br>
-
-<!-- $ sudo rpm -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-2.noarch.rpm -->
-<!-- $ sudo yum install wine -->
-<!-- $ sudo yum install cabextract -->
-<!-- $ wget http://winetricks.org/winetricks -->
-<!-- $ chmod +x winetricks -->
-<!-- $ sudo cp -p winetricks /usr/local/bin -->
-<!-- $ winetricks -q mspatcha -->
-<!-- $ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.10/ja_JP/AdbeRdr11010_ja_JP.exe -->
-<!-- $ wine AdbeRdr11010_ja_JP.exe -->
-
-<!-- -[[CentOS 6.xにAdobe Readerインストール設定（yum）:http://boota.mydns.jp/blog/?p=2028]] -->
-<!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
-<!--  -->
-<!-- $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm -->
-<!-- $ sudo rpm - -import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux -->
-<!-- $ sudo yum install nspluginwrapper.i686 AdobeReader_enu -->
-
 ## [TeXstudio](/TeXstudio/) {#d3954fd9}
 
 TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．<br>
