@@ -45,21 +45,7 @@ VineSeed は Vine Linux の開発版です．<br>
 $ sudo apt-get install task-texlive-full
 ```
 
-VineSeed (Vine Linux 7) の TeX Live は TeX Live 2014/Vine Linux です．<br>
-
-```
-$ uplatex -v
-e-upTeX 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014/Vine Linux)
-kpathsea version 6.2.0
-ptexenc version 1.3.2
-Copyright 2014 D.E. Knuth.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the e-upTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the e-upTeX source.
-Primary author of e-upTeX: Peter Breitenlohner.
-```
+VineSeed (Vine Linux 7) の TeX Live は TeX Live 2015/Vine Linux です．<br>
 
 ## [Python](/Python/) {#vedf0458}
 
