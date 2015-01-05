@@ -69,8 +69,10 @@ Windows
 
 ## ダウンロード {#p4ea6725}
 
-- [http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/](ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/)
+- [http://jaist.dl.sourceforge.net/project/sakura-editor/](http://jaist.dl.sourceforge.net/project/sakura-editor/)
+    <!-- -http://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/ -->
+    <!-- -ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/ -->
+
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
 - [http://sourceforge.net/projects/sakura-editor/files/](http://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
