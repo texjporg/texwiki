@@ -57,6 +57,7 @@ Windows
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
 - [log](http://sourceforge.net/p/sakura-editor/code/log/)
+- [http://sourceforge.net/p/sakura-editor/activity/](http://sourceforge.net/p/sakura-editor/activity/)
 
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
