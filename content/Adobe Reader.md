@@ -36,9 +36,7 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](
 
 ### お知らせ {#xa82989b}
 
-[Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
-Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
-Adobe Reader XI は Wine 上でも動作します．<br>
+[Acrobat 旧バージョンをお使いのお客様へ](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)
 
 ## 注意点 {#t3ac3069}
 
@@ -60,7 +58,7 @@ Adobe Reader XI は Wine 上でも動作します．<br>
 
 ## 不具合 {#r92dd454}
 
-### Windows 版 Adobe Reader XI, Adobe Reader X で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
+### Windows 版 Adobe Reader XI で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
 
 - [日本語入力ができない。【Adobe Reader X・XI 】  | ゆりかご倶楽部Ｑ＆Ａ：よくある質問と回答](http://www.yurikago.net/qa/cate3-38.html)
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://helpx.adobe.com/jp/acrobat/kb/cpsid_90899.html)
