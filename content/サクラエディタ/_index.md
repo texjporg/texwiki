@@ -434,7 +434,7 @@ TeX のアウトライン解析機能があります．
 　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　 (●) 標準ルール(B)<br>
 　　　　　　折り返し桁数(R)　<ins>10240　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　　　文字の間隔(C)　　<ins>0　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
-　　　　　　　　行の間隔(L)　　<ins>1　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
+　　　　　　　　行の間隔(L)　　<ins>2　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
 　　　　　　　　　　TAB幅(T)　　<ins>4　　　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　 タイプ別フォント<br>
 　　　　　 TAB表示　<span style="color:Black;background-color:#EEEEEE;">\[文字指定　　<strong>ᐯ</strong>\]</span>　<ins>^       </ins>　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;">☐使用する(G)</span><br>
 　　　　　　　　　　　　　　　　　☐SPACEの挿入　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　フォント(F)...　　　\]</span><br>
