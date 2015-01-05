@@ -17,7 +17,7 @@ pukiwiki: "Linux/Fedora"
 
 ## Fedora とは {#q5c4d3a4}
 
-Fedora は日常的な使用に適した，軽快・安定・高機能な Linux ベースのオペレーティングシステムです．<br>
+Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ベースのオペレーティングシステムです．<br>
 
 - [Fedora](https://getfedora.org/)
 - [https://copr.fedoraproject.org/](https://copr.fedoraproject.org/)
@@ -41,9 +41,10 @@ Fedora は日常的な使用に適した，軽快・安定・高機能な Linux 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
 - [Linux](/Linux/#texliveinstall)
+- [https://github.com/haoyun/texlive-dummy](https://github.com/haoyun/texlive-dummy)
 - [https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/) をインストールします．<br>
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は texlive-dummy をインストールします．<br>
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．<br>
 
 ### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
@@ -116,8 +117,6 @@ $ sudo yum install mupdf
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#m85c82f5}
 
-[Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
-Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
 <!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
