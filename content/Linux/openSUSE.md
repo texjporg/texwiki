@@ -75,12 +75,6 @@ $ sudo zypper install evince
 $ sudo zypper install okular
 ```
 
-## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#m8b54511}
-
-Adobe Reader XI は Wine 上でも動作します．<br>
-
-- [https://en.opensuse.org/Adobe_Reader](https://en.opensuse.org/Adobe_Reader)
-
 ## [LyX](/LyX/) {#uad65708}
 
 ```
