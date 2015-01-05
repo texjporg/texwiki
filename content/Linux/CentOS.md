@@ -151,8 +151,6 @@ $ sudo yum install okular
 
 ## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#eb6955fb}
 
-[Adobe Reader 9 のサポートは終了](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)しました．<br>
-Adobe Reader 9 を使用している方は Adobe Reader XI にアップグレードしてください．<br>
 Adobe Reader XI は Wine 上でも動作します．<br>
 
 <!-- $ sudo rpm -ivh http://ftp.jaist.ac.jp/pub/Linux/Fedora/epel/7/x86_64/e/epel-release-7-2.noarch.rpm -->
