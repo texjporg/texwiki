@@ -249,13 +249,13 @@ bregonig.dll Ver.3.06 with Onigmo 5.15.0
 　　置換前(N)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins>　<span style="color:Black;background-color:#EEEEEE;">\[ 　　上検索(U)　　 \]</span><br>
 　　置換後(P)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins>　<span style="color:Black;background-color:#DAEAFF;">\[ 　　下検索(D)　　 \]</span><br>
 　　☐クリップボードから貼り付ける(T)　　　　　　　　　　置換対象　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 該当行マーク(B) \]</span><br>
-　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　 (●) 選択文字(0)<br>
+　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　🔘 選択文字(0)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　◯ 選択始点(1)挿入　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　置換(R)　　　\]</span><br>
 　　☑正規表現(E)　　　　　　　　　　　　　　　　　　　　　 ◯ 選択終点(2)追加　　　　<span style="color:Black;background-color:#EEEEEE;">\[　すべて置換(A)　\]</span><br>
 　　　　bregonig.dll Ver.3.06 with Onigmo 5.15.0<br>
 　　☐「すべて置換」は置換の繰返し(I)　　　　　　　　　　範囲<br>
 　　☑見つからないときにメッセージを表示(M)　　　　　◯ 選択範囲(S)<br>
-　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　(●) ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
+　　☑置換ダイアログを自動的に閉じる(L)　　　　　　　🔘 ファイル全体(O)　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル(X)　\]</span><br>
 　　☐先頭（末尾）から再検索する(Z)　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　　ヘルプ(H)　　 \]</span><br>
 
 ***
@@ -271,11 +271,11 @@ bregonig.dll Ver.3.06 with Onigmo 5.15.0
 　　フォルダ(O)　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> <span style="color:Black;background-color:#EEEEEE;">\[ ... \]</span><br>
 　　<span style="color:#888888;">☐単語単位で探す(W)</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 現フォルダ(U) \]</span><br>
 　　☑サブフォルダからも検索する(E)　　　　　　　　　　　　　　　　　　　結果出力<br>
-　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　 (●) 該当行(L)<br>
+　　☐現在編集中のファイルから検索(Q)　　　　　　　　　　　　　　　　　🔘 該当行(L)<br>
 　　☐英大文字と小文字を区別する(C)　　　　　　　　　　　　　　　　　　◯ 該当部分(P)　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　検索(F)　　\]</span><br>
 　　☑正規表現(E)<br>
 　　　　bregonig.dll Ver.3.06 with Onigmo 5.15.0　　　　　　　　　　　　　　結果出力形式<br>
-　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　 (●) ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
+　　　　文字コードセット(A)　　<span style="color:Black;background-color:#EEEEEE;">\[自動選択　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　🔘 ノーマル(M)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル(X) \]</span><br>
 　　☐フォルダの初期値をカレントフォルダにする(D)　　　　　　　　　　 ◯ ファイル毎（I）　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　ヘルプ(H)　　\]</span><br>
 
 ***
@@ -433,7 +433,7 @@ TeX のアウトライン解析機能があります．
 
 　　　 設定の名前(N)　<ins>TeX</ins>　　　　　　　　　　　　　　　　　　　　ファイル拡張子(X)　<ins>tex,ltx,sty,bib,log,blg,aux,bbl,toc,lof,lot,idx,ind,glo</ins><br>
 　　　　レイアウト　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　アウトライン解析方法<br>
-　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　 (●) 標準ルール(B)<br>
+　　　　折り返し方法(&lt;)　　　<span style="color:Black;background-color:#EEEEEE;">\[指定桁で折り返す　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　🔘 標準ルール(B)<br>
 　　　　　　折り返し桁数(R)　<ins>10240　\[<strong>⇕</strong>\]</ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[TeX　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　　　文字の間隔(C)　　<ins>0　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　 ◯ ルールファイル(F)<br>
 　　　　　　　　行の間隔(L)　　<ins>2　　　\[<strong>⇕</strong>\]</ins> ドット　　　　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　</ins> <span style="color:#888888;">\[ (1)... \]</span><br>
