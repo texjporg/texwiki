@@ -34,7 +34,11 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](
 
 [必要システム構成](http://www.adobe.com/jp/products/reader/tech-specs.html)を参照．<br>
 
-### お知らせ {#xa82989b}
+### Adobe products and technical support periods covered under the new Lifecycle Policy {#zc249f4b}
+
+[Adobe products and technical support periods covered under the new Lifecycle Policy](http://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)
+
+#### お知らせ {#xa82989b}
 
 [Acrobat 旧バージョンをお使いのお客様へ](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)
 
