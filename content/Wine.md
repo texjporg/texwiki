@@ -33,4 +33,3 @@ Wine は Linux, OS X, BSD などの POSIX 準拠な OS 上で Windows アプリ�
 ### Adobe Acrobat Reader DC {#p41e7a77}
 
 - [WineHQ  - Adobe Reader](https://appdb.winehq.org/objectManager.php?sClass=application&iId=3156)
-    - [WineHQ  - Adobe Reader 11.x](https://appdb.winehq.org/objectManager.php?sClass=version&iId=27093)
