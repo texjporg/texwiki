@@ -55,9 +55,9 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
+### YaTeX 1.78.5, 1.78.4, 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
 
-YaTeX 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
+YaTeX 1.78.5, 1.78.4, 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
 Okular は TeX ファイルをフルパスで指定しないと forward search ができません．<br>
 yatexprc.el を修正します．<br>
 
@@ -147,6 +147,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
+;(setq tex-command "platex-ng -synctex=1")
 ;(setq tex-command "pdflatex -synctex=1")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "luajitlatex -synctex=1")
@@ -211,8 +212,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
@@ -285,6 +286,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "/usr/texbin/ptex2pdf -u -l -ot '-synctex=1'")
+;(setq tex-command "/usr/texbin/platex-ng -synctex=1")
 ;(setq tex-command "/usr/texbin/pdflatex -synctex=1")
 ;(setq tex-command "/usr/texbin/lualatex -synctex=1")
 ;(setq tex-command "/usr/texbin/luajitlatex -synctex=1")
@@ -330,8 +332,8 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
@@ -394,6 +396,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
+;(setq tex-command "platex-ng -synctex=1")
 ;(setq tex-command "pdflatex -synctex=1")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "luajitlatex -synctex=1")
@@ -518,8 +521,8 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-pdfupLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-pdfupLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>mendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>qpdfview で forward search</td></tr>
@@ -640,6 +643,7 @@ begin 型補完を使うのを忘れた場合は
 >
 > <table>
 > <tbody>
+> <tr><td>M-x set-variable RET tex-command RET "platex-ng -synctex=1" RET</td><td>platex-ng</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "pdflatex -synctex=1" RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "lualatex -synctex=1" RET</td><td>lualatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "luajitlatex -synctex=1" RET</td><td>luajitlatex</td></tr>
@@ -773,6 +777,12 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
   (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
 ```
 
+#### pLaTeX-ng {#u7f2ca46}
+
+```
+(setq tex-command "platex-ng -synctex=1")
+```
+
 #### pdfLaTeX {#haa09a91}
 
 ```
@@ -797,7 +807,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq tex-command "xelatex -synctex=1")
 ```
 
-#### Latexmk-pdfupLaTeX {#bc88da07}
+#### Latexmk-upLaTeX-pdfdvi {#bc88da07}
 
 ```
 (if (eq system-type 'windows-nt)
@@ -805,7 +815,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
   (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
-#### Latexmk-pdfupLaTeX2 {#od385031}
+#### Latexmk-upLaTeX-pdfps {#od385031}
 
 ```
 (if (eq system-type 'windows-nt)
