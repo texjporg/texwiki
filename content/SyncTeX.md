@@ -24,6 +24,7 @@ SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, e
 
 - [The official SyncTeX page](http://itexmac.sourceforge.net/SyncTeX.html)
 - [http://tex.stackexchange.com/questions/tagged/forward-inverse-search](http://tex.stackexchange.com/questions/tagged/forward-inverse-search)
+- [http://mactex-wiki.tug.org/wiki/index.php/SyncTeX](http://mactex-wiki.tug.org/wiki/index.php/SyncTeX)
 
 ### ChangeLog {#q711590a}
 
