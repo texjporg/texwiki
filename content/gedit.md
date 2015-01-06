@@ -117,7 +117,7 @@ ptex2pdf -u -l -ot '-synctex=1' "$filename"
 Latexmk を使用する場合は
 
 ```
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
 を \[追加(A)\] して設定します．<br>
@@ -243,8 +243,6 @@ Bracket Completion プラグインを使用すると閉じかっこを自動的�
 適用範囲(A): で All Languages から LaTeX に変更します．<br>
 \[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
 \[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) を使用しています．<br>
-Latexmk は Latexmk Version 4.37 以降が必要です．<br>
 
 #### pdfupLaTeX {#x4f1ba2c}
 
@@ -274,6 +272,22 @@ uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
 dvips -Ppdf -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
 convbkmk -u > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
 ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
+#### pLaTeX-ng {#m6f8fa02}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+platex-ng -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -361,7 +375,7 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk-pdfupLaTeX {#t17eb179}
+#### Latexmk-upLaTeX-pdfdvi {#t17eb179}
 
 ***
 
@@ -377,7 +391,7 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk-pdfupLaTeX2 {#p3caf947}
+#### Latexmk-upLaTeX-pdfps {#p3caf947}
 
 ***
 
