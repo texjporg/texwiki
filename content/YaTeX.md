@@ -633,7 +633,13 @@ begin 型補完を使うのを忘れた場合は
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">タイプセット方式</th></tr>
-> <tr><td>M-x set-variable RET tex-command RET "latexmk" RET</td><td>latexmk</td></tr>
+> </tbody>
+> </table>
+>
+> <!-- |M-x set-variable RET tex-command RET "latexmk" RET|latexmk| -->
+>
+> <table>
+> <tbody>
 > <tr><td>M-x set-variable RET tex-command RET "pdflatex -synctex=1" RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "lualatex -synctex=1" RET</td><td>lualatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "luajitlatex -synctex=1" RET</td><td>luajitlatex</td></tr>
