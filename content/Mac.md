@@ -166,7 +166,7 @@ TeX Live のインストールに関しては
 
 <br>
 
-　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に ?.?? GB の領域が必<br>
+　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に 4.62 GB の領域が必<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　要です。<br>
 　　<span style="color:#555555;">●</span> <strong>使用許諾契約</strong><br>
 
@@ -174,7 +174,7 @@ TeX Live のインストールに関しては
 
 　　<span style="color:#555555;">●</span> <strong>インストール先の選択</strong>　　　　　　　　　　　　　　　　　　　　このコンピュータのすべてのユーザが使用できるよう<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　にこのソフトウェアを標準インストールするには、“イ<br>
-　　<span style="color:#9FCFFB;">●</span> <strong>インストールの種類</strong>　　　　　　　　　　　　　　　　　　　　　 ンストール”をクリックしてください。このコンピュー<br>
+　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong>　　　　　　　　　　　　　　　　　　　　　 ンストール”をクリックしてください。このコンピュー<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　タのすべてのユーザがこのソフトウェアを使用出来る<br>
 　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>インストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　ようになります。<br>
 
@@ -222,7 +222,7 @@ Homebrew または MacPorts で Ghostscript をインストールする場合は
 
 <br>
 
-　　<span style="color:#9FCFFB;">●</span> <strong>インストールの種類</strong><br>
+　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong><br>
 
 <br>
 
@@ -548,11 +548,14 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められたケースを中心に -->
 <!-- 参考事例を紹介するのがよろしいかと思います。 -->
 
-[Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
-: 2014-12-22
+[MacTeX 2014 を再インストールしたときの覚書](http://pt-diary.tumblr.com/post/107214765605/20150105-mactex)
+: 2015-01-05
 
 [2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
-: 2014-12-01
+: 2015-01-01
+
+[Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
+: 2014-12-22
 
 [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
 : 2014-09-14
