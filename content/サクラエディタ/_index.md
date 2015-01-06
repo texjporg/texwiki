@@ -10,8 +10,6 @@ pukiwiki: "サクラエディタ"
 
 ## [サクラエディタ](http://sakura-editor.sourceforge.net/) → \[設定(O)\]-\[タイプ別設定(Y)...\]-\[ウィンドウ\] の文字コードで UTF-8 を選択する {#a8762a1e}
 
-<img src="http://yaruhara.moe-nifty.com/photos/uncategorized/2007/10/20/sakuravista_2.png" alt="サクラエディタ" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
