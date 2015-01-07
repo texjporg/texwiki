@@ -268,6 +268,12 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 ```
 ;;
+;; PATH
+;;
+(setenv "PATH"
+        (concat (getenv "PATH") ":/usr/texbin"))
+
+;;
 ;; YaTeX
 ;;
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
