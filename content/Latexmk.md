@@ -157,8 +157,8 @@ latexmk -C
 
 ### リンク {#yb5452a3}
 
-- [ぼくの .latexmkrc](http://kwakita.wordpress.com/2014/04/01/my-latexmkrc-setting/)
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
+- [ぼくの .latexmkrc](http://kwakita.wordpress.com/2014/04/01/my-latexmkrc-setting/)
 - [【質問】日本語環境における文献処理について](http://qiita.com/mr_konn/items/3f523eb6dcf1d9837c92)
 - [https://gist.github.com/konn](https://gist.github.com/konn)
     - [https://gist.github.com/konn/8234466](https://gist.github.com/konn/8234466)
