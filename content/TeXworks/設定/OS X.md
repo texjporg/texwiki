@@ -269,6 +269,33 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
+#### Latexmk-pLaTeX-ng {#r9e06ea9}
+
+タイプセットの方法を設定します．
+
+***
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pLaTeX-ng</ins><br>
+　　プログラム:　 <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/platex-ng %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfLaTeX {#x1c59d0b}
 
 タイプセットの方法を設定します．
