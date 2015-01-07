@@ -288,6 +288,12 @@ Emacs 24.4 以降にアップグレードします．<br>
 
 ```
 ;;
+;; PATH
+;;
+(setenv "PATH"
+        (concat (getenv "PATH") ":/usr/texbin"))
+
+;;
 ;; AUCTeX
 ;;
 (with-eval-after-load "tex-jp"
