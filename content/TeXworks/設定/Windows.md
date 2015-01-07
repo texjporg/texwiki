@@ -19,7 +19,7 @@ pukiwiki: "TeXworks/設定/Windows"
 
 公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
 W32TeX の TeXworks は pdfpLaTeX がデフォルトになっています．<br>
-upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．<br>
+upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-pLaTeX-ng, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -400,6 +400,43 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
+#### Latexmk-pLaTeX-ng {#sf618d99}
+
+Latexmk で PDF ファイルを作成します．
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>Latexmk-pLaTeX-ng</ins><br>
+　　プログラム: <ins>latexmk</ins><br>
+　　引数:　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$pdflatex=q/platex-ng %O  -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
+　　　　　　　　　<ins>-e</ins><br>
+　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
+　　　　　　　　　<ins>-norc</ins><br>
+　　　　　　　　　<ins>-gg</ins><br>
+　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk-pdfLaTeX {#g9f8b777}
 
 Latexmk で PDF ファイルを作成します．
@@ -588,6 +625,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 Latexmk<br>
 　　　　 Latexmk-upLaTeX-pdfdvi<br>
 　　　　 Latexmk-upLaTeX-pdfps<br>
+　　　　 Latexmk-pLaTeX-ng<br>
 　　　　 Latexmk-pdfLaTeX<br>
 　　　　 Latexmk-LuaLaTeX<br>
 　　　　 Latexmk-LuaJITLaTeX<br>
@@ -693,6 +731,58 @@ cmd
 
 　　名前:　　　　<ins>pdfupLaTeX2S</ins><br>
 　　プログラム: <ins>pdfuplatex2S.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pLaTeX-ngS {#v97bad02}
+
+platex-ngS.bat を作成します．
+
+***
+
+- platex-ngS.bat
+
+***
+
+```
+@echo off
+platex-ng -synctex=1 %1 && ^
+if %ERRORLEVEL% equ 0 (
+tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
+findstr "SumatraPDF.exe" > nul || ^
+echo rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance "%~n1.pdf" | ^
+cmd
+)
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pLaTeX-ngS</ins><br>
+　　プログラム: <ins>platex-ngS.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
@@ -1028,6 +1118,57 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 　　名前:　　　　<ins>pdfupLaTeX2A</ins><br>
 　　プログラム: <ins>pdfuplatex2A.bat</ins><br>
+　　引数:　　　　<ins>$basename</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☐ 実行後、PDFを表示する<br>
+
+***
+
+### pLaTeX-ngA {#s0b5764b}
+
+platex-ngA.bat を作成します．
+
+***
+
+- platex-ngA.bat
+
+***
+
+```
+@echo off
+tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
+findstr "AcroRd32.exe" > nul && ^
+pdfopen --rxi --file "%~n1.pdf" && ^
+pdfclose --rxi --file "%~n1.pdf" & ^
+platex-ng -synctex=1 %1 && ^
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --rxi --file $pdf --page $page}"
+```
+
+***
+
+実行後、PDFを表示するのチェックをはずします．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pLaTeX-ngA</ins><br>
+　　プログラム: <ins>platex-ngA.bat</ins><br>
 　　引数:　　　　<ins>$basename</ins><br>
 
 <br>
