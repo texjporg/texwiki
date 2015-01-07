@@ -17,8 +17,9 @@ pukiwiki: "TeXworks/設定/Windows"
 
 #### 設定前 {#n2341fff}
 
-W32TeX の TeXworks は pdfpLaTeX がデフォルトになっていますが，公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, Latexmk, Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．<br>
+公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
+W32TeX の TeXworks は pdfpLaTeX がデフォルトになっています．<br>
+upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．<br>
 W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Common_Workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://code.google.com/p/texworks/wiki/AdvancedTypesettingTools#Defining_new_typesetting_tools) を参照してください．<br>
@@ -211,6 +212,44 @@ ps2pdf.exe "%~n1.ps"
 
 ***
 
+#### pLaTeX-ng {#o0792104}
+
+pLaTeX-ng で PDF ファイルを作成します．
+
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+
+名前とプログラムを入力します．
+
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+
+実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
+
+***
+
+<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　　名前:　　　　<ins>pLaTeX-ng</ins><br>
+　　プログラム:　 <ins>platex-ng</ins><br>
+　　引数:　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk {#u0fa8c19}
 
 Latexmk で PDF ファイルを作成します．
@@ -250,7 +289,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk-pdfupLaTeX {#t6b9c629}
+#### Latexmk-upLaTeX-pdfdvi {#t6b9c629}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -270,7 +309,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
@@ -299,7 +338,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
@@ -320,7 +359,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk-pdfupLaTeX2 {#h1fdd4cd}
+#### Latexmk-upLaTeX-pdfps {#h1fdd4cd}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -338,7 +377,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX-pdfps</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
@@ -536,6 +575,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　<span style="color:Black;background-color:#DAEAFF;"> upLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　 <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 　　　　 pdfupLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
 　　　　 pdfupLaTeX2<br>
+　　　　 pLaTeX-ng<br>
 　　　　 pdfTeX<br>
 　　　　 pdfLaTeX<br>
 　　　　 LuaTeX<br>
@@ -546,8 +586,8 @@ Latexmk で PDF ファイルを作成します．
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
 　　　　 Latexmk<br>
-　　　　 Latexmk-pdfupLaTeX<br>
-　　　　 Latexmk-pdfupLaTeX2<br>
+　　　　 Latexmk-upLaTeX-pdfdvi<br>
+　　　　 Latexmk-upLaTeX-pdfps<br>
 　　　　 Latexmk-pdfLaTeX<br>
 　　　　 Latexmk-LuaLaTeX<br>
 　　　　 Latexmk-LuaJITLaTeX<br>
