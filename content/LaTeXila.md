@@ -67,7 +67,7 @@ GNOME
 
 ### Personal build tools {#kcfc97ba}
 
-#### Latexmk-pdfupLaTeX {#q6b26226}
+#### Latexmk-upLaTeX-pdfdvi {#q6b26226}
 
 Commands
 : &nbsp;
@@ -79,9 +79,9 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-pdfupLaTeX\] で実行できます．<br>
+\[Build\]-\[Latexmk-upLaTeX-pdfdvi\] で実行できます．<br>
 
-#### Latexmk-pdfupLaTeX2 {#s6b92cf0}
+#### Latexmk-upLaTeX-pdfps {#s6b92cf0}
 
 Commands
 : &nbsp;
@@ -93,7 +93,21 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-pdfupLaTeX2\] で実行できます．<br>
+\[Build\]-\[Latexmk-upLaTeX-pdfps\] で実行できます．<br>
+
+#### Latexmk-pLaTeX-ng {#f5986d7a}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$pdflatex=q/platex-ng %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -norc -gg -pdf "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\]-\[Latexmk-pLaTeX-ng\] で実行できます．<br>
 
 #### Latexmk-pdfLaTeX {#of015905}
 
