@@ -152,6 +152,34 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
+#### pLaTeX-ng {#e61e0132}
+
+タイプセットの方法を設定します．
+
+***
+
+<br>
+
+　　名前:　　　　<ins>pLaTeX-ng</ins><br>
+　　プログラム:　 <ins>platex-ng</ins><br>
+　　引数:　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$fullname</ins><br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="http://texworks.googlecode.com/svn/trunk/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　☑ 実行後、PDFを表示する<br>
+
+***
+
 #### Latexmk {#w19207d5}
 
 タイプセットの方法を設定します．
@@ -181,7 +209,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk-pdfupLaTeX {#xb8626bf}
+#### Latexmk-upLaTeX-pdfdvi {#xb8626bf}
 
 タイプセットの方法を設定します．
 
@@ -189,7 +217,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
@@ -210,7 +238,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk-pdfupLaTeX2 {#bfa76c53}
+#### Latexmk-upLaTeX-pdfps {#bfa76c53}
 
 タイプセットの方法を設定します．
 
@@ -218,7 +246,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-pdfupLaTeX2</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX-pdfps</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
