@@ -407,6 +407,22 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 保存(S):
 : 編集中のドキュメント
 
+#### Latexmk-pLaTeX-ng {#s063e57a}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+latexmk -e '$pdflatex=q/platex-ng %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/mendex %O -U -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
+```
+
+***
+
+保存(S):
+: 編集中のドキュメント
+
 #### Latexmk-pdfLaTeX {#q7311d5c}
 
 ***
