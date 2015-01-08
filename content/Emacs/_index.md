@@ -265,7 +265,7 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
 [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
-[YaTeX#zathura との連携 (forward search)](/YaTeX/#j4034f6b)<br>
+[YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)<br>
 を参照してください．<br>
 
 ### inverse search {#a432be77}
@@ -281,10 +281,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
     [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
 
 - YaTeX の場合
-
-    ```
-    (setq dvi2-command "zathura -s -x \"emacsclient --no-wait +%{line} %{input}\"")
-    ```
+    [YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)<br>
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
