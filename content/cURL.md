@@ -42,14 +42,14 @@ pukiwiki: "cURL"
 - Install cURL.
 
 ```
-$ curl -R -L -O http://curl.haxx.se/download/curl-7.40.0.tar.bz2
-$ tar xvf curl-7.40.0.tar.bz2
-$ pushd curl-7.40.0
+$ curl -R -L -O http://curl.haxx.se/download/curl-7.41.0.tar.bz2
+$ tar xvf curl-7.41.0.tar.bz2
+$ pushd curl-7.41.0
 $ ./configure --prefix=/mingw
 ```
 
 ```
-  curl version:     7.40.0
+  curl version:     7.41.0
   Host setup:       i686-pc-mingw32
   Install prefix:   /mingw
   Compiler:         gcc
