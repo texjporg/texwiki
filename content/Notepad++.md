@@ -7,7 +7,7 @@ pukiwiki: "Notepad++"
 
 # Notepad++
 
-## [Notepad++](http://notepad-plus-plus.org/) {#m5f7816e}
+## [Notepad++](https://notepad-plus-plus.org/) {#m5f7816e}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -24,16 +24,16 @@ Notepad++ は
 
 をサポートしています．
 
-- [Notepad++ 公式サイト](http://notepad-plus-plus.org/)
-    - [http://notepad-plus-plus.org/repository/](http://notepad-plus-plus.org/repository/)
-    - [Download](http://notepad-plus-plus.org/download/)
-    - [Contributors](http://notepad-plus-plus.org/contributors/)
+- [Notepad++ 公式サイト](https://notepad-plus-plus.org/)
+    - [https://notepad-plus-plus.org/repository/](https://notepad-plus-plus.org/repository/)
+    - [Download](https://notepad-plus-plus.org/download/)
+    - [Contributors](https://notepad-plus-plus.org/contributors/)
     - [twitter](https://twitter.com/notepad_plus)
-    - [facebook](http://www.facebook.com/Notepad.plus.plus)
+    - [facebook](https://www.facebook.com/Notepad.plus.plus)
 - [Notepad++ 開発サイト](http://projects.tuxfamily.org/?do=group;name=notepadplus)
     - [donho](http://projects.tuxfamily.org/?do=user;name=donho)
         - [twitter](https://twitter.com/ho_don/)
-        - [facebook](http://www.facebook.com/D0N.H0)
+        - [facebook](https://www.facebook.com/D0N.H0)
 
 ### 動作環境 {#p5d7567d}
 
