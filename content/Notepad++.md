@@ -188,6 +188,7 @@ Windows
 
 入力補完 (オートコンプリート) の設定ができます．<br>
 メニューから補完を行う場合は \[編集(E)\]-\[オートコンプリート\]-\[関数名補完\] または \[単語補完\] で補完できます．<br>
+デフォルトの設定では (, \[, {, " をタイプしたときに自動的に ), \], }, " を補完してくれます．<br>
 
 ***
 
@@ -222,15 +223,15 @@ Windows
 　　　　　　　　　　◯ 関数名補完　　　　　　　　　　　　　　　　　　　　　　　　　指定可能な値: 1 - 9<br>
 　　　　　　　　　　◯ 単語補完<br>
 　　　　　　　　　 (●) Function and word completion<br>
-　　　　　　☐入力時の関数パラメータヒント<br>
+　　　　　　☑入力時の関数パラメータヒント<br>
 
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　Auto-Insert<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　Open　　Close<br>
-　　　　　　　☐ (　　　　　☐ "　　　　　　　　　　　　　　　　　　　　　　　Matched pair 1:<br>
-　　　　　　　☐ \[　　　　　☐ '　　　　　　　　　　　　　　　　　　　　　　　 Matched pair 2:<br>
-　　　　　　　☐ {　　　　　☐ html/xml close tag　　　　　　　　　　　　 Matched pair 3:<br>
+　　　　　　　☑ (　)　　　　☑ "　"　　　　　　　　　　　　　　　　　　　　　Matched pair 1:<br>
+　　　　　　　☑ \[　\]　　　　☐ '　　　　　　　　　　　　　　　　　　　　　　　 Matched pair 2:<br>
+　　　　　　　☑ {　}　　　　☐ html/xml close tag　　　　　　　　　　　　 Matched pair 3:<br>
 
 <br>
 
@@ -320,12 +321,6 @@ Python Script を使うと LaTeX 環境を簡単に作ることができます�
 - [http://nppscrips.codeplex.com/](http://nppscrips.codeplex.com/)
 
 <!-- **[[NppSharp]] [#q36c3aac] -->
-
-### [XBrackets Lite](http://sourceforge.net/projects/npp-plugins/files/XBrackets%20Lite/) {#pd310cce}
-
-XBrackets Lite を使うと (, {, \[ をタイプしたときに自動的に ), }, \] を補完してくれます．<br>
-\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で XBrackets Lite を選択してインストールします．<br>
-\[プラグイン\]-\[XBrackets Lite\]-\[Autocomplete brackets\] にチェックをいれます．<br>
 
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
