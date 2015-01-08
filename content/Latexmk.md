@@ -35,7 +35,7 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．<br>
 
 - [https://packages.debian.org/ja/latexmk](https://packages.debian.org/ja/latexmk)
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXworks, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX, tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
+### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXworks, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX, tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
 
 ***
 
@@ -89,7 +89,7 @@ latexmk -gg -pdfps hoge.tex
 latexmk -gg -pdf hoge.tex
 ```
 
-### Latexmk-pdfupLaTeX, Latexmk-pdfupLaTeX2, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vim-latex, quickrun などの場合) {#ke005cd5}
+### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vim-latex, quickrun などの場合) {#ke005cd5}
 
 ***
 
