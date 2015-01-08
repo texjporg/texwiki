@@ -113,7 +113,7 @@ Windows
 　　　　　☐隠す　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑小さく表示<br>
 　　　　　◯ 小さなアイコン　　　　　　　　　　　　　　　　　　　　　　☐固定(ドラッグ&amp;ドロップを許可しない)<br>
 　　　　　◯ 大きなアイコン　　　　　　　　　　　　　　　　　　　　　　☑現在のタブ以外を区別して描画<br>
-　　　　 (●) 小さな標準アイコン　　　　　　　　　　　　　　　　　　　☑現在のタブの上部にオレンジで線を引く<br>
+　　　　　🔘 小さな標準アイコン　　　　　　　　　　　　　　　　　　　☑現在のタブの上部にオレンジで線を引く<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑タブに「閉じる」ボタンを配置<br>
 　　　　　　　　　　　ドキュメント一覧　　　　　　　　　　　　　　　　　☐ダブルクリックでドキュメントを閉じる<br>
 　　　　☐表示<br>
@@ -163,7 +163,7 @@ Windows
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　新規ドキュメント<br>
 　　　　　　　　　　　　　　　　　　　　フォーマット　　　　　　　　　　　　　　　　　　　　 エンコード<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ ANSI<br>
-　　　　　　　 (●) Windows　　　　　　　　　　　　　　　　　　　　(●) UTF-8(BOMなし)<br>
+　　　　　　　　🔘 Windows　　　　　　　　　　　　　　　　　　　　　🔘 UTF-8(BOMなし)<br>
 　　　　　　　　◯ Old Mac　　　　　　　　　　　　　　　　　　　　　　　☑開いているANSIファイルに適用<br>
 　　　　　　　　◯ Unix/OSX　　　　　　　　　　　　　　　　　　　　◯ UTF-8<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　◯ UCS-2 Big Endian<br>
@@ -224,7 +224,7 @@ Windows
 　　　　　　☑入力の毎に補完を行う　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#3333CC;"><ins>1</ins></span>　　文字目から<br>
 　　　　　　　　　　◯ 関数名補完　　　　　　　　　　　　　　　　　　　　　　　　　指定可能な値: 1 - 9<br>
 　　　　　　　　　　◯ 単語補完<br>
-　　　　　　　　　 (●) Function and word completion<br>
+　　　　　　　　　　🔘 Function and word completion<br>
 　　　　　　☑入力時の関数パラメータヒント<br>
 
 <br>
