@@ -30,10 +30,9 @@ Notepad++ は
     - [Contributors](https://notepad-plus-plus.org/contributors/)
     - [twitter](https://twitter.com/notepad_plus)
     - [facebook](https://www.facebook.com/Notepad.plus.plus)
-- [Notepad++ 開発サイト](http://projects.tuxfamily.org/?do=group;name=notepadplus)
-    - [donho](http://projects.tuxfamily.org/?do=user;name=donho)
-        - [twitter](https://twitter.com/ho_don/)
-        - [facebook](https://www.facebook.com/D0N.H0)
+- [Notepad++ 開発サイト](https://github.com/donho/notepad-plus-plus)
+    - [twitter](https://twitter.com/ho_don/)
+    - [facebook](https://www.facebook.com/D0N.H0)
 
 ### 動作環境 {#p5d7567d}
 
@@ -41,21 +40,23 @@ Windows
 
 ### License {#p3f91661}
 
-[GPLv3, GPLv2](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/license.txt?view=markup)
+[GPLv3, GPLv2](https://github.com/donho/notepad-plus-plus/blob/master/LICENSE)
 
 ### リリース情報 {#d2ceb628}
 
-[News](http://notepad-plus-plus.org/news/) を参照．<br>
+[News](https://notepad-plus-plus.org/news/) を参照．<br>
 
 ### ChangeLog {#q10cf331}
 
 - [New features and fixed bugs](http://notepad-plus-plus.org/download/)
-- [コミットログ](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/?view=log)
+- [コミットログ](https://github.com/donho/notepad-plus-plus/commits/master)
 
 ### 派生版 {#l02b5ab5}
 
+EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
+
+- [Notepad++ EUC-JP対応版](https://bitbucket.org/yttkans/notepad-euc-jp)
 - [Notepad++ 派生ビルド](http://freesftys.lv9.org/app/npp/)
-    - EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
 
 ### 日本語言語ファイル {#i35c46e6}
 
