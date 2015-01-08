@@ -38,7 +38,7 @@ Emacs Lisp を使えば自由にカスタマイズすることができます．
 #### License {#u2ed578f}
 
 GNU Emacs は，フリーソフトウェアです．<br>
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://sourceforge.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．<br>
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．<br>
 
 #### リリース情報 {#z96ff3b2}
 
@@ -340,7 +340,7 @@ Source editor:
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
     - [Emacs24 のインストールと新機能](http://sakito.jp/emacs/emacs24.html)
 - [emacs:init.el - PastelWiki](http://pastelwill.jp/wiki/doku.php?id=emacs:init.el)
-- [MacEmacs JP Project](http://macemacsjp.sourceforge.jp/)
+- [MacEmacs JP Project](http://macemacsjp.osdn.jp/)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [Retina を活かす Emacs へ移行](http://milanista224.blogspot.jp/2012/08/retina-emacs24.html)
 - [Mac研究環境/【エディタ】](http://www.rmss.is.uec.ac.jp/pukiwiki/index.php?Mac%B8%A6%B5%E6%B4%C4%B6%AD%2F%A1%DA%A5%A8%A5%C7%A5%A3%A5%BF%A1%DB)
@@ -356,7 +356,7 @@ Source editor:
 ## 使い方 {#e776cf5f}
 
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
-- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](http://sourceforge.jp/magazine/09/04/06/1138226)
+- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](http://osdn.jp/magazine/09/04/06/1138226)
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
