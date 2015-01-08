@@ -27,11 +27,13 @@ Notepad++ は
 をサポートしています．
 
 - [Notepad++ 公式サイト](http://notepad-plus-plus.org/)
+    - [http://notepad-plus-plus.org/repository/](http://notepad-plus-plus.org/repository/)
     - [Download](http://notepad-plus-plus.org/download/)
     - [Contributors](http://notepad-plus-plus.org/contributors/)
     - [twitter](https://twitter.com/notepad_plus)
     - [facebook](http://www.facebook.com/Notepad.plus.plus)
 - [Notepad++ 開発サイト](http://projects.tuxfamily.org/?do=group;name=notepadplus)
+    - [http://notepad-plus-plus.org/repository/](http://notepad-plus-plus.org/repository/)
     - [Index of /notepadplus/](http://download.tuxfamily.org/notepadplus/)
     - [donho](http://projects.tuxfamily.org/?do=user;name=donho)
         - [twitter](https://twitter.com/ho_don/)
