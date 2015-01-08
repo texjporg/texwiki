@@ -33,8 +33,6 @@ Notepad++ は
     - [twitter](https://twitter.com/notepad_plus)
     - [facebook](http://www.facebook.com/Notepad.plus.plus)
 - [Notepad++ 開発サイト](http://projects.tuxfamily.org/?do=group;name=notepadplus)
-    - [http://notepad-plus-plus.org/repository/](http://notepad-plus-plus.org/repository/)
-    - [Index of /notepadplus/](http://download.tuxfamily.org/notepadplus/)
     - [donho](http://projects.tuxfamily.org/?do=user;name=donho)
         - [twitter](https://twitter.com/ho_don/)
         - [facebook](http://www.facebook.com/D0N.H0)
