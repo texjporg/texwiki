@@ -9,8 +9,6 @@ pukiwiki: "Notepad++"
 
 ## [Notepad++](http://notepad-plus-plus.org/) {#m5f7816e}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/f/f5/Notepad_plus_plus.png" alt="Notepad++" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
