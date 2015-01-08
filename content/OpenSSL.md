@@ -26,9 +26,9 @@ $ pacman -S openssl openssl-devel
 #### MinGW {#h2041c43}
 
 ```
-$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1j.tar.gz
-$ tar xvf openssl-1.0.1j.tar.gz
-$ pushd openssl-1.0.1j
+$ curl -R -L -O http://www.openssl.org/source/openssl-1.0.1k.tar.gz
+$ tar xvf openssl-1.0.1k.tar.gz
+$ pushd openssl-1.0.1k
 $ ./config --prefix=/mingw shared
 $ make
 $ make install
