@@ -87,6 +87,31 @@ if __name__ == '__main__':
 
 ***
 
+### pLaTeX-ng.py {#kba9ea83}
+
+***
+
+```
+import os
+import os.path
+
+class Command:
+    def run(self):
+        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
+        c = os.path.dirname(notepad.getCurrentFilename())
+        pdflatex = 'platex-ng -synctex=1 "' + b + '"'
+        notepad.save()
+        os.chdir(c)
+        console.clear()
+        console.show()
+        console.run(pdflatex)
+
+if __name__ == '__main__':
+    Command().run()
+```
+
+***
+
 ### pdfLaTeX.py {#l6e1425f}
 
 ***
