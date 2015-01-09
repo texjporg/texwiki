@@ -297,7 +297,7 @@ EUC-JP に対応しています．公式サイトで提供されているバイ�
 
 ## プラグイン (Plugins) {#k2155ff2}
 
-- [http://npp-wiki.tuxfamily.org/index.php?title=Plugin_Central](http://npp-wiki.tuxfamily.org/index.php?title=Plugin_Central)
+- [http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central](http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
