@@ -170,3 +170,4 @@ latexmk -C
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
+- [Latexmk（Windows特化で使い方を書いてみる）](http://d.hatena.ne.jp/abenori/20150110)
