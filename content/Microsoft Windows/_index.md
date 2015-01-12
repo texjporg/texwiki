@@ -38,9 +38,11 @@ TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照し�
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
 
-[Installing TeX Live over the Internet](https://www.tug.org/texlive/acquire-netinstall.html) から install-tl-windows.exe をダウンロード後，ダブルクリックします．
-全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．
-基本的には Next や次へなどを押していればインストールはおわります．相当に時間がかかります．1時間くらいは覚悟してください．[アラベのPC関連メモ](http://arb-computer.seesaa.net/article/406943877.html)にはスクリーンショットがあります．
+[Installing TeX Live over the Internet](https://www.tug.org/texlive/acquire-netinstall.html) から install-tl-windows.exe をダウンロード後，ダブルクリックします．<br>
+全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．<br>
+基本的には Next や次へなどを押していればインストールはおわります．<br>
+相当に時間がかかります（1時間くらいは覚悟してください）．<br>
+[アラベのPC関連メモ](http://arb-computer.seesaa.net/article/406943877.html)にはスクリーンショットがあります．
 
 #### アップデート {#g130b940}
 
@@ -70,24 +72,29 @@ tlmgr update --self --all
 
 #### extractbb の追加 {#tf06ef9d}
 
-画像などをうめこむ際には，extractbbが自動で実行されるようにしておくと便利です．スタートメニューなどからメモ帳を起動し次のようなファイルを作成してください．（メモ帳ではなくてもテキストエディタならば何でもよいです．）
+画像などをうめこむ際には，extractbbが自動で実行されるようにしておくと便利です．<br>
+スタートメニューなどからメモ帳を起動し次のようなファイルを作成してください．<br>
+（メモ帳ではなくてもテキストエディタならば何でもよいです．）
 
 shell_escape_commands = \\<br>
 bibtex,pbibtex,jbibtex,repstopdf,epspdf,extractbb,\\<br>
 makeindex,mendex,mpost,pmpost,upmpost,kpsewhich
 
-これを C:\texlive\texmf-local\web2c\texmf.cnf として保存します．なお，メモ帳の場合は，保存画面にて「ファイルの種類」を「全てのファイル (\*.\*)」に変更しておく必要があります．（余計な拡張子 .txt が付加されてしまいます．）
+これを C:\texlive\texmf-local\web2c\texmf.cnf として保存します．<br>
+なお，メモ帳の場合は，保存画面にて「ファイルの種類」を「全てのファイル (\*.\*)」に変更しておく必要があります．<br>
+（余計な拡張子 .txt が付加されてしまいます．）
 
 #### TeXworksの設定 {#wa1faa7d}
 
-LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．
-手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．
-スタートメニューから起動することで動きます．
-ただし，日本語用の設定が必要です．[TeXworks/設定/Windows](</TeXworks/設定/Windows/>)もご覧ください．
+LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．<br>
+手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．<br>
+スタートメニューから起動することで動きます．<br>
+ただし，日本語用の設定が必要です → [TeXworks/設定/Windows](</TeXworks/設定/Windows/>)もご覧ください．
 
 #### トラブル対策 {#w1959e65}
 
-失敗しても，再度実行することで成功することがあります．繰り返してみてください．（ダウンロードされているものがまたダウンロードされることはないので，初回よりは早くなります．）
+失敗しても，再度実行することで成功することがあります．繰り返してみてください．<br>
+（ダウンロードされているものがまたダウンロードされることはないので，初回よりは早くなります．）
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
 
@@ -128,7 +135,7 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 ## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
 
 LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．<br>
-すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．
+すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．<br>
 特にこだわりのない方は，TeX Live とともにインストールされる TeXworks がお勧めです．（長らく推奨されていた WinShell よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
 
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
@@ -174,7 +181,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ## PDF ファイルビューア {#y17ec745}
 
-長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
-ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
-TeXworks には PDF 用のビューアが組み込まれています．
+長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．<br>
+ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）<br>
+TeXworks には PDF 用のビューアが組み込まれています．<br>
 単独の LaTeX 用 PDF プレビューアは [SumatraPDF](/SumatraPDF/) がお勧めです．
