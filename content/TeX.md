@@ -66,9 +66,10 @@ pukiwiki: "TeX"
 - [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
 - [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
 
-### 実行速度 → Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用する {#d99944d5}
+### OS による実行速度の違い {#d99944d5}
 
-Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください．<br>
+Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いようです．<br>
+もし Windows や OS X を使用していて LaTeX の実行速度が遅いと感じる場合は Linux を使用してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
 
 - [TeXLiveのlatexが遅い件](http://pman0214.blog37.fc2.com/blog-entry-305.html)
 - [MacとUbuntuでのLaTeX実行速度の違い](http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
@@ -107,6 +108,6 @@ Windows や OS X を使用していて LaTeX の実行速度が遅い場合は L
 ### 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
-- [LaTexに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTex)
+- [LaTeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTeX)
 - [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
 - [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
