@@ -13,13 +13,11 @@ pukiwiki: "TeX"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Summary {#vc0e41d9}
-
-### TeX 入門 {#q0b4ff33}
+## TeX 入門 {#q0b4ff33}
 
 - [TeX入門](</TeX入門/>)
 
-### TeX 処理系 {#g6783551}
+## TeX 処理系 {#g6783551}
 
 - [Writing Japanese in LaTeX : Part 1 – Introduction](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-1-introduction/)
 - [Writing Japanese in LaTeX : Part 2 – Characters and Encodings](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-2-characters-and-encodings/)
@@ -37,7 +35,7 @@ pukiwiki: "TeX"
 - [e-TeX](/e-TeX/)
 - TeX ( [ftp://ftp.cs.stanford.edu/pub/tex/](ftp://ftp.cs.stanford.edu/pub/tex/) )
 
-### TeX プログラミング {#ff81e0cc}
+## TeX プログラミング {#ff81e0cc}
 
 - \[[プログラミング\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
 - \[[TeX\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5BTeX%5D)
@@ -62,9 +60,16 @@ pukiwiki: "TeX"
 - [LaTeXでオブジェクト指向プログラミング](http://d.hatena.ne.jp/tarao/20120621/1340255659)
 - [TeXを電卓として使おう（あるいは、TeXでベキ乗根）](http://note.golden-lucky.net/2012/12/textex.html)
 - [難読化されたTeXの解読（tkbctf3 Misc 100 Real World TeX）](http://d.hatena.ne.jp/kusano_k/20140506/1399356192)
-- [TeX ＆ LaTeX Advent Calendar 2014 - Adventar](http://www.adventar.org/calendars/553)
 - [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
 - [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
+
+### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
+
+- [2014](http://www.adventar.org/calendars/553)
+- [2013](http://www.adventar.org/calendars/187)
+- [2012](https://atnd.org/events/34318)
+
+## 備考 {#d2892c04}
 
 ### OS による実行速度の違い {#d99944d5}
 
@@ -77,14 +82,6 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 ### 不具合 {#e730befe}
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b) → TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
-
-### TeXユーザの集い {#e38306bd}
-
-- [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
-- [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
-- [TeXユーザの集い 2011](http://oku.edu.mie-u.ac.jp/texconf11/)
-- [TeXユーザの集い 2010](http://oku.edu.mie-u.ac.jp/texconf10/)
-- [TeXユーザの集い 2009](http://oku.edu.mie-u.ac.jp/texconf09/)
 
 ### バッドノウハウ {#hcd7e588}
 
@@ -105,7 +102,22 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [私がTeXを使い続ける理由 - くるるの数学ノート](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
 - [私がTeXを使い続ける1個+6個の理由 - わさっき](http://d.hatena.ne.jp/takehikom/20100218/1266441239)
 
-### 関連リンク {#f53c2f34}
+## イベント {#df4b96d9}
+
+### TeXユーザの集い {#e38306bd}
+
+- [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
+- [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
+- [TeXユーザの集い 2011](http://oku.edu.mie-u.ac.jp/texconf11/)
+- [TeXユーザの集い 2010](http://oku.edu.mie-u.ac.jp/texconf10/)
+- [TeXユーザの集い 2009](http://oku.edu.mie-u.ac.jp/texconf09/)
+
+### TeX Users Group (TUG) {#o7d3e65b}
+
+- [TUG 2013（第34回TeX Users Group年次大会）](http://tug.org/tug2013/jp/)
+- [TUG 2013 チュートリアルを日本語で聞く会](http://tug.org/tug2013/jp/followup.html)
+
+## 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
 - [LaTeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTeX)
