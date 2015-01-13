@@ -11,8 +11,8 @@ pukiwiki: "FrontPage"
 
 ## CONTENTS {#w5692639}
 
-- <span style="color:black;background-color:white;"> <strong>TeX のインストール</strong> </span>：使用している OS を選択します
-    - <span style="color:black;background-color:white;"> <strong>動作環境</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX のインストール</strong></span>：使用している OS を選択します
+    - <span style="color:black;background-color:white;"><strong>動作環境</strong></span>：
         [MS Windows](</Microsoft Windows/>),
         [Cygwin](/Cygwin/),
         [OS X](/Mac/),
@@ -22,23 +22,23 @@ pukiwiki: "FrontPage"
         [iOS](/iOS/),
         本の付録 DVD-ROM から → [TeXの本](</TeXの本/>)
 
-- <span style="color:black;background-color:white;"> <strong>TeX の使い方</strong> </span>：TeX の基本的な使い方の解説
-    - <span style="color:black;background-color:white;"> <strong>入門, 解説書</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX の使い方</strong></span>：TeX の基本的な使い方の解説
+    - <span style="color:black;background-color:white;"><strong>入門, 解説書</strong></span>：
         [TeX 入門](</TeX入門/>),
         [TeX の本](</TeXの本/>)（[BibTeX 書式リスト](</TeXの本/文献データベース/>)）
 
-- <span style="color:black;background-color:white;"> <strong>TeX ディストリビューション</strong> </span>：使用する TeX ディストリビューションを選択します
-    - <span style="color:black;background-color:white;"> <strong>Windows, Cygwin, OS X, Linux</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX ディストリビューション</strong></span>：使用する TeX ディストリビューションを選択します
+    - <span style="color:black;background-color:white;"><strong>Windows, Cygwin, OS X, Linux</strong></span>：
         [TeX Live](</TeX Live/>)
-    - <span style="color:black;background-color:white;"> <strong>Windows</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows</strong></span>：
         [W32TeX](/W32TeX/),
         [MiKTeX](/MiKTeX/)
-    - <span style="color:black;background-color:white;"> <strong>OS X</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>OS X</strong></span>：
         [MacTeX](/Mac/#mactex),
         [BasicTeX](/Mac/#basictex)
 
-- <span style="color:black;background-color:white;"> <strong>TeX Q &amp; A</strong> </span>：質問・回答の仕方について
-    - <span style="color:black;background-color:white;"> <strong>質問・回答</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX Q &amp; A</strong></span>：質問・回答の仕方について
+    - <span style="color:black;background-color:white;"><strong>質問・回答</strong></span>：
         [質問の仕方](</質問のしかた/>)（[エラー報告用の標準データセット](</エラー報告用の標準データセット/>)）,
         [回答の仕方](</回答のしかた/>),
         [Q &amp; A サマリ](/ArchiveQandA/),
@@ -46,16 +46,16 @@ pukiwiki: "FrontPage"
         [TeX が苦手とする処理](</TeXが苦手とする処理/>),
         [ご意見はこちらへ](</ご意見はこちらへ/>)
 
-- <span style="color:black;background-color:white;"> <strong>TeX のエラー/警告メッセージ</strong> </span>：TeX のエラー/警告メッセージの解説
-    - <span style="color:black;background-color:white;"> <strong>エラー/警告メッセージ</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX のエラー/警告メッセージ</strong></span>：TeX のエラー/警告メッセージの解説
+    - <span style="color:black;background-color:white;"><strong>エラー/警告メッセージ</strong></span>：
         [TeX のエラー](</TeX のエラーメッセージ/>),
         [LaTeX のエラー](</LaTeX のエラーメッセージ/>),
         [LaTeX の警告](</LaTeX の警告メッセージ/>),
         [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)
 
-- <span style="color:black;background-color:white;"> <strong>統合環境・エディタ</strong> </span>：使用する統合環境・エディタを選択します
+- <span style="color:black;background-color:white;"><strong>統合環境・エディタ</strong></span>：使用する統合環境・エディタを選択します
     → [TeX 用統合環境・エディタ](</TeX用エディタ/>)
-    - <span style="color:black;background-color:white;"> <strong>Windows, OS X, Linux</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows, OS X, Linux</strong></span>：
         [LyX](/LyX/),
         [TeXstudio](/TeXstudio/),
         [Texmaker](/Texmaker/),
@@ -77,9 +77,9 @@ pukiwiki: "FrontPage"
         [Light Table](</Light Table/>),
         [gedit](/gedit/),
         [Geany](/Geany/)
-    - <span style="color:black;background-color:white;"> <strong>Windows, OS X</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows, OS X</strong></span>：
         [TeX2img](/TeX2img/)
-    - <span style="color:black;background-color:white;"> <strong>Windows</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows</strong></span>：
         [Visual Studio Community](</Microsoft Visual Studio Community/>),
         [TeXnicCenter](/TeXnicCenter/),
         [Notepad++](/Notepad++/)
@@ -88,56 +88,56 @@ pukiwiki: "FrontPage"
         [Python Script](</Python Script/>)),
         [サクラエディタ](</サクラエディタ/>)
         ([Happy](/Happy/))
-    - <span style="color:black;background-color:white;"> <strong>OS X</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>OS X</strong></span>：
         [Xcode](/Xcode/),
         [TeXShop](/TeXShop/),
         TeXnicle,
         [CotEditor](/CotEditor/),
         [LaTeXiT](/LaTeXiT/)
-    - <span style="color:black;background-color:white;"> <strong>Linux</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Linux</strong></span>：
         [Kile](/Kile/),
         LaTeXila
-    - <span style="color:black;background-color:white;"> <strong>Web</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Web</strong></span>：
         [TeXをWebで](</TeXをWebで/>)
 
-- <span style="color:black;background-color:white;"> <strong>PDF Viewer</strong> </span>：使用する PDF ビューアを選択します
-    - <span style="color:black;background-color:white;"> <strong>Windows, OS X, Linux</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>PDF Viewer</strong></span>：使用する PDF ビューアを選択します
+    - <span style="color:black;background-color:white;"><strong>Windows, OS X, Linux</strong></span>：
         [TeXworks](/TeXworks/),
         [TeXstudio](/TeXstudio/),
         [MuPDF](/MuPDF/),
         [Poppler](/Poppler/)
-    - <span style="color:black;background-color:white;"> <strong>Windows, OS X</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows, OS X</strong></span>：
         [Adobe Reader](</Adobe Reader/>)
-    - <span style="color:black;background-color:white;"> <strong>Windows</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Windows</strong></span>：
         [SumatraPDF](/SumatraPDF/)
-    - <span style="color:black;background-color:white;"> <strong>OS X</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>OS X</strong></span>：
         [Skim](/Skim/),
         [TeXShop](/TeXShop/)
-    - <span style="color:black;background-color:white;"> <strong>Linux</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Linux</strong></span>：
         [Evince](/Evince/),
         [Okular](/Okular/),
         [zathura](/zathura/),
         [qpdfview](/qpdfview/)
-    - <span style="color:black;background-color:white;"> <strong>Web</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>Web</strong></span>：
         [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>),
         [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
 
-- <span style="color:black;background-color:white;"> <strong>Ghostscript</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>Ghostscript</strong></span>：
     [Ghostscript](/Ghostscript/),
     [PDF](/PDF/),
     [PostScript](/PostScript/)
 
-- <span style="color:black;background-color:white;"> <strong>DVIware</strong> </span>：DVIware の解説
-    - <span style="color:black;background-color:white;"> <strong>DVI -&gt; PDF</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>DVIware</strong></span>：DVIware の解説
+    - <span style="color:black;background-color:white;"><strong>DVI -&gt; PDF</strong></span>：
         [dvipdfmx](/dvipdfmx/)
-    - <span style="color:black;background-color:white;"> <strong>DVI -&gt; PS</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>DVI -&gt; PS</strong></span>：
         [dvips](/dvips/)
-    - <span style="color:black;background-color:white;"> <strong>DVI -&gt; SVG</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>DVI -&gt; SVG</strong></span>：
         [dvisvgm](/dvisvgm/)
-    - <span style="color:black;background-color:white;"> <strong>DVI -&gt; PNG</strong> </span>：
+    - <span style="color:black;background-color:white;"><strong>DVI -&gt; PNG</strong></span>：
         [dvipng](/dvipng/)
 
-- <span style="color:black;background-color:white;"> <strong>Unicode 版 TeX と TeX 拡張</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>Unicode 版 TeX と TeX 拡張</strong></span>：
     [LuaTeX](/LuaTeX/),
     LuaJITTeX,
     [XeTeX](/XeTeX/),
@@ -149,11 +149,11 @@ pukiwiki: "FrontPage"
     [TeX](/TeX/),
     [ConTeXt](/ConTeXt/)
 
-- <span style="color:black;background-color:white;"> <strong>パッケージ</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>パッケージ</strong></span>：
     [目的別パッケージ簡易リファレンス](</目的別パッケージ簡易リファレンス/>),
     [TeX入門/各種パッケージの利用](</TeX入門/各種パッケージの利用/>)
 
-- <span style="color:black;background-color:white;"> <strong>関連ツールなど</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>関連ツールなど</strong></span>：
     [Latexmk](/Latexmk/),
     [Make](/Make/),
     [描画・グラフツール](</描画・グラフツール/>),
@@ -166,37 +166,37 @@ pukiwiki: "FrontPage"
     [MetaPost](/MetaPost/),
     [METAFONT](/METAFONT/)
 
-- <span style="color:black;background-color:white;"> <strong>スペルチェッカー</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>スペルチェッカー</strong></span>：
     [Hunspell](/Hunspell/),
     [Aspell](/Aspell/),
     [Ispell](/Ispell/)
 
-- <span style="color:black;background-color:white;"> <strong>フォント</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>フォント</strong></span>：
     [フォント](</フォント/>)
 
-- <span style="color:black;background-color:white;"> <strong>TeX ユーザの集い</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX ユーザの集い</strong></span>：
     [2014](http://texconf14.tumblr.com),
     [2012](http://oku.edu.mie-u.ac.jp/texconf12/),
     [2011](http://oku.edu.mie-u.ac.jp/texconf11/),
     [2010](http://oku.edu.mie-u.ac.jp/texconf10/),
     [2009](http://oku.edu.mie-u.ac.jp/texconf09/)
 
-- <span style="color:black;background-color:white;"> <strong>TUG</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TUG</strong></span>：
     [<strong>TUG 2013</strong>（第34回TeX Users Group年次大会）](http://tug.org/tug2013/jp/), [チュートリアルを日本語で聞く会](http://tug.org/tug2013/jp/followup.html)
 
-- <span style="color:black;background-color:white;"> <strong>TeX ＆ LaTeX Advent Calendar</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>TeX ＆ LaTeX Advent Calendar</strong></span>：
     [2014](http://www.adventar.org/calendars/553),
     [2013](http://www.adventar.org/calendars/187),
     [2012](https://atnd.org/events/34318)
 
-- <span style="color:black;background-color:white;"> <strong>関連リンク</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>関連リンク</strong></span>：
     [国内リンク](</国内リンク/>),
     [海外リンク](</海外リンク/>),
     [CTAN](/CTAN/),
     GitHub,
     Qiita
 
-- <span style="color:black;background-color:white;"> <strong>ドキュメンテーションツール</strong> </span>：
+- <span style="color:black;background-color:white;"><strong>ドキュメンテーションツール</strong></span>：
     [Markdown](/Markdown/),
     [Pandoc](/Pandoc/),
     [reStructuredText](/reStructuredText/),
@@ -210,9 +210,9 @@ pukiwiki: "FrontPage"
     [LibreOffice/Apache OpenOffice](/LibreOffice/),
     [Microsoft Office](</Microsoft Office/>)
 
-<!-- -&color(black,white){ ''プログラミング言語'' };： -->
+<!-- -&color(black,white){''プログラミング言語''};： -->
 <!-- [[プログラミング言語]] -->
-<!-- - -&color(black,white){ ''Statically typed programming languages'' };： -->
+<!-- - -&color(black,white){''Statically typed programming languages''};： -->
 <!-- [[C]], -->
 <!-- [[C++]], -->
 <!-- [[D]], -->
@@ -236,7 +236,7 @@ pukiwiki: "FrontPage"
 <!-- [[Scala]], -->
 <!-- [[Kotlin]], -->
 <!-- [[Ceylon]] -->
-<!-- - -&color(black,white){ ''Dynamically typed programming languages'' };： -->
+<!-- - -&color(black,white){''Dynamically typed programming languages''};： -->
 <!-- [[JavaScript]], -->
 <!-- [[PHP]], -->
 <!-- [[Python]], -->
@@ -249,7 +249,7 @@ pukiwiki: "FrontPage"
 <!-- [[Windows PowerShell]], -->
 <!-- [[Bash]] -->
 
-<!-- -&color(black,white){ ''ライブラリ・フレームワーク'' };： -->
+<!-- -&color(black,white){''ライブラリ・フレームワーク''};： -->
 <!-- [[zlib]], -->
 <!-- [[libpng]], -->
 <!-- [[libjpeg]], -->
@@ -273,7 +273,7 @@ pukiwiki: "FrontPage"
 <!-- [[Boost]], -->
 <!-- [[Qt]] -->
 
-- <span style="color:black;background-color:#FFFFFF;"> <strong>その他</strong> </span>：
+- <span style="color:black;background-color:#FFFFFF;"><strong>その他</strong></span>：
     [サイトマップ](</サイトマップ/>),
     [用語・略語集](</用語・略語集/>),
     [転写表記](</アスキー文字を用いた転写表記/>),
