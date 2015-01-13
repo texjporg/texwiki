@@ -76,9 +76,11 @@ tlmgr update --self --all
 スタートメニューなどからメモ帳を起動し次のようなファイルを作成してください．<br>
 （メモ帳ではなくてもテキストエディタならば何でもよいです．）
 
-shell_escape_commands = \\<br>
-bibtex,pbibtex,jbibtex,repstopdf,epspdf,extractbb,\\<br>
+```
+shell_escape_commands = \
+bibtex,pbibtex,jbibtex,repstopdf,epspdf,extractbb,\
 makeindex,mendex,mpost,pmpost,upmpost,kpsewhich
+```
 
 これを C:\texlive\texmf-local\web2c\texmf.cnf として保存します．<br>
 なお，メモ帳の場合は，保存画面にて「ファイルの種類」を「全てのファイル (\*.\*)」に変更しておく必要があります．<br>
@@ -136,7 +138,8 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．<br>
 すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．<br>
-特にこだわりのない方は，TeX Live とともにインストールされる TeXworks がお勧めです．（長らく推奨されていた WinShell よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
+特にこだわりのない方は，TeX Live とともにインストールされる TeXworks がお勧めです．<br>
+（長らく推奨されていた WinShell よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
 
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
