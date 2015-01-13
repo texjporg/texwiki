@@ -15,224 +15,131 @@ pukiwiki: "W32TeX"
 
 ## W32TeX とは {#e3db1415}
 
-W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです。<br>
-W32TeX は Microsoft Windows の
-Windows PowerShell
-やコマンド プロンプトで使うものですが，マウスによるドラッグ &amp; ドロップに対応させることもできます。<br>
-W32TeX についての詳細は公式サイトを参照してください．<br>
+W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです。
+W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
 
-- [W32TeX (English page)](http://w32tex.org/index.html)
-- [W32TeX (Japanese page)](http://w32tex.org/index-ja.html)
-- [W32TeX (Chinese page)](http://w32tex.org/index-zh.html)
+## インストール {#ib4afbe8}
 
-### 動作環境 {#hc2aabb4}
+### TeX インストーラ 3 によるインストール {#wd8675d9}
 
-W32TeX は Visual C++ 2010 でビルドされているため Windows XP 以降で動作します。<br>
+W32TeX 及び関連するソフトウェアを自動でインストールする[TeXインストーラ3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html)をもちいるのが楽です．基本的にはインストーラを取得後，解凍し，abtexinst.exe をダブルクリックして指示に従ってください．（環境によっては .exe が表示されません．以下のようなアイコンで表示されているものを選んでください．）
 
-### 更新履歴 {#xe720032}
+<a href="/attach/W32TeX/exeicon.png"><img src="/attach/W32TeX/exeicon.png" alt=""></a>
 
-- [ChangeLog](http://w32tex.org/ChangeLog)
+[簡単LaTeXインストールWindows編（2014年7月版）](http://did2memo.net/2014/03/06/easy-latex-install-windows-8-2014-03/)には詳細な説明があります．
 
-### 統合環境・エディタ {#o7f5ab09}
+#### トラブルシューティング {#t3a0d8db}
 
-Windows PowerShell やコマンド プロンプトでの作業が苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy などの [TeX 専用の統合環境・エディタ](</TeX用エディタ/>) を使用すればマウスを使って作業することができます。<br>
+まずは添付されている abtexinst.txt （やはり環境によっては .txt が表示されません）を参照してください．URL の変更は効果的なことが多いです．また，TeX インストーラ 3 を実行すると同じフォルダに abtexinst_log.txt （やはり（略））というファイルが作成されます．エラーに関する情報などがありますので，参照してください．TeX Forum 等で相談をする時もこのファイルがあると情報がスムーズに伝わることがあります．
 
-[Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) などのオープンソースの TeX 対応テキストエディタでも TeX ファイルを編集できます．<br>
-[Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Brackets](/Brackets/)，[Notepad++](/Notepad++/)，[サクラエディタ](</サクラエディタ/>) は UTF-8 に対応しています．<br>
-TeX ファイルは UTF-8 以外に Shift_JIS（シフト JIS）[^2]，EUC-JP（日本語 EUC），ISO-2022-JP（いわゆる「JIS コード」）などの文字コードが使用されることもあります．<br>
-標準のテキストエディタとしてメモ帳 (Notepad) を使っている方にはこの機会に他のテキストエディタへの乗り換えをお薦めします．<br>
-ただし Emacs，Vim は初期設定ではショートカットキーなどの操作性がメモ帳とは異なるので，慣れるまでは大変かもしれません．<br>
+### 簡易インストーラによるインストール {#e5885a04}
 
-[Eclipse](/Eclipse/) を使いたい場合は [TeXlipse](/TeXlipse/) がおすすめです．<br>
+W32TeX 自身が簡易インストーラを提供しています．上述の TeX インストーラ 3 に比べて手順がやや複雑なので，基本的には TeX インストーラ 3 をお勧めしますが．
+こちらをもちいる場合には，次の手順を踏みます．（TeX インストーラ 3 もこれらを自動で行っているだけです．）
 
-## フォルダー オプション {#y4579ed3}
+1. 各種ファイルをダウンロードする
+1. 簡易インストーラをもちいてファイルを展開する
+1. 環境変数 PATH を設定する
 
-W32TeX をインストールする前に拡張子や隠しファイル、隠しフォルダーおよび隠しドライブを表示する設定をします．<br>
+少し情報が古いですが，[Windows 用 TeX のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/tex.htm)には丁寧な解説があります．
 
-Windows PowerShell または コマンド プロンプトを起動します．<br>
+なお，簡易インストーラが行うことは tar.xz により圧縮されているファイルを展開するだけです．従って，手持ちの解凍ソフトが .tar.xz 形式に対応していれば，そちらで解凍して，適当な場所に展開することでもインストールが完了します．（環境変数 PATH の設定は必要です．）
 
-> <table>
-> <thead>
-> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">Windows PowerShell の起動方法</th></tr>
-> </thead>
-> <tbody>
-> <tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］</td></tr>
-> </tbody>
-> </table>
->
+#### ダウンロードサイト {#y2ec963e}
 
-> <table>
-> <thead>
-> <tr><th style="text-align:center">バージョン</th><th style="text-align:center">コマンド プロンプトの起動方法</th></tr>
-> </thead>
-> <tbody>
-> <tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］</td></tr>
-> </tbody>
-> </table>
->
+以下のサイトからダウンロードが可能です．
 
-Windows PowerShell またはコマンド プロンプトに次のように
-打ち込んでフォルダー オプションを表示します．<br>
-
-```
-control folders
-```
-
-表示タブをクリックします．<br>
-
-- 隠しファイル、隠しフォルダーおよび隠しドライブを表示する
-
-を選択します．<br>
-
-- 登録されている拡張子は表示しない
-
-のチェックをはずします．<br>
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>フォルダー オプション</strong></span>　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 全般　 \]</ins></span><strong>\[ 表示　 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 検索　 \]</ins></span><br>
-
-　　 フォルダーの表示<br>
-　　　　　　　　　　　　この表示方法 (詳細表示やアイコンなど) をこの種類のフォルダーす<br>
-　　　　　　　　　　　　べてに適用することができます。<br>
-　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[　　フォルダーに適用(L)　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　フォルダーをリセット(R)　　\]</span><br>
-
-<br>
-
-<br>
-
-　　 詳細設定:<br>
-　　　　ファイルおよびフォルダー<br>
-　　　　☑ ステータス バーを表示する<br>
-　　　　☐ タイトル バーに完全なパスを表示する<br>
-　　　　☐ チェックボックスを使用して項目を選択する<br>
-　　　　☑ ドライブ文字を表示する<br>
-　　　　　ファイルとフォルダーの表示<br>
-　　　　　<span style="color:black;background-color:yellow;"><strong>(●) 隠しファイル、隠しフォルダーおよび隠しドライブを表示する ← 選択する</strong></span><br>
-　　　　　 ◯ 隠しファイル、隠しフォルダーおよび隠しドライブを表示しない<br>
-　　　　☑ フォルダーとデスクトップの項目の説明をポップアップで表示する<br>
-　　　　☑ フォルダーのヒントにファイル サイズ情報を表示する<br>
-　　　　☑ フォルダーの結合の競合を非表示にする<br>
-　　　　☑ プレビュー ウィンドウでプレビューのハンドラーを表示する<br>
-　　　　　リスト ビューで入力するとき<br>
-　　　　　 ◯ 検索ボックスに自動的に入力する<br>
-　　　　　(●) 入力した項目をビューで選択する<br>
-　　　　☐ ログオン時に以前のフォルダー ウィンドウを表示する<br>
-　　　　☑ 暗号化や圧縮された NTFS ファイルをカラーで表示する<br>
-　　　　☑ 共有ウィザードを使用する (推奨)<br>
-　　　　☑ 空のドライブは表示しない<br>
-　　　　☑ 縮小版にファイル アイコンを表示する<br>
-　　　　☐ 常にアイコンを表示し、縮小版は表示しない<br>
-　　　　☐ 常にメニューを表示する<br>
-　　　　<span style="color:black;background-color:yellow;"><strong>☐ 登録されている拡張子は表示しない ← チェックをはずす</strong></span><br>
-　　　　☐ 別のプロセスでフォルダー ウィンドウを開く<br>
-　　　　☑ 保護されたオペレーティング システム ファイルを表示しない (推奨)<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値に戻す(D)　　\]</span><br>
-
-***
-
-## ダウンロードサイト {#y2ec963e}
-
-ミラーサイトは下記のウェブサイトなどをご利用ください。若干，更新が遅れることがあります．<br>
-W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) を参照してください．<br>
-
-### [FTP](https://ja.wikipedia.org/wiki/File_Transfer_Protocol) {#z04bbc8a}
+\[FTP\]<br>
 
 - [Ring Server](http://www.ring.gr.jp/)
-    - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/](ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-        <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+    <!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 
-- [KDDI研究所](http://www.kddilabs.jp/)
-    - [ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/)
-    - [ftp://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/](ftp://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/)
-    - [ftp://ftp.ne.jp/TeX/ptex-win32/current/](ftp://ftp.ne.jp/TeX/ptex-win32/current/)
-    - [ftp://srv2.ftp.ne.jp/TeX/ptex-win32/current/](ftp://srv2.ftp.ne.jp/TeX/ptex-win32/current/)
-- [会津大学](http://www.u-aizu.ac.jp/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/ptex-win32/current/](ftp://ftp.u-aizu.ac.jp/pub/tex/ptex-win32/current/)
-- [文教大学湘南キャンパス](http://open.shonan.bunkyo.ac.jp/)
-    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/ptex-win32/current/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/ptex-win32/current/)
-- [大島研究室](http://akagi.ms.u-tokyo.ac.jp/)（[東京大学](http://www.u-tokyo.ac.jp/) [大学院数理科学研究科](http://www.ms.u-tokyo.ac.jp/)）
-    - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
-- [CTAN](/CTAN/) mirror
-    - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/](ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/)
-    - [ftp://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/](ftp://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/)
-    - [ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/](ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
-    - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
-    - [ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
-    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
-    - [ftp://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](ftp://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
+- [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+    <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+    <!-- -[[KDDI研究所:http://www.kddilabs.jp/]] -->
 
-### [HTTP](https://ja.wikipedia.org/wiki/Hypertext_Transfer_Protocol) {#d85efc2e}
+- [KDDI研究所](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/)
+    <!-- - -ftp://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://ftp.ne.jp/TeX/ptex-win32/current/ -->
+    <!-- - -ftp://srv2.ftp.ne.jp/TeX/ptex-win32/current/ -->
+    <!-- -[[会津大学:http://www.u-aizu.ac.jp/]] -->
+    <!-- - -ftp://ftp.u-aizu.ac.jp/pub/tex/ptex-win32/current/ -->
+    <!-- -[[文教大学湘南キャンパス:http://open.shonan.bunkyo.ac.jp/]] -->
+    <!-- - -ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/ptex-win32/current/ -->
+    <!-- -[[大島研究室:http://akagi.ms.u-tokyo.ac.jp/]]（[[東京大学:http://www.u-tokyo.ac.jp/]] [[大学院数理科学研究科:http://www.ms.u-tokyo.ac.jp/]]） -->
 
-- [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/)
-    - [http://ctan.ijs.si/mirror/w32tex/current/](http://ctan.ijs.si/mirror/w32tex/current/)
-- [Ring Server](http://www.ring.gr.jp/)
-    - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/](http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [KDDI研究所](http://www.kddilabs.jp/)
-    - [http://ftp.kddilabs.jp/TeX/ptex-win32/current/](http://ftp.kddilabs.jp/TeX/ptex-win32/current/)
-    - [http://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/](http://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/)
-    - [http://ftp.ne.jp/TeX/ptex-win32/current/](http://ftp.ne.jp/TeX/ptex-win32/current/)
-    - [http://srv2.ftp.ne.jp/TeX/ptex-win32/current/](http://srv2.ftp.ne.jp/TeX/ptex-win32/current/)
-- [CTAN](/CTAN/) mirror
-    - [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/](http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/)
-    - [http://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/](http://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/)
-    - [http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/](http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
-    - [http://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/](http://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/)
-    - [http://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/win32/w32tex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/win32/w32tex/)
-    - [http://www.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](http://www.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
-    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
-    - [http://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/](http://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/)
-    - [http://mirror.ctan.org/systems/win32/w32tex/](http://mirror.ctan.org/systems/win32/w32tex/)
+- [東京大学数理科学研究科](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
+- [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
+    <!-- - -ftp://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -ftp://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
+    <!-- - -ftp://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
 
-### [アーカイブ](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96) {#b9d7db68}
+\[HTTP\]<br> <!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
+
+- [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
+    <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
+    <!-- - -http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- - -http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+    <!-- -[[KDDI研究所:http://www.kddilabs.jp/]] -->
+
+- [KDDI研究所](http://ftp.kddilabs.jp/TeX/ptex-win32/current/)
+    <!-- - -http://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/ -->
+    <!-- - -http://ftp.ne.jp/TeX/ptex-win32/current/ -->
+    <!-- - -http://srv2.ftp.ne.jp/TeX/ptex-win32/current/ -->
+    <!-- -[[CTAN]] mirror -->
+
+- [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
+    <!-- - -http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://ftp.nara.wide.ad.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://ftp.kddilabs.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -http://ftp-srv2.kddilabs.jp/ctan/systems/win32/w32tex/ -->
+    <!-- - -http://ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -http://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
+    <!-- - -http://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/win32/w32tex/ -->
+    <!-- - -http://www.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
+    <!-- - -http://mirror.ctan.org/systems/win32/w32tex/ -->
+
+#### 過去のバージョン {#n2c09a4d}
 
 過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています:
 
 - [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
 
-### 注意点 {#s760b9ef}
+#### 注意点 {#s760b9ef}
 
 ダウンロードツールをお使いの場合には，サーバーに迷惑をかけないようにするために同時接続数を1にしてください。
 
@@ -248,41 +155,34 @@ W32TeX の更新履歴に関しては [ChangeLog](http://w32tex.org/ChangeLog) �
 
 のようにファイルの拡張子が変わる。
 
-## フルインストールで必要なもの {#s4df79fc}
+#### ダウンロードファイル {#i853d3d5}
 
-W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
-32-bit バイナリは 32-bit Windows と 64-bit Windows の両方で動作します。<br>
-64-bit バイナリは 64-bit Windows でのみ動作します。<br>
-<strong>64-bit バイナリが存在しないアーカイブは 32-bit バイナリを使用してください。</strong><br>
+最小インストール / 標準インストール / フルインストール の三つの構成があります．HDD の容量に余裕があればフルインストールを選んでおくのが無難でしょう，フルインストールで 2.6G 程度の容量が必要です．
 
-<strong>64-bit バイナリを使用する場合は、必ず対応する 32-bit 用アーカイブも入手してください。</strong><br>
+構成によりダウンロードするファイルが変わります．以下を参照にダウンロードし，適当なフォルダ（ここでは C:\w32tex\download にダウンロードしたとしておきます．日本語や空白の入っているフォルダはトラブルを引き起こす可能性があります．）なお，頻繁に更新されていますのでバージョン番号は下と異なるかもしれません。
+以下のリンクは [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/) へのものですが，状況によって上記のインストールサイトを用いてください．
 
-何故ならば、64-bit 用アーカイブには、バイナリだけしか入っていないからです。<br>
-また、64-bit バイナリは、Ghostscript が必要な場合、64-bit の Ghostscript<br>
-を使用するようになっていますから、64-bit の Ghostscript (例えば gs915w64full-gpl.exe)<br>
-をインストールしておいて下さい。<br>
-頻繁に更新されていますのでバージョン番号は下と異なるかもしれません。<br>
+ファイルによっては 64-bit バイナリが存在します．ただし，対応する 32-bit ファイルもダウンロードが必要です．
 
 <table>
 <thead>
 <tr><th>64-bit バイナリ</th><th>32-bit バイナリ</th><th>説明</th></tr>
 </thead>
 <tbody>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/00FILES.sjis">00FILES.sjis</a>, <a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/00FILES.euc">00FILES.euc</a></td><td>W32TeX のインストール解説</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ChangeLog">ChangeLog</a></td><td>変更履歴<br>W32TeX は更新が頻繁に行われるので目を通しておいた方が良いです。</td></tr>
-<tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2014.zip">texinst2014.zip</a></td><td>簡易インストーラー</td></tr>
-<tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/unzip.exe">unzip.exe</a></td><td>ZIP 展開ツール<br>Windows は ZIP 形式の展開に標準で対応しています。<br><a href="https://ja.wikipedia.org/wiki/ZIP_%28%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%29">ZIP 形式</a>の展開に対応したソフトウェア<span class="footnote">(例えば <a href="http://sevenzip.sourceforge.jp/">7-Zip</a>，<a href="http://www.e7z.org/">Easy 7-Zip</a>，<a href="http://peazip.sourceforge.net/">PeaZip</a>，<a href="http://www.ponsoftware.com/">Explzh</a>，<a href="http://claybird.sakura.ne.jp/garage/lhaforge/">LhaForge</a>，<a href="http://chitora.com/lhaz.html">Lhaz</a> など。)</span>を用いてもかまいません。<br>unzip.exe は TeX Live Win32 版にも含まれています．</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-lib.tar.xz">web2c-lib.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/web2c-w64.tar.xz">web2c-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-w32.tar.xz">web2c-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td colspan="3" style="text-align:left"><strong>最小インストール</strong></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/latex.tar.xz">latex.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/mftools-w64.tar.xz">mftools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/mftools.tar.xz">mftools.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-w64.tar.xz">ptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-w32.tar.xz">ptex-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/platex.tar.xz">platex.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pdftex-w64.tar.xz">pdftex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pdftex-w32.tar.xz">pdftex-w32.tar.xz</a></td><td>必須アーカイブ．TeX → PDF 変換ツール (<a href="/pdfTeX/">pdfTeX</a>)</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-w64.tar.xz">ptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-w32.tar.xz">ptex-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-lib.tar.xz">web2c-lib.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/web2c-w64.tar.xz">web2c-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-w32.tar.xz">web2c-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td colspan="3" style="text-align:left"><strong>標準インストール（最小インストールに加えて）</strong></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipdfm-w64.tar.xz">dvipdfm-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipdfm-w32.tar.xz">dvipdfm-w32.tar.xz</a></td><td>DVI → PDF 変換ツール</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipsk-w64.tar.xz">dvipsk-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipsk-w32.tar.xz">dvipsk-w32.tar.xz</a></td><td>DVI → <a href="/PostScript/">PostScript</a> 変換ツール</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/jtex-w64.tar.xz">jtex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/jtex-w32.tar.xz">jtex-w32.tar.xz</a></td><td>NTT JTeX<br>TeX Live には収録されていません．</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ltxpkgs.tar.xz">ltxpkgs.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/latex.html">LaTeX</a>2e の基本パッケージ集</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luatexja.tar.xz">luatexja.tar.xz</a></td><td><a href="/LuaTeX-ja/">LuaTeX-ja</a></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luatex-w64.tar.xz">luatex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luatex-w32.tar.xz">luatex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/LuaTeX/">LuaTeX</a>)</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/makeindex-w64.tar.xz">makeindex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/makeindex-w32.tar.xz">makeindex-w32.tar.xz</a></td><td>索引作成ツール</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/manual.tar.xz">manual.tar.xz</a></td><td>マニュアル類……質問する前に読みましょう</td></tr>
@@ -297,191 +197,68 @@ W32TeX は 32-bit バイナリと 64-bit バイナリがあります。<br>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
 <tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td>xypic パッケージ: 可換図などを描くのに便利</td></tr>
+<tr><td colspan="3" style="text-align:left"><strong>フルインストール（標準インストールに加えて）</strong></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/aleph-w64.tar.xz">aleph-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/aleph-w32.tar.xz">aleph-w32.tar.xz</a></td><td>Aleph</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td>biblatex と biber</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td>ptex-ng</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/cjkzr.tar.xz">cjkzr.tar.xz</a></td><td><a href="/LaTeX-CJK/">LaTeX-CJK</a></td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td>LuaJITTeX</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luatexja.tar.xz">luatexja.tar.xz</a></td><td><a href="/LuaTeX-ja/">LuaTeX-ja</a></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF パッケージ</a>［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります。<br>otf パッケージの最新版は otfbeta です。</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/context-doc.tar.xz">context-doc.tar.xz</a></td><td>ConTeXt のドキュメント</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/context-w64.tar.xz">context-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/context.tar.xz">context.tar.xz</a></td><td><a href="/ConTeXt/">ConTeXt</a></td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/cweb-w64.tar.xz">cweb-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/cweb-w32.tar.xz">cweb-w32.tar.xz</a></td><td>CWEB</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvi2ps-w64.tar.xz">dvi2ps-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvi2ps-w32.tar.xz">dvi2ps-w32.tar.xz</a></td><td>DVI to PS driver</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvi2tty-w64.tar.xz">dvi2tty-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvi2tty-w32.tar.xz">dvi2tty-w32.tar.xz</a></td><td>DVI to TTY driver</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvitools-w64.tar.xz">dvitools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvitools-w32.tar.xz">dvitools-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td>LuaJITTeX</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつきOmega</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF パッケージ</a>［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります。<br>otf パッケージの最新版は otfbeta です。</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for musixtex</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td>pttoedit</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td>ptex-ng</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/qpdf-w64.tar.xz">qpdf-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td>qpdf</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ttf2pt1-w64.tar.xz">ttf2pt1-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ttf2pt1-w32.tar.xz">ttf2pt1-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/txtutil-w64.tar.xz">txtutil-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txtutil.tar.xz">txtutil.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/tex4ht-w64.tar.xz">tex4ht-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tex4ht-w32.tar.xz">tex4ht-w32.tar.xz</a></td><td>TeX4ht</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/texinfotools-w64.tar.xz">texinfotools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinfotools-w32.tar.xz">texinfotools-w32.tar.xz</a></td><td>TeXinfo tools（日本語サポートつき）</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/tiff2png-w64.tar.xz">tiff2png-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tiff2png-w32.tar.xz">tiff2png-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ttf2pt1-w64.tar.xz">ttf2pt1-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ttf2pt1-w32.tar.xz">ttf2pt1-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ums.tar.xz">ums.tar.xz</a></td><td>ums パッケージ</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/utf.tar.xz">utf.tar.xz</a></td><td>UTF パッケージ</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-n2bk.tar.xz">vf-n2bk.tar.xz</a></td><td>NTT-jTeX 用の Virtual font</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xymtex.tar.xz.tar.xz">xymtex.tar.xz.tar.xz</a></td><td>XyMTeX</td></tr>
 </tbody>
 </table>
 
-## インストール {#s5465eba}
+<!-- |&ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/txtutil-w64.tar.xz);|&ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txtutil.tar.xz);|ユーティリティ類| -->
 
-### 注意点 {#j34b2038}
+#### 簡易インストーラの取得 {#wa3b57f2}
 
-#### フォルダー名 {#y9648ac1}
+[texinst2014.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/texinst2014.zip)を展開してください．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2014.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
 
-&#x2a;.tar.xz ファイルをスペースやマルチバイト文字を含む名前のフォルダー［例えば
-"C:\Program&nbsp;Files\W32TeX\\"，C:\日本語テフ\\
-など］で展開しないでください。<br>
-スペースやマルチバイト文字を含むフォルダーにインストールすると正常に動作しない可能性があります。<br>
+C:\Users>cd C:\w32tex<br>
+C:\w32tex>texinst2014 C:\w32tex\download
 
-### 簡易インストーラー {#j80032ef}
-
-W32TeX には簡易インストーラーが付属しています。<br>
-簡易インストーラーを解凍ソフトで展開する場合は自動フォルダー生成機能は
-OFF にしておいてください。<br>
-インストールがうまくいきません。<br>
-簡易インストーラーは単に \*.tar.xz ファイルを展開するだけなので
-Microsoft Windows
-のレジストリは変更しません。<br>
-W32TeX のアンインストールは単に TeX
-をインストールしたトップフォルダー (C:\w32tex\\) 以下を消すだけです。<br>
-
-### 手順 {#r8bdf779}
-
-インストールはダウンロードした &#x2a;.tar.xz ファイルを，C:\w32tex\ で展開するだけです。<br>
-以下では W32TeX のインストールをコマンドで行う方法を説明します。<br>
-W32TeX をインストールするトップフォルダーは C:\w32tex\\
-としています[^3]。<br>
-C:\w32tex\ 以外の別のフォルダー（ディレクトリ）にインストールする場合には
-“C:\w32tex\” の部分を読み替えてください。<br>
-C:\w32tex\ に展開したあとは「環境変数 PATH の設定」にお進みください。<br>
-
-1. ハードディスクに適当なフォルダーを作り，適当な名前（例えば temp）を付けます。<br>
-    すでに temp というフォルダーがあれば別の名前にします。<br>
-    以下ではCドライブに temp というフォルダー (C:\temp\\) を作ったと仮定します。<br>
-    これ以外のフォルダーの場合は，以下の “C:\temp” は適当に読み替えてください。<br>
-
-1. temp フォルダーに W32TeX のファイル群をダウンロードします。<br>
-    必要なファイルの抜けがないか，よく確認してください。<br>
-    ダウンロードソフトによっては，ファイル名を勝手に変えたりファイルを壊したりするようです。<br>
-    ファイル名とサイズを確認しながら作業してください。<br>
-
-1. ハードディスク（Cドライブ）に新規フォルダーを作成し，w32tex という名前を付けます。<br>
-    新しい W32TeX は w32tex という名前のフォルダーに入れることをお勧めします。<br>
-    w32tex というフォルダーがすでに存在する場合，そこに不要な古い W32TeX がインストールされているなら，削除します。<br>
-
-1. Windows PowerShell またはコマンド プロンプトを起動します。<br>
-1. Windows PowerShell またはコマンド プロンプトに次のように
-    打ち込んで，C:\w32tex\ フォルダーの中に texinst2014.zip を展開します。<br>
-    なお，これはダウンロードしたファイル群がCドライブの
-    temp というフォルダーに入っている場合です。<br>
-
-    ```
-    PS C:\Users\$Env:USERNAME> c:
-    PS C:\Users\$Env:USERNAME> cd \w32tex
-    PS C:\w32tex> c:\temp\unzip c:\temp\texinst2014.zip
-    ```
-
-1. Windows PowerShell またはコマンド プロンプトに次のように打ち込みます。<br>
-    なお，これはダウンロードしたファイル群がCドライブの temp というフォルダーに
-    入っている場合です。<br>
-
-    ```
-    PS C:\w32tex> .\texinst2014 c:/temp
-    ```
-
-    沢山のメッセージが出てきますが，メッセージが完全に止まるまで
-    閉じたり再起動したりしないでください。<br>
-    展開が完了すると以下のメッセージが表示されます。<br>
-
-    ```
-    Add
-    C:\w32tex\bin
-    or
-    C:\w32tex\bin64;C:\w32tex\bin
-    in the case of 64bit OS
-    to user's PATH in the control panel.
-    ```
-
-### $TEXMF, $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS {#s503cb80}
-
-TeX についての解説を読んでいると，$TEXMF，$TEXMFMAIN，$TEXMFLOCAL，$TEXMFPROJECTS
-という単語が出てくることがあります。<br>
-<strong>$TEXMFMAIN</strong> とは
-
-TeX をインストールしたフォルダー（ディレクトリ）の中にある
-share/texmf-dist というフォルダーのことを指しています。<br>
-<strong>$TEXMFDIST</strong> は　<strong>$TEXMFMAIN</strong> と同じです。<br>
-
-<strong>$TEXMFLOCAL</strong> とは
-
-TeX をインストールしたフォルダーの中にある
-share/texmf-local というフォルダーのことを指しています。<br>
-<strong>$TEXMFPROJECTS</strong> とはTeX をインストールしたフォルダーの中にある
-
-share/texmf-projetcs というフォルダーのことを指しています。<br>
-例えば TeX を C:/w32tex/ にインストールしたのなら，
-
-- $TEXMFMAIN = C:/w32tex/share/texmf-dist
-- $TEXMFLOCAL = C:/w32tex/share/texmf-local
-- $TEXMFPROJECTS = C:/w32tex/share/texmf-projects
-
-となります。<br>
-そして <strong>$TEXMF</strong> は
-$TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS のどれか，もしくは全てのことを指しています。<br>
-
-### texmf.cnf の優先順位 {#a06d0a7b}
+ファイルが展開されたら終了です．次のようなメッセージが表示されます．
 
 ```
-  $SELFAUTOLOC
-  $SELFAUTOLOC/share/texmf-local/web2c
-  $SELFAUTOLOC/share/texmf-dist/web2c
-  $SELFAUTOLOC/share/texmf/web2c
-  $SELFAUTOLOC/texmf-local/web2c
-  $SELFAUTOLOC/texmf-dist/web2c
-  $SELFAUTOLOC/texmf/web2c
-  $SELFAUTODIR
-  $SELFAUTODIR/share/texmf-local/web2c
-  $SELFAUTODIR/share/texmf-dist/web2c
-  $SELFAUTODIR/share/texmf/web2c
-  $SELFAUTODIR/texmf-local/web2c
-  $SELFAUTODIR/texmf-dist/web2c
-  $SELFAUTODIR/texmf/web2c
-  $SELFAUTOGRANDPARENT/texmf-local/web2c
-  $SELFAUTOPARENT
-  $SELFAUTOPARENT/share/texmf-local/web2c
-  $SELFAUTOPARENT/share/texmf-dist/web2c
-  $SELFAUTOPARENT/share/texmf/web2c
-  $SELFAUTOPARENT/texmf-local/web2c
-  $SELFAUTOPARENT/texmf-dist/web2c
-  $SELFAUTOPARENT/texmf/web2c
+Add
+C:\w32tex\bin
+or
+C:\w32tex\bin64;C:\w32tex\bin
+in the case of 64bit OS
+to user's PATH in the control panel.
 ```
 
-```
-  $SELFAUTOLOC:         バイナリディレクトリ
-  $SELFAUTODIR:         バイナリディレクトリより1段階上のディレクトリ
-  $SELFAUTOPARENT:      バイナリディレクトリより2段階上のディレクトリ
-  $SELFAUTOGRANDPARENT: バイナリディレクトリより3段階上のディレクトリ
-```
+#### 環境変数 PATH の設定 {#g0475486}
 
-```
-  但し、ルートディレクトリに達すると、その上は無いので、
-  "ルートディレクトリの上" は、ルートディレクトリに一致する。
-```
-
-```
-  環境変数 TEXMFCNF を定義していなければ、上の順番で存在する全ての
-  texmf.cnf が読まれる。同じ変数定義が複数存在する場合、先に読み込んだ
-  定義が有効となる。
-```
-
-```
-  W32TeX の場合、配布される texmf.cnf は
-  $SELFAUTODIR/share/texmf-dist/web2c
-  にある。自分専用の texmf.cnf はこれより優先される
-  $SELFAUTODIR/share/texmf-local/web2c
-  に置いておけばよい。そうすれば、上書きされて専用の設定が消去
-  されるようなことは無い。自分専用の texmf.cnf には必要最小限度の
-  ことを書いておくこと。配布される texmf.cnf に記述してあることを
-  専用の texmf.cnf に記述する必要は無い。
-```
-
-## 環境変数 PATH の設定 {#g0475486}
+上のメッセージに従い，環境変数 PATH に C:\w32tex\bin を追加します．（64bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します．）
 
 W32TeX は環境変数 PATH を設定する必要があります。<br>
-環境変数 PATH を設定するためにシステムのプロパティを起動します。<br>
+環境変数 PATH を設定するためにシステムのプロパティを起動します。コントロールパネルを開き，右上の検索窓で「環境変数」と入力し，「環境変数を編集」を選んでください．または以下でも開けます．
 
 <table>
 <thead>
@@ -502,7 +279,7 @@ SystemPropertiesAdvanced.exe
 
 と打ち込んでも OK です．<br>
 
-システムのプロパティの詳細設定タブの環境変数をクリックします．<br>
+システムのプロパティの詳細設定タブの環境変数をクリックします．（コントロールパネルからの検索で開いた場合は以下の画面は開かれず，直接環境変数の設定画面が開かれます．）
 
 ***
 
@@ -539,53 +316,8 @@ SystemPropertiesAdvanced.exe
 
 ***
 
-もしユーザー環境変数またはシステム環境変数に
-“TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，
-削除してください。<br>
-次に，ユーザー環境変数のところを見てください。<br>
-PATH という欄が
-あればそれをクリックして［編集］を押します。<br>
-変数値の中に古い TeX への
-パス (“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など) があったら削除します。<br>
-
-■ 64-bit バイナリを使用する場合<br>
-64-bit バイナリを使用する場合は変数値の最後に<br>
-“;C:\w32tex\bin64;C:\w32tex\bin” を追加し，\[OK\] を押します。<br>
-PATH が無ければ［新規］を押し，次のように設定してください。<br>
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　<span style="color:Black;"><strong>ユーザー変数の編集</strong></span>　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-変数名(N):　　　　　　　<ins>PATH</ins><br>
-変数値(V):　　　　　　　<ins>C:\w32tex\bin64;C:\w32tex\bin</ins><br>
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境変数</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　W32TeX のユーザー環境変数(U)<br>
-
-> <table>
-> <tbody>
-> <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin</td></tr>
-> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> </tbody>
-> </table>
->
-
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
-
-　　システム環境変数(S)<br>
-...<br>
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
-
-***
-
 ■ 32-bit バイナリを使用する場合<br>
-32-bit バイナリを使用する場合は変数値の最後に<br>
+32-bit バイナリを使用する場合は PATH の値の最後に<br>
 “;C:\w32tex\bin” を追加し，\[OK\] を押します。<br>
 PATH が無ければ［新規］を押し，次のように設定してください。<br>
 
@@ -620,25 +352,76 @@ PATH が無ければ［新規］を押し，次のように設定してくださ
 
 ***
 
-これで \[OK\] を押します。<br>
-再起動の必要はありません。<br>
+■ 64-bit バイナリを使用する場合<br>
+64-bit バイナリを使用する場合は PATH の値の最後に<br>
+“;C:\w32tex\bin64;C:\w32tex\bin” を追加し，\[OK\] を押します。<br>
+PATH が無ければ［新規］を押し，次のように設定してください。<br>
+
+***
+
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　<span style="color:Black;"><strong>ユーザー変数の編集</strong></span>　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+変数名(N):　　　　　　　<ins>PATH</ins><br>
+変数値(V):　　　　　　　<ins>C:\w32tex\bin64;C:\w32tex\bin</ins><br>
+
+***
+
+<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境変数</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+　　W32TeX のユーザー環境変数(U)<br>
+
+> <table>
+> <tbody>
+> <tr><td>変数</td><td>値</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin</td></tr>
+> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
+> </tbody>
+> </table>
+>
+
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
+
+　　システム環境変数(S)<br>
+...<br>
+　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
+
+***
+
 Windows PowerShell やコマンド プロンプトあるいは TeX 関連のソフトウェアを起動している場合は，いったん閉じてください。<br>
+再起動の必要はありませんが，全てのソフトウェアが終了しているか不安な場合は再起動をすれば確実です．
 自分だけではなくユーザー全員に W32TeX を使わせたい場合は，管理者権限でシステム環境変数に PATH を追加します。
 
-## Ghostscript {#zd901fa9}
+#### 以前に TeX をインストールしたことがある場合 {#z02ac16d}
 
-[Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です。<br>
-PS ファイルを PDF ファイルに変換することができます。
+もしユーザー環境変数またはシステム環境変数に
+“TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，
+削除してください。<br>
+次に，ユーザー環境変数のところを見てください。<br>
+PATH という欄が
+あればそれをクリックして［編集］を押します。<br>
+変数値の中に古い TeX への
+パス (“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など) があったら削除します。<br>
 
-もし古い Ghostscript がインストールされていて環境変数 GS_LIB が存在する場合は<br>
-環境変数 GS_LIB を必ず削除しておきます。<br>
-環境変数 GS_LIB を削除する方法は上で説明した 「環境変数 PATH の設定」 の場合と同じです。<br>
+#### Ghostscript {#zd901fa9}
+
+[Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です。TeX で特に画像を使う上でもちいられることが多いので，インストールをしておくことをお勧めします．なお，TeX インストーラ 3 でインストールした場合は，同時にインストールがされますので，ここでのインストールは不要です．
 
 インストールの詳細に関しては<br>
 
 - [Ghostscript/Windows](/Ghostscript/Windows/)
 
 を参照してください。
+
+## アップデート {#o482d037}
+
+### TeX インストーラ 3 によるアップデート {#i798ef70}
+
+abtexinst.exe をもう一度起動します．（インストール時に設定を変更した場合は同じ設定にします．）インストール時と同様に指示に従うことで，TeX インストーラ 3 はファイルの更新を検知し，アップデートを自動で行います．
+
+### 直接アップデート {#r88b7452}
+
+アップデートされたファイルをダウンロードし，texinst2014.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．ただし，古いファイルを手動で消さなければならないことがありますので，[http://w32tex.org/ChangeLog:ChangeLog](http://w32tex.org/ChangeLog:ChangeLog)を参照してください．
 
 ## [SumatraPDF](/SumatraPDF/) {#g6688c53}
 
@@ -648,59 +431,6 @@ SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューア�
 - [SumatraPDF - TeX Wiki](/SumatraPDF/)
 
 を参照してください．
-
-## テスト {#bfc3538f}
-
-例えばCドライブの C:\work\ というフォルダーを作成して
-C:\work\ フォルダーで作業することにしましょう。<br>
-
-Windows PowerShell またはコマンド プロンプトを起動します。
-
-Windows PowerShell の場合は次のように打ち込みます。<br>
-
-```
-PS C:\Users\$Env:USERNAME> Set-Location C:\
-PS C:\> New-Item work -ItemType Directory
-PS C:\> Set-Location work
-PS C:\work> New-Item test.tex -ItemType File
-PS C:\work> texworks test.tex
-```
-
-コマンド プロンプトの場合は次のように打ち込みます。
-
-```
-C:\Users\%USERNAME%>cd /d C:\
-C:\>mkdir work
-C:\>cd work
-C:\work>type nul > test.tex
-C:\work>texworks test.tex
-```
-
-すると [TeXworks](/TeXworks/) が起動します。
-
-次の例をコピーして [TeXworks](/TeXworks/) に貼り付けてください。
-
-***
-
-```
-\documentclass[uplatex]{jsarticle}
-\begin{document}
-
-ただいまテスト中。
-
-\TeX
-
-\end{document}
-```
-
-***
-
-タイプセットを upLaTeX (ptex2pdf) または pdfupLaTeX に設定して Ctrl+T をタイプするとタイプセットが実行されて PDF ファイルが表示されます．<br>
-
-TeXworks をコマンドラインからではなく<br>
-デスクトップでダブルクリックして起動したい場合は<br>
-C:\w32tex\share\texworks\TeXworks.exe のアイコンを右クリックして<br>
-\[送る\]-\[デスクトップ (ショートカットを作成)\] をクリックします．<br>
 
 ### 注意点 {#maff36c0}
 
@@ -803,5 +533,3 @@ command_line_encoding.dvips =
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX)
 
 [^1]: 64ビットプロセッサ ([x86-64](https://ja.wikipedia.org/wiki/X64)) または 32ビットプロセッサ ([IA-32](https://ja.wikipedia.org/wiki/IA-32)) 環境で動作する Microsoft Windows。
-[^2]: 類似する文字コードとして [Windows-31J](http://msdn.microsoft.com/goglobal/cc305152.aspx) があります。この Windows-31J と Shift_JIS は Microsoft Windows 上ではしばしば混同されます。また，Windows-31J は日本語 Microsoft Windows の「メモ帳」では “ANSI” と表示されます。
-[^3]: C:\w32tex の場合、フロントエンドのプログラムが自動で見つけてくれるチャンスが増えます。
