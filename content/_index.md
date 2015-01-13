@@ -210,68 +210,68 @@ pukiwiki: "FrontPage"
     [LibreOffice/Apache OpenOffice](/LibreOffice/),
     [Microsoft Office](</Microsoft Office/>)
 
-- <span style="color:black;background-color:white;"> <strong>プログラミング言語</strong> </span>：
-    プログラミング言語
-    - <span style="color:black;background-color:white;"> <strong>Statically typed programming languages</strong> </span>：
-        C,
-        C++,
-        D,
-        Go,
-        Rust,
-        Nim,
-        Pascal,
-        Fortran,
-        Haskell,
-        Clean,
-        ATS,
-        Standard ML,
-        OCaml,
-        F#,
-        C#,
-        Visual Basic,
-        C++/CLI,
-        C++/CX,
-        Nemerle,
-        Java,
-        Scala,
-        Kotlin,
-        Ceylon
-    - <span style="color:black;background-color:white;"> <strong>Dynamically typed programming languages</strong> </span>：
-        JavaScript,
-        PHP,
-        [Python](/Python/),
-        Julia,
-        [Ruby](/Ruby/),
-        [Perl](/Perl/),
-        Lua,
-        LuaJIT,
-        [Lisp](/Lisp/),
-        Windows PowerShell,
-        Bash
+<!-- -&color(black,white){ ''プログラミング言語'' };： -->
+<!-- [[プログラミング言語]] -->
+<!-- - -&color(black,white){ ''Statically typed programming languages'' };： -->
+<!-- [[C]], -->
+<!-- [[C++]], -->
+<!-- [[D]], -->
+<!-- [[Go]], -->
+<!-- [[Rust]], -->
+<!-- [[Nim]], -->
+<!-- [[Pascal]], -->
+<!-- [[Fortran]], -->
+<!-- [[Haskell]], -->
+<!-- [[Clean]], -->
+<!-- [[ATS]], -->
+<!-- [[Standard ML]], -->
+<!-- [[OCaml]], -->
+<!-- [[F#>F Sharp]], -->
+<!-- [[C#>C Sharp]], -->
+<!-- [[Visual Basic]], -->
+<!-- [[C++/CLI]], -->
+<!-- [[C++/CX]], -->
+<!-- [[Nemerle]], -->
+<!-- [[Java]], -->
+<!-- [[Scala]], -->
+<!-- [[Kotlin]], -->
+<!-- [[Ceylon]] -->
+<!-- - -&color(black,white){ ''Dynamically typed programming languages'' };： -->
+<!-- [[JavaScript]], -->
+<!-- [[PHP]], -->
+<!-- [[Python]], -->
+<!-- [[Julia]], -->
+<!-- [[Ruby]], -->
+<!-- [[Perl]], -->
+<!-- [[Lua]], -->
+<!-- [[LuaJIT]], -->
+<!-- [[Lisp]], -->
+<!-- [[Windows PowerShell]], -->
+<!-- [[Bash]] -->
 
-- <span style="color:black;background-color:white;"> <strong>ライブラリ・フレームワーク</strong> </span>：
-    zlib,
-    libpng,
-    libjpeg,
-    OpenJPEG,
-    LibTIFF,
-    FreeType,
-    libxml2,
-    [Fontconfig](/Fontconfig/),
-    cairo,
-    OpenSSL,
-    cURL,
-    libssh2,
-    libffi,
-    GLib,
-    ICU,
-    HarfBuzz,
-    [MuPDF](/MuPDF/),
-    [Poppler](/Poppler/),
-    GMP,
-    PLplot,
-    Boost,
-    [Qt](/Qt/)
+<!-- -&color(black,white){ ''ライブラリ・フレームワーク'' };： -->
+<!-- [[zlib]], -->
+<!-- [[libpng]], -->
+<!-- [[libjpeg]], -->
+<!-- [[OpenJPEG]], -->
+<!-- [[LibTIFF]], -->
+<!-- [[FreeType]], -->
+<!-- [[libxml2]], -->
+<!-- [[Fontconfig]], -->
+<!-- [[cairo]], -->
+<!-- [[OpenSSL]], -->
+<!-- [[cURL]], -->
+<!-- [[libssh2]], -->
+<!-- [[libffi]], -->
+<!-- [[GLib]], -->
+<!-- [[ICU]], -->
+<!-- [[HarfBuzz]], -->
+<!-- [[MuPDF]], -->
+<!-- [[Poppler]], -->
+<!-- [[GMP]], -->
+<!-- [[PLplot]], -->
+<!-- [[Boost]], -->
+<!-- [[Qt]] -->
 
 - <span style="color:black;background-color:#FFFFFF;"> <strong>その他</strong> </span>：
     [サイトマップ](</サイトマップ/>),
