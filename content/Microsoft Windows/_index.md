@@ -30,116 +30,73 @@ W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参
 
 ### [TeX Live](</TeX Live/>) (Win64, Win32) <a id="texlive"></a><a id="texlive-win64-win32"></a> {#ia336ed2}
 
-TeX Live に関する詳細は [TeX Live - TeX Wiki](</TeX Live/>) を参照してください．
+TeX Live のインストールについては [TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
 
-#### TeX Live のインストール {#ca517ea6}
+## テスト等 {#bfc3538f}
 
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [TeX Live on Windows](http://www.tug.org/texlive/windows.html)
+インストールされたかのチェックを兼ねて，基本的な使い方を試してみましょう．
 
-[Installing TeX Live over the Internet](https://www.tug.org/texlive/acquire-netinstall.html) から install-tl-windows.exe をダウンロード後，ダブルクリックします．<br>
-全ユーザーに対してインストールする場合は 右クリック → 管理者として実行 を選択します．<br>
-基本的には Next や次へなどを押していればインストールはおわります．<br>
-相当に時間がかかります（1時間くらいは覚悟してください）．<br>
-[アラベのPC関連メモ](http://arb-computer.seesaa.net/article/406943877.html)にはスクリーンショットがあります．
+LaTeX ソース編集にはテキストエディタが必要です．すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．
+特にこだわりのない方は，TeX Live とともにインストールされる TeXworks がお勧めです．
+（長らく推奨されていた WinShell よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
 
-#### アップデート {#g130b940}
+以下では，TeXworksをもちいてみます．
+TeXworksは
 
-スタートメニューから TeX Live Manager を起動することで，アップデートが可能です．
+- W32TeX を TeX インストーラ 3 で起動した場合はデスクトップのアイコンから
+- TeX Live をインストールした場合はスタートメニューの「TeX Live 2014」→「TeXworks editor」から
+- W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，コマンドプロンプトから 「texworks」で
+    起動することができます．
 
-Windows PowerShell またはコマンド プロンプトから
+次の四行を入力してみます．
+
+\documentclass{article}<br>
+\begin{document}<br>
+Hello World!<br>
+\end{document}
+
+メニューから「ファイル」→「保存」と選び，適当な場所に保存します．（ツールバーの「保存」ボタンを押すか Ctrl + S を押しても保存されます．）名前は何でもよいです．
+左上の緑の三角の入ったボタンを押してみてください．「Hello World!」と表示されれば成功です．
+
+日本語も試してみましょう．今度は次のようにします．
+
+\documentclass{jsarticle}<br>
+\begin{document}<br>
+こんにちは，\LaTeX<br>
+\end{document}
+
+同様にしてみて「こんにちは，LaTeX」と表示されれば成功です．（LaTeX は大文字 A が上がり，大文字 E が下がった「本来の方法」で表示されているはずです．）
+以上で LaTeX のインストールは終了です．
+また，TeXworks による編集も行えるようになりました．
+後は[TeX入門](</TeX入門/>)などを参照しつつ文書の作成を行ってみてください．
+
+### エラー時 {#b258335d}
+
+エラーが起こったからといって，「インストールに失敗した！」と判断するのは早すぎます．打ち込んだものにミスがあるかもしれません．
+
+#### 「プログラム"\*\*\*"が見付かりません」というエラー {#sdeb8cbf}
+
+残念ながらインストールに失敗しているでしょう．もう一度インストールを試してみてください．または，インストール後手動で設定した場合は，その際にミスをしているかもしれません．もう一度確認をしてみてください．
+
+#### LaTeX のエラー {#j87636b4}
+
+コンパイルでエラーが発生すると，TeXworks 下段の「ログの表示」にエラーに関する情報が表示されます．たとえば
+
+\ddocumentclass{jsarticle}
+
+としてしまうと（dが一つ多い）次のように表示されます．
 
 ```
-tlmgr update --self --all
+! Undefined control sequence.
+l.1 \ddocumentclass
+                   {jsarticle}
 ```
 
-でも行えます．
-
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
-
-- C:\texlive\2014\tlpkg\backups
-
-にパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
-
-パッケージは
-
-- [tlmgr](/tlmgr/) (コマンドライン)
-- [TeX Live Manager](</TeX Live Manager/>) (GUI)
-
-で管理できます．<br>
-
-#### extractbb の追加 {#tf06ef9d}
-
-画像などをうめこむ際には，extractbbが自動で実行されるようにしておくと便利です．<br>
-スタートメニューなどからメモ帳を起動し次のようなファイルを作成してください．<br>
-（メモ帳ではなくてもテキストエディタならば何でもよいです．）
-
-```
-shell_escape_commands = \
-bibtex,pbibtex,jbibtex,repstopdf,epspdf,extractbb,\
-makeindex,mendex,mpost,pmpost,upmpost,kpsewhich
-```
-
-これを C:\texlive\texmf-local\web2c\texmf.cnf として保存します．<br>
-なお，メモ帳の場合は，保存画面にて「ファイルの種類」を「全てのファイル (\*.\*)」に変更しておく必要があります．<br>
-（余計な拡張子 .txt が付加されてしまいます．）
-
-#### TeXworksの設定 {#wa1faa7d}
-
-LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．<br>
-手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．<br>
-スタートメニューから起動することで動きます．<br>
-ただし，日本語用の設定が必要です → [TeXworks/設定/Windows](</TeXworks/設定/Windows/>)もご覧ください．
-
-#### トラブル対策 {#w1959e65}
-
-失敗しても，再度実行することで成功することがあります．繰り返してみてください．<br>
-（ダウンロードされているものがまたダウンロードされることはないので，初回よりは早くなります．）
-
-TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
-
-- [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
-- [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
-
-以下も参考に．
-
-- [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
-- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
-
-#### インストールのやり方などの事例 {#w0a33f0d}
-
-[TeX Live（TeX環境）のインストール](http://ryskiwt.blog.fc2.com/blog-entry-28.html)
-: 2014-10-14
-
-[Texインストール](http://arb-computer.seesaa.net/article/406943877.html)
-: 2014-10-11
-
-[TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
-: 2014-10-01
-
-[TeX Live 2014 for Windows](http://www.baldanders.info/spiegel/log2/000730.shtml)
-: 2014-09-03
-
-[Windows 8.1 に TeX Live 2014 をインストール](http://qiita.com/ignorant/items/21545cde3c9bbafaa264)
-: 2014-08-29
-
-[docs/TeX/TeX on Windows - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows)
-: 2014-08-11
-
-[Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．](http://qiita.com/ConHumi/items/f0d12ab1ad433591c192)
-: 2014-07-31
-
-[TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
-: 2014-06-21
+「x」または「e」を入力することで，ファイルの編集に戻ることができます．このようにエラーのある箇所が表示されるので，そこを中心に確認してみてください．エラー内容に関しては[LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)も参考にしてください．
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
 
 LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．<br>
-すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．<br>
-特にこだわりのない方は，TeX Live とともにインストールされる TeXworks がお勧めです．<br>
-（長らく推奨されていた WinShell よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
 
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
@@ -188,3 +145,146 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）<br>
 TeXworks には PDF 用のビューアが組み込まれています．<br>
 単独の LaTeX 用 PDF プレビューアは [SumatraPDF](/SumatraPDF/) がお勧めです．
+
+<!-- W32TeX から．TeX Liveの項にでも書く？ -->
+<!-- **$TEXMF, $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS [#s503cb80] -->
+<!-- TeX についての解説を読んでいると，$TEXMF，$TEXMFMAIN，$TEXMFLOCAL，$TEXMFPROJECTS -->
+<!-- という単語が出てくることがあります。~ -->
+<!-- ''$TEXMFMAIN'' とは -->
+<!-- TeX をインストールしたフォルダー（ディレクトリ）の中にある -->
+<!-- share/texmf-dist というフォルダーのことを指しています。~ -->
+<!-- ''$TEXMFDIST'' は　''$TEXMFMAIN'' と同じです。~ -->
+<!-- ''$TEXMFLOCAL'' とは -->
+<!-- TeX をインストールしたフォルダーの中にある -->
+<!-- share/texmf-local というフォルダーのことを指しています。~ -->
+<!-- ''$TEXMFPROJECTS'' とはTeX をインストールしたフォルダーの中にある -->
+<!-- share/texmf-projetcs というフォルダーのことを指しています。~ -->
+<!-- 例えば TeX を C:/w32tex/ にインストールしたのなら， -->
+<!-- -$TEXMFMAIN = C:/w32tex/share/texmf-dist -->
+<!-- -$TEXMFLOCAL = C:/w32tex/share/texmf-local -->
+<!-- -$TEXMFPROJECTS = C:/w32tex/share/texmf-projects -->
+<!--  -->
+<!-- となります。~ -->
+<!-- そして ''$TEXMF'' は -->
+<!-- $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS のどれか，もしくは全てのことを指しています。~ -->
+<!--  -->
+<!-- **texmf.cnf の優先順位 [#a06d0a7b] -->
+<!--   $SELFAUTOLOC -->
+<!--   $SELFAUTOLOC/share/texmf-local/web2c -->
+<!--   $SELFAUTOLOC/share/texmf-dist/web2c -->
+<!--   $SELFAUTOLOC/share/texmf/web2c -->
+<!--   $SELFAUTOLOC/texmf-local/web2c -->
+<!--   $SELFAUTOLOC/texmf-dist/web2c -->
+<!--   $SELFAUTOLOC/texmf/web2c -->
+<!--   $SELFAUTODIR -->
+<!--   $SELFAUTODIR/share/texmf-local/web2c -->
+<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
+<!--   $SELFAUTODIR/share/texmf/web2c -->
+<!--   $SELFAUTODIR/texmf-local/web2c -->
+<!--   $SELFAUTODIR/texmf-dist/web2c -->
+<!--   $SELFAUTODIR/texmf/web2c -->
+<!--   $SELFAUTOGRANDPARENT/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT -->
+<!--   $SELFAUTOPARENT/share/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT/share/texmf-dist/web2c -->
+<!--   $SELFAUTOPARENT/share/texmf/web2c -->
+<!--   $SELFAUTOPARENT/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT/texmf-dist/web2c -->
+<!--   $SELFAUTOPARENT/texmf/web2c -->
+<!--  -->
+<!--  -->
+<!--   $SELFAUTOLOC:         バイナリディレクトリ -->
+<!--   $SELFAUTODIR:         バイナリディレクトリより1段階上のディレクトリ -->
+<!--   $SELFAUTOPARENT:      バイナリディレクトリより2段階上のディレクトリ -->
+<!--   $SELFAUTOGRANDPARENT: バイナリディレクトリより3段階上のディレクトリ -->
+<!--  -->
+<!--   但し、ルートディレクトリに達すると、その上は無いので、 -->
+<!--   "ルートディレクトリの上" は、ルートディレクトリに一致する。 -->
+<!--  -->
+<!--   環境変数 TEXMFCNF を定義していなければ、上の順番で存在する全ての -->
+<!--   texmf.cnf が読まれる。同じ変数定義が複数存在する場合、先に読み込んだ -->
+<!--   定義が有効となる。 -->
+<!--  -->
+<!--   W32TeX の場合、配布される texmf.cnf は -->
+<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
+<!--   にある。自分専用の texmf.cnf はこれより優先される -->
+<!--   $SELFAUTODIR/share/texmf-local/web2c -->
+<!--   に置いておけばよい。そうすれば、上書きされて専用の設定が消去 -->
+<!--   されるようなことは無い。自分専用の texmf.cnf には必要最小限度の -->
+<!--   ことを書いておくこと。配布される texmf.cnf に記述してあることを -->
+<!--   専用の texmf.cnf に記述する必要は無い。 -->
+<!--  -->
+<!--  -->
+<!-- 拡張子表示は書いておいた方がよいかも？ -->
+<!-- *フォルダー オプション [#y4579ed3] -->
+<!--  -->
+<!-- W32TeX をインストールする前に拡張子や隠しファイル、隠しフォルダーおよび隠しドライブを表示する設定をします．~ -->
+<!--  -->
+<!-- Windows PowerShell または コマンド プロンプトを起動します．~ -->
+<!-- > -->
+<!-- |CENTER:~バージョン|CENTER:~Windows PowerShell の起動方法|h -->
+<!-- |Windows 10|［Windows キーを押す］-［Search everywhere］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
+<!-- |Windows 8.1|［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
+<!-- |Windows 7|［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
+<!-- < -->
+<!-- > -->
+<!-- |CENTER:~バージョン|CENTER:~コマンド プロンプトの起動方法|h -->
+<!-- |Windows 10|［Windows キーを押す］-［Search everywhere］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
+<!-- |Windows 8.1|［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
+<!-- |Windows 7|［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
+<!-- < -->
+<!--  -->
+<!-- Windows PowerShell またはコマンド プロンプトに次のように -->
+<!-- 打ち込んでフォルダー オプションを表示します．~ -->
+<!--  -->
+<!-- control folders -->
+<!--  -->
+<!-- 表示タブをクリックします．~ -->
+<!--  -->
+<!-- -隠しファイル、隠しフォルダーおよび隠しドライブを表示する -->
+<!--  -->
+<!-- を選択します．~ -->
+<!--  -->
+<!-- -登録されている拡張子は表示しない -->
+<!--  -->
+<!-- のチェックをはずします．~ -->
+<!-- - --  -->
+<!-- &color(#3EAEC0,#3EAEC0){%%%　　　　　　　　　　　　　　　　　　　&color(Black){''フォルダー オプション''};　　　　　　　　　　　　　　　　　　　　&color(#DD4444,#DD4444){%%%[ &color(White){''×''}; ]%%%};%%%};&br; -->
+<!-- &color(Black,#EEEEEE){%%%[ 全般　 ]%%%};''[ 表示　 ]''&color(Black,#EEEEEE){%%%[ 検索　 ]%%%};&br; -->
+<!--  -->
+<!-- 　　 フォルダーの表示&br; -->
+<!-- 　　　　　　　　　　　　この表示方法 (詳細表示やアイコンなど) をこの種類のフォルダーす&br; -->
+<!-- 　　　　　　　　　　　　べてに適用することができます。&br; -->
+<!-- 　　　　　　　　　　　　　&color(#888888,#EEEEEE){[　　フォルダーに適用(L)　　]};　&color(Black,#EEEEEE){[　　フォルダーをリセット(R)　　]};&br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- 　　 詳細設定:&br; -->
+<!-- 　　　　ファイルおよびフォルダー&br; -->
+<!-- 　　　　☑ ステータス バーを表示する&br; -->
+<!-- 　　　　☐ タイトル バーに完全なパスを表示する&br; -->
+<!-- 　　　　☐ チェックボックスを使用して項目を選択する&br; -->
+<!-- 　　　　☑ ドライブ文字を表示する&br; -->
+<!-- 　　　　　ファイルとフォルダーの表示&br; -->
+<!-- 　　　　　&color(black,yellow){''(●) 隠しファイル、隠しフォルダーおよび隠しドライブを表示する ← 選択する''};&br; -->
+<!-- 　　　　　 ◯ 隠しファイル、隠しフォルダーおよび隠しドライブを表示しない&br; -->
+<!-- 　　　　☑ フォルダーとデスクトップの項目の説明をポップアップで表示する&br; -->
+<!-- 　　　　☑ フォルダーのヒントにファイル サイズ情報を表示する&br; -->
+<!-- 　　　　☑ フォルダーの結合の競合を非表示にする&br; -->
+<!-- 　　　　☑ プレビュー ウィンドウでプレビューのハンドラーを表示する&br; -->
+<!-- 　　　　　リスト ビューで入力するとき&br; -->
+<!-- 　　　　　 ◯ 検索ボックスに自動的に入力する&br; -->
+<!-- 　　　　　(●) 入力した項目をビューで選択する&br; -->
+<!-- 　　　　☐ ログオン時に以前のフォルダー ウィンドウを表示する&br; -->
+<!-- 　　　　☑ 暗号化や圧縮された NTFS ファイルをカラーで表示する&br; -->
+<!-- 　　　　☑ 共有ウィザードを使用する (推奨)&br; -->
+<!-- 　　　　☑ 空のドライブは表示しない&br; -->
+<!-- 　　　　☑ 縮小版にファイル アイコンを表示する&br; -->
+<!-- 　　　　☐ 常にアイコンを表示し、縮小版は表示しない&br; -->
+<!-- 　　　　☐ 常にメニューを表示する&br; -->
+<!-- 　　　　&color(black,yellow){''☐ 登録されている拡張子は表示しない ← チェックをはずす''};&br; -->
+<!-- 　　　　☐ 別のプロセスでフォルダー ウィンドウを開く&br; -->
+<!-- 　　　　☑ 保護されたオペレーティング システム ファイルを表示しない (推奨)&br; -->
+<!-- &br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#EEEEEE){[　　既定値に戻す(D)　　]};&br; -->
+<!-- - --  -->
+<!--  -->
