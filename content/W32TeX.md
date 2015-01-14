@@ -49,17 +49,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 以下のサイトからダウンロードが可能です．
 
-\[FTP\]<br>
-
-- [Ring Server](http://www.ring.gr.jp/)
-    <!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+\[FTP\]<br> <!-- -[[Ring Server:http://www.ring.gr.jp/]] --> <!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 
 - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
