@@ -14,7 +14,6 @@ pukiwiki: "FrontPage"
 - <span style="color:black;background-color:white;"><strong>TeX のインストール</strong></span>：使用している OS を選択します
     - <span style="color:black;background-color:white;"><strong>動作環境</strong></span>：
         [MS Windows](</Microsoft Windows/>),
-        [Cygwin](/Cygwin/),
         [OS X](/Mac/),
         [Linux OS](/Linux/),
         [BSD](/BSD/),
