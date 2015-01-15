@@ -9,15 +9,13 @@ pukiwiki: "Biblatex"
 
 ## BibLaTeX {#a1e92399}
 
-BibLaTeX は，LaTeX における参考文献管理を強化するパッケージです．<br>
+BibLaTeX は，LaTeX における参考文献管理を強化するパッケージです．
 TeX Live, W32TeX に標準で含まれています．
 
 ### BibLaTeX のバックエンドプログラム {#fc4640c7}
 
-BibLaTeX はバックエンドとして biber や BibTeX を使用します．<br>
+BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 これらのバックエンドプログラムは文献のソートのみを担当し，フォーマットなどの残り全てを TeX のマクロによって行います．
-
-<br>
 
 ### 関連リンク {#nee629d4}
 
