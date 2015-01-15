@@ -7,15 +7,39 @@ pukiwiki: "TeX入手法"
 
 # TeX入手法
 
-## TeXと関連ソフトの入手先 {#z43d673b}
+## TeX 入手法 {#webfdcfe}
 
-\[TODO\] OSごとのページができたのでこれはそちらに吸収させてもいいですね。-- 奥村
+<!-- やっぱり TeX のインストールの案内ページとして，このまとめは必要だと判断し， -->
+<!-- 同じ「TeX入手法」というページ名で復活させました． - - アセトアミノフェン (2015-01-16) -->
 
-- Microsoft Windows
-    - [手動でインストール](</Microsoft Windows/>)
-    - インストーラ
-        - TeX インストーラ 3
+### TeX のインストール {#w6f35a2c}
+
+詳しいインストール方法は，利用する OS にあわせた解説ページを参照してください．
+
+- [Microsoft Windows](</Microsoft Windows/>)
 - [OS X](/Mac/)
-- [Linux OS](/Linux/)
-- FreeBSD
-- [TeXの本](</TeXの本/>)
+- [Linux](/Linux/)
+- [BSD](/BSD/)
+- [Cygwin](/Cygwin/)
+- [Android](/Android/)
+- [iOS](/iOS/)
+
+入門書に付属するインストーラからも可能です．
+
+- [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) ← おすすめ！
+
+インストールせずに Web で試してみることもできます．
+
+- [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
+- [TeX を Web で](</TeXをWebで/>)
+
+### 主要な TeX ディストリビューション {#ef41d307}
+
+TeX ディストリビューションごとの解説ページです．<br>
+現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．<br>
+
+- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux) ← おすすめ！
+- <strong>[W32TeX](/W32TeX/)</strong> (for Windows) ← おすすめ！
+- <strong>[MacTeX](/Mac/#mactex)</strong> (for OS X) ← おすすめ！
+- [MiKTeX](/MiKTeX/) (for Windows)
+- [BasicTeX](/Mac/#basictex) (for OS X)
