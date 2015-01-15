@@ -16,12 +16,9 @@ pukiwiki: "Linux"
 
 ## Linux ディストリビューション {#h2a1700b}
 
-- [Distros - TeX Live - TeX Users Group](http://www.tug.org/texlive/distro.html)
-
 Linux はディストリビューションによって TeX のインストール方法が異なります．<br>
 Linux ディストリビューションに収録されている TeX Live をインストールする場合はディストリビューションごとの項目をご覧ください．<br>
-[TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．<br>
-最新のソフトウェアを使用したい場合は [Arch Linux](</Linux/Arch Linux/>) をおすすめします．<br>
+[TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．
 
 {{< children >}}
 
@@ -29,16 +26,16 @@ Linux ディストリビューションに収録されている TeX Live をイ�
 
 ### [TeX Live](</TeX Live/>) <a id="texlive"></a> {#d212a0d5}
 
-最新版の TeX Live をおすすめします．<br>
+最新版の TeX Live をおすすめします．
 
 #### TeX Live のインストール <a id="texliveinstall"></a> {#i0a1ca9a}
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を参照．<br>
+を参照．
 
-[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 - wget を使用する場合
 
@@ -52,37 +49,43 @@ Linux ディストリビューションに収録されている TeX Live をイ�
     $ curl -O http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
-install-tl-unx.tar.gz を展開します．<br>
+install-tl-unx.tar.gz を展開します．
 
 ```
 $ tar xvf install-tl-unx.tar.gz
 ```
 
-展開したインストーラのディレクトリに移動します．<br>
+展開したインストーラのディレクトリに移動します．
 
 ```
 $ cd install-tl*
 ```
 
 root 権限でインストーラを実行します．<br>
-オプションでダウンロードするリポジトリを指定できます．<br>
+オプションでダウンロードするリポジトリを指定できます．
 
 ```
 $ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
+```
 
+```
 ...
+```
 
+```
 Actions:
  <I> start installation to hard disk
  <H> help
  <Q> quit
+```
 
+```
 Enter command: I
 ```
 
 I を入力してインストールを開始します．<br>
 サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
-エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
+エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．
 
 ```
 $ sudo ./install-tl --profile installation.profile
@@ -91,7 +94,7 @@ Do you want to continue with the exact same settings as before (y/N): y
 ```
 
 再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
-インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
+インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
 
 ```
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
@@ -105,26 +108,26 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo tlmgr update --self --all
 ```
 
-を実行すれば OK です．<br>
+を実行すれば OK です．
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
 - /usr/local/texlive/????/tlpkg/backups
 
 にパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br> <!-- やり方を書く． -->
 
 #### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
 
 TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
-TEXMFLOCAL の値を確認します．<br>
+TEXMFLOCAL の値を確認します．
 
 ```
 $ kpsewhich -var-value TEXMFLOCAL
 /usr/local/texlive/texmf-local
 ```
 
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．
 
 ```
 $ sudo mkdir -p /usr/local/texlive/texmf-local/web2c
@@ -132,7 +135,7 @@ $ sudo touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
 ```
 
 /usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
+shell_escape_commands を以下のように編集して保存します．
 
 ```
 shell_escape_commands = \
@@ -143,7 +146,7 @@ mpost,upmpost,\
 repstopdf,epspdf,extractbb
 ```
 
-mktexlsr を実行します．<br>
+mktexlsr を実行します．
 
 ```
 $ sudo mktexlsr
@@ -152,7 +155,7 @@ $ sudo mktexlsr
 #### フォント埋め込みの設定 {#w8cc5799}
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
+IPAexフォントを埋め込む場合は
 
 ```
 $ sudo kanji-config-updmap-sys ipaex
@@ -164,9 +167,9 @@ $ sudo kanji-config-updmap-sys ipaex
 $ kanji-config-updmap ipaex
 ```
 
-を実行します．<br>
+を実行します．
 
-TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
+TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．
 
 ```
 $ kpsewhich ipaexm.ttf ipaexg.ttf
@@ -176,7 +179,7 @@ $ kpsewhich uptex-ipaex.map
 /usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
 ```
 
-upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．
 
 ```
 $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
@@ -184,19 +187,14 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 
 ### [W32TeX](/W32TeX/) {#od6f4f13}
 
-[W32TeX](/W32TeX/) は Wine で動作します．<br>
-TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．<br>
+[W32TeX](/W32TeX/) は Windows 向けの TeX ディストリビューションですが， Wine を使えば Linux 上で利用することも可能です．<br>
+TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．
 
 - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
 
-LaTeX での文書作成を支援するための統合環境・エディタが開発されています．<br>
-初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのがいいとおもいます．<br>
-エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります．<br>
-問題が発生した場合は別のエディタを使用してください．<br>
-人によってエディタの好みは様々なので自分にあったエディタを見つけてください．<br>
-見つからない人は自作してみるのもいいかもしれません．<br>
+LaTeX での文書作成を支援するための統合環境・エディタが開発されています．
 
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
@@ -261,15 +259,3 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://jabref.sourceforge.net/)
 - [QRef](http://members3.jcom.home.ne.jp/qref/)
-
-## シェルスクリプト関連 {#z69d3afc}
-
-- Bash
-
-## Linux 関連 {#n1de1185}
-
-- [DistroWatch.com](http://distrowatch.com/)
-- [Open Source Watershed](http://oswatershed.org/)
-- [30 人の Linux カーネル開発者](https://jp.linux.com/linux-community/30linuxkerneldevelopers)
-- [Linux のシステム管理，Linux でソフトウエア開発環境やデスクトップ環境を作る](http://www.kkaneko.com/rinkou/linux/)
-- [デスクトップ環境 OS 紹介サイト - Linux を入れよう](http://installlinux.jimdo.com/)
