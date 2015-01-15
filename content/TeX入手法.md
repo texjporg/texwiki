@@ -35,8 +35,9 @@ pukiwiki: "TeX入手法"
 
 ### 主要な TeX ディストリビューション {#ef41d307}
 
-TeX ディストリビューションごとの解説ページです．<br>
-現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．<br>
+TeX ディストリビューションごとの解説ページです．
+現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
+OS X 用の [MacTeX](/Mac/#mactex) は TeX Live をベースにしたものです．
 
 - <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux) ← おすすめ！
 - <strong>[W32TeX](/W32TeX/)</strong> (for Windows) ← おすすめ！
