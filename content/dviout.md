@@ -11,7 +11,7 @@ pukiwiki: "dviout"
 
 ## dviout for Windows とは？ {#i1497a3b}
 
-dviout for Windows は (e-)(u)pTeX 対応の DVI プレビューアです。<br>
+dviout for Windows は (e-)(u)pTeX 対応の DVI プレビューアです。
 詳しくは開発者（[大島利雄さん](http://akagi.ms.u-tokyo.ac.jp/~oshima/)）ご自身によるページをご覧ください。
 
 - [Oshima Laboratory Home Page (JP)](http://akagi.ms.u-tokyo.ac.jp/index-j.html) (大島研究室＠東京大)
@@ -24,6 +24,8 @@ dviout for Windows は (e-)(u)pTeX 対応の DVI プレビューアです。<br>
 USBメモリ活用講座の dviout for Windows のページも参考にしてください。<br>
 
 - [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml)
+
+なお，長らく dvi ファイルによるプレビューが行われており，dviout は Windows 上の dvi プレビューアとして広く使われてきました．しかし，最近では pdf ファイルによるプレビューの方が問題が少なくなるとされています（[古い情報](</古い情報/>)も参考のこと）．[SumatraPDF](/SumatraPDF/) などの PDF プレビューアも検討してみてください．
 
 ### 動作環境 {#n7f5a256}
 
