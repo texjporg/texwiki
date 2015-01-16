@@ -113,4 +113,4 @@ pdftitle=\@title
 
 ## 関連リンク {#x293be61}
 
-- [HyperTeX - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?HyperTeX)
+- [HyperTeX - MyTeXpert](http://mytexpert.osdn.jp/index.php?HyperTeX)
