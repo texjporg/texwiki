@@ -9,7 +9,7 @@ pukiwiki: "hyperref"
 
 ## [hyperref](http://www.tug.org/applications/hyperref/) {#s8bca501}
 
-[hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは、TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです。
+[hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは，TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです．
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -20,8 +20,8 @@ pukiwiki: "hyperref"
 
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
-[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する upLaTeX, pLaTeX 用のパッケージです．<br>
-PXjahyper パッケージは TeX Live, W32TeX に含まれています．<br>
+[PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する upLaTeX, pLaTeX 用のパッケージです．
+PXjahyper パッケージは TeX Live, W32TeX に含まれています．
 
 #### ChangeLog {#h773478f}
 
@@ -78,9 +78,9 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 [非 e-TeX で hyperref を使うと……](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) を参照．
 
-2012/05/28 の oberdiek バンドルの更新でこの問題が解決されました。<br>
-詳細については上掲のリンク先を参照してください。<br>
-2012/06/13 以降の W32TeX ではこの新しい oberdiek バンドルが含まれています。<br>
+2012/05/28 の oberdiek バンドルの更新でこの問題が解決されました．
+詳細については上掲のリンク先を参照してください．
+2012/06/13 以降の W32TeX ではこの新しい oberdiek バンドルが含まれています．
 
 ### 指定可能なオプション {#za8c61cb}
 
@@ -120,27 +120,27 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 とすることも可能です．
 
-しおりを作成する場合は2回コンパイルが必要です．<br>
-\usepackage で dvipdfmx を指定してエラーが発生する場合は hyperref パッケージを最新版 にアップデートしてください．<br>
+しおりを作成する場合は2回コンパイルが必要です．
+\usepackage で dvipdfmx を指定してエラーが発生する場合は hyperref パッケージを最新版にアップデートしてください．
 
-hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．<br>
+hyperref は pTeX の縦書きモードの場合にうまくいかないことがあるようです．
 
 - [pLaTeX縦書きでhyperrefパッケージを使うときの変更点](http://qiita.com/munepi/items/004d19a657d3bf2d4ded)
 - [pTeXで縦書きモード時にハイパーリンクを埋め込む方法のメモ](http://d.hatena.ne.jp/yayugu/20110526/1306417041)
 
 #### (e-)(u)pTeX の内部コードを判別して hyperref の設定を切り換える {#a2ccb2b3}
 
-(u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．<br>
+(u)platex + dvipdfmx で，日本語を使用する場合は [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すればしおり・タイトル等の日本語の文字化けを防止できます．
 
 ```
 \usepackage[dvipdfmx]{hyperref}
 \usepackage{pxjahyper}
 ```
 
-使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．<br>
-PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)<br>
-CMap は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．<br>
-TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は、UTF8-UCS2 はインストール済みです。 (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)<br>
+使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．
+PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)
+CMap は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．
+TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は，UTF8-UCS2 はインストール済みです． (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -158,9 +158,9 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場�
 \fi
 ```
 
-補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex/UTF8-UTF16?view=markup) を使用します．<br>
-[TeX memo - upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．<br>
-TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場合は UTF8-UTF16 はインストール済みです．<br>
+補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex/UTF8-UTF16?view=markup) を使用します．
+[TeX memo - upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．
+TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場合は UTF8-UTF16 はインストール済みです．
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -178,10 +178,10 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場�
 \fi
 ```
 
-\usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．<br>
-\usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．<br>
+\usepackage\[dvipdfmx\]{hyperref} の前に \usepackage{atbegshi} を記述する必要があります．
+\usepackage\[dvipdfmx\]{hyperref} の後に \usepackage{atbegshi} を記述すると PDF のタイトルが文字化けしてしまいます．
 
-(u)platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk または bkmk2uni を使用します．<br>
+(u)platex + dvips + Ghostscript (ps2pdf) で日本語の文字化けを防止する場合は Postscript ファイルに対して convbkmk または bkmk2uni を使用します．
 
 ```
 \usepackage{hyperref}
@@ -195,8 +195,8 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場�
  pdfkeywords={TeX; dvipdfmx; hyperref; color;}}
 ```
 
-uplatex, platex を使用してドライバオプションを指定しない場合はデフォルトでは dvips に設定されます．<br>
-指定しないとうまく動作しない場合は以下のように指定します．<br>
+uplatex, platex を使用してドライバオプションを指定しない場合はデフォルトでは dvips に設定されます．
+指定しないとうまく動作しない場合は以下のように指定します．
 
 ```
 \usepackage[dvips]{hyperref}
@@ -220,7 +220,7 @@ unicode=true
 \usepackage[pdfencoding=auto]{hyperref}
 ```
 
-lualatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
+lualatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．
 
 ```
 \usepackage[pdftex,pdfencoding=auto]{hyperref}
@@ -232,7 +232,7 @@ xelatex の場合は、指定しても指定しなくても文字化けしない
 \usepackage{hyperref}
 ```
 
-xelatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．<br>
+xelatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．
 
 ```
 \usepackage[xetex]{hyperref}
@@ -363,7 +363,7 @@ xelatex の場合はドライバは自動検出されます．指定しないと
 
 ### 提供されるコマンド {#dd6f0c82}
 
-hyperref.styを読み込むことによって下記のコマンドが使用可能。
+hyperref.sty を読み込むことによって下記のコマンドが使用可能になります．
 
 | コマンド | 説明 |
 |---|---|
@@ -377,7 +377,7 @@ hyperref.styを読み込むことによって下記のコマンドが使用可�
 
 ### url/nolinkurl {#h026c44c}
 
-url及びnolinkurl とは hyperref.styを読み込むことによって使用可能なコマンドの一つ
+url 及び nolinkurl とは，hyperref.styを読み込むことによって使用可能なコマンドの一つです．
 
 - url文字列を指定フォントへ変更する
 - tildeを上手に処理してくれる
@@ -413,8 +413,8 @@ url文字列にはhyper link機能が付与されます．（下記例ではnoli
 \Acrobatmenu{menuoption}{text}
 ```
 
-PDF 文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができます。<br>
-最新の Adobe Reader では，セキュリティ上の制限により，過去のバージョンのものとは挙動が異なるものもあります。
+PDF 文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができます．
+最新の Adobe Reader では，セキュリティ上の制限により，過去のバージョンのものとは挙動が異なるものもあります．
 
 #### \Acrobatmenu の例 {#p427ac0e}
 
@@ -441,7 +441,7 @@ PDF 文書の中に「次のページへ」や「先頭のページへ」など�
 
 ### 他のパッケージとの互換性 {#z442922c}
 
-他のパッケージとhyperrefを同時使用する際には、ちょっとした工夫が必要だったり、読み込む順番に気をつけなればならないものもある。
+他のパッケージとhyperrefを同時使用する際には，ちょっとした工夫が必要だったり，読み込む順番に気をつけなればならないものもあります．
 
 #### algorithm {#o8dbc2be}
 
@@ -875,18 +875,18 @@ de.comp.text.tex (2005/08/11, slightly modified):
 
 #### urlパッケージ {#u1bf19c1}
 
-hyperrefパッケージと同じ(?) \urlコマンドを提供する．
+hyperref パッケージと同じ(?) \url コマンドを提供します．
 
 #### beamerクラス {#z7cec6eb}
 
-hyperrefパッケージをデフォルトで読み込む．
+hyperref パッケージをデフォルトで読み込みます．
 
 ### しおりの色とフォントスタイルの変更 {#xafa8ac2}
 
-以下にサンプルコードを示します。hyperref 6.83m で確認しました．<br>
-hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります．<br>
-その場合は，変更できないと思われるので，適宜修正して使ってください．<br>
-この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります．<br>
+以下にサンプルコードを示します．hyperref 6.83m で確認しました．
+hyperref は，バージョンによって中身の構造がここで示した例とは異なる場合があります．
+その場合は変更できないと思われるので，適宜修正して使ってください．
+この機能は PDF-1.4 (Acrobat 5.x) 以降のバージョンで有効になります．
 
 #### pdftex の場合 {#ec16a11d}
 
@@ -1116,6 +1116,7 @@ abc
 
 ### 関連リンク {#h792e133}
 
+- [HyperTeX](/HyperTeX/)
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
 - [bst fileでhyperrefを入れる方法](http://warubobo13.hatenablog.jp/entry/2013/02/03/074303)
 
