@@ -121,6 +121,7 @@ ulimit -t 10 -f 1024
 #### フリーソフトウェア (オープンソースソフトウェア) {#g834836b}
 
 - [ShareLaTeX](https://github.com/sharelatex/sharelatex)
+    - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
     - [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
 - [JaxEdit](http://jaxedit.com/)
 - [texlive.js](http://manuels.github.io/texlive.js/)
@@ -130,6 +131,7 @@ ulimit -t 10 -f 1024
 
 - [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
+    - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
 
 ### Web で数式 {#m2a3514f}
 
