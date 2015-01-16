@@ -7,11 +7,20 @@ pukiwiki: "WinShell"
 
 # WinShell
 
-<span style="font-size:40px">WinShell はエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するかもしれません．</span><br>
+## WinShell {#t788b13b}
 
-<span style="font-size:40px">問題が発生する場合は WinShell ではなく [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用してください．</span><br>
+<span style="font-size:40px">WinShell は現在，非推奨です！</span>
 
-## [WinShell](http://www.winshell.org/) → エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生するなどの問題が発生する場合は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#cf193be7}
+- エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
+- エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
+
+などの問題があります．このため，現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています．
+
+以下の情報はアーカイブとして残しておきます．
+極力削除はお控えください．[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます．
+
+<!-- とりあえず復活させてみました．「設定」以下はバックアップから取得したものに手を付けていません． -->
+<!-- 特にこのページの「ShiftJIS のダメ文字」の記述は，WinShell に限らず一般論として価値がありますよね？ -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -25,7 +34,7 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．<br>
+([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．
 
 ### 動作環境 {#f8ed906d}
 
@@ -51,250 +60,95 @@ WinShell には
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
     <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
-[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています．<br>
-WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．<br>
-ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください．<br>
+[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています．
+WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．
+ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください．
 
 ## 不具合 {#m3e6b0cc}
 
 ### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
-
-エンコーディングを UTF-8 に変更して
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]</ins></span><strong>\[ フォント \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-
-<br>
-
-　　　　フォント:　　　　　　　　　　　　　　　　　　　　　サイズ:　　　　スクリプト:<br>
-　　　　<span style="color:Black;background-color:White;">\[　　Meiryo UI　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　　<strong>ᐯ</strong>\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-
-<br>
-
-　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
-
-***
-
-LaTeX ファイルをメニューの \[実行(X)\] → \[PDFLaTeX\] または \[実行(X)\] → \[LaTeX\] でコンパイルしたところ，以下のような Runtime Error! が発生しました．
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　<span style="color:Black;"><strong>Microsoft Visual C++ Runtime Library</strong></span>　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<span style="font-size:35px"><strong>×</strong></span> Runtime Error!<br>
-
-<br>
-
-　　　　Program: C:\Program Files (x86)\WinShell\WinShell.exe<br>
-
-<br>
-
-<br>
-
-　　　　This application has requested the Runtime to terminate it in an<br>
-　　　　unusual way.<br>
-　　　　Please contact the application's support team for more<br>
-　　　　information.
-
-***
-
-UTF-8 を使用したい方は
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 
-などの UTF-8 で問題の発生しないオープンソースの統合環境を使用してください．
+などのオープンソースの統合環境では，UTF-8 でも問題が発生しません．
 
-### Adobe Reader で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
+### [Adobe Reader](</Adobe Reader/>) で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
-Adobe Reader で PDF ファイルが表示できない場合は [SumatraPDF](/SumatraPDF/) を使用してください．<br>
-Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．<br>
-Adobe Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．<br>
+Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．
+Adobe Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．
 
 - [WinShellでAdobe Reader11が呼べない時の解決方法](http://ameblo.jp/green-marimo/entry-11849170023.html)
 - [WinShellのCannot start AcrobatReader or open the document.](http://d.hatena.ne.jp/imasusen/20131128/1385574812)
 
-WinShell 3.3.2.6 は Adobe Reader XI, Adobe Acrobat XI, SumatraPDF の DDE に対応しています．<br>
-DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．<br>
-WinShell は PDFView に Adobe Reader, Adobe Acrobat, SumatraPDF を設定すると PDF ファイルの表示に DDE を使用します．<br>
-WinShell 3.3.2.6 の場合，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては以下のような警告メッセージが表示され，PDF ファイルが表示できない場合があります．<br>
+WinShell 3.3.2.6 は Adobe Reader XI, Adobe Acrobat XI, SumatraPDF の DDE に対応しています．
+[^1]
+これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します．
+ただし，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
 
-***
+```
+Cannot start AcrobatReader or open the document.
+```
 
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>WinShell</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　　Cannot start AcrobatReader or open the document.<br>
-　　　　<span style="font-size:35px"><strong>!</strong></span>　　1. Please check on the exe file and cmd line of the PDFView<br>
-　　　　　　　options.<br>
-　　　　　　　2. Please set correct Adobe DDE Version in registry key<br>
-　　　　　　　'HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\applicatio<br>
-　　　　　　　n'<br>
-
-<br>
-
-***
-
-Adobe Reader XI で DDE を使用する場合はレジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値のデータを
+という警告メッセージが表示され，PDF ファイルが表示できない場合があります．
+この問題は，上記のレジストリの (既定) の値のデータを
 
 ```
 AcroViewR11
 ```
 
-に修正します．
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>文字列の編集</strong></span>　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　値の名前(N):<br>
-　　 <ins>(既定)</ins><br>
-
-　　値のデータ(V):<br>
-　　 <ins>AcroViewR11</ins><br>
-
-<br>
-
-***
+に修正することで解消できます．
+[^2]
 
 DDE を使用する場合は PDFView を以下のように設定します．
 
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe"</ins> (32-bit 版 Windows の場合)<br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>"%s.pdf"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
+- exeファイル名：
+    - "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" (64-bit 版 Windows の場合)
+    - "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (32-bit 版 Windows の場合)<br>
+- コマンドライン：
+    - "%s.pdf"
 
 DDE を使用しない場合は PDFView を以下のように設定します．
 
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>cmd.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>/c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (64-bit 版 Windows の場合) <ins>/c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf"</ins> (32-bit 版 Windows の場合)<br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
+- exeファイル名：
+    - cmd.exe
+- コマンドライン：
+    - /c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (64-bit 版 Windows の場合)
+    - /c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (32-bit 版 Windows の場合)
 
 ### 主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題がある → Ruby, Windows PowerShell, バッチファイル などを使用する {#v088befc}
 
-WinShell は主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題があります．<br>
-WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;s を2回以上使用すると WinShell がクラッシュします．<br>
-Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です．<br>
-Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です．<br>
+WinShell は主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題があります．
+WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;s を2回以上使用すると WinShell がクラッシュします．
+Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です．
+Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です．
 
 ### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用する {#n7cba889}
 
-エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります．<br>
-例えば<br>
+エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります．
+例えば
 
 ```
 \chapter{日本語文字
 ```
 
-と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．<br>
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
 
-エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．<br>
-文字化けを回避するには，UTF-8 を使用する方法があります．<br>
-ShiftJIS を使用したい場合は対応する括弧の強調表示のチェックをはずしてください．<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]</ins></span><strong>\[ 構文の強調表示 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　☑ 構文の強調表示(S)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-　　　　　　　　　　　<ins><span style="color:Black;background-color:Blue;">\[　　\]</span> \ (La)TeX命令　　　　　　　　　　　　　<strong>ᐯ</strong></ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　色(C)...　　　\]</span><br>
-
-<br>
-
-　　　　　　　　　　☐ 対応する括弧の強調表示(M) ← ShiftJIS の場合はチェックをはずす<br>
-
-<br>
-
-<br>
-
-<br>
-
-***
+エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．
+UTF-8 を使用すれば文字化けは回避できますが，UTF-8 では上述のとおり Runtime Error! が発生することがあります．
+ShiftJIS を使用してなおかつ文字化けを回避したければ，対応する括弧の強調表示のチェックを外すほかありません．
+「オプション」から「強調表示」を選択し，対応する括弧の強調表示(M) のチェックをはずしてください．
 
 #### WinShell のエンコーディングが ShiftJIS の場合にカーソルを合わせると消える文字について {#hec85ef2}
 
-関連内容;　TeXフォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」
+関連内容：TeX フォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」 [forum:156](https://okumuralab.org/tex/mod/forum/discuss.php?d=156)
 
-[http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=156)
+LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします．<br>
+プロジェクトの ［目次］ において，\section に日本語を指定した場合に文字が表示されない不具合があります．
 
-LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。
-
-プロジェクトの ［目次］ において，\section に日本語を指定した場合に
-文字が表示されない不具合があります。<br>
-(追記：2009/12/21)<br>
-{}の中で使用するとエンコーディングが ShiftJIS の場合に不具合が起こる文字を以下の通りにまとめます。
+{}の中で使用するとエンコーディングが ShiftJIS の場合に不具合が起こる文字を以下の通りにまとめます．
 
 > | 2-byte 目 | 文字 | エンコーディングが ShiftJIS の場合に不具合が起こる文字 |
 > |---|---|---|
@@ -302,12 +156,12 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 > | 0x7d | } | マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓 |
 >
 
-1行目の文字群は 2-byte 目が 0x7b ( { ) になっており、2行目の文字群は 2-byte 目が 0x7d ( } ) となっているため、エラーが発生します。<br>
-これらの文字群を使用すると WinShell の BibTeX のフロントエンド編集での読み込みもできません。<br>
-(追記：2010/01/20)<br>
-また、プロジェクトウィンドウを利用している場合は、参考文献一覧も上記文字群が含まれている場合は正常に表示できません。<br>
-対策として、上記文字群が含まれている BibTeX 項目を、別の bib ファイルに隔離して2つの bib ファイルを使い分けると少し使い勝手が向上します。<br>
-その際、隔離した bib が \_Unknown にまとめて表示されれば、WinShell が本来意図して付けた BibTeX の機能を使用できるかと思います。<br> <!-- ちなみに確認 OS は XP SP2 32ビット Professional 版 -->
+1行目の文字群は 2-byte 目が 0x7b ( { ) になっており、2行目の文字群は 2-byte 目が 0x7d ( } ) となっているため、エラーが発生します．
+これらの文字群を使用すると WinShell の BibTeX のフロントエンド編集での読み込みもできません．
+また，プロジェクトウィンドウを利用している場合は，参考文献一覧も上記文字群が含まれている場合は正常に表示できません．
+
+対策として，上記文字群が含まれている BibTeX 項目を，別の bib ファイルに隔離して2つの bib ファイルを使い分けると少し使い勝手が向上します．
+その際、隔離した bib が \_Unknown にまとめて表示されれば，WinShell が本来意図して付けた BibTeX の機能を使用できるかと思います． <!-- ちなみに確認 OS は XP SP2 32ビット Professional 版 -->
 
 【参考】
 
@@ -365,11 +219,12 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 ***
 
-### フォント → エンコーディングを UTF-8 に変更する {#y5d09419}
+### フォント {#y5d09419}
 
 初回起動時に言語選択で Japanese を選択した場合は, デフォルトで『スクリプト』が「日本語」，『エンコーディング』が「ShiftJIS」に設定されます．<br>
-『エンコーディング』の「ShiftJIS」を「UTF-8」に変更します．<br>
-UTF-8 を使用する場合は [不具合#エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error!](/WinShell/#g47585a4) を参照してください．<br>
+[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更します．<br>
+ただし，UTF-8 を使用する場合は[上述](/WinShell/#g47585a4)のように，より致命的な Runtime Error が発生する場合があります．<br>
+エンコーディング指定を ShiftJIS と UTF-8 で試したうえで，<strong>不具合が避けられない場合は他の統合環境への移行を検討しましょう</strong>．<br>
 フォントは確認の上ご自分の用途に応じたものを選んでください．<br>
 フォント名として「@ＭＳ ゴシック」のような “@” から始まる名前のフォントを選択するとテキストエディタの和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう．<br>
 
@@ -402,18 +257,17 @@ UTF-8 を使用する場合は [不具合#エンコーディングが UTF-8 の�
 デフォルトでは自動スペルチェックが有効になっています．<br>
 自動スペルチェックが必要ない場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします．
 
-## 主なTeXプログラムの設定 {#vfb035c6}
+## 主なTeXプログラムの設定：エンコーディングが UTF-8 の場合 {#vfb035c6}
 
 エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します．
 
-Runtime Error! を回避するには，まず \[主なTeXプログラムの設定\] のプログラムの
+Runtime Error! を回避するには，\[主なTeXプログラムの設定\] のプログラムの
 
 - LaTeX
 - PDFLaTeX
 
-の <strong>exeファイル名の値を削除</strong>します．
-
-間違って LaTeX, PDFLaTeX を使用しても，警告メッセージが表示されるだけになり，Runtime Error! を回避できます．
+の <strong>exeファイル名の値を削除</strong>するほかはありません．<br>
+こうすれば，間違って LaTeX, PDFLaTeX を使用しても警告メッセージが表示されるだけになり，Runtime Error! を回避できます．
 
 ***
 
@@ -437,7 +291,7 @@ Runtime Error! を回避するには，まず \[主なTeXプログラムの設�
 - PDFView
 
 の LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックをはずします．<br>
-LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しないので LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます．<br>
+LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しないので，LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます．<br>
 
 ### LaTeX → exeファイル名の値を削除する {#neba460c}
 
@@ -893,7 +747,7 @@ TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[
 - [WinShell#DVI -> PS#Latexmk-pdfupLaTeX2 の場合](/WinShell/#c693c76d)
 
 \[BibTeX\] に設定したプログラム (Latexmk-pdfupLaTeX) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします．<br>
-\[DVI -> PS\] に設定したプログラム (Latexmk-pdfupLaTeX2) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします．<br> <!-- コマンド プロンプトまたは下の出力ウィンドウに処理状況が表示されます．~ -->
+\[DVI -> PS\] に設定したプログラム (Latexmk-pdfupLaTeX2) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします．<br>
 コマンド プロンプトに処理状況が表示されます．<br>
 
 <!-- >もしユーザ自身が作成したファイルとは異なるファイルが処理されているようなら， -->
@@ -987,3 +841,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 ## 関連リンク {#i06febca}
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
+
+[^1]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．
+[^2]: レジストリの編集には危険が伴う場合があります．自信のない場合は控えるなど，十分ご注意ください．
