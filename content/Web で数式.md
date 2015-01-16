@@ -34,10 +34,6 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 
 cf.) [qa:33461](https://okumuralab.org/~okumura/texfaq/qa/33461.html), [qa:33504](https://okumuralab.org/~okumura/texfaq/qa/33504.html), [qa:33899](https://okumuralab.org/~okumura/texfaq/qa/33899.html)
 
-### texvc 用 {#v1c9afd6}
-
-藤田さん: [pukiwiki + texvc で TeX 数式の書ける wiki](http://lucille.atso-net.jp/blog/?p=6)
-
 ### jsMath {#o7441380}
 
 - [http://www.math.union.edu/~dpvc/jsMath/](http://www.math.union.edu/~dpvc/jsMath/)
@@ -66,17 +62,17 @@ jsMath.js の mathchardef テーブル内に追加
 
 ### tex.inc.php {#qfd69102}
 
+- [http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php](http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php)
 - [http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php](http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php)
-- [http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php](http://abicky.site90.com/pukiwiki/index.php?Plugins/tex.inc.php)
 
 ### texvc {#te0254cd}
 
-- [texvc](http://www.mediawiki.org/wiki/Texvc)
+- [http://www.mediawiki.org/wiki/Texvc](http://www.mediawiki.org/wiki/Texvc)
 
 ### phpTeX {#nd0cba4b}
 
-- [phptex](http://phptex.sourceforge.net/)
-- [phpTeX](http://sourceforge.net/projects/phptex/)
+- [http://phptex.sourceforge.net/](http://phptex.sourceforge.net/)
+- [http://sourceforge.net/projects/phptex/](http://sourceforge.net/projects/phptex/)
 
 ### phptex.inc {#ca665441}
 
