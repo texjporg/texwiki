@@ -9,7 +9,7 @@ pukiwiki: "Texmaker/設定/Windows"
 
 [Texmaker](/Texmaker/) > [設定](</Texmaker/設定/>) > [Windows](</Microsoft Windows/>)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+## 目次 {#rc2575d0}
 
 ## 設定 {#ha179b3b}
 
