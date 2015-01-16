@@ -17,10 +17,11 @@ pukiwiki: "TeX入手法"
 詳しいインストール方法は，利用する OS にあわせた解説ページを参照してください．
 
 - [Microsoft Windows](</Microsoft Windows/>)
+    <!-- -[[Cygwin]] -->
+
 - [OS X](/Mac/)
 - [Linux](/Linux/)
 - [BSD](/BSD/)
-- [Cygwin](/Cygwin/)
 - [Android](/Android/)
 - [iOS](/iOS/)
 
