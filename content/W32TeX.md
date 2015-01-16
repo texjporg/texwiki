@@ -227,7 +227,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 #### 簡易インストーラの取得 {#wa3b57f2}
 
-[texinst2014.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/texinst2014.zip)を展開してください．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2014.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
+[texinst2014.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2014.zip)を展開してください．展開した場所がインストールフォルダとなります．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2014.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
 
 C:\Users>cd C:\w32tex<br>
 C:\w32tex>texinst2014 C:\w32tex\download
