@@ -11,99 +11,33 @@ pukiwiki: "新 pTeX とBabel"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-以下では pdfLaTeX/upLaTeX システムで [Babel パッケージ](https://mirror.ctan.org/help/Catalogue/entries/babel.html)とともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
-
-なお、「新 pTeX」とはバージョン3.1.4以降のpTeXを指します。
-
-### 更新履歴 {#sa5b8545}
-
-- \[2013/10/09\]
-    [推奨環境](#z22ea698)に[『［改訂6版］ LaTeX2e 美文書作成入門』付録 DVD-ROM](#oe0dfa58) の項を追加しました。
-
-- \[2007/11/15\]
-    [推奨環境](#z22ea698)に Vine 版，Mac OS X 版の記述を追加しました。-- 栗山
-
-- \[2007/07/12\]
-    最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
-
-- \[2007/07/06\]
-    「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
-
-- \[2007/05/21\]
-    [キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール](#ka19a2ab) -- LH フォントのリンク先を新版 (3.5f) に合わせて直しました（すっかり忘れていた...）。-- 栗山
-
-- \[2007/05/05\]
-    updmap に関する補記 &amp; 一部のブラウザで文字化けが発生するため，全角記号（em dash や矢印，引用符など）を半角文字に置き換えました。 -- 栗山
-
-- \[2007/04/26\]
-    [キリルアルファベットの追加](#p1435221) -- 安田さんの Type 1 パッケージへのリンクを追加しました。 -- 栗山
-
-- \[2007/03/06\]
-    latin.ldf のバグ -- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。-- 栗山
-
-- \[2006/10/17\]
-    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。-- 栗山
-
-- \[2006/03/13\]
-    Babel を使わずに済む方法 --「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。-- 栗山
-
-- \[2005/09/06\]
-    W32TeX の8月12日版以降（ptetex3-20050811 以降）では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
-
-- \[2005/05/28\]
-    UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
-
-- \[2005/05/27\]
-    「[Babel による多言語構築ガイド 第3版](https://okumuralab.org/~okumura/texfaq/qa/36022.html)」（栗山さんによる）もご覧ください。
-
-- \[2005/05/21\]
-    fmtutil --byfmt のように「ハイフン」を追加しておきました。
-
-- \[2004/10/20\]
-    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの 8-bit-Hyphenation](http://www2.tba.t-com.ne.jp/ing/babel.html#THIRD) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
-
-- \[2004/09/29\]
-    ギリシア数字の出力に関して greek.ldf にバグがあります ([qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html))。
-
-- \[2004/09/29\]
-    russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
-
-- \[2004/09/27\]
-    map ファイルも $TEXMFLOCAL/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，{$TEXMFMAIN,$TEXMFDIST}/ メインツリーには基本的に手を加えないでよいこととなります。
-
-- \[2004/09/25\]
-    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
+以下では pdfLaTeX/upLaTeX システムで [Babel](/Babel/) パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
+なお、「新 pTeX」とはバージョン3.1.4以降の pTeX を指します。
 
 ### 推奨環境 {#z22ea698}
 
 #### Microsoft Windows {#q1adb5c8}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には
-TeX Live 所収の
-ハイフネーションファイルが同梱されています。<br>
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には TeX Live 所収の ハイフネーションファイルが同梱されています。
 8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
-[TeXWiki:Microsoft Windows](</Microsoft Windows/>) を参照）。
+[Microsoft Windows - TeX Wiki](</Microsoft Windows/>) を参照）。
 
 - [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
 #### OS X {#l63154db}
 
-TeX Live, MacTeX には
-TeX Live 所収の
-ハイフネーションファイルが同梱されています。<br>
+TeX Live, MacTeX には TeX Live 所収の ハイフネーションファイルが同梱されています。
 
 #### UNIX, Unix-like OS, Cygwin {#y673f46e}
 
-TeX Live には
-TeX Live 所収の
-ハイフネーションファイルが同梱されています。<br>
+TeX Live には TeX Live 所収の ハイフネーションファイルが同梱されています。
 UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
 手作業で調整する必要があるかもしれません
 （「[日本語 LaTeX による多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
-を参照）。<br>
+を参照）。
 Cygwin については
 「[Cygwin - TeX Wiki](/Cygwin/)」
 をご覧ください。
@@ -112,8 +46,8 @@ Cygwin については
 
 『[［改訂第6版］ LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』
 付録 DVD-ROM には
-[TeX Live](</TeX Live/>) 2013 が収録されています。<br>
-TeX Live 2013 には Babel が収録されています。<br>
+[TeX Live](</TeX Live/>) 2013 が収録されています。
+TeX Live 2013 には Babel が収録されています。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
@@ -313,3 +247,62 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 - [南北館](http://a011w.broada.jp/wbaefznh35st/)
     - [Windows版LaTeX(pTeX)の細道・けもの道\[パッケージ編\]](http://a011w.broada.jp/wbaefznh35st/latex/latex020.html)
+
+## 本ページの更新履歴 {#sa5b8545}
+
+- \[2013/10/09\]
+    [推奨環境](#z22ea698)に[『［改訂6版］ LaTeX2e 美文書作成入門』付録 DVD-ROM](#oe0dfa58) の項を追加しました。
+
+- \[2007/11/15\]
+    [推奨環境](#z22ea698)に Vine 版，Mac OS X 版の記述を追加しました。-- 栗山
+
+- \[2007/07/12\]
+    最近更新されたハイフネーションファイルについてまとめておきました ([qa:48601](https://okumuralab.org/~okumura/texfaq/qa/48601.html))。また NTT JTeX で Babel を使用する場合は，スペイン語（新版），ガリシア語（新版），ハンガリー（マジャール）語，オランダ語ハイフネーションファイルについて pat2ascj.pl による処理が必要です。ZRさんに作成いただきました ([qa:48666](https://okumuralab.org/~okumura/texfaq/qa/48666.html))。 -- 栗山
+
+- \[2007/07/06\]
+    「システムの具体例」を「[推奨環境](#z22ea698)」に更新しました。-- 栗山
+
+- \[2007/05/21\]
+    [キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール](#ka19a2ab) -- LH フォントのリンク先を新版 (3.5f) に合わせて直しました（すっかり忘れていた...）。-- 栗山
+
+- \[2007/05/05\]
+    updmap に関する補記 &amp; 一部のブラウザで文字化けが発生するため，全角記号（em dash や矢印，引用符など）を半角文字に置き換えました。 -- 栗山
+
+- \[2007/04/26\]
+    [キリルアルファベットの追加](#p1435221) -- 安田さんの Type 1 パッケージへのリンクを追加しました。 -- 栗山
+
+- \[2007/03/06\]
+    latin.ldf のバグ -- 以前 [qa:40506](https://okumuralab.org/~okumura/texfaq/qa/40506.html) で報告申し上げました Prosodic Mark （韻律記号）の問題ですが，ZRさんに対処方法をご教授いただきました ([qa:47317](https://okumuralab.org/~okumura/texfaq/qa/47317.html))。プリアンブルに “\languageattribute{latin}{withprosodicmarks}” を指定するだけで，従来通りデフォルトで韻律記号が使えます（“\ProsodicMarksOn”&ndash;“\ProsodicMarksOff” で囲む必要はありません）。また数式等との整合性も保たれています。-- 栗山
+
+- \[2006/10/17\]
+    updmap の使い方について、以前角藤先生に W32TeX 版についてまとめていただいたことがありました ([qa:42444](https://okumuralab.org/~okumura/texfaq/qa/42444.html))。teTeX-3 (ptetex3) 版は少しオプションが異なります ([qa:42473](https://okumuralab.org/~okumura/texfaq/qa/42473.html))。-- 栗山
+
+- \[2006/03/13\]
+    Babel を使わずに済む方法 --「ちょっとだけ」ギリシア語を引用したいという方のために簡便な出力方法のサンプルができました ([qa:41979](https://okumuralab.org/~okumura/texfaq/qa/41979.html))。ディガンマなど古い字母も含めたサンプルとロシア語については Tackaschi さん ([qa:41982](https://okumuralab.org/~okumura/texfaq/qa/41982.html)) に、ハイフネーションも含めた本格的な出力には稲垣さん ([qa:41983](https://okumuralab.org/~okumura/texfaq/qa/41983.html)) にサンプルを作っていただきました。ありがとうございます。-- 栗山
+
+- \[2005/09/06\]
+    W32TeX の8月12日版以降（ptetex3-20050811 以降）では，hyphen.cfg をいじる必要がなくなったことから，記述を全面的に改めました。[qa:37829](https://okumuralab.org/~okumura/texfaq/qa/37829.html) 参照。また，多くのハイフネーションパタンが組み込まれたフォーマットファイルが予め用意されていますので，ハイフネーションの拡張作業を行う必要すらなくなりました。ですから，サブタイトルも変えました (^^;
+
+- \[2005/05/28\]
+    UNIX 系でのロシア語ハイフネーションファイルは ruhyphen7.tex だと platex とうまくいくようです。[qa:36079](https://okumuralab.org/~okumura/texfaq/qa/36079.html) 参照（安田さんによる）。
+
+- \[2005/05/27\]
+    「[Babel による多言語構築ガイド 第3版](https://okumuralab.org/~okumura/texfaq/qa/36022.html)」（栗山さんによる）もご覧ください。
+
+- \[2005/05/21\]
+    fmtutil --byfmt のように「ハイフン」を追加しておきました。
+
+- \[2004/10/20\]
+    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの 8-bit-Hyphenation](http://www2.tba.t-com.ne.jp/ing/babel.html#THIRD) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
+
+- \[2004/09/29\]
+    ギリシア数字の出力に関して greek.ldf にバグがあります ([qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html))。
+
+- \[2004/09/29\]
+    russian を使う際のエンコーディングは OT2 としてハイフネーションパタンを組み込むようにしました。
+
+- \[2004/09/27\]
+    map ファイルも $TEXMFLOCAL/ 以下に置けることが分かりましたので，関連するインストール先を少々書き換えておきました。これにより，{$TEXMFMAIN,$TEXMFDIST}/ メインツリーには基本的に手を加えないでよいこととなります。
+
+- \[2004/09/25\]
+    新 pTeX (pTeX3.1.4) では8ビットのハイフネーションパタンも「（基本的に）そのまま」組み込めるようになりました。
