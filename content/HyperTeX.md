@@ -9,21 +9,15 @@ pukiwiki: "HyperTeX"
 
 ## HyperTeX {#la40905a}
 
-\[TODO\] hyperref.sty の使い方を詳しく
-
-HyperTeX は dvi ファイル中に簡単なタグを \special 命令で入れておくと
-ハイパージャンプができるというものです。
-
-詳細は次のリンクをたどってください。
+HyperTeX は dvi ファイル中に簡単なタグを \special 命令で入れておくとハイパージャンプができるというものです．
+詳細は次のリンクをたどってください．
 
 - [HyperTeX FAQ](http://www.arxiv.org/hypertex/)
 
-LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念のため，HyperTeX
-の基本仕様をすべて実現する簡単なマクロを挙げておきます。<br>
-これを myhyper.sty のような名前で保存し，
-スタイルファイル（パッケージ）として取り込んでください。
-\href の第1引数（飛び先のURL）には，TeX の特殊文字 ~ や # が入るので，
-ちょっとトリックを使ってあります。<br>
+LaTeX2e では [hyperref](/hyperref/) パッケージを使うのが標準的な方法ですが，このページで
+HyperTeX の基本仕様をすべて実現する簡単なマクロを挙げておきます．これを
+myhyper.sty のような名前で保存し，スタイルファイル（パッケージ）として取り込んでください．
+\href の第1引数（飛び先のURL）には，TeX の特殊文字 ~ や # が入るので，ちょっとトリックを使ってあります．
 
 ```
 \def\href{\leavevmode \begingroup \@sanitize \@href}
@@ -45,7 +39,7 @@ LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念の�
 
 ```
 \href{#foo}{ここ}をクリックすれば
-\name{foo}{ここ}に飛びます。
+\name{foo}{ここ}に飛びます．
 ```
 
 や
@@ -54,7 +48,7 @@ LaTeX2eでは hyperref.sty を使うのが標準的な方法ですが，念の�
 \href{http://oku.edu.mie-u.ac.jp/~okumura/foo.html#bar}{ここ}
 ```
 
-のようにします。
+のようにします．
 
 ### hyperref を上手に呼んで便利な PDF を作る {#ubbc3ac6}
 
@@ -84,7 +78,7 @@ pdfauthor={\@author}
 pdfauthor={\@author{} (\advisor@prefix:{} \@advisor{} \advisor@suffix)}
 ```
 
-のように随所に {} を挟んでいるのも，その次の半角空白を活かすためです (このあたりの技術は TeX ユーザのよく知るところですね?)．
+のように随所に {} を挟んでいるのも，その次の半角空白を活かすためです（このあたりの技術は TeX ユーザのよく知るところですね？）．
 
 タイトルには，強制改行の \\\ や，ベタ打ちでは消えてほしい半角空白を付け加えていることもあるかもしれません．余分な半角空白を消すだけなら，上記のトリックを逆に利用して，
 
@@ -93,7 +87,7 @@ pdftitle=\@title
 ```
 
 とすればよいわけです．
-強制改行の \\\ が入っているときには，usepackage のオプションで指定することは厳しいので，先に hyperref を呼んでから，あとから \hypersetup を加えるとうまくいきます．
+強制改行の \\\ が入っているときには，\usepackage のオプションで指定することは厳しいので，先に hyperref を呼んでから，あとから \hypersetup を加えるとうまくいきます．
 
 ```
 \RequirePackage[dvipdfmx,%
@@ -116,3 +110,7 @@ pdftitle=\@title
   \org@maketitle
 }
 ```
+
+## 関連リンク {#x293be61}
+
+- [HyperTeX - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?HyperTeX)
