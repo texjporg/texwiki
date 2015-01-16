@@ -7,6 +7,20 @@ pukiwiki: "dviout"
 
 # dviout
 
+## dviout {#db720534}
+
+<span style="font-size:40px">dviout は現在，非推奨です！</span>
+
+- 挿入した画像が適切に表示されない
+- CID に完全対応していない（Adobe-Japan1 の CID 直接参照の機能は無い）
+- PDF や PostScript の機能に強く依存するパッケージに未対応
+
+などの問題があります．
+このため，現在は DVI ではなく PDF でのプレビューが推奨されています．
+
+以下の情報はアーカイブとして残しておきます．
+極力削除はお控えください．[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます．
+
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## dviout for Windows とは？ {#i1497a3b}
