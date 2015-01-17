@@ -14,28 +14,35 @@ pukiwiki: "Linux"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## Linux ディストリビューション {#h2a1700b}
+## Linux での TeX 環境構築 {#h2a1700b}
 
-Linux はディストリビューションによって TeX のインストール方法が異なります．<br>
-Linux ディストリビューションに収録されている TeX Live をインストールする場合はディストリビューションごとの項目をご覧ください．<br>
-[TeX Live](</TeX Live/>) の公式サイトのインストーラを使えば Linux ディストリビューションの違いをあまり気にせずに最新の TeX 環境が導入できます．
+Linux で TeX 環境を構築するには，2つの方法があります．
+
+- 使用している Linux ディストリビューションのパッケージ管理システムから TeX Live のパッケージをインストールする．
+- TeX Live のインストーラを使ってインストールする．
+
+前者の場合は，他のパッケージと同様に統一的な管理ができますが，ディストリビューションによっては提供されているパッケージのバージョンが古いことがあります．後者の場合は，パッケージ管理システムによる管理からは外れてしまいますが，tlmgr を使って最新の状態にアップデートし続けることが可能です．
+
+各 Linux ディストリビューション毎のパッケージ管理システムによる TeX 環境の構築方法については，以下の各ページを参照して下さい．
 
 {{< children >}}
 
 ## TeX ディストリビューション {#v025f4e5}
 
+以下では，パッケージ管理システムを使わずに TeX 環境を構築する方法を説明します．
+
 ### [TeX Live](</TeX Live/>) <a id="texlive"></a> {#d212a0d5}
 
-最新版の TeX Live をおすすめします．
-
 #### TeX Live のインストール <a id="texliveinstall"></a> {#i0a1ca9a}
+
+TeX Live のインストールガイド
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を参照．
+に従えばよいですが，このページでもネットワークインストーラを使う場合について簡単に説明します．
 
-[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
+まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 - wget を使用する場合
 
@@ -61,8 +68,7 @@ $ tar xvf install-tl-unx.tar.gz
 $ cd install-tl*
 ```
 
-root 権限でインストーラを実行します．<br>
-オプションでダウンロードするリポジトリを指定できます．
+root 権限でインストーラを実行します．オプションでダウンロードするリポジトリを指定できます．
 
 ```
 $ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
@@ -83,9 +89,7 @@ Actions:
 Enter command: I
 ```
 
-I を入力してインストールを開始します．<br>
-サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
-エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．
+I を入力してインストールを開始します．サーバーの接続エラーが発生したり，何らかの理由により取得したアーカイブに問題があったりした場合はインストールが途中でストップします．この場合は，以下のコマンドで途中から再開できたりできなかったりします．
 
 ```
 $ sudo ./install-tl --profile installation.profile
@@ -93,12 +97,15 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．
+
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
 
 ```
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
+
+ここで，???? は TeX Live のバージョン番号です（2014 など．以降も同様）．
 
 #### アップデート {#v78bce27}
 
@@ -110,17 +117,29 @@ $ sudo tlmgr update --self --all
 
 を実行すれば OK です．
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
+ただし，アップデートのタイミングによっては，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
 - /usr/local/texlive/????/tlpkg/backups
 
-にパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br> <!-- やり方を書く． -->
+にパッケージのバックアップが保存されています．アップデートによって動作しなくなった場合は
+
+```
+$ sudo tlmgr restore （パッケージ名） （リビジョン番号）
+```
+
+とすることで以前のバージョンに戻すことができます．
 
 #### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
 
-TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
-TEXMFLOCAL の値を確認します．
+TeX Live 2014 のデフォルトでは extractbb が自動実行されないので，画像を読み込もうとすると次のようなエラーが出ることがあります．
+
+```
+! LaTeX Error: Cannot determine size of graphic in **** (no BoundingBox).
+```
+
+次の手順に従って shell_escape_commands に extractbb を追加しておくと，自動で extractbb が実行されるようになります．
+
+まず，TEXMFLOCAL の値を確認します．
 
 ```
 $ kpsewhich -var-value TEXMFLOCAL
@@ -134,8 +153,7 @@ $ sudo mkdir -p /usr/local/texlive/texmf-local/web2c
 $ sudo touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
 ```
 
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．
+/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．shell_escape_commands を以下のように編集して保存します．
 
 ```
 shell_escape_commands = \
@@ -154,8 +172,7 @@ $ sudo mktexlsr
 
 #### フォント埋め込みの設定 {#w8cc5799}
 
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．IPAexフォントを埋め込む場合は
 
 ```
 $ sudo kanji-config-updmap-sys ipaex
@@ -169,26 +186,9 @@ $ kanji-config-updmap ipaex
 
 を実行します．
 
-TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．
-
-```
-$ kpsewhich ipaexm.ttf ipaexg.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
-```
-
-upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．
-
-```
-$ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
-```
-
 ### [W32TeX](/W32TeX/) {#od6f4f13}
 
-[W32TeX](/W32TeX/) は Windows 向けの TeX ディストリビューションですが， Wine を使えば Linux 上で利用することも可能です．<br>
-TeX Live に収録されていないプログラムを使用したい場合は W32TeX が便利です．
+[W32TeX](/W32TeX/) は Windows 向けの TeX ディストリビューションですが， Wine を使えば Linux 上で利用することも可能です．
 
 - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
 
@@ -199,7 +199,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
 
-にも Linux で使用可能な LaTeX 用の統合環境・エディタが紹介されています．
+にも Linux で使用可能な LaTeX 用の統合環境・エディタが紹介されています．これらは各ディストリビューションのパッケージ管理システムに用意されていることも多いでしょう．
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
 
