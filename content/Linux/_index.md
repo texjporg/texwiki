@@ -105,8 +105,6 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-ここで，???? は TeX Live のバージョン番号です（2014 など．以降も同様）．
-
 #### アップデート {#v78bce27}
 
 アップデートは
