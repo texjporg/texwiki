@@ -15,7 +15,7 @@ pukiwiki: "dviout"
 - CID に完全対応していない（Adobe-Japan1 の CID 直接参照の機能は無い）
 - PDF や PostScript の機能に強く依存するパッケージに未対応
 
-などの問題があります．
+などの問題があります．[古い情報](</古い情報/>)もご覧ください．
 このため，現在は DVI ではなく PDF でのプレビューが推奨されています．
 
 以下の情報はアーカイブとして残しておきます．
@@ -39,123 +39,7 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 - [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml)
 
-なお，長らく dvi ファイルによるプレビューが行われており，dviout は Windows 上の dvi プレビューアとして広く使われてきました．しかし，最近では pdf ファイルによるプレビューの方が問題が少なくなるとされています（[古い情報](</古い情報/>)も参考のこと）．[SumatraPDF](/SumatraPDF/) などの PDF プレビューアも検討してみてください．
-
-### 動作環境 {#n7f5a256}
-
-Windows
-
-### License {#w9d4ec9d}
-
-[Expat License](http://tug.org/svn/dviout/trunk/README?view=markup) (MIT License)
-
-Expat License については
-
-- [License:Expat - Free Software Directory](http://directory.fsf.org/wiki/License:Expat)
-- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](http://www.gnu.org/licenses/license-list.html#Expat)
-
-を参照．
-
-### リリース情報 {#uce3262c}
-
-2013-12-14 dviout 3.18.4 ALPHA 1<br>
-
-dviout 3.18.3 ALPHA 5 以前の dviout には以下の問題があります。<br>
-
-- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォントについてバグがあります。<br>
-- 非常に長いフォント名を与えるとクラッシュします。<br>
-
-dviout 3.18.4 ではこれらの点が訂正されています。<br>
-dviout 3.18.4 は実質的に
-dviout3183a6-inst-20111008.zip と同じものです。<br>
-dviout 3.18.4 (dviout3184-inst.zip) は
-dviout3183a6-inst-20111008.zip に最小の修正を加え，正式リリースされたものです。
-
-### ChangeLog {#r5124b5a}
-
-- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
-    - [log](http://tug.org/svn/dviout/trunk/?view=log)
-- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
-    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
-
-## ビルド → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#d0101f83}
-
-[Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．<br>
-Windows PowerShell またはコマンド プロンプトを起動して dviout のソースコードを取得します．<br>
-
-```
-mkdir dviout
-cd dviout
-svn co svn://tug.org/dviout/trunk
-```
-
-trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動します．<br>
-Solution Explorer から dviwin.c を削除します．<br>
-BUILD -> Build Solution で dviout をビルドします．<br>
-Windows PowerShell またはコマンド プロンプトからビルドしたい場合は MSBuild を使用してビルドすることもできます．<br>
-
-```
-msbuild dviout.sln
-```
-
-## 不具合 → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#ufbeded4}
-
-### dviout を管理者として実行していない場合に Error in RegCreateKey が表示される → dviout を管理者として実行する {#ca2f4069}
-
-dviout を管理者として実行していない場合は Error in RegCreateKey が表示されるかもしれません。<br>
-
-***
-
-<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-<br>
-
-　　Error in RegCreateKey<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span><br>
-
-***
-
-Error in RegCreateKey が表示された場合は \[OK\] をクリックします。<br>
-\[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
-dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
-
-## dviout 非対応パッケージ → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#pd5bea65}
-
-PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
-dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください．<br>
-
-### [TikZ](/TikZ/) {#m7bcebf4}
-
-dviout は [TikZ](/TikZ/) に対応していません．<br>
-PDF または SVG に変換して PDF・SVG ビューアで表示・印刷するといいでしょう。<br>
-
-### [media9](/media9/) {#h55cad77}
-
-dviout は [media9](/media9/) に対応していません．<br>
-PDF に変換して [Adobe Reader](</Adobe Reader/>) で表示するといいでしょう。<br>
-
-### [OTF](/OTF/) {#i25da0b5}
-
-dviout は [OTF パッケージ](/OTF/)に完全対応していません。<br>
-\CID{...} などでの Adobe-Japan1 の CID 直接参照の機能は無く，
-代わりに CID → Unicode の変換を経由した表示機能があります。<br>
-dviout ではなく，dvipdfmx や dvips など
-CID に完全対応した DVIware を利用しましょう。<br>
-
-### [PSTricks](/PSTricks/) {#x2d3abf4}
-
-dviout は dvips と完全互換ではありません。<br>
-[PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
-dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
-
-## インストール → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#f465326c}
+## インストール {#v433ca0f}
 
 あらかじめ TeX システムをインストールしておきます。<br>
 [Microsoft Windows - TeX Wiki](</Microsoft Windows/>) をご覧ください。<br>
@@ -570,6 +454,116 @@ dviout の \[Option\] → \[Install\] を選べば設定が修正できます
 dviout の \[Option\] → \[Uninstall\] を選べば，設定が初期化されます
 （ファイルは消えません）。<br>
 この場合には再度 dviout をダブルクリックして実行すれば，最初から設定が始められます。
+
+### License {#w9d4ec9d}
+
+[Expat License](http://tug.org/svn/dviout/trunk/README?view=markup) (MIT License)
+
+Expat License については
+
+- [License:Expat - Free Software Directory](http://directory.fsf.org/wiki/License:Expat)
+- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](http://www.gnu.org/licenses/license-list.html#Expat)
+
+を参照．
+
+### リリース情報 {#uce3262c}
+
+2013-12-14 dviout 3.18.4 ALPHA 1<br>
+
+dviout 3.18.3 ALPHA 5 以前の dviout には以下の問題があります。<br>
+
+- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された、サイズの大きい PK フォントについてバグがあります。<br>
+- 非常に長いフォント名を与えるとクラッシュします。<br>
+
+dviout 3.18.4 ではこれらの点が訂正されています。<br>
+dviout 3.18.4 は実質的に
+dviout3183a6-inst-20111008.zip と同じものです。<br>
+dviout 3.18.4 (dviout3184-inst.zip) は
+dviout3183a6-inst-20111008.zip に最小の修正を加え，正式リリースされたものです。
+
+### ChangeLog {#r5124b5a}
+
+- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
+    - [log](http://tug.org/svn/dviout/trunk/?view=log)
+- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
+    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
+
+## ビルド → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#d0101f83}
+
+[Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．<br>
+Windows PowerShell またはコマンド プロンプトを起動して dviout のソースコードを取得します．<br>
+
+```
+mkdir dviout
+cd dviout
+svn co svn://tug.org/dviout/trunk
+```
+
+trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動します．<br>
+Solution Explorer から dviwin.c を削除します．<br>
+BUILD -> Build Solution で dviout をビルドします．<br>
+Windows PowerShell またはコマンド プロンプトからビルドしたい場合は MSBuild を使用してビルドすることもできます．<br>
+
+```
+msbuild dviout.sln
+```
+
+## 不具合 → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#ufbeded4}
+
+### dviout を管理者として実行していない場合に Error in RegCreateKey が表示される → dviout を管理者として実行する {#ca2f4069}
+
+dviout を管理者として実行していない場合は Error in RegCreateKey が表示されるかもしれません。<br>
+
+***
+
+<span style="color:#E0EB9F;background-color:#E0EB9F;"><ins>　　　　　　　　<span style="color:Black;"><strong>エラー</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+<br>
+
+　　Error in RegCreateKey<br>
+
+<br>
+
+<br>
+
+　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span><br>
+
+***
+
+Error in RegCreateKey が表示された場合は \[OK\] をクリックします。<br>
+\[OK\] をクリックしても3, 4回ぐらい同じエラーが出ますがあきらめずに \[OK\] をクリックします。<br>
+dviout を管理者として実行した場合はこのエラーは発生しないようです．<br>
+
+## dviout 非対応パッケージ → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#pd5bea65}
+
+PDF や PostScript の機能に強く依存するようなパッケージの場合うまく動作しない可能性が高いです．<br>
+dviout で問題が発生する場合は dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューしてください．<br>
+
+### [TikZ](/TikZ/) {#m7bcebf4}
+
+dviout は [TikZ](/TikZ/) に対応していません．<br>
+PDF または SVG に変換して PDF・SVG ビューアで表示・印刷するといいでしょう。<br>
+
+### [media9](/media9/) {#h55cad77}
+
+dviout は [media9](/media9/) に対応していません．<br>
+PDF に変換して [Adobe Reader](</Adobe Reader/>) で表示するといいでしょう。<br>
+
+### [OTF](/OTF/) {#i25da0b5}
+
+dviout は [OTF パッケージ](/OTF/)に完全対応していません。<br>
+\CID{...} などでの Adobe-Japan1 の CID 直接参照の機能は無く，
+代わりに CID → Unicode の変換を経由した表示機能があります。<br>
+dviout ではなく，dvipdfmx や dvips など
+CID に完全対応した DVIware を利用しましょう。<br>
+
+### [PSTricks](/PSTricks/) {#x2d3abf4}
+
+dviout は dvips と完全互換ではありません。<br>
+[PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。<br>
+dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。<br>
 
 ## upTeX で出力された DVI ファイルを dviout で表示 → 問題が発生する場合は PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#wadc9abf}
 
