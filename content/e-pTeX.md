@@ -7,8 +7,8 @@ pukiwiki: "e-pTeX"
 
 # e-pTeX
 
-e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できないことがあります．<br>
-Unicode を使用して問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．<br>
+e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できないことがあります．
+Unicode を使用して問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/) を使用してください．
 
 ## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) → 問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/) を使用する {#u8bd5dfc}
 
@@ -16,7 +16,7 @@ Unicode を使用して問題が発生する場合は [e-upTeX](/upTeX,upLaTeX/)
 
 ## e-pTeX とは {#a746c835}
 
-e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．<br>
+e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．
 
 - [e-pTeX Wiki](http://sourceforge.jp/projects/eptex/wiki/FrontPage)
 
@@ -39,43 +39,41 @@ e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．<br>
 
 ## 注意点 {#mfa82ee4}
 
-### 丸附き数字 → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX を使用する {#s7930698}
+### 丸附き数字 → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など，Unicode 化された TeX を使用する {#s7930698}
 
-丸附き数字（e.g.
-&#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）の類は Unicode を使用せずに従来の
+丸附き数字（e.g. &#x2460; \[U+2460\], &#x2461; \[U+2461\], &#x2462; \[U+2462\]）
+の類は Unicode を使用せずに従来の
 Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述する限り
-機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))。<br>
+機種依存文字であることに注意してください (See [qa:45781](https://okumuralab.org/~okumura/texfaq/qa/45781.html))．
 
-対処法は，大別すると次の3通りになります。
+対処法は，大別すると次の3通りになります．
 
-1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX 族を利用する。
+1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など，Unicode 化された TeX 族を利用する．
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
         - 【注意】 “"” は十六進表記の識別子であり，“'” にすれば八進表記，
-            何も付けなければ十進表記でも書けます。例えば
+            何も付けなければ十進表記でも書けます．例えば
 
 > "AC = '254 = 172
 
-です。こういったコードは
-[testfont](/testfont/) をタイプセットして一覧を作ると確認できます。
+です．こういったコードは
+[testfont](/testfont/) をタイプセットして一覧を作ると確認できます．
 
-- go.sty パッケージの囲碁用フォント [CTAN:fonts/go/](https://mirror.ctan.org/fonts/go/) (
-    ただし「39」が「29」と表示されるバグあり →[修正を行ったもの](http://tony.cocolog-nifty.com/misc/2006/02/_gosty_5257.html)）
-    - [OTF パッケージ](/OTF/)（“\ajMaru{1}”，“\UTF{2460}” ［=
-        &#x2460; {U+2460}］など）
-
+- go.sty パッケージの囲碁用フォント [CTAN:fonts/go/](https://mirror.ctan.org/fonts/go/)
+    （ただし「39」が「29」と表示されるバグあり →[修正を行ったもの](http://tony.cocolog-nifty.com/misc/2006/02/_gosty_5257.html)）
+    - [OTF](/OTF/) パッケージ（“\ajMaru{1}”，“\UTF{2460}” ［= &#x2460; {U+2460}］など）
 1. 丸の中身と丸を合成：
     - \textcircled マクロ（LaTeX 自身が提供）
     - \MARU マクロ（okumacro パッケージが提供するほか，
-        同種のものがあちこちで定義されています。\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
+        同種のものがあちこちで定義されています．\[See [qa:29584](https://okumuralab.org/~okumura/texfaq/qa/29584.html)\]）
 
-### 環境依存文字（謂ゆる機種依存文字） → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など、Unicode 化された TeX を使用する {#p625d750}
+### 環境依存文字（いわゆる機種依存文字） → [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など，Unicode 化された TeX を使用する {#p625d750}
 
 #### どの環境でも気を付けるべき環境依存文字 {#y42d0186}
 
 - 【注意】 Mac OS，Microsoft Windows 以外の環境では，
-    次の表内の環境依存文字を正しく表示できない可能性があります。
+    次の表内の環境依存文字を正しく表示できない可能性があります．
 
 <table>
 <thead>
@@ -108,12 +106,12 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 - [Windowsの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc_img.html)
 
-<!-- Windows-31J …… Microsoft による Shift_JIS の拡張。 -->
-<!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
-<!-- x-CP51932 …… Microsoft による EUC-JP の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
+<!-- Windows-31J …… Microsoft による Shift_JIS の拡張 -->
+<!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張．IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある． -->
+<!-- x-CP51932 …… Microsoft による EUC-JP の拡張．IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある． -->
 
 - 【注意】 Microsoft Windows 以外の環境では，
-    次の表内の環境依存文字を正しく表示できない可能性があります。
+    次の表内の環境依存文字を正しく表示できない可能性があります．
 
 <table>
 <thead>
@@ -162,7 +160,7 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 </tbody>
 </table>
 
-<!-- 「逸」の旧字体は U+FA67 （二点之繞 + 兔）です。 -->
+<!-- 「逸」の旧字体は U+FA67 （二点之繞 + 兔）です． -->
 
 <table>
 <tbody>
@@ -173,16 +171,16 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 - 【注意】異体字の（本字，古字，同字［別体字，或体］，俗字［略字や誤字を含む］
     という）種類分けについては文献によって解釈が異なるので，
-    ある文献による種類分けと上の表の種類分けとが一致しないことがあります。
+    ある文献による種類分けと上の表の種類分けとが一致しないことがあります．
 
 #### Mac OS 環境で特に気を付けるべき環境依存文字 {#w0cac168}
 
 - [Macintoshの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc_img.html)
 
-<!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張。IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある。 -->
+<!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張．IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある． -->
 
 - 【注意】 Mac OS 以外の環境では，
-    次の表内の環境依存文字を正しく表示できない可能性があります。
+    次の表内の環境依存文字を正しく表示できない可能性があります．
 
 <table>
 <thead>
@@ -271,15 +269,14 @@ Shift_JIS, ISO-2022-JP, EUC-JP などの文字符号化方式を用いて記述�
 
 ### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとするとファイル名を正しく処理できない → TeX Live 2014 以降にアップグレード {#p4d23466}
 
-TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414), [W32TeX#漢字入出力対応状況](/W32TeX/#qc9f2e7d) を参照) で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．<br>
-TeX Live 2013 ではファイル名に日本語を使用した場合，ファイル名を正しく処理できない場合があります．<br>
+TeX Live 2014 (→ [Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414), [W32TeX#漢字入出力対応状況](/W32TeX/#qc9f2e7d) を参照) で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．
+TeX Live 2013 ではファイル名に日本語を使用した場合，ファイル名を正しく処理できない場合があります．
 
 ```
 platex 表.tex
 ```
 
 この場合は .dvi が出力され，表.dvi は出力されません．
-
 同様に
 
 ```
@@ -299,10 +296,17 @@ platex -jobname=構造 構造.tex
 platex -jobname=ソフトウェア ソフトウェア.tex
 ```
 
-のように -jobname= で指定してコンパイルする方法があります． → [TeX Live 2013 を使うときの通称「だめ文字（駄目文字）」への配慮](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1430), [platexでダメ文字を含むファイルを処理する](http://d.hatena.ne.jp/tailriver/20101022/1291955342), [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
+のように -jobname= で指定してコンパイルする方法があります．
+[^1]
+
+- [TeX Live 2013 を使うときの通称「だめ文字（駄目文字）」への配慮](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1430)
+- [platexでダメ文字を含むファイルを処理する](http://d.hatena.ne.jp/tailriver/20101022/1291955342)
+- [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
 
 【参考】
 
 - [Windows版pTeXでダメ文字を含むファイル名を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1074)
 - [Shift_JISのダメ文字](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp)
     - [ダメ文字一覧表](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp/table)
+
+[^1]: ただし，この方法を [WinShell](/WinShell/) で用いると WinShell がクラッシュします．このことも，現在 WinShell が日本語での利用に適していない理由の一つです．[古い情報](</古い情報/#zc6d6db5>)も参照．
