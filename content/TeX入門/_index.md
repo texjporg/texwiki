@@ -38,15 +38,17 @@ TeX は「テック」または「テフ」(\[tex\])と読みます．
 
 ### ロゴ {#k4f3130b}
 
-TeX および LaTeX
-の正式なロゴはこのページのタイトルのようなデザインです．
-ただし，プレーンテキストや電子メールなどで書くときには組版《くみはん》処理による表記ができないのでそれぞれ “TeX”，“LaTeX” と書くことになっています．
+TeX および LaTeX の正式なロゴはこのページのタイトルのようなデザインです．ただし，
+プレーンテキストや電子メールなどで書くときには組版《くみはん》処理による表記ができないので，
+それぞれ “TeX”，“LaTeX” と書くことになっています．
 
 ### 作者 {#a2f15ee9}
 
-TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/) が作った組版システムです．
+TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
+が作った組版システムです．
 現在のバージョン番号は 3.14159265 です．
-LaTeX は [Leslie Lamport](http://lamport.org/) が TeX の上に構築した文書処理システムです．
+LaTeX は [Leslie Lamport](http://lamport.org/)
+が TeX の上に構築した文書処理システムです．
 TeX, LaTeX はフリーウェアです．
 
 ### 動作環境 {#u28a6dc4}
@@ -55,12 +57,12 @@ TeX, LaTeX はフリーウェアです．
 つまり，ほとんどのコンピュータで使えます．
 
 - [Microsoft Windows](http://www.microsoft.com/japan/windows/)
-- [Cygwin](http://www.cygwin.com/)
 - UNIX&reg;（[OS X](http://www.apple.com/jp/osx/) など）
 - UNIX 互換
     OS（[Linux OS](http://kernel.org/)，[FreeBSD](http://www.freebsd.org/)
     など）
 
+- Windows 上で UNIX ライクな環境を提供する [Cygwin](http://www.cygwin.com/)
 - モバイルオペレーティングシステム（[Android OS](http://www.android.com/)，[iOS](http://www.apple.com/jp/ios/) など）
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
@@ -68,12 +70,15 @@ TeX, LaTeX はフリーウェアです．
 日本では TeX, LaTeX を日本語化した
 [pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
 が使用されています．
-pTeX, pLaTeX は株式会社アスキー（現：[株式会社KADOKAWA・DWANGO](http://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです．
+pTeX, pLaTeX は株式会社アスキー
+（現：[株式会社KADOKAWA・DWANGO](http://www.kadokawa.co.jp/)の
+アスキー・メディアワークス　ブランドカンパニー）が日本語化したものです．
 pTeX, pLaTeX の頭文字の p（ピー）は <strong>p</strong>ublishing（出版）の意味です．
 アスキーでは pTeX, pLaTeX およびこれらに基づく編集支援システム
 [EWB](http://ascii.asciimw.jp/ascii/EWB/)
 を無償配布し，自社の本の製作に利用していました．
-現在は pTeX, pLaTeX を内部 Unicode 化した [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます．
+現在は pTeX, pLaTeX を内部 Unicode 化した
+[upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます．
 
 ### Unicode に対応した TeX, LaTeX {#bcc0d89c}
 
@@ -93,14 +98,14 @@ pLaTeX 2ε が出ました．
 以下では現行の LaTeX 2ε と pLaTeX 2ε と upLaTeX 2ε に基づいて説明します．
 組版処理による表記ができないプレーンテキストや電子メールなどで書くときには
 LaTeX 2ε を “LaTeX2e” と書くことになっています．
-以下では LaTeX 2ε，pLaTeX 2ε，upLaTeX 2ε をそれぞれ
-“LaTeX2e”，“pLaTeX2e”，“upLaTeX2e” と書きます．
+以下では LaTeX 2ε, pLaTeX 2ε, upLaTeX 2ε をそれぞれ
+“LaTeX2e”, “pLaTeX2e”, “upLaTeX2e” と書きます．
 
-TeX，pTeX，upTeX については，ここでは
-LaTeX2e，pLaTeX2e，upLaTeX2e の「縁の下の力持ち」としてそれぞれ
-TeX，pTeX，upTeX が働いていると言うに留めておき，詳しい説明は省略します．
+TeX, pTeX, upTeX については，ここでは
+LaTeX2e, pLaTeX2e, upLaTeX2e の「縁の下の力持ち」としてそれぞれ
+TeX, pTeX, upTeX が働いていると言うに留めておき，詳しい説明は省略します．
 
-## LaTeX2e，pLaTeX2e，upLaTeX2e の入門書 {#l062c239}
+## LaTeX2e, pLaTeX2e, upLaTeX2e の入門書 {#l062c239}
 
 まずは次の本を挙げておきます．
 
@@ -149,9 +154,8 @@ TeX Wiki には OS ごとのインストール方法が詳しく書かれてい�
 - [HTML と LaTeX の比較](</TeX入門/HTMLとLaTeXの比較/>)
 - [複雑な数式](</TeX入門/複雑な数式/>)
 - [図表](</TeX入門/図表/>)
-    <!-- - [[図>TeX入門/図]] → 表についての説明も追加して [[図表>TeX入門/図表]] としました。こちらへの移行を提案します。← どうぞ移行してください -->
-
 - [文献引用](</文献引用/>)
 - [索引作成](</索引作成/>)
 - [マクロの作成](</TeX入門/マクロの作成/>)
 - [スライドの作り方（jsarticle 編）](</TeX入門/スライドの作り方（jsarticle編）/>)
+- [応用的な使い方](</TeX入門/応用的な使い方/>)
