@@ -18,8 +18,25 @@ pukiwiki: "TeXworks/設定"
 
 ## 日本語環境用の設定 {#bcc74f23}
 
-TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
-以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
+公式サイトの Windows バイナリや TeX Live の TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
+
+W32TeX の TeXworks は pdfpLaTeX が標準になっています．<br>
+この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています．<br>
+
+```
+@echo off
+platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
+```
+
+<!-- この処理方法の場合 -->
+<!--  -->
+<!-- -ファイルの文字コードは自動判別されます． -->
+<!-- -コンソールへの出力や log ファイルへの出力は UTF-8 で行われます． -->
+<!-- -SyncTeX が使用できます． -->
+<!-- -platex でエラーが発生して x を入力すると dvipdfmx が実行されずに終了できます． -->
+<!-- -platex でエラーが発生して e を入力すると PDF ファイルが作成されている場合に PDF ビューアがアクティブにならずにすぐにエラー行にジャンプできます． -->
+
+公式サイトの Windows バイナリや TeX Live の TeXworks を使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
 
@@ -128,6 +145,8 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 
 TeX Live の TeXworks と OS X の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
 W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
+W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．<br>
+詳細については，ヘルプを見てください．<br>
 
 ### Windows の TeX Live 2015 の場合 {#ycb12d64}
 
