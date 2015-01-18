@@ -9,8 +9,8 @@ pukiwiki: "PDF"
 
 ## PDF {#kf03468a}
 
-PDF は [PostScript](/PostScript/) をベースに作成されたファイルフォーマットです．<br>
-[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．<br>
+PDF は [PostScript](/PostScript/) をベースに作成されたファイルフォーマットです．
+[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．
 
 - [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
@@ -19,34 +19,64 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 
 #### オープンソース {#j0482843}
 
-- [iText](http://itextpdf.com/) iText (Java) と iText# (iTextSharp) (.NET)
+- [iText](http://itextpdf.com/)
+    : iText (Java) と iText# (iTextSharp) (.NET)
     - [http://sourceforge.net/projects/itext/](http://sourceforge.net/projects/itext/)
     - [http://sourceforge.net/projects/itextsharp/](http://sourceforge.net/projects/itextsharp/)
-- [jPod](http://sourceforge.net/projects/jpodlib/) Java
-- [Apache PDFBox](https://pdfbox.apache.org) Java
-- [PDFKit](http://pdfkit.org/) JavaScript
-- [TCPDF](http://www.tcpdf.org/) PHP
+- [jPod](http://sourceforge.net/projects/jpodlib/)
+    : Java
+
+- [Apache PDFBox](https://pdfbox.apache.org)
+    : Java
+
+- [PDFKit](http://pdfkit.org/)
+    : JavaScript
+
+- [TCPDF](http://www.tcpdf.org/)
+    : PHP
     - [http://sourceforge.net/projects/tcpdf/](http://sourceforge.net/projects/tcpdf/)
-- [PDFMiner](http://www.unixuser.org/~euske/python/pdfminer/) Python
-- [PyPDF2](https://github.com/mstamy2/PyPDF2) Python
-- [ReportLab Toolkit](http://www.reportlab.com/software/opensource/rl-toolkit/) Python
-- [ThinReports Generator](http://www.thinreports.org/features/generator/) Ruby
-- [Prawn](http://prawn.majesticseacreature.com/) Ruby
-- [RTeX](http://rtex.rubyforge.org/) Ruby
-- [PDF::API2](http://search.cpan.org/dist/PDF-API2/) Perl
-- [PDFJ](http://hp1.jonex.ne.jp/~nakajima.yasushi/) Perl
+- [PDFMiner](http://www.unixuser.org/~euske/python/pdfminer/)
+    : [Python](/Python/)
+
+- [PyPDF2](https://github.com/mstamy2/PyPDF2)
+    : [Python](/Python/)
+
+- [ReportLab Toolkit](http://www.reportlab.com/software/opensource/rl-toolkit/)
+    : [Python](/Python/)
+
+- [ThinReports Generator](http://www.thinreports.org/features/generator/)
+    : [Ruby](/Ruby/)
+
+- [Prawn](http://prawn.majesticseacreature.com/)
+    : [Ruby](/Ruby/)
+
+- [RTeX](http://rtex.rubyforge.org/)
+    : [Ruby](/Ruby/)
+
+- [PDF::API2](http://search.cpan.org/dist/PDF-API2/)
+    : [Perl](/Perl/)
+
+- [PDFJ](http://hp1.jonex.ne.jp/~nakajima.yasushi/)
+    : [Perl](/Perl/)
     - 日本語 PDF を生成する Perl モジュール．JIS X 4051 にほぼ準拠した日本語組版ルールを組み込んであるとのこと
-- [libHaru](http://libharu.org/) C, C++
-- [CL-PDF](http://www.cliki.net/CL-PDF) Common Lisp
+- libHaru
+    : C, C++
+
+- [CL-PDF](http://www.cliki.net/CL-PDF)
+    : [Common Lisp](/Lisp/#jce01653)
     - [cl-pdf はもともと日本語 True Type フォントが使えたよ](http://read-eval-print.blogspot.com/2011/07/cl-pdf-true-type.html)
-- [CamlPDF](http://www.coherentpdf.com/ocaml-libraries.html) OCaml
+- [CamlPDF](http://www.coherentpdf.com/ocaml-libraries.html)
+    : OCaml
     - [https://github.com/johnwhitington/camlpdf](https://github.com/johnwhitington/camlpdf)
-- [QPDF](http://qpdf.sourceforge.net) C++ のライブラリも付属しています。[TeXWiki:QPDF](/QPDF/) も参照。
-- [Origami](http://esec-lab.sogeti.com/pages/Origami) Ruby
+- [QPDF](/QPDF/)
+    : C++ のライブラリも付属しています．
+
+- [Origami](http://esec-lab.sogeti.com/pages/Origami)
+    : [Ruby](/Ruby/)
 
 ### PDF 作成 {#w4991875}
 
-- PDF 作成に関しては [TeXWiki:PDFの作り方](</PDFの作り方/>) を参照
+- PDF 作成に関しては [PDFの作り方](</PDFの作り方/>) を参照してください．
 
 ### 関連リンク {#j6d79d4c}
 
