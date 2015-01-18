@@ -129,12 +129,12 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 TeX Live の TeXworks と OS X の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
 W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
 
-### Windows の TeX Live 2014 の場合 {#ycb12d64}
+### Windows の TeX Live 2015 の場合 {#ycb12d64}
 
 1. [http://extensions.services.openoffice.org/](http://extensions.services.openoffice.org/) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2014\texmf-config\texworks フォルダーが作成されていることを確認します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2015\texmf-config\texworks フォルダーが作成されていることを確認します
 1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2014\texmf-config\texworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
