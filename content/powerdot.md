@@ -17,7 +17,7 @@ powerdot は プレゼンテーション用の LaTeX クラスです．
 TeX Live, W32TeX に標準で含まれています．
 powerdot は dvipdfmx に対応していないので，
 PDF を作るためには
-dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller
+dvips + Ghostscript (ps2pdf) または dvips + Adobe Acrobat Distiller DC
 の組み合わせで使用してください．
 しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．
 ([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html), [platex + dvips + convbkmk + ps2pdf で文字化け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1259) を参照．)
