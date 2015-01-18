@@ -7,13 +7,13 @@ pukiwiki: "ArchiveQandA"
 
 # ArchiveQandA
 
-ここでは、[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
-
 ## Archive Q &amp; A {#c74dbb77}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+このページでは、[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
 
-## ヘルプドキュメントの探し方 {#bdcc8e5a}
+<!-- FAQ らしく，いい感じにまとめたい． -->
+
+### ヘルプドキュメントの探し方 {#bdcc8e5a}
 
 ([qa:53707](https://okumuralab.org/~okumura/texfaq/qa/53707.html), [qa:53708](https://okumuralab.org/~okumura/texfaq/qa/53708.html), [qa:55521](https://okumuralab.org/~okumura/texfaq/qa/55521.html) など)
 
@@ -27,41 +27,32 @@ pukiwiki: "ArchiveQandA"
 
 - TeXworks など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-## Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる → 高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更するまたは Qt 4 版の TeXstudio を使用する {#c8d3999a}
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる {#lad912ba}
 
-Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
-Qt 4 版の TeXstudio では日本語入力するとカーソルが文字の位置から右にずれる現象は発生しませんでした．<br>
+高度なオプションの表示を ON にして，詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
 
-## Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる → Dark theme を選択する {#r552b47f}
+Qt 4 版の TeXstudio では日本語入力するとカーソルが文字の位置から右にずれる現象は発生しませんでした．
 
-Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択してください。<br>
-Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください。<br>
+### Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#m9b1883b}
 
-## TeXworks のエラーメッセージ {#g1eb4223}
+Dark theme を選択してください。Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください。
 
-- エラーが発生した場合は，エラーメッセージをよく読んで対処してください。
+### TeXworks のエラーメッセージ {#g1eb4223}
 
-<br>
+エラーが発生した場合は，エラーメッセージをよく読んで対処してください。よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
 
-    よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
+### dviout や xdvi でのトラブル {#k7a3f154}
 
-## dviout のエラーメッセージ → dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#lb61846e}
+[dviout](/dviout/) や xdvi で画像が表示されないなどの問題が発生する場合は <strong>dviout や xdvi を使用せず，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。[ptex2pdf](/ptex2pdf/) を使用すれば TeX ファイルから直接 PDF ファイルを出力できます。
 
-dviout で画像が表示されないなどの問題が発生する場合は <strong>dviout を使用せず PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。<br>
-[ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
-
-## xdvi のエラーメッセージ → xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする {#x72af3e8}
-
-xdvi で日本語が表示されないなどの問題が発生する場合は <strong>xdvi を使用せず PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。<br>
-[ptex2pdf](/ptex2pdf/) を使用して TeX ファイルから直接 PDF ファイルを出力できます。<br>
-
-## TeX本体のエラーメッセージ {#s54a975c}
+### TeX本体のエラーメッセージ {#s54a975c}
 
 <!-- -''! TeX capacity exceeded, sorry ...''（[[qa:32844]], [[qa:32596]]など） -->
-<!-- Q&A で良く出るものはここに書いたほうが良い？  -->
-- [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
+<!-- Q&A で良く出るものはここに書いたほうが良い？ -->
 
-## LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
+[TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
+
+### LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
 
 - [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)
 - [LaTeX の警告メッセージ](</LaTeX の警告メッセージ/>)
@@ -70,45 +61,47 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
 
 - [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)（エラーや警告は生じないが，深刻な問題があるもの）
 
-## 表記の哲学 {#l951f950}
+### 細かい表記に関すること {#l951f950}
 
-- [表記の哲学](</表記の哲学/>)
+[表記の哲学](</表記の哲学/>)にまとめてあります．
 
-## 画像の作り方、扱い方 {#kbcf5f4a}
+### TeX Live で画像が取り込めない {#aa7220cc}
 
-- TeX Live 2014 で“runpopen command not allowed: extractbb ! LaTeX Error: Cannot run pipe command. Try --shell-escape”というエラーが出て画像が取り込めない
-    - 画像に対応する“枠”(Bounding Box) を出力するためのコマンド extractbb が実行できないからです。<br>
-        texmf.cnf に
+TeX Live で画像を取り込もうとすると，
 
-        ```
-        shell_escape_commands = \
-        bibtex,bibtex8,bibtexu,upbibtex,biber,\
-        kpsewhich,\
-        makeindex,mendex,texindy,xindy,\
-        mpost,upmpost,\
-        repstopdf,epspdf,extractbb
-        ```
+```
+runpopen command not allowed: extractbb
 
-        を記述してプリアンブルに
+! LaTeX Error: Cannot run pipe command. Try --shell-escape
+(--enable-pipes in MikTeX) option.
+```
 
-        ```
-        \usepackage[dvipdfmx]{graphicx}
-        ```
+と出てうまくいかないことがあります．これは画像に対応する“枠”(Bounding Box) を出力するためのコマンド extractbb が実行できないからです．texmf.cnf に
 
-        を記述します．<br>
-        すると、画像が取り込めるようになります．<br>
+```
+shell_escape_commands = \
+bibtex,bibtex8,bibtexu,upbibtex,biber,\
+kpsewhich,\
+makeindex,mendex,texindy,xindy,\
+mpost,upmpost,\
+repstopdf,epspdf,extractbb
+```
 
-- 複数ページのPDFファイルの任意のページを取り込む
-    - [PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
+と記述すると，extractbb が自動で実行され，画像が取り込めるようになります．
 
-        ```
-        \includegraphics[page=3,width=5cm]{sample.pdf}
-        ```
+### 複数ページのPDFファイルの任意のページを取り込む {#g4eeb4af}
 
-        とソース中に記述し dvipdfmx を実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
-        <!-- -[[TeX と「TeX 以外」]] -->
+[PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
 
-## Tips {#de167df2}
+```
+\includegraphics[page=3,width=5cm]{sample.pdf}
+```
+
+とソース中に記述し dvipdfmx を実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
+
+<!-- -[[TeX と「TeX 以外」]] -->
+
+### Tips {#de167df2}
 
 - 自分自身のファイル名の取得
     - \jobname ([qa:32943](https://okumuralab.org/~okumura/texfaq/qa/32943.html), [qa:17412](https://okumuralab.org/~okumura/texfaq/qa/17412.html), [qa:11872](https://okumuralab.org/~okumura/texfaq/qa/11872.html)).
@@ -118,7 +111,7 @@ xdvi で日本語が表示されないなどの問題が発生する場合は <s
     - 通しノンブルを振る (印刷所持込用?) ([qa:9645](https://okumuralab.org/~okumura/texfaq/qa/9645.html), [qa:9677](https://okumuralab.org/~okumura/texfaq/qa/9677.html), [qa:10561](https://okumuralab.org/~okumura/texfaq/qa/10561.html)).
     - 章ごとのページ／章の総ページ数 ([qa:45859](https://okumuralab.org/~okumura/texfaq/qa/45859.html), [qa:45860](https://okumuralab.org/~okumura/texfaq/qa/45860.html), [qa:45870](https://okumuralab.org/~okumura/texfaq/qa/45870.html)).
     - lastpage.sty のカスタマイズは hyperref.sty と共存しにくい ([qa:46490](https://okumuralab.org/~okumura/texfaq/qa/46490.html))
-        <!-- ([[qa:46483]], [[qa:46486]], [[qa:46488]], [[qa:46489]], [[qa:46490]],  -->
+        <!-- ([[qa:46483]], [[qa:46486]], [[qa:46488]], [[qa:46489]], [[qa:46490]], -->
         <!-- [[qa:46494]], [[qa:46495]], [[qa:46502]], [[qa:46508]], [[qa:46510]]). -->
         <!-- //// 原題: hyperref.sty と lastpage.sty は競合する -->
         <!-- // その件は，hyperref，lastpage の両パッケージが競合しているというよりも -->
