@@ -16,6 +16,51 @@ pukiwiki: "TeXworks/設定"
 
 ```
 
+## 日本語環境用の設定 {#bcc74f23}
+
+TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
+以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）をもちいたコンパイルができるように設定しておきます．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
+
+メニューから「編集」→「設定」と選びます．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set2.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set2.png" alt=""></a>
+
+出てきた画面から「タイプセット」タブを選び（赤囲み），右下の「＋」ボタン（青囲み）を押します．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png" alt=""></a>
+
+次のように入力してください．（間違わないように以下をコピー＆ペーストするとよいでしょう．）引数を入力する際には「＋」ボタン（赤囲み）を押します．
+
+- 名前：pLaTeX(ptex2pdf)
+- プログラム：ptex2pdf
+- 引数：-l, -u, -ot, -kanji=utf8 $synctexoption, $fullname
+
+OKを押して閉じてください．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png" alt=""></a>
+
+更に二つのプログラム設定を追加します．
+
+- 名前：pBibTeX
+- プログラム：pbibtex.exe
+- 引数：$basename
+
+「実行後，PDF を表示する」のチェックを外しておきます．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png" alt=""></a>
+
+- 名前：mendex
+- プログラム：mendex.exe
+- 引数：$basename
+
+やはり「実行後，PDF を表示する」のチェックを外しておきます．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png" alt=""></a>
+
+OK を押して最初の画面に戻り，左上のコンボボックスから「pLaTeX(ptex2pdf)」を選びます．
+
 ## エンコーディングの設定 {#sc2efa04}
 
 \[編集\]-\[設定\] のエディタタブのエンコーディングのリストから使用するエンコーディングを指定できます．<br>
