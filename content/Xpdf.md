@@ -12,7 +12,7 @@ pukiwiki: "Xpdf"
 <span style="font-size:30px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
 
 [Poppler](/Poppler/) を使用した PDF ビューア
-（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/),[qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）
+（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）
 または [MuPDF](/MuPDF/) を使用してください．
 
 ただし，Xpdf に含まれるいくつかのツールは，現在でも非常に有用です．
