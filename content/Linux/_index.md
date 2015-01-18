@@ -132,7 +132,10 @@ $ sudo tlmgr restore （パッケージ名） （リビジョン番号）
 TeX Live 2014 のデフォルトでは extractbb が自動実行されないので，画像を読み込もうとすると次のようなエラーが出ることがあります．
 
 ```
-! LaTeX Error: Cannot determine size of graphic in **** (no BoundingBox).
+runpopen command not allowed: extractbb
+
+! LaTeX Error: Cannot run pipe command. Try --shell-escape
+(--enable-pipes in MikTeX) option.
 ```
 
 次の手順に従って shell_escape_commands に extractbb を追加しておくと，自動で extractbb が実行されるようになります．
