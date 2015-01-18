@@ -32,7 +32,7 @@ GPLv3, GPLv2
 
 ### Windows {#za509c90}
 
-W32TeX には，
+[W32TeX](/W32TeX/) には，
 Xpdf に含まれる便利な [PDF](/PDF/) 操作ツールのバイナリ (.exe) が収録されています．
 以下が利用できます：
 
