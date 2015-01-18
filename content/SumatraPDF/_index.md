@@ -16,26 +16,11 @@ pukiwiki: "SumatraPDF"
 
 ## SumatraPDF とは {#td9ee2f0}
 
-SumatraPDF はタブ切り替え型の PDF, ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR リーダーです．<br>
-SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
-[Adobe Reader](</Adobe Reader/>) よりも TeX のプレビューアに向いています．<br>
+SumatraPDF はタブ切り替え型の軽量な PDF ビューアです．ePub, MOBI, CHM, XPS, DjVu, CBZ, CBRなどの形式も閲覧できます．
+SyncTeX への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています．
 PDF ファイルだけではなく PostScript ファイルも表示可能です．([Ghostscript](/Ghostscript/) が必要です．)<br>
-プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．<br>
-forward search を行う場合は -forward-search &lt;texfile> &lt;linenumber> オプションを追加します．<br>
 
-- [SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
-    - [News](http://www.sumatrapdfreader.org/news.html)
-    - [ダウンロード](http://www.sumatrapdfreader.org/download-free-pdf-viewer-ja.html)
-    - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
-- [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
-    - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
-        - [DDE commands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
-- [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
-    <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
-    <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
-
-- [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
+[SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
 
 ### 動作環境 {#z85aa9cd}
 
@@ -60,19 +45,22 @@ Windows
 - [PDFlite](http://www.pdflite.com/)
 - [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
 
+## インストール {#r04b7fad}
+
+[SumatraPDF 公式サイト（日本語）](http://www.sumatrapdfreader.org/free-pdf-reader-ja.html) からリンクをたどり，インストーラをダウンロードします．
+後はダブルクリックし指示に従えばインストールが完了します．
+
 ## 使い方 {#wd50e1d3}
 
-### コマンドラインオプション {#d9cff28c}
+### SyncTeX {#m55b995b}
 
-- [http://www.sumatrapdfreader.org/manual-ja.html](http://www.sumatrapdfreader.org/manual-ja.html)
-- [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp)
-
-## SyncTeX {#m55b995b}
+SyncTeX とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です．
+TeX エンジンが SyncTeX に対応しており（主要なエンジンは対応しています），またソースが -synctex=1 または -synctex=-1 オプションとともにコンパイルされている必要があります．（ソースファイルと同じフォルダに拡張子が .synctex のファイルができます．）
+ジャンプはエディタ→ SumatraPDF（forward search）と SumatraPDF →エディタ（inverse search）の両方が可能です．
 
 ### forward search {#m71d9172}
 
-forward search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
-コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．<br>
+コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．
 
 以下のエディタ・マクロ・プラグインは SumatraPDF で forward and inverse search が可能です．
 
@@ -106,8 +94,9 @@ forward search するときに SumatraPDF を前面に表示したくない場�
 
 ### inverse search {#wfcdbef6}
 
-inverse search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
-inverse search は SumatraPDF の画面をダブルクリックすると実行されます．<br>
+inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただ，設定が必要です．
+
+まずは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください．（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください．）
 SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．<br>
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．<br>
 この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．<br>
@@ -142,3 +131,25 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 ***
 
 となります．
+
+### コマンドラインオプション {#d9cff28c}
+
+プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．
+
+- [http://www.sumatrapdfreader.org/manual-ja.html](http://www.sumatrapdfreader.org/manual-ja.html)
+- [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp)
+
+## リンク {#pad542dc}
+
+- [SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
+    - [News](http://www.sumatrapdfreader.org/news.html)
+    - [ダウンロード](http://www.sumatrapdfreader.org/download-free-pdf-viewer-ja.html)
+    - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
+- [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
+    - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
+        - [DDE commands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
+- [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
+    <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
+    <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
+
+- [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
