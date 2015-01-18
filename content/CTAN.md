@@ -7,58 +7,62 @@ pukiwiki: "CTAN"
 
 # CTAN
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
-
 ## CTAN {#CTAN}
+
+### 目次 {#de6cddf1}
 
 ### CTAN とは？ {#what}
 
 CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は
-TeX 関連のファイルやソフトウェアを集めたウェブサイトです。
+TeX 関連のファイルやソフトウェアを集めたウェブサイトです．
 
 ### Ring Server によるミラーリング {#RingServer}
 
 アメリカのウェブサイトは [www.ctan.org](http://www.ctan.org/)
 ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
-での CTAN のミラーリングの利用をお勧めします。<br>
+での CTAN のミラーリングの利用をお勧めします．
 Ring Server
-のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください。<br>
+のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください．
 Ring Server
-のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，ここをクリックすれば検索の画面になります。<br>
+のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，
+ここをクリックすれば検索の画面になります．
 
-上位のディレクトリから辿っていく場合には，[Ring Server の /pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
-から始めるのが良いでしょう。
+上位のディレクトリから辿っていく場合には，
+[Ring Server の /pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
+から始めるのが良いでしょう．
 
 - HTTP
-    - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)（代表
-        URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
-        による動的な負荷分散を行う）
+    - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
+        （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)
+        （近いサーバ優先 …… [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html) による動的な負荷分散を行う）
     - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/)
 - FTP
-    - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)（代表
-        URI……一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)（近いサーバ優先……[DNS Balance](http://openlab.jp/dns_balance/dns_balance.html)
-        による動的な負荷分散を行う）
+    - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)
+        （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る）
+    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)
+        （近いサーバ優先 …… [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html) による動的な負荷分散を行う）
     - [core.ring.gr.jp/pub/text/CTAN/](ftp://core.ring.gr.jp/pub/text/CTAN/)
 
-【注意】Ring Server
-は複数のファイルサーバの集合体です。ホームページの中ほどにサーバの一覧がありますので，ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です。CTAN
-以外にもたくさんのフリーウェアをミラーしています。以下のような
-DNS による負荷分散も実験的に行われています（Ring Server
-の「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの「TENBIN，DNS
-BALANCE って何ですか？ また、RingServer
-での負荷分散はどのように行っているのですか？」の項目を参照）。
+【注意】Ring Server は複数のファイルサーバの集合体です．
+ホームページの中ほどにサーバの一覧がありますので，
+ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です．
+CTAN 以外にもたくさんのフリーウェアをミラーしています．
+以下のような DNS による負荷分散も実験的に行われています
+（Ring Server の「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの
+「TENBIN，DNS BALANCE って何ですか？ また，RingServer での負荷分散はどのように行っているのですか？」
+の項目を参照）．
 
 ### mirror.ctan.org {#mirror-sites}
 
-CTAN の世界的なミラーリングとして次の URI があります。
+CTAN の世界的なミラーリングとして次の URI があります．
 
 - [http://mirror.ctan.org/](http://mirror.ctan.org/)
 
-接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです。
+接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです．
 
-[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています。この接続先候補に含まれる日本国内でのサイトには次のものがあります。
+[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
+この接続先候補に含まれる日本国内でのサイトには次のものがあります．
 
 - [北陸先端科学技術大学院大学 \[JAIST\]](http://www.jaist.ac.jp/)
     - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
@@ -88,7 +92,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 ### オリジナルの CTAN {#original}
 
-オリジナルの CTAN サイトは次のとおりです。
+オリジナルの CTAN サイトは次のとおりです．
 
 - HTTP
     - U.S.A.（アメリカ）：[www.ctan.org](http://www.ctan.org/)
@@ -106,7 +110,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 [www.ctan.org](http://www.ctan.org/) (=
 [tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
 のみ），[www.dante.de](http://www.dante.de/) (=
-[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります。
+[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります．
 
 ### その他の日本国内での CTAN のミラーサイト（一部） {#others}
 
@@ -128,7 +132,7 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 ### CTAN内日本語関連収録物 {#p09c9b86}
 
-下記は "[http://mirror.ctan.org/](http://mirror.ctan.org/)" にリンクしているので、ミラーサイトのどこかに飛びます。
+下記は "[http://mirror.ctan.org/](http://mirror.ctan.org/)" にリンクしているので，ミラーサイトのどこかに飛びます．
 
 - [日本語ディレクトリ](http://mirror.ctan.org/language/japanese/)
     - [ASCII pTeX](http://mirror.ctan.org/language/japanese/ptex/)
@@ -146,5 +150,3 @@ CTAN の世界的なミラーリングとして次の URI があります。
 
 - [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
-
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
