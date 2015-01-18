@@ -19,7 +19,7 @@ pukiwiki: "TeXworks/設定"
 ## 日本語環境用の設定 {#bcc74f23}
 
 TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
-以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）をもちいたコンパイルができるように設定しておきます．
+以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
 
@@ -35,7 +35,11 @@ TeXworks はデフォルトで pdflatex をもちいてコンパイルを試み�
 
 - 名前：pLaTeX(ptex2pdf)
 - プログラム：ptex2pdf
-- 引数：-l, -u, -ot, -kanji=utf8 $synctexoption, $fullname
+- 引数：上から
+    - -l
+    - -ot
+    - -kanji=utf8 $synctexoption
+    - $fullname
 
 OKを押して閉じてください．
 
@@ -57,9 +61,13 @@ OKを押して閉じてください．
 
 やはり「実行後，PDF を表示する」のチェックを外しておきます．
 
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png" alt=""></a>
+
+デフォルトを「pLaTeX(ptex2pdf)」に変更しておきます．
+
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png" alt=""></a>
 
-OK を押して最初の画面に戻り，左上のコンボボックスから「pLaTeX(ptex2pdf)」を選びます．
+OK を押して最初の画面に戻り，必要ならば左上のコンボボックスから「pLaTeX(ptex2pdf)」を選びます．
 
 ## エンコーディングの設定 {#sc2efa04}
 
@@ -103,9 +111,18 @@ OK を押して最初の画面に戻り，左上のコンボボックスから�
 
 ## タイプセットの設定 {#q50d2378}
 
+- upLaTeX によるタイプセット
+    - プログラム：ptex2pdf
+    - 引数：
+        - -l
+        - -u
+        - -ot
+        - -kanji=utf8 $synctexoption
+        - $fullname
+
 {{< children >}}
 
-を参照．
+も参照．
 
 ## スペルチェックの辞書の設定 {#vd0f0d24}
 
