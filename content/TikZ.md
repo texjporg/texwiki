@@ -963,7 +963,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.174）
     - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1068）
     - \[remember picture\] を dvipdfmx で使用するためには pxpgfmark を読み込む必要があります。（[TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html)）
-        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [あなたが知らない(かもしれない)PGF/TikZの世界](http://slashdot.jp/~ujimushi/journal/551945)
+        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが、品質は落ちる／透明度は最近のGhostscriptを必要とする
 
