@@ -9,18 +9,18 @@ pukiwiki: "powerdot"
 
 ## powerdot {#v0ce3213}
 
-<strong>目次</strong>
-
-```
-
-```
+### 目次 {#l3c5c478}
 
 ### powerdot とは {#f0f3637a}
 
-powerdot は プレゼンテーション用の LaTeX クラスです．<br>
-TeX Live, W32TeX に標準で含まれています．<br>
-powerdot は dvipdfmx に対応していないので、PDFを作るためには、 dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller の組み合わせで使用してください．<br>
-しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html), [platex + dvips + convbkmk + ps2pdf で文字化け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1259) を参照．)<br>
+powerdot は プレゼンテーション用の LaTeX クラスです．
+TeX Live, W32TeX に標準で含まれています．
+powerdot は dvipdfmx に対応していないので，
+PDF を作るためには
+dvips + Ghostscript (ps2pdf) または dvips + Acrobat Distiller
+の組み合わせで使用してください．
+しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．
+([qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html), [platex + dvips + convbkmk + ps2pdf で文字化け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1259) を参照．)
 
 - [https://stuwww.uvt.nl/~hendri/](https://stuwww.uvt.nl/~hendri/)
 - [http://www.ctan.org/pkg/powerdot](http://www.ctan.org/pkg/powerdot)
