@@ -9,7 +9,7 @@ pukiwiki: "ArchiveQandA"
 
 ## Archive Q &amp; A {#c74dbb77}
 
-このページでは、[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった、あるいは頻繁に尋ねられる事柄をまとめます。
+このページでは，[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) で話題になった，あるいは頻繁に尋ねられる事柄をまとめます．
 
 <!-- FAQ らしく，いい感じにまとめたい． -->
 
@@ -27,56 +27,52 @@ pukiwiki: "ArchiveQandA"
 
 - TeXworks など由来のはっきりしているソフトウェアに関するヘルプは，それぞれのソフトウェアのヘルプをまず見る．
 
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる {#lad912ba}
-
-高度なオプションの表示を ON にして，詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
-
-Qt 4 版の TeXstudio では日本語入力するとカーソルが文字の位置から右にずれる現象は発生しませんでした．
-
-### Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#m9b1883b}
-
-Dark theme を選択してください。Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください。
-
-### TeXworks のエラーメッセージ {#g1eb4223}
-
-エラーが発生した場合は，エラーメッセージをよく読んで対処してください。よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください。
-
-### dviout や xdvi でのトラブル {#k7a3f154}
-
-[dviout](/dviout/) や xdvi で画像が表示されないなどの問題が発生する場合は <strong>dviout や xdvi を使用せず，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります。[ptex2pdf](/ptex2pdf/) を使用すれば TeX ファイルから直接 PDF ファイルを出力できます。
-
-### TeX本体のエラーメッセージ {#s54a975c}
+### TeX, LaTeX のエラーメッセージ {#s54a975c}
 
 <!-- -''! TeX capacity exceeded, sorry ...''（[[qa:32844]], [[qa:32596]]など） -->
 <!-- Q&A で良く出るものはここに書いたほうが良い？ -->
 
-[TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめました。
+TeX のエンジンレベルのエラーについては [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)にまとめてあります．
 
-### LaTeXのエラーメッセージ・警告メッセージ {#m585375b}
+LaTeX のエラー・警告については
 
 - [LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)
 - [LaTeX の警告メッセージ](</LaTeX の警告メッセージ/>)
 
-の各々にまとめました．
+の各々にまとめてあります．エラーや警告は生じないが，深刻な問題があるものについては
 
-- [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)（エラーや警告は生じないが，深刻な問題があるもの）
+- [LaTeX コマンドの誤用例](</LaTeX コマンドの誤用例/>)
 
-### 細かい表記に関すること {#l951f950}
+が参考になります．
 
-[表記の哲学](</表記の哲学/>)にまとめてあります．
+### TeXworks のエラーメッセージ {#g1eb4223}
 
-### TeX Live で画像が取り込めない {#aa7220cc}
+エラーが発生した場合は，エラーメッセージをよく読んで対処してください．よく分からない場合は [TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeXworks#TeX ► QA ► フォーラム ► 一般フォーラム ►](/TeXworks/#m9d42515) に同様の事例がないか探してみてください．
 
-TeX Live で画像を取り込もうとすると，
+### dviout や xdvi でのトラブル {#k7a3f154}
+
+[dviout](/dviout/) や xdvi で画像が表示されないなどの問題が発生する場合は <strong>dviout や xdvi を使用せず，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります．[ptex2pdf](/ptex2pdf/) を使用すれば TeX ファイルから直接 PDF ファイルを出力できます．
+
+### TeX Live の pLaTeX + dvipdfmx で画像が取り込めない {#aa7220cc}
+
+まず，プリアンブルの graphicx のパッケージ読み込みで
+
+```
+\usepackage[dvipdfmx]{graphicx}
+```
+
+と dvipdfmx オプションがついていることを確認して下さい．この状態で画像を取り込もうとしても，
 
 ```
 runpopen command not allowed: extractbb
+```
 
+```
 ! LaTeX Error: Cannot run pipe command. Try --shell-escape
 (--enable-pipes in MikTeX) option.
 ```
 
-と出てうまくいかないことがあります．これは画像に対応する“枠”(Bounding Box) を出力するためのコマンド extractbb が実行できないからです．texmf.cnf に
+と出てうまくいかないことがあります．これは画像に対応する「枠」(Bounding Box) の情報を取得・出力するためのコマンド extractbb が実行できないからです．texmf.cnf に
 
 ```
 shell_escape_commands = \
@@ -89,15 +85,29 @@ repstopdf,epspdf,extractbb
 
 と記述すると，extractbb が自動で実行され，画像が取り込めるようになります．
 
-### 複数ページのPDFファイルの任意のページを取り込む {#g4eeb4af}
-
-[PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)によれば、
+### 複数ページのPDFファイルの任意のページを取り込みたい {#g4eeb4af}
 
 ```
 \includegraphics[page=3,width=5cm]{sample.pdf}
 ```
 
-とソース中に記述し dvipdfmx を実行することで、複数ページからなるPDFファイルの任意のページを図として取り込むことができます。
+とソース中に記述し dvipdfmx を実行することで，複数ページからなるPDFファイルの任意のページを図として取り込むことができます．
+
+- [QA: PDFファイルの任意のページの画像を使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=641#p3532)
+
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる {#lad912ba}
+
+高度なオプションの表示を ON にして，詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
+
+Qt 4 版の TeXstudio では日本語入力するとカーソルが文字の位置から右にずれる現象は発生しませんでした．
+
+### Texmaker でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#m9b1883b}
+
+Dark theme を選択してください．Dark theme を選択しても読めない場合は Texmaker 修正版または派生版の [TeXstudio](/TeXstudio/) を使用してください．
+
+### 細かい表記に関すること {#l951f950}
+
+[表記の哲学](</表記の哲学/>)にまとめてあります．
 
 <!-- -[[TeX と「TeX 以外」]] -->
 
