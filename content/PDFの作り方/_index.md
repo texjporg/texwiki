@@ -108,10 +108,10 @@ pukiwiki: "PDFの作り方"
     - [PDFedit](http://pdfedit.petricek.net/) PDF ファイルエディタ
     - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり，結合したり，回転したりできる
     - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
-    - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する　（名前も同じですが下記とは別物）
+    - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する（名前も同じですが下記とは別物）
     - [pdfcrop](/pdfcrop/) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
         - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
-    - [QPDF](http://qpdf.sourceforge.net/) Web表示用に最適化したり，暗号化したりできる．[W32TeX](/W32TeX/) に含まれています．
+    - [QPDF](/QPDF/) Web 表示用に最適化したり，暗号化したりできます．[W32TeX](/W32TeX/) に含まれています．
     - [pdfsizeopt](https://code.google.com/p/pdfsizeopt/) PDF file size optimizer
     - [DiffPDF](http://www.qtrac.eu/diffpdf.html) DiffPDF is used to compare two PDF files—textually or visually.
 
@@ -517,7 +517,7 @@ Draw
 ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます．<br>
 dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, LuaJITTeX/LuaJITLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう．<br>
 
-[gnuplot](https://okumuralab.org/~okumura/linux/?gnuplot) などのグラフツールも PDF 形式や EPS 形式で出力できます．([28.6 グラフを画像として保存する | HWB](http://hwb.ecc.u-tokyo.ac.jp/current/applications/gnuplot/output/), [GNUPLOTを用いたグラフ作成](http://www.cse.kyoto-su.ac.jp/~oomoto/lecture/program/gnuplot/gnuplot.html), [gnuplotの出力をマージンを調整してpdfに変換する](http://d.hatena.ne.jp/yambi/20130717/1374064507), [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html))
+[gnuplot](/gnuplot/) などのグラフツールも PDF 形式や EPS 形式で出力できます．([28.6 グラフを画像として保存する | HWB](http://hwb.ecc.u-tokyo.ac.jp/current/applications/gnuplot/output/), [GNUPLOTを用いたグラフ作成](http://www.cse.kyoto-su.ac.jp/~oomoto/lecture/program/gnuplot/gnuplot.html), [gnuplotの出力をマージンを調整してpdfに変換する](http://d.hatena.ne.jp/yambi/20130717/1374064507), [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html))
 
 Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です．<br>
 画面や非 PostScript プリンターへの出力ではラスター画像が使われ，PostScript
@@ -907,9 +907,7 @@ Ryumin-Light-RKSJ-H に置き換えます．<br>
 
 - [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
 
-Acrobat を使えばできますが，フリーウェアとして
-[QPDF](http://qpdf.sourceforge.net/)
-といったものもあるそうです (使ったことはありません)．
+Acrobat を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
 また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．<br>
 ただし，Adobe Readerからはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．<br>
