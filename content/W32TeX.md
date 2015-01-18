@@ -200,7 +200,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td>LuaJITTeX</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつきOmega</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF パッケージ</a>［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります。<br>otf パッケージの最新版は otfbeta です。</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for musixtex</td></tr>
@@ -397,7 +397,7 @@ PATH という欄が
 
 [Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です。TeX で特に画像を使う上で（裏で）もちいられることが多いので，インストールをしておくことをお勧めします．なお，TeX インストーラ 3 でインストールした場合は，同時にインストールがされますので，ここでのインストールは不要です．
 
-インストールの詳細に関しては<br>
+インストールの詳細に関しては
 
 - [Ghostscript/Windows](/Ghostscript/Windows/)
 
@@ -405,7 +405,12 @@ PATH という欄が
 
 #### dviout {#hd6558c1}
 
-[dviout](/dviout/) は dvi ファイルのプレビューアです．近年では pdf ファイルによるプレビューの方がトラブルが少ないとされており，そちらを使う場合は特に必要ありません．逆に従来通り dvi ファイルをプレビューしたい場合は必須となります．インストールは [dviout](/dviout/) をご覧ください．なお，TeX インストーラ 3 では自動でインストールされます．
+[dviout](/dviout/) は dvi ファイルのプレビューアです．近年では PDF ファイルによるプレビューの方がトラブルが少ないとされており，そちらを使う場合は特に必要ありません．逆に従来通り dvi ファイルをプレビューしたい場合は必須となります．インストールは [dviout](/dviout/) をご覧ください．なお，TeX インストーラ 3 では自動でインストールされます．
+
+### Perl {#c6d961fb}
+
+W32TeX に含まれるいくつかのファイルは Perl に依存しています．（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など．）
+余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
 
 ## アップデート {#o482d037}
 
