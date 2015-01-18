@@ -150,7 +150,7 @@ W32TeX に付属のものは，スペルチェック用の英語辞書を前も�
 
 ### Windows の TeX Live 2015 の場合 {#ycb12d64}
 
-1. [http://extensions.services.openoffice.org/](http://extensions.services.openoffice.org/) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
+1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
 1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2015\texmf-config\texworks フォルダーが作成されていることを確認します
@@ -160,7 +160,7 @@ W32TeX に付属のものは，スペルチェック用の英語辞書を前も�
 
 ### OS X の場合 {#d0319cb7}
 
-1. [http://extensions.services.openoffice.org/](http://extensions.services.openoffice.org/) または [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
+1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
 1. /Users/&lt;ユーザー名>/Library/TeXworks/ ディレクトリが作成されていることを確認します
