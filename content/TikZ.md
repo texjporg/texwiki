@@ -13,18 +13,20 @@ pukiwiki: "TikZ"
 
 ## はじめに {#aacc19e6}
 
-PGF (Portable Graphics Format) は、Till Tantau（Beamerのオリジナルの開発者） および Mark Wibrow, Christian Feuers&auml;nger を中心として開発されているTeX用の描画パッケージです。<br>
-PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します。<br>
-Beamer が基礎としている描画エンジンもPGFです。<br>
+PGF (Portable Graphics Format) は、Till Tantau（Beamerのオリジナルの開発者） および Mark Wibrow, Christian Feuers&auml;nger を中心として開発されている TeX 用の描画パッケージです．
+PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します．
+Beamer が基礎としている描画エンジンも PGF です．
 
-また、R や gnuplot と連携させて描画させることもできます。<br>
+また、R や [gnuplot](/gnuplot/) と連携させて描画することもできます．
 
-TikZ/PGF が提供する tikzpicture 環境は、LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています。（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）<br>
-TikZ/PGF 自身が持っているライブラリで機能が拡充されるほか、TikZ/PGF を利用し、拡張するパッケージも数多く作られています。<br>
-TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。<br>
-同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは、PostScript (PS) を経由せずに PDF を作成できる点です。<br>
+TikZ/PGF が提供する tikzpicture 環境は，LaTeX 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが、かなり高度な描画機能を持っています．
+（→図版の例は[こちら](http://www.texample.net/tikz/)を参照．）
+TikZ/PGF 自身が持っているライブラリで機能が拡充されるほか，TikZ/PGF を利用し，拡張するパッケージも数多く作られています．
+TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります．
+同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは，[PostScript](/PostScript/) (PS) を経由せずに PDF を作成できる点です．
 
-TikZ/PGF は LaTeX だけでなく、plain TeX と ConTeXt にも対応していますが、以下は、LaTeX の場合について記述します。<br>
+TikZ/PGF は LaTeX だけでなく plain TeX と [ConTeXt](/ConTeXt/) にも対応していますが，以下では
+LaTeX の場合について記述します．
 
 - [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
 - [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/)
@@ -33,7 +35,7 @@ TikZ/PGF は LaTeX だけでなく、plain TeX と ConTeXt にも対応してい
 - [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
 - [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
     - [e-TeX](/e-TeX/) 拡張が必要です． ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
-    - [TeX Live](</TeX Live/>) 2014 以降, [W32TeX](/W32TeX/)であれば動作に問題はありません。
+    - [TeX Live](</TeX Live/>) 2014 以降または [W32TeX](/W32TeX/)であれば動作に問題はありません．
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
         <!-- - -[[ChangeLog:http://altermundus.com/pages/builds/pgf_2.10-CVS.ChangeLog]] -->
 
