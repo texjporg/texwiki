@@ -431,6 +431,8 @@ Source editor:
 
 ## gnuplot との連携 {#pe8db1a3}
 
+グラフ描画ツール [gnuplot](/gnuplot/) との連携です．
+
 - [LaTeX - おもこん - Yahoo!ブログ](http://blogs.yahoo.co.jp/jeaou/folder/1202527.html)
 - [VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)
     - おもこんには、VineLinuxでgnuplotとTexworksを連携させる話題があり、Texworksのコンフィギュレーションファイルがその中で解説されています。[VineLinuxの書庫](http://blogs.yahoo.co.jp/jeaou/folder/1199960.html)から、「VineLinuxのgnuplot…」「pregnuplotを…」を見てください。
