@@ -9,88 +9,89 @@ pukiwiki: "PSTricks"
 
 ## [PSTricks](http://tug.org/PSTricks/) → dvipdfmx, dvisvgm, pdfTeX, LuaTeX, LuaJITTeX を使用する場合は [TikZ](/TikZ/) を使用する {#c2b5878d}
 
-<!-- mimetex を使っている行をコメントアウトしました。復帰させました。 -->
+<!-- mimetex を使っている行をコメントアウトしました．復帰させました． -->
 
-\[FIXME\] 以下の内容はかなり古いので，どなたか改訂お願いします。 <!-- 気に入らなかったら、再改訂して下さい。 --> <!-- 例があまり良くないのは分かっています。 -->
-#CONTENTS
+\[FIXME\] 以下の内容はかなり古いので，どなたか改訂お願いします． <!-- コードもきれいではありませんね… -->
+
+### 目次 {#eef991e0}
 
 ### What is PSTricks {#v92f1d4b}
 
-PSTricks は TeX，LaTeX 文書ファイルの中で PostScript
-の命令を直接使って簡単に表現力豊かな描画ができる便利なパッケージ（スタイルファイル）です。<br>
+PSTricks は TeX，LaTeX 文書ファイルの中で [PostScript](/PostScript/)
+の命令を直接使って簡単に表現力豊かな描画ができる便利なパッケージ（スタイルファイル）です．<br>
 ただし，dvi ファイルに \special で PostScript
 ヘッダ(プロファイル)の内容に依存した PostScript
-の命令を埋め込むので，<strong>dvi</strong> ドライバには、
+の命令を埋め込むので，<strong>dvi</strong> ドライバには，
 
-- そのような PostScript 命令をヘッダの内容と組み合わせて、解釈できる VTeX 等の
-    ドライバや、組み合わせた PostScript 命令をその場で、 PostScript インタプリタに
+- そのような PostScript 命令をヘッダの内容と組み合わせて，解釈できる VTeX 等の
+    ドライバや，組み合わせた PostScript 命令をその場で， PostScript インタプリタに
     処理させられる xdvipdfmx 等のドライバ
 
 - PostScript を解釈せずに(ヘッダとユーザ・コマンドを埋め込むのみで)
     次の段階に受け渡す dvips(k), dvipsone, texture 等のドライバ
 
-のいずれかを、使う必要があります。<br> <!-- 現在では、ほとんど使われていない古いドライバにも --> <!-- PSTricks を部分的にサポートする物がいろいろあります。 --> <!-- xdvipdfmx は建前としては、 dvipdfmx の上位互換なので、 upTeX で生成した --> <!-- dvi ファイルも PDF に変換できる可能性が高いです。もちろん、そのためには --> <!-- xdvipdfmx 用の pstricks.con を使用しなければなりません。 -->
+のいずれかを，使う必要があります．<br> <!-- 現在では，ほとんど使われていない古いドライバにも --> <!-- PSTricks を部分的にサポートする物がいろいろあります． --> <!-- xdvipdfmx は建前としては， dvipdfmx の上位互換なので， upTeX で生成した --> <!-- dvi ファイルも PDF に変換できる可能性が高いです．もちろん，そのためには --> <!-- xdvipdfmx 用の pstricks.con を使用しなければなりません． -->
 PSTricks マクロの生成する PostScript コード断片は
-EPS や、 MetaPost の生成する疑似 EPS のように、
-独立して解釈できる物ではありません。<br>
-この辺りの事情も含め、<strong>dvi</strong> ドライバ固有の設定は pstricks.con ファイルに
-書き込んでおく事になっています。<br>
-pstricks.con では pstricks.tex で定義された、
-すべての TeX マクロを再定義できるので、特定のドライバのみ、異なる実装を
-使用して、他の方法では対応できない機能をサポートする事もできます。<br>
-このファイルは dvi ドライバではなく、 TeX コンパイラの検索パスに置きます。<br>
-<strong>dvi</strong> ドライバの生成物がプロファイルを埋め込んだ PostScript フォーマットの場合は、
+EPS や， MetaPost の生成する疑似 EPS のように，
+独立して解釈できる物ではありません．<br>
+この辺りの事情も含め，<strong>dvi</strong> ドライバ固有の設定は pstricks.con ファイルに
+書き込んでおく事になっています．<br>
+pstricks.con では pstricks.tex で定義された，
+すべての TeX マクロを再定義できるので，特定のドライバのみ，異なる実装を
+使用して，他の方法では対応できない機能をサポートする事もできます．<br>
+このファイルは dvi ドライバではなく， TeX コンパイラの検索パスに置きます．<br>
+<strong>dvi</strong> ドライバの生成物がプロファイルを埋め込んだ PostScript フォーマットの場合は，
 
-PostScript プリンタ（あるいは Ghostscript など）の利用が前提になります。<br>
-PostScript 言語はスタックの積み降ろしを直接記述しなければならない、大変、
-低レベルの言語であり、設計思想もそれに準じた物になっています。<br>
-PostScript 命令への TeX マクロを通しての完全なアクセスを実現する、 PSTricks
-のコアのユーザ・インタフェースも、その影響もあり、
-METAFONT や [MetaPost](/MetaPost/)
+PostScript プリンタ（あるいは Ghostscript など）の利用が前提になります．<br>
+PostScript 言語はスタックの積み降ろしを直接記述しなければならない，大変，
+低レベルの言語であり，設計思想もそれに準じた物になっています．<br>
+PostScript 命令への TeX マクロを通しての完全なアクセスを実現する， PSTricks
+のコアのユーザ・インタフェースも，その影響もあり，
+[METAFONT](/METAFONT/) や [MetaPost](/MetaPost/)
 ほど洗練されていないかもしれませんが，
-PostScript でできることは何でもできます。<br>
-更に、<strong>ノード</strong>の概念と xkeyval を使う事により、高級言語としての
-ユーザ・インタフェースを与える事も可能であり、それを実現したパッケージには、
-pst-eucl や uml があります。<br>
-ドライバが対応していれば、
+PostScript でできることは何でもできます．<br>
+更に，<strong>ノード</strong>の概念と xkeyval を使う事により，高級言語としての
+ユーザ・インタフェースを与える事も可能であり，それを実現したパッケージには，
+pst-eucl や uml があります．<br>
+ドライバが対応していれば，
 日本語も使えますし，
-曲線のパス長も METAFONT や MetaPost より長くても大丈夫のようです。<br>
+曲線のパス長も METAFONT や MetaPost より長くても大丈夫のようです．<br>
 
 ### History &amp; License {#qdc38f1e}
 
 PSTricks は [Timothy Van Zandt](http://faculty.insead.edu/vanzandt/) (開発当時プリンストン大, 現フランス・INSEAD) が作り，
 フランスの Denis Girou によって育てられ，
 [Sebastian Rahtz](http://users.ox.ac.uk/~rahtz/) も加わって，
-1997年春に PSTricks 97 として集大成されました。<br>
-その後も修正作業は続いています。<br>
-PSTricks 2004 は Herbert Voss と Rolf Niepraschk がメンテナンスを行い、
-PSTricks 2005 及び PSTricks 2006 は Herbert Voss が管理しています。<br>
-多くの TeX 関連の配布物と同じく、LPPL というライセンスで配布されています。<br>
+1997年春に PSTricks 97 として集大成されました．<br>
+その後も修正作業は続いています．<br>
+PSTricks 2004 は Herbert Voss と Rolf Niepraschk がメンテナンスを行い，
+PSTricks 2005 及び PSTricks 2006 は Herbert Voss が管理しています．<br>
+多くの TeX 関連の配布物と同じく，LPPL というライセンスで配布されています．<br>
 
-> 以前の LPPL は、
-> 配布物に変更を加えた場合は名前も変更するよう要請していましたので、
+> 以前の LPPL は，
+> 配布物に変更を加えた場合は名前も変更するよう要請していましたので，
 > PSTricks のメンテナが交替したのにそのままの名前を使い続けていることを
-> 不思議に思われる方がいらっしゃるかもしれません。<br>
-> 実は2004年頃の新しい LPPL 1.3 からはこの要請がなくなっています。<br>
+> 不思議に思われる方がいらっしゃるかもしれません．<br>
+> 実は2004年頃の新しい LPPL 1.3 からはこの要請がなくなっています．<br>
 > また PSTricks 97 では「LPPL」とだけ書いてあって
-> バージョンには触れられていなかったのですが、
+> バージョンには触れられていなかったのですが，
 > PSTricks 2004 では「LPPL 1.0 またはそれ以降のバージョン」
-> を適用するよう文面が改められて、明らかに LPPL 1.3 が適用できるようになりました。<br>
-> ですから、現在では誰でもそのままの名前で改変再配布できるようです。<br>
-> （もちろんこれはライセンス上の話であって、
-> コミュニティを混乱させるようなやり方はマナーとして控えるべきでしょう。
-> PSTricks の場合も、新旧のメンテナの間で合意があったものと思われます。）<br> <!-- 書き換えてみました。 -->
+> を適用するよう文面が改められて，明らかに LPPL 1.3 が適用できるようになりました．<br>
+> ですから，現在では誰でもそのままの名前で改変再配布できるようです．<br>
+> （もちろんこれはライセンス上の話であって，
+> コミュニティを混乱させるようなやり方はマナーとして控えるべきでしょう．
+> PSTricks の場合も，新旧のメンテナの間で合意があったものと思われます．）<br> <!-- 書き換えてみました． -->
 
 ### インストール {#j88bb2ce}
 
-PSTricks は [CTAN:graphics/pstricks/](https://mirror.ctan.org/graphics/pstricks/) ディレクトリにあります。
+PSTricks は [CTAN:graphics/pstricks/](https://mirror.ctan.org/graphics/pstricks/) ディレクトリにあります．
 
-TeX Live, W32TeX, MikTeX ではインストール済です。
+TeX Live, W32TeX, MikTeX ではインストール済です．
 
-<!-- 以下では、 $TEXMFLOCAL は /usr/share/texmf-local や $HOME/texmf -->
-<!-- 更には /usr/local/share/texmf 等に適宜読み替えて下さい。 -->
+<!-- 以下では， $TEXMFLOCAL は /usr/share/texmf-local や $HOME/texmf -->
+<!-- 更には /usr/local/share/texmf 等に適宜読み替えて下さい． -->
 <!-- パッケージのファイルには通常 *.tex (TeX マクロ本体)と*.sty (LaTeX 用ラッパ) -->
-<!-- と*.pro (PostScriptヘッダ)がありますので、インストールは， -->
+<!-- と*.pro (PostScriptヘッダ)がありますので，インストールは， -->
 <!-- PSTricks 配布ディレクトリ中の generic ディレクトリの中身は， -->
 <!-- $TEXMFLOCAL/tex/generic/pstricks -->
 <!-- というディレクトリを作ってその中に移動し， -->
@@ -99,7 +100,7 @@ TeX Live, W32TeX, MikTeX ではインストール済です。
 <!-- というディレクトリを作ってその中に移動し， -->
 <!-- PSTricks 配布ディレクトリ中の dvips ディレクトリの中身は， -->
 <!-- $TEXMFLOCAL/dvips/pstricks -->
-<!-- というディレクトリを作ってその中に移動します。 -->
+<!-- というディレクトリを作ってその中に移動します． -->
 <!-- あとは必要に応じて contrib -->
 <!-- の中の *.tex を -->
 <!-- $TEXMFLOCAL/tex/generic/pstricks -->
@@ -108,34 +109,34 @@ TeX Live, W32TeX, MikTeX ではインストール済です。
 <!-- に，*.pro ファイルを -->
 <!-- $TEXMFLOCAL/dvips/pstricks -->
 <!-- に入れます -->
-<!-- （たとえば contrib/pst-poly の中身）。 -->
-<!-- VTeX を使う場合は、すべて、$TEXMF/tex/generic/pstricksに入れる。 -->
+<!-- （たとえば contrib/pst-poly の中身）． -->
+<!-- VTeX を使う場合は，すべて，$TEXMF/tex/generic/pstricksに入れる． -->
 <!-- *** バージョンに関する注意 [#xbd10e48] -->
-<!-- ~*.dtx ファイルの扱いは通常の LaTeX 用パッケージと同じです。 -->
-<!-- 同一パッケージに属する、 *.tex, *.sty, *.pro ファイルはすべて -->
-<!-- 同じバージョンを使用して下さい。異なるバージョンを混ぜて使用すると、 -->
-<!-- 容易には理解できないトラブルの原因になる事があります。 -->
+<!-- ~*.dtx ファイルの扱いは通常の LaTeX 用パッケージと同じです． -->
+<!-- 同一パッケージに属する， *.tex, *.sty, *.pro ファイルはすべて -->
+<!-- 同じバージョンを使用して下さい．異なるバージョンを混ぜて使用すると， -->
+<!-- 容易には理解できないトラブルの原因になる事があります． -->
 <!--  -->
 <!-- 2004 年 9 月 22 日以降のバージョンの PSTricks は xkeyval (pst-xkey) を -->
-<!-- 使用しています。できるだけ新しい xkeyval もインストールして下さい。 -->
-<!-- pst-xkey は xkeyval の内部マクロにアクセスするため、従来の pst-key を使用する -->
-<!-- パッケージを後から、ロードすると、正しく処理されない事があります。 -->
-<!-- \usepackage の順序には気をつける必要があります。 -->
-<!-- PSTricks 関連のパッケージの場合、相互に必要なパッケージをロードするので、 -->
+<!-- 使用しています．できるだけ新しい xkeyval もインストールして下さい． -->
+<!-- pst-xkey は xkeyval の内部マクロにアクセスするため，従来の pst-key を使用する -->
+<!-- パッケージを後から，ロードすると，正しく処理されない事があります． -->
+<!-- \usepackage の順序には気をつける必要があります． -->
+<!-- PSTricks 関連のパッケージの場合，相互に必要なパッケージをロードするので， -->
 <!-- xkeyval (pst-xkey) を使用するパッケージと -->
-<!-- keyval (pst-key) を使用するパッケージが混在していると、 -->
-<!-- トラブルを解決できない事もあります。 -->
-<!-- 2006 年中には、主要な PSTricks 関連のパッケージは xkeyval 対応になりましたが、 -->
-<!-- 特別な理由が無い限り、 最新のパッケージか、2004 年以前のパッケージで、 -->
-<!-- すべてを固めた方が安全です。 -->
-<!-- xcolor もできるだけ新しいバージョンをインストールしてください。 -->
-<!-- 現在の PSTricks に対応しているのは、 2005 年 10 月 15 日の xcolor v2.06 以降です。 -->
+<!-- keyval (pst-key) を使用するパッケージが混在していると， -->
+<!-- トラブルを解決できない事もあります． -->
+<!-- 2006 年中には，主要な PSTricks 関連のパッケージは xkeyval 対応になりましたが， -->
+<!-- 特別な理由が無い限り， 最新のパッケージか，2004 年以前のパッケージで， -->
+<!-- すべてを固めた方が安全です． -->
+<!-- xcolor もできるだけ新しいバージョンをインストールしてください． -->
+<!-- 現在の PSTricks に対応しているのは， 2005 年 10 月 15 日の xcolor v2.06 以降です． -->
 <!--  -->
 <!-- *** 古いバージョンを使う際の注意 [#v322c206] -->
-<!-- ps4pdf のような、古いパッケージを利用するために、 PSTricks 関連の -->
-<!-- パッケージを古いバージョンで固める場合、次のような違いに注意して下さい。 -->
-<!-- -pst-text.pro に、松田一朗さんと角藤亮さんによる日本語用パッチをあてる。 -->
-<!-- パッチの当て方が分からない場合は、テキストエディタで開き、53行目からの -->
+<!-- ps4pdf のような，古いパッケージを利用するために， PSTricks 関連の -->
+<!-- パッケージを古いバージョンで固める場合，次のような違いに注意して下さい． -->
+<!-- -pst-text.pro に，松田一朗さんと角藤亮さんによる日本語用パッチをあてる． -->
+<!-- パッチの当て方が分からない場合は，テキストエディタで開き，53行目からの -->
 <!--   String length -->
 <!--   { String CharCount 1 getinterval ShowChar -->
 <!--     /CharCount CharCount 1 add def -->
@@ -148,41 +149,41 @@ TeX Live, W32TeX, MikTeX ではインストール済です。
 <!--   String length CharSize idiv -->
 <!--   { String CharCount CharSize getinterval ShowChar -->
 <!--     /CharCount CharCount CharSize add def -->
-<!-- ~に直す。 -->
-<!-- -LaTeX で 2004年5月21日より古いバージョンで色を利用する場合、 pstricks -->
-<!-- ではなく、 pstcol を読み込む。 color を直接ロードしてはいけない事は、 -->
-<!-- 新しいバージョンと同じ。(以下の例のうち、 xcolor による色の指定はそのままでは -->
-<!-- コンパイルできない。) -->
-<!-- -\pspicture コマンドの shift オプションは使用できないので、数字のみを書く。 -->
+<!-- ~に直す． -->
+<!-- -LaTeX で 2004年5月21日より古いバージョンで色を利用する場合， pstricks -->
+<!-- ではなく， pstcol を読み込む． color を直接ロードしてはいけない事は， -->
+<!-- 新しいバージョンと同じ．(以下の例のうち， xcolor による色の指定はそのままでは -->
+<!-- コンパイルできない．) -->
+<!-- -\pspicture コマンドの shift オプションは使用できないので，数字のみを書く． -->
 <!-- \begin{pspicture}[0](x,y)(X,Y) -->
-<!-- ~とすれば、確保された領域の下端がベースラインに、 -->
+<!-- ~とすれば，確保された領域の下端がベースラインに， -->
 <!-- \begin{pspicture}[1](x,y)(X,Y) -->
-<!-- ~とすれば、上端がベースラインになる。 shift オプションとは単位も、正負も異なる。 -->
+<!-- ~とすれば，上端がベースラインになる． shift オプションとは単位も，正負も異なる． -->
 <!--  -->
-<!-- なお、 LaTeX で使用しているパッケージのバージョンを調べるには、 -->
+<!-- なお， LaTeX で使用しているパッケージのバージョンを調べるには， -->
 <!-- ソースファイルの先頭に -->
 <!-- \listfiles -->
-<!-- と1行付け加え、 log ファイルの最後の方にある、パッケージリストを見ます。 -->
+<!-- と1行付け加え， log ファイルの最後の方にある，パッケージリストを見ます． -->
 <!--  -->
-<!-- 最後に，システムによっては mktexlsr コマンドの実行が必要です。 -->
+<!-- 最後に，システムによっては mktexlsr コマンドの実行が必要です． -->
 
 ### パッケージの使い方 {#s2d68477}
 
 <!-- Girou による -->
 <!-- [[PSTricks:http://www.tug.org/applications/PSTricks/]] -->
-<!-- ホームページにはたくさんの例が載っています。 -->
-<!-- このアドレスは現在 Voss のページに飛ばされます。 -->
+<!-- ホームページにはたくさんの例が載っています． -->
+<!-- このアドレスは現在 Voss のページに飛ばされます． -->
 
-Web 上の資源については、 Voss による [PSTricks](http://tug.org/PSTricks) から
-リンクをたどっていくのがよいでしょう。<br>
+Web 上の資源については， Voss による [PSTricks](http://tug.org/PSTricks) から
+リンクをたどっていくのがよいでしょう．<br>
 LaTeX3 プロジェクトチームによる
 The LaTeX Graphics Companion
 (Michel Goossens, Sebastian Rahtz, Frank Mittelbach 著, Addison Wesley, 1997)
-という本にも詳しい解説があります。<br>
-現在のバージョンについても、 2006 年 12 月刊行予定の改訂版に解説が載ります。<br> <!-- TeXLive 2014 がリリースされたので、出版スケジュールも再び進行するでしょう。~ -->
+という本にも詳しい解説があります．<br>
+現在のバージョンについても， 2006 年 12 月刊行予定の改訂版に解説が載ります．<br> <!-- TeXLive 2014 がリリースされたので，出版スケジュールも再び進行するでしょう．~ -->
 
 > 邦訳『LaTeXグラフィックスコンパニオン』が出ました
-> （鷺谷好輝訳，ISBN4-7561-3461-0，本体5400円，アスキー）。
+> （鷺谷好輝訳，ISBN4-7561-3461-0，本体5400円，アスキー）．
 
 基本的な使い方は，LaTeX2e ならプリアンブルで
 
@@ -190,25 +191,25 @@ The LaTeX Graphics Companion
 \usepackage[dvipsnames]{pstricks}
 ```
 
-とします。さらに，特定の拡張機能を使うなら，
-必要なファイルを \usepackage します。
-<strong>dvipsname</strong> は実は xcolor パッケージのオプションです。<br>
+とします．さらに，特定の拡張機能を使うなら，
+必要なファイルを \usepackage します．
+<strong>dvipsname</strong> は実は xcolor パッケージのオプションです．<br>
 
-PSTricks のコマンド自身のオプションを指定するには、
+PSTricks のコマンド自身のオプションを指定するには，
 
 ```
 \psline[linecolor=blue,linestyle=dotted,linewidth=1.6pt](-2,1.41421)(3,-1.73205)
 ```
 
-と言ったように、 \[  \] の中に、個別のコマンド毎に、指定するか、
+と言ったように， \[  \] の中に，個別のコマンド毎に，指定するか，
 
 ```
 \psset{linecolor=blue,linestyle=dotted,linewidth=1.6pt}
 ```
 
-と大域的に指定します。<br>
+と大域的に指定します．<br>
 
-まず、拡張機能を使うための、 PSTricks のコアとなるパッケージ群は
+まず，拡張機能を使うための， PSTricks のコアとなるパッケージ群は
 
 <table>
 <tbody>
@@ -220,42 +221,42 @@ PSTricks のコマンド自身のオプションを指定するには、
 <tr><td><strong>pst-grad</strong></td><td>色のグラディエント</td></tr>
 <tr><td><strong>pst-node</strong></td><td>ノードとその接続</td></tr>
 <tr><td><strong>pst-plot</strong></td><td>関数とデータのプロット</td></tr>
-<tr><td><strong>pst-text</strong></td><td>文字をパスに沿わせる、文字のアウトラインをパスにする</td></tr>
+<tr><td><strong>pst-text</strong></td><td>文字をパスに沿わせる，文字のアウトラインをパスにする</td></tr>
 <tr><td><strong>pst-tree</strong></td><td>樹形図</td></tr>
 <tr><td><strong>pst-all</strong> </td><td>以上すべてを読み込む</td></tr>
 </tbody>
 </table>
 
 これらのいずれかを読み込めば，
-\usepackage{pstricks} は省略できます。<br>
+\usepackage{pstricks} は省略できます．<br>
 
-なお、 pst-fill, pst-grad は，以下の pst-blur, pst-slpe 等と同じく、
+なお， pst-fill, pst-grad は，以下の pst-blur, pst-slpe 等と同じく，
 PostScript level 2 でネイティブにサポートされている機能を
-PostScript level 1 でエミュレートすることで、描画命令を生成しており、
-簡単には最適化できないコードを吐きだします。<br>
-もし、 PDF フォーマットでの
-ファイル配布を目的としているならば、 PSTricks 関連ではありませんが、
-PDF ネイティブな special コードを生成できる、 TikZ/PGF 等のパッケージの利用も
-検討する価値があります。<br>
+PostScript level 1 でエミュレートすることで，描画命令を生成しており，
+簡単には最適化できないコードを吐きだします．<br>
+もし， PDF フォーマットでの
+ファイル配布を目的としているならば， PSTricks 関連ではありませんが，
+PDF ネイティブな special コードを生成できる， TikZ/PGF 等のパッケージの利用も
+検討する価値があります．<br>
 
-次に、 PSTricks を利用するパッケージのうち、主要なものを挙げます。<br>
+次に， PSTricks を利用するパッケージのうち，主要なものを挙げます．<br>
 
 <table>
 <tbody>
 <tr><td><strong>pst-3dplot</strong></td><td>3次元空間での関数とデータのプロット</td></tr>
 <tr><td><strong>pstricks-add</strong></td><td>pstricks/pst-node/pst-plot の実験的拡張機能</td></tr>
-<tr><td><strong>pst-asr</strong></td><td>言語学、音声学</td></tr>
+<tr><td><strong>pst-asr</strong></td><td>言語学，音声学</td></tr>
 <tr><td><strong>pst-bar</strong></td><td>棒グラフ</td></tr>
 <tr><td><strong>pst-barcode</strong></td><td>バーコード</td></tr>
 <tr><td><strong>pst-blur</strong></td><td>ドロップ・シャドウ</td></tr>
 <tr><td><strong>pst-calendar</strong></td><td>カレンダー</td></tr>
 <tr><td><strong>pst-circ</strong></td><td>電気・電子回路</td></tr>
-<tr><td><strong>pst-eucl</strong></td><td>幾何学作図、関数のグラフの交点計算</td></tr>
+<tr><td><strong>pst-eucl</strong></td><td>幾何学作図，関数のグラフの交点計算</td></tr>
 <tr><td><strong>pst-func</strong></td><td>特殊関数定義</td></tr>
 <tr><td><strong>pst-geo</strong></td><td>地理データ</td></tr>
 <tr><td><strong>pst-gr3d</strong></td><td>3次元格子</td></tr>
 <tr><td><strong>pst-IIID</strong></td><td>3次元空間での曲面のレンダリング, <a href="http://www.math.ubc.ca/~cass/graphics/text/www/index.html">Bill Casselman</a>の14章を参照</td></tr>
-<tr><td><strong>pst-jtree</strong></td><td>言語学、樹形図</td></tr>
+<tr><td><strong>pst-jtree</strong></td><td>言語学，樹形図</td></tr>
 <tr><td><strong>pst-labo</strong></td><td>化学実験器具</td></tr>
 <tr><td><strong>pst-lens</strong></td><td>部分拡大図</td></tr>
 <tr><td><strong>pst-light3d</strong></td><td>3次元空間での帯状曲面のレンダリング</td></tr>
@@ -271,54 +272,54 @@ PDF ネイティブな special コードを生成できる、 TikZ/PGF 等のパ
 
 LaTeX2e 通常の graphics パッケージ集を使う場合は，
 PSTricks の後にロードすれば，
-同じ名前の命令は graphics パッケージの方が生きます。<br>
-PSTricks は xcolor を通じて、color を読み込むので、 (x)color
-はロードしないで下さい。<br>
+同じ名前の命令は graphics パッケージの方が生きます．<br>
+PSTricks は xcolor を通じて，color を読み込むので， (x)color
+はロードしないで下さい．<br>
 
 #### pspicture 環境 {#f54da89b}
 
 PSTricks のグラフィック・オブジェクトは dvi ドライバが PostScript の
-コマンドを処理して始めて目に見えるように描画可能になるのであって、
-TeX から見た場合は、 whatsits と呼ばれる、実態の無い物です。<br>
-一部の、周囲にボックスを作成するマクロを除くと、
-まるで、幅、高さ、深さ、いずれも 0 のボックスのようなもので、
-テキスト中に \pscircle(0,0){4mm} などと直接書いたのでは、
-文字と同じ位置に重ねて印刷されてしまいます。<br>
-そこで、通常、描画は、そのための専用の領域をボックスとして確保してから、
-その中で行います。そのために用意されているのが、 pspicture 環境です。<br>
+コマンドを処理して始めて目に見えるように描画可能になるのであって，
+TeX から見た場合は， whatsits と呼ばれる，実態の無い物です．<br>
+一部の，周囲にボックスを作成するマクロを除くと，
+まるで，幅，高さ，深さ，いずれも 0 のボックスのようなもので，
+テキスト中に \pscircle(0,0){4mm} などと直接書いたのでは，
+文字と同じ位置に重ねて印刷されてしまいます．<br>
+そこで，通常，描画は，そのための専用の領域をボックスとして確保してから，
+その中で行います．そのために用意されているのが， pspicture 環境です．<br>
 
 ```
 \begin{pspicture}(x,y)(X,Y)
 \end{pspicture}
 ```
 
-これで、幅 |X &minus; x| 、高さ |Y &minus; y| 、深さ 0 のボックスが描画用に確保されます。<br>
-x, X, y, Y は整数でなくても構いません。単位を省略すると現在の unit が補われます。<br>
-この環境内には、 TeX はタイプセットしませんから、好きなように
-グラフィック・オブジェクトを配置できます。<br>
-shift オプションを使うと、
+これで，幅 |X &minus; x| ，高さ |Y &minus; y| ，深さ 0 のボックスが描画用に確保されます．<br>
+x, X, y, Y は整数でなくても構いません．単位を省略すると現在の unit が補われます．<br>
+この環境内には， TeX はタイプセットしませんから，好きなように
+グラフィック・オブジェクトを配置できます．<br>
+shift オプションを使うと，
 
 ```
 \begin{pspicture}[shift=r](x,y)(X,Y)
 \end{pspicture}
 ```
 
-高さは r + |Y &minus; y| に、深さは &minus;r になります。<br>
+高さは r + |Y &minus; y| に，深さは &minus;r になります．<br>
 
-描画用に領域を確保したからと言って、その範囲にしか描画できない訳では
-ありません。<br>
-ところが、グラフをプロットする時など、これでは、
-不便な時もあります。<br>
-そのような時には、pspicture\*環境を使って、
-枠からはみ出す部分をクリップします。<br>
-以下の左右の図を比較してみて下さい。<br>
+描画用に領域を確保したからと言って，その範囲にしか描画できない訳では
+ありません．<br>
+ところが，グラフをプロットする時など，これでは，
+不便な時もあります．<br>
+そのような時には，pspicture\*環境を使って，
+枠からはみ出す部分をクリップします．<br>
+以下の左右の図を比較してみて下さい．<br>
 
 ```
 \documentclass{article}
 \usepackage{pstricks-add}
 \begin{document}
 $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
-\psset{unit=0.6}%単位がついていないと、現在の値 (1cm) に対する比率。
+\psset{unit=0.6}%単位がついていないと，現在の値 (1cm) に対する比率．
 \psset{algebraic=true, VarStep=true,VarStepEpsilon=0.001}
 \noindent\begin{pspicture}(-4,-6)(4,6)
 \psaxes[linewidth=1.2pt,labels=none,ticks=none]{->}(0,0)(-4,-6)(4,6)
@@ -335,11 +336,11 @@ $y=0.4x^{4}-2x^{2}+2x$のグラフの概形は
 
 #### 半透明画像 {#bf1b2f64}
 
-PostScript 言語には色の透明度の概念はありませんが、 PDF 1.4 にはあります。<br>
-そこで、 Ghostscript では PostScript 言語を独自に拡張して、色の透明度を指定できるようになっています。<br>
-このような、言語拡張を使用している PS/EPS ファイルは、 Ghostscript 以外のソフトでは正しく取り扱えませんが、 Ghostscript で、印刷、表示、更には、 PDF 変換を行うことで、利用できます。<br>
+PostScript 言語には色の透明度の概念はありませんが， PDF 1.4 にはあります．<br>
+そこで， Ghostscript では PostScript 言語を独自に拡張して，色の透明度を指定できるようになっています．<br>
+このような，言語拡張を使用している PS/EPS ファイルは， Ghostscript 以外のソフトでは正しく取り扱えませんが， Ghostscript で，印刷，表示，更には， PDF 変換を行うことで，利用できます．<br>
 
-まずは PSTricks とは本質的に無関係なところで、直に透明度を指定してみた例です。<br>
+まずは PSTricks とは本質的に無関係なところで，直に透明度を指定してみた例です．<br>
 
 ```
 \documentclass{article}
@@ -361,11 +362,11 @@ PostScript 言語には色の透明度の概念はありませんが、 PDF 1.4 
 
 <img src="http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/73/transparency0.jpg" alt="">
 
-次に、 PSTricks で、半透明画像を生成するには、 fillstyle に solid または shape を指定し、 opacity, shapealpha を設定します。<br>
-fillstyle=solid の時は opacity のみが、 fillstyle=shape の時は shapealpha のみが影響します。<br>
-fillstyle=shape の時は blendmode を指定することもできます。<br>
-blendmode=0 と blendmode=1 の時は、  fillstyle=solid と同じ、色空間での線形補間になります。<br>
-blendmode=2 の時は、光の加算、 blendmode=3 の時は、顔料の加算が結果となります。<br>
+次に， PSTricks で，半透明画像を生成するには， fillstyle に solid または shape を指定し， opacity, shapealpha を設定します．<br>
+fillstyle=solid の時は opacity のみが， fillstyle=shape の時は shapealpha のみが影響します．<br>
+fillstyle=shape の時は blendmode を指定することもできます．<br>
+blendmode=0 と blendmode=1 の時は，  fillstyle=solid と同じ，色空間での線形補間になります．<br>
+blendmode=2 の時は，光の加算， blendmode=3 の時は，顔料の加算が結果となります．<br>
 
 ```
 \documentclass{article}
@@ -397,22 +398,22 @@ blendmode=2 の時は、光の加算、 blendmode=3 の時は、顔料の加算�
 
 #### \pscustom {#ld3ac648}
 
-\pscustom を用いて、複数のグラフィック・オブジェクトを一体として扱えます。<br>
-これが特に有用なのは、塗りつぶしと、クリッピング・パスの設定ですが、
-その前に、 PostScript では、曲線(直線を含む)を描くなど、パスを構成する時、
-「現在の位置」 (current point) をパスに沿って移動させる事に注意します。<br>
-そこで、二つのパスを併せて、新たに一つのパスにするには、初めのパスの
-終点を次のパスがどのように扱うかを考えなければなりません。<br>
-それを指定するのが、 liftpen オプションです。<br>
-デフォルトの liftpen=0 では、初めのパスの終点が、次のパスの始点として
-扱われます。<br>
-一方、 liftpen=1 では、初めのパスの終点から次のパスの明示された
-始点まで、線分が引かれ、その点が、始点になります。<br>
-\psarc のように、この違いに影響を受けないオブジェクトもありますが、
-\pscurve のように、影響を受けるオブジェクトもあります。<br>
-関数をプロットして領域を塗りつぶす時などに、 plotstyle=curve
-にしている時など、気をつける必要があります。<br>
-\psline も linearc の値が 0 でなければ、影響を受けます。<br>
+\pscustom を用いて，複数のグラフィック・オブジェクトを一体として扱えます．<br>
+これが特に有用なのは，塗りつぶしと，クリッピング・パスの設定ですが，
+その前に， PostScript では，曲線(直線を含む)を描くなど，パスを構成する時，
+「現在の位置」 (current point) をパスに沿って移動させる事に注意します．<br>
+そこで，二つのパスを併せて，新たに一つのパスにするには，初めのパスの
+終点を次のパスがどのように扱うかを考えなければなりません．<br>
+それを指定するのが， liftpen オプションです．<br>
+デフォルトの liftpen=0 では，初めのパスの終点が，次のパスの始点として
+扱われます．<br>
+一方， liftpen=1 では，初めのパスの終点から次のパスの明示された
+始点まで，線分が引かれ，その点が，始点になります．<br>
+\psarc のように，この違いに影響を受けないオブジェクトもありますが，
+\pscurve のように，影響を受けるオブジェクトもあります．<br>
+関数をプロットして領域を塗りつぶす時などに， plotstyle=curve
+にしている時など，気をつける必要があります．<br>
+\psline も linearc の値が 0 でなければ，影響を受けます．<br>
 
 ```
 \documentclass{minimal}
@@ -436,19 +437,19 @@ blendmode=2 の時は、光の加算、 blendmode=3 の時は、顔料の加算�
 \end{document}
 ```
 
-いずれも、右端の例では、 liftpen=2 としていますが、これは、二つのパスを
-連結するのではなく、異なる連結成分として扱う事を意味します。<br>
-パスの始点を矢印などで修飾すると、 liftpen=1 は liftpen=2 と同じに振舞います。<br>
+いずれも，右端の例では， liftpen=2 としていますが，これは，二つのパスを
+連結するのではなく，異なる連結成分として扱う事を意味します．<br>
+パスの始点を矢印などで修飾すると， liftpen=1 は liftpen=2 と同じに振舞います．<br>
 
-複数の連結成分からなるパスを、一体として扱う事の効果を見るため、
-廻る向きを逆にとった二つの円を、
+複数の連結成分からなるパスを，一体として扱う事の効果を見るため，
+廻る向きを逆にとった二つの円を，
 
-- 個別に塗りつぶす、
-- 単一の図形として塗りつぶす、
-- 個別にクリッピングパスに設定する、
-- 単一の図形としてクリッピングパスに設定する、
-    場合を比較してみて下さい。<br>
-    描画の順序が分かりやすいように、線幅を太くしてあります。<br>
+- 個別に塗りつぶす，
+- 単一の図形として塗りつぶす，
+- 個別にクリッピングパスに設定する，
+- 単一の図形としてクリッピングパスに設定する，
+    場合を比較してみて下さい．<br>
+    描画の順序が分かりやすいように，線幅を太くしてあります．<br>
 
 ```
 \documentclass{minimal}
@@ -503,18 +504,18 @@ blendmode=2 の時は、光の加算、 blendmode=3 の時は、顔料の加算�
 
 #### ノード {#e1584503}
 
-ノードを用いて、点に名前をつける事ができます。<br>
-これらの点は、
-直線や、曲線などで結んだり、他の点を定義する際の基準点として使えます。<br>
-ノードには、主に、テキスト中の要素に名前をつける
-\rnode, \Rnode, \circlenode, \ovalnode, \dianode, \trinode などと、
+ノードを用いて，点に名前をつける事ができます．<br>
+これらの点は，
+直線や，曲線などで結んだり，他の点を定義する際の基準点として使えます．<br>
+ノードには，主に，テキスト中の要素に名前をつける
+\rnode, \Rnode, \circlenode, \ovalnode, \dianode, \trinode などと，
 (グラフィック中の)点に名前をつける
-\pnode, \cnode, \Cnode, \cnodeput, \dotnode, \fnode などがあります。<br>
-テキスト中の要素に名前をつけるノード定義のうち、描画を伴う物は、
-そのための枠を描くスペースが挿入されるため、文章の組が変化します。<br>
-それが、望ましくない時は、 boxsep=false にして下さい。<br>
-テキスト中にノードを配置した場合、当然、その正確な位置は
-TeX によるタイプセットの影響を受けます。<br> <!-- どなたか、絵心のある方、 \Darma をどうにかして下さい。 -->
+\pnode, \cnode, \Cnode, \cnodeput, \dotnode, \fnode などがあります．<br>
+テキスト中の要素に名前をつけるノード定義のうち，描画を伴う物は，
+そのための枠を描くスペースが挿入されるため，文章の組が変化します．<br>
+それが，望ましくない時は， boxsep=false にして下さい．<br>
+テキスト中にノードを配置した場合，当然，その正確な位置は
+TeX によるタイプセットの影響を受けます．<br> <!-- どなたか，絵心のある方， \Darma をどうにかして下さい． -->
 
 ```
 \documentclass[dvipsnames]{minimal}
@@ -556,8 +557,8 @@ TeX によるタイプセットの影響を受けます。<br> <!-- どなたか
 \end{document}
 ```
 
-点に名前をつけるメリットを理解して頂くため、
-具体例として、まず。次の直角三角形の図を見て下さい。<br>
+点に名前をつけるメリットを理解して頂くため，
+具体例として，まず．次の直角三角形の図を見て下さい．<br>
 
 ```
 \documentclass{ujarticle}
@@ -572,7 +573,7 @@ TeX によるタイプセットの影響を受けます。<br> <!-- どなたか
 \end{document}
 ```
 
-これをノードを用いて書き換えると、
+これをノードを用いて書き換えると，
 
 ```
 \documentclass{ujarticle}
@@ -589,11 +590,11 @@ TeX によるタイプセットの影響を受けます。<br> <!-- どなたか
 \end{document}
 ```
 
-となります。<br>
-点の位置を取り換える必要が出て来た場合など、
-変更箇所が一箇所で済む事が分かります。<br>
-このぐらいでは、あまり、ありがた味を感じないかも知れませんが、
-点から斜辺に垂線を下ろそうとしたとすると、例えば、こうなります。<br>
+となります．<br>
+点の位置を取り換える必要が出て来た場合など，
+変更箇所が一箇所で済む事が分かります．<br>
+このぐらいでは，あまり，ありがた味を感じないかも知れませんが，
+点から斜辺に垂線を下ろそうとしたとすると，例えば，こうなります．<br>
 
 ```
 \documentclass{ujarticle}
@@ -615,16 +616,16 @@ TeX によるタイプセットの影響を受けます。<br> <!-- どなたか
 \end{document}
 ```
 
-点の座標をすべて、直交座標で与えると、 \rput の引数の sanity check を外す
-TeX のマクロ・テクニックや、 tx@NodeDic の内部構造に関する PostScript の知識が
-必要になって来るため、ここでは、点 A を x 座標と偏角で与え、
-点 B は x 座標が A と同じ、 y 座標が O と同じ点として、定義しています。<br>
-点 H は、座標軸を &ang;BOA 回転した状態で、
-x 座標が B と同じ、 y 座標が O と同じ点として、定義しています。<br>
-もし、点の座標をすべて具体的に与えるならば、回転や拡大・縮小によって、
-座標系が変化する度に、同じ点でもその座標を計算し直さなければなりません。<br>
-点に名前をつけておけば、座標系が変わっても、何時でも同じ名前で参照できます。<br>
-いかがでしょうか？ もっと複雑な作図をするのであれば、 pst-eucl を使用した方が良いでしょう。<br>
+点の座標をすべて，直交座標で与えると， \rput の引数の sanity check を外す
+TeX のマクロ・テクニックや， tx@NodeDic の内部構造に関する PostScript の知識が
+必要になって来るため，ここでは，点 A を x 座標と偏角で与え，
+点 B は x 座標が A と同じ， y 座標が O と同じ点として，定義しています．<br>
+点 H は，座標軸を &ang;BOA 回転した状態で，
+x 座標が B と同じ， y 座標が O と同じ点として，定義しています．<br>
+もし，点の座標をすべて具体的に与えるならば，回転や拡大・縮小によって，
+座標系が変化する度に，同じ点でもその座標を計算し直さなければなりません．<br>
+点に名前をつけておけば，座標系が変わっても，何時でも同じ名前で参照できます．<br>
+いかがでしょうか？ もっと複雑な作図をするのであれば， pst-eucl を使用した方が良いでしょう．<br>
 
 #### 逆ポーランド式記法 {#lb61b314}
 
@@ -637,9 +638,9 @@ x 座標が B と同じ、 y 座標が O と同じ点として、定義してい
 </tbody>
 </table>
 
-を例にします。<br>
-この式は加法、減法、乗法、冪と言った、二項演算を
-繰り返す事で、計算できますが、その手順を樹形図で表す事ができます。<br>
+を例にします．<br>
+この式は加法，減法，乗法，冪と言った，二項演算を
+繰り返す事で，計算できますが，その手順を樹形図で表す事ができます．<br>
 
 ```
 \documentclass{article}
@@ -664,7 +665,7 @@ $
 \end{document}
 ```
 
-そこで、二変数の関数
+そこで，二変数の関数
 
 <!-- #mimetex(f_{\mathrm{add}}[x,y]=x+y) -->
 
@@ -703,7 +704,7 @@ $
 </tbody>
 </table>
 
-を定義してやると、この計算式は <!-- #mimetex(f_{\mathrm{mul}}[f_{\mathrm{sub}}[f_{\mathrm{exp}}[x,2],x],f_{\mathrm{exp}}[2,f_{\mathrm{mul}}[x,f_{\mathrm{add}}[x,1]]]]) -->
+を定義してやると，この計算式は <!-- #mimetex(f_{\mathrm{mul}}[f_{\mathrm{sub}}[f_{\mathrm{exp}}[x,2],x],f_{\mathrm{exp}}[2,f_{\mathrm{mul}}[x,f_{\mathrm{add}}[x,1]]]]) -->
 
 <table>
 <tbody>
@@ -712,20 +713,20 @@ $
 </tbody>
 </table>
 
-と、計算の優先順位を示す ( ) を使わずに、表されます。<br>
-ここで、更に、関数を
-引数を並べた右側に置く記法を使うと、
+と，計算の優先順位を示す ( ) を使わずに，表されます．<br>
+ここで，更に，関数を
+引数を並べた右側に置く記法を使うと，
 
 ```
 x 2 exp x sub 2 x x 1 add mul exp mul
 ```
 
-と書き表される事になります。<br>
-これを<strong>逆ポーランド式記法 (Reverse Polish Notation)</strong> と呼びます。<br>
-逆ポーランド式記法で表記された数式は、後入先出の1次元記憶領域さえあれば、
-容易に処理できるため、計算機の実装には良く使われます。<br>
-実際、これが、 PostScript が理解できる、計算式の表記法です。<br>
-そこで、
+と書き表される事になります．<br>
+これを<strong>逆ポーランド式記法 (Reverse Polish Notation)</strong> と呼びます．<br>
+逆ポーランド式記法で表記された数式は，後入先出の1次元記憶領域さえあれば，
+容易に処理できるため，計算機の実装には良く使われます．<br>
+実際，これが， PostScript が理解できる，計算式の表記法です．<br>
+そこで，
 
 ```
 \documentclass{ujarticle}
@@ -739,16 +740,16 @@ x 2 exp x sub 2 x x 1 add mul exp mul
 \end{document}
 ```
 
-で、グラフがプロットできます。<br>
-とは言え、人間が数式を逆ポーランド式記法で
-入力するのでは、大変ですし、誤りも起きやすいので、入力支援が必要になります。<br>
-それには、 infix-RPN パッケージを使い TeX に処理させる方法と、
+で，グラフがプロットできます．<br>
+とは言え，人間が数式を逆ポーランド式記法で
+入力するのでは，大変ですし，誤りも起きやすいので，入力支援が必要になります．<br>
+それには， infix-RPN パッケージを使い TeX に処理させる方法と，
 pstricks-add パッケージの algebraic オプションを使い PostScript に処理させる
-方法があります。<br>
-TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに追加し、
-\infixtoRPN の引数に infix notation の数式を与えます。<br>
-すると、 \RPN マクロの
-内容が逆ポーランド式記法の数式になります。<br>
+方法があります．<br>
+TeX に処理させるには， \usepackage{infix-RPN} とプリアンブルに追加し，
+\infixtoRPN の引数に infix notation の数式を与えます．<br>
+すると， \RPN マクロの
+内容が逆ポーランド式記法の数式になります．<br>
 
 ```
 \documentclass{ujarticle}
@@ -758,10 +759,10 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 \end{document}
 ```
 
-もちろん、 \RPN は \psplot の最後の引数にそのまま使えます。<br>
-三角関数を扱う時には、 PostScript では角度を度数法で測る事に
-注意しなければなりません。<br>
-例えば、<br> <!-- #mimetex(z=\frac{2\cos\left(x^{2}-y^{2}\right)}{x^{2}+y^{2}+1}) -->
+もちろん， \RPN は \psplot の最後の引数にそのまま使えます．<br>
+三角関数を扱う時には， PostScript では角度を度数法で測る事に
+注意しなければなりません．<br>
+例えば，<br> <!-- #mimetex(z=\frac{2\cos\left(x^{2}-y^{2}\right)}{x^{2}+y^{2}+1}) -->
 
 <table>
 <tbody>
@@ -788,7 +789,7 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 \end{document}
 ```
 
-\parametricplot にはもちろん、 \edef を使えば良いです。<br>
+\parametricplot にはもちろん， \edef を使えば良いです．<br>
 
 ```
 \documentclass{ujarticle}
@@ -805,8 +806,8 @@ TeX に処理させるには、 \usepackage{infix-RPN} とプリアンブルに�
 \end{document}
 ```
 
-PostScript に処理させるには、 \usepackage{pstricks-add} とプリアンブルに追加し、
-algebraic オプションの値を true にします。<br>
+PostScript に処理させるには， \usepackage{pstricks-add} とプリアンブルに追加し，
+algebraic オプションの値を true にします．<br>
 
 ```
 \documentclass{ujarticle}
@@ -820,9 +821,9 @@ algebraic オプションの値を true にします。<br>
 \end{document}
 ```
 
-algebraic=true の時は、角度は弧度法で測ります。<br>
-\parametricplot では、
-x 成分と y 成分は | で区切ります。<br>
+algebraic=true の時は，角度は弧度法で測ります．<br>
+\parametricplot では，
+x 成分と y 成分は | で区切ります．<br>
 
 ```
 \documentclass{ujarticle}
@@ -837,7 +838,7 @@ x 成分と y 成分は | で区切ります。<br>
 
 #### 例(1) {#vb5fe04c}
 
-以下はごく簡単な例です。<br>
+以下はごく簡単な例です．<br>
 
 ```
 \documentclass[svgnames]{minimal}
@@ -896,9 +897,9 @@ x 成分と y 成分は | で区切ります。<br>
 \end{document}
 ```
 
-3-Brunnian link を 2 種類程、書いてみた物です。<br>
-左側の物は、所謂、ボロメオの輪 (Boromean rings) です。<br>
-既に説明したテクニック以外何も使っていないので、すぐに理解できると思います。<br>
+3-Brunnian link を 2 種類程，書いてみた物です．<br>
+左側の物は，所謂，ボロメオの輪 (Boromean rings) です．<br>
+既に説明したテクニック以外何も使っていないので，すぐに理解できると思います．<br>
 
 ```
 \documentclass[dvipsnames]{article}
@@ -932,8 +933,8 @@ x 成分と y 成分は | で区切ります。<br>
 \end{document}
 ```
 
-これは、次数の低い Chebyshev 多項式の零点を図示する物です。
-まず、 Chebyshev 多項式を漸化式<br> <!-- #mimetex(T_{0}(x)=1) -->
+これは，次数の低い Chebyshev 多項式の零点を図示する物です．
+まず， Chebyshev 多項式を漸化式<br> <!-- #mimetex(T_{0}(x)=1) -->
 
 <table>
 <tbody>
@@ -960,7 +961,7 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-で定義します。<br> <!-- &mimetex(T_{n}(x)); -->
+で定義します．<br> <!-- &mimetex(T_{n}(x)); -->
 
 <table>
 <tbody>
@@ -969,9 +970,9 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-をプロットし、 <!-- &mimetex(k=1,\ldots,n); -->
+をプロットし， <!-- &mimetex(k=1,\ldots,n); -->
 𝑘=1,&#x2026;,𝑛
-に対し、このグラフと x 軸の交点のうち、 <!-- &mimetex(x=\frac{2(k-1)}{n}-1); -->
+に対し，このグラフと x 軸の交点のうち， <!-- &mimetex(x=\frac{2(k-1)}{n}-1); -->
 
 <table>
 <tbody>
@@ -981,7 +982,7 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-の近傍にあるものを求め、 <!-- &mimetex(C_{k}); -->
+の近傍にあるものを求め， <!-- &mimetex(C_{k}); -->
 
 <table>
 <tbody>
@@ -990,11 +991,11 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-と名付けます。<br> <!-- &mimetex(n); -->
+と名付けます．<br> <!-- &mimetex(n); -->
 𝑛
-が小さければ、これで、すべての零点が、洩れも重複もなく、求まります。<br> <!-- &mimetex(n); -->
+が小さければ，これで，すべての零点が，洩れも重複もなく，求まります．<br> <!-- &mimetex(n); -->
 𝑛
-が大きい時は、この場合、正確な値 <!-- &mimetex(-\cos\frac{(2k-1)\pi}{n}); -->
+が大きい時は，この場合，正確な値 <!-- &mimetex(-\cos\frac{(2k-1)\pi}{n}); -->
 
 <table>
 <tbody>
@@ -1004,8 +1005,8 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-が分かっている訳ですから、それを第一近似として与えてやれば良いでしょう。<br>
-さて、 <!-- &mimetex(C_{k}); -->
+が分かっている訳ですから，それを第一近似として与えてやれば良いでしょう．<br>
+さて， <!-- &mimetex(C_{k}); -->
 
 <table>
 <tbody>
@@ -1024,8 +1025,8 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-と名付けます。<br>
-原点を中心として半径 1 の円を描き、その円と直線 <!-- &mimetex(C_{k}C^{\prime}_{k}); -->
+と名付けます．<br>
+原点を中心として半径 1 の円を描き，その円と直線 <!-- &mimetex(C_{k}C^{\prime}_{k}); -->
 
 <table>
 <tbody>
@@ -1044,29 +1045,29 @@ x 成分と y 成分は | で区切ります。<br>
 </tbody>
 </table>
 
-と名付けます。<br>
+と名付けます．<br>
 
 #### 例(2) {#ye01953c}
 
-PostScript は PDF や SVG と言った、静的なページ記述言語とは異なり、
-動的なプログラミング言語です。<br>
-これを TeX と組み合わせる事により、
-数値計算などの、 TeX 自身の苦手な処理を担わせ、多彩なグラフィックを
-その場で動的に生成する事ができます。<br>
-pst-text パッケージの pstextpath は、 PostScript 言語のテキスト描画ルーティンを
-再実装して実現されていますし、既に見たように、 pst-eucl パッケージは
-Newton-Raphson 法により、方程式の実数解の近似値を計算してくれます。<br>
+PostScript は PDF や SVG と言った，静的なページ記述言語とは異なり，
+動的なプログラミング言語です．<br>
+これを TeX と組み合わせる事により，
+数値計算などの， TeX 自身の苦手な処理を担わせ，多彩なグラフィックを
+その場で動的に生成する事ができます．<br>
+pst-text パッケージの pstextpath は， PostScript 言語のテキスト描画ルーティンを
+再実装して実現されていますし，既に見たように， pst-eucl パッケージは
+Newton-Raphson 法により，方程式の実数解の近似値を計算してくれます．<br>
 
-ここでは、 pstricks-add パッケージのダイナミックな側面を使った例を紹介します。<br>
+ここでは， pstricks-add パッケージのダイナミックな側面を使った例を紹介します．<br>
 
-三体問題に於ける、 Lagrange の正三角形解をプロットしてみます。<br>
+三体問題に於ける， Lagrange の正三角形解をプロットしてみます．<br>
 質量 <!-- &mimetex(m_1);, --> <!-- &mimetex(m_2);, --> <!-- &mimetex(m_3); -->
 の質点 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
-の重心を原点にとると、 <!-- #mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|) --> <!-- #mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0}) -->
-なので、簡単のために <!-- &mimetex(m_1+m_2+m_3=1);, -->
-更に、質点 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
+の重心を原点にとると， <!-- #mimetex(|P_1-P_2|=|P_2-P_3|=|P_3-P_1|) --> <!-- #mimetex(m_1P_1+m_2P_2+m_3P_3=\vec{0}) -->
+なので，簡単のために <!-- &mimetex(m_1+m_2+m_3=1);, -->
+更に，質点 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
 は反時計廻りに
-配置されていると仮定し、まず、これを pst-eucl で作図してみます。<br>
+配置されていると仮定し，まず，これを pst-eucl で作図してみます．<br>
 
 ```
 \documentclass[dvipsnames]{minimal}
@@ -1101,21 +1102,21 @@ Newton-Raphson 法により、方程式の実数解の近似値を計算して�
 \end{document}
 ```
 
-ここで、赤で描かれた矢印は、質点にかかる『力』ではなく、『加速度』に
-比例した大きさになっています。<br>
-この図の設定と同じ初期値を用いて、いよいよ、軌道をプロットしてみます。<br>
-まず、記号 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
+ここで，赤で描かれた矢印は，質点にかかる『力』ではなく，『加速度』に
+比例した大きさになっています．<br>
+この図の設定と同じ初期値を用いて，いよいよ，軌道をプロットしてみます．<br>
+まず，記号 <!-- &mimetex(P_1);, --> <!-- &mimetex(P_2);, --> <!-- &mimetex(P_3); -->
 で各々の質点の
-位置ベクトルも表す事にすると、 <!-- #mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&-\sqrt{3}m_3\\\sqrt{3}m_3&(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1) --> <!-- #mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&\sqrt{3}m_2\\-\sqrt{3}m_2&(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1) -->
-となり、質点 <!-- &mimetex(P_1); -->
-の運動方程式は、整理すると、 <!-- #mimetex(\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}P_1=-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{|P_1|^{2}}P_1) -->
-になります。<br>
-高校生にも解ける(？)単純な方程式ですから、数値積分などしなくても、
-プロットはできますが、ここでは、あえて、 PostScript に数値積分を計算させてみます。<br>
-そこで、従属変数のスタックには、順に <!-- &mimetex(x);, --> <!-- &mimetex(y);, --> <!-- &mimetex(\frac{\mathrm{d}x}{\mathrm{d}t});, --> <!-- &mimetex(\frac{\mathrm{d}y}{\mathrm{d}t}); -->
-を積む事にします。<br>
-従属変数のスタックは PostScript 言語の記法では y (array) として、
-algebraic な記法では y\[index\] として、アクセスするので、対応表を作ると、 <!-- |スタック|変数|微係数| --> <!-- |y[0]|&mimetex(x);|&mimetex(x^\prime);| --> <!-- |y[1]|&mimetex(y);|&mimetex(y^\prime);| --> <!-- |y[2]|&mimetex(x^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x);| --> <!-- |y[3]|&mimetex(y^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y);| -->
+位置ベクトルも表す事にすると， <!-- #mimetex(P_2=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_3-m_1)(m_3-m_2)-m_1m_2&-\sqrt{3}m_3\\\sqrt{3}m_3&(m_3-m_1)(m_3-m_2)-m_1m_2\end{matrix}\right)P_1) --> <!-- #mimetex(P_3=\frac{1}{2({m_2}^{2}+m_2m_3+{m_2}^{2})}\left(\begin{matrix}(m_2-m_3)(m_2-m_1)-m_3m_1&\sqrt{3}m_2\\-\sqrt{3}m_2&(m_2-m_3)(m_2-m_1)-m_3m_1\end{matrix}\right)P_1) -->
+となり，質点 <!-- &mimetex(P_1); -->
+の運動方程式は，整理すると， <!-- #mimetex(\frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}}P_1=-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{|P_1|^{2}}P_1) -->
+になります．<br>
+高校生にも解ける(？)単純な方程式ですから，数値積分などしなくても，
+プロットはできますが，ここでは，あえて， PostScript に数値積分を計算させてみます．<br>
+そこで，従属変数のスタックには，順に <!-- &mimetex(x);, --> <!-- &mimetex(y);, --> <!-- &mimetex(\frac{\mathrm{d}x}{\mathrm{d}t});, --> <!-- &mimetex(\frac{\mathrm{d}y}{\mathrm{d}t}); -->
+を積む事にします．<br>
+従属変数のスタックは PostScript 言語の記法では y (array) として，
+algebraic な記法では y\[index\] として，アクセスするので，対応表を作ると， <!-- |スタック|変数|微係数| --> <!-- |y[0]|&mimetex(x);|&mimetex(x^\prime);| --> <!-- |y[1]|&mimetex(y);|&mimetex(y^\prime);| --> <!-- |y[2]|&mimetex(x^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}x);| --> <!-- |y[3]|&mimetex(y^\prime);|&mimetex(-\frac{({m_2}^{2}+m_2m_3+{m_2}^{2})^{3/2}}{(x^{2}+y^{2})^{3/2}}y);| -->
 
 <table>
 <tbody>
@@ -1131,7 +1132,7 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 </tbody>
 </table>
 
-したがって、基本的にはマクロ
+したがって，基本的にはマクロ
 
 ```
 \def\f{\mass{2}^2+\mass{2}*\mass{3}+\mass{3}^2}
@@ -1139,15 +1140,15 @@ algebraic な記法では y\[index\] として、アクセスするので、対�
 \psplotDiffEqn{t}{T}{境界値}{y[2]|y[3]|-(\f)^1.5*y[0]/(y[0]^2+y[1]^2)^1.5|-(\f)^1.5*y[1]/(y[0]^2+y[1]^2)^1.5}
 ```
 
-で、区間 <!-- &mimetex((t,T)); -->
+で，区間 <!-- &mimetex((t,T)); -->
 (𝑡,𝑇)
-の数値積分がプロットされる事になります。<br>
-algebraic は algebraic=true と同じ意味です。<br>
-このマクロの最後の引数は、微係数のスタックです。<br>
-このままでは、独立変数が横軸 (abscissa) 、従属変数の最初のスタックが縦軸 (ordinate)
-にプロットされてしまうので、オプションで、横軸と縦軸を指定します。<br>
-その際に、最も一般的な plotfuncx や plotfuncy を使うと、 algebraic 記法は
-現状では使えないようです。<br>
+の数値積分がプロットされる事になります．<br>
+algebraic は algebraic=true と同じ意味です．<br>
+このマクロの最後の引数は，微係数のスタックです．<br>
+このままでは，独立変数が横軸 (abscissa) ，従属変数の最初のスタックが縦軸 (ordinate)
+にプロットされてしまうので，オプションで，横軸と縦軸を指定します．<br>
+その際に，最も一般的な plotfuncx や plotfuncy を使うと， algebraic 記法は
+現状では使えないようです．<br>
 
 ```
 \documentclass[dvipsnames]{minimal}
@@ -1187,15 +1188,15 @@ algebraic は algebraic=true と同じ意味です。<br>
 \end{document}
 ```
 
-３つの楕円軌道(の一部)がプロットされる事を確かめて下さい。
+3つの楕円軌道(の一部)がプロットされる事を確かめて下さい．
 
-以前から、 PostScript に通じた人々の間では、
+以前から， PostScript に通じた人々の間では，
 [同じような試み](http://www.aihara.co.jp/~taiji/tex/index-j.html)も行われて
-いましたが、 TeX マクロが整備され、特別な知識を持たなくても、
-このようなことができるようになった意義は大きいと思います。<br>
+いましたが，TeX マクロが整備され，特別な知識を持たなくても，
+このようなことができるようになった意義は大きいと思います．<br>
 
-最後に山田 泰司さんが取り上げているのと同じ、 Duffing 方程式の解曲線を
-プロットしてみます。
+最後に山田 泰司さんが取り上げているのと同じ， Duffing 方程式の解曲線を
+プロットしてみます．
 
 ```
 \documentclass[dvipsnames]{minimal}
@@ -1213,24 +1214,24 @@ algebraic は algebraic=true と同じ意味です。<br>
 \end{document}
 ```
 
-psplot の実装はおろか、 PostScript の知識が全く無くても、容易に書ける事が
-わかります。<br>
-ただし、ここでは、刻み幅をプロット区間の 1/1000 に固定して
-いますので、このプロットはあまり正確な物ではありません。<br>
-このような場合は、 method=varrkiv として、 adaptive な数値積分を行った方が
-よいでしょう。<br> <!-- いくらかでも、ましでしょう。 -->
+psplot の実装はおろか， PostScript の知識が全く無くても，容易に書ける事が
+わかります．<br>
+ただし，ここでは，刻み幅をプロット区間の 1/1000 に固定して
+いますので，このプロットはあまり正確な物ではありません．<br>
+このような場合は， method=varrkiv として， adaptive な数値積分を行った方が
+よいでしょう．<br> <!-- いくらかでも，ましでしょう． -->
 
 ### 実際に<em>使える</em>画像ファイルを作るには {#d57cdc19}
 
 独立の EPS を作るためには，PSTricks の中の pst-eps
-パッケージの PSTtoEPS という命令を使います。<br>
+パッケージの PSTtoEPS という命令を使います．<br>
 ただし，これを使うと図中に文字を書き込む命令 \rput
-などが使えなくなります。<br>
+などが使えなくなります．<br>
 文字を含む EPS を作るには，PSTtoEPS を使わず，
 いったん dvi ファイルにしておいて，
-dvips の -E オプションを使う方法しかないようです。<br>
+dvips の -E オプションを使う方法しかないようです．<br>
 しかし，これではバウンディングボックス情報が正しく入らないため，
-後で EPS ファイルを編集する必要があり，面倒です。<br>
+後で EPS ファイルを編集する必要があり，面倒です．<br>
 
 そこで PSTtoEPS や dvips の -E オプションを使わずに PSTricks の PDF 変換の
 ためのマクロ pstpdfmx を作りました．<br>
@@ -1287,7 +1288,7 @@ ptex2pdf -u -l file
 dvips にこのマクロを流用するには 1 行か 2 行の修正で済みます (デバイスドライバに
 dvips を指定し， genpdf.sh の中で fig.ps の BoundingBox を awk/perl で
 プログラム bbb が出力した正しいものに置換するだけです)．<br>
-しかし、やはり大変面倒です．<br>
+しかし，やはり大変面倒です．<br>
 LuaLaTeX で LuaTeX-ja を使用すれば pdftricks や ps4pdf などのパッケージが使える
 と思います．<br>
 
@@ -1346,13 +1347,13 @@ $ epstopdf foo.eps foo.pdf
 としておけば，pdftex, dvipdfmx, dvips
 などいろいろなドライバで共通に使える画像セットになります．<br>
 
-[Herbert Voss 2006-10-10 の文書 \[Internet Archive\]](http://web.archive.org/web/20070513051617/http://perce.de/LaTeX/misc/PST2PDF) でも epstopdf を使っているみたいです． <!-- 上に例で挙げた Chebyshev 多項式の零点の図のように、ソースにサイズを --> <!-- 書き込んでしまうのでは、解答になりませんか？ --> <!-- // pspicture 環境の (x,y)(X,Y) でですか? --> <!-- // その指定では，その枠内ぴったりに図を描くようにがんばらないといけませんよね？ --> <!-- // アルファベットの `O' 1 文字だけを描いた図でもそれをやろうとすると， --> <!-- // 文字の太さとかを考えないと，きちんと BoundingBox の中にぴったり収めることは --> <!-- // 神技に近いです．BoundingBox は，図を描くときに手で指定するのではなく， --> <!-- // できあがった図から事後処理で補正できる方が reasonable だと思います． -->
+[Herbert Voss 2006-10-10 の文書 \[Internet Archive\]](http://web.archive.org/web/20070513051617/http://perce.de/LaTeX/misc/PST2PDF) でも epstopdf を使っているみたいです． <!-- 上に例で挙げた Chebyshev 多項式の零点の図のように，ソースにサイズを --> <!-- 書き込んでしまうのでは，解答になりませんか？ --> <!-- // pspicture 環境の (x,y)(X,Y) でですか? --> <!-- // その指定では，その枠内ぴったりに図を描くようにがんばらないといけませんよね？ --> <!-- // アルファベットの `O' 1 文字だけを描いた図でもそれをやろうとすると， --> <!-- // 文字の太さとかを考えないと，きちんと BoundingBox の中にぴったり収めることは --> <!-- // 神技に近いです．BoundingBox は，図を描くときに手で指定するのではなく， --> <!-- // できあがった図から事後処理で補正できる方が reasonable だと思います． -->
 
 ### LaTeXDraw {#r4f44c9b}
 
-[LaTeXDraw](http://latexdraw.sourceforge.net/) は GNU GPL ライセンスのフリーの PSTricks コードジェネレータ もしくは PSTricks エディタです。
+[LaTeXDraw](http://latexdraw.sourceforge.net/) は GNU GPL ライセンスのフリーの PSTricks コードジェネレータ もしくは PSTricks エディタです．
 
-[LaTeXDraw](http://latexdraw.sourceforge.net/) は Java で書かれており、さまざまな OS で動作します。
+[LaTeXDraw](http://latexdraw.sourceforge.net/) は Java で書かれており，さまざまな OS で動作します．
 
 ### 関連リンク {#y60e05bb}
 
@@ -1362,19 +1363,18 @@ $ epstopdf foo.eps foo.pdf
 - [「PSTricks」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=PSTricks)
 
 <!-- * コメント [#j6e07b43] -->
-<!-- 質問です。 -->
-<!-- latex->dvips->ps2pdf (Ghostscript 7.07) で処理した PSTricks を含むソースで、 -->
-<!-- psdot で出力される dot が、ビットマップ展開されてしまうのはなぜでしょうか？ -->
+<!-- 質問です． -->
+<!-- latex->dvips->ps2pdf (Ghostscript 7.07) で処理した PSTricks を含むソースで， -->
+<!-- psdot で出力される dot が，ビットマップ展開されてしまうのはなぜでしょうか？ -->
 <!-- 回避する方法を御存じないでしょうか？ -->
 <!-- // Ghostscript のバージョンの問題ではないですか？ -->
-<!-- // 8.14, 8.15, 8.50 を試してみましたが、いずれも、スケーラブルなグラフィックに -->
-<!-- // 展開されます。 -->
-<!-- // 念のため。申し上げると、 dot は PS ファイル中では Type3 フォントです。 -->
-<!-- コメント部分にもかかわらず、ご返答ありがとうございます。 -->
-<!-- 前半部分に関してかなりショックです。 -->
-<!-- 後半部分は知っていましたが、ビットに切って、ビットマップに展開した荒い -->
-<!-- 文字列 (Type 3 の Helvatica?) を並べて表現しているのに比べると、スケーラブル -->
-<!-- であることの魅力は代えがたいです。 -->
-<!-- Ghostscript のヴァージョン問題、うーむ、困りました。 -->
-<!-- 2006-12-29 (金) 00:33:23 追記: 8.54-gpl をコンパイルし、この下でスケーラブルなグラフィックに -->
-<!--                      なっていることを確認しました。 -->
+<!-- // 8.14, 8.15, 8.50 を試してみましたが，いずれも，スケーラブルなグラフィックに -->
+<!-- // 展開されます． -->
+<!-- // 念のため．申し上げると， dot は PS ファイル中では Type3 フォントです． -->
+<!-- コメント部分にもかかわらず，ご返答ありがとうございます． -->
+<!-- 前半部分に関してかなりショックです． -->
+<!-- 後半部分は知っていましたが，ビットに切って，ビットマップに展開した荒い -->
+<!-- 文字列 (Type 3 の Helvatica?) を並べて表現しているのに比べると，スケーラブル -->
+<!-- であることの魅力は代えがたいです． -->
+<!-- Ghostscript のヴァージョン問題，うーむ，困りました． -->
+<!-- 2006-12-29 (金) 00:33:23 追記: 8.54-gpl をコンパイルし，この下でスケーラブルなグラフィックになっていることを確認しました． -->
