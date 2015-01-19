@@ -362,6 +362,9 @@ PostScript 言語には色の透明度の概念はありませんが， PDF 1.4 
 
 <img src="http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/73/transparency0.jpg" alt="">
 
+上の pst-IIID.sty は, 現在配布されている pst-3d.sty とは違うものらしく,
+現在では入手することが困難なので，この例をコンパイルするのは難しいかも知れません.
+
 次に， PSTricks で，半透明画像を生成するには， fillstyle に solid または shape を指定し， opacity, shapealpha を設定します．<br>
 fillstyle=solid の時は opacity のみが， fillstyle=shape の時は shapealpha のみが影響します．<br>
 fillstyle=shape の時は blendmode を指定することもできます．<br>
