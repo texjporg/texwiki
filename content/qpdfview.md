@@ -13,11 +13,11 @@ pukiwiki: "qpdfview"
 
 ## qpdfview とは {#o070cb99}
 
-qpdfview はタブ切り替え型のドキュメントビューアです．<br>
-PDF ファイルや PS ファイルが表示できます．<br>
-SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
-ファイルの自動更新機能 (Auto-refresh) はデフォルトでは無効になっているので設定で有効にする必要があります．<br>
+qpdfview はタブ切り替え型のドキュメントビューアです．
+PDF ファイルや PS ファイルが表示できます．
+[SyncTeX](/SyncTeX/) に対応しています．
+ファイルの自動更新機能もあります．
+ファイルの自動更新機能 (Auto-refresh) はデフォルトでは無効になっているので設定で有効にする必要があります．
 
 - [qpdfview](https://launchpad.net/qpdfview)
 
@@ -31,7 +31,7 @@ Linux
 
 ### リリース情報 {#k3e6b6c1}
 
-[timeline : qpdfview](https://launchpad.net/qpdfview/+series) を参照．<br>
+[timeline : qpdfview](https://launchpad.net/qpdfview/+series) を参照．
 
 ### ChangeLog {#ne9f67d7}
 
@@ -119,20 +119,20 @@ TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇�
 $ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
 ```
 
-のように実行します．<br>
+のように実行します．
 
 ### inverse search {#n500afd3}
 
 \[Edit\]-\[Settings...\]-\[Behaviour\]
 
-TeXstudio の場合は<br>
+[TeXstudio](/TeXstudio/) の場合は
 Source editor の項目に
 
 ```
 texstudio "%1" -line %2
 ```
 
-を設定します．<br>
+を設定します．
 
 ***
 
@@ -156,4 +156,4 @@ texstudio "%1" -line %2
 
 ***
 
-qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
+qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
