@@ -13,14 +13,15 @@ pukiwiki: "SyncTeX"
 
 ## SyncTeX とは {#i8f28fee}
 
-SyncTeX というのは、PDF viewer と editor の間の synchronization を実現したものです．<br>
-SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, euptex, uptex, eptex, ptex です．<br>
+SyncTeX とは，PDF viewer と editor の間の synchronization を実現したものです．
+SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, euptex, uptex, eptex, ptex です．
+
 オプションで
 
 - -synctex=1 とすると，zlib で圧縮した SyncTeX 用データを出力します．
 - -synctex=-1 のように負の値に設定すると，圧縮しないデータを出力します．
 
-ただし ConTeXt の場合は、mkiv であればソースにおいて \enabledirectives\[system.synctex\] とし，mkii であればソースにおいて \synctex=1 としておくと SyncTeX が有効になります．<br>
+ただし [ConTeXt](/ConTeXt/) の場合は，mkiv であればソースにおいて \enabledirectives\[system.synctex\] とし，mkii であればソースにおいて \synctex=1 としておくと SyncTeX が有効になります．
 
 - [The official SyncTeX page](http://itexmac.sourceforge.net/SyncTeX.html)
 - [http://tex.stackexchange.com/questions/tagged/forward-inverse-search](http://tex.stackexchange.com/questions/tagged/forward-inverse-search)
@@ -36,6 +37,7 @@ SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, e
 
 - [TeXworks](/TeXworks/)
 - [TeXstudio](/TeXstudio/)
+- [TeXShop](/TeXShop/)
 - [SumatraPDF](/SumatraPDF/)
 - [Skim](/Skim/)
 - [Evince](/Evince/)
