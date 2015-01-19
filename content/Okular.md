@@ -15,9 +15,9 @@ pukiwiki: "Okular"
 
 ## Okular とは {#jde0a0e5}
 
-Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
-SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
+Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
+[SyncTeX](/SyncTeX/) に対応しています．
+ファイルの自動更新機能もあります．
 
 - [Okular](https://okular.kde.org/)
 
@@ -31,7 +31,7 @@ KDE
 
 ### リリース情報 {#v4dc0489}
 
-[Development News](https://okular.kde.org/news.php) を参照．<br>
+[Development News](https://okular.kde.org/news.php) を参照．
 
 ### ChangeLog {#h7a9328d}
 
@@ -115,13 +115,13 @@ TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇�
 $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 ```
 
-のように実行します．<br>
+のように実行します．
 
 ### inverse search {#ja9305fc}
 
 \[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\]
 
-TeXstudio の場合は<br>
+[TeXstudio](/TeXstudio/) の場合は
 エディタ の項目に
 
 エディタ
@@ -138,6 +138,6 @@ TeXstudio の場合は<br>
 texstudio "%f" -line %l
 ```
 
-を設定します．<br>
+を設定します．
 
-Okular 上で Shift + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
+Okular 上で Shift + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
