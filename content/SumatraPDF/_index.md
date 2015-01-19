@@ -17,8 +17,8 @@ pukiwiki: "SumatraPDF"
 ## SumatraPDF とは {#td9ee2f0}
 
 SumatraPDF はタブ切り替え型の軽量な PDF ビューアです．ePub, MOBI, CHM, XPS, DjVu, CBZ, CBRなどの形式も閲覧できます．
-SyncTeX への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています．
-PDF ファイルだけではなく PostScript ファイルも表示可能です．([Ghostscript](/Ghostscript/) が必要です．)<br>
+[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています．
+PDF ファイルだけではなく PostScript ファイルも表示可能です．([Ghostscript](/Ghostscript/) が必要です．)
 
 [SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
 
@@ -32,10 +32,10 @@ Windows
 
 ### リリース情報/ChangeLog {#b67b5a28}
 
-[News](http://www.sumatrapdfreader.org/news.html)<br>
-[コミットログ](https://github.com/sumatrapdfreader/sumatrapdf/commits/master)<br>
+- [News](http://www.sumatrapdfreader.org/news.html)
+- [コミットログ](https://github.com/sumatrapdfreader/sumatrapdf/commits/master)<br>
 
-を参照．<br>
+を参照．
 
 ### 派生版・独自ビルド版 {#i2d3e037}
 
@@ -54,7 +54,7 @@ Windows
 
 ### SyncTeX {#m55b995b}
 
-SyncTeX とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です．
+[SyncTeX](/SyncTeX/) とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です．
 TeX エンジンが SyncTeX に対応しており（主要なエンジンは対応しています），またソースが -synctex=1 または -synctex=-1 オプションとともにコンパイルされている必要があります．（ソースファイルと同じフォルダに拡張子が .synctex のファイルができます．）
 ジャンプはエディタ→ SumatraPDF（forward search）と SumatraPDF →エディタ（inverse search）の両方が可能です．
 
@@ -88,19 +88,18 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
-forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使用します．<br>
-
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照．
+forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使用します．
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照してください．
 
 ### inverse search {#wfcdbef6}
 
 inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただ，設定が必要です．
 
 まずは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください．（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください．）
-SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．<br>
-inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．<br>
-この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．<br>
-どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．<br>
+SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．
+inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．
+この項目は，-synctex オプションを用いて作成された PDF ファイルが開かれている状態でないと現れません．
+どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．
 
 64-bit Windows での [TeXstudio](/TeXstudio/) であれば
 
