@@ -37,7 +37,7 @@ pukiwiki: "表記の哲学"
     - 大文字かつイタリック体（ISOに従うと）
         - 例 [http://physics.nist.gov/cuu/pdf/sp811.pdf](http://physics.nist.gov/cuu/pdf/sp811.pdf)
     - ボールド体とする流儀の例（米国では行列変数・ベクトル変数に，立体かつボールド体表記が多用される模様）
-        - 例 [http://physics.nist.gov/Document/typefaces.pdf](http://physics.nist.gov/Document/typefaces.pdf)
+        - 例 [http://physics.nist.gov/cuu/pdf/typefaces.pdf](http://physics.nist.gov/cuu/pdf/typefaces.pdf)
             <!-- - - 日本でボールド体が普及していない原因は？ -->
 
 - サンセリフ体：日本物理学会誌規定を見ると、テンソル変数・行列変数は（立体の）サンセリフ体を使用とのこと（例：$\mathsf{A}$）
