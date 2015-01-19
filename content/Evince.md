@@ -17,9 +17,9 @@ pukiwiki: "Evince"
 
 ## Evince とは {#l8fbb2e6}
 
-Evince は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．<br>
-SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
+Evince は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
+[SyncTeX](/SyncTeX/) に対応しています．
+ファイルの自動更新機能もあります．
 
 - [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
@@ -48,9 +48,9 @@ Windows, OS X, Linux
 
 - [Apps/Evince/Downloads - GNOME Wiki!](https://wiki.gnome.org/Apps/Evince/Downloads)
 
-公式サイトの Windows 版の Evince 2.32.0.145 で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))<br>
-自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．<br>
-Evince は [MinGW](/MinGW/) でビルド可能です．<br>
+公式サイトの Windows 版の Evince 2.32.0.145 で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))
+自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．
+Evince は [MinGW](/MinGW/) でビルド可能です．
 
 ### OS X {#y8d21820}
 
@@ -83,8 +83,8 @@ Evince は [MinGW](/MinGW/) でビルド可能です．<br>
 
 ## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
 
-フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．<br>
-以下の設定では TeX Live に含まれている IPAexMincho, IPAexGothic で表示するようにしています．<br>
+フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．
+以下の設定では TeX Live に含まれている IPAexMincho, IPAexGothic で表示するようにしています．
 
 ```
 $ mkdir -p ~/.config/fontconfig
@@ -170,9 +170,9 @@ $ evince --help
 
 ### forward and inverse search {#ga060086}
 
-fwdevince, evince_forward_search を使用して forward search ができます．<br>
-invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．<br>
-inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．<br>
+fwdevince, evince_forward_search を使用して forward search ができます．
+invevince, bwdevince, evince_inverse_search, evince_backward_search を使用して inverse search ができます．
+inverse search は Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
 #### fwdevince <a id="fwdevince"></a> {#ie18c015}
 
