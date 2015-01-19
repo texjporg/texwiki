@@ -15,10 +15,10 @@ pukiwiki: "Skim"
 
 ## Skim とは {#mcac8dfe}
 
-Skim は PDF ビューアです．<br>
-SyncTeX に対応しています．<br>
+Skim は PDF ビューアです．
+[SyncTeX](/SyncTeX/) に対応しています．
 
-- [Skim](http://skim-app.sourceforge.net/)
+- [http://skim-app.sourceforge.net/](http://skim-app.sourceforge.net/)
 
 ### 動作環境 {#rb90213b}
 
@@ -30,7 +30,7 @@ OS X
 
 ### リリース情報 {#z7f1eead}
 
-[Release Notes](http://skim-app.sourceforge.net/relnotes.html) を参照．<br>
+[Release Notes](http://skim-app.sourceforge.net/relnotes.html) を参照．
 
 ### ChangeLog {#l1a8874a}
 
@@ -45,12 +45,12 @@ OS X
 
 ### forward search {#c02e2c91}
 
-forward search を行う場合は Skim に含まれている [displayline](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．<br>
+forward search を行う場合は Skim に含まれている [displayline](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．
 
 ## DVI ファイルを PDF ファイルに変換して表示 {#nfee2aaa}
 
-DVI ファイルも PDF ファイルに変換して表示してくれます．<br>
-DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．<br>
+DVI ファイルも PDF ファイルに変換して表示してくれます．
+DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．
 
 ## 関連リンク {#a3af5ca3}
 
