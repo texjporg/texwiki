@@ -13,10 +13,10 @@ pukiwiki: "zathura"
 
 ## zathura とは {#s6eb3d04}
 
-zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．<br>
-PDF ファイルや PS ファイルが表示できます．<br>
-SyncTeX に対応しています．<br>
-ファイルの自動更新機能もあります．<br>
+zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．
+PDF ファイルや PS ファイルが表示できます．
+[SyncTeX](/SyncTeX/) に対応しています．
+ファイルの自動更新機能もあります．
 
 - [Home | pwmt.org](https://pwmt.org/)
     - [zathura](https://pwmt.org/projects/zathura/)
@@ -28,7 +28,7 @@ SyncTeX に対応しています．<br>
 
 OS X, Linux, BSD
 
-[Known supported distributions](https://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．<br>
+[Known supported distributions](https://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．
 
 ### License {#v6901e72}
 
@@ -40,9 +40,9 @@ OS X, Linux, BSD
 - [https://git.pwmt.org/?p=girara.git;a=tags](https://git.pwmt.org/?p=girara.git;a=tags)
 - [News](https://pwmt.org/news/)
 
-を参照．<br>
+を参照．
 
-Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<br>
+Version 0.2.7 で [SyncTeX](/SyncTeX/) (forward and inverse search) に対応しました．
 
 ### ChangeLog {#fdab5877}
 
@@ -92,8 +92,8 @@ Version 0.2.7 で SyncTeX (forward and inverse search) に対応しました．<
 
 ### キーボード操作 {#ta398819}
 
-zathura は [Vim](/Vim/) キーバインドを採用しています．<br>
-[Emacs](/Emacs/) ライクなキーバインドにカスタマイズすることもできます． → [Emacs like key bindings for zathura](https://gist.github.com/3168313)<br>
+zathura は [Vim](/Vim/) キーバインドを採用しています．
+[Emacs](/Emacs/) ライクなキーバインドにカスタマイズすることもできます． → [Emacs like key bindings for zathura](https://gist.github.com/3168313)
 
 ### コマンドラインオプション {#u4f91695}
 
@@ -137,11 +137,11 @@ $ zathura hoge.pdf &
 $ zathura --synctex-forward 30:0:hoge.tex hoge.pdf
 ```
 
-のように実行します．<br>
-zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．<br>
+のように実行します．
+zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．
 
-プロセス ID を指定して forward search をすることもできます．<br>
-pgrep や pidof を使用するとプロセス ID が取得できます．<br>
+プロセス ID を指定して forward search をすることもできます．
+pgrep や pidof を使用するとプロセス ID が取得できます．
 
 ```
 $ zathura hoge.pdf &
@@ -157,13 +157,13 @@ $ zathura --synctex-pid=$PID --synctex-forward 30:0:hoge.tex hoge.pdf
 
 ### inverse search {#c00c992e}
 
-TeXstudio の場合は
+[TeXstudio](/TeXstudio/) の場合は
 
 ```
 $ zathura -s -x "texstudio '%{input}' -line %{line}" "hoge.pdf"
 ```
 
-のように実行して zathura 上で Ctrl + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．<br>
+のように実行して zathura 上で Ctrl + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
 
 ## 関連リンク {#l21c05df}
 
