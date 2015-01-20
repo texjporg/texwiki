@@ -15,7 +15,7 @@ pukiwiki: "Xpdf"
 （[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）
 または [MuPDF](/MuPDF/) を使用してください．
 
-ただし，Xpdf に含まれるいくつかのツールは，現在でも非常に有用です．
+ただし，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です．
 ここでは，そのようなツールを紹介します．
 
 <!-- とりあえず項目を復活させました． -->
@@ -23,6 +23,10 @@ pukiwiki: "Xpdf"
 <!-- W32TeX 関連の記載以外は検証していません． -->
 <!-- // OS X の MacPorts, Homebrew について追記しました． -->
 <!-- // 検証などお願いします． -->
+<!-- // // Windows の TeX Live の場合を追記しました． -->
+<!-- // // セットアップ方法の追記をお願いします． -->
+
+### 目次 {#ma1fb0b0}
 
 ### 公式サイト {#t19ccac8}
 
@@ -32,11 +36,9 @@ pukiwiki: "Xpdf"
 
 GPLv3, GPLv2
 
-### Windows {#za509c90}
+## Xpdf のツール一覧 {#y19ebf12}
 
-[W32TeX](/W32TeX/) には，
-Xpdf に含まれる便利な [PDF](/PDF/) 操作ツールのバイナリ (.exe) が収録されています．
-以下が利用できます：
+PDF ビューアである xpdf のほかに，次のようなツールが存在します．
 
 - pdfimages ： PDF から画像を抽出する
 - pdffonts ： PDF のフォント情報を表示
@@ -47,6 +49,22 @@ Xpdf に含まれる便利な [PDF](/PDF/) 操作ツールのバイナリ (.exe)
 - pdftopng ： PDF の各ページを PNG に変換
 - pdftohtml ： PDF を HTML に変換
 - pdfdetach ： PDF にアタッチされた部分をファイルとして抜き出すプログラム
+
+## インストール方法 {#jb8870ec}
+
+### Windows {#za509c90}
+
+[W32TeX](/W32TeX/) には，
+Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています．
+以下が利用できます：
+
+- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
+    pdftotext, pdftopng, pdftohtml, pdfdetach
+
+[TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
+
+[CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，
+ビルド済みバイナリのアーカイブが入手できます．
 
 ### OS X {#ua3cd20e}
 
@@ -67,13 +85,8 @@ export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
 既に言語設定は済んでいるので，特別な操作は不要です．
 以下が利用可能になります：
 
-- pdfimages
-- pdffonts
-- pdfinfo
-- pdftops
-- pdftoppm
-- pdftotext
-- pdfdetach
+- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
+    pdftotext, pdfdetach
 
 #### パッケージ管理システムを用いる方法 {#sc414cd6}
 
@@ -102,13 +115,8 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 と追記します．
 これで以下が利用可能になります：
 
-- pdfimages
-- pdffonts
-- pdfinfo
-- pdftops
-- pdftoppm
-- pdftotext
-- pdfdetach
+- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
+    pdftotext, pdfdetach
 
 % MacPorts の場合は，どうやらバイナリ名に接頭語 xpdf- が付いている…？ Homebrew のほうは使ったことがありません．
 
