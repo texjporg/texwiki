@@ -21,6 +21,8 @@ pukiwiki: "Xpdf"
 <!-- とりあえず項目を復活させました． -->
 <!-- ビューアとして obsolete な理由説明がほしいです． -->
 <!-- W32TeX 関連の記載以外は検証していません． -->
+<!-- // OS X の MacPorts, Homebrew について追記しました． -->
+<!-- // 検証などお願いします． -->
 
 ### 公式サイト {#t19ccac8}
 
@@ -48,16 +50,80 @@ Xpdf に含まれる便利な [PDF](/PDF/) 操作ツールのバイナリ (.exe)
 
 ### OS X {#ua3cd20e}
 
-- [Xpdf.app](http://www.muskmelon.jp/?page_id=86)
-- [homebrew / Library / Formula / xpdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/xpdf.rb)
+[TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
+
+#### 最も簡単な方法 {#i83bff45}
+
+[マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，
+Applications フォルダにインストールします．
+/Applications/Xpdf.app 及び /Applications/Xpdf.app/bin にこの順番でパスを通します．
+ターミナルから
+
+```
+export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
+```
+
+を実行してください．
+既に言語設定は済んでいるので，特別な操作は不要です．
+以下が利用可能になります：
+
+- pdfimages
+- pdffonts
+- pdfinfo
+- pdftops
+- pdftoppm
+- pdftotext
+- pdfdetach
+
+#### パッケージ管理システムを用いる方法 {#sc414cd6}
+
+MacPorts や Homebrew を用いた xpdf のインストールも可能です．
+
+さらに言語設定が必要です．
+（以下のディレクトリ名は MacPorts の場合．Homebrew なら /opt/local ではなく /usr/local/ のはず）
+日本語を用いる場合は xpdf-japanese もインストールし，
+/opt/local/etc/xpdfrc を編集します．
+
+```
+#textEncoding		UTF-8
+```
+
+のコメントアウトを外します．さらに
+
+```
+cidToUnicode  Adobe-Japan1  /opt/local/share/xpdf/xpdf-japanese/Adobe-Japan1.cidToUnicode
+unicodeMap    ISO-2022-JP   /opt/local/share/xpdf/xpdf-japanese/ISO-2022-JP.unicodeMap
+unicodeMap    EUC-JP        /opt/local/share/xpdf/xpdf-japanese/EUC-JP.unicodeMap
+unicodeMap    Shift-JIS     /opt/local/share/xpdf/xpdf-japanese/Shift-JIS.unicodeMap
+cMapDir       Adobe-Japan1  /opt/local/share/xpdf/xpdf-japanese/CMap
+toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
+```
+
+と追記します．
+これで以下が利用可能になります：
+
+- pdfimages
+- pdffonts
+- pdfinfo
+- pdftops
+- pdftoppm
+- pdftotext
+- pdfdetach
+
+% MacPorts の場合は，どうやらバイナリ名に接頭語 xpdf- が付いている…？ Homebrew のほうは使ったことがありません．
+
+参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
+
 - [/trunk/dports/graphics/xpdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/xpdf/Portfile)
+- [homebrew/Library/Formula/xpdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/xpdf.rb)
 
 ### Linux {#a0b844a2}
 
-- [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf)
+- [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照．
 
 ## 関連リンク {#fb8962ad}
 
+- [http://www.ctan.org/tex-archive/support/xpdf](http://www.ctan.org/tex-archive/support/xpdf)
 - Forum「xpdf utilities」
     [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342)
 
