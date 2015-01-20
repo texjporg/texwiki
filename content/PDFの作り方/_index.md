@@ -112,6 +112,7 @@ pukiwiki: "PDFの作り方"
     - [pdfcrop](/pdfcrop/) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
         - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
     - [QPDF](/QPDF/) Web 表示用に最適化したり，暗号化したりできます．[W32TeX](/W32TeX/) に含まれています．
+    - [Xpdf](/Xpdf/) PDF 操作ツール（テキスト抽出，[PostScript](/PostScript/) や HTML への変換など）．[W32TeX](/W32TeX/) に含まれています．
     - [pdfsizeopt](https://code.google.com/p/pdfsizeopt/) PDF file size optimizer
     - [DiffPDF](http://www.qtrac.eu/diffpdf.html) DiffPDF is used to compare two PDF files—textually or visually.
 
