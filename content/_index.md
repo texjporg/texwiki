@@ -9,7 +9,7 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
-<span style="font-size:40px"><strong>TeX Wiki へようこそ！</strong></span>
+<span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
 <!-- * FrontPage [#pe4f375a] -->
 
