@@ -50,20 +50,24 @@ TeXworksは
 
 次の四行を入力してみます．
 
-\documentclass{article}<br>
-\begin{document}<br>
-Hello World!<br>
+```
+\documentclass{article}
+\begin{document}
+Hello World!
 \end{document}
+```
 
 メニューから「ファイル」→「保存」と選び，適当な場所に保存します．（ツールバーの「保存」ボタンを押すか Ctrl + S を押しても保存されます．）名前は何でもよいです．
 左上の緑の三角の入ったボタンを押してみてください．「Hello World!」と表示されれば成功です．
 
 日本語も試してみましょう．今度は次のようにします．
 
-\documentclass{jsarticle}<br>
-\begin{document}<br>
-こんにちは，\LaTeX<br>
+```
+\documentclass{jsarticle}
+\begin{document}
+こんにちは，\LaTeX
 \end{document}
+```
 
 同様にしてみて「こんにちは，LaTeX」と表示されれば成功です．（LaTeX は大文字 A が上がり，大文字 E が下がった「本来の方法」で表示されているはずです．）
 以上で LaTeX のインストールは終了です．
@@ -82,7 +86,9 @@ Hello World!<br>
 
 コンパイルでエラーが発生すると，TeXworks 下段の「ログの表示」にエラーに関する情報が表示されます．たとえば
 
+```
 \ddocumentclass{jsarticle}
+```
 
 としてしまうと（dが一つ多い）次のように表示されます．
 
