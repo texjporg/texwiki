@@ -366,7 +366,7 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 
 ### ヘブライ語 {#f3b6c860}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる uplatex コマンドは、[e-TeX](/e-TeX/) 拡張を含んだ e-upTeX をコンパイラとしているため、TeX-XeT 機能が利用できます。<br>
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる uplatex コマンドは、[e-TeX](/e-TeX/) 拡張を含んだ e-upTeX をコンパイラとしているため、TeX--XeT 機能が利用できます。<br>
 ヘブライ文字ブロックの \kcatcode を 15 に設定することで、
 欧文 LaTeX と同様、babel パッケージの hebrew オプションが利用出来ます。<br>
 
