@@ -16,7 +16,7 @@ pukiwiki: "upTeX,upLaTeX"
 [upTeX, upLaTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版。<br>
 pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
 upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
-そのおかげで、従来は otf パッケージなどが必要であった丸数字（①②③…）なども、ソースにそのまま記述してコンパイルできます。<br>
+そのおかげで、従来は [otf パッケージ](/OTF/)などが必要であった丸数字（①②③…）なども、ソースにそのまま記述してコンパイルできます。<br>
 また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
 
 ### 特徴 {#redf175b}
@@ -200,7 +200,7 @@ pTeX, pLaTeX で利用しているコマンド名等は以下のように読み�
 | JT1  | JT2   | 縦組み |
 
 jsarticle.cls では、uplatex オプションを追加してください。<br>
-[otfパッケージ](/OTF/)では、uplatex オプションを追加してください。<br>
+[otf パッケージ](/OTF/)では、uplatex オプションを追加してください。<br>
 
 ```
 \documentclass[uplatex]{jsarticle}
