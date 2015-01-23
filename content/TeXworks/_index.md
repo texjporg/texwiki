@@ -8,23 +8,17 @@ pukiwiki: "TeXworks"
 
 # TeXworks
 
-## [TeXworks](http://www.tug.org/texworks/) {#u83ee990}
-
 <img src="http://www.tug.org/texworks/img/TeXworks256.png" alt="TeXworks" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．Mac OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
-## TeXworks とは {#e8144da8}
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著『LaTeX2e 美文書作成入門』（[改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)）では，おすすめの統合環境に TeXworks が紹介されています．
 
-TeXworks は，TeX でドキュメントを作成するためのシンプルな統合環境です．<br>
-TeXworks は Dick[^1] Koch 氏の [TeXShop](/TeXShop/) をモデルにしています．<br>
-[TeX Live](</TeX Live/>)[^2]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．<br>
-[SyncTeX](/SyncTeX/) もサポートしており，メニューも日本語化されています．<br>
-TeXworks のデフォルトの文字コードは UTF-8 です．<br>
+<strong>目次</strong>
 
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
-『LaTeX2e 美文書作成入門』
-([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境に TeXworks が紹介されています．<br>
+## 概要 {#e8144da8}
+
+### Webサイト {#e62cfe01}
 
 - [TeXworks 公式サイト](http://www.tug.org/texworks/)
     - [The texworks Archives](http://tug.org/pipermail/texworks/)
@@ -39,30 +33,40 @@ TeXworks のデフォルトの文字コードは UTF-8 です．<br>
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows，OS X, GNU/Linux で利用できます．<br>
-TeXworks の Windows 版は，Windows XP 以降の Windows で動作します．<br>
-TeXworks は [Qt](/Qt/) を使用しているため，基本的には [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html) で動作します．<br>
+Microsoft Windows（XP 以降），OS X, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
 
 ### License {#lccd03cb}
 
 [GPLv2](https://code.google.com/p/texworks/source/browse/trunk/COPYING)<br>
 
-### リリース情報 {#re7d3d85}
+### ダウンロード/インストール {#t28a6277}
 
-[News](http://www.tug.org/texworks/#News) を参照．<br>
+[TeXworks/インストール](</TeXworks/インストール/>) を参照．
 
-TeXworks 0.4.5 の Windows バイナリは Qt 4.8.1, Poppler 0.22.2 を使用してビルドされています．<br>
-TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．<br>
+### 設定 {#q50d2378}
 
-### ChangeLog {#j22176bb}
+W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，pLaTeX を使うための設定を追加する必要があります．
 
-- [コミットログ](https://code.google.com/p/texworks/source/list)
-    <!-- -[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
-    <!-- -[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
-    <!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
+[TeXworks/設定](</TeXworks/設定/>) を参照．
 
-- \[[texlive\] Index of /trunk/Master/tlpkg/texworks](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log)
+### 使い方 {#w7e215a3}
+
+[TeXworks/使い方](</TeXworks/使い方/>) を参照．
+
+<!-- **リリース情報 [#re7d3d85] -->
+<!--  -->
+<!-- [[News:http://www.tug.org/texworks/#News]] を参照．~ -->
+<!--  -->
+<!-- TeXworks 0.4.5 の Windows バイナリは Qt 4.8.1, Poppler 0.22.2 を使用してビルドされています．~ -->
+<!-- TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．~ -->
+
+<!-- **ChangeLog [#j22176bb] -->
+<!-- -[[コミットログ:https://code.google.com/p/texworks/source/list]] -->
+<!-- //-[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
+<!-- //-[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
+<!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
+<!-- -[[[texlive] Index of /trunk/Master/tlpkg/texworks:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/]] -->
+<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log]] -->
 
 ### スクリーンショット {#y7449ee4}
 
@@ -76,34 +80,121 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
 
 <div style="clear:both"></div>
 
-## ダウンロード/インストール {#t28a6277}
+## 文字コードの変換 {#e8ba5265}
 
-[TeXworks/インストール](</TeXworks/インストール/>) を参照．
+TeXworks で使用する文字コードはデフォルトでは UTF-8 です．このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．文字コードの変換には，各種エディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
 
-## TeX ► QA ► フォーラム ► 一般フォーラム ► {#m9d42515}
+エディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのエディタを使う方法があります．
 
-- [texworks-processing fails.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1275)
-- [文書ファイルの作成について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1273)
-- [Texworksを使用してdviをpdfに変換するときのエラーについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1213)
-- [TeXworks の初期設定カスタマイズ(美文書第６版DVD)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1182)
-- [TeXLive2013 の動作](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1146)
-- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
-- [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
-- [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
-- [TeXworksで文字化けします。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=886)
-- [! LaTeX Error: Encoding scheme \`JY1' unknown.](https://okumuralab.org/tex/mod/forum/discuss.php?d=840)
-- [Mac へのTeXworksのインストールについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=790)
-- [ptexencの文字コード自動判定とpdfplatex.batの設定](https://okumuralab.org/tex/mod/forum/discuss.php?d=788)
-- [TeXworksの日本語の下の赤波線の削除](https://okumuralab.org/tex/mod/forum/discuss.php?d=785)
-- [.synctex.gzファイルについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=781)
-- [TeXworks 0.4.3でのバックスラッシュの入力(Mac)](https://okumuralab.org/tex/mod/forum/discuss.php?d=674)
-- [TeXworksで作成されたpdfファイルの文字化け](https://okumuralab.org/tex/mod/forum/discuss.php?d=625)
-- [TeXWorksにWinTpicで作成した図を\inputできません。](https://okumuralab.org/tex/mod/forum/discuss.php?d=610)
-- [ソースコードでUTF-8のBOM付きと不付きについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=596)
-- [TeXworksでタイプセットをクリックすると、Abort typesettingになってしまう](https://okumuralab.org/tex/mod/forum/discuss.php?d=556)
-- [Texworksの赤の波線](https://okumuralab.org/tex/mod/forum/discuss.php?d=554)
-- [Texworksでのタブの挿入](https://okumuralab.org/tex/mod/forum/discuss.php?d=553)
-- [UTF-8への変換](https://okumuralab.org/tex/mod/forum/discuss.php?d=545)
+コマンドラインからの場合，[W32TeX](/W32TeX/) には標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．nkf の場所は以下のようにして確認できます．
+
+- Windows PowerShell の場合
+
+    ```
+    PS > Get-Command nkf | Select-Object Path
+    エイリアスを使用した場合は
+    PS > gcm nkf | select path
+    ```
+
+```
+Path
+----
+C:\w32tex\bin64\nkf.exe
+C:\w32tex\bin\nkf.exe
+```
+
+- コマンドプロンプトの場合
+
+    ```
+    >where nkf
+    C:\w32tex\bin64\nkf.exe
+    C:\w32tex\bin\nkf.exe
+    ```
+
+使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545)などを参照してください．
+
+## 組み込みの PDF ビューアにゴシック体を表示させる {#t5313ebc}
+
+<!-- -[[Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows:https://code.google.com/p/texworks/issues/detail?id=615]] -->
+<!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
+<!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．~ -->
+<!-- ゴシック体を表示したい場合は以下の方法があります．~ -->
+<!-- -フォントを埋め込む -->
+<!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
+<!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
+
+Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．
+
+<!-- フォント埋め込み設定の書かれた然るべきページにリンクするべきだと思う． -->
+
+### TeX Live の場合 {#aa8923ee}
+
+デフォルトでは和文フォントを埋め込みません．IPAexフォントを埋め込む場合は Windows PowerShell またはコマンドプロンプトから
+
+```
+kanji-config-updmap-sys ipaex
+```
+
+または
+
+```
+kanji-config-updmap ipaex
+```
+
+を実行します．
+
+### W32TeX の場合 {#h6fd82bc}
+
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf), pdfupLaTeX で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
+
+フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．
+
+***
+
+```
+C:.
+└─w32tex
+    └─share
+        └─texmf-dist
+            └─fonts
+                └─map
+                    └─dvipdfmx
+                        └─base
+                            └─cid-x.map
+```
+
+***
+
+C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．
+
+***
+
+```
+%%
+%% upTeX examples
+%%
+```
+
+```
+urml     UniJIS-UTF16-H   ipaexm.ttf
+urmlv    UniJIS-UTF16-V   ipaexm.ttf
+ugbm     UniJIS-UTF16-H   ipaexg.ttf
+ugbmv    UniJIS-UTF16-V   ipaexg.ttf
+uprml-h  UniJIS-UTF16-H   ipaexm.ttf
+uprml-v  UniJIS-UTF16-V   ipaexm.ttf
+upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
+upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
+uprml-hq UniJIS-UCS2-H    ipaexm.ttf
+upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
+```
+
+***
+
+cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
+
+```
+kpsewhich -progname=dvipdfmx -format=map cid-x.map
+```
 
 ## 不具合 {#v0f00822}
 
@@ -112,12 +203,9 @@ TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用して
     <!-- - -[[Issue 261: Scripts:https://code.google.com/p/texworks/issues/detail?id=261]] -->
     <!-- - -[[Issue 516: backslash becomes yen:https://code.google.com/p/texworks/issues/detail?id=516]] -->
 
-### [OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) → [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用する {#n5c2ae8e}
+### [OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) {#n5c2ae8e}
 
-OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
-TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できるそうです．<br>
-
-■ 参考リンク<br>
+[TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できるそうです．
 
 - [https://twitter.com/munepixyz/status/372835284217774080](https://twitter.com/munepixyz/status/372835284217774080)
 - [https://twitter.com/munepixyz/status/373461950824321024](https://twitter.com/munepixyz/status/373461950824321024)
@@ -125,71 +213,56 @@ TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できる�
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
 - [Issue 623 - texworks - Built-in PDF viewer cannot display Japanese characters correctly.](https://code.google.com/p/texworks/issues/detail?id=623)
 
-### OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう → Karabiner で Backslash が優先されるようにキーバインドを変更する {#f4128341}
+### OS X の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
 
-OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) では大丈夫なようです．
+OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) では大丈夫なようです．
 
 - [TeXworks 0.4.3でのバックスラッシュの入力(Mac)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=674)
 - [Issue 516: backslash becomes yen](https://code.google.com/p/texworks/issues/detail?id=516)
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt-project.org/browse/QTBUG-10543)<br>
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
+OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt-project.org/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
-***
+<!-- - --  -->
+<!-- &color(#595857,#DFDFDF){%%%　&color(#FF0000,#DFDFDF){●}; &color(#FFD700,#DFDFDF){●}; &color(#C9C9C9,#DFDFDF){●};　　　　　　　　　　　　　　　　　　　　　　　　　　　　''Karabiner''　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
+<!-- 　　　　%%%&color(#F1F1F1,#0F7FFF){&color(#0F7FFF){[};　''Change Key''　&color(#0F7FFF){]};};&color(Black,White){[　''Key Repeat''　][　''Status Message''　][　''MenuBar''　][　''AXNotifier''　][　''Misc &amp; Uninstall''　]};%%%&br; -->
+<!-- 　　　　&color(Black,#FAFAFA){[%%%&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　%%%]};　　☐ Show enabled only (1 item)　　　　　　　%%%[ ''↻'' ReloadXML ]%%%&br; -->
+<!-- 　　　　remapping&br; -->
+<!-- 　　　　&color(#595857){▼};For Japanese&br; -->
+<!-- 　　　　　　&color(#595857){▼};Change Yen(￥) Key&br; -->
+<!-- 　　　　　　　　　&color(White,#0F7FFF){☑}; JIS Yen(￥) to Backslash(＼)&br; -->
+<!-- 　　　　　　　　　　　　(except virtual machine, X11, RDC)&br; -->
+<!-- - --  -->
 
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#C9C9C9;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+### かな漢字変換をする際に文字が白く表示され，ハイライトに隠れて見えにくくなる {#s5bfc44e}
 
-　　　　<ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>Change Key</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>AXNotifier</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
-　　　　<span style="color:Black;background-color:#FAFAFA;">\[<ins>&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　</ins>\]</span>　　☐ Show enabled only (1 item)　　　　　　　<ins>\[ <strong>↻</strong> ReloadXML \]</ins><br>
-　　　　remapping<br>
-　　　　<span style="color:#595857;">▼</span>For Japanese<br>
-　　　　　　<span style="color:#595857;">▼</span>Change Yen(￥) Key<br>
-　　　　　　　　　<span style="color:White;background-color:#0F7FFF;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
-　　　　　　　　　　　　(except virtual machine, X11, RDC)<br>
+TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体のオプションで現在カーソルのある行をハイライトするにチェックを入れている場合，かな漢字変換の際に，文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生します．これを回避するには，現在カーソルのある行をハイライトするのチェックをはずしてください．
 
-***
+<!-- - --  -->
+<!-- &color(#00ADDD,#00ADDD){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''TeXworksの設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#00ADDD,#00ADDD){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
+<!--  -->
+<!-- 　　&color(Black,#EEEEEE){%%%[　全体　]%%%};''[　エディタ　]''&color(Black,#EEEEEE){%%%[　プレビュー　][　タイプセット　][　スクリプト　]%%%};&br; -->
+<!-- 　　　　エディタのデフォルト&br; -->
+<!-- 　　　　%%% メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　''ᐯ''%%% %%%12 pt　[''⇕'']%%%&br; -->
+<!-- 　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　%%%32 px　　　　　　　　　　　　　　　　　[''⇕'']%%%&br; -->
+<!-- 　　　　☐ 行番号表示　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 行の折り返し&br; -->
+<!-- 　　　　構文の色付け: &color(Black,#EEEEEE){[ LaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
+<!-- 　　　　自動インデント: &color(Black,#EEEEEE){[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ▼]};&br; -->
+<!-- 　　　　引用符の入力支援 &color(Black,#EEEEEE){[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
+<!-- 　　　　スペルチェッカの言語: &color(Black,#EEEEEE){[ English - UnitedStates (en_US)　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
+<!-- 　　　　エンコーディング: &color(Black,#EEEEEE){[ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
+<!-- &br; -->
+<!-- 　　　　エディタ全体のオプション&br; -->
+<!-- 　　　　&color(black,yellow){''☐ 現在カーソルのある行をハイライトする　← チェックをはずす''};&br; -->
+<!-- 　　　　☑ 自動補完を有効にする&br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- 　　　注意:これはデフォルトの設定です。設定を変更しても、すでに開いているウィンドウには影響しません。既存のウィンドウの設定を変更す&br; -->
+<!-- 　　　るには、"フォーマット" メニューから設定をおこなってください&br; -->
+<!-- - --  -->
 
-### かな漢字変換をする際に，文字が白く表示され，ハイライトに隠れて見えにくくなる → 現在カーソルのある行をハイライトするを OFF にするまたは [TeXstudio](/TeXstudio/) を使用する {#s5bfc44e}
-
-TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体のオプションで現在カーソルのある行をハイライトするにチェックを入れている場合，かな漢字変換の際に，文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生します．<br>
-これを回避するには，現在カーソルのある行をハイライトするのチェックをはずしてください．<br>
-TeXworks ではなく [TeXstudio](/TeXstudio/) を使用しても OK です．<br>
-
-***
-
-<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXworksの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]</ins></span><strong>\[　エディタ　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　プレビュー　\]\[　タイプセット　\]\[　スクリプト　\]</ins></span><br>
-　　　　エディタのデフォルト<br>
-　　　　<ins> メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> <ins>12 pt　\[<strong>⇕</strong>\]</ins><br>
-　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　<ins>32 px　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-　　　　☐ 行番号表示　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 行の折り返し<br>
-　　　　構文の色付け: <span style="color:Black;background-color:#EEEEEE;">\[ LaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　自動インデント: <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-　　　　引用符の入力支援 <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　スペルチェッカの言語: <span style="color:Black;background-color:#EEEEEE;">\[ English - UnitedStates (en_US)　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　エンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　　　　エディタ全体のオプション<br>
-　　　　<span style="color:black;background-color:yellow;"><strong>☐ 現在カーソルのある行をハイライトする　← チェックをはずす</strong></span><br>
-　　　　☑ 自動補完を有効にする<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　注意:これはデフォルトの設定です。設定を変更しても、すでに開いているウィンドウには影響しません。既存のウィンドウの設定を変更す<br>
-　　　るには、"フォーマット" メニューから設定をおこなってください<br>
-
-***
-
-#### 修正方法 (Windows) {#pb4e9c13}
+#### ソースコードから修正する方法 (Windows) {#pb4e9c13}
 
 - [Subversion Windows Installer](http://alagazam.net/) から Windows binaries をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
 
@@ -219,8 +292,7 @@ currentLineFormat->setForeground(QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG 
 currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
 ```
 
-のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 \* bgR + .9 \* fgR, .1 \* bgG + .9 \* fgG, .1 \* bgB + .9 \* fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．<br>
-ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります．<br>
+のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 \* bgR + .9 \* fgR, .1 \* bgG + .9 \* fgG, .1 \* bgB + .9 \* fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります．
 
 - TeXworks をビルドします．
 
@@ -232,14 +304,13 @@ $ make
 $ ./src/TeXworks.exe &
 ```
 
-上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました．<br>
+上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました．
 
 - 現在カーソルのある行をハイライトするにチェックがはいっている場合にかな漢字変換をしてもハイライトに隠れずに表示されることを確認します．
 
 - 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
 
-- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，TeXworks の実行に必要なライブラリ (DLL ファイル) の確認をします．<br>
-    objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
+- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，TeXworks の実行に必要なライブラリ (DLL ファイル) の確認をします．objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
 
 ```
 $ objdump -p ./src/TeXworks.exe | grep "DLL Name" | sort | uniq
@@ -298,132 +369,36 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 - C:\MinGW\bin と C:\Qt\Qt5.4.0\5.4\mingw491_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
-## 文字コードの変換 {#e8ba5265}
-
-TeXworks で使用する文字コードはデフォルトでは UTF-8 です．<br>
-Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．<br>
-[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．<br>
-nkf の場所は以下のようにして確認できます．<br>
-
-- Windows PowerShell の場合
-
-    ```
-    PS > Get-Command nkf | Select-Object Path
-    エイリアスを使用した場合は
-    PS > gcm nkf | select path
-
-    Path
-    ----
-    C:\w32tex\bin64\nkf.exe
-    C:\w32tex\bin\nkf.exe
-    ```
-
-- コマンド プロンプトの場合
-
-    ```
-    >where nkf
-    C:\w32tex\bin64\nkf.exe
-    C:\w32tex\bin\nkf.exe
-    ```
-
-使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545) などを参照してください．<br>
-Windows PowerShell またはコマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．<br>
-メモ帳で UTF-8 に変換した場合は BOM が付加されます．<br>
-nkf やメモ帳以外の変換ツールを使用したい場合は[サクラエディタ](</サクラエディタ/>)などのエディタを使っても OK です．<br>
-
-## 組み込みの PDF ビューアにゴシック体を表示させる {#t5313ebc}
-
-<!-- -[[Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows:https://code.google.com/p/texworks/issues/detail?id=615]] -->
-<!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
-<!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．~ -->
-<!-- ゴシック体を表示したい場合は以下の方法があります．~ -->
-<!-- -フォントを埋め込む -->
-<!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
-<!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
-
-Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
-
-### TeX Live の場合 {#aa8923ee}
-
-デフォルトでは和文フォントを埋め込みません．<br>
-IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
-
-```
-kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-### W32TeX の場合 {#h6fd82bc}
-
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
-upLaTeX (ptex2pdf), pdfupLaTeX で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．<br>
-フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．<br>
-
-***
-
-```
-C:.
-└─w32tex
-    └─share
-        └─texmf-dist
-            └─fonts
-                └─map
-                    └─dvipdfmx
-                        └─base
-                            └─cid-x.map
-```
-
-***
-
-C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．<br>
-
-***
-
-```
-%%
-%% upTeX examples
-%%
-
-urml     UniJIS-UTF16-H   ipaexm.ttf
-urmlv    UniJIS-UTF16-V   ipaexm.ttf
-ugbm     UniJIS-UTF16-H   ipaexg.ttf
-ugbmv    UniJIS-UTF16-V   ipaexg.ttf
-uprml-h  UniJIS-UTF16-H   ipaexm.ttf
-uprml-v  UniJIS-UTF16-V   ipaexm.ttf
-upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
-upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
-uprml-hq UniJIS-UCS2-H    ipaexm.ttf
-upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
-```
-
-***
-
-cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
-
-```
-kpsewhich -progname=dvipdfmx -format=map cid-x.map
-```
-
-## 設定 {#q50d2378}
-
-[TeXworks/設定](</TeXworks/設定/>) を参照．
-
-## 使い方 {#w7e215a3}
-
-[TeXworks/使い方](</TeXworks/使い方/>) を参照．
-
 ## スクリプト {#m00b4a58}
 
 - [stloeffler/TeXworks-scripts - GitHub](https://github.com/stloeffler/TeXworks-scripts)
     - [コミットログ](https://github.com/stloeffler/TeXworks-scripts/commits/)
 - [TwScript Information Page](http://twscript.paulanorman.com/)
+
+## TeX フォーラムの質問一覧 {#m9d42515}
+
+- [texworks-processing fails.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1275)
+- [文書ファイルの作成について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1273)
+- [Texworksを使用してdviをpdfに変換するときのエラーについて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1213)
+- [TeXworks の初期設定カスタマイズ(美文書第６版DVD)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1182)
+- [TeXLive2013 の動作](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1146)
+- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
+- [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
+- [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
+- [TeXworksで文字化けします。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=886)
+- [! LaTeX Error: Encoding scheme \`JY1' unknown.](https://okumuralab.org/tex/mod/forum/discuss.php?d=840)
+- [Mac へのTeXworksのインストールについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=790)
+- [ptexencの文字コード自動判定とpdfplatex.batの設定](https://okumuralab.org/tex/mod/forum/discuss.php?d=788)
+- [TeXworksの日本語の下の赤波線の削除](https://okumuralab.org/tex/mod/forum/discuss.php?d=785)
+- [.synctex.gzファイルについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=781)
+- [TeXworks 0.4.3でのバックスラッシュの入力(Mac)](https://okumuralab.org/tex/mod/forum/discuss.php?d=674)
+- [TeXworksで作成されたpdfファイルの文字化け](https://okumuralab.org/tex/mod/forum/discuss.php?d=625)
+- [TeXWorksにWinTpicで作成した図を\inputできません。](https://okumuralab.org/tex/mod/forum/discuss.php?d=610)
+- [ソースコードでUTF-8のBOM付きと不付きについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=596)
+- [TeXworksでタイプセットをクリックすると、Abort typesettingになってしまう](https://okumuralab.org/tex/mod/forum/discuss.php?d=556)
+- [Texworksの赤の波線](https://okumuralab.org/tex/mod/forum/discuss.php?d=554)
+- [Texworksでのタブの挿入](https://okumuralab.org/tex/mod/forum/discuss.php?d=553)
+- [UTF-8への変換](https://okumuralab.org/tex/mod/forum/discuss.php?d=545)
 
 ## 関連リンク {#e07d54a5}
 
@@ -450,9 +425,4 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
     - [至急でお願いします。 「SyncTexデータがありません」となってしまい困っています...](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1089798695)
     - [texworksに日本語フォントを埋め込みたいんですが、解説サイトを見るとcid-x.mapというファイルが必要みたいなんですが、これが見つかりません。どうすればいいでしょうか。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1496913364)
 
-        ```
-        kpsewhich -progname=dvipdfmx -format=map cid-x.map
-        ```
-
-[^1]: Dick は Richard のニックネーム (愛称)．Richard → Rich → Rick → Dick．
-[^2]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
+[^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
