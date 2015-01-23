@@ -8,20 +8,19 @@ pukiwiki: "TeXShop"
 
 # TeXShop
 
-## [TeXShop](http://pages.uoregon.edu/koch/texshop/) {#of2f7ba2}
-
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png,right,around,nolink,240x240,TeXShop) -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](/Mac/#mactex) には標準で含まれています．
+
+TeXShop をモデルにしたクロスプラットフォームな統合環境として [TeXworks](/TeXworks/) があります．
+
+<strong>目次</strong>
 
 <div style="clear:both"></div>
 
-## TeXShop とは {#q728ac5b}
+## 概要 {#q728ac5b}
 
-TeXShop は TeX 統合環境です．
-[SyncTeX](/SyncTeX/) に対応しています．
-[MacTeX](/Mac/#mactex) に標準で含まれています．
-[TeXworks](/TeXworks/) は TeXShop をモデルにしています．
+### 公式 Web サイト {#n47ed01f}
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
     - [TeXShop](http://pages.uoregon.edu/koch/texshop/)
@@ -34,9 +33,9 @@ OS X
 
 GPLv2
 
-### リリース情報/ChangeLog {#td599942}
+<!-- **リリース情報/ChangeLog [#td599942] -->
 
-- [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)<br>
+<!-- -[[Changes in Version 3:http://pages.uoregon.edu/koch/texshop/changes_3.html]]~ -->
 
 <!-- *不具合 [#i75be8c7] -->
 
