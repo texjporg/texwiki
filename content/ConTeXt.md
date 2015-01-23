@@ -7,9 +7,15 @@ pukiwiki: "ConTeXt"
 
 # ConTeXt
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+- -- -8 -->
+## ConTeXt {#f2jmn54o}
 
-## ConTeXt {#ConTeXt}
+ConTeXt とは，TeX の上で動作するマクロパッケージで，LaTeX とはまったく別の体系です． <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． -->
+
+- [http://www.ctan.org/pkg/context](http://www.ctan.org/pkg/context)
+
+### 目次 {#zf7602ba}
+
+### 関連リンク {#o29b44da}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ConTeXt_Unofficial_Logo.svg/200px-ConTeXt_Unofficial_Logo.svg.png" alt="ConTeXt" style="float:right">
 
