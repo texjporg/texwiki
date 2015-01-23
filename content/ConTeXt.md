@@ -17,8 +17,6 @@ ConTeXt とは，TeX の上で動作するマクロパッケージで，LaTeX �
 
 ### 関連リンク {#o29b44da}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/ConTeXt_Unofficial_Logo.svg/200px-ConTeXt_Unofficial_Logo.svg.png" alt="ConTeXt" style="float:right">
-
 - [ConTeXt wiki](http://wiki.contextgarden.net/)
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
