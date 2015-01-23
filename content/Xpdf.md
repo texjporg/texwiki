@@ -9,7 +9,7 @@ pukiwiki: "Xpdf"
 
 ## Xpdf {#z338a0d1}
 
-<span style="font-size:30px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
+<span style="font-size:25px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
 
 [Poppler](/Poppler/) を使用した PDF ビューア
 （[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）
@@ -60,6 +60,8 @@ Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収�
 
 - pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
     pdftotext, pdftopng, pdftohtml, pdfdetach
+
+なお,インストールを完成させるには, [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい.
 
 [TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
 
