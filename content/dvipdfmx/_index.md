@@ -152,7 +152,20 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 使い方 {#qabeb774}
 
+日本語のマニュアルはありません。
+
 - [Dvipdfm マニュアル](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) (英語) をまず読んでください。
+
+なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが、フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう。特に最近の Windows (8.1) や Mac (OS X) では
+収録文字数が飛躍的に増え、また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう。フォントは PDF へ埋め込むことを基本としてください。非埋め込みで PDF を作成することは推奨されません。
+
+例えば、TeXLive/Windows 8.1 で標準搭載の游明朝・ゴシックを埋め込むように設定するにはコマンド・プロンプトで (tlmgr で jfontmaps パッケージをインストールしておきます)
+
+```
+ kanji-config-updmap yu-win
+```
+
+とします。Mac OS X ではヒラギノを使いましょう。設定については [Mac - TeX Wiki](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Mac) を参照してください。
 
 ### コマンドラインオプション {#tc481bdb}
 
@@ -514,6 +527,20 @@ dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPE
 これに加えて PDF のページも取り込めます。<br>
 通常の EPS はサポートされていないことに注意してください。<br>
 通常の EPS ファイルの取り込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してから取り込みます。<br>
+
+graphicx パッケージを用いて画像を取り込む場合は dvipdfmx オプションをつけて graphicx　パッケージを読み込みます：
+
+```
+ usepackage[dvipdfmx]{graphicx}
+```
+
+また、PDF と JPEG や PNG などのラスタ画像を使う場合は画像の物理的サイズ (ピクセル数ではなく紙媒体に印刷する場合の大きさ) を何らかの形で graphicx パッケージに伝える必要があります。これを行うには \includegraphics で bb オプションを使うか、extractbb プログラムで画像サイズを記載した .xbb ファイルを生成します。extractbb プログラムの自動呼出し機能 (shell-escape) が有効になっていない場合は手動で extractbb を起動し、あらかじめ .xbb ファイルを生成しておく必要があります。これを行うにはターミナル (コマンドプロンプト) から
+
+```
+ extractbb ファイル名
+```
+
+のようにします。あらかじめ作業ディレクトリ (フォルダ) に移動して行います。
 
 dvipdfmx はダウンサンプルは行いません。<br>
 画像を埋め込むとファイルサイズが異様に大きくなるような場合は画像加工ソフトで適切な解像度になるように画像のサイズを調整してください。<br>
@@ -897,6 +924,46 @@ test.dvi -> test.pdf
 
 Output file removed.
 ```
+
+### PDF/X について {#e2cc950a}
+
+今のところ dvipdfmx は PDF/X 出力には対応していませんが、\special コマンドを駆使して PDF/X 準拠を謳った PDF を作成することはできます。ここではその方法を示しますが、<em>自分が何をやっているのかよく理解したうえで行ってください</em>。
+
+```
+ \usepackage{bophook}
+ \AtBeginDocument{
+   \special{pdf:minorversion=3}
+   \special{pdf:put @docinfo <<
+     /Title (タイトル)
+     /Author (著者)
+     /CreationDate (D:20150124111528+09'00')
+     /ModDate (D:20150124111528+09'00')
+     /Trapped /False
+     /GTS_PDFXVersion (PDF/X-1:2001)
+     /GTS_PDFXConformance (PDF/X-1a:2001)
+   >>}
+   \special{pdf:put @catalog << /OutputIntents [ <<
+     /Type /OutputIntent
+     /S /GTS_PDFX
+     /OutputConditionIdentifier (JC200103)
+     /OutputCondition (JC200103 (Japan Color 2001 Coated))
+     /RegistryName (http://www.color.org)
+   >> ] >>}
+ }
+ \AtBeginPage{\special{pdf:put @thispage <<
+     /BleedBox [0 0 595.28 841.89]
+     /TrimBox [0 0 595.28 841.89]
+ >>}}
+```
+
+dvipdfmx には<em>出力結果が PDF/X 準拠かどうか検証したり、準拠するように適切に処理したりする機能はありません</em>。少なくとも以下の点をよく検証してください：
+
+- 色空間: X-1/X-1a では RGB は使用禁止です。CMYK やグレースケールなどを使います。
+- フォント: 必ずすべて埋め込みます。
+- しおりやハイパーリンク: 基本的に禁止です。hyperref は切りましょう。
+- 境界ボックス: MediaBox と TrimBox が適切に設定されていることを確認します。
+
+外部画像はトラブルの元なので特に要注意です。また PostScript と PDF \special は何を引き起こすか分からないので使われていないことを確認しましょう (dvitype で DVI ファイルを検証するとよいでしょう)。
 
 ## 関連リンク {#me536d1a}
 
