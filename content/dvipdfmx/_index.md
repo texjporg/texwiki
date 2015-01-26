@@ -528,13 +528,14 @@ dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPE
 通常の EPS はサポートされていないことに注意してください。<br>
 通常の EPS ファイルの取り込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してから取り込みます。<br>
 
-graphicx パッケージを用いて画像を取り込む場合は dvipdfmx オプションをつけて graphicx　パッケージを読み込みます：
+graphicx パッケージを用いて画像を取り込む場合は dvipdfmx オプションをつけて graphicx パッケージを読み込みます：
 
 ```
- usepackage[dvipdfmx]{graphicx}
+ \usepackage[dvipdfmx]{graphicx}
+ \usepackage{bmpsize}
 ```
 
-また、PDF と JPEG や PNG などのラスタ画像を使う場合は画像の物理的サイズ (ピクセル数ではなく紙媒体に印刷する場合の大きさ) を何らかの形で graphicx パッケージに伝える必要があります。これを行うには \includegraphics で bb オプションを使うか、extractbb プログラムで画像サイズを記載した .xbb ファイルを生成します。extractbb プログラムの自動呼出し機能 (shell-escape) が有効になっていない場合は手動で extractbb を起動し、あらかじめ .xbb ファイルを生成しておく必要があります。これを行うにはターミナル (コマンドプロンプト) から
+PDF と JPEG や PNG などのラスタ画像を使う場合は画像の物理的サイズ (ピクセル数ではなく紙媒体に印刷する場合の大きさ) を何らかの形で graphicx パッケージに伝える必要があります。これを行うには \includegraphics で bb オプションを使うか、他の方法を使う必要があります。上に示した \usepackage{bmpsize} で使用される bmpsize パッケージは，外部プログラムを使用せずに JPEG, PNG, BMP のサイズを計算するので，効率が良いものです。 PDF の場合には，extractbb プログラムで画像サイズを計算します。extractbb プログラムの自動呼出し機能が有効になっている場合には，パイプ機能が使用されるので，.xbb ファイルは作成されません。これが有効になっていない場合は手動で extractbb を起動し、あらかじめ .xbb ファイルを生成しておく必要があります。これを行うにはターミナル (コマンドプロンプト) から
 
 ```
  extractbb ファイル名
