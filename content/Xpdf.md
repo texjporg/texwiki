@@ -61,7 +61,7 @@ Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収�
 - pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
     pdftotext, pdftopng, pdftohtml, pdfdetach
 
-なお,インストールを完成させるには, [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい.
+なお，インストールを完成させるには [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい．
 
 [TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
 
