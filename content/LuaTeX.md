@@ -26,6 +26,18 @@ LuaTeX に関しては以下のページを参照してください．<br>
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
 - [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
 
+W32TeX における LuaTeX, LuaJITTEX と日本語ファイル名
+
+```
+W32TeX における Windows 用 LuaTeX と LuaJITTEX は，最初のオプション
+つまり，C言語の言葉で argv[1] が -cmdx あるいは --cmdx である場合に
+限り，日本語ファイル名を使用することができます。その他の場合には日本語
+ファイル名は使用できません。 -cmdx あるいは --cmdx オプションは argv[1]
+でないところに記述しても害はありませんが，何の効果も無く，単に無視され
+ます。なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定
+です。(2015/01/26 --Akira Kakuto).
+```
+
 ### License {#u58971dd}
 
 [GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
