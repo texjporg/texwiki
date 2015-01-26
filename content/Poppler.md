@@ -11,20 +11,18 @@ pukiwiki: "Poppler"
 
 <img src="http://poppler.freedesktop.org/logo.png" alt="poppler" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
-## Summary {#fd295383}
+## Poppler とは {#u238ad2e}
 
-Poppler is a library used to render PDF documents.<br>
+Poppler は，PDF ドキュメントのレンダリングに利用されるライブラリで，ベースとなった
+[Xpdf](/Xpdf/) に比べてレンダリングが向上されています．
+以下のプログラムが Poppler を使用しています．
 
-Programs using Poppler.<br>
+- LaTeX editor: [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy
+- PDF viewer: [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/) (zathura-pdf-poppler), [qpdfview](/qpdfview/) (pdf-plugin)
 
-<table>
-<tbody>
-<tr><th style="color:#468">LaTeX editor</th><td style="color:#468;background-color:#DDD"><a href="/TeXstudio/">TeXstudio</a>, <a href="/Texmaker/">Texmaker</a>, <a href="/TeXworks/">TeXworks</a>, TexitEasy</td></tr>
-<tr><th style="color:#468">PDF viewer</th><td style="color:#468;background-color:#DDD"><a href="/Evince/">Evince</a>, <a href="/Okular/">Okular</a>, <a href="/zathura/">zathura</a> (zathura-pdf-poppler), <a href="/qpdfview/">qpdfview</a> (pdf-plugin)</td></tr>
-</tbody>
-</table>
+### 公式サイト {#fd295383}
 
 - [Poppler](http://poppler.freedesktop.org/)
 - [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
@@ -41,15 +39,15 @@ Programs using Poppler.<br>
 
 ### font configuration {#e532ec53}
 
-Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます．<br>
-ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．<br>
-GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します．<br>
+Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます．
+ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます．
+GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します．
 
-## Bug {#nbe31c73}
+### Bug {#nbe31c73}
 
 - [poppler does not show fl ligature](https://bugs.freedesktop.org/show_bug.cgi?id=73291) -> Fixed
 
-## Installation {#e0d6f40b}
+## インストール {#e0d6f40b}
 
 ### Windows {#o45a1c30}
 
