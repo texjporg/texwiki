@@ -281,7 +281,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
-フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります(例えば dvipdfmx, Inkscape)．<br>
+フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります（例えば [dvipdfmx](/dvipdfmx/), [Inkscape](/Inkscape/), [ImageMagick](/ImageMagick/) など）．
 これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です．
 
 ### cidfmap の初期設定 {#ra5fe424}
