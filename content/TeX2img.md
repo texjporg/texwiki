@@ -9,13 +9,20 @@ pukiwiki: "TeX2img"
 
 ## TeX2img {#ac311792}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+TeX2img は TeX ソースコードを画像に変換するアプリケーションです．
+しばしば「数式の画像化」ツールとして紹介されますが，実際は「地の文を含めて TeX 文書全体を画像化」することを想定して作られています．
 
-## TeX2img とは {#icba8205}
-
-TeX2img は TeX ソースコードを画像に変換するアプリケーションです．<br>
-しばしば「数式の画像化」ツールとして紹介されますが，実際は「地の文を含めて TeX 文書全体を画像化」することを想定して作られています．<br>
 奥村先生の [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) には，Windows版/Mac版が標準インストールソフトウェアとしてバンドルされています．
+
+<strong>目次</strong>
+
+### お知らせ {#icba8205}
+
+Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくインストールされていることが必要です．
+Windows 版はオプションで [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．
+Mac 版は OS X 標準の画像処理 API を活用します．
+
+### 公式サイト {#e679cd40}
 
 - [TeX2img](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
 - [TeX2img](http://island.geocities.jp/loveinequality/) (Mac 版)
@@ -48,7 +55,7 @@ Windows, OS X
 
 ### 出力形式 {#n63a1aac}
 
-入力した TeX ソースコードを TeX でコンパイルして，次のような形式の画像で出力します．<br>
+入力した TeX ソースコードを TeX でコンパイルして，次のような形式の画像で出力します．
 出力した画像は Word/Excel/PowerPoint/Illustrator/InDesign 等に貼り付けて利用可能です．
 
 - アウトラインをとった EPS ファイル
