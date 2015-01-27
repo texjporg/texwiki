@@ -164,7 +164,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 ### キリルアルファベットの追加 {#p1435221}
 
 - キリルアルファベット系で OT2 フォントエンコーディング指定した際に使用される
-    wn\* フォントに関しては，残念ながら cm-super に Type 1 フォントが
+    wn\* フォントに関しては，残念ながら [cm-super](/cm-super/) に Type 1 フォントが
     用意されていません。先に挙げた例でテストする場合には，さらに
     「[『［改訂第3版］ LaTeX2e 美文書作成入門』付録J章サポートページ](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/bibunsho3_j_support.html)」
     にある[bibunj-cyrillic.map](http://web.archive.org/web/20060224113834/http://www.lg.fukuoka-u.ac.jp/~ynagata/j_support/bibunj-cyrillic.map),
