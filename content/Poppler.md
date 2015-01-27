@@ -11,6 +11,8 @@ pukiwiki: "Poppler"
 
 <img src="http://poppler.freedesktop.org/logo.png" alt="poppler" style="float:right">
 
+<!-- インストールの項より下は，もう少し見やすくならないでしょうか… -->
+
 <strong>目次</strong>
 
 ## Poppler とは {#u238ad2e}
