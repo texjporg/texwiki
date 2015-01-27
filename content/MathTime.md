@@ -273,8 +273,8 @@ rmtmuh     rmtmuh.pfb     0      1
 \end{document}
 ```
 
-T1エンコーディングの場合，Computer Modernフォントを使うとそのままではビットマップになります。<br>
-Latin Modern フォント・パッケージを入れるか，cm-super を入れる，ae パッケージを使う等の手が必要です。<br>
+T1 エンコーディングの場合，Computer Modern フォントを使うとそのままではビットマップになります。<br>
+[Latin Modern](</Latin Modern/>) フォント・パッケージを入れるか，[cm-super](/cm-super/) を入れる，ae パッケージを使う等の手が必要です。<br>
 
 オプションの意味などは，mathtime.dtx を LaTeX
 で処理して得られるドキュメントに詳しく書かれています。
