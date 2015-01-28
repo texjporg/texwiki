@@ -13,27 +13,29 @@ pukiwiki: "LuaJITTeX"
 
 ## LuaJITTeX とは {#u3c93cbf}
 
-LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を [LuaJIT](http://luajit.org/) に置き換えたものです.<br>
+LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を LuaJIT に置き換えたものです．
 
-- [FusionForge: LuaJITTeX: Project Home](https://foundry.supelec.fr/projects/luajittex/)
+- [http://www.ntg.nl/pipermail/ntg-context/2014/076633.html](http://www.ntg.nl/pipermail/ntg-context/2014/076633.html)
+
+上のように現在では LuaTeX と共通のソースとなっています．
 
 ### License {#a9b7759e}
 
-[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luajittex)
+[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
 
 ### ChangeLog {#s3ef1408}
 
-- [FusionForge: LuaJITTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luajittex)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luajittex&view=log)
+- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
 
 ## インストール {#e0acc4f5}
 
-TeX Live 2014, W32TeX に含まれています．<br>
-[LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．<br>
+TeX Live 2014, W32TeX に含まれています．
+[LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．
 
 ## 使い方 {#vad7d54e}
 
-LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．<br>
+LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
 
 ### Windows {#b1c497b6}
 
