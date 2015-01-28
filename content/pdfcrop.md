@@ -7,22 +7,20 @@ pukiwiki: "pdfcrop"
 
 # pdfcrop
 
-## pdfcrop {#pdcba349}
+## [pdfcrop](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html) {#pdcba349}
 
-pdfcrop は，PDF の余白をクロップ/付与する Perl スクリプトです．<br>
-TeX Live, W32TeX に含まれていますが，W32TeX の場合は別途 Perl インタプリタが必要です．<br>
-
-- [pdfcrop](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html)
+pdfcrop は，PDF の余白をクロップ/付与する [Perl](/Perl/) スクリプトです．
+TeX Live, W32TeX に含まれていますが，W32TeX の場合は別途 Perl インタプリタが必要です．
 
 ### pdfcrop の内部処理 {#n52bff22}
 
 pdfcrop は大まかには
 
-1. Ghostscript によってオリジナルの PDF のバウンディングボックス情報を取得する．
-1. TeX 文書を作成し，オリジナルの PDF を画像として取り込む．<br>
+1. [Ghostscript](/Ghostscript/) によってオリジナルの PDF のバウンディングボックス情報を取得する．
+1. TeX 文書を作成し，オリジナルの PDF を画像として取り込む．
     このとき，パラメータを設定して余分な空白を取り除く．
 
-1. pdfTeX によって TeX 文書を処理し，PDF を生成する．
+1. [pdfTeX](/pdfTeX/) によって TeX 文書を処理し，PDF を生成する．
 
 という作業を行っています．
 
