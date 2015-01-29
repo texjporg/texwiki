@@ -131,6 +131,10 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 
 - [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照．
 
+## お知らせ {#m0130ecc}
+
+- [［改訂第6版］LaTeX2e 美文書作成入門サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています．
+
 ## 関連リンク {#fb8962ad}
 
 - [http://www.ctan.org/tex-archive/support/xpdf](http://www.ctan.org/tex-archive/support/xpdf)
