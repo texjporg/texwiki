@@ -41,9 +41,8 @@ pukiwiki: "秀丸エディタ"
 - 学生（[アカデミックフリー個人](http://hide.maruo.co.jp/support/hmfree1.html)・[アカデミックフリー団体](http://hide.maruo.co.jp/support/hmfree2.html)）
 - [フリーソフトウェア作者](http://hide.maruo.co.jp/support/hmfree3.html)
 - [ウィンドウズ関係の書籍や雑誌の著者](http://hide.maruo.co.jp/support/hmfree4.html)
-    です．
 
-- [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
+です．[秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)を参照してください．
 
 ## 標準のエンコードの種類 → Unicode(UTF-8) を選択する {#m676962a}
 
