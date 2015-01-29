@@ -58,7 +58,7 @@ Unicode(UTF-8) を選択します．
 　　　　　☑日本語(EUC)<br>
 　　　　　☑日本語(JIS)<br>
 　　　　複数のエンコードの種類に適合する場合(M):<br>
-　　　　　　(●)最初に確定したものにする<br>
+　　　　　　🔘最初に確定したものにする<br>
 　　　　　　◯優先順位に従う（２回読み込みが働くことがあります）<br>
 　　　　　　◯候補の一覧を表示<br>
 　　　☑XML宣言の認識(X)　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　標準のエンコードの種類(D)...　\]</span><br>
