@@ -10,11 +10,11 @@ pukiwiki: "秀丸エディタ"
 
 ## [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) {#z8c2c3a5}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## 秀丸エディタとは {#w73ea51b}
 
-秀丸エディタは国産のテキストエディタです。 (シェアウェア)
+秀丸エディタは国産のテキストエディタ（シェアウェア）です．
 
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
@@ -26,7 +26,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 動作環境 {#d2be5bb8}
 
-[秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) を参照．<br>
+[秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) を参照．
 
 ### ChangeLog {#k3ce2677}
 
@@ -35,16 +35,20 @@ pukiwiki: "秀丸エディタ"
 
 ## 秀丸エディタフリー制度 {#faebc82e}
 
-秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります。<br>
-対象は，学生([アカデミックフリー個人](http://hide.maruo.co.jp/support/hmfree1.html)/[アカデミックフリー団体](http://hide.maruo.co.jp/support/hmfree2.html))・[フリーソフトウェア作者](http://hide.maruo.co.jp/support/hmfree3.html)・[ウィンドウズ関係の書籍や雑誌の著者](http://hide.maruo.co.jp/support/hmfree4.html)
-です。<br>
+秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります．
+対象は
+
+- 学生（[アカデミックフリー個人](http://hide.maruo.co.jp/support/hmfree1.html)・[アカデミックフリー団体](http://hide.maruo.co.jp/support/hmfree2.html)）
+- [フリーソフトウェア作者](http://hide.maruo.co.jp/support/hmfree3.html)
+- [ウィンドウズ関係の書籍や雑誌の著者](http://hide.maruo.co.jp/support/hmfree4.html)
+    です．
 
 - [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)
 
 ## 標準のエンコードの種類 → Unicode(UTF-8) を選択する {#m676962a}
 
-秀丸エディタの標準のエンコードの種類は初期設定では日本語(Shift-JIS)です．<br>
-Unicode(UTF-8) を選択します．<br>
+秀丸エディタの標準のエンコードの種類は初期設定では日本語(Shift-JIS)です．
+Unicode(UTF-8) を選択します．
 
 ***
 
@@ -72,15 +76,15 @@ Unicode(UTF-8) を選択します．<br>
 　　　　エンコードの種類(C) :　<span style="color:Black;background-color:#EEEEEE;">\[Unicode(UTF-8)　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　改行コード(R) :　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　　BOMの有無 :　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　標準のエンコードの種類は、自動判定できなかった場合と、新規作成時<br>
-　　　とASCIIのファイルに適用されます。<br>
+　　　標準のエンコードの種類は，自動判定できなかった場合と，新規作成時<br>
+　　　とASCIIのファイルに適用されます．<br>
 
 ***
 
 ## 行番号の計算方法 {#kfec9023}
 
-デフォルトでは行番号の計算方法がワープロ的（折り返しも１行とする）になっています．<br>
-TeX で文書を作成する場合は行番号の計算方法をエディタ的（改行だけを数える）に変更します．<br>
+デフォルトでは行番号の計算方法がワープロ的（折り返しも1行とする）になっています．
+TeX で文書を作成する場合は行番号の計算方法をエディタ的（改行だけを数える）に変更します．
 
 ## 正規表現 {#f7fa3efd}
 
