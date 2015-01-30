@@ -59,11 +59,15 @@ Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収�
 以下が利用できます：
 
 - pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
-    pdftotext, pdftopng, pdftohtml, pdfdetach
+    pdftotext, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
 
 なお，インストールを完成させるには [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい．
 
-[TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
+[TeX Live](</TeX Live/>) win32 には
+
+- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext (ver. 3.03)
+
+が含まれています. ただし, サポートファイル等は含まれていません.
 
 [CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，
 ビルド済みバイナリのアーカイブが入手できます．
