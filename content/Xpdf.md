@@ -26,7 +26,7 @@ pukiwiki: "Xpdf"
 <!-- // // Windows の TeX Live の場合を追記しました． -->
 <!-- // // セットアップ方法の追記をお願いします． -->
 
-### 目次 {#ma1fb0b0}
+<strong>目次</strong>
 
 ### 公式サイト {#t19ccac8}
 
@@ -40,12 +40,12 @@ GPLv3, GPLv2
 
 PDF ビューアである xpdf のほかに，次のようなツールが存在します．
 
-- pdfimages ： PDF から画像を抽出する
 - pdffonts ： PDF のフォント情報を表示
+- pdfimages ： PDF から画像を抽出する
 - pdfinfo ： PDF の文書情報を表示
 - pdftops ： PDF を [PostScript](/PostScript/) ファイルに変換
-- pdftoppm ： PDF を PPM 画像形式に変換
 - pdftotext ： PDF からテキストを抽出
+- pdftoppm ： PDF を PPM 画像形式に変換
 - pdftopng ： PDF の各ページを PNG に変換
 - pdftohtml ： PDF を HTML に変換
 - pdfdetach ： PDF にアタッチされた部分をファイルとして抜き出すプログラム
@@ -58,8 +58,8 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています．
 以下が利用できます：
 
-- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
-    pdftotext, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
+- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
+    pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
 
 なお，インストールを完成させるには [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい．
 
@@ -67,7 +67,7 @@ Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収�
 
 - pdffonts, pdfimages, pdfinfo, pdftops, pdftotext (ver. 3.03)
 
-が含まれています. ただし, サポートファイル等は含まれていません.
+が含まれています. ただし，サポートファイル等は含まれていません．
 
 [CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，
 ビルド済みバイナリのアーカイブが入手できます．
@@ -91,8 +91,8 @@ export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
 既に言語設定は済んでいるので，特別な操作は不要です．
 以下が利用可能になります：
 
-- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
-    pdftotext, pdfdetach
+- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
+    pdftoppm, pdfdetach
 
 #### パッケージ管理システムを用いる方法 {#sc414cd6}
 
@@ -121,8 +121,8 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 と追記します．
 これで以下が利用可能になります：
 
-- pdfimages, pdffonts, pdfinfo, pdftops, pdftoppm,
-    pdftotext, pdfdetach
+- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
+    pdftoppm, pdfdetach
 
 % MacPorts の場合は，どうやらバイナリ名に接頭語 xpdf- が付いている…？ Homebrew のほうは使ったことがありません．
 
