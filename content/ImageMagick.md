@@ -13,6 +13,7 @@ ImageMagick は，ビットマップ画像を操作したり変換したりす�
 [PostScript](/PostScript/) 形式の画像 (EPS, PS, etc.) の読み書きには別途 [Ghostscript](/Ghostscript/) のインストールが必要です．
 
 [TeX2img](/TeX2img/) の Windows 版で（オプションではありますが）利用されています．
+また，奥村先生の [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) では，Windows と Mac で標準インストールソフトウェアに含まれています（Mac 版は convert コマンドのみ）．
 
 <strong>目次</strong>
 
