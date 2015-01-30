@@ -22,6 +22,12 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 - [http://www.mathjax.org/](http://www.mathjax.org/)
 - [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
 
+### KaTeX {#kf09ac9a}
+
+[KaTeX - TeX Wiki](/KaTeX/) も参照．
+
+- [http://khan.github.io/KaTeX/](http://khan.github.io/KaTeX/)
+
 ### mathTeX {#he6333d4}
 
 - [http://www.forkosh.com/mathtex.html](http://www.forkosh.com/mathtex.html)
