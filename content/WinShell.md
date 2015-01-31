@@ -13,8 +13,10 @@ pukiwiki: "WinShell"
 
 - エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
+    [^1]
 
-などの問題があります．このため，現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています．
+などの問題があります．このため，とりわけ日本語文書を作成する際に致命的な問題が発生します．
+現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）．
 
 以下の情報はアーカイブとして残しておきます．
 極力削除はお控えください．[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます．
@@ -22,7 +24,7 @@ pukiwiki: "WinShell"
 <!-- とりあえず復活させてみました．「設定」以下はバックアップから取得したものに手を付けていません． -->
 <!-- 特にこのページの「ShiftJIS のダメ文字」の記述は，WinShell に限らず一般論として価値がありますよね？ -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## WinShell とは {#s864df7d}
 
@@ -84,7 +86,7 @@ Adobe Reader でないと確認できない PDF ファイルを作成する場�
 - [WinShellのCannot start AcrobatReader or open the document.](http://d.hatena.ne.jp/imasusen/20131128/1385574812)
 
 WinShell 3.3.2.6 は Adobe Reader XI, Adobe Acrobat XI, SumatraPDF の DDE に対応しています．
-[^1]
+[^2]
 これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します．
 ただし，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
 
@@ -100,7 +102,7 @@ AcroViewR11
 ```
 
 に修正することで解消できます．
-[^2]
+[^3]
 
 DDE を使用する場合は PDFView を以下のように設定します．
 
@@ -842,5 +844,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
 
-[^1]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．
-[^2]: レジストリの編集には危険が伴う場合があります．自信のない場合は控えるなど，十分ご注意ください．
+[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします．
+[^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．
+[^3]: レジストリの編集には危険が伴う場合があります．自信のない場合は控えるなど，十分ご注意ください．
