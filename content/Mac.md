@@ -159,24 +159,24 @@ TeX Live のインストールに関しては
 <span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2014 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>“Macintosh HD”に標準インストール</strong><br>
-
-<br>
-
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に 4.62 GB の領域が必要です。<br>
 　　<span style="color:#555555;">●</span> <strong>はじめに</strong><br>
 
 <br>
 
-　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に 4.62 GB の領域が必<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　要です。<br>
-　　<span style="color:#555555;">●</span> <strong>使用許諾契約</strong><br>
+　　<span style="color:#555555;">●</span> <strong>大切な情報</strong><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　このコンピュータのすべてのユーザが使用できるようにこのソフ<br>
+　　<span style="color:#555555;">●</span> <strong>使用許諾契約</strong>　　　　　　　　　　　　　　　　　　　　　　　トウェアを標準インストールするには、“インストール”をクリッ<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　クしてください。このコンピュータのすべてのユーザがこのソフ<br>
+　　<span style="color:#555555;">●</span> <strong>インストール先</strong>　　　　　　　　　　　　　　　　　　　　　　　トウェアを使用出来るようになります。<br>
 
 <br>
 
-　　<span style="color:#555555;">●</span> <strong>インストール先の選択</strong>　　　　　　　　　　　　　　　　　　　　このコンピュータのすべてのユーザが使用できるよう<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　にこのソフトウェアを標準インストールするには、“イ<br>
-　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong>　　　　　　　　　　　　　　　　　　　　　 ンストール”をクリックしてください。このコンピュー<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　タのすべてのユーザがこのソフトウェアを使用出来る<br>
-　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>インストール</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　ようになります。<br>
+　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong><br>
+
+<br>
+
+　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>インストール</strong></span><br>
 
 <br>
 
@@ -218,7 +218,7 @@ Homebrew または MacPorts で Ghostscript をインストールする場合は
 
 <br>
 
-　　<span style="color:#555555;">●</span> <strong>インストール先の選択</strong><br>
+　　<span style="color:#555555;">●</span> <strong>インストール先</strong><br>
 
 <br>
 
