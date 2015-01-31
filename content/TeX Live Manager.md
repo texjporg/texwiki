@@ -9,20 +9,21 @@ pukiwiki: "TeX Live Manager"
 
 ## TeX Live Manager {#l32e41e6}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## TeX Live Manager とは {#e10391ba}
 
-TeX Live Manager は TeX Live のパッケージ管理ツールです．<br>
-TeX Live をインストールすると TeX Live Manager もインストールされます．<br>
+TeX Live Manager は [TeX Live](</TeX Live/>) のパッケージ管理ツールです．
+（OS X では [TeX Live Utility](</TeX Live Utility/>) という名称です．）
+TeX Live をインストールすると TeX Live Manager もインストールされます．
 Windows PowerShell またはコマンド プロンプトから
 
 ```
 tlmgr-gui
 ```
 
-を実行すると TeX Live Manager が起動します．<br>
-コマンドラインでパッケージ管理する場合は [tlmgr](/tlmgr/) を使用します．<br>
+を実行すると TeX Live Manager が起動します．
+コマンドラインでパッケージ管理する場合は [tlmgr](/tlmgr/) を使用します．
 
 ***
 
