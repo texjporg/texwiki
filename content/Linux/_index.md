@@ -31,9 +31,9 @@ Linux で TeX 環境を構築するには，2つの方法があります．
 
 以下では，パッケージ管理システムを使わずに TeX 環境を構築する方法を説明します．
 
-### [TeX Live](</TeX Live/>) <a id="texlive"></a> {#d212a0d5}
+### [TeX Live](</TeX Live/>) {#texlive}
 
-#### TeX Live のインストール <a id="texliveinstall"></a> {#i0a1ca9a}
+#### TeX Live のインストール {#texliveinstall}
 
 TeX Live のインストールガイド
 
@@ -42,7 +42,7 @@ TeX Live のインストールガイド
 
 に従えばよいですが，このページでもネットワークインストーラを使う場合について簡単に説明します．
 
-まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
+まず，[ミラーサイト](</TeX Live/#qf59e3ea>)から install-tl-unx.tar.gz をダウンロードします．
 
 - wget を使用する場合
 
@@ -97,7 +97,7 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．
+再開できない場合は[接続先を変更](</TeX Live/#qf59e3ea>)するか，または [ISO ファイル](</TeX Live/#id0ad572>)をミラーサイトからダウンロードしてインストールしてください．
 
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
 
