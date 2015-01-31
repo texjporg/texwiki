@@ -44,7 +44,7 @@ GPLv3
 
 ## TeX Live <a id="texlive"></a> {#dead7b03}
 
-Cygwin で TeX Live を使用する場合は
+Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
 
 - TeX Live 公式パッケージ
 - TeX Live/Cygwin
@@ -61,7 +61,7 @@ Cygwin で TeX Live を使用する場合は
 
 を参照．<br>
 
-[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+[ミラーサイト](</TeX Live/#qf59e3ea>)から install-tl-unx.tar.gz をダウンロードします．<br>
 
 ```
 $ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
@@ -105,7 +105,7 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
+再開できない場合は[接続先を変更](</TeX Live/#qf59e3ea>)するかまたは [ISO ファイル](</TeX Live/#id0ad572>)をミラーサイトからダウンロードしてインストールしてください．<br>
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
 ```
