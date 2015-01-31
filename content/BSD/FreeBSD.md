@@ -11,8 +11,6 @@ pukiwiki: "BSD/FreeBSD"
 
 ## [FreeBSD](http://www.freebsd.org) {#r05903ba}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/thumb/d/df/Freebsd_logo.svg/500px-Freebsd_logo.svg.png" alt="FreeBSD" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## FreeBSD とは {#o8689db1}
