@@ -9,6 +9,9 @@ pukiwiki: "tlmgr"
 
 ## tlmgr {#y0e2a3d4}
 
+tlmgr は [TeX Live](</TeX Live/>) のパッケージ管理ツールで，コマンドラインで使用します．
+GUI 版としては Windows の [TeX Live Manager](</TeX Live Manager/>) や OS X の [TeX Live Utility](</TeX Live Utility/>) もあります．
+
 ### 使い方 {#nbbacf1d}
 
 - [http://www.tug.org/texlive/tlmgr.html](http://www.tug.org/texlive/tlmgr.html)
@@ -18,7 +21,7 @@ pukiwiki: "tlmgr"
 
 #### アップデート {#xb3b4aaa}
 
-コマンドラインから以下のコマンドを実行します．<br>
+コマンドラインから以下のコマンドを実行します．
 
 ■ Windows, Cygwin の場合
 
