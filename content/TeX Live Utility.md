@@ -13,15 +13,16 @@ pukiwiki: "TeX Live Utility"
 
 <!-- #ref(http://community.sabayon.org/ugc/app-text/texlive-core/tex-live-utility-icon.png,right,around,nolink,TeX Live Utility) -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ### TeX Live Utility とは {#n3457ddb}
 
-TeX Live のパッケージ管理などができる TeX Live Manager（tlmgr）の OS X ネイティブの GUI ユーティリティ。<br>
-[MacTeX](/Mac/#mactex) をインストールすると、アプリケーションフォルダの TeX フォルダの中にインストールされます。<br>
-TeX Live に随時追加・アップデートされるパッケージなどを個別またはまとめてインストール（アップデート）したり、その説明ドキュメントを読めます。（とくに後者の機能はコマンドラインのtlmgrに比べて優れています。）<br>
-デフォルトの紙面サイズも設定できます。<br>
-うまく動作しない場合は、リポジトリ アドレスを別のミラーサイトに変更してみてください。
+TeX Live のパッケージ管理などができる [TeX Live Manager](</TeX Live Manager/>) ([tlmgr](/tlmgr/)) の OS X ネイティブの GUI ユーティリティです．
+[MacTeX](/Mac/#mactex) をインストールすると，アプリケーションフォルダの TeX フォルダの中にインストールされます．
+
+TeX Live に随時追加・アップデートされるパッケージなどを個別またはまとめてインストール（アップデート）したり，その説明ドキュメントを読めます（とくに後者の機能はコマンドラインの tlmgr に比べて優れています）．
+デフォルトの紙面サイズも設定できます．
+うまく動作しない場合は，リポジトリ アドレスを別のミラーサイトに変更してみてください．
 
 - [https://github.com/amaxwell/tlutility](https://github.com/amaxwell/tlutility)
 - [TeX Live Utility - Mac OS X GUI for TeX Live Manager](https://code.google.com/p/mactlmgr/) (and for MacTeX)
