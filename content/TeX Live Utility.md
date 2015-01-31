@@ -7,11 +7,7 @@ pukiwiki: "TeX Live Utility"
 
 # TeX Live Utility
 
-## [TeX Live Utility](https://github.com/amaxwell/tlutility) {#iead361a}
-
-<img src="http://community.sabayon.org/ugc/dev-texlive/texlive-basic/tex-live-utility-icon.png" alt="TeX Live Utility" style="float:right">
-
-<!-- #ref(http://community.sabayon.org/ugc/app-text/texlive-core/tex-live-utility-icon.png,right,around,nolink,TeX Live Utility) -->
+## [TeX Live Utility](http://amaxwell.github.io/tlutility/) {#iead361a}
 
 <strong>目次</strong>
 
@@ -24,60 +20,14 @@ TeX Live に随時追加・アップデートされるパッケージなどを�
 デフォルトの紙面サイズも設定できます．
 うまく動作しない場合は，リポジトリ アドレスを別のミラーサイトに変更してみてください．
 
+- [http://amaxwell.github.io/tlutility/](http://amaxwell.github.io/tlutility/)
 - [https://github.com/amaxwell/tlutility](https://github.com/amaxwell/tlutility)
-- [TeX Live Utility - Mac OS X GUI for TeX Live Manager](https://code.google.com/p/mactlmgr/) (and for MacTeX)
 
-### リリース情報/ChangeLog {#d0019337}
+### リリース情報 {#d0019337}
+
+- [https://github.com/amaxwell/tlutility/releases](https://github.com/amaxwell/tlutility/releases)
+- [https://github.com/amaxwell/tlutility/tags](https://github.com/amaxwell/tlutility/tags)
+
+### ChangeLog {#l3e78d70}
 
 - [https://github.com/amaxwell/tlutility/commits/master](https://github.com/amaxwell/tlutility/commits/master)
-
-### スクリーンショット {#v6ad40b0}
-
-<!-- &ref(http://a.yfrog.com/img878/9286/vc7c.png,around,nolink,TeX Live Utility); -->
-
-***
-
-<span style="color:#595857;background-color:#DFDFDF;">　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#C9C9C9;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX Live ユーティリティ</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:Black;background-color:#DFDFDF;">　　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[&#x1f3e1;\]</ins></span>　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[&#x68;ttp://... 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</ins></span>　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[&#x1f50d; dvi　　　　　　　　　　　　\]</ins></span>　</span><br>
-
-<span style="color:Black;background-color:#DFDFDF;"><ins>　　ホーム　　　　　　　　　　　　　　リポジトリ アドレス　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　検索　　　　　　　　</ins></span><br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:Black;background-color:White;">\[　<strong>更新分</strong>　\]</span><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>パッケージ</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>バックアップ</strong>　\]</span></ins><br>
-パッケージ　　　　　　　　　｜説明　　　　　　　　　　　　　　　　　　　　　　　　　　　　　｜状態<br>
-▶<span style="color:#BA55E3;">dtl　　　　　　　　　　　　　　Tools to dis-assemble and re-assemble DVI files.　　　　 混在</span><br>
-▶<span style="color:#BA55E3;">dvi2tty　　　　　　　　　　　Produce ASCII from DVI.　　　　　　　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dviasm　　　　　　　　　　　A utility for editing DVI files.　　　　　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dvicopy　　　　　　　　　　Copy DVI files, flattening VFs.　　　　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dvidvi　　　　　　　　　　　Convert one DVI file into another.　　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dviljk　　　　　　　　　　　　DVI to Laserjet output.　　　　　　　　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dvipdfm　　　　　　　　　　A DVI driver to produce PDF directly.　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dvipng　　　　　　　　　　　A fast DVI to PNG/GIF converter.　　　　　　　　　　　　　混在</span><br>
-▶<span style="color:#BA55E3;">dvipos</span><br>
-▶<span style="color:#BA55E3;">dvips　　　　　　　　　　　　A DVI to PostScript driver.　　　　　　　　　　　　　　　　　 混在</span><br>
-▶<span style="color:#BA55E3;">dvisvgm　　　　　　　　　　Converts DVI files to Scalable Vector Graphics for...　　 混在</span><br>
-▶<span style="color:#BA55E3;">purifyeps　　　　　　　　　　Make EPS work with both LaTeX/dvips and pdfLaTeX.　混在</span><br>
-▶<span style="color:#BA55E3;">seetexk　　　　　　　　　　　Utilities for manipulating DVI files.　　　　　　　　　　　　　 混在</span><br>
-▶<span style="color:#BA55E3;">thumbpdf　　　　　　　　　　Thumbnails for pdfTeX and dvips/ps2pdf.　　　　　　　　 混在</span><br>
-▶<span style="color:#BA55E3;background-color:#505050;">xdvi　　　　　　　　　　　　　A DVI previewer for the X Window System.　　　　　　　 混在　　　　　　　　　　　　　　　　　　　　　　</span><br>
-　<span style="color:#0000CD;">dviout.win32　　　　　　　　TeX previewer and printer driver for MS-Windows. 　　導入されていません</span><br>
-　breakurl　　　　　　　　　　　Line breakable \url-like links in hyperref when co...　　導入済<br>
-　dviincl　　　　　　　　　　　　Include DVI page into MetaPost output.　　　　　　　　　導入済<br>
-　dvipdfmx　　　　　　　　　　An extended version of dvipdfm.　　　　　　　　　　　　　　導入済<br>
-　dvipdfmx-def<br>
-　dvipsconfig　　　　　　　　　Collection of dvips PostScript headers.　　　　　　　　　導入済<br>
-　grfpaste　　　　　　　　　　　Include fragments of a dvi file.　　　　　　　　　　　　　　導入済<br>
-　hypdvips　　　　　　　　　　Hyperref extensions for use with dvips.　　　　　　　　　導入済<br>
-　srcltx　　　　　　　　　　　　Jump between DVI and TeX files.　　　　　　　　　　　　 導入済<br>
-　tree-dvips　　　　　　　　　Trees and other linguists' macros.　　　　　　　　　　　　導入済<br>
-
-***
-
-<br>
-
-<table>
-<tbody>
-<tr><td style="text-align:center"><ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">[</span>　<strong>更新分</strong>　<span style="color:#0F7FFF;">]</span></span><span style="color:Black;background-color:White;">[　<strong>パッケージ</strong>　]</span><span style="color:Black;background-color:White;">[　<strong>バックアップ</strong>　]</span></ins></td><td style="text-align:center"><span style="color:Black;background-color:White;">[　<strong>更新分</strong>　]</span><ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">[</span>　<strong>パッケージ</strong>　<span style="color:#0F7FFF;">]</span></span><span style="color:Black;background-color:White;">[　<strong>バックアップ</strong>　]</span></ins></td><td style="text-align:center"><ins><span style="color:Black;background-color:White;">[　<strong>更新分</strong>　]</span><span style="color:Black;background-color:White;">[　<strong>パッケージ</strong>　]</span><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">[</span>　<strong>バックアップ</strong>　<span style="color:#0F7FFF;">]</span></span></ins></td></tr>
-<tr><td><img src="http://mactlmgr.googlecode.com/svn/wiki/images/UpdateTab.png" alt="更新分"></td><td><img src="http://mactlmgr.googlecode.com/svn/wiki/images/PackageTab.png" alt="パッケージ"></td><td><img src="http://mactlmgr.googlecode.com/svn/wiki/images/BackupTab.png" alt="バックアップ"></td></tr>
-</tbody>
-</table>
