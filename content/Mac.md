@@ -136,7 +136,7 @@ TeX Live のインストールに関しては
         - <strong>ターミナル初心者への注意：</strong> 上記コマンドの先頭の <strong>$</strong> はターミナルを起動すると示される「コマンド入力待ちの記号（プロンプト）」を表します。従って、実際に入力するのは echo $PATH です。
         - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)からインストールした場合など、別途 Ghostscript をインストールして使用する場合は、そのために改めてパスを通す必要があるかもしれません。
         - 以前に MacPorts または Fink からインストールした TeX が残っている場合は、パスの優先順位の再設定が必要です。（→[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
-1. ターミナル上で sudo tlmgr update --self --all または tlmgr の GUI アプリケーションである TeX Live Utility を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
+1. ターミナル上で sudo tlmgr update --self --all または [tlmgr](/tlmgr/) の GUI アプリケーションである [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
 1. MacTeX-2014 の場合は texmf.cnf を編集して、利便性を高める設定をします。 (→[texmf.cnf への extractbb などの追加](/Mac/#h357d047))
     - texmf.cnf の shell_escape_commands のリストに extractbb を加えることで、dvipdfmx 用の Bounding Box を作成するコマンド extractbb の実行を自動化できます。
 1. 日本語環境を整えます。
@@ -278,7 +278,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 - [TeX Live Utility](</TeX Live Utility/>)
 
-> tlmgr（TeX Live Manager）の OS X ネイティブの GUI アプリケーション。<br>
+> [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の OS X ネイティブの GUI アプリケーション。<br>
 > 最初の起動時に、最新版へのアップデートを促されます。<br>
 > 複数のリポジトリを並行管理できます。<br>
 
@@ -372,7 +372,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 - 「システム環境設定」の TeX Distribution を開き，ディストリビューション名をダブルクリックすると，よくアクセスするであろうフォルダ（ディレクトリ）へのエイリアス（ソフトリンク）がまとめられています。<br>
     AllTexmf (texmf, texmf-dist, texmf-local, texmf-var), Doc, Info, Man, Programs, Resources, Root, TexmfLocal, TexmfSysVar
 
-### tlmgr を使用してのアップデート {#p3c663c9}
+### [tlmgr](/tlmgr/) を使用してのアップデート {#p3c663c9}
 
 ターミナルで、以下のコマンドを実行します。<br>
 
@@ -382,7 +382,7 @@ $ sudo tlmgr update --self --all
 
 &#x2d;-self は tlmgr 自体のアップデート、--all は TeX Live 構成要素のアップデートを実行します。<br>
 tlmgr は複数のリポジトリを管理できます。<br>
-TeX Live Utility は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。<br>
+[TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。<br>
 
 ### texmf.cnf への extractbb などの追加 {#h357d047}
 
