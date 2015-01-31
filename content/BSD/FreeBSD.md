@@ -17,7 +17,7 @@ pukiwiki: "BSD/FreeBSD"
 
 ## FreeBSD とは {#o8689db1}
 
-FreeBSD はオープンソースの Unix 系オペレーティングシステムです．<br>
+FreeBSD はオープンソースの Unix 系オペレーティングシステムです．
 
 - [The FreeBSD Project](http://www.freebsd.org)
 - [The FreeBSD Project (ja)](http://www.freebsd.org/ja/)
@@ -46,7 +46,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 - ports を使わずに TeX Live の公式パッケージをインストールする
 - ports を使って TeX Live をインストールする
-    - 日本語環境は print/texlive-full と japanese/tex-ptex をインストールすることで，従来のpLaTeXやdvipdfmxと同名同等のコマンドが利用できるようになる (/etc/make.conf にて TEX_DEFAULT=texlive と書いておくほうが良いでしょう）
+    - 日本語環境は print/texlive-full をインストールすることで，従来の pLaTeX や dvipdfmx と同名同等のコマンドが利用できるようになる
 
 方法があります．
 
@@ -60,7 +60,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 を参照．<br>
 
-[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+[ミラーサイト](</TeX Live/#qf59e3ea>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
 $ sudo pkg install wget
@@ -105,7 +105,7 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するかまたは [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
+再開できない場合は[接続先を変更](</TeX Live/#qf59e3ea>)するか，または [ISO ファイル](</TeX Live/#id0ad572>)をミラーサイトからダウンロードしてインストールしてください．<br>
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
 
 ```
@@ -121,7 +121,7 @@ $ sudo tlmgr update --self --all
 ```
 
 を実行すれば OK です．<br>
-（Portsでインストールした場合は tlmgr は使えないようにしているそうです．
+（Ports でインストールした場合は [tlmgr](/tlmgr/) は使えないようにしているそうです．
 こちらを参照:
 [http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html](http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html) ）
 
@@ -212,10 +212,6 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 
 Portsですので，
 make &amp;&amp; make installで導入できます．<br>
-
-TeXlive と共存しないものが存在する場合は Makefile 中の変数 USE_TEX の中身を確認してください．<br>
-USE_TEXの値の意味については，[/usr/ports/Mk/bsd.tex.mk](http://svnweb.freebsd.org/ports/head/Mk/bsd.tex.mk?view=markup) から参照できます．<br>
-なお，bsd.tex.mkはUSE_TEXが定義されていればbsd.port.mk中でincludeされるため，別途読み込む必要はありません．<br>
 
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
