@@ -101,41 +101,6 @@ $ sudo tlmgr update --self --all
 にパッケージのバックアップが保存されます．<br>
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
 
-#### extractbb の追加 <a id="extractbb"></a> {#n9c02387}
-
-TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/texlive/texmf-local
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
-
-```
-$ sudo mkdir -p /usr/local/texlive/texmf-local/web2c
-$ sudo touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,xindy,\
-mpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
-
 #### フォント埋め込みの設定 {#b1f1c8d3}
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
