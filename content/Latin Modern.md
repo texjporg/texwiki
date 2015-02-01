@@ -9,6 +9,10 @@ pukiwiki: "Latin Modern"
 
 ## Latin Modern {#dd869f5d}
 
+Latin Modern は，Comupter Modern や [CM-Super](/cm-super/) に代わるフォントです．
+[METAFONT](/METAFONT/) ソースから直接 PostScript Type 1 に変換されたもので，CM-Super より品質が優れています．
+また，OpenType 形式も配布されています．
+
 ### Latin Modern Fonts {#e74254c6}
 
 - [The Latin Modern (LM) Family of Fonts &mdash; GUST](http://www.gust.org.pl/projects/e-foundry/latin-modern/)
