@@ -14,7 +14,7 @@ GIF アニメのような動く画像を取り込む際に便利です．
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
 
-作成したアニメーションを正常に表示するには Adobe Acrobat か [Adobe Reader](</Adobe Reader/>) 7 以上または [PDF-XChange Viewer](http://www.tracker-software.com/product/pdf-xchange-viewer) が必要です．
+作成したアニメーションを正常に表示するには Adobe Acrobat Reader DC または [PDF-XChange Viewer](http://www.tracker-software.com/product/pdf-xchange-viewer) が必要です．
 
 ### 関連リンク {#x5411a7d}
 
