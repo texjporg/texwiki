@@ -15,7 +15,7 @@ pukiwiki: "W32TeX"
 
 ## W32TeX とは {#e3db1415}
 
-W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです。
+W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです．
 W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
 
 ## インストール {#ib4afbe8}
@@ -49,8 +49,16 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 以下のサイトからダウンロードが可能です．
 
-\[FTP\]<br> <!-- -[[Ring Server:http://www.ring.gr.jp/]] --> <!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ --> <!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-
+<strong>FTP</strong>
+<!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
+<!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
@@ -84,8 +92,8 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
     <!-- - -ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
 
-\[HTTP\]<br> <!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
-
+<strong>\[HTTP\]</strong>
+<!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
     <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
     <!-- - -http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
@@ -125,25 +133,25 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 #### 過去のバージョン {#n2c09a4d}
 
-過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています:
+過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：
 
 - [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
 
 #### 注意点 {#s760b9ef}
 
-ダウンロードツールをお使いの場合には，サーバーに迷惑をかけないようにするために同時接続数を1にしてください。
+ダウンロードツールをお使いの場合には，サーバーに迷惑をかけないようにするために同時接続数を1にしてください．
 
-ダウンロードしたら，念のため次のことをご確認ください。
+ダウンロードしたら，念のため次のことをご確認ください．
 
 - ファイルの拡張子が正しいか？
     - Internet Explorer などの一部のブラウザやダウンローダは勝手に
-        ファイルの拡張子を変えてしまうことがある。
+        ファイルの拡張子を変えてしまうことがある．
         - e.g. Internet Explorer 11 を使って
             [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/) から \*.tar.xz ファイルを保存した場合に，
 
 > &#x2a;.tar.xz → \*.tar.tar
 
-のようにファイルの拡張子が変わる。
+のようにファイルの拡張子が変わる．
 
 #### ダウンロードファイル {#i853d3d5}
 
@@ -168,28 +176,28 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-lib.tar.xz">web2c-lib.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/web2c-w64.tar.xz">web2c-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/web2c-w32.tar.xz">web2c-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td colspan="3" style="text-align:left"><strong>標準インストール（最小インストールに加えて）</strong></td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipdfm-w64.tar.xz">dvipdfm-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipdfm-w32.tar.xz">dvipdfm-w32.tar.xz</a></td><td>DVI → PDF 変換ツール</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipsk-w64.tar.xz">dvipsk-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipsk-w32.tar.xz">dvipsk-w32.tar.xz</a></td><td>DVI → <a href="/PostScript/">PostScript</a> 変換ツール</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipdfm-w64.tar.xz">dvipdfm-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipdfm-w32.tar.xz">dvipdfm-w32.tar.xz</a></td><td>DVI → <a href="/PDF/">PDF</a> 変換ツール (<a href="/dvipdfmx/">dvipdfmx</a>)</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvipsk-w64.tar.xz">dvipsk-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvipsk-w32.tar.xz">dvipsk-w32.tar.xz</a></td><td>DVI → <a href="/PostScript/">PostScript</a> 変換ツール (<a href="/dvips/">dvips</a>)</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/jtex-w64.tar.xz">jtex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/jtex-w32.tar.xz">jtex-w32.tar.xz</a></td><td>NTT JTeX<br>TeX Live には収録されていません．</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ltxpkgs.tar.xz">ltxpkgs.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/latex.html">LaTeX</a>2e の基本パッケージ集</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luatexja.tar.xz">luatexja.tar.xz</a></td><td><a href="/LuaTeX-ja/">LuaTeX-ja</a></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luatex-w64.tar.xz">luatex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luatex-w32.tar.xz">luatex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/LuaTeX/">LuaTeX</a>)</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/makeindex-w64.tar.xz">makeindex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/makeindex-w32.tar.xz">makeindex-w32.tar.xz</a></td><td>索引作成ツール</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/makeindex-w64.tar.xz">makeindex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/makeindex-w32.tar.xz">makeindex-w32.tar.xz</a></td><td><a href="/索引作成/">索引作成</a>ツール (makeindex, mendex)</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/manual.tar.xz">manual.tar.xz</a></td><td>マニュアル類……質問する前に読みましょう</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/newtxpx-boondoxfonts.tar.xz">newtxpx-boondoxfonts.tar.xz</a></td><td>newtx, newpx, boondox フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pgfcontrib.tar.xz">pgfcontrib.tar.xz</a></td><td>pgf-tikz contributions</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/newtxpx-boondoxfonts.tar.xz">newtxpx-boondoxfonts.tar.xz</a></td><td><a href="/newtx/">newtx</a>, newpx, boondox フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pgfcontrib.tar.xz">pgfcontrib.tar.xz</a></td><td><a href="/TikZ/">pgf-tikz</a> contributions</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1fonts.tar.xz">t1fonts.tar.xz</a></td><td>Type 1 フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tex-gyre.tar.xz">tex-gyre.tar.xz</a></td><td>tex-gyre フォントと tex-gyre-math フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/timesnew.tar.xz">timesnew.tar.xz</a></td><td>TimesNewRoman, Arial を使用するためのパッケージ</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tex-gyre.tar.xz">tex-gyre.tar.xz</a></td><td><a href="/TeX Gyre/">TeX Gyre</a> フォントと TeX Gyre Math フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/timesnew.tar.xz">timesnew.tar.xz</a></td><td>Times New Roman, Arial を使用するためのパッケージ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ttf2pk-w64.tar.xz">ttf2pk-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ttf2pk-w32.tar.xz">ttf2pk-w32.tar.xz</a></td><td>TrueType → PK 変換ツール</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txpx-pazofonts.tar.xz">txpx-pazofonts.tar.xz</a></td><td><a href="/newtx/">TX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html">PX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html">Pazo</a> フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txpx-pazofonts.tar.xz">txpx-pazofonts.tar.xz</a></td><td><a href="/newtx/#uba8f4cc">TX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html">PX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html">Pazo</a> フォント</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-a2bk.tar.xz">vf-a2bk.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/ptex.html">pTeX</a> 用 virtual fonts</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
-<tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td>xypic パッケージ: 可換図などを描くのに便利</td></tr>
+<tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ (<a href="/索引作成/">索引作成</a>ツール xindy)</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/pic/#b9215e15">xypic</a> パッケージ: 可換図などを描くのに便利</td></tr>
 <tr><td colspan="3" style="text-align:left"><strong>フルインストール（標準インストールに加えて）</strong></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/aleph-w64.tar.xz">aleph-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/aleph-w32.tar.xz">aleph-w32.tar.xz</a></td><td>Aleph</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td>biblatex と biber</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td><a href="/文献引用/">文献引用</a>ツール (biblatex, biber)</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/cjkzr.tar.xz">cjkzr.tar.xz</a></td><td><a href="/LaTeX-CJK/">LaTeX-CJK</a></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/context-doc.tar.xz">context-doc.tar.xz</a></td><td>ConTeXt のドキュメント</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/context-w64.tar.xz">context-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/context.tar.xz">context.tar.xz</a></td><td><a href="/ConTeXt/">ConTeXt</a></td></tr>
@@ -201,14 +209,14 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td>LuaJITTeX</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF パッケージ</a>［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります。<br>otf パッケージの最新版は otfbeta です。</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．<br>otf パッケージの最新版は otfbeta です．</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for musixtex</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for <a href="/楽譜/#l0a501fd">MusiXTeX</a></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td>pttoedit</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td>pstoedit</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td>ptex-ng</td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/qpdf-w64.tar.xz">qpdf-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td>qpdf</td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a></td></tr>
+<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/qpdf-w64.tar.xz">qpdf-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/tex4ht-w64.tar.xz">tex4ht-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tex4ht-w32.tar.xz">tex4ht-w32.tar.xz</a></td><td>TeX4ht</td></tr>
@@ -219,7 +227,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/utf.tar.xz">utf.tar.xz</a></td><td>UTF パッケージ</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-n2bk.tar.xz">vf-n2bk.tar.xz</a></td><td>NTT-jTeX 用の Virtual font</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xymtex.tar.xz.tar.xz">xymtex.tar.xz.tar.xz</a></td><td>XyMTeX</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xymtex.tar.xz.tar.xz">xymtex.tar.xz.tar.xz</a></td><td><a href="/XyMTeX/">XyMTeX</a></td></tr>
 </tbody>
 </table>
 
@@ -531,4 +539,4 @@ command_line_encoding.dvips =
 - [NUL (空のファイル) - DOS コマンド一覧](http://pf-j.sakura.ne.jp/program/dos/doscmd/dev_nul.htm)
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX)
 
-[^1]: 64ビットプロセッサ ([x86-64](https://ja.wikipedia.org/wiki/X64)) または 32ビットプロセッサ ([IA-32](https://ja.wikipedia.org/wiki/IA-32)) 環境で動作する Microsoft Windows。
+[^1]: 64ビットプロセッサ ([x86-64](https://ja.wikipedia.org/wiki/X64)) または 32ビットプロセッサ ([IA-32](https://ja.wikipedia.org/wiki/IA-32)) 環境で動作する Microsoft Windows．
