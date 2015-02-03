@@ -10,7 +10,7 @@ pukiwiki: "TeX Gyre"
 ## TeX Gyre {#v39cefcd}
 
 TeX Gyre フォントは，Times や Helvetica などの Adobe 基本 35 書体に対応する，高品質でオープンなフォントです．
-PostScript Type1 形式と OpenType 形式で配布されています．
+PostScript Type 1 形式と OpenType 形式で配布されています．
 
 - [The TeX Gyre (TG) Collection of Fonts &mdash; GUST](http://www.gust.org.pl/projects/e-foundry/tex-gyre/)
 - [http://www.ctan.org/pkg/tex-gyre](http://www.ctan.org/pkg/tex-gyre)
