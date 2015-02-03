@@ -52,4 +52,4 @@ texdoc lm
 texdoc lmodern
 ```
 
-で確認してください．<br>
+で確認してください．
