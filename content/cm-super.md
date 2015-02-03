@@ -11,7 +11,7 @@ pukiwiki: "cm-super"
 
 ## CM-Super → 問題が発生する場合は [Latin Modern](</Latin Modern/>) を使用する {#vb256d79}
 
-CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Modern フォントをベースに T1 エンコーディングに対応させ，かつ PostScript Type1 形式に変換したものです．
+CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Modern フォントをベースに T1 エンコーディングに対応させ，かつ PostScript Type 1 形式に変換したものです．
 
 - [http://www.ctan.org/pkg/cm-super](http://www.ctan.org/pkg/cm-super)
 
