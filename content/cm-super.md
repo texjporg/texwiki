@@ -46,4 +46,4 @@ CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Mode
 
 - [Babel な話：type1ec パッケージの 10pt オプションがアレな件](http://d.hatena.ne.jp/zrbabbler/20120906/1346931893)
 - [cm-super - 松浦高志のページ](http://user.ecc.u-tokyo.ac.jp/users/user-12036/wiki.cgi?page=cm-super)
-- [cm-super - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?cm-super)
+- [cm-super - MyTeXpert](http://mytexpert.osdn.jp/index.php?cm-super)
