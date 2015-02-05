@@ -9,12 +9,17 @@ pukiwiki: "dvisvgm"
 
 ## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## dvisvgm とは {#xb898030}
 
-dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．<br>
-TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
+dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．
+
+- dvisvgm 1.4 以降は pTeX で作成された DVI ファイル
+- dvisvgm 1.5 以降は [XeTeX](/XeTeX/) で作成された &#x58;DV ファイル
+- dvisvgm 1.6 (TeX Live 2014) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイル
+
+に対応しており，日本語を使用することができます．
 
 - [dvisvgm](http://dvisvgm.sourceforge.net/)
 - [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
@@ -37,11 +42,12 @@ TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成さ�
 
 ## 使い方 {#he5a75c1}
 
-dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する方法があります。<br>
+dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する方法があります．
 
 ### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
-TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．<br>
+TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．
+以下にソース例を示します．
 
 ```
 \ifdefined\kanjiskip
@@ -93,33 +99,31 @@ $ dvips -E -o hoge.eps hoge.dvi
 $ dvisvgm -E hoge.eps
 ```
 
-dvisvgm を使用して DVI ファイル，XDV ファイルを SVG ファイルに変換した場合はテキストデータも保持されます．<br>
-dvisvgm を使用して EPS ファイルを SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
+dvisvgm を使用して DVI ファイル，&#x58;DV ファイルを SVG ファイルに変換した場合はテキストデータも保持されます．
+dvisvgm を使用して EPS ファイルを SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．
 
 ### DVI -> PDF -> Inkscape -> SVG {#y57cab44}
 
-DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．<br>
-Inkscape を使用する場合もテキストデータが保持されます．<br>
+DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．
+Inkscape を使用する場合もテキストデータが保持されます．
 
 ### DVI -> PDF -> MuPDF (mudraw) -> SVG {#pe2bf0a7}
 
-DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．<br>
-MuPDF の mudraw を使用する場合もテキストデータが保持されます．<br>
-PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．
+MuPDF の mudraw を使用する場合もテキストデータが保持されます．
+PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-
 $ mudraw -o hoge.svg hoge.pdf
 ```
 
 ### DVI -> PDF -> Poppler (pdftocairo) -> SVG {#dbe3e3c1}
 
-DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば PDF ファイルを SVG ファイルに変換できます．<br>
-ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．<br>
-PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば PDF ファイルを SVG ファイルに変換できます．
+ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．
+PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-
 $ pdftocairo -svg hoge.pdf
 ```
 
