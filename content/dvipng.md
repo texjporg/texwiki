@@ -9,15 +9,15 @@ pukiwiki: "dvipng"
 
 ## [dvipng](http://www.nongnu.org/dvipng/) {#i1384369}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
-## dvipngとは？ {#wd523196}
+## dvipng とは？ {#wd523196}
 
-dvipng は dvi ファイルから png 形式の画像を生成するコマンドです。<br>
-[preview-latex プロジェクト](http://www.gnu.org/software/auctex/preview-latex.html)の成果物として公開されています。<br>
-Version 1.9 から サブフォントに対応しているので、サブフォント機構
-を使って作成した dvi の場合には日本語も png 化できます。<br>
-mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそうです。<br>
+dvipng は dvi ファイルから png 形式の画像を生成するコマンドです．
+[preview-latex プロジェクト](http://www.gnu.org/software/auctex/preview-latex.html)の成果物として公開されています．
+[TeX2img](/TeX2img/) や [mimeTeX](/mimeTeX/) 同様，数式をウェブ用の画像に変換するのに役立ちそうです．
+
+Version 1.9 から サブフォントに対応しているので，サブフォント機構を使って作成した dvi の場合には日本語も png 化できます．
 
 - [http://www.nongnu.org/dvipng/](http://www.nongnu.org/dvipng/)
 - [http://savannah.nongnu.org/projects/dvipng/](http://savannah.nongnu.org/projects/dvipng/)
@@ -36,11 +36,11 @@ mimeTeX 同様、数式をウェブ用の画像に変換するのに役立ちそ
 
 ## 使い方 {#ic72a209}
 
-dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります。<br>
+dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります．
 
 ### DVI -> dvipng -> PNG {#wff0573c}
 
-[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．<br>
+[CJK-LaTeX/BXcjkjatype](/LaTeX-CJK/) を使用すれば dvipng でも日本語が使用できます．
 
 DVI ファイルを PNG ファイルに変換する場合は
 
@@ -50,8 +50,8 @@ $ dvipng hoge.dvi
 
 ### DVI -> PDF -> MuPDF (mudraw) -> PNG {#vf3c0c13}
 
-(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば簡単に PNG ファイルに変換できます．<br>
-PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば簡単に PNG ファイルに変換できます．
+PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
 $ mudraw -o hoge.png hoge.pdf
@@ -59,8 +59,8 @@ $ mudraw -o hoge.png hoge.pdf
 
 ### DVI -> PDF -> Poppler (pdftocairo) -> PNG {#a65b7c7c}
 
-(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．<br>
-PDF ファイルの余白を削除する場合は pdfcrop を使用してください．<br>
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば簡単に PNG ファイルに変換できます．
+PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
 $ pdftocairo -png hoge.pdf
@@ -71,4 +71,4 @@ $ pdftocairo -png hoge.pdf
 - [PXtosb パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxtosb.html)
 - [dvipng - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?dvipng)
 - [qa:17730](https://okumuralab.org/~okumura/texfaq/qa/17730.html)
-- [qa:51671](https://okumuralab.org/~okumura/texfaq/qa/51671.html)からの議論で、dvi2dviを通してサブフォント化した日本語dviファイルが変換できるようになりました
+- [qa:51671](https://okumuralab.org/~okumura/texfaq/qa/51671.html) からの議論で，dvi2dviを通してサブフォント化した日本語dviファイルが変換できるようになりました．
