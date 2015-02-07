@@ -28,3 +28,30 @@ GPLv2
 ### ChangeLog {#x5a34f7d}
 
 - [http://www.helga-glunz.homepage.t-online.de/pstoedit/changelog.htm](http://www.helga-glunz.homepage.t-online.de/pstoedit/changelog.htm)
+
+### お知らせ {#ecc26b2e}
+
+CTAN に公開されているのはかなり古いバージョンです (3.50)．
+
+- [http://www.ctan.org/pkg/pstoedit](http://www.ctan.org/pkg/pstoedit)
+
+## 使い方 {#qcd5ad79}
+
+```
+pstoedit -help
+```
+
+でヘルプメッセージが表示されます．
+
+### 対応している出力形式 {#q2a22716}
+
+LaTeX の picture 形式や [MetaPost](/MetaPost/) 形式のほか Tgif, XFig, [pic](/pic/), [gnuplot](/gnuplot/), [Asymptote](/Asymptote/) 形式などを出力することができます．
+他の主な出力可能な形式を挙げておきます：
+
+- wmf/emf (Windows metafile/Enhanced Windows metafile)
+- dxf (CAD exchange format)
+- ai (Adobe Illustrator)
+
+## 関連リンク {#u9a3bf06}
+
+- [pstoedit | Inkscape@JP](http://inkscape.paix.jp/manual/overview/external/pstoedit/)
