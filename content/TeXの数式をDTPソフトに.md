@@ -217,7 +217,7 @@ dviout （2002年10月9日以降のもの）では次のようにして EMF 形�
 は “Alt + (F, S, E)”）すると，クリップボードにコピーされます。これで
 Illustrator （EMF 形式を理解するソフトなら何でも）に貼り付ければ OK です。
 
-また，[pstoedit](http://www.pstoedit.net/pstoedit/) を GSview と
+また，[pstoedit](/pstoedit/) を GSview と
 同じところ（標準では "C:\Program Files\Ghostgum\pstoedit\\"）にインストールして
 おけば，GSview から ［Edit］→［Convert to vector format...］ で
 WMF や EMF に変換できます。 
