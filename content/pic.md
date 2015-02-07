@@ -9,7 +9,7 @@ pukiwiki: "pic"
 
 ## pic {#ce82732b}
 
-picとは，簡単なフローチャートのような図を作成するためのプログラミング言語 (A Graphics Language for Typesetting) です．
+pic とは，簡単なフローチャートのような図を作成するためのプログラミング言語 (A Graphics Language for Typesetting) です．
 
 - [http://www.cs.bell-labs.com/10thEdMan/pic.pdf](http://www.cs.bell-labs.com/10thEdMan/pic.pdf)  by Brian W. Kernighan
 
