@@ -12,7 +12,7 @@ pukiwiki: "pdftk"
 ### はじめに {#k42vf083}
 
 [pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
-は PDF ファイルを編集するコマンドラインツールです．<br>
+は PDF ファイルを編集するコマンドラインツールです．
 PDF ファイルの結合，分割，並べ替え，ページ回転，ページ抽出，透かしの挿入，メタデータの追加や抽出，セキュリティの設定などが可能です．
 
 #### License {#a6o82c92}
@@ -25,8 +25,8 @@ PDF ファイルの結合，分割，並べ替え，ページ回転，ページ�
 
 ### インストール {#a7k286v4}
 
-[本家](https://www.pdflabs.com/tools/pdftk-server/)に Windows, Mac OS X, Red Hat Enterprise Linux, CentOS 用インストーラがあります．<br>
-パッケージ管理からも可能です．OS X の場合は MacPorts を使用しているなら<br>
+[本家](https://www.pdflabs.com/tools/pdftk-server/)に Windows, Mac OS X, Red Hat Enterprise Linux, CentOS 用インストーラがあります．
+パッケージ管理からも可能です．OS X の場合は MacPorts を使用しているなら
 
 ```
 sudo port install pdftk
@@ -36,7 +36,7 @@ sudo port install pdftk
 
 #### ビルド {#s5yn263g}
 
-ソースからコンパイルするのも簡単です．<br>
+ソースからコンパイルするのも簡単です．
 ソースは[本家](https://www.pdflabs.com/tools/pdftk-server/)から入手できます．
 
 ### 使い方 {#m37fe2x6}
