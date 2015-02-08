@@ -138,7 +138,7 @@ GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられ�
 たくさんのフォントが追加されてしまいますのでご注意ください。
 
 あらかじめ $TEXMF\fonts\type1\ フォルダー
-（例えば C:\texlive\2014\texmf-dist\fonts\type1\）を
+（例えば C:\texlive\2015\texmf-dist\fonts\type1\）を
 フォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーに
 コピーまたはリンクしておきます
 （Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
