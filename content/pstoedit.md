@@ -45,7 +45,7 @@ pstoedit -help
 
 ### 対応している出力形式 {#q2a22716}
 
-LaTeX の picture 形式や [MetaPost](/MetaPost/) 形式のほか Tgif, XFig, [pic](/pic/), [gnuplot](/gnuplot/), [Asymptote](/Asymptote/) 形式などを出力することができます．
+LaTeX の picture 形式や [MetaPost](/MetaPost/) 形式のほか Tgif, Xfig, [pic](/pic/), [gnuplot](/gnuplot/), [Asymptote](/Asymptote/) 形式などを出力することができます．
 他の主な出力可能な形式を挙げておきます：
 
 - wmf/emf (Windows metafile/Enhanced Windows metafile)
