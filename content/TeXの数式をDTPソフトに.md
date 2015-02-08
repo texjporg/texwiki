@@ -117,7 +117,7 @@ EPS を作るところまでは上と同じです。
 「リンク」チェックボックスをオンにすることです。
 dvips の出力する EPS には
 プレビュー画像が附いていませんので，配置してもただの箱に見えます。
-これでも PostScript デバイス（PS プリンタや Distiller \[Adobe PDF\]）に
+これでも PostScript デバイス（PS プリンタや Adobe Acrobat Distiller DC）に
 出力すれば，きれいに出ます。
 また，Illustrator から EPS で保存しても大丈夫です
 （保存時に「配置した画像を含む」チェックボックスをオンにします）。
@@ -128,7 +128,7 @@ EPS にプレビューを付けておけば，
 GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられます。
 
 この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化
-するならいったん EPS で保存してから Distiller で処理してください。
+するならいったん EPS で保存してから Adobe Acrobat Distiller DC で処理してください。
 
 ## Illustrator に配置 2 (Microsoft Windows) {#wfad6f6b}
 
@@ -188,7 +188,7 @@ OS X では次の順にフォントを探してくれます
 Windows 版なら大丈夫なのに
 残念です。
 Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。
-PDF にしたければ EPS で保存して Distiller で変換すればいいでしょう。
+PDF にしたければ EPS で保存して Adobe Acrobat Distiller DC で変換すればいいでしょう。
 
 念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント：
 [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）
