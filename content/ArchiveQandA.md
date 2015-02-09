@@ -51,7 +51,7 @@ LaTeX のエラー・警告については
 
 ### dviout や xdvi でのトラブル {#k7a3f154}
 
-[dviout](/dviout/) や xdvi で画像が表示されないなどの問題が発生する場合は <strong>dviout や xdvi を使用せず，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります．[ptex2pdf](/ptex2pdf/) を使用すれば TeX ファイルから直接 PDF ファイルを出力できます．
+[dviout](/dviout/) や [xdvi](/xdvi/) で画像が表示されないなどの問題が発生する場合は <strong>dviout や xdvi を使用せず，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) でプレビューする</strong>方法があります．[ptex2pdf](/ptex2pdf/) を使用すれば TeX ファイルから直接 PDF ファイルを出力できます．
 
 ### TeX Live の pLaTeX + dvipdfmx で画像が取り込めない {#aa7220cc}
 
