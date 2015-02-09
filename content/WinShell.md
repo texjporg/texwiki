@@ -9,7 +9,7 @@ pukiwiki: "WinShell"
 
 ## WinShell {#t788b13b}
 
-<span style="font-size:40px">WinShell は現在，非推奨です！</span>
+<span style="font-size:30px">WinShell は現在，非推奨です！</span>
 
 - エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
