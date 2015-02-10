@@ -43,8 +43,9 @@ Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問
 eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript/使い方/>) を参照してください．
 以下のようなアプリケーションは，すでに対応を完了しています．
 
-- [TeXソースコードをTeXでコンパイルして画像で出力するアプリケーション「TeX2img」](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
-- [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/)
+- [TeX ソースコードを TeX でコンパイルして画像で出力するアプリケーション「TeX2img」](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
+- [InDesign に TeX の数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/)
+- [Windows で TeX に挿入できるグラフ，図を作成するツール「WinTpic」](http://aogaeru-lab.my.coocan.jp/sub1.html)
 
 Ghostscript 9.15 では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．
 
