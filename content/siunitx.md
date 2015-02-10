@@ -9,7 +9,7 @@ pukiwiki: "siunitx"
 
 ## siunitx {#x11d1f9f}
 
-<!-- ICMJE というページから移転して加筆しました． -->
+<!-- ICMJE というページから移転して加筆しました． (2015-02-11 アセトアミノフェン) -->
 
 siunitx とは，SI 単位をサポートするスタイルファイルで，si, SIstyle, siunits
 等のパッケージの上位版といえるものです．
@@ -17,7 +17,17 @@ siunitx とは，SI 単位をサポートするスタイルファイルで，si,
 
 ### SI 単位の正しい表記法 {#ue8fdee5}
 
+SI 単位 (The International System of Units) の表記法の主な規則を挙げておきます．
+
+- 物理量はイタリック（斜体），単位はローマン（立体）で書く．
+- 数値のあとにスペースを入れて単位をつける．
+
+詳細は
+[SI Brochure \[8th edition, 2006; updated in 2014\]](http://www.bipm.org/en/publications/si-brochure/)
+や，その[日本語訳](https://www.nmij.jp/library/units/si/)を参照してください．
+
 siunitx は，単位記号のフルスペルを入力すれば，大文字小文字を間違わずに正しく記号化してくれます（例えば，mHz Mhz mhz MHz を区別してくれます）．
+流儀によっていくつかの表記法がある場合にも対応しています．
 
 #### siunitx の使用例 {#yed0da9a}
 
