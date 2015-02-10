@@ -111,7 +111,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
   ☑ PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
   ☑ フィルダーエフェクトをラスタライズする<br>
  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　(●) ドキュメントのページサイズを使用<br>
+ 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
             ◯ エクスポートオブジェクトのサイズを使用<br>
  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
@@ -125,7 +125,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
   ☑ EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
   ☑ フィルダーエフェクトをラスタライズする<br>
  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　(●) ドキュメントのページサイズを使用<br>
+ 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
             ◯ エクスポートオブジェクトのサイズを使用<br>
  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
@@ -139,7 +139,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
   ☑ PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
   ☑ フィルダーエフェクトをラスタライズする<br>
  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　(●) ドキュメントのページサイズを使用<br>
+ 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
             ◯ エクスポートオブジェクトのサイズを使用<br>
  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
