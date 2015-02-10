@@ -9,8 +9,6 @@ pukiwiki: "pic"
 
 ## pic {#ce82732b}
 
-% この項目に Xy-pic の解説がありますが，pic 言語との関係性が全く記述されていないのが気になります．
-
 pic とは，簡単なフローチャートのような図を作成するためのプログラミング言語 (A Graphics Language for Typesetting) です．
 troff 用図形プリプロセッサとして実装されています．
 
@@ -31,15 +29,22 @@ troff 用図形プリプロセッサとして実装されています．
 
 tpic は，pic を元にして Tim Morgan が作り上げた
 TeX 用図形プリプロセッサ，およびそれが出力する special コマンドセットの名称です．
-LaTeX 用のマクロとして，eepic などがあります．
-tpic specials を半 WYSWYG で作成するツールに，[WinTpic](http://aogaeru-lab.my.coocan.jp/sub1.html) があります．
-
-- 参考：[WinTpic - LaTeX](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/etc011.html)
 
 tpic 拡張機能は [dvips](/dvips/), [dvipdfm(x)](/dvipdfmx/), [dviout](/dviout/), [xdvi](/xdvi/) 等の数多くの DVIWare でサポートされています．
 一方で，DVI を扱わない [pdfTeX](/pdfTeX/) では tpic 拡張機能がサポートされていません．
 
 - 参考：[BXpict2e パッケージ ～pict2e で eepic な世界～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/bxpict2e.html)
+
+#### tpic specials を利用する LaTeX 用のマクロ {#kaa909af}
+
+- eepic パッケージでは，picture 環境および epic パッケージの機能を拡張するにあたって DVI ドライバの tpic 拡張を利用します．
+- [Xy-pic](/Xy-pic/) パッケージは，標準の TeX の機能内で描画する機能も持ちますが，tpic 拡張を利用して高品質な出力を行う機能もあります．
+
+#### tpic specials のソースを生成するツール {#leb51bcb}
+
+tpic specials を半 WYSIWYG で作成するツールに，[WinTpic](http://aogaeru-lab.my.coocan.jp/sub1.html) があります．
+
+- 参考：[WinTpic - LaTeX](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/etc011.html)
 
 #### tpic specials のコマンド {#j91d4d68}
 
@@ -99,48 +104,6 @@ tpic 拡張機能は [dvips](/dvips/), [dvipdfm(x)](/dvipdfmx/), [dviout](/dviou
   % \special{sh 0}と同じ．
 \special{bk}
   % \special{sh 1}と同じ．
-```
-
-## [Xy-pic](http://www.ctan.org/pkg/xypic) {#b9215e15}
-
-Xy-pic は，様々な図式を描くことに特化したパッケージです．
-
-- [http://tug.org/applications/Xy-pic/Xy-pic.html](http://tug.org/applications/Xy-pic/Xy-pic.html)
-- [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
-- [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
-- [Xy-pic 入門](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
-- [Xy-pic（日本語での解説，より詳しい解説）](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html)
-- [Xy-pic - LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/xypic.html)
-
-### 例 {#xd92553b}
-
-ノード近傍の重なり（接触）が多少見苦しい
-
-```
-\documentclass{article} 
-\usepackage{amsmath}
-\usepackage[all]{xy}
-\begin{document}
-\xygraph{
- {     {\alpha}*+!D{\quad}="1"
-   [r] {\bullet}*+!D{\text{Tokyo}}*+!U{\quad}="t"
-   [d] {\bullet}*+!U{{\oalign{{Hachioji}\crcr{Tachikawa}}}} ="h"
-     "1" : "t"
-     "h" : "t"
-     :_*+{\varDelta \tau_1} 
-   [rr] {\bullet}*+!D{\text{Nagoya}}*+!U{t_1}
-     :_*+{\varDelta \tau_2} 
-   [rru] {\bullet}*+!D{\text{Kyoto}}*+!U{t_2} 
-     :_*+{\varDelta \tau_3} 
-   [rrd] {\bullet}*+!D{\text{Osaka}}*+!U{t_3} 
-     :_*+{\varDelta \tau_4} 
-   [rr] {\bullet}*+!D{\text{Kobe}}*+!U{\quad} ="k"
-   [d] {\bullet}*+!U{\text{Sanda}} ="s"
-     "s" : "k"
-     "k" :  
-   [r] {\beta}*+!D{\quad}
-}
-\end{document}
 ```
 
 ## [KETpic](http://ketpic.com/) {#d0d77e0e}
