@@ -9,8 +9,6 @@ pukiwiki: "Inkscape"
 
 ## [Inkscape](https://inkscape.org/) {#ycda5b1e}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Inkscape_Logo.svg/200px-Inkscape_Logo.svg.png" alt="Inkscape" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
@@ -382,9 +380,8 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 Inkscape 等で作成した SVG ファイルを TikZ のコードに変換するプログラムです．
 
-### [JessyInk](https://code.google.com/p/jessyink/) {#k0206a78}
+### [JessyInk](https://launchpad.net/jessyink) {#k0206a78}
 
-- [JessyInk](https://code.google.com/p/jessyink/)
 - [Inkscapeでプレゼンテーション](http://d.hatena.ne.jp/yambi/20110405/1301974923)
 
 ## Inkscape で TeX 数式 {#f9da7d32}
