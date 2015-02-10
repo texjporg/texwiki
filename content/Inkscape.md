@@ -385,6 +385,8 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 ### [SVG2TikZ](https://github.com/kjellmf/svg2tikz) {#u5ee2f7d}
 
+Inkscape 等で作成した SVG ファイルを TikZ のコードに変換するプログラムです．
+
 ### [JessyInk](https://code.google.com/p/jessyink/) {#k0206a78}
 
 - [JessyInk](https://code.google.com/p/jessyink/)
@@ -392,7 +394,7 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 ## Inkscape で TeX 数式 {#f9da7d32}
 
-[TeX2img](/TeX2img/) (Windows/Mac) を使用して，TeX ソースから数式画像を EPS/PDF 形式でアウトライン化して出力するのが簡単です．<br>
+[TeX2img](/TeX2img/) (Windows/Mac) を使用して，TeX ソースから数式画像を EPS/PDF 形式でアウトライン化して出力するのが簡単です．
 なお，TeX2img は数式以外の地の文や日本語も問題なく処理できます．
 
 - [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
