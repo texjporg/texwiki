@@ -194,7 +194,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-a2bk.tar.xz">vf-a2bk.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/ptex.html">pTeX</a> 用 virtual fonts</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
 <tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ (<a href="/索引作成/">索引作成</a>ツール xindy)</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/pic/#b9215e15">xypic</a> パッケージ: 可換図などを描くのに便利</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/Xy-pic/">Xy-pic</a> パッケージ: 可換図などを描くのに便利</td></tr>
 <tr><td colspan="3" style="text-align:left"><strong>フルインストール（標準インストールに加えて）</strong></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/aleph-w64.tar.xz">aleph-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/aleph-w32.tar.xz">aleph-w32.tar.xz</a></td><td>Aleph</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td><a href="/文献引用/">文献引用</a>ツール (biblatex, biber)</td></tr>
