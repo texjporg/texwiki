@@ -57,8 +57,7 @@ Windows, OS X, Linux
 
 ## ダウンロード {#i5a8dfd7}
 
-- [http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](ftp://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
+- [https://inkscape.org/en/download/](https://inkscape.org/en/download/)
 - [http://www.partha.com/](http://www.partha.com/)
 
 ## 注意点 {#tedcde5e}
@@ -185,22 +184,18 @@ LaTeX と連携するためのエクステンション．<br>
 
 #### インストール (Windows) {#v77ed75c}
 
-[W32TeX](/W32TeX/) には pstoedit, dvisvgm, dvips, latex が含まれています．<br>
 [TeX Live](</TeX Live/>) には dvisvgm, dvips, latex が含まれています．<br>
+[W32TeX](/W32TeX/) には pstoedit, dvisvgm, dvips, latex が含まれています．<br>
 
 ***
 
-TeX Live を使用している場合は<br>
-
-- [http://www.pstoedit.net/](http://www.pstoedit.net/)
-
-から pstoedit をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
+TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
 
 ***
 
-- [http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/](http://ftp.jaist.ac.jp/pub/sourceforge/i/in/inkscape/inkscape/)
+- [https://inkscape.org/en/download/](https://inkscape.org/en/download/)
 
-から Inkscape 最新版 (0.91 以降) をダウンロードして展開します．
+から Inkscape 最新版をダウンロードして展開します．
 
 展開したフォルダーを C:\inkscape と仮定します．別のフォルダーに展開した場合は読み替えてください．
 
