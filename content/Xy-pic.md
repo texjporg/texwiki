@@ -9,9 +9,11 @@ pukiwiki: "Xy-pic"
 
 ## [Xy-pic](http://www.ctan.org/pkg/xypic) {#b9215e15}
 
+<!-- pic というページから移転し，個別項目としました． (2015-02-10 アセトアミノフェン) -->
+
 Xy-pic は，様々な図式を描くことに特化したパッケージです．
 標準の TeX の機能内で描画する機能も持ちますが，[tpic specials](/pic/#xda9ac26) や
-[PostScript](/PostScript/) の機能を使ったより高品質な出力機能もあります．
+[PostScript](/PostScript/) の機能を使って高品質な出力を行う機能もあります．
 
 - [http://tug.org/applications/Xy-pic/Xy-pic.html](http://tug.org/applications/Xy-pic/Xy-pic.html)
 - [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
