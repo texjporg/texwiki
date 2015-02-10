@@ -57,7 +57,7 @@ Windows, OS X, Linux
 
 ## ダウンロード {#i5a8dfd7}
 
-- [https://inkscape.org/en/download/](https://inkscape.org/en/download/)
+- [https://inkscape.org/download/](https://inkscape.org/download/)
 - [http://www.partha.com/](http://www.partha.com/)
 
 ## 注意点 {#tedcde5e}
