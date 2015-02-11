@@ -19,7 +19,7 @@ pukiwiki: "PDFの作り方"
 
 ### TeX から PDF を作成するツール {#d8e4c485}
 
-<em>Adobe Acrobat (Distiller 含む) や dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成します。これらのソフトは使わないようにしましょう。</em>
+<em>Adobe Acrobat (Distiller 含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
 
 - pLaTeX/upLaTeX + dvipdfmx
 - pLaTeX/upLaTeX + dvips + ps2pdf (Ghostscript)
