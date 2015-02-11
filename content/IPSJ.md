@@ -7,7 +7,7 @@ pukiwiki: "IPSJ"
 
 # IPSJ
 
-## 情報処理学会スタイルで jis フォントメトリックを使うには {#v57694e7}
+## [情報処理学会スタイル](http://www.ipsj.or.jp/journal/submit/style.html) {#v57694e7}
 
 現在の情報処理学会スタイル ipsj.cls は jis フォントメトリックに対応しています． <!-- というわけなので，「ipsj+jisフォントメトリック」という項目名から「IPSJ」に変更しました． -->
 ただし，uplatex には対応できていないようです．
