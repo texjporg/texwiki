@@ -16,12 +16,14 @@ Xy-pic は，様々な図式を描くことに特化したパッケージです�
 [PostScript](/PostScript/) の機能を使って高品質な出力を行う機能もあります．
 
 - [http://tug.org/applications/Xy-pic/Xy-pic.html](http://tug.org/applications/Xy-pic/Xy-pic.html)
-- [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
+- [http://maths.mq.edu.au/~ross/Xy-pic.html](http://maths.mq.edu.au/~ross/Xy-pic.html)
 - [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
+- [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
 - [Xy-pic 入門](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
 - [Xy-pic（日本語での解説，より詳しい解説）](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html)
 - [Xy-pic - LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/xypic.html)
 - [xy-picのインストールスクリプト ](http://itchyny.hatenablog.com/entry/20111106/1320541226)
+- [Tsukuda--Xypic--](http://www.math.u-ryukyu.ac.jp/~tsukuda/computer/Xy-pic.html)
 
 ### 例 {#xd92553b}
 
