@@ -9,7 +9,11 @@ pukiwiki: "testfont"
 
 ## あるフォントの一覧を作成して，表示を確認する {#me3d4919}
 
-たとえば『美文書作成入門』（第 2 版 pp. 232--233, 第 3 版付録）のような，pifont の一覧を作成したくなったら，任意のディレクトリで，
+<strong>目次</strong>
+
+### testfont のタイプセット {#da579b57}
+
+たとえば『美文書作成入門』（第 2 版 pp. 232--233，第 3 版以降の付録）のような，pifont の一覧を作成したくなったら，任意のディレクトリで
 
 ```
 tex testfont
@@ -23,39 +27,78 @@ pzdr
 \end
 ```
 
-（など）と打つ．
+（など）と打てば，表が出力されます．
+pzdr というのは pifont の TFM 名です．
+[^1]
 
-Unix あるいは Unix 互換 shell を使っている場合、これを簡単にするには、たとえば名前が tab.tex で、内容が
+> <strong>Unix あるいは Unix 互換 shell を使っている場合</strong>，これを簡単にするには，たとえば名前が tab.tex で，内容が
+>
+> ```
+> \input testfont \table \end
+> ```
+>
+> なる一行のファイルを TEXINPUTS で探せるディレクトリに置いておきます．そうして
+>
+> ```
+> echo pzdr | tex tab
+> ```
+>
+> とすれば一発で tab.dvi ができます．
+
+> <strong>Windows のコマンド プロンプトの場合</strong>は，Unix の場合と echo とパイプの仕様が異なるので上のようにできません．
+>
+> ```
+> tex tab
+> ```
+>
+> のあと，TeX からのプロンプトに答えてフォント名
+>
+> ```
+> pzdr
+> ```
+>
+> を入力したら tab.dvi ができます．
 
 ```
-\input testfont \table \end
-```
-
-なる一行のファイルを TEXINPUTS で探せるディレクトリに置いておきます。そうして
-
-```
+%Windows 7 のコマンドプロンプトで
 echo pzdr | tex tab
+とすると，問題なく tab.dvi ができたけど，何かまちがったかな?
 ```
 
-とすれば一発で tab.dvi ができます。 Windows のコマンド プロンプトでは echo とパイプの仕様が異なるので上のようにできません。Windows のコマンド プロンプトの場合は、
-
 ```
-tex tab
+%確かにできますね．ここは昔の記述をそのまま残したものですが，仕様が変わったのでしょうか？
 ```
 
-のあと、TeX からのプロンプトに答えてフォント名
-
-```
-pzdr
-```
-
-を入力したら tab.dvi ができます。
-
-> ちなみに，TeX 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルする．出力結果はデフォルトではカレントディレクトリに置かれる．TEXINPUTS 変数はプログラム名によってことなり、platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されている。
-
-なお，ファイル testfont.tex については『The METAFONTbook』（D.E. Knuth 著）
-の Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
+なお，ファイル testfont.tex については『The METAFONTbook』（D.E. Knuth 著）の
+Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
 に説明があります．
+
+### 他の方法 {#f991f19c}
+
+testfont のインタラクティブな入力を手間だと感じる場合は
+
+- fntproof を用いる方法
+- fonttable という LaTeX パッケージを用いる方法
+
+があります．
+testfont や fntproof では TFM 名を調べる必要がありますが，fonttable.sty なら
+
+```
+\xfonttable{U}{pzd}{m}{n}
+```
+
+のような「エンコーディング，ファミリー，シリーズ、シェイプ」という指定ができます．
+ファミリー名のほうがもう少しアクセスしやすいと思われます（美文書にもファミリー名を掲載）．
+
+## 関連リンク {#kf4154e6}
+
+- [fonttable.sty: LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/fonttable.html)
+- [TeX のフォントの文字一覧表：testfont](http://acetaminophen.hatenablog.com/entry/2015/02/14/004641)
+- [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
+
+% ここから下はいじっていません．後ほど整理予定ということにしておきます．
+
+***
 
 - \[動機\] pdf ではフォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォントが充てられるので，その表示を確認したいことがある．
     - dvi や ps では『美文書...』と同じフォントで見えるが（それすら環境依存か<span style="color:#F00;"><em>?</em></span>），pdf だと異なることがある（フォントが埋め込まれていないと<span style="color:#F00;"><em>?</em></span>，代替フォント（pzdr (Zapf Dingbats) に対して AdobePiStd）が充てられるため）．
@@ -180,6 +223,4 @@ pzdr
 
 - たとえば YaTeX の色付けでは，16 進の識別子としての " を解釈しないので，本文中に " が 1 つだけあるとそれよりうしろの文字列がすべてピンク色になってしまって不便．<span style="color:#033;">そもそも " を \*TeX-mode 中で打つには，C-q " としなければならないが．</span>よって，8 進の表記が出てくる testfont は便利！
 
-***
-
-### コメント {#kf8441a8}
+[^1]: ちなみに，TeX 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルします．出力結果はデフォルトではカレントディレクトリに置かれます．TEXINPUTS 変数はプログラム名によって異なり，platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されています．
