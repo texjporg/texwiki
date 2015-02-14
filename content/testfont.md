@@ -7,9 +7,11 @@ pukiwiki: "testfont"
 
 # testfont
 
-## あるフォントの一覧を作成して，表示を確認する {#me3d4919}
-
 <strong>目次</strong>
+
+<br>
+
+## あるフォントの一覧を作成して，表示を確認する {#me3d4919}
 
 ### testfont のタイプセット {#da579b57}
 
@@ -78,16 +80,18 @@ testfont や fntproof では TFM 名を調べる必要がありますが，fontt
 \xfonttable{U}{pzd}{m}{n}
 ```
 
-のような「エンコーディング，ファミリー，シリーズ，シェイプ」という指定ができます．
+のような「エンコーディング，ファミリー，シリーズ，シェイプ」という指定ができます[^2]．
 ファミリー名のほうがもう少しアクセスしやすいと思われます（美文書にもファミリー名を掲載）．
 
-## 関連リンク {#kf4154e6}
+### 関連リンク {#kf4154e6}
 
 - [fonttable.sty: LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/fonttable.html)
 - [TeX のフォントの文字一覧表：testfont](http://acetaminophen.hatenablog.com/entry/2015/02/14/004641)
 - [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
 
-### Bad Know-How {#zebdcd9a}
+<br>
+
+## Bad Know-How {#zebdcd9a}
 
 上の例では pzdr というフォント名が何気なく出ているが，実際はどう調べるのか？
 
@@ -199,21 +203,26 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
     - 『pLaTeX2e Another Manual vol.2』（乙部厳己，江口庄英 共著）7.3 節
         <!-- - -『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）1.2 節 -->
 
-### 一覧表の利用例 {#j0bf8600}
+<br>
 
-- PDF ではフォントが埋め込まれていないと代替フォントが充てられるので，その表示を確認したいことがあると思います．
-    - DVI や PS では『美文書』と同じフォントで見えるが，PDF
-        だと異なることがある（フォントが埋め込まれていないと，代替フォント（pzdr (Zapf Dingbats)
-        に対して AdobePiStd）が充てられるため）．
-    - PDF に，Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に
+## 一覧表の利用例 {#j0bf8600}
 
-        ```
-        f embase14.map
-        ```
+<!-- - PDF ではフォントが埋め込まれていないと代替フォントが充てられるので，その表示を確認したいことがあると思います． -->
+<!-- - - DVI や PS では『美文書』と同じフォントで見えるが，PDF -->
+<!-- だと異なることがある（フォントが埋め込まれていないと，代替フォント（pzdr (Zapf Dingbats) -->
+<!-- に対して AdobePiStd）が充てられるため）． -->
+<!-- - - PDF に，Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に -->
+<!--  f embase14.map -->
+<!-- と書き込んで（もし % f embase14.map とすでに書いてあれば % を外して），普通に -->
+<!-- dvipdfmx コマンドを掛ければよい（こうしておくと -->
+<!-- Adobe の Times ，Helvetica ，Courier も埋め込まれます）． -->
 
-        と書き込んで（もし % f embase14.map とすでに書いてあれば % を外して），普通に
-        dvipdfmx コマンドを掛ければよい（こうしておくと
-        Adobe の Times ，Helvetica ，Courier も埋め込まれます）．
+<!-- / http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 -->
+<!-- / embase14.map は dvipdfmx で Adobe のフォントを埋め込むためのものですが， -->
+<!-- / Adobe のフォントは商品ですので，埋め込むためには，購入する必要があります。 -->
+<!-- / 多くの方が埋め込んでいる欧文基本 14 書体は URW のもので，W32TeX の -->
+<!-- / dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です。 -->
+<!-- / また，pdftex を使えば，W32TeX でも TeX Live でも，14 書体が埋め込まれます。 -->
 
 - 記号の番号が分かれば，たとえば \[ を出力したければ，
 
@@ -229,3 +238,4 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
     testfont は便利！
 
 [^1]: ちなみに，TeX 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルします．出力結果はデフォルトではカレントディレクトリに置かれます．TEXINPUTS 変数はプログラム名によって異なり，platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されています．
+[^2]: testfont.tex を改変した nfssfont.tex というものもあり，こちらを使うと，インタラティブかつ 「エンコーディング，ファミリー，シリーズ，シェイプ，サイズ」 という指定ができます．nfssfont.tex は tex ではなく，latex で処理します．
