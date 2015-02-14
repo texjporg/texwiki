@@ -31,21 +31,34 @@ pzdr
 pzdr というのは pifont の TFM 名です．
 [^1]
 
-> <strong>Unix あるいは Unix 互換 shell を使っている場合</strong>，これを簡単にするには，たとえば名前が tab.tex で，内容が
->
-> ```
-> \input testfont \table \end
-> ```
->
-> なる一行のファイルを TEXINPUTS で探せるディレクトリに置いておきます．そうして
->
-> ```
-> echo pzdr | tex tab
-> ```
->
-> とすれば一発で tab.dvi ができます．
+これを簡単にするには，たとえば名前が tab.tex で，内容が
 
-> <strong>昔の Windows のコマンド プロンプトの場合</strong>，Unix の場合と echo とパイプの仕様が異なっていて上のようにできなかったようですが，現在はできるようです.
+```
+\input testfont \table \end
+```
+
+なる一行のファイルを TEXINPUTS で探せるディレクトリに置いておきます．そうして
+
+```
+echo pzdr | tex tab
+```
+
+とすれば一発で tab.dvi ができます．
+
+> - <strong>Unix あるいは Unix 互換 shell を使っている場合</strong>は，この方法で問題ないはずです．
+> - <strong>Windows のコマンド プロンプトの場合</strong>は，Windows 7 で試したところうまくいきました．
+>     昔の Windows のコマンド プロンプトの場合，Unix の場合と
+>     echo とパイプの仕様が異なっていて上のようにできなかったようですが，現在はできるようです．
+>     <!-- もしできなかった場合は -->
+>     <!--  tex tab -->
+>     <!-- のあと，TeX からのプロンプトに答えてフォント名 -->
+>     <!--  pzdr -->
+>     <!-- を入力したら tab.dvi ができます． -->
+
+<!-- %Windows 7 のコマンドプロンプトで -->
+<!-- echo pzdr | tex tab -->
+<!-- とすると，問題なく tab.dvi ができたけど，何かまちがったかな? -->
+<!-- %%確かにできますね．ここは昔の記述をそのまま残したものですが，仕様が変わったのでしょうか？ -->
 
 なお，ファイル testfont.tex については『The METAFONTbook』（D.E. Knuth 著）の
 Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
