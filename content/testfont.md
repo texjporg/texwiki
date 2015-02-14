@@ -218,11 +218,12 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
 <!-- Adobe の Times ，Helvetica ，Courier も埋め込まれます）． -->
 
 <!-- / http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 -->
-<!-- / embase14.map は dvipdfmx で Adobe のフォントを埋め込むためのものですが， -->
-<!-- / Adobe のフォントは商品ですので，埋め込むためには，購入する必要があります。 -->
-<!-- / 多くの方が埋め込んでいる欧文基本 14 書体は URW のもので，W32TeX の -->
+<!-- / https://twitter.com/aminophen/status/568380041106567168 -->
+<!-- / embase14.map は dvipdfmx で Adobe のフォントを埋め込むためのものですが、 -->
+<!-- / Adobe のフォントは商品ですので、埋め込むためには、購入する必要があります。 -->
+<!-- / 多くの方が埋め込んでいる欧文基本 14 書体は URW のもので、W32TeX の -->
 <!-- / dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です。 -->
-<!-- / また，pdftex を使えば，W32TeX でも TeX Live でも，14 書体が埋め込まれます。 -->
+<!-- / また、pdftex を使えば、W32TeX でも TeX Live でも、14 書体が埋め込まれます。 -->
 
 - 記号の番号が分かれば，たとえば \[ を出力したければ，
 
