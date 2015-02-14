@@ -9,6 +9,9 @@ pukiwiki: "TeX のディレクトリ構成"
 
 ## TeX のディレクトリ構成 (TDS) {#u528ce3e}
 
+<!-- こういう内容，美文書には（付録に）記載されていますが，Web ではほとんど解説されていないので -->
+<!-- 有用そうです． -->
+
 TDS (TeX Directory Structure) とは，TeX の標準的なディレクトリ構成です．
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) はこの TDS に従っています．
 
