@@ -9,13 +9,7 @@ pukiwiki: "Hunspell"
 
 ## [Hunspell](http://hunspell.sourceforge.net/) {#g6159d85}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Summary {#m1ff4251}
-
-Hunspell はスペルチェッカーです．<br>
-
-- [Hunspell](http://hunspell.sourceforge.net/)
+Hunspell はスペルチェッカーです．
 
 ### 統合環境・エディタ {#t2a70fb7}
 
@@ -44,7 +38,7 @@ Hunspell はスペルチェッカーです．<br>
 - [NHunspell](http://sourceforge.net/projects/nhunspell/)
 - [Typo.js](https://github.com/cfinke/Typo.js)
 
-## Installation {#y7b755eb}
+## インストール {#y7b755eb}
 
 ### Windows {#mcb4fc44}
 
