@@ -16,9 +16,18 @@ pukiwiki: "TeX入門"
 
 <div style="text-align:right">—『ジーニアス英和大辞典』（大修館書店，2001年）</div>
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## TeX，LaTeX とは？ {#nef9fd41}
+
+TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
+によって開発された，フリーの「<strong>組版システム</strong>」です．
+すなわち，活版印刷のような「文字や図版などの要素を紙面に配置する」という作業をコンピュータで行います．
+現在のバージョン番号は 3.14159265 です（2014 年 1 月にリリース）．
+
+LaTeX は TeX の上に構築されたフリーの文書処理システムです．
+[Leslie Lamport](http://lamport.org/) によって開発されました．
+TeX は「組版のために開発された言語」でもあり，そのままでは使いにくい点もあるので，LaTeX では一般的な文書作成に便利な機能拡張がなされています．
 
 ### 読み方 {#gea7d22e}
 
@@ -41,15 +50,6 @@ TeX は「テック」または「テフ」(\[tex\])と読みます．
 TeX および LaTeX の正式なロゴはこのページのタイトルのようなデザインです．ただし，
 プレーンテキストや電子メールなどで書くときには組版《くみはん》処理による表記ができないので，
 それぞれ “TeX”，“LaTeX” と書くことになっています．
-
-### 作者 {#a2f15ee9}
-
-TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
-が作った組版システムです．
-現在のバージョン番号は 3.14159265 です．
-LaTeX は [Leslie Lamport](http://lamport.org/)
-が TeX の上に構築した文書処理システムです．
-TeX, LaTeX はフリーウェアです．
 
 ### 動作環境 {#u28a6dc4}
 
@@ -121,7 +121,7 @@ TeX, pTeX, upTeX が働いていると言うに留めておき，詳しい説明
 LaTeX には大きく分けて二つの異なるバージョンがあります．
 現行の LaTeX2e と，旧バージョンの LaTeX 2.09 です．
 日本語化されたものでは upLaTeX2e と pLaTeX2e と pLaTeX 2.09 があります．
-LaTeX2e と LaTeX 2.09 は別物と考えて良いくらいです．
+<strong>LaTeX2e と LaTeX 2.09 は別物</strong>と考えて良いくらいです．
 
 図書館には今でも LaTeX 2.09 時代の解説書が並んでいたりするかもしれません．
 LaTeX2e と LaTeX 2.09 は異なるものなので注意が必要です．
@@ -136,13 +136,21 @@ LaTeX 2.09 の互換モードで処理されるので，エラーなどが出な
 初心者には TeX のインストールが最も難しいところかもしれません．
 TeX Wiki には OS ごとのインストール方法が詳しく書かれていますので，[TeX 入手法](</TeX入手法/>) をご参照ください．
 
-### [TeX を Web で](</TeXをWebで/>) {#j1241f24}
+### TeX を Web で {#j1241f24}
 
 インストール不要で LaTeX が使えるウェブページもあります．
+初めて LaTeX に触れるにあたり，とりあえず使ってみたい場合は
 
 - 「[TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)」
 - 「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」
-- 「[Cloud LaTeX](https://cloudlatex.io/ja)」
+
+が便利です．
+このようなサービスの作り方については，[TeX を Web で](</TeXをWebで/>)を参照してください．
+
+また，より進んだクラウドのサービスも提供されています．
+
+- [Cloud LaTeX](https://cloudlatex.io/ja)
+- [Overleaf](https://www.overleaf.com/)（旧称：writeLaTeX）
 
 ## 使い方 {#hf6bc116}
 
