@@ -131,6 +131,16 @@ $ tlmgr init-usertree
 
 を実行します．<br>
 
+#### Ubuntu 14.04 {#p8dec55e}
+
+最新のUbuntu長期サポート(LTS)版は14.04 Trustyです。Ubuntu 14.04にはtexlive-lang-japaneseは存在しません。
+インストールするには下記のようにします。なお、tlmgrはtexlive-baseに含まれており、texlive-lang-cjkの依存関係から、texlive-lang-cjkと同時にインストールされます。
+
+```
+$ sudo apt-get install texlive-lang-cjk
+$ tlmgr init-usertree
+```
+
 ## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#ve306e42}
 
 ```
