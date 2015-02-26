@@ -7,11 +7,9 @@ pukiwiki: "testfont"
 
 # testfont
 
-<strong>目次</strong>
-
-<br>
-
 ## あるフォントの一覧を作成して，表示を確認する {#me3d4919}
+
+<strong>目次</strong>
 
 ### testfont のタイプセット {#da579b57}
 
@@ -89,7 +87,43 @@ testfont や fntproof では TFM 名を調べる必要がありますが，fontt
 - [TeX のフォントの文字一覧表：testfont](http://acetaminophen.hatenablog.com/entry/2015/02/14/004641)
 - [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
 
-<br>
+## 実際に埋め込まれるフォントに関する注意 {#fa18401d}
+
+PDF ではフォントが埋め込まれていないと代替フォントが充てられます． <!-- -DVI や PS では『美文書』と同じフォントで見えるが，PDF だと異なることがある． -->
+例えば上の例で挙げた Zapf Dingbats フォントの場合は，埋め込まれていなければ
+[Adobe Reader](</Adobe Reader/>) では代替フォントとして AdobePiStd が充てられます．
+
+欧文 14 書体（Times, Helvetica, Courier 各 4 書体に記号用フォントの
+Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://twitter.com/aminophen/status/568380041106567168 -->
+
+- W32TeX -- dvipdfmx は埋め込まず，pdftex は埋め込む
+- TeX Live -- dvipdfmx も pdftex も埋め込む
+
+dvipdfmx で Adobe のフォントを埋め込むための map は embase14.map ですが，Adobe
+のフォントは商品ですので，埋め込むためには購入する必要があります．
+そこで，多くの方は欧文基本 14 書体を埋め込むために URW のフォントを利用しています．
+W32TeX の dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です．
+
+<!-- / というわけで，長らくこのページに残っていた以下の記述をより正確にしたつもりです． -->
+<!-- - -PDF に Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に -->
+<!--  f embase14.map -->
+<!-- と書き込んで（もし % f embase14.map とすでに書いてあれば % を外して），普通に -->
+<!-- dvipdfmx コマンドを掛ければよい（こうしておくと -->
+<!-- Adobe の Times, Helvetica, も埋め込まれます）． -->
+
+## 一覧表の利用例 {#j0bf8600}
+
+- 記号の番号が分かれば，たとえば \[ を出力したければ，
+
+    ```
+    \symbol{'133}
+    ```
+
+    と入力すれば良いことがわかります（初めの ' は 8 進の識別子）．
+
+- たとえば [YaTeX](/YaTeX/) の色付けでは，16 進の識別子としての " を解釈しないので，本文中に
+    " が 1 つだけあるとそれよりうしろの文字列がすべてピンク色になってしまって不便です[^3]．よって，8 進の表記が出てくる
+    testfont は便利！
 
 ## Bad Know-How {#zebdcd9a}
 
@@ -203,40 +237,6 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
     - 『pLaTeX2e Another Manual vol.2』（乙部厳己，江口庄英 共著）7.3 節
         <!-- - -『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）1.2 節 -->
 
-<br>
-
-## 一覧表の利用例 {#j0bf8600}
-
-<!-- - PDF ではフォントが埋め込まれていないと代替フォントが充てられるので，その表示を確認したいことがあると思います． -->
-<!-- - - DVI や PS では『美文書』と同じフォントで見えるが，PDF -->
-<!-- だと異なることがある（フォントが埋め込まれていないと，代替フォント（pzdr (Zapf Dingbats) -->
-<!-- に対して AdobePiStd）が充てられるため）． -->
-<!-- - - PDF に，Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に -->
-<!--  f embase14.map -->
-<!-- と書き込んで（もし % f embase14.map とすでに書いてあれば % を外して），普通に -->
-<!-- dvipdfmx コマンドを掛ければよい（こうしておくと -->
-<!-- Adobe の Times ，Helvetica ，Courier も埋め込まれます）． -->
-
-<!-- / http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 -->
-<!-- / https://twitter.com/aminophen/status/568380041106567168 -->
-<!-- / embase14.map は dvipdfmx で Adobe のフォントを埋め込むためのものですが、 -->
-<!-- / Adobe のフォントは商品ですので、埋め込むためには、購入する必要があります。 -->
-<!-- / 多くの方が埋め込んでいる欧文基本 14 書体は URW のもので、W32TeX の -->
-<!-- / dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です。 -->
-<!-- / また、pdftex を使えば、W32TeX でも TeX Live でも、14 書体が埋め込まれます。 -->
-
-- 記号の番号が分かれば，たとえば \[ を出力したければ，
-
-    ```
-    \symbol{'133}
-    ```
-
-    と入力すれば良いことがわかります（初めの ' は 8 進の識別子）．
-
-- たとえば [YaTeX](/YaTeX/) の色付けでは，16 進の識別子としての " を解釈しないので，本文中に
-    " が 1 つだけあるとそれよりうしろの文字列がすべてピンク色になってしまって不便．そもそも
-    " を \*TeX-mode 中で打つには，C-q " としなければならないが．よって，8 進の表記が出てくる
-    testfont は便利！
-
 [^1]: ちなみに，TeX 関係のコマンドは，ソースを TEXINPUTS 変数に記述してあるディレクトリから見つけ出してきて，コンパイルします．出力結果はデフォルトではカレントディレクトリに置かれます．TEXINPUTS 変数はプログラム名によって異なり，platex 用ならば TEXINPUTS.platex というような形で texmf.cnf に記述されています．
-[^2]: testfont.tex を改変した nfssfont.tex というものもあり，こちらを使うと，インタラティブかつ 「エンコーディング，ファミリー，シリーズ，シェイプ，サイズ」 という指定ができます．nfssfont.tex は tex ではなく，latex で処理します．
+[^2]: testfont.tex を改変した nfssfont.tex というものもあり，こちらを使うと，インタラティブかつ「エンコーディング，ファミリー，シリーズ，シェイプ，サイズ」という指定ができます．nfssfont.tex は tex ではなく，latex で処理します．なお fonttable.sty は，nfssfont.tex を LaTeX パッケージの仕様にしたものです．
+[^3]: そもそも " を \*TeX-mode 中で打つには，C-q " としなければなりませんが．
