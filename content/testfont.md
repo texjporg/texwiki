@@ -91,7 +91,7 @@ testfont や fntproof では TFM 名を調べる必要がありますが，fontt
 
 PDF ではフォントが埋め込まれていないと代替フォントが充てられます． <!-- -DVI や PS では『美文書』と同じフォントで見えるが，PDF だと異なることがある． -->
 例えば上の例で挙げた Zapf Dingbats フォントの場合は，埋め込まれていなければ
-[Adobe Reader](</Adobe Reader/>) では代替フォントとして AdobePiStd が充てられます．
+Adobe Acrobat Reader DC では代替フォントとして AdobePiStd が充てられます．
 
 欧文 14 書体（Times, Helvetica, Courier 各 4 書体に記号用フォントの
 Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://twitter.com/aminophen/status/568380041106567168 -->
