@@ -32,17 +32,9 @@ PXjahyper パッケージは TeX Live, W32TeX に含まれています．
 
 ### 注意点 {#he2b8021}
 
-#### hyperref を使用するとページサイズの値がおかしくなる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#v71488f4}
+#### hyperref を使用するとページサイズの値がおかしくなる {#v71488f4}
 
-- [いつでも jsarticle と hyperref を使いたい](http://uep.ipe.media.kyoto-u.ac.jp/%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82-jsarticle-%E3%81%A8-hyperref-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84/)
-- [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
-- [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
-- [XeLaTeXでhyperrefを使う](http://d.hatena.ne.jp/tizz/20100429/1272567178)
-- [hyperrefを使うとページサイズがおかしくなる](http://glsharp.blogspot.jp/2010/04/hyperref.html)
-- [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
-
-[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) v0.3 以降を使用するとページサイズを正しい値に修正してくれます．
-([pxjahyper パッケージ](http://d.hatena.ne.jp/zrbabbler/20120528/1338221936) を参照．)<br>
+[PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) v0.3 以降を使用するとページサイズを正しい値に修正してくれます（[pxjahyper パッケージ](http://d.hatena.ne.jp/zrbabbler/20120528/1338221936) を参照）．
 
 PXjahyper パッケージが使用できない場合は hyperref のオプションに setpagesize=false を指定して回避することも可能です．
 
@@ -60,7 +52,16 @@ jsclasses を使用している場合はクラスオプションに papersize �
     \documentclass[uplatex,papersize]{jsarticle}
     ```
 
-#### "--"が hyperref で正しく扱われず，しおりが変になる → [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用する {#d46c2828}
+<strong>参考ページ</strong>
+
+- [いつでも jsarticle と hyperref を使いたい](http://uep.ipe.media.kyoto-u.ac.jp/%E3%81%84%E3%81%A4%E3%81%A7%E3%82%82-jsarticle-%E3%81%A8-hyperref-%E3%82%92%E4%BD%BF%E3%81%84%E3%81%9F%E3%81%84/)
+- [texliveで文字サイズがA4に収まらない。](http://zundoya.blogspot.jp/2012/03/texlivea4.html)
+- [LaTeX で用紙サイズがおかしくなるときは](http://fugenji.org/thomas/diary/index.php?no=r683)
+- [XeLaTeXでhyperrefを使う](http://d.hatena.ne.jp/tizz/20100429/1272567178)
+- [hyperrefを使うとページサイズがおかしくなる](http://glsharp.blogspot.jp/2010/04/hyperref.html)
+- [jsclassesとhyperrefを併用して卒論などを執筆するときの注意事項](http://written.4403.biz/archives/2010/02/jsclasses-hyperref.html)
+
+#### "--"が hyperref で正しく扱われず，しおりが変になる {#d46c2828}
 
 [PXjahyper パッケージ](https://github.com/zr-tex8r/PXjahyper) を使用すれば文字化けせずに表示できるようになります．([「PXjahyper」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=PXjahyper) を参照．)
 
@@ -74,7 +75,7 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 ### 不具合 {#p03bc3d7}
 
-#### [hyperref が非 e-TeX で動かない](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) → [Patch to correct non-e-TeX support of hyperref](https://gist.github.com/2843556) {#fbe5149d}
+#### [hyperref が非 e-TeX で動かない](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) {#fbe5149d}
 
 [非 e-TeX で hyperref を使うと……](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) を参照．
 
