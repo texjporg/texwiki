@@ -11,7 +11,7 @@ pukiwiki: "hyperref"
 
 [hyperref](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html) パッケージは，TeX 文書（DVI、PDF など）に HTML と同じハイパーリンク 機能を加えるためのマクロです．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ### 更新履歴 {#e8ca0037}
 
@@ -375,6 +375,22 @@ hyperref.sty を読み込むことによって下記のコマンドが使用可�
 | \hyperlink{name}{text} |   |
 | \hypertarget{name}{text} |   |
 
+さらに，細かい制御用のコマンドとして以下があります．
+
+- \section や \addcontentsline に渡す文字列を，実際に組版されるものとしおりに使われるものとで使い分けたい場合には，それぞれの引数内で次のコマンドを使います．
+
+    ```
+    \texorpdfstring{TeX に渡すトークン列}{PDF で使う文字列}
+    ```
+
+- \section などが明示的に書かれていないページで \addcontentsline を使って目次やしおりにそのページへのハイパーリンクを追加したい場合は
+
+    ```
+    \phantomsection
+    ```
+
+    をリンクを張りたい箇所へ入れておくと正しいページへリンクすることができます．
+
 ### url/nolinkurl {#h026c44c}
 
 url 及び nolinkurl とは，hyperref.styを読み込むことによって使用可能なコマンドの一つです．
@@ -448,7 +464,6 @@ PDF 文書の中に「次のページへ」や「先頭のページへ」など�
 ```
   \usepackage{hyperref}
   \usepackage[chapter]{algorithm}% eg.
-
 ```
 
 #### amsmath {#se667310}
@@ -459,11 +474,9 @@ environments that package amsmath provide, e.g. gather for equation.
 The environment equation can even redefined to use gather:
 
 ```
-
   \usepackage{amsmath}
   \let\equation\gather
   \let\endequation\endgather
-
 ```
 
 #### arydshln, longtable {#sf5e3f3f}
@@ -473,11 +486,9 @@ hyperref after arydshln generates an error, thus the
 resulting package order is then:
 
 ```
-
   \usepackage{longtable}
   \usepacakge{hyperref}
   \usepackage{arydshln}
-
 ```
 
 #### babel/magyar.ldf {#v90c07e3}
@@ -487,26 +498,27 @@ Unsupported.
 magyar.ldf's redefinitions of many LaTeX internals conflict
 with hyperref's redefinitions of these commands.
 
-```
-
-```
-
 #### bibentry {#zc121442}
 
 Workaround:
 
 ```
-
   \makeatletter
   \let\saved@bibitem\@bibitem
-  \let\saved@lbibitem\@lbibitem 
+  \let\saved@lbibitem\@lbibitem
   \makeatother
+```
 
+```
   \usepackage{bibentry}
   \usepackage{hyperref}
+```
 
+```
   \begin{document}
+```
 
+```
   \begingroup
     \makeatletter
     \let\@bibitem\saved@bibitem
@@ -518,10 +530,6 @@ Workaround:
 <!-- alpha.bst あたりを使用した場合には，\@lbibitem について \@bibitem と -->
 <!-- 同様の衝突回避措置が必要．なお，natbib パッケージを併用しても構わない -->
 <!-- 場合には，natbib パッケージを用いてもよい． -->
-
-```
-
-```
 
 #### cite {#x27bc69f}
 
@@ -556,17 +564,9 @@ pd1enc.def or puenc.def should be loaded before:
 
 or see entry for "vietnam".
 
-```
-
-```
-
 #### easyeqn {#s2f4cce7}
 
 Not compatible, breaks.
-
-```
-
-```
 
 #### ellipsis {#p3f61fda}
 
@@ -576,7 +576,6 @@ after package hyperref (pd1enc.def/puenc.def should be loaded before):
 ```
   \usepackage{hyperref}
   \usepackage{ellipsis}
-
 ```
 
 #### float {#p0427388}
@@ -584,53 +583,37 @@ after package hyperref (pd1enc.def/puenc.def should be loaded before):
 ```
   \usepackage{float}
   \usepackage{hyperref}
-
 ```
 
 - Several \caption commands are not supported inside one float object.
 - Anchor are set at top of the float object, if its style is controlled by float.sty.
-
-    ```
-
-    ```
 
 #### footnote {#f2570f39}
 
 This package is not supported, you have to disable hyperref's footnote
 support by using option "hyperfootnotes=false".
 
-```
-
-```
-
 #### IEEEtran.cls {#w0526a31}
 
 ```
   version >= V1.6b (because of \@makecaption, see ChangeLog)
-
 ```
 
 #### index {#i8981e97}
 
 ```
   version >= 1995/09/28 v4.1 (because of \addcontentsline redefinition)
-
 ```
 
 #### lastpage {#d840dc39}
 
 Compatible.
 
-```
-
-```
-
 #### linguex {#o8f74e36}
 
 ```
   \usepackage{hyperref}
   \usepackage{linguex}
-
 ```
 
 #### ltabptch {#u5dadd27}
@@ -639,7 +622,6 @@ Compatible.
   \usepackage{longtable}
   \usepackage{ltabptch}
   \usepackage{hyperref}
-
 ```
 
 #### minitoc-hyper {#v6aa949d}
@@ -647,16 +629,11 @@ Compatible.
 This package is obsolete, use the uptodate original
 package minitoc instead.
 
-```
-
-```
-
 #### multind {#s3bce4df}
 
 ```
   \usepackage{multind}
   \usepackage{hyperref}
-
 ```
 
 #### natbib {#i112ee0c}
@@ -664,7 +641,6 @@ package minitoc instead.
 ```
   \usepackage{natbib}
   \usepackage{hyperref}
-
 ```
 
 #### nomencl {#s2a437f3}
@@ -673,7 +649,6 @@ Example for introducing links for the page numbers:
 
 ```
 \renewcommand*{\pagedeclaration}[1]{\unskip, \hyperpage{#1}}
-
 ```
 
 #### prettyref {#n537f78a}
@@ -683,10 +658,14 @@ Example for introducing links for the page numbers:
 \documentclass{article}
 \usepackage{prettyref}
 \usepackage[pdftex]{hyperref}
+```
 
+```
 %\newrefformat{FIG}{Figure~\ref{#1}}% without hyperref
 \newrefformat{FIG}{\hyperref[{#1}]{Figure~\ref*{#1}}}
+```
 
+```
 \begin{document}
   This is a reference to \prettyref{FIG:ONE}.
   \newpage
@@ -696,7 +675,6 @@ Example for introducing links for the page numbers:
   \end{figure}
 \end{document}
 %%% example for prettyref %%%
-
 ```
 
 #### ntheorem {#dc514872}
@@ -711,16 +689,11 @@ Newer versions of ntheorem know the option hyperref:
 
 But there are still unsolved problems (options thref, ...).
 
-```
-
-```
-
 #### setspace {#n2cbb7c1}
 
 ```
   \usepackage{setspace}
   \usepackage{hyperref}
-
 ```
 
 #### sidecap {#l728be5c}
@@ -731,7 +704,6 @@ Before 2002/05/24 v1.5h:
     \usepackage{nameref}
     \usepackage{hyperref}
     \usepackage{sidecap}
-
 ```
 
 #### subfigure {#pc68b165}
@@ -759,7 +731,7 @@ or
     \usepackage{subfigure}
 ```
 
-v2.1.2: 
+v2.1.2:
 please update
 
 v2.1.3:
@@ -768,7 +740,6 @@ v2.1.3:
     \usepackage{hyperref}
     \usepackage{subfigure}
     or vice versa?
-
 ```
 
 #### titleref {#i6c782d6}
@@ -777,7 +748,6 @@ v2.1.3:
   \usepackage{nameref}
   \usepackage{titleref}% without usetoc
   \usepackage{hyperref}
-
 ```
 
 #### titlesec {#yf2b34b9}
@@ -785,10 +755,6 @@ v2.1.3:
 "nameref" supports titlesec, but hyperref does not
 (unsolved is the anchor setting, missing with unnumbered
 section, perhaps problems with page breaks with numbered ones).
-
-```
-
-```
 
 #### varioref {#s5f6c173}
 
@@ -802,29 +768,24 @@ Some babel versions (eg. 2005/05/21 v3.8g) contain a patch for
 varioref that breaks the hyperref support for varioref.
 Thus with babel v3.8g varioref cannot be used with hyperref.
 
-```
-
-```
-
 #### verse {#p86d2aed}
 
 Version 2005/08/22 v2.22 contains support for hyperref.
 
-```
-
-```
-
-For older versions see example from 
+For older versions see example from
 de.comp.text.tex (2005/08/11, slightly modified):
 
 ```
-
   \documentclass{article}
+```
 
+```
   % package order does not matter
   \usepackage{verse}
   \usepackage{hyperref}
+```
 
+```
   \makeatletter
   % make unique poemline anchors
   \newcounter{verse@env}
@@ -835,7 +796,9 @@ de.comp.text.tex (2005/08/11, slightly modified):
     \org@verse
   }
   \def\theHpoemline{\arabic{verse@env}.\thepoemline}
+```
 
+```
   % add anchor for before \addcontentsline in \@vsptitle
   \let\org@vsptitle\@vsptitle
   \def\@vsptitle{%
@@ -843,23 +806,32 @@ de.comp.text.tex (2005/08/11, slightly modified):
     \org@vsptitle
   }
   \makeatother
+```
 
+```
   \begin{document}
+```
 
+```
   \poemtitle{Poem 1}
   \begin{verse}
   An one-liner.
   \end{verse}
+```
 
+```
   \newpage
+```
 
+```
   \poemtitle{Poem 2}
   \begin{verse}
   Another one-liner.
   \end{verse}
+```
 
+```
   \end{document}
-
 ```
 
 #### vietnam {#o7d0377c}
