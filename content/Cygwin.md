@@ -53,6 +53,10 @@ Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
 
 ### TeX Live 公式パッケージ {#cfed3869}
 
+以下の操作で wget というコマンドを使用しますが，Cygwin インストール時にパッケージ選択画面で Default のままインストールした場合，wget がインストールされていないので，そのコマンドが使えません．<br>
+あらためて setup-x86.exe または setup-x86_64.exe を立ち上げ，パッケージ選択画面で wget を検索し，Default から Install に変更し，wget をインストールしましょう．<br>
+また，TeX Live のインストールには Perl も必要です．また，TeX で eps 形式の図を扱うときは Ghostscript も必要です．少なくとも，wget と Perl と Ghostscript は事前に Cygwin にインストールしておきましょう．
+
 #### TeX Live のインストール {#peed6637}
 
 - [CygwinにTeXlive公式パッケージを導入する](http://vraisamis.hatenadiary.jp/entry/2013/11/19/213227)
