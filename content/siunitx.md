@@ -7,7 +7,7 @@ pukiwiki: "siunitx"
 
 # siunitx
 
-## siunitx {#x11d1f9f}
+## [siunitx](https://www.ctan.org/pkg/siunitx) {#x11d1f9f}
 
 <!-- ICMJE というページから移転して加筆しました． (2015-02-11 アセトアミノフェン) -->
 
@@ -33,14 +33,17 @@ siunitx は，単位記号のフルスペルを入力すれば，大文字小文
 
 <table>
 <tbody>
-<tr><td> \SI[inter-unit-product=$\cdot$]{-1.234e3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
+<tr><td> \SI[inter-unit-product=\ensuremath{\cdot}]{-1.234e3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
 <tr><td> \ang{32;46;23.373} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle2.png" alt=""></td></tr>
-<tr><td> \SI{5}{\textit{\micro}s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
+<tr><td> \SI{5}{\micro s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
 <tr><td> \SI{60}{\degreeCelsius} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle4.png" alt=""></td></tr>
 </tbody>
 </table>
 
+% 上の3つめについては，画像では「マイクロ」がイタリックになっていますが，単位記号なので立体にする必要がありますね．画像を差し替えなければ．
+
 ## 関連リンク {#b1d93009}
 
 - 数式の前後の四分アキ [forum:913](https://okumuralab.org/tex/mod/forum/discuss.php?d=913)
+- 角度記号の出力法 [forum:1518](https://okumuralab.org/tex/mod/forum/discuss.php?d=1518)
 - [例の和欧文間空白が入らないアレ](http://d.hatena.ne.jp/zrbabbler/20130105/1357384970)
