@@ -56,6 +56,6 @@ C:\w32tex\share\texmf-local\tex\latex\acrotex>latex acrotex.ins
 
 ## 使い方 {#ub75b88a}
 
-acrotex\doc\adb_man.pdf を参照してください．<br>
+acrotex\doc\aeb_man.pdf を参照してください．<br>
 acrotex_exdoc.zip をダウンロードして展開すると豊富なサンプルドキュメントがあります．<br>
 AeB は dvipdfmx, dvips, pdftex, xetex などのドライバ指定オプションに対応しています．<br>
