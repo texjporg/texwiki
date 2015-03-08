@@ -22,15 +22,17 @@ HTML と LaTeX の比較/
 [スライドの作り方（jsarticle 編）](</TeX入門/スライドの作り方（jsarticle編）/>)/
 [応用的な使い方](</TeX入門/応用的な使い方/>)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+<strong>目次</strong>
 
 ## HTML と LaTeX の比較 {#g8b7bce6}
 
-Web ページを記述する際に使われるのが，HTML とよばれる言語です．<br>
-LaTeX も HTML も，「普通のテキストの中に文書整形の命令を埋め込む」という点で共通しており，この2つに対応関係を見ることが出来ます．<br>
-したがって，LaTeX を知っている人なら，HTML を覚えて Web ページを書くことも，簡単に出来ると思います．<br>
+Web ページを記述する際に使われるのが、HTML とよばれる言語です。
+LaTeX も HTML も「普通のテキストの中に文書整形の命令を埋め込む」という点で共通しており、この2つに対応関係を見ることが出来ます。
+したがって、LaTeX を知っている人なら、HTML を覚えて Web ページを書くことも簡単に出来ると思います。
 
-HTML と LaTeX には次のような対応関係があります。 <br>
+HTML と LaTeX には次のような対応関係があります。
 
 <table>
 <tbody>
@@ -59,7 +61,7 @@ HTML と LaTeX には次のような対応関係があります。 <br>
 <tr><td>...                       </td><td>または空行で表す</td></tr>
 <tr><td>                          </td><td></td></tr>
 <tr><td>&lt;p&gt;...&lt;br&gt;                </td><td>段落の途中の強制改行は \\</td></tr>
-<tr><td>...                       </td><td>(TeXでは強制改行はあまり使わない)</td></tr>
+<tr><td>…                       </td><td>（TeXでは強制改行はあまり使わない）</td></tr>
 <tr><td>                          </td><td></td></tr>
 <tr><td>&lt;blockquote&gt;              </td><td>\begin{quote}</td></tr>
 <tr><td>  ...                     </td><td>  頭を字下げしない引用</td></tr>
