@@ -11,9 +11,10 @@ pukiwiki: "pdf2svg"
 
 pdf2svg とは，[PDF](/PDF/) ファイルを SVG 形式に変換するツールです．
 [Poppler](/Poppler/) と cairo というライブラリに依存しています．
-[TeX2img](/TeX2img/) の Mac 版は，SVG 画像出力に pdf2svg を利用しています．
 
 - [https://github.com/db9052/pdf2svg](https://github.com/db9052/pdf2svg)
+
+[TeX2img](/TeX2img/) の Mac 版は，SVG 画像出力に pdf2svg を利用しています．
 
 ### License {#e2b828f7}
 
