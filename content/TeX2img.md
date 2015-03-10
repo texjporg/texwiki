@@ -19,8 +19,10 @@ TeX2img は TeX ソースコードを画像に変換するアプリケーショ�
 ### お知らせ {#icba8205}
 
 Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくインストールされていることが必要です．
-Windows 版はオプションで [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．
-Mac 版は OS X 標準の画像処理 API を活用します．
+
+- Windows 版はオプションで [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．
+- Mac 版は OS X 標準の画像処理 API を活用します．
+- Mac 版は SVG 画像の出力に使用する [pdf2svg](/pdf2svg/) を内蔵しています．
 
 ### 公式サイト {#e679cd40}
 
@@ -61,6 +63,7 @@ Windows, OS X
 - アウトラインをとった EPS ファイル
 - アウトラインをとった PDF ファイル
 - テキストを保持した PDF ファイル（Mac 版のみ）
+- アウトラインをとった SVG ファイル（Mac 版のみ）
 - JPEG ファイル
 - PNG ファイル
 - 背景を透過させた PNG ファイル
