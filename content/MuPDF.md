@@ -21,6 +21,8 @@ MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 
 - PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin)
 
+[TeX2img](/TeX2img/) の Mac 版は，SVG 画像出力に MuPDF の mudraw を使用しています．
+
 ### 公式サイト {#v7a56d30}
 
 - [MuPDF](http://www.mupdf.com/)
