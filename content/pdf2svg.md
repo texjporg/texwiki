@@ -14,7 +14,8 @@ pdf2svg とは，[PDF](/PDF/) ファイルを SVG 形式に変換するツール
 
 - [https://github.com/db9052/pdf2svg](https://github.com/db9052/pdf2svg)
 
-[TeX2img](/TeX2img/) の Mac 版は，SVG 画像出力に pdf2svg を利用しています．
+<!-- [[TeX2img]] の Mac 版は，SVG 画像出力に pdf2svg を利用しています．(ver.1.8.9) -->
+<!-- ver.1.8.9.1 で，pdf2svg ではなく [[MuPDF]] の mudraw の利用に乗り換えました． -->
 
 ### License {#e2b828f7}
 
