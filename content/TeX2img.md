@@ -22,7 +22,8 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 
 - Windows 版はオプションで [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．
 - Mac 版は OS X 標準の画像処理 API を活用します．
-- Mac 版は SVG 画像の出力に使用する [pdf2svg](/pdf2svg/) を内蔵しています．
+- Mac 版は SVG 画像の出力に使用する [MuPDF](/MuPDF/) の mudraw を内蔵しています．
+    <!-- [[pdf2svg]] よりすぐれた SVG 変換法に乗り換えました． -->
 
 ### 公式サイト {#e679cd40}
 
