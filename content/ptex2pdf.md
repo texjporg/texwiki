@@ -7,11 +7,7 @@ pukiwiki: "ptex2pdf"
 
 # ptex2pdf
 
-## ptex2pdf {#u0ef9f2c}
-
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## ptex2pdf とは {#c565a6de}
+## TeX ファイルから PDF ファイルを生成するコマンド ptex2pdf {#c565a6de}
 
 ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx を実行する Lua スクリプトです．<br>
 ptex2pdf は TeX Live, W32TeX に含まれています．<br>
@@ -19,6 +15,10 @@ ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 
 - [http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
 - [http://www.preining.info/blog/software-projects/ptex2pdf/](http://www.preining.info/blog/software-projects/ptex2pdf/)
+
+***
+
+***
 
 ### License {#b37c3e22}
 
@@ -39,10 +39,9 @@ ptex2pdf は TeX Live, W32TeX に含まれています．<br>
 
 ## 不具合 {#n3e20d7f}
 
-バーション0.6にこのバグが直された。
+### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#g2950b8d}
 
-### TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#g2950b8d}
-
+バージョン0.6より前では，
 TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
 
 ```
@@ -50,13 +49,15 @@ $ ptex2pdf -u -l hoge.tex
 /usr/bin/env: texlua  : No such file or directory
 ```
 
-ptex2pdf -u -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は ptex2pdf.lua の shebang line
+この場合，ptex2pdf.lua の shebang line
 
 ```
 #!/usr/bin/env texlua  
 ```
 
-の texlua の後ろの余分なスペース2つを削除してください．<br>
+の texlua の後ろの余分なスペース2つを削除してください．
+
+バージョン0.6でこのバグは修正されました．<br>
 
 - [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
 - [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
