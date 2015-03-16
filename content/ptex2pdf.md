@@ -110,14 +110,18 @@ $ ptex2pdf -u -l hoge.tex
 
 [http://www.preining.info/blog/software-projects/ptex2pdf/](http://www.preining.info/blog/software-projects/ptex2pdf/)
 
+#### 開発版レポジトリ {#repository}
+
+[https://github.com/norbusan/ptex2pdf](https://github.com/norbusan/ptex2pdf)
+
 #### ライセンス {#license}
 
-[GPLv2](https://gitorious.org/tlptexlive/ptex2pdf/source/COPYING)
+[GPLv2](https://github.com/norbusan/ptex2pdf#copyright-and-license)
 
 #### 変更履歴 {#changelog}
 
-- [https://gitorious.org/tlptexlive/ptex2pdf](https://gitorious.org/tlptexlive/ptex2pdf)
-    - [https://gitorious.org/tlptexlive/ptex2pdf/commits](https://gitorious.org/tlptexlive/ptex2pdf/commits)
+- [https://github.com/norbusan/ptex2pdf#changelog](https://github.com/norbusan/ptex2pdf#changelog)
+
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
     - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log)
 
