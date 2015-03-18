@@ -7,7 +7,7 @@ pukiwiki: "ptex2pdf"
 
 # ptex2pdf
 
-## TeX ファイルから PDF ファイルを生成するコマンド ptex2pdf {#c565a6de}
+## TeX ファイルから PDF ファイルを生成するプログラム ptex2pdf {#headline}
 
 ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx とを連続して実行する Lua スクリプトです．<br>
 ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．<br>
@@ -17,13 +17,13 @@ ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれていま�
 
 ***
 
-### 使い方 {#dfd1522f}
+### 使い方 {#usage}
 
 ```
 ptex2pdf <オプション> <ファイル名.tex>
 ```
 
-#### オプション一覧 {#q9a85657}
+#### オプション一覧 {#options}
 
 - -v  version
 - -h  help
@@ -36,7 +36,7 @@ ptex2pdf <オプション> <ファイル名.tex>
 - -ot '&lt;opts>' extra options for TeX（TeX コンパイラのオプション指定）
 - -od '&lt;opts>' extra options for dvipdfmx（dvipdfmx のオプション指定）
 
-#### 使用例 {#ldc0b8f0}
+#### 使用例 {#practices}
 
 - upLaTeX でコンパイル
 
@@ -56,9 +56,9 @@ ptex2pdf <オプション> <ファイル名.tex>
     ptex2pdf -u -l -ot "-synctex=1 -file-line-error -shell-escape" -od "-p b5 -S -P 0x0804" hoge.tex
     ```
 
-### 注意点 {#g4630026}
+### 注意点 {#notice}
 
-#### OS X の TeXstudio で ptex2pdf が動作しない {#v4d20b34}
+#### OS X の TeXstudio で ptex2pdf が動作しない {#osx_texstudio}
 
 OS X の TeXstudio で ptex2pdf が動作しないという報告「[(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)」があります．
 
@@ -75,9 +75,9 @@ OS X の TeXstudio で ptex2pdf が動作しないという報告「[(mac) TexSt
 
 - /usr/texbin へ PATH を通す（たとえば，~/.bash_profile に export PATH=$PATH:/usr/texbin を追加する）
 
-### 不具合 {#n3e20d7f}
+### 不具合 {#bugs}
 
-#### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#g2950b8d}
+#### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#extra_spaces}
 
 バージョン0.6より前では，
 TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
@@ -125,6 +125,6 @@ $ ptex2pdf -u -l hoge.tex
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
     - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log)
 
-### 関連記事 {#j18b1a02}
+### 関連記事 {#references}
 
 - ptex2pdf は (e)(u)p(la)tex→dvipdfmx という動作に特化していますが，より高い自由度でTeX関連プログラムを連続起動する仕組みに，latexmk があります．（Cf. [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)）
