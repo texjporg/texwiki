@@ -9,9 +9,9 @@ pukiwiki: "ptex2pdf"
 
 ## TeX ファイルから PDF ファイルを生成するプログラム ptex2pdf {#headline}
 
-ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx とを連続して実行する Lua スクリプトです．<br>
-ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．<br>
-もともとは [TeXworks](/TeXworks/) での使用を簡便にするために開発されましたが、[TeXShop](/TeXShop/) その他の統合環境においても使用できますし、コマンドライン（ターミナルからの直接の入力）でも使用できます。
+ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx とを連続して実行する Lua スクリプトです．
+ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+もともとは [TeXworks](/TeXworks/) での使用を簡便にするために開発されましたが，[TeXShop](/TeXShop/) その他の統合環境においても使用できますし，コマンドライン（ターミナルからの直接の入力）でも使用できます．
 
 ***
 
@@ -27,7 +27,7 @@ ptex2pdf <オプション> <ファイル名.tex>
 
 - -v  version
 - -h  help
-- --help （help の完全版で、TeXworks での設定の説明も含む）
+- --help （help の完全版で，TeXworks での設定の説明も含む）
 - -e  use eptex class of programs（euptex, eptex を使用する場合に指定）
 - -u  use uptex class of programs（uplatex, euptex, uptex を使用する場合に指定）
 - -l  use latex based formats（uplatex, platex を使用する場合に指定）
@@ -44,13 +44,13 @@ ptex2pdf <オプション> <ファイル名.tex>
     ptex2pdf -u -l hoge.tex
     ```
 
-- upLaTeX でコンパイル、synctex 有効（TeXShop の設定プロファイルから upTeX (ptex2pdf) を設定したときのデフォルト）
+- upLaTeX でコンパイル，synctex 有効（TeXShop の設定プロファイルから upTeX (ptex2pdf) を設定したときのデフォルト）
 
     ```
     ptex2pdf -u -l -ot "-synctex=1 -file-line-error" hoge.tex
     ```
 
-- upLaTeX でコンパイル、synctex 有効、-shell-escape 有効、B5 サイズ指定、PDF 暗号化、印刷のみ許可
+- upLaTeX でコンパイル，synctex 有効，-shell-escape 有効，B5 サイズ指定，PDF 暗号化，印刷のみ許可
 
     ```
     ptex2pdf -u -l -ot "-synctex=1 -file-line-error -shell-escape" -od "-p b5 -S -P 0x0804" hoge.tex
@@ -60,11 +60,11 @@ ptex2pdf <オプション> <ファイル名.tex>
 
 #### OS X の TeXstudio で ptex2pdf が動作しない {#osx_texstudio}
 
-OS X の TeXstudio で ptex2pdf が動作しないという報告「[(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)」があります．
+OS X の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告「[(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)」があります．
 
 原因の切分けが完全ではありませんが，以下の2ステップを行えば解決するようです．
 
-- ptex2pdf のバージョンが 0.6 より前であれば，<br>
+- ptex2pdf のバージョンが 0.6 より前であれば，
     ptex2pdf.lua の shebang line
 
     ```
@@ -79,8 +79,7 @@ OS X の TeXstudio で ptex2pdf が動作しないという報告「[(mac) TexSt
 
 #### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#extra_spaces}
 
-バージョン0.6より前では，
-TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
+バージョン0.6より前では，TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．
 
 ```
 $ ptex2pdf -u -l hoge.tex
@@ -127,4 +126,4 @@ $ ptex2pdf -u -l hoge.tex
 
 ### 関連記事 {#references}
 
-- ptex2pdf は (e)(u)p(la)tex→dvipdfmx という動作に特化していますが，より高い自由度でTeX関連プログラムを連続起動する仕組みに，latexmk があります．（Cf. [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)）
+- ptex2pdf は (e)(u)p(la)tex→dvipdfmx という動作に特化していますが，より高い自由度で TeX 関連プログラムを連続起動する仕組みに，[latexmk](/Latexmk/) があります．（Cf. [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)）
