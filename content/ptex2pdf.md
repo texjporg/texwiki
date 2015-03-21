@@ -11,7 +11,7 @@ pukiwiki: "ptex2pdf"
 
 ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx とを連続して実行する Lua スクリプトです．
 ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
-もともとは [TeXworks](/TeXworks/) での使用を簡便にするために開発されましたが，[TeXShop](/TeXShop/) その他の統合環境においても使用できますし，コマンドライン（ターミナルからの直接の入力）でも使用できます．
+もともとは [TeXworks](/TeXworks/) での使用を簡便にするために開発されましたが，[TeXShop](/TeXShop/) などの統合環境においても使用できますし，コマンドライン（ターミナルからの直接の入力）でも使用できます．
 
 ***
 
@@ -37,6 +37,12 @@ ptex2pdf <オプション> <ファイル名.tex>
 - -od '&lt;opts>' extra options for dvipdfmx（dvipdfmx のオプション指定）
 
 #### 使用例 {#practices}
+
+- pLaTeX でコンパイル
+
+    ```
+    ptex2pdf -e -l hoge.tex
+    ```
 
 - upLaTeX でコンパイル
 
@@ -101,10 +107,6 @@ $ ptex2pdf -u -l hoge.tex
 
 ### リンク {#links}
 
-#### CTAN 配布サイト {#ctanurl}
-
-[http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
-
 #### 作者による解説 {#project}
 
 [http://www.preining.info/blog/software-projects/ptex2pdf/](http://www.preining.info/blog/software-projects/ptex2pdf/)
@@ -119,10 +121,18 @@ $ ptex2pdf -u -l hoge.tex
 
 #### 変更履歴 {#changelog}
 
-- [https://github.com/norbusan/ptex2pdf#changelog](https://github.com/norbusan/ptex2pdf#changelog)
+[https://github.com/norbusan/ptex2pdf#changelog](https://github.com/norbusan/ptex2pdf#changelog)
 
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=markup)
-    - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/ptex2pdf.lua?view=log)
+#### CTAN 配布サイト {#ctanurl}
+
+[http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
+
+#### TeX Live 上の位置 {#texlive}
+
+- ユーザがインストールする位置：[texmf-dist/scripts/ptex2pdf/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/ptex2pdf/)
+- 開発レポジトリ上の関連する置き場：
+    - [http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/ptex2pdf/](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/ptex2pdf/)
+    - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/ptex2pdf/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/ptex2pdf/)
 
 ### 関連記事 {#references}
 
