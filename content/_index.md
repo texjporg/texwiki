@@ -90,6 +90,24 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [LuaTeX](/LuaTeX/), LuaJITTeX
 - [ConTeXt](/ConTeXt/)
 
+#### TeX 処理系を変更する際にはソースにも変更が必要となることがあります．例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります． {#j08ab319}
+
+- ドキュメントクラスを upLaTeX 対応のものに変更（[e-upTeX](/upTeX,upLaTeX/) も参照）
+
+    ```
+    \documentclass{jsarticle} → \documentclass[uplatex]{jsarticle}
+    \documentclass{tarticle} → \documentclass{utarticle}
+    ```
+
+- otf パッケージを用いているならば，uplatex オプションを加える
+
+    ```
+    \usepackage{otf} → \usepackage[uplatex]{otf}
+    ```
+
+    <!-- 多くの市販の参考書が pLaTeX ベースで，upLaTeX への移行が簡単であることが意外と知られておらず， -->
+    <!-- 「ネットで調べる情報」の上位に来るのではないかと思い FrontPage に書き加えました． -->
+
 ### エラーに遭遇したときは {#d1cf258f}
 
 まずは表示されているエラー・警告メッセージを読んでみてください．
