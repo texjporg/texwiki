@@ -52,6 +52,30 @@ LaTeX の picture 形式や [MetaPost](/MetaPost/) 形式のほか Tgif, Xfig, [
 - dxf (CAD exchange format)
 - ai (Adobe Illustrator)
 
+## インストール {#ua330eea}
+
+### Mac OS X {#e64abc47}
+
+#### MacPortsを利用したインストール {#k91c559c}
+
+pstoeditという名前のPortをイントールします。
+
+```
+$ sudo port install pstoedit
+```
+
+### Linux {#zc00b97c}
+
+#### Debian/Ubuntu {#wa540df8}
+
+DebianやUbuntuでは、pstoeditパッケージが3つに小分けされています。pstoeditに依存したプログラムを自分でコンパイルするのでなければ、libpstoedit0c2aとpstoeditをインストールします。
+
+```
+$ sudo apt-get install pstoedit
+```
+
+libpstoedit0c2aは依存関係で自動的にインストールされます。
+
 ## 関連リンク {#u9a3bf06}
 
 - [pstoedit | Inkscape@JP](http://inkscape.paix.jp/manual/overview/external/pstoedit/)
