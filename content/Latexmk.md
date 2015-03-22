@@ -89,7 +89,7 @@ latexmk -gg -pdfps hoge.tex
 latexmk -gg -pdf hoge.tex
 ```
 
-### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vim-latex, quickrun などの場合) {#ke005cd5}
+### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vimtex, quickrun などの場合) {#ke005cd5}
 
 ***
 
