@@ -9,7 +9,7 @@ pukiwiki: "Hunspell"
 
 ## [Hunspell](http://hunspell.sourceforge.net/) {#g6159d85}
 
-Hunspell はスペルチェッカーです．
+HunspellはTeXに対応したスペルチェッカーです。もともとは、MySpellをベースにしたハンガリー語用のスペルチェッカーでしたが、OpenOffice.orgに採用され、広く普及しています。辞書はUTF-8にエンコードされています。
 
 ### 統合環境・エディタ {#t2a70fb7}
 
@@ -38,7 +38,64 @@ Hunspell はスペルチェッカーです．
 - [NHunspell](http://sourceforge.net/projects/nhunspell/)
 - [Typo.js](https://github.com/cfinke/Typo.js)
 
+## 使い方 {#x189dc32}
+
+### CLIでHunspellを使う {#df042a8e}
+
+TeXやLaTeXファイルのスペルチェックを行うのは、-tオプションをつけます。
+
+```
+$ hunspell -t hoge.tex
+```
+
+ミススペルの箇所を一覧で出力する場合には、-lオプションをつけます。
+
+```
+$ hunspell -l -t hoge.tex
+```
+
+### [Emacs](/Emacs/)でHunspellを使う {#d8ba9a05}
+
+$HOME/.emacs.d/init.elに次の行を追加してバイトコンパイルしておきます。
+
+```
+(setq ispell-program-name "hunspell")
+(setq ispell-really-hunspell t)                            ;hunspellの拡張を使う
+```
+
+また、必要に応じて環境変数DICTIONARYやWORDLISTを指定しておきます。
+スペルチェックの操作方法はispellと同じです。
+
 ## インストール {#y7b755eb}
+
+### Mac OS X {#x81dd2d5}
+
+#### MacPortsを利用したインストール {#i50afc8d}
+
+Hunspell本体と必要な辞書をインストールします。
+
+```
+$ sudo port install hunspell hunspell-dict-en_GB hunspell-dict-en_US 
+```
+
+### Linux {#f74de4cd}
+
+#### Debian/Ubuntu {#n148086c}
+
+Hunspell本体と辞書をインストールします。
+
+```
+$ sudo apt-get install hunspell hunspell-en-us
+```
+
+辞書の設定は$HOME/.bashrcなどに書いておきます。
+
+```
+export DICTIONARY=en_US
+export WORDLIST=$HOME/.hunspell_personal_dictionary
+```
+
+複数の辞書を指定するときには、環境変数DICTIONARYにカンマ区切りで指定します。
 
 ### Windows {#mcb4fc44}
 
