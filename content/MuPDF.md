@@ -40,6 +40,12 @@ Windows, OS X, Linux, Android, iOS
 
 #### OS X {#bad1a3d8}
 
+MacPortsを利用してインストールする場合は次のようにします。
+
+```
+$ sudo port install mupdf
+```
+
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
@@ -52,9 +58,17 @@ Windows, OS X, Linux, Android, iOS
 
 - [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
 
-#### Debian {#ve64b6e7}
+#### Debian/Ubuntu {#ve64b6e7}
 
-- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
+DebianやUbuntuでは、MuPDFのパッケージはlibmupdf-devとmupdfとmupdf-toolsの3つに分かれています。自分でMuPDFを使ったプログラムをコンパイルするのでなければ、libmupdf-devをインストールする必要はありません。mupdfとmupdf-toolsを入れたらOKです。
+
+```
+$ sudo apt-get install mupdf mupdf-tools
+```
+
+なお、mupdf-toolsにはmutoolとmudrawが含まれています。
+
+<!-- -https://packages.debian.org/ja/mupdf -->
 
 #### Fedora {#k5d2c514}
 
