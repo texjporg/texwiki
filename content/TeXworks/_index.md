@@ -22,9 +22,8 @@ TeXworks は TeX でドキュメントを作成するためのシンプルな統
 
 - [TeXworks 公式サイト](http://www.tug.org/texworks/)
     - [The texworks Archives](http://tug.org/pipermail/texworks/)
-- [TeXworks 開発サイト](https://code.google.com/p/texworks/)
-    - [Downloads](https://code.google.com/p/texworks/downloads/list)
-    - [Wiki Pages](https://code.google.com/p/texworks/w/list)
+- [TeXworks 開発サイト](https://github.com/TeXworks)
+    - [Wiki Pages](https://github.com/TeXworks/texworks/wiki)
         <!-- -[[TeXworks in Launchpad:https://launchpad.net/~texworks]] -->
         <!-- - -[[~texworks/packaging/win32 : changes:http://bazaar.launchpad.net/~texworks/packaging/win32/changes]] -->
         <!-- - -[[~texworks/packaging/trunk : changes:http://bazaar.launchpad.net/~texworks/packaging/trunk/changes]] -->
@@ -37,7 +36,7 @@ Microsoft Windows（XP 以降），OS X, GNU/Linux で利用できます．TeXwo
 
 ### License {#lccd03cb}
 
-[GPLv2](https://code.google.com/p/texworks/source/browse/trunk/COPYING)<br>
+[GPLv2](https://github.com/TeXworks/texworks/blob/master/COPYING)<br>
 
 ### ダウンロード/インストール {#t28a6277}
 
@@ -61,7 +60,7 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 <!-- TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．~ -->
 
 <!-- **ChangeLog [#j22176bb] -->
-<!-- -[[コミットログ:https://code.google.com/p/texworks/source/list]] -->
+<!-- -[[コミットログ:https://github.com/TeXworks/texworks/commits/master]] -->
 <!-- //-[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
 <!-- //-[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
 <!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
@@ -115,7 +114,6 @@ C:\w32tex\bin\nkf.exe
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#t5313ebc}
 
-<!-- -[[Issue 615: display of Japanese characters if fonts is not embedded is broken on Windows:https://code.google.com/p/texworks/issues/detail?id=615]] -->
 <!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
 <!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．~ -->
 <!-- ゴシック体を表示したい場合は以下の方法があります．~ -->
@@ -198,27 +196,20 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 ## 不具合 {#v0f00822}
 
-- [Issues](https://code.google.com/p/texworks/issues/list)
-    <!-- - -[[Issue 164:	color schemes:https://code.google.com/p/texworks/issues/detail?id=164]] -->
-    <!-- - -[[Issue 261: Scripts:https://code.google.com/p/texworks/issues/detail?id=261]] -->
-    <!-- - -[[Issue 516: backslash becomes yen:https://code.google.com/p/texworks/issues/detail?id=516]] -->
+- [Issues](https://github.com/TeXworks/texworks/issues)
 
 ### [OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) {#n5c2ae8e}
 
-[TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．TeXworks 0.4.5 を OS X 10.8.4 でビルドすると日本語が表示できるそうです．
+[TeXworks 0.4.5 on Yosemite+](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1522) を使用してください．
 
-- [https://twitter.com/munepixyz/status/372835284217774080](https://twitter.com/munepixyz/status/372835284217774080)
-- [https://twitter.com/munepixyz/status/373461950824321024](https://twitter.com/munepixyz/status/373461950824321024)
 - [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
-- [Issue 623 - texworks - Built-in PDF viewer cannot display Japanese characters correctly.](https://code.google.com/p/texworks/issues/detail?id=623)
 
 ### OS X の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
 
-OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) では大丈夫なようです．
+OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
 
 - [TeXworks 0.4.3でのバックスラッシュの入力(Mac)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=674)
-- [Issue 516: backslash becomes yen](https://code.google.com/p/texworks/issues/detail?id=516)
 
 OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
@@ -279,7 +270,7 @@ $ pushd texworks-read-only
 
 - TeXworks のソースコードの該当箇所を修正します．
 
-[texworks-read-only/src/CompletingEdit.cpp](https://code.google.com/p/texworks/source/browse/trunk/src/CompletingEdit.cpp) の
+[texworks-read-only/src/CompletingEdit.cpp](https://github.com/TeXworks/texworks/blob/master/src/CompletingEdit.cpp) の
 
 ```
 currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
