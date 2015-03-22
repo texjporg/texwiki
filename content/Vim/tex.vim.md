@@ -567,7 +567,7 @@ function! AdobeAcrobatReaderDC()
     let viewer = 'open -a "Adobe Acrobat Reader DC.app"'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   else
-    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe'
+    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
