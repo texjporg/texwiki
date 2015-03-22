@@ -79,7 +79,7 @@ OS X の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告
 
     の texlua の後ろの余分なスペース2つを削除する
 
-- /usr/texbin へ PATH を通す（たとえば，~/.bash_profile に export PATH=$PATH:/usr/texbin を追加する）
+- /Library/TeX/texbin へ PATH を通す（たとえば，~/.bash_profile に export PATH=$PATH:/Library/TeX/texbin を追加する）
 
 ### 不具合 {#bugs}
 
