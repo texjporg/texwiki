@@ -16,7 +16,7 @@ pukiwiki: "jN"
 jN (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．<br>
 plugins\jN\includes\ フォルダーに js ファイルを作成すると JavaScript が実行できます．<br>
 
-- [jn-npp-plugin - Plugin for Notepad++ allowing you to automate some tasks by using JavaScript - Google Project Hosting](https://code.google.com/p/jn-npp-plugin/)
+- [https://github.com/sieukrem/jn-npp-plugin](https://github.com/sieukrem/jn-npp-plugin)
 - [jN - API](http://jn-npp-plugin.googlecode.com/svn/wiki/API/api.xml)
 
 ### License {#y5793722}
@@ -25,7 +25,7 @@ GPLv3
 
 ### ChangeLog {#w5083e4f}
 
-- [https://code.google.com/p/jn-npp-plugin/source/list](https://code.google.com/p/jn-npp-plugin/source/list)
+- [https://github.com/sieukrem/jn-npp-plugin/commits/master](https://github.com/sieukrem/jn-npp-plugin/commits/master)
 
 ### Typeset.js {#oab03eb3}
 
