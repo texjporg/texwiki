@@ -194,7 +194,7 @@ QPDFを利用したプログラムを自分でコンパイルしない場合は�
 $ sudo apt-get install qpdf
 ```
 
-qpdfをインストールすると、libqpdf13は依存関係により自動的にインストールされます。
+qpdfをインストールすると、libqpdf13が依存関係により自動的にインストールされます。
 
 ### Windows {#i1cf02cc}
 
