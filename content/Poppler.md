@@ -321,10 +321,43 @@ $ cp -pR poppler-data-0.4.7 /mingw/share/poppler
 
 ### OS X {#l3620b9b}
 
+#### MacPortsを利用したインストール {#t1b53491}
+
+popplerという名前のPortをインストールします。variantsはuniversalのみです。
+
+```
+$ sudo port install poppler
+```
+
+popplerをインストールすると下記の便利なコマンドが使えます。
+
+```
+$ port contents poppler | grep /bin
+  /opt/local/bin/pdfdetach
+  /opt/local/bin/pdffonts
+  /opt/local/bin/pdfimages
+  /opt/local/bin/pdfinfo
+  /opt/local/bin/pdfseparate
+  /opt/local/bin/pdftocairo
+  /opt/local/bin/pdftohtml
+  /opt/local/bin/pdftoppm
+  /opt/local/bin/pdftops
+  /opt/local/bin/pdftotext
+  /opt/local/bin/pdfunite
+```
+
 - [homebrew / Library / Formula / poppler.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/poppler.rb)
 - [/trunk/dports/graphics/poppler/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/poppler/Portfile)
 
 ### Linux {#k603e696}
+
+#### Debian/Ubuntu {#p084e73d}
+
+DebianやUbuntuではpopplerライブラリはlibpoppler44という名前だったり、libpoppler46という名前だったりします。poppler-utilsをインストールすれば、依存関係で適宜判断されますので、poppler-utilsをインストールします。日本語を使う場合はpoppler-dataも必要です。
+
+```
+$ sudo apt-get install poppler-utils poppler-data
+```
 
 - fontconfig
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
