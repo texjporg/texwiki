@@ -11,7 +11,6 @@ pukiwiki: "QPDF"
 
 QPDF は PDF ファイルの内容を維持したままの構造的な変換を行うコマンドラインプログラムで，
 pdf-to-pdf とでも呼ぶべきものです．
-[W32TeX](/W32TeX/) には標準で含まれています．
 
 ### 目次 {#pc3e3245}
 
@@ -171,6 +170,35 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 
 - 簡単な解説：[手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
 - 完全な解説：[PDF Reference](http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)
+
+## インストール {#u2e4c35f}
+
+### Mac OS X {#m5144232}
+
+#### MacPortsを利用したイントール {#q9f4b635}
+
+qpdfという名前のPortをインストールします。variantsはuniversalのみです。
+
+```
+$ sudo port install qpdf
+```
+
+### Linux {#k85475d6}
+
+#### Debian/Ubuntu {#cb42469f}
+
+DebianやUbuntuでは、QPDFのパッケージは3つに小分けされています。
+QPDFを利用したプログラムを自分でコンパイルしない場合は、libqpdf-devをインストールする必要はありません。
+
+```
+$ sudo apt-get install qpdf
+```
+
+qpdfをインストールすると、libqpdf13は依存関係により自動的にインストールされます。
+
+### Windows {#i1cf02cc}
+
+[W32TeX](/W32TeX/) には標準で含まれています．
 
 ## 関連リンク {#yd55bbaa}
 
