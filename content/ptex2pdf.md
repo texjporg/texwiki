@@ -38,12 +38,6 @@ ptex2pdf <オプション> <ファイル名.tex>
 
 #### 使用例 {#practices}
 
-- pLaTeX でコンパイル
-
-    ```
-    ptex2pdf -l hoge.tex
-    ```
-
 - upLaTeX でコンパイル
 
     ```
