@@ -9,7 +9,7 @@ pukiwiki: "Mac"
 
 ## [OS X](http://www.apple.com/jp/osx/) {#ed089b3d}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/a/ae/Osx-yosemite-logo.png" alt="OS X" width="220" height="220" style="float:right">
+<img src="http://upload.wikimedia.org/wikipedia/de/1/13/Yosemite_x.png" alt="OS X" width="220" height="220" style="float:right">
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -766,8 +766,8 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
 - [TeXworks](/TeXworks/)
-    - 【注意】OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.4](https://code.google.com/p/texworks/downloads/detail?name=TeXworks.0.4.4-r1004-SnowLeopard.dmg) を使用してください．<br>
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。[TeXworks 0.2.3](https://code.google.com/p/texworks/downloads/detail?name=TeXworks-Mac-0.2.3r466.zip) なら大丈夫なようです。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
+    - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.5 on Yosemite+](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1522) を使用してください．<br>
+    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
 - TexitEasy
     - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください．(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)<br>
@@ -781,7 +781,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - [AUCTeX](/AUCTeX/)
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + (vim-latex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+    - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
     - [Vim-LaTeX](/Vim-LaTeX/)
     - ATP
 - [Atom](/Atom/)
