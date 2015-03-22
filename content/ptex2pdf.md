@@ -41,7 +41,7 @@ ptex2pdf <オプション> <ファイル名.tex>
 - pLaTeX でコンパイル
 
     ```
-    ptex2pdf -e -l hoge.tex
+    ptex2pdf -l hoge.tex
     ```
 
 - upLaTeX でコンパイル
