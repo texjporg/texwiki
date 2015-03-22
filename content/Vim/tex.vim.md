@@ -118,8 +118,8 @@ function! ViewFile()
     call Zathura()
   elseif g:viewer == 'qpdfview'
     call Qpdfview()
-  elseif g:viewer == 'adobereader'
-    call AdobeReader()
+  elseif g:viewer == 'acroread'
+    call AdobeAcrobatReaderDC()
   endif
   return ''
 endfunction
@@ -132,8 +132,8 @@ function! SetViewer(viewer)
       let g:viewer = 'sumatrapdf'
     elseif a:viewer == 'fwdsumatrapdf'
       let g:viewer = 'fwdsumatrapdf'
-    elseif a:viewer == 'adobereader'
-      let g:viewer = 'adobereader'
+    elseif a:viewer == 'acroread'
+      let g:viewer = 'acroread'
     else
       let g:viewer = 'texworks'
     endif
@@ -146,8 +146,8 @@ function! SetViewer(viewer)
       let g:viewer = 'texworks'
     elseif a:viewer == 'skim'
       let g:viewer = 'skim'
-    elseif a:viewer == 'adobereader'
-      let g:viewer = 'adobereader'
+    elseif a:viewer == 'acroread'
+      let g:viewer = 'acroread'
     else
       let g:viewer = 'preview'
     endif
@@ -164,8 +164,8 @@ function! SetViewer(viewer)
       let g:viewer = 'zathura'
     elseif a:viewer == 'qpdfview'
       let g:viewer = 'qpdfview'
-    elseif a:viewer == 'adobereader'
-      let g:viewer = 'adobereader'
+    elseif a:viewer == 'acroread'
+      let g:viewer = 'acroread'
     else
       let g:viewer = 'evince'
     endif
@@ -212,8 +212,8 @@ function! PdfupLaTeX(type)
   if a:type == 'pdfuplatex'
     if has('win32') || has('win64')
       let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal"' . ' "' . masterTeXFile . '"'
-      if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
+      if g:viewer == 'acroread'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . ptex2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . ptex2pdf
@@ -227,8 +227,8 @@ function! PdfupLaTeX(type)
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
       let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf.exe' . ' "' . masterBaseName . '.ps"'
-      if g:viewer == 'adobereader'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
+      if g:viewer == 'acroread'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -269,8 +269,8 @@ function! PdfLaTeX(type)
   endif
 
   if has('win32') || has('win64')
-    if g:viewer == 'adobereader'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
+    if g:viewer == 'acroread'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . pdflatex
     else
       let execString = 'cd /d ' . masterDir . ' && ' . pdflatex
@@ -301,8 +301,8 @@ function! Latexmk(type)
   endif
 
   if has('win32') || has('win64')
-    if g:viewer == 'adobereader'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --rxi'
+    if g:viewer == 'acroread'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latexmk
     else
       let execString = 'cd /d ' . masterDir . ' && ' . latexmk
@@ -545,7 +545,7 @@ function! Qpdfview()
   return ''
 endfunction
 
-function! AdobeReader()
+function! AdobeAcrobatReaderDC()
   if &ft != 'tex'
     echo "calling Adobe Reader from a non-tex file"
     return ''
@@ -555,19 +555,19 @@ function! AdobeReader()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
-    if glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') != ''
-      let viewer = '"' . glob('C:/Program Files/Adobe/Reader */Reader/AcroRd32.exe') . '"'
-    elseif glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') != ''
-      let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Reader */Reader/AcroRd32.exe') . '"'
+    if glob('C:/Program Files/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') != ''
+      let viewer = '"' . glob('C:/Program Files/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') . '"'
+    elseif glob('C:/Program Files (x86)/Adobe/Adobe Reader DC/Reader/AcroRd32.exe') != ''
+      let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') . '"'
     else
-      let viewer = 'pdfopen --rxi --file'
+      let viewer = 'pdfopen --r15 --file'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' "' . masterPDFFile . '" | cmd'
   elseif has('macunix')
-    let viewer = 'open -a "Adobe Reader.app"'
+    let viewer = 'open -a "Adobe Acrobat Reader DC.app"'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   else
-    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe'
+    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
@@ -612,7 +612,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
 > <tr><td>:Viewer fwdsumatrapdf &lt;Enter&gt;</td><td>ビューアを fwdsumatrapdf に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:Viewer acroread &lt;Enter&gt;</td><td>ビューアを Adobe Acrobat Reader DC に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
 > </table>
@@ -648,7 +648,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Viewer preview &lt;Enter&gt;</td><td>ビューアを Preview に変更</td></tr>
 > <tr><td>:Viewer texshop &lt;Enter&gt;</td><td>ビューアを TeXShop に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:Viewer acroread &lt;Enter&gt;</td><td>ビューアを Adobe Acrobat Reader DC に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
 > </table>
@@ -687,7 +687,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
 > <tr><td>:Viewer qpdfview &lt;Enter&gt;</td><td>ビューアを qpdfview に変更</td></tr>
 > <tr><td>:Viewer texworks &lt;Enter&gt;</td><td>ビューアを TeXworks に変更</td></tr>
-> <tr><td>:Viewer adobereader &lt;Enter&gt;</td><td>ビューアを Adobe Reader に変更</td></tr>
+> <tr><td>:Viewer acroread &lt;Enter&gt;</td><td>ビューアを Adobe Acrobat Reader DC に変更</td></tr>
 > <tr><td>:TeXmaster main.tex &lt;Enter&gt;</td><td>マスターファイルを main.tex に設定</td></tr>
 > </tbody>
 > </table>
