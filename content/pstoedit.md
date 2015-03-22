@@ -19,7 +19,7 @@ pstoedit は，[PostScript](/PostScript/) や [PDF](/PDF/) ファイルを，種
 [W32TeX](/W32TeX/) に標準で含まれています．
 
 - [http://www.pstoedit.net/](http://www.pstoedit.net/)
-- [http://sourceforge.jp/projects/sfnet_pstoedit/](http://sourceforge.jp/projects/sfnet_pstoedit/)
+- [http://osdn.jp/projects/sfnet_pstoedit/](http://osdn.jp/projects/sfnet_pstoedit/)
 
 ### License {#t236e98d}
 
