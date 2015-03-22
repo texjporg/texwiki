@@ -9,17 +9,43 @@ pukiwiki: "pdf2svg"
 
 ## [pdf2svg](http://www.cityinthesky.co.uk/opensource/pdf2svg/) {#n625e0e9}
 
+<strong>目次</strong>
+
+<!-- [[TeX2img]] の Mac 版は，SVG 画像出力に pdf2svg を利用しています．(ver.1.8.9) -->
+<!-- ver.1.8.9.1 で，pdf2svg ではなく [[MuPDF]] の mudraw の利用に乗り換えました． -->
+
+## pdf2svgとは {#c69abda8}
+
 pdf2svg とは，[PDF](/PDF/) ファイルを SVG 形式に変換するツールです．
 [Poppler](/Poppler/) と cairo というライブラリに依存しています．
 
 - [https://github.com/db9052/pdf2svg](https://github.com/db9052/pdf2svg)
 
-<!-- [[TeX2img]] の Mac 版は，SVG 画像出力に pdf2svg を利用しています．(ver.1.8.9) -->
-<!-- ver.1.8.9.1 で，pdf2svg ではなく [[MuPDF]] の mudraw の利用に乗り換えました． -->
-
 ### License {#e2b828f7}
 
 GPL
+
+## インストール {#z23fb491}
+
+### Mac OS X {#r128ce62}
+
+#### MacPortsを利用したインストール {#i1fd0a21}
+
+pdf2svgという名前のPortが用意されています。variantsはuniversalのみです。
+
+```
+$ sudo port install pdf2svg
+```
+
+### Linux {#waea983e}
+
+#### Debian/Ubuntu {#ofb450ec}
+
+DebianやUbuntuでpdf2svgをインストールするためには次のようにします。
+
+```
+$ sudo apt-get install pdf2svg
+```
 
 ## 関連リンク {#r1d0a945}
 
