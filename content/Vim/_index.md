@@ -116,7 +116,7 @@ Vim は，チャリティウェアです．<br>
 ## Vim で LaTeX {#i2be46c6}
 
 - [tex.vim](/Vim/tex.vim/)
-- vim-latex
+- vimtex
 - LaTeX Box
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
@@ -168,7 +168,7 @@ Vim は，チャリティウェアです．<br>
 
 SumatraPDF はコマンドラインから forward search が可能です．
 
-詳しくは，[tex.vim](/Vim/tex.vim/), vim-latex, [Vim-LaTeX](/Vim-LaTeX/) を参照してください．
+詳しくは，[tex.vim](/Vim/tex.vim/), vimtex, [Vim-LaTeX](/Vim-LaTeX/) を参照してください．
 
 ### inverse search {#b8f7bf28}
 
@@ -176,9 +176,9 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 [Vim-LaTeX](/Vim-LaTeX/) を参照．<br>
 
-#### tex.vim, vim-latex, LaTeX Box, quickrun の場合 {#b099e4df}
+#### tex.vim, vimtex, LaTeX Box, quickrun の場合 {#b099e4df}
 
-tex.vim, vim-latex, LaTeX Box, quickrun の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
+tex.vim, vimtex, LaTeX Box, quickrun の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
