@@ -9,7 +9,7 @@ pukiwiki: "ATP"
 
 [Vim](/Vim/) > Automatic LaTeX Plugin for Vim (ATP)
 
-## [Automatic LaTeX Plugin for Vim (ATP)](http://atp-vim.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vim-latex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#j0660b72}
+## [Automatic LaTeX Plugin for Vim (ATP)](http://atp-vim.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#j0660b72}
 
 <img src="http://atp-vim.sourceforge.net/vim-logo-128.png" alt="Automatic LaTeX Plugin (ATP)" style="float:right">
 
