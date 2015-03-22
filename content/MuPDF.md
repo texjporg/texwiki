@@ -11,76 +11,64 @@ pukiwiki: "MuPDF"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/a/a7/MuPDF.png" alt="MuPDF" style="float:right">
 
-<strong>目次</strong>
-
-## MuPDF とは {#u255891c}
-
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 また MuPDF は PDF/XPS/CBZ のパーサ/レンダリングライブラリとしても使用できます．
+
+<strong>公式サイト</strong>
+
+- [MuPDF](http://www.mupdf.com/)
+
 以下のプログラムが MuPDF を使用しています．
 
 - PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin)
 
-[TeX2img](/TeX2img/) の Mac 版は，SVG 画像出力に MuPDF の mudraw を使用しています．
+[TeX2img](/TeX2img/) は，SVG 画像出力に MuPDF の mudraw を使用しています．
 
-### 公式サイト {#v7a56d30}
+***
 
-- [MuPDF](http://www.mupdf.com/)
+***
 
 ### 動作環境 {#u6c9b420}
 
 Windows, OS X, Linux, Android, iOS
 
-### License {#kcee43f7}
+### インストール {#m15a5d1f}
 
-[GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
-
-### ChangeLog {#vbbec018}
-
-- [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
-    - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
-    - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
-
-<!-- **fork [#d573b664] -->
-<!-- -https://github.com/monami-ya/mupdf/ -->
-
-## インストール {#m15a5d1f}
-
-### Windows {#j0820160}
+#### Windows {#j0820160}
 
 - [http://www.mupdf.com/downloads/](http://www.mupdf.com/downloads/)
 
-### OS X {#bad1a3d8}
+#### OS X {#bad1a3d8}
 
 - [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
-### Arch Linux {#y10f7abd}
+#### Arch Linux {#y10f7abd}
 
 - [https://www.archlinux.org/packages/?name=mupdf](https://www.archlinux.org/packages/?name=mupdf)
 - [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
 
-### Linux Mint {#od9b1036}
+#### Linux Mint {#od9b1036}
 
 - [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
 
-### Debian {#ve64b6e7}
+#### Debian {#ve64b6e7}
 
 - [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
 
-### Fedora {#k5d2c514}
+#### Fedora {#k5d2c514}
 
 - [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
 
-### openSUSE {#sa86e80c}
+#### openSUSE {#sa86e80c}
 
 - [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
 
-## ビルド {#ddb9bb15}
+### ビルド {#ddb9bb15}
 
-### Windows {#o34a88ba}
+#### Windows {#o34a88ba}
 
-#### MinGW {#qd80d98f}
+MinGW を使う方法があります．
 
 [MinGW](/MinGW/), zlib, libjpeg, OpenJPEG, FreeType 等をインストールします．
 
@@ -150,7 +138,22 @@ fitz/image_jpx.c の
 $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg zlib`" LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 `pkg-config --libs freetype2 libopenjpeg zlib`" make build=release prefix=/mingw install
 ```
 
-## 関連リンク {#u27a744e}
+### 関連記事 {#u27a744e}
+
+#### ライセンス {#kcee43f7}
+
+[GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
+
+#### 変更履歴 {#vbbec018}
+
+- [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
+    - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
+    - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
+
+<!-- ***fork [#d573b664] -->
+<!-- -https://github.com/monami-ya/mupdf/ -->
+
+#### リンク {#c8e94ca4}
 
 - [Reading PDF file in Windows store App sample in C#, C++, JavaScript for Visual Studio 2012](http://code.msdn.microsoft.com/windowsapps/Open-PDF-in-Windows-store-0614b58c)
 - [MuPDF - DenkiYagi](http://terurou.hateblo.jp/category/MuPDF)
