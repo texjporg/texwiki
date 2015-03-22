@@ -104,6 +104,30 @@ export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
 
 MacPorts や Homebrew を用いた xpdf のインストールも可能です．
 
+MacPortsではxpdfという名前でportが用意されており、xpdfのportには次のようなvariantsが用意されています。
+
+```
+$ port variants xpdf
+xpdf has the variants:
+   a4: Use A4 as the default paper size instead of Letter
+   drm: Obey access restrictions in PDF files
+   no_mangle_names: do not mangle the CLI tool names, conflicts with poppler
+   t1lib: Include t1lib support (moved to variant due to security issue)
+   universal: Build for multiple architectures
+```
+
+例えば、A4をデフォルトにインストールする場合は次のようにします。
+
+```
+$ sudo port install xpdf +a4
+```
+
+pdffontsなどのコマンド群は、popplerの同名のコマンドとかぶるので、デフォルトではxpdfの接頭辞が付いています（例えば、pdffontsならxpdf-pdffonts）。Mac OS Xユーザなら、通常はpopplerを使えば良いと思いますが、xpdfを使わざるを得ない事情があり、xpdfという接頭辞をつけたくない場合は、no_mangle_namesのvariantを追加します。例えば、次のようにします。
+
+```
+$ sudo port xpdf +a4+no_mangle_names
+```
+
 さらに言語設定が必要です．
 （以下のディレクトリ名は MacPorts の場合．Homebrew なら /opt/local ではなく /usr/local/ のはず）
 日本語を用いる場合は xpdf-japanese もインストールし，
