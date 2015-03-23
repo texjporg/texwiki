@@ -321,15 +321,15 @@ $ cp -pR poppler-data-0.4.7 /mingw/share/poppler
 
 ### OS X {#l3620b9b}
 
-#### MacPortsを利用したインストール {#t1b53491}
+#### MacPorts を利用したインストール {#t1b53491}
 
-popplerという名前のPortをインストールします。variantsはuniversalのみです。
+poppler という名前の Port をインストールします。variants は universal のみです。
 
 ```
 $ sudo port install poppler
 ```
 
-popplerをインストールすると下記の便利なコマンドが使えます。
+poppler をインストールすると下記の便利なコマンドが使えます。
 
 ```
 $ port contents poppler | grep /bin
@@ -345,6 +345,8 @@ $ port contents poppler | grep /bin
   /opt/local/bin/pdftotext
   /opt/local/bin/pdfunite
 ```
+
+なお，[Xpdf](/Xpdf/) 関連の Port（具体的には xpdf-tools と pdftohtml が該当）がインストールされていると衝突してインストールできなくなります。Poppler をインストールしたい場合は，xpdf-tools と pdftohtml をアンインストールしてください。
 
 - [homebrew / Library / Formula / poppler.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/poppler.rb)
 - [/trunk/dports/graphics/poppler/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/poppler/Portfile)
