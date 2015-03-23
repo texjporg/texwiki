@@ -7,16 +7,19 @@ pukiwiki: "Xpdf"
 
 # Xpdf
 
-## Xpdf {#z338a0d1}
+## PDF 操作ツール Xpdf {#z338a0d1}
 
 <span style="font-size:25px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
 
-[Poppler](/Poppler/) を使用した PDF ビューア
-（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）
-または [MuPDF](/MuPDF/) を使用してください．
+[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/)
+など）または [MuPDF](/MuPDF/) を使用してください．
 
-ただし，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です．
-ここでは，そのようなツールを紹介します．
+ただし，Xpdf に含まれるいくつかの
+[PDF](/PDF/) 操作ツールは，現在でも非常に有用です．ここでは，そのようなツールを紹介します．
+
+<strong>公式サイト</strong>
+
+- [http://www.foolabs.com/xpdf/](http://www.foolabs.com/xpdf/)
 
 <!-- とりあえず項目を復活させました． -->
 <!-- ビューアとして obsolete な理由説明がほしいです． -->
@@ -32,17 +35,11 @@ pukiwiki: "Xpdf"
 <!-- Poppler のほうがなにかと充実していそうなので，後日検証してみますが， -->
 <!-- 分岐してそれぞれ進化を遂げているようでもありますね． - - アセトアミノフェン (2015-03-12) -->
 
-<strong>目次</strong>
+***
 
-### 公式サイト {#t19ccac8}
+***
 
-- [http://www.foolabs.com/xpdf/](http://www.foolabs.com/xpdf/)
-
-### License {#f73d7f45}
-
-GPLv3, GPLv2
-
-## Xpdf のツール一覧 {#y19ebf12}
+### Xpdf のツール一覧 {#tools}
 
 PDF ビューアである xpdf のほかに，次のようなツールが存在します．
 
@@ -56,13 +53,12 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 - pdftohtml ： PDF を HTML に変換
 - pdfdetach ： PDF にアタッチされた部分をファイルとして抜き出すプログラム
 
-## インストール方法 {#jb8870ec}
+## インストール方法 {#install}
 
-### Windows {#za509c90}
+### Windows {#inst-windows}
 
 [W32TeX](/W32TeX/) には，
-Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています．
-以下が利用できます：
+Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています．以下が利用できます：
 
 - pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
     pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
@@ -73,29 +69,26 @@ Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収�
 
 - pdffonts, pdfimages, pdfinfo, pdftops, pdftotext (ver. 3.03)
 
-が含まれています. ただし，サポートファイル等は含まれていません．
+が含まれています．ただし，サポートファイル等は含まれていません．
 
-[CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，
-ビルド済みバイナリのアーカイブが入手できます．
+[CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，ビルド済みバイナリのアーカイブが入手できます．
 
-### OS X {#ua3cd20e}
+### OS X {#inst-mac}
 
 [TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします．
 
 #### 最も簡単な方法 {#i83bff45}
 
-[マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，
-Applications フォルダにインストールします．
-/Applications/Xpdf.app 及び /Applications/Xpdf.app/bin にこの順番でパスを通します．
-ターミナルから
+[マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86)
+をダウンロードし，Applications フォルダにインストールします．
+/Applications/Xpdf.app 及び /Applications/Xpdf.app/bin
+にこの順番でパスを通します．ターミナルから
 
 ```
 export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
 ```
 
-を実行してください．
-既に言語設定は済んでいるので，特別な操作は不要です．
-以下が利用可能になります：
+を実行してください．既に言語設定は済んでいるので，特別な操作は不要です．以下が利用可能になります：
 
 - pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
     pdftoppm, pdfdetach
@@ -104,7 +97,7 @@ export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
 
 MacPorts や Homebrew を用いた xpdf のインストールも可能です．
 
-MacPortsではxpdfという名前でportが用意されており、xpdfのportには次のようなvariantsが用意されています。
+MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています．
 
 ```
 $ port variants xpdf
@@ -116,20 +109,24 @@ xpdf has the variants:
    universal: Build for multiple architectures
 ```
 
-例えば、A4をデフォルトにインストールする場合は次のようにします。
+例えば，A4 をデフォルトにインストールする場合は次のようにします。
 
 ```
 $ sudo port install xpdf +a4
 ```
 
-pdffontsなどのコマンド群は、popplerの同名のコマンドとかぶるので、デフォルトではxpdfの接頭辞が付いています（例えば、pdffontsならxpdf-pdffonts）。Mac OS Xユーザなら、通常はpopplerを使えば良いと思いますが、xpdfを使わざるを得ない事情があり、xpdfという接頭辞をつけたくない場合は、no_mangle_namesのvariantを追加します。例えば、次のようにします。
+pdffonts などのコマンド群は [Poppler](/Poppler/) の同名のコマンドと衝突しますので，デフォルトでは
+xpdf の接頭辞が付いています（例えば，pdffonts なら xpdf-pdffonts）．Mac OS X ユーザなら、通常は
+Poppler を使えば良いと思いますが，Xpdf を使わざるを得ない事情があり，xpdf
+という接頭辞をつけたくない場合は，no_mangle_names の variant
+を追加します．例えば，次のようにします．
 
 ```
 $ sudo port xpdf +a4+no_mangle_names
 ```
 
-さらに言語設定が必要です．
-（以下のディレクトリ名は MacPorts の場合．Homebrew なら /opt/local ではなく /usr/local/ のはず）
+さらに言語設定が必要です．（以下のディレクトリ名は
+MacPorts の場合．Homebrew なら /opt/local ではなく /usr/local/ のはず）
 日本語を用いる場合は xpdf-japanese もインストールし，
 /opt/local/etc/xpdfrc を編集します．
 
@@ -154,22 +151,20 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 - pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
     pdftoppm, pdfdetach
 
-% MacPorts の場合は，どうやらバイナリ名に接頭語 xpdf- が付いている…？ Homebrew のほうは使ったことがありません．
-
 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
 
 - [/trunk/dports/graphics/xpdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/xpdf/Portfile)
 - [homebrew/Library/Formula/xpdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/xpdf.rb)
 
-### Linux {#a0b844a2}
+### Linux {#inst-linux}
 
 - [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照．
 
-## お知らせ {#m0130ecc}
+## お知らせ {#notice}
 
 - [［改訂第6版］LaTeX2e 美文書作成入門サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています．
 
-## 関連リンク {#fb8962ad}
+## 関連記事 {#links}
 
 - [http://www.ctan.org/tex-archive/support/xpdf](http://www.ctan.org/tex-archive/support/xpdf)
 - Forum「xpdf utilities」
@@ -180,3 +175,7 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 
 - [xpdf - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?xpdf)
 - [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
+
+### ライセンス {#license}
+
+GPLv3, GPLv2
