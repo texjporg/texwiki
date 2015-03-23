@@ -9,18 +9,18 @@ pukiwiki: "Latexmk"
 
 ## Latexmk {#ra50ed94}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-### Latexmk とは {#s94c7ed2}
-
-Latexmk は文書を作成するのに必要な回数タイプセットしてくれるツールです．<br>
+Latexmk は文書を作成するのに必要な回数タイプセットしてくれるツールです．
 
 - [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
 
+***
+
+***
+
 ### インストール {#t07c147c}
 
-TeX Live, W32TeX には Latexmk が最初から含まれています．<br>
-ただし，W32TeX の場合は別途 Perl インタプリタが必要です．
+TeX Live, W32TeX には Latexmk が最初から含まれています．ただし，[W32TeX](/W32TeX/) の場合は別途
+[Perl](/Perl/) インタプリタが必要です．
 
 #### Arch Linux {#qee2215d}
 
@@ -50,7 +50,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.exe %O %S %D';
@@ -67,7 +67,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
@@ -104,7 +104,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf.exe %O %S %D';
@@ -121,7 +121,7 @@ if ($^O eq 'MSWin32') {
   $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
-  $makeindex = 'mendex %O -U -o %D %S';
+  $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
   $ps2pdf = 'ps2pdf %O %S %D';
