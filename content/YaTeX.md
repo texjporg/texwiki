@@ -55,9 +55,9 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.78.5, 1.78.4, 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
+### YaTeX 1.78.8 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → yatexprc.el を修正する {#l5f1c74e}
 
-YaTeX 1.78.5, 1.78.4, 1.78.3, 1.78.2, 1.78.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
+YaTeX 1.78.8 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
 Okular は TeX ファイルをフルパスで指定しないと forward search ができません．<br>
 yatexprc.el を修正します．<br>
 
@@ -84,15 +84,12 @@ yatexprc.el を修正します．<br>
 
 ## インストール {#b2ec65b9}
 
-### Windows {#n699538a}
+### Emacs 標準のパッケージ管理システムを使用する場合 {#x0d7daaa}
 
-Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．<br>
+- [http://melpa.org/#/yatex](http://melpa.org/#/yatex)
 
-64-bit Windows の場合は<br>
-[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
-32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
-をインストールします．<br>
+### 公式サイトのパッケージを使用する場合 {#jde46c87}
+
 [YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
 展開したフォルダー名を yatex に変更します．<br>
 
@@ -117,6 +114,22 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 
 ***
 
+&#x7e;/.emacs.d/init.el に以下の設定を記述します．<br>
+
+```
+(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+```
+
+### Windows {#n699538a}
+
+Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．<br>
+
+64-bit Windows の場合は<br>
+[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
+32-bit Windows の場合は<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
+をインストールします．<br>
+
 #### 設定 {#edc51324}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
@@ -130,7 +143,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; YaTeX
 ;;
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
 (setq auto-mode-alist
       (append '(("\\.tex$" . yatex-mode)
@@ -234,29 +246,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 を参照．
 
 [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
-[YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダー名を yatex に変更します．<br>
-
-Emacs を起動して
-
-```
-C-x C-f ~/
-```
-
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
-
-***
-
-```
-~
-└─.emacs.d
-    └─site-lisp
-        └─yatex
-```
-
-***
 
 #### 設定 {#qe563613}
 
@@ -276,7 +265,6 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;;
 ;; YaTeX
 ;;
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
 (setq auto-mode-alist
       (append '(("\\.tex$" . yatex-mode)
@@ -351,30 +339,6 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 ### Linux {#e2cbcccd}
 
-[YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダー名を yatex に変更します．<br>
-
-Emacs を起動して
-
-```
-C-x C-f ~/
-```
-
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
-
-***
-
-```
-~
-└─.emacs.d
-    └─site-lisp
-        └─yatex
-```
-
-***
-
 #### 設定 {#nec42ee2}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
@@ -387,7 +351,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;;
 ;; YaTeX
 ;;
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
 (setq auto-mode-alist
       (append '(("\\.tex$" . yatex-mode)
