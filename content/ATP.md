@@ -9,7 +9,7 @@ pukiwiki: "ATP"
 
 [Vim](/Vim/) > Automatic LaTeX Plugin for Vim (ATP)
 
-## [Automatic LaTeX Plugin for Vim (ATP)](http://atp-vim.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#j0660b72}
+## [Automatic LaTeX Plugin for Vim (ATP)](https://github.com/coot/atp_vim) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#j0660b72}
 
 <img src="http://atp-vim.sourceforge.net/vim-logo-128.png" alt="Automatic LaTeX Plugin (ATP)" style="float:right">
 
@@ -21,12 +21,11 @@ pukiwiki: "ATP"
 
 Automatic LaTeX Plugin for Vim (ATP) は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイル，プレビューするためのプラグインです．<br>
 
-- [Automatic LaTeX Plugin (ATP)](http://atp-vim.sourceforge.net/)
+- [https://github.com/coot/atp_vim](https://github.com/coot/atp_vim)
+- [Automatic LaTeX Plugin for Vim](http://atp-vim.sourceforge.net/)
     - [ATP Requirements](http://atp-vim.sourceforge.net/requirements.shtml)
 - [Automatic LaTex Plugin for Vim at SourceForge](http://sourceforge.net/projects/atp-vim/)
-- [Automatic LaTex Plugin for Vim / Wiki / Home](http://sourceforge.net/p/atp-vim/wiki/)
 - [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
-- [https://github.com/coot/atp_vim](https://github.com/coot/atp_vim)
 
 ### License {#s306eff3}
 
@@ -34,7 +33,6 @@ GPLv3<br>
 
 ### ChangeLog {#rf82eb2b}
 
-- [log](http://sourceforge.net/p/atp-vim/code/ci/master/log/)
 - [https://github.com/coot/atp_vim/commits/master](https://github.com/coot/atp_vim/commits/master)
 
 ## ATP の動作に必要なもの {#g428a1c8}
@@ -64,9 +62,7 @@ error: Setup script exited with error: Unable to find vcvarsall.bat のエラー
 
 ## ダウンロード/インストール {#n5f1b86f}
 
-- [Automatic LaTex Plugin for Vim -  Browse Files at SourceForge.net](http://sourceforge.net/projects/atp-vim/files/)
-    - [安定版](http://sourceforge.net/projects/atp-vim/files/releases/)
-    - [開発版](http://sourceforge.net/projects/atp-vim/files/snapshots/)
+[https://github.com/coot/atp_vim](https://github.com/coot/atp_vim)
 
 からパッケージをダウンロードします．
 
