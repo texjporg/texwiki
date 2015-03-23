@@ -9,8 +9,9 @@ pukiwiki: "TeX Gyre"
 
 ## TeX Gyre {#v39cefcd}
 
-TeX Gyre フォントは，Times や Helvetica などの Adobe 基本 35 書体に対応する，高品質でオープンなフォントです．
-PostScript Type 1 形式と OpenType 形式で配布されています．
+TeX Gyre フォントは，Times や Helvetica などの
+Adobe 基本 35 書体に対応する，高品質でオープンなフォントです．PostScript Type 1 形式と
+OpenType 形式で配布されています．
 
 - [The TeX Gyre (TG) Collection of Fonts &mdash; GUST](http://www.gust.org.pl/projects/e-foundry/tex-gyre/)
 - [http://www.ctan.org/pkg/tex-gyre](http://www.ctan.org/pkg/tex-gyre)
@@ -26,21 +27,23 @@ PostScript Type 1 形式と OpenType 形式で配布されています．
 
 ### Mac OS X {#pbf60234}
 
-#### MacPortsを利用したインストール {#mb897c3c}
+#### MacPorts を利用したインストール {#mb897c3c}
 
-TeX Gyreフォントはtexlive-fonts-recommendedというPortに含まれています。
+TeX Gyre フォントは texlive-fonts-recommended という Port に含まれています。
 
 ```
 $ sudo port install texlive-fonts-recommended -doc
 ```
 
-ドキュメンも一緒にインストールす場合には、-docを外します。
+ドキュメントも一緒にインストールす場合には、-doc を外します。
 
 ### Linux {#g56a043a}
 
 #### Debian/Ubuntu {#yf7a7ef8}
 
-DebianやUbuntuのリポジトリからTeX Gyreフォントをインストールするには、fonts-texgyreパッケージをインストールします。古いバージョンのDebianやUbuntuではtex-gyreという名前になっていることもあります。
+Debian や Ubuntu のリポジトリから TeX Gyre フォントをインストールするには、fonts-texgyre
+パッケージをインストールします。古いバージョンの Debian や Ubuntu では tex-gyre
+という名前になっていることもあります。
 
 ```
 $ sudo apt-get install fonts-texgyre
