@@ -129,50 +129,6 @@ $ sudo tlmgr restore （パッケージ名） （リビジョン番号）
 
 とすることで以前のバージョンに戻すことができます．
 
-#### extractbb の追加 <a id="extractbb"></a> {#a9feb439}
-
-TeX Live 2014 のデフォルトでは extractbb が自動実行されないので，画像を読み込もうとすると次のようなエラーが出ることがあります．
-
-```
-runpopen command not allowed: extractbb
-
-! LaTeX Error: Cannot run pipe command. Try --shell-escape
-(--enable-pipes in MikTeX) option.
-```
-
-次の手順に従って shell_escape_commands に extractbb を追加しておくと，自動で extractbb が実行されるようになります．
-
-まず，TEXMFLOCAL の値を確認します．
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/texlive/texmf-local
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．
-
-```
-$ sudo mkdir -p /usr/local/texlive/texmf-local/web2c
-$ sudo touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．shell_escape_commands を以下のように編集して保存します．
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,xindy,\
-mpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．
-
-```
-$ sudo mktexlsr
-```
-
 #### フォント埋め込みの設定 {#w8cc5799}
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．IPAexフォントを埋め込む場合は
