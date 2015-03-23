@@ -27,7 +27,6 @@ HunspellはTeXに対応したスペルチェッカーです。もともとは、
 
 ### 辞書 {#q4b7f294}
 
-- [http://extensions.services.openoffice.org/](http://extensions.services.openoffice.org/)
 - [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/)
 - [http://sourceforge.net/projects/lyxwininstaller/files/hunspell/](http://sourceforge.net/projects/lyxwininstaller/files/hunspell/)
 
