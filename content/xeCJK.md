@@ -13,15 +13,15 @@ pukiwiki: "xeCJK"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
-## [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK) {#nb577bd0}
+## [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK) {#nb577bd0}
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
 IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．<br>
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/), [MiKTeX](/MiKTeX/) に含まれています．<br>
 
-- [ctex-kit](https://code.google.com/p/ctex-kit/)
-    - [xeCJK](https://code.google.com/p/ctex-kit/source/browse/trunk/xeCJK)
-        - xeCJK.dtx をクリックして File info の View raw file から xeCJK.dtx をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
+- [CTeX-kit](https://github.com/CTeX-org/ctex-kit)
+    - [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK)
+        - [https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx](https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx) をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
 - [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
@@ -31,14 +31,14 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 ### リリース情報/ChangeLog {#if427aa7}
 
-- [/tags/xeCJK/](https://code.google.com/p/ctex-kit/source/browse/tags/xeCJK/)
-- [Changes](https://code.google.com/p/ctex-kit/source/list)
+- [https://github.com/CTeX-org/ctex-kit/releases/tag/xeCJK](https://github.com/CTeX-org/ctex-kit/releases/tag/xeCJK)
+- [https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx](https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx)
 
 <!-- **注意点 [#w700f957] -->
 
 ### 不具合 {#t2600dd9}
 
-[Issues](https://code.google.com/p/ctex-kit/issues/list?q=xeCJK)
+[Issues](https://github.com/CTeX-org/ctex-kit/issues?q=xeCJK)
 
 #### xeCJK 3.2.12 で 丸1「①」(U+2460) が表示されない → \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
