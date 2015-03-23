@@ -7,11 +7,13 @@ pukiwiki: "Mac"
 
 # Mac
 
-## [OS X](http://www.apple.com/jp/osx/) {#ed089b3d}
+## [OS X](http://www.apple.com/jp/osx/) (Mac) での TeX の利用 {#ed089b3d}
 
 <img src="http://upload.wikimedia.org/wikipedia/de/1/13/Yosemite_x.png" alt="OS X" width="220" height="220" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## [MacTeX](http://tug.org/mactex/) &amp; [TeX Live](</TeX Live/>) <a id="mactex"></a><a id="texlive"></a> {#f5466652}
 
