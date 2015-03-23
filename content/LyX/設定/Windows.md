@@ -49,7 +49,7 @@ DVIビューア用紙寸法設定:　　[^2]<br>
 索引の生成<br>
 処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
 オプション(T):　　　　　[^5]<br>
-日本語用処理子(J):　<ins>mendex -c -q -U</ins>[^6]<br>
+日本語用処理子(J):　<ins>upmendex -c -q</ins>[^6]<br>
 
 <br>
 
