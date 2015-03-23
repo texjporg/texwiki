@@ -193,8 +193,8 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-U -s "%style" "%input"</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\upmendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\upmendex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -261,8 +261,8 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\mendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\mendex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2014\bin\win64\upmendex.exe</ins> または <ins>C:\texlive\2014\bin\win32\upmendex.exe</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
@@ -287,11 +287,11 @@ TeX Live がインストールされていれば以下のような表示にな�
 　　LuaLatex program　　　(C:\texlive\2014\bin\win64\lualatex.exe または C:\texlive\2014\bin\win32\lualatex.exe)<br>
 　　Bibtex program　　　(C:\texlive\2014\bin\win64\upbibtex.exe または C:\texlive\2014\bin\win32\upbibtex.exe)<br>
 　　Biber (BibLaTeX)　　　(C:\texlive\2014\bin\win64\biber.exe または C:\texlive\2014\bin\win32\biber.exe)<br>
-　　Makeindex program　　　(C:\texlive\2014\bin\win64\mendex.exe または C:\texlive\2014\bin\win32\mendex.exe)<br>
+　　Makeindex program　　　(C:\texlive\2014\bin\win64\upmendex.exe または C:\texlive\2014\bin\win32\upmendex.exe)<br>
 　　Dvips program　　　(C:\texlive\2014\bin\win64\dvips.exe または C:\texlive\2014\bin\win32\dvips.exe)<br>
 　　Dvipdf program　　　(C:\texlive\2014\bin\win64\dvipdfmx.exe または C:\texlive\2014\bin\win32\dvipdfmx.exe)<br>
 　　Ps2pdf program　　　(C:\texlive\2014\bin\win64\ps2pdf.exe または C:\texlive\2014\bin\win32\ps2pdf.exe)<br>
-　　Makeindex program (nomencl)　　　(C:\texlive\2014\bin\win64\mendex.exe または C:\texlive\2014\bin\win32\mendex.exe)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2014\bin\win64\upmendex.exe または C:\texlive\2014\bin\win32\upmendex.exe)<br>
 　　Kpsewhich program　　　(C:\texlive\2014\bin\win64\kpsewhich.exe または C:\texlive\2014\bin\win32\kpsewhich.exe)<br>
 
 ***
