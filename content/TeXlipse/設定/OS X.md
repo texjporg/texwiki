@@ -506,7 +506,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 
 ***
 
-#### [Adobe Reader](</Adobe Reader/>) {#d960177c}
+#### Adobe Acrobat Reader DC {#d960177c}
 
 ***
 
@@ -519,7 +519,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/open</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "Adobe Reader.app" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-a "Adobe Acrobat Reader DC.app" "&#x25;file"</ins><br>
 
 <br>
 
