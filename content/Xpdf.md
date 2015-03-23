@@ -163,7 +163,6 @@ toUnicodeDir                /opt/local/share/xpdf/xpdf-japanese/CMap
 - Forum「Xpdf内蔵のコマンドで日本語エラー」
     [forum:1104](https://okumuralab.org/tex/mod/forum/discuss.php?d=1104)
 
-- [xpdf - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?xpdf)
 - [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
 
 ### ライセンス {#license}
