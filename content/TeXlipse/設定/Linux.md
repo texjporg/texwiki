@@ -124,7 +124,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex -U -s "%style" "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>upmendex -s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
 <br>
@@ -184,7 +184,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>mendex -U "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>upmendex "&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
 <br>
