@@ -11,7 +11,7 @@ pukiwiki: "Xpdf"
 
 <span style="font-size:25px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
 
-[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) など）または [MuPDF](/MuPDF/) を使用してください．
+[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を使用してください．
 
 ただし，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です。ここでは，そのようなツールを紹介します。
 
@@ -64,7 +64,8 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 [TeX Live](</TeX Live/>) win32 には
 
-- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext (ver. 3.03)
+- pdffonts, pdfimages, pdfinfo, pdftops, pdftotext,
+    pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
 
 が含まれています。ただし，サポートファイル等は含まれていません。
 
