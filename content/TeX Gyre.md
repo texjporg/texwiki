@@ -21,3 +21,27 @@ PostScript Type 1 形式と OpenType 形式で配布されています．
 - [XeLaTeX：欧文フォントについての補足 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/xelatex1.html)
 - [TeX GyreフォントとOTFの共存](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=902)
 - [欧文フォントにフリーで高品質なTeX Gyreフォントを使おう](http://myfuturesightforpast.blogspot.jp/2013/12/tex-gyre.html)
+
+## インストール {#k53b3194}
+
+### Mac OS X {#pbf60234}
+
+#### MacPortsを利用したインストール {#mb897c3c}
+
+TeX Gyreフォントはtexlive-fonts-recommendedというPortに含まれています。
+
+```
+$ sudo port install texlive-fonts-recommended -doc
+```
+
+ドキュメンも一緒にインストールす場合には、-docを外します。
+
+### Linux {#g56a043a}
+
+#### Debian/Ubuntu {#yf7a7ef8}
+
+DebianやUbuntuのリポジトリからTeX Gyreフォントをインストールするには、fonts-texgyreパッケージをインストールします。古いバージョンのDebianやUbuntuではtex-gyreという名前になっていることもあります。
+
+```
+$ sudo apt-get install fonts-texgyre
+```
