@@ -8,7 +8,7 @@ pukiwiki: "TeXstudio"
 
 # TeXstudio
 
-<!-- *[[TeXstudio:http://texstudio.sourceforge.net/]] → Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更するまたは Qt 4 版の TeXstudio を使用する [#wc9679cf] -->
+<!-- *[[TeXstudio:http://texstudio.sourceforge.net/]] → Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更する [#wc9679cf] -->
 
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．TeXstudio のエディタ部分は Texmaker とは異なり，[QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用しています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
@@ -107,7 +107,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ***
 
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる → 高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更するまたは Qt 4 版の TeXstudio を使用する {#ped67bdd}
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる → 高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更する {#ped67bdd}
 
 Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置から右にずれる場合は高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
 Qt 4 版の TeXstudio では日本語入力するとカーソルが文字の位置から右にずれる現象は発生しませんでした．<br>
