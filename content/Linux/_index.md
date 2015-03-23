@@ -8,11 +8,13 @@ pukiwiki: "Linux"
 
 # Linux
 
-## [Linux](https://ja.wikipedia.org/wiki/Linux) {#h0c68a28}
+## [Linux](https://ja.wikipedia.org/wiki/Linux) での TeX の利用 {#h0c68a28}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/200px-Tux.svg.png" alt="Linux" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## Linux での TeX 環境構築 {#h2a1700b}
 
