@@ -17,12 +17,11 @@ pukiwiki: "Go"
 
 Go は汎用プログラミング言語です．<br>
 
-- [The Go Programming Language](http://golang.org/)
+- [http://golang.org/](http://golang.org/)
 - [http://golang-jp.org/](http://golang-jp.org/)
     - [https://github.com/gophersjp/go](https://github.com/gophersjp/go)
-- [https://code.google.com/p/go/](https://code.google.com/p/go/)
-- [https://go.googlesource.com/go](https://go.googlesource.com/go)
 - [https://github.com/golang/go](https://github.com/golang/go)
+- [https://go.googlesource.com/go](https://go.googlesource.com/go)
 - [http://stackoverflow.com/questions/tagged/go](http://stackoverflow.com/questions/tagged/go)
     - [http://stackoverflow.com/questions/22153309/extension-methods-in-golang](http://stackoverflow.com/questions/22153309/extension-methods-in-golang)
 
@@ -33,8 +32,8 @@ Go は汎用プログラミング言語です．<br>
 
 ### ChangeLog {#pdc98ad9}
 
-- [https://go.googlesource.com/go](https://go.googlesource.com/go)
 - [https://github.com/golang/go/commits/master](https://github.com/golang/go/commits/master)
+- [https://go.googlesource.com/go](https://go.googlesource.com/go)
 
 ### Related Links {#sba670f5}
 
