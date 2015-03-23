@@ -156,24 +156,24 @@ SVN<br>
 LaTeX
 : &nbsp;
 
-: "/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
 
-: "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
 
 XeLaTeX
 : &nbsp;
 
-: "/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
 
 LuaLaTeX
 : &nbsp;
 
-: "/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
 
-: "/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
 
 外部PDFビューア
 : &nbsp;
@@ -183,12 +183,12 @@ LuaLaTeX
 DviPs
 : &nbsp;
 
-: ruby -e "cmd='/usr/texbin/dvips -Ppdf -z -f '+0x22.chr+'?am.dvi'+0x22.chr+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+0x22.chr+'?am.ps'+0x22.chr;system(cmd)"
+: ruby -e "cmd='/Library/TeX/texbin/dvips -Ppdf -z -f '+0x22.chr+'?am.dvi'+0x22.chr+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+0x22.chr+'?am.ps'+0x22.chr;system(cmd)"
 
 DviPng
 : &nbsp;
 
-: "/usr/texbin/dvipng" -T tight -D 120 %.dvi
+: "/Library/TeX/texbin/dvipng" -T tight -D 120 %.dvi
 
 Ps2Pdf
 : &nbsp;
@@ -198,34 +198,34 @@ Ps2Pdf
 DviPdf
 : &nbsp;
 
-: "/usr/texbin/dvipdfmx" %.dvi
+: "/Library/TeX/texbin/dvipdfmx" %.dvi
 
 BibTeX
 : &nbsp;
 
-: "/usr/texbin/upbibtex" %
+: "/Library/TeX/texbin/upbibtex" %
 
 BibTex 8ビット
 : &nbsp;
 
-: "/usr/texbin/bibtex8" %
+: "/Library/TeX/texbin/bibtex8" %
 
 Biber
 : &nbsp;
 
-: "/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars %
+: "/Library/TeX/texbin/biber" --bblencoding=utf8 -u -U --output_safechars %
 
 Makeindex
 : &nbsp;
 
-: "/usr/texbin/upmendex" %.idx
+: "/Library/TeX/texbin/upmendex" %.idx
 
 Texindy
 : &nbsp;
 
-: "/usr/texbin/ptexindy" %.idx
+: "/Library/TeX/texbin/ptexindy" %.idx
 
-: "/usr/texbin/texindy" %.idx
+: "/Library/TeX/texbin/texindy" %.idx
 
 Makeglossary
 : &nbsp;
@@ -235,12 +235,12 @@ Makeglossary
 Metapost
 : &nbsp;
 
-: "/usr/texbin/upmpost" -interaction=nonstopmode %
+: "/Library/TeX/texbin/upmpost" -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
 
-: "/usr/texbin/asy" %.asy
+: "/Library/TeX/texbin/asy" %.asy
 
 Ghostscript
 : &nbsp;
@@ -250,7 +250,7 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: "/usr/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+: "/Library/TeX/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 SVN
 : &nbsp;
