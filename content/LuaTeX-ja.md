@@ -75,6 +75,30 @@ C:.
 
 ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を実行してください．
 
+#### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
+
+DebianやUbuntuのリポジトリから、LuaTeX-jaをインストールするには、texlive-lang-cjkパッケージまたはtexlive-lang-japaneseパッケージをインストールします。ただし、必ずしも最新版ではなくタイムラグがあることに注意。
+
+```
+$ sudo apt-get install texlive-lang-cjk
+```
+
+または
+
+```
+$ sudo apt-get install texlive-lang-japanese
+```
+
+#### MacPortsを利用してインストールする場合 {#k02c7aab}
+
+LuaTeX-jaはtexlive-lang-japaneseというPortに含まれています。
+
+```
+$ sudo port install texlive-lang-japanese -doc
+```
+
+ドキュメントも一緒にインストールする場合には、-docオプションを除きます。
+
 ### 注意点 {#vbed1356}
 
 [LuaTeX-jaの使い方#手動でインストールする場合](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h3-.E6.89.8B.E5.8B.95.E3.81.A7.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.81.99.E3.82.8B.E5.A0.B4.E5.90.88) を参照．<br>
