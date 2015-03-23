@@ -10,8 +10,6 @@ pukiwiki: "Linux"
 
 ## [Linux](https://ja.wikipedia.org/wiki/Linux) での TeX の利用 {#h0c68a28}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/200px-Tux.svg.png" alt="Linux" style="float:right">
-
 ***
 
 ***
