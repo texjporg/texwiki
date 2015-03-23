@@ -73,6 +73,30 @@ Windows, OS X, Linux
 
 - [https://github.com/area/language-latex/commits/master](https://github.com/area/language-latex/commits/master)
 
+## latexer {#z842b3f7}
+
+- [https://atom.io/packages/latexer](https://atom.io/packages/latexer)
+
+### ChangeLog {#vee33dcf}
+
+- [https://github.com/Focus/latexer/commits/master](https://github.com/Focus/latexer/commits/master)
+
+## sumatra-forwardsearch {#z1f95ee6}
+
+- [https://atom.io/packages/sumatra-forwardsearch](https://atom.io/packages/sumatra-forwardsearch)
+
+### ChangeLog {#x73feeff}
+
+- [https://github.com/ashiato45/sumatra-forwardsearch/commits/master](https://github.com/ashiato45/sumatra-forwardsearch/commits/master)
+
+## skim-displayline {#z6c6603f}
+
+- [https://atom.io/packages/skim-displayline](https://atom.io/packages/skim-displayline)
+
+### ChangeLog {#cc176e6a}
+
+- [https://github.com/mh61503891/skim-displayline/commits/master](https://github.com/mh61503891/skim-displayline/commits/master)
+
 ## vim-mode {#q7e40896}
 
 - [https://atom.io/packages/vim-mode](https://atom.io/packages/vim-mode)
