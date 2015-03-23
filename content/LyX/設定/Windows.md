@@ -143,7 +143,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; dvipdfmx -o $$o $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; dvipdfmx -o $$o $$i</ins><br>
 追加フラグ(X):　<br>
 
 ***
@@ -187,7 +187,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; ps2pdf.exe $$i $$o</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; ps2pdf.exe $$i $$o</ins><br>
 追加フラグ(X):　<br>
 
 ***
@@ -209,7 +209,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pdflatex)　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (pdflatex)　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; pdflatex -synctex=1 $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; pdflatex -synctex=1 $$i</ins><br>
 追加フラグ(X):　<ins>latex=pdflatex</ins><br>
 
 ***
@@ -233,7 +233,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; lualatex -synctex=1</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; lualatex -synctex=1</ins><br>
 追加フラグ(X):　<ins>latex=lualatex</ins><br>
 
 ***
@@ -253,7 +253,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; luajitlatex -synctex=1</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; luajitlatex -synctex=1</ins><br>
 追加フラグ(X):　<ins>latex=luajitlatex</ins><br>
 
 ***
@@ -275,7 +275,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (XeTeX)　　　　　　　　　　　　　　　 ▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX)　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 
-変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --rxi &amp; xelatex -synctex=1 $$i</ins><br>
+変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; xelatex -synctex=1 $$i</ins><br>
 追加フラグ(X):　<ins>latex=xelatex</ins><br>
 
 ***
@@ -354,7 +354,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ [Adobe Reader](</Adobe Reader/>) の場合
+■ Adobe Acrobat Reader DC の場合
 
 ***
 
@@ -428,7 +428,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ [Adobe Reader](</Adobe Reader/>) の場合
+■ Adobe Acrobat Reader DC の場合
 
 ***
 
@@ -502,7 +502,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ [Adobe Reader](</Adobe Reader/>) の場合
+■ Adobe Acrobat Reader DC の場合
 
 ***
 
@@ -576,7 +576,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ [Adobe Reader](</Adobe Reader/>) の場合
+■ Adobe Acrobat Reader DC の場合
 
 ***
 
@@ -650,7 +650,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 \[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
 
-■ [Adobe Reader](</Adobe Reader/>) の場合
+■ Adobe Acrobat Reader DC の場合
 
 ***
 
