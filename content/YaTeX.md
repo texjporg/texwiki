@@ -1259,7 +1259,7 @@ YaTeX 1.78 以降は
 
 ### Evince との連携 (forward and inverse search) {#g214bbe8}
 
-- [https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el](https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el)
+- [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
 
 ### Evince との連携 (forward search) → YaTeX 1.78 以降は Evince の forward search に対応しています {#h118b5e5}
 
