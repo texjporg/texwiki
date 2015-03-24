@@ -26,6 +26,10 @@ Emacs には標準で [TeX mode](http://www.gnu.org/software/emacs/manual/html_n
 
 GPLv3
 
+### ChangeLog {#fe3d1392}
+
+- [http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el)
+
 ## 注意点 {#m2671d0c}
 
 ### " を入力しようとすると \`\` が入力される → C-q " {#y76d0516}
