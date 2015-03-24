@@ -648,12 +648,12 @@ begin 型補完を使うのを忘れた場合は
 % #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && pdfopen --r15 --file hogehoge.pdf && pdfclose --r15 --file hogehoge.pdf & ptex2pdf -u -l hogehoge && pdfopen --r15 --file hogehoge.pdf
 %#BIBTEX upbibtex hogehoge
 %#MAKEINDEX upmendex hogehoge
-%#LPR if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf
+%#LPR if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
 % #LPR acroread.bat /p hogehoge.pdf
 ```
 
 ```
-\documentclass[uplatex]{jsarticle}
+\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
 \begin{document}
 Welcom to YaTeX World!
 \end{document}
@@ -671,10 +671,10 @@ PDF ファイルでの印刷が多くなってきているので，LPR も PDF �
 ```
 @echo off
 REM USAGE: acroread.bat [options] filename
-if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (
-  "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
+if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
+  "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
 ) else (
-  "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
+  "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
 )
 ```
 
