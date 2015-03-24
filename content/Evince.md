@@ -13,10 +13,6 @@ pukiwiki: "Evince"
 
 <img src="https://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png" alt="Evince" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Evince とは {#l8fbb2e6}
-
 Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
@@ -25,11 +21,15 @@ Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
 - [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
+***
+
+***
+
 ### 動作環境 {#q9c64542}
 
 Windows, OS X, Linux
 
-### License {#lf30b1e1}
+### ライセンス {#lf30b1e1}
 
 [GPLv2](https://git.gnome.org/browse/evince/tree/COPYING)
 
@@ -37,7 +37,7 @@ Windows, OS X, Linux
 
 [https://git.gnome.org/browse/evince/refs/tags](https://git.gnome.org/browse/evince/refs/tags)
 
-### ChangeLog {#nb7ae766}
+### 変更履歴 {#nb7ae766}
 
 - [https://git.gnome.org/browse/evince/](https://git.gnome.org/browse/evince/)
     - [log](https://git.gnome.org/browse/evince/log/)
