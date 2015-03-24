@@ -179,7 +179,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process pdfopen -ArgumentList ('--rxi','--file',$p)}\"")
+(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process pdfopen -ArgumentList ('--r15','--file',$p)}\"")
 
 (defun sumatrapdf-forward-search ()
   (interactive)
@@ -647,7 +647,7 @@ begin 型補完を使うのを忘れた場合は
 ```
 %% -*- coding: utf-8-unix -*-
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
-% #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && pdfopen --rxi --file hogehoge.pdf && pdfclose --rxi --file hogehoge.pdf & ptex2pdf -u -l hogehoge && pdfopen --rxi --file hogehoge.pdf
+% #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && pdfopen --r15 --file hogehoge.pdf && pdfclose --r15 --file hogehoge.pdf & ptex2pdf -u -l hogehoge && pdfopen --r15 --file hogehoge.pdf
 %#BIBTEX upbibtex hogehoge
 %#MAKEINDEX upmendex hogehoge
 %#LPR if exist "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" /p hogehoge.pdf
