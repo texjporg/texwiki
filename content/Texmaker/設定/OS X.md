@@ -175,7 +175,7 @@ Add to PATH
 PDF ビューア
 : &nbsp;
 
-: <span style="color:Black;background-color:#9FCFFB;">(<span style="color:Black;">●</span>)</span>　組み込みビューア
+: <span style="color:White;background-color:#0F7FFF;">🔘</span>　組み込みビューア
 
 : ☑　埋め込み
 
