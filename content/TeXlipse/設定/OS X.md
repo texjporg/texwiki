@@ -28,7 +28,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/uplatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -45,7 +45,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/pdflatex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/pdflatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -62,7 +62,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/xelatex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/xelatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -80,7 +80,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/lualatex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/lualatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -94,7 +94,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/luajitlatex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/luajitlatex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -111,7 +111,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/upbibtex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/upbibtex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -128,7 +128,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/biber</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/biber</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>--bblencoding=utf8 -u -U --output_safechar "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
@@ -145,7 +145,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/upmendex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/upmendex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
@@ -162,7 +162,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/dvips</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/dvips</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
 
@@ -179,7 +179,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/dvipdfmx</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
@@ -213,7 +213,7 @@ OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい�
 <span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　<strong>Edit builder program</strong>　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/texbin/upmendex</ins><br>
+　　 Program file： 　　　　　　　<ins>/Library/TeX/texbin/upmendex</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
