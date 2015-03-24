@@ -382,7 +382,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 　　PDF renderer (document must be reopend for change to take effect)<br>
 　　◯ SUN renderer (より速い)<br>
 　　◯ JPedal renderer (higher compatibility)<br>
-　　(●) JPedal renderer for some document types that can not be displayed by SUN renderer, otherwise SUN renderer<br>
+　　🔘 JPedal renderer for some document types that can not be displayed by SUN renderer, otherwise SUN renderer<br>
 
 ***
 
