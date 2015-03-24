@@ -10,8 +10,6 @@ pukiwiki: "Atom"
 
 ## [Atom](https://atom.io/) {#r1ce0de4}
 
-<img src="https://raw.githubusercontent.com/atom/atom/master/resources/atom.png" alt="Atom" width="256" height="256" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## Summary {#y42be4f2}
