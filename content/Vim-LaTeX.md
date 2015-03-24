@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#z8e30b5a}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -48,7 +48,8 @@ pukiwiki: "Vim-LaTeX"
 
 Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイル，プレビューするためのプラグインです．<br>
 
-- [VIM-LaTeX](http://vim-latex.sourceforge.net/) (公式サイト)
+- [https://github.com/vim-latex/vim-latex](https://github.com/vim-latex/vim-latex)
+- [VIM-LaTeX](http://vim-latex.sourceforge.net/) (SourceForge)
     - [Manual, LaTeX Reference, Tutorial](http://vim-latex.sourceforge.net/manual.shtml)
     - [FAQ](http://vim-latex.sourceforge.net/faq.shtml)
     - [Features](http://vim-latex.sourceforge.net/features.shtml)
@@ -58,14 +59,16 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 
 ### License {#v798753a}
 
-[VIM ライセンス](http://vim-latex.sourceforge.net/documentation/latex-suite/) ([日本語訳](https://sites.google.com/site/vimdocja/uganda-html))
+[VIM ライセンス](https://github.com/vim-latex/vim-latex/blob/master/doc/latex-suite.txt)
 
 ### ChangeLog {#ye1a925a}
 
-- [http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/)
-    - [コミットログ](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/log/)
+- [https://github.com/vim-latex/vim-latex/commits/master](https://github.com/vim-latex/vim-latex/commits/master)
 
-## [不具合](http://sourceforge.net/tracker/?group_id=52322&atid=466456) {#df88e09f}
+## 不具合 {#df88e09f}
+
+- [https://github.com/vim-latex/vim-latex/issues](https://github.com/vim-latex/vim-latex/issues)
+- [http://sourceforge.net/p/vim-latex/bugs/](http://sourceforge.net/p/vim-latex/bugs/)
 
 ### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [Karabiner を使って IME をノーマルモードで必ずオフにする](http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/) {#p586f5da}
 
@@ -92,17 +95,17 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
-### NeoBundle を使用して Git リポジトリからインストールする場合 {#adee180e}
+### NeoBundle を使用して GitHub の vim-latex からパッケージをインストールする場合 {#adee180e}
 
-[NeoBundle](https://github.com/Shougo/neobundle.vim) を使って Git リポジトリからインストールできます．
+[NeoBundle](https://github.com/Shougo/neobundle.vim) を使って Vim-LaTeX をインストールできます．
 
 ```
-NeoBundle 'git://git.code.sf.net/p/vim-latex/vim-latex'
+NeoBundle 'vim-latex/vim-latex'
 ```
 
-### 公式サイトのパッケージをインストールする場合 {#g7a904f1}
+### NeoBundle を使用せずに GitHub の vim-latex からパッケージをインストールする場合 {#g7a904f1}
 
-[http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
+[https://github.com/vim-latex/vim-latex/archive/master.zip](https://github.com/vim-latex/vim-latex/archive/master.zip) をダウンロードします．
 
 #### Windows の場合 {#ob7fb0a1}
 
