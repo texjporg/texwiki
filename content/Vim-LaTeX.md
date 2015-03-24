@@ -40,8 +40,6 @@ pukiwiki: "Vim-LaTeX"
 
 ## [Vim-LaTeX (LaTeX-Suite)](http://vim-latex.sourceforge.net/) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#z8e30b5a}
 
-<img src="http://vim-latex.sourceforge.net/vim-latex.gif" alt="Vim-LaTeX" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
