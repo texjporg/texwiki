@@ -71,7 +71,7 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 
 ### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → $HOME/.vim/gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
-- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://code.google.com/p/macvim-kaoriya/issues/detail?id=30) → $HOME/.vim/gvimrc に set imdisable
+- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://github.com/splhack/macvim-kaoriya/issues/30) → $HOME/.vim/gvimrc に set imdisable
 
 ### Linux の GVim で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → ソースコードの修正またはコンソール版の Vim を使用する {#g843a69b}
 
@@ -203,7 +203,7 @@ SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携
 
 動作未確認です．<br>
 
-[MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/) をインストールします．
+[MacVim-KaoriYa](https://github.com/splhack/macvim-kaoriya) をインストールします．
 
 $HOME/.vim/vimrc に設定を記述します．<br>
 Skim で \ls を使った Forward search を行う
