@@ -92,7 +92,7 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <span style="color:Black;background-color:#F5F5F5;">(コマンドは'&#x7c;'で分割する必要があります)</span><br>
 
-<span style="color:Black;background-color:#F5F5F5;">For .asy files　</span><ins>asy -f pdf -noView %.asy&#x7c;pdfopen --rxi --file %.pdf</ins><br>
+<span style="color:Black;background-color:#F5F5F5;">For .asy files　</span><ins>asy -f pdf -noView %.asy&#x7c;pdfopen --r15 --file %.pdf</ins><br>
 
 　　　　　<strong>エディタ</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ DVI/PS/PDF ファイルがすでに開いている場合は新たにビューアを起動しない</span><br>
 
