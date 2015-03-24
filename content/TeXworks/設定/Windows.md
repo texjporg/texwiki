@@ -13,14 +13,12 @@ pukiwiki: "TeXworks/設定/Windows"
 
 ## タイプセットの設定 {#q50d2378}
 
-### [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) {#kaca20c0}
+### [TeX Live](</TeX Live/>) {#kaca20c0}
 
 #### 設定前 {#n2341fff}
 
 公式サイトで配布されている TeXworks と TeX Live の TeXworks は pdfLaTeX がデフォルトになっています．<br>
-W32TeX の TeXworks は pdfpLaTeX がデフォルトになっています．<br>
 upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-pLaTeX-ng, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．<br>
-W32TeX の場合は latexmk の実行には [Strawberry Perl](http://strawberryperl.com/) が必要です．<br>
 タイプセットの設定については [Common Workflows](https://github.com/TeXworks/texworks/wiki/AdvancedTypesettingTools#common-workflows) にも記述されているので参考にしてください．<br>
 $synctexoption, $fullname, $basename などの意味に関しては，[Defining new typesetting tools](https://github.com/TeXworks/texworks/wiki/AdvancedTypesettingTools#defining-new-typesetting-tools) を参照してください．<br>
 
@@ -106,8 +104,6 @@ pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成し�
 
 - C:\texlive\2014\bin\win64\pdfuplatex.bat
 - C:\texlive\2014\bin\win32\pdfuplatex.bat
-- C:\w32tex\bin64\pdfuplatex.bat
-- C:\w32tex\bin\pdfuplatex.bat
 
 ***
 
@@ -301,8 +297,6 @@ Latexmk で PDF ファイルを作成します．
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
-■ TeX Live の場合
-
 ***
 
 <span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
@@ -318,38 +312,9 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
-　　　　　　　　　<ins>-norc</ins><br>
-　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdfdvi</ins><br>
-　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
-　　☑ 実行後、PDFを表示する<br>
-
-***
-
-■ W32TeX の場合
-
-***
-
-<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプセットの方法を設定する</strong></span>　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
-　　プログラム: <ins>latexmk</ins><br>
-　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
-　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f ipaex.map -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -386,7 +351,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -427,7 +392,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/mendex %O -U -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -497,11 +462,11 @@ Latexmk で PDF ファイルを作成します．
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -534,11 +499,11 @@ Latexmk で PDF ファイルを作成します．
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/luajitlatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -571,11 +536,11 @@ Latexmk で PDF ファイルを作成します．
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$pdflatex=q/xelatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$makeindex=q/makeindex %O -o %D %S/</ins><br>
+　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdf</ins><br>
@@ -1016,16 +981,8 @@ TeX コマンドのオプションに -synctex=1 を追加します．
 
 SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下の記述を設定します．<br>
 
-■ TeX Live に含まれている TeXworks の場合
-
 ```
 "C:\texlive\2014\tlpkg\texworks\texworks.exe" --position=%l "%f"
-```
-
-■ W32TeX に含まれている TeXworks の場合
-
-```
-"C:\w32tex\share\texworks\TeXworks.exe" --position=%l "%f"
 ```
 
 &#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
