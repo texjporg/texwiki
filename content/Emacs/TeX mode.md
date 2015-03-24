@@ -476,4 +476,3 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 - [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://slashdot.jp/~t-nissie/journal/560083)
-- [Emacsのlatex-modeのインデント](http://www.hit.ac.jp/~wachi/misc/latexindent.html)
