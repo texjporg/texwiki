@@ -50,7 +50,7 @@ TeX Writer の公式サイトで日本語用のテンプレートファイル jp
 - [PDF Viewer App for iOS](https://github.com/vfr/Viewer)
     - [PDF Reader Core for iOS](https://github.com/vfr/Reader)
 - [MuPDF](https://itunes.apple.com/jp/app/mupdf/id482941798)
-- [Adobe Reader](https://itunes.apple.com/jp/app/adobe-reader/id469337564)
+- [Adobe Acrobat DC – PDF Reader](https://itunes.apple.com/jp/app/adobe-reader/id469337564)
 
 ## 関連リンク {#f3da3e0a}
 
