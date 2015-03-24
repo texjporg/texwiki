@@ -11,8 +11,6 @@ pukiwiki: "YaTeX"
 
 ## [YaTeX](https://www.yatex.org/) {#o2c95a66}
 
-<img src="https://www.yatex.org/yalogo.gif" alt="YaTeX" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
