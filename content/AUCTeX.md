@@ -78,7 +78,7 @@ M-x list-packages RET でリストを表示して auctex を選択
 64-bit Windows の場合は<br>
 [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
 32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)<br>
 をインストールします．<br>
 
 Emacs を起動して
@@ -112,7 +112,7 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 
 #### 設定 {#g637a7d7}
 
-Emacs 24.4 以降にアップグレードします．<br>
+Emacs 24.5 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．<br>
 SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
@@ -281,7 +281,7 @@ $ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
 #### 設定 {#n55816de}
 
 動作未確認です．<br>
-Emacs 24.4 以降にアップグレードします．<br>
+Emacs 24.5 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 
 ***
@@ -467,7 +467,7 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 
 #### 設定 {#p2d711b9}
 
-Emacs 24.4 以降にアップグレードします．<br>
+Emacs 24.5 以降にアップグレードします．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
