@@ -9,14 +9,13 @@ pukiwiki: "W32TeX"
 
 [Microsoft Windows](</Microsoft Windows/>) > W32TeX
 
-## [W32TeX](http://w32tex.org/) {#ba560630}
+## [W32TeX](http://w32tex.org/index-ja.html) {#ba560630}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです．W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
 
-## W32TeX とは {#e3db1415}
+***
 
-W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです．
-W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
+***
 
 ## インストール {#ib4afbe8}
 
@@ -235,10 +234,10 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 #### 簡易インストーラの取得 {#wa3b57f2}
 
-[texinst2014.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2014.zip)を展開してください．展開した場所がインストールフォルダとなります．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2014.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
+[texinst2015.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2015.zip)を展開してください．展開した場所がインストールフォルダとなります．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2015.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
 
 C:\Users>cd C:\w32tex<br>
-C:\w32tex>texinst2014 C:\w32tex\download
+C:\w32tex>texinst2015 C:\w32tex\download
 
 ファイルが展開されたら終了です．次のようなメッセージが表示されます．
 
@@ -415,10 +414,9 @@ PATH という欄が
 
 [dviout](/dviout/) は dvi ファイルのプレビューアです．近年では PDF ファイルによるプレビューの方がトラブルが少ないとされており，そちらを使う場合は特に必要ありません．逆に従来通り dvi ファイルをプレビューしたい場合は必須となります．インストールは [dviout](/dviout/) をご覧ください．なお，TeX インストーラ 3 では自動でインストールされます．
 
-### Perl {#c6d961fb}
+### Perl インタプリタのインストール {#c6d961fb}
 
-W32TeX に含まれるいくつかのファイルは Perl に依存しています．（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など．）
-余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
+W32TeX に含まれるいくつかのファイルは Perl に依存しています．（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など．）余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
 
 ## アップデート {#o482d037}
 
@@ -428,7 +426,7 @@ abtexinst.exe をもう一度起動します．（インストール時に設定
 
 ### 直接アップデート {#r88b7452}
 
-アップデートされたファイルをダウンロードし，texinst2014.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．ただし，古いファイルを手動で消さなければならないことがありますので，[http://w32tex.org/ChangeLog:ChangeLog](http://w32tex.org/ChangeLog:ChangeLog)を参照してください．
+アップデートされたファイルをダウンロードし，texinst2015.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．ただし，古いファイルを手動で消さなければならないことがありますので，[http://w32tex.org/ChangeLog:ChangeLog](http://w32tex.org/ChangeLog:ChangeLog)を参照してください．
 
 ## [SumatraPDF](/SumatraPDF/) {#g6688c53}
 
