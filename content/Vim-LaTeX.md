@@ -131,8 +131,6 @@ Vim を起動し
 
 #### OS X, Linux の場合 {#w3182b39}
 
-[http://sourceforge.net/projects/vim-latex/files/](http://sourceforge.net/projects/vim-latex/files/) からファイルをダウンロードします．
-
 Vim を起動し
 
 ```
@@ -654,7 +652,7 @@ $HOME/vimfiles/vimrc の g:Tex_ViewRule_pdf を [Vim-LaTeX#SumatraPDF との連�
 
 ### SumatraPDF を前面に表示したい場合 {#r8a125e8}
 
-[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/ftplugin/latex-suite/compiler.vim) を修正します．
+[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](https://github.com/vim-latex/vim-latex/blob/master/ftplugin/latex-suite/compiler.vim) を修正します．
 
 ***
 
@@ -687,7 +685,7 @@ function! Tex_ForwardSearchLaTeX()
 
 [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
 
-[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](http://sourceforge.net/p/vim-latex/vim-latex/ci/master/tree/ftplugin/latex-suite/compiler.vim) を修正します．
+[$HOME/vimfiles/ftplugin/latex-suite/compiler.vim](https://github.com/vim-latex/vim-latex/blob/master/ftplugin/latex-suite/compiler.vim) を修正します．
 
 ***
 
