@@ -1425,7 +1425,7 @@ TeX ソースの先頭行に例えば，
 - [YaTeXとRefTeXの共存](http://ubutun.blogspot.com/2011/06/yatexreftex.html)
 - [SyncTeXの設定。 Emacs(YaTeX) + Evince](http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html)
 - [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okada.jp.org/RWiki/?Sweave%A4%C7%A5%A8%A5%C7%A5%A3%A5%BF%A4%C8DVI%A5%D3%A5%E5%A1%BC%A5%A2%B4%D6%A4%CE%C1%EA%B8%DF%B0%DC%C6%B0)
-- [MacWiki - CarbonEmacsAndYatex](http://macwiki.sourceforge.jp/wiki/index.php/CarbonEmacsAndYatex)
+- [MacWiki - CarbonEmacsAndYatex](http://macwiki.osdn.jp/wiki/index.php/CarbonEmacsAndYatex)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
 - [http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX](http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX)
 - [yatex-modeになったときにマイナーモードcdlatexを起動する](http://d.hatena.ne.jp/daharu/20111106/1320562641)
