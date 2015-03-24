@@ -94,26 +94,26 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 LaTeX
 : &nbsp;
 
-: "/usr/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
 
-: "/usr/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
 
 : ☐ 出力ファイルを "build" サブフォルダーに出力する
 
 XeLaTeX
 : &nbsp;
 
-: "/usr/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/xelatex" -synctex=1 -interaction=nonstopmode %.tex
 
 LuaLaTeX
 : &nbsp;
 
-: "/usr/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
 
-: "/usr/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
 
 Latexmk
 : &nbsp;
@@ -123,24 +123,24 @@ Latexmk
 Bib(la)tex
 : &nbsp;
 
-: "/usr/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;
+: "/Library/TeX/texbin/biber" --bblencoding=utf8 -u -U --output_safechars &#x25;
 
-: "/usr/texbin/upbibtex" &#x25;
+: "/Library/TeX/texbin/upbibtex" &#x25;
 
 Makeindex
 : &nbsp;
 
-: "/usr/texbin/upmendex" %.idx
+: "/Library/TeX/texbin/upmendex" %.idx
 
 dvips
 : &nbsp;
 
-: ruby -e "cmd='/usr/texbin/dvips -Ppdf -z -f '+0x22.chr+ARGV\[0\]+'.dvi'+0x22.chr+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+0x22.chr+ARGV\[0\]+'.ps'+0x22.chr;system(cmd)" %
+: ruby -e "cmd='/Library/TeX/texbin/dvips -Ppdf -z -f '+0x22.chr+ARGV\[0\]+'.dvi'+0x22.chr+' '+0x7c.chr+' '+'convbkmk -u'+' '+0x3e.chr+' '+0x22.chr+ARGV\[0\]+'.ps'+0x22.chr;system(cmd)" %
 
 Dvipdfm
 : &nbsp;
 
-: "/usr/texbin/dvipdfmx" %.dvi
+: "/Library/TeX/texbin/dvipdfmx" %.dvi
 
 ps2pdf
 : &nbsp;
@@ -152,12 +152,12 @@ ps2pdf
 metapost
 : &nbsp;
 
-: "/usr/texbin/upmpost" -interaction=nonstopmode &#x25;
+: "/Library/TeX/texbin/upmpost" -interaction=nonstopmode &#x25;
 
 Asymptote
 : &nbsp;
 
-: "/usr/texbin/asy" %.asy
+: "/Library/TeX/texbin/asy" %.asy
 
 ghostscript
 : &nbsp;
