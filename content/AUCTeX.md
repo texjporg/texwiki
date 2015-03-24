@@ -204,7 +204,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                       (add-to-list 'TeX-command-list
                                    '("pdfopen"
                                      "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %s.pdf && pdfclose --r15 --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --r15 --file %%{output} --page %%{page+1}\""
-                                     TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
+                                     TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
 ;;
 ;; RefTeX with AUCTeX
@@ -378,9 +378,9 @@ Emacs 24.4 以降にアップグレードします．<br>
                                      "/usr/bin/open -a Firefox.app %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
-                                   '("AdobeReader"
-                                     "/usr/bin/open -a \"Adobe Reader.app\" %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
+                                   '("acroread"
+                                     "/usr/bin/open -a \"Adobe Acrobat Reader DC.app\" %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
 ;;
 ;; RefTeX with AUCTeX
@@ -413,7 +413,7 @@ Emacs 24.4 以降にアップグレードします．<br>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>AdobeReader</td><td>C-c C-c adobereader RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
 > </tbody>
 > </table>
 >
