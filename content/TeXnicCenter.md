@@ -56,8 +56,6 @@ Windows
 
 ## ダウンロード {#rf294e94}
 
-- [http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texniccenter/](http://ftp.jaist.ac.jp/pub/sourceforge/t/te/texniccenter/)
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge/t/te/texniccenter/](ftp://ftp.jaist.ac.jp/pub/sourceforge/t/te/texniccenter/)
 - [Downloads](http://www.texniccenter.org/resources/downloads)
 - [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
 
