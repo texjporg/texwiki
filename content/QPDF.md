@@ -7,25 +7,22 @@ pukiwiki: "QPDF"
 
 # QPDF
 
-## QPDF {#ie2dd993}
+## QPDF {#headline}
 
-QPDF は PDF ファイルの内容を維持したままの構造的な変換を行うコマンドラインプログラムで，
-pdf-to-pdf とでも呼ぶべきものです．
+QPDF は PDF ファイルの内容を維持したまま構造的な変換を行うコマンドラインプログラムで，pdf-to-pdf
+とでも呼ぶべきものです．PDF 生成ソフト開発者や PDF の中身を覗き見たい人たち向けにも有用な機能を提供し，これらは [PDF](/PDF/) がどのようなものかを学ぶために役立ちます．
 
-### 目次 {#pc3e3245}
-
-### QPDF とは？ {#y4152cbf}
-
-QPDF は，PDF 生成ソフト開発者や PDF の中身を覗き見たい人たち向けにも有用な機能を提供します．
-これらは [PDF](/PDF/) がどのようなものかを学ぶために役立ちます．
-QPDF は PDF を暗号化したり，Web 表示用に最適化（ここではリニアライズのみ）したり操作したり，
-解析したりするコマンドラインプログラム (qpdf) や，
-テキストエディタで PDF をいじるためのプログラム (qpdf --qdf と fix-qdf) や
-PDF を読み込み操作するためのライブラリ (libqpdf) からなります．
+<strong>公式サイト</strong>
 
 - [http://qpdf.sourceforge.net](http://qpdf.sourceforge.net)
 
-### コマンドラインプログラム qpdf の使い方 {#t6112193}
+QPDF は PDF を暗号化したり，Web 表示用に最適化（ここではリニアライズのみ）したり操作したり，解析したりするコマンドラインプログラム (qpdf) や，テキストエディタで PDF をいじるためのプログラム (qpdf --qdf と fix-qdf) や PDF を読み込み操作するためのライブラリ (libqpdf) からなります．
+
+***
+
+***
+
+### コマンドラインプログラム qpdf の使い方 {#usage}
 
 #### 基本的な機能 {#ce2aa5eb}
 
@@ -171,36 +168,36 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 - 簡単な解説：[手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
 - 完全な解説：[PDF Reference](http://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/pdf_reference_1-7.pdf)
 
-## インストール {#u2e4c35f}
+## インストール {#install}
 
-### Mac OS X {#m5144232}
+### Mac OS X {#inst-mac}
 
-#### MacPortsを利用したイントール {#q9f4b635}
+#### MacPorts を利用したイントール {#q9f4b635}
 
-qpdfという名前のPortをインストールします。variantsはuniversalのみです。
+qpdf という名前の Port をインストールします。variants は universal のみです。
 
 ```
 $ sudo port install qpdf
 ```
 
-### Linux {#k85475d6}
+### Linux {#inst-linux}
 
 #### Debian/Ubuntu {#cb42469f}
 
-DebianやUbuntuでは、QPDFのパッケージは3つに小分けされています。
-QPDFを利用したプログラムを自分でコンパイルしない場合は、libqpdf-devをインストールする必要はありません。
+Debian や Ubuntu では、QPDF のパッケージは3つに小分けされています。
+QPDF を利用したプログラムを自分でコンパイルしない場合は、libqpdf-dev をインストールする必要はありません。
 
 ```
 $ sudo apt-get install qpdf
 ```
 
-qpdfをインストールすると、libqpdf13が依存関係により自動的にインストールされます。
+qpdf をインストールすると、libqpdf13 が依存関係により自動的にインストールされます。
 
-### Windows {#i1cf02cc}
+### Windows {#inst-windows}
 
 [W32TeX](/W32TeX/) には標準で含まれています．
 
-## 関連リンク {#yd55bbaa}
+## 関連リンク {#links}
 
 - [qpdf でパスワードの設定と解除](http://konoyonohana.blog.fc2.com/blog-entry-28.html)
 - [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
