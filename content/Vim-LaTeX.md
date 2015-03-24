@@ -80,7 +80,7 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 - [http://www.bookshelf.jp/2ch/unix/1232035011.html#45](http://www.bookshelf.jp/2ch/unix/1232035011.html#45)
 - [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
-- [https://code.google.com/p/vim/source/browse/src/mbyte.c](https://code.google.com/p/vim/source/browse/src/mbyte.c)
+- [https://github.com/vim/vim/blob/master/src/mbyte.c](https://github.com/vim/vim/blob/master/src/mbyte.c)
 
 ### CTRL-J が使えない → [https://github.com/vim-jp/issues/issues/523#issuecomment-35015892](https://github.com/vim-jp/issues/issues/523#issuecomment-35015892) {#v27fb866}
 
