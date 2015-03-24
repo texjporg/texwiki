@@ -14,7 +14,7 @@ pukiwiki: "SyncTeX"
 ## SyncTeX とは {#i8f28fee}
 
 SyncTeX とは，PDF viewer と editor の間の synchronization を実現したものです．
-SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, euptex, uptex, eptex, ptex です．
+SyncTeX をサポートするエンジンは pdftex, luatex, luajittex, xetex, ptex-ng, euptex, uptex, eptex, ptex です．
 
 オプションで
 
