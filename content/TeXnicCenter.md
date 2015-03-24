@@ -722,21 +722,21 @@ Executable path<br>
 <br>
 
 View project's output<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[Open("%bm.pdf",0,1,1)\]</ins><br>
 Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[ForwardSearch("%bm.pdf","%Wc",%l,0,0,1)\]</ins><br>
 Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　◯ DDE command　　(●) Do not close<br>
+◯ Command line argument　◯ DDE command　　🔘 Do not close<br>
 
 <br>
 
@@ -763,21 +763,21 @@ Executable path<br>
 <br>
 
 View project's output<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[Open("%bm.pdf",0,0,1)\]</ins><br>
 Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[ForwardSearch("%bm.pdf","%Wc",%l,0,0,0)\]</ins><br>
 Server: <ins>SUMATRA</ins>　　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　◯ DDE command　　(●) Do not close<br>
+◯ Command line argument　◯ DDE command　　🔘 Do not close<br>
 
 <br>
 
@@ -802,7 +802,7 @@ Executable path<br>
 <br>
 
 View project's output<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c texworks "%bm.pdf"</ins><br>
 
 <br>
@@ -810,7 +810,7 @@ Command <ins>/c texworks "%bm.pdf"</ins><br>
 <br>
 
 Forward search<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "texworks  --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"</ins><br>
 
 <br>
@@ -818,7 +818,7 @@ Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "texworks  --position
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　◯ DDE command　　(●) Do not close<br>
+◯ Command line argument　◯ DDE command　　🔘 Do not close<br>
 
 <br>
 
@@ -843,7 +843,7 @@ Executable path<br>
 <br>
 
 View project's output<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c rundll32 shell32,ShellExec_RunDLL firefox -new-window "%bm.pdf"</ins><br>
 
 <br>
@@ -851,7 +851,7 @@ Command <ins>/c rundll32 shell32,ShellExec_RunDLL firefox -new-window "%bm.pdf"<
 <br>
 
 Forward search<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,ShellExec_RunDLL firefox -new-window '&#x25;&#x25;{output}'"</ins><br> <!-- Command %%%/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,ShellExec_RunDLL firefox -new-window '&#x25;&#x25;{output}#page=&#x25;&#x25;{page+1}'"%%%&br; -->
 
 <br>
@@ -859,7 +859,7 @@ Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,She
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　◯ DDE command　　(●) Do not close<br>
+◯ Command line argument　◯ DDE command　　🔘 Do not close<br>
 
 <br>
 
@@ -884,7 +884,7 @@ Executable path<br>
 <br>
 
 View project's output<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c rundll32 shell32,ShellExec_RunDLL chrome --new-window "%bm.pdf"</ins><br>
 
 <br>
@@ -892,7 +892,7 @@ Command <ins>/c rundll32 shell32,ShellExec_RunDLL chrome --new-window "%bm.pdf"<
 <br>
 
 Forward search<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,ShellExec_RunDLL chrome --new-window '&#x25;&#x25;{output}'"</ins><br> <!-- Command %%%/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,ShellExec_RunDLL chrome - -new-window '&#x25;&#x25;{output}#page=&#x25;&#x25;{page+1}'"%%%&br; -->
 
 <br>
@@ -900,7 +900,7 @@ Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,She
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　◯ DDE command　　(●) Do not close<br>
+◯ Command line argument　◯ DDE command　　🔘 Do not close<br>
 
 <br>
 
@@ -928,7 +928,7 @@ Executable path<br>
 <br>
 
 View project's output<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c "%bm.pdf"</ins><br>
 
 <br>
@@ -936,7 +936,7 @@ Command <ins>/c "%bm.pdf"</ins><br>
 <br>
 
 Forward search<br>
-(●) Command line argument　　◯ DDE command<br>
+🔘 Command line argument　　◯ DDE command<br>
 Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen --r15 --file '&#x25;&#x25;{output}' --page &#x25;&#x25;{page+1}"</ins><br>
 
 <br>
@@ -944,7 +944,7 @@ Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen --r15 --file
 <br>
 
 Close document before running (La)TeX<br>
-(●) Command line argument　◯ DDE command　　◯ Do not close<br>
+🔘 Command line argument　◯ DDE command　　◯ Do not close<br>
 Command <ins>/c pdfclose --r15 --file "%bm.pdf"</ins><br>
 
 <br>
@@ -971,21 +971,21 @@ Executable path<br>
 <br>
 
 View project's output<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
 Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
-◯ Command line argument　　(●) DDE command<br>
+◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]\[DocGoTo("%bm.pdf",0)\]</ins><br>
 Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
-◯ Command line argument　(●) DDE command　　◯ Do not close<br>
+◯ Command line argument　🔘 DDE command　　◯ Do not close<br>
 Command <ins>\[DocClose("%bm.pdf")\]</ins><br>
 Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
