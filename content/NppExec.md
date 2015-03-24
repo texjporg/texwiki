@@ -415,7 +415,7 @@ GPLv3
 
 ***
 
-### Mendex {#y0117ee8}
+### upmendex {#y0117ee8}
 
 ***
 
@@ -426,7 +426,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; mendex -U -T "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; upmendex "$(NAME_PART)"<br>
 
 <br>
 
@@ -437,7 +437,7 @@ GPLv3
 <br>
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">Mendex</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">upmendex</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -445,7 +445,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>Mendex</ins><br>
+　　　　　　Name :　<ins>upmendex</ins><br>
 　　　☑CTRL<br>
 　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[M　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
