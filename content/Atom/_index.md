@@ -84,6 +84,7 @@ Windows, OS X, Linux
 ## sumatra-forwardsearch {#z1f95ee6}
 
 - [https://atom.io/packages/sumatra-forwardsearch](https://atom.io/packages/sumatra-forwardsearch)
+- [Atomでのforward searchとinverse search](http://ashiato45.hatenablog.jp/entry/2015/03/24/194511)
 
 ### ChangeLog {#x73feeff}
 
