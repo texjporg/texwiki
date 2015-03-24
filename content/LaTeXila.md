@@ -9,8 +9,6 @@ pukiwiki: "LaTeXila"
 
 ## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) {#e966f73d}
 
-<img src="https://git.gnome.org/browse/latexila/plain/data/images/app/logo.png" alt="LaTeXila" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
