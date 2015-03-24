@@ -166,16 +166,16 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
 \\else
   \\ifdefined\\pdfoutput
     \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
     \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
     \\fi
   \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
   \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
@@ -284,16 +284,16 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
 \\else
   \\ifdefined\\pdfoutput
     \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
     \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
     \\fi
   \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
   \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
@@ -401,16 +401,16 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+  \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
 \\else
   \\ifdefined\\pdfoutput
     \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
     \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
     \\fi
   \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,jadriver=standard]{bxjsarticle}
+    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
   \\fi
 \\fi
 [NO-DEFAULT-PACKAGES]
