@@ -543,8 +543,8 @@ LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します．<
 ### PDFView {#x6d29bc8}
 
 PDFLaTeXを先に実行 のチェックを外します．<br>
-Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
+Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader DC を使用することをおすすめします．<br>
 
 #### SumatraPDF の場合 {#a003ae3e}
 
@@ -771,8 +771,8 @@ PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\
 
 エラーがなければ PDF ファイルが表示されます．<br>
 
-PDF ファイルを印刷する場合は [Adobe Reader](</Adobe Reader/>) から PDF ファイルを開いて印刷します．<br>
-Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．<br>
+PDF ファイルを印刷する場合は Adobe Acrobat Reader DC から PDF ファイルを開いて印刷します．<br>
+Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．<br>
 
 ### 補完機能 {#c8bc5b6d}
 
