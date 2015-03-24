@@ -17,7 +17,7 @@ pukiwiki: "Evince"
 
 ## Evince とは {#l8fbb2e6}
 
-Evince は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
+Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 
@@ -64,7 +64,17 @@ Evince は [MinGW](/MinGW/) でビルド可能です．
 
 - [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
 
-### Debian {#rf817124}
+### Debian/Ubuntu {#rf817124}
+
+EvinceはGnomeの標準ドキュメントビューアなので、最初からインストールされていることがケースがほとんどでしょう。手動でインストールするには次のようにします。
+
+```
+$ sudo apt-get install evince
+```
+
+依存関係によりevince-commonパッケージもインストールされます。
+GNOME keyring サポートを外したevince-gtkパッケージもあります。なお、Evinceに依存したプログラムをコンパイルするには
+libevince-devパッケージが必要です。
 
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
@@ -101,7 +111,7 @@ $ vi ~/.config/fontconfig/fonts.conf
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-<dir>/usr/local/texlive/2014/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/local/texlive/2015/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
