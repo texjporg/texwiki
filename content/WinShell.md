@@ -77,18 +77,15 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 などのオープンソースの統合環境では，UTF-8 でも問題が発生しません．
 
-### [Adobe Reader](</Adobe Reader/>) で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
+### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
-Adobe Reader は SumatraPDF のメニューの \[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．
-Adobe Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．
+Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．
+Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．
 
-- [WinShellでAdobe Reader11が呼べない時の解決方法](http://ameblo.jp/green-marimo/entry-11849170023.html)
-- [WinShellのCannot start AcrobatReader or open the document.](http://d.hatena.ne.jp/imasusen/20131128/1385574812)
-
-WinShell 3.3.2.6 は Adobe Reader XI, Adobe Acrobat XI, SumatraPDF の DDE に対応しています．
+WinShell 3.3.2.6 は Adobe Acrobat Reader DC, Adobe Acrobat DC, SumatraPDF の DDE に対応しています．
 [^2]
 これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します．
-ただし，Adobe Reader XI で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
+ただし，Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
 
 ```
 Cannot start AcrobatReader or open the document.
@@ -98,7 +95,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewR11
+AcroViewR15
 ```
 
 に修正することで解消できます．
@@ -107,8 +104,8 @@ AcroViewR11
 DDE を使用する場合は PDFView を以下のように設定します．
 
 - exeファイル名：
-    - "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" (64-bit 版 Windows の場合)
-    - "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" (32-bit 版 Windows の場合)<br>
+    - "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (64-bit 版 Windows の場合)
+    - "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (32-bit 版 Windows の場合)<br>
 - コマンドライン：
     - "%s.pdf"
 
@@ -117,8 +114,8 @@ DDE を使用しない場合は PDFView を以下のように設定します．
 - exeファイル名：
     - cmd.exe
 - コマンドライン：
-    - /c start "C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (64-bit 版 Windows の場合)
-    - /c start "C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe" "%s.pdf" (32-bit 版 Windows の場合)
+    - /c start "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" "%s.pdf" (64-bit 版 Windows の場合)
+    - /c start "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" "%s.pdf" (32-bit 版 Windows の場合)
 
 ### 主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題がある → Ruby, Windows PowerShell, バッチファイル などを使用する {#v088befc}
 
