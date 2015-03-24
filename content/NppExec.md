@@ -114,6 +114,49 @@ GPLv3
 
 ***
 
+### pLaTeX-ng {#u5967a24}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; platex-ng -synctex=1 "$(NAME_PART)"<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pLaTeX-ng</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>pLaTeX-ng</ins><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
 ### pdfLaTeX {#b792f14c}
 
 ***
@@ -276,264 +319,6 @@ GPLv3
 　　　　　　Name :　<ins>XeLaTeX</ins><br>
 　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[I　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### upBibTeX {#uea6702c}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; upbibtex "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">upBibTeX</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>upBibTeX</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### BibTeX {#v14b8793}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; bibtex "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">BibTeX</span>　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>BibTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### BibTeXu {#s9c94c1c}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; bibtexu "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">BibTeXu</span>　　　　　　　　　　　　　　　　　　　　 <strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>BibTeXu</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[U　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### upmendex {#y0117ee8}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; upmendex "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">upmendex</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>upmendex</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[M　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### MakeIndex {#zfab6176}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; makeindex "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">MakeIndex</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>MakeIndex</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### TeXindy {#q7444722}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; texindy "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">TeXIndy</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>×</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>TeXindy</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[Y　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -707,6 +492,32 @@ GPLv3
 
 　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
 　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2A</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
+
+***
+
+#### pLaTeX-ngA {#w213bfdd}
+
+***
+
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+
+<br>
+
+　　Command(s):<br>
+　　　NPP_SAVE<br>
+　　　NPP_CONSOLE 1<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --r15 --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --r15 --file "$(NAME_PART).pdf" &amp; platex-ng -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --r15 --file "%{output}" --page %{page+1}" | cmd<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pLaTeX-ngA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
