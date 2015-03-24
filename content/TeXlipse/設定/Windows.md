@@ -609,7 +609,7 @@ Chrome PDF Viewer を使用する場合は，
 
 の優先度を一番上にします．
 
-#### [Adobe Reader](</Adobe Reader/>) {#qdfce81e}
+#### Adobe Acrobat Reader DC {#qdfce81e}
 
 ***
 
@@ -621,17 +621,17 @@ Chrome PDF Viewer を使用する場合は，
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>acroread</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins> (64-bit Windows の場合) <ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins> (32-bit Windows の場合)<br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe</ins> (64-bit Windows の場合) <ins>C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe</ins> (32-bit Windows の場合)<br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　　　サーバー： <ins>acroviewR15</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 
 <br>
 
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocClose("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>acroviewR11</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　　　サーバー： <ins>acroviewR15</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
@@ -642,9 +642,9 @@ Chrome PDF Viewer を使用する場合は，
 
 ***
 
-Adobe Reader を使用する場合は，
+Adobe Acrobat Reader DC を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe (32-bit Windows の場合))　</span><br>
+> <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (32-bit Windows の場合))　</span><br>
 
 の優先度を一番上にします．
 
@@ -667,7 +667,7 @@ Adobe Reader を使用する場合は，
 　TeXstudio (C:\Program Files (x86)\TeXstudio\texstudio.exe (64-bit Windows の場合) C:\Program Files\TeXstudio\texstudio.exe (32-bit Windows の場合))<br>
 　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
 　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
-　acroread (C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe (32-bit Windows の場合))<br>
+　acroread (C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (32-bit Windows の場合))<br>
 　yap ()<br>
 　xdvi ()<br>
 　itexmac ()<br>
