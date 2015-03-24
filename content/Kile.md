@@ -92,10 +92,10 @@ ForwardPDF<br>
 ### MakeIndex {#o588ae80}
 
 コマンド(<ins>M</ins>):
-: mendex
+: upmendex
 
 オプション:
-: -U '%S.idx'
+: '%S.idx'
 
 ### DVItoPDF {#kf18eec8}
 
