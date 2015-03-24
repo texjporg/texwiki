@@ -369,7 +369,7 @@ LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しない
 
 LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します．<br>
 
-#### Latexmk-pdfupLaTeX の場合 {#kf0c5dfa}
+#### Latexmk-upLaTeX-pdfdvi の場合 {#kf0c5dfa}
 
 以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
 
@@ -392,7 +392,7 @@ LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/mendex '+0x25.chr+'O'+' -U -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%s.tex';system(cmd)"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/upmendex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%s.tex';system(cmd)"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
@@ -475,7 +475,7 @@ LaTeXを先に実行 のチェックを外します．<br>
 
 LaTeXを先に実行 のチェックを外します．<br>
 
-#### Latexmk-pdfupLaTeX2 の場合 {#c693c76d}
+#### Latexmk-upLaTeX-pdfps の場合 {#c693c76d}
 
 以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
 
@@ -498,7 +498,7 @@ LaTeXを先に実行 のチェックを外します．<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/mendex '+0x25.chr+'O'+' -U -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvips=q/dvips '+0x25.chr+'O'+' -z -f '+0x25.chr+'S'+' '+0x7c.chr+' convbkmk -u '+0x3e.chr+' '+0x25.chr+'D'+'/'+0x22.chr+' -e '+0x22.chr+'$ps2pdf=q/ps2pdf.exe '+0x25.chr+'O'+' '+0x25.chr+'S'+' '+0x25.chr+'D'+'/'+0x22.chr+' -norc -gg -pdfps '+'%s.tex';system(cmd)"</ins><br>
+　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/upmendex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvips=q/dvips '+0x25.chr+'O'+' -z -f '+0x25.chr+'S'+' '+0x7c.chr+' convbkmk -u '+0x3e.chr+' '+0x25.chr+'D'+'/'+0x22.chr+' -e '+0x22.chr+'$ps2pdf=q/ps2pdf.exe '+0x25.chr+'O'+' '+0x25.chr+'S'+' '+0x25.chr+'D'+'/'+0x22.chr+' -norc -gg -pdfps '+'%s.tex';system(cmd)"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
@@ -745,11 +745,11 @@ TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[
 \[主なTeXプログラムの設定\] の \[BibTeX\] と \[DVI -> PS\] の項目に PDF ファイルを出力するための設定をします．<br>
 設定は以下を参照して設定します．<br>
 
-- [WinShell#BibTeX#Latexmk-pdfupLaTeX の場合](/WinShell/#kf0c5dfa)
-- [WinShell#DVI -> PS#Latexmk-pdfupLaTeX2 の場合](/WinShell/#c693c76d)
+- [WinShell#BibTeX#Latexmk-upLaTeX-pdfdvi の場合](/WinShell/#kf0c5dfa)
+- [WinShell#DVI -> PS#Latexmk-upLaTeX-pdfps の場合](/WinShell/#c693c76d)
 
-\[BibTeX\] に設定したプログラム (Latexmk-pdfupLaTeX) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします．<br>
-\[DVI -> PS\] に設定したプログラム (Latexmk-pdfupLaTeX2) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします．<br>
+\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX-pdfdvi) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします．<br>
+\[DVI -> PS\] に設定したプログラム (Latexmk-upLaTeX-pdfps) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします．<br>
 コマンド プロンプトに処理状況が表示されます．<br>
 
 <!-- >もしユーザ自身が作成したファイルとは異なるファイルが処理されているようなら， -->
@@ -844,6 +844,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
 
-[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします．
+[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします．ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます．
 [^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．
 [^3]: レジストリの編集には危険が伴う場合があります．自信のない場合は控えるなど，十分ご注意ください．
