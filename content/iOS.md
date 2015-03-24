@@ -9,8 +9,6 @@ pukiwiki: "iOS"
 
 ## [iOS](http://www.apple.com/jp/ios/) での TeX の利用 {#h8fdec00}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Apple_iOS.svg/200px-Apple_iOS.svg.png" alt="iOS" style="float:right">
-
 ***
 
 ***
