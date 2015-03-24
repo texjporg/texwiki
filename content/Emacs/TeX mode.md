@@ -42,7 +42,7 @@ TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力�
 64-bit Windows の場合は<br>
 [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
 32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html) または [emacs-24.4-bin-i686-pc-mingw32.zip](http://ftp.gnu.org/gnu/emacs/windows/)<br>
+[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)<br>
 をインストールします．<br>
 Emacs を起動して<br>
 
