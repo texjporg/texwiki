@@ -203,7 +203,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-discard-or-function t t :help "Run Chrome PDF Viewer"))
                       (add-to-list 'TeX-command-list
                                    '("pdfopen"
-                                     "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --rxi --file %s.pdf && pdfclose --rxi --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --rxi --file %%{output} --page %%{page+1}\""
+                                     "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %s.pdf && pdfclose --r15 --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --r15 --file %%{output} --page %%{page+1}\""
                                      TeX-run-discard-or-function t t :help "Run Adobe Reader")))))
 
 ;;
