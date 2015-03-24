@@ -141,8 +141,8 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2014\bin\win64</ins><br>
-　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2014\bin\win32</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2015\bin\win64</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2015\bin\win32</ins><br>
 
 <br>
 
@@ -371,9 +371,9 @@ LaTeX => PS => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2014\bin\win64\uplatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\uplatex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\uplatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -381,9 +381,9 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2014\bin\win64\upbibtex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upbibtex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\upbibtex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -391,12 +391,12 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\mendex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upmendex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\mendex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
-<ins>-U "%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
+<ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
 
 ***
 
@@ -414,9 +414,9 @@ LaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2014\bin\win64\pdflatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\pdflatex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\pdflatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\pdflatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -424,9 +424,9 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2014\bin\win64\bibtex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\bibtex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\bibtex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\bibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -434,9 +434,9 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\makeindex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -458,9 +458,9 @@ LuaLaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2014\bin\win64\lualatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\lualatex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\lualatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -468,9 +468,9 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2014\bin\win64\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upbibtex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -478,9 +478,9 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upmendex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -499,9 +499,9 @@ Command line arguments to pass to<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2014\bin\win64\luajitlatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\luajitlatex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\luajitlatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\luajitlatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -509,9 +509,9 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2014\bin\win64\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upbibtex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -519,9 +519,9 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upmendex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -542,9 +542,9 @@ XeLaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2014\bin\win64\xelatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\xelatex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\xelatex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\xelatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -552,9 +552,9 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2014\bin\win64\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upbibtex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\bibtexu.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upbibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -562,9 +562,9 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2014\bin\win64\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win64\upmendex.exe</ins><br>
 
-<ins>C:\texlive\2014\bin\win32\makeindex.exe</ins><br>
+<ins>C:\texlive\2015\bin\win32\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -607,7 +607,7 @@ LaTeX => DVI => PDF<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvipdfmx.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2015\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2015\bin\win32\dvipdfmx.exe</ins><br>
 Arguments　　　　　 <ins>"%bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -648,7 +648,7 @@ Ghostscript (ps2pdf)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2014\bin\win32\dvips.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2015\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2015\bin\win32\dvips.exe</ins><br>
 Arguments　　　　　 <ins>-Ppdf -o "%Bm.ps" "%Bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -682,7 +682,7 @@ DviPs (PDF)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2014\bin\win64\rungs.exe</ins> または <ins>C:\texlive\2014\bin\win32\rungs.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2015\bin\win64\rungs.exe</ins> または <ins>C:\texlive\2015\bin\win32\rungs.exe</ins><br>
 Arguments　　　　　 <ins>-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"</ins><br>
 Input<br>
 Output<br>
