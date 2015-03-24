@@ -203,7 +203,7 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 　<strong>\[ 一般　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
 　　　　　言語　　　　　　　　　　　　　　　　　　　　　　　　　　　　ファイル形式<br>
-　　　　　　WinShell: 　 　 　 　 　　 　 　 　 　 　 　　　　　　　　　(●) Windows<br>
+　　　　　　WinShell: 　 　 　 　 　　 　 　 　 　 　 　　　　　　　　　🔘 Windows<br>
 　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[Japanese　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　 ◯ Unix<br>
 　　　　　　スペルチェック:<br>
 　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[en_US 　 　 　 　 　 　 　 　 　　<strong>ᐯ</strong>\]</span><br>
