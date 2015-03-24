@@ -228,7 +228,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
@@ -305,7 +305,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
 ;(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
 ;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
-(setq dviprint-command-format "/usr/bin/open -a \"Adobe Reader\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+(setq dviprint-command-format "/usr/bin/open -a \"Adobe Acrobat Reader DC\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
 (add-hook 'yatex-mode-hook
           '(lambda ()
@@ -331,7 +331,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Reader で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
 > </tbody>
 > </table>
