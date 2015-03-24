@@ -362,7 +362,7 @@ let g:Tex_ViewRule_pdf = 'xdg-open'
 
 <span style="color:Blue;">%</span><br>
 
-<span style="color:Navy;">&#x2b;--　 7 行: Preamble: \documentclass\[uplatex,12pt\]{jsarticle}---------------------------------------------------------------------------------</span><br>
+<span style="color:Navy;">&#x2b;--　 7 行: Preamble: \documentclass\[uplatex,dvipdfmx,12pt,ja=standard\]{bxjsarticle}-------------------------------------------------------------</span><br>
 
 <span style="color:Magenta;">\begin{document}</span><br>
 
