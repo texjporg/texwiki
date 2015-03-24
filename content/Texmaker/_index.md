@@ -602,8 +602,8 @@ C:.
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <!-- local.conf file to configure local font access -->
 <fontconfig>
-<dir>c:/texlive/2014/texmf-dist/fonts/opentype</dir>
-<dir>c:/texlive/2014/texmf-dist/fonts/truetype</dir>
+<dir>c:/texlive/2015/texmf-dist/fonts/opentype</dir>
+<dir>c:/texlive/2015/texmf-dist/fonts/truetype</dir>
 <dir>c:/Windows/Fonts</dir>
 
 <match target="pattern">
