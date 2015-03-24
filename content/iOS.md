@@ -7,15 +7,13 @@ pukiwiki: "iOS"
 
 # iOS
 
-## [iOS](http://www.apple.com/jp/ios/) {#h8fdec00}
+## [iOS](http://www.apple.com/jp/ios/) での TeX の利用 {#h8fdec00}
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Apple_iOS.svg/200px-Apple_iOS.svg.png" alt="iOS" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## 日本語ドキュメント {#z01b76c2}
-
-- [https://developer.apple.com/jp/devcenter/ios/library/japanese.html](https://developer.apple.com/jp/devcenter/ios/library/japanese.html)
+***
 
 <!-- *TeX Live [#w97b9c35] -->
 <!--  -->
@@ -57,3 +55,4 @@ TeX Writer の公式サイトで日本語用のテンプレートファイル jp
 ## 関連リンク {#f3da3e0a}
 
 - [Newest &#39;ipad&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/ipad)
+- [iOS の日本語ドキュメント](https://developer.apple.com/jp/devcenter/ios/library/japanese.html)
