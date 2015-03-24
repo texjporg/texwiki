@@ -10,8 +10,6 @@ pukiwiki: "Texmaker"
 
 ## [Texmaker](http://www.xm1math.net/texmaker/) → かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する {#x838d855}
 
-<img src="http://www.xm1math.net/texmaker/texmaker128.png" alt="Texmaker" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
@@ -38,65 +36,6 @@ GPLv2
 
 [ChangeLog](http://www.xm1math.net/texmaker/log.html)
 
-### [スクリーンショット](http://www.xm1math.net/texmaker/shots.html) {#x2eee2d6}
-
-[![the structure,the document and the embedded pdf viewer side by side](http://www.xm1math.net/texmaker/texmakertop.png)](http://www.xm1math.net/texmaker/texmakertop_big.png)<br>
-　　　　　　　　(the structure, the document and the embedded pdf viewer side by side)<br>
-
-<br>
-
-[![two documents side by side](http://www.xm1math.net/texmaker/sidebyside.png)](http://www.xm1math.net/texmaker/sidebyside_big.png)<br>
-　　　　　　　　　　　　　　　　　　　　(two documents side by side)<br>
-
-[![Linux で動作する Texmaker](http://www.xm1math.net/texmaker/thumblinux.png)](http://www.xm1math.net/texmaker/texmakerlinux.png)
-　 [![OS X で動作する Texmaker](http://www.xm1math.net/texmaker/thumbmacos.png)](http://www.xm1math.net/texmaker/texmakermacos.png)<br>
-　　　Texmaker at work on Linux　　　　　　　　　Texmaker at work on OS X<br>
-
-<br>
-
-[![Windows 7 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbw32.png)](http://www.xm1math.net/texmaker/texmakerw32.png)
-　 [![GNOME 3 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbgnome3.png)](http://www.xm1math.net/texmaker/texmakergnome3.png)<br>
-　　Texmaker at work on Windows 7　　　　　Texmaker at work on GNOME 3<br>
-
-<br>
-
-[![Qt5 でコンパイルされた Texmaker](http://www.xm1math.net/texmaker/thumbqt5.png)](http://www.xm1math.net/texmaker/texmakerqt5.png)
-　 [![Windows 8 で動作する Texmaker](http://www.xm1math.net/texmaker/thumbwindows8.png)](http://www.xm1math.net/texmaker/windows8.png)<br>
-　　Texmaker compiled with Qt5　　　　　　　Texmaker at work on Windows 8<br>
-
-<br>
-
-[![Ubuntu で動作する Qt5 バージョンの Texmaker](http://www.xm1math.net/texmaker/thumbtexmakerQT5_ubuntu.png)](http://www.xm1math.net/texmaker/texmakerQT5_ubuntu.png)<br>
-　Qt5 version of Texmaker on Ubuntu<br>
-
-### [特徴](http://www.xm1math.net/texmaker/#features) {#m6bf2399}
-
-> <table>
-> <tbody>
-> <tr><td style="background-color:#CCF">Unicode 対応エディタ</td><td style="background-color:#CCF">スペルチェッカー</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/unicode.png"><img src="http://www.xm1math.net/texmaker/pics/unicode_s.png" alt="Unicode 対応エディタ"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/spell.png"><img src="http://www.xm1math.net/texmaker/pics/spell_s.png" alt="スペルチェッカー"></a></td></tr>
-> <tr><td style="background-color:#CCF">折りたたみ</td><td style="background-color:#CCF">補完</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/folding.png"><img src="http://www.xm1math.net/texmaker/pics/folding_s.png" alt="折りたたみ"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/completion.png"><img src="http://www.xm1math.net/texmaker/pics/completion_s.png" alt="補完"></a></td></tr>
-> <tr><td style="background-color:#CCF">アウトライン</td><td style="background-color:#CCF">"マスター"モード</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/structure.png"><img src="http://www.xm1math.net/texmaker/pics/structure_s.png" alt="アウトライン"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/master.png"><img src="http://www.xm1math.net/texmaker/pics/master_s.png" alt="マスターモード"></a></td></tr>
-> <tr><td style="background-color:#CCF">組み込みの PDF ビューア</td><td style="background-color:#CCF">簡単コンパイル</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/pdfsync.png"><img src="http://www.xm1math.net/texmaker/pics/pdfsync_s.png" alt="組み込みの PDF ビューア"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/quickbuild.png"><img src="http://www.xm1math.net/texmaker/pics/quickbuild_s.png" alt="簡単コンパイル"></a></td></tr>
-> <tr><td style="background-color:#CCF">数学記号</td><td style="background-color:#CCF">作成ウィザード</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/math.png"><img src="http://www.xm1math.net/texmaker/pics/math_s.png" alt="数学記号"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/wizard.png"><img src="http://www.xm1math.net/texmaker/pics/wizard_s.png" alt="作成ウィザード"></a></td></tr>
-> <tr><td style="background-color:#CCF">LaTeX リファレンス</td><td style="background-color:#CCF">エラーハンドリング</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/latexdoc.png"><img src="http://www.xm1math.net/texmaker/pics/latexdoc_s.png" alt="LaTeX リファレンス"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/log.png"><img src="http://www.xm1math.net/texmaker/pics/log_s.png" alt="エラーハンドリング"></a></td></tr>
-> <tr><td style="background-color:#CCF">矩形選択</td><td style="background-color:#CCF">フォルダー内のテキスト検索</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/block.png"><img src="http://www.xm1math.net/texmaker/pics/block_s.png" alt="矩形選択"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/findfolder.png"><img src="http://www.xm1math.net/texmaker/pics/findfolder_s.png" alt="フォルダー内のテキスト検索"></a></td></tr>
-> <tr><td style="background-color:#CCF">PDF ビューアの表示を回転</td><td style="background-color:#CCF">TeX4ht で html, odt エクスポート</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/rotate.png"><img src="http://www.xm1math.net/texmaker/pics/rotate_s.png" alt="PDF ビューアの表示を回転"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/export.png"><img src="http://www.xm1math.net/texmaker/pics/export_s.png" alt="TeX4ht で html,odt エクスポート"></a></td></tr>
-> <tr><td style="background-color:#CCF">正規表現</td><td style="background-color:#CCF">Asymptote</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/regular.png"><img src="http://www.xm1math.net/texmaker/pics/regular_s.png" alt="正規表現"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/asymptote.png"><img src="http://www.xm1math.net/texmaker/pics/asymptote_s.png" alt="Asymptote"></a></td></tr>
-> <tr><td style="background-color:#CCF">スニペット</td><td style="background-color:#CCF">Qt5 対応</td></tr>
-> <tr><td><a href="http://www.xm1math.net/texmaker/pics/snippets.png"><img src="http://www.xm1math.net/texmaker/pics/snippets_s.png" alt="スニペット"></a></td><td><a href="http://www.xm1math.net/texmaker/pics/qt5.png"><img src="http://www.xm1math.net/texmaker/pics/qt5_s.png" alt="Qt5 対応"></a></td></tr>
-> </tbody>
-> </table>
->
-
 ### 派生版 {#n8123b82}
 
 - [TeXstudio](/TeXstudio/)
@@ -122,20 +61,6 @@ Texmaker/インストール を参照．
 
 OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)<br>
 Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
-
-***
-
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#C9C9C9;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　　<ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>Change Key</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>AXNotifier</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
-　　　　<span style="color:Black;background-color:#FAFAFA;">\[<ins>&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　</ins>\]</span>　　☐ Show enabled only (1 item)　　　　　　　<ins>\[ <strong>↻</strong> ReloadXML \]</ins><br>
-　　　　remapping<br>
-　　　　<span style="color:#595857;">▼</span>For Japanese<br>
-　　　　　　<span style="color:#595857;">▼</span>Change Yen(￥) Key<br>
-　　　　　　　　　<span style="color:White;background-color:#0F7FFF;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
-　　　　　　　　　　　　(except virtual machine, X11, RDC)<br>
-
-***
 
 ### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる → Dark theme を選択する {#c698d89f}
 
