@@ -908,51 +908,35 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### [Adobe Reader](</Adobe Reader/>) {#c94760c4}
+#### Adobe Acrobat Reader DC {#h47fd5db}
 
-■ コマンドラインを使用する場合<br>
-TeX ファイルの行番号に対応する PDF ファイルの該当するページにジャンプします．<br>
+<!-- ■ コマンドラインを使用する場合~ -->
+<!-- TeX ファイルの行番号に対応する PDF ファイルの該当するページにジャンプします．~ -->
+<!-- - --  -->
+<!-- &color(#2E3436,#2E3436){%%%　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
+<!-- &color(Black,#EEEEEE){%%%[ (La)TeX　　　][ Preprocessor ][ Postprocessor ]%%%};''[ Viewer　　　]''&br; -->
+<!-- Executable path&br; -->
+<!-- &br; -->
+<!-- %%%C:\Windows\System32\cmd.exe%%%&br; -->
+<!-- &br; -->
+<!-- View project's output&br; -->
+<!-- (●) Command line argument　　◯ DDE command&br; -->
+<!-- Command %%%/c "%bm.pdf"%%%&br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- Forward search&br; -->
+<!-- (●) Command line argument　　◯ DDE command&br; -->
+<!-- Command %%%/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen - -rxi - -file '&#x25;&#x25;{output}' - -page &#x25;&#x25;{page+1}"%%%&br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- Close document before running (La)TeX&br; -->
+<!-- (●) Command line argument　◯ DDE command　　◯ Do not close&br; -->
+<!-- Command %%%/c pdfclose - -rxi - -file "%bm.pdf"%%%&br; -->
+<!-- &br; -->
+<!-- - --  -->
 
-***
-
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
-
-Executable path<br>
-
-<br>
-
-<ins>C:\Windows\System32\cmd.exe</ins><br>
-
-<br>
-
-View project's output<br>
-(●) Command line argument　　◯ DDE command<br>
-Command <ins>/c "%bm.pdf"</ins><br>
-
-<br>
-
-<br>
-
-Forward search<br>
-(●) Command line argument　　◯ DDE command<br>
-Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen --rxi --file '&#x25;&#x25;{output}' --page &#x25;&#x25;{page+1}"</ins><br>
-
-<br>
-
-<br>
-
-Close document before running (La)TeX<br>
-(●) Command line argument　◯ DDE command　　◯ Do not close<br>
-Command <ins>/c pdfclose --rxi --file "%bm.pdf"</ins><br>
-
-<br>
-
-***
-
-■ DDE を使用する場合<br>
-PDF ファイルの先頭ページにジャンプします．<br>
+<!-- ■ DDE を使用する場合~ -->
+<!-- PDF ファイルの先頭ページにジャンプします．~ -->
 
 ***
 
@@ -964,30 +948,30 @@ Executable path<br>
 
 <br>
 
-<ins>C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
+<ins>C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe</ins><br>
 
-<ins>C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe</ins><br>
+<ins>C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe</ins><br>
 
 <br>
 
 View project's output<br>
 ◯ Command line argument　　(●) DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
-Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　(●) DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]\[DocGoTo("%bm.pdf",0)\]</ins><br>
-Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
 ◯ Command line argument　(●) DDE command　　◯ Do not close<br>
 Command <ins>\[DocClose("%bm.pdf")\]</ins><br>
-Server: <ins>acroviewR11</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewR15</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
