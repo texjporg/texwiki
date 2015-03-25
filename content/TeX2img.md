@@ -79,7 +79,7 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
     - [TeX2img のすゝめ：詳しい使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-gui)
     - [TeX2img のコマンドライン版の使い方（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-cui)
     - [TeX2img で任意の TeX エンジンを指定するために](http://acetaminophen.hatenablog.com/entry/tex2img-latex)
-    - [TeX2img (Windows/Mac) の動作の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/18/214403)
+    - [TeX2img (Windows/Mac) の動作の詳細（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-converter)
     - [PDF のトリミングとベクター画像抽出](http://acetaminophen.hatenablog.com/entry/2014/09/15/075714)
 - [&quot;Ghostscript&quot; - 記事一覧 - Acetaminophen’s diary](http://acetaminophen.hatenablog.com/archive/category/Ghostscript)
     - [Ghostscript のこと(1)：アウトライン化の詳細](http://acetaminophen.hatenablog.com/entry/2014/10/16/110255)
