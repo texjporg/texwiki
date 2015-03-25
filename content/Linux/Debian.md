@@ -29,6 +29,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 - [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
 - [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
+- [Debian -- パッケージ検索結果 -- texlive-luatex](https://packages.debian.org/ja/texlive-luatex)
 - [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
 - [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
 - [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
@@ -69,10 +70,10 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は
 
 ```
-$ sudo apt-get install texlive-lang-japanese texlive xzdec
+$ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
 $ tlmgr init-usertree
 ```
 
