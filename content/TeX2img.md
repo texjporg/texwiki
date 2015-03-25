@@ -70,7 +70,7 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 
 #### 作者による解説など {#project}
 
-- [「TeX2img」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TeX2img)
+- [「TeX2img」の検索結果 - にっき♪](http://abenori.blogspot.com/search?q=TeX2img)
 - [「TeX2img」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeX2img)
 
 #### 使い方，動作の仕組みの解説 {#manual}
