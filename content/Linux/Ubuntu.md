@@ -91,6 +91,7 @@ Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用し
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
 - [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
@@ -122,10 +123,10 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive パッケージをインストールする場合は Ubuntu 14.10 以降にアップグレードして
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Ubuntu 14.10 以降にアップグレードして
 
 ```
-$ sudo apt-get install texlive-lang-japanese texlive xzdec
+$ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
 $ tlmgr init-usertree
 ```
 
