@@ -116,6 +116,8 @@ $ sudo dpkg -i texlive-local_2014-1_all.deb
 
 ### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
+- [LubuntuでTeX環境を整える](http://duroomzacc-diary.hatenablog.com/entry/2015/05/17/193427)
+
 TeX Live/Debian をフルインストールする場合は
 
 ```
