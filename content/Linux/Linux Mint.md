@@ -169,45 +169,6 @@ $ sudo apt-get install qpdfview
 $ sudo apt-get install mupdf mupdf-tools
 ```
 
-## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#bdbc2c20}
-
-Adobe Reader XI は Wine 上でも動作します．<br>
-
-```
-$ sudo apt-get install wine wine-gecko wine-mono
-$ wget ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.10/ja_JP/AdbeRdr11010_ja_JP.exe
-$ wine AdbeRdr11010_ja_JP.exe
-```
-
-インストールが途中で終了してしまう場合は
-
-```
-$ wine ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
-```
-
-を実行して
-
-```
-$ wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Adobe/Reader\ 11.0/Setup\ Files/\{AC76BA86-7AD7-1041-7B44-AB0000000001\}/setup.exe
-```
-
-を実行します．<br>
-
-```
-$ wine ~/.wine/drive_c/Program\ Files*/Adobe/Reader*/Reader/AcroRd32.exe
-```
-
-```
-Adobe Reader の保護モード
-システム設定の互換性に問題があるので、 Adobe Reader を保護モードで開けません。保護モードを無効にして Adobe Reader を開きますか？
-```
-
-```
- ◯ 保護モードを無効にして開く(O)
-(●)常に保護モードを無効にして開く(A) ← 常に保護モードを無効にして開くを選択
- ◯ 保護モードを無効にした状態では開かない(D)
-```
-
 ## [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
 
 ```
