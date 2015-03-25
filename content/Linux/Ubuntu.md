@@ -269,5 +269,5 @@ $ sudo apt-get install inkscape pstoedit python-lxml
 - [2012年9月27日　問題は広告じゃない!? Ubuntu 12.10のデフォルト検索→Amazonに反対するワケ](http://gihyo.jp/admin/clip/01/linux_dt/201209/27)
 - [Ubuntu 12.10にAmazonレンズを無効にする設定項目が加わったらしい](http://cpplover.blogspot.jp/2012/10/ubuntu-1210amazon.html)
 - [ストールマン、UbuntuのUnityレンズについて](http://cpplover.blogspot.jp/2012/10/ubuntuunity.html)
-- [Richard Stallman氏の批判にUbuntuのコミュニティーマネージャーが反論](http://linux.slashdot.jp/story/12/12/10/2111218/Richard-Stallman%E6%B0%8F%E3%81%AE%E6%89%B9%E5%88%A4%E3%81%ABUbuntu%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E5%8F%8D%E8%AB%96)
+- [Richard Stallman氏の批判にUbuntuのコミュニティーマネージャーが反論](http://linux.srad.jp/story/12/12/10/2111218/Richard-Stallman%E6%B0%8F%E3%81%AE%E6%89%B9%E5%88%A4%E3%81%ABUbuntu%E3%81%AE%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%83%BC%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC%E3%81%8C%E5%8F%8D%E8%AB%96)
 - [Ubuntu脱出計画その1 〜動機編〜](http://nippondanji.blogspot.jp/2013/02/ubuntu1.html)
