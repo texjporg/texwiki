@@ -80,7 +80,7 @@ TeXstudio/インストール を参照．<br>
 
 ## 注意点 {#g9d4fa21}
 
-### OS X の TeXstudio で ptex2pdf が動作しない → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除して ~/.bash_profile に export PATH=$PATH:/usr/texbin を追加する {#zfde7b69}
+### OS X の TeXstudio で ptex2pdf が動作しない → ptex2pdf を version 0.6 以降に更新して ~/.bash_profile に export PATH=$PATH:/usr/texbin を追加する {#zfde7b69}
 
 - [(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)
 
