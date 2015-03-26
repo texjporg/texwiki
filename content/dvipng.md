@@ -36,7 +36,7 @@ Version 1.9 からサブフォントに対応しているので，サブフォ�
 
 ## 使い方 {#ic72a209}
 
-dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります．
+dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります．[TeX2img](/TeX2img/) (Windows/Mac) も直接 PNG を出力できます．
 
 ### DVI -> dvipng -> PNG {#wff0573c}
 
