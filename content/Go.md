@@ -37,10 +37,8 @@ Go は汎用プログラミング言語です．<br>
 
 ### Related Links {#sba670f5}
 
-- [golang.jp - プログラミング言語Goの情報サイト](http://golang.jp/)
 - [Wikipedia.ja:Go\_(プログラミング言語)](https://ja.wikipedia.org/wiki/Go_%28%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E8%A8%80%E8%AA%9E%29)
-- [GoBuild - Cross-Platform Go Project Compiler](https://gobuild.io/)
-- [http://go.shibu.jp/](http://go.shibu.jp/)
+- [プログラミング言語 Go ドキュメント](http://go.shibu.jp/)
 - [https://github.com/astaxie/build-web-application-with-golang/blob/master/ja/ebook/preface.md](https://github.com/astaxie/build-web-application-with-golang/blob/master/ja/ebook/preface.md)
 - [http://ryochack.hatenablog.com/archive/category/golang](http://ryochack.hatenablog.com/archive/category/golang)
 - [http://golang.org/src/pkg/syscall/syscall_windows.go](http://golang.org/src/pkg/syscall/syscall_windows.go)
@@ -55,6 +53,7 @@ Go は汎用プログラミング言語です．<br>
 - [Go言語でエラーを書くときに気をつけること](http://d.hatena.ne.jp/taknb2nch/20140307/1394169432)
 - [http://welovy.hatenablog.com/category/Go](http://welovy.hatenablog.com/category/Go)
 - [goでWin 64/32ビット、両方のバイナリをビルドできるようにするには](http://ja.stackoverflow.com/questions/2555/go%E3%81%A7win-64-32%E3%83%93%E3%83%83%E3%83%88-%E4%B8%A1%E6%96%B9%E3%81%AE%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E3%82%92%E3%83%93%E3%83%AB%E3%83%89%E3%81%A7%E3%81%8D%E3%82%8B%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF)
+- [第10回gunosy.goで発表した](http://datasciesotist.hatenablog.jp/entry/2014/09/14/163943)
 
 ## Installation {#v5dc7237}
 
@@ -80,7 +79,7 @@ Go は汎用プログラミング言語です．<br>
 
 ### Go 版 {#j2bc8fe8}
 
-go version go1.4 windows/amd64 で動作確認しています．<br>
+go version go1.4.2 windows/amd64 で動作確認しています．<br>
 Windows PowerShell またはコマンド プロンプトから以下のようにしてビルドします．<br>
 
 ```
