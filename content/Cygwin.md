@@ -469,26 +469,6 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 
 ### 不具合 {#iffd4e02}
 
-#### TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する → ptex2pdf.lua の shebang line #!/usr/bin/env texlua   の texlua の後ろの余分なスペース2つを削除 {#p6191d87}
-
-TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．<br>
-
-```
-$ ptex2pdf -u -l hoge.tex
-/usr/bin/env: texlua  : No such file or directory
-```
-
-ptex2pdf -u -l &lt;FILENAME> を実行すると "/usr/bin/env: texlua  : No such file or directory" と表示される場合は [ptex2pdf.lua](/ptex2pdf/) の shebang line
-
-```
-#!/usr/bin/env texlua  
-```
-
-の texlua の後ろの余分なスペース2つを削除してください．<br>
-
-- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
-- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
-
 #### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
 
 dvipdfmx がうまく動作しない場合は /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．<br>
