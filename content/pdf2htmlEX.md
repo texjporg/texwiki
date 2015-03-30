@@ -309,15 +309,15 @@ $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.4.05.4mingw491_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.4.05.4mingw491_32lib'
+../libtool: line 6013: cd: C:QtQt5.4.15.4mingw491_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.4.15.4mingw491_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-1.00/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.4.0\5.4\mingw491_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.4.0/5.4/mingw491_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.4.1\5.4\mingw491_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.4.1/5.4/mingw491_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
