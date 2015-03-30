@@ -301,9 +301,9 @@ $ popd
 [ttfautohint](http://www.freetype.org/ttfautohint/) をインストールします．<br>
 
 ```
-$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-1.2.tar.gz
-$ tar xvf ttfautohint-1.2.tar.gz
-$ pushd ttfautohint-1.2
+$ curl -R -L -O http://download.sourceforge.net/freetype/ttfautohint-1.3.tar.gz
+$ tar xvf ttfautohint-1.3.tar.gz
+$ pushd ttfautohint-1.3
 $ ./configure --prefix=/mingw
 $ make
 ```
