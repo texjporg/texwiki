@@ -9,8 +9,6 @@ pukiwiki: "Android"
 
 ## [Android](http://www.android.com/) での TeX の利用 {#q41b698a}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/200px-Android_robot.svg.png" alt="Android" style="float:right">
-
 ***
 
 ***
