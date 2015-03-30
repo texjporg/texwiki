@@ -201,9 +201,9 @@ CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用で�
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.30.0.tar.xz
-$ tar xvf poppler-0.30.0.tar.xz
-$ pushd poppler-0.30.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.32.0.tar.xz
+$ tar xvf poppler-0.32.0.tar.xz
+$ pushd poppler-0.32.0
 ```
 
 ***
