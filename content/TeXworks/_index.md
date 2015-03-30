@@ -8,7 +8,7 @@ pukiwiki: "TeXworks"
 
 # TeXworks
 
-TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．Mac OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
+TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
 奥村晴彦・黒木裕介「[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)」では，おすすめの統合環境に TeXworks が紹介されています．
 
@@ -42,7 +42,7 @@ Microsoft Windows（XP 以降），OS X, GNU/Linux で利用できます．TeXwo
 
 ### 設定 {#q50d2378}
 
-W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，pLaTeX を使うための設定を追加する必要があります．
+W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
 
 [TeXworks/設定](</TeXworks/設定/>) を参照．
 
@@ -54,7 +54,7 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 <!--  -->
 <!-- [[News:http://www.tug.org/texworks/#News]] を参照．~ -->
 <!--  -->
-<!-- TeXworks 0.4.5 の Windows バイナリは Qt 4.8.1, Poppler 0.22.2 を使用してビルドされています．~ -->
+<!-- TeXworks 0.4.6 の Windows バイナリは Qt 5.1.0, Poppler 0.32.0 を使用してビルドされています．~ -->
 <!-- TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．~ -->
 
 <!-- **ChangeLog [#j22176bb] -->
@@ -69,7 +69,7 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 
 TeXworks で使用する文字コードはデフォルトでは UTF-8 です．このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．文字コードの変換には，各種エディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
 
-エディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのエディタを使う方法があります．
+エディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
 
 コマンドラインからの場合，[W32TeX](/W32TeX/) には標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．nkf の場所は以下のようにして確認できます．
 
@@ -129,7 +129,7 @@ kanji-config-updmap ipaex
 
 ### W32TeX の場合 {#h6fd82bc}
 
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf), pdfupLaTeX で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
 
 フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．
 
@@ -184,18 +184,43 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### [OS X で TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082) {#n5c2ae8e}
+### Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
 
-[TeXworks 0.4.5 on Yosemite+](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1522) を使用してください．
+Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
-- [Mountain Lion で Texworks のプレビューが日本語表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1082)
+TeXworks 0.4.5 では問題は発生しませんでした．
+
+Qt 5.1.0 でビルドされた TeXworks で問題が発生するようです．
+
+TeXworks で使用されている Qt のバージョンは strings と grep で確認できます．
+
+```
+$ strings -a TeXworks.exe | grep "Qt. version"
+Qt4 version      : 5.1.0 (build) /
+```
+
+Qt 5.3 でビルドすれば回避できるようです．
+
+- [Could not interprete the stop sign from new TeXworks · Issue #2 · norbusan/ptex2pdf · GitHub](https://github.com/norbusan/ptex2pdf/issues/2)
+- Re: TeXworks がエラー時に停止させるとフリーズ ([forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
+- [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
+- [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
+- [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
+
+### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
+
+OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないようです．
+
+[TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください．
+
+- Mountain Lion で Texworks のプレビューが日本語表示できない ([forum:1082](https://okumuralab.org/tex/mod/forum/discuss.php?d=1082))
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
 
 ### OS X の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
 
 OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
 
-- [TeXworks 0.4.3でのバックスラッシュの入力(Mac)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=674)
+- TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
 - [backslash becomes yen · Issue #516 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/516)
 
 OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
