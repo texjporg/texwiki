@@ -10,8 +10,6 @@ pukiwiki: "Ghostscript"
 
 ## [Ghostscript](http://www.ghostscript.com/) {#odb09bf1}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Ghostscript.svg/200px-Ghostscript.svg.png" alt="Ghostscript" style="float:right">
-
 <strong>目次</strong>
 
 ## Ghostscript とは {#a116e094}
