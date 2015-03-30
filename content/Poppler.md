@@ -61,7 +61,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - [MinGW](/MinGW/) をフルインストールします．
 
-<!-- -[[msysgit - Git for Windows:https://code.google.com/p/msysgit/]] から PortableGit-1.7.4-preview20110204.7z をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
+<!-- -[[Git for Windows:http://msysgit.github.io/]] をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します． -->
 
 - [GTK+ Download: Windows (32-bit)](http://www.gtk.org/download/win32.php) から
 
@@ -88,10 +88,6 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 - Install [Python](/Python/).
 
 - Run MinGW Shell (MSYS).
-
-<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
-<!--  -->
-<!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
 
 <!-- mingw-utils をインストールします．~ -->
 <!--  -->
