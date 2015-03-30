@@ -39,7 +39,7 @@ Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問
 - [QA: gs9.15 and gs9.10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
 - \[[texlive\] Revision 35312](http://www.tug.org/svn/texlive?view=revision&revision=35312)
 
-また Ghostscript 9.15 では，output device から epswrite が廃止され，9.14 で追加・推奨されていた eps2write に完全に置き換わりました．
+また Ghostscript 9.15 で，output device から epswrite が廃止され，9.14 で追加・推奨されていた eps2write に完全に置き換わりました．
 eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript/使い方/>) を参照してください．
 以下のようなアプリケーションは，すでに対応を完了しています．
 
@@ -51,7 +51,7 @@ Ghostscript 9.15 では回転したテキストを含むファイルを eps2writ
 
 - [Bug 695671 - eps2write gives incorrect bounding box with rotated text](http://bugs.ghostscript.com/show_bug.cgi?id=695671)
 
-Ghostscript 9.14 はハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
+Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
