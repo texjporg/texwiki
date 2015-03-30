@@ -226,8 +226,8 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.852 (64 bit or 32 bit)</strong></span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2013</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:14px"><strong>Setup.exe version 2.870 (64 bit or 32 bit)</strong></span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">Copyright 2000-2015</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:12px">[https://www.cygwin.com/](https://www.cygwin.com/)</span>
 
 ***
