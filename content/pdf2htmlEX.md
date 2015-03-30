@@ -599,5 +599,5 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [Man page of MKDIR](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man2/mkdir.2.html)
     <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
 
-- [dlfcn-win32](https://code.google.com/p/dlfcn-win32/)
+- [dlfcn-win32](https://github.com/dlfcn-win32/dlfcn-win32)
 - [MinGW/dllを呼び出す - Ura5han Wiki](http://ura5han.resourcez.org/wiki/MinGW/dll%E3%82%92%E5%91%BC%E3%81%B3%E5%87%BA%E3%81%99)
