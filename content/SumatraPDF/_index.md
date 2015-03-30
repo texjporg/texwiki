@@ -28,7 +28,7 @@ Windows
 
 ### License {#f48c8095}
 
-[GPLv3](https://code.google.com/p/sumatrapdf/source/browse/trunk/COPYING)
+[GPLv3](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/COPYING)
 
 ### リリース情報/ChangeLog {#b67b5a28}
 
@@ -145,7 +145,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
     - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
-        - [DDE commands ](https://code.google.com/p/sumatrapdf/wiki/DDEcommands)
+        - [DDE commands ](https://github.com/sumatrapdfreader/sumatrapdf/wiki/DDE-commands)
 - [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
     <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
     <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
