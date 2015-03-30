@@ -114,7 +114,7 @@ pukiwiki: "PDFの作り方"
         - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
     - [QPDF](/QPDF/) Web 表示用に最適化したり，暗号化したりできます．[W32TeX](/W32TeX/) に含まれています．
     - [Xpdf](/Xpdf/) PDF 操作ツール（テキスト抽出，[PostScript](/PostScript/) や HTML への変換など）．[W32TeX](/W32TeX/) に含まれています．
-    - [pdfsizeopt](https://code.google.com/p/pdfsizeopt/) PDF file size optimizer
+    - [pdfsizeopt](https://github.com/pts/pdfsizeopt) PDF file size optimizer
     - [DiffPDF](http://www.qtrac.eu/diffpdf.html) DiffPDF is used to compare two PDF files—textually or visually.
 
 ## LaTeX で PDF {#k0e3280f}
@@ -980,7 +980,6 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [pdf ファイルのフォント埋め込みについて - JSIAM](http://www.jsiam.org/modules/xfsection/article.php?articleid=57)
 - [手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm) (横浜工文社さん)
 - [フリーソフトで PDF を作成する方法](http://www.trueroad.jp/pdf-make/) （細田さん）
-- [WinTeX文書をPDF化する](http://kamoland.com/comp/tex_acro.html)
 - [さまざまなPDFの作成技術の概観](http://www.antenna.co.jp/pdf/reference/createpdf.htm) (アンテナハウスさん)
 - [テクニカルガイド - PDF作成方法](http://www.iro-dori.net/guide/technical/pdf/)
 - [PDFファイル作成方法](http://www.miyagi.kopas.co.jp/guide_JSBBA/guide.html)
