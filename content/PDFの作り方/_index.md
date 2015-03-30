@@ -185,7 +185,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
     - 一般に \includegraphics で外部ファイルを画像として取り込むには，出力されるページ上で画像の境界がどこに設定されるかを指定する必要がある．この領域のことをバウンディングボックス（bounding box）と呼ぶ．
     - EPS ファイルは，もともと PostScript の画像を埋め込むための形式として開発されたこともあって，バウンディングボックスを表す情報が必ずファイル内に埋め込まれている（BoundingBox）． EPSの取り込みでは，この BoundingBox の値が使われる．EPS 以外を取り込むときは，別の方法でバウンディングボックスの情報を手に入れるしかない．
 
-- dvipdfmx を使う場合は， extractbb というコマンドを使って画像 PDF のバウンディングボックスの値を用意する．
+- dvipdfmx を使う場合は， extractbb というコマンドを使うと画像 PDF のバウンディングボックスの値を出力できる．TeX Live 2015 以降, MacTeX-2015 以降, W32TeX を使用している場合は自動実行されるので extractbb を直接実行する必要はない．
 
 ```
 $ extractbb foo.pdf
@@ -319,47 +319,9 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です．<br
 
 #### extractbb の自動実行 {#rf074b4b}
 
-TeX Live 2015, MacTeX-2015, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
+TeX Live 2015 以降, MacTeX-2015 以降, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．<br>
 
-```
-\usepackage[dvipdfmx]{graphicx}
-```
-
-のようにすると，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．<br>
-
-TeX Live 2014, MacTeX-2014 では extractbb の実行は自動化されていません．<br>
-自動化したい場合は
-
-- Windows の場合は C:\texlive\texmf-local\web2c\texmf.cnf
-- OS X, Linux の場合は /usr/local/texlive/texmf-local/web2c/texmf.cnf
-
-に書き加えます．
-
-```
-sudo nano /usr/local/texlive/texmf-local/web2c/texmf.cnf　（ここでは例としてnanoで開きました）
-```
-
-などとして，
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-extractbb,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-を書き足して管理者権限で
-
-```
-mktexlsr
-```
-
-を実行します．
-
-また，LaTeX ファイル中では
+LaTeX ファイル中では
 
 ```
 \usepackage[dvipdfmx]{graphicx}
@@ -440,17 +402,6 @@ extractbb hoge.pdf
 
 とすると hoge.xbb というファイルが生成されます．<br>
 extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたはコマンドプロンプトから実行するコマンドです．<br>
-
-extractbb を使用して
-
-```
-extractbb:warning: Streams with DecodeParms not supported.
-extractbb:warning: Cannot parse cross-reference stream.
-extractbb:warning: Error while parsing PDF file.
-extractbb:warning: ./hoge.pdf does not look like a PDF file...
-```
-
-などとエラーが表示されて .xbb ファイルが出力されない場合は TeX Live 2015 または W32TeX \[2014/08/14\] 以降の dvipdfmx にアップグレードしてください．<br>
 
 - [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
 - [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
