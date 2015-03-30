@@ -10,8 +10,6 @@ pukiwiki: "Vim"
 
 ## [Vim](http://www.vim.org/) {#c1593263}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png" alt="Vim" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 <div style="clear:both"></div>
@@ -82,11 +80,6 @@ Vim は，チャリティウェアです．<br>
 
 - [VimTouch](https://github.com/momodalo/vimtouch)
     - [Vim Touch - Google Play](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch&hl=ja)
-
-#### iOS {#o6e8ea48}
-
-- [Applidium &mdash; Vim](http://applidium.com/en/applications/vim/)
-    - [Vim - iTunes App Store](https://itunes.apple.com/jp/app/vim/id492668168?mt=8)
 
 #### Web {#s4320361}
 
