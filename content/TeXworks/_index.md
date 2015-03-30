@@ -382,6 +382,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 - [Newest &#39;texworks&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texworks)
     - [configure latexmk in Texworks 0.2.3](http://tex.stackexchange.com/questions/18936/configure-latexmk-in-texworks-0-2-3)
+- [にっき&#9834;: TeXworksの検索結果](http://abenori.blogspot.com/search?q=TeXworks)
 - [USBメモリ活用講座【実践編・TeXworksとupLaTeX】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/texworks.shtml)
 - [TeXWorks で perl との連携](http://emath.s40.xrea.com/ydir/Wiki/index.php?TeXWorks%20%A4%C7%20perl%20%A4%C8%A4%CE%CF%A2%B7%C8)
 - [TeX | 餅と輪](http://blog.mochiring.net/archives/tag/tex)
