@@ -47,10 +47,6 @@ see [https://github.com/coolwanglu/pdf2htmlEX/wiki/Building](https://github.com/
 
 [Poppler - TeX Wiki](/Poppler/) を参照して Poppler をインストールします．(pdf2htmlEX をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)<br>
 
-<!-- [[Python]] 2.7.6 Windows x86 MSI Installer をダウンロードしてインストールします．~ -->
-<!-- [[mingw-and-ndk:https://code.google.com/p/mingw-and-ndk/]] のページから [[Python]] の MinGW バイナリ ([[python-mingw.7z:https://code.google.com/p/mingw-and-ndk/downloads/detail?name=python-mingw.7z]]) をダウンロードしてインストールします．~ -->
-<!--  -->
-<!-- [[7-Zip:http://sevenzip.sourceforge.jp/]] で展開して中身のフォルダーを C:\MinGW に上書きします．~ -->
 <!--  -->
 <!-- mingw-utils をインストールします．~ -->
 <!--  -->
@@ -121,11 +117,11 @@ see [https://github.com/coolwanglu/pdf2htmlEX/wiki/Building](https://github.com/
 <!-- $ ./b2 - -prefix=/mingw toolset=gcc link=static,shared install -->
 <!-- $ popd -->
 <!--  -->
-<!-- dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [[dlfcn-win32:https://code.google.com/p/dlfcn-win32/]] をインストールします．~ -->
+<!-- dlopen(), dlclose(), dlsym(), dlerror() 関数が必要な場合は [[dlfcn-win32:https://github.com/dlfcn-win32/dlfcn-win32]] をインストールします．~ -->
 <!-- FontForge はこれらの関数を使用しているようです．~ -->
-<!-- $ curl - -insecure -R -L -O https://dlfcn-win32.googlecode.com/files/dlfcn-win32-r19.tar.bz2 -->
-<!-- $ tar xvf dlfcn-win32-r19.tar.bz2 -->
-<!-- $ pushd dlfcn-win32-r19 -->
+<!-- $ curl - -insecure -R -L -O https://github.com/dlfcn-win32/dlfcn-win32/archive/v1.0.0.tar.gz -->
+<!-- $ tar xvf dlfcn-win32-1.0.0.tar.gz -->
+<!-- $ pushd dlfcn-win32-1.0.0 -->
 <!-- $ ./configure - -prefix=/mingw - -enable-shared -->
 <!-- $ make -->
 <!-- $ make install -->
@@ -243,7 +239,7 @@ $ make install
 $ popd
 ```
 
-[FontForge](https://github.com/fontforge/fontforge) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar xvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar xvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
+[FontForge](http://fontforge.github.io/) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar xvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar xvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
 
 ```
 $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
@@ -427,7 +423,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.29.0
+--   found poppler, version 0.32.0
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
