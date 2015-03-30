@@ -595,8 +595,8 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [Pdf2htmlEX: A PDF to HTML converter | Hacker News](http://news.ycombinator.com/item?id=4528797)
 - [pdf2htmlEX – Convert PDF to HTML without losing format](http://ubuntuguide.net/pdf2htmlex-convert-pdf-to-html-without-losing-format)
-- [Man page of MKDTEMP](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man3/mkdtemp.3.html)
-- [Man page of MKDIR](http://linuxjm.sourceforge.jp/html/LDP_man-pages/man2/mkdir.2.html)
+- [Man page of MKDTEMP](http://linuxjm.osdn.jp/html/LDP_man-pages/man3/mkdtemp.3.html)
+- [Man page of MKDIR](http://linuxjm.osdn.jp/html/LDP_man-pages/man2/mkdir.2.html)
     <!-- -[[Boostライブラリのビルド方法:https://sites.google.com/site/boostjp/howtobuild]] -->
 
 - [dlfcn-win32](https://github.com/dlfcn-win32/dlfcn-win32)
