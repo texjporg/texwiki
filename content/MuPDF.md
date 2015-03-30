@@ -46,7 +46,7 @@ MacPortsを利用してインストールする場合は次のようにします
 $ sudo port install mupdf
 ```
 
-- [homebrew / Library / Formula / mupdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/mupdf.rb)
+- [https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb](https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb)
 - [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
 #### Arch Linux {#y10f7abd}
