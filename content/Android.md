@@ -54,7 +54,7 @@ pdflatex は普通に使用できるそうです．(→ [https://twitter.com/ti5
 
 <span style="color:White;background-color:Black;">u0_a77@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-<span style="color:White;background-color:Black;">pdfTeX 3.14159265-2.6-1.40.15 (Web2C 2014 for Android) 　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">pdfTeX 3.14159265-2.6-1.40.16 (Web2C 2015 for Android) 　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 ***
 
@@ -68,7 +68,7 @@ uplatex も普通に使用できるそうです．(→ [https://twitter.com/ti59
 
 <span style="color:White;background-color:Black;">u0_a77@android:/ $ uplatex -version 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-<span style="color:White;background-color:Black;">e-upTeX 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (Web2C 2014 for Android)　　　　　　　　　　　　</span><br>
+<span style="color:White;background-color:Black;">e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (Web2C 2015 for Android)　　　　　　　　　　　　</span><br>
 
 ***
 
