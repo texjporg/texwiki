@@ -319,7 +319,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です．<br
 
 #### extractbb の自動実行 {#rf074b4b}
 
-[W32TeX](/W32TeX/) や [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
+TeX Live 2015, MacTeX-2015, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，
 
 ```
 \usepackage[dvipdfmx]{graphicx}
@@ -327,7 +327,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です．<br
 
 のようにすると，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．<br>
 
-[TeX Live](</TeX Live/>) 2014, [MacTeX](/Mac/#mactex)-2014 では extractbb の実行は自動化されていません．<br>
+TeX Live 2014, MacTeX-2014 では extractbb の実行は自動化されていません．<br>
 自動化したい場合は
 
 - Windows の場合は C:\texlive\texmf-local\web2c\texmf.cnf
@@ -343,11 +343,12 @@ sudo nano /usr/local/texlive/texmf-local/web2c/texmf.cnf　（ここでは例と
 
 ```
 shell_escape_commands = \
-bibtex,bibtex8,bibtexu,upbibtex,biber,\
+bibtex,bibtex8,\
+extractbb,\
 kpsewhich,\
-makeindex,mendex,texindy,xindy,\
-mpost,upmpost,\
-repstopdf,epspdf,extractbb
+makeindex,\
+mpost,\
+repstopdf,\
 ```
 
 を書き足して管理者権限で
