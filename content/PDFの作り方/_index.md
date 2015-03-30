@@ -21,9 +21,10 @@ pukiwiki: "PDFの作り方"
 
 <em>Adobe Acrobat DC (Distiller 含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
 
-- pLaTeX/upLaTeX + dvipdfmx
-- pLaTeX/upLaTeX + dvips + ps2pdf (Ghostscript)
-- pLaTeX/upLaTeX + dvips + Acrobat Distiller
+- upLaTeX + dvipdfmx
+- upLaTeX + dvips + ps2pdf (Ghostscript)
+- upLaTeX + dvips + Acrobat Distiller
+- [pLaTeX-ng](/pTeX-ng/)
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
 - LuaJITLaTeX
@@ -42,7 +43,7 @@ pukiwiki: "PDFの作り方"
 
 [Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) を参照．
 
-[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，LuaJITTeX, [xdvipdfmx](/dvipdfmx/)，([XeTeX](/XeTeX/)) の他に，次のソフトがあります．
+[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pTeX-ng](/pTeX-ng/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，LuaJITTeX, [xdvipdfmx](/dvipdfmx/)，([XeTeX](/XeTeX/)) の他に，次のソフトがあります．
 
 - フリーソフトウェア，オープンソース
     - [LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) は PDF 出力機能を持っています．
@@ -86,9 +87,7 @@ pukiwiki: "PDFの作り方"
     - OS X ならプリント機能を持ったどんなアプリケーションからも PDF 出力できます．
     - [Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html)
         ([Adobe Systems](http://www.adobe.com/jp/))
-    - [Microsoft Office](</Microsoft Office/>)
-        - Microsoft Office 2013 は PDF 1.7 をサポート
-        - Microsoft Office 2010 は PDF 出力を標準でサポート
+    - [Microsoft Office](</Microsoft Office/>) Microsoft Office 2013 は PDF 1.7 をサポート
     - [KINGSOFT Office](http://www.kingsoft.jp/office/) マイクロソフトオフィスと高い互換性をもつ総合オフィスソフト
     - [EIOffice](http://www.eio.jp/) マイクロソフトオフィスと高い互換性をもつ統合オフィス環境
     - [「かんたんPDF」シリーズ](http://www.e-frontier.co.jp/kantan-pdf/)
@@ -130,7 +129,7 @@ LaTeX のインストールについては
 
 #### 日本語の PDF ファイルを作成する場合 {#j5accec9}
 
-pLaTeX/upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．<br>
+upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．<br>
 具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください．
 
 dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
@@ -149,16 +148,17 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
 
 #### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
 
-(1) tex → pdf 
+(1) tex → pdf
 
 ```
+platex-ng: tex → pdf
 pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
 lualatex, luajitlatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
 xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 ※ 挿入図ファイルはPDF形式等も可
 ```
 
-(2) tex → dvi → pdf 
+(2) tex → dvi → pdf
 
 ```
 (2)-1: uplatex: tex → dvi
@@ -179,7 +179,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 
 #### PDF形式ファイル（図）の挿入について {#n20e1824}
 
-- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「pdflatex, lualatex, luajitlatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い．
+- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「platex-ng, pdflatex, lualatex, luajitlatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い．
 
 - PDF ファイルを画像として取り込むときには，\includegraphics が利用するバウンディングボックスの情報が必要．
     - 一般に \includegraphics で外部ファイルを画像として取り込むには，出力されるページ上で画像の境界がどこに設定されるかを指定する必要がある．この領域のことをバウンディングボックス（bounding box）と呼ぶ．
@@ -467,7 +467,7 @@ Draw
 ラスターイメージとして出力するなら
 [Blender](https://ja.wikipedia.org/wiki/Blender) も使えます．<br>
 
-商品では [Illustrator](/Illustrator/) や Visio がドロー系，Photoshop がペイント系です．<br>
+商品では [Illustrator](/Illustrator/) がドロー系，Photoshop がペイント系です．<br>
 
 ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます．<br>
 dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, LuaJITTeX/LuaJITLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう．<br>
@@ -574,7 +574,7 @@ crop しても BoundingBox の外を侵蝕するような EPS を出力するこ
 が使えそうです．<br>
 PS プリンタードライバーの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています．<br>
 
-Visio 2003 以降は [EPS 出力がサポートされなくなりました](http://office.microsoft.com/ja-jp/visio/HA010857571041.aspx)が，
+EPS 出力をサポートしていないソフトウェアを使用している場合は，
 [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) を使うと EPS ファイルに変換できます．
 
 [LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) の Draw には，EPS エクスポート機能があります．<br>
