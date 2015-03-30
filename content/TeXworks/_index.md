@@ -8,8 +8,6 @@ pukiwiki: "TeXworks"
 
 # TeXworks
 
-<img src="http://www.tug.org/texworks/img/TeXworks256.png" alt="TeXworks" style="float:right">
-
 TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．Mac OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
 奥村晴彦・黒木裕介「[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)」では，おすすめの統合環境に TeXworks が紹介されています．
@@ -66,18 +64,6 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 <!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
 <!-- -[[[texlive] Index of /trunk/Master/tlpkg/texworks:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/]] -->
 <!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log]] -->
-
-### スクリーンショット {#y7449ee4}
-
-> <table>
-> <tbody>
-> <tr><td><a href="http://www.tug.org/texworks/img/texworks-linux.png"><img src="http://www.tug.org/texworks/img/texworks-linux-thumb.png" alt="TeXworks on GNU/Linux (Ubuntu)"></a></td><td><a href="http://www.tug.org/texworks/img/texworks-win7.png"><img src="http://www.tug.org/texworks/img/texworks-win7-thumb.png" alt="TeXworks on Windows 7"></a></td><td><a href="http://www.tug.org/texworks/img/texworks-osx.png"><img src="http://www.tug.org/texworks/img/texworks-osx-thumb.png" alt="TeXworks on OS X"></a></td></tr>
-> <tr><td style="text-align:center">TeXworks on GNU/Linux</td><td style="text-align:center">TeXworks on Windows 7</td><td style="text-align:center">TeXworks on OS X</td></tr>
-> </tbody>
-> </table>
->
-
-<div style="clear:both"></div>
 
 ## 文字コードの変換 {#e8ba5265}
 
