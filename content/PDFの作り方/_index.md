@@ -398,7 +398,7 @@ dvipdfmx で PSfrag を使うには，まず \pagestyle{empty}
 を使うのがいいでしょう．<br>
 
 dvipdfmx は PFB 形式の Type 1 フォントしか使えません．<br>
-PFA → PFB 変換には [FontForge](http://fontforge.sourceforge.net/) が使えそうです
+PFA → PFB 変換には [FontForge](http://fontforge.github.io/) が使えそうです
 
 #### BoundingBox の指定 → 問題が発生する場合は extractbb を使用する {#z06f5ff9}
 
