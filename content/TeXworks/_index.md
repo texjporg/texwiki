@@ -67,9 +67,9 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 
 ## 文字コードの変換 {#e8ba5265}
 
-TeXworks で使用する文字コードはデフォルトでは UTF-8 です．このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．文字コードの変換には，各種エディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
+TeXworks で使用する文字コードはデフォルトでは UTF-8 です．このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．文字コードの変換には，各種テキストエディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
 
-エディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
+テキストエディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
 
 コマンドラインからの場合，[W32TeX](/W32TeX/) には標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．nkf の場所は以下のようにして確認できます．
 
@@ -188,14 +188,14 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
-TeXworks 0.4.5 では問題は発生しませんでした．
+[TeXworks 0.4.5](http://sourceforge.net/projects/texworks.mirror/files/) では問題は発生しませんでした．
 
 Qt 5.1.0 でビルドされた TeXworks で問題が発生するようです．
 
 TeXworks で使用されている Qt のバージョンは strings と grep で確認できます．
 
 ```
-$ strings -a TeXworks.exe | grep "Qt. version"
+$ strings -a TeXworks.exe | grep Qt | grep version | grep build
 Qt4 version      : 5.1.0 (build) /
 ```
 
