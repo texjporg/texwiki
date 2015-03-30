@@ -202,6 +202,7 @@ Qt4 version      : 5.1.0 (build) /
 Qt 5.3 でビルドすれば回避できるようです．
 
 - [Could not interprete the stop sign from new TeXworks · Issue #2 · norbusan/ptex2pdf · GitHub](https://github.com/norbusan/ptex2pdf/issues/2)
+- \[[texworks\] Problem: TeXworks 0.4.6 (official) crashes](http://tug.org/pipermail/texworks/2015q2/006265.html)
 - Re: TeXworks がエラー時に停止させるとフリーズ ([forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
