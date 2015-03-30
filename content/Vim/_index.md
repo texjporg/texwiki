@@ -71,9 +71,9 @@ Vim は，チャリティウェアです．<br>
 
 #### OS X {#gb7dcad0}
 
-- [MacVim-KaoriYa](https://code.google.com/p/macvim-kaoriya/)
+- [MacVim-KaoriYa](https://github.com/splhack/macvim-kaoriya)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
-    - [コミットログ](https://github.com/splhack/macvim/commits/master)
+    - [コミットログ](https://github.com/splhack/macvim-kaoriya/commits/master)
 - [MacVim](https://code.google.com/p/macvim/)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
 - [MacOSX Vim](http://sf.net/projects/macosxvim/files/)
