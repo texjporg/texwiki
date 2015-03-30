@@ -133,43 +133,6 @@ $ tlmgr update --self --all
 にパッケージのバックアップが保存されます．<br>
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
 
-#### extractbb の追加 {#od9c58f2}
-
-- [TeX Live texmf-localの扱いに関して。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1149)
-
-TeX Live 2014 はデフォルトでは extractbb が自動実行されません．<br>
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/texlive/texmf-local
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を作成します．<br>
-
-```
-$ mkdir -p /usr/local/texlive/texmf-local/web2c
-$ touch /usr/local/texlive/texmf-local/web2c/texmf.cnf
-```
-
-/usr/local/texlive/texmf-local/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,xindy,\
-mpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ mktexlsr
-```
-
 #### フォント埋め込みの設定 {#ea17ba92}
 
 kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
@@ -394,55 +357,6 @@ Cygwin オフィシャルインストーラーの setup-x86_64.exe または set
 ```
 
 ***
-
-#### extractbb の追加 {#uc813f02}
-
-- [TeX Live texmf-localの扱いに関して。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1149)
-
-/usr/share/texmf-dist/web2c/texmf.cnf に shell_escape_commands が以下のように記述されていると思います．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-TeX Live 2014/Cygwin はデフォルトでは extractbb が自動実行されません．<br>
-
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/share/texmf-site
-```
-
-/usr/share/texmf-site/web2c/texmf.cnf を作成します．<br>
-
-```
-$ mkdir -p /usr/share/texmf-site/web2c
-$ touch /usr/share/texmf-site/web2c/texmf.cnf
-```
-
-/usr/share/texmf-site/web2c/texmf.cnf を編集します．<br>
-shell_escape_commands を以下のように編集して保存します．<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,bibtexu,upbibtex,biber,\
-kpsewhich,\
-makeindex,mendex,texindy,xindy,\
-mpost,upmpost,\
-repstopdf,epspdf,extractbb
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ mktexlsr
-```
 
 #### フォント埋め込みの設定 {#s6b421fb}
 
