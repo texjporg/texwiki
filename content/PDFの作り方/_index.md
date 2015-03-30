@@ -19,7 +19,7 @@ pukiwiki: "PDFの作り方"
 
 ### TeX から PDF を作成するツール {#d8e4c485}
 
-<em>Adobe Acrobat (Distiller 含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
+<em>Adobe Acrobat DC (Distiller 含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
 
 - pLaTeX/upLaTeX + dvipdfmx
 - pLaTeX/upLaTeX + dvips + ps2pdf (Ghostscript)
@@ -84,7 +84,7 @@ pukiwiki: "PDFの作り方"
 
 - 有償，商用，シェアウェア
     - OS X ならプリント機能を持ったどんなアプリケーションからも PDF 出力できます．
-    - [Adobe Acrobat](http://www.adobe.com/jp/products/acrobat.html)
+    - [Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html)
         ([Adobe Systems](http://www.adobe.com/jp/))
     - [Microsoft Office](</Microsoft Office/>)
         - Microsoft Office 2013 は PDF 1.7 をサポート
@@ -219,7 +219,7 @@ $ extractbb foo.pdf
     <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない -->
     <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
 
-- Type 1 フォントを用い，かつファイル内に埋め込んでください．（Adobe Reader で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．）
+- Type 1 フォントを用い，かつファイル内に埋め込んでください．（Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．）
 
 - （上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．）
 
@@ -468,7 +468,7 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
 きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます．<br>
 処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません．<br>
 
-Acrobat をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます．<br>
+Adobe Acrobat DC をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます．<br>
 dvipdfmx を使うほうがトラブルは少ないかもしれません．<br>
 
 foo.dvi という DVI ファイルを PostScript ファイル foo.ps
@@ -529,7 +529,7 @@ LaTeX に挿入するときはプレビュー画像は不要です．<br>
 
 画面キャプチャーなどのラスター画像は，dvips などを使って PS を作るなら，EPS
 に変換しておくといいでしょう．<br>
-Illustrator や Acrobat などに貼り付けたり開いたりしてから EPS
+Illustrator や Adobe Acrobat DC などに貼り付けたり開いたりしてから EPS
 で保存することもできますし，[ImageMagick](http://www.imagemagick.org/)
 や [sam2p](https://code.google.com/p/sam2p/)
 などのツールを使う方法もあります．<br>
@@ -648,7 +648,7 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 \end{document}
 ```
 
-これで ptex2pdf で PDF にして，「プレビュー」または Adobe Reader
+これで ptex2pdf で PDF にして，「プレビュー」または Adobe Acrobat Reader DC
 で印刷します．<br>
 あるいは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/)
 などを使えばボタンをクリックするだけで PDF ができます．<br>
@@ -715,7 +715,7 @@ Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっ�
 完成したら，［ファイル］ → ［印刷］ でプリンター名が Acrobat Distiller になっていることを確認し，印刷します．<br>
 PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます．<br>
 
-Adobe Reader （または Adobe Acrobat） が立ち上がりますので，
+Adobe Acrobat Reader DC （または Adobe Acrobat DC） が立ち上がりますので，
 拡大して文字がギザギザにならないことを確認します．<br>
 また，全ページをスクロールし表示した後で，［ファイル］ → ［プロパティ］ → ［フォント］
 ですべての使用フォントを確認します．<br>
@@ -726,7 +726,7 @@ Adobe Reader （または Adobe Acrobat） が立ち上がりますので，
 
 - 和文の場合には，和文フォントの「オリジナルフォント」（4.0 では「PDFのフォント」）が「リュウミンL-KL」と「中ゴシックBBB」になっている
 
-紙に印刷するには，Word ではなく Adobe Reader （または Adobe Acrobat） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します．<br>
+紙に印刷するには，Word ではなく Adobe Acrobat Reader DC （または Adobe Acrobat DC） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します．<br>
 印刷ダイアログの「用紙サイズに合わせてページを縮小」はデフォルトでオンになっているようですが，等サイズで印刷するときはオフにしておかないと微妙に縮小されることがあります．<br>
 「画像として印刷」もオフにしておかないとガタガタの印刷になります．<br>
 「2バイトフォントのダウンロード」も通常はオフにします．<br>
@@ -748,24 +748,24 @@ Word の極細 (0.25 pt) の罫線は使わないほうが無難です．<br>
 
 - 【参考リンク】[情報教育Wiki:Wordの正しい使い方](https://okumuralab.org/~okumura/compedu/?Word%E3%81%AE%E6%AD%A3%E3%81%97%E3%81%84%E4%BD%BF%E3%81%84%E6%96%B9)
 
-## Adobe Acrobat で PDF {#w441bc87}
+## Adobe Acrobat DC で PDF {#w441bc87}
 
-### Adobe Reader と Adobe Acrobat の違い {#c982e6e9}
+### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
-[Adobe Reader](</Adobe Reader/>) は Adobe Acrobat から表示・印刷機能だけを抜き出したもので，[Adobe Reader のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．<br>
-[Adobe Acrobat](http://www.adobe.com/jp/products/acrobat.html) は
-Acrobat Distiller を含む製品（商品）です．<br>
+Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．<br>
+[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は <!-- Acrobat Distiller を含む製品（商品）です．~ -->
+製品（商品）です．<br>
 値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．<br>
 
-その機能によって製品が幾つか存在しています．<br>
-参考：「[Adobe - Adobe Acrobatファミリー： 製品比較](http://www.adobe.com/jp/products/acrobat/product-comparison.html)」<br>
+その機能によってプランが幾つか存在しています．<br>
+参考：「[&#x30d7;&#x30e9;&#x30f3;&#x3068;&#x4fa1;&#x683c;&#xff1a;&#x30d7;&#x30e9;&#x30f3;&#x6bd4;&#x8f03;&#x8868; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」<br>
 
-- Adobe Reader XI — PDF の閲覧と印刷のみ．無償配布されている．
-- Adobe Acrobat XI
-    - Adobe Acrobat XI Standard — PDF の編集が可能
-    - Adobe Acrobat XI Pro — 様々な PDF の編集が可能
+- Adobe Acrobat Reader DC — PDF の表示と印刷と注釈の追加のみ．無償配布されている．
+- Adobe Acrobat DC
+    - Adobe Acrobat DC Standard — PDF の編集が可能
+    - Adobe Acrobat DC Pro — 様々な PDF の編集が可能
 
-Adobe Acrobat があれば Adobe Reader がなくても PDF ファイルを表示できます．<br>
+Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．<br>
 
 Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．<br>
 アップデートについては[アドビシステムズ](http://www.adobe.com/jp/)の
@@ -848,7 +848,7 @@ start hoge.ps
 と打ち込みます．<br>
 拡張子 “.ps” と関連づけられていれば Distiller が起動するか，すでに起動している Distiller が処理を始めます．<br>
 Distiller に関連付けしたくない場合は Distiller に入力/出力ファイル名を指定してコマンドラインから実行することもできます．(→ [Distillerを入力/出力ファイル名を指定して起動する方法について](http://kb2.adobe.com/jp/cps/510/510769.html))<br>
-保存場所や上書き確認をせず Acrobat を立ち上げない設定にしておけば便利です．<br>
+保存場所や上書き確認をせず Adobe Acrobat DC を立ち上げない設定にしておけば便利です．<br>
 さらに，共有フォルダを「監視フォルダ」に指定して立ち上げておけば Linux などからでも使えます．<br>
 
 LaTeX で color パッケージを使って dvips → Distiller で作った PDF
@@ -859,7 +859,7 @@ LaTeX で color パッケージを使って dvips → Distiller で作った PDF
 
 Photoshop 5 Default CMYK にすると今度は色が変わってしまうというご指摘をいただきました．<br>
 設定ファイルを「プリプレス-日本」にするのがよさそうです．<br>
-ただ，文字がアミカケ状態になるのは Acrobat から非 PS プリンターに出力する際の問題のようですので，PS
+ただ，文字がアミカケ状態になるのは Adobe Acrobat DC から非 PS プリンターに出力する際の問題のようですので，PS
 プリンター（イメージセッタも）では大丈夫かもしれません．<br>
 
 ### pdf（のサイズ）を拡大 {#l1c219ce}
@@ -871,13 +871,13 @@ Photoshop 5 Default CMYK にすると今度は色が変わってしまうとい�
 
 方法１：
 
-Acrobat Pro（有償ソフト）を用いて対象の pdf ファイルを開き，Adobe PDF プリンターを用いて印刷し新たなpdf ファイルを生成．
+Acrobat DC Pro（有償ソフト）を用いて対象の pdf ファイルを開き，Adobe PDF プリンターを用いて印刷し新たなpdf ファイルを生成．
 
 - 下記の手順の結果，拡大倍率 205%，左寄せ配置のpdf ファイルが生成された．
     - プリント設定で，用紙サイズ A4．
     - プリントで，Adobe PDF プリンター．ページの拡大／縮小の設定は｢用紙に合わせる」．
 
-## Adobe Reader/Acrobat のヒント {#l5e4219f}
+## Adobe Acrobat Reader DC /Acrobat DC のヒント {#l5e4219f}
 
 印刷ダイアログの「用紙サイズに合わせてページを縮小」は，特に必要なければオフにします．<br>
 これがオンの場合，ほんの少し小さく印刷されることがあります．<br>
@@ -890,7 +890,7 @@ Acrobat Pro（有償ソフト）を用いて対象の pdf ファイルを開き�
 文字がきれいに表示されない場合には，うんと拡大してみてください．<br>
 ギザギザに見えてくるなら，間違ってビットマップフォントが埋め込まれてしまったのです．<br>
 設定を見直してください．<br>
-拡大するときれいに見えるなら，Adobe Reader/Acrobat の設定の問題でしょう．<br>
+拡大するときれいに見えるなら，Adobe Acrobat Reader DC/Acrobat DC の設定の問題でしょう．<br>
 スムージング（アンチエイリアシング），グリーキング（小さい文字を潰して表示すること）の設定を変えてみてください．<br>
 
 ## Illustrator のヒント {#j52115c0}
@@ -910,10 +910,10 @@ Ryumin-Light-RKSJ-H に置き換えます．<br>
 
 - [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
 
-Acrobat を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
+Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
 また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．<br>
-ただし，Adobe Readerからはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．<br>
+ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．<br>
 
 LaTeX ユーザーの方は，dvipdfmx を用いて，PDF にパスワード保護をつけることができます．<br>
 具体的には，
@@ -999,7 +999,7 @@ RedMon を展開して setup.exe を実行します．
 Redirect this port to the program:
 : &nbsp;
 
-C:\texlive\2014\bin\win32\rungs.exe
+C:\texlive\2015\bin\win32\rungs.exe
 
 Arguments for this program are:
 : -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dSAFER -sPAPERSIZE=a4 -sOutputFile="%1" -
