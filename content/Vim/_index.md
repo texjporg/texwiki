@@ -82,8 +82,6 @@ Vim は，チャリティウェアです．<br>
 
 - [VimTouch](https://github.com/momodalo/vimtouch)
     - [Vim Touch - Google Play](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch&hl=ja)
-- [rbox](http://d.hatena.ne.jp/rattcv/searchdiary?word=rbox)
-    <!-- - -[[Vim for Android:http://ux.getuploader.com/vim/]] -->
 
 #### iOS {#o6e8ea48}
 
