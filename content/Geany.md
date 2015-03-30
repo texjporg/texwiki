@@ -121,5 +121,5 @@ V<ins>i</ins>ew PDF File
 
 ## 関連リンク {#j4cca0b1}
 
-- [geany-dark-scheme](https://code.google.com/p/geany-dark-scheme/)
+- [geany-dark-scheme](https://github.com/dflock/geany-dark-scheme)
 - [MacにGeanyをインストール](http://code-life.net/?p=951)
