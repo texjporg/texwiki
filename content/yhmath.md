@@ -39,7 +39,7 @@ W32TeX の場合は，
 
 <!-- [[yhcmex.pfa>CTAN:fonts/yhmath/yhcmex.pfa]] -->
 <!-- ではなく，これを [[t1utils:http://www.lcdf.org/~eddietwo/type/#t1utils]] -->
-<!-- [[FontForge:http://fontforge.sourceforge.net/]] -->
+<!-- [[FontForge:http://fontforge.github.io/]] -->
 <!-- で変換した [[yhcmex.pfb:http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex.pfb]] を使う方法を説明します。 -->
 <!--  -->
 <!-- ダウンロードするもの： -->
