@@ -67,7 +67,9 @@ pukiwiki: "JavaScript"
 
 ## JavaScript Engine {#v88dd665}
 
-- [V8 JavaScript Engine](https://code.google.com/p/v8/)
+- V8 JavaScript Engine
+    - [https://chromium.googlesource.com/v8/v8.git](https://chromium.googlesource.com/v8/v8.git)
+    - [https://github.com/v8/v8-git-mirror](https://github.com/v8/v8-git-mirror)
 
 ## プレゼンテーション {#bd3c5ab8}
 
