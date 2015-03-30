@@ -257,7 +257,7 @@ $ pushd texworks
 
 - TeXworks のソースコードの該当箇所を修正します．
 
-[texworks-read-only/src/CompletingEdit.cpp](https://github.com/TeXworks/texworks/blob/master/src/CompletingEdit.cpp) の
+[texworks/src/CompletingEdit.cpp](https://github.com/TeXworks/texworks/blob/master/src/CompletingEdit.cpp) の
 
 ```
 currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
