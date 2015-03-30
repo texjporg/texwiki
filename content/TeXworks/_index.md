@@ -256,7 +256,7 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 #### ソースコードから修正する方法 (Windows) {#pb4e9c13}
 
-- [Subversion Windows Installer](http://alagazam.net/) から Windows binaries をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します．
+- [Git](http://git-scm.com/) をインストールします．
 
 - [Poppler](/Poppler/) をインストールします．
 
@@ -265,8 +265,8 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 - TeXworks のソースコードを取得します．
 
 ```
-$ svn checkout http://texworks.googlecode.com/svn/trunk/ texworks-read-only
-$ pushd texworks-read-only
+$ git clone https://github.com/TeXworks/texworks.git
+$ pushd texworks
 ```
 
 - TeXworks のソースコードの該当箇所を修正します．
