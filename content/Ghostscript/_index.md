@@ -22,8 +22,6 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 - [Ghostscript Website](http://www.ghostscript.com/)
 - [Ghostscript, GhostPCL, GhostXPS and MuPDF Downloads Page](http://www.ghostscript.com/download/)
-- [SourceForge.net: Ghostscript](http://sourceforge.net/projects/ghostscript/)
-- [ghostscript - Ghostscript document rendering and conversion - Google Project Hosting](https://code.google.com/p/ghostscript/)
 - [ghostscript.com Mailing Lists](http://ghostscript.com/mailman/listinfo/)
     - [The gs-bugs Archives](http://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](http://ghostscript.com/pipermail/gs-devel/)
