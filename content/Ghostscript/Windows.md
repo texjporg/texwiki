@@ -54,7 +54,7 @@ Dictionary stack:
    --dict:1186/1684(ro)(G)--   --dict:0/20(G)--   --dict:79/200(L)--
 Current allocation mode is local
 Last OS error: No such file or directory
-GPL Ghostscript 9.15: Unrecoverable error, exit code 1
+GPL Ghostscript 9.16: Unrecoverable error, exit code 1
 ```
 
 rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます．<br>
@@ -118,14 +118,14 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 #### インストール方法 {#b84b5a69}
 
 - TeX Live の win32 版には Ghostscript (tlgs) が含まれているので別途 Ghostscript をインストールする必要はありません．<br>
-- gs915w64full-gpl.exe または gs915w32full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.15”
+- gs916w64full-gpl.exe または gs916w32full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.16”
 - インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
 \[参考\] 初心者はデフォルトのインストール場所にインストールするのがいいでしょう．<br>
 Ghostscript は好きな場所にインストールすることができますが日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難です．<br>
-なお，歴史的な理由等から gs\gs9.15 などというフォルダーにインストールされることがほとんどです．<br>
-その関係から，様々な解説ではこの gs\gs9.15 などといったフォルダー構造を仮定していることが多いということを理解しておいてください．<br>
+なお，歴史的な理由等から gs\gs9.16 などというフォルダーにインストールされることがほとんどです．<br>
+その関係から，様々な解説ではこの gs\gs9.16 などといったフォルダー構造を仮定していることが多いということを理解しておいてください．<br>
 
 #### インストールに失敗する場合 {#g27d0b0b}
 
@@ -149,10 +149,10 @@ UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “
 インストールした Ghostscript に含まれる bin フォルダー と lib フォルダーを環境変数 PATH に追加します．<br>
 具体的には次のように設定します．<br>
 
-Ghostscript を C:\Program Files\gs\gs9.15 にインストールした場合
+Ghostscript を C:\Program Files\gs\gs9.16 にインストールした場合
 
 ```
-;C:\Program Files\gs\gs9.15\bin;C:\Program Files\gs\gs9.15\lib
+;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib
 ```
 
 を環境変数 PATH に追加します。
@@ -166,7 +166,7 @@ Ghostscript を C:\Program Files\gs\gs9.15 にインストールした場合
 > <table>
 > <tbody>
 > <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.15\bin;C:\Program Files\gs\gs9.15\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.15\bin;C:\Program Files\gs\gs9.15\lib</td></tr>
+> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib</td></tr>
 > <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
 > </tbody>
@@ -244,14 +244,14 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を角藤版 32-bit Ghostscript の dll ファイル (C:\Program Files\gs\gs9.15\bin\gsdll32.dll) に修正します．<br>
+を角藤版 32-bit Ghostscript の dll ファイル (C:\Program Files\gs\gs9.16\bin\gsdll32.dll) に修正します．<br>
 
 ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
 
 ```
 local gsargs = {
   args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/Program Files/gs/gs9.15/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
+  dllloc= "C:/Program Files/gs/gs9.16/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
 角藤版 32-bit Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
