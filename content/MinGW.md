@@ -77,8 +77,7 @@ c:/mingw		/mingw
 
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
-- [TeX Liveをmakeしようと試みてみた](http://d.hatena.ne.jp/abenori/20111105)
-- [runscript.dllがないと怒られる．](http://d.hatena.ne.jp/abenori/20111216)
+- [TeX LiveとTeXworksのビルド](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 
 MinGW をフルインストールします．<br>
 MinGW Shell を起動します．
