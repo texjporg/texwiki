@@ -10,8 +10,6 @@ pukiwiki: "SumatraPDF"
 
 ## [SumatraPDF](http://www.sumatrapdfreader.org/) {#afa7a42e}
 
-<img src="https://github.com/sumatrapdfreader/sumatrapdf/raw/master/gfx/SumatraPDF-256x256x32.png" alt="SumatraPDF" style="float:right">
-
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
 ## SumatraPDF とは {#td9ee2f0}
@@ -77,7 +75,9 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
+    - vimtex
     - [Vim-LaTeX](/Vim-LaTeX/)
+- [Atom](/Atom/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
