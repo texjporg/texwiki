@@ -359,10 +359,10 @@ $ sudo apt-get install poppler-utils poppler-data
 
 - fontconfig
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
-    - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/fontconfig.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html)
 - Poppler
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
-    - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/general/poppler.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html)
 
 ## 関連リンク {#m3ac74dd}
 
