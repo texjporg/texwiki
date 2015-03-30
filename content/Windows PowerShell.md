@@ -102,8 +102,7 @@ ptex2pdf -u -l hoge.tex
 
 コンソールエミュレータ
 
-- [http://sourceforge.net/projects/conemu/](http://sourceforge.net/projects/conemu/)
-- [https://code.google.com/p/conemu-maximus5/](https://code.google.com/p/conemu-maximus5/)
+- [http://conemu.github.io/](http://conemu.github.io/)
 
 ## Excel との連携 {#v10b1cbb}
 
