@@ -84,7 +84,7 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
     - [jN](/jN/)
     - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
-    - [SumatraPDF.js](</サクラエディタ/マクロ/#s758d3d9>)
+    - [Typeset.js](</サクラエディタ/マクロ/#i861969f>)
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
