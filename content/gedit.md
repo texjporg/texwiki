@@ -634,5 +634,4 @@ chromium --new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 
 ## 関連リンク {#v8f6d6f7}
 
-- [geditをカスタマイズしてみる](http://d.hatena.ne.jp/rkmathi/20110402/1301733604)
 - [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
