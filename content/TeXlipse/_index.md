@@ -187,7 +187,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 - [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
-- [https://gitorious.org/evince-texlipse-sync](https://gitorious.org/evince-texlipse-sync)
+- [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
 - [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
