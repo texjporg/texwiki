@@ -12,11 +12,13 @@ pukiwiki: "GitHub"
 ### GitHub {#bc06026d}
 
 - [zr-tex8r (Takayuki YATO) · GitHub](https://github.com/zr-tex8r)
+- [norbusan (Norbert Preining) · GitHub](https://github.com/norbusan)
 - [doraTeX (Yusuke Terada) · GitHub](https://github.com/doraTeX)
 - [kmaed (Kazuki Maeda) · GitHub](https://github.com/kmaed)
 - [munepi (Munehiro Yamamoto) · GitHub](https://github.com/munepi)
 - [tattsan (SATO Tatsuya) · GitHub](https://github.com/tattsan)
 - [abenori · GitHub](https://github.com/abenori)
+- [h-kitagawa (Hironori Kitagawa) · GitHub](https://github.com/h-kitagawa)
 - [clerkma (Clerk Ma) · GitHub](https://github.com/clerkma)
 - [asm256 (asm_\_) · GitHub](https://github.com/asm256)
 - [dvi.js](https://github.com/naoyat/dvi.js/wiki) A dvi previewer in JavaScript
