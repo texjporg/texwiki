@@ -115,16 +115,6 @@ $ sudo yum install qpdfview
 $ sudo yum install mupdf
 ```
 
-## [Adobe Reader](</Adobe Reader/>) (Windows 版) + Wine {#m85c82f5}
-
-Adobe Reader XI は Wine 上でも動作します．<br>
-
-<!-- -http://www.if-not-true-then-false.com/2010/install-adobe-acrobat-pdf-reader-on-fedora-centos-red-hat-rhel/ -->
-<!--  -->
-<!-- $ sudo rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm -->
-<!-- $ sudo rpm - -import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux -->
-<!-- $ sudo yum install nspluginwrapper.i686 AdobeReader_enu -->
-
 ## [LyX](/LyX/) {#n0d7807d}
 
 ```
