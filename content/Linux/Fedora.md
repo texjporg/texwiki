@@ -175,7 +175,6 @@ $ sudo yum install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit
 
 ## ibus-kkc {#a96c1055}
 
-- [libkkc / libkkc / wiki / Home &mdash; Bitbucket](https://bitbucket.org/libkkc/libkkc/)
-- [libkkc - Gitorious](https://gitorious.org/libkkc)
+- [ueno/libkkc · GitHub](https://github.com/ueno/libkkc)
 - [du -a ~ueno | Just another WordPress site](http://blog.du-a.org/)
 - [Features/libkkc - FedoraProject](https://fedoraproject.org/wiki/Features/libkkc)
