@@ -25,8 +25,8 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
         - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
         - [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/)
-- [Vim 開発サイト](https://code.google.com/p/vim/)
-    - [コミットログ](https://code.google.com/p/vim/source/list)
+- [https://github.com/vim/vim](https://github.com/vim/vim)
+    - [https://github.com/vim/vim/commits/master](https://github.com/vim/vim/commits/master)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
     - [twitter](https://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
@@ -43,11 +43,11 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 ### License {#w85a7064}
 
 Vim は，チャリティウェアです．<br>
-[VIM ライセンス](https://code.google.com/p/vim/source/browse/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
+[VIM ライセンス](https://github.com/vim/vim/blob/master/runtime/doc/uganda.txt) ([日本語訳](http://vim-jp.org/vimdoc-ja/uganda.html)) でリリースされています．<br>
 
 ### リリース情報/ChangeLog {#n22b1c9a}
 
-[コミットログ](https://code.google.com/p/vim/source/list) を参照．<br>
+[https://github.com/vim/vim/commits/master](https://github.com/vim/vim/commits/master) を参照．<br>
 
 ### 派生版 {#ka1322d7}
 
@@ -72,7 +72,7 @@ Vim は，チャリティウェアです．<br>
 - [MacVim-KaoriYa](https://github.com/splhack/macvim-kaoriya)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
     - [コミットログ](https://github.com/splhack/macvim-kaoriya/commits/master)
-- [MacVim](https://code.google.com/p/macvim/)
+- [MacVim](https://github.com/macvim-dev/macvim/releases)
     - [コミットログ](https://github.com/b4winckler/macvim/commits/master)
 - [MacOSX Vim](http://sf.net/projects/macosxvim/files/)
 
@@ -101,7 +101,6 @@ Vim は，チャリティウェアです．<br>
 
 ## 不具合 {#h94d310c}
 
-- [https://code.google.com/p/vim/issues/list](https://code.google.com/p/vim/issues/list)
 - [https://github.com/vim-jp/issues/issues](https://github.com/vim-jp/issues/issues)
 
 ## Vim で LaTeX {#i2be46c6}
