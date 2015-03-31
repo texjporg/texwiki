@@ -508,7 +508,7 @@ $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。<br>
-[kanji-config-updmap](https://gitorious.org/tlptexlive/jfontmaps/source/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
+[kanji-config-updmap](https://github.com/norbusan/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
 
 ```
 $ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
@@ -733,12 +733,12 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map の最後に -->
 <!-- 次のような内容を直接追記しても良いでしょう。） -->
 
-- [https://gitorious.org/tlptexlive/jfontmaps](https://gitorious.org/tlptexlive/jfontmaps)
+- [https://github.com/norbusan/jfontmaps](https://github.com/norbusan/jfontmaps)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)
 
 #### フォントを埋め込まない場合 {#t1a90b4f}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/noEmbed/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/noEmbed/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/noEmbed/](https://github.com/norbusan/jfontmaps/tree/master/maps/noEmbed/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/)
 
 - TeX Live の場合
@@ -755,7 +755,7 @@ ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 
 #### IPAexフォントを使う場合 {#xcbe9625}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/ipaex/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/ipaex/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/ipaex/](https://github.com/norbusan/jfontmaps/tree/master/maps/ipaex/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/)
 
 - TeX Live の場合
@@ -774,7 +774,7 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 
 #### MSフォントを使う場合 {#g54b5df7}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/ms/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/ms/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/ms/](https://github.com/norbusan/jfontmaps/tree/master/maps/ms/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/)
 
 - TeX Live の場合
@@ -835,8 +835,8 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 #### 游フォントを使う場合 {#t5547d05}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/yu-win/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/yu-win/)
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/yu-osx/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/yu-osx/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
 
@@ -863,8 +863,8 @@ ptex2pdf -u -l -od "-f yu.map" hoge.tex
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/hiragino/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/hiragino/)
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/hiragino-pron/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/hiragino-pron/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-pron/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-pron/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/)
 
@@ -885,9 +885,9 @@ ptex2pdf -u -l -od "-f hiragino04.map" hoge.tex
 
 #### [Adobe のフォント](http://www.adobe.com/jp/type/)（[小塚書体など](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)）を使う場合 {#v02c074b}
 
-<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/maps/kozuka/ -->
-<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/maps/kozuka-pr6/ -->
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/kozuka-pr6n/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/kozuka-pr6n/)
+<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka/ -->
+<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6/ -->
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6n/](https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6n/)
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/ -->
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/ -->
 
@@ -909,8 +909,8 @@ Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に K
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
 
-<!-- -https://gitorious.org/tlptexlive/jfontmaps/source/maps/morisawa/ -->
-- [https://gitorious.org/tlptexlive/jfontmaps/source/maps/morisawa-pr6n/](https://gitorious.org/tlptexlive/jfontmaps/source/maps/morisawa-pr6n/)
+<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa/ -->
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa-pr6n/](https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa-pr6n/)
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/ -->
 
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/)
