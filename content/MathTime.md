@@ -27,7 +27,7 @@ MathTime
 （\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。<br>
 以前はY&amp;Y Inc.から MathTime がオンライン購入できました。<br>
 
-\[2014-08-10追記\] Y&amp;Y TeX はオープンソースとなり Clerk Ma さんによって開発が続けられています (→ [yytex](https://code.google.com/p/yytex/))。
+\[2014-08-10追記\] Y&amp;Y TeX はオープンソースとなり Clerk Ma さんによって開発が続けられています (→ [YandYTeX (Y&amp;Y TeX) · GitHub](https://github.com/YandYTeX))。
 
 \[2005-09-15追記\] MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。MathTimeを販売していた Y&amp;Y Inc. は倒産しました（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。<br>
 
