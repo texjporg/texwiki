@@ -518,7 +518,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 
 #### kanji-config-updmap(-sys) {#hf34afcc}
 
-- [kanji-config-updmap](https://gitorious.org/tlptexlive/jfontmaps/source/script/kanji-config-updmap.pl) を使用すれば PDFへの埋め込みフォントの指定、および埋め込み状況の確認ができます。<br>
+- [kanji-config-updmap](https://github.com/norbusan/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDFへの埋め込みフォントの指定、および埋め込み状況の確認ができます。<br>
     ターミナル上で実行します。<br>
     新規インストール直後など、kanji-config-updmap-sys で設定してもPDFへの埋め込みがされない場合は、上の updmap-sys を使う方法を試してください。<br>
 
@@ -550,35 +550,18 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められたケースを中心に -->
 <!-- 参考事例を紹介するのがよろしいかと思います。 -->
 
-[MacTeX 2014 を再インストールしたときの覚書](http://pt-diary.tumblr.com/post/107214765605/20150105-mactex)
-: 2015-01-05
-
-[2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
-: 2015-01-01
-
-[Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
-: 2014-12-22
-
-[愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
-: 2014-09-14
-
-[OS X+Homebrew+zshでMacTeXをインストール](http://qiita.com/enokawa/items/3e12c419ca6ded097e0f)
-: 2014-09-01
-
-[docs/TeX/TeX on Mac - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Mac)
-: 2014-08-11
-
-[MacTeX 2014 - 一歩前進](http://succzero.hatenablog.com/entry/2014/07/17/041211)
-: 2014-07-17
-
-[TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)<br>[TeX/Install/TeXLive2014/OSXFont - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall%2FTeXLive2014%2FOSXFont)
-: 2014-06-21
-
-[Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
-: 2014-06-19
-
-[TeX Live を使おう ―― Linux ユーザと Mac OS X ユーザのために ――](http://www.fugenji.org/~thomas/texlive-guide/)
-: 2014-06-14
+- [MacTeX のダウンロードとインストール](http://medemanabu.net/latex/mactex-download-install/), [Mac Yosemite - Ghostscript 9.15 のインストール](http://medemanabu.net/latex/mac-os-x-yosemite-ghostscript-9-15-package-install/)
+- \[[Yosemite\]MacTeXのインストール](http://www.aruneko.net/archives/1285)
+- [MacTeX 2014 を再インストールしたときの覚書](http://pt-diary.tumblr.com/post/107214765605/20150105-mactex)
+- [2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
+- [Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
+- [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
+- [OS X+Homebrew+zshでMacTeXをインストール](http://qiita.com/enokawa/items/3e12c419ca6ded097e0f)
+- [docs/TeX/TeX on Mac - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Mac)\\
+- [MacTeX 2014 - 一歩前進](http://succzero.hatenablog.com/entry/2014/07/17/041211)
+- [TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)<br>[TeX/Install/TeXLive2014/OSXFont - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall%2FTeXLive2014%2FOSXFont)
+- [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
+- [TeX Live を使おう ―― Linux ユーザと Mac OS X ユーザのために ――](http://www.fugenji.org/~thomas/texlive-guide/)
 
 ## BasicTeX <a id="basictex"></a> {#v9081c88}
 
@@ -597,11 +580,8 @@ $ sudo tlmgr install collection-langjapanese
 
 ### インストールのやり方などの事例 {#u5ee2dcc}
 
-[RStudioから使えるR Markdownで日本語のPDFを作成する](http://bicycle1885.hatenablog.com/entry/2014/10/15/032024)
-: 2014-10-15
-
-[Macbook air に texlive2014 をインストールする](http://d.hatena.ne.jp/pyopyopyo/20140815/p1)
-: 2014-08-15
+- [RStudioから使えるR Markdownで日本語のPDFを作成する](http://bicycle1885.hatenablog.com/entry/2014/10/15/032024)
+- [Macbook air に texlive2014 をインストールする](http://d.hatena.ne.jp/pyopyopyo/20140815/p1)
 
 ## [TeX Live](</TeX Live/>) ([Linux](/Linux/)) <a id="texlive-linux"></a> {#qab24fbc}
 
@@ -633,10 +613,10 @@ OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使�
 
 ```
 $ uplatex -v
-e-upTeX 3.14159265-p3.5-u1.11-130605-2.6 (utf8.uptex) (TeX Live 2014)
-kpathsea version 6.2.0
-ptexenc version 1.3.2
-Copyright 2014 D.E. Knuth.
+e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (TeX Live 2015)
+kpathsea version 6.2.1
+ptexenc version 1.3.3
+Copyright 2015 D.E. Knuth.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the e-upTeX copyright and
 the Lesser GNU General Public License.
@@ -682,10 +662,7 @@ $ sudo tlmgr install collection-langjapanese
 
 #### インストールのやり方などの事例 {#u370c983}
 
-<!-- :[http://qiita.com/misakit/items/23df393c4b8cd3b79fd7 MacBook Air に TeX 環境を入れなおす] | 2014-11-19 -->
-
-[『Fuzoku実践入門』サンプルリポジトリの紹介](http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019)<br>[Fuzoku実践入門 環境サンプルファイル](https://github.com/akinomurasame/learning-fuzoku-sample)
-: 2014-11-11
+- [『Fuzoku実践入門』サンプルリポジトリの紹介](http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019)<br>[Fuzoku実践入門 環境サンプルファイル](https://github.com/akinomurasame/learning-fuzoku-sample)
 
 ### [MacPorts](http://www.macports.org/) {#ebd5afd3}
 
@@ -713,14 +690,9 @@ $ sudo port install texlive-lang-japanese texlive-luatex texlive
 
 #### インストールのやり方などの事例 {#o82ead82}
 
-[SphinxでLatex拡張を使ってPDF出力する](http://qiita.com/H-A-L/items/8222d894daf1552cef67)
-: 2014-10-03
-
-[LaTeXをmacportsを使ってインストール](http://regry358.hatenablog.com/entry/2014/06/02/155405)
-: 2014-06-02
-
-[OSXへのTeXliveインストール (MacTex / MacPorts)](http://sphinx-users.jp/cookbook/pdf/latex-install-osx.html)
-: 2014-02-12
+- [SphinxでLatex拡張を使ってPDF出力する](http://qiita.com/H-A-L/items/8222d894daf1552cef67)
+- [LaTeXをmacportsを使ってインストール](http://regry358.hatenablog.com/entry/2014/06/02/155405)
+- [OSXへのTeXliveインストール (MacTex / MacPorts)](http://sphinx-users.jp/cookbook/pdf/latex-install-osx.html)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#i31113c1}
 
