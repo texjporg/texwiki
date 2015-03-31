@@ -36,7 +36,7 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
-- [http://kojipkgs.fedoraproject.org/packages/texlive/](http://kojipkgs.fedoraproject.org/packages/texlive/)
+- [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
@@ -50,7 +50,7 @@ texlive-dummy をインストールすると TeX Live/Fedora に依存するパ�
 ### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
 ```
-$ sudo yum install texlive-scheme-full
+$ sudo dnf install texlive-scheme-full
 ```
 
 ## [Ghostscript](/Ghostscript/) {#w3eeacef}
@@ -59,13 +59,13 @@ $ sudo yum install texlive-scheme-full
 Ghostscript を適切に設定することで 日本語が表示できるようになります．<br>
 
 ```
-$ sudo yum install ghostscript
+$ sudo dnf install ghostscript
 ```
 
 ## [Python](/Python/) {#z2c220a1}
 
 ```
-$ sudo yum install python python3
+$ sudo dnf install python python3
 ```
 
 ## Julia {#h3524e63}
@@ -76,91 +76,91 @@ $ sudo yum install python python3
 ## [Ruby](/Ruby/) {#j99de34a}
 
 ```
-$ sudo yum install ruby
+$ sudo dnf install ruby
 ```
 
 ## [Perl](/Perl/) {#m7e04372}
 
 ```
-$ sudo yum install perl
+$ sudo dnf install perl
 ```
 
 ## [Evince](/Evince/) {#na36e8b6}
 
 ```
-$ sudo yum install evince
+$ sudo dnf install evince
 ```
 
 ## [Okular](/Okular/) {#k7d05705}
 
 ```
-$ sudo yum install okular
+$ sudo dnf install okular
 ```
 
 ## [zathura](/zathura/) {#i470648d}
 
 ```
-$ sudo yum install zathura zathura-pdf-poppler
+$ sudo dnf install zathura zathura-pdf-poppler
 ```
 
 ## [qpdfview](/qpdfview/) {#yf420316}
 
 ```
-$ sudo yum install qpdfview
+$ sudo dnf install qpdfview
 ```
 
 ## [MuPDF](/MuPDF/) {#id862097}
 
 ```
-$ sudo yum install mupdf
+$ sudo dnf install mupdf
 ```
 
 ## [LyX](/LyX/) {#n0d7807d}
 
 ```
-$ sudo yum install lyx
+$ sudo dnf install lyx
 ```
 
 ## [TeXstudio](/TeXstudio/) {#aaf316c5}
 
 ```
-$ sudo yum install texstudio
+$ sudo dnf install texstudio
 ```
 
 ## [Texmaker](/Texmaker/) {#lcf03ec4}
 
 ```
-$ sudo yum install texmaker
+$ sudo dnf install texmaker
 ```
 
 ## [TeXworks](/TeXworks/) {#q8a87364}
 
 ```
-$ sudo yum install texworks
+$ sudo dnf install texworks
 ```
 
 ## [Eclipse](/Eclipse/) {#p298a48c}
 
 ```
-$ sudo yum install eclipse
+$ sudo dnf install eclipse
 ```
 
 ## [Emacs](/Emacs/) {#m28f0609}
 
 ```
-$ sudo yum install emacs
+$ sudo dnf install emacs
 ```
 
 ## [Vim](/Vim/) {#c4ba801a}
 
 ```
-$ sudo yum install vim
+$ sudo dnf install vim
 ```
 
 ## [Inkscape](/Inkscape/) {#ue2d802a}
 
 ```
-$ sudo yum install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
+$ sudo dnf install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
 ```
 
 ## ibus-kkc {#a96c1055}
