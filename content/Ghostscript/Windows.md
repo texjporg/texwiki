@@ -538,7 +538,7 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 
 5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう．しかし，相対パスの方が簡単かもしれません．相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます．また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)．
 
-参考) 角藤版 Ghostscript に存在する option -dWINKANJI を用いて，Win32API ドライバによって日本語等のフォントが出力される場合には，上記に述べてきたようなパスの制限は一切無くなります．
+参考) 角藤版 Ghostscript に存在する option -dWINKANJI を用いて，Windows API ドライバによって日本語等のフォントが出力される場合には，上記に述べてきたようなパスの制限は一切無くなります．
 
 参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです．通常は問題ありませんが，まれに問題を引き起こすかもしれません．
 
@@ -645,7 +645,7 @@ composefont pop
 
 ### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
 
-角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Win32API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Win32API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます．
+角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Windows API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Windows API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます．
 
 #### gs\gs$(rungs --version)\kanji\kconfig.ps の記述例 {#d0c50ae3}
 
