@@ -195,7 +195,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 #### GSview <a id="gsview"></a> {#xde11637}
 
 <!-- -GSview のインストーラー -->
-<!-- - -[[GSview:http://pages.cs.wisc.edu/~ghost/gsview/]] Ghostscript を GUI 操作できるソフトウェア -->
+<!-- - -[[GSview:http://www.ghostscript.com/GSview.html]] Ghostscript を GUI 操作できるソフトウェア -->
 <!-- - --[[GSview 5.0 (32-bit版):http://pages.cs.wisc.edu/~ghost/gsview/get50.htm]] (32-bit版の Ghostscript が必要です。) -->
 <!-- - --[[GSview 5.0 (64-bit版):http://pages.cs.wisc.edu/~ghost/gsview/get50.htm]] (64-bit版の Ghostscript が必要です。) -->
 <!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
@@ -207,7 +207,7 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 
 - GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
 
-- [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません．Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください．
+- [GSview](http://www.ghostscript.com/GSview.html) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません．Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください．
 
 - GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
 
