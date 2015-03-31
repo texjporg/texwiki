@@ -183,11 +183,8 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 
 ### ChangeLog {#y0777637}
 
-- [https://gitorious.org/xdvik-japanese-patch-cleanup](https://gitorious.org/xdvik-japanese-patch-cleanup)
-    - [https://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master](https://gitorious.org/xdvik-japanese-patch-cleanup/xdvik-japanese-patch-cleanup/commits/master)
-- [https://gitorious.org/tlptexlive](https://gitorious.org/tlptexlive)
-    - [https://gitorious.org/tlptexlive/build-tlptexlive/commits/master](https://gitorious.org/tlptexlive/build-tlptexlive/commits/master)
-    - [https://gitorious.org/tlptexlive/tlptexlive-root/commits/master](https://gitorious.org/tlptexlive/tlptexlive-root/commits/master)
+- [https://github.com/norbusan/build-tlptexlive/commits/master](https://github.com/norbusan/build-tlptexlive/commits/master)
+- [https://github.com/munepi/build-tlptexlive/commits/master](https://github.com/munepi/build-tlptexlive/commits/master)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
