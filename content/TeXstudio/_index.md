@@ -84,27 +84,9 @@ export PATH=$PATH:/usr/texbin
 
 - [TeXstudio - A LaTeX Editor / Bugs](http://sourceforge.net/p/texstudio/bugs/)
 
-### OS X の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#ffe2f4b8}
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする {#ped67bdd}
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
-
-- [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
-
-<!-- - --  -->
-<!-- &color(#595857,#DFDFDF){%%%　&color(#FF0000,#DFDFDF){●}; &color(#FFD700,#DFDFDF){●}; &color(#C9C9C9,#DFDFDF){●};　　　　　　　　　　　　　　　　　　　　　　　　　　　　''Karabiner''　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
-<!-- 　　　　%%%&color(#F1F1F1,#0F7FFF){&color(#0F7FFF){[};　''Change Key''　&color(#0F7FFF){]};};&color(Black,White){[　''Key Repeat''　][　''Status Message''　][　''MenuBar''　][　''AXNotifier''　][　''Misc &amp; Uninstall''　]};%%%&br; -->
-<!-- 　　　　&color(Black,#FAFAFA){[%%%&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　%%%]};　　☐ Show enabled only (1 item)　　　　　　　%%%[ ''↻'' ReloadXML ]%%%&br; -->
-<!-- 　　　　remapping&br; -->
-<!-- 　　　　&color(#595857){▼};For Japanese&br; -->
-<!-- 　　　　　　&color(#595857){▼};Change Yen(￥) Key&br; -->
-<!-- 　　　　　　　　　&color(White,#0F7FFF){☑}; JIS Yen(￥) to Backslash(＼)&br; -->
-<!-- 　　　　　　　　　　　　(except virtual machine, X11, RDC)&br; -->
-<!-- - --  -->
-
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれる {#ped67bdd}
-
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれることがあります．
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
 高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．
 
 なお，Qt 4 版の TeXstudio では，日本語入力するとカーソルが文字の位置からずれる現象は発生しませんでした．
@@ -171,6 +153,24 @@ Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字�
 <!-- &br; -->
 <!-- 　☑ 高度なオプションの表示 -->
 <!-- &br; -->
+<!-- - --  -->
+
+### OS X の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#ffe2f4b8}
+
+OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
+Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
+
+- [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
+
+<!-- - --  -->
+<!-- &color(#595857,#DFDFDF){%%%　&color(#FF0000,#DFDFDF){●}; &color(#FFD700,#DFDFDF){●}; &color(#C9C9C9,#DFDFDF){●};　　　　　　　　　　　　　　　　　　　　　　　　　　　　''Karabiner''　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
+<!-- 　　　　%%%&color(#F1F1F1,#0F7FFF){&color(#0F7FFF){[};　''Change Key''　&color(#0F7FFF){]};};&color(Black,White){[　''Key Repeat''　][　''Status Message''　][　''MenuBar''　][　''AXNotifier''　][　''Misc &amp; Uninstall''　]};%%%&br; -->
+<!-- 　　　　&color(Black,#FAFAFA){[%%%&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　%%%]};　　☐ Show enabled only (1 item)　　　　　　　%%%[ ''↻'' ReloadXML ]%%%&br; -->
+<!-- 　　　　remapping&br; -->
+<!-- 　　　　&color(#595857){▼};For Japanese&br; -->
+<!-- 　　　　　　&color(#595857){▼};Change Yen(￥) Key&br; -->
+<!-- 　　　　　　　　　&color(White,#0F7FFF){☑}; JIS Yen(￥) to Backslash(＼)&br; -->
+<!-- 　　　　　　　　　　　　(except virtual machine, X11, RDC)&br; -->
 <!-- - --  -->
 
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない {#ge309e14}
@@ -381,6 +381,7 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](http://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
 - [http://www.okomeda.net/?TeXStudio](http://www.okomeda.net/?TeXStudio)
+- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 - [TexStudioで最初にする設定](http://kamiwo-koete.hatenablog.jp/entry/2014/12/30/101759)
 - [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
