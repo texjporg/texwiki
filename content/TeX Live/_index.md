@@ -10,8 +10,6 @@ pukiwiki: "TeX Live"
 
 ## [TeX Live](http://www.tug.org/texlive/) {#n4073ab3}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Logo_TeX_Live.svg/500px-Logo_TeX_Live.svg.png" alt="TeX Live" style="float:right">
-
 <strong>目次</strong>
 
 ## TeX Live とは {#w37d1448}
