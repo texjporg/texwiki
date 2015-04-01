@@ -53,9 +53,11 @@ archlinux-yyyy.mm.dd-dual.iso から起動して Boot Arch Linux (x86_64) を選
 
 ```
 Arch Linux ?.??.?-?-ARCH (tty1)
+```
 
+```
 archiso login: root (automatic login)
-root@archiso ~ # 
+root@archiso ~ #
 ```
 
 デフォルトでは日本語キーボード配列 (JIS 配列) ではなく英語キーボード配列 (ASCII 配列) になっています．<br>
@@ -100,11 +102,19 @@ $ yaourt -S texlive-dummy
 
 ### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
-- [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
-- [arch linuxにてplatex使用中にエラーが起きた (Fatal format error)](http://tatslock.blogspot.jp/2014/10/arch-linuxplatex-fatal-format-error.html)
+- [TeX Live/Linux - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%20Live%2FLinux)
+- [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
+
+通常は texlive-langjapanese と texlive-most をインストールします．
 
 ```
 $ sudo pacman -S texlive-langjapanese texlive-most
+```
+
+必要最小限のパッケージのみインストールする場合は texlive-most ではなく texlive-core をインストールします．
+
+```
+$ sudo pacman -S texlive-langjapanese texlive-core
 ```
 
 ## [Ghostscript](/Ghostscript/) {#q940a9dc}
@@ -190,11 +200,11 @@ $ sudo pacman -S mupdf
 <!-- $ vi ~/.xpdfrc -->
 <!--  -->
 <!-- - --  -->
-<!-- cidToUnicode Adobe-Japan1 /usr/share/xpdf/japanese/Adobe-Japan1.cidToUnicode  -->
-<!-- unicodeMap ISO-2022-JP /usr/share/xpdf/japanese/ISO-2022-JP.unicodeMap  -->
-<!-- unicodeMap EUC-JP /usr/share/xpdf/japanese/EUC-JP.unicodeMap  -->
-<!-- unicodeMap Shift-JIS /usr/share/xpdf/japanese/Shift-JIS.unicodeMap  -->
-<!-- cMapDir Adobe-Japan1 /usr/share/xpdf/japanese/CMap  -->
+<!-- cidToUnicode Adobe-Japan1 /usr/share/xpdf/japanese/Adobe-Japan1.cidToUnicode -->
+<!-- unicodeMap ISO-2022-JP /usr/share/xpdf/japanese/ISO-2022-JP.unicodeMap -->
+<!-- unicodeMap EUC-JP /usr/share/xpdf/japanese/EUC-JP.unicodeMap -->
+<!-- unicodeMap Shift-JIS /usr/share/xpdf/japanese/Shift-JIS.unicodeMap -->
+<!-- cMapDir Adobe-Japan1 /usr/share/xpdf/japanese/CMap -->
 <!-- toUnicodeDir /usr/share/xpdf/japanese/CMap -->
 <!-- fontFile Ryumin-Light-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf -->
 <!-- fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf -->
@@ -279,6 +289,9 @@ $ sudo pacman -S lyx
 $ sudo pacman -S texstudio
 ```
 
+Arch Linux の TeXstudio は Qt 5 を使用しています．
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置から右にずれる現象が発生します（[不具合情報](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeXstudio#ped67bdd)を参照）．
+
 ## [Texmaker](/Texmaker/) {#gbe0fd81}
 
 ```
@@ -309,13 +322,11 @@ $ sudo pacman -S vim
 $ sudo pacman -S inkscape pstoedit python2-lxml
 ```
 
-## awesome {#hf2862e7}
+<!-- *awesome [#hf2862e7] -->
 
-```
-$ sudo pacman -S awesome
-```
+<!-- $ sudo pacman -S awesome -->
 
-- [ウィンドウマネージャ「awesome」の基本操作](http://momoto.github.io/blog/2013/03/27/awesome-tutorials/)
+<!-- -[[ウィンドウマネージャ「awesome」の基本操作:http://momoto.github.io/blog/2013/03/27/awesome-tutorials/]] -->
 
 ## sakura {#kf265bc9}
 
