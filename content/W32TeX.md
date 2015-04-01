@@ -206,6 +206,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/dvitools-w64.tar.xz">dvitools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/dvitools-w32.tar.xz">dvitools-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td>LuaJITTeX</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/minitoc.tar.xz">minitoc.tar.xz</a></td><td>minitoc パッケージ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．<br>otf パッケージの最新版は otfbeta です．</td></tr>
@@ -236,8 +237,10 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
 
 [texinst2015.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2015.zip)を展開してください．展開した場所がインストールフォルダとなります．以下では，C:\w32tex 内に展開されたとします．コマンドプロンプトを起動し，C:\w32tex に移動後，texinst2015.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
 
-C:\Users>cd C:\w32tex<br>
+```
+C:\Users>cd C:\w32tex
 C:\w32tex>texinst2015 C:\w32tex\download
+```
 
 ファイルが展開されたら終了です．次のようなメッセージが表示されます．
 
@@ -254,7 +257,7 @@ to user's PATH in the control panel.
 
 上のメッセージに従い，環境変数 PATH に C:\w32tex\bin を追加します．（64bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します．）
 
-W32TeX は環境変数 PATH を設定する必要があります。<br>
+W32TeX は環境変数 PATH を設定する必要があります。
 環境変数 PATH を設定するためにシステムのプロパティを起動します。コントロールパネルを開き，右上の検索窓で「環境変数」と入力し，「環境変数を編集」を選んでください．または以下でも開けます．
 
 <table>
@@ -262,7 +265,7 @@ W32TeX は環境変数 PATH を設定する必要があります。<br>
 <tr><th style="text-align:center">バージョン</th><th style="text-align:center">システムのプロパティの起動方法</th></tr>
 </thead>
 <tbody>
-<tr><td>Windows 10</td><td>［Windows キーを押す］-［Search everywhere］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
+<tr><td>Windows 10</td><td>［Windows キーを押す］-［Search the web and Windows］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 <tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 <tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
 </tbody>
@@ -274,7 +277,7 @@ Windows PowerShell またはコマンド プロンプトから
 SystemPropertiesAdvanced.exe
 ```
 
-と打ち込んでも OK です．<br>
+と打ち込んでも OK です．
 
 システムのプロパティの詳細設定タブの環境変数をクリックします．（コントロールパネルからの検索で開いた場合は以下の画面は開かれず，直接環境変数の設定画面が開かれます．）
 
@@ -314,9 +317,9 @@ SystemPropertiesAdvanced.exe
 ***
 
 ■ 32-bit バイナリを使用する場合<br>
-32-bit バイナリを使用する場合は PATH の値の最後に<br>
-“;C:\w32tex\bin” を追加し，\[OK\] を押します。<br>
-PATH が無ければ［新規］を押し，次のように設定してください。<br>
+32-bit バイナリを使用する場合は PATH の値の最後に
+“;C:\w32tex\bin” を追加し，\[OK\] を押します。
+PATH が無ければ［新規］を押し，次のように設定してください。
 
 ***
 
@@ -350,9 +353,9 @@ PATH が無ければ［新規］を押し，次のように設定してくださ
 ***
 
 ■ 64-bit バイナリを使用する場合<br>
-64-bit バイナリを使用する場合は PATH の値の最後に<br>
-“;C:\w32tex\bin64;C:\w32tex\bin” を追加し，\[OK\] を押します。<br>
-PATH が無ければ［新規］を押し，次のように設定してください。<br>
+64-bit バイナリを使用する場合は PATH の値の最後に
+“;C:\w32tex\bin64;C:\w32tex\bin” を追加し，\[OK\] を押します。
+PATH が無ければ［新規］を押し，次のように設定してください。
 
 ***
 
@@ -385,20 +388,17 @@ PATH が無ければ［新規］を押し，次のように設定してくださ
 
 ***
 
-Windows PowerShell やコマンド プロンプトあるいは TeX 関連のソフトウェアを起動している場合は，いったん閉じてください。<br>
+Windows PowerShell やコマンド プロンプトあるいは TeX 関連のソフトウェアを起動している場合は，いったん閉じてください。
 再起動の必要はありませんが，全てのソフトウェアが終了しているか不安な場合は再起動をすれば確実です．
 自分だけではなくユーザー全員に W32TeX を使わせたい場合は，管理者権限でシステム環境変数に PATH を追加します。
 
 #### 以前に TeX をインストールしたことがある場合 {#z02ac16d}
 
 もしユーザー環境変数またはシステム環境変数に
-“TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，
-削除してください。<br>
-次に，ユーザー環境変数のところを見てください。<br>
-PATH という欄が
-あればそれをクリックして［編集］を押します。<br>
-変数値の中に古い TeX への
-パス (“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など) があったら削除します。<br>
+“TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，削除してください。
+次に，ユーザー環境変数のところを見てください。
+PATH という欄があればそれをクリックして［編集］を押します。
+変数値の中に古い TeX へのパス (“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など) があったら削除します。
 
 #### Ghostscript {#zd901fa9}
 
@@ -430,8 +430,8 @@ abtexinst.exe をもう一度起動します．（インストール時に設定
 
 ## [SumatraPDF](/SumatraPDF/) {#g6688c53}
 
-SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．<br>
-インストール・設定に関しては<br>
+SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．
+インストール・設定に関しては
 
 - [SumatraPDF - TeX Wiki](/SumatraPDF/)
 
@@ -441,8 +441,8 @@ SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューア�
 
 ### 文字コードの自動判別 {#z6946085}
 
-W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．<br>
-texmf.cnf には以下のように設定されています．<br>
+W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．
+texmf.cnf には以下のように設定されています．
 
 ```
 %
@@ -451,12 +451,12 @@ texmf.cnf には以下のように設定されています．<br>
 guess_input_kanji_encoding = 1
 ```
 
-文字コードの自動判別は失敗することがあります．<br>
-[uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．<br>
+文字コードの自動判別は失敗することがあります．
+[uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．
 
 ## 漢字入出力対応状況 {#qc9f2e7d}
 
-コンソールやファイル名等での漢字(日本語)の入出力の対応状況をまとめました(2014/2/8現在)。<br>
+コンソールやファイル名等での漢字(日本語)の入出力の対応状況をまとめました(2014/2/8現在)。
 
 <table>
 <thead>
@@ -484,13 +484,13 @@ guess_input_kanji_encoding = 1
 </tbody>
 </table>
 
-この表は、日本語版 Windows におけるものです。<br>
-ここで、「command_line_encoding」とは、texmf.cnf のオプション設定です。<br>
-「コンソール入力」とは、標準入力(STDIN)からの入力、「コンソール出力」とは、標準出力(STDOUT)や標準エラー出力(STDERR)への出力を指します。<br>
-「specialファイル名」とは、挿入する画像のファイル名など、special命令によってdviファイルに書き込まれるファイル名の文字コードを指します。<br>
-「CP932」「Unicode」は文字集合の意味で、「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています。<br>
-スクリーンが「Unicode」「CP932(UTF-8)」の場合、(u)p(la)tex.exe では "-sjis-terminal" オプションにて、その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで、文字化けせずに表示させることができます。<br>
-以下はその例です。<br>
+この表は、日本語版 Windows におけるものです。
+ここで、「command_line_encoding」とは、texmf.cnf のオプション設定です。
+「コンソール入力」とは、標準入力(STDIN)からの入力、「コンソール出力」とは、標準出力(STDOUT)や標準エラー出力(STDERR)への出力を指します。
+「specialファイル名」とは、挿入する画像のファイル名など、special命令によってdviファイルに書き込まれるファイル名の文字コードを指します。
+「CP932」「Unicode」は文字集合の意味で、「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています。
+スクリーンが「Unicode」「CP932(UTF-8)」の場合、(u)p(la)tex.exe では "-sjis-terminal" オプションにて、その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで、文字化けせずに表示させることができます。
+以下はその例です。
 
 ```
 C:\work>platex -kanji=utf8 -sjis-terminal sourcename.tex
@@ -504,7 +504,7 @@ C:\work>uplatex -sjis-terminal sourcename.tex
 C:\work>dvipdfmx sourcename.dvi 2>&1 | utf8prin
 ```
 
-スクリーンが「Unicode(\*)」のものは、そのままでも文字化けせずに表示させることができます。<br>
+スクリーンが「Unicode(\*)」のものは、そのままでも文字化けせずに表示させることができます。
 up(la)tex を主に使用される方は、texmf.cnf に
 
 ```
@@ -515,15 +515,15 @@ p(la)tex を主に使用される方は、texmf.cnf に
 
 ```
 command_line_encoding = utf-8
-command_line_encoding.dvipdfmx = 
-command_line_encoding.dvips = 
+command_line_encoding.dvipdfmx =
+command_line_encoding.dvips =
 ```
 
-と設定するとよいでしょう。<br>
-なお、マクロ、パッケージやフォントなどのファイル名は ASCII の範囲にとどめ、漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします。<br>
-文字エンコーディングの齟齬により、ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです。<br>
-また、p(la)tex において special の種類によっては 0x5c を含むファイル名の場合、失敗することがあります。<br>
-この場合もASCIIの範囲で使用してください。( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))<br>
+と設定するとよいでしょう。
+なお、マクロ、パッケージやフォントなどのファイル名は ASCII の範囲にとどめ、漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします。
+文字エンコーディングの齟齬により、ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです。
+また、p(la)tex において special の種類によっては 0x5c を含むファイル名の場合、失敗することがあります。
+この場合もASCIIの範囲で使用してください。( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))
 
 ## 関連リンク {#b5892c8c}
 
