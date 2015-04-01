@@ -212,6 +212,7 @@ tlptexlive は TeX Live の補助リポジトリです．
 
 - [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/)
 - [tlptexlive Archives - There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+- [https://github.com/norbusan/tlptexlive-root](https://github.com/norbusan/tlptexlive-root)
 - [https://github.com/norbusan/build-tlptexlive](https://github.com/norbusan/build-tlptexlive)
 
 ### [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
