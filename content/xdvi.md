@@ -19,7 +19,7 @@ pukiwiki: "xdvi"
 
 <strong>目次</strong>
 
-## [xdvik](http://xdvi.sourceforge.net/) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="xdvik"></a> {#s47919ef}
+## [xdvik](http://xdvi.sourceforge.net/) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューする <a id="xdvik"></a> {#s47919ef}
 
 ### xdvik とは {#de90c407}
 
@@ -169,7 +169,7 @@ $ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "xdvi -nofork -unique -watchf
 
 のように実行します．
 
-## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
+## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
 
@@ -183,8 +183,8 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 
 ### ChangeLog {#y0777637}
 
+- [https://github.com/norbusan/tlptexlive-root/commits/master](https://github.com/norbusan/tlptexlive-root/commits/master)
 - [https://github.com/norbusan/build-tlptexlive/commits/master](https://github.com/norbusan/build-tlptexlive/commits/master)
-- [https://github.com/munepi/build-tlptexlive/commits/master](https://github.com/munepi/build-tlptexlive/commits/master)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
