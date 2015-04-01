@@ -26,7 +26,7 @@ Windows, OS X, Linux
 
 ### License {#od98a625}
 
-[GPLv2](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/COPYING)
+[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)
 
 QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git?p=qcodeedit/qce3.git;a=blob;f=GPL.txt;hb=HEAD)
 
@@ -53,9 +53,11 @@ TeXstudio/インストール を参照．
 
 ### ChangeLog {#u7f0ea72}
 
-- [log](http://sourceforge.net/p/texstudio/hg/ci/tip/log/)
+<!-- -[[log:http://sourceforge.net/p/texstudio/hg/ci/tip/log/]] -->
 - [http://hg.code.sf.net/p/texstudio/hg/](http://hg.code.sf.net/p/texstudio/hg/)
-- [CHANGELOG.txt](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/CHANGELOG.txt)
+    <!-- -[[CHANGELOG.txt:http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/CHANGELOG.txt]] -->
+
+- [CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/CHANGELOG.txt)
 - [http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW](http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW)
     <!-- -http://www.ohloh.net/p/texstudio/commits -->
 
