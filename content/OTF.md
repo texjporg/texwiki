@@ -7,19 +7,14 @@ pukiwiki: "OTF"
 
 # OTF
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
+## OTF パッケージ {#l22413ec}
 
-## OTF (japanese-otf, japanese-otf-uptex), luatexja-otf, ZXotf {#l22413ec}
+[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，Adobe-Japan1-6 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
+ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
-## OTF (japanese-otf, japanese-otf-uptex) パッケージとは {#h230c839}
-
-[LaTeX2e的](http://psitau.kitunebi.com/) ([齋藤修三郎さん](https://twitter.com/psi_tau)) の
-[Open Type Font 用 VF](http://psitau.kitunebi.com/otf.html) のベータ版は Adobe-Japan1-6 相当のフォントあたり最大23,058文字の
-和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。<br>
-ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris
-など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。<br>
+### ダウンロード {#a0ff39f1}
 
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
@@ -31,55 +26,39 @@ pukiwiki: "OTF"
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。<br>
-    CID 番号に完全対応している DVIware
-    で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を
-    使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。<br>
+- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
+    CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
 
 ### ChangeLog {#k32bef0c}
 
-- [変更履歴](http://psitau.kitunebi.com/otf.html)
-- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)
+- [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
+- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
 
-を参照．<br>
+を参照．
 
-#### japanese-otf {#b26e364e}
+<!-- ***japanese-otf [#b26e364e] -->
+<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/]] -->
+<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log]] -->
+<!-- -[[texlive] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/]] -->
+<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log]] -->
 
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log)
-- [texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log)
-
-#### japanese-otf-uptex {#kd9a1a12}
-
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log)
-
-## luatexja-otf とは {#cdad83e4}
-
-luatexja-otf パッケージは LuaLaTeX, LuaJITLaTeX で OTF パッケージと同等の機能を実現するためのパッケージです．<br>
-
-- [LuaTeX-ja](/LuaTeX-ja/)
-
-## ZXotf とは {#saafb8c1}
-
-ZXotf パッケージは XeLaTeX で OTF パッケージと同等の機能を実現するためのパッケージです．<br>
-
-- [ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)
+<!-- ***japanese-otf-uptex [#kd9a1a12] -->
+<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/]] -->
+<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log]] -->
+<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/]] -->
+<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log]] -->
 
 ## インストール {#g2a8e99e}
 
 ### TeX Live {#da8ed89a}
 
-TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．<br>
+TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．
 バージョンは[ベータ版](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)に相当します．
 
 ### W32TeX {#z4ee6291}
 
-[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。<br>
-これを例えば C:\temp\ に入れます。<br>
+[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。
+これを例えば C:\temp\ に入れます。
 Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
 
 ```
@@ -107,38 +86,40 @@ PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 
 ### CMap {#n2a34850}
 
-Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。<br>
+Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。
 [CMap Resources](http://sourceforge.net/adobe/cmap/) から "Downloads" へ進み、
-[Adobe-Japan1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_japan1-6.tar.z/download), 
-[Adobe-GB1-5](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_gb1-5.tar.z/download), 
-[Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download), 
+[Adobe-Japan1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_japan1-6.tar.z/download),
+[Adobe-GB1-5](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_gb1-5.tar.z/download),
+[Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download),
 [Adobe-Korea1-2](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_korean1-2.tar.z/download) を取得できます。
+
+## pLaTeX 以外でも OTF のコマンドを使いたい場合 {#fd82fe9a}
+
+\CID や \UTF を使いたい場合は，次のパッケージを使います．
+
+- [LuaTeX-ja](/LuaTeX-ja/) の場合：luatexja-otf パッケージを読み込みます．
+- XeLaTeX の場合：[ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)を読み込みます．
 
 ## 使い方 {#c8490780}
 
 ### フォントを埋め込まず使用する {#m049c993}
 
-まず OpenType フォントを持っていなくても試せる方法です。<br>
-Ryimun-Light と
-GothicBBB-Meduim は
-埋め込まれていないフォントを表します。<br>
-[Adobe Reader](</Adobe Reader/>)
-は埋め込まれていない
-Ryumin-Light と GothicBBB-Medium
-を適切なフォントに代替して表示・印刷します。<br>
+まず OpenType フォントを持っていなくても試せる方法です。
+Ryimun-Light と GothicBBB-Meduim は埋め込まれていないフォントを表します。
+[Adobe Reader](</Adobe Reader/>) は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
 Adobe Reader で使えるアジア・拡張言語フォントパック
 
 - [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Windows)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5508)
 - [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Mac)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5509)
 
-はインストール済みとします。<br>
+はインストール済みとします。
 
-これで次のものをテストしてみます。<br>
+これで次のものをテストしてみます。
 
 - \UTF{...} は十六進4桁の Unicode 番号
 - \CID{...} は十進の CID 番号
 
-を使います。<br>
+を使います。
 
 ***
 
@@ -152,18 +133,24 @@ Adobe Reader で使えるアジア・拡張言語フォントパック
   \usepackage[noembed,jis2004]{luatexja-preset}
 \fi
 \begin{document}
+```
 
+```
 森\UTF{9DD7}外と内田百\UTF{9592}とが\UTF{9AD9}島屋に行くところを想像した。
+```
 
+```
 \CID{7652}飾区の\CID{13706}野屋
+```
 
+```
 \end{document}
 ```
 
 ***
 
-これを “hoge.tex” という名前で UTF-8 で保存します。<br>
-Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。<br>
+これを “hoge.tex” という名前で UTF-8 で保存します。
+Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -212,9 +199,9 @@ open hoge.pdf
 xdg-open hoge.pdf
 ```
 
-PDF ファイルが Adobe Reader に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。<br>
+PDF ファイルが Adobe Reader に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。
 
-upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．<br>
+upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．
 ただし upLaTeX の場合に
 
 ```
@@ -228,7 +215,7 @@ char=0x20bb7(134071)
 Tried to set a nonexistent character in a virtual font
 ```
 
-と表示されて Adobe Reader で 𠮷 (U+20BB7) の字が表示されませんでした．<br>
+と表示されて Adobe Reader で 𠮷 (U+20BB7) の字が表示されませんでした．
 
 ***
 
@@ -241,22 +228,26 @@ Tried to set a nonexistent character in a virtual font
   \usepackage[noembed,jis2004]{luatexja-preset}
 \fi
 \begin{document}
+```
 
+```
 森鷗外と内田百閒とが髙島屋に行くところを想像した。
+```
 
+```
 葛飾区の𠮷野屋
+```
 
+```
 \end{document}
 ```
 
 ***
 
-最新の
-Adobe-Japan1-6 の文字を表示させて見ましょう。<br>
-OTF パッケージは
-ベータ版を使用します。<br>
+最新の Adobe-Japan1-6 の文字を表示させて見ましょう。
+OTF パッケージはベータ版を使用します。
 
-テスト用のソースは，例えば次のものを用いてみます。<br>
+テスト用のソースは，例えば次のものを用いてみます。
 
 ***
 
@@ -278,7 +269,9 @@ Adobe-Japan1-5で追加された文字を使った例
   \item Macintosh用キーボードの\UTF{2318}(Command key)を押す。
   \item \UTF{2672}を心がけよう。
 \end{itemize}
+```
 
+```
 Adobe-Japan1-6で追加された文字を使った例
 \begin{itemize}
   \item ほげほげ番組\CID{20556}
@@ -293,37 +286,35 @@ Adobe-Japan1-6で追加された文字を使った例
 
 ***
 
-最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に
-Adobe-Japan1-6 で追加された文字を使っています。<br>
-コマンド処理は上と同様です。<br>
+最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に Adobe-Japan1-6 で追加された文字を使っています。
+コマンド処理は上と同様です。
 
-uplatex で処理する場合に \kcatcode\`゜=18 を追加しています．<br>
-これを追加しない場合は uplatex でエラーが発生します．<br>
-upTeX での kcatcode の既定値が pTeX から変更されているようです．<br>
+uplatex で処理する場合に \kcatcode\`゜=18 を追加しています．
+これを追加しない場合は uplatex でエラーが発生します．
+upTeX での kcatcode の既定値が pTeX から変更されているようです．
 
 - W32TeX の upTeX-0.11 ([qa:49088](https://okumuralab.org/~okumura/texfaq/qa/49088.html))
 - pTeX-0.11 の kcatcode の既定値 (Re: W32TeX の...) ([qa:49120](https://okumuralab.org/~okumura/texfaq/qa/49120.html))
 - upTeX の kcatcode の既定値(Re: 欧文ギリシア語の...) ([qa:48229](https://okumuralab.org/~okumura/texfaq/qa/48229.html), [qa:48242](https://okumuralab.org/~okumura/texfaq/qa/48242.html))
 
-を参考にしてください．<br>
+を参考にしてください．
 
 ### フォントを埋め込むには {#hf05d89a}
 
-上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので
-軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。<br>
+上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。
 実際，上のファイルを upLaTeX (ptex2pdf) で処理して，SumatraPDF と TeXworks で開いた場合に
-𠮷 (U+20BB7) の字が表示されませんでした。<br>
+𠮷 (U+20BB7) の字が表示されませんでした。
 
-どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。<br>
-そのためには OpenType フォントが必要です。<br>
+どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
+そのためには OpenType フォントが必要です。
 
 #### Microsoft Windows の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。<br>
-シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。<br>
-C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。<br>
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。
+シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
+C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
-Windows PowerShell またはコマンド プロンプトで次のようにして処理します。<br>
+Windows PowerShell またはコマンド プロンプトで次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -354,22 +345,19 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
     luajitlatex hoge.tex
     ```
 
-これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
+これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
-なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック
-内の
-OpenType フォントの用途として，Adobe Reader/Acrobat での
-プレビュー・印刷用途を想定しているようです。<br>
-上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。<br>
-[TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。<br>
+なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
+OpenType フォントの用途として，Adobe Reader/Acrobat でのプレビュー・印刷用途を想定しているようです。
+上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
+[TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
 とりあえず Windows 版 Adobe Reader の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
-ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下から
-シンボリックリンクします。<br>
+ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下からシンボリックリンクします。
 
-次のようにして処理します。<br>
+次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -385,15 +373,15 @@ OpenType フォントの用途として，Adobe Reader/Acrobat での
     ```
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので
-Adobe-Japan1-6 の範囲なら誰でも読めるようになります。<br>
+Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
 ## Adobe-Japan1-6 とは {#j54465d8}
 
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
-U-PRESS用の文字を含む23,058グリフの文字セットです。<br>
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。<br>
+U-PRESS用の文字を含む23,058グリフの文字セットです。
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Reader 日本語版または Adobe Reader に用いるアジア・拡張言語フォントパックに含まれているので
-Adobe Reader を使用すれば豊富なフォントを利用できます。<br>
+Adobe Reader を使用すれば豊富なフォントを利用できます。
 Microsoft Windows 版の Adobe Reader に
 対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/)には
 
@@ -409,11 +397,11 @@ Microsoft Windows 版の Adobe Reader に
 - AdobeGothicStd-Bold.otf ［Adobe-Korea1-2 対応の
     韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
 
-が付属しています。<br>
+が付属しています。
 
 ### ヒラギノと OS X {#l1d1369f}
 
-ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。<br>
+ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
 TeX Live をインストールして
 
@@ -421,33 +409,32 @@ TeX Live をインストールして
 sudo kanji-config-updmap-sys -jis2004 hiragino-pron
 ```
 
-を実行しました。<br>
-これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。<br>
+を実行しました。
+これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。
 
 !["ヒラギノ出力例"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
 
 \usepackage\[uplatex,jis2004,expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
 『[［改訂版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)』も
-ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。<br>
+ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。
 ちなみに無指定の OTF パッケージでは
-\bfseries で同じウェイトのゴシックになるだけですので，
-上の図の例では “bold” オプションも加えて太いゴシックにしてあります。<br>
+\bfseries で同じウェイトのゴシックになるだけですので，上の図の例では “bold” オプションも加えて太いゴシックにしてあります。
 
 ### 新しいフォントメトリック {#y2c312cd}
 
 OTF パッケージを（“noreplace” オプション以外で）使うと，\UTF{...} や
-\CID{...} で指定した文字以外についても，新しい和文用メトリックが使われます。<br>
+\CID{...} で指定した文字以外についても，新しい和文用メトリックが使われます。
 これは JIS フォントメトリックとほぼ同じですが，JIS フォントメトリックが今までの
 min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」であったのに対し，OTF
-パッケージの新 JIS メトリックは正方形（高さ + 深さ = 幅）です。<br>
+パッケージの新 JIS メトリックは正方形（高さ + 深さ = 幅）です。
 従って，1 zw
-= 1 zh です（公称 10 pt のフォントで 1 zw = 1 zh = 9.62216 pt）。<br>
-また，一般的な PostScript の和文フォントにならって「高さ : 深さ = 88 : 12」です。<br>
+= 1 zh です（公称 10 pt のフォントで 1 zw = 1 zh = 9.62216 pt）。
+また，一般的な PostScript の和文フォントにならって「高さ : 深さ = 88 : 12」です。
 
 さらに，「？」と「！」（JIS の用語では「区切り約物」）の後に，
 横書きの場合も 0.5 zw のグルー（スペース）が入るようになりました
-（縦書きでは tmin10 などと同様 1 zw が入ります）。<br>
+（縦書きでは tmin10 などと同様 1 zw が入ります）。
 このグルーを禁止するには
 
 ```
@@ -464,7 +451,7 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 
 ### upLaTeX での利用 {#u1eb9e1c}
 
-upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。<br>
+upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。
 
 ### CID 番号参照用のサンプルへのリンク {#ze53c84a}
 
@@ -486,13 +473,13 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 - [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
     - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
 
-## map Files for the OTF Package {#nc92c884}
+## OTF パッケージ用の map ファイル {#nc92c884}
 
-TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています．<br>
+TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています．
 
 ### TeX Live の場合 {#p1b2eb36}
 
-TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)<br>
+TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
 埋め込み制御は
 
 ```
@@ -507,8 +494,8 @@ $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む
 $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
 ```
 
-などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。<br>
-[kanji-config-updmap](https://github.com/norbusan/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。<br>
+などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。
+[kanji-config-updmap](https://github.com/norbusan/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。
 
 ```
 $ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
@@ -517,7 +504,7 @@ $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込ま
 $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
 ```
 
-自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．<br>
+自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．
 
 ```
 hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-osx
@@ -534,8 +521,8 @@ dvipdfmx -f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map hoge.dvi
 
 ### W32TeX の場合 {#rffd4bea}
 
-W32TeX には，(e-)(u)pTeX エンジン用の map ファイルが準備されています。<br>
-埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照．)<br>
+W32TeX には，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
+埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照．)
 
 ```
 dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
@@ -588,7 +575,6 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 
 を使うほうが便利でしょう。
 
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 <!-- otf-cjmr-h は，前半では Identity-H と紹介されていますが， -->
 <!-- 以下では Adobe-Japan1-6 にしてあるのはどういう意味があるのでしょうか。 -->
 <!-- Adobe-Japan1-6 は「必要な４つの CMap」にも含まれてませんが，いいのかな。 -->
@@ -633,7 +619,7 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- H, UniJIS-UTF16-H, UniGB-UTF16-H, UniCNS-UTF16-H, UniKS-UTF16-H, -->
 <!-- V, UniJIS-UTF16-V, UniGB-UTF16-V, UniCNS-UTF16-V, UniKS-UTF16-V, -->
 <!-- Identity-H, Identity-V, Adobe-Japan1-6, Adobe-Korea1-2, -->
-<!-- Adobe-GB1-5, Adobe-CNS1-5  -->
+<!-- Adobe-GB1-5, Adobe-CNS1-5 -->
 <!-- の計16個の CMap が必要になります。 -->
 <!--  -->
 <!-- 前半の記述は別の方がお書きになったもので， -->
@@ -709,7 +695,6 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- ptetex3 では，OpenType フォントが前提になってるようですし， -->
 <!-- xdvi との連携もあるので Identity-{H,V} のほうが都合よさそうです。 -->
 <!-- ちなみに，中韓は非埋め込みの設定だけが準備されています。 -->
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
 ### For dvipdfmx {#gb0b4cc5}
 
@@ -957,10 +942,14 @@ $TEXMFLOCAL/fonts/map/dvips// 以下に作成します。
 ```
 rml                  Ryumin-Light-H
 rmlv                 Ryumin-Light-V
+```
 
+```
 gbm              GothicBBB-Medium-H
 gbmv             GothicBBB-Medium-V
+```
 
+```
 %%% OTF package
 hminr-h              Ryumin-Light-H
 hminr-v              Ryumin-Light-V
@@ -968,72 +957,96 @@ otf-ujmr-h           Ryumin-Light-UniJIS-UTF16-H
 otf-ujmr-v           Ryumin-Light-UniJIS-UTF16-V
 otf-cjmr-h           Ryumin-Light-Identity-H
 otf-cjmr-v           Ryumin-Light-Identity-V
+```
 
+```
 hgothr-h         GothicBBB-Medium-H
 hgothr-v         GothicBBB-Medium-V
 otf-ujgr-h       GothicBBB-Medium-UniJIS-UTF16-H
 otf-ujgr-v       GothicBBB-Medium-UniJIS-UTF16-V
 otf-cjgr-h       GothicBBB-Medium-Identity-H
 otf-cjgr-v       GothicBBB-Medium-Identity-V
+```
 
+```
 hminb-h          FutoMinA101-Bold-H
 hminb-v          FutoMinA101-Bold-V
 otf-ujmb-h       FutoMinA101-Bold-UniJIS-UTF16-H
 otf-ujmb-v       FutoMinA101-Bold-UniJIS-UTF16-V
 otf-cjmb-h       FutoMinA101-Bold-Identity-H
 otf-cjmb-v       FutoMinA101-Bold-Identity-V
+```
 
+```
 hgothb-h          FutoGoB101-Bold-H
 hgothb-v          FutoGoB101-Bold-V
 otf-ujgb-h        FutoGoB101-Bold-UniJIS-UTF16-H
 otf-ujgb-v        FutoGoB101-Bold-UniJIS-UTF16-V
 otf-cjgb-h        FutoGoB101-Bold-Identity-H
 otf-cjgb-v        FutoGoB101-Bold-Identity-V
+```
 
+```
 hmgothr-h            MidashiGo-MB31-H
 hmgothr-v            MidashiGo-MB31-V
 otf-ujmgr-h          MidashiGo-MB31-UniJIS-UTF16-H
 otf-ujmgr-v          MidashiGo-MB31-UniJIS-UTF16-V
 otf-cjmgr-h          MidashiGo-MB31-Identity-H
 otf-cjmgr-v          MidashiGo-MB31-Identity-V
+```
 
+```
 hminl-h            HiraMinStdN-W2-H
 hminl-v            HiraMinStdN-W2-V
 otf-ujml-h         HiraMinStdN-W2-UniJIS-UTF16-H
 otf-ujml-v         HiraMinStdN-W2-UniJIS-UTF16-V
 otf-cjml-h         HiraMinStdN-W2-Identity-H
 otf-cjml-v         HiraMinStdN-W2-Identity-V
+```
 
+```
 otf-ucmr-h           STSong-Light-UniGB-UTF16-H
 otf-ucmr-v           STSong-Light-UniGB-UTF16-V
 otf-ccmr-h           STSong-Light-Identity-H
 otf-ccmr-v           STSong-Light-Identity-V
+```
 
+```
 otf-ucgr-h        STHeiti-Regular-UniGB-UTF16-H
 otf-ucgr-v        STHeiti-Regular-UniGB-UTF16-V
 otf-ccgr-h        STHeiti-Regular-Identity-H
 otf-ccgr-v        STHeiti-Regular-Identity-V
+```
 
+```
 otf-utmr-h            MSung-Light-UniCNS-UTF16-H
 otf-utmr-v            MSung-Light-UniCNS-UTF16-V
 otf-ctmr-h            MSung-Light-Identity-H
 otf-ctmr-v            MSung-Light-Identity-V
+```
 
+```
 otf-utgr-h            MHei-Medium-UniCNS-UTF16-H
 otf-utgr-v            MHei-Medium-UniCNS-UTF16-V
 otf-ctgr-h            MHei-Medium-Identity-H
 otf-ctgr-v            MHei-Medium-Identity-V
+```
 
+```
 otf-ukmr-h     HYSMyeongJo-Medium-UniKS-UTF16-H
 otf-ukmr-v     HYSMyeongJo-Medium-UniKS-UTF16-V
 otf-ckmr-h     HYSMyeongJo-Medium-Identity-H
 otf-ckmr-v     HYSMyeongJo-Medium-Identity-V
+```
 
+```
 otf-ukgr-h        HYGoThic-Medium-UniKS-UTF16-H
 otf-ukgr-v        HYGoThic-Medium-UniKS-UTF16-V
 otf-ckgr-h        HYGoThic-Medium-Identity-H
 otf-ckgr-v        HYGoThic-Medium-Identity-V
+```
 
+```
 hiramin-w3-h       HiraMinProN-W3-Identity-H
 hiramin-w3-v       HiraMinProN-W3-Identity-V
 hiramin-w6-h       HiraMinProN-W6-Identity-H
@@ -1060,7 +1073,5 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://www.geocities.co.jp/texuttex/jfontsettings.html) （ut さん）
 - [TeX Live and upTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1148)
-
-<!-- -+- -- -1- -- -+- -- -2- -- -+- -- -3- -- -+- -- -4- -- -+- -- -5- -- -+- -- -6- -- -+- -- -7- -- -+-  -->
 
 [^1]: 「Adobe Creative Suite 5」に同梱ではないものはAdobe-CNS1-5 対応。
