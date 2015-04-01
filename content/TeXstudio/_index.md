@@ -73,7 +73,7 @@ TeXstudio/インストール を参照．
 
 ### OS X の TeXstudio で ptex2pdf が動作しない {#zfde7b69}
 
-ptex2pdf を version 0.6 以降に更新して ~/.bash_profile に
+&#x7e;/.bash_profile に
 
 ```
 export PATH=$PATH:/Library/TeX/texbin
