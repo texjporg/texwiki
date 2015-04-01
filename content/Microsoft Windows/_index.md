@@ -104,7 +104,7 @@ l.1 \ddocumentclass
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
 
-LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．<br>
+LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．
 
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
@@ -149,9 +149,9 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ## PDF ファイルビューア {#y17ec745}
 
-長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．<br>
-ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）<br>
-TeXworks には PDF 用のビューアが組み込まれています．<br>
+長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
+ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
+TeXworks には PDF 用のビューアが組み込まれています．
 単独の LaTeX 用 PDF プレビューアは [SumatraPDF](/SumatraPDF/) がお勧めです．
 
 ## その他の選択肢 {#q9151c7a}
@@ -238,13 +238,13 @@ W32TeX，TeX Live 以外にも Windows で利用可能な TeX ディストリビ
 <!-- Windows PowerShell または コマンド プロンプトを起動します．~ -->
 <!-- > -->
 <!-- |CENTER:~バージョン|CENTER:~Windows PowerShell の起動方法|h -->
-<!-- |Windows 10|［Windows キーを押す］-［Search everywhere］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
+<!-- |Windows 10|［Windows キーを押す］-［Search the web and Windows］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
 <!-- |Windows 8.1|［Windows キー + Q キーを押す］-［検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
 <!-- |Windows 7|［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに PowerShell を入力］-［Windows PowerShell］| -->
 <!-- < -->
 <!-- > -->
 <!-- |CENTER:~バージョン|CENTER:~コマンド プロンプトの起動方法|h -->
-<!-- |Windows 10|［Windows キーを押す］-［Search everywhere］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
+<!-- |Windows 10|［Windows キーを押す］-［Search the web and Windows］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
 <!-- |Windows 8.1|［Windows キー + Q キーを押す］-［検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
 <!-- |Windows 7|［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに cmd を入力］-［コマンド プロンプト］| -->
 <!-- < -->
