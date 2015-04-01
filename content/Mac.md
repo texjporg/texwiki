@@ -670,6 +670,7 @@ $ sudo tlmgr install collection-langjapanese
 - [http://www.macports.org/ports.php?by=name&substr=texlive](http://www.macports.org/ports.php?by=name&substr=texlive)
 - [http://svn.macports.org/repository/macports/trunk/dports/tex/](http://svn.macports.org/repository/macports/trunk/dports/tex/)
 - [texlive-lang-japanese](http://trac.macports.org/browser/trunk/dports/tex/texlive-lang-japanese/Portfile)
+- [texlive-luatex](http://trac.macports.org/browser/trunk/dports/tex/texlive-luatex/Portfile)
 - [texlive](http://trac.macports.org/browser/trunk/dports/tex/texlive/Portfile)
 
 #### TeX Live/MacPorts {#f8cc2ba3}
