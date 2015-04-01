@@ -301,6 +301,7 @@ xelatex の場合はドライバは自動検出されます．指定しないと
 <tr><td>filebordercolor</td><td>color of border around file links</td><td>RGB値 <strong>0 .5 .5</strong></td></tr>
 <tr><td>filecolor</td><td>color of file links</td><td><strong>cyan</strong></td></tr>
 <tr><td>frenchlinks</td><td>use small caps instead of color for links</td><td>true/<strong>false</strong></td></tr>
+<tr><td>hidelinks</td><td>リンクに色や枠をつけない</td><td style="text-align:center"> -</td></tr>
 <tr><td>hyperfigures</td><td>make figures hyper links</td><td>true/<strong>false</strong></td></tr>
 <tr><td>hyperindex</td><td>set up hyperlinked indices</td><td><strong>true</strong>/false</td></tr>
 <tr><td>hypertex</td><td>use HyperTeX backend</td><td style="text-align:center"> -</td></tr>
