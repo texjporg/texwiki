@@ -106,11 +106,11 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 
 まず OpenType フォントを持っていなくても試せる方法です。
 Ryimun-Light と GothicBBB-Meduim は埋め込まれていないフォントを表します。
-[Adobe Reader](</Adobe Reader/>) は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
-Adobe Reader で使えるアジア・拡張言語フォントパック
+Adobe Acrobat Reader DC は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
+Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパック
 
-- [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Windows)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5508)
-- [Adobe Reader XI Font Packs - Asian and Extended Language Pack (Mac)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5509)
+- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5877)
+- [Adobe - Adobe Reader : For Macintosh : Adobe Acrobat Reader DC Font Pack (Continuous)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5878)
 
 はインストール済みとします。
 
@@ -199,7 +199,7 @@ open hoge.pdf
 xdg-open hoge.pdf
 ```
 
-PDF ファイルが Adobe Reader に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。
+PDF ファイルが Adobe Acrobat Reader DC に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。
 
 upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．
 ただし upLaTeX の場合に
@@ -215,7 +215,7 @@ char=0x20bb7(134071)
 Tried to set a nonexistent character in a virtual font
 ```
 
-と表示されて Adobe Reader で 𠮷 (U+20BB7) の字が表示されませんでした．
+と表示されて Adobe Acrobat Reader DC で 𠮷 (U+20BB7) の字が表示されませんでした．
 
 ***
 
@@ -310,7 +310,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 #### Microsoft Windows の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Reader/Acrobat の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。
+とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
@@ -348,13 +348,13 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
-OpenType フォントの用途として，Adobe Reader/Acrobat でのプレビュー・印刷用途を想定しているようです。
+OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC でのプレビュー・印刷用途を想定しているようです。
 上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
 [TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### UNIX 互換 OS の場合 {#c2475144}
 
-とりあえず Windows 版 Adobe Reader の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
+とりあえず Windows 版 Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下からシンボリックリンクします。
 
 次のようにして処理します。
@@ -380,9 +380,9 @@ Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
 U-PRESS用の文字を含む23,058グリフの文字セットです。
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Reader 日本語版または Adobe Reader に用いるアジア・拡張言語フォントパックに含まれているので
-Adobe Reader を使用すれば豊富なフォントを利用できます。
-Microsoft Windows 版の Adobe Reader に
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader DC 日本語版または Adobe Acrobat Reader DC に用いるアジア・拡張言語フォントパックに含まれているので
+Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用できます。
+Microsoft Windows 版の Adobe Acrobat Reader DC に
 対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/)には
 
 - KozMinPr6N-Regular.otf ［Adobe-Japan1-6 対応の日本語明朝体フォント］
