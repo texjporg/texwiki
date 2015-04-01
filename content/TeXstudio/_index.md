@@ -10,7 +10,9 @@ pukiwiki: "TeXstudio"
 
 ## [TeXstudio](http://texstudio.sourceforge.net/) {#wc9679cf}
 
-TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．TeXstudio のエディタ部分は Texmaker とは異なり，[QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用しています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
+TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．<br>
+TeXstudio のエディタ部分は Texmaker とは異なり，[QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．<br>
+PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用しています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．<br>
 
 <strong>目次</strong>
 
@@ -87,10 +89,10 @@ export PATH=$PATH:/Library/TeX/texbin
 
 ### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする {#ped67bdd}
 
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
-高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．<br>
+高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
 
-なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．
+なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．<br>
 
 <!-- - --  -->
 <!-- &color(#3F43EF,#3F43EF){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''TeXstudioの設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#3F43EF,#3F43EF){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
@@ -176,34 +178,34 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない {#ge309e14}
 
-W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．
-TeX Live では表示されます．
+W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．<br>
+TeX Live では表示されます．<br>
 
 ```
 dvipdfmx.exe -f dlbase14.map %.dvi
 ```
 
-を設定してフォントを埋め込めば表示されるようになります．
+を設定してフォントを埋め込めば表示されるようになります．<br>
 通常はフォントを埋め込まない設定にしておきたい場合は，TeX ファイルのプリアンブルに
 
 ```
 \AtBeginDvi{\special{pdf:mapfile dlbase14.map}}
 ```
 
-を記述してください．
+を記述してください．<br>
 
 PDF ファイルのフォントの埋め込みについては
 
 - [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#z0e1001a>)
 
-を参照してください．
+を参照してください．<br>
 
 ## 文字コードの変換 {#v4ac40ab}
 
-TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
-Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．
-[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](/nkf/) が含まれています．
-nkf の場所は以下のようにして確認できます．
+TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．<br>
+Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．<br>
+[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](/nkf/) が含まれています．<br>
+nkf の場所は以下のようにして確認できます．<br>
 
 - Windows PowerShell の場合
 
@@ -228,10 +230,10 @@ C:\w32tex\bin\nkf.exe
     C:\w32tex\bin\nkf.exe
     ```
 
-使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545) などを参照してください．
-Windows PowerShell またはコマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．
-メモ帳で UTF-8 に変換した場合は BOM が付加されます．
-nkf やメモ帳以外の変換ツールを使用したい場合は[サクラエディタ](</サクラエディタ/>)などのエディタを使っても OK です．
+使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545) などを参照してください．<br>
+Windows PowerShell またはコマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．<br>
+メモ帳で UTF-8 に変換した場合は BOM が付加されます．<br>
+nkf やメモ帳以外の変換ツールを使用したい場合は[サクラエディタ](</サクラエディタ/>)などのエディタを使っても OK です．<br>
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#o84f3d5c}
 
@@ -239,11 +241,11 @@ nkf やメモ帳以外の変換ツールを使用したい場合は[サクラエ
 
 - [TeXstudioの組み込みPDFビューアで日本語を表示させる(Mac)](http://hayate.me/archives/31)
 
-OS X の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．
-[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．
+OS X の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．<br>
+poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
+[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．<br>
 
-poppler-data を配置する場所は strings と grep で調べることができます．
+poppler-data を配置する場所は strings と grep で調べることができます．<br>
 
 ```
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
@@ -253,8 +255,8 @@ Unknown CID font collection, please report to poppler bugzilla.
 %Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
 ```
 
-この場合は /usr/local/share/poppler が poppler-data を配置するディレクトリになります．
-コマンドラインから poppler-data を /usr/local/share/poppler に配置する場合は以下のように実行します．
+この場合は /usr/local/share/poppler が poppler-data を配置するディレクトリになります．<br>
+コマンドラインから poppler-data を /usr/local/share/poppler に配置する場合は以下のように実行します．<br>
 
 ```
 $ brew install poppler
@@ -294,11 +296,11 @@ $ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
-Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．
+Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．<br>
 
 ### TeX Live の場合 {#xf7e038f}
 
-デフォルトでは和文フォントを埋め込みません．
+デフォルトでは和文フォントを埋め込みません．<br>
 IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
@@ -311,12 +313,12 @@ kanji-config-updmap-sys ipaex
 kanji-config-updmap ipaex
 ```
 
-を実行します．
+を実行します．<br>
 
 ### W32TeX の場合 {#y0816396}
 
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
-フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
+フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．<br>
 
 ***
 
