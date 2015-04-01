@@ -74,7 +74,7 @@ TeXstudio/インストール を参照．
 ptex2pdf を version 0.6 以降に更新して ~/.bash_profile に
 
 ```
-export PATH=$PATH:/usr/texbin
+export PATH=$PATH:/Library/TeX/texbin
 ```
 
 を追加する必要があります．
@@ -202,7 +202,7 @@ PDF ファイルのフォントの埋め込みについては
 
 TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．
-[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](http://osdn.jp/projects/nkf/) が含まれています．
+[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](/nkf/) が含まれています．
 nkf の場所は以下のようにして確認できます．
 
 - Windows PowerShell の場合
