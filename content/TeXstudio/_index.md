@@ -12,10 +12,6 @@ pukiwiki: "TeXstudio"
 
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．TeXstudio のエディタ部分は Texmaker とは異なり，[QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用しています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
-<img src="http://texstudio.sourceforge.net/images/texstudio128x128.png" alt="TeXstudio" style="float:right">
-
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/splash.png,right,around,nolink,TeXstudio) -->
-
 <strong>目次</strong>
 
 ### Webサイト {#w233c0c1}
@@ -65,22 +61,6 @@ TeXstudio/インストール を参照．
 
 <!-- **日本語化 [#ibfc5135] -->
 <!-- -[[TeXstudioの日本語化:http://anastashia.blog.shinobi.jp/Entry/14/]] -->
-
-### スクリーンショット {#u321c087}
-
-> <table>
-> <tbody>
-> <tr><td style="background-color:#CCF">マルチカーソル</td><td style="background-color:#CCF">自動補完</td></tr>
-> <tr><td><img src="http://texstudio.sourceforge.net/images/block-cursor.png" alt="Multi-Cursors"></td><td><img src="http://texstudio.sourceforge.net/images/autocompletion-help.png" alt="Auto completion"></td></tr>
-> <tr><td style="background-color:#CCF">1000 を超える数学記号</td><td style="background-color:#CCF">ブックマーク</td></tr>
-> <tr><td><img src="http://texstudio.sourceforge.net/images/symbols.png" alt="More than 1000 mathematical symbols"></td><td><img src="http://texstudio.sourceforge.net/images/bookmarks.png" alt="Bookmarks"></td></tr>
-> <tr><td style="background-color:#CCF">リンク先のオーバーレイ表示</td><td style="background-color:#CCF">画像，表，数式アシスタント</td></tr>
-> <tr><td><img src="http://texstudio.sourceforge.net/images/link-overlay.png" alt="Link overlay"></td><td><img src="http://texstudio.sourceforge.net/images/assistants.png" alt="Assistants for images,tables,formulas,..."></td></tr>
-> <tr><td style="background-color:#CCF">画像ファイルのドラッグ &amp; ドロップ</td><td style="background-color:#CCF">表の整形</td></tr>
-> <tr><td><img src="http://texstudio.sourceforge.net/images/dragdropimages.png" alt="Drag &amp;amp; drop support for images"></td><td><img src="http://texstudio.sourceforge.net/images/table-formating.png" alt="Table-formatting"></td></tr>
-> </tbody>
-> </table>
->
 
 ### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
 
