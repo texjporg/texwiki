@@ -193,68 +193,6 @@ Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字�
 <!-- &br; -->
 <!-- - --  -->
 
-### 自動補完機能でキーワードを補完したあとでプレースホルダーに日本語入力して確定すると確定した日本語が二重に入力される {#s17caeff}
-
-自動補完機能でキーワードを補完したあとでプレースホルダーに日本語入力して確定すると確定した日本語が二重に入力されます．
-
-\begin{do とタイプして Enter を入力すると自動補完機能で以下のような状態になります．
-
-```
-\begin{document}
-	content...
-\end{document}
-```
-
-この状態でプレースホルダー (ここでは content...) に日本語入力して確定すると確定した日本語が二重に入力されます．
-
-```
-\begin{document}
-	日本語日本語
-\end{document}
-```
-
-高度なオプションの表示を ON にしてコマンドの補完のプレースホルダーを使用を OFF にすることで回避できます．
-
-<!-- - --  -->
-<!-- &color(#3F43EF,#3F43EF){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''TeXstudioの設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#3F43EF,#3F43EF){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
-
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png,left,around,nolink,37x37,一般) -->
-<!-- 一般　　　　　　　　　　　　　　コマンドの補完&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png,left,around,nolink,37x37,コマンド) -->
-<!-- コマンド　　　　　　　　　　　　☑ LaTeXコマンド入力時に自動的に補完を開始　　　　　　　　　　　　　　　好みのコマンドセット:　&color(Black,#EEEEEE){%%%[典型的　　　　▼]%%%};&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png,left,around,nolink,37x37,ビルド) -->
-<!-- ビルド　　　　　　　　　　　　　☑ 大文字と小文字を区別する　　　　　　　　　　　　　　　　　　　　　　　　　　☑ LaTeXコマンドの自動置換&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png,left,around,nolink,37x37,キーボードショートカット) -->
-<!-- キーボードショートカット　　　　☑ 最初の文字で区別　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ツールチップヘルプ&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png,left,around,nolink,37x37,メニュー) -->
-<!-- メニュー　　　　　　　　　　　　☑ 共通する接頭語の自動補完&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png,left,around,nolink,37x37,ツールバー) -->
-<!-- ツールバー　　　　　　　　　　☑ 非文字キャラクタを押すと選択したテキストを補完　　　　　　　　　　　　タブバーの大きさ　%%%100&#x25;　　[''⇕'']%%%&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png,left,around,nolink,37x37,エディタ) -->
-<!-- エディタ　　　　　　　　　　　　 &color(black,yellow){''☐ プレースホルダーを使用 ← チェックをはずす''};　　　　　　　　　　　　　　☑ プレースホルダーを表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png,left,around,nolink,37x37,詳細なエディタ設定) -->
-<!-- 詳細なエディタ設定　　　　　次の補完ファイルを使用:&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png,left,around,nolink,37x37,構文の強調表示) -->
-<!-- 構文の強調表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png,left,around,nolink,37x37,カスタム強調表示) -->
-<!-- カスタム強調表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png,left,around,nolink,37x37,コマンドの補完) -->
-<!-- &color(Black,#DAEAFF){コマンドの補完　　　　　　};&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png,left,around,nolink,37x37,文法) -->
-<!-- 文法&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png,left,around,nolink,37x37,プレビュー) -->
-<!-- プレビュー&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png,left,around,nolink,37x37,SVN) -->
-<!-- SVN&br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- 　☑ 高度なオプションの表示 -->
-<!-- &br; -->
-<!-- - --  -->
-
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない {#ge309e14}
 
 W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．
