@@ -223,7 +223,7 @@ $ sudo pacman -S texstudio
 ```
 
 Arch Linux の TeXstudio は Qt 5 を使用しています．
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置から右にずれる現象が発生します（[不具合情報](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeXstudio#ped67bdd)を参照）．
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれる現象が発生します（[不具合情報](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeXstudio#ped67bdd)を参照）．
 
 ## [Texmaker](/Texmaker/) {#gbe0fd81}
 
