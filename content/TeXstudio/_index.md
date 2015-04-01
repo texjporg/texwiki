@@ -201,7 +201,7 @@ PDF ファイルのフォントの埋め込みについては
 
 TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．
-[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．
+[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](http://osdn.jp/projects/nkf/) が含まれています．
 nkf の場所は以下のようにして確認できます．
 
 - Windows PowerShell の場合
@@ -390,6 +390,6 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 - [texstudioのプレビューに日本語が表示されない件](http://cocu.hatenablog.com/entry/2013/03/27/113754)
 - [TeXstudio による LaTeX 文書の最終検査](http://blog.fujioizumi.verse.jp/?eid=135)
 - [日々徒然思うこと TeX](http://anastashia.blog.shinobi.jp/Category/5/)
-- [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](http://sourceforge.jp/magazine/12/07/16/0613248)
+- [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](http://osdn.jp/magazine/12/07/16/0613248)
 
 [^1]: [Wikipedia.ja:フォーク\_(ソフトウェア開発)](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF_%28%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%29)
