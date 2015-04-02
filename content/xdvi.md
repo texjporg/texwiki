@@ -151,7 +151,7 @@ $ pdflatex -synctex=1 hoge
 
 ### SyncTeX {#g4e4f193}
 
-xdvi は [SyncTeX](/SyncTeX/) に対応しています．
+xdvi は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
 
 #### forward search {#ic1815e4}
 
@@ -376,7 +376,7 @@ $ pdflatex -synctex=1 hoge
 
 ### SyncTeX {#i441324e}
 
-pxdvi は [SyncTeX](/SyncTeX/) に対応しています．
+pxdvi は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
 
 #### forward search {#ucabcddf}
 
