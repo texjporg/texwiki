@@ -59,6 +59,7 @@ Evince は [MinGW](/MinGW/) でビルド可能です．
 ### Arch Linux {#eb51c4f9}
 
 - [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
+- [Arch LinuxでTeXで出力された日本語pdfをevinceで表示する &amp; fonts.conf公開](http://blog.yomak.info/2015/03/arch-linuxtexpdfevince-fontsconf.html)
 
 ### Linux Mint {#lacd43b5}
 
