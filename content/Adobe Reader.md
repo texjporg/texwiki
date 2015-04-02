@@ -227,6 +227,8 @@ echo open hoge.pdf | pdfdde --rxi && echo goto hoge.pdf 3 | pdfdde --rxi
 
 ## SyncTeX {#s533a23f}
 
+Adobe Reader は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
+
 ### forward search {#s30ae8a0}
 
 TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は<br>
