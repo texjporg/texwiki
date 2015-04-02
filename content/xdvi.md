@@ -169,14 +169,14 @@ $ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "xdvi -nofork -unique -watchf
 
 のように実行します．
 
-## [pxdvi](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
+## [pxdvi](</TeX Live/#tlptexlive>) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
 
 pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです．
 pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 
-- [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA)
+- [tlptexlive](</TeX Live/#tlptexlive>)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
@@ -188,9 +188,7 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tlptexliveリポジトリ](http://tutimura.ath.cx/ptexlive/?tlptexlive%A5%EA%A5%DD%A5%B8%A5%C8%A5%EA) からインストールできます．
-
-- [tlptexlive Archives &middot; There and back again](http://www.preining.info/blog/tag/tlptexlive/)
+pxdvi は [tlptexlive](</TeX Live/#tlptexlive>) からインストールできます．
 
 ```
 $ pxdvi --version
@@ -204,7 +202,7 @@ Libraries: kpathsea version 6.1.1dev, T1lib version 5.1.2, FreeType version 2.4.
 $ sudo tlmgr update --self --all
 $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr install pxdvi
 $ sudo tlmgr update --all
 $ cd /usr/local/texlive/????
 $ sudo ln -s texmf-dist texmf
@@ -221,7 +219,7 @@ $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XD
 $ sudo tlmgr update --self --all
 $ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
 $ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pxdvi pmetapost
+$ sudo tlmgr install pxdvi
 $ sudo tlmgr path add
 $ sudo tlmgr update --all
 $ cd /usr/local/texlive/????
@@ -236,7 +234,7 @@ $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDv
 
 - [xdviで日本語が表示できない.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1120)
 
-tlptexlive リポジトリから pxdvi をダウンロード・展開して
+tlptexlive から pxdvi をダウンロード・展開して
 pxdvi-xaw, pxdvi.cfg, xdvi-ptex.map, texmf.cnf などを適切な場所に配置して
 /usr/share/texmf-local/web2c/texmf.cnf に &#x58;DVIINPUTS を設定します．
 
