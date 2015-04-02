@@ -972,6 +972,8 @@ JPEG ファイルが表示できない場合は dviout を使用せず PDF フ�
 
 ## SyncTeX {#ab3daddf}
 
+dviout は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
+
 ### forward search {#w6799fd9}
 
 TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
