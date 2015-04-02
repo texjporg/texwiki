@@ -17,6 +17,8 @@ pukiwiki: "dviout"
 
 などの問題があります．[古い情報](</古い情報/#je1d5241>)もご覧ください．
 このため，現在は DVI ではなく PDF でのプレビューが推奨されています．
+然し,dviout で十分な場合も数多くあり,その場合には依然として高機能で
+高速な DVI viewer として有用です.
 
 以下の情報はアーカイブとして残しておきます．
 極力削除はお控えください．[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます．
