@@ -9,10 +9,6 @@ pukiwiki: "Evince"
 
 ## [Evince](https://wiki.gnome.org/Apps/Evince) {#fec1fb99}
 
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Evince_logo.svg/200px-Evince_logo.svg.png,right,around,nolink,Evince) -->
-
-<img src="https://git.gnome.org/browse/evince/plain/data/icons/256x256/apps/evince.png" alt="Evince" style="float:right">
-
 Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
@@ -90,7 +86,7 @@ libevince-devパッケージが必要です。
 ### Beyond Linux From Scratch {#i9f92bae}
 
 - [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
-- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/gnome/evince.html)
+- [http://lfsbookja.osdn.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/gnome/evince.html)
 
 ## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
 
