@@ -231,7 +231,7 @@ Adobe Reader は [SyncTeX](/SyncTeX/) には対応していませんが synctex 
 
 ### forward search {#s30ae8a0}
 
-TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は<br>
+TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は
 
 ```
 synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "pdfopen --rxi --file '%{output}' --page %{page+1}"
@@ -239,7 +239,33 @@ synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files (x86)\Adobe\
 synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files\Adobe\Reader 11.0\Reader\AcroRd32.exe' /a 'page=%{page+1}' '%{output}'"
 ```
 
-のように実行します．<br>
+のように実行します．
+
+詳細については
+
+```
+synctex help view
+```
+
+を参照してください．
+
+### inverse search {#f99c6c1f}
+
+[TeXstudio](/TeXstudio/) で PDF ファイルの 30 ページ目の x 座標 0, y 座標 0 に対する TeX ファイルの該当する行にジャンプしたい場合は
+
+```
+synctex edit -o "30:0:0:hoge.pdf" -x "texstudio -line %{line} '%{input}'"
+```
+
+のように実行します．
+
+詳細については
+
+```
+synctex help edit
+```
+
+を参照してください．
 
 ## 関連リンク {#m8d917f7}
 
