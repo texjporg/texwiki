@@ -169,6 +169,38 @@ $ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "xdvi -nofork -unique -watchf
 
 のように実行します．
 
+詳細については
+
+```
+$ synctex help view
+```
+
+を参照してください．
+
+#### inverse search {#wcff3889}
+
+[TeXstudio](/TeXstudio/) で DVI ファイルの 30 ページ目の x 座標 0, y 座標 0 に対する TeX ファイルの該当する行にジャンプしたい場合は
+
+```
+$ synctex edit -o '30:0:0:hoge.dvi' -x 'texstudio -line %{line} "%{input}"'
+```
+
+または
+
+```
+$ synctex edit -o "30:0:0:hoge.dvi" -x "texstudio -line %{line} '%{input}'"
+```
+
+のように実行します．
+
+詳細については
+
+```
+$ synctex help edit
+```
+
+を参照してください．
+
 ## [pxdvi](</TeX Live/#tlptexlive>) → 日本語が表示されないなどの問題が発生する場合は PDF ファイルで出力して [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューする <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
@@ -393,3 +425,35 @@ $ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "pxdvi -nofork -unique -watch
 ```
 
 のように実行します．
+
+詳細については
+
+```
+$ synctex help view
+```
+
+を参照してください．
+
+#### inverse search {#z6a539bd}
+
+[TeXstudio](/TeXstudio/) で DVI ファイルの 30 ページ目の x 座標 0, y 座標 0 に対する TeX ファイルの該当する行にジャンプしたい場合は
+
+```
+$ synctex edit -o '30:0:0:hoge.dvi' -x 'texstudio -line %{line} "%{input}"'
+```
+
+または
+
+```
+$ synctex edit -o "30:0:0:hoge.dvi" -x "texstudio -line %{line} '%{input}'"
+```
+
+のように実行します．
+
+詳細については
+
+```
+$ synctex help edit
+```
+
+を参照してください．
