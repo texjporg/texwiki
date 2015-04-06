@@ -986,6 +986,32 @@ synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "'C:\w32tex\dviout\dviout.exe' 
 
 のように実行します．<br>
 
+詳細については
+
+```
+synctex help view
+```
+
+を参照してください．
+
+### inverse search {#k24873e6}
+
+[TeXstudio](/TeXstudio/) で DVI ファイルの 30 ページ目の x 座標 0, y 座標 0 に対する TeX ファイルの該当する行にジャンプしたい場合は
+
+```
+synctex edit -o "30:0:0:hoge.dvi" -x "texstudio -line %{line} '%{input}'"
+```
+
+のように実行します．
+
+詳細については
+
+```
+synctex help edit
+```
+
+を参照してください．
+
 ## 関連リンク {#a0623ac1}
 
 - [TeX インストールガイド―― dviout for Windows のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/dviout.htm) @ [トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](https://twitter.com/tony4649))（旧 @nifty DTP と印刷フォーラム \[FDTP\]）
