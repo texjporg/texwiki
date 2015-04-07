@@ -10,8 +10,6 @@ pukiwiki: "Microsoft Windows"
 
 ## [Microsoft Windows](http://www.windows.com/) での TeX の利用 {#i4bf0c85}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Windows_logo_and_wordmark_-_2012.svg/500px-Windows_logo_and_wordmark_-_2012.svg.png" alt="Microsoft Windows" style="float:right">
-
 ***
 
 ***
