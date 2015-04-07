@@ -996,7 +996,7 @@ synctex help view
 
 ### inverse search {#k24873e6}
 
-[TeXstudio](/TeXstudio/) で DVI ファイルの 30 ページ目の x 座標 0, y 座標 0 に対する TeX ファイルの該当する行にジャンプしたい場合は
+[TeXstudio](/TeXstudio/) で DVI ファイルの 30 ページ目の x 座標 0, y 座標 0 に対応する TeX ファイルの該当する行にジャンプしたい場合は
 
 ```
 synctex edit -o "30:0:0:hoge.dvi" -x "texstudio -line %{line} '%{input}'"
