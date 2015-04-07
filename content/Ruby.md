@@ -51,18 +51,18 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 - [RubyInstaller for Windows](http://rubyinstaller.org/)
 - [https://github.com/oneclick/rubyinstaller](https://github.com/oneclick/rubyinstaller)
 
-RubyInstaller for Windows の Ruby を C:\Ruby21-x64 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby22-x64 にインストールした場合は
 
 ```
-;C:\Ruby21-x64\bin
+;C:\Ruby22-x64\bin
 ```
 
 を環境変数 PATH に追加します
 
-RubyInstaller for Windows の Ruby を C:\Ruby21 にインストールした場合は
+RubyInstaller for Windows の Ruby を C:\Ruby22 にインストールした場合は
 
 ```
-;C:\Ruby21\bin
+;C:\Ruby22\bin
 ```
 
 を環境変数 PATH に追加します
@@ -97,7 +97,7 @@ $ pacman -S ruby
 
 - [https://packages.debian.org/ja/ruby](https://packages.debian.org/ja/ruby)
 - [https://packages.debian.org/ja/ruby-full](https://packages.debian.org/ja/ruby-full)
-- [https://packages.debian.org/ja/ruby2.1](https://packages.debian.org/ja/ruby2.1)
+- [https://packages.debian.org/ja/ruby2.2](https://packages.debian.org/ja/ruby2.2)
 
 #### Fedora {#c69aed3b}
 
@@ -153,7 +153,7 @@ window['org.gnome.evince.Window'].SyncView(tex, [line, 1], 0)
 
 ### Ruby 版 {#p8b1b4df}
 
-RubyInstaller for Windows の ruby 2.1.5p273 (2014-11-13 revision 48405) \[x64-mingw32\] で動作確認しています．<br>
+RubyInstaller for Windows の ruby 2.2.1p85 (2015-02-26 revision 49769) \[x64-mingw32\] で動作確認しています．<br>
 
 ***
 
