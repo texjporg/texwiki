@@ -223,41 +223,7 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 
 pxdvi は [tlptexlive](</TeX Live/#tlptexlive>) からインストールできます．
 
-#### TeX Live 公式パッケージ (OS X) の場合 {#r20c1e45}
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pxdvi
-```
-
-<!-- $ sudo tlmgr update - -all -->
-<!-- $ cd /usr/local/texlive/???? -->
-<!-- $ sudo ln -s texmf-dist texmf -->
-<!-- $ cd /usr/local/texlive/????/texmf-dist/xdvi -->
-<!-- $ sudo cp XDvi XDvi.org -->
-<!-- $ brew install gnu-sed -->
-<!-- $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi -->
-<!-- $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi -->
-
-#### TeX Live 公式パッケージ (Linux) の場合 {#ud34ec40}
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
-$ sudo tlmgr install pxdvi
-$ sudo tlmgr path add
-```
-
-<!-- $ sudo tlmgr update - -all -->
-<!-- $ cd /usr/local/texlive/???? -->
-<!-- $ sudo ln -s texmf-dist texmf -->
-<!-- $ cd /usr/local/texlive/????/texmf-dist/xdvi -->
-<!-- $ sudo cp XDvi XDvi.org -->
-<!-- $ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi -->
-<!-- $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi -->
+インストール方法は [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/) を参照してください．
 
 ### 注意点など {#uca9d6da}
 
