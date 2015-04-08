@@ -34,9 +34,9 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
 - [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-bin.git;a=summary)
-- [http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary](http://anonscm.debian.org/gitweb/?p=debian-tex/texlive-nonbin.git;a=summary)
-- [http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk](http://dedup.debian.net/compare/poppler-data/texlive-lang-cjk)
+- [http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/)
+- [http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/)
+- [http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese](http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese)
 - [https://people.debian.org/~preining/TeX/](https://people.debian.org/~preining/TeX/)
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
