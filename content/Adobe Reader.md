@@ -11,14 +11,16 @@ pukiwiki: "Adobe Reader"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/1/1a/Adobe_Reader_XI_icon.png" alt="Adobe Reader" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Adobe Reader とは {#t103678c}
-
 Adobe Reader は PDF ファイルを表示・印刷するためのソフトウェアです．
 
-Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) を使用して，最終確認や印刷をする場合に Adobe Reader を使用することをおすすめします．<br>
+Adobe Reader の Windows 版は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) を使用して，Adobe Reader を使用するのは最終確認や印刷をする場合のみとするのがおすすめです．
+
+***
+
+***
+
+### 公式 Web ページ {#t103678c}
 
 - [Adobe Reader](http://www.adobe.com/jp/products/reader.html)
 - [モバイル版Adobe Reader](http://www.adobe.com/jp/products/reader-mobile.html)
@@ -32,43 +34,21 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](
 
 ### 動作環境 {#v8f82e43}
 
-[必要システム構成](http://www.adobe.com/jp/products/reader/tech-specs.html)を参照．<br>
-
-### Adobe products and technical support periods covered under the new Lifecycle Policy {#zc249f4b}
-
-[Adobe products and technical support periods covered under the new Lifecycle Policy](http://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)
-
-#### お知らせ {#xa82989b}
-
-[Acrobat 旧バージョンをお使いのお客様へ](http://www.adobe.com/jp/jos/acrobat/it/endsupport.html)
-
-## 注意点 {#t3ac3069}
-
-### ツールパネルウィンドウ (「サインイン」，「PDF を書き出し」，「PDF を作成」，「ファイルを送信」，「ファイルを保存」が表示されているパネル) が邪魔 → ツールパネルウィンドウの上にある「ツール」をクリック {#ea4f48ea}
-
-- [Adobe Reader X/XIで 画面右側に「PDFを書き出し」「PDFを作成」などがあり邪魔](http://d.hatena.ne.jp/psquare/20130523/p1)
-- [PDFの右側が邪魔。ずっと出ないようにする設定は？](http://blog.livedoor.jp/takky315-gadget/archives/33033775.html)
-
-***
-
-　　　　　　　　　　　<span style="color:black;background-color:yellow;">ツール[^1] ← 「ツール」をクリック</span><br>
-　　　　　　　　　　　　　　　　　　　　　　サインイン<br>
-▶ PDF を書き出し<br>
-▶ PDF を作成<br>
-▶ ファイルを送信<br>
-▶ ファイルを保存<br>
-
-***
+[必要システム構成](http://www.adobe.com/jp/products/reader/tech-specs.html)を参照．
 
 ## 不具合 {#r92dd454}
 
-### Windows 版 Adobe Reader XI で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない → Adobe Reader の保護モードを無効にするかまたは MS-IME を使用する {#o97dc307}
+### Windows 版 Adobe Reader XI で 保護モードを有効にしている場合に Google 日本語入力を使用して日本語入力できない {#o97dc307}
+
+Adobe Reader の保護モードを無効にするか，Google 日本語入力ではなく MS-IME を使用します．
 
 - [日本語入力ができない。【Adobe Reader X・XI 】  | ゆりかご倶楽部Ｑ＆Ａ：よくある質問と回答](http://www.yurikago.net/qa/cate3-38.html)
 - [日本語を入力できない（Windows 版 Adobe Reader X 10.1）](http://helpx.adobe.com/jp/acrobat/kb/cpsid_90899.html)
 - [Adobe Reader X の検索窓で Google IME が動作しない理由](http://togetter.com/li/115406)
 
-### 64-bit Windows で PDF ファイルのサムネールが表示されない → [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールする {#i8f95878}
+### 64-bit Windows で PDF ファイルのサムネールが表示されない {#i8f95878}
+
+[PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542) と [Adobe_Reader_x64_fixes_v3_001_installer.zip](http://www.pretentiousname.com/adobe_pdf_x64_fix/) をインストールします．
 
 - [PDF iFilter 64](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
 - [ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/](ftp://ftp.adobe.com/pub/adobe/acrobat/win/11.x/)
@@ -158,8 +138,8 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](
 
 ## Adobe Reader をコマンドラインから操作する方法 (Windows) {#f9d733e4}
 
-TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを Adobe Reader で開くことができます．<br>
-pdfopen を使用する場合 PDF ファイルは Adobe Reader に関連付けしておく必要があります．<br>
+TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを Adobe Reader で開くことができます．
+なお，PDF ファイルは Adobe Reader に関連付けしておく必要があります．
 
 ### PDF ファイルを開く {#id6d0918}
 
@@ -305,5 +285,3 @@ synctex help edit
 - [Acrobatのロックを回避する](http://d.hatena.ne.jp/abenori/20121223)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
-
-[^1]: ツールパネルウィンドウを表示
