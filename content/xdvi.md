@@ -213,11 +213,14 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです．
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.sourceforge.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - SourceForge.JP](http://sourceforge.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
+- [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
 
 ### ChangeLog {#y0777637}
 
 - [https://github.com/norbusan/tlptexlive-root/commits/master](https://github.com/norbusan/tlptexlive-root/commits/master)
 - [https://github.com/norbusan/build-tlptexlive/commits/master](https://github.com/norbusan/build-tlptexlive/commits/master)
+- [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/)
+    - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
