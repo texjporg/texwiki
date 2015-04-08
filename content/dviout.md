@@ -140,7 +140,7 @@ PDF または SVG に変換して PDF・SVG ビューアで表示・印刷する
 ### [media9](/media9/) {#h55cad77}
 
 dviout は [media9](/media9/) に対応していません．
-PDF に変換して [Adobe Reader](</Adobe Reader/>) で表示するといいでしょう。
+PDF に変換して Adobe Acrobat Reader DC で表示するといいでしょう。
 
 ### [OTF](/OTF/) {#i25da0b5}
 
