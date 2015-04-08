@@ -38,11 +38,12 @@ X Window System
 ### ChangeLog {#p61511cc}
 
 - [SourceForge.net Repository - \[xdvi\] Contents of /xdvik/texk/xdvik/CHANGES](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/CHANGES?view=markup)
-
+- [http://sourceforge.net/p/xdvi/activity/](http://sourceforge.net/p/xdvi/activity/)
 - \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
     - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
+- [http://pkgsrc.se/print/tex-xdvi](http://pkgsrc.se/print/tex-xdvi)
 
 ### インストール {#jfa6e6ec}
 
