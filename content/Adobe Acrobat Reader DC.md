@@ -13,7 +13,7 @@ pukiwiki: "Adobe Acrobat Reader DC"
 
 Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈を追加したりするソフトウェアです．
 
-Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) を使用して，Adobe Acrobat Reader DC を使用するのは最終確認や印刷をする場合のみとするのがおすすめです．
+Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
 ***
 
@@ -74,8 +74,8 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
-TeX Live, W32TeX に含まれている pdfopen を使用して PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
-なお，PDF ファイルは Adobe Acrobat Reader DC に関連付けしておく必要があります．
+TeX Live, W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
+なお，事前に PDF ファイルを Adobe Acrobat Reader DC に関連付けしておく必要があります．
 
 ### PDF ファイルを開く {#id6d0918}
 
@@ -167,7 +167,7 @@ synctex help view
 
 ### inverse search {#f99c6c1f}
 
-[TeXstudio](/TeXstudio/) で PDF ファイルの 30 ページ目の x 座標 0, y 座標 0 に対応する TeX ファイルの該当する行にジャンプしたい場合は
+例えば [TeXstudio](/TeXstudio/) で PDF ファイルの 30 ページ目の x 座標 0, y 座標 0 に対応する TeX ファイルの該当する行にジャンプしたい場合は
 
 ```
 synctex edit -o "30:0:0:hoge.pdf" -x "texstudio -line %{line} '%{input}'"
