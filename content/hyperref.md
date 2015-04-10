@@ -1093,6 +1093,7 @@ abc
 - [HyperTeX](/HyperTeX/)
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
 - [bst fileでhyperrefを入れる方法](http://warubobo13.hatenablog.jp/entry/2013/02/03/074303)
+- [hyperref利用時の2つの注意点](http://0-chromosome.hatenablog.jp/entry/2015/04/10/175912)
 
 ***
 
