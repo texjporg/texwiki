@@ -980,3 +980,5 @@ dvipdfmx には<em>出力結果が PDF/X 準拠かどうか検証したり、準
 - [LCDF TypetoolsでOpenTypeフォントを使う（DVIPDFMXで）](http://dev.activebasic.com/egtra/2012/12/18/522/)
 - [The DVIPDFMx Project](http://project.ktug.org/dvipdfmx/)
 - [DVI specials for PDF generation](http://project.ktug.org/dvipdfmx/doc/tb94cho.pdf) (PDF)
+- [EPS の負座標が欠ける問題](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8840)
+- [dvipdfm(x)にはご注意を](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&log=5586)
