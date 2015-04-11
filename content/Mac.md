@@ -136,8 +136,6 @@ TeX Live のインストールに関しては
         - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)からインストールした場合など、別途 Ghostscript をインストールして使用する場合は、そのために改めてパスを通す必要があるかもしれません。
         - 以前に MacPorts または Fink からインストールした TeX が残っている場合は、パスの優先順位の再設定が必要です。（→[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
 1. ターミナル上で sudo tlmgr update --self --all または [tlmgr](/tlmgr/) の GUI アプリケーションである [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](/Mac/#p3c663c9)）
-1. MacTeX-2015 の場合は texmf.cnf に extractbb が追加されているので texmf.cnf を編集する必要はありません。MacTeX-2014 の場合は texmf.cnf を編集して、利便性を高める設定をします。 (→[texmf.cnf への extractbb などの追加](/Mac/#h357d047))
-    - texmf.cnf の shell_escape_commands のリストに extractbb を加えることで、dvipdfmx 用の Bounding Box を作成するコマンド extractbb の実行を自動化できます。
 1. 日本語環境を整えます。
     - ヒラギノフォントを TeX でも利用可能にします。（→[日本語環境の整備](/Mac/#i9febc9b)）
         - 以前の TeX Live で既に設定済みの場合は、この手順は不要です。
@@ -379,53 +377,6 @@ $ sudo tlmgr update --self --all
 &#x2d;-self は tlmgr 自体のアップデート、--all は TeX Live 構成要素のアップデートを実行します。<br>
 tlmgr は複数のリポジトリを管理できます。<br>
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。<br>
-
-### texmf.cnf への extractbb の追加 {#h357d047}
-
-MacTeX-2015 の場合は [texmf.cnf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/web2c/texmf.cnf?view=markup) に extractbb が追加されているので texmf.cnf を編集する必要はありません．
-
-MacTeX-2014, TeX Live 2014 の場合は利便性を高めるため、コンパイル時の自動実行を許可するコマンドを texmf.cnf に追加設定します．
-
-注意
-: &nbsp;
-
-: 無制限にコマンドを追加すると<strong>セキュリティ上、危険なことがあります</strong>。~
-
-悪意ある実行ファイルを自動実行させることがないよう、下に示したもの以外を追加する場合は慎重の上にも慎重を期す必要があります．<br>
-
-たとえば texmf.cnf に extractbb を書き加えておくと、コンパイル時に自動実行されるようになりますので画像を含んだソースファイルをコンパイルするために「事前に extractbb を実行する」という作業が必要なくなります．<br>
-tlmgr を使用してアップデートすると /usr/local/texlive/2014/texmf-dist/web2c/texmf.cnf が上書きされる可能性があるのでオリジナルの texmf.cnf を直接編集するのではなく、TEXMFLOCAL の texmf.cnf に設定を記入します。<br>
-TEXMFLOCAL の値を確認します．<br>
-
-```
-$ kpsewhich -var-value TEXMFLOCAL
-/usr/local/texlive/texmf-local
-```
-
-Mac に付属するテキストエディットで作成するとエラーとなりえますので、ターミナル上のエディタを使用するのが無難です．<br>
-以下では nano を使って編集しています．（texmf.cnf が存在しない場合は自動的に新規作成されます．）<br>
-
-```
-$ nano /usr/local/texlive/texmf-local/web2c/texmf.cnf 
-```
-
-として、以下を書き込み、保存（WriteOut）します．（保存できない場合は、いったん Exit して、改めて sudo nano として実行してください．）<br>
-
-```
-shell_escape_commands = \
-bibtex,bibtex8,\
-extractbb,\
-kpsewhich,\
-makeindex,\
-mpost,\
-repstopdf,\
-```
-
-mktexlsr を実行します．<br>
-
-```
-$ sudo mktexlsr
-```
 
 ### 日本語環境の整備 {#i9febc9b}
 
