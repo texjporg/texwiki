@@ -72,6 +72,13 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 - [FAQ &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/faq.html)
 
+## 環境設定 {#j7b6be9a}
+
+### 使用状況に関する情報 {#jd9c4023}
+
+初期設定では Adobe Acrobat Reader DC の使用方法に関する情報をアドビと共有します．
+この機能を OFF にしたい場合は \[編集(E)\]-\[環境設定(N)...\] から使用状況に関する情報を選択して「はい、Adobe Acrobat Reader DC の使用方法に関する情報を匿名で共有します」のチェックをはずします．
+
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
 TeX Live, W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
