@@ -554,7 +554,7 @@ dvips -Pdl -u+standard-ps.map dviname (Ryumin-Light, GothicBBB-Medium のみ)
 dvips -Pdl -u+standard04-ps.map dviname (Ryumin-Light, GothicBBB-Medium のみ, JIS2004字形)
 ```
 
-結果の PS は Distiller で処理できます。 Ghostscript を使う場合は、
+結果の PS は Ghostscript で処理できます。
 
 ```
 ps2otfps old.ps new.ps
