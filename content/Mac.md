@@ -30,10 +30,12 @@ pukiwiki: "Mac"
 - [ftp://tug.org/historic/systems/mactex/](ftp://tug.org/historic/systems/mactex/)
 - [http://sourceforge.net/projects/mactextoolbox/](http://sourceforge.net/projects/mactextoolbox/)
 - [http://qiita.com/tags/mactex](http://qiita.com/tags/mactex)
+- [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 - [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
 - MacWiki:リスト/TeX
 - [MacTeXにおける実行ファイルの場所](http://d.hatena.ne.jp/seinzumtode/20141001/1412154972)
+- [BlueSkyTex](http://blueskytex.com/)
 
 MacTeX は [TeX Live](</TeX Live/>) をベースにした OS X 専用の TeX ディストリビューションです．<br>
 MacTeX, [TeX Live](</TeX Live/>) はサイズが大きいのでミラーサイトを利用してください．<br>
@@ -42,11 +44,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 > 奥村先生の[［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)には TeX Live 2013 が収録されています．<br>
 > インストールディレクトリなどは変更されており、インターネットから直接インストールする MacTeX, TeX Live とは異なっています．<br>
-
-### OS X Yosemite 関連 {#lf4fc119}
-
-- [TeX on Yosemite](http://tug.org/mactex/yosemite.html)
-- [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 
 ### リリース情報 {#c5157a75}
 
@@ -158,10 +155,10 @@ TeX Live のインストールに関しては
 
 ***
 
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2014 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2015 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>“Macintosh HD”に標準インストール</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に 4.62 GB の領域が必要です。<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に ?.?? GB の領域が必要です。<br>
 　　<span style="color:#555555;">●</span> <strong>はじめに</strong><br>
 
 <br>
@@ -200,19 +197,17 @@ TeX Live のインストールに関しては
 
 ***
 
-インストールするパッケージを選択して \[インストール\] をクリックします．<br>
-MacTeX-2014 に収録されている Ghostscript 9.10 は古いので [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版の Ghostscript をダウンロードします．<br>
-Homebrew または MacPorts で Ghostscript をインストールする場合はチェックをはずします．<br>
+インストールするパッケージを選択して \[インストール\] をクリックします．
 
 ***
 
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2014 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2015 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>“Macintosh HD”にカスタムインストール</strong><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　パッケージ名　　　　　　　　　　｜場所　　　　　　　　　　　　｜アクション　　　｜　　サイズ　｜<br>
-　　<span style="color:#555555;">●</span> <strong>はじめに</strong>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> TeXLive-2014<br>
+　　<span style="color:#555555;">●</span> <strong>はじめに</strong>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> TeXLive-2015<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#0F7FFF;">☑</span> GUI-Applications<br>
-　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> Ghostscript-9.10<span style="color:black;background-color:yellow;"> ← MacTeX-2014 に収録されている Ghostscript 9.10 は古いので [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版の Ghostscript をダウンロードします．Homebrew または MacPorts で Ghostscript をインストールする場合はチェックをはずします．</span><br>
+　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> Ghostscript-9.16<span style="color:black;background-color:yellow;"> ← MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください．Homebrew または MacPorts で Ghostscript をインストールする場合はチェックをはずします．</span><br>
 
 <br>
 
@@ -252,15 +247,15 @@ Homebrew または MacPorts で Ghostscript をインストールする場合は
 
 ***
 
-MacTeX-2014 には以下のパッケージが収録されています．
+MacTeX-2015 には以下のパッケージが収録されています．
 
-- TeXLive-2014
+- TeXLive-2015
 
 > TeX Live 本体です。<br>
 
 - GUI-Applications
 
-> インストールすることでアプリケーションフォルダに TeX フォルダが作成されます．<br>
+> インストールするとアプリケーションフォルダに TeX フォルダが作成されます．<br>
 > READ ME FIRST.pdf、What Is Installed.pdf、Eps-Tiff-Conversion.pdf などの書類もインストールされます．<br>
 > GUI Applications には以下のアプリケーションが収録されています．<br>
 > アプリケーションフォルダの中の TeX フォルダに収められています．<br>
@@ -288,21 +283,21 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 > OS X 専用の TeX 統合環境．<br>
 > メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします．<br>
-> アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，<br>
+> アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして<br>
 > アプリケーションフォルダ内の TeXShop.app を置き換えてください。<br>
 > 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください．<br>
 
-- Ghostscript-9.10
+- Ghostscript-9.16
 
-> Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください．<br>
-> MacTeX-2014 に収録されている Ghostscript 9.10 は古いので [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版の Ghostscript をダウンロードしてください．<br>
+> MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください．<br>
 > MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます． (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))<br>
+> Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください．<br>
 
 ### インストールディレクトリ {#laf8fccf}
 
 > <table><tbody>
-> <tr><td></td><td>MacTeX-2014</td><td style="text-align:right"><a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">［改訂第6版］LaTeX2e美文書作成入門</a></td></tr>
-> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2014</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2013</td></tr>
+> <tr><td></td><td>MacTeX-2015</td><td style="text-align:right"><a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">［改訂第6版］LaTeX2e美文書作成入門</a></td></tr>
+> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2015</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2013</td></tr>
 > <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/</td></tr>
 > <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/</td></tr>
 > </tbody></table>
@@ -310,7 +305,7 @@ MacTeX-2014 には以下のパッケージが収録されています．
 
 #### 基本システムのインストール場所 {#ffbf8218}
 
-- MacTeX-2014 に収録されている TeXLive-2014 は、デフォルトでは /usr/local/texlive/2014 以下にインストールされます。
+- MacTeX-2015 に収録されている TeXLive-2015 は、デフォルトでは /usr/local/texlive/2015 以下にインストールされます。
 - [［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)からインストールすると、デフォルトではアプリケーションフォルダにインストールされます。
 
 #### TEXMFLOCAL {#d2b2c9d5}
@@ -318,13 +313,13 @@ MacTeX-2014 には以下のパッケージが収録されています．
 - TEXMFLOCAL とは、MacTeX/TeX Live 本体のアップデートに影響を受けないディレクトリで、そのコンピュータのユーザー全員に共通の設定を保存します。<br>
     <strong>自分でスタイルファイル（.sty）やフォントなどを追加するときは，この TEXMFLOCAL または下記の TEXMFHOME 以下に置きます。</strong>
 
-- MacTeX-2014 に収録されている TeXLive-2014 による TEXMFLOCAL は /usr/local/texlive/texmf-local で、以前に作成されていない場合に新たに作成されます。
+- MacTeX-2015 に収録されている TeXLive-2015 による TEXMFLOCAL は /usr/local/texlive/texmf-local で、以前に作成されていない場合に新たに作成されます。
 - [［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)からのインストールでは、TEXMFLOCAL はユーザのホームフォルダの一つ上の階層「ユーザ」の中の「共有」フォルダに作成されます。
 
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
-- MacTeX-2014 に収録されている TeXLive-2014 では、初期設定ではホームのライブラリ以下に収めます。
+- MacTeX-2015 に収録されている TeXLive-2015 では、初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)からのインストールでは、TEXMFHOME はユーザのホームフォルダに作成されます。
 
 #### その他 {#w4248b01}
@@ -339,15 +334,14 @@ MacTeX-2014 には以下のパッケージが収録されています．
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため、/usr/local/texlive 以下の設定よりも優先されます。<br>また、mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
-> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2014/texmf-config</td></tr>
-> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2014/texmf-var</td></tr>
+> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2015/texmf-config</td></tr>
+> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2015/texmf-var</td></tr>
 > <tr><td>TEXMFHOME</td><td>~/Library/texmf</td></tr>
 > </tbody></table>
 >
 
-- 問題が発生した場合は TeX Live 2013 などの以前にインストールしていた古い TeX 環境に切り替えて使用することもできます．<br>
+- 最新版の TeX Live で問題が発生した場合は以前にインストールしていた古い TeX Live に切り替えて使用することもできます．<br>
     「システム環境設定」の TeX Distribution で変更できます．<br>
-    - システム環境設定の TeX Distribution でエラーが発生する場合は [http://sourceforge.net/projects/mactextoolbox/files/TeXDist/](http://sourceforge.net/projects/mactextoolbox/files/TeXDist/) から最新版をダウンロードして使用します．<br>
 
 ***
 
@@ -358,14 +352,14 @@ MacTeX-2014 には以下のパッケージが収録されています．
 <br>
 
 　　　　　　　　　　　　　　　　　　<strong>Choose a system wide TeX distribution:</strong><br>
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DDDDDD;">　<span style="color:White;background-color:#0F7FFF;">🔘</span>[^1] TeXLive-2014　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">　◯　　TeXLive-2013　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DDDDDD;">　<span style="color:White;background-color:#0F7FFF;">🔘</span>[^1] TeXLive-2015　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
+　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">　◯　　TeXLive-2014　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
 
 <br>
 
 <br>
 
-　　　　　　　　　　　　<span style="color:Gray;">V 271</span>　　　Full TeX Live 2014 Distribution.　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins><strong>？</strong></ins>)</span><br>
+　　　　　　　　　　　　<span style="color:Gray;">V 271</span>　　　Full TeX Live 2015 Distribution.　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins><strong>？</strong></ins>)</span><br>
 　　　　　　　　　　　　　　　　　　 See [The MacTeX Distribution.](http://tug.org/mactex/)<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　texdistmgr　 \]</ins></span>
 
