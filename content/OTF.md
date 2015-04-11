@@ -304,7 +304,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 #### Microsoft Windows の場合 {#p413a15f}
 
-とりあえず　$TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成します。
+$TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成して必要があれば mktexlsr を実行します。
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
@@ -348,8 +348,7 @@ OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC で
 
 #### OS X の場合 {#c2475144}
 
-Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
-ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下からシンボリックリンクします。
+$TEXMFLOCAL/fonts/opentype// ディレクトリ以下に Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のあるディレクトリをシンボリックリンクして mktexlsr を実行します。
 
 次のようにして処理します。
 
