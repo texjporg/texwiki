@@ -81,7 +81,7 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
-TeX Live, W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
+TeX Live 2015 以降, W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
 なお，事前に PDF ファイルを Adobe Acrobat Reader DC に関連付けしておく必要があります．
 
 ### PDF ファイルを開く {#id6d0918}
