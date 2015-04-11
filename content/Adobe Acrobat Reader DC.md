@@ -9,8 +9,6 @@ pukiwiki: "Adobe Acrobat Reader DC"
 
 ## [Adobe Acrobat Reader DC](http://acrobat.adobe.com/jp/ja/products/pdf-reader.html) {#k3c2311c}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/1/1a/Adobe_Reader_XI_icon.png" alt="Adobe Acrobat Reader DC" style="float:right">
-
 Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈を追加したりするソフトウェアです．
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
@@ -220,3 +218,6 @@ synctex help edit
 - [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
+- [Acrobat最新ニュース速報 - 日本のニュース](http://www.jp01.net/tag-Acrobat.html)
+- \[[研究\] Adobe Acrobat Reader DC v2015 繁體中文版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-reader-dc-v2015.html)
+- \[[研究\] Adobe Acrobat Pro DC v2015 30天試用版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-pro-dc-v2015-30.html)
