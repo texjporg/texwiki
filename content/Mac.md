@@ -502,7 +502,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 - [MacTeX のダウンロードとインストール](http://medemanabu.net/latex/mactex-download-install/), [Mac Yosemite - Ghostscript 9.15 のインストール](http://medemanabu.net/latex/mac-os-x-yosemite-ghostscript-9-15-package-install/)
 - \[[Yosemite\]MacTeXのインストール](http://www.aruneko.net/archives/1285)
 - [MacTeX 2014 を再インストールしたときの覚書](http://pt-diary.tumblr.com/post/107214765605/20150105-mactex)
-- [2014年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2014/)
+- [2015年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2015/)
 - [Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
 - [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
 - [OS X+Homebrew+zshでMacTeXをインストール](http://qiita.com/enokawa/items/3e12c419ca6ded097e0f)
