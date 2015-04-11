@@ -37,6 +37,10 @@ KDE
 
 - [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
 
+### 派生版 {#m771d62f}
+
+- [okular-backend-mupdf](https://github.com/xylosper/okular-backend-mupdf)
+
 ## ダウンロード/インストール {#xecad964}
 
 ### Windows {#h8e4fcbd}
