@@ -376,8 +376,7 @@ U-PRESS用の文字を含む23,058グリフの文字セットです。
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader DC 日本語版または Adobe Acrobat Reader DC に用いるアジア・拡張言語フォントパックに含まれているので
 Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用できます。
-Microsoft Windows 版の Adobe Acrobat Reader DC に
-対する[アジア・拡張言語フォントパック](ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/)には
+アジア・拡張言語フォントパックには
 
 - KozMinPr6N-Regular.otf ［Adobe-Japan1-6 対応の日本語明朝体フォント］
 - KozGoPr6N-Medium.otf ［Adobe-Japan1-6 対応の日本語ゴシック体フォント］
