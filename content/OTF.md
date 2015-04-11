@@ -10,7 +10,7 @@ pukiwiki: "OTF"
 ## OTF パッケージ {#l22413ec}
 
 [OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，Adobe-Japan1-6 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
-ここでは OTF パッケージを Microsoft Windows，UNIX （OS X，Solaris など），UNIX 互換 OS （Linux，BSD など）で使う方法を説明します。
+ここでは OTF パッケージを Microsoft Windows と OS X で使う方法を説明します。
 
 <strong>目次</strong>
 
@@ -93,7 +93,7 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 [Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download),
 [Adobe-Korea1-2](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_korean1-2.tar.z/download) を取得できます。
 
-## pLaTeX 以外でも OTF のコマンドを使いたい場合 {#fd82fe9a}
+## upLaTeX, pLaTeX 以外でも OTF のコマンドを使いたい場合 {#fd82fe9a}
 
 \CID や \UTF を使いたい場合は，次のパッケージを使います．
 
@@ -140,7 +140,7 @@ Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパッ�
 ```
 
 ```
-\CID{7652}飾区の\CID{13706}野屋
+\CID{7652}飾区の\CID{13706}野家
 ```
 
 ```
@@ -193,13 +193,7 @@ start hoge.pdf
 open hoge.pdf
 ```
 
-- Linux の場合
-
-```
-xdg-open hoge.pdf
-```
-
-PDF ファイルが Adobe Acrobat Reader DC に関連付けされている場合は hoge.pdf が Adobe Reader で表示されると思います。
+PDF ファイルが Adobe Acrobat Reader DC に関連付けされている場合は hoge.pdf が Adobe Acrobat Reader DC で表示されると思います。
 
 upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．
 ただし upLaTeX の場合に
@@ -235,7 +229,7 @@ Tried to set a nonexistent character in a virtual font
 ```
 
 ```
-葛飾区の𠮷野屋
+葛飾区の𠮷野家
 ```
 
 ```
@@ -352,9 +346,9 @@ OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC で
 上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
 [TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
-#### UNIX 互換 OS の場合 {#c2475144}
+#### OS X の場合 {#c2475144}
 
-とりあえず Windows 版 Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
+Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のある
 ディレクトリを $TEXMFLOCAL/fonts/opentype// ディレクトリ以下からシンボリックリンクします。
 
 次のようにして処理します。
