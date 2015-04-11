@@ -9,17 +9,11 @@ pukiwiki: "Mac"
 
 ## [OS X](http://www.apple.com/jp/osx/) (Mac) での TeX の利用 {#ed089b3d}
 
-<img src="http://upload.wikimedia.org/wikipedia/de/1/13/Yosemite_x.png" alt="OS X" width="220" height="220" style="float:right">
-
 ***
 
 ***
 
 ## [MacTeX](http://tug.org/mactex/) &amp; [TeX Live](</TeX Live/>) <a id="mactex"></a><a id="texlive"></a> {#f5466652}
-
-<img src="http://tug.org/mactex/2012/images/mactexlogoX5.png" alt="MacTeX" style="float:right">
-
-[![MacTeX](http://tug.org/twg/mactex/images/mactex_screensaver.jpg)](http://tug.org/mactex/)
 
 - [MacTeX - TeX Users Group](http://tug.org/mactex/)
 - [MacTeX Technical Working Group](http://www.tug.org/twg/mactex/)
@@ -148,103 +142,9 @@ TeX Live のインストールに関しては
 
 ### MacTeX のインストール {#teb97a16}
 
-[ミラーサイト (MacTeX)](/Mac/#od3c0b75) から MacTeX.pkg をダウンロードしてダブルクリックします．<br>
-インストールの種類で \[カスタマイズ\] をクリックします。<br>
-
-***
-
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2015 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>“Macintosh HD”に標準インストール</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 この操作には、コンピュータ上に ?.?? GB の領域が必要です。<br>
-　　<span style="color:#555555;">●</span> <strong>はじめに</strong><br>
-
-<br>
-
-　　<span style="color:#555555;">●</span> <strong>大切な情報</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　このコンピュータのすべてのユーザが使用できるようにこのソフ<br>
-　　<span style="color:#555555;">●</span> <strong>使用許諾契約</strong>　　　　　　　　　　　　　　　　　　　　　　　トウェアを標準インストールするには、“インストール”をクリッ<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　クしてください。このコンピュータのすべてのユーザがこのソフ<br>
-　　<span style="color:#555555;">●</span> <strong>インストール先</strong>　　　　　　　　　　　　　　　　　　　　　　　トウェアを使用出来るようになります。<br>
-
-<br>
-
-　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong><br>
-
-<br>
-
-　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>インストール</strong></span><br>
-
-<br>
-
-　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>概要</strong></span><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#0F7FFF;"><ins><span style="color:#0F7FFF;">\[</span> 　カスタマイズ　 <span style="color:#0F7FFF;">\]</span></ins></span><span style="color:black;background-color:yellow;"> ← \[カスタマイズ\] をクリック</span>　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　インストール　 \]</ins></span><br>
-
-***
-
+[ミラーサイト (MacTeX)](/Mac/#od3c0b75) から MacTeX.pkg をダウンロードしてダブルクリックします．
+インストールの種類で \[カスタマイズ\] をクリックします。
 インストールするパッケージを選択して \[インストール\] をクリックします．
-
-***
-
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#00DD00;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>MacTeX-2015 のインストール</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>“Macintosh HD”にカスタムインストール</strong><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　パッケージ名　　　　　　　　　　｜場所　　　　　　　　　　　　｜アクション　　　｜　　サイズ　｜<br>
-　　<span style="color:#555555;">●</span> <strong>はじめに</strong>　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> TeXLive-2015<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#0F7FFF;">☑</span> GUI-Applications<br>
-　　<span style="color:#555555;">●</span> <strong>大切な情報</strong>　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:White;background-color:#0F7FFF;">☑</span> Ghostscript-9.16<span style="color:black;background-color:yellow;"> ← MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください．Homebrew または MacPorts で Ghostscript をインストールする場合はチェックをはずします．</span><br>
-
-<br>
-
-　　<span style="color:#555555;">●</span> <strong>使用許諾契約</strong><br>
-
-<br>
-
-　　<span style="color:#555555;">●</span> <strong>インストール先</strong><br>
-
-<br>
-
-　　<span style="color:#0F7FFF;">●</span> <strong>インストールの種類</strong><br>
-
-<br>
-
-　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>インストール</strong></span><br>
-
-<br>
-
-　　<span style="color:Gray;">●</span> <span style="color:Gray;"><strong>概要</strong></span><br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　標準インストール　 \]</ins></span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　戻る　 \]</ins></span>　 <span style="color:White;background-color:#0F7FFF;"><ins><span style="color:#0F7FFF;">\[</span> 　インストール　 <span style="color:#0F7FFF;">\]</span></ins></span><span style="color:black;background-color:yellow;"> ← インストールするパッケージを選択して \[インストール\] をクリック</span><br>
-
-***
-
 MacTeX-2015 には以下のパッケージが収録されています．
 
 - TeXLive-2015
@@ -340,28 +240,6 @@ MacTeX-2015 には以下のパッケージが収録されています．
 
 - 最新版の TeX Live で問題が発生した場合は以前にインストールしていた古い TeX Live に切り替えて使用することもできます．<br>
     「システム環境設定」の TeX Distribution で変更できます．<br>
-
-***
-
-<span style="color:#595857;background-color:#DFDFDF;">　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#C9C9C9;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　<strong>TeX Distribution</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:Black;background-color:#EEEEEE;"></ins>\[ ◀ \]<ins></span><span style="color:Gray;background-color:#EEEEEE;"></ins>\[ ▶ \]<ins></span>　<span style="color:Black;background-color:#EEEEEE;"></ins>\[　すべてを表示　\]<ins></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">\[</ins>&#x1f50d;　　　　　　　　　　　　　<ins>\]</span> 　</ins></span><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　<strong>Choose a system wide TeX distribution:</strong><br>
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DDDDDD;">　<span style="color:White;background-color:#0F7FFF;">🔘</span>[^1] TeXLive-2015　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
-　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">　◯　　TeXLive-2014　　　　　　　　　　　　Intel 64　　　　<span style="color:White;background-color:#0F7FFF;">\[ <strong>⇕</strong> \]</span></span><br>
-
-<br>
-
-<br>
-
-　　　　　　　　　　　　<span style="color:Gray;">V 271</span>　　　Full TeX Live 2015 Distribution.　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;">(<ins><strong>？</strong></ins>)</span><br>
-　　　　　　　　　　　　　　　　　　 See [The MacTeX Distribution.](http://tug.org/mactex/)<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#FAFAFA;"><ins>\[ 　texdistmgr　 \]</ins></span>
-
-***
 
 - 「システム環境設定」の TeX Distribution を開き，ディストリビューション名をダブルクリックすると，よくアクセスするであろうフォルダ（ディレクトリ）へのエイリアス（ソフトリンク）がまとめられています。<br>
     AllTexmf (texmf, texmf-dist, texmf-local, texmf-var), Doc, Info, Man, Programs, Resources, Root, TexmfLocal, TexmfSysVar
@@ -460,7 +338,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
     tlmgr は updmap-sys を内部で呼びだしますが、後述の kanji-config-updmap は -sys なしで使用すると updmap を内部で呼びだして実行します。<br>
     <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は、-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
 
-- updmap-sys は TEXMFLOCAL を検索対象とはしますが、TEXMFHOME は検索しませんので、フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [About Shell Escape and Installing Fonts in 2012, 2013 and 2014](http://tug.org/mactex/TeXLive2012+Changes.pdf) を参照)<br>
+- updmap-sys は TEXMFLOCAL を検索対象とはしますが、TEXMFHOME は検索しませんので、フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+](http://tug.org/mactex/TeXLive2012+Changes.pdf) を参照)<br>
     TEXMFHOME にフォントを置く場合は、updmap（-sys なし）を実行する必要があります。<br>
     - 埋め込むフォントを細かく制御したい場合は、手動で map ファイルを書き換えます。
 
@@ -662,20 +540,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーションでバックスラッシュが入力できない場合は Karabiner で Backslash が優先されるようにキーバインドを変更してください．<br>
 
-***
-
-<span style="color:#595857;background-color:#DFDFDF;"><ins>　<span style="color:#FF0000;background-color:#DFDFDF;">●</span> <span style="color:#FFD700;background-color:#DFDFDF;">●</span> <span style="color:#C9C9C9;background-color:#DFDFDF;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Karabiner</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　　<ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>Change Key</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>Key Repeat</strong>　\]\[　<strong>Status Message</strong>　\]\[　<strong>MenuBar</strong>　\]\[　<strong>AXNotifier</strong>　\]\[　<strong>Misc &amp; Uninstall</strong>　\]</span></ins><br>
-　　　　<span style="color:Black;background-color:#FAFAFA;">\[<ins>&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　</ins>\]</span>　　☐ Show enabled only (1 item)　　　　　　　<ins>\[ <strong>↻</strong> ReloadXML \]</ins><br>
-　　　　remapping<br>
-　　　　<span style="color:#595857;">▼</span>For Japanese<br>
-　　　　　　<span style="color:#595857;">▼</span>Change Yen(￥) Key<br>
-　　　　　　　　　<span style="color:White;background-color:#0F7FFF;">☑</span> JIS Yen(￥) to Backslash(＼)<br>
-　　　　　　　　　　　　(except virtual machine, X11, RDC)<br>
-
-***
-
 #### OS X, Windows, Linux {#k3982a05}
 
 - [LyX](/LyX/)
@@ -747,5 +611,3 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
 - MacWiki:スペルチェック
 - [cocoAspell](http://cocoaspell.leuski.net/)
 - [Excalibur](http://excalibur.sourceforge.net/)
-
-[^1]: Check a radio button to choose a system wide TeX distribution or select a distribution to see its description. Double-click to see the distribution. Alt, double click to see the whole distribution.
