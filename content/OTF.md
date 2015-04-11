@@ -296,7 +296,7 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 ### フォントを埋め込むには {#hf05d89a}
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。
-実際，上のファイルを upLaTeX (ptex2pdf) で処理して，SumatraPDF と TeXworks で開いた場合に
+実際，上のファイルを upLaTeX (ptex2pdf) で処理して，SumatraPDF と Windows 版の TeXworks の公式ビルドと Windows 版の TeXstudio の公式ビルドで開いた場合に
 𠮷 (U+20BB7) の字が表示されませんでした。
 
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
