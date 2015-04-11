@@ -198,19 +198,13 @@ synctex help edit
 - [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
 - [DDE通信を使用してPDFファイルを印刷する](http://www.knowledge-base.jp/2010/02/06/pdf-7/)
 - [Acrobat XIで保存したPDFファイルはTeXworksで使えない。](http://kilin.clas.kitasato-u.ac.jp/wordpress/?p=18487)
-- [Adobe Reader XI のアップデーター設定](http://golorih.exblog.jp/19041373/)
-- [Windows 2000 に Adobe Reader XI を入れてみたよ](http://blog.livedoor.jp/blackwingcat/archives/1719451.html)
+- [【悲報（？）】魔改造版Win2000でAdobe Reader DCが動作することが判明](http://blog.livedoor.jp/blackwingcat/archives/1898824.html)
 - [黒翼猫/「Adobe Reader」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=BlackWingCat&word=Adobe+Reader)
 - [スプールが終わるまでAdobeReaderを閉じる処理を待ちたいのですが、50ページ以上とかページ数が多いと、スプールが終わる前にAdobeReaderを閉じてしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421469214)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
 - [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
     - [Acrobat Interapplication Communication](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat10_SDK_HTMLHelp&file=Acro_Interapp_Commun_SectionPage.98.1.html)
-        <!-- -[[Acrobat and PDF Library API Reference:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/]] -->
-        <!-- - -[[AV_Layer:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/package-detail.html]] -->
-        <!-- - --[[AVDoc:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVDoc.html]] -->
-        <!-- - --[[AVPageView:http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/API_References/Acrobat_API_Reference/AV_Layer/AVPageView.html]] -->
-
 - [http://www.adobe.com/devnet/acrobat/interapplication_communication.html](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
 - [http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html](http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html)
 - [MFCを利用しないプロジェクトからのIACの使用](http://kb2.adobe.com/jp/cps/510/510052.html)
@@ -224,6 +218,5 @@ synctex help edit
 - [How can one open Adobe Reader with VBScript?](http://stackoverflow.com/questions/3298683/how-can-one-open-adobe-reader-with-vbscript)
 - [Adobe Reader XIを利用してPDFファイルのページ数を取得するVBAマクロ](http://www.ka-net.org/blog/?p=2337)
 - [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
-- [Acrobatのロックを回避する](http://d.hatena.ne.jp/abenori/20121223)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
