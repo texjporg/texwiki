@@ -9,15 +9,17 @@ pukiwiki: "Okular"
 
 ## [Okular](https://okular.kde.org/) {#x3070edc}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/200px-KDE-graphics-viewer-document.svg.png" alt="Okular" style="float:right">
-
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Okular とは {#jde0a0e5}
-
-Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
+Okular は KDE に搭載されている，PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
+
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/200px-KDE-graphics-viewer-document.svg.png" alt="Okular" style="float:right">
+
+***
+
+***
+
+### 公式 Web サイト {#jde0a0e5}
 
 - [Okular](https://okular.kde.org/)
 
@@ -25,7 +27,7 @@ Okular は PDF, PS, DVI ファイルが表示可能なドキュメント・ビ�
 
 KDE
 
-### License {#qbc60c11}
+### ライセンス {#qbc60c11}
 
 [GPLv2](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
 
@@ -41,36 +43,15 @@ KDE
 
 - [okular-backend-mupdf](https://github.com/xylosper/okular-backend-mupdf)
 
-## ダウンロード/インストール {#xecad964}
+## インストール {#xecad964}
+
+### Linux {#c209770f}
+
+ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
 
 ### Windows {#h8e4fcbd}
 
-- [KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
-
-### Arch Linux {#c209770f}
-
-- [https://www.archlinux.org/packages/?name=kdegraphics-okular](https://www.archlinux.org/packages/?name=kdegraphics-okular)
-
-### Linux Mint {#d3c8be06}
-
-- [http://packages.ubuntu.com/ja/okular](http://packages.ubuntu.com/ja/okular)
-
-### Debian {#j00dbf39}
-
-- [https://packages.debian.org/ja/okular](https://packages.debian.org/ja/okular)
-
-### Fedora {#mf21deef}
-
-- [https://apps.fedoraproject.org/packages/okular](https://apps.fedoraproject.org/packages/okular)
-
-### openSUSE {#w345a41b}
-
-- [http://software.opensuse.org/package/okular](http://software.opensuse.org/package/okular)
-
-### Beyond Linux From Scratch {#zf4b2d67}
-
-- [http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html](http://www.linuxfromscratch.org/blfs/view/svn/kde/okular.html)
-- [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/kde/okular.html)
+[KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
 
 ## 代替フォントの設定 {#o2eb9a55}
 
@@ -84,10 +65,14 @@ KDE
 
 ```
 $ okular --help
-使用法: okular [Qt-オプション] [KDE-オプション] [オプション] [URL] 
+使用法: okular [Qt-オプション] [KDE-オプション] [オプション] [URL]
+```
 
+```
 Okular, 汎用文書ビューア
+```
 
+```
 一般的なオプション:
   --help                    オプションに関するヘルプを表示
   --help-qt                 Qt に特有なオプションを表示
@@ -97,14 +82,18 @@ Okular, 汎用文書ビューア
   -v, --version             バージョン情報を表示
   --license                 ライセンス情報を表示
   --                        オプションの最後
+```
 
+```
 オプション:
   -p, --page <number>       表示する文書のページ
   --presentation            文書をプレゼンテーションモードで開く
   --print                   Start with print dialog
   --unique                  1 つのインスタンスのみ許可
   --noraise                 Not raise window
+```
 
+```
 引数:
   URL                       開く文書。標準入力から読む場合は “-” を指定。
 ```
@@ -125,7 +114,7 @@ $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 
 \[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\]
 
-[TeXstudio](/TeXstudio/) の場合は
+例えば [TeXstudio](/TeXstudio/) の場合は
 エディタ の項目に
 
 エディタ
