@@ -10,8 +10,9 @@ pukiwiki: "dvipdfmx"
 
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
-dvipdfmx は DVI を PDF へ変換するソフトウェアです。
-元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり、dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) となっています。
+dvipdfmx は DVI を PDF へ変換するソフトウェアです．
+元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています．
 
 ***
 
@@ -996,7 +997,7 @@ dvipdfmx には<em>出力結果が PDF/X 準拠かどうか検証したり、準
 
 - [Unofficial LaTeX graphics drivers - 概要 \[Puszcza\]](http://puszcza.gnu.org.ua/projects/latexfmxdef)
 - [Newest &#39;dvipdfmx&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/dvipdfmx)
-- [Dvipdfmx - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?Dvipdfmx)
+- [dvipdfmx - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?dvipdfmx)
 - [「dvipdfmx」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=dvipdfmx)
 - [PXchfon パッケージ ～pLaTeX文書のフォントを簡単に変更～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxchfon.html)
 - [dvipdfmx : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvipdfmx)
