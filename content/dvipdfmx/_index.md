@@ -8,14 +8,18 @@ pukiwiki: "dvipdfmx"
 
 # dvipdfmx
 
-## [dvipdfmx/xdvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
+## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+dvipdfmx は DVI を PDF へ変換するソフトウェアです。
+元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり、dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) となっています。
 
-## dvipdfmx/xdvipdfmx とは {#ia9746cb}
+***
 
-dvipdfmx は Mark A. Wicks 氏によって開発された DVI-to-PDF 変換ソフトウェア、[dvipdfm](http://gaspra.kettering.edu/dvipdfm/) の拡張版で、xdvipdfmx は X&#x44;V ファイルを処理するための dvipdfmx の拡張版です。<br>
-dvipdfm の主な特徴は、
+***
+
+### 特徴 {#ia9746cb}
+
+元となった dvipdfm の主な特徴としては、[Dvipdfm User's Manual Version 0.12.4](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) では次が挙げられています。
 
 - アウトラインやアノーテーション (注釈機能) など Acrobat Distiller の pdfmark に対応した多くの機能を提供します。
 - HyperTeX (HTML)、TPIC、カラー、PSFile、その他 PostScript special など "標準的な" DVI special 機能を提供します。
@@ -29,8 +33,6 @@ dvipdfm の主な特徴は、
 - Acrobat 製品群では不完全な (dvipdfm マニュアルが書かれた当時) エンコーディングの問題に対処するために、フォントの再エンコーディングの機能を提供します。
 - ページとデスティネーション・ツリーに対する平衡木の利用により、巨大な文書における PDF ビューアのアクセスを高速化します。
 
-[Dvipdfm User's Manual Version 0.12.4](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) より
-
 dvipdfmx での主な変更・拡張は
 
 - OpenType/TrueType に対するより完全な対応、特に2バイトフォントとしての利用や縦組み用のグリフ置換機能を提供します。
@@ -42,13 +44,20 @@ dvipdfmx での主な変更・拡張は
 - Type1 フォントの CFF (Type1C) への変換や オブジェクト・ストリーム対応などファイル・サイズ削減のための様々な機能を提供します。
 - アルファ・チャンネルや埋め込み ICC プロファイル対応などの改善されたラスタ画像への対応。
 
-などです。<br>
+などです。
 
-[XeTeX, XeLaTeX](/XeTeX/) を -no-pdf オプションを指定しないで実行すると xdvipdfmx が自動的に実行されます．<br>
+### xdvipdfmx {#b22e1172}
+
+似たような名前のプログラムとして xdvipdfmx というものがあります．
+これは [XeTeX](/XeTeX/) が出力する X&#x44;V ファイルを処理するための dvipdfmx の拡張版です．
+通常は XeTeX の裏で自動的に呼ばれるので，意識する必要はありません．
+ただし，dvipdfmx と同様の不具合を生じる場合があるので，PDF がうまく出力できない場合は xdvipdfmx の不具合も疑って下さい．
+
+XeTeX であえて X&#x44;V ファイルを出力したい場合は -no-pdf オプションをつけます．
 
 ### ライセンス {#w1524716}
 
-[GPLv3, GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)<br>
+[GPLv3, GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)
 
 ### ChangeLog {#he60a3d0}
 
@@ -63,40 +72,42 @@ dvipdfmx での主な変更・拡張は
 
 ## 不具合 {#mb96765c}
 
-### dvipdfmx Version 20130624 で TikZ を使用した DVI ファイルを処理すると \*\* ERROR \*\* Invalid object type: 10 → TeX Live 2014 (dvipdfmx Version 20140317) 以降にアップグレード {#m3330a51}
+### dvipdfmx Version 20130624 でのみ起こる不具合 {#j774c931}
 
-TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では大丈夫です<br>
-TeX Live 2014 (→ [Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739) を参照) で修正されました<br>
+以下の不具合はいずれも TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では問題ない，Version 20130624 に特有のものです．
+最新のバージョンにアップデートして下さい．
+
+#### TikZ を使用した DVI ファイルを処理すると \*\* ERROR \*\* Invalid object type: 10 {#m3330a51}
+
+TeX Live 2014 ([Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739)) で修正されました．
 
 - \[[dvipdfmx\] tikz のパターン描画でエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081)
 
-### dvipdfmx Version 20130624 で しおりを作成するとジャンプできない → TeX Live 2014 (dvipdfmx Version 20140317) 以降にアップグレード {#x496f09a}
+#### hyperref で作成したリンクやしおりが機能しない {#x496f09a}
 
-TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) ではジャンプできます<br>
-TeX Live 2014 (→ [Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759) を参照) で修正されました<br>
+TeX Live 2014 ([Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759)) で修正されました．
 
 - [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1225)
 - [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
 
-### dvipdfmx Version 20130624 で PDF 変換した場合に A5 サイズ (148mm×210mm) で出力できない → TeX Live 2014 (dvipdfmx Version 20140317) 以降にアップグレード {#r12477d0}
+#### A5 サイズ (148mm×210mm) で出力できない {#r12477d0}
 
-TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では出力可能です<br>
-TeX Live 2014 (→ [Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398) を参照) で修正されました<br>
+TeX Live 2014 ([Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398)) で修正されました．
 
 - [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
 
-### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. → TeX Live 2013 (dvipdfmx-20130405) 以降にアップグレード {#z5173081}
+### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. {#z5173081}
 
-TeX Live 2013 (→ [Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787) を参照) で修正されました<br>
+TeX Live 2013 ([Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787)) で修正されました．
 
 - [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/56967.html)
 - [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=917)
 
-### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない → TeX Live 2013 (dvipdfmx-20130405) 以降にアップグレード {#za070e82}
+### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない {#za070e82}
 
-TeX Live 2013 (→ [Revision 27479](http://www.tug.org/svn/texlive?view=revision&revision=27479), [Revision 27480](http://www.tug.org/svn/texlive?view=revision&revision=27480) を参照) で修正されました<br>
+TeX Live 2013 ([Revision 27479](http://www.tug.org/svn/texlive?view=revision&revision=27479), [Revision 27480](http://www.tug.org/svn/texlive?view=revision&revision=27480)) で修正されました．
 
-dvipdfmx-20120420 (修正前) と xdvipdfmx-0.7.8 (修正前) と dvipdfm, version 0.13.3TL-j-p1d で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できません．<br>
+dvipdfmx-20120420, xdvipdfmx-0.7.8, dvipdfm, version 0.13.3TL-j-p1d では，[Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できません．
 
 ```
 \documentclass{article}
@@ -118,7 +129,7 @@ chass\'{}$\!\!\!$e du G\"{}$\!\!\!$obe
 \end{document}
 ```
 
-↑ Type1 フォントの合成済字形（←これが seac を使っている）でなくて、TeX 上の合成で事足りるのであれば、アクセント自動置換をごまかして TeX 上の合成を強制することにすればよいでしょう。([アクセント合成済文字を避ける](http://d.hatena.ne.jp/zrbabbler/20120609/1339257531) を参照)
+なお、Type1 フォントの合成済字形（これが seac を使っている）でなくて、TeX 上の合成で事足りるのであれば、アクセント自動置換をごまかして TeX 上の合成を強制することにすればよいでしょう。([アクセント合成済文字を避ける](http://d.hatena.ne.jp/zrbabbler/20120609/1339257531) を参照)
 
 ```
 \documentclass{article}
@@ -138,7 +149,9 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 ## 注意点 {#n8c7de22}
 
-### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される → map ファイルの UniJIS-UTF16-H を unicode に変更または \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加 {#n5909871}
+### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される {#n5909871}
+
+map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中に \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加することで解決できます．
 
 - [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
 - [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
@@ -146,15 +159,24 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 - [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
 - [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
 
-### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる → [pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259) を使用する {#he8e8e71}
+### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
+
+ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます。
 
 - [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
 
 ## 使い方 {#qabeb774}
 
-日本語のマニュアルはありません。
+変換したい DVI ファイル名を引数として与えると，デフォルトの設定で PDF ファイルへの変換が行われます．
 
-- [Dvipdfm マニュアル](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) (英語) をまず読んでください。
+```
+$ dvipdfmx hoge.dvi
+hoge.dvi -> hoge.pdf
+[1]
+14514 bytes written
+```
+
+なお，拡張子は省略できます．上の場合，単に hoge としても hoge.dvi が変換されます．
 
 なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが、フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう。特に最近の Windows (8.1) や Mac (OS X) では
 収録文字数が大幅に増え、また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう。フォントは PDF へ埋め込むことを基本としてください。非埋め込みで PDF を作成することは推奨されません。
@@ -237,61 +259,65 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
  バグ報告は電子メールで: tex-k@tug.org.
 ```
 
+### マニュアル {#da69bb5d}
+
+dvipdfmx には公式のマニュアルは存在しないようです．代わりに dvipdfm のマニュアルが参考になります．
+
+- [Dvipdfm User's Manual](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf)
+
 ### フォントの設定 {#tbddb566}
 
-フォントの設定は TeX 関連プログラムを使う際に大きな困難となる部分です。<br>
-TeX とその関連プログラムがどのようにフォントを取り扱うのか、あまり理解していない場合は各ディストリビューションのデフォルト設定に従うのが賢明です。<br>
-フォント管理ツール (updmap など) が利用可能であればそれを利用しましょう。<br>
+フォントの設定は TeX 関連プログラムを使う際に大きな困難となる部分です。
+TeX とその関連プログラムがどのようにフォントを取り扱うのか、あまり理解していない場合は各ディストリビューションのデフォルト設定に従うのが賢明です。
+フォント管理ツール（updmap など）が利用可能であればそれを利用しましょう。
 
-フォントの設定はマップファイルで行います。<br>
-マップファイルの役割は、TeX が認識するフォント名と実際に PDF 出力に使うべき実フォントとを対応付けることです。<br>
-このファイルの書式は<br>
+フォントの設定はマップファイルで行います。
+マップファイルの役割は、TeX が認識するフォント名と実際に PDF 出力に使うべき実フォントとを対応付けることです。
+このファイルの書式は
 
 ```
  tfm[@SFD@] enc font options
 ```
 
-のようになります。<br>
-ここで <em>tfm</em> は TeX において使われるフォント名、<em>enc</em> は使用すべきフォントのエンコーディング、<em>font</em> は PDF 出力に用いられる実フォント名（通常はファイル名）で <em> options</em> で様々なオプションを指定します。<br>
-\[@SFD@\] の項は CJK パッケージで用いられるフォントの分割方法の指定で、pLaTeX などでは通常不要です。<br>
+のようになります。
+ここで <em>tfm</em> は TeX において使われるフォント名、<em>enc</em> は使用すべきフォントのエンコーディング、<em>font</em> は PDF 出力に用いられる実フォント名（通常はファイル名）で <em> options</em> で様々なオプションを指定します。
+\[@SFD@\] の項は CJK パッケージで用いられるフォントの分割方法の指定で、pLaTeX などでは通常不要です。
 
-TeX Live や W32TeX をフルインストールすれば各 OS で利用可能なフォントのマップファイルは既にインストールされています。<br>
-TeX Live でフォントのマップファイルが存在しない場合は [jfontmaps パッケージ](http://www.ctan.org/pkg/jfontmaps) を導入します。<br>
-使用するマップファイルの切り替えには updmap プログラムを使います。<br>
-マップファイルが用意されていないフォントを使いたい場合は自分で用意しなければなりません。<br>
+TeX Live や W32TeX をフルインストールすれば各 OS で利用可能なフォントのマップファイルは既にインストールされています。
+TeX Live でフォントのマップファイルが存在しない場合は [jfontmaps パッケージ](http://www.ctan.org/pkg/jfontmaps) を導入します。
+使用するマップファイルの切り替えには updmap プログラムを使います。
+マップファイルが用意されていないフォントを使いたい場合は自分で用意しなければなりません。
 
-以下にマップファイルの書き方について簡単に解説します。<br>
+以下にマップファイルの書き方について簡単に解説します。
 
 #### TeX フォント名 {#ua7d8a2c}
 
-マップファイルの <em>tfm</em> のフィールドには TeX で使用されるフォント名、あるいは Virtual font から最終的に辿り着く TeX フォントがきます。<br>
-cmr10 や rml などです。<br>
-オプションとして @ SFD@ をつけることができます。<br>
-ここで SFD は SubFont Difinition 名です。<br>
-このオプションは <em>SFD</em> の規則に従い分割されたサブフォントを一つのフォントにまとめあげる (復元する) ときに指定します。<br>
+マップファイルの <em>tfm</em> のフィールドには TeX で使用されるフォント名、あるいは Virtual font から最終的に辿り着く TeX フォントがきます。
+cmr10 や rml などです。
+オプションとして @ SFD@ をつけることができます。
+ここで SFD は SubFont Difinition 名です。
+このオプションは <em>SFD</em> の規則に従い分割されたサブフォントを一つのフォントにまとめあげる (復元する) ときに指定します。
 
 ```
  min@Unicode@  unicode  Mincho
 ```
 
-は、Unicode.sfd の規則にしたがって分割されたサブフォント群 min00, min01, ... を逆にひとつの Unicode フォントとして復元します。<br>
-その後このひとつに束ねられた仮想的なフォントは Mincho というフォントにマップされます。<br>
+は、Unicode.sfd の規則にしたがって分割されたサブフォント群 min00, min01, ... を逆にひとつの Unicode フォントとして復元します。
+その後このひとつに束ねられた仮想的なフォントは Mincho というフォントにマップされます。
 
 #### エンコーディング {#y16b9bc3}
 
-エンコーディング・フィールド <em>enc</em> を正しく指定しないと正しい出力は得られません。<br>
-dvipdfmx でサポートされているのは<br>
+エンコーディング・フィールド <em>enc</em> を正しく指定しないと正しい出力は得られません。
+dvipdfmx でサポートされているのは
 
-```
- dvips の .enc 名
- PostScript CMap リソース名
- unicode
-```
+- dvips の .enc 名
+- PostScript CMap リソース名
+- unicode
 
 の3種類です
 
-dvips の .enc ファイルは 8-bit エンコーディング用のエンコーディングファイルで、どのコードポイントにどの文字 (グリフ) が割り当てられているかを PostScript の書式で記述します。<br>
-例えば、8r.enc では<br>
+dvips の .enc ファイルは 8-bit エンコーディング用のエンコーディングファイルで、どのコードポイントにどの文字 (グリフ) が割り当てられているかを PostScript の書式で記述します。
+例えば、8r.enc では
 
 ```
   /TeXBase1Encoding [
@@ -303,23 +329,23 @@ dvips の .enc ファイルは 8-bit エンコーディング用のエンコー�
   ] def
 ```
 
-のような記述が見られます。<br>
-コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。<br>
-ここでは文字の識別は PostScript グリフ名で行われます。<br>
-dvipdfmx では OpenType/TrueType フォントに対して dvips enc ファイルを適用する場合は、Unicode 値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での指定も可能です。<br>
-必要な dvips enc ファイルは通常のインストールでほぼすべてインストールされています。<br>
+のような記述が見られます。
+コード 0x00 に /.notdef (未定義) 文字を、0x01 に /dotaccent を、0x02 に /fi (f と i のリガチャ) を...割り振っています。
+ここでは文字の識別は PostScript グリフ名で行われます。
+dvipdfmx では OpenType/TrueType フォントに対して dvips enc ファイルを適用する場合は、Unicode 値を使って /uniXXXX (XXXX は 4 桁の 16 進数 Unicode 値) という形での指定も可能です。
+必要な dvips enc ファイルは通常のインストールでほぼすべてインストールされています。
 
 ```
  foo 8r Foo
 ```
 
-というマップエントリは TeX フォント foo を Foo に対応付けます。<br>
-その際 TeX で用いられたエンコーディングは 8r.enc に記述されてあるものとします。<br>
+というマップエントリは TeX フォント foo を Foo に対応付けます。
+その際 TeX で用いられたエンコーディングは 8r.enc に記述されてあるものとします。
 
-PostScript CMap リソースは dvipdfmx が文字を CID (Character IDentifier) と呼ばれる文字の識別番号で識別する場合に用いられます。<br>
-PostScript CMap ファイルは一般的によく用いられるエンコーディング (Shift-JIS など) から CID への対応付けを記述したファイルです。<br>
-例えば、UniJIS-UCS2-H は Unicode の JIS サブセットの範囲で UCS2 で表現された文字列を Adobe-Japan1 で定められた文字集合の CID の並びに変換するのに用いられます。<br>
-dvipdfmx では拡張子が ".otf" の 和文 OpenType フォントに対しては通常これを使います。<br>
+PostScript CMap リソースは dvipdfmx が文字を CID (Character IDentifier) と呼ばれる文字の識別番号で識別する場合に用いられます。
+PostScript CMap ファイルは一般的によく用いられるエンコーディング (Shift-JIS など) から CID への対応付けを記述したファイルです。
+例えば、UniJIS-UCS2-H は Unicode の JIS サブセットの範囲で UCS2 で表現された文字列を Adobe-Japan1 で定められた文字集合の CID の並びに変換するのに用いられます。
+dvipdfmx では拡張子が ".otf" の 和文 OpenType フォントに対しては通常これを使います。
 pTeX/pLaTeX でよく用いられる設定は:
 
 ```
@@ -327,47 +353,47 @@ pTeX/pLaTeX でよく用いられる設定は:
  gbm  H GothicBBB-Medium
 ```
 
-などです。<br>
-CMap ファイルは通常は [Adobe によって管理されたもの](http://sourceforge.net/adobe/cmap/wiki/Home/) が一式インストールされているはずです。<br>
+などです。
+CMap ファイルは通常は [Adobe によって管理されたもの](http://sourceforge.net/adobe/cmap/wiki/Home/) が一式インストールされているはずです。
 
-最後に unicode は OpenType/TrueType フォントに内臓の Unicode マッピングテーブルを使って Unicode 値からフォント内の字形データを得ることを指定します。<br>
-upLaTeX や Omega など DVI ファイル内のエンコーディングが Unicode となる場合にはこれが使えます。<br>
+最後に unicode は OpenType/TrueType フォントに内臓の Unicode マッピングテーブルを使って Unicode 値からフォント内の字形データを得ることを指定します。
+upLaTeX や Omega など DVI ファイル内のエンコーディングが Unicode となる場合にはこれが使えます。
 
 ```
  uprml-h unicode ipaexm.ttf
 ```
 
-エンコーディング unicode は PostScript Type1 フォントに対しても指定が可能です。<br>
-この場合は、Adobe グリフリストの記述に従い PostScript グリフ名と Unicode 値とを対応付けます。<br>
-ファイル "glyphlist.txt" がインストールされている必要があります。<br>
+エンコーディング unicode は PostScript Type1 フォントに対しても指定が可能です。
+この場合は、Adobe グリフリストの記述に従い PostScript グリフ名と Unicode 値とを対応付けます。
+ファイル "glyphlist.txt" がインストールされている必要があります。
 
 #### 実フォント名 {#he05780d}
 
-<em>font</em> の項には出力 PDF で使用されるフォント名がきます。<br>
+<em>font</em> の項には出力 PDF で使用されるフォント名がきます。
 
-これは通常フォントファイル名です。<br>
+これは通常フォントファイル名です。
 
 ```
  ugoth10  unicode  Gothic.ttf
 ```
 
-は TeX フォント ugoth10 を TrueType フォント Gothic.ttf に結びつけます。<br>
-また、フォントファイルが TrueType Collection の場合は<br>
+は TeX フォント ugoth10 を TrueType フォント Gothic.ttf に結びつけます。
+また、フォントファイルが TrueType Collection の場合は
 
 ```
  ugoth10  unicode  :1:GothicB.ttc
 ```
 
-のようにファイル名の前に :n: を付けることで n 番目のフォントを選べます。<br>
-実フォント名の前に "!" スイッチを付けることでフォントを非埋め込みにすることも可能です:
+のようにファイル名の前に :n: を付けることで n 番目のフォントを選べます。
+実フォント名の前に "!" スイッチを付けることでフォントを非埋め込みにすることも可能です：
 
 ```
  ugoth10 unicode   !Gothic.ttf
 ```
 
-フォントを非埋め込みにすることでファイルサイズをかなり小さくできますが、表示に問題が生じる場合が多々あります。<br>
-特に文書の再現性と (長期的な) 保存という観点からは推奨されません。<br>
-実際、PDF を長期保存可能なフォーマットとして利用することを目標として、[国際標準化機構（ISO） により制定された PDF/A](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=38920) ではフォントをすべて埋め込むことを求めています。<br>
+フォントを非埋め込みにすることでファイルサイズをかなり小さくできますが、表示に問題が生じる場合が多々あります。
+特に文書の再現性と (長期的な) 保存という観点からは推奨されません。
+実際、PDF を長期保存可能なフォーマットとして利用することを目標として、[国際標準化機構（ISO） により制定された PDF/A](http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=38920) ではフォントをすべて埋め込むことを求めています。
 
 #### オプション {#d4922a30}
 
@@ -379,9 +405,9 @@ upLaTeX や Omega など DVI ファイル内のエンコーディングが Unico
  -b 1.0
 ```
 
-のうち、"s" は斜体 (slanted) に、"e" は横に伸張 (extended) し、"b" は "太字" にするオプションです。<br>
-"b" オプションによる疑似太字の結果は酷いもので、これの利用は推奨されません。<br>
-将来削除される可能性もあります。<br>
+のうち、"s" は斜体 (slanted) に、"e" は横に伸張 (extended) し、"b" は "太字" にするオプションです。
+"b" オプションによる疑似太字の結果は酷いもので、これの利用は推奨されません。
+将来削除される可能性もあります。
 
 フォント・オプション:
 
@@ -390,19 +416,15 @@ upLaTeX や Omega など DVI ファイル内のエンコーディングが Unico
  -w 1
 ```
 
-"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。<br>
-"w" はエンコーディングが unicode のときのみ有効で、値が 1 のときは縦書き用であることを示します。<br>
-オプション "w" の値が 1 のとき縦書き用の OpenType グリフ置換機能が有効になります。<br>
-エンコーディングを unicode に指定して縦組みを行う場合、"-w 1"　を指定しないと括弧や句読点が正しく表示されないことに注意してください。<br>
-
-```
-
-```
+"i" は TrueType Collection インデックスの指定 (フォント名の前の :2: と同じ) で "w" は縦書き/横書きの指定です。
+"w" はエンコーディングが unicode のときのみ有効で、値が 1 のときは縦書き用であることを示します。
+オプション "w" の値が 1 のとき縦書き用の OpenType グリフ置換機能が有効になります。
+エンコーディングを unicode に指定して縦組みを行う場合、"-w 1"　を指定しないと括弧や句読点が正しく表示されないことに注意してください。
 
 #### フォント関連のよくあるエラーと警告 {#p3025758}
 
-フォントとエンコーディング関連、PostScript ファイルの取り込みではエラーが多発します。<br>
-フォント関連でよくあるエラー・警告とその原因です:
+フォントとエンコーディング関連、PostScript ファイルの取り込みではエラーが多発します。
+フォント関連でよくあるエラー・警告とその原因です。
 
 ```
  Could not locate a virtual/physical font for TFM “gbm-jis”.
@@ -411,10 +433,10 @@ upLaTeX や Omega など DVI ファイル内のエンコーディングが Unico
  Cannot proceed without .vf or “physical” font for PDF output…
 ```
 
-この種のエラーは mktexpk (ビットマップ・フォント生成プログラム) が実行され失敗した後表示されます。<br>
-TeX フォント "gbm-jis" にはなんら実フォントとの対応付けがなされておらず、"gbm-jis" という名のフォントを試そうとして失敗しました。<br>
-おそらくフォントの設定が適切になされてません。<br>
-類似のエラーとして:
+この種のエラーは mktexpk (ビットマップ・フォント生成プログラム) が実行され失敗した後表示されます。
+TeX フォント "gbm-jis" にはなんら実フォントとの対応付けがなされておらず、"gbm-jis" という名のフォントを試そうとして失敗しました。
+おそらくフォントの設定が適切になされてません。
+類似のエラーとして
 
 ```
  Could not locate a virtual/physical font for TFM "hgothr-h".
@@ -423,14 +445,14 @@ TeX フォント "gbm-jis" にはなんら実フォントとの対応付けが�
  Cannot proceed without .vf or "physical" font for PDF output...
 ```
 
-のようなメッセージが出る場合は、フォント "HiraKakuProN-W3.otf" がインストールされていないか dvipdfmx が見つけられる場所にありません。<br>
+のようなメッセージが出る場合は、フォント "HiraKakuProN-W3.otf" がインストールされていないか dvipdfmx が見つけられる場所にありません。
 
 ```
  Could not find encoding file "H".
 ```
 
-pTeX/pLaTeX で通常必要な PostScript CMap リソース "H" が見つかりませんでした。<br>
-これらのファイルが正しくインストールされていない可能性があります。<br>
+pTeX/pLaTeX で通常必要な PostScript CMap リソース "H" が見つかりませんでした。
+これらのファイルが正しくインストールされていない可能性があります。
 
 ```
  No character mapping available.
@@ -438,95 +460,95 @@ pTeX/pLaTeX で通常必要な PostScript CMap リソース "H" が見つかり�
  input str: <7c>
 ```
 
-CMap "H" での文字コード変換に失敗しました。<br>
-おそらくエンコーディングの指定が誤っています。<br>
-自身が DVI への出力にどのようなエンコーディングを使っているか把握する必要があります。<br>
-H (JIS) で未定義の文字コードを使っている可能性もあります。<br>
+CMap "H" での文字コード変換に失敗しました。
+おそらくエンコーディングの指定が誤っています。
+自身が DVI への出力にどのようなエンコーディングを使っているか把握する必要があります。
+H (JIS) で未定義の文字コードを使っている可能性もあります。
 
 ```
  Glyph missing in font. (CID=19141, code=0x4e23)
 ```
 
-お使いのフォントには CID 19141 に対応する文字データがありません。<br>
-フォントを代えるなどの対処が必要です。<br>
+お使いのフォントには CID 19141 に対応する文字データがありません。
+フォントを代えるなどの対処が必要です。
 
 ```
  Failed to load AGL file "glyphlist.txt"...
 ```
 
-PostScript グリフ名と Unicode との対応を記述したファイル "glyphlist.txt" が読み込めませんでした。<br>
-(主に欧文フォントで) 稀に文字が欠落したり、生成された PDF ファイルで文字列の検索やコピー &amp; ペーストがうまくいかなくなるかも知れません。<br>
+PostScript グリフ名と Unicode との対応を記述したファイル "glyphlist.txt" が読み込めませんでした。
+(主に欧文フォントで) 稀に文字が欠落したり、生成された PDF ファイルで文字列の検索やコピー &amp; ペーストがうまくいかなくなるかも知れません。
 
 ```
  CMap has higher supplement number than CIDFont: Ryumin-Light
  Some characters may not be displayed or printed.
 ```
 
-使用している CMap が新しい改訂版であるため、フォント "Ryumin-Light" に含まれない文字が使用される可能性があります。<br>
-文字が欠落する可能性があり、"Glyph missing in font." の警告が出ないか注意する必要があります。<br>
+使用している CMap が新しい改訂版であるため、フォント "Ryumin-Light" に含まれない文字が使用される可能性があります。
+文字が欠落する可能性があり、"Glyph missing in font." の警告が出ないか注意する必要があります。
 
 #### ファイルが見つからない場合の対処法 {#x37a3e64}
 
-ファイルが見つからないというエラーが出た場合は、dvipdfmx が実際にどこを探していてるかを知る必要があります。<br>
-TeX 関連の多くのプログラムは kpathsea というライブラリにファイル検索を依頼しており、dvipdfmx も kpathsea ライブラリを利用しています。<br>
-kpsewhich というコマンドラインプログラムがファイルを置くべき場所を知るのに利用できます。<br>
+ファイルが見つからないというエラーが出た場合は、dvipdfmx が実際にどこを探していてるかを知る必要があります。
+TeX 関連の多くのプログラムは kpathsea というライブラリにファイル検索を依頼しており、dvipdfmx も kpathsea ライブラリを利用しています。
+kpsewhich というコマンドラインプログラムがファイルを置くべき場所を知るのに利用できます。
 例えば、PostScript CMap "H" が dvipdfmx に見える場所にあるか確かめるには
 
 ```
  kpsewhich -progname=dvipdfmx -format=cmap H
 ```
 
-とします。<br>
-ファイルが存在する場合はその場所が出力されます。<br>
-空行しか出力されない場合は dvipdfmx の検索パスにファイルが存在しません。<br>
+とします。
+ファイルが存在する場合はその場所が出力されます。
+空行しか出力されない場合は dvipdfmx の検索パスにファイルが存在しません。
 CMap ファイルがどこにインストールされているべきなのか知るには
 
 ```
  kpsewhich -progname=dvipdfmx -show-path=cmap
 ```
 
-のようにします。<br>
-区切り文字 (Windows では ";") で区切られたフォルダのリストが出力されます。<br>
+のようにします。
+区切り文字 (Windows では ";") で区切られたフォルダのリストが出力されます。
 検索パス等は
 
 ```
  kpsewhich -a -format=cnf texmf.cnf
 ```
 
-で示されるファイルで設定されています。<br>
+で示されるファイルで設定されています。
 kpsewhich の使い方については
 
 ```
  kpsewhich -help
 ```
 
-などを参照してください。<br>
+などを参照してください。
 
 #### フォント関連の重要なファイル {#d0149545}
 
-pTeX/pLaTeX で日本語を使うために最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。<br>
-TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2"  というファイルが必要となります。<br>
-"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。<br>
+pTeX/pLaTeX で日本語を使うために最低限必要なファイルは PostScript CMap リソース "H" (と "V") です。
+TrueType フォントを利用する場合はこれに加えて "Adobe-Japan1-UCS2"  というファイルが必要となります。
+"H" は JIS エンコーディングから Adobe-Japan1 の CID 値への対応付けを行う変換用のファイルで、"Adobe-Japan1-UCS2" は Adobe-Japan1 の CID を Unicode に変換するのに用いられます。
 TrueType フォントを (PostScript CMap リソースとともに) 利用する場合は
 
 ```
  JIS --> Adobe-Japan1 --> Unicode
 ```
 
-という 2 重の (文字コード) 変換を伴います。<br>
+という 2 重の (文字コード) 変換を伴います。
 
-他に Unicode に関連した重要なものとして [Adobe グリフリスト](http://partners.adobe.com/public/developer/en/opentype/glyphlist.txt)があります。<br>
-これは "glyphlist.txt" という名前でインストールされている必要があります。<br>
-このファイルは PostScript グリフ名を Unicode に対応付ける必要がある場合に利用されます。<br>
-PostScript Type1 フォントを Unicode で使う場合がそのひとつです。<br>
-生成されたPDF ファイル内の文字列の検索やコピー &amp; ペーストを可能にするためにも重要な役割を果たします。<br>
+他に Unicode に関連した重要なものとして [Adobe グリフリスト](http://partners.adobe.com/public/developer/en/opentype/glyphlist.txt)があります。
+これは "glyphlist.txt" という名前でインストールされている必要があります。
+このファイルは PostScript グリフ名を Unicode に対応付ける必要がある場合に利用されます。
+PostScript Type1 フォントを Unicode で使う場合がそのひとつです。
+生成されたPDF ファイル内の文字列の検索やコピー &amp; ペーストを可能にするためにも重要な役割を果たします。
 
 ### 画像やPDFのとり込み {#a1cabace}
 
-dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPEG 2000 (2014/08/11 より) および MetaPost が出力した EPS (MPS) です。<br>
-これに加えて PDF のページもとり込めます。<br>
-通常の EPS はサポートされていないことに注意してください。<br>
-通常の EPS ファイルのとり込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してからとり込みます。<br>
+dvipdfmx がサポートする画像フォーマットは PNG、JPEG、BMP、JPEG 2000 (2014/08/11 より) および MetaPost が出力した EPS (MPS) です。
+これに加えて PDF のページもとり込めます。
+通常の EPS はサポートされていないことに注意してください。
+通常の EPS ファイルのとり込みでは外部プログラムを呼び出し、dvipdfmx が扱えるフォーマットに変換してからとり込みます。
 
 graphicx パッケージを用いて画像をとり込む場合は dvipdfmx オプションをつけて graphicx パッケージを読み込みます：
 
@@ -543,52 +565,52 @@ PDF と JPEG や PNG などのラスタ画像を使う場合は画像の物理�
 
 のようにします。あらかじめ作業ディレクトリ (フォルダ) に移動して行います。
 
-dvipdfmx はダウンサンプルは行いません。<br>
-画像を埋め込むとファイルサイズが異様に大きくなるような場合は画像加工ソフトで適切な解像度になるように画像のサイズを調整してください。<br>
-2インチ (5.08センチ) の幅に 300dpi の解像度で画像を収める場合の画像の幅 (横方向のピクセル数) は 600 です。<br>
-一般的なプリンタでの印刷の場合はこれくらいの解像度でもよいでしょう。<br>
-2インチ-72dpi (スクリーン向け低解像度) の場合は 144 ピクセル、2インチ-150dpi (電子書籍向け) の場合は 300 ピクセルです。<br>
+dvipdfmx はダウンサンプルは行いません。
+画像を埋め込むとファイルサイズが異様に大きくなるような場合は画像加工ソフトで適切な解像度になるように画像のサイズを調整してください。
+2インチ (5.08センチ) の幅に 300dpi の解像度で画像を収める場合の画像の幅 (横方向のピクセル数) は 600 です。
+一般的なプリンタでの印刷の場合はこれくらいの解像度でもよいでしょう。
+2インチ-72dpi (スクリーン向け低解像度) の場合は 144 ピクセル、2インチ-150dpi (電子書籍向け) の場合は 300 ピクセルです。
 
 #### サポート状況 {#e5c0f21c}
 
-PNG はよくサポートされています。<br>
-透明度や埋め込み ICC プロファイルなどの情報も保持されます。<br>
-色深度が 16bpc のときは 8bpc へと変換されるという制限があります。<br>
-メタデータの保持はできていません。<br>
+PNG はよくサポートされています。
+透明度や埋め込み ICC プロファイルなどの情報も保持されます。
+色深度が 16bpc のときは 8bpc へと変換されるという制限があります。
+メタデータの保持はできていません。
 
-JPEG は比較的よくサポートされています。<br>
-CMYK 色空間にも対応していますが、ビューアが対応していない可能性もあるため避けるのが無難です。<br>
-物理的サイズ (解像度) の取得に JFIF データを利用します。<br>
-Exif データは利用していません。<br>
-JFIF と Exif データに不整合がある場合にサイズの決定に問題が生じることが知られています。<br>
-埋め込み ICC プロファイルにも対応しています。<br>
+JPEG は比較的よくサポートされています。
+CMYK 色空間にも対応していますが、ビューアが対応していない可能性もあるため避けるのが無難です。
+物理的サイズ (解像度) の取得に JFIF データを利用します。
+Exif データは利用していません。
+JFIF と Exif データに不整合がある場合にサイズの決定に問題が生じることが知られています。
+埋め込み ICC プロファイルにも対応しています。
 
-BMP は非圧縮かランレングス圧縮のものに限られます。<br>
-多くの拡張機能には対応していません。<br>
+BMP は非圧縮かランレングス圧縮のものに限られます。
+多くの拡張機能には対応していません。
 
-JPEG 2000 の対応は最低限のものです。<br>
-PDF の仕様の制限から JP2 と JPX baseline サブセットに限定されます。<br>
-J2C ファイルには対応していません。<br>
-透明度については不明です。<br>
+JPEG 2000 の対応は最低限のものです。
+PDF の仕様の制限から JP2 と JPX baseline サブセットに限定されます。
+J2C ファイルには対応していません。
+透明度については不明です。
 
-PDF はベクタ•ラスタ画像のどちらにもよく対応した高機能なフォーマットですが、仕様の改訂の度に複雑化するという問題があります。<br>
-不要に高いバージョン設定にしない、タグ付きにしないなどの点に注意すれば比較的よく対応できます。<br>
-これまで PDF-1.5 以上のファイルで取り込みに失敗することがありましたが、2014/08/14 の修正でそのようなファイルにも対応しました。<br>
+PDF はベクタ•ラスタ画像のどちらにもよく対応した高機能なフォーマットですが、仕様の改訂の度に複雑化するという問題があります。
+不要に高いバージョン設定にしない、タグ付きにしないなどの点に注意すれば比較的よく対応できます。
+これまで PDF-1.5 以上のファイルで取り込みに失敗することがありましたが、2014/08/14 の修正でそのようなファイルにも対応しました。
 
 #### どのフォーマットを選ぶべきか？ {#la46999e}
 
-PNG と JPEG で満足しているのであればそれを続けましょう。<br>
-PDF は PNG と同等の機能をもち、JPEG も丸ごとサポート (実際に丸ごと JPEG ファイルを埋め込める) しているので PDF で統一することも考えられます。<br>
-RAW データから JPEG への変換でもやもやとしたノイズが気になる場合は JPEG 2000 を検討してもよいでしょう。<br>
-ただし、JPEG 2000 は普及に失敗したようで PDF ビューアのサポートが十分でない可能性もあります。<br>
+PNG と JPEG で満足しているのであればそれを続けましょう。
+PDF は PNG と同等の機能をもち、JPEG も丸ごとサポート (実際に丸ごと JPEG ファイルを埋め込める) しているので PDF で統一することも考えられます。
+RAW データから JPEG への変換でもやもやとしたノイズが気になる場合は JPEG 2000 を検討してもよいでしょう。
+ただし、JPEG 2000 は普及に失敗したようで PDF ビューアのサポートが十分でない可能性もあります。
 
-PostScript はそれが確かに必要だという場合を除き使わない方がよいでしょう。<br>
-dvipdfmx は PostScript を直接サポートしていません。<br>
+PostScript はそれが確かに必要だという場合を除き使わない方がよいでしょう。
+dvipdfmx は PostScript を直接サポートしていません。
 
 #### PostScript ファイルの取り込み {#q1c3abbe}
 
-PostScript ファイルを取り込む際には通常は GhostScript が自動的に起動し、PDF へ一時的に変換したうえで取り込みます。<br>
-具体的には dvipdfmx.cfg のオプションの記述を見ましょう:
+PostScript ファイルを取り込む際には通常は GhostScript が自動的に起動し、PDF へ一時的に変換したうえで取り込みます。
+具体的には dvipdfmx.cfg のオプションの記述を見ましょう。
 
 ```
  kpsewhich -progname=dvipdfmx -format=othertext dvipdfmx.cfg
@@ -601,22 +623,22 @@ PostScript ファイルを取り込む際には通常は GhostScript が自動�
          -sDEVICE=pdfwrite ...(略)... -sOutputFile='%o' '%i' -c quit"
 ```
 
-のような一行があるはずです。("%" で始まる行はコメント行です)<br>
-この部分の指示により dvipdfmx は PostScript の図を埋め込むように指示されたとき、自動的に rungs (gs へのラッパー) を起動し PDF へ変換するように動作します。<br>
+のような一行があるはずです("%" で始まる行はコメント行です)。
+この部分の指示により dvipdfmx は PostScript の図を埋め込むように指示されたとき、自動的に rungs (gs へのラッパー) を起動し PDF へ変換するように動作します。
 "D" オプションの基本的な書式は
 
 ```
  D "command %i %o"
 ```
 
-のような形です。<br>
-ここで　"%o"、"%i" はそれぞれ出力 (dvipdfmx が定める一時ファイル名)、入力ファイル名に置き換わります。<br>
-取り込まれた PostScript の図に問題があるようでしたらこのオプションを見直してください。<br>
-PostScript ファイルはトラブルの大きな原因です。<br>
-フォントをすべて埋め込んだはずなのに埋め込まれていないフォントがある。<br>
-和文フォントを使わないようにしたはずなのに実際は使ってある。<br>
-など、取り込まれた PostScript ファイルが原因となっている場合があります。<br>
-また変換が失敗する場合はまず "D" オプションで指定されたコマンドを直接実行してみて、どのようなエラーがでるのか調べてください。<br>
+のような形です。
+ここで　"%o"、"%i" はそれぞれ出力 (dvipdfmx が定める一時ファイル名)、入力ファイル名に置き換わります。
+取り込まれた PostScript の図に問題があるようでしたらこのオプションを見直してください。
+PostScript ファイルはトラブルの大きな原因です。
+フォントをすべて埋め込んだはずなのに埋め込まれていないフォントがある。
+和文フォントを使わないようにしたはずなのに実際は使ってある。
+など、取り込まれた PostScript ファイルが原因となっている場合があります。
+また変換が失敗する場合はまず "D" オプションで指定されたコマンドを直接実行してみて、どのようなエラーがでるのか調べてください。
 dvipdfmx が
 
 ```
@@ -624,19 +646,19 @@ dvipdfmx が
  Image format conversion for "./foo.eps" failed...
 ```
 
-のようなエラーメッセージを出力する場合は PostScript の変換プログラムが変換に失敗しています。<br>
+のようなエラーメッセージを出力する場合は PostScript の変換プログラムが変換に失敗しています。
 
 #### SVG を取り込む {#o8c48aab}
 
-"D" オプションは EPS ファイルを取り込むためだけのものではありません。<br>
-これは dvipdfmx がサポートしない形式のファイルを処理するための一般的なものです。<br>
-[Inkscape](/Inkscape/) などに SVG から PDF への変換を依頼して図を取り込むこともできます:
+"D" オプションは EPS ファイルを取り込むためだけのものではありません。
+これは dvipdfmx がサポートしない形式のファイルを処理するための一般的なものです。
+[Inkscape](/Inkscape/) などに SVG から PDF への変換を依頼して図を取り込むこともできます：
 
 ```
  D "inkscape -z -A %o %i"
 ```
 
-実際の運用では様々な画像フォーマットに対して分岐処理をするスクリプトを呼び出すことになるでしょう。<br>
+実際の運用では様々な画像フォーマットに対して分岐処理をするスクリプトを呼び出すことになるでしょう。
 
 #### MetaPost 出力への対応 {#gd0313ef}
 
@@ -647,38 +669,38 @@ MetaPost が出力する EPS ファイルは外部プログラムの助けなし
  prologues:=2;
 ```
 
-に指定してください。<br>
-また、非公式ですが dvipdfmx に "-M" オプションを付けて実行することで "MetaPost モード" で MetaPost 出力を PDF へ変換することができます。<br>
+に指定してください。
+また、非公式ですが dvipdfmx に "-M" オプションを付けて実行することで "MetaPost モード" で MetaPost 出力を PDF へ変換することができます。
 例えば MetaPost が出力した "test.1" というファイルに対して
 
 ```
 dvipdfmx -M -o test.pdf test.1
 ```
 
-を実行すると、"test.pdf" が生成されます。<br>
-デバッグ用に使えます。<br>
+を実行すると、"test.pdf" が生成されます。
+デバッグ用に使えます。
 
 ### special コマンド {#p133bd5e}
 
-dvipdfmx は様々な special 拡張をサポートしています。<br>
+dvipdfmx は様々な special 拡張をサポートしています。
 文書やページの設定を行うものとして
 
 ```
  papersize landscape pdf:pagesize pdf:encrypt pdf:minorversion
 ```
 
-など、dvips 由来のもの、HTML 形式のハイパーリンクなど様々です。<br>
-dvipdfmx 自身も独自の special による拡張機能を持ちます。<br>
+など、dvips 由来のもの、HTML 形式のハイパーリンクなど様々です。
+dvipdfmx 自身も独自の special による拡張機能を持ちます。
 
-これらの機能のうちほとんどはユーザーが直接意識することはありません。<br>
-通常はパッケージの製作者が LaTeX 等の為の使い易いインターフェイスを提供します。<br>
-しかしながら様々な特殊効果を出す為にこれらの拡張機能を直接使いたい場合もあります。<br>
-dvipdfm(x) 独自の機能を使う場合は、それにより他の DVI ドライバとの互換性を酷く損なうという事に注意してください。<br>
-いくつかの機能は DVI の設計思想に反することもあります。<br>
+これらの機能のうちほとんどはユーザーが直接意識することはありません。
+通常はパッケージの製作者が LaTeX 等の為の使い易いインターフェイスを提供します。
+しかしながら様々な特殊効果を出す為にこれらの拡張機能を直接使いたい場合もあります。
+dvipdfm(x) 独自の機能を使う場合は、それにより他の DVI ドライバとの互換性を酷く損なうという事に注意してください。
+いくつかの機能は DVI の設計思想に反することもあります。
 
 #### ページ設定 {#zbee7ac4}
 
-landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます。<br>
+landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます。
 
 ```
  \special{landscape}
@@ -690,22 +712,22 @@ landscape や papersize などの文書全体に影響するものは PDF への
  \special{papersize=210mm,297mm}
 ```
 
-は用紙サイズを 210mm × 297mm に設定します。<br>
+は用紙サイズを 210mm × 297mm に設定します。
 
-pagesize は文書の途中でも使えますが、これが実行されるタイミングによっては予期せぬ結果となります。<br>
-特にページがシャッフルされる時は意図したようにはなりません。<br>
+pagesize は文書の途中でも使えますが、これが実行されるタイミングによっては予期せぬ結果となります。
+特にページがシャッフルされる時は意図したようにはなりません。
 
 ```
   \special{pdf:pagesize width 210mm height 297mm}
 ```
 
-のように使います。<br>
+のように使います。
 
 #### special で遊ぶ {#a807a6c0}
 
-- [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります。<br>
+- [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります。
 
-アノーテーション (注釈機能) でファイルを添付:
+アノーテーション (注釈機能) でファイルを添付：
 
 ```
  \special{pdf:fstream @fileobj (ファイル名をここに)}%
@@ -724,21 +746,21 @@ pagesize は文書の途中でも使えますが、これが実行されるタ�
           }%
 ```
 
-上の例ではまず最初の special で外部ファイルを取り込み、それを fileobj と名付けます。<br>
-次の special で "添付ファイル" アノーテーションを作ります。<br>
-出来上がった PDF には小さなクリップが表示され、その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです。(ビューアーによって操作は異なります)<br>
-このようにして TeX のソースを埋め込んでおくこともできます。<br>
+上の例ではまず最初の special で外部ファイルを取り込み、それを fileobj と名付けます。
+次の special で "添付ファイル" アノーテーションを作ります。
+出来上がった PDF には小さなクリップが表示され、その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです(ビューアーによって操作は異なります)。
+このようにして TeX のソースを埋め込んでおくこともできます。
 
-ページの開始時に任意の PDF 描画コードを挿入することもできます:
+ページの開始時に任意の PDF 描画コードを挿入することもできます：
 
 ```
  \special{pdf:bop 0.4 0.4 0.6 rg 0 0 596 842 re 72 72 452 700 re f*}
 ```
 
-これは余白の部分を塗りつぶします。<br>
-"bop" はページの開始時に指定された PDF 描画コードを埋め込みます。<br>
+これは余白の部分を塗りつぶします。
+"bop" はページの開始時に指定された PDF 描画コードを埋め込みます。
 
-ウォーターマーク風のものを入れます:
+ウォーターマーク風のものを入れます：
 
 ```
  \documentclass[]{article}
@@ -763,51 +785,51 @@ pagesize は文書の途中でも使えますが、これが実行されるタ�
  \end{document}
 ```
 
-(bophook.sty が必要です) やや複雑な例です。<br>
-"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています。<br>
-"bop" はページの開始時に "Sample" という文字列を描画するように指示しています。<br>
-"put" の部分では resources で識別される辞書オブジェクト (ここではページリソース) に与えられたオブジェクトを追加します。<br>
-ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています。<br>
+(bophook.sty が必要です) やや複雑な例です。
+"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています。
+"bop" はページの開始時に "Sample" という文字列を描画するように指示しています。
+"put" の部分では resources で識別される辞書オブジェクト (ここではページリソース) に与えられたオブジェクトを追加します。
+ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています。
 
-上の例ではページに直接 Sample という文字を書き込みましたがアノーテーションを使ってウォーターマークを入れることもできます。<br>
+上の例ではページに直接 Sample という文字を書き込みましたがアノーテーションを使ってウォーターマークを入れることもできます。
 
 ### フォントの埋め込みとライセンス {#x49ed9c0}
 
-フォントを PDF へ埋め込めるかどうか、そしてその PDF が配布可能かどうかはフォントの提供元が定める規則に従ってください。<br>
-新たにフォントを入手されたときには、そのフォントに付属の EULA (エンドユーザ使用許諾契約) をよく読んで理解したうえで使用してください。<br>
+フォントを PDF へ埋め込めるかどうか、そしてその PDF が配布可能かどうかはフォントの提供元が定める規則に従ってください。
+新たにフォントを入手されたときには、そのフォントに付属の EULA (エンドユーザ使用許諾契約) をよく読んで理解したうえで使用してください。
 
-OpenType と Windows 向け TrueType フォントにはフォントファイルの中にフォントの埋め込み許可に関する情報が記載されています。<br>
-dvipdfmx はこの情報を読み取り埋め込み可能かどうか判断し、場合によってはライセンスに関する警告を発します。<br>
-Microsoft による [TrueType の仕様書](http://www.microsoft.com/typography/SpecificationsOverview.mspx) では以下の埋め込みライセンス形態が指定可能です:
+OpenType と Windows 向け TrueType フォントにはフォントファイルの中にフォントの埋め込み許可に関する情報が記載されています。
+dvipdfmx はこの情報を読み取り埋め込み可能かどうか判断し、場合によってはライセンスに関する警告を発します。
+Microsoft による [TrueType の仕様書](http://www.microsoft.com/typography/SpecificationsOverview.mspx) では以下の埋め込みライセンス形態が指定可能です：
 
 - 埋め込み不許可: このライセンスのフォントは著作権保有者の許可なしには、いかなる形でのフォントの受け渡しを禁止しています。
-    - 表示と印刷可: フォントは表示と印刷のために用いる場合にのみ埋め込むことができます。
-    - 編集可: "表示と印刷" に加えて文書を受け取った側はこのライセンスのフォントを含む文書を編集することができます。
-    - インストール可: フォントを文書に埋め込んで配布することができ、それを受け取った側は文書の表示・印刷・編集が可能です。また受け取った側は、埋め込まれたフォントをパソコンに恒久的にインストールすることができ、そのフォントに関してフォントの元の入手者 (文書の配布者) と同じ権利を保有するとともに同じ EULA の制限を受けることになります。
+- 表示と印刷可: フォントは表示と印刷のために用いる場合にのみ埋め込むことができます。
+- 編集可: "表示と印刷" に加えて文書を受け取った側はこのライセンスのフォントを含む文書を編集することができます。
+- インストール可: フォントを文書に埋め込んで配布することができ、それを受け取った側は文書の表示・印刷・編集が可能です。また受け取った側は、埋め込まれたフォントをパソコンに恒久的にインストールすることができ、そのフォントに関してフォントの元の入手者 (文書の配布者) と同じ権利を保有するとともに同じ EULA の制限を受けることになります。
 
-文書の受け手に "表示と印刷" <em>のみ</em>を許可するには、文書を暗号化により保護するしかありません。<br>
-また OpenType/TrueType の仕様書は "インストール可" の場合を除き、文書からフォントを抽出しシステムに恒久的にインストールすることを禁じています。(許可された目的のために一時的にインストールすることは可能)
+文書の受け手に "表示と印刷" <em>のみ</em>を許可するには、文書を暗号化により保護するしかありません。
+また OpenType/TrueType の仕様書は "インストール可" の場合を除き、文書からフォントを抽出しシステムに恒久的にインストールすることを禁じています(許可された目的のために一時的にインストールすることは可能)。
 
-OpenType/TrueType フォントファイルに記載できるフォントの埋め込み許可情報は簡易なものです。<br>
-詳細については必ずそのフォントの EULA を参照するようにしてください。<br>
+OpenType/TrueType フォントファイルに記載できるフォントの埋め込み許可情報は簡易なものです。
+詳細については必ずそのフォントの EULA を参照するようにしてください。
 
-Adobe のフォントに関しては、Adobe のサイト "[フォントの埋め込みや編集などに関する許可](http://www.adobe.com/jp/type/browser/info/embedding.html)" を参照してください。<br>
-なお、Adobe Reader に付属の小塚フォントは Adobe Reader からの利用のみが可能ですので dvipdfmx で流用することはできません。注意してください。<br>
+Adobe のフォントに関しては、Adobe のサイト "[フォントの埋め込みや編集などに関する許可](http://www.adobe.com/jp/type/browser/info/embedding.html)" を参照してください。
+なお、Adobe Reader に付属の小塚フォントは Adobe Reader からの利用のみが可能ですので dvipdfmx で流用することはできません。注意してください。
 
-MS 明朝・MS ゴシックに関して、かつてはフォントを埋め込んだ文書を (不特定多数の人間に) 配布することはライセンスに抵触するのではないかという議論がありました。<br>
-しかしながら、フォントの利用に関して供給元であるリコーと Microsoft の見解に変化があったようです ([ゆず屋：\[豆知識\] MS明朝、MSゴシックは（今は）商用利用できる](http://yuzuya.style.coocan.jp/blog/archives/2010/12/22223803.php)) ので再度調査が必要です。<br>
+MS 明朝・MS ゴシックに関して、かつてはフォントを埋め込んだ文書を (不特定多数の人間に) 配布することはライセンスに抵触するのではないかという議論がありました。
+しかしながら、フォントの利用に関して供給元であるリコーと Microsoft の見解に変化があったようです ([ゆず屋：\[豆知識\] MS明朝、MSゴシックは（今は）商用利用できる](http://yuzuya.style.coocan.jp/blog/archives/2010/12/22223803.php)) ので再度調査が必要です。
 
-Windows 標準搭載フォントのうち Microsoft に著作権があるものに関しては、"[マイクロソフトの著作物の使用について](http://www.microsoft.com/ja-jp/mscorp/legal/permission/default.aspx)" によると、Windows の使用許諾契約書内にあるフォントの条項で規定されているようです。<br>
+Windows 標準搭載フォントのうち Microsoft に著作権があるものに関しては、"[マイクロソフトの著作物の使用について](http://www.microsoft.com/ja-jp/mscorp/legal/permission/default.aspx)" によると、Windows の使用許諾契約書内にあるフォントの条項で規定されているようです。
 Microsoft による[ライセンス条項のページ](http://www.microsoft.com/ja-jp/mscorp/legal/useterms/)からたどれる"マイクロソフト ソフトウェア ライセンス条項" には (Windows 7 Professional の場合)
 
 > · フォントの埋め込みに関する制限の下で許容される範囲でコンテンツにフォントを埋め込む。
 
-ことが許可されるとの記載があります。<br>
-"フォントの埋め込みに関する制限の下で許容される範囲" というものが何を指しているのかは不明です。<br>
-また、別のサイト "[Microsoft Typography - Font Redistribution FAQ](http://www.microsoft.com/typography/RedistributionFAQ.mspx)" にはフォントの "プロパティー" (フォントファイルの上で右クリック) の詳細のタブにある "フォント埋め込み可能" の項目を参照するように書かれています。<br>
-この情報はおそらく dvipdfmx がフォントの埋め込みの際に参照するライセンス情報と同じものです。<br>
+ことが許可されるとの記載があります。
+"フォントの埋め込みに関する制限の下で許容される範囲" というものが何を指しているのかは不明です。
+また、別のサイト "[Microsoft Typography - Font Redistribution FAQ](http://www.microsoft.com/typography/RedistributionFAQ.mspx)" にはフォントの "プロパティー" (フォントファイルの上で右クリック) の詳細のタブにある "フォント埋め込み可能" の項目を参照するように書かれています。
+この情報はおそらく dvipdfmx がフォントの埋め込みの際に参照するライセンス情報と同じものです。
 
-OS X に関しては、Apple による[ハードウェアおよびソフトウェア製品規約](https://www.apple.com/jp/legal/sla/)のページを参照してください。<br>
+OS X に関しては、Apple による[ハードウェアおよびソフトウェア製品規約](https://www.apple.com/jp/legal/sla/)のページを参照してください。
 "[OS X（Mountain Lion 10.8.2）ソフトウェアライセンス](https://www.apple.com/legal/sla/docs/OSX1082.pdf)" の p.41 には
 
 > E. フォント　本契約の契約条件に従って、お客様は、Appleソフトウェアの起動中にコンテンツ
@@ -816,7 +838,7 @@ OS X に関しては、Apple による[ハードウェアおよびソフトウ�
 > 合のみ、コンテンツの中にフォントを組み込むことができます。これらの組み込み制限は、Font
 > Book/プレビュー/フォント情報を表示、においてご覧になれます。
 
-との記載があります。<br>
+との記載があります。
 
 ### PDF のバージョンを指定する {#b272a636}
 
@@ -873,9 +895,9 @@ bxpdfver パッケージを使用する場合は
 \usepackage[dvipdfmx,1.7]{bxpdfver}
 ```
 
-と記述すれば OK です．<br>
+と記述すれば OK です．
 
-コマンドラインオプションで指定することもできます．<br>
+コマンドラインオプションで指定することもできます．
 
 ```
 -V number     Set PDF minor version
@@ -887,31 +909,31 @@ bxpdfver パッケージを使用する場合は
 - [Image cache in (x)dvipdfmx by Tsuchimura-san](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1153)
 - [dvipdfmx を画像キャッシュで高速化](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=958)
 
-デフォルトでは有効にならないようになっています。<br>
+デフォルトでは有効にならないようになっています。
 有効にするにはコマンドラインオプション
 
 ```
 -I number
 ```
 
-において、number を正整数にします。<br>
-この数値は、キャッシュが有効な時間を表しています。<br>
+において、number を正整数にします。
+この数値は、キャッシュが有効な時間を表しています。
 デフォルトで有効にしたい場合、dvipdfmx.cfg の I セクションで
 
 ```
 I 24
 ```
 
-のように設定しておきます。<br>
-この場合、一日以内ならキャッシュにイメージがある場合、それを使用することを意味しています。<br>
+のように設定しておきます。
+この場合、一日以内ならキャッシュにイメージがある場合、それを使用することを意味しています。
 
 ### dvipdfmx に extractbb などの名前でシンボリックリンクを作成する {#k882a214}
 
 - [#美文書 １１５ページ、「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://twitter.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://twitter.com/ti5942/status/273742359915794432)
 
-dvipdfmx はコマンドの名前によって機能を変えることができます．<br>
-[dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．<br>
-UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．<br>
+dvipdfmx はコマンドの名前によって機能を変えることができます．
+[dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．
+UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．
 
 ### DVI ファイルが存在しない PDF ファイルを削除する {#i282b26a}
 
@@ -920,9 +942,13 @@ dvipdfmx には DVI ファイルが存在しない PDF ファイルを削除す�
 ```
 PS C:\Users\$Env:USERNAME> dvipdfmx test
 test.dvi -> test.pdf
+```
 
+```
 ** ERROR ** Could not open specified DVI file: test.dvi
+```
 
+```
 Output file removed.
 ```
 
