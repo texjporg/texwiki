@@ -138,6 +138,7 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=luala
 
 - [Pandoc ユーザーズガイド 日本語版](http://sky-y.github.io/site-pandoc-jp/users-guide/)
 - [http://qiita.com/tags/pandoc](http://qiita.com/tags/pandoc)
+- [Markdownで書いたテキストをPDFに変換して納品用ドキュメントを作成する方法](http://www.clear-code.com/blog/2015/4/27.html)
 - [pandoc : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/pandoc)
 - [アマゾンからの出版メモ](http://reinforce-lab.github.io/blog/2014/06/12/self-publishing-through-amazon/)
     - [PandocをつかったKindle出版のサンプル](https://github.com/reinforce-lab/pandoc_kindle_sample)
