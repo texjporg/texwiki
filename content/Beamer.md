@@ -127,6 +127,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 ### Beamer Themes {#r446ce9a}
 
 - [LaTeX Beamer Themes](http://latex.simon04.net/)
+- [Beamer mtheme](https://github.com/matze/mtheme)
 - [LaTeX Beamerにカスタムテーマをインストールして使う](http://d.hatena.ne.jp/muupan/20130922/1379830899)
 - [Beamer Theme Matrix](http://www.hartwork.org/beamer-theme-matrix/)
 - [kmbeamer](https://github.com/kmaed/kmbeamer)
