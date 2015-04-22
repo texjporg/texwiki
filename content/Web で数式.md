@@ -11,6 +11,8 @@ pukiwiki: "Web で数式"
 
 Web 上で数式を表示するための各種方法をまとめておきます． <!-- 個別ページ「mimeTeX」から持ってきました． - - アセトアミノフェン (2015-01-17) -->
 
+<em>TODO</em>：実際の利用例を募集します．実際に利用するにあたり注意すべき点（環境依存性・表示速度など）が分かると利用しやすいと思います． -- アセトアミノフェン (2015-04-22)
+
 ### mimeTeX {#w7d4afa0}
 
 [mimeTeX - TeX Wiki](/mimeTeX/) も参照．
@@ -21,6 +23,7 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 
 - [http://www.mathjax.org/](http://www.mathjax.org/)
 - [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
+- 利用例：[MathJax（v1.1）を使ってみた](http://tractatus-online.appspot.com/Math/MathJax.html)（MathJax/jsMath/MathML を同じソースで比較可能）
 
 ### KaTeX {#kf09ac9a}
 
