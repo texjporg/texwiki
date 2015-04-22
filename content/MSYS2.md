@@ -25,3 +25,7 @@ ja_JP.UTF-8
 ### Installation {#sb6496d0}
 
 - [http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/](http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
+
+### 関連リンク {#i2a5ff0e}
+
+- [MSYS2＋VagrantによるWindowsでのUNIX環境](https://tamosblog.wordpress.com/2014/12/25/msys2_vagrant_1/)
