@@ -1060,6 +1060,7 @@ AUCTeX とは関係ありませんが，先頭に
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [Newest &#39;auctex&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/auctex)
 - [Starter Kit LaTeX](http://www.kieranhealy.org/esk/starter-kit-latex.html)
+- [https://github.com/alexeyr/company-auctex](https://github.com/alexeyr/company-auctex)
 - [http://www.reddit.com/r/emacs/comments/2jng1m/how_to_set_up_forwardinverse_searches_with_auctex/](http://www.reddit.com/r/emacs/comments/2jng1m/how_to_set_up_forwardinverse_searches_with_auctex/)
 - [https://github.com/monsanto/auto-complete-auctex](https://github.com/monsanto/auto-complete-auctex)
     - [http://melpa.milkbox.net/#/auto-complete-auctex](http://melpa.milkbox.net/#/auto-complete-auctex)
