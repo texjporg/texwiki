@@ -136,9 +136,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                  "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
   (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
                                      (output-pdf "SumatraPDF")))
-  (setq japanese-LaTeX-default-style "jsarticle")
+  (setq japanese-LaTeX-default-style "bxjsarticle")
   ;(setq japanese-LaTeX-default-style "ltjsarticle")
-  ;(setq japanese-LaTeX-default-style "bxjsarticle")
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
@@ -308,9 +307,8 @@ Emacs 24.5 以降にアップグレードします．<br>
                                      (output-pdf "displayline")))
   ;(setq TeX-view-program-selection '((output-dvi "Skim")
   ;                                   (output-pdf "Skim")))
-  (setq japanese-LaTeX-default-style "jsarticle")
+  (setq japanese-LaTeX-default-style "bxjsarticle")
   ;(setq japanese-LaTeX-default-style "ltjsarticle")
-  ;(setq japanese-LaTeX-default-style "bxjsarticle")
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
@@ -489,9 +487,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                      (output-pdf "Evince")))
   ;(setq TeX-view-program-selection '((output-dvi "Okular")
   ;                                   (output-pdf "Okular")))
-  (setq japanese-LaTeX-default-style "jsarticle")
+  (setq japanese-LaTeX-default-style "bxjsarticle")
   ;(setq japanese-LaTeX-default-style "ltjsarticle")
-  ;(setq japanese-LaTeX-default-style "bxjsarticle")
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq preview-image-type 'dvipng)
@@ -697,10 +694,10 @@ upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する場合は次のように設�
 
 ### ドキュメントクラスの設定 {#l246b90f}
 
-[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/) の jsarticle を標準に設定する場合は以下のように設定します．
+[BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は以下のように設定します．
 
 ```
-(setq japanese-LaTeX-default-style "jsarticle")
+(setq japanese-LaTeX-default-style "bxjsarticle")
 ```
 
 ### DVI, PDF ビューアーの変更 {#pfbe6148}
