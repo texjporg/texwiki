@@ -351,3 +351,4 @@ Add-Type -ReferencedAssemblies $assemblies -TypeDefinition $source -Language CSh
 - [Windows で sudo なことをする。](http://mimumimu.net/blog/2014/12/11/windows-%E3%81%A7-sudo-%E3%81%AA%E3%81%93%E3%81%A8%E3%82%92%E3%81%99%E3%82%8B%E3%80%82/)
 - [http://qiita.com/tags/powershell](http://qiita.com/tags/powershell)
     - [「 Linux ならできるのに、だから Windows は...」「それ PowerShell でできるよ」](http://qiita.com/cd01/items/da9a36582372e7d0a7f6)
+- [バッチファイルから PowerShell を呼び出す方法](http://qiita.com/cd01/items/82829ba0ec0f59e1b04d)
