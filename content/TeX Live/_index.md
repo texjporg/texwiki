@@ -312,7 +312,7 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 - Beyond Linux From Scratch
     - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
-    - [http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/texlive.html](http://lfsbookja.sourceforge.jp/BLFS/svn.ja/pst/texlive.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html)
     - [BLFS での TeXLive ビルド](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=609)
 
 ## 関連リンク {#udd48b1b}
