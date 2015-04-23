@@ -299,6 +299,10 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 - [MinGW#TeX Live](/MinGW/#texlive)
 
+#### OS X {#m1f2034d}
+
+- [TexLive installation from sources, on Yosemite &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources/)
+
 #### Linux {#ue7a2b2a}
 
 - Momonga Linux
