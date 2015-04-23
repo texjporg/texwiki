@@ -125,18 +125,11 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [MobileOrg (Donate)](https://play.google.com/store/apps/details?id=com.matburt.mobileorg.donate), [MobileOrg](https://play.google.com/store/apps/details?id=com.matburt.mobileorg)
-    - [https://github.com/matburt/mobileorg-android](https://github.com/matburt/mobileorg-android)
-    - [Emacs/Org mode - TeX Wiki](</Emacs/Org mode/>)
+- [Junco](https://github.com/clerkma/Junco)
 - [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
     - [https://github.com/momodalo/vimtouch](https://github.com/momodalo/vimtouch)
     - [http://twilog.org/ti5942/search?word=VimTouch](http://twilog.org/ti5942/search?word=VimTouch)
     - [Vim - TeX Wiki](/Vim/)
-- [rbox](http://d.hatena.ne.jp/rattcv/searchdiary?word=rbox)
-    - [http://twilog.org/ti5942/search?word=rbox](http://twilog.org/ti5942/search?word=rbox)
-    - [Vim - TeX Wiki](/Vim/)
-- [920 Text Editor](https://play.google.com/store/apps/details?id=com.jecelyin.editor)
-    - [https://github.com/jecelyin/920-Text-Editor](https://github.com/jecelyin/920-Text-Editor)
 
 ## PDF ビューア {#t5fdeba9}
 
@@ -146,7 +139,7 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
     <!-- - --[[APV PDF Viewer:https://play.google.com/store/apps/details?id=cx.hell.android.pdfview]] -->
 
 - [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
-- [Adobe Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
+- [Adobe Acrobat DC – PDF Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
 
 ## BibTeX 関連 {#m2bc1f0c}
 
