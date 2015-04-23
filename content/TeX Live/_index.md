@@ -228,9 +228,10 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 - [the status of texlive-pretest mirrors](http://www.tug.org/texlive/mirmon/)
 
-- Network Based Installer, MacTeX
+- Network Based Installer, MacTeX, BasicTeX
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [ftp://ftp.math.utah.edu/pub/texlive/tlpretest/](ftp://ftp.math.utah.edu/pub/texlive/tlpretest/)
+    - [http://ctan.ijs.si/mirror/mactex/](http://ctan.ijs.si/mirror/mactex/)
 - TeX Live ISO Images
     - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
     - [ftp://ftp.math.utah.edu/pub/texlive/Images/test/](ftp://ftp.math.utah.edu/pub/texlive/Images/test/)
@@ -256,7 +257,7 @@ Windows PowerShell またはコマンド プロンプトから
 
 #### OS X {#a9a1fd1b}
 
-mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
+mactex-\*.pkg または BasicTeX-\*.pkg をダウンロードしてインストールします．
 
 #### Linux {#v9c33c6a}
 
