@@ -24,6 +24,7 @@ pukiwiki: "Standard ML"
 - [Poly/ML](http://www.polyml.org/)
 - [SML# - SML＃プロジェクト](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/)
     - [https://github.com/smlsharp/smlsharp](https://github.com/smlsharp/smlsharp)
+    - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/docs/2.0/ja/manual.xhtml](http://www.pllab.riec.tohoku.ac.jp/smlsharp/docs/2.0/ja/manual.xhtml)
     - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library)
         - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/lib/Basis/doc/api/](http://www.pllab.riec.tohoku.ac.jp/smlsharp/lib/Basis/doc/api/)
         - [http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FFFI](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?Library%2FFFI)
@@ -63,7 +64,10 @@ $ mingw-get install smlsharp
 
 #### SML# {#z15b6c9c}
 
-- [SML# - Cとのシームレスな連携](http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?FeatureInteroperability)
+- [SML#の拡張機能：Cとの直接連携](http://www.pllab.riec.tohoku.ac.jp/smlsharp/docs/2.0/ja/Ch9.xhtml)
+    <!-- -[http://www.pllab.riec.tohoku.ac.jp/smlsharp/ja/?FeatureInteroperability SML# - Cとのシームレスな連携] -->
+
+- [SMLSharpでFFIバインディングを書く時の知見](http://keens.github.io/blog/2015/04/19/smlsharpdeffibaindinguwokakutokinochiken/)
 - [SML# - C言語バインディング まとめ (ML/LL AdventCalendar20日目)](http://d.hatena.ne.jp/eldesh/20121220/1355970020)
 - [SML#の威力](http://d.hatena.ne.jp/sumii/20070402/p1)
 - [SML# 0.20 から Tcl を呼ぶ](http://rainyday.blog.so-net.ne.jp/2007-03-31)
