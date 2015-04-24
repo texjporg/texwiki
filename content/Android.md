@@ -24,53 +24,21 @@ pukiwiki: "Android"
     - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
     - [http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones](http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones)
 
-TeX Live for Android を起動して TeX Live をインストールします．
+pdflatex は普通に使用できるそうです：[https://twitter.com/ti5942/status/398938593088901120](https://twitter.com/ti5942/status/398938593088901120)
 
-***
+```
+u0_a77@android:/ $ pdflatex -version
+pdfTeX 3.14159265-2.6-1.40.16 (Web2C 2015 for Android)
+```
 
-<span style="color:#0077CC;background-color:#333333;"><span style="font-size:30px"><span style="color:#0077CC;background-color:#333333;">　Install TeXLive to you device?　</span>　　　　　　　　　　　　　　</span></span><br>
+uplatex も普通に使用できるそうです：[https://twitter.com/ti5942/status/398946031406034945](https://twitter.com/ti5942/status/398946031406034945)
 
-<span style="color:#0077CC;background-color:#333333;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
+```
+u0_a77@android:/ $ uplatex -version
+e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (Web2C 2015 for Android)　　　　　　　　　
+```
 
-<span style="color:White;background-color:#333333;"><span style="font-size:24px"><span style="color:White;background-color:#333333;">　Are you sure that your device's internal storage is larger than　</span>　　　</span></span><br>
-
-<span style="color:White;background-color:#333333;"><span style="font-size:24px"><span style="color:White;background-color:#333333;">　70M?　</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span></span><br>
-
-<span style="color:Gray;background-color:#333333;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:#333333;">　　　　　　　　　　　　　　 No 　　　　　　　　　　　　　　<span style="color:Gray;background-color:#333333;"><strong>│</strong></span>　　　　　　　　　　　　　　Yes　　　　　　　　　　　　　　</span><br>
-
-***
-
-pdflatex は普通に使用できるそうです．(→ [https://twitter.com/ti5942/status/398938593088901120](https://twitter.com/ti5942/status/398938593088901120) )
-
-***
-
-<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
-
-<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:Black;">u0_a77@android:/ $ pdflatex -version　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:White;background-color:Black;">pdfTeX 3.14159265-2.6-1.40.16 (Web2C 2015 for Android) 　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-***
-
-uplatex も普通に使用できるそうです．(→ [https://twitter.com/ti5942/status/398946031406034945](https://twitter.com/ti5942/status/398946031406034945) )
-
-***
-
-<span style="color:White;background-color:Black;"><span style="font-size:40px"><span style="color:#0077CC;background-color:Black;"><strong>ω</strong></span></span> <span style="font-size:24px"><span style="color:White;background-color:Black;">Window 1</span></span> <span style="color:Gray;background-color:Black;">◢</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>(＋)</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>×</strong></span></span>　　<span style="font-size:26px"><span style="color:Gray;background-color:Black;"><strong>☰</strong></span></span>　</span><br>
-
-<span style="color:#0077CC;background-color:Black;">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</span><br>
-
-<span style="color:White;background-color:Black;">u0_a77@android:/ $ uplatex -version 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
-
-<span style="color:White;background-color:Black;">e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (Web2C 2015 for Android)　　　　　　　　　　　　</span><br>
-
-***
-
-dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです． (→ [https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640) )
+dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです：[https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640)
 
 ***
 
@@ -84,9 +52,13 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
 %% Those options won't take effects unless you use flag 'S'.
 %%
 %% Key bits for PDF encryption (40 - 128)
+```
 
+```
 %K  40
+```
 
+```
 %% Permission flag for PDF encryption: Revision will be 3 if the key size
 %% is greater than 40 bits.
 %%
@@ -115,7 +87,9 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
 %%        copy of the PDF content could be generated. When this bit is clear
 %%        (and bit 3 is set), printing is limited to a low-level representation
 %%        of the appearance, possibly of degraded quality.
+```
 
+```
 %P  0x003C
 ```
 
