@@ -9,11 +9,20 @@ pukiwiki: "PDF"
 
 ## PDF {#kf03468a}
 
-PDF は [PostScript](/PostScript/) をベースに作成されたファイルフォーマットです．
-[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．
+PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作成された電子ドキュメントのファイルフォーマットです．
+
+***
+
+***
+
+### 仕様書 {#l37fe424}
 
 - [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
+
+### PDFの作り方 {#w4991875}
+
+[PDFの作り方](</PDFの作り方/>) を参照．
 
 ### PDF ライブラリ {#r450d9ad}
 
@@ -36,34 +45,34 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
     : PHP
     - [http://sourceforge.net/projects/tcpdf/](http://sourceforge.net/projects/tcpdf/)
 - [PDFMiner](http://www.unixuser.org/~euske/python/pdfminer/)
-    : [Python](/Python/)
+    : Python
 
 - [PyPDF2](https://github.com/mstamy2/PyPDF2)
-    : [Python](/Python/)
+    : Python
 
 - [ReportLab Toolkit](http://www.reportlab.com/software/opensource/rl-toolkit/)
-    : [Python](/Python/)
+    : Python
 
 - [ThinReports Generator](http://www.thinreports.org/features/generator/)
-    : [Ruby](/Ruby/)
+    : Ruby
 
 - [Prawn](http://prawn.majesticseacreature.com/)
-    : [Ruby](/Ruby/)
+    : Ruby
 
 - [RTeX](http://rtex.rubyforge.org/)
-    : [Ruby](/Ruby/)
+    : Ruby
 
 - [PDF::API2](http://search.cpan.org/dist/PDF-API2/)
-    : [Perl](/Perl/)
+    : Perl
 
 - [PDFJ](http://hp1.jonex.ne.jp/~nakajima.yasushi/)
-    : [Perl](/Perl/)
+    : Perl
     - 日本語 PDF を生成する Perl モジュール．JIS X 4051 にほぼ準拠した日本語組版ルールを組み込んであるとのこと
-- libHaru
+- [libHaru](http://libharu.org/)
     : C, C++
 
 - [CL-PDF](http://www.cliki.net/CL-PDF)
-    : [Common Lisp](/Lisp/#jce01653)
+    : Common Lisp
     - [cl-pdf はもともと日本語 True Type フォントが使えたよ](http://read-eval-print.blogspot.com/2011/07/cl-pdf-true-type.html)
 - [CamlPDF](http://www.coherentpdf.com/ocaml-libraries.html)
     : OCaml
@@ -72,13 +81,10 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
     : C++ のライブラリも付属しています．
 
 - [Origami](http://esec-lab.sogeti.com/pages/Origami)
-    : [Ruby](/Ruby/)
+    : Ruby
 
-- [Hummus PDF Writer](http://pdfhummus.com/):C++, JavaScript (Node.js)
-
-### PDF 作成 {#w4991875}
-
-- PDF 作成に関しては [PDFの作り方](</PDFの作り方/>) を参照してください．
+- [Hummus PDF Writer](http://pdfhummus.com/)
+    : C++, JavaScript (Node.js)
 
 ### 関連リンク {#j6d79d4c}
 
