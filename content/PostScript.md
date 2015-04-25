@@ -33,9 +33,9 @@ PostScript の技術情報は Adobe の
 
 [Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
 
-#### Acrobat Distiller {#l57d69fc}
+#### Adobe Acrobat Distiller DC {#l57d69fc}
 
-Acrobat Distiller は PostScript ファイルを PDF に変換するためのソフトウェアです．
+Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するためのソフトウェアです．
 
 - [Acrobat Distiller は何をするためのソフトウェアですか](http://helpx.adobe.com/jp/legacy/kb/4624.html)
 
