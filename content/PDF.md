@@ -74,6 +74,8 @@ PDF は [PostScript](/PostScript/) をベースに作成されたファイルフ
 - [Origami](http://esec-lab.sogeti.com/pages/Origami)
     : [Ruby](/Ruby/)
 
+- [Hummus PDF Writer](http://pdfhummus.com/):C++, JavaScript (Node.js)
+
 ### PDF 作成 {#w4991875}
 
 - PDF 作成に関しては [PDFの作り方](</PDFの作り方/>) を参照してください．
