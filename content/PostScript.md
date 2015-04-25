@@ -7,20 +7,20 @@ pukiwiki: "PostScript"
 
 # PostScript
 
-## PostScript → 問題が発生する場合は [PDF](/PDF/) を使用する {#g9b8f6ae}
+## PostScript {#g9b8f6ae}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+PostScript は業界標準のページ記述言語です．
+[PDF](/PDF/) は PostScript を元にして策定されました．
 
-## Summary {#ddaca604}
+***
 
-PostScript は業界標準のページ記述言語です。<br>
-[PDF](/PDF/) は PostScript がベースになっています。<br>
+***
 
-### PostScript {#h5ddd3dc}
+### 技術情報 {#h5ddd3dc}
 
 PostScript の技術情報は Adobe の
 [Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp)
-から全て得ることができます。<br>
+から全て得ることができます。
 
 - [Adobe PostScript language specifications](http://partners.adobe.com/public/developer/ps/index_specs.html)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
@@ -31,13 +31,13 @@ PostScript の技術情報は Adobe の
 
 #### Ghostscript {#c88bc88f}
 
-Ghostscript は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
-
-[Ghostscript - TeX Wiki](/Ghostscript/) を参照．
+[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
 
 #### Acrobat Distiller {#l57d69fc}
 
-[Acrobat Distiller は何をするためのソフトウェアですか](http://helpx.adobe.com/jp/legacy/kb/4624.html)
+Acrobat Distiller は PostScript ファイルを PDF に変換するためのソフトウェアです．
+
+- [Acrobat Distiller は何をするためのソフトウェアですか](http://helpx.adobe.com/jp/legacy/kb/4624.html)
 
 ### EPS 作成 {#lceaa8b7}
 
