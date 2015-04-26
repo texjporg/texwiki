@@ -13,7 +13,7 @@ pukiwiki: "FrontPage"
 
 <!-- * FrontPage [#pe4f375a] -->
 
-TeX Wiki は，TeX, LaTeX, PDF, PostScript などに関する情報を提供する，読者参加型ページです．
+TeX Wiki は，[TeX](/TeX/), [LaTeX](/LaTeX/), [PDF](/PDF/), [PostScript](/PostScript/) などに関する情報を提供する，読者参加型ページです．
 
 誰でも編集できますので，
 
