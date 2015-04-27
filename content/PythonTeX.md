@@ -9,9 +9,10 @@ pukiwiki: "PythonTeX"
 
 ## PythonTeX {#fef32cd2}
 
-PythonTeX は TeX Live, W32TeX に含まれています．<br>
-PythonTeX の実行には [Pygments](http://pygments.org/) が必要です．<br>
-PythonTeX は [Python](/Python/) 以外に Julia や [Ruby](/Ruby/) もサポートしています．<br>
+PythonTeX は，LaTeX ドキュメントの中に埋め込んだ Python ソースを実行してその結果を LaTeX ドキュメントに埋め込むためのパッケージです．
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+PythonTeX の実行には [Pygments](http://pygments.org/) が必要です．
+PythonTeX は [Python](/Python/) 以外に Julia や [Ruby](/Ruby/) もサポートしています．
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
 - [http://www.ctan.org/pkg/pythontex](http://www.ctan.org/pkg/pythontex)
@@ -31,8 +32,8 @@ Traceback (most recent call last):
 ImportError: No module named 'pygments'
 ```
 
-のように ImportError: No module named 'pygments' のエラーが発生する場合は pygments をインストールする必要があります．<br>
-Python 3.4 以降では pip を使ってインストールできます．<br>
+のように ImportError: No module named 'pygments' のエラーが発生する場合は pygments をインストールする必要があります．
+Python 3.4 以降では pip を使ってインストールできます．
 
 ```
 pip install pygments
