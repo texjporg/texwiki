@@ -9,7 +9,7 @@ pukiwiki: "ConTeXt"
 
 ## ConTeXt {#f2jmn54o}
 
-ConTeXt とは，TeX の上で動作するマクロパッケージで，LaTeX とはまったく別の体系です． <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． -->
+ConTeXt とは，TeX の上で動作するマクロパッケージで，[LaTeX](/LaTeX/) とはまったく別の体系です． <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． -->
 
 - [http://www.ctan.org/pkg/context](http://www.ctan.org/pkg/context)
 
