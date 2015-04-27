@@ -11,20 +11,24 @@ pukiwiki: "TeX"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TeX_logo.svg/200px-TeX_logo.svg.png" alt="TeX" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+TeX は Donald E. Knuth によって開発された組版エンジン，言語処理系です．
+
+単に「TeX」と言った場合，それが LaTeX のことを指している場合も多いのですが，TeX と LaTeX は本来区別されるべきものです．詳細は [LaTeX](/LaTeX/) の項目を参照してください．
+
+***
+
+***
 
 ## TeX 入門 {#q0b4ff33}
+
+おもに LaTeX の使いかたについて解説してあります．
 
 - [TeX入門](</TeX入門/>)
 
 ## TeX 処理系 {#g6783551}
 
-- [Writing Japanese in LaTeX : Part 1 – Introduction](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-1-introduction/)
-- [Writing Japanese in LaTeX : Part 2 – Characters and Encodings](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-2-characters-and-encodings/)
-- [Writing Japanese in LaTeX : Part 3 – Simple documents](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-3-simple-documents/)
-- [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
-- [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
-- [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
+Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．それぞれの処理系の解説ページをご覧ください．
+
 - [LuaTeX](/LuaTeX/)
 - LuaJITTeX
 - [XeTeX](/XeTeX/)
@@ -34,6 +38,23 @@ pukiwiki: "TeX"
 - [e-pTeX](/e-pTeX/)
 - [e-TeX](/e-TeX/)
 - TeX ( [ftp://ftp.cs.stanford.edu/pub/tex/](ftp://ftp.cs.stanford.edu/pub/tex/) )
+
+それぞれの関係性や特徴などをまとめた以下のリンクも参考になります．
+
+- [Writing Japanese in LaTeX : Part 1 – Introduction](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-1-introduction/)
+- [Writing Japanese in LaTeX : Part 2 – Characters and Encodings](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-2-characters-and-encodings/)
+- [Writing Japanese in LaTeX : Part 3 – Simple documents](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-3-simple-documents/)
+- [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
+- [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
+- [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
+
+## TeX のエラーメッセージ {#qda48d5d}
+
+TeX のエンジンレベルのエラーについては，以下でメッセージへの対処法が説明されていますので，参考にして下さい．
+
+- [TeX のエラーメッセージ](</TeX のエラーメッセージ/>)
+
+LaTeX のエラーメッセージは [LaTeX](/LaTeX/) の項目にまとめてあります．
 
 ## TeX プログラミング {#ff81e0cc}
 
