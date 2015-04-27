@@ -20,14 +20,16 @@ pukiwiki: "TeX入門"
 
 ## TeX，LaTeX とは？ {#nef9fd41}
 
-TeX は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
+[TeX](/TeX/) は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
 によって開発された，フリーの「<strong>組版システム</strong>」です．
 すなわち，活版印刷のような「文字や図版などの要素を紙面に配置する」という作業をコンピュータで行います．
 現在のバージョン番号は 3.14159265 です（2014 年 1 月にリリース）．
 
-LaTeX は TeX の上に構築されたフリーの文書処理システムです．
+[LaTeX](/LaTeX/) は TeX の上に構築されたフリーの文書処理システムです．
 [Leslie Lamport](http://lamport.org/) によって開発されました．
 TeX は「組版のために開発された言語」でもあり，そのままでは使いにくい点もあるので，LaTeX では一般的な文書作成に便利な機能拡張がなされています．
+
+現在では TeX で組版を行う場合には LaTeX を使うことが圧倒的に多いため，単に「TeX」と言った場合にそれが LaTeX のことを指している場合も多いのですが，本来 TeX と LaTeX は区別されるべきものです．
 
 ### 読み方 {#gea7d22e}
 
@@ -153,6 +155,8 @@ TeX Wiki には OS ごとのインストール方法が詳しく書かれてい�
 - [Overleaf](https://www.overleaf.com/)（旧称：writeLaTeX）
 
 ## 使い方 {#hf6bc116}
+
+主に LaTeX の使い方を中心に解説しています．
 
 - [最初の例](</TeX入門/最初の例/>)
 - [簡単な数式 (1)](</TeX入門/簡単な数式(1)/>)
