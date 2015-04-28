@@ -60,6 +60,7 @@ LaTeX のバージョン2が出た後に，次期バージョンである LaTeX3
 しかし，TeX Live 2015 からはこの方針が転換され，こうした変更点もカーネルに取り込み，もしそれで過去の文書の組版に問題が出るようならば latexrelease パッケージを読み込めば過去のバージョンの動作をするようになりました．
 
 - [LaTeX News, Issue 22](http://latex-project.org/ltnews/ltnews22.pdf)
+- kernel の大量の変更点：[forum:1558](https://okumuralab.org/tex/mod/forum/discuss.php?d=1558)
 
 % 要追記．
 
@@ -70,6 +71,24 @@ LaTeX の次期バージョンです．
 
 最近では，LaTeX2e の上でも expl3 パッケージを読み込めば開発中のこのプログラミング言語を試すことができるようになっています．
 いくつかの新しい LaTeX2e 用のパッケージはこの言語を用いて書かれています．
+
+#### 注意点 {#t6u982n7}
+
+新しい LaTeX2e 用のパッケージのうち，LaTeX3 の構文で記述されているものとして以下があげられます．
+
+- 例：[media9](/media9/), [siunitx](/siunitx/) など
+
+これらは expl3 を内部で読み込むようになっています．
+ただし，expl3 は pTeX や upTeX というエンジンを知らないため，これらを
+pdfTeX であると誤判定します（2015/03/01 現在の expl3 でも確認）．
+このことが直接影響することは少ないと思われますが，例えば
+media9 パッケージを使う場合に問題になることが確認されています．
+
+- 例：[日本語の文書に media9 パッケージでマルチメディア埋め込み](http://acetaminophen.hatenablog.com/entry/2014/11/28/002341)
+
+対処法として，ZR さんによる [bxexpl3ptex.sty](https://gist.github.com/zr-tex8r/2adc6f1e62cb591a1204) を用いることができます．
+
+ちなみに，pTeX で expl3 がサポートされたのは [qa:55490](https://okumuralab.org/~okumura/texfaq/qa/55490.html)（→ [qa:55523](https://okumuralab.org/~okumura/texfaq/qa/55523.html) でバグ修正）以降ですので，こうしたパッケージはそれ以前では利用できないことにご注意ください．
 
 ### LaTeX2.09 {#lb5604b4}
 
