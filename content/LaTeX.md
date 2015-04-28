@@ -51,7 +51,9 @@ LaTeX のチュートリアルが [TeX入門](</TeX入門/>)にあります．�
 
 ### LaTeX2e {#db98cc0c}
 
-LaTeX のバージョン2が出た後に，次期バージョンである LaTeX3 の開発が進められましたが，これが難航したために，LaTeX3 リリースまでの「つなぎ」として The New Standard LaTeX (LaTeX2e) というバージョンが1994年にリリースされました．
+LaTeX の現在の最新版であり，単に「LaTeX」と言った場合は通常これを指します．
+
+LaTeX のバージョン2が出た後に，次期バージョンである LaTeX3 の開発が進められました．しかし，これが難航したために，LaTeX3 リリースまでの「つなぎ」として The New Standard LaTeX (LaTeX2e) というバージョンが1994年にリリースされました．
 その後も LaTeX3 の開発は続けられていますが，現在でも LaTeX2e が最新版という状態が続いています．
 
 #### TeX Live 2015 以降での変更点 {#s8024647}
@@ -61,6 +63,7 @@ LaTeX のバージョン2が出た後に，次期バージョンである LaTeX3
 
 - [LaTeX News, Issue 22](http://latex-project.org/ltnews/ltnews22.pdf)
 - kernel の大量の変更点：[forum:1558](https://okumuralab.org/tex/mod/forum/discuss.php?d=1558)
+- [LaTeX が新しくなった話](http://d.hatena.ne.jp/zrbabbler/20150429/1430281181)
 
 % 要追記．
 
