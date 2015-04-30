@@ -7,10 +7,13 @@ pukiwiki: "BXjscls"
 
 # BXjscls
 
-## BXjscls {#l3cac28c}
+## [BXjscls](http://zrbabbler.sp.land.to/bxjscls.html) {#l3cac28c}
 
-BXjscls は pdflatex, lualatex, xelatex, uplatex, platex で使用可能な日本語組版のための LaTeX 文書クラスです．<br>
-TeX Live, W32TeX に含まれています．<br>
+BXjscls は pdflatex, lualatex, xelatex, uplatex, platex で使用可能な日本語組版のための LaTeX 文書クラスです．
+TeX Live, W32TeX に含まれています．
+
+奥村先生の「[pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)」は pLaTeX2e での使用を前提としているため，uplatex, platex 以外では使用することができません．
+BXjscls は新ドキュメントクラスから pLaTeX 依存の部分を取り除いたもので，これと各エンジン用の日本語処理パッケージを組み合わせることで，pLaTeX 以外でも新ドキュメントクラスを用いた場合と同等の文書作成が可能となります．
 
 - [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
 - [http://www.ctan.org/pkg/bxjscls](http://www.ctan.org/pkg/bxjscls)
@@ -25,9 +28,9 @@ TeX Live, W32TeX に含まれています．<br>
 
 ## 不具合 {#x3d34063}
 
-### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. → graphicx の xetex オプション指定をはずす {#oe701641}
+### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
 
-bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. が発生します．<br>
+bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．<br>
 
 ***
 
@@ -72,7 +75,6 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 ## 使い方 {#g8a35a3c}
 
 - [「BXjscls」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=BXjscls)
-- [http://zrbabbler.sp.land.to/bxjscls.html](http://zrbabbler.sp.land.to/bxjscls.html)
 - [BXjscls の pdflatex で日本語組版をしてみた](http://konoyonohana.blog.fc2.com/blog-entry-76.html)
 
-を参照．<br>
+を参照．
