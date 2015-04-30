@@ -73,7 +73,7 @@ jsMath.js の mathchardef テーブル内に追加
 ### tex.inc.php {#qfd69102}
 
 - [http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php](http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php)
-- [http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php](http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php)
+- [http://pukiwiki.osdn.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php](http://pukiwiki.osdn.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/tex.inc.php)
 
 ### texvc {#te0254cd}
 
