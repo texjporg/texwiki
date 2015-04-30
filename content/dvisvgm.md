@@ -9,10 +9,6 @@ pukiwiki: "dvisvgm"
 
 ## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
 
-<strong>目次</strong>
-
-## dvisvgm とは {#xb898030}
-
 dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．
 
 - dvisvgm 1.4 以降は pTeX で作成された DVI ファイル
@@ -21,30 +17,15 @@ dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソ�
 
 に対応しており，日本語を使用することができます．
 
-- [dvisvgm](http://dvisvgm.sourceforge.net/)
-- [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
+***
 
-### License {#b1b30f5a}
+***
 
-[GPLv3](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/COPYING)
-
-### リリース情報 {#t6f93e11}
-
-- [dvisvgm: News](http://dvisvgm.sourceforge.net/News)
-- [dvisvgm / Code / tip / NEWS](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/NEWS)
-
-### ChangeLog {#j5462a82}
-
-- [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
-- \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/ChangeLog?view=markup)
-
-## 使い方 {#he5a75c1}
+### 使い方 {#he5a75c1}
 
 dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する方法があります．
 
-### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
+#### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
 TeX Live 2014 (dvisvgm 1.6) 以降は [(e-)upTeX](/upTeX,upLaTeX/) で作成された DVI ファイルと [XeTeX](/XeTeX/) で作成された &#x58;DV ファイルに対応しているので日本語が使用できます．
 以下にソース例を示します．
@@ -102,12 +83,12 @@ $ dvisvgm -E hoge.eps
 dvisvgm を使用して DVI ファイル，&#x58;DV ファイルを SVG ファイルに変換した場合はテキストデータも保持されます．
 dvisvgm を使用して EPS ファイルを SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．
 
-### DVI -> PDF -> Inkscape -> SVG {#y57cab44}
+#### DVI -> PDF -> Inkscape -> SVG {#y57cab44}
 
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．
 Inkscape を使用する場合もテキストデータが保持されます．
 
-### DVI -> PDF -> MuPDF (mudraw) -> SVG {#pe2bf0a7}
+#### DVI -> PDF -> MuPDF (mudraw) -> SVG {#pe2bf0a7}
 
 DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．
 MuPDF の mudraw を使用する場合もテキストデータが保持されます．
@@ -117,7 +98,7 @@ PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用
 $ mudraw -o hoge.svg hoge.pdf
 ```
 
-### DVI -> PDF -> Poppler (pdftocairo) -> SVG {#dbe3e3c1}
+#### DVI -> PDF -> Poppler (pdftocairo) -> SVG {#dbe3e3c1}
 
 DVI ファイルを PDF ファイルに変換して [Poppler](/Poppler/) の pdftocairo を使えば PDF ファイルを SVG ファイルに変換できます．
 ただし pdftocairo を使用して SVG ファイルに変換した場合はテキストデータが失われて文字列のコピーができなくなります．
@@ -127,7 +108,28 @@ PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用
 $ pdftocairo -svg hoge.pdf
 ```
 
-## 関連リンク {#b9432180}
+### 関連リンク {#b9432180}
 
 - [dvisvgm : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvisvgm)
 - [LaTeX dviをsvgに変換 (dvisvgm)](http://www.yamamo10.jp/yamamoto/comp/latex/dvisvgm/)
+
+#### 公式サイト {#vab19c08}
+
+- [dvisvgm](http://dvisvgm.sourceforge.net/)
+- [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
+
+#### リリース情報 {#t6f93e11}
+
+- [dvisvgm: News](http://dvisvgm.sourceforge.net/News)
+- [dvisvgm / Code / tip / NEWS](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/NEWS)
+
+#### License {#b1b30f5a}
+
+[GPLv3](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/COPYING)
+
+#### ChangeLog {#j5462a82}
+
+- [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
+- \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/ChangeLog?view=markup)
