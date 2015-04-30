@@ -12,22 +12,23 @@ pukiwiki: "SumatraPDF/fwdsumatrapdf"
 
 ## fwdsumatrapdf {#pa539f71}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+fwdsumatrapdf は SumatraPDF で forward search を行うツールです．
+forward search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．
 
-## fwdsumatrapdf とは {#yd16dc0f}
+***
 
-fwdsumatrapdf は SumatraPDF で forward search を行うツールです．<br>
-forward search を行うには LaTeX コマンドのオプションに -synctex=1 または -synctex=-1 を追加する必要があります．<br>
+***
 
 ### お知らせ {#ebfb06f5}
 
-SumatraPDF はコマンドラインオプション -forward-search &lt;texfile> &lt;linenumber> を使用して forward search することが可能です．<br>
-forward search するときに SumatraPDF を前面に表示したい場合は fwdsumatrapdf を使用せずに SumatraPDF のコマンドラインオプションを使用してください．<br>
-forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．<br>
-ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
+SumatraPDF はコマンドラインオプション -forward-search &lt;texfile> &lt;linenumber> を使用して
+forward search することが可能です．
+forward search するときに SumatraPDF を前面に表示したい場合は fwdsumatrapdf を使用せずに
+SumatraPDF のコマンドラインオプションを使用してください．
+forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．
+ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．
 
-% fwdsumatrapdf の例示コードを削除しました．<br>
-% あらゆる言語で展示されていましたが，必要であれば最適な言語による例だけ復活させてください．
+ソースは C 言語版 を公開しています． <!-- fwdsumatrapdf の例示コードを削除しました． --> <!-- あらゆる言語で展示されていましたが，必要であれば最適な言語による例だけ復活させてください． --> <!-- // C 言語版のみ復活させました． -->
 
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
@@ -55,7 +56,7 @@ fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可
 - [サクラエディタ](</サクラエディタ/>)
     - [Typeset.js](</サクラエディタ/マクロ/#i861969f>)
 
-## 関連リンク {#c84cbf92}
+### 関連リンク {#c84cbf92}
 
 - [tweak DDEExecute (fix some edge cases)](https://github.com/sumatrapdfreader/sumatrapdf/commit/aa5b9fd2f4299af6be74934fc897c05b0ca114a3)
 - [Sumatra portable 2.4_Forward Search color not used?](http://forums.fofou.org/sumatrapdf/topic?id=3184115)
