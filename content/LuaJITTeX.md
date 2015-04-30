@@ -9,35 +9,27 @@ pukiwiki: "LuaJITTeX"
 
 ## [LuaJITTeX](https://foundry.supelec.fr/projects/luajittex/) {#y53144a3}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## LuaJITTeX とは {#u3c93cbf}
-
-LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている Lua を LuaJIT に置き換えたものです．
+LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を
+[LuaJIT](http://luajit.org/) に置き換えたものです．
 
 - [http://www.ntg.nl/pipermail/ntg-context/2014/076633.html](http://www.ntg.nl/pipermail/ntg-context/2014/076633.html)
 
 上のように現在では LuaTeX と共通のソースとなっています．
 
-### License {#a9b7759e}
+***
 
-[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
+***
 
-### ChangeLog {#s3ef1408}
-
-- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
-
-## インストール {#e0acc4f5}
+### インストール {#e0acc4f5}
 
 TeX Live 2014, W32TeX に含まれています．
 [LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．
 
-## 使い方 {#vad7d54e}
+### 使い方 {#vad7d54e}
 
 LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
 
-### Windows {#b1c497b6}
+#### Windows {#b1c497b6}
 
 LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能です．
 
@@ -136,7 +128,7 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 
 ***
 
-### Linux {#v08e3a2f}
+#### Linux {#v08e3a2f}
 
 コンソール (標準出力) に出力したい場合は printf を使用します．
 
@@ -159,7 +151,7 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 
 ***
 
-## 関連リンク {#s999db35}
+### 関連リンク {#s999db35}
 
 - [Newest &#39;luajittex&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/luajittex)
 - [QA: luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)
@@ -168,3 +160,12 @@ Windows PowerShell またはコマンド プロンプト (標準出力) に出�
 - [https://code.launchpad.net/~reviczky/+recipe/luajittex-daily](https://code.launchpad.net/~reviczky/+recipe/luajittex-daily)
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 - [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
+
+#### License {#a9b7759e}
+
+[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
+
+#### ChangeLog {#s3ef1408}
+
+- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
