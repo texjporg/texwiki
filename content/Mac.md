@@ -376,6 +376,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められたケースを中心に -->
 <!-- 参考事例を紹介するのがよろしいかと思います。 -->
 
+- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 - [Mac OS X Yosemite に TeX をインストールする](http://satomablog.blog.fc2.com/blog-entry-17.html)
 - [MacTeX のダウンロードとインストール](http://medemanabu.net/latex/mactex-download-install/), [Mac Yosemite - Ghostscript 9.15 のインストール](http://medemanabu.net/latex/mac-os-x-yosemite-ghostscript-9-15-package-install/)
 - \[[Yosemite\]MacTeXのインストール](http://www.aruneko.net/archives/1285)
@@ -384,7 +385,7 @@ OS X の游明朝・游ゴシックフォントに関しては [游明朝体・�
 - [Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
 - [愛機のMacにTeXコンパイル環境を構築したときのメモ](http://kzhrknt.hatenablog.com/entry/2014/09/14/032907)
 - [OS X+Homebrew+zshでMacTeXをインストール](http://qiita.com/enokawa/items/3e12c419ca6ded097e0f)
-- [docs/TeX/TeX on Mac - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Mac)\\
+- [docs/TeX/TeX on Mac - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Mac)
 - [MacTeX 2014 - 一歩前進](http://succzero.hatenablog.com/entry/2014/07/17/041211)
 - [TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)<br>[TeX/Install/TeXLive2014/OSXFont - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall%2FTeXLive2014%2FOSXFont)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
