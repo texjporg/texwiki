@@ -416,7 +416,7 @@ PATH という欄があればそれをクリックして［編集］を押しま
 
 ### Perl インタプリタのインストール {#c6d961fb}
 
-W32TeX に含まれるいくつかのファイルは Perl に依存しています．（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など．）余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
+W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存しています（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など）．余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
 
 ## アップデート {#o482d037}
 
