@@ -7,85 +7,14 @@ pukiwiki: "C"
 
 # C
 
-## C {#hb6b6e11}
+## fwdsumatrapdf の例示ソース {#w4b5f216}
 
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/9/95/The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg/200px-The_C_Programming_Language%2C_First_Edition_Cover_%282%29.svg.png,right,around,nolink,C) -->
+fwdsumatrapdf（SumatraPDF で forward search を行うツール）の，C 言語による例示ソースです． <!-- 意外と fwdsumatrapdf 自体は外部サイトからリンクされていることが判明したため，最も使いやすい --> <!-- C 言語版のみソースを再公開します． -->
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/200px-The_C_Programming_Language_logo.svg.png" alt="C" style="float:right">
-
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Summary {#k4c5d2ad}
-
-C は汎用プログラミング言語です．<br>
-C で記述されたライブラリは C++, D, Go, Rust, Pascal, Fortran, Haskell, Standard ML, OCaml, F#, C#, Visual Basic, C++/CLI, Nemerle, Java, Scala, [Python](/Python/), Julia, [Ruby](/Ruby/), [Perl](/Perl/) などから呼び出すこともできます．<br>
-
-- [Wikipedia.ja:C言語](https://ja.wikipedia.org/wiki/C%E8%A8%80%E8%AA%9E)
-- [C言語 - Wikibooks](http://ja.wikibooks.org/wiki/C%E8%A8%80%E8%AA%9E)
-- [苦しんで覚えるＣ言語](http://9cguide.appspot.com/)
-- [C言語は今でも価値のある言語か？](http://www.infoq.com/jp/news/2013/01/C-Language)
-- \[[SDK\] プロセスの列挙](http://shoppers-jp.com/tech/sdk037.html)
-- [コマンドライン引数の取得（プロセスファイルシステムを利用する） - Linux/C/C++ Tips](http://lldev.jp/linux_c_cpp/tips/pfs_cmdline.html)
-- [http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline](http://stackoverflow.com/questions/1585989/how-to-parse-proc-pid-cmdline)
-- [http://cx20.main.jp/blog/hello/category/win32-api/](http://cx20.main.jp/blog/hello/category/win32-api/)
-- [http://cx20.main.jp/blog/hello/2012/06/](http://cx20.main.jp/blog/hello/2012/06/)
-- [Wikipedia.ja:呼出規約](https://ja.wikipedia.org/wiki/%E5%91%BC%E5%87%BA%E8%A6%8F%E7%B4%84)
-- [C言語何でも質問掲示板](http://dixq.net/forum/viewforum.php?f=3)
-- [桂田研卒研ノート](http://nalab.mind.meiji.ac.jp/~mk/labo/text/)
-- [CからFortranルーチンを呼び出す](http://phase.hpcc.jp/phase/o2k/technical_doc_library/docs/porting/fortranfromc.html)
-- [11.1.4 ルーチン名の下線 (Sun Studio 12: Fortran プログラミングガイド)](http://docs.oracle.com/cd/E19205-01/820-1203/aeula/index.html)
-- [C言語機能の比較](http://www.6809.net/tenk/?C%E8%A8%80%E8%AA%9E%E6%A9%9F%E8%83%BD%E3%81%AE%E6%AF%94%E8%BC%83)
-- [C言語で可変個引数を型拘束したい](http://mattn.kaoriya.net/software/lang/c/20140312213057.htm)
-- [連載：C言語の最新事情を知る](http://www.buildinsider.net/small/clang)
-- [CPP(コンパイルしない方の関数型なC言語)プログラミング入門。とりあえずFizzBuzzまで](http://qiita.com/alucky0707/items/3599cdcf973382df978b)
-
-### 処理系 {#d2633a16}
-
-- [GCC, the GNU Compiler Collection - GNU Project - Free Software Foundation (FSF)](http://gcc.gnu.org/)
-    - [MinGW/MinGW-W64](/MinGW/)
-    - [Cygwin](/Cygwin/)
-- ["clang" C Language Family Frontend for LLVM](http://clang.llvm.org/)
-- [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>)
-    - [C99 library support in Visual Studio 2013](http://blogs.msdn.com/b/vcblog/archive/2013/07/19/c99-library-support-in-visual-studio-2013.aspx)
-- [TCC : Tiny C Compiler](http://bellard.org/tcc/)
-
-### ライブラリ・フレームワーク {#w5f859a1}
-
-- [GTK+](http://www.gtk.org/)
-- GLib
-
-### IDE・エディタ {#vaa4f864}
-
-#### フリーソフトウェア (オープンソースソフトウェア) {#n4409bbb}
-
-- [Eclipse](/Eclipse/)
-    - [Eclipse CDT](http://www.eclipse.org/cdt/)
-- [Emacs](/Emacs/)
-- [Vim](/Vim/)
-- [Notepad++](/Notepad++/)
-- [サクラエディタ](</サクラエディタ/>)
-
-## [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) <a id="fwdsumatrapdf"></a> {#be8d6381}
-
-### C 版 {#a48a3eb3}
-
-[MinGW/MinGW-W64](/MinGW/) の GCC でビルドできます．<br>
-
-```
-gcc -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
-```
-
-Clang/LLVM でもビルド可能です．<br>
-
-```
-clang -std=c11 -static -o fwdsumatrapdf.exe fwdsumatrapdf.c -luser32 -lshell32 -ladvapi32 -lshlwapi
-```
-
-Microsoft Visual Studio Community の C/C++ Optimizing Compiler for x86/x64 でもビルド可能です．<br>
-
-```
-cl fwdsumatrapdf.c user32.lib advapi32.lib shlwapi.lib
-```
+forward search するときに [SumatraPDF](/SumatraPDF/) を前面に表示したい場合は単に
+SumatraPDF のコマンドラインオプションを使用すれば済みますが，逆に
+SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．
+ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．
 
 ***
 
