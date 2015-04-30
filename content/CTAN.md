@@ -9,12 +9,12 @@ pukiwiki: "CTAN"
 
 ## CTAN {#CTAN}
 
-### 目次 {#de6cddf1}
-
-### CTAN とは？ {#what}
-
 CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は
 TeX 関連のファイルやソフトウェアを集めたウェブサイトです．
+
+***
+
+***
 
 ### Ring Server によるミラーリング {#RingServer}
 
