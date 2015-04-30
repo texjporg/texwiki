@@ -103,6 +103,11 @@ media9 パッケージを使う場合に問題になることが確認されて�
 LaTeX2e の一つ前の版であり，一昔前には広く使われていました．
 冒頭が \documentclass ではなく \documentstyle になっているものはこのバージョン向けに書かれた文書です．
 
+### 関連リンク {#ta293e5c}
+
+- [LaTeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTeX)
+- [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
+
 [^1]: 紛らわしいことに LaTeX にもパッケージという用語がありますが，マクロパッケージといった場合には単に「TeX のマクロ集（フォーマット）」という意味になります．[TeX の項目を参照](/TeX/#zf0ba6fa)．
 [^2]: 現在でも，tex, ptex, pdftex などのコマンドで plain TeX を使うことができます．
 [^3]: 他に，TeX の上に構築された文書処理システムとして [ConTeXt](/ConTeXt/) があります．
