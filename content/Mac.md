@@ -554,7 +554,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
 - [TeXworks](/TeXworks/)
-    - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks 0.4.5 on Yosemite+](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1522) を使用してください．<br>
+    - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください．<br>
     - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
     - Karabiner で Backslash が優先されるようにキーバインドを変更します．<br>
 - TexitEasy
