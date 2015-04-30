@@ -9,67 +9,32 @@ pukiwiki: "LuaTeX"
 
 ## [LuaTeX](http://www.luatex.org/) {#af5563d6}
 
+LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
+が使える TeX です．派生版として LuaJITTeX があります．
+
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/LuaTeX_logo.svg/200px-LuaTeX_logo.svg.png" alt="LuaTeX" width="200" height="172" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## LuaTeX とは {#v17b2316}
+***
 
-LuaTeX は Lua が使える TeX です．<br>
-LuaTeX に関しては以下のページを参照してください．<br>
+### LuaTeX, LuaLaTeX で日本語 {#a0eb47cd}
 
-- [Luatex home page](http://www.luatex.org/)
-- [Main Page - LuaTeXWiki](http://wiki.luatex.org/)
-- [FusionForge: LuaTeX: Project Home](https://foundry.supelec.fr/projects/luatex/)
-- [lualatex · GitHub](https://github.com/lualatex)
-- [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
-- [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
-- [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
+LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．
 
-W32TeX における LuaTeX, LuaJITTEX と日本語ファイル名
+LuaLaTeX では [BXjscls](/BXjscls/) が使用可能です．
 
-```
-W32TeX における Windows 用 LuaTeX と LuaJITTEX は，最初のオプション
-つまり，C言語の言葉で argv[1] が -cmdx あるいは --cmdx である場合に
-限り，日本語ファイル名を使用することができます。その他の場合には日本語
-ファイル名は使用できません。 -cmdx あるいは --cmdx オプションは argv[1]
-でないところに記述しても害はありませんが，何の効果も無く，単に無視され
-ます。なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定
-です。(2015/01/26 --Akira Kakuto).
-```
-
-### License {#u58971dd}
-
-[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
-
-### ChangeLog {#h5bae295}
-
-- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
-    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
-
-### 派生版 {#c1116884}
-
-- LuaJITTeX
-
-## LuaTeX, LuaLaTeX で日本語 {#a0eb47cd}
-
-### [LuaTeX-ja](/LuaTeX-ja/) {#v931ec0a}
-
-LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．<br>
-
-### [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html) {#rf46f8fc}
-
-LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.html)が使用可能です．<br>
-
-## その他パッケージ {#u56aae1f}
+### その他パッケージ {#u56aae1f}
 
 - [enumerator.sty](https://github.com/chemicl-t/enumerator) simple package for LuaLaTeX to enumerate files recursively.
 
-## 不具合 {#v600e2c1}
+### お知らせ {#t3177d69}
+
+#### W32TeX における LuaTeX, LuaJITTEX と日本語ファイル名 {#r425bd72}
+
+[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuaJITTEX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
+
+### 不具合 {#v600e2c1}
 
 - [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
 
@@ -97,7 +62,7 @@ LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.ht
 <!--  -->
 <!-- -[[\mathcode と \omathcode と \Umathcode と:http://d.hatena.ne.jp/zrbabbler/20120509/1336584479]] -->
 
-## 関連リンク {#cdd9fc14}
+### 関連リンク {#cdd9fc14}
 
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
 - [「LuaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX)
@@ -120,3 +85,27 @@ LuaLaTeX では [BXjscls パッケージ](http://zrbabbler.sp.land.to/bxjscls.ht
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html))
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
+- [Lua 入門（北川さん）](https://sites.google.com/site/keisansugaku/home/lua-intro)
+
+#### LuaTeX 関連サイト {#p8fbba4f}
+
+- [Luatex home page](http://www.luatex.org/)
+- [Main Page - LuaTeXWiki](http://wiki.luatex.org/)
+- [FusionForge: LuaTeX: Project Home](https://foundry.supelec.fr/projects/luatex/)
+- [lualatex · GitHub](https://github.com/lualatex)
+- [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
+- [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
+- [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
+
+#### License {#u58971dd}
+
+[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
+
+#### ChangeLog {#h5bae295}
+
+- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
+    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
