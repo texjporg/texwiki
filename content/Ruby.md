@@ -17,6 +17,7 @@ Ruby は汎用スクリプト言語です．
 
 TeX 関連プログラムには Ruby で書かれたスクリプトがあります（[convbkmk.rb](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/convbkmk/convbkmk.rb?view=markup) など）．
 これらのスクリプトを実行するには Ruby の処理系が必要です．
+また，Ruby は [PythonTeX](/PythonTeX/) でもサポートされています．
 
 ***
 
