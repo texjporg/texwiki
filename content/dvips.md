@@ -125,7 +125,7 @@ ifelse
 ```
 
 を出力します。
-従って Distiller で PDF
+従って Adobe Acrobat Distiller DC で PDF
 に変換する際には正しく A4 サイズになります。
 
 また，257mm×364mmに±5bpの誤差で一致するなら jisb4
