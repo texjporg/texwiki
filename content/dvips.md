@@ -9,29 +9,23 @@ pukiwiki: "dvips"
 
 ## dvips {#y40d302b}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## dvips とは {#lb7ddcdb}
-
 dvips は DVI ファイルを PS ファイルに変換するソフトウェアです．
 
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
 - [Dvips(k)](http://www.tug.org/dvips/)
 
-### ChangeLog {#o96c7d5c}
+***
 
-- \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/ChangeLog?view=markup)
+***
 
-## 使い方 {#a0ed32c6}
+### 使い方 {#a0ed32c6}
 
-### dvips の用紙サイズ指定 {#b1d8723b}
+#### dvips の用紙サイズ指定 {#b1d8723b}
 
 標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize
-には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。<br>
-この用紙設定コマンドが解釈不可能な場合には単に無視されます。<br>
+には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。
+この用紙設定コマンドが解釈不可能な場合には単に無視されます。
 
 レターサイズにするには dvips に -t letter というオプションをつけて実行します。
 
@@ -111,7 +105,8 @@ papersize=用紙の幅,用紙の高さ
 ```
 
 ここで dvi ファイル内で papersize
-を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら a4 が選ばれます (1bp = 1/72 インチ)。<br>
+を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら
+a4 が選ばれます (1bp = 1/72 インチ)。
 これは &#x25;&#x25;BoundingBox を210mm×297mmにし，
 
 ```
@@ -129,7 +124,7 @@ ifelse
 %%EndPaperSize
 ```
 
-を出力します。<br>
+を出力します。
 従って Distiller で PDF
 に変換する際には正しく A4 サイズになります。
 
@@ -151,8 +146,8 @@ ifelse
 %%EndPaperSize
 ```
 
-という6行を出力します。<br>
-従って PDF に変換した際に正しく JIS B4 サイズになります。<br>
+という6行を出力します。
+従って PDF に変換した際に正しく JIS B4 サイズになります。
 
 papersize が 5bp の誤差範囲内でどの項目にも一致しないなら，最後の unknown
 が選ばれ，
@@ -168,3 +163,22 @@ setpageparams } stopped end } { true } ifelse { statusdict /setpage known
 また，dvips に -t a4 というオプションを与えれば，強制的に a4
 という設定が選ばれ，PDF
 に変換した際に正しく A4 サイズになります。
+
+#### しおりの文字化けを防ぐ {#v5d4fb65}
+
+LaTeX で作成した日本語文書を
+dvips を用いて PDF 化する際，しおりが文字化けしないようにするためには
+[convbkmk](http://www.ctan.org/pkg/convbkmk) を使います。
+
+- [http://www.t-lab.opal.ne.jp/tex/uptex.html](http://www.t-lab.opal.ne.jp/tex/uptex.html)
+- [convbkmkコマンドの使い方　覚え書き](http://konoyonohana.blog.fc2.com/blog-entry-35.html)
+
+なお，convbkmk は Ruby スクリプトですので，[Ruby](/Ruby/) の処理系が必要です．
+
+### リンク集 {#fd89856f}
+
+#### ChangeLog {#o96c7d5c}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/ChangeLog?view=markup)
