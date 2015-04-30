@@ -20,7 +20,7 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 ### インストール {#t07c147c}
 
 TeX Live, W32TeX には Latexmk が最初から含まれています．ただし，[W32TeX](/W32TeX/) の場合は別途
-[Perl](/Perl/) インタプリタが必要です．
+Perl インタプリタが必要です（[Perl](/Perl/) の項目参照）．
 
 #### Arch Linux {#qee2215d}
 
