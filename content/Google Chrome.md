@@ -13,19 +13,13 @@ pukiwiki: "Google Chrome"
 
 <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Chromium_11_Logo.svg/200px-Chromium_11_Logo.svg.png" alt="Chromium" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+Google Chrome は Google が開発している Web ブラウザです．
 
-## Google Chrome とは {#sada177b}
+Chromium は Google Chrome で使用されているオープンソースの Web ブラウザです．
 
-Google Chrome は Google が開発している Web ブラウザです．<br>
+***
 
-- [Google Chrome](https://www.google.com/chrome)
-
-## Chromium とは {#sac771fc}
-
-Chromium は Google Chrome で使用されているオープンソースの Web ブラウザです．<br>
-
-- [The Chromium Projects](http://www.chromium.org/)
+***
 
 ### ダウンロード/インストール {#m19ade28}
 
@@ -53,26 +47,26 @@ about:plugins
 chrome://plugins
 ```
 
-を入力
+を入力します．
 
 ### Chrome/Chromium PDF Viewer <a id="chromepdfviewer"></a> {#wfd819f9}
 
 - [PDF ビューア](https://support.google.com/chrome/answer/1060734)
 - [http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api](http://stackoverflow.com/questions/14210865/google-chrome-pdf-viewer-api)
 
-Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があるかもしれません．<br>
-Linux 版の Chromium にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要はありません．<br>
+Windows 版の Google Chrome にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要があるかもしれません．
+Linux 版の Chromium にコマンドラインから引数を与えて Chrome/Chromium PDF Viewer で PDF ファイルを表示する場合は PDF ファイルをフルパスで指定する必要はありません．
 
 #### PDFium <a id="pdfium"></a> {#l83f1380}
 
-PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリングエンジンです．<br>
+PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリングエンジンです．
 
 - [https://code.google.com/p/pdfium/](https://code.google.com/p/pdfium/)
 - [https://pdfium.googlesource.com/pdfium/](https://pdfium.googlesource.com/pdfium/)
 
 #### PDFium.js <a id="pdfiumjs"></a> {#ead12fcd}
 
-PDFium.js は PDFium を JavaScript に移植したものです．<br>
+PDFium.js は PDFium を JavaScript に移植したものです．
 
 - [http://coolwanglu.github.io/PDFium.js/](http://coolwanglu.github.io/PDFium.js/)
 - [http://coolwanglu.github.io/PDFium.js/viewer/](http://coolwanglu.github.io/PDFium.js/viewer/)
