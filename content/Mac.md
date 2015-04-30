@@ -412,8 +412,8 @@ $ sudo tlmgr install collection-langjapanese
 
 ## [TeX Live](</TeX Live/>) ([Linux](/Linux/)) <a id="texlive-linux"></a> {#qab24fbc}
 
-VirtualBox などの仮想マシン上に Linux をインストールして TeX Live を使用する方法もあります．<br>
-OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください．<br>
+[VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に Linux をインストールして TeX Live を使用する方法もあります．<br>
+OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です．<br>
 
 - [Linux - TeX Wiki](/Linux/)
 
