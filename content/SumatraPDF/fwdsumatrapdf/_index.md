@@ -26,81 +26,8 @@ forward search するときに SumatraPDF を前面に表示したい場合は f
 forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使ってください．<br>
 ただし，SumatraPDF の起動時は SumatraPDF が前面に表示されます．<br>
 
-### C 版 {#qf7ea8bf}
-
-C を参照．<br>
-
-### C++ 版 {#p11a58d5}
-
-C++ を参照．<br>
-
-### D 版 {#f4f68590}
-
-D を参照．<br>
-
-### Go 版 {#af383c2e}
-
-Go を参照．<br>
-
-### Rust 版 {#wa031c69}
-
-Rust を参照．<br>
-
-### Pascal 版 {#k507022c}
-
-Pascal を参照．<br>
-
-### Fortran 版 {#a3d40116}
-
-Fortran を参照．<br>
-
-### Haskell 版 {#m42b08da}
-
-Haskell を参照．<br>
-
-### F# 版 {#pd9dd173}
-
-F Sharp を参照．<br>
-
-### C# 版 {#de1b4851}
-
-C Sharp を参照．<br>
-
-### VB 版 {#hc64ff38}
-
-Visual Basic を参照．<br>
-
-### C++/CLI 版 {#k49e25be}
-
-C++/CLI を参照．<br>
-
-### Nemerle 版 {#s374b71c}
-
-Nemerle を参照．<br>
-
-### Java 版 {#adf40b65}
-
-Java を参照．<br>
-
-### Python 版 {#kb7260ce}
-
-[Python](/Python/#fwdsumatrapdf) を参照．<br>
-
-### Julia 版 {#d6b5d40e}
-
-Julia を参照．<br>
-
-### Ruby 版 {#i32dcfa3}
-
-[Ruby](/Ruby/#fwdsumatrapdf) を参照．<br>
-
-### Perl 版 {#t94bc67d}
-
-[Perl](/Perl/#fwdsumatrapdf) を参照．<br>
-
-### Windows PowerShell 版 {#nc9c835c}
-
-Windows PowerShell を参照．<br>
+% fwdsumatrapdf の例示コードを削除しました．<br>
+% あらゆる言語で展示されていましたが，必要であれば最適な言語による例だけ復活させてください．
 
 ### 使用可能なエディタ・マクロ・プラグイン {#g4dd3cd8}
 
