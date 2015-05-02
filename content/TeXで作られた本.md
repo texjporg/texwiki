@@ -99,6 +99,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 石井米雄編『[世界のことば・辞書の辞典 ヨーロッパ編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36391-2）
 - 石井米雄編『[世界のことば・辞書の辞典 アジア編](http://dictionary.sanseido-publ.co.jp/dicts/foreign/worldword_dicts/index.html)』（2008.08.25，ISBN 978-4-385-36392-9）
 - 福井玲『[韓国語音韻史の探求](http://www.sanseido-publ.co.jp/publ/gen/gen2lang/koninhis_tank/)』（2013.01.01，ISBN 978-4-385-36604-3）
+- 野口忠司 編著『[シンハラ語・日本語辞典](http://dictionary.sanseido-publ.co.jp/dicts/foreign/sinhala/)』（2015.5.10，ISBN 978-4-385-12320-2）
 
 青磁書房から出ている次の本がみな TeX 組みとのこと：
 
