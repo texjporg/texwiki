@@ -9,17 +9,74 @@ pukiwiki: "PythonTeX"
 
 ## PythonTeX {#fef32cd2}
 
-PythonTeX は，LaTeX ドキュメントの中に埋め込んだ Python ソースを実行してその結果を LaTeX ドキュメントに埋め込むためのパッケージです．
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
-PythonTeX の実行には [Pygments](http://pygments.org/) が必要です．
-PythonTeX は [Python](/Python/) 以外に Julia や [Ruby](/Ruby/) もサポートしています．
+PythonTeX は，LaTeX ドキュメントの中に埋め込んだ [Python](/Python/) コードを実行して，その結果を元の場所に出力するためのパッケージです．
+Python 以外に [Ruby](/Ruby/) や Julia, Octave もサポートしています．
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
 - [http://www.ctan.org/pkg/pythontex](http://www.ctan.org/pkg/pythontex)
 
+***
+
+***
+
+### インストール {#o64ddf5b}
+
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には含まれています．
+
+PythonTeX の利用には，パッケージ自体の他に [Python](/Python/) のインタプリタと [Pygments](http://pygments.org/) という Python モジュールが必要になります．
+Pygments は Python 3.4 以降では pip を使ってインストールできます．
+
+```
+pip install pygments
+```
+
+### 使い方 {#oa863e50}
+
+例として，次を pow.tex として保存してみましょう．
+
+```
+\documentclass{article}
+\usepackage{pythontex}
+\newcommand{\pow}[2]{\py{#1**#2}}
+\begin{document}
+$2^{10}=\pow{2}{10}$.
+\end{document}
+```
+
+これを pdflatex で処理します（platex でも大丈夫です）．
+
+```
+$ pdflatex pow
+...
+No file pythontex-files-pow/pow.pytxmcr.
+Run PythonTeX to create it.
+```
+
+```
+Package PythonTeX Warning: Missing autoprint content on input line 5.
+...
+```
+
+このようなログが出て，pow.pytxcode という中間ファイルが生成されます．
+これを pythontex で処理すれば，Python コードの実行結果が含まれた pythontex-files-pow/pow.pytxmcr というファイルが生成されます．
+さらにもう一度 pdflatex を実行すれば，2の10乗の値が正しく埋め込まれます．
+
+```
+$ pythontex pow
+This is PythonTeX 0.14
+
+--------------------------------------------------
+PythonTeX:  pow - 0 error(s), 0 warning(s)
+
+$ pdflatex pow
+...
+```
+
+まとめると，PythonTeX では latex → pythontex → latex の順でコマンドを実行する必要があります．
+
 ### 注意点 {#k9bf9ea1}
 
-コマンドラインから PythonTeX を実行したときに
+pythontex を実行したときに
 
 ```
 Traceback (most recent call last):
@@ -32,12 +89,7 @@ Traceback (most recent call last):
 ImportError: No module named 'pygments'
 ```
 
-のように ImportError: No module named 'pygments' のエラーが発生する場合は pygments をインストールする必要があります．
-Python 3.4 以降では pip を使ってインストールできます．
-
-```
-pip install pygments
-```
+のように ImportError: No module named 'pygments' のエラーが発生する場合は pygments がインストールされていません．[インストール](/PythonTeX/#o64ddf5b)を参照して下さい．
 
 ### 関連リンク {#e0f26668}
 
