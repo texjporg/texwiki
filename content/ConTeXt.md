@@ -21,4 +21,5 @@ ConTeXt とは，TeX の上で動作するマクロパッケージで，[LaTeX](
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
 - [http://qiita.com/tags/context](http://qiita.com/tags/context)
-- [ConTeXt の 索引 について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1266)
+- ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
+- ConTeXt での日本語設定：[forum:1562](https://okumuralab.org/tex/mod/forum/discuss.php?d=1562)
