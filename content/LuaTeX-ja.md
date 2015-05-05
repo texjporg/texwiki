@@ -7,15 +7,16 @@ pukiwiki: "LuaTeX-ja"
 
 # LuaTeX-ja
 
-[LuaTeX](/LuaTeX/), LuaJITTeX > LuaTeX-ja
-
 ## LuaTeX-ja {#nec94db0}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+LuaTeX-ja は [LuaTeX](/LuaTeX/) で日本語文書の組版を行うためのパッケージです．
+plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 
-## LuaTeX-ja とは {#ha0b38ce}
+***
 
-LuaTeX-ja は [LuaTeX, LuaLaTeX](/LuaTeX/), LuaJITTeX, LuaJITLaTeX で日本語文書の組版を行うためのパッケージです．<br>
+***
+
+### 公式サイト {#ha0b38ce}
 
 - [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
@@ -35,31 +36,18 @@ LuaTeX-ja は
 
 で利用可能です．
 
-### リリース情報 {#g1f2f88f}
-
-- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags)
-
-### ChangeLog {#ka55de08}
-
-- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/)
-    - [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
-- [http://sourceforge.jp/users/h7k/history](http://sourceforge.jp/users/h7k/history)
-- [http://sourceforge.jp/users/kmaeda/history](http://sourceforge.jp/users/kmaeda/history)
-
 ### インストール {#p4234337}
 
-[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．<br>
+[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
-TeX Live には luatexja が含まれています．<br>
+TeX Live には luatexja が含まれています．
 
 #### [W32TeX](/W32TeX/) {#a565ecc6}
 
-W32TeX には luatexja.tar.xz が含まれています．<br>
-W32TeX をフルインストールすると<br>
+W32TeX には luatexja.tar.xz が含まれています．
+W32TeX をフルインストールすると
 
 ```
 C:.
@@ -71,9 +59,7 @@ C:.
                      └─luatex-ja
 ```
 
-にインストールされます．<br>
-
-ls-R が必要ない場合は deltexlsr, ls-R が必要な場合は mktexlsr を実行してください．
+にインストールされます．
 
 #### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
 
@@ -101,19 +87,16 @@ $ sudo port install texlive-lang-japanese -doc
 
 ### 注意点 {#vbed1356}
 
-[LuaTeX-jaの使い方#手動でインストールする場合](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h3-.E6.89.8B.E5.8B.95.E3.81.A7.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.81.99.E3.82.8B.E5.A0.B4.E5.90.88) を参照．<br>
-
-現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．<br>
+現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．
 
 - [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
 - [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
 
-mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．<br>
-LuaJITTeX を使用すると 1.3 倍ぐらい早くなることがあるようです． → [luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)<br>
+W32TeX の場合，mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．
+また，LuaJITTeX を使用すると 1.3 倍ぐらい早くなることもあるようです ([forum:911](https://okumuralab.org/tex/mod/forum/discuss.php?d=911))．
 逆に大きなフォントを使用する場合など，LuaJITTeX のほうが極端に遅くなる場合もあります．
 
-たとえばファイルサイズが大きい SourceHanSans-Regular を
-使った次の例の場合，
+たとえばファイルサイズが大きい SourceHanSans-Regular を使った次の [ConTeXt](/ConTeXt/) の例の場合，
 
 ```
 %
@@ -131,53 +114,53 @@ compile_time(contextjit test.tex) / compile_time(context test.tex) = 8.4
 
 ぐらいになり，LuaJITTeX の方が約 8 倍長い時間がかかります．
 
-使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．<br>
-(u)jarticle や jsarticle などの (e-)(u)pTeX の使用を前提としたものは使用できません．<br>
+使用可能なドキュメントクラスは ltjarticle, ltjsarticle, bxjsarticle, beamer などがあります．
+(u)jarticle や jsarticle などの (e-)(u)pTeX の使用を前提としたものは使用できません．
 
-使用可能な文字コードは UTF-8 です．<br>
-Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．<br>
+使用可能な文字コードは UTF-8 です．
+Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．
 
 ### 不具合 {#m2b9f4bc}
 
-[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．<br>
+[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
 
-## 他のパッケージとの併用 {#kdbc7cfe}
+### 他のパッケージとの併用 {#kdbc7cfe}
 
-### [microtype](http://ctan.org/pkg/microtype) {#m65358c5}
+#### [microtype](http://ctan.org/pkg/microtype) {#m65358c5}
 
-ltjsarticle.cls と microtype パッケージを使用してタイプセットすると以下のエラーが発生することがあるかもしれません．<br>
+ltjsarticle.cls と microtype パッケージを使用してタイプセットすると以下のエラーが発生することがあるかもしれません．
 
 ```
 ! Extra \else.
 \XKV@wh@list ...r \expandafter \XKV@wh@list \else
                                                   \def #3{#6}\expandafter \e...
 l.64    }
+```
 
+```
 ?
 ```
 
-上記のエラーが発生する場合は [pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex を実行するとエラーになる](/Pandoc/#h2f8de68) を参照してください．<br>
+上記のエラーが発生する場合は [Pandoc](/Pandoc/) の項目の [PDF への変換で ltjsarticle を使うとエラーが出る](/Pandoc/#h2f8de68) を参照してください．
 
-### [OTF](/OTF/) {#g94672b9}
+#### [OTF](/OTF/) {#g94672b9}
 
-OTF パッケージ (japanese-otf, japanese-otf-uptex) は使用できません．<br>
-LuaTeX-ja では luatexja-otf.sty を使用します．<br>
+OTF パッケージ (japanese-otf, japanese-otf-uptex) は使用できません．
+LuaTeX-ja では luatexja-otf.sty を使用します．
 
 ```
 \usepackage{luatexja-otf}
 ```
 
-### [Beamer](/Beamer/) {#w67ac91d}
+#### [Beamer](/Beamer/) {#w67ac91d}
 
-[Beamer](/Beamer/) で LuaTeX-ja を使ってみたところ特に問題なく使用できています．<br>
+[Beamer](/Beamer/) で LuaTeX-ja を使ってみたところ特に問題なく使用できています．
 
-### [hyperref](/hyperref/) {#v13d851a}
+#### [hyperref](/hyperref/) {#v13d851a}
 
-LuaLaTeX でも [hyperref](/hyperref/) が使用できます．<br>
+LuaLaTeX でも [hyperref](/hyperref/) が使用できます．
 
-#### しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードの作成 {#pf9bb02b}
-
-しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードの作成は [hyperref](/hyperref/) を使用します．<br>
+しおりと文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成するには次のようにします．
 
 ```
 \usepackage[pdfencoding=auto]{hyperref}
@@ -190,24 +173,24 @@ LuaLaTeX でも [hyperref](/hyperref/) が使用できます．<br>
   pdfkeywords={キーワード1\000\012キーワード2\000\015キーワード3\000\015\000\012キーワード4}}
 ```
 
-pdfencoding=auto または unicode=true を指定しないとしおりや文書のプロパティのタイトル・作成者・サブタイトル・キーワードの日本語が文字化けします．<br>
-改行は [XeLaTeX](/XeTeX/) と同様に Unicode の改行コードが 8進数表記で指定できます．<br>
+pdfencoding=auto または unicode=true を指定しないとしおりや文書のプロパティのタイトル・作成者・サブタイトル・キーワードの日本語が文字化けします．
+改行は [XeLaTeX](/XeTeX/) と同様に Unicode の改行コードが 8進数表記で指定できます．
 
 - LF (\000\012)
 - CR (\000\015)
 - CRLF (\000\015\000\012)
 
-ドライバを指定しないとうまく動作しない場合は pdftex を指定します．<br>
+ドライバを指定しないとうまく動作しない場合は pdftex を指定します．
 
 ```
 \usepackage[pdftex,pdfencoding=auto]{hyperref}
 ```
 
-### [Babel](/Babel/) {#v6636cbc}
+#### [Babel](/Babel/) {#v6636cbc}
 
 多言語混在文書を取り扱いたい場合、従来の LaTeX 同様 [babel](/Babel/) を用いることができます。
 
-#### japanese {#m6094362}
+<strong>（2013/07/11 追記）</strong>TeX Live 2013 では，japanese.ldf の漢字コードは ISO-2022-JP になっているので，LuaTeX-ja で扱うには UTF-8 に変換する必要があります．また，（少なくとも）20130515.0 以降では，命令に日本語文字を使えるようになっているので，以下の \西暦 → \Seireki 等の書き換えは不要です．
 
 japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese/japanese.ldf?view=markup) をそのまま使うとエラーが出ます。これは、japanese.ldf 中でプリミティブに日本語文字を使用しているためです。該当プリミティブを含めて、
 
@@ -224,15 +207,12 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 
 のように呼び出すと、platex 等で japanese を呼び出したのと同じように日本語環境を使うことができます。
 
-（2013/07/11 追記）TeX Live 2013 では，japanese.ldf の漢字コードは ISO-2022-JP になっているので，LuaTeX-ja で扱うには UTF-8 に変換する必要があります．また，（少なくとも）20130515.0 以降では，命令に日本語文字を使えるようになっているので，\西暦 → \Seireki 等の書き換えは不要です．
+#### polyglossia {#vf242886}
 
-### polyglossia {#vf242886}
+babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．
+polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と W32TeX に含まれています．
 
-babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
-polyglossia は LuaLaTeX と XeLaTeX がサポートされています．<br>
-polyglossia は TeX Live にも W32TeX にもインストールされています．<br>
-
-## 関連リンク {#sf395095}
+### 関連リンク {#sf395095}
 
 - [「LuaTeX-ja」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX-ja)
 - [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
@@ -255,3 +235,14 @@ polyglossia は TeX Live にも W32TeX にもインストールされていま�
 - [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
 - [LuaTeX で名刺作り](http://fugenji.org/thomas/diary/index.php?no=r1169)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
+
+#### リリース情報 {#g1f2f88f}
+
+- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags)
+
+#### ChangeLog {#ka55de08}
+
+- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/)
+    - [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
