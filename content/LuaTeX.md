@@ -38,37 +38,11 @@ LuaLaTeX では [BXjscls](/BXjscls/) が使用可能です．
 
 - [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
 
-<!-- **bm.sty が使えない → 回避策: amsmath + \pmb{} を使用するか[[ixbm.sty:https://gist.github.com/2625027]] を使用する → [[LuaTeX rev 4411:https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411]] で修正されました [#o2818a24] -->
-<!--  -->
-<!-- [[LuaTeX rev 4411:https://foundry.supelec.fr/scm/viewvc.php?view=rev&root=luatex&revision=4411]] で修正されました．~ -->
-<!-- LuaTeX, Version beta-0.70.2-2012052222 (TeX Live 2012) では bm.sty がエラーが出ることなく使用できています．~ -->
-<!--  -->
-<!-- LuaLaTeX の数式モード中で bm.sty を使用しようとするとエラーが出ます。 -->
-<!--  -->
-<!-- \documentclass{article}  -->
-<!-- \usepackage{bm}  -->
-<!-- \begin{document}  -->
-<!-- $\bm{a}$  -->
-<!-- \end{document} -->
-<!--  -->
-<!-- ! Invalid math code. -->
-<!-- \bm@command ->\mathchar 31458401 -->
-<!--  -->
-<!-- l.4 $\bm{a} -->
-<!--            $ -->
-<!-- ? -->
-<!--  -->
-<!-- これは、アルファベットの太字を \bm{} で出そうとすると、\mathchar に不正な値が渡されるためと思われます。amsmath を読み込んだ上で \pmb{} を用いるか、LuaLaTeX 向けの [[ixbm.sty:https://gist.github.com/2625027]] を使用すればエラーは回避できます。 -->
-<!--  -->
-<!-- -[[\mathcode と \omathcode と \Umathcode と:http://d.hatena.ne.jp/zrbabbler/20120509/1336584479]] -->
-
 ### 関連リンク {#cdd9fc14}
 
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
 - [「LuaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX)
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
-- [pdffill, luajalayout, luafontcomp, luamirageat etc.](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/)
-    - [biblatex パッケージを使ってみる](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/biblatex/)
 - [「LuaTeX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=LuaTeX)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [os.execute() in LuaTeX 0.75.0](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
