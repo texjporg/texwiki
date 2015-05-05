@@ -12,8 +12,6 @@ pukiwiki: "LuaTeX"
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
 が使える TeX です．派生版として LuaJITTeX があります．
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/LuaTeX_logo.svg/200px-LuaTeX_logo.svg.png" alt="LuaTeX" width="200" height="172" style="float:right">
-
 ***
 
 ***
