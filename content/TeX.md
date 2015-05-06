@@ -46,7 +46,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [Writing Japanese in LaTeX : Part 3 – Simple documents](http://www.preining.info/blog/2014/12/writing-japanese-in-latex-part-3-simple-documents/)
 - [TeX処理系御伽話](http://qiita.com/_yyu_/items/6404656f822ce14db935)
 - [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
-- [TeXの最近の動向 - MyTeXpert](http://mytexpert.sourceforge.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
+- [TeXの最近の動向 - MyTeXpert](http://mytexpert.osdn.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
 ### TeX のエラーメッセージ {#qda48d5d}
 
