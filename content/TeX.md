@@ -9,8 +9,6 @@ pukiwiki: "TeX"
 
 ## TeX {#b942966a}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TeX_logo.svg/200px-TeX_logo.svg.png" alt="TeX" style="float:right">
-
 TeX は Donald E. Knuth によって開発された組版エンジン，言語処理系です．
 
 単に「TeX」と言った場合，それが LaTeX のことを指している場合も多いのですが，TeX と LaTeX は本来区別されるべきものです．詳細は [LaTeX](/LaTeX/) の項目を参照してください．
@@ -179,6 +177,4 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 ### 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
-- [LaTeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTeX)
 - [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
-- [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
