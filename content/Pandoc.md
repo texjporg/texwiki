@@ -9,32 +9,26 @@ pukiwiki: "Pandoc"
 
 ## Pandoc {#j60e5103}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+Pandoc はあるマークアップ言語で書かれた文書を別の形式に変換するツールです．
+入力に Markdown, reStructuredText, HTML, [LaTeX](/LaTeX/), DocBook など，出力に左記の他プレーンテキスト，OpenDocument, Word docx, PDF などをサポートしています．
 
-## Summary {#z02a0637}
+***
 
-- [Pandoc](http://johnmacfarlane.net/pandoc/) a universal document converter
+***
+
+### 公式サイト {#z02a0637}
+
+- [http://pandoc.org/](http://pandoc.org/)
 - [https://github.com/jgm/pandoc](https://github.com/jgm/pandoc)
 
-### License {#q6e7e4cc}
+### 注意点 {#hee589a6}
 
-GPLv3, GPLv2
-
-- [https://github.com/jgm/pandoc/blob/master/COPYING](https://github.com/jgm/pandoc/blob/master/COPYING)
-- [https://github.com/jgm/pandoc/blob/master/COPYRIGHT](https://github.com/jgm/pandoc/blob/master/COPYRIGHT)
-
-### ChangeLog {#d1c7275b}
-
-- [https://github.com/jgm/pandoc/commits/master](https://github.com/jgm/pandoc/commits/master)
-
-## 注意点 {#hee589a6}
-
-### pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex を実行するとエラーになる → ltjsarticle.cls を修正して myltjsarticle.cls を作成して documentclass に myltjsarticle を指定する {#h2f8de68}
+#### PDF への変換で ltjsarticle を使うとエラーが出る {#h2f8de68}
 
 - [pandoc で PDF変換 エラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1005)
 - [Pandocを使ってMarkdownからPDFを生成する](http://qiita.com/takeh1k0/items/ff84cb85bfffedc75066)
 
-pandoc で documentclass に ltjsarticle を指定して lualatex を実行するとエラーが発生します．<br>
+pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定して lualatex を実行するとエラーが発生します．
 
 ```
 $ pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualatex
@@ -42,11 +36,13 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=ltjsarticle --latex-engine=lualate
 \XKV@wh@list ...r \expandafter \XKV@wh@list \else
                                                   \def #3{#6}\expandafter \e...
 l.64    }
+```
 
+```
 pandoc: Error producing PDF from TeX source
 ```
 
-以下のように ltjsarticle.cls を修正して myltjsarticle.cls を作成します．<br>
+以下のように ltjsarticle.cls を修正して myltjsarticle.cls を作成します．
 
 ***
 
@@ -119,13 +115,13 @@ $ mv ltjsarticle.cls myltjsarticle.cls
 $ sudo mktexlsr
 ```
 
-documentclass に myltjsarticle を指定すればエラーにならずに PDF ファイルが作成できます．<br>
+documentclass に myltjsarticle を指定すればエラーにならずに PDF ファイルが作成できます．
 
 ```
 $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=lualatex
 ```
 
-## エディタ {#h2a45f83}
+### エディタ {#h2a45f83}
 
 - [Emacs](/Emacs/)
     - [Pandoc-mode](http://joostkremers.github.io/pandoc-mode/)
@@ -134,7 +130,7 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=luala
 - [Atom](/Atom/)
 - [Brackets](/Brackets/)
 
-## 関連リンク {#ud9aba13}
+### 関連リンク {#ud9aba13}
 
 - [Pandoc ユーザーズガイド 日本語版](http://sky-y.github.io/site-pandoc-jp/users-guide/)
 - [http://qiita.com/tags/pandoc](http://qiita.com/tags/pandoc)
@@ -157,3 +153,14 @@ $ pandoc hoge.md -o hoge.pdf -V documentclass=myltjsarticle --latex-engine=luala
 - [省力TeX](http://mith009.hatenablog.com/entry/2013/11/18/025450)
 - [kramdownに関する覚え書き](http://cup.sakura.ne.jp/kmd_a.htm)
 - [md2pdf](https://github.com/vzaccaria/md2pdf)
+
+#### License {#q6e7e4cc}
+
+GPLv3, GPLv2
+
+- [https://github.com/jgm/pandoc/blob/master/COPYING](https://github.com/jgm/pandoc/blob/master/COPYING)
+- [https://github.com/jgm/pandoc/blob/master/COPYRIGHT](https://github.com/jgm/pandoc/blob/master/COPYRIGHT)
+
+#### ChangeLog {#d1c7275b}
+
+- [https://github.com/jgm/pandoc/commits/master](https://github.com/jgm/pandoc/commits/master)
