@@ -68,6 +68,7 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 
 ここまではメジャーなものですが，他にも TeX Live には色々あるようです．
 
+- [Eplain](https://tug.org/eplain/)：Expanded plain TeX
 - [CSTeX](http://petr.olsak.net/cstex/)
 - [JadeTeX](http://jadetex.sourceforge.net/)
 - [Lollipop](http://ctan.org/pkg/lollipop)
