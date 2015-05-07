@@ -11,6 +11,7 @@ pukiwiki: "LuaJITTeX"
 
 LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を
 [LuaJIT](http://luajit.org/) に置き換えたものです．
+JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compiler，つまりその場で機械語へのコンパイルを行うという意味であり，これによりインタプリタ方式の通常の Lua よりも高速な動作が期待できます．
 
 - [http://www.ntg.nl/pipermail/ntg-context/2014/076633.html](http://www.ntg.nl/pipermail/ntg-context/2014/076633.html)
 
@@ -22,12 +23,14 @@ LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.o
 
 ### インストール {#e0acc4f5}
 
-TeX Live 2014, W32TeX に含まれています．
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
 [LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．
 
 ### 使い方 {#vad7d54e}
 
-LuaJITTeX は [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
+基本的には通常の LuaTeX と同様に使うことができます．
+
+LuaJITTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
 
 #### Windows {#b1c497b6}
 
@@ -89,62 +92,6 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
     return buffer
   end
   user32.MessageBoxW(nil, toWide("Happy LuaJITLaTeXing!"), toWide("LuaJITTeX"), 0)
-\end{luacode*}
-\end{document}
-```
-
-***
-
-LuaJITLaTeX を実行すると以下のような MessageBox が表示されます．
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　<span style="color:Black;"><strong>LuaJITTeX</strong></span>　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　 Happy LuaJITLaTeXing!
-
-<span style="color:Black;background-color:#F0F0F0;">　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span> </span>
-
-***
-
-Windows PowerShell またはコマンド プロンプト (標準出力) に出力したい場合は printf を使用します．
-
-***
-
-```
-\documentclass{article}
-\usepackage{luacode}
-\begin{document}
-\begin{luacode*}
-  local ffi = require("ffi")
-  ffi.cdef[[
-    int printf(const char* format, ...);
-  ]]
-  local msvcrt = ffi.load(ffi.os == "Windows" and "msvcrt")
-  msvcrt.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
-\end{luacode*}
-\end{document}
-```
-
-***
-
-#### Linux {#v08e3a2f}
-
-コンソール (標準出力) に出力したい場合は printf を使用します．
-
-***
-
-```
-\documentclass{article}
-\usepackage{luacode}
-\begin{document}
-\begin{luacode*}
-  local ffi = require("ffi")
-  ffi.cdef[[
-    int printf(const char* format, ...);
-  ]]
-  local libc = ffi.load(ffi.os == "Linux" and "libc")
-  libc.printf("%s %s\n", "Happy", "LuaJITLaTeXing!")
 \end{luacode*}
 \end{document}
 ```
