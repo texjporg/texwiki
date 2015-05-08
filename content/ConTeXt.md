@@ -9,7 +9,7 @@ pukiwiki: "ConTeXt"
 
 ## ConTeXt {#f2jmn54o}
 
-ConTeXt は Hans Hagen による TeX のマクロパッケージです．
+ConTeXt は Hans Hagen による文書作成システム，TeX のマクロパッケージです．
 [LaTeX](/LaTeX/) と同様の位置付けのものですが，ユーザによるカスタマイズのしやすさがより重視されています．
 現在のバージョンは Mark IV (MkIV) と呼ばれ，[LuaTeX](/LuaTeX/) と一体的に開発が進められています． <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． --> <!-- 全くもって詳しいわけではないですが，ConTeXt Wiki などを参照しながら加筆してみました．事実誤認などあれば修正願います．- - kmaeda (2015-05-05) -->
 
@@ -49,7 +49,7 @@ resolvers       | trees | analyzing 'home:texmf'
 mtx-context     | ConTeXt Process Management 0.61
 mtx-context     |
 mtx-context     | main context file: /usr/local/texlive/2015/texmf-dist/tex/context/base/context.mkiv
-mtx-context     | current version: 2015.04.18 14:41
+mtx-context     | current version: 2015.05.04 19:00
 ```
 
 上のようにバージョン情報が出ればOKです．
@@ -132,7 +132,7 @@ TeX Live の場合は初回実行時に fmt ファイルを作成するため，
 MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に使うことができます．
 このおかげで，あとは日本語組版ルールがきちんと実装されれば実用になると期待されます．
 
-まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（2015/05/04 以降の W32TeX では不要，TeX Live 2015 でも不要になる？）．
+まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（TeX Live 2015 および 2015/05/04 以降の W32TeX では不要）．
 
 - ConTeXt での日本語設定：[forum:1562](https://okumuralab.org/tex/mod/forum/discuss.php?d=1562)
 
