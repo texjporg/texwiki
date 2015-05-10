@@ -7,14 +7,14 @@ pukiwiki: "e-pTeX"
 
 # e-pTeX
 
-## [e-pTeX](http://sourceforge.jp/projects/eptex/wiki/) {#u8bd5dfc}
+## [e-pTeX](http://osdn.jp/projects/eptex/wiki/) {#u8bd5dfc}
 
 e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．
 
 e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できないことがあります．
 この場合は [e-upTeX](/upTeX,upLaTeX/) を使用してみてください．
 
-- [e-pTeX Wiki](http://sourceforge.jp/projects/eptex/wiki/FrontPage)
+- [e-pTeX Wiki](http://osdn.jp/projects/eptex/wiki/FrontPage)
 
 ***
 
