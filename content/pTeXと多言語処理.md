@@ -19,7 +19,7 @@ pukiwiki: "pTeXと多言語処理"
 [upTeX](/upTeX,upLaTeX/) については、CJK 以外の言語では事情は pTeX とほぼ同じです。
 [upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。
 
-pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 \[Internet Archive\]](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory \[Internet Archive\]](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.htmll)」が知られています。
+pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 (Internet archive)](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory (Internet archive)](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.htmll)」が知られています。
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては取り扱っていませんし，個々のパッケージのインストール方法についても一部のパッケージについては割愛しています。
 そこで稲垣さんが取り上げてくださることを期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
 
@@ -47,7 +47,7 @@ CJK に関しては，
 
 英語以外の言語の多くは，今までラテンアルファベットによる対応付け（“transliteration” ［翻字，文字転写，字訳］ないし ASCII 翻字入力）による方法が一般的でした。
 これは TeX ソースファイル入力時にアクセント記号，あるいは文字全部を ASCII 文字の組み合わせで代替するもので，以下の記述も基本的にはこの方法に基づいています。
-ASCII 翻字入力についての詳細は [TeXWiki:アスキー文字を用いた転写表記](</アスキー文字を用いた転写表記/>) をご覧ください（入力サンプルは [TeXWiki:新 pTeX と Babel #タイプセットのテスト](</新 pTeX とBabel/#mafcbf19>)）。
+ASCII 翻字入力についての詳細は [アスキー文字を用いた転写表記](</アスキー文字を用いた転写表記/>) をご覧ください（入力サンプルは [新 pTeX と Babel #タイプセットのテスト](</新 pTeX とBabel/#mafcbf19>)）。
 また Unicode を用いた直接入力については[#多言語の Unicode 直接入力と upTeX](#cyraccpw) をご覧ください。
 
 ## 多言語の Unicode 直接入力と upTeX {#cyraccpw}
@@ -82,7 +82,7 @@ OS X や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/), [Atom](/Atom/), [Br
 
 欧米の諸言語であれば，Babel というパッケージを用いることで非常に美しい文書が作れます。
 これは各言語のハイフネーション・正書法のみならず，「参考文献」などの見出しまで各国の言語で出力してくれるという至れり尽くせりのパッケージです。
-インストールについては，基本的な言語のみであれば [TwXWiki:新 pTeX と Babel](</新 pTeX とBabel/>) あるいは「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」や「[pTeX 3.1.41とBabel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」をご覧ください。
+インストールについては，基本的な言語のみであれば [新 pTeX と Babel](</新 pTeX とBabel/>) あるいは「[Babelを使った最新版LaTeX2e, pLaTeX2eでの多言語環境構築--pTeX-p3.1.4以降（Win・UNIX・Mac）](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」や「[pTeX 3.1.41とBabel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」をご覧ください。
 
 ### 各パッケージによる方法 {#otpckgsd}
 
@@ -154,7 +154,7 @@ PDF ファイルをプレビューしてみて，うまくいっているかど�
 [ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364)
 などをご覧ください。
 
-インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
+インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
 
 TeX Live の場合は ArabTeX は最初からインストールされています。
 W32TeX の場合は [ArabTeX](http://www.ctan.org/pkg/arabtex) をダウンロードします。
@@ -196,7 +196,7 @@ TeX--XeT 機能を用いるため [e-TeX](/e-TeX/) 非対応の古い pTeX で�
 
 サンスクリット語は skt パッケージなどが知られています。
 また，ベンガル語・タミル語などの言語についても扱えます。
-これらについても「[pTeX 3.1.4 と Babel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」をご覧ください。
+これらについても「[pTeX 3.1.4 と Babel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」をご覧ください。
 後者にはインストール方法についての解説もあります。
 
 ## 東南アジアの諸言語 {#sethiecs}
@@ -1346,7 +1346,7 @@ ps2pdf cjkintro.ps
 
 モンゴル語については，[MonTeX](http://www.ring.gr.jp/pub/text/CTAN/help/Catalogue/entries/montex.html) というパッケージがあります。
 また，日本語とモンゴル語を共存させる際に役立つ LRTate.sty というものもあります。
-詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://www2.tba.t-com.ne.jp/ing/babel.html#gcinst)」にもありますが，ここではインストール方法について解説します。
+詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」にもありますが，ここではインストール方法について解説します。
 
 まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](http://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty) の3つをダウンロードします。
 
@@ -1502,7 +1502,7 @@ uplatex  でコンパイルします。
 - ArabTeXマニュアル日本語訳へのリンクをサイト移転にともない修正しました． -- 大足 2006-05-07 (日) 00:10:15
 - CTAN Directory （旧CTAN/language）のリンクを修正しました。 -- 稲垣 2007-01-13 (土) 18:38:42
 - 「ASCII文字による転写方式」についての説明が冒頭付近に欲しいような気がいたします． -- kd 2007-01-15 (月) 09:18:09
-- VnTeX の最新版が [CTAN:language/vietnamese/](https://mirror.ctan.org/language/vietnamese/) に登録されています。重要な変更箇所は，t5enc.def \[2006/11/21 v1.4 Vietnamese T5 encoding\] における \d のバグフィックスと \horn{o} 等入力方法の変更（新：\ohorn，\Ohorn，\uhorn，\Uhorn）です。簡単な入出力例は「[CTAN Directory: Vietnamese](http://www2.tba.t-com.ne.jp/ing/ctan/vietnamese.html)」を参照願います。なお，UTF82TeX については言及していません。 -- 稲垣 2007-02-05 (月) 11:42:03
+- VnTeX の最新版が [CTAN:language/vietnamese/](https://mirror.ctan.org/language/vietnamese/) に登録されています。重要な変更箇所は，t5enc.def \[2006/11/21 v1.4 Vietnamese T5 encoding\] における \d のバグフィックスと \horn{o} 等入力方法の変更（新：\ohorn，\Ohorn，\uhorn，\Uhorn）です。簡単な入出力例は「[CTAN Directory: Vietnamese](http://web.archive.org/web/20060209183645/http://www2.tba.t-com.ne.jp/ing/ctan/vietnamese.html)」を参照願います。なお，UTF82TeX については言及していません。 -- 稲垣 2007-02-05 (月) 11:42:03
 - 「ASCII文字による転写方式」ですが，[『新pTeXとBabel』](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?%E6%96%B0%20pTeX%20%E3%81%A8Babel)でのサンプルだけでは足りないでしょうか。 -- 栗山 2007-02-06 (火) 05:43:37
 - [アスキー文字を用いた転写表記](</アスキー文字を用いた転写表記/>)という解説があるようです． -- kd 2007-02-16 (金) 09:14:53
 - ASCII転写入力について記述を少し加えてみました。こんな感じでいかがでしょうか。 -- 栗山 2007-02-22 (木) 23:26:49
