@@ -9,19 +9,21 @@ pukiwiki: "upTeX,upLaTeX"
 
 ## e-upTeX {#t3be9c34}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+[upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) は、[pTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版です。
+pTeX では漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、upTeX では漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。
+そのおかげで、従来は [otf パッケージ](/OTF/)などが必要であった丸数字（①②③…）なども、ソースにそのまま記述してコンパイルできます。
+また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。
 
-## upTeX, upLaTeXとは {#ge195750}
+e-upTeX は upTeX に [e-TeX](/e-TeX/) 拡張を追加したものです。
+[e-pTeX](/e-pTeX/) の成果を upTeX に取り込んだもので、現在では uplatex を起動したときに使われるのは e-upTeX になっています。
 
-[upTeX, upLaTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html)は、[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/) の内部 Unicode[^1]版。<br>
-pTeX, pLaTeX では、漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、
-upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。<br>
-そのおかげで、従来は [otf パッケージ](/OTF/)などが必要であった丸数字（①②③…）なども、ソースにそのまま記述してコンパイルできます。<br>
-また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。<br>
+***
+
+***
 
 ### 特徴 {#redf175b}
 
-- pTeX, pLaTeX 上位互換
+- pTeX 上位互換
     - 組版品質、縦組み機能、過去の資産活用
 - UTF-8 入力、内部 Unicode によりプレーンテキストでの処理能力向上
     - 日本語字種の拡張
@@ -31,29 +33,11 @@ upTeX, upLaTeX では、漢字/かな/CJK(日中韓)記号/ハングルとして
 - [http://tug.org/tug2013/slides/TUG2013_upTeX.pdf](http://tug.org/tug2013/slides/TUG2013_upTeX.pdf)
 - [upTeX — Unicode version of pTeX with CJK extensions](https://www.tug.org/TUGboat/tb34-3/tb108tanaka.pdf), [TUGboat 34:3](https://www.tug.org/TUGboat/Contents/contents34-3.html)
 
-### ChangeLog {#le7df259}
-
-- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)
-
-を参照．<br>
-
-#### upTeX {#na27195e}
-
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/uptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/ChangeLog?view=markup)
-
-#### e-upTeX {#s277beb8}
-
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/euptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
-
 ### 注意点 {#rfce644f}
 
-#### uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する → -kanji=utf8 -no-guess-input-enc オプションを指定してタイプセットまたは UTF-8 with BOM で保存する {#zb472e1c}
+#### -guess-input-enc による文字コードの自動判別機能で間違った文字コードに判別されるパターンが存在する {#zb472e1c}
 
-以下の様な TeX ファイルを hoge.tex という名前で UTF-8 without BOM で保存します．<br>
+以下の様な TeX ファイルを hoge.tex という名前で UTF-8 without BOM で保存します．
 
 ```
 \documentclass[uplatex]{jsarticle}
@@ -68,7 +52,7 @@ hoge.tex を
 uplatex -guess-input-enc hoge
 ```
 
-のように文字コードの自動判別機能を使用してタイプセットすると UTF-8 without BOM ではなく Shift_JIS として間違った文字コードで判別されてタイプセットされます．<br>
+のように文字コードの自動判別機能を使用してタイプセットすると UTF-8 without BOM ではなく Shift_JIS として間違った文字コードで判別されてタイプセットされます．
 
 ```
 (./hoge.tex(guessed encoding: Shift_JIS = sjis)
@@ -80,20 +64,19 @@ uplatex -guess-input-enc hoge
 uplatex -kanji=utf8 -no-guess-input-enc hoge
 ```
 
-として -kanji=utf8 -no-guess-input-enc オプションを指定してタイプセットまたは UTF-8 with BOM で保存すれば OK です．<br>
+として -kanji=utf8 -no-guess-input-enc オプションを指定してタイプセットまたは UTF-8 with BOM で保存すれば OK です．
 
 ### 不具合 {#p35560b1}
 
-#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする → backend に biber を指定して biber を使用する {#g3e20a4e}
+#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする {#g3e20a4e}
 
-biblatex の backend に bibtex (upBibTeX 0.99d-j0.33-u1.11) を指定して upbibtex を使用すると upbibtex がフリーズします．<br>
-この場合は pbibtex を使用すると回避できます．<br>
+pbibtex を使用すると回避できます．
 
 ```
 pbibtex -kanji=utf8 hoge
 ```
 
-biblatex を使用する場合は backend に biber を指定して biber を使用するのがおすすめです．<br>
+biblatex を使用する場合は backend に biber を指定して biber を使用するのがおすすめです．
 
 ```
 biber --bblencoding=utf8 -u -U --output_safechars hoge
@@ -114,7 +97,7 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 
 ### 最初の例 {#nea5a740}
 
-例えば、以下のようなデータを Unicode 対応のテキストエディタで編集し、文字コード UTF-8 で kumo.tex というファイル名で保存します。<br>
+例えば、以下のようなデータを Unicode 対応のテキストエディタで編集し、文字コード UTF-8 で kumo.tex というファイル名で保存します。
 
 ```
 % kumo.tex
@@ -129,21 +112,22 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 \end{document}
 ```
 
-次に、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、コンパイルします。<br>
+次に、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、コンパイルします。
 
 ```
 uplatex kumo.tex
 ```
 
-さらに、dviwareで処理します。<br>
-この例では、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、dvipdfmx で pdf 化します。<br>
+さらに、dviwareで処理します。
+この例では、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、dvipdfmx で pdf 化します。
 
 ```
 dvipdfmx kumo.dvi
 ```
 
-出力として kumo.pdf が得られます。<br>
-[ptex2pdf](/ptex2pdf/) を使用しても OK です．<br>
+出力として kumo.pdf が得られます。
+
+もしくは，[ptex2pdf](/ptex2pdf/) を使用しても OK です．
 
 ```
 ptex2pdf -u -l kumo
@@ -153,8 +137,8 @@ ptex2pdf -u -l kumo
 
 ### 簡単な使い方 {#wd228c3a}
 
-upTeX, upLaTeX は、pTeX, pLaTeX とほぼ同様に使うことができます。<br>
-pTeX, pLaTeX で利用しているコマンド名等は以下のように読み替えてください。<br>
+upTeX, upLaTeX は、pTeX, pLaTeX とほぼ同様に使うことができます。
+pTeX, pLaTeX で利用しているコマンド名等は以下のように読み替えてください。
 
 - コマンド名
 
@@ -199,8 +183,8 @@ pTeX, pLaTeX で利用しているコマンド名等は以下のように読み�
 | JY1  | JY2   | 横組み |
 | JT1  | JT2   | 縦組み |
 
-jsarticle.cls では、uplatex オプションを追加してください。<br>
-[otf パッケージ](/OTF/)では、uplatex オプションを追加してください。<br>
+jsarticle.cls では、uplatex オプションを追加してください。
+[otf パッケージ](/OTF/)では、uplatex オプションを追加してください。
 
 ```
 \documentclass[uplatex]{jsarticle}
@@ -216,7 +200,7 @@ jsarticle.cls では、uplatex オプションを追加してください。<br>
 
 ### 日本語ファイル名 {#z3e68b41}
 
-TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．<br>
+TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．
 
 - [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
 - [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
@@ -224,33 +208,35 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 - \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
 - \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557)
 
-texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．<br>
+texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．
 
 - [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210)
 
-texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．<br>
+texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．
 
 - [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))
 
-Linux版においてはロケールがUTF-8系であればファイル名に日本語や他言語のUnicode文字が使用できます．<br>
+Linux版においてはロケールがUTF-8系であればファイル名に日本語や他言語のUnicode文字が使用できます．
 
 ## upTeX, upLaTeXによる多言語処理 {#b41c00bb}
 
 ### 仕様 {#o544ccd9}
 
-upTeXは、\kcatcode の設定次第で、入力された UTF-8 の文字を内部処理に渡す際に CJK トークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の 8-bit 文字からなる UTF-8 の文字列に振り分けて処理します。<br>
-\kcatcode は、[Unicode の block](http://unicode.org/Public/UNIDATA/Blocks.txt) ごとに設定可能です。<br>
+upTeXは、\kcatcode の設定次第で、入力された UTF-8 の文字を内部処理に渡す際に CJK トークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の 8-bit 文字からなる UTF-8 の文字列に振り分けて処理します。
+\kcatcode は、[Unicode の block](http://unicode.org/Public/UNIDATA/Blocks.txt) ごとに設定可能です。
 以下では基本的な書き方を例示していますが、[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)を利用すると、フォント、\kcatcode、babel の設定などを簡便にできます。
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
-upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK 記号, ハングル のいずれかに設定されています。<br>
-適切なフォントに切り替えるだけで、CJK 混植の文書を作成できます。<br>
-以下は、入力例です。<br>
+upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK 記号, ハングル のいずれかに設定されています。
+適切なフォントに切り替えるだけで、CJK 混植の文書を作成できます。
+以下は、入力例です。
 
 ```
 \documentclass{ujarticle}
+```
 
+```
 % CJK fontの設定
 \DeclareFontFamily{JY2}{jpnrm}{}
 \DeclareFontFamily{JY2}{schrm}{}
@@ -268,12 +254,14 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 \DeclareRobustCommand\schrm{\kanjifamily{schrm}\selectfont}
 \DeclareRobustCommand\tchrm{\kanjifamily{tchrm}\selectfont}
 \DeclareRobustCommand\korrm{\kanjifamily{korrm}\selectfont}
+```
 
+```
 \begin{document}
 \section{日本語}
 \jpnrm
 すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。
-人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。 
+人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。
 ```
 
 ```
@@ -282,7 +270,9 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 人人生而自由，在尊严和权利上一律平等。
 他们赋有理性和良心，并应以兄弟关系的精神相对待。
 }
+```
 
+```
 \section{中国語・繁体字 {\tchrm 繁體中文}}
 {\tchrm
 人人生而自由，在尊嚴和權利上一律平等。
@@ -295,9 +285,11 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 {\korrm
 \xkanjiskip=.1zw plus 1pt minus 1pt
 모든 인간은 태어날 때부터 자유로우며 그 존엄과 권리에 있어 동등하다.
-인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다. 
+인간은 천부적으로 이성과 양심을 부여받았으며 서로 형제애의 정신으로 행동하여야 한다.
 }
+```
 
+```
 \end{document}
 ```
 
@@ -305,13 +297,12 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
-upTeX のデフォルトでは、U+0080 以上の文字は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。<br>
-欧文 LaTeX の inputenc パッケージを利用することで、UTF-8 で記述された文書が処理出来ます。<br>
-pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、
-upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。<br>
-ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。<br>
-欧文 LaTeX の babel パッケージも、欧文 LaTeX と同様に利用出来ます。<br>
-以下は、入力例です。<br>
+upTeX のデフォルトでは、U+0080 以上の文字は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。
+欧文 LaTeX の inputenc パッケージを利用することで、UTF-8 で記述された文書が処理出来ます。
+pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。
+ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。
+欧文 LaTeX の babel パッケージも、欧文 LaTeX と同様に利用出来ます。
+以下は、入力例です。
 
 ```
 \documentclass{ujarticle}
@@ -320,7 +311,9 @@ upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロッ
 %\usepackage{type1ec}
 \usepackage[T2A,T2B,T2C,T1]{fontenc}
 \usepackage[french,german,czech,russian,greek,japanese]{babel}
+```
 
+```
 \begin{document}
 \kcatcode`ç=15% not cjk character
 \kcatcode`Ŕ=15
@@ -328,12 +321,16 @@ upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロッ
 \kcatcode`α=15
 \kcatcode`ἀ=15
 \kcatcode`“=15
+```
 
+```
 \selectlanguage{french}
 \section{フランス語 Français}
 Tous les êtres humains naissent libres et égaux en dignité et en droits.
 Ils sont doués de raison et de conscience et doivent agir les uns envers les autres dans un esprit de fraternité.
+```
 
+```
 \selectlanguage{german}
 \section{ドイツ語 Deutsch}
 Alle Menschen sind frei und gleich an Würde und Rechten geboren.
@@ -344,7 +341,7 @@ Sie sind mit Vernunft und Gewissen begabt und sollen einander im Geiste der Brü
 \selectlanguage{czech}%
 \section{チェコ語 Czech}
 Všichni lidé rodí se svobodní a sobě rovní co do důstojnosti a práv.
-Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství. 
+Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 ```
 
 ```
@@ -364,11 +361,13 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 \section{ギリシア語 Ελληνικά}
 'Ολοι οι άνθρωποι γεννιούνται ελεύθεροι και ίσοι στην αξιοπρέπεια και τα δικαιώματα.
 Είναι προικισμένοι με λογική και συνείδηση, και οφείλουν να συμπεριφέρονται μεταξύ τους με πνεύμα αδελφοσύνης.
+```
 
+```
 \selectlanguage{japanese}
 \section{日本語}
 すべての人間は、生まれながらにして自由であり、かつ、尊厳と権利とについて平等である。
-人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。 
+人間は、理性と良心とを授けられており、互いに同胞の精神をもって行動しなければならない。
 ```
 
 ```
@@ -377,14 +376,13 @@ Jsou nadáni rozumem a svědomím a mají spolu jednat v duchu bratrství.
 
 ### ヘブライ語 {#f3b6c860}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる uplatex コマンドは、[e-TeX](/e-TeX/) 拡張を含んだ e-upTeX をコンパイラとしているため、TeX--XeT 機能が利用できます。<br>
-ヘブライ文字ブロックの \kcatcode を 15 に設定することで、
-欧文 LaTeX と同様、babel パッケージの hebrew オプションが利用出来ます。<br>
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれる uplatex コマンドは、[e-TeX](/e-TeX/) 拡張を含んだ e-upTeX をコンパイラとしているため、TeX--XeT 機能が利用できます。
+ヘブライ文字ブロックの \kcatcode を 15 に設定することで、欧文 LaTeX と同様、babel パッケージの hebrew オプションが利用出来ます。
 
 ### その他の言語 {#ldca57c5}
 
-upTeX 自身の機能としてアラビア文字など複雑な文字をレンダリングする能力を持っているわけではありません。<br>
-しかし、欧文 TeX で使用できるパッケージなどを利用することにより組版を実現できます。<br>
+upTeX 自身の機能としてアラビア文字など複雑な文字をレンダリングする能力を持っているわけではありません。
+しかし、欧文 TeX で使用できるパッケージなどを利用することにより組版を実現できます。
 
 ## 関連リンク {#of92a3e9}
 
@@ -393,6 +391,24 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
 - [e-upTeX と LuaTeX とを使ってみる](http://kainokikaede.hatenablog.com/entry/2014/07/18/060128)
+
+### ChangeLog {#le7df259}
+
+- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)
+
+を参照．
+
+#### upTeX {#na27195e}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/uptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/uptexdir/ChangeLog?view=markup)
+
+#### e-upTeX {#s277beb8}
+
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/euptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
 
 [^1]: 内部 Unicode になっているのは、CJK の文字。欧文の処理は欧文 TeX, pTeX と同様、8-bit のままです。
 [^2]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
