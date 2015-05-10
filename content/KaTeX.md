@@ -9,7 +9,7 @@ pukiwiki: "KaTeX"
 
 ## [KaTeX](http://khan.github.io/KaTeX/) {#x2d52443}
 
-KaTeX は，Web ブラウザ上で数式を高速できるライブラリ (The fastest math typesetting library for the web) です。
+KaTeX は，Web ブラウザ上で数式を高速に描画できるライブラリ (The fastest math typesetting library for the web) です。
 
 - [https://github.com/Khan/KaTeX](https://github.com/Khan/KaTeX)
 
