@@ -250,51 +250,6 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 </tbody>
 </table>
 
-### 不具合 {#xf84e130}
-
-#### Windows の TeX Live 2013 で 表.tex などの 0x5c を含むファイル名を (e-)pTeX で処理しようとすると失敗する {#p4d23466}
-
-TeX Live 2014（[Revision 31414](http://www.tug.org/svn/texlive?view=revision&revision=31414), [W32TeX#漢字入出力対応状況](/W32TeX/#qc9f2e7d)）で (e-)pTeX が 表.tex などの 0x5c を含むファイル名に対応しました．
-
-TeX Live 2013 ではファイル名に日本語を使用した場合，ファイル名を正しく処理できない場合があります．
-
-```
-platex 表.tex
-```
-
-この場合は .dvi が出力され，表.dvi は出力されません．
-同様に
-
-```
-platex 予定.tex
-platex 構造.tex
-platex ソフトウェア.tex
-```
-
-も 定.dvi, 造.dvi, フトウェア.dvi が出力され，予定.dvi, 構造.dvi, ソフトウェア.dvi は出力されません．
-
-これを回避する方法としては
-
-```
-platex -jobname=表 表.tex
-platex -jobname=予定 予定.tex
-platex -jobname=構造 構造.tex
-platex -jobname=ソフトウェア ソフトウェア.tex
-```
-
-のように -jobname= で指定してコンパイルする方法があります．
-[^1]
-
-- [TeX Live 2013 を使うときの通称「だめ文字（駄目文字）」への配慮](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1430)
-- [platexでダメ文字を含むファイルを処理する](http://d.hatena.ne.jp/tailriver/20101022/1291955342)
-- [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
-
-【参考】
-
-- [Windows版pTeXでダメ文字を含むファイル名を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1074)
-- [Shift_JISのダメ文字](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp)
-    - [ダメ文字一覧表](https://sites.google.com/site/fudist/Home/grep/sjis-damemoji-jp/table)
-
 ### ChangeLog {#mf34fb2b}
 
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/eptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/eptexdir/)
@@ -304,5 +259,3 @@ platex -jobname=ソフトウェア ソフトウェア.tex
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/ptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/ChangeLog?view=markup)
-
-[^1]: ただし，この方法を [WinShell](/WinShell/) で用いると WinShell がクラッシュします．このことも，現在 WinShell が日本語での利用に適していない理由の一つです．[古い情報](</古い情報/#zc6d6db5>)も参照．
