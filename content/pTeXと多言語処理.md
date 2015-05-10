@@ -150,7 +150,7 @@ PDF ファイルをプレビューしてみて，うまくいっているかど�
 ### アラビア語 {#r238fbee}
 
 アラビア語についてはArabTeX上で扱えますし，ヘブライ語はArabTeXによる方法とBabelから用いる方法の2種類があるようです。
-詳細は，[ArabTeX User's Manualの日本語訳](http://www.kotoito.net/arabtex.html),
+詳細は，[ArabTeX User’s Guide日本語版](http://www.kotoito.net/sonota/arabtex),
 [ArabTeX の導入 ～アラビア文字を TeX で～](http://syun2ej.jugem.jp/?eid=3364)
 などをご覧ください。
 
