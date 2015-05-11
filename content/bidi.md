@@ -9,6 +9,9 @@ pukiwiki: "bidi"
 
 ## bidi {#n2b51f0e}
 
+bidi は，左から右または右から左へ双方向 (Bi-Directional)
+な文書を作成するためのパッケージです．
+
 ### bidi {#w2512f78}
 
 - [https://github.com/persian-tex/bidi](https://github.com/persian-tex/bidi)
