@@ -22,18 +22,20 @@ pukiwiki: "TeX入門/スライドの作り方（jsarticle編）"
 スライドの作り方（jsarticle 編）/
 [応用的な使い方](</TeX入門/応用的な使い方/>)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## スライドの作り方（jsarticle編） {#zce7020e}
+<strong>目次</strong>
+
+## スライドの作り方（jsarticle 編） {#zce7020e}
 
 jsarticle に slide オプションを付けると簡単にスライドができます．
-スライドに特化した他のパッケージのような高度な機能はありませんが，
-通常の jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
+スライドに特化した他のパッケージのような高度な機能はありませんが，通常の
+jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
 
 ### 雛形 {#c192429c}
 
 ```
-\documentclass[uplatex,slide,papersize]{jsarticle}
+\documentclass[slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
@@ -54,9 +56,12 @@ jsarticle に slide オプションを付けると簡単にスライドができ
 
 日付が付くのがまずければ，\maketitle の前に \date{} と入れてください．
 
-文字サイズが気に入らなければ 14pt，17pt，21pt，25pt，30pt，36pt，43pt といったオプションを与えてください．
+文字サイズが気に入らなければ
+14pt，17pt，21pt，25pt，30pt，36pt，43pt
+といったオプションを与えてください．
 
-\begin{document} の前に \pagecolor\[rgb\]{0.8,0.8,1} のようにページ色を指定することもできます．
+\begin{document} の前に
+\pagecolor\[rgb\]{0.8,0.8,1} のようにページ色を指定することもできます．
 
 ## スライド作成に特化したパッケージ {#e9704f43}
 
