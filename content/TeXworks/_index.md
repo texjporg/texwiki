@@ -102,9 +102,9 @@ C:\w32tex\bin\nkf.exe
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#t5313ebc}
 
-<!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of	Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
-<!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました．~ -->
-<!-- ゴシック体を表示したい場合は以下の方法があります．~ -->
+<!-- -[[[tex-live] TeXworks on Windows versus Linux wrt embedding of Japanese fonts:http://www.tug.org/pipermail/tex-live/2013-March/033076.html]] -->
+<!-- TeXworks 0.4.5 で Poppler 0.22.2 を使用するようになったため日本語のフォントを埋め込んでいない場合に MS-Mincho で表示されるようになりました． -->
+<!-- ゴシック体を表示したい場合は以下の方法があります． -->
 <!-- -フォントを埋め込む -->
 <!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
 <!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
@@ -188,9 +188,9 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
+### Windows の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で ptex2pdf や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
 
-Windows の TeXworks 0.4.6 で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
+Windows の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
 [TeXworks 0.4.5](http://sourceforge.net/projects/texworks.mirror/files/) では問題は発生しませんでした．
 
@@ -206,11 +206,15 @@ Qt4 version      : 5.1.0 (build) /
 Qt 5.3 でビルドすれば回避できるようです．
 
 - [Could not interprete the stop sign from new TeXworks · Issue #2 · norbusan/ptex2pdf · GitHub](https://github.com/norbusan/ptex2pdf/issues/2)
-- \[[texworks\] Problem: TeXworks 0.4.6 (official) crashes](http://tug.org/pipermail/texworks/2015q2/006265.html)
+- \[texworks\] Problem: TeXworks 0.4.6 (official) crashes
+    - [http://tug.org/pipermail/texworks/2015q2/006265.html](http://tug.org/pipermail/texworks/2015q2/006265.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006273.html](http://tug.org/pipermail/texworks/2015q2/006273.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006274.html](http://tug.org/pipermail/texworks/2015q2/006274.html)
 - Re: TeXworks がエラー時に停止させるとフリーズ ([forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 - [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
+- [【メモ】TeXworks 0.4.6でコンパイルに失敗するとTeXworksが落ちる](http://blog.livedoor.jp/phyhyhy/archives/44589437.html)
 
 ### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
 
