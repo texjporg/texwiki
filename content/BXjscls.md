@@ -34,12 +34,12 @@ BXjscls は新ドキュメントクラスから pLaTeX 依存の部分を取り�
 
 #### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
 
-bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
+bxjsarticle 2015/08/05 v1.0 で以下の文書を xelatex で処理すると <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
 
 ***
 
 ```
-\documentclass[xelatex,jadriver=standard]{bxjsarticle}
+\documentclass[xelatex,ja=standard]{bxjsarticle}
 \usepackage[xetex]{graphicx}
 \begin{document}
 
@@ -60,7 +60,7 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 ***
 
 ```
-\documentclass[xelatex,jadriver=standard]{bxjsarticle}
+\documentclass[xelatex,ja=standard]{bxjsarticle}
 \usepackage{graphicx}
 \begin{document}
 
