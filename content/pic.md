@@ -15,7 +15,9 @@ troff 用図形プリプロセッサとして実装されています．
 - [http://www.cs.bell-labs.com/10thEdMan/pic.pdf](http://www.cs.bell-labs.com/10thEdMan/pic.pdf) --- by Brian W. Kernighan
 - [http://surf.ml.seikei.ac.jp/~nakano/JMwww/html/GNU_groff/man1/pic.1.html](http://surf.ml.seikei.ac.jp/~nakano/JMwww/html/GNU_groff/man1/pic.1.html)
 
-<strong>目次</strong>
+***
+
+***
 
 ### dpic {#n4789561}
 
