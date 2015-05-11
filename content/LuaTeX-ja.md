@@ -122,7 +122,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．
 
 ### 不具合 {#m2b9f4bc}
 
-[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](https://osdn.jp/projects/luatex-ja/ticket/) を参照．
+[チケット一覧/検索 - LuaTeX-ja - OSDN](https://osdn.jp/projects/luatex-ja/ticket/) を参照．
 
 ### 他のパッケージとの併用 {#kdbc7cfe}
 
@@ -232,7 +232,7 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 - [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 - [Conflict between luatex-ja and fontspec](http://tex.stackexchange.com/questions/95764/conflict-between-luatex-ja-and-fontspec)
 - [最近のTeXはすごい](http://tanitsutakahisa.wordpress.com/2013/03/05/2118/)
-- [LuaTeX 試用中](http://slashdot.jp/~tagga/journal/564745)
+- [LuaTeX 試用中](http://srad.jp/~tagga/journal/564745)
 - [LuaTeX で名刺作り](http://fugenji.org/thomas/diary/index.php?no=r1169)
 - [そろそろ考える時期だろう](http://fugenji.org/thomas/diary/index.php?no=r827)
 
