@@ -19,18 +19,22 @@ BXjscls は新ドキュメントクラスから pLaTeX 依存の部分を取り�
 - [http://www.ctan.org/pkg/bxjscls](http://www.ctan.org/pkg/bxjscls)
 - [http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls](http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls)
 
-### ChangeLog {#je081c38}
+***
 
-- [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
-    - [https://github.com/zr-tex8r/BXjscls/commits/](https://github.com/zr-tex8r/BXjscls/commits/)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
+***
 
-## 不具合 {#x3d34063}
+### 使い方 {#g8a35a3c}
 
-### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
+- [「BXjscls」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=BXjscls)
+- [BXjscls の pdflatex で日本語組版をしてみた](http://konoyonohana.blog.fc2.com/blog-entry-76.html)
 
-bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．<br>
+を参照．
+
+### 不具合 {#x3d34063}
+
+#### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
+
+bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
 
 ***
 
@@ -51,7 +55,7 @@ bxjsarticle 2013/10/03 v0.9pre で以下の文書を xelatex で処理すると 
 
 ***
 
-graphicx の xetex オプション指定をはずすとタイプセットできます．<br>
+graphicx の xetex オプション指定をはずすとタイプセットできます．
 
 ***
 
@@ -72,9 +76,13 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 
 ***
 
-## 使い方 {#g8a35a3c}
+### 関連リンク {#f25f7b2d}
 
-- [「BXjscls」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=BXjscls)
-- [BXjscls の pdflatex で日本語組版をしてみた](http://konoyonohana.blog.fc2.com/blog-entry-76.html)
+- [天地有情 BXjscls の pdflatex で日本語組版をしてみた](http://konoyonohana.blog.fc2.com/blog-entry-76.html)
 
-を参照．
+#### ChangeLog {#je081c38}
+
+- [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
+    - [https://github.com/zr-tex8r/BXjscls/commits/](https://github.com/zr-tex8r/BXjscls/commits/)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
