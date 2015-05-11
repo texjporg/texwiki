@@ -8,13 +8,15 @@ pukiwiki: "TeXworks"
 
 # TeXworks
 
+## TeXworks {#e8144da8}
+
 TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
 奥村晴彦・黒木裕介「[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)」では，おすすめの統合環境に TeXworks が紹介されています．
 
-<strong>目次</strong>
+***
 
-## 概要 {#e8144da8}
+***
 
 ### Webサイト {#e62cfe01}
 
@@ -188,7 +190,7 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 ### Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
 
-Windows の TeXworks 0.4.6 で ptex2pdf を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
+Windows の TeXworks 0.4.6 で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
 [TeXworks 0.4.5](http://sourceforge.net/projects/texworks.mirror/files/) では問題は発生しませんでした．
 
