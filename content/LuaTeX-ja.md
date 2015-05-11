@@ -18,12 +18,12 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 
 ### 公式サイト {#ha0b38ce}
 
-- [LuaTeX-ja プロジェクト wiki](http://sourceforge.jp/projects/luatex-ja/wiki/)
-    - [LuaTeX-ja wiki (FrontPage(en))](http://sourceforge.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
-    - [LuaTeX-ja の使い方](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
+- [LuaTeX-ja プロジェクト wiki](https://osdn.jp/projects/luatex-ja/wiki/)
+    - [LuaTeX-ja wiki (FrontPage(en))](https://osdn.jp/projects/luatex-ja/wiki/FrontPage%28en%29)
+    - [LuaTeX-ja の使い方](https://osdn.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
-- [フォーラム](http://sourceforge.jp/projects/luatex-ja/forums/)
-    - [公開討議/質問](http://sourceforge.jp/forum/forum.php?forum_id=25558)
+- [フォーラム](https://osdn.jp/projects/luatex-ja/forums/)
+    - [公開討議/質問](https://osdn.jp/forum/forum.php?forum_id=25558)
 - [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja)
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
@@ -38,7 +38,7 @@ LuaTeX-ja は
 
 ### インストール {#p4234337}
 
-[LuaTeX-jaの使い方#インストール・アップデート方法](http://sourceforge.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．
+[LuaTeX-jaの使い方#インストール・アップデート方法](https://osdn.jp/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
@@ -122,7 +122,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．
 
 ### 不具合 {#m2b9f4bc}
 
-[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](http://sourceforge.jp/projects/luatex-ja/ticket/) を参照．
+[チケット一覧/検索 - LuaTeX-ja - SourceForge.JP](https://osdn.jp/projects/luatex-ja/ticket/) を参照．
 
 ### 他のパッケージとの併用 {#kdbc7cfe}
 
@@ -238,11 +238,11 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 #### リリース情報 {#g1f2f88f}
 
-- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/tags)
+- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags)
 
 #### ChangeLog {#ka55de08}
 
-- [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/)
-    - [http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits](http://sourceforge.jp/projects/luatex-ja/scm/git/luatexja/commits)
+- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/)
+    - [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
