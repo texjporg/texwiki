@@ -28,16 +28,16 @@ HTML と LaTeX の比較/
 
 ## HTML と LaTeX の比較 {#g8b7bce6}
 
-Web ページを記述する際に使われるのが、HTML とよばれる言語です。
-LaTeX も HTML も「普通のテキストの中に文書整形の命令を埋め込む」という点で共通しており、この2つに対応関係を見ることが出来ます。
-したがって、LaTeX を知っている人なら、HTML を覚えて Web ページを書くことも簡単に出来ると思います。
+Web ページを記述する際に使われるのが，HTML とよばれるマークアップ言語です。
+LaTeX も HTML も「普通のテキストの中に文書整形の命令を埋め込む」という点で共通しており，この2つに対応関係を見ることが出来ます。
+したがって，LaTeX を知っている人なら，HTML を覚えて Web ページを書くことも簡単に出来ると思います。
 
 HTML と LaTeX には次のような対応関係があります。
 
 <table>
 <tbody>
 <tr><td><strong>HTML</strong>                  </td><td><strong>LaTeX</strong></td></tr>
-<tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass[uplatex]{jsarticle}</td></tr>
+<tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass{jsarticle}</td></tr>
 <tr><td>&lt;head&gt;                    </td><td>% プリアンブル開始</td></tr>
 <tr><td>&lt;meta charset="UTF-8"&gt;    </td><td></td></tr>
 <tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td>\title{題名}</td></tr>
