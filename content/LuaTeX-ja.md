@@ -63,16 +63,16 @@ C:.
 
 #### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
 
-DebianやUbuntuのリポジトリから、LuaTeX-jaをインストールするには、texlive-lang-cjkパッケージまたはtexlive-lang-japaneseパッケージをインストールします。ただし、必ずしも最新版ではなくタイムラグがあることに注意。
+DebianやUbuntuのリポジトリから、LuaTeX-jaをインストールするには、texlive-lang-japaneseパッケージまたはtexlive-lang-cjkパッケージをインストールします。ただし、必ずしも最新版ではなくタイムラグがあることに注意。
 
 ```
-$ sudo apt-get install texlive-lang-cjk
+$ sudo apt-get install texlive-lang-japanese
 ```
 
 または
 
 ```
-$ sudo apt-get install texlive-lang-japanese
+$ sudo apt-get install texlive-lang-cjk
 ```
 
 #### MacPortsを利用してインストールする場合 {#k02c7aab}
@@ -238,11 +238,11 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 #### リリース情報 {#g1f2f88f}
 
-- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags)
+- [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags)
 
 #### ChangeLog {#ka55de08}
 
-- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/)
-    - [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits)
+- [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/)
+    - [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
