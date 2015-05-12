@@ -179,9 +179,9 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] (Qt 5.1.0) で ptex2pdf や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
+### Qt 5.1.0 版の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で ptex2pdf や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
 
-TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] (Qt 5.1.0) で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
+Qt 5.1.0 版の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
 Qt 5.1.0 でビルドされた TeXworks で問題が発生するようです．
 
@@ -192,7 +192,7 @@ $ strings -a TeXworks.exe | grep Qt | grep version | grep build
 Qt4 version      : 5.1.0 (build) /
 ```
 
-Qt 5.4.1 でビルドされた TeXworks では問題は発生しないようです．
+Qt 5.4.1 版の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05\] では問題は発生しないようです．
 
 ```
 $ strings -a TeXworks.exe | grep Qt | grep version | grep build
@@ -206,7 +206,8 @@ Qt4 version      : 5.4.1 (build) /
     - [http://tug.org/pipermail/texworks/2015q2/006275.html](http://tug.org/pipermail/texworks/2015q2/006275.html)
     - [http://tug.org/pipermail/texworks/2015q2/006276.html](http://tug.org/pipermail/texworks/2015q2/006276.html)
     - [http://tug.org/pipermail/texworks/2015q2/006277.html](http://tug.org/pipermail/texworks/2015q2/006277.html)
-- TeXworks がエラー時に停止させるとフリーズ ([qa:57633](https://okumuralab.org/~okumura/texfaq/qa/57633.html), [qa:57634](https://okumuralab.org/~okumura/texfaq/qa/57634.html), [qa:57639](https://okumuralab.org/~okumura/texfaq/qa/57639.html), [qa:57640](https://okumuralab.org/~okumura/texfaq/qa/57640.html), [qa:57641](https://okumuralab.org/~okumura/texfaq/qa/57641.html), [forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
+- TeXworks がエラー時に停止させるとフリーズ
+    - [qa:57633](https://okumuralab.org/~okumura/texfaq/qa/57633.html), [qa:57634](https://okumuralab.org/~okumura/texfaq/qa/57634.html), [qa:57639](https://okumuralab.org/~okumura/texfaq/qa/57639.html), [qa:57640](https://okumuralab.org/~okumura/texfaq/qa/57640.html), [qa:57641](https://okumuralab.org/~okumura/texfaq/qa/57641.html), [qa:57647](https://okumuralab.org/~okumura/texfaq/qa/57647.html), [qa:57651](https://okumuralab.org/~okumura/texfaq/qa/57651.html), [forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563)
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 - [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
