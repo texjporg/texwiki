@@ -218,6 +218,7 @@ Qt 5.3 でビルドすれば回避できるようです．
 [TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) にダウングレードするのも一つの対策として有効です．
 
 - [【メモ】TeXworks 0.4.6でコンパイルに失敗するとTeXworksが落ちる](http://blog.livedoor.jp/phyhyhy/archives/44589437.html)
+- [Windows - TeXの環境を整える（エディタ編） - Qiita](http://qiita.com/This_is_my_pen/items/bc1198d95355dba5540c)
 
 ### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
 
