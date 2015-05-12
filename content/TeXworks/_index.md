@@ -206,6 +206,8 @@ Qt4 version      : 5.4.1 (build) /
     - [http://tug.org/pipermail/texworks/2015q2/006275.html](http://tug.org/pipermail/texworks/2015q2/006275.html)
     - [http://tug.org/pipermail/texworks/2015q2/006276.html](http://tug.org/pipermail/texworks/2015q2/006276.html)
     - [http://tug.org/pipermail/texworks/2015q2/006277.html](http://tug.org/pipermail/texworks/2015q2/006277.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006278.html](http://tug.org/pipermail/texworks/2015q2/006278.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006279.html](http://tug.org/pipermail/texworks/2015q2/006279.html)
 - TeXworks がエラー時に停止させるとフリーズ
     - [qa:57633](https://okumuralab.org/~okumura/texfaq/qa/57633.html), [qa:57634](https://okumuralab.org/~okumura/texfaq/qa/57634.html), [qa:57639](https://okumuralab.org/~okumura/texfaq/qa/57639.html), [qa:57640](https://okumuralab.org/~okumura/texfaq/qa/57640.html), [qa:57641](https://okumuralab.org/~okumura/texfaq/qa/57641.html), [qa:57647](https://okumuralab.org/~okumura/texfaq/qa/57647.html), [qa:57651](https://okumuralab.org/~okumura/texfaq/qa/57651.html), [forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563)
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
