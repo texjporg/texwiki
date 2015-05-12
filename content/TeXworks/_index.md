@@ -52,20 +52,11 @@ W32TeX で配布のものを使用する場合は，既に日本語用の設定�
 
 [TeXworks/使い方](</TeXworks/使い方/>) を参照．
 
-<!-- **リリース情報 [#re7d3d85] -->
-<!--  -->
-<!-- [[News:http://www.tug.org/texworks/#News]] を参照．~ -->
-<!--  -->
-<!-- TeXworks 0.4.6 の Windows バイナリは Qt 5.1.0, Poppler 0.32.0 を使用してビルドされています．~ -->
-<!-- TeXworks 0.4.5 の OS X バイナリは Qt 4.8.4, Poppler 0.22.1 を使用してビルドされています．~ -->
+### ChangeLog {#j22176bb}
 
-<!-- **ChangeLog [#j22176bb] -->
-<!-- -[[コミットログ:https://github.com/TeXworks/texworks/commits/master]] -->
-<!-- //-[[コミットログ (github, unofficial):https://github.com/stloeffler/TeXworks/commits/]] -->
-<!-- //-[[コミットログ (github, unofficial):https://github.com/Sharpie/TeXworks/commits/]] -->
-<!-- -[[コミットログ (github, multipage-viewer):https://github.com/stloeffler/TeXworks/commits/multipage-viewer]] -->
-<!-- -[[[texlive] Index of /trunk/Master/tlpkg/texworks:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/]] -->
-<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log]] -->
+- [https://github.com/TeXworks/texworks/commits/master](https://github.com/TeXworks/texworks/commits/master)
+- \[[texlive\] Index of /trunk/Master/tlpkg/texworks](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/texworks/?view=log)
 
 ## 文字コードの変換 {#e8ba5265}
 
@@ -210,7 +201,7 @@ Qt 5.3 でビルドすれば回避できるようです．
     - [http://tug.org/pipermail/texworks/2015q2/006265.html](http://tug.org/pipermail/texworks/2015q2/006265.html)
     - [http://tug.org/pipermail/texworks/2015q2/006273.html](http://tug.org/pipermail/texworks/2015q2/006273.html)
     - [http://tug.org/pipermail/texworks/2015q2/006274.html](http://tug.org/pipermail/texworks/2015q2/006274.html)
-- Re: TeXworks がエラー時に停止させるとフリーズ ([forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
+- TeXworks がエラー時に停止させるとフリーズ ([qa:57633](https://okumuralab.org/~okumura/texfaq/qa/57633.html), [qa:57634](https://okumuralab.org/~okumura/texfaq/qa/57634.html), [qa:57639](https://okumuralab.org/~okumura/texfaq/qa/57639.html), [qa:57640](https://okumuralab.org/~okumura/texfaq/qa/57640.html), [qa:57641](https://okumuralab.org/~okumura/texfaq/qa/57641.html), [forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 - [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
@@ -218,6 +209,7 @@ Qt 5.3 でビルドすれば回避できるようです．
 [TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) にダウングレードするのも一つの対策として有効です．
 
 - [【メモ】TeXworks 0.4.6でコンパイルに失敗するとTeXworksが落ちる](http://blog.livedoor.jp/phyhyhy/archives/44589437.html)
+- [初めて質問させていただきます。texworksについてです。先日、大学の課... - Yahoo!知恵袋](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11144517421)
 - [Windows - TeXの環境を整える（エディタ編） - Qiita](http://qiita.com/This_is_my_pen/items/bc1198d95355dba5540c)
 
 ### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
@@ -226,6 +218,7 @@ OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本�
 
 [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください．
 
+- [Built-in PDF viewer cannot display Japanese characters correctly. · Issue #623 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/623)
 - Mountain Lion で Texworks のプレビューが日本語表示できない ([forum:1082](https://okumuralab.org/tex/mod/forum/discuss.php?d=1082))
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
 
@@ -233,8 +226,8 @@ OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本�
 
 OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
 
-- TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
 - [backslash becomes yen · Issue #516 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/516)
+- TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
 
 OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
