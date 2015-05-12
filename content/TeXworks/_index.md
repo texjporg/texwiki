@@ -179,11 +179,9 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### Windows の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で ptex2pdf や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
+### TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] (Qt 5.1.0) で ptex2pdf や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになる {#g55f5548}
 
-Windows の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
-
-[TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) では問題は発生しませんでした．
+TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] (Qt 5.1.0) で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
 Qt 5.1.0 でビルドされた TeXworks で問題が発生するようです．
 
@@ -194,13 +192,20 @@ $ strings -a TeXworks.exe | grep Qt | grep version | grep build
 Qt4 version      : 5.1.0 (build) /
 ```
 
-Qt 5.3 でビルドすれば回避できるようです．
+Qt 5.4.1 でビルドされた TeXworks では問題は発生しないようです．
 
-- [Could not interprete the stop sign from new TeXworks · Issue #2 · norbusan/ptex2pdf · GitHub](https://github.com/norbusan/ptex2pdf/issues/2)
+```
+$ strings -a TeXworks.exe | grep Qt | grep version | grep build
+Qt4 version      : 5.4.1 (build) /
+```
+
 - \[texworks\] Problem: TeXworks 0.4.6 (official) crashes
     - [http://tug.org/pipermail/texworks/2015q2/006265.html](http://tug.org/pipermail/texworks/2015q2/006265.html)
     - [http://tug.org/pipermail/texworks/2015q2/006273.html](http://tug.org/pipermail/texworks/2015q2/006273.html)
     - [http://tug.org/pipermail/texworks/2015q2/006274.html](http://tug.org/pipermail/texworks/2015q2/006274.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006275.html](http://tug.org/pipermail/texworks/2015q2/006275.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006276.html](http://tug.org/pipermail/texworks/2015q2/006276.html)
+    - [http://tug.org/pipermail/texworks/2015q2/006277.html](http://tug.org/pipermail/texworks/2015q2/006277.html)
 - TeXworks がエラー時に停止させるとフリーズ ([qa:57633](https://okumuralab.org/~okumura/texfaq/qa/57633.html), [qa:57634](https://okumuralab.org/~okumura/texfaq/qa/57634.html), [qa:57639](https://okumuralab.org/~okumura/texfaq/qa/57639.html), [qa:57640](https://okumuralab.org/~okumura/texfaq/qa/57640.html), [qa:57641](https://okumuralab.org/~okumura/texfaq/qa/57641.html), [forum:1563](https://okumuralab.org/tex/mod/forum/discuss.php?d=1563))
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
