@@ -73,7 +73,7 @@ TeXworks で使用する文字コードはデフォルトでは UTF-8 です．�
 
 テキストエディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
 
-コマンドラインからの場合，[W32TeX](/W32TeX/) には標準で文字コード変換プログラムである [nkf](http://sourceforge.jp/projects/nkf/) が含まれています．nkf の場所は以下のようにして確認できます．
+コマンドラインからの場合，[W32TeX](/W32TeX/) には標準で文字コード変換プログラムである [nkf](http://osdn.jp/projects/nkf/) が含まれています．nkf の場所は以下のようにして確認できます．
 
 - Windows PowerShell の場合
 
@@ -192,11 +192,11 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 
 Windows の TeXworks 0.4.6 (official) \[r.c29723a, 2015/04/04 3:05:39\] で [ptex2pdf](/ptex2pdf/) や xelatex を使用してタイプセットでエラーが発生した場合にタイプセットの中止ボタンをクリックすると TeXworks が応答なしになるようです．
 
-[TeXworks 0.4.5](http://sourceforge.net/projects/texworks.mirror/files/) では問題は発生しませんでした．
+[TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) では問題は発生しませんでした．
 
 Qt 5.1.0 でビルドされた TeXworks で問題が発生するようです．
 
-TeXworks で使用されている Qt のバージョンは strings と grep で確認できます．
+TeXworks で使用されている Qt のバージョンはメニューの［ヘルプ］&gt;［TeXworks について］または strings と grep で確認できます．
 
 ```
 $ strings -a TeXworks.exe | grep Qt | grep version | grep build
@@ -214,6 +214,9 @@ Qt 5.3 でビルドすれば回避できるようです．
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 - [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
+
+[TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) にダウングレードするのも一つの対策として有効です．
+
 - [【メモ】TeXworks 0.4.6でコンパイルに失敗するとTeXworksが落ちる](http://blog.livedoor.jp/phyhyhy/archives/44589437.html)
 
 ### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
