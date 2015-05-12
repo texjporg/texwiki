@@ -211,12 +211,7 @@ Qt4 version      : 5.4.1 (build) /
 - [http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html](http://abenori.blogspot.com/2015/05/texworks-tex-forum-qt-5.html)
 - [http://abenori.blogspot.com/2015/05/tex-livetexworks.html](http://abenori.blogspot.com/2015/05/tex-livetexworks.html)
 - [http://abenori.blogspot.com/2015/05/texworksmingw.html](http://abenori.blogspot.com/2015/05/texworksmingw.html)
-
-[TeXworks 0.4.5](https://github.com/TeXworks/texworks/releases/tag/release-0.4.5) にダウングレードするのも一つの対策として有効です．
-
-- [【メモ】TeXworks 0.4.6でコンパイルに失敗するとTeXworksが落ちる](http://blog.livedoor.jp/phyhyhy/archives/44589437.html)
-- [初めて質問させていただきます。texworksについてです。先日、大学の課... - Yahoo!知恵袋](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11144517421)
-- [Windows - TeXの環境を整える（エディタ編） - Qiita](http://qiita.com/This_is_my_pen/items/bc1198d95355dba5540c)
+- [TeXworks 0.4.6 + Qt 5.4.1](http://d.hatena.ne.jp/acetaminophen/20150513/1431536306)
 
 ### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
 
