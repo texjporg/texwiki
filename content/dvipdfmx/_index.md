@@ -907,23 +907,6 @@ dvipdfmx はコマンドの名前によって機能を変えることができ�
 [dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．
 UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．
 
-### DVI ファイルが存在しない PDF ファイルを削除する {#i282b26a}
-
-dvipdfmx には DVI ファイルが存在しない PDF ファイルを削除する機能があります．
-
-```
-PS C:\Users\$Env:USERNAME> dvipdfmx test
-test.dvi -> test.pdf
-```
-
-```
-** ERROR ** Could not open specified DVI file: test.dvi
-```
-
-```
-Output file removed.
-```
-
 ### PDF/X について {#e2cc950a}
 
 今のところ dvipdfmx は PDF/X 出力には対応していませんが、\special コマンドを駆使して PDF/X 準拠を謳った PDF を作成することはできます。ここではその方法を示しますが、<em>自分が何をやっているのかよく理解したうえで行ってください</em>。
