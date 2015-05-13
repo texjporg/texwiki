@@ -9,8 +9,6 @@ pukiwiki: "LaTeXiT"
 
 ## [LaTeXiT](http://pierre.chachatelier.fr/latexit/) {#b58323c5}
 
-<img src="http://pierre.chachatelier.fr/latexit/images/latexit_128.png" alt="LaTeXiT" style="float:right">
-
 LaTeXiT は，TeX ソースコードをタイプセットして画像に変換するアプリケーションです．
 [MacTeX](/Mac/#mactex) に標準で含まれています．
 
