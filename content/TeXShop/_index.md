@@ -8,46 +8,44 @@ pukiwiki: "TeXShop"
 
 # TeXShop
 
+## TeXShop {#q728ac5b}
+
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png,right,around,nolink,240x240,TeXShop) -->
 
 TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](/Mac/#mactex) には標準で含まれています．
 
-TeXShop をモデルにしたクロスプラットフォームな統合環境として [TeXworks](/TeXworks/) があります．
-
-<strong>目次</strong>
-
-<div style="clear:both"></div>
-
-## 概要 {#q728ac5b}
-
-### 公式 Web サイト {#n47ed01f}
+<strong>公式 Web サイト</strong>
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
     - [TeXShop](http://pages.uoregon.edu/koch/texshop/)
+
+TeXShop をモデルにしたクロスプラットフォームな統合環境として [TeXworks](/TeXworks/) があります．
+
+***
+
+***
+
+<div style="clear:both"></div>
 
 ### 動作環境 {#i28ced5b}
 
 OS X
 
-### License {#x8f63441}
+<!-- **不具合 [#i75be8c7] -->
 
-GPLv2
-
-<!-- **リリース情報/ChangeLog [#td599942] -->
-
-<!-- -[[Changes in Version 3:http://pages.uoregon.edu/koch/texshop/changes_3.html]]~ -->
-
-<!-- *不具合 [#i75be8c7] -->
-
-## 設定 {#sc027054}
+### 設定 {#sc027054}
 
 [TeXShop/設定](</TeXShop/設定/>) を参照．
 
-## 使い方 {#nb6a194e}
+### 使い方 {#nb6a194e}
 
 [TeXShop/使い方](</TeXShop/使い方/>) を参照．
 
-## 関連リンク {#qb1b8010}
+### トラブルシューティング・よくある質問 {#o06db01d}
+
+[TeXShop FAQ](</TeXShop FAQ/>) を参照．
+
+### 関連リンク {#qb1b8010}
 
 - MacWiki:TeXShop
 - [Newest &#39;texshop&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texshop)
@@ -66,3 +64,11 @@ GPLv2
 - [TeX環境の構築 on Mac OS X Lion](http://henry.animeo.jp/wp/?p=1553)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
 - [ネ申](https://twitter.com/h_okumura/status/196009146590572545)
+
+#### License {#x8f63441}
+
+GPLv2
+
+#### ChangeLog {#td599942}
+
+- [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)
