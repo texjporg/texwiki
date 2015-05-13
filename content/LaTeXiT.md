@@ -11,36 +11,60 @@ pukiwiki: "LaTeXiT"
 
 <img src="http://pierre.chachatelier.fr/latexit/images/latexit_128.png" alt="LaTeXiT" style="float:right">
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+LaTeXiT は，TeX ソースコードをタイプセットして画像に変換するアプリケーションです．
+[MacTeX](/Mac/#mactex) に標準で含まれています．
 
-## LaTeXiT とは {#j7c51563}
-
-LaTeXiT は数式エディタです．<br>
-[MacTeX](/Mac/#mactex) に標準で含まれています．<br>
+<strong>公式サイト</strong>
 
 - [LaTeXiT](http://pierre.chachatelier.fr/latexit/)
-    - [Downloads](http://pierre.chachatelier.fr/latexit/latexit-downloads.php)
-        - [Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.php)
-    - [FAQ](http://pierre.chachatelier.fr/latexit/latexit-faq.php)
 - [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
+
+類似ソフトウェアとして，[TeX2img](/TeX2img/) があります．
+
+***
+
+***
+
+### 出力形式 {#j810704f}
+
+LaTeXiT が出力できる画像形式は以下のとおりです．
+
+- ベクター画像
+    - アウトラインをとった EPS ファイル
+    - アウトラインをとった PDF ファイル (PDF with outlined fonts)
+    - テキストを保持した PDF ファイル
+- ビットマップ画像
+    - JPEG ファイル
+    - PNG ファイル
+    - TIFF ファイル
+
+PNG は背景を透過させることができます．
+
+オプションで [pdf2svg](/pdf2svg/) をインストールすれば，SVG ファイルも出力できるそうです． <!-- ただ，インストールと連携に成功していないので未確認． -->
+
+バージョン 2.3.0 以降は，試験的に MathML 形式でも出力できる機能が付加されました．
 
 ### 動作環境 {#e0e2eaf2}
 
-OS X
+OS X で動作します．
+[COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main)
+を参照してください．
 
-[COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照．<br>
+### インストール {#z9061d08}
 
-### リリース情報/ChangeLog {#sb3b1ab6}
+LaTeXiT 本体は以下のリンクからダウンロードできます．
 
-- [ChangeLog](http://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
+- [LaTeXiT Downloads](http://pierre.chachatelier.fr/latexit/latexit-downloads.php)
 
-## 環境設定 {#tab3d738}
+Beta 版も入手できます，
 
-### プログラム {#xab14b42}
+- [LaTeXiT Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.php)
 
-#### コマンド {#a32b734b}
+### 環境設定 {#tab3d738}
 
-\[プログラム\]-\[コマンド\] で latex+dvipdf を選択して \[変更...\] を使用せずにプログラムのパスを直接入力します．<br>
+#### プログラム {#a32b734b}
+
+\[プログラム\]-\[コマンド\] で latex+dvipdf を選択して \[変更...\] を使用せずにプログラムのパスを直接入力します．
 
 ***
 
@@ -63,8 +87,9 @@ OS X
 
 ***
 
-## 関連リンク {#tab9989c}
+### 関連リンク {#tab9989c}
 
+- [LaTeXiT FAQ](http://pierre.chachatelier.fr/latexit/latexit-faq.php)
 - [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](http://ottan.xyz/mac-latex-presentation-92/)
 - [MacにLaTeXiT (+LaTeX) を導入＆日本語に対応](http://harulab.info/?p=631)
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
@@ -72,3 +97,7 @@ OS X
 - MacWiki:LaTeXiT
 - LaTeXiTでUndefined control sequence.l.1 \documentclass とのエラーメッセージがでる ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
 - [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
+
+#### ChangeLog {#sb3b1ab6}
+
+- [ChangeLog](http://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
