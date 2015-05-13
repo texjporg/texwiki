@@ -36,7 +36,7 @@ TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8
 
 TeX Forum: [1291](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1291#p7302), [1439](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1439#p8051), [1449](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1449#p8097)
 
-### Yosemite にアップデートしたら，PDF がぼやけて見えるようになった {#y17d23d7}
+### Yosemite にアップデートしたら PDF がぼやけて見えるようになった {#y17d23d7}
 
 この現象は 非 Retina ディスプレイ搭載 + Yosemite 搭載 の Mac でのみ生じる問題です。
 Yosemite のPDF レンダリングエンジンにバグがあるために生じる現象で，OS の PDF レンダリングエンジンを使用している [Skim](/Skim/) など他の PDF ビューアでも同じ問題が発生しています。
@@ -78,7 +78,10 @@ defaults write TeXShop FixLineNumberScroll NO
 
 - 環境設定 → 書類 → エディタ → スペルチェック
 - 環境設定 → 書類 → エディタ → スペルの自動修正
+- 編集 → 入力中にスペルチェック
 - 編集 → スペルを自動的に修正
+
+前者2つは今後新規に開くウィンドウのデフォルト挙動を規定し，後者2つは現在開いているウィンドウの設定値を規定しています。
 
 なお，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を導入すれば，TeXの文法を考慮したスペルチェック（例えば \newcommand のような制御綴をスペルチェック対象から除外するなど）が可能になります。
 
@@ -215,6 +218,8 @@ pTeX では，JIS X 0208 の範囲の文字しか扱えないため，JIS 第二
 
 が通らなくなるといったトラブルの原因になります。
 
+資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+
 ### 環境設定 → 詳細 → 保存時の処理 → UTF-8-MAC を UTF-8 に自動変換 とは何？ {#i7c17a71}
 
 いわゆる Unicode 正規化です。
@@ -245,3 +250,51 @@ Unicodeでは，1つの文字に対して複数の表現方法が存在する場
 そこで，「UTF-8-MAC を UTF-8 に自動変換」のチェックを入れておくと，ファイル保存時にいわゆるNFC（に似た）正規化が行われ，U+304B U+3099 が U+304C に正規化されます。
 
 ただし，Unicode に規定された NFC 正規化のルールに基づくと，CJK 互換漢字が CJK 統合漢字に変化してしまうという問題が生じます。そこで，TeXShop では，Unicode の「合成除外」を考慮した非標準的な正規化（通称 [Modified NFC](http://d.hatena.ne.jp/NAOI/20100826)）を行っています。
+
+資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+
+## Tips {#t1ac1a97}
+
+### ウィンドウを切り替える色々な方法 {#b350e858}
+
+- Command + 1 : ソースウィンドウとプレビューウィンドウの切り替え
+- Command + F1 / Command + Shift + F1 : TeXShopの全ウィンドウを正順／逆順に切り替え
+- Command + F2 / Command + Shift + F2 : ソースウィンドウのみを正順／逆順に切り替え
+
+なお，以下の点に注意してください。
+
+- Command (+ Shift) + F1 は，
+
+    ```
+    システム環境設定 → キーボード → ショートカット → キーボード
+    ```
+
+    に規定された，OS全体の設定です。これを変更していたり無効化していたりすると，TeXShopでも変更・無効化されます。
+
+- F1 や F2 のキーは，Macのデフォルトではディスプレイの輝度調整に割り当てられており，標準のショートカットキーとして利用するには，次のいずれかの措置が必要です。
+    - fn キーを押しながら F1 や F2 を押す
+    - システム環境設定 → キーボード → キーボード → F1，F2 などのすべてのキーを標準のファンクションキーとして使用 にチェックを入れる。
+
+### 統合ウィンドウの利用 {#b261aaa2}
+
+### 「実験」機能 {#pbbb5a40}
+
+### 「タグ」機能 {#n203c568}
+
+### コマンド補完のテクニック {#w512c4be}
+
+#### 「マーク」の利用 {#v7f4d9d8}
+
+#### \begin / \end の補完 {#p155b323}
+
+#### 最も内側の環境を閉じる {#pf65d4fa}
+
+#### \label と \ref の補完 {#k9dc75d1}
+
+### 「文字情報」機能 {#p2fb04e9}
+
+### 「統計情報」機能 {#e9b6bf12}
+
+### cocoAspell の利用 {#s065005c}
+
+### AppleScript の利用 {#r59cce6f}
