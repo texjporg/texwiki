@@ -20,11 +20,11 @@ pukiwiki: "PDFの作り方"
 
 ### TeX から PDF を作成するツール {#d8e4c485}
 
-<em>Adobe Acrobat DC (Distiller 含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
+<em>Adobe Acrobat DC (Adobe Acrobat Distiller DC を含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
 
 - upLaTeX + dvipdfmx
 - upLaTeX + dvips + ps2pdf (Ghostscript)
-- upLaTeX + dvips + Acrobat Distiller
+- upLaTeX + dvips + Adobe Acrobat Distiller DC
 - [pLaTeX-ng](/pTeX-ng/)
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
@@ -132,7 +132,7 @@ LaTeX のインストールについては
 upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．
 具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください．
 
-dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
+dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Adobe Acrobat Distiller DC
 で PDF に変換する方法もあります．
 詳しくは [dvips の使い方](#lf015a28) をご覧ください．
 
@@ -172,7 +172,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 ```
 (3)-1: uplatex: tex → dvi
 (3)-2: dvips: dvi → ps
-(3)-3: ps2pdf (Ghostscript)  or 「Adobe Distiller」: ps → pdf
+(3)-3: ps2pdf (Ghostscript)  or 「Adobe Acrobat Distiller DC」: ps → pdf
 ※ [[arXiv]] 等ではこれを要求されるようです
 ※ 挿入図ファイルはEPS形式のみ, pstricks, powerdot 使用可能
 ```
@@ -312,7 +312,7 @@ kpsewhich -progname=dvipdfmx -format=map cid-x.map
 日本語版 dvipdfm にはこの問題はないようです．
 （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
 The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character
-sets may be used.）(--> これは ISO 32000-1 で加わった仕様で，PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません．このため ISO 32000-1 は過去の PDF のバージョンと非互換です．Acrobat Distiller 等も同様の問題を抱えているようです．)
+sets may be used.）(--> これは ISO 32000-1 で加わった仕様で，PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません．このため ISO 32000-1 は過去の PDF のバージョンと非互換です．Adobe Acrobat Distiller DC 等も同様の問題を抱えているようです．)
 
 dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます．
 EPS 挿入には外部プログラムとして Ghostscript が必要です．
@@ -344,7 +344,7 @@ Ghostscript で PDF を作る場合，正しい設定をすれば和文フォン
 詳しくは [Ghostscript](/Ghostscript/)
 のページをご覧ください．
 
-Distiller をコマンドラインから使いたい場合，
+Adobe Acrobat Distiller DC をコマンドラインから使いたい場合，
 OS X では
 
 ```
@@ -421,7 +421,7 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
 きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます．
 処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません．
 
-Adobe Acrobat DC をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます．
+Adobe Acrobat DC をお持ちであればダブルクリックすれば，Adobe Acrobat Distiller DC が PDF に変換してくれます．
 dvipdfmx を使うほうがトラブルは少ないかもしれません．
 
 foo.dvi という DVI ファイルを PostScript ファイル foo.ps
@@ -437,9 +437,9 @@ TeX Live では，“-Ppdf” オプションは不要です．
 
 欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします．
 
-通常のドキュメントクラスでは，a4paper オプションを付けても，Acrobat Distiller
+通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller DC
 のデフォルト設定では用紙がレターサイズになってしまいます．
-A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
+A4 にするには，ジョブオプションの設定でページサイズを変えるか，あるいは dvips
 に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）．
 [新ドキュメントクラス](/jsclasses/)なら
 \documentclass\[uplatex,a4paper,papersize\]{jsarticle}
@@ -477,7 +477,7 @@ dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, XeTeX/XeLaTeX を使う場合には 
 
 Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です．
 画面や非 PostScript プリンターへの出力ではラスター画像が使われ，PostScript
-プリンター（Distiller も含む）への出力にはベクトル画像が使われます．
+プリンター（Adobe Acrobat Distiller DC も含む）への出力にはベクトル画像が使われます．
 LaTeX に挿入するときはプレビュー画像は不要です．
 
 画面キャプチャーなどのラスター画像は，dvips などを使って PS を作るなら，EPS
@@ -505,7 +505,7 @@ dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG �
 <!-- → PDF 画像は DVIOUT で表示されるが，複雑な画像の場合には表示がおかしくなる ([[qa:32767]], [[qa:32769]]) -->
 <!--  -->
 <!-- -EPS 画像のみを用意する~ -->
-<!-- → dvipdfm 時に ghostscript (or distiller) を呼び出して変換処理をするのに時間がかかる -->
+<!-- → dvipdfmx 時に Ghostscript (or Adobe Acrobat Distiller DC) を呼び出して変換処理をするのに時間がかかる -->
 <!--  -->
 <!-- -PDF, EPS 両方を用意して使い分ける（DVI ファイルに EPS 画像，PDF ファイルに PDF 画像）．~ -->
 <!-- → xbb ファイルの作成が面倒．また \includegraphics で画像の使い分けをする分岐命令が面倒，煩雑．([[qa:32749]]) -->
@@ -553,7 +553,7 @@ EPS 出力に設定するには，コントロールパネルから［デバイ�
 
 Windows の PS プリンタードライバーではなかなか質の高い EPS ができないものです．
 crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです．
-いったん Distiller で PDF に変換して Acrobat （商品）で開き，必要な部分だけ切り抜き，EPS
+いったん Adobe Acrobat Distiller DC で PDF に変換して Adobe Acrobat DC（商品）で開き，必要な部分だけ切り抜き，EPS
 形式で保存し直すほうがうまくいくかもしれません．
 フリーなツールでは
 [ps2eps](http://www.tm.uka.de/~bless/ps2eps)
@@ -681,8 +681,8 @@ Word の極細 (0.25 pt) の罫線は使わないほうが無難です．
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
 Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．
-[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は <!-- Acrobat Distiller を含む製品（商品）です． -->
-製品（商品）です．
+[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は
+Adobe Acrobat Distiller DC を含む製品（商品）です．
 値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．
 
 その機能によってプランが幾つか存在しています．
@@ -699,7 +699,7 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 アップデートについては[アドビシステムズ](http://www.adobe.com/jp/)の
 ダウンロードのページをご覧ください．
 
-### Acrobat Distiller の設定 {#e5e57a76}
+### Adobe Acrobat Distiller DC の設定 {#e5e57a76}
 
 PDFWriter ではなく Distiller を使います．
 
@@ -897,7 +897,7 @@ PDF のパスワードを忘れてしまった場合は
 - [pdf仮想プリンタを作成する (Windows 7 Enterprise 64bit)](http://heilman-jinroku.blogspot.jp/2012/09/pdfwindows-7-enterprise-64bit.html)
 - [ghostscript と RedMon による PDF プリンタの実現](http://miko.org/~tatyana/tech/Win/pdfprinter.html)
 
-Windows 上で，フリーウェアだけで Distiller と同様に簡単に PDF が作れます．
+Windows 上で，フリーウェアだけで簡単に PDF が作れます．
 [RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います．
 
 あらかじめ最新版の Ghostscript をインストールしておきます．
