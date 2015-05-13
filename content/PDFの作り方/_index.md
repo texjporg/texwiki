@@ -10,10 +10,11 @@ pukiwiki: "PDFの作り方"
 
 ## PDF の作り方 {#td997c6f}
 
-投稿論文や予稿で PDF を要求されることが増えました．<br>
-ここでは PDF の上手な作り方を解説します．<br>
+投稿論文や予稿で PDF を要求されることが増えました．ここでは PDF の上手な作り方を解説します．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## PDF を作るためのソフトウェア {#mde22763}
 
@@ -27,7 +28,6 @@ pukiwiki: "PDFの作り方"
 - [pLaTeX-ng](/pTeX-ng/)
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
-- LuaJITLaTeX
 - [XeLaTeX](/XeTeX/)
 - 確認用 PDF ビューア →
     [SumatraPDF](/SumatraPDF/),
@@ -41,9 +41,9 @@ pukiwiki: "PDFの作り方"
 
 ### PDF 作成ソフト一覧 {#w48b82bc}
 
-[Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) を参照．
+[Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) も参照．
 
-[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pTeX-ng](/pTeX-ng/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，LuaJITTeX, [xdvipdfmx](/dvipdfmx/)，([XeTeX](/XeTeX/)) の他に，次のソフトがあります．
+[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pTeX-ng](/pTeX-ng/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[xdvipdfmx](/dvipdfmx/)，([XeTeX](/XeTeX/)) の他に，次のソフトがあります．
 
 - フリーソフトウェア，オープンソース
     - [LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) は PDF 出力機能を持っています．
@@ -129,21 +129,21 @@ LaTeX のインストールについては
 
 #### 日本語の PDF ファイルを作成する場合 {#j5accec9}
 
-upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．<br>
+upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．
 具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください．
 
 dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Acrobat Distiller
-で PDF に変換する方法もあります．<br>
+で PDF に変換する方法もあります．
 詳しくは [dvips の使い方](#lf015a28) をご覧ください．
 
 #### 欧文のみの PDF ファイルを作成する場合 {#sb4de6fd}
 
-欧文のみの原稿ならば，pdfLaTeX が簡単です．<br>
+欧文のみの原稿ならば，pdfLaTeX が簡単です．
 [BXcjkjatype](/LaTeX-CJK/) を使用すると pdfLaTeX で日本語の PDF ファイルも作成できます．
 
 #### Unicode を使用して多言語 PDF ファイルを作成する場合 {#ff1f7cd1}
 
-Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) がおすすめです．<br>
+Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) がおすすめです．
 日本語の PDF ファイルを作成する場合は [LuaTeX-ja](/LuaTeX-ja/) や [ZXjatype](/xeCJK/) を使用します．
 
 #### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
@@ -153,7 +153,7 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
 ```
 platex-ng: tex → pdf
 pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
-lualatex, luajitlatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
+lualatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
 xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 ※ 挿入図ファイルはPDF形式等も可
 ```
@@ -173,13 +173,13 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 (3)-1: uplatex: tex → dvi
 (3)-2: dvips: dvi → ps
 (3)-3: ps2pdf (Ghostscript)  or 「Adobe Distiller」: ps → pdf
-※ arXiv等ではこれを要求されるようです
+※ [[arXiv]] 等ではこれを要求されるようです
 ※ 挿入図ファイルはEPS形式のみ, pstricks, powerdot 使用可能
 ```
 
 #### PDF形式ファイル（図）の挿入について {#n20e1824}
 
-- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「platex-ng, pdflatex, lualatex, luajitlatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い．
+- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「platex-ng, pdflatex, lualatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い．
 
 - PDF ファイルを画像として取り込むときには，\includegraphics が利用するバウンディングボックスの情報が必要．
     - 一般に \includegraphics で外部ファイルを画像として取り込むには，出力されるページ上で画像の境界がどこに設定されるかを指定する必要がある．この領域のことをバウンディングボックス（bounding box）と呼ぶ．
@@ -225,35 +225,35 @@ $ extractbb foo.pdf
 
 ### dvipdfmx の使い方 {#rdc781c9}
 
-[dvipdfmx](/dvipdfmx/) は TeX 出力（DVI ファイル）を PDF に変換するフリーソフトウェアです．<br>
-『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました．<br>
-dvipdfmx は TeX Live, W32TeX に含まれています．<br>
+[dvipdfmx](/dvipdfmx/) は TeX 出力（DVI ファイル）を PDF に変換するフリーソフトウェアです．
+TeX Live, W32TeX に含まれています．
+『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました．
 
-使い方は，Windows PowerShell またはコマンド プロンプトなどで
+使い方は，コマンド プロンプトで
 
 ```
 dvipdfmx foo.dvi
 ```
 
-と打ち込むだけです．<br>
-これで foo.dvi が foo.pdf に変換されます．<br>
-コマンドラインを使用するのが苦手なかたは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
-などで dvipdfmx を使うように設定できます．<br>
+と打ち込むだけです．
+これで foo.dvi が foo.pdf に変換されます．
+コマンドラインを使用するのが苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
+などで dvipdfmx を使うように設定できます．
 
-以下では dvipdfmx について説明します．<br>
+以下では dvipdfmx について説明します．
 
 #### フォントの埋め込み設定 {#z0e1001a}
 
 dvipdfmx がフォントを埋め込むかどうかは設定によります．
 
-まず欧文フォントですが，TeX Live ではデフォルトで欧文フォントを埋め込みますが，W32TeX では通常は PostScript Level 1 での基本14書体は埋め込みません．<br>
+まず欧文フォントですが，TeX Live ではデフォルトで欧文フォントを埋め込みますが，W32TeX では通常は PostScript Level 1 での基本14書体は埋め込みません．
 W32TeX で基本14書体を埋め込むには
 
 ```
 dvipdfmx -f dlbase14.map ファイル名
 ```
 
-のようにして起動してください．<br>
+のようにして起動してください．
 あるいはソースに
 
 ```
@@ -262,9 +262,8 @@ dvipdfmx -f dlbase14.map ファイル名
 
 なる special コマンドを書いておいてもよいです．(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
 
-次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
-TeX Live の場合は IPAexフォントを埋め込む場合は
-Windows PowerShell またはコマンド プロンプトから
+次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
+TeX Live で IPAexフォントを埋め込む場合は，コマンド プロンプトから
 
 ```
 kanji-config-updmap-sys ipaex
@@ -276,9 +275,9 @@ kanji-config-updmap-sys ipaex
 kanji-config-updmap ipaex
 ```
 
-を実行します．<br>
+を実行します．
 
-W32TeX の場合は和文フォントはデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
+W32TeX の場合は和文フォントはデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
 
 $TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
 
@@ -286,7 +285,9 @@ $TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
 %%
 %% upTeX examples
 %%
+```
 
+```
 urml     UniJIS-UTF16-H   ipaexm.ttf
 urmlv    UniJIS-UTF16-V   ipaexm.ttf
 ugbm     UniJIS-UTF16-H   ipaexg.ttf
@@ -301,25 +302,26 @@ upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 
 と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます．
 
-cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
+cid-x.map の場所はコマンドプロンプトから以下のコマンドを実行すれば検索できます．
 
 ```
 kpsewhich -progname=dvipdfmx -format=map cid-x.map
 ```
 
-なお，dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです．<br>
-日本語版 dvipdfm にはこの問題はないようです．<br>
+なお，dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです．
+日本語版 dvipdfm にはこの問題はないようです．
 （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
-The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
+The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character
 sets may be used.）(--> これは ISO 32000-1 で加わった仕様で，PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません．このため ISO 32000-1 は過去の PDF のバージョンと非互換です．Acrobat Distiller 等も同様の問題を抱えているようです．)
 
-dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます．<br>
-EPS 挿入には外部プログラムとして Ghostscript が必要です．<br>
-ベクトル画像は PDF 形式，ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう．<br>
+dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます．
+EPS 挿入には外部プログラムとして Ghostscript が必要です．
+ベクトル画像は PDF 形式，ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう．
 
 #### extractbb の自動実行 {#rf074b4b}
 
-TeX Live 2015 以降, MacTeX-2015 以降, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．<br>
+TeX Live 2015 以降, MacTeX-2015 以降, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．
+これら以外の環境の場合は[次の項](</PDFの作り方/#z06f5ff9>)も読んで下さい．
 
 LaTeX ファイル中では
 
@@ -329,16 +331,16 @@ LaTeX ファイル中では
 \includegraphics[width=8cm]{zu.png}
 ```
 
-のようにします．<br>
-graphicx パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます．<br>
+のようにします．
+graphicx パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます．
 
 ```
 \usepackage[dvipdfmx]{graphicx}
 ```
 
-これを LaTeX と dvipdfmx で処理します．<br>
+これを LaTeX と dvipdfmx で処理します．
 
-Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます．<br>
+Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます．
 詳しくは [Ghostscript](/Ghostscript/)
 のページをご覧ください．
 
@@ -353,19 +355,19 @@ $ open -a 'Acrobat Distiller.app' ファイル名
 
 dvipdfmx で PSfrag を使うには，まず \pagestyle{empty}
 で図と PSfrag だけのページを作り，“dvips -Ppdf -E” で
-いったん EPS にしてから，それをメインの LaTeX ファイルに挿入します．<br>
+いったん EPS にしてから，それをメインの LaTeX ファイルに挿入します．
 ちょっと面倒ですので，
 [overpic](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/overpic.html)
 や
 [labelfig](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/labelfig.html)
-を使うのがいいでしょう．<br>
+を使うのがいいでしょう．
 
-dvipdfmx は PFB 形式の Type 1 フォントしか使えません．<br>
+dvipdfmx は PFB 形式の Type 1 フォントしか使えません．
 PFA → PFB 変換には [FontForge](http://fontforge.github.io/) が使えそうです
 
-#### BoundingBox の指定 → 問題が発生する場合は extractbb を使用する {#z06f5ff9}
+#### BoundingBox の指定 {#z06f5ff9}
 
-手動で BoundingBox を直接指定することも可能です．<br>
+手動で BoundingBox を直接指定する，もしくは extractbb を実行することも可能です．
 
 BoundingBox を直接指定する場合は
 
@@ -375,8 +377,8 @@ BoundingBox を直接指定する場合は
 
 を挿入します．
 
-なお “bb” とは “bounding box” を意味しています．<br>
-bb の単位は既定では bp (big point) です．<br>
+なお “bb” とは “bounding box” を意味しています．
+bb の単位は既定では bp (big point) です．
 
 - 1in = 72bp = 72.27pt = 25.40mm = 2.540 cm
 - [https://twitter.com/zr_tex8r/status/463680032204791808](https://twitter.com/zr_tex8r/status/463680032204791808)
@@ -386,22 +388,21 @@ bb の単位は既定では bp (big point) です．<br>
 - [単位](http://www.math.kobe-u.ac.jp/~kodama/tips-measure.html)
 - [TeXの10ptとDTPソフトの10ptは違う](http://www.dab.hi-ho.ne.jp/t-wata/tex/10pt.html)
 
-bb で直接指定する方法は
+bb で直接指定する方法には次の欠点があります．
 
 - 値を指定する手間がかかる
 - 間違った値を指定してしまうと適切に表示されなくなる可能性がある
 
-といった問題が発生することがあります．<br>
-問題が発生する場合は bb で直接指定せずに extractbb を使用してください．<br>
+通常は次に述べる extractbb を使用した方がよいです．
 
-TeX Live, W32TeX には dvipdfmx 用の BoundingBox を作成する extractbb というツールが付属しています．<br>
+TeX Live, W32TeX には dvipdfmx 用の BoundingBox を作成する extractbb というツールが付属しています．
 
 ```
 extractbb hoge.pdf
 ```
 
-とすると hoge.xbb というファイルが生成されます．<br>
-extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたはコマンドプロンプトから実行するコマンドです．<br>
+とすると hoge.xbb というファイルが生成されます．
+extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたはコマンドプロンプトから実行するコマンドです．
 
 - [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
 - [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
@@ -416,33 +417,33 @@ extractbb は TeX ソースの本文に記述するものではなく，ター�
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです．
 
 dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
-コマンドで PDF ファイルに変換できます．<br>
-きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます．<br>
-処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません．<br>
+コマンドで PDF ファイルに変換できます．
+きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます．
+処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません．
 
-Adobe Acrobat DC をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます．<br>
-dvipdfmx を使うほうがトラブルは少ないかもしれません．<br>
+Adobe Acrobat DC をお持ちであればダブルクリックすれば，Acrobat Distiller が PDF に変換してくれます．
+dvipdfmx を使うほうがトラブルは少ないかもしれません．
 
 foo.dvi という DVI ファイルを PostScript ファイル foo.ps
-に変換するには，W32TeX では Windows PowerShell またはコマンド プロンプトで次のように打ち込みます．<br>
+に変換するには，W32TeX ではコマンド プロンプトで次のように打ち込みます．
 
 ```
 dvips -Ppdf -o foo.ps foo.dvi
 ```
 
-ハイパーリンクを埋め込んであるなら dvips -Ppdf -z ... のように “-z” も付けます．<br>
-TeX Live では，“-Ppdf” オプションは不要です．<br>
-デフォルトで，pk フォントではなく Type 1 フォントを利用できます．<br>
+ハイパーリンクを埋め込んであるなら dvips -Ppdf -z ... のように “-z” も付けます．
+TeX Live では，“-Ppdf” オプションは不要です．
+デフォルトで，pk フォントではなく Type 1 フォントを利用できます．
 
 欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします．
 
 通常のドキュメントクラスでは，a4paper オプションを付けても，Acrobat Distiller
-のデフォルト設定では用紙がレターサイズになってしまいます．<br>
+のデフォルト設定では用紙がレターサイズになってしまいます．
 A4 にするには，Distiller のジョブオプションの設定でページサイズを変えるか，あるいは dvips
-に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）．<br>
+に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）．
 [新ドキュメントクラス](/jsclasses/)なら
 \documentclass\[uplatex,a4paper,papersize\]{jsarticle}
-のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます．<br>
+のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます．
 
 図を挿入する際には
 
@@ -450,52 +451,52 @@ A4 にするには，Distiller のジョブオプションの設定でページ�
 \usepackage[dvips]{graphicx}
 ```
 
-のように dvips オプションを指定します．<br>
-図として EPS を挿入できます．<br>
+のように dvips オプションを指定します．
+図として EPS を挿入できます．
 
 ### 図の描き方 {#yca8607c}
 
 <div style="text-align:right">See <a href="/TeX入門/図表/">TeX入門/図表</a>, <a href="/描画・グラフツール/">描画・グラフツール</a></div>
 
-せっかく PDF にするのなら図はペイント系（ラスターグラフィックツール）ではなくドロー系（ベクトルグラフィックツール）で描きましょう．<br>
-ペイント系は拡大するとギザギザになりますが，ドロー系はいくら拡大しても滑らかです．<br>
+せっかく PDF にするのなら図はペイント系（ラスターグラフィックツール）ではなくドロー系（ベクトルグラフィックツール）で描きましょう．
+ペイント系は拡大するとギザギザになりますが，ドロー系はいくら拡大しても滑らかです．
 
 フリーソフトウェアでは
 [Inkscape](/Inkscape/)，[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/)
 Draw
-などがドロー系，[GIMP](https://ja.wikipedia.org/wiki/GIMP) などがペイント系です．<br>
+などがドロー系，[GIMP](https://ja.wikipedia.org/wiki/GIMP) などがペイント系です．
 ラスターイメージとして出力するなら
-[Blender](https://ja.wikipedia.org/wiki/Blender) も使えます．<br>
+[Blender](https://ja.wikipedia.org/wiki/Blender) も使えます．
 
-商品では [Illustrator](/Illustrator/) がドロー系，Photoshop がペイント系です．<br>
+商品では [Illustrator](/Illustrator/) がドロー系，Photoshop がペイント系です．
 
-ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます．<br>
-dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, LuaJITTeX/LuaJITLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう．<br>
+ドロー系ソフトからは PDF 形式または EPS (Encapsulated PostScript) 形式で保存しておきます．
+dvipdfmx, pdfTeX/pdfLaTeX, LuaTeX/LuaLaTeX, XeTeX/XeLaTeX を使う場合には PDF のほうが便利でしょう．
 
 [gnuplot](/gnuplot/) などのグラフツールも PDF 形式や EPS 形式で出力できます．([28.6 グラフを画像として保存する | HWB](http://hwb.ecc.u-tokyo.ac.jp/current/applications/gnuplot/output/), [GNUPLOTを用いたグラフ作成](http://www.cse.kyoto-su.ac.jp/~oomoto/lecture/program/gnuplot/gnuplot.html), [gnuplotの出力をマージンを調整してpdfに変換する](http://d.hatena.ne.jp/yambi/20130717/1374064507), [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html))
 
-Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です．<br>
+Word や DTP ソフトに挿入するときは EPS 保存時にプレビュー用のラスター画像を付けておくと便利です．
 画面や非 PostScript プリンターへの出力ではラスター画像が使われ，PostScript
-プリンター（Distiller も含む）への出力にはベクトル画像が使われます．<br>
-LaTeX に挿入するときはプレビュー画像は不要です．<br>
+プリンター（Distiller も含む）への出力にはベクトル画像が使われます．
+LaTeX に挿入するときはプレビュー画像は不要です．
 
 画面キャプチャーなどのラスター画像は，dvips などを使って PS を作るなら，EPS
-に変換しておくといいでしょう．<br>
+に変換しておくといいでしょう．
 Illustrator や Adobe Acrobat DC などに貼り付けたり開いたりしてから EPS
 で保存することもできますし，[ImageMagick](http://www.imagemagick.org/)
 や [sam2p](https://code.google.com/p/sam2p/)
-などのツールを使う方法もあります．<br>
+などのツールを使う方法もあります．
 
 PostScript Level 2 の EPS は JPEG 形式を含んでいますので，
-正しいツールを使えば，サイズをあまり変えずに JPEG → EPS 変換できます．<br>
-詳しくは「[変換ツール](</変換ツール/>)」の項目をご覧ください．<br>
+正しいツールを使えば，サイズをあまり変えずに JPEG → EPS 変換できます．
+詳しくは「[変換ツール](</変換ツール/>)」の項目をご覧ください．
 
-ドロー系の図には太さ 0.1 mm 以下の線を含めないでください．<br>
-高解像度のイメージセッタで出力すると見えなくなってしまいます．<br>
+ドロー系の図には太さ 0.1 mm 以下の線を含めないでください．
+高解像度のイメージセッタで出力すると見えなくなってしまいます．
 
-写真などのラスター画像の場合，解像度は 300&ndash;600 dpi でかまいません．<br>
+写真などのラスター画像の場合，解像度は 300&ndash;600 dpi でかまいません．
 
-dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG で保存しておくほうが楽です．<br>
+dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG で保存しておくほうが楽です．
 
 <!-- ***DVI/PDF 両形式を作成する場合の，画像の用意の仕方 [#l580b75f] -->
 <!-- RIGHT:[[qa:32795]] -->
@@ -521,34 +522,19 @@ EPS 形式での書き出しに対応していないソフトでも，Windows �
 プリンタードライバーをインストールして「ファイルに印刷」すれば PostScript
 形式で保存できます．
 
-PostScript プリンタードライバーは
-Windows PowerShell またはコマンド プロンプトから
-
-```
-control printers
-```
-
-を実行して［デバイスとプリンター］画面を表示します．<br>
-「プリンターの追加」をクリックしてインストールできます．<br>
-インストール時にローカルプリンター（出力先 FILE:）としてください．<br>
+PostScript プリンタードライバーは，コントロールパネルから［デバイスとプリンター］画面を表示し，「プリンターの追加」をクリックしてインストールできます．
+インストール時にローカルプリンター（出力先 FILE:）としてください．
 適当なプリンター記述 (PPD) ファイルがないなら，Generic PostScript Printer
 としてインストールします．
 
-EPS 出力に設定するには，
-Windows PowerShell またはコマンド プロンプトから
-
-```
-control printers
-```
-
-を実行して［デバイスとプリンター］画面を表示します．<br>
+EPS 出力に設定するには，コントロールパネルから［デバイスとプリンター］画面を表示します．
 「プリンターと FAX」で PostScript Printer
 を右クリックして「印刷設定」を選び，「レイアウト」→「詳細設定」 (または 「プリンターのプロパティ」を選び，「全般」→「基本設定」→「レイアウト」→「詳細設定」) で「ドキュメントのオプション」→「PostScript オプション」→「PostScript 出力オプション」を「EPS (Encapsulated PostScript)」にします．
 
 保存するときはファイル名の拡張子を “.eps” にします（例： test.eps）．
 
-しかし，この方法では BoundingBox （図の外枠の情報）が間違って附き，余白が広くなりすぎることがよくあります．<br>
-バウンディングボックスを直すには次のどちらかの方法を使います．<br>
+しかし，この方法では BoundingBox （図の外枠の情報）が間違って附き，余白が広くなりすぎることがよくあります．
+バウンディングボックスを直すには次のどちらかの方法を使います．
 
 - テキストエディタで開き，先頭附近の “%%BoundingBox: 10 20 300 400” の
     ような行を見つけ，四つの値（それぞれ左下隅の x，y 座標，右上隅の x，y
@@ -556,39 +542,38 @@ control printers
 
 - Windows の GSview というソフトでバウンディングボックスを修正する
 
-以上の手順を簡単にする [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) (フリーソフト) があります．<br>
-たいへん使い勝手の良いソフトです．<br>
+以上の手順を簡単にする [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) (フリーソフト) があります．
+たいへん使い勝手の良いソフトです．
 
 また，「[Windows での TeX 用仮想 EPS プリンターの作成方法](http://keijisaito.info/arc/tex/v_eps_printer.htm)」
-では，Windows 同梱のドライバーから仮想 EPS プリンターを作る方法が書いてあります．<br>
+では，Windows 同梱のドライバーから仮想 EPS プリンターを作る方法が書いてあります．
 「[Excel グラフをきれいに TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/vector_pdf.htm)」，
 「[画像や写真を TeX ⇒ PDF へ入れ込む方法](http://keijisaito.info/arc/tex/picture_eps.htm)」では，
-それぞれベクトル形式のグラフ，ラスター形式の画像を埋め込む手順をスクリーンショット附きで説明しています．<br>
+それぞれベクトル形式のグラフ，ラスター形式の画像を埋め込む手順をスクリーンショット附きで説明しています．
 
-Windows の PS プリンタードライバーではなかなか質の高い EPS ができないものです．<br>
-crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです．<br>
+Windows の PS プリンタードライバーではなかなか質の高い EPS ができないものです．
+crop しても BoundingBox の外を侵蝕するような EPS を出力することもあるようです．
 いったん Distiller で PDF に変換して Acrobat （商品）で開き，必要な部分だけ切り抜き，EPS
-形式で保存し直すほうがうまくいくかもしれません．<br>
+形式で保存し直すほうがうまくいくかもしれません．
 フリーなツールでは
 [ps2eps](http://www.tm.uka.de/~bless/ps2eps)
-が使えそうです．<br>
-PS プリンタードライバーの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています．<br>
+が使えそうです．
+PS プリンタードライバーの出力を直接 ps2eps に通す方法が[こちら](http://www.iir.me.ynu.ac.jp/~maeda/comp/epstips.html)に紹介されています．
 
 EPS 出力をサポートしていないソフトウェアを使用している場合は，
 [Metafile to EPS Converter](</LyX/使い方/#s31f9c03>) を使うと EPS ファイルに変換できます．
 
-[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) の Draw には，EPS エクスポート機能があります．<br>
-コピー＆ペーストで Draw に貼り付け，Ctrl-A で全選択して，ファイル→エクスポートでファイル書式を EPS にすると，EPS 形式で出力できます．<br>
-Ctrl-A で全選択しておかないと， BoundingBox がページ全体になってしまうので，お忘れなく．<br>
+[LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) の Draw には，EPS エクスポート機能があります．
+コピー＆ペーストで Draw に貼り付け，Ctrl-A で全選択して，ファイル→エクスポートでファイル書式を EPS にすると，EPS 形式で出力できます．
+Ctrl-A で全選択しておかないと， BoundingBox がページ全体になってしまうので，お忘れなく．
 
 ### OS X のソフトから画像を挿入するには {#g035cf1f}
 
-OS X では，どんなソフトからでも「印刷」メニューで PDF が作れます．<br>
-これをうまく使えば EPS を経由せずに高品位の画像が挿入できます．<br>
+OS X では，どんなソフトからでも「印刷」メニューで PDF が作れます．
+これをうまく使えば EPS を経由せずに高品位の画像が挿入できます．
 
-必ず1ページだけを PDF として印刷してください．<br>
-
-これ（zu.pdf とします）を次のようにして挿入します．<br>
+必ず1ページだけを PDF として印刷してください．
+これ（zu.pdf とします）を次のようにして挿入します．
 
 ```
 \documentclass[uplatex]{jsarticle}
@@ -601,16 +586,16 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 ```
 
 これで ptex2pdf で PDF にして，「プレビュー」または Adobe Acrobat Reader DC
-で印刷します．<br>
+で印刷します．
 あるいは [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/)
-などを使えばボタンをクリックするだけで PDF ができます．<br>
+などを使えばボタンをクリックするだけで PDF ができます．
 
 <!-- **Computer Modern Type 1 フォント [#k3985a6a] -->
 <!--  -->
 <!-- W32TeX では Computer Modern Type 1 フォントは&ref(http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1fonts.tar.xz); に含まれています． -->
 <!--  -->
 <!-- 無償で配布されている Computer Modern Type 1 -->
-<!-- フォントはすべてのサイズがそろっているわけではありません．~ -->
+<!-- フォントはすべてのサイズがそろっているわけではありません． -->
 <!-- 次のように type1cm -->
 <!-- パッケージを使って，存在しない Type 1 -->
 <!-- フォントは存在するものを拡大・縮小して使うようにする必要があります． -->
@@ -619,58 +604,49 @@ OS X では，どんなソフトからでも「印刷」メニューで PDF が�
 
 ## Word で PDF {#l3ff32fb}
 
-Microsoft 製品は，なるべく最新のアップデートを適用しておきましょう．<br>
-Microsoft Office は [Windows Update 利用の手順](http://www.microsoft.com/ja-jp/security/pc-security/j_musteps.aspx)を参照して Office をアップデートします．<br>
+Word は，同じファイルを開いても，同じように書いても，バージョン，設定，テンプレート，プリンター[^1]，その他の環境の違いによって，レイアウトが変わってしまうという嫌な特徴を持っています．
+正しい方法で PDF にしておけば，レイアウトの崩れは防げます．
 
-Word は，同じファイルを開いても，同じように書いても，バージョン，設定，テンプレート，プリンター[^1]，その他の環境の違いによって，レイアウトが変わってしまうという嫌な特徴を持っています．<br>
-正しい方法で PDF にしておけば，レイアウトの崩れは防げます．<br>
+コントロールパネルから［デバイスとプリンター］画面を表示します．
+［プリンターと FAX］にある「Adobe PDF」プリンターが「通常使うプリンターに設定」されていることを確認します．
 
-Windows PowerShell またはコマンド プロンプトから
-
-```
-control printers
-```
-
-を実行して［デバイスとプリンター］画面を表示します．<br>
-［プリンターと FAX］にある「Adobe PDF」プリンターが「通常使うプリンターに設定」されていることを確認します．<br>
-
-テンプレートが指定されている場合には，それをユーザテンプレート用のフォルダに入れておきます．<br>
+テンプレートが指定されている場合には，それをユーザテンプレート用のフォルダに入れておきます．
 ユーザテンプレート用のフォルダは，Word
 を立ち上げて ［ツール］ → ［オプション］ → ［規定のフォルダ］ で確認できます
-（見にくい場合には，とりあえず［変更］を押してみるといいでしょう）．<br>
+（見にくい場合には，とりあえず［変更］を押してみるといいでしょう）．
 
-Word を立ち上げます．<br>
-テンプレートがあるなら「新規作成」でテンプレート名を指定します．<br>
-テンプレートがないなら，［ファイル］ → ［ページ設定］ で決められた値を設定します．<br>
-用紙は，日欧では A4，米国ではレターサイズが一般的です．<br>
+Word を立ち上げます．
+テンプレートがあるなら「新規作成」でテンプレート名を指定します．
+テンプレートがないなら，［ファイル］ → ［ページ設定］ で決められた値を設定します．
+用紙は，日欧では A4，米国ではレターサイズが一般的です．
 
-欧文論文なら，すぐにフォントを欧文フォントに切り替えます．<br>
+欧文論文なら，すぐにフォントを欧文フォントに切り替えます．
 理系論文用の欧文フォントとしては，本文は Times New Roman，見出しは Arial
-が一般的です．<br>
+が一般的です．
 ちなみに Word で Century
-を使うとイタリック体が本来のイタリック体ではなく機械的に斜めにしたものになってしまいます．<br>
+を使うとイタリック体が本来のイタリック体ではなく機械的に斜めにしたものになってしまいます．
 
-欧文論文では全角文字は一切使ってはいけません．<br>
-記号類は Symbol フォントを使いましょう．<br>
+欧文論文では全角文字は一切使ってはいけません．
+記号類は Symbol フォントを使いましょう．
 
-欧文・和文を問わず，ローマ数字は I，II，III，IV，V のように欧文アルファベットを並べて表します．<br>
+欧文・和文を問わず，ローマ数字は I，II，III，IV，V のように欧文アルファベットを並べて表します．
 
-和文論文なら，本文は「リュウミンL-KL」，見出しは「中ゴシックBBB」にします．<br>
+和文論文なら，本文は「リュウミンL-KL」，見出しは「中ゴシックBBB」にします．
 これらのフォントが一覧に現れない場合には，「Acrobat
-Distiller」プリンターが「通常使うプリンターに設定」されていないことが考えられます．<br>
+Distiller」プリンターが「通常使うプリンターに設定」されていないことが考えられます．
 
-和文フォントの文字飾り（ボールド，斜体，ワードアートなど）は使ってはいけません．<br>
+和文フォントの文字飾り（ボールド，斜体，ワードアートなど）は使ってはいけません．
 
-挿入する図についても，フォントは正しく設定しましょう．<br>
-Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっていませんか．<br>
+挿入する図についても，フォントは正しく設定しましょう．
+Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっていませんか．
 
-完成したら，［ファイル］ → ［印刷］ でプリンター名が Acrobat Distiller になっていることを確認し，印刷します．<br>
-PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます．<br>
+完成したら，［ファイル］ → ［印刷］ でプリンター名が Acrobat Distiller になっていることを確認し，印刷します．
+PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます．
 
 Adobe Acrobat Reader DC （または Adobe Acrobat DC） が立ち上がりますので，
-拡大して文字がギザギザにならないことを確認します．<br>
+拡大して文字がギザギザにならないことを確認します．
 また，全ページをスクロールし表示した後で，［ファイル］ → ［プロパティ］ → ［フォント］
-ですべての使用フォントを確認します．<br>
+ですべての使用フォントを確認します．
 確認項目：
 
 - 欧文フォントの「実際のフォント」（4.0 では「使用フォント」）が（Times，Helvetica
@@ -678,25 +654,25 @@ Adobe Acrobat Reader DC （または Adobe Acrobat DC） が立ち上がりま�
 
 - 和文の場合には，和文フォントの「オリジナルフォント」（4.0 では「PDFのフォント」）が「リュウミンL-KL」と「中ゴシックBBB」になっている
 
-紙に印刷するには，Word ではなく Adobe Acrobat Reader DC （または Adobe Acrobat DC） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します．<br>
-印刷ダイアログの「用紙サイズに合わせてページを縮小」はデフォルトでオンになっているようですが，等サイズで印刷するときはオフにしておかないと微妙に縮小されることがあります．<br>
-「画像として印刷」もオフにしておかないとガタガタの印刷になります．<br>
-「2バイトフォントのダウンロード」も通常はオフにします．<br>
+紙に印刷するには，Word ではなく Adobe Acrobat Reader DC （または Adobe Acrobat DC） の印刷メニューで，プリンター名を物理的なプリンターに変えてから印刷します．
+印刷ダイアログの「用紙サイズに合わせてページを縮小」はデフォルトでオンになっているようですが，等サイズで印刷するときはオフにしておかないと微妙に縮小されることがあります．
+「画像として印刷」もオフにしておかないとガタガタの印刷になります．
+「2バイトフォントのダウンロード」も通常はオフにします．
 
-Word の極細 (0.25 pt) の罫線は使わないほうが無難です．<br>
-画面では見えても，印刷すると飛んでしまうことがあります．<br>
-これは他のソフトでも同様です．<br>
+Word の極細 (0.25 pt) の罫線は使わないほうが無難です．
+画面では見えても，印刷すると飛んでしまうことがあります．
+これは他のソフトでも同様です．
 
-なお，PDF ではなく Word のファイルとして保存する場合には，プリンターフォントではなく Windows 標準の TrueType フォントを使わないと，開いた環境により文字がずれてしまいます．<br>
+なお，PDF ではなく Word のファイルとして保存する場合には，プリンターフォントではなく Windows 標準の TrueType フォントを使わないと，開いた環境により文字がずれてしまいます．
 
 「リュウミンL-KL」「中ゴシックBBB」にする意味ですが，こうしておけば埋め込まなくても Reader
 が適当なフォントに置き換えてくれるし，PDF
 そのものが非常に軽くなるし，論文集などで論文ごとに違う和文フォントになるということが避けられるということだったのですが，ネットの高速化で，軽い PDF
 への要求も以前ほどではありませんし，逆に学会で配布する PDF
-は海外のパソコンでそのまま開けるように和文フォントを埋め込んではどうかといった話もあるほどです（統一したフォントを埋め込まないと論文ごとにばらつきが出ては困りますが）．<br>
-そういうわけで，「いっそのことすべて埋め込んでくれ」という指示もこれからはありかな，という気もします（「ＭＳ 明朝を埋め込むこと」といった指示は Linux/OS X ユーザに酷ですが）．<br>
+は海外のパソコンでそのまま開けるように和文フォントを埋め込んではどうかといった話もあるほどです（統一したフォントを埋め込まないと論文ごとにばらつきが出ては困りますが）．
+そういうわけで，「いっそのことすべて埋め込んでくれ」という指示もこれからはありかな，という気もします（「ＭＳ 明朝を埋め込むこと」といった指示は Linux/OS X ユーザに酷ですが）．
 
-なお，これは論文の話で，単独の書籍などであれば，著者の好きなフォントを埋め込んでおくほうがあとでトラブルがないでしょう．<br>
+なお，これは論文の話で，単独の書籍などであれば，著者の好きなフォントを埋め込んでおくほうがあとでトラブルがないでしょう．
 
 - 【参考リンク】[情報教育Wiki:Wordの正しい使い方](https://okumuralab.org/~okumura/compedu/?Word%E3%81%AE%E6%AD%A3%E3%81%97%E3%81%84%E4%BD%BF%E3%81%84%E6%96%B9)
 
@@ -704,63 +680,57 @@ Word の極細 (0.25 pt) の罫線は使わないほうが無難です．<br>
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
-Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．<br>
-[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は <!-- Acrobat Distiller を含む製品（商品）です．~ -->
-製品（商品）です．<br>
-値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．<br>
+Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．
+[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は <!-- Acrobat Distiller を含む製品（商品）です． -->
+製品（商品）です．
+値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．
 
-その機能によってプランが幾つか存在しています．<br>
-参考：「[&#x30d7;&#x30e9;&#x30f3;&#x3068;&#x4fa1;&#x683c;&#xff1a;&#x30d7;&#x30e9;&#x30f3;&#x6bd4;&#x8f03;&#x8868; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」<br>
+その機能によってプランが幾つか存在しています．
+参考：「[&#x30d7;&#x30e9;&#x30f3;&#x3068;&#x4fa1;&#x683c;&#xff1a;&#x30d7;&#x30e9;&#x30f3;&#x6bd4;&#x8f03;&#x8868; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」
 
 - Adobe Acrobat Reader DC — PDF の表示と印刷と注釈の追加のみ．無償配布されている．
 - Adobe Acrobat DC
     - Adobe Acrobat DC Standard — PDF の編集が可能
     - Adobe Acrobat DC Pro — 様々な PDF の編集が可能
 
-Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．<br>
+Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
-Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．<br>
+Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．
 アップデートについては[アドビシステムズ](http://www.adobe.com/jp/)の
-ダウンロードのページをご覧ください．<br>
+ダウンロードのページをご覧ください．
 
 ### Acrobat Distiller の設定 {#e5e57a76}
 
 PDFWriter ではなく Distiller を使います．
 
-Windows PowerShell またはコマンド プロンプトから
-
-```
-control printers
-```
-
-を実行して［デバイスとプリンター］画面を表示します．<br>
-［プリンターと FAX］にある「Adobe PDF」プリンターアイコンを右クリックし，「通常使うプリンターに設定」します．<br>
+コントロールパネルから［デバイスとプリンター］画面を表示します．
+［プリンターと FAX］にある「Adobe PDF」プリンターアイコンを右クリックし，「通常使うプリンターに設定」します．
 
 「Adobe PDF」プリンターアイコンを右クリックし，［印刷設定］ → ［レイアウト］ → ［詳細設定］ (または［プリンターのプロパティ］ → ［全般］ → ［基本設定］ → ［レイアウト］ → ［詳細設定］) で細かい設定をします．
 
-［TrueTypeフォント］の項目は，デフォルトでは「デバイス フォントと代替」になっています．<br>
-このままのほうが軽い PDF ファイルができます．<br>
-論文のオンライン投稿ではこのままにしておきます．<br>
-デザインものなどで，まったく同じフォントで出力してほしいなら，ここを「ソフト フォントとしてダウンロード」にします．<br>
+［TrueTypeフォント］の項目は，デフォルトでは「デバイス フォントと代替」になっています．
+このままのほうが軽い PDF ファイルができます．
+論文のオンライン投稿ではこのままにしておきます．
+デザインものなどで，まったく同じフォントで出力してほしいなら，ここを「ソフト フォントとしてダウンロード」にします．
 
-また，PostScript オプションの左の \[+\] をクリックし，［PostScript出力オプション］を「エラーが軽減するよう最適化」にするといいでしょう．<br>
-その下の TrueTypeフォントダウンロードオプションは「自動」または「Native TrueType」にしておきます．<br>
+また，PostScript オプションの左の \[+\] をクリックし，［PostScript出力オプション］を「エラーが軽減するよう最適化」にするといいでしょう．
+その下の TrueTypeフォントダウンロードオプションは「自動」または「Native TrueType」にしておきます．
 
-Distiller を立ち上げます．<br>
+Distiller を立ち上げます．
 
-Distiller の［ファイル］ → ［環境設定］で「PDFファイルの保存先を確認」をオンにします．<br>
-「Distillerで変換後にPDFを表示」もオンにしておくと確認のため便利です．<br>
+Distiller の［ファイル］ → ［環境設定］で「PDFファイルの保存先を確認」をオンにします．
+「Distillerで変換後にPDFを表示」もオンにしておくと確認のため便利です．
 
-まず，Acrobat XI では［Adobe PDF 設定］の［デフォルト設定］で選びます．<br>
-Web 用なら 最小ファイルサイズ，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう．<br>
-なお，Acrobat は最小ファイルサイズ設定にしてフォントを埋め込まないようにすると仕様に違反した PDF を生成するようです．<br>
+まず，Acrobat XI では［Adobe PDF 設定］の［デフォルト設定］で選びます．
+Web 用なら 最小ファイルサイズ，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう．
+なお，Acrobat は最小ファイルサイズ設定にしてフォントを埋め込まないようにすると仕様に違反した PDF を生成するようです．
 （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
-The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character 
+The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character
 sets may be used.）
 
-プレス品質は論文では必要ないでしょう．<br>
+プレス品質は論文では必要ないでしょう．
 
-［設定］ → ［Adobe PDF 設定\] の \[編集］は次のように設定します．<br>
+［設定］ → ［Adobe PDF 設定\] の \[編集］は次のように設定します．
 
 - ［一般］で「互換性のある形式」が標準で Acrobat 8.0 (PDF1.7) または Acrobat 7.0 (PDF1.6) または Acrobat 6.0 (PDF1.5) になっていて TeX Live 2014 を使用している場合は Acrobat 5.0 (PDF 1.4) までにしておくほうが無難です．
     Acrobat 8.0 (PDF1.7), Acrobat 7.0 (PDF1.6), Acrobat 6.0 (PDF1.5) の場合は TeX Live 2014 の extractbb を使用するとエラーが発生することがあります (→ [xbbファイルが作成できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=817))．
@@ -777,42 +747,42 @@ sets may be used.）
 - ［詳細設定］で「EPSファイルのページサイズ変更とアートワークの中央配置」をオフにします．
     これは後で dvipdfmx を使う際に便利です．
 
-以上の設定内容を「名前を付けて保存」します．<br>
-ファイル名は例えば “A4.joboptions” のようにします．<br>
+以上の設定内容を「名前を付けて保存」します．
+ファイル名は例えば “A4.joboptions” のようにします．
 
 以上の設定が終われば Distiller
-は［×］で閉じておいてかまいませんが，二つ同時には立ち上がらないようにできていますので，立ち上げたままにしておけば起動時間が節約できます．<br>
+は［×］で閉じておいてかまいませんが，二つ同時には立ち上がらないようにできていますので，立ち上げたままにしておけば起動時間が節約できます．
 
 LaTeX + dvips で作った PS ファイルを変換する際に “Warning: Ryumin-Light not found, using Font Substitution. Font cannot be embedded.” などと
-いう警告が出ますが，無視してかまいません．<br>
-むしろこのように出るほうがフォントが埋め込まれず軽い PDF になります．<br>
-この PDF を開くと，Ryumin-Light がなければ小塚明朝またはＭＳ 明朝で表示されます．<br>
-これに対して，“XXX not found, using Courier.” というメッセージはエラーです．<br>
+いう警告が出ますが，無視してかまいません．
+むしろこのように出るほうがフォントが埋め込まれず軽い PDF になります．
+この PDF を開くと，Ryumin-Light がなければ小塚明朝またはＭＳ 明朝で表示されます．
+これに対して，“XXX not found, using Courier.” というメッセージはエラーです．
 
-- ただし，フォントが埋め込まれないと仕様に違反した PDF になることがあるようです．<br>
+- ただし，フォントが埋め込まれないと仕様に違反した PDF になることがあるようです．
 
-Distiller を Windows PowerShell またはコマンド プロンプトから使うには
+Distiller をコマンドプロンプトから使うには
 
 ```
 start hoge.ps
 ```
 
-と打ち込みます．<br>
-拡張子 “.ps” と関連づけられていれば Distiller が起動するか，すでに起動している Distiller が処理を始めます．<br>
-Distiller に関連付けしたくない場合は Distiller に入力/出力ファイル名を指定してコマンドラインから実行することもできます．(→ [Distillerを入力/出力ファイル名を指定して起動する方法について](http://kb2.adobe.com/jp/cps/510/510769.html))<br>
-保存場所や上書き確認をせず Adobe Acrobat DC を立ち上げない設定にしておけば便利です．<br>
-さらに，共有フォルダを「監視フォルダ」に指定して立ち上げておけば Linux などからでも使えます．<br>
+と打ち込みます．
+拡張子 “.ps” と関連づけられていれば Distiller が起動するか，すでに起動している Distiller が処理を始めます．
+Distiller に関連付けしたくない場合は Distiller に入力/出力ファイル名を指定してコマンドラインから実行することもできます．(→ [Distillerを入力/出力ファイル名を指定して起動する方法について](http://kb2.adobe.com/jp/cps/510/510769.html))
+保存場所や上書き確認をせず Adobe Acrobat DC を立ち上げない設定にしておけば便利です．
+さらに，共有フォルダを「監視フォルダ」に指定して立ち上げておけば Linux などからでも使えます．
 
 LaTeX で color パッケージを使って dvips → Distiller で作った PDF
-を印刷すると文字がアミカケ状態になってしまうことがあります．<br>
+を印刷すると文字がアミカケ状態になってしまうことがあります．
 ［設定］ → ［ジョブオプション］ → ［カラー］ を「カラーマネジメント用にすべてタグ付け」，作業用スペースの CMYK
 を Photoshop 5 Default CMYK にすると直りました（理屈はよくわかってないのですが）([qa:16839](https://okumuralab.org/~okumura/texfaq/qa/16839.html))．<br>
-設定ファイルを「プリプレス-日本」にしても直るようです ([qa:18199](https://okumuralab.org/~okumura/texfaq/qa/18199.html))．<br>
+設定ファイルを「プリプレス-日本」にしても直るようです ([qa:18199](https://okumuralab.org/~okumura/texfaq/qa/18199.html))．
 
-Photoshop 5 Default CMYK にすると今度は色が変わってしまうというご指摘をいただきました．<br>
-設定ファイルを「プリプレス-日本」にするのがよさそうです．<br>
+Photoshop 5 Default CMYK にすると今度は色が変わってしまうというご指摘をいただきました．
+設定ファイルを「プリプレス-日本」にするのがよさそうです．
 ただ，文字がアミカケ状態になるのは Adobe Acrobat DC から非 PS プリンターに出力する際の問題のようですので，PS
-プリンター（イメージセッタも）では大丈夫かもしれません．<br>
+プリンター（イメージセッタも）では大丈夫かもしれません．
 
 ### pdf（のサイズ）を拡大 {#l1c219ce}
 
@@ -831,32 +801,32 @@ Acrobat DC Pro（有償ソフト）を用いて対象の pdf ファイルを開�
 
 ## Adobe Acrobat Reader DC /Acrobat DC のヒント {#l5e4219f}
 
-印刷ダイアログの「用紙サイズに合わせてページを縮小」は，特に必要なければオフにします．<br>
-これがオンの場合，ほんの少し小さく印刷されることがあります．<br>
+印刷ダイアログの「用紙サイズに合わせてページを縮小」は，特に必要なければオフにします．
+これがオンの場合，ほんの少し小さく印刷されることがあります．
 
-「画像として印刷」はオフにします．<br>
-どうしても印刷がうまくいかない場合にオンにしますが，ガタガタの印刷になってしまいます．<br>
+「画像として印刷」はオフにします．
+どうしても印刷がうまくいかない場合にオンにしますが，ガタガタの印刷になってしまいます．
 
-「2バイトフォントのダウンロード」も通常はオフにします．<br>
+「2バイトフォントのダウンロード」も通常はオフにします．
 
-文字がきれいに表示されない場合には，うんと拡大してみてください．<br>
-ギザギザに見えてくるなら，間違ってビットマップフォントが埋め込まれてしまったのです．<br>
-設定を見直してください．<br>
-拡大するときれいに見えるなら，Adobe Acrobat Reader DC/Acrobat DC の設定の問題でしょう．<br>
-スムージング（アンチエイリアシング），グリーキング（小さい文字を潰して表示すること）の設定を変えてみてください．<br>
+文字がきれいに表示されない場合には，うんと拡大してみてください．
+ギザギザに見えてくるなら，間違ってビットマップフォントが埋め込まれてしまったのです．
+設定を見直してください．
+拡大するときれいに見えるなら，Adobe Acrobat Reader DC/Acrobat DC の設定の問題でしょう．
+スムージング（アンチエイリアシング），グリーキング（小さい文字を潰して表示すること）の設定を変えてみてください．
 
 ## Illustrator のヒント {#j52115c0}
 
 Illustrator 9/10 から EPS
-形式で保存するときは，互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．<br>
-CMYK ポストスクリプト（レベル 2）にします．<br>
-プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．<br>
-Word などに埋め込む際には，プレビューのラジオボタンは必ず「不透明」にします．<br>
+形式で保存するときは，互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．
+CMYK ポストスクリプト（レベル 2）にします．
+プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
+Word などに埋め込む際には，プレビューのラジオボタンは必ず「不透明」にします．
 
-「フォントデータを含む」チェックボックスはオンにしないと文字化けします．<br>
-あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．<br>
+「フォントデータを含む」チェックボックスはオンにしないと文字化けします．
+あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．
 たとえば Illustrator に附いている小塚明朝 Std M を使った場合，KozMinStd-Medium-90ms-RKSJ-H を
-Ryumin-Light-RKSJ-H に置き換えます．<br>
+Ryumin-Light-RKSJ-H に置き換えます．
 
 ## PDF をパスワードで保護するには {#u51b6592}
 
@@ -864,21 +834,21 @@ Ryumin-Light-RKSJ-H に置き換えます．<br>
 
 Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
-また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．<br>
-ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．<br>
+また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
+ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
 
-LaTeX ユーザーの方は，dvipdfmx を用いて，PDF にパスワード保護をつけることができます．<br>
+LaTeX ユーザーの方は，dvipdfmx を用いて，PDF にパスワード保護をつけることができます．
 具体的には，
 
 ```
 dvipdfmx -S filename
 ```
 
-のように，“-S” オプションをつけます．<br>
-あとは所有者のパスワードとユーザーパスワード（PDF ファイルを開いたときに入力させるパスワード）の2つを問われますので，入力して Enter キーを押してください．<br>
-なお，確認のために2度入力を求められます．<br>
+のように，“-S” オプションをつけます．
+あとは所有者のパスワードとユーザーパスワード（PDF ファイルを開いたときに入力させるパスワード）の2つを問われますので，入力して Enter キーを押してください．
+なお，確認のために2度入力を求められます．
 
-また，"-P"オプションでセキュリティオプションを細かく指定できます．<br>
+また，"-P"オプションでセキュリティオプションを細かく指定できます．
 
 - 閲覧・印刷は可能にしてテキスト・グラフィックのコピー（抽出）を禁止する場合
 
@@ -898,12 +868,12 @@ dvipdfmx -S filename
     dvipdfmx -S -P 0x0008 filename
     ```
 
-    なお，デフォルトの「全部許可」のオプションは"0x003C"です．<br>
+    なお，デフォルトの「全部許可」のオプションは"0x003C"です．
 
-その他の細かいオプションについては，dvipdfmx.cfgに記載されています．<br>
+その他の細かいオプションについては，dvipdfmx.cfgに記載されています．
 
-また，20110307以降のdvipdfmxでは，\specialを用いてセキュリティオプションをtex原稿に埋め込むことができるようになりました．<br>
-プリアンブルに記述します．<br>
+また，20110307以降のdvipdfmxでは，\specialを用いてセキュリティオプションをtex原稿に埋め込むことができるようになりました．
+プリアンブルに記述します．
 
 - \special{pdf:encrypt ownerpw (abc) userpw (xyz) length 128 perm 252}
 
@@ -919,7 +889,7 @@ PDF のパスワードを忘れてしまった場合は
 - [PDFCrack](http://pdfcrack.sourceforge.net/)
 - [PDFCrack (Windows version)](http://blog.rubypdf.com/pdfcrack/)
 
-を使うと正しいパスワードを教えてくれます．<br>
+を使うと正しいパスワードを教えてくれます．
 
 ## RedMon による PDF 作成 {#mbf7209f}
 
@@ -927,24 +897,24 @@ PDF のパスワードを忘れてしまった場合は
 - [pdf仮想プリンタを作成する (Windows 7 Enterprise 64bit)](http://heilman-jinroku.blogspot.jp/2012/09/pdfwindows-7-enterprise-64bit.html)
 - [ghostscript と RedMon による PDF プリンタの実現](http://miko.org/~tatyana/tech/Win/pdfprinter.html)
 
-Windows 上で，フリーウェアだけで Distiller と同様に簡単に PDF が作れます．<br>
-[RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います．<br>
+Windows 上で，フリーウェアだけで Distiller と同様に簡単に PDF が作れます．
+[RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います．
 
-あらかじめ最新版の Ghostscript をインストールしておきます．<br>
-フォントを埋め込むように設定しておくといいでしょう．<br>
+あらかじめ最新版の Ghostscript をインストールしておきます．
+フォントを埋め込むように設定しておくといいでしょう．
 
 RedMon を展開して setup.exe を実行します．
 
-次に，コントロールパネルの「プリンターの追加」（「プリンターのインストール」）を実行します．<br>
-「ローカルプリンター」「自動的に検出しない」でいいでしょう．<br>
-プリンターポートは「新しいポートの作成」で「Redirected Port」を選びます．<br>
-ポート名は “RPT1:” のままでかまいません（複数作ると “RPT2:” 等々になります）．<br>
-プリンターソフトウェアは，カラーのPSプリンターなら何でもかまいません．<br>
-“Apple” “Apple Color LaserWriter 12/600J” でも “Canon” “Canon LBP-2260PS” でも大丈夫でした．<br>
-テスト印刷はしません．<br>
+次に，コントロールパネルの「プリンターの追加」（「プリンターのインストール」）を実行します．
+「ローカルプリンター」「自動的に検出しない」でいいでしょう．
+プリンターポートは「新しいポートの作成」で「Redirected Port」を選びます．
+ポート名は “RPT1:” のままでかまいません（複数作ると “RPT2:” 等々になります）．
+プリンターソフトウェアは，カラーのPSプリンターなら何でもかまいません．
+“Apple” “Apple Color LaserWriter 12/600J” でも “Canon” “Canon LBP-2260PS” でも大丈夫でした．
+テスト印刷はしません．
 
 「デバイスとプリンター」の「プリンターと FAX」に新しいプリンターアイコンができますので，
-適当な名前に変えます（例えば “Ghostscript PDF writer”）．<br>
+適当な名前に変えます（例えば “Ghostscript PDF writer”）．
 さらに，右クリックして「プロパティ」の「ポート」タブを選び，上で指定したポート名
 （“RPT1:” など）が選ばれている状態で［ポートの構成］を押し，たとえば次のように設定します：
 
@@ -962,12 +932,12 @@ Output:
 Run:
 : Minimized
 
-Word などのアプリケーションからこのプリンターに印刷すると，保存するファイル名を聞かれます．<br>
-適当な名前（何々.pdf）を入力すれば，PDF ファイルが出来上がります．<br>
+Word などのアプリケーションからこのプリンターに印刷すると，保存するファイル名を聞かれます．
+適当な名前（何々.pdf）を入力すれば，PDF ファイルが出来上がります．
 
 同趣向の
 [PDFCreator 日本語対応版](http://super777.o.oo7.jp/page004.html)
-というフリーソフトウェアがあります．<br>
+というフリーソフトウェアがあります．
 日本語も通ります．<br>
 
 ## その他のリンク {#ed93164a}
