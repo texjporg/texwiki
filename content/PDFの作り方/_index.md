@@ -191,7 +191,7 @@ xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
 $ extractbb foo.pdf
 ```
 
-- 後述の [extractbbの自動実行](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?PDF%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9#rf074b4b) も参照．
+- 後述の [extractbb の自動実行](</PDFの作り方/#rf074b4b>) も参照．
     - PDF ファイルには，コンテンツが画像であるかどうかに関係なく，ドキュメントのページ上のさまざまな領域を表す 5 種類のボックスが定義されている．
         - CropBox，ArtBox，TrimBox，BleedBox，MediaBox
     - PDF に対して extractbb を実行すると，これら PDF のボックスの値をもとに，バウンディングボックスの値が返される．
@@ -202,7 +202,7 @@ $ extractbb foo.pdf
 
 <!-- - pdf ファイルの bounding box 情報 -->
 <!-- - - PDF ファイル（Adobe [[Illustrator]] による保存を除く）の bounding box 情報の仕様（正確には bounding-box-like な矩形領域情報は複数種類が定義されている）は，EPS ファイルのそれとは正確には異なる． -->
-<!-- - - 従って，PDF ファイル内から普通にbounding box 情報を読み取っても，それは「描かれた図形を囲む最小矩形領域」ではない可能性も存在するので注意が必要．その場合には，計算等によって「最小矩形領域」を算出する過程が必要となる． -->
+<!-- - - 従って，PDF ファイル内から普通に bounding box 情報を読み取っても，それは「描かれた図形を囲む最小矩形領域」ではない可能性も存在するので注意が必要．その場合には，計算等によって「最小矩形領域」を算出する過程が必要となる． -->
 
 ### 読み手に親切な PDF ファイルの作り方 {#hb3bee4c}
 
@@ -321,7 +321,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です．
 #### extractbb の自動実行 {#rf074b4b}
 
 TeX Live 2015 以降, MacTeX-2015 以降, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．
-これら以外の環境の場合は[次の項](</PDFの作り方/#z06f5ff9>)も読んで下さい．
+これら以外の環境の場合は，[こちらのアーカイブ情報](</古い情報/#rf074b4b>)を参考に extractbb の自動実行を設定するか，[次の項](</PDFの作り方/#z06f5ff9>)も読んで下さい．
 
 LaTeX ファイル中では
 
@@ -340,12 +340,11 @@ graphicx パッケージを読み込む際には次のように必ず dvipdfmx �
 
 これを LaTeX と dvipdfmx で処理します．
 
-Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな EPS ファイルができます．
-詳しくは [Ghostscript](/Ghostscript/)
-のページをご覧ください．
+Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな
+EPS ファイルができます．
+詳しくは [Ghostscript](/Ghostscript/) のページをご覧ください．
 
-Adobe Acrobat Distiller DC をコマンドラインから使いたい場合，
-OS X では
+Adobe Acrobat Distiller DC をコマンドラインから使いたい場合，OS X では
 
 ```
 $ open -a 'Acrobat Distiller.app' ファイル名
@@ -501,15 +500,15 @@ dvipdfmx を使う場合には，ラスター画像は EPS より PNG か JPEG �
 <!-- ***DVI/PDF 両形式を作成する場合の，画像の用意の仕方 [#l580b75f] -->
 <!-- RIGHT:[[qa:32795]] -->
 <!--  -->
-<!-- -PDF 画像のみを用意する~ -->
+<!-- -PDF 画像のみを用意する -->
 <!-- → PDF 画像は DVIOUT で表示されるが，複雑な画像の場合には表示がおかしくなる ([[qa:32767]], [[qa:32769]]) -->
 <!--  -->
-<!-- -EPS 画像のみを用意する~ -->
+<!-- -EPS 画像のみを用意する -->
 <!-- → dvipdfmx 時に Ghostscript (or Adobe Acrobat Distiller DC) を呼び出して変換処理をするのに時間がかかる -->
 <!--  -->
-<!-- -PDF, EPS 両方を用意して使い分ける（DVI ファイルに EPS 画像，PDF ファイルに PDF 画像）．~ -->
+<!-- -PDF, EPS 両方を用意して使い分ける（DVI ファイルに EPS 画像，PDF ファイルに PDF 画像）． -->
 <!-- → xbb ファイルの作成が面倒．また \includegraphics で画像の使い分けをする分岐命令が面倒，煩雑．([[qa:32749]]) -->
-<!-- - -texmf.cnf の shell_escape_commands に extractbb を追加する~ -->
+<!-- - -texmf.cnf の shell_escape_commands に extractbb を追加する -->
 <!-- → xbb ファイルの作成が不要となる -->
 <!-- - -\usepackage[dvipdfmx]{graphicx} -->
 <!-- → いちいち EPS/PDF 画像の選択を \includegraphics 命令の分岐で行う必要がなくなる -->
