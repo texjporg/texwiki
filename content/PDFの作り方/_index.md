@@ -320,7 +320,7 @@ EPS 挿入には外部プログラムとして Ghostscript が必要です．
 
 #### extractbb の自動実行 {#rf074b4b}
 
-TeX Live 2015 以降, MacTeX-2015 以降, [W32TeX](/W32TeX/), [美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．
+TeX Live 2015 以降，MacTeX-2015 以降，[W32TeX](/W32TeX/)，[美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．
 これら以外の環境の場合は，[こちらのアーカイブ情報](</古い情報/#rf074b4b>)を参考に extractbb の自動実行を設定するか，[次の項](</PDFの作り方/#z06f5ff9>)も読んで下さい．
 
 LaTeX ファイル中では
