@@ -95,7 +95,7 @@ pukiwiki: "PDFの作り方"
     - [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
     - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
     - [pdfFactory](http://www.nsd.co.jp/fineprint/pdf.html) と [FinePrint](http://www.nsd.co.jp/fineprint/) ([NSD](http://www.nsd.co.jp/))
-    - [gDoc Creator](http://www.gdoc.com/showcase/creator/) ([Global Graphics Software](http://www.globalgraphics.com/))
+    - [PDF Creator](http://www.gdocinspired.com/products/pdf-creator) ([Global Graphics Software](http://www.globalgraphics.com/))
     - [Expert PDF Creator](http://www.visagesoft.com/)
     - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp)
 
@@ -686,8 +686,8 @@ Adobe Acrobat Distiller DC を含む製品（商品）です．
 
 - Adobe Acrobat Reader DC — PDF の表示と印刷と注釈の追加のみ．無償配布されている．
 - Adobe Acrobat DC
-    - Adobe Acrobat DC Standard — PDF の編集が可能
-    - Adobe Acrobat DC Pro — 様々な PDF の編集が可能
+    - Adobe Acrobat Standard DC — PDF の編集が可能
+    - Adobe Acrobat Pro DC — 様々な PDF の編集が可能
 
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
@@ -717,7 +717,7 @@ Distiller を立ち上げます．
 Distiller の［ファイル］ → ［環境設定］で「PDFファイルの保存先を確認」をオンにします．
 「Distillerで変換後にPDFを表示」もオンにしておくと確認のため便利です．
 
-まず，Acrobat XI では［Adobe PDF 設定］の［デフォルト設定］で選びます．
+まず，Acrobat では［Adobe PDF 設定］の［デフォルト設定］で選びます．
 Web 用なら 最小ファイルサイズ，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう．
 なお，Acrobat は最小ファイルサイズ設定にしてフォントを埋め込まないようにすると仕様に違反した PDF を生成するようです．
 （参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
@@ -789,7 +789,7 @@ Photoshop 5 Default CMYK にすると今度は色が変わってしまうとい�
 
 方法１：
 
-Acrobat DC Pro（有償ソフト）を用いて対象の pdf ファイルを開き，Adobe PDF プリンターを用いて印刷し新たなpdf ファイルを生成．
+Acrobat Pro DC（有償ソフト）を用いて対象の pdf ファイルを開き，Adobe PDF プリンターを用いて印刷し新たなpdf ファイルを生成．
 
 - 下記の手順の結果，拡大倍率 205%，左寄せ配置のpdf ファイルが生成された．
     - プリント設定で，用紙サイズ A4．
