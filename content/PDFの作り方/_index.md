@@ -57,9 +57,6 @@ pukiwiki: "PDFの作り方"
         は PDF 形式で保存できます．
     - [Zoho Docs](http://www.zoho.jp/docs/)
         は PDF 形式で保存できます．
-    - [Foxit Reader](http://www.foxitsoftware.com/) (Free)
-    - [PDF Download](http://www.pdfdownload.org/) (Free)
-        - Web ページを PDF に変換することができます．
     - [BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php) (Free)
     - [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp) +
         [Ghostscript](/Ghostscript/) (Free)
