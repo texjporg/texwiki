@@ -27,10 +27,10 @@ fwdevince は Linux の Evince で forward and inverse search を行うための
 
 ## 関連リンク {#bb04e129}
 
-- [https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el](https://gitorious.org/latex-math-preview/synctex-for-evince-yatex/source/synctex-for-evince-yatex.el)
+- [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
 - [LaTeXTools/evince at master · SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/master/evince)
 - [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search - Ubuntu Forums](http://ubuntuforums.org/showthread.php?t=1716268)
 - \[[SOLVED\] HOWTO: Evince + SyncTeX + vim/emacs/scite/lyx/kile/$EDITOR + forward/backward search \[Archive\]  - Ubuntu Forums](http://ubuntuforums.org/archive/index.php/t-1716268.html)
 - [http://git.savannah.gnu.org/cgit/auctex.git/tree/tex.el](http://git.savannah.gnu.org/cgit/auctex.git/tree/tex.el)
-- [https://github.com/NicolasPetton/emacs.d/blob/master/modules/auctex-evince-sync.el](https://github.com/NicolasPetton/emacs.d/blob/master/modules/auctex-evince-sync.el)
+- [https://github.com/NicolasPetton/emacs.d/blob/master/local-packages/auctex-evince-sync.el](https://github.com/NicolasPetton/emacs.d/blob/master/local-packages/auctex-evince-sync.el)
