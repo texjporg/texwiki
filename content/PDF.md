@@ -80,7 +80,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 - [QPDF](/QPDF/)
     : C++ のライブラリも付属しています．
 
-- [Origami](http://esec-lab.sogeti.com/pages/Origami)
+- [Origami](https://rubygems.org/gems/origami)
     : Ruby
 
 - [Hummus PDF Writer](http://pdfhummus.com/)
