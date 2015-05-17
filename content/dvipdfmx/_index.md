@@ -160,6 +160,53 @@ map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中
 - [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
 - [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
 
+### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
+
+一度 ImageMagick の convert コマンドを通しておくことで回避できます．
+問題の画像を foo.png とするとき，
+
+```
+$ convert foo.png foo_c.png
+```
+
+として，foo_c.png の方を取り込みます．
+
+現在わかっているこの現象の発生条件は「取り込む PNG 画像が cHRM チャンクを持ちかつ gAMA チャンクを持たないこと」です．
+Adobe 製品で出力した PNG などが該当することがあるようです．
+
+チャンクの情報を調べるには，ImageMagick の identify コマンドが便利です．
+
+```
+$ identify -verbose foo.png
+Image: foo.png
+  Format: PNG (Portable Network Graphics)
+  Mime type: image/png
+...
+  Properties:
+    date:create: 2015-05-18T08:31:39+09:00
+    date:modify: 2015-05-18T08:31:39+09:00
+    png:bKGD: chunk was found (see Background color, above)
+    png:cHRM: chunk was found (see Chromaticity, above)
+    png:gAMA: gamma=0.45454544 (See Gamma, above)
+...
+```
+
+このように，埋め込まれているチャンクの情報が表示されます．
+もし png:cHRM がありかつ png:gAMA がない場合は発生条件にあてはまるため，色が変わる可能性があります．
+一度 convert を通すと gAMA チャンクが付加されるため，正しく取り込まれるようになります．
+
+問題の背景には，PNG 画像のガンマ補正機能があります．
+PNG には制作環境の情報を埋め込むことで，異なるディスプレイ環境でも色の変化を軽減するように補正する機能があります．
+このための情報が cHRM チャンクと gAMA チャンクに書き込まれます．
+本来，cHRM チャンクがある場合は gAMA チャンクも書き込まれるべきなのですが，ソフトウェアの設定によっては cHRM チャンクだけが書き込まれることがあります．
+この場合，デコードの際には適当にガンマ値を設定することになります．
+Adobe 製品などではガンマ値は 2.2 （Windows や最近の Mac の標準）として PNG を出力しますが，dvipdfmx では gAMA チャンクがない場合にガンマ値を 1.0 として処理します．
+このため，色調に変化が生じてしまいます．
+
+なお，ICC プロファイルや sRGB チャンクが埋め込まれている場合はそちらの情報が優先されるため，この問題は発生しません．
+
+- [forum:1579](https://okumuralab.org/tex/mod/forum/discuss.php?d=1579)
+
 ### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
 
 ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます。
