@@ -24,8 +24,6 @@ HTML と LaTeX の比較/
 
 ***
 
-<strong>目次</strong>
-
 ## HTML と LaTeX の比較 {#g8b7bce6}
 
 Web ページを記述する際に使われるのが，HTML とよばれるマークアップ言語です。
