@@ -22,7 +22,7 @@ Windows の場合は[角藤さんによる移植版](http://www.ring.gr.jp/archi
 
 #### Windows の場合 {#ke9caba1}
 
-角藤版 ispell-3.3.02-w32.tar.xz がインストール済みのシステムに，新・旧両正書法対応のドイツ語辞書を追加する方法を説明します。
+角藤版 ispell-3.3.02-w32.tar.xz or ispell-3.4.00-w32.tar.xzがインストール済みのシステムに，新・旧両正書法対応のドイツ語辞書を追加する方法を説明します。
 
 - 
     [dic-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
