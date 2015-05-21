@@ -38,9 +38,10 @@ Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問
 eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript/使い方/>) を参照してください．
 以下のようなアプリケーションは，すでに対応を完了しています．
 
-- [TeX ソースコードを TeX でコンパイルして画像で出力するアプリケーション「TeX2img」](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)
-- [InDesign に TeX の数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/)
-- [Windows で TeX に挿入できるグラフ，図を作成するツール「WinTpic」](http://aogaeru-lab.my.coocan.jp/sub1.html)
+- TeX ソースコードをタイプセットして画像で出力するアプリケーション「[TeX2img](/TeX2img/)」（[参考](http://acetaminophen.hatenablog.com/entry/2014/10/12/081754)）
+- InDesign に TeX の数式を貼り込むスクリプト「インてふてふ」（[参考](http://sysys.blog.shinobi.jp/Entry/18/)）
+- Windows で TeX に挿入できるグラフ，図を作成するツール「WinTpic」（[参考](http://aogaeru-lab.my.coocan.jp/sub1.html)）
+- [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述ツール「[Asymptote](/Asymptote/)」（[参考](https://twitter.com/aminophen/status/601611509001687040)）
 
 Ghostscript 9.15 では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．
 
