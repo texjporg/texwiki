@@ -17,15 +17,24 @@ TeX は Donald E. Knuth によって開発された組版エンジン，言語�
 
 ***
 
-### TeX 入門 {#q0b4ff33}
+### TeX の読み方 {#gea7d22e}
 
-おもに LaTeX の使いかたについて解説してあります．
+TeX は「テック」または「テフ」(\[tex\])と読みます。
+どちらかというと大学系の人は「テフ」派が多いようです。
+英語圏では \[tek\]，\[tekh\] または誤読ですが \[teks\]，ドイツ語圏では「テヒ」(\[t&#x25b;&ccedil;\]) とも読むようです。
+同様に LaTeX は「ラテック」「ラテフ」などと読みます。
 
-- [TeX入門](</TeX入門/>)
+- [TeX の発音](http://d.hatena.ne.jp/takeda25/20140428/1398662547)
+- [TeXはテック](http://kahei.org/blog/2014/04/tex-3.html)
+- [TeXはテック - Talpa memorandum](http://sonmin-sokuho.hatenablog.com/entry/2014/04/28/120221)
+- [「TeX」の読み方は「テック」だった | スラド](http://it.srad.jp/story/14/04/28/0911215/%E3%80%8CTeX%E3%80%8D%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9%E3%81%AF%E3%80%8C%E3%83%86%E3%83%83%E3%82%AF%E3%80%8D%E3%81%A0%E3%81%A3%E3%81%9F)
+- [「TeX」の読み方はテフ、それともテック？](http://www.kksanshusha.jp/booklab/archives/1184)
+- [Wikipedia.ja:TeX](https://ja.wikipedia.org/wiki/TeX)
 
 ### TeX 処理系 {#g6783551}
 
-Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．それぞれの処理系の解説ページをご覧ください．
+Knuth によるオリジナルの TeX に対し，Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
+それぞれの処理系の解説ページをご覧ください．
 
 - [LuaTeX](/LuaTeX/)
 - LuaJITTeX
@@ -46,7 +55,9 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.osdn.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
-### TeX のエラーメッセージ {#qda48d5d}
+### チュートリアル {#q0b4ff33}
+
+TeX のチュートリアルが [TeX入門](</TeX入門/>)にあります。こちらをお読み下さい。
 
 TeX のエンジンレベルのエラーについては，以下でメッセージへの対処法が説明されていますので，参考にして下さい．
 
@@ -91,40 +102,6 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (INITEX)
 
 - [てふてふの大群がとんでゐます - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20121024/1351076961)
 - [異様な LaTeX の話 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140321/1395360402)
-
-### TeX プログラミング {#ff81e0cc}
-
-- \[[プログラミング\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
-- \[[TeX\] - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=%2A%5BTeX%5D)
-- \[[プログラミング\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5B%A5%D7%A5%ED%A5%B0%A5%E9%A5%DF%A5%F3%A5%B0%5D)
-- \[[TeX\] - hak7a3の日記](http://d.hatena.ne.jp/hak7a3/searchdiary?word=%2A%5BTeX%5D)
-- [「expl3」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=expl3)
-- [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
-- [ドラゴン曲線（TeXブック付録Dのあれ）](http://qiita.com/items/1551)
-- [TeXで三目並べ](http://iwatam-server.sakura.ne.jp/software/tictactoetex/)
-- [画期的なソートアルゴリズム： TeXsort](http://d.hatena.ne.jp/zrbabbler/20110902/1314922652)
-- [TeX でソート](http://note.golden-lucky.net/2011/09/tex.html)
-- [完全展開可能なナベアツ](http://d.hatena.ne.jp/zrbabbler/20111026/1319638282), [完全展開可能なナベアツ ― e-TeX の場合](http://d.hatena.ne.jp/zrbabbler/20111027/1319725810)
-- [￥NabeAzz](http://d.hatena.ne.jp/abenori/20110826), [「禁じ手」Lua呼び出し](http://d.hatena.ne.jp/abenori/20110827)
-- [\NabeAzz を作ってみた](http://d.hatena.ne.jp/munepi/20110826/NabeAzz)
-- [TeXでナベアツ](http://note.golden-lucky.net/2011/08/tex_16.html)
-- [TeXで「最後のコマンド」だけ挙動を変える（ワンパス版）](http://note.golden-lucky.net/2011/08/tex.html)
-- [TeX で Brainfuck](http://note.golden-lucky.net/2011/01/tex-brainfuck.html)
-- [TeXで使用しているハイフネーションアルゴリズムについて](http://blog.field-works.co.jp/post/20896179728/tex)
-- [TeXでFizzBuzz](http://note.golden-lucky.net/2010/03/texfizzbuzz.html)
-- [TeXのマクロでFizzBuzz](http://hogespace.hatenablog.jp/entry/2012/02/20/133731)
-- [TeXでとある魔術のロゴ作成](http://d.hatena.ne.jp/itchyny/20120402/1333337995)
-- [LaTeXでオブジェクト指向プログラミング](http://d.hatena.ne.jp/tarao/20120621/1340255659)
-- [TeXを電卓として使おう（あるいは、TeXでベキ乗根）](http://note.golden-lucky.net/2012/12/textex.html)
-- [難読化されたTeXの解読（tkbctf3 Misc 100 Real World TeX）](http://d.hatena.ne.jp/kusano_k/20140506/1399356192)
-- [Notes On Programming in TeX](http://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
-- [プログラマーのためプログラミングLaTeX](http://d.hatena.ne.jp/itchyny/20121027/1351299600)
-
-#### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
-
-- [2014](http://www.adventar.org/calendars/553)
-- [2013](http://www.adventar.org/calendars/187)
-- [2012](https://atnd.org/events/34318)
 
 ### 備考 {#d2892c04}
 
