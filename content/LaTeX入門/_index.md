@@ -144,4 +144,4 @@ LaTeX の使い方を簡単に解説しています。
 - [スライドの作り方（jsarticle 編）](</LaTeX入門/スライドの作り方（jsarticle編）/>)
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA・DWANGO](http://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX およびこれらに基づく編集支援システム [EWB](http://ascii.asciimw.jp/ascii/EWB/) を無償配布し，自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](http://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX およびこれらに基づく編集支援システム [EWB](http://ascii.asciimw.jp/ascii/EWB/) を無償配布し，自社の本の製作に利用していました。
