@@ -48,7 +48,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。<br>
 TeX Live 2014 以降, W32TeX では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
 なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。<br>
-TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[TeX入門/図表](</TeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[TeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
+TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[LaTeX入門/図表](</LaTeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[LaTeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
