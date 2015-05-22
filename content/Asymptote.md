@@ -28,6 +28,10 @@ TeX Live に標準で含まれています。
 
 本家や [CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/) に各種バイナリがあります。
 
+また，Asymptote は [Ghostscript](/Ghostscript/) に依存しています。
+
+- Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がなされています。Asymptote 2.33 以降を使用する場合は Ghostscript も 9.14 以上にアップデートする必要があります。逆に，Asymptote 2.32 以前を使用する場合は 9.14 以下をインストールする必要があります。
+
 ### ビルド {#e0083d41}
 
 ソースからコンパイルするのも簡単です。
@@ -194,3 +198,5 @@ yaxis("$y$",LeftRight,RightTicks);
 
 - [http://sourceforge.net/p/asymptote/code/HEAD/tree/](http://sourceforge.net/p/asymptote/code/HEAD/tree/)
     - [log](http://sourceforge.net/p/asymptote/code/HEAD/log/)
+
+[^1]: EPS 出力デバイスについて，gs9.15 では epswrite が廃止され，代わりに gs9.14 で導入された eps2write が標準となっています。
