@@ -417,7 +417,7 @@ LaTeX のカウンタの値を \alph，\Alph，\fnsymbol などで文字列化�
     dtx ファイルと ins ファイルの形で配布されることもあります．
     その場合は ins ファイルを LaTeX で処理して必要なファイルを生成させてください．
 
-（参考：[TeX入門/各種パッケージの利用](</TeX入門/各種パッケージの利用/>)）
+（参考：[LaTeX入門/各種パッケージの利用](</LaTeX入門/各種パッケージの利用/>)）
 
 #### ! LaTeX Error: Font <em>attributes</em> not found. {#o6eb2ec1}
 
