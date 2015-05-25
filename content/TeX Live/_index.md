@@ -10,16 +10,20 @@ pukiwiki: "TeX Live"
 
 ## [TeX Live](http://www.tug.org/texlive/) {#n4073ab3}
 
-<strong>目次</strong>
-
-## TeX Live とは {#w37d1448}
-
 TeX Live は TeX のディストリビューションです．
 TeX の超巨大な集大成ともいえるもので，現在では国際的に最も普及している最新の TeX ディストリビューションです．
-TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました．
+
+<strong>公式サイト</strong>
 
 - [TeX Live - TeX Users Group](http://www.tug.org/texlive/)
 - [The tex-live Archives](http://tug.org/pipermail/tex-live/)
+
+TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました．
+TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), LuaJITTeX が収録されています．
+
+***
+
+***
 
 ### 動作環境 {#j0ebf49b}
 
@@ -28,71 +32,43 @@ TeX Live 2010 以降は日本語対応のパッケージがマージされるよ
 
 を参照．
 
-### リリース情報 {#k5761e9e}
-
-[TeX Live - TeX Users Group](http://www.tug.org/texlive/) の Current release を参照．
-
-TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), LuaJITTeX が収録されています．
-[SyncTeX](/SyncTeX/) にも対応しています．
-
-- \[[texlive\] Index of /tags](http://www.tug.org/svn/texlive/tags/)
-    - [log](http://www.tug.org/svn/texlive/tags/?view=log)
-
-### ChangeLog {#g68f0fa7}
-
-- [TeX Live and Subversion](http://www.tug.org/texlive/svn/)
-- \[[texlive\] Index of /trunk](http://www.tug.org/svn/texlive/trunk/)
-    - [log](http://www.tug.org/svn/texlive/trunk/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/ChangeLog?view=markup)
-
-## インストール {#w628bee6}
+### インストール {#w628bee6}
 
 TeX Live は OS ごとにインストール方法が異なります．
 それぞれの OS のインストール方法を参照してください．
 
-### [Microsoft Windows](</Microsoft Windows/#texlive>) {#afd270d8}
+- [Microsoft Windows](</Microsoft Windows/#texlive>)
+    - Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
+    - [Cygwin](/Cygwin/#texlive) へのインストールも可能です．
+- [OS X](/Mac/#mactex)
+- [Linux](/Linux/#texlive)
+    - [Linux/Arch Linux#TeX Live](</Linux/Arch Linux/#e2a82c70>)
+    - [Linux/Linux Mint#TeX Live](</Linux/Linux Mint/#d237a7b2>)
+    - Linux/Ubuntu#TeX Live
+    - Linux/Debian#TeX Live
+    - [Linux/Fedora#TeX Live](/Linux/Fedora/#u412c2cf)
+    - [Linux/openSUSE#TeX Live](/Linux/openSUSE/#n3c200b7)
+    - Linux/CentOS#TeX Live
+    - Linux/Vine Linux#TeX Live
+- BSD
+    - [BSD/FreeBSD#TeX Live](/BSD/FreeBSD/#texlive)
+    - [BSD/OpenBSD#TeX Live](/BSD/OpenBSD/#texlive)
+    - [BSD/NetBSD#TeX Live](/BSD/NetBSD/#texlive)
+- [Android](/Android/#texlive)
 
-Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
-[Cygwin](/Cygwin/#texlive) へのインストールも可能です．
+## TeX Live の詳細情報 {#g496de09}
 
-### [OS X](/Mac/#mactex) {#a638f8a1}
+以下は詳細情報です．開発者向け情報も含まれます． <!-- 初めて TeX Live をインストールするユーザにはあまり関係のないことだと判断し， --> <!-- 並べ替えました．インストール用の記事は OS ごとに個別に記載されていますので， --> <!-- 以下の内容はそちらの個別ページから必要に応じてリンクする形で． --> <!-- メンテナ向けの情報もこの下で十分ですよね？ -->
 
-### [Linux](/Linux/#texlive) {#x9f5592c}
-
-- [Linux/Arch Linux#TeX Live](</Linux/Arch Linux/#e2a82c70>)
-- [Linux/Linux Mint#TeX Live](</Linux/Linux Mint/#d237a7b2>)
-- Linux/Ubuntu#TeX Live
-- Linux/Debian#TeX Live
-- [Linux/Fedora#TeX Live](/Linux/Fedora/#u412c2cf)
-- [Linux/openSUSE#TeX Live](/Linux/openSUSE/#n3c200b7)
-- Linux/CentOS#TeX Live
-- Linux/Vine Linux#TeX Live
-
-### BSD {#nd80e405}
-
-- [BSD/FreeBSD#TeX Live](/BSD/FreeBSD/#texlive)
-- [BSD/OpenBSD#TeX Live](/BSD/OpenBSD/#texlive)
-- [BSD/NetBSD#TeX Live](/BSD/NetBSD/#texlive)
-
-### Android {#aab9f902}
-
-- [Android#TeX Live](/Android/#texlive)
-
-## 詳細情報 {#g496de09}
-
-以下に詳細情報を置いておきます．開発者向け情報も含まれます． <!-- 初めて TeX Live をインストールするユーザにはあまり関係のないことだと判断し， --> <!-- 並べ替えました．インストール用の記事は OS ごとに個別に記載されていますので， --> <!-- 以下の内容はそちらの個別ページから必要に応じてリンクする形で． --> <!-- メンテナ向けの情報もこの下で十分ですよね？ -->
-
-### [Network Based Installer](http://www.tug.org/texlive/acquire-netinstall.html) {#qf59e3ea}
+### [Network Based Installer](http://www.tug.org/texlive/acquire-netinstall.html) {#tlnet}
 
 - [ftp://ftp.tug.org/texlive/tlnet/](ftp://ftp.tug.org/texlive/tlnet/)
 - [ftp://tug.org/historic/systems/texlive/](ftp://tug.org/historic/systems/texlive/)
 
-ネットワーク経由でのインストールはミラーサイトを利用してください．
+ネットワーク経由でのインストールは，上の TUG のサイトからでなく以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 TeX Live は，ネットワーク経由でのインストールが推奨されています．
 ただし，ネットワーク経由ではうまくインストールできない場合があるので，その場合は ISO Image をダウンロードしてください．
-
-#### ミラーサイト {#r2315cab}
 
 - <strong>HTTP</strong>
     - [http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -143,17 +119,15 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [ftp://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 
-### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#id0ad572}
+### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#iso}
 
 - [ftp://ftp.tug.org/texlive/Images/](ftp://ftp.tug.org/texlive/Images/)
 - [http://ftp.tug.org/texlive/Images/](http://ftp.tug.org/texlive/Images/)
 - [http://www.tug.org/texlive/Images/](http://www.tug.org/texlive/Images/)
 
 ネットワーク経由のインストールがうまくいかない場合は ISO Image をダウンロードしてください．
-TeX Live の ISO Image はサイズが大きいのでミラーサイトを利用してください．
+TeX Live の ISO Image はサイズが大きいので，上の TUG のサイトからでなく以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
-
-#### ミラーサイト {#a772f17e}
 
 - <strong>HTTP</strong>
     - [http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/Images/)
@@ -315,7 +289,21 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
     - [http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html)
     - [BLFS での TeXLive ビルド](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=609)
 
-## 関連リンク {#udd48b1b}
+### 関連リンク {#udd48b1b}
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
+
+#### リリース情報 {#k5761e9e}
+
+[TeX Live - TeX Users Group](http://www.tug.org/texlive/) の Current release を参照．
+
+- \[[texlive\] Index of /tags](http://www.tug.org/svn/texlive/tags/)
+    - [log](http://www.tug.org/svn/texlive/tags/?view=log)
+
+#### ChangeLog {#g68f0fa7}
+
+- [TeX Live and Subversion](http://www.tug.org/texlive/svn/)
+- \[[texlive\] Index of /trunk](http://www.tug.org/svn/texlive/trunk/)
+    - [log](http://www.tug.org/svn/texlive/trunk/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/ChangeLog?view=markup)
