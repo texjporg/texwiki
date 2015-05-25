@@ -91,7 +91,7 @@ W32TeX 自身が簡易インストーラを提供しています．上述の TeX
     <!-- - -ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
 
-<strong>\[HTTP\]</strong>
+<strong>HTTP</strong>
 <!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
     <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
@@ -260,16 +260,12 @@ to user's PATH in the control panel.
 W32TeX は環境変数 PATH を設定する必要があります。
 環境変数 PATH を設定するためにシステムのプロパティを起動します。コントロールパネルを開き，右上の検索窓で「環境変数」と入力し，「環境変数を編集」を選んでください．または以下でも開けます．
 
-<table>
-<thead>
-<tr><th style="text-align:center">バージョン</th><th style="text-align:center">システムのプロパティの起動方法</th></tr>
-</thead>
-<tbody>
-<tr><td>Windows 10</td><td>［Windows キーを押す］-［Search the web and Windows］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
-<tr><td>Windows 8.1</td><td>［Windows キー + Q キーを押す］-［検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
-<tr><td>Windows 7</td><td>［Windows キーを押す］-［プログラムとファイルの検索］-［テキストボックスに SystemPropertiesAdvanced.exe を入力］-［SystemPropertiesAdvanced.exe］</td></tr>
-</tbody>
-</table>
+- Windows 10
+    - ［Windows キーを押す］→［Search the web and Windows］→［テキストボックスに SystemPropertiesAdvanced.exe を入力］→［SystemPropertiesAdvanced.exe］
+- Windows 8.1
+    - ［Windows キー + Q キーを押す］→［検索］→［テキストボックスに SystemPropertiesAdvanced.exe を入力］→［SystemPropertiesAdvanced.exe］
+- Windows 7
+    - ［Windows キーを押す］→［プログラムとファイルの検索］→［テキストボックスに SystemPropertiesAdvanced.exe を入力］→［SystemPropertiesAdvanced.exe］
 
 Windows PowerShell またはコマンド プロンプトから
 
