@@ -126,15 +126,6 @@ LaTeX 用のエディタとして TeXworks が TeX Live とともにインスト
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-827.html)
 - [TeX Live 2015をWindows 8にインストールする](http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3)
-- [Windows - TeX Live のダウンロードとインストール](http://medemanabu.net/latex/windows-tex-live-download-install/)
-- [TeX Live（TeX環境）のインストール](http://ryskiwt.blog.fc2.com/blog-entry-28.html)
-- [Texインストール](http://arb-computer.seesaa.net/article/406943877.html)
-- [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
-- [TeX Live 2014 for Windows](http://www.baldanders.info/spiegel/log2/000730.shtml)
-- [Windows 8.1 に TeX Live 2014 をインストール](http://qiita.com/ignorant/items/21545cde3c9bbafaa264)
-- [docs/TeX/TeX on Windows - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows)
-- [Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．](http://qiita.com/ConHumi/items/f0d12ab1ad433591c192)
-- [TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
 
 ## アップデート {#a6223106}
 
