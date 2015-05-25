@@ -255,7 +255,7 @@ to user's PATH in the control panel.
 
 #### 環境変数 PATH の設定 {#g0475486}
 
-上のメッセージに従い，環境変数 PATH に C:\w32tex\bin を追加します．（64bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します．）
+上のメッセージに従い，環境変数 PATH に C:\w32tex\bin を追加します．（64-bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します．）
 
 W32TeX は環境変数 PATH を設定する必要があります。
 環境変数 PATH を設定するためにシステムのプロパティを起動します。コントロールパネルを開き，右上の検索窓で「環境変数」と入力し，「環境変数を編集」を選んでください．または以下でも開けます．
