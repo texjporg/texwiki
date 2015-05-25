@@ -124,6 +124,7 @@ LaTeX 用のエディタとして TeXworks が TeX Live とともにインスト
 
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-827.html)
+- [TeX Live 2015をWindows 8にインストールする](http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3)
 - [Windows - TeX Live のダウンロードとインストール](http://medemanabu.net/latex/windows-tex-live-download-install/)
 - [TeX Live（TeX環境）のインストール](http://ryskiwt.blog.fc2.com/blog-entry-28.html)
 - [Texインストール](http://arb-computer.seesaa.net/article/406943877.html)
