@@ -17,7 +17,7 @@ pukiwiki: "TeXworks/設定/OS X"
 
 ## タイプセットの設定 {#q50d2378}
 
-### [MacTeX &amp; TeX Live](/Mac/#mactex) {#p614bf13}
+### [MacTeX &amp; TeX Live](</TeX Live/Mac/#mactex>) {#p614bf13}
 
 #### upLaTeX (ptex2pdf) {#hb35622b}
 
