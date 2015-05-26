@@ -20,13 +20,13 @@ Vine Linux はコンパクトで軽量な国産の日本語 Linux ディスト�
 
 ***
 
-## TeX Live {#texlive}
+### TeX Live {#texlive}
 
-### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#a6e990be}
+#### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#a6e990be}
 
 - [Linux](/Linux/#texliveinstall)
 
-### TeX Live/Vine Linux <a id="texlivevinelinux"></a> {#ue950dcc}
+#### TeX Live/Vine Linux <a id="texlivevinelinux"></a> {#ue950dcc}
 
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
 
@@ -34,37 +34,37 @@ Vine Linux はコンパクトで軽量な国産の日本語 Linux ディスト�
 $ sudo apt-get install task-texlive-full
 ```
 
-## [Python](/Python/) {#vedf0458}
+### [Python](/Python/) {#vedf0458}
 
 ```
 $ sudo apt-get install python python3
 ```
 
-## [Ruby](/Ruby/) {#re5ab47e}
+### [Ruby](/Ruby/) {#re5ab47e}
 
 ```
 $ sudo apt-get install ruby
 ```
 
-## [Perl](/Perl/) {#b68da57f}
+### [Perl](/Perl/) {#b68da57f}
 
 ```
 $ sudo apt-get install perl
 ```
 
-## [Evince](/Evince/) {#see6a1a0}
+### [Evince](/Evince/) {#see6a1a0}
 
 ```
 $ sudo apt-get install evince
 ```
 
-## [Okular](/Okular/) {#j32e00af}
+### [Okular](/Okular/) {#j32e00af}
 
 ```
 $ sudo apt-get install okular
 ```
 
-## [LyX](/LyX/) {#f3133664}
+### [LyX](/LyX/) {#f3133664}
 
 - [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
 
@@ -72,7 +72,7 @@ $ sudo apt-get install okular
 $ sudo apt-get install lyx
 ```
 
-## [TeXworks](/TeXworks/) {#g983cd3a}
+### [TeXworks](/TeXworks/) {#g983cd3a}
 
 - [TeXworks](http://vinelinux.org/docs/vine6/tex-guide/texworks.html)
 
@@ -80,25 +80,25 @@ $ sudo apt-get install lyx
 $ sudo apt-get install texworks
 ```
 
-タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．<br>
+タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．
 
-## [Emacs](/Emacs/) {#d8c86cfd}
+### [Emacs](/Emacs/) {#d8c86cfd}
 
 ```
 $ sudo apt-get install emacs
 ```
 
-### [AUCTeX](/AUCTeX/) {#l05e9420}
+#### [AUCTeX](/AUCTeX/) {#l05e9420}
 
 - [AUCTeX](http://vinelinux.org/docs/vine6/tex-guide/auctex.html)
 - [http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex](http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex)
 
-### [YaTeX](/YaTeX/) {#b339a19f}
+#### [YaTeX](/YaTeX/) {#b339a19f}
 
 - [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
 - [http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex)
 
-## [Vim](/Vim/) {#na92681c}
+### [Vim](/Vim/) {#na92681c}
 
 ```
 $ sudo apt-get install vim
