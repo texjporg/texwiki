@@ -137,4 +137,3 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 - [http://pkgsrc.se/wip/texlive2013](http://pkgsrc.se/wip/texlive2013)
 - [compiling whole texlive in pkgsrc](http://www.ki.nu/~makoto/diary/2013/10/27/)
 - [TeX (pkgsrc-2014Q1) が動かない](http://www.uconst.org/blog/archives/417)
-- [TeX Live 2013 binaries for NetBSD](http://www.babafou.eu.org/texlive-netbsd/)
