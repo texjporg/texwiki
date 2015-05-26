@@ -30,6 +30,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 ### TeX Live 公式パッケージ {#jc67c0a8}
 
 - [Linux](/Linux/#texliveinstall)
+- [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
     - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
         <!-- -[http://optipessimist.blog108.fc2.com/blog-entry-404.html CentOS6.5での文書作成環境構築（備忘録）] -->
