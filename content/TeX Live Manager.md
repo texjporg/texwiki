@@ -9,13 +9,16 @@ pukiwiki: "TeX Live Manager"
 
 ## TeX Live Manager {#l32e41e6}
 
-<strong>目次</strong>
-
-## TeX Live Manager とは {#e10391ba}
-
 TeX Live Manager は [TeX Live](</TeX Live/>) のパッケージ管理ツールです．
 （OS X では [TeX Live Utility](</TeX Live Utility/>) という名称です．）
 TeX Live をインストールすると TeX Live Manager もインストールされます．
+
+***
+
+***
+
+### 使いかた {#jf67d712}
+
 Windows PowerShell またはコマンド プロンプトから
 
 ```
