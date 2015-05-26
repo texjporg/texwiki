@@ -13,8 +13,6 @@ pukiwiki: "Linux/openSUSE"
 
 openSUSE は安定・使い易い・多目的な Linux ベースのオペレーティングシステムです．
 
-<!-- #ref(http://upload.wikimedia.org/wikipedia/en/thumb/9/98/OpenSUSE_official-logo-color.svg/200px-OpenSUSE_official-logo-color.svg.png,right,around,nolink,openSUSE) -->
-
 ***
 
 ***
@@ -34,7 +32,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
-[texlive-dummy-opensuse](http://software.opensuse.org/package/texlive-dummy_install)
+[texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
 をインストールします．<br>
 texlive-dummy-opensuse をインストールすると
 TeX Live/TeX Live for SUSE Linux に依存するパッケージが
