@@ -46,7 +46,6 @@ Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
 - [Linux](/Linux/#texliveinstall)
-- [Ubuntu 14.04 の設定（個人的メモ）](http://blog.goo.ne.jp/isc_subleader/e/d3cd9d2776136c15593dd55855e7e4f4)
 - [https://github.com/scottkosty/install-tl-ubuntu](https://github.com/scottkosty/install-tl-ubuntu)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
