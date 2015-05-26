@@ -241,7 +241,7 @@ nkf によって 2 バイト仮名に変換されたりするからです。<br>
 
 #### TeX Live {#r40835b3}
 
-[MacTeX &amp; TeX Live](/Mac/#mactex) をインストールすると XeTeX がインストールされます．
+[MacTeX &amp; TeX Live](</TeX Live/Mac/#mactex>) をインストールすると XeTeX がインストールされます．
 
 ## 使い方 {#k7f2c3d5}
 
