@@ -16,8 +16,6 @@ Vine Linux はコンパクトで軽量な国産の日本語 Linux ディスト�
 [VineSeed](http://trac.vinelinux.org/wiki/VineSeed) は Vine Linux の開発版です．
 新しい TeX Live/Vine Linux を使用したい場合は VineSeed がおすすめです．
 
-<!-- #ref(http://trac.vinelinux.org/chrome/site/trac-header.png,right,around,nolink,Vine Linux) -->
-
 ***
 
 ***
@@ -35,8 +33,6 @@ Vine Linux はコンパクトで軽量な国産の日本語 Linux ディスト�
 ```
 $ sudo apt-get install task-texlive-full
 ```
-
-VineSeed (Vine Linux 7) の TeX Live は TeX Live 2015/Vine Linux です．<br>
 
 ## [Python](/Python/) {#vedf0458}
 
