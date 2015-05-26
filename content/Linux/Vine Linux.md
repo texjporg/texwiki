@@ -11,27 +11,18 @@ pukiwiki: "Linux/Vine Linux"
 
 ## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
 
-<img src="http://trac.vinelinux.org/chrome/site/trac-header.png" alt="Vine Linux" style="float:right">
-
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Vine Linux とは {#c3c75f2e}
-
 Vine Linux はコンパクトで軽量な国産の日本語 Linux ディストリビューションです．
 
-- [Vine Linux](http://vinelinux.org/)
+[VineSeed](http://trac.vinelinux.org/wiki/VineSeed) は Vine Linux の開発版です．
+新しい TeX Live/Vine Linux を使用したい場合は VineSeed がおすすめです．
 
-### VineSeed {#ocbe7947}
+<!-- #ref(http://trac.vinelinux.org/chrome/site/trac-header.png,right,around,nolink,Vine Linux) -->
 
-VineSeed は Vine Linux の開発版です．<br>
-新しい TeX Live/Vine Linux を使用したい場合は VineSeed がおすすめです．<br>
+***
 
-- [VineSeed – VineSeed](http://trac.vinelinux.org/wiki/VineSeed)
-- [Vine7/HowToUpgrade – VineSeed](http://trac.vinelinux.org/wiki/Vine7/HowToUpgrade)
-- [VineSeed Package Information](http://vinelinux.org/seed/vineseed.html)
-- [VineSeed ML アーカイブ](http://ml.vinelinux.org/vineseed/)
+***
 
-## TeX Live {#c1d98d5f}
+## TeX Live {#texlive}
 
 ### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#a6e990be}
 
