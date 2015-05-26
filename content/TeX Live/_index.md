@@ -43,18 +43,18 @@ TeX Live は OS ごとにインストール方法が異なります．
 - [OS X](/Mac/)
     - OS X へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
 - [Linux](/Linux/#texlive)
-    - [Linux/Arch Linux#TeX Live](</Linux/Arch Linux/#e2a82c70>)
-    - [Linux/Linux Mint#TeX Live](</Linux/Linux Mint/#d237a7b2>)
-    - Linux/Ubuntu#TeX Live
-    - Linux/Debian#TeX Live
-    - [Linux/Fedora#TeX Live](/Linux/Fedora/#u412c2cf)
-    - [Linux/openSUSE#TeX Live](/Linux/openSUSE/#n3c200b7)
-    - Linux/CentOS#TeX Live
-    - Linux/Vine Linux#TeX Live
+    - [Linux/Arch Linux](</Linux/Arch Linux/#texlive>)
+    - [Linux/Linux Mint](</Linux/Linux Mint/#texlive>)
+    - Linux/Ubuntu
+    - Linux/Debian
+    - [Linux/Fedora](/Linux/Fedora/#texlive)
+    - [Linux/openSUSE](/Linux/openSUSE/#texlive)
+    - Linux/CentOS
+    - Linux/Vine Linux
 - [BSD](/BSD/)
-    - [BSD/FreeBSD#TeX Live](/BSD/FreeBSD/#texlive)
-    - [BSD/OpenBSD#TeX Live](/BSD/OpenBSD/#texlive)
-    - [BSD/NetBSD#TeX Live](/BSD/NetBSD/#texlive)
+    - [BSD/FreeBSD](/BSD/FreeBSD/#texlive)
+    - [BSD/OpenBSD](/BSD/OpenBSD/#texlive)
+    - [BSD/NetBSD](/BSD/NetBSD/#texlive)
 - [Android](/Android/#texlive)
 
 ## TeX Live の詳細情報 {#g496de09}
