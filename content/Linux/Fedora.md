@@ -11,25 +11,15 @@ pukiwiki: "Linux/Fedora"
 
 ## [Fedora](https://getfedora.org/) {#l0a22986}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fedora_logo_and_wordmark.svg/500px-Fedora_logo_and_wordmark.svg.png" alt="Fedora" style="float:right">
+Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ベースのオペレーティングシステムです．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fedora_logo_and_wordmark.svg/500px-Fedora_logo_and_wordmark.svg.png,right,around,nolink,Fedora) -->
 
-## Fedora とは {#q5c4d3a4}
+***
 
-Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ベースのオペレーティングシステムです．<br>
+***
 
-- [Fedora](https://getfedora.org/)
-- [https://copr.fedoraproject.org/](https://copr.fedoraproject.org/)
-- [http://wiki.sugarlabs.org/go/Fedora](http://wiki.sugarlabs.org/go/Fedora)
-
-## ダウンロード {#j75c78dc}
-
-### ミラーサイト {#oc47dabf}
-
-- [Public mirror list#JP](http://mirrors.fedoraproject.org/publiclist/#JP)
-
-## [TeX Live](</TeX Live/>) {#u412c2cf}
+## [TeX Live](</TeX Live/>) {#texlive}
 
 - [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
     - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
