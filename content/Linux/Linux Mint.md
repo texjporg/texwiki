@@ -82,8 +82,16 @@ $ sudo apt-get install ghostscript
 
 ## [Python](/Python/) <a id="python"></a> {#reda4f97}
 
+### Python 3 {#ia53444d}
+
 ```
-$ sudo apt-get install python python3
+$ sudo apt-get install python3
+```
+
+### Python 2 {#a93b92ac}
+
+```
+$ sudo apt-get install python
 ```
 
 ## Julia <a id="julia"></a> {#xf5a03c6}
