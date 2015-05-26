@@ -38,10 +38,10 @@ pukiwiki: "TeX入手法"
 
 TeX ディストリビューションごとの解説ページです．
 現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
-OS X 用の [MacTeX](/Mac/#mactex) は TeX Live をベースにしたものです．
+OS X 用の [MacTeX](</TeX Live/Mac/#mactex>) は TeX Live をベースにしたものです．
 
 - <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux) ← おすすめ！
 - <strong>[W32TeX](/W32TeX/)</strong> (for Windows) ← おすすめ！
-- <strong>[MacTeX](/Mac/#mactex)</strong> (for OS X) ← おすすめ！
+- <strong>[MacTeX](</TeX Live/Mac/#mactex>)</strong> (for OS X) ← おすすめ！
 - [MiKTeX](/MiKTeX/) (for Windows)
-- [BasicTeX](/Mac/#basictex) (for OS X)
+- [BasicTeX](</TeX Live/Mac/#basictex>) (for OS X)
