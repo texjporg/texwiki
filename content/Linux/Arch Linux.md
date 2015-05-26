@@ -65,13 +65,13 @@ $ sudo pacman -S ghostscript
 
 ## [Python](/Python/) {#i5b0d02d}
 
-### python3 {#e996fe1c}
+### Python 3 {#e996fe1c}
 
 ```
 $ sudo pacman -S python python-dbus python-gobject
 ```
 
-### python2 {#tc491f53}
+### Python 2 {#tc491f53}
 
 ```
 $ sudo pacman -S python2 python2-dbus python2-gobject
