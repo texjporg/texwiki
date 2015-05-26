@@ -37,10 +37,11 @@ TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/)
 TeX Live は OS ごとにインストール方法が異なります．
 それぞれの OS のインストール方法を参照してください．
 
-- [Microsoft Windows](</Microsoft Windows/#texlive>)
+- [Microsoft Windows](</Microsoft Windows/>)
     - Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
     - [Cygwin](/Cygwin/#texlive) へのインストールも可能です．
-- [OS X](/Mac/#mactex)
+- [OS X](/Mac/)
+    - OS X へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
 - [Linux](/Linux/#texlive)
     - [Linux/Arch Linux#TeX Live](</Linux/Arch Linux/#e2a82c70>)
     - [Linux/Linux Mint#TeX Live](</Linux/Linux Mint/#d237a7b2>)
@@ -50,7 +51,7 @@ TeX Live は OS ごとにインストール方法が異なります．
     - [Linux/openSUSE#TeX Live](/Linux/openSUSE/#n3c200b7)
     - Linux/CentOS#TeX Live
     - Linux/Vine Linux#TeX Live
-- BSD
+- [BSD](/BSD/)
     - [BSD/FreeBSD#TeX Live](/BSD/FreeBSD/#texlive)
     - [BSD/OpenBSD#TeX Live](/BSD/OpenBSD/#texlive)
     - [BSD/NetBSD#TeX Live](/BSD/NetBSD/#texlive)
@@ -268,7 +269,7 @@ root 権限でインストーラを実行します．
 $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
-### [TeX Live のビルド](http://www.tug.org/texlive/build.html) {#tdb9387a}
+### [TeX Live のビルド](http://www.tug.org/texlive/build.html) {#build}
 
 #### Windows {#mc7cf9a9}
 
@@ -281,8 +282,8 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 #### Linux {#ue7a2b2a}
 
 - Momonga Linux
-    - \[TeX Live 2014 - その 1:http://lugia.hatenablog.com/entry/2014/06/22/195105\]
-    - \[TeX Live 2014 - その 2:http://lugia.hatenablog.com/entry/2014/09/06/201158\]
+    - [TeX Live 2014 - その 1](http://lugia.hatenablog.com/entry/2014/06/22/195105)
+    - [TeX Live 2014 - その 2](http://lugia.hatenablog.com/entry/2014/09/06/201158)
 
 - Beyond Linux From Scratch
     - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
