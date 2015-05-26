@@ -60,8 +60,9 @@ $ sudo dnf install python python3
 
 ## Julia {#h3524e63}
 
-- [https://copr.fedoraproject.org/coprs/nalimilan/julia/](https://copr.fedoraproject.org/coprs/nalimilan/julia/)
-- [https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/](https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/)
+```
+$ sudo dnf install julia
+```
 
 ## [Ruby](/Ruby/) {#j99de34a}
 
