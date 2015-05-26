@@ -19,28 +19,24 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 
 ***
 
-## [TeX Live](</TeX Live/>) {#texlive}
+### [TeX Live](</TeX Live/>) {#texlive}
 
 - [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
 - [LaTeX - ArchWiki](https://wiki.archlinux.org/index.php/LaTeX)
     <!-- -[[Kile and TeX Live - ArchWiki:https://wiki.archlinux.org/index.php/Kile_and_TeX_Live]] -->
 
-### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
+#### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
 
 - [Linux](/Linux/#texliveinstall)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
-[texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/)
-をインストールします．<br>
-texlive-dummy をインストールすると
-TeX Live/Arch Linux に依存するパッケージが
-TeX Live/Arch Linux をインストールするのを防止できます．<br>
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/) をインストールします．
+texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
 
 ```
 $ yaourt -S texlive-dummy
 ```
 
-### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
+#### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [TeX Live/Linux - MyTeXpert](http://mytexpert.osdn.jp/index.php?TeX%20Live%2FLinux)
 - [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
@@ -57,81 +53,81 @@ $ sudo pacman -S texlive-langjapanese texlive-most
 $ sudo pacman -S texlive-langjapanese texlive-core
 ```
 
-## [Ghostscript](/Ghostscript/) {#q940a9dc}
+### [Ghostscript](/Ghostscript/) {#q940a9dc}
 
 ```
 $ sudo pacman -S ghostscript
 ```
 
-## [Python](/Python/) {#i5b0d02d}
+### [Python](/Python/) {#i5b0d02d}
 
-### Python 3 {#e996fe1c}
+#### Python 3 {#e996fe1c}
 
 ```
 $ sudo pacman -S python python-dbus python-gobject
 ```
 
-### Python 2 {#tc491f53}
+#### Python 2 {#tc491f53}
 
 ```
 $ sudo pacman -S python2 python2-dbus python2-gobject
 ```
 
-## Julia {#xdaa5ad2}
+### Julia {#xdaa5ad2}
 
 ```
 $ sudo pacman -S julia
 ```
 
-## [Ruby](/Ruby/) {#f4286b29}
+### [Ruby](/Ruby/) {#f4286b29}
 
 ```
 $ sudo pacman -S ruby
 ```
 
-## [Perl](/Perl/) {#sf038555}
+### [Perl](/Perl/) {#sf038555}
 
 ```
 $ sudo pacman -S perl
 ```
 
-## [Poppler](/Poppler/) {#bfbc00bc}
+### [Poppler](/Poppler/) {#bfbc00bc}
 
 ```
 $ sudo pacman -S poppler poppler-data
 ```
 
-## [Evince](/Evince/) {#qd63d30c}
+### [Evince](/Evince/) {#qd63d30c}
 
 ```
 $ sudo pacman -S evince
 ```
 
-## [Okular](/Okular/) {#d36d48ab}
+### [Okular](/Okular/) {#d36d48ab}
 
 ```
 $ sudo pacman -S kdegraphics-okular kde-l10n-ja
 ```
 
-## [zathura](/zathura/) {#cae6188b}
+### [zathura](/zathura/) {#cae6188b}
 
 ```
 $ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 ```
 
-## [qpdfview](/qpdfview/) {#xe3804e4}
+### [qpdfview](/qpdfview/) {#xe3804e4}
 
 ```
 $ yaourt -S qpdfview
 ```
 
-## [MuPDF](/MuPDF/) {#w1b2cec8}
+### [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
 $ sudo pacman -S mupdf
 ```
 
-<!-- *Xpdf [#yfd9416b] -->
+<!-- **Xpdf [#yfd9416b] -->
 <!--  -->
 <!-- $ sudo pacman -S xpdf xpdf-japanese -->
 <!--  -->
@@ -150,13 +146,13 @@ $ sudo pacman -S mupdf
 <!-- fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf -->
 <!-- - --  -->
 
-## [LyX](/LyX/) {#odd649e9}
+### [LyX](/LyX/) {#odd649e9}
 
 ```
 $ sudo pacman -S lyx
 ```
 
-## [TeXstudio](/TeXstudio/) {#geb231cb}
+### [TeXstudio](/TeXstudio/) {#geb231cb}
 
 ```
 $ sudo pacman -S texstudio
@@ -165,49 +161,49 @@ $ sudo pacman -S texstudio
 Arch Linux の TeXstudio は Qt 5 を使用しています．
 Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象が発生します（[不具合情報](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeXstudio#ped67bdd)を参照）．
 
-## [Texmaker](/Texmaker/) {#gbe0fd81}
+### [Texmaker](/Texmaker/) {#gbe0fd81}
 
 ```
 $ sudo pacman -S texmaker
 ```
 
-## [TeXworks](/TeXworks/) {#y01d9b26}
+### [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
 $ yaourt -S texworks
 ```
 
-## [Emacs](/Emacs/) {#le6bf422}
+### [Emacs](/Emacs/) {#le6bf422}
 
 ```
 $ sudo pacman -S emacs
 ```
 
-## [Vim](/Vim/) {#g73ca7b0}
+### [Vim](/Vim/) {#g73ca7b0}
 
 ```
 $ sudo pacman -S vim
 ```
 
-## [Inkscape](/Inkscape/) {#ca45a692}
+### [Inkscape](/Inkscape/) {#ca45a692}
 
 ```
 $ sudo pacman -S inkscape pstoedit python2-lxml
 ```
 
-<!-- *awesome [#hf2862e7] -->
-
+<!-- **awesome [#hf2862e7] -->
+<!--  -->
 <!-- $ sudo pacman -S awesome -->
-
+<!--  -->
 <!-- -[[ウィンドウマネージャ「awesome」の基本操作:http://momoto.github.io/blog/2013/03/27/awesome-tutorials/]] -->
 
-## sakura {#kf265bc9}
+### sakura {#kf265bc9}
 
 ```
 $ sudo pacman -S sakura
 ```
 
-## fcitx {#y9e621be}
+### fcitx {#y9e621be}
 
 - [Fcitx (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Fcitx_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
     <!-- -https://aur.archlinux.org/packages/fcitx-mozc-ut/ -->
@@ -239,13 +235,13 @@ $ sudo pacman -S sakura
 <!-- archiso login: root (automatic login) -->
 <!-- root@archiso ~ # -->
 <!--  -->
-<!-- デフォルトでは日本語キーボード配列 (JIS 配列) ではなく英語キーボード配列 (ASCII 配列) になっています．~ -->
-<!-- 日本語キーボードを使用している場合は日本語キーボード配列 (JIS 配列) で作業できるように変更します．~ -->
+<!-- デフォルトでは日本語キーボード配列 (JIS 配列) ではなく英語キーボード配列 (ASCII 配列) になっています． -->
+<!-- 日本語キーボードを使用している場合は日本語キーボード配列 (JIS 配列) で作業できるように変更します． -->
 <!--  -->
 <!-- # loadkeys jp106 -->
 <!-- Loading /usr/share/kbd/keymaps/i386/qwerty/jp106.map.gz -->
 <!--  -->
-<!-- 自分の環境に合わせてインストール作業を行います．~ -->
+<!-- 自分の環境に合わせてインストール作業を行います． -->
 <!--  -->
 <!-- **pacman [#b6ab2d3d] -->
 <!--  -->
