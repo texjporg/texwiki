@@ -54,8 +54,16 @@ $ sudo dnf install ghostscript
 
 ## [Python](/Python/) {#z2c220a1}
 
+### Python 3 {#o15f7222}
+
 ```
-$ sudo dnf install python python3
+$ sudo dnf install python3
+```
+
+### Python 2 {#c019fdb6}
+
+```
+$ sudo dnf install python
 ```
 
 ## Julia {#h3524e63}
