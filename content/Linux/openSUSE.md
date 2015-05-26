@@ -17,7 +17,7 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 
 ***
 
-## TeX Live {#texlive}
+### TeX Live {#texlive}
 
 - [http://software.opensuse.org/package/texlive-scheme-full](http://software.opensuse.org/package/texlive-scheme-full)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
@@ -26,75 +26,73 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
     - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 - [http://software.opensuse.org/package/texlive-dummy_install](http://software.opensuse.org/package/texlive-dummy_install)
 
-### TeX Live 公式パッケージ {#v87b6755}
+#### TeX Live 公式パッケージ {#v87b6755}
 
 - [Linux](/Linux/#texliveinstall)
 - [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は
-[texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
-をインストールします．<br>
-texlive-dummy-opensuse をインストールすると
-TeX Live/TeX Live for SUSE Linux に依存するパッケージが
-TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．<br>
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) をインストールします．
+texlive-dummy-opensuse をインストールすると TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．
 
-### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
+#### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
 ```
 $ sudo zypper install texlive-scheme-full
 ```
 
-&#x2a;\* WARNING \*\* Could not open config file "dvipdfmx.cfg". が表示される場合は TeX Live 公式パッケージをインストールしてください． → [Tex Live 2013 が壊れている疑惑](http://folioscope.hatenablog.jp/entry/2013/12/09/194754)
+&#x2a;\* WARNING \*\* Could not open config file "dvipdfmx.cfg". が表示される場合は TeX Live 公式パッケージをインストールしてください．
 
-## [Ghostscript](/Ghostscript/) {#iea7fcc9}
+- [Tex Live 2013 が壊れている疑惑](http://folioscope.hatenablog.jp/entry/2013/12/09/194754)
+
+### [Ghostscript](/Ghostscript/) {#iea7fcc9}
 
 ```
 $ sudo zypper install ghostscript
 ```
 
-## [Poppler](/Poppler/) {#dae12f15}
+### [Poppler](/Poppler/) {#dae12f15}
 
 ```
 $ sudo zypper install poppler-data
 ```
 
-## [Evince](/Evince/) {#p27ad2e3}
+### [Evince](/Evince/) {#p27ad2e3}
 
 ```
 $ sudo zypper install evince
 ```
 
-## [Okular](/Okular/) {#kfc5a9bf}
+### [Okular](/Okular/) {#kfc5a9bf}
 
 ```
 $ sudo zypper install okular
 ```
 
-## [LyX](/LyX/) {#uad65708}
+### [LyX](/LyX/) {#uad65708}
 
 ```
 $ sudo zypper install lyx
 ```
 
-## [TeXstudio](/TeXstudio/) {#xc0b5b03}
+### [TeXstudio](/TeXstudio/) {#xc0b5b03}
 
 ```
 $ sudo zypper install texstudio
 ```
 
-## [Texmaker](/Texmaker/) {#fa598615}
+### [Texmaker](/Texmaker/) {#fa598615}
 
 ```
 $ sudo zypper install texmaker
 ```
 
-## [TeXworks](/TeXworks/) {#n8431fb2}
+### [TeXworks](/TeXworks/) {#n8431fb2}
 
 ```
 $ sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
 ```
 
-## [MinGW](/MinGW/) {#e5f30d58}
+### [MinGW](/MinGW/) {#e5f30d58}
 
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
