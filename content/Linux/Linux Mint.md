@@ -11,51 +11,16 @@ pukiwiki: "Linux/Linux Mint"
 
 ## [Linux Mint/Linux Mint Debian Edition (LMDE)](http://linuxmint.com/) {#f4077eb2}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png" alt="Linux Mint" style="float:right">
+Linux Mint は Ubuntu をベースにした Linux ディストリビューションです．
+Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png,right,around,nolink,Linux Mint) -->
 
-## [Linux Mint/Linux Mint Debian Edition (LMDE) とは](http://linuxmint-jp.net/linuxmint.html) {#b5a36704}
+***
 
-Linux Mint は Ubuntu をベースにした Linux ディストリビューションです．<br>
-Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
+***
 
-- [Linux Mint](http://linuxmint.com/)
-- [Linux Mint Japan](http://linuxmint-jp.net/)
-- [https://github.com/linuxmint](https://github.com/linuxmint)
-- [Linux Mint 日本語支援サイト - リナックスミントを使おう](http://linuxmintjp.jimdo.com/)
-
-## ダウンロード {#a6b4fe07}
-
-### ミラーサイト {#nba22f7f}
-
-- [Mirrors - Linux Mint](http://www.linuxmint.com/mirrors.php)
-
-### 台湾ミラーサイト {#v3e8b140}
-
-#### ISO Images {#vd1db1bf}
-
-- [http://free.nchc.org.tw/linuxmint/isos/stable/](http://free.nchc.org.tw/linuxmint/isos/stable/)
-
-#### パッケージ {#ie619db8}
-
-- [http://free.nchc.org.tw/linuxmint/packages/](http://free.nchc.org.tw/linuxmint/packages/)
-
-### 国内ミラーサイト {#ce6708ed}
-
-日本のミラーサイト (JAIST) は No codecs 版のみの配布になっています． (→ [Linux Mintのミラーを再開しました](http://ftp-admin.blogspot.jp/2013/06/linux-mint.html))<br>
-
-#### ISO Images {#b7834158}
-
-- [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/isos/stable/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/isos/stable/)
-
-#### パッケージ {#ub67daca}
-
-- [http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/](http://ftp.jaist.ac.jp/pub/Linux/linuxmint/packages/)
-- [Linux Mint の日本語化](http://linuxmintjp.jimdo.com/%E6%97%A5%E6%9C%AC%E8%AA%9E%E5%8C%96/)
-- [Linux MintのパッケージをJAISTから取得するようにするには](http://blog.lindwurm.biz/2013/06/get-mint-packages-from-jaist.html)
-
-## TeX Live <a id="texlive"></a> {#d237a7b2}
+## TeX Live {#texlive}
 
 - [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
 - [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
@@ -178,7 +143,7 @@ $ sudo apt-get install lyx
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#q1b2ff71}
 
 ```
-$ sudo apt-get install texstudio
+$ sudo apt-get install texstudio texstudio-l10n texstudio-doc
 ```
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#f4899fdc}
@@ -202,7 +167,7 @@ $ sudo apt-get install eclipse
 ## [Emacs](/Emacs/) <a id="emacs"></a> {#w2c42a95}
 
 ```
-$ sudo apt-get install emacs24
+$ sudo apt-get install emacs
 ```
 
 ### [AUCTeX](/AUCTeX/) {#r3a92e85}
