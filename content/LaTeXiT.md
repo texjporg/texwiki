@@ -75,10 +75,10 @@ Beta 版も入手できます，
 　　　　　　　　　　　　　　　　　　　　　　　　　　<ins><span style="color:#F1F1F1;background-color:#0F7FFF;"><span style="color:#0F7FFF;">\[</span>　<strong>コマンド</strong>　<span style="color:#0F7FFF;">\]</span></span><span style="color:Black;background-color:White;">\[　<strong>追加スクリプト</strong>　\]</span></ins><br>
 　　　　　　　　　　　　　　　　　　　　　　◯ pdflatex　　　◯ xelatex　　　　<span style="color:White;background-color:#0F7FFF;">🔘</span> latex+dvipdf<br>
 
-　　　　　　　　　　pdfLaTeX　　　　　<ins>/usr/texbin/pdflatex</ins><br>
-　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/usr/texbin/xelatex</ins></span><br>
-　　　　　　　　　　LaTeX　　　　　　　<ins>/usr/texbin/uplatex</ins><br>
-　　　　　　　　　　dvipdf　　　　　　　<ins>/usr/texbin/dvipdfmx</ins><br>
+　　　　　　　　　　pdfLaTeX　　　　　<ins>/Library/TeX/texbin/pdflatex</ins><br>
+　　　　　　　　　　XeLaTeX　　　　　<span style="color:Gray;"><ins>/Library/TeX/texbin/xelatex</ins></span><br>
+　　　　　　　　　　LaTeX　　　　　　　<ins>/Library/TeX/texbin/uplatex</ins><br>
+　　　　　　　　　　dvipdf　　　　　　　<ins>/Library/TeX/texbin/dvipdfmx</ins><br>
 　　　　　　　　　　Ghostscript (gs)　<ins>/usr/local/bin/gs-noX11</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/gs</ins> に変更<br>
 　　　　　　　　　　ps2pdf　　　　　　　<ins>/usr/local/bin/ps2pdf</ins>　← [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は <ins>/Applications/Ghostscript.app/bin/ps2pdf</ins> に変更<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ ユーザのログインシェルを使用<br>
