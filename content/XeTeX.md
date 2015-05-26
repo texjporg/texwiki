@@ -215,13 +215,13 @@ Windows PowerShell またはコマンド プロンプトで
 ```
 
 とすると， namelist.txt に記録されます。<br>
-ただし UTF-8 で記録されますから，もし Shift_JIS で見たかったら
+ただし UTF-8 で記録されますから，もし Shift_JIS で見たかったら [nkf](/nkf/) で文字コード変換
 
 ```
    nkf -s namelist.txt >namelist.sj
 ```
 
-とすれば良いでしょう。<br>
+を実行すれば良いでしょう。<br>
 あるいは最初に
 
 ```
