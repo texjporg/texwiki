@@ -27,7 +27,7 @@ pukiwiki: "TeX入手法"
 
 入門書に付属するインストーラからも可能です．
 
-- [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) ← おすすめ！
+- [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)
 
 インストールせずに Web で試してみることもできます．
 
@@ -40,8 +40,8 @@ TeX ディストリビューションごとの解説ページです．
 現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
 OS X 用の [MacTeX](</TeX Live/Mac/#mactex>) は TeX Live をベースにしたものです．
 
-- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux) ← おすすめ！
-- <strong>[W32TeX](/W32TeX/)</strong> (for Windows) ← おすすめ！
-- <strong>[MacTeX](</TeX Live/Mac/#mactex>)</strong> (for OS X) ← おすすめ！
+- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux)
+- <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
+- <strong>[MacTeX](</TeX Live/Mac/#mactex>)</strong> (for OS X)
 - [MiKTeX](/MiKTeX/) (for Windows)
 - [BasicTeX](</TeX Live/Mac/#basictex>) (for OS X)
