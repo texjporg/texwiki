@@ -27,7 +27,7 @@ Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, 
 
 ***
 
-## [TeX Live](</TeX Live/>) {#texlive}
+### [TeX Live](</TeX Live/>) {#texlive}
 
 - [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
 - [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
@@ -43,13 +43,13 @@ Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, 
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 
-### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
+#### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
 - [Linux](/Linux/#texliveinstall)
 - [https://github.com/scottkosty/install-tl-ubuntu](https://github.com/scottkosty/install-tl-ubuntu)
 
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．<br>
-TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．<br>
+TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
+TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
 
 ```
 $ sudo apt-get install equivs
@@ -58,7 +58,7 @@ $ equivs-build debian-equivs-2015-ex.txt
 $ sudo dpkg -i texlive-local_2015-1_all.deb
 ```
 
-### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
+#### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
 - [LubuntuでTeX環境を整える](http://duroomzacc-diary.hatenablog.com/entry/2015/05/17/193427)
 
@@ -76,145 +76,145 @@ $ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
 $ tlmgr init-usertree
 ```
 
-を実行します．<br>
+を実行します．
 
-#### Ubuntu 14.04 {#p8dec55e}
-
-最新のUbuntu長期サポート(LTS)版は14.04 Trustyです。Ubuntu 14.04にはtexlive-lang-japaneseは存在しません。
-インストールするには下記のようにします。なお、tlmgrはtexlive-baseに含まれており、texlive-lang-cjkの依存関係から、texlive-lang-cjkと同時にインストールされます。
+［注意］最新の Ubuntu 長期サポート (LTS) 版は 14.04 Trusty です．
+Ubuntu 14.04 には texlive-lang-japanese は存在しません．
+インストールするには下記のようにします．
+なお，tlmgr は texlive-base に含まれており，texlive-lang-cjk の依存関係から，texlive-lang-cjk と同時にインストールされます．
 
 ```
 $ sudo apt-get install texlive-lang-cjk
 $ tlmgr init-usertree
 ```
 
-## [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#ve306e42}
+### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#ve306e42}
 
 ```
 $ sudo apt-get install ghostscript
 ```
 
-## [Python](/Python/) <a id="python"></a> {#c68c1c0f}
+### [Python](/Python/) <a id="python"></a> {#c68c1c0f}
 
-### Python 3 {#o4813ef5}
+#### Python 3 {#o4813ef5}
 
 ```
 $ sudo apt-get install python3
 ```
 
-### Python 2 {#u453a520}
+#### Python 2 {#u453a520}
 
 ```
 $ sudo apt-get install python
 ```
 
-## Julia <a id="julia"></a> {#n27e5fbc}
+### Julia <a id="julia"></a> {#n27e5fbc}
 
 ```
 $ sudo apt-get install julia
 ```
 
-## [Ruby](/Ruby/) <a id="ruby"></a> {#j96f01f6}
+### [Ruby](/Ruby/) <a id="ruby"></a> {#j96f01f6}
 
 ```
 $ sudo apt-get install ruby2.1
 ```
 
-## [Perl](/Perl/) <a id="perl"></a> {#q23bc7da}
+### [Perl](/Perl/) <a id="perl"></a> {#q23bc7da}
 
 ```
 $ sudo apt-get install perl
 ```
 
-## [Evince](/Evince/) <a id="evince"></a> {#m440464c}
+### [Evince](/Evince/) <a id="evince"></a> {#m440464c}
 
 ```
 $ sudo apt-get install evince
 ```
 
-## [Okular](/Okular/) <a id="okular"></a> {#xd972c8e}
+### [Okular](/Okular/) <a id="okular"></a> {#xd972c8e}
 
 ```
 $ sudo apt-get install okular kde-l10n-ja
 ```
 
-## [zathura](/zathura/) <a id="zathura"></a> {#z031990b}
+### [zathura](/zathura/) <a id="zathura"></a> {#z031990b}
 
 ```
 $ sudo apt-get install zathura
 ```
 
-## [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#n4d4de3e}
+### [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#n4d4de3e}
 
 ```
 $ sudo apt-get install qpdfview
 ```
 
-## [MuPDF](/MuPDF/) <a id="mupdf"></a> {#s8c9b663}
+### [MuPDF](/MuPDF/) <a id="mupdf"></a> {#s8c9b663}
 
 ```
 $ sudo apt-get install mupdf mupdf-tools
 ```
 
-## [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
+### [LyX](/LyX/) <a id="lyx"></a> {#s7886348}
 
 ```
 $ sudo apt-get install lyx
 ```
 
-## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#w37788fd}
+### [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#w37788fd}
 
 ```
 $ sudo apt-get install texstudio texstudio-l10n texstudio-doc
 ```
 
-## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe69a519}
+### [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe69a519}
 
 ```
 $ sudo apt-get install texmaker
 ```
 
-## [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
+### [TeXworks](/TeXworks/) <a id="texworks"></a> {#veed3c44}
 
 ```
 $ sudo apt-get install texworks
 ```
 
-## [Eclipse](/Eclipse/) <a id="eclipse"></a> {#ae8afa99}
+### [Eclipse](/Eclipse/) <a id="eclipse"></a> {#ae8afa99}
 
 ```
 $ sudo apt-get install eclipse
 ```
 
-## [Emacs](/Emacs/) <a id="emacs"></a> {#s0b6fa60}
+### [Emacs](/Emacs/) <a id="emacs"></a> {#s0b6fa60}
 
 ```
 $ sudo apt-get install emacs
 ```
 
-### [AUCTeX](/AUCTeX/) {#u31c1597}
+#### [AUCTeX](/AUCTeX/) {#u31c1597}
 
 - [https://launchpad.net/ubuntu/+source/auctex/](https://launchpad.net/ubuntu/+source/auctex/)
     - [https://launchpad.net/ubuntu/+source/auctex/+changelog](https://launchpad.net/ubuntu/+source/auctex/+changelog)
 
-### [YaTeX](/YaTeX/) {#pc05aa7c}
+#### [YaTeX](/YaTeX/) {#pc05aa7c}
 
 - [https://launchpad.net/ubuntu/+source/yatex/](https://launchpad.net/ubuntu/+source/yatex/)
     - [https://launchpad.net/ubuntu/+source/yatex/+changelog](https://launchpad.net/ubuntu/+source/yatex/+changelog)
 
-## [Vim](/Vim/) <a id="vim"></a> {#a5b8fa0b}
+### [Vim](/Vim/) <a id="vim"></a> {#a5b8fa0b}
 
 ```
 $ sudo apt-get install vim vim-gtk
 ```
 
-## [Inkscape](/Inkscape/) <a id="inkscape"></a> {#u785615b}
+### [Inkscape](/Inkscape/) <a id="inkscape"></a> {#u785615b}
 
 ```
 $ sudo apt-get install inkscape pstoedit python-lxml
 ```
 
-## 関連リンク {#p9c99f41}
+### 関連リンク {#p9c99f41}
 
 - [http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do](http://www.fsf.org/blogs/rms/ubuntu-spyware-what-to-do)
 - [http://www.gnu.org/distros/common-distros.html#Ubuntu](http://www.gnu.org/distros/common-distros.html#Ubuntu)
