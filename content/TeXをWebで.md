@@ -37,7 +37,7 @@ Windows でも動作するようです． → ｢TeXを使ってみよう｣をW
 
 - [LinuxWiki:Apache 2](https://okumuralab.org/~okumura/linux/?Apache%202)
 - [LinuxWiki:PHP](https://okumuralab.org/~okumura/linux/?PHP)
-- [TeX Live#ビルド](</TeX Live/#tdb9387a>)
+- [TeX Live#ビルド](</TeX Live/#build>)
 
 ### セキュリティ上の配慮 {#aeb59313}
 
