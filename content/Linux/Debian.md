@@ -11,21 +11,19 @@ pukiwiki: "Linux/Debian"
 
 ## [Debian GNU/Linux](https://www.debian.org) {#b76dbb44}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Debian-OpenLogo.svg/200px-Debian-OpenLogo.svg.png" alt="Debian GNU/Linux" style="float:right">
+Debian はフリーなオペレーティングシステムを作成するためのプロジェクトです．
+Debian GNU/Linux は Debian Project によって作成された Linux ディストリビューションです．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Debian GNU/Linux とは {#b9471c57}
-
-Debian はフリーなオペレーティングシステムを作成するためのプロジェクトです．<br>
-Debian GNU/Linux は Debian Project によって作成された Linux ディストリビューションです．<br>
-
-- [Debian -- ユニバーサルオペレーティングシステム](https://www.debian.org)
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Debian-OpenLogo.svg/200px-Debian-OpenLogo.svg.png,right,around,nolink,Debian GNU/Linux) -->
 
 <!-- **設定 [#n0611da8] -->
 <!-- -[[Debianリポジトリの設定方法:http://ftp-admin.blogspot.jp/2013/02/debian.html]] -->
 
-## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#j310e7a0}
+***
+
+***
+
+## [TeX Live](</TeX Live/>) {#texlive}
 
 - [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
 - [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
@@ -148,7 +146,7 @@ $ sudo apt-get install lyx
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#n198519c}
 
 ```
-$ sudo apt-get install texstudio
+$ sudo apt-get install texstudio texstudio-l10n texstudio-doc
 ```
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe09ab85}
@@ -172,7 +170,7 @@ $ sudo apt-get install eclipse
 ## [Emacs](/Emacs/) <a id="emacs"></a> {#gfaebf66}
 
 ```
-$ sudo apt-get install emacs24
+$ sudo apt-get install emacs
 ```
 
 ### AUCTeX {#t099fe57}
