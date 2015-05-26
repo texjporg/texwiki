@@ -11,78 +11,23 @@ pukiwiki: "Linux/Ubuntu"
 
 ## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](https://ubuntu-mate.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
-<div style="text-align:center"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png" alt="Ubuntu" style="float:right"></div>
+Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．
+高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) をおすすめします．
 
-<div style="text-align:left"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png" alt="Ubuntu GNOME" style="float:right"></div>
+Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した [Linux Mint](</Linux/Linux Mint/>) があります．
 
-<img src="https://ubuntu-mate.org/gallery/Artwork/Ubuntu_MATE.png" alt="Ubuntu MATE" style="float:right">
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png,right,around,nolink,Ubuntu); -->
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png,right,around,nolink,Ubuntu GNOME); -->
+<!-- #ref(https://ubuntu-mate.org/gallery/Artwork/Ubuntu_MATE.png,right,around,nolink,Ubuntu MATE); -->
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png,right,around,nolink,Kubuntu); -->
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png,right,around,nolink,Xubuntu); -->
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png,right,around,nolink,Lubuntu); -->
 
-<div style="text-align:right"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png" alt="Kubuntu" style="float:right"></div>
+***
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png" alt="Xubuntu" style="float:right">
+***
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png" alt="Lubuntu" style="float:right">
-
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Ubuntu とは {#i6bcb07d}
-
-Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．<br>
-高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) をおすすめします．<br>
-
-- [Ubuntu homepage | Ubuntu](http://www.ubuntu.com/)
-- [Home - Ubuntu Wiki](https://wiki.ubuntu.com/)
-- [Home | Ubuntu Japanese Team](http://www.ubuntulinux.jp/)
-- [Ubuntu Japanese Wiki - Ubuntu Japanese Wiki](https://wiki.ubuntulinux.jp/)
-- [Ubuntu日本語フォーラム](https://forums.ubuntulinux.jp/)
-- [The ubuntu-jp Archives](https://lists.ubuntu.com/archives/ubuntu-jp/)
-
-### 公式派生版 {#i77fdd5e}
-
-- [Derivatives](http://www.ubuntu.com/about/about-ubuntu/derivatives)
-- [Ubuntu・フレーバー紹介 - Ubuntu となかまたち](http://ubuntujp.jimdo.com/)
-- [Ubuntu 派生ディストリビューション その3 - Ubuntu・Kubuntu・Xubuntu・Lubuntu・Ubuntu GNOMEの比較 （14.04版）](http://kledgeb.blogspot.jp/2014/04/ubuntu-3-ubuntukubuntuxubuntulubuntuubu.html)
-
-#### Ubuntu GNOME とは {#fa2981c9}
-
-Ubuntu GNOME はデスクトップ環境に GNOME を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Ubuntu GNOME](http://ubuntugnome.org/)
-
-#### Ubuntu MATE とは {#l023b1d2}
-
-Ubuntu MATE はデスクトップ環境に MATE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Ubuntu MATE](https://ubuntu-mate.org/)
-
-#### Kubuntu とは {#d3ca4531}
-
-Kubuntu はデスクトップ環境に KDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Kubuntu](http://www.kubuntu.org/)
-
-#### Xubuntu とは {#m7f07ea0}
-
-Xubuntu はデスクトップ環境に Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Xubuntu](http://xubuntu.org/)
-- [xubuntuが一番いいと思う訳](http://lespedeza93.blogspot.jp/2013/11/xubuntu.html), [Xubuntuを勧める10の理由](http://lespedeza93.blogspot.jp/2014/01/xubuntu10.html) → [結局ArchLinuxに戻る](http://lespedeza93.blogspot.jp/2014/01/archlinux.html)
-
-#### Lubuntu とは {#zdc5ee41}
-
-Lubuntu はデスクトップ環境に LXDE を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Lubuntu](http://lubuntu.net/)
-
-### 派生版 {#m65a8766}
-
-#### Linux Mint とは {#n7037512}
-
-Linux Mint はデスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した Ubuntu ベースの Linux ディストリビューションです．<br>
-
-- [Linux Mint](</Linux/Linux Mint/>)
-
-## [TeX Live](</TeX Live/>) <a id="texlive"></a> {#l2f3d074}
+## [TeX Live](</TeX Live/>) {#texlive}
 
 - [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
 - [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
@@ -213,7 +158,7 @@ $ sudo apt-get install lyx
 ## [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#w37788fd}
 
 ```
-$ sudo apt-get install texstudio
+$ sudo apt-get install texstudio texstudio-l10n texstudio-doc
 ```
 
 ## [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe69a519}
@@ -237,7 +182,7 @@ $ sudo apt-get install eclipse
 ## [Emacs](/Emacs/) <a id="emacs"></a> {#s0b6fa60}
 
 ```
-$ sudo apt-get install emacs24
+$ sudo apt-get install emacs
 ```
 
 ### [AUCTeX](/AUCTeX/) {#u31c1597}
