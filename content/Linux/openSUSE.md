@@ -11,18 +11,15 @@ pukiwiki: "Linux/openSUSE"
 
 ## [openSUSE](http://www.opensuse.org/) {#nea99a9d}
 
-<img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/98/OpenSUSE_official-logo-color.svg/200px-OpenSUSE_official-logo-color.svg.png" alt="openSUSE" style="float:right">
+openSUSE は安定・使い易い・多目的な Linux ベースのオペレーティングシステムです．
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<!-- #ref(http://upload.wikimedia.org/wikipedia/en/thumb/9/98/OpenSUSE_official-logo-color.svg/200px-OpenSUSE_official-logo-color.svg.png,right,around,nolink,openSUSE) -->
 
-## openSUSE とは {#n178877e}
+***
 
-openSUSE は安定・使い易い・多目的な Linux ベースのオペレーティングシステムです．<br>
+***
 
-- [openSUSE.org](http://www.opensuse.org/)
-- [メインページ - openSUSE](http://ja.opensuse.org/)
-
-## TeX Live {#n3c200b7}
+## TeX Live {#texlive}
 
 - [http://software.opensuse.org/package/texlive-scheme-full](http://software.opensuse.org/package/texlive-scheme-full)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
