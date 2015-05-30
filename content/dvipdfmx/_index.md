@@ -642,9 +642,16 @@ J2C ファイルには対応していません．
 不要に高いバージョン設定にしない，タグ付きにしないなどの点に注意すれば比較的よく対応できます．
 これまで PDF-1.5 以上のファイルで取り込みに失敗することがありましたが，2014/08/14 の修正でそのようなファイルにも対応しました．
 
+PDF-1.5 以上のファイルでも，取り込みに成功する場合と失敗する場合があります．
+具体的には「dvipdfmx が解釈する必要のある領域に，/DecodeParms がある PDF ファイル」について失敗します．
+2014/08/14 の修正で，dvipdfmx が解釈すべき領域に /DecodeParms が見つかった場合にも対応可能な改修が施されましたので，以降の W32TeX および TeX Live 2015 以降では問題なく取り込むことができます．
+
+- 図の挿入について [forum:1588](https://okumuralab.org/tex/mod/forum/discuss.php?d=1588)
+- [美文書6版で PDF-1.5 の取り込みに関する問題](http://d.hatena.ne.jp/acetaminophen/20150530/1433009781)，[（続）](http://d.hatena.ne.jp/acetaminophen/20150531/1433042929)
+
 <strong>PostScript (EPS)</strong> はそれが確かに必要だという場合を除き使わない方がよいでしょう．
 
-dvipdfmx は PostScript を直接サポートしていません．
+dvipdfmx は PostScript を直接サポートしていません（Ghostscript を呼び出すので処理が圧倒的に遅くなります）．
 
 #### どのフォーマットを選ぶべきか？ {#la46999e}
 
