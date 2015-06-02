@@ -98,6 +98,14 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 そのまま「OK」ボタンを押して、編集ウィンドウにコードを挿入してください。
 編集ウィンドウには、然るべき記号が入力されます。
 
+### ペーストすると \ が ¥ で貼り付けられてしまう {#xd11f52a}
+
+```
+編集 → クリップボードで \ を ¥ に変換 
+```
+
+のチェックを外してください。
+
 ## よくある質問 {#b75d05b6}
 
 ### 日本語のファイル名は使えますか？ {#z411776b}
@@ -115,6 +123,12 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 1. ~/Library/Preferences/TeXShop.plist ファイル
 1. ~/Library/TeXShop/ ディレクトリ
+
+なお，10.9 Mavericks 以降では，plist を手動で削除した後には次のコマンドを実行する必要があります。（[理由](http://applech2.com/archives/34534725.html)）
+
+```
+killall -SIGTERM cfprefsd
+```
 
 ### TeXShop にはコマンド補完機能はないの？ {#x6c48e51}
 
