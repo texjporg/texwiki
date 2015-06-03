@@ -106,6 +106,17 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 のチェックを外してください。
 
+### 編集メニューの「統計情報...」が動かない {#nb06ea5c}
+
+「統計情報」は，シェルスクリプト TeXShop.app/Contents/Resources/detexwrap 経由で detex を呼び出します。お使いの TeX ディストリビューションに detex が含まれていないと動作しません。
+（その旨、エラーメッセージを出した方が親切だと思いますが...）
+
+### 閉じたファイルがずっと「使用中」になる {#z1d6bf0b}
+
+昔からあるバグで原因はよくわかっていません。
+ファイルをゴミ箱に捨てた後で「ゴミ箱を空にする...」ことできない場合は、
+一度 TeXShop を終了させてから、もう一度ゴミ箱を空にしてみて下さい。
+
 ## よくある質問 {#b75d05b6}
 
 ### 日本語のファイル名は使えますか？ {#z411776b}
@@ -287,6 +298,21 @@ Unicodeでは，1つの文字に対して複数の表現方法が存在する場
 ただし，Unicode に規定された NFC 正規化のルールに基づくと，CJK 互換漢字が CJK 統合漢字に変化してしまうという問題が生じます。そこで，TeXShop では，Unicode の「合成除外」を考慮した非標準的な正規化（通称 [Modified NFC](http://d.hatena.ne.jp/NAOI/20100826)）を行っています。
 
 資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+
+### テンプレートを選択したときに，カーソルがくる場所は#INS#で指定することができますが，その次にカーソルが（Tabなど特定のキー操作で）飛ぶ場所を指定することはできませんか？ {#c75a4dba}
+
+Ctl-Cmd-F で移動できます．
+
+例えば，コマンド補完機能で，
+
+```
+\begin{itemize}
+\item
+•
+\end{itemize}•
+```
+
+を入力したのち，1つ目の • を編集したら，Ctl-Cmd-F で2つ目の • に移動できます．
 
 ## Tips {#t1ac1a97}
 
