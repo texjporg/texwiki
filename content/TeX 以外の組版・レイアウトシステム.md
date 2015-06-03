@@ -25,7 +25,7 @@ Apache FOPは、XSL-FOの処理系で、Apache XML Graphics プロジェクト�
 
 #### インストールと実行 {#w1d759d9}
 
-まずは Java 実行環境が必要です。Java の準備が整ったら、[ダウンロードページ](http://xmlgraphics.apache.org/fop/download.html)から辿れるミラーサイトから、最新のものをダウンロードします。
+まずは Java 実行環境が必要です。Java の準備が整ったら、[ダウンロードページ](http://xmlgraphics.apache.org/fop/download.html)から辿れるミラーサイトより、最新のものをダウンロードします。
 
 とりあえず試すには、ダウンロードしたバイナリのアーカイブを展開し、展開したディレクトリに移動します。そして例えば、
 
@@ -43,7 +43,7 @@ Apache FOPは、XSL-FOの処理系で、Apache XML Graphics プロジェクト�
 
 ```
    if [ "$OS" = "Windows_NT" ] ; then
-     if [ -z "$MSYSTEM" -o "$MSYSTEM" != MINGW32 ] ; then
+     if [ -z "$MSYSTEM" -o "$MSYSTEM" != "MINGW32" ] ; then
          pathSepChar=";"
      else
          pathSepChar=":"
@@ -81,11 +81,11 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 
 の中身が参考になるでしょう。
 
-#### 利点と問題点や制限・欠点 {#l80a7ea9}
+#### 利点と制限・欠点 {#l80a7ea9}
 
 利点は
 
-- 入力形式である XSL-FO は標準化団体 W3C により開発され勧告として公表されています。
+- 入力形式である XSL-FO は [XSL](http://www.w3.org/Style/XSL/) の仕様の一部として、標準化団体 W3C により開発され勧告として公表されています。
 - SVG への対応。WEB 標準技術である SVG への高水準での対応は魅力的です。
 
 欠点等は
@@ -126,7 +126,7 @@ Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独
 - XSL スタイルシートを用いずに直接 XML から PDF を生成できる。
 - グリッド上でのタイプセット。
 
-などがあります。作者の Simon Cozens は[Perl で TeX の Kunth-Plass アルゴリズムを実装する](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/)など、TeX に強い影響を受けているようです。[マニュアル](http://www.sile-typesetter.org/images/sile-0.9.1.pdf)を読む限りでは、TeX のアルゴリズムを Lua へ移植したといった様相で、本格的なものです。また、Harfbuzz と [Fontconfig](/Fontconfig/) を組み合わせたフォント対応で、TeX のようなフォント関連の煩わしさがあまりありません。
+などがあります。作者の Simon Cozens は[Perl で TeX の Kunth-Plass アルゴリズムを実装する](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/)など、TeX に強い影響を受けているようです。[マニュアル](http://www.sile-typesetter.org/images/sile-0.9.1.pdf)を読む限りでは、TeX のアルゴリズムを Lua へ移植したといった様相で、本格的なものです。また、[Fontconfig](/Fontconfig/) を介したフォントアクセスで、TeX のようなフォント関連の煩わしさがあまりありません。
 
 ### [Vivliostyle プロジェクト](http://vivliostyle.co.jp/project/) {#v10e66b1}
 
