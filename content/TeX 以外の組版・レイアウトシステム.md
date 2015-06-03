@@ -17,9 +17,9 @@ TeX 以外の組版・レイアウトシステムについて紹介します。
 
 ## オープンソース {#s9837f3b}
 
-### [Apache FOP](https://xmlgraphics.apache.org/fop/) {#z9bf216b}
+### [Apache FOP](http://xmlgraphics.apache.org/fop/) {#z9bf216b}
 
-Apache FOPは、XSL-FOの処理系で、Apache XML Graphics プロジェクトにより開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
+Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト](http://xmlgraphics.apache.org/)により開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
 
 2015年6月の段階では Version 2.0 のリリースノートがありますが、その配布物はバイナリもソースもないようです。実質 1.1 が最新のリリースとなっています。
 
@@ -106,6 +106,10 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 > Apache™ FOP uses Liang's hyphenation algorithm, well known from TeX.
 
 ということのようです。
+
+### [GNU troff](http://www.gnu.org/software/groff/) {#s340bffc}
+
+Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
 
 ### [Patoline](http://patoline.org/) {#vdc178df}
 
