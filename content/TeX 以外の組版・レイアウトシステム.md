@@ -111,6 +111,20 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 
 Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
 
+### [The Heirloom Documentation Tools](http://heirloom.sourceforge.net/doctools.html) {#tf77c997}
+
+こちらも troff です。OpenSolaris 版の troff をもとにしています。Gunnar Ritter により開発されています。C 言語による実装です。
+
+特徴として、
+
+- PostScript Type 1、OpenType、TrueType フォントが使えます。
+- パラグラフの整形には Knuth-Plass アルゴリズムの変種を用い、パラグラフ全体に対し調整を行います。グリフ幅、文字間スペース、単語間スペースの調整などの microtypography 拡張を含みます。
+- ペア・カーニングやトラッキングのサポート。
+- ぶら下げ組み（Hanging characters）対応。
+- 国際化対応したハイフネーション。TeX の Liang アルゴリズムをもとに開発され、OpenOffice で用いられる　Raph Levien の LibHnj を用います。
+
+などがあります。PostScritp 出力が可能です。
+
 ### [Patoline](http://patoline.org/) {#vdc178df}
 
 主に OCaml で書かれた組版システムです。LaTeX 風の独自入力フォーマットで PDF など様々なフォーマットで出力します。
