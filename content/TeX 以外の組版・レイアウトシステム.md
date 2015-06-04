@@ -9,7 +9,7 @@ pukiwiki: "TeX 以外の組版・レイアウトシステム"
 
 ## TeX 以外の組版・レイアウトシステム {#l0ceef78}
 
-TeX 以外の組版・レイアウトシステムについて紹介します。TeX との比較対象となる条件として、禁則処理は当然ながら、一行ごとではない、パラグラフ全体を考慮した改行位置の最適化、パターンマッチングによるハイフネーション処理、自動化されたリガチャ・カーニング処理などが挙げられます。
+TeX 以外の組版・レイアウトシステムについて紹介します。TeX との比較対象となる条件として、禁則処理は当然ながら、パラグラフ全体を考慮した改行位置の最適化、ハイフネーション、リガチャ・カーニング処理などが挙げられます。
 
 ***
 
@@ -146,10 +146,120 @@ Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独
 
 などがあります。作者の Simon Cozens は[Perl で TeX の Kunth-Plass アルゴリズムを実装する](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/)など、TeX に強い影響を受けているようです。[マニュアル](http://www.sile-typesetter.org/images/sile-0.9.1.pdf)を読む限りでは、TeX のアルゴリズムを Lua へ移植したといった様相で、本格的なものです。また、[Fontconfig](/Fontconfig/) を介したフォントアクセスで、TeX のようなフォント関連の煩わしさがあまりありません。
 
+#### インストール（MinGW32） {#r5f11a5c}
+
+Linux や Mac へのインストールはパッケージ管理システムを使って依存ライブラリを整えて行けば、それほど苦労はしないでしょう。
+
+ここでは Windows、特に MinGW32 環境へのインストールの概要を解説します。
+
+#### 依存ライブラリ {#g916e4d4}
+
+SILE 自身は OpenType フォントサポートに [HarfBuzz](http://www.freedesktop.org/wiki/Software/HarfBuzz/) に依存しており、これはまた様々なライブラリに依存しています。また、フォント・アクセスに [Fontconfig](/Fontconfig/) を用います。SILE は XML 形式の入力を処理するために [Expat XML Parser](http://www.libexpat.org/) を利用します。これらは [GTK+の配布サイト](http://www.gtk.org/download/win32.php) からある程度そろえることができます。HarfBuzz や SILE をビルドするには Run-Time に加えて Dev パッケージも必要です。SILE の PDF 出力部は C言語で書かれており、libpng や zlib に依存するのでこれらも必要です。
+
+必要な DLL がなくてプログラムがうまく起動しない場合は、
+
+```
+    objdump -p /usr/local/bin/libharfbuzz-0.dll | grep DLL
+```
+
+などで調べて、必要とされる DLL を探しましょう。
+
+依存ライブラリの整備ができたら Lua の整備です。
+
+#### Lua と LuaRocks {#m4791203}
+
+MinGW32 環境では、Lua を mingw-get で入れるのが簡単です。
+
+```
+   mingw-get install mingw32-lua
+```
+
+Lua のパッケージ・マネージャ [LuaRocks](http://luarocks.org/) を入れるには、まずWindows 向けのファイルを[ダウンロード](http://keplerproject.github.io/luarocks/releases/)し展開ます。その後、コマンド プロンプトを立ち上げ、展開したフォルダに移動し、インストールします。例えば、Lua 5.2 で C:\Lua\5.2\LuaRocks にインストールするには、
+
+```
+   install /P C:\Lua\5.2\LuaRocks /MW /LV 5.2 /TREE C:\Lua\5.2\LuaRocks
+```
+
+とします。インストール後に出る PATH の設定の指示に従って下さい。
+
+Lua と LuaRocks がインストールできたら、いくつかの Lua パッケージを入れます。
+
+```
+   luarocks install lpeg
+   luarocks install luaexpat EXPAT_DIR=C:\MinGW\msys\1.0\local
+```
+
+コマンド プロンプトから（mintty などではなく）実行します。
+
+ここまでできてようやく SILE に移ります。
+
+#### SILE のインストール {#lc82b54b}
+
+SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](http://github.com/simoncozens/sile/releases/tag/v0.9.2) から sile-0.9.2.zip を取ってきます。展開したのち、configure スクリプトを実行しましょう。環境変数 CFLAGS や LDFLAGS を設定する必要があるかもしれません。また、注意点として、C:\MinGW\msys\1.0 を /usr にマウントしており、/usr/local 以下にインストールする場合は、
+
+```
+   ./configure --prefix=/MinGW/msys/1.0/local
+```
+
+のようにする必要があります。0.9.2 では、libtexpdf のソースに以下の修正を加える必要があります。
+
+```
+   --- libtexpdf.h.orig    2015-06-05 01:13:10 +0900
+   +++ libtexpdf.h 2015-06-05 01:13:23 +0900
+   @@ -100,10 +100,5 @@
+    #include "type1.h"
+    #include "type1c.h"
+    #include "unicode.h"
+   -#ifdef __MINGW32__
+   -#define off_t off64_t
+   -#define ftello ftello64
+   -#define fseeko fseeko64
+   -#endif
+```
+
+```
+    #endif
+   --- mfileio.h.orig      2015-06-05 01:15:49 +0900
+   +++ mfileio.h   2015-06-05 01:13:38 +0900
+   @@ -52,6 +52,11 @@
+```
+
+```
+    extern long file_size (FILE *file);
+```
+
+```
+   +#ifdef __MINGW32__
+   +#define off_t off64_t
+   +#define ftello ftello64
+   +#define fseeko fseeko64
+   +#endif
+    #define xseek_absolute(file, pos, name) fseeko (file, (off_t)(pos), SEEK_SET)
+    #define xseek_relative(file, pos, name) fseeko (file, (off_t)(pos), SEEK_CUR)
+    #define xseek_end(file, name) fseeko (file, (off_t)0, SEEK_END)
+```
+
+後は、
+
+```
+   make && make install
+```
+
+です。
+
+#### SILE の実行 {#pfce2046}
+
+とりあえず、配布物の examples 以下にあるファイルを処理してみましょう。
+
 ### [Vivliostyle プロジェクト](http://vivliostyle.co.jp/project/) {#v10e66b1}
 
 HTML+CSSベースの組版システムです。電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
 
+現在（2015年6月3日）、入手可能なのはアルファ版のみで、仕様や実装については情報が公開されていません。
+
+- [Vivliostyle.js](http://vivliostyle.github.io/vivliostyle.js/)
+- [Vivliostyle Chrome 拡張](https://chrome.google.com/webstore/detail/vivliostyle/ffeiildjegeigkbobbakjjmfeacadbne)
+
 ### [Weasy Print](http://weasyprint.org/) {#s618647b}
 
-WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウトと Cairo を用いた出力です。
+WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（+[Pyphen](http://pyphen.org/)モジュールによる自動ハイフネーション）と Cairo を用いた出力です。
