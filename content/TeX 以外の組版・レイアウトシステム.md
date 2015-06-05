@@ -97,6 +97,8 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 
 Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
 
+行分割処理は1行ごとに順次、行われます。
+
 ### [The Heirloom Documentation Tools](http://heirloom.sourceforge.net/doctools.html) {#tf77c997}
 
 こちらも troff です。OpenSolaris 版の troff をもとにしています。Gunnar Ritter により開発されています。C 言語による実装です。
@@ -250,4 +252,14 @@ HTML+CSSベースの組版システムです。電子出版の時代にマッチ
 
 ### [Weasy Print](http://weasyprint.org/) {#s618647b}
 
-WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（+[Pyphen](http://pyphen.org/)モジュールによる自動ハイフネーション）と Cairo を用いた出力です。
+WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（+[Pyphen](http://pyphen.org/)モジュールによるハイフネーション）と Cairo を用いた出力です。
+
+Pango と Cairo を用いることによる制約は大きいと思われます。
+
+### その他 {#u1d7757c}
+
+TeX のアルゴリズムの実装
+
+- [TEX LINE BREAKING ALGORITHM IN JAVASCRIPT](http://www.bramstein.com/projects/typeset/)
+    - [Crawdad](https://github.com/madriska/crawdad): Knuth-Plass linebreaking for Ruby
+    - [Text::KnuthPlass](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/lib/Text/KnuthPlass.pm) - Breaks paragraphs into lines using the TeX algorithm (Perl による実装)
