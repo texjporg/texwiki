@@ -57,7 +57,9 @@ Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト]
 
 実行時に設定ファイルを -c オプションで読み込ませることができます。設定ファイルのサンプルが conf/fop.xconf にあります。フォントの自動検出などの設定が含まれるので参考にしましょう。
 
-インストールは好きなディレクトリに展開した内容を移すだけです。場合によっては FOP_HOME などの環境変数を設定する必要が出てくるかもしれません。
+基本的に、インストールは好きなディレクトリに展開した内容を移すだけです。場合によっては FOP_HOME などの環境変数を設定する必要が出てくるかもしれません。
+
+ハイフネーション用のパターンファイルはライセンスの関係上、別途入手する必要があります。[FOP XML Hyphenation Patterns](http://offo.sourceforge.net/) のページからコンパイル済みバイナリ入りの配布物を取得し、fop-hyph.jar を lib 以下に投入します。
 
 #### 文書の作成 {#o64708aa}
 
@@ -68,6 +70,14 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 ```
 
 の中身が参考になるでしょう。
+
+また、Apache FOP には XSLT プロセッサが同梱されているため、他の XML 文書から XSL-FO へ変換しながら PDF 生成を行うことができます。例えば、DocBook を処理するには、[The DocBook Project](http://docbook.sourceforge.net/) から XSL スタイルシート群を取得し（最新の docbook-xsl-ns 配布物）、どこか（例えば docbook-xsl-ns）に展開します。そして、
+
+```
+   fop -xml input -xsl docbook-xsl-ns/fo/docbook.xsl -pdf output
+```
+
+のようにして処理します。
 
 #### 利点と制限・欠点 {#l80a7ea9}
 
@@ -81,7 +91,12 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 - 入力形式である XSL-FO は平易な解説資料に乏しいため、学習コストが高くなります。他の XML 形式から変換する場合もそれほど容易ではありません。XSL-FO の仕様そのものも、今後どうなるのか不透明なところがあります。
 - 国際化対応など、どの程度できているのか不明瞭です。縦組みなどは未対応な模様です。
 
+XSLT は TeX のマクロを代用するほどのプログラミング言語としての機能は備えていません。これを利点ととるか欠点ととるかは人によるかと思われます。複雑さと柔軟さのバランス的には微妙なところでしょうか。
+実際の運用としては、[AsciiDoc](http://www.methods.co.nz/asciidoc/) などで文書を作成し、バックエンドとして利用することになるでしょう。
+
 #### TeX との比較 {#k61aa916}
+
+様々なところで TeX への言及があります。
 
 - [Knuths Model](http://wiki.apache.org/xmlgraphics-fop/KnuthsModel)
 
@@ -97,7 +112,7 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 
 Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
 
-行分割処理は1行ごとに順次、行われます。
+行分割処理は1行ごとに逐次行われます。
 
 ### [The Heirloom Documentation Tools](http://heirloom.sourceforge.net/doctools.html) {#tf77c997}
 
@@ -113,6 +128,8 @@ Groff（GNU troff）はプレーンテキストに文書整形用コマンドを
 
 などがあります。PostScritp 出力が可能です。
 
+残念ながらここ数年、更新がありません。また、Unix 互換な環境でないと動かすのは難しいようです。
+
 ### [Patoline](http://patoline.org/) {#vdc178df}
 
 主に OCaml で書かれた組版システムです。LaTeX 風の独自入力フォーマットで PDF など様々なフォーマットで出力します。
@@ -123,7 +140,7 @@ Perl で実装された PDF 生成用のモジュールです。JIS X 4051 に�
 
 ### [SILE](http://www.sile-typesetter.org/) {#va3c00e3}
 
-Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独自の入力フォーマットと XML による入力で、PDF 出力です。Harfbuzz による OpenType レイアウト機能を備えており、日本語を含む様々な言語・用字系をサポートします。Lua により拡張可能です。
+Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独自の入力フォーマットと XML による入力で、PDF 出力です。HarfBuzz による OpenType レイアウト機能を備えており、日本語を含む様々な言語・用字系をサポートします。Lua により拡張可能です。
 
 特徴として、
 
@@ -134,7 +151,7 @@ Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独
 
 などがあります。作者の Simon Cozens は[Perl で TeX の Kunth-Plass アルゴリズムを実装する](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/)など、TeX に強い影響を受けているようです。[マニュアル](http://www.sile-typesetter.org/images/sile-0.9.1.pdf)を読む限りでは、TeX のアルゴリズムを Lua へ移植したといった様相で、本格的なものです。また、[Fontconfig](/Fontconfig/) を介したフォントアクセスで、TeX のようなフォント関連の煩わしさがあまりありません。
 
-現在、かなり活発に開発が行われています。
+現在、かなり活発に開発が行われており、縦組みや JIS X 4051 への対応なども取り組まれるようです。積極的にフィードバックされると良いでしょう。
 
 #### インストール（MinGW32） {#r5f11a5c}
 
@@ -241,20 +258,26 @@ SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](ht
 
 とりあえず、配布物の examples 以下にあるファイルを処理してみましょう。
 
+```
+   sile examples/simple.sil
+```
+
+のようにすると、examples/simple.pdf ができます。
+
 ### [Vivliostyle プロジェクト](http://vivliostyle.co.jp/project/) {#v10e66b1}
 
 HTML+CSSベースの組版システムです。電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
 
-現在（2015年6月3日）、入手可能なのはアルファ版のみで、仕様や実装については情報が公開されていません。
+現在（2015年6月3日）、入手可能なのはアルファ版のみです。
 
 - [Vivliostyle.js](http://vivliostyle.github.io/vivliostyle.js/)
 - [Vivliostyle Chrome 拡張](https://chrome.google.com/webstore/detail/vivliostyle/ffeiildjegeigkbobbakjjmfeacadbne)
 
 ### [Weasy Print](http://weasyprint.org/) {#s618647b}
 
-WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（+[Pyphen](http://pyphen.org/)モジュールによるハイフネーション）と Cairo を用いた出力です。
+WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（と[Pyphen](http://pyphen.org/)モジュールによるハイフネーション）と Cairo を用いた出力です。
 
-Pango と Cairo を用いることによる制約は大きいと思われます。
+Pango の高水準 API と Cairo を用いることによる制約は大きいと思われます。Pango のレイアウト機能は GUI におけるテキスト表示などには向いていますが、長文の組版に適しているわけではありません。また、Cairo の PDF 出力も、ハイパーリンクやしおりなどの機能はなく、WeasyPrint はポストプロセスとしてこれらを生成された PDF に追加しているようです。
 
 ### その他 {#u1d7757c}
 
@@ -263,3 +286,5 @@ TeX のアルゴリズムの実装
 - [TEX LINE BREAKING ALGORITHM IN JAVASCRIPT](http://www.bramstein.com/projects/typeset/)
     - [Crawdad](https://github.com/madriska/crawdad): Knuth-Plass linebreaking for Ruby
     - [Text::KnuthPlass](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/lib/Text/KnuthPlass.pm) - Breaks paragraphs into lines using the TeX algorithm (Perl による実装)
+
+などがあります。
