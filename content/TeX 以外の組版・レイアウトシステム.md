@@ -114,7 +114,7 @@ Groff（GNU troff）はプレーンテキストに文書整形用コマンドを
 
 行分割処理は1行ごとに逐次行われます。
 
-### [The Heirloom Documentation Tools](http://heirloom.sourceforge.net/doctools.html) {#tf77c997}
+### [The Heirloom Documentation Tools](http://n-t-roff.github.io/heirloom/doctools.html) {#tf77c997}
 
 こちらも troff です。OpenSolaris 版の troff をもとにしています。Gunnar Ritter により開発されています。C 言語による実装です。
 
@@ -128,7 +128,7 @@ Groff（GNU troff）はプレーンテキストに文書整形用コマンドを
 
 などがあります。PostScritp 出力が可能です。
 
-残念ながらここ数年、更新がありません。また、Unix 互換な環境でないと動かすのは難しいようです。
+Unix 互換な環境でないと動かすのは難しいようです。FreeBSD 11.0 では [GNU troff の代わりに Heirloom doctools の troff が同梱されるという話](https://www.mail-archive.com/freebsd-current@freebsd.org/msg160520.html)もあります。 
 
 ### [Patoline](http://patoline.org/) {#vdc178df}
 
