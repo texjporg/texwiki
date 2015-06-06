@@ -277,7 +277,24 @@ HTML+CSSベースの組版システムです。電子出版の時代にマッチ
 
 WeasyPrint は HTML+CSS から PDF や PNG を出力するレンダリング・エンジンです。その目的は出版向けのWeb標準技術をサポートすることにあります。Python などによる実装で、BSDライセンスで提供されています。Pango によるレイアウト（と[Pyphen](http://pyphen.org/)モジュールによるハイフネーション）と Cairo を用いた出力です。
 
-Pango の高水準 API と Cairo を用いることによる制約は大きいと思われます。Pango のレイアウト機能は GUI におけるテキスト表示などには向いていますが、長文の組版に適しているわけではありません。また、Cairo の PDF 出力も、ハイパーリンクやしおりなどの機能はなく、WeasyPrint はポストプロセスとしてこれらを生成された PDF に追加しているようです。
+Pango の高水準 API と Cairo を用いることによる制約はあるかと思われます。Pango のレイアウト機能は GUI におけるテキスト表示などには向いていますが、比較的長い文章の組版に適しているわけではないようです。また、Cairo の PDF 出力も、ハイパーリンクやしおりなどの機能はなく、WeasyPrint はポストプロセスとしてこれらを生成された PDF に付加しています。
+
+Python 3.x/Windows で WeasyPrint 0.23 を動かすには
+
+```
+   lib/site-packages/weasyprint/urls.py
+```
+
+の 85-86 行目の
+
+```
+   if isinstance(path, unicode):
+       path = path.encode(FILESYSTEM_ENCODING)
+```
+
+をコメントアウトする必要があるようです。
+
+日本語の利用に関しては、表示等はできますが、禁則処理ができていなかったり、中国語フォントが選択されてしまったりと、色々と難しいところがあります。
 
 ### その他 {#u1d7757c}
 
