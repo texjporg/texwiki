@@ -23,7 +23,7 @@ TeX あるいは LaTeX におけるフォントの利用については、なか
 
 このことは、例えば LaTeX で TrueType や PostScript などのフォントを利用する際に、かなりの手間と不思議なファイル群の導入や各種設定の必要性をもたらします。LaTeX で PostScript Type1 フォントを利用して出力を得る際のおおまかな流れは、
 
-1. フォントファイルから組版に必要な情報を抽出する。（TFM ファイルや .enc ファイルの生成）
+1. フォントファイルから組版に必要な情報を抽出する。（TFM ファイルの生成）
 1. 上記で抽出した情報に、ある一定の規則でアクセスする設定を行う。（.fd ファイルの作成）<br>
     フォントファミリとエンコーディングやフォント属性のセットを指定することでフォント情報にアクセスできるようにします。
 
@@ -39,7 +39,7 @@ Computer Modern に飽きたら本文用フォントを変えてみましょう�
 
 ### [Latin Modern](http://www.gust.org.pl/projects/e-foundry/latin-modern) {#h96ac87b}
 
-ポーランドの TeX Users Group、[GUST](http://www.gust.org.pl/) で開発された、数式用を含む、広範な文字集合をサポートするフォントセットです。[Latin Modern](</Latin Modern/>) のページを参照してください。Bogusław “Jacko” Jackowski と Janusz M. Nowacki　による設計です。ラテン文字をサポートします。ベトナム語でも利用可能です。
+ポーランドの TeX Users Group、[GUST](http://www.gust.org.pl/) で開発された、数式用を含む、広範な文字集合をサポートするフォントセットです。[Latin Modern](</Latin Modern/>) のページを参照してください。Bogusław “Jacko” Jackowski と Janusz M. Nowacki　による設計です。ラテン文字をサポートします。ベトナム語でも利用可能です。Computer Modern を元にしています。
 
 ### [EB Garamond](http://www.georgduffner.at/ebgaramond/) {#tdbd7142}
 
@@ -119,6 +119,123 @@ CTAN ページ
 
 ソースコード表示用に使える Source Code Pro があります。
 
+### TeX Gyre {#j1c0b3cd}
+
+[TeX Gyre](</TeX Gyre/>) フォント群は，Times や Helvetica などの Adobe 基本 35 書体に対応する，高品質でオープンなフォントです。PostScript Type 1 形式と OpenType 形式で配布されています。
+
+|  TeX Gyre 名  |  元となった Adobe フォント  |  使用法  |
+|---|---|---|
+|  Adventor  |  Avant Garde  |  \usepackage{adventor}  |
+|  Bonum  |  Bookman  |  \usepackage{bonum}  |
+|  Chorus  |  Zapf Chancery  |  \usepackage{chorus}  |
+|  Cursor  |  Courier  |  \usepackage{cursor}  |
+|  Heros  |  Helvetica  |  \usepackage{heros}  |
+|  Pagella  |  Palatino  |  \usepackage{pagella}  |
+|  Schola  |  Century Schoolbook  |  \usepackage{schola}  |
+|  Termes  |  Times (new) Roman  |  \usepackage{termes}  |
+
+TeX Gyre フォントを上記のパッケージを利用して設定すると，日本語の太字が効かなくなってしまいますので，プリアンブルに以下を追加します。
+
+```
+\renewcommand{\bfdefault}{bx}
+```
+
+## フォントを変えてみる（日本語フォント） {#q1b5e62f}
+
+TeX (LaTeX) が登場した当時は，日本語フォントは「本文用明朝体」「見出し（強調）用ゴシック体」の2種類だけを利用するようになっていて，どの書体を使用するかは印刷時のソフトの設定次第でしたが，近年は PDF に書体を埋め込むことが推奨され，TeX 文書作成段階で書体を設定することが望ましくなりました。
+
+最新の TeX Live / W32TeX では，TeX と共に配布されている IPAex/IPA フォントの他，ヒラギノ，MS，小塚，モリサワ，游明朝・游ゴシックが簡便に指定できるようになっています。[OTF](/OTF/) パッケージを利用すると，5書体以上の多書体化もできます。
+
+（ヒラギノは，Mac (OS X) では OS に付属していますが，Windows で利用する場合は別途購入する必要があります。）
+
+### PDF 作成の都度，フォントを指定する方法 {#jcd55296}
+
+dvipdfmx を使用して IPAex を埋め込んだ PDF を作成するには以下のようにします。
+
+- W32TeX では
+
+    ```
+    dvipdfmx -f ipaex.map dviname
+    ```
+
+- TeX Live（MacTeX）では
+
+    ```
+    $ ptex2pdf -e -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex （pLaTeX 用）
+    $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex （upLaTeX 用）
+    ```
+
+### PDF に埋め込むフォントをあらかじめ設定する {#ge692ee0}
+
+- TeX Live (MacTeX) では，ターミナルから kanji-config-updmap-sys で設定できます。
+
+    ```
+    $ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
+    $ sudo kanji-config-updmap-sys auto        （自動的に <fontname> のいずれかを埋め込む）
+    $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込まない）
+    $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
+    ```
+
+自動的に埋め込み設定できるフォント &lt;fontname> は次のものです．
+
+```
+hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-osx
+```
+
+#### Mac (OS X) の場合に必要な事前準備 {#oabbd72a}
+
+[TeX Live/Mac](</TeX Live/Mac/#i9febc9b>) を参照
+
+### OTF の設定（TeX 文書のプリアンブルにて設定） {#xad9bd71}
+
+```
+\usepackage[オプション]{otf}
+```
+
+主なオプションの設定
+
+jis2004
+: ヒラギノのNシリーズ（JIS X 0213:2004に対応した字形）を利用
+
+deluxe
+: 明朝2ウェイト，ゴシック2ウェイト，丸ゴシックが使えます。（プロポーショナル仮名，ヒラギノ明朝W2，ヒラギノゴシックW8も使えます。）
+
+expert
+: 仮名が縦組専用，または横組専用のものに
+
+uplatex
+: 組版に upLaTeX を用いる場合は必須
+
+### その他のフォントの利用 {#m12273b7}
+
+[みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
+設定は，多少面倒です。
+[PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
+自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
+
+## フォントを変えてみる（数式フォント） {#k266362f}
+
+各種パッケージを用いて，数式部分に用いるフォントを変えることができます。（いくつかのフォントを比較したものが[こちら](http://perikanfan.web.fc2.com/tex.html)にあります。）
+
+```
+\usepackage{newtx}
+```
+
+などとするだけで数式フォントを変えられます。
+
+- [newtx](/newtx/)　newtx, newtxtt, newpx, boondox, fontaxes
+
+<table><tbody>
+<tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newtx.html">newtx の見本</a></td></tr>
+<tr><td>newpx</td><td>Palatino を元にした pxfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newpx.html">newpx の見本</a></td></tr>
+</tbody></table>
+
+- [Mathptmx](/Mathptmx/)　本文，数式をともに Times に変えます。
+- [mathabx](/mathabx/)　Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
+- [yhmath](/yhmath/)　通常より大きいものまで含まれた根号や括弧などのフォントです。
+- ceo.sty 　安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
+- euler　Zapf が作成し，Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
+
 ## フォント関連ファイル {#tf6d4ac5}
 
 ここでは主に LaTeX で文書を作成する際に必要となってくるフォント関連ファイルについて、基礎的な事柄を解説します。
@@ -143,11 +260,23 @@ TFM は組版を行うのに必要な、フォントに関する情報が納め�
 
 ### Font Definition (.fd) {#nf0707eb}
 
+LaTeX でフォントを使う際は、通常、フォントは属性の組で指定されます。例えば、cmr というファミリのメディアムウェイト・イタリック体を 10 pt のサイズで、エンコーディングは OT1、など。
+Font definition ファイルの役割は、この属性の組で指定されたフォントを、TFM ファイルに結びつける事です。前述の例を cmti10 に結びつけるには、
+
+```
+   \DeclareFontShape{OT1}{cmr}{m}{it}{<10>cmti10}{}
+```
+
+のように宣言します。
+
 ### エンコーディング (.enc) {#sbeca79b}
 
 ### Virtual Font (VF) {#l1b2c44d}
 
 ### フォントマップ {#tde4074f}
+
+フォントマップ .map は、TFM ファイルと元のフォントファイルとの対応を記したファイルです。
+PDF や PostScript などの最終的な出力を得る段階になって、必要とされます。
 
 ## CTAN にないフォントを利用する {#z14d6053}
 
