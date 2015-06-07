@@ -9,7 +9,7 @@ pukiwiki: "TeXとフォント"
 
 ## TeX とフォント {#se78b0cf}
 
-TeX におけるフォントの基礎知識や、LaTeXをはじめとしたシステム上でのフォントの利用等についての情報を提供します。
+TeX におけるフォントの基礎知識や、LaTeX をはじめとしたシステム上でのフォントの利用等についての情報を提供します。
 
 ***
 
@@ -19,19 +19,19 @@ TeX におけるフォントの基礎知識や、LaTeXをはじめとしたシ�
 
 TeX あるいは LaTeX におけるフォントの利用については、なかなか思うようにいかなかったり、使いたいフォントがあってもどうしたらよいのか分からなかったりして、困った経験がある方も多いと思われます。
 
-これは TeX におけるフォントの利用が、TeX が WYSIWYG でないために、あまり直接的・直観的に把握するのが困難であったり、見通しの良いものではないことに起因します。TeX は一般に、ユーザが接する「フォント」そのものについては利用しません。そこから抽出した情報の一部を利用するのみです。TeX の仕事はページ上に文字を綺麗に並べることですが、その仕事には具体的な文字（グリフ）の形を知る必要はなく、文字のだいたいの大きさなどを知るのみで十分だからです。
+これは TeX におけるフォントの利用が、TeX が WYSIWYG でないために、あまり直接的・直観的に把握するのが困難であったり、見通しの良いものではないことに起因します。TeX は一般に、ユーザが接する「フォント」そのものについては利用しません。そこから抽出した情報の一部を利用するのみです。TeX の仕事はページ上に文字を綺麗に並べることですが、その仕事には具体的な文字（グリフ）の形を知る必要はなく、文字のだいたいの大きさなどを知るのみで十分だからです。また、TeX の登場以降に広く普及することとなった、TrueType や PostScript フォントを直接、簡単に扱える枠組みを整えるといったことは、TeX のそのものに対する拡張としては行われませんでした。
 
-このことは、例えば LaTeX で TrueType や PostScritp などのフォントを利用する際に、かなりの手間と不思議なファイル群の導入や各種設定の必要性をもたらします。LaTeX で PostScript Type1 フォントを利用して出力を得る際のおおまかな流れは、
+このことは、例えば LaTeX で TrueType や PostScript などのフォントを利用する際に、かなりの手間と不思議なファイル群の導入や各種設定の必要性をもたらします。LaTeX で PostScript Type1 フォントを利用して出力を得る際のおおまかな流れは、
 
-1. フォントファイルから組版に必要な情報を抽出する。（TFMファイルや .enc ファイルの生成）
+1. フォントファイルから組版に必要な情報を抽出する。（TFM ファイルや .enc ファイルの生成）
 1. 上記で抽出した情報に、ある一定の規則でアクセスする設定を行う。（.fd ファイルの作成）<br>
     フォントファミリとエンコーディングやフォント属性のセットを指定することでフォント情報にアクセスできるようにします。
 
-1. フォント情報と実際のフォントファイルとの対応付けを行う。(.mapファイルの編集）
+1. フォント情報と実際のフォントファイルとの対応付けを行う。（.mapファイルの編集）
 
 といった感じです。これらの面倒な作業を行う自信がなければ、[CTAN](/CTAN/) からパッケージが入手できないかまず考えましょう。なければ諦めます。
 
-フォント設定の煩わしさを少しでも軽減したければ、XeLaTeX や LuaLaTeX への移行を考えましょう。
+フォント設定の煩わしさを少しでも軽減したければ、[XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) への移行を考えましょう。
 
 ## フォントを変えてみる（欧文フォント） {#wb9a55f8}
 
@@ -45,15 +45,14 @@ Computer Modern に飽きたら本文用フォントを変えてみましょう�
 
 Georg Duffner　によるフォントです。デザインは Claude Garamond による有名な書体が元になっています。Garamond 系のフォントに関しては [Adobe](https://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-JP&event=displayFontPackage&code=1703) をはじめとして様々なフォントベンダで作成されています。いわゆるオールド・スタイル・セリフに分類されます。利用可能な文字集合として、ラテン文字・ギリシャ文字・キリル文字があります。標準的な各種リガチャに加え、st や ct などのリガチャもあり、スモールキャップ・オールドスタイル数字もサポートします。いくつかのオプティカルサイズが用意されています。
 
-TeXLive では tlmgr からインストール可能ですのでそれを利用しましょう。CTAN のページは
+TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそれを利用しましょう。
+インストールしたら、ターミナルから　Map ファイルを有効にし、
 
-- [http://www.ctan.org/tex-archive/fonts/ebgaramond](http://www.ctan.org/tex-archive/fonts/ebgaramond)
+```
+   updmap-sys --enable Map=EBGaramond.map
+```
 
-Google Fonts のページ
-
-- [http://www.google.com/fonts/specimen/EB+Garamond](http://www.google.com/fonts/specimen/EB+Garamond)
-
-インストールしたらあとは
+あとは、LaTeX ソースで
 
 ```
    \usepackage{ebgaramond}
@@ -73,6 +72,14 @@ Google Fonts のページ
 
 があります。上付き・下付き数字（\textsu{}、\textinf{}）、スワッシュ・イタリック（\textsw{}）やいくつかの文字に関しては装飾付のものがあります（\textin{}）。数式用はありません。
 
+CTAN のページは
+
+- [http://www.ctan.org/tex-archive/fonts/ebgaramond](http://www.ctan.org/tex-archive/fonts/ebgaramond)
+
+Google Fonts のページ
+
+- [http://www.google.com/fonts/specimen/EB+Garamond](http://www.google.com/fonts/specimen/EB+Garamond)
+
 ### [Libre Baskerville](http://www.impallari.com/projects/overview/libre-baskerville) {#bd51fe97}
 
 トラディショナルに分類されるフォントです。Libre Baskerville は Baskerville の活字をもとにしたフォントで、webfont としての利用を想定して設計されています。
@@ -82,7 +89,13 @@ CTAN および Google Fonts のページは
 - [https://www.ctan.org/tex-archive/fonts/librebaskerville](https://www.ctan.org/tex-archive/fonts/librebaskerville)
 - [https://www.google.com/fonts/specimen/Libre+Baskerville](https://www.google.com/fonts/specimen/Libre+Baskerville)
 
-です。サポートする文字集合はラテン文字です。ボールドとイタリックも利用可能です。インストールしたのち、
+です。サポートする文字集合はラテン文字です。ボールドとイタリックも利用可能です。インストールしたのち、ターミナルから Map ファイルを有効にし
+
+```
+    updmap-sys --enable Map=LibreBaskerville.map
+```
+
+LaTeX ソースで
 
 ```
    \usepackage{librebaskerville}
@@ -90,10 +103,26 @@ CTAN および Google Fonts のページは
 
 しましょう。数式用はありません。
 
+### Adobe Source ファミリ {#g85c2bee}
+
+Adobe によるオープンソース書体です。Source Serif Pro、Source Sans Pro、Source Code Pro とあり、豊富なウェイトと機能を揃えています。Source Serif Proは、トランジショナルに分類されるセリフ書体です。Serif、Sans と Code はお互いによく調和するようにデザインされてあります。
+
+tlmgr から入れましょう。
+
+プロジェクトページへは
+
+- GitHub の [Adobe Fonts](http://github.com/adobe-fonts) ページから
+
+CTAN ページ
+
+- [Source Serif Pro](http://www.ctan.org/tex-archive/fonts/sourceserifpro)、[Source Sans Pro](http://www.ctan.org/tex-archive/fonts/sourcesanspro)、[Source Code Pro](http://www.ctan.org/tex-archive/fonts/sourcecodepro/)
+
+ソースコード表示用に使える Source Code Pro があります。
+
 ## CTAN にないフォントを利用する {#z14d6053}
 
 ### TFM ファイルの生成 {#r85aade4}
 
 ### Font Definition (.fd) ファイル {#d5a8cb68}
 
-### Map　ファイルの編集 {#ja3c2d3b}
+### Map ファイルの編集 {#ja3c2d3b}
