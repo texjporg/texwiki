@@ -29,7 +29,7 @@ TeX あるいは LaTeX におけるフォントの利用については、なか
 
 1. フォント情報と実際のフォントファイルとの対応付けを行う。（.mapファイルの編集）
 
-といった感じです。使いたいフォントがあったら、[CTAN](/CTAN/) からパッケージが入手できないかまず考えましょう。
+といった感じです。
 
 フォント設定の煩わしさを少しでも軽減したければ、[XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) への移行を考えましょう。
 
@@ -250,7 +250,7 @@ TFM は組版を行うのに必要な、フォントに関する情報が納め�
 1. 特定の文字と文字の組み合わせが起きた時の動作の指定（リガチャとカーニング）
 1. 単語間スペースやアクセントの配置に関するパラメータなど
 
-です。TeX の役割はある決まった大きさの領域に、文字という「箱」を詰め込んでいくことですが、それを行う際に基礎となる情報が文字サイズに関する情報です。リガチャとカーニングは連続した2つの文字に関する微調整です。
+TeX の役割はある決まった大きさの領域に、文字という「箱」を詰め込んでいくことですが、それを行う際に基礎となる情報が文字サイズに関する情報です。リガチャとカーニングは連続した2つの文字に関する微調整です。
 
 詳しい解説については
 
@@ -267,21 +267,111 @@ Font definition ファイルの役割は、この属性の組で指定された�
    \DeclareFontShape{OT1}{cmr}{m}{it}{<10>cmti10}{}
 ```
 
-のように宣言します。
+のような宣言となります。
 
-### エンコーディング (.enc) {#sbeca79b}
-
-### Virtual Font (VF) {#l1b2c44d}
+.fd ファイルはこのような宣言の集りです。通常、それぞれのエンコーディングとファミリの組ごとに用意されます。例えば、T1 エンコーディングの Latin Modern Roman ファミリでは、t1lmr.fd に様々な定義があります。
 
 ### フォントマップ {#tde4074f}
 
 フォントマップ .map は、TFM ファイルと元のフォントファイルとの対応を記したファイルです。
-PDF や PostScript などの最終的な出力を得る段階になって、必要とされます。
+PDF や PostScript などの最終的な出力を得る段階になって必要とされます。出力ドライバは、TeX が組版に用いた TFM が、実際にはどのフォントに対応しているのか知る必要があります。このファイルの書式はドライバごとに異なりますが、基本的な部分は同じです。
 
 ## CTAN にないフォントを利用する {#z14d6053}
 
+LaTeX におけるフォントの基礎をおさえたら、実際にフォントを LaTeX で使えるようにしてみましょう。
+ここでは OpenType フォントに絞って話を進めます。実例として、Microsoft Windows に入っている Constantia を使います。これは TrueType 系統の OpenType フォントです。
+
+```
+   C:\Windows\Fonts\
+```
+
+にある
+
+```
+   constan.ttf constanb.ttf constani.ttf constanz.ttf
+```
+
+がそれです。作業用フォルダを作り、とりあえずコピーしてきましょう。
+
+### ツールのインストール {#qb371a3e}
+
+LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。
+
+LCDF Typetools のインストールができたら、とりあえず付属の otfinfo でフォント情報を見てみましょう。
+
+```
+   otfinfo -i constan.ttf
+```
+
+でフォントの情報が表示されます。どのような OpenType 機能が利用可能か見てみましょう。
+
+```
+   otfinfo -f constan.ttf
+```
+
+"kern" や "liga" などの基本的なもの、"onum"、"lnum"、"pnum"、"tnum"　など数字や "smcp"（スモールキャップ）、その他色々な機能があることがわかります。
+
+それでは実際に LaTeX で使えるようにしてみましょう。
+
 ### TFM ファイルの生成 {#r85aade4}
+
+まずは OT1 エンコーディング(-e 7t オプションでこれを指定しています）で試してみましょう。
+
+```
+   otftotfm --no-type1 -e 7t -fkern -fliga constan.ttf -n constan > constan.map
+```
+
+オプションの詳細についてはヘルプを参照してください。これで TFM ファイル constan.tfm　と .enc ファイルやマップファイル constan.map が生成されるはずです。[testfont](/testfont/) で実際使えることを確認しましょう。
+
+```
+   tex testfont
+```
+
+生成された DVI ファイルを処理するには
+
+```
+   dvipdfmx -f constan.map testfont
+```
+
+などとします。（いくらか警告が出て、いくつかの文字が欠落します。対処法については後述）
+
+続けて イタリックも処理します。
+
+```
+   otftotfm --no-type1 -e 7t -fkern -fliga constani.ttf -n constani >> constan.map
+```
+
+そのほか、ボールドやボールドイタリックも処理します。スモールキャップも使いたければ、
+
+```
+   otftotfm --no-type1 -e 7t -fkern -fliga -fsmcp constan.ttf -n constan-sc >> constan.map
+```
+
+のようにします。
 
 ### Font Definition (.fd) ファイル {#d5a8cb68}
 
-### Map ファイルの編集 {#ja3c2d3b}
+Font Definition ファイル、ot1constan.fd を作ります。とりあえず、最低限のものとして、
+
+```
+   \ProvidesFile{ot1constan.fd}
+       [2015/06/08 font definitions for OT1/constan.]
+   \DeclareFontFamily{OT1}{constan}{}
+   \DeclareFontShape{OT1}{constan}{m}{n}{<->constan}{}
+   \DeclareFontShape{OT1}{constan}{m}{it}{<->constani}{}
+   \DeclareFontShape{OT1}{constan}{b}{n}{<->constanb}{}
+   \DeclareFontShape{OT1}{constan}{b}{it}{<->constanz}{}
+   \endinput
+```
+
+と書き込みましょう。LaTeX ソースで
+
+```
+   \fontfamily{constan}\selectfont
+```
+
+とすることで Constantia が使えるようになっているはずです。
+
+### マップファイル {#ja3c2d3b}
+
+マップファイル constan.map がすでに生成されているはずです。
