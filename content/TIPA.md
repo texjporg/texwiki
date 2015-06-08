@@ -9,15 +9,20 @@ pukiwiki: "TIPA"
 
 ## TIPA {#z57e2958}
 
-<strong>目次</strong>
-
-- [http://www.ctan.org/pkg/tipa](http://www.ctan.org/pkg/tipa)
-
 [TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)
 は[東京大学](http://www.u-tokyo.ac.jp/)の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた
 IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
+
+- [http://www.ctan.org/pkg/tipa](http://www.ctan.org/pkg/tipa)
+
 TIPA の T は <strong>T</strong>eX または <strong>T</strong>okyo（東京大学？）を意味するとのことです．
 同じ福井さんが製作に携わった TSIPA をベースに，大幅に機能およびフォントデザインを改良したものです．
+
+***
+
+***
+
+### 収録文字について {#o829cff1}
 
 TIPA のフォントには IPA の記号のほか，アメリカの音声学，インド・ヨーロッパ言語，東アジアの言語学などで使用される音声記号が含まれています．
 これらは Computer Modern をベースに設計されており，Roman，Slanted，Bold Extended，Sans Serif，Typewriter 体など豊富な種類が使用できます（Italic 体はありません）．
@@ -128,7 +133,7 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 [CTAN:fonts/tipa/tipaman.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/tipa/tipaman.pdf)
 をご参照ください．
 
-## 関連リンク {#vd0297b3}
+### 関連リンク {#vd0297b3}
 
 - [コンピューターの部屋 TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
     @ 東京大学大学院 人文社会系研究科 韓国朝鮮文化研究専攻）
