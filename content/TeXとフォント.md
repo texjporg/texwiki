@@ -29,7 +29,7 @@ TeX あるいは LaTeX におけるフォントの利用については、なか
 
 1. フォント情報と実際のフォントファイルとの対応付けを行う。（.mapファイルの編集）
 
-といった感じです。
+といった感じです。今ではこれらの作業を行う便利なツールがありますが、それでもなれない人にとっては未だ大変な作業で、うまくいかないこともあるでしょう。何か使ってみたいフォントがあったら、とにかく[CTAN](/CTAN/) をあたって既にパッケージが用意されていないか調べましょう。
 
 フォント設定の煩わしさを少しでも軽減したければ、[XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) への移行を考えましょう。
 
@@ -250,7 +250,7 @@ TFM は組版を行うのに必要な、フォントに関する情報が納め�
 1. 特定の文字と文字の組み合わせが起きた時の動作の指定（リガチャとカーニング）
 1. 単語間スペースやアクセントの配置に関するパラメータなど
 
-TeX の役割はある決まった大きさの領域に、文字という「箱」を詰め込んでいくことですが、それを行う際に基礎となる情報が文字サイズに関する情報です。リガチャとカーニングは連続した2つの文字に関する微調整です。
+TeX の役割はある決まった大きさの領域に、文字という「箱」を詰め込んでいくことですが、それを行う際に基礎となる情報が文字サイズに関する情報です。リガチャとカーニングは連続した2つの文字に関する微調整です。リガチャとカーニングに関する解説はここでは行いません。
 
 詳しい解説については
 
@@ -276,10 +276,10 @@ Font definition ファイルの役割は、この属性の組で指定された�
 フォントマップ .map は、TFM ファイルと元のフォントファイルとの対応を記したファイルです。
 PDF や PostScript などの最終的な出力を得る段階になって必要とされます。出力ドライバは、TeX が組版に用いた TFM が、実際にはどのフォントに対応しているのか知る必要があります。このファイルの書式はドライバごとに異なりますが、基本的な部分は同じです。
 
-## CTAN にないフォントを利用する {#z14d6053}
+## CTAN にないフォントを利用する（欧文フォント） {#z14d6053}
 
 LaTeX におけるフォントの基礎をおさえたら、実際にフォントを LaTeX で使えるようにしてみましょう。
-ここでは OpenType フォントに絞って話を進めます。実例として、Microsoft Windows に入っている Constantia を使います。これは TrueType 系統の OpenType フォントです。
+ここでは OpenType フォントに絞って話を進めます。実例として、Microsoft Windows に入っている [Constantia](http://www.microsoft.com/typography/fonts/family.aspx?FID=304) を使います。これは TrueType 系の OpenType フォントです。
 
 ```
    C:\Windows\Fonts\
@@ -295,7 +295,7 @@ LaTeX におけるフォントの基礎をおさえたら、実際にフォン�
 
 ### ツールのインストール {#qb371a3e}
 
-LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。
+フォントファイルから必要なものを生成するツールとして、LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。pltotf プログラムをあらかじめインストールしておく必要があります。これは fontware パッケージに含まれます。
 
 LCDF Typetools のインストールができたら、とりあえず付属の otfinfo でフォント情報を見てみましょう。
 
@@ -309,7 +309,7 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    otfinfo -f constan.ttf
 ```
 
-"kern" や "liga" などの基本的なもの、"onum"、"lnum"、"pnum"、"tnum"　など数字や "smcp"（スモールキャップ）、その他色々な機能があることがわかります。
+"kern" や "liga" などの基本的なもの、"onum"、"lnum"、"pnum"、"tnum"　など数字や "smcp"（スモールキャップ）、その他様々な機能があることがわかります。
 
 それでは実際に LaTeX で使えるようにしてみましょう。
 
@@ -341,13 +341,13 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    otftotfm --no-type1 -e 7t -fkern -fliga constani.ttf -n constani >> constan.map
 ```
 
-そのほか、ボールドやボールドイタリックも処理します。スモールキャップも使いたければ、
+そのほか、ボールドやボールドイタリックも処理します。スモールキャップ（sc shape）も使いたければ、
 
 ```
    otftotfm --no-type1 -e 7t -fkern -fliga -fsmcp constan.ttf -n constan-sc >> constan.map
 ```
 
-のようにします。
+のようにして、スモールキャップ用の TFM も生成します。（こちはも dvipdfmx で利用するには生成された .enc ファイルの修正が必要です）斜体（sl shape）は Constantia には含まれませんが、-S オプションでそれ用の TFM を生成することができます。出力ドライバの機能を使って合成斜体を使うことになります。
 
 ### Font Definition (.fd) ファイル {#d5a8cb68}
 
@@ -356,15 +356,24 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 ```
    \ProvidesFile{ot1constan.fd}
        [2015/06/08 font definitions for OT1/constan.]
+```
+
+```
    \DeclareFontFamily{OT1}{constan}{}
    \DeclareFontShape{OT1}{constan}{m}{n}{<->constan}{}
    \DeclareFontShape{OT1}{constan}{m}{it}{<->constani}{}
    \DeclareFontShape{OT1}{constan}{b}{n}{<->constanb}{}
    \DeclareFontShape{OT1}{constan}{b}{it}{<->constanz}{}
+   
+   \DeclareFontShape{OT1}{constan}{bx}{n}{<->ssub * constan/b/n}{}
+   \DeclareFontShape{OT1}{constan}{bx}{it}{<->ssub * constan/b/it}{}
+```
+
+```
    \endinput
 ```
 
-と書き込みましょう。LaTeX ソースで
+と書き込みましょう。メディアム（m）・ボールドウェイト（b）でそれぞれノーマル（n）・イタリック（it）を定義します。bx（"bold extended"）についてはボールドで代替します。TFM の指定の前の &lt;-> の部分は「全てのサイズで」という意味となります。カレントディレクトリにこれまでに生成したファイルを置いた状態で、LaTeX ソースで
 
 ```
    \fontfamily{constan}\selectfont
