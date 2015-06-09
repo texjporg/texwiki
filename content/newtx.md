@@ -9,11 +9,14 @@ pukiwiki: "newtx"
 
 ## newtx {#xd8a1457}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+newtx は TX フォントを改良した Times 系フォントです．
+TeX Live，W32TeX に標準で含まれています．
 
-## newtx とは {#cec39c59}
+***
 
-newtx は TX フォントを改良したものです．<br>
+***
+
+### 公式サイトなど {#o3f5f613}
 
 - [Michael Sharpe Home Page](http://math.ucsd.edu/~msharpe/)
     - [MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
