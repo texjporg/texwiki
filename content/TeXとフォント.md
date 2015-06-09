@@ -31,7 +31,9 @@ TeX あるいは LaTeX におけるフォントの利用については、なか
 
 といった感じです。今ではこれらの作業を行う便利なツールがありますが、それでもなれない人にとっては未だ大変な作業で、うまくいかないこともあるでしょう。何か使ってみたいフォントがあったら、とにかく[CTAN](/CTAN/) をあたって既にパッケージが用意されていないか調べましょう。
 
-フォント設定の煩わしさを少しでも軽減したければ、[XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) への移行を考えましょう。
+この文書の目的は、LaTeX は十分使えるが、フォントについてはあまり意識したことがないという方のために、とりあえず他人が用意したパッケージにお任せでフォントを変え始め、自分で好きなフォントを一から利用可能にできるようになるまでの、情報を提供することです。
+
+LaTeX の細かい知識に関心がなく、フォント設定の煩わしさを少しでも軽減したければ、この文書は読まずに [XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) への移行を考えましょう。
 
 ## フォントを変えてみる（欧文フォント） {#wb9a55f8}
 
@@ -322,13 +324,13 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    otfinfo -f constan.ttf
 ```
 
-"kern" や "liga" などの基本的なもの、"onum"、"lnum"、"pnum"、"tnum"　など数字や "smcp"（スモールキャップ）、その他様々な機能があることがわかります。
+"kern" や "liga" などの基本的なもの、"onum"（オールドスタイル数字）などや "smcp"（スモールキャップ）、その他様々な機能があることがわかります。
 
 それでは実際に LaTeX で使えるようにしてみましょう。
 
 ### TFM ファイルの生成 {#r85aade4}
 
-まずは OT1 エンコーディング(-e 7t オプションでこれを指定しています）で試してみましょう。
+まずは OT1 エンコーディング(-e 7t オプションでこれを指定しています）で試してみましょう。リガチャ（liga）とカーニング（kern）を有効にします。
 
 ```
    otftotfm --no-type1 -e 7t -fkern -fliga constan.ttf -n constan > constan.map
@@ -341,13 +343,13 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    warning: TrueType-flavored font support is experimental
 ```
 
-という警告がでますが、とりあえず続けましょう。LCDF Typetools はもともと PostScript-flavored font のために開発されたソフトウェアなのです。オプションの詳細についてはヘルプを参照してください。これで TFM ファイル constan.tfm　と .enc ファイルやマップファイル constan.map が生成されるはずです。[testfont](/testfont/) で実際使えることを確認しましょう。
+という警告がでますが、とりあえず続けましょう。LCDF Typetools はもともと PostScript-flavored font のために開発されたソフトウェアなのです。オプションの詳細についてはヘルプ（-h）を参照してください。これで TFM ファイル constan.tfm　と .enc ファイルやマップファイル constan.map が生成されるはずです。[testfont](/testfont/) で実際使えることを確認しましょう。
 
 ```
    tex testfont
 ```
 
-生成された DVI ファイルを処理するには
+フォント名は　constan です。生成された DVI ファイルを処理するには
 
 ```
    dvipdfmx -f constan.map testfont
@@ -391,7 +393,7 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
    \DeclareFontShape{OT1}{constan}{m}{it}{<->constani}{}
    \DeclareFontShape{OT1}{constan}{b}{n}{<->constanb}{}
    \DeclareFontShape{OT1}{constan}{b}{it}{<->constanz}{}
-   
+  
    \DeclareFontShape{OT1}{constan}{bx}{n}{<->ssub * constan/b/n}{}
    \DeclareFontShape{OT1}{constan}{bx}{it}{<->ssub * constan/b/it}{}
 ```
@@ -400,7 +402,9 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
    \endinput
 ```
 
-と書き込みましょう。メディアム（m）・ボールド（b）ウェイトでそれぞれノーマル（n）・イタリック（it）を定義します。bx（"bold extended"）についてはボールドで代替します。TFM の指定の前の &lt;-> の部分は「全てのサイズで」という意味となります。カレントディレクトリにこれまでに生成したファイルを置いた状態で、LaTeX ソースで
+と書き込みましょう。メディアム（m）・ボールド（b）ウェイトでそれぞれノーマル（n）・イタリック（it）を定義します。bx（"bold extended"）についてはボールドで代替します。TFM の指定の前の &lt;-> の部分は「全てのサイズで」という意味となります。スモールキャップ（sc）や斜体（sl）も作ったら加えましょう。書式は同じで、シェイプのところ（n や it の部分）を sc や sl で置き換えます。
+
+カレントディレクトリにこれまでに生成したファイルを置いた状態で、LaTeX ソースで
 
 ```
    \fontfamily{constan}\selectfont
@@ -417,39 +421,50 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 スタイルファイルを作っておくと、
 
 ```
-   \usepackage{constan}
+   \usepackage{constantia}
 ```
 
-できます。作り方については他のパッケージを参考にしてください。できたファイル群をインストールする前に、TeX の標準的なディレクトリ構成にあうようにファイルを配置しましょう。フォント関連のファイルは主に fonts 以下に置きます。とりあえず、作業ディレクトリの下に仮のディレクトリツリーを作りましょう。
+のようにできます。とりあえず今のところは
+
+```
+   \ProvidesPackage{constantia}[2015/06/08]
+   \renewcommand{\rmdefault}{constan}
+   \endinput
+   
+```
+
+として、constantia.sty　として保存しておきます。詳しい作り方については他のパッケージを参考にしてください。
+
+できたファイル群をインストールする前に、TeX の標準的なディレクトリ構成にあうようにファイルを配置しましょう。フォント関連のファイルは主に fonts 以下に置きます。とりあえず、作業ディレクトリの下に仮のディレクトリツリーを作りましょう。
 
 フォントファイルは
 
 ```
-   fonts/truetype/microsoft/constan/
+   fonts/truetype/microsoft/constantia/
 ```
 
 以下に置きます。TFM ファイルは
 
 ```
-   fonts/tfm/microsoft/constan/
+   fonts/tfm/microsoft/constantia/
 ```
 
 に配置しましょう。.enc ファイルは
 
 ```
-   fonts/enc/dvips/constan/
+   fonts/enc/dvips/constantia/
 ```
 
 へ移動します。.map ファイルは
 
 ```
-   fonts/map/dvips/constan/
+   fonts/map/dvips/constantia/
 ```
 
-に置きます。.fd ファイルだけは別で
+に置きます。.sty　と　.fd ファイルは別で
 
 ```
-   tex/latex/constan/
+   tex/latex/constantia/
 ```
 
 です。
@@ -457,10 +472,18 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 それでは、
 
 ```
-   zip -r constan.zip fonts tex
+   zip -r constantia.zip fonts tex
 ```
 
-でアーカイブしましょう。これでインストールはあなたの TEXMF　ツリーに展開するだけです。
+でアーカイブしましょう。これでインストールはあなたの TEXMF　ツリーに展開するだけです。（必要であれば mktexlsr や updmap も忘れないでください）
+
+これまでは本文用のセリフ書体である Constantia のみ準備しましたが、サンセリフ体とタイプライタ体もセットとして揃えておくとよいでしょう。[Corbel](http://www.microsoft.com/typography/fonts/family.aspx?FID=308) や [Calibri](http://www.microsoft.com/typography/fonts/family.aspx?FID=287) （サンセリフ）、[Consolas](http://www.microsoft.com/typography/fonts/family.aspx?FID=300)　（タイプライタ） などがおすすめです。Windows ユーザーは Microsoft の [ClearType Font Collection](http://www.microsoft.com/typography/fonts/cleartype.aspx) を一通り揃えてみるのもよいでしょう。
+
+### よりすすんだ話題 {#jd4ad8d9}
+
+Constantia はオールドスタイル数字（onum）や theta の変種といった Stylistic Alternates （salt）などの OpenType 機能を備えています。これらを有効にするためのオプションを Constantia パッケージに加えましょう。
+
+%　LaTeX パッケージの書き方という話題になるのでどなたか書いてください。
 
 ## フォント関連のその他のファイル {#lf8a8837}
 
@@ -469,5 +492,29 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 ### エンコーディング {#b9fac2f6}
 
 ### SFD (SubFont Definition) {#tc8ef284}
+
+## CTAN にないフォントを使う（日本語フォント） {#x7933273}
+
+使いたい日本語フォントを使うことは、簡単とも難しいとも言えます。これは日本語フォントのデザイン上の都合に起因します。全角などの固定幅とプロポーショナル幅の明確な区別の存在です。全角幅の文字のみで良いのであれば話は簡単ですが、プロポーショナル仮名や従属欧文などプロポーショナル幅の文字も使いたい場合は話は複雑になってきます。後者の場合、必要なファイル群を準備するには相応の知識と技術が必要になることがあります。
+
+### 全角幅のみで良い場合 {#ob0802f3}
+
+この場合、すべての文字幅はフォントによらず同じですので、フォントの違いは実質、（TeX　にとっては）名前の違いでしかありません。全角幅のみのフォントを使い分けるには、これまでは単純に、ドライバでの処理段階でフォントファイルの「すり替え」を行うことで対処していました。
+
+### 従属欧文を使う（1） {#k2b08d18}
+
+ここでは TrueType 系 OpenType フォントの場合を解説します。
+
+TrueType 系のフォントで従属欧文を使うには、いくつかの手法があります。ひとつの簡単な方法は、単純にフォントを欧文フォントとみなし処理することです。TrueType 系 OpenType フォントの場合は、フォントファイルには欧文と和文の本質的な区別はありません。よって、欧文フォントの利用で用いた otftotfm などのツールと、同様の手法がそのまま使えます。例えば、Windows8.1 に付属している游明朝の従属欧文を使うには、
+
+```
+   otftotfm --no-type1 -e 7t -fkern -fliga yumin.ttf -n yuminp > yuminp.map
+```
+
+のようにして欧文用 TFM を生成し、それを通常の欧文フォントだと思って使えばいいだけです。
+
+### 従属欧文を使う（2） {#wd7ba471}
+
+（1）の手法で簡単に従属欧文を使うことができますが、PDF ファイルを開いてプロパティをみるとわかるように、欧文部分と和文部分が別フォントとして埋め込まれます。別にこれで問題があるわけではないのですが、ここではこれらを一つのフォントにまとめ上げる方法を紹介します。
 
 % [全角半角メモ](</全角半角メモ/>)に、任意の和文フォント（プロポーショナル・半角部分含む）を使う試みのドキュメント（未完成；2006 年頃のもの）が見つかりました。「TeX とフォント」のほうに移植できるといいと思います。 -- アセトアミノフェン
