@@ -42,7 +42,7 @@ CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Mode
 [W32TeX](/W32TeX/) には標準で含まれていないので CTAN から入手します．
 → [PDFへの変換について,](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1201)
 
-## 関連リンク {#e74a0814}
+### 関連リンク {#e74a0814}
 
 - [Babel な話：type1ec パッケージの 10pt オプションがアレな件](http://d.hatena.ne.jp/zrbabbler/20120906/1346931893)
 - [cm-super - 松浦高志のページ](http://user.ecc.u-tokyo.ac.jp/users/user-12036/wiki.cgi?page=cm-super)
