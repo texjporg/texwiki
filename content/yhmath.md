@@ -9,13 +9,11 @@ pukiwiki: "yhmath"
 
 ## yhmath {#c1ec97da}
 
-### 何？ {#rf9b7794}
-
 [Yannis Haralambous](http://tug.org/interviews/haralambous.html) ([twitter](https://twitter.com/y_haralambous)) 作の根号や括弧などのフォントです。
 通常より大きいものまで用意されています。
 
-yhmathを紹介してくださった本田さんに感謝します。
-また，石原さん，uchiyamaさんにご教示をいただきました。
+yhmath を紹介してくださった本田さんに感謝します。
+また，石原さん，uchiyama さんにご教示をいただきました。
 
 ### インストール {#xdd91a7e}
 
@@ -27,7 +25,7 @@ texmf-dist/fonts/map/dvips/yhmath/yhmath.map に
 yrcmex10 Yhcmex <yhcmex.pfb
 ```
 
-と記述されています。<br>
+と記述されています。
 
 W32TeX の場合は，
 
