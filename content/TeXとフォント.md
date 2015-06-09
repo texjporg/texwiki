@@ -167,14 +167,14 @@ dvipdfmx を使用して IPAex を埋め込んだ PDF を作成するには以�
 
 ### PDF に埋め込むフォントをあらかじめ設定する {#ge692ee0}
 
-- TeX Live (MacTeX) では，ターミナルから kanji-config-updmap-sys で設定できます。
+TeX Live (MacTeX) では，ターミナルから kanji-config-updmap-sys で設定できます。
 
-    ```
-    $ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
-    $ sudo kanji-config-updmap-sys auto        （自動的に <fontname> のいずれかを埋め込む）
-    $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込まない）
-    $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
-    ```
+```
+$ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
+$ sudo kanji-config-updmap-sys auto        （自動的に <fontname> のいずれかを埋め込む）
+$ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込まない）
+$ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
+```
 
 自動的に埋め込み設定できるフォント &lt;fontname> は次のものです．
 
@@ -218,25 +218,25 @@ uplatex
 各種パッケージを用いて，数式部分に用いるフォントを変えることができます。（いくつかのフォントを比較したものが[こちら](http://perikanfan.web.fc2.com/tex.html)にあります。）
 
 ```
-\usepackage{newtx}
+\usepackage{newtxmath}
 ```
 
 などとするだけで数式フォントを変えられます。
 
-- [newtx](/newtx/)　newtx, newtxtt, newpx, boondox, fontaxes
+- [newtx](/newtx/)：newtx, newtxtt, newpx, boondox, fontaxes
 
 <table><tbody>
 <tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newtx.html">newtx の見本</a></td></tr>
 <tr><td>newpx</td><td>Palatino を元にした pxfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newpx.html">newpx の見本</a></td></tr>
 </tbody></table>
 
-- [Mathptmx](/Mathptmx/)　本文，数式をともに Times に変えます。
-- [mathabx](/mathabx/)　Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
-- [yhmath](/yhmath/)　通常より大きいものまで含まれた根号や括弧などのフォントです。
-- ceo.sty 　安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
-- euler　Zapf が作成し，Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
+- [Mathptmx](/Mathptmx/)：本文，数式をともに Times に変えます。
+- [mathabx](/mathabx/)：Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
+- [yhmath](/yhmath/)：通常より大きいものまで含まれた根号や括弧などのフォントです。
+- ceo.sty：安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
+- euler：Zapf が作成し，Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
 
-## フォント関連ファイル {#tf6d4ac5}
+## フォント関連の基本的なファイル {#tf6d4ac5}
 
 ここでは主に LaTeX で文書を作成する際に必要となってくるフォント関連ファイルについて、基礎的な事柄を解説します。
 
@@ -252,16 +252,21 @@ TFM は組版を行うのに必要な、フォントに関する情報が納め�
 
 TeX の役割はある決まった大きさの領域に、文字という「箱」を詰め込んでいくことですが、それを行う際に基礎となる情報が文字サイズに関する情報です。リガチャとカーニングは連続した2つの文字に関する微調整です。リガチャとカーニングに関する解説はここでは行いません。
 
-詳しい解説については
+TFM　についての（フォーマットに関する）詳しい解説については
 
-- David Fuchs　による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.
+- David Fuchs による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.
 
 を参照してください。（上記リンク先の PDF は低画質のスキャン画像です）
 
 ### Font Definition (.fd) {#nf0707eb}
 
-LaTeX でフォントを使う際は、通常、フォントは属性の組で指定されます。例えば、cmr というファミリのメディアムウェイト・イタリック体を 10 pt のサイズで、エンコーディングは OT1、など。
-Font definition ファイルの役割は、この属性の組で指定されたフォントを、TFM ファイルに結びつける事です。前述の例を cmti10 に結びつけるには、
+LaTeX でフォントを使う際は、通常、フォントは属性の組で指定されます。例えば、cmr というファミリのメディアムウェイト・イタリック体を 10 pt のサイズで、エンコーディングは OT1、など。LaTeX においては、フォントは
+
+```
+   <encoding, family, series, shape, size>
+```
+
+の組で完全に指定されます。Font definition ファイルの役割は、この属性の組で指定されたフォントを、TFM ファイルに結びつける事です。前述の例を cmti10 に結びつけるには、
 
 ```
    \DeclareFontShape{OT1}{cmr}{m}{it}{<10>cmti10}{}
@@ -275,6 +280,14 @@ Font definition ファイルの役割は、この属性の組で指定された�
 
 フォントマップ .map は、TFM ファイルと元のフォントファイルとの対応を記したファイルです。
 PDF や PostScript などの最終的な出力を得る段階になって必要とされます。出力ドライバは、TeX が組版に用いた TFM が、実際にはどのフォントに対応しているのか知る必要があります。このファイルの書式はドライバごとに異なりますが、基本的な部分は同じです。
+
+例えば、dvipdfmx のフォントマップの書式は
+
+```
+   tfm-name encoding font-file options
+```
+
+のような形をとります。DVIPS/PDFTeX 書式でも基本は、TFM をあるフォントに対応付ける、ということです。
 
 ## CTAN にないフォントを利用する（欧文フォント） {#z14d6053}
 
@@ -321,7 +334,14 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    otftotfm --no-type1 -e 7t -fkern -fliga constan.ttf -n constan > constan.map
 ```
 
-オプションの詳細についてはヘルプを参照してください。これで TFM ファイル constan.tfm　と .enc ファイルやマップファイル constan.map が生成されるはずです。[testfont](/testfont/) で実際使えることを確認しましょう。
+ここで、
+
+```
+
+   warning: TrueType-flavored font support is experimental
+```
+
+という警告がでますが、とりあえず続けましょう。LCDF Typetools はもともと PostScript-flavored font のために開発されたソフトウェアなのです。オプションの詳細についてはヘルプを参照してください。これで TFM ファイル constan.tfm　と .enc ファイルやマップファイル constan.map が生成されるはずです。[testfont](/testfont/) で実際使えることを確認しましょう。
 
 ```
    tex testfont
@@ -347,7 +367,14 @@ LCDF Typetools のインストールができたら、とりあえず付属の o
    otftotfm --no-type1 -e 7t -fkern -fliga -fsmcp constan.ttf -n constan-sc >> constan.map
 ```
 
-のようにして、スモールキャップ用の TFM も生成します。（こちはも dvipdfmx で利用するには生成された .enc ファイルの修正が必要です）斜体（sl shape）は Constantia には含まれませんが、-S オプションでそれ用の TFM を生成することができます。出力ドライバの機能を使って合成斜体を使うことになります。
+のようにして、スモールキャップ用の TFM も生成します。（こちはも dvipdfmx で利用するには生成された .enc ファイルの修正が必要です）斜体（sl shape）は Constantia には含まれませんが、-S オプションでそれ用の TFM を生成することができます。
+
+```
+   otftotfm --no-type1 -e 7t -fkern -fliga -S .167 constan.ttf -n constan-sl >> constan.map
+
+```
+
+このようにすると、出力ドライバの機能を使って合成斜体を使うことになります。
 
 ### Font Definition (.fd) ファイル {#d5a8cb68}
 
@@ -373,7 +400,7 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
    \endinput
 ```
 
-と書き込みましょう。メディアム（m）・ボールドウェイト（b）でそれぞれノーマル（n）・イタリック（it）を定義します。bx（"bold extended"）についてはボールドで代替します。TFM の指定の前の &lt;-> の部分は「全てのサイズで」という意味となります。カレントディレクトリにこれまでに生成したファイルを置いた状態で、LaTeX ソースで
+と書き込みましょう。メディアム（m）・ボールド（b）ウェイトでそれぞれノーマル（n）・イタリック（it）を定義します。bx（"bold extended"）についてはボールドで代替します。TFM の指定の前の &lt;-> の部分は「全てのサイズで」という意味となります。カレントディレクトリにこれまでに生成したファイルを置いた状態で、LaTeX ソースで
 
 ```
    \fontfamily{constan}\selectfont
@@ -383,4 +410,64 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 
 ### マップファイル {#ja3c2d3b}
 
-マップファイル constan.map がすでに生成されているはずです。
+マップファイル constan.map がすでに生成されているはずです。PDFTeX 用のマップファイルですが、dvipdfmx でもそのまま使えます。
+
+### パッケージ化とインストール {#x96ec2f0}
+
+スタイルファイルを作っておくと、
+
+```
+   \usepackage{constan}
+```
+
+できます。作り方については他のパッケージを参考にしてください。できたファイル群をインストールする前に、TeX の標準的なディレクトリ構成にあうようにファイルを配置しましょう。フォント関連のファイルは主に fonts 以下に置きます。とりあえず、作業ディレクトリの下に仮のディレクトリツリーを作りましょう。
+
+フォントファイルは
+
+```
+   fonts/truetype/microsoft/constan/
+```
+
+以下に置きます。TFM ファイルは
+
+```
+   fonts/tfm/microsoft/constan/
+```
+
+に配置しましょう。.enc ファイルは
+
+```
+   fonts/enc/dvips/constan/
+```
+
+へ移動します。.map ファイルは
+
+```
+   fonts/map/dvips/constan/
+```
+
+に置きます。.fd ファイルだけは別で
+
+```
+   tex/latex/constan/
+```
+
+です。
+
+それでは、
+
+```
+   zip -r constan.zip fonts tex
+```
+
+でアーカイブしましょう。これでインストールはあなたの TEXMF　ツリーに展開するだけです。
+
+## フォント関連のその他のファイル {#lf8a8837}
+
+### Virtual Font (VF) {#gf8d0e7b}
+
+### エンコーディング {#b9fac2f6}
+
+### SFD (SubFont Definition) {#tc8ef284}
+
+% [全角半角メモ](</全角半角メモ/>)に、任意の和文フォント（プロポーショナル・半角部分含む）を使う試みのドキュメント（未完成；2006 年頃のもの）が見つかりました。「TeX とフォント」のほうに移植できるといいと思います。 -- アセトアミノフェン
