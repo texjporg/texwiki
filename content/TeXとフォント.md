@@ -184,9 +184,12 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-osx
 ```
 
-#### Mac (OS X) の場合に必要な事前準備 {#oabbd72a}
-
-[TeX Live/Mac](</TeX Live/Mac/#i9febc9b>) を参照
+- Mac (OS X) の場合には事前準備が必要です。
+    - [TeX Live/Mac](</TeX Live/Mac/#i9febc9b>) を参照してください。
+- Windows でヒラギノを使いたい場合にも事前準備が必要です。
+    - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](http://ichiro-maruta.blogspot.jp/2013/08/windows-tex-live-2013.html)
+    - ヒラギノ基本6書体パック [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
+    - PDF へのフォントの埋め込みに失敗する [forum:1491](https://okumuralab.org/tex/mod/forum/discuss.php?d=1491)
 
 ### OTF の設定（TeX 文書のプリアンブルにて設定） {#xad9bd71}
 
@@ -310,7 +313,7 @@ LaTeX におけるフォントの基礎をおさえたら、実際にフォン�
 
 ### ツールのインストール {#qb371a3e}
 
-フォントファイルから必要なものを生成するツールとして、LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。pltotf プログラムをあらかじめインストールしておく必要があります。これは fontware パッケージに含まれます。
+フォントファイルから必要なものを生成するツールとして、LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。pltotf プログラムをあらかじめインストールしておく必要があります。これは fontware パッケージに含まれます。W32TeX には，LCDF Typetools も pltotf も入っています。
 
 LCDF Typetools のインストールができたら、とりあえず付属の otfinfo でフォント情報を見てみましょう。
 
