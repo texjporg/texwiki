@@ -480,7 +480,7 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 
 でアーカイブしましょう。これでインストールはあなたの TEXMF　ツリーに展開するだけです。（必要であれば mktexlsr や updmap も忘れないでください）
 
-これまでは本文用のセリフ書体である Constantia のみ準備しましたが、サンセリフ体とタイプライタ体もセットとして揃えておくとよいでしょう。[Corbel](http://www.microsoft.com/typography/fonts/family.aspx?FID=308) や [Calibri](http://www.microsoft.com/typography/fonts/family.aspx?FID=287) （サンセリフ）、[Consolas](http://www.microsoft.com/typography/fonts/family.aspx?FID=300)　（タイプライタ） などがおすすめです。Windows ユーザーは Microsoft の [ClearType Font Collection](http://www.microsoft.com/typography/fonts/cleartype.aspx) を一通り揃えてみるのもよいでしょう。
+これまでは本文用のセリフ書体である Constantia のみ準備しましたが、サンセリフ体とタイプライタ体もセットとして揃えておくとよいでしょう。[Corbel](http://www.microsoft.com/typography/fonts/family.aspx?FID=308) や [Calibri](http://www.microsoft.com/typography/fonts/family.aspx?FID=287) （サンセリフ）、[Consolas](http://www.microsoft.com/typography/fonts/family.aspx?FID=300)　（タイプライタ） などがおすすめです。Windows ユーザーは Microsoft の [ClearType Font Collection](http://www.microsoft.com/typography/fonts/cleartype.aspx) を一通り揃えてみるのもよいでしょう。（一部 ttc があり、otftotfm がそのまま使えませんが）
 
 ### よりすすんだ話題 {#jd4ad8d9}
 
