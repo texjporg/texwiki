@@ -228,18 +228,36 @@ uplatex
 
 などとするだけで数式フォントを変えられます。
 
-- [newtx](/newtx/)：newtx, newtxtt, newpx, boondox, fontaxes
+### Times 系 {#a0f4fe96}
+
+[STIX フォント](http://www.stixfonts.org/project.html)は
+Scientific and Technical Information Exchange (STIX) フォントプロジェクトによるフォントセットです。LaTeX 用のパッケージもあります。Times フォントと良く調和し、互換なようにデザインされています。CTAN サイト
+
+- [http://www.ctan.org/tex-archive/fonts/stix/](http://www.ctan.org/tex-archive/fonts/stix/)
+
+[newtx](/newtx/) は Michael Sharpe によりメンテナンスされている Times 互換なフォントです。Young U. Ryu による　txfonts がもとになっています。newtx, newtxtt, newpx, boondox, fontaxes　があります。Palatino と調和するように設計された newpx もあります。
 
 <table><tbody>
 <tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newtx.html">newtx の見本</a></td></tr>
 <tr><td>newpx</td><td>Palatino を元にした pxfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newpx.html">newpx の見本</a></td></tr>
 </tbody></table>
 
-- [Mathptmx](/Mathptmx/)：本文，数式をともに Times に変えます。
+[Mathptmx](/Mathptmx/)：本文，数式をともに Times に変えます。
+
+### AMS Euler {#db3b09f8}
+
+AMS の委託により Hermann Zapf が作成し、Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
+Computer Modern とはあまりよく調和しません。
+
+2008年に大規模な改定が行われたようです。
+
+- ["Reshaping Euler — a collaboration with Hermann Zapf"](http://www.tug.org/TUGboat/tb29-2/tb92hagen-euler.pdf) (PDF). TUGboat 29 (2): 283–7.
+
+### その他 {#u91f5292}
+
 - [mathabx](/mathabx/)：Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
 - [yhmath](/yhmath/)：通常より大きいものまで含まれた根号や括弧などのフォントです。
 - ceo.sty：安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
-- euler：Zapf が作成し，Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
 
 ## フォント関連の基本的なファイル {#tf6d4ac5}
 
@@ -488,6 +506,33 @@ Constantia はオールドスタイル数字（onum）や theta の変種とい�
 
 %　LaTeX パッケージの書き方という話題になるのでどなたか書いてください。
 
+### LCDF Typetools と dvipdfmx {#dfd278a4}
+
+otftotfm が自動生成する .enc ファイルは dvipdfmx でうまく使えない場合があります。これは otftotfm が index278 といった、フォントファイルで内部的に使用されるグリフ・インデックスを元にした文字名を使用してくるからです。これは特に OpenType のグリフ置換機能で得られる、Unicode にないグリフ（文字）などを使用する際に見られます。例えば、スモールキャピタルの "a" などです。dvipdfmx では、"a.smcp" （あるいは "a.sc"）といった、元の名前（"a"）と OpenType feature タグ（"smcp"）を組み合わせた名前に変えてやる必要が出てきます。
+
+スモールキャピタル用の .enc ファイルでは以下のように修正します。
+
+%10 の部分の2行目
+
+```
+   /uni00B8 /uni00DF /ae.sc /oe.sc /oslash.sc /uni00C6 /uni0152 /uni00D8
+```
+
+%60　の部分
+
+```
+   /uni2018 /a.smcp /b.sc /c.sc /d.sc /e.sc /f.sc /g.sc
+   /h.sc /i.sc /j.sc /k.sc /l.sc /m.sc /n.sc /o.sc
+```
+
+%70　の部分の1行目
+
+```
+   /p.sc /q.sc /r.sc /s.sc /t.sc /u.sc /v.sc /w.sc
+```
+
+dvipdfmx で indexXXX がないといった警告がでたら、同様の処置を行う必要があります。
+
 ## フォント関連のその他のファイル {#lf8a8837}
 
 ### Virtual Font (VF) {#gf8d0e7b}
@@ -518,6 +563,6 @@ TrueType 系のフォントで従属欧文を使うには、いくつかの手�
 
 ### 従属欧文を使う（2） {#wd7ba471}
 
-（1）の手法で簡単に従属欧文を使うことができますが、PDF ファイルを開いてプロパティをみるとわかるように、欧文部分と和文部分が別フォントとして埋め込まれます。別にこれで問題があるわけではないのですが、ここではこれらを一つのフォントにまとめ上げる方法を紹介します。
+（1）の手法で簡単に従属欧文を使うことができますが、PDF ファイルを開いてプロパティをみるとわかるように、欧文部分と和文部分が別フォントとして埋め込まれます。別にこれで問題があるわけではないのですが、ここではこれらを一つのフォントにまとめ上げる方法を紹介します。ここから先はかなり高度で複雑な話題となります。
 
 % [全角半角メモ](</全角半角メモ/>)に、任意の和文フォント（プロポーショナル・半角部分含む）を使う試みのドキュメント（未完成；2006 年頃のもの）が見つかりました。「TeX とフォント」のほうに移植できるといいと思います。 -- アセトアミノフェン
