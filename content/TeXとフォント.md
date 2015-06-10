@@ -235,7 +235,7 @@ Scientific and Technical Information Exchange (STIX) フォントプロジェク
 
 - [http://www.ctan.org/tex-archive/fonts/stix/](http://www.ctan.org/tex-archive/fonts/stix/)
 
-[newtx](/newtx/) は Michael Sharpe によりメンテナンスされている Times 互換なフォントです。Young U. Ryu による　txfonts がもとになっています。newtx, newtxtt, newpx, boondox, fontaxes　があります。Palatino と調和するように設計された newpx もあります。
+[newtx](/newtx/) は Michael Sharpe によりメンテナンスされている Times 互換なフォントです。Young U. Ryu による txfonts がもとになっています。newtx, newtxtt, newpx, boondox, fontaxes があります。newpx は Palatino と調和するように設計されています。
 
 <table><tbody>
 <tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newtx.html">newtx の見本</a></td></tr>
