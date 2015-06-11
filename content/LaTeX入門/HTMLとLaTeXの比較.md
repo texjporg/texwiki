@@ -41,7 +41,7 @@ HTML と LaTeX には次のような対応関係があります。
 <table>
 <tbody>
 <tr><td><strong>HTML</strong>                  </td><td><strong>LaTeX</strong></td></tr>
-<tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass{jsarticle}</td></tr>
+<tr><td>&lt;!DOCTYPE html&gt;<br>&lt;html lang="ja"&gt;</td><td>\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}</td></tr>
 <tr><td>&lt;head&gt;                    </td><td>プリアンブル開始</td></tr>
 <tr><td>&lt;meta charset="UTF-8"&gt;    </td><td></td></tr>
 <tr><td>&lt;title&gt;...&lt;/title&gt;        </td><td>\title{題名}</td></tr>
