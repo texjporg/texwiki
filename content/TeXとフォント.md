@@ -525,10 +525,11 @@ otftotfm が自動生成する .enc ファイルは dvipdfmx でうまく使え�
    /h.sc /i.sc /j.sc /k.sc /l.sc /m.sc /n.sc /o.sc
 ```
 
-%70　の部分の1行目
+%70　の部分
 
 ```
    /p.sc /q.sc /r.sc /s.sc /t.sc /u.sc /v.sc /w.sc
+   /x.sc /y.sc /z.sc /uni2013 /uni2014 /uni02DD /uni02DC /uni00A8
 ```
 
 dvipdfmx で indexXXX がないといった警告がでたら、同様の処置を行う必要があります。
@@ -536,6 +537,54 @@ dvipdfmx で indexXXX がないといった警告がでたら、同様の処置�
 ## フォント関連のその他のファイル {#lf8a8837}
 
 ### Virtual Font (VF) {#gf8d0e7b}
+
+Virtual Font は小さなプログラムの集まりです。これは様々な目的で使われます。あるフォントのある文字を別のフォントの別の文字で置き換えたり、文字を合成したり、余白を入れたり削ったり、など。VF でできることはほとんど TeX のマクロでできますが、VF ではより低水準の層でこれが行われます。
+例えば、\copyright とするかわりに、"c" を入力するとコピーライト記号になったり。
+
+実際にどんなものか見てみましょう。ptmr7t.vf という Times　Roman フォント用の VF を例にとります。あなたの TeX システムにこれが含まれるかは、
+
+　　　　kpsewhich ptmr7t.vf
+
+が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeXLive では　fontware パッケージに含まれます。
+
+　　　　vftovp ptmr7t
+
+とすると ptmr7t の内容が表示されます。ptmr7t は Adobe （p）の Times Roman （tmr）フォントを OT1（7t）エンコーディングで使うためのものですが、その内容は例えば、
+
+```
+   (CHARACTER O 0
+      (CHARWD R 0.5)
+      (CHARHT R 0.502997)
+      (MAP
+         (SETRULE R 0.5 R 0.5)
+         (SPECIAL Warning: missing glyph `Gamma')
+         )
+      )
+```
+
+のようなものが含まれます。これは Virtual Font "ptmr7t" における文字コード \000 の文字の定義です。文字 \000 は文字幅 0.5 高さ 0.502997 で、その内容は幅と高さが 0.5、0.5 の罫線と
+
+```
+   Warning: missing glyph `Gamma'
+```
+
+（Gamma の文字がない）という警告文からなります。他の例として、
+
+```
+   (CHARACTER O 13
+      (CHARWD R 0.640991)
+      (CHARHT R 0.681989)
+      (COMMENT
+       ...略...
+        )
+      (MAP
+         (SETCHAR C f)
+         (MOVERIGHT R -0.025)
+         (SETCHAR C f)
+         )
+```
+
+は、文字コード \013 を "ff" の「リガチャ」として定義します。すなわち、"f" を描画した後、0.025 だけ詰めて、再び "f" を描画します。
 
 ### エンコーディング {#b9fac2f6}
 
