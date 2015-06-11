@@ -28,15 +28,15 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 
 ## スライドの作り方 {#zce7020e}
 
-これまでレポート作成の例などを bxjsarticle クラスを使って示してきましたが，bxjsslide クラスを使うと簡単にスライドを作成できます．
+これまでレポート作成の例などを jsarticle クラスを使って示してきましたが，同じ jsarticle クラスに slide オプションを与えると簡単にスライドを作成できます．
 また，LaTeX にはスライド作成に特化したクラスもありますので，ここで簡単に紹介します。
 
-### bxjsslide クラスによるスライドの雛形 {#c192429c}
+### jsarticle クラスによるスライドの雛形 {#c192429c}
 
-スライドに特化した他のパッケージのような高度な機能はありませんが，通常の bxjsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
+スライドに特化した他のパッケージのような高度な機能はありませんが，通常の jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
 
 ```
-\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsslide}
+\documentclass[slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
@@ -69,6 +69,18 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 - [LaTeX jsclassesでプレゼンテーション](http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+jsclasses%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3)
 - [LaTeX + jsarticle + slide でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/26/004920)
 - [プレゼンで太字を使いたい？](http://fugenji.org/~thomas/diary/index.php?no=r774)
+
+### bxjsslide クラスの場合 {#t2504dc0}
+
+ZR さんによる bxjsslide クラスを使う場合は，最初の行を以下のように書けば同様にスライドを作成できます．
+
+```
+\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsslide} % upLaTeX の場合
+```
+
+```
+\documentclass[dvipdfmx,ja=standard]{bxjsslide}         % pLaTeX の場合
+```
 
 ## スライド作成に特化したパッケージ {#e9704f43}
 
