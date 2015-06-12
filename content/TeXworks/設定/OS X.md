@@ -62,7 +62,7 @@ $ kanji-config-updmap ipaex
 
 pdfuplatex (シェルスクリプト) を作成します．
 
-- Bash を参照．
+- [スクリプト](</スクリプト/#pdfuplatex>) を参照．
 
 chmod で実行権限を付加します．
 
@@ -109,7 +109,7 @@ $ sudo cp -p pdfuplatex /usr/local/bin
 
 pdfuplatex2 (シェルスクリプト) を作成します．
 
-- Bash を参照．
+- [スクリプト](</スクリプト/#pdfuplatex2>) を参照．
 
 chmod で実行権限を付加します．
 
