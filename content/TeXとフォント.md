@@ -277,7 +277,8 @@ TeX の役割はある決まった大きさの領域に、文字という「箱�
 
 TFM　についての（フォーマットに関する）詳しい解説については
 
-- David Fuchs による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.
+- David Fuchs による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.\]
+- [tftopl.web](http://www.ctan.org/tex-archive/systems/knuth/dist/texware/tftopl.web) を WEAVE して得られるドキュメント
 
 を参照してください。（上記リンク先の PDF は低画質のスキャン画像です）
 
@@ -298,6 +299,12 @@ LaTeX でフォントを使う際は、通常、フォントは属性の組で�
 のような宣言となります。
 
 .fd ファイルはこのような宣言の集りです。通常、それぞれのエンコーディングとファミリの組ごとに用意されます。例えば、T1 エンコーディングの Latin Modern Roman ファミリでは、t1lmr.fd に様々な定義があります。
+
+詳しくは
+
+- [http://mirrors.ctan.org/macros/latex/doc/fntguide.pdf](http://mirrors.ctan.org/macros/latex/doc/fntguide.pdf)
+
+を参照してください。
 
 ### フォントマップ {#tde4074f}
 
@@ -327,7 +334,13 @@ LaTeX におけるフォントの基礎をおさえたら、実際にフォン�
    constan.ttf constanb.ttf constani.ttf constanz.ttf
 ```
 
-がそれです。作業用フォルダを作り、とりあえずコピーしてきましょう。
+がそれです。作業用フォルダを作り、とりあえずコピーしてきましょう。（システムフォントのフォルダが利用可能なように設定されている場合はコピーの必要はありません。
+
+```
+   kpsewhich constan.ttf
+```
+
+でフォントが見つかるか試してみましょう。見つかればシステムフォントが利用可能です。）
 
 ### ツールのインストール {#qb371a3e}
 
@@ -405,7 +418,7 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 
 ```
    \ProvidesFile{ot1constan.fd}
-       [2015/06/08 font definitions for OT1/constan.]
+       [2015/06/08 font definitions for Microsoft Constantia.]
 ```
 
 ```
@@ -502,7 +515,7 @@ Font Definition ファイル、ot1constan.fd を作ります。とりあえず�
 
 ### よりすすんだ話題 {#jd4ad8d9}
 
-Constantia はオールドスタイル数字（onum）や theta の変種といった Stylistic Alternates （salt）などの OpenType 機能を備えています。これらを有効にするためのオプションを Constantia パッケージに加えましょう。
+Constantia は数字スタイルの切り替え（onum や lnum、pnum）などの OpenType 機能を備えています。これらを有効にするためのオプションを Constantia パッケージに加えましょう。
 
 %　LaTeX パッケージの書き方という話題になるのでどなたか書いてください。
 
@@ -521,7 +534,7 @@ otftotfm が自動生成する .enc ファイルは dvipdfmx でうまく使え�
 %60　の部分
 
 ```
-   /uni2018 /a.smcp /b.sc /c.sc /d.sc /e.sc /f.sc /g.sc
+   /uni2018 /a.sc /b.sc /c.sc /d.sc /e.sc /f.sc /g.sc
    /h.sc /i.sc /j.sc /k.sc /l.sc /m.sc /n.sc /o.sc
 ```
 
@@ -547,7 +560,7 @@ Virtual Font は小さなプログラムの集まりです。これは様々な�
    kpsewhich ptmr7t.vf
 ```
 
-が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeXLive では　fontware パッケージに含まれます。
+が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeXLive では　fontware パッケージに含まれます。W32TeX では最小インストールに含まれますので既に入っています。
 
 ```
    vftovp ptmr7t
@@ -590,9 +603,63 @@ Virtual Font は小さなプログラムの集まりです。これは様々な�
 
 は、文字コード \013 を "ff" の"リガチャ"として定義します。すなわち、"f" を描画した後、0.025 だけ詰めて、再び "f" を描画します。
 
+Virtual Font が有用な局面は様々です。フォント関連で何か実現したい特別な機能があれば、VF の導入を検討するとよいでしょう。
+
+以下の文献を参考にしてください
+
+- Thomas A. Schmitz による ["Virtual Fonts -- a Tutorial"](http://mirrors.ctan.org/info/virtualfontshowto/virtualfontshowto.txt)
+
+など。
+
 ### エンコーディング {#b9fac2f6}
 
+フォント・エンコーディング関連の重要なファイルは2種類あります。LaTeX の fontenc　パッケージで利用される Encoding Definition ファイルと dvips などのデバイスドライバが利用する .enc ファイルです。
+
+Encoding Definition ファイルについては、fontenc パッケージのドキュメント
+
+- [http://mirrors.ctan.org/macros/latex/doc/fntguide.pdf](http://mirrors.ctan.org/macros/latex/doc/fntguide.pdf)
+
+を参照してください。
+
+.enc ファイルは元々 dvips で利用されていた PostScript Type 1 フォント用の、エンコーディングを記述するためのファイルです。これは、どのスロット（文字コード）にどのグリフ（文字）が入るかを宣言します。例えば、T1　エンコーディング用の ec.enc では、
+
+```
+   /ECEncoding [    % now 256 chars follow
+   /grave           % 0x00 U+0060
+   /acute           % 0x01 U+00B4
+   /circumflex      % 0x02 U+02C6
+   ...（中略）...
+   /thorn           % 0xFE
+   /germandbls      % 0xFF U+00DF
+   ] def
+```
+
+のようになっています。0x00 に "grave"、0x01 に "acute"、… 0xff に "germandbls" が入ります。書式は
+
+```
+   /エンコーディング名 [ /グリフ名 ... ] def
+```
+
+のような PostScript の形式です。
+
 ### SFD (SubFont Definition) {#tc8ef284}
+
+Subfont Definition (SFD) ファイルは、CJK-LaTeX パッケージを利用して、8-bit TeX エンジンで日中韓などの言語を処理する際に使用されるファイルです。従来の TeX では、ひとつのフォントあたりで利用できる文字数が、256 までと限られているため、CJK-LaTeX ではそれ以上の文字を含むフォントを、複数の 256 文字までのフォントの集まりに分解して利用します。例えば、
+
+```
+   文字コード 0x0000 - 0x00ff を　font01
+   文字コード 0x0100 - 0x01ff を　font02
+   …
+```
+
+という風に。Unicode.sfd がインストールされていれば、それを見てみましょう。
+
+```
+   00  0x0000_0x00FF
+   01  0x0100_0x01FF
+```
+
+というような行がたくさん並んでいるはずです。意味はそのまま、フォント fnt00　（fnt は任意のフォント名）は文字コード 0x0000　から 0x00FF までをカバーします。SFD ファイルはこのように、フォントの分割のルールを記述します。PDFTeX や dvipdfmx でも利用されます。
 
 ## CTAN にないフォントを利用する（日本語フォント） {#x7933273}
 
