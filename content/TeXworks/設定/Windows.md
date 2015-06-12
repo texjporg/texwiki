@@ -98,21 +98,8 @@ kanji-config-updmap ipaex
 
 #### pdfupLaTeX {#r6870d92}
 
-pdfuplatex.bat を作成して pdfuplatex.bat で PDF ファイルを作成します．
-
-***
-
-- C:\texlive\2015\bin\win64\pdfuplatex.bat
-- C:\texlive\2015\bin\win32\pdfuplatex.bat
-
-***
-
-```
-@echo off
-ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1
-```
-
-***
+[スクリプト](</スクリプト/#pdfuplatex>) を参考に pdfuplatex.bat を作成し，C:\texlive\2015\bin\win32\pdfuplatex.bat として保存します。
+64-bit バイナリを使っている場合は C:\texlive\2015\bin\win64\pdfuplatex.bat とします。
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
@@ -151,27 +138,11 @@ ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1
 
 #### pdfupLaTeX2 {#cf95a9e9}
 
-pdfuplatex2.bat を作成して pdfuplatex2.bat で PDF ファイルを作成します．
+[スクリプト](</スクリプト/#pdfuplatex2>) を参考に pdfuplatex2.bat を作成し，C:\texlive\2015\bin\win32\pdfuplatex2.bat として保存します。
+64-bit バイナリを使っている場合は C:\texlive\2015\bin\win64\pdfuplatex2.bat とします。
 
-convbkmk の実行には [Ruby](http://www.ruby-lang.org/ja/) が必要です．<br>
+convbkmk の実行には [Ruby](/Ruby/) インタプリタが必要です．<br>
 Ruby は [RubyInstaller](http://rubyinstaller.org/) でインストールできます．<br>
-
-***
-
-- C:\texlive\2015\bin\win64\pdfuplatex2.bat
-- C:\texlive\2015\bin\win32\pdfuplatex2.bat
-
-***
-
-```
-@echo off
-uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -u > "%~n1.ps" && ^
-ps2pdf.exe "%~n1.ps"
-```
-
-***
 
 タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
