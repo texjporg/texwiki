@@ -305,7 +305,7 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 TeX のアルゴリズムの実装
 
 - [TEX LINE BREAKING ALGORITHM IN JAVASCRIPT](http://www.bramstein.com/projects/typeset/)
-    - [Crawdad](https://github.com/madriska/crawdad): Knuth-Plass linebreaking for Ruby
-    - [Text::KnuthPlass](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/lib/Text/KnuthPlass.pm) - Breaks paragraphs into lines using the TeX algorithm (Perl による実装)
+- [Crawdad](https://github.com/madriska/crawdad): Knuth-Plass linebreaking for Ruby
+- [Text::KnuthPlass](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/lib/Text/KnuthPlass.pm) - Breaks paragraphs into lines using the TeX algorithm (Perl による実装)
 
 などがあります。
