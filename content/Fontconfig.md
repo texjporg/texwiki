@@ -9,19 +9,19 @@ pukiwiki: "Fontconfig"
 
 ## [Fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/) {#yb562832}
 
-### ChangeLog {#s8bf189d}
+Fontconfig は、主に Linux などで用いられる、システムのフォント設定情報を様々なアプリケーションに提供するためのライブラリです。提供される情報には、利用可能なフォント、フォントの代替・置換に関する情報、フォントのレンダリングに関する設定などを含みます。TeX 関連では [XeTeX](/XeTeX/)、また GIMP、PDF ビューアの [Poppler](/Poppler/) やその他様々なソフトウェアで利用されています。フォント設定を一元化する重要なライブラリですので、インストールしたらきちんと設定しましょう。
 
-[http://cgit.freedesktop.org/fontconfig/](http://cgit.freedesktop.org/fontconfig/)
+***
 
-### Installation {#c70d9c03}
+***
 
-#### MinGW {#j2ea43a1}
+## インストール {#c70d9c03}
 
-- Install [nkf](/nkf/).
+### MinGW {#j2ea43a1}
 
-- Install libxml2.
+最新のものにこだわらないのであれば、[GTK+ Project](http://www.gtk.org/) の [Windows 用バイナリ](http://www.gtk.org/download/win32.php)をもらってくるのが簡単です。FreeType2 や libxml2 に依存しています。
 
-- Install Fontconfig.
+ソースからビルドする場合は、例えば
 
 ```
 $ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.94.tar.bz2
@@ -45,7 +45,11 @@ $ make install
 $ popd
 ```
 
-fc-match で Ryumin-Light と GothicBBB-Medium を確認します．
+などとします。
+
+## 設定 {#a1be93d1}
+
+Fontconfig は [Poppler](/Poppler/) などの PDF ビューアでも用いられるので、基本的な設定はきちんと済ませておきましょう。まずは fc-match で、Ryumin-Light と GothicBBB-Medium がどのようなフォントで代替されるかを確認してみます。
 
 ```
 $ fc-match Ryumin-Light
@@ -54,9 +58,12 @@ $ fc-match GothicBBB-Medium
 mingliu.ttc: "MingLiU" "Regular"
 ```
 
-デフォルトでは日本語のフォントが埋め込まれていない PDF ファイルの明朝体とゴシック体が同じフォントで表示されてしまいます．<br>
-そこで明朝体とゴシック体を適切に表示するため，C:\MinGW\etc\fonts\local.conf を作成して編集します．<br>
-fc-list で MS Mincho と MS Gothic がリストに存在するかどうか確認します．<br>
+デフォルトでは日本語のフォントが埋め込まれていない PDF ファイルの明朝体とゴシック体が同じフォントで表示されてしまいます。
+そこで明朝体とゴシック体を適切に表示するための設定を行いましょう。
+
+### MinGW での設定 {#j76fced9}
+
+fc-list で MS Mincho と MS Gothic がリストに存在するかどうか確認します。
 
 ```
 $ fc-list | nkf -W8 -s | grep "MS Mincho"
@@ -68,7 +75,9 @@ $ fc-list | nkf -W8 -s | grep "MS Gothic"
 C:/Windows/fonts/msgothic.ttc: MS Gothic,ＭＳ ゴシック:style=Regular,標準
 ```
 
-C:\MinGW\etc\fonts\local.conf を作成して以下のように編集します．
+（nkf をインストールしていなければ nkf の部分は省いてください）
+
+C:\MinGW\etc\fonts\local.conf （具体的な場所は異なる場合があります） を作成して以下のように編集します．
 
 ***
 
@@ -112,9 +121,9 @@ C:\MinGW\etc\fonts\fonts.conf の71行目に記述されている
 <include ignore_missing="yes">local.conf</include>
 ```
 
-を追加します．
+を追加します。
 
-fc-match で Ryumin-Light と GothicBBB-Medium を確認します．
+fc-match で Ryumin-Light と GothicBBB-Medium を確認します。
 
 ```
 $ fc-match Ryumin-Light
@@ -122,3 +131,29 @@ msmincho.ttc: "MS Mincho" "Regular"
 $ fc-match GothicBBB-Medium
 msgothic.ttc: "MS Gothic" "Regular"
 ```
+
+のようになれば大丈夫です。
+
+## ユーティリティ {#jdee1352}
+
+### fc-cache と fc-cat {#x382dffd}
+
+fc-cache はフォントディレクトリにあるフォント情報のキャッシュを作成します。fc-cat はキャッシュの内容を表示します。
+
+### fc-list と fc-match {#ie082f07}
+
+fc-list は利用可能なフォントのリストを表示します。引数なしで実行するとすべてのフォントがリストされます。
+
+```
+fc-list :lang=ja
+```
+
+とすると、和文フォントとして利用可能なフォントがリストされます。
+
+fc-match はあるパターンに最も良くマッチするフォントを表示します。
+
+```
+ fc-match :weight=bold:lang=ar
+```
+
+は、ウェイトが bold でアラビア語をカバーするフォントを表示します。
