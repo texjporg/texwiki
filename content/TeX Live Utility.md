@@ -33,3 +33,9 @@ TeX Live に随時追加・アップデートされるパッケージなどを�
 ### ChangeLog {#l3e78d70}
 
 - [https://github.com/amaxwell/tlutility/commits/master](https://github.com/amaxwell/tlutility/commits/master)
+
+### 不具合 {#j90a2420}
+
+［2015.6.14現在］TeX Live ユーティリティからアップデートできない不具合が見つかっています。対処法はこちら（[forum: 1598](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1598)）に。ターミナルから tlmgr を使ってのアップデートには問題ありません。
+
+- [https://github.com/amaxwell/tlutility/issues/17](https://github.com/amaxwell/tlutility/issues/17)
