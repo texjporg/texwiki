@@ -9,7 +9,7 @@ pukiwiki: "TeXとフォント"
 
 ## TeX とフォント {#se78b0cf}
 
-TeX におけるフォントの基礎知識や、LaTeX をはじめとしたシステム上でのフォントの利用等についての情報を提供します。
+TeX におけるフォントの基礎知識や、LaTeX でのフォントの利用等についての情報を提供します。
 
 ***
 
@@ -19,7 +19,7 @@ TeX におけるフォントの基礎知識や、LaTeX をはじめとしたシ�
 
 TeX あるいは LaTeX におけるフォントの利用については、なかなか思うようにいかなかったり、使いたいフォントがあってもどうしたらよいのか分からなかったりして、困った経験がある方も多いと思われます。
 
-これは TeX におけるフォントの利用が、TeX が WYSIWYG でないために、直接的・直観的に把握するのが困難であったり、見通しの良いものではないことに起因します。TeX は一般に、ユーザが接する「フォント」そのものについては利用しません。そこから抽出した情報の一部を利用するのみです。TeX の仕事はページ上に文字を綺麗に並べることですが、その仕事には具体的な文字（グリフ）の形を知る必要はなく、文字の大きさなどを知るのみで十分だからです。また、TeX の登場以降に広く普及することとなった、TrueType や PostScript フォントを直接、簡単に扱える枠組みを整えるといったことは、TeX のそのものに対する拡張としては行われませんでした。
+これは TeX におけるフォントの利用が、TeX が WYSIWYG でないために、直観的でなかったり、見通しの良いものではないことに起因します。TeX は一般に、ユーザが接する「フォント」そのものについては利用しません。そこから抽出した情報の一部を利用するのみです。TeX の仕事はページ上に文字を綺麗に並べることですが、その仕事には具体的な文字（グリフ）の形を知る必要はなく、文字の大きさなどを知るのみで十分だからです。また、TeX の登場以降に広く普及することとなった、TrueType や PostScript フォントを直接、簡単に扱える枠組みを整えるといったことは、TeX そのものに対する拡張としては行われませんでした。
 
 このことは、例えば LaTeX で TrueType や PostScript などのフォントを利用する際に、かなりの手間と不思議なファイル群の導入や各種設定の必要性をもたらします。LaTeX で PostScript Type1 フォントを利用して出力を得る際のおおまかな流れは、
 
@@ -72,7 +72,7 @@ TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそ�
    tabular,t       fixed-width figures
 ```
 
-があります。上付き・下付き数字（\textsu{}、\textinf{}）、スワッシュ・イタリック（\textsw{}）やいくつかの文字に関しては装飾付のものがあります（\textin{}）。数式用はありません。
+があります。上付き・下付き数字（\textsu{}、\textinf{}）、スワッシュ・イタリック（\textsw{}）やいくつかの文字に関しては装飾付のものがあります（\textin{}）。数式用はありません。（TeXLive 2015 では ebgaramond-math というパッケージがあり、数式用の記号の一部を EB Garamond で置き換えます）
 
 CTAN のページは
 
@@ -154,17 +154,17 @@ TeX (LaTeX) が登場した当時は，日本語フォントは「本文用明�
 
 dvipdfmx を使用して IPAex を埋め込んだ PDF を作成するには以下のようにします。
 
-- W32TeX では
-
-    ```
-    dvipdfmx -f ipaex.map dviname
-    ```
-
 - TeX Live（MacTeX）では
 
     ```
     $ ptex2pdf -e -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex （pLaTeX 用）
     $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex （upLaTeX 用）
+    ```
+
+- W32TeX では
+
+    ```
+    dvipdfmx -f ipaex.map dviname
     ```
 
 ### PDF に埋め込むフォントをあらかじめ設定する {#ge692ee0}
@@ -231,9 +231,7 @@ uplatex
 ### Times 系 {#a0f4fe96}
 
 [STIX フォント](http://www.stixfonts.org/project.html)は
-Scientific and Technical Information Exchange (STIX) フォントプロジェクトによるフォントセットです。LaTeX 用のパッケージもあります。Times フォントと良く調和し、互換なようにデザインされています。CTAN サイト
-
-- [http://www.ctan.org/tex-archive/fonts/stix/](http://www.ctan.org/tex-archive/fonts/stix/)
+Scientific and Technical Information Exchange (STIX) フォントプロジェクトによるフォントセットです。LaTeX 用のパッケージもあります。Times フォントと良く調和し、互換なようにデザインされています。
 
 [newtx](/newtx/) は Michael Sharpe によりメンテナンスされている Times 互換なフォントです。Young U. Ryu による txfonts がもとになっています。newtx, newtxtt, newpx, boondox, fontaxes があります。newpx は Palatino と調和するように設計されています。
 
@@ -247,17 +245,30 @@ Scientific and Technical Information Exchange (STIX) フォントプロジェク
 ### AMS Euler {#db3b09f8}
 
 AMS の委託により Hermann Zapf が作成し、Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
-Computer Modern とはあまりよく調和しません。
 
 2008年に大規模な改定が行われたようです。
 
 - ["Reshaping Euler — a collaboration with Hermann Zapf"](http://www.tug.org/TUGboat/tb29-2/tb92hagen-euler.pdf) (PDF). TUGboat 29 (2): 283–7.
 
+Computer Modern とはあまりよく調和なかったりと、あわせる本文用フォントを選ぶようです。前述の『コンピュータの数学』の原著では Concrete フォントが本文に使われています。
+
 ### その他 {#u91f5292}
+
+その他には、
 
 - [mathabx](/mathabx/)：Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
 - [yhmath](/yhmath/)：通常より大きいものまで含まれた根号や括弧などのフォントです。
 - ceo.sty：安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
+
+などがあります。商用フォントでは、
+
+- Lucida フォントは Charles Bigelow と Kris Holmes よってデザインされたフォントで、[TUG によって配布されているもの](http://tug.org/store/lucida/)は数式のサポートも含みます。
+
+- Adobe の Minion Pro は Adobe 製品によくバンドルされていることもあって、使う方も多いようです。[Minion Math](http://www.typoma.com/en/fonts.html) という数式用のフォントもあります。
+
+- Times と合わせる数式用フォントとして [MathTime](/MathTime/) があります。
+
+などもあります。
 
 ## フォント関連の基本的なファイル {#tf6d4ac5}
 
@@ -683,6 +694,25 @@ TrueType 系のフォントで従属欧文を使うには、いくつかの手�
 
 ### 従属欧文を使う（2） {#wd7ba471}
 
-（1）の手法で簡単に従属欧文を使うことができますが、PDF ファイルを開いてプロパティをみるとわかるように、欧文部分と和文部分が別フォントとして埋め込まれます。別にこれで問題があるわけではないのですが、ここではこれらを一つのフォントにまとめ上げる方法を紹介します。ここから先はかなり高度で複雑な話題となります。
+（1）の手法で簡単に従属欧文を使うことができますが、PDF ファイルを開いてプロパティをみるとわかるように、欧文部分と和文部分が別フォントとして埋め込まれます。別にこれで問題があるわけではないのですが、ここではこれらを一つのフォントにまとめ上げる方法を紹介します。ここから先はやや高度で複雑な話題となります。
+
+基本的な方針としては、VF を使って従属欧文フォントと和文フォントをひとつの　OFM （Omega Font Metric）にマップします。OFM は TFM の 16 bit 拡張版です。
 
 % [全角半角メモ](</全角半角メモ/>)に、任意の和文フォント（プロポーショナル・半角部分含む）を使う試みのドキュメント（未完成；2006 年頃のもの）が見つかりました。「TeX とフォント」のほうに移植できるといいと思います。 -- アセトアミノフェン
+
+## エラーへの対処 {#y1a465db}
+
+ここではフォントを新たに導入する際に起こる問題への対処法について記述します。
+
+フォント関連のエラーとしてありがちなのは、「フォントがない」や「フォントが見つからない」です。
+単純なエラーですが、TeX やその関連プログラムは、フォントがない場合でもなんらかのフォールバックを試み、その結果、複雑なエラーメッセージを返すことがあるため、単純なものであることに気づかない場合があります。特にエラーメッセージに mktextfm や mktexpk などの文字列が含まれる場合は気を付けましょう。
+
+mktextfm は TFM ファイルを生成するためのプログラムで、要求された TFM ファイルが存在しない場合に TeX により実行されます。
+
+mktexpk　は PK フォントを生成するためのプログラムです。PK フォントは TeX で用いられるビットマップ形式のフォントで、出力ドライバはアウトラインフォントが存在しない場合はフォールバックとしてこれの生成を試みます。
+
+上記ふたつのプログラムはたいがい失敗します。
+
+参考文献
+
+- [(La)TeX font errors cheat sheet](http://www.ctan.org/tex-archive/info/tex-font-errors-cheatsheet)
