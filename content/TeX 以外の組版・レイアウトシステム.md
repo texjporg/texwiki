@@ -108,6 +108,10 @@ XSLT は TeX のマクロを代用するほどのプログラミング言語と�
 
 ということのようです。
 
+### 関連リンク {#g9895063}
+
+- [Apache FOP --- TeX 以外の組版 ～初歩の初歩～](http://konoyonohana.blog.fc2.com/blog-entry-121.html)
+
 ### [GNU troff](http://www.gnu.org/software/groff/) {#s340bffc}
 
 Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
