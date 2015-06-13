@@ -75,7 +75,7 @@ $ fc-list | nkf -W8 -s | grep "MS Gothic"
 C:/Windows/fonts/msgothic.ttc: MS Gothic,ＭＳ ゴシック:style=Regular,標準
 ```
 
-（nkf をインストールしていなければ nkf の部分は省いてください）
+（[nkf](/nkf/) をインストールしていなければ nkf の部分は省いてください）
 
 C:\MinGW\etc\fonts\local.conf （具体的な場所は異なる場合があります） を作成して以下のように編集します．
 
