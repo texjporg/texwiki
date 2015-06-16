@@ -123,8 +123,6 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [TeX はバッドノウハウか？](http://d.hatena.ne.jp/apkz/20040311#p4)
 - [バッドノウハウについて、ふたたび](http://d.hatena.ne.jp/apkz/20040316#p1)
 - [バッドノウハウと TeX と書籍組版](http://d.hatena.ne.jp/apkz/20040322/p1)
-- [mktexlsr は有害だ (mktexlsr Considered Harmful)](http://0xcc.net/misc/mktexlsr.html)
-- [texmf の ls-R の必要性](http://d.hatena.ne.jp/lugia/20110923/1316736886)
 - [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
     - [TeXソース内での全角スペースは有害](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700#p3831)
 - [表示的意味論の二重四角括弧の出し方，および latex のバッドノウハウについて](http://alohakun.blog7.fc2.com/blog-entry-302.html)
