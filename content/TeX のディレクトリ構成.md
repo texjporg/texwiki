@@ -199,4 +199,10 @@ TDS は次の &lt;category&gt; を予約しています。
 
 % 少しずつ作業を進めていきたいと思います．
 
+% mktexlsr に関する話のリンク（整理前）
+
+- TeX Forum での話題（賛否両論）：[forum:454](https://okumuralab.org/tex/mod/forum/discuss.php?d=454), [forum:700](https://okumuralab.org/tex/mod/forum/discuss.php?d=700), [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
+- [mktexlsr は有害だ (mktexlsr Considered Harmful)](http://0xcc.net/misc/mktexlsr.html)
+- [texmf の ls-R の必要性](http://d.hatena.ne.jp/lugia/20110923/1316736886)
+
 [^1]: TEXMF とは，emTeX/em と emM/emETAemF/emONT という意味です。
