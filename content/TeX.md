@@ -129,11 +129,6 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
 - [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
 
-#### 私は TeX を続けるよ！ {#gadbb81f}
-
-- [私がTeXを使い続ける理由 - くるるの数学ノート](http://d.hatena.ne.jp/kururu_goedel/20100220/1266648484)
-- [私がTeXを使い続ける1個+6個の理由 - わさっき](http://d.hatena.ne.jp/takehikom/20100218/1266441239)
-
 ### イベント {#df4b96d9}
 
 #### TeXユーザの集い {#e38306bd}
