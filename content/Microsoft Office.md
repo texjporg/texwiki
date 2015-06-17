@@ -21,9 +21,12 @@ pukiwiki: "Microsoft Office"
 
 ### アドイン {#w6cd2e21}
 
-[プレゼンツール - TeX Wiki](</プレゼンツール/>) を参照．
+[プレゼンツール](</プレゼンツール/>)を参照．
 
 ### LaTeX との比較 {#k678548a}
+
+いわゆる「ワープロソフト」と LaTeX はまったく異なるツールで，見た目だけに注目した単純な比較はナンセンスです。
+[はじめての方へ](</はじめての方へ/>)もお読みください。
 
 - [学術論文を書くときは Microsoft Word と LaTeX のどちらが効率的か？｜Colorless Green Ideas](http://id.fnshr.info/2014/12/21/word-or-latex/)
 - [PLOS ONE: An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069)
