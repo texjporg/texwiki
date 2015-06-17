@@ -7,24 +7,23 @@ pukiwiki: "Microsoft Office"
 
 # Microsoft Office
 
-## [Microsoft Office](http://office.microsoft.com/ja-jp/) {#f4dcc3e1}
+## Microsoft Office {#f4dcc3e1}
+
+言わずと知れた Word, Excel, PowerPoint, Access など。
+
+### 公式サイト {#g3f5316d}
 
 - [Microsoft Office - Office.com](http://office.microsoft.com/ja-jp/)
 - [ホーム | Microsoft Office](http://www.microsoft.com/ja-jp/office/)
 - [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
-- [Office IT 担当者向けブログ](http://blogs.technet.com/b/office_jp/)
 - [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
-- [MSOfficeJP(@MSOfficeJP) - Twilog](http://twilog.org/MSOfficeJP)
-- [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
-- [http://ja.wikibooks.org/wiki/Microsoft_Office](http://ja.wikibooks.org/wiki/Microsoft_Office)
+- [Microsoft Office Online](https://office.com/)
 
-## [Microsoft Office Online](https://office.com/) {#n56aace2}
-
-## アドイン {#w6cd2e21}
+### アドイン {#w6cd2e21}
 
 [プレゼンツール - TeX Wiki](</プレゼンツール/>) を参照．
 
-## TeX との比較 {#k678548a}
+### TeX との比較 {#k678548a}
 
 - [学術論文を書くときは Microsoft Word と LaTeX のどちらが効率的か？｜Colorless Green Ideas](http://id.fnshr.info/2014/12/21/word-or-latex/)
 - [PLOS ONE: An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069)
@@ -46,8 +45,13 @@ pukiwiki: "Microsoft Office"
 - [10 の理由に増やしてみた](http://ufcpp.wordpress.com/2010/02/19/10-%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AB%E5%A2%97%E3%82%84%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
 - [WordとLaTeX－どちらを使うべきか？](http://www.forte-science.co.jp/news/articles/20090106/wordorlatex.cfm)
 
-## Excel {#q611269f}
+### 「ネ申 Excel」への警鐘 {#q611269f}
 
-- [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
-- [http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
+- [「ネ申Excel」問題](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
+- [「ネ申Excel」問題（スライド）](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
 - [「ネ申Excel」はなぜ問題なのか](http://it.srad.jp/story/13/10/23/037221)
+
+### 外部リンク {#i993cecd}
+
+- [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
+- [Microsoft Office - Wikibooks](http://ja.wikibooks.org/wiki/Microsoft_Office)
