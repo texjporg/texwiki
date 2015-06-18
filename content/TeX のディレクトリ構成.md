@@ -7,7 +7,7 @@ pukiwiki: "TeX のディレクトリ構成"
 
 # TeX のディレクトリ構成
 
-## TeX のディレクトリ構成 (TDS) {#u528ce3e}
+## TeX のディレクトリ構成 (TDS) {#tds}
 
 <!-- こういう内容，美文書には（付録に）記載されていますが，Web ではほとんど解説されていないので -->
 <!-- 有用そうです． -->
@@ -27,7 +27,7 @@ TDS (TeX Directory Structure) とは，TeX の標準的なディレクトリ構�
 
 ***
 
-### TEXMF ツリー・多重 TEXMF ツリーとは {#ae6fe566}
+### TEXMF ツリー・多重 TEXMF ツリーとは {#texmf}
 
 現在の TeX ディストリビューションのほとんどは TEXMF ツリー[^1]を採用しています。
 TEXMF ツリーには，パッケージやクラスファイル・フォント・スクリプト・説明文書などが規則に従って分類され，収録されています。
@@ -58,7 +58,7 @@ W32TeX では
 
 以下では，これらのディレクトリを一般に <strong>texmf</strong> とします。
 
-### TEXMF ツリーの中身 {#y056dcf8}
+### TEXMF ツリーの中身 {#texmfdir}
 
 <strong>texmf</strong> ルートディレクトリの下位には，主に次のようなディレクトリがあります：
 
@@ -76,7 +76,7 @@ W32TeX では
 TeX でファイル検索を行う kpathsea ライブラリは，このディレクトリ構成に従って必要なファイルを検索します。
 kpathsea ライブラリは多重 TEXMF ツリーにも対応しています。
 
-### TeX のマクロ，LaTeX のパッケージなど：texmf/tex {#edefb928}
+### TeX のマクロ，LaTeX のパッケージなど：texmf/tex {#tex}
 
 LaTeX のパッケージなどのファイルは，「TeX のフォーマット→パッケージの名前」に従って配置します。
 
@@ -100,11 +100,11 @@ LaTeX のパッケージなどのファイルは，「TeX のフォーマット�
 例えば，[hyperref](/hyperref/) パッケージは <strong>texmf</strong>/tex/latex/hyperref/ 以下に置かれているはずです。
 これは hyperref パッケージが LaTeX フォーマットを必要とすることに由来します。
 
-### フォント：texmf/fonts {#o1f2354d}
+### フォント：texmf/fonts {#fonts}
 
 フォントに関するファイルは，大きく分けて2種類あります。
 
-#### フォントファイル本体の配置 {#y073dd9a}
+#### フォントファイル本体の配置 {#fonts1}
 
 多くのファイルは「ファイルの種類→メーカー→書体名」の順で分類します。
 
@@ -146,7 +146,7 @@ LaTeX のパッケージなどのファイルは，「TeX のフォーマット�
 - texmf/fonts/tfm/public/cm/cmr10.tfm
 - texmf/fonts/type1/adobe/utopia/putr.pfa
 
-#### フォント関連ファイルの配置 {#n5f4bd62}
+#### フォント関連ファイルの配置 {#fonts2}
 
 以下の3つは他の種類のファイルとは性質が違います。
 これらも TDS によって予約されています。
@@ -163,7 +163,7 @@ LaTeX のパッケージなどのファイルは，「TeX のフォーマット�
 ただし，updmap(-sys) プログラムを使うようにすれば，ほとんどの場合 dvips のみを使えば済みます。
 lig ファイルは afm2pl というプログラムによって使われます。
 
-### ドキュメント：texmf/doc {#f44c25a3}
+### ドキュメント：texmf/doc {#doc}
 
 ほとんどのパッケージには，解説書や見本といったドキュメントが付属しています。
 ドキュメントには，テキストファイル，TeX のソースファイル，PDF ファイル，PostScript ファイル，DVI ファイルなどが含まれます。
@@ -197,12 +197,61 @@ TDS は次の &lt;category&gt; を予約しています。
 
 それぞれの &lt;category&gt; の中では base というディレクトリが TDS によって予約されています。
 
-% 少しずつ作業を進めていきたいと思います．
+### 一覧表の作成と更新 (mktexlsr) について {#mktexlsr}
 
-% mktexlsr に関する話のリンク（整理前）
+LaTeX がファイルを読み込むときは TeX のディレクトリの中から目当てのファイルを探します。
+しかし，ファイルが膨大になるにつれ，プログラムがいちいち「ファイルがどこにあるのか」を検索するのに時間がかかるようになってしまいました。
+そのため，「どこにどのファイルがあるのか」を記述した一覧表をあらかじめ作っておき，それをもとにファイルを探すという仕組みが作られました。
+この一覧表の実体は ls-R というファイルで，これは Unix 系の
 
-- TeX Forum での話題（賛否両論）：[forum:454](https://okumuralab.org/tex/mod/forum/discuss.php?d=454), [forum:700](https://okumuralab.org/tex/mod/forum/discuss.php?d=700), [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
+```
+ls -R /usr/share/texmf-dist >ls-R
+```
+
+という一覧表を作るコマンドに由来します。
+ls-R の中身はまさに ls -R の結果が吐き出されたようなもので，すなわちファイルの一覧を再帰的に深くまで表示したものです。
+この ls-R の中身がプラットフォームによって微妙に異なるという問題を防ぐため，TeX では mktexlsr という専用のプログラムが配布されるようになりました。
+mktexlsr は TEXMFDIST, TEXMFLOCAL などをたどり，そこにあるファイルのリストを記録した ls-R ファイルを新規に生成あるいは更新します[^2]。
+
+手元のシステムでこの一覧表を利用しているかどうかは，ls-R というファイルが存在するかどうかを調べるとわかります。
+
+- [TeX Live](</TeX Live/>) では，この ls-R という一覧表でファイルを管理しています。したがって，TeX Live でパッケージを追加した場合は
+
+    ```
+    mktexlsr
+    ```
+
+    を実行して一覧表を更新する必要があります。
+    Unix 系であれば管理者権限が必要ですので，
+
+    ```
+    sudo mktexlsr
+    ```
+
+    として実行します。
+
+- [W32TeX](/W32TeX/) では，一覧表を使う運用と全く使わない運用の両方が可能です。一覧表を使用している場合は
+
+    ```
+    mktexlsr
+    ```
+
+    を実行して一覧表を更新します。一覧表を使用しない場合は，deltexlsr を実行することで ls-R ファイルを削除することができます。
+
+近年はハードディスク等も高速になっていることから，必ずしも ls-R が必要でなくなったようです。
+
+```
+rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
+```
+
+として ls-R を削除してしまっても構わない場合もあるでしょう。
+削除した方がファイルの追加を気がねなく行えるという意見もあります。
+
+- mktexlsr に関する TeX Forum での話題（賛否両論）：[forum:454](https://okumuralab.org/tex/mod/forum/discuss.php?d=454), [forum:700](https://okumuralab.org/tex/mod/forum/discuss.php?d=700), [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
 - [mktexlsr は有害だ (mktexlsr Considered Harmful)](http://0xcc.net/misc/mktexlsr.html)
 - [texmf の ls-R の必要性](http://d.hatena.ne.jp/lugia/20110923/1316736886)
 
+% 少しずつ作業を進めていきたいと思います．
+
 [^1]: TEXMF とは，emTeX/em と emM/emETAemF/emONT という意味です。
+[^2]: 環境によっては，コマンド名は mktexlsr ではなく texhash という名前になっているかもしれません。
