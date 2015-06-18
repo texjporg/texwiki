@@ -98,6 +98,6 @@ jsMath.js の mathchardef テーブル内に追加
 - [Google Closure Library](https://developers.google.com/closure/library/)
 - 数式エディタデモがアーカイブ内 closure/goog/demos/editor/equationeditor.html にあります．
 
-## 関連リンク {#l39ce401}
+### 関連リンク {#l39ce401}
 
-- [Ubuntu　　Blog や Website で数式を表現](http://kurumatorajirou.blogspot.jp/2013/01/ubuntublog-website.html)
+- [Ubuntu　Blog や Website で数式を表現](http://kurumatorajirou.blogspot.jp/2013/01/ubuntublog-website.html)
