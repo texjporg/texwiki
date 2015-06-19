@@ -68,6 +68,10 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 - Windows 版は EMF 画像の出力に，Google が開発した
     [PDFium](</Google Chrome/#l83f1380>) という PDF レンダリングエンジンを利用しています．
 
+### トラブルシューティング・よくある質問 {#faq}
+
+[TeX2img FAQ](</TeX2img FAQ/>) を参照してください。
+
 ### リンク {#links}
 
 #### 作者による解説など {#project}
