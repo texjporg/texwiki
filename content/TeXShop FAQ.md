@@ -264,7 +264,11 @@ pTeX では，JIS X 0208 の範囲の文字しか扱えないため，JIS 第二
 
 が通らなくなるといったトラブルの原因になります。
 
-資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+- [Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+
+[XeLaTeX](/XeTeX/) の場合も utf パッケージが使えませんので，同様に OFF にする必要があります。
+
+- [XeLaTeXでエラーが出る問題は，TeXShopのutf-Exportの設定項目をオンにしていたからいけなかったようだ。このチェックを外したら問題なくコンパイルされるようになった。](https://twitter.com/tolle_et_lege/status/265589597638119424)
 
 ### 環境設定 → 詳細 → 保存時の処理 → UTF-8-MAC を UTF-8 に自動変換 とは何？ {#i7c17a71}
 
