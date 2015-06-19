@@ -56,156 +56,6 @@ dvipdfmx での主な変更・拡張は
 
 XeTeX であえて X&#x44;V ファイルを出力したい場合は -no-pdf オプションをつけます．
 
-## 不具合 {#mb96765c}
-
-### dvipdfmx Version 20130624 でのみ起こる不具合 {#j774c931}
-
-以下の不具合はいずれも TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では問題ない，Version 20130624 に特有のものです．
-最新のバージョンにアップデートして下さい．
-
-#### [TikZ](/TikZ/) を使用した DVI ファイルを処理すると \*\* ERROR \*\* Invalid object type: 10 {#m3330a51}
-
-TeX Live 2014 ([Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739)) で修正されました．
-
-- \[[dvipdfmx\] tikz のパターン描画でエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081)
-
-#### [hyperref](/hyperref/) で作成したリンクやしおりが機能しない {#x496f09a}
-
-TeX Live 2014 ([Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759)) で修正されました．
-
-- [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1225)
-- [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
-
-#### A5 サイズ (148mm×210mm) で出力できない {#r12477d0}
-
-TeX Live 2014 ([Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398)) で修正されました．
-
-- [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
-
-### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. {#z5173081}
-
-TeX Live 2013 ([Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787)) で修正されました．
-
-- [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/56967.html)
-- [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=917)
-
-### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない {#za070e82}
-
-TeX Live 2013 ([Revision 27479](http://www.tug.org/svn/texlive?view=revision&revision=27479), [Revision 27480](http://www.tug.org/svn/texlive?view=revision&revision=27480)) で修正されました．
-
-dvipdfmx-20120420, xdvipdfmx-0.7.8, dvipdfm, version 0.13.3TL-j-p1d では，[Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できません．
-
-```
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{charter}
-\begin{document}
-chass\'e du G\"obe
-\end{document}
-```
-
-以下のように \\' や \\" の直後に {}$\\!\\!\\!$ を追加すれば表示できるようになりました．
-
-```
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{charter}
-\begin{document}
-chass\'{}$\!\!\!$e du G\"{}$\!\!\!$obe
-\end{document}
-```
-
-なお，Type1 フォントの合成済字形（これが seac を使っている）でなくて，TeX 上の合成で事足りるのであれば，アクセント自動置換をごまかして TeX 上の合成を強制することにすればよいでしょう．([アクセント合成済文字を避ける](http://d.hatena.ne.jp/zrbabbler/20120609/1339257531) を参照)
-
-```
-\documentclass{article}
-\usepackage[T1]{fontenc}
-\usepackage{charter}
-\begin{document}
-chass\'{\empty e} du G\"{\empty o}be /
-CHASS\'{\empty E} DU G\"{\empty O}BE
-\end{document}
-```
-
-- [Lucida fonts (T1) and dvipdfm.](https://groups.google.com/group/comp.text.tex/browse_thread/thread/429dd838fe75ea40/d26feb9baf78f9d6)
-- [Diacritics from Bitstream Charter are not translated to PDF](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=639373)
-- [dvipdfmxがBitstream Charterでバグる！](https://twitter.com/h_okumura/status/209849248987090945)
-- [seac のバグは「構成要素の文字（例だと \\'{} e \\"{} o）を文書のどこかに紛れ込ませる」と逃げられる，はず．](https://twitter.com/zr_tex8r/status/209880317023109120)
-- [dvipdfm(x)のseacバグ](https://twitter.com/golden_lucky/status/209924362785140736)
-
-## 注意点 {#n8c7de22}
-
-### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される {#n5909871}
-
-map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中に \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加することで解決できます．
-
-- [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
-- [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
-- [https://twitter.com/zr_tex8r/status/422752198724825090](https://twitter.com/zr_tex8r/status/422752198724825090)
-- [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
-- [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
-
-### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
-
-一度 [ImageMagick](/ImageMagick/) の convert コマンドを通しておくことで回避できます．
-問題の画像を foo.png とするとき，
-
-```
-$ convert foo.png foo_c.png
-```
-
-として，できた foo_c.png の方を取り込みます．
-
-現在わかっているこの現象の発生条件は「取り込む PNG 画像が cHRM チャンクを持ちかつ gAMA チャンクを持たないこと」です（正確にはこれに加えて iCCP, sRGB チャンクも持たないこと）．
-Adobe 製品で出力した PNG が該当することがあるようです．
-
-チャンクの情報を調べるには，ImageMagick の identify コマンドが便利です．
-
-```
-$ identify -verbose foo.png
-Image: foo.png
-  Format: PNG (Portable Network Graphics)
-  Mime type: image/png
-...
-  Properties:
-    date:create: 2015-05-18T08:31:39+09:00
-    date:modify: 2015-05-18T08:31:39+09:00
-    png:bKGD: chunk was found (see Background color, above)
-    png:cHRM: chunk was found (see Chromaticity, above)
-    png:gAMA: gamma=0.45454544 (See Gamma, above)
-...
-```
-
-このように，埋め込まれているチャンクの情報が表示されます．
-もし png:cHRM がありかつ png:gAMA がない場合は発生条件にあてはまるため，色が変わる可能性があります．
-一度 convert を通すと gAMA チャンクが付加されるため，正しく取り込まれるようになります．
-
-（注意）sRGB チャンクについては，
-
-```
-    png:sRGB: intent=0 (Perceptual Intent)
-```
-
-という表示があっても実際には埋め込まれていないことがあるようです（詳細要調査）．
-
-問題の背景には，PNG 画像のガンマ補正機能があります．
-PNG には制作環境の情報を埋め込むことで，異なるディスプレイ環境でも色の変化を軽減するように補正する機能があります．
-この補正のための情報が cHRM チャンクと gAMA チャンクに書き込まれます．
-PNG の仕様書では cHRM チャンクがある場合は gAMA チャンクも書き込まれるべきとなっているのですが，ソフトウェアの設定によっては cHRM チャンクだけが書き込まれることがあります．
-この場合，デコードの際に不適当なガンマ値で補正されてしまうことがあります．
-実際に，Adobe 製品などではガンマ値を 2.2 （Windows や最近の Mac の標準）として PNG を出力しますが，dvipdfmx では gAMA チャンクがない場合にガンマ値を 1.0 として処理してしまいます．
-このため，色調に変化が生じてしまいます．
-
-なお，ICC プロファイルや sRGB チャンクが埋め込まれている場合はそちらの情報が優先されるため，この問題は発生しません．
-
-- [forum:1579](https://okumuralab.org/tex/mod/forum/discuss.php?d=1579)
-
-### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
-
-ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます．
-
-- [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
-
 ## 使い方 {#qabeb774}
 
 変換したい DVI ファイル名を引数として与えると，デフォルトの設定で PDF ファイルへの変換が行われます．
@@ -618,7 +468,7 @@ dvipdfmx はダウンサンプルは行いません．
 
 透明度や埋め込み ICC プロファイルなどの情報も保持されます．
 色深度が 16bpc のときは 8bpc へと変換されるという制限があります．
-メタデータの保持はできていません．
+TeXLive2015 版では XMP メタデータを保持します．
 
 <strong>JPEG</strong> は比較的よくサポートされています．
 
@@ -946,6 +796,175 @@ dvipdfmx には<em>出力結果が PDF/X 準拠かどうか検証したり，準
 - 境界ボックス: MediaBox と TrimBox が適切に設定されていることを確認します．
 
 外部画像はトラブルの元なので特に要注意です．また PostScript と PDF \special は何を引き起こすか分からないので使われていないことを確認しましょう (dvitype で DVI ファイルを検証するとよいでしょう)．
+
+## よくある問題 {#d092ab9c}
+
+Dvipdfmx は問題の多いプログラムであると言われています。Dvipdfmx で問題が起こる場合は，dvips + Adobe Distiller を使用しましょう．
+
+### EPS 画像 {#wc8e72e0}
+
+EPS の画像が表示されない，位置がずれるなどの問題は頻発します．
+Dvipdfmx は EPS (PostScript) には対応していません．EPS 画像を取り込む際には，EPS を PDF へ変換する外部プログラムが呼ばれ，それが行われます．この際に不具合が起こります．
+
+### 用紙サイズと向き {#ma6fa008}
+
+LaTeX で用紙サイズや向きを指定したのに，生成された PDF ファイルに反映されないと悩む人がいます．それもそのはずで，LaTeX (TeX) が処理結果として出力する DVI フォーマットには，用紙サイズや用紙の向きという概念はないのです．Dvipdfmx の入力である DVI ファイルにそのような情報が記載されていない以上，どうにもならないので，何らかの方法でそれを与えてやる必要があります．
+
+Dvipdfmx のオプションや，用紙サイズ・向きの情報を無理やり埋め込む \special コマンドを利用します．詳しくは「使い方」の項や「special コマンド」の項を参照してください．
+
+### 処理が遅い {#m56055d3}
+
+EPS ファイルを使っていないか確認しましょう．EPS を PDF へ変換する外部プログラムが呼び出され，その処理に時間がかかります．EPS の使用を辞めるか，前述の画像キャッシュ機能を使うかで対応します．
+
+## 不具合 {#f5e1d97d}
+
+### dvipdfmx Version 20130624 でのみ起こる不具合 {#j774c931}
+
+以下の不具合はいずれも TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では問題ない，Version 20130624 に特有のものです．
+最新のバージョンにアップデートして下さい．
+
+#### [TikZ](/TikZ/) を使用した DVI ファイルを処理すると \*\* ERROR \*\* Invalid object type: 10 {#m3330a51}
+
+TeX Live 2014 ([Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739)) で修正されました．
+
+- \[[dvipdfmx\] tikz のパターン描画でエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081)
+
+#### [hyperref](/hyperref/) で作成したリンクやしおりが機能しない {#x496f09a}
+
+TeX Live 2014 ([Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759)) で修正されました．
+
+- [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1225)
+- [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
+
+#### A5 サイズ (148mm×210mm) で出力できない {#r12477d0}
+
+TeX Live 2014 ([Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398)) で修正されました．
+
+- [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
+
+### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. {#z5173081}
+
+TeX Live 2013 ([Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787)) で修正されました．
+
+- [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/56967.html)
+- [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=917)
+
+### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない {#za070e82}
+
+TeX Live 2013 ([Revision 27479](http://www.tug.org/svn/texlive?view=revision&revision=27479), [Revision 27480](http://www.tug.org/svn/texlive?view=revision&revision=27480)) で修正されました．
+
+dvipdfmx-20120420, xdvipdfmx-0.7.8, dvipdfm, version 0.13.3TL-j-p1d では，[Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できません．
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\begin{document}
+chass\'e du G\"obe
+\end{document}
+```
+
+以下のように \\' や \\" の直後に {}$\\!\\!\\!$ を追加すれば表示できるようになりました．
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\begin{document}
+chass\'{}$\!\!\!$e du G\"{}$\!\!\!$obe
+\end{document}
+```
+
+なお，Type1 フォントの合成済字形（これが seac を使っている）でなくて，TeX 上の合成で事足りるのであれば，アクセント自動置換をごまかして TeX 上の合成を強制することにすればよいでしょう．([アクセント合成済文字を避ける](http://d.hatena.ne.jp/zrbabbler/20120609/1339257531) を参照)
+
+```
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\begin{document}
+chass\'{\empty e} du G\"{\empty o}be /
+CHASS\'{\empty E} DU G\"{\empty O}BE
+\end{document}
+```
+
+- [Lucida fonts (T1) and dvipdfm.](https://groups.google.com/group/comp.text.tex/browse_thread/thread/429dd838fe75ea40/d26feb9baf78f9d6)
+- [Diacritics from Bitstream Charter are not translated to PDF](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=639373)
+- [dvipdfmxがBitstream Charterでバグる！](https://twitter.com/h_okumura/status/209849248987090945)
+- [seac のバグは「構成要素の文字（例だと \\'{} e \\"{} o）を文書のどこかに紛れ込ませる」と逃げられる，はず．](https://twitter.com/zr_tex8r/status/209880317023109120)
+- [dvipdfm(x)のseacバグ](https://twitter.com/golden_lucky/status/209924362785140736)
+
+## 注意点 {#n8c7de22}
+
+### upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される {#n5909871}
+
+map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中に \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加することで解決できます．
+
+- [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
+- [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
+- [https://twitter.com/zr_tex8r/status/422752198724825090](https://twitter.com/zr_tex8r/status/422752198724825090)
+- [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
+- [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
+
+### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
+
+一度 [ImageMagick](/ImageMagick/) の convert コマンドを通しておくことで回避できます．
+問題の画像を foo.png とするとき，
+
+```
+$ convert foo.png foo_c.png
+```
+
+として，できた foo_c.png の方を取り込みます．
+
+現在わかっているこの現象の発生条件は「取り込む PNG 画像が cHRM チャンクを持ちかつ gAMA チャンクを持たないこと」です（正確にはこれに加えて iCCP, sRGB チャンクも持たないこと）．
+Adobe 製品で出力した PNG が該当することがあるようです．
+
+チャンクの情報を調べるには，ImageMagick の identify コマンドが便利です．
+
+```
+$ identify -verbose foo.png
+Image: foo.png
+  Format: PNG (Portable Network Graphics)
+  Mime type: image/png
+...
+  Properties:
+    date:create: 2015-05-18T08:31:39+09:00
+    date:modify: 2015-05-18T08:31:39+09:00
+    png:bKGD: chunk was found (see Background color, above)
+    png:cHRM: chunk was found (see Chromaticity, above)
+    png:gAMA: gamma=0.45454544 (See Gamma, above)
+...
+```
+
+このように，埋め込まれているチャンクの情報が表示されます．
+もし png:cHRM がありかつ png:gAMA がない場合は発生条件にあてはまるため，色が変わる可能性があります．
+一度 convert を通すと gAMA チャンクが付加されるため，正しく取り込まれるようになります．
+
+（注意）sRGB チャンクについては，
+
+```
+    png:sRGB: intent=0 (Perceptual Intent)
+```
+
+という表示があっても実際には埋め込まれていないことがあるようです（詳細要調査）．
+
+問題の背景には，PNG 画像のガンマ補正機能があります．
+PNG には制作環境の情報を埋め込むことで，異なるディスプレイ環境でも色の変化を軽減するように補正する機能があります．
+この補正のための情報が cHRM チャンクと gAMA チャンクに書き込まれます．
+PNG の仕様書では cHRM チャンクがある場合は gAMA チャンクも書き込まれるべきとなっているのですが，ソフトウェアの設定によっては cHRM チャンクだけが書き込まれることがあります．
+この場合，デコードの際に不適当なガンマ値で補正されてしまうことがあります．
+実際に，Adobe 製品などではガンマ値を 2.2 （Windows や最近の Mac の標準）として PNG を出力しますが，dvipdfmx では gAMA チャンクがない場合にガンマ値を 1.0 として処理してしまいます．
+このため，色調に変化が生じてしまいます．
+
+なお，ICC プロファイルや sRGB チャンクが埋め込まれている場合はそちらの情報が優先されるため，この問題は発生しません．
+
+- [forum:1579](https://okumuralab.org/tex/mod/forum/discuss.php?d=1579)
+
+### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
+
+ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます．
+
+- [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
 
 ## 関連リンク {#me536d1a}
 
