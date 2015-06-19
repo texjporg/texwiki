@@ -34,14 +34,23 @@ TeX2img は，LaTeX ソースコードを入力して画像に変換するツー
 一見して画像が生成したように見えても，思うような出力にならない場合，TeX2img の設定で「少々のエラーは無視して画像化を強行する」が ON になっていることがあります。
 この機能は「LaTeX によるタイプセットで多少の警告が出ていても，PDF ファイルが出来さえすれば，その先のステップに無理やり進む」というものですが，警告が出ている場合は往々にして期待とは異なる結果になります。
 
-### Mac 版で ! Undefined control sequence. {#xb2c033d}
+- 失敗例の解説：[TeX2img FAQ でも作ろうかなあ](http://d.hatena.ne.jp/acetaminophen/20150615/1434383196)
 
-```
-\UTF{????} と出る
-```
+### TeX2img が突然動かなくなった {#a402a767}
 
-pLaTeX を使う場合，通常は JIS 第一水準・第二水準の漢字までしか出力できませんが，otf パッケージを利用すると出力できます。
-Mac 版ではこれを利用し，設定画面で「JIS X 0208 外の文字を \UTF{xxxx} に置換」を ON にしておくと，ユーザが入力した JIS 第一水準・第二水準を超える漢字を \UTF{????} に勝手に置換します。
+Windows 版 TeX2img がある日突然動かなくなるという現象が発生することがあります。
+
+- 失敗例：[TeX2imgが画像ファイル生成してくれない現象発生してる](https://twitter.com/pavlov469/status/595438306181062656)
+
+この場合，原因は「一時フォルダに拡張子が .tmp のファイルが大量にあること」であるかもしれません。
+定期的に一時フォルダを掃除することをおすすめします。
+
+- TeX2img for Windows 1.5.3 での対処：[GetTempFileNameで「ファイルがあります」](http://abenori.blogspot.jp/2015/05/gettempfilename.html)
+
+### Mac 版で ! Undefined control sequence. \UTF{xxxx} と出る {#xb2c033d}
+
+pLaTeX を使う場合，通常は JIS 第一水準・第二水準の漢字までしか出力できませんが，[otf パッケージ](/OTF/)を利用すると出力できます。
+Mac 版ではこれを利用し，設定画面で「JIS X 0208 外の文字を \UTF{xxxx} に置換」を ON にしておくと，ユーザが入力した JIS 第一水準・第二水準を超える漢字を \UTF{xxxx} に勝手に置換します。
 結果としてユーザは範囲を意識することなく pLaTeX を使えるようになるのですが，この場合プリアンブルに
 
 ```
@@ -72,7 +81,7 @@ Operand stack:
 逆に gs9.15 以上に対して epswrite を指定すると
 
 ```
-Unknown device: eps2write
+Unknown device: epswrite
 Unrecoverable error: undefined in .uninstallpagedevice
 Operand stack:
     defaultdevice
@@ -91,7 +100,6 @@ Error: /VMerror in --.pushpdf14devicefilter--
 GPL Ghostscript 9.10: Unrecoverable error, exit code 1
 VM status: 3 4658400 5960088
 Current allocation mode is local
-Error: /VMerror in --.pushpdf14devicefilter-- 
 ```
 
 これは，何らかの理由で Ghostscript が綺麗なアウトライン化に失敗し，細かい膨大なパスに分割されてしまうことによるものです。
@@ -144,3 +152,18 @@ TeX2img はベクター画像について，文字をアウトライン化する
 [Illustrator](/Illustrator/) や [Inkscape](/Inkscape/) のようなベクター画像編集ツールに LaTeX の出力を取り込みたい場合，アウトラインをとった EPS ファイルに変換するのが安全です。
 アウトライン化しておけば，フォントがインストールされていないという理由で文字化けするようなこともありません。
 Mac 版は Illustrator に「配置」するという機能もあります。
+
+## 既知の問題（未解決） {#ddfe3887}
+
+### EPS ファイルを出力すると，PostScript 言語が圧縮されていて読めない {#l3bf36cb}
+
+Ghostscript 9.15 以降を利用している場合に，デフォルトでページ記述部分が圧縮されてバイナリになるために起こります。
+
+- [Ghostscript の EPS バイナリ出力への対処](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)
+
+### Windows 版で EMF ファイルを出力すると破線が消える {#w156ec2a}
+
+TeX2img の Windows 版では EMF ファイルの出力に [PDFium](</Google Chrome/#l83f1380>) を使用していますが，どうやら PDFium の問題のようです。
+
+- [pdfiumdraw の EMF 出力検証](http://d.hatena.ne.jp/acetaminophen/20150606/1433606734)
+- [EMFに振り回されている（2015年6月14日）](http://abenori.blogspot.jp/2015/06/emf-pdfium-fxwin32gdipext.html)
