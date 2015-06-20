@@ -28,13 +28,15 @@ TeX2img は，LaTeX ソースコードを入力して画像に変換するツー
 
 ### 数式を入力してもエラーが出て画像が生成しない（または画像が変になる） {#w3327c6d}
 
-しばしば誤解されがちですが，TeX2img は数式画像生成ツールではなく「あらゆる LaTeX ソースを画像に変換するツール」です。
-したがって，数式を画像化するには数式環境に入れる必要があります。
+しばしば誤解されがちですが，TeX2img は数式画像生成に特化したツールではなく，日本語など地の文を含めて「あらゆる LaTeX 文書を画像に変換するツール」として作られています。
+したがって，通常の LaTeX と同様に，数式用コマンドを使うには，$ ... $ や \\\[ ... \\\] ，\begin{align\*} ... \end{align\*} などの数式環境に入れる必要があります。
 
 一見して画像が生成したように見えても，思うような出力にならない場合，TeX2img の設定で「少々のエラーは無視して画像化を強行する」が ON になっていることがあります。
 この機能は「LaTeX によるタイプセットで多少の警告が出ていても，PDF ファイルが出来さえすれば，その先のステップに無理やり進む」というものですが，警告が出ている場合は往々にして期待とは異なる結果になります。
 
 - 失敗例の解説：[TeX2img FAQ でも作ろうかなあ](http://d.hatena.ne.jp/acetaminophen/20150615/1434383196)
+
+もし TeX2img を数式画像生成のためだけに使いたい場合は，[後の項目](</TeX2img FAQ/#m4a21526>)を参照してください。
 
 ### TeX2img が突然動かなくなった {#a402a767}
 
@@ -116,7 +118,7 @@ Ghostscript の問題を回避するには
 
 とすることが有効かもしれません。
 
-## よくある質問 {#ta8b7d06}
+## よくある質問・Tips {#ta8b7d06}
 
 ### Word や PowerPoint に画像を貼り付けたいのですが… {#q983d536}
 
@@ -153,6 +155,62 @@ TeX2img はベクター画像について，文字をアウトライン化する
 アウトライン化しておけば，フォントがインストールされていないという理由で文字化けするようなこともありません。
 Mac 版は Illustrator に「配置」するという機能もあります。
 
+### 画像の横幅を常に一定にして出力したい {#s84b19a5}
+
+一定の横幅を持つ \parbox を薄い線で囲ってやる命令 \whitebox を用意することによって，横幅一定の画像を出力することができます。
+
+プリアンブル設定ウィンドウに
+
+```
+\documentclass[fleqn,dvipdfmx]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{color}
+\pagestyle{empty}
+\definecolor{gray1}{gray}{0.99}
+\newcommand{\whitebox}[2]{\fcolorbox{gray1}{white}{\parbox{#1}{#2}}}
+```
+
+と書き，本文（\begin{document} ... \end{document} の内部）に
+
+```
+\whitebox{20zw}{\centering $\displaystyle f(x)=\int_a^x g(t) \,dt$ }
+```
+
+と書くと，次のように出力されます。
+
+一定幅の画像中に中央揃えで出力されています。ほとんど目には見えませんが，薄い枠線で囲っているわけです。
+
+なお，上の例では中央揃えで出力するために \centering をつけてありますが，これを外せば左揃え，\hfill に変えれば右揃えにできます。
+
+### 数式画像生成だけのために TeX2img を使いたい {#m4a21526}
+
+[上の項目](</TeX2img FAQ/#w3327c6d>)で述べたとおり，TeX2img は「あらゆる LaTeX 文書を画像化する」ことを想定して作られています。
+しかし，「日本語はワープロやプレゼンソフトで書くから，数式だけ画像化してくれればいいんだ」という場合は，文書全体が \\\[ ... \\\] で囲まれるようにプリアンブルで設定しておくと，毎回 \\\[ ... \\\] で囲う必要がなくて便利かもしれません。
+
+プリアンブル設定ウィンドウに
+
+```
+\documentclass[fleqn,papersize]{jsarticle}
+\usepackage{amsmath,amssymb}
+\pagestyle{empty}
+\makeatletter
+\AtBeginDocument{\[}
+\expandafter\expanndafter\expandafter\def
+\expandafter\expanndafter\expandafter\@enddocumenthook
+\expandafter\expanndafter\expandafter{%
+\expandafter\]\@enddocumenthook}
+\makeatother
+```
+
+と書き，本文（\begin{document} ... \end{document} の内部）に例えば
+
+```
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+```
+
+のように書けば，本文全体が \\\[ ... \\\] で囲まれていることになり，そのまま入力すれば display math mode になります。
+ただし，\\\[ ... \\\] 内に空行 (\par) は入れられませんので，空行を入れないように注意してください。
+
 ## 既知の問題（未解決） {#ddfe3887}
 
 ### EPS ファイルを出力すると，PostScript 言語が圧縮されていて読めない {#l3bf36cb}
@@ -163,7 +221,7 @@ Ghostscript 9.15 以降を利用している場合に，デフォルトでペー
 
 ### Windows 版で EMF ファイルを出力すると破線が消える {#w156ec2a}
 
-TeX2img の Windows 版では EMF ファイルの出力に [PDFium](</Google Chrome/#l83f1380>) を使用していますが，どうやら PDFium の問題のようです。
+これは EMF ファイルの出力に使用している pdfiumdraw という補助ツールの問題で，現在検証中です。
 
 - [pdfiumdraw の EMF 出力検証](http://d.hatena.ne.jp/acetaminophen/20150606/1433606734)
 - [EMFに振り回されている（2015年6月14日）](http://abenori.blogspot.jp/2015/06/emf-pdfium-fxwin32gdipext.html)
