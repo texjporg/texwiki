@@ -10,7 +10,10 @@ pukiwiki: "PDFの作り方"
 
 ## PDF の作り方 {#td997c6f}
 
-投稿論文や予稿で PDF を要求されることが増えました．ここでは PDF の上手な作り方を解説します．
+投稿論文や予稿で PDF を要求されることが増えました。
+ここでは PDF の上手な作り方を解説します。
+
+<em>Adobe Acrobat DC (Adobe Acrobat Distiller DC を含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
 
 ***
 
@@ -18,101 +21,7 @@ pukiwiki: "PDFの作り方"
 
 ## PDF を作るためのソフトウェア {#mde22763}
 
-### TeX から PDF を作成するツール {#d8e4c485}
-
-<em>Adobe Acrobat DC (Adobe Acrobat Distiller DC を含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。</em>
-
-- upLaTeX + dvipdfmx
-- upLaTeX + dvips + ps2pdf (Ghostscript)
-- upLaTeX + dvips + Adobe Acrobat Distiller DC
-- [pLaTeX-ng](/pTeX-ng/)
-- [pdfLaTeX](/pdfTeX/)
-- [LuaLaTeX](/LuaTeX/)
-- [XeLaTeX](/XeTeX/)
-- 確認用 PDF ビューア →
-    [SumatraPDF](/SumatraPDF/),
-    [Skim](/Skim/),
-    [Evince](/Evince/),
-    [Okular](/Okular/),
-    [zathura](/zathura/),
-    [qpdfview](/qpdfview/)
-
-詳細は [LaTeX で PDF](</PDFの作り方/#k0e3280f>) をご覧下さい．
-
-### PDF 作成ソフト一覧 {#w48b82bc}
-
-[Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) も参照．
-
-[Ghostscript](/Ghostscript/) (ps2pdf)，[dvipdfmx](/dvipdfmx/)，[pTeX-ng](/pTeX-ng/)，[pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[xdvipdfmx](/dvipdfmx/)，([XeTeX](/XeTeX/)) の他に，次のソフトがあります．
-
-- フリーソフトウェア，オープンソース
-    - [LibreOffice](/LibreOffice/)/[Apache OpenOffice](/LibreOffice/) は PDF 出力機能を持っています．
-    - [PDFCreator](http://www.pdfforge.org/) (オープンソース)
-        - [PDFCreator 日本語対応版](http://super777.o.oo7.jp/page004.html)
-    - [qvPDF](http://sourceforge.net/projects/qvpdf/) (オープンソース)
-    - [CubePDF](http://www.cube-soft.jp/cubepdf/) ([オープンソース](https://github.com/cube-soft/cubepdf))
-        - IE 用ツールバーの [Cubeツールバー](http://www.cube-soft.jp/cubetoolbar/) と [Baidu IME](http://ime.baidu.jp/) も含まれているようです．
-- フリーウェア（無償）
-    - [Google Drive](https://drive.google.com/)
-        は PDF 形式で保存できます．
-    - [Zoho Docs](http://www.zoho.jp/docs/)
-        は PDF 形式で保存できます．
-    - [BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php) (Free)
-    - [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp) +
-        [Ghostscript](/Ghostscript/) (Free)
-        - PDF Writer のページには “Requires PS2PDF converter such as Ghostscript (recommended).” のくだりがあります．
-    - [PDFill PDF and Image Writer](http://www.pdfill.com/freewriter.html) (Free)
-    - [doPDF](http://www.dopdf.com/ja/) (Free)
-        - doPDF は [Ghostscript](/Ghostscript/) を使用していないようです．
-    - [PDF24 Creator](http://en.pdf24.org/) (Free)
-    - [PrimoPDF](http://www.primopdf.com/) (Free)
-        - [日本語版](http://www.xlsoft.com/jp/products/primopdf/)あり．
-    - [Perfect PDF Master](http://en.soft-xpansion.eu/products/freeware/master/) (Free)
-    - [Tiny PDF](http://www.tinypdf.com/) (Free)
-    - [PDF reDirect](http://www.exp-systems.com/) (Free)
-        - メニューなどのインターフェイスは英語です．
-        - 出力ファイル指定では日本語ファイル名の指定は無理なようです．
-    - [ImagePrinter Free](http://code-industry.net/imageprinter.php)
-        (Free)
-    - [pdf995](http://www.pdf995.com/) (Free)
-        - 日本語も通るとのことです (Thanks: 池田さん)．中身は Ghostscript のようです ([qa:27294](https://okumuralab.org/~okumura/texfaq/qa/27294.html), [qa:27345](https://okumuralab.org/~okumura/texfaq/qa/27345.html), [qa:27434](https://okumuralab.org/~okumura/texfaq/qa/27434.html))．
-        - One Way Ticket To PDF - pdf995 [(1)](http://pcweb.mycom.co.jp/column/toolexp/008/) [(2)](http://pcweb.mycom.co.jp/column/toolexp/009/) [(3)](http://pcweb.mycom.co.jp/column/toolexp/010/) 使い方の説明が詳しいページ．
-    - [RedMon](http://pages.cs.wisc.edu/~ghost/redmon/)
-        - [RedMon による PDF 作成](</PDFの作り方/#mbf7209f>)
-
-- 有償，商用，シェアウェア
-    - OS X ならプリント機能を持ったどんなアプリケーションからも PDF 出力できます．
-    - [Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html)
-        ([Adobe Systems](http://www.adobe.com/jp/))
-    - [Microsoft Office](</Microsoft Office/>) Microsoft Office 2013 は PDF 1.7 をサポート
-    - [KINGSOFT Office](http://www.kingsoft.jp/office/) マイクロソフトオフィスと高い互換性をもつ総合オフィスソフト
-    - [EIOffice](http://www.eio.jp/) マイクロソフトオフィスと高い互換性をもつ統合オフィス環境
-    - [「かんたんPDF」シリーズ](http://www.e-frontier.co.jp/kantan-pdf/)
-        ([イーフロンティア](http://www.e-frontier.co.jp/))
-    - [いきなりPDF シリーズ](http://www.sourcenext.com/titles/pdf/?i=com_top)
-        ([ソースネクスト](http://www.sourcenext.com/))
-    - [SkyPDF クライアントソフトウェア](http://www.skycom.jp/product_client.html) ([スカイコム](http://www.skycom.jp/))
-    - [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
-    - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
-    - [pdfFactory](http://www.nsd.co.jp/fineprint/pdf.html) と [FinePrint](http://www.nsd.co.jp/fineprint/) ([NSD](http://www.nsd.co.jp/))
-    - [PDF Creator](http://www.gdocinspired.com/products/pdf-creator) ([Global Graphics Software](http://www.globalgraphics.com/))
-    - [Expert PDF Creator](http://www.visagesoft.com/)
-    - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp)
-
-### PDF 編集ソフト一覧 {#se764b4f}
-
-- 無償，フリーウェア，オープンソース
-    - [pdftk](/pdftk/) PDF ファイルに対して様々なことができるツール
-    - [PDFedit](http://pdfedit.petricek.net/) PDF ファイルエディタ
-    - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり，結合したり，回転したりできる
-    - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
-    - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する（名前も同じですが下記とは別物）
-    - [pdfcrop](/pdfcrop/) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
-        - ディレクトリの区切りに \ (バックスラッシュ) を使用すると !!! Error: pdfTeX run failed! といったエラーが発生するのでディレクトリの区切りには / (スラッシュ) を使用してください．
-    - [QPDF](/QPDF/) Web 表示用に最適化したり，暗号化したりできます．[W32TeX](/W32TeX/) に含まれています．
-    - [Xpdf](/Xpdf/) PDF 操作ツール（テキスト抽出，[PostScript](/PostScript/) や HTML への変換など）．[W32TeX](/W32TeX/) に含まれています．
-    - [pdfsizeopt](https://github.com/pts/pdfsizeopt) PDF file size optimizer
-    - [DiffPDF](http://www.qtrac.eu/diffpdf.html) DiffPDF is used to compare two PDF files—textually or visually.
+PDF ファイルを作るためのソフトウェアや，PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) という項目にまとめられています。
 
 ## LaTeX で PDF {#k0e3280f}
 
