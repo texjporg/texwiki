@@ -31,7 +31,7 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。
 - [「TeX」の読み方はテフ、それともテック？](http://www.kksanshusha.jp/booklab/archives/1184)
 - [Wikipedia.ja:TeX](https://ja.wikipedia.org/wiki/TeX)
 
-### TeX 処理系 {#g6783551}
+### TeX 処理系とその拡張 {#g6783551}
 
 Knuth によるオリジナルの TeX に対し，Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
 それぞれの処理系の解説ページをご覧ください．
