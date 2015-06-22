@@ -307,7 +307,7 @@ extractbb hoge.pdf
 ```
 
 とすると hoge.xbb というファイルが生成されます．
-extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたは Windows PowerShell またはコマンドプロンプトから実行するコマンドです．
+extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたは Windows PowerShell またはコマンド プロンプトから実行するコマンドです．
 
 - [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
 - [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
@@ -433,7 +433,7 @@ LaTeX + dvips で作った PS ファイルを変換する際に “Warning: Ryum
 
 - ただし，フォントが埋め込まれないと仕様に違反した PDF になることがあるようです．
 
-Distiller をコマンドプロンプトから使うには
+Distiller をコマンド プロンプトから使うには
 
 ```
 start hoge.ps
