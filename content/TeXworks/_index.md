@@ -84,7 +84,7 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 
 ### TeX Live の場合 {#aa8923ee}
 
-デフォルトでは和文フォントを埋め込みません．IPAexフォントを埋め込む場合は Windows PowerShell またはコマンドプロンプトから
+デフォルトでは和文フォントを埋め込みません．IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
 
 ```
 kanji-config-updmap-sys ipaex
