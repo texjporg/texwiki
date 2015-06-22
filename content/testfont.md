@@ -9,7 +9,12 @@ pukiwiki: "testfont"
 
 ## あるフォントの一覧を作成して，表示を確認する {#me3d4919}
 
-<strong>目次</strong>
+TeX を使って，あるフォントに含まれる文字の一覧を作成して，コードポイントと記号の対応表を出力することができます．
+フォントの見た目を確認したい場合や，記号の番号を知りたい場合に役立ちます．
+
+***
+
+***
 
 ### testfont のタイプセット {#da579b57}
 
@@ -64,6 +69,8 @@ echo pzdr | tex tab
 Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
 に説明があります．
 
+- [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
+
 ### 他の方法 {#f991f19c}
 
 testfont のインタラクティブな入力を手間だと感じる場合は
@@ -81,13 +88,10 @@ testfont や fntproof では TFM 名を調べる必要がありますが，fontt
 のような「エンコーディング，ファミリー，シリーズ，シェイプ」という指定ができます[^2]．
 ファミリー名のほうがもう少しアクセスしやすいと思われます（美文書にもファミリー名を掲載）．
 
-### 関連リンク {#kf4154e6}
-
 - [fonttable.sty: LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/fonttable.html)
 - [TeX のフォントの文字一覧表：testfont](http://acetaminophen.hatenablog.com/entry/2015/02/14/004641)
-- [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
 
-## 実際に埋め込まれるフォントに関する注意 {#fa18401d}
+### 実際に埋め込まれるフォントに関する注意 {#fa18401d}
 
 PDF ではフォントが埋め込まれていないと代替フォントが充てられます． <!-- -DVI や PS では『美文書』と同じフォントで見えるが，PDF だと異なることがある． -->
 例えば上の例で挙げた Zapf Dingbats フォントの場合は，埋め込まれていなければ
@@ -111,7 +115,7 @@ W32TeX の dvipdfmx で URW のフォントを埋め込むのに使う map は d
 <!-- dvipdfmx コマンドを掛ければよい（こうしておくと -->
 <!-- Adobe の Times, Helvetica, も埋め込まれます）． -->
 
-## 一覧表の利用例 {#j0bf8600}
+### 一覧表の利用例 {#j0bf8600}
 
 - 記号の番号が分かれば，たとえば \[ を出力したければ，
 
@@ -125,13 +129,23 @@ W32TeX の dvipdfmx で URW のフォントを埋め込むのに使う map は d
     " が 1 つだけあるとそれよりうしろの文字列がすべてピンク色になってしまって不便です[^3]．よって，8 進の表記が出てくる
     testfont は便利！
 
-## Bad Know-How {#zebdcd9a}
+### Bad Know-How {#zebdcd9a}
 
 上の例では pzdr というフォント名が何気なく出ているが，実際はどう調べるのか？
 
 pzdr のような TFM 名を知るのは少々難しいので，これを知るためのトリックの説明です．
 ただし，上述のとおり fonttable.sty を使えば，TFM を知る必要がなくなります．
-それでも，この項（コメントアウト部分も含む）は，フォントの扱いに対する理解を深める助けとなるはずです． <!-- / まともに読むのは難しいのですか? --> <!-- / 私が下に書いた方法は，いかにも Bad Know-How なので，上のコメントは， --> <!-- / 表に出すことに十分値すると思うのですが． --> <!-- / どんな書物か参考文献としてページ番号とともに列挙していただけると --> <!-- / なお嬉しいと思います． --> <!-- / TeX のフォント関係については知識が乏しく，pzdr などと言ったときに --> <!-- / tfm を指しているのか mf なのか，type1 なのかといったあたりが --> <!-- / 分からないので，よろしくご教授ください． -->
+それでも，この項（コメントアウト部分も含む）は，フォントの扱いに対する理解を深める助けとなるはずです．
+[TeX とフォント](</TeXとフォント/>)にも簡単な説明があります．
+
+<!-- / まともに読むのは難しいのですか? -->
+<!-- / 私が下に書いた方法は，いかにも Bad Know-How なので，上のコメントは， -->
+<!-- / 表に出すことに十分値すると思うのですが． -->
+<!-- / どんな書物か参考文献としてページ番号とともに列挙していただけると -->
+<!-- / なお嬉しいと思います． -->
+<!-- / TeX のフォント関係については知識が乏しく，pzdr などと言ったときに -->
+<!-- / tfm を指しているのか mf なのか，type1 なのかといったあたりが -->
+<!-- / 分からないので，よろしくご教授ください． -->
 
 <!-- 「難しい」かどうかは主観の問題でしょう． -->
 <!-- とりあえず，ごく簡単な記述をいれてみます． -->
@@ -189,22 +203,23 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
 <!-- TeX 関連ツールでのフォント関係の設定等に関する日本語で読める -->
 <!-- 優れた解説があるかもしれません． -->
 
-- 『美文書...』などの書物でファミリ名を調べて，そのまま打ち込んだだけでは NG となることが多い<br>
-    (例)
+- 『美文書...』などの書物でファミリ名を調べて，そのまま打ち込んだだけでは NG となることが多いでしょう．
 
-    ```
-    $ tex testfont
-    This is TeX, Version 3.141592 (Web2C 7.5.2)
-    encTeX v. Feb. 2003, the reencoding enabled. initialized from format, the reencoding enabled.
-    (c:/usr/local/share/texmf/tex/plain/base/testfont.tex
+（例）
 
-    Name of the font to test = pzd
-    kpathsea: Running mktextfm pzd
-    Cannot find pzd.mf.
-    kpathsea: Appending font creation commands to missfont.log.
-    ! Font \testfont=pzd not loadable: Metric (TFM) file not found.
-    （以下略）
-    ```
+```
+$ tex testfont
+This is TeX, Version 3.141592 (Web2C 7.5.2)
+encTeX v. Feb. 2003, the reencoding enabled. initialized from format, the reencoding enabled.
+(c:/usr/local/share/texmf/tex/plain/base/testfont.tex
+
+Name of the font to test = pzd
+kpathsea: Running mktextfm pzd
+Cannot find pzd.mf.
+kpathsea: Appending font creation commands to missfont.log.
+! Font \testfont=pzd not loadable: Metric (TFM) file not found.
+（以下略）
+```
 
 - おおよそのフォントでは \[ファミリ名+シェイプ+サイズ (8 とか 10 とか)\] で何とかなるが，Bad Know-How としては，cmr10 は普通よく使われているので，ないはずがない．よって，
 
@@ -213,24 +228,18 @@ pzdr のような TFM 名を知るのは少々難しいので，これを知る�
     /cmr10
     ```
 
-    などとして，cmr10 のまわりのフォント名を見れば（ある程度の規則性さえ見つければ），そこそこ的中する．
+    などとして，cmr10 のまわりのフォント名を見れば（ある程度の規則性さえ見つければ），そこそこ的中します．
 
-- fd ファイルの記述内容を理解できる場合には，
-    fd ファイルを読むとフォントの属性と実際に用いられるフォント名（tfm ファイル名）
-    の対応を知ることができます．
-    上記の ZapfDingbats（エンコーディング，ファミリー，シリーズ，シェイプはそれぞれ，
-    U，pzd，m，n）の場合には，ファイル upzd.fd の中の
+- fd ファイルの記述内容を理解できる場合には，fd ファイルを読むとフォントの属性と実際に用いられるフォント名（tfm ファイル名）の対応を知ることができます．
+    上記の ZapfDingbats（エンコーディング，ファミリー，シリーズ，シェイプはそれぞれ，U，pzd，m，n）の場合には，ファイル upzd.fd の中の
 
     ```
     \DeclareFontShape{U}{pzd}{m}{n}{<->pzdr}{}
     ```
 
-    という記述によってサイズによらずフォント pzdr を適当に拡大・縮小して用いる，
-    ということがわかります．
-    なお，ZapfDingbats は数式用ではない記号ばかり収めたフォントですから，
-    そのようなフォントのエンコーディングは U（不規則あるいは未知のもの）になります．
-    fd ファイルの記述内容あるいは fd ファイルのファイル名のつけ方については，
-    NFSS に関する解説を含む書籍を参照してください．例えば，次のようなものがあります．
+    という記述によってサイズによらずフォント pzdr を適当に拡大・縮小して用いる，ということがわかります．
+    なお，ZapfDingbats は数式用ではない記号ばかり収めたフォントですから，そのようなフォントのエンコーディングは U（不規則あるいは未知のもの）になります．
+    fd ファイルの記述内容あるいは fd ファイルのファイル名のつけ方については，NFSS に関する解説を含む書籍を参照してください．例えば，次のようなものがあります．
 
 - 『LaTeX コンパニオン』（M. Goossens，F. Mittelbach，A. Samarin 共著）
     <!-- 今手元にないのでどのあたりに記述してあるかは確認できませんが，載っていたはずです． -->
