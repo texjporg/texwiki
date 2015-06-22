@@ -37,7 +37,7 @@ C:\w32tex\bin64\nkf.exe
 C:\w32tex\bin\nkf.exe
 ```
 
-- コマンドプロンプトの場合
+- コマンド プロンプトの場合
 
     ```
     >where nkf
