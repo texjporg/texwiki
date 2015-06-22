@@ -9,37 +9,12 @@ pukiwiki: "Illustrator"
 
 ## [Adobe Illustrator CC](http://www.adobe.com/jp/products/illustrator.html) {#w6d2965c}
 
-[Adobe Illustrator CC](http://www.adobe.com/jp/products/illustrator.html) 関連の話題を書き込んでください。<br>
+Illustrator は，アドビシステムズが販売するベクター画像編集ソフトウェア（ドローソフト）です。
+ここでは，TeX や LaTeX と関連づけた利用法を説明します。
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## Summary {#hb466dde}
-
-### リリース情報 {#u178a7b2}
-
-- Adobe Illustrator CC 17.1.0 2014年
-
-情報等
-
-- [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
-- [Illustrator CC の新機能](http://helpx.adobe.com/jp/illustrator/using/whats-new.html)
-
-### トラブル {#id16611b}
-
-Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html), [qa:27942](https://okumuralab.org/~okumura/texfaq/qa/27942.html) のスレッド（未解決）。
-
-### その他 {#a59267c4}
-
-- [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
-    Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
-    - [ファイルダウンロード](http://www.ritsumei.ac.jp/se/~morimoto/files.html)
-
-【参考情報】
-
-- [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
-- \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
-- [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
-- [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
+***
 
 ## Illustrator の図を TeX に {#sa00c636}
 
@@ -766,6 +741,34 @@ var environment = "align*";//補完する際に使う数式環境
 <!-- ただし、このようにして埋め込んだ場合は、前述のように一部のフォントが置換される場合があります。埋め込まれた画像中のフォントは[文字]→[アウトラインを作成]でパスに変換できます。 -->
 
 <!-- リンク配置や埋め込み配置に関する詳細は、[[Illustrator のリンク配置と埋め込み配置の違い:http://support.adobe.co.jp/faq/qadoc/AJ25.nsf/041584e8dbf36c09492569690008402c/0d1c8a5d4ac9e53549256e3600074edc?OpenDocument]] をご参照ください。 -->
+
+## 関連リンク {#ra335219}
+
+### トラブル {#id16611b}
+
+Illustrator CS で CM フォントの数式が変になる [qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html), [qa:27942](https://okumuralab.org/~okumura/texfaq/qa/27942.html) のスレッド（未解決）。
+
+### その他 {#a59267c4}
+
+- [Illustrator用script](http://cms.phys.s.u-tokyo.ac.jp/~morimoto/programs/download.php)
+    Illustrator CS で tex のコマンドをつかって数式を書くことのできる script
+    - [ファイルダウンロード](http://www.ritsumei.ac.jp/se/~morimoto/files.html)
+
+【参考情報】
+
+- [IllustratorのAIファイルを直接LaTeXに貼り付ける](http://qiita.com/hayamiz/items/45ba4bd75b3898150180)
+- \[[Illustrator\] - ちくちく日記](http://d.hatena.ne.jp/akane_neko/searchdiary?word=%2A%5BIllustrator%5D)
+- [Illustrator で作った図を .ai ファイルのまま LaTeX に埋め込む](http://mkdir.g.hatena.ne.jp/ymrl/20121201/1354389731)
+- [雑記 - tex](http://ult.riise.hiroshima-u.ac.jp/~nagato/?tex)
+
+### リリース情報 {#u178a7b2}
+
+- Adobe Illustrator CC 17.1.0 2014年
+
+情報等
+
+- [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
+- [Illustrator CC の新機能](http://helpx.adobe.com/jp/illustrator/using/whats-new.html)
 
 ## コメント {#w6bf2331}
 
