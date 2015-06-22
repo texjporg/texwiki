@@ -135,7 +135,7 @@ $ extractbb foo.pdf
 TeX Live, W32TeX に含まれています．
 『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました．
 
-使い方は，コマンド プロンプトで
+使い方は，Windows PowerShell またはコマンド プロンプトで
 
 ```
 dvipdfmx foo.dvi
@@ -169,7 +169,7 @@ dvipdfmx -f dlbase14.map ファイル名
 なる special コマンドを書いておいてもよいです．(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
 
 次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
-TeX Live で IPAexフォントを埋め込む場合は，コマンド プロンプトから
+TeX Live で IPAexフォントを埋め込む場合は，Windows PowerShell またはコマンド プロンプトから
 
 ```
 kanji-config-updmap-sys ipaex
@@ -208,7 +208,7 @@ upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
 
 と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます．
 
-cid-x.map の場所はコマンドプロンプトから以下のコマンドを実行すれば検索できます．
+cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
 
 ```
 kpsewhich -progname=dvipdfmx -format=map cid-x.map
@@ -307,7 +307,7 @@ extractbb hoge.pdf
 ```
 
 とすると hoge.xbb というファイルが生成されます．
-extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたはコマンドプロンプトから実行するコマンドです．
+extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたは Windows PowerShell またはコマンドプロンプトから実行するコマンドです．
 
 - [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
 - [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
