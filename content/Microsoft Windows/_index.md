@@ -211,77 +211,8 @@ TeXworks, TeXstudio には PDF 用のビューアが組み込まれています�
 
 TeX Live, W32TeX 以外にも Windows で利用可能な TeX ディストリビューションが存在します．
 
-- [Cygwin](/Cygwin/): Windows 上に UNIX のような環境を提供する Cygwin 用に 提供されています．[Cygwin](/Cygwin/) をご覧ください．
-- [MiKTeX](/MiKTeX/): 主に国外で使われている（と思う）TeX ディストリビューションです．pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
-
-<!-- W32TeX から．TeX Liveの項にでも書く？ -->
-<!-- **$TEXMF, $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS [#s503cb80] -->
-<!-- TeX についての解説を読んでいると，$TEXMF，$TEXMFMAIN，$TEXMFLOCAL，$TEXMFPROJECTS -->
-<!-- という単語が出てくることがあります。~ -->
-<!-- ''$TEXMFMAIN'' とは -->
-<!-- TeX をインストールしたフォルダー（ディレクトリ）の中にある -->
-<!-- share/texmf-dist というフォルダーのことを指しています。~ -->
-<!-- ''$TEXMFDIST'' は　''$TEXMFMAIN'' と同じです。~ -->
-<!-- ''$TEXMFLOCAL'' とは -->
-<!-- TeX をインストールしたフォルダーの中にある -->
-<!-- share/texmf-local というフォルダーのことを指しています。~ -->
-<!-- ''$TEXMFPROJECTS'' とはTeX をインストールしたフォルダーの中にある -->
-<!-- share/texmf-projetcs というフォルダーのことを指しています。~ -->
-<!-- 例えば TeX を C:/w32tex/ にインストールしたのなら， -->
-<!-- -$TEXMFMAIN = C:/w32tex/share/texmf-dist -->
-<!-- -$TEXMFLOCAL = C:/w32tex/share/texmf-local -->
-<!-- -$TEXMFPROJECTS = C:/w32tex/share/texmf-projects -->
-<!--  -->
-<!-- となります。~ -->
-<!-- そして ''$TEXMF'' は -->
-<!-- $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS のどれか，もしくは全てのことを指しています。~ -->
-<!--  -->
-<!-- **texmf.cnf の優先順位 [#a06d0a7b] -->
-<!--   $SELFAUTOLOC -->
-<!--   $SELFAUTOLOC/share/texmf-local/web2c -->
-<!--   $SELFAUTOLOC/share/texmf-dist/web2c -->
-<!--   $SELFAUTOLOC/share/texmf/web2c -->
-<!--   $SELFAUTOLOC/texmf-local/web2c -->
-<!--   $SELFAUTOLOC/texmf-dist/web2c -->
-<!--   $SELFAUTOLOC/texmf/web2c -->
-<!--   $SELFAUTODIR -->
-<!--   $SELFAUTODIR/share/texmf-local/web2c -->
-<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
-<!--   $SELFAUTODIR/share/texmf/web2c -->
-<!--   $SELFAUTODIR/texmf-local/web2c -->
-<!--   $SELFAUTODIR/texmf-dist/web2c -->
-<!--   $SELFAUTODIR/texmf/web2c -->
-<!--   $SELFAUTOGRANDPARENT/texmf-local/web2c -->
-<!--   $SELFAUTOPARENT -->
-<!--   $SELFAUTOPARENT/share/texmf-local/web2c -->
-<!--   $SELFAUTOPARENT/share/texmf-dist/web2c -->
-<!--   $SELFAUTOPARENT/share/texmf/web2c -->
-<!--   $SELFAUTOPARENT/texmf-local/web2c -->
-<!--   $SELFAUTOPARENT/texmf-dist/web2c -->
-<!--   $SELFAUTOPARENT/texmf/web2c -->
-<!--  -->
-<!--  -->
-<!--   $SELFAUTOLOC:         バイナリディレクトリ -->
-<!--   $SELFAUTODIR:         バイナリディレクトリより1段階上のディレクトリ -->
-<!--   $SELFAUTOPARENT:      バイナリディレクトリより2段階上のディレクトリ -->
-<!--   $SELFAUTOGRANDPARENT: バイナリディレクトリより3段階上のディレクトリ -->
-<!--  -->
-<!--   但し、ルートディレクトリに達すると、その上は無いので、 -->
-<!--   "ルートディレクトリの上" は、ルートディレクトリに一致する。 -->
-<!--  -->
-<!--   環境変数 TEXMFCNF を定義していなければ、上の順番で存在する全ての -->
-<!--   texmf.cnf が読まれる。同じ変数定義が複数存在する場合、先に読み込んだ -->
-<!--   定義が有効となる。 -->
-<!--  -->
-<!--   W32TeX の場合、配布される texmf.cnf は -->
-<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
-<!--   にある。自分専用の texmf.cnf はこれより優先される -->
-<!--   $SELFAUTODIR/share/texmf-local/web2c -->
-<!--   に置いておけばよい。そうすれば、上書きされて専用の設定が消去 -->
-<!--   されるようなことは無い。自分専用の texmf.cnf には必要最小限度の -->
-<!--   ことを書いておくこと。配布される texmf.cnf に記述してあることを -->
-<!--   専用の texmf.cnf に記述する必要は無い。 -->
-<!--  -->
+- Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
+- [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
 
 [^1]: パッケージがより多く含まれているのは TeX Live です（約3,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量が節約できます．ただし TeX Live もフルインストールせずに最小限のインストールですませればそれほど容量を必要としません．
 [^2]: Windows が標準で「何らかのプログラムに関連づけられたファイル」の拡張子を表示していないのは，「よく知らないユーザがファイル名を変えようとして拡張子ごと変更してしまい，関連づけられたプログラムで開けなくなってしまう」というトラブルを防ぐためです．しかし，LaTeX を使う際にはこの拡張子が目に見えたほうがトラブルは少なくなりますし，単にファイル名変更時に気をつけさえすればいいのです．
