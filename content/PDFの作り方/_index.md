@@ -321,43 +321,10 @@ extractbb は TeX ソースの本文に記述するものではなく，ター�
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです．
 
-dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf
-コマンドで PDF ファイルに変換できます．
-きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます．
-処理速度や使いやすさの観点では，dvips + ps2pdf よりも dvipdfmx のほうがいいかもしれません．
+dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマンドや Adobe Acrobat Distiller DC で PDF ファイルに変換できます．
+ただし，処理速度や使いやすさの観点では dvipdfmx のほうがいいかもしれません．
 
-Adobe Acrobat DC をお持ちであればダブルクリックすれば，Adobe Acrobat Distiller DC が PDF に変換してくれます．
-dvipdfmx を使うほうがトラブルは少ないかもしれません．
-
-foo.dvi という DVI ファイルを PostScript ファイル foo.ps
-に変換するには，W32TeX ではコマンド プロンプトで次のように打ち込みます．
-
-```
-dvips -Ppdf -o foo.ps foo.dvi
-```
-
-ハイパーリンクを埋め込んであるなら dvips -Ppdf -z ... のように “-z” も付けます．
-TeX Live では，“-Ppdf” オプションは不要です．
-デフォルトで，pk フォントではなく Type 1 フォントを利用できます．
-
-欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします．
-
-通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller DC
-のデフォルト設定では用紙がレターサイズになってしまいます．
-A4 にするには，ジョブオプションの設定でページサイズを変えるか，あるいは dvips
-に “-t a4” というオプションを付けてください（→ [詳細](/dvips/)）．
-[新ドキュメントクラス](/jsclasses/)なら
-\documentclass\[uplatex,a4paper,papersize\]{jsarticle}
-のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます．
-
-図を挿入する際には
-
-```
-\usepackage[dvips]{graphicx}
-```
-
-のように dvips オプションを指定します．
-図として EPS を挿入できます．
+詳細は [dvips](/dvips/) を参照してください。
 
 ### 図の描き方 {#yca8607c}
 
