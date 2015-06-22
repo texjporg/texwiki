@@ -203,5 +203,5 @@ LaTeX では省略不可能の引数を { } で囲むのに対し，省略可能
 
 - [完全攻略！ LaTeX のマクロ定義](http://qiita.com/zr_tex8r/items/5067307890d36c0e4882)
 - [xparse パッケージでスゴイ LaTeX マクロを作ろう！](http://qiita.com/zr_tex8r/items/50168ad7087516c3e139)
-- Leslie Lamport によるサンプル LaTeX ソース [small2e.tex](https://mirror.ctan.org/macros/latex/base/small2e.tex), [sample2e.tex](https://mirror.ctan.org/macros/latex/base/sample2e.tex)
+- Leslie Lamport によるサンプル LaTeX ソース [sample2e.tex](https://mirror.ctan.org/macros/latex/base/sample2e.tex)
     - お使いの TeX ディストリビューションに含まれているはずです。kpsewhich sample2e.tex などと探してみてください。
