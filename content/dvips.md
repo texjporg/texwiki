@@ -9,7 +9,7 @@ pukiwiki: "dvips"
 
 ## dvips {#y40d302b}
 
-dvips は DVI ファイルを PS ファイルに変換するソフトウェアです．
+dvips は DVI ファイルを PS ファイルに変換するソフトウェアです。
 
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
@@ -21,18 +21,36 @@ dvips は DVI ファイルを PS ファイルに変換するソフトウェア�
 
 ### 使い方 {#a0ed32c6}
 
+foo.dvi という DVI ファイルを PostScript ファイル foo.ps に変換するには，W32TeX では次のように打ち込みます：
+
+```
+dvips -Ppdf -o foo.ps foo.dvi
+```
+
+PS ファイルを引き続き PDF に変換する予定があれば，上のように -Ppdf というオプションを付けておきましょう。
+これは，pk フォントではなく Type 1 フォントを利用するためのもので，W32TeX の場合にこれを省略すると PDF に変換したときに汚くなります。
+TeX Live ではデフォルトで pk フォントではなく Type 1 フォントを利用しますので，“-Ppdf” オプションは不要です。
+欧文 Base14 フォントを埋め込む場合は “-Pdl” といったオプションにします。
+
+ハイパーリンクを埋め込んであるなら
+
+```
+dvips -Ppdf -z -o foo.ps foo.dvi
+```
+
+のように “-z” も付けます。
+
 #### dvips の用紙サイズ指定 {#b1d8723b}
 
-標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize
-には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。
+標準では A4 サイズになり，&#x25;&#x25;BoundingBox や &#x25;&#x25;PaperSize には正しい用紙サイズが出力され，PostScript の用紙設定コマンド a4 が出力されます。
 この用紙設定コマンドが解釈不可能な場合には単に無視されます。
 
 レターサイズにするには dvips に -t letter というオプションをつけて実行します。
 
-私の [新ドキュメントクラス](/jsclasses/) でたとえば
+私の[新ドキュメントクラス](/jsclasses/)でたとえば
 
 ```
-\documentclass[uplatex,papersize,a4paper]{jsarticle}
+\documentclass[a4paper,papersize]{jsarticle}
 ```
 
 のようにオプション \[papersize\] を与えれば，dviファイル中に
@@ -104,8 +122,7 @@ papersize=用紙の幅,用紙の高さ
 @+ { hsize vsize 1 statusdict begin { setpage } stopped pop end } if } if
 ```
 
-ここで dvi ファイル内で papersize
-を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら
+ここで dvi ファイル内で papersize を与えた場合，それが210mm×297mmに±5bpの誤差で一致するなら
 a4 が選ばれます (1bp = 1/72 インチ)。
 これは &#x25;&#x25;BoundingBox を210mm×297mmにし，
 
@@ -125,8 +142,7 @@ ifelse
 ```
 
 を出力します。
-従って Adobe Acrobat Distiller DC で PDF
-に変換する際には正しく A4 サイズになります。
+従って Adobe Acrobat Distiller DC で PDF に変換する際には正しく A4 サイズになります。
 
 また，257mm×364mmに±5bpの誤差で一致するなら jisb4
 が選ばれますが，これは &#x25;&#x25;BoundingBox を257mm×364mmにし，頭の部分で
@@ -149,8 +165,7 @@ ifelse
 という6行を出力します。
 従って PDF に変換した際に正しく JIS B4 サイズになります。
 
-papersize が 5bp の誤差範囲内でどの項目にも一致しないなら，最後の unknown
-が選ばれ，
+papersize が 5bp の誤差範囲内でどの項目にも一致しないなら，最後の unknown が選ばれ，
 
 ```
 statusdict /setpageparams known { hsize vsize 0 1 statusdict begin {
@@ -160,9 +175,34 @@ setpageparams } stopped end } { true } ifelse { statusdict /setpage known
 
 という3行が出力され，プリンタ依存になりますがページサイズが正しく設定されます。
 
-また，dvips に -t a4 というオプションを与えれば，強制的に a4
-という設定が選ばれ，PDF
-に変換した際に正しく A4 サイズになります。
+また，dvips に -t a4 というオプションを与えれば，強制的に a4 という設定が選ばれ，PDF に変換した際に正しく A4 サイズになります。
+
+#### dvips で変換した PS ファイルを PDF に変換する {#m9a341d6}
+
+<strong> <em>注意</em>：最終的に PDF にしたいのであれば，処理速度や使いやすさの点で dvips + ps2pdf よりも [dvipdfmx](/dvipdfmx/) のほうがいいかもしれません。</strong>
+
+dvips で出力した PS ファイルを PDF ファイルに変換するには，以下の方法があります：
+
+- dvips で変換した PS ファイルは [Ghostscript](/Ghostscript/) 付属の ps2pdf コマンドで PDF ファイルに変換できます。きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。
+
+- Adobe Acrobat DC をお持ちであれば，PS ファイルをダブルクリックすれば Adobe Acrobat Distiller DC が PDF に変換してくれます。
+
+通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller DC のデフォルト設定では用紙がレターサイズになってしまいます。
+A4 にするには，ジョブオプションの設定でページサイズを変えるか，あるいは dvips に “-t a4” というオプションを付けてください。
+[新ドキュメントクラス](/jsclasses/)なら
+
+```
+\documentclass[a4paper,papersize]{jsarticle}
+```
+
+のように “papersize” オプションを付けると dvips が用紙サイズを認識してくれます。
+
+#### 図の挿入 {#e0b06e9a}
+
+図を挿入する際には
+ \usepackage\[dvips\]{graphicx}
+のように dvips オプションを指定します．
+図として EPS を挿入できます．
 
 #### しおりの文字化けを防ぐ {#v5d4fb65}
 
