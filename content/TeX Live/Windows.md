@@ -97,7 +97,7 @@ Wndows 7 以前では ISO イメージの中身を見るには追加でソフト
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．また，インストールフォルダー（デフォルトではC:\texlive\2015）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
-TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．<br>
+TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
 - [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
@@ -115,9 +115,9 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 #### TeXworksの設定 {#wa1faa7d}
 
-LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．<br>
-手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．<br>
-スタートメニューから起動することで動きます．<br>
+LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．
+手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．
+スタートメニューから起動することで動きます．
 ただし，日本語用の設定が必要です → [TeXworks/設定](</TeXworks/設定/>) をご覧ください．
 
 #### インストールのやり方などの事例 {#w0a33f0d}
@@ -139,58 +139,21 @@ tlmgr update --self --all
 
 でも行えます．
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
 - C:\texlive\2015\tlpkg\backups
 
-にパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+にパッケージのバックアップが保存されます．
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
 
 パッケージは
 
 - [tlmgr](/tlmgr/) (コマンドライン)
 - [TeX Live Manager](</TeX Live Manager/>) (GUI)
 
-で管理できます．<br>
+で管理できます．
 
 ## 仮想マシン上の Linux への TeX Live のインストール {#s797439a}
 
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールして TeX Live を使用する方法もあります。
 Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
-
-***
-
-<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">ファイル(F)</span>　 <span style="color:Black;">仮想マシン(M)</span>　 <span style="color:Black;">ヘルプ(H)</span>　　　　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　新規(N)　 設定(S)　 起動(T)　 <span style="color:#888888;">破棄</span><br>
-<span style="color:White;background-color:#1188FF;">　　　　　Arch Linux　　　　　　　　　　　　　　　　　　</span><br>
-
-　　　　　CentOS<br>
-　　　　　Debian<br>
-　　　　　Fedora<br>
-　　　　　Linux Mint<br>
-　　　　　Lubuntu<br>
-　　　　　openSUSE<br>
-　　　　　Vine Linux<br>
-
-***
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　仮想マシン　 ビュー　 デバイス　 ヘルプ　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-$ uplatex -v
-e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (TeX Live 2015)
-kpathsea version 6.2.1
-ptexenc version 1.3.3
-Copyright 2015 D.E. Knuth.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the e-upTeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the e-upTeX source.
-Primary author of e-upTeX: Peter Breitenlohner.
-```
-
-***
