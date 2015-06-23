@@ -412,5 +412,4 @@ synctex help edit
 
 ## 関連リンク {#a0623ac1}
 
-- [TeX インストールガイド―― dviout for Windows のインストール](http://www.nsknet.or.jp/~tony/TeX/install/win/dviout.htm) @ [トニイさん](http://www.nsknet.or.jp/~tony/) ([twitter](https://twitter.com/tony4649))（旧 @nifty DTP と印刷フォーラム \[FDTP\]）
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
