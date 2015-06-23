@@ -373,36 +373,12 @@ PDF ファイルのフォントの埋め込みについては
 
 ## 文字コードの変換 {#y2f21c8a}
 
-Texmaker で使用する文字コードはデフォルトでは UTF-8 です．<br>
-Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを UTF-8 で表示する場合はファイルの文字コードを UTF-8 に変換する必要があります．<br>
-[W32TeX](/W32TeX/) には，標準で文字コード変換プログラムである [nkf](http://osdn.jp/projects/nkf/) が含まれています．<br>
-nkf の場所は以下のようにして確認できます．<br>
+Texmaker で使用する文字コードはデフォルトでは UTF-8 です．
+このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．
+文字コードの変換には，各種テキストエディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
 
-- Windows PowerShell の場合
-
-    ```
-    PS > Get-Command nkf | Select-Object Path
-    エイリアスを使用した場合は
-    PS > gcm nkf | select path
-
-    Path
-    ----
-    C:\w32tex\bin64\nkf.exe
-    C:\w32tex\bin\nkf.exe
-    ```
-
-- コマンド プロンプトの場合
-
-    ```
-    >where nkf
-    C:\w32tex\bin64\nkf.exe
-    C:\w32tex\bin\nkf.exe
-    ```
-
-使用方法は [UTF-8への変換](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=545) などを参照してください．<br>
-Windows PowerShell またはコマンド プロンプトに慣れていない場合は，[メモ帳で UTF-8 に変換する](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=496#p2654)方法もあります．<br>
-メモ帳で UTF-8 に変換した場合は BOM が付加されます．<br>
-nkf やメモ帳以外の変換ツールを使用したい場合は[サクラエディタ](</サクラエディタ/>)などのエディタを使っても OK です．<br>
+- テキストエディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](https://okumuralab.org/tex/mod/forum/discuss.php?d=496%23p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
+- コマンドラインからの場合，文字コード変換プログラムである [nkf](/nkf/) が利用できます．
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#a258817b}
 
