@@ -9,9 +9,7 @@ pukiwiki: "TIPA"
 
 ## TIPA {#z57e2958}
 
-[TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)
-は[東京大学](http://www.u-tokyo.ac.jp/)の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた
-IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
+[TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm) は東京大学の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
 
 - [http://www.ctan.org/pkg/tipa](http://www.ctan.org/pkg/tipa)
 
@@ -45,12 +43,13 @@ $ make install
 を実行します．
 
 手動でインストールする場合には，展開されたファイル群を以下の場所に移動します（下記 $TEXMFLOCAL の部分はお使いの環境に応じて読み替えてください）．
+標準的な [TeX のディレクトリ構成](</TeX のディレクトリ構成/>)に従ったほうがよいでしょう．
 
 - sty ディレクトリの中身を $TEXMFLOCAL/tex/latex/tipa/ に入れる．
 - mf ディレクトリの中身を $TEXMFLOCAL/fonts/source/fkr/tipa/ に入れる．
 - tfm ディレクトリの中身を $TEXMFLOCAL/fonts/tfm/fkr/tipa/ に入れる．
 - type1 ディレクトリの中身を $TEXMFLOCAL/fonts/type1/fkr/tipa/ に入れる．
-- dvips ディレクトリの中身を $TEXMFLOCAL/fonts/map/dvips/tipa/ に入れる[^1]．
+- dvips ディレクトリの中身を $TEXMFLOCAL/fonts/map/dvips/tipa/ に入れる．
 - doc ディレクトリの中身を $TEXMFLOCAL/doc/tipa/ に入れる．
 
 移動したら，必要に応じて
@@ -67,14 +66,12 @@ updmap --enable Map tipa.map
 
 などを実行します．
 
-その後 TIPA の配布に含まれる doc ディレクトリ内にある
-tipaman.tex をコンパイルしてみます．インストールに成功していれば，生成された
-tipaman.dvi の全ページが正常に表示されます．
+その後 TIPA の配布に含まれる doc ディレクトリ内にある tipaman.tex をコンパイルしてみます．
+インストールに成功していれば，生成された tipaman.dvi の全ページが正常に表示されます．
 
 ### 使い方 {#o25babb1}
 
-\usepackage コマンドで
-tipa.sty を読み込めば，TIPA の機能を使用できるようになります．
+\usepackage コマンドで tipa.sty を読み込めば，TIPA の機能を使用できるようになります．
 
 ```
 %%% -*- mode: yatex; Coding: utf-8 -*-
@@ -98,7 +95,8 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 \end{document}
 ```
 
-音声記号の入力方法には次のものがあります．英語の “explanation” の発音を表す記号
+音声記号の入力方法には次のものがあります．
+英語の “explanation” の発音を表す記号
 \[&#x2cc;&#x25b;kspl&#x259;&#x2c8;ne&#x26a;&#x283;&#x259;n\]
 を例として挙げています．
 
@@ -140,5 +138,3 @@ tipa.sty を読み込めば，TIPA の機能を使用できるようになりま
 
 - [LaTeX と TIPA を用いて音声科学／音声学する](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)［[Internet Archive](http://www.archive.org/)
     によるウェブアーカイブ］（藤野さん）
-
-[^1]: 古い [TDS](https://mirror.ctan.org/help/Catalogue/entries/tds.html) では $TEXMFLOCAL/dvips/config/ でした．
