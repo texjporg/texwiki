@@ -253,5 +253,78 @@ rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
 
 % 少しずつ作業を進めていきたいと思います．
 
+<!--  -->
+<!-- [[W32TeX]] から持ってきました．記述は2015年1月以前のもの． -->
+<!-- いまは [[forum:1596]] で書かれているとおり -->
+<!-- ちょっと構成が変わっているので，書き変える必要があります． -->
+<!--  -->
+<!-- **$TEXMF, $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS [#s503cb80] -->
+<!-- TeX についての解説を読んでいると，$TEXMF，$TEXMFMAIN，$TEXMFLOCAL，$TEXMFPROJECTS -->
+<!-- という単語が出てくることがあります。 -->
+<!-- ''$TEXMFMAIN'' とは -->
+<!-- TeX をインストールしたフォルダー（ディレクトリ）の中にある -->
+<!-- share/texmf-dist というフォルダーのことを指しています。 -->
+<!-- ''$TEXMFDIST'' は　''$TEXMFMAIN'' と同じです。 -->
+<!-- ''$TEXMFLOCAL'' とは -->
+<!-- TeX をインストールしたフォルダーの中にある -->
+<!-- share/texmf-local というフォルダーのことを指しています。 -->
+<!-- ''$TEXMFPROJECTS'' とはTeX をインストールしたフォルダーの中にある -->
+<!-- share/texmf-projetcs というフォルダーのことを指しています。 -->
+<!-- 例えば TeX を C:/w32tex/ にインストールしたのなら， -->
+<!--  -->
+<!-- -$TEXMFMAIN = C:/w32tex/share/texmf-dist -->
+<!-- -$TEXMFLOCAL = C:/w32tex/share/texmf-local -->
+<!-- -$TEXMFPROJECTS = C:/w32tex/share/texmf-projects -->
+<!--  -->
+<!-- となります。 -->
+<!-- そして ''$TEXMF'' は $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS のどれか， -->
+<!-- もしくは全てのことを指しています。 -->
+<!--  -->
+<!-- **texmf.cnf の優先順位 [#a06d0a7b] -->
+<!--   $SELFAUTOLOC -->
+<!--   $SELFAUTOLOC/share/texmf-local/web2c -->
+<!--   $SELFAUTOLOC/share/texmf-dist/web2c -->
+<!--   $SELFAUTOLOC/share/texmf/web2c -->
+<!--   $SELFAUTOLOC/texmf-local/web2c -->
+<!--   $SELFAUTOLOC/texmf-dist/web2c -->
+<!--   $SELFAUTOLOC/texmf/web2c -->
+<!--   $SELFAUTODIR -->
+<!--   $SELFAUTODIR/share/texmf-local/web2c -->
+<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
+<!--   $SELFAUTODIR/share/texmf/web2c -->
+<!--   $SELFAUTODIR/texmf-local/web2c -->
+<!--   $SELFAUTODIR/texmf-dist/web2c -->
+<!--   $SELFAUTODIR/texmf/web2c -->
+<!--   $SELFAUTOGRANDPARENT/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT -->
+<!--   $SELFAUTOPARENT/share/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT/share/texmf-dist/web2c -->
+<!--   $SELFAUTOPARENT/share/texmf/web2c -->
+<!--   $SELFAUTOPARENT/texmf-local/web2c -->
+<!--   $SELFAUTOPARENT/texmf-dist/web2c -->
+<!--   $SELFAUTOPARENT/texmf/web2c -->
+<!--  -->
+<!--   $SELFAUTOLOC:         バイナリディレクトリ -->
+<!--   $SELFAUTODIR:         バイナリディレクトリより1段階上のディレクトリ -->
+<!--   $SELFAUTOPARENT:      バイナリディレクトリより2段階上のディレクトリ -->
+<!--   $SELFAUTOGRANDPARENT: バイナリディレクトリより3段階上のディレクトリ -->
+<!--  -->
+<!--   但し、ルートディレクトリに達すると、その上は無いので、 -->
+<!--   "ルートディレクトリの上" は、ルートディレクトリに一致する。 -->
+<!--  -->
+<!--   環境変数 TEXMFCNF を定義していなければ、上の順番で存在する全ての -->
+<!--   texmf.cnf が読まれる。同じ変数定義が複数存在する場合、先に読み込んだ -->
+<!--   定義が有効となる。 -->
+<!--  -->
+<!--   W32TeX の場合、配布される texmf.cnf は -->
+<!--   $SELFAUTODIR/share/texmf-dist/web2c -->
+<!--   にある。自分専用の texmf.cnf はこれより優先される -->
+<!--   $SELFAUTODIR/share/texmf-local/web2c -->
+<!--   に置いておけばよい。そうすれば、上書きされて専用の設定が消去 -->
+<!--   されるようなことは無い。自分専用の texmf.cnf には必要最小限度の -->
+<!--   ことを書いておくこと。配布される texmf.cnf に記述してあることを -->
+<!--   専用の texmf.cnf に記述する必要は無い。 -->
+<!--  -->
+
 [^1]: TEXMF とは，emTeX/em と emM/emETAemF/emONT という意味です。
 [^2]: 環境によっては，コマンド名は mktexlsr ではなく texhash という名前になっているかもしれません。
