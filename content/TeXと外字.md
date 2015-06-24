@@ -54,7 +54,7 @@ Adobe-Japan1-6 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 - [dvips](/dvips/) を使う場合は，これを次のようにして使います。
 
     ```
-    \documentclass{jsarticle}
+    \documentclass[uplatex,dvips,ja=standard]{bxjsarticle}
     \usepackage[dvips]{graphicx}
     \begin{document}
 
@@ -74,7 +74,7 @@ Adobe-Japan1-6 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
     で kou-itai.pdf に変換し，それを次のようにして取り込みます。
 
     ```
-    \documentclass{jsarticle}
+    \documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
     \usepackage[dvipdfmx]{graphicx}
     \begin{document}
 
