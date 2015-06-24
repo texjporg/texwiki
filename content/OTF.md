@@ -12,7 +12,11 @@ pukiwiki: "OTF"
 [OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，Adobe-Japan1-6 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
 ここでは OTF パッケージを Microsoft Windows と OS X で使う方法を説明します。
 
-<strong>目次</strong>
+OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeXと外字/>)を参照してください。
+
+***
+
+***
 
 ### ダウンロード {#a0ff39f1}
 
@@ -28,13 +32,6 @@ pukiwiki: "OTF"
 
 - OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
-
-### ChangeLog {#k32bef0c}
-
-- [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
-- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
-
-を参照．
 
 <!-- ***japanese-otf [#b26e364e] -->
 <!-- -[[[texlive] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/]] -->
@@ -1062,8 +1059,16 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
+- [Mac OS X 上のLaTeXで外字、異体字を使う方法](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/gaiji.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://www.geocities.co.jp/texuttex/jfontsettings.html) （ut さん）
 - [TeX Live and upTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1148)
+
+### ChangeLog {#k32bef0c}
+
+- [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
+- [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
+
+を参照．
 
 [^1]: 「Adobe Creative Suite 5」に同梱ではないものはAdobe-CNS1-5 対応。
