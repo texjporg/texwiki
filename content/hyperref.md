@@ -73,6 +73,24 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 #### [hyperrefとgraphicxの組み合わせでエラー](http://ubutun.blogspot.jp/2012/12/hyperrefgraphicx_4.html) {#g6c06203}
 
+原因は，hyperref パッケージの colorlinks オプションを指定することで color パッケージが読み込まれるにもかかわらず，dvipdfmx オプションが渡されないことのようです。
+
+- [hyperref の colorlinks オプションが依存する color パッケージで dvips.def が読まれるからだな！](https://twitter.com/aminophen/status/613952042575343617)
+
+対策は，ドキュメントクラスのオプションで dvipdfmx ドライバ指定する
+
+```
+\documentclass[dvipdfmx,…]{article}
+```
+
+または color にも明示的に dvipdfmx オプションを指定する
+
+```
+\usepackage[dvipdfmx]{graphicx,color}
+```
+
+が有効です。
+
 ### 不具合 {#p03bc3d7}
 
 #### [hyperref が非 e-TeX で動かない](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) {#fbe5149d}
@@ -538,22 +556,17 @@ Workaround:
 This is from Mike Shell:
 
 > cite.sty cannot currently be used with hyperref.
-
 > However, I can do a workaround via:
-
+>
+> ```
 > \makeatletter
-
 > \def\NAT@parse{\typeout{This is a fake Natbib command to fool Hyperref.}}
-
 > \makeatother
-
-> \usepackage\[hypertex\]{hyperref}
-
-> so that hyperref will not redefine any of the biblabel stuff - so cite.sty
-
-> will work as normal - although the citations will not be hyperlinked, of
-
-> course (But this may not be an issue for many people).
+>
+> \usepackage[hypertex]{hyperref}
+> ```
+>
+> so that hyperref will not redefine any of the biblabel stuff - so cite.sty will work as normal - although the citations will not be hyperlinked, of course (But this may not be an issue for many people).
 
 #### dblaccnt {#h7b3c5f5}
 
