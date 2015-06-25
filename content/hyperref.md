@@ -91,6 +91,8 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 が有効です。
 
+- hyperref パッケージの color.sty 依存対策 [forum:1606](https://okumuralab.org/tex/mod/forum/discuss.php?d=1606)
+
 ### 不具合 {#p03bc3d7}
 
 #### [hyperref が非 e-TeX で動かない](http://d.hatena.ne.jp/zrbabbler/20120531/1338472669) {#fbe5149d}
