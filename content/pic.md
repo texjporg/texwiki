@@ -121,3 +121,4 @@ CAS の出力図を tpic 形式に変換して TeX の picture 環境に埋め�
 - [KETpic入門](http://www.ms.u-tokyo.ac.jp/~tado/ketpic/)
 - [KETpicメモ](http://www.math.sci.hokudai.ac.jp/~yano/ketpic/ketpic.html)
 - [KETpic できれいな図を書こう](http://www.slideshare.net/akimotoyoshitomo/ketpic)
+- [うぶつん: KETpic](http://ubutun.blogspot.jp/search/label/KETpic)
