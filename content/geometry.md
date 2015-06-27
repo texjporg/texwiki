@@ -28,12 +28,23 @@ TeX Live, W32TeX に含まれています。
 しかし，実際は「余白が広い」のではなく，「用紙が大きい」というのが正しい理解です。
 これらのクラスファイルは，米国で標準的なレターサイズ文書を前提に作られており，それをそのまま A4 用紙に印刷するので結果的に余白が大きく見えるのです。
 
-レイアウトを自分でいじる場合に避けるべきことを挙げておきます：
+レイアウトを自分でいじる場合に避けるべきことを挙げておきます。
+もちろん，本当に「TeX が何をやっているのか」分かっている人なら，これらを使うことには制約はありません。
+ページレイアウト・パラメータの直接設定を行うには，複数のパラメータを整合性を保って設定する必要があり，以下は初心者にはあまり勧められません：
 
 - やってはいけないこと
     - \oddsidemargin などの調整によるレイアウト変更
         <!-- 何故ですか？「ページレイアウトパラメータの設定には必ず geometry パッケージを使わなければならない」とでも言いたいのですか？ -->
         <!-- 「ページレイアウト・パラメータの直接設定を行うには，複数のパラメータを整合性を保って設定する必要があり，初心者には勧めにくい」程度の主張であれば，同意しますが． -->
+        <!-- // l2tabu に書いてある Do not をそのまま「やってはいけないこと」と訳しただけです． -->
+        <!-- // Do not use \oddsidemargin or similar commands for modifying page layout. -->
+        <!-- // 同じ個所で「typearea.sty がだめなら geometry.sty か vmargin.sty」と書かれていて -->
+        <!-- // それゆえに「一つの」対処法と書いているつもりです． -->
+        <!-- // ただ，語弊のないように上で補足することにしました． -->
+        <!-- // いま私は Wiki 内の『古い情報』に l2tabu が何の検証もなしに引き写されていることを -->
+        <!-- // 問題視していて，l2tabu の情報が「古い」のか「根本的に間違っている」のか再検証する -->
+        <!-- // 必要性を感じています．『geometry』のページを作ったのも，そのきっかけを作るためです． -->
+        <!-- // そういえば私，『古い情報』のコメント欄に「検証しましょう」と昔書いていますね． -->
 
 - 絶対にやってはいけないこと
     - \hoffset，\voffset をいじること
@@ -46,6 +57,15 @@ TeX Live, W32TeX に含まれています。
 - [geometry.sty LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/geometry.html)
 - [LaTeX メモ ― geometry パッケージによるページレイアウトの設定](http://dayinthelife.at.webry.info/201401/article_2.html)
 - [geometryパッケージ 再訪](http://konoyonohana.blog.fc2.com/blog-entry-119.html)
+
+### ドライバ指定の注意 {#qfffde83}
+
+geometry パッケージは，ページレイアウトの指定を \special コマンドとして埋め込みます。
+したがって，graphicx や color，xcolor と同様のドライバ指定が必要です。
+
+ただし，geometry には dvipdfmx ドライバオプションが作られていませんので，dvipdfm を指定するしかありません[^1]。
+
+- [LaTeX 覚え書き・その２](http://blog.ousaan.com/index.cgi/links/20140904.html)
 
 ### geometry パッケージの縦組み対応 {#j41bdb1d}
 
@@ -73,3 +93,9 @@ LuaTeX-ja 20150420.0 リリースにより，これも TeX Live, W32TeX に含�
 - jsarticle の papersize オプションと geometry.sty ([qa:33951](https://okumuralab.org/~okumura/texfaq/qa/33951.html), [qa:33957](https://okumuralab.org/~okumura/texfaq/qa/33957.html), [qa:33958](https://okumuralab.org/~okumura/texfaq/qa/33958.html), [qa:33962](https://okumuralab.org/~okumura/texfaq/qa/33962.html))
 
 % とりあえず関係ありそうなものを羅列。古いものもとりあえず拾ってきたので，今の状況に即していなければ補足しつつ分類。
+
+### 関連リンク {#m290ef5a}
+
+- [LaTeX 覚え書き・その４](http://blog.ousaan.com/index.cgi/links/20140910.html)（geometry パッケージを使わずに，複数のパラメータを整合性を保って設定する例）
+
+[^1]: 当然ですが，graphicx や color，xcolor には dvipdfmx オプションがありますので，これらには正しく dvipdfmx を指定しましょう。[古い情報](</古い情報/#g29113d8>)も参考に。
