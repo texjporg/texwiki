@@ -48,7 +48,7 @@ siunitx は，単位記号のフルスペルを入力すれば，大文字小文
 pTeX で expl3 がサポートされたのは
 [qa:55490](https://okumuralab.org/~okumura/texfaq/qa/55490.html)（→ [qa:55523](https://okumuralab.org/~okumura/texfaq/qa/55523.html) でバグ修正）以降ですので，それ以前では利用できないことにご注意ください．
 
-## 関連リンク {#b1d93009}
+### 関連リンク {#b1d93009}
 
 - 数式の前後の四分アキ [forum:913](https://okumuralab.org/tex/mod/forum/discuss.php?d=913)
 - 角度記号の出力法 [forum:1518](https://okumuralab.org/tex/mod/forum/discuss.php?d=1518)
