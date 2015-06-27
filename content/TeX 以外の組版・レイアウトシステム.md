@@ -268,6 +268,8 @@ SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](ht
 
 のようにすると、examples/simple.pdf ができます。
 
+使い方については [docmentation/sile.pdf](http://github.com/simoncozens/sile/tree/master/documentation) （[日本語訳](http://github.com/shirat74/SILE-doc_ja)）を参照してください。
+
 ### [Vivliostyle プロジェクト](http://vivliostyle.co.jp/project/) {#v10e66b1}
 
 HTML+CSSベースの組版システムです。電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
