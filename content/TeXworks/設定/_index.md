@@ -129,12 +129,24 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 ## タイプセットの設定 {#q50d2378}
 
 - upLaTeX によるタイプセット
+    - 名前：upLaTeX(ptex2pdf)
     - プログラム：ptex2pdf
     - 引数：
         - -l
         - -u
         - -ot
         - -kanji=utf8 $synctexoption
+        - $fullname
+
+- Latexmk（とpLaTeX）によるタイプセット
+    - 名前：pLaTeX(latexmk)
+    - プログラム：latexmk
+    - 引数：
+        - -latex=platex
+        - -latexoption=-kanji=utf8 $synctexoption
+        - -e
+        - $dvipdf='dvipdfmx %O %S';
+        - -pdfdvi
         - $fullname
 
 {{< children >}}
