@@ -15,15 +15,15 @@ TeX 以外の組版・レイアウトシステムについて紹介します。T
 
 ***
 
-## オープンソース {#s9837f3b}
-
-### [Apache FOP](http://xmlgraphics.apache.org/fop/) {#z9bf216b}
+## [Apache FOP](http://xmlgraphics.apache.org/fop/) {#z9bf216b}
 
 Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト](http://xmlgraphics.apache.org/)により開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
 
 2015年6月5日の段階では Version 2.0 が最新のリリースとなっています。フロートのサポートや Mac OS X のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
 
-#### インストールと実行 {#w1d759d9}
+活発な開発下にあります。
+
+### インストールと実行 {#w1d759d9}
 
 まずは Java 実行環境が必要です。Java の準備が整ったら、[ダウンロードページ](http://xmlgraphics.apache.org/fop/download.html)から辿れるミラーサイトより、最新のものをダウンロードします。
 
@@ -61,7 +61,7 @@ Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト]
 
 ハイフネーション用のパターンファイルはライセンスの関係上、別途入手する必要があります。[FOP XML Hyphenation Patterns](http://offo.sourceforge.net/) のページからコンパイル済みバイナリ入りの配布物を取得し、fop-hyph.jar を lib 以下に投入します。
 
-#### 文書の作成 {#o64708aa}
+### 文書の作成 {#o64708aa}
 
 Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先ほどの
 
@@ -79,14 +79,14 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 
 のようにして処理します。
 
-#### 利点と制限・欠点 {#l80a7ea9}
+### 利点と欠点 {#l80a7ea9}
 
 利点は
 
 - 入力形式である XSL-FO は [XSL](http://www.w3.org/Style/XSL/) の仕様の一部として、標準化団体 W3C により開発され勧告として公表されています。
 - SVG への対応。WEB 標準技術である SVG への高水準での対応は魅力的です。
 
-欠点等は
+欠点は
 
 - 入力形式である XSL-FO は平易な解説資料に乏しいため、学習コストが高くなります。他の XML 形式から変換する場合もそれほど容易ではありません。XSL-FO の仕様そのものも、今後どうなるのか不透明なところがあります。
 - 国際化対応など、どの程度できているのか不明瞭です。縦組みなどは未対応な模様です。
@@ -94,7 +94,7 @@ Apache FOP の入力は XSL-FO と呼ばれる XML 文書の一種です。先�
 XSLT は TeX のマクロを代用するほどのプログラミング言語としての機能は備えていません。これを利点ととるか欠点ととるかは人によるかと思われます。複雑さと柔軟さのバランス的には微妙なところでしょうか。
 実際の運用としては、[AsciiDoc](http://www.methods.co.nz/asciidoc/) などで文書を作成し、バックエンドとして利用することになるでしょう。
 
-#### TeX との比較 {#k61aa916}
+### TeX との比較 {#k61aa916}
 
 様々なところで TeX への言及があります。
 
@@ -112,9 +112,13 @@ XSLT は TeX のマクロを代用するほどのプログラミング言語と�
 
 - [Apache FOP --- TeX 以外の組版 ～初歩の初歩～](http://konoyonohana.blog.fc2.com/blog-entry-121.html)
 
+## troff {#d8b1a44d}
+
+UNIX で利用される文書の整形、清書を行うコマンド roff の一種です。その歴史はTeX よりも古く、マニュアルページの印刷などに用いられてきました。
+
 ### [GNU troff](http://www.gnu.org/software/groff/) {#s340bffc}
 
-Groff（GNU troff）はプレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
+Groff（GNU troff）は GNU 版の troff です。プレーンテキストに文書整形用コマンドを埋め込んだ形式の入力から、整形された出力を行う組版システムです。DVI、PostScript や PDF などのページ記述言語、HTML、あるいは端末での表示用に ASCII/UTF8 での出力が可能です。最初は James Clark によって書かれ、現在は Ted Harding と Werner Lemberg によりメンテナンスされています。
 
 行分割処理は1行ごとに逐次行われます。
 
@@ -134,15 +138,13 @@ Groff（GNU troff）はプレーンテキストに文書整形用コマンドを
 
 Unix 互換な環境でないと動かすのは難しいようです。FreeBSD 11.0 では [GNU troff の代わりに Heirloom doctools の troff が同梱されるという話](https://www.mail-archive.com/freebsd-current@freebsd.org/msg160520.html)もあります。 
 
-### [Patoline](http://patoline.org/) {#vdc178df}
+活発な開発下にあります。
+
+## [Patoline](http://patoline.org/) {#vdc178df}
 
 主に OCaml で書かれた組版システムです。LaTeX 風の独自入力フォーマットで PDF など様々なフォーマットで出力します。
 
-### [PDFJ](http://hp1.jonex.ne.jp/~nakajima.yasushi/) {#f1452ce3}
-
-Perl で実装された PDF 生成用のモジュールです。JIS X 4051 にほぼ準拠した日本語組版ルールを組み込んであるのが特徴です。
-
-### [SILE](http://www.sile-typesetter.org/) {#va3c00e3}
+## [SILE](http://www.sile-typesetter.org/) {#va3c00e3}
 
 Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独自の入力フォーマットと XML による入力で、PDF 出力です。HarfBuzz による OpenType レイアウト機能を備えており、日本語を含む様々な言語・用字系をサポートします。Lua により拡張可能です。
 
@@ -157,7 +159,9 @@ Simon Cozens による、Lua で書かれた組版システム。LaTeX 風の独
 
 現在、かなり活発に開発が行われており、縦組みや JIS X 4051 への対応なども取り組まれるようです。積極的にフィードバックされると良いでしょう。
 
-#### インストール（MinGW32） {#r5f11a5c}
+使い方については [docmentation/sile.pdf](http://github.com/simoncozens/sile/tree/master/documentation) （[日本語訳](http://github.com/shirat74/SILE-doc_ja)）を参照してください。
+
+### インストール（MinGW32） {#r5f11a5c}
 
 Linux や Mac へのインストールはパッケージ管理システムを使って依存ライブラリを整えて行けば、それほど苦労はしないでしょう。
 
@@ -258,7 +262,7 @@ SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](ht
 
 です。
 
-#### SILE の実行 {#pfce2046}
+### SILE の実行 {#pfce2046}
 
 とりあえず、配布物の examples 以下にあるファイルを処理してみましょう。
 
@@ -268,16 +272,24 @@ SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](ht
 
 のようにすると、examples/simple.pdf ができます。
 
-使い方については [docmentation/sile.pdf](http://github.com/simoncozens/sile/tree/master/documentation) （[日本語訳](http://github.com/shirat74/SILE-doc_ja)）を参照してください。
+## HTML+CSS {#kce624e2}
+
+ここでは、単に入力形式として HTML+CSS を採用するものから、電子出版技術として Web 関連技術を応用しようという立場のものまで紹介します。
+
+### [Prince](http://www.princexml.com/download/) {#u3262e5f}
+
+YesLogic Pty. Ltd. によって開発されている商品です。オープンソースではありません。非商用利用については無償で提供されています。（最初のページにロゴが入るなどの制限がありますが）
 
 ### [Vivliostyle プロジェクト](http://vivliostyle.co.jp/project/) {#v10e66b1}
 
-HTML+CSSベースの組版システムです。電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
+Vivliostyle プロジェクトは電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
 
 現在（2015年6月3日）、入手可能なのはアルファ版のみです。
 
 - [Vivliostyle.js](http://vivliostyle.github.io/vivliostyle.js/)
 - [Vivliostyle Chrome 拡張](https://chrome.google.com/webstore/detail/vivliostyle/ffeiildjegeigkbobbakjjmfeacadbne)
+
+詳細はまだ分かりませんが、品質に関してはブラウザのレンダリング能力に大きく依存するようです。
 
 ### [Weasy Print](http://weasyprint.org/) {#s618647b}
 
@@ -302,12 +314,15 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 
 日本語の利用に関しては、表示等はできますが、禁則処理ができていなかったり、CSS で和文フォントをきちんと指定しないと中国語フォントが選択されてしまったりと、色々と難しいところがあります。
 
-### その他 {#u1d7757c}
+しばらく開発は停滞しているようです。
+
+## その他 {#u1d7757c}
 
 TeX のアルゴリズムの実装
 
 - [TEX LINE BREAKING ALGORITHM IN JAVASCRIPT](http://www.bramstein.com/projects/typeset/)
 - [Crawdad](https://github.com/madriska/crawdad): Knuth-Plass linebreaking for Ruby
 - [Text::KnuthPlass](http://search.cpan.org/~simon/Text-KnuthPlass-1.02/lib/Text/KnuthPlass.pm) - Breaks paragraphs into lines using the TeX algorithm (Perl による実装)
+- [tex_wrap](http://oedipus.sourceforge.net/texlib/): Python による実装
 
 などがあります。
