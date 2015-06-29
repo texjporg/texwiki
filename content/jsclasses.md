@@ -28,8 +28,8 @@ uplatex, platex 以外のエンジンでも利用可能にした [BXjscls](/BXjs
 [W32TeX](/W32TeX/) の場合は
 （[uptex-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz)）
 をインストールすれば新ドキュメントクラスがインストールされます．
-手動でインストールする場合は jsclasses パッケージを $TEXMFLOCAL/tex/platex/
-（例えば C:\w32tex\share\texmf-local\tex\platex\）
+手動でインストールする場合は jsclasses パッケージを $TEXMFLOCAL/tex/platex/jsclasses/
+（例えば C:\w32tex\share\texmf-local\tex\platex\jsclasses\）
 に展開すれば OK です。
 
 もしファイル名のデータベース
