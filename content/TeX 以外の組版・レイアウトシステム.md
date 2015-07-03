@@ -202,6 +202,7 @@ Lua と LuaRocks がインストールできたら、いくつかの Lua パッ�
 ```
    luarocks install lpeg
    luarocks install luaexpat EXPAT_DIR=C:\MinGW\msys\1.0\local
+   luarocks install luafilesystem
 ```
 
 コマンド プロンプトから（mintty などではなく）実行します。
