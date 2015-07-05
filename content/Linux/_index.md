@@ -8,28 +8,34 @@ pukiwiki: "Linux"
 
 # Linux
 
-## [Linux](https://ja.wikipedia.org/wiki/Linux) での TeX の利用 {#h0c68a28}
+## [Linux](https://ja.wikipedia.org/wiki/Linux) での TeX の利用 {#headline}
+
+Linux に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
+
+1. TeX の処理系（“TeX ディストリビューション”）のインストールと設定
+1. 統合環境またはエディタ，PDF ビューアなどの周辺ツールのインストールと設定
+
+が必要です。
 
 ***
 
 ***
 
-## Linux での TeX 環境構築 {#h2a1700b}
+## TeX ディストリビューション {#distribution}
 
 Linux で TeX 環境を構築するには，2つの方法があります．
 
 - 使用している Linux ディストリビューションのパッケージ管理システムから TeX Live のパッケージをインストールする．
 - TeX Live のインストーラを使ってインストールする．
 
-前者の場合は，他のパッケージと同様に統一的な管理ができますが，ディストリビューションによっては提供されているパッケージのバージョンが古いことがあります．後者の場合は，パッケージ管理システムによる管理からは外れてしまいますが，tlmgr を使って最新の状態にアップデートし続けることが可能です．
+前者の場合は，他のパッケージと同様に統一的な管理ができますが，ディストリビューションによっては提供されているパッケージのバージョンが古いことがあります．
+後者の場合は，パッケージ管理システムによる管理からは外れてしまいますが，[tlmgr](/tlmgr/) を使って最新の状態にアップデートし続けることが可能です．
 
 各 Linux ディストリビューション毎のパッケージ管理システムによる TeX 環境の構築方法については，以下の各ページを参照して下さい．
 
 {{< children >}}
 
-## TeX ディストリビューション {#v025f4e5}
-
-以下では，パッケージ管理システムを使わずに TeX 環境を構築する方法を説明します．
+ここから先では，パッケージ管理システムを使わずに TeX 環境を構築する方法を説明します．
 
 ### [TeX Live](</TeX Live/>) {#texlive}
 
@@ -68,7 +74,8 @@ $ tar xvf install-tl-unx.tar.gz
 $ cd install-tl*
 ```
 
-root 権限でインストーラを実行します．オプションでダウンロードするリポジトリを指定できます．
+root 権限でインストーラを実行します．
+オプションでダウンロードするリポジトリを指定できます．
 
 ```
 $ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
@@ -89,7 +96,9 @@ Actions:
 Enter command: I
 ```
 
-I を入力してインストールを開始します．サーバーの接続エラーが発生したり，何らかの理由により取得したアーカイブに問題があったりした場合はインストールが途中でストップします．この場合は，以下のコマンドで途中から再開できたりできなかったりします．
+I を入力してインストールを開始します．
+サーバーの接続エラーが発生したり，何らかの理由により取得したアーカイブに問題があったりした場合はインストールが途中でストップします．
+この場合は，以下のコマンドで途中から再開できたりできなかったりします．
 
 ```
 $ sudo ./install-tl --profile installation.profile
@@ -105,7 +114,7 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-#### アップデート {#v78bce27}
+#### アップデート {#texliveupdate}
 
 アップデートは
 
@@ -119,7 +128,8 @@ $ sudo tlmgr update --self --all
 
 - /usr/local/texlive/????/tlpkg/backups
 
-にパッケージのバックアップが保存されています．アップデートによって動作しなくなった場合は
+にパッケージのバックアップが保存されています．
+アップデートによって動作しなくなった場合は
 
 ```
 $ sudo tlmgr restore （パッケージ名） （リビジョン番号）
@@ -127,9 +137,10 @@ $ sudo tlmgr restore （パッケージ名） （リビジョン番号）
 
 とすることで以前のバージョンに戻すことができます．
 
-#### フォント埋め込みの設定 {#w8cc5799}
+#### フォント埋め込みの設定 {#updmap}
 
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．IPAexフォントを埋め込む場合は
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．
+IPAex フォントを埋め込む場合は
 
 ```
 $ sudo kanji-config-updmap-sys ipaex
@@ -143,76 +154,94 @@ $ kanji-config-updmap ipaex
 
 を実行します．
 
-### [W32TeX](/W32TeX/) {#od6f4f13}
+## 統合環境やエディタのインストール {#editor}
 
-[W32TeX](/W32TeX/) は Windows 向けの TeX ディストリビューションですが， Wine を使えば Linux 上で利用することも可能です．
+LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．
+これらは，LaTeX のソース中に書かれた特別な命令を色付けしてくれたり，LaTeX によるタイプセットをボタンやショートカットキー一つで実行してくれたりと，便利なものです．
+初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのが良いでしょう．
 
-- [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
+エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります．
+問題が発生した場合は別のエディタを使用してください．
+人によってエディタの好みは様々なので自分にあったエディタを見つけてください．
 
-## [統合環境・エディタ](</TeX用エディタ/>) {#ta48d235}
+このほかにも
 
-LaTeX での文書作成を支援するための統合環境・エディタが開発されています．
-
+- [TeX Wiki 内の「TeX 用エディタ」紹介ページ](</TeX用エディタ/>)
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
 
-にも Linux で使用可能な LaTeX 用の統合環境・エディタが紹介されています．これらは各ディストリビューションのパッケージ管理システムに用意されていることも多いでしょう．
+には，Linux で使用可能な LaTeX 用の統合環境・エディタが紹介されています。
+これらは各ディストリビューションのパッケージ管理システムに用意されていることも多いでしょう．
 
-### フリーソフトウェア (オープンソースソフトウェア) {#a586d103}
+### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
-#### Linux, Windows, OS X {#ef19350f}
+- 統合環境（TeX, LaTeX に特化した機能を備えています）
+    - <strong>[TeXworks](/TeXworks/)</strong>
+    - <strong>[TeXstudio](/TeXstudio/)</strong>
+    - <strong>[LyX](/LyX/)</strong>
+    - [Texmaker](/Texmaker/)
+    - TexitEasy
+    - [Kile](/Kile/)
+    - LaTeXila
 
-- [LyX](/LyX/)
-- [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
-- [TeXworks](/TeXworks/)
-- TexitEasy
-- [Eclipse](/Eclipse/)
-    - [TeXlipse](/TeXlipse/)
-- [Emacs](/Emacs/)
-    - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
-    - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
-    - [AUCTeX](/AUCTeX/)
-    - [YaTeX](/YaTeX/)
-- [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
-    - ATP
-- [Atom](/Atom/)
-- [Brackets](/Brackets/)
-- [Light Table](</Light Table/>)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
+- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+    - <strong>[Emacs](/Emacs/)</strong>
+        - <strong>[YaTeX](/YaTeX/)（野鳥）</strong>
+        - [AUCTeX](/AUCTeX/)
+        - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
+        - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
+    - <strong>[Vim](/Vim/)</strong>
+        - <strong>[Vim-LaTeX](/Vim-LaTeX/)</strong>
+        - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+        - ATP
+    - [Eclipse](/Eclipse/)
+        - [TeXlipse](/TeXlipse/)
+    - [gedit](/gedit/)
+    - [Atom](/Atom/)
+    - [Geany](/Geany/)
 
-#### Linux {#v89b4b6c}
+## PDF ファイルビューア {#pdfviewer}
 
-- [Kile](/Kile/)
-- LaTeXila
+長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
+ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
+TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
+単独の LaTeX 用 PDF プレビューアとしては
 
-## PDF ファイルビューア {#uf722ec6}
-
-- [Common Applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/Common_Applications/Documents)
-- [http://pdfreaders.org/](http://pdfreaders.org/)
-    <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
-
-を参照．
-
-### フリーソフトウェア (オープンソースソフトウェア) {#n9c5f419}
-
-- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy などは PDF ファイルビューアを内蔵しています．
 - [Evince](/Evince/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
-- [MuPDF](/MuPDF/) a lightweight PDF and XPS viewer．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin) などで使われています．
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ．TeXstudio, Texmaker, TeXworks, TexitEasy, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
-- [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>)
-- [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
+- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin) などで使われています．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
 
-## [BibTeX 関連](</BibTeX関連ツール/>) {#q19644b2}
+などがあります．
+ほかにも
 
-### フリーソフトウェア (オープンソースソフトウェア) {#p8c9577b}
+- [Common Applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/Common_Applications/Documents)
+- [Get a Free Software PDF reader!](http://pdfreaders.org/)
+    <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
+
+等に情報があります．
+
+## 周辺ツールの利用 {#tools}
+
+### 文献管理ツール {#bibtex}
+
+オープンソースの文献管理ツールとして，以下を挙げておきます。
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://jabref.sourceforge.net/)
 - [QRef](http://members3.jcom.home.ne.jp/qref/)
+
+このほかにも
+
+- [TeX Wiki 内の「BibTeX 関連ツール」紹介ページ](</BibTeX関連ツール/>)
+
+には，Linux で使用可能な文献管理ツールが紹介されています。
+
+## その他の選択肢 {#others}
+
+Linux では TeX Live をインストールするのが一般的ですが，ほかの TeX ディストリビューションをインストールすることもできます．
+
+- [W32TeX](/W32TeX/)：Microsoft Windows 向けの TeX ディストリビューションですが，Wine を使えば Linux 上で利用することも可能です．
+    - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
