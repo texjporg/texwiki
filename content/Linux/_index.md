@@ -176,22 +176,22 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
-    - <strong>[TeXworks](/TeXworks/)</strong>
     - <strong>[TeXstudio](/TeXstudio/)</strong>
     - <strong>[LyX](/LyX/)</strong>
+    - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
     - TexitEasy
     - [Kile](/Kile/)
     - LaTeXila
 
 - 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
-    - <strong>[Emacs](/Emacs/)</strong>
-        - <strong>[YaTeX](/YaTeX/)（野鳥）</strong>
+    - [Emacs](/Emacs/)
+        - [YaTeX](/YaTeX/)（野鳥）
         - [AUCTeX](/AUCTeX/)
         - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
         - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
-    - <strong>[Vim](/Vim/)</strong>
-        - <strong>[Vim-LaTeX](/Vim-LaTeX/)</strong>
+    - [Vim](/Vim/)
+        - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
     - [Eclipse](/Eclipse/)
