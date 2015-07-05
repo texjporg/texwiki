@@ -7,13 +7,20 @@ pukiwiki: "Mac"
 
 # Mac
 
-## [OS X](http://www.apple.com/jp/osx/) (Mac) での TeX の利用 {#ed089b3d}
+## [OS X](http://www.apple.com/jp/osx/) (Mac) での TeX の利用 {#headline}
+
+OS X (Mac) に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
+
+1. TeX の処理系（“TeX ディストリビューション”）のインストールと設定
+1. 統合環境またはエディタ，PDF ビューアなどの周辺ツールのインストールと設定
+
+が必要です。
 
 ***
 
 ***
 
-## TeX ディストリビューション {#texlive}
+## TeX ディストリビューション {#distribution}
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
 OS X 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
@@ -42,96 +49,112 @@ BasicTeX は TeX Live のサブセットで，OS X 専用の TeX ディストリ
 TeX Live をフルインストールしたくない場合は，この BasicTeX をインストールします。
 詳細は [BasicTeX](</TeX Live/Mac/#basictex>) を参照してください。
 
-## [統合環境・エディタ](</TeX用エディタ/>) {#i31113c1}
+## 統合環境やエディタのインストール {#editor}
 
-LaTeX での文書作成を支援するための統合環境・エディタが開発されています。
+LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています。
+これらは，LaTeX のソース中に書かれた特別な命令を色付けしてくれたり，LaTeX によるタイプセットをボタンやショートカットキー一つで実行してくれたりと，便利なものです。
 初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのが良いでしょう。
+
 エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります。
 問題が発生した場合は別のエディタを使用してください。
 人によってエディタの好みは様々なので自分にあったエディタを見つけてください。 <!-- 見つからない人は自作してみるのもいいかもしれません。 -->
 
+このほかにも
+
+- [TeX Wiki 内の「TeX 用エディタ」紹介ページ](</TeX用エディタ/>)
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
 
-にも OS X で使用可能な LaTeX 用の統合環境・エディタが紹介されています。
+には，OS X で使用可能な LaTeX 用の統合環境・エディタが紹介されています。
 
-### フリーソフトウェア (オープンソースソフトウェア) {#i48e82f9}
+### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
 LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーションでバックスラッシュが入力できない場合は Karabiner で Backslash が優先されるようにキーバインドを変更してください。
 
-#### OS X, Windows, Linux {#k3982a05}
+- 統合環境（TeX, LaTeX に特化した機能を備えています）
+    - <strong>[TeXShop](/TeXShop/)</strong>
+        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。
+    - [TeXstudio](/TeXstudio/)
+        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
+        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXstudio の不具合](/TeXstudio/#k30ccccc))
+        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
+    - [LyX](/LyX/)
+        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [LyX の不具合](/LyX/#h17851b4))
+        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
+    - [Texmaker](/Texmaker/)
+        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください。(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))
+        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
+        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
+    - [TeXworks](/TeXworks/)
+        - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
+        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
+        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
+    - TexitEasy
+        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)
+        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ TexitEasy の不具合)
+        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
+    - TeXnicle
 
-- [LyX](/LyX/)
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [LyX の不具合](/LyX/#h17851b4))
-    - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-- [TeXstudio](/TeXstudio/)
-    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXstudio の不具合](/TeXstudio/#k30ccccc))
-    - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-- [Texmaker](/Texmaker/)
-    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください。(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
-    - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-- [TeXworks](/TeXworks/)
-    - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
-    - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-- TexitEasy
-    - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)
-    - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ TexitEasy の不具合)
-    - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-- [Eclipse](/Eclipse/)
-    - [TeXlipse](/TeXlipse/)
-- [Emacs](/Emacs/)
-    - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
-    - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
-    - [AUCTeX](/AUCTeX/)
-    - [YaTeX](/YaTeX/)
-- [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
-    - ATP
-- [Atom](/Atom/)
-- [Brackets](/Brackets/)
-- [Light Table](</Light Table/>)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
+- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+    - <strong>[Emacs](/Emacs/)</strong>
+        - <strong>[YaTeX](/YaTeX/)（野鳥）</strong>
+        - [AUCTeX](/AUCTeX/)
+        - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
+        - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
+    - <strong>[Vim](/Vim/)</strong>
+        - <strong>[Vim-LaTeX](/Vim-LaTeX/)</strong>
+        - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+        - ATP
+    - [gedit](/gedit/)
+    - [Atom](/Atom/)
+    - [Geany](/Geany/)
+    - [Eclipse](/Eclipse/)
+        - [TeXlipse](/TeXlipse/)
+    - [CotEditor](/CotEditor/)
 
-#### OS X {#be65e2ea}
+## PDF ファイルビューア {#pdfviewer}
 
-- [TeXShop](/TeXShop/)
-- TeXnicle
-- [CotEditor](/CotEditor/)
+長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
+ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
+TeXShop, TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
+単独の LaTeX 用 PDF プレビューアとしては
 
-## PDF ファイルビューア {#o2a6bd23}
+- <strong>[Skim](/Skim/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
+- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy などで使われています．
 
-### フリーソフトウェア (オープンソースソフトウェア) {#id509eef}
+などがあります．
 
-- [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy, [TeXShop](/TeXShop/), TeXnicle などは PDF ファイルビューアを内蔵しています。
-- [Skim](/Skim/)
-- [MuPDF](/MuPDF/)
-- [Poppler](/Poppler/) PDF のレンダリングライブラリ。TeXstudio, Texmaker, TeXworks, TexitEasy などで使われています。
-- [Mozilla Firefox (PDF.js)](</Mozilla Firefox/#pdfjs>)
-- [Chrome/Chromium PDF Viewer (PDFium)](</Google Chrome/#chromepdfviewer>)
+## 周辺ツールの利用 {#tools}
 
-## [BibTeX 関連](</BibTeX関連ツール/>) {#eb95c992}
+### 文献管理ツール {#bibtex}
 
-- MacWiki:リスト/TeX#BibTeX 関係
-
-### フリーソフトウェア (オープンソースソフトウェア) {#xe20f87e}
+オープンソースの文献管理ツールとして，以下を挙げておきます。
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://jabref.sourceforge.net/)
 - [QRef](http://members3.jcom.home.ne.jp/qref/)
 - [BibDesk](http://bibdesk.sourceforge.net/)
 
-## スペルチェッカー {#rdf73ba8}
+このほかにも
 
-- MacWiki:スペルチェック
+- [TeX Wiki 内の「BibTeX 関連ツール」紹介ページ](</BibTeX関連ツール/>)
+- MacWiki:リスト/TeX#BibTeX 関係
+
+には，OS X で使用可能な文献管理ツールが紹介されています。
+
+### スペルチェッカー {#spell}
+
 - [cocoAspell](http://cocoaspell.leuski.net/)
 - [Excalibur](http://excalibur.sourceforge.net/)
 
-## 関連リンク {#oeb112b9}
+このほかにも
+
+- MacWiki:スペルチェック
+
+には，OS X で使用可能なスペルチェッカーが紹介されています。
+
+## 関連リンク {#links}
 
 - [Mac TeX Toolbox](http://sourceforge.net/projects/mactextoolbox/)
 - [http://qiita.com/tags/mactex](http://qiita.com/tags/mactex)
