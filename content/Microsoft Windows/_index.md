@@ -8,7 +8,7 @@ pukiwiki: "Microsoft Windows"
 
 # Microsoft Windows
 
-## [Microsoft Windows](http://www.windows.com/) での TeX の利用 {#i4bf0c85}
+## [Microsoft Windows](http://www.windows.com/) での TeX の利用 {#headline}
 
 Windows に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
 
@@ -21,7 +21,7 @@ Windows に TeX をインストールして使えるようになるまでの大�
 
 ***
 
-## TeX ディストリビューション {#vb660ba1}
+## TeX ディストリビューション {#distribution}
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます．
 Windows 上で日本語が利用可能な TeX ディストリビューションは次の二つのどちらかでしょう．
@@ -31,17 +31,17 @@ Windows 上で日本語が利用可能な TeX ディストリビューション�
 
 どちらを選んでも大差はありません[^1]．
 Web 上の情報は TeX Live の方が多いです．
-日本語の古い情報は W32TeX の方が多いかもしれません．（TeX Live に日本語用 TeX が取り込まれたのが 2010 年からなため．）
+日本語の古い情報は W32TeX の方が多いかもしれません（TeX Live に日本語用 TeX が取り込まれたのが 2010 年からのためです）．
 
-### [TeX Live](</TeX Live/>) (Win64, Win32) <a id="texlive"></a><a id="texlive-win64-win32"></a> {#ia336ed2}
+### [TeX Live](</TeX Live/>) (Win64, Win32) {#texlive}
 
 TeX Live のインストールについては [TeX Live/Windows - TeX Wiki](</TeX Live/Windows/>) を参照してください．
 
-### [W32TeX](/W32TeX/) <a id="w32tex"></a> {#yd4deb73}
+### [W32TeX](/W32TeX/) {#w32tex}
 
 W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
 
-## TeX を使い始める前に：拡張子の表示 {#y4579ed3}
+## TeX を使い始める前に：拡張子の表示 {#extension}
 
 <!-- 拡張子表示は書いておいた方がよいかも？ -->
 <!-- // というわけなので，表に出すことにします． -->
@@ -60,7 +60,7 @@ TeX を使い始める前に（あるいはインストールする前に），�
 拡張子を常に表示するための設定は，以下のようにして行います：
 
 1. 「フォルダーと検索のオプション」を表示します．
-    - フォルダのメニューバーの「整理」から「フォルダーと検索のオプション」をクリックすれば表示されます。
+    - フォルダのメニューバーの「整理」から「フォルダーと検索のオプション」をクリックすれば表示されます．
     - Windows PowerShell または コマンド プロンプトから
 
         ```
@@ -85,17 +85,18 @@ TeX を使い始める前に（あるいはインストールする前に），�
 
 同じ画面で「隠しファイル，隠しフォルダーおよび隠しドライブを表示する」を選択すれば，一時フォルダー（ユーザ環境変数 TEMP や TMP で参照されるフォルダ）も可視化され，便利なこともあります．
 
-## テスト等 {#bfc3538f}
+## TeX のインストールが成功したかどうかテストする {#test}
 
 インストールされたかのチェックを兼ねて，基本的な使い方を試してみましょう．
 
-LaTeX ソース編集にはテキストエディタが必要です．
+LaTeX ソース編集には統合環境やテキストエディタが必要です．
 すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．
-特にこだわりのない方は，TeX Live とともにインストールされる [TeXworks](/TeXworks/) がお勧めです．
+特にこだわりのない方は，TeX Live や W32TeX とともにインストールされる [TeXworks](/TeXworks/) がお勧めです．
 （長らく推奨されていた [WinShell](/WinShell/) よりお勧めです．WinShell に関しては[古い情報](</古い情報/>)もご覧ください．）
+この後の[統合環境やエディタのインストール](</Microsoft Windows/#editor>)でも紹介しています．
 
 以下では，TeXworks をもちいてみます．
-TeXworksは
+TeXworks は
 
 - TeX Live をインストールした場合はスタートメニューの「TeX Live 2015」→「TeXworks editor」から
 - W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
@@ -129,15 +130,15 @@ Hello World!
 また，TeXworks による編集も行えるようになりました．
 後は [LaTeX入門](</LaTeX入門/>) などを参照しつつ文書の作成を行ってみてください．
 
-### エラー時 {#b258335d}
+### エラー時 {#error}
 
 エラーが起こったからといって，「インストールに失敗した！」と判断するのは早すぎます．打ち込んだものにミスがあるかもしれません．
 
-#### 「プログラム"\*\*\*"が見付かりません」というエラー {#sdeb8cbf}
+#### 「プログラム"\*\*\*"が見付かりません」というエラー {#error01}
 
 残念ながらインストールに失敗しているでしょう．もう一度インストールを試してみてください．または，インストール後手動で設定した場合は，その際にミスをしているかもしれません．もう一度確認をしてみてください．
 
-#### LaTeX のエラー {#j87636b4}
+#### LaTeX のエラー {#error02}
 
 コンパイルでエラーが発生すると，TeXworks 下段の「ログの表示」にエラーに関する情報が表示されます．たとえば
 
@@ -155,64 +156,101 @@ l.1 \ddocumentclass
 
 「x」または「e」を入力することで，ファイルの編集に戻ることができます．このようにエラーのある箇所が表示されるので，そこを中心に確認してみてください．エラー内容に関しては[LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)も参考にしてください．
 
-## [統合環境・エディタ](</TeX用エディタ/>) {#e8efca0f}
+## 統合環境やエディタのインストール {#editor}
 
 LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．
+これらは，LaTeX のソース中に書かれた特別な命令を色付けしてくれたり，LaTeX によるタイプセットをボタンやショートカットキー一つで実行してくれたりと，便利なものです．
+初心者の方はまずは LaTeX 用の統合環境を使用して LaTeX に慣れるのが良いでしょう．
 
+エディタ・マクロ・プラグインの種類によって得手不得手があったり不具合が発生したりする場合があります．
+問題が発生した場合は別のエディタを使用してください．
+人によってエディタの好みは様々なので自分にあったエディタを見つけてください．
+
+このほかにも
+
+- [TeX Wiki 内の「TeX 用エディタ」紹介ページ](</TeX用エディタ/>)
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
 
-にも Microsoft Windows で使用可能な LaTeX 用の統合環境・エディタが紹介されています．
+には，Microsoft Windows で使用可能な LaTeX 用の統合環境・エディタが紹介されています．
 
-### フリーソフトウェア (オープンソースソフトウェア) {#e2433aac}
+### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
-#### Windows, OS X, Linux {#aa9eced6}
+<!-- Windows でエディタを選びたいときに，別に -->
+<!-- 「Windows, OS X, Linux で動くか，Windows でしか動かないか」 -->
+<!-- なんて不要だと思うので，統合環境か汎用エディタかで分類しなおします． -->
 
-- [LyX](/LyX/)
-- [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
-- [TeXworks](/TeXworks/)
-- TexitEasy
-- [Eclipse](/Eclipse/)
-    - [TeXlipse](/TeXlipse/)
-- [Emacs](/Emacs/)
-    - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
-    - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
-    - [AUCTeX](/AUCTeX/)
-    - [YaTeX](/YaTeX/)
-- [Vim](/Vim/)
-    - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-    - [Vim-LaTeX](/Vim-LaTeX/)
-    - ATP
-- [Atom](/Atom/)
-- [Brackets](/Brackets/)
-- [Light Table](</Light Table/>)
-- [gedit](/gedit/)
-- [Geany](/Geany/)
+- 統合環境（TeX, LaTeX に特化した機能を備えています）
+    - <strong>[TeXworks](/TeXworks/)</strong>
+    - <strong>[TeXstudio](/TeXstudio/)</strong>
+    - <strong>[LyX](/LyX/)</strong>
+    - [Texmaker](/Texmaker/)
+    - [TeXnicCenter](/TeXnicCenter/)
+    - TexitEasy
 
-#### Windows {#p928a24e}
+- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+    - <strong>[Emacs](/Emacs/)</strong>
+        - <strong>[YaTeX](/YaTeX/)（野鳥）</strong>
+        - [AUCTeX](/AUCTeX/)
+        - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
+        - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
+    - <strong>[Vim](/Vim/)</strong>
+        - <strong>[Vim-LaTeX](/Vim-LaTeX/)</strong>
+        - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
+        - ATP
+    - [Eclipse](/Eclipse/)
+        - [TeXlipse](/TeXlipse/)
+    - [gedit](/gedit/)
+    - [Atom](/Atom/)
+    - [Geany](/Geany/)
+    - [Notepad++](/Notepad++/)
+        - [NppExec](/NppExec/)
+        - [jN](/jN/)
+        - [Python Script](</Python Script/>)
+    - [サクラエディタ](</サクラエディタ/>)
+        - [Happy](/Happy/)
 
-- [TeXnicCenter](/TeXnicCenter/)
-- [Notepad++](/Notepad++/)
-    - [NppExec](/NppExec/)
-    - [jN](/jN/)
-    - [Python Script](</Python Script/>)
-- [サクラエディタ](</サクラエディタ/>)
-    - [Happy](/Happy/)
+### シェアウェア {#editor-share}
 
-## PDF ファイルビューア {#y17ec745}
+- 汎用エディタ
+    - <strong>[秀丸エディタ](</秀丸エディタ/>)</strong>
+        - <strong>祝鳥</strong>
+
+## PDF ファイルビューア {#pdfviewer}
 
 長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
 ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
-TeXworks, TeXstudio には PDF 用のビューアが組み込まれています．
-単独の LaTeX 用 PDF プレビューアは [SumatraPDF](/SumatraPDF/) がお勧めです．
+TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
+単独の LaTeX 用 PDF プレビューアとしては
 
-## その他の選択肢 {#q9151c7a}
+- <strong>[SumatraPDF](/SumatraPDF/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
+- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．SumatraPDF などで使われています．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy などで使われています．
+
+などがあります．
+
+## 周辺ツールの利用 {#tools}
+
+### 文献管理ツール {#bibtex}
+
+オープンソースの文献管理ツールとして，以下を挙げておきます。
+
+- [Zotero](https://www.zotero.org/)
+- [JabRef](http://jabref.sourceforge.net/)
+- [QRef](http://members3.jcom.home.ne.jp/qref/)
+
+このほかにも
+
+- [TeX Wiki 内の「BibTeX 関連ツール」紹介ページ](</BibTeX関連ツール/>)
+
+には，Microsoft Windows で使用可能な文献管理ツールが紹介されています。
+
+## その他の選択肢 {#others}
 
 TeX Live, W32TeX 以外にも Windows で利用可能な TeX ディストリビューションが存在します．
 
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
 - [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
 
-[^1]: パッケージがより多く含まれているのは TeX Live です（約3,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量が節約できます．ただし TeX Live もフルインストールせずに最小限のインストールですませればそれほど容量を必要としません．
+[^1]: パッケージがより多く含まれているのは TeX Live です（約3,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量を節約できるでしょう．ただし，TeX Live もフルインストールせずに最小限のインストールで済ませれば，それほど容量を必要としません．
 [^2]: Windows が標準で「何らかのプログラムに関連づけられたファイル」の拡張子を表示していないのは，「よく知らないユーザがファイル名を変えようとして拡張子ごと変更してしまい，関連づけられたプログラムで開けなくなってしまう」というトラブルを防ぐためです．しかし，LaTeX を使う際にはこの拡張子が目に見えたほうがトラブルは少なくなりますし，単にファイル名変更時に気をつけさえすればいいのです．
