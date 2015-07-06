@@ -11,39 +11,127 @@ pukiwiki: "Ghostscript/Windows"
 
 ## Ghostscript for Microsoft Windows {#zaffc352}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+% とりあえず整理を開始します。古い情報・誤った情報も混ざっているかもしれませんので，詳しい方，修正お願いします。
 
-### Ghostscript {#w95eb08a}
+Windows 版の Ghostscript にはいくつかの種類があります。
 
-Windows 版の Ghostscript バイナリが公式サイトで配布されています．<br>
-Windows 版には日本語の縦書き PostScript ファイルがきれいに表示できる角藤版 Ghostscript が存在します．<br>
-日本語の縦書き PostScript ファイルを表示する必要がある場合は角藤版 Ghostscript を使用してください．<br>
+- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。日本語・中国語・韓国語 (CJK) に対応しています。
+    - TeX Live に含まれている Ghostscript (tlgs) は本家版をベースにしています。
+- 本家版の機能に加え，日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
+    - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
 
-### tlgs {#j25e0f58}
+[TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
-TeX Live に含まれている Ghostscript (tlgs) は日本語・中国語・韓国語 (CJK) に対応しています．<br>
+- TeX Live に含まれている Ghostscript (tlgs)
+- W32TeX と同じサイトで配布されている角藤版 Ghostscript
 
-- \[[texlive\] Revision 31760](http://www.tug.org/svn/texlive?view=revision&revision=31760)
-- \[[texlive\] Revision 31504](http://www.tug.org/svn/texlive?view=revision&revision=31504)
+<!-- tlgs のリンク -->
+<!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
+<!-- -[[[texlive] Revision 31504:http://www.tug.org/svn/texlive?view=revision&revision=31504]] -->
 
-#### ChangeLog {#a9e655e3}
+日本語の縦書き PostScript ファイルを表示する必要がある場合は角藤版 Ghostscript を使用してください。
 
-- \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+***
 
-### 角藤版 Ghostscript {#m511355c}
+***
 
-Windows 版の Ghostscript には，角藤さんがコンパイルされた日本語の縦書き PostScript ファイルがきれいに表示できるバイナリが存在します．<br>
-ここではそれを角藤版 Ghostscript と呼ぶことにします．<br>
+### インストール {#a4d9c6ea}
+
+TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
+また，W32TeX を TeX インストーラ 3 を使ってインストールした場合は，途中で角藤版 Ghostscript もインストールされているはずです。
+
+- [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
+
+以下では（主に W32TeX ユーザ向けに）Ghostscript のインストール方法を説明します。
+
+#### インストールの前に（旧バージョンが既にインストールされている場合） {#zea1e76f}
+
+旧バージョンの Ghostscript が既にインストールされている場合は，最新版をインストールする前に旧バージョンをアンインストールしておきます。
+
+- 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます。
+- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript をアンインストールします。
+
+旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします。
+
+- 旧バージョンの Ghostscript のフォルダーを探し，何か残っていたならばフォルダーごと削除します。
+- その後，Ghostscript をインストールします。
+
+#### インストール方法 {#q1167b48}
+
+1. 最新の角藤版 Ghostscript インストーラ（gs916w64full-gpl.exe または gs916w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.16” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.16” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
+
+［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
+なお，歴史的な理由等から gs\gs9.16 などというフォルダにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.16 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
+
+#### 環境変数 PATH の設定 {#w1241f25}
+
+インストールした Ghostscript に含まれる bin フォルダと lib フォルダを環境変数 PATH に追加します。
+bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
+Ghostscript を C:\Program Files\gs\gs9.16 にインストールした場合は
+
+```
+;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib
+```
+
+を環境変数 PATH に追加します。
+
+W32TeX をインストールした後に Ghostscript をインストールした場合，環境変数 Path の末尾は以下のようになるでしょう：
+
+- 64bit の場合
+
+    ```
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib
+    ```
+
+- 32bit の場合
+
+    ```
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib
+    ```
+
+［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
+これは腕に自信が無い限り削除しておくのがよいでしょう（ただし，後で述べるフォントを置く場所を追加する方法としてこの GS_LIB を用いる手法もあります）。
+いまどきはこんなものは設定しない時代になっています。
+
+#### インストールに失敗する場合 {#g27d0b0b}
+
+ユーザ名に例えば「山田太郎」のように ASCII 以外の文字（日本語など）を使っていると，Ghostscript のインストールに失敗することがあります。
+これは環境変数 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように ASCII 以外の文字が使われてしまうことが原因です。
+環境変数 TEMP のデフォルトは
+
+```
+%USERPROFILE%\AppData\Local\Temp （すなわち C:\Users\%USERNAME%\AppData\Local\Temp のこと）
+```
+
+に設定されていますが，この %USERPROFILE% に非 ASCII 文字が入ってしまっているわけです。
+
+したがって，環境変数 TEMP を ASCII 文字だけで設定します。
+例えば UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように設定するとよいでしょう。
 
 ### 注意点 {#de072348}
 
-#### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー → rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps" または ps2pdf.exe "予定.ps" {#h17c4f70}
+- 本家版や角藤版の Ghostscript をインストールした場合
+    - Ghostscript を起動するコマンドは gswin32c（64-bit 版なら gswin64c）です。ただし，W32TeX とともにインストールした場合は rungs でも起動できます。
+    - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
+- TeX Live をインストールした場合（付属する tlgs が自動的にインストールされる）
+    - Ghostscript を起動するコマンドは rungs です。
+    - PostScript を PDF に変換する ps2pdf というプログラムは，tlgs では ps2pdf.exe という実行ファイルになっています。
 
-Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラーになります．<br>
+#### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
+
+バッチファイル版の ps2pdf では，Windows PowerShell またはコマンド プロンプトから
 
 ```
-PS C:\Users\$Env:USERNAME> ps2pdf.bat "予定.ps"
+ps2pdf.bat "予定.ps"
+```
+
+を実行すると，次のようなエラーになります。
+
+```
 Error: /undefinedfilename in (\\.ps)
 Operand stack:
 
@@ -57,140 +145,35 @@ Last OS error: No such file or directory
 GPL Ghostscript 9.16: Unrecoverable error, exit code 1
 ```
 
-rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます．<br>
+rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます。
 
 ```
-PS C:\Users\$Env:USERNAME> rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
+rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
 ```
 
-TeX Live の ps2pdf.exe を使用しても OK です．<br>
+TeX Live の ps2pdf.exe を使用しても OK です。
 
 ```
-PS C:\Users\$Env:USERNAME> ps2pdf.exe "予定.ps"
+ps2pdf.exe "予定.ps"
 ```
 
 #### コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されない → CodePage の値を 932 に変更する {#bb074173}
 
-コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されないようです．(コマンド自体は正常終了します．)<br>
-これは一般に .bat ファイルが認識されないバグのためです．<br>
-
-CodePage の値が 932 の場合は PDF ファイルが出力されます．
+コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されないようです（コマンド自体は正常終了します）。
+これは一般に .bat ファイルが認識されないバグのためです。
+CodePage の値が 932 の場合は PDF ファイルが出力されます。
 
 ```
 rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="hoge.pdf" -c save pop -f "hoge.ps"
 ```
 
-のように ps2pdf.bat ではなく rungs.exe, gswin64c.exe, gswin32c.exe を実行すると PDF ファイルが作成できるようです．
+のように ps2pdf.bat ではなく rungs.exe, gswin64c.exe, gswin32c.exe を実行すると PDF ファイルが作成できるようです。
 
-### 配布先 {#gc8a2a19}
+<!-- ここから下はまだ整理していません… - - アセトアミノフェン (2015-07-06) -->
 
-#### Ghostscript {#q1e803c3}
+### Ghostscript のフロントエンド {#tdcde17e}
 
-- [http://www.ghostscript.com/download/](http://www.ghostscript.com/download/)
-
-#### 角藤版 Ghostscript {#sbee10cb}
-
-- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-
-### インストール {#a4d9c6ea}
-
-#### 前提条件 {#ead68e72}
-
-旧バージョンの Ghostscript が既にインストールされている場合は最新版をインストールする前に旧バージョンをアンインストールしておきます．<br>
-
-- 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます．
-- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript をアンインストールします．<br>
-    旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします．
-
-- 旧バージョンの Ghostscript のフォルダーを探し，何か残っていたならばフォルダーごと削除します．
-- その後，Ghostscript をインストールします．
-
-#### インストール方法 {#b84b5a69}
-
-- TeX Live の win32 版には Ghostscript (tlgs) が含まれているので別途 Ghostscript をインストールする必要はありません．<br>
-- gs916w64full-gpl.exe または gs916w32full-gpl.exe (最新の角藤版 Ghostscript インストーラー) を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.16”
-- インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-
-\[参考\] 初心者はデフォルトのインストール場所にインストールするのがいいでしょう．<br>
-Ghostscript は好きな場所にインストールすることができますが日本語等の非 ascii 文字を含むフォルダーにインストールするのは避けておくのが無難です．<br>
-なお，歴史的な理由等から gs\gs9.16 などというフォルダーにインストールされることがほとんどです．<br>
-その関係から，様々な解説ではこの gs\gs9.16 などといったフォルダー構造を仮定していることが多いということを理解しておいてください．<br>
-
-#### インストールに失敗する場合 {#g27d0b0b}
-
-ユーザー アカウント (Microsoft アカウント または ローカル アカウント) の名前に例えば「山田太郎」のように
-ASCII 以外の文字（日本語など）を使っていると，Ghostscript の
-インストールに失敗することがあります。<br>
-これは環境変数
-TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように
-ASCII 以外の文字が使われてしまうことが原因です。<br>
-環境変数 TEMP のデフォルトは
-%USERPROFILE%\AppData\Local\Temp
-(&cong; C:\Users\\%USERNAME%\AppData\Local\Temp)
-に設定されています．<br>
-環境変数 TEMP を ASCII 文字だけで設定します。（例えば
-UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように設定します。）
-
-### 環境変数 {#g074d14f}
-
-#### 環境変数 PATH {#w1241f25}
-
-インストールした Ghostscript に含まれる bin フォルダー と lib フォルダーを環境変数 PATH に追加します．<br>
-具体的には次のように設定します．<br>
-
-Ghostscript を C:\Program Files\gs\gs9.16 にインストールした場合
-
-```
-;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib
-```
-
-を環境変数 PATH に追加します。
-
-***
-
-<span style="color:#3EAEC0;background-color:#3EAEC0;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>環境変数</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　　Ghostscript のユーザー環境変数(U)<br>
-
-> <table>
-> <tbody>
-> <tr><td>変数</td><td>値</td></tr>
-> <tr><td>PATH</td><td>C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib<br>C:\w32tex\bin;C:\Program Files\gs\gs9.16\bin;C:\Program Files\gs\gs9.16\lib</td></tr>
-> <tr><td>TEMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> <tr><td>TMP</td><td>%USERPROFILE%\AppData\Local\Temp</td></tr>
-> </tbody>
-> </table>
->
-
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(N)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(D)　 \]</span><br>
-
-　　システム環境変数(S)<br>
-...<br>
-　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　新規(W)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(I)...　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　削除(L)　 \]</span><br>
-
-***
-
-#### 環境変数 GS_LIB {#y53bce19}
-
-古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません．<br>
-これは腕に自信が無い限り削除しておくのがよいでしょう．<br>
-いまどきはこんなものは設定しない時代になっています．<br>
-ただし，後で述べるフォントを置く場所を追加する方法としてこの GS_LIB を用いる手法もあります．
-
-### フロントエンド {#tdcde17e}
-
-MS-Windows で使用可能な Ghostscript のフロントエンド(プレビューしたり，その他様々なことを gui で行うためのソフトウェア)のいくつかについてインストール方法と注意点を簡単に記しておきます．
+Windows で使用可能な Ghostscript のフロントエンド（プレビューしたり，その他様々なことを GUI で行うためのソフトウェア）のいくつかについて，インストール方法と注意点を簡単に記しておきます。
 
 #### GSview <a id="gsview"></a> {#xde11637}
 
@@ -205,17 +188,17 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
 <!-- EM64T （Intel 64 の旧称） -->
 <!-- IA-32e （EM64T の旧称） -->
 
-- GSview は CTAN から提供されなくなりました． → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)<br>
+- GSview は CTAN から提供されなくなりました。 → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
 
-- [GSview](http://www.ghostscript.com/GSview.html) から最新の GSview インストーラーをダウンロードし，実行します．GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません．Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください．
+- [GSview](http://www.ghostscript.com/GSview.html) から最新の GSview インストーラーをダウンロードし，実行します。GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません。Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください。
 
-- GSview は，Ghostscript を正常にインストールした後にインストールしてください(Ghostscript のレジストリ情報が使用されるためです)．
+- GSview は，Ghostscript を正常にインストールした後にインストールしてください（Ghostscript のレジストリ情報が使用されるためです）。
 
-- 角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語の PostScript ファイルを表示するには，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の内容に “-dWINKANJI” を追加します。-dWINKANJI オプションに関しては後ろの方に簡単な解説があるのでそちらを参照してください．
+- 角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語の PostScript ファイルを表示するには，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の内容に “-dWINKANJI” を追加します。-dWINKANJI オプションに関しては後ろの方に簡単な解説があるのでそちらを参照してください。
 
-- GSview の \[File\]->\[PS to EPS\] の機能は十分に注意を払って使用してください．ps file を与えた場合に出来上がるのは不正な eps file です．出来上がった eps file を思い通りに扱えない dviware も存在するので，これは簡易的な機能であると理解してください．このことに関しては，\[File\]->\[PS to EPS\] のダイヤログに現れる \[Help\] のボタンを押すと解説を見ることができます．なお，ps ではなく eps file を与えた場合には，この機能は BoundingBox を gui で付け替える有用な tool となります．
+- GSview の \[File\]->\[PS to EPS\] の機能は十分に注意を払って使用してください。ps file を与えた場合に出来上がるのは不正な eps file です。出来上がった eps file を思い通りに扱えない dviware も存在するので，これは簡易的な機能であると理解してください。このことに関しては，\[File\]->\[PS to EPS\] のダイヤログに現れる \[Help\] のボタンを押すと解説を見ることができます。なお，ps ではなく eps file を与えた場合には，この機能は BoundingBox を gui で付け替える有用な tool となります。
 
-- GSview のデフォルトの用紙サイズ設定には，日本で用いられる JIS規格・B系列 の洋紙のサイズは含まれていません．つまり，日本語文書を用いる場合に ps file を得る段階までにおいて，通常の感覚でB4とかB5の用紙サイズを指定していた場合に GSview で表示させても思い通りのサイズでは表示されない場合があります．これに対する設定を行う場合には，GSview のフォルダーにある printer.ini の中の \[UserMedia\] の部分に以下のデータを付け加え，GSview の \[Options\]->\[Advanced Configure...\] のダイヤログで「Copy Printer Defaults」のみにチェックマークを入れて \[OK\] を押してバイナリを書き換えます．
+- GSview のデフォルトの用紙サイズ設定には，日本で用いられる JIS規格・B系列 の洋紙のサイズは含まれていません。つまり，日本語文書を用いる場合に ps file を得る段階までにおいて，通常の感覚でB4とかB5の用紙サイズを指定していた場合に GSview で表示させても思い通りのサイズでは表示されない場合があります。これに対する設定を行う場合には，GSview のフォルダーにある printer.ini の中の \[UserMedia\] の部分に以下のデータを付け加え，GSview の \[Options\]->\[Advanced Configure...\] のダイヤログで「Copy Printer Defaults」のみにチェックマークを入れて \[OK\] を押してバイナリを書き換えます。
 
     ```
     jisB0=2920,4127
@@ -229,12 +212,12 @@ MS-Windows で使用可能な Ghostscript のフロントエンド(プレビュ�
     jisB8=181,258
     ```
 
-    無論こんなにたくさん用意する必要はなく，自分に必要なものを設定すればそれで十分です．
+    無論こんなにたくさん用意する必要はなく，自分に必要なものを設定すればそれで十分です。
 
 #### PS_View <a id="psview"></a> {#h218efe8}
 
-[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです．<br>
-TeX Live (Win32 版) に標準で含まれています．<br>
+[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
+TeX Live (win32) に標準で含まれています。
 
 W32TeX で PS_View を使用する場合は PS_View の psv.wx.lua の gsargs の dllloc
 
@@ -244,9 +227,9 @@ local gsargs = {
   dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
 ```
 
-を角藤版 32-bit Ghostscript の dll ファイル (C:\Program Files\gs\gs9.16\bin\gsdll32.dll) に修正します．<br>
+を角藤版 32-bit Ghostscript の dll ファイル (C:\Program Files\gs\gs9.16\bin\gsdll32.dll) に修正します。
 
-ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します．
+ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します。
 
 ```
 local gsargs = {
@@ -266,49 +249,49 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
 local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 ```
 
-に修正します．
+に修正します。
 
 #### SumatraPDF {#f86c5a11}
 
-[SumatraPDF - TeX Wiki](/SumatraPDF/) を参照してください．
+[SumatraPDF](/SumatraPDF/) も Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
 
 #### Ghostscript.NET.Viewer {#ha9e1164}
 
 - [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
 - [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
 
-を参照してください．
+を参照してください。
 
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
-フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります（例えば [dvipdfmx](/dvipdfmx/), [Inkscape](/Inkscape/), [ImageMagick](/ImageMagick/) など）．
-これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です．
+フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります（例えば [dvipdfmx](/dvipdfmx/), [Inkscape](/Inkscape/), [ImageMagick](/ImageMagick/) など）。
+これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です。
 
 ### cidfmap の初期設定 {#ra5fe424}
 
-日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています．<br>
-これを他の CID font や TrueType font に代替させることを主な目的とした設定ファイルが cidfmap です．<br>
-角藤版 Ghoststscript では，gs\gs$(rungs --version)\lib に存在します．<br>
-インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます．<br>
-しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります．<br>
-cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません．<br>
-なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です．<br>
-次の命令を Windows PowerShell から実行すればそれがなされます．
+日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています。<br>
+これを他の CID font や TrueType font に代替させることを主な目的とした設定ファイルが cidfmap です。<br>
+角藤版 Ghoststscript では，gs\gs$(rungs --version)\lib に存在します。<br>
+インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます。<br>
+しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります。<br>
+cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません。<br>
+なお，Ghostscript のインストール後にこの自動設定を単独に行うことも可能です。<br>
+次の命令を Windows PowerShell から実行すればそれがなされます。
 
 ```
 $gsversion = 'gs' + $(rungs --version); rungs -q -dBATCH -sFONTDIR="c:/windows/fonts" -sCIDFMAP="c:/gs/$gsversion/lib/cidfmap" "c:/gs/$gsversion/lib/mkcidfm.ps"
 ```
 
-パス名部分に関しては各自の環境に合わせて書き直して下さい．<br>
-また，c:/windows/fonts というのは Windows の システムフォントフォルダーのことです．
+パス名部分に関しては各自の環境に合わせて書き直して下さい。<br>
+また，c:/windows/fonts というのは Windows の システムフォントフォルダーのことです。
 
-一つ注意を言っておきます．<br>
-この自動設定を行ったとしても，あなたの環境にある CJK つまり 日中韓のフォントがすべて使えるようになるわけではありません．<br>
-mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダーに見つかった TrueType fonts への代替設定がされるだけです．<br>
-これだけで自由自在になるわけではないことに注意してください．
+一つ注意を言っておきます。<br>
+この自動設定を行ったとしても，あなたの環境にある CJK つまり 日中韓のフォントがすべて使えるようになるわけではありません。<br>
+mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダーに見つかった TrueType fonts への代替設定がされるだけです。<br>
+これだけで自由自在になるわけではないことに注意してください。
 
-Windows PowerShell の使い方がわからない場合は Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます．<br>
-これをコピー・ペーストするだけでも大丈夫かもしれません(Windows の version による違いもあるので一概には言えませんが)．パス名部分については各自の環境に合わせることが必要になることがあります．<br>
+Windows PowerShell の使い方がわからない場合は Ghostscript を再度正常にインストールすればいいのですが，出来上がるものは大して変わらないのでこちらで作成したものを例として下に張り付けておきます。<br>
+これをコピー・ペーストするだけでも大丈夫かもしれません(Windows の version による違いもあるので一概には言えませんが)。パス名部分については各自の環境に合わせることが必要になることがあります。<br>
 
 ***
 
@@ -374,11 +357,11 @@ Windows PowerShell の使い方がわからない場合は Ghostscript を再度
 
 ### cidfmap の基本的な記述方法 {#p7036a99}
 
-cidfmap を書き換える際に必要になることを簡単に述べておきます(詳しくは gs のドキュメントを読んでください)．<br>
-下に実験用の基本的な例を張り付けておきます．<br>
-前半の % Aliases は，左に書かれたフォントを右に書かれたフォントで置き換えるという意味です．<br>
-後半の % Substitutions は TrueType font の設定と考えて下さい．<br>
-この例では，次の4つのフォント代替の連鎖が作られます(あるいはそう考えることができます)．<br>
+cidfmap を書き換える際に必要になることを簡単に述べておきます(詳しくは gs のドキュメントを読んでください)。<br>
+下に実験用の基本的な例を張り付けておきます。<br>
+前半の % Aliases は，左に書かれたフォントを右に書かれたフォントで置き換えるという意味です。<br>
+後半の % Substitutions は TrueType font の設定と考えて下さい。<br>
+この例では，次の4つのフォント代替の連鎖が作られます(あるいはそう考えることができます)。<br>
 
 ```
 Ryumin-Light -> MS-Mincho -> msmincho.ttc
@@ -387,9 +370,9 @@ HeiseiMin-W3 -> Ryumin-Light -> MS-Mincho -> msmincho.ttc
 HeiseiKakuGo-W5 -> GothicBBB-Medium -> MS-Gothic -> msgothic.ttc
 ```
 
-ここで，一番左のフォントが ps file で指定されるもの．いちばん右のフォントが実際に代替されるフォントになります．<br>
-Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります．<br>
-このことにも注意を払ってください．<br>
+ここで，一番左のフォントが ps file で指定されるもの。いちばん右のフォントが実際に代替されるフォントになります。<br>
+Ryumin-Light については2重定義がなされていますが(これはわざとです)，先に書かれたものが有効になります。<br>
+このことにも注意を払ってください。<br>
 
 ***
 
@@ -455,59 +438,59 @@ gs\gs$(rungs --version)\Resource\CMap\ に入っています。主なものを�
 
 ### CID font {#dc743646}
 
-CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります．<br>
-フォントファイルの置き場所が gs\gs$(rungs --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します．<br>
+CID font (正式名称は CID keyed font) は ghostsript にとって非常に特殊なフォントとなります。<br>
+フォントファイルの置き場所が gs\gs$(rungs --version)\Resource\CIDFont\ に限られることと，拡張子は付けてはならないことに注意してフォントファイルを配置します。<br>
 
-CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．
+CID font file は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，HEMIW3.CID → HeiseiMin-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます。
 
-この HeiseiMin-W3 を例にとり説明します．gs の段階でこのフォントに代替させる場合，例えば ps file では Ryumin-Light が指定されていてこれを HeiseiMin-W3 に代替させる場合には，cidfmap に次のような alias の記述をしておきます．
+この HeiseiMin-W3 を例にとり説明します。gs の段階でこのフォントに代替させる場合，例えば ps file では Ryumin-Light が指定されていてこれを HeiseiMin-W3 に代替させる場合には，cidfmap に次のような alias の記述をしておきます。
 
 ```
 /Ryumin-Light    /HeiseiMin-W3 ;
 ```
 
-代替をさせず，ps file に HeiseiMin-W3 が指定されていてそれをそのまま用いる場合には cidfmap には何も記述しません．
+代替をさせず，ps file に HeiseiMin-W3 が指定されていてそれをそのまま用いる場合には cidfmap には何も記述しません。
 
 ```
-CID フォントを用いる場合，経験によるとエラーになるかもしれません．
-オリジナル ソースに存在するバグと思われます．
+CID フォントを用いる場合，経験によるとエラーになるかもしれません。
+オリジナル ソースに存在するバグと思われます。
 ```
 
 ### 日本語 OpenType font {#j4509a9f}
 
-ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します．<br>
+ここでは日本語等 (CJK) の OpenType font を用いる場合について説明します。<br>
 
-CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です．<br>
-このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます．<br>
+CID font の代わりに Postscript outline の OpenType font (多くの場合には拡張子が .otf の OpenType フォーマットのフォント) を用いることも可能です。<br>
+このフォントファイルの配置は，ファイル名を拡張子無しの PostScript 名に変えて (例えば，ヒラギノ明朝 ProN W3.otf → HiraMinProN-W3)，gs\gs$(rungs --version)\Resource\CIDFont\ に置くかリンクを張っておきます。<br>
 
-OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)．<br>
-これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります．<br>
-従って，この作業を行うためのファイルあるいはPSコードが必要になります．<br>
+OpenType font で出力する場合には，ps file で指定されたフォントに関して フォント名-CMap名 の分解を行い，PSフォント名と文字コード変換の方法(使用する CMap)を取得する作業が必要になります(CID font や TrueType font で出力する場合にはこの作業が自動実行されます)。<br>
+これが行われないと，CMap名がついたままのものが文字コード変換を行わずに通常の欧文フォントとして探され，最終的には文字化けとなります。<br>
+従って，この作業を行うためのファイルあるいはPSコードが必要になります。<br>
 
-上の HiraMinProN-W3 を例に取ってみましょう．<br>
+上の HiraMinProN-W3 を例に取ってみましょう。<br>
 ps file に HiraMinProN-W3-H が指定されており，これをそのまま HiraMinProN-W3 で出力する (HiraMinProN-W3-H -> HiraMinProN-W3) 場合には，
 
 ```
 /HiraMinProN-W3-H /H [/HiraMinProN-W3] composefont pop
 ```
 
-という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します．<br>
-フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください．<br>
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に HiraMinProN-W3-H という名前で作成します。<br>
+フォント名本体だけではなく，CMapリソース名 (この場合には -H) も含めて考えることに 注意してください。<br>
 
-cidfmap でのフォント代替の記述は CID font の場合と同様です．<br>
-例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう．<br>
-ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります．<br>
+cidfmap でのフォント代替の記述は CID font の場合と同様です。<br>
+例えば，cidfmap で Ryumin-Light -> HiraMinProN-W3 の代替が引き起こるように記述してあったとしましょう。<br>
+ps file に Ryumin-Light-H が指定されていた場合には，これは HiraMinProN-W3 で出力する (Ryumin-Light-H -> HiraMinProN-W3) 設定をしていることになります。<br>
 この場合には，
 
 ```
 /Ryumin-Light-H /H [/Ryumin-Light] composefont pop
 ```
 
-という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します．<br>
-どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです．<br>
+という内容のファイルを gs\gs$(rungs --version)\Resource\Font\ に Ryumin-Light-H という名前で作成します。<br>
+どちらにしても，OpenType font で出力する場合には，ps file に指定されているものに関するファイルの作成が必要になるということです。<br>
 
-なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)．<br>
-当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません．<br>
+なお，dvips が出力する ps file に上記の ...composefont pop のようなPSコードがあらかじめ記述されている場合もあります(CMap名が Identity-H である場合等)。<br>
+当然のことながら，この場合には上記のファイルが存在していなくても文字化けは引き起こりません。<br>
 また W32TeX における 2013/10/01 以降の dvipsk-w32.tar.xz, dvipsk-w64.tar.xz
 に入っている ps2otfps.exe を用いて
 
@@ -515,54 +498,54 @@ ps file に Ryumin-Light-H が指定されていた場合には，これは Hira
 ps2otfps old.ps new.ps
 ```
 
-によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます．<br>
+によって変換すると，殆どの場合 new.ps に必要なPSコードを記述することができます。<br>
 また最新の ps2otfps はオプション -f を付けるとフィルタとして働くので
 
 ```
 dvips -f ... dviname | ps2otfps -f >psfile.ps
 ```
 
-とすると更に便利です．<br>
+とすると更に便利です。<br>
 
 ### 日本語 TrueType font {#wbee8199}
 
-ここでは日本語等 (CJK) の TrueType font を用いる場合のフォントの置き場所やパスの設定方法について説明します．
+ここでは日本語等 (CJK) の TrueType font を用いる場合のフォントの置き場所やパスの設定方法について説明します。
 
-1) まず，ここで用いる用語の説明をしておきます．LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です．これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，rungs -h で表示されるもののうちの Search path: の部分に記述される場所のことです．環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします．角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます．次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です．これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります．なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です．
+1) まず，ここで用いる用語の説明をしておきます。LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です。これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，rungs -h で表示されるもののうちの Search path: の部分に記述される場所のことです。環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします。角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます。次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です。これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります。なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です。
 
-2) 拡張子が .ttf や .ttc である TrueType font (拡張子が .otf であっても TrueType outline であるならば同様に使えるかもしれないが未確認) は，cidfmap での代替を行うことによって使用することができます．この場合，フォントファイルは，cidfmap に記述される /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます(フォントファイルは実ファイルではなくリンクでも構いません)．gs のドキュメントによれば，これは絶対パス指定でならなければならないようです．しかし，相対パス指定，つまり /Path (msmincho.ttc) のような記述も実際には使うことができます．相対パス指定の場合には，フォントは LIB PATH のみから探されます(FONT PATH の場所は探されない)．従って，相対パス指定の場合には，LIB PATH に含まれる場所にフォントファイル(またはリンク)を置いてください．
+2) 拡張子が .ttf や .ttc である TrueType font (拡張子が .otf であっても TrueType outline であるならば同様に使えるかもしれないが未確認) は，cidfmap での代替を行うことによって使用することができます。この場合，フォントファイルは，cidfmap に記述される /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます(フォントファイルは実ファイルではなくリンクでも構いません)。gs のドキュメントによれば，これは絶対パス指定でならなければならないようです。しかし，相対パス指定，つまり /Path (msmincho.ttc) のような記述も実際には使うことができます。相対パス指定の場合には，フォントは LIB PATH のみから探されます(FONT PATH の場所は探されない)。従って，相対パス指定の場合には，LIB PATH に含まれる場所にフォントファイル(またはリンク)を置いてください。
 
-3) gs の option -dSAFER が用いられた場合には，絶対パス指定の場合に制限が引きおこります(例えば，ps2pdf では -dSAFER が用いられています)．この場合の絶対パスは，LIB PATH または FONT PATH に指定された場所に含まれなければなりません．これらの場所にない絶対パスを指定した場合は error となります．環境変数 GS_FONTPATH を設定することがこの問題を解決する方法の一つです．
+3) gs の option -dSAFER が用いられた場合には，絶対パス指定の場合に制限が引きおこります(例えば，ps2pdf では -dSAFER が用いられています)。この場合の絶対パスは，LIB PATH または FONT PATH に指定された場所に含まれなければなりません。これらの場所にない絶対パスを指定した場合は error となります。環境変数 GS_FONTPATH を設定することがこの問題を解決する方法の一つです。
 
-4) gs の option -dNOPLATFONTS が用いられた場合には，Windows のシステムフォントフォルダーにあるフォントは探されなくなります．ただし，LIB PATH, FONT PATH にそれが設定されているならば探されます．つまり，相対指定なら LIB PATH に，絶対指定ならば LIB PATH または FONT PATH にシステムフォントフォルダーの場所が記述されていれば探されます．
+4) gs の option -dNOPLATFONTS が用いられた場合には，Windows のシステムフォントフォルダーにあるフォントは探されなくなります。ただし，LIB PATH, FONT PATH にそれが設定されているならば探されます。つまり，相対指定なら LIB PATH に，絶対指定ならば LIB PATH または FONT PATH にシステムフォントフォルダーの場所が記述されていれば探されます。
 
-5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう．しかし，相対パスの方が簡単かもしれません．相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます．また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)．
+5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
 
-参考) 角藤版 Ghostscript に存在する option -dWINKANJI を用いて，Windows API ドライバによって日本語等のフォントが出力される場合には，上記に述べてきたようなパスの制限は一切無くなります．
+参考) 角藤版 Ghostscript に存在する option -dWINKANJI を用いて，Windows API ドライバによって日本語等のフォントが出力される場合には，上記に述べてきたようなパスの制限は一切無くなります。
 
-参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです．通常は問題ありませんが，まれに問題を引き起こすかもしれません．
+参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです。通常は問題ありませんが，まれに問題を引き起こすかもしれません。
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
-[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです．従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります．
+[OTF パッケージ](/OTF/) を用いる場合には，その名の通り OpenType fonts を用いる場合がほとんどです。従って，その場合には フォント名-CMap名を分解するためのファイルを作成する必要があります。
 
 ```
 (注意!!)
 W32TeX に入れられたプログラム ps2otfps.exe を使用する場合，
-.../Resource/Font/ に沢山のファイルを作成するという以下の作業は一切不要です．
+.../Resource/Font/ に沢山のファイルを作成するという以下の作業は一切不要です。
 ps2otfps old.ps new.ps
-によって，dvips が出力した old.ps を変換して new.ps を作成します．
-この new.ps を Ghostscript で取り扱うことができます．
+によって，dvips が出力した old.ps を変換して new.ps を作成します。
+この new.ps を Ghostscript で取り扱うことができます。
 最新の ps2otfps は -f オプションを付けると，フィルタとして働くので
 dvips -f ... dviname | ps2otfps -f >psfile.ps
-とすると，更に便利です．
+とすると，更に便利です。
 但し，OpenType フォントファイルを PostScript 名に変換したファイルを
 .../Resource/CIDFont/
-にコピーしておくという作業だけは必要です．
+にコピーしておくという作業だけは必要です。
 OpenType フォントの PostScript 名は
 otfinfo -p OpenTypeFontFile
-とすると表示されます．また dvips 用の map ファイルは PostScript 名で
-書いておきます．
+とすると表示されます。また dvips 用の map ファイルは PostScript 名で
+書いておきます。
 ```
 
 例えば，ps file に Ryumin-Light-Identity-H が使われていた場合には，gs\gs$(rungs --version)\Resource\Font\ に
@@ -580,7 +563,7 @@ otfinfo -p OpenTypeFontFile
 composefont pop
 ```
 
-という内容のテキストファイル “Ryumin-Light-Identity-H” を作成する必要があります．同様にして次のファイルを作成します（数が多いので注意）．
+という内容のテキストファイル “Ryumin-Light-Identity-H” を作成する必要があります。同様にして次のファイルを作成します（数が多いので注意）。
 
 - Ryumin-Light-Identity-{H,V}
 - GothicBBB-Medium-Identity-{H,V}
@@ -645,7 +628,7 @@ composefont pop
 
 ### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
 
-角藤版 Ghostscript には -dWINKANJI というオプションが存在します．この -dWINKANJI を指定すると，日本語フォントは Windows API ドライバを用いて表示されます．ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます．特に縦組み時においてこの -dWINKANJI は有用です．Windows API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます．
+角藤版 Ghostscript には -dWINKANJI というオプションが存在します。この -dWINKANJI を指定すると，日本語フォントは Windows API ドライバを用いて表示されます。ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます。特に縦組み時においてこの -dWINKANJI は有用です。Windows API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます。
 
 #### gs\gs$(rungs --version)\kanji\kconfig.ps の記述例 {#d0c50ae3}
 
@@ -673,7 +656,7 @@ composefont pop
 
 ### gs\gs$(rungs --version)\lib\cidfmap の記述例 {#m115a63f}
 
-これはさまざまなフォントを扱うための設定の example です．
+これはさまざまなフォントを扱うための設定の example です。
 
 ***
 
@@ -1044,3 +1027,28 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
   /Symbol /ZapfDingbats
 ] readonly def
 ```
+
+### 関連リンク {#gc8a2a19}
+
+#### Ghostscript 公式バイナリの配布元 {#q1e803c3}
+
+- [http://www.ghostscript.com/download/](http://www.ghostscript.com/download/)
+
+#### 角藤版 Ghostscript の配布元 {#sbee10cb}
+
+- [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+
+#### ChangeLog (tlgs) {#a9e655e3}
+
+- \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
