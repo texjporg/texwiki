@@ -20,6 +20,11 @@ W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html
 
 ## インストール {#ib4afbe8}
 
+インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，コマンド プロンプトで「簡易インストーラ」を動かす方法があります．
+初めての方は TeX インストーラ 3 を使うのがおすすめです．
+これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，GSview，[TeXworks](/TeXworks/)[^2]）を自動でインストールし，設定まで済ませてくれます．
+以下で，それぞれの方法を説明します．
+
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
 W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) をもちいるのが楽です．
@@ -62,12 +67,6 @@ W32TeX 自身が簡易インストーラを提供しています．
 #### ダウンロードサイト {#y2ec963e}
 
 W32TeX の最新版は，[ミラーサイト](/W32TeX/#mirror)からダウンロード可能です．
-
-#### 過去のバージョン {#n2c09a4d}
-
-過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：
-
-- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
 
 #### 注意点 {#s760b9ef}
 
@@ -138,48 +137,57 @@ W32TeX は環境変数 PATH を設定する必要があります．
 
 #### 以前に TeX をインストールしたことがある場合 {#z02ac16d}
 
-もしユーザー環境変数またはシステム環境変数に
-“TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，削除してください。
-次に，ユーザー環境変数のところを見てください。
-PATH という欄があればそれをクリックして［編集］を押します。
-変数値の中に古い TeX へのパス (“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など) があったら削除します。
+もしユーザー環境変数またはシステム環境変数に “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，削除してください．
+次に，ユーザー環境変数のところを見てください．
+PATH という欄があればそれをクリックして［編集］を押します．
+変数値の中に古い TeX へのパス（“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など）があったら削除します．
 
 #### Ghostscript {#zd901fa9}
 
-[Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です。TeX で特に画像を使う上で（裏で）もちいられることが多いので，インストールをしておくことをお勧めします．なお，TeX インストーラ 3 でインストールした場合は，同時にインストールがされますので，ここでのインストールは不要です．
+[Ghostscript](/Ghostscript/) は [PostScript](/PostScript/)/[PDF](/PDF/) のインタープリタ（ソフトウェア RIP）です．
+TeX で特に画像を使う上で（裏で）もちいられることが多いので，インストールをしておくことをお勧めします．
+なお，TeX インストーラ 3 でインストールした場合は，同時にインストールがされますので，ここでのインストールは不要です．
 
-インストールの詳細に関しては
-
-- [Ghostscript/Windows](/Ghostscript/Windows/)
-
-を参照してください。
+インストールの詳細に関しては [Ghostscript/Windows](/Ghostscript/Windows/) を参照してください．
 
 #### dviout {#hd6558c1}
 
-[dviout](/dviout/) は dvi ファイルのプレビューアです．近年では PDF ファイルによるプレビューの方がトラブルが少ないとされており，そちらを使う場合は特に必要ありません．逆に従来通り dvi ファイルをプレビューしたい場合は必須となります．インストールは [dviout](/dviout/) をご覧ください．なお，TeX インストーラ 3 では自動でインストールされます．
+[dviout](/dviout/) は dvi ファイルのプレビューアです．
+近年では PDF ファイルによるプレビューの方がトラブルが少ないとされており，そちらを使う場合は特に必要ありません．
+逆に従来通り dvi ファイルをプレビューしたい場合は必須となります．
+インストールと設定は [dviout](/dviout/) をご覧ください．
+なお，TeX インストーラ 3 では自動でインストールされます．
 
-### Perl インタプリタのインストール {#c6d961fb}
+## 追加ソフトウェアのインストール {#qe462cfa}
 
-W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存しています（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など）．余裕があればインストールをしておくとよいでしょう．[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
+W32TeX を利用するうえで，追加インストールしておくと便利なソフトウェアを紹介します．
+
+### Perl インタプリタ {#c6d961fb}
+
+W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存しています（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など）．
+余裕があればインストールをしておくとよいでしょう（TeX インストーラ 3 を利用した場合も，Perl は自動インストールの対象ではありません）．
+[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
+
+### SumatraPDF {#g6688c53}
+
+[SumatraPDF](/SumatraPDF/) は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．
+[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) のように開いている PDF ファイルをロックせず，ファイルの更新を自動で検知してプレビューを更新する優れもので，軽量な LaTeX 用 PDF ビューアとして最適です．
+TeXworks などの PDF ビューア付きの統合環境を利用する場合は不要かもしれませんが，それ以外の場合はインストールするとよいでしょう（TeX インストーラ 3 を利用した場合も，SumatraPDF は自動インストールの対象ではありません）．
 
 ## アップデート {#o482d037}
 
+W32TeX は常に新しいバイナリ・パッケージが提供され続けていますので，ときどき更新するとよいでしょう．
+アップデートもインストールと同様の手順で可能です．
+
 ### TeX インストーラ 3 によるアップデート {#i798ef70}
 
-abtexinst.exe をもう一度起動します．（インストール時に設定を変更した場合は同じ設定にします．）インストール時と同様に指示に従うことで，TeX インストーラ 3 はファイルの更新を検知し，アップデートを自動で行います．
+abtexinst.exe をもう一度起動します（インストール時に設定を変更した場合は同じ設定にします）．
+インストール時と同様に指示に従うことで，TeX インストーラ 3 はファイルの更新を検知し，アップデートを自動で行います．
 
 ### 直接アップデート {#r88b7452}
 
-アップデートされたファイルをダウンロードし，texinst2015.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．ただし，古いファイルを手動で消さなければならないことがありますので，[http://w32tex.org/ChangeLog:ChangeLog](http://w32tex.org/ChangeLog:ChangeLog)を参照してください．
-
-## [SumatraPDF](/SumatraPDF/) {#g6688c53}
-
-SumatraPDF は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．
-インストール・設定に関しては
-
-- [SumatraPDF - TeX Wiki](/SumatraPDF/)
-
-を参照してください．
+アップデートされたファイルをダウンロードし，texinst2015.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．
+ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](http://w32tex.org/ChangeLog)を参照してください．
 
 ## 注意点 {#maff36c0}
 
@@ -283,7 +291,7 @@ command_line_encoding.dvips =
 
 ## W32TeX の詳細情報 {#icae16ae}
 
-### ミラーサイト (W32TeX) {#mirror}
+### W32TeX 最新版ミラーサイト {#mirror}
 
 <strong>FTP</strong>
 <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
@@ -367,6 +375,12 @@ command_line_encoding.dvips =
     <!-- - -http://core.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
     <!-- - -http://mirror.ctan.org/systems/win32/w32tex/ -->
 
+### 過去のバージョンの W32TeX {#mirror-old}
+
+何らかの理由で過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：
+
+- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
+
 ### W32TeX のダウンロードファイルの一覧 {#filelist}
 
 以下のリンクは [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/) へのものですが，状況によって上記のミラーサイトを用いてください．
@@ -430,7 +444,7 @@ command_line_encoding.dvips =
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td><a href="/pstoedit/">pstoedit</a></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a></td></tr>
-<tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/qpdf-w64.tar.xz">qpdf-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a></td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/tex4ht-w64.tar.xz">tex4ht-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/tex4ht-w32.tar.xz">tex4ht-w32.tar.xz</a></td><td>TeX4ht</td></tr>
@@ -448,3 +462,4 @@ command_line_encoding.dvips =
 <!-- |&ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/txtutil-w64.tar.xz);|&ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txtutil.tar.xz);|ユーティリティ類| -->
 
 [^1]: 64ビットプロセッサ ([x86-64](https://ja.wikipedia.org/wiki/X64)) または32ビットプロセッサ ([IA-32](https://ja.wikipedia.org/wiki/IA-32)) 環境で動作する Microsoft Windows．
+[^2]: 追加のプラグインを使えば，[Ispell](/Ispell/) もインストールされます．
