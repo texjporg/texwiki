@@ -15,9 +15,12 @@ pukiwiki: "TeX Live/Windows"
 
 ## インストール {#rc65f8ae}
 
-ネットワークインストーラである install-tl-windows.exe / install-tl.zip と，全てのファイルが入っている ISO イメージからダウンロードする二つの方法があります．どれをもちいてもインストーラの手順はほぼ変わりません．基本的にはネットワークインストーラをもちいるとよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
+ネットワークインストーラである install-tl-windows.exe / install-tl.zip と，全てのファイルが入っている ISO イメージからダウンロードする二つの方法があります．
+どちらをもちいてもインストーラの手順はほぼ変わりません．
+基本的にはネットワークインストーラをもちいるとよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
 
-いくつか追加で設定を行っておくと更に便利です．追加設定の項もご覧ください．
+いくつか追加で設定を行っておくと更に便利です．
+追加設定の項もご覧ください．
 
 ### ネットワークインストーラの場合 {#w369638d}
 
@@ -25,9 +28,13 @@ pukiwiki: "TeX Live/Windows"
 
 - install-tl-windows.exe の場合はダウンロード後ダブルクリック（全ユーザにインストールする場合は右クリックから「管理者として実行(A)」を選ぶ）
 - install-tl.zip の場合は解凍後 install-tl-windows.bat をダブルクリック（全ユーザにインストールする場合は右クリックから「管理者として実行(A)」を選ぶ）
-    すればインストーラが起動します．後は指示に従えば自動でインストールがされます．
 
-相当な時間がかかります．環境にもよりますが，一時間では厳しいです．二時間あれば多くの場合は終わるのではないかと思われます．
+すればインストーラが起動します．
+後は指示に従えば自動でインストールが行われます．
+
+相当な時間がかかります．
+環境にもよりますが，一時間では厳しいです．
+二時間あれば多くの場合は終わるのではないかと思われます．
 
 以下は install-tl-windows.exe をもちいて，また右クリックから「管理者として実行(A)」を選んだ場合の例です．
 
@@ -65,11 +72,14 @@ pukiwiki: "TeX Live/Windows"
 
 <a href="/attach/TeX%20Live/Windows/inst9.png"><img src="/attach/TeX%20Live/Windows/inst9.png" alt=""></a>
 
-インストールが開始されたので待ちます．これが長いです．表示は一時間九分となっていますが，この後数字が伸びて結局一時間二十分かかりました．
+インストールが開始されたので待ちます．
+これが長いです．
+表示は一時間九分となっていますが，この後数字が伸びて結局一時間二十分かかりました．
 
 <a href="/attach/TeX%20Live/Windows/inst10.png"><img src="/attach/TeX%20Live/Windows/inst10.png" alt=""></a>
 
-こんな感じの画面になったら終了です．\[終了\] を押します．（実は警告が出てしまったので，そのメッセージを隠して表示させています．）
+こんな感じの画面になったら終了です．
+\[終了\] を押します（実は警告が出てしまったので，そのメッセージを隠して表示させています）．
 
 <a href="/attach/TeX%20Live/Windows/inst11.png"><img src="/attach/TeX%20Live/Windows/inst11.png" alt=""></a>
 
@@ -89,13 +99,17 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 ### ISO イメージからのインストール {#zc468876}
 
-[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．「download from a nearby CTAN mirror」から，texlive2015.iso をダウンロードしてください．
-Wndows 7 以前では ISO イメージの中身を見るには追加でソフトウェアが必要です．Windows 8 以降では基本機能で可能となりました．ダブルクリックすると DVD ドライブとしてマウントされます．
+[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
+「download from a nearby CTAN mirror」から，texlive2015.iso をダウンロードしてください．
+Wndows 7 以前では ISO イメージの中身を見るには追加でソフトウェアが必要です．
+Windows 8 以降では基本機能で可能となりました．
+ダブルクリックすると DVD ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
 ### トラブル時 {#s0045851}
 
-途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．また，インストールフォルダー（デフォルトではC:\texlive\2015）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
+また，インストールフォルダー（デフォルトではC:\texlive\2015）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -109,27 +123,48 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 ### 追加設定 {#t30edd37}
 
-以下の設定を自動で行う [abtlinst_patch.exe](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#ABTLINSTPATCH) があります．ダウンロード後ダブルクリックを行えば自動で設定が行われます．（TeX Live のインストール後に実行してください．）
+以下の設定を自動で行う [abtlinst_patch.exe](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#ABTLINSTPATCH) があります．
+ダウンロード後ダブルクリックを行えば自動で設定が行われます（TeX Live のインストール後に実行してください）．
 
 以下は手動で行う方法です．
 
-#### TeXworksの設定 {#wa1faa7d}
+#### TeXworks の設定 {#wa1faa7d}
 
-LaTeX 用のエディタとして TeXworks が TeX Live とともにインストールされています．
+LaTeX 用のエディタとして [TeXworks](/TeXworks/) が TeX Live とともにインストールされています．
 手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．
 スタートメニューから起動することで動きます．
 ただし，日本語用の設定が必要です → [TeXworks/設定](</TeXworks/設定/>) をご覧ください．
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+TeX Live 2015 対応の事例です．
+
 - [TeX Live 2015 でアップデートされたパッケージ](http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-827.html)
 - [TeX Live 2015をWindows 8にインストールする](http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3)
 
+<!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
+<!-- 不具合対応まで書かれていたりするので，残しておきたいと思います． -->
+<!-- もし不要だと判断されたならば，削除ではなくコメントアウトにとどめてください． -->
+<!-- ときどき，記事の管理者が同じ URL で最新の TeX Live 対応の追記をすることがあり， -->
+<!-- これは意外と（2014 → 2015 とアップデートしたい人などに）有用だったりします． -->
+<!-- そして，そんな場合は上の最新記事に“昇格”です． -->
+
+念のため TeX Live 2014 対応のものも残しておきます．
+
+- [TeX Live 2014 for Windows](http://www.baldanders.info/spiegel/log2/000730.shtml)
+- [Windows 8.1 に TeX Live 2014 をインストール](http://qiita.com/ignorant/items/21545cde3c9bbafaa264)
+- [docs/TeX/TeX on Windows - kyogoku42's](http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows)
+- [TeX/Install - PukiWiki](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall)
+- [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
+- [Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．](http://qiita.com/ConHumi/items/f0d12ab1ad433591c192)
+
 ## アップデート {#a6223106}
 
-スタートメニューから 「TeX Live 2015」→「TeX Live Manager」 と起動することで，アップデートが可能です．「導入済のものを全て更新」を押せば更新されます．場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
+スタートメニューから 「TeX Live 2015」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
+「導入済のものを全て更新」を押せば更新されます．
+場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
 Windows PowerShell またはコマンド プロンプトから
 
