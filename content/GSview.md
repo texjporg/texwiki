@@ -81,5 +81,4 @@ jisB8=181,258
 
 ### 関連リンク {#yb0d4b4b}
 
-- [Ghostscript 9.16 + GSview 5.0 の日本語版](http://www.khotta.org/ghost/)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
