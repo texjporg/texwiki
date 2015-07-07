@@ -738,11 +738,11 @@ composefont pop
 /Baekmuk-Headline             << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/hline.ttf)  >> ;
 /Baekmuk-Gulim                << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/gulim.ttf)  >> ;
 
-%%% OpenType fonts with PostScript outlines in Adobe Reader/Acrobat XI
+%%% OpenType fonts with PostScript outlines in Adobe Acrobat Reader DC/Acrobat DC
 %%% See http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows
-%%%     ftp://ftp.adobe.com/pub/adobe/reader/win/11.x/11.0.00/misc/
-%%%     "C:\Program Files\Adobe\Reader 11.0\Resource\CIDFont\"
-%%%     "C:\Program Files (x86)\Adobe\Reader 11.0\Resource\CIDFont\"
+%%%     ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/
+%%%     "C:\Program Files\Adobe\Acrobat Reader DC\Resource\CIDFont\"
+%%%     "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Resource\CIDFont\"
 %/Ryumin-Light                 /KozMinPr6N-Regular     ;
 %/GothicBBB-Medium             /KozGoPr6N-Medium       ;
 %/STSong-Light                 /AdobeSongStd-Light     ;
