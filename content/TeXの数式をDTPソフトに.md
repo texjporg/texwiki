@@ -7,51 +7,44 @@ pukiwiki: "TeXの数式をDTPソフトに"
 
 # TeXの数式をDTPソフトに
 
-Illustrator できれいな数式を作るのって，たいへんですよね。TeX なら簡単にきれいな数式ができます。
+## TeX の数式を DTP ソフトに {#b627e369}
 
-<strong>目次</strong>
+[Illustrator](/Illustrator/) などのソフトウェアできれいな数式を作るのって，大変ですよね。
+TeX, LaTeX を使えば簡単にきれいな数式ができます。
 
-## 数式用のフォント {#td464375}
+***
 
-TeX で無指定で使われるフォントは，本文は Computer Modern Roman 10 pt (cmr10)，
-数式は Computer Modern Math Italic 10 pt (cmmi10) です。
-これらは（PostScript アウトラインデータ形式の） OpenType フォント，TrueType
-フォント，Type 1 フォントのそれぞれの形式で配布されていますので，
-これらを他のアプリケーションで使うことができます。
+***
 
-Computer Modern フォントの OpenType 形式が
-[CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/) から，Latin Modern フォントの
-OpenType 形式が [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) から入手できます。
+### 数式用のフォントを追加して Illustrator などで頑張る方法 {#td464375}
 
-TrueType 形式の Computer Modern フォントの一つである BaKoMa フォントは，
-例えば [CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/)
-や[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) から入手
-できます。
-Type 1 フォント形式の一つである PFB 形式のフォントは TeX に標準で
-入っています。
+TeX で無指定で使われるフォントは，本文は Computer Modern Roman 10pt (cmr10)，数式は Computer Modern Math Italic 10pt (cmmi10) です。
+これらは（PostScript アウトラインデータ形式の）OpenType フォント，TrueType フォント，Type 1 フォントのそれぞれの形式で配布されていますので，これらを他のアプリケーションで使うことができます。
+もちろん Illustrator でも使えます。
+
+Computer Modern フォントの OpenType 形式が [CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/) から，Latin Modern フォントの OpenType 形式が [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) から入手できます。
+
+TrueType 形式の Computer Modern フォントの一つである BaKoMa フォントは，例えば [CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/) や [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) から入手できます。
+Type 1 フォント形式の一つである PFB 形式のフォントは TeX に標準で入っています。
 $TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。
 
-## 数式を EPS にする {#hf9c85f7}
+### 数式を EPS 形式で出力して取り込む {#hf9c85f7}
 
-複雑な数式は EPS などの形式でインポートします。
+複雑な数式は LaTeX を使ってタイプセットし，EPS などの形式でインポートするとよいでしょう。
 
-### お手軽なツールを使う方法 (Windows / Mac) {#oe0e5138}
+#### お手軽なツールを使う方法 (Windows/Mac) {#oe0e5138}
 
-TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式の画像に変換するツール
-[TeX2img](/TeX2img/) があります。
-コマンドラインを使いたくない人は，このツールで EPS ファイルを
-生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
+TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式などの画像ファイルに変換するツール [TeX2img](/TeX2img/) があります。
+コマンドラインを使いたくない人は，このツールで EPS ファイルを生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
+この方法は EPS ファイルの文字をアウトライン化してくれるので，数式用フォントを OS にインストールしなくても文字化けの心配がありません。
 
-### コマンドラインを使う方法 {#ma3ea888}
+#### コマンドラインを使う方法 {#ma3ea888}
 
 例えば次の数式を作ってみましょう。
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
 
-お好きなテキストエディタに次のように打ち込んでください
-（Linux でも OS X でも Microsoft Windows でも何でもかまいません）。
-
-***
+お好きなテキストエディタに次のように打ち込んでください（Linux でも OS X でも Microsoft Windows でも何でもかまいません）。
 
 ```
 \documentclass{article}
@@ -61,44 +54,36 @@ TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式の画像に変換�
 \end{document}
 ```
 
-***
-
 これを例えば “testeq.tex” というファイル名で保存します。
 
-LaTeX がインストールしてあるとして，次のようにコマンドを打ちます
-（あるいはマウスでこれに相当する操作をします）。
+LaTeX がインストールしてあるとして，次のようにコマンドを打ちます（あるいはマウスでこれに相当する操作をします）。
 
 ```
 $ latex testeq.tex
 $ dvips -E -Ppdf testeq.dvi -o testeq.eps
 ```
 
-これで[testeq.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という
-EPS ファイルができます。
+これで [testeq.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。
 ここで “-E” は EPS 形式で保存するオプションです。
 これを忘れると EPS でない PostScript 形式になってしまいます。
+この方法は（文字をアウトライン化しないので）テキストを保持した状態の EPS ファイルを出力します。
 
 ## InDesign に配置 {#n2deff3f}
 
-上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，
-次のようになります。
+上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
+「[数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
 
-「[数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」
-のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
 InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/) が便利です。
 
 ## Illustrator に配置 1 {#q2427dd4}
 
 【追記】
-Illustrator CS の環境設定で
-「リンクされたEPSに低解像度の表示用画像（プレビュー）を使用」のチェックを
-外してリンク配置すれば，EPS でも問題なく文字が表示されました。PDF でも
-リンク配置なら問題ありません。OS X のプレビューを使えば
-PDF を範囲指定してクロップできます。
+Illustrator CS の環境設定で「リンクされたEPSに低解像度の表示用画像（プレビュー）を使用」のチェックを外してリンク配置すれば，EPS でも問題なく文字が表示されました。
+PDF でもリンク配置なら問題ありません。OS X のプレビューを使えば PDF を範囲指定してクロップできます。
 
 <table>
 <tbody>
@@ -108,62 +93,39 @@ PDF を範囲指定してクロップできます。
 </table>
 
 EPS を作るところまでは上と同じです。
-ただ，この EPS をそのまま Illustrator に ［ファイル］→［配置...］
-（「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）
-すると，「所在不明のフォントは、初期設定のフォントで代用されます。」という
-メッセージが出て，文字化けします。
+ただ，この EPS をそのまま Illustrator に［ファイル］→［配置...］（「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）すると，「所在不明のフォントは，初期設定のフォントで代用されます。」というメッセージが出て，文字化けします。
 
-別の方法も後で書きますが，簡単かつ確実な方法は，「配置」ダイアログボックスの
-「リンク」チェックボックスをオンにすることです。
-dvips の出力する EPS には
-プレビュー画像が附いていませんので，配置してもただの箱に見えます。
-これでも PostScript デバイス（PS プリンタや Adobe Acrobat Distiller DC）に
-出力すれば，きれいに出ます。
-また，Illustrator から EPS で保存しても大丈夫です
-（保存時に「配置した画像を含む」チェックボックスをオンにします）。
+別の方法も後で書きますが，簡単かつ確実な方法は，「配置」ダイアログボックスの「リンク」チェックボックスをオンにすることです。
+dvips の出力する EPS にはプレビュー画像が附いていませんので，配置してもただの箱に見えます。
+これでも PostScript デバイス（PS プリンタや Adobe Acrobat Distiller DC）に出力すれば，きれいに出ます。
+また，Illustrator から EPS で保存しても大丈夫です（保存時に「配置した画像を含む」チェックボックスをオンにします）。
 
-EPS にプレビューを付けておけば，
-配置したときにプレビューを見ることができますので，
-便利です。
-GSview の ［Edit］→［Add EPS Preview］ でプレビューが付けられます。
+EPS にプレビューを付けておけば，配置したときにプレビューを見ることができますので便利です。
+[GSview](/GSview/) の \[Edit\] → \[Add EPS Preview\] でプレビューが付けられます。
 
-この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化
-するならいったん EPS で保存してから Adobe Acrobat Distiller DC で処理してください。
+この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化するならいったん EPS で保存してから Adobe Acrobat Distiller DC で処理してください。
 
 ## Illustrator に配置 2 (Microsoft Windows) {#wfad6f6b}
 
-箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には
-次のようにします。
-ただし，Illustrator のフォントリストに
-たくさんのフォントが追加されてしまいますのでご注意ください。
+箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には次のようにします。
+ただし，Illustrator のフォントリストにたくさんのフォントが追加されてしまいますのでご注意ください。
 
-あらかじめ $TEXMF\fonts\type1\ フォルダー
-（例えば C:\texlive\2015\texmf-dist\fonts\type1\）を
-フォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーに
-コピーまたはリンクしておきます
-（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
-こうすると，TeX で
-使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で
-使うことができます。
+あらかじめ $TEXMF\fonts\type1\ フォルダ（例えば C:\texlive\2015\texmf-dist\fonts\type1\）をフォルダごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
+こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
-mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に
-PostScript Level 2 での基本35書体をダウンロードするオプションを付けます
-（“-Ppdf” の代わりに TeX Live なら“-Pdownload35”，W32TeX なら “-Pdl”）。
+mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（“-Ppdf” の代わりに TeX Live なら “-Pdownload35”，W32TeX なら “-Pdl”）。
 
 ## Illustrator に配置 3 (OS X) {#z9ef5010}
 
 （この項については内山さんからご教示をいただきました。）
 
-OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが
-使えますが，一般のアプリケーションからは使えません。
-[http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/](http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください
-（フォントについては両者の中身は同じようです）。スクリーンフォントも必要です。
+OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが使えますが，一般のアプリケーションからは使えません。
+[http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/](http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください（フォントについては両者の中身は同じようです）。
+スクリーンフォントも必要です。
 
-インストールの場所は，Adobe 製品だけから使うなら
-/Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では次の場所のいずれかに入れるのがいいかもしれません。
-OS X では次の順にフォントを探してくれます
-（→ 「[OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。
+インストールの場所は，Adobe 製品だけから使うなら /Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では次の場所のいずれかに入れるのがいいかもしれません。
+OS X では次の順にフォントを探してくれます（→ 「[OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
@@ -179,41 +141,32 @@ OS X では次の順にフォントを探してくれます
 1. /Network/Library/Fonts// 以下（Network ドメイン用）
 1. /System/Library/Fonts/ （System ドメイン用。通常はここにはさわらない）
 
-私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，
-その中にまとめて入れました（Mac OS X 10.2 以降で可能）。
+私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，その中にまとめて入れました（Mac OS X 10.2 以降で可能）。
 
 ただ，Mac 版 Illustrator 10.0.3 では PDF で保存すると一部の文字が化けます。
-“\\\[ \Gamma - \gamma \\\]” で実験してみてください
-（“$\Gamma$” や “$-$” は化けやすいことで有名）。
-Windows 版なら大丈夫なのに
-残念です。
+“\\\[ \Gamma - \gamma \\\]” で実験してみてください（“$\Gamma$” や “$-$” は化けやすいことで有名）。
+Windows 版なら大丈夫なのに残念です。
 Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。
 PDF にしたければ EPS で保存して Adobe Acrobat Distiller DC で変換すればいいでしょう。
 
-念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント：
-[bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）
-でも試してみました。
-「テキストエディット」では使えましたが，Illustrator では
-フォントリストには出るけれども表示できません。
+念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント： [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）でも試してみました。
+「テキストエディット」では使えましたが，Illustrator ではフォントリストには出るけれども表示できません。
 
 ## WMF/EMF に変換する方法 {#b65fa32a}
 
-この方法は Microsoft Windows でしか使えません。また，あらかじめ Windows の
-システムに BaKoMa の Computer Modern TrueType フォントなどを
-インストールしておく必要があります。
+この方法は Microsoft Windows でしか使えません。また，あらかじめ Windows のシステムに BaKoMa の Computer Modern TrueType フォントなどをインストールしておく必要があります。
 
-dviout （2002年10月9日以降のもの）では次のようにして EMF 形式で
-クリップボードにコピーできます。まず ［Display］→［Region］→［On］
-（ショートカットは “Ctrl + \[”）にして，Shift を押しながら左クリックで
-矩形領域の左上隅，やはり Shift を押しながら右クリックで右下隅を指定します。
-これで ［File］→［Save as image］→［EMF in clipboard］（ショートカット
-は “Alt + (F, S, E)”）すると，クリップボードにコピーされます。これで
-Illustrator （EMF 形式を理解するソフトなら何でも）に貼り付ければ OK です。
+[dviout](/dviout/)（2002年10月9日以降のもの）では次のようにして EMF 形式でクリップボードにコピーできます。
+まず \[Display\] → \[Region\] → \[On\]（ショートカットは “Ctrl + \[”）にして，Shift を押しながら左クリックで矩形領域の左上隅，やはり Shift を押しながら右クリックで右下隅を指定します。
+これで \[File\] → \[Save as image\] → \[EMF in clipboard\]（ショートカットは “Alt + (F, S, E)”）すると，クリップボードにコピーされます。
+これで Illustrator などの EMF 形式を理解するソフトに貼り付ければ OK です。
 
-また，[pstoedit](/pstoedit/) を GSview と
-同じところ（標準では "C:\Program Files\Ghostgum\pstoedit\\"）にインストールして
-おけば，GSview から ［Edit］→［Convert to vector format...］ で
-WMF や EMF に変換できます。
+また，[pstoedit](/pstoedit/) を [GSview](/GSview/) と同じところ（標準では "C:\Program Files\Ghostgum\pstoedit\\"）にインストールしておけば，GSview から \[Edit\] → \[Convert to vector format...\] で WMF や EMF に変換できます。
+
+[TeX2img](/TeX2img/) の Windows 版は，付属ツールの pdfiumdraw を使って EMF ファイルを出力することができます。
+なお，この pdfiumdraw を単独で PDF ファイルを EMF ファイルに変換するツールとして利用することもできます。
+
+- [TeX2img に学ぶ「画像編集・変換ツール」](http://acetaminophen.hatenablog.com/entry/2015/06/02/222405)
 
 ## Ghostscript でアウトライン化する方法 {#bf206395}
 
@@ -225,47 +178,36 @@ eps2write は gs9.14 以降で追加されたデバイスなので，お使い�
 簡単にできます）。
 文字が小さいとアウトラインではなくビットマップ化されてしまいます。
 
-***
-
 ```
-\documentclass[uplatex,30pt]{jsarticle}
+\documentclass[30pt]{jsarticle}
 \pagestyle{empty}
 \begin{document}
 \[ \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx = \sqrt{\frac{\pi}{2}} \]
 \end{document}
 ```
 
-***
-
 次のコマンドを順に打ち込みます（Unix-like OS の場合）。
 
 ```
-$ uplatex testeq.tex
+$ platex testeq.tex
 $ dvips -E -Ppdf testeq.dvi -o testeq.eps
 $ eps2eps testeq.eps testeq2.eps
 ```
 
-この eps2eps は Ghostscript で eps2write デバイスを使う
-シェルスクリプトです。Microsoft Windows ならおそらく次に相当します
-（さらに正確には “-dDEVICEWIDTH=250000 -dDEVICEHEIGHT=250000” という
-オプションも含んでいます）。
+この eps2eps は Ghostscript で eps2write デバイスを使うシェルスクリプトです。
+Microsoft Windows ならおそらく次に相当します（さらに正確には “-dDEVICEWIDTH=250000 -dDEVICEHEIGHT=250000” というオプションも含んでいます）。
 
 ```
 >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -sOutputFile=testeq2.eps testeq.eps
 ```
 
-これでアウトラインが取れます。日本語も大丈夫です
-(Windows でも dvips を使います ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html)))。
-できた testeq2.eps の &#x25;&#x25;BoundingBox: 行がなぜか変なので，
-元の testeq.eps の &#x25;&#x25;BoundingBox: 行と置き換えます。
-これで testeq2.eps はフォントを含まないアウトラインだけの
-EPS になり，Mac でも Windows でも Illustrator などに安全に配置できます。
+これでアウトラインが取れます。日本語も大丈夫です（Windows でも dvips を使います ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))）。
+できた testeq2.eps の &#x25;&#x25;BoundingBox: 行がなぜか変なので，元の testeq.eps の &#x25;&#x25;BoundingBox: 行と置き換えます。
+これで testeq2.eps はフォントを含まないアウトラインだけの EPS になり，Mac でも Windows でも Illustrator などに安全に配置できます。
 
-新ドキュメントクラスを使う方法以外に，\scalebox で
-数式を拡大する方法もあります。この場合には
+新ドキュメントクラスを使う方法以外に，\scalebox で数式を拡大する方法もあります。
+この場合には
 次の例のように数式を $\displaystyle ...$ で書くといいでしょう。
-
-***
 
 ```
 \documentclass{article}
@@ -277,19 +219,20 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 \end{document}
 ```
 
-***
+別解として，dvips に “-x 3000” のようなオプションを与えれば3倍に拡大されます。
 
-別解として，dvips に “-x 3000” のようなオプションを
-与えれば3倍に拡大されます。
-
-［2006年7月3日 追記］ 次のようにすれば，充分大きいサイズで式を作る必要も
-なく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
+［2006年7月3日 追記］ 次のようにすれば，充分大きいサイズで式を作る必要もなく，&#x25;&#x25;BoundingBox: 行も変にならないようです（→ [qa:43337](https://okumuralab.org/~okumura/texfaq/qa/43337.html)）。
 
 ```
- >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
+>rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -dEPSCrop -r9600 -sOutputFile=testeq2.eps testeq.eps
 ```
 
 端が欠ける場合は “-dEPSCrop” を外せばいいようです。
+
+なお，お手軽ツール [TeX2img](/TeX2img/) も eps2write デバイスを使用して文字をアウトライン化しています。
+ほかにも，TeX2img は便利な画像変換ノウハウを多く備えていますので，（たとえ TeX2img を使わないとしても，Windows/Mac 以外でも）この画像変換スキームは参考になることでしょう。
+
+- 参考：[TeX2img (Windows/Mac) の動作の詳細（改訂版）](http://acetaminophen.hatenablog.com/entry/tex2img-converter)
 
 ## 他の方法 {#b00fa762}
 
@@ -300,8 +243,8 @@ EPS になり，Mac でも Windows でも Illustrator などに安全に配置�
 ### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
 
 [LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](http://sourceforge.net/projects/latexee/) です。
-本来は MiKTeX を必要とするソフトウェアですが、MiKTeX の texify.exe の代わりに TeX Live や W32TeX の uplatex.exe を指定すれば MiKTeX がなくても動作します。
-PNG 形式での貼りつけになるので拡大・縮小に弱く、数式の背景色が透過されず白地のままであるという注意点があります。
+本来は [MiKTeX](/MiKTeX/) を必要とするソフトウェアですが，MiKTeX の texify.exe の代わりに TeX Live や W32TeX の uplatex.exe を指定すれば MiKTeX がなくても動作します。
+PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の背景色が透過されず白地のままであるという注意点があります。
 
 ### 上記以外の方法 {#m911530d}
 
