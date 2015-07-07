@@ -21,13 +21,13 @@ W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html
 ## インストール {#ib4afbe8}
 
 インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，コマンド プロンプトで「簡易インストーラ」を動かす方法があります．
-初めての方は TeX インストーラ 3 を使うのがおすすめです．
-これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，GSview，[TeXworks](/TeXworks/)[^2]）を自動でインストールし，設定まで済ませてくれます．
 以下で，それぞれの方法を説明します．
+初めての方は TeX インストーラ 3 を使う方をおすすめします．
 
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
-W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) をもちいるのが楽です．
+W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
+これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，GSview，[TeXworks](/TeXworks/)[^2]）を自動でインストールし，設定まで済ませてくれます．
 基本的にはインストーラを取得後，解凍し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
 
@@ -179,6 +179,9 @@ TeXworks などの PDF ビューア付きの統合環境を利用する場合は
 W32TeX は常に新しいバイナリ・パッケージが提供され続けていますので，ときどき更新するとよいでしょう．
 アップデートもインストールと同様の手順で可能です．
 
+［古い W32TeX からアップデートする場合の参考］
+2013 年 4 月 7 日以前の W32TeX からアップデートする場合は，share/texmf というディレクトリが share/texmf-dist に変更されたことに注意してください（一度 share/texmf をディレクトリごと削除してからアップデートするとよいでしょう）．[古い情報](</古い情報/#c4916968>)も参照してください．
+
 ### TeX インストーラ 3 によるアップデート {#i798ef70}
 
 abtexinst.exe をもう一度起動します（インストール時に設定を変更した場合は同じ設定にします）．
@@ -187,7 +190,7 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 ### 直接アップデート {#r88b7452}
 
 アップデートされたファイルをダウンロードし，texinst2015.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．
-ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](http://w32tex.org/ChangeLog)を参照してください．
+ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](http://w32tex.org/ChangeLog) を参照してください．
 
 ## 注意点 {#maff36c0}
 
@@ -206,13 +209,13 @@ guess_input_kanji_encoding = 1
 文字コードの自動判別は失敗することがあります．
 [uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．
 
-## 漢字入出力対応状況 {#qc9f2e7d}
+### 漢字入出力対応状況 {#qc9f2e7d}
 
-コンソールやファイル名等での漢字(日本語)の入出力の対応状況をまとめました(2014/2/8現在)。
+コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2014/2/8 現在）．
 
 <table>
 <thead>
-<tr><th rowspan="2"> コマンド </th><th rowspan="2"> command_line_encoding </th><th rowspan="2"> コマンドライン<br>入力 </th><th colspan="2"> コンソール入力 </th><th colspan="2"> コンソール出力 </th><th rowspan="2"> 入出力<br>ファイル名 </th><th rowspan="2"> special<br>ファイル名 </th></tr>
+<tr><th rowspan="2"> コマンド </th><th rowspan="2"> command_line_encoding </th><th rowspan="2"> コマンドライン入力 </th><th colspan="2"> コンソール入力 </th><th colspan="2"> コンソール出力 </th><th rowspan="2"> 入出力ファイル名 </th><th rowspan="2"> special ファイル名 </th></tr>
 <tr><th> キーボード   </th><th> パイプ    </th><th> スクリーン  </th><th> パイプ      </th></tr>
 </thead>
 <tbody>
@@ -229,20 +232,22 @@ guess_input_kanji_encoding = 1
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> dvi2tty.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname=<br>指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= 指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> Unicode        </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> gswin32c.exe<br>gswin64c.exe  </td><td> ---        </td><td> Unicode        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> Unicode </td><td> --- </td></tr>
 <tr><td> GSview  </td><td> ---        </td><td> ???        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> CP932 </td><td> --- </td></tr>
 </tbody>
 </table>
 
-この表は、日本語版 Windows におけるものです。
-ここで、「command_line_encoding」とは、texmf.cnf のオプション設定です。
-「コンソール入力」とは、標準入力(STDIN)からの入力、「コンソール出力」とは、標準出力(STDOUT)や標準エラー出力(STDERR)への出力を指します。
-「specialファイル名」とは、挿入する画像のファイル名など、special命令によってdviファイルに書き込まれるファイル名の文字コードを指します。
-「CP932」「Unicode」は文字集合の意味で、「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています。
-スクリーンが「Unicode」「CP932(UTF-8)」の場合、(u)p(la)tex.exe では "-sjis-terminal" オプションにて、その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで、文字化けせずに表示させることができます。
-以下はその例です。
+この表は，日本語版 Windows におけるものです。
+
+「command_line_encoding」とは，texmf.cnf のオプション設定です．
+「コンソール入力」は標準入力 (STDIN) からの入力を指し，「コンソール出力」は標準出力 (STDOUT) や標準エラー出力 (STDERR) への出力を指します．
+「special ファイル名」とは，挿入する画像のファイル名など，special 命令によって dvi ファイルに書き込まれるファイル名の文字コードを指します．
+
+「CP932」「Unicode」は文字集合の意味で，「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています．
+スクリーンが「Unicode」「CP932(UTF-8)」の場合，(u)p(la)tex.exe では "-sjis-terminal" オプションにて，その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで，文字化けせずに表示させることができます．
+以下はその例です．
 
 ```
 C:\work>platex -kanji=utf8 -sjis-terminal sourcename.tex
@@ -256,14 +261,15 @@ C:\work>uplatex -sjis-terminal sourcename.tex
 C:\work>dvipdfmx sourcename.dvi 2>&1 | utf8prin
 ```
 
-スクリーンが「Unicode(\*)」のものは、そのままでも文字化けせずに表示させることができます。
-up(la)tex を主に使用される方は、texmf.cnf に
+スクリーンが「Unicode(\*)」のものは，そのままでも文字化けせずに表示させることができます．
+
+up(la)tex を主に使用される方は，texmf.cnf に
 
 ```
 command_line_encoding = utf-8
 ```
 
-p(la)tex を主に使用される方は、texmf.cnf に
+p(la)tex を主に使用される方は，texmf.cnf に
 
 ```
 command_line_encoding = utf-8
@@ -271,23 +277,21 @@ command_line_encoding.dvipdfmx =
 command_line_encoding.dvips =
 ```
 
-と設定するとよいでしょう。
-なお、マクロ、パッケージやフォントなどのファイル名は ASCII の範囲にとどめ、漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします。
-文字エンコーディングの齟齬により、ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです。
-また、p(la)tex において special の種類によっては 0x5c を含むファイル名の場合、失敗することがあります。
-この場合もASCIIの範囲で使用してください。( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))
+と設定するとよいでしょう．
+
+なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
+文字エンコーディングの齟齬により，ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです．
+また，p(la)tex において special の種類によっては 0x5c を含むファイル名の場合，失敗することがあります．
+この場合も ASCII の範囲で使用してください．( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))
 
 ## 関連リンク {#b5892c8c}
 
+- [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
+- [CTAN web interface: package w32tex](http://www.ctan.org/pkg/w32tex)
+- [CTAN web interface: Directory listing for /systems/win32/w32tex](http://www.ctan.org/tex-archive/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
 - [W32TeXとは - はてなキーワード](http://d.hatena.ne.jp/keyword/W32TeX)
 - [「W32TeX」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/W32TeX)
-- [CTAN web interface: package w32tex](http://www.ctan.org/pkg/w32tex)
-- [CTAN web interface: Directory listing for /systems/win32/w32tex](http://www.ctan.org/tex-archive/systems/win32/w32tex)
-- [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
-- [Windows のコマンドプロンプトで空ファイルを作成する方法](http://text.readalittle.net/article.php?id=244)
-- [NUL (空のファイル) - DOS コマンド一覧](http://pf-j.sakura.ne.jp/program/dos/doscmd/dev_nul.htm)
-- [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=W32TeX)
 
 ## W32TeX の詳細情報 {#icae16ae}
 
