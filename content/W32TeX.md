@@ -27,7 +27,7 @@ W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
 W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.math.sci.hokudai.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
-これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，GSview，[TeXworks](/TeXworks/)[^2]）を自動でインストールし，設定まで済ませてくれます．
+これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](/GSview/)，[TeXworks](/TeXworks/)[^2]）を自動でインストールし，設定まで済ませてくれます．
 基本的にはインストーラを取得後，解凍し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
 
