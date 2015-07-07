@@ -85,7 +85,7 @@ Ghostscript 7.07 には脆弱性が存在しますので，縦書きが必要な
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では GSview, [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
