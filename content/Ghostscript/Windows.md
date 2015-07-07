@@ -169,87 +169,17 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 
 のように ps2pdf.bat ではなく rungs.exe, gswin64c.exe, gswin32c.exe を実行すると PDF ファイルが作成できるようです。
 
-<!-- ここから下はまだ整理していません… - - アセトアミノフェン (2015-07-06) -->
-
 ### Ghostscript のフロントエンド {#tdcde17e}
 
 Windows で使用可能な Ghostscript のフロントエンド（プレビューしたり，その他様々なことを GUI で行うためのソフトウェア）のいくつかについて，インストール方法と注意点を簡単に記しておきます。
 
-#### GSview <a id="gsview"></a> {#xde11637}
+#### GSview {#gsview}
 
-<!-- -GSview のインストーラー -->
-<!-- - -[[GSview:http://www.ghostscript.com/GSview.html]] Ghostscript を GUI 操作できるソフトウェア -->
-<!-- - --[[GSview 5.0 (32-bit版):http://pages.cs.wisc.edu/~ghost/gsview/get50.htm]] (32-bit版の Ghostscript が必要です。) -->
-<!-- - --[[GSview 5.0 (64-bit版):http://pages.cs.wisc.edu/~ghost/gsview/get50.htm]] (64-bit版の Ghostscript が必要です。) -->
-<!-- x86 （Microsoft，Linux などによる IA-32 の別名） -->
-<!-- x86_64 （UNIX，Linux などによる AMD64 と Intel 64 の総称） -->
-<!-- x64 （Microsoft などによる AMD64 と Intel 64 の総称） -->
-<!-- x86-64 （AMD64 の旧称。AMD64 と Intel 64 の総称としても使われる） -->
-<!-- EM64T （Intel 64 の旧称） -->
-<!-- IA-32e （EM64T の旧称） -->
+[GSview](/GSview/) は Ghostscript のフロントエンドです。
 
-- GSview は CTAN から提供されなくなりました。 → [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
+#### PS_View {#psview}
 
-- [GSview](http://www.ghostscript.com/GSview.html) から最新の GSview インストーラーをダウンロードし，実行します。GSview には 64-bit 版/32-bit 版の区別がありますが，これは使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません。Ghostscript は 64-bit 版/32-bit 版が存在するので，Ghostscript を使用する場合には，GSview も 64-bit 版/32-bit 版を選択してください。
-
-- GSview は，Ghostscript を正常にインストールした後にインストールしてください（Ghostscript のレジストリ情報が使用されるためです）。
-
-- 角藤版 Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語の PostScript ファイルを表示するには，\[Options\] → \[Advanced Configure...\] → \[Ghostscript Options\] の内容に “-dWINKANJI” を追加します。-dWINKANJI オプションに関しては後ろの方に簡単な解説があるのでそちらを参照してください。
-
-- GSview の \[File\]->\[PS to EPS\] の機能は十分に注意を払って使用してください。ps file を与えた場合に出来上がるのは不正な eps file です。出来上がった eps file を思い通りに扱えない dviware も存在するので，これは簡易的な機能であると理解してください。このことに関しては，\[File\]->\[PS to EPS\] のダイヤログに現れる \[Help\] のボタンを押すと解説を見ることができます。なお，ps ではなく eps file を与えた場合には，この機能は BoundingBox を gui で付け替える有用な tool となります。
-
-- GSview のデフォルトの用紙サイズ設定には，日本で用いられる JIS規格・B系列 の洋紙のサイズは含まれていません。つまり，日本語文書を用いる場合に ps file を得る段階までにおいて，通常の感覚でB4とかB5の用紙サイズを指定していた場合に GSview で表示させても思い通りのサイズでは表示されない場合があります。これに対する設定を行う場合には，GSview のフォルダーにある printer.ini の中の \[UserMedia\] の部分に以下のデータを付け加え，GSview の \[Options\]->\[Advanced Configure...\] のダイヤログで「Copy Printer Defaults」のみにチェックマークを入れて \[OK\] を押してバイナリを書き換えます。
-
-    ```
-    jisB0=2920,4127
-    jisB1=2064,2920
-    jisB2=1460,2064
-    jisB3=1032,1460
-    jisB4=729,1032
-    jisB5=516,729
-    jisB6=363,516
-    jisB7=258,363
-    jisB8=181,258
-    ```
-
-    無論こんなにたくさん用意する必要はなく，自分に必要なものを設定すればそれで十分です。
-
-#### PS_View <a id="psview"></a> {#h218efe8}
-
-[PS_View](http://psview.sourceforge.net/) は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
-TeX Live (win32) に標準で含まれています。
-
-W32TeX で PS_View を使用する場合は PS_View の psv.wx.lua の gsargs の dllloc
-
-```
-local gsargs = {
-  args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "",    -- localisation of DLL (passed to wxGhostscript)
-```
-
-を角藤版 32-bit Ghostscript の dll ファイル (C:\Program Files\gs\gs9.16\bin\gsdll32.dll) に修正します。
-
-ただし，ディレクトリの区切りは，スラッシュ(/) もしくは バックスラッシュ2つ(\\\\) を使用します。
-
-```
-local gsargs = {
-  args= {},      -- arguments to ghostscript (wihout paths)
-  dllloc= "C:/Program Files/gs/gs9.16/bin/gsdll32.dll",    -- localisation of DLL (passed to wxGhostscript)
-```
-
-角藤版 32-bit Ghostscript で &#x2d;dWINKANJI オプションを使用して日本語を表示するには，psv.wx.lua の PSV_DftGsPars
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
-```
-
-を
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
-```
-
-に修正します。
+PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
 
 #### SumatraPDF {#f86c5a11}
 
@@ -266,6 +196,8 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります（例えば [dvipdfmx](/dvipdfmx/), [Inkscape](/Inkscape/), [ImageMagick](/ImageMagick/) など）。
 これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です。
+
+<!-- ここから下はまだ整理していません… - - アセトアミノフェン (2015-07-07) -->
 
 ### cidfmap の初期設定 {#ra5fe424}
 
