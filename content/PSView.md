@@ -46,3 +46,7 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 ```
 
 に修正します。
+
+### 関連リンク {#vbe438a4}
+
+- [PS_View 日本語情報トップページ](http://osdn.jp/projects/sfnet_psview/)
