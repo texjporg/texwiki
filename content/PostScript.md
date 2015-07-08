@@ -47,8 +47,14 @@ Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するた
 
 ### 関連リンク {#af57d83a}
 
+- [PostScript FAQ](https://en.m.wikibooks.org/wiki/PostScript_FAQ)
 - [sudoku.ps](https://gist.github.com/naohaq/5161653)
 - [「PostScript」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=PostScript)
 - [convbkmk.rb](http://www.t-lab.opal.ne.jp/tex/uptex.html) dvips で出力した PostScript ファイルを PDF ファイルに変換するときに日本語のしおりの文字化けを防止するためのスクリプト
 - [PDF bookmark.py - a python script embed bookmark to PDF](https://github.com/turky/pdf-bookmark) 既存のPDFファイルに後から目次を埋め込むためのツール
 - [PStill](http://www.pstill.com/) (Another PS-to-PDF utility)
+- [猫でもわかるPostScriptとPDFの昔話](http://d.hatena.ne.jp/akane_neko/20130520/1369000693)
+- [PostScript 実習マニュアル](http://tutorial.jp/graph/ps/psman.pdf)（大黒 学さん）
+- [ページ記述言語 ポストスクリプトマニュアル](https://www1.doshisha.ac.jp/~jmizushi/ps.html)（同志社大学 水島研究室）
+- [PostScript Programing 入門](http://apollon.issp.u-tokyo.ac.jp/~watanabe/ps/)
+- [EPSグラフィック直書き入門](http://yubais.net/doc/eps/)
