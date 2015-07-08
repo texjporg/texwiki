@@ -24,9 +24,9 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 
 [PDFの作り方](</PDFの作り方/>) を参照．
 
-## PDF を扱うソフトウェア・ライブラリ {#mde22763}
+### PDF を扱うソフトウェア・ライブラリ {#mde22763}
 
-### TeX から PDF を作成するツール {#d8e4c485}
+#### TeX から PDF を作成するツール {#d8e4c485}
 
 - upLaTeX + dvipdfmx
 - upLaTeX + dvips + ps2pdf (Ghostscript)
@@ -45,7 +45,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 
 詳細は [LaTeX で PDF](</PDFの作り方/#k0e3280f>) をご覧下さい．
 
-### PDF 作成ソフト一覧 {#w48b82bc}
+#### PDF 作成ソフト一覧 {#w48b82bc}
 
 [Wikipedia.ja:PDFソフトウェアの一覧](https://ja.wikipedia.org/wiki/PDF%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E3%81%AE%E4%B8%80%E8%A6%A7) も参照．
 
@@ -105,7 +105,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
     - [Expert PDF Creator](http://www.visagesoft.com/)
     - [CutePDF Professional](http://www.acrosoftware.com/Products/CutePDF/Pro.asp)
 
-### PDF 編集ソフト一覧 {#se764b4f}
+#### PDF 編集ソフト一覧 {#se764b4f}
 
 - 無償，フリーウェア，オープンソース
     - [pdftk](/pdftk/) PDF ファイルに対して様々なことができるツール
@@ -120,7 +120,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
     - [pdfsizeopt](https://github.com/pts/pdfsizeopt) PDF file size optimizer
     - [DiffPDF](http://www.qtrac.eu/diffpdf.html) DiffPDF is used to compare two PDF files—textually or visually.
 
-### PDF ビューア {#z54fe461}
+#### PDF ビューア {#z54fe461}
 
 - [TeXstudio](/TeXstudio/) PDF ビューアとしても使える TeX の統合環境
 - [TeXworks](/TeXworks/) PDF ビューアとしても使える TeX の統合環境
@@ -169,3 +169,5 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 - [Open Source PDF Libraries and Tools](http://pdf-house.blogspot.com/)
 - [PDF開発の基礎](http://www.slideshare.net/field-works/pdf-29001511)
 - [Windows ストア アプリで PDF コンテンツをレンダリングする](http://msdn.microsoft.com/ja-jp/magazine/dn532207.aspx)
+- [手書きPDF入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
+- [今さら聞けない Adobe Acrobat &amp; PDF](http://m-school.biz/dev/acrobat-pdf/)
