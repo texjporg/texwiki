@@ -145,10 +145,15 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 <!-- 「Windows, OS X, Linux で動くか，Windows でしか動かないか」 -->
 <!-- なんて不要だと思うので，統合環境か汎用エディタかで分類しなおします． -->
 
+<!-- ここに並べる統合環境は -->
+<!-- 1. TeX ディストリビューションにバンドルされているもの (TeXworks) -->
+<!-- 2. そうではないが，広く使われていて TeX Wiki にも情報が充実しているもの -->
+<!-- の順のつもり．従来の「アルファベット順」は無意味なので変更． -->
+
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
+    - <strong>[TeXworks](/TeXworks/)</strong> ← TeX Live (win32) に標準で含まれています．
     - <strong>[TeXstudio](/TeXstudio/)</strong>
     - <strong>[LyX](/LyX/)</strong>
-    - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
     - [TeXnicCenter](/TeXnicCenter/)
     - TexitEasy
@@ -175,10 +180,16 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [サクラエディタ](</サクラエディタ/>)
         - [Happy](/Happy/)
 
+### シェアウェア {#editor-share}
+
+- 汎用エディタ
+    - [秀丸エディタ](</秀丸エディタ/>)
+        - 祝鳥
+
 ## PDF ファイルビューア {#pdfviewer}
 
 長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
-ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
+ただ，最近は様々な理由から PDF によるプレビューが推奨されています（[古い情報](</古い情報/>)も参考に）．
 TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
 単独の LaTeX 用 PDF プレビューアとしては
 
