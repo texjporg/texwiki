@@ -69,29 +69,26 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
-LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーションでバックスラッシュが入力できない場合は Karabiner で Backslash が優先されるようにキーバインドを変更してください。
+LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです．
+この場合は，Karabiner で Backslash が優先されるようにキーバインドを変更してください。
+
+<!-- ここに並べる統合環境は -->
+<!-- 1. TeX ディストリビューションにバンドルされているもの (TeXworks, TeXShop) -->
+<!-- 2. そうではないが，広く使われていて TeX Wiki にも情報が充実しているもの -->
+<!-- の順のつもり．従来の「アルファベット順」は無意味なので変更． -->
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
+    - <strong>[TeXShop](/TeXShop/)</strong> ← MacTeX に標準で付属しています。
+        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。
     - <strong>[TeXstudio](/TeXstudio/)</strong>
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
-        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXstudio の不具合](/TeXstudio/#k30ccccc))
-        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
     - <strong>[LyX](/LyX/)</strong>
-        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [LyX の不具合](/LyX/#h17851b4))
-        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
     - <strong>[TeXworks](/TeXworks/)</strong>
         - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
-        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [TeXworks の不具合](/TeXworks/#v0f00822))
-        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
     - [Texmaker](/Texmaker/)
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください。(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))
-        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ [Texmaker の不具合](/Texmaker/#h6093782))
-        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
     - TexitEasy
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)
-        - 【注意】OS X では Qt のバグのためバックスラッシュ（半角の＼）が入力できません。(→ TexitEasy の不具合)
-        - Karabiner で Backslash が優先されるようにキーバインドを変更します。
-    - [TeXShop](/TeXShop/)
     - TeXnicle
 
 - 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
