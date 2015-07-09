@@ -18,9 +18,7 @@ PostScript は業界標準のページ記述言語です．
 
 ### 技術情報 {#h5ddd3dc}
 
-PostScript の技術情報は Adobe の
-[Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp)
-から全て得ることができます。
+PostScript の技術情報は Adobe の [Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp) から全て得ることができます．
 
 - [Adobe PostScript language specifications](http://partners.adobe.com/public/developer/ps/index_specs.html)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
@@ -31,7 +29,7 @@ PostScript の技術情報は Adobe の
 
 #### Ghostscript {#c88bc88f}
 
-[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です。
+[Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．
 
 #### Adobe Acrobat Distiller DC {#l57d69fc}
 
@@ -43,7 +41,7 @@ Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するた
 
 - [図の作り方](</図の作り方/>)
 - [変換ツール](</変換ツール/#i3d14633>)
-- [ドローソフト](</描画・グラフツール/>)を使って EPS ファイルを作成することもできます
+- [ドローソフト](</描画・グラフツール/>)を使って EPS ファイルを作成することもできます．
 
 ### 関連リンク {#af57d83a}
 
