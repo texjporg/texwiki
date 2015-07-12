@@ -7,14 +7,45 @@ pukiwiki: "TeXをWebで"
 
 # TeXをWebで
 
+## TeX を Web で：インストールせずに TeX を使う {#sd375ae0}
+
+[TeX入手法](</TeX入手法/>)ではお使いのコンピュータに TeX ディストリビューションをインストールして使用する方法を説明していますが，ここでは Web 上で LaTeX タイプセットが可能なサービスを紹介します．
+
+***
+
+***
+
+### オンライン LaTeX エディタ {#u7712307}
+
+#### フリーソフトウェア（オープンソースソフトウェア） {#g834836b}
+
+- [ShareLaTeX](https://github.com/sharelatex/sharelatex)
+- [JaxEdit](http://jaxedit.com/)
+- [texlive.js](http://manuels.github.io/texlive.js/)
+- [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
+- [SageMathCloud](https://cloud.sagemath.com/)
+
+#### フリーウェア（無料） {#e0fded48}
+
+- [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
+- [TeX を使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
+- [Cloud LaTeX](https://cloudlatex.io/ja)
+- [Overleaf](https://www.overleaf.com/)（旧 writeLaTeX）
+
+### Web で数式 {#m2a3514f}
+
+Web サイトに数式を表示する各種方法を，[Web で数式](</Web で数式/>)にまとめました．
+
+### 関連リンク {#cfaeb364}
+
+- [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
+- [TeX implementations in the Cloud](http://cikitsa.blogspot.co.at/2013/01/tex-implementations-in-cloud.html)
+- [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
+- [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
+
 ## TeX を Web 上で提供する方法 {#xdac6c3a}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-### はじめに {#vd570d76}
-
-[TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
-のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します．
+[TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/) のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します．
 ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです．
 
 ### 準備 {#y7017653}
@@ -24,7 +55,7 @@ pukiwiki: "TeXをWebで"
 最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます．
 
 通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです．
-これらについては特に手を加える必要はありません．<br>
+これらについては特に手を加える必要はありません．
 
 もし \ が \\\ になるようなら，php.ini で magic_quotes_gpc = Off にしてください．
 Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;/IfModule>
@@ -97,16 +128,12 @@ shell_escape = f の場合は shell_escape_commannds = に列挙してあるコ�
 - [do.php](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/do_php.txt)
 
 また，空のファイル count.txt と空のディレクトリ work を作ります．
-これらは Apache のプロセスに書き込みができるようにします
-（ファイルは 666，ディレクトリは 777 にすればいいでしょう）．
+これらは Apache のプロセスに書き込みができるようにします（ファイルは 666，ディレクトリは 777 にすればいいでしょう）．
 
-ビットマップフォントの自動生成を許すなら $TEXMF/fonts/pk
-というディレクトリも Apache のプロセスに書き込みができるようにします．
-ただ，今は標準的なフォントは Type 1
-形式で用意されていますので，この必要はほとんどありません．
+ビットマップフォントの自動生成を許すなら $TEXMF/fonts/pk というディレクトリも Apache のプロセスに書き込みができるようにします．
+ただ，今は標準的なフォントは Type 1 形式で用意されていますので，この必要はほとんどありません．
 [Latin Modern](</Latin Modern/>) もインストールしておけばなおさらです．
-もっとも，tfm の生成もありますので，$TEXMF/fonts/tfm/jknappen
-も書き込み可にしておかなければならないでしょう．
+もっとも，tfm の生成もありますので，$TEXMF/fonts/tfm/jknappen も書き込み可にしておかなければならないでしょう．
 
 do.php の中身は適当に直します（特に TeX Live をインストールしたパス）．
 次のようになっている部分も必要に応じて直します．
@@ -116,33 +143,7 @@ do.php の中身は適当に直します（特に TeX Live をインストール
 ulimit -t 10 -f 1024
 ```
 
-### オンライン LaTeX エディタ {#u7712307}
-
-#### フリーソフトウェア (オープンソースソフトウェア) {#g834836b}
-
-- [ShareLaTeX](https://github.com/sharelatex/sharelatex)
-    - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
-    - [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
-- [JaxEdit](http://jaxedit.com/)
-- [texlive.js](http://manuels.github.io/texlive.js/)
-- [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
-
-#### フリーウェア (無料) {#e0fded48}
-
-- [TeXを使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
-- [Cloud LaTeX](https://cloudlatex.io/ja)
-    - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
-
-### Web で数式 {#m2a3514f}
-
-Web サイトに数式を表示する各種方法を，[Web で数式](</Web で数式/>)にまとめました．
-
-## 関連リンク {#cfaeb364}
-
-- [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
-- [TeX implementations in the Cloud](http://cikitsa.blogspot.co.at/2013/01/tex-implementations-in-cloud.html)
-
-## Comments {#ze0a0a49}
+### コメント {#ze0a0a49}
 
 - Windows環境で動かしているかたがいれば設置法を教えてください --  2005-01-22 (土) 22:53:11
 - [qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html)を参考に． --  2005-05-11 (水) 22:52:05
@@ -154,11 +155,9 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 - 修正ありがとうございます．奥村先生のサイトを多いに参考にして，青空文庫テキスト zip ファイルの URL を張り付ければ，自動的に PDF化までできるような「てふてふ君」（ [http://web.archive.org/web/20121019025017/http://www.aozora.jp/tools/tex/](http://web.archive.org/web/20121019025017/http://www.aozora.jp/tools/tex/) ）を作りました． -- ゼファー生 2008-06-23 (月) 12:41:00
 - こんなサイトができているようです．P-Lab （[http://web.archive.org/web/20081019184258/http://www.acl-inc.co.jp/p-lab/top](http://web.archive.org/web/20081019184258/http://www.acl-inc.co.jp/p-lab/top)） -- 川嶋 2008-09-11 (木) 10:39:45
 - index.php, do.php共に404 Not Foundになってしまいます． -- 1273799701 2010-05-14 (金) 10:15:01
-- index.php, do.php共に404 Not Foundになってしまいます． -- 1273804519 2010-05-14 (金) 11:35:19
 - すいませんでした．直ったでしょうか -- okumura 2010-05-14 (金) 12:15:37
 - 無事ダウンロードできました．ご対応ありがとうございます． -- 1273814348 2010-05-14 (金) 14:19:08
 - 共用サーバ上などで texmf.cnf を自分でいじれない場合に，スクリプト側でセキュリティ対策ができたらうれしいです． -- 1306898839 2011-06-01 (水) 12:27:19
 - TeX + HTML で baseline を揃える方法は何かないでしょうか？ -- 1307150911 2011-06-04 (土) 10:28:31
-- 日本語の文字化けしました．TeX をnkf通すことで解決するようでしたので, do.php に於いて, platex 命令の前に nkf -j --overwrite を追加したところ解決できました．ご参考に -- yuki@熊本高専 2012-09-12 (水) 08:57:18
-- ＠FreeBSD 9.0  -- 〃 2012-09-12 (水) 08:58:42
+- 日本語の文字化けしました＠FreeBSD 9.0．TeX をnkf通すことで解決するようでしたので, do.php に於いて, platex 命令の前に nkf -j --overwrite を追加したところ解決できました．ご参考に -- yuki@熊本高専 2012-09-12 (水) 08:57:18
 - 奥村先生のソースコードを参考に，ソースコードを貼り付ければPDFを生成するサイトを作ってみました．まだまだ製作途中ですが，Dropboxと連携すれば，画像ファイルや追加クラスファイルも対応できると思います．( [http://web.archive.org/web/20131209152348/http://tex-web.net/edit.php](http://web.archive.org/web/20131209152348/http://tex-web.net/edit.php) ) -- 不破 2013-01-30 (水) 00:56:52
