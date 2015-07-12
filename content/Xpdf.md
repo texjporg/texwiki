@@ -56,7 +56,20 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
 
-ただし，サポートファイル等は含まれていません。[CTAN の Xpdf のページ](http://www.ctan.org/tex-archive/support/xpdf)から，ビルド済みバイナリのアーカイブが入手できます。
+サポートファイルをインストールするには，current working directory を
+
+```
+$TEXMFDIST/doc/support/wintools
+```
+
+にしてから
+
+```
+texlua install-xpdf-data
+```
+
+というコマンドを実行します。これにより，必要なサポートファイルが自動的
+にインストールされます。
 
 - [W32TeX](/W32TeX/) には，Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています。以下が利用できます：
 
