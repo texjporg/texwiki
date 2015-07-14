@@ -22,7 +22,6 @@ troff 用図形プリプロセッサとして実装されています．
 ### dpic {#n4789561}
 
 - [https://ece.uwaterloo.ca/~aplevich/dpic/](https://ece.uwaterloo.ca/~aplevich/dpic/)
-
 - [dpic --- 図形作成プログラミング言語](http://konoyonohana.blog.fc2.com/blog-entry-129.html)
 
 ### gpic {#re376f4f}
