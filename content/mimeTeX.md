@@ -15,7 +15,7 @@ pukiwiki: "mimeTeX"
 は LaTeX のサブセットで書かれた数式をインライングラフィック化するソフトです。
 
 PukiWiki から使うには
-[自作プラグイン/mimetex.inc.php - PukiWiki-official](http://pukiwiki.sourceforge.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/mimetex.inc.php)
+[自作プラグイン/mimetex.inc.php - PukiWiki-official](http://pukiwiki.osdn.jp/?%E8%87%AA%E4%BD%9C%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3/mimetex.inc.php)
 で公開されているプラグインを使います。
 (mimetex.inc.php のオリジナルは [ \[io\] wiki \[Internet Archive\]](http://web.archive.org/web/20041014104405/130.54.22.201/~key/pukiwiki/?PukiWiki/key%A4%CE%B3%C8%C4%A5/mimetex) です。)
 
