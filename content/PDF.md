@@ -110,7 +110,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 - 無償，フリーウェア，オープンソース
     - [pdftk](/pdftk/) PDF ファイルに対して様々なことができるツール
     - [PDFedit](http://pdfedit.petricek.net/) PDF ファイルエディタ
-    - [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic/firth/software/pdfjam) PDF ファイルを抜き出したり，結合したり，回転したりできる
+    - [PDFjam](/PDFjam/) PDF ファイルを抜き出したり，結合したり，回転したりできる
     - [PDF Split and Merge](http://sourceforge.net/projects/pdfsam/) PDF ファイルを分割したり合成したりできる
     - [PDFCrop](http://pdfcrop.sourceforge.net/) (sourceforge): PDF ファイルの余白を削除する（名前も同じですが下記とは別物）
     - [pdfcrop](/pdfcrop/) (CTAN): PDF ファイルの余白を削除する (TeX Live, W32TeX に標準で含まれています)
