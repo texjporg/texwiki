@@ -24,7 +24,7 @@ Windows で PDFjam を使用したい場合は，Unix ライクな環境であ�
 
 という選択肢があります。
 前者の場合はもちろん，pdfLaTeX コマンドがインストールされている前提です。
-後者の場合，pdfjam の依存パッケージに TeX Live 本体が含まれることに注意してください。
+後者の場合，pdfjam の依存パッケージに TeX Live 本体が含まれることに注意してください。 <!-- たとえば MacPorts なら以下のように調べられます。 --> <!--   $ port deps pdfjam --> <!--  Full Name: pdfjam @2.08_0 --> <!--  Runtime Dependencies: texlive-latex, texlive-latex-recommended -->
 パッケージ管理ツールが提供する TeX Live パッケージをインストールしていれば何も問題ありませんが，TeX Live 公式インストーラを使用した場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールすることで，重複インストールを回避できます。
 
 ### 関連リンク {#r2829cf6}
