@@ -17,7 +17,7 @@ PDFjam は，PDF ファイルの結合・分割・割付ツールです。
 OS X (Mac)，Linux といった Unix 系の TeX Live には含まれています。
 Windows で PDFjam を使用したい場合は，Unix ライクな環境である [Cygwin](/Cygwin/) 上に TeX Live を導入することで可能です。
 
-仮に TeX Live に含まれていない場合は
+仮にインストールされなかった場合は
 
 - 公式サイトからシェルスクリプトを入手してパスを通す
 - Unix 系 OS 標準のパッケージ管理システムで pdfjam を探す
