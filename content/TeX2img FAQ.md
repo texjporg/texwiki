@@ -195,9 +195,9 @@ Mac 版は Illustrator に「配置」するという機能もあります。
 \pagestyle{empty}
 \makeatletter
 \AtBeginDocument{\[}
-\expandafter\expanndafter\expandafter\def
-\expandafter\expanndafter\expandafter\@enddocumenthook
-\expandafter\expanndafter\expandafter{%
+\expandafter\expandafter\expandafter\def
+\expandafter\expandafter\expandafter\@enddocumenthook
+\expandafter\expandafter\expandafter{%
 \expandafter\]\@enddocumenthook}
 \makeatother
 ```
