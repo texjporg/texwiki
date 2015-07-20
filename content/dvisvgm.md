@@ -7,7 +7,10 @@ pukiwiki: "dvisvgm"
 
 # dvisvgm
 
-## [dvisvgm](http://dvisvgm.sourceforge.net/) {#hefd7ca2}
+## [dvisvgm](http://dvisvgm.2ix.de/) {#hefd7ca2}
+
+<!-- tex-live mailing list より URL 変更の知らせがあったため変更． -->
+<!-- 旧 URL は http://dvisvgm.sourceforge.net/ -->
 
 dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソフトウェアです．
 
