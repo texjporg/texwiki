@@ -8,7 +8,11 @@ pukiwiki: "TeXstudio"
 
 # TeXstudio
 
-## [TeXstudio](http://texstudio.sourceforge.net/) {#wc9679cf}
+## [TeXstudio](http://www.texstudio.org/) {#wc9679cf}
+
+<!-- SourceForge が長期間落ちているため変わったっぽい？ -->
+<!-- 旧 URL は http://texstudio.sourceforge.net/ -->
+<!-- 以下，解説中に出てくる SourceForge の URL は未検証 -->
 
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．<br>
 TeXstudio のエディタ部分は Texmaker とは異なり，[QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．<br>
@@ -18,7 +22,6 @@ PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用し�
 
 ### Webサイト {#w233c0c1}
 
-- [TeXstudio](http://texstudio.sourceforge.net/)
 - [TeXstudio - A LaTeX Editor | SourceForge.net](http://sourceforge.net/projects/texstudio/)
 - [TeXstudio - A LaTeX Editor / Wiki / Home](http://sourceforge.net/p/texstudio/wiki/)
 
