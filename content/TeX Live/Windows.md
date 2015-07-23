@@ -17,7 +17,7 @@ pukiwiki: "TeX Live/Windows"
 
 ネットワークインストーラである install-tl-windows.exe / install-tl.zip と，全てのファイルが入っている ISO イメージからダウンロードする二つの方法があります．
 どちらをもちいてもインストーラの手順はほぼ変わりません．
-基本的にはネットワークインストーラをもちいるとよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
+基本的にはネットワークインストーラがよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
 
 いくつか追加で設定を行っておくと更に便利です．
 追加設定の項もご覧ください．
@@ -32,56 +32,55 @@ pukiwiki: "TeX Live/Windows"
 すればインストーラが起動します．
 後は指示に従えば自動でインストールが行われます．
 
-相当な時間がかかります．
-環境にもよりますが，一時間では厳しいです．
-二時間あれば多くの場合は終わるのではないかと思われます．
+かなりの時間がかかります．
+環境にもよりますが，多く場合一時間から二時間ほどかかると思います．
 
-以下は install-tl-windows.exe をもちいて，また右クリックから「管理者として実行(A)」を選んだ場合の例です．
+以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んだび実行した例です．
 
-<a href="/attach/TeX%20Live/Windows/inst1.png"><img src="/attach/TeX%20Live/Windows/inst1.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst1.png"><img src="/attach/TeX%20Live/Windows/2015_inst1.png" alt=""></a>
 
 \[Next >\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst2.png"><img src="/attach/TeX%20Live/Windows/inst2.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst2.png"><img src="/attach/TeX%20Live/Windows/2015_inst2.png" alt=""></a>
 
 \[Install\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst3.png"><img src="/attach/TeX%20Live/Windows/inst3.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst3.png"><img src="/attach/TeX%20Live/Windows/2015_inst3.png" alt=""></a>
 
 待ちます．
 
-<a href="/attach/TeX%20Live/Windows/inst4.png"><img src="/attach/TeX%20Live/Windows/inst4.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst4.png"><img src="/attach/TeX%20Live/Windows/2015_inst4.png" alt=""></a>
 
 \[次へ→\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst5.png"><img src="/attach/TeX%20Live/Windows/inst5.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst5.png"><img src="/attach/TeX%20Live/Windows/2015_inst5.png" alt=""></a>
 
 待ちます．
 
-<a href="/attach/TeX%20Live/Windows/inst6.png"><img src="/attach/TeX%20Live/Windows/inst6.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst6.png"><img src="/attach/TeX%20Live/Windows/2015_inst6.png" alt=""></a>
 
 \[次へ→\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst7.png"><img src="/attach/TeX%20Live/Windows/inst7.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst7.png"><img src="/attach/TeX%20Live/Windows/2015_inst7.png" alt=""></a>
 
 \[次へ→\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst8.png"><img src="/attach/TeX%20Live/Windows/inst8.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst8.png"><img src="/attach/TeX%20Live/Windows/2015_inst8.png" alt=""></a>
 
 \[導入\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst9.png"><img src="/attach/TeX%20Live/Windows/inst9.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst9.png"><img src="/attach/TeX%20Live/Windows/2015_inst9.png" alt=""></a>
 
 インストールが開始されたので待ちます．
 これが長いです．
-表示は一時間九分となっていますが，この後数字が伸びて結局一時間二十分かかりました．
+表示は二時間となっていますが，この後数字が伸びて結局二時間十分かかりました．
 
-<a href="/attach/TeX%20Live/Windows/inst10.png"><img src="/attach/TeX%20Live/Windows/inst10.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst10.png"><img src="/attach/TeX%20Live/Windows/2015_inst10.png" alt=""></a>
 
 こんな感じの画面になったら終了です．
-\[終了\] を押します（実は警告が出てしまったので，そのメッセージを隠して表示させています）．
+\[終了\] を押します．
 
-<a href="/attach/TeX%20Live/Windows/inst11.png"><img src="/attach/TeX%20Live/Windows/inst11.png" alt=""></a>
+<a href="/attach/TeX%20Live/Windows/2015_inst11.png"><img src="/attach/TeX%20Live/Windows/2015_inst11.png" alt=""></a>
 
 裏にこっそり残っていたこの画面を \[Close\] を押して閉じたらインストールは完了です．
 
@@ -187,7 +186,7 @@ tlmgr update --self --all
 
 で管理できます．
 
-## 仮想マシン上の Linux への TeX Live のインストール {#s797439a}
+<!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
-[VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールして TeX Live を使用する方法もあります。
-Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
+<!-- [[VirtualBox:https://www.virtualbox.org/]] などの仮想マシン上に [[Linux]] をインストールして TeX Live を使用する方法もあります。 -->
+<!-- Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。 -->
