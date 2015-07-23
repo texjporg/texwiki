@@ -49,6 +49,8 @@ tpic specials を半 WYSIWYG で作成するツールに，[WinTpic](http://aoga
 
 - 参考：[WinTpic - LaTeX](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/etc011.html)
 
+#### [Tpic --- 線画を描く4つの方法](http://konoyonohana.blog.fc2.com/blog-entry-127.html) {#v16a4aa2}
+
 #### tpic specials のコマンド {#j91d4d68}
 
 % この項は [dviout](/dviout/) のヘルプより引用して整形しました．
