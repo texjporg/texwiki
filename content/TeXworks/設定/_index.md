@@ -137,17 +137,18 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
         - -ot
         - -kanji=utf8 $synctexoption
         - $fullname
+    - 「実行後，PDF を表示する」にチェックを入れる．
 
 - Latexmk（とpLaTeX）によるタイプセット
     - 名前：pLaTeX(latexmk)
     - プログラム：latexmk
     - 引数：
-        - -latex=platex
-        - -latexoption=-kanji=utf8 $synctexoption
+        - -latex=platex -kanji=utf8 $synctexoption %O %S
         - -e
-        - $dvipdf='dvipdfmx %O %S';
+        - $dvipdf='dvipdfmx %O -o %D %S';$bibtex='pbibtex %O %B';$makeindex='mendex %O -o %D %S';
         - -pdfdvi
         - $fullname
+    - 「実行後，PDF を表示する」にチェックを入れる．
 
 {{< children >}}
 
