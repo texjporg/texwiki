@@ -84,7 +84,7 @@ Hello World!
 日本語も試してみましょう．今度は次のようにします．
 
 ```
-\documentclass{jsarticle}
+\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
 \begin{document}
 こんにちは，\LaTeX
 \end{document}
@@ -108,7 +108,7 @@ Hello World!
 コンパイルでエラーが発生すると，TeXworks 下段の「ログの表示」にエラーに関する情報が表示されます．たとえば
 
 ```
-\ddocumentclass{jsarticle}
+\ddocumentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
 ```
 
 としてしまうと（dが一つ多い）次のように表示されます．
@@ -116,7 +116,7 @@ Hello World!
 ```
 ! Undefined control sequence.
 l.1 \ddocumentclass
-                   {jsarticle}
+                   [uplatex,dvipdfmx,ja=standard]{bxjsarticle}
 ```
 
 「x」または「e」を入力することで，ファイルの編集に戻ることができます．このようにエラーのある箇所が表示されるので，そこを中心に確認してみてください．エラー内容に関しては[LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)も参考にしてください．
