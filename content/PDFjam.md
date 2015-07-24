@@ -10,7 +10,7 @@ pukiwiki: "PDFjam"
 ## [PDFjam](http://www2.warwick.ac.uk/fac/sci/statistics/staff/academic-research/firth/software/pdfjam/) {#a6029433}
 
 PDFjam は，PDF ファイルの結合・分割・割付ツールです。
-実体は，pdfpages パッケージを使用した LaTeX ソースを pdfLaTeX で処理するシェルスクリプトです。
+実体は，[pdfpages](/pdfpages/) パッケージを使用した LaTeX ソースを pdfLaTeX で処理するシェルスクリプトです。
 
 ### インストール {#ta539380}
 
