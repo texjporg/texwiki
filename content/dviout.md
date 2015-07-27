@@ -7,7 +7,7 @@ pukiwiki: "dviout"
 
 # dviout
 
-## dviout {#db720534}
+## dviout (非推奨) {#db720534}
 
 dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 しかし，dviout を使用すると
@@ -20,9 +20,6 @@ dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 このため，現在は DVI ではなく PDF でのプレビューが推奨されています。
 
 しかし，dviout で十分な場合も数多くあり，その場合には依然として高機能で高速な DVI viewer として有用です。
-
-以下の情報はアーカイブとして残しておきます。
-極力削除はお控えください。[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます。
 
 ***
 
