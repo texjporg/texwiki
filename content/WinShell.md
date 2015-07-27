@@ -9,26 +9,29 @@ pukiwiki: "WinShell"
 
 ## WinShell {#t788b13b}
 
-<span style="font-size:30px">WinShell は現在，非推奨です！</span>
+WinShell は Windows 向けに開発された TeX 用の統合環境です。
+しかし，WinShell には
 
 - エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
     [^1]
 
-などの問題があります．このため，とりわけ日本語文書を作成する際に致命的な問題が発生します．
-現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）．
+などの問題があり，とりわけ日本語文書を作成する際に致命的な問題が発生します。
+現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）。
 
-以下の情報はアーカイブとして残しておきます．
-極力削除はお控えください．[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます．
+以下の情報はアーカイブとして残しておきます。
+極力削除はお控えください。[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます。
 
-<!-- とりあえず復活させてみました．「設定」以下はバックアップから取得したものに手を付けていません． -->
+<!-- とりあえず復活させてみました。「設定」以下はバックアップから取得したものに手を付けていません。 -->
 <!-- 特にこのページの「ShiftJIS のダメ文字」の記述は，WinShell に限らず一般論として価値がありますよね？ -->
 
-<strong>目次</strong>
+***
+
+***
 
 ## WinShell とは {#s864df7d}
 
-WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です．
+WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です。
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/)
 
@@ -36,7 +39,7 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
 『LaTeX2e 美文書作成入門』
-([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました．
+([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
 
 ### 動作環境 {#f8ed906d}
 
@@ -55,16 +58,16 @@ WinShell には
 - Unicode サポート
 - ユーザー定義オプション
 
-などの機能があります．
+などの機能があります。
 
 ### 日本語言語ファイル {#z273ed84}
 
 - [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
     <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
 
-[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています．
-WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください．
-ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください．
+[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています。
+WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください。
+ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください。
 
 ## 不具合 {#m3e6b0cc}
 
@@ -75,33 +78,33 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 
-などのオープンソースの統合環境では，UTF-8 でも問題が発生しません．
+などのオープンソースの統合環境では，UTF-8 でも問題が発生しません。
 
 ### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
-Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．
-Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください．
+Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
+Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
 
-WinShell 3.3.2.6 は Adobe Acrobat Reader DC, Adobe Acrobat DC, SumatraPDF の DDE に対応しています．
+WinShell 3.3.2.6 は Adobe Acrobat Reader DC, Adobe Acrobat DC, SumatraPDF の DDE に対応しています。
 [^2]
-これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します．
+これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します。
 ただし，Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
 
 ```
 Cannot start AcrobatReader or open the document.
 ```
 
-という警告メッセージが表示され，PDF ファイルが表示できない場合があります．
+という警告メッセージが表示され，PDF ファイルが表示できない場合があります。
 この問題は，上記のレジストリの (既定) の値のデータを
 
 ```
 AcroViewR15
 ```
 
-に修正することで解消できます．
+に修正することで解消できます。
 [^3]
 
-DDE を使用する場合は PDFView を以下のように設定します．
+DDE を使用する場合は PDFView を以下のように設定します。
 
 - exeファイル名：
     - "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (64-bit 版 Windows の場合)
@@ -109,7 +112,7 @@ DDE を使用する場合は PDFView を以下のように設定します．
 - コマンドライン：
     - "%s.pdf"
 
-DDE を使用しない場合は PDFView を以下のように設定します．
+DDE を使用しない場合は PDFView を以下のように設定します。
 
 - exeファイル名：
     - cmd.exe
@@ -119,35 +122,35 @@ DDE を使用しない場合は PDFView を以下のように設定します．
 
 ### 主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題がある → Ruby, Windows PowerShell, バッチファイル などを使用する {#v088befc}
 
-WinShell は主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題があります．
-WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;s を2回以上使用すると WinShell がクラッシュします．
-Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です．
-Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です．
+WinShell は主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題があります。
+WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;s を2回以上使用すると WinShell がクラッシュします。
+Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です。
+Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です。
 
 ### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用する {#n7cba889}
 
-エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります．
+エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります。
 例えば
 
 ```
 \chapter{日本語文字
 ```
 
-と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします．
+と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします。
 
-エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し、文字入力カーソルを特定の文字の後ろに移動させると文字化けします．
-UTF-8 を使用すれば文字化けは回避できますが，UTF-8 では上述のとおり Runtime Error! が発生することがあります．
-ShiftJIS を使用してなおかつ文字化けを回避したければ，対応する括弧の強調表示のチェックを外すほかありません．
-「オプション」から「強調表示」を選択し，対応する括弧の強調表示(M) のチェックをはずしてください．
+エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し，文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
+UTF-8 を使用すれば文字化けは回避できますが，UTF-8 では上述のとおり Runtime Error! が発生することがあります。
+ShiftJIS を使用してなおかつ文字化けを回避したければ，対応する括弧の強調表示のチェックを外すほかありません。
+「オプション」から「強調表示」を選択し，対応する括弧の強調表示(M) のチェックをはずしてください。
 
 #### WinShell のエンコーディングが ShiftJIS の場合にカーソルを合わせると消える文字について {#hec85ef2}
 
 関連内容：TeX フォーラム内の質問「WinShellにてカーソルを合わせると消える文字について」 [forum:156](https://okumuralab.org/tex/mod/forum/discuss.php?d=156)
 
-LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします．<br>
-プロジェクトの ［目次］ において，\section に日本語を指定した場合に文字が表示されない不具合があります．
+LaTeX などのメッセージ出力欄においても，日本語が出力される場合文字化けします。<br>
+プロジェクトの ［目次］ において，\section に日本語を指定した場合に文字が表示されない不具合があります。
 
-{}の中で使用するとエンコーディングが ShiftJIS の場合に不具合が起こる文字を以下の通りにまとめます．
+{}の中で使用するとエンコーディングが ShiftJIS の場合に不具合が起こる文字を以下の通りにまとめます。
 
 > | 2-byte 目 | 文字 | エンコーディングが ShiftJIS の場合に不具合が起こる文字 |
 > |---|---|---|
@@ -155,12 +158,12 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 > | 0x7d | } | マ м 厭 笠 急 迎 閤 枝 殉 図 挿 筑 党 媒 扶 凡 抑 凩 嘲 孺 怡 掵 栲 毳 烋 痾 竈 繃 艟 蛩 諳 轗 閘 驀 黨 埇 蕓 |
 >
 
-1行目の文字群は 2-byte 目が 0x7b ( { ) になっており、2行目の文字群は 2-byte 目が 0x7d ( } ) となっているため、エラーが発生します．
-これらの文字群を使用すると WinShell の BibTeX のフロントエンド編集での読み込みもできません．
-また，プロジェクトウィンドウを利用している場合は，参考文献一覧も上記文字群が含まれている場合は正常に表示できません．
+1行目の文字群は 2-byte 目が 0x7b ( { ) になっており，2行目の文字群は 2-byte 目が 0x7d ( } ) となっているため，エラーが発生します。
+これらの文字群を使用すると WinShell の BibTeX のフロントエンド編集での読み込みもできません。
+また，プロジェクトウィンドウを利用している場合は，参考文献一覧も上記文字群が含まれている場合は正常に表示できません。
 
-対策として，上記文字群が含まれている BibTeX 項目を，別の bib ファイルに隔離して2つの bib ファイルを使い分けると少し使い勝手が向上します．
-その際、隔離した bib が \_Unknown にまとめて表示されれば，WinShell が本来意図して付けた BibTeX の機能を使用できるかと思います． <!-- ちなみに確認 OS は XP SP2 32ビット Professional 版 -->
+対策として，上記文字群が含まれている BibTeX 項目を，別の bib ファイルに隔離して2つの bib ファイルを使い分けると少し使い勝手が向上します。
+その際，隔離した bib が \_Unknown にまとめて表示されれば，WinShell が本来意図して付けた BibTeX の機能を使用できるかと思います。 <!-- ちなみに確認 OS は XP SP2 32ビット Professional 版 -->
 
 【参考】
 
@@ -171,7 +174,7 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 ### 設定ファイル {#r1bd4e35}
 
-WinShell のポータブル版は WinShell.exe と同じフォルダーの Settings フォルダーに設定ファイルが作成されます．
+WinShell のポータブル版は WinShell.exe と同じフォルダーの Settings フォルダーに設定ファイルが作成されます。
 
 ### 初回起動時 {#kc4f0896}
 
@@ -192,10 +195,10 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 ### 一般 {#w5d7526c}
 
-メニューから \[オプション(O)\] → \[全般(G)...\] をクリックします．
+メニューから \[オプション(O)\] → \[全般(G)...\] をクリックします。
 
-デフォルトではバックアップファイルを作成しません．<br>
-重要な文書を作成する場合は，バックアップ(.bak)ファイル作成(C) にチェックを入れておきましょう．
+デフォルトではバックアップファイルを作成しません。<br>
+重要な文書を作成する場合は，バックアップ(.bak)ファイル作成(C) にチェックを入れておきましょう。
 
 ***
 
@@ -220,12 +223,12 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 ### フォント {#y5d09419}
 
-初回起動時に言語選択で Japanese を選択した場合は, デフォルトで『スクリプト』が「日本語」，『エンコーディング』が「ShiftJIS」に設定されます．<br>
-[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更します．<br>
-ただし，UTF-8 を使用する場合は[上述](/WinShell/#g47585a4)のように，より致命的な Runtime Error が発生する場合があります．<br>
-エンコーディング指定を ShiftJIS と UTF-8 で試したうえで，<strong>不具合が避けられない場合は他の統合環境への移行を検討しましょう</strong>．<br>
-フォントは確認の上ご自分の用途に応じたものを選んでください．<br>
-フォント名として「@ＭＳ ゴシック」のような “@” から始まる名前のフォントを選択するとテキストエディタの和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう．<br>
+初回起動時に言語選択で Japanese を選択した場合は, デフォルトで『スクリプト』が「日本語」，『エンコーディング』が「ShiftJIS」に設定されます。<br>
+[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更します。<br>
+ただし，UTF-8 を使用する場合は[上述](/WinShell/#g47585a4)のように，より致命的な Runtime Error が発生する場合があります。<br>
+エンコーディング指定を ShiftJIS と UTF-8 で試したうえで，<strong>不具合が避けられない場合は他の統合環境への移行を検討しましょう</strong>。<br>
+フォントは確認の上ご自分の用途に応じたものを選んでください。<br>
+フォント名として「@ＭＳ ゴシック」のような “@” から始まる名前のフォントを選択するとテキストエディタの和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう。<br>
 
 ***
 
@@ -253,20 +256,20 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 ### 自動スペルチェック {#d5530dfb}
 
-デフォルトでは自動スペルチェックが有効になっています．<br>
-自動スペルチェックが必要ない場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします．
+デフォルトでは自動スペルチェックが有効になっています。<br>
+自動スペルチェックが必要ない場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします。
 
 ## 主なTeXプログラムの設定：エンコーディングが UTF-8 の場合 {#vfb035c6}
 
-エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します．
+エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
 
 Runtime Error! を回避するには，\[主なTeXプログラムの設定\] のプログラムの
 
 - LaTeX
 - PDFLaTeX
 
-の <strong>exeファイル名の値を削除</strong>するほかはありません．<br>
-こうすれば，間違って LaTeX, PDFLaTeX を使用しても警告メッセージが表示されるだけになり，Runtime Error! を回避できます．
+の <strong>exeファイル名の値を削除</strong>するほかはありません。<br>
+こうすれば，間違って LaTeX, PDFLaTeX を使用しても警告メッセージが表示されるだけになり，Runtime Error! を回避できます。
 
 ***
 
@@ -289,14 +292,14 @@ Runtime Error! を回避するには，\[主なTeXプログラムの設定\] の
 - GSView
 - PDFView
 
-の LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックをはずします．<br>
-LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しないので，LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます．<br>
+の LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックをはずします。<br>
+LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しないので，LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます。<br>
 
 ### LaTeX → exeファイル名の値を削除する {#neba460c}
 
-<strong>exeファイル名の値を削除</strong>します．<br>
+<strong>exeファイル名の値を削除</strong>します。<br>
 
-コマンドラインの値は削除してもしなくてもかまいません．<br>
+コマンドラインの値は削除してもしなくてもかまいません。<br>
 
 ***
 
@@ -329,9 +332,9 @@ LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しない
 
 ### PDFLaTeX → exeファイル名の値を削除する {#y3e5092f}
 
-<strong>exeファイル名の値を削除</strong>します．<br>
+<strong>exeファイル名の値を削除</strong>します。<br>
 
-コマンドラインの値は削除してもしなくてもかまいません．<br>
+コマンドラインの値は削除してもしなくてもかまいません。<br>
 
 ***
 
@@ -364,11 +367,11 @@ LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しない
 
 ### BibTeX {#rac1047d}
 
-LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します．<br>
+LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します。<br>
 
 #### Latexmk-upLaTeX-pdfdvi の場合 {#kf0c5dfa}
 
-以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
+以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です。<br>
 
 ***
 
@@ -401,7 +404,7 @@ LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します�
 
 ### DVIView {#qe7d598d}
 
-LaTeXを先に実行 のチェックを外します．<br>
+LaTeXを先に実行 のチェックを外します。<br>
 
 #### SumatraPDF の場合 {#tbcf6fd8}
 
@@ -437,7 +440,7 @@ LaTeXを先に実行 のチェックを外します．<br>
 ***
 
 ■ SumatraPDF を前面に表示したくない場合<br>
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します。<br>
 
 ***
 
@@ -470,11 +473,11 @@ LaTeXを先に実行 のチェックを外します．<br>
 
 ### DVI -> PS {#ce93346a}
 
-LaTeXを先に実行 のチェックを外します．<br>
+LaTeXを先に実行 のチェックを外します。<br>
 
 #### Latexmk-upLaTeX-pdfps の場合 {#c693c76d}
 
-以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です．<br>
+以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です。<br>
 
 ***
 
@@ -507,7 +510,7 @@ LaTeXを先に実行 のチェックを外します．<br>
 
 ### GSView {#v5b366e3}
 
-LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します．<br>
+LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<br>
 
 #### SumatraPDF の場合 {#ea77c809}
 
@@ -542,9 +545,9 @@ LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します．<
 
 ### PDFView {#x6d29bc8}
 
-PDFLaTeXを先に実行 のチェックを外します．<br>
-Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません．<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader DC を使用することをおすすめします．<br>
+PDFLaTeXを先に実行 のチェックを外します。<br>
+Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません。<br>
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader DC を使用することをおすすめします。<br>
 
 #### SumatraPDF の場合 {#a003ae3e}
 
@@ -579,25 +582,25 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用し
 
 ## ユーザ指定プログラム {#b923de85}
 
-\[ユーザ指定プログラム\] は“DOS”のチェックの ON, OFF を指定できます．<br>
-“DOS”のチェック (☑) は，exe ファイルが DOS (コンソール) アプリケーションで，出力先をコンソールではなく WinShell の Output Window に変更することを意味しています．<br>
-チェックを付けていないと，コマンド プロンプトが出るのは正しい動作です．<br>
+\[ユーザ指定プログラム\] は“DOS”のチェックの ON, OFF を指定できます。<br>
+“DOS”のチェック (☑) は，exe ファイルが DOS (コンソール) アプリケーションで，出力先をコンソールではなく WinShell の Output Window に変更することを意味しています。<br>
+チェックを付けていないと，コマンド プロンプトが出るのは正しい動作です。<br>
 従って<br>
 
 - Window アプリケーションの場合
 - コンソールアプリケーションでコンソールに出力したい場合
 
-は“DOS”のチェックをはずしてください．<br>
+は“DOS”のチェックをはずしてください。<br>
 
-LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックを外します．<br>
+LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<br>
 
 ## SumatraPDF との連携 {#r950d1ac}
 
 ### forward and inverse search {#haf1936b}
 
-PDFView を [SumatraPDF](/SumatraPDF/) に変更します．
+PDFView を [SumatraPDF](/SumatraPDF/) に変更します。
 
-WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても PDFView を実行すれば自動的に forward search をしてくれます．
+WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても PDFView を実行すれば自動的に forward search をしてくれます。
 
 ***
 
@@ -632,7 +635,7 @@ WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定�
 
 #### SumatraPDF を前面に表示したい場合 {#l68af5c0}
 
-DVIView を [SumatraPDF](/SumatraPDF/) に変更します．
+DVIView を [SumatraPDF](/SumatraPDF/) に変更します。
 
 コマンドラインに
 
@@ -640,7 +643,7 @@ DVIView を [SumatraPDF](/SumatraPDF/) に変更します．
 -reuse-instance "%s.pdf" -forward-search "%c.tex" %l
 ```
 
-を設定します．
+を設定します。
 
 ***
 
@@ -673,7 +676,7 @@ DVIView を [SumatraPDF](/SumatraPDF/) に変更します．
 
 #### SumatraPDF を前面に表示したくない場合 {#ufb9a660}
 
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します。<br>
 
 ***
 
@@ -720,34 +723,34 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
     "C:\Program Files\WinShell\WinShell.exe" -c "%f" -l %l
     ```
 
-です．
+です。
 
-ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
+ダブルクリックで対応する TeX 文書の該当箇所にジャンプします。
 
 ## 使い方 {#n7874abc}
 
 ### TeX ファイルの作成 {#n92b6cac}
 
-すでに TeX ファイルがあれば WinShell にドラッグ &amp; ドロップしてファイルを開きます．<br>
-TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[TeX文書\] で新規作成できます．<br>
-ツールバーの \[新規TeX文書\] をクリックして作成することもできます．<br>
-プロジェクトウィンドウの右側にエディタウィンドウが開きます．<br>
-このエディタウィンドウに LaTeX の文書を打ち込みます．<br>
+すでに TeX ファイルがあれば WinShell にドラッグ &amp; ドロップしてファイルを開きます。<br>
+TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[TeX文書\] で新規作成できます。<br>
+ツールバーの \[新規TeX文書\] をクリックして作成することもできます。<br>
+プロジェクトウィンドウの右側にエディタウィンドウが開きます。<br>
+このエディタウィンドウに LaTeX の文書を打ち込みます。<br>
 
-打ち込み終わったら，［保存］ボタンをクリックします．<br>
-新規作成した文書の場合はファイル名を聞いてきますので，適当に答えます（例えば “test.tex”）．<br>
+打ち込み終わったら，［保存］ボタンをクリックします。<br>
+新規作成した文書の場合はファイル名を聞いてきますので，適当に答えます（例えば “test.tex”）。<br>
 
 ### PDF ファイルの出力・表示・印刷 {#ndd7120c}
 
-\[主なTeXプログラムの設定\] の \[BibTeX\] と \[DVI -> PS\] の項目に PDF ファイルを出力するための設定をします．<br>
-設定は以下を参照して設定します．<br>
+\[主なTeXプログラムの設定\] の \[BibTeX\] と \[DVI -> PS\] の項目に PDF ファイルを出力するための設定をします。<br>
+設定は以下を参照して設定します。<br>
 
 - [WinShell#BibTeX#Latexmk-upLaTeX-pdfdvi の場合](/WinShell/#kf0c5dfa)
 - [WinShell#DVI -> PS#Latexmk-upLaTeX-pdfps の場合](/WinShell/#c693c76d)
 
-\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX-pdfdvi) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします．<br>
-\[DVI -> PS\] に設定したプログラム (Latexmk-upLaTeX-pdfps) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします．<br>
-コマンド プロンプトに処理状況が表示されます．<br>
+\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX-pdfdvi) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします。<br>
+\[DVI -> PS\] に設定したプログラム (Latexmk-upLaTeX-pdfps) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします。<br>
+コマンド プロンプトに処理状況が表示されます。<br>
 
 <!-- >もしユーザ自身が作成したファイルとは異なるファイルが処理されているようなら， -->
 <!-- ユーザの意図しない「プロジェクト」が用いられていないかどうかを -->
@@ -756,27 +759,27 @@ TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[
 <!-- WinShell のインストール直後などではデモ用のプロジェクトが用意されていることがあるので， -->
 <!-- 必要ならそれを解除してください (See [[qa:48695]])。~ -->
 
-エラーがなければ PDF ファイルが出力されます．<br>
+エラーがなければ PDF ファイルが出力されます。<br>
 
-PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\] の \[DVIView\] と \[GSView\] と \[PDFView\] の項目に PDF ファイルを表示するための設定をします．<br>
-設定は以下を参照して設定します．<br>
+PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\] の \[DVIView\] と \[GSView\] と \[PDFView\] の項目に PDF ファイルを表示するための設定をします。<br>
+設定は以下を参照して設定します。<br>
 
 - [WinShell#DVIView#SumatraPDF の場合](/WinShell/#tbcf6fd8)
 - [WinShell#GSView#SumatraPDF の場合](/WinShell/#ea77c809)
 - [WinShell#PDFView#SumatraPDF の場合](/WinShell/#a003ae3e)
 
-\[DVIView\] に設定したプログラム (SumatraPDF) を実行する場合は \[DVIView\] ボタンをクリックまたは F7 キーをタイプします．<br>
-\[GSView\] に設定したプログラム (SumatraPDF) を実行する場合は \[GSView\] ボタンをクリックまたは F9 キーをタイプします．<br>
-\[PDFView\] に設定したプログラム (SumatraPDF) を実行する場合は \[PDFView\] ボタンをクリックまたは F11 キーをタイプします．<br>
+\[DVIView\] に設定したプログラム (SumatraPDF) を実行する場合は \[DVIView\] ボタンをクリックまたは F7 キーをタイプします。<br>
+\[GSView\] に設定したプログラム (SumatraPDF) を実行する場合は \[GSView\] ボタンをクリックまたは F9 キーをタイプします。<br>
+\[PDFView\] に設定したプログラム (SumatraPDF) を実行する場合は \[PDFView\] ボタンをクリックまたは F11 キーをタイプします。<br>
 
-エラーがなければ PDF ファイルが表示されます．<br>
+エラーがなければ PDF ファイルが表示されます。<br>
 
-PDF ファイルを印刷する場合は Adobe Acrobat Reader DC から PDF ファイルを開いて印刷します．<br>
-Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます．<br>
+PDF ファイルを印刷する場合は Adobe Acrobat Reader DC から PDF ファイルを開いて印刷します。<br>
+Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。<br>
 
 ### 補完機能 {#c8bc5b6d}
 
-Ctrl + Space でキーワードの補完ができます．<br>
+Ctrl + Space でキーワードの補完ができます。<br>
 
 - [Winshell 補完して！](http://infotech776.blog.fc2.com/blog-entry-24.html)
 - [winshellの補完機能について](http://diondaikun.hatenablog.com/entry/20121226/1356452475)
@@ -815,13 +818,13 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 
 ### 「WinShell Update」機能 {#n1ccef71}
 
-WinShell には アップデート機能があります．<br>
+WinShell には アップデート機能があります。<br>
 
 #### WinShell の更新 {#x8afdcfc}
 
-WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデートの確認(C)...\] をクリックします．
+WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデートの確認(C)...\] をクリックします。
 
-「WinShellの更新」 が表示され，WinShell の使用中のバージョン・最新のリリースバージョン・最新のベータバージョンが表示されます．
+「WinShellの更新」 が表示され，WinShell の使用中のバージョン・最新のリリースバージョン・最新のベータバージョンが表示されます。
 
 ***
 
@@ -841,6 +844,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
 
-[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします．ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます．
-[^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください．
-[^3]: レジストリの編集には危険が伴う場合があります．自信のない場合は控えるなど，十分ご注意ください．
+[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします。ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます。
+[^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください。
+[^3]: レジストリの編集には危険が伴う場合があります。自信のない場合は控えるなど，十分ご注意ください。
