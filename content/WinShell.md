@@ -7,7 +7,7 @@ pukiwiki: "WinShell"
 
 # WinShell
 
-## WinShell {#t788b13b}
+## WinShell (非推奨) {#t788b13b}
 
 WinShell は Windows 向けに開発された TeX 用の統合環境です。
 しかし，WinShell には
@@ -18,9 +18,6 @@ WinShell は Windows 向けに開発された TeX 用の統合環境です。
 
 などの問題があり，とりわけ日本語文書を作成する際に致命的な問題が発生します。
 現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）。
-
-以下の情報はアーカイブとして残しておきます。
-極力削除はお控えください。[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます。
 
 <!-- とりあえず復活させてみました。「設定」以下はバックアップから取得したものに手を付けていません。 -->
 <!-- 特にこのページの「ShiftJIS のダメ文字」の記述は，WinShell に限らず一般論として価値がありますよね？ -->
