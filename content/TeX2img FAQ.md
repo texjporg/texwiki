@@ -120,7 +120,7 @@ Ghostscript の問題を回避するには
 
 ## よくある質問・Tips {#ta8b7d06}
 
-### Word や PowerPoint に画像を貼り付けたいのですが… {#q983d536}
+### Word や PowerPoint, Keynote に画像を貼り付けたいのですが… {#q983d536}
 
 TeX2img ではベクター画像とビットマップ画像を出力できます。
 大雑把には「拡大してもギザギザにならないのがベクター画像，ギザギザになるのがビットマップ画像」です。
@@ -147,6 +147,13 @@ EPS ファイルについては，[Ghostscript](/Ghostscript/) のバージョ�
 ビットマップ形式なら PNG ファイルが最適です。
 
 - TeX2imgで作成したEPSファイルがWord2010で表示できない ([forum:1576](https://okumuralab.org/tex/mod/forum/discuss.php?d=1576))
+
+また，Windows 版 TeX2img 1.5.5 および Mac 版 TeX2img 1.9.5 では「生成ファイルを自動的にクリップボードにコピーする機能」が設けられました。
+複数の画像ファイルが一度に生成した場合は，そのすべてがコピーされます。
+このうち Mac 版では，クリップボードに画像をコピーしても Office for Mac 2011 に画像を貼り付けられない（代わりにファイル名の文字列が貼り付いてしまう）という問題があります。
+これは，Office for Mac 2011 が Finder で選択してコピーしたファイルの貼り付けに対応していないことによるものです。
+Mac 版 TeX2img と Keynote や Office for Mac 2016 の組み合わせではこの問題は発生しません。
+また，Windows 版と Office 2010/2013 の組み合わせではこの問題は発生しません。
 
 ### Illustrator や Inkscape で画像を編集したいのですが… {#h5ceaadb}
 
