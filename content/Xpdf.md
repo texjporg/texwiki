@@ -9,11 +9,11 @@ pukiwiki: "Xpdf"
 
 ## [Xpdf](http://www.foolabs.com/xpdf/) --- PDF 操作ツール {#z338a0d1}
 
-<span style="font-size:25px">PDF ビューアとして Xpdf を利用するのは，現在非推奨です！</span>
+Xpdf は Unix 系 OS で利用できる PDF ビューア，および PDF 操作ツールです。
 
-[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を使用してください。
+Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
-ただし，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です。
+また，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です。
 ここでは，そのようなツールを紹介します。
 
 <!-- とりあえず項目を復活させました。 -->
