@@ -7,15 +7,12 @@ pukiwiki: "xdvi"
 
 # xdvi
 
-## xdvi {#s73ab198}
+## xdvi (非推奨) {#s73ab198}
 
 xdvi は Unix 系 OS で動作する DVI ビューアです。
 
 xdvi を使用すると，日本語が表示されないといった問題が発生する場合があります（[古い情報](</古い情報/#je1d5241>)もご覧ください）。
 現在は DVI ではなく PDF でのプレビューが推奨されています。
-
-以下の情報はアーカイブとして残しておきます。
-極力削除はお控えください。[forum:1013](https://okumuralab.org/tex/mod/forum/discuss.php?d=1013) の<strong>「削除は原則禁止」</strong>の合意事項に基づきます。
 
 ***
 
