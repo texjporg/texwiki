@@ -170,7 +170,7 @@ TeX2img は，Windows版でもMac版でも，画像生成の元となったTeX�
 
 #### 技術的詳細 {#n7de51d4}
 
-元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，ファイルシステムの拡張属性（Windows版ではNTFSの Alternative Data Stream，Mac版では HFS+ の [Extended Attributes](http://news.mynavi.jp/column/osx/253/)）の部分にソースコードの情報を埋め込んでいます。
+元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，Windows版ではNTFSの Alternative Data Stream，Mac版では HFS+ の [Extended Attributes](http://news.mynavi.jp/column/osx/253/)）の部分にソースコードの情報を埋め込んでいます。
 
 例えばMacのファイルシステムHFS+の場合，1つのファイルに対し，
 
@@ -180,7 +180,7 @@ TeX2img は，Windows版でもMac版でも，画像生成の元となったTeX�
 という2種類の情報を保持しています。拡張属性の側にソースを書き込むことで，そのファイル内容（データフォーク）はいじらず，PDFやPNGといったファイルのフォーマットを崩すことなくソースコードの情報を保持させるようになっています。
 HFS+のボリューム間でコピーをすると，そのソースの内容も引き継がれます。
 
-なお，FAT32やNTFSなど他のファイルシステムにコピーすると，[Apple Dobule](https://ja.wikipedia.org/wiki/AppleSingle) の仕組みによって，
+なお，HFS+の拡張属性付きファイルを，MacによりFAT32やNTFSなど他のファイルシステムにコピーすると，[Apple Dobule](https://ja.wikipedia.org/wiki/AppleSingle) の仕組みによって，
 
 - hoge.png
 - .\_hoge.png
@@ -293,7 +293,7 @@ px はピクセル，bp は big point です。主に，px は JPEG/PNG/GIF/TIFF
 
 ソースの文字コードを明示指定すると，--kanji=utf8 のようなオプションを LaTeX コンパイラに渡します。しかし，pTeX 系以外のエンジンを使っている場合，そもそも --kanji というオプションがありません。そのような場合，ソースはUTF8で作成し，--kanji なしでコンパイラに渡す必要があります。そのような場合に利用するのが「文字コード：指定しない」です。
 
-ただし，最近の LaTeX エンジンの場合，（pTeX 系か否かを問わず）ソースの文字コードのデフォルトは UTF8 ですから，通常は「文字コード：指定しない」にしておけば問題ないでしょう。
+ただし，最近の LaTeX エンジンの場合，（pTeX 系か否かを問わず）ソースの文字コードのデフォルトは UTF8 か自動推定されますから，通常は「文字コード：指定しない」にしておけば問題ないでしょう。
 
 ### 画像の横幅を常に一定にして出力したい {#s84b19a5}
 
