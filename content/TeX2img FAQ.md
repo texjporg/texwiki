@@ -28,7 +28,7 @@ TeX2img は，LaTeX ソースコードを入力して画像に変換するツー
 
 ### 数式を入力してもエラーが出て画像が生成しない（または画像が変になる） {#w3327c6d}
 
-しばしば誤解されがちですが，TeX2img は数式画像生成に特化したツールではなく，日本語など地の文を含めて「あらゆる LaTeX 文書を画像に変換するツール」として作られています。
+しばしば誤解されがちですが，TeX2img は，[LaTeXiT](/LaTeXiT/) などとは異なり，<strong>数式画像生成に特化したツールではありません</strong>。日本語など地の文を含めて「<strong>あらゆる LaTeX 文書を画像に変換するツール</strong>」として作られています。
 したがって，通常の LaTeX と同様に，数式用コマンドを使うには，$ ... $ や \\\[ ... \\\] ，\begin{align\*} ... \end{align\*} などの数式環境に入れる必要があります。
 
 一見して画像が生成したように見えても，思うような出力にならない場合，TeX2img の設定で「少々のエラーは無視して画像化を強行する」が ON になっていることがあります。
@@ -181,7 +181,7 @@ TeX2img は，Windows 版でも Mac 版でも，画像生成の元となった L
 
 #### 技術的詳細 {#n7de51d4}
 
-元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，Windows 版では NTFS の Alternative Data Stream，Mac 版では HFS+ の [Extended Attributes](http://news.mynavi.jp/column/osx/253/) の部分にソースコードの情報を埋め込んでいます。
+元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，Windows 版では NTFS の [代替データストリーム (Alternative Data Stream)](http://d.hatena.ne.jp/abenori/20150225)，Mac 版では HFS+ の [拡張属性 (Extended Attributes)](http://news.mynavi.jp/column/osx/253/) の部分にソースコードの情報を埋め込んでいます。
 
 例えば Mac のファイルシステム HFS+ の場合，1つのファイルに対し，
 
@@ -342,7 +342,7 @@ px はピクセル，bp は big point です。
 
 ### 数式画像生成だけのために TeX2img を使いたい {#m4a21526}
 
-[上の項目](</TeX2img FAQ/#w3327c6d>)で述べたとおり，TeX2img は「あらゆる LaTeX 文書を画像化する」ことを想定して作られています。
+[上の項目](</TeX2img FAQ/#w3327c6d>)で述べたとおり，TeX2img は，[LaTeXiT](/LaTeXiT/) のように数式画像生成に特化したソフトウェアではなく，「<strong>あらゆる LaTeX 文書を画像化する</strong>」ことを想定して作られています。
 しかし，「日本語はワープロやプレゼンソフトで書くから，数式だけ画像化してくれればいいんだ」という場合は，文書全体が \\\[ ... \\\] で囲まれるようにプリアンブルで設定しておくと，毎回 \\\[ ... \\\] で囲う必要がなくて便利かもしれません。
 
 プリアンブル設定ウィンドウに
@@ -350,13 +350,11 @@ px はピクセル，bp は big point です。
 ```
 \documentclass[fleqn,papersize]{jsarticle}
 \usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx,color}
 \pagestyle{empty}
 \makeatletter
 \AtBeginDocument{\[}
-\expandafter\expandafter\expandafter\def
-\expandafter\expandafter\expandafter\@enddocumenthook
-\expandafter\expandafter\expandafter{%
-\expandafter\]\@enddocumenthook}
+\expandafter\def\expandafter\@enddocumenthook\expandafter{\expandafter\]\@enddocumenthook}
 \makeatother
 ```
 
