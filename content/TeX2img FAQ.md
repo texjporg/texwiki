@@ -342,7 +342,7 @@ px はピクセル，bp は big point です。
 
 ### 数式画像生成だけのために TeX2img を使いたい {#m4a21526}
 
-[上の項目](</TeX2img FAQ/#w3327c6d>)で述べたとおり，TeX2img は，[LaTeXiT](/LaTeXiT/) のように数式画像生成に特化したソフトウェアではなく，「<strong>あらゆる LaTeX 文書を画像化する</strong>」ことを想定して作られています。
+[上の項目](</TeX2img FAQ/#w3327c6d>)で述べたとおり，TeX2img は，[LaTeXiT](/LaTeXiT/) のような数式画像生成に特化したソフトウェアではなく，「<strong>あらゆる LaTeX 文書を画像化する</strong>」ことを想定して作られています。
 しかし，「日本語はワープロやプレゼンソフトで書くから，数式だけ画像化してくれればいいんだ」という場合は，文書全体が \\\[ ... \\\] で囲まれるようにプリアンブルで設定しておくと，毎回 \\\[ ... \\\] で囲う必要がなくて便利かもしれません。
 
 プリアンブル設定ウィンドウに
@@ -368,6 +368,77 @@ px はピクセル，bp は big point です。
 ただし，\\\[ ... \\\] 内に空行 (\par) は入れられませんので，空行を入れないように注意してください。
 また，TeX2img はソースを保存する際に本文の末尾に必ず改行を入れる仕様になっていますので，入力したソースの末尾にもともと改行があるとこれも空行になってしまいます。
 したがって，本文末尾に改行を入れないように注意してください。
+
+#### 本文全体を自動的に \begin{align\*} ... \end{align\*} で囲む設定 {#oebb1cb6}
+
+本文全体が自動的に \begin{align\*} ... \end{align\*} で囲まれるようにするには，もう少し工夫が必要です。
+プリアンブル設定ウィンドウに
+
+```
+\documentclass[fleqn,papersize]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx,color}
+\pagestyle{empty}
+
+\makeatletter
+\let\my@document\document
+
+\def\encloseDocument#1{%
+  \def\my@doc{document}%
+  \def\my@memory{\my@document\begin{#1}}%
+  \def\my@search##1\end##2{%
+    \def\my@temp{##2}%
+    \ifx\my@temp\my@doc
+      \expandafter\def\expandafter\my@next\expandafter{\my@memory##1\end{#1}\end{document}}%
+    \else
+      \expandafter\def\expandafter\my@memory\expandafter{\my@memory##1\end{##2}}%
+      \let\my@next\my@search
+    \fi
+    \my@next
+  }%
+  \let\document\my@search
+}
+\makeatother
+
+% \begin{document} ... \end{document} の中身を \begin{align*} ... \end{align*} で囲む設定にする
+\encloseDocument{align*}
+```
+
+と書き，本文（\begin{document} ... \end{document} の内部）に例えば
+
+```
+&\left\{
+\begin{array}{l}
+\sigma_0=\begin{pmatrix}
+ 1 && 0 \\
+ 0 && 1 \\
+\end{pmatrix}\\[10pt]
+\sigma_1=\begin{pmatrix}
+ 0 && 1 \\
+ 1 && 0 \\
+\end{pmatrix}\\[10pt]
+\sigma_2=\begin{pmatrix}
+ 0 && -i \\
+ i && 0 \\
+\end{pmatrix}\\[10pt]
+\sigma_3=\begin{pmatrix}
+ 1 && 0 \\
+ 0 && -1 \\
+\end{pmatrix}
+\end{array}
+\right.\\[5pt]
+\Longrightarrow &
+\left\{
+\begin{array}{l}
+\sigma_1^2=\sigma_2^2=\sigma_3^2=\sigma_0\\[3pt]
+\sigma_1\sigma_2=i\sigma_3\\[3pt]
+\sigma_2\sigma_3=i\sigma_1\\[3pt]
+\sigma_3\sigma_1=i\sigma_2
+\end{array}
+\right.
+```
+
+のように書けば，本文全体が \begin{align\*} ... \end{align\*} で囲まれていることになり，そのまま入力すれば &amp; で位置揃えする複数行数式が使えます。
 
 ## 既知の問題（未解決） {#ddfe3887}
 
