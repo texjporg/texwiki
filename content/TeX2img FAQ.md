@@ -168,7 +168,19 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 \pagestyle{empty}
 ```
 
-### 一度生成した画像から元のTeXソースを復元して再編集したい {#l45f6f82}
+### LaTeX コンパイラや dvipdfmx に対してオプションを与えたい {#i15a2487}
+
+- LaTeX コンパイラに対して --shell-escape オプションを与えたい
+- dvipdfmx 実行時に -f ptex-ipaex.map のフォントマップ設定といったオプションを与えたい
+
+のように，実行時にオプションを加えたい場合は，次のようにして可能です。
+
+- GUI 版：LaTeX や dvipdfmx のパス設定において，次のようにオプションを付与する。
+    - /path/to/platex --shell-escape
+    - /path/to/dvipdfmx -f ptex-ipaex.map
+- CUI 版：--compiler や --dvipdfmx オプションで --compiler "platex --shell-escape" --dvipdfmx "dvipdfmx -f ptex-ipaex.map" のように指定する。
+
+### 一度生成した画像から元の TeX ソースを復元して再編集したい {#l45f6f82}
 
 TeX2img は，Windows 版でも Mac 版でも，画像生成の元となった LaTeX ソースを保持させることができます。
 例えば Mac 版 TeX2img の場合，
