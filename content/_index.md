@@ -9,6 +9,8 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
+★[TeX ユーザの集い 2015](http://texconf15.tumblr.com) 11月7日(土)開催！ 
+
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
 <!-- * FrontPage [#pe4f375a] -->
