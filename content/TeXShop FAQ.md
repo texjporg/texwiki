@@ -127,13 +127,13 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 使わないで下さい。 たいていの場合、タイプセットに失敗します。
 
-### TeXShopをアンインストールするには？ {#o9698a89}
+### TeXShop をアンインストールするには？ {#o9698a89}
 
 アプリケーションアイコンをゴミ箱に捨てるだけでOKです。
 気になるようでしたら、以下のファイルとディレクトリも削除して下さい。
 
-1. ~/Library/Preferences/TeXShop.plist ファイル
-1. ~/Library/TeXShop/ ディレクトリ
+1. $HOME/Library/Preferences/TeXShop.plist ファイル
+1. $HOME/Library/TeXShop/ ディレクトリ
 
 なお，10.9 Mavericks 以降では，plist を手動で削除した後には次のコマンドを実行する必要があります。（[理由](http://applech2.com/archives/34534725.html)）
 
@@ -217,6 +217,17 @@ command+option+e を押すと
 - コードスニペット挿入後のカーソルキーの位置は #INS# で指定します。
 - マクロ発動時に選択していたテキストは #SEL# の位置に挿入されます。
 - マクロの内容を -- AppleScript から始めると，AppleScript でマクロを記述できます。これにより，マクロで複雑な処理を行わせたり，他のアプリケーションと連動させたりすることが可能になります。
+
+### \begin{itemize} に対して \end{itemize} を補完させるには？ {#y8cb8359}
+
+- \begin{itemize} という文字の直後の位置にカーソルを置いた状態でESCキー（初期設定時）を押せば \end{itemize} が補完されます。
+- あるいは，
+
+    ```
+    ソース → 現在の環境を閉じる
+    ```
+
+    を選択すると，現在開いている一番内側の環境（LaTeXでは \begin{hoge}，ConTeXt では \starthoge）を閉じる命令が挿入されます。
 
 ### シンタックスハイライトの色をカスタマイズしたい {#t9cdb033}
 
@@ -349,10 +360,6 @@ Ctl-Cmd-F で移動できます．
 ### コマンド補完のテクニック {#w512c4be}
 
 #### 「マーク」の利用 {#v7f4d9d8}
-
-#### \begin / \end の補完 {#p155b323}
-
-#### 最も内側の環境を閉じる {#pf65d4fa}
 
 #### \label と \ref の補完 {#k9dc75d1}
 
