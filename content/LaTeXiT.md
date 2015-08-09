@@ -79,7 +79,7 @@ XeLaTeX
 : /Library/TeX/texbin/xelatex
 
 LaTeX
-: /Library/TeX/texbin/uplatex または /Library/TeX/texbin/platex
+: /Library/TeX/texbin/uplatex
 
 dvipdf
 : /Library/TeX/texbin/dvipdfmx
