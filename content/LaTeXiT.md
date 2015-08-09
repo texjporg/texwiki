@@ -60,13 +60,13 @@ Beta 版も [LaTeXiT Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.ph
 
 SVG 形式の画像を出力したい場合は，\[書き出しフォーマット\] で SVG を選択し，\[オプション\] で pdf2svg のパスを入力します。
 
-[![](/attach/LaTeXiT/LaTeXiT-svg01.png)](/attach/LaTeXiT/LaTeXiT-svg01.png)
+> [![](/attach/LaTeXiT/LaTeXiT-svg01.png)](/attach/LaTeXiT/LaTeXiT-svg01.png)
 
 pdf2svg は例えば MacPorts でインストールできます。
 
 - pdf2svg のパス：/opt/local/bin/pdf2svg
 
-[![](/attach/LaTeXiT/LaTeXiT-svg02.png)](/attach/LaTeXiT/LaTeXiT-svg02.png)
+> [![](/attach/LaTeXiT/LaTeXiT-svg02.png)](/attach/LaTeXiT/LaTeXiT-svg02.png)
 
 #### プログラム {#a32b734b}
 
@@ -90,7 +90,7 @@ Ghostscript (gs)
 ps2pdf
 : /usr/local/bin/ps2pdf
 
-[![](/attach/LaTeXiT/LaTeXiT-program.png)](/attach/LaTeXiT/LaTeXiT-program.png)
+> [![](/attach/LaTeXiT/LaTeXiT-program.png)](/attach/LaTeXiT/LaTeXiT-program.png)
 
 もし [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は，上の Ghostscript (gs) と ps2pdf を
 
@@ -101,6 +101,14 @@ ps2pdf
 : /Applications/Ghostscript.app/bin/ps2pdf
 
 に変更してください。
+
+### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#pd5cb643}
+
+[OS X の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，LaTeXiT にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
+
+> [![](/attach/LaTeXiT/LaTeXiT-bs.png)](/attach/LaTeXiT/LaTeXiT-bs.png)
+
+この方法は，[forum:1635](https://okumuralab.org/tex/mod/forum/discuss.php?d=1635) で報告されているバグへの対処としても有効です。
 
 ### 関連リンク {#tab9989c}
 
