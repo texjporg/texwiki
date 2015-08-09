@@ -150,6 +150,62 @@ TeXShop, TeXworks, TeXstudio などの統合環境には PDF 用のビューア�
 
 には，OS X で使用可能なスペルチェッカーが紹介されています。
 
+## JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#me741d27}
+
+OS X で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
+いくつかの対処法を紹介します。
+
+- [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](http://d.hatena.ne.jp/zariganitosh/20101026/text_key_binding)
+- [Macにおけるバックスラッシュ（\）の入力方法](http://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
+- [【Yosemite】U.S.キーでバックスラッシュの入力が円記号になってしまう時の対処法](http://ringo-with.com/archives/2668)
+- 参考：[(1)](https://twitter.com/doraTeX/status/630575968025849856), [(2)](https://twitter.com/doraTeX/status/630576724271435776)
+
+### Karabiner によるキーバインドの変更 {#c25b5c16}
+
+OS X 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
+
+### OS X の日本語入力（旧ことえり）によるキーバインドの変更 {#w93e863d}
+
+JIS キーボードの ¥ キーで入力する文字を \ に変更する設定が可能です。
+
+- 「日本語」の場合
+
+> [![](/attach/Mac/MacJP-bs.png)](/attach/Mac/MacJP-bs.png)
+
+- 「ことえり」の場合
+
+> [![](/attach/Mac/Kotoeri-bs.png)](/attach/Mac/Kotoeri-bs.png)
+
+### Google 日本語入力によるキーバインドの変更 {#xb16c060}
+
+こちらも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定が可能です。
+
+> [![](/attach/Mac/Google-bs.png)](/attach/Mac/Google-bs.png)
+
+### ATOK を利用している場合 {#s23c1714}
+
+日本語入力に ATOK を利用している場合は，最新 2015 でも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定画面がありません。
+
+```
+~/Library/KeyBindings/DefaultKeyBinding.dict
+```
+
+に次の4行を記したファイルを配置し，再ログインすれば \ と ¥ が逆転します。
+
+```
+{
+  "¥" = ("insertText:", "\\");
+  "~¥" = ("insertText:", "¥");
+}
+```
+
+### 統合環境による対症療法 {#k7ca107f}
+
+いくつかの OS X 用統合環境は，この問題に対処する方法を用意しています。
+
+- [TeXShop](</TeXShop FAQ/#y43ef465>) や [LaTeXiT](/LaTeXiT/#pd5cb643) ではキーマップの設定が可能ですので，ここで ¥ キーを \ に変換できます。
+- [TeX2img](</TeX2img FAQ/#a8b7895d>) にはメニューに「編集＞入力された ¥ を \ に置換」という項目があり，ここで ¥ キーを \ に変換できます。
+
 ## 関連リンク {#links}
 
 - [Mac TeX Toolbox](http://sourceforge.net/projects/mactextoolbox/)
