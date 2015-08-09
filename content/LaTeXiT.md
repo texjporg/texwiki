@@ -59,25 +59,46 @@ Beta 版も [LaTeXiT Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.ph
 デフォルトの出力画像形式は，\[一般\]-\[書き出しフォーマット\] で選択します。
 
 SVG 形式の画像を出力したい場合は，\[書き出しフォーマット\] で SVG を選択し，\[オプション\] で pdf2svg のパスを入力します。
+
+[![](/attach/LaTeXiT/LaTeXiT-svg01.png)](/attach/LaTeXiT/LaTeXiT-svg01.png)
+
 pdf2svg は例えば MacPorts でインストールできます。
 
 - pdf2svg のパス：/opt/local/bin/pdf2svg
+
+[![](/attach/LaTeXiT/LaTeXiT-svg02.png)](/attach/LaTeXiT/LaTeXiT-svg02.png)
 
 #### プログラム {#a32b734b}
 
 日本語を使いたい場合は，\[プログラム\]-\[コマンド\] で latex+dvipdf を選択し，\[変更...\] を使用せずにプログラムのパスを直接入力します．
 
-- pdfLaTeX：/Library/TeX/texbin/pdflatex
-- XeLaTeX：/Library/TeX/texbin/xelatex
-- LaTeX：/Library/TeX/texbin/uplatex または /Library/TeX/texbin/platex
-- dvipdf：/Library/TeX/texbin/dvipdfmx
-- Ghostscript (gs)：/usr/local/bin/gs-noX11
-- ps2pdf：/usr/local/bin/ps2pdf
+pdfLaTeX
+: /Library/TeX/texbin/pdflatex
+
+XeLaTeX
+: /Library/TeX/texbin/xelatex
+
+LaTeX
+: /Library/TeX/texbin/uplatex または /Library/TeX/texbin/platex
+
+dvipdf
+: /Library/TeX/texbin/dvipdfmx
+
+Ghostscript (gs)
+: /usr/local/bin/gs-noX11
+
+ps2pdf
+: /usr/local/bin/ps2pdf
+
+[![](/attach/LaTeXiT/LaTeXiT-program.png)](/attach/LaTeXiT/LaTeXiT-program.png)
 
 もし [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は，上の Ghostscript (gs) と ps2pdf を
 
-- Ghostscript (gs)：/Applications/Ghostscript.app/bin/gs
-- ps2pdf：/Applications/Ghostscript.app/bin/ps2pdf
+Ghostscript (gs)
+: /Applications/Ghostscript.app/bin/gs
+
+ps2pdf
+: /Applications/Ghostscript.app/bin/ps2pdf
 
 に変更してください。
 
