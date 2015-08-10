@@ -21,7 +21,9 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 
 - [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
 
-Karabiner で Backslash が優先されるようにキーバインドを変更すると不具合を回避できるそうです．
+Karabiner で Backslash が優先されるようにキーバインドを変更すると不具合を回避できます．
+
+> [![](/attach/Karabiner/Karabiner-bs.png)](/attach/Karabiner/Karabiner-bs.png)
 
 #### License {#qb66f01c}
 
