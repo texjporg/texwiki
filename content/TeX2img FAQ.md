@@ -265,6 +265,70 @@ TeXShop のメニューの
 補完後のカーソルキーの位置は #INS# で指定します。
 #RET
 
+### \begin{itemize} に対して \end{itemize} を補完させるには？ {#y8cb8359}
+
+- \begin{itemize} という文字の直後の位置にカーソルを置いた状態で esc キーを押せば，\end{itemize} が補完されます。
+- あるいは，
+
+    ```
+    編集 → 現在の環境を閉じる (Command + Control + C)
+    ```
+
+    を実行すると，現在開いている一番内側の環境を閉じる命令が挿入されます。
+
+### CUI版でのデフォルト設定を変更したい {#b7a804d6}
+
+#### Windows版 {#b0734917}
+
+#### Mac版 {#z4823b47}
+
+Mac 版 TeX2img の CUI 版で，例えば「常に --no-embed-source が効くようにしたい」という場合は，.bashrc などで，次のようにエイリアスを設定しておくのがよいでしょう。
+
+```
+alias tex2img="tex2img --no-embed-source"
+```
+
+相反するオプションが複数指定された場合は，最後に指定されたものが有効になりますので，上記のようなエイリアス設定がなされている場合，
+
+- デフォルトでは --no-embed-source が有効となる。
+- tex2img --embed-source とすれば --no-embed-source の効果が消されて --embed-source が有効になる。
+
+となり，「デフォルトが --no-embed-source である」という挙動が実現できます。
+
+### 複数の設定プロファイルを切り替えたい {#hf4c7016}
+
+例えば
+
+- Illustrator 貼り付け用にEPS出力（余白なし，ソース埋め込みなし，プリアンブルでの横幅指定は十分大）
+- PowerPoint 貼り付け用に透過PNG出力（余白なし，ソース埋め込みあり，プリアンブルでの横幅指定は十分大）
+- ブログ画像用に非透過PNG出力（余白10px，ソース埋め込みなし，プリアンブルでの横幅指定は30zw）
+
+のように，用途ごとに設定を切り替えて使いたい場合の方法を紹介します。
+
+#### Windows版（GUI版） {#a6f2a2b4}
+
+#### Windows版（CUI版） {#zcbbab9c}
+
+#### Mac版（GUI版） {#u5ffb4db}
+
+ウィンドウ左下の「プロファイル」ボタンで，設定プロファイルを管理できます。
+
+- 画像化の設定
+- 出力ファイル名
+- プリアンブル
+
+といった，本文部以外の全設定を，名前を付けて保存・復元することができます。
+
+#### Mac版（CUI版） {#i77b89d8}
+
+.bashrc などで，好みの設定を次のようにエイリアスでコマンド化しておくとよいでしょう。
+
+```
+alias tex2img-ai="tex2img --no-embed-source"
+alias tex2img-powerpoint="tex2img --embed-source --transparent"
+alias tex2img-blog="tex2img --no-embed-source --no-transparent --left-margin 10 --right-margin 10 --top-margin 10 --bottom-margin 10 --unit px"
+```
+
 ### Word や PowerPoint, Keynote に画像を貼り付けたいのですが… {#q983d536}
 
 TeX2img ではベクター画像とビットマップ画像を出力できます。
