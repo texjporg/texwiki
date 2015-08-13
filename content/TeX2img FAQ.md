@@ -52,11 +52,9 @@ Windows 版 TeX2img がある日突然動かなくなるという現象が発生
 ### Mac 版でアップデートに失敗する・アップデート後に起動できない {#sbc4fdda}
 
 Mac 版 TeX2img は，Sparkle という自動アップデートのフレームワークを使っています。
-Mac 版 1.7.7 までに内包していた Sparkle の古いバージョンは，Snow Leopard (OS X 10.6) に対応していましたが，Yosemite (OS X 10.10) ではアップデートに失敗していました。
+Mac 版 1.7.7 までに内包していた Sparkle の古いバージョンは Snow Leopard (OS X 10.6) に対応していましたが，Yosemite (OS X 10.10) ではアップデートに失敗していました。
 そこで，以降の TeX2img では新しい Sparkle を内包するようにしました。
-
-結果として，Mac 版 TeX2img 1.7.8 以降の動作条件は Lion (OS X 10.7) 以上となっていますが，（少なくとも最新の TeX2img for Mac 1.9.5 までは）Sparkle が Snow Leopard に対応していないことが理由です。
-よって，Snow Leopard であっても自動アップデート機能を使わずに毎回公式サイトからダウンロードすれば，TeX2img の最新版が動作する可能性があります。
+結果として Mac 版 TeX2img 1.7.8 以降の動作条件は Lion (OS X 10.7) 以上となりました（以降のバージョンでは，他の機能も 10.7 以上であることを前提として実装されています）。
 
 ### Mac 版で ! Undefined control sequence. \UTF{xxxx} と出る {#xb2c033d}
 
