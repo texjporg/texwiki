@@ -255,6 +255,33 @@ BXJS クラス（標準設定）ではこれらの単位の代用となる長さ
 </tbody>
 </table>
 
+#### hyperrefの文書情報の文字化け対策 {#k7783d8f}
+
+hyperref パッケージを利用して出力 PDF 文書に文書情報（しおり等）を付加する場合、一般的には“PDF の文字コード”に関する設定を適切に行う必要がありますが、これはエンジンごとに「正しい設定」が異なっていて非常に厄介なものです。
+
+- 参考：[考察：文書情報が文字化けしない hyperref の設定](http://d.hatena.ne.jp/zrbabbler/20130204/1359977214)
+
+BXJS クラスでは使用されるエンジンに応じて「正しい設定」が自動的に行われるようになっています。
+そのため、hyperref パッケージで unicode オプションを指定する必要はありません。（指定した場合も「正しい方」に補正される。）
+また、(u)pLaTeX + dvipdfmx の上で用いる時も、ほとんどの場合、pxjahyper パッケージの読込は不要です。[^1]
+
+※BXJS クラスが自動的に hyperref パッケージを読み込むことはありません。
+
+#### magstyle設定 {#we2b3036}
+
+「新ドキュメントクラス」（JS クラス）におけるページレイアウト決定の過程では、基底フォントサイズが 10pt 以外の場合に、“版面を拡大縮小する”という手順を採用しています。
+そして、JS クラスではこの“版面の拡大”を実現するために TeX エンジンが持つ版面拡大機能（仮に「mag 設定」と呼称する）を利用しています。
+このことには相応の理由があるのですが、一方でこの処理は以下のような不都合の原因となっています。
+
+- 文書中で指定する絶対の長さ（単位付数値）について単位に“true”をつける必要がある。（付けないと mag 設定により拡大縮小されてしまう。）
+- mag 設定は LaTeX ではほとんど用いられないため、実際に用いられた時にそれを想定していないパッケージが誤動作する。[^2]
+
+BXJS クラスでは“版面拡大”について mag 設定以外の他の実現方法を提供していて、クラスオプション magstyle でそれを選択できます。
+
+- magstyle=mag（既定）： JS クラスと同様に、“版面拡大”のために mag 設定を用います。
+- magstyle=real： mag 設定を一切用いず、代わりに、全てのページレイアウトのパラメタの値を実際にスケールさせた値に置き換えます。
+- magstyle=xreal： real と同様の処理をし、さらにオプティカルサイズの補正のために NFSS にパッチを当てます。
+
 ### 不具合 {#x3d34063}
 
 #### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
@@ -300,3 +327,6 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
     - [https://github.com/zr-tex8r/BXjscls/commits/](https://github.com/zr-tex8r/BXjscls/commits/)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
+
+[^1]: 文書情報の文字列中に一部の特殊文字が含まれる場合には相変わらず必要になる。
+[^2]: 例えば hyperref の用紙サイズ機能が誤動作する。なお、BXJS クラスではその機能を無効化して問題を回避している。
