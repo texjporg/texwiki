@@ -92,24 +92,19 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [LuaTeX](/LuaTeX/), LuaJITTeX
 - マクロパッケージ：[LaTeX](/LaTeX/), [ConTeXt](/ConTeXt/)
 
-#### TeX 処理系を変更する際にはソースにも変更が必要となることがあります．例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります． {#j08ab319}
-
-- ドキュメントクラスを upLaTeX 対応のものに変更（[e-upTeX](/upTeX,upLaTeX/) も参照）
-
-    ```
-    \documentclass{jsarticle} → \documentclass[uplatex]{jsarticle}
-    \documentclass{tarticle} → \documentclass{utarticle}
-    ```
-
-- otf パッケージを用いているならば，uplatex オプションを加える（[OTF](/OTF/) も参照）
-
-    ```
-    \usepackage{otf} → \usepackage[uplatex]{otf}
-    ```
-
+<!-- *** TeX 処理系を変更する際にはソースにも変更が必要となることがあります．例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります． [#j08ab319] -->
+<!--  -->
+<!-- -ドキュメントクラスを upLaTeX 対応のものに変更（[[e-upTeX>upTeX,upLaTeX]] も参照） -->
+<!-- \documentclass{jsarticle} → \documentclass[uplatex]{jsarticle} -->
+<!-- \documentclass{tarticle} → \documentclass{utarticle} -->
+<!-- -otf パッケージを用いているならば，uplatex オプションを加える（[[OTF]] も参照） -->
+<!-- \usepackage{otf} → \usepackage[uplatex]{otf} -->
+<!--  -->
 <!-- 多くの市販の参考書が pLaTeX ベースで，upLaTeX への移行が簡単であることが -->
 <!-- 意外と知られておらず，「ネットで調べる情報」の上位に来るのではないかと思い， -->
 <!-- FrontPage に書き加えました． -->
+<!--  -->
+<!-- FrontPageにおいておく内容とは思えないのでコメントアウトしてみます． -->
 
 ### エラーに遭遇したときは {#d1cf258f}
 
