@@ -28,15 +28,15 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 
 ## スライドの作り方 {#zce7020e}
 
-これまでレポート作成の例などを bxjsarticle クラスを使って示してきましたが，bxjsslide クラスを使うと簡単にスライドを作成できます．
+これまでレポート作成の例などを jsarticle クラスを使って示してきましたが，同じ jsarticle クラスに slide オプションを与えると簡単にスライドを作成できます．
 また，LaTeX にはスライド作成に特化したクラスもありますので，ここで簡単に紹介します。
 
-### bxjsslide クラスによるスライドの雛形 {#c192429c}
+### jsarticle クラスによるスライドの雛形 {#c192429c}
 
-スライドに特化した他のパッケージのような高度な機能はありませんが，通常の bxjsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
+スライドに特化した他のパッケージのような高度な機能はありませんが，通常の jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
 
 ```
-\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsslide}
+\documentclass[slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
