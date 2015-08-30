@@ -13,6 +13,9 @@ Latexmk は文書を作成するのに必要な回数タイプセットしてく
 
 - [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
 
+<!-- http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1645#p9535 -->
+<!-- に従い，設定は基本的にplatex + dvipdfmxで書く，ということにしています． -->
+
 ***
 
 ***
@@ -36,7 +39,7 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．ただし
 
 ### 設定 {#g2a2cf08}
 
-実際にコンパイル時に何を用いるか（uplatex か latex か，upbibtex か bibtex か等々）は，.latexmkrcと言うファイルに記述します．実行時オプションで指定できなくもありません（以下の使い方を参照）．.latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
+実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrcと言うファイルに記述します．実行時オプションで指定できなくもありません（以下の使い方を参照）．.latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
 
 1. 環境変数 HOME が定義されていればそのフォルダ
 1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
@@ -46,10 +49,10 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．ただし
 日本語用の簡単な .latexmkrc です．
 
 ```
-$latex = 'uplatex -synctex=1 %O %S';
-$bibtex = 'upbibtex %O %B';
+$latex = 'platex -synctex=1 %O %S';
+$bibtex = 'pbibtex %O %B';
 $dvipdf = 'dvipdfmx %O -o %D %S';
-$makeindex = 'upmendex %O -o %D %S';
+$makeindex = 'mendex %O -o %D %S';
 $max_repeat = 10;
 $pdf_previewer = '"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
 ```
@@ -74,16 +77,16 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
     latexmk -pdfdvi sample.tex
     ```
 
-- dvi 経由で pdf を生成，uplatex，dvipdfmx，upbibtex，upmendex を使うことを明示する．
+- dvi 経由で pdf を生成，platex，dvipdfmx，pbibtex，mendex を使うことを明示する．
 
     ```
-    latexmk -pdfdvi -latex=uplatex -synctex=1 -e "$dvipdf='dvipdfmx %O %S';$bibtex='upbibtex';$makeindex='upmendex';" sample.tex
+    latexmk -pdfdvi -latex=platex -synctex=1 -e "$dvipdf='dvipdfmx %O %S';$bibtex='pbibtex';$makeindex='mendex';" sample.tex
     ```
 
 - dvi 経由で pdf を生成し，更にプレビューを行う．
 
     ```
-    latexmk -dvipdf -pv sample.tex
+    latexmk -pdfdvi -pv sample.tex
     ```
 
 - pdflatex で pdf を生成する
@@ -101,7 +104,7 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
 - dvi 経由で pdf を生成し，それをプレビュー，更に sample.tex を監視させ，更新されたら再度コンパイルを行う．
 
     ```
-    latexmk -dvipdf -pvc -interaction=nonstopmode sample.texu
+    latexmk -pdfdvi -pvc -interaction=nonstopmode sample.tex
     ```
 
 - 中間ファイルを削除する
@@ -116,7 +119,7 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
     latexmk -C sample.tex
     ```
 
-「dvi 経由で pdf を生成，uplatex，dvipdfmx，upbibtex，upmendex を使うことを明示する．」では %O や %S などを latexmk に補完させています．dvipdfmx は補完に失敗するため，指定しています．
+「dvi 経由で pdf を生成，platex，dvipdfmx，pbibtex，mendex を使うことを明示する．」では %O や %S などを latexmk に補完させています．dvipdfmx は補完に失敗するため，指定しています．
 
 ### .latexmkrc のサンプル {#qeabdd2c}
 
