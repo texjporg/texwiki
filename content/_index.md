@@ -28,7 +28,7 @@ TeX Wiki は誰でも編集できます．
 - 読みづらいので直したい
 - 最新情報を追記したい
 
-などあれば，気軽に編集して下さい．編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります．
+などあれば，気軽に編集して下さい．編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります．[TeX Wiki編集方針](</TeX Wiki編集方針/>)に従ってください．
 
 ※現在，大幅な改訂を行っています．編集方針についてのご意見を [TeX Forum での議論](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1485)の方にお寄せください．
 
