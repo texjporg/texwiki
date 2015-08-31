@@ -36,14 +36,14 @@ BXjscls パッケージには次の 4 つの文書クラス（「BXJS クラス�
 - bxjsarticle クラス： 「章のないレポート」用．jsarticle クラスに相当．
 - bxjsreport クラス： 「章のあるレポート」用．jsbook クラス + report オプションに相当．
 - bxjsbook クラス： 書籍用．jsbook クラスに相当．
-- bxjsslide クラス： スライド用．-jsarticle クラス + slide オプションに相当．
+- bxjsslide クラス： スライド用．jsarticle クラス + slide オプションに相当．
 
 #### 文書クラスの指定 {#v3b1d61c}
 
 BXJS クラスを“標準設定”で使用する場合，\documentclass 命令を以下のように記述します．
 
 ```
- \docuemntclass[<エンジン>,<ドライバ>,ja=standard,<他オプション>...]{<クラス名>}
+\documentclass[<エンジン>,<ドライバ>,ja=standard,<他オプション>...]{<クラス名>}
 ```
 
 ここで &lt;クラス名> には先述の文書クラス名（bxjsarticle 等）の 1 つを指定します．
@@ -70,7 +70,7 @@ BXJS クラスを“標準設定”で使用する場合，\documentclass 命令
 
 その上で，必要最低限の設定（和文フォント設定など）が行われます．そのため，(u)pLaTeX を用いる時と同様に，「何も設定せずにいきなり本文（やプレアンブル）に日本語を書く」ことができます．
 
-#### 例 {#x483b172}
+#### 例（XeLaTeX + bxjsarticle クラス） {#x483b172}
 
 以下は，bxjsarticle クラスを用いた簡単な XeLaTeX 文書の例です．
 
@@ -96,6 +96,8 @@ BXJS クラスを“標準設定”で使用する場合，\documentclass 命令
 - (u)pLaTeX の場合と同様に，\textmc／\textgt で和文を明朝／ゴシックに切り替えられます．
 - JS クラス使用時と同様に，欧文がサンセリフ（\sffamily）に切り替わると連動して和文がゴシック（\gtfamily）に切り替わります．
 - 「現在の和文の全角幅」を表す単位 zw は (u)pLaTeX 以外では使えないので，代わりに \zw と書きます．
+
+#### 例（pdfLaTeX + bxjsslide クラス） {#g10102c6}
 
 以下は，bxjsslide クラスを用いた pdfLaTeX 文書（スライド）の例です．
 
