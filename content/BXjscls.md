@@ -75,10 +75,11 @@ BXJS クラスを“標準設定”で使用する場合，\documentclass 命令
 以下は，bxjsarticle クラスを用いた簡単な XeLaTeX 文書の例です．
 
 ```
+% 文字コードは UTF-8
 \documentclass[a4paper,xelatex,ja=standard]{bxjsarticle}% ドライバ指定は無し
 \usepackage{metalogo} % \XeLaTeX ロゴのため
 \title{{\XeLaTeX}で日本語文書}
-\author{七篠 権兵衛}
+\author{七篠\ 権兵衛}
 % \today の出力はJSクラスと同様に西暦になる
 \begin{document}
 \maketitle
@@ -96,21 +97,27 @@ BXJS クラスを“標準設定”で使用する場合，\documentclass 命令
 - (u)pLaTeX の場合と同様に，\textmc／\textgt で和文を明朝／ゴシックに切り替えられます．
 - JS クラス使用時と同様に，欧文がサンセリフ（\sffamily）に切り替わると連動して和文がゴシック（\gtfamily）に切り替わります．
 - 「現在の和文の全角幅」を表す単位 zw は (u)pLaTeX 以外では使えないので，代わりに \zw と書きます．
+- XeLaTeX および pdfLaTeX を使用する場合，空白文字の扱いが (u)pLaTeX とは多少異なります．
+    例えば，「七篠 権兵衛」のように和文文字の間に欧文空白を入れたい場合は，空白文字の前に \ が必要です．
 
 #### 例（pdfLaTeX + bxjsslide クラス） {#g10102c6}
 
 以下は，bxjsslide クラスを用いた pdfLaTeX 文書（スライド）の例です．
+この文書では出力 PDF に文書情報を付加するために hyperref パッケージを読み込んでいます．
+（BXjscls の v1.0a 以降が必要．）
 
 ```
+% 文字コードは UTF-8
 \documentclass[pdflatex,ja=standard]{bxjsslide}% ドライバ指定は無し
+\usepackage[colorlinks]{hyperref}
+\hypersetup{pdftitle={{pdf\LaTeX}で日本語文書},
+  pdfauthor={七篠権兵衛},
+  pdfkeywords={BXJSクラス}}
 \usepackage{color}
 \newcommand{\alert}[1]{\textcolor{red}{#1}}
 \title{{pdf\LaTeX}~で日本語文書}
-\author{七篠 権兵衛}
+\author{七篠\ 権兵衛}
 \begin{document}
-```
-
-```
 % タイトル
 \maketitle
 \newpage
@@ -172,12 +179,11 @@ base オプションで，基底フォントサイズ（\normalsize のフォン
 これに対して，「和文の \normalsize を特定のサイズになる」ように基底フォントサイズを設定するには jbase オプションを利用します．
 
 ```
-% 和文の \normalsize を2.75mm(=11Q)にする
-\documentclass[lualatex,b5paper,jbase=2.75mm,ja=standard]{bxjsbook}
+% 和文の \normalsize を11Qにする
+\documentclass[lualatex,b5paper,jbase=11Q,ja=standard]{bxjsbook}
 ```
 
-※ 単位“Q”は (u)pLaTeX 以外では使えません．
-またこの時点では“標準設定”が未完了のため，\jQ も使用できません．
+※ 単位“Q”は本来は (u)pLaTeX 特有のものですが，（v1.0a 以降では）base，jbase 指定に限って他のエンジンでも使用できます[^1]．
 
 #### 和文フォントのプリセット指定 {#uc956aaf}
 
@@ -213,7 +219,7 @@ base オプションで，基底フォントサイズ（\normalsize のフォン
 
 ```
 \documentclass[xelatex,a4paper,ja=standard]{bxjsarticle}
-% zxjafont の命令を用いて(Win8.1の)游フォントを指定する
+% zxjatype の命令を用いて(Win8.1の)游フォントを指定する
 \setCJKmainfont[BoldFont=YuMincho-DemiBold]{YuMincho-Regular}
 \setCJKsansfont[BoldFont=YuGothic-Bold]{YuGothic-Regular}
 ```
@@ -265,7 +271,7 @@ hyperref パッケージを利用して出力 PDF 文書に文書情報（しお
 
 BXJS クラスでは使用されるエンジンに応じて「正しい設定」が自動的に行われるようになっています．
 そのため，hyperref パッケージで unicode オプションを指定する必要はありません．（指定した場合も「正しい方」に補正される．）
-また，(u)pLaTeX + dvipdfmx の上で用いる時も，ほとんどの場合，pxjahyper パッケージの読込は不要です．[^1]
+また，(u)pLaTeX + dvipdfmx の上で用いる時も，ほとんどの場合，pxjahyper パッケージの読込は不要です．[^2]
 
 ※BXJS クラスが自動的に hyperref パッケージを読み込むことはありません．
 
@@ -276,13 +282,23 @@ BXJS クラスでは使用されるエンジンに応じて「正しい設定」
 このことには相応の理由があるのですが，一方でこの処理は以下のような不都合の原因となっています．
 
 - 文書中で指定する絶対の長さ（単位付数値）について単位に“true”をつける必要がある．（付けないと mag 設定により拡大縮小されてしまう．）
-- mag 設定は LaTeX ではほとんど用いられないため，実際に用いられた時にそれを想定していないパッケージが誤動作する．[^2]
+- mag 設定は LaTeX ではほとんど用いられないため，実際に用いられた時にそれを想定していないパッケージが誤動作する．[^3]
 
 BXJS クラスでは“版面拡大”について mag 設定以外の他の実現方法を提供していて，クラスオプション magstyle でそれを選択できます．
 
 - magstyle=mag（既定）： JS クラスと同様に，“版面拡大”のために mag 設定を用います．
 - magstyle=real： mag 設定を一切用いず，代わりに，全てのページレイアウトのパラメタの値を実際にスケールさせた値に置き換えます．
 - magstyle=xreal： real と同様の処理をし，さらにオプティカルサイズの補正のために NFSS にパッチを当てます．
+
+#### 和文間空白，和欧文間空白の設定 {#fc1b6217}
+
+全てのエンジンにおいて，\setkanjiskip 命令で和文間空白，\setxkanjiskip 命令で和欧文間空白の大きさを設定できます．
+値に em や \zw の単位を用いた場合は，フォントサイズの変更に追随します．
+
+```
+% 和欧文間空白を“八分空き”にする
+\setxkanjiskip{0.125em minus 0.042em}
+```
 
 #### エンジンの自動判定 {#u1ac124a}
 
@@ -323,8 +339,6 @@ BXJS クラスでは使用するエンジンの種類をオプションとして
 
 以下のように，BXJS クラス（“標準設定”）の XeLaTeX 文書で graphicx パッケージを xetex のドライバオプションを明示して読み込むとエラー <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
 
-***
-
 ```
 \documentclass[xelatex,ja=standard]{bxjsarticle}
 \usepackage[xetex]{graphicx}
@@ -333,13 +347,9 @@ BXJS クラスでは使用するエンジンの種類をオプションとして
 \end{document}
 ```
 
-***
-
 XeLaTeX の標準設定では zxjatype パッケージを通して fontspec パッケージが読み込まれるのですが，この fontspec が graphicx をオプション無しで読み込んでいるためエラーが発生します．
 
 graphicx の xetex オプション指定をはずすとタイプセットできます．
-
-***
 
 ```
 \documentclass[xelatex,ja=standard]{bxjsarticle}
@@ -348,8 +358,6 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 吾輩は猫である。
 \end{document}
 ```
-
-***
 
 ### 関連リンク {#f25f7b2d}
 
@@ -363,5 +371,6 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/bxjscls](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/bxjscls/?view=log)
 
-[^1]: 文書情報の文字列中に一部の特殊文字が含まれる場合には相変わらず必要になる．
-[^2]: 例えば hyperref の用紙サイズ機能が誤動作する．なお，BXJS クラスではその機能を無効化して問題を回避している．
+[^1]: この時点では“標準設定”が未完了のため，\jQ 命令は使用できません．
+[^2]: 文書情報の文字列中に一部の特殊文字が含まれる場合には相変わらず必要になる．
+[^3]: 例えば hyperref の用紙サイズ機能が誤動作する．なお，BXJS クラスではその機能を無効化して問題を回避している．
