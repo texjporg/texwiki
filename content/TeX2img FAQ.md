@@ -108,6 +108,13 @@ Operand stack:
 この場合は，チェックの ON/OFF を変更してみてください（Mac 版は毎回，Ghostscript 実行時に判定しているので，問題はないと思います）。
 また，「各種パスの推定」ボタンを押すと正しく設定されるはずです。
 
+### EPS ファイルを出力すると PostScript 言語が圧縮されていて読めない {#l3bf36cb}
+
+Ghostscript 9.14 以前では，epswrite デバイスを指定することでプレーンテキストの EPS ファイルを出力することが可能でした。Ghostscript 9.15 以降では，epswrite デバイスは廃止され，ページ記述部分が圧縮されたバイナリの EPS を出力する eps2write デバイスに置き換わりました。
+Ghostscript 9.15 以降ではプレーンテキストの EPS を出力する方法はありません。
+
+- [Ghostscript の EPS バイナリ出力への対処](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)
+
 ### アウトライン化に失敗する（あるいは Ghostscript 実行中に Error: /VMerror in --.pushpdf14devicefilter-- と出る） {#lb8a48e0}
 
 Ghostscript 9.14 以下では，ある種のソースで次のエラーが起こるようです。
@@ -515,12 +522,6 @@ px はピクセル，bp は big point です。
 のように書けば，本文全体が \begin{align\*} ... \end{align\*} で囲まれていることになり，そのまま入力すれば &amp; で位置揃えする複数行数式が使えます。
 
 ## 既知の問題（未解決） {#ddfe3887}
-
-### EPS ファイルを出力すると，PostScript 言語が圧縮されていて読めない {#l3bf36cb}
-
-Ghostscript 9.15 以降を利用している場合に，デフォルトでページ記述部分が圧縮されてバイナリになるために起こります。
-
-- [Ghostscript の EPS バイナリ出力への対処](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)
 
 ### Windows 版で EMF ファイルを出力すると破線が消える {#w156ec2a}
 
