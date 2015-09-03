@@ -35,7 +35,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
     - アウトラインをとった EPS ファイル
     - アウトラインをとった PDF ファイル
     - テキストを保持した PDF ファイル
-    - アウトラインをとった SVG ファイル
+    - アウトラインをとり，かつテキストも保持した SVG ファイル
     - アウトラインをとった EMF ファイル（Windows 版のみ．Mac 版は[補助ツール](http://island.geocities.jp/loveinequality/#eps2emf)で対応．）
 - ビットマップ画像
     - JPEG ファイル
@@ -51,6 +51,16 @@ PNG は背景を透過させることができます．（Mac 版は TIFF / GIF 
 ### 動作環境 {#environment}
 
 Windows, OS X
+
+### 対応エンジン・DVIware {#engines}
+
+汎用的に設計されているので，コンパイルして PDF または PS ファイルを出力する LaTeX 処理系ならば何でも対応できます．次のような処理系で動作確認済みです．
+
+- pdfLaTeX
+- LuaLaTeX
+- XeLaTeX
+- (u)pLaTeX + dvipdfmx
+- (u)pLaTeX + dvips
 
 ### お知らせ {#notice}
 
