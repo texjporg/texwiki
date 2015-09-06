@@ -335,21 +335,21 @@ BXJS クラスでは使用するエンジンの種類をオプションとして
 
 ### 不具合 {#x3d34063}
 
-#### graphicx に明示的に xetex オプションを指定して xelatex で処理すると ! LaTeX Error: Option clash for package graphicx. {#oe701641}
+#### BXJS クラスの“標準設定”使用時に graphicx にオプションを与えると XeLaTeX / LuaLaTeX で ! LaTeX Error: Option clash for package graphicx. {#oe701641}
 
-以下のように，BXJS クラス（“標準設定”）の XeLaTeX 文書で graphicx パッケージを xetex のドライバオプションを明示して読み込むとエラー <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
+以下のように，BXJS クラス（“標準設定”）の XeLaTeX / LuaLaTeX 文書で graphicx パッケージにオプションを与えて読み込むとエラー <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
 
 ```
 \documentclass[xelatex,ja=standard]{bxjsarticle}
-\usepackage[xetex]{graphicx}
+\usepackage[hiresbb]{graphicx}
 \begin{document}
 吾輩は猫である。
 \end{document}
 ```
 
-XeLaTeX の標準設定では zxjatype パッケージを通して fontspec パッケージが読み込まれるのですが，この fontspec が graphicx をオプション無しで読み込んでいるためエラーが発生します．
-
-graphicx の xetex オプション指定をはずすとタイプセットできます．
+BXJS クラスの XeLaTeX 用標準設定では zxjatype パッケージを通して fontspec パッケージが読み込まれるのですが，この fontspec が graphicx をオプション無しで読み込んでいるためエラーが発生します．
+LuaLaTeX 用標準設定でも fontspec が自動で読み込まれるため，エラーが発生します．
+オプションを除去すればエラーは発生しません．
 
 ```
 \documentclass[xelatex,ja=standard]{bxjsarticle}
@@ -358,6 +358,19 @@ graphicx の xetex オプション指定をはずすとタイプセットでき�
 吾輩は猫である。
 \end{document}
 ```
+
+現在の BXJS クラスではグローバルオプション（クラスオプション）にこれらのオプションを付けるという回避策をとることもできないため，次のようにすればよいでしょう．
+（最新の BXJS クラス (v1.0a) でも同様．）
+
+```
+\PassOptionsToPackage{hiresbb}{graphicx} % graphicx が読まれるときにオプションを渡せるように事前に書いておく
+\documentclass[xelatex,ja=standard]{bxjsarticle} % この段階で fontspec によって graphicx が読み込まれる
+\begin{document}
+吾輩は猫である。
+\end{document}
+```
+
+なお，graphicx の xetex ドライバ指定については明示指定しなくとも自動的に xetex.def が読まれますので，わざわざオプション指定しなくてもよいでしょう．
 
 ### 関連リンク {#f25f7b2d}
 
