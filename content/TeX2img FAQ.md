@@ -165,7 +165,8 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 プリアンブル設定で，例えば次のように用紙サイズを十分大きく縦長に指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52463.html)点に注意してください）。
 
 ```
-% compiler: platex
+% LaTeX compiler: platex
+% DVIware: dvipdfmx 
 \documentclass[fleqn]{jsarticle}
 \usepackage{amsmath,amssymb}
 \usepackage[dvipdfmx]{graphicx,color}
@@ -181,9 +182,16 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 のように，実行時にオプションを加えたい場合は，次のようにして可能です。
 
 - GUI 版：LaTeX や dvipdfmx のパス設定において，次のようにオプションを付与する。
-    - /path/to/platex --shell-escape
-    - /path/to/dvipdfmx -f ptex-ipaex.map
-- CUI 版：--compiler や --dvipdfmx オプションで --compiler "platex --shell-escape" --dvipdfmx "dvipdfmx -f ptex-ipaex.map" のように指定する。
+    - Mac 版
+        - /path/to/platex --shell-escape
+        - /path/to/dvipdfmx -f ptex-ipaex.map
+    - Windows 版
+        - "C:/path/to/platex.exe" --shell-escape
+        - "C:/path/to/dvipdfmx.exe" -f ptex-ipaex.map
+- CUI 版：--latex （Mac 版）--platex（Windows版）や --dvipdfmx オプションで
+    - Mac 版： --latex "platex --shell-escape" --dvipdfmx "dvipdfmx -f ptex-ipaex.map"
+    - Windows 版：--platex "\\"platex\\" --shell-escape" --dvipdfmx "\\"dvipdfmx\\" -f ptex-ipaex.map"
+        のように指定する。
 
 ### 一度生成した画像から元の TeX ソースを復元して再編集したい {#l45f6f82}
 
