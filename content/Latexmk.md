@@ -240,7 +240,6 @@ latexmk -gg -pdf hoge.tex
     - [https://gist.github.com/konn/8234466](https://gist.github.com/konn/8234466)
 - [latexmk | miyazakikenji](http://miyazakikenji.wordpress.com/2014/01/27/latexmk/)
 - [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
-- [LaTeX on SublimeText 2](http://izumin.hateblo.jp/entry/2013/05/09/230731)
 - [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
