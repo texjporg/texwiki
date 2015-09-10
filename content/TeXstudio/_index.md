@@ -163,10 +163,15 @@ Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字�
 
 ### OS X の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#ffe2f4b8}
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
+OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．<br>
+Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
+また、IMEソフトのgoogle日本語入力では文字入力時に円記号をBackslashに変更するオプションがあります. <br>
+これを有効にするとTeXstudioのテキストフィールドにはBackslashが入力されますが、実際には正しくBackslashの文字コードが送られないようです. <br>
+そのためTeXstudioがTeXコマンドを認識できず、自動補完機能が正常に機能しません. <br>
+以上からgoogle日本語入力を使用する際もKarabinerを併用する必要があります. <br>
 
 - [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
+- [Macで円記号の代わりにバックスラッシュをデフォルトにする](http://www.hsakurai.com/entry/2015/08/26/222753)
 
 <!-- - --  -->
 <!-- &color(#595857,#DFDFDF){%%%　&color(#FF0000,#DFDFDF){●}; &color(#FFD700,#DFDFDF){●}; &color(#C9C9C9,#DFDFDF){●};　　　　　　　　　　　　　　　　　　　　　　　　　　　　''Karabiner''　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
