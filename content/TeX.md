@@ -116,6 +116,7 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 #### 不具合 {#e730befe}
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b)：TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
+- [pTeX エンジンが Segmentation fault を起こす](http://qiita.com/doraTeX/items/7c28b93969a558b3e2a5)： pTeX version p3.7 で修正されました (\[[texlive\] Revision 38333](http://www.tug.org/svn/texlive?view=revision&revision=38333))
 
 #### バッドノウハウ {#hcd7e588}
 
@@ -125,7 +126,6 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [バッドノウハウと TeX と書籍組版](http://d.hatena.ne.jp/apkz/20040322/p1)
 - [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
     - [TeXソース内での全角スペースは有害](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700#p3831)
-- [表示的意味論の二重四角括弧の出し方，および latex のバッドノウハウについて](http://alohakun.blog7.fc2.com/blog-entry-302.html)
 - [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
 - [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
 
@@ -133,6 +133,7 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 
 #### TeXユーザの集い {#e38306bd}
 
+- [TeXユーザの集い 2015](http://texconf15.tumblr.com/)
 - [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
 - [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
 - [TeXユーザの集い 2011](http://oku.edu.mie-u.ac.jp/texconf11/)
