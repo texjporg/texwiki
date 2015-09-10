@@ -231,4 +231,4 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 - [MacTeXにおける実行ファイルの場所](http://d.hatena.ne.jp/seinzumtode/20141001/1412154972)
 - [BlueSkyTex](http://blueskytex.com/)
 
-[^1]: 以前は [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。
+[^1]: 2011年頃までは [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。なお，UpTeX.app は TeX Live のサブセットである BasicTeX をベースとして，2015年9月10日より開発再開しています。
