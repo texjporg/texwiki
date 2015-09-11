@@ -51,10 +51,9 @@ Windows 版 TeX2img がある日突然動かなくなるという現象が発生
 
 ### Mac 版でアップデートに失敗する・アップデート後に起動できない {#sbc4fdda}
 
-Mac 版 TeX2img は，Sparkle という自動アップデートのフレームワークを使っています。
-Mac 版 1.7.7 までに内包していた Sparkle の古いバージョンは Snow Leopard (OS X 10.6) に対応していましたが，Yosemite (OS X 10.10) ではアップデートに失敗していました。
-そこで，以降の TeX2img では新しい Sparkle を内包するようにしました。
-結果として Mac 版 TeX2img 1.7.8 以降の動作条件は Lion (OS X 10.7) 以上となりました（以降のバージョンでは，他の機能も 10.7 以上であることを前提として実装されています）。
+OSのバージョンとTeX2imgのバージョンの組み合わせ，あるいはパーミッション設定によっては，自動アップデートに失敗することがあります。自動アップデートに失敗する場合は，[公式サイト](http://island.geocities.jp/loveinequality/)から最新版をダウンロードして手動でアプリを差し替えてください。
+
+なお，自動アップデート機能は Lion (OS X 10.7) 以降で機能します。Snow Leopard (OS X 10.6) をお使いの場合は，[公式サイト](http://island.geocities.jp/loveinequality/)にて配布されている Ver.1.10.x 系列をご利用ください。自動アップデート機能をはじめ，Snow Leopard と互換性のない機能を削って，Snow Leopard で動くようにしたバージョンとなっています。
 
 ### Mac 版で ! Undefined control sequence. \UTF{xxxx} と出る {#xb2c033d}
 
@@ -186,12 +185,10 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
         - /path/to/platex --shell-escape
         - /path/to/dvipdfmx -f ptex-ipaex.map
     - Windows 版
-        - "C:/path/to/platex.exe" --shell-escape
-        - "C:/path/to/dvipdfmx.exe" -f ptex-ipaex.map
-- CUI 版：--latex （Mac 版）--platex（Windows版）や --dvipdfmx オプションで
-    - Mac 版： --latex "platex --shell-escape" --dvipdfmx "dvipdfmx -f ptex-ipaex.map"
-    - Windows 版：--platex "\\"platex\\" --shell-escape" --dvipdfmx "\\"dvipdfmx\\" -f ptex-ipaex.map"
-        のように指定する。
+        - C:/path/to/platex.exe --shell-escape
+        - C:/path/to/dvipdfmx.exe -f ptex-ipaex.map
+- CUI 版：--latex や --dvidriver オプションで --latex "platex --shell-escape" --dvidriver "dvipdfmx -f ptex-ipaex.map"
+    のように指定する。
 
 ### 一度生成した画像から元の TeX ソースを復元して再編集したい {#l45f6f82}
 
