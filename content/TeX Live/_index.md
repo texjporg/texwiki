@@ -57,6 +57,25 @@ TeX Live は OS ごとにインストール方法が異なります．
     - [BSD/NetBSD](/BSD/NetBSD/#texlive)
 - [Android](/Android/#texlive)
 
+### TeX Live のサブセット {#p06f63c2}
+
+TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
+さらに，パッケージの依存関係を解消しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
+これらの詳細は texlive.tlpdb というファイルを見ればわかります（たとえば /usr/local/texlive/2015/tlpkg/texlive.pdb など）．
+
+主なスキームには以下が挙げられます：
+
+- scheme-full ： TeX Live に含まれるすべてのパッケージをインストールします．
+- scheme-basic ： [LaTeX](/LaTeX/) を使うために必要最小限のパッケージ (collection-basic + collection-latex) をインストールします．
+- scheme-small ： scheme-basic に [XeTeX](/XeTeX/)，[MetaPost](/MetaPost/) といくつかの言語の推奨パッケージを追加したもの．
+- scheme-medium ： scheme-small に欧州の主要言語のパッケージなどを追加したもの．
+
+ここで挙げたスキームの例のうち，scheme-basic，scheme-small，scheme-medium には日本語の LaTeX 文書作成に必要なパッケージが含まれていません．
+日本語の LaTeX 文書を作成するためには scheme-full でインストールするか，各スキームでインストールした後に collection-langjapanese をインストールすることになります．
+
+なお，TeX Live ベースの OS X 専用ディストリビューションである [MacTeX](/MacTeX/) は scheme-full に，[BasicTeX](/BasicTeX/) は scheme-small にそれぞれ対応します．
+また，Windows 向けの TeX Live インストーラ (install-tl-windows.exe) の Simple Install は scheme-full に対応します．
+
 ## TeX Live の詳細情報 {#g496de09}
 
 以下は詳細情報です．開発者向け情報も含まれます． <!-- 初めて TeX Live をインストールするユーザにはあまり関係のないことだと判断し， --> <!-- 並べ替えました．インストール用の記事は OS ごとに個別に記載されていますので， --> <!-- 以下の内容はそちらの個別ページから必要に応じてリンクする形で． --> <!-- メンテナ向けの情報もこの下で十分ですよね？ -->
