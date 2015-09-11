@@ -41,13 +41,13 @@ TeX Live のインストールに関しては
 MacTeX は TeX Live をベースにした OS X 専用の TeX ディストリビューションです。
 TeX Live をフルインストールするなら MacTeX が便利です。
 TeX Live 本体に加え，統合環境 [TeXShop](/TeXShop/), [LaTeXiT](/LaTeXiT/) や [Ghostscript](/Ghostscript/) もインストールされます。
-詳細は [MacTeX](</TeX Live/Mac/#mactex>) を参照してください。
+詳細は [MacTeX](/MacTeX/) を参照してください。
 
 ### [BasicTeX](http://tug.org/mactex/morepackages.html) {#basictex}
 
 BasicTeX は TeX Live のサブセットで，OS X 専用の TeX ディストリビューションです。
 TeX Live をフルインストールしたくない場合は，この BasicTeX をインストールします。
-詳細は [BasicTeX](</TeX Live/Mac/#basictex>) を参照してください。
+詳細は [BasicTeX](/BasicTeX/) を参照してください。
 
 ## 統合環境やエディタのインストール {#editor}
 
