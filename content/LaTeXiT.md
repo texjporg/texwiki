@@ -10,7 +10,7 @@ pukiwiki: "LaTeXiT"
 ## [LaTeXiT](http://pierre.chachatelier.fr/latexit/) {#b58323c5}
 
 LaTeXiT は，TeX ソースコードをタイプセットして画像に変換するアプリケーションです．
-[MacTeX](</TeX Live/Mac/#mactex>) に標準で含まれています．
+[MacTeX](/MacTeX/) に標準で含まれています．
 
 <strong>公式サイト</strong>
 
