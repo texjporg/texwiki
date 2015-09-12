@@ -55,13 +55,13 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 TeX ディストリビューションごとの解説ページです．
 現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
-OS X 用の [MacTeX](</TeX Live/Mac/#mactex>) は TeX Live をベースにしたものです．
+OS X 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
 
 - <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux)
 - <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
-- <strong>[MacTeX](</TeX Live/Mac/#mactex>)</strong> (for OS X)
+- <strong>[MacTeX](/MacTeX/)</strong> (for OS X)
+- [BasicTeX](/BasicTeX/) (for OS X)
 - [MiKTeX](/MiKTeX/) (for Windows)
-- [BasicTeX](</TeX Live/Mac/#basictex>) (for OS X)
 
 ### インストール時のよくあるトラブル・勘違い {#l1a033e5}
 
