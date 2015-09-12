@@ -12,7 +12,7 @@ pukiwiki: "TeXShop"
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png,right,around,nolink,240x240,TeXShop) -->
 
-TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](</TeX Live/Mac/#mactex>) には標準で含まれています．
+TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標準で含まれています．
 
 <strong>公式 Web サイト</strong>
 
