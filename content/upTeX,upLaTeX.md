@@ -68,7 +68,7 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 ### 不具合 {#p35560b1}
 
-#### biblatex の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする {#g3e20a4e}
+#### [biblatex](/Biblatex/) の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする {#g3e20a4e}
 
 pbibtex を使用すると回避できます．
 
