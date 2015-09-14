@@ -458,10 +458,23 @@ PDF と JPEG や PNG などのラスタ画像を使う場合は，画像の物�
 あるいは，bmpsize パッケージを用いて画像サイズの自動取得を行います．
 
 ```
+ \usepackage[dvipdfmx]{graphicx}
  \usepackage{bmpsize}
 ```
 
-bmpsize パッケージは，外部プログラムを使用せずに JPEG, PNG, BMP のサイズを計算するので，効率が良いものです．
+bmpsize パッケージは，外部プログラムを使用せずに JPEG, PNG, BMP のサイズを計算するので，効率が良いものです．dvipdfmx と共に使用するときは，
+
+```
+ \usepackage[dvipdfmx]{graphicx}
+```
+
+の後に
+
+```
+ \usepackage{bmpsize}
+```
+
+とします．
 
 PDF の場合には，extractbb プログラムで抽出部分のサイズを計算します．extractbb プログラムの自動呼出し機能（設定方法は[こちら](</古い情報/#rf074b4b>)）が有効になっている場合には，パイプ機能が使用されるので，.xbb ファイルは作成されません．これが有効になっていない場合は手動で extractbb を起動し，あらかじめ .xbb ファイルを生成しておく必要があります．これを行うにはターミナル (コマンド プロンプト) から
 
