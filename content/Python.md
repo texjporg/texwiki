@@ -24,12 +24,12 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 ### インストール (Windows) {#y6c76d8e}
 
-#### 本家 Windows Installer {#vff4acd8}
+#### 本家 Windows executable installer {#vff4acd8}
 
-本家の Windows Installer の Python を C:\Python34 にインストールした場合は
+本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python35 にインストールした場合は
 
 ```
-;C:\Python34;C:\Python34\Scripts
+;%USERPROFILE%\AppData\Local\Programs\Python\Python35;%USERPROFILE%\AppData\Local\Programs\Python\Python35\Scripts
 ```
 
 を環境変数 PATH に追加します．
