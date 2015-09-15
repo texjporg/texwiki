@@ -24,7 +24,7 @@ Python 以外に [Ruby](/Ruby/) や Julia, Octave もサポートしています
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には含まれています．
 
 PythonTeX の利用には，パッケージ自体の他に [Python](/Python/) のインタプリタと [Pygments](http://pygments.org/) という Python モジュールが必要になります．
-Pygments は Python 3.4 以降では pip を使ってインストールできます．
+Pygments は pip を使ってインストールできます．
 
 ```
 pip install pygments
