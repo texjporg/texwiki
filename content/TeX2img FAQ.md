@@ -49,6 +49,8 @@ Windows 版 TeX2img がある日突然動かなくなるという現象が発生
 
 - TeX2img for Windows 1.5.3 での対処：[GetTempFileNameで「ファイルがあります」](http://abenori.blogspot.jp/2015/05/gettempfilename.html)
 
+最新バージョンでは改善されています．
+
 ### Mac 版でアップデートに失敗する・アップデート後に起動できない {#sbc4fdda}
 
 OSのバージョンとTeX2imgのバージョンの組み合わせ，あるいはパーミッション設定によっては，自動アップデートに失敗することがあります。自動アップデートに失敗する場合は，[公式サイト](http://island.geocities.jp/loveinequality/)から最新版をダウンロードして手動でアプリを差し替えてください。
