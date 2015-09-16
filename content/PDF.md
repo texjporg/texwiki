@@ -23,10 +23,7 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 ### PDF の作り方 {#w4991875}
 
 [PDFの作り方](</PDFの作り方/>) を参照．
-
-### PDF を扱うソフトウェア・ライブラリ {#mde22763}
-
-#### TeX から PDF を作成するツール {#d8e4c485}
+特に TeX から PDF を作成するツールとしては
 
 - upLaTeX + dvipdfmx
 - upLaTeX + dvips + ps2pdf (Ghostscript)
@@ -35,15 +32,11 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
 - [XeLaTeX](/XeTeX/)
-- 確認用 PDF ビューア →
-    [SumatraPDF](/SumatraPDF/),
-    [Skim](/Skim/),
-    [Evince](/Evince/),
-    [Okular](/Okular/),
-    [zathura](/zathura/),
-    [qpdfview](/qpdfview/)
 
+があります．
 詳細は [LaTeX で PDF](</PDFの作り方/#k0e3280f>) をご覧下さい．
+
+### PDF を扱うソフトウェア・ライブラリ {#mde22763}
 
 #### PDF 作成ソフト一覧 {#w48b82bc}
 
@@ -171,3 +164,4 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 - [Windows ストア アプリで PDF コンテンツをレンダリングする](http://msdn.microsoft.com/ja-jp/magazine/dn532207.aspx)
 - [手書きPDF入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
 - [今さら聞けない Adobe Acrobat &amp; PDF](http://m-school.biz/dev/acrobat-pdf/)
+- [詳細PDF入門 ー 実装して学ぼう！PDFファイルの構造とその書き方読み方](http://itchyny.hatenablog.com/entry/2015/09/16/100000)
