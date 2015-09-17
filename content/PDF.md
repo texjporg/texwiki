@@ -25,9 +25,9 @@ PDF (Portable Document Format) は [PostScript](/PostScript/) をベースに作
 [PDFの作り方](</PDFの作り方/>) を参照．
 特に TeX から PDF を作成するツールとしては
 
-- upLaTeX + dvipdfmx
-- upLaTeX + dvips + ps2pdf (Ghostscript)
-- upLaTeX + dvips + Adobe Acrobat Distiller DC
+- pLaTeX/upLaTeX + dvipdfmx
+- pLaTeX/upLaTeX + dvips + ps2pdf (Ghostscript)
+- pLaTeX/upLaTeX + dvips + Adobe Acrobat Distiller DC
 - [pLaTeX-ng](/pTeX-ng/)
 - [pdfLaTeX](/pdfTeX/)
 - [LuaLaTeX](/LuaTeX/)
