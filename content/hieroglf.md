@@ -12,13 +12,18 @@ pukiwiki: "hieroglf"
 - [http://www.ctan.org/pkg/hieroglf](http://www.ctan.org/pkg/hieroglf)
 - [http://www.ctan.org/pkg/hieroglyph](http://www.ctan.org/pkg/hieroglyph)
 
-古代エジプトの象形文字フォントが利用できるパッケージをご紹介いたします。
+### hieroglf とは {#t53f65cd}
 
-Peter Wilson 氏による，紀元前3000年から紀元400年頃に用いられた
-古代エジプトの象形文字フォント (hieroglyphic) を利用するためのパッケージです。
-これは
-[Serge Rosmorduc 氏](http://web.archive.org/web/20121014125155/http://webperso.iut.univ-paris8.fr/~rosmord/archives/)による体系的な
-hieroglyph パッケージから約75程のエジプトの象形文字を集めたものでありまして，この象形文字から字訳文字への翻訳コマンドも作成してあります。
+hieroglf は，Peter Wilson 氏による，紀元前3000年から紀元400年頃に用いられた古代エジプトの象形文字フォント (hieroglyphic) を利用するためのパッケージです。
+これは [Serge Rosmorduc 氏](http://web.archive.org/web/20121014125155/http://webperso.iut.univ-paris8.fr/~rosmord/archives/)による体系的な hieroglyph パッケージから約75程のエジプトの象形文字を集めたものでありまして，この象形文字から字訳文字への翻訳コマンドも作成してあります。
 
-Peter Wilson 氏は2000年9月頃からパッケージを公開しており，
-その後改良が続けられています。
+Peter Wilson 氏は2000年9月頃からパッケージを公開しており，その後改良が続けられています。
+
+### 使いかた {#qc18e336}
+
+TeX における[多書体利用の第一人者](http://www.khotta.org/ghost/package.html)でもあられる[堀田先生](http://www.khotta.org/)（愛知教育大・数学）が，hieroglf の利用方法についての詳細な解説をされています。
+
+- [古代エジプトの象形文字フォントの利用について](http://www.khotta.org/ghost/hieroglf.html) （大学内のメインサイト）
+- [古代エジプトの象形文字フォントの利用について](http://khotta.digiweb.jp/ghost/hieroglf.html) （上記のミラーサイト）
+
+少々古い解説ですが，hieroglf パッケージの必要なファイルをまとめたアーカイブからのインストール方法も解説されています。
