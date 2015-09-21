@@ -26,6 +26,15 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
 [LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．
 
+#### Un\*x 系 OS の場合 {#t625c951}
+
+texlive をインストールした状態では、luajittex は使えますが、luajitlatex を使用するためには、以下のような手順で設定を行う必要があります。
+
+1. kpsewhich fmtutil.cnf で fmtutil.cnf の path を探す。
+1. fmtutil.cnf をエディタで開き、luajitlatex を検索。該当行の行頭は #! でコメントアウトされているので、これを消して行を有効にする。
+1. fmtutil-sys --byfmt luajitlatex を実行。
+1. luajittex --fmt=luajitlatex.fmt foo.tex で latex として使用可。luajitlatex として使用したい場合は alias として設定すると良い。
+
 ### 使い方 {#vad7d54e}
 
 基本的には通常の LuaTeX と同様に使うことができます．
