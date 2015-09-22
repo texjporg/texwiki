@@ -27,6 +27,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 #### お知らせ {#w2f34805}
 
+- [Ports svn r392534 UPDATING 20150720](http://svnweb.freebsd.org/ports/head/UPDATING?r1=391745&r2=392534) にて，Ports は TeX Live 2015 ベースとなりました．
 - [Ports svn r365720 UPDATING 20140823](http://svnweb.freebsd.org/ports/head/UPDATING?r1=365599&r2=365720) にて，Ports は TeX Live 2014 ベースとなりました．
 - [Ports svn r362648 UPDATING 20140727](http://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
 
