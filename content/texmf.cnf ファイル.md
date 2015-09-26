@@ -48,6 +48,19 @@ c:/texlive/2015/texmf-dist/web2c/texmf.cnf
 このように複数の有効な texmf.cnf がある場合、前にあるものほど高い優先度をもちます。
 つまり、後ろ（低い優先度）の texmf.cnf で設定された値は、前（高い優先度）の texmf.cnf によって上書きされます。
 TeX Live においては、この後ろが「マスタの設定ファイル」、前が「カスタム用設定ファイル」であり、ユーザが設定をカスタマイズしたい場合は、c:/texlive/2015/texmf.cnf の方を編集します。
+TeX Live のバージョンを跨いで有効であって，上書きされないものは
+
+```
+$SELFAUTOGRANDPARENT/texmf-local/web2c/texmf.cnf
+```
+
+つまり，上の例では
+
+```
+c:/texlive/texmf-local/web2c/texmf.cnf
+```
+
+です。
 
 一方、W32TeX においては既定では次のように「マスタの設定ファイル」しかありません。
 
