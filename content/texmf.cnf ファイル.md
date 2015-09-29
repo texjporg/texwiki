@@ -30,6 +30,14 @@ Kpathsea における設定データの構造は，OS の環境変数のモデ�
 TeX 環境での設定項目（変数）の多くは OS の実行パス（PATH 変数）に類似した形式の検索パスリストです。
 Kpathsea は，このような変数について単に検索パスの値を格納するのみでなく，実際にファイルの検索を行う機能も備えています。
 
+### 公式マニュアル {#g7e4e8e4}
+
+TeX Live や W32TeX では、以下のコマンドで Kpathsea ライブラリの公式マニュアルを開くことができます。
+
+```
+texdoc kpathsea
+```
+
 ### texmf.cnf ファイルの場所 {#r5008864}
 
 現在有効な texmf.cnf ファイルのある場所（これ自体も Kpathsea で管理されている）は次のコマンドで知ることができます。
@@ -186,7 +194,7 @@ kpsewhich -var-value=guess_input_kanji_encoding -progname=uplatex
 #==>「0」と出力
 ```
 
-#### 複数の texmf.cnf の間の優先順位 {#x363c8bc}
+### 複数の texmf.cnf の間の優先順位 {#x363c8bc}
 
 先述の通り，texmf.cnf は複数配置することが可能です。
 仮に
