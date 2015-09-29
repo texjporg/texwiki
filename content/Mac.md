@@ -47,7 +47,7 @@ TeX Live 本体に加え，統合環境 [TeXShop](/TeXShop/), [LaTeXiT](/LaTeXiT
 
 BasicTeX は TeX Live のサブセットで，OS X 専用の TeX ディストリビューションです。
 TeX Live をフルインストールしたくない場合は，この BasicTeX をインストールします。
-詳細は [BasicTeX](/BasicTeX/) を参照してください。<strong>OS X El Capitan</strong> にも対応している<strong>小川版 Drag &amp; Drop UpTeX</strong> は BasicTeX をベースにしています。
+詳細は [BasicTeX](/BasicTeX/) を参照してください。<strong>OS X El Capitan</strong> にも対応[^2]している<strong>小川版 Drag &amp; Drop UpTeX</strong> は BasicTeX をベースにしています。
 
 ## 統合環境やエディタのインストール {#editor}
 
@@ -232,3 +232,4 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 - [BlueSkyTex](http://blueskytex.com/)
 
 [^1]: 2011年頃までは [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。なお，UpTeX.app は TeX Live のサブセットである BasicTeX をベースとして，2015年9月10日より開発再開しています。
+[^2]: ただし，ここでいう El Capitan 対応とは「pTeX / upTeX でヒラギノフォントを利用する設定が完了していること」を指します。游フォントの利用や [LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを利用することには未対応ですのでご注意ください。
