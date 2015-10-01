@@ -57,6 +57,7 @@ TeX Wiki は誰でも編集できます．
 
 ライトな LaTeX ユーザは，当面の間 El Capitan にアップグレードしないことをおすすめします。
 詳細は [OS X El Capitan に向けての注意](</TeX Live/Mac/#r55ca802>) も参照してください。
+上の情報を知らずに El Capitan をインストールしてしまった方は[こちら](</TeX Live/Mac/#y64b5891>)を参照してください。
 
 なお，MacTeX-2014 および BasicTeX-2014 以前をインストールしている場合，El Capitan にアップグレードすると /usr/texbin に作成されているシンボリックリンクは /usr/texbin/ から /Previous System/usr/texbin/ に強制移転されてしまいます。
 
