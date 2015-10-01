@@ -43,7 +43,7 @@ TeX Live のアップデートは，同じく環境設定パネルから「TeX �
 
 ### （本家）BasicTeX のインストール {#i5822f30}
 
-[More Packages - MacTeX](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](</TeX Live/Mac/#mirror>) から BasicTeX.pkg をダウンロードします。
+[More Packages - MacTeX](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](/MacTeX/#mirror) から BasicTeX.pkg をダウンロードします。
 
 BasicTeX のインストールの概略は以下のとおりです。
 
