@@ -58,28 +58,10 @@ Windows, OS X, Linux
 - [https://inkscape.org/download/](https://inkscape.org/download/)
 - [http://www.partha.com/](http://www.partha.com/)
 
-## 注意点 {#tedcde5e}
+## 不具合 {#caadafb3}
 
-### Windows 版 Inkscape 0.91  のメニューのフォントがメイリオではない → inkscape\etc\pango\pango.aliases を作成して sans の先頭に meiryo, を追加する {#i6aee1d9}
-
-- [Inkscape Portable の日本語化とフォントを変更する](http://mekemoke.jp/2013/04/1159.html)
-- [Windows 版 Inkscape の メニューフォント設定方法](http://www.ginshali.info/2011/12/windows-inkscape.html)
-
-Windows 版 Inkscape 0.91 を起動するとメニューのフォントがメイリオではなく別のフォントが使用されていました．
-
-inkscape\etc\pango\pango.aliases を作成して
-
-```
-courier = "courier new"
-
-tahoma = "tahoma,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,latha,mangal,raavi"
-sans = "meiryo,arial,browallia new,mingliu,simhei,gulimche,ms gothic,kartika,latha,mangal,raavi"
-serif = "times new roman,angsana new,mingliu,simsun,gulimche,ms gothic,kartika,latha,mangal,raavi"
-mono = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,kartika,latha,mangal,raavi"
-monospace = "courier new,courier monothai,mingliu,simsun,gulimche,ms gothic,kartika,latha,mangal,raavi"
-```
-
-を記述して Inkscape を再起動するとメイリオで表示されるようになりました．
+- [https://bugs.launchpad.net/inkscape](https://bugs.launchpad.net/inkscape)
+- [Bug #1502126 “OSX 10.11 El Capitan can't run LaTeX extension” : Bugs : Inkscape](https://bugs.launchpad.net/inkscape/+bug/1502126) → [packaging/macosx: fix for bug #1502126 (support MacTeX on El Capitan)](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/revision/14391)
 
 ## PDF/EPS/PS + LaTeX {#d6b72996}
 
