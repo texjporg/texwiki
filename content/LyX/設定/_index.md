@@ -204,7 +204,7 @@ Input book.layout
 
 レイアウトファイルを
 
-- %USERPROFILE%\AppData\Roaming\LyX2.1\layouts\ (例えば C:\Users\Lydia\AppData\Roaming\LyX2.1\layouts\\)
+- %APPDATA%\LyX2.1\layouts\\
     <!-- -C:\Users\Lydia\AppData\Local\LyX 2.1\Resources\layouts\ -->
     <!-- -C:\Program Files\LyX 2.1\Resources\layouts\ (32-bit Windows の場合) -->
     <!-- -C:\Program Files (x86)\LyX 2.1\Resources\layouts\ (64-bit Windows の場合) -->
@@ -837,7 +837,6 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 ## [Inkscape](/Inkscape/) との連携 {#r74179c0}
 
 - [LyXとInkscapeを連携させる](http://shogo82148.hatenablog.com/entry/20100521/1274429760)
-- [LyXとInkscapeを連携させる](http://ec16090p.qlookblog.net/2010/05/21.html)
 - [LyX wiki | Tips / UseInkscapeSVGImages](http://wiki.lyx.org/Tips/UseInkscapeSVGImages)
 
 [^1]: 操作画面 (メニューやダイアログなど) 用言語を選択してください。
