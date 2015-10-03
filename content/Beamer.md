@@ -22,7 +22,7 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 ### ChangeLog {#td463767}
 
-[コミットログ](https://bitbucket.org/rivanvx/beamer/changesets) を参照．
+[コミットログ](https://bitbucket.org/rivanvx/beamer/commits/) を参照．
 
 ### 利用可能な TeX ディストリビューション {#k1d828cf}
 
