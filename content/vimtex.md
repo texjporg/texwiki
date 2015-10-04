@@ -49,12 +49,17 @@ let g:vimtex_latexmk_background = 1
 let g:vimtex_latexmk_options = '-pdfdvi'
 "let g:vimtex_latexmk_options = '-pdfps'
 let g:vimtex_view_sumatrapdf_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
-let g:vimtex_view_general_viewer = 'texworks'
+"let g:vimtex_view_general_viewer = 'texworks'
+let g:vimtex_view_general_viewer = 'SumatraPDF'
+let g:vimtex_view_general_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\"" -forward-search @tex @line @pdf'
+let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 ```
 
 ***
 
 ### OS X {#t8820201}
+
+- [vim-latex/vim-latexからlervag/vimtexに乗り換えた話](http://inaka-boyaki.hatenablog.com/entry/2015/09/15/234310)
 
 ***
 
@@ -67,7 +72,9 @@ let g:vimtex_latexmk_background = 1
 "let g:vimtex_latexmk_options = '-pdf'
 let g:vimtex_latexmk_options = '-pdfdvi'
 "let g:vimtex_latexmk_options = '-pdfps'
-let g:vimtex_view_general_viewer = 'open'
+"let g:vimtex_view_general_viewer = 'open'
+let g:vimtex_view_general_viewer = '/Applications/Skim.app/Contents/SharedSupport/displayline'
+let g:vimtex_view_general_options = '@line @pdf @tex'
 ```
 
 ***
@@ -86,6 +93,12 @@ let g:vimtex_latexmk_background = 1
 let g:vimtex_latexmk_options = '-pdfdvi'
 "let g:vimtex_latexmk_options = '-pdfps'
 let g:vimtex_view_general_viewer = 'xdg-open'
+"let g:vimtex_view_general_viewer = 'okular'
+"let g:vimtex_view_general_options = '--unique @pdf\#src:@line@tex'
+"let g:vimtex_view_general_options_latexmk = '--unique'
+"let g:vimtex_view_general_viewer = 'qpdfview'
+"let g:vimtex_view_general_options = '--unique @pdf\#src:@tex:@line:@col'
+"let g:vimtex_view_general_options_latexmk = '--unique'
 ```
 
 ***
