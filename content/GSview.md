@@ -81,4 +81,5 @@ jisB8=181,258
 
 ### 関連リンク {#yb0d4b4b}
 
+- [gs-9.18 for windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1678)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
