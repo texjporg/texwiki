@@ -7,7 +7,7 @@ pukiwiki: "Ghostscript/OS X"
 
 # Ghostscript/OS X
 
-[Ghostscript](/Ghostscript/) > OS X
+[Ghostscript](/Ghostscript/) > [OS X](/Mac/)
 
 ## Ghostscript for OS X {#ccf6bfc2}
 
@@ -16,6 +16,7 @@ pukiwiki: "Ghostscript/OS X"
 ### 配布先 {#see6fdd7}
 
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
+    - [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。](http://www.muskmelon.jp/?p=1177)
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
 - [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb)
