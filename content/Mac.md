@@ -24,30 +24,16 @@ OS X (Mac) に TeX をインストールして使えるようになるまでの�
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
 OS X 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
-
+[MacTeX](/MacTeX/) や [BasicTeX](/BasicTeX/) というディストリビューションも，この TeX Live をベースとしたものです。
 奥村先生の[［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)には TeX Live 2013 が収録されています。
 
-TeX Live のインストールに関しては
+OS X への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
+TUG による公式サイト
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-も参照してください。
-
-この TeX Live をベースにした以下のディストリビューションが人気です。
-
-### [MacTeX](http://tug.org/mactex/) {#mactex}
-
-MacTeX は TeX Live をベースにした OS X 専用の TeX ディストリビューションです。
-TeX Live をフルインストールするなら MacTeX が便利です。
-TeX Live 本体に加え，統合環境 [TeXShop](/TeXShop/), [LaTeXiT](/LaTeXiT/) や [Ghostscript](/Ghostscript/) もインストールされます。
-詳細は [MacTeX](/MacTeX/) を参照してください。（ただし，和文フォント回りが大幅に変更されている <strong>OS X El Capitan</strong> では，こちらのページの現在の設定ではヒラギノフォントを利用できません。）
-
-### [BasicTeX](http://tug.org/mactex/morepackages.html) {#basictex}
-
-BasicTeX は TeX Live のサブセットで，OS X 専用の TeX ディストリビューションです。
-TeX Live をフルインストールしたくない場合は，この BasicTeX をインストールします。
-詳細は [BasicTeX](/BasicTeX/) を参照してください。<strong>OS X El Capitan</strong> にも対応[^2]している<strong>小川版 Drag &amp; Drop UpTeX</strong> は BasicTeX をベースにしています。
+にも情報があります。
 
 ## 統合環境やエディタのインストール {#editor}
 
@@ -232,4 +218,3 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 - [BlueSkyTex](http://blueskytex.com/)
 
 [^1]: 2011年頃までは [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。なお，UpTeX.app は TeX Live のサブセットである BasicTeX をベースとして，2015年9月10日より開発再開しています。
-[^2]: ただし，ここでいう El Capitan 対応とは「pTeX / upTeX でヒラギノフォントを利用する設定が完了していること」を指します。游フォントの利用や [LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを利用することには未対応ですのでご注意ください。
