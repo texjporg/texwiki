@@ -10,6 +10,7 @@ pukiwiki: "GSview"
 ## [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
+紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
