@@ -22,8 +22,7 @@ collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/
 
 ### [小川版 Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている BasicTeX + texlive-collection-langjapanese ベースの OS X 専用 TeX ディストリビューションです。
-[^1]
+Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている BasicTeX + texlive-collection-langjapanese ベースの OS X 専用 TeX ディストリビューションです[^1]。
 OS X 10.10 Yosemite / 10.11 El Capitan 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
 
