@@ -56,7 +56,7 @@ TeX Wiki は誰でも編集できます．
 - 游フォントを利用することは困難です（游明朝体のフォントの形式が特殊であるため，現状では工夫しても限定的な利用しかできません）。
 
 これらのことを考慮し，El Capitan へのアップグレードは慎重に行ってください。
-詳細は [OS X El Capitan に向けての注意](</TeX Live/Mac/#r55ca802>) も参照してください。
+詳細は [OS X El Capitan への対応](</TeX Live/Mac/#elcapitan>) も参照してください。
 上の情報を知らずに El Capitan をインストールしてしまった方は[こちら](</TeX Live/Mac/#y64b5891>)を参照してください。
 
 なお，MacTeX-2014 および BasicTeX-2014 以前をインストールしている場合，El Capitan にアップグレードすると /usr/texbin に作成されているシンボリックリンクは /usr/texbin/ から /Previous System/usr/texbin/ に強制移転されてしまいます。
