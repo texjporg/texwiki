@@ -12,6 +12,9 @@ pukiwiki: "LuaTeX"
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
 が使える TeX です．派生版として LuaJITTeX があります．
 
+LuaTeX は 2020 年頃を目標として開発が進んでおり，TeX Live 2015 には beta-0.80.0 が収録されています。
+いまだベータ版なので仕様変更が相次いでいますが，[pdfTeX](/pdfTeX/) の後継として期待されています。
+
 ***
 
 ***
@@ -27,6 +30,17 @@ LuaLaTeX では [BXjscls](/BXjscls/) が使用可能です．
 - [recursive-input.sty](https://github.com/chemicl-t/recursive-imput) フォルダを指定すると、そのフォルダ内を再帰的に探索して全てのファイルを\inputするパッケージ。
 
 ### お知らせ {#t3177d69}
+
+#### LuaTeX のプリミティブの変更 {#f5c38821}
+
+LuaTeX beta-0.81.0 では多くのプリミティブ名が変更されました。
+詳細は [NEWS (r5348)](https://foundry.supelec.fr/scm/viewvc.php/trunk/source/texk/web2c/luatexdir/NEWS?view=markup&revision=5348&root=luatex) を参照してください。
+
+特に LuaTeX beta-0.81.0 で \pdftexversion が未定義になったことで，いくつかのパッケージに影響すると予想されます。
+LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していましたが，TeX Live 2015 の beta-0.80.0 では \luatexversion と同じ値に定義されていました。
+
+- lualatex で不具合 [forum:1681](https://okumuralab.org/tex/mod/forum/discuss.php?d=1681)
+- [LuaTeX の “pdfTeX のバージョン”がアレな件](http://d.hatena.ne.jp/zrbabbler/20150720/1437366487)，[補足](http://d.hatena.ne.jp/zrbabbler/20150722/1437549646)
 
 #### W32TeX における LuaTeX, LuaJITTEX と日本語ファイル名 {#r425bd72}
 
