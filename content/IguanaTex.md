@@ -9,8 +9,8 @@ pukiwiki: "IguanaTex"
 
 ## IguanaTex {#q71cd1c4}
 
-IguanaTex は LaTeX ソースをタイプセットし，PowerPoint に貼り付けることができる PowerPoint アドインです．
-pLaTeX にも対応しているので日本語も使用できます．
+IguanaTex は LaTeX ソースをタイプセットし，PowerPoint に貼り付けることができる PowerPoint アドインです。
+pLaTeX にも対応しているので日本語も使用できます。
 
 ### 公式サイト {#n7a418b3}
 
@@ -45,6 +45,6 @@ Creative Commons Attribution 3.0 License
 
 #### 変更履歴 {#id065069}
 
-[changelog](http://www.jonathanleroux.org/software/iguanatex/change.log)
+- [changelog](http://www.jonathanleroux.org/software/iguanatex/change.log)
 
 [^1]: [pdfLaTeX](/pdfTeX/) で [LaTeX-CJK](/LaTeX-CJK/) を使えば日本語を扱えないことはありませんが，綺麗な結果は得られません。
