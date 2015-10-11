@@ -35,13 +35,13 @@ TeX Live をインストールした状態では、luajittex は使えますが�
 1. fmtutil-sys --byfmt luajitlatex を実行。
 1. luajittex --fmt=luajitlatex.fmt foo.tex で latex として使用可。
 
-luajitlatex として使用したい場合は、Un\*x 系 OS（Mac OS X を含む）の場合は alias として設定するとよい。Windows の場合は、luajitlatex.exe なる実行ファイルが
-入れてあるはずである。よって通常のように使用できるはず。もし luajitlatex.exe が
-なかったら
+Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Un\*x 系 OS（Mac OS X を含む）の場合は、~/.bashrc 等に、
 
-> luajittex --fmt=luajitlatex.fmt %1
+```
+   alias luajitlatex='luajittex --fmt=luajitlatex.fmt'
+```
 
-のようなバッチファイル luajitlatex.bat を作成すればよい。
+を追加して alias として設定するとよいでしょう。
 
 ### 使い方 {#vad7d54e}
 
