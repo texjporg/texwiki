@@ -224,6 +224,9 @@ dvips を用いて PDF 化する際，しおりが文字化けしないように
 
 ### リンク集 {#fd89856f}
 
+- TeXLiveのdvips [forum:678](https://okumuralab.org/tex/mod/forum/discuss.php?d=678)
+- pdfへのフォントの埋め込みとPSプリンタ [qa:38540](https://okumuralab.org/~okumura/texfaq/qa/38540.html)
+
 #### ChangeLog {#o96c7d5c}
 
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
