@@ -26,14 +26,18 @@ GNU Ghostscript 7.07 は，日本の gs-cjk プロジェクトの寄与を含み
 <!-- 古すぎると判断した記述をコメントアウトあるいは削除しています。 -->
 <!-- いまだ有効であれば表に出してください。 - - 2015/10/14 アセトアミノフェン -->
 
-***
+<!-- なお，個人的な作業メモが -->
+<!-- http://d.hatena.ne.jp/acetaminophen/searchdiary?word=ghostscript+7.07 -->
+<!-- に大量にあります。 -->
 
 ***
 
+***
+
+<!-- ここは古い記述の残りもの…残すか消すか？ -->
 <!-- Mac OS X (+ X11) でもまったく同様にインストールできます -->
 <!-- （Mac OS X 10.4 では ./configure - -without-gimp-print -->
 <!-- で Makefile の XLIBS=Xt Xext X11 は XLIBS=Xt SM ICE Xext X11 に直しました）。 -->
-
 <!-- [[ESP Ghostscript:http://www.cups.org/ghostscript.php]] はまだ試していません。 -->
 
 ### ダウンロード {#k0bb1098}
@@ -46,7 +50,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 - GNU Ghostscript 7.07 のソース
     - ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
-- 依存ライブラリ (jpeg, libpng, zlib)
+- 依存ライブラリ (jpeg, libpng, zlib) ← zlib-1.2.0 以降は infblock.c がないため make でエラーが出る
     - jpegsrc.v6b.tar.gz
     - libpng-1.0.2.tar.gz
     - zlib-1.1.3.tar.gz
@@ -103,7 +107,7 @@ Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
 
 #### 参考：Ghostscript による PDF 作成 {#zce2e51d}
 
-次の作業は Ghostscript 7.07 単独で日本語の PDF を作る場合，および dvipdfmx 処理する EPS ファイルに日本語が含まれている場合に必要です。
+Ghostscript 7.07 単独で日本語の PDF を作る場合や，dvipdfmx 処理する EPS ファイルに日本語が含まれている場合など，CJK フォントを扱うためには作業が必要です。
 EPS ファイルに日本語が含まれていない（あるいは日本語がアウトライン化されている）ならば，dvipdfmx で処理する本文にいくら日本語が使われていても，以下の作業は特に不要です。
 
 リンクから CMap Resources の5つの zip アーカイブをダウンロードし，解凍してでてくる CMap フォルダの中身をすべて C:\gs\gs7.07\Resource\CMap というフォルダ（なければ作成）の中に配置します。
@@ -163,6 +167,10 @@ $ tar xvzf ghostscript-7.07.tar.gz
 $ cd ghostscript-7.07
 $ tar xvzf jpegsrc.v6b.tar.gz
 $ mv jpeg-6b jpeg
+$ tar xvzf libpng-1.0.2.tar.gz
+$ mv libpng-1.0.2 libpng
+$ tar xvzf zlib-1.1.3.tar.gz
+$ mv zlib-1.1.3 zilb
 $ ./configure --prefix=/usr/local/teTeX
 ```
 
@@ -203,6 +211,9 @@ $ cd /usr/local/teTeX/share/ghostscript
 $ tar xvzf ghostscript-fonts-std-8.11.tar.gz
 $ tar xvzf gnu-gs-fonts-other-6.0.tar.gz
 ```
+
+さらに，CJK フォントを扱うためには作業が必要です。
+リンクから CMap Resources の5つの zip アーカイブをダウンロードし，解凍してでてくる CMap フォルダの中身をすべて /usr/local/teTeX/share/ghostscript/gs7.07/Resource/CMap というフォルダ（なければ作成）の中に配置します。
 
 ### 和文フォントの設定 {#l9833aef}
 
@@ -334,7 +345,7 @@ Ghostscript にはかつて（2006年頃まで），ライセンス形態によ�
 - リリースから一定の期間が経つと，よりアドバンテージのある最新バージョンを AFPL とするかわりに，古いバージョンに若干の修正を施したものを GPL Ghostscript としてリリースする
 
 という慣習でした[^2]。
-しかし AFPL Ghostscript は廃れてしまい，現在では GPL Ghostscript が最新バージョンとして開発されています。
+しかし AFPL Ghostscript は廃れてしまい，2006年の gs8.54 以降は GPL Ghostscript が最新バージョンとして開発されています（[参考](http://www.advogato.org/person/raph/diary.html?start=411)）。
 ライセンスとバージョン番号の関係は [Ghostscript - pteTeX Wiki](http://tutimura.ath.cx/ptetex/?Ghostscript) で詳しく説明されています。
 
 Ghostscript は長らく日本語に対応しておらず，日本語化・CJK 化がさまざまな有志によって取り組まれてきました。
@@ -373,7 +384,7 @@ GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクで�
 - [Overview of Ghostscript](http://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
 - [GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
-- [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（Cygwin 向け：黒木さん）
+- [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
 - [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090130073812/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
 - [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の OS X 版を配布
