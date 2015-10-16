@@ -77,9 +77,9 @@ GSview は [CTAN](/CTAN/) から提供されなくなりました．
 
 ### 縦書きに関して {#o39e11da}
 
-GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い (縦書き) に優れています．
+GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています．
 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました．
-Ghostscript 7.07 と比べて，CJK （中国語・日本語・韓国語）の縦書きへの対応が不充分です．
+Ghostscript 7.07 と比べて，CJK（中国語・日本語・韓国語）の縦書きへの対応が不充分です．
 CID フォントや Windows API を使った日本語の表示はできます．
 Ghostscript 7.07 には脆弱性が存在しますので，縦書きが必要ない場合は最新版の Ghostscript を使用してください．
 
@@ -107,11 +107,11 @@ Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View
 - [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/gs.html)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
-- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/) (山田さん)
-- [情報工学特別講義 II](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/)
-    - [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
-    - [A Guide to gs-cjk Project](http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
-- [http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc](http://web.archiveorange.com/archive/v/vAtTlka8G6c0C2UJ4Kkr#GkcD2kaa2gXJUkc)
+- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)（山田さん）
+- [情報工学特別講義 II](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/)
+    <!-- 旧 URL は http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/ -->
+    - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
+    - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
 
 #### License {#g7897d81}
 
@@ -132,6 +132,7 @@ Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View
     - [コミットログ](http://git.ghostscript.com/?p=ghostpdl.git;a=shortlog)
 
 <!-- **Comment [#z51688d5] -->
+<!--  -->
 <!-- - 「PDF への欧文用フォントの埋め込み制御」で書き換えすべきファイルが，gs9.00，8.70では"Resource/Init/gs_pdfwr.ps"に移動しています． - - 13th-note &new{2010-10-12 (火) 15:51:13}; -->
 <!-- - 「PDFへの欧文用フォントの埋め込み制御」でgs_pdfwr.psについて/.standardfontsを書き換えずに，"/.distillersettings mark"の下の"/default mark"の下の設定(8.71だと104～130行目，最後の空行も含む)をコピーして/NeverEmbedの行を変更したpsfontsembedという新しい設定を作り，dvipdfmx -D "ps2pdf -dPDFSETTINGS=/psfontsembed %i %o"としても良いようです． - - stamura &new{2010-10-21 (木) 12:00:51}; -->
 <!-- - 先ほどは上記のように書きましたが，その後調べてみると/AlwaysEmbed, /NeverEmbedがうまく働かない問題は"http://ghostscript.com/pipermail/gs-cvs/2009-March/009170.html"で解決されているようです．ただし，gs_pdfwr.psのdefaultでは/NeverEmbedが基本14フォントが指定されているので/AlwaysEmbedは効かず，基本14フォントから埋め込みたいフォントを除いたリストを/NeverEmbedに指定するということになりますが． - - stamura &new{2010-10-21 (木) 13:41:39}; -->
