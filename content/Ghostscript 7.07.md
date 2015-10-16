@@ -356,7 +356,7 @@ GNU Ghostscript へはその後めでたく gs-cjk パッチが統合され，gs
 GPL Ghostscript 9 系となった現在でも，日本語の縦書き（括弧などが回転され，拗音・句読点などが適切にシフトされる）などを正しく扱うことができません。
 このため，GNU Ghostscript 7.07 が「CJK に完全対応した最後の Ghostscript のバージョン」ということになっています。
 
-- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)（山田さん）
+- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)，[Tips on PostScript](http://www.aihara.co.jp/~taiji/tops/index-j.html)（山田さん）
 - [情報工学特別講義 II](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/)（池口先生の講義サポートページ）
     <!-- 旧 URL は http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/ -->
     - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
@@ -379,16 +379,27 @@ Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 
 ### 関連リンク {#d80c1879}
 
-GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクですが，いまでも一部は参考になるかもしれません。
+GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクですが，いまでも一部は参考になるかもしれません。 <!-- gs-cjk に関する記述も10年以上経過してほとんど残っていないようなので， --> <!-- 言及があるサイトは（たとえ内容が gs7.07 でなくても）リンクに加えた -->
 
 - [Overview of Ghostscript](http://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
 - [GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
 - [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
 - [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090130073812/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
+- [Ghostscript と Prosper のインストール](http://emoken.net/blog2/item_39.html)（Windows でのインストール事例）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
+- [Ghostscriptで日本語PDFファイルをつくる](http://kony.no-ip.info/~kon/tips/gsjpn.html)
+- [ghostscript-7.07 のインストール](http://www.uconst.org/blog/archives/38)
 - [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の OS X 版を配布
 - [Mac OS X でレーザープリンターを使うスレ（過去ログ）](http://mimizun.com/log/2ch/mac/1037063324)
+
+### TeX Forum / Q &amp; A より {#w096d520}
+
+書いてある方法そのものを使うことはないでしょうが，Ghostscript のフォント取り扱いの仕組みが見えるので置いておきます。
+CIDFnmap の設定でわからないことが起きた場合に参考になるかもしれません。
+
+- ghostscript(gs)での日本語フォント設定がうまくいかない [qa:32612](https://okumuralab.org/~okumura/texfaq/qa/32612.html), [qa:32613](https://okumuralab.org/~okumura/texfaq/qa/32613.html), [qa:32614](https://okumuralab.org/~okumura/texfaq/qa/32614.html), [qa:32615](https://okumuralab.org/~okumura/texfaq/qa/32615.html)
+- CIDfontを埋め込もうとするとType3になってしまう [qa:11562](https://okumuralab.org/~okumura/texfaq/qa/11562.html), [qa:11563](https://okumuralab.org/~okumura/texfaq/qa/11563.html), [qa:11568](https://okumuralab.org/~okumura/texfaq/qa/11568.html), [qa:11572](https://okumuralab.org/~okumura/texfaq/qa/11572.html), [qa:11577](https://okumuralab.org/~okumura/texfaq/qa/11577.html)
 
 [^1]: 上記の fonts ディレクトリには，実ファイルを入れる代わりにシンボリックリンクを置くことでも代用可能です。また，fonts ディレクトリ以外に存在するフォントの絶対パスを指定することもできますが，パスに非 ASCII 文字やスペースを含む場合はうまくいきません。
 [^2]: ほかにも ESP Ghostscript という系統が，GPL Ghostscript に基づいて Easy Software Products によって配布されていました。これは ESP の Common Unix Printing System との互換性を改良するためにいくつかの修正を加えたもので，2007年3月14日にリリースされたバージョン 8.15.4 を最後に GPL Ghostscript に統合されています。
