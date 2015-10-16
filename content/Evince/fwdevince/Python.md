@@ -9,13 +9,14 @@ pukiwiki: "Evince/fwdevince/Python"
 
 [Evince](/Evince/) &gt; fwdevince &gt; Python
 
-### fwdevince の例示ソース {#u6122dc4}
+## fwdevince の例示ソース {#u6122dc4}
 
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
 Evince 3.12.1, Python 3.4.0, dbus-python 1.2.0, PyGObject 3.12.1 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
+- [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
 - [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
 - fwdevince をうまく動作するように修正する
 
@@ -30,23 +31,6 @@ fwdevince がうまく動作しない場合は
 ```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-# Copyright (C) 2010 Jose Aliste
-#               2011 Benjamin Kellermann
-#
-# This program is free software; you can redistribute it and/or modify it under
-# the terms of the GNU General Public Licence as published by the Free Software
-# Foundation; either version 2 of the Licence, or (at your option) any later
-# version.
-#
-# This program is distributed in the hope that it will be useful, but WITHOUT
-# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-# FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more
-# details.
-#
-# You should have received a copy of the GNU General Public Licence along with
-# this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
-# Street, Fifth Floor, Boston, MA  02110-1301, USA
 
 import dbus
 import argparse
