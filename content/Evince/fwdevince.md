@@ -15,18 +15,11 @@ fwdevince は Linux の Evince で forward and inverse search を行うための
 
 ### Python 版 {#fe046d49}
 
-[Python](/Python/#fwdevince) を参照．<br>
-
-### Ruby 版 {#odd51ed4}
-
-[Ruby](/Ruby/#fwdevince) を参照．<br>
-
-### Emacs Lisp 版 {#m18a72d1}
-
-- [Emacs - TeX Wiki](/Emacs/)
+Evince/fwdevince/Python を参照．<br>
 
 ## 関連リンク {#bb04e129}
 
+- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex)
 - [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
 - [LaTeXTools/evince at master · SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/master/evince)
 - [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
