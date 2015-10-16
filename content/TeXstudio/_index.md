@@ -37,7 +37,7 @@ QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git?p=qcodeedit/qc
 
 ### リリース情報 {#xc0de645}
 
-- [News](http://texstudio.sourceforge.net/#news)
+- [http://www.texstudio.org/#news](http://www.texstudio.org/#news)
 - [http://sourceforge.net/p/texstudio/news/](http://sourceforge.net/p/texstudio/news/)
 - [http://sourceforge.net/p/texstudio/hg/ref/default/tags/](http://sourceforge.net/p/texstudio/hg/ref/default/tags/)
 - [https://twitter.com/texstudio](https://twitter.com/texstudio)
@@ -60,8 +60,8 @@ TeXstudio/インストール を参照．
 
 - [http://hg.code.sf.net/p/texstudio/hg/](http://hg.code.sf.net/p/texstudio/hg/)
 - [http://sourceforge.net/p/texstudio/hg/ci/tip/log/](http://sourceforge.net/p/texstudio/hg/ci/tip/log/)
-- [http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/CHANGELOG.txt)
-- [http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/CHANGELOG.txt](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/CHANGELOG.txt)
+- [http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt)
+- [http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt)
 - [http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW](http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW)
     <!-- -http://www.ohloh.net/p/texstudio/commits -->
 
