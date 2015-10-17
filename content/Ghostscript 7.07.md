@@ -273,7 +273,7 @@ CIDFnmap には以下のように記述すれば，表示も PDF 化も大丈夫
 
 #### 和文フォントの設定（CID フォント） {#i37976e7}
 
-GNU Ghostscript 7.07 がリリースされた当時は[東風明朝 CID/OpenType 化キット](http://khdd.net/Kochi-CID/)がよく使われていましたが，いわゆる[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で配布中止となっています。
+GNU Ghostscript 7.07 がリリースされた当時は[東風明朝 CID/OpenType 化キット](http://kappa.allnet.ne.jp/Kochi-CID/)がよく使われていましたが，いわゆる[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で配布中止となっています。 <!-- 「東風明朝 CID/OpenType 化キット」旧リンク → http://khdd.net/Kochi-CID/ -->
 
 和田研フォントを CID 化したサンプルフォントを使うには，以下のように設定します。
 <em>←この情報は古いが，失われるべきでないので残す</em>
