@@ -13,7 +13,7 @@ pukiwiki: "Evince/fwdevince/Python"
 
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
-Evince 3.18.0, Python 3.5.0, dbus-python 1.2.0, PyGObject 3.18.0 で動作確認しています．<br>
+[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.0, Python 3.5.0, dbus-python 1.2.0, PyGObject 3.18.0 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
 - [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
