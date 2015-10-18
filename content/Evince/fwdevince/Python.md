@@ -13,7 +13,7 @@ pukiwiki: "Evince/fwdevince/Python"
 
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
-Evince 3.12.1, Python 3.4.0, dbus-python 1.2.0, PyGObject 3.12.1 で動作確認しています．<br>
+Evince 3.18.0, Python 3.5.0, dbus-python 1.2.0, PyGObject 3.18.0 で動作確認しています．<br>
 fwdevince がうまく動作しない場合は
 
 - [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
@@ -37,11 +37,7 @@ import argparse
 import os.path
 import traceback
 import sys
-
-if sys.version_info >= (3, 0, 0):
-    from urllib.parse import quote, unquote
-else:
-    from urllib import quote, unquote
+import urllib.parse
 
 class EvinceForwardSearch:
     def parse_args(self):
@@ -61,7 +57,7 @@ class EvinceForwardSearch:
             import time
             bus = dbus.SessionBus()
             daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
-            dbus_name = daemon.FindDocument('file://' + quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
+            dbus_name = daemon.FindDocument('file://' + urllib.parse.quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
             window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
             time.sleep(0.2)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
@@ -179,8 +175,8 @@ class EvinceWindowProxy:
         # We get url-quoted UTF-8 from dbus; convert to url-quoted ascii
         # and then unquote. If you don't first convert ot ascii, it fails.
         # It's a bit magical, but it seems to work
-        #input_file = unquote(input_file.encode('ascii'))
-        input_file = unquote(input_file)
+        #input_file = urllib.parse.unquote(input_file.encode('ascii'))
+        input_file = urllib.parse.unquote(input_file)
         print(type(input_file), input_file)
         #cmd = re.sub("%f", input_file, self.editor)
         cmd = re.sub("%f", input_file.replace('file://', ''), self.editor)
