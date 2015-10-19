@@ -53,6 +53,7 @@ $ sudo apt-get install pdf2svg
 - [https://github.com/db9052/pdf2svg](https://github.com/db9052/pdf2svg)
 - [textext, pdf2svg on Windows](http://tako.nakano.net/textext_pdf2svg.html)
 - [TeX 出力から SVG への変換](http://d.hatena.ne.jp/acetaminophen/20150310/1425969852)
+- [pdf2svgをMacにインストール](http://qiita.com/tomomomo1217/items/cf4daec0341ec5dcaefc)
 
 #### License {#e2b828f7}
 
