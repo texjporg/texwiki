@@ -10,6 +10,9 @@ pukiwiki: "dvipdfmx"
 
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
+<!-- dvipdfmxはナントカboxの扱いに深刻な問題があります。 -->
+<!-- ↑深刻な問題とは何ですか？ -->
+
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています．
