@@ -12,6 +12,8 @@ pukiwiki: "LaTeX のエラーメッセージ"
 ここでは LaTeX が出すエラーメッセージを集めてあります。
 他に，[TeX のエラーメッセージ](</TeX のエラーメッセージ/>)・[LaTeX の警告メッセージ](</LaTeX の警告メッセージ/>)もご覧ください。
 
+全体をとおして “!” に続くエラーメッセージをアルファベット順に並べてあります。
+
 <!-- #contents -->
 <!-- 目次そのものが無くてもリンクをはることが出来るようなので，目次の出力はコメントしてみました。 -->
 
@@ -331,7 +333,7 @@ LaTeX のカウンタの値を \alph，\Alph，\fnsymbol などで文字列化�
 >
 > - ファイル ls-R（ファイル検索用のデータベース・ファイル）を利用しているのでしたら，パッケージ類のインストールを行った際には mktexlsr を実行し，ls-R ファイルを更新してください（参考：[一覧表の作成と更新 (mktexlsr) について - TeX のディレクトリ構成](</TeX のディレクトリ構成/#mktexlsr>)）．
 > - LaTeX のクラスファイルやパッケージは，cls ファイルや sty ファイルそのものではなく dtx ファイルと ins ファイルの形で配布されることもあります．
->     その場合は ins ファイルを LaTeX で処理して必要なファイルを生成させてください（参考：[LaTeX入門/各種パッケージの利用](</LaTeX入門/各種パッケージの利用/>)）
+>     その場合は ins ファイルを LaTeX で処理して必要なファイルを生成させてください（参考：[LaTeX入門/各種パッケージの利用](</LaTeX入門/各種パッケージの利用/>)）．
 
 #### ! LaTeX Error: Font <em>attributes</em> not found. {#o6eb2ec1}
 
@@ -347,20 +349,20 @@ LaTeX のカウンタの値を \alph，\Alph，\fnsymbol などで文字列化�
 
 > → まず，エンコーディング名・ファミリー名が正しいかどうかを確認してください．
 > 正しければ，\DeclareFontFamily または \DeclareKanjiFamily を用いてエンコーディング <em>encoding</em> にファミリー <em>family</em> が存在することを宣言してください．
+
+> jsarticle, jsbook を使用していて ! LaTeX Error: Font family \`JY1+mc' unknown. と表示される場合は，
 >
-> - jsarticle, jsbook を使用していて ! LaTeX Error: Font family \`JY1+mc' unknown. と表示される場合は，
+> ```
+> \documentclass[uplatex]{jsarticle}
+> ```
 >
->     ```
->     \documentclass[uplatex]{jsarticle}
->     ```
+> や
 >
->     や
+> ```
+> \documentclass[uplatex]{jsbook}
+> ```
 >
->     ```
->     \documentclass[uplatex]{jsbook}
->     ```
->
->     のように uplatex オプションを追加すれば [upLaTeX](/upTeX,upLaTeX/) 対応になります．
+> のように uplatex オプションを追加すれば [upLaTeX](/upTeX,upLaTeX/) 対応になります．
 
 #### ! LaTeX Error: ftnright package used in one-column mode. {#v8346838}
 
@@ -545,7 +547,7 @@ fancybox パッケージによる \VerbatimInput などで読み込もうとし�
 
 > → まず，読み込み対象のファイル名を確認してください．
 > 正しいファイル名を指定している場合には，そのファイルが“TeX が探し出せる”ディレクトリ（カレント・ディレクトリあるいはファイル texmf.cnf の TEXINPUTS.platex などで指定されるディレクトリ）にあるかどうかをチェックしてください．
-> 詳細は ! LaTeX Error: File \`filename' not found. の説明を参照してください．
+> 詳細は ! LaTeX Error: File \`<em>filename</em>' not found. の項の説明を参照してください．
 
 #### ! LaTeX Error: Not a command name: \`<em>something</em>&#39;. {#x14fd096}
 
@@ -562,52 +564,63 @@ fancybox パッケージによる \VerbatimInput などで読み込もうとし�
 
 #### ! LaTeX Error: Not in outer par mode. {#wcaeb252}
 
-figure，table の両環境や \marginpar を“ページ分割できない”箇所で用いた場合のエラーメッセージです．<br>
-→ figure 環境などの記述位置が“ページ分割可能な箇所”であるかどうかチェックしてください．
-ページ分割可能でない（ものとみなされる）箇所に figure 環境などがある場合には，
-それらの位置を適宜変更してください．
-なお，「（個々の）画像にキャプションをつけない場合には，そもそも figure 環境を用いなくてもよい」ことにも注意してください
-（figure 環境は「図扱いのもの（とキャプション）を『配置する』環境」で，画像の貼り付け自体は \includegraphics コマンドが行う処理）．
+figure，table の両環境や \marginpar を“ページ分割できない”箇所で用いた場合のエラーメッセージです．
 
-> eclbkbox パッケージによる breakbox 環境のようなある種の枠囲みの環境では，
-> 出力結果自体はページ分割可能であっても，処理上は“一度（ひとつの）ボックスを作成したのち，
-> そのボックスを適宜分割・加工して並べ直す”という取り扱いがなされていることがあります．
-> そのような場合，（明示的に作成されたボックスの中，というのはページ分割可能な箇所とは
-> （一般には）言えませんので）breakbox 環境の中のようなところでも figure 環境の類は使えない，
-> ということになります．
+> → figure 環境などの記述位置が“ページ分割可能な箇所”であるかどうかチェックしてください．
+> ページ分割可能でない（ものとみなされる）箇所に figure 環境などがある場合には，それらの位置を適宜変更してください．
+> なお，「（個々の）画像にキャプションをつけない場合には，そもそも figure 環境を用いなくてもよい」ことにも注意してください（figure 環境は「図扱いのもの（とキャプション）を『配置する』環境」で，画像の貼り付け自体は \includegraphics コマンドが行う処理）．
+
+> eclbkbox パッケージによる breakbox 環境のようなある種の枠囲みの環境では，出力結果自体はページ分割可能であっても，処理上は“一度（ひとつの）ボックスを作成したのち，そのボックスを適宜分割・加工して並べ直す”という取り扱いがなされていることがあります．
+> そのような場合，（明示的に作成されたボックスの中，というのはページ分割可能な箇所とは（一般には）言えませんので）breakbox 環境の中のようなところでも figure 環境の類は使えない，ということになります．
 
 #### ! LaTeX Error: Option clash for package <em>package</em>. {#i77dcb0e}
 
-<em>package</em> パッケージを 2 度以上読み込んだ際に，
+<em>package</em> パッケージが 2 度以上読み込まれ，1 回目には指定されていなかったオプションが 2 回目以降に新たに指定されたとみなされた場合に現れるエラーメッセージです．
+<!-- “個々の読み込みの際のオプション指定が一致していない” とは限らない． -->
+<!-- 2 回目以降に指定された“とみなされた”オプションのリストが -->
+<!-- 1 回目に指定された”とみなされた”オプションのリストの部分集合でない場合に生じる． -->
+<!-- “実際にオプションが有効になって機能したかどうか” と -->
+<!-- “オプションリストに入っているかどうか” は一致しない． -->
+<!-- - 例 1 ：グローバルに指定されたオプションは機能するがリストには入らない -->
+<!-- - 例 2 ：\PassOptionsToPackage で指定されたオプションはリストに入るが機能するとは限らない -->
 
-個々の読み込みの際のオプション指定が一致していない場合に現れるエラーメッセージです．
 例えば，プリアンブルで
 
 ```
-\usepackage[dvips]{graphicx}
 \usepackage[dvipdfmx]{graphicx}
+\usepackage[hiresbb]{graphicx}
 ```
 
-のような記述を行うと上記のエラーメッセージが現れます．<br>
-→ 同じパッケージを複数回読み込まないようにするとよいでしょう．
+のような記述を行うと上記のエラーメッセージが現れます．
 
-> 何らかのパッケージが（不要なオプション指定とともに）
-> 別のパッケージあるいはクラスファイルの中で読み込まれていると，
-> 話は面倒ですが…そのような場合はそのパッケージあるいはクラスファイルの作成者に
-> “内部で読み込まれているパッケージのオプション指定”
-> を調整するためのオプションの導入を促すか，
-> 特定の環境を前提としているものとして諦めるか，のいずれかでしょう．
+> → 同じパッケージを複数回読み込んでいる場合は，オプションをまとめて一度に読み込むようにするとよいでしょう．
+>
+> ```
+> \usepackage[dvipdfmx,hiresbb]{graphicx}
+> ```
+>
+> そうでない場合は，衝突がおこるオプションをクラスオプションとして
+>
+> ```
+> \documentclass[dvipdfmx]{article}
+> ```
+>
+> のようにグローバルに指定するか，パッケージの読み込み順序を変えてみることで解決することがあります．
+
+> それでも解決しない場合は，そのパッケージあるいはクラスファイルの作成者に “内部で読み込まれているパッケージのオプション指定” を調整するためのオプションの導入を促すか，特定の環境を前提としているものとして諦めるか，のいずれかでしょう．
+
+> 解決法が一概にはいえない理由として，何らかのパッケージが（不要なオプション指定とともに）別のパッケージあるいはクラスファイルの中で読み込まれている場合があるためです．
+> 例えば，color パッケージや xcolor パッケージはしばしば他のパッケージによって内部で読み込まれますが，そのオプション指定の状態によってはこのエラーメッセージが出ることがあります．
+>
+> - 参考：[xcolor と color が難しい件・その1](http://d.hatena.ne.jp/acetaminophen/20150628/1435435285)，[その 2](http://d.hatena.ne.jp/acetaminophen/20150629/1435604419)
 
 #### ! LaTeX Error: Page height already too large. {#r48c1f85}
 
-\vsize（ページ分割時に用いられる“ページの高さ”を表す寸法，
-LaTeX においては \textheight 経由で設定されます）の値が充分に大きい状況
-（8192pt 以上の場合）において \enlargethispage を用いたときに現れるエラーメッセージです．<br>
-→ \enlargethispage を用いるのを取り止めるか，版面寸法を再検討してください．
-本当に版面が大きい状況でさらに \enlargethispage を用いなければならないのであれば…
-組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）
-全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，
-版面寸法（および \enlargethispage の引数）を充分に小さいままにすることになるでしょう．
+\vsize（ページ分割時に用いられる“ページの高さ”を表す寸法，LaTeX においては \textheight 経由で設定されます）の値が充分に大きい状況（8192pt 以上の場合）において \enlargethispage を用いたときに現れるエラーメッセージです．
+
+> → \enlargethispage を用いるのを取り止めるか，版面寸法を再検討してください．
+> 本当に版面が大きい状況でさらに \enlargethispage を用いなければならないのであれば…
+> 組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，版面寸法（および \enlargethispage の引数）を充分に小さいままにすることになるでしょう．
 
 #### ! LaTeX Error: \pushtabs and \poptabs don't match. {#e0554bfb}
 
@@ -619,132 +632,97 @@ tabbing 環境の中では \pushtabs によってタブ位置（\\= によって
 
 #### ! LaTeX Error: \RequirePackage or \LoadClass in Options Section. {#yb89ccf5}
 
-クラスファイルあるいはパッケージファイルの中の \ExecuteOptions
-または \ProcessOptions（オプション指定を処理する部分）で
-\RequirePackage または \LoadClass が用いられた場合に現れるエラーメッセージです．<br>
-→ \DeclareOption によるオプションの処理内容の定義の中には，
-\RequirePackage または \LoadClass を含めることはできないので，
-それらを含まないように書き換えます．
-何らかのパッケージの読み込みを必要とするオプションがある場合には，
-オプション自身には適当なフラグを立てさせるだけにし，\ExecuteOptions および
-\ProcessOptions の処理ののちにそのフラグに従ったパッケージの読み込みを行う，
-といった方法をとることができます．
+クラスファイルあるいはパッケージファイルの中の \ExecuteOptions または \ProcessOptions（オプション指定を処理する部分）で \RequirePackage または \LoadClass が用いられた場合に現れるエラーメッセージです．
+
+> → \DeclareOption によるオプションの処理内容の定義の中には，\RequirePackage または \LoadClass を含めることはできないので，それらを含まないように書き換えます．
+> 何らかのパッケージの読み込みを必要とするオプションがある場合には，オプション自身には適当なフラグを立てさせるだけにし，\ExecuteOptions および \ProcessOptions の処理ののちにそのフラグに従ったパッケージの読み込みを行う，といった方法をとることができます．
 
 #### ! LaTeX Error: Rotation not supported. {#l664a64a}
 
-回転処理をサポートしない dviware に対応するオプションを
-graphicx パッケージに対して指定しているときに，\rotatebox
-などの回転処理を伴うコマンドを用いた場合に現れるエラーメッセージです．<br>
-→ 回転処理をサポートした dviware を用いるように
-graphicx パッケージに対するオプション指定を変更してください．
-使用する dviware を変更できない場合には，
-回転処理を必要としないように文書の記述などを変更することになります．
+回転処理をサポートしない dviware に対応するオプションを graphicx パッケージに対して指定しているときに，\rotatebox などの回転処理を伴うコマンドを用いた場合に現れるエラーメッセージです．
+
+> → 回転処理をサポートした dviware を用いるように graphicx パッケージに対するオプション指定を変更してください．
+> 使用する dviware を変更できない場合には，回転処理を必要としないように文書の記述などを変更することになります．
 
 #### ! LaTeX Error: Scaling not supported. {#u1acbcce}
 
-拡大・縮小処理をサポートしない dviware に対応するオプションを
-graphicx パッケージに対して指定しているときに，\scalebox
-などの拡大・縮小処理を伴うコマンドを用いた場合に現れるエラーメッセージです．<br>
-→ 拡大・縮小処理をサポートした dviware を用いるように
-graphicx パッケージに対するオプション指定を変更してください．
-使用する dviware を変更できない場合には，
-拡大・縮小処理を必要としないように文書の記述などを変更することになります．
+拡大・縮小処理をサポートしない dviware に対応するオプションを graphicx パッケージに対して指定しているときに，\scalebox などの拡大・縮小処理を伴うコマンドを用いた場合に現れるエラーメッセージです．
+
+> → 拡大・縮小処理をサポートした dviware を用いるように graphicx パッケージに対するオプション指定を変更してください．
+> 使用する dviware を変更できない場合には，拡大・縮小処理を必要としないように文書の記述などを変更することになります．
 
 #### ! LaTeX Error: Slide rotation \`<em>type</em>&#39; not defined.. {#k26105de}
 
-slide クラス使用時の \sliderotation の引数にサポートされていないもの
-（デフォルトでは left，right，none のみサポート）
-を指定した場合に現れるエラーメッセージです．<br>
-→ \sliderotation の引数にはサポートされる left，right，none
-のいずれかを用いてください．
-また，left，right を用いる場合には，クラスオプションに semrot を加えてください．
+slide クラス使用時の \sliderotation の引数にサポートされていないもの（デフォルトでは left，right，none のみサポート）を指定した場合に現れるエラーメッセージです．
+
+> → \sliderotation の引数にはサポートされる left，right，none のいずれかを用いてください．
+> また，left，right を用いる場合には，クラスオプションに semrot を加えてください．
 
 #### ! LaTeX Error: \somecs allowed only in math mode. {#bada1d0b}
 
-文字通り“\somecs は数式中でしか使えない”ということですから，
-\somecs が用いられている箇所が数式に含まれるように変更するか，
-数式の外部でも使えるコマンドで書き換える（例えば，\mathbf → \textbf）
-ことになります．
+文字通り“\somecs は数式中でしか使えない”ということです．
+
+> → \somecs が用いられている箇所が数式に含まれるように変更するか，数式の外部でも使えるコマンドで書き換える（例えば，\mathbf → \textbf）ことになります．
 
 #### ! LaTeX Error: \somecs undefined. {#l442ef96}
 
-\renewcommand で \somecs を再定義しようとしているにもかかわらず，
-その \somecs が未定義であった場合のエラーメッセージです．<br>
+\renewcommand で \somecs を再定義しようとしているにもかかわらず，その \somecs が未定義であった場合のエラーメッセージです．
 → まず，再定義しようとしているコマンドの名称が正しいかどうかを確認してください．
-正しければ（コマンドを新設することになるのなら），
-\renewcommand ではなく \newcommand を使ってください．
+正しければ（コマンドを新設することになるのなら），\renewcommand ではなく \newcommand を使ってください．
 
 #### ! LaTeX Error: Something's wrong--perhaps a missing \item. {#j1b0c880}
 
-メッセージにもあるように，enumerate 環境などで \item
-を忘れた状態で環境の中身のテキストを書いた場合などに現れるエラーメッセージです．<br>
+メッセージにもあるように，enumerate 環境などで \item を忘れた状態で環境の中身のテキストを書いた場合などに現れるエラーメッセージです．
 → \item を忘れていないかどうかチェックしてください．
-ただし，\addvspace を段落内で用いた場合にも上記のエラーメッセージが現れるので，
-ユーザ自身が \addvspace を（手動で）用いる場合には
-\addvspace を用いる前に段落を終了させるように注意してください．
+ただし，\addvspace を段落内で用いた場合にも上記のエラーメッセージが現れるので，ユーザ自身が \addvspace を（手動で）用いる場合には \addvspace を用いる前に段落を終了させるように注意してください．
 
 > なお，LaTeX 2.09 ではそのあたりのチェックが甘くて \item なしでもエラーにならない場合があったようです．
-> そのバグを使って(?) quote 環境か何かを用いるべきところを \item なしの
-> enumerate 環境あたりで書くようなことがなされてもいたようですが，
-> そのような記述は然るべき記述に書き換えてください．
+> そのバグを使って(?) quote 環境か何かを用いるべきところを \item なしの enumerate 環境あたりで書くようなことがなされてもいたようですが，そのような記述は然るべき記述に書き換えてください．
 
 #### ! LaTeX Error: Suggested extra height (<em>size</em>) dangerously large. {#b78332fc}
 
-\enlargethispage で指定した寸法 <em>size</em> が大きすぎる場合
-（8192pt 以上の場合）に現れるエラーメッセージです．<br>
-→ \enlargethispage で指定する寸法を減らしてください．
-本当に大きな寸法を指定しなければならない場合には…
-組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）
-全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，
-\enlargethispage の引数は充分に小さいままにすることになるでしょう．
+\enlargethispage で指定した寸法 <em>size</em> が大きすぎる場合（8192pt 以上の場合）に現れるエラーメッセージです．
+
+> → \enlargethispage で指定する寸法を減らしてください．
+> 本当に大きな寸法を指定しなければならない場合には…
+> 組版時には（\mag を用いるのではなく，本当に版面寸法および文字サイズを小さくして）全体を縮小して処理しておき出力時に dviware 側あるいは出力機器側で拡大するといった方法によって，\enlargethispage の引数は充分に小さいままにすることになるでしょう．
 
 #### ! LaTeX Error: Symbol font \`<em>mathgroup</em>&#39; is not defined. {#je2304f5}
 
-\SetMathAlphabet を用いて数式グループ <em>mathgroup</em> に対するフォントの設定を行う場合や
-\DeclareMathSymbol などを用いて数式グループ <em>mathgroup</em>
-のフォントを使用して出力する文字・記号の定義を行う際に数式グループ <em>mathgroup</em>
-が未定義である場合のエラーメッセージです．<br>
-→ まず，数式グループ名が正しいかどうかを確認してください．
-正しければ，\DeclareMathAlphabet を用いて数式グループ <em>mathgroup</em> を導入してください．
+\SetMathAlphabet を用いて数式グループ <em>mathgroup</em> に対するフォントの設定を行う場合や \DeclareMathSymbol などを用いて数式グループ <em>mathgroup</em> のフォントを使用して出力する文字・記号の定義を行う際に数式グループ <em>mathgroup</em> が未定義である場合のエラーメッセージです．
+
+> → まず，数式グループ名が正しいかどうかを確認してください．
+> 正しければ，\DeclareMathAlphabet を用いて数式グループ <em>mathgroup</em> を導入してください．
 
 > （ファイル latex.ltx 中の記述の不統一により）エラーメッセージ中の“is”が欠けている場合があります．
 
 #### ! LaTeX Error: Tab overflow. {#xe83f701}
 
-tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，
-設定できるタブ位置の個数の上限を超えてタブ位置を設定しようとしたときに現れるエラーメッセージです．<br>
-→ タブ位置の設定の仕方を再検討してタブ位置を減らしてください．
+tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，設定できるタブ位置の個数の上限を超えてタブ位置を設定しようとしたときに現れるエラーメッセージです．
 
-> 設定可能なタブ位置の個数を増やすのは，
-> ファイル latex.ltx に手を加えてからフォーマットファイルを再作成するか，
-> tabbing 環境の実装にかなり手を加えない限り無理のようです． <!-- 既製品がどこかにあるかもしれませんが． -->
+> → タブ位置の設定の仕方を再検討してタブ位置を減らしてください．
+
+> 設定可能なタブ位置の個数を増やすのは，ファイル latex.ltx に手を加えてからフォーマットファイルを再作成するか，tabbing 環境の実装にかなり手を加えない限り無理のようです． <!-- 既製品がどこかにあるかもしれませんが． -->
 
 #### ! LaTeX Error: Text for \verb command ended by end of line. {#w08e49a0}
 
-doc パッケージ使用時（例えば，dtx ファイルの記述）において，行末にいたっても
-\verb の適用範囲が終了していない場合に現れるエラーメッセージです．<br>
-→ doc パッケージでは（\MakeShortVerb を用いて）\verb|...| の代わりに単に
-|...| と記述できるといった設定を行うことができますが，
-このような \verb の短縮記法（あるいは \verb そのもの）
-の適用範囲の終端を表す文字を適宜補ってください．
+doc パッケージ使用時（例えば，dtx ファイルの記述）において，行末にいたっても \verb の適用範囲が終了していない場合に現れるエラーメッセージです．
+
+> → doc パッケージでは（\MakeShortVerb を用いて）\verb|...| の代わりに単に |...| と記述できるといった設定を行うことができますが，このような \verb の短縮記法（あるいは \verb そのもの）の適用範囲の終端を表す文字を適宜補ってください．
 
 #### ! LaTeX Error: The font size command \normalsize is not defined:<br>  there is probably something wrong with the class file. {#bfa94d51}
 
 \normalsize が適切に定義されていない状態で \normalsize を用いた場合に現れるエラーメッセージです．
-メッセージ通りにクラスファイルがおかしい場合もありますが，
-\documentclass を用いるのを忘れている，という可能性もあります．
+
+> → メッセージ通りにクラスファイルがおかしい場合もありますが，\documentclass を用いるのを忘れているというミスの可能性もあります．
 
 #### ! LaTeX Error: There's no line here to end. {#fdcbc5c5}
 
-強制改行の \\\，\linebreak あるいは行分割の抑制の \nolinebreak を段落間
-（のような，行分割の強制または抑制の対象となる行が存在しない箇所）
-で用いた場合のエラーメッセージです．<br>
-→ 本当に \\\ などを用いる必要があれば，\\\ などの前に \leavevmode を入れて
-段落を開始してください．
+強制改行の \\\，\linebreak あるいは行分割の抑制の \nolinebreak を段落間（のような，行分割の強制または抑制の対象となる行が存在しない箇所）で用いた場合のエラーメッセージです．
 
-> list 系の環境（enumerate/itemize/description の各環境や \newtheorem で作成した環境など）の
-> \item の直後はまだ段落間になっていることに注意してください
-> （\item によって与えられる箇条書きの番号・記号は \item に続く段落の開始時に出力されます）．
+> → 本当に \\\ などを用いる必要があれば，\\\ などの前に \leavevmode を入れて段落を開始してください．
+
+> list 系の環境（enumerate/itemize/description の各環境や \newtheorem で作成した環境など）の \item の直後はまだ段落間になっていることに注意してください（\item によって与えられる箇条書きの番号・記号は \item に続く段落の開始時に出力されます）．
 > したがって，description 環境などで \item\[...\] の直後で改行するには，
 >
 > ```
@@ -755,283 +733,220 @@ doc パッケージ使用時（例えば，dtx ファイルの記述）におい
 
 #### ! LaTeX Error: \TheSbox is empty!. {#db4eb157}
 
-fancybox パッケージ使用時に，Sbox 環境を用いて保存した対象が存在しない状態で
-\TheSbox（Sbox 環境で保存した対象を使用するコマンド）
-を用いた場合に現れるエラーメッセージです．<br>
-→ \TheSbox を用いる前に Sbox 環境を用いてください．
-なお，Sbox 環境で保存した対象を \TheSbox で使用できるのは 1 回限りです．
-同じ対象を複数個コピーすることはできないので，
-\TheSbox を使用する前に毎回保存してください．
+fancybox パッケージ使用時に，Sbox 環境を用いて保存した対象が存在しない状態で \TheSbox（Sbox 環境で保存した対象を使用するコマンド）を用いた場合に現れるエラーメッセージです．
+
+> → \TheSbox を用いる前に Sbox 環境を用いてください．
+> なお，Sbox 環境で保存した対象を \TheSbox で使用できるのは 1 回限りです．
+> 同じ対象を複数個コピーすることはできないので，\TheSbox を使用する前に毎回保存してください．
 
 #### ! LaTeX Error: This file needs format \`<em>format_X</em>&#39;<br>  but this is \`<em>format_Y</em>&#39;. {#ubb38849}
 
-クラスファイル内の \NeedsTeXFormat によって（処理に必要な）
-フォーマットとして指定されている <em>format_X</em> と，
-実際に処理に用いたフォーマット <em>format_Y</em> が異なる場合に現れるエラーメッセージです
-（ただし，pLaTeX 使用時には，\NeedsTeXFormat によって“LaTeX2e”
-を指定してあってもエラーなく処理できるようになっています）．<br>
-→ \NeedsTeXFormat の指定に沿った処理系で処理してください．
-典型的な場合としては，jarticle.cls などの pLaTeX 用のクラスファイルを用いた文書を
-オリジナルの LaTeX で処理すると上記のエラーメッセージが現れるので，
-オリジナルの LaTeX ではなく pLaTeX で処理するようにします．
+クラスファイル内の \NeedsTeXFormat によって（処理に必要な）フォーマットとして指定されている <em>format_X</em> と，実際に処理に用いたフォーマット <em>format_Y</em> が異なる場合に現れるエラーメッセージです（ただし，pLaTeX 使用時には，\NeedsTeXFormat によって“LaTeX2e”
+を指定してあってもエラーなく処理できるようになっています）．
+
+> → \NeedsTeXFormat の指定に沿った処理系で処理してください．
+> 典型的な場合としては，jarticle.cls などの pLaTeX 用のクラスファイルを用いた文書をオリジナルの LaTeX で処理すると上記のエラーメッセージが現れるので，オリジナルの LaTeX ではなく pLaTeX で処理するようにします．
 
 #### ! LaTeX Error: This may be a LaTeX bug. {#z1a01024}
 
 バグかもしれないと言っていますが，実際には単に“起こり得ないはずの状況”が起こった，ということです．
-これを目にしている，ということはおそらく出力ルーチンの改造に手をつけているのでしょうから，
-きっちり机上デバッグを行ってから実装を試みましょう．
+
+> → これを目にしている，ということはおそらく出力ルーチンの改造に手をつけているのでしょうから，きっちり机上デバッグを行ってから実装を試みましょう．
 
 #### ! LaTeX Error: This NFSS system isn't set up properly. {#i58d8b4b}
 
-（\DeclareFontSubstitution で設定される）
-あるエンコーディングに対するデフォルトのファミリー・シリーズ・シェイプの指定が適切でない
-（デフォルトの属性に対するフォント定義がなされていない）場合のエラーメッセージです．<br>
-→ どのエンコーディングに対する設定が適切でないかは，
-このエラーメッセージに対して“H”と返答したときのヘルプメッセージに含まれているので，
-そのエンコーディングに対する \DeclareFontSubstitution の指定を変更するか
-\DeclareFontSubstitution で与えた属性に対応するフォント定義を追加します．
+（\DeclareFontSubstitution で設定される）あるエンコーディングに対するデフォルトのファミリー・シリーズ・シェイプの指定が適切でない（デフォルトの属性に対するフォント定義がなされていない）場合のエラーメッセージです．
 
-> 実は，\DeclareErrorFont による“非常時用の”
-> 代替フォントの設定が適切でない場合にも上記のエラーメッセージが現れますが…
-> ユーザ自身が独自のフォーマットファイルを作りでもしない限り
-> \DeclareErrorFont の設定の不備のほうで上記のエラーメッセージを見ることはないでしょう．
+> → どのエンコーディングに対する設定が適切でないかは，このエラーメッセージに対して“H”と返答したときのヘルプメッセージに含まれているので，そのエンコーディングに対する \DeclareFontSubstitution の指定を変更するか \DeclareFontSubstitution で与えた属性に対応するフォント定義を追加します．
+
+> 実は，\DeclareErrorFont による“非常時用の”代替フォントの設定が適切でない場合にも上記のエラーメッセージが現れますが…
+> ユーザ自身が独自のフォーマットファイルを作りでもしない限り \DeclareErrorFont の設定の不備のほうで上記のエラーメッセージを見ることはないでしょう．
 
 #### ! LaTeX Error: Too deeply nested. {#p21abe7a}
 
-enumerate，itemize，description といった箇条書きの環境は多重にして用いることができますが，
-無制限に重ねることができるわけではなく，制限があります
-（デフォルトでは，enumerate，itemize の各環境のそれぞれについて 4 段階までで，
-enumerate，itemize，description といった環境の合計で 6 段階までです）．
-その制限を超えて重ねた場合に上記のエラーメッセージが生じます．<br>
-→ 文書自身に手を加えて，箇条書きをむやみに重ねずに済むように変更してください．
-ただし，真にやむを得ない場合には，\itemize の定義中の
+enumerate，itemize，description といった箇条書きの環境は多重にして用いることができますが，無制限に重ねることができるわけではなく，制限があります（デフォルトでは，enumerate，itemize の各環境のそれぞれについて 4 段階までで，enumerate，itemize，description といった環境の合計で 6 段階までです）．
+その制限を超えて重ねた場合に上記のエラーメッセージが生じます．
 
-```
-\ifnum \@itemdepth > \thr@@ \@toodeep
-```
-
-の部分の \thr@@（= 3）を増やし，\labelitemv などを追加すれば
-5 段階目（以降）の itemize 環境が使えるようになります．
-enumerate 環境についても同様に拡張することができます．
-ただし，そのような拡張を行う場合には \list の定義の冒頭の
-
-```
- \ifnum \@listdepth >5\relax
-```
-
-の 5 という数値も適宜大きくし，
-\\@listvii といった list 系の環境の初期化マクロも追加するとよいでしょう．
+> → 文書自身に手を加えて，箇条書きをむやみに重ねずに済むように変更してください．
+> ただし，真にやむを得ない場合には，\itemize の定義中の
+>
+> ```
+> \ifnum \@itemdepth > \thr@@ \@toodeep
+> ```
+>
+> の部分の \thr@@（= 3）を増やし，\labelitemv などを追加すれば 5 段階目（以降）の itemize 環境が使えるようになります．
+> enumerate 環境についても同様に拡張することができます．
+> ただし，そのような拡張を行う場合には \list の定義の冒頭の
+>
+> ```
+>  \ifnum \@listdepth >5\relax
+> ```
+>
+> の 5 という数値も適宜大きくし，\\@listvii といった list 系の環境の初期化マクロも追加するとよいでしょう．
 
 #### ! LaTeX Error: Too many columns in eqnarray environment. {#ec5926e0}
 
-eqnarray 環境のひとつの行の中に 3 個以上の &amp; が存在する場合のエラーメッセージです．<br>
-→ 余分な &amp; がないかどうか，あるいは \\\ を書き忘れていないかどうかをチェックしてください．
-揃える箇所が 3 箇所以上存在する場合には，amsmath パッケージによる
-align 環境などを用いるとよいでしょう．
-また，揃える箇所が 2 箇所以下でも align 環境などを用いた方がいい，
-という意見もあります（実際，eqnarray 環境をデフォルトのままで使うくらいなら
-amsmath パッケージが提供する環境を用いたほうがよいでしょう）． <!-- ただし，amsmath パッケージが提供する各種ディスプレイ数式環境には --> <!-- “環境の中身を複数回処理する”というあまり感心しない癖があるので --> <!-- （…処理の都合で半ばやむを得ないというのはわかりますが…）， --> <!-- eqnarray 環境を再定義して済ませることができるのであれば --> <!-- それにこしたことはありません． -->
+eqnarray 環境のひとつの行の中に 3 個以上の &amp; が存在する場合のエラーメッセージです．
+
+> → 余分な &amp; がないかどうか，あるいは \\\ を書き忘れていないかどうかをチェックしてください．
+> 揃える箇所が 3 箇所以上存在する場合には，amsmath パッケージによる align 環境などを用いるとよいでしょう．
+> また，揃える箇所が 2 箇所以下でも align 環境などを用いた方がいい，という意見もあります（実際，eqnarray 環境をデフォルトのままで使うくらいなら amsmath パッケージが提供する環境を用いたほうがよいでしょう）． <!-- ただし，amsmath パッケージが提供する各種ディスプレイ数式環境には --> <!-- “環境の中身を複数回処理する”というあまり感心しない癖があるので --> <!-- （…処理の都合で半ばやむを得ないというのはわかりますが…）， --> <!-- eqnarray 環境を再定義して済ませることができるのであれば --> <!-- それにこしたことはありません． -->
 
 #### ! LaTeX Error: Too many math alphabets used in version <em>version</em>. {#bf22f8e1}
 
-\mathsf などの数式用書体変更コマンドを多種類用いたためにバージョン <em>version</em>
-の数式で使用可能な数式用フォント（個々のバージョンにつき 16 種が上限）
-を使い果たした場合のエラーメッセージです．<br>
-→ 文書中で使用している数式用書体変更コマンドの種類を減らしてください．
-例えば，添字の中では用いていない文字の書体を変更するには \mathsf の代わりに
-\textsf を用いることができます．
-また，和文用の標準配布のクラスファイルを用いている場合には，
-disablejfam クラスオプションを適用すれば，
-数式中に和文文字を直接入れることはできなくなりますが，
-その代わり数式中で用いる欧文フォントの書体数を 2 個増やすことができます
-（この場合であっても，“和文文字を \mbox に入れたもの”
-を数式中で用いることはできます）．
-なお，bm パッケージを使用していて，かつ，amsmath パッケージによる
-\boldsymbol で間に合う場合には，bm パッケージの使用を取り止めて
-\boldsymbol を用いることにするとこのエラーを回避できることがあります．
+\mathsf などの数式用書体変更コマンドを多種類用いたためにバージョン <em>version</em> の数式で使用可能な数式用フォント（個々のバージョンにつき 16 種が上限）を使い果たした場合のエラーメッセージです．
 
-> 余談ですが，bm パッケージは \boldsymbol を \bm のコピーにします
-> （\let\boldsymbol\bm という設定を含みます）ので，
-> いつでも \boldsymbol で記述しておけば bm パッケージ使用時には \bm で処理されます．
+> → 文書中で使用している数式用書体変更コマンドの種類を減らしてください．
+> 例えば，添字の中では用いていない文字の書体を変更するには \mathsf の代わりに \textsf を用いることができます．
+> また，和文用の標準配布のクラスファイルを用いている場合には，disablejfam クラスオプションを適用すれば，数式中に和文文字を直接入れることはできなくなりますが，その代わり数式中で用いる欧文フォントの書体数を 2 個増やすことができます（この場合であっても，“和文文字を \mbox に入れたもの” を数式中で用いることはできます）．
+> なお，bm パッケージを使用していて，かつ，amsmath パッケージによる \boldsymbol で間に合う場合には，bm パッケージの使用を取り止めて \boldsymbol を用いることにするとこのエラーを回避できることがあります．
+
+> 余談ですが，bm パッケージは \boldsymbol を \bm のコピーにします（\let\boldsymbol\bm という設定を含みます）ので，いつでも \boldsymbol で記述しておけば bm パッケージ使用時には \bm で処理されます．
 
 #### ! LaTeX Error: Too many unprocessed floats. {#ob9c5ce7}
 
-未出力のフロート（figure 環境・table 環境などによって配置されるもの）の個数が多すぎて，
-これ以上 figure 環境・table 環境などを使えない状態になったときなどに現れるエラーメッセージです．<br>
-→ 文書中に適宜 \clearpage を入れたり，\topfraction や topnumber カウンタの値などの図版の配置に関するパラメータを変更して，
-未出力の図版が生じにくくなるようにしてください
-（なお，「キャプションがつかない」図表に対しては figure 環境・table 環境を用いる必要はありません）．
-\clearpage を入れる際には afterpage パッケージを併用して \afterpage{\clearpage} のようにするのもよいでしょう．
-真にやむを得ない場合には，
+未出力のフロート（figure 環境・table 環境などによって配置されるもの）の個数が多すぎて，これ以上 figure 環境・table 環境などを使えない状態になったときなどに現れるエラーメッセージです．
 
-```
-\makeatletter
-\count@\z@
-\@whilenum\count@<16\do{%
-   \advance\count@\@ne
-   \expandafter\newinsert\csname bx@\romannumeral\count@\endcsname
-   \@cons\@freelist{\csname bx@\romannumeral\count@\endcsname}}
-\makeatother
-```
+> → 文書中に適宜 \clearpage を入れたり，\topfraction や topnumber カウンタの値などの図版の配置に関するパラメータを変更して，未出力の図版が生じにくくなるようにしてください（なお，「キャプションがつかない」図表に対しては figure 環境・table 環境を用いる必要はありません）．
+> \clearpage を入れる際には afterpage パッケージを併用して \afterpage{\clearpage} のようにするのもよいでしょう．
+> 真にやむを得ない場合には，
+>
+> ```
+> \makeatletter
+> \count@\z@
+> \@whilenum\count@<16\do{%
+>    \advance\count@\@ne
+>    \expandafter\newinsert\csname bx@\romannumeral\count@\endcsname
+>    \@cons\@freelist{\csname bx@\romannumeral\count@\endcsname}}
+> \makeatother
+> ```
+>
+> のような記述をプリアンブルに入れて“保存可能な図版の個数”を増やすこともできます（上記の記述の中の 16 という値は適宜変更して構いませんが，極端に大きくするとエラーが生じます）．
 
-のような記述をプリアンブルに入れて“保存可能な図版の個数”を増やすこともできます
-（上記の記述の中の 16 という値は適宜変更して構いませんが，
-極端に大きくするとエラーが生じます）．
-
-なお，ひとつの段落の中で多数の傍注を用いた場合にもこのエラーが生じることがありますが，
-その場合には当該段落を（適当な位置に {\parfillskip=0pt \par} を挟み込むといった方法で）
-複数の段落に分割してください．
+なお，ひとつの段落の中で多数の傍注を用いた場合にもこのエラーが生じることがありますが，その場合には当該段落を（適当な位置に {\parfillskip=0pt \par} を挟み込むといった方法で）複数の段落に分割してください．
 
 #### ! LaTeX Error: Two \documentclass or \documentstyle commands. {#da43bda4}
 
-文字通り，\documentclass，\documentstyle を複数回用いた場合に現れるエラーメッセージです．<br>
-→ LaTeX 文書では \documentclass（あるいは \documentstyle）はただ 1 回しか使えませんので，
-不要な \documentclass（あるいは \documentstyle）を削除してください．
+文字通り，\documentclass，\documentstyle を複数回用いた場合に現れるエラーメッセージです．
+
+> → LaTeX 文書では \documentclass（あるいは \documentstyle）はただ 1 回しか使えませんので，不要な \documentclass（あるいは \documentstyle）を削除してください．
 
 #### ! LaTeX Error: Two \LoadClass commands. {#zeb70948}
 
-ひとつのクラスファイルの中で \LoadClass を 2 回以上用いたり，
-\LoadClass が含まれるパッケージファイルを（プリアンブルで）\usepackage
-で読み込んだ場合に現れるエラーメッセージです．<br>
-→ クラスファイル中の \LoadClass については，本当に必要なものを 1 個のみ残し，
-ほかの \LoadClass を用いるのは取り止めてください
-（文書クラスというのはその性格上，複数のクラスを同時に用いることはできません）．
-一方，\usepackage で読み込むパッケージの中の \LoadClass については，
-読み込まれるファイルの拡張子を変更して \RequirePackage あたりで済ませてください．
+ひとつのクラスファイルの中で \LoadClass を 2 回以上用いたり，\LoadClass が含まれるパッケージファイルを（プリアンブルで）\usepackage で読み込んだ場合に現れるエラーメッセージです．
+
+> → クラスファイル中の \LoadClass については，本当に必要なものを 1 個のみ残し，ほかの \LoadClass を用いるのは取り止めてください（文書クラスというのはその性格上，複数のクラスを同時に用いることはできません）．
+> 一方，\usepackage で読み込むパッケージの中の \LoadClass については，読み込まれるファイルの拡張子を変更して \RequirePackage あたりで済ませてください．
 
 #### ! LaTeX Error: Undefined color \`<em>colorname</em>&#39;. {#l19cf9b8}
 
-\textcolor などでの色指定に，定義されていない色名 <em>colorname</em>
-を用いた場合に現れるエラーメッセージです．<br>
-→ 指定した色名が正しいものであるかどうかをチェックしてください．
-正しい（はずの）色名を用いている場合には，
-color パッケージに対するオプション指定に usenames を追加してください．
-それでも未定義なら，\definecolor コマンドを用いて色名 <em>colorname</em>
-に対応する色（カラーモデルとパラメータ）を与えることになるでしょう．
+\textcolor などでの色指定に，定義されていない色名 <em>colorname</em> を用いた場合に現れるエラーメッセージです．
+
+> → 指定した色名が正しいものであるかどうかをチェックしてください．
+> 正しい（はずの）色名を用いている場合には，color パッケージに対するオプション指定に usenames を追加してください．
+> それでも未定義なら，\definecolor コマンドを用いて色名 <em>colorname</em> に対応する色（カラーモデルとパラメータ）を与えることになるでしょう．
 
 #### ! LaTeX Error: Undefined tab position. {#y5a7553b}
 
-tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，
-\\> を用いて次のタブ位置に移動するときなどに未設定のタブ位置を使用しようとした場合に上記のエラーメッセージが現れます．<br>
-→ \\= を用いて適切なタブ位置を与えてください（途中の行でタブ位置を追加・変更しても構いません）．
-または，不要な \\>，\\&lt; などがないかどうか調べ，不要なものを削除してください．
+tabbing 環境では \\= によってタブ位置（項目を揃える位置）を設定できますが，\\> を用いて次のタブ位置に移動するときなどに未設定のタブ位置を使用しようとした場合に上記のエラーメッセージが現れます．
+
+> → \\= を用いて適切なタブ位置を与えてください（途中の行でタブ位置を追加・変更しても構いません）．
+> または，不要な \\>，\\&lt; などがないかどうか調べ，不要なものを削除してください．
 
 #### ! LaTeX Error: Unknown graphics extension: <em>extension</em>. {#re9f90fb}
 
-拡張子 <em>extension</em> をもったファイル名の画像ファイルを
-\includegraphics によって取り込む際に，
-graphicx パッケージのオプションで指定した dviware
-ではその拡張子に対応する形式をサポートしていない場合に現れるエラーメッセージ
-（のひとつ）です．<br>
-→ 取り込みたい画像の形式をサポートした dviware を用いるように
-graphicx パッケージのオプション指定を変更するか，
-画像ファイルの形式のほうを適宜変換してください．
+拡張子 <em>extension</em> をもったファイル名の画像ファイルを \includegraphics によって取り込む際に，graphicx パッケージのオプションで指定した dviware ではその拡張子に対応する形式をサポートしていない場合に現れるエラーメッセージ（のひとつ）です．
+
+> → 取り込みたい画像の形式をサポートした dviware を用いるように graphicx パッケージのオプション指定を変更するか，画像ファイルの形式のほうを適宜変換してください．
 
 #### ! LaTeX Error: Unknown option \`<em>option</em>&#39; for package \`<em>package</em>&#39;. {#r7f57ab1}
 
-<em>package</em> パッケージに対して，そのパッケージが理解できないオプション <em>option</em>
+<em>package</em> パッケージに対して，そのパッケージが理解できないオプション <em>option</em> を指定した場合に現れるエラーメッセージです．
 
-を指定した場合に現れるエラーメッセージです．<br>
-→ \usepackage，\RequirePackage（あるいは \PassOptionsToPackage）
-のオプション指定の部分が <em>package</em> パッケージに対して適切なものであるかどうかチェックしてください．
+> → \usepackage，\RequirePackage（あるいは \PassOptionsToPackage）のオプション指定の部分が <em>package</em> パッケージに対して適切なものであるかどうかチェックしてください．
 
 #### ! LaTeX Error: Unknown symbol font \`<em>mathgroup</em>&#39;. {#r9320551}
 
-\DeclareSymbolFontAlphabet を用いて数式用書体変更コマンドを定義しようとしたときに，
-\DeclareSymbolFontAlphabet の第 2 引数が既存の数式グループ名ではない場合のエラーメッセージです．<br>
-→ \DeclareSymbolFontAlphabet の第 2 引数が正しいかどうかをチェックしてください
-（\DeclareSymbolFontAlphabet ではなく \DeclareMathAlphabet
-を用いるべき場合であるかどうかもチェックするとよいでしょう）．
-正しい場合には，\DeclareSymbolFontAlphabet を用いる前に \DeclareSymbolFont を用いて
-\DeclareSymbolFontAlphabet の第 2 引数を数式グループ名として宣言してください．
+\DeclareSymbolFontAlphabet を用いて数式用書体変更コマンドを定義しようとしたときに，\DeclareSymbolFontAlphabet の第 2 引数が既存の数式グループ名ではない場合のエラーメッセージです．
+
+> → \DeclareSymbolFontAlphabet の第 2 引数が正しいかどうかをチェックしてください（\DeclareSymbolFontAlphabet ではなく \DeclareMathAlphabet
+> を用いるべき場合であるかどうかもチェックするとよいでしょう）．
+> 正しい場合には，\DeclareSymbolFontAlphabet を用いる前に \DeclareSymbolFont を用いて \DeclareSymbolFontAlphabet の第 2 引数を数式グループ名として宣言してください．
 
 #### ! LaTeX Error: \usepackage before \documentclass. {#labd30d2}
 
-文字通り，\usepackage を \documentclass よりも前で用いた場合に現れるエラーメッセージです．<br>
-→ \usepackage を \documentclass コマンドと \begin{document} の間の部分に移動してください．
-何らかのパッケージを \documentclass より先に読み込まざるを得ない場合には，
-\RequirePackage を使えば読み込めます．
+文字通り，\usepackage を \documentclass よりも前で用いた場合に現れるエラーメッセージです．
+
+> → \usepackage を \documentclass コマンドと \begin{document} の間の部分に移動してください．
+> 何らかのパッケージを \documentclass より先に読み込まざるを得ない場合には，\RequirePackage を使えば読み込めます．
 
 #### ! LaTeX Error: Variable name ended by end of line.. {#m10ee5a0}
 
-program パッケージ使用時に，行末にいたっても“変数名”の記述
-（文字 | で挟まれた部分）が終わらない場合に現れるエラーメッセージです．<br>
-→ 変数名部分の開始・終了の対応をチェックしてください．
+program パッケージ使用時に，行末にいたっても“変数名”の記述（文字 | で挟まれた部分）が終わらない場合に現れるエラーメッセージです．
+
+> → 変数名部分の開始・終了の対応をチェックしてください．
 
 #### ! LaTeX Error: \verb ended by end of line. {#c70f9d04}
 
-文字通り，行末にいたっても \verb の範囲が終わっていない場合に現れるエラーメッセージです．<br>
-→ \verb+...; のように \verb の適用範囲を挟む文字が異なる文字になっている箇所を探し，
-\verb の適用範囲を同じ文字で挟むように書き換えてください．
+文字通り，行末にいたっても \verb の範囲が終わっていない場合に現れるエラーメッセージです．
+
+> → \verb+...; のように \verb の適用範囲を挟む文字が異なる文字になっている箇所を探し，\verb の適用範囲を同じ文字で挟むように書き換えてください．
 
 #### ! LaTeX Error: \verb illegal in command argument. {#ycd00145}
 
-\verb をほかのコマンドの引数の中（例えば，脚注のテキストや \section などの見出し文字列）
-で用いた場合に現れるエラーメッセージです．<br>
-→ \verb は（原則として）ほかのコマンドの引数の中では使えないので，
-\texttt などを用いて書き換えてください．
-特殊文字に関しては \symbol{\`\\^}，\symbol{\`\\\\} のように記述することができます．
+\verb をほかのコマンドの引数の中（例えば，脚注のテキストや \section などの見出し文字列）で用いた場合に現れるエラーメッセージです．
+
+> → \verb は（原則として）ほかのコマンドの引数の中では使えないので，\texttt などを用いて書き換えてください．
+> 特殊文字に関しては \symbol{\`\\^}，\symbol{\`\\\\} のように記述することができます．
 
 #### ! LaTeX Error: Verbatim file <em>filename</em> is empty. {#dd107e8f}
 
-fancybox パッケージによる \VerbatimInput などで読み込んだファイル
-<em>filename</em> が空である場合に現れるエラーメッセージです．<br>
+fancybox パッケージによる \VerbatimInput などで読み込んだファイル <em>filename</em> が空である場合に現れるエラーメッセージです．
 
-→ まず，読み込み対象のファイル名を確認してください．ファイル名が正しい場合には，
-ファイルの中身が意図どおりのものであるかどうかをチェックしてください．
-本当に空のファイルを読み込ませる場合には…
-（ファイルを読み込んだとしても何も出力されないわけですから）
-当該箇所の \VerbatimInput などを用いるのを取り止めても構わないでしょう．
+> → まず，読み込み対象のファイル名を確認してください．
+> ファイル名が正しい場合には，ファイルの中身が意図どおりのものであるかどうかをチェックしてください．
+> 本当に空のファイルを読み込ませる場合には…
+> （ファイルを読み込んだとしても何も出力されないわけですから）当該箇所の \VerbatimInput などを用いるのを取り止めても構わないでしょう．
 
 #### ! LaTeX must be made using an initex with no format preloaded. {#p6f247ba}
 
-フォーマットファイル latex.fmt/platex.fmt の作成の際に，
-ファイル latex.ltx の読み込みを開始した時点ですでに文字 { のカテゴリーコードが
-1 になっている（すなわち，すでにほかのフォーマットファイルが読み込まれていると想定される）
-場合に現れるエラーメッセージです．<br>
-→ フォーマットファイル latex.fmt/platex.fmt を作成する場合には，
-ほかのフォーマットファイルを読み込まない状態でファイル latex.ltx
-あるいは platex.ltx を処理してください．
+フォーマットファイル latex.fmt/platex.fmt の作成の際に，ファイル latex.ltx の読み込みを開始した時点ですでに文字 { のカテゴリーコードが 1 になっている（すなわち，すでにほかのフォーマットファイルが読み込まれていると想定される）場合に現れるエラーメッセージです．
 
-> なお，一般には tex -ini "&amp;tex" otherfmt のような具合に，
-> あるフォーマットに別の定義を追加したフォーマットファイルを作成することができますが，
-> LaTeX/pLaTeX のフォーマットファイルを作成する際にはそのようなことはしないでください，
-> ということです．
+> → フォーマットファイル latex.fmt/platex.fmt を作成する場合には，ほかのフォーマットファイルを読み込まない状態でファイル latex.ltx あるいは platex.ltx を処理してください．
+
+> なお，一般には tex -ini "&amp;tex" otherfmt のような具合に，あるフォーマットに別の定義を追加したフォーマットファイルを作成することができますが，LaTeX/pLaTeX のフォーマットファイルを作成する際にはそのようなことはしないでください，ということです．
 
 #### ! LaTeX source files more than 5 years old!. {#ie24ee78}
 
 文字通りです．
-5 年前より昔の latex.ltx を用いてフォーマットファイルを作成しようとした場合に現れるエラーメッセージです．<br>
-→ LaTeX システム全体を更新しましょう．
+5 年前より昔の latex.ltx を用いてフォーマットファイルを作成しようとした場合に現れるエラーメッセージです．
+
+> → LaTeX システム全体を更新しましょう．
 
 #### ! Multicol Error. {#f4ab81e2}
 
-multicol パッケージによる multicols 環境において，内部処理に用いられるコマンド
-\page@sofar が垂直モードでない箇所で用いられた場合に現れるエラーメッセージですが…
+multicol パッケージによる multicols 環境において，内部処理に用いられるコマンド \page@sofar が垂直モードでない箇所で用いられた場合に現れるエラーメッセージですが…
 通常の文書においてはこのエラーメッセージにお目にかかることはないでしょう．
+とりあえず次のようなことをすれば，このメッセージを目にすることができます．
 
-> とりあえず次のようなことをすれば，このメッセージを目にすることができます．
->
-> ```
-> \documentclass{article}
-> \usepackage{multicol}
-> \begin{document}
-> \begin{minipage}{200pt}
-> \begin{multicols}{3}
-> ...
-> \aftergroup\leavevmode
-> \end{multicols}
-> \end{minipage}
-> \end{document}
-> ```
->
+```
+\documentclass{article}
+\usepackage{multicol}
+\begin{document}
+\begin{minipage}{200pt}
+\begin{multicols}{3}
+...
+\aftergroup\leavevmode
+\end{multicols}
+\end{minipage}
+\end{document}
+```
 
 #### ! No declaration for shape <em>attributes</em>. {#e9990ea5}
 
-（sub/ssub サイズ関数を用いた）フォントの代替の際に，
-代替先の属性 <em>attributes</em> のフォント定義がなされていない場合に現れるエラーメッセージです．<br>
-→ 代替元のフォント定義を修正して適切な代替先に変更するか，
-属性 <em>attributes</em> のフォント定義を追加してください．
+（sub/ssub サイズ関数を用いた）フォントの代替の際に，代替先の属性 <em>attributes</em> のフォント定義がなされていない場合に現れるエラーメッセージです．
+
+> → 代替元のフォント定義を修正して適切な代替先に変更するか，属性 <em>attributes</em> のフォント定義を追加してください．
 
 <!-- ***! No definitions for language `'''langname'''&#39; found! -->
 <!-- backref パッケージあるいは hyperref パッケージの内部処理において -->
@@ -1044,28 +959,19 @@ multicol パッケージによる multicols 環境において，内部処理に
 
 #### ! OOPS! I can't find any kinsoku patterns for japanese<br>Think of getting some or the platex2e setup will never succeed. {#ia9997a1}
 
-前者はフォーマットファイル latex.fmt/platex.fmt の作成時にファイル hyphen.tex
-を読み込むことができなかった場合に現れるエラーメッセージで，
-後者はフォーマットファイル platex.fmt の作成時にファイル kinsoku.tex
-を読み込むことができなかった場合に現れるエラーメッセージです．<br>
-→ TeX/LaTeX システムで用いる各種のファイルが正しくインストールされているかどうかをチェックしてください．
-TeX/LaTeX システムを更新したような場合には，各種の環境変数（例えば，TEXINPUTS）
-の値が正しいかどうかにも注意してください．
+前者はフォーマットファイル latex.fmt/platex.fmt の作成時にファイル hyphen.tex を読み込むことができなかった場合に現れるエラーメッセージで，後者はフォーマットファイル platex.fmt の作成時にファイル kinsoku.tex を読み込むことができなかった場合に現れるエラーメッセージです．
+
+> → TeX/LaTeX システムで用いる各種のファイルが正しくインストールされているかどうかをチェックしてください．
+> TeX/LaTeX システムを更新したような場合には，各種の環境変数（例えば，TEXINPUTS）の値が正しいかどうかにも注意してください．
 
 #### ! Undefined font size function <em>function</em>. {#pdc7ca68}
 
-tracefnt パッケージ使用時に，フォント定義の中に未定義のサイズ関数 <em>function</em>
-が現れているような属性のフォントを用いようとした場合に現れるエラーメッセージです．<br>
-→ 問題となっているサイズ関数 <em>function</em> が含まれているような
-fd ファイルなどでのフォント定義を修正するか，
-サイズ関数 <em>function</em> に対応する処理を（\DeclareSizeFunction を用いて）
-与えてください．
-なお，サイズ関数 <em>function</em> がどの属性のフォントのフォント定義に現れているかは，
-このエラーメッセージには表示されないので，修正すべきフォント定義については
-log ファイル中のほかの記述などを調べて割り出してください．
+tracefnt パッケージ使用時に，フォント定義の中に未定義のサイズ関数 <em>function</em> が現れているような属性のフォントを用いようとした場合に現れるエラーメッセージです．
 
-> tracefnt パッケージを使用していない場合には，未定義のサイズ関数が用いられたとしても，
-> 単に“Font <em>attributes</em> not found.”のエラーになるだけです．
+> → 問題となっているサイズ関数 <em>function</em> が含まれているような fd ファイルなどでのフォント定義を修正するか，サイズ関数 <em>function</em> に対応する処理を（\DeclareSizeFunction を用いて）与えてください．
+> なお，サイズ関数 <em>function</em> がどの属性のフォントのフォント定義に現れているかは，このエラーメッセージには表示されないので，修正すべきフォント定義については log ファイル中のほかの記述などを調べて割り出してください．
+
+> tracefnt パッケージを使用していない場合には，未定義のサイズ関数が用いられたとしても，単に“Font <em>attributes</em> not found.”のエラーになるだけです．
 
 <!-- とりあえず，ファイル latex.ltx などにあるものをチェックしました． -->
 <!-- 各種パッケージが（パッケージのエラー・警告としてではなく） -->
