@@ -335,7 +335,7 @@ BXJS クラスでは使用するエンジンの種類をオプションとして
 
 #### BXJS クラスの“標準設定”使用時に graphicx にオプションを与えたい場合 (XeLaTeX / LuaLaTeX) {#oe701641}
 
-以下のように，BXJS クラスの“標準設定”使用時に XeLaTeX / LuaLaTeX 文書で graphicx パッケージにオプションを与えて読み込むとエラー <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
+以下のように，BXJS クラスの“標準設定”使用時に XeLaTeX / LuaLaTeX 文書で [graphicx](/graphicx/) パッケージにオプションを与えて読み込むとエラー <strong>! LaTeX Error: Option clash for package graphicx.</strong> が発生します．
 これは，BXJS クラスの XeLaTeX 用標準設定では zxjatype パッケージを通して fontspec パッケージが読み込まれるのですが，この fontspec が graphicx をオプション無しで読み込んでいるためです．
 LuaLaTeX 用標準設定でも fontspec が使われるため，同じ理由でエラーが発生します．
 
