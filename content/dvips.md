@@ -206,8 +206,12 @@ A4 にするには，ジョブオプションの設定でページサイズを�
 
 #### 図の挿入 {#e0b06e9a}
 
-図を挿入する際には
- \usepackage\[dvips\]{graphicx}
+図を挿入する際には [graphicx](/graphicx/) パッケージに
+
+```
+\usepackage[dvips]{graphicx}
+```
+
 のように dvips オプションを指定します．
 図として EPS を挿入できます．
 
