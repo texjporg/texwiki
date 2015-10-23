@@ -238,7 +238,7 @@ LaTeX ファイル中では
 ```
 
 のようにします．
-graphicx パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます．
+[graphicx](/graphicx/) パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます．
 
 ```
 \usepackage[dvipdfmx]{graphicx}
