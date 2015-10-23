@@ -17,7 +17,7 @@ pukiwiki: "extractbb の自動実行許可の設定"
 <!-- 初級者向きであり，「Kpathsearch の仕組み」や -->
 <!-- 「外部コマンドとの連携」の詳細に立ち入ることは避ける． -->
 
-LaTeX + dvipdfmx で graphicx パッケージを用いて（EPS 形式以外の）画像を読み込むには，画像のサイズ（バウンディングボックス）を取得するために extractbb という外部コマンドを実行する必要があります．
+LaTeX + [dvipdfmx](/dvipdfmx/) で [graphicx](/graphicx/) パッケージを用いて（EPS 形式以外の）画像を読み込むには，画像のサイズ（バウンディングボックス）を取得するために extractbb という外部コマンドを実行する必要があります．
 画像ファイルごとに都度 extractbb を起動するのは面倒なので，現在では「LaTeX の実行中に内部で自動で extractbb を呼び出す」方式が推奨されています．
 
 最近の TeX 環境（W32TeX，TeX Live 2015 以降，MacTeX-2015 以降）[^1]では extractbb の自動実行は既定で許可されていますが，古い環境では許可を与える設定をユーザが事前に行う必要があります．[^2]ここではその手順を解説します．
@@ -137,6 +137,7 @@ W32TeX では extractbb の自動実行が既定で許可されているので�
     ```
 
 ※この手順に従った場合，設定内容は “.../texlive/20XX/texmf.cnf” に書き込まれます．
+[texmf.cnf ファイル](</texmf.cnf ファイル/>)も参照してください．
 
 <!-- TODO: Linux の OS 付属の（tlmgr がない）TeX Live の話 -->
 
