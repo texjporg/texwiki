@@ -83,7 +83,7 @@ dvipdfmx の場合は dvipdfmx.def，dvips の場合は dvips.def，pdfLaTeX の
 - EPS などそれ以外については直接 BoundingBox と書かれた場所を探して読む
 
 のように定義されています。
-LaTeX はこの定義に単に従うことで，画像の内容については感知せずに済むわけです。
+LaTeX はこの定義に単に従うことで，画像の内容については関知せずに済むわけです。
 
 [先ほど](/graphicx/#driver-color) graphicx (graphics) と color が “ドライバ依存” の扱いを完全に共有していると述べましたが，これは graphicx も color も全く同じ .def ファイルを読み込むという意味です。
 
