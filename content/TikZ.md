@@ -66,7 +66,7 @@ dviware の指定をしてから，tikz パッケージを読み込みます。
     \documentclass[uplatex,dvipdfmx]{jsarticle}
     ```
 
-- dvipdfmx をグローバル指定すると都合が悪い場合は，graphicx パッケージのオプションが PGF に自動的に適用されますので以下のように指定します（pgf 自身，graphicx を読み込みます）。
+- dvipdfmx をグローバル指定すると都合が悪い場合は，[graphicx](/graphicx/) パッケージのオプションが PGF に自動的に適用されますので以下のように指定します（pgf 自身，graphicx を読み込みます）。
 
     ```
     \usepackage[dvipdfmx]{graphicx}%
