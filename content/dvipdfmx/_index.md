@@ -10,10 +10,8 @@ pukiwiki: "dvipdfmx"
 
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
-<!-- dvipdfmxはナントカboxの扱いに深刻な問題があります。 -->
-<!-- ↑深刻な問題とは何ですか？ -->
-<!-- (あれ，やっと http://acetaminophen.hatenablog.com/entry/2015/10/19/211705 で -->
-<!-- 解決したと思ったのだけど．) -->
+<!-- ↓とりあえず、しかるべき場所に移動. -->
+<!-- dvipdfmxはナントカboxの扱いに深刻な問題があります。明らかなPDFの仕様違反であることが散々指摘されていますが、直りません。 -->
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
@@ -853,6 +851,14 @@ EPS ファイルを使っていないか確認しましょう．EPS を PDF へ�
 
 ## 不具合 {#f5e1d97d}
 
+### PDF画像のバウンディングボックス判定に関する問題 {#b5c7c5ee}
+
+dvipdfmxはナントカboxの扱いに深刻な問題があります。明らかなPDFの仕様違反であることが散々指摘されていますが、直りません。 <!-- ↑深刻な問題とは何ですか？ --> <!-- (あれ，やっと http://acetaminophen.hatenablog.com/entry/2015/10/19/211705 で --> <!-- 解決したと思ったのだけど．) -->
+
+<!-- FIXME -->
+
+（※この項目は書きかけです。）
+
 ### dvipdfmx Version 20130624 でのみ起こる不具合 {#j774c931}
 
 以下の不具合はいずれも TeX Live 2014 (dvipdfmx Version 20140317), TeX Live 2013 (dvipdfmx-20130405) では問題ない，Version 20130624 に特有のものです．
@@ -1017,6 +1023,7 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 - [DVI specials for PDF generation](http://project.ktug.org/dvipdfmx/doc/tb94cho.pdf) (PDF)
 - [EPS の負座標が欠ける問題](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8840)
 - [dvipdfm(x)にはご注意を](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&log=5586)
+- [いかなる意味の印刷もしないのならばdvipdfmxの利用は考えてもいいかもしれない](https://twitter.com/p_typo/status/624638576509059072)
 
 ### ライセンス {#w1524716}
 
