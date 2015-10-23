@@ -13,6 +13,9 @@ graphicx は，LaTeX ドキュメントに画像を挿入したり，テキス�
 基本的な使いかたについては [LaTeX 入門/図表](</LaTeX入門/図表/>)で解説されていますが，graphicx パッケージは初心者にとって扱いの難しいものです。
 [TeX Forum](https://oku.edu.mie-u.ac.jp/tex/) での質問頻度もかなり高い部類に入りますので，この項目で詳しく説明します。
 
+graphics というパッケージもありますが，graphicx はこれを高機能にしたものと考えて結構です（ただし graphicx は内部で graphics を読み込みます）。
+この項目ではより高機能で用途の広い graphicx を対象に説明しますが，ドライバ依存についての説明は graphicx だけでなく graphics にも通用します。
+
 ***
 
 ***
