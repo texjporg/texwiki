@@ -448,7 +448,7 @@ dvipdfmx がサポートする画像フォーマットは PNG，JPEG，BMP，JPE
 
 LaTeX における画像の取扱いについての基礎知識は，「[LaTeX入門/図表](</LaTeX入門/図表/>)」の項目を参照してください．
 
-graphicx パッケージを用いて画像をとり込む場合は dvipdfmx オプションをつけて graphicx パッケージを読み込みます：
+[graphicx](/graphicx/) パッケージを用いて画像をとり込む場合は dvipdfmx オプションをつけて graphicx パッケージを読み込みます：
 
 ```
  \usepackage[dvipdfmx]{graphicx}
