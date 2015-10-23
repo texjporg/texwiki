@@ -62,8 +62,7 @@ dvi2ps や jdvi2kps を仮定した書き方はできません。
 
 ### 図の入れ方 {#p6c5ac8a}
 
-LaTeX2e なら graphics
-パッケージまたはより高機能の graphicx パッケージを使います。
+LaTeX2e なら graphics パッケージまたはより高機能の [graphicx](/graphicx/) パッケージを使います。
 プリアンブルに
 
 ```
