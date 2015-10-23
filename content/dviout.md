@@ -256,7 +256,7 @@ dviout は，「ニコニコマーク」ボタン（dvipdfm\[x\] の起動ボタ
 メニューバーから \[View\] → \[Change Tool Buttons\] を選択すると現れます。
 PDF 化は dviout から dvipdfmx を起動して行われるので，各種設定には dvipdfmx 側の設定を正しく行う必要があります。
 
-ただし，graphicx や color 等の「ドライバ依存」があるパッケージを使用する場合は注意が必要です。
+ただし，[graphicx](/graphicx/) や color 等の「ドライバ依存」があるパッケージを使用する場合は注意が必要です。
 このようなパッケージを使う場合，一般には
 
 ```
