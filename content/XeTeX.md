@@ -99,7 +99,7 @@ xdvipdfmx は dvipdfmx を XeTeX 用に拡張したものである。<br>
 
 #### graphics パッケージ，graphicx パッケージ，color パッケージ {#r1d77dc8}
 
-graphics パッケージ，graphicx パッケージ，color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。<br>
+[graphics](/graphicx/) パッケージ，[graphicx](/graphicx/) パッケージ，color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。<br>
 付加しないと動作しない場合は \[xetex\]
 オプションを付加する。<br>
 
