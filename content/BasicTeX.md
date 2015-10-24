@@ -40,6 +40,11 @@ UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX�
 TeX Live のアップデートは，同じく環境設定パネルから「TeX コンポーネントのアップデート」で行います。
 （これはバックグラウンドで [tlmgr](/tlmgr/) をターミナルに実行させています。）
 
+以下のインストールのやり方などの事例も参照してください。
+
+- [El CapitanでDrag &amp; Drop UpTeX を使って日本語TeX環境を整える](http://ijairai.hatenablog.com/entry/2015/10/24/170311)
+    - 当該ページの TeXShop の設定（特に upTeX (ptex2pdf) を使うのに ShiftJIS に設定変更している部分）は誤りだが、他のスクリーンショットは参考になる。
+
 ### （本家）BasicTeX のインストール {#i5822f30}
 
 [More Packages - MacTeX](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](/MacTeX/#mirror) から BasicTeX.pkg をダウンロードします。
