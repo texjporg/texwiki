@@ -46,11 +46,11 @@ pukiwiki: "TeXstudio/設定"
 
 {{< children >}}
 
-を参照して platex, pbibtex, biber, dvipdfmx, latexmk などの設定をします．
+を参照して uplatex, upbibtex, upmendex, biber, dvipdfmx, latexmk などの設定をします．
 
 ### ビルド {#cb495de1}
 
-pLaTeX + dvipdfmx を実行して PDF ファイルを表示する場合は
+upLaTeX + dvipdfmx を実行して PDF ファイルを表示する場合は
 
 - 既定のコンパイラ：「LaTeX」
 - ビルド &amp; 表示：「DVI->PDFチェーン」
@@ -76,7 +76,7 @@ pLaTeX + dvipdfmx を実行して PDF ファイルを表示する場合は
 
 ### 詳細なエディタ設定 {#wbe91d52}
 
-Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれる場合は，ここで回避策を行います．
+Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする場合は，ここで回避策を行います．
 この設定は「高度なオプションの表示」を ON にしてから行います．
 
 1. ハック/回避策の「最適なディスプレイオプションの自動選択」を OFF にします．
