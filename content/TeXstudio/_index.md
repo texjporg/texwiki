@@ -90,7 +90,7 @@ export PATH=$PATH:/Library/TeX/texbin
 
 - [TeXstudio - A LaTeX Editor / Bugs](http://sourceforge.net/p/texstudio/bugs/)
 
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする {#ped67bdd}
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
 
 Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．<br>
 高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．<br>
