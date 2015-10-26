@@ -218,6 +218,8 @@ ABCDEあいうえお①
 \end{document}
 ```
 
+#### [BXjsclsを使ったXeLaTeXのときだけparagraphの前にblacksquareが現れない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1704) {#k0a25489}
+
 ### 使い方 {#v46b0c77}
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
