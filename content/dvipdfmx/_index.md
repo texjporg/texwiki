@@ -15,7 +15,7 @@ pukiwiki: "dvipdfmx"
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
-現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています．
+現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
 
@@ -885,6 +885,8 @@ dvipdfmx は，PDF 画像のバウンディングボックス判定は独自の�
 <!-- dvipdfmx のソースを見ると，バウンディングボックス取得ルーチンとして，あえて「互換モード」が用意されていることが分かります． -->
 <!-- 「dvipdfmx であってかつ pagebox オプション未指定の場合」にのみあえて「互換モード」が発動するように設計されています． -->
 <!-- ですから，この仕様は今後も変わる予定はないと思われます． -->
+<!-- // 補足説明，ありがとうございます． -->
+<!-- // 「不具合」のところに誰かが記述を移したようなので困っていたのですが，適切なところに移していただいて助かります． -->
 
 ## 不具合 {#f5e1d97d}
 
@@ -1068,3 +1070,5 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 - \[[latexfmxdef\] Index of /trunk](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/)
     - [log](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/?view=log)
     - [ChangeLog](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/ChangeLog?view=markup)
+
+[^1]: ただし，完全に同じというわけではありません．W32TeX には dvipdfmo というプログラムも存在し，そちらは完全に古い dvipdfm と同じ動作をします．
