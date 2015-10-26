@@ -127,6 +127,18 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 ファイルをゴミ箱に捨てた後で「ゴミ箱を空にする...」ことできない場合は、
 一度 TeXShop を終了させてから、もう一度ゴミ箱を空にしてみて下さい。
 
+### ソース上何も問題ないはずなのに，Text line contains an invalid character. ^^H や Package inputenc Error: Keyboard character used is undefined (inputenc) in inputencoding \`utf8' というエラーが出てコンパイルできない {#tb887cbe}
+
+これは TeXShop というより，OS X 標準の日本語入力システムが持っているバグです。
+10.10 Yosemite でそのバグが入り込んできました。
+日本語入力中に delete キーを押すと，カーソルの前の文字が消えるはずのところが，場合によっては backspace を表す制御コード \x08 が入力されてしまうことがあるようです。
+見た目には何も見えませんが，カーソルキーで1文字ずつカーソルを動かしたときに，何もない場所でカーソル移動が空振りする場所があれば，そこに見えない制御コードが入っています。
+これが入っていると，不正な UTF-8 文字列と見なされ，コンパイルに失敗します。
+
+これを除去するには，正規表現一括置換で \x{08} を削除するのがよいでしょう。
+
+- [参考](https://twitter.com/doraTeX/status/657583498316779521)
+
 ## よくある質問 {#b75d05b6}
 
 ### 日本語のファイル名は使えますか？ {#z411776b}
