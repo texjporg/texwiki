@@ -11,13 +11,16 @@ pukiwiki: "Ghostscript/OS X"
 
 ## Ghostscript for OS X {#ccf6bfc2}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
 以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
 
 OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>El Capitan 付属のヒラギノフォントを Ghostscript から利用することはできません。</strong></span>
+なお，リンク先には El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](http://www.adobe.com/jp/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
 - [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1173)
