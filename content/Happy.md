@@ -53,7 +53,7 @@ pdflock=Yes
 pdfopen="%f"
 pdfjump=acroviewR15/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
-pdfviewer=C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe
+pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
 pdflock=No
 pdfopen=-reuse-instance "%f"
