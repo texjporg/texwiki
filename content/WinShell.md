@@ -420,7 +420,7 @@ LaTeXを先に実行 のチェックを外します。<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins> (32-bit 版 Windows の場合)<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
@@ -524,7 +524,7 @@ LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins> (32-bit 版 Windows の場合)<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">GSView　　　　　　　　　　　　</span><br>
@@ -561,7 +561,7 @@ PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用し
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins> (32-bit 版 Windows の場合)<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
@@ -612,7 +612,7 @@ WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins> (32-bit 版 Windows の場合)<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
@@ -655,7 +655,7 @@ DVIView を [SumatraPDF](/SumatraPDF/) に変更します。
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe"</ins> (64-bit 版 Windows の場合) <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins> (32-bit 版 Windows の場合)<br>
+　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
 　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
@@ -706,7 +706,7 @@ DVIView を [SumatraPDF](/SumatraPDF/) に変更します。
 
 ### inverse search {#jda19218}
 
-inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆順検索コマンドラインの設定\] に
+inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下のように設定します。
 
 - 64-bit 版 Windows の場合
 
@@ -719,8 +719,6 @@ inverse search は SumatraPDF の \[設定(S)\]-\[オプション(O)...\]-\[逆�
     ```
     "C:\Program Files\WinShell\WinShell.exe" -c "%f" -l %l
     ```
-
-です。
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします。
 
