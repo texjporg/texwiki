@@ -62,7 +62,6 @@ TeXstudio/インストール を参照．
 - [http://sourceforge.net/p/texstudio/hg/ci/tip/log/](http://sourceforge.net/p/texstudio/hg/ci/tip/log/)
 - [http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt)
 - [http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt)
-- [http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW](http://anastashia.github.io/texstudio_jp_manual/#SECTIONNEW)
     <!-- -http://www.ohloh.net/p/texstudio/commits -->
 
 <!-- **日本語化 [#ibfc5135] -->
@@ -365,6 +364,8 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](http://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
 - [http://www.okomeda.net/?TeXStudio](http://www.okomeda.net/?TeXStudio)
+- [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
+- [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
 - [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 - [TexStudioで最初にする設定](http://kamiwo-koete.hatenablog.jp/entry/2014/12/30/101759)
 - [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
