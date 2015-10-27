@@ -182,15 +182,11 @@ LuaLaTeX
 外部PDFビューア
 : &nbsp;
 
-: "C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
+: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
 
 : "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files\TeXstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
 
-: dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
-
 : dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
-
-: dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
 : dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
@@ -293,7 +289,7 @@ forward and inverse search は 外部PDFビューア に以下のように設定
 ■ 64-bit Windows の場合 (コマンドラインオプションを使用する場合)
 
 ```
-"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
+"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files (x86)\TeXstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
 ```
 
 ■ 32-bit Windows の場合 (コマンドラインオプションを使用する場合)
@@ -308,14 +304,6 @@ forward and inverse search は 外部PDFビューア に以下のように設定
 
 forward search は 外部PDFビューア に以下のように設定します．<br>
 
-■ 64-bit Windows の場合 (DDE を使用する場合)
-
-```
-dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
-```
-
-■ 32-bit Windows の場合 (DDE を使用する場合)
-
 ```
 dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
 ```
@@ -323,14 +311,6 @@ dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSear
 #### SumatraPDF を前面に表示したくない場合 {#pa03cf5d}
 
 forward search は 外部PDFビューア に以下のように設定します．<br>
-
-■ 64-bit Windows の場合 (DDE を使用する場合)
-
-```
-dde:///"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
-```
-
-■ 32-bit Windows の場合 (DDE を使用する場合)
 
 ```
 dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
