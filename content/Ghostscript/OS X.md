@@ -13,12 +13,22 @@ pukiwiki: "Ghostscript/OS X"
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
+### OS X 10.11 El Capitan に関する注意 {#b50634ac}
+
+以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
+
+OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>El Capitan 付属のヒラギノフォントを Ghostscript から利用することはできません。</strong></span>
+
+- [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
+- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1173)
+- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1177)
+
 ### 配布先 {#see6fdd7}
 
-- [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
-    - [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。](http://www.muskmelon.jp/?p=1177)
-    - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
+- [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
+    - [Ghostscript | 検索結果:  | マスクメロン](http://www.muskmelon.jp/?s=Ghostscript)
+    - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 - [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb)
 - [https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile)
 - [https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile)
