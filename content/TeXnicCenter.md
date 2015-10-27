@@ -280,7 +280,6 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins><br>
 　　　　　　　　　　　　　　　　　　　<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 
 <br>
@@ -713,9 +712,7 @@ Executable path<br>
 
 <br>
 
-<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
-
-<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
 
 <br>
 
@@ -754,9 +751,7 @@ Executable path<br>
 
 <br>
 
-<ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
-
-<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f', '%l')\]\\""</ins><br>
+<ins>C:\Program Files\SumatraPDF\SumatraPDF.exe -reuse-instance -inverse-search "\\"C:\Program Files\TeXnicCenter\TeXnicCenter.exe\\" /ddecmd \\"\[goto('%f','%l')\]\\""</ins><br>
 
 <br>
 
