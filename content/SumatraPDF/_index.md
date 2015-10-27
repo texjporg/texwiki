@@ -21,7 +21,8 @@ PDF ファイルだけではなく PostScript ファイルも表示可能です�
 
 ### インストール {#r04b7fad}
 
-[SumatraPDF 公式サイト（日本語）](http://www.sumatrapdfreader.org/free-pdf-reader-ja.html) からリンクをたどり，インストーラをダウンロードします．
+[SumatraPDF 公式サイト（日本語）](http://www.sumatrapdfreader.org/free-pdf-reader-ja.html) のダウンロードをクリックしてインストーラーをダウンロードします．
+64-bit Windows であれば 64-bit builds のインストーラーをダウンロードします．
 後はダブルクリックし指示に従えばインストールが完了します．
 
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
