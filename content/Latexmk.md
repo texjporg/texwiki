@@ -54,7 +54,7 @@ $bibtex = 'pbibtex %O %B';
 $dvipdf = 'dvipdfmx %O -o %D %S';
 $makeindex = 'mendex %O -o %D %S';
 $max_repeat = 10;
-$pdf_previewer = '"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
+$pdf_previewer = '"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
 ```
 
 %S はソースファイル，%O はオプション，%D は出力ファイル，%B は拡張子無しのソースファイルに置き換えられます．なお，これらを省略しても latexmk は適当に補完をしてくれます．このファイルを .latexmkrc としてホームディレクトリに保存してください．
