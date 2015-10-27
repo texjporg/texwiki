@@ -54,6 +54,7 @@ TeX Wiki は誰でも編集できます．
 - pTeX / upTeX でヒラギノフォントを利用することは，適切に設定すれば可能です（[別の場所](</TeX Live/Mac/#elcapitan>)で解説します；小川版 Drag &amp; Drop UpTeX は既定で設定完了）。
 - LuaTeX-ja でヒラギノフォントを利用するには [LuaTeX beta-0.81.0 以降](/LuaTeX/) に更新する必要があります。
 - 游フォントを利用することは困難です（游明朝体のフォントの形式が特殊であるため，現状では工夫しても限定的な利用しかできません）。
+- Ghostscript でヒラギノフォントを利用することはできません。
 
 これらのことを考慮し，El Capitan へのアップグレードは慎重に行ってください。
 詳細は [OS X El Capitan への対応](</TeX Live/Mac/#elcapitan>) も参照してください。
