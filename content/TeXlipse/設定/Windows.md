@@ -342,7 +342,7 @@ PDF ファイルを表示するための設定をします．
 　itexmac ()<br>
 　kdvi ()<br>
 　gv ()<br>
-　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))<br>
+　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　acroread ()<br>
 　none ()<br>
 
@@ -390,7 +390,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
+<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[　　　　　編集(E)...　　　　　\]</span>　</span>　</span><br>
 
 ***
 
@@ -399,7 +399,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe</ins> (64-bit Windows の場合) <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins> (32-bit Windows の場合)<br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\SumatraPDF\SumatraPDF.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>-reuse-instance "&#x25;fullfile" -forward-search "&#x25;texfile" &#x25;line</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[ForwardSearch("%fullfile","%texfile",%line,0,0,1)\]</ins><br>
@@ -449,7 +449,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 SumatraPDF を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))　</span><br>
+> <span style="color:White;background-color:#1188FF;">　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -662,7 +662,7 @@ Adobe Acrobat Reader DC を使用する場合は，
 <br>
 
 　ビューアー構成 (優先度降順)：<br>
-　sumatra PDF (C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe (64-bit Windows の場合) C:\Program Files\SumatraPDF\SumatraPDF.exe (32-bit Windows の場合))<br>
+　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
 　TeXworks (C:\texlive\2015\tlpkg\texworks\texworks.exe)<br>
 　TeXstudio (C:\Program Files (x86)\TeXstudio\texstudio.exe (64-bit Windows の場合) C:\Program Files\TeXstudio\texstudio.exe (32-bit Windows の場合))<br>
 　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
