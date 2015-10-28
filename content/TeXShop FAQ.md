@@ -139,15 +139,17 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 - [参考](https://twitter.com/doraTeX/status/657583498316779521)
 
+一般には，改行やタブを除く制御文字を一括で取り除くとよいでしょう。
+\[[\u0000-\u0008\u000E-\u001F\u007F-\u0084\u0086-\u009F\u000B\u000C\u0085\u2028\u2029\] という正規表現で取り除く](https://twitter.com/monokano/status/659530759040974848)のがよさそうです。
+
 ## よくある質問 {#b75d05b6}
 
-### 日本語のファイル名は使えますか？ {#z411776b}
+### ファイル名に日本語やスペースは使えますか？ {#z411776b}
 
-基本的に使わない方がいいと思います。 TeXShop は日本語ファイル名に対応していますが、 tex の処理がうまく実行されないことがよくあります。
+TeX エンジンおよび設定の如何によって，使える場合と使えない場合があります。
+ただし，トラブルの原因になることが多いですので，何かトラブルが生じた際には，まずはファイル名（読み込まれる他の TeX ソースや画像ファイルも含む）を半角英数字のみにしてみてください。
 
-### ファイル名にスペースは使えますか？ {#q520f1c9}
-
-使わないで下さい。 たいていの場合、タイプセットに失敗します。
+- [TeX なのに文字列をクオートする話(1)](http://d.hatena.ne.jp/zrbabbler/20151027/1445959153)
 
 ### TeXShop をアンインストールするには？ {#o9698a89}
 
@@ -385,7 +387,7 @@ Unicodeでは，1つの文字に対して複数の表現方法が存在する場
 
 ただし，Unicode に規定された NFC 正規化のルールに基づくと，CJK 互換漢字が CJK 統合漢字に変化してしまうという問題が生じます。そこで，TeXShop では，Unicode の「合成除外」を考慮した非標準的な正規化（通称 [Modified NFC](http://d.hatena.ne.jp/NAOI/20100826)）を行っています。
 
-資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
+- 資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
 
 ただし，upTeX の側で同様の対処を施すよう改修([r38704](http://www.tug.org/svn/texlive?view=revision&revision=38704))が行われた結果，[upTeX](/upTeX,upLaTeX/) については今後はこの対処は不要になるものと思われます。([Forum 1701](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1701#p9932))
 
