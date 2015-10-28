@@ -13,148 +13,25 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 ### コマンド {#a32ff532}
 
-PDFビューアは，組み込みPDFビューアと外部PDFビューアを選択するようになっているので好きな方を選択してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．<br>
-コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．<br>
-コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．<br>
-コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
+TeXstudio で日本語 pLaTeX または upLaTeX を使用するためには，以下のように設定します． <!-- まだ pLaTeX しか利用できない環境が大学端末室などに大量に残っている --> <!-- 現状に配慮し，pLaTeX 用設定の記述も残します．削除しないでください． -->
 
-***
+- LaTeX のコマンドを latex から platex または uplatex に変更し，-src を -synctex=1 に変更します．
+- DviPdf のコマンドを dvipdf から dvipdfmx に変更します．
+- BibTeX のコマンドを bibtex から pbibtex または upbibtex に変更します．
+- Biber のコマンドを biber から biber --bblencoding=utf8 -u -U --output_safechars に変更します．
 
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
+設定例を以下に示します．
 
-一般<br>
+<img src="/attach/TeXstudio/%E8%A8%AD%E5%AE%9A/OS%20X/TeXstudio-osx-setting01.png" alt="">
 
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
-
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
-
-ビルド<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
-
-キーボードショートカット<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
-
-エディタ<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
-
-構文の強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
-
-コマンドの補完<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
-
-文法<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
-
-プレビュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
-
-SVN<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　☐ 高度なオプションの表示
-
-<br>
-
-***
-
-詳細な設定をする場合は高度なオプションの表示を ON にします．<br>
-
-***
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
-
-一般<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
-
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
-
-ビルド<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
-
-キーボードショートカット<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
-
-メニュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
-
-ツールバー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
-
-エディタ<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
-
-詳細なエディタ設定<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
-
-構文の強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
-
-カスタム強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
-
-コマンドの補完<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
-
-文法<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
-
-プレビュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
-
-SVN<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　☑ 高度なオプションの表示
-
-<br>
+詳細な設定をする場合は高度なオプションの表示を ON にします．
 
 ***
 
 LaTeX
 : &nbsp;
+
+: "/Library/TeX/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex
 
 : "/Library/TeX/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
 
@@ -218,12 +95,14 @@ Biber
 Makeindex
 : &nbsp;
 
-: "/Library/TeX/texbin/upmendex" %.idx
+: "/Library/TeX/texbin/mendex" -U %.idx
+
+: "/Library/TeX/texbin/upmendex" %.idx ← TeX Live に入っていないようなのだが…
 
 Texindy
 : &nbsp;
 
-: "/Library/TeX/texbin/ptexindy" %.idx
+: "/Library/TeX/texbin/ptexindy" %.idx ← TeX Live に入っていないようなのだが…
 
 : "/Library/TeX/texbin/texindy" %.idx
 
@@ -234,6 +113,8 @@ Makeglossary
 
 Metapost
 : &nbsp;
+
+: "/Library/TeX/texbin/pmpost" -interaction=nonstopmode %
 
 : "/Library/TeX/texbin/upmpost" -interaction=nonstopmode %
 
@@ -268,7 +149,7 @@ SVNADMIN
 
 ### forward search {#d42e3a79}
 
-forward search は 外部PDFビューア に以下のように設定します．<br>
+forward search は 外部PDFビューア に以下のように設定します．
 
 ```
 "/Applications/Skim.app/Contents/SharedSupport/displayline" @ "?am.pdf" "?c:am.tex"
