@@ -189,4 +189,5 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
 - [http://qiita.com/tags/context](http://qiita.com/tags/context)
+- [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
