@@ -13,11 +13,11 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 ### コマンド {#a32ff532}
 
-TeXstudio で日本語 pLaTeX または upLaTeX を使用するためには，以下のように設定します． <!-- まだ pLaTeX しか利用できない環境が大学端末室などに大量に残っている --> <!-- 現状に配慮し，pLaTeX 用設定の記述も残します．削除しないでください． -->
+TeXstudio で日本語 upLaTeX または pLaTeX を使用するためには，以下のように設定します． <!-- まだ pLaTeX しか利用できない環境が大学端末室などに大量に残っている --> <!-- 現状に配慮し，pLaTeX 用設定の記述も残します．削除しないでください． -->
 
-- LaTeX のコマンドを latex から platex または uplatex に変更し，-src を -synctex=1 に変更します．
+- LaTeX のコマンドを latex から uplatex または platex に変更し，-src を -synctex=1 に変更します．
 - DviPdf のコマンドを dvipdf から dvipdfmx に変更します．
-- BibTeX のコマンドを bibtex から pbibtex または upbibtex に変更します．
+- BibTeX のコマンドを bibtex から upbibtex または pbibtex に変更します．
 - Biber のコマンドを biber から biber --bblencoding=utf8 -u -U --output_safechars に変更します．
 
 設定例を以下に示します．
@@ -31,9 +31,9 @@ TeXstudio で日本語 pLaTeX または upLaTeX を使用するためには，�
 LaTeX
 : &nbsp;
 
-: "/Library/TeX/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex
-
 : "/Library/TeX/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
+
+: "/Library/TeX/texbin/platex" -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
@@ -95,9 +95,9 @@ Biber
 Makeindex
 : &nbsp;
 
-: "/Library/TeX/texbin/mendex" -U %.idx
-
 : "/Library/TeX/texbin/upmendex" %.idx ← TeX Live に入っていないようなのだが…
+
+: "/Library/TeX/texbin/mendex" -U %.idx
 
 Texindy
 : &nbsp;
@@ -114,9 +114,9 @@ Makeglossary
 Metapost
 : &nbsp;
 
-: "/Library/TeX/texbin/pmpost" -interaction=nonstopmode %
-
 : "/Library/TeX/texbin/upmpost" -interaction=nonstopmode %
+
+: "/Library/TeX/texbin/pmpost" -interaction=nonstopmode %
 
 Asymptote
 : &nbsp;
