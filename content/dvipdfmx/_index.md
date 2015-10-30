@@ -519,17 +519,10 @@ PDF の仕様の制限から JP2 と JPX baseline サブセットに限定され
 J2C ファイルには対応していません．
 透明度については不明です．
 
-<strong>PDF</strong> はベクタ•ラスタ画像のどちらにもよく対応した高機能なフォーマットですが，仕様の改訂の度に複雑化するという問題があります．
+<strong>PDF</strong> はベクタ・ラスタ画像のどちらにもよく対応した高機能なフォーマットですが，仕様の改訂の度に複雑化するという問題があります．
 
 不要に高いバージョン設定にしない，タグ付きにしないなどの点に注意すれば比較的よく対応できます．
-これまで PDF-1.5 以上のファイルで取り込みに失敗することがありましたが，2014/08/14 の修正でそのようなファイルにも対応しました．
-
-PDF-1.5 以上のファイルでも，取り込みに成功する場合と失敗する場合があります．
-具体的には「dvipdfmx が解釈する必要のある領域に，/DecodeParms がある PDF ファイル」について失敗します．
-2014/08/14 の修正で，dvipdfmx が解釈すべき領域に /DecodeParms が見つかった場合にも対応可能な改修が施されましたので，以降の W32TeX および TeX Live 2015 以降では問題なく取り込むことができます．
-
-- 図の挿入について [forum:1588](https://okumuralab.org/tex/mod/forum/discuss.php?d=1588)
-- [美文書6版で PDF-1.5 の取り込みに関する問題](http://d.hatena.ne.jp/acetaminophen/20150530/1433009781)，[（続）](http://d.hatena.ne.jp/acetaminophen/20150531/1433042929)
+下の注意点も参照してください．
 
 <strong>PostScript (EPS)</strong> はそれが確かに必要だという場合を除き使わない方がよいでしょう．
 
@@ -853,7 +846,7 @@ EPS ファイルを使っていないか確認しましょう．EPS を PDF へ�
 ### PDF 画像のバウンディングボックス判定に関する問題 {#b5c7c5ee}
 
 dvipdfmx は，PDF 画像のバウンディングボックス判定は独自のルールに従います．
-最新版の W32TeX および TeX Live 2016 以降では，\includegraphics に pagebox オプションによって “意図どおりのナントカ Box” を指定することができるようになりました．
+最新版の W32TeX および TeX Live 2016 以降では，\includegraphics に pagebox オプションによって “意図どおりの Box” を指定することができるようになりました．
 ただし，互換性のため無指定の場合の挙動は従来のままです．
 
 - [ナントカ Box の話(2)](http://d.hatena.ne.jp/zrbabbler/20140629/1404010741)（PDF における 5 つの“ナントカBox”）
@@ -1025,12 +1018,70 @@ PNG には制作環境の情報を埋め込むことで，異なるディスプ�
 この補正のための情報が cHRM チャンクと gAMA チャンクに書き込まれます．
 PNG の仕様書では，ガンマ補正値のデフォルト値は規定されず，cHRM チャンクがある場合は gAMA チャンクも書き出すべきとなっているのですが，ソフトウェアの設定によっては cHRM チャンクだけが書き込まれることがあります．
 この場合，デコードの際に予期しないガンマ値で補正されてしまうことがあります．
-実際に，Adobe 製品などでは PNG のガンマ値のデフォルトが 2.2 （一般的な CRT モニタの値で Windows や最近の Mac の標準）であると仮定して出力しますが，dvipdfmx では gAMA チャンクがない場合にガンマ値を 1.0　（PDF　のデフォルト値）として出力してしまいます．
+実際に，Adobe 製品などでは PNG のガンマ値のデフォルトが 2.2 （一般的な CRT モニタの値で Windows や最近の Mac の標準）であると仮定して出力しますが，dvipdfmx では gAMA チャンクがない場合にガンマ値を 1.0（PDF のデフォルト値）として出力してしまいます．
 このため，色調に変化が生じてしまいます．
 
 なお，ICC プロファイルや sRGB チャンクが埋め込まれている場合はそちらの情報が優先されるため，この問題は発生しません．
 
-- [forum:1579](https://okumuralab.org/tex/mod/forum/discuss.php?d=1579)
+- 32bit画像の色がおかしくなる [forum:1579](https://okumuralab.org/tex/mod/forum/discuss.php?d=1579)
+
+### PDF 画像が意図しない方向に回転してしまう（原因は /Rotate に非対応であること） {#rc8c320a}
+
+Adobe Acrobat Pro や Preview.app を使用して PDF を回転させた場合や，Acrobat Distiller や Ghostscript を使用して作成した PDF ファイルの一部で
+
+```
+dvipdfmx:warning: << /Rotate 90 >> found. (Not supported yet)
+```
+
+という警告が出て，ビューアで見た場合と異なる向きに回転して PDF 画像が取り込まれることがあります．
+これは，PDF の中に書かれている /Rotate という回転の命令に dvipdfmx が非対応であるためです．
+
+現状で有効な対処法として
+
+- [pdfcrop](/pdfcrop/) や [PDFjam](/PDFjam/) などの [pdfTeX](/pdfTeX/) 系ツールで前処理する
+    - たとえば pdfjam なら
+
+        ```
+        $ pdfjam --fitpaper true in.pdf out.pdf
+        ```
+
+    - たとえば pdfcrop なら
+
+        ```
+        $ pdfcrop in.pdf out.pdf
+        ```
+
+- [Ghostscript](/Ghostscript/) を使って前処理する
+    <!-- $ gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dAutoRotatePages=/None -sOutputFile=out.pdf -c .setpdfwrite -f in.pdf -->
+
+    ```
+    $ ps2pdf -dAutoRotatePages=/None in.pdf out.pdf   (UN*X 系の場合，または TeX Live (win32) に付属の Ghostscript を使用する場合)
+    $ ps2pdf -dAutoRotatePages#/None in.pdf out.pdf   (Windows で別途インストールした Ghostscript を使用する場合)
+    ```
+
+が考えられます．
+
+- [LaTEXでの画像の表示がうまくできません。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10151715500)
+- [dvipdfmx は /Rotate に対応していないという話](http://d.hatena.ne.jp/acetaminophen/20151022/1445516748)
+- [dvipdfmx は /Rotate に対応していないという話、への対処法](http://d.hatena.ne.jp/acetaminophen/20151023/1445533508)，[補足編1](http://d.hatena.ne.jp/acetaminophen/20151026/1445828831)，[補足編2](http://d.hatena.ne.jp/acetaminophen/20151029/1446177917)
+
+### PDF-1.5 以上の図を取り込めない場合がある（2014/08/14 以前の dvipdfmx の場合；原因は /DecodeParms） {#v624328c}
+
+TeX Live 2014 以前，W32TeX \[2014/08/14\] 以前の dvipdfmx では，PDF-1.5 以上の一部のファイルについて
+
+```
+** WARNING ** Streams with DecodeParams not supported.
+** WARNING ** Cannot parse cross-reference stream.
+** WARNING ** Error while parsing PDF file.
+** WARNING ** ./hoge.pdf does not look like a PDF file…
+```
+
+という警告を吐いて取り込みに失敗することがありました．
+これは「dvipdfmx が解釈する必要のある領域に /DecodeParms がある PDF ファイル」に dvipdfmx が未対応だったことによるものです．
+2014/08/14 の修正でそのような PDF ファイルにも対応しましたので，以降の W32TeX および TeX Live 2015 以降では問題なく取り込むことができます．
+
+- 図の挿入について [forum:1588](https://okumuralab.org/tex/mod/forum/discuss.php?d=1588)
+- [美文書6版で PDF-1.5 の取り込みに関する問題](http://d.hatena.ne.jp/acetaminophen/20150530/1433009781)，[（続）](http://d.hatena.ne.jp/acetaminophen/20150531/1433042929)
 
 ### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
 
