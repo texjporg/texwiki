@@ -77,6 +77,18 @@ PDFium.js は PDFium を JavaScript に移植したものです．
 
 - [https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm](https://chrome.google.com/webstore/detail/pdf-viewer/oemmndcbldboiebfnladdacbdfmadadm)
 
+## SyncTeX {#r4505425}
+
+### forward search {#f834d602}
+
+TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は
+
+```
+synctex view -i "30:0:hoge.tex" -o "%CD%/hoge.pdf" -x "rundll32 shell32,ShellExec_RunDLL chrome --new-window '%{output}#page=%{page+1}'"
+```
+
+のように実行します．
+
 ## 関連リンク {#v9c56a2d}
 
 - [ChromiumでChrome PDF Viewerを使う](http://hikaru.6.ql.bz/memo.php?id=chrome)
