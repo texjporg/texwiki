@@ -7,17 +7,11 @@ pukiwiki: "MuPDF"
 
 # MuPDF
 
-## [MuPDF](http://www.mupdf.com/) → 問題が発生する場合は [Poppler](/Poppler/) を使用する {#x9985d4a}
-
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a7/MuPDF.png" alt="MuPDF" style="float:right">
+## [MuPDF](http://www.mupdf.com/) {#x9985d4a}
 
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 また MuPDF は PDF/XPS/CBZ のパーサ/レンダリングライブラリとしても使用できます．
-
-<strong>公式サイト</strong>
-
-- [MuPDF](http://www.mupdf.com/)
-
+ビューアとして MuPDF を使用して問題が発生する場合は，代わりに [Poppler](/Poppler/) を利用することを検討してください．
 以下のプログラムが MuPDF を使用しています．
 
 - PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin)
