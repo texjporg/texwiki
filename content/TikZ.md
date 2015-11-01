@@ -987,7 +987,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ## トラブルシューティング {#i0cba852}
 
-- \[[tikz\] 破線に添えた分数式の横棒が…](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1020)
+- dvipdfmx での TikZ の patterns ライブラリサポートの不具合とその対処法 [forum:1710](https://okumuralab.org/tex/mod/forum/discuss.php?d=1710)
+- \[tikz\] 破線に添えた分数式の横棒が… [forum:1020](https://okumuralab.org/tex/mod/forum/discuss.php?d=1020)
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
 - dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.0.0 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0)。以下同）
     - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.172）
