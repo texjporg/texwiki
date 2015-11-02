@@ -70,7 +70,7 @@ graphicx と同様によく使われるパッケージとして，文字や図�
 ユーザが LaTeX ソースで
 
 ```
-\usepackage[dvipdfmx]{graphpicx}
+\usepackage[dvipdfmx]{graphicx}
 ```
 
 のようにドライバオプションを指定した場合（もしくは無指定によりデフォルトのドライバオプションが仮定された場合），対応するドライバ依存の処理内容を定義した .def ファイルを読み込みます。
