@@ -9,6 +9,14 @@ pukiwiki: "Markdown"
 
 ## Markdown {#a240b407}
 
+Markdown は軽量マークアップ言語の一種で，プレーンテキスト形式で書いた文書から HTML を生成するために良く用いられています。
+[CTAN](/CTAN/) も Markdown 形式のファイル (.md) の表示に対応し，各種パッケージのドキュメント Readme.md が見やすい形式でフォーマットされるようになっています。
+
+- Information/question from the CTAN team (tex-live mailing list)
+    - [(1)](https://www.tug.org/pipermail/tex-live/2015-July/037186.html), [(2)](https://www.tug.org/pipermail/tex-live/2015-July/037187.html), [(3)](https://www.tug.org/pipermail/tex-live/2015-July/037188.html), [(4)](https://www.tug.org/pipermail/tex-live/2015-July/037190.html), [(5)](https://www.tug.org/pipermail/tex-live/2015-July/037192.html),[(6)](https://www.tug.org/pipermail/tex-live/2015-July/037192.html)
+
+### Markdown 関連リンク {#i482f02d}
+
 - [Markdown](http://daringfireball.net/projects/markdown/)
 - [https://pypi.python.org/pypi/Markdown](https://pypi.python.org/pypi/Markdown)
 - [Wikipedia.ja:Markdown](https://ja.wikipedia.org/wiki/Markdown)
