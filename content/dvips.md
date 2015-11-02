@@ -60,13 +60,13 @@ dvips -z -o foo.ps foo.dvi
 \documentclass[a4paper,papersize]{jsarticle}
 ```
 
-のようにオプション \[papersize\] を与えれば，dviファイル中に
+のようにオプション \[papersize\] を与えれば，DVI ファイル中に
 
 ```
 papersize=用紙の幅,用紙の高さ
 ```
 
-という形式の special コマンドが挿入されます。
+という形式の [special 命令](</special 命令/>)が挿入されます。
 
 一般のドキュメントクラスでこのような special を出力するには，LaTeX ファイルのプリアンブルにたとえば
 
