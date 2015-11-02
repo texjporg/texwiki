@@ -31,7 +31,7 @@ troff 用図形プリプロセッサとして実装されています．
 ### tpic {#xda9ac26}
 
 tpic は，pic を元にして Tim Morgan が作り上げた
-TeX 用図形プリプロセッサ，およびそれが出力する special コマンドセットの名称です．
+TeX 用図形プリプロセッサ，およびそれが出力する [special](</special 命令/>) コマンドセットの名称です．
 
 tpic 拡張機能は [dvips](/dvips/), [dvipdfm(x)](/dvipdfmx/), [dviout](/dviout/), [xdvi](/xdvi/) 等の数多くの DVIWare でサポートされています．
 一方で，DVI を扱わない [pdfTeX](/pdfTeX/) では tpic 拡張機能がサポートされていません．
