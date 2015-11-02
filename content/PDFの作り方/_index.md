@@ -203,7 +203,7 @@ dvipdfmx -f dlbase14.map ファイル名
 \AtBeginDvi{\special{pdf:mapfile dlbase14.map}}
 ```
 
-なる special コマンドを書いておいてもよいです．(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
+なる [special 命令](</special 命令/>)を書いておいてもよいです．(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
 
 次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
 TeX Live で IPAexフォントを埋め込む場合は，Windows PowerShell またはコマンド プロンプトから
