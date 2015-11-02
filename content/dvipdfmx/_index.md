@@ -70,10 +70,14 @@ foo.dvi -> foo.pdf
 14514 bytes written
 ```
 
-なお，拡張子は省略できます．上の場合，単に foo としても foo.dvi が変換されます．ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります．
+なお，拡張子は省略できます．
+上の場合，単に foo としても foo.dvi が変換されます．
+ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります．
 
-なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．特に最近の Windows (8.1) や Mac (OS X) では
-収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．フォントは PDF へ埋め込むことを基本としてください．非埋め込みで PDF を作成することは推奨されません．
+なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．
+特に最近の Windows (8.1) や Mac (OS X) では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
+フォントは PDF へ埋め込むことを基本としてください．
+非埋め込みで PDF を作成することは推奨されません．
 
 例えば，TeXLive/Windows 8.1 で標準搭載の游明朝・游ゴシックを埋め込むように設定するにはコマンド プロンプトで（[tlmgr](/tlmgr/) で jfontmaps パッケージをインストールしておきます）
 
@@ -81,7 +85,8 @@ foo.dvi -> foo.pdf
  kanji-config-updmap yu-win
 ```
 
-とします．Mac OS X ではヒラギノを使いましょう．設定については [Mac - TeX Wiki](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?Mac) を参照してください．
+とします．
+Mac OS X ではヒラギノを使うとよいかもしれません（設定については [TeX Live/Mac](</TeX Live/Mac/>) を参照してください）．
 
 ### コマンドラインオプション {#tc481bdb}
 
@@ -172,118 +177,16 @@ dvipdfmx がサポートする画像フォーマットは PNG，JPEG，BMP，JPE
 これに加えて PDF のページもとり込めます．
 dvipdfmx を使用して画像をとりこむ方法の詳細は，[dvipdfmx/画像のとりこみ](</dvipdfmx/画像のとりこみ/>)を参照してください．
 
-### special コマンド {#p133bd5e}
+### special 命令 {#p133bd5e}
 
-dvipdfmx は様々な special 拡張をサポートしています．
-文書やページの設定を行うものとして
-
-```
- papersize landscape pdf:pagesize pdf:encrypt pdf:minorversion
-```
-
-など，dvips 由来のもの，HTML 形式のハイパーリンクなど様々です．
-dvipdfmx 自身も独自の special による拡張機能を持ちます．
-
+本来 DVI ファイルは名前のとおり device-independent なものですが，さまざまな拡張機能を [\special 命令](</special 命令/>)によって実現することができます．
+文書やページの設定を行うもの，描画や画像のとりこみを行うもの，HTML 形式のハイパーリンクを付加するもの，出力 PDF のバージョンや文書情報を指定するもの等があります．
 これらの機能のうちほとんどはユーザーが直接意識することはありません．
-通常はパッケージの製作者が LaTeX 等の為の使い易いインターフェイスを提供します．
-しかしながら様々な特殊効果を出す為にこれらの拡張機能を直接使いたい場合もあります．
-dvipdfm(x) 独自の機能を使う場合は，それにより他の DVI ドライバとの互換性を酷く損なうという事に注意してください．
+通常はパッケージの製作者が LaTeX 等の為の使い易いインターフェイスを提供しているでしょう．
+しかし，これらの機能を用いて作成された DVI ファイルはデバイス依存であることに注意が必要です．
+dvipdfm(x) でこれらの \special 命令を利用する方法については，[dvipdfmx で用いることができる \special 命令](</special 命令/#specials-dvipdfmx>)を参照してください．
+ただし，dvipdfm(x) 独自の機能を使う場合は，それにより他の DVI ドライバとの互換性を酷く損なうという事に注意してください．
 いくつかの機能は DVI の設計思想に反することもあります．
-
-#### ページ設定 {#zbee7ac4}
-
-landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます．
-
-```
- \special{landscape}
-```
-
-は用紙を横置きに，
-
-```
- \special{papersize=210mm,297mm}
-```
-
-は用紙サイズを 210mm × 297mm に設定します．
-
-pagesize は文書の途中でも使えますが，これが実行されるタイミングによっては予期せぬ結果となります．
-特にページがシャッフルされる時は意図したようにはなりません．
-
-```
-  \special{pdf:pagesize width 210mm height 297mm}
-```
-
-のように使います．
-
-#### special で遊ぶ {#a807a6c0}
-
-- [http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html) あたりに dvipdfm/dvipdfmx 用の \specail の様々な使用例があります．
-
-アノーテーション (注釈機能) でファイルを添付：
-
-```
- \special{pdf:fstream @fileobj (ファイル名をここに)}%
- \special{pdf:ann width 5bp height 10bp
-            << /Type /Annot
-               /Subtype /FileAttachment
-               /FS <<
-                     /Type /Filespec
-                     /F    (ファイル名をここに)
-                     /EF   << /F @fileobj >>
-                   >>
-               /Name /Paperclip
-               /C    [0.8 0.4 0.4]
-               /T    (タイトルをここに)
-            >>
-          }%
-```
-
-上の例ではまず最初の special で外部ファイルを取り込み，それを fileobj と名付けます．
-次の special で "添付ファイル" アノーテーションを作ります．
-出来上がった PDF には小さなクリップが表示され，その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです(ビューアーによって操作は異なります)．
-このようにして TeX のソースを埋め込んでおくこともできます．
-
-ページの開始時に任意の PDF 描画コードを挿入することもできます：
-
-```
- \special{pdf:bop 0.4 0.4 0.6 rg 0 0 596 842 re 72 72 452 700 re f*}
-```
-
-これは余白の部分を塗りつぶします．
-"bop" はページの開始時に指定された PDF 描画コードを埋め込みます．
-
-ウォーターマーク風のものを入れます：
-
-```
- \documentclass[]{article}
- \usepackage{bophook}
- \AtBeginDocument{
-   \special{pdf:obj @Courier-Bold
-     <<
-       /Type /Font
-       /Subtype /Type1
-       /BaseFont /Courier-Bold
-       /Encoding /WinAnsiEncoding
-     >>
-   }
-   \special{pdf:bop BT 1 Tr /_Fn01 200 Tf
-                    0.707 0.707 -0.707 0.707 72 216 Tm (Sample) Tj ET}
- }
- \AtBeginPage{
-   \special{pdf:put @resources << /Font << /_Fn01 @Courier-Bold >> >>}
- }
- \begin{document}
- Hello, world.
- \end{document}
-```
-
-(bophook.sty が必要です) やや複雑な例です．
-"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています．
-"bop" はページの開始時に "Sample" という文字列を描画するように指示しています．
-"put" の部分では resources で識別される辞書オブジェクト (ここではページリソース) に与えられたオブジェクトを追加します．
-ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています．
-
-上の例ではページに直接 Sample という文字を書き込みましたがアノーテーションを使ってウォーターマークを入れることもできます．
 
 ### その他 {#dcc9a8c9}
 
@@ -649,6 +552,7 @@ TeX Live 2014 以前，W32TeX \[2014/08/14\] 以前の dvipdfmx では，PDF-1.5
 
 ### dvips, dvipdfm, dvipdfmx で \scalebox を使用した場合に dvipdfmx の縦組時のみ他のドライバと挙動が異なる {#he8e8e71}
 
+これは，graphics/x パッケージの dvipdfm ドライバでは dvips 互換な PostScript specials を用いるのに対し，dvipdfmx ドライバ は PDF 用 specials を用いるように改良されていることが原因です．
 ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます．
 
 - [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
