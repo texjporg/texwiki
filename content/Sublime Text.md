@@ -303,7 +303,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます。
 PDF ファイルが作成されると Evince で PDF ファイルが表示されて forward search が実行されます。
 
-#### ChangeLog {#zcc7e097}
+### ChangeLog {#zcc7e097}
 
 [https://github.com/SublimeText/LaTeXTools/commits/master](https://github.com/SublimeText/LaTeXTools/commits/master)
 
