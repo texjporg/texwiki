@@ -571,9 +571,11 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 - [LCDF TypetoolsでOpenTypeフォントを使う（DVIPDFMXで）](http://dev.activebasic.com/egtra/2012/12/18/522/)
 - [The DVIPDFMx Project](http://project.ktug.org/dvipdfmx/)
 - [DVI specials for PDF generation](http://project.ktug.org/dvipdfmx/doc/tb94cho.pdf) (PDF)
-- [EPS の負座標が欠ける問題](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8840)
-- [dvipdfm(x)にはご注意を](http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&log=5586)
-- [いかなる意味の印刷もしないのならばdvipdfmxの利用は考えてもいいかもしれない](https://twitter.com/p_typo/status/624638576509059072)
+    <!-- -[[EPS の負座標が欠ける問題:http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8840]] -->
+    <!-- -[[dvipdfm(x)にはご注意を:http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&log=5586]] -->
+    <!-- ↑これらは単に dvipdfmx.cfg の設定が悪かったというだけの話のようです． -->
+    <!-- -[[いかなる意味の印刷もしないのならばdvipdfmxの利用は考えてもいいかもしれない:https://twitter.com/p_typo/status/624638576509059072]] -->
+    <!-- ↑これはどういう意味ですか？背景説明なくこのリンクだけでは意味が分かりません． -->
 
 ### ライセンス {#w1524716}
 
