@@ -131,7 +131,7 @@ LaTeX を用いた文書作成では，基本的には次の手順を用いま�
 
 例えば，psfrag パッケージや [PSTricks](/PSTricks/) パッケージは [PostScript](/PostScript/) コードを直接用いてそれらのパッケージが提供する機能を実現しています．
 実際，psfrag.pro あるいは pstricks.pro などの dvips 用の各種ヘッダファイルに必要な PostScript コードが記述されています．
-したがって，psfrag パッケージや PSTricks パッケージを用いる際には，それらのヘッダファイル（および psfrag や PSTricks によって与えられる \special 命令）をパッケージの意図通りに使用できる dviware を用いる必要があるわけです．
+したがって，psfrag パッケージや PSTricks パッケージを用いる際には，それらのヘッダファイル（および psfrag や PSTricks によって与えられる [\special 命令](</special 命令/>)）をパッケージの意図通りに使用できる dviware を用いる必要があるわけです．
 [^1]
 
 ほかのパッケージに関しても同様で，少なくともそれぞれのパッケージのマニュアルを通読し，パッケージが前提とする条件（例えば，dvi ファイルを dvips で PostScript 化するといった条件）について確認する必要があります．
