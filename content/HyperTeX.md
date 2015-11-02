@@ -9,7 +9,7 @@ pukiwiki: "HyperTeX"
 
 ## HyperTeX {#la40905a}
 
-HyperTeX は dvi ファイル中に簡単なタグを \special 命令で入れておくとハイパージャンプができるというものです．
+HyperTeX は dvi ファイル中に簡単なタグを [\special 命令](</special 命令/>)で入れておくとハイパージャンプができるというものです．
 詳細は次のリンクをたどってください．
 
 - [HyperTeX FAQ](http://www.arxiv.org/hypertex/)
