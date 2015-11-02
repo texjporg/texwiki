@@ -40,9 +40,12 @@ TeX にはソース中に \special{...} という命令を書き込むと，TeX 
 
 #### PostScript specials {#ps-specials}
 
-[PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込み，多彩な描画表現を可能にするための special コマンドセットです。
-これは PostScript 命令をヘッダの内容と組み合わせて解釈できる VTeX 等の ドライバや，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる xdvipdfmx 等のドライバ，あるいは PostScript を解釈せずに次の段階に受け渡す [dvips](/dvips/) 等のドライバを必要とします。
-[PSTricks](/PSTricks/) パッケージで使われています。
+[PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
+PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
+[PSTricks](/PSTricks/) パッケージや psfrag パッケージで使われています。
+[dvipdfmx](/dvipdfmx/) では PostScript specials による多彩な描画表現はサポートされていませんが，[MetaPost](/MetaPost/) をサポートするために簡単な命令のみ解釈できるようです。
+
+- 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
 
 #### HyperTeX specials {#hypertex-specials}
 
@@ -56,7 +59,7 @@ HTML ライクなハイパーリンクを可能にする special コマンドセ
 
 簡単なフローチャートのような図を作成するためのプログラミング言語 pic を元にして作られた special コマンドセットです。
 [dvips](/dvips/)，[dvipdfmx](/dvipdfmx/)，[dviout](/dviout/)，[xdvi](/xdvi/) 等の数多くの DVI ドライバでサポートされています。
-一方で，DVI を扱わない pdfTeX では tpic 拡張機能がサポートされていません。
+一方で，DVI を扱わない [pdfTeX](/pdfTeX/) では tpic 拡張機能がサポートされていません。
 eepic や [Xy-pic](/Xy-pic/) などのパッケージが tpic specials を利用しています。
 
 - 参考：[tpic (pic)](/pic/#xda9ac26)
@@ -176,7 +179,7 @@ Hello, world.
 "put" の部分では resources で識別される辞書オブジェクト（ここではページリソース）に与えられたオブジェクトを追加します。
 ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています。
 
-上の例ではページに直接 Sample という文字を書き込みましたがアノーテーションを使ってウォーターマークを入れることもできます。
+上の例ではページに直接 Sample という文字を書き込みましたが，アノーテーションを使ってウォーターマークを入れることもできます。
 
 #### dvipdfmx の \special 使用例のリンク {#specials-dvipdfmx-links}
 
