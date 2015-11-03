@@ -153,7 +153,7 @@ any, have been migrated.
 W32TeX の場合は [latexmk](/Latexmk/) の実行には [Perl](/Perl/) の処理系が必要です。
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
 LaTeXTools/builders/traditionalBuilder.py を編集します。
-[traditionalBuilder.py の 18行目から 24行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-24)あたりの
+[traditionalBuilder.py の 18行目から 24行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-L24)あたりの
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -172,7 +172,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
+				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 
@@ -195,14 +195,6 @@ LaTeXTools/viewPDF.py を編集します。
 
 を以下のように修正します。
 
-■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合
-
-```
-			viewercmd = [r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
-```
-
-■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合
-
 ```
 			viewercmd = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
 ```
@@ -215,14 +207,6 @@ LaTeXTools/jumpToPDF.py を編集します。
 ```
 
 を以下のように修正します。
-
-■ SumatraPDF.exe を C:\Program Files (x86)\SumatraPDF にインストールした場合
-
-```
-				startCommands = [r"C:\Program Files (x86)\SumatraPDF\SumatraPDF.exe","-reuse-instance"]
-```
-
-■ SumatraPDF.exe を C:\Program Files\SumatraPDF にインストールした場合
 
 ```
 				startCommands = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe","-reuse-instance"]
@@ -239,7 +223,7 @@ PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示�
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
 LaTeXTools/builders/traditionalBuilder.py を編集します。
-[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-20)あたりの
+[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-L20)あたりの
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -254,7 +238,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
+				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
@@ -274,7 +258,7 @@ PDF ファイルが作成されると Skim で PDF ファイルが表示され�
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
 LaTeXTools/builders/traditionalBuilder.py を編集します。
-[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-20)あたりの
+[traditionalBuilder.py の 18行目から 20行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L18-L20)あたりの
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -289,7 +273,7 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
-				"-e", "$makeindex = 'mendex %O -U -o %D %S'",
+				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-norc", "-gg", "-pdfdvi"]
 ```
