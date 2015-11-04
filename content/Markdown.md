@@ -42,6 +42,11 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
     - [https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
 
-### Markdown → LaTeX {#v519987b}
+### Markdown から LaTeX への変換 {#v519987b}
 
 - [Pandoc](/Pandoc/)
+
+### Markdown から PDF を生成 {#yab0f4c6}
+
+[markdown-pdf](https://www.npmjs.com/package/markdown-pdf) で Markdown 文書から PDF を生成できます。
+markdown-pdf は Markdown 文書をまず HTML へ変換し，[PhantomJS](http://phantomjs.org/) によりレンダリングし，PDF を生成します。PhantomJS は QtWebKit をベースとしたヘッドレスブラウザです。CSS でスタイル付する事ができます。
