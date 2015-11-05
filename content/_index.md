@@ -47,7 +47,7 @@ TeX Wiki は誰でも編集できます．
 <!-- // だいたい移行作業が完了したので，FrontPage を書き換えた次第です． -->
 <!-- // さすがに書き換えすぎたでしょうか？ - - アセトアミノフェン -->
 
-### <em>緊急の注意</em>（OS X El Capitan に向けて） {#oe4ce14c}
+### <em>緊急の注意</em>（OS X El Capitan への対応状況） {#oe4ce14c}
 
 2015年10月1日（日本時間）より正式に配布される OS X 10.11 El Capitan については，和文フォントの構成が大幅に変更されていることから，TeX Live 側の対応が完全ではありません。
 
@@ -61,6 +61,7 @@ TeX Wiki は誰でも編集できます．
 上の情報を知らずに El Capitan をインストールしてしまった方は[こちら](</TeX Live/Mac/#y64b5891>)を参照してください。
 
 なお，MacTeX-2014 および BasicTeX-2014 以前をインストールしている場合，El Capitan にアップグレードすると /usr/texbin に作成されているシンボリックリンクは /usr/texbin/ から /Previous System/usr/texbin/ に強制移転されてしまいます。
+MacTeX-2015 や BasicTeX-2015 以降にアップデートするか，[こちら](</TeX Live/Mac/#i8a16a2b>)を参考に，パスを通しなおしてアプリケーションの設定変更を行ってください。
 
 ### TeX, LaTeX とは？ {#la57baab}
 
