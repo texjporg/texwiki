@@ -321,6 +321,8 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 
 日本語の利用に関しては、表示等はできますが、禁則処理がうまくできていなかったり、CSS で和文フォントをきちんと指定しないと中国語フォントが選択されてしまったりと、色々と難しいところがあります。しかしながら、ブラウザからそのまま何も考えずに印刷する場合に比べて質は高いようです。
 
+[CSS Paged Media Module Level 3](http://www.w3.org/TR/css3-page/) は比較的よくサポートされていますが、ヘッダなどの自動生成、脚注、相互参照に必要な [CSS-GCPM](http://www.w3.org/TR/css-gcpm-3/) のサポートはほぼありません。
+
 使い方は簡単で、
 
 ```
@@ -334,6 +336,50 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 ```
 
 のようにして、スタイルシートを指定します。
+例えば、style.css に以下のそうな内容を書き込み、保存します。
+
+　　　@page {
+
+```
+ 　　  size: A4 portrait;
+  　　 margin: 1.5cm 1.5cm 1.5cm 1.5cm;
+```
+
+```
+   　　@top-right {
+     　 width: 10%;
+       content: counter(page);
+       vertical-align: middle;
+       font-size: 10pt;
+       text-align: center;
+ 　　  }
+```
+
+　　　}　
+
+```
+  body {
+    font-family: "Yu Mincho";
+    font-size: 10pt;
+    line-height: 1.9em;
+    background-color: white;
+    margin: 5%;
+    text-align: justify;
+  }
+```
+
+```
+  pre {
+    font-family: Consolas, "Yu Gothic";
+    margin-left: 2em;
+  }
+```
+
+そして、WeasyPrint で処理します：
+
+```
+  weasyprint -s style.css http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeX test.pdf
+```
 
 しばらく開発は停滞しているようです。
 
@@ -347,3 +393,9 @@ TeX のアルゴリズムの実装
 - [tex_wrap](http://oedipus.sourceforge.net/texlib/): Python による実装
 
 などがあります。
+
+## 参考 {#n802f183}
+
+電子出版に要求される CSS 機能のまとめ：
+
+- [Priorities for CSS from the Digital Publishing Interest Group](http://www.w3.org/TR/dpub-css-priorities/) (英語)
