@@ -17,6 +17,8 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
 
 ### エディタ {#vb4c5393}
 
+様々なエディタで Markdown 文書編集のための環境を整えることができます。
+
 - [Emacs](/Emacs/)
     - [Emacs Markdown Mode](http://jblevins.org/projects/markdown-mode/)
 - [Vim](/Vim/)
@@ -44,10 +46,18 @@ markdown-pdf は Markdown 文書をまず HTML へ変換し，[PhantomJS](http:/
 
 Atom は標準で Markdown 文書のリアルタイム・プレビュー機能を備えています。
 
-Markdown プレビュー画面を開くには、メニューのパッケージ-Markdown Preview-Toggle Preview です。
+Markdown プレビュー画面を開くには，メニューから
 
-表示される Markdown 文書の見た目を変えるには、style.less ファイルを修正します。
-メニューのファイル-環境設定…で設定画面を開き、"Open Config Folder" ボタンを押して、設定ファイルフォルダを開きます。そこから、style.less を開き、編集します。例えば、Windows 10 向けのフォント設定を行い、両端揃えなどを行うには：
+　　パッケージ > Markdown Preview > Toggle Preview
+
+を選びます。
+
+表示される Markdown 文書の見た目を変えるには，style.less ファイルを修正します。
+メニューの
+
+　　ファイル > 環境設定…
+
+で設定画面を開き，"Open Config Folder" ボタンを押して，設定ファイルフォルダを開きます。そこから　style.less を開き，編集します。例えば，Windows 10 向けのフォント設定を行い，両端揃えなどを行うには：
 
 ```
  @font-family-min: "Yu Mincho", serif;
@@ -76,15 +86,16 @@ Markdown プレビュー画面を開くには、メニューのパッケージ-M
  }
 ```
 
-HTML へ変換するには、単にプレビュー画面で右クリックをして、"Save As MTML…"　を選ぶだけです。
-markdown-pdf パッケージを導入することで、PDF への出力も可能です。
+HTML へ変換するには，単にプレビュー画面で右クリックをして，"Save As MTML…"　を選ぶだけです。
+markdown-pdf パッケージを導入することで，PDF への出力も可能です。
 
-[markdown-preview-plus](http://atom.io/packages/markdown-preview-plus) パッケージにより、LaTeX 形式での数式入力と表示が可能となります。
-MathJax による描画で、保存した HTML にも結果は反映されますが、markdown-pdf では対応していないようです。
+[markdown-preview-plus](http://atom.io/packages/markdown-preview-plus) パッケージにより，LaTeX 形式での数式入力と表示が可能となります。
+MathJax による描画で，保存した HTML にも結果は反映されますが，markdown-pdf では対応していないようです。
 
 ### Markdown 関連リンク {#i482f02d}
 
 - [Markdown](http://daringfireball.net/projects/markdown/)
+- [日本語Markdownユーザー会](http://www.markdown.jp/)
 - [https://pypi.python.org/pypi/Markdown](https://pypi.python.org/pypi/Markdown)
 - [Wikipedia.ja:Markdown](https://ja.wikipedia.org/wiki/Markdown)
 - [Markdown CMS Coqoo ―虚空― | Markdown CMS Coqoo ―虚空―](http://coqoo.net/)
