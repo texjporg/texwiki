@@ -8,104 +8,54 @@ pukiwiki: "Atom"
 
 # Atom
 
-## [Atom](https://atom.io/) {#r1ce0de4}
+## [Atom](https://atom.io/) {#f28ffeb8}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Summary {#y42be4f2}
-
-Atom はテキストエディタです．<br>
+[Atom](https://atom.io/) は GitHub が開発すつオープンソースのテキストエディタです。
 
 - [https://atom.io/](https://atom.io/)
-- [https://github.com/atom](https://github.com/atom)
 
-### System Requirements {#aed34ff8}
+Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor　for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、JavaScript や CSS などの Web 技術を使ってカスタマイズ可能です。2015 年 11 月現在、1.x 系列が最新です。
 
-Windows, OS X, Linux
+***
 
-### License {#z80ed4e3}
+***
 
-[MIT License](https://github.com/atom/atom/blob/master/LICENSE.md)
+## インストールと設定 {#n0fab191}
 
-### ChangeLog {#ifd2779d}
+インストールは簡単です、様々な環境でインストーラやパッケージが提供されています。
 
-- [https://github.com/atom/atom/commits/master](https://github.com/atom/atom/commits/master)
+## パッケージの導入 {#ga099443}
 
-## Installation {#x414b295}
+Atome の環境設定画面や、[https://atom.io/packages](https://atom.io/packages)　で検索して、パッケージを探しましょう。
 
-### Windows {#d8e05887}
+### 日本語関連のパッケージ {#lfe144fd}
 
-- [https://atom.io/](https://atom.io/)
-- [Windows Installer and Auto Updater](http://blog.atom.io/2014/12/10/a-windows-installer-and-updater.html)
+- [japanese-menu](https://atom.io/packages/japanese-menu) -- メニューバーとコンテキストメニュー、設定画面を日本語化します。
+- [japanese-wrap](https://atom.io/packages/japanese-wrap)　あるいは [wrap-style](https://atom.io/packages/wrap-style) -- 文章の折り返し
 
-### OS X {#o272a8e0}
+### LaTeX 関連のパッケージ {#gb891a80}
 
-- [https://atom.io/](https://atom.io/)
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/atom.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/atom.rb)
+LaTeX での文書作成を補助するパッケージも色々とあります。
 
-### Linux {#r0d89918}
+- [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル
+- [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライト
+- [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
+- [sumatra-forwardsearch](https://atom.io/packages/sumatra-forwardsearch) --
+    [Atomでのforward searchとinverse search](http://ashiato45.hatenablog.jp/entry/2015/03/24/194511)
 
-#### Arch Linux {#ea1ae897}
+### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
-- [https://aur.archlinux.org/packages/atom-editor/](https://aur.archlinux.org/packages/atom-editor/)
-- [https://aur.archlinux.org/packages/atom-editor-bin/](https://aur.archlinux.org/packages/atom-editor-bin/)
+- [vim-mode](https://atom.io/packages/vim-mode)
+- [emacs-plus](https://atom.io/packages/emacs-plus)
+- [minimap](https://atom.io/packages/minimap) -- Sublime Text みたいにミニマップを表示させる
 
-## atom-latex {#c420e42b}
+### その他あると便利なパッケージ {#b9051f32}
 
-- [https://atom.io/packages/latex](https://atom.io/packages/latex)
-- [https://github.com/thomasjo/atom-latex](https://github.com/thomasjo/atom-latex)
-- [http://discuss.atom.io/users/thomasjo/activity](http://discuss.atom.io/users/thomasjo/activity)
+- [open-recent](https://atom.io/packages/open-recent)
+- [save-session](https://atom.io/packages/save-session)
+- [file-icons](https://atom.io/packages/file-icons)
 
-### ChangeLog {#vf78041c}
-
-- [https://github.com/thomasjo/atom-latex/commits/master](https://github.com/thomasjo/atom-latex/commits/master)
-
-## language-latex {#ge4d0d65}
-
-- [https://atom.io/packages/language-latex](https://atom.io/packages/language-latex)
-- [https://github.com/area/language-latex](https://github.com/area/language-latex)
-- [http://discuss.atom.io/users/area/activity](http://discuss.atom.io/users/area/activity)
-- [http://discuss.atom.io/t/latex-language-support/541](http://discuss.atom.io/t/latex-language-support/541)
-
-### ChangeLog {#i91f25b7}
-
-- [https://github.com/area/language-latex/commits/master](https://github.com/area/language-latex/commits/master)
-
-## latexer {#z842b3f7}
-
-- [https://atom.io/packages/latexer](https://atom.io/packages/latexer)
-
-### ChangeLog {#vee33dcf}
-
-- [https://github.com/Focus/latexer/commits/master](https://github.com/Focus/latexer/commits/master)
-
-## sumatra-forwardsearch {#z1f95ee6}
-
-- [https://atom.io/packages/sumatra-forwardsearch](https://atom.io/packages/sumatra-forwardsearch)
-- [Atomでのforward searchとinverse search](http://ashiato45.hatenablog.jp/entry/2015/03/24/194511)
-
-### ChangeLog {#x73feeff}
-
-- [https://github.com/ashiato45/sumatra-forwardsearch/commits/master](https://github.com/ashiato45/sumatra-forwardsearch/commits/master)
-
-## skim-displayline {#z6c6603f}
-
-- [https://atom.io/packages/skim-displayline](https://atom.io/packages/skim-displayline)
-
-### ChangeLog {#cc176e6a}
-
-- [https://github.com/mh61503891/skim-displayline/commits/master](https://github.com/mh61503891/skim-displayline/commits/master)
-
-## vim-mode {#q7e40896}
-
-- [https://atom.io/packages/vim-mode](https://atom.io/packages/vim-mode)
-- [https://github.com/atom/vim-mode](https://github.com/atom/vim-mode)
-
-### ChangeLog {#v42c33b1}
-
-- [https://github.com/atom/vim-mode/commits/master](https://github.com/atom/vim-mode/commits/master)
-
-## Related Links {#s3ae987b}
+## 参考 {#ue2446c0}
 
 - [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
 - [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/)
