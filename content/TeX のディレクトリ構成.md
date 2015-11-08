@@ -142,9 +142,9 @@ LaTeX のパッケージなどのファイルは，「TeX のフォーマット�
 
 上を使い，例えば次のような配置にします。
 
-- texmf/fonts/source/public/pandora/pnr10.mf
-- texmf/fonts/tfm/public/cm/cmr10.tfm
-- texmf/fonts/type1/adobe/utopia/putr.pfa
+- <strong>texmf</strong>/fonts/source/public/pandora/pnr10.mf
+- <strong>texmf</strong>/fonts/tfm/public/cm/cmr10.tfm
+- <strong>texmf</strong>/fonts/type1/adobe/utopia/putr.pfa
 
 #### フォント関連ファイルの配置 {#fonts2}
 
@@ -159,7 +159,7 @@ LaTeX のパッケージなどのファイルは，「TeX のフォーマット�
 
 - <strong>texmf</strong>/fonts/{enc,lig,map}/&lt;syntax&gt;/&lt;package&gt;
 
-ここで，&lt;syntax&gt; には dvips, dvipdfm などのフォントを扱うプログラムの種類が入ります。
+ここで，&lt;syntax&gt; には dvips, dvipdfmx などのフォントを扱うプログラムの種類が入ります。
 ただし，updmap(-sys) プログラムを使うようにすれば，ほとんどの場合 dvips のみを使えば済みます。
 lig ファイルは afm2pl というプログラムによって使われます。
 
@@ -197,6 +197,79 @@ TDS は次の &lt;category&gt; を予約しています。
 
 それぞれの &lt;category&gt; の中では base というディレクトリが TDS によって予約されています。
 
+### ユーザがファイルを追加したい場合は（ローカルな追加） {#local}
+
+はじめに述べたとおり，TeX Live や W32TeX では「多重 TEXMF ツリー」を採用し，「ローカルなファイル」を置く場所を明確に分けています。
+
+2015年6月3日以降，W32TeX の TEXMF 等の変数には以下の値が設定されています（上のものほど優先）。
+なお，W32TeX が C:\w32tex 以下にインストールされていると仮定します。
+
+<table>
+<tbody>
+<tr><td>TEXMFHOME</td><td>C:/Users/ユーザ名/texmf</td></tr>
+<tr><td>TEXMFPROJECT</td><td>C:/w32tex/share/texmf-project</td></tr>
+<tr><td>TEXMFCONTEXT</td><td>C:/w32tex/share/texmf-context</td></tr>
+<tr><td>TEXMFFONTS</td><td>C:/w32tex/share/texmf-fonts</td></tr>
+<tr><td>TEXMFLOCAL</td><td>C:/w32tex/share/texmf-local</td></tr>
+<tr><td>TEXMFMAIN</td><td>C:/w32tex/share/texmf-dist</td></tr>
+<tr><td>TEXMFDIST</td><td>C:/w32tex/share/texmf-dist</td></tr>
+</tbody>
+</table>
+
+また，TEXMF という変数にはこれらすべての値が優先順位に従って格納されています。
+
+```
+> kpsewhich -var-value=TEXMF
+{C:/Users/ユーザ名/texmf,C:/w32tex/share/texmf-project,C:/w32tex/share/texmf-context,C:/w32tex/share/texmf-fonts,C:/w32tex/share/texmf-local,C:/w32tex/share/texmf-dist}
+```
+
+% \[TODO\] <em>TeX Live の場合について要加筆</em>
+
+このうち重要なものは TEXMFDIST と TEXMFLOCAL，それに TEXMFHOME です。
+
+TEXMFDIST は，TeX ディストリビューションの配布者がパッケージなどを入れる場所です。
+TEXMFDIST は TeX ディストリビューションをアップデート[^2]すれば上書きされてしまいます。
+そこで，一般ユーザ用に用意されているのが TEXMFLOCAL や TEXMFHOME です。
+これらははユーザのための場所ですので，アップデートで上書きされることはありません。
+追加パッケージなどのファイルを置くには，個人所有とするかシステム全体で共有するかで，置き場が二通り考えられます。
+
+<table>
+<tbody>
+<tr><td>インストール先</td><td>TEXMFHOME</td><td>TEXMFLOCAL</td></tr>
+<tr><td>及ぼす影響の範囲</td><td>その個人のみ</td><td>システム全体</td></tr>
+<tr><td>Unix 系の場合の root 権限</td><td>不要</td><td>必要</td></tr>
+<tr><td>用いるコマンド</td><td>updmap</td><td>updmap-sys</td></tr>
+</tbody>
+</table>
+
+TEXMFLOCAL か TEXMFHOME のいずれかに TEXMFDIST に入っていないファイルを入れる場合は，TEXMFDIST を参考に同じ構造のディレクトリを掘ってください。
+ファイルを入れたら必要に応じて mktexlsr を実行（後述）します。
+これで，TeX が追加のファイルを見つけられるようになります。
+
+<!-- 2015年6月2日以前の W32TeX の構成（上のものほど優先） -->
+<!--  -->
+<!-- |TEXMFHOME|C:/Users/ユーザ名/texmf| -->
+<!-- |TEXMFPROJECTS|C:/w32tex/share/texmf-projects| -->
+<!-- |TEXMFLOCAL|C:/w32tex/share/texmf-local| -->
+<!-- |TEXMFMAIN|C:/w32tex/share/texmf-dist| -->
+<!-- |TEXMFDIST|C:/w32tex/share/texmf-dist| -->
+<!--  -->
+<!-- TEXMF という変数にはこれらすべての値が優先順位に従って格納された -->
+<!-- （→上流の ConTeXt に合わせて2015年6月3日に変更される） -->
+<!--  -->
+<!-- 2013年4月7日以前の W32TeX の構成（上のものほど優先） -->
+<!--  -->
+<!-- |TEXMFHOME|C:/Users/ユーザ名/texmf| -->
+<!-- |TEXMFPROJECTS|C:/w32tex/share/texmf-projects| -->
+<!-- |TEXMFLOCAL|C:/w32tex/share/texmf-local| -->
+<!-- |TEXMFMAIN|C:/w32tex/share/texmf| -->
+<!-- |TEXMFDIST|C:/w32tex/share/texmf-dist| -->
+<!--  -->
+<!-- TEXMF という変数にはこれらの値が優先順位に従って格納された -->
+<!-- ただし，TEXMFDIST は実体がなかったので省略されていた -->
+<!-- （→TeX Live 2013 で texmf と texmf-dist が統一されることに -->
+<!-- 伴い2013年4月8日に変更される） -->
+
 ### 一覧表の作成と更新 (mktexlsr) について {#mktexlsr}
 
 LaTeX がファイルを読み込むときは TeX のディレクトリの中から目当てのファイルを探します。
@@ -211,7 +284,7 @@ ls -R /usr/share/texmf-dist >ls-R
 という一覧表を作るコマンドに由来します。
 ls-R の中身はまさに ls -R の結果が吐き出されたようなもので，すなわちファイルの一覧を再帰的に深くまで表示したものです。
 この ls-R の中身がプラットフォームによって微妙に異なるという問題を防ぐため，TeX では mktexlsr という専用のプログラムが配布されるようになりました。
-mktexlsr は TEXMFDIST, TEXMFLOCAL などをたどり，そこにあるファイルのリストを記録した ls-R ファイルを新規に生成あるいは更新します[^2]。
+mktexlsr は TEXMFDIST, TEXMFLOCAL などをたどり，そこにあるファイルのリストを記録した ls-R ファイルを新規に生成あるいは更新します[^3]。
 
 手元のシステムでこの一覧表を利用しているかどうかは，ls-R というファイルが存在するかどうかを調べるとわかります。
 
@@ -268,13 +341,10 @@ rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
 <!-- ''$TEXMFLOCAL'' とは -->
 <!-- TeX をインストールしたフォルダーの中にある -->
 <!-- share/texmf-local というフォルダーのことを指しています。 -->
-<!-- ''$TEXMFPROJECTS'' とはTeX をインストールしたフォルダーの中にある -->
-<!-- share/texmf-projetcs というフォルダーのことを指しています。 -->
 <!-- 例えば TeX を C:/w32tex/ にインストールしたのなら， -->
 <!--  -->
 <!-- -$TEXMFMAIN = C:/w32tex/share/texmf-dist -->
 <!-- -$TEXMFLOCAL = C:/w32tex/share/texmf-local -->
-<!-- -$TEXMFPROJECTS = C:/w32tex/share/texmf-projects -->
 <!--  -->
 <!-- となります。 -->
 <!-- そして ''$TEXMF'' は $TEXMFMAIN, $TEXMFLOCAL, $TEXMFPROJECTS のどれか， -->
@@ -327,4 +397,5 @@ rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
 <!--  -->
 
 [^1]: TEXMF とは，emTeX/em と emM/emETAemF/emONT という意味です。
-[^2]: 環境によっては，コマンド名は mktexlsr ではなく texhash という名前になっているかもしれません。
+[^2]: アップデートは，TeX Live の場合は [tlmgr](/tlmgr/) を使用し，W32TeX の場合は初回インストールと同様の操作を繰り返すことになるでしょう。
+[^3]: 環境によっては，コマンド名は mktexlsr ではなく texhash という名前になっているかもしれません。
