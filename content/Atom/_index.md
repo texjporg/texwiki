@@ -51,6 +51,10 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 - [emacs-plus](https://atom.io/packages/emacs-plus)
 - [minimap](https://atom.io/packages/minimap) -- Sublime Text みたいにミニマップを表示させる
 
+### ターミナルエミュレータ {#v730a901}
+
+[term2](https://atom.io/packages/term2)　や [terminal-plus](https://atom.io/packages/terminal-plus) などのターミナルエミュレータを Atom 内で使うパッケージがあります。
+
 ### その他あると便利なパッケージ {#b9051f32}
 
 - [open-recent](https://atom.io/packages/open-recent)
@@ -64,6 +68,7 @@ latex, language-latex, latexer などのパッケージをとりあえず入れ�
 ### latex パッケージの設定 {#lf9c27a1}
 
 ここでは、pLaTeX 系エンジンを使って文書を作成する設定を解説します。
+latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。どちらかがインストールされ、パスが通っていることをまず確認しましょう。
 環境設定の画面から、latex パッケージの設定をクリックします。（インストール直後で設定ボタンが出ていない場合は、latex パッケージの枠内をクリック）
 ptex2pdf をインストールして使う場合は、Engine に ptex2pdf を指定します。例えば、普段 uplatex を使う場合は、
 
@@ -83,7 +88,7 @@ ptex2pdf をインストールして使う場合は、Engine に ptex2pdf を指
 
 ### PDF の表示 {#l8d4ce3a}
 
-PDF プレビューを行うには [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールする必要があります。日本語を表示させるには、
+PDF プレビューを　Atom 内で行うには、[pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールする必要があります。日本語を表示させるには、
 
 - [Atomでplatex->dvipdfmxチェーンを実装する話](http://blog.ishotihadus.com/?p=95)
 
@@ -93,7 +98,7 @@ latex パッケージで自動プレビューを設定してもなぜか DVI フ
 
 ## Markdown 環境の整備 {#he8ae1a3}
 
-Markdown 関連の拡張パッケージも様々あります。Markdown での文書作成にはそれほど苦労しないと思われるので、入力補助ツールはあまり必要ないでしょう。必要に応じて探していくことになると思います。
+Markdown 関連の拡張パッケージも様々あります。Markdown での文書作成にはそれほど苦労しないと思われるので、入力補助ツールはあまり必要ないでしょう。必要に応じて探していくことになると思いますが、とりあえず、[markdown-writer](https://atom.io/packages/markdown-writer) などがあればよいでしょう。
 
 Atom は標準で Markdown 文書のリアルタイムプレビュー機能を備えています。
 
@@ -151,10 +156,19 @@ markdown-pdf パッケージを導入することで、PDF への出力も可能
 MathJax による描画で、保存した HTML にも結果は反映されますが、markdown-pdf では対応していないようです。MathJax を用いる markdown-preview-plus 以外にも、KaTeX を用いる
 [markdown-preview-katex](https://atom.io/packages/markdown-preview-katex) や [atom-markdown-katex](https://atom.io/packages/atom-markdown-katex)　があります。
 
+数式を含んだ文書を PDF へ変換したい場合は、一旦 HTML で保存してから、
+[wkhtmltopdf](http://wkhtmltopdf.org/) を利用するとなんとかできます。
+
+```
+ wkhtmltopdf --javascript-delay 10000 input.html output.pdf
+```
+
+のように、javascript-delay オプションをつける必要があるようです。数式の変換がうまくいかなかったら、delay の値を増やしてみます。
+
 ## 文書管理と Git との連携 {#p26877b2}
 
-- [git-control](https://atom.io/packages/git-control)
-- [git-plus](https://atom.io/packages/git-plus)
+- [git-control](https://atom.io/packages/git-control)　-- GUI インターフェイス
+- [git-plus](https://atom.io/packages/git-plus) -- コマンドパレットで Git 操作
 
 ## 参考 {#ue2446c0}
 
