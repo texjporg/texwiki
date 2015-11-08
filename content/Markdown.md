@@ -45,52 +45,73 @@ markdown-pdf は Markdown 文書をまず HTML へ変換し，[PhantomJS](http:/
 ### Atom による執筆環境 {#r4f987bf}
 
 Atom は標準で Markdown 文書のリアルタイム・プレビュー機能を備えています。
+[Atom](/Atom/) -- Markdown　環境の整備の項目を参照してください。
 
-Markdown プレビュー画面を開くには，メニューから
+### Markdown 記法 {#p66867c9}
 
-　　パッケージ > Markdown Preview > Toggle Preview
+段落は空行によって分けられます。
 
-を選びます。
-
-表示される Markdown 文書の見た目を変えるには，style.less ファイルを修正します。
-メニューの
-
-　　ファイル > 環境設定…
-
-で設定画面を開き，"Open Config Folder" ボタンを押して，設定ファイルフォルダを開きます。そこから　style.less を開き，編集します。例えば，Windows 10 向けのフォント設定を行い，両端揃えなどを行うには：
+見出しは、
 
 ```
- @font-family-min: "Yu Mincho", serif;
- @font-family-got: "Yu Gothic", sans-serif;
- .markdown-preview{
-   font-family: @font-family-min;
-   font-size: 10pt;
-   line-height: 1.9em;
-   text-align: justify;
+ H1 Header
+ =========
+```
+
+や
+
+```
+ h2 header
+ ---------
+```
+
+のように下線を引きます。
+
+引用は
+
+```
+ > これは引用です。
+ > 複数行にまたがる引用も可能です。
+```
+
+のように　&gt; で行を始めます。
+
+リストは
+
+```
+ * リスト
+ * リスト
+ * リスト
+```
+
+や
+
+```
+ 1. 最初のアイテム
+ 2. 次のアイテム
+ 3. 3番目
+```
+
+とし、ネストしたリストは、スペース4つでインデントして
+
+```
+ 1. 最初のアイテム
 ```
 
 ```
-   h1, h2, h3, h4, h5, h6{
-     font-family: @font-family-got;
-     font-weight: bold;
-   }
+     * その子要素
+     * ...
 ```
 
-```
-   blockquote {
-     border-left: 4px solid #ccc;
-     font-style: italic;
-     font-size: inherit;
-     p { font-size: inherit; }
-   }
- }
-```
+のようにします。
 
-HTML へ変換するには，単にプレビュー画面で右クリックをして，"Save As MTML…"　を選ぶだけです。
-markdown-pdf パッケージを導入することで，PDF への出力も可能です。
+スペース4つでインデントすることにより、コードブロックを記述します。
 
-[markdown-preview-plus](http://atom.io/packages/markdown-preview-plus) パッケージにより，LaTeX 形式での数式入力と表示が可能となります。
-MathJax による描画で，保存した HTML にも結果は反映されますが，markdown-pdf では対応していないようです。
+その他、詳しくは
+
+- [Markdown文法まとめ](http://qiita.com/higuma/items/3344387e0f2cce7f2cfe)
+
+などを参照してください。
 
 ### Markdown 関連リンク {#i482f02d}
 
