@@ -68,9 +68,9 @@ latex, language-latex, latexer などのパッケージをとりあえず入れ�
 ### latex パッケージの設定 {#lf9c27a1}
 
 ここでは、pLaTeX 系エンジンを使って文書を作成する設定を解説します。
-latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。どちらかがインストールされ、パスが通っていることをまず確認しましょう。
+latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。ここでは Latexmk がインストールされ、パスが通っている前提で進めましょう。
 環境設定の画面から、latex パッケージの設定をクリックします。（インストール直後で設定ボタンが出ていない場合は、latex パッケージの枠内をクリック）
-ptex2pdf をインストールして使う場合は、Engine に ptex2pdf を指定します。例えば、普段 uplatex を使う場合は、
+[ptex2pdf](/ptex2pdf/) をインストールして使う場合は、Engine に ptex2pdf を指定します。例えば、普段 uplatex を使う場合は、
 
 ```
  ptex2pdf -u -l
