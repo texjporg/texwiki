@@ -34,7 +34,6 @@ ConTeXt では，内容と体裁を分離するのは LaTeX と同じですが�
 一方，LaTeX に対する ConTeXt の欠点としては，ユーザがまだ少ないために（特に日本語の）情報が少ないこと，論文投稿時にほぼ全ての学術出版社や [arXiv](/arXiv/) では LaTeX の原稿しか認められていないことが挙げられます．
 
 - [ConTeXt vs. LaTeX - ConTeXt Wiki](http://wiki.contextgarden.net/FAQ#ConTeXt_vs._LaTeX)
-- [ConTeXt について記述し始めてみる - Qiita](http://qiita.com/kuroky_plus/items/c22f5b7e88cabd0faf2f)（黒木さん）
 
 ### はじめの一歩 {#uba3ae77}
 
@@ -189,5 +188,6 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
     - [ConTeXt Standalone/Implementation](http://wiki.contextgarden.net/ConTeXt_Standalone/Implementation)
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
 - [http://qiita.com/tags/context](http://qiita.com/tags/context)
+- [天地有情](http://konoyonohana.blog.fc2.com/blog-category-1.html)
 - [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
