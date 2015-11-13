@@ -33,7 +33,7 @@ Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packa
 ### 日本語関連のパッケージ {#lfe144fd}
 
 - [japanese-menu](https://atom.io/packages/japanese-menu) -- メニューバーとコンテキストメニュー、設定画面を日本語化します。
-- [japanese-wrap](https://atom.io/packages/japanese-wrap)　あるいは [wrap-style](https://atom.io/packages/wrap-style) -- 文章の折り返し
+- [japanese-wrap](https://atom.io/packages/japanese-wrap)　あるいは [wrap-style](https://atom.io/packages/wrap-style) -- 文章の折り返し (Atom 1.2 からは不要です)
 
 ### LaTeX 関連のパッケージ {#gb891a80}
 
