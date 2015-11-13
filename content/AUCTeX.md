@@ -40,7 +40,7 @@ AUCTeX は Emacs の TeX モードです．<br>
 ### ChangeLog {#c24ccc65}
 
 - [log](http://git.savannah.gnu.org/cgit/auctex.git/log/)
-- [ChangeLog](http://git.savannah.gnu.org/cgit/auctex.git/tree/ChangeLog)
+- [ChangeLog](http://git.savannah.gnu.org/cgit/auctex.git/tree/ChangeLog.1)
 
 ### スクリーンショット {#s450de09}
 
@@ -98,9 +98,9 @@ C-x C-f ~/
 
 - [CTAN:support/auctex/](https://mirror.ctan.org/support/auctex/)
 
-から auctex-11.88-e24.4-msw.zip をダウンロードして展開します．
+から auctex-11.89-e24.5-msw.zip をダウンロードして展開します．
 
-auctex-11.88-e24.4-msw-msw フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
+auctex-11.89-e24.5-msw\share\emacs フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
 
 load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
 
@@ -624,11 +624,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 #### Emacs 標準のパッケージ管理システムを使用してインストールした場合 {#c3acf208}
 
-AUCTeX 11.88 は &#x7e;/.emacs.d/elpa/auctex-11.88 にインストールされます．<br>
-AUCTeX 11.88 が自動ロードされない場合は ~/.emacs.d/init.el に次のように記述します．<br>
+AUCTeX 11.89 は &#x7e;/.emacs.d/elpa/auctex-11.89 にインストールされます．<br>
+AUCTeX 11.89 が自動ロードされない場合は ~/.emacs.d/init.el に次のように記述します．<br>
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.88")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.89")
 (require 'tex-site)
 ```
 
