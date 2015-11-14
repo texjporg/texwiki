@@ -11,8 +11,10 @@ pukiwiki: "ConTeXt"
 
 ConTeXt は Hans Hagen による文書作成システム，TeX のマクロパッケージです．
 [LaTeX](/LaTeX/) と同様の位置付けのものですが，ユーザによるカスタマイズのしやすさがより重視されています．
-現在のバージョンは Mark IV (MkIV) と呼ばれ，[LuaTeX](/LuaTeX/) と一体的に開発が進められています． <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． --> <!-- 全くもって詳しいわけではないですが，ConTeXt Wiki などを参照しながら加筆してみました．事実誤認などあれば修正願います．- - kmaeda (2015-05-05) -->
+現在のバージョンは Mark IV (MkIV) と呼ばれ，[LuaTeX](/LuaTeX/) と一体的に開発が進められています．
 
+<!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． -->
+<!-- 全くもって詳しいわけではないですが，ConTeXt Wiki などを参照しながら加筆してみました．事実誤認などあれば修正願います．- - kmaeda (2015-05-05) -->
 - [http://www.ctan.org/pkg/context](http://www.ctan.org/pkg/context)
 
 ***
@@ -189,5 +191,5 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
 - [http://qiita.com/tags/context](http://qiita.com/tags/context)
 - [天地有情](http://konoyonohana.blog.fc2.com/blog-category-1.html)
-- [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)
+- [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)，[(3)](http://abenori.blogspot.jp/2015/11/context3.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
