@@ -204,10 +204,10 @@ Input book.layout
 
 レイアウトファイルを
 
-- %APPDATA%\LyX2.1\layouts\\
-    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.1\Resources\layouts\ -->
-    <!-- -C:\Program Files\LyX 2.1\Resources\layouts\ (32-bit Windows の場合) -->
-    <!-- -C:\Program Files (x86)\LyX 2.1\Resources\layouts\ (64-bit Windows の場合) -->
+- %APPDATA%\LyX2.2\layouts\\
+    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.2\Resources\layouts\ -->
+    <!-- -C:\Program Files\LyX 2.2\Resources\layouts\ (32-bit Windows の場合) -->
+    <!-- -C:\Program Files (x86)\LyX 2.2\Resources\layouts\ (64-bit Windows の場合) -->
 
 フォルダーにコピーします．<br>
 \[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
@@ -226,7 +226,7 @@ Input book.layout
 レイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
-- &#x7e;/Library/Application Support/LyX-2.1/layouts/
+- &#x7e;/Library/Application Support/LyX-2.2/layouts/
 
 フォルダにコピーします．<br>
 \[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
