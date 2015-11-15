@@ -100,7 +100,7 @@ C-x C-f ~/
 
 から auctex-11.89-e24.5-msw.zip をダウンロードして展開します．
 
-auctex-11.89-e24.5-msw\share\emacs フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
+auctex-11.89-e24.5-msw\share\emacs\ フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
 
 load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
 
