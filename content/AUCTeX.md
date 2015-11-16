@@ -100,7 +100,7 @@ C-x C-f ~/
 
 から auctex-11.89-e24.5-msw.zip をダウンロードして展開します．
 
-auctex-11.89-e24.5-msw\share\emacs\ フォルダーの中の site-lisp フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
+auctex-11.89-e24.5-msw\share\emacs\site-lisp\ フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
 
 load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
 
@@ -801,7 +801,7 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 ### TeX-PDF-mode {#bf4992a9}
 
 TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．<br>
-AUCTeX 11.88 以降は TeX-PDF-mode がデフォルトで有効になっています．<br>
+AUCTeX は TeX-PDF-mode がデフォルトで有効になっています．<br>
 
 ```
 (add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
@@ -982,7 +982,7 @@ inverse search については [Emacs#SumatraPDF との連携#inverse search](/E
 forward search は [AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de) を参照してください．<br>
 C-c C-c displayline で forward search ができます．<br>
 
-AUCTeX 11.88 以降は Skim の forward search に対応しています．<br>
+AUCTeX は Skim の forward search に対応しています．<br>
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている displayline を指定します．<br>
 
 ```
@@ -1000,7 +1000,7 @@ inverse search は [Emacs](/Emacs/#e9c08b3d) を参照してください．<br>
 forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．<br>
 C-c C-c fwdevince で forward search ができます．<br>
 
-AUCTeX 11.87 以降は Evince の forward and inverse search に対応しています．<br>
+AUCTeX は Evince の forward and inverse search に対応しています．<br>
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Evince を指定します．<br>
 
 ```
@@ -1024,7 +1024,7 @@ TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリック�
 forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．<br>
 C-c C-c okular で forward search ができます．<br>
 
-AUCTeX 11.88 以降は Okular の forward search に対応しています．<br>
+AUCTeX は Okular の forward search に対応しています．<br>
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Okular を指定します．<br>
 
 ```
