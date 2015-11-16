@@ -287,7 +287,7 @@ Input book.layout
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　　フロートの配置<br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　　出力<br>
@@ -396,7 +396,7 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　　フロートの配置<br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　　出力<br>
@@ -417,14 +417,15 @@ XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/Z
 <br>
 
 ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
-既定のフォント族(D):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
+既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
 LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
-ローマン体(R):　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
-サンセリフ体(S):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-タイプライタ体(T):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^19]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真性スモールキャップ体を使う(M)</span>[^20]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 旧様式数字を使う(O)</span>[^21]<br>
+ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
+サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]<br>
+CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^20]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真性スモールキャップ体を使う(M)</span>[^21]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 旧様式数字を使う(O)</span>[^22]<br>
 
 ***
 
@@ -453,7 +454,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　　フロートの配置<br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　<span style="color:Black;background-color:#DAEAFF;">　出力　　　　　　　　　　</span><br>
@@ -473,7 +474,7 @@ CJK:　　　　　　　　　　　　　　　　<ins>　　　　　　　�
 <br>
 
 出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^22]<br>
+　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^23]<br>
 
 ***
 
@@ -550,7 +551,7 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　　フロートの配置<br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　　出力<br>
@@ -726,7 +727,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　<span style="color:Black;background-color:#DAEAFF;">　フロートの配置　　　　</span><br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　　出力<br>
@@ -772,7 +773,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 　　　　　PDF特性<br>
 　　　　　数式オプション<br>
 　　　　　フロートの配置<br>
-　　　　　リスト<br>
+　　　　　プログラムリスト<br>
 　　　　　ブリット<br>
 　　　　　派生枝<br>
 　　　　　出力<br>
@@ -857,7 +858,8 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 [^16]: ローマン (セリフ) 体の書体を選んでください
 [^17]: サンセリフ (グロテスク) 体の書体を選んでください
 [^18]: タイプライタ (等間隔) 体の書体を選んでください
-[^19]: 日中韓 (CJK) で文字で使用するフォントを入力してください
-[^20]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
-[^21]: 図を並べない旧様式を使用する
-[^22]: 既定の用紙寸法を指定してください(表示・更新用) 
+[^19]: 数式の書体を選んでください
+[^20]: 日中韓 (CJK) で文字で使用するフォントを入力してください
+[^21]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
+[^22]: 図を並べない旧様式を使用する
+[^23]: 既定の用紙寸法を指定してください(表示・更新用) 
