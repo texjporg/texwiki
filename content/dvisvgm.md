@@ -119,21 +119,20 @@ $ pdftocairo -svg hoge.pdf
 
 #### 公式サイト {#vab19c08}
 
-- [dvisvgm](http://dvisvgm.sourceforge.net/)
-- [dvisvgm / Wiki / Home](http://sourceforge.net/p/dvisvgm/wiki/)
+- [dvisvgm](http://dvisvgm.bplaced.net/)
 
 #### リリース情報 {#t6f93e11}
 
-- [dvisvgm: News](http://dvisvgm.sourceforge.net/News)
-- [dvisvgm / Code / tip / NEWS](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/NEWS)
+- [http://dvisvgm.bplaced.net/News](http://dvisvgm.bplaced.net/News)
+- [https://github.com/mgieseki/dvisvgm/releases](https://github.com/mgieseki/dvisvgm/releases)
 
 #### License {#b1b30f5a}
 
-[GPLv3](http://sourceforge.net/p/dvisvgm/code/ci/tip/tree/COPYING)
+[GPLv3](https://github.com/mgieseki/dvisvgm/blob/master/COPYING)
 
 #### ChangeLog {#j5462a82}
 
-- [log](http://sourceforge.net/p/dvisvgm/code/ci/tip/log/)
+- [コミットログ](https://github.com/mgieseki/dvisvgm/commits/master)
 - \[[texlive\] Index of /trunk/Build/source/texk/dvisvgm](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvisvgm/ChangeLog?view=markup)
