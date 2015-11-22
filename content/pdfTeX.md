@@ -9,10 +9,6 @@ pukiwiki: "pdfTeX"
 
 ## [pdfTeX](http://www.tug.org/applications/pdftex/) {#wed85f46}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## pdfTeX とは {#c0f592e3}
-
 <!-- '''[注意]pdfLaTeX/LuaLaTeX用のパッケージとしてpdfx パッケージなるものがあり、PDF/XやPDF/Aの出力が可能かのように言われていますが、これを使えばPDF/XやPDF/Aに準拠したPDFが生成できるというわけではありません。重大な事故のもとになる為、決してこれらのパッケージは使ってはいけません。''' -->
 
 pdfTeX は Hàn Thế Thành により開発された TeX の派生プログラムです。
@@ -32,9 +28,13 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 
 画像フォーマットは、PDF、PNG、JPEG、JBIG2 などをサポートします。
 
-```
+***
 
-```
+***
+
+## 使い方 {#m3e1918c}
+
+実際の利用は、TeX/LaTeX とほとんど変わりありません。
 
 マニュアル (英語) は
 
@@ -42,20 +42,18 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 
 です。
 
-### ChangeLog {#j6e7e366}
+### Microtypography 拡張 {#dcb5b47d}
 
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/pdftexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/ChangeLog?view=markup)
-    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/pdftexdir/NEWS?view=markup)
+ここでは pdfTeX の Microtypography 拡張機能についてその使用法を解説します。
+LaTeX での利用については後述の micortype パッケージを利用するとよいでしょう。
 
-## 使い方 {#m3e1918c}
+#### マージン・カーニング {#dc432ab6}
 
-ここでは pdfTeX の拡張機能についてその使用法を解説します。
+マージン・カーニングの主な用途は、ハイフンやカンマなどをマージンにわずかにはみ出させることです。これは「ぶら下げ」とも呼ばれます。その他にも、"o" などの丸い文字などをマージンにわずかにはみ出させることもあります。これは両端揃えのときに、文章をより美しくみせるための処理です。
 
-### マージン・カーニング {#dc432ab6}
+<a href="/attach/pdfTeX/margin-kerning.jpg"><img src="/attach/pdfTeX/margin-kerning.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
 
-マージン・カーニングのもっとも簡単な使用法は以下のようなものです:
+pdfTeX における、マージン・カーニングのもっとも簡単な使用法は以下のようなものです:
 
 ```
  \font\f=cmr10
@@ -78,7 +76,17 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 同様に左マージンに対して作用する \lpcode も用意されています。
 \lpcode と \rpcode への割り当ては常にグローバルなものです。
 
-### フォント・エクスパンション {#ya7b30e1}
+#### フォント・エクスパンション {#ya7b30e1}
+
+段組みなどで狭い幅に文章を組むときには、良い改行位置が見つからず、ハイフネーションが複数行連続して起きてしまったり、単語間スペースがあまり一様でなくなったり、縦に空白の「線」（リバー）ができることがよくあります。これらの問題を解決する手法として、フォント・エクスパンションが有効です。
+
+<a href="/attach/pdfTeX/without-font-expansion.jpg"><img src="/attach/pdfTeX/without-font-expansion.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
+
+<a href="/attach/pdfTeX/with-font-expansion.jpg"><img src="/attach/pdfTeX/with-font-expansion.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
+
+<br>
+
+いくぶん極端な設定を行っていますが、左はフォント・エクスパンションなし、右はありです。
 
 簡単な例として
 
@@ -96,7 +104,7 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 
 フォント・エクスパンションの効果を実際に確かめるには狭い幅に長い文章を組んでみるとよいです。\pdfadjustspacing の値を変化させながら結果の違いを確かめてみましょう。
 
-### microtype パッケージ {#g8eee99d}
+#### microtype パッケージ {#g8eee99d}
 
 pdfLaTeX で Microtypography 拡張を使う場合は [microtype パッケージ](http://ctan.org/pkg/microtype) が便利です。
 
@@ -118,7 +126,7 @@ microtype パッケージはデフォルトで Microtypography 機能を可能�
  \end{document}
 ```
 
-この例では幅 3cm という狭い領域に比較的長い文章を押し込んでいます。また、microtype パッケージのオプションでかなりのフォントの伸張・収縮を (10% まで) 許容しています。(実際の利用では 伸張 3%、収縮 2% 以内に収めるほうが良いそうです。) microtype パッケージを読み込まない場合と比較すると大きな違いがでるでしょう。パッケージを読み込んだ場合は Underfull がほとんど出なくなると思います。
+この例では幅 3cm という狭い領域に比較的長い文章を押し込んでいます。また、microtype パッケージのオプションでかなりのフォントの伸張・収縮を (10% まで) 許容しています。(実際の利用では 伸張 3%、収縮 2% 以内に収めるほうが良いそうです。) microtype パッケージを読み込まない場合と比較すると大きな違いがでるでしょう。
 
 ### トラッキング {#te8bcdb1}
 
