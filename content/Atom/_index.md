@@ -42,8 +42,6 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル
 - [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライト
 - [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
-- [sumatra-forwardsearch](https://atom.io/packages/sumatra-forwardsearch) --
-    [Atomでのforward searchとinverse search](http://ashiato45.hatenablog.jp/entry/2015/03/24/194511)
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
@@ -90,9 +88,16 @@ latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要
 
 PDF プレビューを　Atom 内で行うには、[pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールする必要があります。日本語を表示させるには、
 
-- [Atomでplatex->dvipdfmxチェーンを実装する話](http://blog.ishotihadus.com/?p=95)
+```
+ ~/.atom/packages/pdf-view/node_modules/pdfjs-dist/build
+```
 
-を参考に、修正を行います。
+(別の場所化もしれませんが、とにかくパッケージのフォルダです) にある pdf.js から、 CMap 関連の設定場所を探し出し、以下のように編集します：
+
+```
+ PDFJS.cMapUrl = "../cmaps/";
+ PDFJS.cMapPacked = true;
+```
 
 latex パッケージで自動プレビューを設定してもなぜか DVI ファイルを開こうとする場合があるようです。プロジェクトフォルダを追加しておき、手動で結果の PDF ファイルを選択すると Atom で PDF を見ることができます。
 
@@ -172,7 +177,5 @@ MathJax による描画で、保存した HTML にも結果は反映されます
 
 ## 参考 {#ue2446c0}
 
-- [http://qiita.com/tags/atom](http://qiita.com/tags/atom)
-- [React | A JavaScript library for building user interfaces](http://facebook.github.io/react/)
-- [What is Use React Editor?](http://discuss.atom.io/t/what-is-use-react-editor/8865)
 - [Atom入門 (全12回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_atom)
+- [Atomでplatex->dvipdfmxチェーンを実装する話](http://blog.ishotihadus.com/?p=95)
