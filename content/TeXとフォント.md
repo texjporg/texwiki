@@ -41,13 +41,31 @@ LaTeX の細かい知識に関心がなく、フォント設定の煩わしさ�
 
 Computer Modern に飽きたら本文用フォントを変えてみましょう。ここでは、入手可能な LaTeX パッケージが存在し、本文用として使える本格的なフォントを利用する例をいくつかあげます。比較的広範な文字集合を含み、リガチャなどが充実したものを主に例示します。
 
+ほとんどのパッケージでは、
+
+```
+   \usepackage{パッケージ名}
+```
+
+でフォントを変更できるようになっています。
+
+以下のサイトに LaTeX で利用可能なフォント一覧があります：
+
+- [The LaTeX Font Catalogue](http://www.tug.dk/FontCatalogue/)
+
 ### [Latin Modern](http://www.gust.org.pl/projects/e-foundry/latin-modern) {#h96ac87b}
 
 ポーランドの TeX Users Group、[GUST](http://www.gust.org.pl/) で開発された、数式用を含む、広範な文字集合をサポートするフォントセットです。[Latin Modern](</Latin Modern/>) のページを参照してください。Bogusław “Jacko” Jackowski と Janusz M. Nowacki　による設計です。ラテン文字をサポートします。ベトナム語でも利用可能です。Computer Modern を元にしています。
 
+Latin Modern はおそらく標準で使えるようになっているでしょう。
+
 ### [EB Garamond](http://www.georgduffner.at/ebgaramond/) {#tdbd7142}
 
-Georg Duffner　によるフォントです。デザインは Claude Garamond による有名な書体が元になっています。Garamond 系のフォントに関しては [Adobe](https://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-JP&event=displayFontPackage&code=1703) をはじめとして様々なフォントベンダで作成されています。いわゆるオールド・スタイル・セリフに分類されます。利用可能な文字集合として、ラテン文字・ギリシャ文字・キリル文字があります。標準的な各種リガチャに加え、st や ct などのリガチャもあり、スモールキャップ・オールドスタイル数字もサポートします。いくつかのオプティカルサイズが用意されています。
+Georg Duffner　によるフォントです。デザインは Claude Garamond による有名な書体が元になっています。
+
+<a href="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/ebgaramond.jpg"><img src="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/ebgaramond.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
+
+Garamond 系のフォントに関しては [Adobe](https://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-JP&event=displayFontPackage&code=1703) をはじめとして様々なフォントベンダで作成されています。いわゆるオールド・スタイル・セリフに分類されます。利用可能な文字集合として、ラテン文字・ギリシャ文字・キリル文字があります。標準的な各種リガチャに加え、st や ct などのリガチャもあり、スモールキャップ・オールドスタイル数字もサポートします。いくつかのオプティカルサイズが用意されています。
 
 TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそれを利用しましょう。
 インストールしたら、ターミナルから　Map ファイルを有効にし、
@@ -87,6 +105,8 @@ Google Fonts のページ
 ### Adobe Source ファミリ {#g85c2bee}
 
 Adobe によるオープンソース書体です。Source Serif Pro、Source Sans Pro、Source Code Pro とあり、豊富なウェイトと機能を揃えています。Source Serif Proは、トランジショナルに分類されるセリフ書体です。Serif、Sans と Code はお互いによく調和するようにデザインされてあります。
+
+<a href="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/sourceserif.jpg"><img src="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/sourceserif.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
 
 tlmgr から入れましょう。
 
