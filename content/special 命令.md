@@ -43,7 +43,23 @@ TeX にはソース中に \special{...} という命令を書き込むと，TeX 
 [PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
 PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
 [PSTricks](/PSTricks/) パッケージや psfrag パッケージで使われています。
+
 [dvipdfmx](/dvipdfmx/) では PostScript specials による多彩な描画表現はサポートされていませんが，[MetaPost](/MetaPost/) をサポートするために簡単な命令のみ解釈できるようです。
+試しに使ってみましょう。まず，以下のような TeX ファイル (test.tex) を用意します：
+
+```
+ \special{ps: gsave 0 0 moveto 100 0 lineto stroke grestore}
+ \bye
+```
+
+そして，TeX と dvipdfmx で処理します：
+
+```
+ tex test.tex
+ dvipdfmx test.dvi
+```
+
+出来上がった PDF を見ると，直線が引かれているはずです。
 
 - 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
 
@@ -137,6 +153,22 @@ pagesize は文書の途中でも使えますが，これが実行されるタ�
 出来上がった PDF には小さなクリップが表示され，その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです（ビューアによって操作は異なります）。
 このようにして TeX のソースを埋め込んでおくこともできます。
 
+#### XMP メタデータ {#c01ffb78}
+
+XMP メタデータは PDF など様々なファイルに添付できる XML 形式の
+メタデータです。これも fstream を使います。例えば、test.xmp　というファイル名で XMP
+メタデータを用意したとします。
+
+```
+ \special{pdf:fstream @xmp (test.xmp) <<
+   /Type /Metadata
+   /Subtype /XML >>
+ }
+ \special{pdf:put @catalog << /Metadata @xmp >>}
+```
+
+で添付します。（現在のところメタデータは圧縮されます）
+
 #### PDF に描画・透かしを入れる {#specials-dvipdfmx-drawing}
 
 ページの開始時に任意の PDF 描画コードを挿入することもできます：
@@ -151,7 +183,7 @@ pagesize は文書の途中でも使えますが，これが実行されるタ�
 ウォーターマーク（透かし）風のものを入れます：
 
 ```
-\documentclass[]{article}
+\documentclass{article}
 \usepackage{bophook}
 \AtBeginDocument{
   \special{pdf:obj @Courier-Bold
@@ -180,6 +212,27 @@ Hello, world.
 ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています。
 
 上の例ではページに直接 Sample という文字を書き込みましたが，アノーテーションを使ってウォーターマークを入れることもできます。
+
+#### 描画物を切り取り貼り付ける {#jc3fc76f}
+
+bxobj/exobj と uxobj はユニークな機能を提供します。
+
+```
+ \special{pdf:bxobj @myform width 100pt height 0pt depth 10pt}%
+ Hello World!
+ \special{pdf:exobj}%
+```
+
+```
+ \special{pdf:uxobj @myform}
+ \special{pdf:bt rotate -10}\special{pdf:uxobj @myform}\special{pdf:et}
+ \special{pdf:bt rotate -20}\special{pdf:uxobj @myform}\special{pdf:et}
+ \special{pdf:bt rotate -30}\special{pdf:uxobj @myform}\special{pdf:et}
+ \bye
+```
+
+TeX の出力結果 "Hello World!" を切り取り，uxobj で貼り付けます。
+一度切り取り保存したオブジェクトは何度も再利用できます。
 
 #### dvipdfmx の \special 使用例のリンク {#specials-dvipdfmx-links}
 
