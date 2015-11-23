@@ -70,101 +70,59 @@ LaTeX のインストールについては
 
 ### 要約 {#gf004f58}
 
-#### 日本語の PDF ファイルを作成する場合 {#j5accec9}
-
-upLaTeX で日本語の PDF ファイルを作る場合は [dvipdfmx](/dvipdfmx/) を使用します．
-具体的には [dvipdfmx の使い方](#rdc781c9) をご覧ください．
-
-dvipdfmx のほかに dvips でいったん PostScript に変換して，[Ghostscript](/Ghostscript/) に付属の ps2pdf または Adobe Acrobat Distiller DC
-で PDF に変換する方法もあります．
-詳しくは [dvips の使い方](#lf015a28) をご覧ください．
-
-#### 欧文のみの PDF ファイルを作成する場合 {#sb4de6fd}
-
-欧文のみの原稿ならば，pdfLaTeX が簡単です．
-[BXcjkjatype](/LaTeX-CJK/) を使用すると pdfLaTeX で日本語の PDF ファイルも作成できます．
-
-#### Unicode を使用して多言語 PDF ファイルを作成する場合 {#ff1f7cd1}
-
-Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) がおすすめです．
-日本語の PDF ファイルを作成する場合は [LuaTeX-ja](/LuaTeX-ja/) や [ZXjatype](/xeCJK/) を使用します．
+LaTeX で PDF を作成する方法はいくつかあります。日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました。
+[dvipdfmx](/dvipdfmx/) というソフトで DVI ファイルから PDF を生成する方法もあります。欧米では，pdfLaTeX により LaTeX 文書から直接 PDF を生成するのが一般的です．
+Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/)， [XeLaTeX](/XeTeX/) が使えます．LuaLaTeX や XeLaTeX で日本語の PDF ファイルを作成する場合は [LuaTeX-ja](/LuaTeX-ja/) や [ZXjatype](/xeCJK/) を使用します．
 
 #### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
 
-(1) tex → pdf
+1. tex → pdf
+    - platex-ng: tex → pdf
+    - pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
+    - lualatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
+    - xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
+1. tex → dvi → pdf
+    - uplatex→dvipdfmx
+    - Windows では [dviout](/dviout/) から印刷で PDF へ出力する方法もあります。
+1. tex → dvi → ps → pdf
+    - uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か「Adobe Acrobat Distiller DC」で ps → pdf
+
+arXiv などでは 3. を要求されます。特に Adobe Acrobat Distiller DC を用いるほうが信頼性が高く，印刷所などでも好まれます．
 
 ```
-platex-ng: tex → pdf
-pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
-lualatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
-xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
-※ 挿入図ファイルはPDF形式等も可
-```
-
-(2) tex → dvi → pdf
 
 ```
-(2)-1: uplatex: tex → dvi
-(2)-2: dvipdfmx: dvi → pdf
-※ ptex2pdf を使用すると (2)-1, (2)-2 の処理を一度に実行できます．
-※ 挿入図ファイルはPDF形式等も可（EPS形式以外はdvipdfmxが自力で対応するので，Ghostscriptの助けは不要）．
-```
 
-(3) tex → dvi → ps → pdf
+#### 図の挿入について {#n20e1824}
 
-```
-(3)-1: uplatex: tex → dvi
-(3)-2: dvips: dvi → ps
-(3)-3: ps2pdf (Ghostscript)  or 「Adobe Acrobat Distiller DC」: ps → pdf
-※ [[arXiv]] 等ではこれを要求されるようです
-※ 挿入図ファイルはEPS形式のみ, pstricks, powerdot 使用可能
-```
+dvips を使う場合は，図は EPS 形式のみの対応となります．それ以外の場合は，むしろ EPS 形式を使用せずに PDF 形式の挿入図を用いて処理させると速くなります．pdfLaTeX，XeLaTeX，LuaLaTeX は EPS 形式以外にも PDF，PNG，JPEG などもサポートしています．適宜これらの形式を選択して利用すると良いでしょう．
 
-#### PDF形式ファイル（図）の挿入について {#n20e1824}
+### 読み手に親切な PDF ファイル {#hb3bee4c}
 
-- EPS 形式を使用せずに PDF 形式の挿入図を用いて，「platex-ng, pdflatex, lualatex, xelatex: tex → pdf」または「uplatex + dvipdfmx: tex → dvi → pdf」の流儀で処理させると，Ghostscript を経ることもなく，通常は処理も速い．
+PDF を作成するときは，読み手のことを考え，親切な PDF となるように心がけましょう．
 
-- PDF ファイルを画像として取り込むときには，\includegraphics が利用するバウンディングボックスの情報が必要．
-    - 一般に \includegraphics で外部ファイルを画像として取り込むには，出力されるページ上で画像の境界がどこに設定されるかを指定する必要がある．この領域のことをバウンディングボックス（bounding box）と呼ぶ．
-    - EPS ファイルは，もともと PostScript の画像を埋め込むための形式として開発されたこともあって，バウンディングボックスを表す情報が必ずファイル内に埋め込まれている（BoundingBox）． EPSの取り込みでは，この BoundingBox の値が使われる．EPS 以外を取り込むときは，別の方法でバウンディングボックスの情報を手に入れるしかない．
+#### しおりやハイパーリンクの利用 {#oe50e6c2}
 
-- dvipdfmx を使う場合は， extractbb というコマンドを使うと画像 PDF のバウンディングボックスの値を出力できる．TeX Live 2015 以降, MacTeX-2015 以降, W32TeX を使用している場合は自動実行されるので extractbb を直接実行する必要はない．
+目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．dvipdfmx を使用する場合は，[hyperref](/hyperref/) パッケージを使い，プリアンブルに下記を入れると良いです：
 
 ```
-$ extractbb foo.pdf
+\usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,%
+            urlcolor=black,linkcolor=black,citecolor=black,%
+            linktocpage=true,bookmarks=false]{hyperref}
+\usepackage{pxjahyper}
 ```
 
-- 後述の [extractbb の自動実行](</PDFの作り方/#rf074b4b>) も参照．
-    - PDF ファイルには，コンテンツが画像であるかどうかに関係なく，ドキュメントのページ上のさまざまな領域を表す 5 種類のボックスが定義されている．
-        - CropBox，ArtBox，TrimBox，BleedBox，MediaBox
-    - PDF に対して extractbb を実行すると，これら PDF のボックスの値をもとに，バウンディングボックスの値が返される．
-        - 詳しくは [http://d.hatena.ne.jp/zrbabbler/20140629/1404010741](http://d.hatena.ne.jp/zrbabbler/20140629/1404010741) を参照．
+#### 疑似ボールド体など {#jec95395}
 
-- \includegraphics のオプションとしてバウンディングボックスの情報を手動で指定することもできる．
-    - 詳しくは graphics/graphicx パッケージのマニュアルや『LaTeX コンパニオン』などを参照．
+いわゆる Poor Man's Bold (疑似ボールド） の利用は避け，\boldsymbol などを用いて本物のボールド体を使ってください．重ね打ち \[“\pmb” or “\bm”\] によって生じる，擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．これは単に見苦しいだけでなく，検索やテキストの抽出にも悪影響を与えます． <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， --> <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない --> <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
 
-<!-- - pdf ファイルの bounding box 情報 -->
-<!-- - - PDF ファイル（Adobe [[Illustrator]] による保存を除く）の bounding box 情報の仕様（正確には bounding-box-like な矩形領域情報は複数種類が定義されている）は，EPS ファイルのそれとは正確には異なる． -->
-<!-- - - 従って，PDF ファイル内から普通に bounding box 情報を読み取っても，それは「描かれた図形を囲む最小矩形領域」ではない可能性も存在するので注意が必要．その場合には，計算等によって「最小矩形領域」を算出する過程が必要となる． -->
+#### フォントの利用 {#v9136148}
 
-### 読み手に親切な PDF ファイルの作り方 {#hb3bee4c}
+OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
 
-- 目次から本文のページなどへリンクジャンプ可能だと読み手が楽です．dvipdfmx を使用する場合はプリアンブルに下記を入れると良いようです．
+<em>Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．</em>
 
-    ```
-    \usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,urlcolor=black,%
-          linkcolor=black,citecolor=black,linktocpage=true,bookmarks=false]{hyperref}
-    \usepackage{pxjahyper}
-    ```
-
-- \boldsymbol などを用いて本物のボールド体を使ってください．（重ね打ち \[“\pmb” or “\bm”\] による擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．）
-    <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， -->
-    <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない -->
-    <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
-
-- Type 1 フォントを用い，かつファイル内に埋め込んでください．（Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．）
-
-- （上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．）
+上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．
 
 ### dvipdfmx の使い方 {#rdc781c9}
 
@@ -178,212 +136,39 @@ TeX Live, W32TeX に含まれています．
 dvipdfmx foo.dvi
 ```
 
-と打ち込むだけです．
-これで foo.dvi が foo.pdf に変換されます．
-コマンドラインを使用するのが苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
-などで dvipdfmx を使うように設定できます．
+と打ち込むだけです．これで foo.dvi が foo.pdf に変換されます．
+コマンドラインを使用するのが苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/),
+[TeXworks](/TeXworks/)　などで dvipdfmx を使うように設定できます．
 
-以下では dvipdfmx について説明します．
-
-#### フォントの埋め込み設定 {#z0e1001a}
-
-dvipdfmx がフォントを埋め込むかどうかは設定によります．
-
-まず欧文フォントですが，TeX Live ではデフォルトで欧文フォントを埋め込みますが，W32TeX では通常は PostScript Level 1 での基本14書体は埋め込みません．
-W32TeX で基本14書体を埋め込むには
-
-```
-dvipdfmx -f dlbase14.map ファイル名
-```
-
-のようにして起動してください．
-あるいはソースに
-
-```
-\AtBeginDvi{\special{pdf:mapfile dlbase14.map}}
-```
-
-なる [special 命令](</special 命令/>)を書いておいてもよいです．(\specialの用法について ([qa:55664](https://okumuralab.org/~okumura/texfaq/qa/55664.html), [qa:55665](https://okumuralab.org/~okumura/texfaq/qa/55665.html), [qa:55672](https://okumuralab.org/~okumura/texfaq/qa/55672.html)))
-
-次に和文フォントですが，TeX Live はデフォルトで和文フォントを埋め込みませんが，W32TeX はデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
-TeX Live で IPAexフォントを埋め込む場合は，Windows PowerShell またはコマンド プロンプトから
-
-```
-kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．
-
-W32TeX の場合は和文フォントはデフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
-
-$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
-
-```
-%%
-%% upTeX examples
-%%
-```
-
-```
-urml     UniJIS-UTF16-H   ipaexm.ttf
-urmlv    UniJIS-UTF16-V   ipaexm.ttf
-ugbm     UniJIS-UTF16-H   ipaexg.ttf
-ugbmv    UniJIS-UTF16-V   ipaexg.ttf
-uprml-h  UniJIS-UTF16-H   ipaexm.ttf
-uprml-v  UniJIS-UTF16-V   ipaexm.ttf
-upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
-upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
-uprml-hq UniJIS-UCS2-H    ipaexm.ttf
-upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
-```
-
-と書いてあれば「IPAexMincho」・「IPAexGothic」が埋め込まれます．
-
-cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
-
-```
-kpsewhich -progname=dvipdfmx -format=map cid-x.map
-```
-
-なお，dvipdfmx はフォントを埋め込まないと仕様に違反した PDF を生成するようです．
-日本語版 dvipdfm にはこの問題はないようです．
-（参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
-The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character
-sets may be used.）(--> これは ISO 32000-1 で加わった仕様で，PDF Reference, Sixth edition, version 1.7 とそれ以前の PDF Reference にはそのような記述はありません．このため ISO 32000-1 は過去の PDF のバージョンと非互換です．Adobe Acrobat Distiller DC 等も同様の問題を抱えているようです．)
-
-dvipdfmx は PDF，PNG，JPEG，MetaPost 出力，EPS を挿入できます．
-EPS 挿入には外部プログラムとして Ghostscript が必要です．
-ベクトル画像は PDF 形式，ラスター画像は PNG または JPEG 形式で挿入するのがいいでしょう．
-
-#### extractbb の自動実行 {#rf074b4b}
-
-TeX Live 2015 以降，MacTeX-2015 以降，[W32TeX](/W32TeX/)，[美文書第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/) からインストールした場合は texmf.cnf の shell_escape_commands に extractbb が指定されていて，自動的に extractbb が実行されるので，あらかじめ extractbb を実行する必要はありません．
-これら以外の環境の場合は，[こちらのアーカイブ情報](</古い情報/#rf074b4b>)を参考に extractbb の自動実行を設定するか，[次の項](</PDFの作り方/#z06f5ff9>)も読んで下さい．
-
-LaTeX ファイル中では
-
-```
-\usepackage[dvipdfmx]{graphicx}
-...
-\includegraphics[width=8cm]{zu.png}
-```
-
-のようにします．
-[graphicx](/graphicx/) パッケージを読み込む際には次のように必ず dvipdfmx オプションを与えます．
-
-```
-\usepackage[dvipdfmx]{graphicx}
-```
-
-これを LaTeX と dvipdfmx で処理します．
-
-Ghostscript で PDF を作る場合，正しい設定をすれば和文フォントを埋め込まずにきれいな
-EPS ファイルができます．
-詳しくは [Ghostscript](/Ghostscript/) のページをご覧ください．
-
-Adobe Acrobat Distiller DC をコマンドラインから使いたい場合，OS X では
-
-```
-$ open -a 'Acrobat Distiller.app' ファイル名
-```
-
-とします（alias を設定しておくと便利でしょう）．
-
-dvipdfmx で PSfrag を使うには，まず \pagestyle{empty}
-で図と PSfrag だけのページを作り，“dvips -Ppdf -E” で
-いったん EPS にしてから，それをメインの LaTeX ファイルに挿入します．
-ちょっと面倒ですので，
-[overpic](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/overpic.html)
-や
-[labelfig](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/labelfig.html)
-を使うのがいいでしょう．
-
-dvipdfmx は PFB 形式の Type 1 フォントしか使えません．
-PFA → PFB 変換には [FontForge](http://fontforge.github.io/) が使えそうです
-
-#### BoundingBox の指定 {#z06f5ff9}
-
-手動で BoundingBox を直接指定する，もしくは extractbb を実行することも可能です．
-
-BoundingBox を直接指定する場合は
-
-```
-\includegraphics[bb=0 0 横ポイント数 縦ポイント数,width=幅]{ファイル名}
-```
-
-を挿入します．
-
-なお “bb” とは “bounding box” を意味しています．
-bb の単位は既定では bp (big point) です．
-
-- 1in = 72bp = 72.27pt = 25.40mm = 2.540 cm
-- [https://twitter.com/zr_tex8r/status/463680032204791808](https://twitter.com/zr_tex8r/status/463680032204791808)
-- [BoundingBox について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=998)
-- [用語・略語集](</用語・略語集/#bp>)
-- [Wikipedia.ja:ポイント](https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%A4%E3%83%B3%E3%83%88)
-- [単位](http://www.math.kobe-u.ac.jp/~kodama/tips-measure.html)
-- [TeXの10ptとDTPソフトの10ptは違う](http://www.dab.hi-ho.ne.jp/t-wata/tex/10pt.html)
-
-bb で直接指定する方法には次の欠点があります．
-
-- 値を指定する手間がかかる
-- 間違った値を指定してしまうと適切に表示されなくなる可能性がある
-
-通常は次に述べる extractbb を使用した方がよいです．
-
-TeX Live, W32TeX には dvipdfmx 用の BoundingBox を作成する extractbb というツールが付属しています．
-
-```
-extractbb hoge.pdf
-```
-
-とすると hoge.xbb というファイルが生成されます．
-extractbb は TeX ソースの本文に記述するものではなく，ターミナルまたは Windows PowerShell またはコマンド プロンプトから実行するコマンドです．
-
-- [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(1)](http://d.hatena.ne.jp/zrbabbler/20141109/1415525804), [「dvipdfmxと3つのバッド・ノウハウ」に関するアレ(2)](http://d.hatena.ne.jp/zrbabbler/20141110/1415632001)
-- [dvipdfmxと3つのバッド・ノウハウ](http://www.slideshare.net/zr-tex8r/yato-texconf14)
-- [xbbファイルが作成できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=817)
-- [inclusion of images and dvipdfmx](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1326)
-- [実験レポート：LaTeX + dvipdfmx による画像ファイル挿入](http://d.hatena.ne.jp/zrbabbler/20140614/1402762227)
-- [dvipdfmx で画像する時に色々とアレな話](http://d.hatena.ne.jp/zrbabbler/20140814/1408040710)
-- [bbox とか ﾅﾝﾄｶBox に関する補足](http://d.hatena.ne.jp/zrbabbler/20140817/1408239981)
+詳しい使い方については，[dvipdfmx](/dvipdfmx/) の項を参照してください．
 
 ### dvips の使い方 {#lf015a28}
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです．
 
 dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマンドや Adobe Acrobat Distiller DC で PDF ファイルに変換できます．
-ただし，処理速度や使いやすさの観点では dvipdfmx のほうがいいかもしれません．
+Adobe Acrobat Distiller DC を用いるほうが信頼性は断然よいですが，
+処理速度や使いやすさの観点では dvipdfmx のほうがいいかもしれません．
 
 詳細は [dvips](/dvips/) を参照してください。
 
-### 図の描き方 {#yca8607c}
+## Windows で PDF {#l3ff32fb}
 
-[図の作り方](</図の作り方/>)で，おもに EPS 形式の画像ファイルの作り方を説明しています。
+Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するかもしれません．
 
-<!-- **Computer Modern Type 1 フォント [#k3985a6a] -->
-<!--  -->
-<!-- W32TeX では Computer Modern Type 1 フォントは&ref(http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/t1fonts.tar.xz); に含まれています． -->
-<!--  -->
-<!-- 無償で配布されている Computer Modern Type 1 -->
-<!-- フォントはすべてのサイズがそろっているわけではありません． -->
-<!-- 次のように type1cm -->
-<!-- パッケージを使って，存在しない Type 1 -->
-<!-- フォントは存在するものを拡大・縮小して使うようにする必要があります． -->
-<!--  -->
-<!-- \usepackage{type1cm} -->
+```
 
-## Word で PDF {#l3ff32fb}
+```
+
+### Word で PDF {#tba45c52}
 
 Word は，同じファイルでも環境の違いによって，レイアウトが変わってしまうという嫌な特徴を持っています．
 正しい方法で PDF にしておけば，レイアウトの崩れは防げます．
-[Microsoft Office](</Microsoft Office/>) を参照してください。
+[Microsoft Office](</Microsoft Office/>) を参照してください．
+
+### 様々なアプリケーションから PDF を作成する {#w728afe1}
+
+Windows 向けには，Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，様々な PDF 作成用のソフトがあります。アプリケーションの印刷機能から，PDF への「印刷」ができる場合がほとんどです．
 
 ## Adobe Acrobat DC で PDF {#w441bc87}
 
@@ -394,13 +179,11 @@ Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の�
 Adobe Acrobat Distiller DC を含む製品（商品）です．
 値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．
 
-その機能によってプランが幾つか存在しています．
-参考：「[&#x30d7;&#x30e9;&#x30f3;&#x3068;&#x4fa1;&#x683c;&#xff1a;&#x30d7;&#x30e9;&#x30f3;&#x6bd4;&#x8f03;&#x8868; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」
+無償で配布されている Adobe Acrobat Reader DC は，PDF の表示と印刷，注釈の追加のみ可能です．
 
-- Adobe Acrobat Reader DC — PDF の表示と印刷と注釈の追加のみ．無償配布されている．
-- Adobe Acrobat DC
-    - Adobe Acrobat Standard DC — PDF の編集が可能
-    - Adobe Acrobat Pro DC — 様々な PDF の編集が可能
+有償の Adobe Acrobat DC には，その機能によってプランが幾つか存在しています．
+「[Acrobat DCプラン別機能比較](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」などを参照してください．
+Standard と Pro がありますが，どちらも様々な文書ファイルや画像ファイルの PDF への変換をサポートしており，PDF のパスワード保護，複数の PDF の統合，PDF の編集などに対応しており，また，Word への書き出しや署名なども可能です．Pro ではこれに加え，PDF/X や PDF/A への変換や，これらへの規格適合性の検証 (プリフライト) などプロフェッショナル向けの機能を備えています．
 
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
@@ -431,11 +214,7 @@ Distiller の［ファイル］ → ［環境設定］で「PDFファイルの�
 「Distillerで変換後にPDFを表示」もオンにしておくと確認のため便利です．
 
 まず，Acrobat では［Adobe PDF 設定］の［デフォルト設定］で選びます．
-Web 用なら 最小ファイルサイズ，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう．
-なお，Acrobat は最小ファイルサイズ設定にしてフォントを埋め込まないようにすると仕様に違反した PDF を生成するようです．
-（参照：[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)
-The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character
-sets may be used.）
+Web 用，論文提出用には低品位でよければ 標準，より高品位にするには 高品質印刷にすればいいでしょう．
 
 プレス品質は論文では必要ないでしょう．
 
@@ -447,11 +226,6 @@ sets may be used.）
 - デフォルトページサイズが米国のレターサイズ（8.5 inches × 11 inches，21.59 cm × 27.94 cm）になっていて
     A4サイズを主に使うなら，ここを 21.0 cm × 29.7 cm に直します（ただし文書側の設定が優先されます）．
 
-- ［フォント］で，「すべてのフォントを埋め込む」は，軽くするためにはオフ，見栄えをまったく同じにしたいときはオンにします．
-    また，「埋め込めなかったときの処理」は「警告した後続行する」であることを確認します．
-    ここが「ジョブをキャンセルする」になっていると，もともとシステムに存在しないフォント（“Ryumin-Light” など）
-    を指定した場合に止まってしまいます．
-
 - ［カラー］で「カラー変更なし」にしておきます．
 - ［詳細設定］で「EPSファイルのページサイズ変更とアートワークの中央配置」をオフにします．
     これは後で dvipdfmx を使う際に便利です．
@@ -461,14 +235,6 @@ sets may be used.）
 
 以上の設定が終われば Distiller
 は［×］で閉じておいてかまいませんが，二つ同時には立ち上がらないようにできていますので，立ち上げたままにしておけば起動時間が節約できます．
-
-LaTeX + dvips で作った PS ファイルを変換する際に “Warning: Ryumin-Light not found, using Font Substitution. Font cannot be embedded.” などと
-いう警告が出ますが，無視してかまいません．
-むしろこのように出るほうがフォントが埋め込まれず軽い PDF になります．
-この PDF を開くと，Ryumin-Light がなければ小塚明朝またはＭＳ 明朝で表示されます．
-これに対して，“XXX not found, using Courier.” というメッセージはエラーです．
-
-- ただし，フォントが埋め込まれないと仕様に違反した PDF になることがあるようです．
 
 Distiller をコマンド プロンプトから使うには
 
@@ -482,33 +248,20 @@ Distiller に関連付けしたくない場合は Distiller に入力/出力フ�
 保存場所や上書き確認をせず Adobe Acrobat DC を立ち上げない設定にしておけば便利です．
 さらに，共有フォルダを「監視フォルダ」に指定して立ち上げておけば Linux などからでも使えます．
 
-LaTeX で color パッケージを使って dvips → Distiller で作った PDF
-を印刷すると文字がアミカケ状態になってしまうことがあります．
-［設定］ → ［ジョブオプション］ → ［カラー］ を「カラーマネジメント用にすべてタグ付け」，作業用スペースの CMYK
-を Photoshop 5 Default CMYK にすると直りました（理屈はよくわかってないのですが）([qa:16839](https://okumuralab.org/~okumura/texfaq/qa/16839.html))．<br>
-設定ファイルを「プリプレス-日本」にしても直るようです ([qa:18199](https://okumuralab.org/~okumura/texfaq/qa/18199.html))．
+#### 注意事項など {#l8a15d53}
 
-Photoshop 5 Default CMYK にすると今度は色が変わってしまうというご指摘をいただきました．
-設定ファイルを「プリプレス-日本」にするのがよさそうです．
-ただ，文字がアミカケ状態になるのは Adobe Acrobat DC から非 PS プリンターに出力する際の問題のようですので，PS
-プリンター（イメージセッタも）では大丈夫かもしれません．
+- LaTeX で color パッケージを使って dvips → Distiller で作った PDF
+    を印刷すると文字がアミカケ状態になってしまうことがあります．
+    ［設定］ → ［ジョブオプション］ → ［カラー］ を「カラーマネジメント用にすべてタグ付け」，作業用スペースの CMYK
+    を Photoshop 5 Default CMYK にすると直りました（理屈はよくわかってないのですが）([qa:16839](https://okumuralab.org/~okumura/texfaq/qa/16839.html))．<br>
+    設定ファイルを「プリプレス-日本」にしても直るようです ([qa:18199](https://okumuralab.org/~okumura/texfaq/qa/18199.html))．
 
-### pdf（のサイズ）を拡大 {#l1c219ce}
+- Photoshop 5 Default CMYK にすると今度は色が変わってしまうというご指摘をいただきました．
+    設定ファイルを「プリプレス-日本」にするのがよさそうです．
+    ただ，文字がアミカケ状態になるのは Adobe Acrobat DC から非 PS プリンターに出力する際の問題のようですので，PS
+    プリンター（イメージセッタも）では大丈夫かもしれません．
 
-下記が目標：
-
-- 元のサイズが 128.0 × 96.0 mm の pdf (beamer作成）のイメージを 2.1865 倍に拡大（ 279.87 × 209.9 mm ）
-- 仕上がりペーパーサイズ（A4: 297.04 × 209.9 mm）とし，上記を中央配置した pdf ファイルを作成
-
-方法１：
-
-Acrobat Pro DC（有償ソフト）を用いて対象の pdf ファイルを開き，Adobe PDF プリンターを用いて印刷し新たなpdf ファイルを生成．
-
-- 下記の手順の結果，拡大倍率 205%，左寄せ配置のpdf ファイルが生成された．
-    - プリント設定で，用紙サイズ A4．
-    - プリントで，Adobe PDF プリンター．ページの拡大／縮小の設定は｢用紙に合わせる」．
-
-## Adobe Acrobat Reader DC /Acrobat DC のヒント {#l5e4219f}
+### Adobe Acrobat Reader DC /Acrobat DC のヒント {#l5e4219f}
 
 印刷ダイアログの「用紙サイズに合わせてページを縮小」は，特に必要なければオフにします．
 これがオンの場合，ほんの少し小さく印刷されることがあります．
@@ -537,7 +290,9 @@ Word などに埋め込む際には，プレビューのラジオボタンは必
 たとえば Illustrator に附いている小塚明朝 Std M を使った場合，KozMinStd-Medium-90ms-RKSJ-H を
 Ryumin-Light-RKSJ-H に置き換えます．
 
-## PDF をパスワードで保護するには {#u51b6592}
+## PDF をパスワードで保護する {#u51b6592}
+
+PDF 文書をパスワードで保護するには，いくつかの方法があります．
 
 - [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
 
@@ -586,19 +341,10 @@ dvipdfmx -S filename
 
 - \special{pdf:encrypt ownerpw (abc) userpw (xyz) length 128 perm 252}
 
-    ```
-             If a parameter is omitted, the default value / empty password
-             is used. The special must appear at the beginning of the file.
-    ```
+## PDF に注釈をつける {#v9b289c9}
 
-- この機能を簡便に利用できるようにするパッケージ[bxpdfcrypt.sty](http://d.hatena.ne.jp/zrbabbler/20110320/1300620094)も存在します．
-
-PDF のパスワードを忘れてしまった場合は
-
-- [PDFCrack](http://pdfcrack.sourceforge.net/)
-- [PDFCrack (Windows version)](http://blog.rubypdf.com/pdfcrack/)
-
-を使うと正しいパスワードを教えてくれます．
+Adobe Acrobat Reader DC をはじめ，様々な PDF ビューアが注釈をサポートしています．
+LaTeX で注釈付きの PDF を作成する方法については，[PDFの作り方/注釈をつける](</PDFの作り方/注釈をつける/>)を参照してください．
 
 ## RedMon による PDF 作成 {#mbf7209f}
 
