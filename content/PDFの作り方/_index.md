@@ -72,30 +72,22 @@ LaTeX のインストールについては
 
 LaTeX で PDF を作成する方法はいくつかあります。日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました。
 [dvipdfmx](/dvipdfmx/) というソフトで DVI ファイルから PDF を生成する方法もあります。欧米では，pdfLaTeX により LaTeX 文書から直接 PDF を生成するのが一般的です．
-Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/)， [XeLaTeX](/XeTeX/) が使えます．LuaLaTeX や XeLaTeX で日本語の PDF ファイルを作成する場合は [LuaTeX-ja](/LuaTeX-ja/) や [ZXjatype](/xeCJK/) を使用します．
+Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/)， [XeLaTeX](/XeTeX/) が使えます．
 
 #### PDF形式出力を得るLaTeXタイプセットの主な流儀 {#gf004f58}
 
 1. tex → pdf
     - platex-ng: tex → pdf
-    - pdflatex: tex → pdf (日本語を使用する場合は BXcjkjatype)
-    - lualatex: tex → pdf (日本語を使用する場合は LuaTeX-ja)
-    - xelatex: tex (→ xdv) → pdf (日本語を使用する場合は ZXjatype)
+    - pdflatex: tex → pdf
+    - lualatex: tex → pdf
+    - xelatex: tex (→ xdv) → pdf
 1. tex → dvi → pdf
     - uplatex→dvipdfmx
     - Windows では [dviout](/dviout/) から印刷で PDF へ出力する方法もあります。
 1. tex → dvi → ps → pdf
-    - uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か「Adobe Acrobat Distiller DC」で ps → pdf
+    - uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
 
 arXiv などでは 3. を要求されます。特に Adobe Acrobat Distiller DC を用いるほうが信頼性が高く，印刷所などでも好まれます．
-
-```
-
-```
-
-#### 図の挿入について {#n20e1824}
-
-dvips を使う場合は，図は EPS 形式のみの対応となります．それ以外の場合は，むしろ EPS 形式を使用せずに PDF 形式の挿入図を用いて処理させると速くなります．pdfLaTeX，XeLaTeX，LuaLaTeX は EPS 形式以外にも PDF，PNG，JPEG などもサポートしています．適宜これらの形式を選択して利用すると良いでしょう．
 
 ### 読み手に親切な PDF ファイル {#hb3bee4c}
 
@@ -346,62 +338,10 @@ dvipdfmx -S filename
 Adobe Acrobat Reader DC をはじめ，様々な PDF ビューアが注釈をサポートしています．
 LaTeX で注釈付きの PDF を作成する方法については，[PDFの作り方/注釈をつける](</PDFの作り方/注釈をつける/>)を参照してください．
 
-## RedMon による PDF 作成 {#mbf7209f}
-
-- [WindowsをPostScriptプリンターにしてUbuntuから快適印刷](http://gihyo.jp/admin/serial/01/ubuntu-recipe/0271)
-- [pdf仮想プリンタを作成する (Windows 7 Enterprise 64bit)](http://heilman-jinroku.blogspot.jp/2012/09/pdfwindows-7-enterprise-64bit.html)
-- [ghostscript と RedMon による PDF プリンタの実現](http://miko.org/~tatyana/tech/Win/pdfprinter.html)
-
-Windows 上で，フリーウェアだけで簡単に PDF が作れます．
-[RedMon](http://pages.cs.wisc.edu/~ghost/redmon/) というツールと Ghostscript を組み合わせて使います．
-
-あらかじめ最新版の Ghostscript をインストールしておきます．
-フォントを埋め込むように設定しておくといいでしょう．
-
-RedMon を展開して setup.exe を実行します．
-
-次に，コントロールパネルの「プリンターの追加」（「プリンターのインストール」）を実行します．
-「ローカルプリンター」「自動的に検出しない」でいいでしょう．
-プリンターポートは「新しいポートの作成」で「Redirected Port」を選びます．
-ポート名は “RPT1:” のままでかまいません（複数作ると “RPT2:” 等々になります）．
-プリンターソフトウェアは，カラーのPSプリンターなら何でもかまいません．
-“Apple” “Apple Color LaserWriter 12/600J” でも “Canon” “Canon LBP-2260PS” でも大丈夫でした．
-テスト印刷はしません．
-
-「デバイスとプリンター」の「プリンターと FAX」に新しいプリンターアイコンができますので，
-適当な名前に変えます（例えば “Ghostscript PDF writer”）．
-さらに，右クリックして「プロパティ」の「ポート」タブを選び，上で指定したポート名
-（“RPT1:” など）が選ばれている状態で［ポートの構成］を押し，たとえば次のように設定します：
-
-Redirect this port to the program:
-: &nbsp;
-
-C:\texlive\2015\bin\win32\rungs.exe
-
-Arguments for this program are:
-: -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dSAFER -sPAPERSIZE=a4 -sOutputFile="%1" -
-
-Output:
-: Prompt for filename
-
-Run:
-: Minimized
-
-Word などのアプリケーションからこのプリンターに印刷すると，保存するファイル名を聞かれます．
-適当な名前（何々.pdf）を入力すれば，PDF ファイルが出来上がります．
-
-同趣向の
-[PDFCreator 日本語対応版](http://super777.o.oo7.jp/page004.html)
-というフリーソフトウェアがあります．
-日本語も通ります．<br>
-
 ## その他のリンク {#ed93164a}
 
 - [Wikipedia.en:List_of_PDF_software](https://en.wikipedia.org/wiki/List_of_PDF_software)
-- [DTP で TeX を使おう](</DTPとTeX/>)
 - [PDFフォント○×チェッカー](http://pdf.printjapan.com/)　これを使うと作成した PDF ファイルにフォントがすべて埋め込まれているかどうかチェックできます．
-- [埋め込むか，埋め込まざるか，その設定方法が問題だ（W32TeX 編）](http://d.hatena.ne.jp/zrbabbler/20130110/1357824856)
-- [（フォントを）埋め込むか，埋め込まざるか，その設定方法が問題だ（TeX Live 編）](http://d.hatena.ne.jp/zrbabbler/20130115/1358197826), [埋め込むか，埋め込まざるか，の補足](http://d.hatena.ne.jp/zrbabbler/20130119/1358573411), [埋め込むか，埋め込まざるか，後者は問題だ](http://d.hatena.ne.jp/zrbabbler/20130131/1359631758)
 - [pdf ファイルのフォント埋め込みについて - JSIAM](http://www.jsiam.org/modules/xfsection/article.php?articleid=57)
 - [手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm) (横浜工文社さん)
 - [フリーソフトで PDF を作成する方法](http://www.trueroad.jp/pdf-make/) （細田さん）
@@ -413,14 +353,10 @@ Word などのアプリケーションからこのプリンターに印刷する
 - [LaTeXからPDFをKindleで読みやすく](http://d.hatena.ne.jp/peccu/20111120/latex2kindle)
 - [Texに泣きました](http://d.hatena.ne.jp/sonodam/20111019/p1)
 - [Good bye EPS.](http://d.hatena.ne.jp/ratbeta/20111211/1323584317)
-- [TeXで日本語PDFを生成する方法に詳しい方いますか？](https://groups.google.com/forum/#!topic/web2py-japan/kTRxfjOdAXs)
 - [dvipsとdvipdfmxでPDFにヒラギノ書体を埋め込もう](http://www.unilab.gbb60166.jp/tex/hiragino.htm)
 - [文庫本作成データ生成ツール・威沙(朱鷺魅)](http://tokimi.sylphid.jp/)
 - [TeX+dvipdfmxでiPhone / iPod Touch向けPDF作成（エセ）](http://irusuka.sakura.ne.jp/archive/2012/06/texdvipdfmxiphone_ipod_touchpd.html)
 - [LaTeX で原稿を書いてから印刷所に入稿するまで](http://hayamiz.com/~hotchpotch/?p=43)
 - [dvipdfmxで作ったPDFをPDF/X-1aにする際にいちばんうまくいく方法](http://tumblr.golden-lucky.net/post/195552930/dvipdfmx-pdf-pdf-x-1a-1)
-- [pdfx.sty](http://fugenji.org/thomas/diary/index.php?no=r794)
-- [TeXにpng画像を挿入するときの注意](http://qiita.com/items/32ea69d031701463f789)
-- [http://www.willus.com/k2pdfopt/](http://www.willus.com/k2pdfopt/)
 - [Mac OS XでGhostScriptを使わない，日本語PostScriptファイルのPDF化](http://mechawooser.blogspot.jp/2013/11/mac-os-xghostscriptpostscriptpdf.html)
 - [PDF画像を使う（TeX on Win8.1）](http://njmnjm.blogspot.jp/2014/04/pdftex-on-win81.html)
