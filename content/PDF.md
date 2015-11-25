@@ -16,8 +16,8 @@ PDF の基本は，紙に書かれた文書を電子文書として表現する�
 その用途は二十数年前の登場から広がりを見せ，現在では様々な用途や目的におけるニーズにあわせ，それに特化した派生規格も存在します．
 PDF から派生した規格として，主に以下のものがあります：
 
-- PDF/X -- 印刷用途に特化した企画。より安全な印刷データの受け渡しのため，PDF に様々な制約を設けています．
-- PDF/A -- 文書保管目的に特化した企画。文書の長期保存という観点から PDF を利用しようというものです．文書のメタデータの埋め込みが要求されたり，規格によっては，文書の論理構造を示すタグ (マークアップ） が必須となります．
+- PDF/X -- 印刷用途に特化した規格。より安全な印刷データの受け渡しのため，PDF に様々な制約を設けています．
+- PDF/A -- 文書保管目的に特化した規格。文書の長期保存という観点から PDF を利用しようというものです．文書のメタデータの埋め込みが要求されたり，規格によっては，文書の論理構造を示すタグ (マークアップ） が必須となります．
 - PDF/UA -- アクセシビリティ．よりアクセシブルな PDF を目指して策定された規格です．スクリーンリーダーによる読み上げなどが問題なくできるように配慮されています．
 
 Adobe より，元となる PDF の仕様書が公開されています (ISO の規格は有償です)：
@@ -41,10 +41,10 @@ PDF を出力できます．
 [PDFCreator](http://www.pdfforge.org/)，
 [CubePDF](http://www.cube-soft.jp/cubepdf/)，
 [BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php)，
-[CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)， 
+[CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)，
 [PDF24 Creator](http://en.pdf24.org/)，
 [PrimoPDF](http://www.primopdf.com/)，
-[pdf995](http://www.pdf995.com/) 
+[pdf995](http://www.pdf995.com/)
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
