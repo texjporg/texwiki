@@ -15,13 +15,7 @@ pukiwiki: "PDFの作り方"
 
 <!-- '''すべてのバージョンの　Adobe Acrobat (Adobe Acrobat Distiller DC を含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。随分前から指摘されていますが、直る気配がありません。問題のあるソフトウェアであると言わざるを得ないでしょう。''' -->
 
-***
-
-***
-
-## PDF を作るためのソフトウェア {#v062101a}
-
-今では PDF ファイルを作るための方法は実に様々あります：
+現在では PDF ファイルを作るための方法は実に様々あります：
 
 - OS　の印刷機能を使う。
 - [Google Chrome](</Google Chrome/>)　などのブラウザの印刷機能，
@@ -31,11 +25,64 @@ pukiwiki: "PDFの作り方"
 - Adobe Acrobat DC などの専用ソフトを使う。
 - [LaTeX](/LaTeX/) や Apache FOP などの文書作成環境を整え，PDF として文書を出力する。
 
-多くの文書作成のためのシステムが PDF での出力をサポートしています。
-
-## PDF を扱うためのソフトウェア {#mde22763}
-
 PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) という項目にまとめられています。
+
+***
+
+***
+
+## OS の印刷機能を使う {#m27e7b63}
+
+OS X では標準で印刷機能から PDF で保存ができます。
+
+Windows でも，Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するかもしれません．
+
+例えば Word は，同じファイルでも環境の違いによってレイアウトが変わってしまうという嫌な特徴を持っていますが，
+正しい方法で PDF にしておくことで，レイアウトの崩れは防げます．
+詳しくは [Microsoft Office](</Microsoft Office/>) の項を参照してください．
+
+Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。
+
+Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの[Cairo](http://cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です。
+
+### 仮想プリンタの追加 {#ge6f5633}
+
+Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，仮想プリンタとして動作可能な，様々な PDF 作成用のソフトがあります。これらを導入することで，アプリケーションの印刷機能から，PDF への「印刷」ができるようになります．
+
+Windows では，[Ghostscript](/Ghostscript/) というオープンソースのソフトウェアを用いた，
+PDF へ出力するための無償の仮想プリンタが多数あります：
+[PDFCreator](http://www.pdfforge.org/)，
+[CubePDF](http://www.cube-soft.jp/cubepdf/)，
+[BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php)，
+[CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)，
+[PDF24 Creator](http://en.pdf24.org/)，
+[PrimoPDF](http://www.primopdf.com/)，
+[pdf995](http://www.pdf995.com/)
+
+インストール方法や使い方については，それぞれのソフトウェア名で検索してください。
+
+## HTML などから PDF を生成する {#w33adba5}
+
+[Google Chrome](</Google Chrome/>) などのブラウザは，ウェブページを PDF で保存する機能を持っています。
+このため，HTML で文書を書いておけば，手軽に PDF 生成が可能です。
+
+いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](http://wkhtmltopdf.org/) などを使い，PDF の生成が可能です。wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています。Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです。
+
+wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](http://phantomjs.org/) も　Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です。
+
+HTML 文書をいちいち書きたくない場合は，[Markdown](/Markdown/) などで文書を作成するとよいでしょう。PhantomJS を利用した，[markdown-pdf](https://www.npmjs.com/package/markdown-pdf) は，Markdown 文書を HTML へ変換し，それから PDF を生成します。Node.js が利用可能な環境ではインストールは簡単です：
+
+```
+ npm install -g markdown-pdf
+```
+
+Markdown 文書を書いたら，markdown-pdf コマンドで PDF を生成します。CSS を使って体裁を整えることができます。
+
+```
+ markdown-pdf -s style.css -o output.pdf input.md
+```
+
+[Atom](/Atom/) エディタなどで編集環境を整えるとよいでしょう。
 
 ## LaTeX で PDF {#k0e3280f}
 
@@ -158,24 +205,6 @@ Adobe Acrobat Distiller DC を用いるほうが信頼性は断然よいです�
 
 詳細は [dvips](/dvips/) を参照してください。
 
-## Windows で PDF {#l3ff32fb}
-
-Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するかもしれません．
-
-```
-
-```
-
-### Word で PDF {#tba45c52}
-
-Word は，同じファイルでも環境の違いによって，レイアウトが変わってしまうという嫌な特徴を持っています．
-正しい方法で PDF にしておけば，レイアウトの崩れは防げます．
-[Microsoft Office](</Microsoft Office/>) を参照してください．
-
-### 様々なアプリケーションから PDF を作成する {#w728afe1}
-
-Windows 向けには，Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，様々な PDF 作成用のソフトがあります。アプリケーションの印刷機能から，PDF への「印刷」ができる場合がほとんどです．
-
 ## Adobe Acrobat DC で PDF {#w441bc87}
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
@@ -283,10 +312,12 @@ Distiller に関連付けしたくない場合は Distiller に入力/出力フ�
 拡大するときれいに見えるなら，Adobe Acrobat Reader DC/Acrobat DC の設定の問題でしょう．
 スムージング（アンチエイリアシング），グリーキング（小さい文字を潰して表示すること）の設定を変えてみてください．
 
-## Illustrator のヒント {#j52115c0}
+## グラフィックソフトで PDF {#y8472509}
 
-Illustrator 9/10 から EPS
-形式で保存するときは，互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．
+### Illustrator のヒント {#zf39d5a5}
+
+Illustrator 9/10 から EPS　形式で保存するときは，
+互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．
 CMYK ポストスクリプト（レベル 2）にします．
 プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
 Word などに埋め込む際には，プレビューのラジオボタンは必ず「不透明」にします．
