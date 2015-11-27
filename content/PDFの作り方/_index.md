@@ -17,7 +17,7 @@ pukiwiki: "PDFの作り方"
 
 現在では PDF ファイルを作るための方法は様々あります：
 
-- OS　の印刷機能などを使う。
+- OS の印刷機能などを使う。
 - ブラウザの印刷機能などで HTML から生成する。
 - グラフィックソフトから PDF で出力する。
 - Adobe Acrobat DC などの専用ソフトを使う。
@@ -33,11 +33,7 @@ PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) とい�
 
 OS X では標準で印刷機能から PDF で保存ができます。
 
-Windows でも，Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するかもしれません．
-
-例えば Word は，同じファイルでも環境の違いによってレイアウトが変わってしまうという嫌な特徴を持っていますが，
-正しい方法で PDF にしておくことで，レイアウトの崩れは防げます．
-詳しくは [Microsoft Office](</Microsoft Office/>) の項を参照してください．
+Windows でも，Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう。
 
 Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。
 
@@ -147,33 +143,6 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
     - uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
 
 arXiv などでは 3. を要求されます。特に Adobe Acrobat Distiller DC を用いるほうが信頼性が高く，印刷所などでも好まれます．
-
-### 読み手に親切な PDF ファイル {#hb3bee4c}
-
-PDF を作成するときは，読み手のことを考え，親切な PDF となるように心がけましょう．
-
-#### しおりやハイパーリンクの利用 {#oe50e6c2}
-
-目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．dvipdfmx を使用する場合は，[hyperref](/hyperref/) パッケージを使い，プリアンブルに下記を入れると良いです：
-
-```
-\usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,%
-            urlcolor=black,linkcolor=black,citecolor=black,%
-            linktocpage=true,bookmarks=false]{hyperref}
-\usepackage{pxjahyper}
-```
-
-#### 疑似ボールド体など {#jec95395}
-
-いわゆる Poor Man's Bold (疑似ボールド） の利用は避け，\boldsymbol などを用いて本物のボールド体を使ってください．重ね打ち \[“\pmb” or “\bm”\] によって生じる，擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．これは単に見苦しいだけでなく，検索やテキストの抽出にも悪影響を与えます． <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， --> <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない --> <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
-
-#### フォントの利用 {#v9136148}
-
-OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
-
-<em>Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．</em>
-
-上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．
 
 ### dvipdfmx の使い方 {#rdc781c9}
 
@@ -324,6 +293,33 @@ Word などに埋め込む際には，プレビューのラジオボタンは必
 あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．
 たとえば Illustrator に附いている小塚明朝 Std M を使った場合，KozMinStd-Medium-90ms-RKSJ-H を
 Ryumin-Light-RKSJ-H に置き換えます．
+
+## 読み手に親切な PDF ファイル {#hb3bee4c}
+
+PDF を作成するときは，読み手のことを考え，親切な PDF となるように心がけましょう．
+
+### しおりやハイパーリンクの利用 {#oe50e6c2}
+
+目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．LaTeX で dvipdfmx を使用する場合は，[hyperref](/hyperref/) パッケージを使い，プリアンブルに下記を入れると良いです：
+
+```
+\usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,%
+            urlcolor=black,linkcolor=black,citecolor=black,%
+            linktocpage=true,bookmarks=false]{hyperref}
+\usepackage{pxjahyper}
+```
+
+### 疑似ボールド体など {#jec95395}
+
+いわゆる Poor Man's Bold (疑似ボールド） の利用は避け，\boldsymbol などを用いて本物のボールド体を使ってください．重ね打ち \[“\pmb” or “\bm”\] によって生じる，擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．これは単に見苦しいだけでなく，検索やテキストの抽出にも悪影響を与えます． <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， --> <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない --> <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
+
+### フォントの利用 {#v9136148}
+
+OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
+
+<em>Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．</em>
+
+上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．
 
 ## PDF をパスワードで保護する {#u51b6592}
 
