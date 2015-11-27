@@ -13,9 +13,7 @@ pukiwiki: "PDFの作り方"
 投稿論文や予稿で PDF を要求されることが増えました。
 ここでは PDF の上手な作り方を解説します。
 
-<!-- '''すべてのバージョンの　Adobe Acrobat (Adobe Acrobat Distiller DC を含む) や dvipdfmx は CJK フォントを埋め込まないと仕様に違反した PDF を生成します。仕様にできるだけ従いたい場合には，これらのソフトを使う場合フォントを可能な限り埋め込むようにしましょう。随分前から指摘されていますが、直る気配がありません。問題のあるソフトウェアであると言わざるを得ないでしょう。''' -->
-
-現在では PDF ファイルを作るための方法は様々あります：
+今では PDF ファイルを作るための方法は様々あります：
 
 - OS の印刷機能などを使う。
 - ブラウザの印刷機能などで HTML から生成する。
@@ -35,13 +33,14 @@ OS X では標準で印刷機能から PDF で保存ができます。
 
 Windows でも，Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう。
 
-Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。
+Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します。
 
 Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの[Cairo](http://cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です。
 
-### 仮想プリンタの追加 {#ge6f5633}
+### 仮想プリンタの導入 {#ge6f5633}
 
-Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，仮想プリンタとして動作可能な，様々な PDF 作成用のソフトがあります。これらを導入することで，アプリケーションの印刷機能から，PDF への「印刷」ができるようになります．
+PDF 出力用の仮想プリンタを導入することで，様々なアプリケーションから，印刷機能を使って PDF を作成できるようになります。
+Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，仮想プリンタとして動作可能な，様々な PDF 作成用のソフトがあります。
 
 Windows では，[Ghostscript](/Ghostscript/) というオープンソースのソフトウェアを用いた，
 PDF へ出力するための無償の仮想プリンタが多数あります：
@@ -63,20 +62,6 @@ PDF へ出力するための無償の仮想プリンタが多数あります：
 いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](http://wkhtmltopdf.org/) などを使い，PDF の生成が可能です。wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています。Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです。
 
 wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](http://phantomjs.org/) も　Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です。
-
-HTML 文書をいちいち書きたくない場合は，[Markdown](/Markdown/) などで文書を作成するとよいでしょう。PhantomJS を利用した，[markdown-pdf](https://www.npmjs.com/package/markdown-pdf) は，Markdown 文書を HTML へ変換し，それから PDF を生成します。Node.js が利用可能な環境ではインストールは簡単です：
-
-```
- npm install -g markdown-pdf
-```
-
-Markdown 文書を書いたら，markdown-pdf コマンドで PDF を生成します。CSS を使って体裁を整えることができます。
-
-```
- markdown-pdf -s style.css -o output.pdf input.md
-```
-
-[Atom](/Atom/) エディタなどで編集環境を整えるとよいでしょう。
 
 ## LaTeX で PDF {#k0e3280f}
 
@@ -173,6 +158,8 @@ Adobe Acrobat Distiller DC を用いるほうが信頼性は断然よいです�
 詳細は [dvips](/dvips/) を参照してください。
 
 ## Adobe Acrobat DC で PDF {#w441bc87}
+
+Adobe Acrobat　は，Adobe Systems が開発する、PDF ファイルを作成・編集・加工・管理するためのソフトです。PDF の作成だけでなく，様々な機能を備えています。
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
@@ -281,6 +268,12 @@ Distiller に関連付けしたくない場合は Distiller に入力/出力フ�
 
 ## グラフィックソフトで PDF {#y8472509}
 
+多くのグラフィックスソフトが PDF の出力機能を備えています。
+
+### 様々な画像を PDF へ変換する {#m0798181}
+
+[ImageMagick](/ImageMagick/) などを使うとよいでしょう。
+
 ### Illustrator のヒント {#zf39d5a5}
 
 Illustrator 9/10 から EPS　形式で保存するときは，
@@ -294,34 +287,39 @@ Word などに埋め込む際には，プレビューのラジオボタンは必
 たとえば Illustrator に附いている小塚明朝 Std M を使った場合，KozMinStd-Medium-90ms-RKSJ-H を
 Ryumin-Light-RKSJ-H に置き換えます．
 
-## 読み手に親切な PDF ファイル {#hb3bee4c}
+## PDF を作る際の Tips {#k491ed05}
+
+### 読み手に親切な PDF ファイル {#hb3bee4c}
 
 PDF を作成するときは，読み手のことを考え，親切な PDF となるように心がけましょう．
 
-### しおりやハイパーリンクの利用 {#oe50e6c2}
+#### しおりやハイパーリンクの利用 {#oe50e6c2}
 
-目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．LaTeX で dvipdfmx を使用する場合は，[hyperref](/hyperref/) パッケージを使い，プリアンブルに下記を入れると良いです：
+目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．
+LaTeX で PDF 文書を作成する場合は，[hyperref](/hyperref/) パッケージを使いましょう。
+しおりの生成や，目次のハイパーリンク化などを自動化してくれ，非常に便利です。 <!-- プリアンブルに下記を入れると良いです： --> <!--  --> <!-- \usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,% --> <!--             urlcolor=black,linkcolor=black,citecolor=black,% --> <!--             linktocpage=true,bookmarks=false]{hyperref} --> <!-- \usepackage{pxjahyper} -->
 
-```
-\usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,%
-            urlcolor=black,linkcolor=black,citecolor=black,%
-            linktocpage=true,bookmarks=false]{hyperref}
-\usepackage{pxjahyper}
-```
+Word などで PDF 文書を作る場合でも，設定を行い，きちんと見出しを「見出し」として作成すれば自動的にしおりをつけることができます。
 
-### 疑似ボールド体など {#jec95395}
+#### 疑似ボールド体など {#jec95395}
 
-いわゆる Poor Man's Bold (疑似ボールド） の利用は避け，\boldsymbol などを用いて本物のボールド体を使ってください．重ね打ち \[“\pmb” or “\bm”\] によって生じる，擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．これは単に見苦しいだけでなく，検索やテキストの抽出にも悪影響を与えます． <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， --> <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない --> <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
+いわゆる Poor Man's Bold (疑似ボールド） の利用は避けましょう。LaTeX では，\boldsymbol などを用いて本物のボールド体を使ってください．重ね打ち \[“\pmb” or “\bm”\] によって生じる，擬似的ボールド体は見苦しいです．例えば IEEE サイトで有償提供されている論文などです．これは単に見苦しいだけでなく，テキストの検索や抽出にも悪影響を与えます． <!-- bm パッケージによる \bm は基本的には重ね打ちではなく， --> <!-- きちんとボールド体を用います（ただし，ボールド体を利用できない --> <!-- ［あるいは利用しづらい］一部の記号については重ね打ちになります）． -->
 
-### フォントの利用 {#v9136148}
+#### フォントの利用 {#v9136148}
 
 OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
 
 <em>Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．</em>
 
-上記に関して，世の中の PDF ファイルには読んでいて苦労をするものが案外多いようです．
+#### テキスト情報 {#g073c42c}
 
-## PDF をパスワードで保護する {#u51b6592}
+PDF 文書内で文字列を検索したり，文書から文字列をコピーしたりできるようにしましょう。フォントがアウトライン化されて，テキスト情報が欠落してしまうような場合は，これらができなくなってしまいます。
+
+#### 画像の解像度 {#vf1940c0}
+
+PDF 文書内にとりこむ画像の解像度は，ファイルサイズ，ページが完全に描画されるまでの時間などに影響します。読み手がストレスなく文書を読めるように適切に取り扱いましょう。
+
+### PDF をパスワードで保護する {#u51b6592}
 
 PDF 文書をパスワードで保護するには，いくつかの方法があります．
 
@@ -372,7 +370,7 @@ dvipdfmx -S filename
 
 - \special{pdf:encrypt ownerpw (abc) userpw (xyz) length 128 perm 252}
 
-## PDF に注釈をつける {#v9b289c9}
+### PDF に注釈をつける {#v9b289c9}
 
 Adobe Acrobat Reader DC をはじめ，様々な PDF ビューアが注釈をサポートしています．
 LaTeX で注釈付きの PDF を作成する方法については，[PDFの作り方/注釈をつける](</PDFの作り方/注釈をつける/>)を参照してください．
@@ -380,22 +378,5 @@ LaTeX で注釈付きの PDF を作成する方法については，[PDFの作�
 ## その他のリンク {#ed93164a}
 
 - [Wikipedia.en:List_of_PDF_software](https://en.wikipedia.org/wiki/List_of_PDF_software)
-- [PDFフォント○×チェッカー](http://pdf.printjapan.com/)　これを使うと作成した PDF ファイルにフォントがすべて埋め込まれているかどうかチェックできます．
 - [pdf ファイルのフォント埋め込みについて - JSIAM](http://www.jsiam.org/modules/xfsection/article.php?articleid=57)
-- [手書き PDF 入門](http://www.kobu.com/docs/pdf/pdfxhand.htm) (横浜工文社さん)
-- [フリーソフトで PDF を作成する方法](http://www.trueroad.jp/pdf-make/) （細田さん）
-- [さまざまなPDFの作成技術の概観](http://www.antenna.co.jp/pdf/reference/createpdf.htm) (アンテナハウスさん)
-- [テクニカルガイド - PDF作成方法](http://www.iro-dori.net/guide/technical/pdf/)
-- [PDFファイル作成方法](http://www.miyagi.kopas.co.jp/guide_JSBBA/guide.html)
-- [PDF化の方法（Windows編）](http://www.kenkyuu.net/computer-12)
-- [きんどるをはっく - LaTeX編 - YouTube](http://www.youtube.com/watch?v=JQOsVWqLCLM&feature=related) KindleでLaTeXソースをコンパイルし，pdfファイルを生成．できたpdfをKindleで閲覧．
-- [LaTeXからPDFをKindleで読みやすく](http://d.hatena.ne.jp/peccu/20111120/latex2kindle)
-- [Texに泣きました](http://d.hatena.ne.jp/sonodam/20111019/p1)
-- [Good bye EPS.](http://d.hatena.ne.jp/ratbeta/20111211/1323584317)
-- [dvipsとdvipdfmxでPDFにヒラギノ書体を埋め込もう](http://www.unilab.gbb60166.jp/tex/hiragino.htm)
 - [文庫本作成データ生成ツール・威沙(朱鷺魅)](http://tokimi.sylphid.jp/)
-- [TeX+dvipdfmxでiPhone / iPod Touch向けPDF作成（エセ）](http://irusuka.sakura.ne.jp/archive/2012/06/texdvipdfmxiphone_ipod_touchpd.html)
-- [LaTeX で原稿を書いてから印刷所に入稿するまで](http://hayamiz.com/~hotchpotch/?p=43)
-- [dvipdfmxで作ったPDFをPDF/X-1aにする際にいちばんうまくいく方法](http://tumblr.golden-lucky.net/post/195552930/dvipdfmx-pdf-pdf-x-1a-1)
-- [Mac OS XでGhostScriptを使わない，日本語PostScriptファイルのPDF化](http://mechawooser.blogspot.jp/2013/11/mac-os-xghostscriptpostscriptpdf.html)
-- [PDF画像を使う（TeX on Win8.1）](http://njmnjm.blogspot.jp/2014/04/pdftex-on-win81.html)
