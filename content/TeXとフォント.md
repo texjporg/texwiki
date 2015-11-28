@@ -65,7 +65,9 @@ Georg Duffner　によるフォントです。デザインは Claude Garamond �
 
 <a href="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/ebgaramond.jpg"><img src="/attach/TeX%E3%81%A8%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/ebgaramond.jpg" alt="" style="display:block;margin-inline:auto;margin-right:auto"></a>
 
-Garamond 系のフォントに関しては [Adobe](https://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-JP&event=displayFontPackage&code=1703) をはじめとして様々なフォントベンダで作成されています。いわゆるオールド・スタイル・セリフに分類されます。利用可能な文字集合として、ラテン文字・ギリシャ文字・キリル文字があります。標準的な各種リガチャに加え、st や ct などのリガチャもあり、スモールキャップ・オールドスタイル数字もサポートします。いくつかのオプティカルサイズが用意されています。
+Garamond 系のフォントに関しては [Adobe](https://store1.adobe.com/cfusion/store/html/index.cfm?store=OLS-JP&event=displayFontPackage&code=1703) をはじめとして様々なフォントベンダで作成されています。いわゆるオールド・スタイル・セリフに分類されます。
+
+EB Garamond で利用可能な文字集合として、ラテン文字・ギリシャ文字・キリル文字があります。標準的な各種リガチャに加え、st や ct などのリガチャもあり、スモールキャップ・オールドスタイル数字もサポートします。いくつかのオプティカルサイズが用意されています。
 
 TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそれを利用しましょう。
 インストールしたら、ターミナルから　Map ファイルを有効にし、
