@@ -157,16 +157,14 @@ Adobe Acrobat Distiller DC を用いるほうが信頼性は断然よいです�
 
 ## Adobe Acrobat DC で PDF {#w441bc87}
 
-Adobe Acrobat　は，Adobe Systems が開発する、PDF ファイルを作成・編集・加工・管理するためのソフトです。PDF の作成だけでなく，様々な機能を備えています。
+Adobe Acrobat　は，[Adobe Systems](http://www.adobe.com/jp/) が開発する、PDF ファイルを作成・編集・加工・管理するためのソフトです。PDF の作成だけでなく，様々な機能を備えています。
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
 Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．
 [Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は
 Adobe Acrobat Distiller DC を含む製品（商品）です．
-値段は [Adobe Systems](http://www.adobe.com/jp/) で確認してください．
-
-無償で配布されている Adobe Acrobat Reader DC は，PDF の表示と印刷，注釈の追加のみ可能です．
+値段は Adobe のサイトで確認してください．
 
 有償の Adobe Acrobat DC には，その機能によってプランが幾つか存在しています．
 「[Acrobat DCプラン別機能比較](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」などを参照してください．
@@ -175,8 +173,7 @@ Standard と Pro がありますが，どちらも様々な文書ファイルや
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
 Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．
-アップデートについては[アドビシステムズ](http://www.adobe.com/jp/)の
-ダウンロードのページをご覧ください．
+アップデートについては　Adobe のダウンロードのページをご覧ください．
 
 ### Adobe Acrobat Distiller DC の設定 {#e5e57a76}
 
