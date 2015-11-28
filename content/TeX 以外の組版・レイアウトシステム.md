@@ -319,7 +319,7 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 
 をコメントアウトする必要があるようです。
 
-日本語の利用に関しては、表示等はできますが、禁則処理がうまくできていなかったり、CSS で和文フォントをきちんと指定しないと中国語フォントが選択されてしまったりと、色々と難しいところがあります。しかしながら、ブラウザからそのまま何も考えずに印刷する場合に比べて質は高いようです。
+日本語の利用に関しては、表示等はできますが、禁則処理がうまくできていなかったり、CSS で和文フォントをきちんと指定しないと中国語フォントが選択されてしまったりと、色々と難しいところがあります。しかしながら、ブラウザからそのまま何も考えずに印刷する場合に比べて質はかなり高いようです。
 
 [CSS Paged Media Module Level 3](http://www.w3.org/TR/css3-page/) は比較的よくサポートされていますが、ヘッダなどの自動生成、脚注、相互参照に必要な [CSS-GCPM](http://www.w3.org/TR/css-gcpm-3/) のサポートはほぼありません。
 
@@ -336,26 +336,27 @@ Python 3.x/Windows で WeasyPrint 0.23 を動かすには
 ```
 
 のようにして、スタイルシートを指定します。
-例えば、style.css に以下のそうな内容を書き込み、保存します。
-
-　　　@page {
+例えば、style.css に以下のような内容を書き込み、保存します。
 
 ```
- 　　  size: A4 portrait;
-  　　 margin: 1.5cm 1.5cm 1.5cm 1.5cm;
+  @page {
 ```
 
 ```
-   　　@top-right {
-     　 width: 10%;
-       content: counter(page);
-       vertical-align: middle;
-       font-size: 10pt;
-       text-align: center;
- 　　  }
+ 　　 size: A4 portrait;
+  　　margin: 1.5cm 1.5cm 1.5cm 1.5cm;
 ```
 
-　　　}　
+```
+   　@top-right {
+     　width: 10%;
+      content: counter(page);
+      vertical-align: middle;
+      font-size: 10pt;
+      text-align: center;
+    }
+  }
+```
 
 ```
   body {
