@@ -17,9 +17,9 @@ TeX は Donald E. Knuth によって開発された組版エンジン，言語�
 
 ***
 
-### TeX とは {#pbb19376}
+## TeX とは {#pbb19376}
 
-#### TeX の読み方 {#gea7d22e}
+### TeX の読み方 {#gea7d22e}
 
 TeX は「テック」または「テフ」(\[tex\])と読みます。
 どちらかというと日本の大学関係者の人は「テフ」派が多いようです。
@@ -33,7 +33,7 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。
 - [「TeX」の読み方はテフ、それともテック？](http://www.kksanshusha.jp/booklab/archives/1184)
 - [Wikipedia.ja:TeX](https://ja.wikipedia.org/wiki/TeX)
 
-#### TeX の仕事 {#vc046011}
+### TeX の仕事 {#vc046011}
 
 TeX の仕事は組版を行うことです。
 
@@ -49,20 +49,11 @@ TeX はこのような処理を自動化するシステムであり，組版エ�
 TeX 以外にも組版を行うシステムはいくつかあります。
 [TeX 以外の組版・レイアウトシステム](</TeX 以外の組版・レイアウトシステム/>)の項などを参照してください。
 
-#### TeX 処理系とその拡張 {#g6783551}
+### TeX 処理系とその拡張 {#g6783551}
 
-Knuth によるオリジナルの TeX に対し，Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
-それぞれの処理系の解説ページをご覧ください．
-
-- [LuaTeX](/LuaTeX/)
-- LuaJITTeX
-- [XeTeX](/XeTeX/)
-- [pdfTeX](/pdfTeX/)
-- [pTeX-ng](/pTeX-ng/)
-- [e-upTeX](/upTeX,upLaTeX/)
-- [e-pTeX](/e-pTeX/)
-- [e-TeX](/e-TeX/)
-- TeX ( [ftp://ftp.cs.stanford.edu/pub/tex/](ftp://ftp.cs.stanford.edu/pub/tex/) )
+Knuth によるオリジナルの TeX に対し，
+Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
+それぞれの処理系についてはその解説ページをご覧ください．
 
 それぞれの関係性や特徴などをまとめた以下のリンクも参考になります．
 
@@ -73,7 +64,39 @@ Knuth によるオリジナルの TeX に対し，Unicode 対応やその他の�
 - [TeXの歴史と近年の動向](http://www.slideshare.net/doraTeX/the-history-of-tex-and-its-recent-advances)
 - [TeXの最近の動向 - MyTeXpert](http://mytexpert.osdn.jp/index.php?TeX%A4%CE%BA%C7%B6%E1%A4%CE%C6%B0%B8%FE)
 
-### チュートリアル {#q0b4ff33}
+#### e-TeX {#mc911b79}
+
+- [e-TeX](/e-TeX/)
+
+#### pdfTeX {#gcebe472}
+
+pdfTeX は PDF 直接出力と Microtypography 機能を搭載した TeX の派生版です。
+
+- [pdfTeX](/pdfTeX/)
+
+#### pTeX 系 {#b5d61a97}
+
+pTeX は日本語の処理のために拡張された TeX の派生プログラムです。
+そこからさらに，[e-TeX](/e-TeX/) 拡張を取り入れた [e-pTeX](/e-pTeX/) と，
+それに Unicode 対応版と合流した [e-upTeX](/upTeX,upLaTeX/) があります。
+これらとは別に，[pTeX-ng](/pTeX-ng/) という，PDF 出力をするように拡張されたものもあります。
+
+- [e-pTeX](/e-pTeX/)
+- [e-upTeX](/upTeX,upLaTeX/)
+- [pTeX-ng](/pTeX-ng/)
+
+#### XeTeX {#zd6f8a63}
+
+[XeTeX](/XeTeX/) は TeX に Unicode 対応や現代的なフォント技術とテキスト・レイアウトサービスを組み込んだ派生プログラムです。
+OpenType の機能を通じて，高度な組版機能と様々な複雑な用字系をサポートします。
+また，OpenType フォントを直接扱えるので，オリジナルの TeX のように，フォントのインストールに膨大な手間がかかるということがありません。
+
+#### LuaTeX {#j0605b0c}
+
+- [LuaTeX](/LuaTeX/)
+- LuaJITTeX
+
+## チュートリアル {#q0b4ff33}
 
 TeX のチュートリアルが [TeX入門](</TeX入門/>)にあります。こちらをお読み下さい。
 
@@ -83,7 +106,7 @@ TeX のエンジンレベルのエラーについては，以下でメッセー�
 
 LaTeX のエラーメッセージは [LaTeX](/LaTeX/) の項目にまとめてあります．
 
-### マクロパッケージ {#zf0ba6fa}
+## マクロパッケージ {#zf0ba6fa}
 
 TeX を用いた組版を容易にするために作成されたマクロ集です．フォーマットと呼ばれることも多いです．
 通常，TeX エンジンを起動するとコマンド名に対応したマクロパッケージがあらかじめ読み込まれた状態になります．
@@ -104,7 +127,7 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 - [TeXsis](http://www.texsis.org/)
 - [xmltex](https://www.ctan.org/pkg/xmltex)
 
-#### マクロパッケージを読み込まずに起動するには {#xa386bfe}
+### マクロパッケージを読み込まずに起動するには {#xa386bfe}
 
 &#x2d;ini オプションを付けて起動します．例えば，pdftex ならば次のようになります（INITEX という表示がつく）．
 
@@ -123,7 +146,7 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (INITEX)
 
 ### 備考 {#d2892c04}
 
-#### OS による実行速度の違い {#d99944d5}
+### OS による実行速度の違い {#d99944d5}
 
 Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いようです．
 もし Windows や OS X を使用していて LaTeX の実行速度が遅いと感じる場合は，この機会に Linux を試してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
@@ -131,12 +154,12 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [TeXLiveのlatexが遅い件](http://pman0214.blog37.fc2.com/blog-entry-305.html)
 - [MacとUbuntuでのLaTeX実行速度の違い](http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
 
-#### 不具合 {#e730befe}
+### 不具合 {#e730befe}
 
 - [TeXエンジンが Abort trap 6 で落ちる](http://qiita.com/doraTeX/items/600a1c4248fb14de9c3b)：TeX Live 2015 で修正されました (\[[texlive\] Revision 34659](http://www.tug.org/svn/texlive?view=revision&revision=34659))
 - [pTeX エンジンが Segmentation fault を起こす](http://qiita.com/doraTeX/items/7c28b93969a558b3e2a5)： pTeX version p3.7 で修正されました (\[[texlive\] Revision 38333](http://www.tug.org/svn/texlive?view=revision&revision=38333))
 
-#### バッドノウハウ {#hcd7e588}
+### バッドノウハウ {#hcd7e588}
 
 - [バッドノウハウからグッドラッパーへ](http://www.hyuki.com/techinfo/knowhow.html)
 - [TeX はバッドノウハウか？](http://d.hatena.ne.jp/apkz/20040311#p4)
@@ -147,9 +170,9 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
 - [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
 
-### イベント {#df4b96d9}
+## イベント {#df4b96d9}
 
-#### TeXユーザの集い {#e38306bd}
+### TeXユーザの集い {#e38306bd}
 
 - [TeXユーザの集い 2015](http://texconf15.tumblr.com/)
 - [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
@@ -158,12 +181,12 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [TeXユーザの集い 2010](http://oku.edu.mie-u.ac.jp/texconf10/)
 - [TeXユーザの集い 2009](http://oku.edu.mie-u.ac.jp/texconf09/)
 
-#### TeX Users Group (TUG) {#o7d3e65b}
+### TeX Users Group (TUG) {#o7d3e65b}
 
 - [TUG 2013（第34回TeX Users Group年次大会）](http://tug.org/tug2013/jp/)
 - [TUG 2013 チュートリアルを日本語で聞く会](http://tug.org/tug2013/jp/followup.html)
 
-### 関連リンク {#f53c2f34}
+## 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
 - [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
