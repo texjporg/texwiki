@@ -232,18 +232,23 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 
 ### 簡単な図形描画の例 {#c4bd1edb}
 
+<!-- \ifdefined\kanjiskip -->
+
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[dvipdfmx]{graphicx}
-  % \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
-  \usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
-\else
-  \documentclass{ltjsarticle}
-  \usepackage{graphicx}
-  % \def\pgfsysdriver{pgfsys-pdftex.def}%(graphicxパッケージを使用しない場合)
-  \usepackage[svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
-\fi
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+% \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
+\usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
+```
+
+<!-- \else -->
+<!--   \documentclass{ltjsarticle} -->
+<!--   \usepackage{graphicx} -->
+<!--   % \def\pgfsysdriver{pgfsys-pdftex.def}%(graphicxパッケージを使用しない場合) -->
+<!--   \usepackage[svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。 -->
+<!-- \fi -->
+
+```
 \usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}
@@ -522,16 +527,19 @@ intersectionsライブラリを読み込んでおく必要があります。
 交点の名前は，デフォルトでは intersection-n（n は1,2,3,…）という名前が順に付けられますが，name intersections オプションに by={○,□,…} とリストを与えて設定することもできます。（交点の総数はオプションで得られるので，後述のforeachと組み合わせて全交点にそれぞれラベルを付けることもできます。マニュアル参照。）
 
 以下の1つ目の例では，やや傾いた長方形（rectangle）と楕円（ellipse）の交点が半透明な赤い点で示されます。
-2つ目の例では，2曲線の交点を順に3つ a, b, c と名前を付けて，ラベルを付けてます。
+2つ目の例では，2曲線の交点を順に3つ a, b, c と名前を付けて，ラベルを付けてます。 <!-- \ifdefined\kanjiskip -->
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[dvipdfmx]{graphicx}
-\else
-  \documentclass{ltjsarticle}
-  \usepackage{graphicx}
-\fi
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+```
+
+<!-- \else -->
+<!--   \documentclass{ltjsarticle} -->
+<!--   \usepackage{graphicx} -->
+<!-- \fi -->
+
+```
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -623,16 +631,19 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
     ($(Aの座標)!.5!(Bの座標)!1cm!90:(B)$)
     ```
 
-三角形の重心と垂心を求める例。
+三角形の重心と垂心を求める例。 <!-- \ifdefined\kanjiskip -->
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[dvipdfmx]{graphicx}
-\else
-  \documentclass{ltjsarticle}
-  \usepackage{graphicx}
-\fi
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+```
+
+<!-- \else -->
+<!--   \documentclass{ltjsarticle} -->
+<!--   \usepackage{graphicx} -->
+<!-- \fi -->
+
+```
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -696,14 +707,17 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
 \end{document}
 ```
 
-角度記号をつける例。
+角度記号をつける例。 <!-- \ifdefined\kanjiskip -->
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex,dvipdfmx]{jsarticle}
-\else
-  \documentclass{ltjsarticle}
-\fi
+\documentclass[dvipdfmx]{jsarticle}
+```
+
+<!-- \else -->
+<!--   \documentclass{ltjsarticle} -->
+<!-- \fi -->
+
+```
 \usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{calc, quotes, angles}%quotesは角度のラベルオプション内に記述するために使用
@@ -776,16 +790,19 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば，
 \node [draw, circle through=(Bの座標)] at (Aの座標) {};
 ```
 
-三角形の外心と内心を求める例。
+三角形の外心と内心を求める例。 <!-- \ifdefined\kanjiskip -->
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[dvipdfmx]{graphicx}
-\else
-  \documentclass{ltjsarticle}
-  \usepackage{graphicx}
-\fi
+\documentclass{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+```
+
+<!-- \else -->
+<!--   \documentclass{ltjsarticle} -->
+<!--   \usepackage{graphicx} -->
+<!-- \fi -->
+
+```
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc, through}
 \begin{document}
