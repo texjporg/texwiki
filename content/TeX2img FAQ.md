@@ -180,21 +180,21 @@ Mac版の場合，以下の出力の場合は Ghostscript を経由せず，こ�
 - SVG 出力の場合
 - PNG / JPEG / GIF / TIFF / BMP 出力で変換処理が「速度優先モード」（環境設定→変換ツール）の場合
 
-### Mac 版で EMF 出力すると文字のアウトラインがギザギザしている {#k308980f}
+<!-- ** Mac 版で EMF 出力すると文字のアウトラインがギザギザしている [#k308980f] -->
+<!--  -->
+<!-- Mac 版では，EMF 画像の出力のために [[pstoedit]]（を高画質になるよう独自改修したバージョン）を内蔵していますが，これで生成される EMF は，ベジエ曲線を用いることができず，細かい折れ線の集合体になってしまいます。 -->
+<!-- アンカーポイントをかなり細かくとるようにはしていますが，それでも拡大するとギザギザが目立ちます。 -->
+<!--  -->
+<!-- ベジエ曲線を用いた高品質な EMF 画像が必要な場合は，TeX2img で一旦 EPS 画像をさせた後に，それを[[補助ツール:http://island.geocities.jp/loveinequality/#eps2emf]]にドラッグ＆ドロップしてください。 -->
+<!-- この補助ツールは，内包している [[Inkscape]] を用いて EMF 画像を生成します。 -->
+<!-- この場合，ベジエ曲線を用いた高品質な EMF 画像が生成されます。（TeX2img 自体にこの補助ツールを同梱していないのは，Inkscape のファイルサイズが非常に大きいからです。） -->
 
-Mac 版では，EMF 画像の出力のために [pstoedit](/pstoedit/)（を高画質になるよう独自改修したバージョン）を内蔵していますが，これで生成される EMF は，ベジエ曲線を用いることができず，細かい折れ線の集合体になってしまいます。
-アンカーポイントをかなり細かくとるようにはしていますが，それでも拡大するとギザギザが目立ちます。
-
-ベジエ曲線を用いた高品質な EMF 画像が必要な場合は，TeX2img で一旦 EPS 画像をさせた後に，それを[補助ツール](http://island.geocities.jp/loveinequality/#eps2emf)にドラッグ＆ドロップしてください。
-この補助ツールは，内包している [Inkscape](/Inkscape/) を用いて EMF 画像を生成します。
-この場合，ベジエ曲線を用いた高品質な EMF 画像が生成されます。（TeX2img 自体にこの補助ツールを同梱していないのは，Inkscape のファイルサイズが非常に大きいからです。）
-
-### 破線を含む図版を EMF 画像に変換すると，破線の見た目（太さや線分の長さ・個数）がおかしい {#emf-dash}
-
-EPS の破線情報が EMF に翻訳されたとき，ビューアによって EMF の破線の表示のされ方が異なることが原因です。
-EMF 画像における破線は，正しく表示・印刷できないものと考えてください。
-
-EMF 画像に破線を用いたい場合，一度 TeX2img で EPS またはアウトライン化 PDF に変換し，次にそれを [Inkscape](/Inkscape/) で開いて [破線に変換](http://d.hatena.ne.jp/acetaminophen/20150607/1433684008) するか，または [Adobe Illustrator](/Illustrator/) で開いて[パスのアウトラインをとって](http://www.dtp-transit.jp/adobe/illustrator/post_1176.html)保存し，最後に再度 TeX2img で EMF に変換するようにしてください。
+<!-- ** 破線を含む図版を EMF 画像に変換すると，破線の見た目（太さや線分の長さ・個数）がおかしい [#emf-dash] -->
+<!--  -->
+<!-- EPS の破線情報が EMF に翻訳されたとき，ビューアによって EMF の破線の表示のされ方が異なることが原因です。 -->
+<!-- EMF 画像における破線は，正しく表示・印刷できないものと考えてください。 -->
+<!--  -->
+<!-- EMF 画像に破線を用いたい場合，一度 TeX2img で EPS またはアウトライン化 PDF に変換し，次にそれを [[Inkscape]] で開いて [[破線に変換:http://d.hatena.ne.jp/acetaminophen/20150607/1433684008]] するか，または [[Adobe Illustrator>Illustrator]] で開いて[[パスのアウトラインをとって:http://www.dtp-transit.jp/adobe/illustrator/post_1176.html]]保存し，最後に再度 TeX2img で EMF に変換するようにしてください。 -->
 
 ## よくある質問・Tips {#ta8b7d06}
 
@@ -749,13 +749,13 @@ TeX2img を次のように設定することで，既存の PDF の回転情報�
 - NFKD
 - [NFKC Casefold](http://unicode.org/reports/tr31/)
 
-## 既知の問題（未解決） {#ddfe3887}
-
-### Windows 版で EMF ファイルを出力すると破線が消える {#w156ec2a}
-
-これは EMF ファイルの出力に使用している pdfiumdraw という補助ツールの問題で，現在検証中です。
-
-[EMF の破線を意図通りに出力するための前処理を行う対処](</TeX2img FAQ/#emf-dash>)を検討してください。
-
-- [pdfiumdraw の EMF 出力検証](http://d.hatena.ne.jp/acetaminophen/20150606/1433606734)
-- [EMFに振り回されている（2015年6月14日）](http://abenori.blogspot.jp/2015/06/emf-pdfium-fxwin32gdipext.html)
+<!-- *既知の問題（未解決） [#ddfe3887] -->
+<!--  -->
+<!-- **Windows 版で EMF ファイルを出力すると破線が消える [#w156ec2a] -->
+<!--  -->
+<!-- これは EMF ファイルの出力に使用している pdfiumdraw という補助ツールの問題で，現在検証中です。 -->
+<!--  -->
+<!-- [[EMF の破線を意図通りに出力するための前処理を行う対処>TeX2img FAQ#emf-dash]]を検討してください。 -->
+<!--  -->
+<!-- -[[pdfiumdraw の EMF 出力検証:http://d.hatena.ne.jp/acetaminophen/20150606/1433606734]] -->
+<!-- -[[EMFに振り回されている（2015年6月14日）:http://abenori.blogspot.jp/2015/06/emf-pdfium-fxwin32gdipext.html]] -->
