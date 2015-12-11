@@ -84,15 +84,10 @@ LaTeX のインストールについては
 <!-- >　　商用で emath をお使いの方は経済的損失に -->
 <!-- >つながりかねませんからご注意ください。 -->
 <!--  -->
-<!-- ↑ リンク先 ( http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8842 ) を見ると，これは単に dvipdfmx.cfg の設定が悪いだけのようですが． -->
-<!--  -->
 <!-- -[[emathPs と PDF形式:http://hpcgi3.nifty.com/emath/treebbs.cgi?kako=1&all=8805&s=8840]] -->
 <!-- ># それにしても， -->
 <!-- ># 　　つかえねぇ～ dvipdfmx にこれほどまで振り回されるとは -->
 <!-- ># くたばれ dvipdfmx と毒づきたくもなるというものです。 -->
-<!--  -->
-<!-- ↑「くたばれ」などと言うのは品がなく，公共の Wiki にふさわしくありません． -->
-<!-- 何より，作者に対する敬意に欠け，失礼です． -->
 <!--  -->
 <!-- TeX ユーザの集い 2015 実行委員会代表、きえだゆうすけ氏の発言、 -->
 <!-- -[[いかなる意味の印刷もしないのならば:https://twitter.com/p_typo/status/624638576509059072]] -->
@@ -102,11 +97,7 @@ LaTeX のインストールについては
 <!-- -[[まあ、何せ、dvipdfmxは:https://mobile.twitter.com/zr_tex8r/status/643221404301701121]] -->
 <!-- >まあ、何せ、dvipdfmxはアレなので……。 -->
 <!--  -->
-<!-- ↑このあたりのリンクは単体では情報価値がありません。 -->
-<!--  -->
 <!-- PDF生成ソフトの利用については慎重に検討しましょう。 -->
-<!--  -->
-<!-- ↑ あなたが dvipdfmx が嫌うのは自由ですが，「あの有名人もこんな悪口を言っている」という事例をリストアップすることに価値があるのでしょうか． -->
 
 LaTeX で PDF を作成する方法はいくつかあります。日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました。
 [dvipdfmx](/dvipdfmx/) というソフトで DVI ファイルから PDF を生成する方法もあります。欧米では，pdfLaTeX により LaTeX 文書から直接 PDF を生成するのが一般的です．
@@ -126,24 +117,6 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
     - uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
 
 arXiv などでは 3. を要求されます。特に Adobe Acrobat Distiller DC を用いるほうが信頼性が高く，印刷所などでも好まれます．
-
-### dvipdfmx の使い方 {#rdc781c9}
-
-[dvipdfmx](/dvipdfmx/) は TeX 出力（DVI ファイル）を PDF に変換するフリーソフトウェアです．
-TeX Live, W32TeX に含まれています．
-『［改訂第6版］ LaTeX2e 美文書作成入門』の電子版は dvipdfmx で PDF 化しました．
-
-使い方は，Windows PowerShell またはコマンド プロンプトで
-
-```
-dvipdfmx foo.dvi
-```
-
-と打ち込むだけです．これで foo.dvi が foo.pdf に変換されます．
-コマンドラインを使用するのが苦手な方は [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/),
-[TeXworks](/TeXworks/)　などで dvipdfmx を使うように設定できます．
-
-詳しい使い方については，[dvipdfmx](/dvipdfmx/) の項を参照してください．
 
 ### dvips の使い方 {#lf015a28}
 
@@ -280,7 +253,7 @@ PDF を作成するときは，読み手のことを考え，親切な PDF と�
 
 目次から本文のページなどへ，リンクでジャンプ可能だと読み手が楽です．
 LaTeX で PDF 文書を作成する場合は，[hyperref](/hyperref/) パッケージを使いましょう。
-しおりの生成や，目次のハイパーリンク化などを自動化してくれ，非常に便利です。 <!-- プリアンブルに下記を入れると良いです： --> <!--  --> <!-- \usepackage[dvipdfmx,bookmarkstype=toc,colorlinks=true,% --> <!--             urlcolor=black,linkcolor=black,citecolor=black,% --> <!--             linktocpage=true,bookmarks=false]{hyperref} --> <!-- \usepackage{pxjahyper} -->
+しおりの生成や，目次のハイパーリンク化などを自動化してくれ，非常に便利です。
 
 Word などで PDF 文書を作る場合でも，設定を行い，きちんと見出しを「見出し」として作成すれば自動的にしおりをつけることができます。
 
@@ -340,46 +313,6 @@ Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF
 
 また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
 ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
-
-LaTeX ユーザーの方は，dvipdfmx を用いて，PDF にパスワード保護をつけることができます．
-具体的には，
-
-```
-dvipdfmx -S filename
-```
-
-のように，“-S” オプションをつけます．
-あとは所有者のパスワードとユーザーパスワード（PDF ファイルを開いたときに入力させるパスワード）の2つを問われますので，入力して Enter キーを押してください．
-なお，確認のために2度入力を求められます．
-
-また，"-P"オプションでセキュリティオプションを細かく指定できます．
-
-- 閲覧・印刷は可能にしてテキスト・グラフィックのコピー（抽出）を禁止する場合
-
-    ```
-    dvipdfmx -S -P 0x0004 filename
-    ```
-
-- 逆に印刷を不可にしてテキスト・グラフィックのコピー（抽出）を許可する場合
-
-    ```
-    dvipdfmx -S -P 0x0010 filename
-    ```
-
-- 閲覧のみを許可し，印刷もコピー（抽出）も禁止する場合
-
-    ```
-    dvipdfmx -S -P 0x0008 filename
-    ```
-
-    なお，デフォルトの「全部許可」のオプションは"0x003C"です．
-
-その他の細かいオプションについては，dvipdfmx.cfgに記載されています．
-
-また，20110307以降のdvipdfmxでは，\specialを用いてセキュリティオプションをtex原稿に埋め込むことができるようになりました．
-プリアンブルに記述します．
-
-- \special{pdf:encrypt ownerpw (abc) userpw (xyz) length 128 perm 252}
 
 ### PDF に注釈をつける {#v9b289c9}
 
