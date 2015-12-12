@@ -114,7 +114,7 @@ TeXShop, TeXworks, TeXstudio などの統合環境には PDF 用のビューア�
 オープンソースの文献管理ツールとして，以下を挙げておきます。
 
 - [Zotero](https://www.zotero.org/)
-- [JabRef](http://jabref.sourceforge.net/)
+- [JabRef](http://www.jabref.org/)
 - [QRef](http://members3.jcom.home.ne.jp/qref/)
 - [BibDesk](http://bibdesk.sourceforge.net/)
 
