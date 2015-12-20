@@ -25,13 +25,12 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
     - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
-- [https://apps.fedoraproject.org/packages/texlive-collection-langcjk](https://apps.fedoraproject.org/packages/texlive-collection-langcjk)
+- [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
 - [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
 - [Linux](/Linux/#texliveinstall)
-- [https://github.com/haoyun/texlive-dummy](https://github.com/haoyun/texlive-dummy)
 - [https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は texlive-dummy をインストールします．
@@ -39,14 +38,24 @@ texlive-dummy をインストールすると TeX Live/Fedora に依存するパ�
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
+フルインストールする場合は
+
 ```
 $ sudo dnf install texlive-scheme-full
 ```
 
+日本語関連のパッケージをインストールする場合は
+
+```
+$ sudo dnf install texlive-collection-langjapanese
+```
+
+を実行します．
+
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
-デフォルトの設定では Ghostscript で日本語が表示できないかもしれません．
-Ghostscript を適切に設定することで 日本語が表示できるようになります．
+<!-- デフォルトの設定では Ghostscript で日本語が表示できないかもしれません． -->
+<!-- Ghostscript を適切に設定することで 日本語が表示できるようになります． -->
 
 ```
 $ sudo dnf install ghostscript
