@@ -36,6 +36,12 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は texlive-dummy をインストールします．
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
+```
+$ sudo dnf copr enable fatka/texlive-dummy
+$ sudo dnf updateinfo
+$ sudo dnf install texlive-dummy
+```
+
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
 フルインストールする場合は
