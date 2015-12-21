@@ -38,7 +38,6 @@ texlive-dummy をインストールすると TeX Live/Fedora に依存するパ�
 
 ```
 $ sudo dnf copr enable fatka/texlive-dummy
-$ sudo dnf updateinfo
 $ sudo dnf install texlive-dummy
 ```
 
