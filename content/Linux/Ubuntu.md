@@ -29,20 +29,6 @@ Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, 
 
 ### [TeX Live](</TeX Live/>) {#texlive}
 
-- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
-- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
-    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
-- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
-    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
-- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
-- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
-- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
-- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [TeX Live in Launchpad](https://launchpad.net/tex-live)
-    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
-        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
-
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
 - [Linux](/Linux/#texliveinstall)
@@ -60,6 +46,19 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
+- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
+- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
+    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
+- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
+    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
+- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
+- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
+- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [TeX Live in Launchpad](https://launchpad.net/tex-live)
+    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
+        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 - [LubuntuでTeX環境を整える](http://duroomzacc-diary.hatenablog.com/entry/2015/05/17/193427)
 
 TeX Live/Debian をフルインストールする場合は
