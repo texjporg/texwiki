@@ -22,20 +22,6 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 ### TeX Live {#texlive}
 
-- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
-- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
-    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
-- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
-    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
-- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
-- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
-- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
-- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [TeX Live in Launchpad](https://launchpad.net/tex-live)
-    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
-        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
-
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#ef984d1b}
 
 - [Linux](/Linux/#texliveinstall)
@@ -52,6 +38,19 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
+- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
+- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
+    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
+- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
+    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
+- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
+- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
+- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [TeX Live in Launchpad](https://launchpad.net/tex-live)
+    - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
+        - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 - Linux/Debian
 
 TeX Live/Debian をフルインストールする場合は
@@ -61,7 +60,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Linux Mint 18 以降にアップグレードして
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Linux Mint 18 以降にアップグレードして <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
