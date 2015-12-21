@@ -21,19 +21,12 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 
 ### [TeX Live](</TeX Live/>) {#texlive}
 
-- [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
-    - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
-- [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
-- [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
-- [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
-- [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
-
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
 - [Linux](/Linux/#texliveinstall)
 - [https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は texlive-dummy をインストールします．
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr-fe.cloud.fedoraproject.org/coprs/fatka/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
@@ -42,6 +35,13 @@ $ sudo dnf install texlive-dummy
 ```
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
+
+- [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
+    - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
+- [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
+- [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
+- [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
+- [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
 
 フルインストールする場合は
 
