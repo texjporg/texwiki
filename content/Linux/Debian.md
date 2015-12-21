@@ -25,22 +25,9 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 ### [TeX Live](</TeX Live/>) {#texlive}
 
-- [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
-- [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
-- [Debian -- パッケージ検索結果 -- texlive-luatex](https://packages.debian.org/ja/texlive-luatex)
-- [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
-- [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
-- [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
-- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/)
-- [http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/)
-- [http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese](http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese)
-- [https://people.debian.org/~preining/TeX/](https://people.debian.org/~preining/TeX/)
-
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#z4379676}
 
 - [Linux](/Linux/#texliveinstall)
-- [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
@@ -54,6 +41,17 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
+- [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
+- [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
+- [Debian -- パッケージ検索結果 -- texlive-luatex](https://packages.debian.org/ja/texlive-luatex)
+- [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
+- [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
+- [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
+- [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/)
+- [http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/)
+- [http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese](http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese)
+- [https://people.debian.org/~preining/TeX/](https://people.debian.org/~preining/TeX/)
 - [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
 - [Debian 8.x (Jessie) での TeX 環境](http://uwabami.junkhub.org/log/20141205.html#p01)
 - [Debian 8 jessie での日本語 TeX 環境の構築](https://blog.ymyzk.com/2014/10/debian-8-jessie-japanese-tex/)
