@@ -15,7 +15,7 @@ pukiwiki: "LyX/設定/Windows"
 
 ### LaTeX {#m41cae1f}
 
-\[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[LaTeX\]
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[出力\] &gt; \[LaTeX\]
 
 ***
 
@@ -36,11 +36,11 @@ pukiwiki: "LyX/設定/Windows"
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
-☐ LaTeXフォントエンコーディング:　　<span style="color:#888888;"><ins>T1</ins></span>[^1] ← 言語が英語の場合に自動的に \usepackage\[T1\]{fontenc} を追加してほしくない場合は LaTeXフォントエンコーディングのチェックをはずします．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
+☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^1] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
 DVIビューア用紙寸法設定:　　[^2]<br>
 書誌情報の生成<br>
 処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
@@ -60,11 +60,11 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．<br>
 
 ### 変換子 {#l23ec9b3}
 
-\[ツール(T)\]-\[設定(P)...\]-\[ファイル処理\]-\[変換子\]
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[ファイル処理\] &gt; \[変換子\]
 
 ***
 
@@ -88,7 +88,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -104,13 +104,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### LaTeX (pLaTeX) -> DVI {#p0550e68}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -126,13 +126,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### DVI -> PDF (dvipdfm) {#sb00b474}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -148,13 +148,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### DVI -> Postscript {#vcfbecff}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -170,13 +170,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### Postscript -> PDF (ps2pdf) {#oa94ff5b}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -192,13 +192,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### LaTeX (pdflatex) -> PDF (pdflatex) {#cd605672}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -214,7 +214,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### LaTeX (LuaTeX) -> PDF (LuaTeX) {#ud8c1b28}
 
@@ -222,7 +222,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -242,7 +242,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -258,13 +258,13 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### LaTeX (XeTeX) -> PDF (XeTeX) {#c0ff69a0}
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -280,11 +280,11 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-\[修正(M)\]-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ### ファイル形式 {#k5d395e1}
 
-\[ツール(T)\]-\[設定(P)...\]-\[ファイル処理\]-\[ファイル形式\]
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[ファイル処理\] &gt; \[ファイル形式\]
 
 ***
 
@@ -310,7 +310,7 @@ CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -328,13 +328,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ [TeXworks](/TeXworks/) の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -352,13 +352,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ Adobe Acrobat Reader DC の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -376,7 +376,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### PDF (ps2pdf) {#f004342d}
 
@@ -384,7 +384,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -402,13 +402,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ [TeXworks](/TeXworks/) の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -426,13 +426,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ Adobe Acrobat Reader DC の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -450,7 +450,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### PDF (pdflatex) {#fe61f4c6}
 
@@ -458,7 +458,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -476,13 +476,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ [TeXworks](/TeXworks/) の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -500,13 +500,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ Adobe Acrobat Reader DC の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -524,7 +524,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### PDF (LuaTeX) {#p51f4c4b}
 
@@ -532,7 +532,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -550,13 +550,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ [TeXworks](/TeXworks/) の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -574,13 +574,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ Adobe Acrobat Reader DC の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -598,7 +598,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### PDF (XeTeX) {#td885a9e}
 
@@ -606,7 +606,7 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -624,13 +624,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ [TeXworks](/TeXworks/) の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -648,13 +648,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ■ Adobe Acrobat Reader DC の場合
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -672,13 +672,13 @@ MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 ### 順検索 (forward search) {#ffa7876e}
 
 PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
-\[ツール(T)\]-\[設定(P)...\]-\[出力\]-\[一般\]
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[出力\] &gt; \[一般\]
 
 ***
 
@@ -703,7 +703,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -722,7 +722,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ***
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
 <br>
 
@@ -735,12 +735,14 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．<br>
-\[移動(N)\]-\[順検索(F)\] または 右クリック → \[順検索(F)\] で 順検索 (forward search) ができます．<br>
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．<br>
+\[移動(N)\] &gt; \[順検索(F)\] または 右クリック → \[順検索(F)\] で 順検索 (forward search) ができます．<br>
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の Synchronize with output をチェックして Custom macro: から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#u9f206c7}
 
@@ -748,20 +750,20 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ### inverse search {#vefda83b}
 
-\[ツール(T)\]-\[設定(P)...\]-\[パス\]-\[LyXサーバーパイプ\] に
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[パス\] &gt; \[LyXサーバーパイプ\] に
 
 ```
 \\.\pipe\lyxpipe
 ```
 
-を記述して \[適用(A)\]-\[保存(S)\] をクリックして LyX を再起動します．
+を記述して \[適用(A)\] &gt; \[保存(S)\] をクリックして LyX を再起動します．
 
-C:\Users\Lydia\AppData\Local\LyX 2.1\bin\lyxeditor.cmd <!-- C:\Program Files\LyX 2.1\bin\lyxeditor.cmd を作成します． -->
+C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd を作成します． <!-- C:\Program Files\LyX 2.2\bin\lyxeditor.cmd を作成します． -->
 
 ***
 
-- C:\Users\Lydia\AppData\Local\LyX 2.1\bin\lyxeditor.cmd
-    <!-- -C:\Program Files\LyX 2.1\bin\lyxeditor.cmd -->
+- C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd
+    <!-- -C:\Program Files\LyX 2.2\bin\lyxeditor.cmd -->
 
 ***
 
@@ -779,15 +781,15 @@ endlocal
 
 ***
 
-<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.1\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
+<!-- 作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.2\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．~ -->
 
-SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に
 
 ```
-"C:\Users\Lydia\AppData\Local\LyX 2.1\bin\lyxeditor.cmd" "%f" %l
+"C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd" "%f" %l
 ```
 
-<!-- "C:\Program Files\LyX 2.1\bin\lyxeditor.cmd" "%f" %l -->
+<!-- "C:\Program Files\LyX 2.2\bin\lyxeditor.cmd" "%f" %l -->
 
 を記述します．
 
