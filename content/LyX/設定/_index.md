@@ -20,7 +20,7 @@ pukiwiki: "LyX/設定"
 
 日本語の文書を作成する場合は babel を off にします．
 
-\[ツール(T)\]-\[設定(P)...\]-\[言語設定\]-\[言語\]
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[言語設定\] &gt; \[言語\]
 
 ***
 
@@ -58,7 +58,7 @@ pukiwiki: "LyX/設定"
 
 ***
 
-\[適用(A)\]-\[保存(S)\] をクリックして設定を反映させます．
+\[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
 #### babel を使用して文書を作成する場合 {#j34bc968}
 
@@ -86,7 +86,7 @@ babel のオプションを設定する場合は以下の方法があります�
 - [LyX wiki | Layouts / Layouts](http://wiki.lyx.org/Layouts/Layouts)
 - [LyX wiki | Layouts / CreatingLayouts](http://wiki.lyx.org/Layouts/CreatingLayouts)
 
-LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\]-\[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
+LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
 pdfLaTeX/XeLaTeX/LuaLaTeX/LuaJITLaTeX で新ドキュメントクラス相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
 レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．<br>
 Format 番号は LyX のバージョンによって異なります．<br>
@@ -202,9 +202,9 @@ Input book.layout
 
 ***
 
-#### Windows の場合 {#k55c07b3}
+#### レイアウトファイルを LyX に追加する {#k55c07b3}
 
-レイアウトファイルを
+Windows の場合はレイアウトファイルを
 
 - %APPDATA%\LyX2.2\layouts\\
     <!-- -C:\Users\Lydia\AppData\Local\LyX 2.2\Resources\layouts\ -->
@@ -212,45 +212,22 @@ Input book.layout
     <!-- -C:\Program Files (x86)\LyX 2.2\Resources\layouts\ (64-bit Windows の場合) -->
 
 フォルダーにコピーします．<br>
-\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
-\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
 
-- Japanese Article (bxjsarticle)
-- Japanese Report (bxjsreport)
-- Japanese Book (bxjsbook)
-- Japanese Article (ltjsarticle)
-- Japanese Book (ltjsbook)
-
-が追加されていることを確認します．<br>
-
-#### OS X の場合 {#r68e04c4}
-
-レイアウトファイルを
+OS X の場合はレイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
 - &#x7e;/Library/Application Support/LyX-2.2/layouts/
 
 フォルダにコピーします．<br>
-\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
-\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
 
-- Japanese Article (bxjsarticle)
-- Japanese Report (bxjsreport)
-- Japanese Book (bxjsbook)
-- Japanese Article (ltjsarticle)
-- Japanese Book (ltjsbook)
-
-が追加されていることを確認します．<br>
-
-#### Linux の場合 {#aa21cddd}
-
-レイアウトファイルを
+Linux の場合はレイアウトファイルを
 
 - &#x7e;/.lyx/layouts/
 
 ディレクトリにコピーします．<br>
-\[ツール(T)\]-\[環境構成(R)\] をクリックして LyX を再起動します．<br>
-\[文書(D)\]-\[設定(S)...\]-\[文書クラス\] に
+
+\[ツール(T)\] &gt; \[環境構成(R)\] をクリックして LyX を再起動します．<br>
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\] に
 
 - Japanese Article (bxjsarticle)
 - Japanese Report (bxjsreport)
@@ -266,7 +243,7 @@ Input book.layout
 
 日本語の文書を作成する場合は babel を off にします．
 
-\[文書(D)\]-\[設定(S)...\]-\[言語\]
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[言語\]
 
 ***
 
@@ -375,7 +352,7 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 
 ### フォント {#r177f199}
 
-\[文書(D)\]-\[設定(S)...\]-\[フォント\]
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[フォント\]
 
 ***
 
@@ -433,7 +410,7 @@ CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　�
 
 ### 出力 {#pcd2eafa}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\]
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\]
 
 ***
 
@@ -530,7 +507,7 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 
 ### 文書クラス {#g33dd885}
 
-\[文書(D)\]-\[設定(S)...\]-\[文書クラス\]
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\]
 
 ***
 
@@ -706,7 +683,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 
 図や表を使用する場合は
 
-\[文書(D)\]-\[設定(S)...\]-\[フロートの配置\] で設定可能です．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[フロートの配置\] で設定可能です．
 
 ***
 
@@ -752,7 +729,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 
 プリアンブルを編集したい場合は
 
-\[文書(D)\]-\[設定(S)...\]-\[LaTeXプリアンブル\] で編集可能です．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[LaTeXプリアンブル\] で編集可能です．
 
 ***
 
@@ -828,14 +805,14 @@ uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロ�
 
 LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込んでいる場合
 
-\[挿入(I)\]-\[TeXコード\] で
+\[挿入(I)\] &gt; \[TeXコード\] で
 
 ```
 \def\LyX{\texorpdfstring{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}{LyX}}
 \section{\LyX{}するたびファイルがふえるね}
 ```
 
-のように入力して \[文書(D)\]-\[\[PDF (dvipdfm)\] を表示(V)\] をすると自動的にしおりを作成してくれます．
+のように入力して \[文書(D)\] &gt; \[\[PDF (dvipdfm)\] を表示(V)\] をすると自動的にしおりを作成してくれます．
 
 ## [Inkscape](/Inkscape/) との連携 {#r74179c0}
 
