@@ -116,7 +116,7 @@ $ sudo apt-get install julia
 ### [Ruby](/Ruby/) <a id="ruby"></a> {#j96f01f6}
 
 ```
-$ sudo apt-get install ruby2.1
+$ sudo apt-get install ruby
 ```
 
 ### [Perl](/Perl/) <a id="perl"></a> {#q23bc7da}
