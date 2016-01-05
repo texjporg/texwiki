@@ -79,6 +79,7 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](https://tekonomist.wordpress.com/tag/latex/)
+- [sublime text 3 でLaTeXToolsの設定](http://orycha.hatenablog.com/entry/2015/12/31/184952)
 
 ### インストール {#i186fdb3}
 
@@ -90,23 +91,18 @@ LaTeXTools を入力して LaTeXTools を選択します。
 
 #### ビルドコマンドの設定 {#jbbbbc43}
 
-W32TeX の場合は [latexmk](/Latexmk/) の実行には [Perl](/Perl/) の処理系が必要です。
+Windows の場合は [MiKTeX](/MiKTeX/) と [TeX Live](</TeX Live/>) に対応しています。
 
 メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
 
 LaTeXTools/builders/traditionalBuilder.py を編集します。
 
-[traditionalBuilder.py の 20行目から 24行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L20-L24)あたりの
-
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
 					"-interaction=nonstopmode", "-synctex=1"]
-
-DEFAULT_COMMAND_WINDOWS_MIKTEX = ["texify", "-b", "-p", "--engine=%E",
-					"--tex-option=\"--synctex=1\""]
 ```
 
-を以下のように修正します。
+を
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -116,45 +112,45 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
-
-DEFAULT_COMMAND_WINDOWS_MIKTEX = DEFAULT_COMMAND_LATEXMK
 ```
+
+に変更します。
+
+メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
+
+User/LaTeXTools.sublime-settings を編集します。
+
+TeX Live を使用する場合は
+
+```
+		"distro" : "miktex",
+```
+
+を
+
+```
+		"distro" : "texlive",
+```
+
+に変更します。
+
+User/LaTeXTools.sublime-settings を編集します。
+
+```
+		"sumatra": "",
+```
+
+を
+
+```
+		"sumatra": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+```
+
+に変更します。
 
 #### SumatraPDF のインストール {#l6a7a293}
 
 [SumatraPDF](/SumatraPDF/) をインストールします。
-
-#### SumatraPDF の設定 {#xdcd22a2}
-
-メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
-
-LaTeXTools/viewPDF.py を編集します。
-
-[viewPDF.py の 53行目](https://github.com/SublimeText/LaTeXTools/blob/master/viewPDF.py#L53)あたりの
-
-```
-			viewercmd = [su_binary, "-reuse-instance"]
-```
-
-を以下のように修正します。
-
-```
-			viewercmd = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
-```
-
-LaTeXTools/jumpToPDF.py を編集します。
-
-[jumpToPDF.py の 227行目](https://github.com/SublimeText/LaTeXTools/blob/master/jumpToPDF.py#L227)あたりの
-
-```
-			startCommands = [su_binary, "-reuse-instance"]
-```
-
-を以下のように修正します。
-
-```
-			startCommands = [r"C:\Program Files\SumatraPDF\SumatraPDF.exe", "-reuse-instance"]
-```
 
 #### 使い方 {#r3b484f1}
 
@@ -169,14 +165,12 @@ PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示�
 
 LaTeXTools/builders/traditionalBuilder.py を編集します。
 
-[traditionalBuilder.py の 20行目から 21行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L20-L21)あたりの
-
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
 					"-interaction=nonstopmode", "-synctex=1"]
 ```
 
-を以下のように修正します。
+を
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -187,6 +181,8 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
 ```
+
+に変更します。
 
 #### Skim のインストール {#uf11e28c}
 
@@ -205,14 +201,12 @@ PDF ファイルが作成されると Skim で PDF ファイルが表示され�
 
 LaTeXTools/builders/traditionalBuilder.py を編集します。
 
-[traditionalBuilder.py の 20行目から 21行目](https://github.com/SublimeText/LaTeXTools/blob/master/builders/traditionalBuilder.py#L20-L21)あたりの
-
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
 					"-interaction=nonstopmode", "-synctex=1"]
 ```
 
-を以下のように修正します。
+を
 
 ```
 DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
@@ -223,6 +217,8 @@ DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
 				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
 ```
+
+に変更します。
 
 #### Evince のインストール {#q24adbfa}
 
