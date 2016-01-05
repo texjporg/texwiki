@@ -14,9 +14,7 @@ pukiwiki: "Atom"
 
 - [https://atom.io/](https://atom.io/)
 
-Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor　for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、JavaScript や CSS などの Web 技術を使ってカスタマイズ可能です。2015 年 11 月現在、1.x 系列が最新です。
-
-まだ不安定な部分が多々あることと、とにかく重いことが難点ですが、将来が期待されます。
+Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor　for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
 
 ***
 
@@ -33,7 +31,6 @@ Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packa
 ### 日本語関連のパッケージ {#lfe144fd}
 
 - [japanese-menu](https://atom.io/packages/japanese-menu) -- メニューバーとコンテキストメニュー、設定画面を日本語化します。
-- [japanese-wrap](https://atom.io/packages/japanese-wrap)　あるいは [wrap-style](https://atom.io/packages/wrap-style) -- 文章の折り返し (Atom 1.2 からは不要です)
 
 ### LaTeX 関連のパッケージ {#gb891a80}
 
@@ -42,6 +39,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル
 - [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライト
 - [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
+- [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
@@ -63,40 +61,100 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 latex, language-latex, latexer などのパッケージをとりあえず入れましょう。
 
-### latex パッケージの設定 {#lf9c27a1}
-
 ここでは、pLaTeX 系エンジンを使って文書を作成する設定を解説します。
-latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。ここでは Latexmk がインストールされ、パスが通っている前提で進めましょう。
-環境設定の画面から、latex パッケージの設定をクリックします。（インストール直後で設定ボタンが出ていない場合は、latex パッケージの枠内をクリック）
-[ptex2pdf](/ptex2pdf/) をインストールして使う場合は、Engine に ptex2pdf を指定します。例えば、普段 uplatex を使う場合は、
+latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
+
+### Windows {#xd2a02e0}
+
+Windows で LaTeX package で Latexmk-upLaTeX-pdfdvi でタイプセットして SumatraPDF で forward and inverse search を実行する方法を記述します。
+
+#### 設定 {#wa284717}
+
+%USERPROFILE%\\.atom\packages\latex\lib\builders\latexmk.js を編集します。
+
+constructArgs (filePath) の const args を変更します。
 
 ```
- ptex2pdf -u -l
+    const args = [
+      '-e',
+      '"$latex = \'uplatex %O -file-line-error -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S\'"',
+      '-e',
+      '"$biber = \'biber %O --bblencoding=utf8 -u -U --output_safechars %B\'"',
+      '-e',
+      '"$bibtex = \'upbibtex %O %B\'"',
+      '-e',
+      '"$makeindex = \'upmendex %O -o %D %S\'"',
+      '-e',
+      '"$dvipdf = \'dvipdfmx %O -o %D %S\'"',
+      '-f',
+      '-cd',
+      '-norc',
+      '-gg',
+      '-pdfdvi'
+    ]
 ```
 
-を入力します。
+%USERPROFILE%\\.atom\packages\latex\lib\openers\sumatra-opener.js を編集します。
 
-メニューの
-
-```
- パッケージ > LaTeX > Build
-```
-
-を選ぶか、Alt+Ctrl+B　で ptex2pdf を実行します。
-
-### PDF の表示 {#l8d4ce3a}
-
-PDF プレビューを　Atom 内で行うには、[pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールする必要があります。日本語を表示させるには、
+open (filePath, texPath, lineNumber, callback) の const args を変更します。
 
 ```
- ~/.atom/packages/pdf-view/node_modules/pdfjs-dist/build
+    const args = [
+      '-reuse-instance',
+      '-inverse-search',
+      `"\\"${process.env.userprofile}\\AppData\\Local\\atom\\app-${atom.getVersion()}\\atom.exe\\" \\"%f:%l\\""`,
+      '-forward-search',
+      `"${texPath}"`,
+      `"${lineNumber}"`,
+      `"${filePath.replace(/\.dvi$/, '.pdf')}"`
+    ]
 ```
 
-(別の場所化もしれませんが、とにかくパッケージのフォルダです) にある pdf.js から、 CMap 関連の設定場所を探し出し、以下のように編集します：
+%USERPROFILE%\\.atom\config.cson を編集します。
+
+latex の sumatraPath に SumatraPDF の実行ファイルのフルパスを設定して  alwaysOpenResultInAtom を false に設定します。
+
+```
+  latex:
+    sumatraPath: "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"
+    alwaysOpenResultInAtom: false
+```
+
+#### 使い方 {#f1b15dfc}
+
+Ctrl+Alt+B をタイプすると Latexmk-upLaTeX-pdfdvi でタイプセットしたあと SumatraPDF で forward search が実行されます。
+
+SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
+
+### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
+
+[pdf-view](https://atom.io/packages/pdf-view) パッケージを使用することで Atom 内で PDF プレビューができます。SyncTeX にも対応しています。
+日本語を表示させるには、
+
+```
+ ~/.atom/packages/pdf-view/node_modules/pdfjs-dist/build/pdf.js
+```
+
+から、 CMap 関連の設定場所を探し出し、以下のように編集します：
 
 ```
  PDFJS.cMapUrl = "../cmaps/";
  PDFJS.cMapPacked = true;
+```
+
+pdf-view を使用するための設定をします。
+
+```
+~/.atom/config.cson
+```
+
+を編集します。
+
+latex の alwaysOpenResultInAtom を true に設定します。
+
+```
+  latex:
+    alwaysOpenResultInAtom: true
 ```
 
 latex パッケージで自動プレビューを設定してもなぜか DVI ファイルを開こうとする場合があるようです。プロジェクトフォルダを追加しておき、手動で結果の PDF ファイルを選択すると Atom で PDF を見ることができます。
