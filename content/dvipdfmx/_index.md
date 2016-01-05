@@ -465,7 +465,7 @@ map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中
 
 ### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
 
-PhotoShop　等のバグです．
+Photoshop 等のバグです．
 PNG ファイルを一度 [ImageMagick](/ImageMagick/) の convert コマンドを通しておくことで回避できます．
 問題の画像を foo.png とするとき，
 
