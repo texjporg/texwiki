@@ -148,6 +148,10 @@ Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeX
 
 <div style="clear:both"></div>
 
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Svn</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ Detect uncommitted lines at the opening</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Path to the svn command</span><br>
+
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
@@ -180,9 +184,9 @@ Texmaker のソースコードを修正してビルドすれば日本語入力�
 - Texmaker のソースコードを修正してビルドします．
 
 ```
-$ curl -R -L -O http://www.xm1math.net/texmaker/texmaker-4.4.1.tar.bz2
-$ tar xvf texmaker-4.4.1.tar.bz2
-$ cd texmaker-4.4.1
+$ curl -R -L -O http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2
+$ tar xvf texmaker-4.5.tar.bz2
+$ cd texmaker-4.5
 ```
 
 Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() メソッドの中の
@@ -347,7 +351,7 @@ Windows PowerShell を使用して設定を記述して実行すると Texmaker 
 ### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → TeX Live を使用するまたは dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
 
 <!-- -[[Issue 364: Embedded PDF viewer doesn't show text in a certain font:https://code.google.com/p/texmaker/issues/detail?id=364]] -->
-- [Windows にTexmakerを導入](http://blog.sqr-main.net/2012/06/windows-texmaker.html)
+<!-- -[[Windows にTexmakerを導入:http://blog.sqr-main.net/2012/06/windows-texmaker.html]] -->
 
 W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．<br>
 TeX Live では表示されます．<br>
@@ -367,7 +371,7 @@ dvipdfmx -f dlbase14.map %.dvi
 
 PDF ファイルのフォントの埋め込みについては
 
-- [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#z0e1001a>)
+- [dvipdfmx/フォントの設定#フォントの埋め込み設定](</dvipdfmx/フォントの設定/#y935d97b>)
 
 を参照してください．
 
