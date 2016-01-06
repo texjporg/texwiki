@@ -14,7 +14,7 @@ pukiwiki: "Atom"
 
 - [https://atom.io/](https://atom.io/)
 
-Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor　for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
+Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
 
 ***
 
@@ -26,7 +26,7 @@ Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作�
 
 ## 拡張パッケージの導入 {#ga099443}
 
-Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packages)　で検索して、パッケージを探しましょう。
+Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packages) で検索して、パッケージを探しましょう。
 
 ### 日本語関連のパッケージ {#lfe144fd}
 
@@ -113,7 +113,7 @@ open (filePath, texPath, lineNumber, callback) の const args を変更します
 
 %USERPROFILE%\\.atom\config.cson を編集します。
 
-latex の sumatraPath に SumatraPDF の実行ファイルのフルパスを設定して  alwaysOpenResultInAtom を false に設定します。
+latex の sumatraPath に SumatraPDF の実行ファイルのフルパスを設定して  always&#x4f;pen&#x52;esult&#x49;nAtom を false に設定します。
 
 ```
   latex:
@@ -151,7 +151,7 @@ pdf-view を使用するための設定をします。
 
 を編集します。
 
-latex の alwaysOpenResultInAtom を true に設定します。
+latex の always&#x4f;pen&#x52;esult&#x49;nAtom を true に設定します。
 
 ```
   latex:
