@@ -187,7 +187,7 @@ LuaLaTeX
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "zathura -P &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: zathura -s -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" "?am.pdf"
+: zathura -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" "?am.pdf"
 
 : qpdfview --unique "?am.pdf#src:?c:am.tex:@:0"
 
@@ -337,27 +337,15 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
 
-### forward search {#gc97fa6f}
+### forward and inverse search {#hd7f6d9d}
 
-forward search はユーザーコマンドに fwdzathura を作成して以下のようにコマンドを設定します．<br>
-
-```
-zathura --synctex-forward "@:0:?c:am.tex" "?am.pdf"
-```
-
-外部PDFビューアに zathura を設定して zathura で PDF ファイルを表示したあとでユーザーコマンドを実行します．<br>
-
-### inverse search {#hd7f6d9d}
-
-inverse search は外部PDFビューアに
+forward and inverse search は外部PDFビューアに
 
 ```
-zathura -s -x "texstudio '%%{input}' -line %%{line}" "?am.pdf"
+zathura -x "texstudio '%%{input}' -line %%{line}" --synctex-forward "@:0:?c:am.tex" "?am.pdf"
 ```
 
 を設定します．
-
-高度なオプションの表示を ON にして，ビルドオプションのすでにdvi/ps/pdfファイルが開いている場合、新たにビューアを起動しないを ON にします．<br>
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
