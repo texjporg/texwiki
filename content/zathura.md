@@ -32,29 +32,26 @@ OS X, Linux, BSD
 
 ### License {#v6901e72}
 
-[zlib/libpng License](https://git.pwmt.org/?p=zathura.git;a=blob;f=LICENSE;hb=HEAD)
+[zlib/libpng License](https://git.pwmt.org/pwmt/zathura/blob/master/LICENSE)
 
 ### リリース情報 {#p5c718a4}
 
-- [https://git.pwmt.org/?p=zathura.git;a=tags](https://git.pwmt.org/?p=zathura.git;a=tags)
-- [https://git.pwmt.org/?p=girara.git;a=tags](https://git.pwmt.org/?p=girara.git;a=tags)
-- [News](https://pwmt.org/news/)
+- [https://pwmt.org/news/](https://pwmt.org/news/)
+- [https://pwmt.org/news/tag/release/](https://pwmt.org/news/tag/release/)
 
 を参照．
 
-Version 0.2.7 で [SyncTeX](/SyncTeX/) (forward and inverse search) に対応しました．
+Version 0.3.4 以降は [SyncTeX](/SyncTeX/) で forward and inverse search ができるようになりました．
 
 ### ChangeLog {#fdab5877}
 
 #### zathura {#wf24e546}
 
-- [https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=zathura.git;a=shortlog;h=refs/heads/develop) (develop)
-- [https://git.pwmt.org/?p=zathura.git](https://git.pwmt.org/?p=zathura.git) (summary)
+- [https://git.pwmt.org/pwmt/zathura/commits/master](https://git.pwmt.org/pwmt/zathura/commits/master)
 
 #### girara {#l7dfb095}
 
-- [https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop](https://git.pwmt.org/?p=girara.git;a=shortlog;h=refs/heads/develop) (develop)
-- [https://git.pwmt.org/?p=girara.git](https://git.pwmt.org/?p=girara.git) (summary)
+- [https://git.pwmt.org/pwmt/girara/commits/master](https://git.pwmt.org/pwmt/girara/commits/master)
 
 ## ダウンロード/インストール {#w2221884}
 
@@ -97,10 +94,13 @@ zathura は [Vim](/Vim/) キーバインドを採用しています．
 
 ### コマンドラインオプション {#u4f91695}
 
-- [https://git.pwmt.org/?p=zathura.git;a=blob;f=zathura/main.c;hb=HEAD](https://git.pwmt.org/?p=zathura.git;a=blob;f=zathura/main.c;hb=HEAD)
+- [https://git.pwmt.org/pwmt/zathura/blob/master/zathura/main.c](https://git.pwmt.org/pwmt/zathura/blob/master/zathura/main.c)
 
 ```
 $ zathura --help
+```
+
+```
 Usage:
   zathura [OPTION...]  [file1] [file2] [...]
 
@@ -111,13 +111,13 @@ Application Options:
   -e, --reparent=xid                   Reparents to window specified by xid
   -c, --config-dir=path                Path to the config directory
   -d, --data-dir=path                  Path to the data directory
+  --cache-dir=path                     Path to the cache directory
   -p, --plugins-dir=path               Path to the directories containing plugins
   --fork                               Fork into the background
   -w, --password=password              Document password
   -P, --page=number                    Page number to go to
   -l, --debug=level                    Log level (debug, info, warning, error)
   -v, --version                        Print version information
-  -s, --synctex                        Enable synctex support
   -x, --synctex-editor-command=cmd     Synctex editor (forwarded to the synctex command)
   --synctex-forward=position           Move to given synctex position
   --synctex-pid=pid                    Highlight given position in the given process
@@ -126,41 +126,34 @@ Application Options:
 
 ## SyncTeX {#g93d0312}
 
-- [LaTeX forward/inverse searches with Zathura](http://wiki.math.cmu.edu/iki/wiki/tips/20140310-zathura-fsearch.html)
+<!-- -[[LaTeX forward/inverse searches with Zathura:http://wiki.math.cmu.edu/iki/wiki/tips/20140310-zathura-fsearch.html]] -->
 
-### forward search {#m29e6702}
+### forward and inverse search {#t2531a9e}
 
-TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+zathura 0.3.4 以降で TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプして [TeXstudio](/TeXstudio/) で inverse search したい場合は
 
 ```
-$ zathura hoge.pdf &
-$ zathura --synctex-forward 30:0:hoge.tex hoge.pdf
+$ zathura -x "texstudio '%{input}' -line %{line}" --synctex-forward "30:0:hoge.tex" "hoge.pdf"
 ```
 
 のように実行します．
-zathura で forward search をする場合は，あらかじめ PDF ファイルを開いておく必要があります．
 
-プロセス ID を指定して forward search をすることもできます．
-pgrep や pidof を使用するとプロセス ID が取得できます．
+### forward search {#m29e6702}
 
-```
-$ zathura hoge.pdf &
-$ PID=`pgrep zathura`
-$ zathura --synctex-pid=$PID --synctex-forward 30:0:hoge.tex hoge.pdf
-```
+zathura 0.3.4 以降で TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
 
 ```
-$ zathura hoge.pdf &
-$ PID=`pidof zathura`
-$ zathura --synctex-pid=$PID --synctex-forward 30:0:hoge.tex hoge.pdf
+$ zathura --synctex-forward "30:0:hoge.tex" "hoge.pdf"
 ```
+
+のように実行します．
 
 ### inverse search {#c00c992e}
 
-[TeXstudio](/TeXstudio/) の場合は
+zathura 0.3.4 以降で [TeXstudio](/TeXstudio/) で inverse search する場合は
 
 ```
-$ zathura -s -x "texstudio '%{input}' -line %{line}" "hoge.pdf"
+$ zathura -x "texstudio '%{input}' -line %{line}" "hoge.pdf"
 ```
 
 のように実行して zathura 上で Ctrl + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
