@@ -14,7 +14,7 @@ pukiwiki: "Atom"
 
 - [https://atom.io/](https://atom.io/)
 
-Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内臓のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
+Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
 
 ***
 
