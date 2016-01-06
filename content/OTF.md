@@ -84,11 +84,14 @@ PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
 ### CMap {#n2a34850}
 
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。
-[CMap Resources](http://sourceforge.net/adobe/cmap/) から "Downloads" へ進み、
-[Adobe-Japan1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_japan1-6.tar.z/download),
-[Adobe-GB1-5](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_gb1-5.tar.z/download),
-[Adobe-CNS1-6](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_cns1-6.tar.z/download),
-[Adobe-Korea1-2](http://sourceforge.net/projects/cmap.adobe/files/cmapresources_korean1-2.tar.z/download) を取得できます。
+[adobe-type-tools/cmap-resources · GitHub](https://github.com/adobe-type-tools/cmap-resources/) から "Download ZIP" をクリックすると、
+Adobe-Identity-0,
+Adobe-Japan1-6,
+Adobe-GB1-5,
+Adobe-CNS1-6,
+Adobe-Korea1-2
+が含まれている
+cmap-resources-master.zip を取得できます。
 
 ## upLaTeX, pLaTeX 以外でも OTF のコマンドを使いたい場合 {#fd82fe9a}
 
@@ -477,7 +480,6 @@ $ sudo updmap-sys --setoption kanjiEmbed hiragino （ヒラギノ書体を埋め
 $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed yu-win   （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed yu-win10 （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
@@ -497,7 +499,7 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．
 
 ```
-hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-win10, yu-osx
+hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
 （いずれもないときは nofont になります）
 ```
 
@@ -528,7 +530,7 @@ dvipdfmx -f morisawa.map dviname (Morisawa)
 dvipdfmx -f morisawapr6n.map dviname (Morisawa Pr6N)
 dvipdfmx -f morisawapr6n04.map dviname (Morisawa Pr6N, JIS2004字形)
 dvipdfmx -f msmingoth.map dviname (msmincho and msgothic)
-dvipdfmx -f yu.map dviname (游明朝・游ゴシック)
+dvipdfmx -f yu-win10.map dviname (游明朝・游ゴシック)
 dvipdfmx -f noembed.map dviname (埋め込まない)
 dvipdfmx -f noembed04.map dviname (埋め込まない, JIS2004字形)
 ```
