@@ -545,11 +545,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
                       (add-to-list 'TeX-command-list
                                    '("zathura"
-                                     "zathura -s -x \"emacsclient --no-wait +%%{line} %%{input}\" %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run zathura"))
-                      (add-to-list 'TeX-command-list
-                                   '("fwdzathura"
-                                     "zathura --synctex-forward %n:0:%b %s.pdf"
+                                     "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward %n:0:%b %s.pdf"
                                      TeX-run-discard-or-function t t :help "Forward search with zathura"))
                       (add-to-list 'TeX-command-list
                                    '("qpdfview"
@@ -604,8 +600,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>プレビュー (PDF)</td></tr>
 > <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>fwdzathura</td><td>C-c C-c fwdzathura RET</td><td>forward search (PDF)</td></tr>
+> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>プレビュー  &amp; forward search (PDF)</td></tr>
 > <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
