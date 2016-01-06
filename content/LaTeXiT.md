@@ -102,13 +102,17 @@ ps2pdf
 
 に変更してください。
 
-### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#pd5cb643}
+#### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#pd5cb643}
 
 [OS X の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，LaTeXiT にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
 
 > [![](/attach/LaTeXiT/LaTeXiT-bs.png)](/attach/LaTeXiT/LaTeXiT-bs.png)
 
 この方法は，[forum:1635](https://okumuralab.org/tex/mod/forum/discuss.php?d=1635) で報告されているバグへの対処としても有効です。
+
+### データ {#j0921f69}
+
+ライブラリは ~/Library/Application Support/LaTeXiT/library-default.latexlib に保存されます。
 
 ### 関連リンク {#tab9989c}
 
