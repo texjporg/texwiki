@@ -33,7 +33,7 @@ Windows, OS X, Linux
 
 [GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)
 
-QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git?p=qcodeedit/qce3.git;a=blob;f=GPL.txt;hb=HEAD)
+QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)
 
 ### リリース情報 {#xc0de645}
 
@@ -204,7 +204,7 @@ dvipdfmx.exe -f dlbase14.map %.dvi
 
 PDF ファイルのフォントの埋め込みについては
 
-- [PDFの作り方#フォントの埋め込み設定](</PDFの作り方/#z0e1001a>)
+- [dvipdfmx/フォントの設定#フォントの埋め込み設定](</dvipdfmx/フォントの設定/#y935d97b>)
 
 を参照してください．<br>
 
@@ -368,7 +368,6 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 - [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
 - [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
 - [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
-- [TexStudioで最初にする設定](http://kamiwo-koete.hatenablog.jp/entry/2014/12/30/101759)
 - [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
 - [TexStudioのインストール(Windows7)](http://ch.nicovideo.jp/hetare0914/blomaga/ar524833)
