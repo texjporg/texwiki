@@ -9,7 +9,7 @@ pukiwiki: "gedit"
 
 ## [gedit](https://wiki.gnome.org/Apps/Gedit) {#c704b7fa}
 
-<img src="https://git.gnome.org/browse/gedit/plain/pixmaps/gedit-logo.png" alt="gedit" style="float:right">
+<!-- #ref(https://git.gnome.org/browse/gedit/plain/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -536,20 +536,7 @@ okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-zathura -s -x "gedit "%{input}" +%{line}" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### fwdzathura {#pf09d81b}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-zathura --synctex-forward $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+zathura -x "gedit "%{input}" +%{line}" --synctex-forward $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
