@@ -478,6 +478,7 @@ $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め�
 $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed yu-win   （游フォントを埋め込む）
+$ sudo updmap-sys --setoption kanjiEmbed yu-win10 （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游フォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
@@ -496,7 +497,7 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．
 
 ```
-hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-osx
+hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win, yu-win10, yu-osx
 （いずれもないときは nofont になります）
 ```
 
@@ -809,9 +810,9 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 #### 游フォントを使う場合 {#t5547d05}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/)
 - [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
 
 - TeX Live の場合
@@ -819,7 +820,7 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 > - Windows の場合
 >
 >     ```
->     ptex2pdf -u -l -od "-f uptex-yu-win.map -f otf-up-yu-win.map" hoge.tex
+>     ptex2pdf -u -l -od "-f uptex-yu-win10.map -f otf-up-yu-win10.map" hoge.tex
 >     ```
 >
 > - OS X の場合
@@ -832,7 +833,7 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 - W32TeX の場合
 
 ```
-ptex2pdf -u -l -od "-f yu.map" hoge.tex
+ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
 ```
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
