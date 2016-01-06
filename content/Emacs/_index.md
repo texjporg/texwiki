@@ -277,7 +277,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
     [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
 
 - YaTeX の場合
-    [YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)<br>
+    [YaTeX#Linux#設定](/YaTeX/#nec42ee2)<br>
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
