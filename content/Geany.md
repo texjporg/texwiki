@@ -86,7 +86,7 @@ V<ins>i</ins>ew PDF File
 
 : okular --unique "%e.pdf"
 
-: zathura -s -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
+: zathura -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
 
 : qpdfview --unique "%e.pdf"
 
