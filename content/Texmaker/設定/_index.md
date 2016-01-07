@@ -204,6 +204,10 @@ LaTeX + dvipdfm + PDF ファイルを表示 を選択します．<br>
 
 <div style="clear:both"></div>
 
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Svn</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ Detect uncommitted lines at the opening</span><br>
+　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Path to the svn command</span><br>
+
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
