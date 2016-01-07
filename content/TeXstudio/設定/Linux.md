@@ -185,9 +185,7 @@ LuaLaTeX
 
 : okular --unique "file:?am.pdf#src:@ ?c:am.tex"
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "zathura -P &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: zathura -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" "?am.pdf"
+: zathura -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" --synctex-forward "@:0:?c:am.tex" "?am.pdf"
 
 : qpdfview --unique "?am.pdf#src:?c:am.tex:@:0"
 
@@ -345,7 +343,7 @@ forward and inverse search は外部PDFビューアに
 zathura -x "texstudio '%%{input}' -line %%{line}" --synctex-forward "@:0:?c:am.tex" "?am.pdf"
 ```
 
-を設定します．
+です．
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
