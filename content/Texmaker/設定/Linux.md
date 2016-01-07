@@ -258,13 +258,13 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 ### forward and inverse search {#s8c6284b}
 
-PDFビューアに
+forward and inverse search は PDFビューアに
 
 ```
 ruby -e "cmd='zathura -x '+0x22.chr+'texmaker '+0x22.chr++0x25.chr+'{input}'+0x22.chr+' -line '+0x25.chr+'{line}'+0x22.chr+' --synctex-forward '+0x22.chr+'"@"'+':0:'+'"#.tex"'+0x22.chr+' '+0x22.chr+'"%.pdf"'+0x22.chr;system(cmd)"
 ```
 
-を設定します．
+です．
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
