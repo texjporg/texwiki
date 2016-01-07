@@ -32,7 +32,7 @@ PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) とい�
 
 OS X では標準で印刷機能から PDF で保存ができます。
 
-Windows でも，Windows10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows10　上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう。
+Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう。
 
 Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します。
 
@@ -106,13 +106,13 @@ Adobe Acrobat　は，[Adobe Systems](http://www.adobe.com/jp/) が開発する�
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
-Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](http://get.adobe.com/jp/reader/)から無償で入手できます．
-[Adobe Acrobat DC](http://www.adobe.com/jp/products/acrobat.html) は
+Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](https://get.adobe.com/jp/reader/)から無償で入手できます．
+[Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat.html) は
 Adobe Acrobat Distiller DC を含む製品（商品）です．
 値段は Adobe のサイトで確認してください．
 
 有償の Adobe Acrobat DC には，その機能によってプランが幾つか存在しています．
-「[Acrobat DCプラン別機能比較](http://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」などを参照してください．
+「[Acrobat DCプラン別機能比較](https://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」などを参照してください．
 Standard と Pro がありますが，どちらも様々な文書ファイルや画像ファイルの PDF への変換をサポートしており，PDF のパスワード保護，複数の PDF の統合，PDF の編集などに対応しており，また，Word への書き出しや署名なども可能です．Pro ではこれに加え，PDF/X や PDF/A への変換や，これらへの規格適合性の検証 (プリフライト) などプロフェッショナル向けの機能を備えています．
 
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
