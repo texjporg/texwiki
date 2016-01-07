@@ -404,7 +404,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
     fname-or-url))
 
 (defun evince-inverse-search (file linecol &rest ignored)
-  (let* ((fname (un-urlify file))
+  (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
          (line (car linecol))
          (col (cadr linecol)))
