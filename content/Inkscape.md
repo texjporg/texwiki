@@ -149,12 +149,12 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
     - <span style="color:Red;"><strong>コメントアウトは # (シャープ) を使用します．</strong></span>
     - <span style="color:Red;"><strong>Python で Windows の PATH を文字列で表す場合は raw 文字列 (r'...') を使用すると便利です．</strong></span>
 
-### [EqTeXSvg (LaTeX formula)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
+### [EqTeXSVG (LaTeX formula)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．<br>
 <strong>環境変数 PATH に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
 
-[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2011-05-17) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
+[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
 [Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．<br>
 
 - [Inkscape (Win)でLaTeX数式を使えるようにする](http://ohtsuka.cocolog-nifty.com/blog/2013/04/inkscape-winlat.html)
@@ -181,13 +181,15 @@ TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロ�
 
 ***
 
-[EqTeXSvg](http://www.julienvitard.eu/en/eqtexsvg_en.html) から eqtexsvg.zip をダウンロードします．
+- [https://github.com/julienvitard/eqtexsvg](https://github.com/julienvitard/eqtexsvg)
 
-eqtexsvg.zip を展開し，eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
+から EqTeXSVG をダウンロードします．
+
+eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
 
 ***
 
-EqTeXSvg (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
+EqTeXSVG (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
 
 ```
 C:\inkscape>.\python\python.exe
@@ -200,47 +202,27 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 とすることで確認できます．
 
-もし，tempfile.gettempdir() がスペースの含まれたディレクトリであれば，スペースの含まないディレクトリ (C:\inkscape\tmp) を作成します．<br>
-最新版の eqtexsvg.py (2011-05-17)  を使用する場合は<br>
-
-```
-class Equation:
-    """Current LaTeX Equation"""
-
-    def __init__(self, param={}):
-
-    ...
-
-        try: 
-            #self.temp_dir = tempfile.mkdtemp('', 'inkscape-')
-            self.temp_dir = tempfile.mkdtemp('', 'inkscape-', r'C:\inkscape\tmp')
-```
-
-などとして C:\inkscape\share\extensions\eqtexsvg.py の self.temp_dir を修正してください．<br>
-この場合は，C:\inkscape\tmp\inkscape-?????? に一時ファイルを作成します．<br>
-処理がうまくいけば，一時ファイルと C:\inkscape\tmp\inkscape-?????? が削除されます．
-
 #### インストール (Linux) {#jbc77a7b}
 
 eqtexsvg を最新版に更新します．<br>
 
 ```
-$ wget http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+$ wget https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 ```
 
 または
 
 ```
-$ curl -O http://www.julienvitard.eu/documents/eqtexsvg/eqtexsvg.tar.gz
+$ curl -LO https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 ```
 
-eqtexsvg.tar.gz を展開して chmod で実行権限を付加して /usr/share/inkscape/extensions にコピーします．<br>
+ファイルを展開して eqtexsvg.py に実行権限を付加して /usr/share/inkscape/extensions にコピーします．<br>
 
 ```
-$ tar xvf eqtexsvg.tar.gz
+$ tar xvf master.tar.gz
+$ cd eqtexsvg-master
 $ chmod +x eqtexsvg.py
 $ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
-$ rm eqtexsvg.py eqtexsvg.inx eqtexsvg.tar.gz
 ```
 
 Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] が使用出来ます．<br>
