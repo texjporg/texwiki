@@ -325,7 +325,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>zathura</ins><br>
 　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>/usr/bin/env</ins><br>
-　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>zathura -s -x "echo %{input}:%{line}" "&#x25;file"</ins><br>
+　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>zathura -x "echo %{input}:%{line}" --synctex-forward "&#x25;line:0:&#x25;texfile" "&#x25;file"</ins><br>
 
 <br>
 
