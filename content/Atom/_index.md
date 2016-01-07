@@ -14,7 +14,10 @@ pukiwiki: "Atom"
 
 - [https://atom.io/](https://atom.io/)
 
-Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。"A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。2016 年 1 月現在、1.3 系列が最新です。
+Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。
+"A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。
+内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。
+2016 年 1 月現在、1.3 系列が最新です。
 
 ***
 
@@ -60,12 +63,12 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 ## LaTeX 環境の整備 {#o1b2f62a}
 
-latex, language-latex, latexer などのパッケージをとりあえず入れましょう。
+latex, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
 
-ここでは、pLaTeX 系エンジンを使って文書を作成する設定を解説します。
+ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
 
-### Windows {#xd2a02e0}
+### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
 
 Windows で LaTeX package で Latexmk-upLaTeX-pdfdvi でタイプセットして SumatraPDF で forward and inverse search を実行する方法を記述します。
 
@@ -130,18 +133,9 @@ SumatraPDF の画面をダブルクリックすると Atom の該当する TeX �
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
 [pdf-view](https://atom.io/packages/pdf-view) パッケージを使用することで Atom 内で PDF プレビューができます。SyncTeX にも対応しています。
-日本語を表示させるには、
+pdf-view version 0.39.0 以降は日本語の表示にも対応しています。
 
-```
- ~/.atom/packages/pdf-view/node_modules/pdfjs-dist/build/pdf.js
-```
-
-から、 CMap 関連の設定場所を探し出し、以下のように編集します：
-
-```
- PDFJS.cMapUrl = "../cmaps/";
- PDFJS.cMapPacked = true;
-```
+#### 設定 {#e1f3ae0a}
 
 pdf-view を使用するための設定をします。
 
@@ -158,7 +152,33 @@ latex の always&#x4f;pen&#x52;esult&#x49;nAtom を true に設定します。
     alwaysOpenResultInAtom: true
 ```
 
-latex パッケージで自動プレビューを設定してもなぜか DVI ファイルを開こうとする場合があるようです。プロジェクトフォルダを追加しておき、手動で結果の PDF ファイルを選択すると Atom で PDF を見ることができます。
+latex パッケージで自動プレビューを設定しても (u)pTeX などの DVI ファイルを出力する TeX エンジンでタイプセットした場合は DVI ファイルを開こうとします。
+DVI ファイルではなく PDF ファイルを開くための設定をします。
+
+```
+~/.atom/packages/latex/lib/openers/atompdf-opener.js
+```
+
+を編集します。
+
+ファイルの中身に
+
+```
+    atom.workspace.openURIInPane(filePath, newPane)
+```
+
+という記述があるので
+
+```
+    atom.workspace.openURIInPane(filePath.replace(/\.dvi$/, '.pdf'), newPane)
+```
+
+に修正して拡張子が .dvi の場合は .pdf に変更してから pdf-view で開くように設定します。
+
+#### 使い方 {#x26304ba}
+
+Ctrl+Alt+B をタイプするとタイプセットしたあと pdf-view で PDF が表示されます。
+PDF の表示画面をクリックすると TeX ファイルの該当する行にジャンプします。
 
 ## Markdown 環境の整備 {#he8ae1a3}
 
