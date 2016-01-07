@@ -197,7 +197,8 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### inverse search {#vecb4fd9}
 
-Evince 3.10.0, GNU Emacs 24.3.1 で動作確認しています．<br>
+Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．<br>
+日本語のファイル名でも inverse search できます．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
 
@@ -211,7 +212,7 @@ AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効�
     fname-or-url))
 
 (defun evince-inverse-search (file linecol &rest ignored)
-  (let* ((fname (un-urlify file))
+  (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
          (line (car linecol))
          (col (cadr linecol)))
@@ -229,6 +230,22 @@ AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効�
 ```
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+<!-- ディレクトリ名およびファイル名に日本語を含むと不具合が起こります． -->
+<!-- Linux Mint で検証しただけですが -->
+<!-- evince-inverse-search 関数の -->
+<!-- (fname (un-urlify file)) を -->
+<!-- (fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8)) -->
+<!-- と修正するとPDFからTeXソースにジャンプできました． -->
+<!-- ただし，lisp初心者なのでこれで正しいか判断できません． -->
+<!-- どなたか確認お願いします． -->
+
+<!-- ↑ -->
+<!-- 不具合報告ありがとうございます． -->
+<!-- Arch Linux の Evince 3.18.2, GNU Emacs 24.5.1 で検証しましたが -->
+<!-- 確かに日本語のファイル名では inverse search ができませんでした． -->
+<!-- (fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8)) -->
+<!-- に修正すると日本語のファイル名でも動作しました． -->
 
 ## Okular との連携 {#k7216a91}
 
