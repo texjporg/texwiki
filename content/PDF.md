@@ -101,8 +101,8 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) が有名ですが，ほかにも様々あります：
 
 - [Poppler](/Poppler/) 系：Poppler を利用したものが多数あります．
-    - [TeXstudio](/TeXstudio/) PDF ビューアとしても使える TeX の統合環境
-    - [TeXworks](/TeXworks/) PDF ビューアとしても使える TeX の統合環境
+    - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える TeX の統合環境
+    - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える TeX の統合環境
     - [Evince](/Evince/) (GNOME) SyncTeX に対応した GNOME 標準の PDF ビューア
     - [Okular](/Okular/) (KDE) SyncTeX に対応した KDE 標準の PDF ビューア
     - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
