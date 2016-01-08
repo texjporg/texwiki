@@ -197,8 +197,8 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### inverse search {#vecb4fd9}
 
-Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．<br>
-日本語のファイル名でも inverse search できます．<br>
+[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．<br>
+日本語のファイル名でも inverse search ができます．<br>
 &#x7e;/.emacs.d/init.el に設定を記述します．<br>
 AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
 
