@@ -19,6 +19,7 @@ fwdevince がうまく動作しない場合は
 - [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
 - [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
 - fwdevince をうまく動作するように修正する
+    - 例えば端末から $ python -V とした時に Python 2.7.6 と表示される環境だと urllib.parse の読み込みに失敗します．その場合は python3 をインストールし，先頭行の #!/usr/bin/env python を #!/usr/bin/env python3 などと変更する．
 
 などの方法で対処してください．<br>
 
