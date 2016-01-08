@@ -26,7 +26,7 @@ OS X
 
 ### License {#m60344b8}
 
-[GPLv2](https://github.com/coteditor/CotEditor/blob/develop/LICENSE)
+[Apache License 2.0](https://github.com/coteditor/CotEditor/blob/develop/LICENSE)
 
 ### リリース情報 {#ed02eb4b}
 
