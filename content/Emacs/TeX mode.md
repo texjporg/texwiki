@@ -11,53 +11,80 @@ pukiwiki: "Emacs/TeX mode"
 
 ## [TeX mode](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+<strong>目次</strong>
 
 ## TeX mode とは {#b759a43a}
 
-TeX mode は TeX ファイルを編集・タイプセット・プレビューするためのモードです．<br>
-Emacs には標準で [TeX mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) が含まれています．<br>
-スニペットが必要な場合は [YASnippet](/YASnippet/) を使ってください．<br>
+[TeX mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) は TeX ファイルを編集・タイプセット・プレビューするための Emacs のメジャーモードです．
+Emacs には標準で含まれています．
 
-- [http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el)
-- [http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD)
+標準添付ですが，設定すれば十分に使い物になります． <!-- 私が普段使っている環境は tex-mode に少し手を入れたものです（RefTeX, Helm や auto-complete も一緒に使っています）．- - kmaeda -->
+しかし，TeX mode を拡張したものとして，国内では [YaTeX](/YaTeX/)，海外では [AUCTeX](/AUCTeX/) がよく使われているため，Web 上の情報量もこれらについてのものが多いです．
+機能もこれらの方が豊富なので，どれを使用するかは比較検討して下さい．
 
-### License {#g3e59977}
+## 使い方 {#b6d90b9d}
 
-GPLv3
+> <table>
+> <tbody>
+> <tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [TeX]</th><th style="color:#FFF;background-color:#36A;text-align:center">キーバインド</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
+> <tr><td>TeX File</td><td>C-c C-f</td><td>タイプセット</td></tr>
+> <tr><td>TeX Kill</td><td>C-c C-k</td><td>タイプセットを中断</td></tr>
+> <tr><td>BibTeX File</td><td>C-c C-i または C-c TAB</td><td>Biblatex, BibTeX</td></tr>
+> <tr><td>TeX View</td><td>C-c C-v</td><td>プレビュー</td></tr>
+> <tr><td>TeX Print</td><td>C-c C-p</td><td>印刷</td></tr>
+> <tr><td></td><td>C-c C-c</td><td>ユーザー定義コマンドの実行</td></tr>
+> <tr><td></td><td>C-c C-o</td><td>\begin{...} ... \end{...} の補完</td></tr>
+> <tr><td></td><td>C-c C-e</td><td>\end{...} の補完</td></tr>
+> <tr><td></td><td>C-c C-u</td><td>環境内の \begin{...} の先頭に移動</td></tr>
+> <tr><td></td><td>C-M-m</td><td>\item を入力</td></tr>
+> <tr><td></td><td>C-c C-m または C-c RET</td><td>*tex-shell* バッファに RET を入力として送る</td></tr>
+> </tbody>
+> </table>
+>
 
-### ChangeLog {#fe3d1392}
+C-c C-f によるタイプセットは，設定ファイルにおいて latex-run-command（latex-mode の場合．tex-mode の場合は tex-run-command）にセットされたコマンドが実行されます．
+デフォルトのコマンドは latex，つまり欧文用なので，このままでは日本語は出ません．
+下の設定例を参考に，ptex2pdf などに変更して下さい．
 
-- [http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el)
+platex, uplatex, pdflatex, xelatex, lualatex など，複数のコマンドを併用したいときもあると思います．
+このような時にはユーザー定義コマンド (tex-compile-commands) に登録しておくと，C-c C-c で選択することができます．
+
+ユーザー定義コマンドは C-c C-c C-i または C-c C-c TAB で一覧が表示できます．
+一覧の中からマウスでクリックすると実行されます．
+キーボードを使用する場合はある程度キーボードで入力して C-i または TAB を入力すると補完されます．
 
 ## 注意点 {#m2671d0c}
 
-### " を入力しようとすると \`\` が入力される → C-q " {#y76d0516}
+### " を入力しようとすると \`\` が入力される {#y76d0516}
+
+TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力されます．
+\`\` ではなく " を入力したい場合は ""（" を2回打つ）か C-q " (Ctrl-Q を入力した後で " を入力) とします．
 
 - [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
-TeX mode, AUCTeX, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
-\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
-
 ## 設定 {#x084b3ec}
 
-### Windows {#m2df1dd4}
-
-64-bit Windows の場合は<br>
-[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
-32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)<br>
-をインストールします．<br>
-Emacs を起動して<br>
+Emacs を起動して
 
 ```
 C-x C-f ~/
 ```
 
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
-&#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+でホームディレクトリ (&#x7e;/) の場所を確認します．
+&#x7e;/.emacs.d/ が無ければ新規に作成し，&#x7e;/.emacs.d/init.el に設定を記述します．
+
+### Windows {#m2df1dd4}
+
+64-bit Windows の場合は
+
+- [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または
+- [emacs-w64](http://emacsbinw64.sourceforge.net/)
+
+32-bit Windows の場合は
+
+- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
+
+を使っているものと想定します．
 
 ***
 
@@ -111,7 +138,9 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
         ("pdfopen --r15 --file %r.pdf" "%r.pdf")))
+```
 
+```
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -123,11 +152,15 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "sumatrapdf" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
+```
 
+```
 (defun fwdsumatrapdf-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -139,11 +172,15 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "fwdsumatrapdf" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
+```
 
+```
 ;;
 ;; RefTeX with TeX mode
 ;;
@@ -154,17 +191,9 @@ fwdsumatrapdf.exe は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の
 
 ### OS X {#g5794e10}
 
-動作未確認です．<br>
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
-Emacs を起動して<br>
+動作未確認です．
 
-```
-C-x C-f ~/
-```
-
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
-&#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
+[Emacs.app](http://www.muskmelon.jp/?page_id=79) での利用を想定します．
 
 ***
 
@@ -174,7 +203,9 @@ C-x C-f ~/
 ;;
 (setenv "PATH"
         (concat (getenv "PATH") ":/Library/TeX/texbin"))
+```
 
+```
 ;;
 ;; TeX mode
 ;;
@@ -225,7 +256,9 @@ C-x C-f ~/
         ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("/usr/bin/open -a Firefox.app %r.pdf" "%r.pdf")
         ("/usr/bin/open -a \"Adobe Reader.app\" %r.pdf" "%r.pdf")))
+```
 
+```
 (defun skim-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -237,11 +270,15 @@ C-x C-f ~/
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "displayline" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c s") 'skim-forward-search)))
+```
 
+```
 ;;
 ;; RefTeX with TeX mode
 ;;
@@ -252,16 +289,7 @@ C-x C-f ~/
 
 ### Linux {#q1bd16f3}
 
-Emacs を起動して<br>
-
-```
-C-x C-f ~/
-```
-
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
-&#x7e;/.emacs.d/ が無ければ新規に作成します．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．
 
 ***
 
@@ -319,7 +347,9 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
         ("chromium --new-window %r.pdf &" "%r.pdf")))
+```
 
+```
 (defun evince-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -331,19 +361,27 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "fwdevince" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c e") 'evince-forward-search)))
+```
 
+```
 (require 'dbus)
+```
 
+```
 (defun un-urlify (fname-or-url)
   "A trivial function that replaces a prefix of file:/// with just /."
   (if (string= (substring fname-or-url 0 8) "file:///")
       (substring fname-or-url 7)
     fname-or-url))
+```
 
+```
 (defun evince-inverse-search (file linecol &rest ignored)
   (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
@@ -355,12 +393,16 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
       (goto-line (car linecol))
       (unless (= col -1)
         (move-to-column col)))))
+```
 
+```
 (dbus-register-signal
  :session nil "/org/gnome/evince/Window/0"
  "org.gnome.evince.Window" "SyncSource"
  'evince-inverse-search)
+```
 
+```
 (defun okular-forward-search ()
   (interactive)
   (let* ((ctf (buffer-file-name))
@@ -372,11 +414,15 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "okular" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c o") 'okular-forward-search)))
+```
 
+```
 (defun zathura-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -388,11 +434,15 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "zathura" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c z") 'zathura-forward-search)))
+```
 
+```
 (defun qpdfview-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -404,69 +454,20 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "qpdfview" nil cmd args))))
+```
 
+```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
+```
 
+```
 ;;
 ;; RefTeX with TeX mode
 ;;
 (add-hook 'latex-mode-hook 'turn-on-reftex)
 ```
-
-***
-
-## 使い方 {#b6d90b9d}
-
-> <table>
-> <tbody>
-> <tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [TeX]</th><th style="color:#FFF;background-color:#36A;text-align:center">入力</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
-> <tr><td>TeX File</td><td>C-c C-f</td><td>タイプセット</td></tr>
-> <tr><td>TeX Kill</td><td>C-c C-k</td><td>タイプセットを中断</td></tr>
-> <tr><td>BibTeX File</td><td>C-c C-i または C-c TAB</td><td>Biblatex, BibTeX</td></tr>
-> <tr><td>TeX View</td><td>C-c C-v</td><td>プレビュー</td></tr>
-> <tr><td>TeX Print</td><td>C-c C-p</td><td>印刷</td></tr>
-> <tr><td></td><td>C-c C-c</td><td>ユーザー定義コマンドの実行</td></tr>
-> </tbody>
-> </table>
->
-
-ユーザー定義コマンドは C-c C-c C-i または C-c C-c TAB で一覧が表示できます．<br>
-一覧の中からマウスでクリックすると実行されます．<br>
-キーボードを使用する場合はある程度キーボードで入力して C-i または TAB を入力すると補完されます．<br>
-
-***
-
-> <table>
-> <tbody>
-> <tr><th style="color:#FFF;background-color:#36A;text-align:center">入力</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
-> <tr><td>C-c C-o</td><td>\begin{...} ... \end{...} の補完</td></tr>
-> <tr><td>C-c C-e</td><td>\end{...} の補完</td></tr>
-> <tr><td>C-c C-u</td><td>環境内の \begin{...} の先頭に移動</td></tr>
-> </tbody>
-> </table>
->
-
-***
-
-<span style="color:#3465A4;background-color:#3465A4;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png" alt="GNU Emacs - GNU Project - Free Software Foundation (FSF)" width="28" height="28">](http://www.gnu.org/software/emacs/)<span style="color:#3465A4;background-color:#3465A4;"><ins>　　　　　　　　　　　　　　　<span style="color:Black;"><strong>emacs@TeX mode</strong></span>　　　　　　　<span style="color:#3465A4;background-color:#3465A4;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#3465A4;background-color:#3465A4;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル　 編集　 オプション　 バッファ　 ツール　 TeX　 Ref　 ヘルプ　　　　</ins></span><br>
-
-...<br>
-&#x2d;U\\---　　<strong>emacs.tex</strong>　　　　　Top L1　　　(LaTeX Ref)-------------------<br>
-
-***
-
-<span style="color:#3465A4;background-color:#3465A4;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png" alt="GNU Emacs - GNU Project - Free Software Foundation (FSF)" width="28" height="28">](http://www.gnu.org/software/emacs/)<span style="color:#3465A4;background-color:#3465A4;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>emacs@TeX mode</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#3465A4;background-color:#3465A4;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#3465A4;background-color:#3465A4;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル　 編集　 オプション　 バッファ　 ツール　 TeX　 Errors　 Complete　 In/Out　 Signals　 ヘルプ　　　　</ins></span><br>
-
-...<br>
-&#x2d;U\\---　　<strong>emacs.tex</strong>　　　　　Top L1　　　(LaTeX Ref)-----------------------------------------------<br>
-...<br>
-&#x2d;S:\*\*-　　<strong>\*tex-shell\*</strong>　　　　　Bot L1　　　(TeX-Shell:run Shell-Compile)--------------------------------<br>
 
 ***
 
@@ -480,3 +481,12 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 - [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://srad.jp/~t-nissie/journal/560083)
+
+### レポジトリ {#kdedd1cc}
+
+- [http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el)
+- [http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD)
+
+### ChangeLog {#fe3d1392}
+
+- [http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el)
