@@ -11,17 +11,22 @@ pukiwiki: "Evince/fwdevince/Python"
 
 ## fwdevince の例示ソース {#u6122dc4}
 
+<!-- ずっと疑問なんですが，なんで TeX Wiki に展示したがるんでしょうね． -->
+<!-- Github にでも置いてリンクすればいいと思うのですが． -->
+<!-- その方がバージョン管理も楽だし，コピペしないでダウンロードするだけでいいし． - - kmaeda (2016/01/09) -->
+
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
-[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, Python 3.5.1, dbus-python 1.2.0, PyGObject 3.18.2 で動作確認しています．<br>
-fwdevince がうまく動作しない場合は
+[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, Python 3.5.1, dbus-python 1.2.0, PyGObject 3.18.2 で動作確認しています．
+
+うまく動作しない場合は
 
 - [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
 - [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
 - fwdevince をうまく動作するように修正する
     - 例えば端末から $ python -V とした時に Python 2.7.6 と表示される環境だと urllib.parse の読み込みに失敗します．その場合は python3 をインストールし，先頭行の #!/usr/bin/env python を #!/usr/bin/env python3 などと変更する．
 
-などの方法で対処してください．<br>
+などを試みてください．
 
 ***
 
