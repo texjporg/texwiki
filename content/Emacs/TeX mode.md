@@ -46,6 +46,8 @@ C-c C-f によるタイプセットは，設定ファイルにおいて latex-ru
 デフォルトのコマンドは latex，つまり欧文用なので，このままでは日本語は出ません．
 下の設定例を参考に，ptex2pdf などに変更して下さい．
 
+同様に，BibTeX のコマンドのデフォルトは bibtex，プレビューコマンドのデフォルトは xdvi (X Window System), yap (Windows), dvi2tty（それ以外）ですので，適宜変更する必要があります．
+
 platex, uplatex, pdflatex, xelatex, lualatex など，複数のコマンドを併用したいときもあると思います．
 このような時にはユーザー定義コマンド (tex-compile-commands) に登録しておくと，C-c C-c で選択することができます．
 
@@ -73,7 +75,7 @@ C-x C-f ~/
 でホームディレクトリ (&#x7e;/) の場所を確認します．
 &#x7e;/.emacs.d/ が無ければ新規に作成し，&#x7e;/.emacs.d/init.el に設定を記述します．
 
-### Windows {#m2df1dd4}
+### Windows での設定例 {#m2df1dd4}
 
 64-bit Windows の場合は
 
@@ -189,7 +191,7 @@ C-x C-f ~/
 
 ***
 
-### OS X {#g5794e10}
+### OS X での設定例 {#g5794e10}
 
 動作未確認です．
 
@@ -287,9 +289,9 @@ C-x C-f ~/
 
 ***
 
-### Linux {#q1bd16f3}
+### Linux での設定例 {#q1bd16f3}
 
-fwdevince は Evince/fwdevince の fwdevince を使用します．
+fwdevince は Evince/fwdevince にあるものを使用することを想定します．
 
 ***
 
