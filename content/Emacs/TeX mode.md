@@ -11,16 +11,16 @@ pukiwiki: "Emacs/TeX mode"
 
 ## [TeX mode](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
-<strong>目次</strong>
-
-## TeX mode とは {#b759a43a}
-
 [TeX mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) は TeX ファイルを編集・タイプセット・プレビューするための Emacs のメジャーモードです．
 Emacs には標準で含まれています．
 
 標準添付ですが，設定すれば十分に使い物になります． <!-- 私が普段使っている環境は tex-mode に少し手を入れたものです（RefTeX, Helm や auto-complete も一緒に使っています）．- - kmaeda -->
 しかし，TeX mode を拡張したものとして，国内では [YaTeX](/YaTeX/)，海外では [AUCTeX](/AUCTeX/) がよく使われているため，Web 上の情報量もこれらについてのものが多いです．
 機能もこれらの方が豊富なので，どれを使用するかは比較検討して下さい．
+
+***
+
+***
 
 ## 使い方 {#b6d90b9d}
 
