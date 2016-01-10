@@ -23,22 +23,11 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 ***
 
-### インストール (Windows) {#yf2ae659}
+### ダウンロードとインストール {#yf2ae659}
 
-#### [RubyInstaller for Windows](http://rubyinstaller.org/) {#g82e00ee}
+[公式サイトのダウンロードページ](https://www.ruby-lang.org/ja/downloads/)を参照して下さい．
 
-RubyInstaller for Windows の Ruby を C:\Ruby22-x64 にインストールした場合は
+#### Windows でのインストール {#g82e00ee}
 
-```
-;C:\Ruby22-x64\bin
-```
-
-を環境変数 PATH に追加します．
-
-RubyInstaller for Windows の Ruby を C:\Ruby22 にインストールした場合は
-
-```
-;C:\Ruby22\bin
-```
-
-を環境変数 PATH に追加します．
+Windows 用の配布バイナリには [RubyInstaller](http://rubyinstaller.org/) や [ActiveScriptRuby](http://www.artonx.org/data/asr/) があります．
+好きな方をインストールするとよいでしょう．
