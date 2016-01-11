@@ -58,7 +58,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
 Okular は TeX ファイルをフルパスで指定しないと forward search ができないので cf を (expand-file-name cf) に修正する必要があります．<br>
 さらに format "%s '%s.pdf#src:%d' '%s'" も間違いで format "%s '%s.pdf#src:%d %s'" に修正する必要があります．<br>
-&#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．<br>
+&#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．<br> <!-- (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された --> <!-- (cf (buffer-file-name)) ではないのかと思います． -->
 
 ```
 (with-eval-after-load "yatexprc"
