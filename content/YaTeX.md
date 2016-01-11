@@ -56,9 +56,16 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 ### YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → &#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定する {#l5f1c74e}
 
 YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
-Okular は TeX ファイルをフルパスで指定しないと forward search ができないので cf を (expand-file-name cf) に修正する必要があります．<br>
-さらに format "%s '%s.pdf#src:%d' '%s'" も間違いで format "%s '%s.pdf#src:%d %s'" に修正する必要があります．<br>
+Okular は TeX ファイルをフルパスで指定しないと forward search ができないので cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．<br>
+2016-01-08 に (cf (buffer-file-name)) に変更されていて cf はフルパスになっており forward search をする場合は TeX ファイルはすべてフルパスで実行されるのでこの場合 cf は (expand-file-name cf) に修正する必要はありません．<br>
+Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで format "%s '%s.pdf#src:%d %s'" に修正する必要があります．<br>
 &#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．<br> <!-- (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された --> <!-- (cf (buffer-file-name)) ではないのかと思います． -->
+
+<!-- ↑ -->
+<!-- ご指摘ありがとうございます． -->
+<!-- たしかに cf がフルパスに変更されていますね． -->
+<!-- Okular 以外のビューアはフルパスでなくても実行できると思うのですが -->
+<!-- すべてフルパスになっていても問題ないと思います． -->
 
 ```
 (with-eval-after-load "yatexprc"
@@ -78,10 +85,6 @@ Okular は TeX ファイルをフルパスで指定しないと forward search �
               (line (count-lines (point-min) (point-end-of-line)))
               (previewer (YaTeX-preview-default-previewer))
               (cmd (cond
-                    ((string-match "xdvi" previewer)
-                     (format "%s -nofork -sourceposition '%d %s' %s.dvi"
-                             YaTeX-xdvi-remote-program
-                             line cf bnr))
                     ((string-match "Skim" previewer)
                      (format "%s %d '%s.pdf' '%s'"
                              YaTeX-cmd-displayline line bnr cf))
@@ -466,10 +469,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
               (line (count-lines (point-min) (point-end-of-line)))
               (previewer (YaTeX-preview-default-previewer))
               (cmd (cond
-                    ((string-match "xdvi" previewer)
-                     (format "%s -nofork -sourceposition '%d %s' %s.dvi"
-                             YaTeX-xdvi-remote-program
-                             line cf bnr))
                     ((string-match "Skim" previewer)
                      (format "%s %d '%s.pdf' '%s'"
                              YaTeX-cmd-displayline line bnr cf))
@@ -1298,8 +1297,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 ### Okular との連携 (forward search) {#o8772291}
 
-YaTeX 1.78.10 以降で
-
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
@@ -1323,10 +1320,6 @@ YaTeX 1.78.10 以降で
               (line (count-lines (point-min) (point-end-of-line)))
               (previewer (YaTeX-preview-default-previewer))
               (cmd (cond
-                    ((string-match "xdvi" previewer)
-                     (format "%s -nofork -sourceposition '%d %s' %s.dvi"
-                             YaTeX-xdvi-remote-program
-                             line cf bnr))
                     ((string-match "Skim" previewer)
                      (format "%s %d '%s.pdf' '%s'"
                              YaTeX-cmd-displayline line bnr cf))
@@ -1353,8 +1346,6 @@ YaTeX 1.78.10 以降で
 
 ### zathura との連携 (forward search) {#j4034f6b}
 
-YaTeX 1.78.10 以降で
-
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
@@ -1378,10 +1369,6 @@ YaTeX 1.78.10 以降で
               (line (count-lines (point-min) (point-end-of-line)))
               (previewer (YaTeX-preview-default-previewer))
               (cmd (cond
-                    ((string-match "xdvi" previewer)
-                     (format "%s -nofork -sourceposition '%d %s' %s.dvi"
-                             YaTeX-xdvi-remote-program
-                             line cf bnr))
                     ((string-match "Skim" previewer)
                      (format "%s %d '%s.pdf' '%s'"
                              YaTeX-cmd-displayline line bnr cf))
@@ -1476,7 +1463,6 @@ TeX ソースの先頭行に例えば，
 - [YaTeX reftex-modeの動作について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=308)
 - [YaTeX World (野鳥わぁるど)](http://www.nk.rim.or.jp/~naru/yatex/) (成宮 隆之 さん)
 - [yatex キー操作](http://www.cosmo.sci.hokudai.ac.jp/~kk/emacs/yatex_key.html)
-- [LaTeX on Linux with Emacs, YaTeX, BibTeX, RefTeX](http://www.eis.t.u-tokyo.ac.jp/~hara/tex/tex.html) (原 貴弘 さん)
 - [YaTeXとRefTeXの共存](http://ubutun.blogspot.com/2011/06/yatexreftex.html)
 - [SyncTeXの設定。 Emacs(YaTeX) + Evince](http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html)
 - [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okada.jp.org/RWiki/?Sweave%A4%C7%A5%A8%A5%C7%A5%A3%A5%BF%A4%C8DVI%A5%D3%A5%E5%A1%BC%A5%A2%B4%D6%A4%CE%C1%EA%B8%DF%B0%DC%C6%B0)
