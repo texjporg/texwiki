@@ -229,13 +229,13 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>forward search</td></tr>
-> <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>forward search</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
-> <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー</td></tr>
-> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>forward search or print PDF</td></tr>
+> <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>SumatraPDF で forward search</td></tr>
+> <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
+> <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
+> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>Adobe Acrobat Reader DC で forward search or print PDF</td></tr>
 > </tbody>
 > </table>
 >
@@ -404,14 +404,14 @@ Emacs 24.5 以降にアップグレードします．<br>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>forward search</td></tr>
-> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー</td></tr>
-> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー</td></tr>
-> <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>プレビュー or print PDF</td></tr>
+> <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
+> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>Skim でプレビュー</td></tr>
+> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>Preview でプレビュー</td></tr>
+> <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>TeXShop でプレビュー</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー or print PDF</td></tr>
 > </tbody>
 > </table>
 >
@@ -560,8 +560,9 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                      TeX-run-discard-or-function t t :help "Run xdg-open"))
                       (add-to-list 'TeX-command-list
                                    '("Evince"
-                                     "evince %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Evince"))
+                                     ;"synctex view -i \"%n:0:%b\" -o %s.pdf -x \"evince -i %%{page+1} %%{output}\""
+                                     "TeX-evince-sync-view"
+                                     TeX-run-discard-or-function t t :help "Forward search with Evince"))
                       (add-to-list 'TeX-command-list
                                    '("fwdevince"
                                      "fwdevince %s.pdf %n \"%b\""
@@ -623,17 +624,17 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>xdg-open</td><td>C-c C-c xdg-open RET</td><td>プレビュー</td></tr>
-> <tr><td>Evince</td><td>C-c C-c evince RET</td><td>プレビュー</td></tr>
-> <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>forward search</td></tr>
-> <tr><td>Okular</td><td>C-c C-c okular RET</td><td>forward search</td></tr>
-> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>forward search</td></tr>
-> <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>forward search</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
-> <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
-> <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー</td></tr>
+> <tr><td>xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
+> <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
+> <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
+> <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
+> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward search</td></tr>
+> <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
+> <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>MuPDF でプレビュー</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
+> <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>Chromium でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
