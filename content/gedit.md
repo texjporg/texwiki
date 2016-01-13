@@ -495,7 +495,7 @@ latexmk -e '$pdflatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-evince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
+synctex view -i $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" -o "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" -x "evince -i %{page+1} %{output}"
 ```
 
 ***
