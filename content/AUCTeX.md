@@ -124,7 +124,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load "tex-jp"
+(with-eval-after-load 'tex-jp
   (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
                                      "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
                                      "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
@@ -295,7 +295,7 @@ Emacs 24.5 以降にアップグレードします．<br>
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load "tex-jp"
+(with-eval-after-load 'tex-jp
   (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
                                      "/Library/TeX/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
                                      "/Library/TeX/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
@@ -437,7 +437,7 @@ $ wget http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
 または
 
 ```
-$ curl -O http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
+$ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
 ```
 
 で最新版の AUCTeX を入手します．<br>
@@ -475,7 +475,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load "tex-jp"
+(with-eval-after-load 'tex-jp
   (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
                                      "ptex2pdf -u -e -ot '%S %(mode)'"
                                      "ptex2pdf -u -l -ot '%S %(mode)'"
