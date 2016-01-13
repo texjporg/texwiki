@@ -229,13 +229,13 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>プレビュー &amp; forward search or 印刷 (PDF)</td></tr>
+> <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>forward search</td></tr>
+> <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>forward search</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
+> <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>プレビュー</td></tr>
+> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>forward search or print PDF</td></tr>
 > </tbody>
 > </table>
 >
@@ -404,14 +404,14 @@ Emacs 24.5 以降にアップグレードします．<br>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>プレビュー or 印刷 (PDF)</td></tr>
+> <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>forward search</td></tr>
+> <tr><td>Skim</td><td>C-c C-c skim RET</td><td>プレビュー</td></tr>
+> <tr><td>Preview</td><td>C-c C-c preview RET</td><td>プレビュー</td></tr>
+> <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>プレビュー</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>プレビュー or print PDF</td></tr>
 > </tbody>
 > </table>
 >
@@ -475,6 +475,33 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
+(with-eval-after-load 'tex
+  (defun TeX-evince-sync-view ()
+    (require 'url-util)
+    (let* ((uri (concat "file://" (url-encode-url
+                                   (expand-file-name
+                                   (concat file "." "pdf")))))
+           (owner (dbus-call-method
+                   :session "org.gnome.evince.Daemon"
+                   "/org/gnome/evince/Daemon"
+                   "org.gnome.evince.Daemon"
+                   "FindDocument"
+                   uri
+                   t)))
+      (if owner
+          (with-current-buffer (or (when TeX-current-process-region-p
+                                     (get-file-buffer (TeX-region-file t)))
+                                   (current-buffer))
+            (sleep-for 0.2)
+            (dbus-call-method
+             :session owner
+             "/org/gnome/evince/Window/0"
+             "org.gnome.evince.Window"
+             "SyncView"
+             (buffer-file-name)
+             (list :struct :int32 (line-number-at-pos) :int32 (1+ (current-column)))
+             :uint32 0))
+        (error "Couldn't find the Evince instance for %s" uri)))))
 (with-eval-after-load 'tex-jp
   (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
                                      "ptex2pdf -u -e -ot '%S %(mode)'"
@@ -545,7 +572,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
                       (add-to-list 'TeX-command-list
                                    '("zathura"
-                                     "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward %n:0:%b %s.pdf"
+                                     "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward \"%n:0:%b\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Forward search with zathura"))
                       (add-to-list 'TeX-command-list
                                    '("qpdfview"
@@ -596,17 +623,17 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>xdg-open</td><td>C-c C-c xdg-open RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Evince</td><td>C-c C-c evince RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>Okular</td><td>C-c C-c okular RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>プレビュー  &amp; forward search (PDF)</td></tr>
-> <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>プレビュー &amp; forward search (PDF)</td></tr>
-> <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー (PDF)</td></tr>
-> <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー (PDF)</td></tr>
+> <tr><td>xdg-open</td><td>C-c C-c xdg-open RET</td><td>プレビュー</td></tr>
+> <tr><td>Evince</td><td>C-c C-c evince RET</td><td>プレビュー</td></tr>
+> <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>forward search</td></tr>
+> <tr><td>Okular</td><td>C-c C-c okular RET</td><td>forward search</td></tr>
+> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>forward search</td></tr>
+> <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>forward search</td></tr>
+> <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>forward search</td></tr>
+> <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>forward search</td></tr>
+> <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>プレビュー</td></tr>
+> <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>プレビュー</td></tr>
+> <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>プレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -731,7 +758,7 @@ DVI, PDF Viewer を変更する場合は
 > <tr><td>LaTeX</td><td>C-c C-c latex RET</td><td>指定された TeX エンジンでタイプセット</td></tr>
 > <tr><td>BibTeX</td><td>C-c C-c bibtex RET</td><td>bibtex の実行</td></tr>
 > <tr><td>Biber</td><td>C-c C-c biber RET</td><td>biber の実行</td></tr>
-> <tr><td>View</td><td>C-c C-c view RET</td><td>プレビュー</td></tr>
+> <tr><td>View</td><td>C-c C-c view RET</td><td>プレビュー または forward search</td></tr>
 > <tr><td>Index</td><td>C-c C-c index RET</td><td>makeindex の実行</td></tr>
 > <tr><td>Xindy</td><td>C-c C-c xindy RET</td><td>texindy の実行</td></tr>
 > <tr><td>Check</td><td>C-c C-c check RET</td><td>lacheck の実行</td></tr>
@@ -1060,7 +1087,6 @@ AUCTeX とは関係ありませんが，先頭に
     - [AUCTeX で PDF をコマンド一つで生成する．](http://qiita.com/items/cbc813028d7f5951b165)
     - [https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk](https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk)
     - [http://melpa.milkbox.net/#/auctex-latexmk](http://melpa.milkbox.net/#/auctex-latexmk)
-- [Youhei SASAKI's official site: AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/emacs/auctex_config.html)
 - [https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/auctex_config.org](https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/auctex_config.org)
 - [emacsにauctex （texlive 2012）](http://miyazakikenji.wordpress.com/2013/06/02/emacs%E3%81%ABauctex-%EF%BC%88texlive-2012%EF%BC%89/)
 - [auctex-lua.el](https://github.com/vermiculus/auctex-lua) Lua editing utilities for AUCTeX
@@ -1070,4 +1096,4 @@ AUCTeX とは関係ありませんが，先頭に
 - [AUCTeX | 検索結果:  | miyazakikenji](http://miyazakikenji.wordpress.com/?s=AUCTeX)
 - [Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する](http://d.hatena.ne.jp/gifnksm/20090420/)
 
-<!-- AUC-TeX ここまで -->
+<!-- AUCTeX ここまで -->
