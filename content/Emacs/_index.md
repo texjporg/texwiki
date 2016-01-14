@@ -10,18 +10,14 @@ pukiwiki: "Emacs"
 
 ## [Emacs](http://www.gnu.org/software/emacs/) {#lc308d9d}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+[Emacs](https://ja.wikipedia.org/wiki/Emacs) は高い拡張性を持ったテキストエディタです．
+[Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) と呼ばれる [Lisp](/Lisp/) 方言の一つで多くの部分が実装されており，これを用いてカスタマイズ・拡張が可能です．
 
-<div style="clear:both"></div>
+***
 
-## Emacs とは {#a9896c87}
+***
 
-[Emacs](https://ja.wikipedia.org/wiki/Emacs) は，拡張性のあるカスタマイズ可能なテキストエディタです．<br>
-Emacs の核となる部分は [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) インタプリタです．<br>
-Emacs Lisp は [Lisp](/Lisp/) の方言の一つで，テキストの編集をサポートする機能があります．<br>
-Emacs Lisp を使えば自由にカスタマイズすることができます．<br>
-
-### GNU Emacs {#e77c7c99}
+## GNU Emacs {#e77c7c99}
 
 - [GNU Emacs - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/emacs/)
     - [ftp://ftp.gnu.org/gnu/emacs/windows/](ftp://ftp.gnu.org/gnu/emacs/windows/)
@@ -29,27 +25,16 @@ Emacs Lisp を使えば自由にカスタマイズすることができます．
     - [ftp://alpha.gnu.org/gnu/emacs/windows/](ftp://alpha.gnu.org/gnu/emacs/windows/)
     - [http://alpha.gnu.org/gnu/emacs/windows/](http://alpha.gnu.org/gnu/emacs/windows/)
 
-#### 動作環境 {#tabe669d}
+### 動作環境 {#tabe669d}
 
-[Supported Platforms](http://www.gnu.org/software/emacs/#Platforms) を参照．
+GNU, GNU/Linux は当然として，BSD, Mac OS X, Windows, Solaris もサポートされています．
 
-#### License {#u2ed578f}
+- [Supported Platforms](http://www.gnu.org/software/emacs/#Platforms)
 
-GNU Emacs は，フリーソフトウェアです．<br>
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．<br>
+### License {#u2ed578f}
 
-#### リリース情報 {#z96ff3b2}
-
-[Releases](http://www.gnu.org/software/emacs/#Releases) を参照．<br>
-
-#### ChangeLog {#eba94bf5}
-
-- [emacs.git - Emacs source repository](http://git.savannah.gnu.org/cgit/emacs.git)
-    - [コミットログ](http://git.savannah.gnu.org/cgit/emacs.git/log/)
-    - [ChangeLog](http://git.savannah.gnu.org/cgit/emacs.git/tree/ChangeLog)
-- [Savannah Git Hosting - emacs.git/summary](http://git.savannah.gnu.org/gitweb/?p=emacs.git)
-    - [コミットログ](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=shortlog)
-    - [ChangeLog](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=ChangeLog;hb=HEAD)
+GNU Emacs はフリーソフトウェアです．
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
 
 ### 派生版 {#n86b811e}
 
@@ -69,10 +54,6 @@ GNU Emacs は，フリーソフトウェアです．<br>
 - [Emacs For Mac OS X](http://emacsformacosx.com/)
     - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://emacsformacosx.com/builds)
 
-<!-- ***Android [#meb27277] -->
-
-<!-- ***iOS [#nf68bb78] -->
-
 ### [EmacsWiki](http://www.emacswiki.org/) {#mde20549}
 
 - [CategoryWThirtyTwo](http://www.emacswiki.org/emacs/CategoryWThirtyTwo)
@@ -82,23 +63,32 @@ GNU Emacs は，フリーソフトウェアです．<br>
 
 - [menu-tree.elのぺえじ](http://www11.atwiki.jp/s-irie/pages/13.html)
 
+### 拡張パッケージの入手 {#o0e71869}
+
+最近は [MELPA](https://melpa.org/) というサイトに Emacs の拡張パッケージの更新情報が集められるようになっています．
+YaTeX や AUCTeX の最新版もここから簡単に入手できます．
+
+使い方は，[Getting Started](https://melpa.org/#/getting-started) に書いてある設定をして M-x package-list-packages を実行するだけです．
+あとは，インストールしたいパッケージを i で選択して，x でインストールします．
+インストール済みパッケージの更新も，U, x とするだけでできます．
+
 ## Emacs で LaTeX {#p527fec0}
 
 - [EmacsWiki: Category Tex](http://www.emacswiki.org/emacs/CategoryTex)
-- [Org mode](</Emacs/Org mode/>) Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
-- [TeX mode](</Emacs/TeX mode/>) Emacs 標準の TeX mode
-- [YASnippet](/YASnippet/) スニペットプラグイン
-- [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer) magical syntax highlighting for LaTeX-mode buffers.
-- [AUCTeX](/AUCTeX/) GNU Emacs で TeX ファイルを編集するための拡張パッケージ
-- [YaTeX](/YaTeX/) Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
-- [latex-math-preview.el](http://transitive.info/software/latex-math-preview/) TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
+- [Org mode](</Emacs/Org mode/>)：Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
+- [TeX mode](</Emacs/TeX mode/>)：Emacs 標準の TeX mode
+- [YASnippet](/YASnippet/)：スニペットプラグイン
+- [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer)：magical syntax highlighting for LaTeX-mode buffers.
+- [AUCTeX](/AUCTeX/)：GNU Emacs で TeX ファイルを編集するための拡張パッケージ
+- [YaTeX](/YaTeX/)：Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
+- [latex-math-preview.el](http://transitive.info/software/latex-math-preview/)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
     - [EmacsWiki:LaTeXMathPreview](http://www.emacswiki.org/emacs/LaTeXMathPreview)
     - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
     - [QA: YaTeXで数式のpreview](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=349)
-- [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) (X)Emacs frontend to forward search with SumatraPDF
-- [RefTeX](http://www.emacswiki.org/emacs/RefTeX)  support for labels, references, citations and indices
-- [BibTeX](http://www.emacswiki.org/emacs/BibTeX) bibliography in LaTeX, editing style files
-- [latex_editor](http://sourceforge.net/projects/editorlatex/) emacs + auctex, vim + latex suite enviroment for windows.
+- [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413)：(X)Emacs frontend to forward search with SumatraPDF
+- [RefTeX](http://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
+- [BibTeX](http://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
+- [latex_editor](http://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
 - [emacs, mozc, TeX 入力](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1319)
 - [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
 - [emacs内でTeX文書の作成からpdf閲覧まで行う](http://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
@@ -115,7 +105,7 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 
 <table>
 <tbody>
-<tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [DocView]</th><th style="color:#FFF;background-color:#36A;text-align:center">入力</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
+<tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [DocView]</th><th style="color:#FFF;background-color:#36A;text-align:center">キーバインド</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
 <tr><td>Toggle display</td><td>C-c C-c</td><td>表示の切り替え</td></tr>
 <tr><td>Search</td><td>C-s</td><td>検索</td></tr>
 <tr><td>Search Backwards</td><td>C-r</td><td>逆順検索</td></tr>
@@ -126,19 +116,19 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 
 ### forward search {#i028a48f}
 
-[TeX mode#Windows](</Emacs/TeX mode/#m2df1dd4>)<br>
-[AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7)<br>
-[YaTeX#インストール#Windows#設定](/YaTeX/#edc51324), [YaTeX#SumatraPDF との連携 (forward search)](/YaTeX/#ra95ecfb)<br>
+- [TeX mode#Windows](</Emacs/TeX mode/#m2df1dd4>)
+- [AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7)
+- [YaTeX#インストール#Windows#設定](/YaTeX/#edc51324), [YaTeX#SumatraPDF との連携 (forward search)](/YaTeX/#ra95ecfb)
+
 を参照してください．
 
-あるいは [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を利用して forward search を行うことも可能です．<br>
-sumatra-forward.el を使用する場合は，あらかじめ SumatraPDF を起動しておいてください．<br>
-Emacs の Windows 版には ddeclient.exe が含まれているので別途ダウンロードする必要はありません．<br>
+あるいは [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を利用して forward search を行うことも可能です．
+sumatra-forward.el を使用する場合は，あらかじめ SumatraPDF を起動しておいてください．
 
 ### inverse search {#a06810d6}
 
-[Emacs Server - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html#Emacs-Server)<br>
-[emacsclient Options - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html)<br>
+- [Emacs Server - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html#Emacs-Server)
+- [emacsclient Options - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html)
 
 ```
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
@@ -158,9 +148,10 @@ C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
 
 ### forward search {#s6b956ef}
 
-[TeX mode#OS X](</Emacs/TeX mode/#g5794e10>)<br>
-[AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de)<br>
-[YaTeX#インストール#OS X#設定](/YaTeX/#qe563613), [YaTeX#Skim との連携 (forward search)](/YaTeX/#f978a43b)<br>
+- [TeX mode#OS X](</Emacs/TeX mode/#g5794e10>)
+- [AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de)
+- [YaTeX#インストール#OS X#設定](/YaTeX/#qe563613), [YaTeX#Skim との連携 (forward search)](/YaTeX/#f978a43b)
+
 を参照してください．
 
 ### inverse search {#e9c08b3d}
@@ -169,8 +160,7 @@ C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-[AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/)<br>
-を参照してください．
+[AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) を参照してください．
 
 PDF-TeX 同期サポート:
 : &nbsp;
@@ -190,27 +180,33 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### forward search {#p2255022}
 
-[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Evince との連携 (forward and inverse search)](/AUCTeX/#l4ab70a6)<br>
-[YaTeX#インストール#Linux#設定](/YaTeX/#nec42ee2), [YaTeX#Evince との連携 (forward search)](/YaTeX/#h118b5e5)<br>
+- [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
+- [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Evince との連携 (forward and inverse search)](/AUCTeX/#l4ab70a6)
+- [YaTeX#インストール#Linux#設定](/YaTeX/#nec42ee2), [YaTeX#Evince との連携 (forward search)](/YaTeX/#h118b5e5)
+
 を参照してください．
 
 ### inverse search {#vecb4fd9}
 
-[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．<br>
-日本語のファイル名でも inverse search ができます．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
+[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．
+日本語のファイル名でも inverse search ができます．
+
+&#x7e;/.emacs.d/init.el に設定を記述します．
+AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
 
 ```
 (require 'dbus)
+```
 
+```
 (defun un-urlify (fname-or-url)
   "A trivial function that replaces a prefix of file:/// with just /."
   (if (string= (substring fname-or-url 0 8) "file:///")
       (substring fname-or-url 7)
     fname-or-url))
+```
 
+```
 (defun evince-inverse-search (file linecol &rest ignored)
   (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
@@ -222,7 +218,9 @@ AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効�
       (goto-line (car linecol))
       (unless (= col -1)
         (move-to-column col)))))
+```
 
+```
 (dbus-register-signal
  :session nil "/org/gnome/evince/Window/0"
  "org.gnome.evince.Window" "SyncSource"
@@ -251,9 +249,10 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ### forward search {#maa4da39}
 
-[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Okular との連携 (forward and inverse search)](/AUCTeX/#d95e95ee)<br>
-[YaTeX#Okular との連携 (forward search)](/YaTeX/#o8772291)<br>
+- [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
+- [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Okular との連携 (forward and inverse search)](/AUCTeX/#d95e95ee)
+- [YaTeX#Okular との連携 (forward search)](/YaTeX/#o8772291)
+
 を参照してください．
 
 ### inverse search {#z0944532}
@@ -276,10 +275,11 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ### forward search {#xc3a349c}
 
-[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
-[YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)<br>
-を参照してください．<br>
+- [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
+- [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)
+- [YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)
+
+を参照してください．
 
 ### inverse search {#a432be77}
 
@@ -288,13 +288,13 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 ```
 
 - TeX mode の場合
-    [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
+    [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
 
 - AUCTeX の場合
-    [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
+    [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)
 
 - YaTeX の場合
-    [YaTeX#Linux#設定](/YaTeX/#nec42ee2)<br>
+    [YaTeX#Linux#設定](/YaTeX/#nec42ee2)
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
@@ -302,9 +302,10 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 
 ### forward search {#te740b85}
 
-[TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)<br>
-[AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)<br>
-[YaTeX#qpdfview との連携 (forward search)](/YaTeX/#ic7abdb4)<br>
+- [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
+- [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)
+- [YaTeX#qpdfview との連携 (forward search)](/YaTeX/#ic7abdb4)
+
 を参照してください．
 
 ### inverse search {#n709a57e}
@@ -367,6 +368,19 @@ Source editor:
 ### Linux {#l2b4bca7}
 
 - [CentOS 6.4 に emacs 24.3 をインストールする。](http://jaxx2104.info/centos-6-4-emacs-24-3)
+
+### リリース情報 {#z96ff3b2}
+
+[GNU Emacs - Releases](http://www.gnu.org/software/emacs/#Releases)
+
+### ChangeLog {#eba94bf5}
+
+- [emacs.git - Emacs source repository](http://git.savannah.gnu.org/cgit/emacs.git)
+    - [コミットログ](http://git.savannah.gnu.org/cgit/emacs.git/log/)
+    - [ChangeLog](http://git.savannah.gnu.org/cgit/emacs.git/tree/ChangeLog)
+- [Savannah Git Hosting - emacs.git/summary](http://git.savannah.gnu.org/gitweb/?p=emacs.git)
+    - [コミットログ](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=shortlog)
+    - [ChangeLog](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=ChangeLog;hb=HEAD)
 
 ## 使い方 {#e776cf5f}
 
