@@ -80,11 +80,11 @@ M-x list-packages RET でリストを表示して org を選択
 ## Export to LaTeX {#k6bbb6c5}
 
 - [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
+- [Emacs Org Mode から LaTeX Export する](http://ryogan.org/blog/2015/12/31/emacs-org-mode-%E3%81%8B%E3%82%89-latex-export-%E3%81%99%E3%82%8B/)
 - [BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで](http://gongo.hatenablog.com/entry/2014/01/13/225304)
 - [org-mode による論文作成入門](http://akisute3.hatenablog.com/entry/2013/12/28/144918)
 - [orgmodeで卒論を書いたときの話](http://qiita.com/PowerPC7450/items/b34b080dd941af689b56)
 - [org-mode で日本語LaTeXを出力する方法](http://qiita.com/kawabata/items/1b56ec8284942ff2646b)
-- [https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org](https://github.com/uwabami/emacs-config/blob/master/emacs.d/config/org-mode_config.org)
 - [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
 - [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
 
