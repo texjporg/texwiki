@@ -478,7 +478,6 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 - [TeX Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
 - [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
 - [Using pdfTeX in Emacs \`tex-mode'](http://www.emacswiki.org/emacs/PdfTeX)
-- [LaTeX メモ#Emacs との連携](http://www-is.amp.i.kyoto-u.ac.jp/lab/kmaeda/latex/#emacs)
 - [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
 - [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
