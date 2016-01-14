@@ -48,18 +48,15 @@ let g:vimtex_latexmk_background = 1
 "let g:vimtex_latexmk_options = '-pdf'
 let g:vimtex_latexmk_options = '-pdfdvi'
 "let g:vimtex_latexmk_options = '-pdfps'
-let g:vimtex_view_sumatrapdf_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\""'
-"let g:vimtex_view_general_viewer = 'texworks'
 let g:vimtex_view_general_viewer = 'SumatraPDF'
 let g:vimtex_view_general_options = '-reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%l \"\%f\"" -forward-search @tex @line @pdf'
 let g:vimtex_view_general_options_latexmk = '-reuse-instance'
+"let g:vimtex_view_general_viewer = 'texworks'
 ```
 
 ***
 
 ### OS X {#t8820201}
-
-- [vim-latex/vim-latexからlervag/vimtexに乗り換えた話](http://inaka-boyaki.hatenablog.com/entry/2015/09/15/234310)
 
 ***
 
@@ -113,7 +110,7 @@ let g:vimtex_latexmk_continuous = 1 の場合は latexmk のオプションに -
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#57E;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#57E;text-align:center">機能</th></tr>
 > <tr><td>\ll</td><td>タイプセット (let g:vimtex_latexmk_continuous = 1 の場合はタイプセット &amp; プレビュー)</td></tr>
-> <tr><td>\lv</td><td>プレビュー &amp; forward search</td></tr>
+> <tr><td>\lv</td><td>プレビューまたは forward search</td></tr>
 > </tbody>
 > </table>
 >
