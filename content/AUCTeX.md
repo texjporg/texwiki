@@ -254,9 +254,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 ### OS X {#h32722ec}
 
+- [Mac OS X El Capitan の AUCTeX の設定](http://ryogan.org/blog/2015/12/30/mac-os-x-el-capitan-%E3%81%AE-auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A/)
 - [AUCTex + RefTexで快適論文作成](http://ochiailab.blogspot.jp/2013/01/auctex-reftex.html)
 - [EmacsとSkimの連携](http://ochiailab.blogspot.jp/2012/10/emacsskim.html)
-- [AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/)
 - [Build Latex environments](http://sorabu.tumblr.com/post/6703335969/build-latex-environments)
 
 [Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
