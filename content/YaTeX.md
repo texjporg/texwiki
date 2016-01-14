@@ -11,30 +11,20 @@ pukiwiki: "YaTeX"
 
 ## [YaTeX](https://www.yatex.org/) {#o2c95a66}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
+[TeX mode](</Emacs/TeX mode/>) に比べ機能が大幅に拡張されています．
+もう一つ，有名な拡張として [AUCTeX](/AUCTeX/) があり，海外ではこちらがよく使われているようです．
+国内では YaTeX の方が人気があり，そのため日本語の情報が Web 上でたくさん見つかります．
 
-<div style="clear:both"></div>
+***
+
+***
 
 ## YaTeX とは {#q88fd71b}
-
-YaTeX（野鳥）は Emacs の TeX モードです．
 
 - [YaTeX (Yet Another TeX mode for Emacs)](https://www.yatex.org/) (公式ページ)
     - [『野鳥』クイックリファレンス](https://www.yatex.org/yatexref.txt)
     - [Yet Another tex-mode for Emacs - Table of Contents](https://www.yatex.org/info/yatexj_toc.html)
-
-### リリース情報 {#w889e1b2}
-
-[yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．<br>
-
-### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
-
-- [YaTeX Mercurial Repositories](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/)
-    - [コミットログ](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/shortlog/)
-    - [変更点](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/file/tip/yatex.new)
-    - [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
-- [http://twilog.org/hiroseyuuji/search?word=YaTeX](http://twilog.org/hiroseyuuji/search?word=YaTeX)
-- [http://twilog.org/ryseto/search?word=YaTeX](http://twilog.org/ryseto/search?word=YaTeX)
 
 ### スクリーンショット {#c84d00bd}
 
@@ -44,22 +34,26 @@ YaTeX（野鳥）は Emacs の TeX モードです．
 
 ## 注意点 {#x8b18a1c}
 
-### " を入力しようとすると \`\` が入力される → C-q " {#ibf10abb}
+### " を入力しようとすると \`\` が入力される {#ibf10abb}
 
 - [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
-YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力されます．<br>
-\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
+YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力されます．
+\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない → &#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定する {#l5f1c74e}
+### YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
 
-YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができません．<br>
-Okular は TeX ファイルをフルパスで指定しないと forward search ができないので cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．<br>
-2016-01-08 に (cf (buffer-file-name)) に変更されていて cf はフルパスになっており forward search をする場合は TeX ファイルはすべてフルパスで実行されるのでこの場合 cf は (expand-file-name cf) に修正する必要はありません．<br>
-Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで format "%s '%s.pdf#src:%d %s'" に修正する必要があります．<br>
-&#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．<br> <!-- (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された --> <!-- (cf (buffer-file-name)) ではないのかと思います． -->
+Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．
+ただし，2016-01-08 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
+
+Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%s '%s.pdf#src:%d %s'" に修正する必要があります．
+
+&#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．
+
+<!-- (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された -->
+<!-- (cf (buffer-file-name)) ではないのかと思います． -->
 
 <!-- ↑ -->
 <!-- ご指摘ありがとうございます． -->
@@ -116,12 +110,17 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで format "%s 
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#x0d7daaa}
 
-- [http://melpa.org/#/yatex](http://melpa.org/#/yatex)
+[MELPA](https://melpa.org/) から最新版がインストールできます．
+これからインストールするならば，この方法が一番良いでしょう．
+
+初めて MELPA を使用する場合は，[Getting started](https://melpa.org/#/getting-started) に従って設定をする必要があります．
+
+- [https://melpa.org/#/yatex](https://melpa.org/#/yatex)
 
 ### 公式サイトのパッケージを使用する場合 {#jde46c87}
 
-[YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．<br>
-展開したフォルダー名を yatex に変更します．<br>
+[YaTeX リリース版](https://www.yatex.org/) または [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi) をダウンロードして展開します．
+展開したフォルダー名を yatex に変更します．
 
 Emacs を起動して
 
@@ -129,7 +128,7 @@ Emacs を起動して
 C-x C-f ~/
 ```
 
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
+で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
 yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
 
@@ -144,7 +143,7 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 
 ***
 
-&#x7e;/.emacs.d/init.el に以下の設定を記述します．<br>
+&#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
@@ -152,20 +151,25 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 
 ### Windows {#n699538a}
 
-Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．<br>
+Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．
 
-64-bit Windows の場合は<br>
-[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
-32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)<br>
-をインストールします．<br>
+64-bit Windows の場合は
+
+- [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)
+
+32-bit Windows の場合は
+
+- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
+
+をインストールします．
 
 #### 設定 {#edc51324}
 
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-プレビューと forward search は [SumatraPDF](/SumatraPDF/) を使用します．<br>
-SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
-SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+プレビューと forward search は [SumatraPDF](/SumatraPDF/) を使用します．
+SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．
+SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
 
 ***
 
@@ -210,7 +214,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process pdfopen -ArgumentList ('--r15','--file',$p)}\"")
+```
 
+```
 (defun sumatrapdf-forward-search ()
   (interactive)
   (progn
@@ -229,15 +235,21 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
       (number-to-string (save-restriction
                           (widen)
                           (count-lines (point-min) (point))))))))
+```
 
+```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
+```
 
+```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
+```
 
+```
 ;;
 ;; RefTeX with YaTeX
 ;;
@@ -253,7 +265,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
@@ -275,13 +287,14 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 を参照．
 
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．<br>
+[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
 
 #### 設定 {#qe563613}
 
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-プレビューと forward search は [Skim](/Skim/) を使用します．<br>
-Skim の inverse search については [Emacs#Skim との連携#inverse search](/Emacs/#e9c08b3d) を参照してください．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+プレビューと forward search は [Skim](/Skim/) を使用します．
+Skim の inverse search については [Emacs#Skim との連携#inverse search](/Emacs/#e9c08b3d) を参照してください．
 
 ***
 
@@ -291,7 +304,9 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;;
 (setenv "PATH"
         (concat (getenv "PATH") ":/Library/TeX/texbin"))
+```
 
+```
 ;;
 ;; YaTeX
 ;;
@@ -336,11 +351,15 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
 ;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
 (setq dviprint-command-format "/usr/bin/open -a \"Adobe Acrobat Reader DC\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+```
 
+```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
+```
 
+```
 ;;
 ;; RefTeX with YaTeX
 ;;
@@ -356,7 +375,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
@@ -371,9 +390,10 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 #### 設定 {#nec42ee2}
 
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
-Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+fwdevince は Evince/fwdevince にあるものを使用します．
+Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．
 
 ***
 
@@ -426,15 +446,21 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "xdg-open `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+```
 
+```
 (require 'dbus)
+```
 
+```
 (defun un-urlify (fname-or-url)
   "A trivial function that replaces a prefix of file:/// with just /."
   (if (string= (substring fname-or-url 0 8) "file:///")
       (substring fname-or-url 7)
     fname-or-url))
+```
 
+```
 (defun evince-inverse-search (file linecol &rest ignored)
   (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
@@ -446,12 +472,16 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
       (goto-line (car linecol))
       (unless (= col -1)
         (move-to-column col)))))
+```
 
+```
 (dbus-register-signal
  :session nil "/org/gnome/evince/Window/0"
  "org.gnome.evince.Window" "SyncSource"
  'evince-inverse-search)
+```
 
+```
 (with-eval-after-load 'yatexprc
   (defun YaTeX-preview-jump-line ()
     "Call jump-line function of various previewer on current main file"
@@ -489,11 +519,15 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
                              previewer bnr line (expand-file-name cf)))
                     )))
           (YaTeX-system cmd "jump-line" 'noask pdir))))))
+```
 
+```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
+```
 
+```
 ;;
 ;; RefTeX with YaTeX
 ;;
@@ -509,7 +543,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
@@ -524,13 +558,18 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 さまざまな機能がありますので、まずは少しだけ。
 
-### タイプセット・プレビュー {#r68a2a97}
+### キーバインドについての注意（昔からの利用者向け） {#je823773}
 
-(setq YaTeX-inhibit-prefix-letter t) を使用してください．<br>
-(setq YaTeX-inhibit-prefix-letter nil) は，非推奨 (deprecated) です．<br>
-YaTeX-inhibit-prefix-letter は t と nil でキーバインドが異なります．<br>
-Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最新版はデフォルトで t となっており，YaTeX の作者も t を推奨しています （YaTeX ML \[yatex:04567\] を参照）．<br>
-変更の理由は YaTeX が使用していたキーバインドがユーザー向けに予約されていた C-c letter に設定されていたためと思われます．<br>
+(setq YaTeX-inhibit-prefix-letter t) を使用してください．
+(setq YaTeX-inhibit-prefix-letter nil) は，非推奨 (deprecated) です．
+t と nil ではキーバインドが異なります．
+
+```
+(setq YaTeX-inhibit-prefix-letter t)
+```
+
+Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最新版はデフォルトで t となっており，YaTeX の作者も t を推奨しています （YaTeX ML \[yatex:04567\] を参照）．
+変更の理由は YaTeX が使用していたキーバインドがユーザー向けに予約されていた C-c letter に設定されていたためと思われます．
 
 ***
 
@@ -546,9 +585,11 @@ Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最�
 
 ***
 
+### タイプセット・プレビュー {#r68a2a97}
+
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>タイプセット</td></tr>
 > <tr><td>Process -&gt; LaTeX+PDF</td><td>C-c C-t d</td><td>latex + dvipdfmx</td></tr>
 > <tr><td>Process -&gt; Kill LaTeX</td><td>C-c C-t k</td><td>タイプセットを中断</td></tr>
@@ -563,26 +604,11 @@ Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最�
 > </table>
 >
 
-***
-
-<span style="color:#2E20DE;background-color:#2E20DE;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png" alt="GNU Emacs - GNU Project - Free Software Foundation (FSF)" width="28" height="28">](http://www.gnu.org/software/emacs/)<span style="color:#2E20DE;background-color:#2E20DE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>emacs@YaTeX</strong></span>　　　　　　　　　　　　　<span style="color:#2E20DE;background-color:#2E20DE;"></ins>\[ <span style="color:Black;"><strong>◛</strong></span> \]<ins></span><span style="color:#2E20DE;background-color:#2E20DE;"></ins>\[ <span style="color:Black;"><strong>▭</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル　 編集　 オプション　 バッファ　 ツール　 YaTeX　 Ref　 ヘルプ　　　　　　　　　　　</ins></span><br>
-
-...<br>
-&#x2d;U\\---　　<strong>yatex.tex</strong>　　　　　Top L1　　　(やてふ Ref)--------------------------------<br>
-J)latex R)egion E)nv B)ibtex mk(I)dx latex+p(D)f K)ill P)review S)earch V)iewErr L)pr<br>
-
-***
-
 ### 補完 {#g3780d28}
-
-(setq YaTeX-inhibit-prefix-letter t) を使用してください．<br>
-(setq YaTeX-inhibit-prefix-letter nil) は，非推奨 (deprecated) です．<br>
 
 > <table>
 > <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">入力 (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">補完</th></tr>
+> <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">補完</th></tr>
 > <tr><td>Environment -&gt; リストから選択</td><td>C-c C-b SPC</td><td>begin 型補完</td></tr>
 > <tr><td>Environment region -&gt; リストから選択</td><td>C-c B SPC</td><td>指定領域に対して begin 型補完</td></tr>
 > <tr><td>Section type -&gt; リストから選択</td><td>C-c C-s</td><td>section 型補完</td></tr>
@@ -642,19 +668,16 @@ begin 型補完を使うのを忘れた場合は
 
 ### タイプセット方式の確認 {#k374ed95}
 
-> <table>
-> <tbody>
-> <tr><th style="color:#FFF;background-color:#22D;text-align:center">入力</th></tr>
-> <tr><td>M-x describe-variable RET tex-command RET</td></tr>
-> </tbody>
-> </table>
->
+```
+M-x describe-variable RET tex-command RET
+```
 
 ### その他 {#za795743}
 
-[『野鳥』クイックリファレンス](https://www.yatex.org/yatexref.txt) もご覧下さい．<br>
-詳細は [Yet Another tex-mode for Emacs - Table of Contents](https://www.yatex.org/info/yatexj_toc.html) をご覧下さい．<br>
-[瀬戸 亮平](http://d.hatena.ne.jp/setoryohei/) さんの [YaTeX demo](http://d.hatena.ne.jp/setoryohei/20120106) で YaTeX の機能が紹介されています．<br>
+詳細は [Yet Another tex-mode for Emacs - Table of Contents](https://www.yatex.org/info/yatexj_toc.html) をご覧下さい．
+
+- [『野鳥』クイックリファレンス](https://www.yatex.org/yatexref.txt) もご覧下さい．
+- [瀬戸 亮平](http://d.hatena.ne.jp/setoryohei/) さんの [YaTeX demo](http://d.hatena.ne.jp/setoryohei/20120106) で YaTeX の機能が紹介されています．
 
 ## ソースのサンプル {#q88c5ad1}
 
@@ -678,13 +701,13 @@ Welcom to YaTeX World!
 ```
 
 ```
-%%% Local Variables: 
+%%% Local Variables:
 %%% TeX-master: "hogehoge"
-%%% End: 
+%%% End:
 ```
 
-PDF ファイルでの印刷が多くなってきているので，LPR も PDF ファイルに対応させてみました．<br>
-パスの通ったところに，acroread.bat というファイル名で以下のスクリプトを保存します．<br>
+PDF ファイルでの印刷が多くなってきているので，LPR も PDF ファイルに対応させてみました．
+パスの通ったところに，acroread.bat というファイル名で以下のスクリプトを保存します．
 
 ```
 @echo off
@@ -698,8 +721,8 @@ if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
 
 ## &#x7e;/.emacs.d/init.el 見せてください． {#uc0145ec}
 
-あくまで一例です。<br>
-ぜひ修正、加筆お願いします。<br>
+あくまで一例です。
+ぜひ修正、加筆お願いします。
 
 ### ‘load-path’に yatex.el が存在するフォルダー (ディレクトリ) を追加 {#pe637e19}
 
@@ -721,15 +744,6 @@ if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
 (setq auto-mode-alist
       (cons (cons "\\.tex$" 'yatex-mode) auto-mode-alist))
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
-```
-
-### YaTeX-inhibit-prefix-letter {#j42805c2}
-
-(setq YaTeX-inhibit-prefix-letter t) を使用してください．<br>
-(setq YaTeX-inhibit-prefix-letter nil) は，非推奨 (deprecated) です．<br>
-
-```
-(setq YaTeX-inhibit-prefix-letter t)
 ```
 
 ### Kanji code {#j78164d5}
@@ -1054,7 +1068,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
 
-YaTeX 1.78 以降は YaTeX-use-AMS-LaTeX が t になりました．<br>
+YaTeX 1.78 以降は YaTeX-use-AMS-LaTeX が t になりました．
 AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設定してみてください．(参照 [その1](https://twitter.com/hiroseyuuji/status/173544126686572544), [その2](https://twitter.com/liquid_amber/status/173975511570194432))
 
 ```
@@ -1068,7 +1082,7 @@ AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (require 'font-latex)
-             (font-latex-setup))) 
+             (font-latex-setup)))
 ```
 
 ### RefTeX mode {#iabc8ab6}
@@ -1157,7 +1171,7 @@ off の場合
           (function
            (lambda ()
              (YaTeX-define-key "w" 'sdic-describe-word)
-             (YaTeX-define-key "\C-w" 'YaTeX-switch-mode-menu)))) 
+             (YaTeX-define-key "\C-w" 'YaTeX-switch-mode-menu))))
 ```
 
 ### math-sign の追加 {#teb10e47}
@@ -1209,12 +1223,11 @@ off の場合
 	     '(YaTeX-19-region-section-type "\\\\emph\\>" italic))
 (add-to-list 'YaTeX-hilit-patterns-alist
 	     '(YaTeX-19-region-section-type "\\\\texttt\\>" tt))
-
 ```
 
 ### SumatraPDF との連携 (forward search) {#ra95ecfb}
 
-#### SumatraPDF を前面に表示したい場合 → YaTeX 1.78.1 以降は SumatraPDF の forward search に対応しています {#x4a4f83a}
+#### SumatraPDF を前面に表示したい場合 {#x4a4f83a}
 
 YaTeX 1.78.1 以降は
 
@@ -1226,7 +1239,7 @@ YaTeX 1.78.1 以降は
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ```
 
-を設定して C-c C-g を入力すれば SumatraPDF で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば SumatraPDF で forward seasrch ができます．
 
 #### SumatraPDF を前面に表示したくない場合 {#d9c64d40}
 
@@ -1249,17 +1262,18 @@ YaTeX 1.78.1 以降は
       (number-to-string (save-restriction
                           (widen)
                           (count-lines (point-min) (point))))))))
+```
 
+```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
 ```
 
-fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
+fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) にあるものを使用します．
+forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
 
-fwdsumatrapdf での forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
-
-### Skim との連携 (forward search) → YaTeX 1.78 以降は Skim の forward search に対応しています {#f978a43b}
+### Skim との連携 (forward search) {#f978a43b}
 
 YaTeX 1.78 以降は
 
@@ -1271,15 +1285,15 @@ YaTeX 1.78 以降は
 (setq tex-pdfview-command "/usr/bin/open -a Skim")
 ```
 
-を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．
 
 ### Evince との連携 (forward and inverse search) {#g214bbe8}
 
 - [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
 
-### Evince との連携 (forward search) → YaTeX 1.78 以降は Evince の forward search に対応しています {#h118b5e5}
+### Evince との連携 (forward search) {#h118b5e5}
 
-YaTeX 1.78 以降は Evince/fwdevince の fwdevince をインストールして
+YaTeX 1.78 以降は Evince/fwdevince をインストールして
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
@@ -1289,11 +1303,11 @@ YaTeX 1.78 以降は Evince/fwdevince の fwdevince をインストールして
 (setq tex-pdfview-command "evince")
 ```
 
-を設定して C-c C-g を入力すれば Evince で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば Evince で forward seasrch ができます．
 
 ### Evince との連携 (inverse search) {#tfced2b6}
 
-Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．<br>
+Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．
 
 ### Okular との連携 (forward search) {#o8772291}
 
@@ -1342,7 +1356,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
           (YaTeX-system cmd "jump-line" 'noask pdir))))))
 ```
 
-を設定して C-c C-g を入力すれば Okular で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば Okular で forward seasrch ができます．
 
 ### zathura との連携 (forward search) {#j4034f6b}
 
@@ -1391,7 +1405,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
           (YaTeX-system cmd "jump-line" 'noask pdir))))))
 ```
 
-を設定して C-c C-g を入力すれば zathura で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば zathura で forward seasrch ができます．
 
 ### qpdfview との連携 (forward search) → YaTeX 1.78.1 以降は qpdfview の forward search に対応しています {#ic7abdb4}
 
@@ -1405,7 +1419,7 @@ YaTeX 1.78.1 以降は
 (setq tex-pdfview-command "qpdfview --unique")
 ```
 
-を設定して C-c C-g を入力すれば qpdfview で forward seasrch ができます．<br>
+を設定して C-c C-g を入力すれば qpdfview で forward seasrch ができます．
 
 ## その他（改造など） {#q5a5c09f}
 
@@ -1420,14 +1434,14 @@ yatexadd.elのYaTeX:includegraphicsの最後を下記のように変更
 
 ### コンパイルプログラムの使い分け {#ga20e87e}
 
-普段は upLaTeX (ptex2pdf) を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．<br>
+普段は upLaTeX (ptex2pdf) を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．
 TeX ソースの先頭行に例えば，
 
 ```
 %#!pdflatex
 ```
 
-と書いておくと、普段は typeset の時に upLaTeX (ptex2pdf) で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
+と書いておくと、普段はタイプセットの時に upLaTeX (ptex2pdf) で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
 
 記述例をいくつかあげると，Windows では、
 
@@ -1473,3 +1487,16 @@ TeX ソースの先頭行に例えば，
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [File #osqaqi27-12106](http://www.sourcepod.com/osqaqi27-12106)
 - [TeX Memo \[Internet Archive\]](http://web.archive.org/web/20100601184838/http://homepages.inf.ed.ac.uk/s0675112/tex_memo.html)
+
+### リリース情報 {#w889e1b2}
+
+[yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．
+
+### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
+
+- [YaTeX Mercurial Repositories](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/)
+    - [コミットログ](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/shortlog/)
+    - [変更点](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/file/tip/yatex.new)
+    - [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
+- [http://twilog.org/hiroseyuuji/search?word=YaTeX](http://twilog.org/hiroseyuuji/search?word=YaTeX)
+- [http://twilog.org/ryseto/search?word=YaTeX](http://twilog.org/ryseto/search?word=YaTeX)
