@@ -47,13 +47,14 @@ deltexlsr コマンドを打ち込めば，$TEXMF/ls-R ファイルが削除さ�
 ### jsclasses による縦組み {#i93cafcb}
 
 古い jclasses には tarticle, tbook などといった縦組み用文書クラスがありますが，これらには問題点があります。
-jsclasses には標準で縦組み対応のクラスファイルがありませんが，工夫次第で縦組みも可能なようです。
+jsclasses には標準で縦組み対応のクラスファイルがありませんが，工夫次第で縦組みも可能なようです。 <!-- 開発者も手が回らないようです。どなたか開発してみませんか？ --> <!-- https://twitter.com/h_okumura/status/591454252431642625 -->
 
 % \[TODO\] ほかの例も集めましょう。
 
 - [upLaTeX + Source Han Sans（源ノ角ゴシック）による縦書き実験](http://doratex.hatenablog.jp/entry/20140803/1407072636)，[ソース例](https://gist.github.com/doraTeX/63e6b3e8637fc8e9bdc4)
-- 質問：[tarticle, tbook で行頭括弧が揃わない](http://tex.stackexchange.com/questions/233736/uplatex-and-line-indentation-tbook)，解答例 [jsarticle を縦書きで使う](https://www.overleaf.com/read/qkvrbgzqrmrv)
+- 質問：[tarticle, tbook で行頭括弧が揃わない](http://tex.stackexchange.com/questions/233736/uplatex-and-line-indentation-tbook)，回答例 [jsarticle を縦書きで使う](https://www.overleaf.com/read/qkvrbgzqrmrv)
 - [LaTeX で「部分的な縦書き」](http://qiita.com/zr_tex8r/items/6f0b88c5838c42241457)
+- [行頭で括弧が揃わないって](http://d.hatena.ne.jp/zrbabbler/20120514/1336952639)，[行頭で括弧が揃うようにする](http://d.hatena.ne.jp/zrbabbler/20120524/1337880639)，[行頭括弧を揃えるパッケージ（bxjaprnind パッケージ）(1)](http://d.hatena.ne.jp/zrbabbler/20120525/1337966128)，[(2)](http://d.hatena.ne.jp/zrbabbler/20120526)
 
 ### 関連リンク {#h5eda15f}
 
