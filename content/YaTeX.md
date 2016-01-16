@@ -46,7 +46,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 ### YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
 
 Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．
-ただし，2016-01-08 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
+ただし，[2016-01-08](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e) 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
 
 Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%s '%s.pdf#src:%d %s'" に修正する必要があります．
 
@@ -113,7 +113,7 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%
 [MELPA](https://melpa.org/) から最新版がインストールできます．
 これからインストールするならば，この方法が一番良いでしょう．
 
-初めて MELPA を使用する場合は，[Getting started](https://melpa.org/#/getting-started) に従って設定をする必要があります．
+初めて MELPA を利用する場合は，[Getting started](https://melpa.org/#/getting-started) に従って設定をする必要があります．
 
 - [https://melpa.org/#/yatex](https://melpa.org/#/yatex)
 
@@ -562,7 +562,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 (setq YaTeX-inhibit-prefix-letter t) を使用してください．
 (setq YaTeX-inhibit-prefix-letter nil) は，非推奨 (deprecated) です．
-t と nil ではキーバインドが異なります．
+t と nil ではキーバインドが異なります（前者だと C-c C-t letter，後者だと C-c t letter になる）．
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
@@ -1407,7 +1407,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 
 を設定して C-c C-g を入力すれば zathura で forward seasrch ができます．
 
-### qpdfview との連携 (forward search) → YaTeX 1.78.1 以降は qpdfview の forward search に対応しています {#ic7abdb4}
+### qpdfview との連携 (forward search) {#c86f086b}
 
 YaTeX 1.78.1 以降は
 
