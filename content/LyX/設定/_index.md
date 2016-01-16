@@ -105,7 +105,7 @@ bxjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 58
+Format 59
 Provides japanese 1
 
 # Input general definitions
@@ -127,7 +127,7 @@ bxjsreport.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new report textclass definition file.
 
 # This style provides japanese features 
-Format 58
+Format 59
 Provides japanese 1
 
 # Input general definitions
@@ -149,7 +149,7 @@ bxjsbook.layout ファイルを新規作成して以下の内容を編集しま�
 # Japanese new book textclass definition file.
 
 # This style provides japanese features 
-Format 58
+Format 59
 Provides japanese 1
 
 # Input general definitions
@@ -171,7 +171,7 @@ ltjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 58
+Format 59
 Provides japanese 1
 
 # Input general definitions
@@ -193,7 +193,7 @@ ltjsbook.layout ファイルを新規作成して以下の内容を編集しま�
 # Japanese new book textclass definition file.
 
 # This style provides japanese features 
-Format 58
+Format 59
 Provides japanese 1
 
 # Input general definitions
@@ -403,8 +403,8 @@ LaTeXフォントエンコーディング: <span style="color:Black;background-c
 タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
 数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]<br>
 CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^20]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真性スモールキャップ体を使う(M)</span>[^21]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 旧様式数字を使う(O)</span>[^22]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^21]<br>
+　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^22]<br>
 
 ***
 
