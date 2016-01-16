@@ -28,9 +28,6 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
@@ -39,7 +36,9 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 ## Skim との連携 {#m16eb5ea}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#hc4659c6}
 
