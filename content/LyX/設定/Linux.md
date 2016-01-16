@@ -27,9 +27,6 @@ PDFコマンドは Evince/fwdevince の fwdevince を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
@@ -49,9 +46,6 @@ PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択し
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>okular --unique "$$o#src:$$n $$f"</ins><br>
@@ -70,9 +64,6 @@ PDFコマンドは [zathura](/zathura/) を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>zathura --synctex-forward $$n:0:$$t $$o</ins><br>
@@ -91,9 +82,6 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$f:$$n:0"</ins><br>
@@ -102,7 +90,9 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ## Evince との連携 {#yfea5c32}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#i9ef9b4c}
 
@@ -110,7 +100,9 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ## Okular との連携 {#ka27016a}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#w6988b67}
 
@@ -118,7 +110,9 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ## zathura との連携 {#z3a17acd}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#md1a5537}
 
@@ -126,7 +120,9 @@ PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
 
 ## qpdfview との連携 {#i536202e}
 
-\[文書(D)\]-\[設定(S)...\]-\[出力\] の \[出力と同期(Y)\] をチェックして\[自製マクロ(U):\]に \synctex=1 を選択もしくは変換子に -synctex=1 を追加します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+
+変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
 ### forward search {#l5055820}
 
