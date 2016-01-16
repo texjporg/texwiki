@@ -707,9 +707,6 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins>[^11]<br>
-日付書式(D): 　<ins>&#x25;x</ins>[^12]<br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span>[^13]<br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
@@ -726,9 +723,6 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 <br>
 
-出力の行幅(L): <ins>65</ins><br>
-日付書式(D): 　<ins>&#x25;x</ins><br>
-書き出し時の上書き(O): <span style="color:Black;background-color:#EEEEEE;">\[許可を求める　　▼\]</span><br>
 順検索<br>
 　DVIコマンド: <br>
 　PDFコマンド: <ins>fwdsumatrapdf.exe $$o $$t $$n</ins><br>
@@ -740,7 +734,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．<br>
 
 ## [SumatraPDF](/SumatraPDF/) との連携 {#a046c6e0}
 
-\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の Synchronize with output をチェックして Custom macro: から \synctex=1 を選択します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
 
 変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 
@@ -803,6 +797,3 @@ SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆�
 [^8]: CheckTeX開始コマンドとオプション
 [^9]: Select whether LyX should output Windows or Cygwin style paths to LaTeX files. Don't change the default unless the TeX engine was not correctly detected at configure time. Warning: Your changes here will not be saved.
 [^10]: クラスが変更された時にクラスオプションを既定値にする
-[^11]: 書き出す平文/LaTeX/SGMLファイルの最大行数。0に設定すると、全ての段落は一行に出力されます。行数が>0ならば、段落行は空白行によって分離されます。
-[^12]: strftime出力の日付書式
-[^13]: 書き出しに際し、既存ファイルが上書きされる場合にどうするか。
