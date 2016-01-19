@@ -348,33 +348,6 @@ Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプ
 Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．<br>
 この場合は Ruby を使用して設定を記述してください．<br>
 
-### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない → TeX Live を使用するまたは dvipdfmx -f dlbase14.map %.dvi を設定してフォントを埋め込む {#t68c551e}
-
-<!-- -[[Issue 364: Embedded PDF viewer doesn't show text in a certain font:https://code.google.com/p/texmaker/issues/detail?id=364]] -->
-<!-- -[[Windows にTexmakerを導入:http://blog.sqr-main.net/2012/06/windows-texmaker.html]] -->
-
-W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．<br>
-TeX Live では表示されます．<br>
-
-```
-dvipdfmx -f dlbase14.map %.dvi
-```
-
-を設定してフォントを埋め込めば表示されるようになります．<br>
-通常はフォントを埋め込まない設定にしておきたい場合は，TeX ファイルのプリアンブルに
-
-```
-\AtBeginDvi{\special{pdf:mapfile dlbase14.map}}
-```
-
-を記述してください．
-
-PDF ファイルのフォントの埋め込みについては
-
-- [dvipdfmx/フォントの設定#フォントの埋め込み設定](</dvipdfmx/フォントの設定/#y935d97b>)
-
-を参照してください．
-
 ## 文字コードの変換 {#y2f21c8a}
 
 Texmaker で使用する文字コードはデフォルトでは UTF-8 です．
