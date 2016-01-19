@@ -184,30 +184,6 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 <!-- 　　　　　　　　　　　　(except virtual machine, X11, RDC)&br; -->
 <!-- - --  -->
 
-### W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されない {#ge309e14}
-
-W32TeX を使用して \usepackage{mathptmx} で \sum を使用した場合に組み込みの PDF ビューアで表示されません．<br>
-TeX Live では表示されます．<br>
-
-```
-dvipdfmx.exe -f dlbase14.map %.dvi
-```
-
-を設定してフォントを埋め込めば表示されるようになります．<br>
-通常はフォントを埋め込まない設定にしておきたい場合は，TeX ファイルのプリアンブルに
-
-```
-\AtBeginDvi{\special{pdf:mapfile dlbase14.map}}
-```
-
-を記述してください．<br>
-
-PDF ファイルのフォントの埋め込みについては
-
-- [dvipdfmx/フォントの設定#フォントの埋め込み設定](</dvipdfmx/フォントの設定/#y935d97b>)
-
-を参照してください．<br>
-
 ## 文字コードの変換 {#v4ac40ab}
 
 TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
