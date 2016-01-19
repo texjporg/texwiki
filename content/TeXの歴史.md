@@ -7,8 +7,8 @@ pukiwiki: "TeXの歴史"
 
 # TeXの歴史
 
-国内／海外のTeX（および関連ソフトウェア）の歴史をまとめてみたいと思います。当時を知る方、ぜひいろんな出来事を教えてください。 <!-- 現段階の海外の歴史は、http://www.xent.com/feb98/0307.html を参考にしました。// link切れ 2009/04/25 -->
-[TeX年表](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/texhist.html)というのもありました。
+国内／海外の TeX（および関連ソフトウェア）の歴史をまとめてみたいと思います。当時を知る方、ぜひいろんな出来事を教えてください。 <!-- 現段階の海外の歴史は、http://www.xent.com/feb98/0307.html を参考にしました。// link切れ 2009/04/25 -->
+[TeX年表](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/texhist.html)というのもありました。 <!-- teTeX → TeX Live の日本のパッケージ統合の話もまとめるとよいかも。 --> <!-- - Japanese TeX User Meeting – Support for Japanese in TeX (Live) – present state and future? --> <!-- https://www.preining.info/blog/2015/11/texconf15-japanese-tex-live/ -->
 
 <!-- 年表における記述ルール（提案） -->
 <!-- ・releaseという言葉の訳語については、書籍・論文などは発表、発刊などをあてる。ソフトウェアについてはリリースとする -->
@@ -117,6 +117,8 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2013</td><td>10</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun6/">『[改訂第6版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://tug.org/tug2013/">TUG 2013</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2014</td><td>11</td><td style="text-align:center"></td><td><a href="http://texconf14.tumblr.com/">TeX ユーザの集い 2014</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2015</td><td>11</td><td style="text-align:center"></td><td><a href="http://texconf15.tumblr.com/">TeX ユーザの集い 2015</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2016</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>TeX Wiki が <a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/">http://oku.edu.mie-u.ac.jp/~okumura/texwiki/</a> から <a href="https://texwiki.texjp.org">https://texwiki.texjp.org</a> へ移転。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
