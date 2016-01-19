@@ -101,11 +101,10 @@ Adobe Acrobat Reader DC では代替フォントとして AdobePiStd が充て�
 欧文 14 書体（Times, Helvetica, Courier 各 4 書体に記号用フォントの
 Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://twitter.com/aminophen/status/568380041106567168 -->
 
-- W32TeX -- dvipdfmx は埋め込まず，pdftex は埋め込む
 - TeX Live -- dvipdfmx も pdftex も埋め込む
+- W32TeX -- dvipdfmx も pdftex も埋め込む
 
-dvipdfmx で Adobe のフォントを埋め込むための map は embase14.map ですが，Adobe
-のフォントは商品ですので，埋め込むためには購入する必要があります．
+Adobe のフォントは商品ですので，埋め込むためには購入する必要があります．
 そこで，多くの方は欧文基本 14 書体を埋め込むために URW のフォントを利用しています．
 W32TeX の dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です．
 
