@@ -9,7 +9,7 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
-奥村晴彦先生が運営なさっていました [TeX Wiki](https://oku.edu.mie-u.ac.jp/~okumura/texwiki/) は、2016 年 1 月 20 日をもって、日本語 TeX 開発コミュニティ上の [https://texwiki.texjp.org/](/) に移転しました。
+[奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました [TeX Wiki](https://oku.edu.mie-u.ac.jp/~okumura/texwiki/) は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
 
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
