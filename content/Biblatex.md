@@ -30,3 +30,4 @@ BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 - [BibLaTeXを出来るだけ普通に使う（実践）](http://plaza.rakuten.co.jp/aquilax/diary/201110180001/)
 - [biblatexとBibTeX](http://shirotakeda.org/blog-ja/?p=2660)
 - [Getting Started with Biblatex](https://www.sharelatex.com/blog/2013/07/31/getting-started-with-biblatex.html)
+- [BibLaTeXガイド](http://mosko.tokyo/post/137513844740/biblatex-guide)
