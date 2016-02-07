@@ -219,7 +219,7 @@ A4 にするには，ジョブオプションの設定でページサイズを�
 
 LaTeX で作成した日本語文書を
 dvips を用いて PDF 化する際，しおりが文字化けしないようにするためには
-[convbkmk](http://www.ctan.org/pkg/convbkmk) を使います。
+[convbkmk](http://www.ctan.org/pkg/convbkmk) または bkmk2uni を使います。
 
 - [http://www.t-lab.opal.ne.jp/tex/uptex.html](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - [convbkmkコマンドの使い方　覚え書き](http://konoyonohana.blog.fc2.com/blog-entry-35.html)
