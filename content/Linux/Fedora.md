@@ -60,8 +60,16 @@ $ sudo dnf install texlive-scheme-full
 日本語関連のパッケージをインストールする場合は
 
 ```
-$ sudo dnf install texlive-collection-langjapanese
+$ sudo dnf install texlive-collection-langcjk
 ```
+
+<!-- Fedoraだとcjkになる -->
+<!-- // あれ，langcjk は langjapanese より大きな collection であって， -->
+<!-- // 日本語だけならそのサブセット langjapanese で事足りるのでは？ -->
+<!-- // Fedora にも collection-langjapanese は存在するし。 -->
+<!-- // https://apps.fedoraproject.org/packages/texlive-collection-langjapanese -->
+
+% ↑ <em>ここ，情報求む</em>
 
 を実行します．
 
