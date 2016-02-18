@@ -215,27 +215,27 @@ guess_input_kanji_encoding = 1
 
 <table>
 <thead>
-<tr><th rowspan="2"> コマンド </th><th rowspan="2"> command_line_encoding </th><th rowspan="2"> コマンドライン入力 </th><th colspan="2"> コンソール入力 </th><th colspan="2"> コンソール出力 </th><th rowspan="2"> 入出力ファイル名 </th><th rowspan="2"> special ファイル名 </th></tr>
-<tr><th> キーボード   </th><th> パイプ    </th><th> スクリーン  </th><th> パイプ      </th></tr>
+<tr><th rowspan="2"> コマンド </th><th rowspan="2"> command_line_encoding </th><th rowspan="2"> コマンドライン<br>入力 </th><th colspan="2"> コンソール入力 </th><th colspan="3"> コンソール出力 </th><th rowspan="2"> 入出力<br>ファイル名 </th><th rowspan="2"> special <br>ファイル名 </th></tr>
+<tr><th> キーボード   </th><th> パイプ    </th><th> スクリーン  </th><th> パイプ      </th><th>(註)</th></tr>
 </thead>
 <tbody>
-<tr><td> p(la)tex.exe </td><td> (無視される)      </td><td> CP932          </td><td> CP932  </td><td> Shift_JIS </td><td>CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> p(la)tex.exe -kanji=utf8 </td><td> (無視される)  </td><td> CP932          </td><td> CP932  </td><td> UTF-8 </td><td> CP932(UTF-8) </td><td> UTF-8 </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> up(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> xe(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td rowspan="2"> dvipdfmx.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> xdvipdfmx.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> xbb.exe       </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
-<tr><td> extractbb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
-<tr><td rowspan="2"> dvips.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> dvi2tty.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= 指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> Unicode        </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> gswin32c.exe<br>gswin64c.exe  </td><td> ---        </td><td> Unicode        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> Unicode </td><td> --- </td></tr>
-<tr><td> GSview  </td><td> ---        </td><td> ???        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> CP932 </td><td> --- </td></tr>
+<tr><td> p(la)tex.exe </td><td> (無視される)      </td><td> CP932          </td><td> CP932  </td><td> Shift_JIS </td><td>CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> p(la)tex.exe -kanji=utf8 </td><td> (無視される)  </td><td> CP932          </td><td> CP932  </td><td> UTF-8 </td><td> CP932(UTF-8) </td><td> UTF-8 </td><td>(A)</td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> up(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td>(A)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xe(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td rowspan="2"> dvipdfmx.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xdvipdfmx.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xbb.exe       </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> --- </td></tr>
+<tr><td> extractbb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> --- </td></tr>
+<tr><td rowspan="2"> dvips.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> dvi2tty.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= <br>指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> Unicode        </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> gswin32c.exe<br>gswin64c.exe  </td><td> ---        </td><td> Unicode        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td></td><td> Unicode </td><td> --- </td></tr>
+<tr><td> GSview  </td><td> ---        </td><td> ???        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td></td><td> CP932 </td><td> --- </td></tr>
 </tbody>
 </table>
 
@@ -246,7 +246,7 @@ guess_input_kanji_encoding = 1
 「special ファイル名」とは，挿入する画像のファイル名など，special 命令によって dvi ファイルに書き込まれるファイル名の文字コードを指します．
 
 「CP932」「Unicode」は文字集合の意味で，「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています．
-スクリーンが「Unicode」「CP932(UTF-8)」の場合，(u)p(la)tex.exe では "-sjis-terminal" オプションにて，その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで，文字化けせずに表示させることができます．
+スクリーンが「Unicode」「CP932(UTF-8)」の場合，(A) (u)p(la)tex.exe では "-sjis-terminal" オプションにて，(B)その他ではリダイレクトやパイプ経由で utf8prin.exe を使用することで，文字化けせずに表示させることができます．
 以下はその例です．
 
 ```
@@ -261,7 +261,7 @@ C:\work>uplatex -sjis-terminal sourcename.tex
 C:\work>dvipdfmx sourcename.dvi 2>&1 | utf8prin
 ```
 
-スクリーンが「Unicode(\*)」のものは，そのままでも文字化けせずに表示させることができます．
+スクリーンが「Unicode(\*)」のもの(C)は，そのままでも文字化けせずに表示させることができます．
 
 up(la)tex を主に使用される方は，texmf.cnf に
 
