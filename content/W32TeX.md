@@ -197,17 +197,15 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 ### 文字コードの自動判別 {#z6946085}
 
 W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．
-texmf.cnf には以下のように設定されています．
+殆どの場合正しく推定がされますが，誤判定することもあります．（[例](/upTeX,upLaTeX/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
+
+自動判定を無効にし，文字コードを指定するには次のようにします．
 
 ```
-%
-% guess input encoding in pTeX and its friends if 1. (W32 only)
-%
-guess_input_kanji_encoding = 1
+ platex --no-guess-input-enc --kanji=utf8 sample.tex
 ```
 
-文字コードの自動判別は失敗することがあります．
-[uplatex -guess-input-enc hoge のように文字コードの自動判別機能を使用してタイプセットすると間違った文字コードで判別されてタイプセットされるパターンが存在する](/upTeX,upLaTeX/#zb472e1c) を参照してください．
+常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は，[texmf.cnf ファイル](</texmf.cnf ファイル/>)を参照．）
 
 ### 漢字入出力対応状況 {#qc9f2e7d}
 
@@ -280,7 +278,7 @@ command_line_encoding.dvips =
 と設定するとよいでしょう．
 
 なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
-文字エンコーディングの齟齬により，ソフトウェアによっては kpathseach 経由で探し出すことに失敗するケースがあるためです．
+文字エンコーディングの齟齬により，ソフトウェアによっては kpathsea 経由で探し出すことに失敗するケースがあるためです．
 また，p(la)tex において special の種類によっては 0x5c を含むファイル名の場合，失敗することがあります．
 この場合も ASCII の範囲で使用してください．( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))
 
