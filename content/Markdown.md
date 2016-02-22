@@ -42,6 +42,14 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
 [markdown-pdf](https://www.npmjs.com/package/markdown-pdf) で Markdown 文書から PDF を生成できます。
 markdown-pdf は Markdown 文書をまず HTML へ変換し，[PhantomJS](http://phantomjs.org/) によりレンダリングし，PDF を生成します。PhantomJS は QtWebKit をベースとしたヘッドレスブラウザです。CSS でスタイル付する事ができます。
 
+[Pandoc](/Pandoc/)によってMarkdownからPDFを直接生成できます。日本語を含んだ文書の場合は、
+
+```
+$ pandoc input.md -o output.pdf --latex-engine=lualatex -V documentclass=ltjarticle
+```
+
+のように、LaTeXエンジンをLuaLaTeXに、ドキュメントクラスをltjsarticleに指定する必要があります。
+
 ### Atom による執筆環境 {#r4f987bf}
 
 Atom は標準で Markdown 文書のリアルタイム・プレビュー機能を備えています。
