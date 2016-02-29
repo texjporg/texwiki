@@ -191,5 +191,5 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
 - [http://standalone.contextgarden.net/](http://standalone.contextgarden.net/)
 - [http://qiita.com/tags/context](http://qiita.com/tags/context)
 - [天地有情](http://konoyonohana.blog.fc2.com/blog-category-1.html)
-- [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)，[(3)](http://abenori.blogspot.jp/2015/11/context3.html)
+- [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)，[(3)](http://abenori.blogspot.jp/2015/11/context3.html)，[(4)](http://abenori.blogspot.fr/2015/12/context-4.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
