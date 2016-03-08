@@ -133,6 +133,8 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 | Biblos |  Windows95/NT  |  bibファイルを公開するためのcgi  |
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール．[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている． |
 | [RubybTeX](http://www.tomilab.net/~tominaga/rubybtex/) | Ruby | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
+| [BibTeX-Ruby](https://github.com/inukshuk/bibtex-ruby) | Ruby | BibTeXを扱うためのRubyライブラリ |
+| [Bibulous](https://nzhagen.github.io/bibulous/) | Python | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
 | [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeXコマンド・クローン．書誌データはYAML形式で書く |
 | [bibtex-spirit](http://home.no/sergiu/bibtex-spirit/) | C++ | BibTeX C++ parser library |
 | [BibtexParser](https://bibtexparser.readthedocs.org/en/latest/) | Python | bibファイル形式をパースするライブラリ |
