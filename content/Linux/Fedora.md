@@ -70,6 +70,8 @@ $ sudo dnf install texlive-collection-langcjk
 <!-- // https://apps.fedoraproject.org/packages/texlive-collection-langjapanese -->
 <!-- // // ↑ 少なくとも上のコメントは「逆」です． -->
 <!-- // // langjapanese を入れれば依存関係で langcjk が入ります． -->
+<!-- // // // 現状だとlangjapaneseは通らないですね -->
+<!-- // // // http://i.imgur.com/xzD5aAP.png -->
 
 % ↑ <em>ここ，情報求む</em>
 
