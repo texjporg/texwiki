@@ -140,17 +140,17 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 
 ## 注意点 {#v6fc9cef}
 
-### Windows 版 の TeX Live, W32TeX において [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325) → \setmainfont{ipam.ttf} を使用する {#ne138062}
+### XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
 
-Windows 版 の TeX Live, W32TeX において XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．<br>
-この場合は \setmainfont{ipam.ttf} を使用すれば OK です．<br>
+XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
+この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
 
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
 
-### W32TeX において XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される → \setmainfont{ipag.ttf} を使用する {#p1bacfda}
+### XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#p1bacfda}
 
-W32TeX において XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．<br>
-この場合は \setmainfont{ipag.ttf} を使用すれば OK です．<br>
+XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
+この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
 
 - [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
 
