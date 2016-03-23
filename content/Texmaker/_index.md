@@ -368,10 +368,9 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 
 ```
 $ strings -a /Applications/texmaker.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
-@executable_path/../Frameworks/libpoppler.??.dylib
 Unknown CID font collection, please report to poppler bugzilla.
 /Users/pascalbrachet/poppler64/share/poppler
-%Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)~
+%Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
 ```
 
 この場合は /Users/pascalbrachet/poppler64/share/poppler が poppler-data を配置するディレクトリになります．<br>
