@@ -275,54 +275,6 @@ kanji-config-updmap ipaex
 ### W32TeX の場合 {#y0816396}
 
 デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．<br>
-フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．<br>
-
-***
-
-```
-C:.
-└─w32tex
-    └─share
-        └─texmf-dist
-            └─fonts
-                └─map
-                    └─dvipdfmx
-                        └─base
-                            └─cid-x.map
-```
-
-***
-
-C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．
-
-***
-
-```
-%%
-%% upTeX examples
-%%
-```
-
-```
-urml     UniJIS-UTF16-H   ipaexm.ttf
-urmlv    UniJIS-UTF16-V   ipaexm.ttf
-ugbm     UniJIS-UTF16-H   ipaexg.ttf
-ugbmv    UniJIS-UTF16-V   ipaexg.ttf
-uprml-h  UniJIS-UTF16-H   ipaexm.ttf
-uprml-v  UniJIS-UTF16-V   ipaexm.ttf
-upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
-upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
-uprml-hq UniJIS-UCS2-H    ipaexm.ttf
-upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
-```
-
-***
-
-cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
-
-```
-kpsewhich -progname=dvipdfmx -format=map cid-x.map
-```
 
 ## 組み込みの PDF ビューアで日本語を表示するために使用される代替フォント {#u9344b03}
 
