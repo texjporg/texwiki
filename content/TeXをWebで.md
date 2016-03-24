@@ -43,6 +43,7 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
 - [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
 - [Overleaf で日本語を使用する方法](http://doratex.hatenablog.jp/entry/20150903/1441252705)
+- [2016年3月22日 - にっき♪](http://abenori.blogspot.jp/2016/03/blog-post_82.html)
 
 ## TeX を Web 上で提供する方法 {#xdac6c3a}
 
