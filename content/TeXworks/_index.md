@@ -102,55 +102,6 @@ kanji-config-updmap ipaex
 
 デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
 
-フォントが埋め込まれていない場合は C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map の設定を確認します．
-
-***
-
-```
-C:.
-└─w32tex
-    └─share
-        └─texmf-dist
-            └─fonts
-                └─map
-                    └─dvipdfmx
-                        └─base
-                            └─cid-x.map
-```
-
-***
-
-C:\w32tex\share\texmf-dist\fonts\map\dvipdfmx\base\cid-x.map が以下のように記述されていれば IPAexフォントが埋め込まれます．
-
-***
-
-```
-%%
-%% upTeX examples
-%%
-```
-
-```
-urml     UniJIS-UTF16-H   ipaexm.ttf
-urmlv    UniJIS-UTF16-V   ipaexm.ttf
-ugbm     UniJIS-UTF16-H   ipaexg.ttf
-ugbmv    UniJIS-UTF16-V   ipaexg.ttf
-uprml-h  UniJIS-UTF16-H   ipaexm.ttf
-uprml-v  UniJIS-UTF16-V   ipaexm.ttf
-upgbm-h  UniJIS-UTF16-H   ipaexg.ttf
-upgbm-v  UniJIS-UTF16-V   ipaexg.ttf
-uprml-hq UniJIS-UCS2-H    ipaexm.ttf
-upgbm-hq UniJIS-UCS2-H    ipaexg.ttf
-```
-
-***
-
-cid-x.map の場所は Windows PowerShell またはコマンド プロンプトから以下のコマンドを実行すれば検索できます．
-
-```
-kpsewhich -progname=dvipdfmx -format=map cid-x.map
-```
-
 ## 不具合 {#v0f00822}
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
@@ -376,6 +327,5 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
     - [アプリケーション（TeXworks）について](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10105181875)
     - [texについて質問です。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1289463912)
     - [至急でお願いします。 「SyncTexデータがありません」となってしまい困っています...](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1089798695)
-    - [texworksに日本語フォントを埋め込みたいんですが、解説サイトを見るとcid-x.mapというファイルが必要みたいなんですが、これが見つかりません。どうすればいいでしょうか。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1496913364)
 
 [^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
