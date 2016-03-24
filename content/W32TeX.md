@@ -97,15 +97,15 @@ W32TeX には，最小インストール / 標準インストール / フルイ�
 
 #### 簡易インストーラの取得 {#wa3b57f2}
 
-[texinst2015.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2015.zip) を展開してください．
+[texinst2016.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinst2016.zip) を展開してください．
 展開した場所がインストールフォルダとなります．
 以下では，C:\w32tex 内に展開されたとします．
 
-Windows PowerShell またはコマンド プロンプトを起動し，C:\w32tex に移動後，texinst2015.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
+Windows PowerShell またはコマンド プロンプトを起動し，C:\w32tex に移動後，texinst2016.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
 
 ```
 C:\Users>cd C:\w32tex
-C:\w32tex>texinst2015 C:\w32tex\download
+C:\w32tex>texinst2016 C:\w32tex\download
 ```
 
 ファイルが展開されたら終了です．
@@ -189,7 +189,7 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 
 ### 直接アップデート {#r88b7452}
 
-アップデートされたファイルをダウンロードし，texinst2015.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．
+アップデートされたファイルをダウンロードし，texinst2016.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．
 ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](http://w32tex.org/ChangeLog) を参照してください．
 
 ## 注意点 {#maff36c0}
