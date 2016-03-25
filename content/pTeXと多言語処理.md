@@ -309,7 +309,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 
 で7ビット化したthai.ldfをコピーします。
 
-その後，$TEXMF/fonts/map/dvipdfmx/base/cid-x.map に
+その後，$TEXMF/fonts/map/dvipdfmx/base/kanjix.map に
 
 ```
 rdbtt dbtt dbtt.pfb
@@ -440,9 +440,9 @@ foo.pdf を開くとタイ語と日本語が共存しているはずです。
 PXbase パッケージを使用すれば upTeX で中国語（簡化字・繁體字の両方）と韓国語を簡単に扱えます。
 PXbase パッケージは TeX Live, W32TeX に含まれています．
 
-"sample.map(for dvipdfmx)" を参考に，$TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map に次のように追記しておきます。
+"sample.map(for dvipdfmx)" を参考に，$TEXMFLOCAL/fonts/map/dvipdfmx/base/kanjix.map に次のように追記しておきます。
 
-#### $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map への追記 {#u719ef74}
+#### $TEXMFLOCAL/fonts/map/dvipdfmx/base/kanjix.map への追記 {#u719ef74}
 
 ***
 
