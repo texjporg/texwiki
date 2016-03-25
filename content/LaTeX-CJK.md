@@ -424,7 +424,7 @@ dvipdfmx で TFM と PDF ファイル内のフォントとの対応を指定す�
 多数ありますが、その大部分は dvipdfm と共有なので、dvipdfm でも理解できる
 8-bit フォントしか扱えません。<br>
 そこで、この対応は dvipdfmx 専用のマップファイルである
-cid-x.map に書きます。(Details will be added later.)<br>
+kanjix.map に書きます。(Details will be added later.)<br>
 
 #### 実在しない OpenType (CFF, CID-keyed) フォントの場合 {#ef120abe}
 
@@ -463,7 +463,7 @@ dvipdfmx は以下のフォントを「知って」います。
 <!-- 2003年11月25日以降のバージョンでは、これで正しい筈です。 -->
 <!-- // http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/cid_basefont.h を見て確認しました (m__m) -->
 
-そこで、これらのフォント名を cid-x.map のエントリー
+そこで、これらのフォント名を kanjix.map のエントリー
 
 > \[TFM 名ステム\]@\[SFD 名\]@ \[CMap 名\] \[フォントファイル名\]
 
@@ -533,7 +533,7 @@ TrueType フォントを埋め込まずに使用する場合、原則として�
 
 #### TrueType フォントの場合 {#q2b385eb}
 
-CMap テーブルを使用して TTF フォントにアクセスするには、cid-x.map のエントリー
+CMap テーブルを使用して TTF フォントにアクセスするには、kanjix.map のエントリー
 
 > \[TFM 名ステム\]@\[SFD 名\]@ unicode \[フォントファイル名\] \[オプション\]
 
@@ -603,8 +603,8 @@ CMap テーブルを使用して TTF フォントにアクセスするには、c
 アーカイヴされていますが、インストールせずに試してみるには空の作業用ディレクトリ
 （フォルダー）を用意し、すべてのファイルをそこにコピーします。<br>
 更にサンプル内の
-dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるには cid-x.map に
-改名、インストールして使用する場合はその内容をシステムの cid-x.map に追加します。<br>
+dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるには kanjix.map に
+改名、インストールして使用する場合はその内容をシステムの kanjix.map に追加します。<br>
 
 1. [UTF-8 で書かれた TeX ファイルで CJK の各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
     - これまでに判明している問題点:
@@ -620,7 +620,7 @@ dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるに
         - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（[cvs 版 Fri Jan 19 10:57:22 2007 UTC](http://cvs.ktug.org/viewcvs/dvipdfmx/src/fontmap.c?r1=1.33&r2=1.34), [svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
         - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
             の二つのファイルに分けないと、SIP の文字を文書の最初に使えない。
-        - 商用フォントを使う設定になっている。これは、cid-x.map を書き換えて、[HAN NOM FONTs](http://vietunicode.sourceforge.net/fonts/fonts_hannom.html) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
+        - 商用フォントを使う設定になっている。これは、kanjix.map を書き換えて、[HAN NOM FONTs](http://vietunicode.sourceforge.net/fonts/fonts_hannom.html) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
         - 手持ちの材料で、適当にでっちあげたサンプルの文書には、その後、簡単な
             Web 検索しただけで、明らかな誤り2箇所と、幾多の要改善箇所が見つかっている。
         - CJK 4.6.0 では、プリアンブルにこのサンプルにあるような
