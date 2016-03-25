@@ -618,9 +618,9 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- 記述内容に差がある部分もあると思います。 -->
 <!-- 時間が許せば，前半と後半とをひとまとめにしたいと思っております。 -->
 <!--  -->
-<!-- ptetex3 の updmap では CJK フォントも対象になっているのですか。 -->
+<!-- TeX Live の updmap では CJK フォントも対象になっているのですか。 -->
 <!-- W32TeX では updmap は CJK フォント以外のみに対応しています。 -->
-<!-- ところで，ptetex3 では updmap での（特に Mac OS X での） -->
+<!-- ところで，TeX Live では updmap での（特に Mac OS X での） -->
 <!-- 中国語や韓国語のフォントの埋め込み制御はどのようになっているのでしょうか？ -->
 <!-- 上の記述では日本語フォントの埋め込み制御しか無いようですが。 -->
 
@@ -631,8 +631,8 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- otf-cjmr-{h,v} のエンコードの表記は， -->
 <!-- やはり揃えておいたほうが誤解が少ないように思います。 -->
 <!-- （私は長い間 Identity-V は縦書きの文字に置き換えられると思っていました。） -->
-<!-- ptetex3 の updmap については，以下が詳しいです。 -->
-<!-- http://tutimura.ath.cx/ptetex/?%A5%D5%A5%A9%A5%F3%A5%C8%A4%CE%BD%B8%C3%E6%B4%C9%CD%FD -->
+<!-- TeX Live の updmap については，以下が詳しいです。 -->
+<!-- http://tug.org/texlive/updmap-kanji.html -->
 <!-- 中韓のフォントの埋め込み制御はできないようですが， -->
 <!-- 埋め込み制御は dvipdfm に直接オプションで指定するのがよいと思います。 -->
 
@@ -669,13 +669,13 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- map ファイルの代表的な例を挙げているのも，各個人がこの例を参考にして -->
 <!-- 独自の map ファイルを作って使って頂ければ幸いと考えたからです。 -->
 <!-- しかし，最もよく使う埋め込み制御をデフォルトの map ファイルとして updmap や -->
-<!-- cid-x.mapなどの標準 map ファイルに設定しておくのが便利だとは考えます。 -->
-<!-- （20th Sep., 2006 現在では W32TeX 付属の -->
-<!--   $TEXMFMAIN/fonts/map/dvipdfmx/base/cid-x.map に -->
+<!-- kanjix.map などの標準 map ファイルに設定しておくのが便利だとは考えます。 -->
+<!-- （12th Mar., 2016 現在では W32TeX 付属の -->
+<!--   $TEXMFMAIN/fonts/map/dvipdfmx/base/kanjix.map に -->
 <!--   中国語や韓国語用の virtual font に対する記述はありますが， -->
 <!--   Microsoft Windows に標準ではインストールされていないフォントを指定してあるので， -->
 <!--   中国語や韓国語に対しては実質使い物になりません。 -->
-<!--   ptetex3 ではどうでしょうか？） -->
+<!--   TeX Live ではどうでしょうか？） -->
 <!--  -->
 <!-- この議論，このページの下の方か TeX Q & A の方へ移した方がよくありませんか？ -->
 
@@ -684,7 +684,7 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- それはそうでも，文字の向きが変わってしまうのには気づきませんでした。 -->
 <!-- Adobe-Japan1-6 と書かれている気持ちもわかりました。 -->
 <!-- どうもありがとうございました。 -->
-<!-- ptetex3 では，OpenType フォントが前提になってるようですし， -->
+<!-- TeX Live では，OpenType フォントが前提になってるようですし， -->
 <!-- xdvi との連携もあるので Identity-{H,V} のほうが都合よさそうです。 -->
 <!-- ちなみに，中韓は非埋め込みの設定だけが準備されています。 -->
 
@@ -698,16 +698,16 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- （Microsoft Windows ならば，システムにフォントをインストールしておいても良いでしょう。） -->
 <!--  -->
 <!-- $TEXMF/dvipdfmx/config/dvipdfmx.cfg に OTF パッケージ用の map ファイル -->
-<!-- （例えば $TEXMFLOCAL/fonts/map/dvipdfmx/local/cid-x-local.map）のファイル名を -->
-<!-- f cid-x-local.map -->
+<!-- （例えば $TEXMFLOCAL/fonts/map/dvipdfmx/local/kanjix-local.map）のファイル名を -->
+<!-- f kanjix-local.map -->
 <!-- のように追記した上で， -->
 <!-- 次のような OTF パッケージ用の map ファイル -->
-<!-- （ここでは $TEXMFLOCAL/fonts/map/dvipdfmx/local/cid-x-local.map）を -->
+<!-- （ここでは $TEXMFLOCAL/fonts/map/dvipdfmx/local/kanjix-local.map）を -->
 <!-- $TEXMFLOCAL/fonts/map/dvipdfmx// 以下に作成します。 -->
 <!--  -->
-<!-- （または {$TEXMFMAIN,$TEXMFDIST}/fonts/map/dvipdfmx/base/cid-x.map を -->
-<!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map にコピーした上で， -->
-<!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/cid-x.map の最後に -->
+<!-- （または {$TEXMFMAIN,$TEXMFDIST}/fonts/map/dvipdfmx/base/kanjix.map を -->
+<!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/kanjix.map にコピーした上で， -->
+<!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/kanjix.map の最後に -->
 <!-- 次のような内容を直接追記しても良いでしょう。） -->
 
 - [https://github.com/norbusan/jfontmaps](https://github.com/norbusan/jfontmaps)
