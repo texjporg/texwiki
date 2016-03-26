@@ -46,6 +46,7 @@ xeCJK 3.3.0 で 丸1「①」(U+2460) が表示されません．<br>
 
 ```
 \documentclass{scrartcl}
+\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \begin{document}
@@ -57,6 +58,7 @@ ABCDEあいうえお①
 
 ```
 \documentclass{scrartcl}
+\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \xeCJKDeclareCharClass{CJK}{`①}
@@ -70,6 +72,7 @@ ABCDEあいうえお①
 #### IPAexMincho, IPAexGothic の場合 {#af21d789}
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{IPAexMincho}
 \setCJKsansfont{IPAexGothic}
@@ -107,6 +110,7 @@ kpathsea: Appending font creation commands to missfont.log.
 のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \setCJKsansfont{ipaexg.ttf}
@@ -149,6 +153,7 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 #### MS Mincho, MS Gothic の場合 {#u1a0c13b}
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{MS Mincho}
 \setCJKsansfont{MS Gothic}
@@ -195,10 +200,14 @@ ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 #### ZXjatype 0.6 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
 
+- [https://twitter.com/zr_tex8r/status/571372508261122048](https://twitter.com/zr_tex8r/status/571372508261122048)
+- [https://www.overleaf.com/read/drxbbhxpbyfm](https://www.overleaf.com/read/drxbbhxpbyfm)
+
 ZXjatype 0.6 で 丸1「①」(U+2460) が表示されません．<br>
 
 ```
 \documentclass[xelatex]{bxjsarticle}
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \begin{document}
@@ -210,12 +219,23 @@ ABCDEあいうえお①
 
 ```
 \documentclass[xelatex]{bxjsarticle}
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \xeCJKDeclareCharClass{CJK}{`①}
 \begin{document}
 ABCDEあいうえお①
 \end{document}
+```
+
+丸1「①」(U+2460) 以外にも表示できない文字がある場合は以下のように設定すればいいようです。
+
+```
+\xeCJKDeclareCharClass{CJK}{
+  `⓪, `①->`⑳, `㉑->`㉟, `㊱->`㊿,
+  `⓿, `❶->`❿, `⓫->`⓴,
+  `Ⅰ->`Ⅻ, `ⅰ->`ⅻ, `☃, `⛄, `⛇
+}
 ```
 
 #### [BXjsclsを使ったXeLaTeXのときだけparagraphの前にblacksquareが現れない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1704) {#k0a25489}
@@ -234,10 +254,11 @@ ABCDEあいうえお①
 
 ```
 \documentclass[xelatex]{bxjsarticle}
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
-\setjamainfont{ipam.ttf}
-\setjasansfont{ipag.ttf}
-\setjamonofont{ipag.ttf}
+\setjamainfont{ipaexm.ttf}
+\setjasansfont{ipaexg.ttf}
+\setjamonofont{ipaexg.ttf}
 \begin{document}
 
 吾輩は猫である。名前はまだ無い。
@@ -263,6 +284,7 @@ xelatex neko.tex
 #### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{IPAexMincho}
 \setjasansfont{IPAexGothic}
@@ -300,6 +322,7 @@ kpathsea: Appending font creation commands to missfont.log.
 のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \setjasansfont{ipaexg.ttf}
@@ -358,6 +381,7 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 #### MS Mincho, MS Gothic の場合 {#teab5b7f}
 
 ```
+\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{MS Mincho}
 \setjasansfont{MS Gothic}
