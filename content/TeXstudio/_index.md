@@ -22,8 +22,9 @@ PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用し�
 
 ### Webサイト {#w233c0c1}
 
-- [TeXstudio - A LaTeX Editor | SourceForge.net](http://sourceforge.net/projects/texstudio/)
-- [TeXstudio - A LaTeX Editor / Wiki / Home](http://sourceforge.net/p/texstudio/wiki/)
+- [TeXstudio](http://www.texstudio.org/)
+- [TeXstudio - A LaTeX Editor | SourceForge.net](https://sourceforge.net/projects/texstudio/)
+- [TeXstudio - A LaTeX Editor / Wiki / Home](https://sourceforge.net/p/texstudio/wiki/)
 
 ### 動作環境 {#e7cc7bd5}
 
@@ -38,8 +39,8 @@ QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)
 ### リリース情報 {#xc0de645}
 
 - [http://www.texstudio.org/#news](http://www.texstudio.org/#news)
-- [http://sourceforge.net/p/texstudio/news/](http://sourceforge.net/p/texstudio/news/)
-- [http://sourceforge.net/p/texstudio/hg/ref/default/tags/](http://sourceforge.net/p/texstudio/hg/ref/default/tags/)
+- [https://sourceforge.net/p/texstudio/news/](https://sourceforge.net/p/texstudio/news/)
+- [https://sourceforge.net/p/texstudio/hg/ref/default/tags/](https://sourceforge.net/p/texstudio/hg/ref/default/tags/)
 - [https://twitter.com/texstudio](https://twitter.com/texstudio)
 
 を参照．
@@ -59,10 +60,9 @@ TeXstudio/インストール を参照．
 ### ChangeLog {#u7f0ea72}
 
 - [http://hg.code.sf.net/p/texstudio/hg/](http://hg.code.sf.net/p/texstudio/hg/)
-- [http://sourceforge.net/p/texstudio/hg/ci/tip/log/](http://sourceforge.net/p/texstudio/hg/ci/tip/log/)
+- [https://sourceforge.net/p/texstudio/hg/ci/tip/log/](https://sourceforge.net/p/texstudio/hg/ci/tip/log/)
 - [http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt)
-- [http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt](http://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt)
-    <!-- -http://www.ohloh.net/p/texstudio/commits -->
+- [https://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt](https://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt)
 
 <!-- **日本語化 [#ibfc5135] -->
 <!-- -[[TeXstudioの日本語化:http://anastashia.blog.shinobi.jp/Entry/14/]] -->
