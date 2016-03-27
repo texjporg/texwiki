@@ -18,6 +18,7 @@ pukiwiki: "vimtex"
 vimtex は Vim の LaTeX プラグインです．<br>
 
 - [https://github.com/lervag/vimtex](https://github.com/lervag/vimtex)
+- [【メモ】vimtexでLuaTeXの環境構築](http://rago1975.blog.shinobi.jp/linux_app/0072)
 
 ### License {#h515d5d7}
 
