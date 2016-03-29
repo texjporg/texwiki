@@ -283,12 +283,15 @@ BXJS クラスでは使用されるエンジンに応じて「正しい設定」
 
 - 文書中で指定する絶対の長さ（単位付数値）について単位に“true”をつける必要がある．（付けないと mag 設定により拡大縮小されてしまう．）
 - mag 設定は LaTeX ではほとんど用いられないため，実際に用いられた時にそれを想定していないパッケージが誤動作する．[^3]
+- 新しい（v0.87 以降の）LuaTeX エンジンでは，そもそも mag 設定のサポートが廃止された．
 
 BXJS クラスでは“版面拡大”について mag 設定以外の他の実現方法を提供していて，クラスオプション magstyle でそれを選択できます．
 
 - magstyle=mag（既定）： JS クラスと同様に，“版面拡大”のために mag 設定を用います．
 - magstyle=real： mag 設定を一切用いず，代わりに，全てのページレイアウトのパラメタの値を実際にスケールさせた値に置き換えます．
-- magstyle=xreal： real と同様の処理をし，さらにオプティカルサイズの補正のために NFSS にパッチを当てます．
+- magstyle=xreal： real と同様の処理をし，さらにオプティカルサイズの補正のために NFSS にパッチを当てます
+
+※ magstyle の既定値は mag ですが，例外的に，v0.87 以降の LuaTeX では mag がサポートされないので代わりに xreal が既定値となります．
 
 #### 和文間空白，和欧文間空白の設定 {#fc1b6217}
 
@@ -319,6 +322,17 @@ BXJS クラスでは使用するエンジンの種類をオプションとして
  \documentclass[autodetect-engine,dvipdfmx-if-dvi,ja=standard,
      a4paper,9pt,twocolumn]{bxjsreport}
 ```
+
+#### XeTeX の ActualText 生成機能を利用する {#pe4c22be}
+
+XeLaTeX エンジンを利用する場合に，ActualText 生成機能（\XeTeXgenerateactualtext=1、詳しくは[XeTeX](/XeTeX/)の記事を参照）を有効にしたい場合は，クラスオプションに precisetext を指定します[^4]．（v1.1b 以降が必要．）
+
+```
+% ActualText生成を有効にする
+\documentclass[xelatex,a4paper,ja=standard,precisetext]{bxjsarticle}
+```
+
+※\XeTeXgenerateactualtext に対応した新しい XeTeX 以外のエンジンではこのオプションは（警告付きで）無視されます．
 
 ### 注意事項 {#x2bf3267}
 
@@ -386,3 +400,4 @@ LuaLaTeX 用標準設定でも fontspec が使われるため，同じ理由で�
 [^1]: この時点では“標準設定”が未完了のため，\jQ 命令は使用できません．
 [^2]: 文書情報の文字列中に一部の特殊文字が含まれる場合には相変わらず必要になる．
 [^3]: 例えば hyperref の用紙サイズ機能が誤動作する．なお，BXJS クラスではその機能を無効化して問題を回避している．
+[^4]: この設定を既定にするか否かについては現在検討中らしい．
