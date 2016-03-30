@@ -55,6 +55,7 @@ Windows
 
 EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
 
+- [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
 - [Notepad++ EUC-JP対応版](https://bitbucket.org/yttkans/notepad-euc-jp)
 - [Notepad++ 派生ビルド](http://freesftys.lv9.org/app/npp/)
 
@@ -298,6 +299,7 @@ EUC-JP に対応しています．公式サイトで提供されているバイ�
 ## プラグイン (Plugins) {#k2155ff2}
 
 - [http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central](http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central)
+- [sftys's notepad++](http://freesftys.lv9.org/app/npp/)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
