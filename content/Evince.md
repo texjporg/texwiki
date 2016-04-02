@@ -49,12 +49,26 @@ Windows, OS X, Linux
 - [Apps/Evince/Downloads - GNOME Wiki!](https://wiki.gnome.org/Apps/Evince/Downloads)
 
 公式サイトの Windows 版の Evince 2.32.0.145 で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))
-自分で Evince をビルドして使用する場合はフォントを埋め込まなくても日本語を表示することが可能です．
-Evince は [MinGW](/MinGW/) でビルド可能です．
+libpoppler の DLL を fontconfig を使用した版に差し替えると豆腐化を解消できるそうです。(→[Windows 版 Evince，libpoppler の dll を fontconfig を使用した版に差し替えたら豆腐化を解消できた](https://twitter.com/TeeEfuShi/status/716176921399205888))
+
+Windows 版 Evince は MSYS2 の pacman でインストールすることもできます．MSYS2 からインストールした場合はフォントを埋め込まなくても日本語を表示することができます．
+
+64-bit Evince の場合は
+
+```
+pacman -S mingw-w64-x86_64-evince mingw-w64-x86_64-gstreamer mingw-w64-x86_64-gst-plugins-base
+```
+
+32-bit Evince の場合は
+
+```
+pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plugins-base
+```
 
 ### OS X {#y8d21820}
 
-- [/trunk/dports/gnome/evince/Portfile](http://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
+- [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/evince.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/evince.rb)
+- [https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile](https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
 
 ### Arch Linux {#eb51c4f9}
 
@@ -112,7 +126,7 @@ $ vi ~/.config/fontconfig/fonts.conf
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-<dir>/usr/local/texlive/2015/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/local/texlive/2016/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
