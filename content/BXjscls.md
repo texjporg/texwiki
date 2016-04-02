@@ -334,6 +334,28 @@ XeLaTeX エンジンを利用する場合に，ActualText 生成機能（\XeTeXg
 
 ※\XeTeXgenerateactualtext に対応した新しい XeTeX 以外のエンジンではこのオプションは（警告付きで）無視されます．
 
+#### Pandoc モード {#f45df5c0}
+
+[Pandoc](/Pandoc/) （文書形式変換ツール）のデフォルトの LaTeX 用テンプレートを利用して他形式（Markdown 等）の日本語文書を LaTeX 形式（および PDF 形式）に変換する場合，BXJS クラスの「Pandoc モード」を利用すると適切な出力が得られます．この場合，文書クラスのオプションに pandoc を指定し，エンジンと和文ドライバの指定（ja=...）を省略します．[^5]（v1.1a 以降が必要です．）
+
+bxjsarticle クラスで Pandoc モードを指定した例を示します．
+
+```
+\documentclass[pandoc,jafont=ipaex,a5paper]{bxjsarticle}
+```
+
+この指定を生成するための Pandoc のオプション指定は以下のようになります．
+
+```
+pandoc sample.md -o sample.pdf --latex-engine=lualatex
+  -V papersize=a5 -V documentclass=bxjsarticle
+  -V classoption=pandoc -V classoption=jafont=ipaex
+```
+
+Pandoc は本来は (u)pLaTeX をサポートしませんが，BXJS クラスの Pandoc モードを用いると，正常な（コンパイルが正しく通る）(u)pLaTeX 文書に変換することができます．詳しくは以下の記事を参照してください．
+
+- [BXjscls がまた新しくなった（v1.1a）](http://d.hatena.ne.jp/zrbabbler/20160228/1456622107)
+
 ### 注意事項 {#x2bf3267}
 
 #### JSクラスのオプションで使用不可能なもの {#g072eb66}
@@ -401,3 +423,4 @@ LuaLaTeX 用標準設定でも fontspec が使われるため，同じ理由で�
 [^2]: 文書情報の文字列中に一部の特殊文字が含まれる場合には相変わらず必要になる．
 [^3]: 例えば hyperref の用紙サイズ機能が誤動作する．なお，BXJS クラスではその機能を無効化して問題を回避している．
 [^4]: この設定を既定にするか否かについては現在検討中らしい．
+[^5]: ドライバオプションは dvipdfmx-if-dvi が既定となりますが，これは明示指定で上書きできます．
