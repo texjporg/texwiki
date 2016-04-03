@@ -38,6 +38,20 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 - pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
 
+MSYS2 の pacman でインストールすることもできます。
+
+64-bit Poppler の場合は
+
+```
+pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
+```
+
+32-bit Poppler の場合は
+
+```
+pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
+```
+
 #### OS X {#l3620b9b}
 
 MacPorts を利用したインストールが可能です。
