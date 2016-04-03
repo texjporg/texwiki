@@ -42,7 +42,8 @@ OS X
 
 ## CotEditor で LaTeX {#acb0f7fd}
 
-- [CotEditor用Texスクリプト](http://ubi-lab.naist.jp/~ara/?p=1498&lang=ja)
+- [CotEditor用Texスクリプト](http://ubi-lab.naist.jp/~ara/wp-content/uploads/2014/04/TEX2PDF4CotEditor.zip)
+    <!-- http://webcache.googleusercontent.com/search?q=cache:GzOQqqKuMz0J:ubi-lab.naist.jp/~ara/%3Fm%3D201404%26lang%3Dja+&cd=7&hl=ja&ct=clnk&gl=jp -->
     <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
     <!-- **[[CotEditorでLaTeXファイルをタイプセットするスクリプト:http://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] [#nbc61989] -->
     <!-- **[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] [#yaef2f72] -->
