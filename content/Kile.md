@@ -15,17 +15,17 @@ pukiwiki: "Kile"
 
 Kile は LaTeX の統合環境です．<br>
 SyncTeX に対応しています．<br>
-エディタ部分は [Kate](http://kate-editor.org/) を使用しています．<br>
+エディタ部分は [Kate](https://kate-editor.org/) を使用しています．<br>
 
 - [Kile - an Integrated LaTeX Environment](http://kile.sourceforge.net/)
 
 ### 動作環境 {#fc95c26d}
 
-KDE
+Windows, Linux
 
 ### License {#bd454552}
 
-[GPLv2](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/COPYING)
+[GPLv2](https://quickgit.kde.org/?p=kile.git&a=blob&f=COPYING)
 
 ### リリース情報 {#qfb7e12c}
 
@@ -33,11 +33,8 @@ KDE
 
 ### ChangeLog {#k30d45b0}
 
-- [Kile - Overview - KDE Projects](https://projects.kde.org/projects/extragear/office/kile)
-    - [Activity](https://projects.kde.org/projects/extragear/office/kile/activity)
-- [Repository](https://projects.kde.org/projects/extragear/office/kile/repository)
-    - [ChangeLog](https://projects.kde.org/projects/extragear/office/kile/repository/revisions/master/entry/ChangeLog)
-- [http://quickgit.kde.org/?p=kile.git](http://quickgit.kde.org/?p=kile.git)
+- [KDE QuickGit :: kile.git/summary](https://quickgit.kde.org/?p=kile.git)
+    - [https://quickgit.kde.org/?p=kile.git&a=shortlog](https://quickgit.kde.org/?p=kile.git&a=shortlog)
 
 ## 設定 {#g12179be}
 
