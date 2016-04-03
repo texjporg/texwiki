@@ -29,7 +29,7 @@ KDE
 
 ### ライセンス {#qbc60c11}
 
-[GPLv2](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/COPYING)
+[GPLv2](https://quickgit.kde.org/?p=okular.git&a=blob&f=COPYING)
 
 ### リリース情報 {#v4dc0489}
 
@@ -37,7 +37,7 @@ KDE
 
 ### ChangeLog {#h7a9328d}
 
-- [Activity](https://projects.kde.org/projects/kde/kdegraphics/okular/activity)
+- [https://quickgit.kde.org/?p=okular.git&a=shortlog](https://quickgit.kde.org/?p=okular.git&a=shortlog)
 
 ### 派生版 {#m771d62f}
 
@@ -61,7 +61,7 @@ KDE
 
 ### コマンドラインオプション {#md2d6a7f}
 
-- [https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/shell/main.cpp](https://projects.kde.org/projects/kde/kdegraphics/okular/repository/revisions/master/entry/shell/main.cpp)
+- [https://quickgit.kde.org/?p=okular.git&a=blob&f=shell%2Fmain.cpp](https://quickgit.kde.org/?p=okular.git&a=blob&f=shell%2Fmain.cpp)
 
 ```
 $ okular --help
