@@ -22,7 +22,7 @@ SyncTeX に対応しています．<br>
 
 ### 動作環境 {#a52783ff}
 
-GNOME
+Windows, Linux
 
 ### License {#a34a81c6}
 
@@ -38,6 +38,24 @@ GNOME
     - [コミットログ](https://github.com/GNOME/latexila/commits/master)
 
 <!-- *不具合 [#o7b20b21] -->
+
+## インストール {#b3035bdc}
+
+### Windows {#xe7a69b8}
+
+Windows 版 LaTeXila は MSYS2 の pacman でインストールできます．
+
+64-bit LaTeXila の場合は
+
+```
+pacman -S mingw-w64-x86_64-latexila
+```
+
+32-bit LaTeXila の場合は
+
+```
+pacman -S mingw-w64-i686-latexila
+```
 
 ## Build Tool {#t1320044}
 
