@@ -24,5 +24,4 @@ Windows
 
 ### Visual Studio Community で LaTeX {#l46cfc43}
 
-- [Visual Studio で TeX を編集する話](http://mimumimu.net/blog/2014/12/16/visual-studio-%E3%81%A7-tex-%E3%82%92%E7%B7%A8%E9%9B%86%E3%81%99%E3%82%8B%E8%A9%B1/)
-- [Visual Studio で TeX 編集](http://www.slideshare.net/SatoshiMimura/visual-studio-tex)
+- [TeX Support for Visual Studio](http://mimumimu.net/beta/#VsTeXProj)
