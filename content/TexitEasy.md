@@ -77,7 +77,6 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 
 ```
 $ strings -a /Applications/texiteasy.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
-@executable_path/../Frameworks/libpoppler.??.dylib
 /usr/local/share/poppler/ColorProfiles/
 /usr/local/share/poppler
 Unknown CID font collection, please report to poppler bugzilla.
