@@ -30,7 +30,7 @@ Notepad++ は
     - [Contributors](https://notepad-plus-plus.org/contributors/)
     - [twitter](https://twitter.com/notepad_plus)
     - [facebook](https://www.facebook.com/Notepad.plus.plus)
-- [Notepad++ 開発サイト](https://github.com/donho/notepad-plus-plus)
+- [Notepad++ 開発サイト](https://github.com/notepad-plus-plus/notepad-plus-plus)
     - [twitter](https://twitter.com/ho_don/)
     - [facebook](https://www.facebook.com/D0N.H0)
 
@@ -40,7 +40,7 @@ Windows
 
 ### License {#p3f91661}
 
-[GPLv3, GPLv2](https://github.com/donho/notepad-plus-plus/blob/master/LICENSE)
+[GPLv3, GPLv2](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
 
 ### リリース情報 {#d2ceb628}
 
@@ -49,11 +49,11 @@ Windows
 ### ChangeLog {#q10cf331}
 
 - [New features and fixed bugs](http://notepad-plus-plus.org/download/)
-- [コミットログ](https://github.com/donho/notepad-plus-plus/commits/master)
+- [コミットログ](https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master)
 
 ### 派生版 {#l02b5ab5}
 
-EUC-JP に対応しています．公式サイトで提供されているバイナリは Shift_JIS には対応していますが，EUC-JP には対応していません．
+Notepad++ の派生版 で EUC-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが，EUC-JP には対応していません．
 
 - [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
 - [Notepad++ EUC-JP対応版](https://bitbucket.org/yttkans/notepad-euc-jp)
@@ -368,8 +368,8 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 - [Setting Up LaTeX With Notepad++ (PDF)](http://www.cas.mcmaster.ca/~kahl/CS1FC3/2011/musaTex.pdf)
 - [DDE Command Line Tools](http://www.robvanderwoude.com/ddecommandline.php)
     - [CMCDDE](http://www.robvanderwoude.com/ddecommandline.php#CMCDDE)
-- [Notepad++ Plugins / Discussion / NppExec:con_saveto &lt;file&gt; : &lt;encoding&gt;](http://sourceforge.net/p/npp-plugins/discussion/672146/thread/87237314)
+- [Notepad++ Plugins / Discussion / NppExec:con_saveto &lt;file&gt; : &lt;encoding&gt;](https://sourceforge.net/p/npp-plugins/discussion/672146/thread/87237314)
 - [【エディタ】Notepad++のインストール後の設定とか、その辺。](http://osyamonnnnn.dispatch-site.com/wordpress/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/notepad_plusplus/)
 - [Notepad++のNppExecの出力からタグジャンプする設定方法](http://d.hatena.ne.jp/Koonies/20110504/NppExec_TagJump)
-- [The comment style in TEX language](http://sourceforge.net/p/notepad-plus/discussion/331754/thread/3bcdddda)
-- [A about TEX Project manage](http://sourceforge.net/p/notepad-plus/discussion/331753/thread/90de4bf9)
+- [The comment style in TEX language](https://sourceforge.net/p/notepad-plus/discussion/331754/thread/3bcdddda)
+- [A about TEX Project manage](https://sourceforge.net/p/notepad-plus/discussion/331753/thread/90de4bf9)
