@@ -374,20 +374,19 @@ Poppler は font configuration で win32 を選択した場合，日本語のフ
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます。
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します。
 
-### Bug {#nbe31c73}
+### Issues {#nbe31c73}
 
-- [poppler does not show fl ligature](https://bugs.freedesktop.org/show_bug.cgi?id=73291) -> Fixed
+- [https://bugs.freedesktop.org/buglist.cgi?bug_status=__open__&content=&no_redirect=1&order=changeddate%20DESC%2Cpriority%2Cbug_severity&product=poppler&query_based_on=&query_format=specific](https://bugs.freedesktop.org/buglist.cgi?bug_status=__open__&content=&no_redirect=1&order=changeddate%20DESC%2Cpriority%2Cbug_severity&product=poppler&query_based_on=&query_format=specific)
+- [https://bugs.freedesktop.org/buglist.cgi?bug_status=__open__&content=&no_redirect=1&order=Importance&product=poppler&query_format=specific](https://bugs.freedesktop.org/buglist.cgi?bug_status=__open__&content=&no_redirect=1&order=Importance&product=poppler&query_format=specific)
 
 ### 関連リンク {#m3ac74dd}
 
-- [Poppler: Displaying PDF Files with Qt](http://doc.qt.digia.com/qq/qq27-poppler.html)
+- TwitterSearch:Poppler, TwitterSearch.en:Poppler, TwitterSearch.ja:Poppler
 - [Poppler - DenkiYagi](http://terurou.hateblo.jp/category/Poppler)
     - [Poppler 0.22.5の.NETバインディングを作成する](http://terurou.hateblo.jp/entry/2013/07/09/160937)
     - [MinGWでPoppler 0.22.5をビルド](http://terurou.hateblo.jp/entry/2013/07/09/160937)
-- [PDF Rendering on the Web](http://syntensity.com/static/poppler.html)
 - [Popplerについてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130112/1358002227)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
-- [poppler on Windows 奮闘記](https://sites.google.com/site/kaihatsublog/poppler-on-windows-funtou-ki)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
 
 #### License {#i424d155}
