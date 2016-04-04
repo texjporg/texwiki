@@ -17,7 +17,7 @@ qpdfview はタブ切り替え型のドキュメントビューアです．
 PDF ファイルや PS ファイルが表示できます．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
-ファイルの自動更新機能 (Auto-refresh) はデフォルトでは無効になっているので設定で有効にする必要があります．
+ファイルの自動更新機能はデフォルトでは無効になっているので設定で有効にする必要があります．
 
 - [qpdfview](https://launchpad.net/qpdfview)
 
@@ -62,33 +62,30 @@ Linux
 
 ## 設定 {#uc8afff9}
 
-### Auto-refresh {#na403c1a}
+### 自動更新 {#na403c1a}
 
-\[Edit\]-\[Settings...\]-\[Behaviour\]
+\[編集(E)\] &gt; \[設定...\] &gt; \[挙動(B)\]
 
-Auto-refresh の項目をチェックするとファイルを自動的に更新してくれます．
+自動更新の項目をチェックするとファイルを自動的に更新してくれます．
 
-***
-
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
-　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
-　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
-　　　　Track recently used:　　　　　　　　　☐<br>
-　　　　Keep recently closed:　　　　　　　　 ☐<br>
-　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
-　　　　Restore bookmarks:　　　　　　　　　☐<br>
-　　　　Restore per-file settings:　　　　　　☐<br>
-　　　　Save database interval:　　　　　　　<ins>\[5 min　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Synchronize presentation:　　　　　☐<br>
-　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Synchronize outline view:　　　　　☐<br>
-　　　　Zoom factor:　　　　　　　　　　　　　<ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-　　　　Source editor:　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
-
-***
+> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾鍵(M)　\]</ins></span><br>
+>
+> 　　URLを開く:　　　　　　　　　　　　　　　 ☐<br>
+> 　　自動更新:　　　　　　　　　　　　　　　　☑<br>
+> 　　直近に使われたものを追跡:　　　　　☐<br>
+> 　　直近に閉じられたものを保持:　　　　☐<br>
+> 　　タブを戻す:　　　　　　　　　　　　　　　☐<br>
+> 　　しおりを復帰させる;　　　　　　　　　　☐<br>
+> 　　ファイル毎の設定を復帰させる:　　　☐<br>
+> 　　データベース保存間隔:　　　　　　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　プレゼンテーションを同期:　　　　　　☐<br>
+> 　　プレゼンテーションスクリーン:　　　　 <ins>\[既定　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　概要表示を同期:　　　　　　　　　　　 ☐<br>
+> 　　拡大因子:　　　　　　　　　　　　　　　 <ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　強調する時間:　　　　　　　　　　　　　<ins>\[5000 ミリ秒　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　強調表示の色:　　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　　註釈の色:　　　　　　　　　　　　　　　 <ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　　ソースエディタ:　　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
 
 ## 使い方 {#n3df728b}
 
@@ -123,10 +120,10 @@ $ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
 
 ### inverse search {#n500afd3}
 
-\[Edit\]-\[Settings...\]-\[Behaviour\]
+\[編集(E)\] &gt; \[設定...\] &gt; \[挙動(B)\]
 
 [TeXstudio](/TeXstudio/) の場合は
-Source editor の項目に
+ソースエディタの項目に
 
 ```
 texstudio "%1" -line %2
@@ -134,26 +131,23 @@ texstudio "%1" -line %2
 
 を設定します．
 
-***
-
-　　<strong>\[　Behavior　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　Graphics　\]\[　Interface　\]\[　Shortcuts　\]\[　Modifiers　\]</ins></span><br>
-　　　　Open URL:　　　　　　　　　　　　　　　☐<br>
-　　　　Auto-refresh:　　　　　　　　　　　　　☑<br>
-　　　　Track recently used:　　　　　　　　　☐<br>
-　　　　Keep recently closed:　　　　　　　　 ☐<br>
-　　　　Restore tabs:　　　　　　　　　　　　　☐<br>
-　　　　Restore bookmarks:　　　　　　　　　☐<br>
-　　　　Restore per-file settings:　　　　　　☐<br>
-　　　　Save database interval:　　　　　　　<ins>\[5 min　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Synchronize presentation:　　　　　☐<br>
-　　　　Presentation screen:　　　　　　　　<ins>\[Default　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Synchronize outline view:　　　　　☐<br>
-　　　　Zoom factor:　　　　　　　　　　　　　<ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Highlight duration:　　　　　　　　　　<ins>\[5000 ms　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-　　　　Highlight color:　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-　　　　Annotation color:　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-　　　　Source editor:　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
-
-***
+> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾鍵(M)　\]</ins></span><br>
+>
+> 　　URLを開く:　　　　　　　　　　　　　　　 ☐<br>
+> 　　自動更新:　　　　　　　　　　　　　　　　☑<br>
+> 　　直近に使われたものを追跡:　　　　　☐<br>
+> 　　直近に閉じられたものを保持:　　　　☐<br>
+> 　　タブを戻す:　　　　　　　　　　　　　　　☐<br>
+> 　　しおりを復帰させる;　　　　　　　　　　☐<br>
+> 　　ファイル毎の設定を復帰させる:　　　☐<br>
+> 　　データベース保存間隔:　　　　　　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　プレゼンテーションを同期:　　　　　　☐<br>
+> 　　プレゼンテーションスクリーン:　　　　 <ins>\[既定　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　概要表示を同期:　　　　　　　　　　　 ☐<br>
+> 　　拡大因子:　　　　　　　　　　　　　　　 <ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　強調する時間:　　　　　　　　　　　　　<ins>\[5000 ミリ秒　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　　強調表示の色:　　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　　註釈の色:　　　　　　　　　　　　　　　 <ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　　ソースエディタ:　　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
 
 qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
