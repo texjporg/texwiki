@@ -309,15 +309,15 @@ $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.4.15.4mingw491_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.4.15.4mingw491_32lib'
+../libtool: line 6013: cd: C:QtQt5.6.05.6mingw492_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.6.05.6mingw492_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-1.00/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.4.1\5.4\mingw491_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.4.1/5.4/mingw491_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.6.0\5.6\mingw492_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.6.0/5.6/mingw492_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
@@ -411,8 +411,8 @@ src/util/ffw.c に
 $ mkdir build
 $ cd build
 $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
--- The C compiler identification is GNU 4.8.1
--- The CXX compiler identification is GNU 4.8.1
+-- The C compiler identification is GNU 4.9.3
+-- The CXX compiler identification is GNU 4.9.3
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe
 -- Check for working C compiler: C:/MinGW/bin/gcc.exe -- works
 -- Detecting C compiler ABI info
@@ -423,7 +423,7 @@ $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DENABLE_SVG=ON
 -- Detecting CXX compiler ABI info - done
 -- Found PkgConfig: C:/MinGW/bin/pkg-config.exe (found version "0.28")
 -- checking for module 'poppler>=0.20.0'
---   found poppler, version 0.32.0
+--   found poppler, version 0.42.0
 -- checking for module 'libfontforge>=2.0.0'
 --   found libfontforge, version 2.0.0
 -- Performing Test CXX0X_SUPPORT
@@ -569,12 +569,7 @@ $ sudo apt-get install pdf2htmlex
 
 #### CentOS {#q04cd947}
 
-CentOS 6.3 でもビルドできるようです．→ [pdf2htmlEXのrelaxedcpp11ブランチがBoostなしでbuildできるようになった。](https://twitter.com/h_okumura/status/245305278906638336)
-
-<!-- ↑あれ，これは私のツイートですね。私はCentOS 6.3でbuildしました。 -->
-<!--  -->
-<!-- ↑うっかり OS X とはやとちりしてしまいました． -->
-<!-- 返信どうもありがとうございました． -->
+- [How to install pdf2htmlEX in CentOS 7](http://www.khmer.pw/?p=57)
 
 ## 使い方 {#cc3ae41e}
 
