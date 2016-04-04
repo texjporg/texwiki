@@ -7,7 +7,7 @@ pukiwiki: "Hunspell"
 
 # Hunspell
 
-## [Hunspell](http://hunspell.sourceforge.net/) {#g6159d85}
+## [Hunspell](http://hunspell.github.io/) {#g6159d85}
 
 HunspellはTeXに対応したスペルチェッカーです。もともとは、MySpellをベースにしたハンガリー語用のスペルチェッカーでしたが、OpenOffice.orgに採用され、広く普及しています。辞書はUTF-8にエンコードされています。
 
@@ -28,13 +28,13 @@ HunspellはTeXに対応したスペルチェッカーです。もともとは、
 ### 辞書 {#q4b7f294}
 
 - [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/)
-- [http://sourceforge.net/projects/lyxwininstaller/files/hunspell/](http://sourceforge.net/projects/lyxwininstaller/files/hunspell/)
+- [https://sourceforge.net/projects/lyxwininstaller/files/hunspell/](https://sourceforge.net/projects/lyxwininstaller/files/hunspell/)
 
 などから入手できます．
 
 ### 派生版 {#z489a458}
 
-- [NHunspell](http://sourceforge.net/projects/nhunspell/)
+- [NHunspell](https://sourceforge.net/projects/nhunspell/)
 - [Typo.js](https://github.com/cfinke/Typo.js)
 
 ## 使い方 {#x189dc32}
@@ -100,12 +100,10 @@ export WORDLIST=$HOME/.hunspell_personal_dictionary
 
 #### MinGW {#deab3978}
 
-<!-- $ curl -R -L -O http://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/hunspell-1.3.3.tar.gz -->
-
 ```
-$ curl -R -L -O http://download.sourceforge.net/hunspell/hunspell-1.3.3.tar.gz
-$ tar xvf hunspell-1.3.3.tar.gz
-$ pushd hunspell-1.3.3
+$ curl -LO https://github.com/hunspell/hunspell/archive/v1.3.4.tar.gz
+$ tar xvf v1.3.4.tar.gz
+$ pushd hunspell-1.3.4
 $ ./configure --prefix=/mingw
 $ make
 $ make install
