@@ -116,11 +116,10 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 <!-- -[[Git for Windows:http://msysgit.github.io/]] をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します。 -->
 
-- [GTK+ Download: Windows (32-bit)](http://www.gtk.org/download/win32.php) から
+- [http://ftp.gnome.org/pub/gnome/binaries/win32/glib/](http://ftp.gnome.org/pub/gnome/binaries/win32/glib/) から GLib の Run-time
+    <!-- -http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/ から gettext-runtime の Run-time -->
 
-- GLib の Run-time
-    <!-- - -gettext-runtime の Run-time -->
-    - pkg-config の Tool
+- [http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/](http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/) から pkg-config の Tool
 
 をダウンロードして，展開後 bin フォルダーにある
 
@@ -254,9 +253,9 @@ CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用で�
 ```
 
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.32.0.tar.xz
-$ tar xvf poppler-0.32.0.tar.xz
-$ pushd poppler-0.32.0
+$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.42.0.tar.xz
+$ tar xvf poppler-0.42.0.tar.xz
+$ pushd poppler-0.42.0
 ```
 
 ***
@@ -264,7 +263,7 @@ $ pushd poppler-0.32.0
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)
 
 ```
-$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.5.0/5.5/mingw492_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.5.0/5.5/mingw492_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.5.0/5.5/mingw492_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.5.0/5.5/mingw492_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
