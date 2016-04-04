@@ -585,9 +585,9 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 
 ## 関連リンク {#me536d1a}
 
+- TwitterSearch:dvipdfmx, TwitterSearch.en:dvipdfmx, TwitterSearch.ja:dvipdfmx
 - [Unofficial LaTeX graphics drivers - 概要 \[Puszcza\]](http://puszcza.gnu.org.ua/projects/latexfmxdef)
 - [Newest &#39;dvipdfmx&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/dvipdfmx)
-- [dvipdfmx - MyTeXpert](http://mytexpert.osdn.jp/index.php?dvipdfmx)
 - [「dvipdfmx」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=dvipdfmx)
 - [PXchfon パッケージ ～pLaTeX文書のフォントを簡単に変更～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxchfon.html)
 - [dvipdfmx : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvipdfmx)
