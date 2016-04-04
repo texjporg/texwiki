@@ -17,7 +17,7 @@ TeX Live と並んで国際的に広く使われていますが，日本語 pTeX
 
 - [MiKTeX Project Page](http://miktex.org/)
     - [MiKTeX Blog - All about MiKTeX development and packaging.](http://blog.miktex.org/)
-- [http://sourceforge.net/projects/miktex/](http://sourceforge.net/projects/miktex/)
+- [https://sourceforge.net/projects/miktex/](https://sourceforge.net/projects/miktex/)
 
 ***
 
@@ -78,9 +78,9 @@ MiKTeX には [Ghostscript](/Ghostscript/) が含まれていますが日本語�
 - [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
 - [TexnicCenter2.0の日本語使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=794)
 
-#### ChangeLog {#o3eda5f2}
+#### Building MiKTeX {#o3eda5f2}
 
-- [http://sourceforge.net/p/miktex/code/HEAD/log/](http://sourceforge.net/p/miktex/code/HEAD/log/)
+- [http://miktex.org/sources](http://miktex.org/sources)
 
 #### ミラーサイト {#xfbee989}
 
