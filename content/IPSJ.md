@@ -53,7 +53,6 @@ pukiwiki: "IPSJ"
 ### 関連リンク {#xd2bfe1e}
 
 - [情報処理学会のLaTeXファイルをコンパイル](http://d.akiroom.com/2013-02/ipsj-latex-compile/)
-- [IPSJのLatexスタイルファイルとlistings.styの共存問題の回避策](https://www.facebook.com/photo.php?pid=114445681&l=421cd76d8f&id=100000489726394)
 - [ipsj.cls で uplatex → NG](http://uep.ipe.media.kyoto-u.ac.jp/ipsj-cls-%E3%81%A7-uplatex-ng/)
 - [（情報処理学会論文誌の投稿に関する）LaTeX による論文作成のガイド（第6版）](https://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/ipsj-old/sample.pdf)
 - [情報処理学会論文誌等を執筆時にdvipdfmxでlandscapeしなくて困った人が読むエントリ](http://written.4403.biz/archives/2009/02/dvipdfmxlandscape.html)
