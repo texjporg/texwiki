@@ -36,7 +36,6 @@ $ yaourt -S texlive-dummy
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
-- [TeX Live/Linux - MyTeXpert](http://mytexpert.osdn.jp/index.php?TeX%20Live%2FLinux)
 - [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
 
 通常は texlive-langjapanese と texlive-most をインストールします．
