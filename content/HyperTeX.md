@@ -9,14 +9,40 @@ pukiwiki: "HyperTeX"
 
 ## HyperTeX {#la40905a}
 
-HyperTeX は dvi ファイル中に簡単なタグを [\special 命令](</special 命令/>)で入れておくとハイパージャンプができるというものです．
+HyperTeX は DVI ファイル中に簡単なタグを [\special 命令](</special 命令/>)で入れておくと HTML と同様のハイパージャンプができるというものです．
+出力は HTML か PDF になると思われます．
+Postscript (dvips) では HyperTeX の機能を十分に発揮することが出来ないでしょう（対応するビューアーがないなどで）．
+
 詳細は次のリンクをたどってください．
 
 - [HyperTeX FAQ](http://www.arxiv.org/hypertex/)
 
-LaTeX2e では [hyperref](/hyperref/) パッケージを使うのが標準的な方法ですが，このページで
-HyperTeX の基本仕様をすべて実現する簡単なマクロを挙げておきます．これを
-myhyper.sty のような名前で保存し，スタイルファイル（パッケージ）として取り込んでください．
+LaTeX2e では [hyperref](/hyperref/) パッケージを使うのが標準的な方法です。
+
+### HyperTeX の原理 {#b19a1880}
+
+原理は簡単で TeX の \special 命令の中に先頭に html を付けて次のようにします．
+
+```
+\special{html:<a name = "ラベル">}
+  ラベルを付けられる要素をここに記述する．
+\special{html:</a>}
+```
+
+上記の name の場合はラベルを付ける事が出来ます．参照したい場合は
+
+```
+\special{html:<a href = "ラベル">}
+  参照したい要素
+\special{html:</a>}
+```
+
+として href を使うことになります．
+
+### HyperTeX の簡単なマクロ {#de74dc13}
+
+このページで HyperTeX の基本仕様をすべて実現する簡単なマクロを挙げておきます．
+これを myhyper.sty のような名前で保存し，スタイルファイル（パッケージ）として取り込んでください．
 \href の第1引数（飛び先のURL）には，TeX の特殊文字 ~ や # が入るので，ちょっとトリックを使ってあります．
 
 ```
@@ -111,6 +137,6 @@ pdftitle=\@title
 }
 ```
 
-## 関連リンク {#x293be61}
-
-- [HyperTeX - MyTeXpert](http://mytexpert.osdn.jp/index.php?HyperTeX)
+<!-- MyTeXpert のページ -->
+<!-- -https://mytexpert.osdn.jp/index.php?HyperTeX  -->
+<!-- がアクセスできなくなったため移植。 -->
