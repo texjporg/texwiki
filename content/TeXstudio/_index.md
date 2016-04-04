@@ -87,7 +87,7 @@ export PATH=$PATH:/Library/TeX/texbin
 
 ## 不具合 {#k30ccccc}
 
-- [TeXstudio - A LaTeX Editor / Bugs](http://sourceforge.net/p/texstudio/bugs/)
+- [TeXstudio - A LaTeX Editor / Bugs](https://sourceforge.net/p/texstudio/bugs/)
 
 ### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
 
@@ -288,8 +288,9 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 
 ## 関連リンク {#b0ba1b9b}
 
+- TwitterSearch:TeXstudio, TwitterSearch.en:TeXstudio, TwitterSearch.ja:TeXstudio
 - [Newest &#39;texstudio&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texstudio)
-- [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](http://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
+- [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](https://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
 - [http://www.okomeda.net/?TeXStudio](http://www.okomeda.net/?TeXStudio)
 - [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
