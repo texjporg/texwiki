@@ -311,6 +311,8 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 ### 関連リンク {#udd48b1b}
 
+- TwitterSearch:TeX Live, TwitterSearch.en:TeX Live, TwitterSearch.ja:TeX Live
+- TwitterSearch:TeXLive, TwitterSearch.en:TeXLive, TwitterSearch.ja:TeXLive
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
 
