@@ -9,7 +9,7 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
-[奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました [TeX Wiki](https://oku.edu.mie-u.ac.jp/~okumura/texwiki/) は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
+[奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
 
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
@@ -20,7 +20,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 「トラブルを解決したい！」という場合は，<strong>「[TeX フォーラム](http://oku.edu.mie-u.ac.jp/tex/)」で質問する前に「[よくある質問](</よくある質問/>)」を確認したり，「[エラーに遭遇したときは](#d1cf258f)」「[それでも困ったときは](#t6f648b9)」を参照する</strong>とすぐに答えが見つかるかもしれません．
 
 - 主な項目を分類した一覧は [サイトマップ](</サイトマップ/>) にあります．
-- TeX Wiki の全体ページ一覧は [ページの一覧](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?cmd=list) にあります．
+- TeX Wiki の全体ページ一覧は [ページの一覧](</ページ一覧/>) にあります．
 
 TeX Wiki は誰でも編集できます．
 
