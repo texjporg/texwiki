@@ -54,7 +54,7 @@ Texmaker/インストール を参照．
     <!-- - -[[Issue 420:	SumatraPDF forward search:https://code.google.com/p/texmaker/issues/detail?id=420]] → Done -->
     <!-- - -[[Issue 473:	Subdirectories in # parameter:https://code.google.com/p/texmaker/issues/detail?id=473]] -->
 
-### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう → Karabiner で Backslash が優先されるようにキーバインドを変更する {#u2a90df7}
+### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない → Karabiner で Backslash が優先されるようにキーバインドを変更する {#u2a90df7}
 
 <!-- -[[Issue 104:	Apple JIS keyword issue:https://code.google.com/p/texmaker/issues/detail?id=104]] -->
 <!-- -[[ただし，''MacOSX SnowLeopardの環境では，半角のバックスラッシュが入力できず，半角の￥になってしまうという問題があります．''もっとも原始的な(笑)コピペよりもう少しましな方法として，次のようにすることでとりあえず回避できます．&br;▷ ことえりの「環境設定」の「入力文字」の「JISキーボードの￥キーで入力する文字」を「バックスラッシュ」に設定&br;▷ ことえりの辞書に「読み：半角バックスラッシュ→単語：半角バックスラッシュ」として登録&br;▷ ひらがな（全角入力）モードで「￥」キーを入力&br;変換確定のためreturnキーを一度叩く必要はあるものの入力は可能です．ただし''必ず全角入力モードでないとだめ''です．半角英数モードだと，当然ながら半角の￥マークになります．とりあえず，対処療法ですが，目的は達成できます（笑）．ただその弊害として全角の￥記号が打てなくなりますが，こちらは「option+Y」で入力できます．:http://www.sip-ac.jp/sip/tex02.html]] -->
@@ -313,7 +313,7 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
         DLL Name: zlib1.dll
 ```
 
-- C:\MinGW\bin と C:\Qt\Qt5.4.1\5.4\mingw491_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+- C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
 ### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) を使用する {#i1222dd8}
 
@@ -478,8 +478,8 @@ C:.
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <!-- local.conf file to configure local font access -->
 <fontconfig>
-<dir>c:/texlive/2015/texmf-dist/fonts/opentype</dir>
-<dir>c:/texlive/2015/texmf-dist/fonts/truetype</dir>
+<dir>c:/texlive/2016/texmf-dist/fonts/opentype</dir>
+<dir>c:/texlive/2016/texmf-dist/fonts/truetype</dir>
 <dir>c:/Windows/Fonts</dir>
 
 <match target="pattern">
@@ -523,6 +523,7 @@ C:.
 
 ## 関連リンク {#n5a9b95f}
 
+- TwitterSearch:Texmaker, TwitterSearch.en:Texmaker, TwitterSearch.ja:Texmaker
 - [http://fossies.org/dox/texmaker/](http://fossies.org/dox/texmaker/)
 - [Newest &#39;texmaker&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texmaker)
     - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
