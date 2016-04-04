@@ -15,7 +15,7 @@ gnuplot はオープンソースのグラフ描画プログラムです．
 <strong>公式サイト</strong>
 
 - [http://gnuplot.info/](http://gnuplot.info/)
-- [http://sourceforge.net/projects/gnuplot/](http://sourceforge.net/projects/gnuplot/)
+- [https://sourceforge.net/projects/gnuplot/](https://sourceforge.net/projects/gnuplot/)
 
 よく勘違いされますが，gnuplot は [GNU](http://www.gnu.org/)（グニュー）プロジェクトのソフトではありません．
 頭3文字が同じになったのは単なる偶然のようです．
