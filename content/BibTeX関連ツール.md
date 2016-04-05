@@ -9,7 +9,11 @@ pukiwiki: "BibTeX関連ツール"
 
 ## BibTeX 関連ツール {#v6a96b9b}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+BibTeX を便利に使うためのソフトウェアの一覧です．
+
+***
+
+***
 
 ## BibTeX 用の文献管理ソフト {#w7ec403f}
 
@@ -141,8 +145,8 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 
 ## LaTeX パッケージの利用 {#baf51e15}
 
-LaTeX における参考文献管理を強化するパッケージに [BibLaTeX](/Biblatex/) があります．<br>
-BibLaTeX はバックエンドとして biber や BibTeX を使用します．<br>
+LaTeX における参考文献管理を強化するパッケージに [BibLaTeX](/Biblatex/) があります．
+BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 
 ## 関連リンク {#j1aaae63}
 
