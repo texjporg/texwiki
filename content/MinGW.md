@@ -7,9 +7,9 @@ pukiwiki: "MinGW"
 
 # MinGW
 
-## [MinGW](http://www.mingw.org/)/[MinGW-W64](http://mingw-w64.sourceforge.net/) {#c9002cc1}
+## [MinGW](http://www.mingw.org/) {#c9002cc1}
 
-MinGW は "Minimalist GNU for Windows" の略語で，Microsoft Windows アプリケーションを開発するための最小限の開発環境を提供します．MinGW-W64 は 64-bit Windows と 32-bit Windows のネイティブバイナリを出力するためのソフトウェアです．
+MinGW は "Minimalist GNU for Windows" の略語で，Microsoft Windows アプリケーションを開発するための最小限の開発環境を提供します．
 
 <strong>公式サイト</strong>
 
@@ -17,7 +17,7 @@ MinGW は "Minimalist GNU for Windows" の略語で，Microsoft Windows アプ�
 
 TeX 関連プログラムには C, C++ で書かれたプログラムがあります．
 MinGW を使用すれば [TeX Live](</TeX Live/>) の最新の開発版を自分でビルドして使用することができます．
-64-bit Windows ネイティブバイナリを出力したい場合は MinGW-W64 を使用します．
+64-bit バイナリをビルドしたい場合は [MSYS2](/MSYS2/) を使用します．
 
 ***
 
@@ -25,35 +25,9 @@ MinGW を使用すれば [TeX Live](</TeX Live/>) の最新の開発版を自分
 
 ### インストーラ {#x50e277a}
 
-- MinGW
-    - [http://sourceforge.net/projects/mingw/files/Installer/](http://sourceforge.net/projects/mingw/files/Installer/)
-- MinGW-W64
-    - [http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/](http://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/)
+- [https://sourceforge.net/projects/mingw/files/Installer/](https://sourceforge.net/projects/mingw/files/Installer/)
 
 ## MSYS {#o619b52f}
-
-### MSYS2 {#x1532c23}
-
-- [http://msys2.github.io/](http://msys2.github.io/)
-- [https://github.com/msys2](https://github.com/msys2)
-- [http://sourceforge.net/projects/msys2/](http://sourceforge.net/projects/msys2/)
-- [https://github.com/Alexpux/MSYS2-packages](https://github.com/Alexpux/MSYS2-packages)
-
-#### LANG {#w1a07eeb}
-
-MSYS2 では LANG が ja_JP.UTF-8 になっています．
-
-```
-$ echo $LANG
-ja_JP.UTF-8
-```
-
-#### インストール {#sb6496d0}
-
-- [MSYS2 installer](http://msys2.github.io/)
-- [http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/](http://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
-
-### MSYS1 {#pb3bd48b}
 
 - [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
 
@@ -236,7 +210,7 @@ fixwwps.exe       pdftex.exe             wovp2ovf.exe
 fmtutil-sys.exe   pdftosrc.exe
 ```
 
-64-bit Windows のネイティブバイナリをビルドしたい場合は [MinGW-W64](http://mingw-w64.sourceforge.net/) を使うとビルドできるかもしれません．
+64-bit バイナリをビルドしたい場合は [MSYS2](/MSYS2/) を使うとビルドできます．
 
 ## MinGW 関連リンク {#e987affa}
 
@@ -244,27 +218,14 @@ fmtutil-sys.exe   pdftosrc.exe
 - [MinGW-builds](http://sourceforge.net/projects/mingwbuilds/)
 - [News - nuwen.net](http://nuwen.net/)
     - [MinGW Distro - nuwen.net](http://nuwen.net/mingw.html)
-- [mingw-w64-dgn](http://sourceforge.net/projects/mingw-w64-dgn/)
 - [MXE (M cross environment)](http://mxe.cc/)
 - [MinGW | Qt Wiki | Qt Project](http://qt-project.org/wiki/MinGW)
-- [MinGW 64 bit | Qt Wiki | Qt Developer Network](http://qt-project.org/wiki/MinGW-64-bit)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
 - [C::B advanced](http://sourceforge.net/projects/cbadvanced/)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
 - [http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/](http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
-- [クロスGCC(on Linux Host for Targeting Mingw-w64 Windows)のビルド](http://sideseeker.hateblo.jp/entry/2013/10/06/072748)
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
-- [MinGW (64bit) + MSYS 環境の構築 (1)](http://www.devlog.alt-area.org/?p=2802), [(2)](http://www.devlog.alt-area.org/?p=2900)
 - [#if defined(\__MINGW32_\_) &amp;&amp; !defined(\__MINGW64_VERSION_MAJOR)](https://github.com/joyent/libuv/pull/1296)
-
-## MSYS2 関連リンク {#i2a5ff0e}
-
-- [http://qiita.com/tags/msys](http://qiita.com/tags/msys)
-- [http://sourceforge.jp/projects/msys2-crossgcc/](http://sourceforge.jp/projects/msys2-crossgcc/)
-    - [http://sourceforge.jp/projects/msys2-crossgcc/howto/install](http://sourceforge.jp/projects/msys2-crossgcc/howto/install)
-- [MSYS2を試してみる](http://verifiedby.me/adiary/055)
-- [MSYS2＋VagrantによるWindowsでのUNIX環境](https://tamosblog.wordpress.com/2014/12/25/msys2_vagrant_1/)
-- [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
