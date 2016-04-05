@@ -8,17 +8,19 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-## [Texmaker](http://www.xm1math.net/texmaker/) → かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する {#x838d855}
+## [Texmaker](http://www.xm1math.net/texmaker/) {#x838d855}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 <div style="clear:both"></div>
 
 ## Texmaker とは {#y02c99e4}
 
-Texmaker は，LaTeX エディタ (統合環境) です．<br>
-SyncTeX がサポートされています．<br>
-Texmaker のデフォルトの文字コードは UTF-8 です．<br>
+Texmaker は，LaTeX エディタ (統合環境) です．
+SyncTeX がサポートされています．
+Texmaker のデフォルトの文字コードは UTF-8 です．
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
     - [User manual](http://www.xm1math.net/texmaker/doc.html)
@@ -26,7 +28,7 @@ Texmaker のデフォルトの文字コードは UTF-8 です．<br>
 
 ### 動作環境 {#tf7debca}
 
-Windows, OS X, Linux<br>
+Windows, OS X, Linux
 
 ### License {#l7d7100c}
 
@@ -54,130 +56,104 @@ Texmaker/インストール を参照．
     <!-- - -[[Issue 420:	SumatraPDF forward search:https://code.google.com/p/texmaker/issues/detail?id=420]] → Done -->
     <!-- - -[[Issue 473:	Subdirectories in # parameter:https://code.google.com/p/texmaker/issues/detail?id=473]] -->
 
-### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない → Karabiner で Backslash が優先されるようにキーバインドを変更する {#u2a90df7}
+### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
 
 <!-- -[[Issue 104:	Apple JIS keyword issue:https://code.google.com/p/texmaker/issues/detail?id=104]] -->
 <!-- -[[ただし，''MacOSX SnowLeopardの環境では，半角のバックスラッシュが入力できず，半角の￥になってしまうという問題があります．''もっとも原始的な(笑)コピペよりもう少しましな方法として，次のようにすることでとりあえず回避できます．&br;▷ ことえりの「環境設定」の「入力文字」の「JISキーボードの￥キーで入力する文字」を「バックスラッシュ」に設定&br;▷ ことえりの辞書に「読み：半角バックスラッシュ→単語：半角バックスラッシュ」として登録&br;▷ ひらがな（全角入力）モードで「￥」キーを入力&br;変換確定のためreturnキーを一度叩く必要はあるものの入力は可能です．ただし''必ず全角入力モードでないとだめ''です．半角英数モードだと，当然ながら半角の￥マークになります．とりあえず，対処療法ですが，目的は達成できます（笑）．ただその弊害として全角の￥記号が打てなくなりますが，こちらは「option+Y」で入力できます．:http://www.sip-ac.jp/sip/tex02.html]] -->
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)<br>
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
+OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
+Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる → Dark theme を選択する {#c698d89f}
+### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#c698d89f}
 
-Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって読めなくなるという不具合があります．<br>
-OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．<br>
-Windows, Linux で不具合が発生します．<br>
-OS X では不具合が発生しないようです．<br>
+Windows と Linux でこの不具合が発生します．
+OS X では発生しないようです．
+
+Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって読めなくなるという不具合があります．
+OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．
 
 #### Windows の場合 {#z3a8b3e4}
 
-Windows の場合は Dark theme を選択することで回避できます．<br>
-Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeXstudio/) を使用してください．<br>
+Windows の場合は Dark theme を選択することで回避できます．
+Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeXstudio/) を使用してください．
 
-***
+<!-- - --  -->
+<!-- &color(#9BC527,#9BC527){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''Texmaker の設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#9BC527,#9BC527){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
+<!--  -->
+<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png,left,around,nolink,コマンド) -->
+<!-- &color(Black,#F5F5F5){エディタ};&br; -->
+<!-- &color(Black,#F5F5F5){フォント名 　　　　　　　　　　　　　　　　　　　　};%%%メイリオ　　　　　　　　　　　''ᐯ''%%%&color(Black,#F5F5F5){　☑ ワードラップ};&br; -->
+<!-- &color(Black,#F5F5F5){サイズ 　　　　　　　　　　　　　　　　　　　　　　};%%%12　　　　　　　　　　　　　 [''⇕'']%%%&color(Black,#F5F5F5){　☑ 補完};&br; -->
+<!-- &color(Black,#F5F5F5){文字コード　　　　　　　　　　　　　　　　　　　　};&color(Black,#EEEEEE){%%%[UTF-8　　　　　　　　　　　▼]%%%};&color(Black,#F5F5F5){　☑ 行番号の表示};&br; -->
+<!-- 　　　　　''コマンド''　　　　 &color(Black,#F5F5F5){☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる};&br; -->
+<!-- #img(,clear) -->
+<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png,left,around,nolink,クイックビルド) -->
+<!-- &color(Black,#F5F5F5){スペルチェック辞書　};%%%C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　%%%&color(Black,#F5F5F5){　　　　&color(black,yellow){''☐ インライン ← 日本語の文書を作成する場合はチェックをはずす''};};&br; -->
+<!-- &color(Black,#F5F5F5){タブ幅 (スペースの数) };%%%4　　[''⇕'']%%%&color(Black,#F5F5F5){　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える};&br; -->
+<!-- &color(Black,#F5F5F5){色};&br; -->
+<!-- &br; -->
+<!-- 　　　''クイックビルド''&br; -->
+<!-- #img(,clear) -->
+<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png,left,around,nolink,エディタ) -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- &br; -->
+<!-- 　　&color(Black,#DAEAFF){　　　''エディタ''　　　};&br; -->
+<!-- #img(,clear) -->
+<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png,left,around,nolink,ショートカット) -->
+<!-- > -->
+<!-- >> -->
+<!-- >>> -->
+<!-- :| -->
+<!-- > -->
+<!-- >> -->
+<!-- >>> -->
+<!-- ::| -->
+<!-- > -->
+<!-- |COLOR(#555):Background|#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　| -->
+<!-- |COLOR(#555):Current line|#ececec| -->
+<!-- |COLOR(#555):Highlighted line|#ff0000| -->
+<!-- |COLOR(#555):Text|#000000| -->
+<!-- |COLOR(#555):Comment|#606060| -->
+<!-- |COLOR(#555):Math|#008000| -->
+<!-- |COLOR(#555):...|...| -->
+<!-- < -->
 
-<span style="color:#9BC527;background-color:#9BC527;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Texmaker の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#9BC527;background-color:#9BC527;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">エディタ</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">フォント名 　　　　　　　　　　　　　　　　　　　　</span><ins>メイリオ　　　　　　　　　　　<strong>ᐯ</strong></ins><span style="color:Black;background-color:#F5F5F5;">　☑ ワードラップ</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">サイズ 　　　　　　　　　　　　　　　　　　　　　　</span><ins>12　　　　　　　　　　　　　 \[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　☑ 補完</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">文字コード　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;"><ins>\[UTF-8　　　　　　　　　　　▼\]</ins></span><span style="color:Black;background-color:#F5F5F5;">　☑ 行番号の表示</span><br>
-
-　　　　　<strong>コマンド</strong>　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<span style="color:Black;background-color:#F5F5F5;">スペルチェック辞書　</span><ins>C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　</ins><span style="color:Black;background-color:#F5F5F5;">　　　　<span style="color:black;background-color:yellow;"><strong>☐ インライン ← 日本語の文書を作成する場合はチェックをはずす</strong></span></span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">タブ幅 (スペースの数) </span><ins>4　　\[<strong>⇕</strong>\]</ins><span style="color:Black;background-color:#F5F5F5;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える</span><br>
-
-<span style="color:Black;background-color:#F5F5F5;">色</span><br>
-
-<br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>エディタ</strong>　　　</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
->
-> : &nbsp;
->
-
->
-> : &nbsp;
->
-
-> <table>
-> <tbody>
-> <tr><td style="color:#555">Background</td><td>#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</td></tr>
-> <tr><td style="color:#555">Current line</td><td>#ececec</td></tr>
-> <tr><td style="color:#555">Highlighted line</td><td>#ff0000</td></tr>
-> <tr><td style="color:#555">Text</td><td>#000000</td></tr>
-> <tr><td style="color:#555">Comment</td><td>#606060</td></tr>
-> <tr><td style="color:#555">Math</td><td>#008000</td></tr>
-> <tr><td style="color:#555">...</td><td>...</td></tr>
-> </tbody>
-> </table>
->
-
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 　　　　　 ダークテーマ 　　　　　 \]</span><span style="color:black;background-color:yellow;"><strong>← かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する</strong></span><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　　　デフォルトのテーマ　　　　\]</span><br>
-
-<div style="clear:both"></div>
-
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Svn</span><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">☐ Detect uncommitted lines at the opening</span><br>
-　　　　　　　　　　　　　　 <span style="color:Black;background-color:#F5F5F5;">Path to the svn command</span><br>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
-
-***
+<!-- 　　　　　　　　　　　　　　 &color(Black,#EEEEEE){[ 　　　　　 ダークテーマ 　　　　　 ]};&color(black,yellow){''← かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する''};&br; -->
+<!-- 　　　　　　　　　　　　　　 &color(Black,#EEEEEE){[　　　　デフォルトのテーマ　　　　]};&br; -->
+<!-- #img(,clear) -->
+<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){Svn};&br; -->
+<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){☐ Detect uncommitted lines at the opening};&br; -->
+<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){Path to the svn command};&br; -->
+<!-- &br; -->
+<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#EEEEEE){[　　　OK　　　]};　&color(Black,#EEEEEE){[ キャンセル ]};&br; -->
+<!-- - --  -->
 
 #### Linux の場合 {#nd7d6ba8}
 
-■ ibus を使用している場合<br>
-Arch Linux の ibus-kkc では特に問題なく日本語入力できています．<br>
-Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
-Fedora で ibus-kkc を使用している場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．<br>
+<strong>■ ibus を使用している場合</strong>
 
-■ fcitx を使用している場合<br>
-fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．<br>
-fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が ON の場合は背景が黒く表示されて読めなくなることがあるようです．<br>
+Arch Linux の ibus-kkc では特に問題なく日本語入力できています．
 
-■ uim を使用している場合<br>
-uim を使用している場合は背景が黒く表示されて読めなくなることがあるようです．<br>
+Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．
 
-<!-- バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します．~ -->
-<!-- また，同じく Qt を使用している [[TeXworks でもハイライトに関する不具合が存在する>TeXworks#s5bfc44e]]ので，もしかすると Qt の不具合 (仕様？) かもしれません．~ -->
+Fedora で ibus-kkc を使用している場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．
+
+<strong>■ fcitx を使用している場合</strong>
+
+fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．
+
+<strong>■ uim を使用している場合</strong>
+
+uim を使用している場合は背景が黒く表示されて読めなくなることがあるようです．
+
+<!-- バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します． -->
+<!-- また，同じく Qt を使用している [[TeXworks でもハイライトに関する不具合が存在する>TeXworks#s5bfc44e]]ので，もしかすると Qt の不具合 (仕様？) かもしれません． -->
 
 #### 修正方法 (Windows) {#e1ab5b1e}
 
-Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます．<br>
+Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます．
 
 - [Poppler](/Poppler/) をインストールします．
 
@@ -195,8 +171,8 @@ Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() �
 if (QColor::isValidColor(confDlg->ui.colortableWidget->item(3,1)->text())) colorStandard=QColor(confDlg->ui.colortableWidget->item(3,1)->text());
 ```
 
-という処理でテキストの色を設定しています．<br>
-デフォルトではテキストの色は黒です．<br>
+という処理でテキストの色を設定しています．
+デフォルトではテキストの色は黒です．
 日本語変換時にも，この色が適用され，文字の色が黒くなってしまうので [latexhighlighter.cpp](https://bitbucket.org/srazi/biditexmaker3/src/tip/latexhighlighter.cpp) の
 
 ```
@@ -209,9 +185,9 @@ setFormat( i, 1,ColorStandard);
 //setFormat( i, 1,ColorStandard);
 ```
 
-としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます．<br>
+としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます．
 
-Qt 5 を使用する場合は texmaker.pro を修正します．<br>
+Qt 5 を使用する場合は texmaker.pro を修正します．
 
 ***
 
@@ -238,7 +214,9 @@ INCLUDEPATH += /mingw/include/poppler/qt4
 INCLUDEPATH += /mingw/include/poppler/qt5
 LIBS         += -LC:\poppler -lpoppler-qt4 -lpoppler-qt5
 RC_FILE = win.rc
+```
 
+```
 DEFINES += USB_VERSION
 ```
 
@@ -255,7 +233,7 @@ $ ./texmaker &
 
 - 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
 
-- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，Texmaker の実行に必要なライブラリ (DLL ファイル) の確認をします．<br>
+- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，Texmaker の実行に必要なライブラリ (DLL ファイル) の確認をします．
     objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
 
 ```
@@ -315,18 +293,23 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 - C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
 
-### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある → [TeXstudio](/TeXstudio/) を使用する {#i1222dd8}
+### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある {#i1222dd8}
 
-Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがあります．<br>
-fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．\section{ の直後に日本語入力が ON にならない場合に手動で日本語入力を ON にした状態で \section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されます．<br>
-ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．<br>
-[TeXstudio](/TeXstudio/) を使用することで回避できます．<br>
+Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがあります．
 
-### コマンドの設定に使用するパラメータのパースの仕方に問題がある → [TeXstudio](/TeXstudio/) または Ruby, Windows PowerShell, バッチファイル, シェルスクリプト などを使用する {#t0aace20}
+fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．このとき，\section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されてしまいます．
 
-Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．<br>
-[TeXstudio](/TeXstudio/) はコマンドの設定に使用するパラメータが正しく処理されています．<br>
-Texmaker の場合は例えばコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; と記述しても期待したように処理されません．<br>
+ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．
+
+これらの問題は，[TeXstudio](/TeXstudio/) を使用することで回避できます．
+
+### コマンドの設定に使用するパラメータのパースの仕方に問題がある {#t0aace20}
+
+Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．
+[TeXstudio](/TeXstudio/) ではコマンドの設定に使用するパラメータが正しく処理されています．
+
+Texmaker の場合は例えばコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; と記述しても期待したように処理されません．
+
 Ruby では
 
 ```
@@ -339,14 +322,14 @@ Windows PowerShell では
 [char]0x25
 ```
 
-で &#x25; を表示できます．<br>
-このようにして Ruby や Windows PowerShell を使用して表示したい文字を「数値→文字」の変換で表現して設定を記述すれば OK です．<br>
-Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプトを使用しても OK です．<br>
+で &#x25; を表示できます．
+このようにして Ruby や Windows PowerShell を使用して表示したい文字を「数値→文字」の変換で表現して設定を記述すれば OK です．
+Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプトを使用しても OK です．
 
-### Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがある → Ruby を使用して設定を記述する {#o6c242bd}
+### Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがある {#o6c242bd}
 
-Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．<br>
-この場合は Ruby を使用して設定を記述してください．<br>
+Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．
+この場合は Ruby を使用して設定を記述してください．
 
 ## 文字コードの変換 {#y2f21c8a}
 
@@ -361,9 +344,10 @@ Texmaker で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### OS X の場合 {#m8993d2f}
 
-OS X の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．<br>
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
-[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /Users/pascalbrachet/poppler64/share/poppler にコピーして使用することもできます．<br>
+OS X の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．
+poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．
+[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /Users/pascalbrachet/poppler64/share/poppler にコピーして使用することもできます．
+
 poppler-data を配置する場所は strings と grep で調べることができます．
 
 ```
@@ -373,8 +357,9 @@ Unknown CID font collection, please report to poppler bugzilla.
 %Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
 ```
 
-この場合は /Users/pascalbrachet/poppler64/share/poppler が poppler-data を配置するディレクトリになります．<br>
-コマンドラインから poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置する場合は以下のように実行します．<br>
+この場合は /Users/pascalbrachet/poppler64/share/poppler が poppler-data を配置するディレクトリになります．
+
+コマンドラインから poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置する場合は以下のように実行します．
 
 ```
 $ brew install poppler
@@ -419,7 +404,7 @@ $ sudo cp -pR ~/poppler-data-0.4.7/* /Users/pascalbrachet/poppler64/share/popple
 
 ### Windows の Texmaker の場合 {#h82370cc}
 
-Texmaker の Windows 版は poppler-data が適切な位置に配置されており fontconfig も適切に設定されています．<br>
+Texmaker の Windows 版は poppler-data が適切な位置に配置されており fontconfig も適切に設定されています．
 
 ***
 
@@ -434,9 +419,9 @@ C:.
 
 ***
 
-fontconfig を適切に設定すれば PDF ファイルに日本語のフォントが埋め込まれていなくても日本語を表示することが可能になります．<br>
-日本語のフォントを埋め込んでいない PDF ファイルを表示すると texmaker.exe と同じフォルダーに WINDOWSTEMPDIR_FONTCONFIG_CACHE フォルダーが作成され，日本語が表示されます．<br>
-なお，<strong>初回の表示ではフォントキャッシュを作成するため時間がかかり，応答なしの状態になってしまう</strong>かもしれませんが，作成されれば通常通り表示されるようになります．<br>
+fontconfig を適切に設定すれば PDF ファイルに日本語のフォントが埋め込まれていなくても日本語を表示することが可能になります．
+日本語のフォントを埋め込んでいない PDF ファイルを表示すると texmaker.exe と同じフォルダーに WINDOWSTEMPDIR_FONTCONFIG_CACHE フォルダーが作成され，日本語が表示されます．
+なお，<strong>初回の表示ではフォントキャッシュを作成するため時間がかかり，応答なしの状態になってしまう</strong>かもしれませんが，作成されれば通常通り表示されるようになります．
 
 ***
 
@@ -450,7 +435,7 @@ C:.
 
 ***
 
-PDF ビューアで表示される代替フォントは texmaker.exe と同じフォルダーに存在する etc\fonts\local.conf で設定されています．<br>
+PDF ビューアで表示される代替フォントは texmaker.exe と同じフォルダーに存在する etc\fonts\local.conf で設定されています．
 
 ***
 
@@ -469,7 +454,7 @@ C:.
 
 ***
 
-デフォルトでは Ryumin-Light (明朝体) は MS Mincho，GothicBBB-Medium (ゴシック体) は MS Gothic で表示されます．<br>
+デフォルトでは Ryumin-Light (明朝体) は MS Mincho，GothicBBB-Medium (ゴシック体) は MS Gothic で表示されます．
 
 ***
 
@@ -481,7 +466,9 @@ C:.
 <dir>c:/texlive/2016/texmf-dist/fonts/opentype</dir>
 <dir>c:/texlive/2016/texmf-dist/fonts/truetype</dir>
 <dir>c:/Windows/Fonts</dir>
+```
 
+```
 <match target="pattern">
   <test qual="any" name="family">
     <string>Ryumin</string>
@@ -498,12 +485,16 @@ C:.
     <string>MS Gothic</string>
   </edit>
 </match>
+```
 
+```
 <alias binding="same">
   <family>ZapfDingbats</family>
   <accept><family>Dingbats</family></accept>
 </alias>
+```
 
+```
 </fontconfig>
 ```
 
@@ -511,7 +502,7 @@ C:.
 
 ### Linux の Texmaker の場合 {#o71b53f0}
 
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．<br>
+[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．
 
 ## 設定 {#e3cd1932}
 
