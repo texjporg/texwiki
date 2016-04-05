@@ -292,6 +292,7 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 #### Windows {#mc7cf9a9}
 
+- [MSYS2#TeX Live](/MSYS2/#texlive)
 - [MinGW#TeX Live](/MinGW/#texlive)
 
 #### OS X {#m1f2034d}
