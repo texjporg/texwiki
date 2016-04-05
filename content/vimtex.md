@@ -9,33 +9,24 @@ pukiwiki: "vimtex"
 
 [Vim](/Vim/) > vimtex
 
-## [vimtex](https://github.com/lervag/vimtex) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box または [quickrun](/quickrun/) を使用する {#z6cb8a04}
+## vimtex {#z107ab3c}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## vimtex とは {#eb8e96c5}
-
-vimtex は Vim の LaTeX プラグインです．<br>
+vimtex は Vim の LaTeX プラグインです．
 
 - [https://github.com/lervag/vimtex](https://github.com/lervag/vimtex)
-- [Vim の LaTeX 環境を作ってみた](http://hikaru515.hatenablog.com/entry/2016/04/03/115845)
-- [【メモ】vimtexでLuaTeXの環境構築](http://rago1975.blog.shinobi.jp/linux_app/0072)
 
-### License {#h515d5d7}
+***
 
-MIT License
-
-### ChangeLog {#f919eebd}
-
-- [https://github.com/lervag/vimtex/commits/master](https://github.com/lervag/vimtex/commits/master)
+***
 
 ## 設定 {#rdcb7242}
 
 - [https://github.com/lervag/dotvim/blob/master/vimrc](https://github.com/lervag/dotvim/blob/master/vimrc)
 
-vimtex はタイプセットに Latexmk を使用します．<br>
-[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．<br>
-vimtex が動作しない場合は [tex.vim](/Vim/tex.vim/) または LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br>
+vimtex はタイプセットに Latexmk を使用します．
+[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．
+
+vimtex 以外の Vim プラグインとしては，[tex.vim](/Vim/tex.vim/)，LaTeX Box，[quickrun](/quickrun/) があります．
 
 ### Windows {#if79953a}
 
@@ -106,7 +97,7 @@ let g:vimtex_view_general_viewer = 'xdg-open'
 
 ### タイプセット・プレビュー {#of23796d}
 
-let g:vimtex_latexmk_continuous = 1 の場合は latexmk のオプションに -pvc が追加され，\ll を実行したあとでファイルを保存すれば自動的にタイプセットが行われます．<br>
+let g:vimtex_latexmk_continuous = 1 の場合は latexmk のオプションに -pvc が追加され，\ll を実行したあとでファイルを保存すれば自動的にタイプセットが行われます．
 
 > <table>
 > <tbody>
@@ -128,3 +119,16 @@ let g:vimtex_latexmk_continuous = 1 の場合は latexmk のオプションに -
 > </tbody>
 > </table>
 >
+
+## 関連リンク {#h40db22e}
+
+- [Vim の LaTeX 環境を作ってみた](http://hikaru515.hatenablog.com/entry/2016/04/03/115845)
+- [【メモ】vimtexでLuaTeXの環境構築](http://rago1975.blog.shinobi.jp/linux_app/0072)
+
+### License {#h515d5d7}
+
+MIT License
+
+### ChangeLog {#f919eebd}
+
+- [https://github.com/lervag/vimtex/commits/master](https://github.com/lervag/vimtex/commits/master)
