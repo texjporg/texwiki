@@ -9,7 +9,8 @@ pukiwiki: "MSYS2"
 
 ## MSYS2 {#x1532c23}
 
-MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化したものです．[Arch Linux](</Linux/Arch Linux/>) の標準パッケージマネージャーである pacman を使用してパッケージ管理ができます．
+MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化したものです．
+[Arch Linux](</Linux/Arch Linux/>) の標準パッケージマネージャーである pacman を使用してパッケージ管理ができます．
 
 - [http://msys2.github.io/](http://msys2.github.io/)
 - [https://github.com/msys2](https://github.com/msys2)
@@ -23,16 +24,25 @@ MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化�
 
 ### LANG {#w1a07eeb}
 
-MSYS2 では LANG が ja_JP.UTF-8 になっています．
+日本語版 Windows では MSYS2 の環境変数 LANG は ja_JP.UTF-8 です．
 
 ```
 $ echo $LANG
 ja_JP.UTF-8
 ```
 
+Windows PowerShell のヘルプなどを表示する場合に MSYS2 で日本語が正しく表示されない場合は
+iconv で 入力文字コードに CP932，出力文字コードに UTF-8 を指定して変換すれば日本語が正しく表示できます．
+
+```
+$ powershell -? | iconv -f CP932 -t UTF-8
+```
+
 ## Mingw-w64 {#q2a4db43}
 
-Mingw-w64 は 64-bit Windows と 32-bit Windows のバイナリを出力するためのソフトウェアです．MSYS2 でインストールすることができます．
+Mingw-w64 は 64-bit Windows と 32-bit Windows のバイナリを出力するためのソフトウェアです．
+[MinGW](/MinGW/) と比較すると 64-bit 対応や新しい API サポートなどが追加されています．
+MSYS2 でインストールできます．
 
 - [Mingw-w64 - GCC for Windows 64 &amp; 32 bits \[mingw-w64\]](http://mingw-w64.org/)
     <!-- -[[MinGW 64 bit | Qt Wiki | Qt Developer Network:http://qt-project.org/wiki/MinGW-64-bit]] -->
@@ -49,6 +59,7 @@ Mingw-w64 は 64-bit Windows と 32-bit Windows のバイナリを出力する�
 
 ## MSYS2 関連リンク {#i2a5ff0e}
 
+- TwitterSearch:MSYS2, TwitterSearch.en:MSYS2, TwitterSearch.ja:MSYS2
 - [http://qiita.com/tags/msys](http://qiita.com/tags/msys)
 - [https://sourceforge.jp/projects/msys2-crossgcc/](https://sourceforge.jp/projects/msys2-crossgcc/)
     - [https://sourceforge.jp/projects/msys2-crossgcc/howto/install](https://sourceforge.jp/projects/msys2-crossgcc/howto/install)
