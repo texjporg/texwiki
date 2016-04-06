@@ -20,21 +20,21 @@ pukiwiki: "Emacs"
 ## GNU Emacs {#e77c7c99}
 
 - [GNU Emacs - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/emacs/)
-    - [ftp://ftp.gnu.org/gnu/emacs/windows/](ftp://ftp.gnu.org/gnu/emacs/windows/)
-    - [http://ftp.gnu.org/gnu/emacs/windows/](http://ftp.gnu.org/gnu/emacs/windows/)
-    - [ftp://alpha.gnu.org/gnu/emacs/windows/](ftp://alpha.gnu.org/gnu/emacs/windows/)
-    - [http://alpha.gnu.org/gnu/emacs/windows/](http://alpha.gnu.org/gnu/emacs/windows/)
 
 ### 動作環境 {#tabe669d}
 
-GNU, GNU/Linux は当然として，BSD, Mac OS X, Windows, Solaris もサポートされています．
+GNU, GNU/Linux は当然として，BSD, OS X, Windows, Solaris もサポートされています．
 
-- [Supported Platforms](http://www.gnu.org/software/emacs/#Platforms)
+- [Wikipedia.en&#x3a;GNU_Emacs&#x23;Platforms](https://en.wikipedia.org/wiki/GNU_Emacs%23Platforms)
 
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
 [GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
+
+### ダウンロード {#m56139cf}
+
+- [http://www.gnu.org/software/emacs/download.html](http://www.gnu.org/software/emacs/download.html)
 
 ### 派生版 {#n86b811e}
 
@@ -43,7 +43,7 @@ GNU Emacs はフリーソフトウェアです．
 - 64-bit binary
     - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
     - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
-        - [http://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](http://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
+        - [https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
 - 32-bit binary
     - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 
@@ -51,17 +51,17 @@ GNU Emacs はフリーソフトウェアです．
 
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
-- [Emacs For Mac OS X](http://emacsformacosx.com/)
-    - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](http://emacsformacosx.com/builds)
+- [Emacs For Mac OS X](https://emacsformacosx.com/)
+    - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](https://emacsformacosx.com/builds)
 
-### [EmacsWiki](http://www.emacswiki.org/) {#mde20549}
+### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
 
-- [CategoryWThirtyTwo](http://www.emacswiki.org/emacs/CategoryWThirtyTwo)
-- [EmacsForMacOS](http://www.emacswiki.org/emacs/EmacsForMacOS)
+- [CategoryWThirtyTwo](https://www.emacswiki.org/emacs/CategoryWThirtyTwo)
+- [EmacsForMacOS](https://www.emacswiki.org/emacs/EmacsForMacOS)
 
-### メニューの日本語化 {#q01dd8c4}
-
-- [menu-tree.elのぺえじ](http://www11.atwiki.jp/s-irie/pages/13.html)
+<!-- ↓http://yohshiy.blog.fc2.com/blog-entry-295.html によると新しい Emacs では menu-tree が使えないらしいです -->
+<!-- **メニューの日本語化 [#q01dd8c4] -->
+<!-- -[[menu-tree.elのぺえじ:http://www11.atwiki.jp/s-irie/pages/13.html]] -->
 
 ### 拡張パッケージの入手 {#o0e71869}
 
@@ -74,7 +74,7 @@ YaTeX や AUCTeX の最新版もここから簡単に入手できます．
 
 ## Emacs で LaTeX {#p527fec0}
 
-- [EmacsWiki: Category Tex](http://www.emacswiki.org/emacs/CategoryTex)
+- [EmacsWiki: Category Tex](https://www.emacswiki.org/emacs/CategoryTex)
 - [Org mode](</Emacs/Org mode/>)：Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system.
 - [TeX mode](</Emacs/TeX mode/>)：Emacs 標準の TeX mode
 - [YASnippet](/YASnippet/)：スニペットプラグイン
@@ -82,12 +82,12 @@ YaTeX や AUCTeX の最新版もここから簡単に入手できます．
 - [AUCTeX](/AUCTeX/)：GNU Emacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/)：Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
-    - [EmacsWiki:LaTeXMathPreview](http://www.emacswiki.org/emacs/LaTeXMathPreview)
+    - [EmacsWiki:LaTeXMathPreview](https://www.emacswiki.org/emacs/LaTeXMathPreview)
     - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
     - [QA: YaTeXで数式のpreview](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=349)
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413)：(X)Emacs frontend to forward search with SumatraPDF
-- [RefTeX](http://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
-- [BibTeX](http://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
+- [RefTeX](https://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
+- [BibTeX](https://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
 - [latex_editor](http://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
 - [emacs, mozc, TeX 入力](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1319)
 - [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
