@@ -185,7 +185,7 @@ yaxis("$y$",LeftRight,RightTicks);
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [Asymptote 問題集](http://d.hatena.ne.jp/denpoya/)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
-- [実験室(Asymptote)](http://homepage2.nifty.com/domae/asymptote.html)
+- [実験室(Asymptote)](http://minamo.my.coocan.jp/asymptote.html)
 - [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
 - [Asymptoteにおける\tate](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1077)
 - [Asymptoteで日本語を表示させられませんでした](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=765)
