@@ -9,7 +9,13 @@ pukiwiki: "MetaPost"
 
 ## MetaPost {#v0160eb8}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+MetaPost は John D. Hobby が作った [METAFONT](/METAFONT/) 類似のソフトウェアです。
+METAFONT が gf 形式のフォントを出力するのに対して，
+MetaPost は PostScript（EPS）形式のファイルを出力します。
+
+***
+
+***
 
 ## はじめに {#q0dc30bf}
 
@@ -17,14 +23,8 @@ pukiwiki: "MetaPost"
 [MetaPost の紹介 (PDF) \[Internet Archive\]](http://web.archive.org/web/20030318073200/http://www.fsci.fuk.kindai.ac.jp/~kakuto/win32-ptex/mpost.pdf)
 という文章に触発されて書いたものです。角藤さんに感謝いたします。」
 
-↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://cise.edu.mie-u.ac.jp/~okumura/)が記したものです。<br>
-この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。<br>
-
-## MetaPost とは {#e4617397}
-
-MetaPost は John D. Hobby が作った [METAFONT](/METAFONT/) 類似のソフトです。<br>
-METAFONT が gf 形式のフォントを出力するのに対して，
-MetaPost は PostScript（EPS）形式のファイルを出力します。<br>
+↑この謝辞は、この文章がWikiに移される前に[奥村さん](http://oku.edu.mie-u.ac.jp/~okumura/)が記したものです。
+この文章がWikiに移された後は不特定多数の方が加筆しているので、謝辞は妥当なものではなくなっているかもしれません。
 
 MetaPost の詳細は
 
@@ -32,9 +32,9 @@ MetaPost の詳細は
 texdoc metapost
 ```
 
-で確認してください。<br>
+で確認してください。
 
-[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。<br>
+[Asymptote](/Asymptote/) という MetaPost を発展させたベクトルグラフィック記述言語もあります。
 
 - [FusionForge: MetaPost: Project Home](https://foundry.supelec.fr/projects/metapost/) （本家）
 - [The MetaPost page](http://cm.bell-labs.com/who//hobby/MetaPost.html) (作者 John D. Hobby のページ)
@@ -45,27 +45,21 @@ texdoc metapost
 
 [LGPLv3](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING.LESSER?root=metapost&view=log)
 
-### ChangeLog {#q9da79df}
-
-- [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
-    - [CHANGES](https://foundry.supelec.fr/scm/viewvc.php/trunk/CHANGES?view=markup&root=metapost)
-
 ## MetaPost 日本語版 {#vcd749fc}
 
 ### TeX Live {#l36a3b95}
 
-TeX Live 2015 以降には MetaPost の日本語版 (upmpost) が含まれています．
+TeX Live 2015 以降には MetaPost の日本語版 (pmpost, upmpost) が含まれています．
 
 ### W32TeX {#ab245e27}
 
-W32TeX には MetaPost の日本語版 (upmpost) が含まれています．
+W32TeX には MetaPost の日本語版 (pmpost, upmpost) が含まれています．
 
 ## 不具合 {#z01f418a}
 
-### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される → TeX Live 2014 の MetaPost 1.902 以降にアップグレード {#c01c14c0}
+### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される {#c01c14c0}
 
-TeX Live 2014 (MetaPost 1.902), W32TeX (MetaPost 1.999) では修正されています．<br>
+TeX Live 2014 (MetaPost 1.902), W32TeX (MetaPost 1.999) では修正されています．
 
 - [TeXLive 2013のmf2pt1がおかしい件](http://qiita.com/_yyu_/items/b1fac90074545ccee727)
 - [http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003](http://tex.stackexchange.com/questions/122644/wrong-tfm-generated-by-mf2pt1-in-texlive-2013/175003#175003)
@@ -86,8 +80,7 @@ end.
 
 これは単に4点を3本の線分で結ぶだけです。
 
-このファイルをたとえば test.mp
-という名前で UTF-8 で保存します．<br>
+このファイルをたとえば test.mp という名前で UTF-8 で保存します．
 
 日本語を使用する場合は
 
@@ -102,40 +95,34 @@ mpost test
 ```
 
 と打ち込むと，beginfig(1); から endfig;
-までに描かれた内容が test.1 という EPS ファイルに出力されます。<br>
-Ghostscript などで確認してみてください。<br>
+までに描かれた内容が test.1 という EPS ファイルに出力されます。
+Ghostscript などで確認してみてください。
 
 もしさらに beginfig(2);……endfig;
-が同じ test.mp に書かれていれば，その中身は test.2
-に出力されます。<br>
-要するに beginfig() は拡張子を決めるだけですが，
-拡張子は数字（番号）しか使えません。<br>
+が同じ test.mp に書かれていれば，その中身は test.2 に出力されます。
+要するに beginfig() は拡張子を決めるだけですが，拡張子は数字（番号）しか使えません。
 
-上の例は単なる折れ線でした。<br>
-閉じた図形にするには，
+上の例は単なる折れ線でした。閉じた図形にするには，
 
 ```
 draw (u,0)--(2u,u)--(u,2u)--(0,u)--cycle;
 ```
 
-とします。<br>
-さらに，滑らかな線で結ぶには，
+とします。さらに，滑らかな線で結ぶには，
 
 ```
 draw (u,0)..(2u,u)..(u,2u)..(0,u)..cycle;
 ```
 
-とします。<br>
-もちろん
+とします。もちろん
 
 ```
 draw (u,0)--(2u,u)--(u,2u)..(0,u)..cycle;
 ```
 
-のような使い方もできます。<br>
+のような使い方もできます。
 
-塗りつぶしや色指定もできます。<br>
-たとえば
+塗りつぶしや色指定もできます。たとえば
 
 ```
 fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
@@ -145,8 +132,7 @@ fill (u,0)..(2u,u)..(u,2u)..(0,u)..cycle withcolor red;
 
 ### 図に文字を挿入する {#j8ce9e55}
 
-文字を入れることもできます。<br>
-たとえば
+文字を入れることもできます。たとえば
 
 ```
 prologues:=1;
@@ -160,17 +146,13 @@ endfig;
 end.
 ```
 
-のようにすれば，点 (u,u) を中心とする位置に Red Ball と書かれます。<br>
-このように文字を入れる場合は，
-PostScript フォントを指定し，
-最初に prologues:=1; としておけば，
-独立のEPSとして使えます。<br>
-ただし，
+のようにすれば，点 (u,u) を中心とする位置に Red Ball と書かれます。
+このように文字を入れる場合は，PostScript フォントを指定し，最初に prologues:=1;
+としておけば，独立のEPSとして使えます。ただし，
 defaultfont := "rptmr";
-のような命令でデフォールトのフォント名を標準的な PS
-フォントに指定しておく必要があります（rptmr
-は Times-Roman の TeX での名前です）。<br>
-そうでなければ cmr10 になってしまい，一般のプリンタでは出力できません。<br>
+のような命令でデフォールトのフォント名を標準的な PS フォントに指定しておく必要があります（rptmr
+は Times-Roman の TeX での名前です）。
+そうでなければ cmr10 になってしまい，一般のプリンタでは出力できません。
 
 > しかし Ghostscript では次のようにして cmr10 などを出力することができます：
 > GS_LIB という環境変数を CM Type1 フォントのある場所
@@ -187,14 +169,13 @@ defaultfont := "rptmr";
 > /CMEX10                                 (cmex10.pfb)    ;
 > ```
 >
-> などのように書いておきます。<br>
+> などのように書いておきます。
 > 別の手として，cmr10.pfb などを CMR10 という名前で /Resource/Font
-> ディレクトリにコピーしておいてもいいでしょう。<br>
+> ディレクトリにコピーしておいてもいいでしょう。
 
 ### 作成した図をTeX文章に取り込む {#ee4db6cc}
 
-TeX/LaTeX の文書の中に組み込んで使う場合は，
-逆に prologues:=1; は指定しません。<br>
+TeX/LaTeX の文書の中に組み込んで使う場合は，逆に prologues:=1; は指定しません。
 この場合，たとえば
 
 ```
@@ -221,8 +202,8 @@ uplatex test
 dvips test -o test.ps
 ```
 
-と打ち込むと test.ps というPostScriptファイルができますので，
-Ghostscriptで見るか，PostScriptプリンタに送ります。<br>
+と打ち込むと test.ps という PostScript ファイルができますので，
+Ghostscriptで見るか，PostScript プリンタに送ります。
 
 ここで
 
@@ -235,22 +216,19 @@ Ghostscriptで見るか，PostScriptプリンタに送ります。<br>
 \end{document}
 ```
 
-のように図だけを含むTeXファイルから dvi を作り，
+のように図だけを含む TeX ファイルから dvi を作り，
 
 ```
 dvips -E test -o test.eps
 ```
 
-のように dvips の -E オプションを使えば，
-本物の EPS ファイルになり，
-TeX 以外のアプリケーションに取り込むこともできます。<br>
+のように dvips の -E オプションを使えば，本物の EPS ファイルになり，
+TeX 以外のアプリケーションに取り込むこともできます。
 
 ### TeXの機能を使って図に挿入する文字を組版する {#o948ef03}
 
-上のような方法ではカーニングやリガチャは入りませんし，
-数式を含ませることもできません。<br>
-ちゃんと組まれた文や数式を含ませるには，次のように label
-中に btex …… etex で囲んで入れます。<br>
+上のような方法ではカーニングやリガチャは入りませんし，数式を含ませることもできません。
+ちゃんと組まれた文や数式を含ませるには，次のように label 中に btex …… etex で囲んで入れます。
 
 ```
 verbatimtex
@@ -267,8 +245,8 @@ end.
 
 このように TeX や LaTeX の文書が含まれている場合は，
 TeX または LaTeX を起動するコマンドをあらかじめ環境変数 TEX
-で指定しておく必要があります。<br>
-たとえば上の例で LaTeX を起動するコマンドが uplatex の場合は<br>
+で指定しておく必要があります。
+たとえば上の例で LaTeX を起動するコマンドが uplatex の場合は
 B Shell 系 (bash, zsh など) であれば
 
 ```
@@ -305,14 +283,13 @@ endfig;
 end.
 ```
 
-と書いておくだけで、自動的に latex を使ってくれます。<br>
+と書いておくだけで、自動的に latex を使ってくれます。
 ただしその場合の TEX
-変数は、latex.fmt に対するエンジンでなければいけません。(最近のものでは
-pdftex)。<br>
+変数は、latex.fmt に対するエンジンでなければいけません。(最近のものでは pdftex)。
 
 ### PSfragの利用 {#gd4ef62a}
 
-日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。<br>
+日本語版MetaPostが利用できない場合は，次のようにして PSfrag で日本語を使うことができます。
 さきほどの例で（prologues:=1; を指定しておき）
 
 ```
@@ -328,9 +305,8 @@ pdftex)。<br>
 \end{document}
 ```
 
-のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。<br>
-ただし，日本語としてセンタリングされるわけではありませんので，
-一般に位置がずれます。<br>
+のようにすれば，Red Ballの文字列が「赤いボール」に置き換わります。
+ただし，日本語としてセンタリングされるわけではありませんので，一般に位置がずれます。
 
 ### その他の注意点 {#ddd5a5aa}
 
@@ -373,7 +349,7 @@ MetaPost を併用して[等高線を描くプログラム](http://oku.edu.mie-u
 
 ## 関連アプリケーション {#o3813278}
 
-MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MePoTeX](http://homepage2.nifty.com/domae/metapost/mepotex.html)というものもあります。
+MetaPostで作成した図をLaTeX文書に取り込むようなとき、図のソースをLaTeX文書に埋め込んで図の生成と取り込みを自動化するパッケージ[MetaPost in TeX (MePoTeX)](http://minamo.my.coocan.jp/metapost.html)というものもあります。
 
 ## 最新バージョンで追加された機能のいくつか {#ze022f07}
 
@@ -437,8 +413,7 @@ endfig;
 end.
 ```
 
-としておくと、必要な cm フォントがダウンロードされるので、通常のプリンタ
-で印刷できる eps ができます。
+としておくと、必要な cm フォントがダウンロードされるので、通常のプリンタで印刷できる eps ができます。
 
 ```
 (5) font map:
@@ -454,7 +429,6 @@ fontmapfile "+foo.map";
 とすると、重複を無視して foo.map の内容を追加します。
 
 ```
- 
 fontmapfile "=foo.map";
 ```
 
@@ -462,7 +436,6 @@ fontmapfile "=foo.map";
 
 ```
 fontmapfile "-foo.map";
-     
 ```
 
 とすると、foo.map 内の記述とマッチするエントリを全て削除します。
@@ -539,10 +512,16 @@ mpost -numbersystem=binary test
 を出力します(読みやすいように編集してあります)。これは最後の数字(8)を除いて
 正しいものです。
 
-## 参考サイト {#sa284452}
+## 関連リンク {#sa284452}
 
 - [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
 - [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
-- [TeX&amp;MetaPostであそぼう](http://homepage2.nifty.com/domae/)(みなもさんによるMePoTeX 配布など)
+- [TeX&amp;MetaPostであそぼう](http://minamo.my.coocan.jp/metapost.html)(みなもさんによるMePoTeX 配布など)
 - [MetaPost Basics: Drawing lines, curves and shapes and using color](http://www.latex-community.org/component/content/article/61-latexs-friends-others/486-metapost-lines-curves-shapes-color)
 - [Function Grapher](http://www.tlhiv.org/mpgraph/) WEB application by MetaPost
+
+### ChangeLog {#q9da79df}
+
+- [FusionForge: MetaPost: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost)
+    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=metapost&view=log)
+    - [CHANGES](https://foundry.supelec.fr/scm/viewvc.php/trunk/CHANGES?view=markup&root=metapost)
