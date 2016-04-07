@@ -188,11 +188,8 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 
 ### inverse search {#vecb4fd9}
 
-[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．
-日本語のファイル名でも inverse search ができます．
-
-&#x7e;/.emacs.d/init.el に設定を記述します．
-AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
+AUCTeX を使用する場合は TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
+YaTeX または TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (require 'dbus)
@@ -228,6 +225,9 @@ AUCTeX では設定を記述しなくても TeX-source-correlate-mode が有効�
 ```
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
+
+[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．
+日本語のファイル名でも inverse search ができます．
 
 <!-- ディレクトリ名およびファイル名に日本語を含むと不具合が起こります． -->
 <!-- Linux Mint で検証しただけですが -->
