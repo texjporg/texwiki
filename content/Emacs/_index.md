@@ -377,10 +377,10 @@ Source editor:
 
 - [emacs.git - Emacs source repository](http://git.savannah.gnu.org/cgit/emacs.git)
     - [コミットログ](http://git.savannah.gnu.org/cgit/emacs.git/log/)
-    - [ChangeLog](http://git.savannah.gnu.org/cgit/emacs.git/tree/ChangeLog)
+    - [ChangeLog](http://git.savannah.gnu.org/cgit/emacs.git/tree/ChangeLog.2)
 - [Savannah Git Hosting - emacs.git/summary](http://git.savannah.gnu.org/gitweb/?p=emacs.git)
     - [コミットログ](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=shortlog)
-    - [ChangeLog](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=ChangeLog;hb=HEAD)
+    - [ChangeLog](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=ChangeLog.2;hb=HEAD)
 
 ## 使い方 {#e776cf5f}
 
