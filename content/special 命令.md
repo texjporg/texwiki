@@ -9,7 +9,7 @@ pukiwiki: "special 命令"
 
 ## \special 命令 {#headline}
 
-special 命令とは，DVI 標準ではサポートしていない，各 DVI ドライバの独自拡張機能を指示するための命令です。今日の LaTeX において普通に用いられている，
+special 命令とは，DVI 標準ではサポートしていない，各 DVI ウェアの独自拡張機能を指示するための命令です。今日の LaTeX において普通に用いられている，
 
 - 図形描画（[TikZ](/TikZ/)，[PSTricks](/PSTricks/)など）
 - 画像ファイルの取込（[graphicx](/graphicx/)）
@@ -197,14 +197,65 @@ DVI 標準にない機能で，「複数の DVI ウェアでサポートされ�
 <!-- こうした拡張が進んだ結果，いまどきのユーザは各種の \special を（意図的にあるいは暗黙のうちに） 使うことによって「デバイス依存」な DVI ファイルを作りがちになっています。 -->
 <!-- しかし，これらの \special 命令を用いて作成した DVI ファイルは，その命令を正しく解釈できるデバイスドライバ以外で正しく印刷することができないことに注意が必要です。 -->
 
-### 主な \special 命令の種類 {#specials-set}
+### 主要な \special 命令 {#specials-set}
 
-非常に良く使われている \special 命令の例として，画像ファイルのとりこみや文字の拡大縮小・回転を行う [graphicx (graphics)](/graphicx/) パッケージ，文字や図形に色をつけるための (x)color パッケージがあります。
-ほかにも，文書やページの設定を行う \special 命令もよく使われています。
+ここでは重要な special 命令の使い方について解説します。
 
-大規模な \special コマンドセットでよく知られているものは，次のようなものが挙げられます。
+<!-- 仕様の解説がメイン。 -->
 
-#### PostScript specials {#ps-specials}
+※ special 命令の書式については，各開発者が勝手に決めているものなので，special の種類によって大きく異なっています。
+
+#### Papersize special {#papersize-specials}
+
+サポート： dvips，(x)dvipdfmx，dviout
+
+```
+papersize=<横幅>,<縦幅>
+```
+
+命令があるページとそれ以降のページについて，出力の用紙サイズを指定します。&lt;横幅> と &lt;縦幅> には 210mm や 11in のような「TeX の単位付き数値」を指定します。
+
+これはページ全体（または文書全体）に関わる設定なので，LaTeX では通常は \AtBeginDvi 命令などを用いて本文領域の外に配置されます。
+
+```
+\AtBeginDvi{\special{papersize=182mm,257mm}} % JIS B5で出力
+```
+
+※mag指定が有効（1000 以外）な場合，papersize special で指定する長さは mag の影響を受けません。つまり “true 付”単位と同じ扱いになります。[^9]
+
+※用紙サイズに関連するものとして他に landscape special（\special{landscape}）がありますが，現在は非推奨となっています。特に landscape と papersize を同時に使用すべきではありません。
+
+- 参照： [紙面サイズの指定 (1/2) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20101123/1290541806)
+
+#### psfile special {#psfile-specials}
+
+サポート： dvips，(x)dvipdfmx，dviout
+
+```
+psfile=<ファイル名> [hscale=<横拡大率>] [vscale=<縦拡大率>
+  [angle=<回転角度>] [clip]
+  [llx=<左下x>] [lly=<左下y>] [urx=<右上x>] [ury=<右上y>]
+  [rhi=<幅>] [rwi=<高さ>]
+```
+
+（\[ \] は省略可能であることを示し。\[ \] 自体は書かない。）
+
+EPS 画像ファイルを読み込みその場に配置します。
+
+- “PSfile=...”と書いてもよい。
+- clip は元画像のバウンディングボックス外の部分の描画を抑止する。
+- &lt;横拡大率>，&lt;縦拡大率> は百分率の整数で指定。
+- &lt;回転角度> は度単位の整数で指定。
+- &lt;左下x>，&lt;左下y>，&lt;右上x>，&lt;右上y> はバウンディングボックスの座標を表し，bp 単位の実数で指定。
+- &lt;幅>，&lt;高さ> は挿入後の寸法を表し，これらは 0.1 bp 単位の実数で指定。
+
+※多くのドライバにおいて，graphicx パッケージの機能で EPS 画像を読み込む時には psfile special が用いられます。
+
+※かつては dvips 意外にも様々な「DVI→PS変換ソフト」が存在し，それぞれが異なる形式の EPS 画像読込の special をサポートしていました。dvips では，互換性のためこれらの一部（“epsfile=...”，“postscriptbox=...”）をサポートしています。
+
+- 参照： [ナントカBoxの話(3) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140704/1404425429)
+
+#### PostScript special {#ps-specials}
 
 [PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
 PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
@@ -231,43 +282,112 @@ PostScript specials を完全にサポートできるドライバの条件とし
 
 #### HyperTeX specials {#hypertex-specials}
 
-HTML ライクなハイパーリンクを可能にする special コマンドセットです。
-[dvipdfmx](/dvipdfmx/)，[dvips](/dvips/) などの DVI ドライバでサポートされています。
-[hyperref](/hyperref/) パッケージで使われています。
+サポート： dvips，(x)dvipdfmx，dviout，xdvi
+
+```
+html:<a href="URL">
+html:<a name="アンカー名">
+html:</a>
+html:<img src="URL">
+html:<base href="URL">
+```
+
+HTML ライクな書式でハイパーリンクを設置します。
+
+[hyperref](/hyperref/) パッケージでは，ドライバ指定を hypertex にした場合に，ハイパーリンクを設定するのに HyperTeX special を利用します。[dviout](/dviout/) や [xdvi](/xdvi/) でハイパーリンクを使いたい場合はこの方法が利用されます。
+
+※hypertex 以外のドライバ指定の時は hyperref は HyperTeX special を利用しません。例えば dvips ドライバでは PostScript special，dvipdfmx ドライバでは PDF special，pdftex ドライバでは \pdfliteral が使われます。
+
+※ “html:&lt;img ...>”や“html:&lt;base ...>”はほとんどサポートされていないようです。
 
 - 参考：[HyperTeX](/HyperTeX/)
 
-#### TPIC specials {#tpic-specials}
+#### tpic specials {#tpic-specials}
 
-簡単なフローチャートのような図を作成するためのプログラミング言語 pic を元にして作られた special コマンドセットです。
-[dvips](/dvips/)，[dvipdfmx](/dvipdfmx/)，[dviout](/dviout/)，[xdvi](/xdvi/) 等の数多くの DVI ドライバでサポートされています。
-一方で，DVI を扱わない [pdfTeX](/pdfTeX/) では tpic 拡張機能がサポートされていません。
-eepic や [Xy-pic](/Xy-pic/) などのパッケージが tpic specials を利用しています。
+サポート： dvips，(x)dvipdfmx，dviout，xdvi
+
+```
+<命令名> <引数> ...
+```
+
+※tpic special の命令名は英小文字 2 文字からなるのが特徴的です。例えば以下のようなものです。
+
+```
+pn 8
+ar 140 0 42 42 0 3.142
+```
+
+簡単な図形描画の機能を実現するためのものです。描画プログラミング言語 pic を元にして作られています。eepic や [Xy-pic](/Xy-pic/) などの LaTeX パッケージで利用されています。また，描画ソフトウェアで，TeX 向けのエクスポートで tpic special を用いるものがあります。
+
+数多くの DVI ウェアでサポートされ，一時は「TeX での図形描画機能の標準」の座を占めてしましたが，pdfTeX エンジンが tpic special のサポートを行わなかったため，pdfTeX の使用が主流になるにつれて tpic special の利用は廃れてしまいました。現在では，TeX で図形描画の機能を実装する場合は，まずドライバ判定を行った上で，PostScript 出力の場合は PostScript コード，PDF 出力の場合は PDF 描画命令のコードを生成した上で出力中に（special 命令で）埋め込むという方法が一般的です。例えば pict2e や [TikZ](/TikZ/) はこの方法を採っています。
 
 - 参考：[tpic (pic)](/pic/#xda9ac26)
 
-#### src-specials {#src-specials}
+#### Source special {#src-specials}
 
-TeX ソースのエディタと DVI ビューアとの間で，相互に対応部分にジャンプすることを目的に作られた special コマンドです。
-[dviout](/dviout/) や [xdvi](/xdvi/) などの DVI ビューアが対応しています。
-しかし，現在ではほかの多くのデバイス依存パッケージを利用するようになったことから，PDF まで出力してプレビューする方式が一般的となり，[SyncTeX](/SyncTeX/) に取って代わられました。
-
-### dvipdfmx で用いることができる \special 命令 {#specials-dvipdfmx}
-
-dvipdfmx は様々な special 拡張をサポートしています。
-文書やページの設定を行うものとして
+サポート： dviout，xdvi
 
 ```
-papersize landscape pdf:pagesize pdf:encrypt pdf:minorversion
+src:<行番号> <ファイル名>
 ```
 
-など，dvips 由来のもの，HTML 形式のハイパーリンクなど様々です。
-dvipdfm(x) 自身も独自の special による拡張機能を持ちます。
-dvipdfm(x) 独自の機能を使う場合は，それにより他の DVI ドライバとの互換性を酷く損なうということに注意してください。
+版面中の特定の位置に対応する TeX ソースの位置の情報を記録します。TeX ソースのエディタと DVI ビューアとの間で，相互に対応部分にジャンプすることを目的としたものです。[dviout](/dviout/) や [xdvi](/xdvi/) などの DVI ビューアが対応しています。
 
-ここでは，LaTeX パッケージの機能以外でさまざまな特殊効果を出すために用いることができる \special 拡張機能を紹介します。
+一般的な special 命令は TeX ソース中の \special プリミティブにより出力されるものですが，source special は特別で，TeX エンジンのコマンドのオプションに -src-specials を指定することで，エンジンが自動的に DVI 文書の適当な箇所に special 命令を挿入するという動作を行います。
+
+現在では DVI ファイルではなく PDF ファイルを利用したプレビューが一般的となったため，原理的に DVI ビューアでしかサポートできない source special に代わって，[SyncTeX](/SyncTeX/) 機能が使われるようになっています。
+
+#### dvipdfmx の PDF special {#pdf-specials}
+
+サポート： (x)dvipdfmx
+
+dvipdfmx が独自にサポートしている special（「PDF special」と総称される）は以下の書式を持っています。
+
+```
+pdf:<名前> <引数> ...
+```
+
+引数の書式は命令により様々ですが，一般的に次のことがいえます。
+
+- 引数は空白区切りで指定する。
+- 値の表記に PDF 言語のリテラル形式を用いる。例えば “TeX”という文字列は (TeX) または &lt;546558> のように書く。また配列 \[...\] や辞書 &lt;&lt;...>> を引数に取ることもある。
+- ただし寸法値は TeX 言語と同様に 1.5cm や 20pt のように書く。
+- なぜか知らないが命令の別名が多く存在する。例えば，“pdf:annotation”・“pdf:annotate”・“pdf:annot”・“pdf:ann”は全て同じ命令である。
+
+以下の節では PDF special の一部について説明します。 <!-- これ以上章立てを深くできないので，どうしよう… -->
+
+※ PDF special の書式表示の中で，\[ \] 内は省略可能であることを示します。（\[ \] 自体は書きません。）
+
+#### pdf:minorversion {#pdf-minorversion}
+
+```
+pdf:minorversion <整数>
+```
+
+出力 PDF 文書のマイナーバージョン（1.x の x の部分）を指定します。指定可能な値の範囲は 3～7 です。pdfTeX の \pdfminorversion に相当するものです。
+
+#### pdf:pagesize {#pdf-pagesize}
+
+```
+pdf:pagesize [width <横幅(寸法)>] [height <縦幅(寸法)>]
+    [xoffset <横オフセット(寸法)>] [yoffset <縦オフセット(寸法)>]
+```
+
+出力用の用紙に関する設定です。&lt;横幅> と &lt;縦幅> は用紙サイズを設定するもので，pdfTeX の \pdfpagewidth/height に相当します。&lt;横オフセット> と &lt;縦オフセット> は DVI 座標の原点の位置[^10]を定めるもので，pdfTeX の \pdfxorigin/yorigin に相当するものです。
+
+※papersize special と異なり，パラメタの寸法値には“true付き”と“true無し”のどちらの単位も指定可能で，それは本来の意味を保ちます。
+
+### special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
+
+<!-- こちらは実例を紹介する。 -->
+
+ここでは，DVI 標準の範囲ではできない様々な機能について，実際に special 命令を利用して実装した例を紹介します。
 
 #### ページ設定（用紙サイズなど） {#specials-dvipdfmx-pagesettings}
+
+<!-- FIXME -->
+
+サポート： dvips，(x)dvipdfmx，dviout
 
 landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます。
 
@@ -295,7 +415,9 @@ pagesize は文書の途中でも使えますが，これが実行されるタ�
 
 #### ファイルを添付 {#specials-dvipdfmx-annotate}
 
-アノーテーション（注釈機能）でファイルを添付：
+サポート： (x)dvipdfmx
+
+PDFのアノーテーション（注釈）機能を利用してファイルを添付します。
 
 ```
 \special{pdf:fstream @fileobj (ファイル名をここに)}%
@@ -314,16 +436,18 @@ pagesize は文書の途中でも使えますが，これが実行されるタ�
          }%
 ```
 
-上の例ではまず最初の special で外部ファイルを取り込み，それを fileobj と名付けます。
-次の special で "添付ファイル" アノーテーションを作ります。
+上の例ではまず最初の pdf:fstream special で外部ファイルを取り込み，それを fileobj と名付けます。
+次の pdf:ann special で "添付ファイル" アノーテーションを作ります。
 出来上がった PDF には小さなクリップが表示され，その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです（ビューアによって操作は異なります）。
 このようにして TeX のソースを埋め込んでおくこともできます。
 
 #### XMP メタデータ {#c01ffb78}
 
-XMP メタデータは PDF など様々なファイルに添付できる XML 形式の
-メタデータです。これも fstream を使います。例えば、test.xmp　というファイル名で XMP
-メタデータを用意したとします。
+サポート： (x)dvipdfmx
+
+XMP メタデータは PDF など様々なファイルに添付できる XML 形式のメタデータです。
+これも pdf:fstream を使います。
+例えば、test.xmp というファイル名で XMP メタデータを用意したとすると，以下のコードでそれを添付できます。
 
 ```
  \special{pdf:fstream @xmp (test.xmp) <<
@@ -333,20 +457,22 @@ XMP メタデータは PDF など様々なファイルに添付できる XML 形
  \special{pdf:put @catalog << /Metadata @xmp >>}
 ```
 
-で添付します。（現在のところメタデータは圧縮されます）
+（現在のところメタデータは圧縮されます）
 
 #### PDF に描画・透かしを入れる {#specials-dvipdfmx-drawing}
 
-ページの開始時に任意の PDF 描画コードを挿入することもできます：
+サポート： (x)dvipdfmx
+
+pdf:bop 命令を使用すると，ページの開始時に任意の PDF 描画コードを挿入することができます：
 
 ```
 \special{pdf:bop 0.4 0.4 0.6 rg 0 0 596 842 re 72 72 452 700 re f*}
 ```
 
 これは余白の部分を塗りつぶします。
-"bop" はページの開始時に指定された PDF 描画コードを埋め込みます。
 
-ウォーターマーク（透かし）風のものを入れます：
+ウォーターマーク（透かし）風のものを入れます：<br>
+（bophook パッケージが必要です）
 
 ```
 \documentclass{article}
@@ -371,17 +497,19 @@ Hello, world.
 \end{document}
 ```
 
-（bophook.sty が必要です）やや複雑な例です。
-"obj" はオブジェクトを定義するコマンドでここでは Courier-Bold というフォントを定義しています。
-"bop" はページの開始時に "Sample" という文字列を描画するように指示しています。
-"put" の部分では resources で識別される辞書オブジェクト（ここではページリソース）に与えられたオブジェクトを追加します。
+やや複雑な例です。
+pdf:obj はオブジェクトを定義する命令でここでは Courier-Bold というフォントを定義しています。
+次の pdf:bop ではページの開始時に "Sample" という文字列を描画するように指示しています。
+pdf:put の部分では resources で識別される辞書オブジェクト（ここではページリソース）に与えられたオブジェクトを追加します。
 ここではフォントリソースに先ほど定義したフォント Courier-Bold を "\_Fn01" という名前で登録しています。
 
 上の例ではページに直接 Sample という文字を書き込みましたが，アノーテーションを使ってウォーターマークを入れることもできます。
 
 #### 描画物を切り取り貼り付ける {#jc3fc76f}
 
-bxobj/exobj と uxobj はユニークな機能を提供します。
+サポート： (x)dvipdfmx
+
+pdf:bxobj/exobj と pdf:uxobj はユニークな機能を提供します。
 
 ```
  \special{pdf:bxobj @myform width 100pt height 0pt depth 10pt}%
@@ -400,7 +528,7 @@ bxobj/exobj と uxobj はユニークな機能を提供します。
 TeX の出力結果 "Hello World!" を切り取り，uxobj で貼り付けます。
 一度切り取り保存したオブジェクトは何度も再利用できます。
 
-#### dvipdfmx の \special 使用例のリンク {#specials-dvipdfmx-links}
+## 関連リンク {#links}
 
 - [dvipdfmx（谷村さん）](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html)：dvipdfm/dvipdfmx 用の \special の様々な使用例
 
@@ -412,3 +540,5 @@ TeX の出力結果 "Hello World!" を切り取り，uxobj で貼り付けます
 [^6]: 拡張 DVI ファイルに書き出す時の話です。なお，実用されることはまずないと思いますが，“DVI モードの LuaTeX”も XeTeX と同じ動作になります。
 [^7]: 不幸なことに，dvipdfmx の独自の special 命令は「pdf:」で始まっており，この規定と衝突しています。そのため，この仕様は「dvipdfmx 用の TeX 文書を誤って pdfTeX でコンパイルした時に，エラーも傾向も出ずに壊れた PDF ファイルを出力してしまう」というトラブルの原因となってしまっています。
 [^8]: さらに言うと，「color push Red」という形式の special 命令であれば dvips，dvipdfmx の他に dviout でもサポートされます。
+[^9]: 210truemm などの“true 付”単位を明示的に指定することは（少なくとも dvips では）できません。ちなみに，同じ用途の pdf:pagesize special 命令では，true 付と true 無しの単位は本来の意味を持ちます。
+[^10]: 「例の 1 インチ」のオフセットのことです。
