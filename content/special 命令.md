@@ -9,8 +9,14 @@ pukiwiki: "special 命令"
 
 ## \special 命令 {#headline}
 
-\special 命令とは，DVI ではサポートしていない，デバイス依存の命令を埋め込むための命令です。
-各種図形・画像ファイルのとりこみ，ハイパーテキスト，ソースコードへのジャンプ，用紙サイズの埋め込みなどには全て special 命令が使用されています。
+special 命令とは，DVI 標準ではサポートしていない，各 DVI ドライバの独自拡張機能を指示するための命令です。今日の LaTeX において普通に用いられている，
+
+- 図形描画（[TikZ](/TikZ/)，[PSTricks](/PSTricks/)など）
+- 画像ファイルの取込（[graphicx](/graphicx/)）
+- ハイパーリンクの埋込（[hyperref](/hyperref/)）
+- 用紙サイズ情報の記録（[geometry](/geometry/)など）
+
+などの機能の実装には special 命令が使用されています。
 
 <!-- とりあえず基本的な説明を書くことにする． -->
 
@@ -18,23 +24,33 @@ pukiwiki: "special 命令"
 
 ***
 
-### special 命令とは何か {#p63dedca}
+### special 命令の基本 {#basic}
 
-#### DVI の special 命令 {#m8d5648c}
+<!-- 今の時代に「デバイス」が何を指すかという議論は避けたい。 -->
+
+#### special 命令とは何か {#what-is}
+
+（旧来の）TeX 処理系は組版結果を DVI ファイルに出力します。この「DVI (device-independent) ファイル」というのは，その名称の通り，デバイス非依存な一種のページ記述言語で書かれています。
 
 DVI ファイルは「“A”の文字を出力する」「参照点を右に 1pt 移動する」などの“DVI 命令”から構成されます。DVI 命令の意味は仕様で明確に決められているので，どの DVI ウェア（DVI ファイルを扱うソフトウェア）を用いても同じように解釈されます。
 
-しかし，場合によっては，特定の DVI ウェアの独自拡張の機能が使える方が便利なことがあります。そこで，DVI 仕様では「仕様では意味を定めず，専ら独自拡張機能のために使う」ための特別な命令である「special 命令」を敢えて用意しています。つまり，標準の部分と独自拡張の部分を明確に分離する方針をとっているのです。
+しかし，場合によっては，特定の DVI ウェアにおいて独自拡張の機能が使える方が便利なことがあります。例えば，DVI 標準では「色を付ける」「ハイパーリンクを置く」などの機能は規定されていません。[^1]しかし PDF 文書形式ではこれらの機能が実現できます。となると，dvipdfmx のような「DVI を PDF に変換する」DVI ドライバを実装する場合には，そのような拡張機能を持たせたいというのは自然な要求です。
+
+そこで，DVI 仕様では「仕様では意味を定めず，専ら独自拡張機能のために使う」ための特別な命令である「special 命令」を敢えて用意しています。つまり，標準の部分と独自拡張の部分を明確に分離する方針をとっているのです。
 
 そして TeX 言語では，この「DVI の special 命令」を発行するための機能として，\special プリミティブが用意されています。
 
-DVI の special 命令についての概略を把握するため，一つ例を挙げてみます。[^1]
+今日の LaTeX では，「色を付ける」機能は (x)color パッケージ、ハイパーリンクを作る機能は [hyperref](/hyperref/) パッケージで提供されていますが，これらの機能の実装には special 命令（\special プリミティブ）が利用されています。
+
+#### DVI の special 命令 {#dvi-special}
+
+DVI の special 命令についての概略を把握するため，一つ例を挙げてみます。[^2]
 
 ```
 Te\special{color Red}X
 ```
 
-この TeX 言語コード（の断片）をコンパイルすると，以下のような DVI 命令の列が生成されます。[^2] <!-- DVIでのspecialの扱いの雰囲気を知らせるため，敢えてDVIコードを出す。 -->
+この TeX 言語コード（の断片）をコンパイルすると，以下のような DVI 命令の列が生成されます。[^3] <!-- DVIでのspecialの扱いの雰囲気を知らせるため，敢えてDVIコードを出す。 -->
 
 ```
 54                     : setchar84          % 'T'を出力
@@ -46,17 +62,17 @@ EF09636F6C6F7220526564 : special1 9 'color Red' % special命令
 
 これから判るように，\special プリミティブに与えた引数の文字列は，TeX 処理系により解釈されることなく，そのまま DVI の special 命令の引数として書き出されています。つまり DVI 標準としては「“color Red”という拡張命令が発行された」という意味しか持っていません。ところが，dvips にとっては“color Red”という special 命令は「以降の文字の色を赤に変える」という意味を持っています。従って，上記の命令列を含む DVI ファイルを dvips で処理した場合は，文字“X”が赤色で出力される（ような PostScript ファイルが生成される）ことになります。
 
-#### TeX の \special プリミティブ {#p4ae1289}
+#### TeX の \special プリミティブ {#tex-special}
 
-\special プリミティブは以下のような単純な書式を持ちます。[^3]
+\special プリミティブは以下のような単純な書式を持ちます。[^4]
 
 ```
 \special{<トークン列>}
 ```
 
-ここで引数のトークン列は \write プリミティブと同様に扱われます。つまり，完全展開した後に文字列化した結果が「DVI の special 命令の引数の文字列」となるわけです。
+ここで引数のトークン列は \write プリミティブと同様に“文字列化”されます。つまり，完全展開した後に文字列化した結果が「DVI の special 命令の引数の文字列」となるわけです。
 
-TeX 処理系は，\special{～} が実行[^4]されると，「“～”という special 命令を発行する」という情報を込めた特殊なオブジェクト（whatsit ノード）を現在の参照点に配置します。そして，そのオブジェクトを含むページが出力（shipout）された時に，そのページの DVI 命令列の中に実際に special 命令として現れることになります。
+TeX 処理系は，\special{～} が実行[^5]されると，「“～”という special 命令を発行する」という情報を込めた特殊なオブジェクト（whatsit ノード）を現在の参照点に配置します。そして，そのオブジェクトを含むページが出力（shipout）された時に，そのページの DVI 命令列の中に実際に special 命令として現れることになります。
 
 #### special 命令の文字コード {#fda58d13}
 
@@ -64,7 +80,7 @@ TeX 処理系は，\special{～} が実行[^4]されると，「“～”とい�
 
 - 8 ビット欧文の TeX においては，文字とは実質バイトのことなので，引数のバイト列がそのまま DVI に書き出されます。
 - (u)pTeX において，和文文字は，エンジンの内部漢字コードでエンコードされたバイト列として書き出されます。ソースファイルの漢字コードとは無関係であることに注意してください。欧文文字の扱いは欧文 TeX と同じです。
-- XeTeX [^5]においては，文字列は常に UTF-8 でエンコードされたバイト列として書き出されます。やはりソースファイルの文字コードは無関係です。
+- XeTeX [^6]においては，文字列は常に UTF-8 でエンコードされたバイト列として書き出されます。やはりソースファイルの文字コードは無関係です。
 
 #### PDF 直接出力のときの \special プリミティブ {#j5504fc9}
 
@@ -82,24 +98,104 @@ TeX 処理系は，\special{～} が実行[^4]されると，「“～”とい�
 \pdfliteral{<トークン列>}
 ```
 
-と同等と解釈されます。[^6]
+と同等と解釈されます。[^7]
 
 XeTeX は表向きは PDF を直接出力しているように見えますが，実は内部ではいったん「XDV 形式」（DVI の拡張版）のファイルを出力してそれを xdvipdfmx（dvipdmx の拡張版）で PDF に変換する，という手順を踏んでいます。従って，XeTeX では dvipdfmx がサポートする special 命令が使用できます。また，XeTeX の拡張プリミティブが内部では special 命令により実現されていることもあります。
 
-### \special 命令とデバイス依存（ドライバ依存） {#device-independent}
+### ドライバ依存に関する注意 {#device-independent}
 
-<!-- 一部の内容を最初の小節に繰り入れる。 -->
+そもそも special 命令は「特定の DVI ウェアの独自拡張命令」を表すためのものなので，当然，それを使った DVI ファイルはその特定の DVI ウェアで処理する必要があります。
 
-元来，TeX による組版結果を記録するファイルは DVI (device-independent) という形式で，その名称の通り， DVI ファイルはデバイス非依存な一種のページ記述言語によるファイルでした。
-しかし，TeX 自体は各種図形の描画，画像ファイルのとりこみ，ハイパーリンクなどの機能をもたないため，これらを実現したいという要求がありました。
+例えば，先の例に挙げた
 
-TeX にはソース中に \special{...} という命令を書き込むと，TeX はそれを解釈せずにそのまま DVI ドライバ（出力デバイス）に受け渡すという機能があります。
-この機能を利用し，出力デバイス側で描画やハイパーリンクなどの拡張機能を用意し，DVI ファイル中に埋め込まれた \special 命令を解釈させるという方法がとられるようになりました。
-この手法のうち特に有用なものは多くが LaTeX パッケージ（[graphics(x)](/graphicx/)，(x)color，[hyperref](/hyperref/) など）としてまとめられ，一般ユーザにも広く用いられるようになりました。
-とはいえ，さまざまな特殊効果を出すためにこれらの拡張機能を直接使いたい場合もあるでしょう。
+```
+\special{color Red}
+```
 
-こうした拡張が進んだ結果，いまどきのユーザは各種の \special を（意図的にあるいは暗黙のうちに） 使うことによって「デバイス依存」な DVI ファイルを作りがちになっています。
-しかし，これらの \special 命令を用いて作成した DVI ファイルは，その命令を正しく解釈できるデバイスドライバ以外で正しく印刷することができないことに注意が必要です。
+は dvips 用の special 命令なので，これを用いた DVI ファイルは dvips でないと正常に処理されない，ということです。
+
+ただし，ある種類の special 命令が（互換性確保などの理由で）複数の DVI ウェアでサポートされている場合もあります。例えば，実は「color Red」という special 命令は dvipdfmx でもサポートされています。[^8]
+
+いずれにしても，\special プリミティブを含むコードを扱うときは，それが特定の DVI ウェアに依存することを常に念頭に置いておく必要があります。
+
+#### LaTeX パッケージのドライバオプション {#driver-option}
+
+DVI 標準にない機能で，「複数の DVI ウェアでサポートされているが，それを実現する special 命令の書き方が異なる」という場合があります。例えば，「テキストを斜体変形する」という機能は dvips では次のような PostScript special 命令を使ったマクロで実現できます。
+
+```
+% slantbox{<傾き率>}{<テキスト>}
+\def\slantbox#1#2{\leavevmode\bgroup\setbox0\hbox{#2}%
+  \special{ps: gsave currentpoint currentpoint translate
+    [1 0 #1 neg 1 0 0] concat neg exch neg exch translate}%
+  \hbox to0pt{\copy0\hss}%
+  \special{ps: grestore}\kern\wd0\egroup}
+```
+
+ところが，同じ機能について，dvipdfmx では次のように PDF special を使う必要があります。
+
+```
+% slantbox{<傾き率>}{<テキスト>}
+\def\slantbox#1#2{\leavevmode\bgroup\setbox0\hbox{#2}%
+  \special{pdf:btrans 1 0 #1 1 0 0}\hbox to0pt{\copy0\hss}%
+  \special{pdf:etrans}\kern\wd0\egroup}
+```
+
+ここで，そのような機能を LaTeX パッケージ（“twslant パッケージ”）として提供したいとします。そういう場合は，graphicx パッケージなどと同様に，「文書作成者がドライバオプションを指定する」インタフェースを採用するのが通例です。 <!-- tw- は "TeX Wiki" の略。 -->
+
+```
+% twslant.sty
+\RequirePackage{ifpdf}
+\DeclareOption{dvips}{% dvipsの場合
+  \def\twslant@start#1{\special{ps:
+    gsave currentpoint currentpoint translate
+    [1 0 #1 neg 1 0 0] concat neg exch neg exch translate}}%
+  \def\twslant@end{\special{ps: grestore}}}
+\DeclareOption{dvipdfmx}{% dvipdfmxの場合
+  \def\twslant@start#1{\special{pdf:btrans 1 0 #1 1 0 0}}%
+  \def\twslant@end{\special{pdf:etrans}}}
+\DeclareOption{pdftex}{% pdfTeXの場合
+  \def\twslant@start#1{\pdfsave\pdfsetmatrix{1 0 #1 1}}%
+  \def\twslant@end{\pdfrestore}}
+\ifpdf \ExecuteOption{pdftex}\fi % pdfTeXを自動判定する
+\ProcessOptions\relax
+% \slantbox{<傾き率>}{<テキスト>}
+\newcommand*\slantbox[2]{\leavevmode\bgroup\setbox\z@\hbox{#2}%
+  \twslant@start{#1}\hb@xt@\z@{\copy\z@\hss}%
+  \twslant@end\kern\wd\z@\egroup}
+```
+
+この方式を採用しておくと，パッケージの使用者（文書作成者）は，「dvips を使う場合と dvipdfmx を使う場合で，ソースの記述が一か所しか異ならない」というメリットが得られます。
+
+```
+% ↓ドライバオプションを変えるだけでよい!
+\documentclass[a4paper,uplatex,dvips]{jsarticle}
+%...
+\usepackage{twslant}
+%...
+\begin{document}
+\slantbox{0.3}{※暫定版（2016-08-08）}
+%...
+\end{document}
+```
+
+たとえ，一種類の DVI ウェアしかサポートしないという場合も，この方式を採用することにはメリットがあります。今日の習慣では，文書作成者がドライバオプションをグローバルオプションとして指定していることが期待できるので，サポート外の DVI ウェア（や TeX エンジン）が使われている場合に，適切なエラーを出すことができるのです。
+
+```
+% twxxx.sty
+\newif\iftwxxx@ok \twxxx@okfalse
+\DeclareOption{dvipdfmx}{\twxxx@oktrue}
+\DeclareOption{dvips}{\twxxx@okfalse}
+\DeclareOption{dviout}{\twxxx@okfalse}
+% pdfTeX とかの扱いも同様に...
+\iftwxxx@ok\else
+  \PackageError{twxxx}{Not supported}\@ehc
+\fi
+```
+
+<!-- 一般のLaTeXユーザに対する注意をこの記事に書いてもあまり意味がなさそう。 -->
+
+<!-- こうした拡張が進んだ結果，いまどきのユーザは各種の \special を（意図的にあるいは暗黙のうちに） 使うことによって「デバイス依存」な DVI ファイルを作りがちになっています。 -->
+<!-- しかし，これらの \special 命令を用いて作成した DVI ファイルは，その命令を正しく解釈できるデバイスドライバ以外で正しく印刷することができないことに注意が必要です。 -->
 
 ### 主な \special 命令の種類 {#specials-set}
 
@@ -308,9 +404,11 @@ TeX の出力結果 "Hello World!" を切り取り，uxobj で貼り付けます
 
 - [dvipdfmx（谷村さん）](http://www2.hyo-med.ac.jp/~tanimura/LaTeX/dvipdfmx.html)：dvipdfm/dvipdfmx 用の \special の様々な使用例
 
-[^1]: special 命令を扱うのに，DVI 仕様の詳細についての理解は（一般には）不要です。
-[^2]: ここで挙げたダンプ形式はここでの説明のためのアドホックなものです。実際に DVI ファイルを人間が読める形に“逆アセンブル”するには，dvitype や dv2dt などのツールを利用します。なお，dvitype では special 命令は“xxx”と表示されます。
-[^3]: 「暗黙の波括弧」などの些末な話は措いておきましょう。
-[^4]: もちろん，\special プリミティブは展開可能ではありません。
-[^5]: 拡張 DVI ファイルに書き出す時の話です。なお，実用されることはまずないと思いますが，“DVI モードの LuaTeX”も XeTeX と同じ動作になります。
-[^6]: 不幸なことに，dvipdfmx の独自の special 命令は「pdf:」で始まっており，この規定と衝突しています。そのため，この仕様は「dvipdfmx 用の TeX 文書を誤って pdfTeX でコンパイルした時に，エラーも傾向も出ずに壊れた PDF ファイルを出力してしまう」というトラブルの原因となってしまっています。
+[^1]: モノクロのプリンターで紙に印刷する場合にはこれらの機能は意味を持たないので，“デバイス非依存”を旨とする DVI 標準でサポートされないのは当然でしょう。
+[^2]: special 命令を扱うのに，DVI 仕様の詳細についての理解は（一般には）不要です。
+[^3]: ここで挙げたダンプ形式はここでの説明のためのアドホックなものです。実際に DVI ファイルを人間が読める形に“逆アセンブル”するには，dvitype や dv2dt などのツールを利用します。なお，dvitype では special 命令は“xxx”と表示されます。
+[^4]: 「暗黙の波括弧」などの些末な話は措いておきましょう。
+[^5]: もちろん，\special プリミティブは展開可能ではありません。
+[^6]: 拡張 DVI ファイルに書き出す時の話です。なお，実用されることはまずないと思いますが，“DVI モードの LuaTeX”も XeTeX と同じ動作になります。
+[^7]: 不幸なことに，dvipdfmx の独自の special 命令は「pdf:」で始まっており，この規定と衝突しています。そのため，この仕様は「dvipdfmx 用の TeX 文書を誤って pdfTeX でコンパイルした時に，エラーも傾向も出ずに壊れた PDF ファイルを出力してしまう」というトラブルの原因となってしまっています。
+[^8]: さらに言うと，「color push Red」という形式の special 命令であれば dvips，dvipdfmx の他に dviout でもサポートされます。
