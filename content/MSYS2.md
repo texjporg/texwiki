@@ -57,6 +57,16 @@ MSYS2 でインストールできます．
 
 - [にっき&#9834;: TeX Liveのビルド](http://abenori.blogspot.jp/2015/11/tex-live.html)
 
+C:\msys64\mingw64_shell.bat をダブルクリックして以下のコマンドを実行するとビルドできるようです．
+
+```
+$ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-libs mingw-w64-x86_64-fontconfig make rsync
+$ mkdir texlive && cd texlive
+$ rsync -a --delete --exclude=.svn --exclude=Work tug.org::tldevsrc/Build/source/ .
+$ mkdir Work && cd Work
+$ ../Build --no-clean
+```
+
 ## MSYS2 関連リンク {#i2a5ff0e}
 
 - TwitterSearch:MSYS2, TwitterSearch.en:MSYS2, TwitterSearch.ja:MSYS2
