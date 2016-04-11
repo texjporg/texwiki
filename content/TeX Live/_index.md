@@ -289,7 +289,11 @@ root 権限でインストーラを実行します．
 $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
-### [TeX Live のビルド](http://www.tug.org/texlive/build.html) {#build}
+### TeX Live のビルド {#build}
+
+- Building TeX Live
+    - [http://www.tug.org/texlive/doc/tlbuild.html](http://www.tug.org/texlive/doc/tlbuild.html)
+    - [http://www.tug.org/texlive/build.html](http://www.tug.org/texlive/build.html)
 
 #### Windows {#mc7cf9a9}
 
