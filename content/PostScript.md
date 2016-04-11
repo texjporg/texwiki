@@ -35,7 +35,9 @@ PostScript の技術情報は Adobe の [Technical Notes for Developers](http://
 
 Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するためのソフトウェアです．
 
-- [Acrobat Distiller は何をするためのソフトウェアですか](http://helpx.adobe.com/jp/legacy/kb/4624.html)
+- [Creating PDFs with Acrobat Distiller](https://helpx.adobe.com/acrobat/using/creating-pdfs-acrobat-distiller.html)
+- [Acrobat Distiller による PDF の作成](https://helpx.adobe.com/jp/acrobat/using/creating-pdfs-acrobat-distiller.html)
+- [Acrobat Distiller は何をするためのソフトウェアですか](https://helpx.adobe.com/jp/legacy/kb/4624.html)
 
 ### EPS 作成 {#lceaa8b7}
 
