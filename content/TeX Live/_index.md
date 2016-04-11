@@ -113,6 +113,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
+    - [http://texlive.texjp.org/current/tlnet/](http://texlive.texjp.org/current/tlnet/)
 
 - <strong>FTP</strong>
     - [ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -223,9 +224,9 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - [the status of texlive-pretest mirrors](http://www.tug.org/texlive/mirmon/)
 
 - Network Based Installer, MacTeX, BasicTeX
+    - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [ftp://ftp.math.utah.edu/pub/texlive/tlpretest/](ftp://ftp.math.utah.edu/pub/texlive/tlpretest/)
-    - [http://ctan.ijs.si/mirror/mactex/](http://ctan.ijs.si/mirror/mactex/)
 - TeX Live ISO Images
     - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
     - [ftp://ftp.math.utah.edu/pub/texlive/Images/test/](ftp://ftp.math.utah.edu/pub/texlive/Images/test/)
