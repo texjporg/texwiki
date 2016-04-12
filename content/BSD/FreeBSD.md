@@ -9,7 +9,7 @@ pukiwiki: "BSD/FreeBSD"
 
 [BSD](/BSD/) > FreeBSD
 
-## [FreeBSD](http://www.freebsd.org) {#r05903ba}
+## [FreeBSD](https://www.freebsd.org) {#r05903ba}
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -17,19 +17,19 @@ pukiwiki: "BSD/FreeBSD"
 
 FreeBSD はオープンソースの Unix 系オペレーティングシステムです．
 
-- [The FreeBSD Project](http://www.freebsd.org)
-- [The FreeBSD Project (ja)](http://www.freebsd.org/ja/)
+- [The FreeBSD Project](https://www.freebsd.org)
+- [The FreeBSD Project (ja)](https://www.freebsd.org/ja/)
 
 ### Ports {#j8583985}
 
-- [About FreeBSD Ports](http://www.freebsd.org/ports/)
+- [About FreeBSD Ports](https://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
 #### お知らせ {#w2f34805}
 
-- [Ports svn r392534 UPDATING 20150720](http://svnweb.freebsd.org/ports/head/UPDATING?r1=391745&r2=392534) にて，Ports は TeX Live 2015 ベースとなりました．
-- [Ports svn r365720 UPDATING 20140823](http://svnweb.freebsd.org/ports/head/UPDATING?r1=365599&r2=365720) にて，Ports は TeX Live 2014 ベースとなりました．
-- [Ports svn r362648 UPDATING 20140727](http://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
+- [Ports svn r392534 UPDATING 20150720](https://svnweb.freebsd.org/ports/head/UPDATING?r1=391745&r2=392534) にて，Ports は TeX Live 2015 ベースとなりました．
+- [Ports svn r365720 UPDATING 20140823](https://svnweb.freebsd.org/ports/head/UPDATING?r1=365599&r2=365720) にて，Ports は TeX Live 2014 ベースとなりました．
+- [Ports svn r362648 UPDATING 20140727](https://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
 
 ### 派生版 {#t29f2245}
 
@@ -38,7 +38,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
-- [http://svnweb.freebsd.org/ports/head/print/texlive-full/](http://svnweb.freebsd.org/ports/head/print/texlive-full/)
+- [https://svnweb.freebsd.org/ports/head/print/texlive-full/](https://svnweb.freebsd.org/ports/head/print/texlive-full/)
 - [FreshPorts -- print/texlive-full](http://www.freshports.org/print/texlive-full/)
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
@@ -122,7 +122,7 @@ $ sudo tlmgr update --self --all
 を実行すれば OK です．<br>
 （Ports でインストールした場合は [tlmgr](/tlmgr/) は使えないようにしているそうです．
 こちらを参照:
-[http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html](http://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html) ）
+[https://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html](https://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html) ）
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
 
