@@ -35,6 +35,7 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 
 - TwitterSearch:Metafile to EPS Converter, TwitterSearch.en:Metafile to EPS Converter, TwitterSearch.ja:Metafile to EPS Converter
 - [Metafile to EPS Converter で Windows Metafile を EPS に変換](http://qiita.com/tubo28/items/1f8672fb164aafa9ab31)
+- [EPS変換 Metafile to EPS Converter](http://ameblo.jp/amazingsky/entry-12062809562.html)
 - [【PowerPoint】パワポがなかったら卒論は書けなかった話をする【パワポすごい】](http://buutan.hatenablog.com/entry/2015/02/14/043201)
 - [TeXを便利に使うツール類#Metafile to EPS Converter(画像変換ツール)](http://c.nagaokaut.ac.jp/index.php?TeX%A4%F2%CA%D8%CD%F8%A4%CB%BB%C8%A4%A6%A5%C4%A1%BC%A5%EB%CE%E0#m1f3deae)
 - [ExcelのグラフをTeXに持ち込む](http://www.caspar003.info/delta/archive/2011/09/26/2337)
