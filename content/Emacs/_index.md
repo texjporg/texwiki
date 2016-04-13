@@ -88,7 +88,7 @@ YaTeX や AUCTeX の最新版もここから簡単に入手できます．
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413)：(X)Emacs frontend to forward search with SumatraPDF
 - [RefTeX](https://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
 - [BibTeX](https://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
-- [latex_editor](http://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
+- [latex_editor](https://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
 - [emacs, mozc, TeX 入力](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1319)
 - [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
 - [emacs内でTeX文書の作成からpdf閲覧まで行う](http://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
