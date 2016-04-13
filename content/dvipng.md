@@ -62,15 +62,18 @@ $ pdftocairo -png hoge.pdf
 
 - [http://www.nongnu.org/dvipng/](http://www.nongnu.org/dvipng/)
 - [http://savannah.nongnu.org/projects/dvipng/](http://savannah.nongnu.org/projects/dvipng/)
-- [http://sourceforge.net/projects/dvipng/](http://sourceforge.net/projects/dvipng/)
+- [https://sourceforge.net/projects/dvipng/](https://sourceforge.net/projects/dvipng/)
 - [http://www.gnu.org/software/auctex/preview-latex](http://www.gnu.org/software/auctex/preview-latex)
 
 #### License {#s323d9c3}
 
-[LGPLv3](http://cvs.savannah.gnu.org/viewvc/dvipng/COPYING.LESSER?root=dvipng&view=markup)
+[LGPLv3](http://git.savannah.gnu.org/cgit/dvipng.git/tree/COPYING.LESSER)
 
 #### ChangeLog {#b9b69757}
 
+- [http://git.savannah.gnu.org/cgit/dvipng.git](http://git.savannah.gnu.org/cgit/dvipng.git)
+    - [log](http://git.savannah.gnu.org/cgit/dvipng.git/log/)
+    - [ChangeLog](http://git.savannah.gnu.org/cgit/dvipng.git/tree/ChangeLog)
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipng](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipng/ChangeLog?view=markup)
