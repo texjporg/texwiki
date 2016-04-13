@@ -32,7 +32,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [SyncTeX](http://wiki.lyx.org/LyX/SyncTeX)
     - [Logotype](http://wiki.lyx.org/LyX/Logotype)
     - [SplashScreen](http://wiki.lyx.org/LyX/SplashScreen)
-- [LyXWinInstaller](http://sourceforge.net/projects/lyxwininstaller/)
+- [LyXWinInstaller](https://sourceforge.net/projects/lyxwininstaller/)
 - [LyX in Launchpad](https://launchpad.net/lyx)
 - [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
 - [lyx-devel](http://www.mail-archive.com/lyx-devel@lists.lyx.org/)
@@ -61,7 +61,7 @@ Windows, Cygwin, OS X, Linux<br>
 
 <!-- **派生版 [#h5bb137d] -->
 <!--  -->
-<!-- -[[LyXWinInstaller:http://sourceforge.net/projects/lyxwininstaller/]] -->
+<!-- -[[LyXWinInstaller:https://sourceforge.net/projects/lyxwininstaller/]] -->
 <!-- -[[LyX-JP プロジェクト日本語トップページ - OSDN:http://osdn.jp/projects/jalyx/]] -->
 <!-- -[[Project Web of LyX-JP on OSDN Web space:http://jalyx.osdn.jp/]] -->
 
