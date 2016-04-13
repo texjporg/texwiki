@@ -213,7 +213,7 @@ $ wget https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 または
 
 ```
-$ curl -LO https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
+$ curl -kRLO https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 ```
 
 ファイルを展開して eqtexsvg.py に実行権限を付加して /usr/share/inkscape/extensions にコピーします．<br>
