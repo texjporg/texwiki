@@ -242,7 +242,7 @@ Microsoft Windows ならおそらく次に相当します（さらに正確に�
 
 ### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
 
-[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](http://sourceforge.net/projects/latexee/) です。
+[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](https://sourceforge.net/projects/latexee/) です。
 本来は [MiKTeX](/MiKTeX/) を必要とするソフトウェアですが，MiKTeX の texify.exe の代わりに TeX Live や W32TeX の uplatex.exe を指定すれば MiKTeX がなくても動作します。
 PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の背景色が透過されず白地のままであるという注意点があります。
 
