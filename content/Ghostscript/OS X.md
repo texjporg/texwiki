@@ -229,7 +229,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 %%% WenQuanYi outline fonts
 %%% See http://wenq.org/
-%%%     http://sourceforge.net/projects/wqy/
+%%%     https://sourceforge.net/projects/wqy/
 /WenQuanYiZenHei              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/wqy-zenhei/wqy-zenhei.ttf) >> ;
 /WenQuanYiZenHei-Adobe-CNS1   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/wqy-zenhei/wqy-zenhei.ttf) >> ;
 
