@@ -201,7 +201,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 <!-- -[[paco:http://paco.sourceforge.net/]] をインストールします。 -->
 <!--  -->
-<!-- $ curl -R -L -O http://sourceforge.net/projects/paco/files/paco/2.0.9/paco-2.0.9.tar.bz2 -->
+<!-- $ curl -kRLO https://sourceforge.net/projects/paco/files/paco/2.0.9/paco-2.0.9.tar.bz2 -->
 <!-- $ tar xvf paco-2.0.9.tar.bz2 -->
 <!-- $ pushd paco-2.0.9 -->
 <!-- $ ./configure - -prefix=/mingw - -disable-gpaco -->
