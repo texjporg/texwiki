@@ -26,15 +26,17 @@ TeX Live に標準で含まれています。
 
 ### インストール {#a2be7136}
 
-本家や [CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/) に各種バイナリがあります。
+[http://jaist.dl.sourceforge.net/project/asymptote/](http://jaist.dl.sourceforge.net/project/asymptote/) や [https://sourceforge.net/projects/asymptote/files/](https://sourceforge.net/projects/asymptote/files/) に各種バイナリがあります。
 
 また，Asymptote は [Ghostscript](/Ghostscript/) に依存しています。
 
-- Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がなされています。Asymptote 2.33 以降を使用する場合は Ghostscript も 9.14 以上にアップデートする必要があります。逆に，Asymptote 2.32 以前を使用する場合は 9.14 以下をインストールする必要があります。
+Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がなされています。Asymptote 2.33 以降を使用する場合は Ghostscript も 9.14 以上にアップデートする必要があります。逆に，Asymptote 2.32 以前を使用する場合は 9.14 以下をインストールする必要があります。
 
 ### ビルド {#e0083d41}
 
 ソースからコンパイルするのも簡単です。
+
+[本家](https://github.com/vectorgraphics/asymptote/releases) や [CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/) にソースコードがあります。
 
 OS X でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
@@ -178,7 +180,8 @@ yaxis("$y$",LeftRight,RightTicks);
 
 ### 関連リンク {#xbb02c40}
 
-- [Asymptote project on SourceForge](http://sourceforge.net/projects/asymptote/)
+- [Asymptote project on GitHub](https://github.com/vectorgraphics/asymptote)
+- [Asymptote project on SourceForge](https://sourceforge.net/projects/asymptote/)
 - [Asymptote に関する投稿 - Qiita](http://qiita.com/tags/asymptote)
 - [Asymptote のつかいかた](http://2nd.geocities.jp/asy_zenkin/) → ひととおりの使い方が説明された数少ない日本語リソース。TeX Live 2014 対応
 - [W32Tex や Asymptote の導入(インストール)に成功するまで経緯（１）](http://blogs.yahoo.co.jp/eikei375/38640701.html)
@@ -192,11 +195,11 @@ yaxis("$y$",LeftRight,RightTicks);
 
 #### License {#a68c9862}
 
-[GPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE), [LGPLv3](http://sourceforge.net/p/asymptote/code/HEAD/tree/trunk/asymptote/LICENSE.LESSER)
+[GPLv3](https://github.com/vectorgraphics/asymptote/blob/master/LICENSE), [LGPLv3](https://github.com/vectorgraphics/asymptote/blob/master/LICENSE.LESSER)
 
 #### ChangeLog {#qa654d5d}
 
-- [http://sourceforge.net/p/asymptote/code/HEAD/tree/](http://sourceforge.net/p/asymptote/code/HEAD/tree/)
-    - [log](http://sourceforge.net/p/asymptote/code/HEAD/log/)
+- [https://github.com/vectorgraphics/asymptote](https://github.com/vectorgraphics/asymptote)
+    - [https://github.com/vectorgraphics/asymptote/commits/master](https://github.com/vectorgraphics/asymptote/commits/master)
 
 [^1]: EPS 出力デバイスについて，gs9.15 では epswrite が廃止され，代わりに gs9.14 で導入された eps2write が標準となっています。
