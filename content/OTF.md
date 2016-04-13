@@ -370,8 +370,13 @@ Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
 
 ## Adobe-Japan1-6 とは {#j54465d8}
 
-2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004の印刷標準字体や
-U-PRESS用の文字を含む23,058グリフの文字セットです。
+2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，
+JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004 の印刷標準字体や
+U-PRESS 用の文字を含む
+23,058 グリフの文字セットです。
+
+### 小塚書体 {#gb6f9473}
+
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader DC 日本語版または Adobe Acrobat Reader DC に用いるアジア・拡張言語フォントパックに含まれているので
 Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用できます。
@@ -390,6 +395,13 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
     韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
 
 が付属しています。
+
+### 游書体 {#qe2ec43e}
+
+Windows 10, OS X に付属している游書体フォントは Adobe-Japan1-6 に準拠しています。
+
+- [OS搭載の游書体について](http://www.jiyu-kobo.co.jp/os-installed-y/)
+- [OS搭載の游書体一覧PDF](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/04/compatibility_160325.pdf)
 
 ### ヒラギノと OS X {#l1d1369f}
 
