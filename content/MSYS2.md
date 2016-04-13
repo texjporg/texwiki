@@ -40,13 +40,13 @@ $ powershell -? | iconv -f CP932 -t UTF-8
 
 ## Mingw-w64 {#q2a4db43}
 
-Mingw-w64 は 64-bit Windows と 32-bit Windows のバイナリを出力するためのソフトウェアです．
+Mingw-w64 は 64-bit Windows または 32-bit Windows のバイナリを出力するためのソフトウェアです．
 [MinGW](/MinGW/) と比較すると 64-bit 対応や新しい API サポートなどが追加されています．
 MSYS2 でインストールできます．
 
 - [Mingw-w64 - GCC for Windows 64 &amp; 32 bits \[mingw-w64\]](http://mingw-w64.org/)
     <!-- -[[MinGW 64 bit | Qt Wiki | Qt Developer Network:http://qt-project.org/wiki/MinGW-64-bit]] -->
-    <!-- -[[mingw-w64-dgn:http://sourceforge.net/projects/mingw-w64-dgn/]] -->
+    <!-- -[[mingw-w64-dgn:https://sourceforge.net/projects/mingw-w64-dgn/]] -->
     <!-- -[[クロスGCC(on Linux Host for Targeting Mingw-w64 Windows)のビルド:http://sideseeker.hateblo.jp/entry/2013/10/06/072748]] -->
     <!-- -[[MinGW (64bit) + MSYS 環境の構築 (1):http://www.devlog.alt-area.org/?p=2802]], [[(2):http://www.devlog.alt-area.org/?p=2900]] -->
     <!-- -https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/ -->
