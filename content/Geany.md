@@ -21,7 +21,6 @@ Geany は LaTeX の編集に対応しています．<br>
 Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．<br>
 
 - [Geany](http://www.geany.org/)
-- [Geany Portable](http://sourceforge.net/projects/geanyportable/files/)
 
 ### 動作環境 {#ib302119}
 
