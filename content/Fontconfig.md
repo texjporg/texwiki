@@ -17,16 +17,30 @@ Fontconfig は、主に Linux などで用いられる、システムのフォ�
 
 ## インストール {#c70d9c03}
 
+### MSYS2 {#pbb482ae}
+
+64-bit fontconfig の場合は
+
+```
+$ pacman -S mingw-w64-x86_64-fontconfig
+```
+
+32-bit fontconfig の場合は
+
+```
+$ pacman -S mingw-w64-i686-fontconfig
+```
+
 ### MinGW {#j2ea43a1}
 
-最新のものにこだわらないのであれば、[GTK+ Project](http://www.gtk.org/) の [Windows 用バイナリ](http://www.gtk.org/download/win32.php)をもらってくるのが簡単です。FreeType2 や libxml2 に依存しています。
+最新のものにこだわらないのであれば、[http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/](http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/) から Windows 用バイナリをもらってくるのが簡単です。FreeType2 や libxml2 に依存しています。
 
 ソースからビルドする場合は、例えば
 
 ```
-$ curl -R -L -O http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.94.tar.bz2
-$ tar xvf fontconfig-2.11.94.tar.bz2
-$ pushd fontconfig-2.11.94
+$ curl -kRLO https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.95.tar.bz2
+$ tar xvf fontconfig-2.11.95.tar.bz2
+$ pushd fontconfig-2.11.95
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
