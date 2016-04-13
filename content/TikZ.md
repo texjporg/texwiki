@@ -31,7 +31,7 @@ TikZ/PGF は LaTeX だけでなく plain TeX と [ConTeXt](/ConTeXt/) にも対�
 LaTeX の場合について記述します。
 
 - [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
-- [PGF and TikZ -- Graphic systems for TeX](http://sourceforge.net/projects/pgf/)
+- [PGF and TikZ -- Graphic systems for TeX](https://sourceforge.net/projects/pgf/)
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
 - [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
@@ -1043,7 +1043,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [PGFPlots](http://pgfplots.sourceforge.net/)
     - [Introductory Talk (pdf)](http://pgfplots.sourceforge.net/pgfplots_talk_FTUG_2012_final.pdf) (at French TeX User Group, April 14 2012)
     - [Pgfplot - ConTeXt wiki](http://wiki.contextgarden.net/Pgfplot)
-- [TikZ-dependency](http://sourceforge.net/projects/tikz-dependency/)
+- [TikZ-dependency](https://sourceforge.net/projects/tikz-dependency/)
     - A LaTeX library to draw all sorts of dependency trees and graphs
     - [TikZ-dependency で 係り受け木を描く](http://tetsuok.hatenablog.com/entry/2012/06/30/040852)
     - [% -\*- coding: utf-8 -\*- % Only for XeLaTeX. % need to install tikz-dependency pa - Pastebin.com](http://pastebin.com/2RTcBAA3)
