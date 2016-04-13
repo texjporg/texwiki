@@ -7,7 +7,7 @@ pukiwiki: "pstoedit"
 
 # pstoedit
 
-## [pstoedit](http://sourceforge.net/projects/pstoedit/) {#o4a6bcaf}
+## [pstoedit](https://sourceforge.net/projects/pstoedit/) {#o4a6bcaf}
 
 pstoedit は，[PostScript](/PostScript/) や [PDF](/PDF/) ファイルを，種々のドローツールでサポートされる他のベクター画像形式に変換するツールです．
 [Ghostscript](/Ghostscript/) がインストールされている必要があります．
@@ -15,7 +15,7 @@ pstoedit は，[PostScript](/PostScript/) や [PDF](/PDF/) ファイルを，種
 <strong>公式サイト</strong>
 
 - [http://www.pstoedit.net/](http://www.pstoedit.net/)
-- [http://osdn.jp/projects/sfnet_pstoedit/](http://osdn.jp/projects/sfnet_pstoedit/)
+- [https://sourceforge.net/projects/pstoedit/](https://sourceforge.net/projects/pstoedit/)
 
 [W32TeX](/W32TeX/) には標準で含まれています．
 
