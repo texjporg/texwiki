@@ -45,7 +45,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | gtk+ | .bib ファイルの作成・検索などを対話的に行う GUI プログラム．日本語が通らない． |
 | [tkbibtex](https://mirror.ctan.org/biblio/bibtex/utils/tkbibtex/) | tcl/tk | .bib ファイル作成編集プログラム．日本語表示 OK だが，atokx では入力できない． |
 | [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
-| [bibcursed](http://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト．ncursesを利用したインターフェイスで非常に高速に入力できる．日本語OK |
+| [bibcursed](https://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト．ncursesを利用したインターフェイスで非常に高速に入力できる．日本語OK |
 | [BibFile Editor](http://www.h7.dion.ne.jp/~yochian/macro.htm) | Windows95 | 簡易エディタ． |
 | [bibclean](http://ftp.math.utah.edu/pub//bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム．日本語可． |
 
