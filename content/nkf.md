@@ -7,7 +7,7 @@ pukiwiki: "nkf"
 
 # nkf
 
-## [nkf](http://osdn.jp/projects/nkf/) {#ie06d283}
+## [nkf](https://osdn.jp/projects/nkf/) {#ie06d283}
 
 nkf は，文字コードを変換するツールです。
 
@@ -34,28 +34,28 @@ nkfwin/vc2005/win32(98,Me,NT,2000,XP,Vista,7)Windows-31J/
 
 #### OS X {#iac446b4}
 
-MacPorts でインストールすることができます。
-
-```
-$ sudo port install nkf
-```
-
-Homebrew でインストールすることもできます。
+Homebrew でインストールする場合は
 
 ```
 $ brew install nkf
 ```
 
+MacPorts でインストールする場合は
+
+```
+$ sudo port install nkf
+```
+
 ### ビルド {#vec07303}
 
-#### Windows（MinGW を使用） {#gdd930d3}
+#### MinGW {#gdd930d3}
 
 ソースからビルドする方法です。
 
 ```
-$ curl -R -L -O http://prdownloads.osdn.jp/nkf/59912/nkf-2.1.3.tar.gz
-$ tar xvf nkf-2.1.3.tar.gz
-$ pushd nkf-2.1.3
+$ curl -kRLO http://jaist.dl.osdn.jp/nkf/64158/nkf-2.1.4.tar.gz
+$ tar xvf nkf-2.1.4.tar.gz
+$ pushd nkf-2.1.4
 $ make
 $ make prefix=/mingw install
 mkdir /mingw/bin
@@ -86,11 +86,11 @@ Windows では nkf の場所は以下のようにして確認できます．
 
 - Windows PowerShell の場合
 
-    ```
-    PS > Get-Command nkf | Select-Object Path
-    エイリアスを使用した場合は
-    PS > gcm nkf | select path
-    ```
+```
+PS > Get-Command nkf | Select-Object Path
+エイリアスを使用した場合は
+PS > gcm nkf | select path
+```
 
 ```
 Path
@@ -101,15 +101,29 @@ C:\w32tex\bin\nkf.exe
 
 - コマンド プロンプトの場合
 
-    ```
-    >where nkf
-    C:\w32tex\bin64\nkf.exe
-    C:\w32tex\bin\nkf.exe
-    ```
+```
+>where nkf
+C:\w32tex\bin64\nkf.exe
+C:\w32tex\bin\nkf.exe
+```
+
+- MinGW Shell (MSYS) の場合
+
+```
+$ which nkf
+/mingw/bin/nkf.exe
+```
+
+> または
+
+```
+$ type nkf
+nkf is /mingw/bin/nkf
+```
 
 ### 使い方 {#t5e5a246}
 
-[upLaTeX](/upTeX,upLaTeX/) や [LuaLaTeX](/LuaTeX/) を使う場合は，TeX ソースやパッケージファイルの文字コードを UTF-8 に統一する必要があります[^1]。
+[upLaTeX](/upTeX,upLaTeX/), [LuaLaTeX](/LuaTeX/), LuaJITLaTeX, [XeLaTeX](/XeTeX/) を使う場合は，TeX ソースやパッケージファイルの文字コードを UTF-8 に統一する必要があります[^1]。
 このような場合に nkf が有用です。
 
 たとえば，古い TeX 環境などで Shift_JIS で作成した TeX ソース src.tex を UTF-8 に変換して dest.tex として保存したい場合は
@@ -142,6 +156,8 @@ $ nkf -s src.tex > dest.tex
 
 ### 関連リンク {#qf2a585a}
 
+- [https://osdn.jp/projects/nkf/](https://osdn.jp/projects/nkf/)
+- [http://jaist.dl.osdn.jp/nkf/](http://jaist.dl.osdn.jp/nkf/)
 - UTF-8への変換 [forum:545](https://okumuralab.org/tex/mod/forum/discuss.php?d=545)
 - [nkfを使ってファイルの文字コードを変換する](http://dev.classmethod.jp/tool/exchange-file-encode-by-nkf/)
 - [文字コード変換コマンドの nkfの使い方と実例をまとめました。](http://takuya-1st.hatenablog.jp/entry/20100511/1273585953)
