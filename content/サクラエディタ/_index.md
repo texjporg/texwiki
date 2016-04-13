@@ -27,8 +27,8 @@ pukiwiki: "サクラエディタ"
 
 - [サクラエディタ - SourceForge](http://sakura-editor.sourceforge.net/)
     - 掲示板\[[一般\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
-    - [Sakura Editor / Wiki / Home](http://sourceforge.net/p/sakura-editor/wiki/)
-    - [Members](http://sourceforge.net/p/sakura-editor/_members/)
+    - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
+    - [Members](https://sourceforge.net/p/sakura-editor/_members/)
 - [SakuraEditorWiki](http://sakura.qp.land.to/)
     - [FAQ](http://sakura.qp.land.to/?FAQ)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
@@ -54,13 +54,13 @@ Windows
 
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
-- [log](http://sourceforge.net/p/sakura-editor/code/log/)
-- [http://sourceforge.net/p/sakura-editor/activity/](http://sourceforge.net/p/sakura-editor/activity/)
+- [log](https://sourceforge.net/p/sakura-editor/code/log/)
+- [https://sourceforge.net/p/sakura-editor/activity/](https://sourceforge.net/p/sakura-editor/activity/)
 
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
 - [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
-- [サクラエディタ Unicode/64bit(x64)版](http://sourceforge.net/p/sakura-editor/wiki/64bit/)
+- [サクラエディタ Unicode/64bit(x64)版](https://sourceforge.net/p/sakura-editor/wiki/64bit/)
 - [サクラエディタ 私用版](https://github.com/mocaskr/sakura/)
 - [サクラエディタ weekly](http://mocaskr.web.fc2.com/weekly/sakura_weekly.html)
 - [サクラエディタ 開発関連](http://mocaskr.web.fc2.com/sakura/bin_other.html)
@@ -73,7 +73,7 @@ Windows
     <!-- -ftp://ftp.jaist.ac.jp/pub/sourceforge/s/sa/sakura-editor/ -->
 
 - [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
-- [http://sourceforge.net/projects/sakura-editor/files/](http://sourceforge.net/projects/sakura-editor/files/)
+- [https://sourceforge.net/projects/sakura-editor/files/](https://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
 
 ## 不具合 {#jbc9f4c6}
@@ -87,7 +87,7 @@ Windows
 
 ## 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
-- [help2](http://sourceforge.net/projects/sakura-editor/files/help2/)
+- [help2](https://sourceforge.net/projects/sakura-editor/files/help2/)
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
 
@@ -414,7 +414,7 @@ TeX のアウトライン解析機能があります．
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．<br>
 
 - [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/DockingOutline)
-- [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](http://sourceforge.net/p/sakura-editor/patchunicode/116/)
+- [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](https://sourceforge.net/p/sakura-editor/patchunicode/116/)
 
 \[設定(O)\]-\[タイプ別設定(Y)...\]-\[スクリーン\] でアウトライン解析方法を指定できます．<br>
 
@@ -453,7 +453,7 @@ TeX のアウトライン解析機能があります．
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
 - [プラグイン機能 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk%2F48)
-- [Sakura Editor / PatchUnicode / #85 WSHプラグイン](http://sourceforge.net/p/sakura-editor/patchunicode/85/)
+- [Sakura Editor / PatchUnicode / #85 WSHプラグイン](https://sourceforge.net/p/sakura-editor/patchunicode/85/)
 
 ***
 
@@ -491,7 +491,7 @@ TeX のアウトライン解析機能があります．
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
 - [本体へ関連付けツールを組み込み - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/49)
-- [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](http://sourceforge.net/p/sakura-editor/patchunicode/148/)
+- [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](https://sourceforge.net/p/sakura-editor/patchunicode/148/)
 
 ## Linux で サクラエディタを使う {#pf5d83cb}
 
