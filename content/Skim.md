@@ -26,7 +26,7 @@ OS X
 
 ### License {#o9f5d76f}
 
-[BSD 3-Clause](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/LICENSE)
+[BSD 3-Clause](https://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/LICENSE)
 
 ### リリース情報 {#z7f1eead}
 
@@ -34,18 +34,18 @@ OS X
 
 ### ChangeLog {#l1a8874a}
 
-- [http://sourceforge.net/p/skim-app/code/HEAD/tree/](http://sourceforge.net/p/skim-app/code/HEAD/tree/)
-    - [log](http://sourceforge.net/p/skim-app/code/HEAD/log/)
+- [https://sourceforge.net/p/skim-app/code/HEAD/tree/](https://sourceforge.net/p/skim-app/code/HEAD/tree/)
+    - [log](https://sourceforge.net/p/skim-app/code/HEAD/log/)
 
 ## 不具合 {#obddc9fb}
 
-- [Skim / Bugs](http://sourceforge.net/p/skim-app/bugs/)
+- [Skim / Bugs](https://sourceforge.net/p/skim-app/bugs/)
 
 ## SyncTeX {#n30dc96c}
 
 ### forward search {#c02e2c91}
 
-forward search を行う場合は Skim に含まれている [displayline](http://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．
+forward search を行う場合は Skim に含まれている [displayline](https://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．
 
 ## DVI ファイルを PDF ファイルに変換して表示 {#nfee2aaa}
 
