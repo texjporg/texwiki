@@ -20,7 +20,7 @@ pukiwiki: "TeXnicCenter"
 TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
 - [TeXnicCenter](http://www.texniccenter.org/)
-- [TeXnicCenter | SourceForge.net](http://sourceforge.net/projects/texniccenter/)
+- [TeXnicCenter | SourceForge.net](https://sourceforge.net/projects/texniccenter/)
 
 ### 動作環境 {#sa939c6e}
 
@@ -28,20 +28,20 @@ Windows
 
 ### License {#haaa8397}
 
-[GPL](http://sourceforge.net/p/texniccenter/manual/ci/tip/tree/source/copyright.rst)
+[GPL](https://sourceforge.net/p/texniccenter/manual/ci/tip/tree/source/copyright.rst)
 
 ### リリース情報 {#da101e5c}
 
 - [TeXnicCenter  &raquo; News](http://www.texniccenter.org/news/)
-- [http://sourceforge.net/p/texniccenter/code/ref/default/tags/](http://sourceforge.net/p/texniccenter/code/ref/default/tags/)
+- [https://sourceforge.net/p/texniccenter/code/ref/default/tags/](https://sourceforge.net/p/texniccenter/code/ref/default/tags/)
 
 を参照．
 
 ### ChangeLog {#y2c9ad23}
 
-- [Hg tools](http://sourceforge.net/p/texniccenter/_list/hg)
-    - [Code](http://sourceforge.net/p/texniccenter/code/)
-        - [log](http://sourceforge.net/p/texniccenter/code/ci/tip/log/)
+- [Hg tools](https://sourceforge.net/p/texniccenter/_list/hg)
+    - [Code](https://sourceforge.net/p/texniccenter/code/)
+        - [log](https://sourceforge.net/p/texniccenter/code/ci/tip/log/)
 
 ### 特徴 {#c8ac578a}
 
@@ -52,12 +52,12 @@ Windows
 
 ## 不具合 {#p40a9a4a}
 
-- [TeXnicCenter / User Reports](http://sourceforge.net/p/texniccenter/user-reports/)
+- [TeXnicCenter / User Reports](https://sourceforge.net/p/texniccenter/user-reports/)
 
 ## ダウンロード {#rf294e94}
 
 - [Downloads](http://www.texniccenter.org/resources/downloads)
-- [Browse TeXnicCenter Files on SourceForge.net](http://sourceforge.net/projects/texniccenter/files/)
+- [Browse TeXnicCenter Files on SourceForge.net](https://sourceforge.net/projects/texniccenter/files/)
 
 ## Encoding → \[File\]-\[Save As...\] の Encoding のリストから UTF-8 を指定して保存する {#u85685c5}
 
