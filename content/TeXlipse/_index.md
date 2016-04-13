@@ -23,11 +23,11 @@ TeXlipse は
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
     - [All news](http://texlipse.sourceforge.net/news.php)
     - [FAQ](http://texlipse.sourceforge.net/faq.php)
-- [TeXlipse | SourceForge.net](http://sourceforge.net/projects/texlipse/)
-    - [Files](http://sourceforge.net/projects/texlipse/files/)
-        - [texlipse plugin](http://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
-        - [dictionaries](http://sourceforge.net/projects/texlipse/files/dictionaries/)
-        - [texlipse documentation](http://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
+- [TeXlipse | SourceForge.net](https://sourceforge.net/projects/texlipse/)
+    - [Files](https://sourceforge.net/projects/texlipse/files/)
+        - [texlipse plugin](https://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
+        - [dictionaries](https://sourceforge.net/projects/texlipse/files/dictionaries/)
+        - [texlipse documentation](https://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
 - [BibSonomy](http://www.bibsonomy.org/)
@@ -44,8 +44,8 @@ TeXlipse は
 
 ### ChangeLog {#e321b2d0}
 
-- [http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
-    - [log](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
+- [https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
+    - [log](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
 
 ### スクリーンショット {#j94c34b3}
 
@@ -98,20 +98,20 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 ## 不具合 {#t2a5d9cf}
 
-- [SourceForge.net: TeXlipse: Bugs](http://sourceforge.net/tracker/?group_id=133306&atid=726818)
+- [SourceForge.net: TeXlipse: Bugs](https://sourceforge.net/tracker/?group_id=133306&atid=726818)
 - [Issues · Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse/issues)
 
 を参照．
 
 ### Eclipse がフリーズする → TeXlipse git HEAD では Eclipse がフリーズする問題は修正されています {#k9639d78}
 
-- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/bbf0c9ab337f61a4fc0a3c283fd6823661e3e420/)
-- [TeXlipse causes Eclipse UI to freeze](http://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) → Fixed
+- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/bbf0c9ab337f61a4fc0a3c283fd6823661e3e420/)
+- [TeXlipse causes Eclipse UI to freeze](https://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) → Fixed
 
 ### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない → TeXlipse git HEAD ではワードラップの問題は修正されています {#k7905270}
 
-- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](http://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/77f84799c805a5785d3ee1d8cda903e6bb52cfe9/)
-- [Word wrap in Juno](http://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
+- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/77f84799c805a5785d3ee1d8cda903e6bb52cfe9/)
+- [Word wrap in Juno](https://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
 - [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
 
 ### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは SumatraPDF, TeXworks, TeXstudio, Mozilla Firefox, Chrome PDF Viewer, Adobe Acrobat Reader DC などの外部ビューアで表示する {#c876c383}
@@ -122,11 +122,11 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 
 <!-- **TeXlipse 1.5.0 で \bibliography がうまく動作しない [#i3d2f9c0] -->
 <!--  -->
-<!-- -[[SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0:http://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818]] -->
+<!-- -[[SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0:https://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818]] -->
 
 ### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される → コメント %### を使用する {#i0880f90}
 
-- [SourceForge.net: TeXlipse: Detail: 3498342 - Key XXX is undefined warning](http://sourceforge.net/tracker/index.php?func=detail&aid=3498342&group_id=133306&atid=726818)
+- [SourceForge.net: TeXlipse: Detail: 3498342 - Key XXX is undefined warning](https://sourceforge.net/tracker/index.php?func=detail&aid=3498342&group_id=133306&atid=726818)
 
 \cite{XXX} で Key XXX is undefined という警告が表示される場合は
 
@@ -193,7 +193,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 - [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
     <!-- -[[改造版TeXlipse:http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/]] -->
 
-- [spell check does not run](http://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
+- [spell check does not run](https://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
     <!-- -[[ms4py / latexmk.py / wiki / Texlipse – Bitbucket:https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse]] -->
