@@ -15,7 +15,6 @@ Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・
 
 - [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
-- [evince.mirror](http://sourceforge.net/projects/evince.mirror/)
 
 ***
 
