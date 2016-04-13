@@ -31,8 +31,8 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
     - [twitter](https://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
-        <!-- [[Vim team:http://sourceforge.net/project/memberlist.php?group_id=8] -->
-        <!-- [[develop:http://sourceforge.net/projects/vim/develop]] -->
+        <!-- -https://sourceforge.net/projects/vim/ -->
+        <!-- - -[[Vim team:https://sourceforge.net/p/vim/_members/] -->
 
 - [Vim Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/vim)
 
