@@ -121,7 +121,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 ### [wiki2beamer](http://wiki2beamer.sourceforge.net/) {#q47a5bc8}
 
-- [http://sourceforge.net/projects/wiki2beamer/](http://sourceforge.net/projects/wiki2beamer/)
+- [https://sourceforge.net/projects/wiki2beamer/](https://sourceforge.net/projects/wiki2beamer/)
 - [Wiki発Latex・PDF経由プレゼン行き「Wiki2Beamer」](http://www.moongift.jp/2007/05/wiki2beamer/)
 
 ### Beamer Themes {#r446ce9a}
