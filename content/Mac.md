@@ -208,7 +208,7 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ## 関連リンク {#links}
 
-- [Mac TeX Toolbox](http://sourceforge.net/projects/mactextoolbox/)
+- [Mac TeX Toolbox](https://sourceforge.net/projects/mactextoolbox/)
 - [http://qiita.com/tags/mactex](http://qiita.com/tags/mactex)
 - [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 - [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
