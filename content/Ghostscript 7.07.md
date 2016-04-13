@@ -42,11 +42,11 @@ GNU Ghostscript 7.07 は，日本の gs-cjk プロジェクトの寄与を含み
 
 ### ダウンロード {#k0bb1098}
 
-Ghostscript で利用する欧文フォントは，Sourceforge ([gs-fonts](http://sourceforge.net/projects/gs-fonts/files/gs-fonts/)) やそのミラーから入手できます。
+Ghostscript で利用する欧文フォントは，Sourceforge ([gs-fonts](https://sourceforge.net/projects/gs-fonts/files/gs-fonts/)) やそのミラーから入手できます。
 CJK フォントを扱うためには CMap Resource も必要で，これは [Adobe Type Tools - GitHub](https://github.com/adobe-type-tools/cmap-resources) からダウンロードできます。
 
 ソースから make する場合は，これに加えて GNU Ghostscript 7.07 本体と依存ライブラリのソースも必要です。
-本体のソースは Sourceforge ([gnu-gs](http://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/)) やそのミラーから，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
+本体のソースは Sourceforge ([gnu-gs](https://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/)) やそのミラーから，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
 
 - GNU Ghostscript 7.07 のソース
     - ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
@@ -306,7 +306,7 @@ ps2pdf は gs で PDF を作るシェルスクリプトです。
     このフィルタを通せば，埋め込まれた和田研フォントが外され，単に Ryumin-Light，GothicBBB-Medium への参照となるので，[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) できれいに表示・印刷できます。
     TrueType フォントや OpenType フォントの場合に PDF 化がうまくいかない場合がありますが，エラーさえ出なければ，PDF 化した後で replacecjkfonts.pl で外せば大丈夫です。
 
-- もう一つは，上の中丸さんのページにも書かれていますが，小川さんの[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で解説されているように，Ghostscript に鈴木俊哉さんの[このパッチ](http://sourceforge.net/tracker/index.php?func=detail&aid=653140&group_id=1897&atid=301897)を当てる方法です。
+- もう一つは，上の中丸さんのページにも書かれていますが，小川さんの[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で解説されているように，Ghostscript に鈴木俊哉さんの[このパッチ](https://sourceforge.net/tracker/index.php?func=detail&aid=653140&group_id=1897&atid=301897)を当てる方法です。
     さらに TrueType を指定してもうまくいくパッチを[山田泰司さん](http://www.aihara.co.jp/~taiji/gyve/)が作ってくださいました。
     結局，山田さんのページに従ってすべてのパッチを当て，dvipdfmx.cfg を次のように直せば完璧です（適当に改行してありますのでつなげてください）。
 
