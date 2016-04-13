@@ -241,16 +241,16 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 
 に修正します．
 
-- [dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00366.html)
-    - [Re: dvipdfmx fails to call rungs](http://cygwin.com/ml/cygwin/2013-01/msg00370.html)
+- [dvipdfmx fails to call rungs](https://cygwin.com/ml/cygwin/2013-01/msg00366.html)
+    - [Re: dvipdfmx fails to call rungs](https://cygwin.com/ml/cygwin/2013-01/msg00370.html)
 - [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
 
 ### 関連リンク {#bc8cfcc3}
 
 - [Cygwin](https://www.cygwin.com/)
-    - [The Cygwin Project mailing list archives](http://cygwin.com/ml/cygwin/)
-    - [The cygwin-announce mailing list archives](http://cygwin.com/ml/cygwin-announce/)
-    - [The cygwin-apps mailing list archives](http://cygwin.com/ml/cygwin-apps/)
+    - [The Cygwin Project mailing list archives](https://cygwin.com/ml/cygwin/)
+    - [The cygwin-announce mailing list archives](https://cygwin.com/ml/cygwin-announce/)
+    - [The cygwin-apps mailing list archives](https://cygwin.com/ml/cygwin-apps/)
 - [Cygwin Ports project](http://sourceware.org/cygwinports/)
 - [gnupack](http://gnupack.osdn.jp/docs/latest/UsersGuide.html)
 
