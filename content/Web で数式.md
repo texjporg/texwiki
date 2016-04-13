@@ -82,7 +82,7 @@ jsMath.js の mathchardef テーブル内に追加
 ### phpTeX {#nd0cba4b}
 
 - [http://phptex.sourceforge.net/](http://phptex.sourceforge.net/)
-- [http://sourceforge.net/projects/phptex/](http://sourceforge.net/projects/phptex/)
+- [https://sourceforge.net/projects/phptex/](https://sourceforge.net/projects/phptex/)
 
 ### phptex.inc {#ca665441}
 
