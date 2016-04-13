@@ -203,7 +203,7 @@ TeX--XeT 機能を用いるため [e-TeX](/e-TeX/) 非対応の古い pTeX で�
 
 ### ヴェトナム語 {#vnwtexpi}
 
-ヴェトナム語の場合は [VnTeX](http://sourceforge.net/projects/vntex/) を用います。
+ヴェトナム語の場合は [VnTeX](https://sourceforge.net/projects/vntex/) を用います。
 TeX Live の場合は VnTeX は最初からインストールされています。
 
 入力は基本的に ASCII 文字で書いていきますが，ヴェトナム語の入力ソフト (input method) を持っている方は UTF82TeX という変換スクリプトがありますので，それで入力しても大丈夫です（-x オプションをつけて実行します）。
@@ -1141,7 +1141,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 ```
 %%% WenQuanYi outline fonts
 %%% See http://wqy.sourceforge.net/en/
-%%%     http://sourceforge.net/projects/wqy/
+%%%     https://sourceforge.net/projects/wqy/
 /WenQuanYiZenHei              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (wqy-zenhei.ttf) >> ;
 /WenQuanYiZenHei-Adobe-CNS1   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (wqy-zenhei.ttf) >> ;
 ```
