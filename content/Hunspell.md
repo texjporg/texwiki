@@ -102,10 +102,24 @@ export WORDLIST=$HOME/.hunspell_personal_dictionary
 
 ### Windows {#mcb4fc44}
 
+#### MSYS2 {#iadb0245}
+
+64-bit Hunspell の場合は
+
+```
+$ pacman -S mingw-w64-x86_64-hunspell
+```
+
+32-bit Hunspell の場合は
+
+```
+$ pacman -S mingw-w64-i686-hunspell
+```
+
 #### MinGW {#deab3978}
 
 ```
-$ curl -LO https://github.com/hunspell/hunspell/archive/v1.3.4.tar.gz
+$ curl -kRLO https://github.com/hunspell/hunspell/archive/v1.3.4.tar.gz
 $ tar xvf v1.3.4.tar.gz
 $ pushd hunspell-1.3.4
 $ ./configure --prefix=/mingw
