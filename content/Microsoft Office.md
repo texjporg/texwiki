@@ -13,11 +13,11 @@ pukiwiki: "Microsoft Office"
 
 <strong>公式サイト</strong>
 
-- [Microsoft Office - Office.com](http://office.microsoft.com/ja-jp/)
-- [ホーム | Microsoft Office](http://www.microsoft.com/ja-jp/office/)
-- [Microsoft Office (日本) | Facebook](http://www.facebook.com/OfficeJapan)
+- [Microsoft Office | Productivity Tools for Home &amp; Office](https://products.office.com/en-US/)
+- [Microsoft Office - 家庭やビジネスで活用できるソフトウェア](https://products.office.com/ja-JP/)
+- [Microsoft Office ホーム](https://www.office.com/)
+- [OfficeJapan (Facebook) ](https://www.facebook.com/OfficeJapan)
 - [MSOfficeJP (Twitter)](https://twitter.com/MSOfficeJP)
-- [Microsoft Office Online](https://office.com/)
 
 ここでは，TeX/LaTeX と関連づけた利用法（Office 文書への数式の挿入，Office による図の作成など）に絞って説明します。
 
@@ -48,12 +48,12 @@ Word は，同じファイルを開いても，同じように書いても，バ
 通信の高速化により軽い PDF への要求は以前ほどではなくなりましたし，「いっそのことすべて埋め込んでくれ」という場合が今後は多くなるでしょう[^2]。
 学会で配布する PDF などでは，海外のコンピュータでそのまま開けるように和文フォントを埋め込んだほうがよいでしょう。
 
-#### フォントを埋め込まない PDF の作り方（Adobe Acrobat Distiller 使用） {#dc435b5b}
+#### フォントを埋め込まない PDF の作り方（Adobe Acrobat Distiller DC 使用） {#dc435b5b}
 
 上で述べたとおり，現在では基本書体以外のフォントを埋め込むのが主流です。
 それでもフォントを埋め込みたくない場合は以下の方法が有効でしょう。
 
-- コントロールパネルから［デバイスとプリンター］画面を表示します。［プリンターと FAX］にある「Adobe PDF」プリンターが「通常使うプリンターに設定」されていることを確認します。
+- コントロールパネルから［デバイスとプリンター］画面を表示します。［プリンター］にある「Adobe PDF」プリンターが「通常使うプリンターに設定」されていることを確認します。
 
 - テンプレートが指定されている場合には，それをユーザテンプレート用のフォルダに入れておきます。ユーザテンプレート用のフォルダは，Word を立ち上げて［ツール］→［オプション］→［規定のフォルダ］で確認できます（見にくい場合には，とりあえず［変更］を押してみるといいでしょう）。
 
@@ -71,7 +71,7 @@ Word は，同じファイルを開いても，同じように書いても，バ
 - 挿入する図についても，フォントは正しく設定しましょう。
     - Excel のグラフ軸の数字が「ＭＳ Ｐゴシック」のままになっていませんか。
 
-- 完成したら，［ファイル］→［印刷］でプリンター名が Acrobat Distiller になっていることを確認し，印刷します。PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます。
+- 完成したら，［ファイル］→［印刷］でプリンター名が Adobe PDF になっていることを確認し，印刷します。PDF ファイル名を聞いてきますので，フォルダを確認し，半角英数字でファイル名を付けます。
 
 - Adobe Acrobat Reader DC（または Adobe Acrobat DC）が立ち上がりますので，拡大して文字がギザギザにならないことを確認します。また，全ページをスクロールし表示した後で，［ファイル］→［プロパティ］→［フォント］ですべての使用フォントを確認します。
     - 欧文フォントの「実際のフォント」（4.0 では「使用フォント」）が（Times，Helvetica などの PostScript Level 1 での基本14書体を除いて）すべて「埋め込みサブセット」または「埋め込み」となっているでしょうか。
@@ -134,7 +134,7 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 ### 外部リンク {#i993cecd}
 
 - [Wikipedia.ja:Microsoft Office](https://ja.wikipedia.org/wiki/Microsoft%20Office)
-- [Microsoft Office - Wikibooks](http://ja.wikibooks.org/wiki/Microsoft_Office)
+- [Microsoft Office - Wikibooks](https://ja.wikibooks.org/wiki/Microsoft_Office)
 
 [^1]: プリンター依存性は Word 2000 でほぼ解消されたようです。
 [^2]: 「ＭＳ 明朝を埋め込むこと」といった指示は Linux/OS X ユーザに酷ですが…
