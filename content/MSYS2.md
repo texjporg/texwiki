@@ -24,6 +24,8 @@ MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化�
 
 ### LANG {#w1a07eeb}
 
+- [CygwinとMSYS2でのWindowsコマンドの文字化け対策](http://myfuturesightforpast.blogspot.jp/2015/10/cygwinmsys2windows.html)
+
 日本語版 Windows では MSYS2 の環境変数 LANG は ja_JP.UTF-8 です．
 
 ```
