@@ -30,11 +30,11 @@ XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 
 
 ### License {#u72986d4}
 
-[MIT License](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/COPYING?view=markup)
+[MIT License](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/COPYING)
 
 ### ChangeLog {#w3545bdb}
 
-- [http://sourceforge.net/p/xetex/code/ci/master/log/](http://sourceforge.net/p/xetex/code/ci/master/log/)
+- [https://sourceforge.net/p/xetex/code/ci/master/log/](https://sourceforge.net/p/xetex/code/ci/master/log/)
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
@@ -131,27 +131,21 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 - \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
 - \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314)
 - \[[texlive\] Revision 32700](http://www.tug.org/svn/texlive?view=revision&revision=32700)
-- [xetex \[WIN32\]: Accept Unicode characters from STDIN on console](http://sourceforge.net/p/xetex/code/ci/3aff45f7aa7128fb489e2f0c78738a365d3dd630/)
-- [xetex \[win32\]: Display output of Unicode characters on console](http://sourceforge.net/p/xetex/code/ci/1da0e01d6a99108f284953aac94b4f874bdd997f/)
+- [xetex \[WIN32\]: Accept Unicode characters from STDIN on console](https://sourceforge.net/p/xetex/code/ci/3aff45f7aa7128fb489e2f0c78738a365d3dd630/)
+- [xetex \[win32\]: Display output of Unicode characters on console](https://sourceforge.net/p/xetex/code/ci/1da0e01d6a99108f284953aac94b4f874bdd997f/)
 
 ## 不具合 {#u41787d2}
 
-- [XeTeX - Unicode-based TeX / Bugs](http://sourceforge.net/p/xetex/bugs/)
+- [XeTeX - Unicode-based TeX / Bugs](https://sourceforge.net/p/xetex/bugs/)
 
 ## 注意点 {#v6fc9cef}
 
-### XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
+### XeLaTeX で \XeTeXgenerateactualtext=0 の場合に \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
 
-XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
+XeLaTeX で \XeTeXgenerateactualtext=0 の場合に \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
 この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
 
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
-
-### XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#p1bacfda}
-
-XeLaTeX で \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
-この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
-
 - [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
 
 ## インストール {#p3eca5bb}
@@ -244,6 +238,17 @@ nkf によって 2 バイト仮名に変換されたりするからです。<br>
 [MacTeX &amp; TeX Live](</TeX Live/Mac/#mactex>) をインストールすると XeTeX がインストールされます．
 
 ## 使い方 {#k7f2c3d5}
+
+### \XeTeXgenerateactualtext=1 {#d17aa157}
+
+XeTeX でタイプセットして出力された PDF ファイルの検索やコピー &amp; ペーストがうまく動作しない場合は \XeTeXgenerateactualtext=1 を記述します。
+
+\XeTeXgenerateactualtext は XeTeX 0.99995 で追加されました。
+
+TeX Live 2016 以降または W32TeX \[2016/02/29\] 以降であれば \XeTeXgenerateactualtext=1 が使用できます。
+
+- TwitterSearch:\XeTeXgenerateactualtext, TwitterSearch.en:\XeTeXgenerateactualtext, TwitterSearch.ja:\XeTeXgenerateactualtext
+- [http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext)
 
 ### 入力用エンコーディング {#dd951bae}
 
