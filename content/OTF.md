@@ -18,11 +18,6 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
 
 ***
 
-### ダウンロード {#a0ff39f1}
-
-- [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
-- [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
-
 ### 特徴 {#w1bac38c}
 
 - OTF パッケージは5書体以上を扱うことができます。
@@ -32,18 +27,6 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
 
 - OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
-
-<!-- ***japanese-otf [#b26e364e] -->
-<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/]] -->
-<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log]] -->
-<!-- -[[texlive] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/]] -->
-<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log]] -->
-
-<!-- ***japanese-otf-uptex [#kd9a1a12] -->
-<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/]] -->
-<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log]] -->
-<!-- -[[[texlive] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/]] -->
-<!-- - -[[log:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log]] -->
 
 ## インストール {#g2a8e99e}
 
@@ -293,6 +276,8 @@ upTeX での kcatcode の既定値が pTeX から変更されているようで�
 
 を参考にしてください．
 
+upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。
+
 ### フォントを埋め込むには {#hf05d89a}
 
 上の方法で作った PDF ファイルは，和文フォントが埋め込まれていないので軽いのですが，PDF の仕様に違反しており，どんな環境でも文字化けせず読めるというわけではありません。
@@ -396,6 +381,26 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
 
 が付属しています。
 
+#### CID 番号参照用のサンプルへのリンク {#ze53c84a}
+
+- [Font and Type Technology Center&mdash;Font technical notes](http://www.adobe.com/devnet/font.html)
+    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf)
+    - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,15.2 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
+    - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf)
+    - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
+
+- [ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/)<br>
+    [ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/)<br>
+    [http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/](http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/)
+    - [aj16-radical-stroke.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-radical-stroke.pdf)
+    - [aj16-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-utf32.pdf)
+    - [ag15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ag15-utf32.pdf)
+    - [ac15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ac15-utf32.pdf)
+    - [ak12-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ak12-utf32.pdf)
+
+- [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
+    - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
+
 ### 游書体 {#qe2ec43e}
 
 Windows 10, OS X に付属している游書体フォントは Adobe-Japan1-6 に準拠しています。
@@ -403,14 +408,14 @@ Windows 10, OS X に付属している游書体フォントは Adobe-Japan1-6 �
 - [OS搭載の游書体について](http://www.jiyu-kobo.co.jp/os-installed-y/)
 - [OS搭載の游書体一覧PDF](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/04/compatibility_160325.pdf)
 
-### ヒラギノと OS X {#l1d1369f}
+## ヒラギノと OS X {#l1d1369f}
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
 TeX Live をインストールして
 
 ```
-sudo kanji-config-updmap-sys -jis2004 hiragino-pron
+sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
 ```
 
 を実行しました。
@@ -425,7 +430,7 @@ sudo kanji-config-updmap-sys -jis2004 hiragino-pron
 ちなみに無指定の OTF パッケージでは
 \bfseries で同じウェイトのゴシックになるだけですので，上の図の例では “bold” オプションも加えて太いゴシックにしてあります。
 
-### 新しいフォントメトリック {#y2c312cd}
+## 新しいフォントメトリック {#y2c312cd}
 
 OTF パッケージを（“noreplace” オプション以外で）使うと，\UTF{...} や
 \CID{...} で指定した文字以外についても，新しい和文用メトリックが使われます。
@@ -453,30 +458,6 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 
 と書かなければなりません。
 
-### upLaTeX での利用 {#u1eb9e1c}
-
-upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。
-
-### CID 番号参照用のサンプルへのリンク {#ze53c84a}
-
-- [Font and Type Technology Center&mdash;Font technical notes](http://www.adobe.com/devnet/font.html)
-    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf)
-    - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,12.6 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
-    - [Adobe-CNS1-5 Character Collection for CID-Keyed Fonts #5080 (PDF,8.0 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-5.pdf)
-    - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.0 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
-
-- [ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/)<br>
-    [ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/)<br>
-    [http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/](http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/)
-    - [aj16-radical-stroke.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-radical-stroke.pdf)
-    - [aj16-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-utf32.pdf)
-    - [ag15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ag15-utf32.pdf)
-    - [ac15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ac15-utf32.pdf)
-    - [ak12-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ak12-utf32.pdf)
-
-- [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
-    - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
-
 ## OTF パッケージ用の map ファイル {#nc92c884}
 
 TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています．
@@ -492,8 +473,8 @@ $ sudo updmap-sys --setoption kanjiEmbed hiragino （ヒラギノ書体を埋め
 $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed yu-win10 （游フォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游フォントを埋め込む）
+$ sudo updmap-sys --setoption kanjiEmbed yu-win10 （游書体を埋め込む）
+$ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游書体を埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
 $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
 ```
@@ -511,14 +492,14 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．
 
 ```
-hiragino, hiragino-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
+hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
 （いずれもないときは nofont になります）
 ```
 
 dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
 
 ```
-dvipdfmx -f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map hoge.dvi
+dvipdfmx -f uptex-hiragino-elcapitan-pron-04.map -f otf-up-hiragino-elcapitan-pron.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
@@ -761,6 +742,34 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 
 <!-- 各フリーフォントの入手先は[[フォント - TeX Wiki>フォント]]を参照してください。なお，入手先は変更される場合があります。また，利用・再配布等にあたっては「使用許諾契約」をご自身で確認されることを強くおすすめいたします（フリーフォントの「使用許諾契約」は随時変更されるため）。 -->
 
+#### 游書体フォントを使う場合 {#t5547d05}
+
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
+
+- TeX Live の場合
+
+> - Windows の場合
+>
+>     ```
+>     ptex2pdf -u -l -od "-f uptex-yu-win10.map -f otf-up-yu-win10.map" hoge.tex
+>     ```
+>
+> - OS X の場合
+>
+>     ```
+>     ptex2pdf -u -l -od "-f uptex-yu-osx-04.map -f otf-up-yu-osx.map" hoge.tex
+>     ```
+>
+
+- W32TeX の場合
+
+```
+ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
+```
+
 #### MSフォントを使う場合 {#g54b5df7}
 
 - [https://github.com/norbusan/jfontmaps/tree/master/maps/ms/](https://github.com/norbusan/jfontmaps/tree/master/maps/ms/)
@@ -822,51 +831,23 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 <!-- 入手して使うことができます（情報源は -->
 <!-- 「[[ＭＳフォントの合法的な入手が可能です: Apple サポートコミュニティ:https://discussionsjapan.apple.com/thread/10036561]]」）。 -->
 
-#### 游フォントを使う場合 {#t5547d05}
-
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/)
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
-
-- TeX Live の場合
-
-> - Windows の場合
->
->     ```
->     ptex2pdf -u -l -od "-f uptex-yu-win10.map -f otf-up-yu-win10.map" hoge.tex
->     ```
->
-> - OS X の場合
->
->     ```
->     ptex2pdf -u -l -od "-f uptex-yu-osx-04.map -f otf-up-yu-osx.map" hoge.tex
->     ```
->
-
-- W32TeX の場合
-
-```
-ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
-```
-
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino/)
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-pron/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-pron/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-pron/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan/)
+- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/)
 
 - TeX Live の場合
 
 ```
-ptex2pdf -u -l -od "-f uptex-hiragino-pron-04.map -f otf-up-hiragino-pron.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-hiragino-elcapitan-pron-04.map -f otf-up-hiragino-elcapitan-pron.map" hoge.tex
 ```
 
 - W32TeX の場合
 
 ```
-ptex2pdf -u -l -od "-f hiragino04.map" hoge.tex
+ptex2pdf -u -l -od "-f hiraginopron04.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
@@ -1084,6 +1065,18 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
 - [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
 
-を参照．
+#### japanese-otf-uptex {#kd9a1a12}
+
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log)
+
+#### japanese-otf {#b26e364e}
+
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log)
+- [texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log)
 
 [^1]: 「Adobe Creative Suite 5」に同梱ではないものはAdobe-CNS1-5 対応。
