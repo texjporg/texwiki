@@ -158,6 +158,7 @@ $ nkf -s src.tex > dest.tex
 
 - [https://osdn.jp/projects/nkf/](https://osdn.jp/projects/nkf/)
 - [http://jaist.dl.osdn.jp/nkf/](http://jaist.dl.osdn.jp/nkf/)
+- [http://iij.dl.osdn.jp/nkf/](http://iij.dl.osdn.jp/nkf/)
 - UTF-8への変換 [forum:545](https://okumuralab.org/tex/mod/forum/discuss.php?d=545)
 - [nkfを使ってファイルの文字コードを変換する](http://dev.classmethod.jp/tool/exchange-file-encode-by-nkf/)
 - [文字コード変換コマンドの nkfの使い方と実例をまとめました。](http://takuya-1st.hatenablog.jp/entry/20100511/1273585953)
