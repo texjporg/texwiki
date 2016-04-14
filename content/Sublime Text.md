@@ -79,7 +79,8 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](https://tekonomist.wordpress.com/tag/latex/)
-- [sublime text 3 でLaTeXToolsの設定](http://orycha.hatenablog.com/entry/2015/12/31/184952)
+- [SublimeText3+LaTeXTools+TeXLive2015でWindowsなplatex執筆環境構築](http://yanoshi.hatenablog.jp/entry/2016/01/21/165454)
+- [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/wichy/13c970563a2f5a489c9d)
 
 ### インストール {#i186fdb3}
 
