@@ -67,7 +67,7 @@ fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可
 - [nsisDDE](http://wiz0u.free.fr/prog/nsisDDE/)
 - [USBメモリ活用講座【基礎編・PDFビューアのポータブル化－Sumatra PDF】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/pdf/sumatra.shtml)
 - [Windows 7 で W32TeX を導入して日本語 SyncTeX を試してみる](http://skalldan.wordpress.com/2011/11/11/windows-7-%E3%81%A7-w32tex-%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E6%97%A5%E6%9C%AC%E8%AA%9E-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
-- [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okada.jp.org/RWiki/?Sweave%A4%C7%A5%A8%A5%C7%A5%A3%A5%BF%A4%C8DVI%A5%D3%A5%E5%A1%BC%A5%A2%B4%D6%A4%CE%C1%EA%B8%DF%B0%DC%C6%B0)
+- [RjpWiki:SweaveでエディタとDVIビューア間の相互移動](<http://www.okadajp.org/RWiki/?SweaveでエディタとDVIビューア間の相互移動>)
 - [DDEApp Tutorial (C#, C++)](http://www.codeproject.com/Articles/401117/DDEApp-Tutorial-Csharp-Cplusplus)
 - [現在実行しているDLLのパスを取得する。(GetExecutingAssembly )](http://d.hatena.ne.jp/tekk/20110307/1299513821)
 - [Process.Start()で起動したプロセスのメインウィンドウのハンドルが取得できない場合の対処法](http://www.slotware.net/blog/2009/11/processstart.html)
