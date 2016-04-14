@@ -105,7 +105,7 @@ bxjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 59
+Format 60
 Provides japanese 1
 
 # Input general definitions
@@ -127,7 +127,7 @@ bxjsreport.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new report textclass definition file.
 
 # This style provides japanese features 
-Format 59
+Format 60
 Provides japanese 1
 
 # Input general definitions
@@ -149,7 +149,7 @@ bxjsbook.layout ファイルを新規作成して以下の内容を編集しま�
 # Japanese new book textclass definition file.
 
 # This style provides japanese features 
-Format 59
+Format 60
 Provides japanese 1
 
 # Input general definitions
@@ -171,7 +171,7 @@ ltjsarticle.layout ファイルを新規作成して以下の内容を編集し�
 # Japanese new article textclass definition file.
 
 # This style provides japanese features 
-Format 59
+Format 60
 Provides japanese 1
 
 # Input general definitions
@@ -193,7 +193,7 @@ ltjsbook.layout ファイルを新規作成して以下の内容を編集しま�
 # Japanese new book textclass definition file.
 
 # This style provides japanese features 
-Format 59
+Format 60
 Provides japanese 1
 
 # Input general definitions
@@ -208,8 +208,8 @@ Windows の場合はレイアウトファイルを
 
 - %APPDATA%\LyX2.2\layouts\\
     <!-- -C:\Users\Lydia\AppData\Local\LyX 2.2\Resources\layouts\ -->
-    <!-- -C:\Program Files\LyX 2.2\Resources\layouts\ (32-bit Windows の場合) -->
     <!-- -C:\Program Files (x86)\LyX 2.2\Resources\layouts\ (64-bit Windows の場合) -->
+    <!-- -C:\Program Files\LyX 2.2\Resources\layouts\ (32-bit Windows の場合) -->
 
 フォルダーにコピーします．<br>
 
@@ -626,9 +626,31 @@ pdflatex で bxjsarticle を使用する場合は，クラスオプションに 
 
 #### lualatex, luajitlatex の場合 {#l1a666c4}
 
-文書クラスで Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．<br>
+文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．<br>
+lualatex, luajitlatex で bxjsarticle を使用する場合は，クラスオプションに lualatex を設定してグラフィックドライバに 既定値を指定します．<br>
 lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
+
+***
+
+<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+
+<br>
+
+　文書クラス(C)<br>
+　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+
+<br>
+
+　クラスオプション<br>
+　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+　任意設定(T):　　　 <ins>lualatex,12pt,ja=standard</ins><br>
+
+<br>
+
+グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
+
+***
 
 ***
 
@@ -654,7 +676,7 @@ lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィッ
 #### xelatex の場合 {#ce0db196}
 
 文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex を設定してグラフィックドライバに 既定値を指定します．<br>
+xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex と precisetext を設定してグラフィックドライバに 既定値を指定します．<br>
 他の文書クラスを使用していてクラスオプションに xelatex を設定しない場合はグラフィックドライバに  既定値 または XeTeX を指定します．<br>
 設定を反映させるために \[適用(A)\] をクリックします．<br>
 
@@ -671,7 +693,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 
 　クラスオプション<br>
 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>xelatex,12pt,ja=standard</ins><br>
+　任意設定(T):　　　 <ins>xelatex,12pt,ja=standard,precisetext</ins><br>
 
 <br>
 
