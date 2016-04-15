@@ -9,7 +9,7 @@ pukiwiki: "Linux/openSUSE"
 
 [Linux](/Linux/) > openSUSE
 
-## [openSUSE](http://www.opensuse.org/) {#nea99a9d}
+## [openSUSE](https://www.opensuse.org/) {#nea99a9d}
 
 openSUSE は安定・使い易い・多目的な Linux ベースのオペレーティングシステムです．
 
@@ -24,24 +24,35 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [Linux](/Linux/#texliveinstall)
 - [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
     - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
-- [http://software.opensuse.org/package/texlive-dummy_install](http://software.opensuse.org/package/texlive-dummy_install)
+- [https://software.opensuse.org/package/texlive-dummy_install](https://software.opensuse.org/package/texlive-dummy_install)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) をインストールします．
 texlive-dummy-opensuse をインストールすると TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．
 
+```
+$ sudo rpm -ivh http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2015.9999-1.noarch.rpm
+```
+
 #### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
-- [http://software.opensuse.org/package/texlive-scheme-full](http://software.opensuse.org/package/texlive-scheme-full)
+- [https://software.opensuse.org/package/texlive-scheme-full](https://software.opensuse.org/package/texlive-scheme-full)
+- [https://software.opensuse.org/package/texlive-collection-langjapanese](https://software.opensuse.org/package/texlive-collection-langjapanese)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show?project=Publishing%3ATeXLive)
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
+
+フルインストールする場合は
 
 ```
 $ sudo zypper install texlive-scheme-full
 ```
 
-&#x2a;\* WARNING \*\* Could not open config file "dvipdfmx.cfg". が表示される場合は TeX Live 公式パッケージをインストールしてください．
+日本語関連のパッケージのみインストールする場合は
 
-- [Tex Live 2013 が壊れている疑惑](http://folioscope.hatenablog.jp/entry/2013/12/09/194754)
+```
+$ sudo zypper install texlive-collection-langjapanese
+```
+
+を実行します．
 
 ### [Ghostscript](/Ghostscript/) {#iea7fcc9}
 
