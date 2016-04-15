@@ -7,7 +7,7 @@ pukiwiki: "Linux/Ubuntu"
 
 # Linux/Ubuntu
 
-[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
+[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Ubuntu MATE/Kubuntu/Xubuntu/Lubuntu
 
 ## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](http://ubuntu-mate.org/)/[Kubuntu](http://kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
@@ -68,7 +68,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Ubuntu 14.10 以降にアップグレードして
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Ubuntu 16.04 以降にアップグレードして
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
@@ -76,16 +76,6 @@ $ tlmgr init-usertree
 ```
 
 を実行します．
-
-［注意］最新の Ubuntu 長期サポート (LTS) 版は 14.04 Trusty です．
-Ubuntu 14.04 には texlive-lang-japanese は存在しません．
-インストールするには下記のようにします．
-なお，tlmgr は texlive-base に含まれており，texlive-lang-cjk の依存関係から，texlive-lang-cjk と同時にインストールされます．
-
-```
-$ sudo apt-get install texlive-lang-cjk
-$ tlmgr init-usertree
-```
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#ve306e42}
 
