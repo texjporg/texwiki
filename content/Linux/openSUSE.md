@@ -27,13 +27,13 @@ openSUSE は安定・使い易い・多目的な Linux ベースのオペレー�
 - [https://software.opensuse.org/package/texlive-dummy_install](https://software.opensuse.org/package/texlive-dummy_install)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) をインストールします．
-texlive-dummy-opensuse をインストールすると TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．
+texlive-dummy-opensuse をインストールすると TeX Live/TeX Live for opensuse.org に依存するパッケージが TeX Live/TeX Live for opensuse.org をインストールするのを防止できます．
 
 ```
-$ sudo rpm -ivh http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2015.9999-1.noarch.rpm
+$ sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2015.9999-1.noarch.rpm
 ```
 
-#### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
+#### TeX Live/TeX Live for opensuse.org {#y0f6032d}
 
 - [https://software.opensuse.org/package/texlive-scheme-full](https://software.opensuse.org/package/texlive-scheme-full)
 - [https://software.opensuse.org/package/texlive-collection-langjapanese](https://software.opensuse.org/package/texlive-collection-langjapanese)
@@ -48,8 +48,16 @@ $ sudo zypper install texlive-scheme-full
 
 日本語関連のパッケージのみインストールする場合は
 
+openSUSE Tumbleweed (TeX Live 2015/TeX Live for opensuse.org) の場合は
+
 ```
 $ sudo zypper install texlive-collection-langjapanese
+```
+
+openSUSE Leap 42.1 (TeX Live 2013/TeX Live for SUSE Linux) の場合は
+
+```
+$ sudo zypper install texlive-collection-langcjk
 ```
 
 を実行します．
