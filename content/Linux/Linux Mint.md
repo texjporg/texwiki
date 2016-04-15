@@ -9,7 +9,7 @@ pukiwiki: "Linux/Linux Mint"
 
 [Linux](/Linux/) > Linux Mint/Linux Mint Debian Edition (LMDE)
 
-## [Linux Mint/Linux Mint Debian Edition (LMDE)](http://linuxmint.com/) {#f4077eb2}
+## [Linux Mint/Linux Mint Debian Edition (LMDE)](https://linuxmint.com/) {#f4077eb2}
 
 Linux Mint は Ubuntu をベースにした Linux ディストリビューションです．
 Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．
