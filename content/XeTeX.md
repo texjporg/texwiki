@@ -86,6 +86,9 @@ FaceIndex は不要の場合は省略できる。<br>
 
 PDF に変換するドライバは xdvipdfmx を用いる。<br>
 xdvipdfmx は dvipdfmx を XeTeX 用に拡張したものである。<br>
+TeX Live 2016以降では，xdvipdfmx と dvipdfmx
+の内容は同じである。dvipdfmx は xdvipdfmx への symbolic link になっている。
+読むものが .dvi であるか，.xdv であるかによって振る舞いが異なるようになっている。<br>
 
 <!-- ***xdv2pdf [#q2227054] -->
 <!-- xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。~ -->
