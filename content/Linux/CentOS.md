@@ -41,7 +41,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/RHEL に依存するパッケージが TeX Live/RHEL をインストールするのを防止できます．
 
 ```
-$ sudo rpm -ivh http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
+$ sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
 ```
 
 #### TeX Live/RHEL → TeX Live 公式パッケージを使用する {#w0c3dfae}
