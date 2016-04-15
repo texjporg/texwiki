@@ -364,7 +364,7 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 - [InkscapeでDesign](http://inkscapedesign.web.fc2.com/)
 - [Inkscaper ～Inkscapeの使い方～](http://logo.dollsent.jp/)
 - [Wikipedia.ja:Inkscape](https://ja.wikipedia.org/wiki/Inkscape)
-- [Wikibooks.ja:Inkscape](http://ja.wikibooks.org/wiki/Inkscape)
+- [Wikibooks.ja:Inkscape](https://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
 - [Inkscape - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/inkscape/)
 - [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
