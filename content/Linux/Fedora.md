@@ -57,7 +57,7 @@ $ sudo dnf install texlive-dummy
 $ sudo dnf install texlive-scheme-full
 ```
 
-日本語関連のパッケージをインストールする場合は
+日本語関連のパッケージのみインストールする場合は
 
 Fedora 24 以降の場合は
 
@@ -82,7 +82,7 @@ $ sudo dnf install texlive-collection-langcjk
 <!-- // // // http://i.imgur.com/xzD5aAP.png -->
 <!-- // // // // Fedora 23 では texlive-collection-langjapanese でエラーが発生しますが Fedora 24 では texlive-collection-langjapanese でインストールできます -->
 
-% ↑ <em>ここ，情報求む</em>
+<!-- % ↑ '''ここ，情報求む''' -->
 
 を実行します．
 
