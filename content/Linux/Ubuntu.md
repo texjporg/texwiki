@@ -9,7 +9,7 @@ pukiwiki: "Linux/Ubuntu"
 
 [Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
 
-## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](https://ubuntu-mate.org/)/[Kubuntu](http://www.kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](http://ubuntu-mate.org/)/[Kubuntu](http://kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．
 高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) をおすすめします．
