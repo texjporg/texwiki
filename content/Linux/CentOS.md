@@ -9,7 +9,7 @@ pukiwiki: "Linux/CentOS"
 
 [Linux](/Linux/) > Red Hat Enterprise Linux (RHEL)/CentOS/Scientific Linux (SL)
 
-## [Red Hat Enterprise Linux (RHEL)](http://www.redhat.com/products/enterprise-linux/)/[CentOS](http://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
+## [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)/[CentOS](https://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
 
 Red Hat Enterprise Linux (RHEL) は Red Hat が開発・販売している Linux ディストリビューションです．
 
@@ -78,8 +78,8 @@ $ sudo yum install python
 
 ### Julia {#p0236f37}
 
-- [https://copr.fedoraproject.org/coprs/nalimilan/julia/](https://copr.fedoraproject.org/coprs/nalimilan/julia/)
-- [https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/](https://copr.fedoraproject.org/coprs/nalimilan/julia-nightlies/)
+- [https://copr.fedorainfracloud.org/coprs/nalimilan/julia/](https://copr.fedorainfracloud.org/coprs/nalimilan/julia/)
+- [https://copr.fedorainfracloud.org/coprs/nalimilan/julia-nightlies/](https://copr.fedorainfracloud.org/coprs/nalimilan/julia-nightlies/)
 
 ### [Ruby](/Ruby/) {#pa5990a1}
 
