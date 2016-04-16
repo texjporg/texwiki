@@ -11,7 +11,7 @@ pukiwiki: "Linux/Fedora"
 
 ## [Fedora](https://getfedora.org/) {#l0a22986}
 
-Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ベースのオペレーティングシステムです．
+Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ディストリビューションです．
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fedora_logo_and_wordmark.svg/500px-Fedora_logo_and_wordmark.svg.png,right,around,nolink,Fedora) -->
 
@@ -45,7 +45,7 @@ $ sudo dnf install texlive-dummy
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
 - [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
-    - [Features/TeXLive](https://fedoraproject.org/wiki/Features/TeXLive)
+    - [Features/TeXLive](http://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
