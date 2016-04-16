@@ -405,7 +405,82 @@ LuaLaTeX 用標準設定でも fontspec が使われるため，同じ理由で�
 
 なお，graphicx の xetex ドライバ指定については明示指定しなくとも自動的に xetex.def が読まれますので，わざわざオプション指定しなくてもよいでしょう．
 
-<!-- **不具合 [#x3d34063] -->
+#### 文字を“和文として”出力する {#s0220665}
+
+(u)pLaTeX においては特に何も設定しない場合は，ASCII で（直接または間接的に）入力する文字以外の Unicode 文字は全て和文として扱われます。[^6]しかしその他のエンジン（と日本語処理パッケージの組合せ）では Unicode 文字の一部が“欧文扱い”になっています。そのため通常は，そのような文字は“欧文側”のフォントで出力される（あるいは，フォントが対応してなければ出力されない）ことになります。
+
+例えば，次の文書をコンパイルすると，“☃”（U+2603）の文字の部分が空白になってしまいます。
+
+```
+\documentclass[xelatex,a4paper,ja=standard]{bxjsarticle}
+\begin{document}
+吾輩は☃である。
+\end{document}
+```
+
+XeLaTeX + zxjatype においては，“☃”は“欧文扱い”であるため，欧文フォントで出力しようとしますが，現在の欧文フォント（Latin Modern Serif）は“☃”の字形を持たないので，結果的に空白になってしまったのです。
+
+BXJS クラス（標準設定）では \jachar{&lt;文字>} という命令を用いて，当該の文字を強制的に“和文として”出力させることができます。
+
+```
+\documentclass[xelatex,a4paper,ja=standard]{bxjsarticle}
+\begin{document}
+吾輩は\jachar{☃}である。
+\end{document}
+```
+
+現在の和文フォント（IPAex明朝）には“☃”の字形があるため，これで正常に“☃”が出力できます。
+
+※ \jachar の引数には文字 1 つだけを指定できます。
+
+### 不具合 {#x3d34063}
+
+#### 別行立て数式を使うと警告が出る → 最新版にアップデート {#j507a331}
+
+v1.0a 以前の BXJS クラスでは，文書中に別行立て数式（ディスプレイ数式）が出現するたびに無用な警告が出る，という不具合がありました。例えば：
+
+```
+\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
+\begin{document}
+例：
+\[ a + b = c \] % ここで警告が出る
+\end{document}
+```
+
+この文書をコンパイルすると以下の警告が出ます。
+
+```
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 4.
+```
+
+これはバグであり，v1.0b において修正されています。 <!-- 回避策： 当該の警告を潰してしまう。 -->
+
+#### \paragraph 命令でエラーが出る → 最新版にアップデート {#pa6f742a}
+
+v1.0d～v1.1 の BXJS クラスを minimal 和文ドライバで用いる場合，\paragraph 命令を使うとエラーが出ます。例えば：
+
+```
+% ja無指定なのでminimal和文ドライバになる
+\documentclass[xelatex,a4paper]{bxjsarticle}
+\usepackage{zxjatype}
+\usepackage[ipaex]{zxjafont}
+\begin{document}
+\paragraph{BXjsclsは} アレ。
+\end{document}
+```
+
+この文書をコンパイルすると以下のエラーが出ます。
+
+```
+! Undefined control sequence.
+\jsParagraphMark ->\jsJaChar 
+                             {■}
+l.6 \paragraph{BXjsclsは} ア
+                              レ。
+?
+```
+
+これはバグであり，v1.1a において修正されています。 <!-- 回避策： \let\jsJaChar\relax -->
 
 ### 関連リンク {#f25f7b2d}
 
@@ -424,3 +499,4 @@ LuaLaTeX 用標準設定でも fontspec が使われるため，同じ理由で�
 [^3]: 例えば hyperref の用紙サイズ機能が誤動作する．なお，BXJS クラスではその機能を無効化して問題を回避している．
 [^4]: この設定を既定にするか否かについては現在検討中らしい．
 [^5]: ドライバオプションは dvipdfmx-if-dvi が既定となりますが，これは明示指定で上書きできます．
+[^6]: pLaTeX の既定の設定では，JIS 符号にある文字以外は扱えない。
