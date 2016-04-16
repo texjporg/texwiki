@@ -62,7 +62,7 @@ ASCII 翻字入力についての詳細は [アスキー文字を用いた転写
 Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](https://www.google.co.jp/) などで探してみましょう。
-参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://kazajirushi.blog81.fc2.com/blog-entry-977.html)，[スペイン語入力](http://www.spaingo.jp/input.html)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://kazajirushi.blog81.fc2.com/blog-entry-977.html)，[スペイン語入力](http://www.spaingo.sakura.ne.jp/new/input.html)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
 [Emacs](/Emacs/)，
