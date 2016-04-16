@@ -70,7 +70,7 @@ echo pzdr | tex tab
 Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるいは『LaTeX2e マクロ＆クラス プログラミング実践解説』（吉永徹美 著）の補遺 B -->
 に説明があります．
 
-- [フォントテーブル - 東京大学大学院人文社会系研究科／文学部西洋古典学研究室の学生有志によるWikiページ](http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FFont%2FFontTable)
+- [フォントテーブル - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Font/FontTable)
 
 ### 他の方法 {#f991f19c}
 
