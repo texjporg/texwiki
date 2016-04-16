@@ -264,9 +264,9 @@ GPLv3
 
 - [https://www.cygwin.com/faq.html#faq.what.free](https://www.cygwin.com/faq.html#faq.what.free)
 - [https://cygwin.com/licensing.html](https://cygwin.com/licensing.html)
-- [https://cygwin.com/viewvc/src/winsup/COPYING?view=markup](https://cygwin.com/viewvc/src/winsup/COPYING?view=markup)
 
 #### ChangeLog {#t7089ab8}
 
-- [https://cygwin.com/viewvc/src/winsup/doc/ChangeLog?view=markup](https://cygwin.com/viewvc/src/winsup/doc/ChangeLog?view=markup)
-- [https://cygwin.com/viewvc/src/winsup/ChangeLog?view=markup](https://cygwin.com/viewvc/src/winsup/ChangeLog?view=markup)
+- [https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git](https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git)
+    - [https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git;a=shortlog](https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git;a=shortlog)
+    - [https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git;a=log](https://cygwin.com/git/gitweb.cgi?p=newlib-cygwin.git;a=log)
