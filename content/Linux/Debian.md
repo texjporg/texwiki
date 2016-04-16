@@ -50,7 +50,7 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/)
 - [http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-nonbin.git/)
-- [http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese](http://dedup.debian.net/compare/poppler-data/texlive-lang-japanese)
+- [https://dedup.debian.net/compare/poppler-data/texlive-lang-japanese](https://dedup.debian.net/compare/poppler-data/texlive-lang-japanese)
 - [https://people.debian.org/~preining/TeX/](https://people.debian.org/~preining/TeX/)
 - [TeX Live Archives - There and back again](http://www.preining.info/blog/tag/tex-live/)
 - [Debian 8.x (Jessie) での TeX 環境](http://uwabami.junkhub.org/log/20141205.html#p01)
