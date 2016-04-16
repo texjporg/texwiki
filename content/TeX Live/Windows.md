@@ -154,7 +154,7 @@ TeX Live 2015 対応の事例です．
 <!-- -[[TeX Live 2014 for Windows:http://www.baldanders.info/spiegel/log2/000730.shtml]] -->
 <!-- -[[Windows 8.1 に TeX Live 2014 をインストール:http://qiita.com/ignorant/items/21545cde3c9bbafaa264]] -->
 <!-- -[[docs/TeX/TeX on Windows - kyogoku42's:http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows]] -->
-<!-- -[[TeX/Install - PukiWiki:http://glc.l.u-tokyo.ac.jp/pukiwiki/index.php?TeX%2FInstall]] -->
+<!-- -[[TeX/Install - PukiWiki:http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install]] -->
 <!-- -[[TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築:http://yksris.hatenablog.com/entry/2014/10/01/143744]] -->
 <!-- -[[Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．:http://qiita.com/ConHumi/items/f0d12ab1ad433591c192]] -->
 
