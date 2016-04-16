@@ -23,7 +23,7 @@ collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/
 ### [小川版 Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
 Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている BasicTeX + texlive-collection-langjapanese ベースの OS X 専用 TeX ディストリビューションです[^1]。
-OS X 10.10 Yosemite / 10.11 El Capitan 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
+OS X 10.11 El Capitan / 10.10 Yosemite 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
 
 #### 小川版 Drag &amp; Drop UpTeX のインストールと設定 {#e30d8e71}
@@ -34,7 +34,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 インストールしたら，[dvipdfmx](/dvipdfmx/) による PDF 作成で埋め込む日本語フォントを設定します。
 UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX」-「環境設定」から環境設定パネルを開きます。
-「dvipdfmx のフォント」のプルダウンメニューからお使いの OS X のバージョン（Yosemite または El Capitan）に合わせたヒラギノフォントを選択するとよいでしょう。
+「dvipdfmx のフォント」のプルダウンメニューからお使いの OS X のバージョン（El Capitan または Yosemite）に合わせたヒラギノフォントを選択するとよいでしょう。
 （これはバックグラウンドで updmap-sys と mktexlsr を実行します。あらかじめヒラギノフォントのシンボリックリンクを作成してあるため，簡単に設定を完了することができます。）
 
 TeX Live のアップデートは，同じく環境設定パネルから「TeX コンポーネントのアップデート」で行います。
@@ -86,6 +86,8 @@ BasicTeX のインストールの概略は以下のとおりです。
 
 以下のインストール事例も参考になります。
 
+- [MacにTeX環境を整える](http://keisanbutsuriya.hateblo.jp/entry/2016/04/15/190757)
+- [OS X に texlive2015 をインストールする](http://d.hatena.ne.jp/pyopyopyo/20150710/p1)
 - [BasicTeX-2015でRe:VIEWの環境を用意する](http://qiita.com/takahashim/items/74d6d1de557fad09a879)
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
