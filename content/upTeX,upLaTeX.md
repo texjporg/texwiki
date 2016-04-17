@@ -68,7 +68,7 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 ### 不具合 {#p35560b1}
 
-#### [biblatex](/Biblatex/) の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.11) を使用すると upbibtex がフリーズする {#g3e20a4e}
+#### [biblatex](/Biblatex/) の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.21) を使用すると upbibtex がフリーズする {#g3e20a4e}
 
 pbibtex を使用すると回避できます．
 
@@ -82,6 +82,7 @@ biblatex を使用する場合は backend に biber を指定して biber を使
 biber --bblencoding=utf8 -u -U --output_safechars hoge
 ```
 
+- upbibtex を biblatex で使う ([forum:1886](https://okumuralab.org/tex/mod/forum/discuss.php?d=1886))
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
 - \[[LaTeX\] biblatex ～初歩の初歩～ ---- もう一つの［参考文献］生成ツール](http://konoyonohana.blog.fc2.com/blog-entry-96.html)
 
