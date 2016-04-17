@@ -9,45 +9,33 @@ pukiwiki: "XeTeX"
 
 ## [XeTeX](http://scripts.sil.org/xetex) {#a81f78a6}
 
-<!-- XǝTeX -->
-<!-- RIGHT:&size(50){X};&size(30){Ǝ};&size(50){T};&size(30){E};&size(50){X};~ -->
+XeTeX は UTF-8 ベースの TeX です． <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
+「ズィーTeX」と読みます．
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/XeTeX_Logo.svg/500px-XeTeX_Logo.svg.png" alt="XeTeX" style="float:right">
+***
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## XeTeX とは {#v9b12e60}
-
-XeTeX は UTF-8 ベースの TeX です．<br> <!-- 入力ファイルは UTF-8 ベースだが，内部動作は UTF-16 ベース． -->
-「ズィーTeX」と読みます．<br>
+## 公式サイトなど {#v9b12e60}
 
 - [The XeTeX typesetting system](http://scripts.sil.org/xetex) （本家）
 - [XeTeX - TeX Users Group](http://www.tug.org/xetex/) (TUG)
 - [XeTeX Info Page](http://www.tug.org/mailman/listinfo/xetex) (TUG)
 - [The XeTeX Archives](http://tug.org/pipermail/xetex/) (TUG)
 - [XeTeX - Unicode-based TeX](http://xetex.sourceforge.net/) (SourceForge)
-- HarfBuzz (OpenType レイアウトエンジン)
 
 ### License {#u72986d4}
 
 [MIT License](https://sourceforge.net/p/xetex/code/ci/master/tree/source/texk/web2c/xetexdir/COPYING)
 
-### ChangeLog {#w3545bdb}
+## 概要 {#n5d8d950}
 
-- [https://sourceforge.net/p/xetex/code/ci/master/log/](https://sourceforge.net/p/xetex/code/ci/master/log/)
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
-    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/NEWS?view=markup)
+### fontconfig {#r7df202a}
 
-### 概要 {#n5d8d950}
-
-#### fontconfig {#r7df202a}
-
-XeTeX はシステムが認識する OpenType フォントをそのまま使える。<br>
+XeTeX はシステムが認識する OpenType フォントをそのまま使える。
 XeTeX で使えるフォントは OS が認識しているものと言うより，fontconfig が認識して
-いるものと言ったほうが正確である。<br>
-XeTeX は次のようなフォントの指定法が可能である。<br>
+いるものと言ったほうが正確である。
+XeTeX は次のようなフォントの指定法が可能である。
 
 ```
 [FontFileName:FaceIndex]:features
@@ -55,7 +43,7 @@ XeTeX は次のようなフォントの指定法が可能である。<br>
 
 fontconfig とは無関係に， Kpathsearch
 が見つけることができるところにある “Uninstalled fonts” を native fonts
-として使用することもできるようになっている。<br>
+として使用することもできるようになっている。
 例えば
 
 ```
@@ -68,66 +56,66 @@ fontconfig とは無関係に， Kpathsearch
 \font\x="MS PMincho:mapping=tex-text,color=0000FF" at 12pt
 ```
 
-と同じように振舞う。<br>
-FaceIndex は不要の場合は省略できる。<br>
+と同じように振舞う。
+FaceIndex は不要の場合は省略できる。
 前者の方が fontconfig に関係しないので，
-早く処理できるかもしれない。<br>
+早く処理できるかもしれない。
 
-#### xdv ファイル {#k933d7e1}
+### xdv ファイル {#k933d7e1}
 
 デフォルトではタイプセット時に，パイプによって出力がドライバに送られ，
-最終出力は PDF となる。<br>
-オプション “--no-pdf” によってこれを 2 段階に分けることもできる。<br>
+最終出力は PDF となる。
+オプション “--no-pdf” によってこれを 2 段階に分けることもできる。
 この場合は .xdv ファイル
-（.dvi ファイルを拡張したもの）を出力する。<br>
-.xdv ファイルをドライバによって PDF に変換する。<br>
+（.dvi ファイルを拡張したもの）を出力する。
+.xdv ファイルをドライバによって PDF に変換する。
 
-#### xdvipdfmx {#b219f871}
+### xdvipdfmx {#b219f871}
 
-PDF に変換するドライバは xdvipdfmx を用いる。<br>
-xdvipdfmx は dvipdfmx を XeTeX 用に拡張したものである。<br>
+PDF に変換するドライバは xdvipdfmx を用いる。
+xdvipdfmx は dvipdfmx を XeTeX 用に拡張したものである。
 TeX Live 2016以降では，xdvipdfmx と dvipdfmx
 の内容は同じである。dvipdfmx は xdvipdfmx への symbolic link になっている。
-読むものが .dvi であるか，.xdv であるかによって振る舞いが異なるようになっている。<br>
+読むものが .dvi であるか，.xdv であるかによって振る舞いが異なるようになっている。
 
-<!-- ***xdv2pdf [#q2227054] -->
-<!-- xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。~ -->
-<!-- xdv2pdf は TeX Live 2013 で除外され開発が中止された。(→ [[[XeTeX] Future of xdv2pdf driver on Mac:http://tug.org/pipermail/xetex/2013-March/024120.html]])~ -->
-<!-- xdv2pdf は OS X 専用のドライバであって，他では利用できない。~ -->
+<!-- **xdv2pdf [#q2227054] -->
+<!-- xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。 -->
+<!-- xdv2pdf は TeX Live 2013 で除外され開発が中止された。(→ [[[XeTeX] Future of xdv2pdf driver on Mac:http://tug.org/pipermail/xetex/2013-March/024120.html]]) -->
+<!-- xdv2pdf は OS X 専用のドライバであって，他では利用できない。 -->
 <!-- xdv2pdf は OS X を有効利用するドライバだが，仮想フォントを読むことが -->
 <!-- できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には -->
-<!-- OS X であっても xdvipdfmx を使う必要がある。~ -->
+<!-- OS X であっても xdvipdfmx を使う必要がある。 -->
 <!-- また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う -->
-<!-- 場合だけ有効である。~ -->
+<!-- 場合だけ有効である。 -->
 
-#### graphics パッケージ，graphicx パッケージ，color パッケージ {#r1d77dc8}
+### graphics パッケージ，graphicx パッケージ，color パッケージ {#r1d77dc8}
 
-[graphics](/graphicx/) パッケージ，[graphicx](/graphicx/) パッケージ，color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。<br>
+[graphics](/graphicx/) パッケージ，[graphicx](/graphicx/) パッケージ，color パッケージなどを使用するときは \[xetex\] オプションを付加する必要はない。
 付加しないと動作しない場合は \[xetex\]
-オプションを付加する。<br>
+オプションを付加する。
 
-#### しおり {#o4b92f27}
+### しおり {#o4b92f27}
 
 しおり等の PDF 文字列に関しては，オリジナルの dvipdfmx では 適切な CMap
-を指定することで Big Endian UTF-16 with BOM に変換するようになっていた。<br>
+を指定することで Big Endian UTF-16 with BOM に変換するようになっていた。
 xdvipdfmx でもこの機能はそのまま使えるが，UTF-8 で入力する XeTeX においては
 単に UTF-8 を Big Endian UTF-16 with BOM に変換するだけでよいので，
-より簡単な実装が可能である。<br>
-実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。<br>
+より簡単な実装が可能である。
+実際にこの機能が実装されていて，特別に何もしなくても日本語しおり等を作ることができる。
 
-### XeLaTeX で日本語 {#m8e2a0bc}
+## XeLaTeX で日本語 {#m8e2a0bc}
 
-#### [BXjscls](/BXjscls/) {#t23b4dfc}
+### [BXjscls](/BXjscls/) {#t23b4dfc}
 
-XeLaTeX では [BXjscls](/BXjscls/) が使用可能です．<br>
+XeLaTeX では [BXjscls](/BXjscls/) が使用可能です．
 
-#### [xeCJK/ZXjatype](/xeCJK/) {#ref20094}
+### [xeCJK/ZXjatype](/xeCJK/) {#ref20094}
 
-XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．<br>
+XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が可能です．
 
-#### 日本語ファイル名 {#k0e1d513}
+### 日本語ファイル名 {#k0e1d513}
 
-TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．<br>
+TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．
 
 - [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
 - [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
@@ -143,9 +131,8 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 
 ## 注意点 {#v6fc9cef}
 
-### XeLaTeX で \XeTeXgenerateactualtext=0 の場合に \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
+### \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
 
-XeLaTeX で \XeTeXgenerateactualtext=0 の場合に \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合があります．
 この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
 
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
@@ -165,19 +152,19 @@ TeX Live をインストールすると XeTeX がインストールされます�
 xetex-w32.tar.xz, xetex-w64.tar.xz<br>
 32-bit バイナリを使用する場合は<br>
 xetex-w32.tar.xz<br>
-を TeX のインストールトップディレクトリで展開して下さい。<br>
+を TeX のインストールトップディレクトリで展開して下さい。
 
 TopDir/share/texmf-dist/fonts/conf に移動し，（つまりカレントディレクトリとし）
 そこにある fonts.conf というファイルを編集します。
-編集するのは “Find fonts in these directories” というセクションだけです。<br>
+編集するのは “Find fonts in these directories” というセクションだけです。
 そこにはデフォルトで， Windows のシステムフォントディレクトリだけが
 
 ```
     <dir>c:/windows/fonts</dir>
 ```
 
-として入れてありますから，このままで良い場合は編集する必要はありません。<br>
-ディレクトリの名前が違う場合には変更する必要があります。<br>
+として入れてありますから，このままで良い場合は編集する必要はありません。
+ディレクトリの名前が違う場合には変更する必要があります。
 Windows のシステムフォントディレクトリの他に，購入したフォントのディレクトリがあれば，
 以下の例のように追加することができます：
 
@@ -195,44 +182,44 @@ Windows PowerShell またはコマンド プロンプトで
     fc-cache -v
 ```
 
-を実行して下さい。<br>
+を実行して下さい。
 これはフォントディレクトリにある各ファイルを
-スキャンして，キャッシュファイルを作成するコマンドです。<br>
-サブディレクトリは自動的にサーチされます。<br>
-キャッシュファイルは，TopDir/share/texmf-dist/fonts/cache に作成されます。<br>
+スキャンして，キャッシュファイルを作成するコマンドです。
+サブディレクトリは自動的にサーチされます。
+キャッシュファイルは，TopDir/share/texmf-dist/fonts/cache に作成されます。
 大きいフォントファイルが大量にあると，このコマンドは終了までに数分かかる
-ことがありますから，気長に他の仕事をしていて下さい。<br>
+ことがありますから，気長に他の仕事をしていて下さい。
 
-以上でインストールが終了します。<br>
-使用可能フォント名は，通常のものが使えます。<br>
+以上でインストールが終了します。
+使用可能フォント名は，通常のものが使えます。
 名前を見たい場合は，
 
 ```
    fc-list >namelist.txt
 ```
 
-とすると， namelist.txt に記録されます。<br>
+とすると， namelist.txt に記録されます。
 ただし UTF-8 で記録されますから，もし Shift_JIS で見たかったら [nkf](/nkf/) で文字コード変換
 
 ```
    nkf -s namelist.txt >namelist.sj
 ```
 
-を実行すれば良いでしょう。<br>
+を実行すれば良いでしょう。
 あるいは最初に
 
 ```
    fc-list | nkf -s >namelist.sj
 ```
 
-とすると，直接 Shift_JIS のファイルになります。<br>
+とすると，直接 Shift_JIS のファイルになります。
 ただし，nkf でコード変換した結果のフォント名をそのまま使うと，
-エラーになることがあります。<br>
+エラーになることがあります。
 その理由は例えば 1 バイト仮名が
-nkf によって 2 バイト仮名に変換されたりするからです。<br>
+nkf によって 2 バイト仮名に変換されたりするからです。
 漢字フォント名を
-使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。<br>
-通常はアルファベットの名前のほうが入力も簡単でしょう。<br>
+使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。
+通常はアルファベットの名前のほうが入力も簡単でしょう。
 
 ### OS X でのインストール {#x46670ed}
 
@@ -247,8 +234,7 @@ nkf によって 2 バイト仮名に変換されたりするからです。<br>
 XeTeX でタイプセットして出力された PDF ファイルの検索やコピー &amp; ペーストがうまく動作しない場合は \XeTeXgenerateactualtext=1 を記述します。
 
 \XeTeXgenerateactualtext は XeTeX 0.99995 で追加されました。
-
-TeX Live 2016 以降または W32TeX \[2016/02/29\] 以降であれば \XeTeXgenerateactualtext=1 が使用できます。
+TeX Live 2016 以降または W32TeX \[2016/02/29\] 以降で使用できます。
 
 - TwitterSearch:\XeTeXgenerateactualtext, TwitterSearch.en:\XeTeXgenerateactualtext, TwitterSearch.ja:\XeTeXgenerateactualtext
 - [http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext)
@@ -261,15 +247,15 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 \XeTeXinputencoding (エンコーディング名)
 ```
 
-の指定により、ファイルのそれ以降の部分をそのエンコーディングで読み込みます。<br>
-グルーピングの影響は受けません。<br>
+の指定により、ファイルのそれ以降の部分をそのエンコーディングで読み込みます。
+グルーピングの影響は受けません。
 特に重要なのは
 
 ```
 \XeTeXinputencoding "bytes"
 ```
 
-で、これにより、 XeTeX はファイルを 1 バイトずつ、文字コードの解釈を行わずに読み込むようになるので、 8 ビットのハイフネーションパターンや、 inputenc, CJK 等の 8 ビットの TeX を前提としたマクロも (原理的には) 使用できるようになります。<br>
+で、これにより、 XeTeX はファイルを 1 バイトずつ、文字コードの解釈を行わずに読み込むようになるので、 8 ビットのハイフネーションパターンや、 inputenc, CJK 等の 8 ビットの TeX を前提としたマクロも (原理的には) 使用できるようになります。
 ただし \usepackage\[utf8\]{inputenc} とすると
 
 ```
@@ -278,7 +264,7 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 *** some features of other encodings may conflict, resulting in poor output.
 ```
 
-と出力されるので XeLaTeX で inputenc パッケージは使用しないでください．<br>
+と出力されるので XeLaTeX で inputenc パッケージは使用しないでください．
 また CJK パッケージと xeCJK パッケージを両方使用しようとすると
 
 ```
@@ -296,7 +282,7 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 !...............................................
 ```
 
-と出力されるので XeLaTeX で CJK パッケージは使用しないでください．<br>
+と出力されるので XeLaTeX で CJK パッケージは使用しないでください．
 エンコーディングの解釈には、 ICU ライブラリが使われるので、 iconv の規則とは異なり、
 
 ```
@@ -309,32 +295,33 @@ XeTeX はデフォルトではファイルを UTF-8 として読み込みます�
 \XeTeXinputencoding "CP932"
 ```
 
-はどちらも 0x5c を円記号では無くバックスラッシュとして、解釈してくれるようです。<br>
+はどちらも 0x5c を円記号では無くバックスラッシュとして、解釈してくれるようです。
 
 ### TECKit {#k7b5869f}
 
-XeTeX には単純だけれども結構強力な入力フィルタ TECKit が内蔵されており、ソースコード中のある文字列を別の文字列に変換してから、 TeX に処理させることができます。<br>
-使用するフィルタはフォント毎に指定します。<br>
+XeTeX には単純だけれども結構強力な入力フィルタ TECKit が内蔵されており、ソースコード中のある文字列を別の文字列に変換してから、 TeX に処理させることができます。
+使用するフィルタはフォント毎に指定します。
 
 - 歴史的な事情から TeX では、ある種のキーボードでの直接入力が困難な文字、例えば、“は\`\`、”は''、—は---、と言った具合に tfm ファイルのリガチャーとして、 ASCII 転写で入力できるようになっています。このような表記を含む既存の tex ファイルのコンパイルを可能にするためには、フォントの指定に修飾詞 mapping=tex-text を付け加えます。(fontspec パッケージを使用するならば、オプション Mapping=tex-text を付け加えます。)
 - arabxetex は TECKit のフィルタを用いて、 arabTeX 互換の ASCII 転写入力を可能にするパッケージです。これにより、例えば、単一のソースから、母音を表示せずにタイプセットした物と、表示してタイプセットした物、更にはローマ字転写の出力を得ることができます。
 
 ### スマート・フォント {#ne48456f}
 
-和文や欧文などの『単純』な表記システムのタイプセットでは、グリフを組方向のメトリックに従い平行移動しながら配置することで、ほぼ、事が足ります。<br>
-しかし、もちろん、これだけでは、和文の縦組での約物、囲み文字や字間空き、欧文の詰め、合字やアクセント記号の位置調整など、処理しきれない事項もあります。<br>
-伝統的な TeX では、これらの処理の多くは tfm に実装されてきました。<br>
-しかしながら、世界には、それほど『単純』ではない表記システムもあります。<br>
+和文や欧文などの『単純』な表記システムのタイプセットでは、グリフを組方向のメトリックに従い平行移動しながら配置することで、ほぼ、事が足ります。
+しかし、もちろん、これだけでは、和文の縦組での約物、囲み文字や字間空き、欧文の詰め、合字やアクセント記号の位置調整など、処理しきれない事項もあります。
+伝統的な TeX では、これらの処理の多くは tfm に実装されてきました。
+しかしながら、世界には、それほど『単純』ではない表記システムもあります。
 
 - アラビア文字やシリア文字など、続け書きをする文字では、単語内の位置によって、同じ文字でもまったく異なる形態をとります。セム系の表記システムでは母音は通常表示しませんが、もし、表示するならば、欧文のアクセントのように位置調整がかかせません。
 - インド・東南アシア系の文字では、同一音節内の子音の発音順と表記順が必ずしも一致しません。タイ文字とラオス文字を除き、コンピュータで扱う文字列は発音順なので、タイプセットの際には並べ替えが必要になります。これらの子音が一次元的に並べられるのでは無いことも問題です。更に、これらの表記システムでは、従属母音は実際には子音がデフォルトに持っている母音の変音記号であり、欧文のアクセントのように位置調整がかかせません。ユニコードでは、インド・東南アシア系の文字の従属母音を独立した文字として扱うため、子音字との複雑な並べ替え (時には一つの母音が複数の要素に分裂して子音字を挟み込む) が必要になります。
     こう言った『複雑』な表記システムを取り扱う際には、伝統的な TeX では、外部プログラムをプリプロセッサとして使ったり、複雑なマクロで処理してきました。
 
-TeX 以外のシステムでも、このような『単純』な平行移動しながらの配置では済まない文字組を行う必要は当然あります。<br>
-それには処理に必要な情報をフォントに実装した、スマート・フォント技術が使われることが多くなってきています。<br>
+TeX 以外のシステムでも、このような『単純』な平行移動しながらの配置では済まない文字組を行う必要は当然あります。
+それには処理に必要な情報をフォントに実装した、スマート・フォント技術が使われることが多くなってきています。
 
-XeTeX は tfm には依らずにタイプセットを行うために、様々なスマート・フォント技術をサポートしています。<br>
-スマート・フォント技術では、同じ文字でも使用されるコンテクストによって、異なる扱いが必要になるため、 XeTeX では従来の TeX とは異なり、一つ一つの文字を個別に処理するのでは無く、文字列ブロック毎にまとめて処理するアプローチがとられています。<br>
+XeTeX は tfm には依らずにタイプセットを行うために、様々なスマート・フォント技術をサポートしています。
+スマート・フォント技術では、同じ文字でも使用されるコンテクストによって、異なる扱いが必要になるため、 XeTeX では従来の TeX とは異なり、一つ一つの文字を個別に処理するのでは無く、文字列ブロック毎にまとめて処理するアプローチがとられています。
+
 次のソースを XeLaTeX でコンパイルして見てください。
 
 ```
@@ -347,15 +334,15 @@ A quick brown fox jumps over the lazy dog.
 \end{document}
 ```
 
-\beginR は [e-TeX](/e-TeX/) のプリミティブで文字を右から左方向に組んでいきます。<br>
+\beginR は [e-TeX](/e-TeX/) のプリミティブで文字を右から左方向に組んでいきます。
 結果は
 
 ```
 .god yzal eht revo spmuj xof nworb kciuq A
 ```
 
-となるはずです。<br>
-この文書では tfm ベースの Computer Modern フォントが使用されています。<br>
+となるはずです。
+この文書では tfm ベースの Computer Modern フォントが使用されています。
 ここで、
 
 ```
@@ -368,15 +355,15 @@ A quick brown fox jumps over the lazy dog.
 \usepackage{fontspec}
 ```
 
-にすると、デフォルトのフォントが Latin Modern OpenType になります。<br>
+にすると、デフォルトのフォントが Latin Modern OpenType になります。
 それをコンパイルすると、結果は
 
 ```
 dog. lazy the over jumps fox brown quick A
 ```
 
-となるはずです。<br>
-つまり、 XeTeX は空白文字で区切られた単語を一塊のブロックとしてタイプセットしているわけです。<br>
+となるはずです。
+つまり、 XeTeX は空白文字で区切られた単語を一塊のブロックとしてタイプセットしているわけです。
 
 #### AAT (Apple Advanced Typography) フォント {#gab9966e}
 
@@ -384,7 +371,7 @@ dog. lazy the over jumps fox brown quick A
 
 #### OpenType フォント {#e81236d3}
 
-OpenType フォントはフォントファイルの以下のテーブルにスマート・フォント機能を実装しています。<br>
+OpenType フォントはフォントファイルの以下のテーブルにスマート・フォント機能を実装しています。
 
 <table>
 <tbody>
@@ -398,14 +385,14 @@ OpenType フォントはフォントファイルの以下のテーブルにス�
 
 OpenType フォントの各テーブルは文字種と言語ごとにアクセスできます。
 
-スマート・フォント技術としての OpenType の特徴はユニコード規格で定められている、文字種に共通の表記上の規則、例えば、アラビア文字やシリア文字のコンテキストによる字形、インド・東南アジア系文字の並べ変え等は、レンダラが知識として持っていることを仮定し、フォントには、そのフォントのデザイン固有のデータのみを格納するとの立場がとられていることです。<br>
+スマート・フォント技術としての OpenType の特徴はユニコード規格で定められている、文字種に共通の表記上の規則、例えば、アラビア文字やシリア文字のコンテキストによる字形、インド・東南アジア系文字の並べ変え等は、レンダラが知識として持っていることを仮定し、フォントには、そのフォントのデザイン固有のデータのみを格納するとの立場がとられていることです。
 
 - Adobe-Japan-1 のフィーチャ
-    Adobe-Japan-1 は cyrl (キリル文字)、 grek (ギリシャ文字)、 hani (漢字)、 kana (かな)、 latn (ラテン文字) の 5 種類の文字種をサポートします。<br>
-    文字種の違いによる、振舞の違いは無いので、どの文字種を指定しても結果は同じです。<br>
-    言語はデフォルトの言語のみのサポートなので、指定しても無意味です。<br>
-    以下のフィーチャの中には同時に使用することを想定していない物もあります。<br>
-    詳しくは[Mac OS Xの文字コード問題に関するメモ](http://d.hatena.ne.jp/NAOI/)を御覧下さい。<br>
+    Adobe-Japan-1 は cyrl (キリル文字)、 grek (ギリシャ文字)、 hani (漢字)、 kana (かな)、 latn (ラテン文字) の 5 種類の文字種をサポートします。
+    文字種の違いによる、振舞の違いは無いので、どの文字種を指定しても結果は同じです。
+    言語はデフォルトの言語のみのサポートなので、指定しても無意味です。
+    以下のフィーチャの中には同時に使用することを想定していない物もあります。
+    詳しくは[Mac OS Xの文字コード問題に関するメモ](http://d.hatena.ne.jp/NAOI/)を御覧下さい。
     - GPOS フィーチャ
         - halt
             句読点が半角幅で組まれるようにします。
@@ -515,8 +502,8 @@ OpenType フォントの各テーブルは文字種と言語ごとにアクセ�
 
 #### Graphite フォント {#k7cb7575}
 
-Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力なスマート・フォント技術で、レンダラにユニコード規格などの事前の知識を要求すること無く、すべてをフォントに実装されたデータに基づき、処理されます。<br>
-このような、スマート・フォント技術が新たに開発されたのは、ユニコードには収録されていない文字や、縦令収録されていても、少数言語のタイプセットにはユニコードの規格に採用されている公式言語の規則とは異なる処理を必要とする文字があるからです。<br>
+Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力なスマート・フォント技術で、レンダラにユニコード規格などの事前の知識を要求すること無く、すべてをフォントに実装されたデータに基づき、処理されます。
+このような、スマート・フォント技術が新たに開発されたのは、ユニコードには収録されていない文字や、縦令収録されていても、少数言語のタイプセットにはユニコードの規格に採用されている公式言語の規則とは異なる処理を必要とする文字があるからです。
 
 ```
 \font\d="Doulos SIL/GR:1041=0:" at 40pt
@@ -526,7 +513,9 @@ Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力
 \font\d="Doulos SIL/GR:1041=1:" at 40pt
 \d
 Ştiaţi că…?
+```
 
+```
 %%同じ事を OpenType でやってみる
 \vskip40pt
 \font\d="Doulos SIL/ICU:script=latn:language=dflt:" at 40pt
@@ -536,7 +525,9 @@ Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力
 \font\d="Doulos SIL/ICU:script=latn:language=ROM :" at 40pt
 \d
 Ştiaţi că…?
+```
 
+```
 %%次は OpenType では実装されていない例。
 \vskip40pt
 \font\d="Doulos SIL/GR:1027=0:" at 40pt
@@ -549,15 +540,15 @@ Graphite は [SIL](http://scripts.sil.org/) で開発された、極めて強力
 \bye
 ```
 
-Graphite フォントの中にはビルマ文字の[Padauk Font](http://scripts.sil.org/Padauk)のように、ビルマ語、カレン語、モン語の文字の並べ変えや位置調整のみならず、改行規則まで実装したフォントもあります。<br> <!-- -Graphite フォントの作り方 --> <!-- Graphite フォントは GDL 言語で書かれたソースコードを Graphite コンパイラでコンパイルして TrueType または OpenType フォントにテーブルとして、埋め込むことで作成します。フォントに予め搭載されていたデータはまったく変更されませんが、フォントファイルは改変されるので、商用フォントの場合、ライセンスを確認してから行ってください。 -->
+Graphite フォントの中にはビルマ文字の[Padauk Font](http://scripts.sil.org/Padauk)のように、ビルマ語、カレン語、モン語の文字の並べ変えや位置調整のみならず、改行規則まで実装したフォントもあります。 <!-- -Graphite フォントの作り方 --> <!-- Graphite フォントは GDL 言語で書かれたソースコードを Graphite コンパイラでコンパイルして TrueType または OpenType フォントにテーブルとして、埋め込むことで作成します。フォントに予め搭載されていたデータはまったく変更されませんが、フォントファイルは改変されるので、商用フォントの場合、ライセンスを確認してから行ってください。 -->
 
 ### 改行アルゴリズムの比較 {#yeeccfb4}
 
 <!-- どなたか、修正加筆して頂くと嬉しいです。 -->
 
 そもそも TeX で改行が可能な位置は、(数式と kern を無視して)単純化すると、
-glue, penalty, discretionary break です。<br>
-ハイフンは日本語に関係しないので、無視します。<br>
+glue, penalty, discretionary break です。
+ハイフンは日本語に関係しないので、無視します。
 文章中のどのような箇所に glue と penalty が現れるかというと、
 
 1. ユーザーが直に書き込んだ場所、
@@ -588,18 +579,18 @@ glue, penalty, discretionary break です。<br>
 
     は、和字と和字の間や和字とそれ以外の間に、少量の伸び縮みを許した幅 0 の空白 (glue) を挿入することを指示します。この際、行頭禁則文字の直前と、行末禁則文字の直後は、ユニコードの改行規則では改行可能であると認識されないので、このような場所には何も挿入されません。
 
-このようにして、各言語毎の規則で設定された改行可能箇所から、その段落の最も適切な改行箇所を見つけ出すのは、 TeX の役割です。<br>
+このようにして、各言語毎の規則で設定された改行可能箇所から、その段落の最も適切な改行箇所を見つけ出すのは、 TeX の役割です。
 0.997 以降では、更に、 \XeTeXinterchartokenstate が正の値になっていれば、 \XeTeXcharclass の概念が有効になり、 \XeTeXcharclass が A の文字と \XeTeXcharclass が B の文字との間にはトークンレジスタ
 
 ```
 \XeTeXinterchartoks A B
 ```
 
-が自動的に挿入されます。<br>
-このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。<br>
-このグルーの挿入はマクロ展開前に行われます。<br>
-\XeTeXcharclass は 0 -- 255 の任意の整数ですが、 255 だけは特別な意味を持ち、文字列の境界を表します。<br>
-例えば、行末。行頭、インラインの数式、 hbox などです。<br>
+が自動的に挿入されます。
+このトークンレジスタに改行を可能にする glue や penalty に展開される内容が入っていれば、ここも改行可能箇所になります。
+このグルーの挿入はマクロ展開前に行われます。
+\XeTeXcharclass は 0 -- 255 の任意の整数ですが、 255 だけは特別な意味を持ち、文字列の境界を表します。
+例えば、行末。行頭、インラインの数式、 hbox などです。
 FMT ファイルで、\XeTeXcharclass の値は
 
 - 分かち書きされる通常の文字は 0
@@ -607,30 +598,32 @@ FMT ファイルで、\XeTeXcharclass の値は
     - 開き括弧は 2
     - 閉じ括弧と句読点は 3
     - 結合文字は 256 (無効な値、 \XeTeXinterchartoks の挿入を不可能にするため。)
-        に初期化されます。<br>
+        に初期化されます。
         これらの文字の分類は、
         [Line Breaking Properties](http://www.unicode.org/reports/tr14/)
         に基づいて行われますが、 0 以外の値が設定されるのは、
         [East Asian Width](http://www.unicode.org/reports/tr11/)
         の定義で、 Full Width, Half Width, Wide のいずれかの属性を与えられた
-        文字に限られます。<br>
+        文字に限られます。
         更に、
 
         ```
         \gdef\xtxHanGlue{\hskip0pt plus 0.1em\relax} % between ideographs
         \gdef\xtxHanSpace{\hskip0.2em plus 0.2em minus 0.1em\relax} % before/after runs of CJK
-
-        \global\XeTeXinterchartoks 0 1 = {\xtxHanSpace}
-        \global\XeTeXinterchartoks 1 0 = {\xtxHanSpace}
-        \global\XeTeXinterchartoks 1 1 = {\xtxHanGlue}
-        \global\XeTeXinterchartoks 1 2 = {\xtxHanGlue}
-        \global\XeTeXinterchartoks 1 3 = {\nobreak\xtxHanGlue}
-        \global\XeTeXinterchartoks 2 1 = {\nobreak\xtxHanGlue}
-        \global\XeTeXinterchartoks 3 1 = {\xtxHanGlue}
         ```
 
-        等と、トークンレジスタも設定されていますが、これらは自由に再設定できます。<br>
-        pTeX に於ける \inhibitglue に相当する処理が必要ならば、 \relax を使えばよいでしょう。 (ただし、通常の文字とクラス 255 の文字との間に 0 ではないグルーが挿入されていない前提です。)<br>
+```
+\global\XeTeXinterchartoks 0 1 = {\xtxHanSpace}
+\global\XeTeXinterchartoks 1 0 = {\xtxHanSpace}
+\global\XeTeXinterchartoks 1 1 = {\xtxHanGlue}
+\global\XeTeXinterchartoks 1 2 = {\xtxHanGlue}
+\global\XeTeXinterchartoks 1 3 = {\nobreak\xtxHanGlue}
+\global\XeTeXinterchartoks 2 1 = {\nobreak\xtxHanGlue}
+\global\XeTeXinterchartoks 3 1 = {\xtxHanGlue}
+```
+
+等と、トークンレジスタも設定されていますが、これらは自由に再設定できます。
+pTeX に於ける \inhibitglue に相当する処理が必要ならば、 \relax を使えばよいでしょう。 (ただし、通常の文字とクラス 255 の文字との間に 0 ではないグルーが挿入されていない前提です。)
 
 一例として、行末禁則文字の \XeTeXcharclass を 4 に設定するには、
 
@@ -638,12 +631,12 @@ FMT ファイルで、\XeTeXcharclass の値は
 \@for\Kinsoku:={`＃,`￥,`＄,`＆}\do{\XeTeXcharclass\Kinsoku=4}
 ```
 
-とします。<br>
-\XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。<br>
-\XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。<br>
-これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。<br>
-なお、このメカニズムにより、文字間にトークンを挿入すると、内蔵の ICU ライブラリによる解析の対象は個別の文字になってしまうので、 \XeTeXlinebreaklocale の設定は無意味になります。<br>
-同様に、 OpenType フォントの持つ、コンテクスト依存の文字置換や、リガチャーを使用する際にも、 \XeTeXinterchartokenstate=0 としなければなりません。<br>
+とします。
+\XeTeXinterchartoks 4 1 等を適切に定めれば、これらの文字の直後での改行を抑制できます。
+\XeTeXinterchartoks にはフォントの切替え命令を設定することもできます。
+これにより、 dvi ドライバではなく、 TeX 側に於ける、バーチャルフォントが実現できます。
+なお、このメカニズムにより、文字間にトークンを挿入すると、内蔵の ICU ライブラリによる解析の対象は個別の文字になってしまうので、 \XeTeXlinebreaklocale の設定は無意味になります。
+同様に、 OpenType フォントの持つ、コンテクスト依存の文字置換や、リガチャーを使用する際にも、 \XeTeXinterchartokenstate=0 としなければなりません。
 
 ```
 {\XeTeXinterchartokenstate=0\fontspec[Script=Kana,RawFeature=+dlig]{Kozuka Mincho Pro-VI}ミリバール}
@@ -651,25 +644,25 @@ FMT ファイルで、\XeTeXcharclass の値は
 
 ### fontspec パッケージ {#z2a31516}
 
-fontspec は NFSS のフォントファミリーの定義を容易に行うためのマクロパッケージです。<br>
+fontspec は NFSS のフォントファミリーの定義を容易に行うためのマクロパッケージです。
 
 ```
 \fontspec[オプション]{フォント名}
 ```
 
-は現在使用中のフォントファミリーを変更します。<br>
+は現在使用中のフォントファミリーを変更します。
 
 ```
 \setmainfont[オプション]{フォント名}
 ```
 
-は \rmdefault を変更します。<br>
+は \rmdefault を変更します。
 
 ```
 \newfontfamily\myfontfamily[オプション]{フォント名}
 ```
 
-は新しいフォントファミリー \myfontfamily を定義します。<br>
+は新しいフォントファミリー \myfontfamily を定義します。
 
 ```
 \documentclass{article}
@@ -695,23 +688,23 @@ XSCVIF+LidoSTF-Bold-Identity-H       CID Type 0C  yes yes yes      9  0
 ZUDXAP+LidoSTF-Italic-Identity-H     CID Type 0C  yes yes yes     11  0
 ```
 
-とファミリー内での、シリーズやシェイプの変更も正しく処理されていることが分かります。<br>
+とファミリー内での、シリーズやシェイプの変更も正しく処理されていることが分かります。
 しかし、もし、
 
 ```
 \fontspec{[LidoSTF.otf]}
 ```
 
-とファイル名でフォントを指定したのでは、ファミリー内のすべてのフォントは LidoSTF.otf になってしまいます。<br>
+とファイル名でフォントを指定したのでは、ファミリー内のすべてのフォントは LidoSTF.otf になってしまいます。
 このような場合はオプションで、
 
 ```
 \fontspec[BoldFont={[LidoSTFBold.otf]},ItalicFont={[LidoSTFItalic.otf]},BoldItalicFont={[LidoSTFBoldItalic.otf]}]{[LidoSTF.otf]}
 ```
 
-と自分でフォントを指定しなければなりません。<br>
+と自分でフォントを指定しなければなりません。
 
-非欧文フォントでは、残念ながら、縦令フォント名を使用して font-config にフォントを探させても、誤ったフォントを選んでしまうことが多いので、自分でファミリーを構成するフォントを指定した方が安全です。<br>
+非欧文フォントでは、残念ながら、縦令フォント名を使用して font-config にフォントを探させても、誤ったフォントを選んでしまうことが多いので、自分でファミリーを構成するフォントを指定した方が安全です。
 
 ### 実行例 {#n6a9a656}
 
@@ -750,11 +743,11 @@ Hello, \TeX !
 ```
 
 ただし XeTeX は日本語の組版ルールをよく知っているわけではないので，
-現状ではまともではない。<br>
-しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。<br>
-現在では横書きに関しては [BXjscls](/BXjscls/), [ZXjatype](/xeCJK/#n8276349) を使用して XeLaTeX で pTeX 並の品質の日本語文書組版が可能です．<br>
+現状ではまともではない。
+しかし筋が良いソフトだけに日本人が開発に協力すれば [pTeX 相当の処理](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/japanese/ptex.html)が加えられるのではないかと期待する。
+現在では横書きに関しては [BXjscls](/BXjscls/), [ZXjatype](/xeCJK/#n8276349) を使用して XeLaTeX で pTeX 並の品質の日本語文書組版が可能です．
 
-### 参考サイト {#m6b448cf}
+## 参考サイト {#m6b448cf}
 
 - \[[XeTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5BXeTeX%5D) (ZR (八登 崇之) さん)
 - [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
@@ -778,7 +771,15 @@ Hello, \TeX !
 - [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
 - [Jonathan Kew - Interview - TeX Users Group](http://www.tug.org/interviews/kew.html)
 
-### コメント {#d0504266}
+### ChangeLog {#w3545bdb}
+
+- [https://sourceforge.net/p/xetex/code/ci/master/log/](https://sourceforge.net/p/xetex/code/ci/master/log/)
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/xetexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/ChangeLog?view=markup)
+    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/xetexdir/NEWS?view=markup)
+
+## コメント {#d0504266}
 
 - 使用環境は Windows2000(SP4) です。ヒラギノは持っていないので「小塚明朝 Pro Acro R:-palt」で試したのですが「! Font \foo="フォント名は文字化けPro Acro R:-palt" not loadable: installed font not found.」と言われて失敗しました。代わりに「Kozuka Mincho Pro Acro:-pait」で成功しました。「MS P明朝」「みかちゃん_o」では成功。fc-list での namelist.txt で得られるフォント名一覧でフォント名には二番目の要素を使えば良いのかもしれません。 -- tony 2006-07-17 (月) 15:32:30
 - 最新のものでは、 \[フォントファイル名\] という指定も可能になっています: 例: \font\f="\[KozMinPro-Regular.otf\]:mapping=tex-text,color=FF0000" -- kakuto 2006-08-18 (金) 10:53:19
