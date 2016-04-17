@@ -9,7 +9,7 @@ pukiwiki: "Linux/Vine Linux"
 
 [Linux](/Linux/) > Vine Linux
 
-## [Vine Linux](http://vinelinux.org/) {#z3f9b7a7}
+## [Vine Linux](https://vinelinux.org/) {#z3f9b7a7}
 
 Vine Linux はコンパクトで軽量な国産の日本語 Linux ディストリビューションです．
 
@@ -66,7 +66,7 @@ $ sudo apt-get install okular
 
 ### [LyX](/LyX/) {#f3133664}
 
-- [LyX](http://vinelinux.org/docs/vine6/tex-guide/lyx.html)
+- [LyX](https://vinelinux.org/docs/vine6/tex-guide/lyx.html)
 
 ```
 $ sudo apt-get install lyx
@@ -74,7 +74,7 @@ $ sudo apt-get install lyx
 
 ### [TeXworks](/TeXworks/) {#g983cd3a}
 
-- [TeXworks](http://vinelinux.org/docs/vine6/tex-guide/texworks.html)
+- [TeXworks](https://vinelinux.org/docs/vine6/tex-guide/texworks.html)
 
 ```
 $ sudo apt-get install texworks
@@ -90,12 +90,12 @@ $ sudo apt-get install emacs
 
 #### [AUCTeX](/AUCTeX/) {#l05e9420}
 
-- [AUCTeX](http://vinelinux.org/docs/vine6/tex-guide/auctex.html)
+- [AUCTeX](https://vinelinux.org/docs/vine6/tex-guide/auctex.html)
 - [http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex](http://trac.vinelinux.org/browser/projects/specs/trunk/a/auctex)
 
 #### [YaTeX](/YaTeX/) {#b339a19f}
 
-- [YaTeX（やてふ）](http://vinelinux.org/docs/vine6/tex-guide/yatex.html)
+- [YaTeX（やてふ）](https://vinelinux.org/docs/vine6/tex-guide/yatex.html)
 - [http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex](http://trac.vinelinux.org/browser/projects/specs/trunk/y/yatex)
 
 ### [Vim](/Vim/) {#na92681c}
