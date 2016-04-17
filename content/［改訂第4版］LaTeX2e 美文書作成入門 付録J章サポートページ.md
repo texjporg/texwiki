@@ -7,14 +7,16 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://gihyo.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。<br>
-本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。<br>
-内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。<br>
-なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。<br>
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://gihyo.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
+
+本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。
+内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
+
+なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
 
 ## Errata {#kdcdc574}
 
-- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip](http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記しています。cm-super は TeX Live に含まれています。ダウンロードは [CTAN:fonts/ps-type1/](https://mirror.ctan.org/fonts/ps-type1/) からできます。
+- p. 357 サンプル例は Type 1 フォントを使っています。ラテン文字は cm-super を，ギリシア文字は CB Type 1 を，キリル文字は自作の Type 1 フォントを使っています（T2D キリル文字で使用した Type 1 フォントは mftrace を用いて LH フォントから生成したものです。[http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip](http://yasuda.homeip.net/archives/lh-misc-type1-1007.zip) に置いておきますのでご活用ください。本 Type 1 フォントのインストール，生成方法は「[LH キリル T2D/OT2 Type 1 フォント集](http://yasuda.homeip.net/tex/cyrillic-type1-fonts.html)」をご参照ください。 -- 安田）。ギリシア語の CB フォントについては p. 370 以下にインストール方法を記しています。cm-super は TeX Live に含まれています。ダウンロードは CTAN.ring:fonts/ps-type1 からできます。
 
 - p. 358 註9 「ラテンアルファベットによる対応づけ (transliteration)」は p. 363 では「ASCII 翻字入力」という表現になっていますが（表記の揺れ），意味は同じです。
 
