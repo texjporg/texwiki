@@ -10,13 +10,15 @@ pukiwiki: "LyX"
 
 ## [LyX](http://www.lyx.org/) {#odce06b4}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## LyX とは {#c2a24f42}
 
-LyX は，LaTeX 文書が出力できるドキュメントプロセッサです．<br>
-LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援します．<br>
-単純に文書の見た目による (WYSIWYG) 書き方を支援するものではありません．<br>
+LyX は，LaTeX 文書が出力できるドキュメントプロセッサです．
+LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援します．
+単純に文書の見た目による (WYSIWYG) 書き方を支援するものではありません．
 
 - [LyX | LyX &ndash; 文書プロセッサ](http://www.lyx.org/WebJa.Home) 公式サイト
     - [LyX | LyXとは何か](http://www.lyx.org/WebJa.WhatIsLyX)
@@ -32,14 +34,12 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [SyncTeX](http://wiki.lyx.org/LyX/SyncTeX)
     - [Logotype](http://wiki.lyx.org/LyX/Logotype)
     - [SplashScreen](http://wiki.lyx.org/LyX/SplashScreen)
-- [LyXWinInstaller](https://sourceforge.net/projects/lyxwininstaller/)
-- [LyX in Launchpad](https://launchpad.net/lyx)
 - [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
 - [lyx-devel](http://www.mail-archive.com/lyx-devel@lists.lyx.org/)
 
 ### 動作環境 {#xd7ee343}
 
-Windows, Cygwin, OS X, Linux<br>
+Windows, Cygwin, OS X, Linux
 
 ### License {#pb9a4019}
 
@@ -50,7 +50,7 @@ Windows, Cygwin, OS X, Linux<br>
 - [http://git.lyx.org/?p=lyx.git;a=tags](http://git.lyx.org/?p=lyx.git;a=tags)
 - [LyX | ニュース](http://www.lyx.org/WebJa.News)
 
-を参照．<br>
+を参照．
 
 ### ChangeLog {#uf3685b6}
 
@@ -58,6 +58,8 @@ Windows, Cygwin, OS X, Linux<br>
     - [shortlog](http://git.lyx.org/?p=lyx.git;a=shortlog)
 - [timeline](http://www.lyx.org/trac/timeline)
 - [http://www.lyx.org/trac/log/lyxgit/](http://www.lyx.org/trac/log/lyxgit/)
+- [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
+    - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
 
 <!-- **派生版 [#h5bb137d] -->
 <!--  -->
@@ -88,8 +90,8 @@ LyX/インストール を参照．
 
 ### OS X の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)<br>
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．<br>
+OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
+Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
 ## 設定 {#ue19dc3a}
 
@@ -101,6 +103,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ## 関連リンク {#j2a0a89a}
 
+- [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [http://www.pseudomoon.jp/dotclear/index.php?q=LyX](http://www.pseudomoon.jp/dotclear/index.php?q=LyX)
 - [My Future Sight for Past: lyx](http://myfuturesightforpast.blogspot.jp/search/label/lyx)
 - [LyX - My memory for future](https://sites.google.com/site/mymemoryforfuture/lyx)
