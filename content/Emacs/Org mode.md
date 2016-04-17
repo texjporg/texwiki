@@ -11,10 +11,6 @@ pukiwiki: "Emacs/Org mode"
 
 ## [Org mode](http://orgmode.org/) {#d6cfda4f}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
-## Org mode とは {#rea710af}
-
 <!-- Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system. -->
 
 Org mode は
@@ -23,29 +19,20 @@ Org mode は
 - TODO リストの管理
 - プロジェクト計画
 
-のためのモードです．<br>
-テキストファイルを高速・効率的に編集することができます．<br>
+をするための Emacs のメジャーモードです．
+テキストファイルを高速・効率的に編集することができます．
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 - [Org Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
 
-### License {#da0cead0}
+***
 
-[GPLv3](http://orgmode.org/w/?p=org-mode.git;a=blob;f=COPYING;hb=HEAD)
-
-### リリース情報 {#lb82f3d0}
-
-- [http://orgmode.org/cgit.cgi/org-mode.git/refs/](http://orgmode.org/cgit.cgi/org-mode.git/refs/)
-- [http://orgmode.org/w/?p=org-mode.git;a=tags](http://orgmode.org/w/?p=org-mode.git;a=tags)
-
-### ChangeLog {#r21fa6e2}
-
-- [http://orgmode.org/cgit.cgi/org-mode.git/](http://orgmode.org/cgit.cgi/org-mode.git/)
-- [http://orgmode.org/w/?p=org-mode.git](http://orgmode.org/w/?p=org-mode.git)
+***
 
 ## インストール {#l69ff892}
 
-Org mode は Emacs に標準で含まれています．<br>
+Org mode は Emacs に標準で含まれています．
+最新版を使いたい場合は以下の手順を踏みます．
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
@@ -71,33 +58,20 @@ M-x list-packages RET でリストを表示して org を選択
 
 ***
 
-&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します．<br>
+&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します．
 
 ```
 (add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
 ```
 
-## Export to LaTeX {#k6bbb6c5}
+## 設定例 {#y73c067b}
 
-- [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
-- [Org-mode で書いたファイルから A5 縦書き二段組の PDF を生成するツール](http://qiita.com/BooksThere/items/ff46ee6a5dc796df1e78)
-- [Emacs Org Mode から LaTeX Export する](http://ryogan.org/blog/2015/12/31/emacs-org-mode-%E3%81%8B%E3%82%89-latex-export-%E3%81%99%E3%82%8B/)
-- [BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで](http://gongo.hatenablog.com/entry/2014/01/13/225304)
-- [org-mode による論文作成入門](http://akisute3.hatenablog.com/entry/2013/12/28/144918)
-- [orgmodeで卒論を書いたときの話](http://qiita.com/PowerPC7450/items/b34b080dd941af689b56)
-- [org-mode で日本語LaTeXを出力する方法](http://qiita.com/kawabata/items/1b56ec8284942ff2646b)
-- [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
-- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+Org mode はデフォルトでは pdfLaTeX が使われます．
+pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．
 
 ### Windows {#q16766de}
-
-#### 設定 {#y73c067b}
-
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
-
-***
 
 ```
 ;;
@@ -117,7 +91,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 (if (not (eq org-export-in-background t))
     (setq org-file-apps
           '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --r15 --file %s --page $page}\" | cmd"))))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
@@ -157,7 +133,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
                "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
@@ -172,7 +150,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
@@ -189,18 +169,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 ```
 
-***
-
 ### OS X {#a97921ad}
 
-#### 設定 {#l55021f8}
-
-動作未確認です．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
-
-***
+動作未確認です．
 
 ```
 ;;
@@ -219,7 +190,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "/usr/bin/open -a Preview.app %s")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
@@ -259,7 +232,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
                "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
@@ -274,7 +249,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
@@ -291,17 +268,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 ```
 
-***
-
 ### Linux {#h20d131a}
-
-#### 設定 {#n84d0ac5}
-
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-Org mode はデフォルトでは pdfLaTeX が使われます．<br>
-pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を使用します．<br>
-
-***
 
 ```
 ;;
@@ -320,7 +287,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "xdg-open %s")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
                "\\ifdefined\\kanjiskip
@@ -360,7 +329,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
                "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
@@ -375,7 +346,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+```
 
+```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
                "\\documentclass[12pt,a4paper]{ltjsarticle}
@@ -392,11 +365,9 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 ```
 
-***
+## 使い方 {#a6515cd5}
 
-### 使い方 {#a6515cd5}
-
-#### uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で bxjsarticle を使用する場合 {#mc51aa00}
+### uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で bxjsarticle を使用する場合 {#mc51aa00}
 
 org ファイルの先頭に
 
@@ -408,7 +379,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### uplatex + dvips + ps2pdf で bxjsarticle を使用する場合 {#c4685629}
+### uplatex + dvips + ps2pdf で bxjsarticle を使用する場合 {#c4685629}
 
 org ファイルの先頭に
 
@@ -420,7 +391,7 @@ org ファイルの先頭に
 
 を追加します．
 
-#### lualatex, luajitlatex で ltjsarticle を使用する場合 {#of5b23e4}
+### lualatex, luajitlatex で ltjsarticle を使用する場合 {#of5b23e4}
 
 org ファイルの先頭に
 
@@ -432,13 +403,41 @@ org ファイルの先頭に
 
 を追加します．
 
-#### ファイルの出力 {#nee250e6}
+### ファイルの出力 {#nee250e6}
 
-C-c C-e l l で LaTeX ファイルを出力します．<br>
-C-c C-e l p で PDF ファイルを出力します．<br>
-C-c C-e l o で PDF ファイルを出力して表示します．<br>
+- C-c C-e l l で LaTeX ファイルを出力します．
+- C-c C-e l p で PDF ファイルを出力します．
+- C-c C-e l o で PDF ファイルを出力して表示します．
 
-## Export to HTML {#t60cf94b}
+## 関連リンク {#m969bd42}
+
+### Export to LaTeX {#k6bbb6c5}
+
+- [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
+- [Org-mode で書いたファイルから A5 縦書き二段組の PDF を生成するツール](http://qiita.com/BooksThere/items/ff46ee6a5dc796df1e78)
+- [Emacs Org Mode から LaTeX Export する](http://ryogan.org/blog/2015/12/31/emacs-org-mode-%E3%81%8B%E3%82%89-latex-export-%E3%81%99%E3%82%8B/)
+- [BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで](http://gongo.hatenablog.com/entry/2014/01/13/225304)
+- [org-mode による論文作成入門](http://akisute3.hatenablog.com/entry/2013/12/28/144918)
+- [orgmodeで卒論を書いたときの話](http://qiita.com/PowerPC7450/items/b34b080dd941af689b56)
+- [org-mode で日本語LaTeXを出力する方法](http://qiita.com/kawabata/items/1b56ec8284942ff2646b)
+- [org-mode 8.0で変わった変数など](http://qiita.com/items/575291f7aa8ff6807abd)
+- [org-mode 8.0 画像入り日本語PDFをOSX10.8で出力するなら LuaTeX を使え！](http://blog.livedoor.jp/tek_nishi/archives/7862119.html)
+
+### Export to HTML {#t60cf94b}
 
 - [HTML export](http://orgmode.org/manual/HTML-export.html)
 - [Org-mode による HTML 文書作成入門](http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
+
+### License {#da0cead0}
+
+[GPLv3](http://orgmode.org/w/?p=org-mode.git;a=blob;f=COPYING;hb=HEAD)
+
+### リリース情報 {#lb82f3d0}
+
+- [http://orgmode.org/cgit.cgi/org-mode.git/refs/](http://orgmode.org/cgit.cgi/org-mode.git/refs/)
+- [http://orgmode.org/w/?p=org-mode.git;a=tags](http://orgmode.org/w/?p=org-mode.git;a=tags)
+
+### ChangeLog {#r21fa6e2}
+
+- [http://orgmode.org/cgit.cgi/org-mode.git/](http://orgmode.org/cgit.cgi/org-mode.git/)
+- [http://orgmode.org/w/?p=org-mode.git](http://orgmode.org/w/?p=org-mode.git)
