@@ -103,7 +103,6 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/)
     - [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
-    - [http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -130,7 +129,6 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/)
     - [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/tlnet/)
-    - [ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -163,7 +161,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/)
     - [http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
-    - [http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/)
     - [http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/Images/)
     - [http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/Images/)
     - [http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/Images/](http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/Images/)
@@ -189,7 +186,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/)
     - [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/texlive/Images/)
-    - [ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.nict.go.jp/pub/text/CTAN/systems/texlive/Images/)
     - [ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/texlive/Images/)
     - [ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/texlive/Images/)
     - [ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/texlive/Images/)
@@ -252,7 +248,7 @@ Windows PowerShell またはコマンド プロンプトから
 
 #### OS X {#a9a1fd1b}
 
-mactex-\*.pkg または BasicTeX-\*.pkg をダウンロードしてインストールします．
+mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
 
 #### Linux {#v9c33c6a}
 
