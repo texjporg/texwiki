@@ -41,32 +41,6 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
 
 Windows, Cygwin, OS X, Linux
 
-### License {#pb9a4019}
-
-[GPLv3, GPLv2](http://www.lyx.org/WebJa.License)
-
-### リリース情報 {#k8ba7cf7}
-
-- [http://git.lyx.org/?p=lyx.git;a=tags](http://git.lyx.org/?p=lyx.git;a=tags)
-- [LyX | ニュース](http://www.lyx.org/WebJa.News)
-
-を参照．
-
-### ChangeLog {#uf3685b6}
-
-- [git.lyx.org](http://git.lyx.org/?p=lyx.git;a=summary)
-    - [shortlog](http://git.lyx.org/?p=lyx.git;a=shortlog)
-- [timeline](http://www.lyx.org/trac/timeline)
-- [http://www.lyx.org/trac/log/lyxgit/](http://www.lyx.org/trac/log/lyxgit/)
-- [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
-    - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
-
-<!-- **派生版 [#h5bb137d] -->
-<!--  -->
-<!-- -[[LyXWinInstaller:https://sourceforge.net/projects/lyxwininstaller/]] -->
-<!-- -[[LyX-JP プロジェクト日本語トップページ - OSDN:http://osdn.jp/projects/jalyx/]] -->
-<!-- -[[Project Web of LyX-JP on OSDN Web space:http://jalyx.osdn.jp/]] -->
-
 ### LyX の読み方 {#r8403bf4}
 
 - [http://wiki.lyx.org/FAQ/Pronunciation](http://wiki.lyx.org/FAQ/Pronunciation)
@@ -91,6 +65,7 @@ LyX/インストール を参照．
 ### OS X の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
 
 OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
+
 Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
 ## 設定 {#ue19dc3a}
@@ -140,3 +115,29 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 - [仮想マシンで遊んでみた2](http://barippi.seesaa.net/article/257411076.html)
 - [Lyxを使ってみました](http://d.hatena.ne.jp/mFumi/20090902/1251900233)
 - [Using custom LaTeX document classes in LyX](http://stefaanlippens.net/customLaTeXclassesinLyX)
+
+### License {#pb9a4019}
+
+[GPLv3, GPLv2](http://www.lyx.org/WebJa.License)
+
+### リリース情報 {#k8ba7cf7}
+
+- [http://git.lyx.org/?p=lyx.git;a=tags](http://git.lyx.org/?p=lyx.git;a=tags)
+- [LyX | ニュース](http://www.lyx.org/WebJa.News)
+
+を参照．
+
+### ChangeLog {#uf3685b6}
+
+- [git.lyx.org](http://git.lyx.org/?p=lyx.git;a=summary)
+    - [shortlog](http://git.lyx.org/?p=lyx.git;a=shortlog)
+- [timeline](http://www.lyx.org/trac/timeline)
+- [http://www.lyx.org/trac/log/lyxgit/](http://www.lyx.org/trac/log/lyxgit/)
+- [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
+    - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
+
+<!-- **派生版 [#h5bb137d] -->
+<!--  -->
+<!-- -[[LyXWinInstaller:https://sourceforge.net/projects/lyxwininstaller/]] -->
+<!-- -[[LyX-JP プロジェクト日本語トップページ - OSDN:http://osdn.jp/projects/jalyx/]] -->
+<!-- -[[Project Web of LyX-JP on OSDN Web space:http://jalyx.osdn.jp/]] -->
