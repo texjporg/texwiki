@@ -9,10 +9,12 @@ pukiwiki: "新 pTeX とBabel"
 
 ## upTeX, 新 pTeX と Babel （Babel でロシア語・ギリシア語を使えるようにするための方法） {#u0b9622c}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
 以下では pdfLaTeX/upLaTeX システムで [Babel](/Babel/) パッケージとともにギリシア語・ロシア語を使えるようにする方法を具体例で記します。
 なお、「新 pTeX」とはバージョン3.1.4以降の pTeX を指します。
+
+***
+
+***
 
 ### 推奨環境 {#z22ea698}
 
@@ -51,7 +53,7 @@ TeX Live 2013 には Babel が収録されています。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
-- [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
+- CTAN.ring:fonts/cyrillic/lh
     から[lhfnt35g-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-gen-mf.zip)
     と[lhfnt35g-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-source.zip)
     をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は
@@ -75,7 +77,7 @@ TeX Live 2013 には Babel が収録されています。
 
 ### ギリシアアルファベットフォント関連ファイルのダウンロードとインストール {#ud937b30}
 
-- [CTAN:fonts/greek/](https://mirror.ctan.org/fonts/greek/)
+- CTAN.ring:fonts/greek
     から[cbfonts.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/greek/cbfonts.zip) を
     ダウンロードし，適当な作業ディレクトリに展開する。
 
