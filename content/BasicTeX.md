@@ -14,38 +14,13 @@ BasicTeX は TeX Live の scheme-small に対応し，LaTeX の文書作成に�
 BasicTeX には [e-pTeX](/e-pTeX/) や [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
 collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)， [BXjscls](/BXjscls/)，[LuaTeX-ja](/LuaTeX-ja/) も利用可能になります。
 
-なお，「小川版 Drag &amp; Drop UpTeX」はあらかじめ BasicTeX に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
-
 ***
 
 ***
 
-### [小川版 Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
+### BasicTeX のインストール {#i5822f30}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている BasicTeX + texlive-collection-langjapanese ベースの OS X 専用 TeX ディストリビューションです[^1]。
-OS X 10.11 El Capitan / 10.10 Yosemite 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
-TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
-
-#### 小川版 Drag &amp; Drop UpTeX のインストールと設定 {#e30d8e71}
-
-添付の README.pdf をよくお読みください。
-アプリケーションファイル名は UpTeX.app です。
-基本的にはこれを /Applications 以下などにインストールするとよいでしょう。
-
-インストールしたら，[dvipdfmx](/dvipdfmx/) による PDF 作成で埋め込む日本語フォントを設定します。
-UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX」-「環境設定」から環境設定パネルを開きます。
-「dvipdfmx のフォント」のプルダウンメニューからお使いの OS X のバージョン（El Capitan または Yosemite）に合わせたヒラギノフォントを選択するとよいでしょう。
-（これはバックグラウンドで updmap-sys と mktexlsr を実行します。あらかじめヒラギノフォントのシンボリックリンクを作成してあるため，簡単に設定を完了することができます。）
-
-TeX Live のアップデートは，同じく環境設定パネルから「TeX コンポーネントのアップデート」で行います。
-（これはバックグラウンドで [tlmgr](/tlmgr/) をターミナルに実行させています。）
-
-以下のインストールのやり方などの事例も参照してください。
-
-- [El CapitanでDrag &amp; Drop UpTeX を使って日本語TeX環境を整える](http://ijairai.hatenablog.com/entry/2015/10/24/170311)
-    - 当該ページの TeXShop の設定（特に upTeX (ptex2pdf) を使うのに ShiftJIS に設定変更している部分）は誤りだが、他のスクリーンショットは参考になる。
-
-### （本家）BasicTeX のインストール {#i5822f30}
+#### BasicTeX.pkg でインストール {#if691d16}
 
 [More Packages - MacTeX](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](/MacTeX/#mirror) から BasicTeX.pkg をダウンロードします。
 
@@ -82,6 +57,16 @@ BasicTeX のインストールの概略は以下のとおりです。
 [Ghostscript](/Ghostscript/) は別途インストールする必要があります。
 また，[TeXShop](/TeXShop/) などの追加アプリケーションをインストールするとよいでしょう。
 
+#### Homebrew でインストール {#w71ff68b}
+
+Homebrew で BasicTeX をインストールできます。
+
+```
+$ brew cask install basictex
+$ sudo tlmgr update --self --all
+$ sudo tlmgr install collection-langjapanese
+```
+
 #### インストールの事例 {#q65e25e8}
 
 以下のインストール事例も参考になります。
@@ -94,13 +79,6 @@ BasicTeX のインストールの概略は以下のとおりです。
 <!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
 <!-- -[[Macbook air に texlive2014 をインストールする:http://d.hatena.ne.jp/pyopyopyo/20140815/p1]] -->
 
-#### アップデート {#zbd108c2}
+### 派生版 {#qa5b89e9}
 
-BasicTeX は [tlmgr](/tlmgr/) を用いてアップデートできます。
-
-```
-$ sudo tlmgr update --self --all
-$ sudo tlmgr install collection-langjapanese
-```
-
-[^1]: 2011年公開の UTeX20111010.dmg までは teTeX-3.0 / ptetex3 ベースでしたが，2015年9月10日の UTeX20150910.dmg からは TeX Live ベースになりました。
+- [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)
