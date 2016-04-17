@@ -9,30 +9,28 @@ pukiwiki: "LyX/設定/OS X"
 
 [LyX](/LyX/) > [設定](</LyX/設定/>) > OS X
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## 設定 {#lcef069b}
 
 ### 順検索 (forward search) {#d0572089}
 
-PDFコマンドは Skim の displayline を使用します．<br>
-PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t を選択します．<br>
+PDFコマンドは Skim の displayline を使用します．
+PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t を選択します．
 
-***
-
-<span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-```
-
-```
-
-<br>
-
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
-
-***
+> <span style="color:Black;background-color:#CCCCCC;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> ```
+>
+> ```
+>
+> <br>
+>
+> 順検索<br>
+> 　DVIコマンド: <br>
+> 　PDFコマンド: <ins>/Applications/Skim.app/Contents/SharedSupport/displayline $$n $$o $$t</ins><br>
 
 ## Skim との連携 {#m16eb5ea}
 
