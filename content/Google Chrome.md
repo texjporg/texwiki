@@ -60,8 +60,8 @@ Linux 版の Chromium にコマンドラインから引数を与えて Chrome/Ch
 
 PDFium は Google Chrome, Chromium に組み込まれている PDF レンダリングエンジンです．
 
-- [https://code.google.com/p/pdfium/](https://code.google.com/p/pdfium/)
 - [https://pdfium.googlesource.com/pdfium/](https://pdfium.googlesource.com/pdfium/)
+- [https://bugs.chromium.org/p/pdfium/issues/list](https://bugs.chromium.org/p/pdfium/issues/list)
 
 #### PDFium.js <a id="pdfiumjs"></a> {#ead12fcd}
 
