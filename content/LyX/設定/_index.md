@@ -10,7 +10,9 @@ pukiwiki: "LyX/設定"
 
 [LyX](/LyX/) > 設定
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## 設定 {#d6c4c951}
 
@@ -22,41 +24,35 @@ pukiwiki: "LyX/設定"
 
 \[ツール(T)\] &gt; \[設定(P)...\] &gt; \[言語設定\] &gt; \[言語\]
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> 　　　　　　▷　操作性<br>
+> 　　　　　　▷　編集<br>
+> 　　　　　　 　 パス<br>
+> 　　　　　　 　 利用者情報<br>
+> 　　　　　　◢　言語設定<br>
+> 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　</span><br>
+> 　　　　　　　　　　スペルチェッカー<br>
+> 　　　　　　▷　出力<br>
+> 　　　　　　▷　ファイル処理<br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-　　　　　　▷　操作性<br>
-　　　　　　▷　編集<br>
-　　　　　　 　 パス<br>
-　　　　　　 　 利用者情報<br>
-　　　　　　◢　言語設定<br>
-　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　</span><br>
-　　　　　　　　　　スペルチェッカー<br>
-　　　　　　▷　出力<br>
-　　　　　　▷　ファイル処理<br>
-
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span>[^1]<br>
-言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを任意設定に変更し \usepackage{babel} を削除します．<br>
-開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
-終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
-小数点記号の既定値(S): 　　<ins>.</ins><br>
-長さ単位の既定値(U): <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　　　　　　　　　　 ▼\]</span><br>
-☐言語を大域的に設定(G)[^6] ← 言語を大域的に設定のチェックをはずします．<br>
-☑自動開始(B)[^7]<br>
-☑自動終了(E)[^8]<br>
-☐外国語をマークする(F)[^9] ← 外国語をマークするのチェックをはずします．<br>
-右から左書きの言語をサポート<br>
-　☑右横書きサポートを有効化(R)[^10]<br>
-　カーソルの動き: 🔘 論理的(L)　◯ 視覚的(V)<br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span>[^1]<br>
+> 言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを任意設定に変更し \usepackage{babel} を削除します．<br>
+> 開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
+> 終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
+> 小数点記号の既定値(S): 　　<ins>.</ins><br>
+> 長さ単位の既定値(U): <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　　　　　　　　　　 ▼\]</span><br>
+> ☐言語を大域的に設定(G)[^6] ← 言語を大域的に設定のチェックをはずします．<br>
+> ☑自動開始(B)[^7]<br>
+> ☑自動終了(E)[^8]<br>
+> ☐外国語をマークする(F)[^9] ← 外国語をマークするのチェックをはずします．<br>
+> 右から左書きの言語をサポート<br>
+> 　☑右横書きサポートを有効化(R)[^10]<br>
+> 　カーソルの動き: 🔘 論理的(L)　◯ 視覚的(V)<br>
 
 \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
@@ -96,8 +92,6 @@ Format 番号は LyX のバージョンによって異なります．<br>
 
 bxjsarticle.layout ファイルを新規作成して以下の内容を編集します．
 
-***
-
 ```
 #% Do not delete the line below; configure depends on this
 #  \DeclareLaTeXClass{Japanese Article (bxjsarticle)}
@@ -112,13 +106,9 @@ Provides japanese 1
 Input article.layout
 ```
 
-***
-
 #### bxjsreport.layout {#a19d53bc}
 
 bxjsreport.layout ファイルを新規作成して以下の内容を編集します．
-
-***
 
 ```
 #% Do not delete the line below; configure depends on this
@@ -134,13 +124,9 @@ Provides japanese 1
 Input report.layout
 ```
 
-***
-
 #### bxjsbook.layout {#p03557b7}
 
 bxjsbook.layout ファイルを新規作成して以下の内容を編集します．
-
-***
 
 ```
 #% Do not delete the line below; configure depends on this
@@ -156,13 +142,9 @@ Provides japanese 1
 Input book.layout
 ```
 
-***
-
 #### ltjsarticle.layout {#v6cea741}
 
 ltjsarticle.layout ファイルを新規作成して以下の内容を編集します．
-
-***
 
 ```
 #% Do not delete the line below; configure depends on this
@@ -178,13 +160,9 @@ Provides japanese 1
 Input article.layout
 ```
 
-***
-
 #### ltjsbook.layout {#p91c61b8}
 
 ltjsbook.layout ファイルを新規作成して以下の内容を編集します．
-
-***
 
 ```
 #% Do not delete the line below; configure depends on this
@@ -200,8 +178,6 @@ Provides japanese 1
 Input book.layout
 ```
 
-***
-
 #### レイアウトファイルを LyX に追加する {#k55c07b3}
 
 Windows の場合はレイアウトファイルを
@@ -211,22 +187,22 @@ Windows の場合はレイアウトファイルを
     <!-- -C:\Program Files (x86)\LyX 2.2\Resources\layouts\ (64-bit Windows の場合) -->
     <!-- -C:\Program Files\LyX 2.2\Resources\layouts\ (32-bit Windows の場合) -->
 
-フォルダーにコピーします．<br>
+フォルダーにコピーします．
 
 OS X の場合はレイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
 - &#x7e;/Library/Application Support/LyX-2.2/layouts/
 
-フォルダにコピーします．<br>
+フォルダにコピーします．
 
 Linux の場合はレイアウトファイルを
 
 - &#x7e;/.lyx/layouts/
 
-ディレクトリにコピーします．<br>
+ディレクトリにコピーします．
 
-\[ツール(T)\] &gt; \[環境構成(R)\] をクリックして LyX を再起動します．<br>
+\[ツール(T)\] &gt; \[環境構成(R)\] をクリックして LyX を再起動します．
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\] に
 
 - Japanese Article (bxjsarticle)
@@ -235,7 +211,7 @@ Linux の場合はレイアウトファイルを
 - Japanese Article (ltjsarticle)
 - Japanese Book (ltjsbook)
 
-が追加されていることを確認します．<br>
+が追加されていることを確認します．
 
 ### 言語 {#a5afecd2}
 
@@ -245,461 +221,391 @@ Linux の場合はレイアウトファイルを
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[言語\]
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　文書クラス<br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　　フォント<br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　　　</span><br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　　フロートの配置<br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　　出力<br>
+> 　　　　　LaTeXプリアンブル<br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+日本語の文書を作成する場合は，言語を日本語に設定します．
+LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．
+言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．
+出力した文書が文字化けしてしまう場合は uplatex, upbibtex, upmendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．
 
-<br>
+LaTeX (pLaTeX) で書き出しすると指定した文字コードで出力されます．
+lyx ファイル自体は常に UTF-8 で保存されます．
 
-　　　　　文書クラス<br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　　フォント<br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　　　</span><br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　　フロートの配置<br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　　出力<br>
-　　　　　LaTeXプリアンブル<br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
+> 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
+> 文字コード<br>
+> 　◯言語既定値(D)<br>
+> 　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^11]　<ins>　　　　　　　　　　</ins>[^12] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
 
-***
-
-日本語の文書を作成する場合は，言語を日本語に設定します．<br>
-LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．<br>
-言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．<br>
-出力した文書が文字化けしてしまう場合は uplatex, upbibtex, upmendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．<br>
-
-LaTeX (pLaTeX) で書き出しすると指定した文字コードで出力されます．<br>
-lyx ファイル自体は常に UTF-8 で保存されます．<br>
-
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
-引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
-文字コード<br>
-　◯言語既定値(D)<br>
-　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
-
-<br>
-
-言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^11]　<ins>　　　　　　　　　　</ins>[^12] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
-
-***
-
-\[適用(A)\] をクリックします．<br>
+\[適用(A)\] をクリックします．
 
 #### babel を使用して文書を作成する場合 {#ca4fc5c1}
 
 babel を使用して文書を作成する場合は babel を on にします．
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
+> 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
+> 文字コード<br>
+> 　◯言語既定値(D)<br>
+> 　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>\usepackage\[ngerman,english,japanese\]{babel}</ins> ← 言語パッケージを任意設定に変更し，使用する言語オプションを指定します．<br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
-引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
-文字コード<br>
-　◯言語既定値(D)<br>
-　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
-
-<br>
-
-言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>\usepackage\[ngerman,english,japanese\]{babel}</ins> ← 言語パッケージを任意設定に変更し，使用する言語オプションを指定します．<br>
-
-***
-
-\[適用(A)\] をクリックします．<br>
+\[適用(A)\] をクリックします．
 
 #### [XeLaTeX](/XeTeX/)/[LuaLaTeX](/LuaTeX/)/LuaJITLaTeX で文書を作成する場合 {#n7a3be37}
 
 XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
+> 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
+> 文字コード<br>
+> 　◯言語既定値(D)<br>
+> 　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>　　　　　　　　　　</ins><br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
-引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[\`\`テキスト"　　　　　　　　　　 ▼\]</span><br>
-文字コード<br>
-　◯言語既定値(D)<br>
-　🔘その他(E): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
-
-<br>
-
-言語パッケージ(K): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>　　　　　　　　　　</ins><br>
-
-***
-
-\[適用(A)\] をクリックします．<br>
+\[適用(A)\] をクリックします．
 
 ### フォント {#r177f199}
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[フォント\]
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　文書クラス<br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　フォント　　　　　　　　</span><br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　　言語<br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　　フロートの配置<br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　　出力<br>
+> 　　　　　LaTeXプリアンブル<br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+文書で使用するフォントを設定します．
+12pt で文書を作成する場合は基本寸法を 12 に変更します．
+10pt, 11pt, 12pt 以外の大きさの基本寸法を使用する場合は文書クラスのクラスオプションで指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
+XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/ZXjatype](/xeCJK/), [LuaTeX-ja](/LuaTeX-ja/) を使用して LaTeXプリアンブルに日本語文書に使用するフォントの設定を記述してください．
 
-<br>
-
-　　　　　文書クラス<br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;">　フォント　　　　　　　　</span><br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　　言語<br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　　フロートの配置<br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　　出力<br>
-　　　　　LaTeXプリアンブル<br>
-
-***
-
-文書で使用するフォントを設定します．<br>
-12pt で文書を作成する場合は基本寸法を 12 に変更します．<br>
-10pt, 11pt, 12pt 以外の大きさの基本寸法を使用する場合は文書クラスのクラスオプションで指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
-XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/ZXjatype](/xeCJK/), [LuaTeX-ja](/LuaTeX-ja/) を使用して LaTeXプリアンブルに日本語文書に使用するフォントの設定を記述してください．<br>
-
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
-既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
-LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
-ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
-サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]<br>
-CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^20]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^21]<br>
-　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^22]<br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
+> 既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
+> LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
+> ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
+> サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> 数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]<br>
+> CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^20]<br>
+> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^21]<br>
+> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^22]<br>
 
 ### 出力 {#pcd2eafa}
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\]
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　　　　文書クラス<br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　　フォント<br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　　言語<br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　　フロートの配置<br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;">　出力　　　　　　　　　　</span><br>
-　　　　　LaTeXプリアンブル<br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　文書クラス<br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　　フォント<br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　　言語<br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　　フロートの配置<br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　出力　　　　　　　　　　</span><br>
+> 　　　　　LaTeXプリアンブル<br>
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．<br>
-日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．<br>
+文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．
+日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^23]<br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 出力形式<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^23]<br>
 
 #### PDF (ps2pdf) {#s335ea5f}
 
-文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．<br>
-日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．<br>
+文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．
+日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 出力形式<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 #### PDF (LuaTeX) {#g2e3c1cf}
 
-文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．<br>
-LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．<br>
+文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．
+LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 出力形式<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 #### PDF (XeTeX) {#zd1cca72}
 
-文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．<br>
-XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．<br>
+文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．
+XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-出力形式<br>
-　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX) 　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 出力形式<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX) 　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 ### 文書クラス {#g33dd885}
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\]
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　　　<span style="color:Black;background-color:#DAEAFF;">　文書クラス　　　　　　　</span><br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　　フォント<br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　　言語<br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　　フロートの配置<br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　　出力<br>
-　　　　　LaTeXプリアンブル<br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　文書クラス　　　　　　　</span><br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　　フォント<br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　　言語<br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　　フロートの配置<br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　　出力<br>
+> 　　　　　LaTeXプリアンブル<br>
 
 #### uplatex + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-uplatex + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvipdfmx を設定してグラフィックドライバに 既定値を指定します．<br>
-他の文書クラスを使用していてクラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
+uplatex + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvipdfmx を設定してグラフィックドライバに 既定値を指定します．
+他の文書クラスを使用していてクラスオプションに dvipdfmx を設定しない場合はグラフィックドライバに DVIPDFMx を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>uplatex,dvipdfmx,12pt,ja=standard</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>uplatex,dvipdfmx,12pt,ja=standard</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 #### uplatex + dvips + ps2pdf の場合 {#p803a02d}
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-uplatex + dvips + ps2pdf で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvips を設定してグラフィックドライバに 既定値を指定します．<br>
-他の文書クラスを使用していてクラスオプションに dvips を設定しない場合はグラフィックドライバに  既定値 または Dvips を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
+uplatex + dvips + ps2pdf で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvips を設定してグラフィックドライバに 既定値を指定します．
+他の文書クラスを使用していてクラスオプションに dvips を設定しない場合はグラフィックドライバに  既定値 または Dvips を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>uplatex,dvips,12pt,ja=standard</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>uplatex,dvips,12pt,ja=standard</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 #### pdflatex の場合 {#n5e2e894}
 
-<!-- 文書クラスで KOMA-Script Article または Article (標準クラス) を選択し，クラスオプションを設定します．~ -->
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
+pdflatex で bxjsarticle を使用する場合は，クラスオプションに pdflatex を設定してグラフィックドライバに 既定値を指定します．
+他の文書クラスを使用していてクラスオプションに pdflatex を設定しない場合はグラフィックドライバに  既定値 または pdfTeX を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-pdflatex で bxjsarticle を使用する場合は，クラスオプションに pdflatex を設定してグラフィックドライバに 既定値を指定します．<br>
-他の文書クラスを使用していてクラスオプションに pdflatex を設定しない場合はグラフィックドライバに  既定値 または pdfTeX を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
-
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　文書クラス(C)<br> <!-- 　&color(Black,#EEEEEE){[KOMA-Script Article 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&br; -->
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>pdflatex,12pt,ja=standard</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>pdflatex,12pt,ja=standard</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 #### lualatex, luajitlatex の場合 {#l1a666c4}
 
-文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．<br>
-lualatex, luajitlatex で bxjsarticle を使用する場合は，クラスオプションに lualatex を設定してグラフィックドライバに 既定値を指定します．<br>
-lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
+文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．
+lualatex, luajitlatex で bxjsarticle を使用する場合は，クラスオプションに lualatex を設定してグラフィックドライバに 既定値を指定します．
+lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
 
-***
+■ Japanese Article (bxjsarticle) の場合
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>lualatex,12pt,ja=standard</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-<br>
+■ Japanese Article (ltjsarticle) の場合
 
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>lualatex,12pt,ja=standard</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
-
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (ltjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>12pt</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (ltjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>12pt</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 #### xelatex の場合 {#ce0db196}
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．<br>
-xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex と precisetext を設定してグラフィックドライバに 既定値を指定します．<br>
-他の文書クラスを使用していてクラスオプションに xelatex を設定しない場合はグラフィックドライバに  既定値 または XeTeX を指定します．<br>
-設定を反映させるために \[適用(A)\] をクリックします．<br>
+文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
+xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex と precisetext を設定してグラフィックドライバに 既定値を指定します．
+他の文書クラスを使用していてクラスオプションに xelatex を設定しない場合はグラフィックドライバに  既定値 または XeTeX を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-<br>
-
-　文書クラス(C)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　クラスオプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-　任意設定(T):　　　 <ins>xelatex,12pt,ja=standard,precisetext</ins><br>
-
-<br>
-
-グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>xelatex,12pt,ja=standard,precisetext</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
 ### フロートの配置 {#ofebe217}
 
@@ -707,45 +613,39 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[フロートの配置\] で設定可能です．
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　文書クラス<br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　　フォント<br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　　言語<br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　フロートの配置　　　　</span><br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　　出力<br>
+> 　　　　　LaTeXプリアンブル<br>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　　　　文書クラス<br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　　フォント<br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　　言語<br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;">　フロートの配置　　　　</span><br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　　出力<br>
-　　　　　LaTeXプリアンブル<br>
-
-***
-
-☐ 既定の配置を使用する(D) ← チェックをはずす<br>
-　配置の詳細オプション<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☐ ページ上部(T)</span><br>
-　<span style="color:#888888;background-color:#EEEEEE;">☐ ページ下部(B)</span><br>
-　<span style="color:#888888;background-color:#EEEEEE;">☐ フロートを独立したページに(P)</span><br>
-　<span style="color:#888888;background-color:#EEEEEE;">☐ 可能ならば現在位置に(H)</span><br>
-　☑ 何としても現在位置に置く(F)<br>
-　<span style="color:#888888;background-color:#EEEEEE;">☐ LaTeXの規則を無視する(I)</span><br>
-
-***
+> ☐ 既定の配置を使用する(D) ← チェックをはずす<br>
+> 　配置の詳細オプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☐ ページ上部(T)</span><br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☐ ページ下部(B)</span><br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☐ フロートを独立したページに(P)</span><br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☐ 可能ならば現在位置に(H)</span><br>
+> 　☑ 何としても現在位置に置く(F)<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☐ LaTeXの規則を無視する(I)</span><br>
 
 ### LaTeXプリアンブル {#lb7cb5ad}
 
@@ -753,77 +653,70 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[LaTeXプリアンブル\] で編集可能です．
 
-***
-
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<br>
-
-　　　　　文書クラス<br>
-　　　　　モジュール<br>
-　　　　　ローカルのレイアウト<br>
-　　　　　フォント<br>
-　　　　　本文レイアウト<br>
-　　　　　ページレイアウト<br>
-　　　　　ページ余白<br>
-　　　　　言語<br>
-　　　　　色<br>
-　　　　　連番と目次<br>
-　　　　　書誌情報<br>
-　　　　　索引<br>
-　　　　　PDF特性<br>
-　　　　　数式オプション<br>
-　　　　　フロートの配置<br>
-　　　　　プログラムリスト<br>
-　　　　　ブリット<br>
-　　　　　派生枝<br>
-　　　　　出力<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeXプリアンブル　　</span><br>
-
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　文書クラス<br>
+> 　　　　　モジュール<br>
+> 　　　　　ローカルのレイアウト<br>
+> 　　　　　フォント<br>
+> 　　　　　本文レイアウト<br>
+> 　　　　　ページレイアウト<br>
+> 　　　　　ページ余白<br>
+> 　　　　　言語<br>
+> 　　　　　色<br>
+> 　　　　　連番と目次<br>
+> 　　　　　書誌情報<br>
+> 　　　　　索引<br>
+> 　　　　　PDF特性<br>
+> 　　　　　数式オプション<br>
+> 　　　　　フロートの配置<br>
+> 　　　　　プログラムリスト<br>
+> 　　　　　ブリット<br>
+> 　　　　　派生枝<br>
+> 　　　　　出力<br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeXプリアンブル　　</span><br>
 
 uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
 
-***
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> ```
+> \usepackage{ifpdf}
+> \usepackage{ifluatex}
+> \usepackage{ifxetex}
+> \ifpdf
+>   \ifluatex
+>     \usepackage[pdfencoding=auto]{hyperref}
+>   \else
+>     \usepackage[whole,autotilde]{bxcjkjatype}
+>     \usepackage[unicode]{hyperref}
+>   \fi
+> \else
+>   \ifxetex
+>     \usepackage{hyperref}
+>     \usepackage{zxjatype}
+>     \setjamainfont{ipaexm.ttf}
+>     \setjasansfont{ipaexg.ttf}
+>     \setjamonofont{ipaexg.ttf}
+>   \else
+>     \usepackage[dvipdfmx]{hyperref}
+>     \usepackage{pxjahyper}
+>   \fi
+> \fi
+> \hypersetup{%
+>  bookmarksnumbered=true,%
+>  colorlinks=true,%
+>  setpagesize=false,%
+>  pdftitle={WYSIWYMのLyXで},%
+>  pdfauthor={たのしい},%
+>  pdfsubject={LaTeXが},%
+>  pdfkeywords={ポポポポ～ン}}
+> ```
+>
 
-<span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
-
-```
-\usepackage{ifpdf}
-\usepackage{ifluatex}
-\usepackage{ifxetex}
-\ifpdf
-  \ifluatex
-    \usepackage[pdfencoding=auto]{hyperref}
-  \else
-    \usepackage[whole,autotilde]{bxcjkjatype}
-    \usepackage[unicode]{hyperref}
-  \fi
-\else
-  \ifxetex
-    \usepackage{hyperref}
-    \usepackage{zxjatype}
-    \setjamainfont{ipaexm.ttf}
-    \setjasansfont{ipaexg.ttf}
-    \setjamonofont{ipaexg.ttf}
-  \else
-    \usepackage[dvipdfmx]{hyperref}
-    \usepackage{pxjahyper}
-  \fi
-\fi
-\hypersetup{%
- bookmarksnumbered=true,%
- colorlinks=true,%
- setpagesize=false,%
- pdftitle={WYSIWYMのLyXで},%
- pdfauthor={たのしい},%
- pdfsubject={LaTeXが},%
- pdfkeywords={ポポポポ～ン}}
-```
-
-***
-
-のように編集すれば OK です．<br>
+のように編集すれば OK です．
 
 LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込んでいる場合
 
