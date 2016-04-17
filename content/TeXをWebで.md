@@ -28,7 +28,8 @@ pukiwiki: "TeXをWebで"
 #### フリーウェア（無料） {#e0fded48}
 
 - [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
-- [TeX を使ってみよう（upTeX版）](http://glc.l.u-tokyo.ac.jp/texonweb/)
+    <!-- -[[TeX を使ってみよう（upTeX版）:http://glc.l.u-tokyo.ac.jp/texonweb/]]（サーバが廃止されました） -->
+
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [Overleaf](https://www.overleaf.com/)（旧 writeLaTeX）
 
