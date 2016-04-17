@@ -35,7 +35,7 @@ pukiwiki: "TeX Live/Windows"
 かなりの時間がかかります．
 環境にもよりますが，多く場合一時間から二時間ほどかかると思います．
 
-以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んだび実行した例です．
+以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
 <a href="/attach/TeX%20Live/Windows/2015_inst1.png"><img src="/attach/TeX%20Live/Windows/2015_inst1.png" alt=""></a>
 
@@ -105,6 +105,24 @@ Windows 8 以降では基本機能で可能となりました．
 ダブルクリックすると DVD ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
+### 64-bit TeX Live Windows バイナリ (tl-win64.zip) {#t70745b0}
+
+64-bit TeX Live Windows バイナリ (tl-win64.zip) も利用できます．
+
+インストール方法は 00README.TLW64 を参照してください．
+
+- <strong>HTTP</strong>
+    - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+
+- <strong>FTP</strong>
+    - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
@@ -138,6 +156,7 @@ LaTeX 用のエディタとして [TeXworks](/TeXworks/) が TeX Live ととも�
 
 TeX Live 2015 対応の事例です．
 
+- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [TeX Live 2015 でアップデートされたパッケージ](http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-827.html)
@@ -153,8 +172,6 @@ TeX Live 2015 対応の事例です．
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[TeX Live 2014 for Windows:http://www.baldanders.info/spiegel/log2/000730.shtml]] -->
 <!-- -[[Windows 8.1 に TeX Live 2014 をインストール:http://qiita.com/ignorant/items/21545cde3c9bbafaa264]] -->
-<!-- -[[docs/TeX/TeX on Windows - kyogoku42's:http://www.kyogoku.biz/docs/TeX/TeX%20on%20Windows]] -->
-<!-- -[[TeX/Install - PukiWiki:http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install]] -->
 <!-- -[[TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築:http://yksris.hatenablog.com/entry/2014/10/01/143744]] -->
 <!-- -[[Windows7で，TeX MAKER＋TeX LiveでTeXの執筆環境を構築する．:http://qiita.com/ConHumi/items/f0d12ab1ad433591c192]] -->
 
