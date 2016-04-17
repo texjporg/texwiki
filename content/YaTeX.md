@@ -1479,7 +1479,7 @@ TeX ソースの先頭行に例えば，
 - [yatex キー操作](http://www.cosmo.sci.hokudai.ac.jp/~kk/emacs/yatex_key.html)
 - [YaTeXとRefTeXの共存](http://ubutun.blogspot.com/2011/06/yatexreftex.html)
 - [SyncTeXの設定。 Emacs(YaTeX) + Evince](http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html)
-- [SweaveでエディタとDVIビューア間の相互移動 - RjpWiki](http://www.okadajp.org/RWiki/?Sweave%E3%81%A7%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%81%A8DVI%E3%83%93%E3%83%A5%E3%83%BC%E3%82%A2%E9%96%93%E3%81%AE%E7%9B%B8%E4%BA%92%E7%A7%BB%E5%8B%95)
+- [RjpWiki:SweaveでエディタとDVIビューア間の相互移動](<http://www.okadajp.org/RWiki/?SweaveでエディタとDVIビューア間の相互移動>)
 - [MacWiki - CarbonEmacsAndYatex](http://macwiki.osdn.jp/wiki/index.php/CarbonEmacsAndYatex)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
 - [http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX](http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX)
