@@ -34,6 +34,6 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 を環境変数 PATH に追加します．
 
-#### [ActivePython](http://www.activestate.com/activepython) {#e1aa7fe2}
+#### [ActivePython](http://downloads.activestate.com/ActivePython/releases/) {#e1aa7fe2}
 
 本家版の他の選択肢としては ActivePython があります．
