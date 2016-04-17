@@ -22,6 +22,7 @@ openSUSE は安定・使い易い・多目的な Linux ディストリビュー�
 #### TeX Live 公式パッケージ {#v87b6755}
 
 - [Linux](/Linux/#texliveinstall)
+- [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 - [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
     - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 - [https://software.opensuse.org/package/texlive-dummy](https://software.opensuse.org/package/texlive-dummy)
