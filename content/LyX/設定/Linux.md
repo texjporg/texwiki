@@ -9,7 +9,9 @@ pukiwiki: "LyX/設定/Linux"
 
 [LyX](/LyX/) > [設定](</LyX/設定/>) > Linux
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## 設定 {#f3c4bb26}
 
@@ -17,76 +19,60 @@ pukiwiki: "LyX/設定/Linux"
 
 #### [Evince](/Evince/) の場合 {#ebd984f2}
 
-PDFコマンドは Evince/fwdevince の fwdevince を使用します．<br>
+PDFコマンドは Evince/fwdevince の fwdevince を使用します．
 
-***
-
-```
-
-```
-
-<br>
-
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
-
-***
+> ```
+>
+> ```
+>
+> <br>
+>
+> 順検索<br>
+> 　DVIコマンド: <br>
+> 　PDFコマンド: <ins>fwdevince $$o $$n $$t</ins><br>
 
 #### [Okular](/Okular/) の場合 {#s32b3472}
 
-PDFコマンドは [Okular](/Okular/) を使用します．<br>
-PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択します．<br>
+PDFコマンドは [Okular](/Okular/) を使用します．
+PDFコマンドのリストから okular --unique "$$o#src:$$n $$f" を選択します．
 
-***
-
-```
-
-```
-
-<br>
-
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>okular --unique "$$o#src:$$n $$f"</ins><br>
-
-***
+> ```
+>
+> ```
+>
+> <br>
+>
+> 順検索<br>
+> 　DVIコマンド: <br>
+> 　PDFコマンド: <ins>okular --unique "$$o#src:$$n $$f"</ins><br>
 
 #### [zathura](/zathura/) の場合 {#f1b11fba}
 
-PDFコマンドは [zathura](/zathura/) を使用します．<br>
+PDFコマンドは [zathura](/zathura/) を使用します．
 
-***
-
-```
-
-```
-
-<br>
-
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>zathura --synctex-forward $$n:0:$$t $$o</ins><br>
-
-***
+> ```
+>
+> ```
+>
+> <br>
+>
+> 順検索<br>
+> 　DVIコマンド: <br>
+> 　PDFコマンド: <ins>zathura --synctex-forward $$n:0:$$t $$o</ins><br>
 
 #### [qpdfview](/qpdfview/) の場合 {#a6f5bad3}
 
-PDFコマンドは [qpdfview](/qpdfview/) を使用します．<br>
+PDFコマンドは [qpdfview](/qpdfview/) を使用します．
 
-***
-
-```
-
-```
-
-<br>
-
-順検索<br>
-　DVIコマンド: <br>
-　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$f:$$n:0"</ins><br>
-
-***
+> ```
+>
+> ```
+>
+> <br>
+>
+> 順検索<br>
+> 　DVIコマンド: <br>
+> 　PDFコマンド: <ins>qpdfview --unique "$$o#src:$$f:$$n:0"</ins><br>
 
 ## Evince との連携 {#yfea5c32}
 
