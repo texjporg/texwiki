@@ -851,7 +851,7 @@ lib/neverembed.ps には，例えば次のように記述しておきます。
 ***
 
 この lib/neverembed.ps への設定を ps2pdf でも有効に
-するためには，[gs\gs$(rungs --version)\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
+するためには，[gs\gs$(rungs --version)\lib\ps2pdfxx.bat](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=lib/ps2pdfxx.bat;hb=HEAD) の記述内容の25行目
 
 ```
 echo -c .setpdfwrite -f%1 >>"%TEMP%\_.at"2
@@ -903,7 +903,7 @@ D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%
 Ghostscript では “/NeverEmbed”，“/AlwaysEmbed” を使って
 PDF への欧文用フォントの埋め込み制御が行えます。<br>
 “/NeverEmbed”，“/AlwaysEmbed” がうまく働かない場合は
-[Resource/Init/gs_pdfwr.ps](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/Resource/Init/gs_pdfwr.ps;hb=HEAD) の記述内容を書き換えることで
+[Resource/Init/gs_pdfwr.ps](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD) の記述内容を書き換えることで
 PDF への欧文用フォントの埋め込み制御を行います。
 
 デフォルトでは PostScript Level 1 での基本14書体である
@@ -923,7 +923,7 @@ Times-BoldItalic だけを埋め込み，Times-Roman，Times-Bold，Helvetica
 埋め込まないようにすると，ほとんどの環境で PostScript Level 1 での基本14書体が
 正確に表示されます。<br>
 このような設定にするには，Resource/Init/gs_pdfwr.ps の
-記述内容の[26&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/Resource/Init/gs_pdfwr.ps;hb=HEAD#l26)のうち31行目を次のように変更してください。<br>
+記述内容の[28&ndash;35行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l28)のうち33行目を次のように変更してください。<br>
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -946,8 +946,8 @@ Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファ
 埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，Microsoft Windows を含めたほとんどの環境で
 PostScript Level 1 での基本14書体が正確に表示されます。<br>
-このような設定にするには，Resource/Init/gs_pdfwr.ps の記述内容の[26&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/Resource/Init/gs_pdfwr.ps;hb=HEAD#l26)の
-うち[30&ndash;31行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=gs/Resource/Init/gs_pdfwr.ps;hb=HEAD#l30)を次のようにコメントアウトしてください。<br>
+このような設定にするには，Resource/Init/gs_pdfwr.ps の記述内容の[26&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l28)の
+うち[32&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l32)を次のようにコメントアウトしてください。<br>
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -970,7 +970,6 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 
 - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/](http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/](http://ring.nict.go.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/](http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/gs/)
