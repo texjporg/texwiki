@@ -300,7 +300,6 @@ command_line_encoding.dvips =
 <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
 <!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
 <!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
 <!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 <!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 <!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
@@ -345,7 +344,6 @@ command_line_encoding.dvips =
     <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
     <!-- - -http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
     <!-- - -http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.nict.go.jp/pub/text/TeX/ptex-win32/current/ -->
     <!-- - -http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
     <!-- - -http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
     <!-- - -http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
