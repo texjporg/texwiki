@@ -49,7 +49,7 @@ TeX Wiki は誰でも編集できます．
 
 ### <em>緊急の注意</em>（OS X El Capitan への対応状況） {#oe4ce14c}
 
-2015年10月1日（日本時間）より正式に配布される OS X 10.11 El Capitan については，和文フォントの構成が大幅に変更されていることから，TeX Live 側の対応が完全ではありません．
+OS X 10.11 El Capitan については，和文フォントの構成が大幅に変更されていることから，TeX Live 側の対応が完全ではありません．
 
 - pTeX / upTeX でヒラギノフォントを利用することは，適切に設定すれば可能です（[別の場所](</TeX Live/Mac/#elcapitan>)で解説します；小川版 Drag &amp; Drop UpTeX は既定で設定完了）．
 - LuaTeX-ja でヒラギノフォントを利用するには [LuaTeX beta-0.81.0 以降](/LuaTeX/) に更新する必要があります．
