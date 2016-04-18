@@ -34,9 +34,6 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
     - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
-        <!-- -[http://optipessimist.blog108.fc2.com/blog-entry-404.html CentOS6.5での文書作成環境構築（備忘録）] -->
-        <!-- -[http://be.nucl.ap.titech.ac.jp/~koba/cgi-bin/moin.cgi/TeX%20Live%202013%20on%20Scientific%20Linux%206.4 TeX Live 2013 on Scientific Linux 6.4] -->
-        <!-- -[http://kousei42.s246.xrea.com/wiki/index.cgi?page=%23014%2ELyX #014.LyX - kosewiki] -->
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/RHEL に依存するパッケージが TeX Live/RHEL をインストールするのを防止できます．
@@ -47,9 +44,11 @@ $ sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/Enterpr
 
 #### TeX Live/RHEL → TeX Live 公式パッケージを使用する {#w0c3dfae}
 
-RHEL/CentOS/SL 7.0 の TeX Live は TeX Live 2013 です．
-sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかったので RHEL/CentOS/SL 7.0 の TeX Live は (u)pTeX が収録されていないかもしれません．
-最新版の TeX Live または (u)pTeX が必要な場合は TeX Live 公式パッケージを使用してください．
+- [http://centos-packages.com/7/results/texlive/](http://centos-packages.com/7/results/texlive/)
+- [http://centos-packages.com/7/package/texlive/](http://centos-packages.com/7/package/texlive/)
+
+RHEL/CentOS/SL 7.2 の TeX Live は TeX Live 2012 です．
+最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
 ```
 $ sudo yum install texlive-*
@@ -105,8 +104,6 @@ $ sudo yum install okular
 ### [TeXstudio](/TeXstudio/) {#d3954fd9}
 
 TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．
-
-- [http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/)
 
 ### Software Collections {#m01d8b64}
 
