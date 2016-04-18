@@ -26,6 +26,7 @@ LaTeXiT は，TeX ソースコードをタイプセットして画像に変換�
 ### 出力形式 {#j810704f}
 
 LaTeXiT が出力できる画像形式は以下のとおりです．
+PDF形式で出力した場合、PDF内部にTeXのコードが残されているため，繰り返し LaTeXiT で編集することができます．
 
 - ベクター画像
     - アウトラインをとった EPS ファイル
@@ -101,6 +102,11 @@ ps2pdf
 : /Applications/Ghostscript.app/bin/ps2pdf
 
 に変更してください。
+
+[小川版 UpTeX.app](http://www2.kumagaku.ac.jp/teacher/herogw/) をお使いの場合は，以下のようにすれば良いでしょう。
+
+pdfLaTeX
+: /Applications/UpTeX.app/Contents/Resources/TEX/texbin/lualatex
 
 #### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#pd5cb643}
 
