@@ -30,6 +30,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 #### TeX Live 公式パッケージ {#jc67c0a8}
 
 - [Linux](/Linux/#texliveinstall)
+- [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
     - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
@@ -56,8 +57,6 @@ $ sudo yum install texlive-*
 
 ### [Ghostscript](/Ghostscript/) {#j27db6cf}
 
-RHEL/CentOS/SL 7.0 の Ghostscript は Ghostscript 9.07 です．
-
 ```
 $ sudo yum install ghostscript
 ```
@@ -70,8 +69,6 @@ $ sudo yum install ghostscript
 
 #### Python 2 {#b51e9b09}
 
-RHEL/CentOS/SL 7.0 の Python は Python 2.7.5 です．
-
 ```
 $ sudo yum install python
 ```
@@ -83,15 +80,11 @@ $ sudo yum install python
 
 ### [Ruby](/Ruby/) {#pa5990a1}
 
-RHEL/CentOS/SL 7.0 の Ruby は ruby 2.0.0p353 (2013-11-22) \[x86_64-linux\] です．
-
 ```
 $ sudo yum install ruby
 ```
 
 ### [Perl](/Perl/) {#ye8ee108}
-
-RHEL/CentOS/SL 7.0 の Perl は Perl 5.16.3 です．
 
 ```
 $ sudo yum install perl
@@ -99,15 +92,11 @@ $ sudo yum install perl
 
 ### [Evince](/Evince/) {#b582893c}
 
-RHEL/CentOS/SL 7.0 の Evince は Evince 3.8.3 です．
-
 ```
 $ sudo yum install evince
 ```
 
 ### [Okular](/Okular/) {#nf124489}
-
-RHEL/CentOS/SL 7.0 の Okular は Okular 0.16.5 です．
 
 ```
 $ sudo yum install okular
