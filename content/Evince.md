@@ -98,7 +98,12 @@ libevince-devパッケージが必要です。
 
 ### openSUSE {#rd040fd0}
 
-- [http://software.opensuse.org/package/evince](http://software.opensuse.org/package/evince)
+- [https://software.opensuse.org/package/evince](https://software.opensuse.org/package/evince)
+
+### CentOS {#pb1cfba1}
+
+- [http://centos-packages.com/7/results/evince/](http://centos-packages.com/7/results/evince/)
+- [http://centos-packages.com/7/package/evince/](http://centos-packages.com/7/package/evince/)
 
 ### Beyond Linux From Scratch {#i9f92bae}
 
