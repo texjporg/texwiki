@@ -10,31 +10,23 @@ pukiwiki: "LyX"
 
 ## [LyX](http://www.lyx.org/) {#odce06b4}
 
-***
-
-***
-
-## LyX とは {#c2a24f42}
-
 LyX は，LaTeX 文書が出力できるドキュメントプロセッサです．
 LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援します．
 単純に文書の見た目による (WYSIWYG) 書き方を支援するものではありません．
 
-- [LyX | LyX &ndash; 文書プロセッサ](http://www.lyx.org/WebJa.Home) 公式サイト
-    - [LyX | LyXとは何か](http://www.lyx.org/WebJa.WhatIsLyX)
-    - [LyX | ビジュアル・ツアー](http://www.lyx.org/WebJa.VisualTour)
-    - [LyX | LyXグラフィカルツアー](http://www.lyx.org/WebJa.Walkthrough)
-        <!-- -[[The LyX Project:http://www.lyx.org/trac/]] -->
-        <!-- - -[[lyxgit:http://www.lyx.org/trac/browser/lyxgit]] -->
-        <!-- - --[[lyxgit (ログ):http://www.lyx.org/trac/log/lyxgit/]] -->
-        <!-- - -[[Timeline:http://www.lyx.org/trac/timeline]] -->
-
+- [LyX | LyX &ndash; The Document Processor](http://www.lyx.org/)
+- [LyX | LyX &ndash; 文書プロセッサ](http://www.lyx.org/WebJa.Home)
 - [LyX wiki | LyX / LyX](http://wiki.lyx.org/)
-    - [SyncTeX](http://wiki.lyx.org/LyX/SyncTeX)
-    - [Logotype](http://wiki.lyx.org/LyX/Logotype)
-    - [SplashScreen](http://wiki.lyx.org/LyX/SplashScreen)
-- [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
+    <!-- - -[[SyncTeX:http://wiki.lyx.org/LyX/SyncTeX]] -->
+    <!-- - -[[Logotype:http://wiki.lyx.org/LyX/Logotype]] -->
+    <!-- - -[[SplashScreen:http://wiki.lyx.org/LyX/SplashScreen]] -->
+
 - [lyx-devel](http://www.mail-archive.com/lyx-devel@lists.lyx.org/)
+- [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
+
+***
+
+***
 
 ### 動作環境 {#xd7ee343}
 
@@ -83,8 +75,8 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 - [My Future Sight for Past: lyx](http://myfuturesightforpast.blogspot.jp/search/label/lyx)
 - [LyX - My memory for future](https://sites.google.com/site/mymemoryforfuture/lyx)
 - [Ken Senoo - Google+](https://plus.google.com/100959984173869250851/posts)
-- [http://miyazakikenji.wordpress.com/tag/lyx/](http://miyazakikenji.wordpress.com/tag/lyx/)
-- [記事一覧 - 跳慮跋考](http://kino.hateblo.jp/search?q=LyX)
+- [https://miyazakikenji.wordpress.com/tag/lyx/](https://miyazakikenji.wordpress.com/tag/lyx/)
+- [LyX の検索結果 - 跳慮跋考](http://kino.hateblo.jp/search?q=LyX)
 - [&quot;LyX&quot; - 記事一覧 - ill-identified diary](http://ill-identified.hatenablog.com/archive/category/LyX)
 - [LyX 2.xでUTF-8のプレーンLaTeXファイルを読みこむには](http://www.dbc-works.org/feedback/entry/2014/12/1/)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
