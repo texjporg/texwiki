@@ -23,13 +23,14 @@ openSUSE は安定・使い易い・多目的な Linux ディストリビュー�
 
 - [Linux](/Linux/#texliveinstall)
 - [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
+- [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
+    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 - [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
-    - [CTAN: tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 - [https://software.opensuse.org/package/texlive-dummy](https://software.opensuse.org/package/texlive-dummy)
 - [https://software.opensuse.org/package/texlive-dummy_install](https://software.opensuse.org/package/texlive-dummy_install)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse) をインストールします．
-texlive-dummy-opensuse をインストールすると TeX Live/TeX Live for opensuse.org に依存するパッケージが TeX Live/TeX Live for opensuse.org をインストールするのを防止できます．
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
+texlive-dummy をインストールすると TeX Live/TeX Live for opensuse.org に依存するパッケージが TeX Live/TeX Live for opensuse.org をインストールするのを防止できます．
 
 ```
 $ sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2015.9999-1.noarch.rpm
