@@ -128,7 +128,7 @@ UTF-8 を選択します．
 
 ### 正規表現ライブラリ {#j57d8050}
 
-- [bregonig.dll](http://homepage3.nifty.com/k-takata/mysoft/bregonig.html)
+- [bregonig.dll](http://k-takata.o.oo7.jp/mysoft/bregonig.html)
 - [k_takata / bregonig / ダウンロード &mdash; Bitbucket](https://bitbucket.org/k_takata/bregonig/downloads/)
     <!-- -[[Downloads · k-takata/bregonig · GitHub:https://github.com/k-takata/bregonig/downloads]] -->
     - [twitter](https://twitter.com/k_takata)
