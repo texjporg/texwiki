@@ -52,7 +52,6 @@ LaTeX2HTML は Perl で記述されています．<br>
 
 ## 使い方 {#x9a76c36}
 
-- [Latex2html の備忘録 (日本語マニュアル)](http://homepage3.nifty.com/peterpan/Latex2html/)
 - [latex2htmlの使い方について](http://akita-nct.jp/~yamamoto/comp/latex/latex2html/latex2html.html)
 - [LaTeX2HTML - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?LaTeX2HTML)
 - [latex2html による文書形式の変換](http://www.rcai.riken.jp/petadimension/textips.html#latex2html)
