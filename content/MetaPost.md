@@ -732,6 +732,77 @@ mpost \show sind 30; end
 sind 30”の値を表示して終了します。
 （実はここで，先ほど紹介した「何もしない」命令“\”が使われています。）
 
+## MetaPostで計算する {#a86a7284}
+
+MetaPost の計算能力は、「図を描く」こと以外にも活用できます。
+
+### 線形方程式を解く {#ecbcc086}
+
+MetaPost には「線形方程式を解く」という面白い機能があります。
+
+```
+% tsurukame.mp
+tsuru+kame=36; % 鶴と亀があわせて36匹
+2tsuru+4kame=100; % 足の数はあわせて100本
+show tsuru; show kame; % 鶴と亀の数は？
+end
+```
+
+出力：
+
+```
+>> 22
+>> 14
+```
+
+### ページレイアウトの計算 {#x334001d}
+
+方程式を解く機能の応用です。
+
+```
+% pagelayout.mp
+paperheight=257mm; % ページ縦幅
+lineheight=9pt; lineskip=15pt; nlines=22; % 行
+topmargin/2=botmargin/3; % 天地マージンの比率は2:3
+% 成立すべき条件
+bodyheight = (nlines-1)*(lineheight+lineskip)+lineheight;
+topmargin+bodyheight+botmargin=paperheight;
+% マージンの値(mm単位)は？
+show topmargin/mm; show botmargin/mm;
+end
+```
+
+出力：
+
+```
+>> 30.68048
+>> 46.02074
+```
+
+- “topmargin/botmargin=2/3”と書くと“未知数/未知数”となり、
+    線形でないので受け付けられません。
+
+- MetaPost では、“mm”や“pt”などの単位は単なる数値（numeric）で、bp 単位の数値を表します。
+    （つまり 1in = 72。）
+
+<!-- **パス情報の表示 -->
+<!--  -->
+<!-- MetaPost では、点列を .. で結ぶと“いいように”曲線を描いてくれます。 -->
+<!-- 一方で、TikZ はそこまで気が利かないなので、 -->
+<!-- ベジェ曲線を描くときには自分で制御点を指定する必要があります。 -->
+<!--  -->
+<!-- % subpath; -->
+<!-- tracingonline := 1; -->
+<!-- path origarc; origarc = halfcircle scaled 2; -->
+<!-- show origarc; -->
+<!-- path subarc; subarc = origarc -->
+<!--    cutbefore ((0,0.5)- -(1,0.5))  -->
+<!--    cutafter ((0,0.5)- -(-1,0.5)); -->
+<!-- show subarc; -->
+<!-- end -->
+<!--  -->
+<!--  -->
+
 ## 不具合 {#z01f418a}
 
 ### TeX Live 2013 の MetaPost 1.803 で異常な TFM ファイルが生成される {#c01c14c0}
