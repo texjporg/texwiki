@@ -157,7 +157,7 @@ LaTeX と連携するためのエクステンション．<br>
 [EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
 [Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．<br>
 
-- [Inkscape (Win)でLaTeX数式を使えるようにする](http://ohtsuka.cocolog-nifty.com/blog/2013/04/inkscape-winlat.html)
+- [Inkscape (Win)でLaTeX数式を使えるようにする](http://nan-hen.com/?p=9244)
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
 - [InkscapeでLaTexを使えるようにできたメモ](http://d.hatena.ne.jp/biost/20120302/1330660995)
 - [Inkscape で LaTeX 数式を表示しようとするとエラーになる](http://d.hatena.ne.jp/nlogn/20120131/1327995778)
@@ -367,6 +367,5 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 - [Wikibooks.ja:Inkscape](https://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
 - [Inkscape - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/inkscape/)
-- [Mac版Inkscape日本語化](http://shinob.cocolog-nifty.com/mix_dvd/2008/04/macinkscape_978d.html)
-- [Inkscape+日本語環境 \[Mac\]\[Free\]](http://lime1100.blog108.fc2.com/blog-entry-56.html)
+- [MacOSX(Yosemite)におけるInkscapeの日本語化](http://a244.hateblo.jp/entry/2015/06/27/025020)
 - [Beamerscape](https://github.com/jbohren/beamerscape)
