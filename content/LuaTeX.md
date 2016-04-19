@@ -12,7 +12,8 @@ pukiwiki: "LuaTeX"
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
 が使える TeX です．派生版として LuaJITTeX があります．
 
-LuaTeX は 2020 年頃を目標として開発が進んでおり，TeX Live 2015 には beta-0.80.0 が収録されています。
+LuaTeX は 2020 年頃を目標として開発が進んでおり，TeX Live 2016 には beta-0.95.0 が収録される予定です。
+TeX Live 2015 は beta-0.80.0 でしたが，ここから beta-0.95.0 に至る間に多くの仕様変更がありました。
 いまだベータ版なので仕様変更が相次いでいますが，[pdfTeX](/pdfTeX/) の後継として期待されています。
 
 ***
@@ -52,6 +53,8 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 
 ### 関連リンク {#cdd9fc14}
 
+- TwitterSearch:LuaTeX, TwitterSearch.en:LuaTeX, TwitterSearch.ja:LuaTeX
+- TwitterSearch:LuaLaTeX, TwitterSearch.en:LuaLaTeX, TwitterSearch.ja:LuaLaTeX
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
 - [「LuaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX)
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
@@ -61,7 +64,6 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 - [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
 - [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
-- [Luatexを使ってMoleCoding](http://molecoding.cocolog-nifty.com/blog/2011/10/luatexmolecodin.html)
 - [LuaTeX - ConTeXt wiki](http://wiki.contextgarden.net/LuaTeX)
 - [slnunicode](https://github.com/LuaDist/slnunicode)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
@@ -71,7 +73,7 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html))
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
-- [Lua 入門（北川さん）](https://sites.google.com/site/keisansugaku/home/lua-intro)
+- [Lua 入門（北川さん・荒田さん）](http://material.utmsks.net/home/lua-intro)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
