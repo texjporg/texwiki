@@ -69,6 +69,8 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ## 関連リンク {#j2a0a89a}
 
+- TwitterSearch:LyX TeX, TwitterSearch.en:LyX TeX, TwitterSearch.ja:LyX TeX
+- TwitterSearch:LyX LaTeX, TwitterSearch.en:LyX LaTeX, TwitterSearch.ja:LyX LaTeX
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
 - [Search - LyX - Pseudo Moon](https://www.pseudomoon.jp/dotclear/index.php?q=LyX)
@@ -84,7 +86,6 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 - [How to Use LyX on OS X](http://mac.tutsplus.com/tutorials/app-training/how-to-use-lyx-on-os-x/)
 - [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
-- [LyX with Mac Book Pro Retina, JP](http://heloremy.wordpress.com/2012/10/16/lyx-with-mac-book-pro-retina-jp/)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [LyX HowTo](http://www.int.otaru-uc.ac.jp/lyx-howto) 横田 宏治 さんによる詳しい解説
 - [インド学仏教学における LyX の利用](http://skalldan.wordpress.com/2011/12/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-lyx-%E3%81%AE%E5%88%A9%E7%94%A8/)
@@ -93,7 +94,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ### License {#pb9a4019}
 
-[GPLv3, GPLv2](http://www.lyx.org/WebJa.License)
+[GPLv3, GPLv2](http://www.lyx.org/License) ([日本語訳](http://www.lyx.org/WebJa.License))
 
 ### リリース情報 {#k8ba7cf7}
 
