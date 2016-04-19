@@ -9,6 +9,8 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
+[★ TeXユーザの集い2016](https://texconf16.tumblr.com/) 福岡県福岡市にて2016年11月5日（土）開催予定！
+
 [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
 
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
@@ -51,7 +53,7 @@ TeX Wiki は誰でも編集できます．
 
 OS X 10.11 El Capitan については，和文フォントの構成が大幅に変更されていることから，TeX Live 側の対応が完全ではありません．
 
-- pTeX / upTeX でヒラギノフォントを利用することは，適切に設定すれば可能です（[別の場所](</TeX Live/Mac/#elcapitan>)で解説します；Drag &amp; Drop UpTeX は既定で設定完了）．
+- pTeX / upTeX でヒラギノフォントを利用することは，適切に設定すれば可能です（[別の場所](</TeX Live/Mac/#elcapitan>)で解説します；小川版 Drag &amp; Drop UpTeX は既定で設定完了）．
 - LuaTeX-ja でヒラギノフォントを利用するには [LuaTeX beta-0.81.0 以降](/LuaTeX/) に更新する必要があります．
 - 游フォントを利用することは困難です（游明朝体のフォントの形式が特殊であるため，現状では工夫しても限定的な利用しかできません）．
 - Ghostscript でヒラギノフォントを利用することはできません．
