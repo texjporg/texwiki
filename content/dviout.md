@@ -311,7 +311,7 @@ dviout for Windows は Susieプラグインをインストールすることで 
 
 PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。
 
-- [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
+- [TORO's Software library(Win32/Win64 Plugin)](http://toro.d.dooo.jp/slplugin.html)
     から WIC Susie Plug-in をダウンロードしてください。
     展開後
 
@@ -339,7 +339,7 @@ dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パ�
 
 JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。
 
-- [TORO's Software library(Win32/Win64 Plugin)](http://homepage1.nifty.com/toro/slplugin.html)
+- [TORO's Software library(Win32/Win64 Plugin)](http://toro.d.dooo.jp/slplugin.html)
 
 から WIC Susie Plug-in をダウンロードしてください。
 展開後
