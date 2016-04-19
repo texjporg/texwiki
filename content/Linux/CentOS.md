@@ -36,13 +36,13 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
     - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
-texlive-dummy をインストールすると TeX Live/RHEL に依存するパッケージが TeX Live/RHEL をインストールするのを防止できます．
+texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存するパッケージが TeX Live/RHEL/CentOS/SL をインストールするのを防止できます．
 
 ```
 $ sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
 ```
 
-#### TeX Live/RHEL → TeX Live 公式パッケージを使用する {#w0c3dfae}
+#### TeX Live/RHEL/CentOS/SL --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
 
 - [http://centos-packages.com/7/results/texlive/](http://centos-packages.com/7/results/texlive/)
 - [http://centos-packages.com/7/package/texlive/](http://centos-packages.com/7/package/texlive/)
@@ -100,6 +100,12 @@ $ sudo yum install evince
 ```
 $ sudo yum install okular
 ```
+
+### [LyX](/LyX/) {#ucf886d7}
+
+- [https://pkgs.org/search/LyX](https://pkgs.org/search/LyX)
+- [http://dl.fedoraproject.org/pub/epel/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/7/x86_64/l/)
+- [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/)
 
 ### [TeXstudio](/TeXstudio/) {#d3954fd9}
 
