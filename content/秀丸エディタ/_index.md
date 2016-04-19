@@ -15,36 +15,36 @@ pukiwiki: "秀丸エディタ"
 - [秀まるおのホームページ(サイトー企画)](http://hide.maruo.co.jp/)
     - [秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html)
     - [twitter](https://twitter.com/hidemaruinfo)
-- [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
-- [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
+
+***
+
+***
+
+### 動作環境 {#m62ba31c}
 
 Windows 環境で幅広く動作します．
 詳細は[秀まるおのホームページ(サイトー企画)－秀丸エディタ](http://hide.maruo.co.jp/software/hidemaru.html) を参照してください．
-
-***
-
-***
 
 ### 秀丸エディタフリー制度 {#faebc82e}
 
 秀丸エディタには，特定の条件に当てはまる場合に限り，期間限定で無料で利用できる制度があります．
 対象は
 
-- 学生（[アカデミックフリー個人](http://hide.maruo.co.jp/support/hmfree1.html)・[アカデミックフリー団体](http://hide.maruo.co.jp/support/hmfree2.html)）
-- [フリーソフトウェア作者](http://hide.maruo.co.jp/support/hmfree3.html)
-- [ウィンドウズ関係の書籍や雑誌の著者](http://hide.maruo.co.jp/support/hmfree4.html)
+- 学生（アカデミックフリー個人・アカデミックフリー団体）
+- フリーソフトウェア作者
+- ウィンドウズ関係を扱う書籍や雑誌の著者
 
 です．
 [秀丸エディタフリー制度](http://hide.maruo.co.jp/support/hidemarufree.html)を参照してください．
 
-### 標準のエンコードの種類 → Unicode(UTF-8) を選択する {#m676962a}
+### 標準のエンコードの種類 --&gt; Unicode(UTF-8) を選択する {#m676962a}
 
 秀丸エディタの標準のエンコードの種類は初期設定では日本語 (Shift-JIS) です．
 Unicode (UTF-8) を選択します．
 
-メニューの「その他」→「動作環境」を選択すると設定画面が開きます．
+メニューの「その他」--&gt;「動作環境」を選択すると設定画面が開きます．
 下のほうにある「上級者向け設定」にチェックを入れると，詳細な設定ができるようになります．
-ここで「ファイル」→「エンコード1」を選択すると，エンコードの設定画面に移ります．
+ここで「ファイル」--&gt;「エンコード1」を選択すると，エンコードの設定画面に移ります．
 
 - 「ファイルの内容を解析してエンコードの種類を自動認識する」の下のリストで，Unicode (UTF-8) が一番上にくるように順序を変更します．
 
@@ -61,9 +61,9 @@ TeX で文書を作成する場合は行番号の計算方法をエディタ的�
 
 ### 正規表現 {#f7fa3efd}
 
-- [h-tom's Warehouse - top](http://homepage3.nifty.com/_htom/)
-    - [h-tom's Warehouse - 秀丸エディタ macro](http://homepage3.nifty.com/_htom/macro/)
-        - [hmonig.dll](http://homepage3.nifty.com/_htom/macro/macro_dll.html#N3.2)
+- [h-tom's Warehouse - top](http://htom.in.coocan.jp/)
+    - [h-tom's Warehouse - 秀丸エディタ macro](http://htom.in.coocan.jp/macro/)
+        - [hmonig.dll](http://htom.in.coocan.jp/macro/macro_dll.html#label-21)
 
 ### マクロ {#q3a2d324}
 
@@ -77,9 +77,12 @@ LaTeX 用の支援として開発されたマクロ集としては，祝鳥が�
 
 ### 関連リンク {#mec8cd02}
 
-- [アウトライン解析でブロックの始端と終端を明確化](http://www.maruo.co.jp/hidesoft/2/x31065_.html#31065)
+- [秀丸と SumatraPDF で SyncTeX](http://www.muskmelon.jp/?p=1024)
+- [秀丸で TeX を使う設定](http://www.muskmelon.jp/?p=1012)
 - [TeXLive 2012でLaTeXのエラー発生時に秀丸エディタを起動する設定](http://d.hatena.ne.jp/hyuki/20121016/tex)
 - [秀丸エディタのお勧めの設定](http://tipszone.jp/20121003_hidemaru-config/)
+- [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
+- [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
 
 #### ChangeLog {#k3ce2677}
 
