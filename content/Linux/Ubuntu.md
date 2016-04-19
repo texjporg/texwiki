@@ -7,18 +7,18 @@ pukiwiki: "Linux/Ubuntu"
 
 # Linux/Ubuntu
 
-[Linux](/Linux/) > Ubuntu/Ubuntu GNOME/Ubuntu MATE/Kubuntu/Xubuntu/Lubuntu
+[Linux](/Linux/) > Ubuntu/Ubuntu MATE/Ubuntu GNOME/Kubuntu/Xubuntu/Lubuntu
 
-## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Ubuntu MATE](http://ubuntu-mate.org/)/[Kubuntu](http://kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
+## [Ubuntu](http://www.ubuntu.com/)/[Ubuntu MATE](http://ubuntu-mate.org/)/[Ubuntu GNOME](http://ubuntugnome.org/)/[Kubuntu](http://kubuntu.org/)/[Xubuntu](http://xubuntu.org/)/[Lubuntu](http://lubuntu.net/) {#m38e62cf}
 
 Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビューションです．
 高速・省メモリなデスクトップ環境を使用したい場合は [Lubuntu](http://lubuntu.net/) をおすすめします．
 
-Ubuntu の派生版として，デスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用した [Linux Mint](</Linux/Linux Mint/>) があります．
+Ubuntu の派生版として，[DistroWatch.com](http://distrowatch.com/?language=JP) ページヒットランキング 1 位の [Linux Mint](</Linux/Linux Mint/>) があります．
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png,right,around,nolink,Ubuntu); -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png,right,around,nolink,Ubuntu GNOME); -->
 <!-- #ref(https://ubuntu-mate.org/gallery/Artwork/Ubuntu_MATE.png,right,around,nolink,Ubuntu MATE); -->
+<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png,right,around,nolink,Ubuntu GNOME); -->
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png,right,around,nolink,Kubuntu); -->
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png,right,around,nolink,Xubuntu); -->
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png,right,around,nolink,Lubuntu); -->
@@ -59,7 +59,6 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
-- [LubuntuでTeX環境を整える](http://duroomzacc-diary.hatenablog.com/entry/2015/05/17/193427)
 
 TeX Live/Debian をフルインストールする場合は
 
