@@ -11,8 +11,9 @@ pukiwiki: "Linux/Linux Mint"
 
 ## [Linux Mint/Linux Mint Debian Edition (LMDE)](https://linuxmint.com/) {#f4077eb2}
 
-Linux Mint は Ubuntu をベースにした Linux ディストリビューションです．
+Linux Mint は Ubuntu をベースにした [DistroWatch.com](http://distrowatch.com/?language=JP) ページヒットランキング 1 位の Linux ディストリビューションです．
 Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．
+デスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用しています．
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png,right,around,nolink,Linux Mint) -->
 
