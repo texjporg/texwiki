@@ -24,18 +24,10 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
 - [Linux](/Linux/#texliveinstall)
-- [https://copr.fedorainfracloud.org/coprs/lkiesow/texlive-fake/](https://copr.fedorainfracloud.org/coprs/lkiesow/texlive-fake/)
 - [https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-fake](https://copr.fedorainfracloud.org/coprs/lkiesow/texlive-fake/) または [texlive-dummy](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/) をインストールします．
-texlive-fake または texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
-
-```
-$ sudo dnf copr enable lkiesow/texlive-fake
-$ sudo dnf install texlive-fake
-```
-
-または
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/) をインストールします．
+texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
 $ sudo dnf copr enable fatka/texlive-dummy
@@ -44,8 +36,7 @@ $ sudo dnf install texlive-dummy
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
-- [Fedora Project Wiki](http://fedoraproject.org/wiki/Fedora_Project_Wiki)
-    - [Features/TeXLive](http://fedoraproject.org/wiki/Features/TeXLive)
+- [Features/TeXLive - FedoraProject](http://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
@@ -88,8 +79,8 @@ $ sudo dnf install texlive-collection-langcjk
 
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
-<!-- デフォルトの設定では Ghostscript で日本語が表示できないかもしれません． -->
-<!-- Ghostscript を適切に設定することで 日本語が表示できるようになります． -->
+Fedora の Ghostscript は初期設定では日本語が文字化けするかもしれません．
+日本語が文字化けする場合は [Ghostscript/Linux](/Ghostscript/Linux/) を参照して適切に設定することで日本語が文字化けせずに出力できるようになります．
 
 ```
 $ sudo dnf install ghostscript
