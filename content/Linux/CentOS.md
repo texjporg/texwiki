@@ -109,7 +109,10 @@ $ sudo yum install okular
 
 ### [TeXstudio](/TeXstudio/) {#d3954fd9}
 
-TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．
+TeXstudio の公式サイトから CentOS と Scientific Linux 用の TeXstudio のパッケージが入手できます．
+
+- [http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/)
+- [http://download.opensuse.org/repositories/home:/jsundermeyer/ScientificLinux_7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/ScientificLinux_7/x86_64/)
 
 ### Software Collections {#m01d8b64}
 
