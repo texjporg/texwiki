@@ -9,7 +9,9 @@ pukiwiki: "Eclipse"
 
 ## [Eclipse](http://www.eclipse.org/) {#t7934744}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 <div style="clear:both"></div>
 
@@ -23,7 +25,9 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### 動作環境 {#aae7926e}
 
-[Target Environments](http://www.eclipse.org/projects/project-plan.php?planurl=eclipse/development/plans/eclipse_project_plan_4_4.xml#target_environments) を参照．
+- [http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments)
+- [http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments](http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments)
+- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments)
 
 ### License {#aa464649}
 
@@ -31,13 +35,15 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
-[Release Milestones](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones)
+- [http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones)
+- [http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones](http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones)
+- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones)
 
 ## Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-- Java - TeX Wiki を参照．<br>
+- Java - TeX Wiki を参照．
 
 ## Eclipse のインストール {#r143ba66}
 
