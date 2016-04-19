@@ -12,13 +12,13 @@ pukiwiki: "TeXlipse"
 
 ## [TeXlipse](http://texlipse.sourceforge.net/) {#cc0edd31}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## TeXlipse とは {#m60f5d27}
 
-TeXlipse は
-[Eclipse](/Eclipse/) の
-[LaTeX](https://mirror.ctan.org/help/Catalogue/entries/latex.html) 用プラグインです．
+TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
     - [All news](http://texlipse.sourceforge.net/news.php)
