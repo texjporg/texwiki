@@ -167,7 +167,7 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ### TeX Live/FreeBSD {#p4fe1144}
 
 - [http://www.freshports.org/print/texlive-full/](http://www.freshports.org/print/texlive-full/)
-- [FreeBSD における TeXLive の導入](http://homepage3.nifty.com/maikaze/texlive1.html)
+- [FreeBSD における TeXLive の導入](http://maikaze.cafe.coocan.jp/texlive1.html)
 - [FreeBSDへのTeXliveインストール](http://sphinx-users.jp/cookbook/pdf/latex-install-freebsd.html)
 - [FreeBSD のports TeXLive &amp; evince : 日本語フォントの設定 fonts.conf](http://blog.goo.ne.jp/koyusoma5102/e/4936476b9a197dda36799498a4bfd5c9)
 - \[[FreeBSD\]texlive](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20140726#p02)
