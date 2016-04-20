@@ -7,7 +7,7 @@ pukiwiki: "special 命令"
 
 # special 命令
 
-## \special 命令 {#headline}
+## special 命令 {#headline}
 
 special 命令とは，DVI 標準ではサポートしていない，各 DVI ウェアの独自拡張機能を指示するための命令です。今日の LaTeX において普通に用いられている，
 
@@ -18,17 +18,15 @@ special 命令とは，DVI 標準ではサポートしていない，各 DVI ウ
 
 などの機能の実装には special 命令が使用されています。
 
-<!-- とりあえず基本的な説明を書くことにする． -->
-
 ***
 
 ***
 
-### special 命令の基本 {#basic}
+## special 命令の基本 {#basic}
 
 <!-- 今の時代に「デバイス」が何を指すかという議論は避けたい。 -->
 
-#### special 命令とは何か {#what-is}
+### special 命令とは何か {#what-is}
 
 （旧来の）TeX 処理系は組版結果を DVI ファイルに出力します。この「DVI (device-independent) ファイル」というのは，その名称の通り，デバイス非依存な一種のページ記述言語で書かれています。
 
@@ -42,7 +40,7 @@ DVI ファイルは「“A”の文字を出力する」「参照点を右に 1p
 
 今日の LaTeX では，「色を付ける」機能は (x)color パッケージ、ハイパーリンクを作る機能は [hyperref](/hyperref/) パッケージで提供されていますが，これらの機能の実装には special 命令（\special プリミティブ）が利用されています。
 
-#### DVI の special 命令 {#dvi-special}
+### DVI の special 命令 {#dvi-special}
 
 DVI の special 命令についての概略を把握するため，一つ例を挙げてみます。[^2]
 
@@ -62,7 +60,7 @@ EF09636F6C6F7220526564 : special1 9 'color Red' % special命令
 
 これから判るように，\special プリミティブに与えた引数の文字列は，TeX 処理系により解釈されることなく，そのまま DVI の special 命令の引数として書き出されています。つまり DVI 標準としては「“color Red”という拡張命令が発行された」という意味しか持っていません。ところが，dvips にとっては“color Red”という special 命令は「以降の文字の色を赤に変える」という意味を持っています。従って，上記の命令列を含む DVI ファイルを dvips で処理した場合は，文字“X”が赤色で出力される（ような PostScript ファイルが生成される）ことになります。
 
-#### TeX の \special プリミティブ {#tex-special}
+### TeX の \special プリミティブ {#tex-special}
 
 \special プリミティブは以下のような単純な書式を持ちます。[^4]
 
@@ -74,7 +72,7 @@ EF09636F6C6F7220526564 : special1 9 'color Red' % special命令
 
 TeX 処理系は，\special{～} が実行[^5]されると，「“～”という special 命令を発行する」という情報を込めた特殊なオブジェクト（whatsit ノード）を現在の参照点に配置します。そして，そのオブジェクトを含むページが出力（shipout）された時に，そのページの DVI 命令列の中に実際に special 命令として現れることになります。
 
-#### special 命令の文字コード {#fda58d13}
+### special 命令の文字コード {#fda58d13}
 
 先述の通り \special の引数のトークン列は「文字列化して DVI の special 命令の引数として書き出される」のですが，その際に文字コードの扱いは以下のようになっています。
 
@@ -82,7 +80,7 @@ TeX 処理系は，\special{～} が実行[^5]されると，「“～”とい�
 - (u)pTeX において，和文文字は，エンジンの内部漢字コードでエンコードされたバイト列として書き出されます。ソースファイルの漢字コードとは無関係であることに注意してください。欧文文字の扱いは欧文 TeX と同じです。
 - XeTeX [^6]においては，文字列は常に UTF-8 でエンコードされたバイト列として書き出されます。やはりソースファイルの文字コードは無関係です。
 
-#### PDF 直接出力のときの \special プリミティブ {#j5504fc9}
+### PDF 直接出力のときの \special プリミティブ {#j5504fc9}
 
 \special プリミティブは DVI の special 命令を出力するためのものです。従って，PDF 出力モードの pdfTeX や LuaTeX では無意味であるのでサポートされていません。（\special を実行すると警告が出て無視されます。）
 
@@ -197,7 +195,7 @@ DVI 標準にない機能で，「複数の DVI ウェアでサポートされ�
 <!-- こうした拡張が進んだ結果，いまどきのユーザは各種の \special を（意図的にあるいは暗黙のうちに） 使うことによって「デバイス依存」な DVI ファイルを作りがちになっています。 -->
 <!-- しかし，これらの \special 命令を用いて作成した DVI ファイルは，その命令を正しく解釈できるデバイスドライバ以外で正しく印刷することができないことに注意が必要です。 -->
 
-### 主要な \special 命令 {#specials-set}
+## 主要な \special 命令 {#specials-set}
 
 ここでは重要な special 命令の使い方について解説します。
 
@@ -205,7 +203,7 @@ DVI 標準にない機能で，「複数の DVI ウェアでサポートされ�
 
 ※ special 命令の書式については，各開発者が勝手に決めているものなので，special の種類によって大きく異なっています。
 
-#### Papersize special {#papersize-specials}
+### Papersize special {#papersize-specials}
 
 サポート： dvips，(x)dvipdfmx，dviout
 
@@ -227,7 +225,7 @@ papersize=<横幅>,<縦幅>
 
 - 参照： [紙面サイズの指定 (1/2) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20101123/1290541806)
 
-#### psfile special {#psfile-specials}
+### psfile special {#psfile-specials}
 
 サポート： dvips，(x)dvipdfmx，dviout
 
@@ -255,7 +253,7 @@ EPS 画像ファイルを読み込みその場に配置します。
 
 - 参照： [ナントカBoxの話(3) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140704/1404425429)
 
-#### PostScript special {#ps-specials}
+### PostScript special {#ps-specials}
 
 [PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
 PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
@@ -280,7 +278,7 @@ PostScript specials を完全にサポートできるドライバの条件とし
 
 - 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
 
-#### HyperTeX specials {#hypertex-specials}
+### HyperTeX specials {#hypertex-specials}
 
 サポート： dvips，(x)dvipdfmx，dviout，xdvi
 
@@ -302,7 +300,7 @@ HTML ライクな書式でハイパーリンクを設置します。
 
 - 参考：[HyperTeX](/HyperTeX/)
 
-#### tpic specials {#tpic-specials}
+### tpic specials {#tpic-specials}
 
 サポート： dvips，(x)dvipdfmx，dviout，xdvi
 
@@ -323,7 +321,7 @@ ar 140 0 42 42 0 3.142
 
 - 参考：[tpic (pic)](/pic/#xda9ac26)
 
-#### Source special {#src-specials}
+### Source special {#src-specials}
 
 サポート： dviout，xdvi
 
@@ -337,7 +335,7 @@ src:<行番号> <ファイル名>
 
 現在では DVI ファイルではなく PDF ファイルを利用したプレビューが一般的となったため，原理的に DVI ビューアでしかサポートできない source special に代わって，[SyncTeX](/SyncTeX/) 機能が使われるようになっています。
 
-#### dvipdfmx の PDF special {#pdf-specials}
+### dvipdfmx の PDF special {#pdf-specials}
 
 サポート： (x)dvipdfmx
 
@@ -354,9 +352,90 @@ pdf:<名前> <引数> ...
 - ただし寸法値は TeX 言語と同様に 1.5cm や 20pt のように書く。
 - なぜか知らないが命令の別名が多く存在する。例えば，“pdf:annotation”・“pdf:annotate”・“pdf:annot”・“pdf:ann”は全て同じ命令である。
 
-以下の節では PDF special の一部について説明します。 <!-- これ以上章立てを深くできないので，どうしよう… -->
-
 ※ PDF special の書式表示の中で，\[ \] 内は省略可能であることを示します。（\[ \] 自体は書きません。）
+
+#### PDF specialに関する資料 {#pdf-specials-info}
+
+<!-- [Wic99] -->
+- Mark A. Wicks: DVIPDFM User's Manual. 1999.
+    - 元祖“DVIPDFM”のマニュアル。TeX Live では「texdoc dvipdfm」で開きます。
+        <!-- [Cho09] -->
+
+- Jin-Hwan Cho: DVI specials for PDF generation.
+    TUGboat, vol.30, no.1, 2009.
+    - TeX Live に含まれていて、「texdoc dvipdfmx-special」で開きます。
+        <!-- [Cho07] -->
+
+- Jin-Hwan Cho: Hacking DVI files: Birth of DVIasm.
+    TUGboat, vol.28, no.2, 2007.
+
+#### PDF specialの一覧 {#pdf-specials-list}
+
+括弧内に別名を示します。 <!-- 代表名は次の順で決めた。 --> <!-- 1. [Cho09][Cho07]で使われているもの --> <!-- 2. dvipdfmxの実装の関数名で使われているもの -->
+
+<!-- Wic99§4.1-4.3; Cho09§3 -->
+- pdf:ann (annotation, annotate, annot)
+- pdf:bann (bannot, beginann)
+- pdf:eann (eannot, endann)
+    <!-- Wic99§4.4-4.6 -->
+
+- pdf:link
+- pdf:nolink
+- pdf:dest (destination)
+    <!-- Wic99§4.7-4.8 -->
+
+- pdf:docinfo
+- pdf:docview
+- pdf:names
+    <!-- Wic99§4.9,4.12; Cho09§2 -->
+
+- pdf:obj (object)
+- pdf:stream
+- pdf:fstream
+- pdf:put
+- pdf:close
+    <!-- Wic99§4.10; Cho09§4 -->
+
+- pdf:out (outline)
+    <!-- Wic99§4.11 -->
+
+- pdf:pagesize
+    <!-- Wic99§4.13 -->
+
+- pdf:bead (thread)
+- pdf:article (art)
+    <!-- Wic99§5,8; Cho09§5 XObjects -->
+
+- pdf:image (img, epdf)
+- pdf:bxobj (bform, beginxobj)
+- pdf:exobj (eform, endxobj)
+- pdf:uxobj (usexobj)
+    <!-- Wic99§6 -->
+
+- pdf:btrans (begintransform, begintrans, bt)
+- pdf:etrans (endtransform, endtrans, et)
+    <!-- Wic99§7 -->
+
+- pdf:bcolor (begincolor, bc, begingray, bgray, bg)
+- pdf:scolor (setcolor, sc)
+- pdf:ecolor (endcolor, ec, endgray, egray, eg)
+- pdf:bgcolor (bgc, bbc, bbg)
+    <!-- Wic99§9; Cho09§6 -->
+
+- pdf:content
+- pdf:bcontent
+- pdf:econtent
+- pdf:literal
+- pdf:code
+- pdf:bop
+- pdf:eop
+    <!-- その他大勢 -->
+
+- pdf:mapline
+- pdf:mapfile
+- pdf:minorversion
+- pdf:encrypt
+- pdf:tounicode
 
 #### pdf:minorversion {#pdf-minorversion}
 
@@ -377,13 +456,13 @@ pdf:pagesize [width <横幅(寸法)>] [height <縦幅(寸法)>]
 
 ※papersize special と異なり，パラメタの寸法値には“true付き”と“true無し”のどちらの単位も指定可能で，それは本来の意味を保ちます。
 
-### special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
+## special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
 
 <!-- こちらは実例を紹介する。 -->
 
 ここでは，DVI 標準の範囲ではできない様々な機能について，実際に special 命令を利用して実装した例を紹介します。
 
-#### ページ設定（用紙サイズなど） {#specials-dvipdfmx-pagesettings}
+### ページ設定（用紙サイズなど） {#specials-dvipdfmx-pagesettings}
 
 <!-- FIXME -->
 
@@ -413,7 +492,7 @@ pagesize は文書の途中でも使えますが，これが実行されるタ�
 のように使います。
 [jsclasses](/jsclasses/) の papersize オプションは，DVI ファイルに papersize special を挿入することで用紙サイズを規定しています。
 
-#### ファイルを添付 {#specials-dvipdfmx-annotate}
+### ファイルを添付 {#specials-dvipdfmx-annotate}
 
 サポート： (x)dvipdfmx
 
@@ -441,7 +520,7 @@ PDFのアノーテーション（注釈）機能を利用してファイルを�
 出来上がった PDF には小さなクリップが表示され，その上で右クリックするとメニューから添付ファイルを保存できるようになるはずです（ビューアによって操作は異なります）。
 このようにして TeX のソースを埋め込んでおくこともできます。
 
-#### XMP メタデータ {#c01ffb78}
+### XMP メタデータ {#c01ffb78}
 
 サポート： (x)dvipdfmx
 
@@ -459,7 +538,7 @@ XMP メタデータは PDF など様々なファイルに添付できる XML 形
 
 （現在のところメタデータは圧縮されます）
 
-#### PDF に描画・透かしを入れる {#specials-dvipdfmx-drawing}
+### PDF に描画・透かしを入れる {#specials-dvipdfmx-drawing}
 
 サポート： (x)dvipdfmx
 
@@ -505,7 +584,7 @@ pdf:put の部分では resources で識別される辞書オブジェクト（�
 
 上の例ではページに直接 Sample という文字を書き込みましたが，アノーテーションを使ってウォーターマークを入れることもできます。
 
-#### 描画物を切り取り貼り付ける {#jc3fc76f}
+### 描画物を切り取り貼り付ける {#jc3fc76f}
 
 サポート： (x)dvipdfmx
 
