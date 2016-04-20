@@ -184,7 +184,7 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 
 ## 関連リンク {#g42d5edd}
 
-- [TeXlipse homepage - LaTeX for Eclipse](http://texlipse.sourceforge.net/)
+- TwitterSearch:TeXlipse, TwitterSearch.en:TeXlipse, TwitterSearch.ja:TeXlipse
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
 - [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
