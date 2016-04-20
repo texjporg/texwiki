@@ -264,7 +264,7 @@ bregonig.dll Ver.3.06 with Onigmo 5.15.0
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 \*桁またはStep(Begin,End)でコンマ区切り
 
 タイプ別設定の正規表現キーワードタブをクリックします．
-$ と $，$$ と $$ の間を色分けするように正規表現キーワードを設定します．
+$ と $，$$ と $$ の間を色分けするように正規表現キーワードを /\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k に設定します．
 $ と $，$$ と $$ の間に \\$ のある場合も色分けします．
 
 > <span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>タイプ別設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
