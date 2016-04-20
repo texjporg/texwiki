@@ -8,7 +8,7 @@ pukiwiki: "サクラエディタ"
 
 # サクラエディタ
 
-## [サクラエディタ](http://sakura-editor.sourceforge.net/) --&gt; \[設定(O)\] &gt; \[タイプ別設定(Y)...\] &gt; \[ウィンドウ\] の文字コードで UTF-8 を選択する {#a8762a1e}
+## [サクラエディタ](http://sakura-editor.sourceforge.net/) {#a8762a1e}
 
 サクラエディタは国産のテキストエディタです．
 サクラエディタは
