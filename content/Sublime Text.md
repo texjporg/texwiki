@@ -80,11 +80,14 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](https://tekonomist.wordpress.com/tag/latex/)
 - [SublimeText3+LaTeXTools+TeXLive2015でWindowsなplatex執筆環境構築](http://yanoshi.hatenablog.jp/entry/2016/01/21/165454)
+- [Sublime Text 3を試してみた(Texのコンパイル用）](http://himaneko8lynx.blog.fc2.com/blog-entry-479.html)
 - [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/wichy/13c970563a2f5a489c9d)
 
 ### インストール {#i186fdb3}
 
-メニューの \[Preferences\]-\[Package Control\] を選択します。
+メニューの \[Preferences\] &gt; \[Package Control\] を選択します。
+\[Package Control\] が存在しない場合は [Installation - Package Control](https://packagecontrol.io/installation) を参照して
+Package Control をインストールします。
 Package Control: Install Package を選択します。
 LaTeXTools を入力して LaTeXTools を選択します。
 
@@ -92,62 +95,41 @@ LaTeXTools を入力して LaTeXTools を選択します。
 
 #### ビルドコマンドの設定 {#jbbbbc43}
 
-Windows の場合は [MiKTeX](/MiKTeX/) と [TeX Live](</TeX Live/>) に対応しています。
+メニューの \[Preferences\] &gt; \[Browse Packages...\] を選択します。
 
-メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
+User/LaTeXTools.sublime-settings を編集します。
+User/LaTeXTools.sublime-settings が存在しない場合は
+\[Preferences\] &gt; \[Package Settings\] &gt; \[LaTeXTools\] &gt; \[Settings - User\] を選択すると
 
-LaTeXTools/builders/traditionalBuilder.py を編集します。
+> You do not currently have a personalized<br>
+> LaTeXTools.sublime-setting file.<br>
+>
+> <br>
+>
+> Create a copy of the default settings file in your<br>
+> User directory?<br>
+
+と表示されるので \[OK\] をクリックします。
+
+User/LaTeXTools.sublime-settings の中身の
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
-					"-interaction=nonstopmode", "-synctex=1"]
+	"builder_settings" : {
 ```
 
-を
+の次の行に
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+		"command" : ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
 				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
-				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
+				"-f", "-%E", "-norc", "-gg", "-pdfdvi"],
 ```
 
-に変更します。
-
-メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
-
-User/LaTeXTools.sublime-settings を編集します。
-
-TeX Live を使用する場合は
-
-```
-		"distro" : "miktex",
-```
-
-を
-
-```
-		"distro" : "texlive",
-```
-
-に変更します。
-
-User/LaTeXTools.sublime-settings を編集します。
-
-```
-		"sumatra": "",
-```
-
-を
-
-```
-		"sumatra": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
-```
-
-に変更します。
+を追加します。
 
 #### SumatraPDF のインストール {#l6a7a293}
 
@@ -162,28 +144,41 @@ PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示�
 
 #### ビルドコマンドの設定 {#x87217d3}
 
-メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
+メニューの \[Preferences\] &gt; \[Browse Packages...\] を選択します。
 
-LaTeXTools/builders/traditionalBuilder.py を編集します。
+User/LaTeXTools.sublime-settings を編集します。
+User/LaTeXTools.sublime-settings が存在しない場合は
+\[Preferences\] &gt; \[Package Settings\] &gt; \[LaTeXTools\] &gt; \[Settings - User\] を選択すると
+
+> You do not currently have a personalized<br>
+> LaTeXTools.sublime-setting file.<br>
+>
+> <br>
+>
+> Create a copy of the default settings file in your<br>
+> User directory?<br>
+
+と表示されるので \[OK\] をクリックします。
+
+User/LaTeXTools.sublime-settings の中身の
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
-					"-interaction=nonstopmode", "-synctex=1"]
+	"builder_settings" : {
 ```
 
-を
+の次の行に
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+		"command" : ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
 				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
-				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
+				"-f", "-%E", "-norc", "-gg", "-pdfdvi"],
 ```
 
-に変更します。
+を追加します。
 
 #### Skim のインストール {#uf11e28c}
 
@@ -198,28 +193,41 @@ PDF ファイルが作成されると Skim で PDF ファイルが表示され�
 
 #### ビルドコマンドの設定 {#z0e9fdec}
 
-メニューの \[Preferences\]-\[Browse Packages...\] を選択します。
+メニューの \[Preferences\] &gt; \[Browse Packages...\] を選択します。
 
-LaTeXTools/builders/traditionalBuilder.py を編集します。
+User/LaTeXTools.sublime-settings を編集します。
+User/LaTeXTools.sublime-settings が存在しない場合は
+\[Preferences\] &gt; \[Package Settings\] &gt; \[LaTeXTools\] &gt; \[Settings - User\] を選択すると
+
+> You do not currently have a personalized<br>
+> LaTeXTools.sublime-setting file.<br>
+>
+> <br>
+>
+> Create a copy of the default settings file in your<br>
+> User directory?<br>
+
+と表示されるので \[OK\] をクリックします。
+
+User/LaTeXTools.sublime-settings の中身の
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd", "-e", "-f", "-%E",
-					"-interaction=nonstopmode", "-synctex=1"]
+	"builder_settings" : {
 ```
 
-を
+の次の行に
 
 ```
-DEFAULT_COMMAND_LATEXMK = ["latexmk", "-cd",
+		"command" : ["latexmk", "-cd",
 				"-e", "$latex = 'uplatex %O -interaction=nonstopmode -synctex=1 %S'",
 				"-e", "$biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B'",
 				"-e", "$bibtex = 'upbibtex %O %B'",
 				"-e", "$makeindex = 'upmendex %O -o %D %S'",
 				"-e", "$dvipdf = 'dvipdfmx %O -o %D %S'",
-				"-f", "-%E", "-norc", "-gg", "-pdfdvi"]
+				"-f", "-%E", "-norc", "-gg", "-pdfdvi"],
 ```
 
-に変更します。
+を追加します。
 
 #### Evince のインストール {#q24adbfa}
 
@@ -238,7 +246,7 @@ PDF ファイルが作成されると Evince で PDF ファイルが表示され
 
 ### インストール {#b204bf82}
 
-メニューの \[Preferences\]-\[Package Control\] を選択します。
+メニューの \[Preferences\] &gt; \[Package Control\] を選択します。
 Package Control: Install Package を選択します。
 LaTeX-Plus を入力して LaTeX-Plus を選択します。
 
