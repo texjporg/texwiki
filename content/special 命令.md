@@ -38,7 +38,7 @@ DVI ファイルは「“A”の文字を出力する」「参照点を右に 1p
 
 そして TeX 言語では，この「DVI の special 命令」を発行するための機能として，\special プリミティブが用意されています。
 
-今日の LaTeX では，「色を付ける」機能は (x)color パッケージ、ハイパーリンクを作る機能は [hyperref](/hyperref/) パッケージで提供されていますが，これらの機能の実装には special 命令（\special プリミティブ）が利用されています。
+今日の LaTeX では，「色を付ける」機能は (x)color パッケージ，ハイパーリンクを作る機能は [hyperref](/hyperref/) パッケージで提供されていますが，これらの機能の実装には special 命令（\special プリミティブ）が利用されています。
 
 ### DVI の special 命令 {#dvi-special}
 
@@ -253,7 +253,36 @@ EPS 画像ファイルを読み込みその場に配置します。
 
 - 参照： [ナントカBoxの話(3) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140704/1404425429)
 
+### color special {#color-specials}
+
+サポート： dvips，(x)dvipdfmx，dviout
+
+```
+color <色指定>
+color push <色指定>
+color pop
+background <色指定>
+```
+
+色を指定します。元々は dvips で規定されたもので，他の DVI ウェアでも一部の規定がサポートされています。
+
+“background &lt;色指定>”は背景色を，“color &lt;色指定>”は描画色を指定します。描画色は基本的には TeX の出力（テキストや罫）に対するものですが，通常は，PostScript や PDF の描画状態にも反映されます。
+
+TeX の“局所的な代入”と同様の仕組の“局所的な色指定”の実装を容易にするため，“色スタック”が用意されています。“color push”と“color pop”はこの色スタックを操作するものです。色スタックが空でない場合は，そのトップにある色が実際の描画色となります。
+
+- “Black”や“Red”などの，予め定義された名前。dvips では，単にその名前を実行するものと解釈されます。（“/Red {0 1 1 0 setcmykcolor} bind ref”のように定義されているわけです。）
+- 色モデルとパラメタによる定義。以下のものがあります。dvips では，“rgb 0 0.5 0”を“0 0.5 0 TeXrgbcolor”のように解釈します。
+    - rgb &lt;R> &lt;G> &lt;B>
+    - hsb &lt;H> &lt;S> &lt;B>
+    - cmyk &lt;C> &lt;M> &lt;Y> &lt;K>
+    - gray &lt;G>
+- 「" &lt;PostScriptコード>」で任意の“色を設定するためのコード”が指定できます。
+
 ### PostScript special {#ps-specials}
+
+<!-- FIXME -->
+
+サポート： dvips，(x)dvipdfmx，dviout
 
 [PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
 PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
@@ -363,7 +392,7 @@ pdf:<名前> <引数> ...
 
 - Jin-Hwan Cho: DVI specials for PDF generation.
     TUGboat, vol.30, no.1, 2009.
-    - TeX Live に含まれていて、「texdoc dvipdfmx-special」で開きます。
+    - TeX Live に含まれていて，「texdoc dvipdfmx-special」で開きます。
         <!-- [Cho07] -->
 
 - Jin-Hwan Cho: Hacking DVI files: Birth of DVIasm.
@@ -456,6 +485,16 @@ pdf:pagesize [width <横幅(寸法)>] [height <縦幅(寸法)>]
 
 ※papersize special と異なり，パラメタの寸法値には“true付き”と“true無し”のどちらの単位も指定可能で，それは本来の意味を保ちます。
 
+#### pdf:tounicode {#pdf-tounicode}
+
+```
+pdf:tounicode <CMap名(名前)>
+```
+
+PDF special 中の特定の引数の文字列（主に PDF の文書情報を表す文字列）について，文字コード変換を指示します。専ら，(u)pTeX エンジンを利用する場合に利用されます。
+
+PDF の文書情報の Unicode 文字列は UTF-16BE で符号化されたバイト列で与える必要がありますが，(u)pTeX が出力する special 命令の文字列は“エンジンの内部漢字コード”（SJIS，EUC，UTF-8 の何れか）で符号化されているため，正常に解釈させるためには文字コード変換が必要になります。
+
 ## special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
 
 <!-- こちらは実例を紹介する。 -->
@@ -526,7 +565,7 @@ PDFのアノーテーション（注釈）機能を利用してファイルを�
 
 XMP メタデータは PDF など様々なファイルに添付できる XML 形式のメタデータです。
 これも pdf:fstream を使います。
-例えば、test.xmp というファイル名で XMP メタデータを用意したとすると，以下のコードでそれを添付できます。
+例えば，test.xmp というファイル名で XMP メタデータを用意したとすると，以下のコードでそれを添付できます。
 
 ```
  \special{pdf:fstream @xmp (test.xmp) <<
