@@ -309,6 +309,6 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 - [texstudioのプレビューに日本語が表示されない件](http://cocu.hatenablog.com/entry/2013/03/27/113754)
 - [TeXstudio による LaTeX 文書の最終検査](http://blog.fujioizumi.verse.jp/?eid=135)
 - [日々徒然思うこと TeX](http://anastashia.blog.shinobi.jp/Category/5/)
-- [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](http://osdn.jp/magazine/12/07/16/0613248)
+- [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](https://osdn.jp/magazine/12/07/16/0613248)
 
 [^1]: [Wikipedia.ja:フォーク\_(ソフトウェア開発)](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF_%28%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%29)
