@@ -63,13 +63,18 @@ C:.
 
 #### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
 
-DebianやUbuntuのリポジトリから、LuaTeX-jaをインストールするには、texlive-lang-japaneseパッケージまたはtexlive-lang-cjkパッケージをインストールします。ただし、必ずしも最新版ではなくタイムラグがあることに注意。
+Debian や Ubuntu のリポジトリから、LuaTeX-ja をインストールするには、
+TeX Live 2014/Debian 以降の場合は texlive-lang-japanese パッケージ
+TeX Live 2013/Debian の場合は texlive-lang-cjk パッケージをインストールします。
+ただし、必ずしも最新版ではなくタイムラグがあることに注意。
+
+TeX Live 2014/Debian 以降の場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese
 ```
 
-または
+TeX Live 2013/Debian の場合は
 
 ```
 $ sudo apt-get install texlive-lang-cjk
@@ -77,7 +82,7 @@ $ sudo apt-get install texlive-lang-cjk
 
 #### MacPortsを利用してインストールする場合 {#k02c7aab}
 
-LuaTeX-jaはtexlive-lang-japaneseというPortに含まれています。
+LuaTeX-ja は texlive-lang-japanese という Port に含まれています。
 
 ```
 $ sudo port install texlive-lang-japanese -doc
@@ -89,6 +94,11 @@ $ sudo port install texlive-lang-japanese -doc
 
 現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．
 
+- TwitterSearch:LuaTeX 遅い, TwitterSearch:LuaLaTeX 遅い
+- TwitterSearch:LuaTeX 遅, TwitterSearch:LuaLaTeX 遅
+- [https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459](https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459)
+- [luatex でPDFを作れるようになるまで](http://sqr.hateblo.jp/entry/2014/04/20/151523)
+- [定理環境の修飾 mdframed.sty](http://ubutun.blogspot.jp/2013/08/mdframedsty.html)
 - [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
 - [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
 
@@ -214,13 +224,14 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 ### 関連リンク {#sf395095}
 
+- TwitterSearch:LuaTeX-ja, TwitterSearch.en:LuaTeX-ja, TwitterSearch.ja:LuaTeX-ja
+- TwitterSearch:luatexja, TwitterSearch.en:luatexja, TwitterSearch.ja:luatexja
 - [「LuaTeX-ja」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX-ja)
+- [LuaTeX-ja の検索結果 - 0番染色体](http://0-chromosome.hatenablog.jp/search?q=LuaTeX-ja)
 - [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
 - [LuaTeX-ja を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=LuaTeX-ja)
 - [LuaTex-ja : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LuaTex-ja)
-- [LuaLaTeX をとにかく使えるようにする](http://exoterisch.hatenablog.com/entry/2014/09/02/200558)
-- [LuaLaTeX をとにかく使えるようにする 〜補足篇〜](http://exoterisch.hatenablog.com/entry/2014/09/07/081927)
-- [LuaTeX-jaでフォント指定するときのメモ](http://rinx.tk/blog/2014/05/13/luatex-fontspec/)
+- [LuaTeX-ja に関する覚え書き](http://text.baldanders.info/remark/2015/luatex-ja/)
 - [RStudio(Windows)でSweave(.Rnw)を使って一発でpdf作りたい](http://d.hatena.ne.jp/teramonagi/20140203/1391429752)
 - [LuaLaTeXやXeLaTeXって奴を使ってみたいんです、私](http://d.hatena.ne.jp/teramonagi/20140129/1390994315)
 - [電通大生のためのLuaLaTeX -UEC Advent Calendar 2013-](http://xaro.hatenablog.jp/entry/2013/12/02/075603)
@@ -238,11 +249,11 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 #### リリース情報 {#g1f2f88f}
 
-- [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags)
+- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/tags)
 
 #### ChangeLog {#ka55de08}
 
-- [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/)
-    - [http://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits](http://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits)
+- [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/)
+    - [https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits](https://osdn.jp/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)
