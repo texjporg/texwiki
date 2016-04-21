@@ -323,7 +323,7 @@ Source editor:
 
 ## スペルチェック {#d14df590}
 
-[Aspell](/Aspell/) を使います．
+[Hunspell](/Hunspell/) を使います．
 
 ## 設定に関するリンク {#pd1c5cfc}
 
