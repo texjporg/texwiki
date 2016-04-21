@@ -278,6 +278,8 @@ TeX の“局所的な代入”と同様の仕組の“局所的な色指定”�
     - gray &lt;G>
 - 「" &lt;PostScriptコード>」で任意の“色を設定するためのコード”が指定できます。
 
+※(x)color パッケージについて，dvips 等のいくつかのドライバは color special を利用しています。（dvipdfmx 用ドライバは PDF special を利用。）
+
 ### PostScript special {#ps-specials}
 
 <!-- FIXME -->
@@ -474,6 +476,8 @@ pdf:minorversion <整数>
 
 出力 PDF 文書のマイナーバージョン（1.x の x の部分）を指定します。指定可能な値の範囲は 3～7 です。pdfTeX の \pdfminorversion に相当するものです。
 
+[bxpdfver](https://www.ctan.org/pkg/bxpdfver) パッケージはこの special 命令を利用しています。
+
 #### pdf:pagesize {#pdf-pagesize}
 
 ```
@@ -494,6 +498,32 @@ pdf:tounicode <CMap名(名前)>
 PDF special 中の特定の引数の文字列（主に PDF の文書情報を表す文字列）について，文字コード変換を指示します。専ら，(u)pTeX エンジンを利用する場合に利用されます。
 
 PDF の文書情報の Unicode 文字列は UTF-16BE で符号化されたバイト列で与える必要がありますが，(u)pTeX が出力する special 命令の文字列は“エンジンの内部漢字コード”（SJIS，EUC，UTF-8 の何れか）で符号化されているため，正常に解釈させるためには文字コード変換が必要になります。
+pdf:tounicode が実行されると，dvipdfmx は引数に指定した名前の CMap ファイルを読み込みます。そして以降に現れる special（の特定の引数）について，そこで定義されたマッピングを用いて元の文字コードから UTF-16BE への変換を行います。
+
+具体的にどのような文字列が変換の対象になるのかは，以下の記事で説明されています。
+
+- [(x)dvipdfmx が文書情報を Unicode する件に関するメモ(3)](http://d.hatena.ne.jp/zrbabbler/20160220/1455915826)
+
+[PXjahyper](https://www.ctan.org/pkg/pxjahyper) パッケージはこの special 命令を利用しています。
+
+### PDF描画命令の書き出し {#pdf-content}
+
+```
+pdf:content <命令列>
+pdf:literal <命令列>
+pdf:code <命令列>
+```
+
+dvipdfmx がページの内容として生成する PDF 描画命令列の中に，&lt;命令列> として指定した文字列をそのまま書き出します。ただし，その前後に調整のための命令も挿入し，その方法が special の種類により異なります。
+
+- pdf:content は &lt;命令列> を，「参照点が原点であり，かつ局所化された状態」で実行します。
+    - つまり実際には“q &lt;CM> &lt;命令列> Q”という命令列を書き出します。
+- pdf:literal は &lt;命令列> を，「参照点が原点であるが，局所化されていない状態」で実行します。
+    - つまり実際には“&lt;CM> &lt;命令列> &lt;CM'>”という命令列を書き出します。
+- pdf:code は全く調整を行わず単に &lt;命令列> を実行します。
+    - つまり本当に &lt;命令列> だけを書き出します。
+
+ここで，&lt;CM> は「現在の参照点を原点に平行移動する座標返還（cm 演算子）」，&lt;CM'> はその逆変換を表します。
 
 ## special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
 
@@ -507,29 +537,43 @@ PDF の文書情報の Unicode 文字列は UTF-16BE で符号化されたバイ
 
 サポート： dvips，(x)dvipdfmx，dviout
 
-landscape や papersize などの文書全体に影響するものは PDF への変換前にスキャンされ実行されます。
+LaTeX の文書クラスのオプション（a5paper 等）で指定した（レイアウト用の）用紙サイズを出力に反映させるには，通常は次のようなコードが使われます。
 
 ```
-\special{landscape}
+\AtBeginDvi{\special{papersize=\the\paperwidtgh,\the\paperheight}}
 ```
 
-は用紙を横置きに，
+例えば，[jsarticle](/jsclasses/) クラスの papersize オプションおよび geometry パッケージもこの方法を用いています。
+
+しかし，これは先頭ページにだけ special 命令を出力しているので，途中で用紙サイズ（\paperwidth／\paperheight）を変更する場合には対応できません。また，dviselect などのツールを用いて DVI のページをシャッフルする場合にも問題が起こりえます。こういう場合は，atbegshi や bophook などのパッケージを利用して，全てのページに special 命令を出す必要があります。ここでは bophook を利用する例を示します。
 
 ```
-\special{papersize=210mm,297mm}
+% プレアンブル
+\usepackage{bophook}
+\AtBeginPage{\special{papersize=\the\paperwidtgh,\the\paperheight}}
 ```
 
-は用紙サイズを 210mm × 297mm に設定します。
+### TeXのボックスを直接ページとして出力する {#occcb92b}
 
-pagesize は文書の途中でも使えますが，これが実行されるタイミングによっては予期せぬ結果となります。
-特にページがシャッフルされる時は意図したようにはなりません。
+サポート： (x)dvipdfmx
+
+いわゆる「出力ルーチン」を介さずに，\shipout を直接使ってボックスをページとして出力します。この時に pdf:pagesize special を利用して適切なページ設定を行います。
 
 ```
-\special{pdf:pagesize width 210mm height 297mm}
+% upLaTeX 文書; 文字コードは UTF-8
+\documentclass{article}
+\begin{document}
+\setbox0\hbox{☃}% 出力したいボックス
+\shipout\hbox{%
+  \special{pdf:pagesize
+      width \the\wd0 \space
+      height \the\dimexpr\ht0+\dp0\relax\space
+      xoffset 0in yoffset 0in}%
+  \box0}%
+\end{document}
 ```
 
-のように使います。
-[jsclasses](/jsclasses/) の papersize オプションは，DVI ファイルに papersize special を挿入することで用紙サイズを規定しています。
+xoffset，yoffset を指定して「例の 1 インチ」を消しているのがポイントです。 <!-- まあ，\hoffset=-1in \voffset=-1in でも同じことができるけど。 -->
 
 ### ファイルを添付 {#specials-dvipdfmx-annotate}
 
