@@ -20,7 +20,7 @@ W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html
 
 ## インストール {#ib4afbe8}
 
-インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，コマンド プロンプトで「簡易インストーラ」を動かす方法があります．
+インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，Windows PowerShell あるいはコマンド プロンプトで「簡易インストーラ」を動かす方法があります．
 以下で，それぞれの方法を説明します．
 初めての方は TeX インストーラ 3 を使う方をおすすめします．
 
@@ -202,7 +202,7 @@ W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイ
 自動判定を無効にし，文字コードを指定するには次のようにします．
 
 ```
- platex --no-guess-input-enc --kanji=utf8 sample.tex
+platex --no-guess-input-enc --kanji=utf8 sample.tex
 ```
 
 常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は，[texmf.cnf ファイル](</texmf.cnf ファイル/>)を参照．）
@@ -384,67 +384,7 @@ command_line_encoding.dvips =
 
 ### 過去の W32TeX の仕様変更 {#changelog-old}
 
-- \[2013/04/08\]
-    - 4月8日付の W32TeX から share/texmf なるディレクトリ名が share/texmf-dist に変更されています。これは，TeX Live 2013 で texmf と texmf-dist が texmf-dist に統一されたことにあわせたものです。
-- \[2012/11/25\]
-    - XeTeX が再び Windows 2000 でも動くようになりました。
-- \[2012/10/26\]
-    - XeTeX は Windows 2000 以前の OS ではサポートされなくなりました。
-- \[2012/10/15\]
-    - Adobe Reader XI で pdfdde, pdfopen, pdfclose を使用する場合は 2012/10/15 以降の W32TeX にしてください。
-- \[2012/08/21\]
-    - 2012/08/20 までの dvipdfmx, xdvipdfmx は SEAC bug が存在するので 2012/08/21 以降の W32TeX にしてください。
-- \[2011/12/24\]
-    - upovf2ovp.exe と upovp2ovf.exe は無くなりました。更新された wovf2ovp.exe と wovp2ovf.exe が upTeX もサポートするようになっています。
-- \[2011/11/23\]
-    - updvi2tty.exe は無くなりました。更新された dvi2tty.exe が upTeX の dvi もサポートするようになっています。
-- \[2011/11/06\]
-    - updvipdfmx が無くなりました。(e-)upTeX でも dvipdfmx を使うようにしてください。hyperref でしおりを作成する場合は
-
-        ```
-        \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
-        ```
-
-        または
-
-        ```
-        \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
-        ```
-
-        が必要になりました。PXjahyper パッケージ を使用しても OK です。詳細は[しおり（bookmark）つきのpdf文書作成](/hyperref/#fe7cad10)を参照してください。
-
-- \[2011/10/22\]
-    - euplatex が無くなりました。uplatex は uptex ではなくて euptex の上で動くようになりました。
-- \[2011/05/25\]
-    - eplatex が無くなりました。platex は ptex ではなくて eptex の上で動くようになりました。
-- \[2011/03/21\]
-    - ptex 関係において [ptexenc](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するようになりました。デフォルトで自動判別します。自動判別せずに手動で直接文字コードを指定する場合は
-
-        ```
-        platex -no-guess-input-enc -kanji=utf8 hoge.tex
-        euplatex -no-guess-input-enc -kanji=utf8 hoge.tex
-        ```
-
-        のように指定します。
-
-- \[2011/03/06\]
-    - ptex 関係において nkf を用いて自動判別する機能が追加されました。デフォルトで自動判別します。
-- \[2010/08/14\]
-    - pmpost.exe は pmetapost.exe に変更されました。 → 2011/12/23 に pmetapost.exe は元の名前 pmpost.exe に戻されました。
-    - upmpost.exe は upmetapost.exe に変更されました。 → 2011/12/23 に upmetapost.exe は元の名前 upmpost.exe に戻されました。
-- \[2010/05/06\]
-    - dvipsk.exe は dvips.exe に統合されました。
-- \[2009/07/20\]
-    - jbibtex.exe は pbibtex.exe に変更されました。([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))（2010/04/29 以降のものを使用してください → pbibtexの異常終了 ([forum:442](https://okumuralab.org/tex/mod/forum/discuss.php?d=442))）
-    - upjbibtex.exe は upbibtex.exe に変更されました。
-    - jmpost.exe は pmpost.exe に変更されました。
-    - upjmpost.exe は upmpost.exe に変更されました。
-- \[2007/08/01\]
-    - 7月31日付の W32TeX から $TEXMF/ptex/ ディレクトリが無くなったので pLaTeX のスタイルファイルは $TEXMFLOCAL/tex/platex/ 下のフォルダ（ディレクトリ）に移動するか，新規に入れると良いでしょう。
-- \[2004/05/10\]
-    - バージョンが 7.5.3 になって fmt ファイルの置き場所が変わったようです。上書きインストールする場合は $TEXMF/web2c// フォルダ（ディレクトリ）以下を削除してから行ってください。
-- \[2004/02/11\]
-    - 新しい [TDS](</TeX のディレクトリ構成/>) (<strong>T</strong>eX <strong>D</strong>irectory <strong>S</strong>tructure) に準拠した W32TeX がそろそろミラーサイトに出始めているようです。ディレクトリ構造が変わっていますので，古い $TEXMF/ を削除あるいは名前変更してからインストールしてください。
+[古い情報](</古い情報/#w32tex-changelog-old>) を参照してください．
 
 ### W32TeX のダウンロードファイルの一覧 {#filelist}
 
