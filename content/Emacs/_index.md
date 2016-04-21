@@ -30,7 +30,7 @@ GNU, GNU/Linux は当然として，BSD, OS X, Windows, Solaris もサポート�
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](http://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
 
 ### ダウンロード {#m56139cf}
 
@@ -385,7 +385,7 @@ Source editor:
 ## 使い方 {#e776cf5f}
 
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
-- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](http://osdn.jp/magazine/09/04/06/1138226)
+- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://osdn.jp/magazine/09/04/06/1138226)
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
