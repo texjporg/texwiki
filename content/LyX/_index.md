@@ -113,7 +113,3 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
     - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
 
 <!-- **派生版 [#h5bb137d] -->
-<!--  -->
-<!-- -[[LyXWinInstaller:https://sourceforge.net/projects/lyxwininstaller/]] -->
-<!-- -[[LyX-JP プロジェクト日本語トップページ - OSDN:http://osdn.jp/projects/jalyx/]] -->
-<!-- -[[Project Web of LyX-JP on OSDN Web space:http://jalyx.osdn.jp/]] -->
