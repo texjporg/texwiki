@@ -49,4 +49,4 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 
 ### 関連リンク {#vbe438a4}
 
-- [PS_View 日本語情報トップページ](http://osdn.jp/projects/sfnet_psview/)
+- TwitterSearch.ja:PS_View
