@@ -236,7 +236,7 @@ psfile=<ファイル名> [hscale=<横拡大率>] [vscale=<縦拡大率>
   [rhi=<幅>] [rwi=<高さ>]
 ```
 
-（\[ \] は省略可能であることを示し。\[ \] 自体は書かない。）
+（\[ \] は省略可能であることを示す。\[ \] 自体は書かない。）
 
 EPS 画像ファイルを読み込みその場に配置します。
 
@@ -249,7 +249,7 @@ EPS 画像ファイルを読み込みその場に配置します。
 
 ※多くのドライバにおいて，graphicx パッケージの機能で EPS 画像を読み込む時には psfile special が用いられます。
 
-※かつては dvips 意外にも様々な「DVI→PS変換ソフト」が存在し，それぞれが異なる形式の EPS 画像読込の special をサポートしていました。dvips では，互換性のためこれらの一部（“epsfile=...”，“postscriptbox=...”）をサポートしています。
+※かつては dvips 以外にも様々な DVI→PS 変換用の DVI ウェアが存在し，それぞれが異なる形式の EPS 画像読込の special をサポートしていました。dvips では，互換性のためこれらの一部（“epsfile=...”，“postscriptbox...”）をサポートしています。
 
 - 参照： [ナントカBoxの話(3) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140704/1404425429)
 
@@ -264,14 +264,16 @@ color pop
 background <色指定>
 ```
 
-色を指定します。元々は dvips で規定されたもので，他の DVI ウェアでも一部の規定がサポートされています。
+色を指定します。元々は dvips で規定されたもので，他の DVI ウェアでも一部の仕様がサポートされています。
 
-“background &lt;色指定>”は背景色を，“color &lt;色指定>”は描画色を指定します。描画色は基本的には TeX の出力（テキストや罫）に対するものですが，通常は，PostScript や PDF の描画状態にも反映されます。
+“background &lt;色指定>”は背景色を，“color &lt;色指定>”は描画色を指定します。描画色は仕様的には TeX の出力（テキストや罫）に対するものですが，通常は，PostScript や PDF の描画状態にも反映されます。
 
 TeX の“局所的な代入”と同様の仕組の“局所的な色指定”の実装を容易にするため，“色スタック”が用意されています。“color push”と“color pop”はこの色スタックを操作するものです。色スタックが空でない場合は，そのトップにある色が実際の描画色となります。
 
-- “Black”や“Red”などの，予め定義された名前。dvips では，単にその名前を実行するものと解釈されます。（“/Red {0 1 1 0 setcmykcolor} bind ref”のように定義されているわけです。）
-- 色モデルとパラメタによる定義。以下のものがあります。dvips では，“rgb 0 0.5 0”を“0 0.5 0 TeXrgbcolor”のように解釈します。
+color special の引数の &lt;色指定> の書式は次の通りです。
+
+- “Black”や“Red”などの，予め定義された名前。dvips では，単にその名前を実行するものと解釈されます。（予め “/Red {0 1 1 0 setcmykcolor} bind ref”のように定義されているわけです。）
+- 色モデルとパラメタによる定義。以下のものがあります。dvips では，“rgb 0 0.5 0”を“0 0.5 0 TeXrgbcolor”のように解釈します。（TeXrgbcolor は予め定義されたマクロ。）
     - rgb &lt;R> &lt;G> &lt;B>
     - hsb &lt;H> &lt;S> &lt;B>
     - cmyk &lt;C> &lt;M> &lt;Y> &lt;K>
@@ -286,28 +288,41 @@ TeX の“局所的な代入”と同様の仕組の“局所的な色指定”�
 
 サポート： dvips，(x)dvipdfmx，dviout
 
-[PostScript](/PostScript/) の命令を直接 TeX ソース中に書き込むための special コマンドセットです。
-PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[dvips](/dvips/) 等）かが挙げられます。
-[PSTricks](/PSTricks/) パッケージや psfrag パッケージで使われています。
-
-[dvipdfmx](/dvipdfmx/) では PostScript specials による多彩な描画表現はサポートされていませんが，[MetaPost](/MetaPost/) をサポートするために簡単な命令のみ解釈できるようです。
-試しに使ってみましょう。まず，以下のような TeX ファイル (test.tex) を用意します：
-
 ```
- \special{ps: gsave 0 0 moveto 100 0 lineto stroke grestore}
- \bye
+" <PostScriptコード>
+ps: <PostScriptコード>
+ps::  <PostScriptコード>
+ps::[begin]  <PostScriptコード>
+ps::[end]  <PostScriptコード>
+ps::[nobreak]  <PostScriptコード>
 ```
 
-そして，TeX と dvipdfmx で処理します：
+[PostScript](/PostScript/) の命令を直接 TeX ソース中に記述します。
 
-```
- tex test.tex
- dvipdfmx test.dvi
-```
+- 「"」は「参照点が原点であり，かつ局所化された状態」で &lt;PostScriptコード> を実行します。ここで，「局所化された」というのは gsave／grestore で囲まれているということです。
+- ps: は原点移動の座標返還や局所化を行わずに &lt;PostScriptコード> を実行します。ただし special のある TeX の参照点に PostScript の現在点を合わせる事前処理は行われます。この場合に適用されている座標系は DVI ウェアごとに異なることに注意してください。
+- ps:: は ps: と同様ですが，現在点を合わせる事前処理すら行われません。この形式は ps: の special で始めたコードの続きを書きたい場合に用いられます。
+    - つまり，<br>
+        \special{ps:foo}\special{ps::bar}<br>
+        は<br>
+        \special{ps:foo bar}<br>
+        と等価になります。ここで bar を ps: で書いてしまうと，foo と bar の間に別の命令が入ってしまいます。
 
-出来上がった PDF を見ると，直線が引かれているはずです。
+- ps::\[begin\] は ps: と同じ動作で，ps::\[end\] は ps:: と同じ動作です。
+    - この形式は，
+        \special{ps::\[begin\] foo ......}% 長いコードの最初<br>
+        \special{ps:: bar ......}% 続き<br>
+        \special{ps::\[end\] baz ......}% 最後<br>
+        のような様式での使用を想定しているようです。（dvipdfmx ではこの様式も守らないとエラーになってしまいます。）
 
-- 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
+- &lt;PostScriptコード> が長い場合，dvips はそれを途中の空白で分割して複数行で出力する場合があります。ps::\[nobreak\] の形式を使うと，確実に一行で出力されるようになります。
+
+<!-- PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[[dvips]] 等）かが挙げられます。 -->
+<!-- [[PSTricks]] パッケージや psfrag パッケージで使われています。 -->
+
+<!-- [[dvipdfmx]] では PostScript specials による多彩な描画表現はサポートされていませんが，[[MetaPost]] をサポートするために簡単な命令のみ解釈できるようです。 -->
+
+<!-- -参考：[[なぜか dvipdfmx で PSTricks できる話:http://d.hatena.ne.jp/zrbabbler/20140712/1405179775]] -->
 
 ### HyperTeX specials {#hypertex-specials}
 
@@ -382,8 +397,6 @@ pdf:<名前> <引数> ...
 - 値の表記に PDF 言語のリテラル形式を用いる。例えば “TeX”という文字列は (TeX) または &lt;546558> のように書く。また配列 \[...\] や辞書 &lt;&lt;...>> を引数に取ることもある。
 - ただし寸法値は TeX 言語と同様に 1.5cm や 20pt のように書く。
 - なぜか知らないが命令の別名が多く存在する。例えば，“pdf:annotation”・“pdf:annotate”・“pdf:annot”・“pdf:ann”は全て同じ命令である。
-
-※ PDF special の書式表示の中で，\[ \] 内は省略可能であることを示します。（\[ \] 自体は書きません。）
 
 #### PDF specialに関する資料 {#pdf-specials-info}
 
@@ -468,6 +481,10 @@ pdf:<名前> <引数> ...
 - pdf:encrypt
 - pdf:tounicode
 
+以下では PDF special 命令の一部について，仕様を説明します。
+
+※ PDF special の書式表示の中で，\[ \] 内は省略可能であることを示します。（\[ \] 自体は書きません。）
+
 #### pdf:minorversion {#pdf-minorversion}
 
 ```
@@ -506,7 +523,7 @@ pdf:tounicode が実行されると，dvipdfmx は引数に指定した名前の
 
 [PXjahyper](https://www.ctan.org/pkg/pxjahyper) パッケージはこの special 命令を利用しています。
 
-### PDF描画命令の書き出し {#pdf-content}
+#### PDF描画命令の書き出し {#pdf-content}
 
 ```
 pdf:content <命令列>
