@@ -201,7 +201,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 %/HYGungSo-Bold                /MunhwaGungSeoHeulim-Light      ;
 
 %%% Wadalab Maru Gothic (JIS X 0213)
-%%% See http://osdn.jp/projects/jis2004/wiki/FrontPage
+%%% See https://osdn.jp/projects/jis2004/wiki/
 /WadaLabMaruGo20044           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20044.ttf) >> ;
 /WadaLabMaruGo20004           << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wlmaru/wlmaru20004.ttf) >> ;
 
@@ -293,8 +293,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /BitstreamCyberCJK-Roman      << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/CyberCJK/Cybercjk.ttf) >> ;
 
 %%% OpenType fonts with PostScript outlines in Adobe Reader 9
-%%% See http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Unix
-%%%     ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/
+%%% See ftp://ftp.adobe.com/pub/adobe/reader/unix/9.x/9.1/misc/
 %%%     /opt/Adobe/Reader9/Resource/CIDFont/
 %%%     /usr/local/Adobe/Acrobat9.0/Resource/CIDFont/
 %/Ryumin-Light                 /KozMinPr6N-Regular     ;
