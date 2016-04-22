@@ -7,7 +7,7 @@ pukiwiki: "Adobe Acrobat Reader DC"
 
 # Adobe Acrobat Reader DC
 
-## [Adobe Acrobat Reader DC](http://acrobat.adobe.com/jp/ja/products/pdf-reader.html) {#k3c2311c}
+## [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) {#k3c2311c}
 
 Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈を追加したりするソフトウェアです．
 
@@ -19,11 +19,11 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ### 公式 Web ページ {#t103678c}
 
-- [PDF&#x30ea;&#x30fc;&#x30c0;&#x30fc;&#x3001;PDF&#x30d3;&#x30e5;&#x30fc;&#x30a2; &#x7c; Adobe Acrobat Reader DC](http://acrobat.adobe.com/jp/ja/products/pdf-reader.html)
-- [iPad&#x7248;&#x7121;&#x6599;&#x30e2;&#x30d0;&#x30a4;&#x30eb;&#x30a2;&#x30d7;&#x30ea;&#x3001;PDF&#x30d3;&#x30e5;&#x30fc;&#x30a2; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/products/mobile-app.html)
-- [iPhone&#x7248;&#x7121;&#x6599;&#x30e2;&#x30d0;&#x30a4;&#x30eb;&#x30a2;&#x30d7;&#x30ea;&#x3001;PDF&#x30d3;&#x30e5;&#x30fc;&#x30a2; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/products/mobile-app/iphone.html)
-- [Android&#x7248;&#x7121;&#x6599;&#x30e2;&#x30d0;&#x30a4;&#x30eb;&#x30a2;&#x30d7;&#x30ea;&#x3001;PDF&#x30d3;&#x30e5;&#x30fc;&#x30a2; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/products/mobile-app/android.html)
-- [Windows&#x7248;&#x7121;&#x6599;&#x30e2;&#x30d0;&#x30a4;&#x30eb;&#x30a2;&#x30d7;&#x30ea;&#x3001;PDF&#x30d3;&#x30e5;&#x30fc;&#x30a2; &#x7c; Adobe Acrobat DC](http://acrobat.adobe.com/jp/ja/products/mobile-app/windows-phone.html)
+- [PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html)
+- [iPad向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app.html)
+- [iPhone向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/iphone.html)
+- [Androidフォン向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/android.html)
+- [Windows Phone向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/windows-phone.html)
 - [アドビ サポート担当 (adobesupportj) on Twitter](https://twitter.com/AdobeSupportJ)
 - [ニュースルーム | Adobe](http://www.adobe.com/jp/news-room.html)
 
@@ -32,10 +32,6 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 [&#x5fc5;&#x8981;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#x69cb;&#x6210; &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/system-requirements.html)を参照．
 
 ## ダウンロード {#ne09e93f}
-
-- [http://acrobat.adobe.com/jp/ja/products/pdf-reader.html](http://acrobat.adobe.com/jp/ja/products/pdf-reader.html)
-    - [https://get2.adobe.com/jp/reader/](https://get2.adobe.com/jp/reader/) (最新バージョン)
-    - [http://get2.adobe.com/jp/reader/otherversions/](http://get2.adobe.com/jp/reader/otherversions/) (最新バージョンおよび旧バージョン)
 
 ### Windows {#l93a8183}
 
@@ -64,7 +60,7 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ## アンインストール {#j28c578e}
 
-- [Adobe Reader および Acrobat 用の Cleaner Tool について（Windows）](http://kb2.adobe.com/jp/cps/935/cpsid_93506.html) → ([参照](https://twitter.com/AdobeSupportJ/status/192532790707888128))
+- [Acrobat Reader（Adobe Reader） および Acrobat 用の Cleaner Tool について（Windows）](https://helpx.adobe.com/jp/acrobat/kb/cpsid_93506.html)
 
 ## ヘルプ {#je3a489e}
 
@@ -75,11 +71,33 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 ### 使用状況に関する情報 {#jd9c4023}
 
 初期設定では Adobe Acrobat Reader DC の使用方法に関する情報をアドビと共有します．
-この機能を OFF にしたい場合は \[編集(E)\]-\[環境設定(N)...\] から使用状況に関する情報を選択して「はい、Adobe Acrobat Reader DC の使用方法に関する情報を匿名で共有します」のチェックをはずします．
+この機能を OFF にしたい場合は \[編集(E)\] &gt; \[環境設定(N)...\] から使用状況に関する情報を選択して「はい、Adobe Acrobat Reader DC の使用方法に関する情報を匿名で共有します」のチェックをはずします．
+
+環境設定に使用状況に関する情報が見つからない場合はレジストリの
+
+```
+コンピューター\HKEY_CURRENT_USER\SOFTWARE\Adobe\CommonFiles\Usage\Reader DC
+```
+
+に存在する
+
+```
+名前 OptIn, 種類 REG_DWORD
+```
+
+の値のデータを
+
+```
+0
+```
+
+に修正します．
+
+- \[[レジストリ\]Adobe Acrobat Reader DCの環境設定](http://www.ka-net.org/blog/?p=5529)
 
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
-TeX Live 2015 以降, W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
+TeX Live 2015 以降または W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
 なお，事前に PDF ファイルを Adobe Acrobat Reader DC に関連付けしておく必要があります．
 
 ### PDF ファイルを開く {#id6d0918}
