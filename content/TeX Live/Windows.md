@@ -156,6 +156,7 @@ LaTeX 用のエディタとして [TeXworks](/TeXworks/) が TeX Live ととも�
 
 TeX Live 2015 対応の事例です．
 
+- [ゼロから作るTeX環境 (Windows版)](http://qiita.com/umireon/items/b540dc2c83412fc144d2)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [TeX Live 2015 でアップデートされたパッケージ](http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html)
 - [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
