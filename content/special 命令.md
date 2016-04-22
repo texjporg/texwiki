@@ -284,8 +284,6 @@ color special の引数の &lt;色指定> の書式は次の通りです。
 
 ### PostScript special {#ps-specials}
 
-<!-- FIXME -->
-
 サポート： dvips，(x)dvipdfmx，dviout
 
 ```
@@ -297,32 +295,68 @@ ps::[end]  <PostScriptコード>
 ps::[nobreak]  <PostScriptコード>
 ```
 
-[PostScript](/PostScript/) の命令を直接 TeX ソース中に記述します。
+[PostScript](/PostScript/) の命令の実行を指示します。
 
-- 「"」は「参照点が原点であり，かつ局所化された状態」で &lt;PostScriptコード> を実行します。ここで，「局所化された」というのは gsave／grestore で囲まれているということです。
-- ps: は原点移動の座標返還や局所化を行わずに &lt;PostScriptコード> を実行します。ただし special のある TeX の参照点に PostScript の現在点を合わせる事前処理は行われます。この場合に適用されている座標系は DVI ウェアごとに異なることに注意してください。
-- ps:: は ps: と同様ですが，現在点を合わせる事前処理すら行われません。この形式は ps: の special で始めたコードの続きを書きたい場合に用いられます。
-    - つまり，<br>
-        \special{ps:foo}\special{ps::bar}<br>
-        は<br>
-        \special{ps:foo bar}<br>
-        と等価になります。ここで bar を ps: で書いてしまうと，foo と bar の間に別の命令が入ってしまいます。
+「"」で始める形式は，「周囲から隔離された状態」で &lt;PostScriptコード> を実行します。ここで，「隔離された」というのは以下を意味します。
 
-- ps::\[begin\] は ps: と同じ動作で，ps::\[end\] は ps:: と同じ動作です。
-    - この形式は，
-        \special{ps::\[begin\] foo ......}% 長いコードの最初<br>
-        \special{ps:: bar ......}% 続き<br>
-        \special{ps::\[end\] baz ......}% 最後<br>
-        のような様式での使用を想定しているようです。（dvipdfmx ではこの様式も守らないとエラーになってしまいます。）
+- gsave／grestore で囲まれている。つまりコード中で行った状態変更は外部に影響しない。
+- 現在の TeX の参照点が PostScript の座標の原点となっている。
+- 原点が移動していることを除いて座標系は既定の状態である。（例えば 1 単位は 1bp に等しい。）
 
-- &lt;PostScriptコード> が長い場合，dvips はそれを途中の空白で分割して複数行で出力する場合があります。ps::\[nobreak\] の形式を使うと，確実に一行で出力されるようになります。
+このため，「"」形式は DVI ウェアに依らず共通の結果が得られることが期待できます。主に当該の special だけで完結している描画を行うために利用されます。
+
+これに対して，ps: 形式は隔離の処理を行わずに &lt;PostScriptコード> を実行します。ただし special のある TeX の参照点に PostScript の現在点を合わせる事前処理は行われます。コード実行時に適用されている座標系は DVI ウェアごとに異なることに注意してください。こちらは主に，後続の TeX 出力に影響を与えるような描画設定変更（例えば回転の指示）を行うのに利用されます。
+
+ps: 形式には幾つかの変種があります。ps:: は ps: と同様ですが，現在点を合わせる事前処理すら行われません。この形式は ps: の special で始めたコードの続きを書きたい場合に用いられます。つまり，
+
+```
+\special{ps:foo}\special{ps::bar}
+```
+
+というコードは
+
+```
+\special{ps:foo bar}
+```
+
+と等価になります。ここでもし bar の special を ps: で書いてしまうと，foo と bar の間に別の命令が入ってしまいます。
+
+ps::\[begin\] は ps: と同じ動作で，ps::\[end\] は ps:: と同じ動作です。これらの形式は，
+
+```
+\special{ps::[begin] foo ......}% 長いコードの最初
+\special{ps:: bar ......}% 続き
+\special{ps::[end] baz ......}% 最後
+```
+
+のような様式での使用を想定しているようです。（dvipdfmx ではこの様式も守らないとエラーになってしまいます。）
+
+dvips は，&lt;PostScriptコード> が長い場合，それを途中の空白で分割して複数行で出力する場合があります。ps::\[nobreak\] の形式を使うと，確実に一行で出力されるようになります。
+
+dvips における PostScript special は非常に強力で，要するに PostScript でできることなら何でもできます。このため，ドライバ依存のパッケージの多くについて，その dvips 用ドライバ実装では PostScript special が利用されています。例えば，graphicx（拡大と回転），pict2e，[PGF/TikZ](/TikZ/)，[PSTricks](/PSTricks/)，PSfrag，animate などのパッケージが該当します。
+
+#### 各DVIウェアにおける PostScript special のサポートの状況 {#ps-specials-support}
+
+- dvips は全ての仕様をサポートします。dvips は PostScript コードを出力する DVI ウェアあので，与えられたコードを何も解釈することなく，ただ出力ファイルにそのまま書き出します。
+- dviout は「"」形式をサポートします。具体的には，与えられたコードを Ghostscript に渡して実行し，その描画結果（ビットマップデータ）を取り込むという動作になります。「ps:」形式もサポートしていますが，これは「"」形式と全く同じ扱いになるので，恐らく意図した結果にならないでしょう。その他の形式はサポートしていないようです。
+- (x)dvipdfmx は全ての形式をサポートしますが，解釈できる PostScript 命令がごく一部のものに限られます。（[MetaPost](/MetaPost/) の出力画像の取り込みを行うために，一部の PostScript 命令だけをサポートしているのです。）解釈に成功した場合は，PDF 描画命令に変換されます。失敗した場合は警告を出して special 命令全体を無視します。Ghostscript が呼び出されることはないことに注意してください。
 
 <!-- PostScript specials を完全にサポートできるドライバの条件として，PostScript 命令をヘッダの内容と組み合わせて解釈できる（VTeX 等）か，組み合わせた PostScript 命令をその場で PostScript インタプリタに処理させられる（xdvipdfmx 等）か，あるいは PostScript を解釈せずに次の段階に受け渡す（[[dvips]] 等）かが挙げられます。 -->
-<!-- [[PSTricks]] パッケージや psfrag パッケージで使われています。 -->
 
-<!-- [[dvipdfmx]] では PostScript specials による多彩な描画表現はサポートされていませんが，[[MetaPost]] をサポートするために簡単な命令のみ解釈できるようです。 -->
+#### PSTricks special {#pstricks-specials}
 
-<!-- -参考：[[なぜか dvipdfmx で PSTricks できる話:http://d.hatena.ne.jp/zrbabbler/20140712/1405179775]] -->
+```
+PST: <PostScriptコード>
+pst: <PostScriptコード>
+```
+
+<!-- この2つは機能が異なるらしい。 -->
+
+XeTeX エンジン（つまり xdvipdfmx）で [PSTricks](/PSTricks/) をサポートするために実装された special 命令です。一般の PostScript special とは異なり，Ghostscript を呼び出して実行するようです。ただ，PSTricks の出力するコードに強く依存した処理になっているため，本来の目的以外で「任意の PostScript コードを実行する」ために流用することは困難なようです。
+
+ちなみに，現在では xdvipdfmx と dvipdfmx のソースが統合されているため，これらの special は dvipdfmx でも有効です。つまり，ちょっと細工をすれば，dvipdfmx で PSTricks を動作させることが実はできるようです。
+
+- 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
 
 ### HyperTeX specials {#hypertex-specials}
 
@@ -536,11 +570,11 @@ dvipdfmx がページの内容として生成する PDF 描画命令列の中に
 - pdf:content は &lt;命令列> を，「参照点が原点であり，かつ局所化された状態」で実行します。
     - つまり実際には“q &lt;CM> &lt;命令列> Q”という命令列を書き出します。
 - pdf:literal は &lt;命令列> を，「参照点が原点であるが，局所化されていない状態」で実行します。
-    - つまり実際には“&lt;CM> &lt;命令列> &lt;CM'>”という命令列を書き出します。
+    - つまり実際には“&lt;CM> &lt;命令列> &lt;CM′>”という命令列を書き出します。
 - pdf:code は全く調整を行わず単に &lt;命令列> を実行します。
     - つまり本当に &lt;命令列> だけを書き出します。
 
-ここで，&lt;CM> は「現在の参照点を原点に平行移動する座標返還（cm 演算子）」，&lt;CM'> はその逆変換を表します。
+ここで，&lt;CM> は「現在の参照点を原点に平行移動する座標変換（cm 演算子）」，&lt;CM′> はその逆変換を表します。
 
 ## special 命令を利用した TeX コードの例 {#specials-dvipdfmx}
 
