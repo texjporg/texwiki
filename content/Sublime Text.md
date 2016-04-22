@@ -32,7 +32,6 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 - [IMESupport for Sublime Text](https://github.com/chikatoike/IMESupport)
 - [「IMESupport」の検索結果一覧 - ゆり日記](http://d.hatena.ne.jp/chikatoike/archive?word=IMESupport)
 - [WindowsのIMEでインライン変換を正しく表示できるようにしてみた](http://qiita.com/items/5ccbe63d36009680e0e6)
-- \[[MAC\]\[WIN\]SUBLIME TEXT のススメと最初にすべき日本語入力環境の改善](http://roguer.info/2012/11/01/6049/)
 - [Sublime Mozc Input](http://yasuyuky.github.io/SublimeMozcInput/)
 - [SublimeIBus](https://github.com/chikatoike/SublimeIBus)
 
@@ -73,6 +72,7 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 
 ### 関連リンク {#p3fe3a8a}
 
+- [Sublime Text 3でLaTeXのコンパイル](http://chahan69.blogspot.jp/2016/04/sublime-text-3latex.html)
 - [SublimeText Vim Emacs プラグイン比較表](https://github.com/chikatoike/SublimeTextWiki/wiki/SublimeText-Vim-Emacs-%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E6%AF%94%E8%BC%83%E8%A1%A8)
 
 ## [LaTeXTools (LaTeX Plugin for Sublime Text)](https://github.com/SublimeText/LaTeXTools) {#e60d4c0f}
