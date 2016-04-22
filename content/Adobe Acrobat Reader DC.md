@@ -68,10 +68,12 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ## 注意点 {#r75d2795}
 
-### Adobe Acrobat Reader DC をインストールすると PDF の全文検索ができなくなりサムネイルも表示されなくなる {#ef92bb00}
+### Adobe Acrobat Reader DC をインストールすると PDF の全文検索ができなくなりサムネールも表示されなくなる {#ef92bb00}
 
 - [Adobe Acrobat Reader DCのインストールでPDFの全文検索ができなくなる問題とその解決策](http://vergil.hateblo.jp/entry/2016/01/11/093214)
+- [PDFのサムネイルが表示されない](http://blog.livedoor.jp/do_gubako/archives/50025308.html)
 - [Wind8.1x64+Adobe Reader DC環境でのPDF検索とサムネイル表示について](http://ikeda-jp2000.at.webry.info/201510/article_2.html)
+- [64ビットWindows 7で、PDFのサムネイル表示したい](http://blog.livedoor.jp/digitaldolphins/archives/1756033.html)
 - [Adobe - Acrobat : For Windows : PDF iFilter 64 11.0.01](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
 - [https://github.com/kenjiuno/ThumbGensPack](https://github.com/kenjiuno/ThumbGensPack)
     - [https://github.com/kenjiuno/ThumbGensPack/releases](https://github.com/kenjiuno/ThumbGensPack/releases)
