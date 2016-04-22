@@ -12,7 +12,7 @@ pukiwiki: "LyX"
 
 LyX は，LaTeX 文書が出力できるドキュメントプロセッサです．
 LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援します．
-単純に文書の見た目による (WYSIWYG) 書き方を支援するものではありません．
+文書の見た目による (WYSIWYG) 書き方を支援するものではありません．
 
 - [LyX | LyX &ndash; The Document Processor](http://www.lyx.org/)
 - [LyX | LyX &ndash; 文書プロセッサ](http://www.lyx.org/WebJa.Home)
@@ -71,6 +71,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 - TwitterSearch:LyX TeX, TwitterSearch.en:LyX TeX, TwitterSearch.ja:LyX TeX
 - TwitterSearch:LyX LaTeX, TwitterSearch.en:LyX LaTeX, TwitterSearch.ja:LyX LaTeX
+- [http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
 - [Search - LyX - Pseudo Moon](https://www.pseudomoon.jp/dotclear/index.php?q=LyX)
