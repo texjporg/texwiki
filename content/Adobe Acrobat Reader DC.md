@@ -31,6 +31,10 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 [&#x5fc5;&#x8981;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#x69cb;&#x6210; &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/system-requirements.html)を参照．
 
+### リリース情報 {#y313b500}
+
+[Overview &mdash; Acrobat and Adobe Reader Release Notes](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotes/)
+
 ## ダウンロード {#ne09e93f}
 
 ### Windows {#l93a8183}
@@ -70,13 +74,25 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ### Adobe Acrobat Reader DC をインストールすると PDF の全文検索ができなくなりサムネールも表示されなくなる {#ef92bb00}
 
+- [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
+- [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
+
+■ Continuous Track の場合
+
 - [Adobe Acrobat Reader DCのインストールでPDFの全文検索ができなくなる問題とその解決策](http://vergil.hateblo.jp/entry/2016/01/11/093214)
-- [PDFのサムネイルが表示されない](http://blog.livedoor.jp/do_gubako/archives/50025308.html)
 - [Wind8.1x64+Adobe Reader DC環境でのPDF検索とサムネイル表示について](http://ikeda-jp2000.at.webry.info/201510/article_2.html)
 - [64ビットWindows 7で、PDFのサムネイル表示したい](http://blog.livedoor.jp/digitaldolphins/archives/1756033.html)
 - [Adobe - Acrobat : For Windows : PDF iFilter 64 11.0.01](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
 - [https://github.com/kenjiuno/ThumbGensPack](https://github.com/kenjiuno/ThumbGensPack)
     - [https://github.com/kenjiuno/ThumbGensPack/releases](https://github.com/kenjiuno/ThumbGensPack/releases)
+
+■ Classic Track の場合
+
+\[編集(E)\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする
+
+- [Windows版Acrobat DCのアイコンサムネイル表示について](https://forums.adobe.com/message/8660615)
+- [win7とAcrobat Reader DC でpdfファイルをサムネイル表示させる方法](http://blogyujing.seesaa.net/article/436377991.html)
+- [PDFのサムネイルが表示されない](http://blog.livedoor.jp/do_gubako/archives/50025308.html)
 
 ## 環境設定 {#j7b6be9a}
 
