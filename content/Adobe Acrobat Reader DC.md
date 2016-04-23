@@ -228,6 +228,8 @@ synctex help edit
 - [Acrobat XIで保存したPDFファイルはTeXworksで使えない。](http://kilin.clas.kitasato-u.ac.jp/wordpress/?p=18487)
 - [【悲報（？）】魔改造版Win2000でAdobe Reader DCが動作することが判明](http://blog.livedoor.jp/blackwingcat/archives/1898824.html)
 - [黒翼猫/「Adobe Reader」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=BlackWingCat&word=Adobe+Reader)
+- [Acrobat | 初心者備忘録](http://www.ka-net.org/blog/?cat=136)
+- [「Adobe Acrobat Reader」カテゴリーの記事一覧 | Solomonレビュー\[redémarrage\]](http://solomon-review.net/category/adobe-acrobat-reader/)
 - [スプールが終わるまでAdobeReaderを閉じる処理を待ちたいのですが、50ページ以上とかページ数が多いと、スプールが終わる前にAdobeReaderを閉じてしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421469214)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
