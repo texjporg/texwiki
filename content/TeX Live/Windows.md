@@ -100,9 +100,9 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
 「download from a nearby CTAN mirror」から，texlive2015.iso をダウンロードしてください．
-Wndows 7 以前では ISO イメージの中身を見るには追加でソフトウェアが必要です．
-Windows 8 以降では基本機能で可能となりました．
-ダブルクリックすると DVD ドライブとしてマウントされます．
+Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
+Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
+ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
 ### 64-bit TeX Live Windows バイナリ (tl-win64.zip) {#t70745b0}
