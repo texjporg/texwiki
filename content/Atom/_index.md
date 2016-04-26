@@ -14,7 +14,7 @@ pukiwiki: "Atom"
 
 - [https://atom.io/](https://atom.io/)
 
-Windows、Mac OS X、 Linux　をはじめとした、様々な環境で動作します。
+Windows、OS X、 Linux をはじめとした、様々な環境で動作します。
 "A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指して開発が続けられています。
 内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。
 
@@ -52,7 +52,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 ### ターミナルエミュレータ {#v730a901}
 
-[term2](https://atom.io/packages/term2)　や [terminal-plus](https://atom.io/packages/terminal-plus) などのターミナルエミュレータを Atom 内で使うパッケージがあります。
+[term2](https://atom.io/packages/term2) や [terminal-plus](https://atom.io/packages/terminal-plus) などのターミナルエミュレータを Atom 内で使うパッケージがあります。
 
 ### その他あると便利なパッケージ {#b9051f32}
 
@@ -65,7 +65,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 latex, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
-latex パッケージを使うには [Latexmk](/Latexmk/)　か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
+latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
 
 ### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
 
@@ -187,7 +187,7 @@ Atom は標準で Markdown 文書のリアルタイムプレビュー機能を�
 
 Markdown プレビュー画面を開くには，メニューから
 
-　　パッケージ > Markdown Preview > Toggle Preview
+> パッケージ > Markdown Preview > Toggle Preview
 
 を選びます。
 
@@ -195,9 +195,9 @@ Markdown プレビュー画面を開くには，メニューから
 
 出力文書のスタイル付けは CSS で行います。メニューの
 
-　　ファイル > 環境設定…
+> ファイル > 環境設定…
 
-で設定画面を開き、"設定フォルダを開く" ボタンを押して、設定フォルダを開きます。そこから　style.less を開き、編集します。例えば、Windows 10 向けのフォント設定を行い、両端揃えなどを行うには：
+で設定画面を開き、"設定フォルダを開く" ボタンを押して、設定フォルダを開きます。そこから style.less を開き、編集します。例えば、Windows 10 向けのフォント設定を行い、両端揃えなどを行うには：
 
 ```
  @font-family-min: "Yu Mincho", serif;
@@ -230,14 +230,14 @@ Markdown プレビュー画面を開くには，メニューから
 
 ### 文書の生成と保存 {#j459d751}
 
-HTML へ変換するには、単にプレビュー画面で右クリックをして、"Save As MTML…"　を選ぶだけです。
+HTML へ変換するには、単にプレビュー画面で右クリックをして、"Save As MTML…" を選ぶだけです。
 markdown-pdf パッケージを導入することで、PDF への出力も可能です。
 
 ### 数式の表示 {#s3c9391f}
 
 [markdown-preview-plus](http://atom.io/packages/markdown-preview-plus) パッケージにより、LaTeX 形式での数式入力と表示が可能となります。
 MathJax による描画で、保存した HTML にも結果は反映されますが、markdown-pdf では対応していないようです。MathJax を用いる markdown-preview-plus 以外にも、KaTeX を用いる
-[markdown-preview-katex](https://atom.io/packages/markdown-preview-katex) や [atom-markdown-katex](https://atom.io/packages/atom-markdown-katex)　があります。
+[markdown-preview-katex](https://atom.io/packages/markdown-preview-katex) や [atom-markdown-katex](https://atom.io/packages/atom-markdown-katex) があります。
 
 数式を含んだ文書を PDF へ変換したい場合は、一旦 HTML で保存してから、
 [wkhtmltopdf](http://wkhtmltopdf.org/) を利用するとなんとかできます。
@@ -250,7 +250,7 @@ MathJax による描画で、保存した HTML にも結果は反映されます
 
 ## 文書管理と Git との連携 {#p26877b2}
 
-- [git-control](https://atom.io/packages/git-control)　-- GUI インターフェイス
+- [git-control](https://atom.io/packages/git-control) -- GUI インターフェイス
 - [git-plus](https://atom.io/packages/git-plus) -- コマンドパレットで Git 操作
 
 ## 参考 {#ue2446c0}
