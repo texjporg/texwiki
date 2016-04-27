@@ -53,6 +53,7 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 - Linux/Debian
+- [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
 
 TeX Live/Debian をフルインストールする場合は
 
@@ -61,10 +62,19 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Linux Mint 18 以降にアップグレードして <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
+
+Linux Mint 18 以降の場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
+$ tlmgr init-usertree
+```
+
+Linux Mint 17.3 の場合は
+
+```
+$ sudo apt-get install texlive-lang-cjk texlive-luatex texlive xzdec
 $ tlmgr init-usertree
 ```
 
