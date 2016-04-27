@@ -542,7 +542,7 @@ pdflatex で bxjsarticle を使用する場合は，クラスオプションに 
 
 文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．
 lualatex, luajitlatex で bxjsarticle を使用する場合は，クラスオプションに lualatex を設定してグラフィックドライバに 既定値を指定します．
-lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または pdfTeX を指定します．
+lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または LuaTeX を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
 ■ Japanese Article (bxjsarticle) の場合
