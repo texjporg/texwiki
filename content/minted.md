@@ -10,4 +10,11 @@ pukiwiki: "minted"
 ## minted {#s97b6d79}
 
 - [http://www.ctan.org/pkg/minted](http://www.ctan.org/pkg/minted)
+- [mintedをusepackageしただけで図の配置が崩れるとき](http://qiita.com/mpyw/items/c9d24f579888abbe8728)
 - \[[TeX Live 2015\] LaTeXでソースコードを掲載したい](https://www.aruneko.net/archives/1449)
+- \[[LaTeX\] minted --- プログラムソースコードのハイライト表示](http://konoyonohana.blog.fc2.com/blog-entry-106.html)
+
+### ChangeLog {#jb546584}
+
+- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/minted](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/minted/)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/minted/?view=log)
