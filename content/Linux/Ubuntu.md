@@ -59,6 +59,7 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
+- [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
 
 TeX Live/Debian をフルインストールする場合は
 
@@ -67,7 +68,7 @@ $ sudo apt-get install texlive-full xzdec
 $ tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は Ubuntu 16.04 以降にアップグレードして
+日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は
 
 ```
 $ sudo apt-get install texlive-lang-japanese texlive-luatex texlive xzdec
