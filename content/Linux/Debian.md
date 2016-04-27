@@ -56,6 +56,7 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 - [Debian 8.x (Jessie) での TeX 環境](http://uwabami.junkhub.org/log/20141205.html#p01)
 - [Debian 8 jessie での日本語 TeX 環境の構築](https://blog.ymyzk.com/2014/10/debian-8-jessie-japanese-tex/)
 - [TeXLive 2015](http://www1.pm.tokushima-u.ac.jp/~kohda/tex/texlive.html)
+- [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
 
 TeX Live/Debian をフルインストールする場合は
 
