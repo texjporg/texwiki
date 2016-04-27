@@ -61,7 +61,7 @@ TeX Live は OS ごとにインストール方法が異なります．
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は texlive.tlpdb というファイルを見ればわかります（たとえば /usr/local/texlive/2015/tlpkg/texlive.tlpdb など）．
+これらの詳細は texlive.tlpdb というファイルを見ればわかります（たとえば /usr/local/texlive/2016/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
@@ -287,9 +287,9 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 
 ### TeX Live のビルド {#build}
 
-- Building TeX Live
-    - [http://www.tug.org/texlive/doc/tlbuild.html](http://www.tug.org/texlive/doc/tlbuild.html)
-    - [http://www.tug.org/texlive/build.html](http://www.tug.org/texlive/build.html)
+- [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
+- [TeX Live build procedure](http://www.tug.org/texlive/build.html)
+- [The tlbuild Archives](http://tug.org/pipermail/tlbuild/)
 
 #### Windows {#mc7cf9a9}
 
