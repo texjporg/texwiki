@@ -219,11 +219,23 @@ $ kanji-config-updmap ipaex
 (u)pLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
 使用法は上の TeX Live 公式パッケージの該当項目を参照してください．
 
+### 注意点 {#o2b6fd0e}
+
+#### TeX Live/Cygwin の dvipdfmx が TeX Live あるいは W32TeX の dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがある {#yc6e672e}
+
+TeX Live/Cygwin の dvipdfmx が TeX Live あるいは W32TeX の dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがあるようです．
+
+TeX Live あるいは W32TeX の dvipdfmx が優先的に実行されるように PATH を変更するとうまくいくようです．
+
+- [Unable to find TFM file “″ で2時間無駄にした](http://masuku0w0.hatenablog.jp/entry/2016/04/27/013612)
+- [https://twitter.com/I1zkE/status/723790138212376577](https://twitter.com/I1zkE/status/723790138212376577) , [https://twitter.com/I1zkE/status/723795415124996096](https://twitter.com/I1zkE/status/723795415124996096)
+- [【cygwin】w32texとの競合問題](http://bluepost69-tech.hatenablog.com/entry/2016/01/22/031818)
+
 ### 不具合 {#iffd4e02}
 
-#### dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
+#### TeX Live/Cygwin の dvipdfmx が rungs の呼び出しに失敗する → /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正する {#oe289452}
 
-[dvipdfmx](/dvipdfmx/) がうまく動作しない場合は
+TeX Live/Cygwin の [dvipdfmx](/dvipdfmx/) がうまく動作しない場合は
 /usr/share/texmf-dist/dvipdfmx/dvipdfmx.cfg を修正します．
 
 デフォルトでは
