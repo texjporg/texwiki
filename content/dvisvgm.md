@@ -27,7 +27,7 @@ dvisvgm は DVI/&#x58;DV/EPS ファイルを SVG ファイルに変換するソ�
 
 ### 使い方 {#he5a75c1}
 
-dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw を使用する方法があります．
+dvisvgm で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mutool を使用する方法があります．
 
 #### DVI/&#x58;DV/EPS -> dvisvgm -> SVG {#e2526b87}
 
@@ -92,14 +92,14 @@ dvisvgm を使用して EPS ファイルを SVG ファイルに変換した場�
 DVI ファイルを PDF ファイルに変換して [Inkscape](/Inkscape/) を使用して PDF ファイルをインポートして SVG ファイルに出力する方法もあります．
 Inkscape を使用する場合もテキストデータが保持されます．
 
-#### DVI -> PDF -> MuPDF (mudraw) -> SVG {#pe2bf0a7}
+#### DVI -> PDF -> MuPDF (mutool) -> SVG {#pe2bf0a7}
 
-DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば PDF ファイルを SVG ファイルに変換できます．
-MuPDF の mudraw を使用する場合もテキストデータが保持されます．
+DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mutool を使えば PDF ファイルを SVG ファイルに変換できます．
+MuPDF の mutool を使用する場合もテキストデータが保持されます．
 PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-$ mudraw -o hoge.svg hoge.pdf
+$ mutool draw -o hoge.svg hoge.pdf
 ```
 
 #### DVI -> PDF -> Poppler (pdftocairo) -> SVG {#dbe3e3c1}
