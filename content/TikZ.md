@@ -35,7 +35,7 @@ LaTeX の場合について記述します。
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
 - [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
-- [CTAN:help/Catalogue/entries/pgf.html](https://mirror.ctan.org/help/Catalogue/entries/pgf.html)
+- CTAN.ring:help/Catalogue/entries/pgf.html
     - [e-TeX](/e-TeX/) 拡張が必要です。 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
     - [TeX Live](</TeX Live/>) 2014 以降または [W32TeX](/W32TeX/) であれば動作に問題はありません。
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
