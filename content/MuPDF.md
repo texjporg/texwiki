@@ -46,7 +46,13 @@ $ sudo port install mupdf
 #### Arch Linux {#y10f7abd}
 
 - [https://www.archlinux.org/packages/?name=mupdf](https://www.archlinux.org/packages/?name=mupdf)
+- [https://www.archlinux.org/packages/?name=mupdf-tools](https://www.archlinux.org/packages/?name=mupdf-tools)
+- [https://www.archlinux.org/packages/?name=libmupdf](https://www.archlinux.org/packages/?name=libmupdf)
 - [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
+
+```
+$ pacman -S mupdf mupdf-tools
+```
 
 #### Linux Mint {#od9b1036}
 
@@ -157,6 +163,7 @@ $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg 
 - [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
     - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
     - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
+- \[[gs-commits\] mupdf 1.7a.24 Merge 'mudraw' into 'mutool' binary.](http://ghostscript.com/pipermail/gs-cvs/2015-May/018449.html)
 
 <!-- ***fork [#d573b664] -->
 <!-- -https://github.com/monami-ya/mupdf/ -->
