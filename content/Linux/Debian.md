@@ -182,7 +182,7 @@ $ sudo apt-get install emacs
 
 - [https://launchpad.net/debian/+source/auctex/](https://launchpad.net/debian/+source/auctex/)
     - [https://launchpad.net/debian/+source/auctex/+changelog](https://launchpad.net/debian/+source/auctex/+changelog)
-- [AUCTeX の設定](http://www.gfd-dennou.org/member/uwabami/cc-env/emacs/auctex_config.html)
+- [AUCTeX の設定](https://github.com/uwabami/emacs/blob/master/config/auctex_config.org)
 
 #### YaTeX {#r57295dd}
 
