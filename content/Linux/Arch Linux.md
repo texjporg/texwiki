@@ -36,6 +36,7 @@ $ yaourt -S texlive-dummy
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
+- [研究室のパソコンに Arch を入れるメモ](http://qiita.com/sira/items/e231fa11da611d4387c6)
 - [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
 
 通常は texlive-langjapanese と texlive-most をインストールします．
@@ -121,7 +122,7 @@ $ yaourt -S qpdfview
 ### [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
-$ sudo pacman -S mupdf
+$ sudo pacman -S mupdf mupdf-tools
 ```
 
 <!-- **Xpdf [#yfd9416b] -->
