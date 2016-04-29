@@ -44,7 +44,7 @@ pdf2svg とは，[PDF](/PDF/) ファイルを SVG 形式に変換するツール
 Debian や Ubuntu で pdf2svg をインストールするためには次のようにします．
 
 ```
-$ sudo apt-get install pdf2svg
+$ sudo apt install pdf2svg
 ```
 
 ### 関連リンク {#r1d0a945}
