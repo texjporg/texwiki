@@ -63,7 +63,7 @@ PDF へ出力するための無償の仮想プリンタが多数あります：
 
 いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](http://wkhtmltopdf.org/) などを使い，PDF の生成が可能です．wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています．Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです．
 
-wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](http://phantomjs.org/) も　Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です．
+wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](http://phantomjs.org/) も Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です．
 
 ## LaTeX で PDF {#k0e3280f}
 
@@ -102,7 +102,7 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマン�
 
 ## Adobe Acrobat DC で PDF {#w441bc87}
 
-Adobe Acrobat　は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
+Adobe Acrobat DC は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
 
 ### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
 
@@ -118,7 +118,7 @@ Standard と Pro がありますが，どちらも様々な文書ファイルや
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
 Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．
-アップデートについては　Adobe のダウンロードのページをご覧ください．
+アップデートについては Adobe のダウンロードのページをご覧ください．
 
 ### Adobe Acrobat DC の設定 {#e5e57a76}
 
@@ -155,7 +155,7 @@ Web 用，論文提出用には低品位でよければ「標準」，
 
 ### Illustrator のヒント {#zf39d5a5}
 
-Illustrator 9/10 から EPS　形式で保存するときは，
+Illustrator 9/10 から EPS 形式で保存するときは，
 互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．
 CMYK ポストスクリプト（レベル 2）にします．
 プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
@@ -200,7 +200,7 @@ PDF 文書内で文字列を検索したり，文書から文字列をコピー�
 
 PDF 文書内にとりこむ画像の解像度は，ファイルサイズ，ページが完全に描画されるまでの時間などに影響します。読み手がストレスなく文書を読めるように適切に取り扱いましょう．
 
-Acrobat などの製品では，必要であればダウンサンプルによって，画像の解像度を自動的に落としてくれますが，LaTeX などの環境ではまずこういった機能はありません．pdfTeX，LuaTeX，XeTeX，dvipdfmx　などすべてダウンサンプルの機能はありません。この場合は，グラフィックソフトなどで，手動で画像サイズの調整が必要となってきます．
+Adobe Acrobat DC などの製品では，必要であればダウンサンプルによって，画像の解像度を自動的に落としてくれますが，LaTeX などの環境ではまずこういった機能はありません．pdfTeX，LuaTeX，XeTeX，dvipdfmx などすべてダウンサンプルの機能はありません。この場合は，グラフィックソフトなどで，手動で画像サイズの調整が必要となってきます．
 
 例えば，iPhone 6 のカメラで写真を撮る場合の標準的なサイズは 3264×2448 ですが，これを 5cm 幅の画像として取り込むと，解像度は 1600 dpi となってしまい，標準的なプリンタやディスプレイの能力をはるかに超えてしまいます。実際にはこの 3割 くらいの解像度で十分なので，ピクセルサイズを 20% から 30% くらいに縮小してもよいでしょう．
 
@@ -214,9 +214,9 @@ PDF ファイルは長大な文書に利用されることが多く，また文�
 
 Web 表示用に最適化すると、PDF 文書の構造が再構成され，Web サーバーからページ単位でのダウンロードなどが可能になります．Web 表示用に最適された PDF では，PDF ファイル全体ではなく，特定のページを描画するのに必要な情報だけが，Web サーバーから送信されます．ダウンロードに時間がかかるサイズの大きい PDF ファイルでは，このオプションを選択すると特に効果的です．
 
-Acrobat での設定は，[Adobe のサイト](http://help.adobe.com/ja_JP/acrobat/pro/using/WS58a04a822e3e50102bd615109794195ff-7f52.w.html) にて確認してください．
+Adobe Acrobat DC での設定は，[PDF の最適化（Adobe Acrobat Pro DC）&#x23;PDF を Web 表示用に最適化](https://helpx.adobe.com/jp/acrobat/using/optimizing-pdfs-acrobat-pro.html#PDF%20%E3%82%92%20Web%20%E8%A1%A8%E7%A4%BA%E7%94%A8%E3%81%AB%E6%9C%80%E9%81%A9%E5%8C%96) にて確認してください．
 
-[QPDF](/QPDF/) は，既存の PDF を Web　表示用に最適化 (リニアライズ) する機能を備えています．
+[QPDF](/QPDF/) は，既存の PDF を Web 表示用に最適化 (リニアライズ) する機能を備えています．
 
 ```
  qpdf --linearize input.pdf output.pdf
