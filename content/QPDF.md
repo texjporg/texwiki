@@ -188,7 +188,7 @@ Debian や Ubuntu では、QPDF のパッケージは3つに小分けされて�
 QPDF を利用したプログラムを自分でコンパイルしない場合は、libqpdf-dev をインストールする必要はありません。
 
 ```
-$ sudo apt-get install qpdf
+$ sudo apt install qpdf
 ```
 
 qpdf をインストールすると、libqpdf13 が依存関係により自動的にインストールされます。
