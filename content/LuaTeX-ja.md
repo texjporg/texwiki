@@ -71,13 +71,13 @@ TeX Live 2013/Debian の場合は texlive-lang-cjk パッケージをインス�
 TeX Live 2014/Debian 以降の場合は
 
 ```
-$ sudo apt-get install texlive-lang-japanese
+$ sudo apt install texlive-lang-japanese
 ```
 
 TeX Live 2013/Debian の場合は
 
 ```
-$ sudo apt-get install texlive-lang-cjk
+$ sudo apt install texlive-lang-cjk
 ```
 
 #### MacPortsを利用してインストールする場合 {#k02c7aab}
