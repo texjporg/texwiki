@@ -11,11 +11,13 @@ pukiwiki: "AUCTeX"
 
 ## [AUCTeX](http://www.gnu.org/software/auctex/) {#d40177aa}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は Emacs の TeX モードです．<br>
+AUCTeX は Emacs の TeX モードです．
 
 - [AUCTeX - Sophisticated document creation](http://www.gnu.org/software/auctex/)
     (公式ページ)
@@ -1077,6 +1079,7 @@ AUCTeX とは関係ありませんが，先頭に
 
 ## 関連リンク {#ze506029}
 
+- TwitterSearch:AUCTeX, TwitterSearch.en:AUCTeX, TwitterSearch.ja:AUCTeX
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [Newest &#39;auctex&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/auctex)
 - [Starter Kit LaTeX](http://www.kieranhealy.org/esk/starter-kit-latex.html)
