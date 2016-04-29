@@ -87,17 +87,13 @@ $ ../Build --no-clean --without-ln-s
 ## MinGW 関連リンク {#e987affa}
 
 - [http://win-builds.org/](http://win-builds.org/)
-- [MinGW-builds](https://sourceforge.net/projects/mingwbuilds/)
 - [News - nuwen.net](http://nuwen.net/)
     - [MinGW Distro - nuwen.net](http://nuwen.net/mingw.html)
-- [MXE (M cross environment)](http://mxe.cc/)
 - [MinGW | Qt Wiki | Qt Project](http://qt-project.org/wiki/MinGW)
 - [FAQ | MinGW](http://www.mingw.org/wiki/FAQ)
 - [C::B advanced](https://sourceforge.net/projects/cbadvanced/)
 - [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
-- [http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/](http://download.opensuse.org/repositories/home:/hiberis:/wix/openSUSE_Factory/noarch/)
 - [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
-- [片っ端から忘れていけばいいじゃない。 mingw](http://0xc000013a.blog96.fc2.com/?tag=mingw)
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
 - [#if defined(\__MINGW32_\_) &amp;&amp; !defined(\__MINGW64_VERSION_MAJOR)](https://github.com/joyent/libuv/pull/1296)
