@@ -66,7 +66,7 @@ PATH の値は
 Linux Mint の場合は
 
 ```
-$ sudo apt-get install aspell aspell-en
+$ sudo apt install aspell aspell-en
 ```
 
 です．
