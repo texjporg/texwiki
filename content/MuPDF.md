@@ -61,7 +61,7 @@ $ pacman -S mupdf mupdf-tools
 DebianやUbuntuでは、MuPDFのパッケージはlibmupdf-devとmupdfとmupdf-toolsの3つに分かれています。自分でMuPDFを使ったプログラムをコンパイルするのでなければ、libmupdf-devをインストールする必要はありません。mupdfとmupdf-toolsを入れたらOKです。
 
 ```
-$ sudo apt-get install mupdf mupdf-tools
+$ sudo apt install mupdf mupdf-tools
 ```
 
 なお、mupdf-toolsにはmutoolとmudrawが含まれています。
