@@ -25,7 +25,7 @@ OpenType 形式で配布されています．
 
 ### インストール {#k53b3194}
 
-#### Mac OS X {#pbf60234}
+#### OS X {#pbf60234}
 
 MacPorts を利用してインストールできます。
 
@@ -41,8 +41,7 @@ $ sudo port install texlive-fonts-recommended -doc
 
 Debian や Ubuntu のリポジトリから TeX Gyre フォントをインストールするには，fonts-texgyre
 パッケージをインストールします。
-古いバージョンの Debian や Ubuntu では tex-gyre という名前になっていることもあります。
 
 ```
-$ sudo apt-get install fonts-texgyre
+$ sudo apt install fonts-texgyre
 ```
