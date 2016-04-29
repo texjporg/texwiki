@@ -88,7 +88,7 @@ $ sudo port install hunspell hunspell-dict-en_GB hunspell-dict-en_US
 Hunspell本体と辞書をインストールします。
 
 ```
-$ sudo apt-get install hunspell hunspell-en-us
+$ sudo apt install hunspell hunspell-en-us
 ```
 
 辞書の設定は$HOME/.bashrcなどに書いておきます。
