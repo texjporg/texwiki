@@ -62,7 +62,7 @@ Debian や Ubuntu では，pstoedit パッケージが3つに小分けされて�
 pstoedit に依存したプログラムを自分でコンパイルするのでなければ，libpstoedit0c2a と pstoedit をインストールします。
 
 ```
-$ sudo apt-get install pstoedit
+$ sudo apt install pstoedit
 ```
 
 libpstoedit0c2a は依存関係で自動的にインストールされます。
