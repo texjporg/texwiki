@@ -16,8 +16,6 @@ MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 
 - PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin)
 
-[TeX2img](/TeX2img/) は，SVG 画像出力に MuPDF の mudraw を使用しています．
-
 ***
 
 ***
@@ -82,7 +80,7 @@ $ sudo apt-get install mupdf mupdf-tools
 
 #### Windows {#o34a88ba}
 
-MinGW を使う方法があります．
+Visual Studio（無償のCommunityでも可）がインストールされていればソリューションファイルを開くことでコンパイルができます．MinGW でも可能です．
 
 [MinGW](/MinGW/), zlib, libjpeg, OpenJPEG, FreeType 等をインストールします．
 
