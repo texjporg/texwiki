@@ -83,7 +83,7 @@ pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plug
 EvinceはGnomeの標準ドキュメントビューアなので、最初からインストールされていることがケースがほとんどでしょう。手動でインストールするには次のようにします。
 
 ```
-$ sudo apt-get install evince
+$ sudo apt install evince
 ```
 
 依存関係によりevince-commonパッケージもインストールされます。
