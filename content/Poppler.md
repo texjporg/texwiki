@@ -92,7 +92,7 @@ poppler-utils をインストールすれば，依存関係で適宜判断され
 日本語を使う場合は poppler-data も必要です。
 
 ```
-$ sudo apt-get install poppler-utils poppler-data
+$ sudo apt install poppler-utils poppler-data
 ```
 
 - fontconfig
