@@ -156,8 +156,9 @@ $ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg 
 
 [GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
 
-#### 変更履歴 {#vbbec018}
+#### リリース情報/変更履歴 {#vbbec018}
 
+- [MuPDF News](http://www.mupdf.com/news)
 - [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
     - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
     - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
