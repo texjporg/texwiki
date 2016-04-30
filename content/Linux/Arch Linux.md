@@ -35,7 +35,7 @@ $ yaourt -S texlive-dummy
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
-- [TeX Live - ArchWiki](https://wiki.archlinux.org/index.php/TeX_Live)
+- ArchWiki:TeX_Live, ArchWiki.ja:TeX_Live
 - [研究室のパソコンに Arch を入れるメモ](http://qiita.com/sira/items/e231fa11da611d4387c6)
 - [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
 
@@ -195,22 +195,20 @@ $ sudo pacman -S inkscape pstoedit python2-lxml
 <!--  -->
 <!-- -[[ウィンドウマネージャ「awesome」の基本操作:http://momoto.github.io/blog/2013/03/27/awesome-tutorials/]] -->
 
-### sakura {#kf265bc9}
-
-```
-$ sudo pacman -S sakura
-```
+<!-- **sakura [#kf265bc9] -->
+<!--  -->
+<!-- $ sudo pacman -S sakura -->
 
 ### fcitx {#y9e621be}
 
-- [Fcitx (日本語) - ArchWiki](<https://wiki.archlinux.org/index.php/Fcitx_(%E6%97%A5%E6%9C%AC%E8%AA%9E)>)
+- ArchWiki:Fcitx, ArchWiki.ja:Fcitx
     <!-- -https://aur.archlinux.org/packages/fcitx-mozc-ut/ -->
     <!--  -->
     <!-- $ yaourt -S fcitx-mozc-ut -->
 
 <!-- *Arch Linux のインストール [#ba9eb570] -->
 <!--  -->
-<!-- -[[Beginners' Guide (日本語) - ArchWiki:https://wiki.archlinux.org/index.php/Beginners%27_Guide_(%E6%97%A5%E6%9C%AC%E8%AA%9E)]] -->
+<!-- -[[ArchWiki:Beginners'_guide]], [[ArchWiki.ja:ビギナーズガイド]] -->
 <!-- -[[Archlinuxのインストールから環境設定まで:http://note.chiebukuro.yahoo.co.jp/detail/n267693]] -->
 <!-- -[[Arch Linux インストール から Xfce 快適環境を構築するまで:http://qiita.com/macchaberrycream/items/1dfabe8b710dc638e3f9]] -->
 <!-- -[[【ArchLinux】ArchLinuxインストールめも (2013完全版？？？):http://tosainu.wktk.so/view/325]] -->
@@ -243,10 +241,10 @@ $ sudo pacman -S sakura
 <!--  -->
 <!-- **pacman [#b6ab2d3d] -->
 <!--  -->
-<!-- -[[pacman (日本語) - ArchWiki:https://wiki.archlinux.org/index.php/Pacman_(%E6%97%A5%E6%9C%AC%E8%AA%9E)]] -->
+<!-- -[[ArchWiki:Pacman]], [[ArchWiki.ja:Pacman]] -->
 <!-- -[[Pacman Rosetta:https://wiki.archlinux.org/index.php/Pacman_Rosetta]] -->
 <!--  -->
 <!-- **Yaourt [#nf53cc4e] -->
 <!--  -->
-<!-- -[[Yaourt (日本語) - ArchWiki:https://wiki.archlinux.org/index.php/Yaourt_(%E6%97%A5%E6%9C%AC%E8%AA%9E)]] -->
+<!-- -[[ArchWiki:Yaourt]], [[ArchWiki.ja:Yaourt]] -->
 <!--  -->
