@@ -7,7 +7,7 @@ pukiwiki: "Poppler"
 
 # Poppler
 
-## [Poppler](http://poppler.freedesktop.org/) --- PDF ビューア・操作ツール {#c1f030c4}
+## [Poppler](https://poppler.freedesktop.org/) --- PDF ビューア・操作ツール {#c1f030c4}
 
 Poppler は，PDF ドキュメントのレンダリングに利用されるライブラリで，ベースとなった [Xpdf](/Xpdf/) に比べてレンダリングが向上されています。
 ビューアとして Poppler を使用して問題が発生する場合は [MuPDF](/MuPDF/) を使用することを検討してください。
@@ -26,8 +26,8 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 ### 公式サイト {#fd295383}
 
-- [Poppler](http://poppler.freedesktop.org/)
-- [The poppler Archives](http://lists.freedesktop.org/archives/poppler/)
+- [Poppler](https://poppler.freedesktop.org/)
+- [The poppler Archives](https://lists.freedesktop.org/archives/poppler/)
 
 ### インストール {#tafa7455}
 
@@ -85,22 +85,47 @@ Poppler をインストールしたい場合は，xpdf-tools と pdftohtml を�
 - [homebrew / Library / Formula / poppler.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/poppler.rb)
 - [/trunk/dports/graphics/poppler/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/poppler/Portfile)
 
-#### Linux {#k603e696}
+#### Arch Linux {#kbfeb6e5}
 
-Debian や Ubuntu では poppler ライブラリは libpoppler44 という名前だったり，libpoppler46 という名前だったりします。
+- [https://www.archlinux.org/packages/?name=poppler](https://www.archlinux.org/packages/?name=poppler)
+- [https://www.archlinux.org/packages/?name=poppler-data](https://www.archlinux.org/packages/?name=poppler-data)
+- [https://www.archlinux.org/packages/?q=poppler](https://www.archlinux.org/packages/?q=poppler)
+
+```
+pacman -S poppler poppler-data
+```
+
+#### Linux Mint/Debian/Ubuntu {#k603e696}
+
+- [https://packages.debian.org/ja/poppler](https://packages.debian.org/ja/poppler)
+- [http://packages.ubuntu.com/ja/poppler](http://packages.ubuntu.com/ja/poppler)
+
+Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler57 という名前だったり，libpoppler58 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
 日本語を使う場合は poppler-data も必要です。
 
 ```
-$ sudo apt install poppler-utils poppler-data
+sudo apt install poppler-utils poppler-data
 ```
 
-- fontconfig
-    - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html)
-- Poppler
-    - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html)
+#### Fedora {#ub953878}
+
+- [https://apps.fedoraproject.org/packages/poppler](https://apps.fedoraproject.org/packages/poppler)
+- [https://apps.fedoraproject.org/packages/poppler-data](https://apps.fedoraproject.org/packages/poppler-data)
+- [https://apps.fedoraproject.org/packages/poppler-utils](https://apps.fedoraproject.org/packages/poppler-utils)
+
+```
+sudo dnf install poppler-utils poppler-data
+```
+
+#### openSUSE {#w0cc993e}
+
+- [https://software.opensuse.org/package/poppler](https://software.opensuse.org/package/poppler)
+- [https://software.opensuse.org/package/poppler-data](https://software.opensuse.org/package/poppler-data)
+
+```
+sudo zypper install poppler poppler-data
+```
 
 ### ビルド {#e0d6f40b}
 
@@ -108,14 +133,7 @@ $ sudo apt install poppler-utils poppler-data
 
 [MinGW](/MinGW/) を利用してソースからビルドすることができます。
 
-TeX Live を使用している場合は [http://curl.haxx.se/download.html#Win32](http://curl.haxx.se/download.html#Win32) から curl の Windows バイナリをダウンロードして環境変数 PATH に curl.exe が存在するフォルダーを追加してください。
-W32TeX を使用している場合は curl が W32TeX に含まれているのでダウンロードする必要はありません。
-sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれています。
-
-- MinGW をフルインストールします。
-
-<!-- -[[Git for Windows:http://msysgit.github.io/]] をダウンロードして展開し，bin フォルダー (git.exe のあるフォルダー) に PATH を通します。 -->
-
+- MinGW をインストールします。
 - [http://ftp.gnome.org/pub/gnome/binaries/win32/glib/](http://ftp.gnome.org/pub/gnome/binaries/win32/glib/) から GLib の Run-time
     <!-- -http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/ から gettext-runtime の Run-time -->
 
@@ -199,23 +217,6 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 <!-- [[「Warning: linker path does not have real file for library -lz」の件:http://d.hatena.ne.jp/ousttrue/20091113/1258095613]] -->
 <!-- [[mingw + msys で cairo 1.10.0 をビルド:http://d.hatena.ne.jp/miyamuko/20100909/how_to_build_cairo_1_10_0_using_mingw]] -->
 
-<!-- -[[paco:http://paco.sourceforge.net/]] をインストールします。 -->
-<!--  -->
-<!-- $ curl -kRLO https://sourceforge.net/projects/paco/files/paco/2.0.9/paco-2.0.9.tar.bz2 -->
-<!-- $ tar xvf paco-2.0.9.tar.bz2 -->
-<!-- $ pushd paco-2.0.9 -->
-<!-- $ ./configure - -prefix=/mingw - -disable-gpaco -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ make logme -->
-<!-- $ popd -->
-<!-- - --  -->
-<!-- basepkg.cc:255:28: error: 'lstat' was not declared in this scope -->
-<!-- basepkg.cc:269:14: error: 'struct stat' has no member named 'st_blksize' -->
-<!-- basepkg.cc:273:28: error: 'S_ISLNK' was not declared in this scope -->
-<!-- - --  -->
-<!-- lstat は MinGW にはないので無理っぽい -->
-
 - Install zlib.
 
 - Install CMake.
@@ -242,7 +243,7 @@ sed, grep, sort, uniq は MinGW だけではなく W32TeX にも含まれてい�
 
 - Install GLib.
 
-- Install [Poppler](http://poppler.freedesktop.org/).
+- Install Poppler.
 
 ```
 Poppler は --with-font-configuration=win32 または -DFONT_CONFIGURATION=win32 でビルドすると日本語のフォントが埋め込まれていない PDF ファイルが MS-Mincho で表示されます。
@@ -252,10 +253,12 @@ configure の場合は --with-font-configuration=fontconfig で fontconfig を�
 CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用できます。
 ```
 
+<!-- $ curl -kRLO https://poppler.freedesktop.org/poppler-0.43.0.tar.xz -->
+
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-0.42.0.tar.xz
-$ tar xvf poppler-0.42.0.tar.xz
-$ pushd poppler-0.42.0
+$ powershell -Command '& {Invoke-WebRequest -Uri "https://poppler.freedesktop.org/poppler-0.43.0.tar.xz" -OutFile "poppler-0.43.0.tar.xz"}'
+$ tar xvf poppler-0.43.0.tar.xz
+$ pushd poppler-0.43.0
 ```
 
 ***
@@ -305,10 +308,10 @@ $ mkdir build
 $ pushd build
 ```
 
-<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBOPENJPEG=ON -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll -->
+<!-- $ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBOPENJPEG=ON -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.1 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll -->
 
 ```
-$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.0 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll
+$ cmake .. -G "MSYS Makefiles" -DCMAKE_INSTALL_PREFIX=/mingw -DFONT_CONFIGURATION=fontconfig -DENABLE_XPDF_HEADERS=ON -DENABLE_ZLIB=ON -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -DENABLE_LIBCURL=ON -DLIBOPENJPEG_INCLUDE_DIR=C:/MinGW/include/openjpeg-2.1 -DLIBOPENJPEG_LIBRARIES=C:/MinGW/bin/libopenjp2.dll
 ```
 
 ```
@@ -361,8 +364,10 @@ C:/MinGW/share/poppler
 
 poppler-data を C:\MinGW\share にコピーします。
 
+<!-- $ curl -kRLO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz -->
+
 ```
-$ curl -R -L -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ powershell -Command '& {Invoke-WebRequest -Uri "https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz" -OutFile "poppler-data-0.4.7.tar.gz"}'
 $ tar xvf poppler-data-0.4.7.tar.gz
 $ cp -pR poppler-data-0.4.7 /mingw/share/poppler
 ```
@@ -372,6 +377,8 @@ $ cp -pR poppler-data-0.4.7 /mingw/share/poppler
 Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます。
 ただし font configuration が win32 の場合 GothicBBB-Medium (ゴシック体) でも Ryumin-Light (明朝体) と同様 MS-Mincho で表示されます。
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します。
+
+- [https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc](https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc)
 
 ### Issues {#nbe31c73}
 
@@ -387,13 +394,19 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 - [Popplerについてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130112/1358002227)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
+- fontconfig (BLFS)
+    - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html)
+- Poppler (BLFS)
+    - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html)
 
 #### License {#i424d155}
 
-[GPLv3](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING3), [GPLv2](http://cgit.freedesktop.org/poppler/poppler/tree/COPYING)
+[GPLv3](https://cgit.freedesktop.org/poppler/poppler/tree/COPYING3), [GPLv2](https://cgit.freedesktop.org/poppler/poppler/tree/COPYING)
 
 #### ChangeLog {#u62118c7}
 
-- [poppler/poppler - The poppler pdf rendering library](http://cgit.freedesktop.org/poppler/poppler)
-    - [http://cgit.freedesktop.org/poppler/poppler/refs/tags](http://cgit.freedesktop.org/poppler/poppler/refs/tags)
-    - [http://cgit.freedesktop.org/poppler/poppler/log/](http://cgit.freedesktop.org/poppler/poppler/log/)
+- [poppler/poppler - The poppler pdf rendering library](https://cgit.freedesktop.org/poppler/poppler)
+    - [https://cgit.freedesktop.org/poppler/poppler/refs/tags](https://cgit.freedesktop.org/poppler/poppler/refs/tags)
+    - [https://cgit.freedesktop.org/poppler/poppler/log/](https://cgit.freedesktop.org/poppler/poppler/log/)
