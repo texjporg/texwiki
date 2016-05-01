@@ -32,14 +32,21 @@ Windows, OS X, Linux, Android, iOS
 
 #### OS X {#bad1a3d8}
 
-MacPortsを利用してインストールする場合は次のようにします。
+- [https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb](https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb)
+
+Homebrew を利用してインストールする場合は次のようにします．
+
+```
+$ brew install mupdf
+```
+
+- [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
+
+MacPorts を利用してインストールする場合は次のようにします．
 
 ```
 $ sudo port install mupdf
 ```
-
-- [https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb](https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb)
-- [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
 
 #### Arch Linux {#y10f7abd}
 
@@ -52,102 +59,82 @@ $ sudo port install mupdf
 $ pacman -S mupdf mupdf-tools
 ```
 
-#### Linux Mint {#od9b1036}
+#### Linux Mint/Debian/Ubuntu {#od9b1036}
 
 - [http://packages.ubuntu.com/ja/mupdf](http://packages.ubuntu.com/ja/mupdf)
+- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
 
-#### Debian/Ubuntu {#ve64b6e7}
-
-DebianやUbuntuでは、MuPDFのパッケージはlibmupdf-devとmupdfとmupdf-toolsの3つに分かれています。自分でMuPDFを使ったプログラムをコンパイルするのでなければ、libmupdf-devをインストールする必要はありません。mupdfとmupdf-toolsを入れたらOKです。
+Linux Mint や Debian/GNU Linux や Ubuntu では、MuPDF のパッケージは libmupdf-dev と mupdf と mupdf-tools の3つに分かれています。
+自分で MuPDF を使ったプログラムをコンパイルするのでなければ、libmupdf-dev をインストールする必要はありません。
+mupdf と mupdf-tools を入れたら OK です。
+mupdf-tools 1.7a-1 には mutool と mudraw が含まれていますが現在の MuPDF では mudraw の機能は mutool に統合されており mudraw コマンドは存在しません。
 
 ```
 $ sudo apt install mupdf mupdf-tools
 ```
 
-なお、mupdf-toolsにはmutoolとmudrawが含まれています。
-
-<!-- -https://packages.debian.org/ja/mupdf -->
-
 #### Fedora {#k5d2c514}
 
 - [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
 
+```
+$ sudo dnf install mupdf
+```
+
 #### openSUSE {#sa86e80c}
 
-- [http://software.opensuse.org/package/mupdf](http://software.opensuse.org/package/mupdf)
+- [https://software.opensuse.org/package/mupdf](https://software.opensuse.org/package/mupdf)
+
+```
+$ sudo zypper install mupdf
+```
 
 ### ビルド {#ddb9bb15}
 
 #### Windows {#o34a88ba}
 
-Visual Studio（無償のCommunityでも可）がインストールされていればソリューションファイルを開くことでコンパイルができます．MinGW でも可能です．
+Visual Studio (無償の Visual Studio Community も含む) がインストールされていればソリューションファイルを開くことでコンパイルができます．
 
-[MinGW](/MinGW/), zlib, libjpeg, OpenJPEG, FreeType 等をインストールします．
+MinGW でも可能です．
+
+[MinGW](/MinGW/), zlib, libjpeg, OpenJPEG, HarfBuzz, FreeType 等をインストールします．
 
 - [jbig2dec](http://git.ghostscript.com/?p=jbig2dec.git) をインストールします．
 
+<!-- $ curl -RLo jbig2dec.tar.gz "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz" -->
+
 ```
-$ curl -R -L -o jbig2dec.tar.gz "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz"
+$ powershell -Command '& {Invoke-WebRequest -Uri "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz" -OutFile "jbig2dec.tar.gz"}'
 $ tar xvf jbig2dec.tar.gz
 $ pushd jbig2dec*
 $ ./autogen.sh
 $ ./configure --prefix=/mingw
-$ make
-$ make install
+$ make && make install
+$ popd
 ```
 
-<!-- $ curl -R -L -O http://download.sourceforge.net/jbig2dec/jbig2dec-0.11.tar.xz -->
-<!-- $ tar xvf jbig2dec-0.11.tar.xz -->
-<!-- $ pushd jbig2dec-0.11 -->
-<!-- $ configure - -prefix=/mingw -->
-<!-- $ make -->
-<!-- $ make install -->
-<!-- $ popd -->
+- [MuJS](http://www.mujs.com/) をインストールします．
+
+<!-- $ curl -RLo mujs.tar.gz "http://git.ghostscript.com/?p=mujs.git;a=snapshot;h=HEAD;sf=tgz" -->
+
+```
+$ powershell -Command '& {Invoke-WebRequest -Uri "http://git.ghostscript.com/?p=mujs.git;a=snapshot;h=HEAD;sf=tgz" -OutFile "mujs.tar.gz"}'
+$ tar xvf mujs.tar.gz
+$ pushd mujs*
+$ CC="gcc" make prefix=/mingw install
+$ popd
+```
 
 - [MuPDF](http://www.mupdf.com/) をインストールします．
 
+<!-- $ curl -RLo mupdf.tar.gz "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz" -->
+
 ```
-$ curl -R -L -o mupdf.tar.gz "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz"
+$ powershell -Command '& {Invoke-WebRequest -Uri "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz" -OutFile "mupdf.tar.gz"}'
 $ tar xvf mupdf.tar.gz
-$ cd mupdf*
-```
-
-Makefile の
-
-```
-ifeq "$(NOX11)" ""
-MUVIEW := $(OUT)/mupdf
-$(MUVIEW) : $(FITZ_LIB) $(THIRD_LIBS)
-$(MUVIEW) : $(addprefix $(OUT)/, x11_main.o x11_image.o pdfapp.o)
-```
-
-を
-
-```
-ifeq "$(NOX11)" ""
-MUVIEW := $(OUT)/mupdf
-$(MUVIEW) : $(FITZ_LIB) $(THIRD_LIBS)
-$(MUVIEW) : $(addprefix $(OUT)/, win_main.o pdfapp.o)
-```
-
-に修正します．
-
-fitz/image_jpx.c の
-
-```
-#define OPJ_STATIC
-```
-
-を
-
-```
-//#define OPJ_STATIC
-```
-
-としてコメントアウトします．
-
-```
-$ CFLAGS="-Wall -Ofast -march=native `pkg-config --cflags freetype2 libopenjpeg zlib`" LIBS="-lkernel32 -luser32 -lgdi32 -lcomdlg32 `pkg-config --libs freetype2 libopenjpeg zlib`" make build=release prefix=/mingw install
+$ pushd mupdf*
+$ CC="gcc" XCFLAGS="`pkg-config --cflags harfbuzz freetype2 libopenjp2`" XLIBS="`pkg-config --libs harfbuzz freetype2 libopenjp2`" make build=release prefix=/mingw install
+$ popd
 ```
 
 ### 関連記事 {#u27a744e}
