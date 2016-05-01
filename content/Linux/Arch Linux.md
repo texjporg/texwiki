@@ -30,7 +30,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
 
 ```
-$ yaourt -S texlive-dummy
+yaourt -S texlive-dummy
 ```
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
@@ -42,19 +42,19 @@ $ yaourt -S texlive-dummy
 通常は texlive-langjapanese と texlive-most をインストールします．
 
 ```
-$ sudo pacman -S texlive-langjapanese texlive-most
+sudo pacman -S texlive-langjapanese texlive-most
 ```
 
 必要最小限のパッケージのみインストールする場合は texlive-most ではなく texlive-core をインストールします．
 
 ```
-$ sudo pacman -S texlive-langjapanese texlive-core
+sudo pacman -S texlive-langjapanese texlive-core
 ```
 
 ### [Ghostscript](/Ghostscript/) {#q940a9dc}
 
 ```
-$ sudo pacman -S ghostscript
+sudo pacman -S ghostscript
 ```
 
 ### [Python](/Python/) {#i5b0d02d}
@@ -62,76 +62,76 @@ $ sudo pacman -S ghostscript
 #### Python 3 {#e996fe1c}
 
 ```
-$ sudo pacman -S python python-dbus python-gobject
+sudo pacman -S python python-dbus python-gobject
 ```
 
 #### Python 2 {#tc491f53}
 
 ```
-$ sudo pacman -S python2 python2-dbus python2-gobject
+sudo pacman -S python2 python2-dbus python2-gobject
 ```
 
 ### Julia {#xdaa5ad2}
 
 ```
-$ sudo pacman -S julia
+sudo pacman -S julia
 ```
 
 ### [Ruby](/Ruby/) {#f4286b29}
 
 ```
-$ sudo pacman -S ruby
+sudo pacman -S ruby
 ```
 
 ### [Perl](/Perl/) {#sf038555}
 
 ```
-$ sudo pacman -S perl
+sudo pacman -S perl
 ```
 
 ### [Poppler](/Poppler/) {#bfbc00bc}
 
 ```
-$ sudo pacman -S poppler poppler-data
+sudo pacman -S poppler poppler-data
 ```
 
 ### [Evince](/Evince/) {#qd63d30c}
 
 ```
-$ sudo pacman -S evince
+sudo pacman -S evince poppler-data
 ```
 
 ### [Okular](/Okular/) {#d36d48ab}
 
 ```
-$ sudo pacman -S kdegraphics-okular kde-l10n-ja
+sudo pacman -S kdegraphics-okular kde-l10n-ja
 ```
 
 ### [zathura](/zathura/) {#cae6188b}
 
 ```
-$ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
+sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 ```
 
 ### [qpdfview](/qpdfview/) {#xe3804e4}
 
 ```
-$ yaourt -S qpdfview
+yaourt -S qpdfview
 ```
 
 ### [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
-$ sudo pacman -S mupdf mupdf-tools
+sudo pacman -S mupdf mupdf-tools
 ```
 
 <!-- **Xpdf [#yfd9416b] -->
 <!--  -->
-<!-- $ sudo pacman -S xpdf xpdf-japanese -->
+<!-- sudo pacman -S xpdf xpdf-japanese -->
 <!--  -->
 <!-- xpdf で日本語が表示できるように &#x7e;/.xpdfrc を編集します． -->
 <!--  -->
-<!-- $ vi ~/.xpdfrc -->
+<!-- vi ~/.xpdfrc -->
 <!--  -->
 <!-- - --  -->
 <!-- cidToUnicode Adobe-Japan1 /usr/share/xpdf/japanese/Adobe-Japan1.cidToUnicode -->
@@ -147,13 +147,13 @@ $ sudo pacman -S mupdf mupdf-tools
 ### [LyX](/LyX/) {#odd649e9}
 
 ```
-$ sudo pacman -S lyx
+sudo pacman -S lyx
 ```
 
 ### [TeXstudio](/TeXstudio/) {#geb231cb}
 
 ```
-$ sudo pacman -S texstudio
+sudo pacman -S texstudio
 ```
 
 Arch Linux の TeXstudio は Qt 5 を使用しています．
@@ -162,49 +162,49 @@ Qt 5 版の TeXstudio では，日本語を入力して確定するとカーソ�
 ### [Texmaker](/Texmaker/) {#gbe0fd81}
 
 ```
-$ sudo pacman -S texmaker
+sudo pacman -S texmaker
 ```
 
 ### [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
-$ yaourt -S texworks
+yaourt -S texworks
 ```
 
 ### [Emacs](/Emacs/) {#le6bf422}
 
 ```
-$ sudo pacman -S emacs
+sudo pacman -S emacs
 ```
 
 ### [Vim](/Vim/) {#g73ca7b0}
 
 ```
-$ sudo pacman -S vim
+sudo pacman -S vim
 ```
 
 ### [Inkscape](/Inkscape/) {#ca45a692}
 
 ```
-$ sudo pacman -S inkscape pstoedit python2-lxml
+sudo pacman -S inkscape pstoedit python2-lxml
 ```
 
 <!-- **awesome [#hf2862e7] -->
 <!--  -->
-<!-- $ sudo pacman -S awesome -->
+<!-- sudo pacman -S awesome -->
 <!--  -->
 <!-- -[[ウィンドウマネージャ「awesome」の基本操作:http://momoto.github.io/blog/2013/03/27/awesome-tutorials/]] -->
 
 <!-- **sakura [#kf265bc9] -->
 <!--  -->
-<!-- $ sudo pacman -S sakura -->
+<!-- sudo pacman -S sakura -->
 
 ### fcitx {#y9e621be}
 
 - ArchWiki:Fcitx, ArchWiki.ja:Fcitx
     <!-- -https://aur.archlinux.org/packages/fcitx-mozc-ut/ -->
     <!--  -->
-    <!-- $ yaourt -S fcitx-mozc-ut -->
+    <!-- yaourt -S fcitx-mozc-ut -->
 
 <!-- *Arch Linux のインストール [#ba9eb570] -->
 <!--  -->
