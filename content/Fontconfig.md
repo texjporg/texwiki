@@ -38,9 +38,17 @@ $ pacman -S mingw-w64-i686-fontconfig
 ソースからビルドする場合は、例えば
 
 ```
-$ curl -kRLO https://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.95.tar.bz2
-$ tar xvf fontconfig-2.11.95.tar.bz2
-$ pushd fontconfig-2.11.95
+$ mkdir fontconfig
+$ pushd fontconfig
+```
+
+<!-- $ curl -kRLO https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz -->
+
+```
+$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+$ tar xvf master.tar.xz
+$ pushd master
+$ ./autogen.sh
 $ ./configure --prefix=/mingw --enable-libxml2
 $ make
 $ make install
@@ -56,6 +64,7 @@ $ make install
 <!--  -->
 
 ```
+$ popd
 $ popd
 ```
 
