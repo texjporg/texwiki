@@ -97,3 +97,5 @@ $ ../Build --no-clean --without-ln-s
 - [七誌の開発日記](http://7shi.hateblo.jp/archive/category/MSYS) (MSYS)
 - [Console2 + Nyaos + MinGWで快適Windwosターミナル](http://upinetree.hatenablog.com/entry/2013/03/06/220800)
 - [#if defined(\__MINGW32_\_) &amp;&amp; !defined(\__MINGW64_VERSION_MAJOR)](https://github.com/joyent/libuv/pull/1296)
+- [Index of /repositories/windows:/mingw:/win32/openSUSE_Factory/noarch](http://download.opensuse.org/repositories/windows:/mingw:/win32/openSUSE_Factory/noarch/)
+- [Where can I download precompiled GTK+ 3 binaries or windows installer?](http://stackoverflow.com/questions/6006689/where-can-i-download-precompiled-gtk-3-binaries-or-windows-installer)
