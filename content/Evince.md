@@ -74,31 +74,40 @@ pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plug
 - [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
 - [Arch LinuxでTeXで出力された日本語pdfをevinceで表示する &amp; fonts.conf公開](http://blog.yomak.info/2015/03/arch-linuxtexpdfevince-fontsconf.html)
 
-### Linux Mint {#lacd43b5}
+```
+sudo pacman -S evince poppler-data
+```
+
+### Linux Mint/Debian/Ubuntu {#lacd43b5}
 
 - [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
-
-### Debian/Ubuntu {#rf817124}
-
-EvinceはGnomeの標準ドキュメントビューアなので、最初からインストールされていることがケースがほとんどでしょう。手動でインストールするには次のようにします。
-
-```
-$ sudo apt install evince
-```
-
-依存関係によりevince-commonパッケージもインストールされます。
-GNOME keyring サポートを外したevince-gtkパッケージもあります。なお、Evinceに依存したプログラムをコンパイルするには
-libevince-devパッケージが必要です。
-
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
+
+Evince は Gnome の標準ドキュメントビューアなので、最初からインストールされていることがケースがほとんどでしょう。手動でインストールするには次のようにします。
+
+```
+sudo apt install evince
+```
+
+依存関係により evince-common パッケージもインストールされます。
+GNOME keyring サポートを外した evince-gtk パッケージもあります。なお、Evince に依存したプログラムをコンパイルするには
+libevince-dev パッケージが必要です。
 
 ### Fedora {#jbf882d0}
 
 - [https://apps.fedoraproject.org/packages/evince](https://apps.fedoraproject.org/packages/evince)
 
+```
+sudo dnf install evince
+```
+
 ### openSUSE {#rd040fd0}
 
 - [https://software.opensuse.org/package/evince](https://software.opensuse.org/package/evince)
+
+```
+sudo zypper install evince
+```
 
 ### CentOS {#pb1cfba1}
 
