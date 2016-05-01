@@ -33,10 +33,10 @@ TeX Live の公式サイトのパッケージをインストールしたあと�
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
 
 ```
-$ sudo apt install equivs
-$ wget http://www.tug.org/texlive/files/debian-equivs-2015-ex.txt
-$ equivs-build debian-equivs-2015-ex.txt
-$ sudo dpkg -i texlive-local_2015-1_all.deb
+sudo apt install equivs
+wget http://www.tug.org/texlive/files/debian-equivs-2015-ex.txt
+equivs-build debian-equivs-2015-ex.txt
+sudo dpkg -i texlive-local_2015-1_all.deb
 ```
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
@@ -61,15 +61,15 @@ $ sudo dpkg -i texlive-local_2015-1_all.deb
 TeX Live/Debian をフルインストールする場合は
 
 ```
-$ sudo apt install texlive-full xzdec
-$ tlmgr init-usertree
+sudo apt install texlive-full xzdec
+tlmgr init-usertree
 ```
 
 日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は
 
 ```
-$ sudo apt install texlive-lang-japanese texlive-luatex texlive xzdec
-$ tlmgr init-usertree
+sudo apt install texlive-lang-japanese texlive-luatex texlive xzdec
+tlmgr init-usertree
 ```
 
 を実行します．
@@ -77,7 +77,7 @@ $ tlmgr init-usertree
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#y4c2003d}
 
 ```
-$ sudo apt install ghostscript
+sudo apt install ghostscript
 ```
 
 ### [Python](/Python/) <a id="python"></a> {#df01e340}
@@ -85,97 +85,97 @@ $ sudo apt install ghostscript
 #### Python 3 {#l32086b7}
 
 ```
-$ sudo apt install python3
+sudo apt install python3
 ```
 
 #### Python 2 {#vf673aa3}
 
 ```
-$ sudo apt install python
+sudo apt install python
 ```
 
 ### Julia <a id="julia"></a> {#wfa371af}
 
 ```
-$ sudo apt install julia
+sudo apt install julia
 ```
 
 ### [Ruby](/Ruby/) <a id="ruby"></a> {#b036c19c}
 
 ```
-$ sudo apt install ruby
+sudo apt install ruby
 ```
 
 ### [Perl](/Perl/) <a id="perl"></a> {#t46cade6}
 
 ```
-$ sudo apt install perl
+sudo apt install perl
 ```
 
 ### [Evince](/Evince/) <a id="evince"></a> {#w1fb0d62}
 
 ```
-$ sudo apt install evince
+sudo apt install evince
 ```
 
 ### [Okular](/Okular/) <a id="okular"></a> {#u6c2955c}
 
 ```
-$ sudo apt install okular kde-l10n-ja
+sudo apt install okular kde-l10n-ja
 ```
 
 ### [zathura](/zathura/) <a id="zathura"></a> {#r36251d6}
 
 ```
-$ sudo apt install zathura
+sudo apt install zathura
 ```
 
 ### [qpdfview](/qpdfview/) <a id="qpdfview"></a> {#f44ae716}
 
 ```
-$ sudo apt install qpdfview
+sudo apt install qpdfview
 ```
 
 ### [MuPDF](/MuPDF/) <a id="mupdf"></a> {#fff66c5d}
 
 ```
-$ sudo apt install mupdf mupdf-tools
+sudo apt install mupdf mupdf-tools
 ```
 
 ### [LyX](/LyX/) <a id="lyx"></a> {#jbb03661}
 
 ```
-$ sudo apt install lyx
+sudo apt install lyx
 ```
 
 ### [TeXstudio](/TeXstudio/) <a id="texstudio"></a> {#n198519c}
 
 ```
-$ sudo apt install texstudio texstudio-l10n texstudio-doc
+sudo apt install texstudio texstudio-l10n texstudio-doc
 ```
 
 ### [Texmaker](/Texmaker/) <a id="texmaker"></a> {#oe09ab85}
 
 ```
-$ sudo apt install texmaker
+sudo apt install texmaker
 ```
 
 ### [TeXworks](/TeXworks/) <a id="texworks"></a> {#r265d7ea}
 
 ```
-$ sudo apt install texworks
+sudo apt install texworks
 ```
 
 ### [Eclipse](/Eclipse/) <a id="eclipse"></a> {#f101e753}
 
 ```
-$ sudo apt install eclipse
+sudo apt install eclipse
 ```
 
 ### [Emacs](/Emacs/) <a id="emacs"></a> {#gfaebf66}
 
 ```
-$ sudo apt install emacs
+sudo apt install emacs
 ```
 
 #### AUCTeX {#t099fe57}
@@ -193,11 +193,11 @@ $ sudo apt install emacs
 ### [Vim](/Vim/) <a id="vim"></a> {#k24f9849}
 
 ```
-$ sudo apt install vim vim-gtk
+sudo apt install vim vim-gtk
 ```
 
 ### [Inkscape](/Inkscape/) <a id="inkscape"></a> {#h0e14315}
 
 ```
-$ sudo apt install inkscape pstoedit python-lxml
+sudo apt install inkscape pstoedit python-lxml
 ```
