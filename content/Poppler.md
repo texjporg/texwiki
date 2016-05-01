@@ -253,12 +253,17 @@ configure の場合は --with-font-configuration=fontconfig で fontconfig を�
 CMake の場合は -DFONT_CONFIGURATION=fontconfig で fontconfig を使用できます。
 ```
 
-<!-- $ curl -kRLO https://poppler.freedesktop.org/poppler-0.43.0.tar.xz -->
+```
+$ mkdir poppler
+$ pushd poppler
+```
+
+<!-- $ curl -kRLO https://cgit.freedesktop.org/poppler/poppler/snapshot/master.tar.xz -->
 
 ```
-$ powershell -Command '& {Invoke-WebRequest -Uri "https://poppler.freedesktop.org/poppler-0.43.0.tar.xz" -OutFile "poppler-0.43.0.tar.xz"}'
-$ tar xvf poppler-0.43.0.tar.xz
-$ pushd poppler-0.43.0
+$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/poppler/poppler/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+$ tar xvf master.tar.xz
+$ pushd master
 ```
 
 ***
@@ -266,29 +271,33 @@ $ pushd poppler-0.43.0
 - configure で Makefile を作成してインストールする場合 ([pdf2htmlEX](/pdf2htmlEX/) をビルドする場合 Poppler は configure で Makefile を作成してインストールしてください)
 
 ```
+$ ./autogen.sh
 $ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
 Building poppler with support for:
-  font configuration: fontconfig
-  splash output:      yes
-  cairo output:       yes
-  qt4 wrapper:        no
-  qt5 wrapper:        yes
-  glib wrapper:       yes
-    introspection:    no
-  cpp wrapper:        yes
-  use gtk-doc:        no
-  use libjpeg:        yes
-  use libpng:         yes
-  use libtiff:        yes
-  use zlib:           yes
-  use libcurl:        yes
-  use libopenjpeg:    yes
-  use cms:            yes
+  font configuration:   fontconfig
+  splash output:        yes
+  cairo output:         yes
+  qt4 wrapper:          no
+  qt5 wrapper:          yes
+  glib wrapper:         yes
+    introspection:      no
+  cpp wrapper:          yes
+  use gtk-doc:          no
+  use libjpeg:          yes
+  use libpng:           yes
+  use libtiff:          yes
+  use zlib compress:    yes
+  use zlib uncompress:  no
+  use nss3:             no
+  use curl:             yes
+  use libopenjpeg:      yes
+      with openjpeg2
+  use cms:              yes
       with lcms2
-  command line utils: yes
+  command line utils:   yes
   test data dir:
 
   Warning: Using zlib is not totally safe
@@ -328,9 +337,12 @@ Building Poppler with support for:
   use libjpeg:          yes
   use libpng:           yes
   use libtiff:          yes
-  use zlib:             yes
+  use zlib compress:    yes
+  use zlib uncompress:  no
+  use nss3:             no
   use curl:             yes
   use libopenjpeg:      yes
+      with openjpeg2
   use cms:              yes
       with lcms2
   command line utils:   yes
@@ -346,6 +358,7 @@ $ popd
 ***
 
 ```
+$ popd
 $ popd
 $ strings -a /mingw/bin/libpoppler.dll | grep poppler | head
 ...
