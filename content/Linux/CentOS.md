@@ -39,7 +39,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存するパッケージが TeX Live/RHEL/CentOS/SL をインストールするのを防止できます．
 
 ```
-$ sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
+sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
 ```
 
 #### TeX Live/RHEL/CentOS/SL --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
@@ -51,13 +51,13 @@ RHEL/CentOS/SL 7.2 の TeX Live は TeX Live 2012 です．
 最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
 ```
-$ sudo yum install texlive-*
+sudo yum install texlive-*
 ```
 
 ### [Ghostscript](/Ghostscript/) {#j27db6cf}
 
 ```
-$ sudo yum install ghostscript
+sudo yum install ghostscript
 ```
 
 ### [Python](/Python/) {#r2377e5f}
@@ -65,11 +65,13 @@ $ sudo yum install ghostscript
 #### Python 3 {#h7df1ef5}
 
 - [https://www.softwarecollections.org/scls/?search=Python](https://www.softwarecollections.org/scls/?search=Python)
+- [http://dl.fedoraproject.org/pub/epel/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/7/x86_64/p/)
+- [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/)
 
 #### Python 2 {#b51e9b09}
 
 ```
-$ sudo yum install python
+sudo yum install python
 ```
 
 ### Julia {#p0236f37}
@@ -80,25 +82,25 @@ $ sudo yum install python
 ### [Ruby](/Ruby/) {#pa5990a1}
 
 ```
-$ sudo yum install ruby
+sudo yum install ruby
 ```
 
 ### [Perl](/Perl/) {#ye8ee108}
 
 ```
-$ sudo yum install perl
+sudo yum install perl
 ```
 
 ### [Evince](/Evince/) {#b582893c}
 
 ```
-$ sudo yum install evince
+sudo yum install evince
 ```
 
 ### [Okular](/Okular/) {#nf124489}
 
 ```
-$ sudo yum install okular
+sudo yum install okular
 ```
 
 ### [LyX](/LyX/) {#ucf886d7}
