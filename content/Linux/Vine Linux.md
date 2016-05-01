@@ -31,37 +31,37 @@ Vine Linux はコンパクトで軽量な国産の日本語 Linux ディスト�
 - [TeXEnvironment – VineSeed](http://trac.vinelinux.org/wiki/TeXEnvironment)
 
 ```
-$ sudo apt-get install task-texlive-full
+sudo apt-get install task-texlive-full
 ```
 
 ### [Python](/Python/) {#vedf0458}
 
 ```
-$ sudo apt-get install python python3
+sudo apt-get install python python3
 ```
 
 ### [Ruby](/Ruby/) {#re5ab47e}
 
 ```
-$ sudo apt-get install ruby
+sudo apt-get install ruby
 ```
 
 ### [Perl](/Perl/) {#b68da57f}
 
 ```
-$ sudo apt-get install perl
+sudo apt-get install perl
 ```
 
 ### [Evince](/Evince/) {#see6a1a0}
 
 ```
-$ sudo apt-get install evince
+sudo apt-get install evince
 ```
 
 ### [Okular](/Okular/) {#j32e00af}
 
 ```
-$ sudo apt-get install okular
+sudo apt-get install okular
 ```
 
 ### [LyX](/LyX/) {#f3133664}
@@ -69,7 +69,7 @@ $ sudo apt-get install okular
 - [LyX](https://vinelinux.org/docs/vine6/tex-guide/lyx.html)
 
 ```
-$ sudo apt-get install lyx
+sudo apt-get install lyx
 ```
 
 ### [TeXworks](/TeXworks/) {#g983cd3a}
@@ -77,7 +77,7 @@ $ sudo apt-get install lyx
 - [TeXworks](https://vinelinux.org/docs/vine6/tex-guide/texworks.html)
 
 ```
-$ sudo apt-get install texworks
+sudo apt-get install texworks
 ```
 
 タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．
@@ -85,7 +85,7 @@ $ sudo apt-get install texworks
 ### [Emacs](/Emacs/) {#d8c86cfd}
 
 ```
-$ sudo apt-get install emacs
+sudo apt-get install emacs
 ```
 
 #### [AUCTeX](/AUCTeX/) {#l05e9420}
@@ -101,5 +101,5 @@ $ sudo apt-get install emacs
 ### [Vim](/Vim/) {#na92681c}
 
 ```
-$ sudo apt-get install vim
+sudo apt-get install vim
 ```
