@@ -30,8 +30,8 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
-$ sudo dnf copr enable fatka/texlive-dummy
-$ sudo dnf install texlive-dummy
+sudo dnf copr enable fatka/texlive-dummy
+sudo dnf install texlive-dummy
 ```
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
@@ -45,7 +45,7 @@ $ sudo dnf install texlive-dummy
 フルインストールする場合は
 
 ```
-$ sudo dnf install texlive-scheme-full
+sudo dnf install texlive-scheme-full
 ```
 
 日本語関連のパッケージのみインストールする場合は
@@ -53,13 +53,13 @@ $ sudo dnf install texlive-scheme-full
 Fedora 24 以降の場合は
 
 ```
-$ sudo dnf install texlive-collection-langjapanese
+sudo dnf install texlive-collection-langjapanese
 ```
 
 Fedora 23 の場合は
 
 ```
-$ sudo dnf install texlive-collection-langcjk
+sudo dnf install texlive-collection-langcjk
 ```
 
 <!-- Fedoraだとcjkになる -->
@@ -83,7 +83,7 @@ Fedora の Ghostscript は初期設定では日本語が文字化けするかも
 日本語が文字化けする場合は [Ghostscript/Linux](/Ghostscript/Linux/) を参照して適切に設定することで日本語が文字化けせずに出力できるようになります．
 
 ```
-$ sudo dnf install ghostscript
+sudo dnf install ghostscript
 ```
 
 ### [Python](/Python/) {#z2c220a1}
@@ -91,109 +91,109 @@ $ sudo dnf install ghostscript
 #### Python 3 {#o15f7222}
 
 ```
-$ sudo dnf install python3
+sudo dnf install python3
 ```
 
 #### Python 2 {#c019fdb6}
 
 ```
-$ sudo dnf install python
+sudo dnf install python
 ```
 
 ### Julia {#h3524e63}
 
 ```
-$ sudo dnf install julia
+sudo dnf install julia
 ```
 
 ### [Ruby](/Ruby/) {#j99de34a}
 
 ```
-$ sudo dnf install ruby
+sudo dnf install ruby
 ```
 
 ### [Perl](/Perl/) {#m7e04372}
 
 ```
-$ sudo dnf install perl
+sudo dnf install perl
 ```
 
 ### [Evince](/Evince/) {#na36e8b6}
 
 ```
-$ sudo dnf install evince
+sudo dnf install evince
 ```
 
 ### [Okular](/Okular/) {#k7d05705}
 
 ```
-$ sudo dnf install okular
+sudo dnf install okular
 ```
 
 ### [zathura](/zathura/) {#i470648d}
 
 ```
-$ sudo dnf install zathura zathura-pdf-poppler
+sudo dnf install zathura zathura-pdf-poppler
 ```
 
 ### [qpdfview](/qpdfview/) {#yf420316}
 
 ```
-$ sudo dnf install qpdfview
+sudo dnf install qpdfview
 ```
 
 ### [MuPDF](/MuPDF/) {#id862097}
 
 ```
-$ sudo dnf install mupdf
+sudo dnf install mupdf
 ```
 
 ### [LyX](/LyX/) {#n0d7807d}
 
 ```
-$ sudo dnf install lyx
+sudo dnf install lyx
 ```
 
 ### [TeXstudio](/TeXstudio/) {#aaf316c5}
 
 ```
-$ sudo dnf install texstudio
+sudo dnf install texstudio
 ```
 
 ### [Texmaker](/Texmaker/) {#lcf03ec4}
 
 ```
-$ sudo dnf install texmaker
+sudo dnf install texmaker
 ```
 
 ### [TeXworks](/TeXworks/) {#q8a87364}
 
 ```
-$ sudo dnf install texworks
+sudo dnf install texworks
 ```
 
 ### [Eclipse](/Eclipse/) {#p298a48c}
 
 ```
-$ sudo dnf install eclipse
+sudo dnf install eclipse
 ```
 
 ### [Emacs](/Emacs/) {#m28f0609}
 
 ```
-$ sudo dnf install emacs
+sudo dnf install emacs
 ```
 
 ### [Vim](/Vim/) {#c4ba801a}
 
 ```
-$ sudo dnf install vim
+sudo dnf install vim
 ```
 
 ### [Inkscape](/Inkscape/) {#ue2d802a}
 
 ```
-$ sudo dnf install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
+sudo dnf install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
 ```
 
 ### ibus-kkc {#a96c1055}
