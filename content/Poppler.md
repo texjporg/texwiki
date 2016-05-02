@@ -87,9 +87,9 @@ Poppler をインストールしたい場合は，xpdf-tools と pdftohtml を�
 
 #### Arch Linux {#kbfeb6e5}
 
-- [https://www.archlinux.org/packages/?name=poppler](https://www.archlinux.org/packages/?name=poppler)
-- [https://www.archlinux.org/packages/?name=poppler-data](https://www.archlinux.org/packages/?name=poppler-data)
-- [https://www.archlinux.org/packages/?q=poppler](https://www.archlinux.org/packages/?q=poppler)
+- ArchLinuxPackageSearch:poppler
+- ArchLinuxPackageSearch.name:poppler
+- ArchLinuxPackageSearch.name:poppler-data
 
 ```
 pacman -S poppler poppler-data
@@ -97,8 +97,8 @@ pacman -S poppler poppler-data
 
 #### Linux Mint/Debian/Ubuntu {#k603e696}
 
-- [https://packages.debian.org/ja/poppler](https://packages.debian.org/ja/poppler)
-- [http://packages.ubuntu.com/ja/poppler](http://packages.ubuntu.com/ja/poppler)
+- UbuntuPackageSearch:poppler, UbuntuPackageSearch.en:poppler, UbuntuPackageSearch.ja:poppler
+- DebianPackageSearch:poppler, DebianPackageSearch.en:poppler, DebianPackageSearch.ja:poppler
 
 Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler57 という名前だったり，libpoppler58 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
@@ -133,7 +133,8 @@ sudo zypper install poppler poppler-data
 
 [MinGW](/MinGW/) を利用してソースからビルドすることができます。
 
-- MinGW をインストールします。
+GLib と pkg-config がインストールされていない場合は
+
 - [http://ftp.gnome.org/pub/gnome/binaries/win32/glib/](http://ftp.gnome.org/pub/gnome/binaries/win32/glib/) から GLib の Run-time
     <!-- -http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/ から gettext-runtime の Run-time -->
 
@@ -199,20 +200,6 @@ sudo zypper install poppler poppler-data
 <!-- Cflags: -IC:/Python27/include -->
 <!-- - --  -->
 
-<!-- ~/.bash_profile に以下の内容を記述します。 -->
-<!-- if [ -f ~/.bashrc ]; then . ~/.bashrc; fi -->
-
-<!-- ~/.bashrc に以下の内容を記述します。 -->
-<!-- alias ls='ls - -color=auto - -show-control-chars' -->
-<!-- alias cp='cp -i' -->
-<!-- alias rm='rm -i' -->
-
-<!-- /etc/profile の cd "$HOME" の後に source ~/.bashrc を追加します。 -->
-<!-- cd "$HOME" -->
-<!-- source ~/.bashrc -->
-
-<!-- $ source ~/.bashrc -->
-
 <!-- http://wiki.openttd.org/Compiling_on_MinGW -->
 <!-- [[「Warning: linker path does not have real file for library -lz」の件:http://d.hatena.ne.jp/ousttrue/20091113/1258095613]] -->
 <!-- [[mingw + msys で cairo 1.10.0 をビルド:http://d.hatena.ne.jp/miyamuko/20100909/how_to_build_cairo_1_10_0_using_mingw]] -->
@@ -242,6 +229,26 @@ sudo zypper install poppler poppler-data
 - Install cURL.
 
 - Install GLib.
+
+- Install poppler-data.
+
+日本語の PDF ファイルを表示できるようにするため，poppler-data を適切な場所に配置します。
+
+poppler-data を C:\MinGW\share にコピーします。
+
+```
+$ mkdir poppler-data
+$ pushd poppler-data
+```
+
+<!-- $ curl -kRLO https://cgit.freedesktop.org/poppler/poppler-data/snapshot/master.tar.xz -->
+
+```
+$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/poppler/poppler-data/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+$ tar xvf master.tar.xz
+$ cp -pR master /mingw/share/poppler
+$ popd
+```
 
 - Install Poppler.
 
@@ -310,7 +317,7 @@ $ make install
 
 ***
 
-- CMake で Makefile を作成してインストールする場合<br>CMake で Makefile を作成した場合は poppler.pc などがインストールされないようです
+- CMake で Makefile を作成してインストールする場合<br>CMake で Makefile を作成した場合は poppler.pc などがインストールされないかもしれません
 
 ```
 $ mkdir build
@@ -373,18 +380,6 @@ C:/MinGW/share/poppler
 <!-- libpoppler-14.dll -->
 <!-- ... -->
 
-日本語の PDF ファイルを表示できるようにするため，poppler-data を適切な場所に配置します。
-
-poppler-data を C:\MinGW\share にコピーします。
-
-<!-- $ curl -kRLO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz -->
-
-```
-$ powershell -Command '& {Invoke-WebRequest -Uri "https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz" -OutFile "poppler-data-0.4.7.tar.gz"}'
-$ tar xvf poppler-data-0.4.7.tar.gz
-$ cp -pR poppler-data-0.4.7 /mingw/share/poppler
-```
-
 ### font configuration {#e532ec53}
 
 Poppler は font configuration で win32 を選択した場合，日本語のフォントを埋め込んでいない PDF ファイルは MS-Mincho で表示されます。
@@ -392,6 +387,7 @@ Poppler は font configuration で win32 を選択した場合，日本語のフ
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します。
 
 - [https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc](https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc)
+- [https://lists.freedesktop.org/archives/poppler/2012-March/008915.html](https://lists.freedesktop.org/archives/poppler/2012-March/008915.html)
 
 ### Issues {#nbe31c73}
 
