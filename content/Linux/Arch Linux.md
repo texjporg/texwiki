@@ -23,15 +23,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
 
-- [Linux](/Linux/#texliveinstall)
-- [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/)
-
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/) をインストールします．
-texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
-
-```
-yaourt -S texlive-dummy
-```
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#archlinux)
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
