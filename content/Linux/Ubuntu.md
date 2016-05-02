@@ -31,18 +31,8 @@ Ubuntu の派生版として，[DistroWatch.com](http://distrowatch.com/?languag
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#y097b8c5}
 
-- [Linux](/Linux/#texliveinstall)
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#ubuntu)
 - [https://github.com/scottkosty/install-tl-ubuntu](https://github.com/scottkosty/install-tl-ubuntu)
-
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
-TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
-
-```
-sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2015-ex.txt
-equivs-build debian-equivs-2015-ex.txt
-sudo dpkg -i texlive-local_2015-1_all.deb
-```
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
