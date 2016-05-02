@@ -42,7 +42,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 Windows の TexitEasy で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を
 C:\Program Files (x86)\TexitEasy\share\poppler または C:\Program Files\TexitEasy\share\poppler に配置します．<br>
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
+poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．<br>
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を
 C:\Program Files (x86)\TexitEasy\share\poppler または C:\Program Files\TexitEasy\share\poppler にコピーして使用することもできます．<br>
 
@@ -71,7 +71,7 @@ C:.
 ### OS X の場合 {#y3501a2e}
 
 OS X の TexitEasy で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．<br>
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．<br>
+poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．<br>
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．<br>
 poppler-data を配置する場所は strings と grep で調べることができます．
 
@@ -94,7 +94,7 @@ $ brew install poppler
 
 ```
 $ cd ~
-$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
 $ tar xvf poppler-data-0.4.7.tar.gz
 $ sudo mkdir -p /usr/local/share/poppler
 $ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
