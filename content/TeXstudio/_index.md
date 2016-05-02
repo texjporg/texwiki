@@ -10,10 +10,6 @@ pukiwiki: "TeXstudio"
 
 ## [TeXstudio](http://www.texstudio.org/) {#wc9679cf}
 
-<!-- SourceForge が長期間落ちているため変わったっぽい？ -->
-<!-- 旧 URL は http://texstudio.sourceforge.net/ -->
-<!-- 以下，解説中に出てくる SourceForge の URL は未検証 -->
-
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．
 
 - エディタ部分は [QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．
@@ -205,7 +201,7 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 - [TeXstudioの組み込みPDFビューアで日本語を表示させる(Mac)](http://hayate.me/archives/31)
 
 OS X の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．
+poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．
 
 poppler-data を配置する場所は strings と grep で調べることができます．
@@ -228,7 +224,7 @@ $ brew install poppler
 
 ```
 $ cd ~
-$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
 $ tar xvf poppler-data-0.4.7.tar.gz
 $ sudo mkdir -p /usr/local/share/poppler
 $ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
