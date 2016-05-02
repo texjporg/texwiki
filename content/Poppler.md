@@ -142,15 +142,16 @@ GLib と pkg-config がインストールされていない場合は
 
 をダウンロードして，展開後 bin フォルダーにある
 
-- gspawn-win32-helper.exe
-    - gspawn-win32-helper-console.exe
-    - libgio-2.0-0.dll
-    - libglib-2.0-0.dll
-    - libgmodule-2.0-0.dll
-    - libgobject-2.0-0.dll
-    - libgthread-2.0-0.dll
-        <!-- - -libintl-8.dll -->
-    - pkg-config.exe
+> - gspawn-win32-helper.exe
+> - gspawn-win32-helper-console.exe
+> - libgio-2.0-0.dll
+> - libglib-2.0-0.dll
+> - libgmodule-2.0-0.dll
+> - libgobject-2.0-0.dll
+> - libgthread-2.0-0.dll
+>     <!-- -libintl-8.dll -->
+>
+> - pkg-config.exe
 
 を C:\MinGW\bin にコピーします。
 
@@ -244,7 +245,7 @@ $ pushd poppler-data
 <!-- $ curl -kRLO https://cgit.freedesktop.org/poppler/poppler-data/snapshot/master.tar.xz -->
 
 ```
-$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/poppler/poppler-data/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+$ powershell -Command "& {Invoke-WebRequest -Uri 'https://cgit.freedesktop.org/poppler/poppler-data/snapshot/master.tar.xz' -OutFile 'master.tar.xz'}"
 $ tar xvf master.tar.xz
 $ cp -pR master /mingw/share/poppler
 $ popd
@@ -268,7 +269,7 @@ $ pushd poppler
 <!-- $ curl -kRLO https://cgit.freedesktop.org/poppler/poppler/snapshot/master.tar.xz -->
 
 ```
-$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/poppler/poppler/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+$ powershell -Command "& {Invoke-WebRequest -Uri 'https://cgit.freedesktop.org/poppler/poppler/snapshot/master.tar.xz' -OutFile 'master.tar.xz'}"
 $ tar xvf master.tar.xz
 $ pushd master
 ```
@@ -403,9 +404,6 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 - [Popplerについてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130112/1358002227)
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
-- fontconfig (BLFS)
-    - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html)
 - Poppler (BLFS)
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
     - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html)
