@@ -167,7 +167,7 @@ TeXworks で \[編集\]-\[設定\] のエディタタブのエディタ全体の
 
 #### ソースコードから修正する方法 (Windows) {#pb4e9c13}
 
-- [Git](http://git-scm.com/) をインストールします．
+- [Git](https://git-scm.com/) をインストールします．
 
 - [Poppler](/Poppler/) をインストールします．
 
