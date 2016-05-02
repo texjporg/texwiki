@@ -62,6 +62,7 @@ Texmaker/インストール を参照．
 <!-- -[[ただし，''MacOSX SnowLeopardの環境では，半角のバックスラッシュが入力できず，半角の￥になってしまうという問題があります．''もっとも原始的な(笑)コピペよりもう少しましな方法として，次のようにすることでとりあえず回避できます．&br;▷ ことえりの「環境設定」の「入力文字」の「JISキーボードの￥キーで入力する文字」を「バックスラッシュ」に設定&br;▷ ことえりの辞書に「読み：半角バックスラッシュ→単語：半角バックスラッシュ」として登録&br;▷ ひらがな（全角入力）モードで「￥」キーを入力&br;変換確定のためreturnキーを一度叩く必要はあるものの入力は可能です．ただし''必ず全角入力モードでないとだめ''です．半角英数モードだと，当然ながら半角の￥マークになります．とりあえず，対処療法ですが，目的は達成できます（笑）．ただその弊害として全角の￥記号が打てなくなりますが，こちらは「option+Y」で入力できます．:http://www.sip-ac.jp/sip/tex02.html]] -->
 
 OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
+
 Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
 ### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#c698d89f}
@@ -136,10 +137,6 @@ Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeX
 
 Arch Linux の ibus-kkc では特に問題なく日本語入力できています．
 
-Linux Mint で ibus を使用している場合は ibus-qt4, qt4-qtconfig をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．
-
-Fedora で ibus-kkc を使用している場合は ibus-qt, qt-config をインストールして Qt 設定ツールの \[インターフェース\]-\[デフォルトのインプットメソッド\] から ibus を選択することで回避できます．
-
 <strong>■ fcitx を使用している場合</strong>
 
 fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．
@@ -159,8 +156,10 @@ Texmaker のソースコードを修正してビルドすれば日本語入力�
 
 - Texmaker のソースコードを修正してビルドします．
 
+<!-- $ curl -RLO http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2 -->
+
 ```
-$ curl -R -L -O http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2
+$ powershell -Command "& {Invoke-WebRequest -Uri 'http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2' -OutFile 'texmaker-4.5.tar.bz2'}"
 $ tar xvf texmaker-4.5.tar.bz2
 $ cd texmaker-4.5
 ```
@@ -345,7 +344,7 @@ Texmaker で使用する文字コードはデフォルトでは UTF-8 です．
 ### OS X の場合 {#m8993d2f}
 
 OS X の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．
-poppler-data は [Poppler の公式サイト](http://poppler.freedesktop.org/)から入手できます．
+poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /Users/pascalbrachet/poppler64/share/poppler にコピーして使用することもできます．
 
 poppler-data を配置する場所は strings と grep で調べることができます．
@@ -371,7 +370,7 @@ $ sudo ln -s /usr/local/share/poppler /Users/pascalbrachet/poppler64/share/poppl
 
 ```
 $ cd ~
-$ curl -O http://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
 $ tar xvf poppler-data-0.4.7.tar.gz
 $ sudo mkdir -p /Users/pascalbrachet/poppler64/share/poppler
 $ sudo cp -pR ~/poppler-data-0.4.7/* /Users/pascalbrachet/poppler64/share/poppler
