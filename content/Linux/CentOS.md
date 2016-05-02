@@ -29,18 +29,9 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 
 #### TeX Live 公式パッケージ {#jc67c0a8}
 
-- [Linux](/Linux/#texliveinstall)
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#centos)
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
-- [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
-    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
-
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
-texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存するパッケージが TeX Live/RHEL/CentOS/SL をインストールするのを防止できます．
-
-```
-sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
-```
 
 #### TeX Live/RHEL/CentOS/SL --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
 
