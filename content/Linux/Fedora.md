@@ -23,16 +23,7 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#dfc42b2c}
 
-- [Linux](/Linux/#texliveinstall)
-- [https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/)
-
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/) をインストールします．
-texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
-
-```
-sudo dnf copr enable fatka/texlive-dummy
-sudo dnf install texlive-dummy
-```
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#fedora)
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
