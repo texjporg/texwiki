@@ -45,7 +45,7 @@ pushd fontconfig
 <!-- curl -kRLO https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz -->
 
 ```
-powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+powershell -Command "& {Invoke-WebRequest -Uri 'https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz' -OutFile 'master.tar.xz'}"
 tar xvf master.tar.xz
 pushd master
 ./autogen.sh
@@ -180,3 +180,9 @@ fc-match はあるパターンに最も良くマッチするフォントを表�
 ```
 
 は、ウェイトが bold でアラビア語をカバーするフォントを表示します。
+
+## 関連リンク {#fd07b182}
+
+- fontconfig (BLFS)
+    - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/fontconfig.html)
