@@ -22,13 +22,13 @@ Fontconfig は、主に Linux などで用いられる、システムのフォ�
 64-bit fontconfig の場合は
 
 ```
-$ pacman -S mingw-w64-x86_64-fontconfig
+pacman -S mingw-w64-x86_64-fontconfig
 ```
 
 32-bit fontconfig の場合は
 
 ```
-$ pacman -S mingw-w64-i686-fontconfig
+pacman -S mingw-w64-i686-fontconfig
 ```
 
 ### MinGW {#j2ea43a1}
@@ -38,20 +38,20 @@ $ pacman -S mingw-w64-i686-fontconfig
 ソースからビルドする場合は、例えば
 
 ```
-$ mkdir fontconfig
-$ pushd fontconfig
+mkdir fontconfig
+pushd fontconfig
 ```
 
-<!-- $ curl -kRLO https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz -->
+<!-- curl -kRLO https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz -->
 
 ```
-$ powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
-$ tar xvf master.tar.xz
-$ pushd master
-$ ./autogen.sh
-$ ./configure --prefix=/mingw --enable-libxml2
-$ make
-$ make install
+powershell -Command '& {Invoke-WebRequest -Uri "https://cgit.freedesktop.org/fontconfig/snapshot/master.tar.xz" -OutFile "master.tar.xz"}'
+tar xvf master.tar.xz
+pushd master
+./autogen.sh
+./configure --prefix=/mingw --enable-libxml2
+make
+make install
 ```
 
 <!--  -->
@@ -64,8 +64,8 @@ $ make install
 <!--  -->
 
 ```
-$ popd
-$ popd
+popd
+popd
 ```
 
 などとします。
