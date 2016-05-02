@@ -135,10 +135,10 @@ sudo zypper install poppler poppler-data
 
 GLib と pkg-config がインストールされていない場合は
 
-- [http://ftp.gnome.org/pub/gnome/binaries/win32/glib/](http://ftp.gnome.org/pub/gnome/binaries/win32/glib/) から GLib の Run-time
-    <!-- -http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/ から gettext-runtime の Run-time -->
+- [http://ftp.gnome.org/pub/gnome/binaries/win32/glib/](http://ftp.gnome.org/pub/gnome/binaries/win32/glib/) から GLib
+    <!-- -http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/ から gettext-runtime -->
 
-- [http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/](http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/) から pkg-config の Tool
+- [http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/](http://ftp.gnome.org/pub/gnome/binaries/win32/dependencies/) から pkg-config
 
 をダウンロードして，展開後 bin フォルダーにある
 
@@ -167,6 +167,13 @@ GLib と pkg-config がインストールされていない場合は
 <!--  -->
 <!-- MinGW Shell (MSYS) で Python を必要とするモジュールがビルドできるように準備します。 -->
 <!--  -->
+<!-- 64-bit Windows の場合 -->
+<!--  -->
+<!-- $ pexports /c/Windows/SysWOW64/python27.dll > python27.def -->
+<!-- $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
+<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'. -->
+<!-- $ rm python27.def -->
+<!--  -->
 <!-- 32-bit Windows の場合 -->
 <!--  -->
 <!-- $ pexports /c/Windows/System32/python27.dll > python27.def -->
@@ -174,12 +181,6 @@ GLib と pkg-config がインストールされていない場合は
 <!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/System32/python27.dll'. -->
 <!-- $ rm python27.def -->
 <!--  -->
-<!-- 64-bit Windows の場合 -->
-<!--  -->
-<!-- $ pexports /c/Windows/SysWOW64/python27.dll > python27.def -->
-<!-- $ dlltool -D /c/Windows/SysWOW64/python27.dll -d python27.def -l /mingw/lib/libpython27.a -->
-<!-- C:\MinGW\bin\dlltool.exe: Path components stripped from dllname, 'c:/Windows/SysWOW64/python27.dll'. -->
-<!-- $ rm python27.def -->
 <!--  -->
 <!-- - --  -->
 <!-- -C:/MinGW/lib/pkgconfig/python.pc -->
@@ -388,7 +389,7 @@ Poppler は font configuration で win32 を選択した場合，日本語のフ
 GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font configuration を fontconfig でビルドして fontconfig を適切に設定します。
 
 - [https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc](https://cgit.freedesktop.org/poppler/poppler/tree/poppler/GlobalParamsWin.cc)
-- [https://lists.freedesktop.org/archives/poppler/2012-March/008915.html](https://lists.freedesktop.org/archives/poppler/2012-March/008915.html)
+- \[[poppler\] poppler/GlobalParamsWin.cc](https://lists.freedesktop.org/archives/poppler/2012-March/008915.html)
 
 ### Issues {#nbe31c73}
 
