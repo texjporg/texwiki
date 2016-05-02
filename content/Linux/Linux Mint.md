@@ -25,17 +25,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#ef984d1b}
 
-- [Linux](/Linux/#texliveinstall)
-
-TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
-TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
-
-```
-sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2015-ex.txt
-equivs-build debian-equivs-2015-ex.txt
-sudo dpkg -i texlive-local_2015-1_all.deb
-```
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#linuxmint)
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
