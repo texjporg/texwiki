@@ -9,7 +9,9 @@ pukiwiki: "CotEditor"
 
 ## [CotEditor](http://coteditor.com/) {#hbea6b64}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## CotEditor とは {#x19d88d4}
 
@@ -42,6 +44,7 @@ OS X
 
 ## CotEditor で LaTeX {#acb0f7fd}
 
+- [CotEditor から AppleScript で latexmk を叩く](https://aximov.wordpress.com/2016/01/20/coteditor-latexmk/)
 - [CotEditor用Texスクリプト](http://ubi-lab.naist.jp/~ara/wp-content/uploads/2014/04/TEX2PDF4CotEditor.zip)
     <!-- http://webcache.googleusercontent.com/search?q=cache:GzOQqqKuMz0J:ubi-lab.naist.jp/~ara/%3Fm%3D201404%26lang%3Dja+&cd=7&hl=ja&ct=clnk&gl=jp -->
     <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
