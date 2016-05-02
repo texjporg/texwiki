@@ -9,7 +9,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://gihyo.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
 
-本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，栗山雅俊にあります。
+本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://researchmap.jp/read0065375/)にあります。
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 
 なお全体のサポートページは[こちら](http://oku.edu.mie-u.ac.jp/~okumura/bibun4/)になります。
@@ -63,13 +63,13 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
-- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](http://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
+- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](https://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
 - p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」— ZR さんが「GT書体フォント」を pLaTeX, upLaTeX で使用するためのパッケージ [PXgtfont パッケージ](http://zrbabbler.sp.land.to/pxgtfont.html), XeLaTeX で使用するためのパッケージ [ZXgtfont パッケージ](http://zrbabbler.sp.land.to/zxgtfont.html) を公開されています。
 
-- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法](http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
+- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法 \[Internet Archive\]](https://web.archive.org/web/20150301230150/http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
 
 ## コメント {#l1a73338}
 
