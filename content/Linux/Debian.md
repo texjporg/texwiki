@@ -34,6 +34,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
 - [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
 - [Debian -- パッケージ検索結果 -- texlive-luatex](https://packages.debian.org/ja/texlive-luatex)
+- [Debian -- パッケージ検索結果 -- texlive-xetex](https://packages.debian.org/ja/texlive-xetex)
 - [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
 - [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
 - [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
@@ -47,6 +48,7 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 - [Debian 8 jessie での日本語 TeX 環境の構築](https://blog.ymyzk.com/2014/10/debian-8-jessie-japanese-tex/)
 - [TeXLive 2015](http://www1.pm.tokushima-u.ac.jp/~kohda/tex/texlive.html)
 - [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
+- [Ubuntu で OS の texlive パッケージをインスト<br>ールすると /usr/bin/xetex がインストールされ<br>るけど、それだけでは他の必要なファイルがイ<br>ンストールされなくて結局 plain XeTeX として<br>も使えない。。。](https://twitter.com/trueroad_jp/status/704285097524998144)<br>[texlive-xetex パッケージをインストールすれば<br>必要なファイルが揃うので、ようやく plain <br>XeTeX が使えるようになる。](https://twitter.com/trueroad_jp/status/704285653958160385)
 
 TeX Live/Debian をフルインストールする場合は
 
@@ -55,14 +57,16 @@ sudo apt install texlive-full xzdec
 tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive-luatex パッケージと texlive-xetex パッケージと texlive パッケージをインストールする場合は
 
 ```
-sudo apt install texlive-lang-japanese texlive-luatex texlive xzdec
+sudo apt install texlive-lang-japanese texlive-luatex texlive-xetex texlive xzdec
 tlmgr init-usertree
 ```
 
 を実行します．
+
+tlmgr init-usertree の実行には xzdec パッケージが必要です．
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#y4c2003d}
 
