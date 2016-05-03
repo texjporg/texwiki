@@ -9,7 +9,9 @@ pukiwiki: "Texmaker/設定/Linux"
 
 [Texmaker](/Texmaker/) > [設定](</Texmaker/設定/>) > [Linux](/Linux/)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## 設定 {#t1b1a7e1}
 
