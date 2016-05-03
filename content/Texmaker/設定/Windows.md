@@ -9,7 +9,9 @@ pukiwiki: "Texmaker/設定/Windows"
 
 [Texmaker](/Texmaker/) > [設定](</Texmaker/設定/>) > [Windows](</Microsoft Windows/>)
 
-## 目次 {#rc2575d0}
+***
+
+***
 
 ## 設定 {#ha179b3b}
 
