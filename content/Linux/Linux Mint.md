@@ -34,11 +34,11 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
     - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
-- [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
-- [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
-- [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
-- [Ubuntu -- パッケージ検索結果 -- texlive-xetex](http://packages.ubuntu.com/ja/texlive-xetex)
-- [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
+- UbuntuPackageSearch:texlive-full, UbuntuPackageSearch.en:texlive-full, UbuntuPackageSearch.ja:texlive-full
+- UbuntuPackageSearch:texlive-lang-japanese, UbuntuPackageSearch.en:texlive-lang-japanese, UbuntuPackageSearch.ja:texlive-lang-japanese
+- UbuntuPackageSearch:texlive-luatex, UbuntuPackageSearch.en:texlive-luatex, UbuntuPackageSearch.ja:texlive-luatex
+- UbuntuPackageSearch:texlive-xetex, UbuntuPackageSearch.en:texlive-xetex, UbuntuPackageSearch.ja:texlive-xetex
+- UbuntuPackageSearch:texlive, UbuntuPackageSearch.en:texlive, UbuntuPackageSearch.ja:texlive
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
@@ -72,7 +72,7 @@ tlmgr init-usertree
 
 を実行します．
 
-tlmgr init-usertree の実行には xzdec パッケージが必要です．
+tlmgr の実行には xzdec パッケージが必要です．
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#t53b858c}
 
