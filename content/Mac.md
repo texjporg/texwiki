@@ -65,7 +65,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
     - <strong>[TeXShop](/TeXShop/)</strong> ← MacTeX に標準で付属しています。
-        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。
+        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。(--&gt; TeXShopの評判)
     - <strong>[TeXstudio](/TeXstudio/)</strong>
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
     - <strong>[LyX](/LyX/)</strong>
@@ -98,12 +98,13 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
 
 長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
 ただ，最近は様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
-TeXShop, TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
+TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビューアが組み込まれています．
 単独の LaTeX 用 PDF プレビューアとしては
 
 - <strong>[Skim](/Skim/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
 - [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．
 - [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy などで使われています．
+- [LiveTeX](https://github.com/questbeat/LiveTeX)：LiveTeX is a PDF previewer for TeX writing. --&gt; [TeX のプレビュー用アプリを作った](http://questbeat.hatenablog.jp/entry/2016/02/16/213249)
 
 などがあります．
 
@@ -136,7 +137,7 @@ TeXShop, TeXworks, TeXstudio などの統合環境には PDF 用のビューア�
 
 には，OS X で使用可能なスペルチェッカーが紹介されています。
 
-## JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#me741d27}
+## JIS キーボードでバックスラッシュ &#x5c; ではなく円記号 &#xa5; が入力される場合 {#me741d27}
 
 OS X で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
 いくつかの対処法を紹介します。
@@ -208,13 +209,10 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ## 関連リンク {#links}
 
-- [Mac TeX Toolbox](https://sourceforge.net/projects/mactextoolbox/)
-- [http://qiita.com/tags/mactex](http://qiita.com/tags/mactex)
 - [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
 - [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
 - MacWiki:リスト/TeX
-- [MacTeXにおける実行ファイルの場所](http://d.hatena.ne.jp/seinzumtode/20141001/1412154972)
 - [BlueSkyTex](http://blueskytex.com/)
 
 [^1]: 2011年頃までは [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。なお，UpTeX.app は TeX Live のサブセットである BasicTeX をベースとして，2015年9月10日より開発再開しています。
