@@ -37,6 +37,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 - [Ubuntu -- パッケージ検索結果 -- texlive-full](http://packages.ubuntu.com/ja/texlive-full)
 - [Ubuntu -- パッケージ検索結果 -- texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
 - [Ubuntu -- パッケージ検索結果 -- texlive-luatex](http://packages.ubuntu.com/ja/texlive-luatex)
+- [Ubuntu -- パッケージ検索結果 -- texlive-xetex](http://packages.ubuntu.com/ja/texlive-xetex)
 - [Ubuntu -- パッケージ検索結果 -- texlive](http://packages.ubuntu.com/ja/texlive)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [TeX Live in Launchpad](https://launchpad.net/tex-live)
@@ -44,6 +45,7 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
 - Linux/Debian
 - [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
+- [Ubuntu で OS の texlive パッケージをインスト<br>ールすると /usr/bin/xetex がインストールされ<br>るけど、それだけでは他の必要なファイルがイ<br>ンストールされなくて結局 plain XeTeX として<br>も使えない。。。](https://twitter.com/trueroad_jp/status/704285097524998144)<br>[texlive-xetex パッケージをインストールすれば<br>必要なファイルが揃うので、ようやく plain <br>XeTeX が使えるようになる。](https://twitter.com/trueroad_jp/status/704285653958160385)
 
 TeX Live/Debian をフルインストールする場合は
 
@@ -52,23 +54,25 @@ sudo apt install texlive-full xzdec
 tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive パッケージをインストールする場合は <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
+日本語関連のパッケージと texlive-luatex パッケージと texlive-xetex パッケージと texlive パッケージをインストールする場合は <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
 
 Linux Mint 18 以降の場合は
 
 ```
-sudo apt install texlive-lang-japanese texlive-luatex texlive xzdec
+sudo apt install texlive-lang-japanese texlive-luatex texlive-xetex texlive xzdec
 tlmgr init-usertree
 ```
 
 Linux Mint 17.3 の場合は
 
 ```
-sudo apt install texlive-lang-cjk texlive-luatex texlive xzdec
+sudo apt install texlive-lang-cjk texlive-luatex texlive-xetex texlive xzdec
 tlmgr init-usertree
 ```
 
 を実行します．
+
+tlmgr init-usertree の実行には xzdec パッケージが必要です．
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#t53b858c}
 
