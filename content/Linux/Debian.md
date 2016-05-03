@@ -31,12 +31,11 @@ Debian GNU/Linux は Debian Project によって作成された Linux ディス�
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#rde4f3be}
 
-- [Debian -- パッケージ検索結果 -- texlive-full](https://packages.debian.org/ja/texlive-full)
-- [Debian -- パッケージ検索結果 -- texlive-lang-japanese](https://packages.debian.org/ja/texlive-lang-japanese)
-- [Debian -- パッケージ検索結果 -- texlive-luatex](https://packages.debian.org/ja/texlive-luatex)
-- [Debian -- パッケージ検索結果 -- texlive-xetex](https://packages.debian.org/ja/texlive-xetex)
-- [Debian -- パッケージ検索結果 -- texlive](https://packages.debian.org/ja/texlive)
-- [Debian -- sid の texlive パッケージに関する詳細](https://packages.debian.org/sid/texlive)
+- DebianPackageSearch:texlive-full, DebianPackageSearch.en:texlive-full, DebianPackageSearch.ja:texlive-full
+- DebianPackageSearch:texlive-lang-japanese, DebianPackageSearch.en:texlive-lang-japanese, DebianPackageSearch.ja:texlive-lang-japanese
+- DebianPackageSearch:texlive-luatex, DebianPackageSearch.en:texlive-luatex, DebianPackageSearch.ja:texlive-luatex
+- DebianPackageSearch:texlive-xetex, DebianPackageSearch.en:texlive-xetex, DebianPackageSearch.ja:texlive-xetex
+- DebianPackageSearch:texlive, DebianPackageSearch.en:texlive, DebianPackageSearch.ja:texlive
 - [https://packages.debian.org/ja/sid/tex/](https://packages.debian.org/ja/sid/tex/)
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/](http://anonscm.debian.org/cgit/debian-tex/texlive-bin.git/)
@@ -66,7 +65,7 @@ tlmgr init-usertree
 
 を実行します．
 
-tlmgr init-usertree の実行には xzdec パッケージが必要です．
+tlmgr の実行には xzdec パッケージが必要です．
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#y4c2003d}
 
