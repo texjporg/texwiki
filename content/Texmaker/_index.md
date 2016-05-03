@@ -186,41 +186,6 @@ setFormat( i, 1,ColorStandard);
 
 としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます．
 
-Qt 5 を使用する場合は texmaker.pro を修正します．
-
-***
-
-```
-## QT4
-#QT += xml webkit network
-## QT5
-QT += xml webkitwidgets network widgets printsupport concurrent
-```
-
-***
-
-poppler-qt4.h, poppler-qt5.h を参照できるようにするため，texmaker.pro に INCLUDEPATH を追加して LIBS に -lpoppler-qt5 を追加します．
-
-Portable バージョンを作成する場合は #DEFINES += USB_VERSION の # を外します．
-
-***
-
-```
-win32 {
-INCLUDEPATH += C:\QtSDK\mingw\include
-INCLUDEPATH += C:\poppler
-INCLUDEPATH += /mingw/include/poppler/qt4
-INCLUDEPATH += /mingw/include/poppler/qt5
-LIBS         += -LC:\poppler -lpoppler-qt4 -lpoppler-qt5
-RC_FILE = win.rc
-```
-
-```
-DEFINES += USB_VERSION
-```
-
-***
-
 ```
 $ qmake texmaker.pro
 $ make release
