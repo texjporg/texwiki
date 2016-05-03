@@ -24,7 +24,7 @@ pTeX 上で多言語混在文書を扱う方法をまとめたものとして，
 そこで稲垣さんが取り上げてくださることを期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
 
 この文書では基本的に Microsoft Windows を想定して書いていますが，UNIX 互換 OS などでも似たような方法でインストールできるかもしれません。
-また，[安田功さんの解説](http://yasuda.homeip.net/tex/texinst2.html)は UNIX 互換 OS での多言語環境構築において非常に参考になると思います。
+また，[安田功さんの解説](http://yasuda.homeip.net/tex/texinst2.html)は FreeBSD での多言語環境構築において非常に参考になると思います。
 
 ### 参考—upTeX, pTeX を使わない方法 {#o00569f3}
 
@@ -62,19 +62,20 @@ ASCII 翻字入力についての詳細は [アスキー文字を用いた転写
 Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](https://www.google.co.jp/) などで探してみましょう。
-参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://kazajirushi.blog81.fc2.com/blog-entry-977.html)，[スペイン語入力](http://www.spaingo.sakura.ne.jp/new/input.html)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://blog.goo.ne.jp/edo-toddler/e/a00a3eb97ec4b29dc14853888f64e34e)，[スペイン語入力](http://www.spaingo.sakura.ne.jp/new/input.html)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://www.geocities.jp/evs800/win7.html) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
 [Atom](/Atom/)，
+[Visual Studio Code](</Visual Studio Code/>)，
 [Brackets](/Brackets/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降などがあります。
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。
 起動の速さを重視する方はメモ帳がおすすめです。
 
-OS X や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/), [Atom](/Atom/), [Brackets](/Brackets/) が定番だと思います。
+OS X や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/), [Atom](/Atom/), [Visual Studio Code](</Visual Studio Code/>), [Brackets](/Brackets/) が定番だと思います。
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
@@ -738,7 +739,7 @@ hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
 
 ***
 
-ここで日本語フォントに [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/) (ipaexm.ttf, ipaexg.ttf) を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/) (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wqy.sourceforge.net/en/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
+ここで日本語フォントに [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/) (ipaexm.ttf, ipaexg.ttf) を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/) (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wenq.org/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
 いずれも無償で入手できます。
 
 Adobe Acrobat Reader DC 付属の CMap（どこにあるのか分からない場合には “UniGB-UTF16-H” で検索してみること）は例えば "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Resource\CMap\\" にあるので，全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
@@ -1140,7 +1141,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ```
 %%% WenQuanYi outline fonts
-%%% See http://wqy.sourceforge.net/en/
+%%% See http://wenq.org/
 %%%     https://sourceforge.net/projects/wqy/
 /WenQuanYiZenHei              << /FileType /TrueType  /CSI [(GB1) 5]     /Path (wqy-zenhei.ttf) >> ;
 /WenQuanYiZenHei-Adobe-CNS1   << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (wqy-zenhei.ttf) >> ;
@@ -1243,7 +1244,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 ```
 
 ```
-%%% TrueType outline fonts in Microsoft Office 2013
+%%% TrueType outline fonts in Microsoft Office 2016
 /HGMinchoB                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrmb.ttc)   /SubfontID 0 >> ;
 /HGMinchoE                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrme.ttc)   /SubfontID 0 >> ;
 /HGSoeiPresenceEB             << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (C:/Windows/Fonts/hgrpre.ttc)  /SubfontID 0 >> ;
