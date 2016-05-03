@@ -1290,6 +1290,7 @@ YaTeX 1.78 以降は
 ### Evince との連携 (forward and inverse search) {#g214bbe8}
 
 - [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
+- [http://homepage2.nifty.com/kurasawa/ubuntu.html#emacs](http://homepage2.nifty.com/kurasawa/ubuntu.html#emacs)
 
 ### Evince との連携 (forward search) {#h118b5e5}
 
