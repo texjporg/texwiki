@@ -10,21 +10,17 @@ pukiwiki: "Texmaker"
 
 ## [Texmaker](http://www.xm1math.net/texmaker/) {#x838d855}
 
-***
-
-***
-
-<div style="clear:both"></div>
-
-## Texmaker とは {#y02c99e4}
-
-Texmaker は，LaTeX エディタ (統合環境) です．
-SyncTeX がサポートされています．
+Texmaker は，統合環境として使える LaTeX エディタです．
+SyncTeX もサポートされています．
 Texmaker のデフォルトの文字コードは UTF-8 です．
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
     - [User manual](http://www.xm1math.net/texmaker/doc.html)
 - [Texmaker Project on Google Code Archive](https://code.google.com/archive/p/texmaker/)
+
+***
+
+***
 
 ### 動作環境 {#tf7debca}
 
@@ -49,12 +45,7 @@ Texmaker/インストール を参照．
 
 ## 不具合 {#h6093782}
 
-- [Issues](https://code.google.com/p/texmaker/issues/list)
-    <!-- - -[[Issue 46: The problem with Japanese input:https://code.google.com/p/texmaker/issues/detail?id=46]] -->
-    <!-- - -[[Issue 104:	Apple JIS keyword issue:https://code.google.com/p/texmaker/issues/detail?id=104]] -->
-    <!-- - -[[Issue 364: Embedded PDF viewer doesn't show text in a certain font:https://code.google.com/p/texmaker/issues/detail?id=364]] -->
-    <!-- - -[[Issue 420:	SumatraPDF forward search:https://code.google.com/p/texmaker/issues/detail?id=420]] → Done -->
-    <!-- - -[[Issue 473:	Subdirectories in # parameter:https://code.google.com/p/texmaker/issues/detail?id=473]] -->
+- [Issues](https://code.google.com/archive/p/texmaker/issues)
 
 ### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
 
@@ -67,11 +58,11 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#c698d89f}
 
-Windows と Linux でこの不具合が発生します．
-OS X では発生しないようです．
-
 Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって読めなくなるという不具合があります．
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．
+
+Windows と Linux でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる不具合が発生します．
+OS X では発生しないようです．
 
 #### Windows の場合 {#z3a8b3e4}
 
@@ -139,7 +130,7 @@ Arch Linux の ibus-kkc では特に問題なく日本語入力できていま�
 
 <strong>■ fcitx を使用している場合</strong>
 
-fcitx の \[設定\]-\[アドオン\]-\[拡張を ON\]-\[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．
+fcitx の \[設定\] &gt; \[アドオン\] &gt; \[拡張を ON\] &gt; \[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．
 
 <strong>■ uim を使用している場合</strong>
 
@@ -272,19 +263,23 @@ ibus-kkc も同様に \section{ の直後では日本語入力が ON になら�
 Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．
 [TeXstudio](/TeXstudio/) ではコマンドの設定に使用するパラメータが正しく処理されています．
 
-Texmaker の場合は例えばコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; と記述しても期待したように処理されません．
+Texmaker のマニュアルにはコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; と記述しても期待したように処理されません．
+
+例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
+
+> latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+
+ところが Windows 版の Texmaker では上記の設定では動作せず以下のように &#x25;&#x25; を記述しない方法で設定する必要があります．
+
+> ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/upbibtex '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/upmendex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%.tex';system(cmd)"
 
 Ruby では
 
-```
-0x25.chr
-```
+> 0x25.chr
 
 Windows PowerShell では
 
-```
-[char]0x25
-```
+> \[char\]0x25
 
 で &#x25; を表示できます．
 このようにして Ruby や Windows PowerShell を使用して表示したい文字を「数値→文字」の変換で表現して設定を記述すれば OK です．
@@ -370,8 +365,6 @@ $ sudo cp -pR ~/poppler-data-0.4.7/* /Users/pascalbrachet/poppler64/share/popple
 
 Texmaker の Windows 版は poppler-data が適切な位置に配置されており fontconfig も適切に設定されています．
 
-***
-
 ```
 C:.
 └─Program Files (x86) または Program Files
@@ -381,13 +374,9 @@ C:.
             └─poppler
 ```
 
-***
-
 fontconfig を適切に設定すれば PDF ファイルに日本語のフォントが埋め込まれていなくても日本語を表示することが可能になります．
 日本語のフォントを埋め込んでいない PDF ファイルを表示すると texmaker.exe と同じフォルダーに WINDOWSTEMPDIR_FONTCONFIG_CACHE フォルダーが作成され，日本語が表示されます．
 なお，<strong>初回の表示ではフォントキャッシュを作成するため時間がかかり，応答なしの状態になってしまう</strong>かもしれませんが，作成されれば通常通り表示されるようになります．
-
-***
 
 ```
 C:.
@@ -397,11 +386,7 @@ C:.
         └─WINDOWSTEMPDIR_FONTCONFIG_CACHE
 ```
 
-***
-
 PDF ビューアで表示される代替フォントは texmaker.exe と同じフォルダーに存在する etc\fonts\local.conf で設定されています．
-
-***
 
 ```
 C:.
@@ -416,53 +401,7 @@ C:.
                 └─local.conf
 ```
 
-***
-
-デフォルトでは Ryumin-Light (明朝体) は MS Mincho，GothicBBB-Medium (ゴシック体) は MS Gothic で表示されます．
-
-***
-
-```
-<?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
-<!-- local.conf file to configure local font access -->
-<fontconfig>
-<dir>c:/texlive/2016/texmf-dist/fonts/opentype</dir>
-<dir>c:/texlive/2016/texmf-dist/fonts/truetype</dir>
-<dir>c:/Windows/Fonts</dir>
-```
-
-```
-<match target="pattern">
-  <test qual="any" name="family">
-    <string>Ryumin</string>
-  </test>
-  <edit name="family" mode="prepend" binding="strong">
-    <string>MS Mincho</string>
-  </edit>
-</match>
-<match target="pattern">
-  <test qual="any" name="family">
-    <string>GothicBBB</string>
-  </test>
-  <edit name="family" mode="prepend" binding="strong">
-    <string>MS Gothic</string>
-  </edit>
-</match>
-```
-
-```
-<alias binding="same">
-  <family>ZapfDingbats</family>
-  <accept><family>Dingbats</family></accept>
-</alias>
-```
-
-```
-</fontconfig>
-```
-
-***
+Texmaker に含まれている fontconfig の設定では Ryumin-Light (明朝体) は MS Mincho，GothicBBB-Medium (ゴシック体) は MS Gothic で表示されます．
 
 ### Linux の Texmaker の場合 {#o71b53f0}
 
