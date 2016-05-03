@@ -29,21 +29,19 @@ Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linu
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
-- [https://launchpad.net/tex-live](https://launchpad.net/tex-live)
-- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
-    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
-- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
-    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - UbuntuPackageSearch:texlive-full, UbuntuPackageSearch.en:texlive-full, UbuntuPackageSearch.ja:texlive-full
 - UbuntuPackageSearch:texlive-lang-japanese, UbuntuPackageSearch.en:texlive-lang-japanese, UbuntuPackageSearch.ja:texlive-lang-japanese
 - UbuntuPackageSearch:texlive-luatex, UbuntuPackageSearch.en:texlive-luatex, UbuntuPackageSearch.ja:texlive-luatex
 - UbuntuPackageSearch:texlive-xetex, UbuntuPackageSearch.en:texlive-xetex, UbuntuPackageSearch.ja:texlive-xetex
 - UbuntuPackageSearch:texlive, UbuntuPackageSearch.en:texlive, UbuntuPackageSearch.ja:texlive
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [TeX Live in Launchpad](https://launchpad.net/tex-live)
+- [tex-live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
-- Linux/Debian
+- [https://launchpad.net/ubuntu/+source/texlive-base](https://launchpad.net/ubuntu/+source/texlive-base)
+    - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
+- [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
+    - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 - [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
 - [Ubuntu で OS の texlive パッケージをインスト<br>ールすると /usr/bin/xetex がインストールされ<br>るけど、それだけでは他の必要なファイルがイ<br>ンストールされなくて結局 plain XeTeX として<br>も使えない。。。](https://twitter.com/trueroad_jp/status/704285097524998144)<br>[texlive-xetex パッケージをインストールすれば<br>必要なファイルが揃うので、ようやく plain <br>XeTeX が使えるようになる。](https://twitter.com/trueroad_jp/status/704285653958160385)
 
