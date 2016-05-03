@@ -11,11 +11,13 @@ pukiwiki: "gedit"
 
 <!-- #ref(https://git.gnome.org/browse/gedit/plain/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## gedit とは {#s7f61b9d}
 
-gedit は GNOME 公式のテキストエディタです．<br>
+gedit は GNOME 公式のテキストエディタです．
 
 - [gedit](https://wiki.gnome.org/Apps/Gedit)
 - [https://wiki.gnome.org/action/show/Apps/Gedit](https://wiki.gnome.org/action/show/Apps/Gedit)
@@ -618,7 +620,3 @@ chromium --new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
 ```
 
 ***
-
-## 関連リンク {#v8f6d6f7}
-
-- [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
