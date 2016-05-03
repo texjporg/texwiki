@@ -16,7 +16,7 @@ pukiwiki: "TeXstudio/設定"
 
 ## 設定 {#p076e369}
 
-\[オプション(O)\]-\[TeXstudioの設定(C)\] で設定画面が表示されます．
+\[オプション(O)\] &gt; \[TeXstudioの設定(C)\] で設定画面が表示されます．
 TeXstudio では LaTeX のタイプセットを
 
 - 「ビルド」の項目で，どのスキームで処理するか選択する
@@ -40,18 +40,19 @@ PDF ビューアは，組み込み PDF ビューアと外部 PDF ビューアの
 
 <img src="/attach/TeXstudio/%E8%A8%AD%E5%AE%9A/TeXstudio-build-01.png" alt="">
 
-[Latexmk](/Latexmk/) を実行して PDF ファイルを表示する場合は
+TeXstudio の Latexmk のコマンド設定はリストから選択する方式になっており自分で設定した Latexmk をオプションを自由に指定して使用することができません．
+[Latexmk](/Latexmk/) を実行して PDF ファイルを表示する場合は Latexmk のコマンド設定を PdfLaTeX に設定して
 
-- 既定のコンパイラ：「Latexmk」
+- 既定のコンパイラ：「PdfLaTeX」
 - ビルド &amp; 表示：「コンパイル &amp; 表示」
 
-に変更します．
+に設定します．
 
 ### コマンド {#yc27e161}
 
 {{< children >}}
 
-を参照して「LaTeX」「DviPdf」「BibTeX」「Biber」「Latexmk」などの項目に具体的なコマンドを割り当てます．
+を参照して「LaTeX」「PdfLaTeX」「DviPdf」「BibTeX」「Biber」などの項目に具体的なコマンドを割り当てます．
 
 ### エディタ {#m95b4393}
 
