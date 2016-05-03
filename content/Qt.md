@@ -27,3 +27,8 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 
 - [http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/)
 - [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/)
+
+## 不具合 {#zc678b55}
+
+- [https://bugreports.qt.io/](https://bugreports.qt.io/)
+- \[[QTBUG-10543\] Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard. - Qt Bug Tracker](https://bugreports.qt.io/browse/QTBUG-10543)
