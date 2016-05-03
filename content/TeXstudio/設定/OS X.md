@@ -9,7 +9,9 @@ pukiwiki: "TeXstudio/設定/OS X"
 
 [TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > OS X
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### コマンド {#a32ff532}
 
@@ -19,6 +21,7 @@ TeXstudio で日本語 upLaTeX または pLaTeX を使用するためには，�
 - DviPdf のコマンドを dvipdf から dvipdfmx に変更します．
 - BibTeX のコマンドを bibtex から upbibtex または pbibtex に変更します．
 - Biber のコマンドを biber から biber --bblencoding=utf8 -u -U --output_safechars に変更します．
+- Latexmk-upLaTeX-pdfdvi を使用する場合は コマンドの PdfLaTeX に設定されている "/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex を "/Library/TeX/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % に変更します．pdfLaTeX を実行したくなった場合は Latexmk の変数 $pdflatex が pdflatex コマンドに設定されていれば \[ツール(T)\] &gt; \[コマンド(C)\] &gt; \[LaTeXmk\] から Latexmk で pdfLaTeX を実行できます．
 
 設定例を以下に示します．
 
