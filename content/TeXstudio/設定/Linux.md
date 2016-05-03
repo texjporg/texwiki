@@ -9,16 +9,18 @@ pukiwiki: "TeXstudio/設定/Linux"
 
 [TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > Linux
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### コマンド {#fdb50ca9}
 
-PDFビューアは，組み込みPDFビューアと外部PDFビューアを選択するようになっているので好きな方を選択してください．<br>
-組み込みPDFビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．<br>
-コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．<br>
-コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．<br>
-コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．<br>
+- 組み込みPDFビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．
+- コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．
+- コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．
+- コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．
+- コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．
+- Latexmk-upLaTeX-pdfdvi を使用する場合は コマンドの PdfLaTeX に設定されている pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex を latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % に変更します．pdfLaTeX を実行したくなった場合は Latexmk の変数 $pdflatex が pdflatex コマンドに設定されていれば \[ツール(T)\] &gt; \[コマンド(C)\] &gt; \[LaTeXmk\] から Latexmk で pdfLaTeX を実行できます．
 
 ***
 
