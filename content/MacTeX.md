@@ -138,8 +138,10 @@ $ sudo tlmgr update --self --all
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
+- [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
 - [TeX環境の構築方法【OS X El Capitan】](http://kengo92i.hatenablog.jp/entry/2016/05/04/204519)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
+- [OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順](https://snap.textfile.org/20151006085255/)
 - [2015年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2015/)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
@@ -153,7 +155,9 @@ $ sudo tlmgr update --self --all
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html]] -->
-<!-- -[[[Yosemite]MacTeXのインストール:http://www.aruneko.net/archives/1285]] -->
+<!-- -[[[Yosemite]MacTeXのインストール:https://www.aruneko.net/archives/1285]] -->
+<!-- -[『Fuzoku実践入門』サンプルリポジトリの紹介:http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019]] -->
+<!-- - -[『Fuzoku実践入門』環境サンプルファイル:https://github.com/akinomurasame/learning-fuzoku-sample] -->
 <!-- -[[MacTeX 2014 - 一歩前進:http://succzero.hatenablog.com/entry/2014/07/17/041211]] -->
 <!-- -[[MacTeX 2014 を再インストールしたときの覚書:http://pt-diary.tumblr.com/post/107214765605/20150105-mactex]] -->
 <!-- -[[TeX Live を使おう ―― Linux ユーザと Mac OS X ユーザのために ――:http://www.fugenji.org/~thomas/texlive-guide/]] -->
