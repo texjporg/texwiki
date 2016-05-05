@@ -72,8 +72,10 @@ $ sudo tlmgr install collection-langjapanese
 以下のインストール事例も参考になります。
 
 - [MacにTeX環境を整える](http://keisanbutsuriya.hateblo.jp/entry/2016/04/15/190757)
+- \[[El Capitan\]Homebrew CaskでTeX環境を構築する](https://www.aruneko.net/archives/1423)
 - [OS X に texlive2015 をインストールする](http://d.hatena.ne.jp/pyopyopyo/20150710/p1)
 - [BasicTeX-2015でRe:VIEWの環境を用意する](http://qiita.com/takahashim/items/74d6d1de557fad09a879)
+- [MacにTexを導入する](http://mktozk.hateblo.jp/entry/configure-tex-on-mac)
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
