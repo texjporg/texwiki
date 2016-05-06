@@ -81,6 +81,10 @@ Windows, OS X, Linux
     - [https://git.gnome.org/browse/gedit/refs/tags](https://git.gnome.org/browse/gedit/refs/tags)
     - [log](https://git.gnome.org/browse/gedit/log/)
 
+### 派生版 {#k13d1526}
+
+- [pluma](https://github.com/mate-desktop/pluma)
+
 ## プラグイン {#c01f900c}
 
 - [geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
