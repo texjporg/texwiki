@@ -460,7 +460,7 @@ command_line_encoding.dvips =
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/utf.tar.xz">utf.tar.xz</a></td><td>UTF パッケージ</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-n2bk.tar.xz">vf-n2bk.tar.xz</a></td><td>NTT-jTeX 用の Virtual font</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xymtex.tar.xz.tar.xz">xymtex.tar.xz.tar.xz</a></td><td><a href="/XyMTeX/">XyMTeX</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xymtex.tar.xz">xymtex.tar.xz</a></td><td><a href="/XyMTeX/">XyMTeX</a></td></tr>
 </tbody>
 </table>
 
