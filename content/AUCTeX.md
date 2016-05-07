@@ -1093,7 +1093,6 @@ AUCTeX とは関係ありませんが，先頭に
 
 ## 関連リンク {#ze506029}
 
-- TwitterSearch:AUCTeX, TwitterSearch.en:AUCTeX, TwitterSearch.ja:AUCTeX
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [Newest &#39;auctex&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/auctex)
 - [Starter Kit LaTeX](http://www.kieranhealy.org/esk/starter-kit-latex.html)
