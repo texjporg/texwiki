@@ -47,7 +47,6 @@ OS X
 
 ### 関連リンク {#qb1b8010}
 
-- TwitterSearch:TeXShop, TwitterSearch.en:TeXShop, TwitterSearch.ja:TeXShop
 - MacWiki:TeXShop
 - [Newest &#39;texshop&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texshop)
 - [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
