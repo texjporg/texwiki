@@ -56,7 +56,6 @@ OS X
 - [泉 富士夫/「TeXShop」の検索結果 - Twilog](http://twilog.org/Izumi_Fujio/search?word=TeXShop)
 - [シェルスクリプトに関して uplatex2pdf-utf8という以下のスクリプトがあります。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1399148908)
 - [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
-- [ネ申](https://twitter.com/h_okumura/status/196009146590572545)
 
 #### License {#x8f63441}
 
