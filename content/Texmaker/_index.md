@@ -417,7 +417,6 @@ Texmaker に含まれている fontconfig の設定では Ryumin-Light (明朝�
 
 ## 関連リンク {#n5a9b95f}
 
-- TwitterSearch:Texmaker, TwitterSearch.en:Texmaker, TwitterSearch.ja:Texmaker
 - [http://fossies.org/dox/texmaker/](http://fossies.org/dox/texmaker/)
 - [Newest &#39;texmaker&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texmaker)
     - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
