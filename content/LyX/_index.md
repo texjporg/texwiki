@@ -69,8 +69,6 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ## 関連リンク {#j2a0a89a}
 
-- TwitterSearch:LyX TeX, TwitterSearch.en:LyX TeX, TwitterSearch.ja:LyX TeX
-- TwitterSearch:LyX LaTeX, TwitterSearch.en:LyX LaTeX, TwitterSearch.ja:LyX LaTeX
 - [http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
