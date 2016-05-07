@@ -62,8 +62,8 @@ pacman -S mupdf mupdf-tools
 
 #### Linux Mint/Debian/Ubuntu {#od9b1036}
 
-- UbuntuPackageSearch:mupdf, UbuntuPackageSearch.en:mupdf, UbuntuPackageSearch.ja:mupdf
-- DebianPackageSearch:mupdf, DebianPackageSearch.en:mupdf, DebianPackageSearch.ja:mupdf
+- UbuntuPackageSearch:mupdf
+- DebianPackageSearch:mupdf
 
 Linux Mint や Debian GNU/Linux や Ubuntu では、MuPDF のパッケージは libmupdf-dev と mupdf と mupdf-tools の3つに分かれています。
 自分で MuPDF を使ったプログラムをコンパイルするのでなければ、libmupdf-dev をインストールする必要はありません。
@@ -161,7 +161,6 @@ popd
 
 #### リンク {#c8e94ca4}
 
-- TwitterSearch:MuPDF, TwitterSearch.en:MuPDF, TwitterSearch.ja:MuPDF
 - [Reading PDF file in Windows store App sample in C#, C++, JavaScript for Visual Studio 2012](http://code.msdn.microsoft.com/windowsapps/Open-PDF-in-Windows-store-0614b58c)
 - [MuPDF - DenkiYagi](http://terurou.hateblo.jp/category/MuPDF)
     - [MuPDF conveter（MuPDFLib）でPDFを画像に変換してみる](http://terurou.hateblo.jp/entry/2013/07/10/172026)
