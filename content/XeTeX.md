@@ -236,7 +236,6 @@ XeTeX でタイプセットして出力された PDF ファイルの検索やコ
 \XeTeXgenerateactualtext は XeTeX 0.99995 で追加されました。
 TeX Live 2016 以降または W32TeX \[2016/02/29\] 以降で使用できます。
 
-- TwitterSearch:\XeTeXgenerateactualtext, TwitterSearch.en:\XeTeXgenerateactualtext, TwitterSearch.ja:\XeTeXgenerateactualtext
 - [http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext)
 
 ### 入力用エンコーディング {#dd951bae}
