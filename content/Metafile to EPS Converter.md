@@ -33,8 +33,6 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 
 ### 関連リンク {#o6f53214}
 
-- TwitterSearch:Metafile to EPS Converter, TwitterSearch.en:Metafile to EPS Converter, TwitterSearch.ja:Metafile to EPS Converter
-- TwitterSearch:Metafile EPS, TwitterSearch.en:Metafile EPS, TwitterSearch.ja:Metafile EPS
 - [Metafile to EPS Converter で Windows Metafile を EPS に変換](http://qiita.com/tubo28/items/1f8672fb164aafa9ab31)
 - [EPS変換 Metafile to EPS Converter](http://ameblo.jp/amazingsky/entry-12062809562.html)
 - [【PowerPoint】パワポがなかったら卒論は書けなかった話をする【パワポすごい】](http://buutan.hatenablog.com/entry/2015/02/14/043201)
