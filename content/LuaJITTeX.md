@@ -117,8 +117,6 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 
 ### 関連リンク {#s999db35}
 
-- TwitterSearch:LuaJITTeX, TwitterSearch.en:LuaJITTeX, TwitterSearch.ja:LuaJITTeX
-- TwitterSearch:LuaJITLaTeX, TwitterSearch.en:LuaJITLaTeX, TwitterSearch.ja:LuaJITLaTeX
 - [Newest &#39;luajittex&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/luajittex)
 - [QA: luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)
 - [https://code.launchpad.net/~reviczky/luatex/debian-luajittex](https://code.launchpad.net/~reviczky/luatex/debian-luajittex)
