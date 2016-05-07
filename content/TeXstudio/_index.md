@@ -289,7 +289,6 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 
 ## 関連リンク {#b0ba1b9b}
 
-- TwitterSearch:TeXstudio, TwitterSearch.en:TeXstudio, TwitterSearch.ja:TeXstudio
 - [Newest &#39;texstudio&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texstudio)
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](https://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
 - [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
