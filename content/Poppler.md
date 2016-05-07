@@ -97,8 +97,8 @@ pacman -S poppler poppler-data
 
 #### Linux Mint/Debian/Ubuntu {#k603e696}
 
-- UbuntuPackageSearch:poppler, UbuntuPackageSearch.en:poppler, UbuntuPackageSearch.ja:poppler
-- DebianPackageSearch:poppler, DebianPackageSearch.en:poppler, DebianPackageSearch.ja:poppler
+- UbuntuPackageSearch:poppler
+- DebianPackageSearch:poppler
 
 Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler57 という名前だったり，libpoppler58 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
@@ -398,7 +398,6 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 
 ### 関連リンク {#m3ac74dd}
 
-- TwitterSearch:Poppler, TwitterSearch.en:Poppler, TwitterSearch.ja:Poppler
 - [Poppler - DenkiYagi](http://terurou.hateblo.jp/category/Poppler)
     - [Poppler 0.22.5の.NETバインディングを作成する](http://terurou.hateblo.jp/entry/2013/07/09/160937)
     - [MinGWでPoppler 0.22.5をビルド](http://terurou.hateblo.jp/entry/2013/07/09/160937)
