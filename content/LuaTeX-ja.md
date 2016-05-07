@@ -94,8 +94,6 @@ $ sudo port install texlive-lang-japanese -doc
 
 現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．
 
-- TwitterSearch:LuaTeX 遅い, TwitterSearch:LuaLaTeX 遅い
-- TwitterSearch:LuaTeX 遅, TwitterSearch:LuaLaTeX 遅
 - [https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459](https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459)
 - [luatex でPDFを作れるようになるまで](http://sqr.hateblo.jp/entry/2014/04/20/151523)
 - [定理環境の修飾 mdframed.sty](http://ubutun.blogspot.jp/2013/08/mdframedsty.html)
@@ -224,8 +222,6 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 ### 関連リンク {#sf395095}
 
-- TwitterSearch:LuaTeX-ja, TwitterSearch.en:LuaTeX-ja, TwitterSearch.ja:LuaTeX-ja
-- TwitterSearch:luatexja, TwitterSearch.en:luatexja, TwitterSearch.ja:luatexja
 - [「LuaTeX-ja」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX-ja)
 - [LuaTeX-ja の検索結果 - 0番染色体](http://0-chromosome.hatenablog.jp/search?q=LuaTeX-ja)
 - [うぶつん: LuaTeX-ja](http://ubutun.blogspot.jp/search/label/LuaTeX-ja)
