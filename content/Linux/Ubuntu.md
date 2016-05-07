@@ -16,13 +16,6 @@ Ubuntu は Debian GNU/Linux をベースにした Linux ディストリビュー
 
 Ubuntu の派生版として，[DistroWatch.com](http://distrowatch.com/?language=JP) ページヒットランキング 1 位の [Linux Mint](</Linux/Linux Mint/>) があります．
 
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Logo-ubuntu_no%28r%29-black_orange-hex.svg/500px-Logo-ubuntu_no%28r%29-black_orange-hex.svg.png,right,around,nolink,Ubuntu); -->
-<!-- #ref(https://ubuntu-mate.org/gallery/Artwork/Ubuntu_MATE.png,right,around,nolink,Ubuntu MATE); -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Ubuntu_GNOME_logo.svg/1000px-Ubuntu_GNOME_logo.svg.png,right,around,nolink,Ubuntu GNOME); -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Kubuntu_logo_and_wordmark.svg/500px-Kubuntu_logo_and_wordmark.svg.png,right,around,nolink,Kubuntu); -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Xubuntu_logo_and_wordmark.svg/500px-Xubuntu_logo_and_wordmark.svg.png,right,around,nolink,Xubuntu); -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Lubuntu_logo.svg/500px-Lubuntu_logo.svg.png,right,around,nolink,Lubuntu); -->
-
 ***
 
 ***
@@ -36,11 +29,6 @@ Ubuntu の派生版として，[DistroWatch.com](http://distrowatch.com/?languag
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#c935e6e4}
 
-- UbuntuPackageSearch:texlive-full, UbuntuPackageSearch.en:texlive-full, UbuntuPackageSearch.ja:texlive-full
-- UbuntuPackageSearch:texlive-lang-japanese, UbuntuPackageSearch.en:texlive-lang-japanese, UbuntuPackageSearch.ja:texlive-lang-japanese
-- UbuntuPackageSearch:texlive-luatex, UbuntuPackageSearch.en:texlive-luatex, UbuntuPackageSearch.ja:texlive-luatex
-- UbuntuPackageSearch:texlive-xetex, UbuntuPackageSearch.en:texlive-xetex, UbuntuPackageSearch.ja:texlive-xetex
-- UbuntuPackageSearch:texlive, UbuntuPackageSearch.en:texlive, UbuntuPackageSearch.ja:texlive
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
@@ -49,8 +37,6 @@ Ubuntu の派生版として，[DistroWatch.com](http://distrowatch.com/?languag
     - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
-- [TeX Live/Debian<br>日本語関連のパッケージと texlive パッケージ<br>をインストールする場合<br>texlive-lang-japanese texlive xzdec<br>→lualatexコマンド、luatexja.styは入るが、<br>LuaLaTeXでタイプセットできない](https://twitter.com/ti5942/status/580810894713577472)
-- [Ubuntu で OS の texlive パッケージをインスト<br>ールすると /usr/bin/xetex がインストールされ<br>るけど、それだけでは他の必要なファイルがイ<br>ンストールされなくて結局 plain XeTeX として<br>も使えない。。。](https://twitter.com/trueroad_jp/status/704285097524998144)<br>[texlive-xetex パッケージをインストールすれば<br>必要なファイルが揃うので、ようやく plain <br>XeTeX が使えるようになる。](https://twitter.com/trueroad_jp/status/704285653958160385)
 
 TeX Live/Debian をフルインストールする場合は
 
