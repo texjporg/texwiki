@@ -305,7 +305,6 @@ $ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
 
 ## 関連リンク {#e07d54a5}
 
-- TwitterSearch:TeXworks, TwitterSearch.en:TeXworks, TwitterSearch.ja:TeXworks
 - [Newest &#39;texworks&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texworks)
     - [configure latexmk in Texworks 0.2.3](http://tex.stackexchange.com/questions/18936/configure-latexmk-in-texworks-0-2-3)
 - [にっき&#9834;: TeXworksの検索結果](http://abenori.blogspot.com/search?q=TeXworks)
