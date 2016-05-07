@@ -24,6 +24,7 @@ MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化�
 
 ### LANG {#w1a07eeb}
 
+- [MSYS2 から Visual C++ （の環境変数を設定するバッチファイル）を叩く](http://d-poppo.nazo.cc/blog/2016/02/msys2-vcvars-bat/)
 - [CygwinとMSYS2でのWindowsコマンドの文字化け対策](http://myfuturesightforpast.blogspot.jp/2015/10/cygwinmsys2windows.html)
 
 日本語版 Windows では MSYS2 の環境変数 LANG は ja_JP.UTF-8 です．
@@ -38,6 +39,12 @@ iconv で 入力文字コードに CP932，出力文字コードに UTF-8 を指
 
 ```
 $ powershell -? | iconv -f CP932 -t UTF-8
+```
+
+&#x7e;/.bash_profile に以下の記述を追加しておけば文字化けしなくなるようです．
+
+```
+cmd /c "chcp 65001 > NUL"
 ```
 
 ## Mingw-w64 {#q2a4db43}
@@ -76,7 +83,6 @@ $ ../Build --no-clean
 
 ## MSYS2 関連リンク {#i2a5ff0e}
 
-- TwitterSearch:MSYS2, TwitterSearch.en:MSYS2, TwitterSearch.ja:MSYS2
 - [http://qiita.com/tags/msys](http://qiita.com/tags/msys)
 - [https://sourceforge.jp/projects/msys2-crossgcc/](https://sourceforge.jp/projects/msys2-crossgcc/)
     - [https://sourceforge.jp/projects/msys2-crossgcc/howto/install](https://sourceforge.jp/projects/msys2-crossgcc/howto/install)
