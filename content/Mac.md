@@ -65,7 +65,7 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
     - <strong>[TeXShop](/TeXShop/)</strong> ← MacTeX に標準で付属しています。
-        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。(--&gt; TeXShopの評判)
+        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。
     - <strong>[TeXstudio](/TeXstudio/)</strong>
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
     - <strong>[LyX](/LyX/)</strong>
