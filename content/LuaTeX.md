@@ -53,8 +53,6 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 
 ### 関連リンク {#cdd9fc14}
 
-- TwitterSearch:LuaTeX, TwitterSearch.en:LuaTeX, TwitterSearch.ja:LuaTeX
-- TwitterSearch:LuaLaTeX, TwitterSearch.en:LuaLaTeX, TwitterSearch.ja:LuaLaTeX
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
 - [「LuaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX)
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
