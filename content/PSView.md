@@ -46,7 +46,3 @@ local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
 ```
 
 に修正します。
-
-### 関連リンク {#vbe438a4}
-
-- TwitterSearch.ja:PS_View
