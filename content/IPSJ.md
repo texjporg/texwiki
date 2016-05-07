@@ -12,7 +12,6 @@ pukiwiki: "IPSJ"
 現在の情報処理学会スタイル ipsj.cls は jis フォントメトリックに対応しています． <!-- というわけなので，「ipsj+jisフォントメトリック」という項目名から「IPSJ」に変更しました． -->
 ただし，uplatex には対応できていないようです．
 
-- TwitterSearch:IPSJ upLaTeX
 - [ipsj.cls で uplatex → NG](http://uep.ipe.media.kyoto-u.ac.jp/ipsj-cls-%E3%81%A7-uplatex-ng/)
 
 % Fix Me! 以下は情報が古そうなので，どなたか修正お願いします！
