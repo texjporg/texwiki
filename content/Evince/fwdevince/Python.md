@@ -28,6 +28,10 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 
 などを試みてください．
 
+<!-- オリジナルが GPL なので，ライセンス表示を消してはならない． -->
+<!-- 最初に書いた通り置き場所も検討されるべきだが，とりあえず． -->
+<!-- - - kmaeda (2016/05/08) -->
+
 ***
 
 - fwdevince
@@ -37,14 +41,37 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 ```
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+```
 
+```
+# Copyright (C) 2010 Jose Aliste
+#               2011 Benjamin Kellermann
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public Licence as published by the Free Software
+# Foundation; either version 2 of the Licence, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more
+# details.
+#
+# You should have received a copy of the GNU General Public Licence along with
+# this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
+# Street, Fifth Floor, Boston, MA  02110-1301, USA
+```
+
+```
 import dbus
 import argparse
 import os.path
 import traceback
 import sys
 import urllib.parse
+```
 
+```
 class EvinceForwardSearch:
     def parse_args(self):
         parser = argparse.ArgumentParser(description='Forward search with Evince')
@@ -52,13 +79,17 @@ class EvinceForwardSearch:
         parser.add_argument('line', nargs=1, type=int, help='Line')
         parser.add_argument('tex', nargs=1, help='TeX file')
         return parser.parse_args()
+```
 
+```
     def run(self):
         args = self.parse_args()
         pdf = os.path.abspath(args.pdf[0]).replace(" ", "%20")
         line = int(args.line[0])
         tex = os.path.join(os.path.dirname(os.path.abspath(args.tex[0])), './', os.path.basename(os.path.abspath(args.tex[0])))
+```
 
+```
         try:
             import time
             bus = dbus.SessionBus()
@@ -69,14 +100,18 @@ class EvinceForwardSearch:
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
             traceback.print_exc()
+```
 
+```
 class EvinceInverseSearch:
     def parse_args(self):
         parser = argparse.ArgumentParser(description='Inverse search with Evince')
         parser.add_argument('pdf', nargs=1, help='PDF file')
         parser.add_argument('editor', nargs=1, help='Editor command')
         return parser.parse_args()
+```
 
+```
     def run(self):
         import dbus.mainloop.glib
         from gi.repository import GObject
@@ -87,23 +122,33 @@ class EvinceInverseSearch:
         a = EvinceWindowProxy('file://' + pdf, editor, True)
         loop = GObject.MainLoop()
         loop.run()
+```
 
+```
 class EvinceWindowProxy:
     """A Dbus proxy for an Evince Window."""
     daemon = None
     bus = None
+```
 
+```
     RUNNING = range(2)
     CLOSED = range(2)
     EV_DAEMON_PATH = '/org/gnome/evince/Daemon'
     EV_DAEMON_NAME = 'org.gnome.evince.Daemon'
     EV_DAEMON_IFACE = 'org.gnome.evince.Daemon'
+```
 
+```
     EVINCE_PATH = '/org/gnome/evince/Evince'
     EVINCE_IFACE = 'org.gnome.evince.Application'
+```
 
+```
     EV_WINDOW_IFACE = 'org.gnome.evince.Window'
+```
 
+```
     def __init__(self, uri, editor, apawn=False, logger=None):
         self._log = logger
         self.uri = uri.replace(" ", "%20")
@@ -115,7 +160,9 @@ class EvinceWindowProxy:
         try:
             if EvinceWindowProxy.bus is None:
                 EvinceWindowProxy.bus = dbus.SessionBus()
+```
 
+```
             if EvinceWindowProxy.daemon is None:
                 EvinceWindowProxy.daemon = EvinceWindowProxy.bus.get_object(self.EV_DAEMON_NAME,
                     self.EV_DAEMON_PATH,
@@ -129,21 +176,29 @@ class EvinceWindowProxy:
             traceback.print_exc()
             if self._log:
                 self._log.debug('Could not connect to the Evince Daemon')
+```
 
+```
     def _on_doc_loaded(self, uri, **keyargs):
         if uri == self.uri and self._handler is None:
             self.handle_find_document_reply(keyargs['sender'])
+```
 
+```
     def _get_dbus_name(self, spawn):
         EvinceWindowProxy.daemon.FindDocument(self.uri, spawn,
                      reply_handler=self.handle_find_document_reply,
                      error_handler=self.handle_find_document_error,
                      dbus_interface = self.EV_DAEMON_IFACE)
+```
 
+```
     def handle_find_document_error(self, error):
         if self._log:
             self._log.debug('FindDocument DBus call has failed')
+```
 
+```
     def handle_find_document_reply(self, evince_name):
         if self._handler is not None:
             handler = self._handler
@@ -156,21 +211,27 @@ class EvinceWindowProxy:
             self.evince.GetWindowList(dbus_interface = self.EVINCE_IFACE,
                           reply_handler = handler,
                           error_handler = self.handle_get_window_list_error)
+```
 
+```
     def handle_get_window_list_error (self, e):
         if self._log:
             self._log.debug("GetWindowList DBus call has failed")
+```
 
+```
     def handle_get_window_list_reply (self, window_list):
         if len(window_list) > 0:
             window_obj = EvinceWindowProxy.bus.get_object(self.dbus_name, window_list[0])
             self.window = dbus.Interface(window_obj,self.EV_WINDOW_IFACE)
             self.window.connect_to_signal("SyncSource", self.on_sync_source)
         else:
-            #That should never happen. 
+            #That should never happen.
             if self._log:
                 self._log.debug("GetWindowList returned empty list")
+```
 
+```
     def on_sync_source(self, input_file, source_link, timestamp):
         import subprocess
         import re
@@ -191,7 +252,9 @@ class EvinceWindowProxy:
         subprocess.call(cmd, shell=True)
         if self.source_handler is not None:
             self.source_handler(input_file, source_link, timestamp)
+```
 
+```
 if __name__ == '__main__':
     cmd = os.path.basename(sys.argv[0])
     if cmd == 'fwdevince' or cmd == 'evince_forward_search':
