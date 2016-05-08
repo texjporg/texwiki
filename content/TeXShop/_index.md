@@ -10,8 +10,6 @@ pukiwiki: "TeXShop"
 
 ## TeXShop {#q728ac5b}
 
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/9/95/TeXShop_icon.png,right,around,nolink,240x240,TeXShop) -->
-
 TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標準で含まれています．
 
 <strong>公式 Web サイト</strong>
@@ -31,6 +29,10 @@ TeXShop をモデルにしたクロスプラットフォームな統合環境と
 
 OS X
 
+### License {#x8f63441}
+
+GPLv2
+
 <!-- **不具合 [#i75be8c7] -->
 
 ### 設定 {#sc027054}
@@ -48,19 +50,4 @@ OS X
 ### 関連リンク {#qb1b8010}
 
 - MacWiki:TeXShop
-- [Newest &#39;texshop&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/texshop)
-- [texshopとは - はてなキーワード](http://d.hatena.ne.jp/keyword/texshop)
-- [「texshop」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/texshop)
 - [Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
-- [Yusuke Terada/「TeXShop」の検索結果 - Twilog](http://twilog.org/doraTeX/search?word=TeXShop)
-- [泉 富士夫/「TeXShop」の検索結果 - Twilog](http://twilog.org/Izumi_Fujio/search?word=TeXShop)
-- [シェルスクリプトに関して uplatex2pdf-utf8という以下のスクリプトがあります。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1399148908)
-- [若松久仁光のブログ - TeXworks, TeXShop](http://www.geocities.jp/flutecore/Weblog/archives/cat_texworkstexshop.html)
-
-#### License {#x8f63441}
-
-GPLv2
-
-#### ChangeLog {#td599942}
-
-- [Changes in Version 3](http://pages.uoregon.edu/koch/texshop/changes_3.html)
