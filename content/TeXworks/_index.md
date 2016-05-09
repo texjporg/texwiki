@@ -112,49 +112,44 @@ OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wi
 
 ### かな漢字変換をする際に文字が白く表示され，ハイライトに隠れて見えにくくなる {#s5bfc44e}
 
-TeXworks で \[編集\]-\[設定\] のエディタタブの「エディタ全体のオプション」で「現在カーソルのある行をハイライトする」にチェックを入れている場合，かな漢字変換の際に文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生します．これを回避するには，「現在カーソルのある行をハイライトする」のチェックをはずしてください．
+TeXworks で \[編集\]-\[設定\] のエディタタブの「エディタ全体のオプション」で「現在カーソルのある行をハイライトする」にチェックを入れている場合，かな漢字変換の際に文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生します．今のところ，「現在カーソルのある行をハイライトする」のチェックを外す（ハイライト機能を使わない）ぐらいしか対策はありません．
 
-#### ソースコードから修正する方法 (Windows) {#pb4e9c13}
+% このことで本当に困っている人がいるならば，バグ報告するべき．インプットメソッドが必要な言語環境でしか問題にならないので，少し説明は大変かもしれないが．
 
-- [Git](https://git-scm.com/), [Poppler](/Poppler/), [Hunspell](/Hunspell/) をインストールします．
+<!-- 以下は一つの修正例だとは思うが，自分の環境だけで対応するのはあまり筋がよくないと思う． -->
+<!-- パッチとしても -->
+<!-- > ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります． -->
+<!-- とあるので，取り込んでもらえない可能性が高そう． -->
 
-- TeXworks のソースコードを取得します．
+<!-- ***ソースコードから修正する方法 (Windows) [#pb4e9c13] -->
 
-```
-$ git clone https://github.com/TeXworks/texworks.git
-$ pushd texworks
-```
+<!-- -[[Git:https://git-scm.com/]], [[Poppler]], [[Hunspell]] をインストールします． -->
 
-- TeXworks のソースコードの該当箇所を修正します．
+<!-- -TeXworks のソースコードを取得します． -->
 
-[texworks/src/CompletingEdit.cpp](https://github.com/TeXworks/texworks/blob/master/src/CompletingEdit.cpp) の
+<!--  $ git clone https://github.com/TeXworks/texworks.git -->
+<!--  $ pushd texworks -->
 
-```
-currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
-```
+<!-- -TeXworks のソースコードの該当箇所を修正します． -->
 
-の部分を
+<!-- [[texworks/src/CompletingEdit.cpp:https://github.com/TeXworks/texworks/blob/master/src/CompletingEdit.cpp]] の -->
+<!--  currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB)); -->
+<!-- の部分を -->
+<!--  currentLineFormat->setForeground(QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG + .9 * fgG, .1 * bgB + .9 * fgB)); -->
+<!--  currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB)); -->
+<!-- のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG + .9 * fgG, .1 * bgB + .9 * fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります． -->
 
-```
-currentLineFormat->setForeground(QColor::fromRgbF(.1 * bgR + .9 * fgR, .1 * bgG + .9 * fgG, .1 * bgB + .9 * fgB));
-currentLineFormat->setBackground(QColor::fromRgbF(.9 * bgR + .1 * fgR, .9 * bgG + .1 * fgG, .9 * bgB + .1 * fgB));
-```
+<!-- -TeXworks をビルドします． -->
 
-のように QTextFormat::setForeground メソッドで QColor::fromRgbF(.1 \* bgR + .9 \* fgR, .1 \* bgG + .9 \* fgG, .1 \* bgB + .9 \* fgB) や Qt::darkBlue や Qt::black などの色を指定すれば回避できます．ただし，この修正方法ではカーソル行の文字が指定された色で表示されてしまい，色分けされなくなります．
+<!--  $ mkdir build -->
+<!--  $ pushd build -->
+<!--  $ cmake .. -G "MSYS Makefiles" -DWITH_LUA=OFF -DWITH_PYTHON=OFF -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -Dgp_cmd=C:/MinGW/bin/objdump.exe -->
+<!--  $ make -->
+<!--  $ ./src/TeXworks.exe & -->
 
-- TeXworks をビルドします．
+<!-- 上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました． -->
 
-```
-$ mkdir build
-$ pushd build
-$ cmake .. -G "MSYS Makefiles" -DWITH_LUA=OFF -DWITH_PYTHON=OFF -DZLIB_LIBRARY=C:/MinGW/bin/zlib1.dll -Dgp_cmd=C:/MinGW/bin/objdump.exe
-$ make
-$ ./src/TeXworks.exe &
-```
-
-上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました．
-
-- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されます．C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+<!-- -このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されます．C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります． -->
 
 ## スクリプト {#m00b4a58}
 
@@ -169,6 +164,6 @@ $ ./src/TeXworks.exe &
 - [TeXworks のテンプレートに日本語の雛形を入れてみました  - I'm Just Another TeXnician.](http://d.hatena.ne.jp/munepi/20110625/texworks)
     - [munepi/texworks-templates-japanese: Japanese templates of TeXworks](https://github.com/munepi/texworks-templates-japanese)
 - [Texworksで背景色と文字の色やキーワードの色を変更するには - ちょっと便利なパソコンノート - Yahoo!ブログ](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
-- [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)
+- [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)：Jonathan Kew（TeXworks project の一人）による TUG 2010 での講演ビデオ
 
 [^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
