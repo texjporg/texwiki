@@ -30,10 +30,6 @@ Windows, OS X, Linux
 
 GPLv2
 
-### リリース情報/ChangeLog {#g3ccd7ae}
-
-[ChangeLog](http://www.xm1math.net/texmaker/log.html)
-
 ### 派生版 {#n8123b82}
 
 - [TeXstudio](/TeXstudio/)
@@ -41,7 +37,26 @@ GPLv2
 
 ## ダウンロード/インストール {#q69dea61}
 
-Texmaker/インストール を参照．
+[Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
+から，Windows, OS X, Linux 用のバイナリおよびソースコードがダウンロードできます．
+
+- Windows の場合は exe 形式のものをダウンロードして実行すればインストールされます．以下の記事も参考になります．
+    - [DTP Tools: Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
+- OS X の場合は zip 形式のものをダウンロードして展開します．
+- Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
+
+### 日本語化 {#k564e4ed}
+
+Texmaker は英語でメニューなどが表示されますが，日本語化されたものも作成されています．
+
+#### Texmaker 4.0.1 {#h11371e4}
+
+- [TexmakerでTeX文書を書こう！](http://writingwithtexmaker.blogspot.jp/)
+    - [日本語キットfor texmaker4.0.1](http://writingwithtexmaker.blogspot.jp/2013/04/texmaker40.html)
+
+#### Texmaker 3.0 {#t04ef444}
+
+- [Texmaker 日本語化キット](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)（田中健太さん）
 
 ## 不具合 {#h6093782}
 
@@ -49,12 +64,9 @@ Texmaker/インストール を参照．
 
 ### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
 
-<!-- -[[Issue 104:	Apple JIS keyword issue:https://code.google.com/p/texmaker/issues/detail?id=104]] -->
-<!-- -[[ただし，''MacOSX SnowLeopardの環境では，半角のバックスラッシュが入力できず，半角の￥になってしまうという問題があります．''もっとも原始的な(笑)コピペよりもう少しましな方法として，次のようにすることでとりあえず回避できます．&br;▷ ことえりの「環境設定」の「入力文字」の「JISキーボードの￥キーで入力する文字」を「バックスラッシュ」に設定&br;▷ ことえりの辞書に「読み：半角バックスラッシュ→単語：半角バックスラッシュ」として登録&br;▷ ひらがな（全角入力）モードで「￥」キーを入力&br;変換確定のためreturnキーを一度叩く必要はあるものの入力は可能です．ただし''必ず全角入力モードでないとだめ''です．半角英数モードだと，当然ながら半角の￥マークになります．とりあえず，対処療法ですが，目的は達成できます（笑）．ただその弊害として全角の￥記号が打てなくなりますが，こちらは「option+Y」で入力できます．:http://www.sip-ac.jp/sip/tex02.html]] -->
-
 OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
 
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
+Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
 
 ### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#c698d89f}
 
@@ -67,60 +79,6 @@ OS X では発生しないようです．
 #### Windows の場合 {#z3a8b3e4}
 
 Windows の場合は Dark theme を選択することで回避できます．
-Dark theme を選択しても読めない場合は 派生版の [TeXstudio](/TeXstudio/) を使用してください．
-
-<!-- - --  -->
-<!-- &color(#9BC527,#9BC527){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''Texmaker の設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#9BC527,#9BC527){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
-<!--  -->
-<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png,left,around,nolink,コマンド) -->
-<!-- &color(Black,#F5F5F5){エディタ};&br; -->
-<!-- &color(Black,#F5F5F5){フォント名 　　　　　　　　　　　　　　　　　　　　};%%%メイリオ　　　　　　　　　　　''ᐯ''%%%&color(Black,#F5F5F5){　☑ ワードラップ};&br; -->
-<!-- &color(Black,#F5F5F5){サイズ 　　　　　　　　　　　　　　　　　　　　　　};%%%12　　　　　　　　　　　　　 [''⇕'']%%%&color(Black,#F5F5F5){　☑ 補完};&br; -->
-<!-- &color(Black,#F5F5F5){文字コード　　　　　　　　　　　　　　　　　　　　};&color(Black,#EEEEEE){%%%[UTF-8　　　　　　　　　　　▼]%%%};&color(Black,#F5F5F5){　☑ 行番号の表示};&br; -->
-<!-- 　　　　　''コマンド''　　　　 &color(Black,#F5F5F5){☐ 外部からの変更をチェックする　　　　　　　　　　　　　　　　　　　　　　　　 ☑ 10 分ごとにバックアップをとる};&br; -->
-<!-- #img(,clear) -->
-<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png,left,around,nolink,クイックビルド) -->
-<!-- &color(Black,#F5F5F5){スペルチェック辞書　};%%%C:/texmakerwin32usb/en_US.dic　　　　　　　　　　　　　　　　%%%&color(Black,#F5F5F5){　　　　&color(black,yellow){''☐ インライン ← 日本語の文書を作成する場合はチェックをはずす''};};&br; -->
-<!-- &color(Black,#F5F5F5){タブ幅 (スペースの数) };%%%4　　[''⇕'']%%%&color(Black,#F5F5F5){　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ タブをスペースで置き換える};&br; -->
-<!-- &color(Black,#F5F5F5){色};&br; -->
-<!-- &br; -->
-<!-- 　　　''クイックビルド''&br; -->
-<!-- #img(,clear) -->
-<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png,left,around,nolink,エディタ) -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- &br; -->
-<!-- 　　&color(Black,#DAEAFF){　　　''エディタ''　　　};&br; -->
-<!-- #img(,clear) -->
-<!-- #ref(https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png,left,around,nolink,ショートカット) -->
-<!-- > -->
-<!-- >> -->
-<!-- >>> -->
-<!-- :| -->
-<!-- > -->
-<!-- >> -->
-<!-- >>> -->
-<!-- ::| -->
-<!-- > -->
-<!-- |COLOR(#555):Background|#ffffff　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　| -->
-<!-- |COLOR(#555):Current line|#ececec| -->
-<!-- |COLOR(#555):Highlighted line|#ff0000| -->
-<!-- |COLOR(#555):Text|#000000| -->
-<!-- |COLOR(#555):Comment|#606060| -->
-<!-- |COLOR(#555):Math|#008000| -->
-<!-- |COLOR(#555):...|...| -->
-<!-- < -->
-
-<!-- 　　　　　　　　　　　　　　 &color(Black,#EEEEEE){[ 　　　　　 ダークテーマ 　　　　　 ]};&color(black,yellow){''← かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる場合は Dark theme を選択する''};&br; -->
-<!-- 　　　　　　　　　　　　　　 &color(Black,#EEEEEE){[　　　　デフォルトのテーマ　　　　]};&br; -->
-<!-- #img(,clear) -->
-<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){Svn};&br; -->
-<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){☐ Detect uncommitted lines at the opening};&br; -->
-<!-- 　　　　　　　　　　　　　　 &color(Black,#F5F5F5){Path to the svn command};&br; -->
-<!-- &br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black,#EEEEEE){[　　　OK　　　]};　&color(Black,#EEEEEE){[ キャンセル ]};&br; -->
-<!-- - --  -->
 
 #### Linux の場合 {#nd7d6ba8}
 
@@ -136,117 +94,43 @@ fcitx の \[設定\] &gt; \[アドオン\] &gt; \[拡張を ON\] &gt; \[Fcitx XI
 
 uim を使用している場合は背景が黒く表示されて読めなくなることがあるようです．
 
-<!-- バージョン 1.3 の公式バイナリではこの不具合は発生しませんが，1.3 のソースを Qt 4.7.2 でビルドしてみるとこの不具合が発生します． -->
-<!-- また，同じく Qt を使用している [[TeXworks でもハイライトに関する不具合が存在する>TeXworks#s5bfc44e]]ので，もしかすると Qt の不具合 (仕様？) かもしれません． -->
+<!-- 以下の「修正方法」なるもので本当に解決するのならば，報告するべきでしょう． -->
+<!-- たぶんわざわざ setFormat() しているものをコメントアウトするので何か副作用があるのだろうと -->
+<!-- 思いますが． -->
 
-#### 修正方法 (Windows) {#e1ab5b1e}
+<!-- ***修正方法 (Windows) [#e1ab5b1e] -->
 
-Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます．
+<!-- Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます． -->
 
-- [Poppler](/Poppler/) をインストールします．
+<!-- -[[Poppler]] をインストールします． -->
 
-- Texmaker のソースコードを修正してビルドします．
+<!-- -Texmaker のソースコードを修正してビルドします． -->
 
-<!-- $ curl -RLO http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2 -->
+<!-- // $ curl -RLO http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2 -->
+<!--  $ powershell -Command "& {Invoke-WebRequest -Uri 'http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2' -OutFile 'texmaker-4.5.tar.bz2'}" -->
+<!--  $ tar xvf texmaker-4.5.tar.bz2 -->
+<!--  $ cd texmaker-4.5 -->
 
-```
-$ powershell -Command "& {Invoke-WebRequest -Uri 'http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2' -OutFile 'texmaker-4.5.tar.bz2'}"
-$ tar xvf texmaker-4.5.tar.bz2
-$ cd texmaker-4.5
-```
+<!-- Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() メソッドの中の -->
+<!--  if (QColor::isValidColor(confDlg->ui.colortableWidget->item(3,1)->text())) colorStandard=QColor(confDlg->ui.colortableWidget->item(3,1)->text()); -->
+<!-- という処理でテキストの色を設定しています． -->
+<!-- デフォルトではテキストの色は黒です． -->
+<!-- 日本語変換時にも，この色が適用され，文字の色が黒くなってしまうので [[latexhighlighter.cpp:https://bitbucket.org/srazi/biditexmaker3/src/tip/latexhighlighter.cpp]] の -->
+<!--  setFormat( i, 1,ColorStandard); -->
+<!-- と書かれている箇所を全て -->
+<!--  //setFormat( i, 1,ColorStandard); -->
+<!-- としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます． -->
 
-Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() メソッドの中の
+<!--  $ qmake texmaker.pro -->
+<!--  $ make release -->
+<!--  $ cd release -->
+<!--  $ ./texmaker & -->
 
-```
-if (QColor::isValidColor(confDlg->ui.colortableWidget->item(3,1)->text())) colorStandard=QColor(confDlg->ui.colortableWidget->item(3,1)->text());
-```
+<!-- -かな漢字変換をする際に，文字が黒くならないことを確認します． -->
 
-という処理でテキストの色を設定しています．
-デフォルトではテキストの色は黒です．
-日本語変換時にも，この色が適用され，文字の色が黒くなってしまうので [latexhighlighter.cpp](https://bitbucket.org/srazi/biditexmaker3/src/tip/latexhighlighter.cpp) の
+<!-- -日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します． -->
 
-```
-setFormat( i, 1,ColorStandard);
-```
-
-と書かれている箇所を全て
-
-```
-//setFormat( i, 1,ColorStandard);
-```
-
-としてコメントアウトしてビルドすれば，日本語変換時に黒くなる現象を回避できます．
-
-```
-$ qmake texmaker.pro
-$ make release
-$ cd release
-$ ./texmaker &
-```
-
-- かな漢字変換をする際に，文字が黒くならないことを確認します．
-
-- 日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します．
-
-- このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されるので，Texmaker の実行に必要なライブラリ (DLL ファイル) の確認をします．
-    objdump の他に [Dependency Walker](http://www.dependencywalker.com/) ([Dependency Walker 日本語化パッチ](http://blog.livedoor.jp/blackwingcat/archives/1000078.html)) を使って確認することも可能です．
-
-```
-$ objdump -p texmaker.exe | grep -i -E "\.dll" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: Qt5Core.dll
-        DLL Name: Qt5Gui.dll
-        DLL Name: Qt5Network.dll
-        DLL Name: Qt5PrintSupport.dll
-        DLL Name: Qt5WebKitWidgets.dll
-        DLL Name: Qt5Widgets.dll
-        DLL Name: Qt5Xml.dll
-        DLL Name: libgcc_s_dw2-1.dll
-        DLL Name: libpoppler.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: msvcrt.dll
-        DLL Name: zlib1.dll
-```
-
-```
-$ objdump -p /mingw/bin/libpoppler.dll | grep "DLL Name" | sort | uniq
-        DLL Name: ADVAPI32.DLL
-        DLL Name: GDI32.dll
-        DLL Name: KERNEL32.dll
-        DLL Name: USER32.dll
-        DLL Name: libcurl-4.dll
-        DLL Name: libfontconfig-1.dll
-        DLL Name: libfreetype-6.dll
-        DLL Name: libgcc_s_dw2-1.dll
-        DLL Name: libjpeg-9.dll
-        DLL Name: liblcms2-2.dll
-        DLL Name: libopenjp2.dll
-        DLL Name: libpng16-16.dll
-        DLL Name: libstdc++-6.dll
-        DLL Name: libtiff-5.dll
-        DLL Name: msvcrt.dll
-        DLL Name: zlib1.dll
-```
-
-```
-$ objdump -p /mingw/bin/libfontconfig-1.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: libfreetype-6.dll
-        DLL Name: libxml2-2.dll
-        DLL Name: msvcrt.dll
-```
-
-```
-$ objdump -p /mingw/bin/libxml2-2.dll | grep "DLL Name" | sort | uniq
-        DLL Name: KERNEL32.dll
-        DLL Name: WS2_32.dll
-        DLL Name: libiconv-2.dll
-        DLL Name: liblzma-5.dll
-        DLL Name: msvcrt.dll
-        DLL Name: zlib1.dll
-```
-
-- C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります．
+<!-- -C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります． -->
 
 ### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある {#i1222dd8}
 
@@ -259,6 +143,8 @@ ibus-kkc も同様に \section{ の直後では日本語入力が ON になら�
 これらの問題は，[TeXstudio](/TeXstudio/) を使用することで回避できます．
 
 ### コマンドの設定に使用するパラメータのパースの仕方に問題がある {#t0aace20}
+
+% これが本当で困っているならばバグ報告するべきでは．ここに書いて終わりですか？
 
 Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．
 [TeXstudio](/TeXstudio/) ではコマンドの設定に使用するパラメータが正しく処理されています．
@@ -285,10 +171,12 @@ Windows PowerShell では
 このようにして Ruby や Windows PowerShell を使用して表示したい文字を「数値→文字」の変換で表現して設定を記述すれば OK です．
 Ruby, Windows PowerShell の他に バッチファイルやシェルスクリプトを使用しても OK です．
 
-### Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがある {#o6c242bd}
+<!-- ↓何を言っているのか意味がわからないです．上の「不具合」をよくよく読んでようやくわかったけれども，いずれにしてもこの書き方だと伝わらないでしょう． -->
 
-Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります．
-この場合は Ruby を使用して設定を記述してください．
+<!-- **Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがある [#o6c242bd] -->
+
+<!-- Windows PowerShell を使用して設定を記述して実行すると Texmaker が応答しなくなることがあります． -->
+<!-- この場合は Ruby を使用して設定を記述してください． -->
 
 ## 文字コードの変換 {#y2f21c8a}
 
@@ -409,28 +297,15 @@ Texmaker に含まれている fontconfig の設定では Ryumin-Light (明朝�
 
 ## 設定 {#e3cd1932}
 
+% 以下の設定解説ページは読めるものではない．一から書き直しが必要．
+
 [Texmaker/設定](</Texmaker/設定/>) を参照．
 
 ## 使い方 {#qb8bff72}
 
 [Texmaker/使い方](</Texmaker/使い方/>) を参照．
 
-## 関連リンク {#n5a9b95f}
+<!-- *関連リンク [#n5a9b95f] -->
 
-- [http://fossies.org/dox/texmaker/](http://fossies.org/dox/texmaker/)
-- [Newest &#39;texmaker&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texmaker)
-    - [Forward/inverse search for Texmaker on OS X](http://tex.stackexchange.com/questions/9904/forward-inverse-search-for-texmaker-on-os-x)
-    - [Configure forward search with Texmaker + SumatraPDF](http://tex.stackexchange.com/questions/37327/configure-forward-search-with-texmaker-sumatrapdf)
-- [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
-- [Windows + TeX Live + Texmaker 環境で自動インデント](http://blog.livedoor.jp/user5/archives/42208915.html)
-- [Mac OS X MarvericksへのTeX環境のインストール](http://qiita.com/lethe2211/items/4faf76cb498a37a43312)
-- [How to US-English spell checking in Texmaker (Texmakerのスペルチェックを米語にする)](https://gist.github.com/tos-kamiya/1c091f80be9c7e98f70c)
-- [Texmakerにスペルチェックを追加する](http://sweettips.take-uma.net/latex/texmaker%E3%81%AB%E3%82%B9%E3%83%9A%E3%83%AB%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%82%92%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B)
-- [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196)
-- [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
-- [http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/](http://linuxg.net/how-to-install-texmaker-4-1-on-ubuntu-13-10-13-04-12-10-12-04-linux-mint-16-15-14-13-pear-os-8-7-elementary-os-0-2-debian-wheezy-and-kwheezy/)
-- [Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
-- [GateKeeperに引っかかった時の対処(OS X)](http://hnsn1202.hateblo.jp/entry/2013/04/09/193136)
-- [TeXmakerで使用可能なファイル名について](http://fagahhe2645.hatenablog.com/entry/2013/02/07/231005)
-- [texのエディタ](http://masashiabe665.wordpress.com/2014/07/14/tex%E3%81%AE%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/)
-- [Texmaker+makefile+Built-in Viewer](http://d.hatena.ne.jp/NU_Pan/20140723/1406103369)
+<!-- 適切な解説と一緒に置かれていないとゴミ情報にしかならない． -->
+<!-- もちろん，リンクされていた記事がゴミという意味では全くないが，一旦消す． -->
