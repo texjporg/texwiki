@@ -10,18 +10,16 @@ pukiwiki: "TeXworks/設定"
 
 [TeXworks](/TeXworks/) > 設定
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-```
-
-```
+***
 
 ## 日本語環境用の設定 {#bcc74f23}
 
 公式サイトの Windows バイナリや TeX Live の TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
 
-W32TeX の TeXworks は pdfpLaTeX が標準になっています．<br>
-この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています．<br>
+W32TeX の TeXworks は pdfpLaTeX が標準になっています．
+この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています．
 
 ```
 @echo off
@@ -88,43 +86,10 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 
 ## エンコーディングの設定 {#sc2efa04}
 
-\[編集\]-\[設定\] のエディタタブのエンコーディングのリストから使用するエンコーディングを指定できます．<br>
-デフォルトでは UTF-8 に設定されています．<br>
-エディタの編集画面の右下に表示されているエンコーディングをクリックしてエンコーディングを変更することもできます．<br>
+\[編集\]-\[設定\] のエディタタブのエンコーディングのリストから使用するエンコーディングを指定できます．
+デフォルトでは UTF-8 に設定されています．
 
-***
-
-<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>TeXworksの設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#00ADDD;background-color:#00ADDD;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
-
-　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]</ins></span><strong>\[　エディタ　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　プレビュー　\]\[　タイプセット　\]\[　スクリプト　\]</ins></span><br>
-　　　　エディタのデフォルト<br>
-　　　　<ins> メイリオ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong></ins> <ins>12 pt　\[<strong>⇕</strong>\]</ins><br>
-　　　　タブ幅:　　　　　　　　　　　　　　　　　　　　　　<ins>32 px　　　　　　　　　　　　　　　　　\[<strong>⇕</strong>\]</ins><br>
-　　　　☐ 行番号表示　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 行の折り返し<br>
-　　　　構文の色付け: <span style="color:Black;background-color:#EEEEEE;">\[ LaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　自動インデント: <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-　　　　引用符の入力支援 <span style="color:Black;background-color:#EEEEEE;">\[ なし　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　スペルチェッカの言語: <span style="color:Black;background-color:#EEEEEE;">\[ English - UnitedStates (en_US)　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-　　　　エンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[ UTF-8　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-<br>
-
-　　　　エディタ全体のオプション<br>
-　　　　☐ 現在カーソルのある行をハイライトする<br>
-　　　　☑ 自動補完を有効にする<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　注意:これはデフォルトの設定です。設定を変更しても、すでに開いているウィンドウには影響しません。既存のウィンドウの設定を変更す<br>
-　　　るには、"フォーマット" メニューから設定をおこなってください<br>
-
-***
+エディタの編集画面の右下に表示されているエンコーディングをクリックしてエンコーディングを変更することもできます．
 
 ## タイプセットの設定 {#q50d2378}
 
@@ -156,10 +121,11 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 
 ## スペルチェックの辞書の設定 {#vd0f0d24}
 
-TeX Live の TeXworks と OS X の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．<br>
-W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．<br>
-W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．<br>
-詳細については，ヘルプを見てください．<br>
+TeX Live の TeXworks と OS X の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．
+
+W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．
+W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．
+詳細については，ヘルプを見てください．
 
 ### Windows の TeX Live 2015 の場合 {#ycb12d64}
 
@@ -183,38 +149,11 @@ W32TeX に付属のものは，スペルチェック用の英語辞書を前も�
 
 ## フォントの選択 {#h886fb41}
 
-\[フォーマット\]-\[フォント\] で編集中のファイルを表示するためのフォントを選択できます．<br>
-
-***
-
-<span style="color:#00ADDD;background-color:#00ADDD;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>フォントの選択</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-フォント(F)　　　　　　　　　　　　　　　　　　　　　　　フォントスタイル(Y)　　　　　　　　　サイズ(S)<br>
-<span style="color:White;background-color:#1188FF;">メイリオ</span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">明朝</span>　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">12</span><br>
-
-Urdu Typesetting　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">明朝　　　　　　　　　　　　　　</span>　　 6<br>
-Utsaah　　　　　　　　　　　　　　　　　　　　　　　　　　ゴシック　　　　　　　　　　　　　　 7<br>
-Vani　　　　　　　　　　　　　　　　　　　　　　　　　　　 イタリック　　　　　　　　　　　　　　8<br>
-Verdana　　　　　　　　　　　　　　　　　　　　　　　　　ゴシック イタリック　　　　　　　　　9<br>
-Vijaya　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　10<br>
-Vrinda　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　11<br>
-Webdings　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">12　　　　　　</span><br>
-Wingdings　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　14<br>
-<span style="color:Black;background-color:#DAEAFF;">メイリオ　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　　　　　　　　　　　　　　　　　　　16<br>
-
-<br>
-
-　文字飾り　　　　　　　　　　　　　　　　　　　　　　　　　サンプル<br>
-　☐ 取り消し線(K)<br>
-　☐ 下線(U)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>AaBbYyZz</strong><br>
-　言語(I)<br>
-　<span style="color:Black;background-color:#EEEEEE;">\[ すべて　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-***
+\[フォーマット\]-\[フォント\] で編集中のファイルを表示するためのフォントを選択できます．
 
 ## 構文の色付け {#bfadedc6}
 
-\[フォーマット\]-\[構文の色付け\]-\[LaTeX\] を選択すると編集中のファイルが色分けされるようになります．<br>
+\[フォーマット\]-\[構文の色付け\]-\[LaTeX\] を選択すると編集中のファイルが色分けされるようになります．
 
 ## 背景色・文字色の変更 {#g4b457a4}
 
