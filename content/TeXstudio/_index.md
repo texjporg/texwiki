@@ -25,6 +25,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境�
 - [TeXstudio](http://www.texstudio.org/)
 - [TeXstudio - A LaTeX Editor | SourceForge.net](https://sourceforge.net/projects/texstudio/)
 - [TeXstudio - A LaTeX Editor / Wiki / Home](https://sourceforge.net/p/texstudio/wiki/)
+- [https://twitter.com/texstudio](https://twitter.com/texstudio)
 
 ### 動作環境 {#e7cc7bd5}
 
@@ -32,22 +33,43 @@ Windows, OS X, Linux
 
 ### License {#od98a625}
 
-[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)
-
-QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)
-
-### リリース情報 {#xc0de645}
-
-- [http://www.texstudio.org/#news](http://www.texstudio.org/#news)
-- [https://sourceforge.net/p/texstudio/news/](https://sourceforge.net/p/texstudio/news/)
-- [https://sourceforge.net/p/texstudio/hg/ref/default/tags/](https://sourceforge.net/p/texstudio/hg/ref/default/tags/)
-- [https://twitter.com/texstudio](https://twitter.com/texstudio)
-
-を参照．
+[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)（QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
 
 ### ダウンロード/インストール {#f36a3b67}
 
-TeXstudio/インストール を参照．
+次のサイトからダウンロードします．
+
+- [http://www.texstudio.org/#download](http://www.texstudio.org/#download)
+
+#### Windows {#ca4cc4c7}
+
+Windows 用のインストーラをダウンロードして実行します．
+
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象が発生することがあります（[不具合情報](#ped67bdd)を参照）．
+
+#### OS X {#d9a96322}
+
+OS X 用の zip アーカイブをダウンロードして展開します．
+
+Homebrew や MacPorts からもインストールできます．
+
+- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb)
+
+```
+$ brew cask install texstudio
+```
+
+もしくは
+
+```
+$ sudo port install texstudio
+```
+
+#### Linux {#v5002500}
+
+各ディストリビューションのパッケージ管理システムからインストールします．
+パッケージ名は大抵 texstudio でしょう．
+Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう．
 
 ### 設定 {#d18b43a8}
 
@@ -56,16 +78,6 @@ TeXstudio/インストール を参照．
 ### 使い方 {#ed1259ec}
 
 [TeXstudio/使い方](</TeXstudio/使い方/>) を参照．
-
-### ChangeLog {#u7f0ea72}
-
-- [http://hg.code.sf.net/p/texstudio/hg/](http://hg.code.sf.net/p/texstudio/hg/)
-- [https://sourceforge.net/p/texstudio/hg/ci/tip/log/](https://sourceforge.net/p/texstudio/hg/ci/tip/log/)
-- [http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/manual/CHANGELOG.txt)
-- [https://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt](https://sourceforge.net/p/texstudio/hg/ci/tip/tree/utilities/manual/CHANGELOG.txt)
-
-<!-- **日本語化 [#ibfc5135] -->
-<!-- -[[TeXstudioの日本語化:http://anastashia.blog.shinobi.jp/Entry/14/]] -->
 
 ### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
 
@@ -91,74 +103,14 @@ export PATH=$PATH:/Library/TeX/texbin
 
 ### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
 
+% これもバグ報告しています？
+
 Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
-高度なオプションの表示を ON にして詳細なエディタ設定からハック/回避策の最適なディスプレイオプションの自動選択を OFF にして描画モードを QCE（推奨） から Qt に変更してください．
+「高度なオプションの表示」を ON にして「詳細なエディタ設定」から「ハック/回避策」の「最適なディスプレイオプションの自動選択」を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
 
 なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．
 
-<!-- - --  -->
-<!-- &color(#3F43EF,#3F43EF){%%%　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(Black){''TeXstudioの設定''};　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(#3F43EF,#3F43EF){%%%[ &color(Black){''？''}; ]%%%};&color(#DD4444,#DD4444){%%%[　&color(White){''×''};　]%%%};%%%};&br; -->
-<!--  -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png,left,around,nolink,37x37,一般) -->
-<!-- 一般　　　　　　　　　　　　　　外観&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png,left,around,nolink,37x37,コマンド) -->
-<!-- コマンド　　　　　　　　　　　　☑ 行変更の状態を表示　　　　　　　　　　　　　　　　　　　　☐ 空白を表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png,left,around,nolink,37x37,ビルド) -->
-<!-- ビルド　　　　　　　　　　　　　☑ 状態パネルを表示　　　　　　　　　　　　　　　　　　　　　　タブ幅:　%%%4　　[''⇕'']%%%&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png,left,around,nolink,37x37,キーボードショートカット) -->
-<!-- キーボードショートカット　　　行番号を表示:　&color(Black,#EEEEEE){%%%[すべての行番号　　　　▼]%%%};　　　　　　　　☑ 太いカーソル&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png,left,around,nolink,37x37,メニュー) -->
-<!-- メニュー　　　　　　　　　　　　検索パネル&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png,left,around,nolink,37x37,ツールバー) -->
-<!-- ツールバー　　　　　　　　　　☐ 検索・置換パネルを共に閉じる&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png,left,around,nolink,37x37,エディタ) -->
-<!-- エディタ　　　　　　　　　　　　 ☑ 単語検索として単一行選択を使用&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png,left,around,nolink,37x37,詳細なエディタ設定) -->
-<!-- &color(Black,#DAEAFF){詳細なエディタ設定　　　};　　☑ 検索範囲を既存の選択部に制限&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png,left,around,nolink,37x37,構文の強調表示) -->
-<!-- 構文の強調表示　　　　　　　 特別なオプション&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png,left,around,nolink,37x37,カスタム強調表示) -->
-<!-- カスタム強調表示　　　　　　　☑ 括弧の自動補完　　　　　　　　　　　　　　　　　　　 ☑ ツールチップとしてエディタ上のテキストにヘルプを表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png,left,around,nolink,37x37,コマンドの補完) -->
-<!-- コマンドの補完　　　　　　　　　☑ マウスホイールによるズーム　　　　　　　　　　　　☑ ツールチップとしてエディタ上の式のプレビューを表示&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png,left,around,nolink,37x37,文法) -->
-<!-- 文法　　　　　　　　　　　　　　　 ☑ なめらかなスクロール　　　　　　　　　　　　　　　　 ☑ 組み込みpdfビューワーでコマンドのヘルプを表示(texdoc)&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png,left,around,nolink,37x37,プレビュー) -->
-<!-- プレビュー　　　　　　　　　　　　☑ プレースホルダ前の開き括弧を上書き&br; -->
-<!-- #ref(http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png,left,around,nolink,37x37,SVN) -->
-<!-- SVN　　　　　　　　　　　　　　　　☑ プレースホルダ後の閉括弧を上書き&br; -->
-<!-- &br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　行のワードラップ:　　　　　　　　　　　　　　&color(Black,#EEEEEE){%%%[ウィンドウ端で緩やかに行のワードラップを行う　　　　　　　　　　　　▼]%%%};&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　最大文字数:　　　　　　　　　　　　　　　　　%%%80　　　　　　　　[''⇕'']%%%&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　全てのファイルを自動保存:　　　　　　　　&color(Black,#EEEEEE){%%%[しない　　　　　▼]%%%};&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 暗黙的に、保存したファイルを再読み込みして外部での変更を適用（アンドゥ／リドゥスタックを破棄）&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 記号をユニコード文字として挿入　　　　　　　　　　 ☐ 「Esc」キーで全画面表示モードを閉じることを無効化&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ログ項目のクリック時にログマーカーを表示　　　　☑ ログの表示時にエラー行へ移動&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューからのスペルチェック:　　　　　&color(Black,#EEEEEE){%%%[項目をコンテキストメニューへ直接追加　　　　　　　　　　　▼]%%%};&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　文書の構造パネル&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 構造ツリーに含まれるもののインデントを維持する&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　コンテキストメニューでの参照コマンド:　%%%\ref%%%&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　表の自動整形&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンド:　　　　　%%%\hline,\cline,\intertext,\shortintertext,\toprule,\midrule,\bottomrule%%%&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　特殊コマンドの位置:　&color(Black,#EEEEEE){%%%[改行の後ろ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]%%%};&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ セルあたり1行&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　追加の検索パス&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　Bibファイル:&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　画像ファイル:&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　Bi-Di（双方向表記）&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LRM(left-to-right mark)文字を自動的に挿入&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ ビジュアルコラムカーソルモード（右から左へ読むテキストで矢印キーの方向にカーソルを移動させる）&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　ハック/回避策&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ アクセント記号タイプ時に回避策を無効化（Mac OS Xのみ）&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(black,yellow){''☐ 最適なディスプレイオプションの自動選択 ← チェックをはずす''};&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 文字幅のキャッシュを無効化&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 固定ピッチモードを無効化&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ 描画された行のキャッシュを無効化&br; -->
-<!-- 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　&color(black,yellow){''描画モード:''}; &color(Black,#EEEEEE){[ Qt　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼]};&color(black,yellow){'' ← Qt に変更する''};&br; -->
-<!-- &br; -->
-<!-- 　☑ 高度なオプションの表示 -->
-<!-- &br; -->
-<!-- - --  -->
+- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 
 ### OS X の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
 
@@ -166,24 +118,13 @@ OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wik
 Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
 また、IMEソフトのGoogle日本語入力では文字入力時に円記号をBackslashに変更するオプションがあります.
-これを有効にするとTeXstudioのテキストフィールドにはBackslashが入力されますが、実際には正しくBackslashの文字コードが送られていないようです.
-そのためTeXstudioがTeXコマンドを認識できず、自動補完機能が正常に動作しません.
-以上からGoogle日本語入力を使用する際もKarabinerを併用するのが良いでしょう.
+これを有効にするとTeXstudioのテキストフィールドにはBackslashが入力されますが、実際には正しくBackslashの文字コードが送られていないようです．
+そのためTeXstudioがTeXコマンドを認識できず、自動補完機能が正常に動作しません．
+以上からGoogle日本語入力を使用する際もKarabinerを併用するのが良いでしょう．
 
 - [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
 - [Macで円記号の代わりにバックスラッシュをデフォルトにする](http://hajimesakurai.hatenablog.com/entry/2015/08/26/222753)
 - [TeXStudio on Macでコマンド補完が使えない](http://qiita.com/o_nishy/items/e674b6e219e3d3bd7381)
-
-<!-- - --  -->
-<!-- &color(#595857,#DFDFDF){%%%　&color(#FF0000,#DFDFDF){●}; &color(#FFD700,#DFDFDF){●}; &color(#C9C9C9,#DFDFDF){●};　　　　　　　　　　　　　　　　　　　　　　　　　　　　''Karabiner''　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%%%};&br; -->
-<!-- 　　　　%%%&color(#F1F1F1,#0F7FFF){&color(#0F7FFF){[};　''Change Key''　&color(#0F7FFF){]};};&color(Black,White){[　''Key Repeat''　][　''Status Message''　][　''MenuBar''　][　''AXNotifier''　][　''Misc &amp; Uninstall''　]};%%%&br; -->
-<!-- 　　　　&color(Black,#FAFAFA){[%%%&#x1f50d; Change Yen　　　　　　　　　　　　　　　　　　%%%]};　　☐ Show enabled only (1 item)　　　　　　　%%%[ ''↻'' ReloadXML ]%%%&br; -->
-<!-- 　　　　remapping&br; -->
-<!-- 　　　　&color(#595857){▼};For Japanese&br; -->
-<!-- 　　　　　　&color(#595857){▼};Change Yen(￥) Key&br; -->
-<!-- 　　　　　　　　　&color(White,#0F7FFF){☑}; JIS Yen(￥) to Backslash(＼)&br; -->
-<!-- 　　　　　　　　　　　　(except virtual machine, X11, RDC)&br; -->
-<!-- - --  -->
 
 ## 文字コードの変換 {#v4ac40ab}
 
@@ -259,7 +200,7 @@ Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場�
 ### TeX Live の場合 {#xf7e038f}
 
 デフォルトでは和文フォントを埋め込みません．
-IPAexフォントを埋め込む場合は Windows PowerShell またはコマンド プロンプトから
+IPAexフォントを埋め込む場合はコマンド プロンプトから
 
 ```
 kanji-config-updmap-sys ipaex
@@ -285,25 +226,12 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 
 ### Linux の TeXstudio の場合 {#s6cbe6f1}
 
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．
+[代替フォントの設定](/Evince/#substitute)を参照して代替フォントの設定をします．
 
 ## 関連リンク {#b0ba1b9b}
 
-- [Newest &#39;texstudio&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texstudio)
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](https://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
-- [http://research.informagic.org/latex-tweaks](http://research.informagic.org/latex-tweaks)
-- [http://www.okomeda.net/?TeXStudio](http://www.okomeda.net/?TeXStudio)
-- [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
-- [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
-- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
-- [TeX Live と TeXstudio でサクッと Windows 上に LaTeX 環境を構築](http://yksris.hatenablog.com/entry/2014/10/01/143744)
-- [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
-- [TexStudioのインストール(Windows7)](http://ch.nicovideo.jp/hetare0914/blomaga/ar524833)
-- [Failed to read .bib file from TeXstudio (Win7 64bit) -> absolute path worked](http://naturesflyers.blogspot.jp/2014/01/failed-to-read-bib-file-from-texstudio.html)
-- [Texmakerから派生したTeXStudioがイイ感じだった](http://moyashiki.hateblo.jp/entry/2014/01/08/134632)
-- [texstudioのプレビューに日本語が表示されない件](http://cocu.hatenablog.com/entry/2013/03/27/113754)
-- [TeXstudio による LaTeX 文書の最終検査](http://blog.fujioizumi.verse.jp/?eid=135)
-- [日々徒然思うこと TeX](http://anastashia.blog.shinobi.jp/Category/5/)
 - [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](https://osdn.jp/magazine/12/07/16/0613248)
+- [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
 
 [^1]: [Wikipedia.ja:フォーク\_(ソフトウェア開発)](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF_%28%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%29)
