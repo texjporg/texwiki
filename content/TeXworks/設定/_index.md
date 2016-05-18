@@ -48,7 +48,7 @@ platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%
 
 次のように入力してください．（間違わないように以下をコピー＆ペーストするとよいでしょう．）引数を入力する際には「＋」ボタン（赤囲み）を押します．
 
-- 名前：pLaTeX(ptex2pdf)
+- 名前：pLaTeX (ptex2pdf)
 - プログラム：ptex2pdf
 - 引数：上から
     - -l
@@ -78,11 +78,11 @@ OKを押して閉じてください．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png" alt=""></a>
 
-デフォルトを「pLaTeX(ptex2pdf)」に変更しておきます．
+デフォルトを「pLaTeX (ptex2pdf)」に変更しておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png" alt=""></a>
 
-OK を押して最初の画面に戻り，必要ならば左上のコンボボックスから「pLaTeX(ptex2pdf)」を選びます．
+OK を押して最初の画面に戻り，必要ならば左上のコンボボックスから「pLaTeX (ptex2pdf)」を選びます．
 
 ## エンコーディングの設定 {#sc2efa04}
 
@@ -94,7 +94,7 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 ## タイプセットの設定 {#q50d2378}
 
 - upLaTeX によるタイプセット
-    - 名前：upLaTeX(ptex2pdf)
+    - 名前：upLaTeX (ptex2pdf)
     - プログラム：ptex2pdf
     - 引数：
         - -l
@@ -105,7 +105,7 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
     - 「実行後，PDF を表示する」にチェックを入れる．
 
 - Latexmk（とpLaTeX）によるタイプセット
-    - 名前：pLaTeX(latexmk)
+    - 名前：pLaTeX (latexmk)
     - プログラム：latexmk
     - 引数：
         - -latex=platex -kanji=utf8 $synctexoption %O %S
