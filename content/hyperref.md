@@ -75,8 +75,6 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 
 原因は，hyperref パッケージの colorlinks オプションを指定することで color パッケージが読み込まれるにもかかわらず，dvipdfmx オプションが渡されないことのようです。
 
-- [hyperref の colorlinks オプションが依存する color パッケージで dvips.def が読まれるからだな！](https://twitter.com/aminophen/status/613952042575343617)
-
 対策は，ドキュメントクラスのオプションで dvipdfmx ドライバ指定する
 
 ```
@@ -92,6 +90,7 @@ PXjahyper パッケージが使用できない場合は \texorpdfstring{texstrin
 が有効です。
 
 - hyperref パッケージの color.sty 依存対策 [forum:1606](https://okumuralab.org/tex/mod/forum/discuss.php?d=1606)
+- hyperref 側で対処していただきました ([Pull Request #2](https://github.com/ho-tex/hyperref/pull/2))
 
 ### 不具合 {#p03bc3d7}
 
