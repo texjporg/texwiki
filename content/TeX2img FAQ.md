@@ -60,6 +60,12 @@ Windows 版 TeX2img がある日突然動かなくなるという現象が発生
 
 最新バージョンでは改善されています。
 
+### Mac 版で OS をアップデートしたら Ghostscript でエラーが出るようになった {#r6dcbf12}
+
+これは MacTeX の [Ghostscript](/Ghostscript/) と X11 の問題です。
+
+[TeXShop FAQ の X11 に関する項目](https://texwiki.texjp.org/?TeXShop%20FAQ#X11) を参照し，そこに示された TeX Forum のリンク先に示された対処を実施してください。
+
 ### Mac 版でアップデートに失敗する・アップデート後に起動できない {#sbc4fdda}
 
 OS のバージョンと TeX2img のバージョンの組み合わせ，あるいはパーミッション設定によっては，自動アップデートに失敗することがあります。
@@ -93,7 +99,11 @@ Mac 版ではこれを利用し，設定画面で「JIS X 0208 外の文字を \
 
 を ON にしておくと，¥ が入力されてしまう可能性を排除できます。
 
-### Ghostscript 実行中に Unknown device: epswrite というエラー {#cfbdb61c}
+### Ghostscript 実行中に Error: /syntaxerror in readxref というエラーが出る {#t7dc26ae}
+
+インストールされている [Ghostscript](/Ghostscript/) のバージョンを確認してください。TeX2img が正しい動作が確認されているのは Ghostscirpt 9.x 以降になります。最新の Ghostscript をインストールして試してみてください。
+
+### Ghostscript 実行中に Unknown device: epswrite というエラーが出る {#cfbdb61c}
 
 [Ghostscript](/Ghostscript/) は，バージョン 9.15 で従来使われてきた EPS 出力デバイスである epswrite を廃止しました。
 TeX2img は，Ghostscript のバージョンが 9.14 以前の場合に epswrite を，9.15 以降の場合に eps2write を利用するようになっています。
@@ -270,7 +280,7 @@ TeX2img は，Windows 版でも Mac 版でも，画像生成の元となった L
 拡張属性の側にソースを書き込むことで，そのファイル内容（データフォーク）はいじらず，PDF や PNG といったファイルのフォーマットを崩すことなくソースコードの情報を保持させるようになっています。
 HFS+ のボリューム間でコピーをすると，そのソースの内容も引き継がれます。
 
-なお，HFS+ の拡張属性付きファイルを，Mac により FAT32 や NTFS など他のファイルシステムにコピーすると，[Apple Dobule](https://ja.wikipedia.org/wiki/AppleSingle) の仕組みによって，
+なお，HFS+ の拡張属性付きファイルを，Mac により FAT32 や NTFS など他のファイルシステムにコピーすると，[Apple Double](https://ja.wikipedia.org/wiki/AppleSingle) の仕組みによって，
 
 - hoge.png
 - .\_hoge.png
@@ -296,6 +306,9 @@ Mac 版は HFS+ の拡張属性に，Windows 版は NTFS の代替データス�
 
 - PDF 出力の場合，PDF のアノテーション（注釈）情報にもソース情報を保存します。これは Mac と Windows 間で互換性があります。よって，PDF 出力の場合は，Mac ⇄ Windows のどちら方向にも埋め込みソースを維持してやりとりできます。
 - Mac 版で HFS+ の拡張属性にソース情報を埋め込んだファイルを Windows の FAT32 や NTFS に移すと，.\_hoge.png のようなファイルが生成します。このファイルは普通ゴミファイル扱いされて削除される運命にあることが多いですが，これを削除せずに維持しておけば，Windows 版でこのファイルに書き込まれたソース情報を復元することができます。
+
+- 参考：Apple Open Source で公開されているソース中に記述された [Apple Double の仕様](http://opensource.apple.com//source/xnu/xnu-792/bsd/vfs/vfs_xattr.c)
+    - 参考：Windows で Apple Double を読み書きする [C# ソース](https://github.com/abenori/TeX2img/blob/master/AppleDouble.cs)
 
 ### \input や \includegraphics で外部ファイルを取り込むには？ {#x6a493c8}
 
