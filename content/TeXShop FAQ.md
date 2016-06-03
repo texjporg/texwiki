@@ -36,7 +36,7 @@ TeXShop のメニューからの自動アップデートがうまくいかない
 
 TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8979)
 
-### OS をアップデートしたら \includegraphics で画像が出力されなくなった {#ub9e1db9}
+### OS をアップデートしたら \includegraphics で画像が出力されなくなった {#X11}
 
 これは TeXShop というより MacTeX の [Ghostscript](/Ghostscript/) の問題です。
 
