@@ -82,6 +82,10 @@ Ghostscript でも日本語を簡単に扱うための設定スクリプトが�
 
 ### インストール {#t244993f}
 
+MacTeX のインストール＆日本語環境構築法は，次のページで詳しく解説されています。
+
+- [MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20160608/1465311609)
+
 #### MacTeX.pkg でインストール {#j62e687a}
 
 - [ftp://ftp.tug.org/tex/mactex/](ftp://ftp.tug.org/tex/mactex/)
