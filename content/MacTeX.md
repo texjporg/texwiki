@@ -61,6 +61,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [TeX Live Utility](</TeX Live Utility/>)
     - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の OS X ネイティブの GUI アプリケーション。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
+    - （2016より）過年度の MacTeX がインストールされている場合，メニューの「設定ー頒布版の再設定」から使用する TeX システムを切り替えることができます。
 
 - [TeXShop](/TeXShop/)
     - OS X 専用の TeX 統合環境。
