@@ -391,7 +391,7 @@ XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/Z
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．
+文字コードが 日本語(pLaTeX) の場合は既定値は PDF (dvipdfm) です．
 日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
@@ -403,7 +403,7 @@ XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/Z
 
 #### PDF (ps2pdf) {#s335ea5f}
 
-文字コードが 日本語(pLaTeX) の場合は既定値は DVI です．
+文字コードが 日本語(pLaTeX) の場合は既定値は PDF (dvipdfm) です．
 日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
