@@ -99,7 +99,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2015.iso をダウンロードしてください．
+「download from a nearby CTAN mirror」から，texlive2016.iso をダウンロードしてください．
 Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
 Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
@@ -126,7 +126,7 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2015）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2016）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -178,7 +178,7 @@ TeX Live 2015 対応の事例です．
 
 ## アップデート {#a6223106}
 
-スタートメニューから 「TeX Live 2015」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
+スタートメニューから 「TeX Live 2016」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
 「導入済のものを全て更新」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -192,7 +192,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2015\tlpkg\backups
+- C:\texlive\2016\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
