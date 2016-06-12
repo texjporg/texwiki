@@ -199,20 +199,7 @@ Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場�
 
 ### TeX Live の場合 {#xf7e038f}
 
-デフォルトでは和文フォントを埋め込みません．
-IPAexフォントを埋め込む場合はコマンド プロンプトから
-
-```
-kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
 
 ### W32TeX の場合 {#y0816396}
 
