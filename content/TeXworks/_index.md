@@ -71,19 +71,7 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 
 ### TeX Live の場合 {#aa8923ee}
 
-デフォルトでは和文フォントを埋め込みません．IPAexフォントを埋め込む場合はコマンドプロンプトから
-
-```
-kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-kanji-config-updmap ipaex
-```
-
-を実行します．
+デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
 
 ### W32TeX の場合 {#h6fd82bc}
 
