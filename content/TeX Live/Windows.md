@@ -35,7 +35,9 @@ pukiwiki: "TeX Live/Windows"
 かなりの時間がかかります．
 環境にもよりますが，多く場合一時間から二時間ほどかかると思います．
 
-以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
+以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．2015 の例ですが，2016でも変わらないと思います．
+
+% 誰か更新してー
 
 <a href="/attach/TeX%20Live/Windows/2015_inst1.png"><img src="/attach/TeX%20Live/Windows/2015_inst1.png" alt=""></a>
 
@@ -138,19 +140,19 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
 - [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
-### 追加設定 {#t30edd37}
+<!-- ** 追加設定 [#t30edd37] -->
 
-以下の設定を自動で行う [abtlinst_patch.exe](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#ABTLINSTPATCH) があります．
-ダウンロード後ダブルクリックを行えば自動で設定が行われます（TeX Live のインストール後に実行してください）．
+<!-- 以下の設定を自動で行う [[abtlinst_patch.exe:http://www.math.sci.hokudai.ac.jp/~abenori/soft/#ABTLINSTPATCH]] があります． -->
+<!-- ダウンロード後ダブルクリックを行えば自動で設定が行われます（TeX Live のインストール後に実行してください）． -->
 
-以下は手動で行う方法です．
+<!-- 以下は手動で行う方法です． -->
 
-#### TeXworks の設定 {#wa1faa7d}
+<!-- ***TeXworks の設定 [#wa1faa7d] -->
 
-LaTeX 用のエディタとして [TeXworks](/TeXworks/) が TeX Live とともにインストールされています．
-手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください．
-スタートメニューから起動することで動きます．
-ただし，日本語用の設定が必要です → [TeXworks/設定](</TeXworks/設定/>) をご覧ください．
+<!-- LaTeX 用のエディタとして [[TeXworks]] が TeX Live とともにインストールされています． -->
+<!-- 手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください． -->
+<!-- スタートメニューから起動することで動きます． -->
+<!-- ただし，日本語用の設定が必要です → [[TeXworks/設定]] をご覧ください． -->
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
