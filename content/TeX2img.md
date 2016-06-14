@@ -50,7 +50,7 @@ PNG は背景を透過させることができます．（Mac 版は TIFF / GIF 
 
 ### 動作環境 {#environment}
 
-Windows, OS X
+Windows, macOS
 
 ### 対応エンジン・DVIware {#engines}
 
@@ -74,7 +74,7 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
     [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．なお
     1.5.0 以降では ImageMagick に依存しない改良が施されました．
 
-- Mac 版はビットマップ画像の生成に OS X 標準の画像処理 API を活用します．
+- Mac 版はビットマップ画像の生成に macOS 標準の画像処理 API を活用します．
 - Windows 版は EMF 画像の出力に，Google が開発した
     [PDFium](</Google Chrome/#l83f1380>) という PDF レンダリングエンジンを利用しています．
 
