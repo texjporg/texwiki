@@ -10,7 +10,7 @@ pukiwiki: "TeXworks"
 
 ## TeXworks {#e8144da8}
 
-TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．OS X 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
+TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．macOS 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
 奥村晴彦・黒木裕介『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』では，おすすめの統合環境に TeXworks が紹介されています．
 
@@ -27,7 +27,7 @@ TeXworks は TeX でドキュメントを作成するためのシンプルな統
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows（XP 以降），OS X, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
+Microsoft Windows（XP 以降），macOS, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
 
 ### License {#lccd03cb}
 
@@ -81,7 +81,7 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### OS X の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
+### macOS の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
 
 [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください．
 
@@ -89,14 +89,14 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 - Mountain Lion で Texworks のプレビューが日本語表示できない ([forum:1082](https://okumuralab.org/tex/mod/forum/discuss.php?d=1082))
 - [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
 
-### OS X の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
+### macOS の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
 
-OS X の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
+macOS の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
 
 - [backslash becomes yen · Issue #516 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/516)
 - TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
 
-OS X の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
+macOS の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
 
 ### かな漢字変換をする際に文字が白く表示され，ハイライトに隠れて見えにくくなる {#s5bfc44e}
 
@@ -158,4 +158,4 @@ TeXworks で \[編集\]-\[設定\] のエディタタブの「エディタ全体
 - [Texworksで背景色と文字の色やキーワードの色を変更するには - ちょっと便利なパソコンノート - Yahoo!ブログ](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
 - [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)：Jonathan Kew（TeXworks project の一人）による TUG 2010 での講演ビデオ
 
-[^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, OS X, GNU/Linux の TeX Live には TeXworks は収録されていません．
+[^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, macOS, GNU/Linux の TeX Live には TeXworks は収録されていません．
