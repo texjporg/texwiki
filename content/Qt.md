@@ -32,3 +32,4 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 
 - [https://bugreports.qt.io/](https://bugreports.qt.io/)
 - \[[QTBUG-10543\] Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard. - Qt Bug Tracker](https://bugreports.qt.io/browse/QTBUG-10543)
+- \[[QTBUG-43756\] setExtraSelections with QTextFormat::FullWidthSelection makes preedit text difficult to read - Qt Bug Tracker](https://bugreports.qt.io/browse/QTBUG-43756)
