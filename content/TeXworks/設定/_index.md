@@ -16,15 +16,13 @@ pukiwiki: "TeXworks/設定"
 
 ## 日本語環境用の設定 {#bcc74f23}
 
-公式サイトの Windows バイナリや TeX Live の TeXworks はデフォルトで pdflatex をもちいてコンパイルを試みますが，これでは日本語を扱えません．
+以下の（またはそれに対応する）設定は，TeX Live （2016 以降）や W32TeX に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリは，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
 
-W32TeX の TeXworks は pdfpLaTeX が標準になっています．
-この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています．
+<!-- W32TeX の TeXworks は pdfpLaTeX が標準になっています． -->
+<!-- この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています． -->
 
-```
-@echo off
-platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1"
-```
+<!-- @echo off -->
+<!-- platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1" -->
 
 <!-- この処理方法の場合 -->
 <!--  -->
@@ -34,7 +32,7 @@ platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%
 <!-- -platex でエラーが発生して x を入力すると dvipdfmx が実行されずに終了できます． -->
 <!-- -platex でエラーが発生して e を入力すると PDF ファイルが作成されている場合に PDF ビューアがアクティブにならずにすぐにエラー行にジャンプできます． -->
 
-公式サイトの Windows バイナリや TeX Live の TeXworks を使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
+公式サイトの Windows バイナリを使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
 
