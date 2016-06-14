@@ -10,7 +10,7 @@ pukiwiki: "TeXShop"
 
 ## TeXShop {#q728ac5b}
 
-TeXShop は Mac OS X 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標準で含まれています．
+TeXShop は macOS 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標準で含まれています．
 
 <strong>公式 Web サイト</strong>
 
@@ -27,7 +27,7 @@ TeXShop をモデルにしたクロスプラットフォームな統合環境と
 
 ### 動作環境 {#i28ced5b}
 
-OS X
+macOS
 
 ### License {#x8f63441}
 
