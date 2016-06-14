@@ -9,22 +9,22 @@ pukiwiki: "Geany"
 
 ## [Geany](http://www.geany.org/) {#d1003dd0}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Geany_logo.svg/200px-Geany_logo.svg.png" alt="Geany" style="float:right">
+***
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
 ## Geany とは {#u4d63bea}
 
-Geany は GTK+ を使用した高速で軽量な IDE です．<br>
-Geany は IDE の機能を持つテキストエディタとしても使用出来ます．<br>
-Geany は LaTeX の編集に対応しています．<br>
-Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．<br>
+Geany は GTK+ を使用した高速で軽量な IDE です．
+Geany は IDE の機能を持つテキストエディタとしても使用出来ます．
+Geany は LaTeX の編集に対応しています．
+Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．
 
 - [Geany](http://www.geany.org/)
 
 ### 動作環境 {#ib302119}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#q7890579}
 
