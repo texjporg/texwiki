@@ -24,7 +24,7 @@ Texmaker のデフォルトの文字コードは UTF-8 です．
 
 ### 動作環境 {#tf7debca}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#l7d7100c}
 
@@ -38,11 +38,11 @@ GPLv2
 ## ダウンロード/インストール {#q69dea61}
 
 [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
-から，Windows, OS X, Linux 用のバイナリおよびソースコードがダウンロードできます．
+から，Windows, macOS, Linux 用のバイナリおよびソースコードがダウンロードできます．
 
 - Windows の場合は exe 形式のものをダウンロードして実行すればインストールされます．以下の記事も参考になります．
     - [DTP Tools: Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
-- OS X の場合は zip 形式のものをダウンロードして展開します．
+- macOS の場合は zip 形式のものをダウンロードして展開します．
 - Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
 
 ### 日本語化 {#k564e4ed}
@@ -62,9 +62,9 @@ Texmaker は英語でメニューなどが表示されますが，日本語化�
 
 - [Issues](https://code.google.com/archive/p/texmaker/issues)
 
-### OS X の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
+### macOS の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
+macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
 
 Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
 
@@ -74,7 +74,7 @@ Texmaker には，かな漢字変換をする際に変換候補の文字色と�
 OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．
 
 Windows と Linux でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる不具合が発生します．
-OS X では発生しないようです．
+macOS では発生しないようです．
 
 #### Windows の場合 {#z3a8b3e4}
 
@@ -189,9 +189,9 @@ Texmaker で使用する文字コードはデフォルトでは UTF-8 です．
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#a258817b}
 
-### OS X の場合 {#m8993d2f}
+### macOS の場合 {#m8993d2f}
 
-OS X の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．
+macOS の Texmaker で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置します．
 poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /Users/pascalbrachet/poppler64/share/poppler にコピーして使用することもできます．
 
