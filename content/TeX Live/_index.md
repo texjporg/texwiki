@@ -40,8 +40,8 @@ TeX Live は OS ごとにインストール方法が異なります．
 - [Microsoft Windows](</Microsoft Windows/>)
     - Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
     - [Cygwin](/Cygwin/#texlive) へのインストールも可能です．
-- [OS X](/Mac/)
-    - OS X へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
+- [macOS](/Mac/)
+    - macOS へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
 - [Linux](/Linux/#texlive)
     - [Linux/Arch Linux](</Linux/Arch Linux/#texlive>)
     - [Linux/Linux Mint](</Linux/Linux Mint/#texlive>)
@@ -73,7 +73,7 @@ TeX Live には数千ものパッケージが含まれており，これらは c
 ここで挙げたスキームの例のうち，scheme-basic，scheme-small，scheme-medium には日本語の LaTeX 文書作成に必要なパッケージが含まれていません．
 日本語の LaTeX 文書を作成するためには scheme-full でインストールするか，各スキームでインストールした後に collection-langjapanese をインストールすることになります．
 
-なお，TeX Live ベースの OS X 専用ディストリビューションである [MacTeX](/MacTeX/) は scheme-full に，[BasicTeX](/BasicTeX/) は scheme-small にそれぞれ対応します．
+なお，TeX Live ベースの macOS 専用ディストリビューションである [MacTeX](/MacTeX/) は scheme-full に，[BasicTeX](/BasicTeX/) は scheme-small にそれぞれ対応します．
 また，Windows 向けの TeX Live インストーラ (install-tl-windows.exe) の Simple Install は scheme-full に対応します．
 
 ## TeX Live の詳細情報 {#g496de09}
@@ -246,7 +246,7 @@ Windows PowerShell またはコマンド プロンプトから
 
 を実行します．
 
-#### OS X {#a9a1fd1b}
+#### macOS {#a9a1fd1b}
 
 mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
 
@@ -296,7 +296,7 @@ $ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 - [MSYS2#TeX Live](/MSYS2/#texlive)
 - [MinGW#TeX Live](/MinGW/#texlive)
 
-#### OS X {#m1f2034d}
+#### macOS {#m1f2034d}
 
 - [TexLive installation from sources, on Yosemite &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources/)
 
