@@ -9,19 +9,21 @@ pukiwiki: "TeXnicle"
 
 ## [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html) {#p6c2084c}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## TeXnicle とは {#k3131c97}
 
-TeXnicle は TeX 統合環境です．<br>
-SyncTeX に対応しています．<br>
+TeXnicle は TeX 統合環境です．
+SyncTeX に対応しています．
 
 - [TeXnicle](http://www.bobsoft-mac.de/texnicle/texnicle.html)
 - [martinhewitson/TeXnicle · GitHub](https://github.com/martinhewitson/TeXnicle)
 
 ### 動作環境 {#ob2dc8eb}
 
-OS X
+macOS
 
 ### License {#s7995e80}
 
