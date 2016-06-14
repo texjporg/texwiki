@@ -41,7 +41,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 
 - [★ TeXユーザの集い2016](https://texconf16.tumblr.com/) 福岡県福岡市にて2016年11月5日（土）開催予定！
 - [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
-- OS X で TeX Live 2015 以前またはMacTeX 2015 以前を使っている場合， OS X 10.11 El Capitan 以降へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
+- macOS で TeX Live 2015 以前または MacTeX 2015 以前を使っている場合， OS X 10.11 El Capitan 以降へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
 
 ### TeX，LaTeX とは？ {#la57baab}
 
@@ -51,7 +51,7 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 ### TeX をインストールしよう {#w774cf70}
 
-詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OSごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[Mac OS X](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
+詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OSごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
 
 ### TeX 用の統合環境・エディタを使おう {#hb6b8133}
 
@@ -131,9 +131,11 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 
 ## TeX 関連情報 <span style="font-size:10px">（ユーザ名・パスワードは左の<span style="color:#FF2800;background-color:white;"><strong>赤色の文</strong></span>を参照）</span> {#i40caa06}
 
-<span style="font-size:10px"><em>ここは検索ボックスではありません．</em></span>
+<!-- &size(10){'''ここは検索ボックスではありません．'''}; -->
+<!-- #pcomment(below) -->
 
-{{< include "コメント/FrontPage" >}}
+スパムが多いので一旦コメントアウトしてみました．
+これまでの投稿は[コメント/FrontPage](</コメント/FrontPage/>) で見れます．
 
 ★↑ TeX 関連情報をご提供ください
 （ユーザ名・パスワードは左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>を参照）．
