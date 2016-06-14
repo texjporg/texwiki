@@ -13,6 +13,11 @@ Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
+Adobe Acrobat Reader DC には Continuous と Classic が存在します．
+
+- [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
+- [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
+
 ***
 
 ***
@@ -45,7 +50,7 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 - Adobe Acrobat DC
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
 
-### OS X {#e9b65d66}
+### macOS {#e9b65d66}
 
 - Adobe Acrobat Reader DC
     - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh)
@@ -101,32 +106,30 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 ### Windows Explorer で PDF サムネールのプレビューを有効にする {#ef92bb00}
 
-Windows Explorer で PDF サムネールのプレビューを有効にするを ON にすることでサムネールのプレビューができるようになります．
+2016 年 5 月リリース以降の Adobe Acrobat Reader DC Continuous および Classic では 「Windows Explorer で PDF サムネールのプレビューを有効にする」 を ON にすることでサムネールのプレビューができるようになります．
 
-\[編集(E)\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする
+> \[編集(E)\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする
 
-- [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
-- [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
-
-■ Continuous Track の場合
-
-- [Acrobat Reader DCの64ビットでサムネール表示](http://blogs.yahoo.co.jp/naonori_msx/39965081.html)
-- [Adobe Acrobat Reader DCのインストールでPDFの全文検索ができなくなる問題とその解決策](http://vergil.hateblo.jp/entry/2016/01/11/093214)
-- [Wind8.1x64+Adobe Reader DC環境でのPDF検索とサムネイル表示について](http://ikeda-jp2000.at.webry.info/201510/article_2.html)
-- [64ビットWindows 7で、PDFのサムネイル表示したい](http://blog.livedoor.jp/digitaldolphins/archives/1756033.html)
-- [Adobe - Acrobat : For Windows : PDF iFilter 64 11.0.01](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542)
-- [https://github.com/kenjiuno/ThumbGensPack](https://github.com/kenjiuno/ThumbGensPack)
-    - [https://github.com/kenjiuno/ThumbGensPack/releases](https://github.com/kenjiuno/ThumbGensPack/releases)
-
-■ Classic Track の場合
-
-- [Windows版Acrobat DCのアイコンサムネイル表示について](https://forums.adobe.com/message/8660615)
-- [win7とAcrobat Reader DC でpdfファイルをサムネイル表示させる方法](http://blogyujing.seesaa.net/article/436377991.html)
-- [PDFのサムネイルが表示されない](http://blog.livedoor.jp/do_gubako/archives/50025308.html)
+<!-- ■ Continuous Track の場合 -->
+<!--  -->
+<!-- -[http://blogs.yahoo.co.jp/naonori_msx/39965081.html Acrobat Reader DCの64ビットでサムネール表示] -->
+<!-- -[http://dslabo.blog4.fc2.com/blog-entry-2292.html 実験る～む Windows版Acrobat DCに追加された、待望（？）の機能] -->
+<!-- -[http://vergil.hateblo.jp/entry/2016/01/11/093214 Adobe Acrobat Reader DCのインストールでPDFの全文検索ができなくなる問題とその解決策] -->
+<!-- -[http://ikeda-jp2000.at.webry.info/201510/article_2.html Wind8.1x64+Adobe Reader DC環境でのPDF検索とサムネイル表示について] -->
+<!-- -[http://blog.livedoor.jp/digitaldolphins/archives/1756033.html 64ビットWindows 7で、PDFのサムネイル表示したい] -->
+<!-- -[http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542 Adobe - Acrobat : For Windows : PDF iFilter 64 11.0.01] -->
+<!-- -https://github.com/kenjiuno/ThumbGensPack -->
+<!-- - -https://github.com/kenjiuno/ThumbGensPack/releases -->
+<!--  -->
+<!-- ■ Classic Track の場合 -->
+<!--  -->
+<!-- -[https://forums.adobe.com/message/8660615 Windows版Acrobat DCのアイコンサムネイル表示について] -->
+<!-- -[http://blogyujing.seesaa.net/article/436377991.html win7とAcrobat Reader DC でpdfファイルをサムネイル表示させる方法] -->
+<!-- -[http://blog.livedoor.jp/do_gubako/archives/50025308.html PDFのサムネイルが表示されない] -->
 
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
-TeX Live 2015 以降または W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
+TeX Live または W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
 なお，事前に PDF ファイルを Adobe Acrobat Reader DC に関連付けしておく必要があります．
 
 ### PDF ファイルを開く {#id6d0918}
