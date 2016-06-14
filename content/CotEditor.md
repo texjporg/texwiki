@@ -24,7 +24,7 @@ CotEditor はテキストエディタです．
 
 ### 動作環境 {#he679a78}
 
-OS X
+macOS
 
 ### License {#m60344b8}
 
