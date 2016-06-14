@@ -69,7 +69,7 @@ gedit is released under the GNU General Public License (GPL).
 
 ### 動作環境 {#kd6ded02}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#bf49560f}
 
