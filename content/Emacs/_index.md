@@ -23,7 +23,7 @@ pukiwiki: "Emacs"
 
 ### 動作環境 {#tabe669d}
 
-GNU, GNU/Linux は当然として，BSD, OS X, Windows, Solaris もサポートされています．
+GNU, GNU/Linux，BSD, macOS, Windows, Solaris などの OS がサポートされています．
 
 - [Wikipedia.en&#x3a;GNU_Emacs&#x23;Platforms](https://en.wikipedia.org/wiki/GNU_Emacs%23Platforms)
 
@@ -47,7 +47,7 @@ GNU Emacs はフリーソフトウェアです．
 - 32-bit binary
     - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 
-#### OS X {#v2ece0ad}
+#### macOS {#v2ece0ad}
 
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
@@ -148,9 +148,9 @@ C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
 
 ### forward search {#s6b956ef}
 
-- [TeX mode#OS X](</Emacs/TeX mode/#g5794e10>)
-- [AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de)
-- [YaTeX#インストール#OS X#設定](/YaTeX/#qe563613), [YaTeX#Skim との連携 (forward search)](/YaTeX/#f978a43b)
+- [TeX mode#macOS](</Emacs/TeX mode/#g5794e10>)
+- [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de)
+- [YaTeX#インストール#macOS#設定](/YaTeX/#qe563613), [YaTeX#Skim との連携 (forward search)](/YaTeX/#f978a43b)
 
 を参照してください．
 
@@ -351,7 +351,7 @@ Source editor:
 - \[[ソフトウェア\] NTEmacs 23.1 のインストール・設定](http://d.hatena.ne.jp/itouhiro/20091027)
 - [NTEmacs23起動バッチ](http://ameblo.jp/tonjiru2121/entry-10469734020.html)
 
-### OS X {#pa8b5a16}
+### macOS {#pa8b5a16}
 
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
     - [Emacs24 のインストールと新機能](http://sakito.jp/emacs/emacs24.html)
