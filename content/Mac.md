@@ -7,9 +7,9 @@ pukiwiki: "Mac"
 
 # Mac
 
-## [OS X](http://www.apple.com/jp/osx/) (Mac) での TeX の利用 {#headline}
+## [macOS](http://www.apple.com/macos/) (Mac) での TeX の利用 {#headline}
 
-OS X (Mac) に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
+macOS (Mac) に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
 
 1. TeX の処理系（“TeX ディストリビューション”）のインストールと設定
 1. 統合環境またはエディタ，PDF ビューアなどの周辺ツールのインストールと設定
@@ -23,11 +23,11 @@ OS X (Mac) に TeX をインストールして使えるようになるまでの�
 ## TeX ディストリビューション {#distribution}
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
-OS X 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
+macOS 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
 [MacTeX](/MacTeX/) や [BasicTeX](/BasicTeX/) というディストリビューションも，この TeX Live をベースとしたものです。
 奥村先生の[［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)には TeX Live 2013 が収録されています。
 
-OS X への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
+macOS への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
 TUG による公式サイト
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
@@ -51,7 +51,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 - [Wikipedia:Comparison_of_TeX_editors](https://www.wikipedia.org/wiki/Comparison_of_TeX_editors)
 - [LaTeX Editors/IDEs](http://tex.stackexchange.com/questions/339/latex-editors-ides)
 
-には，OS X で使用可能な LaTeX 用の統合環境・エディタが紹介されています。
+には，macOS で使用可能な LaTeX 用の統合環境・エディタが紹介されています。
 
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
@@ -64,13 +64,13 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
 <!-- の順のつもり．従来の「アルファベット順」は無意味なので変更． -->
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
-    - <strong>[TeXShop](/TeXShop/)</strong> ← MacTeX に標準で付属しています。
-        - OS X 用の TeX 統合環境ならこれといっても過言ではないほど評判が良いようです。
+    - <strong>[TeXShop](/TeXShop/)</strong>
+        - MacTeX に標準で付属しています。
     - <strong>[TeXstudio](/TeXstudio/)</strong>
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
-        - 【注意】OS X で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
+        - 【注意】macOS で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
     - [Texmaker](/Texmaker/)
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください。(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))
     - TexitEasy
@@ -124,7 +124,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 - [TeX Wiki 内の「BibTeX 関連ツール」紹介ページ](</BibTeX関連ツール/>)
 - MacWiki:リスト/TeX#BibTeX 関係
 
-には，OS X で使用可能な文献管理ツールが紹介されています。
+には，macOS で使用可能な文献管理ツールが紹介されています。
 
 ### スペルチェッカー {#spell}
 
@@ -135,11 +135,11 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - MacWiki:スペルチェック
 
-には，OS X で使用可能なスペルチェッカーが紹介されています。
+には，macOS で使用可能なスペルチェッカーが紹介されています。
 
 ## JIS キーボードでバックスラッシュ &#x5c; ではなく円記号 &#xa5; が入力される場合 {#me741d27}
 
-OS X で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
+macOS で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
 いくつかの対処法を紹介します。
 
 - [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](http://d.hatena.ne.jp/zariganitosh/20101026/text_key_binding)
@@ -149,9 +149,9 @@ OS X で日本語 JIS キーボードを利用している場合，設定によ�
 
 ### Karabiner によるキーバインドの変更 {#c25b5c16}
 
-OS X 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
+macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
 
-### OS X の日本語入力（旧ことえり）によるキーバインドの変更 {#w93e863d}
+### macOS の日本語入力（旧ことえり）によるキーバインドの変更 {#w93e863d}
 
 JIS キーボードの ¥ キーで入力する文字を \ に変更する設定が可能です。
 
@@ -202,7 +202,7 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ### 統合環境による対症療法 {#k7ca107f}
 
-いくつかの OS X 用統合環境は，この問題に対処する方法を用意しています。
+いくつかの macOS 用統合環境は，この問題に対処する方法を用意しています。
 
 - [TeXShop](</TeXShop FAQ/#y43ef465>) や [LaTeXiT](/LaTeXiT/#pd5cb643) ではキーマップの設定が可能ですので，ここで ¥ キーを \ に変換できます。
 - [TeX2img](</TeX2img FAQ/#a8b7895d>) にはメニューに「編集＞入力された ¥ を \ に置換」という項目があり，ここで ¥ キーを \ に変換できます。
