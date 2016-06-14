@@ -28,7 +28,7 @@ LuaLaTeX では [BXjscls](/BXjscls/) が使用可能です．
 
 ### その他パッケージ {#u56aae1f}
 
-- [recursive-input.sty](https://github.com/chemicl-t/recursive-imput) フォルダを指定すると、そのフォルダ内を再帰的に探索して全てのファイルを\inputするパッケージ。
+- [recursive-input.sty](https://github.com/chemicl-t/recursive-input) フォルダを指定すると、そのフォルダ内を再帰的に探索して全てのファイルを\inputするパッケージ。
 
 ### お知らせ {#t3177d69}
 
