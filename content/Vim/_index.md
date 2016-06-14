@@ -10,16 +10,18 @@ pukiwiki: "Vim"
 
 ## [Vim](http://www.vim.org/) {#c1593263}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 <div style="clear:both"></div>
 
 ## Vim とは {#h0ea1272}
 
-[Vim](https://ja.wikipedia.org/wiki/Vim) は Bram Moolenaar 氏を中心に開発が行われているエディタです．<br>
-Vim は，他の多くのエディタと異なり，「モード」という概念が存在します．<br>
-モードを切り替えることで，一つのキーに対して複数の意味を割り当てることができます．<br>
-ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．<br>
+[Vim](https://ja.wikipedia.org/wiki/Vim) は Bram Moolenaar 氏を中心に開発が行われているエディタです．
+Vim は，他の多くのエディタと異なり，「モード」という概念が存在します．
+モードを切り替えることで，一つのキーに対して複数の意味を割り当てることができます．
+ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．
 
 - [Vim 公式サイト](http://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
@@ -67,7 +69,7 @@ Vim は，チャリティウェアです．<br>
 - [Vim UTF-8 日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban)
     UTF-8 化した vim/gvim
 
-#### OS X {#gb7dcad0}
+#### macOS {#gb7dcad0}
 
 - [MacVim-KaoriYa](https://github.com/splhack/macvim-kaoriya)
     香り屋さんの Windows 版の使い勝手に近い MacVim を勝手に目指すプロジェクト
