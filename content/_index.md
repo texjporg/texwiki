@@ -131,11 +131,11 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 
 ## TeX 関連情報 <span style="font-size:10px">（ユーザ名・パスワードは左の<span style="color:#FF2800;background-color:white;"><strong>赤色の文</strong></span>を参照）</span> {#i40caa06}
 
-<!-- &size(10){'''ここは検索ボックスではありません．'''}; -->
-<!-- #pcomment(below) -->
+<span style="font-size:10px"><em>ここは検索ボックスではありません．</em></span>
 
-スパムが多いので一旦コメントアウトしてみました．
-これまでの投稿は[コメント/FrontPage](</コメント/FrontPage/>) で見れます．
+<span style="font-size:10px">スパム投稿が続いていますが，近日中に対策される予定です．</span>
+
+{{< include "コメント/FrontPage" >}}
 
 ★↑ TeX 関連情報をご提供ください
 （ユーザ名・パスワードは左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>を参照）．
