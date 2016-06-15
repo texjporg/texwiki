@@ -41,7 +41,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 
 - [★ TeXユーザの集い2016](https://texconf16.tumblr.com/) 福岡県福岡市にて2016年11月5日（土）開催予定！
 - [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
-- macOS で TeX Live 2015 以前または MacTeX 2015 以前を使っている場合， OS X 10.11 El Capitan 以降へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
+- OS X で TeX Live 2015 以前または MacTeX 2015 以前を使っている場合， OS X 10.11 El Capitan 以降へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
 
 ### TeX，LaTeX とは？ {#la57baab}
 
