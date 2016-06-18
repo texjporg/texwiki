@@ -90,6 +90,20 @@ $ sudo port install texlive-lang-japanese -doc
 
 ドキュメントも一緒にインストールする場合には、-docオプションを除きます。
 
+### フォントの埋め込み {#od9778bc}
+
+欧文フォントの埋め込みについては，LuaTeX の方法に従います．
+
+和文フォントの埋め込み設定は，付属の luatexja-preset パッケージで行います．例えばヒラギノを埋め込む設定ならば，
+
+```
+\usepackage[hiragino-pron]{luatexja-preset}
+```
+
+というようにします．オプションには，kozuka-pro, kozuka-pr6, kozuka-pr6n, hiragino-pro, hiragino-pron, morisawa-pro, morisawa-pr6n, yu-win, yu-osx, moga-mobo, noembed, ipa-hg, ipaex-hg, ms-hg が指定できます．具体的にどのようなフォントが埋め込まれるかは，luatexja-ja.pdf を参照してください．また，luatexja-preset には [OTF](/OTF/) パッケージのような機能も含まれています．詳しくは luatexja-ja.pdf をご覧ください．
+
+和文フォント用の fontspec である luatexja-fontspec パッケージも付属しています．luatexja-preset パッケージで用意されていないフォントを使うには，こちらで直接指定することになります．
+
 ### 注意点 {#vbed1356}
 
 現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．
