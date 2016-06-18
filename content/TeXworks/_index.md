@@ -65,17 +65,10 @@ TeXworks で使用する文字コードはデフォルトでは UTF-8 です．
 <!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
 <!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
 
-Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．
+Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．最近の TeX Live や W32TeX の設定では規定で埋め込まれます．
 
-% フォント埋め込み設定の書かれた然るべきページにリンクするべきだと思う．
-
-### TeX Live の場合 {#aa8923ee}
-
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
-
-### W32TeX の場合 {#h6fd82bc}
-
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．upLaTeX (ptex2pdf) で PDF ファイルを作成した場合，自動的にフォントが埋め込まれるので特に設定する必要はありません．
+- dvipdfmx の場合：[dvipdfmx/フォントの設定](</dvipdfmx/フォントの設定/>)を参照．
+- LuaTeX-ja の場合：[LuaTeX-ja](/LuaTeX-ja/#od9778bc) を参照
 
 ## 不具合 {#v0f00822}
 
