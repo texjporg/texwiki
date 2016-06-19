@@ -302,19 +302,25 @@ TeX の役割はある決まった大きさの領域に、文字という「箱�
 TFM　についての（フォーマットに関する）詳しい解説については
 
 - David Fuchs による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.\]
-- [tftopl.web](http://www.ctan.org/tex-archive/systems/knuth/dist/texware/tftopl.web) を WEAVE して得られるドキュメント
+- [tftopl.web](http://www.ctan.org/tex-archive/systems/knuth/dist/texware/tftopl.web) を WEAVE して得られるドキュメント。\[tftopl は、TFM ファイルを人間が可読なフォーマット (PL) に変換するプログラムです\]
 
 を参照してください。（上記リンク先の PDF は低画質のスキャン画像です）
 
 ### Font Definition (.fd) {#nf0707eb}
 
-LaTeX でフォントを使う際は、通常、フォントは属性の組で指定されます。例えば、cmr というファミリのメディアムウェイト・イタリック体を 10 pt のサイズで、エンコーディングは OT1、など。LaTeX においては、フォントは
+LaTeX でフォントを使う際は、通常、フォントは属性(フォントの種類・太さ・サイズなど)の組で指定されます。例えば、cmr というファミリのメディアムウェイト・イタリック体を 10 pt のサイズで、エンコーディングは OT1、などです。LaTeX においては、フォントはこれら属性、
 
 ```
    <encoding, family, series, shape, size>
 ```
 
-の組で完全に指定されます。Font definition ファイルの役割は、この属性の組で指定されたフォントを、TFM ファイルに結びつける事です。前述の例を cmti10 に結びつけるには、
+の組で完全に指定されます。Font definition ファイルの役割は、この属性の組で指定されたフォントを、TFM ファイルに結びつける事です。前述の例、
+
+```
+   <OT1, cmr, medium, italic, 10pt>
+```
+
+を、cmti10 に結びつけるには、
 
 ```
    \DeclareFontShape{OT1}{cmr}{m}{it}{<10>cmti10}{}
