@@ -39,6 +39,7 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 
 ### 関連リンク {#cfaeb364}
 
+- [PHPでTeXをPDF化してくれるサービスを作りたい(アドバイス歓迎)](http://qiita.com/inductor/items/6be85d61ea7c47680100)
 - [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
 - [TeX implementations in the Cloud](http://cikitsa.blogspot.co.at/2013/01/tex-implementations-in-cloud.html)
 - [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
