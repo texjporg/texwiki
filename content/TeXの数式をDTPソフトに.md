@@ -163,15 +163,19 @@ PDF にしたければ EPS で保存して Adobe Acrobat Distiller DC で変換�
 
 また，[pstoedit](/pstoedit/) を [GSview](/GSview/) と同じところ（標準では "C:\Program Files\Ghostgum\pstoedit\\"）にインストールしておけば，GSview から \[Edit\] → \[Convert to vector format...\] で WMF や EMF に変換できます。
 
-[TeX2img](/TeX2img/) の Windows 版は，付属ツールの pdfiumdraw を使って EMF ファイルを出力することができます。
-なお，この pdfiumdraw を単独で PDF ファイルを EMF ファイルに変換するツールとして利用することもできます。
+[TeX2img](/TeX2img/) は EMF 形式のファイルを出力することができます。
+また，Windows 版に付属の pdfiumdraw （TeX2img が内部から利用している）を使い
 
-- [TeX2img に学ぶ「画像編集・変換ツール」](http://acetaminophen.hatenablog.com/entry/2015/06/02/222405)
+```
+> pdfiumdraw --emf input.pdf
+```
+
+とすることで，input.pdf を EMF へと変換することもできます。
 
 ## Ghostscript でアウトライン化する方法 {#bf206395}
 
 Ghostscript の eps2write デバイスを使ってアウトラインを取る方法もあります（→ [qa:20472](https://okumuralab.org/~okumura/texfaq/qa/20472.html)）。
-eps2write は gs9.14 以降で追加されたデバイスなので，お使いのバージョンが gs9.10 以前の場合は以下 epswrite と読み替えてください．
+eps2write は gs9.14 以降で追加されたデバイスなので，お使いのバージョンが gs9.14 より古い場合は以下 epswrite と読み替えてください．
 
 まず，次のように充分大きいサイズで式を作ります
 （[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
