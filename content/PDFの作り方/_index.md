@@ -73,7 +73,7 @@ LaTeX のインストールについては
 [Linux へのインストール](/Linux/)
 などのページをご覧ください．
 
-LaTeX で PDF を作成する方法はいくつかあります．日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました．現在では platex/uplatex → dvipdfmx という流れが主流です．
+LaTeX で PDF を作成する方法はいくつかあります．日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました.
 欧米では，pdfLaTeX により LaTeX 文書から直接 PDF を生成するのが一般的です．
 Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/)
 が使えます．
@@ -85,8 +85,6 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
     - lualatex: tex → pdf
     - xelatex: tex (→ xdv) → pdf
 1. tex → dvi → pdf
-    - platex→dvipdfmx (現在日本で最も主流)
-    - uplatex→dvipdfmx (現在日本で主流)
     - Windows では [dviout](/dviout/) から印刷で PDF へ出力する方法もあります．
 1. tex → dvi → ps → pdf
     - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
