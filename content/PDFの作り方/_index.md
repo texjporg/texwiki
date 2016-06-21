@@ -191,7 +191,7 @@ OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋�
 
 フォントの埋め込みはよい PDF を作成するために推奨されることですが，これにはライセンス上の微妙な問題も絡み，注意が必要です。「[フォントの埋め込みとライセンス](</フォントの埋め込みとライセンス/>)」の項なども参照してください．
 
-<em>Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．</em>
+Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．
 
 #### テキスト情報 {#g073c42c}
 
