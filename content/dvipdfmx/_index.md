@@ -289,8 +289,6 @@ dvipdfmx には<em>出力結果が PDF/X 準拠かどうか検証したり，準
 
 ## よくある問題 {#d092ab9c}
 
-Dvipdfmx は問題の多いプログラムであると言われています．Dvipdfmx で問題が起こる場合は，dvips + Adobe Distiller (あるいは ps2pdf) を使用しましょう．
-
 ### EPS 画像 {#wc8e72e0}
 
 EPS の画像が表示されない，位置がずれるなどの問題は頻発します．
