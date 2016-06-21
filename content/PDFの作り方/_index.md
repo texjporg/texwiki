@@ -91,7 +91,7 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
 1. tex → dvi → ps → pdf
     - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
 
-arXiv などでは 3. を要求されます．特に Adobe Acrobat Distiller DC を用いるほうが信頼性が高く，印刷所などでも好まれます．
+arXiv などでは 3. を要求されます．Adobe Acrobat Distiller DC を用いると信頼性が高く，印刷所などでも好まるケースがあるようです．
 
 ### dvips の使い方 {#lf015a28}
 
