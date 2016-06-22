@@ -12,7 +12,9 @@ pukiwiki: "BasicTeX"
 BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，OS X 専用の TeX ディストリビューションです。
 BasicTeX は TeX Live の scheme-small に対応し，LaTeX の文書作成に必要な最低限のパッケージと [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[XeTeX](/XeTeX/) などが含まれています。
 BasicTeX には [e-pTeX](/e-pTeX/) や [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
-collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)， [BXjscls](/BXjscls/)，[LuaTeX-ja](/LuaTeX-ja/) も利用可能になります。
+collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)， [BXjscls](/BXjscls/) も利用可能になります。 <!-- LuaTeX-ja は BasicTeX + collection-langjapanese だけではダメなので下へ移動 - - アセトアミノフェン (2016-06-22) -->
+
+BasicTeX の派生版である [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) は，最初から BasicTeX + collection-langjapanese を収録しています。 <!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， --> <!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
 
 ***
 
@@ -82,6 +84,10 @@ $ sudo tlmgr install collection-langjapanese
 <!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
 <!-- -[[Macbook air に texlive2014 をインストールする:http://d.hatena.ne.jp/pyopyopyo/20140815/p1]] -->
 
-### 派生版 {#qa5b89e9}
+### BasicTeX + collection-langjapanese で LuaTeX-ja を使う {#f2230bb1}
 
-- [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)
+TeX Live の collection-langjapanese には [LuaTeX-ja](/LuaTeX-ja/) も含まれています。
+しかし，BasicTeX + collection-langjapanese だけでは ltjsarticle.cls などを使った文書をタイプセットすることができません。
+LuaTeX-ja を実際に使用するには，別途 collection-luatex (ctablestack.sty etc.) や collection-latexextra (filehook.sty etc.) などいくつかのパッケージを追加する必要があります。
+
+% [Twitter](https://twitter.com/_yyu_/status/728825087470632961) などを参考に再現してみて，最小構成を確認できれば追記します。 -- アセトアミノフェン (2016-06-22)
