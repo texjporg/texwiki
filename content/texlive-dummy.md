@@ -35,9 +35,9 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2015-ex.txt
-equivs-build debian-equivs-2015-ex.txt
-sudo dpkg -i texlive-local_2015-1_all.deb
+wget http://www.tug.org/texlive/files/debian-equivs-2016-ex.txt
+equivs-build debian-equivs-2016-ex.txt
+sudo dpkg -i texlive-local_2016-1_all.deb
 ```
 
 ### Fedora <a id="fedora"></a> {#cf6b23bc}
@@ -64,7 +64,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/TeX Live for opensuse.org に依存するパッケージが TeX Live/TeX Live for opensuse.org をインストールするのを防止できます．
 
 ```
-sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2015.9999-1.noarch.rpm
+sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2016.9999-1.noarch.rpm
 ```
 
 ### RHEL/CentOS/SL <a id="rhel"></a> <a id="centos"></a> <a id="sl"></a> {#ha758dd0}
