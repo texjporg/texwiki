@@ -35,56 +35,44 @@ pukiwiki: "TeX Live/Windows"
 かなりの時間がかかります．
 環境にもよりますが，多く場合一時間から二時間ほどかかると思います．
 
-以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．2015 の例ですが，2016でも変わらないと思います．
+以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
-% 誰か更新してー
+以降は2015の例ですが，2016でもほとんど変わりません．
 
-<a href="/attach/TeX%20Live/Windows/2015_inst1.png"><img src="/attach/TeX%20Live/Windows/2015_inst1.png" alt=""></a>
+<!-- 誰か更新してー -->
 
-\[Next >\] を押します．
+[<img src="/attach/TeX Live/Windows/2015_inst1.png" alt="" width="50%">](</attach/TeX Live/Windows/2015_inst1.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst2.png" alt="" width="50%">](</attach/TeX Live/Windows/2015_inst2.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst3.png" alt="" width="50%">](</attach/TeX Live/Windows/2015_inst3.png>)
 
-<a href="/attach/TeX%20Live/Windows/2015_inst2.png"><img src="/attach/TeX%20Live/Windows/2015_inst2.png" alt=""></a>
+- \[Next >\] を押します．
+- \[Install\] を押します．
+- 待ちます．
 
-\[Install\] を押します．
+[<img src="/attach/TeX Live/Windows/2015_inst4.png" alt="" width="30%">](</attach/TeX Live/Windows/2015_inst4.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst5.png" alt="" width="30%">](</attach/TeX Live/Windows/2015_inst5.png>)
 
-<a href="/attach/TeX%20Live/Windows/2015_inst3.png"><img src="/attach/TeX%20Live/Windows/2015_inst3.png" alt=""></a>
+- \[次へ→\] を押します．
+- 待ちます．
 
-待ちます．
+[<img src="/attach/TeX Live/Windows/2015_inst6.png" alt="" width="25%">](</attach/TeX Live/Windows/2015_inst6.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst7.png" alt="" width="25%">](</attach/TeX Live/Windows/2015_inst7.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst8.png" alt="" width="25%">](</attach/TeX Live/Windows/2015_inst8.png>)
 
-<a href="/attach/TeX%20Live/Windows/2015_inst4.png"><img src="/attach/TeX%20Live/Windows/2015_inst4.png" alt=""></a>
+- \[次へ→\] を押します．
+- \[次へ→\] を押します．
+- \[導入\] を押します．
 
-\[次へ→\] を押します．
+[<img src="/attach/TeX Live/Windows/2015_inst9.png" alt="" width="30%">](</attach/TeX Live/Windows/2015_inst9.png>)
+[<img src="/attach/TeX Live/Windows/2015_inst10.png" alt="" width="30%">](</attach/TeX Live/Windows/2015_inst10.png>)
 
-<a href="/attach/TeX%20Live/Windows/2015_inst5.png"><img src="/attach/TeX%20Live/Windows/2015_inst5.png" alt=""></a>
+- インストールが開始されたので待ちます．
+    - 大体の場合は二時間程度かかるようです．
+- インストールが終わると右の画面になるので \[終了\] を押します．
 
-待ちます．
+[<img src="/attach/TeX Live/Windows/2015_inst11.png" alt="" width="30%">](</attach/TeX Live/Windows/2015_inst11.png>)
 
-<a href="/attach/TeX%20Live/Windows/2015_inst6.png"><img src="/attach/TeX%20Live/Windows/2015_inst6.png" alt=""></a>
-
-\[次へ→\] を押します．
-
-<a href="/attach/TeX%20Live/Windows/2015_inst7.png"><img src="/attach/TeX%20Live/Windows/2015_inst7.png" alt=""></a>
-
-\[次へ→\] を押します．
-
-<a href="/attach/TeX%20Live/Windows/2015_inst8.png"><img src="/attach/TeX%20Live/Windows/2015_inst8.png" alt=""></a>
-
-\[導入\] を押します．
-
-<a href="/attach/TeX%20Live/Windows/2015_inst9.png"><img src="/attach/TeX%20Live/Windows/2015_inst9.png" alt=""></a>
-
-インストールが開始されたので待ちます．
-これが長いです．
-表示は二時間となっていますが，この後数字が伸びて結局二時間十分かかりました．
-
-<a href="/attach/TeX%20Live/Windows/2015_inst10.png"><img src="/attach/TeX%20Live/Windows/2015_inst10.png" alt=""></a>
-
-こんな感じの画面になったら終了です．
-\[終了\] を押します．
-
-<a href="/attach/TeX%20Live/Windows/2015_inst11.png"><img src="/attach/TeX%20Live/Windows/2015_inst11.png" alt=""></a>
-
-裏にこっそり残っていたこの画面を \[Close\] を押して閉じたらインストールは完了です．
+- 裏にこっそり残っていたこの画面を \[Close\] を押して閉じたらインストールは完了です．
 
 #### 詳細な設定を行う場合 {#l8a32d32}
 
