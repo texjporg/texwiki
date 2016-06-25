@@ -10,7 +10,7 @@ pukiwiki: "OTF"
 ## OTF パッケージ {#l22413ec}
 
 [OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，Adobe-Japan1-6 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
-ここでは OTF パッケージを Microsoft Windows と OS X で使う方法を説明します。
+ここでは OTF パッケージを Microsoft Windows と macOS で使う方法を説明します。
 
 OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeXと外字/>)を参照してください。
 
@@ -39,7 +39,7 @@ TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex �
 
 [W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。
 これを例えば C:\temp\ に入れます。
-Windows PowerShell やコマンド プロンプトで次のように打ち込みます。
+コマンド プロンプトで次のように打ち込みます。
 
 ```
 PS C:\Users\$Env:USERNAME> c:
@@ -133,7 +133,7 @@ Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパッ�
 ***
 
 これを “hoge.tex” という名前で UTF-8 で保存します。
-Windows PowerShell, コマンド プロンプト, ターミナルエミュレータで次のようにして処理します。
+コマンドプロンプトやターミナルエミュレータで次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -170,7 +170,7 @@ Windows PowerShell, コマンド プロンプト, ターミナルエミュレー
 start hoge.pdf
 ```
 
-- OS X の場合
+- macOS の場合
 
 ```
 open hoge.pdf
@@ -293,7 +293,7 @@ $TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr
 シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
-Windows PowerShell またはコマンド プロンプトで次のようにして処理します。
+コマンド プロンプトで次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -331,7 +331,7 @@ OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC で
 上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
 [TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
-#### OS X の場合 {#c2475144}
+#### macOS の場合 {#c2475144}
 
 $TEXMFLOCAL/fonts/opentype// ディレクトリ以下に Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のあるディレクトリをシンボリックリンクして mktexlsr を実行します。
 
@@ -403,12 +403,12 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
 
 ### 游書体 {#qe2ec43e}
 
-Windows 10, OS X に付属している游書体フォントは Adobe-Japan1-6 に準拠しています。
+Windows 10, macOS に付属している游書体フォントは Adobe-Japan1-6 に準拠しています。
 
 - [OS搭載の游書体について](http://www.jiyu-kobo.co.jp/os-installed-y/)
 - [OS搭載の游書体一覧PDF](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/04/compatibility_160325.pdf)
 
-## ヒラギノと OS X {#l1d1369f}
+## ヒラギノと macOS {#l1d1369f}
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
@@ -480,7 +480,7 @@ $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。
-[kanji-config-updmap](https://github.com/norbusan/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。
+[kanji-config-updmap](https://github.com/texjporg/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDF へのフォント埋め込みの指定、および埋め込み状況の確認ができます。
 
 ```
 $ sudo kanji-config-updmap-sys <fontname>  （otf-<fontname>.map にしたがってフォントを埋め込む）
@@ -613,7 +613,7 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!--  -->
 <!-- TeX Live の updmap では CJK フォントも対象になっているのですか。 -->
 <!-- W32TeX では updmap は CJK フォント以外のみに対応しています。 -->
-<!-- ところで，TeX Live では updmap での（特に Mac OS X での） -->
+<!-- ところで，TeX Live では updmap での（特に macOS での） -->
 <!-- 中国語や韓国語のフォントの埋め込み制御はどのようになっているのでしょうか？ -->
 <!-- 上の記述では日本語フォントの埋め込み制御しか無いようですが。 -->
 
@@ -703,12 +703,12 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- $TEXMFLOCAL/fonts/map/dvipdfmx/base/kanjix.map の最後に -->
 <!-- 次のような内容を直接追記しても良いでしょう。） -->
 
-- [https://github.com/norbusan/jfontmaps](https://github.com/norbusan/jfontmaps)
+- [https://github.com/texjporg/jfontmaps](https://github.com/texjporg/jfontmaps)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)
 
 #### フォントを埋め込まない場合 {#t1a90b4f}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/noEmbed/](https://github.com/norbusan/jfontmaps/tree/master/maps/noEmbed/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/noEmbed/](https://github.com/texjporg/jfontmaps/tree/master/maps/noEmbed/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/)
 
 - TeX Live の場合
@@ -725,7 +725,7 @@ ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 
 #### IPAexフォントを使う場合 {#xcbe9625}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/ipaex/](https://github.com/norbusan/jfontmaps/tree/master/maps/ipaex/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/ipaex/](https://github.com/texjporg/jfontmaps/tree/master/maps/ipaex/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/)
 
 - TeX Live の場合
@@ -744,8 +744,8 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 
 #### 游書体フォントを使う場合 {#t5547d05}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-win10/)
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/](https://github.com/norbusan/jfontmaps/tree/master/maps/yu-osx/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/yu-win10/](https://github.com/texjporg/jfontmaps/tree/master/maps/yu-win10/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/yu-osx/](https://github.com/texjporg/jfontmaps/tree/master/maps/yu-osx/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
 
@@ -757,7 +757,7 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 >     ptex2pdf -u -l -od "-f uptex-yu-win10.map -f otf-up-yu-win10.map" hoge.tex
 >     ```
 >
-> - OS X の場合
+> - macOS の場合
 >
 >     ```
 >     ptex2pdf -u -l -od "-f uptex-yu-osx-04.map -f otf-up-yu-osx.map" hoge.tex
@@ -772,7 +772,7 @@ ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
 
 #### MSフォントを使う場合 {#g54b5df7}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/ms/](https://github.com/norbusan/jfontmaps/tree/master/maps/ms/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/ms/](https://github.com/texjporg/jfontmaps/tree/master/maps/ms/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/)
 
 - TeX Live の場合
@@ -833,8 +833,8 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan/)
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/](https://github.com/norbusan/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/)
 
@@ -851,13 +851,13 @@ ptex2pdf -u -l -od "-f hiraginopron04.map" hoge.tex
 ```
 
 <!-- ただし，[[HiraMinStdN-W2.otf:http://www.screen.co.jp/ga_product/sento/products/pr_CreativeV8.html#anchor_ot01V8]] -->
-<!-- は OS X に付属していません。 -->
+<!-- は macOS に付属していません。 -->
 
 #### [Adobe のフォント](http://www.adobe.com/jp/type/)（[小塚書体など](http://www.adobe.com/type/browser/C/C_japanese.html?store=OLS-JP&language=JP)）を使う場合 {#v02c074b}
 
-<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka/ -->
-<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6/ -->
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6n/](https://github.com/norbusan/jfontmaps/tree/master/maps/kozuka-pr6n/)
+<!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka/ -->
+<!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6/ -->
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6n/](https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6n/)
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/ -->
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/ -->
 
@@ -879,8 +879,8 @@ Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に K
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
 
-<!-- -https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa/ -->
-- [https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa-pr6n/](https://github.com/norbusan/jfontmaps/tree/master/maps/morisawa-pr6n/)
+<!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa/ -->
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/](https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/)
     <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/ -->
 
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/)
