@@ -9,12 +9,14 @@ pukiwiki: "pTeX-ng"
 
 ## pTeX-ng {#q8cbbf32}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### pTeX-ng とは {#bdeeaf1c}
 
-pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指すプロジェクトです．<br>
-pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力しません．<br>
+pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指すプロジェクトです．
+pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力しません．
 
 - [https://github.com/clerkma/ptex-ng](https://github.com/clerkma/ptex-ng)
 - [https://github.com/clerkma/ptex-ng/wiki](https://github.com/clerkma/ptex-ng/wiki)
@@ -22,7 +24,7 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 ### 動作環境 {#f40dfed8}
 
-[Platform](https://github.com/clerkma/ptex-ng/wiki/Overview-of-pTeX-ng#platform) を参照．<br>
+[Platform](https://github.com/clerkma/ptex-ng/wiki/Overview-of-pTeX-ng#platform) を参照．
 
 ### License {#f0d46571}
 
@@ -39,33 +41,33 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 TeX Live の場合は
 
-- [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/)
+- [tltexjp](http://www.preining.info/blog/software-projects/tlptexlive/)
 
-から入手可能です．<br>
+から入手可能です．
 
 #### インストール (Windows) {#fde376dd}
 
 ```
 PS C:\Users\$Env:USERNAME> tlmgr update --self --all
-PS C:\Users\$Env:USERNAME> tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-PS C:\Users\$Env:USERNAME> tlmgr pinning add tlptexlive "*"
+PS C:\Users\$Env:USERNAME> tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+PS C:\Users\$Env:USERNAME> tlmgr pinning add tltexjp "*"
 PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 ```
 
 <!-- ***インストール (Cygwin) [#s534df9d] -->
 <!--  -->
 <!-- $ tlmgr update - -self - -all -->
-<!-- $ tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive -->
-<!-- $ tlmgr pinning add tlptexlive "*" -->
+<!-- $ tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp -->
+<!-- $ tlmgr pinning add tltexjp "*" -->
 <!-- $ tlmgr install ptex-ng -->
 <!-- $ tlmgr path add -->
 
-#### インストール (OS X) {#bd8cc0a7}
+#### インストール (macOS) {#bd8cc0a7}
 
 ```
 $ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+$ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
 ```
 
@@ -73,15 +75,15 @@ $ sudo tlmgr install ptex-ng
 
 ```
 $ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://www.tug.org/~preining/tlptexlive/ tlptexlive
-$ sudo tlmgr pinning add tlptexlive '*'
+$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+$ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
 $ sudo tlmgr path add
 ```
 
 ### W32TeX {#vfa6195d}
 
-W32TeX には pTeX-ng が含まれています．<br>
+W32TeX には pTeX-ng が含まれています．
 
 ## 関連リンク {#re1f2eda}
 
