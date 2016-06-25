@@ -200,14 +200,14 @@ $ synctex help edit
 
 を参照してください。
 
-## [pxdvi](</TeX Live/#tlptexlive>) <a id="pxdvi"></a> {#s1b173bb}
+## [pxdvi](</TeX Live/#tltexjp>) <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
 
 pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです。
 pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
 
-- [tlptexlive](</TeX Live/#tlptexlive>)
+- [tltexjp](</TeX Live/#tltexjp>)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://osdn.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
@@ -215,14 +215,13 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
 
 ### ChangeLog {#y0777637}
 
-- [https://github.com/norbusan/tlptexlive-root/commits/master](https://github.com/norbusan/tlptexlive-root/commits/master)
-- [https://github.com/norbusan/build-tlptexlive/commits/master](https://github.com/norbusan/build-tlptexlive/commits/master)
+- [https://github.com/texjporg/tltexjp/commits/master](https://github.com/texjporg/tltexjp/commits/master)
 - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/)
     - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tlptexlive](</TeX Live/#tlptexlive>) からインストールできます。
+pxdvi は [tltexjp](</TeX Live/#tltexjp>) からインストールできます。
 
 インストール方法は [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/) を参照してください。
 
