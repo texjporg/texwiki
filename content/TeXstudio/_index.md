@@ -29,7 +29,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境�
 
 ### 動作環境 {#e7cc7bd5}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#od98a625}
 
@@ -47,9 +47,9 @@ Windows 用のインストーラをダウンロードして実行します．
 
 Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象が発生することがあります（[不具合情報](#ped67bdd)を参照）．
 
-#### OS X {#d9a96322}
+#### macOS {#d9a96322}
 
-OS X 用の zip アーカイブをダウンロードして展開します．
+macOS 用の zip アーカイブをダウンロードして展開します．
 
 Homebrew や MacPorts からもインストールできます．
 
@@ -85,7 +85,7 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 ## 注意点 {#g9d4fa21}
 
-### OS X の TeXstudio で ptex2pdf が動作しない {#zfde7b69}
+### macOS の TeXstudio で ptex2pdf が動作しない {#zfde7b69}
 
 &#x7e;/.bash_profile に
 
@@ -112,19 +112,31 @@ Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字�
 
 - [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 
-### OS X の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
+### macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
 
-OS X の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
+macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
 Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
-また、IMEソフトのGoogle日本語入力では文字入力時に円記号をBackslashに変更するオプションがあります.
-これを有効にするとTeXstudioのテキストフィールドにはBackslashが入力されますが、実際には正しくBackslashの文字コードが送られていないようです．
-そのためTeXstudioがTeXコマンドを認識できず、自動補完機能が正常に動作しません．
-以上からGoogle日本語入力を使用する際もKarabinerを併用するのが良いでしょう．
+また、IME ソフトの Google 日本語入力では文字入力時に円記号を Backslash に変更するオプションがあります.
+これを有効にすると TeXstudio のテキストフィールドには Backslash が入力されますが、実際には正しく Backslash の文字コードが送られていないようです．
+そのため TeXstudio が TeX コマンドを認識できず、自動補完機能が正常に動作しません．
+以上から Google 日本語入力を使用する際も Karabiner を併用するのが良いでしょう．
 
 - [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
 - [Macで円記号の代わりにバックスラッシュをデフォルトにする](http://hajimesakurai.hatenablog.com/entry/2015/08/26/222753)
 - [TeXStudio on Macでコマンド補完が使えない](http://qiita.com/o_nishy/items/e674b6e219e3d3bd7381)
+
+### TeXstudio 2.10.8 で Latexmk のコマンド設定を自由に指定することができない {#ud04434b}
+
+TeXstudio 2.10.8 の Latexmk のコマンド設定はリストから選択する方式になっており自分で設定した Latexmk を自由に指定して使用することができません．
+TeXstudio 2.10.8 で Latexmk を実行して PDF ファイルを表示する場合は Latexmk のコマンド設定を PdfLaTeX に設定して
+
+- 既定のコンパイラ：「PdfLaTeX」
+- ビルド &amp; 表示：「コンパイル &amp; 表示」
+
+に設定します．
+
+TeXstudio 2.11.0 以降では Latexmk のコマンド設定は自由に指定して使用できるように修正されています．
 
 ## 文字コードの変換 {#v4ac40ab}
 
@@ -137,11 +149,11 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#o84f3d5c}
 
-### OS X の場合 {#ued437e7}
+### macOS の場合 {#ued437e7}
 
 - [TeXstudioの組み込みPDFビューアで日本語を表示させる(Mac)](http://hayate.me/archives/31)
 
-OS X の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
+macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
 poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
 [TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．
 
