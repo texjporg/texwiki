@@ -9,9 +9,9 @@ pukiwiki: "Skim"
 
 ## [Skim](http://skim-app.sourceforge.net/) {#icc6746f}
 
-<img src="http://skim-app.sourceforge.net/images/skimIcon.png" alt="Skim" style="float:right">
+***
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
 ## Skim とは {#mcac8dfe}
 
@@ -22,7 +22,7 @@ Skim は PDF ビューアです．
 
 ### 動作環境 {#rb90213b}
 
-OS X
+macOS
 
 ### License {#o9f5d76f}
 
