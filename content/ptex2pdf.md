@@ -107,15 +107,15 @@ $ ptex2pdf -u -l hoge.tex
 
 #### 開発版レポジトリ {#repository}
 
-[https://github.com/norbusan/ptex2pdf](https://github.com/norbusan/ptex2pdf)
+[https://github.com/texjporg/ptex2pdf](https://github.com/texjporg/ptex2pdf)
 
 #### ライセンス {#license}
 
-[GPLv2](https://github.com/norbusan/ptex2pdf#copyright-and-license)
+[GPLv3, GPLv2](https://github.com/texjporg/ptex2pdf#copyright-and-license)
 
 #### 変更履歴 {#changelog}
 
-[https://github.com/norbusan/ptex2pdf#changelog](https://github.com/norbusan/ptex2pdf#changelog)
+[https://github.com/texjporg/ptex2pdf#changelog](https://github.com/texjporg/ptex2pdf#changelog)
 
 #### CTAN 配布サイト {#ctanurl}
 
