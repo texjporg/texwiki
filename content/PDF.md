@@ -13,7 +13,7 @@ PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Inco
 現在は，国際規格 [ISO 32000-1](http://www.iso.org/iso/catalogue_detail.htm?csnumber=51502) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript　などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
-その用途は二十数年前の登場から広がりを見せ，現在では様々な用途や目的におけるニーズにあわせ，それに特化した派生規格も存在します．
+その用途は二十数年前の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
 PDF から派生した規格として，主に以下のものがあります：
 
 - PDF/X -- 印刷用途に特化した規格。より安全な印刷データの受け渡しのため，PDF に様々な制約を設けています．
@@ -70,6 +70,24 @@ PDF を出力できます．
 
 以下では，主にオープンソースのソフトウェアについて紹介していきます．
 
+#### PDF を操作する様々なプログラム {#i31c5aaa}
+
+[Poppler](/Poppler/) は PDF 描画ライブラリですが，PDF を操作する様々なユーティリティ・プログラムが付属しています．
+
+- pdfdetach -- 添付ファイルの一覧出力または抽出
+- pdffonts -- 文書で使用されるフォントの分析
+- pdfimages -- 文書中の画像を抽出
+- pdfinfo -- 文書情報を表示
+- pdfseparate -- ページを抽出する
+- pdftocairo -- PDF から PNG/JPEG/PDF/PS/EPS/SVG への Cairo を使った変換を行う
+- pdftohtml -- HTML への変換を行う
+- pdftoppm -- PPM/PNG/JPEG 画像への変換を行う
+- pdftops -- PostScript  への変換を行う
+- pdftotext -- テキストを抽出する
+- pdfunite -- 文書の結合を行う
+
+また，[Apatch PDFBox](http://pdfbox.apache.org/) ， [pdftk](/pdftk/) や [QPDF](/QPDF/) などにも様々な処理を行うプログラムが含まれます．
+
 #### ファイルの結合やページの抽出 {#a6819b00}
 
 [pdftk](/pdftk/) や [QPDF](/QPDF/)　で，ファイルの結合やページの抽出など，様々な操作が行えます。
@@ -77,7 +95,7 @@ PDF を出力できます．
 
 #### テキスト抽出 {#p1620d11}
 
-[Poppler](/Poppler/) や [Xpdf](/Xpdf/) に含まれる pdftotext　を使うと，PDF 文書からテキストのみ抽出できます。
+[Poppler](/Poppler/) に含まれる pdftotext や [Apatch PDFBox](http://pdfbox.apache.org/) を使うと，PDF 文書からテキストのみ抽出できます。
 
 #### パスワード保護 {#r212a8b0}
 
@@ -116,6 +134,7 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 - [Foxit Reader](http://www.foxitsoftware.com/downloads/#reader) フリーのPDF Reader
 - [Skim](/Skim/) SyncTeX に対応した PDF ビューア．OS X 専用です．
 - [Slim PDF Reader](http://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
+- [Atom](/Atom/) エディタで [pdf-view](http://atom.io/packages/pdf-view) パッケージを使う (PDF.js)
 
 Poppler を利用したものは多く，どれを使えばよいのかわかり辛いですが，使っているデスクトップ環境や好みの UI で選びましょう．
 
