@@ -9,13 +9,13 @@ pukiwiki: "Inkscape"
 
 ## [Inkscape](https://inkscape.org/) {#ycda5b1e}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-<div style="clear:both"></div>
+***
 
 ## Inkscape とは {#v6fd1815}
 
-Inkscape はベクターグラフィックエディタ (SVG エディタ) です．<br>
+Inkscape はベクターグラフィックエディタ (SVG エディタ) です．
 
 <table>
 <tbody>
@@ -39,7 +39,7 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 
 ### 動作環境 {#a70b2acc}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#ibc5e002}
 
@@ -47,7 +47,7 @@ Windows, OS X, Linux
 
 ### リリース情報 {#d961699f}
 
-[最新ニュース](https://inkscape.org/ja/news/)を参照．<br>
+[最新ニュース](https://inkscape.org/ja/news/)を参照．
 
 ### ChangeLog {#q8a7ad68}
 
@@ -79,51 +79,43 @@ Windows, OS X, Linux
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
-Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定できます．<br>
+Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定できます．
 
-***
+> <span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+>
+>  PDF バージョン制限 <ins> PDF 1.5               \[ <strong>ᐯ</strong> \]</ins><br>
+>   ☐ テキストをパスに変換する<br>
+>   ☑ PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
+>   ☑ フィルダーエフェクトをラスタライズする<br>
+>  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
+>  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
+>             ◯ エクスポートオブジェクトのサイズを使用<br>
+>  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
+>  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
 
-<span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+>
+>  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
+>   ☐ テキストをパスに変換する<br>
+>   ☑ EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
+>   ☑ フィルダーエフェクトをラスタライズする<br>
+>  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
+>  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
+>             ◯ エクスポートオブジェクトのサイズを使用<br>
+>  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
+>  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
 
- PDF バージョン制限 <ins> PDF 1.5               \[ <strong>ᐯ</strong> \]</ins><br>
-  ☐ テキストをパスに変換する<br>
-  ☑ PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
-  ☑ フィルダーエフェクトをラスタライズする<br>
- ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
-            ◯ エクスポートオブジェクトのサイズを使用<br>
- 裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
- オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
-
-***
-
-<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
- PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
-  ☐ テキストをパスに変換する<br>
-  ☑ EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
-  ☑ フィルダーエフェクトをラスタライズする<br>
- ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
-            ◯ エクスポートオブジェクトのサイズを使用<br>
- 裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
- オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
-
-***
-
-<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
- PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
-  ☐ テキストをパスに変換する<br>
-  ☑ PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
-  ☑ フィルダーエフェクトをラスタライズする<br>
- ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
- 出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
-            ◯ エクスポートオブジェクトのサイズを使用<br>
- 裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
- オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
-
-***
+> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+>
+>  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
+>   ☐ テキストをパスに変換する<br>
+>   ☑ PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
+>   ☑ フィルダーエフェクトをラスタライズする<br>
+>  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
+>  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
+>             ◯ エクスポートオブジェクトのサイズを使用<br>
+>  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
+>  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
 
 コマンドラインから PDF+LaTeX, EPS+LaTeX, PS+LaTeX で出力することも可能です．
 
@@ -139,7 +131,7 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 
 #### ! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) → 「EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成」 のチェックボックスを解除する {#p8fa7725}
 
-! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) のエラーが発生する場合は 「EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成」 のチェックボックスを解除してください． (→ [inkscapeで作った画像epsをtexでの利用の仕方がわからず困っています．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10107244200))<br>
+! LaTeX Error: Cannot determine size of graphic in ???.eps_tex (no BoundingBox) のエラーが発生する場合は 「EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成」 のチェックボックスを解除してください． (→ [inkscapeで作った画像epsをtexでの利用の仕方がわからず困っています．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10107244200))
 
 ## エクステンション {#s696e33c}
 
@@ -151,11 +143,11 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 
 ### [EqTeXSVG (LaTeX formula)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
-LaTeX と連携するためのエクステンション．<br>
+LaTeX と連携するためのエクステンション．
 <strong>環境変数 PATH に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
 
-[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．<br>
-[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．<br>
+[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
+[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
 
 - [Inkscape (Win)でLaTeX数式を使えるようにする](http://nan-hen.com/?p=9244)
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
@@ -167,11 +159,7 @@ LaTeX と連携するためのエクステンション．<br>
 [TeX Live](</TeX Live/>) には dvisvgm, dvips, latex が含まれています．<br>
 [W32TeX](/W32TeX/) には pstoedit, dvisvgm, dvips, latex が含まれています．<br>
 
-***
-
 TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
-
-***
 
 - [https://inkscape.org/en/download/](https://inkscape.org/en/download/)
 
@@ -179,15 +167,11 @@ TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロ�
 
 展開したフォルダーを C:\inkscape と仮定します．別のフォルダーに展開した場合は読み替えてください．
 
-***
-
 - [https://github.com/julienvitard/eqtexsvg](https://github.com/julienvitard/eqtexsvg)
 
 から EqTeXSVG をダウンロードします．
 
 eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして元々の eqtexsvg.inx, eqtexsvg.py を上書きします．
-
-***
 
 EqTeXSVG (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
 
@@ -204,7 +188,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 #### インストール (Linux) {#jbc77a7b}
 
-eqtexsvg を最新版に更新します．<br>
+eqtexsvg を最新版に更新します．
 
 ```
 $ wget https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
@@ -216,7 +200,7 @@ $ wget https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 $ curl -kRLO https://github.com/julienvitard/eqtexsvg/archive/master.tar.gz
 ```
 
-ファイルを展開して eqtexsvg.py に実行権限を付加して /usr/share/inkscape/extensions にコピーします．<br>
+ファイルを展開して eqtexsvg.py に実行権限を付加して /usr/share/inkscape/extensions にコピーします．
 
 ```
 $ tar xvf master.tar.gz
@@ -225,13 +209,14 @@ $ chmod +x eqtexsvg.py
 $ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
 ```
 
-Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] が使用出来ます．<br>
+Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] が使用出来ます．
 
 #### 使用方法 {#se15d9b2}
 
 - <strong>環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．
 
-PATH を通しているのに LaTeX formula が表示されない場合は，まず PATH を確認します．<br>
+PATH を通しているのに LaTeX formula が表示されない場合は，まず PATH を確認します．
+
 Windows PowerShell の場合は
 
 ```
@@ -244,7 +229,8 @@ $Env:Path
 path
 ```
 
-を実行します．<br>
+を実行します．
+
 pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PATH に登録されていれば Windows PowerShell またはコマンド プロンプトから
 
 ```
@@ -253,19 +239,15 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
 
 として Inkscape を起動してみてください．
 
-***
-
-<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LaTeX formula</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-　LaTeX formula: <ins>\\(\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
-　追加パッケージ(カンマ区切り)：<br>
-　☐ Debug information<br>
-
-<br>
-
-　☑ ライブプレビュー<br>
-
-***
+> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LaTeX formula</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
+>
+> 　LaTeX formula: <ins>\\(\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
+> 　追加パッケージ(カンマ区切り)：<br>
+> 　☐ Debug information<br>
+>
+> <br>
+>
+> 　☑ ライブプレビュー<br>
 
 デフォルトでは LaTeX formula は \\( ～ \\) となっているようです．
 
@@ -337,8 +319,6 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PA
         ```
         \begin{equation}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation}
         ```
-
-***
 
 ### [SVG2TikZ](https://github.com/kjellmf/svg2tikz) {#u5ee2f7d}
 
