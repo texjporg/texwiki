@@ -91,3 +91,5 @@ TeX Live の collection-langjapanese には [LuaTeX-ja](/LuaTeX-ja/) も含ま�
 LuaTeX-ja を実際に使用するには，別途 collection-luatex (ctablestack.sty etc.) や collection-latexextra (filehook.sty etc.) などいくつかのパッケージを追加する必要があります。
 
 % [Twitter](https://twitter.com/_yyu_/status/728825087470632961) などを参考に再現してみて，最小構成を確認できれば追記します。 -- アセトアミノフェン (2016-06-22)
+
+% [ここ](http://qiita.com/yyu/items/e3451caa86779b94abe1)が参考になりそう。
