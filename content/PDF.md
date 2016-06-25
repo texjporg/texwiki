@@ -27,7 +27,8 @@ Adobe より，元となる PDF の仕様書が公開されています (ISO の
 - [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
-近年では，OS X のみならず，Windows 10 でも標準で PDF 出力が可能で，Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
+macOS と Windows 10 では標準で PDF 出力が可能です．
+Windows 10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
 
 ***
 
@@ -39,7 +40,7 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 ### PDF を扱うソフトウェア {#o7e2223a}
 
-OS X や Windows 10 では，プリント機能を持ったどんなアプリケーションからも，
+macOS や Windows 10 では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
 また，PostScript や PDF などを扱う，GhostScript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
 [PDFCreator](http://www.pdfforge.org/)，
@@ -114,7 +115,7 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 
 ### PDF ビューア {#zd559492}
 
-[Google Chrome](</Google Chrome/>) が標準で PDF の描画をサポートしていたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．OS X をはしりとして，iOS や Windows 10 など，様々な環境で PDF を標準で，あるいは簡単に表示できます．
+[Google Chrome](</Google Chrome/>) が標準で PDF の描画をサポートしていたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．macOS をはしりとして，iOS や Windows 10 など，様々な環境で PDF を標準で，あるいは簡単に表示できます．
 
 [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) が有名ですが，ほかにも様々あります：
 
@@ -132,7 +133,7 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 - [TeXShop](/TeXShop/) PDF ビューアとしても使える TeX の統合環境
 - [PDF-XChange Viewer](http://www.tracker-software.com/product/pdf-xchange-viewer) タブ切り替え型で軽快に動作するフリーの PDF ビューア
 - [Foxit Reader](http://www.foxitsoftware.com/downloads/#reader) フリーのPDF Reader
-- [Skim](/Skim/) SyncTeX に対応した PDF ビューア．OS X 専用です．
+- [Skim](/Skim/) SyncTeX に対応した PDF ビューア．macOS 専用です．
 - [Slim PDF Reader](http://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
 - [Atom](/Atom/) エディタで [pdf-view](http://atom.io/packages/pdf-view) パッケージを使う (PDF.js)
 
