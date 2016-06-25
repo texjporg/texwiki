@@ -195,14 +195,13 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
     - [ftp://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](ftp://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 
-### [tlptexlive](http://www.preining.info/blog/software-projects/tlptexlive/) <a id="tlptexlive"></a> {#r64bfbe1}
+### [tltexjp](http://www.preining.info/blog/software-projects/tlptexlive/) <a id="tltexjp"></a> {#r64bfbe1}
 
-tlptexlive は TeX Live の補助リポジトリです．
+tltexjp は TeX Live の補助リポジトリです．
 
 - [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/)
 - [tlptexlive Archives - There and back again](http://www.preining.info/blog/tag/tlptexlive/)
-- [https://github.com/norbusan/tlptexlive-root](https://github.com/norbusan/tlptexlive-root)
-- [https://github.com/norbusan/build-tlptexlive](https://github.com/norbusan/build-tlptexlive)
+- [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
 
 ### [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
 
