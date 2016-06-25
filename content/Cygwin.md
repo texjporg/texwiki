@@ -175,7 +175,7 @@ Cygwin 本家から提供されています．
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
-<!-- [[tlptexlive:http://www.preining.info/blog/software-projects/tlptexlive/]] に Cygwin のバイナリが用意されています． -->
+<!-- [[tltexjp:http://www.preining.info/blog/software-projects/tlptexlive/]] に Cygwin のバイナリが用意されています． -->
 <!-- ただし，setup-x86.exe または setup-x86_64.exe でインストールした texlive パッケージでは，tlmgr がうまく動かないので，tlptexlive リポジトリは，TeX Live を install-tl などで独自インストールしたときに使えるとお考えいただくのが現時点ではよさそうです． -->
 
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
