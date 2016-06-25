@@ -20,139 +20,7 @@ pukiwiki: "TeXstudio/設定/Linux"
 - コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．
 - コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．
 - コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．
-- Latexmk-upLaTeX-pdfdvi を使用する場合は コマンドの PdfLaTeX に設定されている pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex を latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % に変更します．pdfLaTeX を実行したくなった場合は Latexmk の変数 $pdflatex が pdflatex コマンドに設定されていれば \[ツール(T)\] &gt; \[コマンド(C)\] &gt; \[LaTeXmk\] から Latexmk で pdfLaTeX を実行できます．
-
-***
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
-
-一般<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
-
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
-
-ビルド<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
-
-キーボードショートカット<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
-
-エディタ<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
-
-構文の強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
-
-コマンドの補完<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
-
-文法<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
-
-プレビュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
-
-SVN<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　☐ 高度なオプションの表示
-
-<br>
-
-***
-
-詳細な設定をする場合は高度なオプションの表示を ON にします．<br>
-
-***
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_general.png" alt="一般" width="37" height="37" style="float:left">
-
-一般<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_commands.png" alt="コマンド" width="37" height="37" style="float:left">
-
-<span style="color:Black;background-color:#DAEAFF;">コマンド 　　　　　　　　　　　</span><br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_quickbuild.png" alt="ビルド" width="37" height="37" style="float:left">
-
-ビルド<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_shortcut.png" alt="キーボードショートカット" width="37" height="37" style="float:left">
-
-キーボードショートカット<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_latexmenus.png" alt="メニュー" width="37" height="37" style="float:left">
-
-メニュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_toolbars.png" alt="ツールバー" width="37" height="37" style="float:left">
-
-ツールバー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="エディタ" width="37" height="37" style="float:left">
-
-エディタ<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_advancededitor.png" alt="詳細なエディタ設定" width="37" height="37" style="float:left">
-
-詳細なエディタ設定<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="構文の強調表示" width="37" height="37" style="float:left">
-
-構文の強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_highlighting.png" alt="カスタム強調表示" width="37" height="37" style="float:left">
-
-カスタム強調表示<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_completion.png" alt="コマンドの補完" width="37" height="37" style="float:left">
-
-コマンドの補完<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_editor.png" alt="文法" width="37" height="37" style="float:left">
-
-文法<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_preview.png" alt="プレビュー" width="37" height="37" style="float:left">
-
-プレビュー<br>
-
-<img src="http://hg.code.sf.net/p/texstudio/hg/raw-file/tip/images/config_svn.png" alt="SVN" width="37" height="37" style="float:left">
-
-SVN<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　☑ 高度なオプションの表示
-
-<br>
+- 詳細な設定をする場合は高度なオプションの表示を ON にします．
 
 ***
 
@@ -164,9 +32,9 @@ LaTeX
 PdfLaTeX
 : &nbsp;
 
-: latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+<!-- :|latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O - -bblencoding=utf8 -u -U - -output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % -->
 
-<!-- :|pdflatex -synctex=1 -interaction=nonstopmode %.tex -->
+: pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
 XeLaTeX
 : &nbsp;
@@ -238,7 +106,7 @@ Makeindex
 Texindy
 : &nbsp;
 
-: ptexindy %.idx
+<!-- :|ptexindy %.idx -->
 
 : texindy %.idx
 
@@ -265,7 +133,9 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: latexmk -pdf -silent -latexoption="-synctex=1" %
+: latexmk -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+
+<!-- :|latexmk -pdf -silent -latexoption="-synctex=1" % -->
 
 SVN
 : &nbsp;
