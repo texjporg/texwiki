@@ -9,7 +9,7 @@ pukiwiki: "MacTeX"
 
 ## [MacTeX](http://tug.org/mactex/) {#mactex}
 
-MacTeX は [TeX Live](</TeX Live/>) をベースにした OS X 専用の TeX ディストリビューションです。
+MacTeX は [TeX Live](</TeX Live/>) をベースにした macOS 専用の TeX ディストリビューションです。
 TeX Live をフルインストールし，オプションでいくつかの追加アプリケーションもインストールします。
 
 <strong>公式サイト</strong>
@@ -59,12 +59,12 @@ GUI Applications には以下のアプリケーションが収録されていま
     - システムにインストールされている過去のバージョンの MacTeX を OS X El Capitan で動作するように新しいシンボリックリンクを作成するインストールパッケージ。
 
 - [TeX Live Utility](</TeX Live Utility/>)
-    - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の OS X ネイティブの GUI アプリケーション。
+    - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
     - （2016より）過年度の MacTeX がインストールされている場合，メニューの「設定 - 頒布版の再設定」から使用する TeX システムを切り替えることができます。
 
 - [TeXShop](/TeXShop/)
-    - OS X 専用の TeX 統合環境。
+    - macOS 専用の TeX 統合環境。
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
@@ -116,7 +116,7 @@ MacTeX のインストールの概略は以下のとおりです。
 1. 日本語環境を整えます。
     - ヒラギノフォントを TeX でも利用可能にします。（→[日本語環境の整備](</TeX Live/Mac/#i9febc9b>)）
         - 以前の TeX Live で既に設定済みの場合は，この手順は不要です（ただし，OS X El Capitan へのアップデート後にまだ作業を行っていない場合は必要になります）。
-        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える OS X ならばヒラギノを利用可能にする設定は有用でしょう。
+        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える macOS ならばヒラギノを利用可能にする設定は有用でしょう。
     - Ghostscript でも日本語が使えるようにします。（→[Ghostscript で日本語を扱えるようにする設定](</TeX Live/Mac/#mc6bf937>)）<strong><span style="color:red;">注意！</span>OS X El Capitan ではシステムのフォント回りの設定が大幅に変更になったため Ghostscript が未対応で，この設定は一部失敗します。</strong>
         - cjk-gs-integrate.pl を実行すると，使用可能なフォントが Ghostscript 用に登録されます。
     - sudo kanji-config-updmap-sys を実行して PDF に埋め込むフォントを指定します。（→[kanji-config-updmap(-sys) ](</TeX Live/Mac/#hf34afcc>)）
@@ -143,6 +143,7 @@ $ sudo tlmgr update --self --all
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
+- \[[El Capitan\] MacTeX-2016をインストールする](http://qiita.com/Aruneko/items/6a524896df0e90181044)
 - [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
 - [TeX環境の構築方法【OS X El Capitan】](http://kengo92i.hatenablog.jp/entry/2016/05/04/204519)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
