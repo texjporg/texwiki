@@ -36,7 +36,7 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 - [Microsoft Windows](</Microsoft Windows/>)
     <!-- -[[Cygwin]] -->
 
-- [OS X](/Mac/)
+- [macOS](/Mac/)
 - [Linux](/Linux/)
 - [BSD](/BSD/)
 - [Android](/Android/)
@@ -55,12 +55,12 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 TeX ディストリビューションごとの解説ページです．
 現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
-OS X 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
+macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
 
-- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, OS X, Linux)
+- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, macOS, Linux)
 - <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
-- <strong>[MacTeX](/MacTeX/)</strong> (for OS X)
-- [BasicTeX](/BasicTeX/) (for OS X)
+- <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
+- [BasicTeX](/BasicTeX/) (for macOS)
 - [MiKTeX](/MiKTeX/) (for Windows)
 
 ### インストール時のよくあるトラブル・勘違い {#l1a033e5}
