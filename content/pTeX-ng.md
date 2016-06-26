@@ -49,7 +49,7 @@ TeX Live の場合は
 
 ```
 PS C:\Users\$Env:USERNAME> tlmgr update --self --all
-PS C:\Users\$Env:USERNAME> tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+PS C:\Users\$Env:USERNAME> tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 PS C:\Users\$Env:USERNAME> tlmgr pinning add tltexjp "*"
 PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 ```
@@ -57,7 +57,7 @@ PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 <!-- ***インストール (Cygwin) [#s534df9d] -->
 <!--  -->
 <!-- $ tlmgr update - -self - -all -->
-<!-- $ tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp -->
+<!-- $ tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp -->
 <!-- $ tlmgr pinning add tltexjp "*" -->
 <!-- $ tlmgr install ptex-ng -->
 <!-- $ tlmgr path add -->
@@ -66,7 +66,7 @@ PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 
 ```
 $ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 $ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
 ```
@@ -75,7 +75,7 @@ $ sudo tlmgr install ptex-ng
 
 ```
 $ sudo tlmgr update --self --all
-$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp/ tltexjp
+$ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 $ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
 $ sudo tlmgr path add
