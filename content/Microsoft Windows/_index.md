@@ -62,7 +62,7 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 以下では，TeXworks をもちいてみます．
 TeXworks は
 
-- TeX Live をインストールした場合はスタートメニューの「TeX Live 2015」→「TeXworks editor」から
+- TeX Live をインストールした場合はスタートメニューの「TeX Live 2016」→「TeXworks editor」から
 - W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
 - W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，Windows PowerShell またはコマンド プロンプトから 「texworks」で
 
@@ -142,7 +142,7 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
 <!-- Windows でエディタを選びたいときに，別に -->
-<!-- 「Windows, OS X, Linux で動くか，Windows でしか動かないか」 -->
+<!-- 「Windows, macOS, Linux で動くか，Windows でしか動かないか」 -->
 <!-- なんて不要だと思うので，統合環境か汎用エディタかで分類しなおします． -->
 
 <!-- ここに並べる統合環境は -->
