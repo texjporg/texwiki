@@ -9,7 +9,7 @@ pukiwiki: "Drag and Drop UpTeX"
 
 ## [Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている [BasicTeX](/BasicTeX/) + texlive-collection-langjapanese ベースの OS X 専用 TeX ディストリビューションです[^1]。
+Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている [BasicTeX](/BasicTeX/) + texlive-collection-langjapanese ベースの macOS 専用 TeX ディストリビューションです[^1]。
 OS X 10.11 El Capitan / 10.10 Yosemite 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
 あらかじめ BasicTeX に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
