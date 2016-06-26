@@ -27,7 +27,7 @@ TeXworks は TeX でドキュメントを作成するためのシンプルな統
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows（XP 以降），macOS, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
+Microsoft Windows（7 以降）, macOS, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
 
 ### License {#lccd03cb}
 
@@ -39,7 +39,7 @@ Microsoft Windows（XP 以降），macOS, GNU/Linux で利用できます．TeXw
 
 ### 設定 {#q50d2378}
 
-W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
+TeX Live （2016 以降）や W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
 
 [TeXworks/設定](</TeXworks/設定/>) を参照．
 
