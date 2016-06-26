@@ -79,6 +79,10 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 [TeXstudio/使い方](</TeXstudio/使い方/>) を参照．
 
+### 更新履歴 {#w7aac056}
+
+- [http://texstudio.sourceforge.net/manual/current/CHANGELOG.txt](http://texstudio.sourceforge.net/manual/current/CHANGELOG.txt)
+
 ### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
 
 - [TeXstudio UI 日本語訳用ファイル](https://github.com/anastashia/texstudio_jp_ui)
@@ -136,7 +140,10 @@ TeXstudio 2.10.8 で Latexmk を実行して PDF ファイルを表示する場�
 
 に設定します．
 
-TeXstudio 2.11.0 以降では Latexmk のコマンド設定は自由に指定して使用できるように修正されています．
+TeXstudio 2.11.0 で Latexmk のコマンド設定を自由に指定して使用できるように修正されました．
+
+- [TeXstudio - A LaTeX Editor / Bugs / #1694 Command path not saving?](https://sourceforge.net/p/texstudio/bugs/1694/)
+- [TeXstudio - A LaTeX Editor / Code / Commit \[6e2cee\]](https://sourceforge.net/p/texstudio/hg/ci/6e2cee782a55be47c8e2a675a4c2e55b418e6a4d/) (remove multiple default values for latexmk (fixes bug 1694))
 
 ## 文字コードの変換 {#v4ac40ab}
 
