@@ -9,7 +9,7 @@ pukiwiki: "BasicTeX"
 
 ## [BasicTeX](http://tug.org/mactex/morepackages.html) {#basictex}
 
-BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，OS X 専用の TeX ディストリビューションです。
+BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
 BasicTeX は TeX Live の scheme-small に対応し，LaTeX の文書作成に必要な最低限のパッケージと [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[XeTeX](/XeTeX/) などが含まれています。
 BasicTeX には [e-pTeX](/e-pTeX/) や [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
 collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)， [BXjscls](/BXjscls/) も利用可能になります。 <!-- LuaTeX-ja は BasicTeX + collection-langjapanese だけではダメなので下へ移動 - - アセトアミノフェン (2016-06-22) -->
@@ -50,7 +50,7 @@ BasicTeX のインストールの概略は以下のとおりです。
 1. 日本語環境を整えます。
     - ヒラギノフォントを TeX でも利用可能にします。（→[日本語環境の整備](</TeX Live/Mac/#i9febc9b>)）
         - 以前の TeX Live で既に設定済みの場合は，この手順は不要です（ただし，El Capitan へのアップデート後にまだ作業を行っていない場合は必要になります）。
-        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える OS X ならばヒラギノを利用可能にする設定は有用でしょう。
+        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える macOS ならばヒラギノを利用可能にする設定は有用でしょう。
     - sudo kanji-config-updmap-sys を実行して PDF に埋め込むフォントを指定します。（→[kanji-config-updmap(-sys) ](</TeX Live/Mac/#hf34afcc>)）
         - 新規インストール（アップグレード）時にはフォントが埋め込まれない設定となっているため，作成された PDF が「ファイルが壊れている」と見なされて開けないことがあります。
         - updmap-sys も実行されて各種の map ファイルが自動生成されます。
