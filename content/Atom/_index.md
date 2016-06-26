@@ -62,7 +62,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 ## LaTeX 環境の整備 {#o1b2f62a}
 
-latex, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
+latex もしくは latextools, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
@@ -178,6 +178,10 @@ DVI ファイルではなく PDF ファイルを開くための設定をしま�
 
 Ctrl+Alt+B をタイプするとタイプセットしたあと pdf-view で PDF が表示されます。
 PDF の表示画面をクリックすると TeX ファイルの該当する行にジャンプします。
+
+### latextools (LaTeXTools for Atom) パッケージと Skim との連携 (macOS) {#i645c95d}
+
+- [Macの設定の覚書](http://www-het.phys.sci.osaka-u.ac.jp/~yamaguch/j/mac_setting.html)
 
 ## Markdown 環境の整備 {#he8ae1a3}
 
