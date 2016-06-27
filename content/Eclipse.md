@@ -25,8 +25,6 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### 動作環境 {#aae7926e}
 
-- [http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#target_environments)
-- [http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments](http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments)
 - [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#target_environments)
 
 ### License {#aa464649}
@@ -35,8 +33,6 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
-- [http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones](http://www.eclipse.org/projects/project-plan.php?projectid=eclipse#release_milestones)
-- [http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones](http://www.eclipse.org/projects/project-plan.php?planurl=/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones)
 - [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_6.xml#release_milestones)
 
 ## Java のインストール {#ca668ec2}
