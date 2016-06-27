@@ -12,44 +12,28 @@ pukiwiki: "TeXlipse"
 
 ## [TeXlipse](http://texlipse.sourceforge.net/) {#cc0edd31}
 
-***
-
-***
-
-## TeXlipse とは {#m60f5d27}
-
 TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
+***
+
+***
+
+## 公式サイト {#m60f5d27}
+
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
-    - [All news](http://texlipse.sourceforge.net/news.php)
-    - [FAQ](http://texlipse.sourceforge.net/faq.php)
 - [TeXlipse | SourceForge.net](https://sourceforge.net/projects/texlipse/)
-    - [Files](https://sourceforge.net/projects/texlipse/files/)
-        - [texlipse plugin](https://sourceforge.net/projects/texlipse/files/texlipse%20plugin/)
-        - [dictionaries](https://sourceforge.net/projects/texlipse/files/dictionaries/)
-        - [texlipse documentation](https://sourceforge.net/projects/texlipse/files/texlipse%20documentation/)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
 - [BibSonomy](http://www.bibsonomy.org/)
-    - [TeXlipseBibSonomyExtension](http://www.bibsonomy.org/help_en/TeXlipseBibSonomyExtension)
 - [CTAN:help/Catalogue/entries/texlipse.html](https://mirror.ctan.org/help/Catalogue/entries/texlipse.html)
 
 ### License {#y9484ed1}
 
 [Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html)
 
-### リリース情報 {#f49b6dcf}
-
-[News](http://texlipse.sourceforge.net/news.php) を参照．
-
-### ChangeLog {#e321b2d0}
-
-- [https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
-    - [log](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
-
 ### スクリーンショット {#j94c34b3}
 
-[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br> <!-- [[&ref(http://texlipse.sourceforge.net/screenshots/bibref-screen-thumb.png,around,nolink,This picture shows the BibTeX completion in action. The cursor disappeared from the screenshot, but you can see the "shadow" of it, as one of the curly braces is highlighted on the line where the error is.);>http://texlipse.sourceforge.net/screenshots/bibref-screen.png]] --> <!-- 　 [[&ref(http://texlipse.sourceforge.net/screenshots/freport-screen-thumb.png,around,nolink,This picture shows navigation from build errors to source file. Latex reports all kinds of warnings and errors, and not all of them contain a line number. However, there usually is also a valid error message with line number information.);>http://texlipse.sourceforge.net/screenshots/freport-screen.png]] -->
+[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br>
 
 ### 特徴 {#qe22fab6}
 
@@ -57,12 +41,12 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 - 折りたたみ
 - 自動ビルド
 - 自動補完
-- スペル・チェッカー
+- スペル・チェッカ
 - SyncTeX による forward and inverse search
 
 ## 注意点 {#f6b7dd5c}
 
-### TeXlipse が文法的に正しい TeX ファイルを parsing (構文解析) できずにエラーになる → コメント %### を使用する {#t27e1af4}
+### TeXlipse が文法的に正しい TeX ファイルを parsing (構文解析) できずにエラーになる {#t27e1af4}
 
 - [TeXlipseがマクロを正しくParseしてくれない問題について](http://did2.blog64.fc2.com/blog-entry-334.html) を参照．
 
@@ -103,28 +87,28 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 を参照．
 
-### Eclipse がフリーズする → TeXlipse git HEAD では Eclipse がフリーズする問題は修正されています {#k9639d78}
+### Eclipse がフリーズする {#k9639d78}
+
+TeXlipse git HEAD では修正されています．
 
 - [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/bbf0c9ab337f61a4fc0a3c283fd6823661e3e420/)
-- [TeXlipse causes Eclipse UI to freeze](https://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) → Fixed
+- [TeXlipse causes Eclipse UI to freeze](https://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) (Fixed)
 
-### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない → TeXlipse git HEAD ではワードラップの問題は修正されています {#k7905270}
+### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない {#k7905270}
+
+TeXlipse git HEAD では修正されています．
 
 - [Fix word wrap bug which occurs in Eclipse Juno (3542507)](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/77f84799c805a5785d3ee1d8cda903e6bb52cfe9/)
-- [Word wrap in Juno](https://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) → Fixed
+- [Word wrap in Juno](https://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) (Fixed)
 - [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
 
-### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない → PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは SumatraPDF, TeXworks, TeXstudio, Mozilla Firefox, Chrome PDF Viewer, Adobe Acrobat Reader DC などの外部ビューアで表示する {#c876c383}
+### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない {#c876c383}
 
-- [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) → closed
+- [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) (closed)
 
-PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない場合は PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すかまたは SumatraPDF, TeXworks, TeXstudio, Mozilla Firefox, Chrome PDF Viewer, Adobe Acrobat Reader DC などの外部ビューアで表示することができます．<br>
+PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すか，または SumatraPDF, TeXworks, Adobe Acrobat Reader DC などの外部ビューアで表示することができます．
 
-<!-- **TeXlipse 1.5.0 で \bibliography がうまく動作しない [#i3d2f9c0] -->
-<!--  -->
-<!-- -[[SourceForge.net: TeXlipse: Detail: 3446921 - bibliography error since 1.5.0:https://sourceforge.net/tracker/?func=detail&aid=3446921&group_id=133306&atid=726818]] -->
-
-### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される → コメント %### を使用する {#i0880f90}
+### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される {#i0880f90}
 
 - [SourceForge.net: TeXlipse: Detail: 3498342 - Key XXX is undefined warning](https://sourceforge.net/tracker/index.php?func=detail&aid=3498342&group_id=133306&atid=726818)
 
@@ -141,24 +125,11 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 ## インストール {#u4a48677}
 
 [Eclipse](/Eclipse/) を起動します．
+メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，
+「インストール」ウィンドウの \[追加(A)...\]で，
 
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span>　</span><br>
-
-***
-
-「インストール」ウィンドウの \[追加(A)...\]
-で
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>×</strong></span> \]<ins></span></ins></span><br>
-
-名前(N):　　　　　<ins>TeXlipse Update Site</ins><br>
-ロケーション(L): <ins>&#x68;ttp://texlipse.sourceforge.net</ins>
-
-***
+- 名前(N): TeXlipse Update Site
+- ロケーション(L): &#x68;ttp://texlipse.sourceforge.net
 
 を入力して \[OK\] をクリックします．
 
@@ -169,7 +140,7 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
 TeXlipse のインストール後 Eclipse を再起動します．
 
-Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
+Update Site を使う方法がうまくいかない場合は [CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
 から直接ダウンロードして展開 (解凍) します．
 展開したファイルの中に plugins フォルダーがあります．
 この plugins フォルダーを Eclipse フォルダーに上書きコピーします．
@@ -190,20 +161,23 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
 - [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
-    <!-- -[[改造版TeXlipse:http://www.csg.is.titech.ac.jp/~f_takeyama/texlipse/]] -->
-
 - [spell check does not run](https://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
-    <!-- -[[ms4py / latexmk.py / wiki / Texlipse – Bitbucket:https://bitbucket.org/ms4py/latexmk.py/wiki/Texlipse]] -->
-
 - [TeXlipse as a lightweight portable TeX editor](http://blog.keyboardplaying.org/2012/05/26/texlipse-lightweight-portable-tex-editor/)
 - [TeXlipse is again my favorite LaTeX environment](http://joelslinux.blogspot.jp/2012/05/texlipse-is-again-my-favorite-latex.html)
 - [【Ubuntu,Windows】TexlipseでB4や用紙を横にする場合のdvipdfmxの設定 --- ただ、設定しなくてもtexの記述で指定できる。](http://ankyo.blog.so-net.ne.jp/2012-05-18)
-- [TeX覚書](http://ameblo.jp/tex-memo)
 - [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [EclipseでTeXを編集するTeXlipse](http://d.hatena.ne.jp/jun9128/20110323/)
 - [Eclipse/TeXlipse - KLab Public Wiki](http://telecom0.eng.niigata-u.ac.jp/index.php?Eclipse/TeXlipse)
 - [LaTeX Community &bull; View topic - Texlipse can't find Bibtex](http://www.latex-community.org/forum/viewtopic.php?f=27&t=10481&start=0)
-- [nomencl.sty: TeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/nomencl.html)
+
+### リリース情報 {#f49b6dcf}
+
+[News](http://texlipse.sourceforge.net/news.php) を参照．
+
+### ChangeLog {#e321b2d0}
+
+- [https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
+    - [log](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
