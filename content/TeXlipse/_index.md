@@ -40,7 +40,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ### リリース情報 {#f49b6dcf}
 
-[News](http://texlipse.sourceforge.net/news.php) を参照．<br>
+[News](http://texlipse.sourceforge.net/news.php) を参照．
 
 ### ChangeLog {#e321b2d0}
 
@@ -166,13 +166,13 @@ PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Ec
 - Pdf4Eclipse
 - TeXlipse
 
-にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．<br>
-TeXlipse のインストール後 Eclipse を再起動します．<br>
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
+TeXlipse のインストール後 Eclipse を再起動します．
 
 Update Site を使う方法が，うまくいかない場合は，[CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
-から直接ダウンロードして展開 (解凍) します．<br>
-展開したファイルの中に plugins フォルダーがあります．<br>
-この plugins フォルダーを Eclipse フォルダーに上書きコピーします．<br>
+から直接ダウンロードして展開 (解凍) します．
+展開したファイルの中に plugins フォルダーがあります．
+この plugins フォルダーを Eclipse フォルダーに上書きコピーします．
 
 ## 設定 {#j3f79297}
 
