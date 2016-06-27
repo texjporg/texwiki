@@ -98,7 +98,7 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 ## 不具合 {#t2a5d9cf}
 
-- [SourceForge.net: TeXlipse: Bugs](https://sourceforge.net/tracker/?group_id=133306&atid=726818)
+- [TeXlipse / Bugs](https://sourceforge.net/p/texlipse/bugs/)
 - [Issues · Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse/issues)
 
 を参照．
@@ -202,7 +202,6 @@ Update Site を使う方法が，うまくいかない場合は，[CTAN:support/
 - [【Ubuntu,Windows】TexlipseでB4や用紙を横にする場合のdvipdfmxの設定 --- ただ、設定しなくてもtexの記述で指定できる。](http://ankyo.blog.so-net.ne.jp/2012-05-18)
 - [TeX覚書](http://ameblo.jp/tex-memo)
 - [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
-- [Setting up TeXlipse and SumatraPDF](http://halkov.blogspot.com/2011/04/setting-up-texlipse-and-sumatrapdf.html)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [EclipseでTeXを編集するTeXlipse](http://d.hatena.ne.jp/jun9128/20110323/)
 - [Eclipse/TeXlipse - KLab Public Wiki](http://telecom0.eng.niigata-u.ac.jp/index.php?Eclipse/TeXlipse)
