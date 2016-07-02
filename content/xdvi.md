@@ -212,6 +212,9 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
 - [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://osdn.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
 - [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
+- \[[debian-devel:19159\] Orphan jtex-base, multex-base, xdvik-ja](http://lists.debian.or.jp/debian-devel/201606/msg00008.html), \[[debian-devel:19164\]](http://lists.debian.or.jp/debian-devel/201606/msg00013.html)
+
+% 最後のリンクについて，これだけを書き込むのがよくわかりませんが，どういう意図なのでしょうか？ -- kmaeda (2016/07/02)
 
 ### ChangeLog {#y0777637}
 
