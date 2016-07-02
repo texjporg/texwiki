@@ -80,6 +80,24 @@ $ sudo tlmgr install collection-langjapanese
 - [BasicTeX-2015でRe:VIEWの環境を用意する](http://qiita.com/takahashim/items/74d6d1de557fad09a879)
 - [MacにTexを導入する](http://mktozk.hateblo.jp/entry/configure-tex-on-mac)
 
+#### TeX Live 2016 以降での注意点 {#y0fc0688}
+
+<!-- [[古い情報]] に書くべきかもしれないが，影響ある人は少ないと思われるので，直接関係ありそうなこちらに． -->
+
+TeX Live 2015 以前でのインストール事例・解説記事では，BasicTeX に加えて
+
+```
+$ sudo tlmgr install ptex
+```
+
+などとすれば日本語環境ができるとしているものがあります。
+確かに 2015 以前では ptex をインストールすれば platex も使えるようになっていたのですが，
+2016 以降では platex は platex パッケージに分離されました。
+このため，ptex をインストールしただけでは platex が使えるようにはなりません。
+
+日本語環境を構成するには，このページで解説しているように collection-langjapanese を
+インストールすることをおすすめします。
+
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
 <!-- -[[Macbook air に texlive2014 をインストールする:http://d.hatena.ne.jp/pyopyopyo/20140815/p1]] -->
