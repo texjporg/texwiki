@@ -47,6 +47,32 @@ GPLv2
 
 [TeXShop FAQ](</TeXShop FAQ/>) を参照．
 
+### TeXShopヘルプ（Ver. 1, Ver. 2 当時のもの） {#x6a7ef77}
+
+日本語版ヘルプには次の章が追加されています。
+
+- 「pTeX と TeXShop で日本語環境を構築する」を追加
+- 「日本語エンコーディングと \ ¥ 文字の扱い」を追加
+- 「Including Graphics（画像を入れる）」の冒頭に解説を追加
+
+TeXShopヘルプ（Version 2.10b）
+
+- TeXShop/ヘルプ (v2-1)
+- TeXShop/ヘルプ (v2-2)
+- TeXShop/ヘルプ (v2-3)
+- TeXShop/ヘルプ (v2-4)
+- TeXShop/ヘルプ (v2-5)
+- TeXShop/ヘルプ (v2-6)
+
+TeXShopヘルプ（Version 1.43）
+
+- TeXShop/ヘルプ (v1-1)
+- TeXShop/ヘルプ (v1-2)
+- TeXShop/ヘルプ (v1-3)
+- TeXShop/ヘルプ (v1-4)
+- TeXShop/ヘルプ (v1-5)
+- TeXShop/ヘルプ (v1-6)
+
 ### 関連リンク {#qb1b8010}
 
 - MacWiki:TeXShop
