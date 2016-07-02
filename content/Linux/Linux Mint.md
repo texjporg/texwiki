@@ -7,15 +7,11 @@ pukiwiki: "Linux/Linux Mint"
 
 # Linux/Linux Mint
 
-[Linux](/Linux/) > Linux Mint/Linux Mint Debian Edition (LMDE)
+[Linux](/Linux/) > Linux Mint
 
-## [Linux Mint/Linux Mint Debian Edition (LMDE)](https://linuxmint.com/) {#f4077eb2}
+## [Linux Mint](https://linuxmint.com/) {#f4077eb2}
 
-Linux Mint は Ubuntu をベースにした [DistroWatch.com](http://distrowatch.com/?language=JP) ページヒットランキング 1 位の Linux ディストリビューションです．
-Linux Mint Debian Edition (LMDE) は Debian GNU/Linux をベースにした Linux ディストリビューションです．
-デスクトップ環境に Cinnamon, MATE, KDE, Xfce を採用しています．
-
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Linux_Mint_logo_and_wordmark.svg/500px-Linux_Mint_logo_and_wordmark.svg.png,right,around,nolink,Linux Mint) -->
+Linux Mint はデスクトップ向けの使いやすい Linux ディストリビューションです．
 
 ***
 
@@ -45,19 +41,10 @@ sudo apt install texlive-full xzdec
 tlmgr init-usertree
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive-xetex パッケージと texlive パッケージをインストールする場合は <!-- Linux Mint の最新版は 17.3 です． --> <!-- どのバージョン以降が正しいのでしょう？ -->
-
-Linux Mint 18 以降の場合は
+日本語関連のパッケージをインストールする場合は
 
 ```
-sudo apt install texlive-lang-japanese texlive-luatex texlive-xetex texlive xzdec
-tlmgr init-usertree
-```
-
-Linux Mint 17.3 の場合は
-
-```
-sudo apt install texlive-lang-cjk texlive-luatex texlive-xetex texlive xzdec
+sudo apt install texlive-lang-japanese xzdec
 tlmgr init-usertree
 ```
 
