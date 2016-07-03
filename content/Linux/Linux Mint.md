@@ -26,6 +26,9 @@ Linux Mint はデスクトップ向けの使いやすい Linux ディストリ�
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
+- [http://packages.ubuntu.com/ja/texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [http://packages.ubuntu.com/ja/texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [http://packages.ubuntu.com/ja/xzdec](http://packages.ubuntu.com/ja/xzdec)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
@@ -37,20 +40,67 @@ Linux Mint はデスクトップ向けの使いやすい Linux ディストリ�
 TeX Live/Debian をフルインストールする場合は
 
 ```
-sudo apt install texlive-full xzdec
+sudo apt install texlive-full
+sudo apt install xzdec
 tlmgr init-usertree
 ```
 
-日本語関連のパッケージをインストールする場合は
+日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo apt install texlive-lang-japanese xzdec
+sudo apt install texlive-lang-japanese
+sudo apt install xzdec
 tlmgr init-usertree
 ```
 
 を実行します．
 
 tlmgr の実行には xzdec パッケージが必要です．
+
+texlive-lang-japanese パッケージのみインストールした場合は LuaTeX-ja や BXjscls を使用するとエラーが発生することがあります．
+エラーが発生する場合は必要なパッケージを追加でインストールします．
+
+- ! LaTeX Error: File \`luatexbase.sty' not found. が発生する場合
+
+```
+sudo apt install texlive-luatex
+```
+
+- ! LaTeX Error: File \`xkeyval.sty' not found. が発生する場合
+
+```
+sudo apt install texlive-latex-recommended
+```
+
+- ! LaTeX Error: File \`filehook.sty' not found. が発生する場合
+
+```
+sudo apt install texlive-latex-extra
+```
+
+- luaotfload | db : Reload initiated (formats: otf,ttf,ttc,dfont); reason: "File not found: lmroman10-regular.".<br>! Font \EU2/lmr/m/n/10=file:lmroman10-regular:script=latn;+trep;+tlig; at 10pt not loadable: metric data not found or bad. が発生する場合
+
+```
+sudo apt install fonts-lmodern
+```
+
+- ! LaTeX Error: File \`xunicode.sty' not found. が発生する場合
+
+```
+sudo apt install texlive-xetex
+```
+
+- ! LaTeX Error: File \`CJK.sty' not found. が発生する場合
+
+```
+sudo apt install latex-cjk-common
+```
+
+- kpathsea: Running mktextfm ipxm-r-u65<br>/usr/share/texlive/texmf-dist/web2c/mktexnam: Could not map source abbreviation  for ipxm-r-u65. が発生する場合
+
+```
+sudo apt install texlive-fonts-extra
+```
 
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#t53b858c}
 
