@@ -78,3 +78,7 @@ texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存�
 ```
 sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
 ```
+
+### Gentoo Linux <a id="gentoolinux"></a> {#i10c1e71}
+
+- [GentooでTeXLiveを使う話](http://ryokubudoh.hatenadiary.com/entry/2015/12/09/171356)
