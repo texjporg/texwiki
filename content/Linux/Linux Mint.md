@@ -7,11 +7,15 @@ pukiwiki: "Linux/Linux Mint"
 
 # Linux/Linux Mint
 
-[Linux](/Linux/) > Linux Mint
+[Linux](/Linux/) > Linux Mint/Debian/Ubuntu
 
-## [Linux Mint](https://linuxmint.com/) {#f4077eb2}
+## [Linux Mint](https://linuxmint.com/)/[Debian](https://www.debian.org/)/[Ubuntu](http://www.ubuntu.com/) {#f4077eb2}
 
 Linux Mint はデスクトップ向けの使いやすい Linux ディストリビューションです．
+
+Debian はコミュニティによって作られる「自由なオペレーティングシステム（OS）」です．
+
+Ubuntu は PC，タブレット，スマートフォンで動作する OS です．
 
 ***
 
@@ -27,8 +31,11 @@ Linux Mint はデスクトップ向けの使いやすい Linux ディストリ�
 
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
 - [http://packages.ubuntu.com/ja/texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [https://packages.debian.org/search?keywords=texlive-full](https://packages.debian.org/search?keywords=texlive-full)
 - [http://packages.ubuntu.com/ja/texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [https://packages.debian.org/search?keywords=texlive-lang-japanese](https://packages.debian.org/search?keywords=texlive-lang-japanese)
 - [http://packages.ubuntu.com/ja/xzdec](http://packages.ubuntu.com/ja/xzdec)
+- [https://packages.debian.org/search?keywords=xzdec](https://packages.debian.org/search?keywords=xzdec)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
         - [ChangeLog](http://bazaar.launchpad.net/~naesten/tex-live/trunk/view/head:/ChangeLog)
@@ -37,25 +44,27 @@ Linux Mint はデスクトップ向けの使いやすい Linux ディストリ�
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
 
-TeX Live/Debian をフルインストールする場合は
+フルインストールする場合は
 
 ```
 sudo apt install texlive-full
-sudo apt install xzdec
-tlmgr init-usertree
 ```
 
 日本語関連のパッケージのみインストールする場合は
 
 ```
 sudo apt install texlive-lang-japanese
-sudo apt install xzdec
-tlmgr init-usertree
 ```
 
 を実行します．
 
+tlmgr も実行できます．
 tlmgr の実行には xzdec パッケージが必要です．
+
+```
+sudo apt install xzdec
+tlmgr init-usertree
+```
 
 texlive-lang-japanese パッケージのみインストールした場合は LuaTeX-ja や BXjscls を使用するとエラーが発生することがあります．
 エラーが発生する場合は必要なパッケージを追加でインストールします．
