@@ -17,5 +17,7 @@ pukiwiki: "minted"
 
 ### ChangeLog {#jb546584}
 
+- [https://github.com/gpoore/minted](https://github.com/gpoore/minted)
+    - [https://github.com/gpoore/minted/commits/master](https://github.com/gpoore/minted/commits/master)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/minted](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/minted/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/minted/?view=log)
