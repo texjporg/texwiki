@@ -394,7 +394,8 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
       (switch-to-buffer buf)
       (goto-line (car linecol))
       (unless (= col -1)
-        (move-to-column col)))))
+        (move-to-column col))
+      (x-focus-frame (selected-frame)))))
 ```
 
 ```
