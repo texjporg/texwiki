@@ -471,7 +471,8 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
       (switch-to-buffer buf)
       (goto-line (car linecol))
       (unless (= col -1)
-        (move-to-column col)))))
+        (move-to-column col))
+      (x-focus-frame (selected-frame)))))
 ```
 
 ```
