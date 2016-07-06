@@ -214,7 +214,8 @@ YaTeX または TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以
       (switch-to-buffer buf)
       (goto-line (car linecol))
       (unless (= col -1)
-        (move-to-column col)))))
+        (move-to-column col))
+      (x-focus-frame (selected-frame)))))
 ```
 
 ```
