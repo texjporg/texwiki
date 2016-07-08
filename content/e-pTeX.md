@@ -9,12 +9,10 @@ pukiwiki: "e-pTeX"
 
 ## [e-pTeX](https://osdn.jp/projects/eptex/wiki/) {#u8bd5dfc}
 
-e-pTeX は pTeX に [e-TeX](/e-TeX/) 拡張を追加したものです．
+e-pTeX は [pTeX](http://ascii.asciimw.jp/pb/ptex/) に [e-TeX](/e-TeX/) 拡張を追加したものです．
 
 e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できないことがあります．
 この場合は [e-upTeX](/upTeX,upLaTeX/) を使用してみてください．
-
-- [e-pTeX Wiki](https://osdn.jp/projects/eptex/wiki/FrontPage)
 
 ***
 
@@ -249,6 +247,12 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 <tr><td style="text-align:center">&#xfe3d;</td><td style="text-align:center">&#xfe3e;</td><td style="text-align:center">&#xfe41;</td><td style="text-align:center">&#xfe42;</td><td style="text-align:center">&#xfe43;</td><td style="text-align:center">&#xfe44;</td><td style="text-align:center">&#xfe3b;</td><td style="text-align:center">&#xfe3c;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE3D}</td></tr>
 </tbody>
 </table>
+
+## 関連リンク {#r0fcd4c9}
+
+- [アスキー日本語TeX(pTeX)](http://ascii.asciimw.jp/pb/ptex/) アスキーメディアワークス
+- [e-pTeX Wiki](https://osdn.jp/projects/eptex/wiki/FrontPage)
+- コミュニティ版 [ptex-base](https://github.com/texjporg/ptex-base), [ptex-fonts](https://github.com/texjporg/ptex-fonts), [platex](https://github.com/texjporg/platex), [pbibtex-base](https://github.com/texjporg/pbibtex-base)
 
 ### ChangeLog {#mf34fb2b}
 
