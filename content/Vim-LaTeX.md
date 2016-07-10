@@ -95,6 +95,14 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 
 ## インストール {#sbc289a6}
 
+### dein.vim を使用して GitHub の vim-latex からパッケージをインストールする場合 {#v79c791d}
+
+[dein.vim](https://github.com/Shougo/dein.vim) を使って Vim-LaTeX をインストールできます．
+
+```
+call dein#add('vim-latex/vim-latex')
+```
+
 ### NeoBundle を使用して GitHub の vim-latex からパッケージをインストールする場合 {#adee180e}
 
 [NeoBundle](https://github.com/Shougo/neobundle.vim) を使って Vim-LaTeX をインストールできます．
@@ -103,7 +111,7 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 NeoBundle 'vim-latex/vim-latex'
 ```
 
-### NeoBundle を使用せずに GitHub の vim-latex からパッケージをインストールする場合 {#g7a904f1}
+### dein.vim/NeoBundle を使用せずに GitHub の vim-latex からパッケージをインストールする場合 {#g7a904f1}
 
 [https://github.com/vim-latex/vim-latex/archive/master.zip](https://github.com/vim-latex/vim-latex/archive/master.zip) をダウンロードします．
 
