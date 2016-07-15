@@ -78,7 +78,7 @@ root 権限でインストーラを実行します．
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ sudo ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
 ```
 
 ```
