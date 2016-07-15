@@ -298,13 +298,6 @@ command_line_encoding.dvips =
 
 <strong>FTP</strong>
 <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
-<!-- - -ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-<!-- - -ftp://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
@@ -331,7 +324,6 @@ command_line_encoding.dvips =
     <!-- - -ftp://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/ -->
-    <!-- - -ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
@@ -342,13 +334,6 @@ command_line_encoding.dvips =
 <!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
     <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
-    <!-- - -http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.maffin.ad.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.shibaura-it.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.tains.tohoku.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.u-toyama.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.yamanashi.ac.jp/pub/text/TeX/ptex-win32/current/ -->
-    <!-- - -http://ring.ix.oita-u.ac.jp/pub/text/TeX/ptex-win32/current/ -->
 
 - [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
