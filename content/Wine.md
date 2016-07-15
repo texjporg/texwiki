@@ -9,11 +9,13 @@ pukiwiki: "Wine"
 
 ## [Wine](https://www.winehq.org/) {#g175729a}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### Wine とは {#r86ababd}
 
-Wine は Linux, OS X, BSD などの POSIX 準拠な OS 上で Windows アプリケーションを動作させるためのソフトウェアです．<br>
+Wine は Linux, macOS, BSD などの POSIX 準拠な OS 上で Windows アプリケーションを動作させるためのソフトウェアです．
 
 - [https://www.winehq.org/](https://www.winehq.org/)
 - [http://source.winehq.org/](http://source.winehq.org/)
