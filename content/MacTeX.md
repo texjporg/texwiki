@@ -178,7 +178,6 @@ $ sudo tlmgr update --self --all
 ### ミラーサイト (MacTeX) {#mirror}
 
 - <strong>HTTP</strong>
-    - [http://ring.airnet.ne.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.airnet.ne.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
     - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
@@ -189,19 +188,12 @@ $ sudo tlmgr update --self --all
     - [http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/)
-    - [http://ring.maffin.ad.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.maffin.ad.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.u-toyama.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://ring.yamanashi.ac.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.yamanashi.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://ring.ix.oita-u.ac.jp/pub/text/CTAN/systems/mac/mactex/](http://ring.ix.oita-u.ac.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://mirror.ctan.org/systems/mac/mactex/](http://mirror.ctan.org/systems/mac/mactex/)
 
 - <strong>FTP</strong>
-    - [ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.airnet.ne.jp/pub/text/CTAN/systems/mac/mactex/)
     - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
@@ -211,15 +203,8 @@ $ sudo tlmgr update --self --all
     - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/)
-    - [ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.maffin.ad.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.shibaura-it.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.tains.tohoku.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.u-toyama.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [ftp://ring.yamanashi.ac.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.yamanashi.ac.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [ftp://ring.ix.oita-u.ac.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ring.ix.oita-u.ac.jp/pub/text/CTAN/systems/mac/mactex/)
     - [ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [ftp://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
