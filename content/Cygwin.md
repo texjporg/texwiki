@@ -71,7 +71,7 @@ $ cd install-tl*
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
