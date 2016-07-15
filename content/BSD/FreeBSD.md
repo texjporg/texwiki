@@ -11,7 +11,9 @@ pukiwiki: "BSD/FreeBSD"
 
 ## [FreeBSD](https://www.freebsd.org) {#r05903ba}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## FreeBSD とは {#o8689db1}
 
@@ -57,7 +59,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [Storage@Anthesphoria: TeX Live on FreeBSD | TeX Live 2014 on FreeBSD | Notes for FreeBSD users](http://anthesphoria.net/FreeBSD/TeXLive-2014/)
 
-を参照．<br>
+を参照．
 
 [ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -66,23 +68,23 @@ $ sudo pkg install wget
 $ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
-install-tl-unx.tar.gz を展開します．<br>
+install-tl-unx.tar.gz を展開します．
 
 ```
 $ tar xvf install-tl-unx.tar.gz
 ```
 
-展開したインストーラのディレクトリに移動します．<br>
+展開したインストーラのディレクトリに移動します．
 
 ```
 $ cd install-tl*
 ```
 
-root 権限でインストーラを実行します．<br>
-オプションでダウンロードするリポジトリを指定できます．<br>
+root 権限でインストーラを実行します．
+オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ sudo ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
@@ -94,8 +96,8 @@ Actions:
 Enter command: I
 ```
 
-I を入力してインストールを開始します．<br>
-サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．<br>
+I を入力してインストールを開始します．
+サーバーの接続エラーが発生したり，アーカイブ中に予期せぬ EOF があったりした場合はインストールが途中でストップします．
 エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
 
 ```
@@ -104,8 +106,8 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．<br>
-インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．<br>
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．
+インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
 
 ```
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
@@ -124,16 +126,16 @@ $ sudo tlmgr update --self --all
 こちらを参照:
 [https://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html](https://lists.freebsd.org/pipermail/freebsd-ports/2013-July/085001.html) ）
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．<br>
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
 - /usr/local/texlive/????/tlpkg/backups
 
-にパッケージのバックアップが保存されます．<br>
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
+にパッケージのバックアップが保存されます．
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
 
 #### フォント埋め込みの設定 {#tf6ceac1}
 
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
+kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．
 IPAexフォントを埋め込む場合は<br>
 
 ```
@@ -148,7 +150,7 @@ $ kanji-config-updmap ipaex
 
 を実行します．<br>
 
-TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
+TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．
 
 ```
 $ kpsewhich ipaexm.ttf ipaexg.ttf
@@ -158,7 +160,7 @@ $ kpsewhich uptex-ipaex.map
 /usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
 ```
 
-upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
+upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．
 
 ```
 $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
@@ -175,7 +177,7 @@ $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
 ## その他関連Ports {#k9078aba}
 
 Portsですので，
-make &amp;&amp; make installで導入できます．<br>
+make &amp;&amp; make installで導入できます．
 
 <!-- ***TeXパッケージ [#z26b2356] -->
 <!-- |latex-mathabx|print/latex-mathabx|Math series, aka mathabx MetaFont fontset for TeX/LaTeX| -->
