@@ -11,11 +11,13 @@ pukiwiki: "BSD/NetBSD"
 
 ## [NetBSD](http://www.netbsd.org/) {#qf29df7f}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## NetBSD とは {#mb5f216a}
 
-NetBSD はオープンソースの Unix 系オペレーティングシステムです．<br>
+NetBSD はオープンソースの Unix 系オペレーティングシステムです．
 
 - [NetBSD](http://www.netbsd.org/)
 - [Japan NetBSD Users' Group](http://www.jp.netbsd.org/)
@@ -31,29 +33,29 @@ NetBSD はオープンソースの Unix 系オペレーティングシステム�
 
 を参照．<br>
 
-[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．<br>
+[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
 $ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
-install-tl-unx.tar.gz を展開します．<br>
+install-tl-unx.tar.gz を展開します．
 
 ```
 $ tar xvf install-tl-unx.tar.gz
 ```
 
-展開したインストーラのディレクトリに移動します．<br>
+展開したインストーラのディレクトリに移動します．
 
 ```
 $ cd install-tl*
 ```
 
-root 権限でインストーラを実行します．<br>
-オプションでダウンロードするリポジトリを指定できます．<br>
+root 権限でインストーラを実行します．
+オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl --repository http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/
+$ sudo ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
