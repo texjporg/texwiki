@@ -102,13 +102,12 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 インストール方法は 00README.TLW64 を参照してください．
 
 - <strong>HTTP</strong>
-    - [http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://ctan.ijs.si/mirror/w32tex/current/TLW64/](http://ctan.ijs.si/mirror/w32tex/current/TLW64/)
     - [http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
 
 - <strong>FTP</strong>
-    - [ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ring.airnet.ne.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
