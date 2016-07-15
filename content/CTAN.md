@@ -16,11 +16,87 @@ TeX 関連のファイルやソフトウェアを集めたウェブサイトで�
 
 ***
 
+### mirror.ctan.org {#mirror-sites}
+
+CTAN の世界的なミラーリングとして次の URI があります．
+
+- [http://mirror.ctan.org/](http://mirror.ctan.org/)
+
+接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです．
+
+[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
+この接続先候補に含まれる日本国内でのサイトには次のものがあります．
+
+- [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
+    - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
+        (HTTP, FTP)
+
+- [KDDI 研究所](http://www.kddilabs.jp/)
+    - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
+        (HTTP, FTP)
+    - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
+        (HTTP, FTP)
+        <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
+        <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+
+- [会津大学](http://www.u-aizu.ac.jp/)
+    - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
+        <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
+
+### オリジナルの CTAN {#original}
+
+オリジナルの CTAN サイトは次のとおりです．
+
+- HTTP
+    - U.S.A.（アメリカ）：[www.ctan.org](http://www.ctan.org/)
+        <!-- tug.ctan.org = www.ctan.org -->
+    - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
+    - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
+- FTP
+    - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
+        <!-- www.ctan.org = tug.ctan.org -->
+    - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
+    - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
+        <!-- www.dante.de = ftp.dante.de -->
+
+また，[ftp.ctan.org](http://ftp.ctan.org/) は
+[www.ctan.org](http://www.ctan.org/) (=
+[tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
+のみ），[www.dante.de](http://www.dante.de/) (=
+[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります．
+
+### その他の日本国内での CTAN のミラーサイト（一部） {#others}
+
+#### HTTP, FTP {#HTTP-FTP}
+
+- [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/)
+    - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
+        (HTTP, FTP)
+        <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
+    - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
+        (HTTP, FTP)
+
+- [理化学研究所](http://www.riken.jp/)
+    - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
+        (HTTP, FTP)
+        <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
+
+- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
+    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+        (HTTP, FTP)
+        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
+
+#### FTP のみ {#FTP-only}
+
+- [文教大学湘南キャンパス](http://open.shonan.bunkyo.ac.jp/)
+    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/)
+        (FTP のみ)
+
 ### Ring Server によるミラーリング {#RingServer}
 
 アメリカのウェブサイトは [www.ctan.org](http://www.ctan.org/)
 ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
-での CTAN のミラーリングの利用をお勧めします．
+での CTAN のミラーリングの利用も可能です．
 Ring Server
 のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください．
 Ring Server
@@ -52,83 +128,6 @@ CTAN 以外にもたくさんのフリーウェアをミラーしています．
 （Ring Server の「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの
 「TENBIN，DNS BALANCE って何ですか？ また，RingServer での負荷分散はどのように行っているのですか？」
 の項目を参照）．
-
-### mirror.ctan.org {#mirror-sites}
-
-CTAN の世界的なミラーリングとして次の URI があります．
-
-- [http://mirror.ctan.org/](http://mirror.ctan.org/)
-
-接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです．
-
-[CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
-この接続先候補に含まれる日本国内でのサイトには次のものがあります．
-
-- [北陸先端科学技術大学院大学 \[JAIST\]](http://www.jaist.ac.jp/)
-    - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
-        (HTTP, FTP)
-
-- [KDDI 研究所](http://www.kddilabs.jp/)
-    - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, FTP)
-    - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
-        (HTTP, FTP)
-        <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
-        <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
-
-- [理化学研究所](http://www.riken.jp/)
-    - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
-        (HTTP, FTP)
-        <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
-
-- [会津大学](http://www.u-aizu.ac.jp/)
-    - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
-        <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
-
-- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
-    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTP, FTP)
-        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
-
-### オリジナルの CTAN {#original}
-
-オリジナルの CTAN サイトは次のとおりです．
-
-- HTTP
-    - U.S.A.（アメリカ）：[www.ctan.org](http://www.ctan.org/)
-        <!-- tug.ctan.org = www.ctan.org -->
-    - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
-    - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
-- FTP
-    - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
-        <!-- www.ctan.org = tug.ctan.org -->
-    - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
-    - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
-        <!-- www.dante.de = ftp.dante.de -->
-
-また，[ftp.ctan.org](http://ftp.ctan.org/) は
-[www.ctan.org](http://www.ctan.org/) (=
-[tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
-のみ），[www.dante.de](http://www.dante.de/) (=
-[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります．
-
-### その他の日本国内での CTAN のミラーサイト（一部） {#others}
-
-#### HTTP, FTP {#HTTP-FTP}
-
-- [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/)
-    - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
-        <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
-    - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
-
-#### FTP のみ {#FTP-only}
-
-- [文教大学湘南キャンパス](http://open.shonan.bunkyo.ac.jp/)
-    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/)
-
-- [名古屋大学](http://www.nagoya-u.ac.jp/) [工学部](http://www.engg.nagoya-u.ac.jp/) [電気電子・情報工学科（情報工学コース）](http://www.nuie.nagoya-u.ac.jp/)[ICE (Information &amp; Computer Engineering)](http://www.ice.nuie.nagoya-u.ac.jp/)
-    - [ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/](ftp://ftp.nuie.nagoya-u.ac.jp/pub/CTAN/)
-        <!-- ftp.ice.nuie.nagoya-u.ac.jp = ftp.nuie.nagoya-u.ac.jp -->
 
 ### CTAN内日本語関連収録物 {#p09c9b86}
 
