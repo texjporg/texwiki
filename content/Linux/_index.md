@@ -243,5 +243,5 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 Linux では TeX Live をインストールするのが一般的ですが，ほかの TeX ディストリビューションをインストールすることもできます．
 
-- [W32TeX](/W32TeX/)：Microsoft Windows 向けの TeX ディストリビューションですが，Wine を使えば Linux 上で利用することも可能です．
+- [W32TeX](/W32TeX/)：Microsoft Windows 向けの TeX ディストリビューションですが，[Wine](https://www.winehq.org/) を使えば Linux 上で利用することも可能です．
     - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
