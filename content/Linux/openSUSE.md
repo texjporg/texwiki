@@ -39,16 +39,8 @@ sudo zypper install texlive-scheme-full
 
 日本語関連のパッケージのみインストールする場合は
 
-openSUSE Tumbleweed (TeX Live 2015/TeX Live for opensuse.org) の場合は
-
 ```
 sudo zypper install texlive-collection-langjapanese
-```
-
-openSUSE Leap 42.1 (TeX Live 2013/TeX Live for SUSE Linux) の場合は
-
-```
-sudo zypper install texlive-collection-langcjk
 ```
 
 を実行します．
