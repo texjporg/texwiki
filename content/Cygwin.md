@@ -52,7 +52,7 @@ Cygwin にインストールしておきましょう．
 install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
@@ -180,17 +180,19 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
 
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/)
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86_64](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86_64)
+- [https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/)
+- [https://cygwin.com/cygwin/packages/x86_64/texlive/](https://cygwin.com/cygwin/packages/x86_64/texlive/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive-collection-langjapanese/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
 
 #### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
 
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/)
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86)
+- [https://cygwin.com/cygwin/packages/x86/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86/texlive-collection-langjapanese/)
+- [https://cygwin.com/cygwin/packages/x86/texlive/](https://cygwin.com/cygwin/packages/x86/texlive/)
+- [http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive-collection-langjapanese/)
-- [ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/](ftp://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/)
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
