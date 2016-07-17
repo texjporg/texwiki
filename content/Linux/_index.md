@@ -53,13 +53,13 @@ TeX Live のインストールガイド
 - wget を使用する場合
 
     ```
-    $ wget http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 - curl を使用する場合
 
     ```
-    $ curl -O http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 install-tl-unx.tar.gz を展開します．
