@@ -73,6 +73,7 @@ $ sudo tlmgr install collection-langjapanese
 
 以下のインストール事例も参考になります。
 
+- [MacでのTeX環境設定メモ](http://ki-chi.jp/?p=679)
 - [Mac：BasicTeXを再インストール](http://blog.livedoor.jp/mt_kinabalu/archives/59515359.html)
 - [MacにTeX環境を整える](http://keisanbutsuriya.hateblo.jp/entry/2016/04/15/190757)
 - \[[El Capitan\]Homebrew CaskでTeX環境を構築する](https://www.aruneko.net/archives/1423)
