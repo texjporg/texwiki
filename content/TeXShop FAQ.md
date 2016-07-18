@@ -424,6 +424,13 @@ TeXShop には，Safari のようなタブインターフェースは用意さ�
 ```
 
 を選ぶと元に戻ります。
+デフォルトはソースが左、プレビューが右ですが、
+
+```
+defaults write TeXShop SwitchSides YES
+```
+
+とすると、左右を逆にすることができます。
 
 ## Tips {#t1ac1a97}
 
