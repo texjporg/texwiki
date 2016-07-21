@@ -60,3 +60,16 @@ pukiwiki: "LaTeX文書作成時に注意すべきこと"
 - \def については「\def でなければ出来ないこと」もありますので、それが解る方にまで非推奨する必要はないと思います。例えば [TeX.SX](http://tex.stackexchange.com/questions/655/what-is-the-difference-between-def-and-newcommand) がわかりやすいです。「解っていればメリットもあるので使うことが許容されるのか、解っていてもデメリットが大きすぎるので使わないべきなのか」という程度の問題は検討したほうが信憑性が高まると思います。（とはいえ、「\def でなければ出来ないこと」はすでに LaTeX の範囲を超えていて、“TeX on LaTeX” の領域ですからね… LaTeX の範囲内では云々という非常に解りにくい表現になるよりは良いのかな。） -- aminophen 2016-07-21 (木) 01:56:44
 - \emの書式が間違っていた（以降すべてが\emになる）ので直しました．ちなみに \bf とかは別にNFSS2の枠組みとかじゃなくって､\bf = \normalfont\bfseries （数式モードは別）であって，「互換性」のためにこうなっているんでしょうね．いたずらするなら､\normalfontを外して\bfを定義すると面白いかもしれませんが､混乱を起こすかもしれません． -- honda 2016-07-21 (木) 08:37:30
 - あれ・・・2.09って\bf､\itの順序で変わったんでしたっけ？そうだったら「弱い互換性」とでもいうべきか -- honda 2016-07-21 (木) 08:52:52
+- [latex209](https://www.ctan.org/pkg/latex209) を CTAN から持ってきて試してみたのですが，latex/general/lfonts.tex を同じディレクトリに置いて
+
+    ```
+    \documentclass{minimal}
+    \begin{document}
+    \makeatletter
+    \input lfonts.tex % 無理矢理フォント定義部分を読み込んでみる
+    \xpt
+    \it \bf hoge
+    \end{document}
+    ```
+
+    とかやってみると hoge が（イタリックではない）ボールドになります．（使い方がこれで合っているのかよくわからないですが．） そもそも cmbxti という文字列がどのファイルにもないようなのですが，ボールドイタリックはどうやって出していたのでしょうか．そのためのスタイルファイルがあったりしたのかな？ [昔の comp.text.tex の投稿](https://groups.google.com/forum/#!topic/comp.text.tex/BruaU9xFxL4)を見る限り，そうだったのでしょうか． -- kmaeda 2016-07-21 (木) 15:34:16
