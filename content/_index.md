@@ -53,6 +53,8 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OSごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
 
+インストールせずに Web で利用することもできます。 → [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)（Web上で利用できるTeX/LaTeX），[TeX を Web で](</TeXをWebで/>)（解説）
+
 ### TeX 用の統合環境・エディタを使おう {#hb6b8133}
 
 TeX はテキストデータを処理しますが，TeX そのものにエディタ機能はありません．入力支援や作業効率化などの TeX を使いやすくする機能を備えた統合環境やエディタを利用するとよいでしょう．
