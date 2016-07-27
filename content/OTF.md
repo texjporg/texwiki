@@ -30,39 +30,34 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
 
 ## インストール {#g2a8e99e}
 
-### TeX Live {#da8ed89a}
+TeX Live や W32TeX（フルインストール）とともにインストールされるので，特に追加でインストールする必要はありません。
 
-TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます．
-バージョンは[ベータ版](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup)に相当します．
-
-### W32TeX {#z4ee6291}
-
-[W32TeX](/W32TeX/) に含まれている [otfbeta.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz) をダウンロードします。
-これを例えば C:\temp\ に入れます。
-コマンド プロンプトで次のように打ち込みます。
-
-```
-PS C:\Users\$Env:USERNAME> c:
-PS C:\Users\$Env:USERNAME> cd \w32tex
-PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
-```
-
-dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。
-
-W32TeX の tar は GNU tar 1.11.8 + 2.2(WIN32) です．
-
-```
-PS C:\w32tex> .\tar --version
-GNU tar 1.11.8 + 2.2(WIN32)
-```
-
-GNU tar 1.11.8 + 2.2(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます．つまり，次で OK です:
-
-```
-PS C:\w32tex> .\tar xvf C:/temp/otfbeta.tar.xz
-```
-
-[Tar - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/tar/) によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです．
+<!-- **TeX Live [#da8ed89a] -->
+<!-- TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます。 -->
+<!-- バージョンは[[ベータ版:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup]]に相当します。 -->
+<!--  -->
+<!-- **W32TeX [#z4ee6291] -->
+<!--  -->
+<!-- [[W32TeX]] に含まれている &ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz); をダウンロードします。 -->
+<!-- これを例えば C:\temp\ に入れます。 -->
+<!-- コマンド プロンプトで次のように打ち込みます。 -->
+<!--  -->
+<!--  PS C:\Users\$Env:USERNAME// c: -->
+<!--  PS C:\Users\$Env:USERNAME// cd \w32tex -->
+<!--  PS C:\w32tex// .\tar xvf C:/temp/otfbeta.tar.xz -->
+<!--  -->
+<!-- dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。 -->
+<!--  -->
+<!-- W32TeX の tar は GNU tar 1.11.8 + 2.2(WIN32) です。 -->
+<!--  -->
+<!--  PS C:\w32tex// .\tar - -version -->
+<!--  GNU tar 1.11.8 + 2.2(WIN32) -->
+<!--  -->
+<!-- GNU tar 1.11.8 + 2.2(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます。つまり，次で OK です: -->
+<!--  -->
+<!--  PS C:\w32tex// .\tar xvf C:/temp/otfbeta.tar.xz -->
+<!--  -->
+<!-- [[Tar - GNU Project - Free Software Foundation (FSF):http://www.gnu.org/software/tar/]] によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです。 -->
 
 ### CMap {#n2a34850}
 
@@ -78,10 +73,10 @@ cmap-resources-master.zip を取得できます。
 
 ## upLaTeX, pLaTeX 以外でも OTF のコマンドを使いたい場合 {#fd82fe9a}
 
-\CID や \UTF を使いたい場合は，次のパッケージを使います．
+\CID や \UTF を使いたい場合は，次のパッケージを使います。
 
-- [LuaTeX-ja](/LuaTeX-ja/) の場合：luatexja-otf パッケージを読み込みます．
-- XeLaTeX の場合：[ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)を読み込みます．
+- [LuaTeX-ja](/LuaTeX-ja/) の場合：luatexja-otf パッケージを読み込みます。
+- XeLaTeX の場合：[ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)を読み込みます。
 
 ## 使い方 {#c8490780}
 
@@ -107,14 +102,8 @@ Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパッ�
 ***
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[uplatex,jis2004]{otf}
-\else
-  \documentclass{ltjsarticle}
-  \usepackage{luatexja-otf}
-  \usepackage[noembed,jis2004]{luatexja-preset}
-\fi
+\documentclass{jsarticle}
+\usepackage[jis2004]{otf}
 \begin{document}
 ```
 
@@ -135,32 +124,20 @@ Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパッ�
 これを “hoge.tex” という名前で UTF-8 で保存します。
 コマンドプロンプトやターミナルエミュレータで次のようにして処理します。
 
-- upLaTeX (ptex2pdf) の場合
+- pLaTeX (ptex2pdf) の場合
 
 > - TeX Live の場合
 >
 >     ```
->     ptex2pdf -u -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
+>     ptex2pdf -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 >     ```
 >
 > - W32TeX の場合
 >
 >     ```
->     ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
+>     ptex2pdf -l -od "-f noembed04.map" hoge.tex
 >     ```
 >
-
-- LuaLaTeX の場合
-
-    ```
-    lualatex hoge.tex
-    ```
-
-- LuaJITLaTeX の場合
-
-    ```
-    luajitlatex hoge.tex
-    ```
 
 出力された PDF ファイルを表示します。
 
@@ -178,8 +155,14 @@ open hoge.pdf
 
 PDF ファイルが Adobe Acrobat Reader DC に関連付けされている場合は hoge.pdf が Adobe Acrobat Reader DC で表示されると思います。
 
-upLaTeX (ptex2pdf), LuaLaTeX, LuaJITLaTeX では \UTF{...} や \CID{...} を使用しなくても OK です．
-ただし upLaTeX の場合に
+upLaTeX でも利用可能です。その場合はプリアンブルを
+
+```
+\documentclass[uplatex]{jsarticle}
+\usepackage[uplatex,jis2004]{otf}
+```
+
+としてください。
 
 ```
  \usepackage[uplatex,jis2004]{otf}
@@ -192,18 +175,25 @@ char=0x20bb7(134071)
 Tried to set a nonexistent character in a virtual font
 ```
 
-と表示されて Adobe Acrobat Reader DC で 𠮷 (U+20BB7) の字が表示されませんでした．
+と表示されて Adobe Acrobat Reader DC で 𠮷 (U+20BB7) の字が表示されませんでした。
+
+LuaTeX-ja では otf パッケージ自身は使えませんが，代わりに同等の機能を提供する luatexja-otf パッケージが利用かのうです。
+
+```
+\documentclass{ltjsarticle}
+\usepackage{luatexja-otf}
+```
+
+とします。
+
+upLaTeX や LuaTeX-ja で使う場合は，Unicode で直接入力ができます。
+例えば upLaTeX の場合は，
 
 ***
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-  \usepackage[uplatex,jis2004]{otf}
-\else
-  \documentclass{ltjsarticle}
-  \usepackage[noembed,jis2004]{luatexja-preset}
-\fi
+\documentclass[uplatex]{jsarticle}
+\usepackage[uplatex,jis2004]{otf}
 \begin{document}
 ```
 
@@ -221,6 +211,8 @@ Tried to set a nonexistent character in a virtual font
 
 ***
 
+となります。
+
 最新の Adobe-Japan1-6 の文字を表示させて見ましょう。
 OTF パッケージはベータ版を使用します。
 
@@ -229,6 +221,7 @@ OTF パッケージはベータ版を使用します。
 ***
 
 ```
+% uplatex か LuaTeX かを自動判定し正しいパッケージを読み込む。
 \ifdefined\kanjiskip
   \documentclass[uplatex]{jsarticle}
   \usepackage[uplatex,jis2004]{otf}
@@ -266,15 +259,15 @@ Adobe-Japan1-6で追加された文字を使った例
 最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に Adobe-Japan1-6 で追加された文字を使っています。
 コマンド処理は上と同様です。
 
-uplatex で処理する場合に \kcatcode\`゜=18 を追加しています．
-これを追加しない場合は uplatex でエラーが発生します．
-upTeX での kcatcode の既定値が pTeX から変更されているようです．
+uplatex で処理する場合に \kcatcode\`゜=18 を追加しています。
+これを追加しない場合は uplatex でエラーが発生します。
+upTeX での kcatcode の既定値が pTeX から変更されているようです。
 
 - W32TeX の upTeX-0.11 ([qa:49088](https://okumuralab.org/~okumura/texfaq/qa/49088.html))
 - pTeX-0.11 の kcatcode の既定値 (Re: W32TeX の...) ([qa:49120](https://okumuralab.org/~okumura/texfaq/qa/49120.html))
 - upTeX の kcatcode の既定値(Re: 欧文ギリシア語の...) ([qa:48229](https://okumuralab.org/~okumura/texfaq/qa/48229.html), [qa:48242](https://okumuralab.org/~okumura/texfaq/qa/48242.html))
 
-を参考にしてください．
+を参考にしてください。
 
 upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども使用できます。
 
@@ -460,7 +453,7 @@ min10 などのしがらみを引きずって「高さ + 深さ &lt; 幅」で�
 
 ## OTF パッケージ用の map ファイル {#nc92c884}
 
-TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています．
+TeX Live と W32TeX には OTF パッケージで使用する map ファイルが最初から用意されています。
 
 ### TeX Live の場合 {#p1b2eb36}
 
@@ -489,7 +482,7 @@ $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込ま
 $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
 ```
 
-自動的に埋め込み設定されるフォント &lt;fontname> は次のものです．
+自動的に埋め込み設定されるフォント &lt;fontname> は次のものです。
 
 ```
 hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
@@ -507,7 +500,7 @@ dvipdfmx -f uptex-hiragino-elcapitan-pron-04.map -f otf-up-hiragino-elcapitan-pr
 ### W32TeX の場合 {#rffd4bea}
 
 W32TeX には，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
-埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照．)
+埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照。)
 
 ```
 dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
