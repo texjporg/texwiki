@@ -158,6 +158,8 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### macOS の場合 {#ued437e7}
 
+- [TexStudioをEl Capitanで使うまでにしたこと](http://qiita.com/kztka/items/80a244f4f90c1d48767d)
+- [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
 - [TeXstudioの組み込みPDFビューアで日本語を表示させる(Mac)](http://hayate.me/archives/31)
 
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
@@ -174,11 +176,14 @@ Unknown CID font collection, please report to poppler bugzilla.
 ```
 
 この場合は /usr/local/share/poppler が poppler-data を配置するディレクトリになります．
-コマンドラインから poppler-data を /usr/local/share/poppler に配置する場合は以下のように実行します．
+
+Homebrew で poppler-data をインストールする場合は以下のように実行します．
 
 ```
 $ brew install poppler
 ```
+
+poppler-data が /usr/local/share/poppler に配置されているかを確認します．配置されていない場合は /usr/local/share/poppler に配置します．
 
 brew install poppler でうまくいかない場合は以下のように実行します．
 
@@ -190,7 +195,7 @@ $ sudo mkdir -p /usr/local/share/poppler
 $ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
 ```
 
-***
+poppler-data は以下のように配置されます．
 
 ```
 /
@@ -209,8 +214,6 @@ $ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
                 ├─Makefile
                 └─README
 ```
-
-***
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
