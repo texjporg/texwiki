@@ -180,7 +180,7 @@ Unknown CID font collection, please report to poppler bugzilla.
 $ brew install poppler
 ```
 
-または
+brew install poppler でうまくいかない場合は以下のように実行します．
 
 ```
 $ cd ~
