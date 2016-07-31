@@ -34,7 +34,7 @@ TeXShop には文字コード自動判定機能はありませんので，開き
 OS X Mavericks 10.9.5 のアップデートにおいて，[デジタル署名のバージョンがアップデートされた](http://readwrite.jp/archives/11485)影響で，それ以前の時代に開発されたアプリを自動アップデートしようとすると，アップデートに失敗することがあります。
 TeXShop のメニューからの自動アップデートがうまくいかない場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして，既存の TeXShop.app を上書きすることで，手動アップデートを行ってください。
 
-TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8979)
+- TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8979)
 
 ### OS をアップデートしたら \includegraphics で画像が出力されなくなった {#X11}
 
@@ -48,7 +48,7 @@ TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8
 
 TeX Forum: [1291](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1291#p7302), [1439](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1439#p8051), [1449](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1449#p8097)
 
-### Yosemite にアップデートしたら PDF がぼやけて見えるようになった {#y17d23d7}
+### 出力 PDF のプレビュー画面がぼやけて見える {#y17d23d7}
 
 この現象は 非 Retina ディスプレイ搭載 + Yosemite 以降搭載 の Mac でのみ生じる問題です。
 Yosemite 以降のPDF レンダリングエンジンにバグがあるために生じる現象で，OS の PDF レンダリングエンジンを使用している [Skim](/Skim/) など他の PDF ビューアでも同じ問題が発生しています。
@@ -130,16 +130,32 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 のチェックを外してください。
 
-### 編集メニューの「統計情報...」が動かない {#nb06ea5c}
+### \UTF{....} というエラーが出る {#c8c10fcb}
 
-「統計情報」は，シェルスクリプト TeXShop.app/Contents/Resources/detexwrap 経由で detex を呼び出します。お使いの TeX ディストリビューションに detex が含まれていないと動作しません。
-（その旨、エラーメッセージを出した方が親切だと思いますが...）
+環境設定 → 詳細 → pTeX 拡張機能 → utf パッケージ対応 が意図せずONになっている可能性が高いです。これをOFFにしてください。特に，XeLaTeX など非 pTeX エンジンを使用している際は必ずOFFにする必要があります。詳細は「[環境設定 → 詳細 → pTeX 拡張対応 → utf パッケージ対応 とは何？](https://texwiki.texjp.org/?TeXShop%20FAQ#re61bdc6)」の項目を参照してください。
 
-### 閉じたファイルがずっと「使用中」になる {#z1d6bf0b}
+- TeX Forum: [1977](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1977#p11591)
 
-昔からあるバグで原因はよくわかっていません。
-ファイルをゴミ箱に捨てた後で「ゴミ箱を空にする...」ことできない場合は、
-一度 TeXShop を終了させてから、もう一度ゴミ箱を空にしてみて下さい。
+### コマンド補完のときのプレースホルダ文字 • が \UTF{2022} と入力されてしまう {#f7d84cff}
+
+これも [環境設定 → 詳細 → pTeX 拡張機能 → utf パッケージ対応](https://texwiki.texjp.org/?TeXShop%20FAQ#re61bdc6) がONになってしまっていることに起因するトラブルです。
+これがONであると，ファイル保存時に JIS X 0208 で扱えない文字を \UTF{xxxx}という形式でエクスポートして保存します。ファイルロード時はそれを逆算して元の文字に戻しますので，ユーザからはシームレスにそれらの文字が扱えているように見えます。ただし，\UTF というのは otf パッケージ（旧 utf パッケージ）の命令なので，これを用いる場合は otf パッケージのロードが必須になります。また，XeLaTeX など非 pTeX エンジンを使う際にも障害になります。
+そして，upTeX ならば Unicode 文字がそのまま扱えるので，\UTF で書き換えてエクスポートする必要はありません。よって，「upTeX でない pTeX で JIS X 0208 外の文字を使いたい場合」以外は「utf パッケージ対応」はOFFにしておくのが推奨です。
+
+さて，コマンド補完のファイルは ソース→コマンド補完→補完用語ファイルの編集 から行います。このとき，プレースホルダ文字 • は，JIS X 0208 外の文字なので，もし「utf パッケージ対応」がONであると，• が \UTF{2022} に書き換えられて保存されてしまいます。
+コマンド補完文字列を挿入する際は，\UTF{xxxx} から元の文字への逆算は行われませんので，「補完用語ファイル」編集画面上は • で見えている文字が，\UTF{2022} として補完されてしまうという問題が生じます。つまり「補完用語ファイル」を保存時する瞬間に「utf パッケージ対応」がONであると問題を引き起こすわけです。
+
+そこで，今回の解決策は次の通りとなります。
+
+1. 「utf パッケージ対応」をONにする。
+1. 補完用語ファイルを開く。
+1. 「utf パッケージ対応」をOFFにする。
+1. 補完用語ファイルを何か編集し，上書き保存して閉じる。
+1. TeXShop を再起動する。
+
+これで，補完用語ファイルに \UTF{2022} ではない • が保存されるので，以降正しく補完されるようになります。
+
+- [参考](https://twitter.com/bothiboru/status/756427080619864064)
 
 ### ソース上何も問題ないはずなのに，Text line contains an invalid character. ^^H や Package inputenc Error: Keyboard character used is undefined (inputenc) in inputencoding \`utf8' というエラーが出てコンパイルできない {#tb887cbe}
 
@@ -155,6 +171,17 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 より一般には，改行や水平タブを除く制御文字全てを一括で取り除くとよいでしょう。
 \[[\u0000-\u0008\u000E-\u001F\u007F-\u0084\u0086-\u009F\u000B\u000C\u0085\u2028\u2029\] という正規表現で取り除く](https://twitter.com/monokano/status/659530759040974848)のがよさそうです。
+
+### 編集メニューの「統計情報...」が動かない {#nb06ea5c}
+
+「統計情報」は，シェルスクリプト TeXShop.app/Contents/Resources/detexwrap 経由で detex を呼び出します。お使いの TeX ディストリビューションに detex が含まれていないと動作しません。
+（その旨、エラーメッセージを出した方が親切だと思いますが...）
+
+### 閉じたファイルがずっと「使用中」になる {#z1d6bf0b}
+
+昔からあるバグで原因はよくわかっていません。
+ファイルをゴミ箱に捨てた後で「ゴミ箱を空にする...」ことできない場合は、
+一度 TeXShop を終了させてから、もう一度ゴミ箱を空にしてみて下さい。
 
 ## よくある質問 {#b75d05b6}
 
