@@ -143,14 +143,16 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
-TeX Live 2015 対応の事例です．
+TeX Live 2016 対応の事例です．
 
+- [WindowsユーザのためのpLaTeX環境(TeX Live 2016)のインストール方法](http://www.e.gsic.titech.ac.jp/~wakita/il16/md/texlive-windows.html)
+- [Windows 10 に TeX Live 2016 をインストール](http://www.muskmelon.jp/?p=1533)
 - [ゼロから作るTeX環境 (Windows版)](http://qiita.com/umireon/items/b540dc2c83412fc144d2)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
-- [TeX Live 2015 でアップデートされたパッケージ](http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html)
-- [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ](http://yoshiiz.blog129.fc2.com/blog-entry-826.html)
-- [Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-827.html)
-- [TeX Live 2015をWindows 8にインストールする](http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3)
+    <!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
+    <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-826.html]] -->
+    <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編:http://yoshiiz.blog129.fc2.com/blog-entry-827.html]] -->
+    <!-- -[[TeX Live 2015をWindows 8にインストールする:http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
 <!-- 不具合対応まで書かれていたりするので，残しておきたいと思います． -->
