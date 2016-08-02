@@ -31,9 +31,17 @@ ImageMagick は，ビットマップ画像を操作したり変換したりす�
 <strong> <em>重要！</em> </strong>
 
 Windows のシステムには C:\Windows\System32\convert.exe という「FAT ボリュームを NTFS に変換するコマンド」が存在します．
+ImageMagick 6.9.3-9 以前の画像変換コマンド名は convert でしたので，これと Windows の convert を混同しないように注意が必要です．
+
 画像変換に用いる ImageMagick の convert を実行するつもりでシステムのコマンドを誤作動させると，最悪の場合 Windows システム自体が使えなくなるかもしれません．
-この危険性を排除するため，必ずインストール時に ImageMagick の convert が先に見つかるように，<strong>PATH の先頭に追加</strong>してください（逆に Windows のシステムの convert を使う場合はフルパスで実行することになります）．
+この危険性を排除するため，ImageMagick 6.9.3-9 以前を使用する場合は，必ずインストール時に ImageMagick の convert が先に見つかるように，<strong>PATH の先頭に追加</strong>してください（逆に Windows のシステムの convert を使う場合はフルパスで実行することになります）．
 また，<strong>スペース文字を含まないパス</strong>へのインストールが望ましいです（デフォルトでは Program Files 以下にインストールされるはず）．
+
+なお，ImageMagick 7 以降，この convert というプログラム名は廃止されて magick に名称変更されています．
+
+- [convert.exe missing from 7.0.1-Q16?](http://www.imagemagick.org/discourse-server/viewtopic.php?t=29582)
+
+したがって，ImageMagick 7 以降をインストールした環境で convert を実行すると，それは Windows システムの convert.exe である可能性が非常に高いです．
 
 #### macOS の場合 {#g2f35f2c}
 
@@ -56,7 +64,7 @@ Windows のシステムには C:\Windows\System32\convert.exe という「FAT �
 - [http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 - [http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 
-### 派生版 {#t37f9970}
+#### 派生版 {#t37f9970}
 
 - [GraphicsMagick](http://www.graphicsmagick.org/)
 - [YoyaMagick](https://github.com/gree/YoyaMagick)
