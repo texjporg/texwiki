@@ -14,7 +14,10 @@ BasicTeX は TeX Live の scheme-small に対応し，LaTeX の文書作成に�
 BasicTeX には [e-pTeX](/e-pTeX/) や [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
 collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)， [BXjscls](/BXjscls/) も利用可能になります。 <!-- LuaTeX-ja は BasicTeX + collection-langjapanese だけではダメなので下へ移動 - - アセトアミノフェン (2016-06-22) -->
 
-BasicTeX の派生版である [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) は，最初から BasicTeX + collection-langjapanese を収録しています。 <!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， --> <!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
+[Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) は，20160614 版までは「BasicTeX + collection-langjapanese」を収録していましたが，20160907 版以降は BasicTeX を使わず，「TeX Live 2016 scheme-small + collection-langjapanese」を収録しています ([forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)) 。
+
+<!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， -->
+<!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
 
 ***
 
