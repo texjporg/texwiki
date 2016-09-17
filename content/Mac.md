@@ -122,7 +122,6 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 このほかにも
 
 - [TeX Wiki 内の「BibTeX 関連ツール」紹介ページ](</BibTeX関連ツール/>)
-- MacWiki:リスト/TeX#BibTeX 関係
 
 には，macOS で使用可能な文献管理ツールが紹介されています。
 
