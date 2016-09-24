@@ -294,12 +294,12 @@ MetaPost で作成した画像ファイルは，一般的な画像と同様に�
 graphicx パッケージの機能を用いて LaTeX 文書に取り込むことができます。
 
 ```
-% dvipdfmxを利用する場合
+% dvipdfmxを利用する場合 (必ず拡張子を .mps にすること)
 \documentclass[a4paper,dvipdfmx]{article}
 \usepackage{graphicx} \begin{document}
 \begin{center}
-% MetaPost画像ファイル line.1 を取り込む
-\includegraphics{line.1}
+% MetaPost画像ファイル line.mps を取り込む
+\includegraphics{line.mps}
 \end{center}
 \end{document}
 ```
@@ -325,7 +325,13 @@ dvipdfmx は EPS 形式の画像ファイルを自分ではサポートせず，
 EPS 画像の取り込みには Ghostscript の助けを必要とします。
 ところが例外的に，MetaPost で生成した EPS 画像ファイル
 （これを特に“MPS 形式”と呼ぶことがあります）
-については自力で取り込むことができます。
+については自力で取り込むことができます。ただし，TeX Live 2016
+以降では，拡張子を .mps
+にしないと，正しい位置に出力されません。拡張子が .mps でない場合，
+MetaPost で作成した EPS を正しい位置に出力するためには，dvipdfmx
+や xdvipdfmx に --mvorigin オプションを付ける必要があります。
+以下に述べる pdfTeX の場合と同じように拡張子を .mps にすると
+いうことを覚えておいてください。
 
 #### 画像取り込みに関する注意（pdfTeX） {#m89b0ecd}
 
