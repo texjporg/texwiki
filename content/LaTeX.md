@@ -65,12 +65,32 @@ LaTeX のバージョン2が出た後に，次期バージョンである LaTeX3
 - kernel の大量の変更点：[forum:1558](https://okumuralab.org/tex/mod/forum/discuss.php?d=1558)
 - [LaTeX が新しくなった話](http://d.hatena.ne.jp/zrbabbler/20150429/1430281181)
 
+#### TeX Live 2016 以降での変更点 {#efa6232c}
+
+さらに，2016 年末頃にリリースされる新しい LaTeX2e は，[e-TeX](/e-TeX/) 拡張をもつ
+TeX エンジンを必須とする方向に開発が進められています． <!-- これは，e-TeX が持つデバッグ機能やコードの書きやすさ等から，2004 年頃から長きにわたり --> <!-- LaTeX team が「将来的には」と計画してきたこと． -->
+
+- LaTeX 次期バージョンで e-TeX 必須？ [forum:2042](https://okumuralab.org/tex/mod/forum/discuss.php?d=2042)
+
+このため，e-TeX 拡張をもたないエンジン
+
+- 日本でよく知られているものとしては，例えばアスキーのサイトでまだ配布されている
+    pTeX 3.1.11 や NTT JTeX など
+
+- Knuth のオリジナルの TeX、Y &amp; Y TeX など
+
+で LaTeX のフォーマットを作成できなくなることが予想されます．
+
 % 要追記．
 
 #### pLaTeX2e {#q968bb54}
 
 pTeX エンジン向けに，日本語組版に必要な機能を LaTeX2e に追加，もしくは改変したものです．
 注意が必要な改変点として，フォント関係のコマンド (NFSS2)，脚注とボトムフロートの出力順序の入れ替えなどがあります．
+
+もともと pTeX と同様にアスキー・メディアワークスによって開発されてきましたが，2016 年から日本語 TeX 開発コミュニティによって fork されて開発が続けられています．
+
+- [GitHub - texjporg/platex: pLaTeX2e and miscellaneous macros for pTeX](https://github.com/texjporg/platex)
 
 ### LaTeX3 {#f2915fa5}
 
@@ -79,6 +99,8 @@ LaTeX の次期バージョンです．
 
 最近では，LaTeX2e の上でも expl3 パッケージを読み込めば開発中のこのプログラミング言語を試すことができるようになっています．
 いくつかの新しい LaTeX2e 用のパッケージはこの言語を用いて書かれています．
+LaTeX3 は初期から [e-TeX](/e-TeX/) 拡張を必須とし，次第に [pdfTeX](/pdfTeX/) などの拡張も利用するようになりました．
+いま（2015 年現在）では素の e-TeX ですら動かせない状態にあります．
 
 #### 注意点 {#t6u982n7}
 
@@ -87,14 +109,13 @@ LaTeX の次期バージョンです．
 - 例：[media9](/media9/), [siunitx](/siunitx/) など
 
 これらは expl3 を内部で読み込むようになっています．
-ただし，expl3 は pTeX や upTeX というエンジンを知らないため，これらを
-pdfTeX であると誤判定します（2015/03/01 現在の expl3 でも確認）．
-このことが直接影響することは少ないと思われますが，例えば
-media9 パッケージを使う場合に問題になることが確認されています．
+ただし，2015 年 7 月頃までの expl3 は pTeX や upTeX というエンジンを知らないため，これらを
+pdfTeX であると誤判定します．
 
-- 例：[日本語の文書に media9 パッケージでマルチメディア埋め込み](http://acetaminophen.hatenablog.com/entry/2014/11/28/002341)
+- このことが直接影響する例：[日本語の文書に media9 パッケージでマルチメディア埋め込み](http://acetaminophen.hatenablog.com/entry/2014/11/28/002341)
 
-対処法として，ZR さんによる [bxexpl3ptex.sty](https://gist.github.com/zr-tex8r/2adc6f1e62cb591a1204) を用いることができます．
+対処法として，ZR さんによる [bxexpl3ptex.sty](https://gist.github.com/zr-tex8r/2adc6f1e62cb591a1204) を用いる方法がありましたが，2015 年 8 月頃から
+expl3 側が e-(u)pTeX を公式にサポートするようになったため、不要となりました．
 
 ちなみに，pTeX で expl3 がサポートされたのは [qa:55490](https://okumuralab.org/~okumura/texfaq/qa/55490.html)（→ [qa:55523](https://okumuralab.org/~okumura/texfaq/qa/55523.html) でバグ修正）以降ですので，こうしたパッケージはそれ以前では利用できないことにご注意ください．
 
