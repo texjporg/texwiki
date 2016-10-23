@@ -1006,7 +1006,9 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 - dvipdfmx での TikZ の patterns ライブラリサポートの不具合とその対処法 [forum:1710](https://okumuralab.org/tex/mod/forum/discuss.php?d=1710)
 - \[tikz\] 破線に添えた分数式の横棒が… [forum:1020](https://okumuralab.org/tex/mod/forum/discuss.php?d=1020)
-- 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html)), [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
+- 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html))
+    - [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
+    - 上のパッケージは TeX Live 2016 (2016/10/15) および W32TeX (2016/10/16) 以降に取り込まれています。 → [pLaTeX の新しいパッケージバンドル「platex-tools」の紹介](http://acetaminophen.hatenablog.com/entry/2016/10/17/235850)
 - dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.0.0 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0)。以下同）
     - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.172）
     - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.175）
