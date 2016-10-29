@@ -133,6 +133,8 @@ texdoc tikz
 
 ## 基本的な用法 {#qa925ba8}
 
+各コマンド（とそのオプション）を視覚的にまとめたドキュメント [VisualTikZ](https://www.ctan.org/pkg/visualtikz) も [CTAN](https://www.ctan.org/) に公開されています。簡潔で便利です。
+
 ### 基本的な使い方 {#oee3a550}
 
 インライン形式で図を本文の一部に入れるときは
