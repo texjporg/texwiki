@@ -9,7 +9,7 @@ pukiwiki: "CTAN"
 
 ## CTAN {#CTAN}
 
-CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は TeX に関連するファイルやソフトウェアをダウンロードできるように収集したウェブサイトの集合体です．CTAN には中心的な役割を果たすサイトが1つあり，このサイトが CTAN の扱っているデータの管理をしていますが，数多くのサイトがそのデータを同期（ミラーリング）してユーザが快適にコンテンツをダウンロードできるようにしています．
+CTAN (<strong>C</strong>omprehensive <strong>T</strong>eX <strong>A</strong>rchive <strong>N</strong>etwork) は TeX に関連するファイルやソフトウェアを収集したウェブサイトの集合体です．CTAN には中心的な役割を果たすサイトが1つあり，このサイトが CTAN の扱っているデータの管理をしていますが，数多くのサイトがそのデータを同期（ミラーリング）してユーザが快適にコンテンツをダウンロードできるようにしています．
 
 ***
 
