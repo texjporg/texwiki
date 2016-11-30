@@ -30,7 +30,7 @@ $ texdoc &lt;keyword>
 
 $ texdoc jsarticle
 
-のようにすると [jsclasses](/jsclasses/) の説明文書 jsclasses.pdf が規定の PDF ビューアで表示されます．
+のようにすると [jsclasses](/jsclasses/) の説明文書 jsclasses.pdf が既定の PDF ビューアで表示されます．
 
 Texdoc のさらに詳しい使い方については
 
