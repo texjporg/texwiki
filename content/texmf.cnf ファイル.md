@@ -116,7 +116,7 @@ TEXMFHOME = ~/texmf                 % the user tree
 % Shell-escape settings.
 shell_escape = p                    % restricted
 shell_escape_commands = bibtex,kpsewhich,makeindex,\
-mpost,extractbb
+extractbb
 ```
 
 - ‘%’以降はコメントとして無視されます。[^3]
@@ -133,7 +133,7 @@ mpost,extractbb
     <!-- ブレース展開は値の解釈ではなくパス検索の解釈として行われるらしい。 -->
 
 - 行末の‘\’は行継続を表します。
-    上掲の例で変数 shell_escape_commands の値は“bibtex,kpsewhich,makeindex,mpost,extractbb”となります。
+    上掲の例で変数 shell_escape_commands の値は“bibtex,kpsewhich,makeindex,extractbb”となります。
 
 ### 変数の値を調べる {#ke1c37e3}
 
@@ -294,6 +294,38 @@ Kpathsea によるパス検索は継のような手順に従って行われま�
 ※パスリストの区切り文字（‘;’）とパス内の階層の区切り文字（‘/’）は OS の種類により異なります。
 ‘;’と‘/’は Windows の場合です[^7]。
 実は Unix 系 OS ではリストの区切り文字は本来は‘:’なのですが，「texmf.cnf ファイルを Windows と Unix 系で共通に書ける」ようにするため，Unix 系では変数値の中の ‘;’ が ‘:’ に変換される仕組みになっています。
+
+### 2016/11/30 までのセキュリティ上の問題への対処 {#c253fade}
+
+2016年11月28日に制限付きシェル実行 (restricted shell escape) に関する[重大な問題](</外部コマンドの実行/#security>)が判明しました．現在はこの問題への対処が行われているので，TeX Live をアップデートすることでこのセキュリティ上の問題を回避することができますが，何らかの事情で TeX Live のアップデートが行えない場合は，<strong>必ず以下の対処を行ってください</strong>．
+
+texmf.cnf ファイルは，TeX Live では
+
+```
+/usr/local/texlive/2016/texmf-dist/web2c   (unix)
+c:/texlive/2016/texmf-dist/web2c           (windows)
+```
+
+のような場所，W32TeX では（インストール場所を c:/w32tex とすると）
+
+```
+c:/w32tex/share/texmf-dist/web2c
+```
+
+にあります。
+
+```
+shell_escape_commands = \
+bibtex,bibtex8,\
+extractbb,\
+gregorio,\
+kpsewhich,\
+makeindex,\
+mpost,\
+repstopdf,\
+```
+
+のように書かれている場所がありますので，このなかの mpost,\ の行を削除します．さらに pmpost, upmpost の行がある場合はそれらも削除してください．
 
 [^1]: “texmf”の名前は「insTeX/ins と insM/insetainsF/insont」に由来します。
 [^2]: これは Kpathsea で設定された変数 TEXMFCNF の値です。ところが，これは「texmf.cnf の記述により決まるもの」でですから，この値に基づいて texmf.cnf が検索されるというのは論理的に奇妙です。実は，本当の検索パスはここで表示される値とは必ずしも一致しないのですが，「texmf.cnf 中の TEXMFCNF の値を一切変更していない」のであれば，ここで書いた説明が成り立ちます。
