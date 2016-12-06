@@ -341,9 +341,16 @@ TeXShop メニューの
 
 "‹" は U+2039 SINGLE LEFT-POINTING ANGLE QUOTATION MARK，"›" は U+203A SINGLE RIGHT-POINTING ANGLE QUOTATION MARK です。
 
-#### \label と \ref の補完 {#k9dc75d1}
+#### \label と \ref 等の補完 {#k9dc75d1}
 
-\ref{ まで入力した状態でESCキー（または設定によってはTABキー）を押すと，文書中の全ての \label{} の一覧がポップアップされ，その中からラベルを選択することができます。
+文書中の \label の一覧をリストアップして選択できる機能があります。
+
+- \ref{
+- \pageref{
+- \eqref{
+- \autoref{
+
+まで入力した状態で，ESCキー（10.11 El Capitan まで）/ F5キー（10.12 Sierra 以降）を押すと，文書中の全ての \label{} の一覧がポップアップされ，その中からラベルを選択することができます。
 
 ### シンタックスハイライトの色をカスタマイズしたい {#t9cdb033}
 
