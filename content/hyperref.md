@@ -160,7 +160,7 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．
 PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)
 CMap は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．
-TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は，UTF8-UCS2 はインストール済みです． (dvipdfmxのupTeX対応 ([qa:56308](https://okumuralab.org/~okumura/texfaq/qa/56308.html)) を参照．)
+TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は，UTF8-UCS2 はインストール済みです．
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -178,9 +178,7 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場�
 \fi
 ```
 
-補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex/UTF8-UTF16?view=markup) を使用します．
-[TeX memo - upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．
-TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\ttk\UTF8-UTF16) の場合は UTF8-UTF16 はインストール済みです．
+補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex-fonts/UTF8-UTF16?view=markup) を使用します．TeX Live, W32TeX の場合は UTF8-UTF16 はインストール済み (texmf-dist\fonts\cmap\uptex-fonts\UTF8-UTF16) です．[^1]
 
 ```
 \ifx\kanjiskip\undefined\else
@@ -1115,3 +1113,5 @@ abc
 - 修士論文のpdf作成等の際には，ぜひともhyperrefをご利用してpdfファイルを作って下さい．（例えば上記例をプリアンブル部に書けばよいと思います．目次から本文のページ等へジャンプ可能だと読み手が楽です．） -- kd 2007-03-20 (火) 15:27:11
 - 逆に「書籍の原稿」といった、「最終的な組版を書き手自身がやるのではない」文書の場合には、hyperref パッケージをはじめとする、お行儀の悪い（＝LaTeX の内部処理をあちこち書き換える）パッケージは決して使用しないでください。 -- 1296893894 2011-02-05 (土) 17:18:14
 - texlive2011ではsetpagesize=falseを指定しないと版面が紙の右下側にずれる現象がおこりました。私の環境特有かもしれませんが一応報告を -- yayugu 2011-08-09 (火) 22:11:52
+
+[^1]: あるいは[TeX memo - upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) から CMap UTF8-UTF16 が入手できます．
