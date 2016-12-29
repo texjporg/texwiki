@@ -36,6 +36,8 @@ W32TeX は cjkzr.tar.xz をインストールすれば CJK パッケージ, ipae
 
 ipaex-type1, BXjscls &amp; BXcjkjatype を使用すると [pdfLaTeX](/pdfTeX/) で日本語の文書が作成できます．
 
+- [pdfLaTeX + CJK パッケージで日本語する方法 - Qiita](http://qiita.com/zr_tex8r/items/cdaac1500718eb9fa330)
+
 #### ipaex-type1 {#i302fdd5}
 
 [ipaex-type1](https://github.com/zr-tex8r/ipaex-type1) を参照．
