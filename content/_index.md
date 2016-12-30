@@ -135,8 +135,6 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 
 <span style="font-size:10px"><em>ここは検索ボックスではありません．</em></span>
 
-<span style="font-size:10px">スパム投稿が続いていますが，近日中に対策される予定です．</span>
-
 {{< include "コメント/FrontPage" >}}
 
 ★↑ TeX 関連情報をご提供ください
