@@ -9,7 +9,7 @@ pukiwiki: "Babel"
 
 ## Babel {#r809659f}
 
-Babel は LaTeX で多言語文書を作成するためのパッケージです．<br>
+Babel は LaTeX で多言語文書を作成するためのパッケージです．
 
 - [CTAN web interface: package babel](http://www.ctan.org/pkg/babel)
 - [CTAN web interface: Directory listing for /macros/latex/required/babel](http://www.ctan.org/tex-archive/macros/latex/required/babel)
@@ -20,21 +20,27 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 ### japanese {#h2523f84}
 
-#### ChangeLog {#e19afea7}
+日本語クラスを使用していて babel パッケージを読み込むと，キャプションなどが英語などの他言語に変わってしまいます．
+対処法の一つが，日本語に再変更しなおすことで，これを実現するのが japanese パッケージです．
 
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese/?view=log)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/source/platex/japanese](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/japanese/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/japanese/?view=log)
+- [https://github.com/texjporg/babel-japanese](https://github.com/texjporg/babel-japanese)
+
+2016/12/17 以降，従来の japanese パッケージは babel-japanese パッケージとリネームされています（ただし使い方は従来と全く同じ）．
+
+- babel の japanese オプションの新バージョン（日本語 TeX 開発コミュニティによる管理に移行） [forum:2102](https://okumuralab.org/tex/mod/forum/discuss.php?d=2102)
+
+もう一つの方法が pxbabel パッケージです．
+
+- [美文書付録Iについて思うことをグダグダ書き連ねるシリーズ (7)](http://d.hatena.ne.jp/zrbabbler/20120905/1346805180)
 
 #### インストール {#u48e60e8}
 
-TeX Live では Babel の japanese パッケージはすでにインストールされています．<br>
+TeX Live では Babel の japanese パッケージはすでにインストールされています．
 
-W32TeX の場合は Babel の japanese パッケージは 2013/10/17 以降の版にインストールされています．<br>
+W32TeX の場合は Babel の japanese パッケージは 2013/10/17 以降の版にインストールされています．
 
 ### polyglossia {#q0893d44}
 
-babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．<br>
-polyglossia は LuaLaTeX と XeLaTeX がサポートされています．<br>
-polyglossia は TeX Live にも W32TeX にもインストールされています．<br>
+babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．
+polyglossia は LuaLaTeX と XeLaTeX がサポートされています．
+polyglossia は TeX Live にも W32TeX にもインストールされています．
