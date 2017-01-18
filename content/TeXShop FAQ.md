@@ -50,7 +50,7 @@ TeX Forum: [1291](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1291#p7
 
 ### 出力 PDF のプレビュー画面がぼやけて見える {#y17d23d7}
 
-この現象は 非 Retina ディスプレイ搭載 + Yosemite 以降搭載 の Mac でのみ生じる問題です。
+この現象は 非 Retina ディスプレイ搭載 + Yosemite / El Capitan 搭載 の Mac でのみ生じる問題です。
 Yosemite 以降のPDF レンダリングエンジンにバグがあるために生じる現象で，OS の PDF レンダリングエンジンを使用している [Skim](/Skim/) など他の PDF ビューアでも同じ問題が発生しています。
 この現象は，OS X Yosemite 10.10, 10.10.1, 10.10.2 で特に顕著に発生します。10.10.3 のアップデートで随分改善されたように見えましたが，10.11 El Capitan でまた再発したようです。
 
@@ -62,6 +62,14 @@ defaults write TeXShop FixPreviewBlur YES
 ```
 
 ただし，10.11 El Capitan では，上記対処による改善がよく効く場合と，あまり効かない場合とがあるようです。
+
+追加情報：macOS 10.12 Sierra でこの問題は解決したようです。Sierraにアップグレードした後は，パフォーマンスを改善するため，
+
+```
+defaults write TeXShop FixPreviewBlur NO
+```
+
+として対症療法を停止しておくとよいでしょう。
 
 ### ソースウィンドウをスクロールしたときに画面端で跳ね返るエフェクトが邪魔 {#y066bf8f}
 
