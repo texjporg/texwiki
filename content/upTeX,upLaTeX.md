@@ -70,7 +70,8 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 #### [biblatex](/Biblatex/) の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.21) を使用すると upbibtex がフリーズする {#g3e20a4e}
 
-pbibtex を使用すると回避できます．
+upbibtex (upBibTeX 0.99d-j0.33-u1.22) を使用すると回避できます．
+または pbibtex を使用すると回避できます．
 
 ```
 pbibtex -kanji=utf8 hoge
