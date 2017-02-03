@@ -23,7 +23,7 @@ Beamer が基礎としている描画エンジンも PGF です。
 
 TikZ/PGF が提供する tikzpicture 環境は，[LaTeX](/LaTeX/) 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが，かなり高度な描画機能を持っています。
 （→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）
-TikZ/PGF 自身が持っているライブラリで機能が拡充されるほか，TikZ/PGF を利用し，拡張するパッケージも数多く作られています。
+TikZ/PGF 自身に付属するライブラリで機能が拡充されるほか，TikZ/PGF を利用して高度な描画を行うパッケージも数多く作られています。
 TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。
 同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは，[PostScript](/PostScript/) (PS) を経由せずに PDF を作成できる点です。
 
@@ -52,41 +52,36 @@ TikZ の発音について，“公式”のものは特に定められていな
 
 ### 初期設定 {#e634a5d8}
 
-dviware の指定をしてから，tikz パッケージを読み込みます。
+DVI 出力のエンジン（pTeX、upTeX）で TIkZ（tikz パッケージ）を読み込む場合は、文書クラスのオプション（グローバルオプション）でドライバを指定する必要があります。
 
-- pLaTeX + dvipdfmx を使用する場合は次のように設定します。
+```
+% pLaTeX で dvipdfmx を使う場合の例
+\documentclass[dvipdfmx,a4paper]{jsarticle}% ドライバ dvipdfmx を指定する
+\usepackage{tikz}
+```
 
-    ```
-    \documentclass[dvipdfmx]{jsarticle}
-    ```
+ドライバをグローバルに指定すると不都合な場合は、事前に graphicx パッケージを当該のドライバ指定で読み込むといいでしょう。（なお、先の例においても、PGF 自体により graphicx は読み込まれています。）
 
-- upLaTeX + dvipdfmx を使用する場合は次のように設定します。
+```
+\docuemntclass[a4paper]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}% ドライバ指定のため
+\usepackage{tikz}
+```
 
-    ```
-    \documentclass[uplatex,dvipdfmx]{jsarticle}
-    ```
+PDF 出力のエンジン（pdfTeX、LuaTeX、XeTeX）の場合は、ドライバ指定は不要です。
 
-- dvipdfmx をグローバル指定すると都合が悪い場合は，[graphicx](/graphicx/) パッケージのオプションが PGF に自動的に適用されますので以下のように指定します（pgf 自身，graphicx を読み込みます）。
+```
+% LuaLaTeX を使う場合の例
+\documentclass[a4paper]{ltjsarticle}% ドライバ指定無し
+\usepackage{tikz}
+```
 
-    ```
-    \usepackage[dvipdfmx]{graphicx}%
-    %\def\pgfsysdriver{pgfsys-dvipdfmx.def}%（graphicx パッケージを使用しない場合はこの行を有効に）
-    \usepackage{tikz}%（これで，pgf と pgffor も読み込まれます。）
-    ```
+TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pdfTeX](/pdfTeX/), [LuaTeX](/LuaTeX/), [XeTeX](/XeTeX/) などをサポートしています。dviout や xdvi はサポートしていません。
+なお，TikZ/PGF の機能を 100% サポートしているのは pdfTeX と LuaTeX ですが，最近のバージョンでは dvipdfmx でもほぼすべての機能が使えます。（[トラブルシューティング](#i0cba852)を参照）
 
-- LuaLaTeX + LuaTeX-ja を使用する場合は次のように設定します。
+#### ドライバを前もって指定する方法 {#ybe2a5ef}
 
-    ```
-    \documentclass{ltjsarticle}
-    \usepackage{graphicx}%
-    %\def\pgfsysdriver{pgfsys-pdftex.def}%（graphicx パッケージを使用しない場合はこの行を有効に）
-    \usepackage{tikz}%（これで，pgf と pgffor も読み込まれます。）
-    ```
-
-PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pdfTeX](/pdfTeX/), [LuaTeX](/LuaTeX/), [XeTeX](/XeTeX/) などをサポートしています。
-なお，PGF の機能を 100% サポートしているのは LuaTeX (pdfTeX) ですが，最近のバージョンでは dvipdfmx でもほぼすべての機能が使えます。（[トラブルシューティング](#i0cba852)を参照）
-
-graphicx を使用しない場合は，以下のいずれかを tikz（または pgf）パッケージを読み込む前に記述します。
+文書クラスやパッケージの実装コードの中で、TikZ/PGF のドライバを事前に指定しておきたいという場合は、\pgfsysdriver マクロにドライバのファイル名（pgfsys-XXX.def という形式）を定義します。なお、plain TeX で TikZ を使用する場合のドライバ指定も、この方法で行います。
 
 ```
 \def\pgfsysdriver{pgfsys-dvipdfmx.def} % dvipdfmx の場合
@@ -96,7 +91,7 @@ graphicx を使用しない場合は，以下のいずれかを tikz（または
 \def\pgfsysdriver{pgfsys-xetex.def}    % XeTeX の場合
 ```
 
-その他の出力形式については，付属のマニュアルを参照してください。
+その他のドライバファイルについては，付属のマニュアルを参照してください。
 
 ### マニュアルについて {#x910ebfe}
 
