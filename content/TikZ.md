@@ -52,7 +52,7 @@ TikZ の発音について，“公式”のものは特に定められていな
 
 ### 初期設定 {#e634a5d8}
 
-DVI 出力のエンジン（pTeX、upTeX）で TIkZ（tikz パッケージ）を読み込む場合は、文書クラスのオプション（グローバルオプション）でドライバを指定する必要があります。
+DVI 出力のエンジン（pTeX，upTeX）で TIkZ（tikz パッケージ）を読み込む場合は，文書クラスのオプション（グローバルオプション）でドライバを指定する必要があります。
 
 ```
 % pLaTeX で dvipdfmx を使う場合の例
@@ -60,15 +60,17 @@ DVI 出力のエンジン（pTeX、upTeX）で TIkZ（tikz パッケージ）を
 \usepackage{tikz}
 ```
 
-ドライバをグローバルに指定すると不都合な場合は、事前に graphicx パッケージを当該のドライバ指定で読み込むといいでしょう。（なお、先の例においても、PGF 自体により graphicx は読み込まれています。）
+ドライバをグローバルに指定すると不都合な場合は，事前に graphicx と xcolor の両パッケージを当該のドライバ指定で読み込むといいでしょう。（なお，先の例においても，PGF 自体により graphicx と xcolor は読み込まれています。）
 
 ```
 \docuemntclass[a4paper]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}% ドライバ指定のため
+\usepackage[dvipdfmx]{graphicx,xcolor}% ドライバ指定のため
 \usepackage{tikz}
 ```
 
-PDF 出力のエンジン（pdfTeX、LuaTeX、XeTeX）の場合は、ドライバ指定は不要です。
+※graphicx と xcolor の両方を読み込まないと，一部のドライバ設定が失敗する可能性があります。
+
+PDF 出力のエンジン（pdfTeX，LuaTeX，XeTeX）の場合は，ドライバ指定は不要です。
 
 ```
 % LuaLaTeX を使う場合の例
@@ -81,7 +83,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 #### ドライバを前もって指定する方法 {#ybe2a5ef}
 
-文書クラスやパッケージの実装コードの中で、TikZ/PGF のドライバを事前に指定しておきたいという場合は、\pgfsysdriver マクロにドライバのファイル名（pgfsys-XXX.def という形式）を定義します。なお、plain TeX で TikZ を使用する場合のドライバ指定も、この方法で行います。
+文書クラスやパッケージの実装コードの中で，TikZ/PGF のドライバを事前に指定しておきたいという場合は，\pgfsysdriver マクロにドライバのファイル名（pgfsys-XXX.def という形式）を定義します。なお，plain TeX で TikZ を使用する場合のドライバ指定も，この方法で行います。
 
 ```
 \def\pgfsysdriver{pgfsys-dvipdfmx.def} % dvipdfmx の場合
@@ -229,86 +231,61 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 
 ### 簡単な図形描画の例 {#c4bd1edb}
 
-<!-- \ifdefined\kanjiskip -->
-
 ```
-\documentclass{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-% \def\pgfsysdriver{pgfsys-dvipdfmx.def}%(graphicxパッケージを使用しない場合)
-\usepackage[dvipdfmx,svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。
-```
-
-<!-- \else -->
-<!--   \documentclass{ltjsarticle} -->
-<!--   \usepackage{graphicx} -->
-<!--   % \def\pgfsysdriver{pgfsys-pdftex.def}%(graphicxパッケージを使用しない場合) -->
-<!--   \usepackage[svgnames]{xcolor}%tikzパッケージよりも前に読み込みます。 -->
-<!-- \fi -->
-
-```
+\documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
+\usepackage[svgnames]{xcolor}% tikzより前に読み込む必要あり
 \usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}
 \draw [help lines] (0,0) grid (10,4);%(0,0)から(10,4)までの"細線の方眼"
 
-```
-
 %%直線の例
-
-```
 \draw (0,0) -- (2,1)  [rounded corners]--(2,2) -- (0,2) [sharp corners] --  (0,1)-- (1,1);
-%点(0,0), (2,1), (2,2), (0,2), (0,1), (1,1)を結ぶ"線分"で，(2,2)と(0,2)では"滑らか"
+   %点(0,0), (2,1), (2,2), (0,2), (0,1), (1,1)を結ぶ"線分"で，(2,2)と(0,2)では"滑らか"
 \draw [orange, thick] (1,2.5) -- ++(35:2cm);
-%(1,2.5)を始点として35°の方向に2cmの"オレンジ色の太い線分"
+   %(1,2.5)を始点として35°の方向に2cmの"オレンジ色の太い線分"
 \draw [very thick] (0,3) rectangle (1.5,4);
-%(0,3)を左下，(1.5,4)を右上とする"極太の長方形"
+   %(0,3)を左下，(1.5,4)を右上とする"極太の長方形"
 \draw (1.5,0) -| (2.5,1.5);
-%(2,0)と(3,1.5)をまっすぐ結ばずに"横線と縦線のみで結ぶ"
-```
+   %(2,0)と(3,1.5)をまっすぐ結ばずに"横線と縦線のみで結ぶ"
 
 %%円，楕円，扇形
-
-```
 \draw [red, thick] (3,3) circle (1);
-%(3,3)を中心とする半径1の"赤い太線の円"（古い書式で，現在は非推奨）
+   %(3,3)を中心とする半径1の"赤い太線の円"（古い書式で，現在は非推奨）
 \fill [green!80] (4,3) circle [x radius=1cm, y radius=5mm, rotate=30];
-%中心(4,3)，横1cm，縦5mmの"楕円を30°傾け緑80%で塗った図形"（推奨されている新しい円の書式）
+   %中心(4,3)，横1cm，縦5mmの"楕円を30°傾け緑80%で塗った図形"（推奨されている新しい円の書式）
 \filldraw [fill=blue, opacity=.5, draw=Indigo] (5,0)  arc (0:45:2) --(3,0)--cycle;
-%(5,0)を出発点に半径2の弧を0°から45°まで描き，(3,0)を経由して出発点まで線分で戻って囲んだ"透明度50%の青で塗った扇形"
+   %(5,0)を出発点に半径2の弧を0°から45°まで描き，(3,0)を経由して出発点まで線分で戻って囲んだ"透明度50%の青で塗った扇形"
 ```
 
+```
 %%放物線，サインカーブ，曲線，ベジェ曲線
-
-```
 \draw (5,4) parabola bend (7,2) (8,4);
-%(5,4)を始点とし(7,2)を頂点とする放物線と(7,2)を頂点とし(8,4)を終点とする"放物線"
+   %(5,4)を始点とし(7,2)を頂点とする放物線と(7,2)を頂点とし(8,4)を終点とする"放物線"
 \draw [thick] (5,1) sin (6,2) cos (7,1) sin (8,0) cos (9,1);
-%(5,1)から始まり，(6,2)，(8,0)を頂点として(9,1)で終わる"太線のサインカーブ"
+   %(5,1)から始まり，(6,2)，(8,0)を頂点として(9,1)で終わる"太線のサインカーブ"
 \draw [purple, thick] (6,3) to [out=75, in=90] (8,2);
-%(6,3)から75°の角度で出発し，90°の角度で終点(8,3)に至る"紫の太い曲線"
+   %(6,3)から75°の角度で出発し，90°の角度で終点(8,3)に至る"紫の太い曲線"
 \draw [purple, thin, bend right = 30] (6,3) to (8,2);
-%2点(6,3)と(8,2)を結ぶ"右に膨らんだ紫の細い曲線"（30°の角度で始点を出発し，150°の角度で終点に至る）
+   %2点(6,3)と(8,2)を結ぶ"右に膨らんだ紫の細い曲線"（30°の角度で始点を出発し，150°の角度で終点に至る）
 \draw [ultra thick] (8,1) .. controls (10,2) and (10,3.5) ..(9,4);
-	%始点(8,1)，終点(9,4)で方向点がそれぞれ(10,2)と(10,3)である"超極太の3次ベジェ曲線"
-\draw [->, very thin]	(8,1) -- (10,2); \draw[<-, very thin] (10,3.5) -- (9,4);
-%上のベジェ曲線の"→つき方向線を示した細線"
+   %始点(8,1)，終点(9,4)で方向点がそれぞれ(10,2)と(10,3)である"超極太の3次ベジェ曲線"
+\draw [->, very thin]    (8,1) -- (10,2); \draw[<-, very thin] (10,3.5) -- (9,4);
+   %上のベジェ曲線の"→つき方向線を示した細線"
 \end{tikzpicture}
-```
 
 %%関数による描画（マニュアルp.329の例）
-
-```
 \begin{tikzpicture}[domain=0:4]%グラフの描画領域は0≦x≦4
 \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
 \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};%横軸（x軸）
 \draw[->] (0,-1.2) -- (0,4.2) node[above] {$f(x)$};%縦軸
 \draw[color=red] plot (\x,\x) node[right] {$f(x) =x$};
-%一次関数 y=x の赤線
+   %一次関数 y=x の赤線
 % \x r means to convert '\x' from degrees to _r_adians:
 \draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
-%三角関数 y=sin x の青線（度数表記→ラジアンに変換）
+   %三角関数 y=sin x の青線（度数表記→ラジアンに変換）
 \draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
-%指数関数 y=0.05e^x のオレンジの線
+   %指数関数 y=0.05e^x のオレンジの線
 \end{tikzpicture}
 \end{document}
 ```
@@ -461,9 +438,9 @@ node はそれ自体に大きさがあり，色や形も指定できます。
 \node (C) [fill=white, draw, text=red, circle] at (3,2) {C}; %(2,2)に白塗りした円形のノードCを設定する
 
 \coordinate (D) at (3,1) node at (D) [label=right:Dの右横] {};
-	%(D)には「大きさ」がなく，その位置に無名のノードが置かれ，右にラベルがある
+   %(D)には「大きさ」がなく，その位置に無名のノードが置かれ，右にラベルがある
 %\node (D) at (3,1) [label=right:Dの右横] {};
-	%(D)には「大きさ」をもった無名のノードがおかれ，その右にラベルがある
+   %(D)には「大きさ」をもった無名のノードがおかれ，その右にラベルがある
 \fill (O) circle (2pt) (A) circle (2pt) (D) circle (2pt); %点O,A, Dに黒丸をつける（1つの\fillで複数の点を対象にできる）
 
 \draw (O) -- (A) node [above] {$A$}; %線分OAを描き，その上方にノードを設定して$A$と記載する（ノード自体は無名）
@@ -498,9 +475,7 @@ node はそれ自体に大きさがあり，色や形も指定できます。
 \coordinate (O) at (0,0) node [below] at (O) {O};
 \coordinate (A) at (3,0) node [below]at (A) {A};
 \coordinate (B) at (1,2) node [above right] at (B) {B};
-```
 
-```
 \fill [red] (A -| B) circle (2pt) node [above] {A{\verb\-|\}Bの点};
 \fill [blue] (A |- B) circle (2pt) node [above] {A{\verb\|-\}Bの点};
 \fill (O) circle (2pt);
@@ -524,19 +499,10 @@ intersectionsライブラリを読み込んでおく必要があります。
 交点の名前は，デフォルトでは intersection-n（n は1,2,3,…）という名前が順に付けられますが，name intersections オプションに by={○,□,…} とリストを与えて設定することもできます。（交点の総数はオプションで得られるので，後述のforeachと組み合わせて全交点にそれぞれラベルを付けることもできます。マニュアル参照。）
 
 以下の1つ目の例では，やや傾いた長方形（rectangle）と楕円（ellipse）の交点が半透明な赤い点で示されます。
-2つ目の例では，2曲線の交点を順に3つ a, b, c と名前を付けて，ラベルを付けてます。 <!-- \ifdefined\kanjiskip -->
+2つ目の例では，2曲線の交点を順に3つ a, b, c と名前を付けて，ラベルを付けてます。
 
 ```
-\documentclass{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-```
-
-<!-- \else -->
-<!--   \documentclass{ltjsarticle} -->
-<!--   \usepackage{graphicx} -->
-<!-- \fi -->
-
-```
+\documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -628,19 +594,10 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
     ($(Aの座標)!.5!(Bの座標)!1cm!90:(B)$)
     ```
 
-三角形の重心と垂心を求める例。 <!-- \ifdefined\kanjiskip -->
+三角形の重心と垂心を求める例。
 
 ```
-\documentclass{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-```
-
-<!-- \else -->
-<!--   \documentclass{ltjsarticle} -->
-<!--   \usepackage{graphicx} -->
-<!-- \fi -->
-
-```
+\documentclass[dvipdfmx]{jsarticle}% 適切なドライバ指定が必要
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc}
 \begin{document}
@@ -704,18 +661,10 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
 \end{document}
 ```
 
-角度記号をつける例。 <!-- \ifdefined\kanjiskip -->
+角度記号をつける例。
 
 ```
 \documentclass[dvipdfmx]{jsarticle}
-```
-
-<!-- \else -->
-<!--   \documentclass{ltjsarticle} -->
-<!-- \fi -->
-
-```
-\usepackage{graphicx}
 \usepackage{tikz}
 \usetikzlibrary{calc, quotes, angles}%quotesは角度のラベルオプション内に記述するために使用
 \begin{document}
@@ -787,19 +736,10 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば，
 \node [draw, circle through=(Bの座標)] at (Aの座標) {};
 ```
 
-三角形の外心と内心を求める例。 <!-- \ifdefined\kanjiskip -->
+三角形の外心と内心を求める例。
 
 ```
-\documentclass{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
-```
-
-<!-- \else -->
-<!--   \documentclass{ltjsarticle} -->
-<!--   \usepackage{graphicx} -->
-<!-- \fi -->
-
-```
+\documentclass[dvipdfmx]{jsarticle}
 \usepackage{tikz}
 \usetikzlibrary{intersections, calc, through}
 \begin{document}
@@ -878,14 +818,14 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば，
 ・\foreach \名前 in {太郎, 次郎, 花子, 桜子} {\名前{さん}，} →（出力）太郎さん，次郎さん，花子さん，桜子さん，
 ```
 
-- 「変数リスト」中の規則的な数字列やアルファベット列は，リストの途中を「,…,」とすることで「良きに計らって」埋めてもらうこともできます。
+- 「変数リスト」中の規則的な数字列やアルファベット列は，リストの途中を「, ...,」とすることで「良きに計らって」埋めてもらうこともできます。
 
 ```
-・{1, 2, …, 10} → {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} と解釈
-・{1, 3, …, 10} → {1, 3, 5, 7, 9} と解釈
-・{a, b, c, 1, 2, …, 6, d, e,..., h} → {a, b, c, 1, 2, 3, 4, 5, 6,  d, e, f, g, h} と解釈
-・{a, …, e} → {a, b, c, d, e} と解釈
-・{Z, X, …, M} → {Z, X, V, T, R, P, N} と解釈
+・{1, 2, ..., 10} → {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} と解釈
+・{1, 3, ..., 10} → {1, 3, 5, 7, 9} と解釈
+・{a, b, c, 1, 2, ..., 6, d, e, ..., h} → {a, b, c, 1, 2, 3, 4, 5, 6, d, e, f, g, h} と解釈
+・{a, ..., e} → {a, b, c, d, e} と解釈
+・{Z, X, ..., M} → {Z, X, V, T, R, P, N} と解釈
 ```
 
 #### 基本的な描画例 {#bb6c31a6}
