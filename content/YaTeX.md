@@ -1434,6 +1434,19 @@ yatexadd.elのYaTeX:includegraphicsの最後を下記のように変更
      (concat "[" str ",clip]")) ;
 ```
 
+### コマンドおよび環境などの入力支援のカスタマイズ {#c42fc6d4}
+
+yatexhks.elにカスタマイズした関数を記述しておけばYaTeXの入力支援に利用できる．
+例えば，enumitemパッケージのenumerate環境でresumeオプションを使うか常に問う場合は次のような関数を記述しておけばよい．
+
+```
+(defun YaTeX:enumerate ()
+ ((let (op (if y-or-n-p "resume オプションを使いますか? ")
+    "resume"))
+  (if (> (length op) 0)
+      (concat "[" op "]"))))
+```
+
 ### コンパイルプログラムの使い分け {#ga20e87e}
 
 普段は upLaTeX (ptex2pdf) を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．
@@ -1489,6 +1502,7 @@ TeX ソースの先頭行に例えば，
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [File #osqaqi27-12106](http://www.sourcepod.com/osqaqi27-12106)
 - [TeX Memo \[Internet Archive\]](http://web.archive.org/web/20100601184838/http://homepages.inf.ed.ac.uk/s0675112/tex_memo.html)
+- [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 
 ### リリース情報 {#w889e1b2}
 
