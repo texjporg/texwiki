@@ -281,6 +281,40 @@ BXJS クラスでは使用されるエンジンに応じて「正しい設定」
 
 ※BXJS クラスが自動的に hyperref パッケージを読み込むことはありません．
 
+#### 数式の一部として和文文字を出力する {#s9d7b599}
+
+※“標準設定”（ja=standard）を前提にします．
+
+次のように，数式の要素として（つまり \mbox や \text を介して「数式中のテキスト」として扱うのではなく）和文文字が使われることがあります．
+
+```
+\[ % "地"は地球, "太"は太陽を表す識別子
+  \frac{a_{地}^3}{T_{地}^2} = G\cdot\frac{m_{太} + m_{地}}{4\pi^2}
+\]
+```
+
+v1.3a 以前では数式中で和文文字が使えるのは LuaLaTeX に限られていましたが，v1.4 以降では (u)pLaTeX でも使えるようになりました．また，クラスオプションに enablejfam=true を指定すると，XeLaTeX でも数式中で和文文字が使えるようになります．
+
+```
+% XeLaTeX 文書, UTF-8
+\documentclass[xelatex,ja=standard,enablejfam=true,a4paper]{bxjsarticle}
+\begin{document}
+\[ \frac{a_{地}^3}{T_{地}^2} = G\cdot\frac{m_{太} + m_{地}}{4\pi^2} \]
+\end{document}
+```
+
+和文用の数式フォント命令（\mathmc，\mathgt）は本来は (u)pLaTeX と LuaLaTeX でのみサポートされるものです．それ以外のエンジン（pdfLaTeX も含む）でも“一時的にテキストに切り替える”という擬似的な処理で実装されているためこれらの命令が使えます．ただしこの場合は（一般的には）amstext（または amsmath）パッケージの併用が必要になります．
+
+```
+% pdfLaTeX 文書, UTF-8
+\documentclass[pdflatex,ja=standard,a4paper]{bxjsarticle}
+\usepackage{amsmath}% これも必要
+\begin{document}
+% e_{地} は無理だが, \mathmc を使うとOK
+\[ e_{\mathmc{地}} = 0.0167 \]
+\end{document}
+```
+
 #### magstyle設定 {#we2b3036}
 
 「新ドキュメントクラス」（JS クラス）におけるページレイアウト決定の過程では，基底フォントサイズが 10pt 以外の場合に，“版面を拡大縮小する”という手順を採用しています．
@@ -414,7 +448,9 @@ BXJS クラスのページレイアウトは JS クラスに合わせること�
     ※トンボ出力には pLaTeX のカーネルの機能が必要だから．
 
 - 和文フォントメトリック指定： jis，winjis，mingoth．
-- 和文数式フォントの登録の制御： disablejfam．
+
+<!-- disablejfam はv1.4で対応された． -->
+<!-- でも今の e-pTeX は数式ファミリが256個に拡張されているので使う機会はないと思う． -->
 
 #### BXJS クラスの“標準設定”使用時に graphicx にオプションを与えたい場合 (XeLaTeX / LuaLaTeX) {#oe701641}
 
@@ -481,6 +517,29 @@ BXJS クラス（標準設定）では \jachar{&lt;文字>} という命令を�
 ※ \jachar の引数には文字 1 つだけを指定できます．
 
 ### 不具合 {#x3d34063}
+
+#### LuaLaTeX + BXJS クラスで graphicx パッケージを読み込むと“Option ‘pdftex’ requires pdfTeX”エラーが出る → 最新版にアップデート {#v4743042}
+
+v1.0b～v1.3a の BXJS クラス（標準設定）と最近の LuaLaTeX の組合せで graphicx（または graphics）パッケージを読み込むと予期せぬエラーが発生します．
+
+```
+% LuaLaTeX 文書
+\documentclass[lualatex,ja=standard]{bxjsarticle}
+\usepackage{graphicx}
+% 以下略
+```
+
+例えば，この文書をコンパイルすると次のエラーが発生します．
+
+```
+! Package pdftex.def Error: Option `pdftex' requires pdfTeX,
+(pdftex.def)                but pdfTeX features are missing.
+(pdftex.def)                Loading of this driver file is aborted.
+```
+
+これはバグであり，v1.4 において修正されています． <!-- 回避策： グローバルオプションにluatexを指定． -->
+
+※“Option clash”のエラーについては，本記事の「BXJS クラスの“標準設定”使用時に graphicx にオプションを与えたい場合」の項目を参照してください．
 
 #### 別行立て数式を使うと警告が出る → 最新版にアップデート {#j507a331}
 
