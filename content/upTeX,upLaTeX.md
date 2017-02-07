@@ -227,7 +227,7 @@ Linux版においてはロケールがUTF-8系であればファイル名に日�
 
 upTeXは、\kcatcode の設定次第で、入力された UTF-8 の文字を内部処理に渡す際に CJK トークン(漢字, かな, CJK記号, ハングルのいずれか)か、または、欧文の 8-bit 文字からなる UTF-8 の文字列に振り分けて処理します。
 \kcatcode は、[Unicode の block](http://unicode.org/Public/UNIDATA/Blocks.txt) ごとに設定可能です。
-以下では基本的な書き方を例示していますが、[PXbaseパッケージ](http://zrbabbler.sp.land.to/pxbase.html)を利用すると、フォント、\kcatcode、babel の設定などを簡便にできます。
+以下では基本的な書き方を例示していますが、[PXbaseパッケージ](https://github.com/zr-tex8r/PXbase)を利用すると、フォント、\kcatcode、babel の設定などを簡便にできます。
 
 ### CJK (日本語、中国語、韓国語) {#p5e56276}
 
@@ -296,7 +296,7 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 \end{document}
 ```
 
-[pxbabelパッケージ](http://zrbabbler.sp.land.to/pxbase.html#sec-pxbabel)を利用すると、CJK 言語間の切り換えが簡便になります。
+[pxbabelパッケージ](https://github.com/zr-tex8r/PXbase)を利用すると、CJK 言語間の切り換えが簡便になります。
 
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
