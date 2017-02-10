@@ -48,13 +48,13 @@ Windows の場合は、この設定を行うことで luajitlatex.exe が使用�
 基本的には通常の LuaTeX と同様に使うことができます．
 
 LuaJITTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
-最新の場合には LuaTeX でも使えます。LuaTeX では ffi が大域的なので
+最新の場合 (バージョン 1.0.3 以降) には LuaTeX でも使えます． LuaTeX では ffi が大域的なので
 
 ```
 local ffi = require("ffi")
 ```
 
-は不要です． LuaTeX や LuaJITTeX は secure mode は無いと思っておいたほうが
+は不要です． LuaTeX や LuaJITTeX には secure mode は無いと思っておいたほうが
 良いそうですが，FFI は特に簡単に危ないことができるので，最新の場合には
 LuaTeX でも LuaJITTeX でも
 
