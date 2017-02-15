@@ -35,7 +35,7 @@ TeX Live をインストールした状態では、luajittex は使えますが�
 1. fmtutil-sys --byfmt luajitlatex を実行。
 1. luajittex --fmt=luajitlatex.fmt foo.tex で latex として使用可。
 
-Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Un\*x 系 OS（Mac OS X を含む）の場合は、~/.bashrc 等に、
+Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Unix 系 OS（Mac OS X を含む）の場合は、~/.bashrc 等に、
 
 ```
    alias luajitlatex='luajittex --fmt=luajitlatex.fmt'
@@ -132,11 +132,7 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 
 ### 関連リンク {#s999db35}
 
-- [Newest &#39;luajittex&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/luajittex)
 - [QA: luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)
-- [https://code.launchpad.net/~reviczky/luatex/debian-luajittex](https://code.launchpad.net/~reviczky/luatex/debian-luajittex)
-- [https://code.launchpad.net/~reviczky/+archive/luatex-daily](https://code.launchpad.net/~reviczky/+archive/luatex-daily)
-- [https://code.launchpad.net/~reviczky/+recipe/luajittex-daily](https://code.launchpad.net/~reviczky/+recipe/luajittex-daily)
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 - [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
 
