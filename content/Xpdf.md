@@ -52,13 +52,7 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 #### Windows {#inst-windows}
 
-- [TeX Live](</TeX Live/>) (Win64, Win32) に含まれていた xpdf utilities は最新の場合には，
-    poppler utilities で置き換えられました。 poppler utilities はすぐに使える
-    状態になっています。
-
-- [W32TeX](/W32TeX/) に含まれていた xpdf utilities は最新の場合には，
-    poppler utilities で置き換えられました。 poppler utilities はすぐに使える
-    状態になっています。
+[TeX Live](</TeX Live/>) (win32, win64) および [W32TeX](/W32TeX/) に含まれていた xpdf utilities は最新の場合には poppler utilities で置き換えられました。 poppler utilities はすぐに使える状態になっています。
 
 #### OS X {#inst-mac}
 
