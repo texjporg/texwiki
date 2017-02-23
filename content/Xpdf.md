@@ -52,30 +52,13 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 #### Windows {#inst-windows}
 
-- [TeX Live](</TeX Live/>) (Win64, Win32) には，Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています。以下が利用できます：
+- [TeX Live](</TeX Live/>) (Win64, Win32) に含まれていた xpdf utilities は最新の場合には，
+    poppler utilities で置き換えられました。 poppler utilities はすぐに使える
+    状態になっています。
 
-> pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
-
-サポートファイルをインストールするには，current working directory を
-
-```
-$TEXMFDIST/doc/support/wintools
-```
-
-にしてから
-
-```
-texlua install-xpdf-data
-```
-
-というコマンドを実行します。これにより，必要なサポートファイルが自動的
-にインストールされます。
-
-- [W32TeX](/W32TeX/) には，Xpdf に含まれる便利な PDF 操作ツールのバイナリ (.exe) が収録されています。以下が利用できます：
-
-> pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdftopng, pdftohtml, pdfdetach (ver. 3.04)
-
-なお，インストールを完成させるには [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342) をお読み下さい。
+- [W32TeX](/W32TeX/) に含まれていた xpdf utilities は最新の場合には，
+    poppler utilities で置き換えられました。 poppler utilities はすぐに使える
+    状態になっています。
 
 #### OS X {#inst-mac}
 
