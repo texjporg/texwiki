@@ -173,6 +173,7 @@ Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いよ�
 
 ### TeXユーザの集い {#e38306bd}
 
+- [TeXユーザの集い 2016](http://texconf16.tumblr.com/)
 - [TeXユーザの集い 2015](http://texconf15.tumblr.com/)
 - [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
 - [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
