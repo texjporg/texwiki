@@ -703,6 +703,12 @@ px 単位で余白を付ける場合，最終的なビットマップ出力に�
 - 「テキストを保持する」を無効に。
 - 「単一ファイル/アニメを生成」を有効に。
 
+Mac用CUI版 TeX2img の場合，次のオプションの組合せになります。
+
+```
+$ tex2img --margins 0 --keep-page-size --pagebox crop --no-with-text --merge-output-files input.pdf output.pdf
+```
+
 ### PDF の余白を広げる目的で TeX2img を使うには {#margin}
 
 次の設定で，既存の PDF の余白を広げることができます。
@@ -714,6 +720,12 @@ px 単位で余白を付ける場合，最終的なビットマップ出力に�
 - 採用ページボックスを希望のものに設定（通常は CropBox を選んでおくと，一般的なビューアでの見た目と合致するでしょう）。
 - 「テキストを保持する」を有効に。
 - 「単一ファイル/アニメを生成」を有効に。
+
+Mac用CUI版 TeX2img の場合，次のオプションの組合せになります。（例：左マージン10bp，上マージン20bp，右マージン30bp，下マージン40bpを付与したい場合）
+
+```
+$ tex2img --margins "10 20 30 40" --keep-page-size --pagebox crop --with-text --merge-output-files input.pdf output.pdf
+```
 
 ### PDF の /Rotate による回転を“確定”させる目的で TeX2img を使うには {#rotate}
 
@@ -731,6 +743,12 @@ TeX2img を次のように設定することで，既存の PDF の回転情報�
 - 採用ページボックスを希望のものに設定（通常は CropBox を選んでおくと，一般的なビューアでの見た目と合致するでしょう）。
 - 「テキストを保持する」を有効に。
 - 「単一ファイル/アニメを生成」を有効に。
+
+Mac用CUI版 TeX2img の場合，次のオプションの組合せになります。
+
+```
+$ tex2img --margins 0 --keep-page-size --pagebox crop --with-text --merge-output-files input.pdf output.pdf
+```
 
 #### 参考 {#qf1314d0}
 
