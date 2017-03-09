@@ -54,9 +54,9 @@ AUCTeX は Emacs の TeX モードです．
 
 ## 日本語利用のための engine 設定 {#gf4835e4}
 
-AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, upTeX の3種類です。タイプセット時にどのコマンドを使うかは、変数 TeX-engine に3つのうちどれがセットされているかで決まります。[^1]
+AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, upTeX[^1] の3種類です。タイプセット時にどのコマンドを使うかは、変数 TeX-engine に3つのうちどれがセットされているかで決まります。[^2]
 
-通常の LaTeX ユーザーは、カスタマイズオプション TeX-parse-self を有効にしておくのがおすすめです。クラスファイルやそのオプション引数から、TeX-engine が自動でセットされます。[^2]
+通常の LaTeX ユーザーは、カスタマイズオプション TeX-parse-self を有効にしておくのがおすすめです。クラスファイルやそのオプション引数から、TeX-engine が自動でセットされます。[^3][^4]
 
 期待と異なる engine が使われている場合は、Command メニューのサブメニューの TeXing Options から engine を変更できます。この engine の値は emacs を終了するとき保存されません。選択した engine をずっと使い続けるやり方は、以下の2通りがあります。
 
@@ -85,7 +85,7 @@ AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, 
     %%% End:
     ```
 
-    のようにします。[^3]
+    のようにします。[^5]
 
 上記どちらの場合も、TeX-engine に指定する値は ptex, jtex, uptex のいずれかです。
 
@@ -1156,6 +1156,8 @@ AUCTeX とは関係ありませんが，先頭に
 
 <!-- AUCTeX ここまで -->
 
-[^1]: LuaTeX-ja を利用する場合は、日本語用に特別の設定は不要です。単純に engine として LuaTeX を選び、通常の LuaTeX 文書として編集するだけでよく、この節の話は当てはまりません。
-[^2]: 文書を親ファイルと子ファイルに分割する場合は、さらに TeX-auto-save も有効にするとよいかもしれません。文書の保存時にサブディレクトリ auto 内に情報が保存されるので、次回編集を再開するとき、子ファイルだけを開いても TeX-engine が正しい値にセットされます。
-[^3]: directory local variable も、AUCTeX 11.90 からは japanese-latex-mode, japanese-plain-tex-mode で利用できるようになりました。
+[^1]: upLaTeX を利用したとき、何度 C-c C-c をタイプしても typeset が終わったと判定されず、Viewer の起動に移行しなかった問題は AUCTeX 11.90 で修正されました。
+[^2]: LuaTeX-ja を利用する場合は、日本語用に特別の設定は不要です。単純に engine として LuaTeX を選び、通常の LuaTeX 文書として編集するだけでよく、この節の話は当てはまりません。
+[^3]: 文書を親ファイルと子ファイルに分割する場合は、さらに TeX-auto-save も有効にするとよいかもしれません。文書の保存時にサブディレクトリ auto 内に情報が保存されるので、次回編集を再開するとき、子ファイルだけを開いても TeX-engine が正しい値にセットされます。
+[^4]: \documentclass\[uplatex\]{jsarticle} 等のように、jsclasses 系のクラスファイルに uplatex オプションを指定した場合 upTeX engine が選択されない問題は、開発版では修正されました。AUCTeX 11.90 ではまだ残っています。
+[^5]: directory local variable も、AUCTeX 11.90 からは japanese-latex-mode, japanese-plain-tex-mode で利用できるようになりました。
