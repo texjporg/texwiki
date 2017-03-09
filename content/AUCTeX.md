@@ -52,6 +52,47 @@ AUCTeX は Emacs の TeX モードです．
 　[![Showing a sectioning command and math rendered as images inside an Emacs buffer.](http://www.gnu.org/software/auctex/img/preview-screenshot-thumb.png)](http://www.gnu.org/software/auctex/img/preview-screenshot.png)
 　[![Showing a less puristic interface setup with LATEX-specific tool bar and scroll bar.](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar.png)
 
+## 日本語利用のための engine 設定 {#gf4835e4}
+
+AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, upTeX の3種類です。タイプセット時にどのコマンドを使うかは、変数 TeX-engine に3つのうちどれがセットされているかで決まります。[^1]
+
+通常の LaTeX ユーザーは、カスタマイズオプション TeX-parse-self を有効にしておくのがおすすめです。クラスファイルやそのオプション引数から、TeX-engine が自動でセットされます。[^2]
+
+期待と異なる engine が使われている場合は、Command メニューのサブメニューの TeXing Options から engine を変更できます。この engine の値は emacs を終了するとき保存されません。選択した engine をずっと使い続けるやり方は、以下の2通りがあります。
+
+1. 特定の engine をどの文書でも使う場合<br>
+    カスタマイズオプション japanese-TeX-engine-default を設定します。
+
+    ```
+    M-x customize-option RET japanese-TeX-engine-default RET
+    ```
+
+    として Customize インターフェースを使ってもいいし、.emacs 等の初期化ファイルで
+
+    ```
+    (setq japanese-TeX-engine-default 'uptex) ;; upTeX を標準に
+    ```
+
+    のようにしても構いません。
+
+1. 個別のファイルごとに engine を設定する場合<br>
+    file local variable を使います。例えば、upTeX を使う場合は
+
+    ```
+    %%% Local Variables:
+    %%% mode: japanese-latex
+    %%% TeX-engine: uptex
+    %%% End:
+    ```
+
+    のようにします。[^3]
+
+上記どちらの場合も、TeX-engine に指定する値は ptex, jtex, uptex のいずれかです。
+
+各 engine ごとに利用されるコマンド名（platex や euptex 等）は変数 TeX-engine-alist-builtin に保存されています。異なるコマンドを使いたい場合や、新たな engine を定義したい場合はカスタマイズオプション TeX-engine-alist を利用してください。このページの下方に色々例が載っています。
+
+[forum:2047](https://okumuralab.org/tex/mod/forum/discuss.php?d=2047)のように、NTT jLaTeX 用のクラスファイルを ASCII pLaTeX で利用する場合は、上述の file (directory) local variable で TeX-engine に ptex を指定してください。
+
 ## 注意点 {#gb666e4a}
 
 ### " を入力しようとすると \`\` が入力される → C-q " {#q07274ce}
@@ -1114,3 +1155,7 @@ AUCTeX とは関係ありませんが，先頭に
 - [Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する](http://d.hatena.ne.jp/gifnksm/20090420/)
 
 <!-- AUCTeX ここまで -->
+
+[^1]: LuaTeX-ja を利用する場合は、日本語用に特別の設定は不要です。単純に engine として LuaTeX を選び、通常の LuaTeX 文書として編集するだけでよく、この節の話は当てはまりません。
+[^2]: 文書を親ファイルと子ファイルに分割する場合は、さらに TeX-auto-save も有効にするとよいかもしれません。文書の保存時にサブディレクトリ auto 内に情報が保存されるので、次回編集を再開するとき、子ファイルだけを開いても TeX-engine が正しい値にセットされます。
+[^3]: directory local variable も、AUCTeX 11.90 からは japanese-latex-mode, japanese-plain-tex-mode で利用できるようになりました。
