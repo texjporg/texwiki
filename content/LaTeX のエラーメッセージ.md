@@ -744,10 +744,14 @@ fancybox パッケージ使用時に，Sbox 環境を用いて保存した対象
 
 #### ! LaTeX Error: This file needs format \`<em>format_X</em>&#39;<br>  but this is \`<em>format_Y</em>&#39;. {#ubb38849}
 
-クラスファイル内の \NeedsTeXFormat によって（処理に必要な）フォーマットとして指定されている <em>format_X</em> と，実際に処理に用いたフォーマット <em>format_Y</em> が異なる場合に現れるエラーメッセージです（ただし，pLaTeX 使用時には，\NeedsTeXFormat によって“LaTeX2e”
+（実際に起こるエラーの場合，<strong>format_X</strong>のところが<strong>pLaTeX2e</strong>などとなり，<strong>format_Y</strong>のところは<strong>LaTeX2e</strong>などとなります）
+
+一口に LaTeX といっても，実際に稼働しているのは LaTeX2e だったり pLaTeX2e だったりといろいろです（この違いを，<strong>フォーマットが違う</strong>といいます）． それぞれよく似ていますが，フォーマットによって使えるLaTeX命令に若干の相違があります． クラスファイルによっては特定のフォーマットでないと使えない命令を使っていたりするので，そのようなクラスファイルが期待するフォーマットを指定しているのが \NeedsTeXFormat 命令です．
+
+このエラーは，「クラスファイルが処理に使うフォーマットとして指定しているのは<em>format_X</em>であるのに、今実際に稼働しているのは<em>format_Y</em>だ」というエラーです（ただし，pLaTeX 使用時には，\NeedsTeXFormat によって“LaTeX2e”
 を指定してあってもエラーなく処理できるようになっています）．
 
-> → \NeedsTeXFormat の指定に沿った処理系で処理してください．
+> → \NeedsTeXFormat の指定に沿った処理系で処理するように，統合環境などの設定を見直してしてください．
 > 典型的な場合としては，jarticle.cls などの pLaTeX 用のクラスファイルを用いた文書をオリジナルの LaTeX で処理すると上記のエラーメッセージが現れるので，オリジナルの LaTeX ではなく pLaTeX で処理するようにします．
 
 #### ! LaTeX Error: This may be a LaTeX bug. {#z1a01024}
