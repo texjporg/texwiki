@@ -32,6 +32,7 @@ TeX Live のアップデートは，同じく環境設定パネルから「TeX �
 
 - [El CapitanでDrag &amp; Drop UpTeX を使って日本語TeX環境を整える](http://ijairai.hatenablog.com/entry/2015/10/24/170311)
     - 当該ページの TeXShop の設定（特に upTeX (ptex2pdf) を使うのに ShiftJIS に設定変更している部分）は誤りだが、他のスクリーンショットは参考になる。
+        - 具体的にどのような点が誤りなのでしょうか？
 
 ### 古い版（20160614 以前）を利用していた場合の注意 {#jc002f21}
 
