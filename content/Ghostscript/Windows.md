@@ -58,23 +58,23 @@ TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs920w64full-gpl.exe または gs920w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.20” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.20” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の角藤版 Ghostscript インストーラ（gs921w64full-gpl.exe または gs921w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.21” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.21” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.20 などというフォルダにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.20 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.21 などというフォルダにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.21 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
 
 #### 環境変数 PATH の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダと lib フォルダを環境変数 PATH に追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.20 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.21 にインストールした場合は
 
 ```
-;C:\Program Files\gs\gs9.20\bin;C:\Program Files\gs\gs9.20\lib
+;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
 ```
 
 を環境変数 PATH に追加します。
@@ -84,13 +84,13 @@ W32TeX をインストールした後に Ghostscript をインストールした
 - 64bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.20\bin;C:\Program Files\gs\gs9.20\lib
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
     ```
 
 - 32bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.20\bin;C:\Program Files\gs\gs9.20\lib
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
