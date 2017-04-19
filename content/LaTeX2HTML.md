@@ -25,7 +25,6 @@ LaTeX2HTML は Perl で記述されています．<br>
 ## LaTeX2HTML 日本語化パッチ {#ca003217}
 
 - [LaTeX2HTML (Japanese)](http://takeno.iee.niit.ac.jp/~shige/TeX/latex2html/) (竹野 茂治さん＠新潟工科大学)
-    - [LaTeX2HTML 日本語化パッチ開発版のページ (Japanese)](http://takeno.iee.niit.ac.jp/~shige/TeX/latex2html/current/l2h-current.html)
 - [LaTeX2HTML(japanese for Windows)](http://www.phys.asa.hokkyodai.ac.jp/osamu/latex2html/) (阿部 修さん＠北海道教育大学)
     - [LaTeX2HTML 2008 版](http://www.phys.asa.hokkyodai.ac.jp/osamu/l2h2k8/l2h.html)
 
@@ -36,6 +35,7 @@ LaTeX2HTML は Perl で記述されています．<br>
 - [Windows 環境への LaTeX2HTML のインストールと手直し](http://www.kagami.org/diary/2012-02-25-1.html)
 - [Latex2HtmlをWindowsで使う](http://tmlaboratory.at-ninja.jp/memo/latex2html_install.html)
 - [latex2html の設定](http://medt00lz.s59.xrea.com/blog/archives/2008/04/latex2html.html)
+- [MS-Windows への LaTeX2HTML のインストール (Japanese)](http://takeno.iee.niit.ac.jp/~shige/TeX/latex2html/l2h-win.html)
 
 ### OS X {#u17fe485}
 
