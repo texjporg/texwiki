@@ -59,10 +59,9 @@ WinShell には
 
 ### 日本語言語ファイル {#z273ed84}
 
-- [WinShell3日本語化](http://redmine.nnnnn.me/projects/winshell/files)
-    <!-- - -[[jp_JP.txt:http://webcache.googleusercontent.com/search?q=cache%3ahttp://redmine.nnnnn.me/attachments/download/1/jp_JP.txt]] (Google キャッシュ) -->
+- [winshell-lang-ja_JP](https://github.com/new3kinnnn/winshell-lang-ja_JP)
 
-[( ﾟÅﾟ)んー](https://twitter.com/whoami) さんが WinShell 日本語言語ファイルを公開されています。
+[new3kinnnn](https://github.com/new3kinnnn) さんが WinShell 日本語言語ファイルを公開されています。
 WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください。
 ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください。
 
@@ -95,7 +94,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewR15
+AcroViewR17
 ```
 
 に修正することで解消できます。
