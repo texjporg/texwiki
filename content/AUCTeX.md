@@ -67,7 +67,7 @@ AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, 
     M-x customize-option RET japanese-TeX-engine-default RET
     ```
 
-    として Customize インターフェースを使ってもいいし、.emacs 等の初期化ファイルで
+    として Customize インターフェースを使ってもいいし、&#x7e;/.emacs.d/init.el 等の初期化ファイルで
 
     ```
     (setq japanese-TeX-engine-default 'uptex) ;; upTeX を標準に
