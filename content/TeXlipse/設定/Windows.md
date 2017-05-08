@@ -129,7 +129,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\lualatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-cmdx -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -143,7 +143,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\luajitlatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\luajitlatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>-cmdx -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
