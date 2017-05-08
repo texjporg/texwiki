@@ -162,6 +162,8 @@ Input article.layout
 
 #### ltjsreport.layout <a id="ltjsreport-layout"></a> {#c03201a4}
 
+ltjsreport.layout ファイルを新規作成して以下の内容を編集します．
+
 ```
 #% Do not delete the line below; configure depends on this
 #  \DeclareLaTeXClass{Japanese Report (ltjsreport)}
@@ -367,7 +369,7 @@ XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/Z
 > <br>
 >
 > ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
-> 既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[12　　　　▼\]</span><br>
+> 既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[11　　　　▼\]</span><br>
 > LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
 > ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
 > サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
