@@ -56,9 +56,10 @@ Windows
 
 Notepad++ の派生版 で EUC-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが，EUC-JP には対応していません．
 
+- [Notepad++ JS](https://ja.osdn.net/projects/l2jacmjpn/)
+    - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
+    - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
 - [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
-- [Notepad++ EUC-JP対応版](https://bitbucket.org/yttkans/notepad-euc-jp)
-- [Notepad++ 派生ビルド](http://freesftys.lv9.org/app/npp/)
 
 ### 日本語言語ファイル {#i35c46e6}
 
