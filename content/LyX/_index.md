@@ -49,8 +49,6 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
 
 <span style="font-size:30px"><strong>Windows 版は Bundle ではなく Installer の方をダウンロードしてください．</strong></span>
 
-### LyX {#n4ef8a04}
-
 [LyX | ダウンロード](http://www.lyx.org/WebJa.Download) からダウンロードできます．
 
 - FTP (公式サイト)
@@ -65,21 +63,17 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
     - [http://ftp.lyx.de/](http://ftp.lyx.de/) 開発版と安定版の Windows バイナリ
     - [http://jaist.dl.sourceforge.net/project/lyxwininstaller/](http://jaist.dl.sourceforge.net/project/lyxwininstaller/) 安定版の Windows バイナリ
     - [https://sourceforge.net/projects/lyxwininstaller/files/](https://sourceforge.net/projects/lyxwininstaller/files/) 安定版の Windows バイナリ
-
-### LyX-JP {#v42bf725}
-
-LyX-JP は LyX を日本語 Windows 環境で使いやすいように改善したもの．
-
-- [https://osdn.jp/projects/jalyx/releases/](https://osdn.jp/projects/jalyx/releases/) 安定版の Windows バイナリ
-- [http://jaist.dl.osdn.jp/jalyx/](http://jaist.dl.osdn.jp/jalyx/) 安定版の Windows バイナリ
-- [http://iij.dl.osdn.jp/jalyx/](http://iij.dl.osdn.jp/jalyx/) 安定版の Windows バイナリ
-- [http://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/](http://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/) 安定版の Windows バイナリ
-- [http://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/](http://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/) 安定版の Windows バイナリ
-- [http://ftp.iij.ad.jp/pub/osdn.jp/jalyx/](http://ftp.iij.ad.jp/pub/osdn.jp/jalyx/) 安定版の Windows バイナリ
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/](ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/) 安定版の Windows バイナリ
-- [ftp://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/](ftp://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/) 安定版の Windows バイナリ
-- [ftp://ftp.iij.ad.jp/pub/osdn.jp/jalyx/](ftp://ftp.iij.ad.jp/pub/osdn.jp/jalyx/) 安定版の Windows バイナリ
-    <!-- -http://akagi.ms.u-tokyo.ac.jp/LyX/lyx_top_page.html -->
+        <!-- -LyX-JP (LyX-JP は LyX を日本語 Windows 環境で使いやすいように改善したもの．) -->
+        <!-- - -https://osdn.jp/projects/jalyx/releases/ 安定版の Windows バイナリ -->
+        <!-- - -http://jaist.dl.osdn.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -http://iij.dl.osdn.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -http://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -http://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -http://ftp.iij.ad.jp/pub/osdn.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -ftp://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -ftp://ftp.iij.ad.jp/pub/osdn.jp/jalyx/ 安定版の Windows バイナリ -->
+        <!-- - -http://akagi.ms.u-tokyo.ac.jp/LyX/lyx_top_page.html -->
 
 ## インストール {#r9ac9b39}
 
@@ -101,27 +95,27 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-2.2.0-Installer-1.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-2.3.0-Installer-1.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="http://git.lyx.org/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-2.2.0-Installer-1.exe</ins><br>
+　　　　　　 <ins>LyX-2.3.0-Installer-1.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　47.9 MB (50,319,305 バイト)<br>
-　　　　ディスク上　　　　　　48.0 MB (50,331,648 バイト)<br>
+　　　　サイズ:　　　　　　　　51.6 MB (54,201,861 バイト)<br>
+　　　　ディスク上　　　　　　51.6 MB (54,202,368 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2016年6月9日、01:00:00<br>
-　　　　更新日時:　　　　　　2016年6月9日、01:00:00<br>
-　　　　アクセス日時:　　　　2016年6月9日、01:00:00<br>
+　　　　作成日時:　　　　　　2017年5月4日、01:00:00<br>
+　　　　更新日時:　　　　　　2017年5月4日、01:00:00<br>
+　　　　アクセス日時:　　　　2017年5月4日、01:00:00<br>
 
 <br>
 
@@ -145,9 +139,9 @@ LyX のインストーラーを右クリックします。
 
 \[管理者として実行(A)\] を選択して LyX のインストーラーを起動します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.2.0 セットアップ ウィザードへようこそ</strong><br>
+　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.3.0 セットアップ ウィザードへようこそ</strong><br>
 
 <br>
 
@@ -172,10 +166,10 @@ LyX のインストーラーを右クリックします。
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>ライセンス契約書</strong><br>
-> 　　LyX 2.2.0をインストールする前に、ライセンス条件を確認してください。<br>
+> 　　LyX 2.3.0をインストールする前に、ライセンス条件を確認してください。<br>
 >
 > <br>
 >
@@ -183,7 +177,7 @@ LyX のインストーラーを右クリックします。
 > ...<br>
 > ...<br>
 > ...<br>
-> 　　誓約書のすべての条件に同意するならば、\[同意する\]を選んでインストールを続けてください。LyX 2.2.0<br>
+> 　　誓約書のすべての条件に同意するならば、\[同意する\]を選んでインストールを続けてください。LyX 2.3.0<br>
 > 　　をインストールするには、契約書に同意する必要があります。<br>
 >
 > <br>
@@ -192,14 +186,14 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[　同意する(A)　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>ユーザーを選択</strong><br>
-> 　　どのユーザーのためにLyX 2.2.0をインストールするか選択してください。<br>
+> 　　どのユーザーのためにLyX 2.3.0をインストールするか選択してください。<br>
 >
 > <br>
 >
-> 　　LyX 2.2.0を自分自身のためだけにインストールしたいのか、このコンピューターの全ユーザーのた<br>
+> 　　LyX 2.3.0を自分自身のためだけにインストールしたいのか、このコンピューターの全ユーザーのた<br>
 > 　　めにインストールしたいのかを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
 >
 > <br>
@@ -222,14 +216,14 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>インストール先を選んでください。</strong><br>
-> 　　LyX 2.2.0をインストールするフォルダを選んでください。<br>
+> 　　LyX 2.3.0をインストールするフォルダを選んでください。<br>
 >
 > <br>
 >
-> 　　LyX 2.2.0を以下のフォルダにインストールします。異なったフォルダにインストールするには、\[参照\]を押<br>
+> 　　LyX 2.3.0を以下のフォルダにインストールします。異なったフォルダにインストールするには、\[参照\]を押<br>
 > 　　して、別のフォルダを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
 >
 > <br>
@@ -239,8 +233,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　インストール先 フォルダ<br>
-> 　　　　<ins>C:\Program Files (x86)\LyX 2.2</ins> (64-bit Windows の場合) または <ins>C:\Program Files\LyX 2.2</ins> (32-bit Windows の場合) &lt;-- <strong>全てのユーザーに対してインストールする場合</strong><br>
-> 　　　　<ins>C:\Users\Lydia\AppData\Local\LyX 2.2</ins> &lt;-- <strong>自分専用にインストールする場合</strong><br>
+> 　　　　<ins>C:\Program Files (x86)\LyX 2.3</ins> (64-bit Windows の場合) または <ins>C:\Program Files\LyX 2.3</ins> (32-bit Windows の場合) &lt;-- <strong>全てのユーザーに対してインストールする場合</strong><br>
+> 　　　　<ins>C:\Users\Lydia\AppData\Local\LyX 2.3</ins> &lt;-- <strong>自分専用にインストールする場合</strong><br>
 >
 > <br>
 >
@@ -250,10 +244,10 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>コンポーネントを選んでください。</strong><br>
-> 　　LyX 2.2.0のインストールオプションを選んでください。<br>
+> 　　LyX 2.3.0のインストールオプションを選んでください。<br>
 >
 > <br>
 >
@@ -274,10 +268,10 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>スタートメニュー フォルダを選んでください。</strong><br>
-> 　　LyX 2.2.0のショートカットを作成するスタートメニュー フォルダを選んで下<br>
+> 　　LyX 2.3.0のショートカットを作成するスタートメニュー フォルダを選んで下<br>
 > 　　さい。<br>
 >
 > <br>
@@ -287,7 +281,7 @@ LyX のインストーラーを右クリックします。
 >
 > <br>
 >
-> 　　<ins>LyX 2.2</ins><br>
+> 　　<ins>LyX 2.3</ins><br>
 >
 > <br>
 >
@@ -307,7 +301,7 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>LaTeX頒布版</strong><br>
 > 　　LyXが使うべきLaTeX頒布版を指定してください。<br>
@@ -326,8 +320,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2016\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
-> 　　　　　<ins>C:\texlive\2016\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2017\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2017\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
 >
 > <br>
 >
@@ -341,10 +335,10 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ インストール \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>インストール</strong><br>
-> 　　LyX 2.2.0をインストールしています。しばらくお待ちください。<br>
+> 　　LyX 2.3.0をインストールしています。しばらくお待ちください。<br>
 >
 > <br>
 >
@@ -368,14 +362,14 @@ LyX のインストーラーを右クリックします。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:#888888;background-color:#EEEEEE;">\[ 　次へ(N) >　 \]</span>　<span style="color:#888888;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.2.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.0 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.2.0 セットアップ ウィザードは完了しまし</strong><br>
+　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.3.0 セットアップ ウィザードは完了しまし</strong><br>
 　　　　　　　　　　　　　　　　　　　　　 <strong>た。</strong><br>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　LyX 2.2.0は、このコンピュータにインストールされました。
+　　　　　　　　　　　　　　　　　　　　　LyX 2.3.0は、このコンピュータにインストールされました。
 
 　　　　　　　　　　　　　　　　　　　　　ウィザードを閉じるには \[完了\] を押してください。<br>
 
@@ -430,7 +424,7 @@ LyX のインストーラーを右クリックします。
 >
 > <br>
 >
-> 　　3. LyXの出力は素晴らしい出来映えです！ご覧になりたければ、文書 <span style="color:#1188FF;">▷</span> PDF (dvipdfm) を表示<br>
+> 　　3. LyXの出力は素晴らしい出来映えです！ご覧になりたければ、文書 <span style="color:#1188FF;">▷</span> \[PDF (dvipdfm)\] を表示<br>
 > 　　　を選択してみてください。<br>
 >
 > <br>
