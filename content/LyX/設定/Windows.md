@@ -125,7 +125,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; dvipdfmx -o $$o $$i</ins><br>
+> 変換子(O):　　　<ins>dvipdfmx -o $$o $$i</ins><br>
 > 追加フラグ(X):　<br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
@@ -161,7 +161,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; ps2pdf.exe $$i $$o</ins><br>
+> 変換子(O):　　　<ins>ps2pdf.exe $$i $$o</ins><br>
 > 追加フラグ(X):　<br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
@@ -179,7 +179,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (pdflatex)　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (pdflatex)　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; pdflatex -synctex=1 $$i</ins><br>
+> 変換子(O):　　　<ins>pdflatex -synctex=1 $$i</ins><br>
 > 追加フラグ(X):　<ins>latex=pdflatex</ins><br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
@@ -199,7 +199,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; lualatex -synctex=1</ins><br>
+> 変換子(O):　　　<ins>lualatex -cmdx -synctex=1</ins><br>
 > 追加フラグ(X):　<ins>latex=lualatex</ins><br>
 
 ■ luajitlatex の場合
@@ -215,7 +215,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; luajitlatex -synctex=1</ins><br>
+> 変換子(O):　　　<ins>luajitlatex -cmdx -synctex=1</ins><br>
 > 追加フラグ(X):　<ins>latex=luajitlatex</ins><br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
@@ -233,7 +233,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (XeTeX)　　　　　　　　　　　　　　　 ▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX)　　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 >
-> 変換子(O):　　　<ins>tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" &amp;&amp; echo exit | pdfdde --r15 &amp; xelatex -synctex=1 $$i</ins><br>
+> 変換子(O):　　　<ins>xelatex -synctex=1 $$i</ins><br>
 > 追加フラグ(X):　<ins>latex=xelatex</ins><br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
@@ -637,15 +637,15 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．
 を記述して \[適用(A)\] &gt; \[保存(S)\] をクリックして LyX を再起動します．
 
 全てのユーザーに対してインストールした場合は
-C:\Program Files (x86)\LyX 2.2\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.2\bin\lyxeditor.cmd (32-bit Windows の場合) を作成します．
+C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (32-bit Windows の場合) を作成します．
 
 自分専用にインストールした場合は
-C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd を作成します．
+C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd を作成します．
 
 ***
 
-- C:\Program Files (x86)\LyX 2.2\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.2\bin\lyxeditor.cmd (32-bit Windows の場合) (全てのユーザーに対してインストールした場合)
-- C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd (自分専用にインストールした場合)
+- C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (32-bit Windows の場合) (全てのユーザーに対してインストールした場合)
+- C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd (自分専用にインストールした場合)
 
 ***
 
@@ -663,25 +663,25 @@ endlocal
 
 ***
 
-全てのユーザーに対してインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files (x86)\LyX 2.2\bin\ (64-bit Windows の場合) または C:\Program Files\LyX 2.2\bin\ (32-bit Windows の場合) に作成した lyxeditor.cmd ファイルをペーストしてください．
+全てのユーザーに対してインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files (x86)\LyX 2.3\bin\ (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\ (32-bit Windows の場合) に作成した lyxeditor.cmd ファイルをペーストしてください．
 
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
 64-bit Windows で全てのユーザーに対してインストールした場合は
 
 ```
-"C:\Program Files (x86)\LyX 2.2\bin\lyxeditor.cmd" "%f" %l
+"C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
 ```
 
 32-bit Windows で全てのユーザーに対してインストールした場合は
 
 ```
-"C:\Program Files\LyX 2.2\bin\lyxeditor.cmd" "%f" %l
+"C:\Program Files\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
 ```
 
 自分専用にインストールした場合は
 
 ```
-"C:\Users\Lydia\AppData\Local\LyX 2.2\bin\lyxeditor.cmd" "%f" %l
+"C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
 ```
 
 を記述します．
