@@ -207,7 +207,7 @@ Windows の場合はレイアウトファイルを
 
 フォルダーにコピーします．
 
-OS X の場合はレイアウトファイルを
+macOS の場合はレイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
 - &#x7e;/Library/Application Support/LyX-2.3/layouts/
