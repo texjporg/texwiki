@@ -41,20 +41,21 @@ pukiwiki: "LyX/設定/Windows"
 > ☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^1] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
 > DVIビューア用紙寸法設定:　　[^2]<br>
 > 書誌情報の生成<br>
-> 処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[bibtex　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> オプション(O):　　　　　[^3]<br>
-> 日本語用処理子(J):　<ins>upbibtex</ins>[^4]<br>
+> &nbsp;処理子(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;オプション(O):　　　　　[^3]<br>
+> &nbsp;日本語用処理子(J):　<span style="color:Black;background-color:#EEEEEE;">\[upbibtex　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;オプション(I):　　　　　[^4]<br>
 > 索引の生成<br>
-> 処理子(O):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
-> オプション(T):　　　　　[^5]<br>
-> 日本語用処理子(J):　<ins>upmendex -c -q</ins>[^6]<br>
+> &nbsp;処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
+> &nbsp;オプション(T):　　　　　[^5]<br>
+> &nbsp;日本語用処理子(J):　<ins>upmendex -c -q</ins>[^6]<br>
 >
 > <br>
 >
-> 用語集コマンド(N):　<ins>makeindex -s nomencl.ist</ins>[^7]<br>
-> CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8]<br>
-> ☑ LaTeXファイルでWindows流のパス表記を使う(U)[^9]<br>
-> ☐ 文書クラス変更時にクラスオプションをリセットする(E)[^10]<br>
+> &nbsp;用語集コマンド(N):　<ins>makeindex -s nomencl.ist</ins>[^7]<br>
+> &nbsp;CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8]<br>
+> &nbsp;☑ LaTeXファイルでWindows流のパス表記を使う(U)[^9]<br>
+> &nbsp;☐ 文書クラス変更時にクラスオプションをリセットする(E)[^10]<br>
 
 \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
@@ -628,7 +629,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．
 
 <strong>Lydia の部分は自分のアカウント名に置き換えてください．</strong>
 
-\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[パス\] &gt; \[LyXサーバーパイプ\] に
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[パス\] &gt; \[LyXサーバパイプ\] に
 
 ```
 \\.\pipe\lyxpipe
