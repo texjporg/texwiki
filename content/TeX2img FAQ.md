@@ -232,7 +232,7 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 
 ```
 % LaTeX compiler: platex
-% DVIware: dvipdfmx 
+% DVI driver: dvipdfmx 
 \documentclass[fleqn]{jsarticle}
 \usepackage{amsmath,amssymb}
 \usepackage[dvipdfmx]{graphicx,color}
