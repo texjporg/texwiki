@@ -105,7 +105,7 @@ defaults write TeXShop FixLineNumberScroll NO
 
 前者2つは今後新規に開くウィンドウのデフォルト挙動を規定し，後者2つは現在開いているウィンドウの設定値を規定しています。
 
-なお，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を導入すれば，TeXの文法を考慮したスペルチェック（例えば \newcommand のような制御綴をスペルチェック対象から除外するなど）が可能になります。
+なお，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を導入すれば，TeXの文法を考慮したスペルチェック（例えば \newcommand のような制御綴をスペルチェック対象から除外するなど）が可能になります。詳細は [cocoAspellの利用](https://texwiki.texjp.org/?TeXShop%20FAQ#s065005c) の項目をご覧ください。
 
 ### 黒背景に白文字になるよう設定変更していても，日本語入力時の未確定文字が黒色になってしまって見づらい {#lf54248c}
 
@@ -533,10 +533,56 @@ Command + 2 でタグ行を挿入できます。
 - 「単語数」は，英語スペルチェッカが認識する単語数です。和文文字のみからなる場合は英語スペルチェッカが認識しないため「0単語」と表示されます。
 - 「行数」は，選択部分に含まれる改行コードの数+1 です。そのため，行末に改行が含まれる場合は直観に反することがあるかもしれません。
 
+### cocoAspell の利用 {#s065005c}
+
+\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。
+
+インストール手順は以下の通り：
+
+1. Xcode Command Line Tools がインストールされていなければ，
+
+```
+ $ xcode-select --install
+```
+
+を実行してインストールしておきます。
+
+2. [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を公式サイトからダウンロードしてインストールします。macOS のバージョンごとに使用するバージョンが異なりますので，適切なバージョンをダウンロードしてインストールしてください。なお，インストール時に「開発元が未確認のため開けません」というエラーメッセージが出る場合は，右クリック(Control+Click)して「開く」を選択すればOKです。
+
+3. システム環境設定の一番下の段に Spelling という項目が追加されます。その中の English \[w_accents\] にチェックを入れて，右側の「TeX/LaTeX」にチェックを入れます。
+
+4. システム環境設定 → キーボード → ユーザ辞書 → スペルチェック の選択肢で，一番下にある「English \[w_accents\] (Aspell)」を選びます。
+
+5. TeXShopを起動し，環境設定 → 書類 → エディタ → スペルチェック をONにしてOKを押します。
+
+6. TeXShop の「編集→入力中にスペルチェック」をONにします。
+
+7. この状態で一度TeXShopを終了し，TeXShopを再度起動すると，TeXの文法を考慮したスペルチェック機能がONになっているはずです。
+
+8. デフォルトではTeXのコメント部分はスペルチェックの対象となりませんが，コメント部もスペルチェックの対象としたい場合は，
+
+```
+  システム環境設定 → Spelling → Filters → TeX/LaTeX → Check TeX comments
+```
+
+をONにしてください。
+
+9. TeXShop の
+
+```
+   編集→スペルと文法を表示
+```
+
+を選び，「文法をチェック」をONにすると，スペルミスではない文法ミスの疑いのある箇所に緑の下線が引かれます。
+
+10. システム環境設定 → キーボード → ユーザ辞書 → スペルチェック の内容を「言語ごとに自動」にしておく場合，TeX文書の冒頭に次のマジックコメントを書いておいてもOKです。その文書を開いたTeXShop内でのみ cocoAspell によるスペルチェックが行われます。
+
+```
+ %!TEX spellcheck = English [w_accents] (Aspell)
+```
+
 ### 「実験」機能 {#pbbb5a40}
 
 ### 「統計情報」機能 {#e9b6bf12}
-
-### cocoAspell の利用 {#s065005c}
 
 ### AppleScript の利用 {#r59cce6f}
