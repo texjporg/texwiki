@@ -107,6 +107,13 @@ Vim は，チャリティウェアです．<br>
 
 ## Vim で LaTeX {#i2be46c6}
 
+Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み込む&mdash;&mdash;
+(Plain)TeX 用のシンタックスハイライト（構文強調）に設定する&mdash;&mdash;
+ようです。
+そのため多くの場合 [LaTeX](/LaTeX/) の構文が正しく解釈されません。
+最も簡単な方法は LaTeX 記法で記述された原稿の拡張子を“ltx”にすることでしょう。
+これで，気持ち良く LaTeX on Vim できますね。 
+
 - [tex.vim](/Vim/tex.vim/)
 - vimtex
 - LaTeX Box
