@@ -12,7 +12,7 @@ pukiwiki: "TeXworks"
 
 TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．macOS 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
-奥村晴彦・黒木裕介『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』では，おすすめの統合環境に TeXworks が紹介されています．
+奥村晴彦・黒木裕介『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』では，おすすめの統合環境に TeXworks が紹介されています．
 
 ***
 
