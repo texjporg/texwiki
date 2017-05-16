@@ -17,7 +17,7 @@ WinShell は Windows 向けに開発された TeX 用の統合環境です。
     [^1]
 
 などの問題があり，とりわけ日本語文書を作成する際に致命的な問題が発生します。
-現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）。
+現在では UTF-8 に対応した [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用することが推奨されています（[古い情報](</古い情報/#zc6d6db5>)も参考に）。
 
 <!-- とりあえず復活させてみました。「設定」以下はバックアップから取得したものに手を付けていません。 -->
 <!-- 特にこのページの「ShiftJIS のダメ文字」の記述は，WinShell に限らず一般論として価値がありますよね？ -->
@@ -34,9 +34,9 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 ### お知らせ {#z73b9e72}
 
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/) 著
+[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)，黒木裕介 著
 『LaTeX2e 美文書作成入門』
-([改訂第6版](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
+([改訂第7版](http://okumuralab.org/bibun7/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
 
 ### 動作環境 {#f8ed906d}
 
@@ -67,11 +67,10 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
-- [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
 
 などのオープンソースの統合環境では，UTF-8 でも問題が発生しません。
