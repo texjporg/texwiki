@@ -44,7 +44,7 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 入門書に付属するインストーラからも可能です．
 
-- [［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)
+- [［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)
 
 インストールせずに Web で試してみることもできます．
 
