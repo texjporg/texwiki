@@ -25,7 +25,7 @@ macOS (Mac) に TeX をインストールして使えるようになるまでの
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
 macOS 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
 [MacTeX](/MacTeX/) や [BasicTeX](/BasicTeX/) というディストリビューションも，この TeX Live をベースとしたものです。
-奥村先生の[［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)には TeX Live 2013 が収録されています。
+奥村先生の[［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)には TeX Live 2016 が収録されています。
 
 macOS への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
 TUG による公式サイト
