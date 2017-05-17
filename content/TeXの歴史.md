@@ -120,6 +120,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2015</td><td style="text-align:right">6</td><td style="text-align:center"></td><td><a href="https://texjp.org/">日本語 TeX 開発コミュニティ</a>、<a href="https://ml.texjp.org/mailman/listinfo/devel">日本語 TeX 開発者向けの招待制メーリングリスト</a>が開設される。</td></tr>
 <tr><td style="text-align:center"></td><td>11</td><td style="text-align:center"></td><td><a href="http://texconf15.tumblr.com/">TeX ユーザの集い 2015</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2016</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>TeX Wiki が <a href="http://oku.edu.mie-u.ac.jp/~okumura/texwiki/">http://oku.edu.mie-u.ac.jp/~okumura/texwiki/</a> から <a href="https://texwiki.texjp.org">https://texwiki.texjp.org</a> へ移転。</td></tr>
+<tr><td style="text-align:center">2017</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="http://okumuralab.org/bibun7/">『[改訂第7版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
