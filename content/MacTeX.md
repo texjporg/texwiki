@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2016 には以下のパッケージが収録されています。
+MacTeX-2017 には以下のパッケージが収録されています。
 
-#### TeX Live-2016 {#v03e546d}
+#### TeX Live-2017 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -68,7 +68,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.19 {#n1354f54}
+#### Ghostscript-9.21 {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください。
 MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
