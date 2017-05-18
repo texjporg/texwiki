@@ -930,7 +930,7 @@ Command <ins>/c "%bm.pdf"</ins><br>
 
 Forward search<br>
 🔘 Command line argument　　◯ DDE command<br>
-Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen --r15 --file '&#x25;&#x25;{output}' --page &#x25;&#x25;{page+1}"</ins><br>
+Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "rundll32 shell32,ShellExec_RunDLL AcroRd32 /A 'page=&#x25;&#x25;{page+1}' '&#x25;&#x25;{output}'"</ins><br>
 
 <br>
 
@@ -938,7 +938,7 @@ Command <ins>/c synctex view -i "%l:0:%Wc" -o "%bm.pdf" -x "pdfopen --r15 --file
 
 Close document before running (La)TeX<br>
 🔘 Command line argument　◯ DDE command　　◯ Do not close<br>
-Command <ins>/c pdfclose --r15 --file "%bm.pdf"</ins><br>
+Command <ins>/c tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh &#x7c; findstr "AcroRd32.exe" > nul &amp;&amp; taskkill /im AcroRd32.exe</ins><br>
 
 <br>
 
