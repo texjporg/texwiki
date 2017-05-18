@@ -53,10 +53,7 @@ Texmaker は英語でメニューなどが表示されますが，日本語化�
 
 - [TexmakerでTeX文書を書こう！](http://writingwithtexmaker.blogspot.jp/)
     - [日本語キットfor texmaker4.0.1](http://writingwithtexmaker.blogspot.jp/2013/04/texmaker40.html)
-
-#### Texmaker 3.0 {#t04ef444}
-
-- [Texmaker 日本語化キット](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)（田中健太さん）
+        - [texmaker_jp.qm4texmaker4.0.1_20130306.zip](https://box.yahoo.co.jp/guest/viewer?sid=box-l-eoqe3irxlbfhq6sxm5553ou5rm-1001&uniqid=5f8f02fe-2d42-4fc2-ac67-1f3501d2f74a&viewtype=detail)
 
 ## 不具合 {#h6093782}
 
