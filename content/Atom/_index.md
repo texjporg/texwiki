@@ -69,114 +69,46 @@ latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要�
 
 ### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
 
-Windows で LaTeX package で Latexmk-upLaTeX-pdfdvi でタイプセットして SumatraPDF で forward and inverse search を実行する方法を記述します。
+Windows で LaTeX package をインストールすると uplatex + dvipdfmx でタイプセットして SumatraPDF で forward and inverse search が実行できます。
 
 #### 設定 {#wa284717}
 
-%USERPROFILE%\\.atom\packages\latex\lib\builders\latexmk.js を編集します。
+Engine のリストから uplatex を選択します。
 
-constructArgs (filePath) の const args を変更します。
+Enable SyncTeX を ON にします。
 
-```
-    const args = [
-      '-e',
-      '"$latex = \'uplatex %O -file-line-error -no-guess-input-enc -kanji=utf8 -interaction=nonstopmode -synctex=1 %S\'"',
-      '-e',
-      '"$biber = \'biber %O --bblencoding=utf8 -u -U --output_safechars %B\'"',
-      '-e',
-      '"$bibtex = \'upbibtex %O %B\'"',
-      '-e',
-      '"$makeindex = \'upmendex %O -o %D %S\'"',
-      '-e',
-      '"$dvipdf = \'dvipdfmx %O -o %D %S\'"',
-      '-f',
-      '-cd',
-      '-norc',
-      '-gg',
-      '-pdfdvi'
-    ]
-```
+Output Format のリストから pdf を選択します。
 
-%USERPROFILE%\\.atom\packages\latex\lib\openers\sumatra-opener.js を編集します。
+PDF Producer のリストから dvipdfmx を選択します。
 
-open (filePath, texPath, lineNumber, callback) の const args を変更します。
-
-```
-    const args = [
-      '-reuse-instance',
-      '-inverse-search',
-      `"\\"${process.env.userprofile}\\AppData\\Local\\atom\\app-${atom.getVersion()}\\atom.exe\\" \\"%f:%l\\""`,
-      '-forward-search',
-      `"${texPath}"`,
-      `"${lineNumber}"`,
-      `"${filePath.replace(/\.dvi$/, '.pdf')}"`
-    ]
-```
-
-%USERPROFILE%\\.atom\config.cson を編集します。
-
-latex の sumatraPath に SumatraPDF の実行ファイルのフルパスを設定して  always&#x4f;pen&#x52;esult&#x49;nAtom を false に設定します。
-
-```
-  latex:
-    sumatraPath: "C:\\Program Files\\SumatraPDF\\SumatraPDF.exe"
-    alwaysOpenResultInAtom: false
-```
+Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
 
 #### 使い方 {#f1b15dfc}
 
-Ctrl+Alt+B をタイプすると Latexmk-upLaTeX-pdfdvi でタイプセットしたあと SumatraPDF で forward search が実行されます。
+Ctrl+Alt+B をタイプするとタイプセットしたあと SumatraPDF で forward search が実行されます。
 
 SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
 [pdf-view](https://atom.io/packages/pdf-view) パッケージを使用することで Atom 内で PDF プレビューができます。SyncTeX にも対応しています。
-pdf-view version 0.39.0 以降は日本語の表示にも対応しています。
 
 #### 設定 {#e1f3ae0a}
 
-pdf-view を使用するための設定をします。
+Engine のリストから uplatex を選択します。
 
-```
-~/.atom/config.cson
-```
+Enable SyncTeX を ON にします。
 
-を編集します。
+Output Format のリストから pdf を選択します。
 
-latex の always&#x4f;pen&#x52;esult&#x49;nAtom を true に設定します。
+PDF Producer のリストから dvipdfmx を選択します。
 
-```
-  latex:
-    alwaysOpenResultInAtom: true
-```
-
-latex パッケージで自動プレビューを設定しても (u)pTeX などの DVI ファイルを出力する TeX エンジンでタイプセットした場合は DVI ファイルを開こうとします。
-DVI ファイルではなく PDF ファイルを開くための設定をします。
-
-```
-~/.atom/packages/latex/lib/openers/atompdf-opener.js
-```
-
-を編集します。
-
-ファイルの中身に
-
-```
-    atom.workspace.openURIInPane(filePath, newPane)
-```
-
-という記述があるので
-
-```
-    atom.workspace.openURIInPane(filePath.replace(/\.dvi$/, '.pdf'), newPane)
-```
-
-に修正して拡張子が .dvi の場合は .pdf に変更してから pdf-view で開くように設定します。
+Opener のリストから pdf-view を選択します。
 
 #### 使い方 {#x26304ba}
 
 Ctrl+Alt+B をタイプするとタイプセットしたあと pdf-view で PDF が表示されます。
+
 PDF の表示画面をクリックすると TeX ファイルの該当する行にジャンプします。
 
 ### latextools (LaTeXTools for Atom) パッケージと Skim との連携 (macOS) {#i645c95d}
