@@ -22,7 +22,6 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     <!-- - -[[SplashScreen:http://wiki.lyx.org/LyX/SplashScreen]] -->
 
 - [lyx-devel](http://www.mail-archive.com/lyx-devel@lists.lyx.org/)
-- [gmane.editors.lyx.devel](http://blog.gmane.org/gmane.editors.lyx.devel)
 
 ***
 
@@ -55,25 +54,10 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
     - [ftp://ftp.lyx.org/pub/lyx/bin/](ftp://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [ftp://ftp.lyx.org/pub/lyx/stable/](ftp://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [ftp://ftp.lyx.org/pub/lyx/devel/](ftp://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- FTP (会津大学)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/bin/](ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/bin/) 安定版のバイナリ
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/stable/](ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/stable/) 安定版のソースコード
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/devel/](ftp://ftp.u-aizu.ac.jp/pub/tex/lyx/devel/) 開発版のバイナリとソースコード
 - LyXWinInstaller
     - [http://ftp.lyx.de/](http://ftp.lyx.de/) 開発版と安定版の Windows バイナリ
     - [http://jaist.dl.sourceforge.net/project/lyxwininstaller/](http://jaist.dl.sourceforge.net/project/lyxwininstaller/) 安定版の Windows バイナリ
     - [https://sourceforge.net/projects/lyxwininstaller/files/](https://sourceforge.net/projects/lyxwininstaller/files/) 安定版の Windows バイナリ
-        <!-- -LyX-JP (LyX-JP は LyX を日本語 Windows 環境で使いやすいように改善したもの．) -->
-        <!-- - -https://osdn.jp/projects/jalyx/releases/ 安定版の Windows バイナリ -->
-        <!-- - -http://jaist.dl.osdn.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -http://iij.dl.osdn.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -http://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -http://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -http://ftp.iij.ad.jp/pub/osdn.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -ftp://ftp.iij.ad.jp/pub/sourceforge.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -ftp://ftp.iij.ad.jp/pub/osdn.jp/jalyx/ 安定版の Windows バイナリ -->
-        <!-- - -http://akagi.ms.u-tokyo.ac.jp/LyX/lyx_top_page.html -->
 
 ## インストール {#r9ac9b39}
 
