@@ -77,6 +77,24 @@ OS X の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告
 
 ### 不具合 {#bugs}
 
+#### Windows 環境で ptex2pdf v0.9 を使用して "予 定.tex" を処理しようとすると dvipdfmx でエラーが発生して "予 定.pdf" が作成できない {#he5f997c}
+
+Windows 環境で ptex2pdf v0.9 を使用して "予 定.tex" を処理しようとすると dvipdfmx でエラーが発生して "予 定.pdf" が作成できません。
+
+この場合は (u)platex で "予 定.tex" を処理した後で dvipdfmx "予 定.dvi" を実行すると "予 定.pdf" が作成できます。
+
+[ptex2pdf.lua の 385 行目](https://github.com/texjporg/ptex2pdf/blob/0.9/ptex2pdf.lua#L385)に記述されている
+
+```
+bname = string.gsub(bname, "^.*[/\\](.*)$", "%1")
+```
+
+を以下のようにコメントアウトすると処理できるようになるようです。
+
+```
+--bname = string.gsub(bname, "^.*[/\\](.*)$", "%1")
+```
+
 #### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#extra_spaces}
 
 バージョン0.6より前では，TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．
