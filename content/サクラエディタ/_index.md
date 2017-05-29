@@ -170,7 +170,7 @@ bregonig.dll Ver.4.12 with Onigmo 6.1.2
 >
 > 　　　Grep<br>
 > 　　　☐Grepモードで保存確認する(V)<br>
-> 　　　☐リアルタイムで保存する(R)<br>
+> 　　　☐リアルタイムで表示する(R)<br>
 >
 > <br>
 >
