@@ -12,17 +12,18 @@ pukiwiki: "Beamer"
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
 - [http://www.ctan.org/pkg/beamer](http://www.ctan.org/pkg/beamer)
-- [Beamer 公式サイト](https://bitbucket.org/rivanvx/beamer/)
+- [https://github.com/josephwright/beamer](https://github.com/josephwright/beamer)
+- [https://bitbucket.org/rivanvx/beamer/wiki/Home](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 
 ### 目次 {#xf53b953}
 
 ### リリース情報 {#y60fd622}
 
-[Tag](https://bitbucket.org/rivanvx/beamer/downloads#tag-downloads) を参照．
+[Releases](https://github.com/josephwright/beamer/releases) を参照．
 
 ### ChangeLog {#td463767}
 
-[コミットログ](https://bitbucket.org/rivanvx/beamer/commits/) を参照．
+[コミットログ](https://github.com/josephwright/beamer/commits/master) を参照．
 
 ### 利用可能な TeX ディストリビューション {#k1d828cf}
 
@@ -40,30 +41,30 @@ Beamer は
 
 ## 不具合 {#d9dfcf20}
 
-[Issues](https://bitbucket.org/rivanvx/beamer/issues?status=new&status=open) を参照．
+[Issues](https://github.com/josephwright/beamer/issues) を参照．
 
-### Beamer 公式サイトのファイルを使用するとエラーが発生する → CTAN からダウンロードする {#i1ba3f44}
-
-- [#10 Problem with ClassRCS and PackageRCS from beamerbasercs](https://bitbucket.org/rivanvx/beamer/issue/10/problem-with-classrcs-and-packagercs-from)
-- [#36 Cannot resolve codes around RCS --- we need another software?](https://bitbucket.org/rivanvx/beamer/issue/36/cannot-resolve-codes-around-rcs-we-need)
-- [#56 Run latest beamer error in ubuntu 10.04](https://bitbucket.org/rivanvx/beamer/issue/56/run-latest-beamer-error-in-ubuntu-1004)
-- [beamer コンパイル中のエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=462)
-- [Beamer 3.10 にアップグレードした](http://d.hatena.ne.jp/triadsou/20101110/1289357503)
-- [https://bitbucket.org/rivanvx/beamer/wiki/Home#!development](https://bitbucket.org/rivanvx/beamer/wiki/Home#!development)
-
-Beamer 公式サイトからファイルをダウンロードして使用すると以下のようなエラーが発生します．
-
-```
-Runaway argument?
-Header$ \ProvidesPackage {\beamer@rcsfile }[\beamer@rcsdate \space (r\ETC.
-! File ended while scanning use of \beamer@parseid.
-<inserted text>
-                \par
-l.12 \ProvidesClassRCS
-                       $Header$
-```
-
-CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします．
+<!-- **Beamer Re­pos­i­tory のファイルを使用するとエラーが発生する → CTAN からダウンロードする [#i1ba3f44] -->
+<!--  -->
+<!-- 修正されたようです - -&gt; https://github.com/josephwright/beamer/commit/ca843ebe45f73daf88efc1f6ccd56456bdaa9067 -->
+<!--  -->
+<!-- -[[#10 Problem with ClassRCS and PackageRCS from beamerbasercs:https://github.com/josephwright/beamer/issues/10]] -->
+<!-- -[[#36 Cannot resolve codes around RCS - -- we need another software?:https://github.com/josephwright/beamer/issues/36]] -->
+<!-- -[[#56 Run latest beamer error in ubuntu 10.04:https://github.com/josephwright/beamer/issues/56]] -->
+<!-- -[[beamer コンパイル中のエラー:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=462]] -->
+<!-- -[[Beamer 3.10 にアップグレードした:http://d.hatena.ne.jp/triadsou/20101110/1289357503]] -->
+<!-- -https://bitbucket.org/rivanvx/beamer/wiki/Home#markdown-header-development -->
+<!--  -->
+<!-- Beamer Re­pos­i­tory からファイルをダウンロードして使用すると以下のようなエラーが発生します． -->
+<!--  -->
+<!-- Runaway argument? -->
+<!-- Header$ \ProvidesPackage {\beamer@rcsfile }[\beamer@rcsdate \space (r\ETC. -->
+<!-- ! File ended while scanning use of \beamer@parseid. -->
+<!-- <inserted text> -->
+<!--                 \par -->
+<!-- l.12 \ProvidesClassRCS -->
+<!--                        $Header$ -->
+<!--  -->
+<!-- CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします． -->
 
 ### dvipdfmx, XeLaTeX でナビゲーションシンボルと \framezoom が機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
 
@@ -168,14 +169,11 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 - [LaTeX + Beamer でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/18/020615)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [Beamer: dissolving animation in slide transition](https://gist.github.com/3706258)
-- [Beamer (辻研究室)](http://neurodynamics.jp/etc/beamer)
 - [Beamerで2ペインにする](http://koemu.hatenablog.jp/entry/2013/01/23/204309)
 - [Windows 7にBemerを入れた時の作業メモ](http://d.hatena.ne.jp/teramonagi/20120324/1332574760)
 - [LaTeX-Beamer - .R. Wiki](http://locs.bw.nitech.ac.jp/~kobayashi/fswiki/wiki.cgi?page=LaTeX-Beamer)
 - [Beamer, geometry package のアップデートで不具合](http://d.hatena.ne.jp/triadsou/20100303/1267607085)
 - [XeLaTeXで日本語beamer](http://d.hatena.ne.jp/tizz/20100505/)
-- [LaTeX+Beamerでtableofcontentsは決してできない](http://blomott.mobi/rubyneko/entry%2CMnZntmATC-OCUhEBedf7yQ%2C%2C%2C%2C.html)
-- [LaTeX + Beamer + Macで\tableofcontents{}ができないときの処方箋](http://blomott.mobi/rubyneko/entry%2CQNT1bI-wQBEF7V6ZF5N8sg%2C%2C%2C%2C.html)
 - [Beamerでプレゼン資料を作る](http://wiki.livedoor.jp/fuhmi/d/%CA%AA%C3%D6)
 - [A Beamer Quickstart](http://www.math.umbc.edu/~rouben/beamer/)
     <!-- -[[LaTeX Beamer 入門:http://www.ms.u-tokyo.ac.jp/~tado/beamer/]] -->
