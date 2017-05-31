@@ -142,7 +142,6 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 - [vim 快適な論文執筆環境の整備 -その3-](http://kuni255.blogspot.jp/2011/12/vim-3.html)
 - [VIMで日本語文章中の半角「,」を全角「，」に変える方法](http://ututel.blog121.fc2.com/blog-date-20130128.html)
 - [unite.vimとunite-outlineでlatexファイルの編集が楽になった](http://hinagishi.hateblo.jp/entry/2011/11/18/135701)
-- [Vimで保存時に自動的にTeXをコンパイル (適当編)](http://blomott.mobi/rubyneko/entry%2CsCKhEg6WPUiQnldaTG1j9w%2C%2C%2C%2C.html)
 - [ファイルの変更を監視してmake](http://d.hatena.ne.jp/hakobe932/20081221/1229874843)
 - [TexのMakefileとvimの設定](http://bkc.g.hatena.ne.jp/hakobe932/20081211/1228975757)
 - [Vim/TeXShop integration](http://reference-man.blogspot.com/2009/01/vimtexshop-integration.html)
