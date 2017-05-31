@@ -88,7 +88,7 @@ improve the spacing of $S$ with subscripts.
     [qa:25199](https://okumuralab.org/~okumura/texfaq/qa/25199.html)に従って txmi.tfm，txmi.vf
     を修正してみました（[txmi.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi.zip)）。
 
-- \[2001-06-13\] [TX Fonts, PX Fonts \[CPAN patch1\]](http://www.nn.iij4u.or.jp/~tutimura/tex/detail.html) Vine 2.x 用パッケージ (土村さんの rpm が更新されました)
+- \[2001-06-13\] [TX Fonts, PX Fonts \[CPAN patch1\]](http://tutimura.ath.cx/~nob/tex/detail.html) Vine 2.x 用パッケージ (土村さんの rpm が更新されました)
 - \[2001-04-16\] [作者 Young U. Ryu のコメント](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/young.txt)(comp.text.tex)
 - \[2001-03-17\] Mac のかたにご注意：
     texmf:dvips:config 中のテキストファイル（tx8r.enc，txr.map，txr1.map，txr2.map）
