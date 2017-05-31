@@ -61,7 +61,7 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
 日本では TeX, LaTeX を日本語化した
-[pTeX, pLaTeX](http://ascii.asciimw.jp/pb/ptex/)
+pTeX, pLaTeX
 が使用されています[^1]。
 現在は pTeX, pLaTeX を内部 Unicode 化した
 [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。
@@ -149,4 +149,4 @@ LaTeX の使い方を簡単に解説しています。
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 - [発展編：最近の LaTeX の動向](</LaTeX入門/発展編/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](http://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX およびこれらに基づく編集支援システム [EWB](http://ascii.asciimw.jp/ascii/EWB/) を無償配布し，自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](http://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
