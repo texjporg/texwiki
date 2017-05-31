@@ -44,7 +44,7 @@ TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式などの画像フ�
 
 <img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
 
-お好きなテキストエディタに次のように打ち込んでください（Linux でも OS X でも Microsoft Windows でも何でもかまいません）。
+お好きなテキストエディタに次のように打ち込んでください（Linux でも macOS でも Microsoft Windows でも何でもかまいません）。
 
 ```
 \documentclass{article}
@@ -83,7 +83,7 @@ InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むス�
 
 【追記】
 Illustrator CS の環境設定で「リンクされたEPSに低解像度の表示用画像（プレビュー）を使用」のチェックを外してリンク配置すれば，EPS でも問題なく文字が表示されました。
-PDF でもリンク配置なら問題ありません。OS X のプレビューを使えば PDF を範囲指定してクロップできます。
+PDF でもリンク配置なら問題ありません。macOS のプレビューを使えば PDF を範囲指定してクロップできます。
 
 <table>
 <tbody>
@@ -116,16 +116,16 @@ Illustrator から直接 PDF で保存しても大丈夫です。
 
 mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（“-Ppdf” の代わりに TeX Live なら “-Pdownload35”，W32TeX なら “-Pdl”）。
 
-## Illustrator に配置 3 (OS X) {#z9ef5010}
+## Illustrator に配置 3 (macOS) {#z9ef5010}
 
 （この項については内山さんからご教示をいただきました。）
 
-OS X でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが使えますが，一般のアプリケーションからは使えません。
-[http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/](http://ftp.botik.ru/rented/znamensk/www/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください（フォントについては両者の中身は同じようです）。
-スクリーンフォントも必要です。
+macOS でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが使えますが，一般のアプリケーションからは使えません。
+[http://www.botik.ru/~znamensk/CTAN/fonts/cm/ps-type1/bluesky/](http://www.botik.ru/~znamensk/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください（フォントについては両者の中身は同じようです）。
+スクリーンフォントも必要です（→ [MacでフォントをAdobeのアプリが認識しない](http://oversleptabit.com/?p=1319)）。
 
-インストールの場所は，Adobe 製品だけから使うなら /Library/"Application Support"/Adobe/Fonts/ 以下ですが，OS X では次の場所のいずれかに入れるのがいいかもしれません。
-OS X では次の順にフォントを探してくれます（→ 「[OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。
+インストールの場所は，Adobe 製品だけから使うなら /Library/"Application Support"/Adobe/Fonts/ 以下ですが，macOS では次の場所のいずれかに入れるのがいいかもしれません。
+macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\]OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
@@ -141,7 +141,7 @@ OS X では次の順にフォントを探してくれます（→ 「[OS Xにお
 1. /Network/Library/Fonts// 以下（Network ドメイン用）
 1. /System/Library/Fonts/ （System ドメイン用。通常はここにはさわらない）
 
-私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，その中にまとめて入れました（Mac OS X 10.2 以降で可能）。
+私は &#x7e;/Library/Fonts/ の中に一つフォルダを作って，その中にまとめて入れました（macOS 10.2 以降で可能）。
 
 ただ，Mac 版 Illustrator 10.0.3 では PDF で保存すると一部の文字が化けます。
 “\\\[ \Gamma - \gamma \\\]” で実験してみてください（“$\Gamma$” や “$-$” は化けやすいことで有名）。
@@ -178,7 +178,7 @@ Ghostscript の eps2write デバイスを使ってアウトラインを取る方
 eps2write は gs9.14 以降で追加されたデバイスなので，お使いのバージョンが gs9.14 より古い場合は以下 epswrite と読み替えてください．
 
 まず，次のように充分大きいサイズで式を作ります
-（[新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)なら
+（[jsclasses](/jsclasses/) なら
 簡単にできます）。
 文字が小さいとアウトラインではなくビットマップ化されてしまいます。
 
@@ -209,7 +209,7 @@ Microsoft Windows ならおそらく次に相当します（さらに正確に�
 できた testeq2.eps の &#x25;&#x25;BoundingBox: 行がなぜか変なので，元の testeq.eps の &#x25;&#x25;BoundingBox: 行と置き換えます。
 これで testeq2.eps はフォントを含まないアウトラインだけの EPS になり，Mac でも Windows でも Illustrator などに安全に配置できます。
 
-新ドキュメントクラスを使う方法以外に，\scalebox で数式を拡大する方法もあります。
+jsclasses を使う方法以外に，\scalebox で数式を拡大する方法もあります。
 この場合には
 次の例のように数式を $\displaystyle ...$ で書くといいでしょう。
 
