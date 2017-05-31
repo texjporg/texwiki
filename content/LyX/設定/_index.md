@@ -83,7 +83,7 @@ babel のオプションを設定する場合は以下の方法があります�
 - [LyX wiki | Layouts / CreatingLayouts](http://wiki.lyx.org/Layouts/CreatingLayouts)
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
-pdfLaTeX/XeLaTeX/LuaLaTeX/LuaJITLaTeX で新ドキュメントクラス相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
+pdfLaTeX/XeLaTeX/LuaLaTeX/LuaJITLaTeX で jsclasses 相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
 レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．<br>
 Format 番号は LyX のバージョンによって異なります．<br>
 使用している LyX のバージョンの Format 番号を確認して編集してください．<br>
