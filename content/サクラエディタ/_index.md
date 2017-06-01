@@ -144,9 +144,7 @@ bregonig.dll を
 
 bregonig.dll が有効になると，検索／置換／Grep で
 
-```
-bregonig.dll Ver.4.12 with Onigmo 6.1.2
-```
+> bregonig.dll Ver.4.12 with Onigmo 6.1.2
 
 のように表示されます．
 
