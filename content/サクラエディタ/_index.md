@@ -435,10 +435,7 @@ $ wine sakura.exe
 ## 関連リンク {#c879d1c4}
 
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
-- [Mocaのコーヒーブレイク](http://mocaskr.web.fc2.com/)
 - [サクラの小枝研](http://www.geocities.jp/moca_skr/)
-- [Mocaのブログ](http://mocaskr.blog42.fc2.com/)
-- [https://github.com/mocaskr/sakura/](https://github.com/mocaskr/sakura/)
 - [「はじめてのサクラエディタ」筆者サポートページ](http://supportdoc.net/support-sakura/)
 - [Sakura EditorでLaTeXを使う](http://physics-station.blogspot.jp/2013/04/sakura-editorlatex.html)
 - [そっとプロジェクト＠Ｗｉｋｉ - ソフトウェア/サクラエディタ](http://www19.atwiki.jp/sotto_project/pages/151.html)
