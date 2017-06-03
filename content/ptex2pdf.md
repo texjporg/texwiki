@@ -32,9 +32,10 @@ ptex2pdf <オプション> <ファイル名.tex>
 - -u  use uptex class of programs（uplatex, euptex, uptex を使用する場合に指定）
 - -l  use latex based formats（uplatex, platex を使用する場合に指定）
 - -s  stop at dvi（PDF を作成しない）
-- -i  retain intermediate files（dvi を削除しない）
+- -i  retain intermediate files（DVI を削除しない）
 - -ot '&lt;opts>' extra options for TeX（TeX コンパイラのオプション指定）
 - -od '&lt;opts>' extra options for dvipdfmx（dvipdfmx のオプション指定）
+- -output-directory '&lt;dir>' directory for created files（出力ファイルのディレクトリを指定）
 
 #### 使用例 {#practices}
 
@@ -58,9 +59,9 @@ ptex2pdf <オプション> <ファイル名.tex>
 
 ### 注意点 {#notice}
 
-#### OS X の TeXstudio で ptex2pdf が動作しない {#osx_texstudio}
+#### macOS の TeXstudio で ptex2pdf が動作しない {#osx_texstudio}
 
-OS X の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告「[(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)」があります．
+macOS の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告「[(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)」があります．
 
 原因の切分けが完全ではありませんが，以下の2ステップを行えば解決するようです．
 
@@ -77,7 +78,11 @@ OS X の [TeXstudio](/TeXstudio/) で ptex2pdf が動作しないという報告
 
 ### 不具合 {#bugs}
 
-#### Windows 環境で ptex2pdf v0.9 を使用して "予 定.tex" を処理しようとすると dvipdfmx でエラーが発生して "予 定.pdf" が作成できない {#he5f997c}
+[https://github.com/texjporg/ptex2pdf/issues](https://github.com/texjporg/ptex2pdf/issues)
+
+#### <del>Windows 環境で ptex2pdf v0.9 を使用して "予 定.tex" を処理しようとすると dvipdfmx でエラーが発生して "予 定.pdf" が作成できない</del>（バーション 20170603.0 で修正済み） {#he5f997c}
+
+- [ptex2pdf で &quot;予 定.tex&quot; が処理できない · Issue #10 · texjporg/ptex2pdf · GitHub](https://github.com/texjporg/ptex2pdf/issues/10)
 
 Windows 環境で ptex2pdf v0.9 を使用して "予 定.tex" を処理しようとすると dvipdfmx でエラーが発生して "予 定.pdf" が作成できません。
 
@@ -95,9 +100,11 @@ bname = string.gsub(bname, "^.*[/\\](.*)$", "%1")
 --bname = string.gsub(bname, "^.*[/\\](.*)$", "%1")
 ```
 
-#### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション0.6で修正済み） {#extra_spaces}
+バージョン 20170603.0 でこのバグは修正されました．
 
-バージョン0.6より前では，TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．
+#### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション 0.6 で修正済み） {#extra_spaces}
+
+バージョン 0.6 より前では，TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．
 
 ```
 $ ptex2pdf -u -l hoge.tex
@@ -115,7 +122,7 @@ $ ptex2pdf -u -l hoge.tex
 - [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
 - [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
 
-バージョン0.6でこのバグは修正されました．
+バージョン 0.6 でこのバグは修正されました．
 
 ### リンク {#links}
 
