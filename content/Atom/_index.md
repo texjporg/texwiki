@@ -46,8 +46,8 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
-- [vim-mode](https://atom.io/packages/vim-mode)
-- [emacs-plus](https://atom.io/packages/emacs-plus)
+- [vim-mode-plus](https://atom.io/packages/vim-mode-plus)
+- [atomic-emacs](https://atom.io/packages/atomic-emacs)
 - [minimap](https://atom.io/packages/minimap) -- Sublime Text みたいにミニマップを表示させる
 
 ### ターミナルエミュレータ {#v730a901}
@@ -66,28 +66,6 @@ latex もしくは latextools, language-latex, latexer, pdf-view などのパッ
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
-
-### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
-
-Windows で LaTeX package をインストールすると uplatex + dvipdfmx でタイプセットして SumatraPDF で forward and inverse search が実行できます。
-
-#### 設定 {#wa284717}
-
-Engine のリストから uplatex を選択します。
-
-Enable SyncTeX を ON にします。
-
-Output Format のリストから pdf を選択します。
-
-PDF Producer のリストから dvipdfmx を選択します。
-
-Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
-
-#### 使い方 {#f1b15dfc}
-
-Ctrl+Alt+B をタイプするとタイプセットしたあと SumatraPDF で forward search が実行されます。
-
-SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
@@ -110,6 +88,28 @@ Opener のリストから pdf-view を選択します。
 Ctrl+Alt+B をタイプするとタイプセットしたあと pdf-view で PDF が表示されます。
 
 PDF の表示画面をクリックすると TeX ファイルの該当する行にジャンプします。
+
+### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
+
+Windows で LaTeX package をインストールすると uplatex + dvipdfmx でタイプセットして SumatraPDF で forward and inverse search が実行できます。
+
+#### 設定 {#wa284717}
+
+Engine のリストから uplatex を選択します。
+
+Enable SyncTeX を ON にします。
+
+Output Format のリストから pdf を選択します。
+
+PDF Producer のリストから dvipdfmx を選択します。
+
+Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
+
+#### 使い方 {#f1b15dfc}
+
+Ctrl+Alt+B をタイプするとタイプセットしたあと SumatraPDF で forward search が実行されます。
+
+SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
 
 ### latextools (LaTeXTools for Atom) パッケージと Skim との連携 (macOS) {#i645c95d}
 
