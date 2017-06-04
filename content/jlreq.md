@@ -7,4 +7,6 @@ pukiwiki: "jlreq"
 
 # jlreq
 
+jlreq は Lua(jit)LaTeX + LuaTeX-ja, upLaTeX, pLaTeX で日本語組版処理の要件を満たす日本語ドキュメントクラス．
+
 - [https://github.com/abenori/jlreq](https://github.com/abenori/jlreq)
