@@ -59,7 +59,7 @@ TeX Live は OS ごとにインストール方法が異なります．
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は texlive.tlpdb というファイルを見ればわかります（たとえば /usr/local/texlive/2016/tlpkg/texlive.tlpdb など）．
+これらの詳細は texlive.tlpdb というファイルを見ればわかります（たとえば /usr/local/texlive/2017/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
@@ -171,112 +171,13 @@ tltexjp は TeX Live の補助リポジトリです．
 - [tlptexlive Archives - There and back again](http://www.preining.info/blog/tag/tlptexlive/)
 - [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
 
-### [Pretests](http://www.tug.org/texlive/pretest.html) <a id="pretest"></a> {#tfc3ba44}
+### [Pretests](</TeX Live/pretest/>) <a id="pretest"></a> {#tfc3ba44}
 
-TeX Live pretest はミラーサイトを利用してください．
-TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
-
-- [Testing TeX Live before release](http://www.tug.org/texlive/pretest.html)
-- [ftp://ftp.tug.org/texlive/tlpretest/](ftp://ftp.tug.org/texlive/tlpretest/)
-- [ftp://ftp.tug.org/texlive/Images/test/](ftp://ftp.tug.org/texlive/Images/test/)
-- [http://ftp.tug.org/texlive/Images/test/](http://ftp.tug.org/texlive/Images/test/)
-- [http://www.tug.org/texlive/Images/test/](http://www.tug.org/texlive/Images/test/)
-
-#### ミラーサイト {#b6196164}
-
-- [the status of texlive-pretest mirrors](http://www.tug.org/texlive/mirmon/)
-
-- Network Based Installer, MacTeX, BasicTeX
-    - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
-    - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
-    - [ftp://ftp.math.utah.edu/pub/texlive/tlpretest/](ftp://ftp.math.utah.edu/pub/texlive/tlpretest/)
-- TeX Live ISO Images
-    - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
-    - [ftp://ftp.math.utah.edu/pub/texlive/Images/test/](ftp://ftp.math.utah.edu/pub/texlive/Images/test/)
-
-### TeX Live pretest のインストール {#j4d40fa3}
-
-#### Windows {#y535f93e}
-
-install-tl.zip をダウンロードして install-tl.zip を展開します．
-Windows PowerShell またはコマンド プロンプトから
-
-```
-.\install-tl-windows.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
-```
-
-または管理者として実行した Windows PowerShell またはコマンド プロンプトから
-
-```
-.\install-tl-advanced.bat -no-gui --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
-```
-
-を実行します．
-
-#### macOS {#a9a1fd1b}
-
-mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
-
-#### Linux {#v9c33c6a}
-
-install-tl-unx.tar.gz をダウンロードします．
-
-- wget を使用する場合
-
-    ```
-    $ wget http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
-    ```
-
-- curl を使用する場合
-
-    ```
-    $ curl -O http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
-    ```
-
-install-tl-unx.tar.gz を展開します．
-
-```
-$ tar xvf install-tl-unx.tar.gz
-```
-
-展開したインストーラのディレクトリに移動します．
-
-```
-$ cd install-tl*
-```
-
-root 権限でインストーラを実行します．
-オプションでダウンロードするリポジトリを指定できます．
-
-```
-$ sudo ./install-tl --repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
-```
+[TeX Live/pretest](</TeX Live/pretest/>) を参照
 
 ### TeX Live のビルド {#build}
 
-- [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
-- [TeX Live build procedure](http://www.tug.org/texlive/build.html)
-- [The tlbuild Archives](http://tug.org/pipermail/tlbuild/)
-
-#### Windows {#mc7cf9a9}
-
-- [MSYS2#TeX Live](/MSYS2/#texlive)
-- [MinGW#TeX Live](/MinGW/#texlive)
-
-#### macOS {#m1f2034d}
-
-- [TexLive installation from sources, on Yosemite &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources/)
-
-#### Linux {#ue7a2b2a}
-
-- Momonga Linux
-    - [TeX Live 2014 - その 1](http://lugia.hatenablog.com/entry/2014/06/22/195105)
-    - [TeX Live 2014 - その 2](http://lugia.hatenablog.com/entry/2014/09/06/201158)
-
-- Beyond Linux From Scratch
-    - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/texlive.html)
-    - [BLFS での TeXLive ビルド](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=609)
+[TeX Live/build](</TeX Live/build/>) を参照
 
 ### 関連リンク {#udd48b1b}
 
