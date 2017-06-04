@@ -75,11 +75,11 @@ MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マ�
 Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
-#### TeX Distribution（システム環境設定） {#w29d901c}
-
-- [Mac TeX Toolbox](https://sourceforge.net/projects/mactextoolbox/)
-
-「システム環境設定」にインストールされます。複数の TeX システムをインストールしている場合（例えば過年度の TeX Live/MacTeX など），TeX Distribution からそれらを切り替えることができます。
+<!-- ***TeX Distribution（システム環境設定） [#w29d901c] -->
+<!--  -->
+<!-- -[[Mac TeX Toolbox:https://sourceforge.net/projects/mactextoolbox/]] -->
+<!--  -->
+<!-- 「システム環境設定」にインストールされます。複数の TeX システムをインストールしている場合（例えば過年度の TeX Live/MacTeX など），TeX Distribution からそれらを切り替えることができます。 -->
 
 ### インストール {#t244993f}
 
@@ -133,6 +133,7 @@ Homebrew で MacTeX をインストールできます。
 ```
 $ brew cask install mactex
 $ sudo tlmgr update --self --all
+$ sudo tlmgr paper a4
 ```
 
 #### インストールの事例 {#n379ea53}
