@@ -35,9 +35,9 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2016-ex.txt
-equivs-build debian-equivs-2016-ex.txt
-sudo dpkg -i texlive-local_2016-1_all.deb
+wget http://www.tug.org/texlive/files/debian-equivs-2017-ex.txt
+equivs-build debian-equivs-2017-ex.txt
+sudo dpkg -i texlive-local_2017-1_all.deb
 ```
 
 ### Fedora <a id="fedora"></a> {#cf6b23bc}
