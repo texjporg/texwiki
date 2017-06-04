@@ -15,6 +15,15 @@ pukiwiki: "Android"
 
 ## TeX Live <a id="texlive"></a> {#ec902282}
 
+### termux-texlive {#zfd543bb}
+
+- [https://github.com/termux/termux-packages/tree/master/packages/texlive](https://github.com/termux/termux-packages/tree/master/packages/texlive)
+- [https://www.euro-online.org/termux-texlive/](https://www.euro-online.org/termux-texlive/)
+
+```
+packages install texlive
+```
+
 ### TeX Live for Android/iOS {#qa1790de}
 
 - [https://github.com/clerkma/texlive-mobile](https://github.com/clerkma/texlive-mobile)
