@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 Mark A. Wicks 氏によって開発された [dvipdfm](http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 Mark A. Wicks 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu:80/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -161,6 +161,14 @@ dvipdfmx には The dvipdfmx project team によるマニュアルが存在し�
 
 - [https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf)
+
+コマンドラインから
+
+```
+texdoc dvipdfmx
+```
+
+を実行することで dvipdfmx のマニュアルを読むことができます．
 
 dvipdfm のマニュアルも参考になります．
 
