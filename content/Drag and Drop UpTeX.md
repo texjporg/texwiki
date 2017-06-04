@@ -9,10 +9,23 @@ pukiwiki: "Drag and Drop UpTeX"
 
 ## [Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small + texlive-collection-langjapanese ベースの macOS 専用 TeX ディストリビューションです[^1]。
+Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small + texlive-collection-langjapanese ベースの macOS 専用 TeX ディストリビューションです。
 OS X 10.11 El Capitan / 10.10 Yosemite 環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
-あらかじめ BasicTeX に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
+あらかじめ TeX Live scheme-small に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
+
+### History {#a33a457a}
+
+Drag &amp; Drop UpTeX は，20160907 版以降は BasicTeX を使わず，「TeX Live 2016 scheme-small + collection-langjapanese」を収録しています ([forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)) 。
+
+Drag &amp; Drop UpTeX は，20160614 版までは「BasicTeX + collection-langjapanese」を収録していました。
+
+Drag &amp; Drop UpTeX は，2015年9月10日の UTeX20150910.dmg からは TeX Live ベースになりました。
+
+Drag &amp; Drop UpTeX は，2011年公開の UTeX20111010.dmg までは teTeX-3.0 / ptetex3 ベースでした。
+
+<!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， -->
+<!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
 
 ### Drag &amp; Drop UpTeX のインストールと設定 {#e30d8e71}
 
@@ -55,5 +68,3 @@ texlive フォルダごと削除してしまってもかまいません。
 
 これは BasicTeX + collection-langjapanese と状況はほぼ同じです。
 [BasicTeX + collection-langjapanese で LuaTeX-ja を使う](/BasicTeX/#f2230bb1) を参照してください。
-
-[^1]: 2011年公開の UTeX20111010.dmg までは teTeX-3.0 / ptetex3 ベースでしたが，2015年9月10日の UTeX20150910.dmg からは TeX Live ベースになりました。
