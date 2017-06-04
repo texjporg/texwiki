@@ -457,7 +457,7 @@ TeX Live と W32TeX には OTF パッケージで使用する map ファイル�
 
 ### TeX Live の場合 {#p1b2eb36}
 
-TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
+TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/)が準備されています。 (→ [updmap and kanji - TeX Live - TeX Users Group](http://tug.org/texlive/updmap-kanji.html) を参照。)
 埋め込み制御は
 
 ```
@@ -697,12 +697,12 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- 次のような内容を直接追記しても良いでしょう。） -->
 
 - [https://github.com/texjporg/jfontmaps](https://github.com/texjporg/jfontmaps)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/)
 
 #### フォントを埋め込まない場合 {#t1a90b4f}
 
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/noEmbed/](https://github.com/texjporg/jfontmaps/tree/master/maps/noEmbed/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/noEmbed/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/noEmbed/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/noEmbed/)
 
 - TeX Live の場合
 
@@ -719,7 +719,7 @@ ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
 #### IPAexフォントを使う場合 {#xcbe9625}
 
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/ipaex/](https://github.com/texjporg/jfontmaps/tree/master/maps/ipaex/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ipaex/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ipaex/)
 
 - TeX Live の場合
 
@@ -739,8 +739,8 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/yu-win10/](https://github.com/texjporg/jfontmaps/tree/master/maps/yu-win10/)
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/yu-osx/](https://github.com/texjporg/jfontmaps/tree/master/maps/yu-osx/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-win10/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/yu-osx/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/yu-win10/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/yu-win10/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/yu-osx/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/yu-osx/)
 
 - TeX Live の場合
 
@@ -766,7 +766,7 @@ ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
 #### MSフォントを使う場合 {#g54b5df7}
 
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/ms/](https://github.com/texjporg/jfontmaps/tree/master/maps/ms/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ms/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ms/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ms/)
 
 - TeX Live の場合
 
@@ -828,8 +828,8 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/)
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/hiragino-elcapitan-pron/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan-pron/)
 
 - TeX Live の場合
 
@@ -851,10 +851,10 @@ ptex2pdf -u -l -od "-f hiraginopron04.map" hoge.tex
 <!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka/ -->
 <!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6/ -->
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6n/](https://github.com/texjporg/jfontmaps/tree/master/maps/kozuka-pr6n/)
-    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka/ -->
-    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6/ -->
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/kozuka/ -->
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/kozuka-pr6/ -->
 
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/kozuka-pr6n/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/kozuka-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/kozuka-pr6n/)
 
 - TeX Live の場合
 
@@ -874,9 +874,9 @@ Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に K
 
 <!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa/ -->
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/](https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/)
-    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa/ -->
+    <!-- -http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/morisawa/ -->
 
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/jfontmaps/morisawa-pr6n/)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/morisawa-pr6n/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/morisawa-pr6n/)
 
 - TeX Live の場合
 
@@ -1043,7 +1043,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 - [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
 - [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
-- [http://www.ctan.org/pkg/jfontmaps](http://www.ctan.org/pkg/jfontmaps)
+- [http://www.ctan.org/pkg/ptex-fontmaps](http://www.ctan.org/pkg/ptex-fontmaps)
 - [upLaTeX + \propshape](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1235)
 - [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
