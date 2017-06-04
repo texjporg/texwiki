@@ -20,7 +20,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 
 ### 特徴 {#ia9746cb}
 
-元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf) では次が挙げられています．
+元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4 \[Internet Archive\]](https://web.archive.org/web/20160804001157/http://gaspra.kettering.edu:80/dvipdfm/dvipdfm-0.12.4.pdf) では次が挙げられています．
 
 - アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller DC の pdfmark に対応した多くの機能を提供します．
 - [HyperTeX](/HyperTeX/) (HTML)，[TPIC](/pic/)，カラー，PSFile，その他 [PostScript](/PostScript/) special など "標準的な" DVI special 機能を提供します．
@@ -71,18 +71,18 @@ foo.dvi -> foo.pdf
 ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります．
 
 なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．
-特に最近の Windows 10 や Mac (OS X) では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
+特に Windows 10 や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
 フォントは PDF へ埋め込むことを基本としてください．
 非埋め込みで PDF を作成することは推奨されません．
 
-例えば，TeXLive/Windows 10 で標準搭載の游明朝・游ゴシックを埋め込むように設定するには Windows PowerShell またはコマンド プロンプトで（[tlmgr](/tlmgr/) で jfontmaps パッケージをインストールしておきます）
+例えば，TeXLive/Windows 10 で標準搭載の游明朝・游ゴシックを埋め込むように設定するには Windows PowerShell またはコマンド プロンプトで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
 
 ```
  kanji-config-updmap yu-win10
 ```
 
 とします．
-Mac OS X ではヒラギノを使うとよいかもしれません（設定については [TeX Live/Mac](</TeX Live/Mac/>) を参照してください）．
+macOS ではヒラギノを使うとよいかもしれません（設定については [TeX Live/Mac](</TeX Live/Mac/>) を参照してください）．
 
 ### コマンドラインオプション {#tc481bdb}
 
@@ -157,9 +157,14 @@ Mac OS X ではヒラギノを使うとよいかもしれません（設定に�
 
 ### マニュアル {#da69bb5d}
 
-dvipdfmx には公式のマニュアルは存在しないようです．代わりに dvipdfm のマニュアルが参考になります．
+dvipdfmx には The dvipdfmx project team によるマニュアルが存在します．
 
-- [Dvipdfm User's Manual](http://gaspra.kettering.edu/dvipdfm/dvipdfm-0.12.4.pdf)
+- [https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf)
+
+dvipdfm のマニュアルも参考になります．
+
+- [Dvipdfm User's Manual \[Internet Archive\]](https://web.archive.org/web/20160804001157/http://gaspra.kettering.edu:80/dvipdfm/dvipdfm-0.12.4.pdf)
 
 ### フォントの設定 {#tbddb566}
 
