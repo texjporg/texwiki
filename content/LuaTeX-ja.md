@@ -64,20 +64,11 @@ C:.
 #### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
 
 Debian や Ubuntu のリポジトリから、LuaTeX-ja をインストールするには、
-TeX Live 2014/Debian 以降の場合は texlive-lang-japanese パッケージ
-TeX Live 2013/Debian の場合は texlive-lang-cjk パッケージをインストールします。
+texlive-lang-japanese パッケージをインストールします。
 ただし、必ずしも最新版ではなくタイムラグがあることに注意。
-
-TeX Live 2014/Debian 以降の場合は
 
 ```
 $ sudo apt install texlive-lang-japanese
-```
-
-TeX Live 2013/Debian の場合は
-
-```
-$ sudo apt install texlive-lang-cjk
 ```
 
 #### MacPortsを利用してインストールする場合 {#k02c7aab}
@@ -202,10 +193,10 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 - CR (\000\015)
 - CRLF (\000\015\000\012)
 
-ドライバを指定しないとうまく動作しない場合は pdftex を指定します．
+ドライバを指定しないとうまく動作しない場合は luatex を指定します．
 
 ```
-\usepackage[pdftex,pdfencoding=auto]{hyperref}
+\usepackage[luatex,pdfencoding=auto]{hyperref}
 ```
 
 #### [Babel](/Babel/) {#v6636cbc}
