@@ -135,14 +135,8 @@ CTAN 以外にもたくさんのフリーウェアをミラーしています．
 - [日本語ディレクトリ](http://mirror.ctan.org/language/japanese/)
     - [ASCII pTeX](http://mirror.ctan.org/language/japanese/ptex/)
     - [ASCII pTeXマクロ類](http://mirror.ctan.org/language/japanese/ptex-texmf/)
-    - [Babel用japaneseパッケージ](http://mirror.ctan.org/language/japanese/japanese/)
     - [japanese-otfパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf/)
     - [japanese-otf-uptexパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf-uptex/)
-    - [jfontmaps](http://mirror.ctan.org/language/japanese/jfontmaps/)
-
-- [dviwareディレクトリ](http://mirror.ctan.org/dviware/)
-    - [dvipdfmx](http://mirror.ctan.org/dviware/dvipdfmx/)
-    - [dvips](http://mirror.ctan.org/dviware/dvips/)
 
 ### 関連リンク {#wc81d3dd}
 
