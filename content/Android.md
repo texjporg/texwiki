@@ -15,6 +15,12 @@ pukiwiki: "Android"
 
 ## TeX Live <a id="texlive"></a> {#ec902282}
 
+### TeX Live for Android/iOS {#qa1790de}
+
+- [https://github.com/clerkma/texlive-mobile](https://github.com/clerkma/texlive-mobile)
+- [TeX Live Mobile今日更新](https://zhuanlan.zhihu.com/p/21959676)
+- [TeX Live Mobile&#24320;始build](https://zhuanlan.zhihu.com/p/21942557)
+
 ### TeX Live for Android {#p2cbca91}
 
 - [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
@@ -99,10 +105,8 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
-- [Junco](https://github.com/clerkma/Junco)
-- [Vim Touch](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch)
-    - [https://github.com/momodalo/vimtouch](https://github.com/momodalo/vimtouch)
-    - [http://twilog.org/ti5942/search?word=VimTouch](http://twilog.org/ti5942/search?word=VimTouch)
+- [DroidVim](https://play.google.com/store/apps/details?id=com.droidvim)
+    - [https://github.com/shiftrot/droidvim](https://github.com/shiftrot/droidvim)
     - [Vim - TeX Wiki](/Vim/)
 
 ## PDF ビューア {#t5fdeba9}
@@ -112,8 +116,8 @@ dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行を
     <!-- - --[[PDFView:https://play.google.com/store/apps/details?id=com.acadoid.pdfview]] -->
     <!-- - --[[APV PDF Viewer:https://play.google.com/store/apps/details?id=cx.hell.android.pdfview]] -->
 
-- [Foxit Mobile PDF](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
-- [Adobe Acrobat DC – PDF Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
+- [Foxit PDF Reader &amp; Editor](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
+- [Adobe Acrobat Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
 
 ## BibTeX 関連 {#m2bc1f0c}
 
