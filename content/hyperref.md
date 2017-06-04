@@ -15,7 +15,9 @@ pukiwiki: "hyperref"
 
 ### 更新履歴 {#e8ca0037}
 
-- [http://www.tug.org/applications/hyperref/ftp/ChangeLog](http://www.tug.org/applications/hyperref/ftp/ChangeLog)
+- [https://github.com/ho-tex/hyperref/commits/master](https://github.com/ho-tex/hyperref/commits/master)
+- [https://github.com/ho-tex/hyperref/blob/master/ChangeLog.xml](https://github.com/ho-tex/hyperref/blob/master/ChangeLog.xml)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/hyperref/ChangeLog?&view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/hyperref/ChangeLog?&view=markup)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/hyperref/?view=log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/hyperref/?view=log)
 
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
@@ -241,7 +243,7 @@ unicode=true
 lualatex の場合はドライバは自動検出されます．指定しないとうまく動作しない場合は以下のように指定します．
 
 ```
-\usepackage[pdftex,pdfencoding=auto]{hyperref}
+\usepackage[luatex,pdfencoding=auto]{hyperref}
 ```
 
 xelatex の場合は、指定しても指定しなくても文字化けしないしおりになります。
