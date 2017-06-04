@@ -143,7 +143,7 @@ $ kpsewhich ipaexm.ttf ipaexg.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
 /usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
 $ kpsewhich uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/jfontmaps/ipaex/uptex-ipaex.map
+/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ipaex/uptex-ipaex.map
 ```
 
 #### タイプセットのしかた {#dab5905e}
