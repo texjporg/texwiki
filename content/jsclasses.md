@@ -58,14 +58,21 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
 
 ### 関連リンク {#h5eda15f}
 
-- [pLaTeX2e 新ドキュメントクラス (CTAN)](http://www.ctan.org/pkg/jsclasses)
+#### 開発版リポジトリ {#tb311a71}
+
+- [https://github.com/texjporg/jsclasses](https://github.com/texjporg/jsclasses)
 
 #### ChangeLog {#v6b070f7}
 
-- [http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new)
+- [https://github.com/texjporg/jsclasses/commits/master](https://github.com/texjporg/jsclasses/commits/master)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/jsclasses](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/jsclasses/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/jsclasses/?view=log)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/source/platex/jsclasses](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/jsclasses/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/jsclasses/?view=log)
+- [http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new)
+
+#### CTAN 配布サイト {#q7ee37eb}
+
+- [http://www.ctan.org/pkg/jsclasses](http://www.ctan.org/pkg/jsclasses)
 
 [^1]: 環境によっては texhash コマンドかもしれません．
