@@ -80,8 +80,8 @@ Vim は，チャリティウェアです．<br>
 
 #### Android {#o2329571}
 
-- [VimTouch](https://github.com/momodalo/vimtouch)
-    - [Vim Touch - Google Play](https://play.google.com/store/apps/details?id=net.momodalo.app.vimtouch&hl=ja)
+- [DroidVim](https://github.com/shiftrot/droidvim)
+    - [DroidVim - Google Play](https://play.google.com/store/apps/details?id=com.droidvim&hl=ja)
 
 #### Web {#s4320361}
 
