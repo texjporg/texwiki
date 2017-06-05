@@ -15,7 +15,6 @@ pukiwiki: "TeXstudio/設定/Linux"
 
 ### コマンド {#fdb50ca9}
 
-- 組み込みPDFビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．
 - コマンドの LaTeX に設定されている latex を uplatex に変更して -src を -synctex=1 に変更します．
 - コマンドの DviPdf に設定されている dvipdfm を dvipdfmx に変更します．
 - コマンドの BibTeX に設定されている bibtex を upbibtex に変更します．
