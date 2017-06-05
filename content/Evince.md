@@ -22,7 +22,7 @@ Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・
 
 ### 動作環境 {#q9c64542}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### ライセンス {#lf30b1e1}
 
@@ -37,9 +37,10 @@ Windows, OS X, Linux
 - [https://git.gnome.org/browse/evince/](https://git.gnome.org/browse/evince/)
     - [log](https://git.gnome.org/browse/evince/log/)
 
-### Fork {#z48adc83}
+### Forks {#z48adc83}
 
 - [Atril](https://github.com/mate-desktop/atril)
+- [Xreader](https://github.com/linuxmint/xreader)
 
 ## ダウンロード/インストール {#j395f01d}
 
@@ -50,7 +51,7 @@ Windows, OS X, Linux
 公式サイトの Windows 版の Evince 2.32.0.145 で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))
 libpoppler の DLL を fontconfig を使用した版に差し替えると豆腐化を解消できるそうです。(→[Windows 版 Evince，libpoppler の dll を fontconfig を使用した版に差し替えたら豆腐化を解消できた](https://twitter.com/TeeEfuShi/status/716176921399205888))
 
-Windows 版 Evince は MSYS2 の pacman でインストールすることもできます．MSYS2 からインストールした場合はフォントを埋め込まなくても日本語を表示することができます．
+公式サイトより新しいバージョンの Windows 版 Evince は MSYS2 の pacman でインストールできます．MSYS2 からインストールした場合はフォントを埋め込まなくても日本語を表示することができます．
 
 64-bit Evince の場合は
 
@@ -64,9 +65,9 @@ pacman -S mingw-w64-x86_64-evince mingw-w64-x86_64-gstreamer mingw-w64-x86_64-gs
 pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plugins-base
 ```
 
-### OS X {#y8d21820}
+### macOS {#y8d21820}
 
-- [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/evince.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/evince.rb)
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
 - [https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile](https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
 
 ### Arch Linux {#eb51c4f9}
@@ -83,7 +84,7 @@ sudo pacman -S evince poppler-data
 - [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
-Evince は Gnome の標準ドキュメントビューアなので、最初からインストールされていることがケースがほとんどでしょう。手動でインストールするには次のようにします。
+Evince は Gnome の標準ドキュメントビューアなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
 
 ```
 sudo apt install evince
@@ -119,7 +120,7 @@ sudo zypper install evince
 - [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
 - [http://lfsbookja.osdn.jp/BLFS/svn.ja/gnome/evince.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/gnome/evince.html)
 
-## 代替フォントの設定 <a id="substitute"></a> {#id0a7178}
+## 代替フォントの設定 <a id="fallback"></a> {#id0a7178}
 
 フォントが埋め込まれていない場合に Ryumin-Light (明朝体) がゴシック体で表示されてしまう場合は &#x7e;/.config/fontconfig/fonts.conf を作成して代替フォントの設定をします．
 以下の設定では TeX Live に含まれている IPAexMincho, IPAexGothic で表示するようにしています．
