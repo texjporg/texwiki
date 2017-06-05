@@ -25,7 +25,7 @@ Windows, Linux
 
 ### License {#bd454552}
 
-[GPLv2](https://quickgit.kde.org/?p=kile.git&a=blob&f=COPYING)
+[GPLv2](https://cgit.kde.org/kile.git/tree/COPYING)
 
 ### リリース情報 {#qfb7e12c}
 
@@ -33,8 +33,8 @@ Windows, Linux
 
 ### ChangeLog {#k30d45b0}
 
-- [KDE QuickGit :: kile.git/summary](https://quickgit.kde.org/?p=kile.git)
-    - [https://quickgit.kde.org/?p=kile.git&a=shortlog](https://quickgit.kde.org/?p=kile.git&a=shortlog)
+- [https://cgit.kde.org/kile.git/](https://cgit.kde.org/kile.git/)
+    - [https://cgit.kde.org/kile.git/log/](https://cgit.kde.org/kile.git/log/)
 
 ## 設定 {#g12179be}
 
