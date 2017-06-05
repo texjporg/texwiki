@@ -14,6 +14,8 @@ Texmaker は，統合環境として使える LaTeX エディタです．
 SyncTeX もサポートされています．
 Texmaker のデフォルトの文字コードは UTF-8 です．
 
+現在は Texmaker をベースに機能追加・不具合修正された [TeXstudio](/TeXstudio/) が使用できます．
+
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
     - [User manual](http://www.xm1math.net/texmaker/doc.html)
 - [Texmaker Project on Google Code Archive](https://code.google.com/archive/p/texmaker/)
