@@ -541,7 +541,7 @@ Command + 2 でタグ行を挿入できます。
 
 ### cocoAspell の利用 {#s065005c}
 
-\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。
+\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。cocoAspell は MacTeX-2017 にも収録されています。
 
 インストール手順は以下の通り：
 
