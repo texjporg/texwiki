@@ -235,7 +235,7 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 
 ### Linux の TeXstudio の場合 {#s6cbe6f1}
 
-[代替フォントの設定](/Evince/#substitute)を参照して代替フォントの設定をします．
+[代替フォントの設定](/Evince/#fallback)を参照して代替フォントの設定をします．
 
 ## 関連リンク {#b0ba1b9b}
 
