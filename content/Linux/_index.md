@@ -194,10 +194,11 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
         - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
+    - [Atom](/Atom/)
+    - [Visual Studio Code](</Visual Studio Code/>)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [gedit](/gedit/)
-    - [Atom](/Atom/)
     - [Geany](/Geany/)
 
 ## PDF ファイルビューア {#pdfviewer}
@@ -231,7 +232,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://www.jabref.org/)
-- [QRef](http://members3.jcom.home.ne.jp/qref/)
+- [QRef](http://hp.vector.co.jp/authors/VA011272/)
 
 このほかにも
 
