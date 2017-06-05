@@ -127,7 +127,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 ### スペルチェッカー {#spell}
 
-- [cocoAspell](http://cocoaspell.leuski.net/)
+- [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
 - [Excalibur](http://excalibur.sourceforge.net/)
 
 このほかにも
