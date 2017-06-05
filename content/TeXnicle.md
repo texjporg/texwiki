@@ -57,31 +57,25 @@ MacTeX がインストールされていることを前提としています．<
 
 1. 「Preferences」-「Typesetting」の項で Engines タブを選択し、表中の latex を選択して Duplicate します．
 1. コピーした engine ファイル ([latex.engine](https://github.com/martinhewitson/TeXnicle/blob/master/TeXnicle/Engine/EngineScripts/latex.engine)) を選択し、Edit します．
-1. 24行目の ENGINE の行を以下のように修正します．
+1. 28行目の ENGINE の行を以下のように修正します．
 
     ```
-    ENGINE=/Library/TeX/texbin/uplatex
+    ENGINE=$TEXLOC/uplatex
     ```
 
-1. 25行目の BIBTEX の行を以下のように修正します．
+1. 29行目の DVIPS の行を以下のように修正します．
 
     ```
-    BIBTEX=/Library/TeX/texbin/upbibtex
+    DVIPDFMX=$TEXLOC/dvipdfmx
     ```
 
-1. 26行目の DVIPS の行を以下のように修正します．
-
-    ```
-    DVIPDFMX=/Library/TeX/texbin/dvipdfmx
-    ```
-
-1. 27行目の PS2PDF の行は不要なのでコメントアウトします．その他、ps2pdf に係わる行を好みに応じてコメントアウトしておきます．
+1. 30行目の PS2PDF の行は不要なのでコメントアウトします．その他、ps2pdf に係わる行を好みに応じてコメントアウトしておきます．
 
     ```
     #PS2PDF=/usr/local/bin/ps2pdf
     ```
 
-1. 71行目〜の dvips を使用する設定を dvipdfmx を使用するように設定し直します．
+1. 76行目〜の dvips を使用する設定を dvipdfmx を使用するように設定し直します．
 
     ```
     # Run dvipdfmx
@@ -89,7 +83,7 @@ MacTeX がインストールされていることを前提としています．<
     $DVIPDFMX "$mainfile"
     ```
 
-1. 完了表示を以下のように修正します．
+1. 92行目の完了表示を以下のように修正します．
 
     ```
     echo "*** uplatex.engine has completed."
