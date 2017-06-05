@@ -50,7 +50,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - 文献管理ソフトです。
 
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
-    - TeX に対応したスペルチェッカー。macOS Sierra / OS X El Capitan で動作する。
+    - TeX に対応したスペルチェッカー。macOS Sierra / OS X El Capitan で動作します。
 
 - [Excalibur](http://excalibur.sourceforge.net/)
     - TeX に対応したスペルチェッカー。
@@ -147,7 +147,7 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
-- [2016年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2016/)
+- [2017年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2017/)
 - \[[El Capitan\] MacTeX-2016をインストールする](http://qiita.com/Aruneko/items/6a524896df0e90181044)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
