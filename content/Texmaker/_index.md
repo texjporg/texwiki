@@ -290,7 +290,7 @@ Texmaker に含まれている fontconfig の設定では Ryumin-Light (明朝�
 
 ### Linux の Texmaker の場合 {#o71b53f0}
 
-[代替フォントの設定](/Evince/#substitute) を参照して代替フォントの設定をします．
+[代替フォントの設定](/Evince/#fallback) を参照して代替フォントの設定をします．
 
 ## 設定 {#e3cd1932}
 
