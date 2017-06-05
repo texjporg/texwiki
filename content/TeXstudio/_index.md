@@ -10,7 +10,7 @@ pukiwiki: "TeXstudio"
 
 ## [TeXstudio](http://www.texstudio.org/) {#wc9679cf}
 
-TeXstudio は [Texmaker](/Texmaker/) から派生[^1]した LaTeX 統合環境です．
+TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具合修正した LaTeX 統合環境です．
 
 - エディタ部分は [QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．
 - PDF ビューアには [TeXworks](/TeXworks/) の PDF ビューアを使用しています．
@@ -33,25 +33,29 @@ Windows, macOS, Linux
 
 ### License {#od98a625}
 
-[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)（QCodeEdit は [GPLv3](http://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
+[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)（QCodeEdit は [GPLv3](https://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
 
 ### ダウンロード/インストール {#f36a3b67}
 
-次のサイトからダウンロードします．
+TeXstudio 公式サイトの Download ページ
 
-- [http://www.texstudio.org/#download](http://www.texstudio.org/#download)
+> [http://www.texstudio.org/#download](http://www.texstudio.org/#download)
+
+または JAIST ミラー
+
+> [http://jaist.dl.sourceforge.net/project/texstudio/texstudio/](http://jaist.dl.sourceforge.net/project/texstudio/texstudio/)
+
+からダウンロードできます．
 
 #### Windows {#ca4cc4c7}
 
 Windows 用のインストーラをダウンロードして実行します．
 
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象が発生することがあります（[不具合情報](#ped67bdd)を参照）．
-
 #### macOS {#d9a96322}
 
 macOS 用の zip アーカイブをダウンロードして展開します．
 
-Homebrew や MacPorts からもインストールできます．
+Homebrew でインストールすることもできます．
 
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb)
 
@@ -59,11 +63,7 @@ Homebrew や MacPorts からもインストールできます．
 $ brew cask install texstudio
 ```
 
-もしくは
-
-```
-$ sudo port install texstudio
-```
+macOS の TeXstudio には [macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない](/TeXstudio/#ffe2f4b8) 不具合が存在します。
 
 #### Linux {#v5002500}
 
@@ -105,17 +105,6 @@ export PATH=$PATH:/Library/TeX/texbin
 
 - [TeXstudio - A LaTeX Editor / Bugs](https://sourceforge.net/p/texstudio/bugs/)
 
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
-
-% これもバグ報告しています？
-
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
-「高度なオプションの表示」を ON にして「詳細なエディタ設定」から「ハック/回避策」の「最適なディスプレイオプションの自動選択」を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
-
-なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．
-
-- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
-
 ### macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
 
 macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
@@ -130,7 +119,18 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 - [Macで円記号の代わりにバックスラッシュをデフォルトにする](http://hajimesakurai.hatenablog.com/entry/2015/08/26/222753)
 - [TeXStudio on Macでコマンド補完が使えない](http://qiita.com/o_nishy/items/e674b6e219e3d3bd7381)
 
-### TeXstudio 2.10.8 で Latexmk のコマンド設定を自由に指定することができない {#ud04434b}
+### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
+
+% これもバグ報告しています？
+
+Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
+「高度なオプションの表示」を ON にして「詳細なエディタ設定」から「ハック/回避策」の「最適なディスプレイオプションの自動選択」を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
+
+なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．
+
+- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
+
+### <del>TeXstudio 2.10.8 で Latexmk のコマンド設定を自由に指定することができない</del> &lt;-- TeXstudio 2.11.0 で修正済み {#ud04434b}
 
 TeXstudio 2.10.8 の Latexmk のコマンド設定はリストから選択する方式になっており自分で設定した Latexmk を自由に指定して使用することができません．
 TeXstudio 2.10.8 で Latexmk を実行して PDF ファイルを表示する場合は Latexmk のコマンド設定を PdfLaTeX に設定して
