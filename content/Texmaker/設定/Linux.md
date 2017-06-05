@@ -20,7 +20,6 @@ pukiwiki: "Texmaker/設定/Linux"
 \[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
 
 PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-組み込みビューアで和文フォントを埋め込んでいない PDF ファイルを表示したい場合は [代替フォントの設定](/Evince/#substitute) や [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)を参照してください．<br>
 コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
 コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．<br>
