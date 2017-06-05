@@ -41,7 +41,7 @@ MacTeX は TeX Live の scheme-full に対応していますので，TeX Live �
 #### GUI-Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-README-ja.pdf（日本語を扱うための初期設定手順の解説），READ ME FIRST.pdf，What Is Installed.pdf，Eps-Tiff-Conversion.pdf，Ghostscript.pdf の書類もインストールされます。
+README-ja.pdf（日本語を扱うための初期設定手順の解説），READ ME FIRST.pdf，What Is Installed.pdf，Eps-Tiff-Conversion-2017.pdf，Ghostscript.pdf の書類もインストールされます。
 
 GUI Applications には以下のアプリケーションが収録されています。
 アプリケーションフォルダの中の TeX フォルダに収められています。
@@ -49,24 +49,27 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [BibDesk](http://bibdesk.sourceforge.net/)
     - 文献管理ソフトです。
 
+- [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
+    - TeX に対応したスペルチェッカー。macOS Sierra / OS X El Capitan で動作する。
+
 - [Excalibur](http://excalibur.sourceforge.net/)
     - TeX に対応したスペルチェッカー。
 
 - [LaTeXiT](/LaTeXiT/)
     - 単独の数式を作成して他のアプリケーションにコピペするのに便利なソフトウェア。
 
-- [FixLink](http://pages.uoregon.edu/koch/)
-    - システムにインストールされている過去のバージョンの MacTeX を OS X El Capitan で動作するように新しいシンボリックリンクを作成するインストールパッケージ。
-
 - [TeX Live Utility](</TeX Live Utility/>)
     - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
-    - （2016より）過年度の MacTeX がインストールされている場合，メニューの「設定 - 頒布版の再設定」から使用する TeX システムを切り替えることができます。
+    - 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます。
 
 - [TeXShop](/TeXShop/)
     - macOS 専用の TeX 統合環境。
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
+
+- [FixLink](http://pages.uoregon.edu/koch/)
+    - システムにインストールされている過去のバージョンの MacTeX を OS X El Capitan で動作するように新しいシンボリックリンクを作成するインストールパッケージ。
 
 #### Ghostscript-9.21 {#n1354f54}
 
