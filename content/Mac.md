@@ -23,7 +23,7 @@ macOS (Mac) に TeX をインストールして使えるようになるまでの
 ## TeX ディストリビューション {#distribution}
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
-macOS 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です[^1]。
+macOS 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です。
 [MacTeX](/MacTeX/) や [BasicTeX](/BasicTeX/) というディストリビューションも，この TeX Live をベースとしたものです。
 奥村先生の[［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)には TeX Live 2016 が収録されています。
 
@@ -87,11 +87,12 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
         - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
-    - [gedit](/gedit/)
     - [Atom](/Atom/)
-    - [Geany](/Geany/)
+    - [Visual Studio Code](</Visual Studio Code/>)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
+    - [gedit](/gedit/)
+    - [Geany](/Geany/)
     - [CotEditor](/CotEditor/)
 
 ## PDF ファイルビューア {#pdfviewer}
@@ -116,7 +117,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://www.jabref.org/)
-- [QRef](http://members3.jcom.home.ne.jp/qref/)
+- [QRef](http://hp.vector.co.jp/authors/VA011272/)
 - [BibDesk](http://bibdesk.sourceforge.net/)
 
 このほかにも
@@ -141,12 +142,37 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 macOS で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
 いくつかの対処法を紹介します。
 
+- [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](http://www.softantenna.com/wp/mac/input-backslash-on-osx/)
 - [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](http://d.hatena.ne.jp/zariganitosh/20101026/text_key_binding)
 - [Macにおけるバックスラッシュ（\）の入力方法](http://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
 - [【Yosemite】U.S.キーでバックスラッシュの入力が円記号になってしまう時の対処法](http://ringo-with.com/archives/2668)
 - 参考：[(1)](https://twitter.com/doraTeX/status/630575968025849856), [(2)](https://twitter.com/doraTeX/status/630576724271435776)
 
-### Karabiner によるキーバインドの変更 {#c25b5c16}
+### &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更 {#defaultkeybinding-dict}
+
+&#x7e;/Library/KeyBindings/DefaultKeyBinding.dict
+に次の4行を記したファイルを配置し，再ログインすれば \ と ¥ が逆転します。すなわち，¥ キーで \ が，Option+¥ で ¥ が入力されるようになります。
+
+```
+{
+  "¥" = ("insertText:", "\\");
+  "~\\" = ("insertText:", "¥");
+}
+```
+
+なお，デフォルトでは
+
+> &#x7e;/Library/KeyBindings
+
+というディレクトリは存在しませんので，次のようにして作成してください。
+
+1. オプションキーを押しながら Finder の「移動」をクリックする。
+1. 「ライブラリ」をクリックすると，~/Library が開かれる。
+1. Finder で新規フォルダを作成し，KeyBindings と名付ける。
+1. その中に DefaultKeyBinding.dict という名前のテキストファイルを作成し，上記内容を記載する。
+1. 一旦ログアウトして，再ログインすると，\ と ¥ の入れ替えが有効になる。
+
+### Karabiner によるキーバインドの変更 {#karabiner}
 
 macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
 
@@ -162,42 +188,17 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 > [![](/attach/Mac/Kotoeri-bs.png)](/attach/Mac/Kotoeri-bs.png)
 
-### Google 日本語入力によるキーバインドの変更 {#xb16c060}
+### Google 日本語入力によるキーバインドの変更 {#googleime}
 
 こちらも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定が可能です。
 
 > [![](/attach/Mac/Google-bs.png)](/attach/Mac/Google-bs.png)
 
-### ATOK を利用している場合 {#s23c1714}
+### ATOK を利用している場合 {#atok}
 
-日本語入力に ATOK を利用している場合は，最新 2015 でも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定画面がありません。
+日本語入力に ATOK を利用している場合は，ATOK 2015 for Mac でも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定画面がありません。
 
-```
-~/Library/KeyBindings/DefaultKeyBinding.dict
-```
-
-に次の4行を記したファイルを配置し，再ログインすれば \ と ¥ が逆転します。すなわち，¥ キーで \ が，Option+¥ で ¥ が入力されるようになります。
-
-```
-{
-  "¥" = ("insertText:", "\\");
-  "~\\" = ("insertText:", "¥");
-}
-```
-
-なお，デフォルトでは
-
-```
-~/Library/KeyBindings
-```
-
-というディレクトリは存在しませんので，次のようにして作成してください。
-
-1. オプションキーを押しながら Finder の「移動」をクリックする。
-1. 「ライブラリ」をクリックすると，~/Library が開かれる。
-1. Finder で新規フォルダを作成し，KeyBindings と名付ける。
-1. その中に DefaultKeyBinding.dict という名前のテキストファイルを作成し，上記内容を記載する。
-1. 一旦ログアウトして，再ログインすると，\ と ¥ の入れ替えが有効になる。
+[&#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更](/Mac/#defaultkeybinding-dict) を参照して設定します。
 
 ### 統合環境による対症療法 {#k7ca107f}
 
@@ -208,10 +209,7 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ## 関連リンク {#links}
 
-- [Newest &#39;osx&#39; Questions - TeX - LaTeX Stack Exchange](http://tex.stackexchange.com/questions/tagged/osx)
-- [The MacOSX-TeX Archives](http://email.esm.psu.edu/pipermail/macosx-tex/)
+- [Newest &#39;mac&#39; Questions - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/tagged/mac)
+- [The MacOSX-TeX Archives](https://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
 - MacWiki:リスト/TeX
-- [BlueSkyTex](http://blueskytex.com/)
-
-[^1]: 2011年頃までは [小川版 Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) という teTeX-3.0 ベース（TeX Live ベースではありません）のパッケージがよく用いられていましたが，teTeX/pteTeX の開発終了に伴い現在は TeX Live が主流です。なお，UpTeX.app は TeX Live のサブセットである BasicTeX をベースとして，2015年9月10日より開発再開しています。
