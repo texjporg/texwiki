@@ -73,7 +73,7 @@ GSview は [CTAN](/CTAN/) から提供されなくなりました．
 ### 動作環境 {#e8b195dc}
 
 - Windows
-- OS X, Linux など UNIX 互換 OS
+- macOS, Linux など UNIX 互換 OS
 
 ### 縦書きに関して {#o39e11da}
 
