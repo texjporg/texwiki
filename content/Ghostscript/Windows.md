@@ -15,10 +15,11 @@ pukiwiki: "Ghostscript/Windows"
 
 Windows 版の Ghostscript にはいくつかの種類があります。
 
-- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。日本語・中国語・韓国語 (CJK) に対応しています。
-    - TeX Live に含まれている Ghostscript (tlgs) は本家版をベースにしています。
+- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) に対応しています。
+    - TeX Live 2016 以前に含まれている Ghostscript (tlgs) は本家版をベースにしています。
 - 本家版の機能に加え，日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
     - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
+    - TeX Live 2017 (win32) の Ghostscript (tlgs) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
 
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
@@ -42,14 +43,14 @@ TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので�
 
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
-以下では（主に W32TeX ユーザ向けに）Ghostscript のインストール方法を説明します。
+以下では主に W32TeX ユーザ向けに Ghostscript のインストール方法を説明します。
 
 #### インストールの前に（旧バージョンが既にインストールされている場合） {#zea1e76f}
 
 旧バージョンの Ghostscript が既にインストールされている場合は，最新版をインストールする前に旧バージョンをアンインストールしておきます。
 
 - 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます。
-- \[コントロールパネル\]->\[プログラムの追加と削除\]等で Ghostscript をアンインストールします。
+- \[コントロールパネル\]->\[プログラムのアンインストール\]等で Ghostscript をアンインストールします。
 
 旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします。
 
@@ -67,30 +68,36 @@ TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので�
 なお，歴史的な理由等から gs\gs9.21 などというフォルダにインストールされることがほとんどです。
 その関係から，様々な解説ではこの gs\gs9.21 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
 
-#### 環境変数 PATH の設定 {#w1241f25}
+#### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
-インストールした Ghostscript に含まれる bin フォルダと lib フォルダを環境変数 PATH に追加します。
+インストールした Ghostscript に含まれる bin フォルダと lib フォルダをユーザー環境変数 Path またはシステム環境変数 Path に追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
 Ghostscript を C:\Program Files\gs\gs9.21 にインストールした場合は
 
 ```
-;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
+C:\Program Files\gs\gs9.21\bin
 ```
 
-を環境変数 PATH に追加します。
+と
 
-W32TeX をインストールした後に Ghostscript をインストールした場合，環境変数 Path の末尾は以下のようになるでしょう：
+```
+C:\Program Files\gs\gs9.21\lib
+```
 
-- 64bit の場合
+をユーザー環境変数 Path またはシステム環境変数 Path に追加します。
+
+W32TeX と Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
+
+- 64-bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib;…
     ```
 
-- 32bit の場合
+- 32-bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib;…
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -100,8 +107,8 @@ W32TeX をインストールした後に Ghostscript をインストールした
 #### インストールに失敗する場合 {#g27d0b0b}
 
 ユーザ名に例えば「山田太郎」のように ASCII 以外の文字（日本語など）を使っていると，Ghostscript のインストールに失敗することがあります。
-これは環境変数 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように ASCII 以外の文字が使われてしまうことが原因です。
-環境変数 TEMP のデフォルトは
+これはユーザー環境変数 TEMP に “C:\Users\山田太郎\AppData\Local\Temp” のように ASCII 以外の文字が使われてしまうことが原因です。
+ユーザー環境変数 TEMP のデフォルトは
 
 ```
 %USERPROFILE%\AppData\Local\Temp （すなわち C:\Users\%USERNAME%\AppData\Local\Temp のこと）
@@ -109,13 +116,13 @@ W32TeX をインストールした後に Ghostscript をインストールした
 
 に設定されていますが，この %USERPROFILE% に非 ASCII 文字が入ってしまっているわけです。
 
-したがって，環境変数 TEMP を ASCII 文字だけで設定します。
+したがって，ユーザー環境変数 TEMP を ASCII 文字だけで設定します。
 例えば UNIX 互換 OS の一時ファイル用ディレクトリ /tmp/ に習って “C:\tmp” のように設定するとよいでしょう。
 
 ### 注意点 {#de072348}
 
 - 本家版や角藤版の Ghostscript をインストールした場合
-    - Ghostscript を起動するコマンドは gswin32c（64-bit 版なら gswin64c）です。ただし，W32TeX とともにインストールした場合は rungs でも起動できます。
+    - Ghostscript を起動するコマンドは 64-bit 版なら gswin64c，32-bit 版なら gswin32c です。ただし，W32TeX とともにインストールした場合は rungs でも起動できます。
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合（付属する tlgs が自動的にインストールされる）
     - Ghostscript を起動するコマンドは rungs です。
@@ -177,6 +184,10 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 [GSview](/GSview/) は Ghostscript のフロントエンドです。
 
+#### GSView {#g86194c3}
+
+[GSView](/GSview/) は Ghostscript のフロントエンドです。
+
 #### PS_View {#psview}
 
 PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
@@ -195,7 +206,7 @@ PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビ
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
 フロントエンドといえるものではないにせよ Ghostscript を呼び出しているアプリケーションは多数あります（例えば [dvipdfmx](/dvipdfmx/), [Inkscape](/Inkscape/), [ImageMagick](/ImageMagick/) など）。
-これらを正常に扱うためには，環境変数 PATH に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です。
+これらを正常に扱うためには，ユーザー環境変数 Path またはシステム環境変数 Path に Ghostscript に含まれる bin と lib を付け加えておくことが多くの場合必要です。
 
 <!-- ここから下はまだ整理していません… - - アセトアミノフェン (2015-07-07) -->
 
@@ -909,7 +920,7 @@ PDF への欧文用フォントの埋め込み制御を行います。
 デフォルトでは PostScript Level 1 での基本14書体である
 Times ファミリ，Helvetica ファミリ，Courier ファミリ，Symbol，ZapfDingbats が
 埋め込まれません。<br>
-しかし OS X を除く UNIX 互換 OS での Adobe Reader で
+しかし macOS を除く UNIX 互換 OS での Adobe Reader で
 Times-Italic や Times-BoldItalic を埋め込んでいない PDF を
 表示すると，Times-Italic や Times-BoldItalic の部分が Italic 体ではなく
 Oblique 体（Slanted 体，斜体）で表示されてしまいます。
@@ -964,7 +975,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 
 #### Ghostscript 公式バイナリの配布元 {#q1e803c3}
 
-- [http://www.ghostscript.com/download/](http://www.ghostscript.com/download/)
+- [https://www.ghostscript.com/download/](https://www.ghostscript.com/download/)
 
 #### 角藤版 Ghostscript の配布元 {#sbee10cb}
 
