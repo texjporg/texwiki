@@ -53,13 +53,13 @@ eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript
 
 Ghostscript 9.15 では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．
 
-- [Bug 695671 - eps2write gives incorrect bounding box with rotated text](http://bugs.ghostscript.com/show_bug.cgi?id=695671)
+- [Bug 695671 - eps2write gives incorrect bounding box with rotated text](https://bugs.ghostscript.com/show_bug.cgi?id=695671)
 
 Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
-- [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](http://bugs.ghostscript.com/show_bug.cgi?id=695162)
-- [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](http://bugs.ghostscript.com/show_bug.cgi?id=695175)
+- [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](https://bugs.ghostscript.com/show_bug.cgi?id=695162)
+- [Bug 695175 &ndash; can't save PDF file if compiled with hyperref packages](https://bugs.ghostscript.com/show_bug.cgi?id=695175)
 - [Hyper Link fails in gs-9.14](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1292)
 - \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
 - [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
@@ -67,12 +67,6 @@ Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版
 Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
 
 - [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
-
-Ghostscript 8.71 およびそれ以前の Ver. には脆弱性が存在するので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
-
-- [Ghostscript における任意の PostScript コマンドを実行される脆弱性](http://jvndb.jvn.jp/ja/contents/2010/JVNDB-2010-003612.html)
-- [Ghostscriptに脆弱性--不正なファイルでDoS攻撃やコード実行の危険](http://japan.cnet.com/news/business/20418937/)
-- [JVNVU#644319: Ghostscript の TrueType bytecode interpreter に脆弱性](http://jvn.jp/cert/JVNVU644319/)
 
 GSview は [CTAN](/CTAN/) から提供されなくなりました．
 
