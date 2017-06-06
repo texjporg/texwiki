@@ -29,6 +29,14 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
+Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) の Ghostscript (tlgs) はこの脆弱性が修正されています．
+
+- [JVNVU#98641178: Ghostscript に任意のコードが実行可能な脆弱性](http://jvn.jp/vu/JVNVU98641178/)
+- \[[texlive\] Revision 44181](http://www.tug.org/svn/texlive?view=revision&revision=44181) gs-9.21: apply the patch to fix a bug ([http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719))
+- \[[texlive\] Revision 44112](http://www.tug.org/svn/texlive?view=revision&revision=44112) Apply security patch for gs-9.21 ([https://ghostscript.com/pipermail/gs-commits/2017-April/021285.html](https://ghostscript.com/pipermail/gs-commits/2017-April/021285.html))
+- [Bug 697846 &ndash; Security fix causes regression](https://bugs.ghostscript.com/show_bug.cgi?id=697846)
+- [Bug 697799 &ndash; corruption of operand stack](https://bugs.ghostscript.com/show_bug.cgi?id=697799)
+
 Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問題が発生する場合は TeX Live 2015 以降に更新してください．
 
 - [QA: gs9.15 and gs9.10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
@@ -85,7 +93,7 @@ Ghostscript 7.07 には脆弱性が存在しますので，縦書きが必要な
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では gv という Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では [GSView](/GSview/), gv という Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
