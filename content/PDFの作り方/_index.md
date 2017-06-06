@@ -31,13 +31,13 @@ PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) とい�
 
 ## 印刷機能を使う {#m27e7b63}
 
-OS X では標準で印刷機能から PDF で保存ができます．
+macOS では標準で印刷機能から PDF で保存ができます．
 
-Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンタが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
+Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
 
-Windows7/8 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
+Windows 8.1, Windows 8, Windows 7 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
 
-Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの[Cairo](http://cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
+Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの[Cairo](https://www.cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
 
 ### 仮想プリンタの導入 {#ge6f5633}
 
@@ -50,7 +50,7 @@ PDF へ出力するための無償の仮想プリンタが多数あります：
 [CubePDF](http://www.cube-soft.jp/cubepdf/)，
 [BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php)，
 [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)，
-[PDF24 Creator](http://en.pdf24.org/)，
+[PDF24 Creator](https://en.pdf24.org/)，
 [PrimoPDF](http://www.primopdf.com/)，
 [pdf995](http://www.pdf995.com/)
 
@@ -69,7 +69,7 @@ wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必�
 
 LaTeX のインストールについては
 [Windows へのインストール](</Microsoft Windows/>)，
-[OS X へのインストール](/Mac/)，
+[macOS へのインストール](/Mac/)，
 [Linux へのインストール](/Linux/)
 などのページをご覧ください．
 
@@ -124,8 +124,8 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 ### Adobe Acrobat DC の設定 {#e5e57a76}
 
 PDF 出力をデフォルトのプリンターとして設定することができます．
-コントロールパネルから［デバイスとプリンター］画面を表示します．
-［プリンターと FAX］にある「Adobe PDF」プリンターアイコンを右クリックし，
+コントロールパネルから 「デバイスとプリンターの表示」をクリックして［デバイスとプリンター］画面を表示します．
+［プリンター］にある「Adobe PDF」プリンターアイコンを右クリックし，
 「通常使うプリンターに設定」します．
 
 出力の細かい設定を行うには，「Adobe PDF」プリンターアイコンを右クリックし，
@@ -235,7 +235,7 @@ PDF 文書をパスワードで保護するには，いくつかの方法があ�
 
 Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
-また，OS Xでは印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
+また，macOS では印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
 ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
 
 ### PDF に注釈をつける {#v9b289c9}
