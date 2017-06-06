@@ -122,9 +122,9 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
 <!-- -https://inkscape.modevia.com/inkscape-man.html -->
 
 ```
-inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
-inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
-inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
+inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
+inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
+inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ```
 
 ### 注意点 {#i348fa25}
