@@ -29,7 +29,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) の Ghostscript (tlgs) はこの脆弱性が修正されています．
+Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) の Ghostscript (tlgs.win32) はこの脆弱性が修正されています．
 
 - [JVNVU#98641178: Ghostscript に任意のコードが実行可能な脆弱性](http://jvn.jp/vu/JVNVU98641178/)
 - \[[texlive\] Revision 44181](http://www.tug.org/svn/texlive?view=revision&revision=44181) gs-9.21: apply the patch to fix a bug ([http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719))
@@ -106,7 +106,6 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 
 - [GhostScriptあれこれ](http://xanadu62.blogspot.jp/2014/11/ghostscript_22.html)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
-- [Beyond Linux® From Scratch (Ghostscript)](http://lfsbookja.osdn.jp/BLFS/svn.ja/pst/gs.html)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)（山田さん）
