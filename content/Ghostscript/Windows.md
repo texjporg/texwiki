@@ -16,21 +16,21 @@ pukiwiki: "Ghostscript/Windows"
 Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) に対応しています。
-    - TeX Live 2016 以前に含まれている Ghostscript (tlgs) は本家版をベースにしています。
+    - TeX Live 2016 以前に含まれている Ghostscript (tlgs.win32) は本家版をベースにしています。
 - 本家版の機能に加え，日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
     - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
-    - TeX Live 2017 (win32) の Ghostscript (tlgs) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+    - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
 
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
-- TeX Live に含まれている Ghostscript (tlgs)
+- TeX Live に含まれている Ghostscript (tlgs.win32)
 - W32TeX と同じサイトで配布されている角藤版 Ghostscript
 
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
 <!-- -[[[texlive] Revision 31504:http://www.tug.org/svn/texlive?view=revision&revision=31504]] -->
 
-日本語の縦書き PostScript ファイルを表示する必要がある場合は角藤版 Ghostscript を使用してください。
+日本語の縦書き PostScript ファイルを表示する必要がある場合は TeX Live 2017 (win32) 以降の Ghostscript (tlgs.win32) あるいは角藤版 Ghostscript を使用してください。
 
 ***
 
@@ -38,7 +38,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 ### インストール {#a4d9c6ea}
 
-TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
+TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
 また，W32TeX を TeX インストーラ 3 を使ってインストールした場合は，途中で角藤版 Ghostscript もインストールされているはずです。
 
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
@@ -70,7 +70,7 @@ TeX Live の win32 版には Ghostscript (tlgs) が含まれていますので�
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
-インストールした Ghostscript に含まれる bin フォルダと lib フォルダをユーザー環境変数 Path またはシステム環境変数 Path に追加します。
+インストールした Ghostscript に含まれる bin フォルダと lib フォルダをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
 Ghostscript を C:\Program Files\gs\gs9.21 にインストールした場合は
 
@@ -84,7 +84,7 @@ C:\Program Files\gs\gs9.21\bin
 C:\Program Files\gs\gs9.21\lib
 ```
 
-をユーザー環境変数 Path またはシステム環境変数 Path に追加します。
+をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 
 W32TeX と Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
 
@@ -124,9 +124,10 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 - 本家版や角藤版の Ghostscript をインストールした場合
     - Ghostscript を起動するコマンドは 64-bit 版なら gswin64c，32-bit 版なら gswin32c です。ただし，W32TeX とともにインストールした場合は rungs でも起動できます。
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
-- TeX Live をインストールした場合（付属する tlgs が自動的にインストールされる）
-    - Ghostscript を起動するコマンドは rungs です。
-    - PostScript を PDF に変換する ps2pdf というプログラムは，tlgs では ps2pdf.exe という実行ファイルになっています。
+- TeX Live をインストールした場合
+    - TeX Live (win32) をインストールした場合は TeX Live (win32) に付属する Ghostscript (tlgs.win32) が自動的にインストールされます。TeX Live (win64) をインストールする場合は 64-bit 版の角藤版 Ghostscript もインストールしてください。
+    - Ghostscript (tlgs.win32) を起動するコマンドは rungs です。TeX Live (win64) にも rungs.exe が収録されています。
+    - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.win32) を使用する場合は ps2pdf.exe という実行ファイルになっています。TeX Live (win64) にも ps2pdf.exe が収録されています。
 
 #### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
 
@@ -229,7 +230,7 @@ $gsversion = 'gs' + $(rungs --version); rungs -q -dBATCH -sFONTDIR="c:/windows/f
 また，c:/windows/fonts というのは Windows の システムフォントフォルダーのことです。
 
 一つ注意を言っておきます。<br>
-この自動設定を行ったとしても，あなたの環境にある CJK つまり 日中韓のフォントがすべて使えるようになるわけではありません。<br>
+この自動設定を行ったとしても，あなたの環境にある CJK (中国語・日本語・韓国語) のフォントがすべて使えるようになるわけではありません。<br>
 mkcidfm.ps にリストアップされているもののうちのシステムフォントフォルダーに見つかった TrueType fonts への代替設定がされるだけです。<br>
 これだけで自由自在になるわけではないことに注意してください。
 
@@ -885,28 +886,28 @@ echo -c .setpdfwrite -f neverembed.ps -f%1 >>"%TEMP%\_.at"2
 さらに dvipdfmx が PostScript ファイルや EPS ファイルを PDF に変換する場合に
 lib/neverembed.ps への設定を有効にするためには
 
-[TeX Live](</TeX Live/>) の場合は [dvipdfmx.cfg](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/dvipdfmx/dvipdfmx.cfg?view=markup) の記述内容の150行目
+[TeX Live](</TeX Live/>) の場合は [dvipdfmx.cfg](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/dvipdfmx/dvipdfmx.cfg?view=markup) の記述内容の159行目
 
 ```
-D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' '%i' -c quit"
-```
-
-に次のように “-f neverembed.ps ” を挿入します。
-
-```
-D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -sOutputFile='%o' -f neverembed.ps '%i' -c quit"
-```
-
-[W32TeX](/W32TeX/) の場合は $TEXMF/dvipdfmx/config/dvipdfmx.cfg の記述内容の38行目
-
-```
-D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f '%i' -c quit"
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -sOutputFile='%o' '%i' -c quit"
 ```
 
 に次のように “-f neverembed.ps ” を挿入します。
 
 ```
-D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f neverembed.ps -f '%i' -c quit"
+D  "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dGrayImageFilter=/FlateEncode -dAutoFilterColorImages=false -dColorImageFilter=/FlateEncode -dAutoRotatePages=/None -sOutputFile='%o' -f neverembed.ps '%i' -c quit"
+```
+
+[W32TeX](/W32TeX/) の場合は $TEXMF/dvipdfmx/config/dvipdfmx.cfg の記述内容の33行目
+
+```
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dAutoRotatePages=/None -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f '%i' -c quit"
+```
+
+に次のように “-f neverembed.ps ” を挿入します。
+
+```
+D "rungs -q -dNOPAUSE -dBATCH -dEPSCrop -sPAPERSIZE=a0 -sDEVICE=pdfwrite -dAutoRotatePages=/None -dCompatibilityLevel=%v -dAutoFilterGrayImages=false -dAutoFilterColorImages=false -dGrayImageFilter=/FlateEncode -dColorImageFilter=/FlateEncode -dUseFlateCompression=true -sOutputFile='%o' -c .setpdfwrite -f neverembed.ps -f '%i' -c quit"
 ```
 
 ### PDF への欧文用フォントの埋め込み制御 {#y3b70de6}
@@ -934,7 +935,7 @@ Times-BoldItalic だけを埋め込み，Times-Roman，Times-Bold，Helvetica
 埋め込まないようにすると，ほとんどの環境で PostScript Level 1 での基本14書体が
 正確に表示されます。<br>
 このような設定にするには，Resource/Init/gs_pdfwr.ps の
-記述内容の[28&ndash;35行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l28)のうち33行目を次のように変更してください。<br>
+記述内容の[31&ndash;38行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l31)のうち36行目を次のように変更してください。<br>
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -957,8 +958,8 @@ Adobe Reader/Acrobat で表示すると，Times ファミリや Helvetica ファ
 埋め込み，Courier ファミリ，Symbol，ZapfDingbats だけを
 埋め込まないようにすると，Microsoft Windows を含めたほとんどの環境で
 PostScript Level 1 での基本14書体が正確に表示されます。<br>
-このような設定にするには，Resource/Init/gs_pdfwr.ps の記述内容の[26&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l28)の
-うち[32&ndash;33行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l32)を次のようにコメントアウトしてください。<br>
+このような設定にするには，Resource/Init/gs_pdfwr.ps の記述内容の[31&ndash;38行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l31)の
+うち[35&ndash;36行目](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=Resource/Init/gs_pdfwr.ps;hb=HEAD#l35)を次のようにコメントアウトしてください。<br>
 
 ```
 /.a2112 [2 1 1 2] readonly def
@@ -976,6 +977,8 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 #### Ghostscript 公式バイナリの配布元 {#q1e803c3}
 
 - [https://www.ghostscript.com/download/](https://www.ghostscript.com/download/)
+- [http://artifex.com/developers-ghostscript-download/ghostscript-current/](http://artifex.com/developers-ghostscript-download/ghostscript-current/)
+- [https://github.com/ArtifexSoftware/ghostpdl-downloads/releases](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases)
 
 #### 角藤版 Ghostscript の配布元 {#sbee10cb}
 
@@ -984,7 +987,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 - [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 
-#### ChangeLog (tlgs) {#a9e655e3}
+#### ChangeLog (tlgs.win32) {#a9e655e3}
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
