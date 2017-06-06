@@ -39,6 +39,10 @@ pukiwiki: "Ghostscript/Linux"
 
 - [https://software.opensuse.org/package/ghostscript](https://software.opensuse.org/package/ghostscript)
 
+#### Beyond Linux From Scratch {#ie51ba0b}
+
+- [Beyond Linux® From Scratch (Ghostscript)](http://www.linuxfromscratch.org/blfs/view/svn/pst/gs.html)
+
 #### ソースコードからインストール {#u4ad1919}
 
 [http://git.ghostscript.com/?p=ghostpdl.git](http://git.ghostscript.com/?p=ghostpdl.git)
