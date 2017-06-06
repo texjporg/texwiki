@@ -73,7 +73,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 この情報は macOS Sierra / OS X El Capitan への積極的なアップデートをすすめるものではありません。
 ただし，OS X Yosemite 以前には既知の脆弱性があり，その対策は macOS Sierra / OS X El Capitan へのアップデートでしか提供されていないため，macOS Sierra / OS X El Capitan へのアップデートを見合わせるということは TeX や DTP のためにセキュリティ対策を犠牲にしていると心得る必要があります。
 
-- TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
+- TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，OS X El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
     したがって，[LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを使うためには2015年10月8日にリリースされた LuaTeX beta-0.81.0 に更新する必要があります（ただし，luaotfload パッケージの対応が未完了）。
     なお，IPA(ex) フォントを利用するのであれば無理に LuaTeX を更新する必要はありません。
 
@@ -81,6 +81,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
     （多くの場合，ヒラギノフォントを OS X にたよらず購入していることが想定されますが…）
     - 参考：[OS X El Capitan（10.11、10.11.1）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan_1011_10111.html)
     - 追記 (2015-12-11)：OS X El Capitan 10.11.2 でついに深刻な問題が解消されました。[OS X El Capitan（10.11.2）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan.html)
+    - 追記 (2016-9-21)：macOS Sierra 10.12 と OS X El Capitan 10.11.6 に搭載のヒラギノフォントは同じ仕様です。[macOS Sierra（10.12）搭載のヒラギノフォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_macOS_font.html)
 
 - macOS Sierra / OS X El Capitan に新たに収録された日本語フォントの多くは，従来の拡張子 .otf の OpenType Font を束ねた形式の OpenType Collection Font です。
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
@@ -88,7 +89,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 
 #### macOS Sierra / OS X El Capitan での TeX Live のセットアップ {#l8c867e9}
 
-<strong>注意</strong>：奥村先生の「［改訂第6版］LaTeX2e 美文書作成入門」のインストーラから TeX Live 2013 をインストールした場合については，[サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)に情報が掲載されるのをお待ちください（別の方法が用意される見込みです）。
+<strong>注意</strong>：奥村先生の「［改訂第6版］LaTeX2e 美文書作成入門」のインストーラから TeX Live 2013 をインストールした場合については，[サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)の[Mac: OS X El Capitanに更新する際のご注意](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/#elcapitan)をご覧ください。
 
 macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじめに
 
