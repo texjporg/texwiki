@@ -454,7 +454,7 @@ $ brew cask install lyx
 
 #### MacPorts {#q338f601}
 
-- [https://trac.macports.org/browser/trunk/dports/aqua/LyX/Portfile](https://trac.macports.org/browser/trunk/dports/aqua/LyX/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile](https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile)
 
 ```
 $ sudo port install lyx
