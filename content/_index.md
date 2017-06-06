@@ -41,7 +41,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 
 - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．<strong>可能な場合は，速やかに TeX Live のアップデートを実行してください</strong>．この問題についての詳細は[こちら](</外部コマンドの実行/#security>)を参照してください．
 - [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
-- OS X で TeX Live 2015 以前または MacTeX 2015 以前を使っている場合， OS X 10.11 El Capitan 以降へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
+- OS X で TeX Live 2015 以前または MacTeX 2015 以前を使っている場合， macOS 10.12 Sierra / OS X 10.11 El Capitan へのアップグレード後，設定作業が必要です．アップデート前に[こちら](</TeX Live/Mac/#elcapitan>)をご覧ください．
 
 ### TeX，LaTeX とは？ {#la57baab}
 
