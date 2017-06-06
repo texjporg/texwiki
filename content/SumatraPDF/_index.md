@@ -8,7 +8,7 @@ pukiwiki: "SumatraPDF"
 
 # SumatraPDF
 
-## [SumatraPDF](http://www.sumatrapdfreader.org/) {#afa7a42e}
+## [SumatraPDF](https://www.sumatrapdfreader.org/) {#afa7a42e}
 
 SumatraPDF は Windows 用のタブ切り替え型の軽量な PDF ビューアです．
 ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR などの形式も閲覧できます．
@@ -21,8 +21,8 @@ PDF ファイルだけではなく PostScript ファイルも表示可能です�
 
 ### インストール {#r04b7fad}
 
-[SumatraPDF 公式サイト（日本語）](http://www.sumatrapdfreader.org/free-pdf-reader-ja.html) のダウンロードをクリックしてインストーラーをダウンロードします．
-64-bit Windows であれば 64-bit builds のインストーラーをダウンロードします．
+[Download Sumatra PDF - a free reader](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします．
+64-bit Windows であれば 64-bit builds の Installer をダウンロードします．
 後はダブルクリックし指示に従えばインストールが完了します．
 
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
@@ -68,11 +68,30 @@ forward search するときに SumatraPDF を前面に表示したくない場�
 
 #### inverse search {#wfcdbef6}
 
-inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただ，設定が必要です．
+inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただし，設定が必要です．
 
-まずは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください．（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください．）
-SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．
+%APPDATA%\SumatraPDF\SumatraPDF-settings.txt に
+
+```
+EnableTeXEnhancements = false
+```
+
+と記述されている場合は逆順検索コマンドラインの設定が表示されません．
+
+逆順検索コマンドラインの設定が表示されていない場合は \[☰\] &gt; \[設定(S)\] &gt; \[詳細設定(A)\] で %APPDATA%\SumatraPDF\SumatraPDF-settings.txt を開いて
+
+```
+EnableTeXEnhancements = true
+```
+
+に修正します．
+
+あるいは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください．（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください．）
+
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．
+
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．
+
 どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．
 
 64-bit Windows での [TeXstudio](/TeXstudio/) であれば
@@ -93,15 +112,15 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 
 プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．
 
-- [http://www.sumatrapdfreader.org/manual-ja.html](http://www.sumatrapdfreader.org/manual-ja.html)
+- [https://www.sumatrapdfreader.org/manual.html](https://www.sumatrapdfreader.org/manual.html)
 - [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp)
 
 ### リンク {#pad542dc}
 
-- [SumatraPDF 公式サイト](http://www.sumatrapdfreader.org/)
-    - [News](http://www.sumatrapdfreader.org/news.html)
-    - [ダウンロード](http://www.sumatrapdfreader.org/download-free-pdf-viewer-ja.html)
-    - [SumatraPDF pre-release builds](http://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
+- [SumatraPDF 公式サイト](https://www.sumatrapdfreader.org/)
+    - [News](https://www.sumatrapdfreader.org/news.html)
+    - [Download](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
+    - [SumatraPDF pre-release builds](https://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
         - [DDE commands ](https://github.com/sumatrapdfreader/sumatrapdf/wiki/DDE-commands)
@@ -117,13 +136,5 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 
 #### ChangeLog {#b67b5a28}
 
-- [News](http://www.sumatrapdfreader.org/news.html)
+- [News](https://www.sumatrapdfreader.org/news.html)
 - [コミットログ](https://github.com/sumatrapdfreader/sumatrapdf/commits/master)
-
-#### 派生版・独自ビルド版 {#i2d3e037}
-
-- [XhmikosR's Builds sumatrapdf](http://xhmikosr.1f0.de/sumatrapdf/)
-- [SumatraPDF x86/x64 Optimized Builds](http://nikkhokkho.sourceforge.net/static.php?page=SumatraPDFOpt)
-- [SumatraPDF 先読み対応バージョン](https://gist.github.com/miau/5277670)
-- [PDFlite](http://www.pdflite.com/)
-- [PortableApps.com](http://portableapps.com/) の [SumatraPDF Portable](http://portableapps.com/apps/office/sumatra_pdf_portable)
