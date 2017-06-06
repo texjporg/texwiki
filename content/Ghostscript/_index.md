@@ -123,9 +123,9 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 
 #### License {#g7897d81}
 
-[GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
+[GNU Affero General Public License (AGPL), Artifex Commercial License](http://artifex.com/licensing/)
 
-最新版の Ghostscript のライセンスは GNU Affero General Public License (AGPL) です．
+現在の Ghostscript のオープンソースライセンスは GNU Affero General Public License (AGPL) です．
 [^1]
 
 #### リリース情報 {#jbfe1b2f}
@@ -147,4 +147,4 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 <!--  -->
 <!-- #comment -->
 
-[^1]: 過去の Ghostscript のバージョンには [AFPL](http://git.ghostscript.com/?p=ghostpdl.git;a=blob;f=COPYING.AFPL;hb=HEAD) 版があります．AFPL 版は商業的な配布に制限があります．このあたりの事情は，古いですが，Ghostscript の作者 [L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください：[L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
+[^1]: 過去の Ghostscript のバージョンには [AFPL](https://www.wikipedia.org/wiki/Aladdin_Free_Public_License) 版があります．AFPL 版は商業的な配布に制限があります．このあたりの事情は，古いですが，Ghostscript の作者 [L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください：[L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
