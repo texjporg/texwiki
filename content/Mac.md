@@ -176,6 +176,12 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 
 macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
 
+### Hammerspoon によるキーバインドの変更 {#o4723e6f}
+
+macOS 用の自動化ツール [Hammerspoon](http://www.hammerspoon.org/) で，¥ を入力すると \ に変換することができます。
+
+- [IntelliJとかJVMのIDE使いでもKarabinerなしでバックスラッシュを片手入力したい](http://qiita.com/tanakahisateru/items/d8a67ad89c07baf8c0da)
+
 ### macOS の日本語入力（旧ことえり）によるキーバインドの変更 {#w93e863d}
 
 JIS キーボードの ¥ キーで入力する文字を \ に変更する設定が可能です。
