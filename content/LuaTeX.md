@@ -14,7 +14,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 LuaTeX は 2020 年頃を目標として開発が進んでおり，TeX Live 2016 には beta-0.95.0 が収録されています。
 TeX Live 2015 は beta-0.80.0 でしたが，ここから beta-0.95.0 に至る間に多くの仕様変更がありました。
-いまだベータ版なので仕様変更が相次いでいますが，[pdfTeX](/pdfTeX/) の後継として期待されています。
+現在は 1.0 がリリースされています。
+[pdfTeX](/pdfTeX/) の後継として期待されています。
 
 ***
 
@@ -24,7 +25,7 @@ TeX Live 2015 は beta-0.80.0 でしたが，ここから beta-0.95.0 に至る�
 
 LuaTeX, LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/) を使って日本語文書の組版が可能です．
 
-LuaLaTeX では [BXjscls](/BXjscls/) が使用可能です．
+LuaLaTeX では [BXjscls](/BXjscls/), [jlreq](/jlreq/) が使用可能です．
 
 ### その他パッケージ {#u56aae1f}
 
