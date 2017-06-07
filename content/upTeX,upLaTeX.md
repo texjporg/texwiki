@@ -392,6 +392,7 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - コミュニティ版 [uptex-base](https://github.com/texjporg/uptex-base), [uptex-fonts](https://github.com/texjporg/uptex-fonts), [uplatex](https://github.com/texjporg/uplatex)
 - [「upTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=upTeX)
+- [upLaTeX文書で源ノ明朝／Noto Serif CJKを簡単に使う方法（最新のdvipdfmxとpxchfonを使用）](http://qiita.com/zr_tex8r/items/9dfeafecca2d091abd02) ZRさん
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
 - [e-upTeX と LuaTeX とを使ってみる](http://kainokikaede.hatenablog.com/entry/2014/07/18/060128)
