@@ -125,13 +125,13 @@ W32TeX の TeXworks はスペルチェックの辞書が含まれているので
 W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．
 詳細については，ヘルプを見てください．
 
-### Windows の TeX Live 2016 の場合 {#ycb12d64}
+### Windows の TeX Live 2017 の場合 {#ycb12d64}
 
 1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2016\texmf-config\texworks フォルダーが作成されていることを確認します
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2016\texmf-config\texworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2017\texmf-config\texworks フォルダーが作成されていることを確認します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2017\texmf-config\texworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\]-\[設定\]-\[エディタ\]-\[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\]-\[スペルチェック\] で辞書を選択します．
 
