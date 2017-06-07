@@ -129,72 +129,64 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．
 
 ## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
 
-TeX Live または W32TeX に含まれている pdfopen を使用すれば，コマンドラインやスクリプトから PDF ファイルを Adobe Acrobat Reader DC で開くことができます．
-なお，事前に PDF ファイルを Adobe Acrobat Reader DC に関連付けしておく必要があります．
-
-### PDF ファイルを開く {#id6d0918}
-
-```
-pdfopen --r15 --file hoge.pdf
-```
-
-または
-
-```
-echo open hoge.pdf | pdfdde --r15
-```
-
-### PDF ファイルを閉じる {#h619779d}
-
-```
-pdfopen --r15 --file hoge.pdf && pdfclose --r15 --file hoge.pdf
-```
-
-または
-
-```
-echo open hoge.pdf | pdfdde --r15 && echo close hoge.pdf | pdfdde --r15
-```
-
-### Adobe Acrobat Reader DC を終了する {#pb5aeda1}
-
-```
-echo exit | pdfdde --r15
-```
-
-### 指定したページを表示する {#lc08871d}
-
+- [Acrobat および Adobe Reader のコマンドラインオプション](https://helpx.adobe.com/jp/acrobat/kb/510705.html)
+- [AcrobatやReaderでPDFをコマンドラインで操作する方法](http://www.lifedesignedit.com/use_adobe_pdf_command_line_options)
+- [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222)
 - [DDEを用いてページを指定してPDFを表示する](http://kb2.adobe.com/jp/cps/510/510047.html)
 - [Adobe Readerで指定したファイルの指定したページを開く](http://owlsperspective.blogspot.jp/2008/07/acroview.html)
 - [http://stackoverflow.com/questions/619158/adobe-reader-command-line-reference](http://stackoverflow.com/questions/619158/adobe-reader-command-line-reference)
 - [http://partners.adobe.com/public/developer/en/acrobat/PDFOpenParameters.pdf#page=5](http://partners.adobe.com/public/developer/en/acrobat/PDFOpenParameters.pdf#page=5)
 - [http://kb2.adobe.com/jp/cps/511/511759/attachments/511759_pdf_open_parameters.pdf](http://kb2.adobe.com/jp/cps/511/511759/attachments/511759_pdf_open_parameters.pdf)
+    <!-- -[[pdfopen and pdfclose:http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/]] -->
+    <!-- -[[Man page acroread:http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread]] -->
+
+### PDF ファイルを開く {#id6d0918}
+
+Windows PowerShell の場合は
+
+```
+Start-Process AcroRd32 'foo.pdf'
+```
+
+コマンド プロンプトの場合は
+
+```
+start AcroRd32 "foo.pdf"
+```
+
+### 起動時に指定したページを表示する {#lc08871d}
 
 3ページ目を表示するには以下のようにします．
 
-```
-start AcroRd32 /a "page=3" hoge.pdf
-```
-
-または
+Windows PowerShell の場合は
 
 ```
-pdfopen --r15 --file hoge.pdf --page 3
+Start-Process AcroRd32 -ArgumentList ('/A', 'page=3', 'foo.pdf')
 ```
 
-または
+コマンド プロンプトの場合は
 
 ```
-echo open hoge.pdf | pdfdde --r15 && echo goto hoge.pdf 3 | pdfdde --r15
+start AcroRd32 /A "page=3" "foo.pdf"
 ```
 
-### [Acrobat および Adobe Reader のコマンドラインオプション](http://kb2.adobe.com/jp/cps/510/510705.html) {#vb210974}
-
-### [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222) {#fb046c0f}
-
-<!-- **[[pdfopen and pdfclose:http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/]] [#tf67f0e7] -->
+<!-- **PDF ファイルを閉じる [#h619779d] -->
 <!--  -->
-<!-- **[[Man page acroread:http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread]] [#rb9a599a] -->
+<!-- pdfopen - -file "foo.pdf" && pdfclose - -file "foo.pdf" -->
+
+### Adobe Acrobat Reader DC を終了する {#pb5aeda1}
+
+Windows PowerShell の場合は
+
+```
+Stop-Process -Name AcroRd32
+```
+
+コマンド プロンプトの場合は
+
+```
+taskkill /IM AcroRd32.exe
+```
 
 ## SyncTeX {#s533a23f}
 
@@ -205,9 +197,7 @@ Adobe Acrobat Reader DC は [SyncTeX](/SyncTeX/) には対応していません�
 TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は
 
 ```
-synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "pdfopen --r15 --file '%{output}' --page %{page+1}"
-synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe' /a 'page=%{page+1}' '%{output}'"
-synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "'C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe' /a 'page=%{page+1}' '%{output}'"
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "rundll32 shell32,ShellExec_RunDLL AcroRd32 /A 'page=%{page+1}' '%{output}'"
 ```
 
 のように実行します．
