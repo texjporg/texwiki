@@ -293,7 +293,7 @@ BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の Te
 TeX Live をフルインストールしたくない場合は BasicTeX をインストールします。
 
 あるいは，[小川版 Drag &amp; Drop UpTeX (UpTeX.app)](</Drag and Drop UpTeX/>) が，TeX Live scheme-small をベースに collection-langjapanese を加えたディストリビューションとして配布されています。
-UpTeX.app は OS X El Capitan (10.11) / OS X Yosemite (10.10) 対応で，日本語フォントのセットアップを自動で行う AppleScript の GUI がかぶせてあり，簡単にセットアップを行うことができます。
+UpTeX.app は OS X El Capitan (10.11) / OS X Yosemite (10.10) 以降に対応で，日本語フォントのセットアップを自動で行う AppleScript の GUI がかぶせてあり，簡単にセットアップを行うことができます。
 
 ### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#e3decd1a}
 
