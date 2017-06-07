@@ -15,7 +15,7 @@ Ruby は汎用スクリプト言語です．
 
 一般的な Ruby の情報については外部サイトを参照してください．
 
-TeX 関連プログラムには Ruby で書かれたスクリプトがあります（[convbkmk.rb](http://www.t-lab.opal.ne.jp/tex/uptex.html) など）．
+TeX 関連プログラムには Ruby で書かれたスクリプトがあります（[ConTeXt](/ConTeXt/) の [TeXExec](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/context/ruby/texexec.rb?view=markup) や [upTeX](/upTeX,upLaTeX/) の [convbkmk.rb](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/convbkmk/convbkmk.rb?view=markup) など）．
 これらのスクリプトを実行するには Ruby の処理系が必要です．
 また，Ruby は [PythonTeX](/PythonTeX/) でもサポートされています．
 
@@ -29,5 +29,5 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 #### Windows でのインストール {#g82e00ee}
 
-Windows 用の配布バイナリには [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases) や [ActiveScriptRuby](http://www.artonx.org/data/asr/) があります．
-好きな方をインストールするとよいでしょう．
+Windows 用の配布バイナリには [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases) や [RubyInstaller](https://rubyinstaller.org/) や [ActiveScriptRuby](http://www.artonx.org/data/asr/) があります．
+必要に応じて好みのバイナリをインストールするとよいでしょう．
