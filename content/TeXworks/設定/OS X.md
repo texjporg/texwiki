@@ -21,21 +21,7 @@ pukiwiki: "TeXworks/設定/OS X"
 
 #### upLaTeX (ptex2pdf) {#hb35622b}
 
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ sudo kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-[ptex2pdf](/ptex2pdf/) を使って設定します．<br>
+[ptex2pdf](/ptex2pdf/) を使って設定します．
 
 ***
 
