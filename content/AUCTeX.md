@@ -116,6 +116,41 @@ M-x package-install RET auctex RET
 
 M-x list-packages RET でリストを表示して auctex を選択
 
+### ソースコードからインストールする場合 (Linux) {#re9f47fd}
+
+```
+$ wget http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
+```
+
+または
+
+```
+$ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
+```
+
+で最新版の AUCTeX を入手します．<br>
+AUCTeX を展開してビルド・インストールします．<br>
+
+```
+$ tar xvf master.tar.gz
+$ pushd master
+$ ./autogen.sh
+$ ./configure --prefix=/usr
+$ make
+$ sudo make install
+$ popd
+```
+
+デフォルトでは preview-latex もインストールされます。
+
+load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
+
+```
+(add-to-list 'load-path "/usr/share/emacs/site-lisp")
+(load "auctex.el" nil t t)
+(load "preview-latex.el" nil t t)
+```
+
 ### Windows {#w81a725c}
 
 64-bit Windows の場合は<br>
@@ -131,27 +166,6 @@ C-x C-f ~/
 ```
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
-
-#### 公式サイトのパッケージを使用する場合 {#o7039c80}
-
-[公式サイトのダウンロードページ](http://www.gnu.org/software/auctex/download-for-windows.html) またはミラーサイト
-
-- [http://ftpmirror.gnu.org/auctex/](http://ftpmirror.gnu.org/auctex/)
-    <!-- (See http://www.gnu.org/order/ftp.html) -->
-
-- [CTAN:support/auctex/](https://mirror.ctan.org/support/auctex/)
-
-から auctex-11.89-e24.5-msw.zip をダウンロードして展開します．
-
-auctex-11.89-e24.5-msw\share\emacs\site-lisp\ フォルダーをコピーして &#x7e;/.emacs.d/ にペーストします．(&#x7e;/.emacs.d/ が無ければ新規に作成します．)
-
-load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
-
-```
-(add-to-list 'load-path "~/.emacs.d/site-lisp/site-start.d")
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
-```
 
 #### 設定 {#g637a7d7}
 
@@ -257,13 +271,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq reftex-plug-into-AUCTeX t)
 ```
 
-```
-;;
-;; kinsoku.el
-;;
-(setq kinsoku-limit 10)
-```
-
 ***
 
 > <table>
@@ -299,7 +306,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 ***
 
-### OS X {#h32722ec}
+### macOS {#h32722ec}
 
 - [Mac OS X El Capitan の AUCTeX の設定](http://ryogan.org/blog/2015/12/30/mac-os-x-el-capitan-%E3%81%AE-auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A/)
 - [AUCTex + RefTexで快適論文作成](http://ochiailab.blogspot.jp/2013/01/auctex-reftex.html)
@@ -315,14 +322,6 @@ C-x C-f ~/
 ```
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-#### Homebrew でインストールする場合 {#f6533cc3}
-
-- [homebrew / Library / Formula / auctex.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/auctex.rb)
-
-```
-$ brew install --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs auctex
-```
 
 #### 設定 {#n55816de}
 
@@ -438,13 +437,6 @@ Emacs 24.5 以降にアップグレードします．<br>
 (setq reftex-plug-into-AUCTeX t)
 ```
 
-```
-;;
-;; kinsoku.el
-;;
-(setq kinsoku-limit 10)
-```
-
 ***
 
 > <table>
@@ -480,41 +472,6 @@ C-x C-f ~/
 ```
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-#### ソースコードからインストールする場合 {#re9f47fd}
-
-```
-$ wget http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
-```
-
-または
-
-```
-$ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
-```
-
-で最新版の AUCTeX を入手します．<br>
-AUCTeX を展開してビルド・インストールします．<br>
-
-```
-$ tar xvf master.tar.gz
-$ pushd master
-$ ./autogen.sh
-$ ./configure --prefix=/usr
-$ make
-$ sudo make install
-$ popd
-```
-
-デフォルトでは preview-latex もインストールされます。
-
-load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
-
-```
-(add-to-list 'load-path "/usr/share/emacs/site-lisp")
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
-```
 
 #### 設定 {#p2d711b9}
 
@@ -662,13 +619,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 (setq reftex-plug-into-AUCTeX t)
 ```
 
-```
-;;
-;; kinsoku.el
-;;
-(setq kinsoku-limit 10)
-```
-
 ***
 
 > <table>
@@ -704,28 +654,14 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 
 #### Emacs 標準のパッケージ管理システムを使用してインストールした場合 {#c3acf208}
 
-AUCTeX 11.89 は &#x7e;/.emacs.d/elpa/auctex-11.89 にインストールされます．<br>
-AUCTeX 11.89 が自動ロードされない場合は ~/.emacs.d/init.el に次のように記述します．<br>
+Emacs 標準のパッケージ管理システムを使用してインストールした場合は何も記述しなくても AUCTeX が自動ロードされます．
+
+AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば次のように記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.89")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.90.2")
 (require 'tex-site)
 ```
-
-Emacs 標準のパッケージ管理システムを使用してインストールした場合は
-
-```
- (load "auctex.el" nil t t)
-```
-
-は記述しないでください．<br>
-記述すると
-
-```
-File error: Cannot open load file, auctex.el
-```
-
-などと表示される可能性があります．<br>
 
 #### AUCTeX の公式サイトのパッケージからインストールした場合 {#db9dca5d}
 
@@ -750,7 +686,7 @@ upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する場合は次のように設�
 (setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
-■ OS X の場合
+■ macOS の場合
 
 ```
 (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
@@ -847,7 +783,7 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 (setq japanese-TeX-engine-default 'pdfuptex)
 ```
 
-■ OS X の場合
+■ macOS の場合
 
 ```
 (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
@@ -1059,7 +995,7 @@ inverse search については [Emacs#SumatraPDF との連携#inverse search](/E
 
 ## Skim との連携 (forward and inverse search) {#v5bdbf9d}
 
-forward search は [AUCTeX#インストール#OS X#設定](/AUCTeX/#n55816de) を参照してください．<br>
+forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) を参照してください．<br>
 C-c C-c displayline で forward search ができます．<br>
 
 AUCTeX は Skim の forward search に対応しています．<br>
