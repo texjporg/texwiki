@@ -84,7 +84,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:White;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -125,7 +125,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:Black;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -172,7 +172,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:Black;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -217,7 +217,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:Black;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -262,7 +262,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:Black;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -307,7 +307,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:#2E3436;background-color:#2E3436;"><ins>　<span style="color:Black;"><strong>←</strong></span>　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
 
@@ -360,7 +360,7 @@ LaTeX => PS => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -403,7 +403,7 @@ LaTeX => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -447,7 +447,7 @@ LuaLaTeX => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -488,7 +488,7 @@ Command line arguments to pass to<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -531,7 +531,7 @@ XeLaTeX => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <strong>\[ (La)TeX　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Preprocessor \]\[ Postprocessor \]\[ Viewer　　　\]</ins></span><br>
 
@@ -576,7 +576,7 @@ LaTeX => DVI => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -617,7 +617,7 @@ LaTeX => PS => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -652,7 +652,7 @@ Output<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]</ins></span><strong>\[ Postprocessor \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ Viewer　　　\]</ins></span><br>
 
@@ -704,7 +704,7 @@ XeLaTeX => PDF<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -743,7 +743,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -782,7 +782,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -823,7 +823,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -864,7 +864,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -908,7 +908,7 @@ TeX ファイルの行番号に対応する PDF ファイルの該当するペ�
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -949,7 +949,7 @@ PDF ファイルの先頭ページにジャンプします．<br>
 
 ***
 
-<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>×</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#2E3436;background-color:#2E3436;"><ins>　　 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#EEEEEE;"><ins>\[ (La)TeX　　　\]\[ Preprocessor \]\[ Postprocessor \]</ins></span><strong>\[ Viewer　　　\]</strong><br>
 
@@ -1043,7 +1043,7 @@ dvipdfmx で PDF ファイルを作成する場合は，プロファイルを La
 
 \[Build\]-\[Build Output\] をクリックします．
 
-エラーが見つかれば，×印が表示され，クリックするとエラー箇所にジャンプします．
+エラーが見つかれば，🗙印が表示され，クリックするとエラー箇所にジャンプします．
 
 間違った箇所を修正してもう一度ビルドします．
 
