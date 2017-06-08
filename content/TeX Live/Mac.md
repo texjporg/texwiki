@@ -36,6 +36,25 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
+### TeX Live 2017 のバイナリの動作環境に関する変更点 {#obbbdbf4}
+
+TeX Live 2017 以降は x86_64-darwin バイナリは Apple がセキュリティアップデートを提供している OS のみサポートすることになりました。
+
+セキュリティアップデートが提供されないレガシーな OS は x86_64-darwinlegacy バイナリ，i386-darwin バイナリ，powerpc-darwin バイナリのいずれかを使用します。
+
+TeX Live 2017 では TeX Live 2016 まで存在していた universal-darwin バイナリが削除され i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
+
+下の表で自分が使用する OS はどのバイナリをインストールすればよいのか確認できます。
+
+&#x2714; マークは使用する OS と対応するバイナリを示しています。
+
+|  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard | Mac OS X 10.5 Leopard (Intel) | Mac OS X 10.5 Leopard (PowerPC) |
+|---|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |
+| i386-darwin |  |  |  |  |  |  | &#x2714; | &#x2714; |  |
+| powerpc-darwin |  |  |  |  |  |  |  |  | &#x2714; |
+
 ### Xcode のインストール要求ダイアログについての注意 {#d359d79d}
 
 Xcode がインストールされていない環境下では，TeX Live のインストーラの実行中，および tlmgr によるアップデートの実行中に，次のようなダイアログが表示されて実行が中断される問題が知られています。
