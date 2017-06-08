@@ -36,9 +36,11 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2017 のバイナリの動作環境に関する変更点 {#obbbdbf4}
+### TeX Live 2017 以降のバイナリの動作環境に関する変更点 {#obbbdbf4}
 
-TeX Live 2017 以降は x86_64-darwin バイナリは Apple がセキュリティアップデートを提供している OS のみサポートすることになりました。
+TeX Live 2017 以降は x86_64-darwin バイナリは Apple がセキュリティアップデートを提供している OS のみサポートされることになりました。
+
+MacTeX-2017 / BasicTeX-2017 以降に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
 
 セキュリティアップデートが提供されないレガシーな OS は x86_64-darwinlegacy バイナリ，i386-darwin バイナリ，powerpc-darwin バイナリのいずれかを使用します。
 
@@ -48,12 +50,86 @@ TeX Live 2017 では TeX Live 2016 まで存在していた universal-darwin バ
 
 &#x2714; マークは使用する OS と対応するバイナリを示しています。
 
-|  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard | Mac OS X 10.5 Leopard (Intel) | Mac OS X 10.5 Leopard (PowerPC) |
-|---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |
-| i386-darwin |  |  |  |  |  |  | &#x2714; | &#x2714; |  |
-| powerpc-darwin |  |  |  |  |  |  |  |  | &#x2714; |
+|  | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard | Mac OS X 10.5 Leopard (Intel) | Mac OS X 10.5 Leopard (PowerPC) |
+|---|---|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |
+| i386-darwin |  |  |  |  |  |  |  | &#x2714; | &#x2714; |  |
+| powerpc-darwin |  |  |  |  |  |  |  |  |  | &#x2714; |
+
+#### TeX Live のインストール {#texliveinstall}
+
+TeX Live のインストールガイド
+
+- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
+- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されることになったので
+ここでは MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
+
+まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
+
+```
+$ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+```
+
+install-tl-unx.tar.gz を展開します．
+
+```
+$ tar xvf install-tl-unx.tar.gz
+```
+
+展開したインストーラのディレクトリに移動します．
+
+```
+$ cd install-tl*
+```
+
+root 権限でインストーラを実行します．
+オプションでダウンロードするリポジトリを指定できます．
+
+```
+$ sudo ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
+```
+
+```
+...
+```
+
+```
+Actions:
+ <I> start installation to hard disk
+ <H> help
+ <Q> quit
+```
+
+```
+Enter command: I
+```
+
+I を入力してインストールを開始します．
+サーバーの接続エラーが発生したり，何らかの理由により取得したアーカイブに問題があったりした場合はインストールが途中でストップします．
+この場合は，以下のコマンドで途中から再開できたりできなかったりします．
+
+```
+$ sudo ./install-tl --profile installation.profile
+```
+
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．
+
+インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
+
+```
+$ sudo /usr/local/texlive/????/bin/*/tlmgr path add
+```
+
+上記の ???? は 2017，\* は x86_64-darwin などにマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+
+```
+$ sudo /usr/local/texlive/2017/bin/x86_64-darwin/tlmgr path add
+```
+
+ヒラギノフォントを使用する場合は [macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>) を参照して設定してください．
 
 ### Xcode のインストール要求ダイアログについての注意 {#d359d79d}
 
@@ -119,7 +195,7 @@ macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじ
 そのうえで，macOS Sierra / OS X El Capitan 対応の大まかなセットアップ手順は以下のとおりです：
 
 1. TeX Live を最新の状態に更新
-    <!-- + ptex-fontmaps & cjk-gs-integrate.pl のバージョン確認 -->
+    <!-- + ptex-fontmaps (旧名:jfontmaps) & cjk-gs-integrate.pl のバージョン確認 -->
 
 1. 新しいヒラギノフォントへのシンボリックリンクを作成
 1. マップファイルの更新
