@@ -126,7 +126,7 @@ MacTeX のインストールの概略は以下のとおりです。
         - 新規インストール（アップグレード）時にはフォントが埋め込まれない設定となっているため，作成された PDF が「ファイルが壊れている」と見なされて開けないことがあります。
         - updmap-sys も実行されて各種の map ファイルが自動生成されます。
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
-    - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy, [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
+    - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
 1. <strong>Happy LaTeXing!</strong>
 
 #### Homebrew でインストール {#s59a1243}
