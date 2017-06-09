@@ -310,8 +310,6 @@ command_line_encoding.dvips =
     <!-- - -ftp://srv2.ftp.ne.jp/TeX/ptex-win32/current/ -->
     <!-- -[[会津大学:http://www.u-aizu.ac.jp/]] -->
     <!-- - -ftp://ftp.u-aizu.ac.jp/pub/tex/ptex-win32/current/ -->
-    <!-- -[[文教大学湘南キャンパス:http://open.shonan.bunkyo.ac.jp/]] -->
-    <!-- - -ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/ptex-win32/current/ -->
     <!-- -[[大島研究室:http://akagi.ms.u-tokyo.ac.jp/]]（[[東京大学:http://www.u-tokyo.ac.jp/]] [[大学院数理科学研究科:http://www.ms.u-tokyo.ac.jp/]]） -->
 
 - [東京大学数理科学研究科](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
@@ -323,7 +321,6 @@ command_line_encoding.dvips =
     <!-- - -ftp://ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
     <!-- - -ftp://srv2.ftp.ne.jp/pub/ctan/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.riken.go.jp/pub/CTAN/systems/win32/w32tex/ -->
-    <!-- - -ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/ -->
     <!-- - -ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/win32/w32tex/ -->
