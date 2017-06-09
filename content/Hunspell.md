@@ -25,7 +25,6 @@ HunspellはTeXに対応したスペルチェッカーです。もともとは、
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [TeXworks](/TeXworks/)
-- TexitEasy
 - [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/) ([DSpellCheck](https://github.com/Predelnik/DSpellCheck))
 
