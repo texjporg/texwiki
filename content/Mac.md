@@ -55,7 +55,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
-LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです．
+LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです．
 この場合は，Karabiner で Backslash が優先されるようにキーバインドを変更してください。
 
 <!-- ここに並べる統合環境は -->
@@ -73,8 +73,6 @@ LyX, TeXstudio, Texmaker, TeXworks, TexitEasy 等の Qt アプリケーション
         - 【注意】macOS で公式ビルドの TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できないので [TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください。
     - [Texmaker](/Texmaker/)
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /Users/pascalbrachet/poppler64/share/poppler に配置してください。(→ [Texmaker#組み込みの PDF ビューアに日本語を表示させる](/Texmaker/#a258817b))
-    - TexitEasy
-        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ TexitEasy#組み込みの PDF ビューアに日本語を表示させる)
     - TeXnicle
 
 - 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
@@ -175,6 +173,12 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 ### Karabiner によるキーバインドの変更 {#karabiner}
 
 macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
+
+### Ukelele  によるキーバインドの変更 {#pc59ea4e}
+
+Unicode Keyboard Layout Editor の [Ukelele](http://scripts.sil.org/ukelele) で，¥ を入力すると \ に変換することができます。
+
+- [Mac(Sierra)でのキーリマップ](http://uitspitss.hatenablog.com/entry/2017/05/31/031642)
 
 ### Hammerspoon によるキーバインドの変更 {#o4723e6f}
 
