@@ -101,39 +101,6 @@ $ sudo tlmgr update --self --all
 にパッケージのバックアップが保存されます．<br>
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．<br>
 
-#### フォント埋め込みの設定 {#b1f1c8d3}
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．<br>
-IPAexフォントを埋め込む場合は<br>
-
-```
-$ sudo kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．<br>
-
-TeX Live には IPAex フォント，uptex-ipaex.map が収録されています．<br>
-
-```
-$ kpsewhich ipaexm.ttf ipaexg.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ipaex/uptex-ipaex.map
-```
-
-upLaTeX + dvipdfmx を実行する場合は ptex2pdf が便利です．<br>
-
-```
-$ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
-```
-
 ### TeX Live/NetBSD {#ke8ac2b3}
 
 - [http://pkgsrc.se/wip/texlive2013](http://pkgsrc.se/wip/texlive2013)
