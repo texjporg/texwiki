@@ -119,33 +119,6 @@ $ tlmgr update --self --all
 
 にパッケージのバックアップが保存されますので，アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
 
-#### フォント埋め込みの設定 {#ea17ba92}
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．
-IPAex フォントを埋め込む場合は
-
-```
-$ kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．
-
-TeX Live には IPAex フォント，(u)ptex-ipaex.map が収録されています．
-
-```
-$ kpsewhich ipaexm.ttf ipaexg.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
-/usr/local/texlive/????/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
-$ kpsewhich uptex-ipaex.map
-/usr/local/texlive/????/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/ipaex/uptex-ipaex.map
-```
-
 #### タイプセットのしかた {#dab5905e}
 
 (u)pLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
@@ -153,13 +126,13 @@ $ kpsewhich uptex-ipaex.map
 - pLaTeX + dvipdfmx の場合
 
     ```
-    $ ptex2pdf -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex
+    $ ptex2pdf -l -ot '-synctex=1' foo.tex
     ```
 
 - upLaTeX + dvipdfmx の場合
 
     ```
-    $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex
+    $ ptex2pdf -u -l -ot '-synctex=1' foo.tex
     ```
 
 なお，ptex2pdf v0.5 以前では
@@ -198,23 +171,6 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 Cygwin オフィシャルインストーラの setup-x86_64.exe または setup-x86.exe を使って TeX Live/Cygwin をインストールできます．
 パッケージ選択画面で Publishing を Default から Install に変更すると TeX Live/Cygwin がフルインストールされます．
-
-#### フォント埋め込みの設定 {#s6b421fb}
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．
-IPAex フォントを埋め込む場合は
-
-```
-$ kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．
 
 #### タイプセットのしかた {#ba49fc90}
 
