@@ -206,7 +206,6 @@ $ sudo tlmgr paper a4
     - [ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
     - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/systems/mac/mactex/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/)
     - [ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ftp.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
