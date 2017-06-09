@@ -7,9 +7,13 @@ pukiwiki: "Kile"
 
 # Kile
 
-## [Kile](http://kile.sourceforge.net/) {#pab65dd4}
+## [Kile](http://kile.sourceforge.net/) (非推奨) {#pab65dd4}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+Kile の最新の安定版である Kile 2.1.3 はリリース日が 2012-09-23 で KDE Plasma 5 に対応していません。
+
+***
+
+***
 
 ## Kile とは {#v4a214a0}
 
@@ -35,6 +39,8 @@ Windows, Linux
 
 - [https://cgit.kde.org/kile.git/](https://cgit.kde.org/kile.git/)
     - [https://cgit.kde.org/kile.git/log/](https://cgit.kde.org/kile.git/log/)
+- [https://github.com/KDE/kile](https://github.com/KDE/kile)
+    - [https://github.com/KDE/kile/commits/master](https://github.com/KDE/kile/commits/master)
 
 ## 設定 {#g12179be}
 
