@@ -12,7 +12,7 @@ pukiwiki: "Qt"
 Qt はクロスプラットフォーム・アプリケーションフレームワークです．
 以下のプログラムが Qt を使用しています．
 
-- LaTeX editor: [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy
+- LaTeX editor: [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
 - PDF viewer: [Okular](/Okular/), [qpdfview](/qpdfview/)
 
 ***
