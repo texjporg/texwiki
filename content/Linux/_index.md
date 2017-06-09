@@ -137,23 +137,6 @@ $ sudo tlmgr restore （パッケージ名） （リビジョン番号）
 
 とすることで以前のバージョンに戻すことができます．
 
-#### フォント埋め込みの設定 {#updmap}
-
-kanji-config-updmap(-sys) を使用してフォント埋め込みの設定ができます．
-IPAex フォントを埋め込む場合は
-
-```
-$ sudo kanji-config-updmap-sys ipaex
-```
-
-または
-
-```
-$ kanji-config-updmap ipaex
-```
-
-を実行します．
-
 ## 統合環境やエディタのインストール {#editor}
 
 LaTeX での文書作成を支援するための統合環境・エディタが各種開発されています．
@@ -180,8 +163,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
-    - TexitEasy
-    - [Kile](/Kile/)
     - LaTeXila
 
 - 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
