@@ -165,7 +165,6 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
     - <strong>[LyX](/LyX/)</strong>
     - [Texmaker](/Texmaker/)
     - [TeXnicCenter](/TeXnicCenter/)
-    - TexitEasy
 
 - 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
     - [Emacs](/Emacs/)
