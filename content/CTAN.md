@@ -85,11 +85,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
         (HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
 
-#### FTP のみ {#FTP-only}
-
-- [文教大学湘南キャンパス](http://open.shonan.bunkyo.ac.jp/)
-    - [ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/](ftp://ftp.shonan.bunkyo.ac.jp/pub/TeX/CTAN/)
-        (FTP のみ)
+<!-- ***FTP のみ [#FTP-only] -->
 
 ### Ring Server によるミラーリング {#RingServer}
 
