@@ -28,7 +28,7 @@ Make について調べるとこうしたプログラムのコンパイルを前
 
 ## Make のインストール {#c29bc068}
 
-### OS X {#g1b3ea4a}
+### macOS {#g1b3ea4a}
 
 Xcode のコマンドラインツールをインストールしてください（[http://qiita.com/ksato9700/items/8a14189934c9360a668c](http://qiita.com/ksato9700/items/8a14189934c9360a668c) 参照）。<br>
 GNU Make がインストールされます。
@@ -101,7 +101,7 @@ test.dvi: test.tex
 
 Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行します。Makefile に記述したコマンドが呼び出され、PDFが生成されます。<br>
 このあとは、test.tex が更新されたり生成された test.pdf が削除されたりしなければ、再度make コマンドを実行しても、Makefile に記述したコマンドは呼び出されません。<br>
-OS XやLinux上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
+macOS や Linux 上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
 
 ```
 $ cd ~/latex/
