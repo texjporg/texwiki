@@ -279,7 +279,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -425,7 +425,7 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/lualatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$lualatex=q/lualatex -cmdx %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -434,7 +434,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdflua</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -462,7 +462,7 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/luajitlatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$lualatex=q/luajitlatex -cmdx %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -471,7 +471,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdflua</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -499,7 +499,7 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk-XeLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/xelatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$xelatex=q/xelatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -508,7 +508,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdfxe</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -796,7 +796,7 @@ lualatexS.bat を作成します．
 
 ```
 @echo off
-lualatex -synctex=1 %1 && ^
+lualatex -cmdx -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
@@ -848,7 +848,7 @@ luajitlatexS.bat を作成します．
 
 ```
 @echo off
-luajitlatex -synctex=1 %1 && ^
+luajitlatex -cmdx -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
@@ -1177,7 +1177,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --r15 --file "%~n1.pdf" && ^
 pdfclose --r15 --file "%~n1.pdf" & ^
-lualatex -synctex=1 %1 && ^
+lualatex -cmdx -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
 ```
 
@@ -1228,7 +1228,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --r15 --file "%~n1.pdf" && ^
 pdfclose --r15 --file "%~n1.pdf" & ^
-luajitlatex -synctex=1 %1 && ^
+luajitlatex -cmdx -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
 ```
 
