@@ -29,7 +29,7 @@ pukiwiki: "新 pTeX とBabel"
 - [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
 - [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
-#### OS X {#l63154db}
+#### macOS {#l63154db}
 
 TeX Live, MacTeX には TeX Live 所収の ハイフネーションファイルが同梱されています。
 
