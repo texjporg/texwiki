@@ -214,7 +214,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -f uptex-ipaex.map -f otf-up-ipaex.map -o %D %S/</ins><br>
+　　　　　　　　　<ins>$dvipdf=q/dvipdfmx %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
@@ -320,7 +320,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/lualatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$lualatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -329,7 +329,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdflua</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -347,7 +347,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-LuaJITLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/luajitlatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$lualatex=q/luajitlatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -356,7 +356,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdflua</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
@@ -374,7 +374,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　名前:　　　　<ins>Latexmk-XeLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$pdflatex=q/xelatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$xelatex=q/xelatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -383,7 +383,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 　　　　　　　　　<ins>$makeindex=q/upmendex %O -o %D %S/</ins><br>
 　　　　　　　　　<ins>-norc</ins><br>
 　　　　　　　　　<ins>-gg</ins><br>
-　　　　　　　　　<ins>-pdf</ins><br>
+　　　　　　　　　<ins>-pdfxe</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
