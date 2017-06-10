@@ -16,11 +16,10 @@ pukiwiki: "TeX Live/Windows"
 ## インストール {#rc65f8ae}
 
 ネットワークインストーラである install-tl-windows.exe / install-tl.zip と，全てのファイルが入っている ISO イメージからダウンロードする二つの方法があります．
-どちらをもちいてもインストーラの手順はほぼ変わりません．
-基本的にはネットワークインストーラがよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
 
-いくつか追加で設定を行っておくと更に便利です．
-追加設定の項もご覧ください．
+どちらを用いてもインストーラの手順はほぼ変わりません．基本的にはネットワークインストーラがよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
+
+いくつか追加で設定を行っておくと更に便利です．追加設定の項もご覧ください．
 
 ### ネットワークインストーラの場合 {#w369638d}
 
@@ -143,12 +142,15 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+TeX Live 2017 対応の事例です．
+
+- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
+
 TeX Live 2016 対応の事例です．
 
 - [WindowsユーザのためのpLaTeX環境(TeX Live 2016)のインストール方法](http://www.e.gsic.titech.ac.jp/~wakita/il16/md/texlive-windows.html)
 - [Windows 10 に TeX Live 2016 をインストール](http://www.muskmelon.jp/?p=1533)
 - [ゼロから作るTeX環境 (Windows版)](http://qiita.com/umireon/items/b540dc2c83412fc144d2)
-- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
     <!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
     <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-826.html]] -->
     <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編:http://yoshiiz.blog129.fc2.com/blog-entry-827.html]] -->
