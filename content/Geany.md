@@ -70,11 +70,11 @@ LaTeX -> <ins>P</ins>DF
 
 : latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "%f"
 
-: latexmk -e '$pdflatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdf "%f"
+: latexmk -e '$lualatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
 
-: latexmk -e '$pdflatex=q/luajitlatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdf "%f"
+: latexmk -e '$lualatex=q/luajitlatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
 
-: latexmk -e '$pdflatex=q/xelatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdf "%f"
+: latexmk -e '$xelatex=q/xelatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdfxe "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
