@@ -50,13 +50,13 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
 ほとんどの OS で動作します。つまり，ほとんどのコンピュータで使えます。
 
 - [Microsoft Windows](https://www.microsoft.com/ja-jp/windows)
-- UNIX&reg;（[macOS](http://www.apple.com/jp/macos/) など）
+- UNIX&reg;（[macOS](https://www.apple.com/jp/macos/) など）
 - UNIX 互換
     OS（[Linux OS](https://www.kernel.org/)，[FreeBSD](https://www.freebsd.org/)
     など）
 
 - Windows 上で UNIX ライクな環境を提供する [Cygwin](https://www.cygwin.com/)
-- モバイルオペレーティングシステム（[Android OS](https://www.android.com/)，[iOS](http://www.apple.com/jp/ios/) など）
+- モバイルオペレーティングシステム（[Android OS](https://www.android.com/)，[iOS](https://www.apple.com/jp/ios/) など）
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
