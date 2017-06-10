@@ -52,9 +52,9 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 #### Windows {#inst-windows}
 
-[TeX Live](</TeX Live/>) (win32, win64) および [W32TeX](/W32TeX/) に含まれていた xpdf utilities は最新の場合には poppler utilities で置き換えられました。 poppler utilities はすぐに使える状態になっています。
+[TeX Live](</TeX Live/>) あるいは [W32TeX](/W32TeX/) をインストールすれば poppler utilities はすぐに使える状態になっています。TeX Live (win32, win64) および W32TeX に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
 
-#### OS X {#inst-mac}
+#### macOS {#inst-mac}
 
 [TeX Live](</TeX Live/>) には Xpdf が含まれていないので，別途インストールします。
 
@@ -90,7 +90,7 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
         $ sudo port install xpdf +a4
         ```
 
-        pdffonts などのコマンド群は [Poppler](/Poppler/) の同名のコマンドと衝突しますので，デフォルトでは xpdf の接頭辞が付いています（例えば，pdffonts なら xpdf-pdffonts）。Mac OS X ユーザなら，通常は Poppler を使えば良いと思いますが，Xpdf を使わざるを得ない事情があり，xpdf という接頭辞をつけたくない場合は，no_mangle_names の variant を追加します。例えば，次のようにします。
+        pdffonts などのコマンド群は [Poppler](/Poppler/) の同名のコマンドと衝突しますので，デフォルトでは xpdf の接頭辞が付いています（例えば，pdffonts なら xpdf-pdffonts）。macOS ユーザなら，通常は Poppler を使えば良いと思いますが，Xpdf を使わざるを得ない事情があり，xpdf という接頭辞をつけたくない場合は，no_mangle_names の variant を追加します。例えば，次のようにします。
 
         ```
         $ sudo port xpdf +a4+no_mangle_names
