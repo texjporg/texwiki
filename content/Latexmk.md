@@ -135,7 +135,9 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
-  $pdflatex = 'lualatex %O -synctex=1 %S';
+  $pdflatex = 'pdflatex %O -synctex=1 %S';
+  $lualatex = 'lualatex -cmdx %O -synctex=1 %S';
+  $xelatex = 'xelatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
   $makeindex = 'upmendex %O -o %D %S';
@@ -152,7 +154,9 @@ if ($^O eq 'MSWin32') {
   }
 } else {
   $latex = 'uplatex %O -synctex=1 %S';
-  $pdflatex = 'lualatex %O -synctex=1 %S';
+  $pdflatex = 'pdflatex %O -synctex=1 %S';
+  $lualatex = 'lualatex %O -synctex=1 %S';
+  $xelatex = 'xelatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
   $makeindex = 'upmendex %O -o %D %S';
@@ -172,9 +176,11 @@ if ($^O eq 'MSWin32') {
 ***
 
 ```
-latexmk -gg -pdfdvi hoge.tex
-latexmk -gg -pdfps hoge.tex
-latexmk -gg -pdf hoge.tex
+latexmk -gg -pdfdvi foo.tex
+latexmk -gg -pdfps foo.tex
+latexmk -gg -pdf foo.tex
+latexmk -gg -pdflua foo.tex
+latexmk -gg -pdfxe foo.tex
 ```
 
 #### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vimtex, quickrun などの場合) {#ke005cd5}
@@ -189,7 +195,9 @@ latexmk -gg -pdf hoge.tex
 #!/usr/bin/env perl
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
-  $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
+  $pdflatex = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
+  $lualatex = 'lualatex -cmdx %O -synctex=1 -interaction=nonstopmode %S';
+  $xelatex = 'xelatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
   $makeindex = 'upmendex %O -o %D %S';
@@ -206,7 +214,9 @@ if ($^O eq 'MSWin32') {
   }
 } else {
   $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
-  $pdflatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
+  $pdflatex = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
+  $lualatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
+  $xelatex = 'xelatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
   $makeindex = 'upmendex %O -o %D %S';
@@ -226,9 +236,11 @@ if ($^O eq 'MSWin32') {
 ***
 
 ```
-latexmk -gg -pdfdvi hoge.tex
-latexmk -gg -pdfps hoge.tex
-latexmk -gg -pdf hoge.tex
+latexmk -gg -pdfdvi foo.tex
+latexmk -gg -pdfps foo.tex
+latexmk -gg -pdf foo.tex
+latexmk -gg -pdflua foo.tex
+latexmk -gg -pdfxe foo.tex
 ```
 
 ### リンク {#yb5452a3}
