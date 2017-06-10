@@ -13,7 +13,7 @@ Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Adobe Acrobat Reader DC には Continuous と Classic が存在します．
+Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 - [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
