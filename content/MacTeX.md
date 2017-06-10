@@ -147,14 +147,14 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
+- [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
+- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [2017年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2017/)
 - \[[El Capitan\] MacTeX-2016をインストールする](http://qiita.com/Aruneko/items/6a524896df0e90181044)
-- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
 - [TeX環境の構築方法【OS X El Capitan】](http://kengo92i.hatenablog.jp/entry/2016/05/04/204519)
-- [OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順](https://snap.textfile.org/20151006085255/)
-- [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
+    <!-- -[[OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順:https://snap.textfile.org/20151006085255/]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
 <!-- 不具合対応まで書かれていたりするので，残しておきたいと思います． -->
