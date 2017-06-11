@@ -88,7 +88,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             var c = fso.GetParentFolderName(currentTeXFile);
             var b = fso.GetBaseName(currentTeXFile);
             var cd = "cd /d " + ["\"", c, "\""].join("");
-            var pdflatex = "lualatex -synctex=1" + " " + ["\"", b, "\""].join("");
+            var pdflatex = "lualatex -cmdx -synctex=1" + " " + ["\"", b, "\""].join("");
             var cmd = "cmd /c " + cd + " && " + pdflatex;
             execute(cmd);
         }
@@ -101,7 +101,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             var c = fso.GetParentFolderName(currentTeXFile);
             var b = fso.GetBaseName(currentTeXFile);
             var cd = "cd /d " + ["\"", c, "\""].join("");
-            var pdflatex = "luajitlatex -synctex=1" + " " + ["\"", b, "\""].join("");
+            var pdflatex = "luajitlatex -cmdx -synctex=1" + " " + ["\"", b, "\""].join("");
             var cmd = "cmd /c " + cd + " && " + pdflatex;
             execute(cmd);
         }
