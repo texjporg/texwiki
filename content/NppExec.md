@@ -211,7 +211,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; lualatex -synctex=1 "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; lualatex -cmdx -synctex=1 "$(NAME_PART)"<br>
 
 <br>
 
@@ -254,7 +254,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; luajitlatex -synctex=1 "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; luajitlatex -cmdx -synctex=1 "$(NAME_PART)"<br>
 
 <br>
 
@@ -558,7 +558,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --r15 --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --r15 --file "$(NAME_PART).pdf" &amp; lualatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --r15 --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --r15 --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --r15 --file "$(NAME_PART).pdf" &amp; lualatex -cmdx -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --r15 --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -584,7 +584,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --r15 --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --r15 --file "$(NAME_PART).pdf" &amp; luajitlatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --r15 --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --r15 --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --r15 --file "$(NAME_PART).pdf" &amp; luajitlatex -cmdx -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --r15 --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
