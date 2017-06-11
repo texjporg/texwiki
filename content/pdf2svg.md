@@ -25,7 +25,7 @@ pdf2svg とは，[PDF](/PDF/) ファイルを SVG 形式に変換するツール
 
 ### インストール {#z23fb491}
 
-#### Mac OS X {#r128ce62}
+#### macOS {#r128ce62}
 
 - MacPorts では pdf2svg という名前の Port が用意されています．variants は universal のみです．
 
