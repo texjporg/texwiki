@@ -149,7 +149,7 @@ class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'lualatex -synctex=1 "' + b + '"'
+        pdflatex = 'lualatex -cmdx -synctex=1 "' + b + '"'
         notepad.save()
         os.chdir(c)
         console.clear()
@@ -174,7 +174,7 @@ class Command:
     def run(self):
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'luajitlatex -synctex=1 "' + b + '"'
+        pdflatex = 'luajitlatex -cmdx -synctex=1 "' + b + '"'
         notepad.save()
         os.chdir(c)
         console.clear()
