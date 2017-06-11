@@ -87,7 +87,7 @@ set noshellslash
 let g:quickrun_config = {
 \   'tex': {
 \       'command': 'lualatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
+\       'exec': ['%c -cmdx -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
 \   },
 \}
 ```
@@ -106,7 +106,7 @@ set noshellslash
 let g:quickrun_config = {
 \   'tex': {
 \       'command': 'luajitlatex',
-\       'exec': ['%c -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
+\       'exec': ['%c -cmdx -synctex=1 -interaction=nonstopmode "%S:t:r.tex"', 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n --remote-silent +\%%l \"\%%f\"" ' . '"%S:r.pdf"']
 \   },
 \}
 ```
@@ -151,7 +151,7 @@ let g:quickrun_config = {
 
 ***
 
-### OS X {#i9f3f366}
+### macOS {#i9f3f366}
 
 動作未確認です．<br>
 
