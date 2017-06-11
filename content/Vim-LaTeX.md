@@ -70,11 +70,11 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 - [https://github.com/vim-latex/vim-latex/issues](https://github.com/vim-latex/vim-latex/issues)
 - [https://sourceforge.net/p/vim-latex/bugs/](https://sourceforge.net/p/vim-latex/bugs/)
 
-### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [Karabiner を使って IME をノーマルモードで必ずオフにする](http://rcmdnk.github.io/blog/2013/06/20/computer-mac-keyremap4macbook-vim/) {#p586f5da}
+### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [macOS SierraでIMEをノーマルモードで必ずオフにする](https://rcmdnk.com/blog/2013/06/20/computer-mac-keyremap4macbook-vim/) {#p586f5da}
 
 ### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → $HOME/.vim/gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
-- [Issue 30 - macvim-kaoriya -IM挿入モードの中断 - MacVim KaoriYa - Google Project Hosting](https://github.com/splhack/macvim-kaoriya/issues/30) → $HOME/.vim/gvimrc に set imdisable
+- [IM挿入モードの中断 · Issue #30 · splhack/macvim-kaoriya · GitHub](https://github.com/splhack/macvim-kaoriya/issues/30) → $HOME/.vim/gvimrc に set imdisable
 
 ### Linux の GVim で Vim-LaTeX を使用する場合に発生する日本語入力に関する不具合 → ソースコードの修正またはコンソール版の Vim を使用する {#g843a69b}
 
@@ -103,15 +103,7 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 call dein#add('vim-latex/vim-latex')
 ```
 
-### NeoBundle を使用して GitHub の vim-latex からパッケージをインストールする場合 {#adee180e}
-
-[NeoBundle](https://github.com/Shougo/neobundle.vim) を使って Vim-LaTeX をインストールできます．
-
-```
-NeoBundle 'vim-latex/vim-latex'
-```
-
-### dein.vim/NeoBundle を使用せずに GitHub の vim-latex からパッケージをインストールする場合 {#g7a904f1}
+### dein.vim を使用せずに GitHub の vim-latex からパッケージをインストールする場合 {#g7a904f1}
 
 [https://github.com/vim-latex/vim-latex/archive/master.zip](https://github.com/vim-latex/vim-latex/archive/master.zip) をダウンロードします．
 
@@ -137,7 +129,7 @@ Vim を起動し
 
 を配置します．
 
-#### OS X, Linux の場合 {#w3182b39}
+#### macOS, Linux の場合 {#w3182b39}
 
 Vim を起動し
 
@@ -189,8 +181,8 @@ let g:Tex_FormatDependency_pdf = 'dvi,pdf'
 let g:Tex_FormatDependency_ps = 'dvi,ps'
 let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style" $*'
 "let g:Tex_CompileRule_pdf = 'pdflatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_pdf = 'lualatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
-"let g:Tex_CompileRule_pdf = 'luajitlatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+"let g:Tex_CompileRule_pdf = 'lualatex -cmdx -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
+"let g:Tex_CompileRule_pdf = 'luajitlatex -cmdx -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 "let g:Tex_CompileRule_pdf = 'xelatex -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 "let g:Tex_CompileRule_pdf = 'ps2pdf.exe $*.ps'
 let g:Tex_CompileRule_ps = 'dvips -Ppdf -o $*.ps $*.dvi'
@@ -208,7 +200,7 @@ let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-in
 
 SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携 (inverse search)](/Vim-LaTeX/#nefa91ff) を参照してください．
 
-### OS X {#aecb2dfb}
+### macOS {#aecb2dfb}
 
 動作未確認です．<br>
 
@@ -435,7 +427,7 @@ TeX ファイルを保存して \ll でコンパイルすれば，自動的に�
 
 編集中にコンパイル・プレビュー対象フォーマットを変更することができます．
 
-OS X ではデフォルトの対象フォーマットは PDF です．その他の OS ではデフォルトの対象フォーマットは DVI です．
+macOS ではデフォルトの対象フォーマットは PDF です．その他の OS ではデフォルトの対象フォーマットは DVI です．
 
 デフォルトの対象フォーマットを PDF に変更する場合は $HOME/vimfiles/vimrc または $HOME/.vim/vimrc に
 
