@@ -46,16 +46,16 @@ texdoc kpathsea
 kpsewhich -all texmf.cnf
 ```
 
-最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2016）のように 2 つのパスを返します。
+最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2017）のように 2 つのパスを返します。
 
 ```
-c:/texlive/2016/texmf.cnf
-c:/texlive/2016/texmf-dist/web2c/texmf.cnf
+c:/texlive/2017/texmf.cnf
+c:/texlive/2017/texmf-dist/web2c/texmf.cnf
 ```
 
 このように複数の有効な texmf.cnf がある場合，前にあるものほど高い優先度をもちます。
 つまり，後ろ（低い優先度）の texmf.cnf で設定された値は，前（高い優先度）の texmf.cnf によって上書きされます。
-TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2016/texmf.cnf の方を編集します。
+TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2017/texmf.cnf の方を編集します。
 TeX Live のバージョンを跨いで有効であって，上書きされないものは
 
 ```
@@ -245,10 +245,10 @@ shell_escape=t
 kpsewhich article.cls
 ```
 
-Windows 版の TeX Live 2016 では次のような結果になりました。
+Windows 版の TeX Live 2017 では次のような結果になりました。
 
 ```
-c:/texlive/2016/texmf-dist/tex/latex/base/article.cls
+c:/texlive/2017/texmf-dist/tex/latex/base/article.cls
 ```
 
 パス検索についても，コマンドによって検索対象のパスを変えることができます。
@@ -256,9 +256,9 @@ c:/texlive/2016/texmf-dist/tex/latex/base/article.cls
 
 ```
 kpsewhich pstricks.con -progname=latex
-#==>「c:/texlive/2016/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
+#==>「c:/texlive/2017/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
 kpsewhich pstricks.con -progname=xelatex
-#==>「c:/texlive/2016/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
+#==>「c:/texlive/2017/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
 ```
 
 #### パス検索の手順 {#j7738f5b}
@@ -299,7 +299,7 @@ Kpathsea によるパス検索は継のような手順に従って行われま�
 
 2016年11月28日に制限付きシェル実行 (restricted shell escape) に関する[重大な問題](</外部コマンドの実行/#security>)が判明しました．現在はこの問題への対処が行われているので，TeX Live をアップデートすることでこのセキュリティ上の問題を回避することができますが，何らかの事情で TeX Live のアップデートが行えない場合は，<strong>必ず以下の対処を行ってください</strong>．
 
-texmf.cnf ファイルは，TeX Live では
+texmf.cnf ファイルは，TeX Live 2016 では
 
 ```
 /usr/local/texlive/2016/texmf-dist/web2c   (unix)
