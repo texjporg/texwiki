@@ -74,22 +74,16 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### macOS の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない {#n5c2ae8e}
+### macOS の TeXworks で文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#f4128341}
 
-[TeXworks-0.4.6-Yosemite+-ja_JP](http://junk.greencherry.jp/macosx/texworks/) を使用してください．
-
-- [Built-in PDF viewer cannot display Japanese characters correctly. · Issue #623 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/623)
-- Mountain Lion で Texworks のプレビューが日本語表示できない ([forum:1082](https://okumuralab.org/tex/mod/forum/discuss.php?d=1082))
-- [http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea](http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea)
-
-### macOS の TeXworks 0.4.5 でバックスラッシュが円記号になってしまう {#f4128341}
-
-macOS の TeXworks 0.4.5 で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
+macOS の TeXworks で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
 
 - [backslash becomes yen · Issue #516 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/516)
 - TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
 
 macOS の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
+
+- \[[QTBUG-10543\] Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)（バグ報告はされているが，残念ながら未だ修正されていない）
 
 ### かな漢字変換をする際に文字が白く表示され，ハイライトに隠れて見えにくくなる {#s5bfc44e}
 
@@ -135,6 +129,13 @@ TeXworks で \[編集\]-\[設定\] のエディタタブの「エディタ全体
 <!-- 上記の作業を行うことで，かな漢字変換をしてもハイライトに隠れずに表示されました． -->
 
 <!-- -このままの状態ではエクスプローラーからダブルクリックして起動する場合に dll が見つからないといったエラーメッセージが表示されます．C:\MinGW\bin と C:\Qt\Qt5.6.0\5.6\mingw492_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります． -->
+
+<!-- **macOS の TeXworks 0.4.5 を使用すると TeXworks のプレビューが日本語表示できない [#n5c2ae8e] -->
+<!--  -->
+<!--  -->
+<!-- -[[Built-in PDF viewer cannot display Japanese characters correctly. · Issue #623 · TeXworks/texworks · GitHub:https://github.com/TeXworks/texworks/issues/623]] - -&gt; Closed -->
+<!-- -Mountain Lion で Texworks のプレビューが日本語表示できない ([[forum:1082]]) -->
+<!-- -http://blogs.yahoo.co.jp/igproj_fusion/15780910.html#commentsArea -->
 
 ## スクリプト {#m00b4a58}
 
