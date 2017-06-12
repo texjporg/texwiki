@@ -411,3 +411,4 @@ synctex help edit
 ## 関連リンク {#a0623ac1}
 
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
+- [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://twitter.com/aminophen/status/873785429765480448)
