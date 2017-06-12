@@ -15,7 +15,7 @@ pukiwiki: "FrontPage"
 
 TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/PostScript/) などに関する情報を提供する，読者参加型ページです．誰でも編集できますので，「誤りを見つけた」「読みづらいので直したい」「最新情報を追記したい」などあれば，気軽に編集して下さい．編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります．
 
-編集方針は[TeX Wiki編集方針](</TeX Wiki編集方針/>)にあります．また，編集方針についてのご意見がありましたら [TeX Forum での議論](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1485)の方にお寄せください．
+編集方針は[TeX Wiki編集方針](</TeX Wiki編集方針/>)にあります．また，編集方針についてのご意見がありましたら [TeX Forum での議論](https://okumuralab.org/tex/mod/forum/discuss.php?d=1485)の方にお寄せください．
 
 - [サイトマップ](</サイトマップ/>)
 - [ページの一覧](</ページ一覧/>)
@@ -38,6 +38,9 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 <!-- インストールまでが長いように思えたのでダイエットしてみました． -->
 
 ### お知らせ {#p837b6a7}
+
+- 【重要】2017/06/01 付の CTAN の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）について、非互換な変更が入っています。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。この影響を避けたい場合は、TeX Live 2017 の更新を控えてください。<br>
+    参考： [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)
 
 - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．<strong>可能な場合は，速やかに TeX Live のアップデートを実行してください</strong>．この問題についての詳細は[こちら](</外部コマンドの実行/#security>)を参照してください．
 - [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
