@@ -7,25 +7,25 @@ pukiwiki: "Ghostscript/macOS"
 
 # Ghostscript/macOS
 
-[Ghostscript](/Ghostscript/) > [OS X](/Mac/)
+[Ghostscript](/Ghostscript/) > [macOS](/Mac/)
 
-## Ghostscript for OS X {#ccf6bfc2}
-
-***
+## Ghostscript for macOS {#ccf6bfc2}
 
 ***
 
-### OS X 10.11 El Capitan に関する注意 {#b50634ac}
+***
+
+### macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
 以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
 
-OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>El Capitan 付属のヒラギノフォントを Ghostscript から利用することはできません。</strong></span>
+macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>macOS Sierra / OS X El Capitan 付属のヒラギノフォントを Ghostscript から利用することはできません。</strong></span>
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
 - [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
 - [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1177)
 
-なお，次のリンク先には El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](http://www.adobe.com/jp/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
+なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](http://www.adobe.com/jp/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
 - [OTC から OTF を抽出](http://www.muskmelon.jp/?p=1194)
 - [OTC から OTF を抽出（自動化）](http://www.muskmelon.jp/?p=1204)
@@ -36,9 +36,9 @@ OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更され�
 - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
     - [Ghostscript | 検索結果:  | マスクメロン](http://www.muskmelon.jp/?s=Ghostscript)
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
-- [https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew/blob/master/Library/Formula/ghostscript.rb)
-- [https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript/Portfile)
-- [https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile](https://trac.macports.org/browser/trunk/dports/print/ghostscript-fonts-hiragino/Portfile)
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
+- [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
 
 和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。<br>
 ヒラギノを利用するなら
@@ -53,7 +53,7 @@ OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更され�
 あとは /usr/local/share/ghostscript/\`gs --version\`/Resource/CIDFont/ の
 中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
 名前でシンボリックリンクを作っておきます。<br>
-例えば OS X なら
+例えば OS X Yosemite 以前なら
 
 ```
 $ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
@@ -126,7 +126,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 
 ### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#g10fce9f}
 
-#### <a id="cidfmap-osx">For OS X</a> {#eb079434}
+#### <a id="cidfmap-osx">For OS X Yosemite</a> {#eb079434}
 
 ***
 
@@ -188,7 +188,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /HYSMyeongJo-Medium-Acro      /HYSMyeongJoStd-Medium-Acro  ;
 /HYGoThic-Medium-Acro         /HYGoThic-Medium             ;
 
-%%% TrueType outline fonts in OS X
+%%% TrueType outline fonts in OS X Yosemite
 %%% See /System/Library/Fonts/
 %%%     /Library/Fonts/
 /STSong                       << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/STSong.ttf)     >> ;
