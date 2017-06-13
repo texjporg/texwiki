@@ -7,7 +7,7 @@ pukiwiki: "TeXstudio/設定/macOS"
 
 # TeXstudio/設定/macOS
 
-[TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > OS X
+[TeXstudio](/TeXstudio/) > [設定](</TeXstudio/設定/>) > [macOS](/Mac/)
 
 ***
 
