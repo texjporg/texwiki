@@ -40,4 +40,4 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 ### forward search {#hc4659c6}
 
-順検索 (forward search) を参照してください．
+[順検索 (forward search)](</LyX/設定/macOS/#d0572089>) を参照してください．
