@@ -7,9 +7,13 @@ pukiwiki: "Xpdf"
 
 # Xpdf
 
-## [Xpdf](http://www.foolabs.com/xpdf/) --- PDF 操作ツール {#z338a0d1}
+## [Xpdf](http://www.foolabs.com/xpdf/) --- PDF 操作ツール (非推奨) {#z338a0d1}
 
-Xpdf は Unix 系 OS で利用できる PDF ビューア，および PDF 操作ツールです。
+現在の Linux ディストリビューションや TeX Live 2017 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities ですので Xpdf を使わざるを得ない事情がなければ [Poppler](/Poppler/) をおすすめします。
+
+Xpdf は 2014-05-28 にリリースされた Xpdf 3.04 が最新のバージョンですが Poppler は現在でも開発が続けられています。 
+
+Xpdf は X Window System で利用できる PDF ビューア，および Windows, macOS, Linux で動作する PDF 操作ツールです。
 
 Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
@@ -120,8 +124,8 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
 
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
-    - [/trunk/dports/graphics/xpdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/xpdf/Portfile)
-        - [homebrew/Library/Formula/xpdf.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/xpdf.rb)
+    - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
+        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb)
 
 #### Linux {#inst-linux}
 
@@ -141,6 +145,7 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
     [forum:1104](https://okumuralab.org/tex/mod/forum/discuss.php?d=1104)
 
 - [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
+- Xpdf の pdftotext （PDFファイルからテキストを抽出．参考：[＠IT：PDFファイルからテキストを抽出するには](http://www.atmarkit.co.jp/flinux/rensai/linuxtips/745textfpdf.html)）
 
 #### ライセンス {#license}
 
