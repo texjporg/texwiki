@@ -535,11 +535,11 @@ pdf2htmlEX はコードを適切に修正すれば Windows でも動作します
 
 Cygwin では問題なく動作するようです．<br>
 
-### OS X {#u6860a4e}
+### macOS {#u6860a4e}
 
 #### Homebrew {#db279f00}
 
-- [https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/pdf2htmlex.rb)
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/pdf2htmlex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/pdf2htmlex.rb)
 
 ```
 $ brew install pdf2htmlex
@@ -547,7 +547,7 @@ $ brew install pdf2htmlex
 
 #### MacPorts {#ub0beda7}
 
-- [http://trac.macports.org/browser/trunk/dports/textproc/pdf2htmlex/Portfile](http://trac.macports.org/browser/trunk/dports/textproc/pdf2htmlex/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/textproc/pdf2htmlex/Portfile](https://github.com/macports/macports-ports/blob/master/textproc/pdf2htmlex/Portfile)
 
 ### Linux {#bbc3ecf8}
 
