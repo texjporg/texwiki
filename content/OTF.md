@@ -35,7 +35,7 @@ TeX Live や W32TeX（フルインストール）とともにインストール�
 ### CMap {#n2a34850}
 
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。
-[adobe-type-tools/cmap-resources · GitHub](https://github.com/adobe-type-tools/cmap-resources/) から "Download ZIP" をクリックすると、
+[adobe-type-tools/cmap-resources · GitHub](https://github.com/adobe-type-tools/cmap-resources/) から "Clone or download" &gt; "Download ZIP" をクリックすると、
 Adobe-Identity-0,
 Adobe-Japan1-6,
 Adobe-GB1-5,
