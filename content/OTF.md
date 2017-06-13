@@ -32,33 +32,6 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
 
 TeX Live や W32TeX（フルインストール）とともにインストールされるので，特に追加でインストールする必要はありません。
 
-<!-- **TeX Live [#da8ed89a] -->
-<!-- TeX Live では最初から japanese-otf パッケージ，japanese-otf-uptex パッケージがインストールされます。 -->
-<!-- バージョンは[[ベータ版:http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/otf.sty?view=markup]]に相当します。 -->
-<!--  -->
-<!-- **W32TeX [#z4ee6291] -->
-<!--  -->
-<!-- [[W32TeX]] に含まれている &ref(ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/otfbeta.tar.xz); をダウンロードします。 -->
-<!-- これを例えば C:\temp\ に入れます。 -->
-<!-- コマンド プロンプトで次のように打ち込みます。 -->
-<!--  -->
-<!--  PS C:\Users\$Env:USERNAME// c: -->
-<!--  PS C:\Users\$Env:USERNAME// cd \w32tex -->
-<!--  PS C:\w32tex// .\tar xvf C:/temp/otfbeta.tar.xz -->
-<!--  -->
-<!-- dvipdfmx 用の map ファイルの置き場所は $TEXMF/fonts/map/dvipdfmx// です。 -->
-<!--  -->
-<!-- W32TeX の tar は GNU tar 1.11.8 + 2.2(WIN32) です。 -->
-<!--  -->
-<!--  PS C:\w32tex// .\tar - -version -->
-<!--  GNU tar 1.11.8 + 2.2(WIN32) -->
-<!--  -->
-<!-- GNU tar 1.11.8 + 2.2(WIN32) の場合，圧縮フィルタ用のオプション文字を省略できます。つまり，次で OK です: -->
-<!--  -->
-<!--  PS C:\w32tex// .\tar xvf C:/temp/otfbeta.tar.xz -->
-<!--  -->
-<!-- [[Tar - GNU Project - Free Software Foundation (FSF):http://www.gnu.org/software/tar/]] によると GNU tar 1.15 (2004-12-20) 以降ではアーカイブの種類を指定するオプションが省略可能になり，GNU tar 1.22 (2009-03-05) で xz がサポートされたようです。 -->
-
 ### CMap {#n2a34850}
 
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。
@@ -122,7 +95,7 @@ Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパッ�
 ***
 
 これを “hoge.tex” という名前で UTF-8 で保存します。
-コマンドプロンプトやターミナルエミュレータで次のようにして処理します。
+Windows PowerShell またはコマンドプロンプトやターミナルエミュレータで次のようにして処理します。
 
 - pLaTeX (ptex2pdf) の場合
 
@@ -283,10 +256,10 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 #### Microsoft Windows の場合 {#p413a15f}
 
 $TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成して必要があれば mktexlsr を実行します。
-シンボリックリンクは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
+シンボリックリンクは管理者権限で「Windows PowerShell 」を開き，New-Item コマンドレットを実行あるいは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
-コマンド プロンプトで次のようにして処理します。
+Windows PowerShell またはコマンド プロンプトで次のようにして処理します。
 
 - upLaTeX (ptex2pdf) の場合
 
@@ -868,7 +841,7 @@ ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.
 ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 ```
 
-Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
+Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「Windows PowerShell 」を開き，New-Item コマンドレットを実行あるいは管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
 #### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
 
@@ -890,7 +863,7 @@ ptex2pdf -u -l -od "-f uptex-morisawa-pr6n-04.map -f otf-up-morisawa-pr6n.map" h
 ptex2pdf -u -l -od "-f morisawapr6n04.map" hoge.tex
 ```
 
-Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
+Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/morisawa/ に C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等のシンボリックリンク（管理者権限で「Windows PowerShell 」を開き，New-Item コマンドレットを実行あるいは管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある A-OTF-RyuminPr6N-Light.otf 等の otf ファイルを $TEXMF/fonts/opentype/morisawa/ に直接コピーすることはライセンス上はおろか，プロテクトがかかっているため技術的にもできません）。
 
 ### <a id="map-dvips">For dvips</a> {#k1eb9f9c}
 
