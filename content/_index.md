@@ -40,7 +40,8 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 ### お知らせ {#p837b6a7}
 
 - 【重要】2017/06/01 付の CTAN の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）について、非互換な変更が入っています。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。この影響を避けたい場合は、TeX Live 2017 の更新を控えてください。<br>
-    参考： [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)
+    参考： [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)<br>
+    参考：[graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件](http://qiita.com/zr_tex8r/private/a0516f211831a3fc2c0e)
 
 - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．<strong>可能な場合は，速やかに TeX Live のアップデートを実行してください</strong>．この問題についての詳細は[こちら](</外部コマンドの実行/#security>)を参照してください．
 - [奥村晴彦先生](https://oku.edu.mie-u.ac.jp/~okumura/)が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[日本語 TeX 開発コミュニティ](https://texjp.org/)上の [https://texwiki.texjp.org/](/) に移転しました．
@@ -54,7 +55,7 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 ### TeX をインストールしよう {#w774cf70}
 
-詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OSごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
+詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OS ごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
 
 インストールせずに Web で利用することもできます。 → [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)（Web上で利用できるTeX/LaTeX），[TeX を Web で](</TeXをWebで/>)（解説）
 
