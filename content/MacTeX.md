@@ -78,17 +78,7 @@ MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マ�
 Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
-<!-- ***TeX Distribution（システム環境設定） [#w29d901c] -->
-<!--  -->
-<!-- -[[Mac TeX Toolbox:https://sourceforge.net/projects/mactextoolbox/]] -->
-<!--  -->
-<!-- 「システム環境設定」にインストールされます。複数の TeX システムをインストールしている場合（例えば過年度の TeX Live/MacTeX など），TeX Distribution からそれらを切り替えることができます。 -->
-
 ### インストール {#t244993f}
-
-MacTeX のインストール＆日本語環境構築法は，次のページで詳しく解説されています。
-
-- [MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20160608/1465311609)
 
 #### MacTeX.pkg でインストール {#j62e687a}
 
@@ -102,32 +92,15 @@ Google Chrome, Mozilla Firefox で MacTeX をダウンロードしてインス�
 MacTeX のインストールの概略は以下のとおりです。
 
 1. [MacTeX のホームページ](http://tug.org/mactex/)または[ミラーサイト](/MacTeX/#mirror)から MacTeX.pkg をダウンロードします。
-    - 「本家」の MacTeX からのダウンロードも，自動的に CTAN のミラーサイトからのダウンロードとなります。
-    - MacTeXtras.zip は，追加のフロントエンドなどが収録されています。必須ではありません。（→[MacTeXtrasの説明](http://tug.org/mactex/mactextras.html)）
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
-    - <strong>手動でパスを通す必要はありません</strong>。（→[What is Installed.pdf を参照](http://tug.org/mactex/What_Is_Installed.pdf)）<br>PATH，MANPATH はインストール時に適切に自動設定されます。<br>
-        ターミナルで以下のコマンドを実行し，返ってきた PATH に <strong>/Library/TeX/texbin</strong> が含まれていれば大丈夫です。
+1. [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。
+1. ヒラギノフォントを TeX でも利用する場合は設定します。（→[macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>)）
 
-        ```
-        $ echo $PATH
-        ```
+> - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできます。
 
-        - <strong>ターミナル初心者への注意：</strong> 上記コマンドの先頭の <strong>$</strong> はターミナルを起動すると示される「コマンド入力待ちの記号（プロンプト）」を表します。従って，実際に入力するのは echo $PATH です。
-        - [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)からインストールした場合など，別途 Ghostscript をインストールして使用する場合は，そのために改めてパスを通す必要があるかもしれません。
-        - 以前に MacPorts または Fink からインストールした TeX が残っている場合は，パスの優先順位の再設定が必要です。（→[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
-1. ターミナル上で sudo tlmgr update --self --all または [tlmgr](/tlmgr/) の GUI アプリケーションである [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。（→[tlmgr を使用してのアップデート](</TeX Live/Mac/#p3c663c9>)）
-1. 日本語環境を整えます。
-    - ヒラギノフォントを TeX でも利用可能にします。（→[日本語環境の整備](</TeX Live/Mac/#i9febc9b>)）
-        - 以前の TeX Live で既に設定済みの場合は，この手順は不要です（ただし，OS X El Capitan へのアップデート後にまだ作業を行っていない場合は必要になります）。
-        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える macOS ならばヒラギノを利用可能にする設定は有用でしょう。
-    - Ghostscript でも日本語が使えるようにします。（→[Ghostscript で日本語を扱えるようにする設定](</TeX Live/Mac/#mc6bf937>)）<strong><span style="color:red;">注意！</span>OS X El Capitan ではシステムのフォント回りの設定が大幅に変更になったため Ghostscript が未対応で，この設定は一部失敗します。</strong>
-        - cjk-gs-integrate.pl を実行すると，使用可能なフォントが Ghostscript 用に登録されます。
-    - sudo kanji-config-updmap-sys を実行して PDF に埋め込むフォントを指定します。（→[kanji-config-updmap(-sys) ](</TeX Live/Mac/#hf34afcc>)）
-        - 新規インストール（アップグレード）時にはフォントが埋め込まれない設定となっているため，作成された PDF が「ファイルが壊れている」と見なされて開けないことがあります。
-        - updmap-sys も実行されて各種の map ファイルが自動生成されます。
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
-    - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
-1. <strong>Happy LaTeXing!</strong>
+
+> - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
 
 #### Homebrew でインストール {#s59a1243}
 
@@ -147,13 +120,14 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
+- [MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20160608/1465311609)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [2017年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2017/)
 - \[[El Capitan\] MacTeX-2016をインストールする](http://qiita.com/Aruneko/items/6a524896df0e90181044)
 - [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
-- [TeX環境の構築方法【OS X El Capitan】](http://kengo92i.hatenablog.jp/entry/2016/05/04/204519)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
+    <!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
     <!-- -[[OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順:https://snap.textfile.org/20151006085255/]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
