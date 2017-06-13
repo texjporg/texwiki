@@ -68,7 +68,7 @@ pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plug
 ### macOS {#y8d21820}
 
 - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
-- [https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile](https://trac.macports.org/browser/trunk/dports/gnome/evince/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
 ### Arch Linux {#eb51c4f9}
 
