@@ -7,14 +7,16 @@ pukiwiki: "TeXlipse/設定/macOS"
 
 # TeXlipse/設定/macOS
 
-[TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > OS X
+[TeXlipse](/TeXlipse/) > [設定](</TeXlipse/設定/>) > [macOS](/Mac/)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## ビルダー設定 <a id="builder"></a> {#vcf0d397}
 
 動作未確認です．<br>
-OS X の MacTeX, TeX Live の場合 uplatex は euptex にリンクされています．<br>
+macOS の MacTeX, TeX Live の場合 uplatex は euptex にリンクされています．<br>
 設定で \[Browse...\] を使用するとリンク先の euptex に変更されてしまい LaTeX 文書がタイプセットできなくなるので \[Browse...\] は使用せずに直接パスを指定してください．<br>
 
 <!-- -texlipse日本語コンパイルできない（mac）→ 解決できました ([[qa:56663]], [[qa:56664]], [[qa:56665]], [[qa:56666]]) -->
