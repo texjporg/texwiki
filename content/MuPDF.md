@@ -7,7 +7,7 @@ pukiwiki: "MuPDF"
 
 # MuPDF
 
-## [MuPDF](http://www.mupdf.com/) {#x9985d4a}
+## [MuPDF](https://www.mupdf.com/) {#x9985d4a}
 
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 また MuPDF は PDF/XPS/CBZ のパーサ/レンダリングライブラリとしても使用できます．
@@ -22,17 +22,17 @@ MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 
 ### 動作環境 {#u6c9b420}
 
-Windows, OS X, Linux, Android, iOS
+Windows, macOS, Linux, Android, iOS
 
 ### インストール {#m15a5d1f}
 
 #### Windows {#j0820160}
 
-- [http://www.mupdf.com/downloads/](http://www.mupdf.com/downloads/) から mupdf-\*-windows.zip をダウンロードして展開します．
+- [https://www.mupdf.com/downloads/](https://www.mupdf.com/downloads/) から mupdf-\*-windows.zip をダウンロードして展開します．
 
-#### OS X {#bad1a3d8}
+#### macOS {#bad1a3d8}
 
-- [https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb](https://github.com/Homebrew/homebrew-x11/blob/master/mupdf.rb)
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/mupdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/mupdf.rb)
 
 Homebrew を利用してインストールする場合は次のようにします．
 
@@ -40,7 +40,7 @@ Homebrew を利用してインストールする場合は次のようにしま�
 brew install mupdf
 ```
 
-- [/trunk/dports/graphics/mupdf/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/mupdf/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/graphics/mupdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/mupdf/Portfile)
 
 MacPorts を利用してインストールする場合は次のようにします．
 
@@ -146,7 +146,7 @@ popd
 
 #### ライセンス {#kcee43f7}
 
-[GNU Affero General Public License (AGPL)](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=COPYING;hb=HEAD), [Artifex Commercial License](http://www.artifex.com/page/licensing-information.html)
+[GNU Affero General Public License (AGPL), Artifex Commercial License](http://artifex.com/licensing/)
 
 #### リリース情報/変更履歴 {#vbbec018}
 
