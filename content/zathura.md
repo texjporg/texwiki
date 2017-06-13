@@ -9,7 +9,9 @@ pukiwiki: "zathura"
 
 ## [zathura](https://pwmt.org/projects/zathura/) {#z4200d90}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## zathura とは {#s6eb3d04}
 
@@ -26,7 +28,7 @@ PDF ファイルや PS ファイルが表示できます．
 
 ### 動作環境 {#q9b59e7d}
 
-OS X, Linux, BSD
+macOS, Linux, BSD
 
 [Known supported distributions](https://pwmt.org/projects/zathura/installation/#known-supported-distributions) を参照．
 
@@ -55,11 +57,12 @@ Version 0.3.4 以降は [SyncTeX](/SyncTeX/) で forward and inverse search, for
 
 ## ダウンロード/インストール {#w2221884}
 
-### OS X {#hcc17832}
+### macOS {#hcc17832}
 
-- [/trunk/dports/office/zathura](http://trac.macports.org/browser/trunk/dports/office/zathura/Portfile)
-- [/trunk/dports/office/zathura-plugin-pdf-poppler](http://trac.macports.org/browser/trunk/dports/office/zathura-plugin-pdf-poppler/Portfile)
-- [/trunk/dports/office/zathura-plugin-pdf-mupdf](http://trac.macports.org/browser/trunk/dports/office/zathura-plugin-pdf-mupdf/Portfile)
+- [https://github.com/zegervdv/homebrew-zathura](https://github.com/zegervdv/homebrew-zathura)
+- [https://github.com/macports/macports-ports/blob/master/office/zathura/Portfile](https://github.com/macports/macports-ports/blob/master/office/zathura/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/office/zathura-plugin-pdf-poppler/Portfile](https://github.com/macports/macports-ports/blob/master/office/zathura-plugin-pdf-poppler/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/office/zathura-plugin-pdf-mupdf/Portfile](https://github.com/macports/macports-ports/blob/master/office/zathura-plugin-pdf-mupdf/Portfile)
 
 ### Arch Linux {#h8cd5d50}
 
