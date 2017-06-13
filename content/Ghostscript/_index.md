@@ -31,6 +31,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) の Ghostscript (tlgs.win32) はこの脆弱性が修正されています．
 
+- [JVNDB-2017-002808 Ghostscript に任意のコードが実行可能な脆弱性 - JVN iPedia - 脆弱性対策情報データベース](http://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002808.html)
 - [JVNVU#98641178: Ghostscript に任意のコードが実行可能な脆弱性](http://jvn.jp/vu/JVNVU98641178/)
 - \[[texlive\] Revision 44181](http://www.tug.org/svn/texlive?view=revision&revision=44181) gs-9.21: apply the patch to fix a bug ([http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=57f20719))
 - \[[texlive\] Revision 44112](http://www.tug.org/svn/texlive?view=revision&revision=44112) Apply security patch for gs-9.21 ([https://ghostscript.com/pipermail/gs-commits/2017-April/021285.html](https://ghostscript.com/pipermail/gs-commits/2017-April/021285.html))
@@ -95,7 +96,7 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 ### 各 OS 特有の Ghostscript 情報 {#w33eec77}
 
 - [Ghostscript/Windows](/Ghostscript/Windows/)
-- Ghostscript/OS X
+- [Ghostscript/macOS](/Ghostscript/macOS/)
 - [Ghostscript/Linux](/Ghostscript/Linux/)
 
 ### 使い方 {#odaff2e6}
