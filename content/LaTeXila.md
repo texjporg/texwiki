@@ -9,20 +9,20 @@ pukiwiki: "LaTeXila"
 
 ## [LaTeXila](https://wiki.gnome.org/Apps/LaTeXila) {#e966f73d}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-<div style="clear:both"></div>
+***
 
 ## LaTeXila とは {#h4d58d3b}
 
-LaTeXila は LaTeX 統合環境 (LaTeX エディタ) です．<br>
-SyncTeX に対応しています．<br>
+LaTeXila は LaTeX 統合環境 (LaTeX エディタ) です．
+SyncTeX に対応しています．
 
 - [LaTeXila - LaTeX editor for GNOME](https://wiki.gnome.org/Apps/LaTeXila)
 
 ### 動作環境 {#a52783ff}
 
-Windows, Linux
+Windows, macOS, Linux
 
 ### License {#a34a81c6}
 
@@ -55,6 +55,14 @@ pacman -S mingw-w64-x86_64-latexila
 
 ```
 pacman -S mingw-w64-i686-latexila
+```
+
+### macOS {#b3c38ac4}
+
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/latexila.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/latexila.rb)
+
+```
+brew install latexila
 ```
 
 ## Build Tool {#t1320044}
