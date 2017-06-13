@@ -178,7 +178,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
     （多くの場合，ヒラギノフォントを OS X にたよらず購入していることが想定されますが…）
     - 参考：[OS X El Capitan（10.11、10.11.1）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan_1011_10111.html)
     - 追記 (2015-12-11)：OS X El Capitan 10.11.2 でついに深刻な問題が解消されました。[OS X El Capitan（10.11.2）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan.html)
-    - 追記 (2016-9-21)：macOS Sierra 10.12 と OS X El Capitan 10.11.6 に搭載のヒラギノフォントは同じ仕様です。[macOS Sierra（10.12）搭載のヒラギノフォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_macOS_font.html)
+    - 追記 (2016-9-21)：macOS Sierra 10.12 と OS X El Capitan 10.11.6 に搭載のヒラギノフォントは同じ仕様です。[macOS Sierra（10.12）搭載のヒラギノフォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_macOS_font.html), [ヒラギノフォントとMac OS Xのバージョン相関表](http://www.screen.co.jp/ga_product/sento/support/otf_ver_hiragino.html)
 
 - macOS Sierra / OS X El Capitan に新たに収録された日本語フォントの多くは，従来の拡張子 .otf の OpenType Font を束ねた形式の OpenType Collection Font です。
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
