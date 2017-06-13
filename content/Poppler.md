@@ -13,7 +13,7 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 ビューアとして Poppler を使用して問題が発生する場合は [MuPDF](/MuPDF/) を使用することを検討してください。
 以下のプログラムが PDF ビューアとして Poppler を使用しています。
 
-- LaTeX editor: [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), TexitEasy
+- LaTeX editor: [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/)
 - PDF viewer: [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/) (zathura-pdf-poppler), [qpdfview](/qpdfview/) (pdf-plugin)
 
 また，Xpdf と同様に PDF ユーティリティとしても有用です。
@@ -33,7 +33,12 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 #### Windows {#v190b38b}
 
-[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，ビルド済みの Poppler のユーティリティ類を入手することができます。
+TeX Live や W32TeX をインストールしている場合は poppler utilities が使用できます．
+
+Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
+使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
+
+[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，ビルド済みの Poppler のユーティリティ類を入手することもできます。
 以下が利用できます：
 
 - pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
@@ -52,14 +57,21 @@ pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
 pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
 ```
 
-#### OS X {#l3620b9b}
+#### macOS {#l3620b9b}
 
-MacPorts を利用したインストールが可能です。
-poppler という名前の Port をインストールします。
+Homebrew あるいは MacPorts を利用したインストールが可能です。
+
+Homebrew の場合は poppler をインストールします。
+
+```
+$ brew install poppler
+```
+
+MacPorts の場合は poppler と poppler-data という名前の Port をインストールします。
 variants は universal のみです。
 
 ```
-$ sudo port install poppler
+$ sudo port install poppler poppler-data
 ```
 
 poppler をインストールすると下記の便利なコマンドが使えます。
@@ -82,8 +94,9 @@ $ port contents poppler | grep /bin
 なお，[Xpdf](/Xpdf/) 関連の Port（具体的には xpdf-tools と pdftohtml が該当）がインストールされていると衝突してインストールできなくなります。
 Poppler をインストールしたい場合は，xpdf-tools と pdftohtml をアンインストールしてください。
 
-- [homebrew / Library / Formula / poppler.rb](https://github.com/mxcl/homebrew/blob/master/Library/Formula/poppler.rb)
-- [/trunk/dports/graphics/poppler/Portfile](https://trac.macports.org/browser/trunk/dports/graphics/poppler/Portfile)
+- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb)
+- [https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile)
+- [https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile)
 
 #### Arch Linux {#kbfeb6e5}
 
