@@ -59,7 +59,6 @@ Notepad++ の派生版 で EUC-JP に対応したものが公開されていま�
 - [Notepad++ JS](https://ja.osdn.net/projects/l2jacmjpn/)
     - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
     - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
-- [Notepad++ EUC-JP 対応版](http://www.geocities.jp/npp_euc_jp/)
 
 ### 日本語言語ファイル {#i35c46e6}
 
