@@ -27,16 +27,7 @@ collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/
 BasicTeX のインストールの概略は以下のとおりです。
 
 1. ダウンロードした BasicTeX.pkg をダブルクリックしてインストールします。
-    - <strong>手動でパスを通す必要はありません</strong>。
-        ターミナルで以下のコマンドを実行し，返ってきた PATH に <strong>/Library/TeX/texbin</strong> が含まれていれば大丈夫です。
-
-        ```
-        $ echo $PATH
-        ```
-
-        - <strong>ターミナル初心者への注意：</strong> 上記コマンドの先頭の <strong>$</strong> はターミナルを起動すると示される「コマンド入力待ちの記号（プロンプト）」を表します。従って，実際に入力するのは echo $PATH です。
-        - 以前に MacPorts または Fink からインストールした TeX が残っている場合は，パスの優先順位の再設定が必要です。（→[Multiple TeX Distributions](http://tug.org/mactex/multipletexdistributions.html)）
-1. ターミナル上で sudo tlmgr update --self --all を実行し，最新版までアップデートします。（→[tlmgr を使用してのアップデート](</TeX Live/Mac/#p3c663c9>)）
+1. ターミナル上で sudo tlmgr update --self --all を実行し，最新版までアップデートします。
 1. BasicTeX には標準で日本語 pTeX / upTeX が入っていませんので，collection-langjapanese を追加でインストールします。
 
     ```
@@ -45,17 +36,11 @@ BasicTeX のインストールの概略は以下のとおりです。
 
     collection-langjapanese をインストールすれば，依存関係で collection-langcjk もインストールされます。
 
-1. 日本語環境を整えます。
-    - ヒラギノフォントを TeX でも利用可能にします。（→[日本語環境の整備](</TeX Live/Mac/#i9febc9b>)）
-        - 以前の TeX Live で既に設定済みの場合は，この手順は不要です（ただし，El Capitan へのアップデート後にまだ作業を行っていない場合は必要になります）。
-        - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできますが，高品質なフォントであるヒラギノが使える macOS ならばヒラギノを利用可能にする設定は有用でしょう。
-    - sudo kanji-config-updmap-sys を実行して PDF に埋め込むフォントを指定します。（→[kanji-config-updmap(-sys) ](</TeX Live/Mac/#hf34afcc>)）
-        - 新規インストール（アップグレード）時にはフォントが埋め込まれない設定となっているため，作成された PDF が「ファイルが壊れている」と見なされて開けないことがあります。
-        - updmap-sys も実行されて各種の map ファイルが自動生成されます。
-1. <strong>Happy LaTeXing!</strong>
+1. ヒラギノフォントを TeX でも利用する場合は設定します。（→[macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>)）
+
+> - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできます。
 
 [Ghostscript](/Ghostscript/) は別途インストールする必要があります。
-また，[TeXShop](/TeXShop/) などの追加アプリケーションをインストールするとよいでしょう。
 
 #### Homebrew でインストール {#w71ff68b}
 
@@ -68,17 +53,7 @@ $ sudo tlmgr install collection-langjapanese
 $ sudo tlmgr paper a4
 ```
 
-#### インストールの事例 {#q65e25e8}
-
-以下のインストール事例も参考になります。
-
-- [MacでのTeX環境設定メモ](http://ki-chi.jp/?p=679)
-- [Mac：BasicTeXを再インストール](http://blog.livedoor.jp/mt_kinabalu/archives/59515359.html)
-- [MacにTeX環境を整える](http://keisanbutsuriya.hateblo.jp/entry/2016/04/15/190757)
-- \[[El Capitan\]Homebrew CaskでTeX環境を構築する](https://www.aruneko.net/archives/1423)
-- [OS X に texlive2015 をインストールする](http://d.hatena.ne.jp/pyopyopyo/20150710/p1)
-- [BasicTeX-2015でRe:VIEWの環境を用意する](http://qiita.com/takahashim/items/74d6d1de557fad09a879)
-- [MacにTexを導入する](http://mktozk.hateblo.jp/entry/configure-tex-on-mac)
+<!-- ***インストールの事例 [#q65e25e8] -->
 
 #### TeX Live 2016 以降での注意点 {#y0fc0688}
 
