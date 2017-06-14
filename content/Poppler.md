@@ -29,19 +29,19 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 - [Poppler](https://poppler.freedesktop.org/)
 - [The poppler Archives](https://lists.freedesktop.org/archives/poppler/)
 
-### インストール {#tafa7455}
-
-#### Windows {#v190b38b}
-
-TeX Live や W32TeX をインストールしている場合は poppler utilities が使用できます．
+### お知らせ {#qdd1dda1}
 
 Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
 使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
-[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，ビルド済みの Poppler のユーティリティ類を入手することもできます。
-以下が利用できます：
+### インストール {#tafa7455}
 
-- pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
+#### Windows {#v190b38b}
+
+TeX Live 2017 以降あるいは W32TeX \[2017/02/20\] 以降をインストールしている場合は poppler utilities が使用できます．
+以下のコマンドが利用できます：
+
+> pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
 
 MSYS2 の pacman でインストールすることもできます。
 
@@ -56,6 +56,8 @@ pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
 ```
 pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
 ```
+
+[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，旧バージョンのビルド済みの Poppler のユーティリティ類を入手することもできます。
 
 #### macOS {#l3620b9b}
 
@@ -294,7 +296,7 @@ $ pushd master
 
 ```
 $ ./autogen.sh
-$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.6.0/5.6/mingw492_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.6.0/5.6/mingw492_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
+$ POPPLER_QT5_CFLAGS="-IC:/Qt/Qt5.9.0/5.9/mingw53_32/include" POPPLER_QT5_LIBS="-LC:/Qt/Qt5.9.0/5.9/mingw53_32/lib -lQt5Core -lQt5Gui -lQt5Xml -lQt5Widgets -lQt5Test" POPPLER_QT5_TEST_CFLAGS="-IC:/Qt/Qt5.9.0/5.9/mingw53_32/include" POPPLER_QT5_TEST_LIBS="-LC:/Qt/Qt5.9.0/5.9/mingw53_32/bin" LIBOPENJPEG_CFLAGS="`pkg-config --cflags libopenjp2`" LIBOPENJPEG_LIBS="`pkg-config --libs libopenjp2`" ./configure --prefix=/mingw --with-font-configuration=fontconfig --enable-xpdf-headers --enable-zlib --enable-libcurl --enable-poppler-glib --disable-gtk-test
 ```
 
 ```
@@ -419,7 +421,7 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 - [poppler 0.18.1 ビルド奮闘記](https://sites.google.com/site/poppler0181builder/)
 - Poppler (BLFS)
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn.ja/general/poppler.html)
+    - [http://lfsbookja.osdn.jp/BLFS/svn-ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/general/poppler.html)
 
 #### License {#i424d155}
 
