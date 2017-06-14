@@ -81,10 +81,10 @@ TeX Live 2016以降では，xdvipdfmx と dvipdfmx
 <!-- **xdv2pdf [#q2227054] -->
 <!-- xdvipdfmx 以外に xdv2pdf というドライバがかつて存在していた。 -->
 <!-- xdv2pdf は TeX Live 2013 で除外され開発が中止された。(→ [[[XeTeX] Future of xdv2pdf driver on Mac:http://tug.org/pipermail/xetex/2013-March/024120.html]]) -->
-<!-- xdv2pdf は OS X 専用のドライバであって，他では利用できない。 -->
-<!-- xdv2pdf は OS X を有効利用するドライバだが，仮想フォントを読むことが -->
+<!-- xdv2pdf は macOS 専用のドライバであって，他では利用できない。 -->
+<!-- xdv2pdf は macOS を有効利用するドライバだが，仮想フォントを読むことが -->
 <!-- できないので，通常の tfm, vf 形式の TeX, LaTeX 用フォントも利用する場合には -->
-<!-- OS X であっても xdvipdfmx を使う必要がある。 -->
+<!-- macOS であっても xdvipdfmx を使う必要がある。 -->
 <!-- また、上記の “Uninstalled fonts” を使う機能も，ドライバに xdvipdfmx を使う -->
 <!-- 場合だけ有効である。 -->
 
@@ -221,7 +221,7 @@ nkf によって 2 バイト仮名に変換されたりするからです。
 使うときは，UTF-8 が読めるエディタで fc-list の生の出力を見る必要があります。
 通常はアルファベットの名前のほうが入力も簡単でしょう。
 
-### OS X でのインストール {#x46670ed}
+### macOS でのインストール {#x46670ed}
 
 #### TeX Live {#r40835b3}
 
