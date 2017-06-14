@@ -160,7 +160,6 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 - [TexStudioをEl Capitanで使うまでにしたこと](http://qiita.com/kztka/items/80a244f4f90c1d48767d)
 - [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
-- [TeXstudioの組み込みPDFビューアで日本語を表示させる(Mac)](http://hayate.me/archives/31)
 
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
 poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
