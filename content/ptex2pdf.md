@@ -102,6 +102,8 @@ bname = string.gsub(bname, "^.*[/\\](.*)$", "%1")
 
 バージョン 20170603.0 でこのバグは修正されました．
 
+texlive2017-20170524.iso に収録されているのは ptex2pdf v0.9 なので tlmgr で最新版にアップデートしてください．
+
 #### <del>TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生する</del>（バーション 0.6 で修正済み） {#extra_spaces}
 
 バージョン 0.6 より前では，TeX Live/Cygwin で ptex2pdf を実行すると /usr/bin/env: texlua  : No such file or directory のエラーが発生します．
