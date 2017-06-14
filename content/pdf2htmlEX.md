@@ -9,7 +9,9 @@ pukiwiki: "pdf2htmlEX"
 
 ## [pdf2htmlEX](http://coolwanglu.github.com/pdf2htmlEX/) {#t74544cf}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## pdf2htmlEX とは {#h92a9ad3}
 
@@ -309,15 +311,15 @@ $ make
 ```
 
 ```
-../libtool: line 6013: cd: C:QtQt5.6.05.6mingw492_32lib: No such file or directory
-libtool: link: cannot determine absolute directory name of `C:QtQt5.6.05.6mingw492_32lib'
+../libtool: line 6013: cd: C:QtQt5.9.05.9mingw53_32lib: No such file or directory
+libtool: link: cannot determine absolute directory name of `C:QtQt5.9.05.9mingw53_32lib'
 ```
 
 のエラーが発生する場合は ttfautohint-1.00/frontend/Makefile の中身を
 
 ```
-#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.6.0\5.6\mingw492_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
-QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.6.0/5.6/mingw492_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
+#QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:\Qt\Qt5.9.0\5.9\mingw53_32\lib -lQt5Gui -lQt5Core -lQt5Widgets
+QT_LIBS = -lglu32 -lopengl32 -lgdi32 -luser32 -lmingw32 -lqtmain -LC:/Qt/Qt5.9.0/5.9/mingw53_32/lib -lQt5Gui -lQt5Core -lQt5Widgets
 ```
 
 に修正します．
