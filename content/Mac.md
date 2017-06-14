@@ -148,7 +148,7 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 ### &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更 {#defaultkeybinding-dict}
 
 &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict
-に次の4行を記したファイルを配置し，再ログインすれば \ と ¥ が逆転します。すなわち，¥ キーで \ が，Option+¥ で ¥ が入力されるようになります。
+に次の4行を記したファイルを配置し，再ログインすれば \ と ¥ が逆転します。すなわち，¥ キーで \ が，option+¥ で ¥ が入力されるようになります。
 
 ```
 {
