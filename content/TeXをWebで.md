@@ -20,16 +20,14 @@ pukiwiki: "TeXをWebで"
 #### フリーソフトウェア（オープンソースソフトウェア） {#g834836b}
 
 - [ShareLaTeX](https://github.com/sharelatex/sharelatex)
-- [JaxEdit](http://jaxedit.com/)
-- [texlive.js](http://manuels.github.io/texlive.js/)
-- [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
-- [SageMathCloud](https://cloud.sagemath.com/)
+- [CoCalc](https://github.com/sagemathinc/cocalc)
+- [JaxEdit](https://github.com/zohooo/jaxedit)
+- [texlive.js](https://github.com/manuels/texlive.js/)
+- [NoTex.ch](https://github.com/hsk81/notex-v2.0)
 
 #### フリーウェア（無料） {#e0fded48}
 
 - [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
-    <!-- -[[TeX を使ってみよう（upTeX版）:http://glc.l.u-tokyo.ac.jp/texonweb/]]（サーバが廃止されました） -->
-
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [Overleaf](https://www.overleaf.com/)（旧 writeLaTeX）
 
