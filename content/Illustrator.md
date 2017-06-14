@@ -27,6 +27,19 @@ TeX文書内への図の挿入は EPS ファイルの場合と同様に処理さ
 
 例（hoge.ai を挿入）：
 
+bounding box 情報に CropBox を指定する場合は
+
+```
+%%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
+\documentclass[uplatex]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\begin{document}
+\includegraphics[pagebox=cropbox]{hoge.ai}
+\end{document}
+```
+
+bounding box 情報に ArtBox を指定する場合は
+
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
 \documentclass[uplatex]{jsarticle}
