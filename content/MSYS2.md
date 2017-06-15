@@ -19,7 +19,7 @@ MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化�
 
 ### Installing MSYS2 {#sb6496d0}
 
-- [MSYS2 installer](http://msys2.github.io/)
+- [http://msys2.github.io/](http://msys2.github.io/)
 - [https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/](https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
 
 ### LANG {#w1a07eeb}
@@ -41,7 +41,7 @@ iconv で 入力文字コードに CP932，出力文字コードに UTF-8 を指
 $ powershell -? | iconv -f CP932 -t UTF-8
 ```
 
-&#x7e;/.bash_profile に以下の記述を追加しておけば文字化けしなくなるようです．
+&#x7e;/.bash_profile に以下の記述を追加すると文字化けしなくなりました．
 
 ```
 cmd /c "chcp 65001 > NUL"
@@ -68,7 +68,7 @@ MSYS2 でインストールできます．
 - [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
 - [にっき&#9834;: TeX Liveのビルド](http://abenori.blogspot.jp/2015/11/tex-live.html)
 
-C:\msys64\mingw64_shell.bat をダブルクリックして以下のコマンドを実行するとビルドできます．
+C:\msys64\mingw64.exe をダブルクリックして以下のコマンドを実行するとビルドできます．
 
 ```
 $ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-libs mingw-w64-x86_64-fontconfig make rsync
