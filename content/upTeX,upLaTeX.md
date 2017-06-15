@@ -121,7 +121,7 @@ uplatex kumo.tex
 ```
 
 さらに、dviwareで処理します。
-この例では、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、dvipdfmx で pdf 化します。
+この例では dvipdfmx で pdf 化します。
 
 ```
 dvipdfmx kumo.dvi
@@ -396,6 +396,7 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 - [upLaTeX を使おう](http://zrbabbler.sp.land.to/uplatex.html) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
 - [e-upTeX と LuaTeX とを使ってみる](http://kainokikaede.hatenablog.com/entry/2014/07/18/060128)
+- [upLaTeX でアクセント付きのラテン文字などがうまく出力されないときの対処法](http://id.fnshr.info/2017/05/27/pxcjkcat/)
 
 ### ChangeLog {#le7df259}
 
