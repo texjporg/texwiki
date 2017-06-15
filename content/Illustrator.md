@@ -20,10 +20,11 @@ Illustrator は，アドビシステムズが販売するベクター画像編�
 
 ### ai/PDF 形式ファイル {#l3862bb1}
 
-最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。<br>
-TeX Live 2016 以降, W32TeX では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。<br>
-なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。<br>
-TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[LaTeX入門/図表](</LaTeX入門/図表/>)も参照のこと）。<br> <!-- AI 形式は実質的に PDF なので，[[LaTeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
+最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。
+TeX Live 2016 以降, W32TeX では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。
+
+なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。
+TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[LaTeX入門/図表](</LaTeX入門/図表/>)も参照のこと）。 <!-- AI 形式は実質的に PDF なので，[[LaTeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
 
 例（hoge.ai を挿入）：
 
@@ -49,7 +50,7 @@ bounding box 情報に ArtBox を指定する場合は
 \end{document}
 ```
 
-Adobe Illustrator CC 17.1.0 で作られたファイルで確認。<br>
+Adobe Illustrator CC 17.1.0 で作られたファイルで確認。
 
 ### EPS 形式ファイル {#h86d212a}
 
@@ -73,16 +74,16 @@ Illustrator で保存時の注意：
 不正な EPS は，
 [Tomas Rokicki](http://tomas.rokicki.com/)
 の [Illustrator 7.0/8.0/9.0 BeginData Bug](http://tomas.rokicki.com/illbug/)
-から “fixill.pl” を頂いてきて直す。<br>
-次のようにして使う。<br>
+から “fixill.pl” を頂いてきて直す。
+次のようにして使う。
 
 ```
 $ fixill.pl <old.eps >new.eps
 ```
 
-“fixill.pl” は Perl スクリプトであり，実行には Perl が必要。<br>
-W32TeX なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。<br>
-W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。<br>
+“fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
+W32TeX なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
+W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
 >fixill.exe <old.eps >new.eps
@@ -94,12 +95,12 @@ W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” �
 
 ### はじめに {#ae063b79}
 
-[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．<br>
-フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．<br>
-Illustrator CC のほかに，LaTeX と dvips, Ghostscript が必要です．<br>
+[TeXの数式をDTPソフトに](</TeXの数式をDTPソフトに/#hf9c85f7>)の方法をできる限り楽にするために書いたスクリプトです．
+フォントをそのまま使うと[qa:27936](https://okumuralab.org/~okumura/texfaq/qa/27936.html) にあるように問題が生じるので，アウトラインをとって貼り付けます．
+Illustrator CC のほかに，LaTeX と dvips, Ghostscript が必要です．
 和文も処理したい場合は，upLaTeX と dvips, Ghostscript が
-使える環境を用意してください．<br>
-以下の内容はすべて和文も処理することを前提にしたものです．<br>
+使える環境を用意してください．
+以下の内容はすべて和文も処理することを前提にしたものです．
 
 Illustrator にさせている仕事は
 
@@ -112,11 +113,11 @@ TeX 関係のなんらかの処理を変えたい時は[ini.tex](/Illustrator/#u
 [makeEPS.bat](/Illustrator/#p0c06018) を書き換えれば充分で，
 使用する上ではIllustrator Javascript に関する特別な知識は要らないはずです．
 
-<!-- Illustrator CS windows 版 (Windows XP SP2) で動作を確認しています．~ -->
-<!-- CS3 でも数式は処理できますが，和文の処理を行おうとすると問題があるようです．~ -->
+<!-- Illustrator CS windows 版 (Windows XP SP2) で動作を確認しています． -->
+<!-- CS3 でも数式は処理できますが，和文の処理を行おうとすると問題があるようです． -->
 
 Illustrator 上でのjavascript に関するマニュアルはインストールCD中にあります
-(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)．<br>
+(CSの場合、Adobe テクニカル情報/Illustrator CS/Scripting/Documentation)．
 
 ### 準備 {#d06797b4}
 
@@ -165,7 +166,7 @@ rungs -q -sDEVICE=eps2write -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutput
 
 #### TeX(&amp;T).js {#w5a4bc73}
 
-Illustrator CC で作業中に呼び出すことになるスクリプトです．<br>
+Illustrator CC で作業中に呼び出すことになるスクリプトです．
 テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
 
 第一行目の「AI = "/C/AI/";」は，[作業フォルダの作成](/Illustrator/#q425d35e)で作成したフォルダ名を指定しています．例えば，作業フォルダが"D:\hoge\test\\" なら，「AI = "/D/hoge/test/"」のように書き換えてください． <!-- [[作業用フォルダの作成>Illustrator#q425d35e]]でC:\Documents and Settings\All Users\Application Data\Adobe\Illustrator CS\temp\を作った場合は「AI = "/C/Documents and Settings/All Users/Application Data/Adobe/Illustrator CS/temp/";」に書き換えてください． -->
@@ -178,11 +179,17 @@ var d_keep = false;//true→テキストを残す false→残さない
 var o_keep = "%k";//テキストを残すか否かを切り替えるオプション
 var environment = "align*";//補完する際に使う数式環境
 var CR = String.fromCharCode(13);
+```
 
+```
 var selectObj = app.activeDocument.selection;
+```
 
+```
 main(selectObj);
+```
 
+```
 function main(pis){
 	if (pis.length == 0) return;
 	for (i=0;i<pis.length;i++){
@@ -190,7 +197,9 @@ function main(pis){
 		else if (pis[i].uRL != undefined && pis[i].uRL != "") pasteTxt(pis[i]);
 	}
 }
+```
 
+```
 function pasteTxt(pi){
 	textObj = app.activeDocument.activeLayer.textFrames.add();
 	textObj.contents = pi.uRL;
@@ -198,7 +207,9 @@ function pasteTxt(pi){
 	textObj.top = pi.top - pi.height - 5;
 	return;
 }
+```
 
+```
 function Tex(pi){
 	equation = pi.textRange.contents;
 	if (equation.indexOf(o_document) != -1) d_document = !d_document;
@@ -214,12 +225,14 @@ function Tex(pi){
  	if (!ReplaceTextDoc(AI+"ini.tex",AI+"eq.tex","<r>",equation)) return;
 	if (!Exe(AI+"MakeEPS.bat")) return;
 	if (confirm("描画しますか？")){
-		if (ImportImg(AI+"outline.eps","eq",pi.textRange.contents,pi.left+pi.width/2,pi.top+dy,d) 
+		if (ImportImg(AI+"outline.eps","eq",pi.textRange.contents,pi.left+pi.width/2,pi.top+dy,d)
 			&& !d_keep
 			) pi.remove();
 	}
 }
+```
 
+```
 function MakeTextDoc(filepath,txt){
 	FileObj = new File (filepath);
 	flag = FileObj.open ("w");
@@ -231,7 +244,9 @@ function MakeTextDoc(filepath,txt){
 	if(!FileObj.close()) return false;
 	return true;
 }
+```
 
+```
 function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString){
 	readFileObj = new File(readfilepath);
 	rflag = readFileObj.open ("r");
@@ -241,11 +256,15 @@ function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString){
 	 }
 	readtext = readFileObj.read();
 	readFileObj.close();
-	
+```
+
+```
 	replacedtext = readtext.replace(regexp,newString);
 	return MakeTextDoc(writefilepath,replacedtext);
 }
+```
 
+```
 function Exe(filepath){
 	fileObj = new File(filepath);
 	if (!fileObj.exists){
@@ -255,7 +274,9 @@ function Exe(filepath){
 	fileObj.execute();
 	return true;
 }
+```
 
+```
 function ImportImg(filepath,objName,savedText,x,y,d){
 	fileObj = new File (filepath);
 	if (!fileObj.exists){
@@ -316,10 +337,10 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!--  -->
 <!-- function MainProc(i) -->
 <!-- {//INT_iはfor用のステップ．なんらかの処理に成功すると1，何もしないと0を返す． -->
-<!-- 	if (selectObj[i].textRange == undefined)  -->
+<!-- 	if (selectObj[i].textRange == undefined) -->
 <!-- 	 {//選択したオブジェクトがテキストオブジェクトでなければ -->
 <!-- 	 	filename = selectObj[i].name;//オブジェクト名を取得 -->
-<!--  		if (filename != undefined && iniflag)	 -->
+<!--  		if (filename != undefined && iniflag) -->
 <!--  	 	 {//選択したオブジェクトの名前が未定義でなく，保存されていれば -->
 <!-- 			//オブジェクトの座標，大きさを取得 -->
 <!-- 			x = selectObj[i].left; -->
@@ -359,7 +380,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 		else revequation = equation;//数式環境でなければそのまま． -->
 <!-- 		if (!ReplaceTextDoc(AI+"eq.ini",AI+"eq.tex","<r>",revequation)) return 0;//eq.texの置換．失敗したら終了． -->
 <!-- 	 } -->
-<!-- 	  -->
+<!--  -->
 <!-- 	 time = new Date().getTime();//貼り付けるオブジェクトの名前＆保存されるテキストの名前に使用 -->
 <!-- 	 if (!Exe(AI+"MakeEPS.bat")) return 0;//MakeEPS.bat を実行．失敗したら終了． -->
 <!-- 	 if (confirm("描画しますか？")) -->
@@ -397,11 +418,11 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 	 } -->
 <!-- 	readtext = readFileObj.read(); -->
 <!-- 	readFileObj.close(); -->
-<!-- 	 -->
+<!--  -->
 <!-- 	replacedtext = readtext.replace(regexp,newString); -->
 <!-- 	return MakeTextDoc(writefilepath,replacedtext); -->
 <!-- } -->
-<!-- 	 -->
+<!--  -->
 <!-- function Exe(filepath) -->
 <!-- {//filepathで指定したファイルを既定のアプリで実行する．成功すればtrue，失敗すればfalseを返す． -->
 <!-- 	fileObj = new File(filepath); -->
@@ -413,7 +434,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 	fileObj.execute(); -->
 <!-- 	return true; -->
 <!-- } -->
-<!-- 	 -->
+<!--  -->
 <!-- function ImportImg(filepath,objName,x,y,d) -->
 <!-- {//filepathに指定したEPSファイルをアクティブなドキュメントにグループパスアイテムとして配置する． -->
 <!-- //objNameは配置されたオブジェクトの名前を与える文字列．x,yは位置座標． -->
@@ -513,7 +534,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 
 <!-- link = false;	//true→リンク配置 false→埋め込み配置 -->
 <!-- AI = "/C/AI/"; -->
-<!-- 	 -->
+<!--  -->
 <!-- chr_f = app.activeDocument.name.split("."); -->
 <!-- docName = escape(chr_f[0]).replace(/%/g,""); -->
 <!-- saveDir = AI+"Link/"+docName+"/"; -->
@@ -524,16 +545,16 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!--  -->
 <!-- ctr = 0; -->
 <!-- for (i=0;i<selectLnt;i++) -->
-<!-- {	 -->
+<!-- { -->
 <!-- 	if(link) -->
-<!-- 	{	 -->
+<!-- 	{ -->
 <!-- 		numOfFiles = folderObj.getFiles("*.eps").length; -->
 <!-- 		if (numOfFiles < 10) numOfFiles = "000"+numOfFiles+""; -->
 <!-- 		else if (numOfFiles < 100) numOfFiles = "00"+numOfFiles+""; -->
 <!-- 		else if (numOfFiles < 1000) numOfFiles = "0"+numOfFiles+""; -->
 <!-- 	} -->
 <!-- 	else numOfFiles = 0; -->
-<!-- 	 -->
+<!--  -->
 <!-- 	if (selectObj[i].textRange == undefined) editflag = false; -->
 <!-- 	else -->
 <!-- 	{ -->
@@ -544,7 +565,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 		w = selectObj[i].width; -->
 <!-- 		h = selectObj[i].height; -->
 <!-- 		if (equation.indexOf("%") == equation.length - 1) -->
-<!-- 		{	 -->
+<!-- 		{ -->
 <!-- 			d = 0; -->
 <!-- 			dy = -h-5; -->
 <!-- 		} -->
@@ -556,15 +577,15 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 		} -->
 <!-- 		editflag = ReplaceTextDoc(AI+"/eq.ini",AI+"eq.tex","<r>",equation); -->
 <!-- 	} -->
-<!-- 		 -->
+<!--  -->
 <!-- 	if (link && editflag && ReplaceTextDoc(AI+"bat.ini",AI+"nooutline.bat","<r>",docName+"\\"+numOfFiles)) exeflag = Exe(AI+"nooutline.bat"); -->
 <!-- 	else if (!link && editflag) exeflag = Exe(AI+"outline.bat"); -->
 <!-- 	else exeflag = false; -->
-<!-- 	 -->
+<!--  -->
 <!-- 	if (exeflag && confirm("描画しますか？")) ImportImg(saveDir+numOfFiles+".eps",AI+"outline.eps",x+w/2,y+dy,d,link); -->
 <!-- } -->
 <!-- if (ctr == 0) alert("1つ以上のテキストオブジェクトを選択してください"); -->
-<!-- 	 -->
+<!--  -->
 <!-- function ReplaceTextDoc(readfilepath,writefilepath,regexp,newString) -->
 <!-- { -->
 <!-- 	readFileObj = new File(readfilepath); -->
@@ -576,7 +597,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 	} -->
 <!-- 	readtext = readFileObj.read(); -->
 <!-- 	readFileObj.close(); -->
-<!-- 	 -->
+<!--  -->
 <!-- 	replacedtext = readtext.replace(regexp,newString); -->
 <!-- 	writeFileObj = new File (writefilepath); -->
 <!-- 	wflag = writeFileObj.open ("w"); -->
@@ -589,7 +610,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 	writeFileObj.close(); -->
 <!-- 	return true; -->
 <!-- } -->
-<!-- 	 -->
+<!--  -->
 <!-- function Exe(filepath) -->
 <!-- { -->
 <!-- 	fileObj = new File(filepath); -->
@@ -601,7 +622,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 <!-- 	fileObj.execute(); -->
 <!-- 	return true; -->
 <!-- } -->
-<!-- 	 -->
+<!--  -->
 <!-- function ImportImg(linkfilepath,embedfilepath,x,y,d,flag) -->
 <!-- { -->
 <!-- 	if(flag) -->
@@ -642,11 +663,11 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 
 ### スクリプトの利用 {#h8061542}
 
-Illustrator を起動してください．<br>
-TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．<br>
-なお，別の場所に保存した場合は，\[ファイル\]→\[スクリプト\]の末尾にある\[参照\]からTeX(&amp;T).js を指定する必要があります．<br>
+Illustrator を起動してください．
+TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．
+なお，別の場所に保存した場合は，\[ファイル\]→\[スクリプト\]の末尾にある\[参照\]からTeX(&amp;T).js を指定する必要があります．
 新規ドキュメントを作成し，テキストツールを使って，例えば次の内容のテキストアイテムを作ります．
-(テキストツールを使わずに，以下をコピーして，Illustrator 上で貼り付けを行っても問題ありません．)<br>
+(テキストツールを使わずに，以下をコピーして，Illustrator 上で貼り付けを行っても問題ありません．)
 
 ```
 &\int_{-\infty}^{\infty}\!\!\!\delta(x-\alpha)f(x)\mathrm{d}x=f(\alpha)\\
@@ -658,15 +679,15 @@ a_{m1} & \ldots & a_{mn}
 ```
 
 テキストアイテムのフレームを選択した状態で，\[ファイル\]→\[スクリプト\]→\[TeX(T)\]を選択し，cmd.exe が終了した後，
-"描画しますか?" という確認メッセージに「はい」と答えればテキストオブジェクトが数式に置換されます．<br>
-なお，\[Alt+F\]→\[R\]→\[T\]でスクリプトを実行することも可能です．<br>
+"描画しますか?" という確認メッセージに「はい」と答えればテキストオブジェクトが数式に置換されます．
+なお，\[Alt+F\]→\[R\]→\[T\]でスクリプトを実行することも可能です．
 
-置換したくない場合は数式の最後に"%k" を付けてください( 上の例では"...\end{pmatrix}" を"...\end{pmatrix}%k" とする )．<br>
-テキストの真下に数式が配置されます．<br>
+置換したくない場合は数式の最後に"%k" を付けてください( 上の例では"...\end{pmatrix}" を"...\end{pmatrix}%k" とする )．
+テキストの真下に数式が配置されます．
 また，複数のテキストを選択した状態でスクリプトを実行すれば，
-選択されているすべてのテキストに対して順に処理を行います．<br>
+選択されているすべてのテキストに対して順に処理を行います．
 
-数式を選択した状態で同じスクリプトを実行すると，テキストを復活させることができます．<br> <!-- このスクリプトを使用して数式を貼り付けると，Illustrator のファイルが保存されているディレクトリにファイル名と同じ名前のフォルダが作られ，そこに数式に対応したテキストが保存されます．オブジェクトの名前とテキストファイルのファイル名を対応させているので，例えばグループ解除などの操作をしてオブジェクトの名前を変えてしまうとテキストを復活させることができなくなります．また，テキストファイルが格納されているフォルダを削除/移動した場合もテキストを復活させられなくなります．Illustrator のファイルから見た相対パスが重要なので，Illustrator のファイルを移動させるときはこのフォルダも一緒に移動してやってください．逆に言えば，再編集の必要が無いならこのフォルダを消してしまっても問題ありません． -->
+数式を選択した状態で同じスクリプトを実行すると，テキストを復活させることができます． <!-- このスクリプトを使用して数式を貼り付けると，Illustrator のファイルが保存されているディレクトリにファイル名と同じ名前のフォルダが作られ，そこに数式に対応したテキストが保存されます．オブジェクトの名前とテキストファイルのファイル名を対応させているので，例えばグループ解除などの操作をしてオブジェクトの名前を変えてしまうとテキストを復活させることができなくなります．また，テキストファイルが格納されているフォルダを削除/移動した場合もテキストを復活させられなくなります．Illustrator のファイルから見た相対パスが重要なので，Illustrator のファイルを移動させるときはこのフォルダも一緒に移動してやってください．逆に言えば，再編集の必要が無いならこのフォルダを消してしまっても問題ありません． -->
 
 <!-- 何も選択しない状態でこのスクリプトを実行すると，不要になったテキストファイル(スクリプトから呼び出せないテキストファイル)を探して消去します． -->
 
@@ -674,7 +695,9 @@ a_{m1} & \ldots & a_{mn}
 
 ```
 \begin{align*}
+```
 
+```
 \end{align*}
 ```
 
@@ -683,7 +706,7 @@ a_{m1} & \ldots & a_{mn}
 例えば，
 
 ```
-Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.  
+Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.
 There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....
 ```
 
@@ -692,7 +715,7 @@ There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....
 ```
 \begin{document}
 \begin{align*}
-Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.  
+Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.
 There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....
 \end{align*}
 \end{document}
@@ -701,7 +724,7 @@ There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....
 を処理したことになってしまうのでエラーが出てしまい，うまくいきませんが，
 
 ```
-Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.  
+Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.
 There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....%d
 ```
 
@@ -709,7 +732,7 @@ There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....%d
 
 ```
 \begin{document}
-Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.  
+Suppose $\hat{A}$ is any linear operator on a Hilbert space, $V$.
 There exists a unique linear operator $\hat{A}^\dagger$ on $V$ such that....%d
 \end{document}
 ```
