@@ -35,15 +35,12 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 ### TeX Live 2017 以降のバイナリの動作環境に関する変更点 {#obbbdbf4}
 
 TeX Live 2017 以降は x86_64-darwin バイナリは Apple セキュリティアップデートが提供されている OS のみサポートされることになりました。
+TeX Live 2016 まで存在していた universal-darwin バイナリが削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
+Apple セキュリティアップデートが提供されないレガシーな OS では x86_64-darwinlegacy バイナリ，i386-darwin バイナリ，powerpc-darwin バイナリのいずれかを使用します。
 
 MacTeX-2017 / BasicTeX-2017 以降に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
 
-Apple セキュリティアップデートが提供されないレガシーな OS は x86_64-darwinlegacy バイナリ，i386-darwin バイナリ，powerpc-darwin バイナリのいずれかを使用します。
-
-TeX Live 2017 では TeX Live 2016 まで存在していた universal-darwin バイナリが削除され i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
-
 下の表で自分が使用している OS はどのバイナリをインストールすればよいのか確認できます。
-
 &#x2714; マークは OS と対応するバイナリを示しています。
 
 <div style="text-align:center">TeX Live 2017 が動作する OS と対応するバイナリ</div>
@@ -62,7 +59,7 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されることになったので
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されることになったので，
 ここでは MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
