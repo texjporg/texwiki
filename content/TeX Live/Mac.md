@@ -28,11 +28,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
     - Homebrew 向けパッケージ
     - MacPorts 向けパッケージ
 
-いずれの方法でも，大まかな手順は以下のとおりです：
-
-1. TeX Live をインストール
-1. TeX Live を最新版にアップデート
-1. 日本語環境の整備（ヒラギノフォントを埋め込む設定）
+いずれの方法でも，TeX Live をインストールして必要であれば最新版にアップデートします。
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
@@ -182,7 +178,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 
 - macOS Sierra / OS X El Capitan に新たに収録された日本語フォントの多くは，従来の拡張子 .otf の OpenType Font を束ねた形式の OpenType Collection Font です。
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
-    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)
+    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](http://www.muskmelon.jp/?p=1169)
 
 #### macOS Sierra / OS X El Capitan での TeX Live のセットアップ {#l8c867e9}
 
@@ -351,7 +347,7 @@ macOS Sierra / OS X El Capitan のヒラギノフォントを埋め込むこと�
 <!-- pxchfon を使う方法や．開発版の ptex-fontmaps と lnsysfnt.sh を入手してヒラギノを pTeX で -->
 <!-- 使えるようにする方法はあるが，混乱を避けるためあくまで応急処置として IPA(ex) を選択。 -->
 
-ヒラギノフォントの代わりに，[日本語環境の整備](</TeX Live/Mac/#i9febc9b>)に書かれている IPAex フォントまたは IPA フォントをマッピングすれば，一応 pTeX 系で日本語の LaTeX 文書を作成することができます。
+ヒラギノフォントの代わりに，IPAex フォントまたは IPA フォントをマッピングすれば，pTeX 系で日本語の LaTeX 文書を作成することができます。
 IPA(ex) フォントは TeX Live に含まれているため，最新のパッケージにアップデートすることなく従来どおり利用することができます。
 
 pLaTeX + dvipdfmx または upLaTeX + dvipdfmx でヒラギノフォントではなく IPA(ex) フォントを埋め込む設定は，ターミナルから以下を実行します：
@@ -470,84 +466,22 @@ $ sudo tlmgr update --self --all
 tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
-### 日本語環境の整備 {#i9febc9b}
+### ヒラギノフォント {#d19a1537}
 
-日本語環境を整備するには以下の作業をするとよいでしょう。
+macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
 
-<strong>注意</strong>：macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されているため，下記の手順ではなく[こちら](</TeX Live/Mac/#elcapitan>)を実行してください。
-
-#### ヒラギノフォント {#d19a1537}
-
-- ヒラギノフォントを利用可能にする設定（OS X Yosemite 以前）
-    - [［改訂第6版］LaTeX2e美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)では既に設定済みです。
-    - TeX Live インストールの初期設定のままでは，ヒラギノフォントを用いることができません。
-        ターミナル上で，ヒラギノフォントのシンボリックリンクを作成し，TeX で利用できるようにします。
-        [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html)にも詳細な記述があります。
-
-        ```
-        $ sudo mkdir -p /usr/local/texlive/texmf-local/fonts/opentype/hiragino/
-        $ cd /usr/local/texlive/texmf-local/fonts/opentype/hiragino/
-        $ sudo ln -s "/Library/Fonts/ヒラギノ明朝 Pro W3.otf" ./HiraMinPro-W3.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ明朝 Pro W6.otf" ./HiraMinPro-W6.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ丸ゴ Pro W4.otf" ./HiraMaruPro-W4.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Pro W3.otf" ./HiraKakuPro-W3.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Pro W6.otf" ./HiraKakuPro-W6.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ Std W8.otf" ./HiraKakuStd-W8.otf
-        $ sudo mktexlsr
-        ```
-
-    - ヒラギノのNシリーズ（[JIS X 0213:2004](http://ja.wikipedia.org/wiki/JIS_X_0213)に対応した字形）を利用する場合（upLaTeX では \usepackage\[uplatex,jis2004\]{otf} とすれば使えます。）
-
-        ```
-        $ sudo mkdir -p /usr/local/texlive/texmf-local/fonts/opentype/hiragino/
-        $ cd /usr/local/texlive/texmf-local/fonts/opentype/hiragino/
-        $ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 ProN W3.otf" ./HiraMinProN-W3.otf
-        $ sudo ln -s "/System/Library/Fonts/ヒラギノ明朝 ProN W6.otf" ./HiraMinProN-W6.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ丸ゴ ProN W4.otf" ./HiraMaruProN-W4.otf
-        $ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ ProN W3.otf" ./HiraKakuProN-W3.otf
-        $ sudo ln -s "/System/Library/Fonts/ヒラギノ角ゴ ProN W6.otf" ./HiraKakuProN-W6.otf
-        $ sudo ln -s "/Library/Fonts/ヒラギノ角ゴ StdN W8.otf" ./HiraKakuStdN-W8.otf
-        $ sudo mktexlsr
-        ```
-
-- ヒラギノフォントをPDFなどに埋め込む設定とする場合は，ターミナル上で以下を実行します。
-
-    ```
-    $ sudo updmap-sys --setoption kanjiEmbed hiragino　（ヒラギノフォントを埋め込む）
-    ```
-
-    - ヒラギノ以外のフォントを埋め込む設定にする際には，ターミナル上で以下を実行します。（[OTF](/OTF/)も参照）
-
-        ```
-        $ sudo updmap-sys --setoption kanjiEmbed noEmbed  （埋め込まない）*初期設定値*
-        $ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
-        $ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
-        $ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
-        $ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游フォントを埋め込む）
-        $ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
-        $ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
-        ```
-
-#### IPAexフォント/IPAフォント {#x667dd85}
+### IPAexフォント/IPAフォント {#x667dd85}
 
 IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので，updmap-sys の設定だけですぐに pdf に埋め込めます。
 
-#### MS，小塚，モリサワフォント {#w0d23b74}
-
-MSフォント，小塚，モリサワを利用する場合は，上のヒラギノと同様にシンボリックリンクを TEXMFLOCAL 以下にまずは作成する必要があります。
-
-#### 游明朝・游ゴシックフォント {#l68bf523}
-
-macOS の游明朝・游ゴシックフォントに関しては [游明朝体・游ゴシック体をMac OS XのLaTeXで使う](http://tandoori.hatenablog.com/entry/20131117/1384696037) を参考にしてください。
-
-#### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
+### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
 [みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
-[PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
+[PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
 
-#### Ghostscript で日本語を扱えるようにする設定（ReadMe-ja.pdf より） {#mc6bf937}
+### Ghostscript で日本語を扱えるようにする設定（ReadMe-ja.pdf より） {#mc6bf937}
 
 cjk-gs-integrate.pl のオプションは，バージョン 20151002.0 以降では --link-texmflocal から --link-texmf へ変更されていますので注意してください。
 
@@ -559,7 +493,7 @@ $ cd /usr/local/texlive/2017/texmf-dist/scripts/cjk-gs-integrate
 $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 ```
 
-#### updmap(-sys) の使用に関する注意点 {#qdce07c2}
+### updmap(-sys) の使用に関する注意点 {#qdce07c2}
 
 - <strong>注意</strong> updmap-sys ではなく updmap を使用した場合は ユーザー個別の texmf（TEXMFHOME）に設定が書き込まれ，その個別設定の方が updmap-sys によるシステム全体の設定よりも優先されます。
     tlmgr および kanji-config-updmap-sys は updmap-sys を内部で呼びだしますが，-sys なしの kanji-config-updmap-sys は -sys なしの updmap を実行します。
@@ -569,7 +503,7 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
     TEXMFHOME にフォントを置く場合は，updmap（-sys なし）を実行する必要があります。
     - 埋め込むフォントを細かく制御したい場合は，手動で map ファイルを書き換えます。
 
-#### kanji-config-updmap(-sys) {#hf34afcc}
+### kanji-config-updmap(-sys) {#hf34afcc}
 
 - [kanji-config-updmap](https://github.com/texjporg/jfontmaps/blob/master/script/kanji-config-updmap.pl) を使用すれば PDFへの埋め込みフォントの指定，および埋め込み状況の確認ができます。
     ターミナル上で実行します。
@@ -581,13 +515,6 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
     $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込まない）
     $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
     ```
-
-    - 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです。
-
-        ```
-        hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
-        （いずれもないときは nofont になります） 
-        ```
 
     - オプションとして -jis2004 を指定すると，JIS2004字形を使用する設定となります。
     - kanji-config-updmap-sys は内部で updmap-sys を呼び出しますので，設定はシステムレベルで共通の設定として保存されます。
