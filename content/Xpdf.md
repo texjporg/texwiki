@@ -9,16 +9,12 @@ pukiwiki: "Xpdf"
 
 ## [Xpdf](http://www.foolabs.com/xpdf/) --- PDF 操作ツール (非推奨) {#z338a0d1}
 
-現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities ですので Xpdf を使わざるを得ない事情がなければ [Poppler](/Poppler/) をおすすめします。
-
-Xpdf は 2014-05-28 にリリースされた Xpdf 3.04 が最新のバージョンですが Poppler は現在でも開発が続けられています。 
-
 Xpdf は X Window System で利用できる PDF ビューア，および Windows, macOS, Linux で動作する PDF 操作ツールです。
 
-Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
+現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities ですので Xpdf を使わざるを得ない事情がなければ [Poppler](/Poppler/) をおすすめします。
+Xpdf は 2014-05-28 にリリースされた Xpdf 3.04 が最新のバージョンですが Poppler は現在でも開発が続けられています。 
 
-また，Xpdf に含まれるいくつかの [PDF](/PDF/) 操作ツールは，現在でも非常に有用です。
-ここでは，そのようなツールを紹介します。
+Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
 <!-- とりあえず項目を復活させました。 -->
 <!-- ビューアとして obsolete な理由説明がほしいです。 -->
