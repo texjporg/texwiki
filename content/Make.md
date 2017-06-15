@@ -11,26 +11,24 @@ pukiwiki: "Make"
 
 ここでは、Make を LaTeX と組み合わせて使う方法を説明します。
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
-
 ## Make とは何か？ {#g7efa508}
 
-Make は、定型的なファイル変換作業を自動化するツールです。<br>
-LaTeX では Make を使うことで、texソースファイルからPDFやdviファイルを生成する作業を自動化できます。<br>
+Make は、定型的なファイル変換作業を自動化するツールです。
+LaTeX では Make を使うことで、texソースファイルからPDFやdviファイルを生成する作業を自動化できます。
 
-Make はUNIX 用のユーティリティツールとして古い歴史を持ち、さまざまな実装があります。<br>
-その中で現在多く用いられているのは、[GNU Make](http://www.gnu.org/software/make/) です。<br>
-使い方や設定ファイル（Makefile）の文法は、基本的な部分は統一されているものの、実装ごとの拡張機能もあります。<br>
-特にGNU Makeは多くの拡張機能を持っています。<br>
+Make はUNIX 用のユーティリティツールとして古い歴史を持ち、さまざまな実装があります。
+その中で現在多く用いられているのは、[GNU Make](http://www.gnu.org/software/make/) です。
+使い方や設定ファイル（Makefile）の文法は、基本的な部分は統一されているものの、実装ごとの拡張機能もあります。
+特にGNU Makeは多くの拡張機能を持っています。
 
-なお、一般に Make は C言語などのプログラムをコンパイルするときに多く用いられます。<br>
-Make について調べるとこうしたプログラムのコンパイルを前提とした情報が出てくることが多いので、注意してください。<br>
+なお、一般に Make はC言語などのプログラムをコンパイルするときに多く用いられます。
+Make について調べるとこうしたプログラムのコンパイルを前提とした情報が出てくることが多いので、注意してください。
 
 ## Make のインストール {#c29bc068}
 
 ### macOS {#g1b3ea4a}
 
-Xcode のコマンドラインツールをインストールしてください（[http://qiita.com/ksato9700/items/8a14189934c9360a668c](http://qiita.com/ksato9700/items/8a14189934c9360a668c) 参照）。<br>
+Xcode のコマンドラインツールをインストールしてください（[http://qiita.com/ksato9700/items/8a14189934c9360a668c](http://qiita.com/ksato9700/items/8a14189934c9360a668c) 参照）。
 GNU Make がインストールされます。
 
 ### Linux {#q3c99e20}
@@ -39,14 +37,14 @@ GNU Make がインストールされます。
 
 ### FreeBSDなど {#w18263e3}
 
-初期設定では、BSD Make がインストールされています。<br>
-下記の Makefile などが思うように動作しない場合は、GNU Makeのインストールなども検討してください。<br>
-なお、GNU Makeが「make」ではなく「gmake」コマンドとしてインストールされている場合もあります。<br>
+初期設定では、BSD Make がインストールされています。
+下記の Makefile などが思うように動作しない場合は、GNU Makeのインストールも検討してください。
+なお、GNU Makeが「make」ではなく「gmake」コマンドとしてインストールされている場合もあります。
 
 ### Windows {#a0e09c4e}
 
-Windows 用 の GNU Make のインストールをしてください。<br>
-[MinGW](/MinGW/) や [Cygwin](/Cygwin/) などをインストールすれば GNU Make もインストールされます。<br>
+Windows 用 の GNU Make のインストールをしてください。
+[MinGW](/MinGW/) や [Cygwin](/Cygwin/) などをインストールすれば GNU Make もインストールされます。
 
 なお、Windows用のMakeにはGNU Makeのほか、マイクロソフト社のnmakeなどがあります。nmakeは、Visual Studioに付属します。
 
@@ -61,46 +59,48 @@ Makeを実行してTeXソースファイルからPDFや.dviなどのドキュメ
 
 #### Makefile の作成 {#j674e7ce}
 
-Makefile は、Make 設定ファイルの文法に従って記述します。<br>
-基本的な文法は次のとおりです。<br>
+Makefile は、Make 設定ファイルの文法に従って記述します。
+基本的な文法は次のとおりです。
 
 ```
 ターゲット: 必須項目
 <タブ>コマンド
 ```
 
-ターゲットは、生成されるファイルの名前です。<br>
-1つの Makefile で複数のターゲットを指定することもできます。<br>
-その場合、make コマンド実行時に「make ターゲット」とすることで生成するファイルを設定できます。<br>
-ターゲットを指定せずに make コマンドを実行すると、Makefile で最初に指定されたターゲットが生成されます。<br>
-また通常は、ターゲットのファイルがすでに存在して更新日時がすべての必須項目ファイルの更新日時よりも新しい場合、ターゲットファイルの更新は不要と判断され、コマンドは実行されません。<br>
+ターゲットは、生成されるファイルの名前です。
+1つの Makefile で複数のターゲットを指定することもできます。
+その場合、make コマンド実行時に「make ターゲット」とすることで生成するファイルを設定できます。
+ターゲットを指定せずに make コマンドを実行すると、Makefile で最初に指定されたターゲットが生成されます。
+また通常は、ターゲットのファイルがすでに存在して更新日時がすべての必須項目ファイルの更新日時よりも新しい場合、ターゲットファイルの更新は不要と判断され、コマンドは実行されません。
 
-必須項目は、ターゲット生成のために必要なファイルです。<br>
-1つのターゲットに対して複数の必須項目を指定できます。<br>
-必須項目のファイルが別の部分でターゲットとして指定されている場合、まずはそのファイルが生成されます。<br>
+必須項目は、ターゲット生成のために必要なファイルです。
+1つのターゲットに対して複数の必須項目を指定できます。
+必須項目のファイルが別の部分でターゲットとして指定されている場合、まずはそのファイルが生成されます。
 
-コマンドは、必須項目からターゲットを生成するためのコマンドです。なおコマンドの前に付ける&lt;タブ>は、スペースに変えると正常に動作しません。<br>
+コマンドは、必須項目からターゲットを生成するためのコマンドです。なおコマンドの前に付ける&lt;タブ>は、スペースに変えると正常に動作しません。
 
 #### 基本的な Makefile {#xfdbcbf5}
 
-例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルの \documentclass{jsarticle} を \documentclass\[uplatex\]{jsarticle} に変更したものが ~/latex ディレクトリーに作成してある状態から PDF を生成することを考えます。<br>
-まずはテキストエディタなどを使い、test.tex と同じディレクトリーに Makefile を次の内容で作成します。<br>
+例として、『LaTeX2e 美文書作成入門 改訂第6版』P.31 の test.tex ファイルの \documentclass{jsarticle} を \documentclass\[uplatex\]{jsarticle} に変更したものが ~/latex ディレクトリーに作成してある状態から PDF を生成することを考えます。
+まずはテキストエディタなどを使い、test.tex と同じディレクトリーに Makefile を次の内容で作成します。
 
 ```
 test.pdf: test.dvi
 	dvipdfmx $<
+```
 
+```
 test.dvi: test.tex
 	uplatex -interaction=batchmode $<
 ```
 
-コマンド中の「$&lt;」は必須項目を表し、この場合は「test.dvi」と「test.tex」になります。<br>
-なお、makeからuplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、uplatexコマンドにオプション「-interaction=batchmode」を付けています。<br>
+コマンド中の「$&lt;」は必須項目を表し、この場合は「test.dvi」と「test.tex」になります。
+なお、makeからuplatexコマンドを呼び出しているときにエラーが発生しても途中で止まらないよう、uplatexコマンドにオプション「-interaction=batchmode」を付けています。
 
 #### Make の実行 {#icc67860}
 
-Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行します。Makefile に記述したコマンドが呼び出され、PDFが生成されます。<br>
-このあとは、test.tex が更新されたり生成された test.pdf が削除されたりしなければ、再度make コマンドを実行しても、Makefile に記述したコマンドは呼び出されません。<br>
+Makefile を保存したあとターミナル上で test.tex のディレクトリーで make コマンドを実行します。Makefile に記述したコマンドが呼び出され、PDFが生成されます。
+このあとは、test.tex が更新されたり生成された test.pdf が削除されたりしなければ、再度make コマンドを実行しても、Makefile に記述したコマンドは呼び出されません。
 macOS や Linux 上でのコマンド実行例を以下に示します（$ は、プロンプト文字）。
 
 ```
@@ -120,29 +120,41 @@ $ ls
 Makefile  test.aux  test.dvi  test.log	test.pdf  test.tex
 $ make
 make: `test.pdf' is up to date.
-$ 
+$
 ```
 
 #### より実用的な Makefile {#rc4136ab}
 
-より実用的な Makefile として、次の内容が考えられます。<br>
+より実用的な Makefile として、次の内容が考えられます。
 
 ```
 TARGET := test.pdf
+```
 
+```
 .PHONY: all clean distclean
+```
 
+```
 all: $(TARGET)
+```
 
+```
 clean:
 	$(RM) *.aux *.log *.dvi
+```
 
+```
 distclean: clean
 	$(RM) $(TARGET)
+```
 
+```
 %.pdf: %.dvi
 	dvipdfmx $<
+```
 
+```
 %.dvi: %.tex
 	uplatex -interaction=batchmode $<
 ```
@@ -181,22 +193,36 @@ LaTeX実行時に多数生成される中間ファイルを削除するとき、
 
 ```
 TARGET := test.pdf
+```
 
+```
 CNT := 2
+```
 
+```
 .PHONY: all clean distclean
+```
 
+```
 all: $(TARGET)
+```
 
+```
 clean:
 	$(RM) *.aux *.log *.dvi
+```
 
+```
 distclean: clean
 	$(RM) $(TARGET)
+```
 
+```
 %.pdf: %.dvi
 	dvipdfmx $<
+```
 
+```
 %.dvi: %.tex
 	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
 ```
@@ -215,22 +241,36 @@ LaTeX を無条件で実行してから、ログファイルに警告がある�
 
 ```
 TARGET := test.pdf
+```
 
+```
 CNT := 2
+```
 
+```
 .PHONY: all clean distclean
+```
 
+```
 all: $(TARGET)
+```
 
+```
 clean:
 	$(RM) *.aux *.log *.dvi
+```
 
+```
 distclean: clean
 	$(RM) $(TARGET)
+```
 
+```
 %.pdf: %.dvi
 	dvipdfmx $<
+```
 
+```
 %.dvi: %.tex
 	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
 	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then uplatex -interaction=batchmode $<; else exit 0; fi; done
@@ -240,35 +280,51 @@ distclean: clean
 
 ### 画像やLaTeXファイルが挿入されている場合 {#mf500793}
 
-Makeは基本的に、必須項目として指定されているファイルが更新された場合に実行されます。<br>
-LaTeXソースファイルで \includegraphics 命令によって挿入された画像や、\include や \input 命令で挿入された LaTeX ファイルが更新されていても、上記の Makefile では Make が実行されず反映されないことがあります。<br>
+Makeは基本的に、必須項目として指定されているファイルが更新された場合に実行されます。
+LaTeXソースファイルで \includegraphics 命令によって挿入された画像や、\include や \input 命令で挿入された LaTeX ファイルが更新されていても、上記の Makefile では Make が実行されず反映されないことがあります。
 
 さらに、PDF, PNG, JPEG 形式の画像ファイルを挿入しているときは、バウンディング情報が必要です。
 
-そのため、画像ファイルおよびLaTeXファイルの依存関係は、Makefileに反映する必要があります。<br>
-たとえば、画像 tiger.pdf を挿入している場合は、次のようにMakefileを記述します。<br>
-「test.dvi: tiger.pdf」が、画像ファイルの依存関係を表します。<br>
+そのため、画像ファイルおよびLaTeXファイルの依存関係は、Makefileに反映する必要があります。
+たとえば、画像 tiger.pdf を挿入している場合は、次のようにMakefileを記述します。
+「test.dvi: tiger.pdf」が、画像ファイルの依存関係を表します。
 
 ```
 TARGET := test.pdf
+```
 
+```
 CNT := 1
+```
 
+```
 .PHONY: all clean distclean
+```
 
+```
 all: $(TARGET)
+```
 
+```
 test.dvi: tiger.pdf
+```
 
+```
 clean:
 	$(RM) *.aux *.log *.dvi
+```
 
+```
 distclean: clean
 	$(RM) $(TARGET)
+```
 
+```
 %.pdf: %.dvi
 	dvipdfmx $<
+```
 
+```
 %.dvi: %.tex
 	for i in `seq 1 $(CNT)`; do uplatex -interaction=batchmode $<; done
 	for i in `seq 1 3`; do if grep -F 'Rerun to get cross-references right.' `basename $< .tex`.log; then uplatex -interaction=batchmode $<; else exit 0; fi; done
@@ -318,7 +374,9 @@ IDX       = $(FILENAME).idx
 DVI       = $(FILENAME).dvi
 PDF       = $(FILENAME).pdf
 PDFOUT    = $(FILENAME)_enc.pdf
+```
 
+```
 all:
 	make tex
 	make tex
@@ -341,7 +399,7 @@ pw:
 	pdftk $(PDF) output $(PDFOUT) owner_pw foobar
 ```
 
-この場合、用意した LaTeX 文書ファイルは doc001.tex という名前です。makeindex コマンドで索引を生成するのと、[pdftk](/pdftk/) でコピー・ペースト・印刷の禁止、パスワードの付与を行うために、 
+この場合、用意した LaTeX 文書ファイルは doc001.tex という名前です。makeindex コマンドで索引を生成するのと、[pdftk](/pdftk/) でコピー・ペースト・印刷の禁止、パスワードの付与を行うために、
 
 - LaTeX での処理を2回
 - makeindex
@@ -349,8 +407,8 @@ pw:
 - dvipdfmx で PDF ファイル生成
 - 生成した PDF ファイルを基に、pdftk でパスワード付与した PDF を生成
 
-という順番での処理を行う必要があります。<br>
-また、処理終了後、あるいは処理を中断するときには、中間生成ファイルや PDF 等を必要に応じて削除する必要があります。<br>
+という順番での処理を行う必要があります。
+また、処理終了後、あるいは処理を中断するときには、中間生成ファイルや PDF 等を必要に応じて削除する必要があります。
 
 このようなときに、上のような Makefile を作成しておくと、
 
@@ -358,7 +416,7 @@ pw:
 $ make
 ```
 
-（厳密には make all ですが、make は引数なしで実行されたときの default として、Makefile に最初に記述のある "all" を引数にとったときと同じ処理をします）と入力するだけで、上述の一連の処理が全て行われます。<br>
+（厳密には make all ですが、make は引数なしで実行されたときの default として、Makefile に最初に記述のある "all" を引数にとったときと同じ処理をします）と入力するだけで、上述の一連の処理が全て行われます。
 また、
 
 ```
@@ -375,9 +433,9 @@ $ make distclean
 
 ## リンク {#i5861f79}
 
-Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。<br>
-ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。<br>
-ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。<br>
+Makefile の書き方は簡単な条件分岐なので、ご覧になるだけでも何となくお分かりになると思います。
+ネット上では、"Makefile 書き方" で検索していただければ数多くの解説を参照することができると思います。
+ここでは参考に以下ひとつだけ挙げておきます（append 歓迎）。
 
 - [TeX文章をmakeで管理](http://folioscope.hatenablog.jp/entry/2013/07/29/000009)
 - [Makefileの解説](http://www.am.sanken.osaka-u.ac.jp/~mukaigaw/misc/Makefile.html)
@@ -403,7 +461,7 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 
 ### Latexmk {#ae6ae029}
 
-[Latexmk - TeX Wiki](/Latexmk/) を参照．<br>
+[Latexmk - TeX Wiki](/Latexmk/) を参照．
 
 ### OMake → 問題が発生する場合は [Latexmk](/Latexmk/) を使用する {#df86b9ce}
 
