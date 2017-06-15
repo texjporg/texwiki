@@ -150,31 +150,38 @@ bregonig.dll が有効になると，検索／置換／Grep で
 
 ■ 検索／置換／Grep
 
-> <span style="color:#FF77AA;background-color:#FF77AA;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>共通設定</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#FF77AA;background-color:#FA77AA;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
+> <span style="color:#FF77AA;background-color:#FF77AA;"><ins>&nbsp;<span style="color:white;">共通設定</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#FF77AA;background-color:#FF87BA;"></ins>&#x7c;&nbsp;&nbsp;&nbsp;<span style="color:White;">&#x2754;</span>&nbsp;&nbsp;&nbsp;&#x7c;<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>&#x7c;&nbsp;&nbsp;&nbsp;<span style="color:White;">&#x1f5d9;</span>&nbsp;&nbsp;&nbsp;&#x7c;<ins></span></ins></span><br>
 >
-> 　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　　カスタムメニュー　　 \]\[　　強調キーワード　　 \]\[　　支援　　　　\]\[ 　　マクロ　　　　\]\[　　プラグイン　　\]</ins></span><br>
-> 　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全般　 \]\[　ウィンドウ　\]\[　メインメニュー　\]\[　ツールバー　\]\[　タブバー　\]\[　ステータスバー　\]\[　編集　\]</ins></span><br>
-> 　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　ファイル　　\]\[ 　ファイル名表示　 \]\[ 　バックアップ　 \]\[ 　書式　　 \]</ins></span><strong>\[ 　検索　　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 　キー割り当て　 \]</ins></span><br>
->
-> <br>
->
-> 　　　検索／置換／Grep<br>
-> 　　　☑カーソル位置の文字列をデフォルトの検索文字列にする(C)<br>
-> 　　　☑次・前検索で他のビューでの検索条件変更を引き継ぐ(I)<br>
-> 　　　正規表現ライブラリの指定(L)　　　　　<ins>.\bregonig.dll</ins><br>
-> 　　　bregonig.dll Ver.4.12 with Onigmo 6.1.2<br>
+> &nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;"><ins>&#x7c;&nbsp;&nbsp;&nbsp;カスタムメニュー&nbsp;&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;&nbsp;強調キーワード&nbsp;&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支援&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;&nbsp;&nbsp;マクロ&nbsp;&nbsp;&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;&nbsp;&nbsp;プラグイン&nbsp;&nbsp;&nbsp;&nbsp;&#x7c;</ins></span><br>
+> &nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;"><ins>&#x7c;&nbsp;&nbsp;全般&nbsp;&nbsp;&#x7c;&nbsp;ウィンドウ&nbsp;&#x7c;&nbsp;メインメニュー&nbsp;&#x7c;&nbsp;ツールバー&nbsp;&#x7c;&nbsp;タブバー&nbsp;&#x7c;&nbsp;ステータスバー&nbsp;&#x7c;&nbsp;&nbsp;編集&nbsp;&nbsp;&#x7c;</ins></span><br>
+> &nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;"><ins>&#x7c;&nbsp;&nbsp;&nbsp;ファイル&nbsp;&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;ファイル名表示&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;バックアップ&nbsp;&nbsp;&#x7c;&nbsp;&nbsp;&nbsp;書式&nbsp;&nbsp;&nbsp;&#x7c;</ins></span>&nbsp;&nbsp;&nbsp;検索&nbsp;&nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;"><ins>&#x7c;&nbsp;&nbsp;&nbsp;キー割り当て&nbsp;&nbsp;&nbsp;&#x7c;</ins></span><br>
 >
 > <br>
 >
-> 　　　Grep<br>
-> 　　　☐Grepモードで保存確認する(V)<br>
-> 　　　☐リアルタイムで表示する(R)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;検索／置換／Grep<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2611;&nbsp;カーソル位置の文字列をデフォルトの検索文字列にする(C)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2611;&nbsp;次・前検索で他のビューでの検索条件変更を引き継ぐ(I)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正規表現ライブラリ指定(L)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bregonig.dll Ver.4.12 with Onigmo 6.1.2<br>
 >
 > <br>
 >
-> 　　　Grep結果からのタブジャンプ<br>
-> 　　　☑エンターキーでタグジャンプ(E)<br>
-> 　　　☑ダブルクリックでタグジャンプ(W)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grep<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2610;&nbsp;Grepモードで保存確認する(V)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2610;&nbsp;リアルタイムで表示する(R)<br>
+>
+> <br>
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grep結果からのタブジャンプ<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2611;&nbsp;エンターキーでタグジャンプ(E)<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x2611;&nbsp;ダブルクリックでタグジャンプ(W)<br>
+>
+> <br>
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;タグジャンプ<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;タグジャンプの検索(T):&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;">\[ヒットしたら次のファイルを検索しない&nbsp;&nbsp;&#x142f;\]</span><br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;キーワード指定のタグファイル検索(K):&nbsp;&nbsp;<span style="color:Black;background-color:#EEEEEE;">\[次のファイルを検索する&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#x142f;\]</span><br>
+> <ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins><br>
 
 ■ 検索
 
