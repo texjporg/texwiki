@@ -21,7 +21,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。
     - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。
         - MacTeX と BasicTeX の入手先：[http://www.tug.org/mactex/](http://www.tug.org/mactex/)
-    - 小川版 Drag &amp; Drop UpTeX：TeX Live のサブセット (scheme-small) に日本語パッケージが予め追加されています。
+    - 小川版 [Drag and Drop UpTeX](</Drag and Drop UpTeX/>)：TeX Live のサブセット (scheme-small) に日本語パッケージが予め追加されています。
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行
 - パッケージ管理システムを利用する
