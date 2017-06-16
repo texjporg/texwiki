@@ -53,7 +53,11 @@ $ sudo tlmgr install collection-langjapanese
 $ sudo tlmgr paper a4
 ```
 
-<!-- ***インストールの事例 [#q65e25e8] -->
+#### インストールの事例 {#q65e25e8}
+
+- [macOS Sierra に コンパクトなtex環境を作る](http://qiita.com/ryosebach/items/bea8e8b084b07eaf88ae)
+- [macOS Sierra に LaTeX 環境を作る](http://qiita.com/sira/items/d7f5c411ccb0f90c43d8)
+- [Mac bookにBasicTeXを導入してみた](http://pf-siedler.hatenablog.com/entry/2016/11/23/141723)
 
 #### TeX Live 2016 以降での注意点 {#y0fc0688}
 
