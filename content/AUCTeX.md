@@ -9,7 +9,7 @@ pukiwiki: "AUCTeX"
 
 [Emacs](/Emacs/) > AUCTeX
 
-## [AUCTeX](http://www.gnu.org/software/auctex/) {#d40177aa}
+## [AUCTeX](https://www.gnu.org/software/auctex/) {#d40177aa}
 
 ***
 
@@ -19,7 +19,7 @@ pukiwiki: "AUCTeX"
 
 AUCTeX は Emacs の TeX モードです．
 
-- [AUCTeX - Sophisticated document creation](http://www.gnu.org/software/auctex/)
+- [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
 
 - [AUCTeX, an integrated TeX/LaTeX environment - 概要 \[Savannah\]](http://savannah.gnu.org/projects/auctex/)
@@ -37,7 +37,7 @@ AUCTeX は Emacs の TeX モードです．
 - [http://git.savannah.gnu.org/cgit/auctex.git/refs/](http://git.savannah.gnu.org/cgit/auctex.git/refs/)
     - [http://git.savannah.gnu.org/cgit/auctex.git/refs/tags](http://git.savannah.gnu.org/cgit/auctex.git/refs/tags)
 
-を参照．<br>
+を参照．
 
 ### ChangeLog {#c24ccc65}
 
@@ -46,11 +46,7 @@ AUCTeX は Emacs の TeX モードです．
 
 ### スクリーンショット {#s450de09}
 
-[![Showing the mode menu and syntax highlighting in LATEX mode.](http://www.gnu.org/software/auctex/img/auctex-screenshot-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot.png)
-　[![Showing the same file as above but content like footnotes or items is folded.](http://www.gnu.org/software/auctex/img/auctex-screenshot-fold-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot-fold.png)
-　[![Showing a dtx file and different syntax highlighting of documentation and program parts.](http://www.gnu.org/software/auctex/img/auctex-screenshot-doctex-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot-doctex.png)
-　[![Showing a sectioning command and math rendered as images inside an Emacs buffer.](http://www.gnu.org/software/auctex/img/preview-screenshot-thumb.png)](http://www.gnu.org/software/auctex/img/preview-screenshot.png)
-　[![Showing a less puristic interface setup with LATEX-specific tool bar and scroll bar.](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar-thumb.png)](http://www.gnu.org/software/auctex/img/auctex-screenshot-tool-bar.png)
+[公式のスクリーンショットのページ](https://www.gnu.org/software/auctex/screenshots.html)を参照．
 
 ## 日本語利用のための engine 設定 {#gf4835e4}
 
@@ -293,18 +289,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > </tbody>
 > </table>
 >
-
-***
-
-<span style="color:#556680;background-color:#556680;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/EmacsIcon.svg/200px-EmacsIcon.svg.png" alt="GNU Emacs - GNU Project - Free Software Foundation (FSF)" width="28" height="28">](http://www.gnu.org/software/emacs/)<span style="color:#556680;background-color:#556680;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>emacs@AUCTeX</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#556680;background-color:#556680;"></ins>\[ <span style="color:Black;"><strong>🗕</strong></span> \]<ins></span><span style="color:#556680;background-color:#556680;"></ins>\[ <span style="color:Black;"><strong>🗖</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
-
-<span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル　 編集　 オプション　 バッファ　 ツール　 Preview　 LaTeX　 Command　 Math　 Ref　 ヘルプ　　　</ins></span><br>
-
-...<br>
-&#x2d;U\\---　　<strong>auctex.tex</strong>　　　　　ALL L1　　　(LaTeX/MP Ref)-----------------------------------------<br>
-　Command: (default LaTeX) view<br>
-
-***
 
 ### macOS {#h32722ec}
 
