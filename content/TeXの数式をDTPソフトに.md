@@ -110,7 +110,7 @@ EPS にプレビューを付けておけば，配置したときにプレビュ�
 箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には次のようにします。
 ただし，Illustrator のフォントリストにたくさんのフォントが追加されてしまいますのでご注意ください。
 
-あらかじめ $TEXMF\fonts\type1\ フォルダ（例えば C:\texlive\2017\texmf-dist\fonts\type1\）をフォルダごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
+あらかじめ $TEXMF\fonts\type1\ フォルダー（例えば C:\texlive\2017\texmf-dist\fonts\type1\）をフォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
 こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
@@ -125,7 +125,7 @@ macOS でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォン�
 スクリーンフォントも必要です（→ [MacでフォントをAdobeのアプリが認識しない](http://oversleptabit.com/?p=1319)）。
 
 インストールの場所は，Adobe 製品だけから使うなら /Library/"Application Support"/Adobe/Fonts/ 以下ですが，macOS では次の場所のいずれかに入れるのがいいかもしれません。
-macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\]OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X 10: フォントの保存場所とその目的](http://support.apple.com/kb/HT2435?viewlocale=ja_JP)」，「[Mac OS X: Font locations and their purposes](http://support.apple.com/kb/ht2435)」）。
+macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\]OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X：フォントの保存場所とその目的](https://support.apple.com/ja-jp/HT201722)」，「[Mac OS X: Font locations and their purposes](https://support.apple.com/en-us/HT201722)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
@@ -205,7 +205,7 @@ Microsoft Windows ならおそらく次に相当します（さらに正確に�
 >rungs -dSAFER -q -dBATCH -dNOPAUSE -sDEVICE=eps2write -sOutputFile=testeq2.eps testeq.eps
 ```
 
-これでアウトラインが取れます。日本語も大丈夫です（Windows でも dvips を使います ([qa:54955](https://okumuralab.org/~okumura/texfaq/qa/54955.html))）。
+これでアウトラインが取れます。日本語も大丈夫です。
 できた testeq2.eps の &#x25;&#x25;BoundingBox: 行がなぜか変なので，元の testeq.eps の &#x25;&#x25;BoundingBox: 行と置き換えます。
 これで testeq2.eps はフォントを含まないアウトラインだけの EPS になり，Mac でも Windows でも Illustrator などに安全に配置できます。
 
