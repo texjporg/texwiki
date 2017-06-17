@@ -948,7 +948,7 @@ MetaPost で作成した図を LaTeX 文書に取り込む際に，
 - [MetaPost](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/metapost/)（[鈴木秀幸さん](http://www.sat.t.u-tokyo.ac.jp/~hideyuki/index-j.html)による日本語MetaPost）
 - [MetaPost 覚書](http://lagendra.s.kanazawa-u.ac.jp/ogurisu/manuals/metapost/mpost.html)（小栗栖さんによるリファレンスマニュアル）
 - [TeX&amp;MetaPostであそぼう](http://minamo.my.coocan.jp/metapost.html)(みなもさんによるMePoTeX 配布など)
-- [MetaPost Basics: Drawing lines, curves and shapes and using color](http://www.latex-community.org/component/content/article/61-latexs-friends-others/486-metapost-lines-curves-shapes-color)
+- [MetaPost Basics: Drawing lines, curves and shapes and using color](http://latex.org/component/content/article/61-latexs-friends-others/486-metapost-lines-curves-shapes-color)
 - [Function Grapher](http://www.tlhiv.org/mpgraph/) WEB application by MetaPost
 
 <!-- - -- - Wiki移行前にあった，奥村氏による謝辞文： -->
