@@ -33,7 +33,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ### スクリーンショット {#j94c34b3}
 
-[![Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot_thumb.jpg)](http://borisvl.github.com/Pdf4Eclipse/pics/screenshot.jpg)<br><br>
+[公式のスクリーンショットのページ](http://texlipse.sourceforge.net/screenshots/)を参照．
 
 ### 特徴 {#qe22fab6}
 
@@ -171,7 +171,7 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [EclipseでTeXを編集するTeXlipse](http://d.hatena.ne.jp/jun9128/20110323/)
 - [Eclipse/TeXlipse - KLab Public Wiki](http://telecom0.eng.niigata-u.ac.jp/index.php?Eclipse/TeXlipse)
-- [LaTeX Community &bull; View topic - Texlipse can't find Bibtex](http://www.latex-community.org/forum/viewtopic.php?f=27&t=10481&start=0)
+- [Texlipse can't find Bibtex](http://latex.org/forum/viewtopic.php?f=27&t=10481&start=0)
 
 ### リリース情報 {#f49b6dcf}
 
