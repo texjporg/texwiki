@@ -48,7 +48,7 @@ markdown-pdf は Markdown 文書をまず HTML へ変換し，[PhantomJS](http:/
 $ pandoc input.md -o output.pdf --latex-engine=lualatex -V documentclass=ltjarticle
 ```
 
-のように、LaTeXエンジンをLuaLaTeXに、ドキュメントクラスをltjsarticleに指定する必要があります。
+のように、LaTeXエンジンをLuaLaTeXに、ドキュメントクラスを日本語LuaTeX用のもの（上の例ではltjarticle）に指定する必要があります。
 
 ### Atom による執筆環境 {#r4f987bf}
 
