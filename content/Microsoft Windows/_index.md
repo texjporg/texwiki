@@ -21,15 +21,6 @@ Windows に TeX をインストールして使えるようになるまでの大�
 
 ***
 
-## お知らせ {#a6df4118}
-
-Windows 10 Insider Build 14971 でデフォルトのコマンドシェルが「コマンド プロンプト」から「Windows PowerShell」に変更されました。--&gt; [Announcing Windows 10 Insider Preview Build 14971 for PC - Windows Experience BlogWindows Experience Blog](https://blogs.windows.com/windowsexperience/2016/11/17/announcing-windows-10-insider-preview-build-14971-for-pc/)
-
-具体的には以下のようになります。
-
-- Windows キー + X キーを入力したときに表示されるコンテキストメニュー項目の「コマンド プロンプト」が「Windows PowerShell」に変更されました。
-- エクスプローラーで Shift キーを押しながらフォルダーを右クリックすると表示されるコンテキストメニュー項目の 「コマンド ウィンドウをここで開く」が「PowerShell ウィンドウをここに開く」に変更されました。
-
 ## TeX ディストリビューション {#distribution}
 
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます．
@@ -73,7 +64,7 @@ TeXworks は
 
 - TeX Live をインストールした場合はスタートメニューの「TeX Live 2017」→「TeXworks editor」から
 - W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
-- W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，Windows PowerShell またはコマンド プロンプトから 「texworks」で
+- W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，コマンドラインから 「texworks」で
 
 起動することができます．
 
