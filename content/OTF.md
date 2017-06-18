@@ -434,15 +434,15 @@ TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.t
 埋め込み制御は
 
 ```
-$ sudo updmap-sys --setoption kanjiEmbed noEmbed  （埋め込まない）
-$ sudo updmap-sys --setoption kanjiEmbed hiragino （ヒラギノ書体を埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed ipaex    （IPAexフォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed ipa      （IPAフォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed ms       （MSフォントを埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed yu-win10 （游書体を埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed yu-osx   （游書体を埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed kozuka   （小塚書体を埋め込む）
-$ sudo updmap-sys --setoption kanjiEmbed morisawa （モリサワフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed noEmbed  （埋め込まない）
+$ sudo updmap-sys --setoption jaEmbed hiragino （ヒラギノ書体を埋め込む）
+$ sudo updmap-sys --setoption jaEmbed ipaex    （IPAexフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed ipa      （IPAフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed ms       （MSフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed yu-win10 （游書体を埋め込む）
+$ sudo updmap-sys --setoption jaEmbed yu-osx   （游書体を埋め込む）
+$ sudo updmap-sys --setoption jaEmbed kozuka   （小塚書体を埋め込む）
+$ sudo updmap-sys --setoption jaEmbed morisawa （モリサワフォントを埋め込む）
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。
