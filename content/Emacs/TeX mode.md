@@ -7,6 +7,81 @@ pukiwiki: "Emacs/TeX mode"
 
 # Emacs/TeX mode
 
+<!-- 不毛なので，わざわざ powershell を介して実行することの利点を万人が納得できるように述べていただけますか？ -->
+
+<!-- ↑ 最新版の ptex2pdf では以下のエラーが発生するからですけど。実際にテストされましたか？ -->
+<!-- Multiple filename arguments, only one can be processed, exiting. -->
+
+<!-- それならバグ報告すればよいでしょう．どうしてそのことも書かずに TeX Wiki の編集で対処しようとするのですか？ -->
+<!-- 私は Linux ユーザーなのもあって，Linux の設定で powershell を使えと言われても「？？」という反応にしかならないです．Linux 版の PowerShell の存在は知っていたとしてもです． -->
+<!-- それと，以前から「コマンド プロンプトから」を「Windows PowerShell または コマンド プロンプトから」にとにかく書き換えたがっているようですが， -->
+<!-- いちいちくどいので，可能な場合は「コマンドラインから」などにした方がすっきりすると思っています． -->
+<!-- 「LaTeX 入門」や「Microsoft Windows/基礎知識」のページにコマンドラインの説明があれば一応はよいのでは． -->
+<!-- わからなければ自分で調べるべきですし． - - kmaeda -->
+
+<!-- ↑ -->
+<!-- > バグ報告すればよいでしょう -->
+<!--  -->
+<!-- これはバグではないと思っています。 -->
+<!-- 以前の ptex2pdf はパラメータの処理が適当だったのでそれにつけこんで設定を記述していましたが -->
+<!-- ptex2pdf で (e)(u)p(la)tex に渡すパラメータ (-ot で指定するパラメータ) の範囲を -->
+<!-- 指定せずに ptex2pdf を使用してる YaTeX ユーザーが -->
+<!-- Multiple filename arguments, only one can be processed, exiting. -->
+<!-- というエラーが発生してオプションを削除する記事 -->
+<!-- (- -> http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:yatex:start ) -->
+<!-- を見てデフォルトで \nonstopmode\input を追加する TeX mode は -->
+<!-- あきらかに問題が起こるなと思って動かしてみると案の定エラーがでたので -->
+<!-- とりあえず PowerShell で回避しようと思ったわけです。 -->
+<!--  -->
+<!-- > どうしてそのことも書かずに TeX Wiki の編集で対処しようとするのですか？ -->
+<!--  -->
+<!-- これは単純に面倒だからですね。 -->
+<!-- 確かにこの意見は正論ではあるんですが -->
+<!-- 私は正論であっても面倒なことは(よほどのことがなければ) -->
+<!-- 基本的にしないように心がけています。 -->
+<!-- あと私はバグを直したいわけでも理由を知りたいわけでもなくて -->
+<!-- 単に道具として便利に使いたいだけなので -->
+<!-- 長々と説明が書かれているよりも -->
+<!-- 設定が書かれていてコピペで動けばいいと思っています。 -->
+<!-- kmaeda さんは編集合戦のような不毛な作業にも耐えられるすごい人ですし -->
+<!-- 書かれている意見は正論で前向きですばらしいんですが -->
+<!-- 正論であってもそれが面倒なものであれば私のように面倒なことが大嫌いで -->
+<!-- 人付き合いに関してまったくやる気のない人間は実行しないんだと思います。 -->
+<!--  -->
+<!-- > Linux ユーザーなのもあって，Linux の設定で powershell を使えと言われても「？？」という反応にしかならないです． -->
+<!-- > Linux 版の PowerShell の存在は知っていたとしてもです． -->
+<!--  -->
+<!-- ええとこれはたしかにそうですね。 -->
+<!-- macOS と Linux に関しては私もわざわざ PowerShell をインストールしてまで使いたくはありません。 -->
+<!-- 時間があれば書き直します。 -->
+<!-- kmaeda さんが書き直してもかまわないと思います。 -->
+<!--  -->
+<!-- > 「コマンドラインから」などにした方がすっきりする -->
+<!--  -->
+<!-- これはたしかにそうなんですが「コマンドラインから」という表現だと -->
+<!-- Windows PowerShell とか Command Prompt だけでなく -->
+<!-- Cygwin や MSYS なども考慮しないといけなくなって確認が面倒なので -->
+<!-- そういう表現にしていました。 -->
+<!-- 実際に Cygwin や MSYS を使用しているユーザーもいます。 -->
+<!-- Cygwin や MSYS の bash を含めて動作するのであればそういう表現でもいいと思います。 -->
+<!-- まあ kmaeda さんが修正されたと思われる記述を見ると -->
+<!-- 冗長な表現がより簡潔な表現に修正されていて参考になるものも多々あるので -->
+<!-- 時間があれば修正しようと思います。 -->
+<!--  -->
+<!-- > 「LaTeX 入門」や「Microsoft Windows/基礎知識」のページにコマンドラインの説明があれば一応はよいのでは． -->
+<!--  -->
+<!-- 説明があるのはいいんですが説明を見て実際に使えるかどうかは別だと思います。 -->
+<!-- 「Windows PowerShell は .Net Framework のクラスライブラリや Windows API が呼び出せるし C# や VB のコードも埋め込めてマジ便利」 -->
+<!-- とか書かれてもほとんどの人にはこの説明から具体的なコードは導けないと思っています。 -->
+<!-- 説明よりも実際に動くコードがあったほうが私はうれしいです。 -->
+<!--  -->
+<!-- > わからなければ自分で調べるべき -->
+<!--  -->
+<!-- この意見は正論なんですが TeX Forum を見ていると -->
+<!-- わからないけど調べるのは面倒だからしたくないという人もいるみたいです。 -->
+<!-- まあ TeX Forum に質問を投げればだれかが適当に答えてくれるみたいなので -->
+<!-- それでいいかなと思っています。 -->
+
 [Emacs](/Emacs/) > TeX mode
 
 ## [TeX mode](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
@@ -44,7 +119,7 @@ Emacs には標準で含まれています．
 
 C-c C-f によるタイプセットは，設定ファイルにおいて latex-run-command（latex-mode の場合．tex-mode の場合は tex-run-command）にセットされたコマンドが実行されます．
 デフォルトのコマンドは latex，つまり欧文用なので，このままでは日本語は出ません．
-下の設定例を参考に，ptex2pdf などに変更して下さい．
+下の設定例を参考に，PowerShell から (u)platex と dvipdfmx を実行して下さい．
 
 同様に，BibTeX のコマンドのデフォルトは bibtex，プレビューコマンドのデフォルトは xdvi (X Window System), yap (Windows), dvi2tty（それ以外）ですので，適宜変更する必要があります．
 
@@ -98,12 +173,12 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
+(setq tex-run-command "powershell -Command \"& {euptex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq tex-run-command "luatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
+(setq latex-run-command "powershell -Command \"& {uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq latex-run-command "lualatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "luajitlatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "xelatex -synctex=1 -interaction=nonstopmode")
@@ -215,12 +290,12 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "/Library/TeX/texbin/ptex2pdf -u -e -ot '-synctex=1 -interaction=nonstopmode'")
+(setq tex-run-command "/usr/local/bin/powershell -Command \"& {/Library/TeX/texbin/euptex -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){/Library/TeX/texbin/dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq tex-run-command "/Library/TeX/texbin/luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/Library/TeX/texbin/luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/Library/TeX/texbin/xetex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "/Library/TeX/texbin/pdftex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "/Library/TeX/texbin/ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode'")
+(setq latex-run-command "/usr/local/bin/powershell -Command \"& {/Library/TeX/texbin/uplatex -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){/Library/TeX/texbin/dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq latex-run-command "/Library/TeX/texbin/lualatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "/Library/TeX/texbin/luajitlatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "/Library/TeX/texbin/xelatex -synctex=1 -interaction=nonstopmode")
@@ -303,12 +378,12 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -u -e -ot '-synctex=1 -interaction=nonstopmode'")
+(setq tex-run-command "powershell -Command \"& {euptex -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode'")
+(setq latex-run-command "powershell -Command \"& {uplatex -synctex=1 -interaction=nonstopmode $args[0] $args[1];if($?){dvipdfmx (Get-Item $args[1]).BaseName}}\"")
 ;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "luajitlatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "xelatex -synctex=1 -interaction=nonstopmode")
