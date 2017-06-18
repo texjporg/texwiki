@@ -268,13 +268,13 @@ $ sudo mktexlsr
 ヒラギノの N シリーズを埋め込む場合は
 
 ```
-$ sudo updmap-sys --setoption kanjiEmbed hiragino-elcapitan-pron
+$ sudo updmap-sys --setoption jaEmbed hiragino-elcapitan-pron
 ```
 
 ヒラギノの N シリーズでない方を埋め込む場合は
 
 ```
-$ sudo updmap-sys --setoption kanjiEmbed hiragino-elcapitan
+$ sudo updmap-sys --setoption jaEmbed hiragino-elcapitan
 ```
 
 を実行します。
