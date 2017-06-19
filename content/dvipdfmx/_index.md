@@ -476,11 +476,11 @@ map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中
 ### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
 
 Photoshop 等のバグです．
-PNG ファイルを一度 [ImageMagick](/ImageMagick/) の convert コマンドを通しておくことで回避できます．
+PNG ファイルを一度 [ImageMagick](/ImageMagick/) の magick コマンドを通しておくことで回避できます．
 問題の画像を foo.png とするとき，
 
 ```
-$ convert foo.png foo_c.png
+$ magick foo.png foo_c.png
 ```
 
 として，できた foo_c.png の方を取り込みます．
@@ -507,7 +507,7 @@ Image: foo.png
 
 このように，埋め込まれているチャンクの情報が表示されます．
 もし png:cHRM がありかつ png:gAMA がない場合は発生条件にあてはまるため，色が変わる可能性があります．
-一度 convert を通すと gAMA チャンクが付加されるため，正しく取り込まれるようになります．
+一度 magick を通すと gAMA チャンクが付加されるため，正しく取り込まれるようになります．
 
 （注意）sRGB チャンクについては，
 
@@ -621,8 +621,8 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 - \[[texlive\] Index of /trunk/Build/source/texk/dvipdfm-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/ChangeLog?view=markup)
-- \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def?view=markup)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def?view=log)
+- \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=markup)
+    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=log)
 - \[[latexfmxdef\] Index of /trunk](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/)
     - [log](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/?view=log)
     - [ChangeLog](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/ChangeLog?view=markup)
