@@ -19,7 +19,7 @@ pukiwiki: "pTeXと多言語処理"
 [upTeX](/upTeX,upLaTeX/) については、CJK 以外の言語では事情は pTeX とほぼ同じです。
 [upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。
 
-pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 (Internet archive)](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory (Internet archive)](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.htmll)」が知られています。
+pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 (Internet archive)](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory (Internet archive)](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」が知られています。
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては取り扱っていませんし，個々のパッケージのインストール方法についても一部のパッケージについては割愛しています。
 そこで稲垣さんが取り上げてくださることを期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
 
@@ -1269,8 +1269,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 ここでは ZR さんの PXbase パッケージを使用します。
 
 - [https://github.com/zr-tex8r/PXbase](https://github.com/zr-tex8r/PXbase)
-- [upLaTeXを使おう \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/uplatex.html)
-- [BXbase／PXbase パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxbase.html)
+- [［改訂新版］upLaTeXを使おう](http://qiita.com/zr_tex8r/items/5c14042078b20edbfb07)
 
 使い方は非常に簡単で，繁體字（正體字）は「\foreignlanguage{tchinese}{}」，簡化字（&#x7b80;化字，簡体字）は「\foreignlanguage{schinese}{}」，ハングル（&#xd55c;&#xae00;）は「\foreignlanguage{korean}{}」を使用するだけです。
 
