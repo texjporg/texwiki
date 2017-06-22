@@ -75,7 +75,7 @@ foo.dvi -> foo.pdf
 フォントは PDF へ埋め込むことを基本としてください．
 非埋め込みで PDF を作成することは推奨されません．
 
-例えば，TeXLive/Windows 10 で標準搭載の游明朝・游ゴシックを埋め込むように設定するには Windows PowerShell またはコマンド プロンプトで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
+例えば，TeXLive/Windows 10 で標準搭載の游明朝・游ゴシックを埋め込むように設定するにはコマンドラインで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
 
 ```
  kanji-config-updmap yu-win10
@@ -350,8 +350,10 @@ EPS ファイルを使っていないか確認しましょう．EPS を PDF へ�
 <!-- dvipdfmx が（余計な）おかしなことをやっているというよりは，むしろ -->
 <!-- dvipdfmx が必要と思しき処理をやっていないというほうが合致します。 -->
 
-最新版の W32TeX および TeX Live 2016 以降では，\includegraphics に pagebox オプションによって “意図どおりの Box” を指定することができるようになりました． <!-- ただし，互換性のため無指定の場合の挙動は従来のままです． -->
+TeX Live 2016 以降および W32TeX では，\includegraphics に pagebox オプションによって “意図どおりの Box” を指定することができるようになりました．
 
+- [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)
+- [graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件](http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e)
 - [ナントカ Box の話(2)](http://d.hatena.ne.jp/zrbabbler/20140629/1404010741)（PDF における 5 つの“ナントカBox”）
 - [dvipdfmx で画像する時に色々とアレな話](http://d.hatena.ne.jp/zrbabbler/20140814/1408040710)
 - [LaTeX で PDF の一部だけ表示したい(1)](http://acetaminophen.hatenablog.com/entry/2015/07/18/233500)，[(2)](http://acetaminophen.hatenablog.com/entry/2015/07/19/074258)，[(3)](http://acetaminophen.hatenablog.com/entry/2015/10/19/211705)
