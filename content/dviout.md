@@ -101,7 +101,7 @@ dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正�
 ## ビルド {#d0101f83}
 
 [Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します。
-Windows PowerShell またはコマンド プロンプトを起動して dviout のソースコードを取得します。
+コマンドラインから dviout のソースコードを取得します。
 
 ```
 mkdir dviout
@@ -112,7 +112,7 @@ svn co svn://tug.org/dviout/trunk
 trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動します。
 Solution Explorer から dviwin.c を削除し，BUILD -> Build Solution で dviout をビルドします。
 
-Windows PowerShell またはコマンド プロンプトからビルドしたい場合は MSBuild を使用してビルドすることもできます。
+コマンドラインから MSBuild を使用してビルドすることもできます。
 
 ```
 msbuild dviout.sln
@@ -374,7 +374,7 @@ dviout は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマ
 
 ### forward search {#w6799fd9}
 
-TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は<br>
+TeX ファイルの 30 行目に対応する DVI ファイルの該当するページにジャンプしたい場合は
 
 ```
 synctex view -i "30:0:hoge.tex" -o "hoge.dvi" -x "'C:\w32tex\dviout\dviout.exe' -1 -renew=+ '%{output}' %{page+1}"
