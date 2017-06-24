@@ -61,7 +61,7 @@ pst-eucl や uml があります．<br>
 
 PSTricks は [Timothy Van Zandt](http://faculty.insead.edu/vanzandt/) (開発当時プリンストン大, 現フランス・INSEAD) が作り，
 フランスの Denis Girou によって育てられ，
-[Sebastian Rahtz](http://users.ox.ac.uk/~rahtz/) も加わって，
+[Sebastian Rahtz](https://www.wikipedia.org/wiki/Sebastian_Rahtz) も加わって，
 1997年春に PSTricks 97 として集大成されました．<br>
 その後も修正作業は続いています．<br>
 PSTricks 2004 は Herbert Voss と Rolf Niepraschk がメンテナンスを行い，
@@ -180,10 +180,11 @@ LaTeX3 プロジェクトチームによる
 The LaTeX Graphics Companion
 (Michel Goossens, Sebastian Rahtz, Frank Mittelbach 著, Addison Wesley, 1997)
 という本にも詳しい解説があります．<br>
-現在のバージョンについても， 2006 年 12 月刊行予定の改訂版に解説が載ります．<br> <!-- TeXLive 2014 がリリースされたので，出版スケジュールも再び進行するでしょう．~ -->
 
 > 邦訳『LaTeXグラフィックスコンパニオン』が出ました
 > （鷺谷好輝訳，ISBN4-7561-3461-0，本体5400円，アスキー）．
+
+現在のバージョンについても， 2007 年 8 月刊行の Second Edition に解説が載ります．<br> <!-- TeXLive 2014 がリリースされたので，出版スケジュールも再び進行するでしょう．~ -->
 
 基本的な使い方は，LaTeX2e ならプリアンブルで
 
@@ -1336,7 +1337,7 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 
 ### 実際に<em>使える</em>画像ファイルを作るには (別解2) {#r5c8eeee}
 
-[epstool](http://www.cs.wisc.edu/~ghost/gsview/epstool.htm) を使うと，
+[epstool](http://pages.cs.wisc.edu/~ghost/gsview/epstool.htm) を使うと，
 よい BoundingBox を得ることができます．<br>
 PSTricks で描く図だけを別ファイル foo.tex に保存して，
 
