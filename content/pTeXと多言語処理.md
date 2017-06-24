@@ -171,7 +171,7 @@ $TEXMFLOCAL は C:/w32tex/share/texmf-local などご自分の環境に置き換
 パッチ適用済みのファイルは「[ダウンロード・サービス #ArabTeX 7 ビット化アーカイブ](http://yasuda.homeip.net/dl/dl.html#p)」からダウンロードします。
 これらは $TEXMFLOCAL/tex/latex/arabtex/ にコピーします。
 
-必要な方は Windows PowerShell またはコマンド プロンプトで mktexlsr を実行します。
+必要な方は mktexlsr を実行します。
 
 ```
 mktexlsr
@@ -301,7 +301,7 @@ miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc の�
 
 - $TEXMFLOCAL/tex/generic/babel/
 
-にコピーします。thai.ldfはthaiold.ldfなどと名前を変え，Windows PowerShell またはコマンド プロンプトで
+にコピーします。thai.ldfはthaiold.ldfなどと名前を変え
 
 ```
 8bt2ptex thaiold.ldf >thai.ldf
@@ -350,8 +350,8 @@ iconv -c -f UTF-8 -t TIS620 <thaiutf8.txt >thaimemo.txt
 
 TIS-620 の文字コードで編集して保存した場合は上のような iconv での変換作業は不要です。
 
-これらの方法などで出来た thaimemo.txt を Windows PowerShell またはコマンド プロンプトにて SWATH で処理し，単語の切れ目に \wbr という目印を付けます。
-例えば data/ ディレクトリを C:\w32tex\bin\ にコピーしたなら，コマンド プロンプトで次のように実行します。
+これらの方法などで出来た thaimemo.txt を SWATH で処理し，単語の切れ目に \wbr という目印を付けます。
+例えば data/ ディレクトリを C:\w32tex\bin\ にコピーしたなら，次のように実行します。
 
 ```
 swath -d C:\w32tex\bin\data -f latex <thaimemo.txt >tout.tex
