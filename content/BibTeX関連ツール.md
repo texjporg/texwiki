@@ -28,7 +28,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) |   | .bib ファイルの管理ソフト．[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
 |  [Tellico](http://tellico-project.org/)  | KDE, Qt, libxml2, libxslt1 |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
 |  [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ． |
-| [Pybliographer](http://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
+| [Pybliographer](https://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
 
 ## bib ファイルの作成編集支援ツール {#t7b99d07}
 
@@ -70,7 +70,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 |  [isi](http://isi-rb.rubyforge.org/)  | Ruby | [ISI Web of Science](http://www.isiknowledge.com) の検索結果（タグつきのテキストファイル）をBibTeX書式に変換．旧名isi.rbまたはisi2bibtex.rb．ライブラリとしても機能し，ある特定の形式に変換するプログラムを書くときにも便利． |
 |  ams2bib  | Unixなど  | AmSTeX文献をBibTeX形式に変換  |
 | [medlinebib](http://www.lecb.ncifcrf.gov/~toms/delila/medlinebib.html) | UNIX? | MEDLINE形式データのインポート |
-| [ichu2bibtex.pl](http://www2.hyo-med.ac.jp/~tanimura/Downloads/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
+| [ichu2bibtex.pl](http://r03.nurse.medic.mie-u.ac.jp/Downloads/ichu2bibtex.pl.html) | perl | 和文医学文献データベースである医学中央雑誌の出力ファイルをBibTeX形式に変換するプログラム |
 | [rfc2bib](https://mirror.ctan.org/biblio/bibtex/utils/rfc2bib/) | awk | rfc-index.txt を BibTeX 形式に変換 |
 | [refer-tools](https://mirror.ctan.org/biblio/bibtex/utils/refer-tools/) | perl | refer 形式を BibTeX 形式に変換 |
 |  [r2bib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib)  |   |  referからBibTeXに変換するツールだが，[EndNoteに対応した](http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html)．8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい．  |
@@ -124,7 +124,7 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 |  printbib  | Unix  | .bibファイルの中の全文献を処理して.dviファイルを作るシェルスクリプト  |
 | [bunkenhtml](http://www.media.osaka-cu.ac.jp/~k-abe/bunkenhtml/) | perl | BibTeXのデータベースから業績リストをHTMLで作成するプログラム．[使用例1](http://narayama.aist-nara.ac.jp/~y-takata/research/)，[使用例2](http://www.forest.eis.ynu.ac.jp/~mori/ja/pub.html)  |
 | [bib2html](http://www.litech.org/~wkiri/bib2html/) | Unix | .bibファイルをHTMLに変換 |
-| [bibtex2html](http://www.lri.fr/~filliatr/bibtex2html/) | UNIX/Windows | .bibファイルをHTMLに変換．abstract, url, ps, pdfなどを勝手にリンク付けしてくれる．[pubabstract.perl](http://www.reitter-it-media.de/software/pubabstract.perl)と組み合わせると，1文献1ファイルのHTMLも用意してくれる．日本語はOKだがupbibtexと日本語用bstファイルを使用する必要あり．[使用例1](http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5)．VinePlusに収録されいてるので，VineLinuxユーザはapt-getでインストール可能．．  |
+| [bibtex2html](https://www.lri.fr/~filliatr/bibtex2html/) | UNIX/Windows | .bibファイルをHTMLに変換．abstract, url, ps, pdfなどを勝手にリンク付けしてくれる．[pubabstract.perl](http://www.reitter-it-media.de/software/pubabstract.perl)と組み合わせると，1文献1ファイルのHTMLも用意してくれる．日本語はOKだがupbibtexと日本語用bstファイルを使用する必要あり．[使用例1](http://shakan2.tm.nagasaki-u.ac.jp/Research.html#sec5)．VinePlusに収録されいてるので，VineLinuxユーザはapt-getでインストール可能．．  |
 | [Bib2ML (aka. Bib2HTML)](http://www.arakhne.org/bib2ml/) | perl |  Stéphane GALLANDによって作成された.bibファイルから文献データベースサイトを作成するプログラム．Kiri Wagstaff の [bib2html](http://www.litech.org/~wkiri/bib2html/) とほぼ同名であるため注意． |
 | [bib2xhtml](http://www.spinellis.gr/sw/textproc/bib2xhtml/) | perl | .bibファイルをXHTML1.0に変換 |
 | [Jab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm#jbib_export) | Java | JabRefからhtmlへエクスポート |
@@ -138,8 +138,8 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 | [RubyBTeX](https://github.com/kazutomi/rubybtex) | Ruby | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
 | [BibTeX-Ruby](https://github.com/inukshuk/bibtex-ruby) | Ruby | BibTeXを扱うためのRubyライブラリ |
 | [Bibulous](https://nzhagen.github.io/bibulous/) | Python | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
-| [Pybtex](http://pybtex.sourceforge.net/) | Python | BibTeXコマンド・クローン．書誌データはYAML形式で書く |
-| [bibtex-spirit](http://home.no/sergiu/bibtex-spirit/) | C++ | BibTeX C++ parser library |
+| [Pybtex](https://pybtex.org/) | Python | BibTeXコマンド・クローン．書誌データはYAML形式で書く |
+| [bibtex-spirit](https://bitbucket.org/sergiu/bibtex-spirit) | C++ | BibTeX C++ parser library |
 | [BibtexParser](https://bibtexparser.readthedocs.org/en/latest/) | Python | bibファイル形式をパースするライブラリ |
 
 ## LaTeX パッケージの利用 {#baf51e15}
