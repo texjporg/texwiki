@@ -33,10 +33,10 @@ siunitx は，単位記号のフルスペルを入力すれば，大文字小文
 
 <table>
 <tbody>
-<tr><td> \SI[inter-unit-product=\ensuremath{\cdot}]{-1.234e3}{N.m} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle1.png" alt=""></td></tr>
-<tr><td> \ang{32;46;23.373} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle2.png" alt=""></td></tr>
-<tr><td> \SI{5}{\micro s} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle3.png" alt=""></td></tr>
-<tr><td> \SI{60}{\degreeCelsius} </td><td><img src="http://www2.hyo-med.ac.jp/~tanimura/images/sistyle4.png" alt=""></td></tr>
+<tr><td> \SI[inter-unit-product=\ensuremath{\cdot}]{-1.234e3}{N.m} </td><td><img src="http://r03.nurse.medic.mie-u.ac.jp/images/sistyle1.png" alt=""></td></tr>
+<tr><td> \ang{32;46;23.373} </td><td><img src="http://r03.nurse.medic.mie-u.ac.jp/images/sistyle2.png" alt=""></td></tr>
+<tr><td> \SI{5}{\micro s} </td><td><img src="http://r03.nurse.medic.mie-u.ac.jp/images/sistyle3.png" alt=""></td></tr>
+<tr><td> \SI{60}{\degreeCelsius} </td><td><img src="http://r03.nurse.medic.mie-u.ac.jp/images/sistyle4.png" alt=""></td></tr>
 </tbody>
 </table>
 
