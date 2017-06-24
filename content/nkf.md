@@ -44,7 +44,7 @@ nkfwin/vc2005/win32(98,Me,NT,2000,XP,Vista,7)Windows-31J/
 これを nkf.exe とリネームしてパスの通ったディレクトリに配置するとよいでしょう。
 （環境変数 PATH については [Microsoft Windows/基礎知識](</Microsoft Windows/基礎知識/>) を参照してください。）
 
-#### OS X {#iac446b4}
+#### macOS {#iac446b4}
 
 Homebrew でインストールする場合は
 
