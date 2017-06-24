@@ -65,10 +65,10 @@ TeX Live 2016 には Babel が収録されています。
     箇所の “false” 部分を “true” と書き換え，上書き保存する。
 
 - $TEXMFLOCAL/source/lh/tex/wrk/ フォルダを作成する。
-- Windows PowerShell またはコマンド プロンプトで（$TEXMFLOCAL/source/lh/tex/ 上で）
+- コマンドラインで（$TEXMFLOCAL/source/lh/tex/ 上で）
 
     ```
-    >tex 99allenc.tex
+    tex 99allenc.tex
     ```
 
     と打ち込めば必要となるファイル群が wrk/ 内に
@@ -201,7 +201,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     #Map bibunj-cyrillic.map   % 永田善久さんのサポートページ
     ```
 
-    と記述し，Windows PowerShell またはコマンド プロンプトにて
+    と記述し
 
     ```
     updmap
@@ -213,7 +213,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     updmap-sys
     ```
 
-    と打ち込む。
+    を実行する。
 
 ### PDF 作成テスト {#mca7623b}
 
