@@ -114,7 +114,7 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 \end{document}
 ```
 
-次に、Windows PowerShell またはコマンド プロンプト上で以下のコマンドを入力することにより、コンパイルします。
+次に、コマンドラインで以下のコマンドを入力することにより、コンパイルします。
 
 ```
 uplatex kumo.tex
