@@ -157,7 +157,7 @@ TeX (LaTeX) が登場した当時は，日本語フォントは「本文用明�
 
 最新の TeX Live / W32TeX では，TeX と共に配布されている IPAex/IPA フォントの他，ヒラギノ，MS，小塚，モリサワ，游明朝・游ゴシックが簡便に指定できるようになっています。[OTF](/OTF/) パッケージを利用すると，5書体以上の多書体化もできます。[和文の仕組み](</和文の仕組み/>)に日本語フォントを使う仕組みについての説明があります。
 
-（ヒラギノは，Mac (OS X) では OS に付属していますが，Windows で利用する場合は別途購入する必要があります。）
+（ヒラギノは，Mac (macOS) では OS に付属していますが，Windows で利用する場合は別途購入する必要があります。）
 
 ### PDF 作成の都度，フォントを指定する方法 {#jcd55296}
 
@@ -193,7 +193,7 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
 ```
 
-- Mac (OS X) の場合には事前準備が必要です。
+- Mac (macOS) の場合には事前準備が必要です。
     - [TeX Live/Mac](</TeX Live/Mac/#i9febc9b>) を参照してください。
 - Windows でヒラギノを使いたい場合にも事前準備が必要です。
     - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](http://ichiro-maruta.blogspot.jp/2013/08/windows-tex-live-2013.html)
