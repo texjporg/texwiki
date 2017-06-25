@@ -224,7 +224,7 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 <tr><td rowspan="2"> dvipdfmx.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> xdvipdfmx.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> xbb.exe<br>extrabb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
+<tr><td> xbb.exe<br>extractbb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
 <tr><td rowspan="2"> dvips.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> dvi2tty.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> --- </td></tr>
