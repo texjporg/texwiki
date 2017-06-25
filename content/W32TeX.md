@@ -209,7 +209,7 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 
 ### 漢字入出力対応状況 {#qc9f2e7d}
 
-コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2016/2/27 現在）．
+コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2017/6/24 現在）．
 
 <table>
 <thead>
@@ -224,13 +224,13 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 <tr><td rowspan="2"> dvipdfmx.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> xdvipdfmx.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
-<tr><td> xbb.exe       </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
-<tr><td> extractbb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
+<tr><td> xbb.exe<br>extrabb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
 <tr><td rowspan="2"> dvips.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> dvi2tty.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> --- </td></tr>
 <tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td>(B)</td><td> Unicode </td><td> --- </td></tr>
 <tr><td> upmendex.exe </td><td> (無視される)        </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
+<tr><td> dvibook.exe<br>dviconcat.exe<br>dviselect.exe<br>dvitodvi.exe<br>dvidvi.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> --- </td></tr>
 <tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= <br>指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> Unicode        </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> gswin32c.exe<br>gswin64c.exe  </td><td> ---        </td><td> Unicode        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td></td><td> Unicode </td><td> --- </td></tr>
