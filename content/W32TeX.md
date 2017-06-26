@@ -272,8 +272,8 @@ p(la)tex を主に使用される方は，texmf.cnf に
 
 ```
 command_line_encoding = utf-8
-command_line_encoding.dvipdfmx =
-command_line_encoding.dvips =
+command_line_encoding.dvipdfmx = none
+command_line_encoding.dvips = none
 ```
 
 と設定するとよいでしょう．
