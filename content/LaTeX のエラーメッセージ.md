@@ -422,6 +422,8 @@ index パッケージ使用時に \index または \printindex のオプショ�
 > → まず，エンコーディング名が正しいかどうかを確認してください．
 > 正しければ，\DeclareTateKanjiEncoding あるいは \DeclareYokoKanjiEncoding を用いてエンコーディング  <em>encoding</em> の宣言を行ってください（充分に新しい pLaTeX では，さらに \KanjiEncodingPair の設定も適宜行うことになるでしょう）．
 
+> 　(u)pLaTeXの場合、kanji-config-updmap-sys \[argument\]の設定が正しいかどうかも確認してください。例えばhiragino-pronのままmorisawaを使おうとすると、このエラーが出ます。
+
 #### ! LaTeX Error: LaTeX2e command \somecs in LaTeX 2.09 document. {#k47034d7}
 
 （\documentstyle を用いた）LaTeX 2.09 形式の文書を LaTeX2e（の LaTeX 2.09 互換モード）で処理するときに，その文書内に LaTeX2e 専用のコマンド \somecs が現れた場合のエラーメッセージです．
