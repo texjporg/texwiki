@@ -47,10 +47,9 @@ sudo dnf install texlive-collection-langjapanese
 
 を実行します．
 
-Fedora 25 の TeX Live 2016 で upLaTeX を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
-
-Fedora 25 の TeX Live 2016 では /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
-uplatex, uptex, euptex の項目がコメントアウトされているので uplatex, uptex, euptex の項目のコメントアウトを外します．
+Fedora 26, Fedora 25 の TeX Live 2016 で upLaTeX を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
+uplatex, uptex, euptex の項目がコメントアウトされているためなので，これらのコメントアウトを外します．
 
 ```
 --- /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf.org	2017-02-09 14:19:54.883499043 +0900
@@ -81,7 +80,7 @@ sudo fmtutil-sys --byfmt uplatex
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
 Fedora の Ghostscript は初期設定では日本語が文字化けするかもしれません．
-日本語が文字化けする場合は [Ghostscript/Linux](/Ghostscript/Linux/) を参照して適切に設定することで日本語が文字化けせずに出力できるようになります．
+[Ghostscript/Linux](/Ghostscript/Linux/) を参照して適切に設定することで文字化けせずに出力できるようになります．
 
 ```
 sudo dnf install ghostscript
