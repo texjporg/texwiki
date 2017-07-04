@@ -75,7 +75,7 @@ W32TeX の最新版は，[ミラーサイト](/W32TeX/#mirror)からダウンロ
 ダウンロードしたら，念のため次のことをご確認ください．
 
 - ファイルの拡張子が正しいか？
-    - Internet Explorer などの一部のブラウザやダウンローダは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Internet Explorer 11 を使って [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/) から \*.tar.xz ファイルを保存した場合に，
+    - Microsoft Edge や Internet Explorer などの一部のブラウザーやダウンローダーは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Microsoft Edge あるいは Internet Explorer 11 を使って [http://eplang.jp/w32tex/archive/latest/current/](http://eplang.jp/w32tex/archive/latest/current/) から \*.tar.xz ファイルを保存した場合に，
 
 > &#x2a;.tar.xz → \*.tar.tar
 
