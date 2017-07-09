@@ -39,7 +39,7 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 Adobe-Identity-0,
 Adobe-Japan1-6,
 Adobe-GB1-5,
-Adobe-CNS1-6,
+Adobe-CNS1-7,
 Adobe-Korea1-2
 が含まれている
 cmap-resources-master.zip を取得できます。
