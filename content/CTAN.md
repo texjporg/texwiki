@@ -47,19 +47,19 @@ CTAN の世界的なミラーリングとして次の URI があります．
 オリジナルの CTAN サイトは次のとおりです．
 
 - HTTP
-    - U.S.A.（アメリカ）：[www.ctan.org](http://www.ctan.org/)
-        <!-- tug.ctan.org = www.ctan.org -->
+    - U.S.A.（アメリカ）：[ctan.org](https://ctan.org/)
+        <!-- tug.ctan.org = ctan.org -->
     - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
     - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
 - FTP
     - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
-        <!-- www.ctan.org = tug.ctan.org -->
+        <!-- ctan.org = tug.ctan.org -->
     - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
     - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
         <!-- www.dante.de = ftp.dante.de -->
 
 また，[ftp.ctan.org](http://ftp.ctan.org/) は
-[www.ctan.org](http://www.ctan.org/) (=
+[ctan.org](https://ctan.org/) (=
 [tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
 のみ），[www.dante.de](http://www.dante.de/) (=
 [ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります．
@@ -89,7 +89,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 ### Ring Server によるミラーリング {#RingServer}
 
-アメリカのウェブサイトは [www.ctan.org](http://www.ctan.org/)
+アメリカのウェブサイトは [ctan.org](https://ctan.org/)
 ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
 での CTAN のミラーリングの利用も可能です．
 Ring Server
