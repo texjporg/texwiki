@@ -7,7 +7,7 @@ pukiwiki: "siunitx"
 
 # siunitx
 
-## [siunitx](https://www.ctan.org/pkg/siunitx) {#x11d1f9f}
+## [siunitx](https://ctan.org/pkg/siunitx) {#x11d1f9f}
 
 <!-- ICMJE というページから移転して加筆しました． (2015-02-11 アセトアミノフェン) -->
 
