@@ -54,13 +54,13 @@ sudo dnf install texlive-dummy
 
 ### openSUSE <a id="opensuse"></a> {#y33add76}
 
-- [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
-    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
-- [http://www.ctan.org/pkg/texlive-dummy-opensuse](http://www.ctan.org/pkg/texlive-dummy-opensuse)
+- [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
+    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE](https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
+- [https://ctan.org/pkg/texlive-dummy-opensuse](https://ctan.org/pkg/texlive-dummy-opensuse)
 - [https://software.opensuse.org/package/texlive-dummy](https://software.opensuse.org/package/texlive-dummy)
 - [https://software.opensuse.org/package/texlive-dummy_install](https://software.opensuse.org/package/texlive-dummy_install)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/TeX Live for opensuse.org に依存するパッケージが TeX Live/TeX Live for opensuse.org をインストールするのを防止できます．
 
 ```
@@ -69,10 +69,10 @@ sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSU
 
 ### RHEL/CentOS/SL <a id="rhel"></a> <a id="centos"></a> <a id="sl"></a> {#ha758dd0}
 
-- [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/)
-    - [http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
+- [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
+    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](http://www.ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/RHEL/CentOS/SL に依存するパッケージが TeX Live/RHEL/CentOS/SL をインストールするのを防止できます．
 
 ```
