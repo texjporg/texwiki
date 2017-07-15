@@ -42,9 +42,8 @@ GPLv2
 [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
 から，Windows, macOS, Linux 用のバイナリおよびソースコードがダウンロードできます．
 
-- Windows の場合は exe 形式のものをダウンロードして実行すればインストールされます．以下の記事も参考になります．
-    - [DTP Tools: Texmakerのインストール](http://dtptools.blogspot.jp/2013/08/texmaker.html)
-- macOS の場合は zip 形式のものをダウンロードして展開します．
+- Windows の場合は msi 形式のものをダウンロードして実行すればインストールされます．
+- macOS の場合は dmg 形式のものをダウンロードして展開します．
 - Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
 
 ### 日本語化 {#k564e4ed}
