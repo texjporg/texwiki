@@ -179,5 +179,5 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 
 ### ChangeLog {#e321b2d0}
 
-- [https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/tree/)
-    - [log](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/master/log/)
+- [https://github.com/eclipse/texlipse](https://github.com/eclipse/texlipse)
+    - [https://github.com/eclipse/texlipse/commits/master](https://github.com/eclipse/texlipse/commits/master)
