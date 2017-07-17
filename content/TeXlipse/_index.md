@@ -21,7 +21,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 ## 公式サイト {#m60f5d27}
 
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
-- [TeXlipse | SourceForge.net](https://sourceforge.net/projects/texlipse/)
+- [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
 - [BibSonomy](http://www.bibsonomy.org/)
@@ -29,7 +29,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ### License {#y9484ed1}
 
-[Eclipse Public License (EPL)](http://texlipse.sourceforge.net/manual/about.html)
+[Eclipse Public License (EPL)](https://github.com/eclipse/texlipse/blob/master/LICENSE)
 
 ### スクリーンショット {#j94c34b3}
 
@@ -82,25 +82,10 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 ## 不具合 {#t2a5d9cf}
 
-- [TeXlipse / Bugs](https://sourceforge.net/p/texlipse/bugs/)
+- [Issues · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/issues)
 - [Issues · Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse/issues)
 
 を参照．
-
-### Eclipse がフリーズする {#k9639d78}
-
-TeXlipse git HEAD では修正されています．
-
-- [Finally a fix for the very annoying bug 3511323, which could cause a freeze of Eclipse even when no TeX file was edited. Thanks to Nitin Dahyabhai for the tip.](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/bbf0c9ab337f61a4fc0a3c283fd6823661e3e420/)
-- [TeXlipse causes Eclipse UI to freeze](https://sourceforge.net/tracker/?func=detail&aid=3511323&group_id=133306&atid=726818) (Fixed)
-
-### TeXlipse 1.5.0 と Eclipse 4.2 (Juno) でワードラップが正常に動作しない {#k7905270}
-
-TeXlipse git HEAD では修正されています．
-
-- [Fix word wrap bug which occurs in Eclipse Juno (3542507)](https://sourceforge.net/p/texlipse/net.sourceforge.texlipse/ci/77f84799c805a5785d3ee1d8cda903e6bb52cfe9/)
-- [Word wrap in Juno](https://sourceforge.net/tracker/?func=detail&aid=3542507&group_id=133306&atid=726818) (Fixed)
-- [正常なbibファイルをなぜかパースできず、行折り返しが動作しない](https://twitter.com/tasusu/status/274718435353718784)
 
 ### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない {#c876c383}
 
@@ -110,7 +95,7 @@ PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直
 
 ### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される {#i0880f90}
 
-- [SourceForge.net: TeXlipse: Detail: 3498342 - Key XXX is undefined warning](https://sourceforge.net/tracker/index.php?func=detail&aid=3498342&group_id=133306&atid=726818)
+- [TeXlipse / Bugs / #344 Key XXX is undefined warning](https://sourceforge.net/p/texlipse/bugs/344/)
 
 \cite{XXX} で Key XXX is undefined という警告が表示される場合は
 
@@ -156,6 +141,7 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 ## 関連リンク {#g42d5edd}
 
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
+- [Haru Blog｜TeXlipse](http://harublo9.blog57.fc2.com/?q=TeXlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
 - [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
@@ -170,7 +156,7 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 - [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
 - [EclipseでTeXを編集するTeXlipse](http://d.hatena.ne.jp/jun9128/20110323/)
-- [Eclipse/TeXlipse - KLab Public Wiki](http://telecom0.eng.niigata-u.ac.jp/index.php?Eclipse/TeXlipse)
+- [Eclipse/TeXlipse - KLab Public Wiki](http://klab.eng.niigata-u.ac.jp/index.php?Eclipse%2FTeXlipse)
 - [Texlipse can't find Bibtex](http://latex.org/forum/viewtopic.php?f=27&t=10481&start=0)
 
 ### リリース情報 {#f49b6dcf}
