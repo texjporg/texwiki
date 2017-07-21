@@ -32,64 +32,6 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 
 ***
 
-<span style="color:Black;background-color:#CCCCCC;"><ins>　<span style="color:#DD0000;background-color:#CCCCCC;">●</span> <span style="color:#DDDDDD;background-color:#CCCCCC;">●</span> <span style="color:#00DD00;background-color:#CCCCCC;">●</span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<strong>Texmaker の設定</strong>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins></span><br>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>ショートカット</strong><br>
-
-***
-
 コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)
 : &nbsp;
 
@@ -184,12 +126,6 @@ PDF ビューア
 : ◯　外部ビューア
 
 : "/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex
-
-<div style="clear:both"></div>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
 
 ***
 
