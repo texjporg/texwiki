@@ -27,62 +27,6 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 
 ***
 
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configtools.png" alt="コマンド" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#DAEAFF;">　　　<strong>コマンド</strong>　　　</span><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configquick.png" alt="クイックビルド" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>クイックビルド</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configeditor.png" alt="エディタ" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　　　<strong>エディタ</strong><br>
-
-<div style="clear:both"></div>
-
-<img src="https://bitbucket.org/srazi/biditexmaker3/raw/tip/images/configkeys.png" alt="ショートカット" style="float:left">
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　　<strong>ショートカット</strong><br>
-
-***
-
 コマンド (% : 拡張子を除いたファイル名 - @ : 行番号)
 : &nbsp;
 
@@ -187,12 +131,6 @@ PDF ビューア
 : ruby -e "cmd='qpdfview --unique '+0x22.chr+'"%.pdf"'+0x23.chr+'src:'+'"#.tex"'+':'+'"@"'+':0'+0x22.chr;system(cmd)"
 
 : ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
-
-<div style="clear:both"></div>
-
-<br>
-
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ キャンセル \]</span><br>
 
 ***
 
