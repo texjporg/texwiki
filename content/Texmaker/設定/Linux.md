@@ -17,13 +17,15 @@ pukiwiki: "Texmaker/設定/Linux"
 
 ### コマンド {#cab65285}
 
-\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+<ins>O</ins>ptions &gt; Configure Texmaker &gt; Commands
 
-PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．<br>
-コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．
+
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．
+
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．
+
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．
 
 ***
 
