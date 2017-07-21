@@ -130,21 +130,6 @@ Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字�
 
 - [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 
-### <del>TeXstudio 2.10.8 で Latexmk のコマンド設定を自由に指定することができない</del> &lt;-- TeXstudio 2.11.0 で修正済み {#ud04434b}
-
-TeXstudio 2.10.8 の Latexmk のコマンド設定はリストから選択する方式になっており自分で設定した Latexmk を自由に指定して使用することができません．
-TeXstudio 2.10.8 で Latexmk を実行して PDF ファイルを表示する場合は Latexmk のコマンド設定を PdfLaTeX に設定して
-
-- 既定のコンパイラ：「PdfLaTeX」
-- ビルド &amp; 表示：「コンパイル &amp; 表示」
-
-に設定します．
-
-TeXstudio 2.11.0 で Latexmk のコマンド設定を自由に指定して使用できるように修正されました．
-
-- [TeXstudio - A LaTeX Editor / Bugs / #1694 Command path not saving?](https://sourceforge.net/p/texstudio/bugs/1694/)
-- [TeXstudio - A LaTeX Editor / Code / Commit \[6e2cee\]](https://sourceforge.net/p/texstudio/hg/ci/6e2cee782a55be47c8e2a675a4c2e55b418e6a4d/) (remove multiple default values for latexmk (fixes bug 1694))
-
 ## 文字コードの変換 {#v4ac40ab}
 
 TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
