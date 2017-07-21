@@ -17,8 +17,7 @@ Texmaker のデフォルトの文字コードは UTF-8 です．
 現在は Texmaker から開発がフォークし，機能の追加や不具合が修正された [TeXstudio](/TeXstudio/) もあります（ただし，使用感が Texmaker とは違う部分もあります）．
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
-    - [User manual](http://www.xm1math.net/texmaker/doc.html)
-- [Texmaker Project on Google Code Archive](https://code.google.com/archive/p/texmaker/)
+    - [Texmaker : User manual](http://www.xm1math.net/texmaker/doc.html)
 
 ***
 
@@ -40,7 +39,7 @@ GPLv2
 ## ダウンロード/インストール {#q69dea61}
 
 [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
-から，Windows, macOS, Linux 用のバイナリおよびソースコードがダウンロードできます．
+から，Windows, macOS, Linux 用の 64-bit バイナリおよびソースコードがダウンロードできます．
 
 - Windows の場合は msi 形式のものをダウンロードして実行すればインストールされます．
 - macOS の場合は dmg 形式のものをダウンロードして展開します．
@@ -147,7 +146,19 @@ ibus-kkc も同様に \section{ の直後では日本語入力が ON になら�
 Texmaker はコマンドの設定に使用するパラメータのパースの仕方に問題があります．
 [TeXstudio](/TeXstudio/) ではコマンドの設定に使用するパラメータが正しく処理されています．
 
-Texmaker のマニュアルにはコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; と記述しても期待したように処理されません．
+Texmaker のマニュアルにはコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; を &#x25; よりも前に記述した場合は &#x25;&#x25; が &#x25; に変換されますが &#x25; が "basename" に変換されません．また，&#x25;&#x25; を &#x25; よりも後に記述した場合は &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力されてしまいます．
+
+[https://fossies.org/linux/texmaker/texmaker.cpp#l_7703](https://fossies.org/linux/texmaker/texmaker.cpp#l_7703) によると
+
+```
+QRegExp rx2("(%+)");
+capt="";
+if (rx2.indexIn(commandline) != -1) capt=rx2.cap(1);
+if (capt=="%") commandline.replace("%","\""+basename+"\"");
+else if (capt=="%%") commandline.replace("%%","%");
+```
+
+と記述されており，最初に &#x25; にマッチした場合は &#x25; が "basename" に置き換えられて &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力され，最初に &#x25;&#x25; にマッチした場合は &#x25;&#x25; は &#x25; に変換されるが &#x25; は "basename" に変換されずに &#x25; のまま出力されるためこの処理方法ではファイル名 (&#x25;) と % の表記 (&#x25;&#x25;) は同時に使用することが困難であると考えられます．
 
 例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
 
