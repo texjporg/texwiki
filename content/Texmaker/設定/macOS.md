@@ -17,15 +17,19 @@ pukiwiki: "Texmaker/設定/macOS"
 
 ### コマンド {#cab65285}
 
-\[オプション(O)\]-\[Texmaker の設定\]-\[コマンド\]
+<ins>O</ins>ptions &gt; Configure Texmaker &gt; Commands
 
-動作未確認です．<br>
-PDFビューアは，組み込みビューアと外部ビューアを選択するようになっているので好きな方を選択してください．<br>
-コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．<br>
-コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．<br>
-コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
-BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
+動作未確認です．
+
+コマンドの LaTeX に設定されている latex を uplatex に変更してコマンドのオプションに -synctex=1 を追加します．
+
+コマンドの LuaLaTeX に設定されているコマンドのオプションに -synctex=1 を追加します．
+
+コマンドの Bib(la)tex に設定されている bibtex を biber --bblencoding=utf8 -u -U --output_safechars または upbibtex に変更します．
+
+コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．
+
+BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．
 
 - [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
 - [TeXshopでbibTeXがうまく動かなくなりました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=991)
