@@ -36,20 +36,36 @@ GPLv2
 - [TeXstudio](/TeXstudio/)
 - [bidiTeXmaker3](https://bitbucket.org/srazi/biditexmaker3)
 
-## ダウンロード/インストール {#q69dea61}
+### ダウンロード/インストール {#q69dea61}
 
 [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
 から，Windows, macOS, Linux 用の 64-bit バイナリおよびソースコードがダウンロードできます．
 
-- Windows の場合は msi 形式のファイルをダウンロードして実行すればインストールされます．
-- macOS の場合は dmg 形式のファイルをダウンロードして展開します．
-- Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
+#### Windows {#wc2183b7}
+
+Windows の場合は msi 形式のファイルをダウンロードして実行すればインストールされます．
+
+#### macOS {#g5bab958}
+
+macOS の場合は dmg 形式のファイルをダウンロードして展開します．
+
+Homebrew でインストールすることもできます．
+
+- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb)
+
+```
+$ brew cask install texmaker
+```
+
+#### Linux {#d8deaab2}
+
+Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
 
 ### 日本語化 {#k564e4ed}
 
-Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
-
 #### Texmaker 4.0.1 {#h11371e4}
+
+Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
 
 - [TexmakerでTeX文書を書こう！](http://writingwithtexmaker.blogspot.jp/)
     - [日本語キットfor texmaker4.0.1](http://writingwithtexmaker.blogspot.jp/2013/04/texmaker40.html)
@@ -73,7 +89,7 @@ macOS では発生しないようです．
 
 #### Windows の場合 {#z3a8b3e4}
 
-Windows の場合は Dark theme を選択することで回避できます．
+Windows の場合は <ins>O</ins>ptions &gt; Configure Texmaker &gt; Editor で Dark theme を選択することで回避できます．
 
 #### Linux の場合 {#nd7d6ba8}
 
@@ -144,7 +160,7 @@ Texmaker はコマンドの設定に使用するパラメータのパースの�
 
 Texmaker のマニュアルにはコマンドの設定に &#x25; という表示が必要になった場合に &#x25;&#x25; と記述すればよいとありますが，&#x25;&#x25; を &#x25; よりも前に記述した場合は &#x25;&#x25; が &#x25; に変換されますが &#x25; が "basename" に変換されません．また，&#x25;&#x25; を &#x25; よりも後に記述した場合は &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力されてしまいます．
 
-[https://fossies.org/linux/texmaker/texmaker.cpp#l_7703](https://fossies.org/linux/texmaker/texmaker.cpp#l_7703) によると
+[https://fossies.org/linux/texmaker/texmaker.cpp#l_7703](https://fossies.org/linux/texmaker/texmaker.cpp#l_7703) によると Texmaker では
 
 ```
 QRegExp rx2("(%+)");
@@ -156,7 +172,19 @@ else if (capt=="%%") commandline.replace("%%","%");
 
 と記述されており，最初に &#x25; にマッチした場合は &#x25; が "basename" に置き換えられて &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力され，最初に &#x25;&#x25; にマッチした場合は &#x25;&#x25; は &#x25; に変換されますが &#x25; は "basename" に変換されずに &#x25; のまま出力されるためこの処理方法ではファイル名 (&#x25;) と % の表記 (&#x25;&#x25;) は同時に使用することが困難であると考えられます．
 
-例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
+[http://hg.code.sf.net/p/texstudio/hg/file/tip/buildmanager.cpp#l476](http://hg.code.sf.net/p/texstudio/hg/file/tip/buildmanager.cpp#l476) によると TeXstudio では
+
+```
+ 	for (int i = 0; i < str.size(); i++) {
+ 		QString add;
+ 		if (str.at(i) == QChar('%')) {
+ 			if (str.at(i + 1) == QChar('%')) add = str.at(++i);
+ 			else add = "\"" + mainFile.completeBaseName() + "\"";
+```
+
+と記述されており，正規表現は使用せずに1文字ずつ文字列をチェックして &#x25;&#x25; であれば &#x25; を追加して &#x25; であれば "basename" を追加して文字列リストを作成するようです．
+
+実例を挙げると例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
 
 > latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
