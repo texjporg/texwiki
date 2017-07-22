@@ -85,9 +85,10 @@ TeXstudio の設定を完全に初期化したい場合や，アンインスト�
 > <tr><th style="text-align:center">環境</th><th style="text-align:center">設定ファイルが保存されるフォルダー</th><th style="text-align:center">ファイル名</th></tr>
 > </thead>
 > <tbody>
-> <tr><td>Portable バージョン</td><td>TeXstudio の実行ファイルと同じフォルダー</td><td>texstudio.ini</td></tr>
-> <tr><td>Windows</td><td>%APPDATA%\texstudio\</td><td>texstudio.ini</td></tr>
-> <tr><td>UNIX, Linux, OS X</td><td>$HOME/.config/texstudio/</td><td>texstudio.ini</td></tr>
+> <tr><td>Windows (Installer)</td><td>%APPDATA%\texstudio\</td><td>texstudio.ini</td></tr>
+> <tr><td>Windows (Portable)</td><td>TeXstudio の実行ファイルと同じフォルダー</td><td>texstudio.ini</td></tr>
+> <tr><td>macOS</td><td>$HOME/.config/texstudio/</td><td>texstudio.ini</td></tr>
+> <tr><td>Linux</td><td>$HOME/.config/texstudio/</td><td>texstudio.ini</td></tr>
 > </tbody>
 > </table>
 >
