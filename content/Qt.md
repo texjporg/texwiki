@@ -22,6 +22,7 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 ### 動作環境 {#w51d5d67}
 
 - [http://doc.qt.io/qt-5/supported-platforms.html](http://doc.qt.io/qt-5/supported-platforms.html)
+- [http://wiki.qt.io/PlatformSupport](http://wiki.qt.io/PlatformSupport)
 
 ## ダウンロード {#de2773fb}
 
