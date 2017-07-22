@@ -42,7 +42,7 @@ PdfLaTeX
 
 : pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
-: ☐ 出力ファイルを "build" サブフォルダーに出力する
+: ☐ Use a "build" subdirectory for output files
 
 XeLaTeX
 : &nbsp;
@@ -111,14 +111,14 @@ R Sweave
 Add to PATH
 : &nbsp;
 
-PDF ビューア
+PDF Viewer
 : &nbsp;
 
-: 🔘 組み込みビューア
+: 🔘 Built-in Viewer
 
-: ☑　埋め込み
+: ☑ Embed
 
-: ◯　外部ビューア
+: ◯ External Viewer
 
 : powershell -Command "&amp; {$line=\[char\]0x22+@+\[char\]0x22;$tex=\[char\]0x22+'#.tex'+\[char\]0x22;$pdf=\[char\]0x22+'%.pdf'+\[char\]0x22;$texmaker='C:\Program Files\Texmaker\texmaker.exe';$f=\[char\]0x25+'f';$l=\[char\]0x25+'l';$inverse_search=\[char\]0x22+\[char\]0x5c+\[char\]0x22+$texmaker+\[char\]0x5c+\[char\]0x22+' '+\[char\]0x5c+\[char\]0x22+$f+\[char\]0x5c+\[char\]0x22+' -line '+$l+\[char\]0x22;$sumatrapdf=\[char\]0x22+'C:\Program Files\SumatraPDF\SumatraPDF.exe'+\[char\]0x22;Start-Process $sumatrapdf -ArgumentList ('-reuse-instance','-inverse-search',$inverse_search,$pdf,'-forward-search',$tex,$line)}"
 
