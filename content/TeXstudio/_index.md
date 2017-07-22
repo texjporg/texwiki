@@ -49,7 +49,7 @@ TeXstudio 公式サイトの Download ページ
 
 #### Windows {#ca4cc4c7}
 
-Windows 用のインストーラをダウンロードして実行します．
+Windows 用のインストーラーをダウンロードして実行します．
 
 #### macOS {#d9a96322}
 
@@ -62,8 +62,6 @@ Homebrew でインストールすることもできます．
 ```
 $ brew cask install texstudio
 ```
-
-macOS の TeXstudio には [macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない](/TeXstudio/#ffe2f4b8) 不具合が存在します。
 
 #### Linux {#v5002500}
 
