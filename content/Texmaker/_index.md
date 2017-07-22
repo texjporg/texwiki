@@ -14,7 +14,7 @@ Texmaker は，統合環境として使える LaTeX エディタです．
 SyncTeX もサポートされています．
 Texmaker のデフォルトの文字コードは UTF-8 です．
 
-現在は Texmaker から開発がフォークし，機能の追加や不具合が修正された [TeXstudio](/TeXstudio/) もあります（ただし，使用感が Texmaker とは違う部分もあります）．
+現在は Texmaker から開発がフォークし，機能の追加や不具合が修正された [TeXstudio](/TeXstudio/) もあります．ただし，使用感が Texmaker とは違う部分もあります．
 
 - [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
     - [Texmaker : User manual](http://www.xm1math.net/texmaker/doc.html)
@@ -41,13 +41,13 @@ GPLv2
 [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
 から，Windows, macOS, Linux 用の 64-bit バイナリおよびソースコードがダウンロードできます．
 
-- Windows の場合は msi 形式のものをダウンロードして実行すればインストールされます．
-- macOS の場合は dmg 形式のものをダウンロードして展開します．
+- Windows の場合は msi 形式のファイルをダウンロードして実行すればインストールされます．
+- macOS の場合は dmg 形式のファイルをダウンロードして展開します．
 - Linux の場合はパッケージ管理システムからインストールするのがよいです．パッケージ名は大抵 texmaker でしょう．
 
 ### 日本語化 {#k564e4ed}
 
-Texmaker は英語でメニューなどが表示されますが，日本語化されたものも作成されています．
+Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
 
 #### Texmaker 4.0.1 {#h11371e4}
 
@@ -56,8 +56,6 @@ Texmaker は英語でメニューなどが表示されますが，日本語化�
         - [texmaker_jp.qm4texmaker4.0.1_20130306.zip](https://box.yahoo.co.jp/guest/viewer?sid=box-l-eoqe3irxlbfhq6sxm5553ou5rm-1001&uniqid=5f8f02fe-2d42-4fc2-ac67-1f3501d2f74a&viewtype=detail)
 
 ## 不具合 {#h6093782}
-
-- [Issues](https://code.google.com/archive/p/texmaker/issues)
 
 ### macOS の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
 
@@ -99,14 +97,12 @@ uim を使用している場合は背景が黒く表示されて読めなくな�
 
 <!-- Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます． -->
 
-<!-- -[[Poppler]] をインストールします． -->
-
 <!-- -Texmaker のソースコードを修正してビルドします． -->
 
-<!-- // $ curl -RLO http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2 -->
-<!--  $ powershell -Command "& {Invoke-WebRequest -Uri 'http://www.xm1math.net/texmaker/texmaker-4.5.tar.bz2' -OutFile 'texmaker-4.5.tar.bz2'}" -->
-<!--  $ tar xvf texmaker-4.5.tar.bz2 -->
-<!--  $ cd texmaker-4.5 -->
+<!-- // $ curl -RLO http://www.xm1math.net/texmaker/texmaker-5.0.tar.bz2 -->
+<!--  $ powershell -Command "& {Invoke-WebRequest -Uri 'http://www.xm1math.net/texmaker/texmaker-5.0.tar.bz2' -OutFile 'texmaker-5.0.tar.bz2'}" -->
+<!--  $ tar xvf texmaker-5.0.tar.bz2 -->
+<!--  $ cd texmaker-5.0 -->
 
 <!-- Texmaker は texmaker.cpp に記述されている Texmaker::GeneralOptions() メソッドの中の -->
 <!--  if (QColor::isValidColor(confDlg->ui.colortableWidget->item(3,1)->text())) colorStandard=QColor(confDlg->ui.colortableWidget->item(3,1)->text()); -->
@@ -139,7 +135,7 @@ ibus-kkc も同様に \section{ の直後では日本語入力が ON になら�
 
 これらの問題は，[TeXstudio](/TeXstudio/) を使用することで回避できます．
 
-### コマンドの設定に使用するパラメータのパースの仕方に問題がある {#t0aace20}
+### コマンドの設定に使用するパラメータのパースの仕方に問題があるため &#x25;&#x25; と &#x25; を同時に使用することができない {#t0aace20}
 
 % これが本当で困っているならばバグ報告するべきでは．ここに書いて終わりですか？
 
@@ -158,7 +154,7 @@ if (capt=="%") commandline.replace("%","\""+basename+"\"");
 else if (capt=="%%") commandline.replace("%%","%");
 ```
 
-と記述されており，最初に &#x25; にマッチした場合は &#x25; が "basename" に置き換えられて &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力され，最初に &#x25;&#x25; にマッチした場合は &#x25;&#x25; は &#x25; に変換されるが &#x25; は "basename" に変換されずに &#x25; のまま出力されるためこの処理方法ではファイル名 (&#x25;) と % の表記 (&#x25;&#x25;) は同時に使用することが困難であると考えられます．
+と記述されており，最初に &#x25; にマッチした場合は &#x25; が "basename" に置き換えられて &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力され，最初に &#x25;&#x25; にマッチした場合は &#x25;&#x25; は &#x25; に変換されますが &#x25; は "basename" に変換されずに &#x25; のまま出力されるためこの処理方法ではファイル名 (&#x25;) と % の表記 (&#x25;&#x25;) は同時に使用することが困難であると考えられます．
 
 例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
 
