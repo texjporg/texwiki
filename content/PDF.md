@@ -11,7 +11,7 @@ pukiwiki: "PDF"
 
 PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](http://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
 現在は，国際規格 [ISO 32000-1](http://www.iso.org/iso/catalogue_detail.htm?csnumber=51502) として ISO により公開されています．
-PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript　などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
+PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
 その用途は二十数年前の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
 PDF から派生した規格として，主に以下のものがあります：
@@ -115,27 +115,32 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 
 ### PDF ビューア {#zd559492}
 
-[Google Chrome](</Google Chrome/>) が標準で PDF の描画をサポートしていたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．macOS をはしりとして，iOS や Windows 10 など，様々な環境で PDF を標準で，あるいは簡単に表示できます．
+Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの PDFium がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
 
 [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) が有名ですが，ほかにも様々あります：
 
 - [Poppler](/Poppler/) 系：Poppler を利用したものが多数あります．
-    - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える TeX の統合環境
-    - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える TeX の統合環境
+    - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
+    - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
     - [Evince](/Evince/) (GNOME) SyncTeX に対応した GNOME 標準の PDF ビューア
     - [Okular](/Okular/) (KDE) SyncTeX に対応した KDE 標準の PDF ビューア
     - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
+    - [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/) (Qt) Dual-Screen PDF Viewer for LaTeX-beamer
 - [MuPDF](/MuPDF/) 系：MuPDF を利用したものが多数あります．
     - [SumatraPDF](/SumatraPDF/) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
-- [TeXShop](/TeXShop/) PDF ビューアとしても使える TeX の統合環境
-- [PDF-XChange Viewer](http://www.tracker-software.com/product/pdf-xchange-viewer) タブ切り替え型で軽快に動作するフリーの PDF ビューア
+- PDF.js 系：PDF.js を利用したものが多数あります．
+    - [Atom](/Atom/) で [pdf-view](https://atom.io/packages/pdf-view) パッケージを使う
+    - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) パッケージを使う
+- PDFium 系：PDFium を利用したものが多数あります．
+    - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
+- [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
+- [PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer) タブ切り替え型で軽快に動作するフリーの PDF ビューア
 - [Foxit Reader](http://www.foxitsoftware.com/downloads/#reader) フリーのPDF Reader
 - [Skim](/Skim/) SyncTeX に対応した PDF ビューア．macOS 専用です．
 - [Slim PDF Reader](http://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
-- [Atom](/Atom/) エディタで [pdf-view](http://atom.io/packages/pdf-view) パッケージを使う (PDF.js)
 
 Poppler を利用したものは多く，どれを使えばよいのかわかり辛いですが，使っているデスクトップ環境や好みの UI で選びましょう．
 
