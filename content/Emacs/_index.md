@@ -8,7 +8,7 @@ pukiwiki: "Emacs"
 
 # Emacs
 
-## [Emacs](http://www.gnu.org/software/emacs/) {#lc308d9d}
+## [Emacs](https://www.gnu.org/software/emacs/) {#lc308d9d}
 
 [Emacs](https://ja.wikipedia.org/wiki/Emacs) は高い拡張性を持ったテキストエディタです．
 [Emacs Lisp](https://ja.wikipedia.org/wiki/Emacs_Lisp) と呼ばれる [Lisp](/Lisp/) 方言の一つで多くの部分が実装されており，これを用いてカスタマイズ・拡張が可能です．
@@ -19,7 +19,7 @@ pukiwiki: "Emacs"
 
 ## GNU Emacs {#e77c7c99}
 
-- [GNU Emacs - GNU Project - Free Software Foundation (FSF)](http://www.gnu.org/software/emacs/)
+- [GNU Emacs - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/emacs/)
 
 ### 動作環境 {#tabe669d}
 
@@ -34,7 +34,7 @@ GNU Emacs はフリーソフトウェアです．
 
 ### ダウンロード {#m56139cf}
 
-- [http://www.gnu.org/software/emacs/download.html](http://www.gnu.org/software/emacs/download.html)
+- [https://www.gnu.org/software/emacs/download.html](https://www.gnu.org/software/emacs/download.html)
 
 ### 派生版 {#n86b811e}
 
@@ -44,6 +44,8 @@ GNU Emacs はフリーソフトウェアです．
     - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
     - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
         - [https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
+    - [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
+        - [https://vigou3.github.io/emacs-modified-windows/](https://vigou3.github.io/emacs-modified-windows/)
 - 32-bit binary
     - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
 
@@ -53,6 +55,8 @@ GNU Emacs はフリーソフトウェアです．
     - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
     - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](https://emacsformacosx.com/builds)
+- [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
+    - [https://vigou3.github.io/emacs-modified-macos/](https://vigou3.github.io/emacs-modified-macos/)
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
 
