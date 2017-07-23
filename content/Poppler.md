@@ -14,7 +14,7 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 以下のプログラムが PDF ビューアとして Poppler を使用しています。
 
 - LaTeX editor: [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/)
-- PDF viewer: [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/) (zathura-pdf-poppler), [qpdfview](/qpdfview/) (pdf-plugin)
+- PDF viewer: [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/) (zathura-pdf-poppler), [qpdfview](/qpdfview/) (pdf-plugin), [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/)
 
 また，Xpdf と同様に PDF ユーティリティとしても有用です。
 
