@@ -87,11 +87,11 @@ PDF を出力できます．
 - pdftotext -- テキストを抽出する
 - pdfunite -- 文書の結合を行う
 
-また，[Apatch PDFBox](http://pdfbox.apache.org/) ， [pdftk](/pdftk/) や [QPDF](/QPDF/) などにも様々な処理を行うプログラムが含まれます．
+また，[Apatch PDFBox](http://pdfbox.apache.org/) ， [QPDF](/QPDF/) や [pdftk](/pdftk/) などにも様々な処理を行うプログラムが含まれます．
 
 #### ファイルの結合やページの抽出 {#a6819b00}
 
-[pdftk](/pdftk/) や [QPDF](/QPDF/)　で，ファイルの結合やページの抽出など，様々な操作が行えます。
+[QPDF](/QPDF/) や [pdftk](/pdftk/) で，ファイルの結合やページの抽出など，様々な操作が行えます。
 複数の PDF ファイルをまとめてひとつにしたり，特定のページのみ別のファイルに抽出したりする場合に，これらのプログラムが使えます。どちらもコマンドライン・プログラムです。
 
 #### テキスト抽出 {#p1620d11}
@@ -100,7 +100,7 @@ PDF を出力できます．
 
 #### パスワード保護 {#r212a8b0}
 
-[pdftk](/pdftk/) や [QPDF](/QPDF/) で，暗号化による PDF の保護ができます．
+[QPDF](/QPDF/) や [pdftk](/pdftk/) で，暗号化による PDF の保護ができます．
 
 #### Web 用に最適化 {#j2a7fa8f}
 
