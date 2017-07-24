@@ -77,17 +77,6 @@ C-x C-f ~/
 
 ### Windows での設定例 {#m2df1dd4}
 
-64-bit Windows の場合は
-
-- [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または
-- [emacs-w64](http://emacsbinw64.sourceforge.net/)
-
-32-bit Windows の場合は
-
-- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
-
-を使っているものと想定します．
-
 ***
 
 ```
@@ -203,8 +192,6 @@ C-x C-f ~/
 ### macOS での設定例 {#g5794e10}
 
 動作未確認です．
-
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) での利用を想定します．
 
 ***
 
