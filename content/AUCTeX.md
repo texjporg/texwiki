@@ -326,8 +326,6 @@ C-x C-f ~/
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-dvi "displayline")
                                    (output-pdf "displayline")))
-;(setq TeX-view-program-selection '((output-dvi "Skim")
-;                                   (output-pdf "Skim")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -463,14 +461,6 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-dvi "Evince")
                                    (output-pdf "Evince")))
-;(setq TeX-view-program-selection '((output-dvi "Atril")
-;                                   (output-pdf "Atril")))
-;(setq TeX-view-program-selection '((output-dvi "Xreader")
-;                                   (output-pdf "Xreader")))
-;(setq TeX-view-program-selection '((output-dvi "Okular")
-;                                   (output-pdf "Okular")))
-;(setq TeX-view-program-selection '((output-dvi "Zathura")
-;                                   (output-pdf "Zathura")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -657,9 +647,10 @@ DVI, PDF Viewer を変更する場合は
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>リストから選択</td><td>C-c C-c</td><td>コマンドの実行</td></tr>
 > <tr><td>LaTeX</td><td>C-c C-c latex RET</td><td>指定された TeX エンジンでタイプセット</td></tr>
+> <tr><td>Dvipdfmx</td><td>C-c C-c dvipdfmx RET</td><td>dvipdfmx の実行</td></tr>
+> <tr><td>View</td><td>C-c C-c view RET</td><td>プレビュー または forward search</td></tr>
 > <tr><td>BibTeX</td><td>C-c C-c bibtex RET</td><td>bibtex の実行</td></tr>
 > <tr><td>Biber</td><td>C-c C-c biber RET</td><td>biber の実行</td></tr>
-> <tr><td>View</td><td>C-c C-c view RET</td><td>プレビュー または forward search</td></tr>
 > <tr><td>Index</td><td>C-c C-c index RET</td><td>makeindex の実行</td></tr>
 > <tr><td>Xindy</td><td>C-c C-c xindy RET</td><td>texindy の実行</td></tr>
 > <tr><td>Check</td><td>C-c C-c check RET</td><td>lacheck の実行</td></tr>
@@ -832,6 +823,7 @@ AUCTeX Clean ターゲット機能
 ```
 %%% Local Variables:
 %%% mode: japanese-latex
+%%% TeX-engine: uptex
 %%% TeX-master: "hogehoge"
 %%% End:
 ```
@@ -844,6 +836,7 @@ AUCTeX Clean ターゲット機能
 ```
 %%% Local Variables:
 %%% mode: japanese-latex
+%%% TeX-engine: uptex
 %%% TeX-master: t
 %%% End:
 ```
