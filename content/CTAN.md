@@ -23,7 +23,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです．
 
-[http://ctan.org/mirrors](http://ctan.org/mirrors) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
+[https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
 この接続先候補に含まれる日本国内でのサイトには次のものがあります．
 
 - [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
