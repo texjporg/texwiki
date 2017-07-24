@@ -17,7 +17,7 @@ pukiwiki: "Evince/fwdevince/Python"
 
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
-[Fedora](/Linux/Fedora/) 26 の Evince 3.24.0, Python 3.6.1, dbus-python 1.2.4, PyGObject 3.24.1 で動作確認しています．
+[Fedora](/Linux/Fedora/) 26 の Evince 3.24.0, Python 3.6.2, dbus-python 1.2.4, PyGObject 3.24.1 で動作確認しています．
 
 なお [https://www.freedesktop.org/wiki/Software/DBusBindings/](https://www.freedesktop.org/wiki/Software/DBusBindings/) によると dbus-pyton は Obsolete libraries で New applications should use pydbus, txdbus or GDBus/QtDBus bindings. とのことです．
 
