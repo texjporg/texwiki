@@ -17,14 +17,17 @@ pukiwiki: "Evince/fwdevince/Python"
 
 fwdevince（Evince で forward and inverse search を行うツール）の Python による例示ソースです．
 
-[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, Python 3.5.1, dbus-python 1.2.0, PyGObject 3.18.2 で動作確認しています．
+[Fedora](/Linux/Fedora/) 26 の Evince 3.24.0, Python 3.6.1, dbus-python 1.2.4, PyGObject 3.24.1 で動作確認しています．
+
+なお [https://www.freedesktop.org/wiki/Software/DBusBindings/](https://www.freedesktop.org/wiki/Software/DBusBindings/) によると dbus-pyton は Obsolete libraries で New applications should use pydbus, txdbus or GDBus/QtDBus bindings. とのことです．
 
 うまく動作しない場合は
 
+- コマンドラインから python3 --version を実行して Python のバージョンを確認して Python 3.5 以降でなければ Python 3.5 以降にアップグレードする
 - [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Evince 以外の SyncTeX 対応ビューアで forward and inverse search を実行する
 - [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/) の組み込みビューアで forward and inverse search を実行する
 - fwdevince をうまく動作するように修正する
-    - 例えば端末から $ python -V とした時に Python 2.7.6 と表示される環境だと urllib.parse の読み込みに失敗します．その場合は python3 をインストールし，先頭行の #!/usr/bin/env python を #!/usr/bin/env python3 などと変更する．
+    <!-- - -例えば端末から $ python -V とした時に Python 2.7.6 と表示される環境だと urllib.parse の読み込みに失敗します．その場合は python3 をインストールし，先頭行の #!/usr/bin/env python を #!/usr/bin/env python3 などと変更する． -->
 
 などを試みてください．
 
@@ -39,11 +42,9 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 ***
 
 ```
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-```
 
-```
 # Copyright (C) 2010 Jose Aliste
 #               2011 Benjamin Kellermann
 #
@@ -60,18 +61,14 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 # You should have received a copy of the GNU General Public Licence along with
 # this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
 # Street, Fifth Floor, Boston, MA  02110-1301, USA
-```
 
-```
 import dbus
 import argparse
-import os.path
+import pathlib
 import traceback
 import sys
 import urllib.parse
-```
 
-```
 class EvinceForwardSearch:
     def parse_args(self):
         parser = argparse.ArgumentParser(description='Forward search with Evince')
@@ -79,17 +76,13 @@ class EvinceForwardSearch:
         parser.add_argument('line', nargs=1, type=int, help='Line')
         parser.add_argument('tex', nargs=1, help='TeX file')
         return parser.parse_args()
-```
 
-```
     def run(self):
         args = self.parse_args()
-        pdf = os.path.abspath(args.pdf[0]).replace(" ", "%20")
+        pdf = str(pathlib.Path(args.pdf[0]).resolve()).replace(" ", "%20")
         line = int(args.line[0])
-        tex = os.path.join(os.path.dirname(os.path.abspath(args.tex[0])), './', os.path.basename(os.path.abspath(args.tex[0])))
-```
+        tex = str(pathlib.Path(args.tex[0]).resolve().parent / pathlib.Path('./') / pathlib.Path(args.tex[0]).resolve().name)
 
-```
         try:
             import time
             bus = dbus.SessionBus()
@@ -100,55 +93,41 @@ class EvinceForwardSearch:
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
             traceback.print_exc()
-```
 
-```
 class EvinceInverseSearch:
     def parse_args(self):
         parser = argparse.ArgumentParser(description='Inverse search with Evince')
         parser.add_argument('pdf', nargs=1, help='PDF file')
         parser.add_argument('editor', nargs=1, help='Editor command')
         return parser.parse_args()
-```
 
-```
     def run(self):
         import dbus.mainloop.glib
         from gi.repository import GObject
         args = self.parse_args()
-        pdf = os.path.abspath(args.pdf[0])
+        pdf = str(pathlib.Path(args.pdf[0]).resolve())
         editor = args.editor[0]
         dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
         a = EvinceWindowProxy('file://' + pdf, editor, True)
         loop = GObject.MainLoop()
         loop.run()
-```
 
-```
 class EvinceWindowProxy:
     """A Dbus proxy for an Evince Window."""
     daemon = None
     bus = None
-```
 
-```
     RUNNING = range(2)
     CLOSED = range(2)
     EV_DAEMON_PATH = '/org/gnome/evince/Daemon'
     EV_DAEMON_NAME = 'org.gnome.evince.Daemon'
     EV_DAEMON_IFACE = 'org.gnome.evince.Daemon'
-```
 
-```
     EVINCE_PATH = '/org/gnome/evince/Evince'
     EVINCE_IFACE = 'org.gnome.evince.Application'
-```
 
-```
     EV_WINDOW_IFACE = 'org.gnome.evince.Window'
-```
 
-```
     def __init__(self, uri, editor, apawn=False, logger=None):
         self._log = logger
         self.uri = uri.replace(" ", "%20")
@@ -160,9 +139,7 @@ class EvinceWindowProxy:
         try:
             if EvinceWindowProxy.bus is None:
                 EvinceWindowProxy.bus = dbus.SessionBus()
-```
 
-```
             if EvinceWindowProxy.daemon is None:
                 EvinceWindowProxy.daemon = EvinceWindowProxy.bus.get_object(self.EV_DAEMON_NAME,
                     self.EV_DAEMON_PATH,
@@ -176,29 +153,21 @@ class EvinceWindowProxy:
             traceback.print_exc()
             if self._log:
                 self._log.debug('Could not connect to the Evince Daemon')
-```
 
-```
     def _on_doc_loaded(self, uri, **keyargs):
         if uri == self.uri and self._handler is None:
             self.handle_find_document_reply(keyargs['sender'])
-```
 
-```
     def _get_dbus_name(self, spawn):
         EvinceWindowProxy.daemon.FindDocument(self.uri, spawn,
                      reply_handler=self.handle_find_document_reply,
                      error_handler=self.handle_find_document_error,
                      dbus_interface = self.EV_DAEMON_IFACE)
-```
 
-```
     def handle_find_document_error(self, error):
         if self._log:
             self._log.debug('FindDocument DBus call has failed')
-```
 
-```
     def handle_find_document_reply(self, evince_name):
         if self._handler is not None:
             handler = self._handler
@@ -211,15 +180,11 @@ class EvinceWindowProxy:
             self.evince.GetWindowList(dbus_interface = self.EVINCE_IFACE,
                           reply_handler = handler,
                           error_handler = self.handle_get_window_list_error)
-```
 
-```
     def handle_get_window_list_error (self, e):
         if self._log:
             self._log.debug("GetWindowList DBus call has failed")
-```
 
-```
     def handle_get_window_list_reply (self, window_list):
         if len(window_list) > 0:
             window_obj = EvinceWindowProxy.bus.get_object(self.dbus_name, window_list[0])
@@ -229,9 +194,7 @@ class EvinceWindowProxy:
             #That should never happen.
             if self._log:
                 self._log.debug("GetWindowList returned empty list")
-```
 
-```
     def on_sync_source(self, input_file, source_link, timestamp):
         import subprocess
         import re
@@ -249,14 +212,12 @@ class EvinceWindowProxy:
         cmd = re.sub("%f", input_file.replace('file://', ''), self.editor)
         cmd = re.sub("%l", str(source_link[0]), cmd)
         print(cmd)
-        subprocess.call(cmd, shell=True)
+        subprocess.run(cmd, shell=True)
         if self.source_handler is not None:
             self.source_handler(input_file, source_link, timestamp)
-```
 
-```
 if __name__ == '__main__':
-    cmd = os.path.basename(sys.argv[0])
+    cmd = pathlib.Path(sys.argv[0]).name
     if cmd == 'fwdevince' or cmd == 'evince_forward_search':
         EvinceForwardSearch().run()
     elif cmd == 'invevince' or cmd == 'bwdevince' or cmd == 'evince_inverse_search' or cmd == 'evince_backward_search':
