@@ -1451,13 +1451,13 @@ TeX ソースの先頭行に例えば，
 
 と書いておくと、普段はタイプセットの時に upLaTeX (ptex2pdf) で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
 
-記述例をいくつかあげると，Windows では、
+記述例をいくつかあげると，Windows では
 
 ```
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
 ```
 
-としたり，GNU/Linux, UNIXでは，
+としたり，macOS, Linux では
 
 ```
 %#!ptex2pdf -u -l -ot "-synctex=1" hogehoge
