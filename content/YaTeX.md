@@ -151,18 +151,6 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
 
 ### Windows {#n699538a}
 
-Windows の Emacs を使用する場合は YaTeX 1.78.2 以降を使用してください．
-
-64-bit Windows の場合は
-
-- [NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)
-
-32-bit Windows の場合は
-
-- [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
-
-をインストールします．
-
 #### 設定 {#edc51324}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
@@ -287,8 +275,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 - [Retina を活かす Emacs へ移行2](http://milanista224.blogspot.jp/2013/07/retina-emacs243.html)
 
 を参照．
-
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
 
 #### 設定 {#qe563613}
 
