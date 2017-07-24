@@ -85,7 +85,7 @@ AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, 
 
 上記どちらの場合も、TeX-engine に指定する値は ptex, jtex, uptex のいずれかです。
 
-各 engine ごとに利用されるコマンド名（platex や euptex 等）は変数 TeX-engine-alist-builtin に保存されています。異なるコマンドを使いたい場合や、新たな engine を定義したい場合はカスタマイズオプション TeX-engine-alist を利用してください。このページの下方に色々例が載っています。
+各 engine ごとに利用されるコマンド名（platex や euptex 等）は変数 TeX-engine-alist-builtin に保存されています。異なるコマンドを使いたい場合や、新たな engine を定義したい場合はカスタマイズオプション TeX-engine-alist を利用してください。
 
 [forum:2047](https://okumuralab.org/tex/mod/forum/discuss.php?d=2047)のように、NTT jLaTeX 用のクラスファイルを ASCII pLaTeX で利用する場合は、上述の file (directory) local variable で TeX-engine に ptex を指定してください。
 
@@ -149,12 +149,6 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 
 ### Windows {#w81a725c}
 
-64-bit Windows の場合は<br>
-[NTEmacs64](https://github.com/chuntaro/NTEmacs64) または [emacs-w64](http://emacsbinw64.sourceforge.net/)<br>
-32-bit Windows の場合は<br>
-[NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)<br>
-をインストールします．<br>
-
 Emacs を起動して
 
 ```
@@ -165,11 +159,13 @@ C-x C-f ~/
 
 #### 設定 {#g637a7d7}
 
-Emacs 24.5 以降にアップグレードします．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．<br>
-SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．<br>
-SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+SumatraPDF を -forward-search &lt;texfile> &lt;linenumber> オプションを使用して実行した場合 SumatraPDF を前面に表示して forward search します．
+
+SumatraPDF を前面に表示したくない場合は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します．
+
+SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
 
 ***
 
@@ -177,27 +173,23 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load 'tex-jp
-  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                     "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                     "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                     "euptex")))
-  (setq japanese-TeX-engine-default 'pdfuptex)
-  ;(setq japanese-TeX-engine-default 'luatex)
-  ;(setq japanese-TeX-engine-default 'xetex)
+(with-eval-after-load 'tex
   (setq TeX-view-program-list '(("SumatraPDF"
-                                 "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\"")))
-  (setq TeX-view-program-selection '((output-dvi "SumatraPDF")
-                                     (output-pdf "SumatraPDF")))
-  (setq japanese-LaTeX-default-style "bxjsarticle")
-  ;(setq japanese-LaTeX-default-style "ltjsarticle")
+                                 "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""))))
+(with-eval-after-load 'tex-jp
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
+(setq japanese-TeX-engine-default 'uptex)
+(setq japanese-LaTeX-default-style "bxjsarticle")
+(setq TeX-engine 'uptex)
+(setq TeX-PDF-from-DVI "Dvipdfmx")
+(setq TeX-view-program-selection '((output-dvi "SumatraPDF")
+                                   (output-pdf "SumatraPDF")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
-(add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
-(add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
+(setq TeX-source-correlate-mode t)
+(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
@@ -297,8 +289,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 - [EmacsとSkimの連携](http://ochiailab.blogspot.jp/2012/10/emacsskim.html)
 - [Build Latex environments](http://sorabu.tumblr.com/post/6703335969/build-latex-environments)
 
-[Emacs.app](http://www.muskmelon.jp/?page_id=79) をインストールします．
-
 Emacs を起動して
 
 ```
@@ -309,9 +299,9 @@ C-x C-f ~/
 
 #### 設定 {#n55816de}
 
-動作未確認です．<br>
-Emacs 24.5 以降にアップグレードします．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
+動作未確認です．
+
+&#x7e;/.emacs.d/init.el に設定を記述します．
 
 ***
 
@@ -328,26 +318,21 @@ Emacs 24.5 以降にアップグレードします．<br>
 ;; AUCTeX
 ;;
 (with-eval-after-load 'tex-jp
-  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                     "/Library/TeX/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
-                                     "/Library/TeX/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
-                                     "euptex")))
-  (setq japanese-TeX-engine-default 'pdfuptex)
-  ;(setq japanese-TeX-engine-default 'luatex)
-  ;(setq japanese-TeX-engine-default 'xetex)
-  (setq TeX-view-program-selection '((output-dvi "displayline")
-                                     (output-pdf "displayline")))
-  ;(setq TeX-view-program-selection '((output-dvi "Skim")
-  ;                                   (output-pdf "Skim")))
-  (setq japanese-LaTeX-default-style "bxjsarticle")
-  ;(setq japanese-LaTeX-default-style "ltjsarticle")
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
+(setq japanese-TeX-engine-default 'uptex)
+(setq japanese-LaTeX-default-style "bxjsarticle")
+(setq TeX-engine 'uptex)
+(setq TeX-PDF-from-DVI "Dvipdfmx")
+(setq TeX-view-program-selection '((output-dvi "displayline")
+                                   (output-pdf "displayline")))
+;(setq TeX-view-program-selection '((output-dvi "Skim")
+;                                   (output-pdf "Skim")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
-(add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
-(add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
+(setq TeX-source-correlate-mode t)
+(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
@@ -459,9 +444,9 @@ C-x C-f ~/
 
 #### 設定 {#p2d711b9}
 
-Emacs 24.5 以降にアップグレードします．<br>
-&#x7e;/.emacs.d/init.el に設定を記述します．<br>
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
+&#x7e;/.emacs.d/init.el に設定を記述します．
+
+fwdevince は Evince/fwdevince の fwdevince を使用します．
 
 ***
 
@@ -469,54 +454,28 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load 'tex
-  (defun TeX-evince-sync-view ()
-    (require 'url-util)
-    (let* ((uri (concat "file://" (url-encode-url
-                                   (expand-file-name
-                                   (concat file "." "pdf")))))
-           (owner (dbus-call-method
-                   :session "org.gnome.evince.Daemon"
-                   "/org/gnome/evince/Daemon"
-                   "org.gnome.evince.Daemon"
-                   "FindDocument"
-                   uri
-                   t)))
-      (if owner
-          (with-current-buffer (or (when TeX-current-process-region-p
-                                     (get-file-buffer (TeX-region-file t)))
-                                   (current-buffer))
-            (sleep-for 0.2)
-            (dbus-call-method
-             :session owner
-             "/org/gnome/evince/Window/0"
-             "org.gnome.evince.Window"
-             "SyncView"
-             (buffer-file-name)
-             (list :struct :int32 (line-number-at-pos) :int32 (1+ (current-column)))
-             :uint32 0))
-        (error "Couldn't find the Evince instance for %s" uri)))))
 (with-eval-after-load 'tex-jp
-  (setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                     "ptex2pdf -u -e -ot '%S %(mode)'"
-                                     "ptex2pdf -u -l -ot '%S %(mode)'"
-                                     "euptex")))
-  (setq japanese-TeX-engine-default 'pdfuptex)
-  ;(setq japanese-TeX-engine-default 'luatex)
-  ;(setq japanese-TeX-engine-default 'xetex)
-  (setq TeX-view-program-selection '((output-dvi "Evince")
-                                     (output-pdf "Evince")))
-  ;(setq TeX-view-program-selection '((output-dvi "Okular")
-  ;                                   (output-pdf "Okular")))
-  (setq japanese-LaTeX-default-style "bxjsarticle")
-  ;(setq japanese-LaTeX-default-style "ltjsarticle")
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
+(setq japanese-TeX-engine-default 'uptex)
+(setq japanese-LaTeX-default-style "bxjsarticle")
+(setq TeX-engine 'uptex)
+(setq TeX-PDF-from-DVI "Dvipdfmx")
+(setq TeX-view-program-selection '((output-dvi "Evince")
+                                   (output-pdf "Evince")))
+;(setq TeX-view-program-selection '((output-dvi "Atril")
+;                                   (output-pdf "Atril")))
+;(setq TeX-view-program-selection '((output-dvi "Xreader")
+;                                   (output-pdf "Xreader")))
+;(setq TeX-view-program-selection '((output-dvi "Okular")
+;                                   (output-pdf "Okular")))
+;(setq TeX-view-program-selection '((output-dvi "Zathura")
+;                                   (output-pdf "Zathura")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
-(add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
-(add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
+(setq TeX-source-correlate-mode t)
+(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
@@ -656,42 +615,6 @@ AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように�
 (load "preview-latex.el" nil t t)
 ```
 
-### upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する {#zdc0afad}
-
-upTeX (ptex2pdf), upLaTeX (ptex2pdf) を使用する場合は次のように設定します．<br>
-
-■ Windows の場合
-
-```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                   "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
-```
-
-■ macOS の場合
-
-```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "/Library/TeX/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
-                                   "/Library/TeX/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
-```
-
-■ Linux の場合
-
-```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "ptex2pdf -u -e -ot '%S %(mode)'"
-                                   "ptex2pdf -u -l -ot '%S %(mode)'"
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
-```
-
-上の例では TeX-engine-alist に pdfuptex を設定して japanese-TeX-engine-default に pdfuptex を設定しました．<br>
-
 ### ドキュメントクラスの設定 {#l246b90f}
 
 [BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は以下のように設定します．
@@ -754,37 +677,14 @@ DVI, PDF Viewer を変更する場合は
 
 ### TeX エンジンの選択 {#cd10b741}
 
-&#x7e;/.emacs.d/init.el で TeX-engine-alist に pdfuptex を設定します．<br>
-pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pdfuptex を設定します．<br>
-
-■ Windows の場合
+upTeX をデフォルトにする場合は 以下の設定をします．
 
 ```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                   "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc %S %(mode)\""
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
-```
-
-■ macOS の場合
-
-```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "/Library/TeX/texbin/ptex2pdf -u -e -ot '%S %(mode)'"
-                                   "/Library/TeX/texbin/ptex2pdf -u -l -ot '%S %(mode)'"
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
-```
-
-■ Linux の場合
-
-```
-(setq TeX-engine-alist '((pdfuptex "pdfupTeX"
-                                   "ptex2pdf -u -e -ot '%S %(mode)'"
-                                   "ptex2pdf -u -l -ot '%S %(mode)'"
-                                   "euptex")))
-(setq japanese-TeX-engine-default 'pdfuptex)
+(setq japanese-TeX-engine-default 'uptex)
+(setq japanese-LaTeX-default-style "bxjsarticle")
+(setq TeX-engine 'uptex)
+(setq TeX-PDF-from-DVI "Dvipdfmx")
+(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
 ```
 
 > <table>
@@ -792,7 +692,7 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">TeX エンジンの選択</th></tr>
 > <tr><td>TeXing Options -&gt; Use Default engine</td><td>M-x TeX-engine RET default RET</td><td>デフォルト (pdfTeX) を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use LuaTeX engine</td><td>M-x TeX-engine RET luatex RET</td><td>LuaTeX を使用</td></tr>
-> <tr><td>TeXing Options -&gt; Use pdfupTeX engine</td><td>M-x TeX-engine RET pdfuptex RET</td><td>pdfupTeX を使用</td></tr>
+> <tr><td>TeXing Options -&gt; Use upTeX engine</td><td>M-x TeX-engine RET uptex RET</td><td>upTeX を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use XeTeX engine</td><td>M-x TeX-engine RET xetex RET</td><td>XeTeX を使用</td></tr>
 > </tbody>
 > </table>
@@ -802,10 +702,6 @@ pdfupTeX をデフォルトにする場合は japanese-TeX-engine-default に pd
 
 TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．<br>
 AUCTeX は TeX-PDF-mode がデフォルトで有効になっています．<br>
-
-```
-(add-hook 'LaTeX-mode-hook 'TeX-PDF-mode)
-```
 
 > <table>
 > <tbody>
@@ -838,7 +734,7 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 ```
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
-(add-hook 'LaTeX-mode-hook 'TeX-source-correlate-mode)
+(setq TeX-source-correlate-mode t)
 ```
 
 > <table>
@@ -877,15 +773,15 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 のような環境が入ります。<br>
 環境名は補完できます。<br>
 
-次に C-c C-c するとコンパイルできます。<br>
+次に C-c C-c するとコンパイルできます。
 
-次に C-c C-c すると依存関係を調べて出力ファイルが新しければプレビューします。<br>
+次に C-c C-c すると依存関係を調べて出力ファイルが新しければプレビューします。
 再度コンパイルしたいのなら l TAB または l SPACE
 と打てば補完されて LaTeX 処理に直ります。<br>
 
 ### いろいろな使い方 {#v806ddfa}
 
-ダブルクォート " を打てば，状況に応じて \`\` または '' に変換してくれます。<br>
+ダブルクォート " を打てば，状況に応じて \`\` または '' に変換してくれます。
 
 TAB または SPACE で補完ができます。<br>
 これらが効かないときは ESC TAB で補完します。<br>
