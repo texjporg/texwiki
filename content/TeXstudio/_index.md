@@ -57,10 +57,10 @@ macOS 用の zip アーカイブをダウンロードして展開します．
 
 Homebrew でインストールすることもできます．
 
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb)
+> [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texstudio.rb)
 
 ```
-$ brew cask install texstudio
+brew cask install texstudio
 ```
 
 #### Linux {#v5002500}
