@@ -84,12 +84,10 @@ class EvinceForwardSearch:
         tex = str(pathlib.Path(args.tex[0]).resolve().parent / pathlib.Path('./') / pathlib.Path(args.tex[0]).resolve().name)
 
         try:
-            import time
             bus = dbus.SessionBus()
             daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
             dbus_name = daemon.FindDocument('file://' + urllib.parse.quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
             window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
-            time.sleep(0.2)
             window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
         except dbus.DBusException:
             traceback.print_exc()
@@ -102,14 +100,14 @@ class EvinceInverseSearch:
         return parser.parse_args()
 
     def run(self):
-        import dbus.mainloop.glib
-        from gi.repository import GObject
         args = self.parse_args()
         pdf = str(pathlib.Path(args.pdf[0]).resolve())
         editor = args.editor[0]
+        import dbus.mainloop.glib
         dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
         a = EvinceWindowProxy('file://' + pdf, editor, True)
-        loop = GObject.MainLoop()
+        from gi.repository import GLib
+        loop = GLib.MainLoop()
         loop.run()
 
 class EvinceWindowProxy:
