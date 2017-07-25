@@ -46,12 +46,7 @@ Windows, macOS, Linux
 
 ### Windows {#f2460848}
 
-- [Apps/Evince/Downloads - GNOME Wiki!](https://wiki.gnome.org/Apps/Evince/Downloads)
-
-公式サイトの Windows 版の Evince 2.32.0.145 で日本語を表示したい場合はフォントを埋め込む必要があります． (→ [(W32TeX)LualatexのPDFがEvinceで日本語が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=836))
-libpoppler の DLL を fontconfig を使用した版に差し替えると豆腐化を解消できるそうです。(→[Windows 版 Evince，libpoppler の dll を fontconfig を使用した版に差し替えたら豆腐化を解消できた](https://twitter.com/TeeEfuShi/status/716176921399205888))
-
-公式サイトより新しいバージョンの Windows 版 Evince は MSYS2 の pacman でインストールできます．MSYS2 からインストールした場合はフォントを埋め込まなくても日本語を表示することができます．
+Windows 版 Evince は MSYS2 の pacman でインストールできます．フォントを埋め込まなくても日本語を表示することができます．
 
 64-bit Evince の場合は
 
