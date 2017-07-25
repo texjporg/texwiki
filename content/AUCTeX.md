@@ -249,9 +249,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                    '("pdfopen"
                                      "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %s.pdf && pdfclose --r15 --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --r15 --file %%{output} --page %%{page+1}\""
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
-```
 
-```
 ;;
 ;; RefTeX with AUCTeX
 ;;
@@ -311,9 +309,7 @@ C-x C-f ~/
 ;;
 (setenv "PATH"
         (concat (getenv "PATH") ":/Library/TeX/texbin"))
-```
 
-```
 ;;
 ;; AUCTeX
 ;;
@@ -394,9 +390,7 @@ C-x C-f ~/
                                    '("acroread"
                                      "/usr/bin/open -a \"Adobe Acrobat Reader DC.app\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
-```
 
-```
 ;;
 ;; RefTeX with AUCTeX
 ;;
@@ -542,9 +536,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                    '("Chromium"
                                      "chromium --new-window %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Chromium")))))
-```
 
-```
 ;;
 ;; RefTeX with AUCTeX
 ;;
