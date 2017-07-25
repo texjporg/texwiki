@@ -63,9 +63,12 @@ Linux の場合はパッケージ管理システムからインストールす�
 
 ### 日本語化 {#k564e4ed}
 
+Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
+
 #### Texmaker 4.0.1 {#h11371e4}
 
-Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
+texmaker_jp.qm を texmaker.exe と同じフォルダーに置いて Texmaker を起動して
+<ins>O</ins>ptions &gt; Interface Language &gt; jp を選択して Texmaker を再起動するとメニューが日本語化されます．
 
 - [TexmakerでTeX文書を書こう！](http://writingwithtexmaker.blogspot.jp/)
     - [日本語キットfor texmaker4.0.1](http://writingwithtexmaker.blogspot.jp/2013/04/texmaker40.html)
@@ -79,37 +82,17 @@ macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wi
 
 Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
 
-### かな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる {#c698d89f}
+### Windows の Texmaker でかな漢字変換をする際に，変換候補の文字と背景が黒く表示され，読めなくなる {#c698d89f}
 
-Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって読めなくなるという不具合があります．
-OS やインプットメソッドフレームワークの種類などの違いでこの不具合が発生しない場合もあるようです．
+Windows の Texmaker には，かな漢字変換をする際に変換候補の文字色とその背景色がともに「黒」となって読めなくなるという不具合があります．
 
-Windows と Linux でかな漢字変換をする際に，文字と背景が黒く表示され，読めなくなる不具合が発生します．
-macOS では発生しないようです．
-
-#### Windows の場合 {#z3a8b3e4}
-
-Windows の場合は <ins>O</ins>ptions &gt; Configure Texmaker &gt; Editor で Dark theme を選択することで回避できます．
-
-#### Linux の場合 {#nd7d6ba8}
-
-<strong>■ ibus を使用している場合</strong>
-
-Arch Linux の ibus-kkc では特に問題なく日本語入力できています．
-
-<strong>■ fcitx を使用している場合</strong>
-
-fcitx の \[設定\] &gt; \[アドオン\] &gt; \[拡張を ON\] &gt; \[Fcitx XIM Frontend をダブルクリック\] で 「XIMで On The Spot スタイルを使う」 が OFF の場合は変換候補の場所に文字が表示されるので文字が確認できます．
-
-<strong>■ uim を使用している場合</strong>
-
-uim を使用している場合は背景が黒く表示されて読めなくなることがあるようです．
+<ins>O</ins>ptions &gt; Configure Texmaker &gt; Editor で Dark theme を選択することで回避できます．
 
 <!-- 以下の「修正方法」なるもので本当に解決するのならば，報告するべきでしょう． -->
 <!-- たぶんわざわざ setFormat() しているものをコメントアウトするので何か副作用があるのだろうと -->
 <!-- 思いますが． -->
 
-<!-- ***修正方法 (Windows) [#e1ab5b1e] -->
+<!-- ***修正方法 [#e1ab5b1e] -->
 
 <!-- Texmaker のソースコードを修正してビルドすれば日本語入力に関する不具合を回避できます． -->
 
@@ -137,19 +120,7 @@ uim を使用している場合は背景が黒く表示されて読めなくな�
 
 <!-- -かな漢字変換をする際に，文字が黒くならないことを確認します． -->
 
-<!-- -日本語のフォントが埋め込まれていない PDF ファイルが組み込みビューアで表示できることを確認します． -->
-
 <!-- -C:\MinGW\bin と C:\Qt\Qt5.9.0\5.9\mingw53_32\bin に PATH を通せばエクスプローラーからダブルクリックして起動できるようになります． -->
-
-### Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがある {#i1222dd8}
-
-Linux 版の Texmaker で \section{ を入力した直後に日本語入力をしようとすると日本語入力が ON にならなかったり，正しいかな漢字変換ができなかったりすることがあります．
-
-fcitx-mozc では \section{ の直後で日本語入力が ON にならないことがあります．このとき，\section{ の直後で 「かんじ」 を 「漢字」 に変換しようとすると 「k暗示」 と変換されてしまいます．
-
-ibus-kkc も同様に \section{ の直後では日本語入力が ON にならないことがあります．
-
-これらの問題は，[TeXstudio](/TeXstudio/) を使用することで回避できます．
 
 ### コマンドの設定に使用するパラメータのパースの仕方に問題があるため &#x25;&#x25; と &#x25; を同時に使用することができない {#t0aace20}
 
