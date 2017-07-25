@@ -131,6 +131,7 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [SumatraPDF](/SumatraPDF/) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
+    - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
     - [Atom](/Atom/) で [pdf-view](https://atom.io/packages/pdf-view) パッケージを使う
     - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) パッケージを使う
