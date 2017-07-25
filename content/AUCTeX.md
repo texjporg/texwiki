@@ -960,5 +960,5 @@ AUCTeX とは関係ありませんが，先頭に
 [^1]: upLaTeX を利用したとき、何度 C-c C-c をタイプしても typeset が終わったと判定されず、Viewer の起動に移行しなかった問題は AUCTeX 11.90 で修正されました。
 [^2]: LuaTeX-ja を利用する場合は、日本語用に特別の設定は不要です。単純に engine として LuaTeX を選び、通常の LuaTeX 文書として編集するだけでよく、この節の話は当てはまりません。
 [^3]: 文書を親ファイルと子ファイルに分割する場合は、さらに TeX-auto-save も有効にするとよいかもしれません。文書の保存時にサブディレクトリ auto 内に情報が保存されるので、次回編集を再開するとき、子ファイルだけを開いても TeX-engine が正しい値にセットされます。
-[^4]: \documentclass\[uplatex\]{jsarticle} 等のように、jsclasses 系のクラスファイルに uplatex オプションを指定した場合 upTeX engine が選択されない問題は、開発版では修正されました。AUCTeX 11.90 ではまだ残っています。
+[^4]: \documentclass\[uplatex\]{jsarticle} 等のように、jsclasses 系のクラスファイルに uplatex オプションを指定した場合 upTeX engine が選択されない問題は、AUCTeX 11.91 で修正されました。
 [^5]: directory local variable も、AUCTeX 11.90 からは japanese-latex-mode, japanese-plain-tex-mode で利用できるようになりました。
