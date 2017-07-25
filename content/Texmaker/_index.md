@@ -51,10 +51,10 @@ macOS の場合は dmg 形式のファイルをダウンロードして展開し
 
 Homebrew でインストールすることもできます．
 
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb)
+> [https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/texmaker.rb)
 
 ```
-$ brew cask install texmaker
+brew cask install texmaker
 ```
 
 #### Linux {#d8deaab2}
