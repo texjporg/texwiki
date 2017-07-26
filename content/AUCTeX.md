@@ -17,7 +17,7 @@ pukiwiki: "AUCTeX"
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は Emacs の TeX モードです．
+AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 - [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
@@ -124,8 +124,9 @@ $ wget http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
 $ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
 ```
 
-で最新版の AUCTeX を入手します．<br>
-AUCTeX を展開してビルド・インストールします．<br>
+で最新版の AUCTeX を入手します．
+
+AUCTeX を展開してビルド・インストールします．
 
 ```
 $ tar xvf master.tar.gz
@@ -155,7 +156,7 @@ Emacs を起動して
 C-x C-f ~/
 ```
 
-で，ホームディレクトリ (&#x7e;/) の場所を確認します．<br>
+で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
 #### 設定 {#g637a7d7}
 
@@ -182,8 +183,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
 (setq exec-path (append exec-path '("C:\\Program Files\\SumatraPDF")))
-(setq TeX-view-program-selection '((output-dvi "dviout")
-                                   (output-pdf "SumatraPDF")))
+(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -319,8 +319,7 @@ C-x C-f ~/
 (setq japanese-LaTeX-default-style "bxjsarticle")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
-(setq TeX-view-program-selection '((output-dvi "displayline")
-                                   (output-pdf "displayline")))
+(setq TeX-view-program-selection '((output-pdf "displayline")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -452,8 +451,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq japanese-LaTeX-default-style "bxjsarticle")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
-(setq TeX-view-program-selection '((output-dvi "xdvi")
-                                   (output-pdf "Evince")))
+(setq TeX-view-program-selection '((output-pdf "Evince")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -604,26 +602,25 @@ AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように�
 (setq japanese-LaTeX-default-style "bxjsarticle")
 ```
 
-### DVI, PDF ビューアーの変更 {#pfbe6148}
+### PDF ビューアーの変更 {#pfbe6148}
 
-DVI, PDF Viewer を変更する場合は
-
-```
-(setq TeX-view-program-list '(("DVIviewer" "/path/viewer %o")
-                              ("PDFviewer" "/path/viewer %o")))
-```
+PDF Viewer を変更する場合は
 
 ```
-(setq TeX-view-program-selection '((output-dvi "DVIviewer")
-                                   (output-pdf "PDFviewer")))
+(setq TeX-view-program-list '(("PDFviewer" "/path/viewer %o")))
+```
+
+```
+(setq TeX-view-program-selection '((output-pdf "PDFviewer")))
 ```
 
 になります。
 
 ### 禁則処理 {#ab10fa7c}
 
-禁則処理によって行長が何文字延びてもいいかは，Emacs の kinsoku.el の kinsoku-limit で定義されています．<br>
-デフォルトでは4ですが，少し長くしておかないと，単語の途中で切れてしまうことがあります．<br>
+禁則処理によって行長が何文字延びてもいいかは，Emacs の kinsoku.el の kinsoku-limit で定義されています．
+
+デフォルトでは4ですが，少し長くしておかないと，単語の途中で切れてしまうことがあります．
 
 ```
 (setq kinsoku-limit 10)
@@ -682,8 +679,9 @@ upTeX をデフォルトにする場合は 以下の設定をします．
 
 ### TeX-PDF-mode {#bf4992a9}
 
-TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．<br>
-AUCTeX は TeX-PDF-mode がデフォルトで有効になっています．<br>
+TeX-PDF-mode を有効にすると Default (pdfTeX) エンジン, LuaTeX エンジン, XeTeX エンジン で DVI ファイルのかわりに PDF ファイルを出力するようになります．
+
+AUCTeX は TeX-PDF-mode がデフォルトで有効になっています．
 
 > <table>
 > <tbody>
@@ -753,14 +751,14 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 コマンド名は補完できます。
 
 次に C-c C-e すると，\begin{...} ... \end{...}
-のような環境が入ります。<br>
+のような環境が入ります。
 環境名は補完できます。
 
 次に C-c C-c するとコンパイルできます。
 
 次に C-c C-c すると依存関係を調べて出力ファイルが新しければプレビューします。
 再度コンパイルしたいのなら l TAB または l SPACE
-と打てば補完されて LaTeX 処理に直ります。<br>
+と打てば補完されて LaTeX 処理に直ります。
 
 ### いろいろな使い方 {#v806ddfa}
 
@@ -787,7 +785,7 @@ TAB または SPACE で補完ができます。
 > </table>
 >
 
-その他のコマンドです。<br>
+その他のコマンドです。
 
 - TAB インデント
 - C-j インデントして改行
@@ -803,12 +801,12 @@ AUCTeX Clean ターゲット機能
 - C-c C-c Clean 中間ファイル(.log .aux etc...)の削除
 - C-c C-c Clean All 中間ファイル及び dvi ps pdf の削除
 
-これ以外にたくさんの機能があります。<br>
-ぜひ info auctex でドキュメントをお読みください。<br>
+これ以外にたくさんの機能があります。
+ぜひ info auctex でドキュメントをお読みください。
 
 ### カスタマイズ {#l23cdb90}
 
-サイトごとのカスタマイズは /usr/local/share/emacs/site-lisp/tex-site.el で行います。<br>
+サイトごとのカスタマイズは /usr/local/share/emacs/site-lisp/tex-site.el で行います。
 
 ### 複数ファイルの文書 {#fd84843a}
 
@@ -822,10 +820,10 @@ AUCTeX Clean ターゲット機能
 %%% End:
 ```
 
-すると，このバッファで C-c C-c すると，hogehoge.tex をコンパイルしたり hogehoge.dvi を表示したりします。<br>
-これはこのファイルを japanese-latex モードで開くという便利な副作用もあります。<br>
+すると，このバッファで C-c C-c すると，hogehoge.tex をコンパイルしたり hogehoge.dvi を表示したりします。
+これはこのファイルを japanese-latex モードで開くという便利な副作用もあります。
 
-もし自分自身がマスターなら，次のように書いておきます。<br>
+もし自分自身がマスターなら，次のように書いておきます。
 
 ```
 %%% Local Variables:
@@ -861,7 +859,7 @@ C-c C-c sumatrapdf または C-c C-c fwdsumatrapdf で forward search ができ�
 
 AUCTeX は SumatraPDF の forward search に対応しています．
 
-環境変数 Path と変数 exec-path に SumatraPDF のコマンドパスを追加します．
+環境変数 Path と変数 exec-path に SumatraPDF のコマンド検索パスを追加します．
 
 ```
 
@@ -875,9 +873,9 @@ TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で�
 (setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
 ```
 
-inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
+C-c C-c view で View command: に SumatraPDF のコマンドが表示され forward search が実行できます．
 
-[Emacs AUCTeX and PDF Synchronization on Windows](http://www.barik.net/archive/2012/07/18/154432/) も参考になります．
+inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
 
 ## Skim との連携 (forward and inverse search) {#v5bdbf9d}
 
@@ -942,6 +940,24 @@ TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で�
 C-c C-c view で View command: に Okular のコマンドが表示され forward search が実行できます．
 
 inverse search は [Emacs](/Emacs/#z0944532) を参照してください．
+
+## zathura との連携 (forward and inverse search) {#nf2a372b}
+
+forward and inverse search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
+
+C-c C-c zathura で forward and inverse search ができます．
+
+AUCTeX は zathura の forward and inverse search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Zathura を指定します．
+
+```
+(setq TeX-view-program-selection '((output-pdf "Zathura")))
+```
+
+C-c C-c view で View command: に zathura のコマンドが表示され forward and inverse search が実行できます．
+
+Ctrl + 左クリックで inverse search が実行できます．
 
 ## その他 {#w8f257bd}
 
