@@ -43,8 +43,6 @@ macOS, Linux, BSD
 
 を参照．
 
-Version 0.3.4 以降は [SyncTeX](/SyncTeX/) で forward and inverse search, forward search, inverse search ができるようになりました．
-
 ### ChangeLog {#fdab5877}
 
 #### zathura {#wf24e546}
@@ -134,7 +132,7 @@ Application Options:
 
 ### forward and inverse search {#t2531a9e}
 
-zathura 0.3.4 以降で TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプして [TeXstudio](/TeXstudio/) で inverse search する場合は
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプして [TeXstudio](/TeXstudio/) で inverse search する場合は
 
 ```
 $ zathura -x "texstudio '%{input}' -line %{line}" --synctex-forward "30:0:hoge.tex" "hoge.pdf"
@@ -144,7 +142,7 @@ $ zathura -x "texstudio '%{input}' -line %{line}" --synctex-forward "30:0:hoge.t
 
 ### forward search {#m29e6702}
 
-zathura 0.3.4 以降で TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
+TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇所にジャンプしたい場合は
 
 ```
 $ zathura --synctex-forward "30:0:hoge.tex" "hoge.pdf"
@@ -154,7 +152,7 @@ $ zathura --synctex-forward "30:0:hoge.tex" "hoge.pdf"
 
 ### inverse search {#c00c992e}
 
-zathura 0.3.4 以降で [TeXstudio](/TeXstudio/) で inverse search する場合は
+[TeXstudio](/TeXstudio/) で inverse search する場合は
 
 ```
 $ zathura -x "texstudio '%{input}' -line %{line}" "hoge.pdf"
