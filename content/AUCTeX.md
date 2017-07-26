@@ -91,12 +91,12 @@ AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, 
 
 ## 注意点 {#gb666e4a}
 
-### " を入力しようとすると \`\` が入力される → C-q " {#q07274ce}
+### " を入力しようとすると \`\` が入力される {#q07274ce}
 
 - [Emacs + YaTeX でダブルクォーテーションを入力](http://tetu1984.hateblo.jp/entry/20090123/1232651566)
 
-AUCTeX, TeX mode, YaTeX では " を入力しようとすると \`\` が入力されます．<br>
-\`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．<br>
+AUCTeX, TeX mode, YaTeX では " を入力しようとすると \`\` が入力されます．
+\`\` ではなく " を入力したい場合は ""（" を2回打つ）か C-q " (Ctrl-Q を入力した後で " を入力) とします．
 
 ## 不具合 {#dd1381aa}
 
@@ -280,7 +280,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
 > <tr><td>Edge</td><td>C-c C-c edge RET</td><td>Edge でプレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search or print PDF</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -422,7 +422,7 @@ C-x C-f ~/
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー or print PDF</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -602,9 +602,20 @@ AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように�
 (load "preview-latex.el" nil t t)
 ```
 
-### ドキュメントクラスの設定 {#l246b90f}
+### TeX エンジンと dvipdfmx の設定 {#p6024a21}
 
-[BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は以下のように設定します．
+upTeX をデフォルトにして dvipdfmx を使用する場合は次のように記述します．
+
+```
+(setq japanese-TeX-engine-default 'uptex)
+(setq TeX-engine 'uptex)
+(setq TeX-PDF-from-DVI "Dvipdfmx")
+(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
+```
+
+### 日本語ドキュメントクラスの設定 {#l246b90f}
+
+[BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は次のように記述します．
 
 ```
 (setq japanese-LaTeX-default-style "bxjsarticle")
@@ -628,7 +639,7 @@ PDF Viewer を変更する場合は
 
 禁則処理によって行長が何文字延びてもいいかは，Emacs の kinsoku.el の kinsoku-limit で定義されています．
 
-デフォルトでは4ですが，少し長くしておかないと，単語の途中で切れてしまうことがあります．
+デフォルトでは 4 ですが，少し長くしておかないと，単語の途中で切れてしまうことがあるかもしれません．
 
 ```
 (setq kinsoku-limit 10)
@@ -664,16 +675,6 @@ PDF Viewer を変更する場合は
 >
 
 ### TeX エンジンの選択 {#cd10b741}
-
-upTeX をデフォルトにする場合は 以下の設定をします．
-
-```
-(setq japanese-TeX-engine-default 'uptex)
-(setq japanese-LaTeX-default-style "bxjsarticle")
-(setq TeX-engine 'uptex)
-(setq TeX-PDF-from-DVI "Dvipdfmx")
-(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
-```
 
 > <table>
 > <tbody>
@@ -766,10 +767,15 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 次に C-c C-c するとコンパイルできます。
 
 次に C-c C-c すると依存関係を調べて出力ファイルが新しければ dvipdfmx を実行したりプレビューしたりします。
-再度コンパイルしたいのなら l TAB または l SPACE
-と打てば補完されて LaTeX 処理に直ります。
 
-C-c C-a するとタイプセットとプレビューを行います。
+dvipdfmx が実行された場合は次に C-c C-c するとプレビューします。
+
+再度コンパイルしたいのなら
+C-c C-c の後に l (小文字の L) をタイプした後で TAB (Tab キー) あるいは
+C-c C-c の後に l (小文字の L) をタイプした後で SPACE (Space キー) を打てば
+LaTeX の文字が補完されて RET (Enter キー) を押すと LaTeX の処理が行われます。
+
+C-c C-a するとタイプセットからプレビューまでを一気に行います。
 
 ### いろいろな使い方 {#v806ddfa}
 
