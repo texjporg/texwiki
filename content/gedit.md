@@ -84,13 +84,14 @@ Windows, macOS, Linux
 ### 派生版 {#k13d1526}
 
 - [pluma](https://github.com/mate-desktop/pluma)
+- [xed](https://github.com/linuxmint/xed)
 
 ## プラグイン {#c01f900c}
 
 - [geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
 - [LaTeX入門 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX%E5%85%A5%E9%96%80)
 
-を参照．<br>
+を参照．
 
 ### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
 
@@ -99,10 +100,13 @@ Windows, macOS, Linux
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
 
-gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．<br>
-LaTeX Plugin の \[設定(P)\] で LaTeX Plugin で使用する Tools の設定ができます．<br>
-Tools の項目の LaTeX → PDF を選択して \[プロパティ(P)\] をクリックします．<br>
+gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．
+
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．
+
+LaTeX Plugin の \[設定(P)\] で LaTeX Plugin で使用する Tools の設定ができます．
+
+Tools の項目の LaTeX → PDF を選択して \[プロパティ(P)\] をクリックします．
 
 LaTeX → PDF はデフォルトでは
 
@@ -111,8 +115,9 @@ rubber --inplace --maxerr -1 --short --force --warn all --pdf "$filename"
 gvfs-open "$shortname.pdf"
 ```
 
-に設定されています．<br>
-これらを \[削除(R)\] して<br>
+に設定されています．
+
+これらを \[削除(R)\] して
 
 [ptex2pdf](/ptex2pdf/) を使用する場合は
 
@@ -126,102 +131,54 @@ Latexmk を使用する場合は
 latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
-を \[追加(A)\] して設定します．<br>
+を \[追加(A)\] して設定します．
+
 出力した PDF ファイルを表示するようにしたい場合は
 
 ```
  evince "$shortname.pdf"
 ```
 
-も \[追加(A)\] してください．<br>
-LaTeX → PDF は \[ツール(T)\]-\[LaTeX → PDF\] で実行できます．<br>
-\[表示(V)\]-\[ボトムパネル(B)\] の \[Tools\] タブをクリックすると Job (処理状況) が表示されます．<br>
-forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．<br>
+も \[追加(A)\] してください．
+
+LaTeX → PDF は \[ツール(T)\]-\[LaTeX → PDF\] で実行できます．
+
+\[表示(V)\]-\[ボトムパネル(B)\] の \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
+
+forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
 ### [gedit-plugins (SyncTeX)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex) {#uc9a113c}
 
 - [https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex)
     <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
 
-- [SyncTeX による検索](http://library.gnome.org/users/evince/stable/synctex-search.html.ja)
+- [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
 
-SyncTeX プラグインは gedit-plugins に収録されています．<br>
-SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．<br>
+SyncTeX プラグインは gedit-plugins に収録されています．
 
-forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．<br>
-inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．<br>
+SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
-gedit のメニューから \[ツール(T)\]-\[Forward Search\] を実行して
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．
 
-```
-TypeError: forward_search_cb() takes exactly 3 arguments (2 given)
-```
+forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．
 
-といったエラーメッセージが出力されたり<br>
-gedit の起動時に<br>
+inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．
 
-```
-Traceback (most recent call last):
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 251, in <lambda>
-    self.window.connect("tab-added", lambda window, tab: self.add_helper(tab.get_view(), window)),
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 276, in add_helper
-    helper = SynctexViewHelper(view, window, self)
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 99, in __init__
-    self.update_location()
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 152, in update_location
-    modeline_output_file = self.get_output_file()
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
-    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
-TypeError: unsupported operand type(s) for +: 'range' and 'range'
-Traceback (most recent call last):
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 112, in on_saved_or_loaded
-    self.update_location()
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 152, in update_location
-    modeline_output_file = self.get_output_file()
-  File "/usr/lib/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
-    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
-TypeError: unsupported operand type(s) for +: 'range' and 'range'
-```
-
-または
-
-```
-Traceback (most recent call last):
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 251, in <lambda>
-    self.window.connect("tab-added", lambda window, tab: self.add_helper(tab.get_view(), window)),
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 276, in add_helper
-    helper = SynctexViewHelper(view, window, self)
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 99, in __init__
-    self.update_location()
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 152, in update_location
-    modeline_output_file = self.get_output_file()
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
-    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
-TypeError: unsupported operand type(s) for +: 'range' and 'range'
-Traceback (most recent call last):
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 112, in on_saved_or_loaded
-    self.update_location()
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 152, in update_location
-    modeline_output_file = self.get_output_file()
-  File "/usr/lib64/gedit/plugins/synctex/synctex.py", line 118, in get_output_file
-    for i in range(min(3,line_count)) + range(max(0,line_count - 3), line_count):
-TypeError: unsupported operand type(s) for +: 'range' and 'range'
-```
-
-といったエラーメッセージが出力されたりする場合は<br>
-/usr/lib/gedit/plugins/synctex/synctex.py または<br>
-/usr/lib64/gedit/plugins/synctex/synctex.py を<br>
-[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば<br>
-forward and inverse search が動作するようになります．<br>
+gedit のメニューから \[ツール(T)\]-\[Forward Search\] を実行してエラーメッセージが出力される場合は
+/usr/lib/gedit/plugins/synctex/synctex.py または
+/usr/lib64/gedit/plugins/synctex/synctex.py を
+[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば
+forward and inverse search が動作するかもしれません．
 
 ### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
 
 - [https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment)
 
-Code comment プラグインは gedit-plugins に収録されています．<br>
-Code comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Code comment にチェックをいれます．<br>
+Code comment プラグインは gedit-plugins に収録されています．
+
+Code comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．
+
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Code comment にチェックをいれます．
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
@@ -229,26 +186,37 @@ Code comment プラグインを使用するとコメントアウト，コメン�
 
 - [https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion](https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion)
 
-Bracket Completion プラグインは gedit-plugins に収録されています．<br>
-Bracket Completion プラグインを使用すると閉じかっこを自動的に追加してくれます．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Bracket Completion にチェックをいれます．<br>
+Bracket Completion プラグインは gedit-plugins に収録されています．
+
+Bracket Completion プラグインを使用すると閉じかっこを自動的に追加してくれます．
+
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Bracket Completion にチェックをいれます．
 
 ### コードスニペット {#t852fd66}
 
-コードスニペットは，よく使用する文字列をすばやく挿入するためのプラグインです．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の コードスニペットにチェックをいれます．<br>
-\[ツール(T)\]-\[スニペットの管理...\] からコードスニペットの設定ができます．<br>
+コードスニペットは，よく使用する文字列をすばやく挿入するためのプラグインです．
+
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の コードスニペットにチェックをいれます．
+
+\[ツール(T)\]-\[スニペットの管理...\] からコードスニペットの設定ができます．
 
 ### 外部ツール {#qa44ee46}
 
-外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．<br>
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の 外部ツールにチェックをいれます．<br>
-\[ツール(T)\]-\[外部ツールの管理...\] から外部ツールの設定ができます．<br>
-ツール(T): で \[＋\] をクリックするとツールが追加できます．<br>
-編集(E): の項目にシェルスクリプトを追加します．<br>
-適用範囲(A): で All Languages から LaTeX に変更します．<br>
-\[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．<br>
-\[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．<br>
+外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．
+
+\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の 外部ツールにチェックをいれます．
+
+\[ツール(T)\]-\[外部ツールの管理...\] から外部ツールの設定ができます．
+
+ツール(T): で \[＋\] をクリックするとツールが追加できます．
+
+編集(E): の項目にシェルスクリプトを追加します．
+
+適用範囲(A): で All Languages から LaTeX に変更します．
+
+\[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．
+
+\[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．
 
 #### pdfupLaTeX {#x4f1ba2c}
 
@@ -508,7 +476,7 @@ synctex view -i $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" -o "
 
 #### fwdevince {#s41c2ddc}
 
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
+fwdevince は Evince/fwdevince の fwdevince を使用します．
 
 ***
 
