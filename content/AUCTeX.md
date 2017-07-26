@@ -158,7 +158,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-#### 設定 {#g637a7d7}
+#### Windows での設定例 {#g637a7d7}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
@@ -184,12 +184,12 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
 (setq exec-path (append exec-path '("C:\\Program Files\\SumatraPDF")))
 (setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
-(setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
-(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
@@ -198,27 +198,27 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfdvi"
-                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
-                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %t"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX"
-                                     "latexmk -e \"$pdflatex=q/pdflatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
+                                     "latexmk -e \"$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
-                                     "latexmk -e \"$lualatex=q/lualatex -cmdx %%O %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
+                                     "latexmk -e \"$lualatex=q/lualatex -cmdx %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaJITLaTeX"
-                                     "latexmk -e \"$lualatex=q/luajitlatex -cmdx %%O %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
+                                     "latexmk -e \"$lualatex=q/luajitlatex -cmdx %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-XeLaTeX"
-                                     "latexmk -e \"$xelatex=q/xelatex %%O %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdfxe %t"
+                                     "latexmk -e \"$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
@@ -231,11 +231,11 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXworks"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("TeXstudio"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXstudio"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox"
                                      "powershell -Command \"& {$r = Write-Output %o;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$o)}\""
@@ -243,16 +243,21 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                       (add-to-list 'TeX-command-list
                                    '("Chrome"
                                      "powershell -Command \"& {$r = Write-Output %s.pdf;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$o)}\""
-                                     TeX-run-discard-or-function t t :help "Run Chrome PDF Viewer"))
+                                     TeX-run-discard-or-function t t :help "Run Google Chrome"))
                       (add-to-list 'TeX-command-list
-                                   '("pdfopen"
-                                     "tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %s.pdf && pdfclose --r15 --file %s.pdf & synctex view -i \"%n:0:%b\" -o %s.pdf -x \"pdfopen --r15 --file %%{output} --page %%{page+1}\""
-                                     TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
+                                   '("Edge"
+                                     "powershell -Command \"& {Get-Process -Name MicrosoftEdgeCP 2>$null;if($?){for($i=0;$i -lt 3;$i++){Stop-Process -Name MicrosoftEdgeCP;Start-Sleep -Seconds 1}};Start-Process shell:AppsFolder\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge (Get-Item \"\"\"%s.pdf\"\"\").FullName}\""
+                                     TeX-run-discard-or-function t t :help "Run Microsoft Edge"))
+                      (add-to-list 'TeX-command-list
+                                   '("acroread"
+                                     "powershell -Command \"& {Get-Process -Name AcroRd32 2>$null;if($?){Stop-Process -Name AcroRd32};Start-Process synctex -ArgumentList ('view', '-i', '\"\"\"%n:0:%b\"\"\"', '-o', '\"\"\"%s.pdf\"\"\"', '-x', '\"\"\"rundll32 shell32,ShellExec_RunDLL AcroRd32 /A ''page=%%{page+1}'' ''%%{output}''\"\"\"')}\""
+                                     TeX-run-discard-or-function t t :help "Forward search with Adobe Acrobat Reader DC")))))
 
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -274,7 +279,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
-> <tr><td>pdfopen</td><td>C-c C-c pdfopen RET</td><td>Adobe Acrobat Reader DC で forward search or print PDF</td></tr>
+> <tr><td>Edge</td><td>C-c C-c edge RET</td><td>Edge でプレビュー</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search or print PDF</td></tr>
 > </tbody>
 > </table>
 >
@@ -294,7 +300,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-#### 設定 {#n55816de}
+#### macOS での設定例 {#n55816de}
 
 動作未確認です．
 
@@ -320,12 +326,12 @@ C-x C-f ~/
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "displayline")))
-(setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
-(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
@@ -334,27 +340,27 @@ C-x C-f ~/
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfdvi"
-                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
-                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
+                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                     "/Library/TeX/texbin/latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaJITLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-XeLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$xelatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
+                                     "/Library/TeX/texbin/latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("displayline"
@@ -392,7 +398,8 @@ C-x C-f ~/
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -432,7 +439,7 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-#### 設定 {#p2d711b9}
+#### Linux での設定例 {#p2d711b9}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
@@ -452,12 +459,12 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "Evince")))
-(setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
-(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
                       (add-to-list 'TeX-command-list
@@ -466,27 +473,27 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfdvi"
-                                     "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
-                                     "latexmk -e '$latex=q/uplatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
+                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX"
-                                     "latexmk -e '$pdflatex=q/pdflatex %%O %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                     "latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
-                                     "latexmk -e '$lualatex=q/lualatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaJITLaTeX"
-                                     "latexmk -e '$lualatex=q/luajitlatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-XeLaTeX"
-                                     "latexmk -e '$xelatex=q/xelatex %%O %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
+                                     "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("xdg-open"
@@ -508,7 +515,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                       (add-to-list 'TeX-command-list
                                    '("zathura"
                                      "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward \"%n:0:%b\" %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Forward search with zathura"))
+                                     TeX-run-discard-or-function t t :help "Forward and inverse search with zathura"))
                       (add-to-list 'TeX-command-list
                                    '("qpdfview"
                                      "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
@@ -516,11 +523,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXworks"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("TeXstudio"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXstudio"))
                       (add-to-list 'TeX-command-list
                                    '("MuPDF"
                                      "mupdf %s.pdf"
@@ -537,7 +544,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+(with-eval-after-load 'tex-jp
+  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -557,7 +565,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
 > <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
-> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward search</td></tr>
+> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
 > <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
@@ -989,7 +997,7 @@ AUCTeX とは関係ありませんが，先頭に
     - [AUCTeX で PDF をコマンド一つで生成する．](http://qiita.com/items/cbc813028d7f5951b165)
     - [https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk](https://github.com/milkypostman/melpa/blob/master/recipes/auctex-latexmk)
     - [http://melpa.milkbox.net/#/auctex-latexmk](http://melpa.milkbox.net/#/auctex-latexmk)
-- [AUCTeX の設定](https://github.com/uwabami/emacs/blob/master/config/auctex_config.org)
+- [Emacs の設定#AUCTeX](https://github.com/uwabami/emacs#auctex)
 - [emacsにauctex （texlive 2012）](http://miyazakikenji.wordpress.com/2013/06/02/emacs%E3%81%ABauctex-%EF%BC%88texlive-2012%EF%BC%89/)
 - [auctex-lua.el](https://github.com/vermiculus/auctex-lua) Lua editing utilities for AUCTeX
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) (X)Emacs frontend to forward search with SumatraPDF
