@@ -102,11 +102,11 @@ Windows, macOS, Linux
 
 gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の LaTeX Plugin にチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の LaTeX Plugin にチェックをいれます．
 
-LaTeX Plugin の \[設定(P)\] で LaTeX Plugin で使用する Tools の設定ができます．
+LaTeX Plugin の \[設定\] で LaTeX Plugin で使用する Tools の設定ができます．
 
-Tools の項目の LaTeX → PDF を選択して \[プロパティ(P)\] をクリックします．
+Tools の項目の LaTeX → PDF を選択して \[プロパティ\] をクリックします．
 
 LaTeX → PDF はデフォルトでは
 
@@ -117,7 +117,7 @@ gvfs-open "$shortname.pdf"
 
 に設定されています．
 
-これらを \[削除(R)\] して
+これらを \[削除\] して
 
 [ptex2pdf](/ptex2pdf/) を使用する場合は
 
@@ -131,7 +131,7 @@ Latexmk を使用する場合は
 latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
-を \[追加(A)\] して設定します．
+を \[追加\] して設定します．
 
 出力した PDF ファイルを表示するようにしたい場合は
 
@@ -139,11 +139,11 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
  evince "$shortname.pdf"
 ```
 
-も \[追加(A)\] してください．
+も \[追加\] してください．
 
-LaTeX → PDF は \[ツール(T)\]-\[LaTeX → PDF\] で実行できます．
+LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX → PDF\] で実行できます．
 
-\[表示(V)\]-\[ボトムパネル(B)\] の \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
+\[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
 
 forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
@@ -158,27 +158,27 @@ SyncTeX プラグインは gedit-plugins に収録されています．
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の SyncTeX にチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の SyncTeX にチェックをいれます．
 
-forward search は gedit で Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．
+forward search は gedit で \[☰\] &gt; \[ツール\] &gt; \[Forward Search\] または Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．
 
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．
 
-gedit のメニューから \[ツール(T)\]-\[Forward Search\] を実行してエラーメッセージが出力される場合は
+エラーメッセージが表示される場合は
 /usr/lib/gedit/plugins/synctex/synctex.py または
 /usr/lib64/gedit/plugins/synctex/synctex.py を
 [最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば
 forward and inverse search が動作するかもしれません．
 
-### [gedit-plugins (Code comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
+### [gedit-plugins (Code Comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
 
 - [https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment)
 
-Code comment プラグインは gedit-plugins に収録されています．
+Code Comment プラグインは gedit-plugins に収録されています．
 
-Code comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．
+Code Comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Code comment にチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の Code Comment にチェックをいれます．
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
@@ -190,33 +190,33 @@ Bracket Completion プラグインは gedit-plugins に収録されています�
 
 Bracket Completion プラグインを使用すると閉じかっこを自動的に追加してくれます．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の Bracket Completion にチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の Bracket Completion にチェックをいれます．
 
 ### コードスニペット {#t852fd66}
 
 コードスニペットは，よく使用する文字列をすばやく挿入するためのプラグインです．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の コードスニペットにチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の コードスニペットにチェックをいれます．
 
-\[ツール(T)\]-\[スニペットの管理...\] からコードスニペットの設定ができます．
+\[テキストエディター\] &gt; \[スニペットの管理...\] からコードスニペットの設定ができます．
 
 ### 外部ツール {#qa44ee46}
 
 外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．
 
-\[編集(E)\]-\[設定(E)\]-\[プラグイン\] の 外部ツールにチェックをいれます．
+\[テキストエディター\] &gt; \[設定\] &gt; \[プラグイン\] の 外部ツールにチェックをいれます．
 
-\[ツール(T)\]-\[外部ツールの管理...\] から外部ツールの設定ができます．
+\[テキストエディター\] &gt; \[外部ツールの管理...\] から外部ツールの設定ができます．
 
-ツール(T): で \[＋\] をクリックするとツールが追加できます．
+\[＋\] をクリックするとツールが追加できます．
 
-編集(E): の項目にシェルスクリプトを追加します．
+#!/bin/sh が記述されている編集画面にシェルスクリプトを追加します．
 
-適用範囲(A): で All Languages から LaTeX に変更します．
+適用範囲はデフォルトでは All Languages に指定されているので LaTeX に変更します．
 
-\[ツール(T)\]-\[外部ツール\] から設定した外部ツールを実行できます．
+\[☰\] &gt; \[ツール\] &gt; \[外部ツール\] から設定した外部ツールを実行できます．
 
-\[表示(V)\]-\[ボトムパネル(B)\] の \[Shell Output\] タブをクリックすると処理状況が表示されます．
+\[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tool Output\] タブをクリックすると処理状況が表示されます．
 
 #### pdfupLaTeX {#x4f1ba2c}
 
