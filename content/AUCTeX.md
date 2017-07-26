@@ -312,8 +312,8 @@ C-x C-f ~/
 ;;
 ;; PATH
 ;;
-(setenv "PATH"
-        (concat (getenv "PATH") ":/Library/TeX/texbin"))
+(setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:/Applications/Skim.app/Contents/SharedSupport:$PATH" t)
+(setq exec-path (append '("/usr/local/bin" "/Library/TeX/texbin" "/Applications/Skim.app/Contents/SharedSupport") exec-path))
 
 ;;
 ;; AUCTeX
@@ -336,31 +336,31 @@ C-x C-f ~/
           (function (lambda ()
                       (add-to-list 'TeX-command-list
                                    '("Latexmk"
-                                     "/Library/TeX/texbin/latexmk %t"
+                                     "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfdvi"
-                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
-                                     "/Library/TeX/texbin/latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
+                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-pdfLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
+                                     "latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaJITLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
+                                     "latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-XeLaTeX"
-                                     "/Library/TeX/texbin/latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
+                                     "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("displayline"
@@ -368,31 +368,31 @@ C-x C-f ~/
                                      TeX-run-discard-or-function t t :help "Forward search with Skim"))
                       (add-to-list 'TeX-command-list
                                    '("Skim"
-                                     "/usr/bin/open -a Skim.app %s.pdf"
+                                     "open -a Skim %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Skim"))
                       (add-to-list 'TeX-command-list
                                    '("Preview"
-                                     "/usr/bin/open -a Preview.app %s.pdf"
+                                     "open -a Preview %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Preview"))
                       (add-to-list 'TeX-command-list
                                    '("TeXShop"
-                                     "/usr/bin/open -a TeXShop.app %s.pdf"
+                                     "open -a TeXShop %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run TeXShop"))
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
-                                     "/Library/TeX/texbin/synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/TeXworks.app/Contents/MacOS/TeXworks --position=%%{page+1} %%{output}\""
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/TeXworks.app/Contents/MacOS/TeXworks --position=%%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("TeXstudio"
-                                     "/Library/TeX/texbin/synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
+                                     "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
                                      TeX-run-discard-or-function t t :help "Run TeXstudio"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox"
-                                     "/usr/bin/open -a Firefox.app %s.pdf"
+                                     "open -a Firefox %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
                                    '("acroread"
-                                     "/usr/bin/open -a \"Adobe Acrobat Reader DC.app\" %s.pdf"
+                                     "open -a \"Adobe Acrobat Reader DC\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
 ;;
@@ -658,6 +658,7 @@ PDF Viewer を変更する場合は
 > <tr><td>Kill Job</td><td>C-c C-k</td><td>タイプセット処理を中断</td></tr>
 > <tr><td>Next Error</td><td>C-c `</td><td>エラー行にジャンプ</td></tr>
 > <tr><td>Quick View</td><td>C-c C-v</td><td>クイックビュー</td></tr>
+> <tr><td>Compile and view</td><td>C-c C-a</td><td>タイプセットとプレビュー または forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -764,9 +765,11 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 
 次に C-c C-c するとコンパイルできます。
 
-次に C-c C-c すると依存関係を調べて出力ファイルが新しければプレビューします。
+次に C-c C-c すると依存関係を調べて出力ファイルが新しければ dvipdfmx を実行したりプレビューしたりします。
 再度コンパイルしたいのなら l TAB または l SPACE
 と打てば補完されて LaTeX 処理に直ります。
+
+C-c C-a するとタイプセットとプレビューを行います。
 
 ### いろいろな使い方 {#v806ddfa}
 
