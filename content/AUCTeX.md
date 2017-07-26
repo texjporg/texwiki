@@ -173,9 +173,6 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; AUCTeX
 ;;
-(with-eval-after-load 'tex
-  (setq TeX-view-program-list '(("SumatraPDF"
-                                 "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""))))
 (with-eval-after-load 'tex-jp
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
@@ -183,7 +180,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq japanese-LaTeX-default-style "bxjsarticle")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
-(setq TeX-view-program-selection '((output-dvi "SumatraPDF")
+(setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
+(setq exec-path (append exec-path '("C:\\Program Files\\SumatraPDF")))
+(setq TeX-view-program-selection '((output-dvi "dviout")
                                    (output-pdf "SumatraPDF")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
@@ -453,7 +452,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq japanese-LaTeX-default-style "bxjsarticle")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
-(setq TeX-view-program-selection '((output-dvi "Evince")
+(setq TeX-view-program-selection '((output-dvi "xdvi")
                                    (output-pdf "Evince")))
 (setq preview-image-type 'dvipng)
 (setq TeX-source-correlate-method 'synctex)
@@ -584,13 +583,13 @@ Emacs 標準のパッケージ管理システムを使用してインストー�
 AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば次のように記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.90.2")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.91.0")
 (require 'tex-site)
 ```
 
 #### AUCTeX の公式サイトのパッケージからインストールした場合 {#db9dca5d}
 
-AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように記述します．<br>
+AUCTeX を自動ロードする場合は ~/.emacs.d/init.el に次のように記述します．
 
 ```
 (load "auctex.el" nil t t)
@@ -741,20 +740,21 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 
 ### 簡単な使い方 {#n4ccf7ec}
 
-拡張子が tex のファイルを開くと自動的に立ち上がります。<br>
+拡張子が tex のファイルを開くと自動的に立ち上がります。
 
-下の「複数ファイルの文書」にも別の方法を説明しました。<br>
+下の「複数ファイルの文書」にも別の方法を説明しました。
 
 まず C-c C-e すると，\documentclass{...}
 およびトップレベルの環境 \begin{document} ... \end{document}
 が入ります。
 
-次に C-c C-s すると，\section の類のコマンドが入ります。<br>
-コマンド名は補完できます。<br>
+次に C-c C-s すると，\section の類のコマンドが入ります。
+
+コマンド名は補完できます。
 
 次に C-c C-e すると，\begin{...} ... \end{...}
 のような環境が入ります。<br>
-環境名は補完できます。<br>
+環境名は補完できます。
 
 次に C-c C-c するとコンパイルできます。
 
@@ -766,12 +766,14 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 
 ダブルクォート " を打てば，状況に応じて \`\` または '' に変換してくれます。
 
-TAB または SPACE で補完ができます。<br>
-これらが効かないときは ESC TAB で補完します。<br>
-候補一覧が出たら，さらに文字を補って補完するか，
-あるいはマウスの中央のボタンで候補をクリックします。<br>
+TAB または SPACE で補完ができます。
 
-フォント関係のコマンドです。<br>
+これらが効かないときは ESC TAB で補完します。
+
+候補一覧が出たら，さらに文字を補って補完するか，
+あるいはマウスの中央のボタンで候補をクリックします。
+
+フォント関係のコマンドです。
 
 > <table>
 > <tbody>
@@ -833,7 +835,7 @@ AUCTeX Clean ターゲット機能
 %%% End:
 ```
 
-こういったものを自動で入れたい場合は，Emacs の設定ファイルに次のように書いておきます（私は書いていません）。<br>
+こういったものを自動で入れたい場合は，Emacs の設定ファイルに次のように書いておきます（私は書いていません）。
 
 ```
 (setq TeX-auto-save t)
@@ -847,52 +849,75 @@ AUCTeX Clean ターゲット機能
 Master file: (default this file)
 ```
 
-と聞いてきますので，自分自身がマスターファイルなら単に Enter を押します。<br>
-キャンセルは C-g です。<br>
+と聞いてきますので，自分自身がマスターファイルなら単に Enter を押します。
+
+キャンセルは C-g です。
 
 ## SumatraPDF との連携 (forward and inverse search) {#h60fef7c}
 
-forward search は [AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7) を参照してください．<br>
-C-c C-c sumatrapdf または C-c C-c fwdsumatrapdf で forward search ができます．<br>
+forward search は [AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7) を参照してください．
 
-inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．<br>
-[Emacs AUCTeX and PDF Synchronization on Windows](http://www.barik.net/archive/2012/07/18/154432/) も参考になります．<br>
+C-c C-c sumatrapdf または C-c C-c fwdsumatrapdf で forward search ができます．
+
+AUCTeX は SumatraPDF の forward search に対応しています．
+
+環境変数 Path と変数 exec-path に SumatraPDF のコマンドパスを追加します．
+
+```
+
+```
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている SumatraPDF を指定します．
+
+```
+(setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
+(setq exec-path (append exec-path '("C:\\Program Files\\SumatraPDF")))
+(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
+```
+
+inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
+
+[Emacs AUCTeX and PDF Synchronization on Windows](http://www.barik.net/archive/2012/07/18/154432/) も参考になります．
 
 ## Skim との連携 (forward and inverse search) {#v5bdbf9d}
 
-forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) を参照してください．<br>
-C-c C-c displayline で forward search ができます．<br>
+forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) を参照してください．
 
-AUCTeX は Skim の forward search に対応しています．<br>
-TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている displayline を指定します．<br>
+C-c C-c displayline で forward search ができます．
+
+AUCTeX は Skim の forward search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている displayline を指定します．
 
 ```
 (setq TeX-view-program-selection '((output-pdf "displayline")))
 ```
 
-C-c C-c view で View command: に displayline のコマンドが表示され forward search が実行できます．<br>
+C-c C-c view で View command: に displayline のコマンドが表示され forward search が実行できます．
 
-inverse search は [Emacs](/Emacs/#e9c08b3d) を参照してください．<br>
+inverse search は [Emacs](/Emacs/#e9c08b3d) を参照してください．
 
-[AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) も参考になります．<br>
+[AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) も参考になります．
 
 ## Evince との連携 (forward and inverse search) {#l4ab70a6}
 
-forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．<br>
-C-c C-c fwdevince で forward search ができます．<br>
+forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
 
-AUCTeX は Evince の forward and inverse search に対応しています．<br>
-TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Evince を指定します．<br>
+C-c C-c fwdevince で forward search ができます．
+
+AUCTeX は Evince の forward and inverse search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Evince を指定します．
 
 ```
 (setq TeX-view-program-selection '((output-pdf "Evince")))
 ```
 
-C-c C-c view で View command: に TeX-evince-sync-view が表示され forward search が実行できます．<br>
+C-c C-c view で View command: に TeX-evince-sync-view が表示され forward search が実行できます．
 
-TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．<br>
+TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
 
-以下のページも参考になります．<br>
+以下のページも参考になります．
 
 - [Make AUCTeX do forward and inverse search with SyncTeX and Evince](https://gist.github.com/2297447)
 - [Debian wheezy の TeX 統合環境で SyncTeX を試してみる](http://skalldan.wordpress.com/2011/10/07/tex-%E7%B5%B1%E5%90%88%E7%92%B0%E5%A2%83%E3%81%A7-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
@@ -902,19 +927,21 @@ TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリック�
 
 ## Okular との連携 (forward and inverse search) {#d95e95ee}
 
-forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．<br>
-C-c C-c okular で forward search ができます．<br>
+forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
 
-AUCTeX は Okular の forward search に対応しています．<br>
-TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Okular を指定します．<br>
+C-c C-c okular で forward search ができます．
+
+AUCTeX は Okular の forward search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Okular を指定します．
 
 ```
 (setq TeX-view-program-selection '((output-pdf "Okular")))
 ```
 
-C-c C-c view で View command: に Okular のコマンドが表示され forward search が実行できます．<br>
+C-c C-c view で View command: に Okular のコマンドが表示され forward search が実行できます．
 
-inverse search は [Emacs](/Emacs/#z0944532) を参照してください．<br>
+inverse search は [Emacs](/Emacs/#z0944532) を参照してください．
 
 ## その他 {#w8f257bd}
 
