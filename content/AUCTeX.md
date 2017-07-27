@@ -907,9 +907,13 @@ C-c C-c displayline で forward search ができます．
 
 AUCTeX は Skim の forward search に対応しています．
 
+環境変数 Path と変数 exec-path に displayline のコマンド検索パスを追加します．
+
 TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている displayline を指定します．
 
 ```
+(setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:/Applications/Skim.app/Contents/SharedSupport:$PATH" t)
+(setq exec-path (append '("/usr/local/bin" "/Library/TeX/texbin" "/Applications/Skim.app/Contents/SharedSupport") exec-path))
 (setq TeX-view-program-selection '((output-pdf "displayline")))
 ```
 
