@@ -58,6 +58,23 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - Adobe Acrobat DC
     - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
 
+### Linux {#s5dbb0cf}
+
+```
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1700920044/AcroRdrDC1700920044_ja_JP.exe
+wine AcroRdrDC1700920044_ja_JP.exe
+cd ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AC0F074E4100\}
+msiexec /i AcroRead.msi
+```
+
+Linux で Adobe Acrobat Reader DC を起動するには
+
+```
+wine cmd /c start AcroRd32.exe file.pdf
+```
+
+のように実行します。
+
 ### Android {#k545c7f3}
 
 - [Adobe Acrobat DC – PDF Reader - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
@@ -251,7 +268,7 @@ synctex help edit
 - [VOLE - A Neat C++ COM/Automation Driver](http://vole.sourceforge.net/)
 - [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
 - [Acrobat SDK をダウンロードする](http://atamoco.boy.jp/vbcs/windows.app/adobe-pdf/sdk-download.php)
-- \[[VB / C#\] PDF ファイルをフォーム上に表示する](http://atamoco.boy.jp/vbcs/windows.app/adobe-pdf/display.php)
+- \[[ VB.NET / C# \] PDF ファイルをフォーム上に表示して印刷する](http://hensa40.cutegirl.jp/archives/1189)
 - [WindowsフォームでPDFを扱う](http://wiki.livedoor.jp/kabamaro/d/Windows%A5%D5%A5%A9%A1%BC%A5%E0%A4%C7PDF%A4%F2%B0%B7%A4%A6)
 - [.NET製Winフォーム上にPDFを表示する](http://d.hatena.ne.jp/foohogehoge/20091222/1261454425)
 - [Not able to instantiate PDF browser control from AcroPDF.dll using COM and .NET interop](http://stackoverflow.com/questions/2702164/not-able-to-instantiate-pdf-browser-control-from-acropdf-dll-using-com-and-net)
