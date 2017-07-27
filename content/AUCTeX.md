@@ -225,9 +225,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
-                                   '("fwdsumatrapdf"
+                                   '("Fwdsumatrapdf"
                                      "fwdsumatrapdf %s.pdf \"%b\" %n"
-                                     TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
+                                     TeX-run-discard-or-function t t :help "Forward search with fwdsumatrapdf"))
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"texworks --position=%%{page+1} %%{output}\""
@@ -249,7 +249,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "powershell -Command \"& {Get-Process -Name MicrosoftEdgeCP 2>$null;if($?){for($i=0;$i -lt 3;$i++){Stop-Process -Name MicrosoftEdgeCP;Start-Sleep -Seconds 1}};Start-Process shell:AppsFolder\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge (Get-Item \"\"\"%s.pdf\"\"\").FullName}\""
                                      TeX-run-discard-or-function t t :help "Run Microsoft Edge"))
                       (add-to-list 'TeX-command-list
-                                   '("acroread"
+                                   '("AcroRead"
                                      "powershell -Command \"& {Get-Process -Name AcroRd32 2>$null;if($?){Stop-Process -Name AcroRd32};Start-Process synctex -ArgumentList ('view', '-i', '\"\"\"%n:0:%b\"\"\"', '-o', '\"\"\"%s.pdf\"\"\"', '-x', '\"\"\"rundll32 shell32,ShellExec_RunDLL AcroRd32 /A ''page=%%{page+1}'' ''%%{output}''\"\"\"')}\""
                                      TeX-run-discard-or-function t t :help "Forward search with Adobe Acrobat Reader DC")))))
 
@@ -274,13 +274,13 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>SumatraPDF で forward search</td></tr>
-> <tr><td>fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
+> <tr><td>Fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
 > <tr><td>Edge</td><td>C-c C-c edge RET</td><td>Edge でプレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search</td></tr>
+> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -363,7 +363,7 @@ C-x C-f ~/
                                      "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("displayline"
+                                   '("Displayline"
                                      "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
                                      TeX-run-discard-or-function t t :help "Forward search with displayline"))
                       (add-to-list 'TeX-command-list
@@ -391,7 +391,7 @@ C-x C-f ~/
                                      "open -a Firefox %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
-                                   '("acroread"
+                                   '("AcroRead"
                                      "open -a \"Adobe Acrobat Reader DC\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
@@ -415,14 +415,14 @@ C-x C-f ~/
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
+> <tr><td>Displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
 > <tr><td>Skim</td><td>C-c C-c skim RET</td><td>Skim でプレビュー</td></tr>
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>Preview でプレビュー</td></tr>
 > <tr><td>TeXShop</td><td>C-c C-c texshop RET</td><td>TeXShop でプレビュー</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
+> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -496,7 +496,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("xdg-open"
+                                   '("Xdg-open"
                                      "xdg-open %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run xdg-open"))
                       (add-to-list 'TeX-command-list
@@ -505,19 +505,19 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "TeX-evince-sync-view"
                                      TeX-run-discard-or-function t t :help "Forward search with Evince"))
                       (add-to-list 'TeX-command-list
-                                   '("fwdevince"
+                                   '("Fwdevince"
                                      "fwdevince %s.pdf %n \"%b\""
-                                     TeX-run-discard-or-function t t :help "Forward search with Evince"))
+                                     TeX-run-discard-or-function t t :help "Forward search with fwdevince"))
                       (add-to-list 'TeX-command-list
                                    '("Okular"
                                      "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
                       (add-to-list 'TeX-command-list
-                                   '("zathura"
+                                   '("Zathura"
                                      "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward \"%n:0:%b\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Forward and inverse search with zathura"))
                       (add-to-list 'TeX-command-list
-                                   '("qpdfview"
+                                   '("Qpdfview"
                                      "qpdfview --unique \"\"%s.pdf\"#src:%b:%n:0\""
                                      TeX-run-discard-or-function t t :help "Forward search with qpdfview"))
                       (add-to-list 'TeX-command-list
@@ -541,7 +541,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "chromium --new-window %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Chromium"))
                       (add-to-list 'TeX-command-list
-                                   '("acroread"
+                                   '("AcroRead"
                                      "wine cmd /c start AcroRd32.exe %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
@@ -565,18 +565,18 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
 > <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
-> <tr><td>xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
+> <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
-> <tr><td>fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
+> <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
-> <tr><td>zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
-> <tr><td>qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
+> <tr><td>Zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
+> <tr><td>Qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>MuPDF でプレビュー</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>Chromium でプレビュー</td></tr>
-> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
+> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
