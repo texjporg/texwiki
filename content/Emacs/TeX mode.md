@@ -111,7 +111,7 @@ C-x C-f ~/
   (if (tex-shell-running)
       (tex-kill-job)
     (tex-start-shell))
-  (tex-send-command "pdfopen --r15 --file" (tex-append tex-print-file ".pdf")))
+  (tex-send-command "rundll32 shell32,ShellExec_RunDLL AcroRd32" (tex-append tex-print-file ".pdf")))
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
         ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.exe %r.ps" "%f" "%r.pdf")
@@ -137,7 +137,7 @@ C-x C-f ~/
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
-        ("pdfopen --r15 --file %r.pdf" "%r.pdf")))
+        ("rundll32 shell32,ShellExec_RunDLL AcroRd32 %r.pdf" "%r.pdf")))
 ```
 
 ```
