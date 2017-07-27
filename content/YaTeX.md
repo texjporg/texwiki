@@ -202,7 +202,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process pdfopen -ArgumentList ('--r15','--file',$p)}\"")
+(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process AcroRd32 -ArgumentList ($p)}\"")
 ```
 
 ```
@@ -670,7 +670,7 @@ M-x describe-variable RET tex-command RET
 ```
 %% -*- coding: utf-8-unix -*-
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
-% #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && pdfopen --r15 --file hogehoge.pdf && pdfclose --r15 --file hogehoge.pdf & ptex2pdf -u -l hogehoge && pdfopen --r15 --file hogehoge.pdf
+% #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe & ptex2pdf -u -l hogehoge && start AcroRd32 hogehoge.pdf
 %#BIBTEX upbibtex hogehoge
 %#MAKEINDEX upmendex hogehoge
 %#LPR if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
@@ -927,19 +927,19 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 #### Preview {#j3fea9fe}
 
 ```
-(setq dvi2-command "/usr/bin/open -a Preview")
+(setq dvi2-command "open -a Preview")
 ```
 
 #### Skim {#vb4cc051}
 
 ```
-(setq dvi2-command "/usr/bin/open -a Skim")
+(setq dvi2-command "open -a Skim")
 ```
 
 #### TeXShop {#w3687acc}
 
 ```
-(setq dvi2-command "/usr/bin/open -a TeXShop")
+(setq dvi2-command "open -a TeXShop")
 ```
 
 #### Evince {#k6ed9ab5}
@@ -1015,19 +1015,19 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 #### Preview {#u986e521}
 
 ```
-(setq tex-pdfview-command "/usr/bin/open -a Preview")
+(setq tex-pdfview-command "open -a Preview")
 ```
 
 #### Skim {#c9ac9d17}
 
 ```
-(setq tex-pdfview-command "/usr/bin/open -a Skim")
+(setq tex-pdfview-command "open -a Skim")
 ```
 
 #### TeXShop {#g2f83bb4}
 
 ```
-(setq tex-pdfview-command "/usr/bin/open -a TeXShop")
+(setq tex-pdfview-command "open -a TeXShop")
 ```
 
 #### Evince {#j390cbe8}
@@ -1056,7 +1056,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
 
-YaTeX 1.78 以降は YaTeX-use-AMS-LaTeX が t になりました．
+デフォルトでは YaTeX-use-AMS-LaTeX の値は t です．
 AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設定してみてください．(参照 [その1](https://twitter.com/hiroseyuuji/status/173544126686572544), [その2](https://twitter.com/liquid_amber/status/173975511570194432))
 
 ```
@@ -1217,8 +1217,6 @@ off の場合
 
 #### SumatraPDF を前面に表示したい場合 {#x4a4f83a}
 
-YaTeX 1.78.1 以降は
-
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
@@ -1263,14 +1261,12 @@ forward search は C-c s または M-x sumatrapdf-forward-search RET をタイ�
 
 ### Skim との連携 (forward search) {#f978a43b}
 
-YaTeX 1.78 以降は
-
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq dvi2-command "/usr/bin/open -a Skim")
-(setq tex-pdfview-command "/usr/bin/open -a Skim")
+(setq dvi2-command "open -a Skim")
+(setq tex-pdfview-command "open -a Skim")
 ```
 
 を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．
@@ -1282,7 +1278,7 @@ YaTeX 1.78 以降は
 
 ### Evince との連携 (forward search) {#h118b5e5}
 
-YaTeX 1.78 以降は Evince/fwdevince をインストールして
+Evince/fwdevince をインストールして
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
@@ -1397,8 +1393,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 を設定して C-c C-g を入力すれば zathura で forward seasrch ができます．
 
 ### qpdfview との連携 (forward search) {#c86f086b}
-
-YaTeX 1.78.1 以降は
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
