@@ -365,7 +365,7 @@ C-x C-f ~/
                       (add-to-list 'TeX-command-list
                                    '("displayline"
                                      "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
-                                     TeX-run-discard-or-function t t :help "Forward search with Skim"))
+                                     TeX-run-discard-or-function t t :help "Forward search with displayline"))
                       (add-to-list 'TeX-command-list
                                    '("Skim"
                                      "open -a Skim %s.pdf"
@@ -381,11 +381,11 @@ C-x C-f ~/
                       (add-to-list 'TeX-command-list
                                    '("TeXworks"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/TeXworks.app/Contents/MacOS/TeXworks --position=%%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXworks"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXworks"))
                       (add-to-list 'TeX-command-list
                                    '("TeXstudio"
                                      "synctex view -i \"%n:0:%b\" -o %s.pdf -x \"/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only --page %%{page+1} %%{output}\""
-                                     TeX-run-discard-or-function t t :help "Run TeXstudio"))
+                                     TeX-run-discard-or-function t t :help "Forward search with TeXstudio"))
                       (add-to-list 'TeX-command-list
                                    '("Firefox"
                                      "open -a Firefox %s.pdf"
@@ -539,7 +539,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                       (add-to-list 'TeX-command-list
                                    '("Chromium"
                                      "chromium --new-window %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run Chromium")))))
+                                     TeX-run-discard-or-function t t :help "Run Chromium"))
+                      (add-to-list 'TeX-command-list
+                                   '("acroread"
+                                     "wine cmd /c start AcroRd32.exe %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
 ;;
 ;; RefTeX with AUCTeX
@@ -572,6 +576,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>MuPDF でプレビュー</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>Chromium でプレビュー</td></tr>
+> <tr><td>acroread</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -997,7 +1002,7 @@ AUCTeX とは関係ありませんが，先頭に
 
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [Newest &#39;auctex&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/auctex)
-- [Starter Kit LaTeX](http://www.kieranhealy.org/esk/starter-kit-latex.html)
+- [Windows 10 で TeXLive + Emacs + AUCTeX + SumatraPDF の快適 TeX 環境を構築する](https://mano.xyz/post/2016-09-05-win10-texlive-emacs-auctex-sumatra/)
 - [https://github.com/alexeyr/company-auctex](https://github.com/alexeyr/company-auctex)
 - [http://www.reddit.com/r/emacs/comments/2jng1m/how_to_set_up_forwardinverse_searches_with_auctex/](http://www.reddit.com/r/emacs/comments/2jng1m/how_to_set_up_forwardinverse_searches_with_auctex/)
 - [https://github.com/monsanto/auto-complete-auctex](https://github.com/monsanto/auto-complete-auctex)
