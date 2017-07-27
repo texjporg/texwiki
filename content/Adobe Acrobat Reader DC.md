@@ -13,6 +13,21 @@ Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
+Windows 版の Adobe Acrobat Reader DC
+に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
+
+```
+AcroViewR17
+```
+
+という1行だけを持ち，ファイル名が
+
+```
+pdfddeservername.txt
+```
+
+であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
+
 Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
@@ -171,6 +186,18 @@ Start-Process AcroRd32 'foo.pdf'
 start AcroRd32 "foo.pdf"
 ```
 
+pdfopen.exe を使う場合には
+
+```
+pdfopen --file foo.pdf
+```
+
+あるいは簡単に
+
+```
+pdfopen foo.pdf
+```
+
 ### 起動時に指定したページを表示する {#lc08871d}
 
 3ページ目を表示するには以下のようにします．
@@ -185,6 +212,12 @@ Start-Process AcroRd32 -ArgumentList ('/A', 'page=3', 'foo.pdf')
 
 ```
 start AcroRd32 /A "page=3" "foo.pdf"
+```
+
+pdfopen.exe を使う場合には
+
+```
+pdfopen --file foo.pdf --page 3
 ```
 
 <!-- **PDF ファイルを閉じる [#h619779d] -->
