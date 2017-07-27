@@ -9,18 +9,20 @@ pukiwiki: "Vim/tex.vim"
 
 [Vim](/Vim/) > tex.vim
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## tex.vim → 問題が発生する場合は vimtex または LaTeX Box または [quickrun](/quickrun/) を使用する {#rf521622}
 
 Vim は
 
 - $HOME/vimfiles/after/ftplugin/tex.vim (Windows の場合)
-- $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux の場合)
+- $HOME/.vim/after/ftplugin/tex.vim (macOS, Linux の場合)
 
 に設定を記述することで Vim からタイプセット・プレビューができます．<br>
 
-tex.vim を使用する場合は $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (OS X, Linux) に
+tex.vim を使用する場合は $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (macOS, Linux) に
 
 ***
 
@@ -38,12 +40,12 @@ let g:tex_flavor='latex'
 補完機能が必要な場合は vimtex または LaTeX Box または [neocomplete &amp; neosnippet](/neocomplete/) を使用してください．<br>
 Latexmk を使用する場合は [Latexmk](/Latexmk/) の設定をしてください．<br>
 vimtex または LaTeX Box を使用すると latexmk を使用してバックグラウンドでコンパイルができます．<br>
-tex.vim が動作しない場合は vimtex または LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br> <!-- OS X の場合は [[ftpluginのtex.vim:http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html]] も参考になります．~ -->
+tex.vim が動作しない場合は vimtex または LaTeX Box または [quickrun](/quickrun/) を使用してタイプセットしてください．<br> <!-- macOS の場合は [[ftpluginのtex.vim:http://blog.mountrice.com/2009/10/tex-for-snow-leopard.html]] も参考になります．~ -->
 
 ***
 
 - $HOME/vimfiles/after/ftplugin/tex.vim (Windows の場合)
-- $HOME/.vim/after/ftplugin/tex.vim (OS X, Linux の場合)
+- $HOME/.vim/after/ftplugin/tex.vim (macOS, Linux の場合)
 
 ***
 
@@ -213,7 +215,7 @@ function! PdfupLaTeX(type)
     if has('win32') || has('win64')
       let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal"' . ' "' . masterTeXFile . '"'
       if g:viewer == 'acroread'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . ptex2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . ptex2pdf
@@ -228,7 +230,7 @@ function! PdfupLaTeX(type)
       let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf.exe' . ' "' . masterBaseName . '.ps"'
       if g:viewer == 'acroread'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -270,7 +272,7 @@ function! PdfLaTeX(type)
 
   if has('win32') || has('win64')
     if g:viewer == 'acroread'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . pdflatex
     else
       let execString = 'cd /d ' . masterDir . ' && ' . pdflatex
@@ -302,7 +304,7 @@ function! Latexmk(type)
 
   if has('win32') || has('win64')
     if g:viewer == 'acroread'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && echo exit | pdfdde --r15'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latexmk
     else
       let execString = 'cd /d ' . masterDir . ' && ' . latexmk
@@ -560,7 +562,7 @@ function! AdobeAcrobatReaderDC()
     elseif glob('C:/Program Files (x86)/Adobe/Adobe Reader DC/Reader/AcroRd32.exe') != ''
       let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') . '"'
     else
-      let viewer = 'pdfopen --r15 --file'
+      let viewer = 'rundll32 shell32,ShellExec_RunDLL AcroRd32'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' "' . masterPDFFile . '" | cmd'
   elseif has('macunix')
@@ -618,7 +620,7 @@ noremap <expr> <C-K>v ViewFile()
 > </table>
 >
 
-### OS X の場合 {#v2d90738}
+### macOS の場合 {#v2d90738}
 
 動作未確認です．<br>
 タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
