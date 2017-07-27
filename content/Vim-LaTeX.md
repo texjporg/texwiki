@@ -40,7 +40,9 @@ pukiwiki: "Vim-LaTeX"
 
 ## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#z8e30b5a}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 <div style="clear:both"></div>
 
@@ -193,7 +195,7 @@ let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-in
 "let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
-"let g:Tex_ViewRule_pdf = 'pdfopen --r15 --file'
+"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL AcroRd32'
 ```
 
 ***
