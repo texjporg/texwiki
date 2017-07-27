@@ -185,8 +185,8 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 ### forward search {#p2255022}
 
 - [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
-- [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Evince との連携 (forward and inverse search)](/AUCTeX/#l4ab70a6)
-- [YaTeX#インストール#Linux#設定](/YaTeX/#nec42ee2), [YaTeX#Evince との連携 (forward search)](/YaTeX/#h118b5e5)
+- [AUCTeX#Evince との連携 (forward and inverse search)](/AUCTeX/#l4ab70a6)
+- [YaTeX#Evince との連携 (forward search)](/YaTeX/#h118b5e5)
 
 を参照してください．
 
@@ -255,7 +255,7 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 ### forward search {#maa4da39}
 
 - [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
-- [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9), [AUCTeX#Okular との連携 (forward and inverse search)](/AUCTeX/#d95e95ee)
+- [AUCTeX#Okular との連携 (forward and inverse search)](/AUCTeX/#d95e95ee)
 - [YaTeX#Okular との連携 (forward search)](/YaTeX/#o8772291)
 
 を参照してください．
@@ -281,7 +281,7 @@ Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 ### forward search {#xc3a349c}
 
 - [TeX mode#Linux](</Emacs/TeX mode/#q1bd16f3>)
-- [AUCTeX#Linux#設定](/AUCTeX/#p2d711b9)
+- [AUCTeX#zathura との連携 (forward and inverse search)](/AUCTeX/#nf2a372b)
 - [YaTeX#zathura との連携 (forward and inverse search)](/YaTeX/#j4034f6b)
 
 を参照してください．
