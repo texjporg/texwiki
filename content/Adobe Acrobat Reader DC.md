@@ -13,21 +13,6 @@ Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Windows 版の Adobe Acrobat Reader DC
-に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
-
-```
-AcroViewR17
-```
-
-という1行だけを持ち，ファイル名が
-
-```
-pdfddeservername.txt
-```
-
-であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
-
 Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
@@ -172,6 +157,52 @@ wine cmd /c start AcroRd32.exe file.pdf
     <!-- -[[pdfopen and pdfclose:http://magic.aladdin.cs.cmu.edu/2005/07/15/pdfopen-and-pdfclose/]] -->
     <!-- -[[Man page acroread:http://www.dsm.fordham.edu/cgi-bin/man-cgi.pl?topic=acroread]] -->
 
+### pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合の注意点 {#lff102b3}
+
+TeX Live と W32TeX には Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
+pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。
+pdfdde.exe の詳細については pdfdde.c を参照してください。
+
+[https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c)
+
+Windows 版の Adobe Acrobat Reader DC バージョン 2017
+に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
+
+```
+AcroViewR17
+```
+
+という1行だけを持ち，ファイル名が
+
+```
+pdfddeservername.txt
+```
+
+であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
+
+AcroViewR17 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+
+> Cannot contact a server.
+
+というエラーが発生して PDF ファイルが開けません。
+
+また Windows 10 で PDF ファイルが Microsoft Edge や SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けされている場合はエラーが発生します。
+
+Microsoft Edge に関連付けされている場合は
+
+> Cannot execute command "\[DocOpen("%s")\]" (error 16390)
+
+SumatraPDF に関連付けされている場合は
+
+> Cannot contact a server.
+
+というエラーが発生して PDF ファイルが開けないので pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合は
+PDF ファイルは Adobe Acrobat Reader DC に関連付けしておいてください。
+
+pdfopen で PDF ファイルを開くのに （AcroRd32.exe で直接開く場合と比べて）時間がかかったり
+PDF ファイルを SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けしたい場合は
+pdfopen.exe, pdfclose.exe, pdfdde.exe を使用せずに AcroRd32.exe を直接使用してください。
+
 ### PDF ファイルを開く {#id6d0918}
 
 Windows PowerShell の場合は
@@ -186,7 +217,7 @@ Start-Process AcroRd32 'foo.pdf'
 start AcroRd32 "foo.pdf"
 ```
 
-pdfopen.exe を使う場合には
+pdfopen.exe を使う場合は
 
 ```
 pdfopen --file foo.pdf
@@ -214,15 +245,27 @@ Start-Process AcroRd32 -ArgumentList ('/A', 'page=3', 'foo.pdf')
 start AcroRd32 /A "page=3" "foo.pdf"
 ```
 
-pdfopen.exe を使う場合には
+pdfopen.exe を使う場合は
 
 ```
 pdfopen --file foo.pdf --page 3
 ```
 
-<!-- **PDF ファイルを閉じる [#h619779d] -->
-<!--  -->
-<!-- pdfopen - -file "foo.pdf" && pdfclose - -file "foo.pdf" -->
+### PDF ファイルを開いて閉じる {#h619779d}
+
+pdfclose.exe を使用する場合は事前に pdfopen.exe でファイルを開いておく必要があります。
+
+Windows PowerShell で pdfopen.exe と pdfclose.exe を使う場合は
+
+```
+pdfopen --file foo.pdf;if($?){pdfclose --file foo.pdf}
+```
+
+コマンド プロンプトで pdfopen.exe と pdfclose.exe を使う場合は
+
+```
+pdfopen --file foo.pdf && pdfclose --file foo.pdf
+```
 
 ### Adobe Acrobat Reader DC を終了する {#pb5aeda1}
 
@@ -236,6 +279,12 @@ Stop-Process -Name AcroRd32
 
 ```
 taskkill /IM AcroRd32.exe
+```
+
+pdfdde.exe を使う場合は
+
+```
+echo exit | pdfdde
 ```
 
 ## SyncTeX {#s533a23f}
