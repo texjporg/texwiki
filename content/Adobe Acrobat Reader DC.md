@@ -160,7 +160,21 @@ wine cmd /c start AcroRd32.exe file.pdf
 ### pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合の注意点 {#lff102b3}
 
 TeX Live（win32 版）と W32TeX には Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
-pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。
+pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。これらは，Adobe による
+PDF Reader がファイルをロックするので，この状況を少しでも改善するために作成された
+ものです。つまり，
+
+```
+pdfopen --file foo.pdf
+```
+
+によって PDF ファイルをプレビューし，ソースを編集する前に
+
+```
+pdfclose --file foo.pdf
+```
+
+によって PDF ファイルをクローズするわけです。
 pdfdde.exe の詳細については pdfdde.c を参照してください。
 
 [https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c)
