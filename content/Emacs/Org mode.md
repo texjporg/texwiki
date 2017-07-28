@@ -80,35 +80,21 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-default-class "bxjsarticle")
-(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %S %D/\" -norc -gg -pdfps %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$pdflatex=q/platex-ng %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdf %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$pdflatex=q/pdflatex %S/\" -e \"$bibtex=q/bibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex -o %D %S/\" -norc -gg -pdf %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$lualatex=q/lualatex -cmdx %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$lualatex=q/luajitlatex -cmdx %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("tasklist /fi \"IMAGENAME eq AcroRd32.exe\" /nh | findstr \"AcroRd32.exe\" > nul && pdfopen --r15 --file %b.pdf && pdfclose --r15 --file %b.pdf & latexmk -e \"$xelatex=q/xelatex %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdfxe %f"))
+(setq org-latex-pdf-process '("latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -e \"$dvips=q/dvips -Ppdf -z -f %S | convbkmk -u > %D/\" -e \"$ps2pdf=q/ps2pdf.exe %S %D/\" -norc -gg -pdfps %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$pdflatex=q/platex-ng %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$pdflatex=q/pdflatex %S/\" -e \"$bibtex=q/bibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/makeindex -o %D %S/\" -norc -gg -pdf %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex -cmdx %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/luajitlatex -cmdx %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$xelatex=q/xelatex %S/\" -e \"$bibtex=q/upbibtex %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdfxe %f"))
 ;(setq org-export-in-background t)
 (if (not (eq org-export-in-background t))
     (setq org-file-apps
-          '(("pdf" . "cmd /c echo powershell -Command \"& {$pages = (pdfinfo %s | Select-String \"^Pages:\"); $page = (-split $pages)[1]; pdfopen --r15 --file %s --page $page}\" | cmd"))))
-```
+          '(("pdf" . "cmd /c start SumatraPDF -reuse-instance %s"))))
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
-               "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-\\else
-  \\ifdefined\\pdfoutput
-    \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\fi
-  \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-  \\fi
-\\fi
+               "\\documentclass[autodetect-engine,dvi=dvipdfmx,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -119,6 +105,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
+      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
@@ -133,12 +120,10 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
-               "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
+               "\\documentclass[autodetect-engine,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -150,12 +135,10 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
-               "\\documentclass[12pt,a4paper]{ltjsarticle}
+               "\\documentclass[11pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -167,9 +150,53 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article"
+               "\\documentclass[11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article-tate"
+               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 ```
 
-### OS X {#a97921ad}
+### macOS {#a97921ad}
 
 動作未確認です．
 
@@ -189,25 +216,11 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 ;(setq org-latex-pdf-process '("/Library/TeX/texbin/latexmk -e '$xelatex=q/xelatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -norc -gg -pdfxe %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
-      '(("pdf" . "/usr/bin/open -a Preview.app %s")))
-```
+      '(("pdf" . "open -a Skim %s")))
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
-               "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-\\else
-  \\ifdefined\\pdfoutput
-    \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\fi
-  \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-  \\fi
-\\fi
+               "\\documentclass[autodetect-engine,dvi=dvipdfmx,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -218,6 +231,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
+      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
@@ -232,12 +246,10 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
-               "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
+               "\\documentclass[autodetect-engine,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -249,18 +261,60 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
-               "\\documentclass[12pt,a4paper]{ltjsarticle}
+               "\\documentclass[11pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
 \\hypersetup{pdfencoding=auto,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article"
+               "\\documentclass[11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article-tate"
+               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -286,25 +340,11 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 ;(setq org-latex-pdf-process '("latexmk -e '$xelatex=q/xelatex %S/' -e '$bibtex=q/upbibtex %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -norc -gg -pdfxe %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
-      '(("pdf" . "xdg-open %s")))
-```
+      '(("pdf" . "evince %s")))
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle"
-               "\\ifdefined\\kanjiskip
-  \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-\\else
-  \\ifdefined\\pdfoutput
-    \\ifnum\\pdfoutput=0
-      \\documentclass[autodetect-engine,dvi=dvipdfmx,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\else
-      \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-    \\fi
-  \\else
-    \\documentclass[autodetect-engine,12pt,a4paper,ja=standard]{bxjsarticle}
-  \\fi
-\\fi
+               "\\documentclass[autodetect-engine,dvi=dvipdfmx,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -315,6 +355,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
+      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
@@ -329,12 +370,10 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("bxjsarticle-dvips"
-               "\\documentclass[uplatex,dvips,12pt,a4paper,ja=standard]{bxjsarticle}
+               "\\documentclass[autodetect-engine,11pt,a4paper,ja=standard]{bxjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
@@ -346,18 +385,60 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
                ("\\paragraph{%s}" . "\\paragraph*{%s}")
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
-```
 
-```
 (add-to-list 'org-latex-classes
              '("ltjsarticle"
-               "\\documentclass[12pt,a4paper]{ltjsarticle}
+               "\\documentclass[11pt,a4paper]{ltjsarticle}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\usepackage{graphicx}
 \\usepackage{hyperref}
 \\hypersetup{pdfencoding=auto,colorlinks=true}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article"
+               "\\documentclass[11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+(add-to-list 'org-latex-classes
+             '("jlreq-article-tate"
+               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+[NO-DEFAULT-PACKAGES]
+\\usepackage{amsmath}
+\\usepackage{newtxtext,newtxmath}
+\\ifdefined\\kanjiskip
+  \\usepackage[dvipdfmx]{graphicx}
+  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{pxjahyper}
+  \\hypersetup{colorlinks=true}
+\\else
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
+  \\hypersetup{pdfencoding=auto,colorlinks=true}
+\\fi"
                ("\\section{%s}" . "\\section*{%s}")
                ("\\subsection{%s}" . "\\subsection*{%s}")
                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
@@ -399,6 +480,30 @@ org ファイルの先頭に
 #+TITLE: hoge
 #+AUTHOR: fuga
 #+LATEX_CLASS: ltjsarticle
+```
+
+を追加します．
+
+### uplatex + dvipdfmx, lualatex, luajitlatex で jlreq の article の横書きを使用する場合 {#t4ccb221}
+
+org ファイルの先頭に
+
+```
+#+TITLE: hoge
+#+AUTHOR: fuga
+#+LATEX_CLASS: jlreq-article
+```
+
+を追加します．
+
+### uplatex + dvipdfmx, lualatex, luajitlatex で jlreq の article の縦書きを使用する場合 {#c3a15d54}
+
+org ファイルの先頭に
+
+```
+#+TITLE: hoge
+#+AUTHOR: fuga
+#+LATEX_CLASS: jlreq-article-tate
 ```
 
 を追加します．
