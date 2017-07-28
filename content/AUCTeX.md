@@ -391,6 +391,10 @@ C-x C-f ~/
                                      "open -a Firefox %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Mozilla Firefox"))
                       (add-to-list 'TeX-command-list
+                                   '("Chrome"
+                                     "open -a \"Google Chrome\" %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run Google Chrome"))
+                      (add-to-list 'TeX-command-list
                                    '("AcroRead"
                                      "open -a \"Adobe Acrobat Reader DC\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
@@ -422,6 +426,7 @@ C-x C-f ~/
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
+> <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
 > <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
