@@ -48,6 +48,8 @@ C-c C-f によるタイプセットは，設定ファイルにおいて latex-ru
 
 同様に，BibTeX のコマンドのデフォルトは bibtex，プレビューコマンドのデフォルトは xdvi (X Window System), yap (Windows), dvi2tty（それ以外）ですので，適宜変更する必要があります．
 
+プレビューコマンドと印刷コマンドを PDF ビューアに変更する場合は tex-print-file-extension を ".pdf" に設定して tex-dvi-view-command と tex-dvi-print-command をそれぞれ使用する PDF ビューアに設定してください．
+
 platex, uplatex, pdflatex, xelatex, lualatex など，複数のコマンドを併用したいときもあると思います．
 このような時にはユーザー定義コマンド (tex-compile-commands) に登録しておくと，C-c C-c で選択することができます．
 
@@ -88,36 +90,23 @@ C-x C-f ~/
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
 (setq tex-run-command "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
-;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
-;(setq tex-run-command "luajittex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "luajittex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "xetex -synctex=1 -interaction=nonstopmode")
 ;(setq tex-run-command "pdftex -synctex=1 -interaction=nonstopmode")
 (setq latex-run-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
-;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
-;(setq latex-run-command "luajitlatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "lualatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "luajitlatex -cmdx -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "xelatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 (setq tex-bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-(require 'tex-mode)
-(defun tex-view ()
-  (interactive)
-  (tex-send-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance" (tex-append tex-print-file ".pdf")))
-(defun tex-print (&optional alt)
-  (interactive "P")
-  (if (tex-shell-running)
-      (tex-kill-job)
-    (tex-start-shell))
-  (tex-send-command "rundll32 shell32,ShellExec_RunDLL AcroRd32" (tex-append tex-print-file ".pdf")))
+(setq tex-print-file-extension ".pdf")
+(setq tex-dvi-view-command "start SumatraPDF -reuse-instance")
+(setq tex-dvi-print-command "start AcroRd32")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
         ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.exe %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
-        ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
-        ("luajitlatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("lualatex -cmdx -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("luajitlatex -cmdx -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("xelatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -125,9 +114,6 @@ C-x C-f ~/
         ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %f" "%f" "%r.pdf")
         ("latexmk -e \"$pdflatex=q/pdflatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e \"$pdflatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e \"$pdflatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e \"$pdflatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdf %f" "%f" "%r.pdf")
         ("latexmk -e \"$lualatex=q/lualatex -cmdx %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e \"$lualatex=q/luajitlatex -cmdx %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e \"$xelatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdfxe %f" "%f" "%r.pdf")
@@ -137,10 +123,8 @@ C-x C-f ~/
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
-        ("rundll32 shell32,ShellExec_RunDLL AcroRd32 %r.pdf" "%r.pdf")))
-```
+        ("start AcroRd32 %r.pdf" "%r.pdf")))
 
-```
 (defun sumatrapdf-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -152,15 +136,11 @@ C-x C-f ~/
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "sumatrapdf" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
-```
 
-```
 (defun fwdsumatrapdf-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -172,15 +152,11 @@ C-x C-f ~/
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "fwdsumatrapdf" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
-```
 
-```
 ;;
 ;; RefTeX with TeX mode
 ;;
@@ -201,9 +177,7 @@ C-x C-f ~/
 ;;
 (setenv "PATH" "/usr/local/bin:/Library/TeX/texbin/:/Applications/Skim.app/Contents/SharedSupport:$PATH" t)
 (setq exec-path (append '("/usr/local/bin" "/Library/TeX/texbin" "/Applications/Skim.app/Contents/SharedSupport") exec-path))
-```
 
-```
 ;;
 ;; TeX mode
 ;;
@@ -222,16 +196,9 @@ C-x C-f ~/
 ;(setq latex-run-command "xelatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 (setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(require 'tex-mode)
-(defun tex-view ()
-  (interactive)
-  (tex-send-command "open -a Skim" (tex-append tex-print-file ".pdf")))
-(defun tex-print (&optional alt)
-  (interactive "P")
-  (if (tex-shell-running)
-      (tex-kill-job)
-    (tex-start-shell))
-  (tex-send-command "open -a \"Adobe Acrobat Reader DC\"" (tex-append tex-print-file ".pdf")))
+(setq tex-print-file-extension ".pdf")
+(setq tex-dvi-view-command "open -a Skim")
+(setq tex-dvi-print-command "open -a \"Adobe Acrobat Reader DC\"")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
@@ -243,9 +210,6 @@ C-x C-f ~/
         ("latexmk -e '$latex=q/uplatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ("latexmk -e '$latex=q/uplatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %f" "%f" "%r.pdf")
         ("latexmk -e '$pdflatex=q/pdflatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
         ("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e '$lualatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e '$xelatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %f" "%f" "%r.pdf")
@@ -256,10 +220,9 @@ C-x C-f ~/
         ("/Applications/TeXworks.app/Contents/MacOS/TeXworks %r.pdf" "%r.pdf")
         ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("open -a Firefox %r.pdf" "%r.pdf")
+        ("open -a \"Google Chrome\" %r.pdf" "%r.pdf")
         ("open -a \"Adobe Acrobat Reader DC\" %r.pdf" "%r.pdf")))
-```
 
-```
 (defun skim-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -271,15 +234,11 @@ C-x C-f ~/
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "displayline" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c s") 'skim-forward-search)))
-```
 
-```
 ;;
 ;; RefTeX with TeX mode
 ;;
@@ -313,16 +272,9 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 ;(setq latex-run-command "xelatex -synctex=1 -interaction=nonstopmode")
 ;(setq latex-run-command "pdflatex -synctex=1 -interaction=nonstopmode")
 (setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(require 'tex-mode)
-(defun tex-view ()
-  (interactive)
-  (tex-send-command "evince" (tex-append tex-print-file ".pdf") " &"))
-(defun tex-print (&optional alt)
-  (interactive "P")
-  (if (tex-shell-running)
-      (tex-kill-job)
-    (tex-start-shell))
-  (tex-send-command "evince" (tex-append tex-print-file ".pdf") " &"))
+(setq tex-print-file-extension ".pdf")
+(setq tex-dvi-view-command "evince")
+(setq tex-dvi-print-command "evince")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
@@ -334,9 +286,6 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
         ("latexmk -e '$latex=q/uplatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ("latexmk -e '$latex=q/uplatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %f" "%f" "%r.pdf")
         ("latexmk -e '$pdflatex=q/pdflatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
-        ("latexmk -e '$pdflatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdf %f" "%f" "%r.pdf")
         ("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e '$lualatex=q/luajitlatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ("latexmk -e '$xelatex=q/xelatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %f" "%f" "%r.pdf")
@@ -350,10 +299,9 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
-        ("chromium --new-window %r.pdf &" "%r.pdf")))
-```
+        ("chromium --new-window %r.pdf &" "%r.pdf")
+        ("wine cmd /c start AcroRd32.exe %r.pdf &" "%r.pdf")))
 
-```
 (defun evince-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -365,27 +313,19 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "fwdevince" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c e") 'evince-forward-search)))
-```
 
-```
 (require 'dbus)
-```
 
-```
 (defun un-urlify (fname-or-url)
   "A trivial function that replaces a prefix of file:/// with just /."
   (if (string= (substring fname-or-url 0 8) "file:///")
       (substring fname-or-url 7)
     fname-or-url))
-```
 
-```
 (defun evince-inverse-search (file linecol &rest ignored)
   (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
          (buf (find-file fname))
@@ -398,16 +338,12 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
       (unless (= col -1)
         (move-to-column col))
       (x-focus-frame (selected-frame)))))
-```
 
-```
 (dbus-register-signal
  :session nil "/org/gnome/evince/Window/0"
  "org.gnome.evince.Window" "SyncSource"
  'evince-inverse-search)
-```
 
-```
 (defun okular-forward-search ()
   (interactive)
   (let* ((ctf (buffer-file-name))
@@ -419,15 +355,11 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "okular" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c o") 'okular-forward-search)))
-```
 
-```
 (defun zathura-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -439,15 +371,11 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "zathura" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c z") 'zathura-forward-search)))
-```
 
-```
 (defun qpdfview-forward-search ()
   (interactive)
   (let* ((ctf (buffer-name))
@@ -459,15 +387,11 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
     (message (concat cmd " " args))
     (process-kill-without-query
      (start-process-shell-command "qpdfview" nil cmd args))))
-```
 
-```
 (add-hook 'latex-mode-hook
           '(lambda ()
              (define-key latex-mode-map (kbd "C-c q") 'qpdfview-forward-search)))
-```
 
-```
 ;;
 ;; RefTeX with TeX mode
 ;;
@@ -478,13 +402,11 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 
 ## 関連リンク {#ca23f166}
 
-- [TeX Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
-- [RefTeX User Manual](http://www.gnu.org/software/emacs/manual/html_node/reftex/)
-- [Using pdfTeX in Emacs \`tex-mode'](http://www.emacswiki.org/emacs/PdfTeX)
-- [西谷・平山研Hiki - LaTeX-mode](http://www.kono.cis.iwate-u.ac.jp/~hiki/?LaTeX-mode)
-- [MacPortsでインストールしたTeXLive2013をEmacsのTeX-modeで使う](http://d.hatena.ne.jp/tnil/20130824/1377290688)
+- [TeX Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
+- [GNU Emacs Manual(Japanese Translation): TeX Mode](https://ayatakesi.github.io/emacs/25.1/TeX-Mode.html#TeX-Mode)
+- [RefTeX User Manual](https://www.gnu.org/software/emacs/manual/html_node/reftex/)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
-- [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](http://srad.jp/~t-nissie/journal/560083)
+- [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](https://srad.jp/~t-nissie/journal/560083)
 
 ### レポジトリ {#kdedd1cc}
 
