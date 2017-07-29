@@ -43,7 +43,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.78.10 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
+### YaTeX 1.79.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
 
 Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．
 ただし，[2016-01-08](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e) 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
@@ -428,7 +428,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq tex-pdfview-command "qpdfview --unique")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq dviprint-command-format "xdg-open `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+(setq dviprint-command-format "wine cmd /c start AcroRd32.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 ```
 
 ```
@@ -532,7 +532,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>xdg-open で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
@@ -1455,6 +1455,7 @@ TeX ソースの先頭行に例えば，
 
 ## 関連リンク {#fcad5d2d}
 
+- [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 - [YaTeX \[ShotakahaDokuWiki](http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:yatex:start)\]
 - [モダンな日本語 TeX 環境を整える](http://qiita.com/ynakayama/items/706ae9e59c1b6fd3e3d2)
 - [Ubuntu 14.04でのEmacsの設定](http://ubutun.blogspot.jp/2014/06/ubuntu-1404emacs.html)
@@ -1482,7 +1483,6 @@ TeX ソースの先頭行に例えば，
 - [yatex-modeになったときにマイナーモードcdlatexを起動する](http://d.hatena.ne.jp/daharu/20111106/1320562641)
 - [YaTeX の気になる所](http://d.hatena.ne.jp/setoryohei/20120127/1327680856)
 - [TeX Memo \[Internet Archive\]](http://web.archive.org/web/20100601184838/http://homepages.inf.ed.ac.uk/s0675112/tex_memo.html)
-- [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 
 ### リリース情報 {#w889e1b2}
 
