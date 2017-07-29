@@ -274,7 +274,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 (setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "evince")
-(setq tex-dvi-print-command "evince")
+(setq tex-dvi-print-command "perl -e 'system(\"wine cmd /c start AcroRd32.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
