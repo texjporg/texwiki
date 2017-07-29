@@ -24,6 +24,7 @@ Org mode は
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
 - [Org Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
+- [GNU Emacs Manual(Japanese Translation): Org Mode](https://ayatakesi.github.io/emacs/25.1/Org-Mode.html#Org-Mode)
 
 ***
 
