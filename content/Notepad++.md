@@ -54,15 +54,15 @@ Windows
 
 ### 派生版 {#l02b5ab5}
 
-Notepad++ の派生版 で EUC-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが，EUC-JP には対応していません．
+Notepad++ の派生版 で ISO-2022-JP と EUC-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが，ISO-2022-JP と EUC-JP には対応していません．
 
-- [Notepad++ JS](https://ja.osdn.net/projects/l2jacmjpn/)
+- [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
     - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
     - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
 
-### 日本語言語ファイル {#i35c46e6}
-
-- [Japanese Language File for Notepad++](https://gist.github.com/2664323)
+<!-- **日本語言語ファイル [#i35c46e6] -->
+<!--  -->
+<!-- -[[Japanese Language File for Notepad++:https://gist.github.com/2664323]] -->
 
 ## プラグイン (Plugins) {#k2155ff2}
 
@@ -79,13 +79,10 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．
 jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．
 詳細は [jN - TeX Wiki](/jN/) を参照してください．
 
-<!-- **[[NppSharp]] [#q36c3aac] -->
-
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
-Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されています．
-\[プラグイン\]-\[DSpellCheck\]-\[[Online Manual...](https://github.com/Predelnik/DSpellCheck/wiki/Manual)\] で使い方を参照してください．
-赤い線が表示されるのを OFF にする場合は \[プラグイン\]-\[DSpellCheck\]-\[Auto-check Document\] のチェックをはずします．
+スペルチェックは DSpellCheck (Spell Checker プラグイン) が使用できます．
+使い方は [Manual](https://github.com/Predelnik/DSpellCheck/wiki/Manual) を参照してください．
 
 ## SumatraPDF との連携 {#ted60cbe}
 
@@ -93,21 +90,13 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 
 - [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)
 - [jN#SumatraPDF との連携](/jN/#u247e15e)
-    を参照してください．
+
+を参照してください．
 
 ### inverse search {#u3c0d179}
 
-■ 64-bit Windows で 64-bit Notepad++ を使用する場合<br>
-■ 32-bit Windows で 32-bit Notepad++ を使用する場合<br>
-
 ```
 "C:\Program Files\Notepad++\notepad++.exe" "%f" -n%l -c%c
-```
-
-■ 64-bit Windows で 32-bit Notepad++ を使用する場合<br>
-
-```
-"C:\Program Files (x86)\Notepad++\notepad++.exe" "%f" -n%l -c%c
 ```
 
 ## Linux で Notepad++ {#hd58d1c7}
