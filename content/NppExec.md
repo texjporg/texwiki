@@ -9,9 +9,11 @@ pukiwiki: "NppExec"
 
 [Notepad++](/Notepad++/) > NppExec
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) または [Python Script](</Python Script/>) を使用する {#n297fed5}
+***
+
+## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) を使用する {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 \[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で NppExec を選択してインストールできます．<br>
