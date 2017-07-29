@@ -9,17 +9,17 @@ pukiwiki: "jN"
 
 [Notepad++](/Notepad++/) > jN
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) または [Python Script](</Python Script/>) を使用する {#i71db25c}
+***
+
+## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) を使用する {#i71db25c}
 
 jN (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．<br>
 plugins\jN\includes\ フォルダーに js ファイルを作成すると JavaScript が実行できます．<br>
 
 - [https://github.com/sieukrem/jn-npp-plugin](https://github.com/sieukrem/jn-npp-plugin)
-- [https://github.com/sieukrem/jn-npp-plugin/wiki/Downloads](https://github.com/sieukrem/jn-npp-plugin/wiki/Downloads)
 - [https://github.com/sieukrem/jn-npp-plugin/releases/](https://github.com/sieukrem/jn-npp-plugin/releases/)
-- [jN - API](http://jn-npp-plugin.googlecode.com/svn/wiki/API/api.xml)
 
 ### License {#y5793722}
 
