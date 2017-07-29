@@ -176,7 +176,6 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
     - [Notepad++](/Notepad++/)
         - [NppExec](/NppExec/)
         - [jN](/jN/)
-        - [Python Script](</Python Script/>)
     - [サクラエディタ](</サクラエディタ/>)
         - [Happy](/Happy/)
 
