@@ -211,9 +211,45 @@ SumatraPDF に関連付けされている場合は
 というエラーが発生して PDF ファイルが開けないので pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合は
 PDF ファイルは Adobe Acrobat Reader DC に関連付けしておいてください。
 
-pdfopen で PDF ファイルを開くのに （AcroRd32.exe で直接開く場合と比べて）時間がかかったり
+pdfopen.exe で PDF ファイルを開くのに AcroRd32.exe で直接開く場合と比べて時間がかかったり
 PDF ファイルを SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けしたい場合は
 pdfopen.exe, pdfclose.exe, pdfdde.exe を使用せずに AcroRd32.exe を直接使用してください。
+
+MSYS2 の time コマンドで AcroRd32.exe で直接開く場合と pdfopen.exe を使用する場合で比較すると
+pdfopen.exe を使用した場合は AcroRd32.exe で直接開く場合に比べて 12 倍 ～ 19 倍ぐらい時間がかかるようです．
+
+```
+$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf'
+
+real    0m0.100s
+user    0m0.015s
+sys     0m0.000s
+
+$ time C:/Windows/System32/cmd.exe /c 'pdfopen --file foo.pdf'
+
+real    0m1.222s
+user    0m0.000s
+sys     0m0.015s
+```
+
+MSYS2 の time コマンドで「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」場合と「AcroRd32.exe で開く --&gt; pdfopen.exe で開いて pdfclose.exe で閉じる --&gt; AcroRd32.exe で開く」場合を比較すると AcroRd32.exe を終了して AcroRd32.exe で開くほうが pdfopen.exe と pdfclose.exe で閉じて AcroRd32.exe で開くよりも 2 倍早く動作するようです．
+
+```
+
+$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf && tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" >nul && taskkill /im AcroRd32.exe & echo start AcroRd32 foo.pdf | cmd'
+
+real    0m0.520s
+user    0m0.000s
+sys     0m0.015s
+
+$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf && pdfopen --file foo.pdf && pdfclose --file foo.pdf & echo start AcroRd32 foo.pdf | cmd'
+
+real    0m1.096s
+user    0m0.015s
+sys     0m0.000s
+```
+
+現在の Adobe Acrobat Reader DC は起動が早くなったため DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理で十分に実用的な速度で動作するようです．
 
 ### PDF ファイルを開く {#id6d0918}
 
