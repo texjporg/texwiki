@@ -172,7 +172,10 @@ pdfopen --file foo.pdf
 pdfclose --file foo.pdf
 ```
 
-によって PDF ファイルをクローズするわけです。
+によって PDF ファイルをクローズするわけです。一番最初は，Reader
+自身を間接的に立ち上げるので時間的に効率が悪いと思われますが，以降は Reader
+はメモリに留まったままなので，編集中に pdfopen, pdfclose を繰り返すのは，
+ある程度効率が良いと思われます。
 pdfdde.exe の詳細については pdfdde.c を参照してください。
 
 [https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c)
