@@ -97,9 +97,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 ### 使用状況に関する情報 {#jd9c4023}
 
 初期設定では Adobe Acrobat Reader DC の使用方法に関する情報をアドビと共有します．
-この機能を OFF にしたい場合は \[編集(E)\] &gt; \[環境設定(N)...\] から使用状況に関する情報を選択して「はい、Adobe Acrobat Reader DC の使用方法に関する情報を匿名で共有します」のチェックをはずします．
-
-環境設定に使用状況に関する情報が見つからない場合はレジストリの
+この機能を OFF にしたい場合はレジストリの
 
 ```
 コンピューター\HKEY_CURRENT_USER\SOFTWARE\Adobe\CommonFiles\Usage\Reader DC
@@ -123,9 +121,9 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ### Windows Explorer で PDF サムネールのプレビューを有効にする {#ef92bb00}
 
-2016 年 5 月リリース以降の Adobe Acrobat Reader DC Continuous および Classic では 「Windows Explorer で PDF サムネールのプレビューを有効にする」 を ON にすることでサムネールのプレビューができるようになります．
+「Windows Explorer で PDF サムネールのプレビューを有効にする」 を ON にすることでサムネールのプレビューができるようになります．
 
-> \[編集(E)\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする
+> \[編集\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする(B)
 
 <!-- ■ Continuous Track の場合 -->
 <!--  -->
