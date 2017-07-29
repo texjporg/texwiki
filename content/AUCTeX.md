@@ -880,10 +880,6 @@ Master file: (default this file)
 
 ## SumatraPDF との連携 (forward and inverse search) {#h60fef7c}
 
-forward search は [AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7) を参照してください．
-
-C-c C-c sumatrapdf または C-c C-c fwdsumatrapdf で forward search ができます．
-
 AUCTeX は SumatraPDF の forward search に対応しています．
 
 環境変数 Path と変数 exec-path に SumatraPDF のコマンド検索パスを追加します．
@@ -904,11 +900,13 @@ C-c C-c view で View command: に SumatraPDF のコマンドが表示され for
 
 inverse search については [Emacs#SumatraPDF との連携#inverse search](/Emacs/#a06810d6) を参照してください．
 
+TeX-command-list に SumatraPDF を追加して使用することもできます．
+
+forward search は [AUCTeX#インストール#Windows#設定](/AUCTeX/#g637a7d7) を参照してください．
+
+C-c C-c sumatrapdf または C-c C-c fwdsumatrapdf で forward search ができます．
+
 ## Skim との連携 (forward and inverse search) {#v5bdbf9d}
-
-forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) を参照してください．
-
-C-c C-c displayline で forward search ができます．
 
 AUCTeX は Skim の forward search に対応しています．
 
@@ -926,13 +924,15 @@ C-c C-c view で View command: に displayline のコマンドが表示され fo
 
 inverse search は [Emacs](/Emacs/#e9c08b3d) を参照してください．
 
+TeX-command-list に displayline を追加して使用することもできます．
+
+forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) を参照してください．
+
+C-c C-c displayline で forward search ができます．
+
 [AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) も参考になります．
 
 ## Evince との連携 (forward and inverse search) {#l4ab70a6}
-
-forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
-
-C-c C-c fwdevince で forward search ができます．
 
 AUCTeX は Evince の forward and inverse search に対応しています．
 
@@ -946,6 +946,12 @@ C-c C-c view で View command: に TeX-evince-sync-view が表示され forward 
 
 TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
 
+TeX-command-list に fwdevince を追加して使用することもできます．
+
+forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
+
+C-c C-c fwdevince で forward search ができます．
+
 以下のページも参考になります．
 
 - [Make AUCTeX do forward and inverse search with SyncTeX and Evince](https://gist.github.com/2297447)
@@ -955,10 +961,6 @@ TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリック�
 - [latex - From .ps/.dvi/.pdf, go to the corresponding location of .tex in Emacs - Stack Overflow](http://stackoverflow.com/questions/5737801/from-ps-dvi-pdf-go-to-the-corresponding-location-of-tex-in-emacs)
 
 ## Okular との連携 (forward and inverse search) {#d95e95ee}
-
-forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
-
-C-c C-c okular で forward search ができます．
 
 AUCTeX は Okular の forward search に対応しています．
 
@@ -972,11 +974,13 @@ C-c C-c view で View command: に Okular のコマンドが表示され forward
 
 inverse search は [Emacs](/Emacs/#z0944532) を参照してください．
 
+TeX-command-list に Okular を追加して使用することもできます．
+
+forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
+
+C-c C-c okular で forward search ができます．
+
 ## zathura との連携 (forward and inverse search) {#nf2a372b}
-
-forward and inverse search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
-
-C-c C-c zathura で forward and inverse search ができます．
 
 AUCTeX は zathura の forward and inverse search に対応しています．
 
@@ -989,6 +993,12 @@ TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で�
 C-c C-c view で View command: に zathura のコマンドが表示され forward and inverse search が実行できます．
 
 Ctrl + 左クリックで inverse search が実行できます．
+
+TeX-command-list に zathura を追加して使用することもできます．
+
+forward and inverse search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
+
+C-c C-c zathura で forward and inverse search ができます．
 
 ## その他 {#w8f257bd}
 
