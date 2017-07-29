@@ -57,7 +57,6 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
-    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [Typeset.js](</サクラエディタ/マクロ/#i861969f>)
 
