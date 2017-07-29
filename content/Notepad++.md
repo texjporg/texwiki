@@ -79,16 +79,6 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．
 jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．
 詳細は [jN - TeX Wiki](/jN/) を参照してください．
 
-### [Python Script for Notepad++](</Python Script/>) {#kd19bcd9}
-
-Python Script を使うと LaTeX 環境を簡単に作ることができます．
-詳細は [Python Script - TeX Wiki](</Python Script/>) を参照してください．
-
-### [CS-Script](http://www.csscript.net/npp/) {#df55f8f4}
-
-- [http://csscriptnpp.codeplex.com/](http://csscriptnpp.codeplex.com/)
-- [http://nppscrips.codeplex.com/](http://nppscrips.codeplex.com/)
-
 <!-- **[[NppSharp]] [#q36c3aac] -->
 
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
@@ -103,7 +93,6 @@ Notepad++ には DSpellCheck (Spell Checker プラグイン) が収録されて�
 
 - [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)
 - [jN#SumatraPDF との連携](/jN/#u247e15e)
-- [Python Script#SumatraPDF との連携](</Python Script/#w3ac6f2d>)
     を参照してください．
 
 ### inverse search {#u3c0d179}
