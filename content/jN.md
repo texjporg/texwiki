@@ -15,11 +15,13 @@ pukiwiki: "jN"
 
 ## jN (JavaScript for Notepad++) → 問題が発生する場合は [NppExec](/NppExec/) を使用する {#i71db25c}
 
-jN (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．<br>
-plugins\jN\includes\ フォルダーに js ファイルを作成すると JavaScript が実行できます．<br>
+jN (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．
+
+plugins\jN\includes\ フォルダーに js ファイルを作成すると JavaScript が実行できます．
 
 - [https://github.com/sieukrem/jn-npp-plugin](https://github.com/sieukrem/jn-npp-plugin)
 - [https://github.com/sieukrem/jn-npp-plugin/releases/](https://github.com/sieukrem/jn-npp-plugin/releases/)
+- [https://github.com/sieukrem/jn-npp-plugin/wiki/Helpful-scripts](https://github.com/sieukrem/jn-npp-plugin/wiki/Helpful-scripts)
 
 ### License {#y5793722}
 
