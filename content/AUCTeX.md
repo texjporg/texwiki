@@ -50,7 +50,7 @@ AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 ## 日本語利用のための engine 設定 {#gf4835e4}
 
-AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, upTeX[^1] の3種類です。タイプセット時にどのコマンドを使うかは、変数 TeX-engine に3つのうちどれがセットされているかで決まります。[^2]
+AUCTeX でサポートされている日本語用 TeX は upTeX[^1], ASCII pTeX, NTT jTeX の3種類です。タイプセット時にどのコマンドを使うかは、変数 TeX-engine に3つのうちどれがセットされているかで決まります。[^2]
 
 通常の LaTeX ユーザーは、カスタマイズオプション TeX-parse-self を有効にしておくのがおすすめです。クラスファイルやそのオプション引数から、TeX-engine が自動でセットされます。[^3][^4]
 
@@ -83,11 +83,11 @@ AUCTeX でサポートされている日本語用 TeX は ASCII pTeX, NTT jTeX, 
 
     のようにします。[^5]
 
-上記どちらの場合も、TeX-engine に指定する値は ptex, jtex, uptex のいずれかです。
+上記どちらの場合も、TeX-engine に指定する値は uptex, ptex, jtex のいずれかです。
 
-各 engine ごとに利用されるコマンド名（platex や euptex 等）は変数 TeX-engine-alist-builtin に保存されています。異なるコマンドを使いたい場合や、新たな engine を定義したい場合はカスタマイズオプション TeX-engine-alist を利用してください。
+各 engine ごとに利用されるコマンド名（uplatex や platex 等）は変数 TeX-engine-alist-builtin に保存されています。異なるコマンドを使いたい場合や、新たな engine を定義したい場合はカスタマイズオプション TeX-engine-alist を利用してください。
 
-[forum:2047](https://okumuralab.org/tex/mod/forum/discuss.php?d=2047)のように、NTT jLaTeX 用のクラスファイルを ASCII pLaTeX で利用する場合は、上述の file (directory) local variable で TeX-engine に ptex を指定してください。
+[forum:2047](https://okumuralab.org/tex/mod/forum/discuss.php?d=2047) のように、NTT jLaTeX 用のクラスファイルを ASCII pLaTeX で利用する場合は、上述の file (directory) local variable で TeX-engine に ptex を指定してください。
 
 ## 注意点 {#gb666e4a}
 
