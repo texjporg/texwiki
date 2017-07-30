@@ -75,6 +75,9 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 のように実行します。
 
+Wine 2.13 で実行したところ Adobe Acrobat Reader DC は PDF ファイルを開いて 3 秒後に強制終了しましたが
+Adobe Reader XI であれば PDF ファイルを開いても強制終了せずに表示できました．
+
 ### Android {#k545c7f3}
 
 - [Adobe Acrobat DC – PDF Reader - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
