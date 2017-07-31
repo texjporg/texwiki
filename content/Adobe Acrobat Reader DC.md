@@ -183,6 +183,27 @@ pdfdde.exe の詳細については pdfdde.c を参照してください。
 
 [https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c)
 
+pdfdde.exe で使用できる機能に関してはコマンドラインから
+
+```
+echo list | pdfdde
+```
+
+を実行することで確認できます。
+以下の機能が利用可能です。
+
+```
+Type Ctrl-Z to quit.
+open <file>             open the file
+close <file>            close the file
+closeall                close all files
+goto <file> <page>      goto the given <page> in <file>
+gotoname <file> <dest>  goto the <dest> named destination in <file>
+show                    show acroview
+hide                    hide acroview
+exit                    exit acroview and pdfdde
+```
+
 Windows 版の Adobe Acrobat Reader DC バージョン 2017
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
@@ -255,9 +276,20 @@ user    0m0.015s
 sys     0m0.000s
 ```
 
-現在の Adobe Acrobat Reader DC は起動が早くなったため DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理で十分に実用的な速度で動作するようです．
+昔は Adobe Acrobat Reader の起動に時間がかかったため，Adobe Acrobat Reader を起動したままで
+DDE を使用して PDF ファイルを閉じる方法が有効に機能していましたが，現在は DDE サーバー名が Adobe Acrobat Reader のバージョンによって変化するようになり[^1]
+DDE の使い勝手が悪くなってしまったことと Adobe Acrobat Reader の起動が早くなったため
+DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理でも十分に実用的な速度で動作するようです．
 
-### PDF ファイルを開く {#id6d0918}
+ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader DC で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
+
+- [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
+
+現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく Adobe Acrobat Reader DC を終了する方法で運用しているようです。
+
+- [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
+
+### ファイルを開く {#id6d0918}
 
 Windows PowerShell の場合は
 
@@ -283,9 +315,9 @@ pdfopen --file foo.pdf
 pdfopen foo.pdf
 ```
 
-### 起動時に指定したページを表示する {#lc08871d}
+### 起動時あるいはファイルを開くときに指定したページを表示する {#lc08871d}
 
-3ページ目を表示するには以下のようにします．
+起動時あるいはファイルを開くときに 3 ページ目を表示するには以下のようにします．
 
 Windows PowerShell の場合は
 
@@ -305,7 +337,9 @@ pdfopen.exe を使う場合は
 pdfopen --file foo.pdf --page 3
 ```
 
-### PDF ファイルを開いて閉じる {#h619779d}
+なお，指定したページを表示できるのは起動時あるいはファイルを開くときのみで，現在開かれているファイルに対して実行しても効果はなく指定したページで表示することはできないので注意してください。
+
+### ファイルを開いて閉じる {#h619779d}
 
 pdfclose.exe を使用する場合は事前に pdfopen.exe でファイルを開いておく必要があります。
 
@@ -321,7 +355,7 @@ pdfopen --file foo.pdf;if($?){pdfclose --file foo.pdf}
 pdfopen --file foo.pdf && pdfclose --file foo.pdf
 ```
 
-### Adobe Acrobat Reader DC を終了する {#pb5aeda1}
+### 起動している Adobe Acrobat Reader DC を終了する {#pb5aeda1}
 
 Windows PowerShell の場合は
 
@@ -416,3 +450,5 @@ synctex help edit
 - [Acrobat最新ニュース速報 - 日本のニュース](http://www.jp01.net/tag-Acrobat.html)
 - \[[研究\] Adobe Acrobat Reader DC v2015 繁體中文版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-reader-dc-v2015.html)
 - \[[研究\] Adobe Acrobat Pro DC v2015 30天試用版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-pro-dc-v2015-30.html)
+
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17 です。
