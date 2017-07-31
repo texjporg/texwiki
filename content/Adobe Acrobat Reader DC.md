@@ -279,13 +279,13 @@ sys     0m0.000s
 昔は Adobe Acrobat Reader の起動に時間がかかったため，Adobe Acrobat Reader を起動したままで
 DDE を使用して PDF ファイルを閉じる方法が有効に機能していましたが，現在は DDE サーバー名が Adobe Acrobat Reader のバージョンによって変化するようになり[^1]
 DDE の使い勝手が悪くなってしまったことと Adobe Acrobat Reader の起動が早くなったため
-DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理でも十分に実用的な速度で動作するようです．
+DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理でも十分に実用的な速度で動作するようです．[^2]
 
 ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader DC で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
 
 - [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
 
-現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく Adobe Acrobat Reader DC を終了する方法で運用しているようです。
+現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法で運用しているようです。[^3]
 
 - [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
 
@@ -430,8 +430,7 @@ synctex help edit
 - [スプールが終わるまでAdobeReaderを閉じる処理を待ちたいのですが、50ページ以上とかページ数が多いと、スプールが終わる前にAdobeReaderを閉じてしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421469214)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
 - [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
-- [Adobe Acrobat SDK Help](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/js/html/wwhelp.htm)
-    - [Acrobat Interapplication Communication](http://livedocs.adobe.com/acrobat_sdk/10/Acrobat10_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat10_SDK_HTMLHelp&file=Acro_Interapp_Commun_SectionPage.98.1.html)
+- [Interapplication communication | Adobe Acrobat Developer Center](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
 - [http://www.adobe.com/devnet/acrobat/interapplication_communication.html](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
 - [http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html](http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html)
 - [MFCを利用しないプロジェクトからのIACの使用](http://kb2.adobe.com/jp/cps/510/510052.html)
@@ -452,3 +451,5 @@ synctex help edit
 - \[[研究\] Adobe Acrobat Pro DC v2015 30天試用版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-pro-dc-v2015-30.html)
 
 [^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17 です。
+[^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
+[^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
