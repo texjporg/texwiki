@@ -305,7 +305,8 @@ dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2
 
 dviout for Windows は Susieプラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。
 
-<!-- -[[dvioutにSusieプラグインを入れる:http://tasusuweb.appspot.com/tex/susie.html]] -->
+- [\`dviout' for package \`graphics'に関しての質問](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2235)
+    <!-- -[[dvioutにSusieプラグインを入れる:http://tasusuweb.appspot.com/tex/susie.html]] -->
 
 ### PNG 形式 {#v2a0576b}
 
