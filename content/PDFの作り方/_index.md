@@ -87,7 +87,6 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
 1. tex → dvi → pdf
     - platex→dvipdfmx (現在日本で最も主流)
     - uplatex→dvipdfmx (現在日本で主流)
-    - Windows では [dviout](/dviout/) から印刷で PDF へ出力する方法もあります．
 1. tex → dvi → ps → pdf
     - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
 
@@ -124,7 +123,7 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 ### Adobe Acrobat DC の設定 {#e5e57a76}
 
 PDF 出力をデフォルトのプリンターとして設定することができます．
-コントロールパネルから 「デバイスとプリンターの表示」をクリックして［デバイスとプリンター］画面を表示します．
+設定から 「デバイス」 → 「デバイスとプリンター」をクリックして［デバイスとプリンター］画面を表示します．
 ［プリンター］にある「Adobe PDF」プリンターアイコンを右クリックし，
 「通常使うプリンターに設定」します．
 
@@ -231,7 +230,7 @@ PDF ビューアによっては，この部分ダウンロードを行えない�
 
 PDF 文書をパスワードで保護するには，いくつかの方法があります．
 
-- [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
+- [天地有情 \[LaTeX\] PDF-crypt --- PDFの暗号化 ～2つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
 
 Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
