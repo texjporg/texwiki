@@ -968,10 +968,10 @@ pdfuplatexA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1019,13 +1019,13 @@ pdfuplatex2A.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 uplatex -synctex=1 -kanji=utf8 -no-guess-input-enc %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.exe "%~n1.ps" && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1073,10 +1073,10 @@ platex-ngA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 platex-ng -synctex=1 %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1124,10 +1124,10 @@ pdflatexA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 pdflatex -synctex=1 %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1175,10 +1175,10 @@ lualatexA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 lualatex -cmdx -synctex=1 %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1226,10 +1226,10 @@ luajitlatexA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 luajitlatex -cmdx -synctex=1 %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
@@ -1277,10 +1277,10 @@ xelatexA.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 xelatex -synctex=1 %1 && ^
-powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --r15 --file $pdf --page $page}"
+powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
 ***
