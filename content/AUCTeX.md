@@ -514,6 +514,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "fwdevince %s.pdf %n \"%b\""
                                      TeX-run-discard-or-function t t :help "Forward search with fwdevince"))
                       (add-to-list 'TeX-command-list
+                                   '("Atril"
+                                     ;"synctex view -i \"%n:0:%b\" -o %s.pdf -x \"atril -i %%{page+1} %%{output}\""
+                                     "TeX-atril-sync-view"
+                                     TeX-run-discard-or-function t t :help "Forward search with Atril"))
+                      (add-to-list 'TeX-command-list
                                    '("Okular"
                                      "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
@@ -573,6 +578,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
 > <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
+> <tr><td>Atril</td><td>C-c C-c atril RET</td><td>Atril で forward search</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
 > <tr><td>Zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
 > <tr><td>Qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
@@ -959,6 +965,20 @@ C-c C-c fwdevince で forward search ができます．
 - [Evince - TeX Wiki](/Evince/)
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX) の Synctex and Evince
 - [latex - From .ps/.dvi/.pdf, go to the corresponding location of .tex in Emacs - Stack Overflow](http://stackoverflow.com/questions/5737801/from-ps-dvi-pdf-go-to-the-corresponding-location-of-tex-in-emacs)
+
+## Atril との連携 (forward and inverse search) {#nfc32f0c}
+
+AUCTeX は Atril の forward and inverse search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Atril を指定します．
+
+```
+(setq TeX-view-program-selection '((output-pdf "Atril")))
+```
+
+C-c C-c view で View command: に TeX-atril-sync-view が表示され forward search が実行できます．
+
+TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
 
 ## Okular との連携 (forward and inverse search) {#d95e95ee}
 
