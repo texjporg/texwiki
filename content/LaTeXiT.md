@@ -45,7 +45,7 @@ PNG は背景を透過させることができます．
 
 ### 動作環境 {#e0e2eaf2}
 
-OS X で動作します．
+macOS で動作します．
 [COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照してください．
 
 ### インストール {#z9061d08}
@@ -110,7 +110,7 @@ pdfLaTeX
 
 #### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される場合 {#pd5cb643}
 
-[OS X の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，LaTeXiT にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
+[macOS の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，LaTeXiT にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
 
 > [![](/attach/LaTeXiT/LaTeXiT-bs.png)](/attach/LaTeXiT/LaTeXiT-bs.png)
 
@@ -129,6 +129,7 @@ pdfLaTeX
 - LaTeXiT で Undefined control sequence. l.1 \documentclass とのエラーメッセージ ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
 - [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
 - [LaTeXit(xelatex)でテンプレート変更](http://blog.cocomoff.info/archives/2016/01/13/7642/)
+- LaTeXitが使えません。([forum:2236](https://okumuralab.org/tex/mod/forum/discuss.php?d=2236))
 
 #### ChangeLog {#sb3b1ab6}
 
