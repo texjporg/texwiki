@@ -206,7 +206,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ```
 
 ```
-(defun sumatrapdf-forward-search ()
+(defun fwdsumatrapdf-forward-search ()
   (interactive)
   (progn
     (process-kill-without-query
@@ -229,7 +229,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ```
 (add-hook 'yatex-mode-hook
           '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
+             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
 ```
 
 ```
@@ -261,15 +261,15 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
-> <tr><td></td><td>C-c s または M-x sumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
+> <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
 > </table>
 >
 
 ### macOS {#p7238e02}
 
+- [Mac miniをセットアップする その3 ~emacs,yatex,skim編~](http://t44or2.hatenablog.com/entry/2016/10/29/152327)
 - [emacsでyatexを使う簡単な方法(Mac)](http://ganmacs.hatenablog.com/entry/2013/09/07/225350)
-- [TeXLive2013 +Emacs + YaTex の設定をした](http://d.hatena.ne.jp/tnil/20130823/1377230350)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
 - [emacs_and_tex](https://github.com/ryseto/emacs_and_tex)
 - [Retina を活かす Emacs へ移行2](http://milanista224.blogspot.jp/2013/07/retina-emacs243.html)
@@ -416,6 +416,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 ;(setq dvi2-command "xdg-open")
 (setq dvi2-command "evince")
+;(setq dvi2-command "atril")
 ;(setq dvi2-command "okular --unique")
 ;(setq dvi2-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 ;(setq dvi2-command "qpdfview --unique")
@@ -423,6 +424,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq dvi2-command "texstudio --pdf-viewer-only")
 ;(setq tex-pdfview-command "xdg-open")
 (setq tex-pdfview-command "evince")
+;(setq tex-pdfview-command "atril")
 ;(setq tex-pdfview-command "okular --unique")
 ;(setq tex-pdfview-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 ;(setq tex-pdfview-command "qpdfview --unique")
@@ -555,19 +557,13 @@ t と nil ではキーバインドが異なります（前者だと C-c C-t lett
 Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最新版はデフォルトで t となっており，YaTeX の作者も t を推奨しています （YaTeX ML \[yatex:04567\] を参照）．
 変更の理由は YaTeX が使用していたキーバインドがユーザー向けに予約されていた C-c letter に設定されていたためと思われます．
 
-***
-
 [Emacs Lispのコーディングの慣習](http://www.bookshelf.jp/texi/elisp-manual/21-2-8/jp/elisp_42.html#IDX3219) より
 
-***
-
-- 読者のメジャーモードでは、 C-c letter をキーとして定義しないこと。 これらのキー列はユーザー向けに予約済みである。 それら<strong>だけ</strong>がユーザー向けに予約されたキー列であり、 それらを禁止しないこと。
+> - 読者のメジャーモードでは、 C-c letter をキーとして定義しないこと。 これらのキー列はユーザー向けに予約済みである。 それら<strong>だけ</strong>がユーザー向けに予約されたキー列であり、 それらを禁止しないこと。
 
 > かわりに、C-c のあとにコントロール文字か数字文字か特定の句読点文字が続く キー列を定義する。 これらのキー列は、メジャーモード用に予約してある。
 
 > Emacs のすべてのモードをこの慣習に従うように変換するのは たいへんな作業量であった。 この慣習を捨てさるとその作業をむだにしてしまい、ユーザーにも不便である。
-
-***
 
 ### タイプセット・プレビュー {#r68a2a97}
 
@@ -948,6 +944,12 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 (setq dvi2-command "evince")
 ```
 
+#### Atril {#vf039437}
+
+```
+(setq dvi2-command "atril")
+```
+
 #### Okular {#uf59e41d}
 
 ```
@@ -1034,6 +1036,12 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 ```
 (setq tex-pdfview-command "evince")
+```
+
+#### Atril {#vb288c5f}
+
+```
+(setq tex-pdfview-command "atril")
 ```
 
 #### Okular {#y8537029}
@@ -1230,7 +1238,7 @@ off の場合
 #### SumatraPDF を前面に表示したくない場合 {#d9c64d40}
 
 ```
-(defun sumatrapdf-forward-search ()
+(defun fwdsumatrapdf-forward-search ()
   (interactive)
   (progn
     (process-kill-without-query
@@ -1253,11 +1261,11 @@ off の場合
 ```
 (add-hook 'yatex-mode-hook
           '(lambda ()
-             (define-key YaTeX-mode-map (kbd "C-c s") 'sumatrapdf-forward-search)))
+             (define-key YaTeX-mode-map (kbd "C-c f") 'fwdsumatrapdf-forward-search)))
 ```
 
 fwdsumatrapdf は [SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) にあるものを使用します．
-forward search は C-c s または M-x sumatrapdf-forward-search RET をタイプします．
+forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタイプします．
 
 ### Skim との連携 (forward search) {#f978a43b}
 
@@ -1274,7 +1282,7 @@ forward search は C-c s または M-x sumatrapdf-forward-search RET をタイ�
 ### Evince との連携 (forward and inverse search) {#g214bbe8}
 
 - [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
-- [http://homepage2.nifty.com/kurasawa/ubuntu.html#emacs](http://homepage2.nifty.com/kurasawa/ubuntu.html#emacs)
+- [http://kurasawa.c.ooco.jp/ubuntu.html#emacs](http://kurasawa.c.ooco.jp/ubuntu.html#emacs)
 
 ### Evince との連携 (forward search) {#h118b5e5}
 
