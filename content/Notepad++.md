@@ -41,7 +41,7 @@ Windows
 
 ### License {#p3f91661}
 
-[GPLv3, GPLv2](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
+[GPLv2](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
 
 ### リリース情報 {#d2ceb628}
 
@@ -79,6 +79,8 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．
 jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．
 詳細は [jN - TeX Wiki](/jN/) を参照してください．
 
+### [LuaScript](https://github.com/dail8859/LuaScript) {#b879cf21}
+
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
 スペルチェックは DSpellCheck (Spell Checker プラグイン) が使用できます．
@@ -112,7 +114,6 @@ jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ること
 - [GNU Octave, LaTeX, and Notepad++](http://www.tlhiv.org/ma497/software/)
 - [ConTeXt support package for Notepad++](http://wiki.contextgarden.net/Notepad%2B%2B)
 - [LaTeX on Windows with MiKTeX and Notepad++](http://nimal.info/blog/2010/latex-on-windows-with-miktex-and-notepad/)
-- [Setting Up LaTeX With Notepad++ (PDF)](http://www.cas.mcmaster.ca/~kahl/CS1FC3/2011/musaTex.pdf)
 - [DDE Command Line Tools](http://www.robvanderwoude.com/ddecommandline.php)
     - [CMCDDE](http://www.robvanderwoude.com/ddecommandline.php#CMCDDE)
 - [Notepad++ Plugins / Discussion / NppExec:con_saveto &lt;file&gt; : &lt;encoding&gt;](https://sourceforge.net/p/npp-plugins/discussion/672146/thread/87237314)
