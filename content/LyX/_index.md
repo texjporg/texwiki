@@ -546,7 +546,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ### License {#pb9a4019}
 
-[GPLv3, GPLv2](http://www.lyx.org/License) ([日本語訳](http://www.lyx.org/WebJa.License))
+[GPLv2](http://www.lyx.org/License) ([日本語訳](http://www.lyx.org/WebJa.License))
 
 ### リリース情報 {#k8ba7cf7}
 
