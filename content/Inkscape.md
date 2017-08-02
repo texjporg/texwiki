@@ -24,7 +24,7 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 </tbody>
 </table>
 
-[PostScriptやEPSをインポートするには、Ghostscriptをインストールする必要があり、ps2pdfがPATH上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
+[PostScript や EPS をインポートするには、Ghostscript をインストールする必要があり、ps2pdf が環境変数 Path 上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
 
 - [Inkscape 公式サイト](https://inkscape.org/)
 - [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
@@ -140,12 +140,12 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
     - <span style="color:Red;"><strong>Python はインデントに意味を持つので修正する場合はインデントに注意して修正してください．</strong></span>
     - <span style="color:Red;"><strong>タブではなくスペースでインデントすることをおすすめします．</strong></span>
     - <span style="color:Red;"><strong>コメントアウトは # (シャープ) を使用します．</strong></span>
-    - <span style="color:Red;"><strong>Python で Windows の PATH を文字列で表す場合は raw 文字列 (r'...') を使用すると便利です．</strong></span>
+    - <span style="color:Red;"><strong>Python で Windows のパスを文字列で表す場合は raw 文字列 (r'...') を使用すると便利です．</strong></span>
 
 ### [EqTeXSVG (LaTeX formula)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．
-<strong>環境変数 PATH に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
+<strong>環境変数 Path に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
 
 [EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
 [Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
@@ -160,7 +160,7 @@ LaTeX と連携するためのエクステンション．
 [TeX Live](</TeX Live/>) には dvisvgm, dvips, latex が含まれています．<br>
 [W32TeX](/W32TeX/) には pstoedit, dvisvgm, dvips, latex が含まれています．<br>
 
-TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロード，インストールして pstoedit.exe のフォルダーに PATH を通します．
+TeX Live を使用している場合は [pstoedit](/pstoedit/) をダウンロード，インストールして環境変数 Path に pstoedit.exe のコマンド検索パスを追加します．
 
 - [https://inkscape.org/en/download/](https://inkscape.org/en/download/)
 
@@ -177,7 +177,7 @@ eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして�
 EqTeXSVG (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
 
 ```
-C:\inkscape>.\python\python.exe
+PS C:\inkscape> .\python\python.exe
 Python 2.7.12 (v2.7.12:d33e0cf91556, Jun 27 2016, 15:19:22) [MSC v.1500 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tempfile
@@ -213,9 +213,9 @@ Inkscape を起動すると \[エクステンション(N)\] → \[レンダリ�
 
 #### 使用方法 {#se15d9b2}
 
-- <strong>環境変数 PATH に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．
+- <strong>環境変数 Path に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．
 
-PATH を通しているのに LaTeX formula が表示されない場合は，まず PATH を確認します．
+LaTeX formula が表示されない場合は，まず環境変数 Path を確認します．
 
 Windows PowerShell の場合は
 
@@ -231,7 +231,7 @@ path
 
 を実行します．
 
-pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが PATH に登録されていれば Windows PowerShell またはコマンド プロンプトから
+pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが Path に登録されていれば Windows PowerShell またはコマンド プロンプトから
 
 ```
 .\inkscape
