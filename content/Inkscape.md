@@ -57,7 +57,6 @@ Windows, macOS, Linux
 ## ダウンロード {#i5a8dfd7}
 
 - [https://inkscape.org/download/](https://inkscape.org/download/)
-- [http://www.partha.com/](http://www.partha.com/)
 
 ## 不具合 {#caadafb3}
 
@@ -231,13 +230,13 @@ path
 
 を実行します．
 
-pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが Path に登録されていれば Windows PowerShell またはコマンド プロンプトから
+pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが Path に登録されていればコマンドラインから Inkscape の実行ファイルが存在するディレクトリに移動して
 
 ```
 .\inkscape
 ```
 
-として Inkscape を起動してみてください．
+と入力して Inkscape を起動してみてください．
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LaTeX formula</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
