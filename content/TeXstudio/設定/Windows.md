@@ -232,10 +232,10 @@ pdfuplatexA-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
@@ -262,13 +262,13 @@ pdfuplatex2A-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
 dvips -Ppdf -z -f "%~n1.dvi" | ^
 convbkmk -u > "%~n1.ps" && ^
 ps2pdf.exe "%~n1.ps" && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
@@ -295,10 +295,10 @@ pdflatexA-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
@@ -325,10 +325,10 @@ lualatexA-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 lualatex -cmdx -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
@@ -355,10 +355,10 @@ luajitlatexA-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 luajitlatex -cmdx -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
@@ -385,10 +385,10 @@ xelatexA-nonstopmode.bat を作成します．
 @echo off
 tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
-pdfopen --r15 --file "%~n1.pdf" && ^
-pdfclose --r15 --file "%~n1.pdf" & ^
+pdfopen --file "%~n1.pdf" && ^
+pdfclose --file "%~n1.pdf" & ^
 xelatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --r15 --file '%%{output}' --page %%{page+1}"
+synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
 ***
