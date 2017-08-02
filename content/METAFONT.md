@@ -26,5 +26,5 @@ METAFONT を使用すれば、簡単な記号だけでなく、パラメータ�
 ### 関連リンク {#af77cd68}
 
 - [TeXで外字を使う, JIS 補助漢字 METAFONT など](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/program.html) (安岡孝一さん)
-- [メタ紋帳プロジェクト](http://homepage3.nifty.com/tenteba/metamon.htm) と [TeX 関連リンク集](http://homepage3.nifty.com/tenteba/tex.htm) (てんてばさん)
+- [メタ紋帳プロジェクト](http://tenteba.la.coocan.jp/metamon.htm) と [TeX 関連リンク集](http://tenteba.la.coocan.jp/tex.htm) (てんてばさん)
 - [今さら人に聞けないMETAFONT](http://qiita.com/VoD/items/addb623ac0ceea78eb3f)
