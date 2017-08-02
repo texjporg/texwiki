@@ -31,6 +31,7 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
     - [コミットログ](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
 - [Inkscape Wiki](http://wiki.inkscape.org)
     - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
+        - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
     - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
         - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
         - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
@@ -43,7 +44,7 @@ Windows, macOS, Linux
 
 ### License {#ibc5e002}
 
-[GPLv3, GPLv2](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
+[GPLv2 or later (GIMP からコピーしたファイルに関しては GPLv3 or later)](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
 
 ### リリース情報 {#d961699f}
 
@@ -177,8 +178,7 @@ EqTeXSVG (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作�
 
 ```
 C:\inkscape>.\python\python.exe
-Python 2.6.5 (r265:79096, Mar 19 2010, 21:48:26) [MSC v.1500 32 bit (Intel)] on
-win32
+Python 2.7.12 (v2.7.12:d33e0cf91556, Jun 27 2016, 15:19:22) [MSC v.1500 32 bit (Intel)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tempfile
 >>> tempfile.gettempdir()
@@ -347,5 +347,5 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 - [Wikibooks.ja:Inkscape](https://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
 - [Inkscape - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/inkscape/)
-- [MacOSX(Yosemite)におけるInkscapeの日本語化](http://a244.hateblo.jp/entry/2015/06/27/025020)
+- [macOS Sierra でInkscape の日本語化](http://a244.hateblo.jp/entry/2016/10/22/001621)
 - [Beamerscape](https://github.com/jbohren/beamerscape)
