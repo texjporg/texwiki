@@ -9,7 +9,7 @@ pukiwiki: "METAFONT"
 
 ## METAFONT {#a97c3921}
 
-- [http://www.ctan.org/pkg/metafont](http://www.ctan.org/pkg/metafont)
+- [https://ctan.org/pkg/metafont](https://ctan.org/pkg/metafont)
 
 METAFONTは、主に TeX で使用するためのフォントを作成するプログラムです。
 [TeX](/TeX/) と同じく Knuth によって作られました。
