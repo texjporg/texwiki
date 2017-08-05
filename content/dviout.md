@@ -159,6 +159,7 @@ upTeX で DVI ファイルを作成し，初期設定の状態で dviout で表�
 
 \[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの System タブの font buffer size を 400 K byte から 4000 K byte など，エラーが発生しない値に変更し，\[Save\]-\[適用(A)\]-\[OK\] をクリックします。
 
+- [dvioutでupLaTeXのDVIを扱う話](http://qiita.com/zr_tex8r/items/8b50836f719dec8b0bee)
 - upTeX のフォントと dviout ([qa:51135](https://okumuralab.org/~okumura/texfaq/qa/51135.html), [qa:51137](https://okumuralab.org/~okumura/texfaq/qa/51137.html))
 - upTeX のフォントと dviout (再検討) ([qa:51610](https://okumuralab.org/~okumura/texfaq/qa/51610.html))：[svn r180](http://tug.org/svn/dviout?limit_changes=0&view=revision&sortby=date&revision=180)以降，dviout 3.18.4 ALPHA 1などでは問題点が修正されています。
 - Re: dvipng と日本語 ([qa:51705](https://okumuralab.org/~okumura/texfaq/qa/51705.html))
