@@ -19,7 +19,7 @@ dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 などの問題があります（[古い情報](</古い情報/#je1d5241>)も参考に）。
 このため，現在は DVI ではなく PDF でのプレビューが推奨されています。
 
-しかし，dviout で十分な場合も数多くあり，その場合には依然として高機能で高速な DVI viewer として有用です。
+<!-- しかし，dviout で十分な場合も数多くあり，その場合には依然として高機能で高速な DVI viewer として有用です。 -->
 
 ***
 
@@ -78,7 +78,7 @@ W32TeX には dviout が含まれていないので，追加でインストー�
 Expat License については
 
 - [License:Expat - Free Software Directory](http://directory.fsf.org/wiki/License:Expat)
-- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](http://www.gnu.org/licenses/license-list.html#Expat)
+- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](https://www.gnu.org/licenses/license-list.html#Expat)
 
 を参照。
 
