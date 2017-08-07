@@ -65,7 +65,7 @@ W32TeX には dviout が含まれていないので，追加でインストー�
     （安定版）
 
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/) (安定版)
-- [http://www.ring.gr.jp/pub/text/TeX/dviout/](https://mirror.ctan.org/../TeX/dviout/)
+- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)
     （安定版のミラー）
 
 - [ftp://ftp.ne.jp/pub/tex/dviout/current/](ftp://ftp.ne.jp/pub/tex/dviout/current/) (安定版のミラー)
@@ -261,8 +261,8 @@ PDF 化は dviout から dvipdfmx を起動して行われるので，各種設�
 このようなパッケージを使う場合，一般には
 
 ```
-\usepackage[dviout]{graphicx} % dviout でDVIファイルを見る場合
 \usepackage[dvipdfmx]{graphicx} % dvipdfmx でPDFに変換する場合
+\usepackage[dviout]{graphicx} % dviout でDVIファイルを見る場合
 ```
 
 のように，DVIウェアに応じてオプションを変えて tex 文書をコンパイルし直す必要があります。
@@ -307,68 +307,9 @@ dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2
 dviout for Windows は Susieプラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。
 
 - [\`dviout' for package \`graphics'に関しての質問](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2235)
-    <!-- -[[dvioutにSusieプラグインを入れる:http://tasusuweb.appspot.com/tex/susie.html]] -->
+- [\`dviout' for package \`graphics'.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1569)
 
-### PNG 形式 {#v2a0576b}
-
-PNG 形式の画像を表示するには WIC Susie Plug-in が必要です。
-
-- [TORO's Software library(Win32/Win64 Plugin)](http://toro.d.dooo.jp/slplugin.html)
-    から WIC Susie Plug-in をダウンロードしてください。
-    展開後
-
-- 64-bit dviout の場合は iftwic.sph
-- 32-bit dviout の場合は iftwic.spi
-
-を dviout.exe と同じフォルダーに配置します。
-他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。
-プリアンブルに
-
-```
-\usepackage[dviout]{graphicx}
-```
-
-を記述すると PNG 画像が表示できます。
-dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します。
-
-```
-\usepackage[dvipdfmx]{graphicx}
-```
-
-これでうまくいかない場合は，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューしてください。
-
-### JPEG 形式 {#s4f7def7}
-
-JPEG 形式の画像を表示するには WIC Susie Plug-in が必要です。
-
-- [TORO's Software library(Win32/Win64 Plugin)](http://toro.d.dooo.jp/slplugin.html)
-
-から WIC Susie Plug-in をダウンロードしてください。
-展開後
-
-- 64-bit dviout の場合は iftwic.sph
-- 32-bit dviout の場合は iftwic.spi
-
-を dviout.exe と同じフォルダーに配置します。
-他のフォルダーに配置する場合は \[Option\] → \[Setup Parameters\] → \[Graphic\] → \[spi\] に iftwic.sph または iftwic.spi が存在するフォルダーを指定してください。
-プリアンブルに
-
-```
-\usepackage[dviout]{graphicx}
-```
-
-を記述すると JPEG 画像が表示できます。
-dvipdfmx を使用して PDF ファイルに変換する場合は graphicx パッケージを読み込む際に次のように dvipdfmx オプションを指定します。
-
-```
-\usepackage[dvipdfmx]{graphicx}
-```
-
-これでうまくいかない場合は，PDF ファイルで出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューしてください。
-
-## Warning を無視する {#fa72a1b5}
-
-- hyperrefとdvioutのwarning ([qa:38510](https://okumuralab.org/~okumura/texfaq/qa/38510.html), [qa:38511](https://okumuralab.org/~okumura/texfaq/qa/38511.html), [qa:38512](https://okumuralab.org/~okumura/texfaq/qa/38512.html))
+うまくいかない場合は，dvipdfmx で PDF ファイルを出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューしてください。
 
 ## SyncTeX {#ab3daddf}
 
