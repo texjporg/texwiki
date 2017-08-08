@@ -62,7 +62,7 @@ ASCII 翻字入力についての詳細は [アスキー文字を用いた転写
 Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](https://www.google.co.jp/) などで探してみましょう。
-参考までに，[フランス語入力](http://www.solac.kobe-u.ac.jp/france/doku.php/tools:keyboard)，[ドイツ語入力](http://kazajirushi.net/germaninput_win10/)，[スペイン語入力](http://position.red/2016/05/pc/1322/)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.l.u-tokyo.ac.jp/~slav/05info/winrus/)，[タイ語入力](http://thaion.net/thai-language-ime) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](http://www.nagasaki-gaigo.ac.jp/toguchi/pc/keyboard_install.htm)，[ドイツ語入力](http://kazajirushi.net/germaninput_win10/)，[スペイン語入力](http://position.red/2016/05/pc/1322/)，[ギリシャ語入力](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](http://www.jolco.com/pages/computer/install-russian/inst-ru.html)，[タイ語入力](http://thaion.net/thai-language-ime) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
 [Emacs](/Emacs/)，
@@ -74,7 +74,7 @@ Unicode (UTF-8) 対応テキストエディタについては，Microsoft Window
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。
 起動の速さを重視する方はメモ帳がおすすめです。
 
-macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/), [Atom](/Atom/), [Visual Studio Code](</Visual Studio Code/>) が定番だと思います。
+macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Visual Studio Code](</Visual Studio Code/>) が定番だと思います。
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
@@ -157,7 +157,7 @@ PDF ファイルをプレビューしてみて，うまくいっているかど�
 インストール方法については「[日本語 LaTeX による多言語処理 &mdash; CTAN directory](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に説明がありますが，一応ここでもインストール解説をします。
 
 TeX Live の場合は ArabTeX は最初からインストールされています。
-W32TeX の場合は [ArabTeX](http://www.ctan.org/pkg/arabtex) をダウンロードします。
+W32TeX の場合は [ArabTeX](https://ctan.org/pkg/arabtex) をダウンロードします。
 展開（解凍）後，次のようにコピーします。
 $TEXMFLOCAL は C:/w32tex/share/texmf-local などご自分の環境に置き換えてください。
 
@@ -253,7 +253,7 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 
 まず，タイ語をTIS-620という文字コードで記述できるエディタまたは UTF-8 に対応したエディタと iconv が必要です。
 TIS-620を直接編集できるテキストエディタとして，Windowsの場合，[Emacs](/Emacs/), [Notepad++](/Notepad++/) が対応しています。
-iconv は [MSYS2](/MinGW/#x1532c23) に含まれています．
+iconv は [MSYS2](/MSYS2/) に含まれています．
 
 以下のスクリプトの実行には [Strawberry Perl](http://strawberryperl.com/) など，Perl が必要になりますので，忘れずにインストールしてください。
 [8bt2ptex.pl](http://web.archive.org/web/20121121181915/http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl)をダウンロードし，エディタで開いて一番上の
@@ -1264,7 +1264,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 以上でインストールはようやく終わりです。
 
 さて，TeX ソースに中国語・韓国語を入力するためには設定が必要です。
-「[中国語・韓国語を入力したい](http://www.tjf.or.jp/ringo/migaku/post-22.php)」を参考に設定してください。
+「[言語の切替方法（中国語、韓国語等の入力）](http://www.tku.ac.jp/iss/guide/classroom/tipspc/language/language.html)」を参考に設定してください。
 
 ここでは ZR さんの PXbase パッケージを使用します。
 
@@ -1347,7 +1347,7 @@ ps2pdf cjkintro.ps
 また，日本語とモンゴル語を共存させる際に役立つ LRTate.sty というものもあります。
 詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」にもありますが，ここではインストール方法について解説します。
 
-まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](https://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty) の3つをダウンロードします。
+まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty) の3つをダウンロードします。
 
 montex.tgz のファイルを tar + gzip 形式に対応した展開（解凍）ソフトで展開し，次のようにコピーします。
 $TEXMF は share/texmf-local など，ご自分の環境に読み替えてください。
