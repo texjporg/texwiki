@@ -20,7 +20,6 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 - [https://github.com/clerkma/ptex-ng](https://github.com/clerkma/ptex-ng)
 - [https://github.com/clerkma/ptex-ng/wiki](https://github.com/clerkma/ptex-ng/wiki)
-- [https://github.com/YandYTeX](https://github.com/YandYTeX)
 
 ### 動作環境 {#f40dfed8}
 
@@ -33,7 +32,6 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 ### ChangeLog {#p25e0f9c}
 
 - [https://github.com/clerkma/ptex-ng/commits/master](https://github.com/clerkma/ptex-ng/commits/master)
-- [https://github.com/YandYTeX/yandytex-src/commits/master](https://github.com/YandYTeX/yandytex-src/commits/master)
 
 ## インストール {#s7b25ce6}
 
@@ -41,7 +39,7 @@ pTeX-ng は PDF ファイルを直接出力します．DVI ファイルは出力
 
 TeX Live の場合は
 
-- [tltexjp](http://www.preining.info/blog/software-projects/tlptexlive/)
+- [tltexjp](https://texjp.org/#tltexjp)
 
 から入手可能です．
 
@@ -49,6 +47,8 @@ TeX Live の場合は
 
 ```
 PS C:\Users\$Env:USERNAME> tlmgr update --self --all
+PS C:\Users\$Env:USERNAME> Invoke-WebRequest -Uri 'https://texlive.texjp.org/tltexjp-key.asc' -OutFile 'tltexjp-key.asc'
+PS C:\Users\$Env:USERNAME> tlmgr key add tltexjp-key.asc
 PS C:\Users\$Env:USERNAME> tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 PS C:\Users\$Env:USERNAME> tlmgr pinning add tltexjp "*"
 PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
@@ -57,6 +57,8 @@ PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 <!-- ***インストール (Cygwin) [#s534df9d] -->
 <!--  -->
 <!-- $ tlmgr update - -self - -all -->
+<!-- $ powershell -Command "& {Invoke-WebRequest -Uri 'https://texlive.texjp.org/tltexjp-key.asc' -OutFile 'tltexjp-key.asc'}" -->
+<!-- $ tlmgr key add tltexjp-key.asc -->
 <!-- $ tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp -->
 <!-- $ tlmgr pinning add tltexjp "*" -->
 <!-- $ tlmgr install ptex-ng -->
@@ -66,6 +68,8 @@ PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
 
 ```
 $ sudo tlmgr update --self --all
+$ curl -O https://texlive.texjp.org/tltexjp-key.asc
+$ sudo tlmgr key add tltexjp-key.asc
 $ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 $ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
@@ -75,6 +79,8 @@ $ sudo tlmgr install ptex-ng
 
 ```
 $ sudo tlmgr update --self --all
+$ wget https://texlive.texjp.org/tltexjp-key.asc
+$ sudo tlmgr key add tltexjp-key.asc
 $ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 $ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
@@ -89,11 +95,8 @@ W32TeX には pTeX-ng が含まれています．
 
 - [http://twilog.org/clerk_ma/search?word=pTeX-ng](http://twilog.org/clerk_ma/search?word=pTeX-ng)
 - [「pTeX-ng」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=pTeX-ng)
-- [ptex-ngとtlptexlive](http://www.preining.info/blog/2014/12/ptex-ng-tlptexlive/)
-- [ptex-ng - tlptexlive バイナリ](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1451)
-- [ptex-ng](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1447)
 - [http://konoyonohana.blog.fc2.com/?q=pTeX-ng](http://konoyonohana.blog.fc2.com/?q=pTeX-ng)
     - [天地有情 pTeX-ng](http://konoyonohana.blog.fc2.com/blog-category-17.html)
-    - [天地有情 \[LaTeX\] xindy 備忘録 --- もう一つの日本語［索引］ツール](http://konoyonohana.blog.fc2.com/blog-entry-95.html)
+    - \[[pTeX-ng\] 新しくエンジン "platex-ng" が加わった](http://konoyonohana.blog.fc2.com/blog-entry-395.html)
+    - \[[ptex-ng\] ptex-ng で OpenType を使ってみた](http://konoyonohana.blog.fc2.com/blog-entry-262.html)
     - [天地有情 \[LaTeX\] pTeX-ng 備忘録 -- 新しい TeX 処理系](http://konoyonohana.blog.fc2.com/blog-entry-90.html)
-- [ptex-ng を使ってみました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1409)
