@@ -9,10 +9,13 @@ pukiwiki: "xdvi"
 
 ## xdvi (非推奨) {#s73ab198}
 
-xdvi は Unix 系 OS で動作する DVI ビューアです。
+xdvi は X Window System 上で動作する DVI ビューアです。
+
+X Window System には [X.Org](https://www.x.org/) などのオープンソースの実装があり Cygwin, macOS, Linux などで動作します。
 
 xdvi を使用すると，日本語が表示されないといった問題が発生する場合があります（[古い情報](</古い情報/#je1d5241>)もご覧ください）。
-現在は DVI ではなく PDF でのプレビューが推奨されています。
+
+このため，<strong>現在は DVI ではなく PDF でのプレビューが推奨されています。</strong>
 
 ***
 
@@ -26,7 +29,7 @@ xdvik は DVI プレビューアです。
 xdvi を Kpathsea ライブラリに対応させたものです。
 
 - [Xdvik Homepage](http://xdvi.sourceforge.net/)
-- [xdvi](http://math.berkeley.edu/~vojta/xdvi.html)
+- [xdvi](https://math.berkeley.edu/~vojta/xdvi.html)
 
 ### 動作環境 {#y90c90d1}
 
@@ -207,7 +210,7 @@ $ synctex help edit
 pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです。
 pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
 
-- [tltexjp](</TeX Live/#tltexjp>)
+- [tltexjp](https://texjp.org/#tltexjp)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://osdn.jp/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
