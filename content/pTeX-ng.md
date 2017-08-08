@@ -45,10 +45,24 @@ TeX Live の場合は
 
 #### インストール (Windows) {#fde376dd}
 
+Windows PowerShell を起動します。
+
 ```
 PS C:\Users\$Env:USERNAME> tlmgr update --self --all
 PS C:\Users\$Env:USERNAME> Invoke-WebRequest -Uri 'https://texlive.texjp.org/tltexjp-key.asc' -OutFile 'tltexjp-key.asc'
 PS C:\Users\$Env:USERNAME> tlmgr key add tltexjp-key.asc
+```
+
+> gnupg is not found or not set up, cannot continue with action \`key'<br>
+> tlmgr.pl: An error has occurred. See above messages. Exiting.<br>
+
+のエラーが発生する場合は [http://files.gpg4win.org/](http://files.gpg4win.org/) から最新版の gpg4win-vanilla-?.?.?.exe (? は数字) をダウンロード・インストールして 環境変数 Path にコマンド検索パス (64-bit Windows にデフォルトでインストールした場合は C:\Program Files (x86)\GNU\GnuPG) を追加して実行しなおすと
+
+> key successfully imported<br>
+
+と表示されます。
+
+```
 PS C:\Users\$Env:USERNAME> tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 PS C:\Users\$Env:USERNAME> tlmgr pinning add tltexjp "*"
 PS C:\Users\$Env:USERNAME> tlmgr install ptex-ng
@@ -73,6 +87,7 @@ $ sudo tlmgr key add tltexjp-key.asc
 $ sudo tlmgr repository add http://texlive.texjp.org/current/tltexjp tltexjp
 $ sudo tlmgr pinning add tltexjp '*'
 $ sudo tlmgr install ptex-ng
+$ sudo tlmgr path add
 ```
 
 #### インストール (Linux) {#d059b61e}
