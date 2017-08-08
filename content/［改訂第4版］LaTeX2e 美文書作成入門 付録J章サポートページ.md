@@ -63,7 +63,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
-- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](https://www.ma.ns.tcu.ac.jp/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
+- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
