@@ -1347,7 +1347,7 @@ ps2pdf cjkintro.ps
 また，日本語とモンゴル語を共存させる際に役立つ LRTate.sty というものもあります。
 詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」にもありますが，ここではインストール方法について解説します。
 
-まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty) の3つをダウンロードします。
+まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) の3つをダウンロードします。
 
 montex.tgz のファイルを tar + gzip 形式に対応した展開（解凍）ソフトで展開し，次のようにコピーします。
 $TEXMF は share/texmf-local など，ご自分の環境に読み替えてください。
@@ -1357,7 +1357,7 @@ $TEXMF は share/texmf-local など，ご自分の環境に読み替えてくだ
 - tfm/ ディレクトリの中のすべてのファイル → $TEXMF/fonts/tfm/mls/
 - doc/ ディレクトリの中のすべてのファイル → $TEXMF/doc/montex/
 
-また，LRtate.sty や diagnose.sty も $TEXMF/tex/latex/montex/ にコピーします。
+また，diagnose.sty や LRtate.sty も $TEXMF/tex/latex/montex/ にコピーします。
 
 $TEXMF/tex/generic/config/language.dat に次を追記します。
 私は texmf/tex/generic/config/language.dat を texmf-local/tex/generic/config/ にコピーして用いています。
