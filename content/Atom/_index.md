@@ -65,7 +65,9 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 latex もしくは latextools, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
-latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。Latexmk がインストールされ、パスが通っている前提で進めます。
+latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
+[DiCy](https://yitzchak.github.io/dicy/) を使うこともできます。
+Latexmk がインストールされ、パスが通っている前提で進めます。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
@@ -86,6 +88,8 @@ Opener のリストから pdf-view を選択します。
 #### 使い方 {#x26304ba}
 
 Ctrl+Alt+B をタイプするとタイプセットしたあと pdf-view で PDF が表示されます。
+
+Ctrl+Alt+S をタイプすると PDF ファイルの該当するページを表示します。
 
 PDF の表示画面をクリックすると TeX ファイルの該当する行にジャンプします。
 
@@ -108,6 +112,8 @@ Opener のリストから sumatra を選択して SumatraPDF Path を設定し�
 #### 使い方 {#f1b15dfc}
 
 Ctrl+Alt+B をタイプするとタイプセットしたあと SumatraPDF で forward search が実行されます。
+
+Ctrl+Alt+S をタイプすると SumatraPDF で forward search が実行されます。
 
 SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
 
