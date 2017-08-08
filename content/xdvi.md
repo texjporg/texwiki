@@ -225,9 +225,7 @@ pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tltexjp](</TeX Live/#tltexjp>) からインストールできます。
-
-インストール方法は [http://www.preining.info/blog/software-projects/tlptexlive/](http://www.preining.info/blog/software-projects/tlptexlive/) を参照してください。
+pxdvi は [tltexjp](https://texjp.org/#tltexjp) からインストールできます。
 
 ### 注意点など {#uca9d6da}
 
