@@ -38,7 +38,7 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 - [http://centos-packages.com/7/results/texlive/](http://centos-packages.com/7/results/texlive/)
 - [http://centos-packages.com/7/package/texlive/](http://centos-packages.com/7/package/texlive/)
 
-RHEL/CentOS/SL 7.2 の TeX Live は TeX Live 2012 です．
+RHEL/CentOS/SL 7.3 の TeX Live は TeX Live 2012 です．
 最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
 ```
@@ -55,6 +55,8 @@ sudo yum install ghostscript
 
 #### Python 3 {#h7df1ef5}
 
+- [https://ius.io/LifeCycle/#python](https://ius.io/LifeCycle/#python) , [https://github.com/iuscommunity-pkg/](https://github.com/iuscommunity-pkg/)
+    - [Python 3 を CentOS 7 に yum でインストールする手順](https://weblabo.oscasierra.net/python3-centos7-yum-install/)
 - [https://www.softwarecollections.org/scls/?search=Python](https://www.softwarecollections.org/scls/?search=Python)
 - [http://dl.fedoraproject.org/pub/epel/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/7/x86_64/p/)
 - [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/)
