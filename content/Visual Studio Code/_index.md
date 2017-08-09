@@ -10,7 +10,7 @@ pukiwiki: "Visual Studio Code"
 
 ## [Visual Studio Code](https://code.visualstudio.com/) {#s675b154}
 
-Visual Studio Code はテキストエディタです．
+Visual Studio Code は軽量で高機能なテキストエディタです．JavaScript, TypeScript, Node.js を組み込みでサポートしています．
 
 ***
 
@@ -20,16 +20,45 @@ Visual Studio Code はテキストエディタです．
 
 Windows, macOS, Linux
 
+### License {#n8c65cf9}
+
+MIT License
+
 ## Visul Studio Code の LaTeX Extension {#ab9306b3}
 
 ### LaTeX Workshop {#b34f0500}
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+    - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
 - [VSCode でLatexの日本語環境を作る](https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b)
 - [Visual Studio CodeでTeX](http://qiita.com/yakigac/items/9113bdb4bf12fdc0a0b0)
 - [VS CodeからTeXのコンパイルを出来るようにするまで(仮)](http://mstn.hateblo.jp/entry/2017/06/09/163912)
 
-#### 設定 (Windows) {#f7cc6d6c}
+#### LaTeX Workshop \[3.3.0\] - 2017-08-08 で PDF ファイルを表示すると日本語が表示されない {#d86f44c2}
+
+LaTeX Workshop \[3.3.0\] - 2017-08-08 で PDF ファイルを表示すると日本語が表示されません。
+
+日本語を表示するためには以下の作業を実行します。
+
+1. [http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download) から PDF.js の Pre-built の Stable をクリックして zip ファイルをダウンロードして展開する
+1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.0\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.0/viewer/<br>フォルダーにコピーする
+1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.0\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.0/viewer/viewer.js<br>を開いて
+
+    ```
+    PDFJS.cMapUrl = '../web/cmaps/';
+    ```
+
+    を
+
+    ```
+    PDFJS.cMapUrl = 'cmaps/';
+    ```
+
+    に修正する
+
+以上の作業で日本語が表示されるようになります。
+
+#### 設定 {#f7cc6d6c}
 
 Ctrl+Comma で既定の設定と settings.json を開きます。左側に表示されている既定の設定の LaTeX Workshop configuration を選択します。
 デフォルトでは latex-workshop.latex.toolchain が以下のように設定されています。
@@ -74,17 +103,52 @@ Windows で Latexmk-upLaTeX-pdfdvi を使用する場合は右側に表示され
     ]
 ```
 
+macOS, Linux で Latexmk-upLaTeX-pdfdvi を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
+
+```
+    "latex-workshop.latex.toolchain": [
+      {
+        "command": "latexmk",
+        "args": [
+          "-e",
+          "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+          "-e",
+          "$bibtex=q/upbibtex %O %B/",
+          "-e",
+          "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+          "-e",
+          "$makeindex=q/upmendex %O -o %D %S/",
+          "-e",
+          "$dvipdf=q/dvipdfmx %O -o %D %S/",
+          "-norc",
+          "-pdfdvi",
+          "%DOC%"
+        ]
+      }
+    ]
+```
+
 #### 使い方 {#mdd9327c}
 
-Ctrl+Alt+B でビルドします。
+ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B でビルドコマンドを実行します。
 
-Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。
+Ctrl+Alt+T で右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
 
-Ctrl+Alt+T で新しいタブで PDF ファイルを表示します。
+Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
 
-Ctrl+Alt+V あるいは Ctrl+Alt+T で PDF ファイルを表示して Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
+Ctrl+Alt+L で Please Select LaTeX Workshop Actions が表示され以下のリストから Action を選択すると実行されます。
 
-Ctrl+Alt+L で LaTeX Workshop Actions を表示します。
+> Build LaTeX project<br>
+> View PDF file in web page<br>
+> View PDF file in new tab<br>
+> SyncTeX from cursor<br>
+> Clean up auxiliary files<br>
+> Open citation browser<br>
+> Count words in LaTeX document<br>
+> Show LaTeX log<br>
+> Open LaTeX Workshop change log<br>
+> Create an issue on Github<br>
+> Star the project<br>
 
 ### その他の Extension {#d3eb8f1f}
 
