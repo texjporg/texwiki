@@ -738,10 +738,8 @@ hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
 
 ***
 
-ここで日本語フォントに [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/) (ipaexm.ttf, ipaexg.ttf) を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://mirror.ctan.org/../../GNU/non-gnu/chinese-fonts-truetype/) (gbsn00lp.ttf) と [WenQuanYi outline fonts](http://wenq.org/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
+ここで日本語フォントに [IPAexフォント/IPAフォント](http://ipafont.ipa.go.jp/) (ipaexm.ttf, ipaexg.ttf) （TeX Live，W32TeX に収録されています）を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://ctan.org/tex-archive/fonts/arphic-ttf) (gbsn00lp.ttf) （TeX Live に収録されています）と [WenQuanYi outline fonts](http://wenq.org/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://web.archive.org/web/20120416135330/http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
 いずれも無償で入手できます。
-
-Adobe Acrobat Reader DC 付属の CMap（どこにあるのか分からない場合には “UniGB-UTF16-H” で検索してみること）は例えば "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Resource\CMap\\" にあるので，全て $TEXMFLOCAL/fonts/cmap/ 内に上書きコピーしておきます。
 
 DVI → PS → PDF の流れで作りたい方は自分用のたとえば mydvips.map に次を記述します。(dvips のオプション -u+mydvips.map で使用)
 
@@ -1258,8 +1256,6 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 ```
 
 ***
-
-なお，gs\gs$(rungs --version)\Resource\CMap\ に CMap をコピーしていない方は，そこに先に述べた Adobe Acrobat Reader DC 付属の CMap などをコピーしてください。
 
 以上でインストールはようやく終わりです。
 
