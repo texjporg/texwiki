@@ -37,30 +37,6 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．ただし
 <!--  -->
 <!-- -https://packages.debian.org/ja/latexmk -->
 
-### 設定 {#g2a2cf08}
-
-実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrcと言うファイルに記述します．実行時オプションで指定できなくもありません（以下の使い方を参照）．.latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
-
-1. 環境変数 HOME が定義されていればそのフォルダ
-1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
-
-となります．多くの場合は HOME は定義されていないでしょうから，USERPROFILE の指定するフォルダになるでしょう．デフォルトでは USERPROFILE は C:\Users\USERNAME となります．（Wndows が C ドライブにインストールされていて，ユーザ名が USERNAME の場合．）
-
-日本語用の簡単な .latexmkrc です．
-
-```
-$latex = 'platex -synctex=1 %O %S';
-$bibtex = 'pbibtex %O %B';
-$dvipdf = 'dvipdfmx %O -o %D %S';
-$makeindex = 'mendex %O -o %D %S';
-$max_repeat = 10;
-$pdf_previewer = '"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
-```
-
-%S はソースファイル，%O はオプション，%D は出力ファイル，%B は拡張子無しのソースファイルに置き換えられます．なお，これらを省略しても latexmk は適当に補完をしてくれます．このファイルを .latexmkrc としてホームディレクトリに保存してください．
-
-なお，Windows のエクスプローラでは ".latexmkrc" というファイル名への変更を行おうとするとエラーになります．".latexmkrc."と最後にピリオドをつけてください．（改名後最後のピリオドはなくなります．）または，メモ帳を起動し上記を貼り付けた後「名前をつけて保存」ダイアログを開き，「ファイルの種類」を「全てのファイル (\*.\*)」に変更してから保存してください．
-
 ### 使い方 {#nf74ee05}
 
 sample.tex をコンパイルする例です．詳しくは latexmk --help や texdoc latexmk をご覧ください．
@@ -120,6 +96,30 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
     ```
 
 「dvi 経由で pdf を生成，platex，dvipdfmx，pbibtex，mendex を使うことを明示する．」では %O や %S などを latexmk に補完させています．dvipdfmx は補完に失敗するため，指定しています．
+
+### 設定 {#g2a2cf08}
+
+実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrcと言うファイルに記述します．実行時オプションで指定できなくもありません（以下の使い方を参照）．.latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
+
+1. 環境変数 HOME が定義されていればそのフォルダ
+1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
+
+となります．多くの場合は HOME は定義されていないでしょうから，USERPROFILE の指定するフォルダになるでしょう．デフォルトでは USERPROFILE は C:\Users\USERNAME となります．（Wndows が C ドライブにインストールされていて，ユーザ名が USERNAME の場合．）
+
+日本語用の簡単な .latexmkrc です．
+
+```
+$latex = 'platex -synctex=1 %O %S';
+$bibtex = 'pbibtex %O %B';
+$dvipdf = 'dvipdfmx %O -o %D %S';
+$makeindex = 'mendex %O -o %D %S';
+$max_repeat = 10;
+$pdf_previewer = '"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
+```
+
+%S はソースファイル，%O はオプション，%D は出力ファイル，%B は拡張子無しのソースファイルに置き換えられます．なお，これらを省略しても latexmk は適当に補完をしてくれます．このファイルを .latexmkrc としてホームディレクトリに保存してください．
+
+なお，Windows のエクスプローラでは ".latexmkrc" というファイル名への変更を行おうとするとエラーになります．".latexmkrc."と最後にピリオドをつけてください．（改名後最後のピリオドはなくなります．）または，メモ帳を起動し上記を貼り付けた後「名前をつけて保存」ダイアログを開き，「ファイルの種類」を「全てのファイル (\*.\*)」に変更してから保存してください．
 
 ### .latexmkrc のサンプル {#qeabdd2c}
 
