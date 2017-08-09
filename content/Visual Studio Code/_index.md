@@ -88,10 +88,10 @@ Ctrl+Alt+L で LaTeX Workshop Actions を表示します。
 
 ### その他の Extension {#d3eb8f1f}
 
-- [VSCode Latex Preview Extension](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
+- [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
 - [LaTeX Compile](https://marketplace.visualstudio.com/items/mathiasfrohlich.latexcompile)
 - [VSCode-LaTeX](https://marketplace.visualstudio.com/items/ms-vscode.latex)
-- [vscode-LaTeX にLine commenting 追加](http://what-alnk.hatenablog.com/entry/2016/06/21/180000)
+    - [vscode-LaTeX にLine commenting 追加](http://what-alnk.hatenablog.com/entry/2016/06/21/180000)
 
 ## SumatraPDF との連携 {#d61e968a}
 
