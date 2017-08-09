@@ -91,10 +91,11 @@ Ctrl+Alt+L で LaTeX Workshop Actions を表示します。
 - [VSCode Latex Preview Extension](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
 - [LaTeX Compile](https://marketplace.visualstudio.com/items/mathiasfrohlich.latexcompile)
 - [VSCode-LaTeX](https://marketplace.visualstudio.com/items/ms-vscode.latex)
-    - [SmatraPDFとVisualStudioCodeでSyncTeXする](http://qiita.com/netwing/items/9c25a3363ab8199709a5)
 - [vscode-LaTeX にLine commenting 追加](http://what-alnk.hatenablog.com/entry/2016/06/21/180000)
 
 ## SumatraPDF との連携 {#d61e968a}
+
+- [SmatraPDFとVisualStudioCodeでSyncTeXする](http://qiita.com/netwing/items/9c25a3363ab8199709a5)
 
 ### inverse search {#he69ec2b}
 
