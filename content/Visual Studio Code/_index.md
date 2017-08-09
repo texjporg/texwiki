@@ -28,6 +28,8 @@ MIT License
 
 ### LaTeX Workshop {#b34f0500}
 
+LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをするための extension です。
+
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
 - [VSCode でLatexの日本語環境を作る](https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b)
@@ -130,13 +132,13 @@ macOS, Linux で Latexmk-upLaTeX-pdfdvi を使用する場合は右側に表示�
 
 #### 使い方 {#mdd9327c}
 
-ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B でビルドコマンドを実行します。
+ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は 右クリック → Build LaTeX project あるいは Ctrl+Alt+B でビルドコマンドを実行します。
 
-Ctrl+Alt+T で右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
+右上の PDF ファイルのアイコンを左クリックあるいは Ctrl+Alt+T で右側に新しいタブで PDF ファイルを表示します。右クリック → SyncTeX from cursor あるいは Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
 
-Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
+Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。右クリック → SyncTeX from cursor あるいは Ctrl+Alt+S で forward search，Ctrl+左クリックで inverse search を行います。
 
-Ctrl+Alt+L で Please Select LaTeX Workshop Actions が表示され以下のリストから Action を選択すると実行されます。
+右クリック → LaTeX Workshop: All actions あるいは Ctrl+Alt+L で Please Select LaTeX Workshop Actions が表示され以下のリストから Action を選択すると実行されます。
 
 > Build LaTeX project<br>
 > View PDF file in web page<br>
