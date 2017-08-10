@@ -11,17 +11,18 @@ pukiwiki: "xeCJK"
 
 ## xeCJK/ZXjatype {#x8dfc603}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK) {#nb577bd0}
 
-xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．<br>
-IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．<br>
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/), [MiKTeX](/MiKTeX/) に含まれています．<br>
+xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．
+IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．
+[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/), [MiKTeX](/MiKTeX/) に含まれています．
 
 - [CTeX-kit](https://github.com/CTeX-org/ctex-kit)
-    - [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK)
-        - [https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx](https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx) をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
+    - [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK) &lt;-- [https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx](https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx) をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/xelatex/xecjk](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
 - [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
@@ -31,7 +32,7 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 ### リリース情報/ChangeLog {#if427aa7}
 
-- [https://github.com/CTeX-org/ctex-kit/releases/tag/xeCJK](https://github.com/CTeX-org/ctex-kit/releases/tag/xeCJK)
+- [https://github.com/CTeX-org/ctex-kit/releases](https://github.com/CTeX-org/ctex-kit/releases)
 - [https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx](https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx)
 
 <!-- **注意点 [#w700f957] -->
@@ -40,9 +41,9 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 [Issues](https://github.com/CTeX-org/ctex-kit/issues?q=xeCJK)
 
-#### xeCJK 3.3.0 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
+#### xeCJK 3.5.0 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
-xeCJK 3.3.0 で 丸1「①」(U+2460) が表示されません．<br>
+xeCJK 3.5.0 で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass{scrartcl}
@@ -54,7 +55,7 @@ ABCDEあいうえお①
 \end{document}
 ```
 
-丸1「①」(U+2460) が表示されない場合は \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加します．<br>
+丸1「①」(U+2460) が表示されない場合は \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加します．
 
 ```
 \documentclass{scrartcl}
@@ -129,8 +130,9 @@ fc-list | nkf -W8 -s | grep "IPAexMincho"
 c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明朝:style=Regular
 ```
 
-が表示されれば使用できます．<br>
-何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．<br>
+が表示されれば使用できます．
+
+何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．
 
 ***
 
@@ -177,10 +179,9 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 
 ## [ZXjatype](https://github.com/zr-tex8r/ZXjatype) {#n8276349}
 
-ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．<br>
-ZXjatype は TeX Live, W32TeX に含まれています．<br>
-ZXjatype は xeCJK が必要です．<br>
-ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
+ZXjatype は [XeLaTeX](/XeTeX/) で日本語文書を作成するためのパッケージです．
+ZXjatype は TeX Live, W32TeX に含まれています．
+ZXjatype は xeCJK が必要です．
 
 - [ZXjatype](https://github.com/zr-tex8r/ZXjatype)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/latex/zxjatype](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/zxjatype/)
@@ -190,7 +191,7 @@ ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 ### リリース情報 {#ecfc94ae}
 
-[Tags · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/tags) を参照．<br>
+[Tags · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/tags) を参照．
 
 ### ChangeLog {#s6e9d1be}
 
@@ -198,12 +199,12 @@ ZXjatype 0.6 は xeCJK 3.0.7 以降で動作します．<br>
 
 ### 不具合 {#u54213d7}
 
-#### ZXjatype 0.6 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
+#### ZXjatype 0.6b で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
 
 - [https://twitter.com/zr_tex8r/status/571372508261122048](https://twitter.com/zr_tex8r/status/571372508261122048)
 - [https://www.overleaf.com/read/drxbbhxpbyfm](https://www.overleaf.com/read/drxbbhxpbyfm)
 
-ZXjatype 0.6 で 丸1「①」(U+2460) が表示されません．<br>
+ZXjatype 0.6b で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass[xelatex]{bxjsarticle}
@@ -215,7 +216,7 @@ ABCDEあいうえお①
 \end{document}
 ```
 
-丸1「①」(U+2460) が表示されない場合は \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加します．<br>
+丸1「①」(U+2460) が表示されない場合は \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加します．
 
 ```
 \documentclass[xelatex]{bxjsarticle}
@@ -244,7 +245,7 @@ ABCDEあいうえお①
 
 [ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
 
-以下の様な文書を作成して UTF-8 で保存します．<br>
+以下の様な文書を作成して UTF-8 で保存します．
 
 ***
 
@@ -273,13 +274,11 @@ ABCDEあいうえお①
 
 ***
 
-XeLaTeX を実行します．<br>
+XeLaTeX を実行します．
 
 ```
 xelatex neko.tex
 ```
-
-エラーが発生する場合は BXjscls を最新版にアップデートします．<br>
 
 #### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
 
@@ -291,7 +290,7 @@ xelatex neko.tex
 \setjamonofont{IPAexGothic}
 ```
 
-上記の設定で<br>
+上記の設定で
 
 ```
 (c:/w32tex/share/texmf-dist/tex/xelatex/xecjk/config/xeCJK.cfg)))
@@ -319,7 +318,7 @@ kpathsea: Appending font creation commands to missfont.log.
 !...............................................
 ```
 
-のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
+のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．
 
 ```
 \XeTeXgenerateactualtext=1
@@ -341,8 +340,9 @@ fc-list | nkf -W8 -s | grep "IPAexMincho"
 c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明朝:style=Regular
 ```
 
-が表示されれば使用できます．<br>
-何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．<br>
+が表示されれば使用できます．
+
+何も表示されない場合は C:\w32tex\share\texmf-dist\fonts\conf\local.conf を作成して以下のように編集します．
 
 ***
 
