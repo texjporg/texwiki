@@ -10,7 +10,7 @@ pukiwiki: "PythonTeX"
 ## PythonTeX {#fef32cd2}
 
 PythonTeX は，LaTeX ドキュメントの中に埋め込んだ [Python](/Python/) コードを実行して，その結果を元の場所に出力するためのパッケージです．
-Python 以外に [Ruby](/Ruby/) や Julia, Octave もサポートしています．
+Python 以外に [Ruby](/Ruby/), Julia, Octave, Sage, Bash, Rust もサポートしています．
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
 - [http://www.ctan.org/pkg/pythontex](http://www.ctan.org/pkg/pythontex)
