@@ -37,7 +37,7 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．ただし
 <!--  -->
 <!-- -https://packages.debian.org/ja/latexmk -->
 
-### 使い方 {#nf74ee05}
+### 使い方 <a id="usage"></a> {#nf74ee05}
 
 sample.tex をコンパイルする例です．詳しくは latexmk --help や texdoc latexmk をご覧ください．
 
@@ -99,7 +99,7 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
 
 ### 設定 {#g2a2cf08}
 
-実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrcと言うファイルに記述します．実行時オプションで指定できなくもありません（以下の使い方を参照）．.latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
+実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrc と言うファイルに記述します．[^1].latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
 
 1. 環境変数 HOME が定義されていればそのフォルダ
 1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
@@ -119,69 +119,9 @@ $pdf_previewer = '"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %
 
 %S はソースファイル，%O はオプション，%D は出力ファイル，%B は拡張子無しのソースファイルに置き換えられます．なお，これらを省略しても latexmk は適当に補完をしてくれます．このファイルを .latexmkrc としてホームディレクトリに保存してください．
 
-なお，Windows のエクスプローラでは ".latexmkrc" というファイル名への変更を行おうとするとエラーになります．".latexmkrc."と最後にピリオドをつけてください．（改名後最後のピリオドはなくなります．）または，メモ帳を起動し上記を貼り付けた後「名前をつけて保存」ダイアログを開き，「ファイルの種類」を「全てのファイル (\*.\*)」に変更してから保存してください．
+なお，Windows のエクスプローラーでは ".latexmkrc" というファイル名への変更を行おうとするとエラーになります．".latexmkrc."と最後にピリオドをつけてください．（改名後最後のピリオドはなくなります．）または，メモ帳を起動し上記を貼り付けた後「名前をつけて保存」ダイアログを開き，「ファイルの種類」を「全てのファイル (\*.\*)」に変更してから保存してください．
 
 ### .latexmkrc のサンプル {#qeabdd2c}
-
-#### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXworks, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX, tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
-
-***
-
-&#x7e;/.latexmkrc
-
-***
-
-```
-#!/usr/bin/env perl
-if ($^O eq 'MSWin32') {
-  $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
-  $pdflatex = 'pdflatex %O -synctex=1 %S';
-  $lualatex = 'lualatex -cmdx %O -synctex=1 %S';
-  $xelatex = 'xelatex %O -synctex=1 %S';
-  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
-  $makeindex = 'upmendex %O -o %D %S';
-  $dvipdf = 'dvipdfmx %O -o %D %S';
-  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
-  $ps2pdf = 'ps2pdf.exe %O %S %D';
-  $pdf_mode = 3;
-  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
-  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
-    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
-  } else {
-    $pdf_previewer = 'texworks';
-  }
-} else {
-  $latex = 'uplatex %O -synctex=1 %S';
-  $pdflatex = 'pdflatex %O -synctex=1 %S';
-  $lualatex = 'lualatex %O -synctex=1 %S';
-  $xelatex = 'xelatex %O -synctex=1 %S';
-  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
-  $makeindex = 'upmendex %O -o %D %S';
-  $dvipdf = 'dvipdfmx %O -o %D %S';
-  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
-  $ps2pdf = 'ps2pdf %O %S %D';
-  $pdf_mode = 3;
-  if ($^O eq 'darwin') {
-    $pvc_view_file_via_temporary = 0;
-    $pdf_previewer = 'open -ga /Applications/Skim.app';
-  } else {
-    $pdf_previewer = 'xdg-open';
-  }
-}
-```
-
-***
-
-```
-latexmk -gg -pdfdvi foo.tex
-latexmk -gg -pdfps foo.tex
-latexmk -gg -pdf foo.tex
-latexmk -gg -pdflua foo.tex
-latexmk -gg -pdfxe foo.tex
-```
 
 #### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXstudio, Texmaker, Emacs の TeX mode, AUCTeX (TeX-interactive-mode が OFF の場合), vimtex, quickrun などの場合) {#ke005cd5}
 
@@ -243,6 +183,66 @@ latexmk -gg -pdflua foo.tex
 latexmk -gg -pdfxe foo.tex
 ```
 
+#### Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-LuaLaTeX の場合 (TeXworks, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX, tex.vim, LaTeX Box などの場合) {#q3ee8e1b}
+
+***
+
+&#x7e;/.latexmkrc
+
+***
+
+```
+#!/usr/bin/env perl
+if ($^O eq 'MSWin32') {
+  $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
+  $pdflatex = 'pdflatex %O -synctex=1 %S';
+  $lualatex = 'lualatex -cmdx %O -synctex=1 %S';
+  $xelatex = 'xelatex %O -synctex=1 %S';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'upmendex %O -o %D %S';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf.exe %O %S %D';
+  $pdf_mode = 3;
+  if (-f 'C:/Program Files/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files/SumatraPDF/SumatraPDF.exe" -reuse-instance';
+  } elsif (-f 'C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe') {
+    $pdf_previewer = '"C:/Program Files (x86)/SumatraPDF/SumatraPDF.exe" -reuse-instance';
+  } else {
+    $pdf_previewer = 'texworks';
+  }
+} else {
+  $latex = 'uplatex %O -synctex=1 %S';
+  $pdflatex = 'pdflatex %O -synctex=1 %S';
+  $lualatex = 'lualatex %O -synctex=1 %S';
+  $xelatex = 'xelatex %O -synctex=1 %S';
+  $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
+  $bibtex = 'upbibtex %O %B';
+  $makeindex = 'upmendex %O -o %D %S';
+  $dvipdf = 'dvipdfmx %O -o %D %S';
+  $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
+  $ps2pdf = 'ps2pdf %O %S %D';
+  $pdf_mode = 3;
+  if ($^O eq 'darwin') {
+    $pvc_view_file_via_temporary = 0;
+    $pdf_previewer = 'open -ga /Applications/Skim.app';
+  } else {
+    $pdf_previewer = 'xdg-open';
+  }
+}
+```
+
+***
+
+```
+latexmk -gg -pdfdvi foo.tex
+latexmk -gg -pdfps foo.tex
+latexmk -gg -pdf foo.tex
+latexmk -gg -pdflua foo.tex
+latexmk -gg -pdfxe foo.tex
+```
+
 ### リンク {#yb5452a3}
 
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
@@ -254,7 +254,8 @@ latexmk -gg -pdfxe foo.tex
 - [latexmk](http://kamae-norihiro.blogspot.jp/2013/06/latexmk.html)
 - [Latexmkのススメ](http://xaro.hatenablog.jp/entry/2013/01/06/125723)
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
-- [YaTeX#Latexmkを使う場合](/YaTeX/#naf0d69e)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
 - [Latexmk（Windows特化で使い方を書いてみる）](http://d.hatena.ne.jp/abenori/20150110)
+
+[^1]: .latexmkrc に記述せずに実行時オプションで指定することもできます（[使い方](/Latexmk/#usage)を参照）．
