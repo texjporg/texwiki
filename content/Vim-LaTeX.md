@@ -157,9 +157,7 @@ Vim を起動し
 
 ### Windows {#eb85b35a}
 
-[Vim &mdash; KaoriYa](http://www.kaoriya.net/software/vim) または [vim UTF-8日本語版 - fudist](https://sites.google.com/site/fudist/Home/vim-nihongo-ban) をインストールします．
-
-$HOME/vimfiles/vimrc に設定を記述します．<br>
+$HOME/vimfiles/vimrc に設定を記述します．
 
 ***
 
@@ -204,13 +202,9 @@ SumatraPDF の inverse search については [Vim-LaTeX#SumatraPDF との連携
 
 ### macOS {#aecb2dfb}
 
-動作未確認です．<br>
+動作未確認です．
 
-[MacVim-KaoriYa](https://github.com/splhack/macvim-kaoriya) をインストールします．
-
-$HOME/.vim/vimrc に設定を記述します．<br>
-Skim で \ls を使った Forward search を行う
-場合、let g:Tex_ViewRule_pdf = 'Skim' とします。<br>
+$HOME/.vim/vimrc に設定を記述します．
 
 ***
 
@@ -244,14 +238,14 @@ let g:Tex_BibtexFlavor = '/Library/TeX/texbin/upbibtex'
 let g:Tex_MakeIndexFlavor = '/Library/TeX/texbin/upmendex $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
 let g:Tex_ViewRule_pdf = 'Skim'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Preview.app'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a TeXShop.app'
+"let g:Tex_ViewRule_pdf = 'open -a Skim'
+"let g:Tex_ViewRule_pdf = 'open -a Preview'
+"let g:Tex_ViewRule_pdf = 'open -a TeXShop'
 "let g:Tex_ViewRule_pdf = '/Applications/TeXworks.app/Contents/MacOS/TeXworks'
 "let g:Tex_ViewRule_pdf = '/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a Firefox.app'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open -a "Adobe Reader.app"'
-"let g:Tex_ViewRule_pdf = '/usr/bin/open'
+"let g:Tex_ViewRule_pdf = 'open -a Firefox'
+"let g:Tex_ViewRule_pdf = 'open -a "Adobe Acrobat Reader DC"'
+"let g:Tex_ViewRule_pdf = 'open'
 ```
 
 ***
@@ -282,21 +276,6 @@ let g:Tex_MultipleCompileFormats = 'pdf'
 
 という設定を書き加えます．<br>
 参考：[http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho](http://superuser.com/questions/257007/macvim-wont-run-bibtex-or-compile-as-necessary-to-clear-warnings-with-ll-sho)
-
-Skim で forward search をする場合は
-
-```
-let g:Tex_ViewRule_pdf = '/usr/bin/open -a Skim.app'
-```
-
-ではなく
-
-```
-let g:Tex_ViewRule_pdf = 'Skim'
-```
-
-にしないと正しく動作しないようです．<br>
-参考：[Mac のvim-latexでForward Searchをする方法](http://inaka-boyaki.hatenablog.com/entry/2014/10/24/010145)
 
 ### Linux {#f59a6b76}
 
