@@ -29,6 +29,8 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
         - [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/)
 - [https://github.com/vim/vim](https://github.com/vim/vim)
     - [https://github.com/vim/vim/commits/master](https://github.com/vim/vim/commits/master)
+- [https://github.com/vim/vim-win32-installer](https://github.com/vim/vim-win32-installer)
+    - [https://github.com/vim/vim-win32-installer/releases](https://github.com/vim/vim-win32-installer/releases)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
     - [twitter](https://twitter.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
