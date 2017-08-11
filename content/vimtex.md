@@ -23,6 +23,7 @@ vimtex は Vim の LaTeX プラグインです．
 
 - [https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt](https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt)
 - [https://github.com/lervag/dotvim/blob/master/vimrc](https://github.com/lervag/dotvim/blob/master/vimrc)
+- [CLIのneovimでSkimとSyncTeXするには](http://qiita.com/KeitaNakamura/items/87dad47dc09ae8bf6abf)
 - [vimtexでuplatexがコンパイルできない（vimtex_compiler_latexmkの設定）](https://sakura-education.com/myblog/archives/936)
 
 vimtex はタイプセットに Latexmk を使用します．
