@@ -541,6 +541,11 @@ dvipdfmx:warning: << /Rotate 90 >> found. (Not supported yet)
 
 という警告が出て，ビューアで見た場合と異なる向きに回転して PDF 画像が取り込まれることがあります．
 これは，PDF の中に書かれている /Rotate という回転の命令に dvipdfmx が非対応であるためです．
+バージョン 20170806 以降では /Rotate に対応しています．XeTeXも
+xdvipdfmx-20170806 に対応したものであれば，/Rotate に対応します．
+TeX Live では TeX Live 2018 になります．W32TeX の場合には，dvipdfmx, XeTeX が
+既にアプデートされており，/Rotate を含む PDF イメージのとりこみに関して，
+pdfTeX と互換になっています．
 
 現状で有効な対処法として
 
