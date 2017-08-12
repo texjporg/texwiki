@@ -20,7 +20,7 @@ Microsoft Visual Studio Community を使用すれば自分でビルドして使�
 
 ### 動作環境 {#md46ea8e}
 
-Windows
+Windows, macOS
 
 ### Visual Studio Community で LaTeX {#l46cfc43}
 
