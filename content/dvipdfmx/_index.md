@@ -630,8 +630,5 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/ChangeLog?view=markup)
 - \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=markup)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=log)
-- \[[latexfmxdef\] Index of /trunk](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/)
-    - [log](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/?view=log)
-    - [ChangeLog](http://svn.gnu.org.ua/viewvc/latexfmxdef/trunk/ChangeLog?view=markup)
 
 [^1]: ただし，完全に同じというわけではありません．W32TeX には dvipdfmo というプログラムも存在し，そちらは完全に古い dvipdfm と同じ動作をします．
