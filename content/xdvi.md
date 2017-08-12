@@ -62,14 +62,11 @@ Warning: Cannot convert string "-*-helvetica-medium-r-*-*-10-*-*-*-*-*-*" to typ
 
 ターミナルから以下の作業を行います。
 
+macOS の場合
+
 ```
 $ cd /usr/local/texlive/????/texmf-dist/xdvi
 $ sudo cp XDvi XDvi.org
-```
-
-OS X の場合
-
-```
 $ brew install gnu-sed
 $ sudo gsed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
@@ -78,6 +75,8 @@ $ sudo gsed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XD
 Linux の場合
 
 ```
+$ cd /usr/local/texlive/????/texmf-dist/xdvi
+$ sudo cp XDvi XDvi.org
 $ sudo sed 's/\(^\*font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 $ sudo sed 's/\(^\*statusline\.font:\)\(.*\)helvetica\(.*\)/\1\2\*\3-\*/' -i XDvi
 ```
@@ -207,8 +206,8 @@ $ synctex help edit
 
 ### pxdvi とは {#e137631f}
 
-pxdvi は (e-)(u)pTeX で出力された DVI ファイルに対応した DVI プレビューアです。
-pxdvi は xdvik を (e-)(u)pTeX に対応させたものです。
+pxdvi は (e-(u))pTeX で出力された DVI ファイルに対応した DVI プレビューアです。
+pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 
 - [tltexjp](https://texjp.org/#tltexjp)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
