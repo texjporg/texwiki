@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 Mark A. Wicks 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu:80/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 Mark A. Wicks 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -20,7 +20,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 
 ### 特徴 {#ia9746cb}
 
-元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4 \[Internet Archive\]](https://web.archive.org/web/20160804001157/http://gaspra.kettering.edu:80/dvipdfm/dvipdfm-0.12.4.pdf) では次が挙げられています．
+元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) では次が挙げられています．
 
 - アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller DC の pdfmark に対応した多くの機能を提供します．
 - [HyperTeX](/HyperTeX/) (HTML)，[TPIC](/pic/)，カラー，PSFile，その他 [PostScript](/PostScript/) special など "標準的な" DVI special 機能を提供します．
@@ -172,7 +172,7 @@ texdoc dvipdfmx
 
 dvipdfm のマニュアルも参考になります．
 
-- [Dvipdfm User's Manual \[Internet Archive\]](https://web.archive.org/web/20160804001157/http://gaspra.kettering.edu:80/dvipdfm/dvipdfm-0.12.4.pdf)
+- [Dvipdfm User's Manual](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf)
 
 ### フォントの設定 {#tbddb566}
 
