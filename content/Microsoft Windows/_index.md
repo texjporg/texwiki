@@ -157,7 +157,7 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
     - [Texmaker](/Texmaker/)
     - [TeXnicCenter](/TeXnicCenter/)
 
-- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+- 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Emacs](/Emacs/)
         - [YaTeX](/YaTeX/)（野鳥）
         - [AUCTeX](/AUCTeX/)
@@ -167,8 +167,8 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
         - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
-    - [Atom](/Atom/)
     - [Visual Studio Code](</Visual Studio Code/>)
+    - [Atom](/Atom/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [gedit](/gedit/)
