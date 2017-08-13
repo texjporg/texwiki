@@ -12,6 +12,7 @@ pukiwiki: "ReVIEW"
 - [Re:VIEW](https://github.com/kmuto/review)
 - [Re:VIEW フォーマット](https://github.com/kmuto/review/blob/master/doc/format.ja.md)
 - [Arch Linux上にRe:VIEWをインストールする](http://ryochack.hatenablog.com/entry/2017/08/05/233651)
+- [Windows10でRe:VIEWでPDFを作成するまでの環境構築](https://blog.naotaco.com/archives/1396)
 - [Re:VIEWでドキュメントを書いた](http://d.hatena.ne.jp/E_Mattsan/20141223/1419318548)
 - [BasicTeXをインストールしてReVIEWでpdfを生成するまで](http://masawada.hatenablog.jp/entry/2014/07/12/153947)
 - [http://qiita.com/tags/review](http://qiita.com/tags/review)
