@@ -28,6 +28,7 @@ BasicTeX のインストールの概略は以下のとおりです。
 
 1. ダウンロードした BasicTeX.pkg をダブルクリックしてインストールします。
 1. ターミナル上で sudo tlmgr update --self --all を実行し，最新版までアップデートします。
+1. ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更します。
 1. BasicTeX には標準で日本語 pTeX / upTeX が入っていませんので，collection-langjapanese を追加でインストールします。
 
     ```
@@ -49,8 +50,8 @@ Homebrew で BasicTeX をインストールできます。
 ```
 $ brew cask install basictex
 $ sudo tlmgr update --self --all
-$ sudo tlmgr install collection-langjapanese
 $ sudo tlmgr paper a4
+$ sudo tlmgr install collection-langjapanese
 ```
 
 #### インストールの事例 {#q65e25e8}
