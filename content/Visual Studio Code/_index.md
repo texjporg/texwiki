@@ -166,5 +166,5 @@ Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。右�
 ### inverse search {#he69ec2b}
 
 ```
-"C:\Program Files (x86)\Microsoft VS Code\Code.exe" -g "%f:%l"
+"C:\Program Files\Microsoft VS Code\Code.exe" -g "%f:%l"
 ```
