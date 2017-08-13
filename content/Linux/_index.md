@@ -165,7 +165,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [Texmaker](/Texmaker/)
     - LaTeXila
 
-- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+- 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Emacs](/Emacs/)
         - [YaTeX](/YaTeX/)（野鳥）
         - [AUCTeX](/AUCTeX/)
@@ -175,8 +175,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
         - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
-    - [Atom](/Atom/)
     - [Visual Studio Code](</Visual Studio Code/>)
+    - [Atom](/Atom/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [gedit](/gedit/)
@@ -193,7 +193,8 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
-- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin) などで使われています．
+- [llpp](/llpp/)
+- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin), llpp などで使われています．
 - [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
 
 などがあります．
