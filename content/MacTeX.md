@@ -94,6 +94,13 @@ MacTeX のインストールの概略は以下のとおりです。
 1. [MacTeX のホームページ](http://tug.org/mactex/)または[ミラーサイト](/MacTeX/#mirror)から MacTeX.pkg をダウンロードします。
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
 1. [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。
+
+> - ターミナル上で sudo tlmgr update --self --all を実行してアップデートすることもできます。
+
+1. [TeX Live Utility](</TeX Live Utility/>) を用いてデフォルトの用紙サイズを A4 に変更します。
+
+> - ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更することもできます。
+
 1. ヒラギノフォントを TeX でも利用する場合は設定します。（→[macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>)）
 
 > - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできます。
@@ -120,15 +127,19 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
-- [MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20160608/1465311609)
+- [El Capitan / SierraでTeX環境をゼロから構築する方法](http://qiita.com/hideaki_polisci/items/3afd204449c6cdd995c9)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
-- [2017年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2017/)
-- \[[El Capitan\] MacTeX-2016をインストールする](http://qiita.com/Aruneko/items/6a524896df0e90181044)
-- [LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編](http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
-    <!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
-    <!-- -[[OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順:https://snap.textfile.org/20151006085255/]] -->
+
+<!-- MacTeX-2016 の場合 -->
+<!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
+<!-- -[[[El Capitan] MacTeX-2016をインストールする:http://qiita.com/Aruneko/items/6a524896df0e90181044]] -->
+<!-- -[[LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編:http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68]] -->
+
+<!-- MacTeX-2015 の場合 -->
+<!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
+<!-- -[[OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順:https://snap.textfile.org/20151006085255/]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
 <!-- 不具合対応まで書かれていたりするので，残しておきたいと思います． -->
