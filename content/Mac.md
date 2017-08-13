@@ -73,7 +73,7 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - [Texmaker](/Texmaker/)
     - TeXnicle
 
-- 汎用エディタ（TeX, LaTeX 用のモードが用意されているものがあります）
+- 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Emacs](/Emacs/)
         - [YaTeX](/YaTeX/)（野鳥）
         - [AUCTeX](/AUCTeX/)
@@ -83,13 +83,13 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
         - [Vim-LaTeX](/Vim-LaTeX/)
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
-    - [Atom](/Atom/)
     - [Visual Studio Code](</Visual Studio Code/>)
+    - [Atom](/Atom/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
+    - [CotEditor](/CotEditor/)
     - [gedit](/gedit/)
     - [Geany](/Geany/)
-    - [CotEditor](/CotEditor/)
 
 ## PDF ファイルビューア {#pdfviewer}
 
