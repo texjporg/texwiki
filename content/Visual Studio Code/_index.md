@@ -34,11 +34,14 @@ LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをする�
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
 - [https://github.com/James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
     - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
+    - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
 - [VSCode でLatexの日本語環境を作る](https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b)
 - [Visual Studio CodeでTeX](http://qiita.com/yakigac/items/9113bdb4bf12fdc0a0b0)
 - [VS CodeからTeXのコンパイルを出来るようにするまで(仮)](http://mstn.hateblo.jp/entry/2017/06/09/163912)
 
 #### LaTeX Workshop \[3.3.1\] - 2017-08-14（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されない {#d86f44c2}
+
+[LaTeX Workshop \[3.2.2\] - 2017-08-07 までは viewer/web/cmaps フォルダーが存在していた](https://github.com/James-Yu/LaTeX-Workshop/tree/edd12a5e11ff5f48fdb3cd60ee63801057de592a/viewer/web/cmaps)ため日本語が表示できていましたが [LaTeX Workshop \[3.3.0\] - 2017-08-08 で削除](https://github.com/James-Yu/LaTeX-Workshop/commit/0a0d227a435877f0c1a2043cc87355797f2610f5)され日本語が表示されなくなったようです。
 
 LaTeX Workshop \[3.3.1\] - 2017-08-14（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されません。
 
