@@ -10,3 +10,20 @@ pukiwiki: "jlreq"
 jlreq は Lua(jit)LaTeX + LuaTeX-ja, upLaTeX, pLaTeX で日本語組版処理の要件を満たす日本語ドキュメントクラス．
 
 - [https://github.com/abenori/jlreq](https://github.com/abenori/jlreq)
+
+### 公式ドキュメント（日本語版） {#r649c986}
+
+#### README-ja.md {#zf9254d0}
+
+- [https://github.com/abenori/jlreq/blob/master/README-ja.md](https://github.com/abenori/jlreq/blob/master/README-ja.md)
+- [http://mirrors.ctan.org/language/japanese/jlreq/README-ja.md](http://mirrors.ctan.org/language/japanese/jlreq/README-ja.md)
+
+#### jlreq-ja.html {#a5f5085e}
+
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/jlreq/jlreq-ja.html?view=co](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/latex/jlreq/jlreq-ja.html?view=co)
+- [http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/jlreq/jlreq-ja.html](http://www.tug.org/texlive/devsrc/Master/texmf-dist/doc/latex/jlreq/jlreq-ja.html)
+
+### 使い方 {#edac77d9}
+
+- \[[LaTeX\] jlreq --- もう一つの日本語ドキュメントクラス](http://konoyonohana.blog.fc2.com/blog-entry-382.html)
+- [https://github.com/zr-tex8r/latex-jlreq-sample](https://github.com/zr-tex8r/latex-jlreq-sample)
