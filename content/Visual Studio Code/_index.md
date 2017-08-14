@@ -32,19 +32,21 @@ LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをする�
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
+- [https://github.com/James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
+    - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
 - [VSCode でLatexの日本語環境を作る](https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b)
 - [Visual Studio CodeでTeX](http://qiita.com/yakigac/items/9113bdb4bf12fdc0a0b0)
 - [VS CodeからTeXのコンパイルを出来るようにするまで(仮)](http://mstn.hateblo.jp/entry/2017/06/09/163912)
 
-#### LaTeX Workshop \[3.3.0\] - 2017-08-08 で PDF ファイルを表示すると日本語が表示されない {#d86f44c2}
+#### LaTeX Workshop \[3.3.1\] - 2017-08-14（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されない {#d86f44c2}
 
-LaTeX Workshop \[3.3.0\] - 2017-08-08 で PDF ファイルを表示すると日本語が表示されません。
+LaTeX Workshop \[3.3.1\] - 2017-08-14（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されません。
 
 日本語を表示するためには以下の作業を実行します。
 
 1. [http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download) から PDF.js の Pre-built の Stable をクリックして zip ファイルをダウンロードして展開する
-1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.0\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.0/viewer/<br>フォルダーにコピーする
-1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.0\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.0/viewer/viewer.js<br>を開いて
+1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.1\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.1/viewer/<br>フォルダーにコピーする
+1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.1\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.1/viewer/viewer.js<br>を開いて
 
     ```
     PDFJS.cMapUrl = '../web/cmaps/';
