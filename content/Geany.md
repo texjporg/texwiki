@@ -112,7 +112,9 @@ V<ins>i</ins>ew PDF File
 
 ### [GeanyLaTeX](http://frank.uvena.de/en/Geany/geanylatex/) {#scc8a76c}
 
-- [http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX](http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX)
+- [http://git.geany.org/geany-plugins/tree/geanylatex](http://git.geany.org/geany-plugins/tree/geanylatex)
+    - [http://git.geany.org/geany-plugins/log/geanylatex](http://git.geany.org/geany-plugins/log/geanylatex)
+    - [http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX](http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX)
 
 \[ツール(<ins>T</ins>)\]-\[プラグインマネージャ(<ins>P</ins>)\] で GeanyLaTeX にチェックをいれてアクティブにします．<br>
 メニューに \[<ins>L</ins>aTeX\] や \[<ins>B</ins>ibTeX\] が追加されます．<br>
@@ -120,5 +122,6 @@ V<ins>i</ins>ew PDF File
 
 ## 関連リンク {#j4cca0b1}
 
+- [GeanyでもSyncTeX、fwdevinceを使って逆順検索（inverse search）も可能にする方法](http://www.lab-ssk.com/modifications-of-fwdevince-and-geany-to-enable-synctex-especially-inverse_search-on-chaletos)
 - [geany-dark-scheme](https://github.com/dflock/geany-dark-scheme)
 - [MacにGeanyをインストール](http://code-life.net/?p=951)
