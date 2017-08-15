@@ -54,4 +54,5 @@ DVI ファイルを PDF ファイルに変換してくれない場合は [Conver
 
 ## 関連リンク {#a3af5ca3}
 
+- [Skim.appの自動更新の設定](https://ubutun.blogspot.jp/2016/11/skimapp.html)
 - [PDF ViewerのSkimでTeXのdviファイルを見る](http://njet.oops.jp/wordpress/2011/01/27/pdf-viewer%E3%81%AEskim%E3%81%A7tex%E3%81%AEdvi%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%A6%8B%E3%82%8B/)
