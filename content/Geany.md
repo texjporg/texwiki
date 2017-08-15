@@ -124,4 +124,4 @@ V<ins>i</ins>ew PDF File
 
 - [GeanyでもSyncTeX、fwdevinceを使って逆順検索（inverse search）も可能にする方法](http://www.lab-ssk.com/modifications-of-fwdevince-and-geany-to-enable-synctex-especially-inverse_search-on-chaletos)
 - [geany-dark-scheme](https://github.com/dflock/geany-dark-scheme)
-- [MacにGeanyをインストール](http://code-life.net/?p=951)
+- [MacにGeanyをインストール](http://blog.code-life.net/blog/2011/12/06/geany/)
