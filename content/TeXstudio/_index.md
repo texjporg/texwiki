@@ -171,10 +171,10 @@ brew install poppler でうまくいかない場合は以下のように実行�
 
 ```
 $ cd ~
-$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.7.tar.gz
-$ tar xvf poppler-data-0.4.7.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.8.tar.gz
+$ tar xvf poppler-data-0.4.8.tar.gz
 $ sudo mkdir -p /usr/local/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.7/* /usr/local/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.8/* /usr/local/share/poppler
 ```
 
 poppler-data は以下のように配置されます．
