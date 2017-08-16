@@ -9,7 +9,9 @@ pukiwiki: "AeB"
 
 ## [The AcroTeX eDucation Bundle (AeB)](http://www.math.uakron.edu/~dpstory/webeq.html) {#laec97db}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## The AcroTeX eDucation Bundle (AeB) とは {#t8885b18}
 
@@ -20,7 +22,7 @@ The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使っ�
 - [Aeb_Pro](http://www.math.uakron.edu/~dpstory/aeb_pro.html)
 - [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
     - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
-- [http://www.ctan.org/pkg/acrotex](http://www.ctan.org/pkg/acrotex)
+- [https://ctan.org/pkg/acrotex](https://ctan.org/pkg/acrotex)
 - [CTAN:help/Catalogue/entries/acrotex.html](https://mirror.ctan.org/help/Catalogue/entries/acrotex.html)
 - [https://aur.archlinux.org/packages/texlive-acrotex/](https://aur.archlinux.org/packages/texlive-acrotex/)
 
