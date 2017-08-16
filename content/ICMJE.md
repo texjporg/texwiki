@@ -18,15 +18,18 @@ ICMJE とは，[国際医学雑誌編集者委員会（International Committee o
 
 <strong>目次</strong>
 
+***
+
+***
+
 ### ICMJE Recommendations (Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals) とは {#occb286d}
 
 医学の分野では，「[医学雑誌投稿に関する統一投稿規定 (Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals）](http://www.icmje.org/recommendations/)」が国際医学雑誌編集者委員会 (International Committee of Medical Journal Editors) により作成されています．
-現在 500 誌以上の雑誌が ICMJE Recommendations に従っています（[ICMJE Recommendations の採用雑誌一覧](http://www.icmje.org/journals.html)）．
+現在 500 誌以上の雑誌が ICMJE Recommendations に従っています（[ICMJE Recommendations の採用雑誌一覧](http://www.icmje.org/journals-following-the-icmje-recommendations/)）．
 これは，1979 年に発表され，最初に会議を開催した都市の名をとって[バンクーバースタイル](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%B3%E3%82%AF%E3%83%BC%E3%83%90%E3%83%BC%E6%96%B9%E5%BC%8F)と呼ばれています．
-最新版は 2013 年 12 月版です．
+最新版は 2016 年 12 月版です．
 日本語訳も存在します．
 
-- [第１章　はじめに - 臨床研究で学ぶ論文執筆](http://www.asca-co.com/oncol/2013/08/post.html)
 - [論文執筆の手引き - 東京女子医科大学学会](http://www.twmu.ac.jp/gakkai/journal/qa.html)
 - [投稿 | 【Ronbun.jp】医学論文を書く方のための究極サイト | 大鵬薬品工業株式会社](http://www.ronbun.jp/icmje/)
 
@@ -210,10 +213,10 @@ another nasty stupid acronym (ANSA) is a new approach to the use of ANSA, where 
 ### 文献スタイル {#n0cb9c0e}
 
 ICMJE Recommendations の文献スタイルの例は，
-[ここ](http://www.nlm.nih.gov/bsd/uniform_requirements.html)にあります．
+[ここ](https://www.nlm.nih.gov/bsd/uniform_requirements.html)にあります．
 これは，[Vancouverスタイル](http://en.wikipedia.org/wiki/Vancouver_system)と呼ばれるもので，幸いにも
 [vancouver.bst](https://mirror.ctan.org/biblio/bibtex/contrib/vancouver/vancouver.bst)
-［[詳細](http://www.ctan.org/pkg/vancouver)］が CTAN にあります．<br>
+［[詳細](https://ctan.org/pkg/vancouver)］が CTAN にあります．<br>
 これを使って
 
 ```
