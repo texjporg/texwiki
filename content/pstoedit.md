@@ -27,7 +27,7 @@ pstoedit は，[PostScript](/PostScript/) や [PDF](/PDF/) ファイルを，種
 
 [CTAN](/CTAN/) に公開されているのはかなり古いバージョンです (3.50)．
 
-- [http://www.ctan.org/pkg/pstoedit](http://www.ctan.org/pkg/pstoedit)
+- [https://ctan.org/pkg/pstoedit](https://ctan.org/pkg/pstoedit)
 
 ### 対応している出力形式 {#q2a22716}
 
@@ -48,7 +48,7 @@ pstoedit -help
 
 ### インストール {#ua330eea}
 
-#### OS X {#e64abc47}
+#### macOS {#e64abc47}
 
 MacPorts を利用しているなら，pstoedit という名前の Port をイントールします。
 
