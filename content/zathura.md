@@ -69,7 +69,7 @@ macOS, Linux, BSD
 
 ### Linux Mint {#cc8ebe01}
 
-- [http://packages.ubuntu.com/ja/zathura](http://packages.ubuntu.com/ja/zathura)
+- [https://packages.ubuntu.com/ja/zathura](https://packages.ubuntu.com/ja/zathura)
 
 ### Debian {#x8dcc844}
 
