@@ -55,11 +55,11 @@ dvips -z -o foo.ps foo.dvi
 
 - TrueType や OpenType フォントは利用できない。
 
-利用できるのは PostScript Type1 フォントと PK フォントです。
+> 利用できるのは PostScript Type1 フォントと PK フォントです。
 
 - PNG、JPEG、PDF などの画像は利用できない。
 
-画像は常に EPS へ変換して利用します。
+> 画像は常に EPS へ変換して利用します。
 
 #### dvips の用紙サイズ指定 {#b1d8723b}
 
@@ -68,7 +68,7 @@ dvips -z -o foo.ps foo.dvi
 
 レターサイズにするには dvips に -t letter というオプションをつけて実行します。
 
-私の[新ドキュメントクラス](/jsclasses/)でたとえば
+[jsclasses](/jsclasses/)でたとえば
 
 ```
 \documentclass[a4paper,papersize]{jsarticle}
@@ -102,7 +102,7 @@ dvips で出力した PS ファイルを PDF ファイルに変換するには�
 
 通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller DC のデフォルト設定では用紙がレターサイズになってしまいます。
 A4 にするには，ジョブオプションの設定でページサイズを変えるか，あるいは dvips に “-t a4” というオプションを付けてください。
-[新ドキュメントクラス](/jsclasses/)なら
+[jsclasses](/jsclasses/)なら
 
 ```
 \documentclass[a4paper,papersize]{jsarticle}
@@ -125,7 +125,7 @@ A4 にするには，ジョブオプションの設定でページサイズを�
 
 LaTeX で作成した日本語文書を
 dvips を用いて PDF 化する際，しおりが文字化けしないようにするためには
-[convbkmk](http://www.ctan.org/pkg/convbkmk) または bkmk2uni を使います。
+[convbkmk](https://ctan.org/pkg/convbkmk) または bkmk2uni を使います。
 
 - [http://www.t-lab.opal.ne.jp/tex/uptex.html](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - [convbkmkコマンドの使い方　覚え書き](http://konoyonohana.blog.fc2.com/blog-entry-35.html)
