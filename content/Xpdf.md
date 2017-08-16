@@ -7,14 +7,13 @@ pukiwiki: "Xpdf"
 
 # Xpdf
 
-## [Xpdf](http://www.foolabs.com/xpdf/) --- PDF 操作ツール (非推奨) {#z338a0d1}
+## [Xpdf](http://www.xpdfreader.com/) --- PDF ビューアと PDF 操作ツール {#z338a0d1}
 
-Xpdf は X Window System で利用できる PDF ビューア，および Windows, macOS, Linux で動作する PDF 操作ツールです。
+Xpdf は Windows, macOS, Linux で動作する PDF ビューア および PDF 操作ツールです。
 
-現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities ですので Xpdf を使わざるを得ない事情がなければ [Poppler](/Poppler/) をおすすめします。
-Xpdf は 2014-05-28 にリリースされた Xpdf 3.04 が最新のバージョンですが Poppler は現在でも開発が続けられています。 
+現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
 
-Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
+XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
 <!-- とりあえず項目を復活させました。 -->
 <!-- ビューアとして obsolete な理由説明がほしいです。 -->
@@ -36,7 +35,7 @@ Xpdf の PDF ビューアでトラブルが生じる場合は，[Poppler](/Poppl
 
 ### Xpdf のツール一覧 {#tools}
 
-PDF ビューアである xpdf のほかに，次のようなツールが存在します。
+PDF ビューアである xpdf (XpdfReader) のほかに，次のようなツールが存在します。
 
 - pdffonts ： PDF のフォント情報を表示
 - pdfimages ： PDF から画像を抽出する
@@ -52,13 +51,17 @@ PDF ビューアである xpdf のほかに，次のようなツールが存在�
 
 #### Windows {#inst-windows}
 
+[http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Windows 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
+
 [TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) をインストールすれば poppler utilities はすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
 
 #### macOS {#inst-mac}
 
 macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
-- 最も簡単な方法
+- 公式サイトのバイナリを使用する方法
+    - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf tools をダウンロードしてインストールします。必要であれば xpdf-japanese.tar.gz もダウンロードしてインストールします。
+- マスクメロンの Xpdf.app を使用する方法
     - [マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，Applications フォルダにインストールします。
         /Applications/Xpdf.app 及び /Applications/Xpdf.app/bin
         にこの順番でパスを通します。ターミナルから
@@ -133,16 +136,13 @@ macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は�
 
 ### 関連記事 {#links}
 
-- [http://www.ctan.org/tex-archive/support/xpdf](http://www.ctan.org/tex-archive/support/xpdf)
-- Forum「xpdf utilities」
-    [forum:1342](https://okumuralab.org/tex/mod/forum/discuss.php?d=1342)
-
-- Forum「Xpdf内蔵のコマンドで日本語エラー」
-    [forum:1104](https://okumuralab.org/tex/mod/forum/discuss.php?d=1104)
-
 - [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
 - Xpdf の pdftotext （PDFファイルからテキストを抽出．参考：[＠IT：PDFファイルからテキストを抽出するには](http://www.atmarkit.co.jp/flinux/rensai/linuxtips/745textfpdf.html)）
 
 #### ライセンス {#license}
 
 GPLv3, GPLv2
+
+#### ChangeLog {#g8361031}
+
+- [https://fossies.org/linux/xpdf/CHANGES](https://fossies.org/linux/xpdf/CHANGES)
