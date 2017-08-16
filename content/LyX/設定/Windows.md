@@ -144,7 +144,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[DVI　　　　　　　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[Postscript　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>dvips -Ppdf -z -f $$i | convbkmk -u > $$o</ins><br>
+> 変換子(O):　　　<ins>dvips -z -f $$i | convbkmk -u > $$o</ins><br>
 > 追加フラグ(X):　<br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
