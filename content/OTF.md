@@ -1014,9 +1014,9 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ## 関連リンク {#tcc8e32f}
 
-- [http://www.ctan.org/pkg/japanese-otf](http://www.ctan.org/pkg/japanese-otf)
-- [http://www.ctan.org/pkg/japanese-otf-uptex](http://www.ctan.org/pkg/japanese-otf-uptex)
-- [http://www.ctan.org/pkg/ptex-fontmaps](http://www.ctan.org/pkg/ptex-fontmaps)
+- [https://ctan.org/pkg/japanese-otf](https://ctan.org/pkg/japanese-otf)
+- [https://ctan.org/pkg/japanese-otf-uptex](https://ctan.org/pkg/japanese-otf-uptex)
+- [https://ctan.org/pkg/ptex-fontmaps](https://ctan.org/pkg/ptex-fontmaps)
 - [upLaTeX + \propshape](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1235)
 - [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
 - [日本語フォントのセットアップ](http://www.fugenji.org/~thomas/texlive-guide/font_setup.html) （Tamotsu Thomas UEDA さん）
