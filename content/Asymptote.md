@@ -38,10 +38,10 @@ Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がな�
 
 [本家](https://github.com/vectorgraphics/asymptote/releases) や [CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/) にソースコードがあります。
 
-OS X でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
+macOS でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
 Asymptote ソースを展開したディレクトリに
-[gc-7.4.2.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.4.2.tar.gz)
+[gc-7.6.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.6.0.tar.gz)
 を展開せずに置き，
 
 ```
@@ -67,7 +67,7 @@ make install
 <!--  -->
 <!-- し，一つ上に上がって make し直せばよい。 -->
 
-### OS X でのプレビュー {#dc357da5}
+### macOS でのプレビュー {#dc357da5}
 
 標準では gv あるいは GSview を使った PostScript プレビューになります。
 これは Mac でも（gv をインストールしておけば）可能ですが，X11
@@ -85,7 +85,7 @@ outformat="pdf";
 
 asy または asy -f pdf で起動します。help と入力すれば詳しいマニュアルが現れます。
 
-#### 日本語対応 (OS X) {#q20b2da8}
+#### 日本語対応 (macOS) {#q20b2da8}
 
 /.asy/config.asy を次のようにすれば日本語が通るようです（要日本語対応
 [Ghostscript](/Ghostscript/)）。
