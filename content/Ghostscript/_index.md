@@ -71,7 +71,7 @@ Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正�
 
 GSview は [CTAN](/CTAN/) から提供されなくなりました．
 
-- [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
+- [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](https://ctan.org/pkg/gsview)
 
 ### 動作環境 {#e8b195dc}
 
