@@ -31,7 +31,7 @@ TeX Live, W32TeX には Latexmk が最初から含まれています．ただし
 <!--  -->
 <!-- ***Linux Mint [#r8b1b822] -->
 <!--  -->
-<!-- -http://packages.ubuntu.com/ja/latexmk -->
+<!-- -https://packages.ubuntu.com/ja/latexmk -->
 <!--  -->
 <!-- ***Debian [#la23c405] -->
 <!--  -->
