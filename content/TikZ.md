@@ -34,7 +34,7 @@ LaTeX の場合について記述します。
 - [PGF and TikZ -- Graphic systems for TeX](https://sourceforge.net/projects/pgf/)
     <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
 
-- [http://www.ctan.org/pkg/pgf](http://www.ctan.org/pkg/pgf)
+- [https://ctan.org/pkg/pgf](https://ctan.org/pkg/pgf)
 - CTAN.ring:help/Catalogue/entries/pgf.html
     - [e-TeX](/e-TeX/) 拡張が必要です。 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
     - [TeX Live](</TeX Live/>) 2014 以降または [W32TeX](/W32TeX/) であれば動作に問題はありません。
@@ -99,7 +99,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- 1165ページの長大なマニュアル (ver 3.0.0 の場合)
+- 1161ページの長大なマニュアル (ver 3.0.1a の場合)
 
 が付属しています。
 TikZ/PGF のマニュアルはコマンドラインから
@@ -112,7 +112,7 @@ texdoc tikz
 マニュアルの前半には 70 ページにも及ぶチュートリアルがあるので，学習を始めるのは比較的容易です。
 ところが，示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり，マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
 
-たとえば，チュートリアルの p.39 (ver 3.0.0 の場合) にある「パスの交錯」のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
+たとえば，チュートリアルの p.39 (ver 3.0.1a の場合) にある「パスの交錯」のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
 プリアンブルに
 
 ```
@@ -946,11 +946,11 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html))
     - [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
     - 上のパッケージは TeX Live 2016 (2016/10/15) および W32TeX (2016/10/16) 以降に取り込まれています。 → [pLaTeX の新しいパッケージバンドル「platex-tools」の紹介](http://acetaminophen.hatenablog.com/entry/2016/10/17/235850)
-- dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.0.0 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.116 (ver 3.0.0)。以下同）
-    - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.172）
-    - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.175）
-    - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.174）
-    - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1068）
+- dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.0.0 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.115 (ver 3.0.1a)。以下同）
+    - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.171）
+    - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.174）
+    - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.173）
+    - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1064）
     - \[remember picture\] を dvipdfmx で使用するためには pxpgfmark を読み込む必要があります。（[TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html)）
         - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
