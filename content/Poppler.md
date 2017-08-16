@@ -9,7 +9,7 @@ pukiwiki: "Poppler"
 
 ## [Poppler](https://poppler.freedesktop.org/) --- PDF ビューア・操作ツール {#c1f030c4}
 
-Poppler は，PDF ドキュメントのレンダリングに利用されるライブラリで，ベースとなった [Xpdf](/Xpdf/) に比べてレンダリングが向上されています。
+Poppler は，PDF ドキュメントのレンダリングに利用されるライブラリで，ベースとなった [Xpdf](/Xpdf/) 3.0 に比べてレンダリングが向上されています。
 ビューアとして Poppler を使用して問題が発生する場合は [MuPDF](/MuPDF/) を使用することを検討してください。
 以下のプログラムが PDF ビューアとして Poppler を使用しています。
 
@@ -102,9 +102,7 @@ Poppler をインストールしたい場合は，xpdf-tools と pdftohtml を�
 
 #### Arch Linux {#kbfeb6e5}
 
-- ArchLinuxPackageSearch:poppler
-- ArchLinuxPackageSearch.name:poppler
-- ArchLinuxPackageSearch.name:poppler-data
+- [https://www.archlinux.org/packages/?q=poppler](https://www.archlinux.org/packages/?q=poppler)
 
 ```
 pacman -S poppler poppler-data
@@ -112,10 +110,10 @@ pacman -S poppler poppler-data
 
 #### Linux Mint/Debian/Ubuntu {#k603e696}
 
-- UbuntuPackageSearch:poppler
-- DebianPackageSearch:poppler
+- [https://packages.ubuntu.com/ja/poppler](https://packages.ubuntu.com/ja/poppler)
+- [https://packages.debian.org/ja/poppler](https://packages.debian.org/ja/poppler)
 
-Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler57 という名前だったり，libpoppler58 という名前だったりします。
+Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler58 という名前だったり，libpoppler64 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
 日本語を使う場合は poppler-data も必要です。
 
