@@ -13,7 +13,7 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 以下のプログラムが Qt を使用しています．
 
 - LaTeX editor: [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
-- PDF viewer: [Okular](/Okular/), [qpdfview](/qpdfview/), [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/), [XpdfReader](/Xpdf/)
+- PDF viewer: [Okular](/Okular/), [qpdfview](/qpdfview/), [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/), [Xpdf (XpdfReader)](/Xpdf/)
 
 ***
 
