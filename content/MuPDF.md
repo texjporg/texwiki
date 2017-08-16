@@ -14,7 +14,7 @@ MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 ビューアとして MuPDF を使用して問題が発生する場合は，代わりに [Poppler](/Poppler/) を利用することを検討してください．
 以下のプログラムが MuPDF を使用しています．
 
-- PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin)
+- PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin), [llpp](/llpp/)
 
 ***
 
@@ -50,11 +50,7 @@ sudo port install mupdf
 
 #### Arch Linux {#y10f7abd}
 
-- ArchLinuxPackageSearch:mupdf
-- ArchLinuxPackageSearch.name:mupdf
-- ArchLinuxPackageSearch.name:mupdf-gl
-- ArchLinuxPackageSearch.name:mupdf-tools
-- ArchLinuxPackageSearch.name:libmupdf
+- [https://www.archlinux.org/packages/?q=mupdf](https://www.archlinux.org/packages/?q=mupdf)
 
 ```
 pacman -S mupdf mupdf-tools
@@ -62,13 +58,15 @@ pacman -S mupdf mupdf-tools
 
 #### Linux Mint/Debian/Ubuntu {#od9b1036}
 
-- UbuntuPackageSearch:mupdf
-- DebianPackageSearch:mupdf
+- [https://packages.ubuntu.com/ja/mupdf](https://packages.ubuntu.com/ja/mupdf)
+- [https://packages.ubuntu.com/ja/mupdf-tools](https://packages.ubuntu.com/ja/mupdf-tools)
+- [https://packages.debian.org/ja/mupdf](https://packages.debian.org/ja/mupdf)
+- [https://packages.debian.org/ja/mupdf-tools](https://packages.debian.org/ja/mupdf-tools)
 
 Linux Mint や Debian GNU/Linux や Ubuntu では、MuPDF のパッケージは libmupdf-dev と mupdf と mupdf-tools の3つに分かれています。
 自分で MuPDF を使ったプログラムをコンパイルするのでなければ、libmupdf-dev をインストールする必要はありません。
 mupdf と mupdf-tools を入れたら OK です。
-mupdf-tools 1.7a-1 には mutool と mudraw が含まれていますが現在の MuPDF では mudraw の機能は mutool に統合されており mudraw バイナリは存在しません。
+Ubuntu 16.04 LTS に収録されている mupdf-tools 1.7a-1 には mutool と mudraw が含まれていますが現在の MuPDF では mudraw の機能は mutool に統合されており mudraw バイナリは存在しません。
 
 ```
 sudo apt install mupdf mupdf-tools
