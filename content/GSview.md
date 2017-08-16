@@ -24,7 +24,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
     - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
 - GSview は CTAN から提供されなくなりました。
-    - 参考：[GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](http://www.ctan.org/pkg/gsview)
+    - 参考：[GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](https://ctan.org/pkg/gsview)
 
 ### インストール {#je84b8ea}
 
