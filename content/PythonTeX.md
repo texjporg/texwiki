@@ -13,7 +13,7 @@ PythonTeX は，LaTeX ドキュメントの中に埋め込んだ [Python](/Pytho
 Python 以外に [Ruby](/Ruby/), Julia, Octave, Sage, Bash, Rust もサポートしています．
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
-- [http://www.ctan.org/pkg/pythontex](http://www.ctan.org/pkg/pythontex)
+- [https://ctan.org/pkg/pythontex](https://ctan.org/pkg/pythontex)
 
 ***
 
@@ -26,9 +26,19 @@ Python 以外に [Ruby](/Ruby/), Julia, Octave, Sage, Bash, Rust もサポート
 PythonTeX の利用には，パッケージ自体の他に [Python](/Python/) のインタプリタと [Pygments](http://pygments.org/) という Python モジュールが必要になります．
 Pygments は pip を使ってインストールできます．
 
+Python 3 を使用している場合は
+
 ```
-pip install pygments
+pip3 install pygments
 ```
+
+Python 2  を使用している場合は
+
+```
+pip2 install pygments
+```
+
+でインストールできます．
 
 ### 使い方 {#oa863e50}
 
