@@ -9,15 +9,15 @@ pukiwiki: "BXjscls"
 
 ## [BXjscls](http://zrbabbler.sp.land.to/bxjscls.html) {#l3cac28c}
 
-BXjscls パッケージは pdflatex, lualatex, xelatex, uplatex, platex で使用可能な日本語文書組版のための LaTeX 文書クラスのコレクションです．
+BXjscls パッケージは pdflatex, lualatex, xelatex, platex-ng, uplatex, platex で使用可能な日本語文書組版のための LaTeX 文書クラスのコレクションです．
 TeX Live, W32TeX に含まれています．
 
 奥村先生の「[pLaTeX2e 新ドキュメントクラス](/jsclasses/)」は pLaTeX2e での使用を前提としているため，uplatex, platex 以外では使用することができません．
 BXjscls は新ドキュメントクラスから pLaTeX 依存の部分を分離したもので，これと各エンジン用の日本語処理パッケージを組み合わせることで，pLaTeX 以外でも新ドキュメントクラスを用いた場合と同等の文書作成が可能となります．
 
 - [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
-- [http://www.ctan.org/pkg/bxjscls](http://www.ctan.org/pkg/bxjscls)
-- [http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls](http://www.ctan.org/tex-archive/language/japanese/BX/bxjscls)
+- [https://ctan.org/pkg/bxjscls](https://ctan.org/pkg/bxjscls)
+- [https://ctan.org/tex-archive/language/japanese/BX/bxjscls](https://ctan.org/tex-archive/language/japanese/BX/bxjscls)
 
 ***
 
