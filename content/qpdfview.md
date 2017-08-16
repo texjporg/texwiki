@@ -9,7 +9,9 @@ pukiwiki: "qpdfview"
 
 ## [qpdfview](https://launchpad.net/qpdfview) {#gb497957}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## qpdfview とは {#o070cb99}
 
@@ -46,7 +48,7 @@ Linux
 
 ### Linux Mint {#c6d3b357}
 
-- [http://packages.ubuntu.com/ja/qpdfview](http://packages.ubuntu.com/ja/qpdfview)
+- [https://packages.ubuntu.com/ja/qpdfview](https://packages.ubuntu.com/ja/qpdfview)
 
 ### Debian {#g4ce84b5}
 
