@@ -15,8 +15,8 @@ pukiwiki: "Geany"
 
 ## Geany とは {#u4d63bea}
 
-Geany は GTK+ を使用した高速で軽量な IDE です．
-Geany は IDE の機能を持つテキストエディタとしても使用出来ます．
+Geany は GTK+ を使用した高速で軽量なテキストエディタです．
+Geany は 基本的な IDE の機能があります．
 Geany は LaTeX の編集に対応しています．
 Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．
 
@@ -44,7 +44,7 @@ Windows, macOS, Linux
 \[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
 
 Geany はデフォルトで LaTeX のビルドに対応しています．<br>
-以下の設定では TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を使用しています．<br>
+以下の設定では [ptex2pdf](/ptex2pdf/) や latexmk を使用しています．<br>
 BibTeX や hyperref パッケージなどを使用する場合は latexmk を使用してください．<br>
 
 #### LaTeX コマンド {#z6996bd9}
@@ -54,7 +54,7 @@ LaTeX -> <ins>P</ins>DF
 
 : ptex2pdf -u -l -ot '-synctex=1 --file-line-error-style' "%f"
 
-: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -Ppdf -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
+: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
 
 : pdflatex -synctex=1 --file-line-error-style "%f"
 
@@ -94,6 +94,8 @@ V<ins>i</ins>ew PDF File
 : texstudio --pdf-viewer-only "%e.pdf"
 
 : mupdf "%e.pdf"
+
+: xpdf "%e.pdf"
 
 : firefox -new-window "%e.pdf"
 
