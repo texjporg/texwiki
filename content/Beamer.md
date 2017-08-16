@@ -11,7 +11,7 @@ pukiwiki: "Beamer"
 
 Beamer は プレゼンテーション用の LaTeX クラスです．
 
-- [http://www.ctan.org/pkg/beamer](http://www.ctan.org/pkg/beamer)
+- [https://ctan.org/pkg/beamer](https://ctan.org/pkg/beamer)
 - [https://github.com/josephwright/beamer](https://github.com/josephwright/beamer)
 - [https://bitbucket.org/rivanvx/beamer/wiki/Home](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 
@@ -66,7 +66,7 @@ Beamer は
 <!--  -->
 <!-- CTAN の Beamer では発生しなかったので CTAN からダウンロードして使用することをおすすめします． -->
 
-### dvipdfmx, XeLaTeX でナビゲーションシンボルと \framezoom が機能しない → [bxdpx-beamer](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
+### dvipdfmx, XeLaTeX でナビゲーションシンボルと \framezoom が機能しない → [bxdpx-beamer](https://ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
 
 bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
@@ -84,7 +84,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
 <!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
 - [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
-- [http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/](http://www.ctan.org/tex-archive/macros/latex/contrib/beamer/)
+- [https://ctan.org/tex-archive/macros/latex/contrib/beamer/](https://ctan.org/tex-archive/macros/latex/contrib/beamer/)
 
 ### Arch Linux {#h5c71065}
 
@@ -92,7 +92,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 ### Linux Mint {#x6d699a5}
 
-- [http://packages.ubuntu.com/ja/texlive-latex-recommended](http://packages.ubuntu.com/ja/texlive-latex-recommended)
+- [https://packages.ubuntu.com/ja/texlive-latex-recommended](https://packages.ubuntu.com/ja/texlive-latex-recommended)
 
 ### Debian {#h1b8334f}
 
