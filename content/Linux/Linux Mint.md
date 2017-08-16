@@ -30,11 +30,11 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
 - [Debian support - TeX Live - TeX Users Group](http://www.tug.org/texlive/debian.html)
-- [http://packages.ubuntu.com/ja/texlive-full](http://packages.ubuntu.com/ja/texlive-full)
+- [https://packages.ubuntu.com/ja/texlive-full](https://packages.ubuntu.com/ja/texlive-full)
 - [https://packages.debian.org/search?keywords=texlive-full](https://packages.debian.org/search?keywords=texlive-full)
-- [http://packages.ubuntu.com/ja/texlive-lang-japanese](http://packages.ubuntu.com/ja/texlive-lang-japanese)
+- [https://packages.ubuntu.com/ja/texlive-lang-japanese](https://packages.ubuntu.com/ja/texlive-lang-japanese)
 - [https://packages.debian.org/search?keywords=texlive-lang-japanese](https://packages.debian.org/search?keywords=texlive-lang-japanese)
-- [http://packages.ubuntu.com/ja/xzdec](http://packages.ubuntu.com/ja/xzdec)
+- [https://packages.ubuntu.com/ja/xzdec](https://packages.ubuntu.com/ja/xzdec)
 - [https://packages.debian.org/search?keywords=xzdec](https://packages.debian.org/search?keywords=xzdec)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
     - [trunk](https://code.launchpad.net/~naesten/tex-live/trunk)
