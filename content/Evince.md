@@ -76,7 +76,7 @@ sudo pacman -S evince poppler-data
 
 ### Linux Mint/Debian/Ubuntu {#lacd43b5}
 
-- [http://packages.ubuntu.com/ja/evince](http://packages.ubuntu.com/ja/evince)
+- [https://packages.ubuntu.com/ja/evince](https://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
 Evince は Gnome の標準ドキュメントビューアなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
