@@ -15,7 +15,7 @@ ConTeXt は Hans Hagen による文書作成システム，TeX のマクロパ�
 
 <!-- ConTeXt の概要を，日本語で説明したサイトがほぼ見当たりません．詳しい方，加筆お願いします． -->
 <!-- 全くもって詳しいわけではないですが，ConTeXt Wiki などを参照しながら加筆してみました．事実誤認などあれば修正願います．- - kmaeda (2015-05-05) -->
-- [http://www.ctan.org/pkg/context](http://www.ctan.org/pkg/context)
+- [https://ctan.org/pkg/context](https://ctan.org/pkg/context)
 
 ***
 
