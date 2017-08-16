@@ -449,7 +449,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
 
 ## 使い方 {#a6515cd5}
 
-### uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で bxjsarticle を使用する場合 {#mc51aa00}
+### uplatex + dvipdfmx, platex-ng, pdflatex, lualatex, luajitlatex, xelatex で bxjsarticle を使用する場合 {#mc51aa00}
 
 org ファイルの先頭に
 
