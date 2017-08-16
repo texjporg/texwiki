@@ -227,7 +227,7 @@ function! PdfupLaTeX(type)
   elseif a:type == 'pdfuplatex2'
     if has('win32') || has('win64')
       let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
-      let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
+      let dvips = 'dvips -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf.exe' . ' "' . masterBaseName . '.ps"'
       if g:viewer == 'acroread'
         let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
@@ -237,7 +237,7 @@ function! PdfupLaTeX(type)
       endif
     else
       let latex = 'uplatex -synctex=1' . ' "' . masterTeXFile . '"'
-      let dvips = 'dvips -Ppdf -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
+      let dvips = 'dvips -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf' . ' "' . masterBaseName . '.ps"'
       let execString = 'cd ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
     endif
