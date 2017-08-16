@@ -105,7 +105,7 @@ C-x C-f ~/
 (setq tex-dvi-print-command "start AcroRd32")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
-        ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.exe %r.ps" "%f" "%r.pdf")
+        ("uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %f && dvips -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf.exe %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("lualatex -cmdx -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("luajitlatex -cmdx -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -201,7 +201,7 @@ C-x C-f ~/
 (setq tex-dvi-print-command "open -a \"Adobe Acrobat Reader DC\"")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
-        ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
+        ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("luajitlatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -277,7 +277,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 (setq tex-dvi-print-command "perl -e 'system(\"wine cmd /c start AcroRd32.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
-        ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -Ppdf -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
+        ("uplatex -synctex=1 -interaction=nonstopmode %f && dvips -z -f %r.dvi | convbkmk -u > %r.ps && ps2pdf %r.ps" "%f" "%r.pdf")
         ("pdflatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
         ("luajitlatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
