@@ -20,15 +20,15 @@ TeX Live，W32TeX に標準で含まれています．
 
 - [Michael Sharpe Home Page](http://math.ucsd.edu/~msharpe/)
     - [MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
-- [http://www.ctan.org/pkg/newtx](http://www.ctan.org/pkg/newtx)
+- [https://ctan.org/pkg/newtx](https://ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
-- [http://www.ctan.org/pkg/newtxtt](http://www.ctan.org/pkg/newtxtt)
+- [https://ctan.org/pkg/newtxtt](https://ctan.org/pkg/newtxtt)
     - newtxtt – Enhancement of typewriter fonts from newtx
-- [http://www.ctan.org/pkg/newpx](http://www.ctan.org/pkg/newpx)
+- [https://ctan.org/pkg/newpx](https://ctan.org/pkg/newpx)
     - newpx – Al­ter­na­tive uses of the PX fonts, with im­proved met­rics
-- [http://www.ctan.org/pkg/boondox](http://www.ctan.org/pkg/boondox)
+- [https://ctan.org/pkg/boondox](https://ctan.org/pkg/boondox)
     - boon­dox – Math­e­mat­i­cal al­pha­bets de­rived from the STIX fonts
-- [http://www.ctan.org/pkg/fontaxes](http://www.ctan.org/pkg/fontaxes)
+- [https://ctan.org/pkg/fontaxes](https://ctan.org/pkg/fontaxes)
     - fontaxes – Ad­di­tional font axes for LaTeX
 
 ### License {#ga9ac954}
@@ -76,7 +76,7 @@ Modified txmi/txmi1 tfm/vf files
 [txmi1.zip](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/txmi1.zip))
 improve the spacing of $S$ with subscripts.
 
-- [http://www.ctan.org/pkg/txfonts](http://www.ctan.org/pkg/txfonts)
+- [https://ctan.org/pkg/txfonts](https://ctan.org/pkg/txfonts)
 
 ### News {#b42eab94}
 
