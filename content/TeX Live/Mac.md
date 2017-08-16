@@ -60,7 +60,7 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
 を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されることになったので，
-ここでは MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
+ここでは x86_64-darwin バイナリがサポートしていないレガシーな環境でも TeX Live をインストールできるように MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -476,7 +476,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 [みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
-自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
+自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
 
 ### Ghostscript で日本語を扱えるようにする設定（ReadMe-ja.pdf より） {#mc6bf937}
 
