@@ -60,7 +60,7 @@ LaTeX がインストールしてあるとして，次のようにコマンド�
 
 ```
 $ latex testeq.tex
-$ dvips -E -Ppdf testeq.dvi -o testeq.eps
+$ dvips -E testeq.dvi -o testeq.eps
 ```
 
 これで [testeq.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。
@@ -114,7 +114,7 @@ EPS にプレビューを付けておけば，配置したときにプレビュ�
 こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
-mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（“-Ppdf” の代わりに TeX Live なら “-Pdownload35”，W32TeX なら “-Pdl”）。
+mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（TeX Live なら “-Pdownload35”，W32TeX なら “-Pdl”）。
 
 ## Illustrator に配置 3 (macOS) {#z9ef5010}
 
@@ -194,7 +194,7 @@ eps2write は gs9.14 以降で追加されたデバイスなので，お使い�
 
 ```
 $ platex testeq.tex
-$ dvips -E -Ppdf testeq.dvi -o testeq.eps
+$ dvips -E testeq.dvi -o testeq.eps
 $ eps2eps testeq.eps testeq2.eps
 ```
 
