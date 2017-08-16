@@ -7,11 +7,9 @@ pukiwiki: "Xpdf"
 
 # Xpdf
 
-## [Xpdf](http://www.xpdfreader.com/) --- PDF ビューアと PDF 操作ツール {#z338a0d1}
+## [Xpdf](http://www.xpdfreader.com/) --- PDF ビューア・操作ツール {#z338a0d1}
 
-Xpdf は Windows, macOS, Linux で動作する PDF ビューア および PDF 操作ツールです。
-
-現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
+Xpdf は Windows, macOS, Linux で動作する PDF ビューア（XpdfReader）および PDF 操作ツール（Xpdf tools）です。
 
 XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
@@ -33,19 +31,30 @@ XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用
 
 ***
 
+### 公式サイト {#tbf3dbd3}
+
+- [http://www.xpdfreader.com/](http://www.xpdfreader.com/)
+- [http://www.glyphandcog.com/](http://www.glyphandcog.com/) （開発元の Glyph &amp; Cog のページ）
+
+### お知らせ {#pd98a397}
+
+Xpdf 4.00 で GUI に使用されるツールキットが Motif から Qt に変更されました。
+
+現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
+
 ### Xpdf のツール一覧 {#tools}
 
-PDF ビューアである xpdf (XpdfReader) のほかに，次のようなツールが存在します。
+PDF ビューアである [xpdf](http://www.xpdfreader.com/xpdf-man.html)（XpdfReader）のほかに，次のような PDF 操作ツール（Xpdf tools）も提供されています。
 
-- pdffonts ： PDF のフォント情報を表示
-- pdfimages ： PDF から画像を抽出する
-- pdfinfo ： PDF の文書情報を表示
-- pdftops ： PDF を [PostScript](/PostScript/) ファイルに変換
-- pdftotext ： PDF からテキストを抽出
-- pdftoppm ： PDF を PPM 画像形式に変換
-- pdftopng ： PDF の各ページを PNG に変換。Poppler では pdftopng は削除され，機能強化された pdftocairo に置き換えられた。
-- pdftohtml ： PDF を HTML に変換
-- pdfdetach ： PDF にアタッチされた部分をファイルとして抜き出すプログラム
+- [pdffonts](http://www.xpdfreader.com/pdffonts-man.html) ： PDF のフォント情報を表示
+- [pdfimages](http://www.xpdfreader.com/pdfimages-man.html) ： PDF から画像を抽出する
+- [pdfinfo](http://www.xpdfreader.com/pdfinfo-man.html) ： PDF の文書情報を表示
+- [pdftops](http://www.xpdfreader.com/pdftops-man.html) ： PDF を [PostScript](/PostScript/) ファイルに変換
+- [pdftotext](http://www.xpdfreader.com/pdftotext-man.html) ： PDF からテキストを抽出
+- [pdftoppm](http://www.xpdfreader.com/pdftoppm-man.html) ： PDF を PPM 画像形式に変換
+- [pdftopng](http://www.xpdfreader.com/pdftopng-man.html) ： PDF の各ページを PNG に変換。Poppler では pdftopng は削除され，機能強化された pdftocairo に置き換えられた。
+- [pdftohtml](http://www.xpdfreader.com/pdftohtml-man.html) ： PDF を HTML に変換
+- [pdfdetach](http://www.xpdfreader.com/pdfdetach-man.html) ： PDF にアタッチされた部分をファイルとして抜き出すプログラム
 
 ### インストール方法 {#install}
 
@@ -53,7 +62,7 @@ PDF ビューアである xpdf (XpdfReader) のほかに，次のようなツー
 
 [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Windows 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
 
-[TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) をインストールすれば poppler utilities はすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
+Xpdf tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
 
 #### macOS {#inst-mac}
 
