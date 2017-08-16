@@ -62,14 +62,14 @@ PDF ビューアである [xpdf](http://www.xpdfreader.com/xpdf-man.html)（Xpdf
 
 [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Windows 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
 
-Xpdf tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
+Windows の場合は Xpdf tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
 
 #### macOS {#inst-mac}
 
 macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
 - 公式サイトのバイナリを使用する方法
-    - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf tools をダウンロードしてインストールします。必要であれば xpdf-japanese.tar.gz もダウンロードしてインストールします。
+    - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
 - マスクメロンの Xpdf.app を使用する方法
     - [マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，Applications フォルダにインストールします。
         /Applications/Xpdf.app 及び /Applications/Xpdf.app/bin
@@ -135,9 +135,14 @@ macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は�
     - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
         - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb)
 
+- ソースコードからインストールする方法
+    - ソースコードからインストールする場合は [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
+
 #### Linux {#inst-linux}
 
-- [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
+[http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Linux 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
+
+Linux の場合は Xpdf tools をインストールしなくても poppler-utils（Linux Mint/Debian/Ubuntu や Fedora など）あるいは poppler（Arch Linux など）という名前のパッケージと poppler-data をインストールすれば poppler utilities が使用できます。
 
 ### お知らせ {#notice}
 
