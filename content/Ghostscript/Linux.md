@@ -11,7 +11,9 @@ pukiwiki: "Ghostscript/Linux"
 
 ## Ghostscript for Linux {#j0238493}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ### ダウンロード/インストール {#g31ae747}
 
@@ -21,7 +23,7 @@ pukiwiki: "Ghostscript/Linux"
 
 #### Linux Mint {#eef2e142}
 
-- [http://packages.ubuntu.com/ja/ghostscript](http://packages.ubuntu.com/ja/ghostscript)
+- [https://packages.ubuntu.com/ja/ghostscript](https://packages.ubuntu.com/ja/ghostscript)
 
 #### Debian {#e2250e99}
 
