@@ -38,9 +38,13 @@ Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packa
 
 LaTeX での文書作成を補助するパッケージも色々とあります。
 
+- [https://atom.io/packages/search?q=latex](https://atom.io/packages/search?q=latex)
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
+- [atom-latex](https://atom.io/packages/atom-latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
 - [latextools](https://atom.io/packages/latextools) -- Atom から LaTeX 文書をコンパイル・プレビュー
-- [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライト
+    <!-- -[[myLaTeX:https://atom.io/packages/mylatex]] - - LaTeX の構文ハイライトとスニペット -->
+
+- [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライトとスニペット
 - [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
 - [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
 
@@ -52,17 +56,11 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 ### ターミナルエミュレータ {#v730a901}
 
-[term2](https://atom.io/packages/term2) や [terminal-plus](https://atom.io/packages/terminal-plus) などのターミナルエミュレータを Atom 内で使うパッケージがあります。
-
-### その他あると便利なパッケージ {#b9051f32}
-
-- [open-recent](https://atom.io/packages/open-recent)
-- [save-session](https://atom.io/packages/save-session)
-- [file-icons](https://atom.io/packages/file-icons)
+[platformio-ide-terminal](https://atom.io/packages/platformio-ide-terminal) や [terminal-plus](https://atom.io/packages/terminal-plus) などのターミナルエミュレータを Atom 内で使うパッケージがあります。
 
 ## LaTeX 環境の整備 {#o1b2f62a}
 
-latex もしくは latextools, language-latex, latexer, pdf-view などのパッケージをとりあえず入れましょう。
+latex, language-latex, pdf-view などのパッケージをインストールしましょう。
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
@@ -118,6 +116,8 @@ Ctrl+Alt+S をタイプすると SumatraPDF で forward search が実行され�
 SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
 
 ### latextools (LaTeXTools for Atom) パッケージと Skim との連携 (macOS) {#i645c95d}
+
+latextools パッケージも使用可能なようです。
 
 - [Macの設定の覚書](http://www-het.phys.sci.osaka-u.ac.jp/~yamaguch/j/mac_setting.html)
 
