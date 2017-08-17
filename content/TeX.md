@@ -111,10 +111,10 @@ LaTeX のエラーメッセージは [LaTeX](/LaTeX/) の項目にまとめて�
 TeX を用いた組版を容易にするために作成されたマクロ集です．フォーマットと呼ばれることも多いです．
 通常，TeX エンジンを起動するとコマンド名に対応したマクロパッケージがあらかじめ読み込まれた状態になります．
 
-- [plain TeX](https://www.ctan.org/pkg/plain)：Knuth による自身の著書のためのマクロパッケージ．最も基本となるもので，単に端末で tex と打った時に読み込まれるのはこれです．
+- [plain TeX](https://ctan.org/pkg/plain)：Knuth による自身の著書のためのマクロパッケージ．最も基本となるもので，単に端末で tex と打った時に読み込まれるのはこれです．
 - [LaTeX](/LaTeX/)
 - [ConTeXt](/ConTeXt/)
-- [AMS-TeX](https://www.ctan.org/pkg/amstex)：アメリカ数学会作成のマクロパッケージ．現在は LaTeX パッケージ化された [AMS-LaTeX](/AMS-LaTeX/) を使うことが推奨されています．
+- [AMS-TeX](https://ctan.org/pkg/amstex)：アメリカ数学会作成のマクロパッケージ．現在は LaTeX パッケージ化された [AMS-LaTeX](/AMS-LaTeX/) を使うことが推奨されています．
 
 ここまではメジャーなものですが，他にも TeX Live には色々あるようです．
 
@@ -122,10 +122,10 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 - [CSTeX](http://petr.olsak.net/cstex/)
 - [JadeTeX](http://jadetex.sourceforge.net/)
 - [Lollipop](https://ctan.org/pkg/lollipop)
-- [MeX](https://www.ctan.org/tex-archive/language/polish)
-- [MLTeX](https://www.ctan.org/pkg/mltex)
+- [MeX](https://ctan.org/tex-archive/language/polish)
+- [MLTeX](https://ctan.org/pkg/mltex)
 - [TeXsis](http://www.texsis.org/)
-- [xmltex](https://www.ctan.org/pkg/xmltex)
+- [xmltex](https://ctan.org/pkg/xmltex)
 
 ### マクロパッケージを読み込まずに起動するには {#xa386bfe}
 
@@ -148,8 +148,8 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (INITEX)
 
 ### OS による実行速度の違い {#d99944d5}
 
-Windows や OS X に比べ，Linux の方が LaTeX の実行速度が速いようです．
-もし Windows や OS X を使用していて LaTeX の実行速度が遅いと感じる場合は，この機会に Linux を試してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
+Windows や macOS に比べ，Linux の方が LaTeX の実行速度が速いようです．
+もし Windows や macOS を使用していて LaTeX の実行速度が遅いと感じる場合は，この機会に Linux を試してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
 
 - [TeXLiveのlatexが遅い件](http://pman0214.blog37.fc2.com/blog-entry-305.html)
 - [MacとUbuntuでのLaTeX実行速度の違い](http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
