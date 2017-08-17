@@ -19,8 +19,8 @@ BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 
 ### 関連リンク {#nee629d4}
 
-- [http://www.ctan.org/pkg/biblatex](http://www.ctan.org/pkg/biblatex)
-- [http://www.ctan.org/pkg/biber](http://www.ctan.org/pkg/biber)
+- [https://ctan.org/pkg/biblatex](https://ctan.org/pkg/biblatex)
+- [https://ctan.org/pkg/biber](https://ctan.org/pkg/biber)
 - [http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=Biblatex&sort=rel](http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=Biblatex&sort=rel)
 - [「biblatex」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=biblatex)
 - [biblatex ～初歩の初歩～ ---- もう一つの［参考文献］生成ツール](http://konoyonohana.blog.fc2.com/blog-entry-96.html)
