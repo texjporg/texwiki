@@ -49,7 +49,7 @@ Windows
 
 ### ChangeLog {#q10cf331}
 
-- [New features and fixed bugs](http://notepad-plus-plus.org/download/)
+- [New features and fixed bugs](https://notepad-plus-plus.org/download/)
 - [コミットログ](https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master)
 
 ### 派生版 {#l02b5ab5}
