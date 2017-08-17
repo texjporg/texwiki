@@ -24,7 +24,7 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
 - [フォーラム](https://osdn.jp/projects/luatex-ja/forums/)
     - [公開討議/質問](https://osdn.jp/forum/forum.php?forum_id=25558)
-- [CTAN](http://www.ctan.org/tex-archive/macros/luatex/generic/luatexja)
+- [CTAN: /tex-archive/macros/luatex/generic/luatexja](https://ctan.org/tex-archive/macros/luatex/generic/luatexja)
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
 
@@ -99,6 +99,7 @@ $ sudo port install texlive-lang-japanese -doc
 
 現状では XeLaTeX, upLaTeX, pLaTeX と比べるとタイプセットに時間がかかります．
 
+- [LuaTeX が実はそんなに遅くないかも知れない件](http://d.hatena.ne.jp/zrbabbler/20170730/1501402087)，[LaTeX： 日本語文書のコンパイル所要時間比較](https://gist.github.com/zr-tex8r/483712fa0940ef22815b04a68b825bf3)
 - [https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459](https://github.com/doraTeX/TeX2img/issues/6#issuecomment-75005459)
 - [luatex でPDFを作れるようになるまで](http://sqr.hateblo.jp/entry/2014/04/20/151523)
 - [定理環境の修飾 mdframed.sty](http://ubutun.blogspot.jp/2013/08/mdframedsty.html)
@@ -139,7 +140,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．
 
 ### 他のパッケージとの併用 {#kdbc7cfe}
 
-#### [microtype](http://ctan.org/pkg/microtype) {#m65358c5}
+#### [microtype](https://ctan.org/pkg/microtype) {#m65358c5}
 
 ltjsarticle.cls と microtype パッケージを使用してタイプセットすると以下のエラーが発生することがあるかもしれません．
 
@@ -222,7 +223,7 @@ japanese パッケージで提供される [japanese.ldf](http://www.tug.org/svn
 
 #### polyglossia {#vf242886}
 
-babel の事実上の後継として [polyglossia](http://ctan.org/pkg/polyglossia) が公開されています．
+babel の事実上の後継として [polyglossia](https://ctan.org/pkg/polyglossia) が公開されています．
 polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と W32TeX に含まれています．
 
 ### 関連リンク {#sf395095}
