@@ -133,7 +133,7 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-|  [findbib](http://www.ctan.org/pkg/findbib)  | UNIX, lynx  | 決められたキーで引用しておくと，WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム  |
+|  [findbib](https://ctan.org/pkg/findbib)  | UNIX, lynx  | 決められたキーで引用しておくと，WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム  |
 | [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール．[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている． |
 | [RubyBTeX](https://github.com/kazutomi/rubybtex) | Ruby | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
 | [BibTeX-Ruby](https://github.com/inukshuk/bibtex-ruby) | Ruby | BibTeXを扱うためのRubyライブラリ |
