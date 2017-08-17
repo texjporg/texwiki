@@ -9,8 +9,10 @@ pukiwiki: "media9"
 
 ## media9 {#e4438562}
 
-[media9](http://www.ctan.org/pkg/media9) は PDF ファイルに動画や 3D オブジェクトを埋め込むためのパッケージです．
+[media9](https://github.com/agrahn/media9) は PDF ファイルに動画や 3D オブジェクトを埋め込むためのパッケージです．
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+
+- [https://ctan.org/pkg/media9](https://ctan.org/pkg/media9)
 
 ### 日本語 pTeX で使用する場合の注意 {#t6u982n7}
 
