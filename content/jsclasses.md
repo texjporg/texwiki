@@ -73,6 +73,6 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
 
 #### CTAN 配布サイト {#q7ee37eb}
 
-- [http://www.ctan.org/pkg/jsclasses](http://www.ctan.org/pkg/jsclasses)
+- [https://ctan.org/pkg/jsclasses](https://ctan.org/pkg/jsclasses)
 
 [^1]: 環境によっては texhash コマンドかもしれません．
