@@ -63,7 +63,7 @@ TeX で文書を作成する場合は行番号の計算方法をエディタ的�
 
 - [h-tom's Warehouse - top](http://htom.in.coocan.jp/)
     - [h-tom's Warehouse - 秀丸エディタ macro](http://htom.in.coocan.jp/macro/)
-        - [hmonig.dll](http://htom.in.coocan.jp/macro/macro_dll.html#label-21)
+        - [hmonig.dll](http://htom.in.coocan.jp/macro/macro_dll.html#N3.2)
 
 ### マクロ {#q3a2d324}
 
@@ -77,10 +77,9 @@ LaTeX 用の支援として開発されたマクロ集としては，祝鳥が�
 
 ### 関連リンク {#mec8cd02}
 
-- [秀丸と SumatraPDF で SyncTeX](http://www.muskmelon.jp/?p=1024)
-- [秀丸で TeX を使う設定](http://www.muskmelon.jp/?p=1012)
+- [秀丸 | 検索結果:  | マスクメロン](http://www.muskmelon.jp/?s=%E7%A7%80%E4%B8%B8)
 - [TeXLive 2012でLaTeXのエラー発生時に秀丸エディタを起動する設定](http://d.hatena.ne.jp/hyuki/20121016/tex)
-- [秀丸エディタのお勧めの設定](http://tipszone.jp/20121003_hidemaru-config/)
+- [秀丸エディタのお勧めの設定](https://tipszone.jp/20121003_hidemaru-config/)
 - [秀丸エディタ - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/hidemaru/)
 - [秀丸エディタ - Vector](http://www.vector.co.jp/soft/win95/writing/se086280.html)
 
