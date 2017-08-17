@@ -16,7 +16,7 @@ pukiwiki: "NppExec"
 ## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) を使用する {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
-\[プラグイン\]-\[Plugin Manager\]-\[Show Plugin Manager\] で NppExec を選択してインストールできます．<br>
+[https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/](https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/) から NppExec の 64-bit プラグイン（NppExec20160628_dll_x64-2.zip）あるいは 32-bit プラグイン（NppExec20160628_dll.zip）がダウンロードできます．<br>
 \[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
@@ -84,7 +84,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps"<br>
 
 <br>
 
@@ -482,7 +482,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -Ppdf -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
