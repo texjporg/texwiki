@@ -44,8 +44,8 @@ pukiwiki: "TeX と化学"
 
 - [chemmacros](http://ctan.org/pkg/chemmacros)
     ：mhchem 同様の機能を持つ
-    [chemformula](http://www.ctan.org/pkg/chemformula)，立体ギリシャ文字を出力する
-    [chemgreek](http://www.ctan.org/pkg/chemgreek)
+    [chemformula](https://ctan.org/pkg/chemformula)，立体ギリシャ文字を出力する
+    [chemgreek](https://ctan.org/pkg/chemgreek)
     等を用いて，より広範囲の整形をサポート
 
 ### 化学の構造式 {#c2b9c735}
@@ -79,7 +79,7 @@ pukiwiki: "TeX と化学"
 
 ## 関連リンク {#w1803c82}
 
-- [CTAN: Topic chemistry](http://www.ctan.org/topic/chemistry)
+- [CTAN: Topic chemistry](https://ctan.org/topic/chemistry)
 - [Known packages - myChemistry](http://www.mychemistry.eu/known-packages/)
 - [LaTeX/Chemical Graphics](http://en.wikibooks.org/wiki/LaTeX/Chemical_Graphics)
 - [Writing Chemistry with LaTeX (1/3)](http://www.jon.hk/2010/03/writing-chemistry-with-latex-13/), [(2/3)](http://www.jon.hk/2010/03/writing-chemistry-with-latex-23/), [(3/3)](http://www.jon.hk/2010/03/writing-chemistry-with-latex-33/)
