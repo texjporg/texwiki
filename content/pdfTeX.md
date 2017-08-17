@@ -106,7 +106,7 @@ pdfTeX における、マージン・カーニングのもっとも簡単な使�
 
 #### microtype パッケージ {#g8eee99d}
 
-pdfLaTeX で Microtypography 拡張を使う場合は [microtype パッケージ](http://ctan.org/pkg/microtype) が便利です。
+pdfLaTeX で Microtypography 拡張を使う場合は [microtype パッケージ](https://ctan.org/pkg/microtype) が便利です。
 
 ```
  \usepackage{microtype}
