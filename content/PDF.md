@@ -10,7 +10,7 @@ pukiwiki: "PDF"
 ## PDF {#kf03468a}
 
 PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](http://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
-現在は，国際規格 [ISO 32000-1](http://www.iso.org/iso/catalogue_detail.htm?csnumber=51502) として ISO により公開されています．
+現在は，国際規格 [ISO 32000-1](https://www.iso.org/standard/51502.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
 その用途は二十数年前の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
@@ -27,7 +27,7 @@ Adobe より，元となる PDF の仕様書が公開されています (ISO の
 - [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
-macOS と Windows 10 では標準で PDF 出力が可能です．
+Windows 10 と macOS では標準で PDF 出力が可能です．
 Windows 10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
 
 ***
@@ -40,16 +40,22 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 ### PDF を扱うソフトウェア {#o7e2223a}
 
-macOS や Windows 10 では，プリント機能を持ったどんなアプリケーションからも，
+Windows 10 と macOS では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
 また，PostScript や PDF などを扱う，GhostScript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
-[PDFCreator](http://www.pdfforge.org/)，
-[CubePDF](http://www.cube-soft.jp/cubepdf/)，
-[BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php)，
-[CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)，
-[PDF24 Creator](http://en.pdf24.org/)，
-[PrimoPDF](http://www.primopdf.com/)，
-[pdf995](http://www.pdf995.com/)
+
+PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
+
+- [PDF24 Creator](https://en.pdf24.org/)
+- [PrimoPDF](http://www.primopdf.com/)
+- [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)
+
+広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
+
+- [CubePDF](http://www.cube-soft.jp/cubepdf/)（[悪質アドウェアが附属してくるフリーソフトまとめ](https://matome.naver.jp/odai/2138879734745823101/2140077252856194503) を参照）
+- [PDFCreator](http://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
+- [BullZip PDF Printer Community Edition](http://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
+- [pdf995](http://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](http://blog.so-net.ne.jp/susshi_blog/2005-07-29) を参照）
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
