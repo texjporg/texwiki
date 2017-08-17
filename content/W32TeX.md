@@ -286,8 +286,8 @@ command_line_encoding.dvips = none
 ## 関連リンク {#b5892c8c}
 
 - [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
-- [CTAN web interface: package w32tex](http://www.ctan.org/pkg/w32tex)
-- [CTAN web interface: Directory listing for /systems/win32/w32tex](http://www.ctan.org/tex-archive/systems/win32/w32tex)
+- [CTAN web interface: package w32tex](https://ctan.org/pkg/w32tex)
+- [CTAN web interface: Directory listing for /systems/win32/w32tex](https://ctan.org/tex-archive/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
 - [W32TeXとは - はてなキーワード](http://d.hatena.ne.jp/keyword/W32TeX)
 - [「W32TeX」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/W32TeX)
