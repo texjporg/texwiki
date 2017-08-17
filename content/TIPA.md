@@ -9,9 +9,9 @@ pukiwiki: "TIPA"
 
 ## TIPA {#z57e2958}
 
-[TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm) は東京大学の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
+TIPA は東京大学の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
 
-- [http://www.ctan.org/pkg/tipa](http://www.ctan.org/pkg/tipa)
+- [https://ctan.org/pkg/tipa](https://ctan.org/pkg/tipa)
 
 TIPA の T は <strong>T</strong>eX または <strong>T</strong>okyo（東京大学？）を意味するとのことです．
 同じ福井さんが製作に携わった TSIPA をベースに，大幅に機能およびフォントデザインを改良したものです．
@@ -26,8 +26,7 @@ TIPA のフォントには IPA の記号のほか，アメリカの音声学，�
 これらは Computer Modern をベースに設計されており，Roman，Slanted，Bold Extended，Sans Serif，Typewriter 体など豊富な種類が使用できます（Italic 体はありません）．
 また，Times 及び Helvetica にデザインを近付けたフォント xipa も含まれています．
 
-福井さんのウェブサイトの
-[tipa ディレクトリ](http://www.l.u-tokyo.ac.jp/~fkr/tipa/)から最新版がダウンロードできます（執筆時点での最新版は tipa-1.3 です）．
+[https://ctan.org/pkg/tipa](https://ctan.org/pkg/tipa) から最新版がダウンロードできます（執筆時点での最新版は tipa-1.3 です）．
 [CTAN:help/Catalogue/entries/tipa.html](https://mirror.ctan.org/help/Catalogue/entries/tipa.html) でもミラーされています．
 
 ### インストール {#j6ff5f64}
@@ -133,7 +132,7 @@ updmap --enable Map tipa.map
 
 ### 関連リンク {#vd0297b3}
 
-- [コンピューターの部屋 TIPA](http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
+- [コンピューターの部屋 TIPA](https://web.archive.org/web/20131011023815/http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
     @ 東京大学大学院 人文社会系研究科 韓国朝鮮文化研究専攻）
 
 - [LaTeX と TIPA を用いて音声科学／音声学する](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)［[Internet Archive](http://www.archive.org/)
