@@ -10,7 +10,7 @@ pukiwiki: "Sublime Text"
 ## [Sublime Text](http://www.sublimetext.com/) {#pefc7cc2}
 
 Sublime Text はカスタマイズ性に優れたモダンなテキストエディタで，シェアウェアです。
-Windows, OS X, Linux で動作します。
+Windows, macOS, Linux で動作します。
 
 <strong>公式サイト</strong>
 
@@ -19,7 +19,7 @@ Windows, OS X, Linux で動作します。
 - [Sublime Text 3](http://www.sublimetext.com/3)
 - [Sublime Text 3 - Dev Builds](http://www.sublimetext.com/3dev)
 
-LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用のエディタとして便利に利用できます。
+LaTeXTools というプラグインを利用すれば，LaTeX 用のエディタとして便利に利用できます。
 
 ***
 
@@ -30,18 +30,12 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 #### 日本語入力のインライン変換対応 {#cde09531}
 
 - [IMESupport for Sublime Text](https://github.com/chikatoike/IMESupport)
-- [「IMESupport」の検索結果一覧 - ゆり日記](http://d.hatena.ne.jp/chikatoike/archive?word=IMESupport)
-- [WindowsのIMEでインライン変換を正しく表示できるようにしてみた](http://qiita.com/items/5ccbe63d36009680e0e6)
+    - [「IMESupport」の検索結果一覧 - ゆり日記](http://d.hatena.ne.jp/chikatoike/archive?word=IMESupport)
 - [Sublime Mozc Input](http://yasuyuky.github.io/SublimeMozcInput/)
-- [SublimeIBus](https://github.com/chikatoike/SublimeIBus)
 
 #### Shift_JIS, EUC-JP 対応 {#bc9dcabf}
 
 - [ConvertToUTF8](https://github.com/seanliang/ConvertToUTF8)
-
-#### メニューの日本語化 {#p0f8c581}
-
-- [sublimetext_japanize](https://github.com/kik0220/sublimetext_japanize)
 
 ### PDF ビューアとの連携 {#hf07fc30}
 
@@ -79,9 +73,9 @@ LaTeXTools や LaTeX Plus というプラグインを利用すれば，LaTeX 用
 
 - [SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools)
 - [latex | Tech, TeX and Theory](https://tekonomist.wordpress.com/tag/latex/)
+- [Sublime text 3 備忘録](http://qiita.com/Oska/items/cc22528fb92d288652d7)
 - [SublimeText3+LaTeXTools+TeXLive2015でWindowsなplatex執筆環境構築](http://yanoshi.hatenablog.jp/entry/2016/01/21/165454)
 - [Sublime Text 3を試してみた(Texのコンパイル用）](http://himaneko8lynx.blog.fc2.com/blog-entry-479.html)
-- [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/wichy/13c970563a2f5a489c9d)
 
 ### インストール {#i186fdb3}
 
@@ -140,7 +134,7 @@ User/LaTeXTools.sublime-settings の中身の
 TeX ファイルを編集して Ctrl+B をタイプするとビルドが開始されて PDF ファイルが作成されます。
 PDF ファイルが作成されると SumatraPDF で PDF ファイルが表示されて forward search が実行されます。
 
-### OS X {#c2e22368}
+### macOS {#c2e22368}
 
 #### ビルドコマンドの設定 {#x87217d3}
 
@@ -241,15 +235,3 @@ PDF ファイルが作成されると Evince で PDF ファイルが表示され
 ### ChangeLog {#zcc7e097}
 
 [https://github.com/SublimeText/LaTeXTools/commits/master](https://github.com/SublimeText/LaTeXTools/commits/master)
-
-## [LaTeX-Plus](https://github.com/randy3k/LaTeX-Plus) {#xcd64fdd}
-
-### インストール {#b204bf82}
-
-メニューの \[Preferences\] &gt; \[Package Control\] を選択します。
-Package Control: Install Package を選択します。
-LaTeX-Plus を入力して LaTeX-Plus を選択します。
-
-### ChangeLog {#zc1e6581}
-
-[https://github.com/randy3k/LaTeX-Plus/commits/master](https://github.com/randy3k/LaTeX-Plus/commits/master)
