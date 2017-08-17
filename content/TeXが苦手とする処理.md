@@ -29,7 +29,7 @@ pukiwiki: "TeXが苦手とする処理"
 - [udline パッケージ](http://minamo.my.coocan.jp/tex/udline.html)：みなも氏。実線・破線・点線・波線などによる下線・打ち消し線・上線を提供
 - [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)：吉永徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
 
-なお，欧文のみでよければ，[ulem パッケージ](http://www.ctan.org/pkg/ulem)が下線・二重下線・打ち消し線・波線などを提供しています。
+なお，欧文のみでよければ，[ulem パッケージ](https://ctan.org/pkg/ulem)が下線・二重下線・打ち消し線・波線などを提供しています。
 
 ### 飾り枠（ときとしてページ分割可能なもの） {#t43fb31c}
 
@@ -42,7 +42,7 @@ TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手�
 
 - 画像にする
 - [TikZ](/TikZ/) などの「描画用」パッケージを用いる
-    - [tcolorbox パッケージ](http://www.ctan.org/pkg/tcolorbox)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）
+    - [tcolorbox パッケージ](https://ctan.org/pkg/tcolorbox)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）
         - [tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)
         - [LaTeX におけるページをまたいだ囲み記事スタイルのまとめ](http://note.golden-lucky.net/2009/07/latex.html)
         - [TeXユーザの集い2015 発表スライド：tcolorbox による装飾表現](http://texmedicine.hatenadiary.jp/entry/2015/11/08/122447)，[TeXユーザの集い2015](http://texmedicine.hatenadiary.jp/entry/2015/11/08/113310)
@@ -171,7 +171,7 @@ niceframe パッケージを用いる場合には，このパッケージで使�
 
 #### 複数ページにわたる枠 (1) ［枠自体を分割する場合］ {#b3d25e0d}
 
-「テキストに枠をつけたものを分割する」という形でのページ分割の必要がある場合，長方形の枠については [boites パッケージ](http://www.ctan.org/pkg/boites)が提供する breakbox 環境が利用できます。
+「テキストに枠をつけたものを分割する」という形でのページ分割の必要がある場合，長方形の枠については [boites パッケージ](https://ctan.org/pkg/boites)が提供する breakbox 環境が利用できます。
 なお，ページ分割可能な枠の四隅を四分円にしたり斜めに切り落とした（八角形状の）枠にしたものは（著名な）既製品では提供されていないようですので，ユーザ自身で作成することになります。
 要は，boites パッケージによる breakbox 環境などの処理をふまえつつ
 「枠の四隅」のところだけ書き換えればよいということになります。
