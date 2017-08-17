@@ -16,7 +16,7 @@ TDS (TeX Directory Structure) とは，TeX の標準的なディレクトリ構�
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) はこの TDS に従っています。
 
 - [http://www.tug.org/texinfohtml/tds.html](http://www.tug.org/texinfohtml/tds.html)
-- [http://www.ctan.org/tex-archive/tds](http://www.ctan.org/tex-archive/tds)
+- [https://ctan.org/tex-archive/tds](https://ctan.org/tex-archive/tds)
 
 実際にどのように TeX に関するファイルやディレクトリを配置したらよいのか考えます。
 [パッケージ](</パッケージ/>)や[フォント](</フォント/>)を追加する際，あるいは使用しているパッケージの置き場を探す際に参考になるはずです。
