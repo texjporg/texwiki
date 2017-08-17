@@ -7,7 +7,7 @@ pukiwiki: "Xy-pic"
 
 # Xy-pic
 
-## [Xy-pic](http://www.ctan.org/pkg/xypic) {#b9215e15}
+## [Xy-pic](https://ctan.org/pkg/xypic) {#b9215e15}
 
 <!-- pic というページから移転し，個別項目としました． (2015-02-10 アセトアミノフェン) -->
 
