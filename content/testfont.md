@@ -76,8 +76,8 @@ Appendix H の第 4 節（“フォントサンプル”の節） <!-- あるい
 
 testfont のインタラクティブな入力を手間だと感じる場合は
 
-- [fntproof](http://www.ctan.org/pkg/fntproof) を用いる方法
-- [fonttable](http://www.ctan.org/pkg/fonttable) という LaTeX パッケージを用いる方法
+- [fntproof](https://ctan.org/pkg/fntproof) を用いる方法
+- [fonttable](https://ctan.org/pkg/fonttable) という LaTeX パッケージを用いる方法
 
 があります．
 testfont や fntproof では TFM 名を調べる必要がありますが，fonttable.sty なら
