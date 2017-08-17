@@ -56,18 +56,15 @@ PDF を出力できます．
 - [Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat.html)
     ([Adobe Systems](http://www.adobe.com/jp/))
 
-- [「かんたんPDF」シリーズ](http://www.e-frontier.co.jp/kantan-pdf/)
-    ([イーフロンティア](http://www.e-frontier.co.jp/))
-
 - [いきなりPDF シリーズ](http://www.sourcenext.com/titles/pdf/?i=com_top)
     ([ソースネクスト](http://www.sourcenext.com/))
 
-- [SkyPDF クライアントソフトウェア](http://www.skycom.jp/product_client.html) ([スカイコム](http://www.skycom.jp/))
+- [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](http://www.skycom.jp/))
 - [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
 - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
 
 既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat DC では多様なことができます．Acrobat DC の使い方については，
-[Acrobat ヘルプ](https://helpx.adobe.com/jp/acrobat/topics.html) を参照して下さい．
+[Acrobat DC ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
 
 以下では，主にオープンソースのソフトウェアについて紹介していきます．
 
@@ -87,7 +84,7 @@ PDF を出力できます．
 - pdftotext -- テキストを抽出する
 - pdfunite -- 文書の結合を行う
 
-また，[Apatch PDFBox](http://pdfbox.apache.org/) ， [QPDF](/QPDF/) や [pdftk](/pdftk/) などにも様々な処理を行うプログラムが含まれます．
+また，[Apache PDFBox](https://pdfbox.apache.org/) ， [QPDF](/QPDF/) や [pdftk](/pdftk/) などにも様々な処理を行うプログラムが含まれます．
 
 #### ファイルの結合やページの抽出 {#a6819b00}
 
@@ -96,7 +93,7 @@ PDF を出力できます．
 
 #### テキスト抽出 {#p1620d11}
 
-[Poppler](/Poppler/) に含まれる pdftotext や [Apatch PDFBox](http://pdfbox.apache.org/) を使うと，PDF 文書からテキストのみ抽出できます。
+[Poppler](/Poppler/) に含まれる pdftotext や [Apache PDFBox](https://pdfbox.apache.org/) を使うと，PDF 文書からテキストのみ抽出できます。
 
 #### パスワード保護 {#r212a8b0}
 
@@ -188,7 +185,7 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 #### Ruby と Python {#u080d4b3}
 
-[Prawn](http://prawn.majesticseacreature.com/) は Ruby 製の PDF 生成ライブラリです．Ruby のみで書かれています．
+[Prawn](https://github.com/prawnpdf/prawn) は Ruby 製の PDF 生成ライブラリです．Ruby のみで書かれています．
 
 その他，Ruby では，[Poppler バインディング](https://rubygems.org/gems/poppler/) や，PDF 生成の選択肢として [rcairo](https://github.com/rcairo/rcairo) による Cairo での出力などが挙げられます． 
 
