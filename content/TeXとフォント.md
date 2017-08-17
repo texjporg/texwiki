@@ -104,11 +104,11 @@ TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそ�
 
 CTAN のページは
 
-- [http://www.ctan.org/tex-archive/fonts/ebgaramond](http://www.ctan.org/tex-archive/fonts/ebgaramond)
+- [https://ctan.org/tex-archive/fonts/ebgaramond](https://ctan.org/tex-archive/fonts/ebgaramond)
 
 Google Fonts のページ
 
-- [http://www.google.com/fonts/specimen/EB+Garamond](http://www.google.com/fonts/specimen/EB+Garamond)
+- [https://fonts.google.com/specimen/EB+Garamond](https://fonts.google.com/specimen/EB+Garamond)
 
 ### Adobe Source ファミリ {#g85c2bee}
 
@@ -124,7 +124,7 @@ tlmgr から入れましょう。
 
 CTAN ページ
 
-- [Source Serif Pro](http://www.ctan.org/tex-archive/fonts/sourceserifpro)、[Source Sans Pro](http://www.ctan.org/tex-archive/fonts/sourcesanspro)、[Source Code Pro](http://www.ctan.org/tex-archive/fonts/sourcecodepro/)
+- [Source Serif Pro](https://ctan.org/tex-archive/fonts/sourceserifpro)、[Source Sans Pro](https://ctan.org/tex-archive/fonts/sourcesanspro)、[Source Code Pro](https://ctan.org/tex-archive/fonts/sourcecodepro/)
 
 ソースコード表示用に使える Source Code Pro があります。
 
@@ -310,7 +310,7 @@ TeX の役割はある決まった大きさの領域に、文字という「箱�
 TFM　についての（フォーマットに関する）詳しい解説については
 
 - David Fuchs による解説 "[TeX Font Metric files](http://www.tug.org/TUGboat/Articles/tb02-1/tb02fuchstfm.pdf)", TUGboat 2 (1): 12–16.\]
-- [tftopl.web](http://www.ctan.org/tex-archive/systems/knuth/dist/texware/tftopl.web) を WEAVE して得られるドキュメント。\[tftopl は、TFM ファイルを人間が可読なフォーマット (PL) に変換するプログラムです\]
+- [tftopl.web](https://ctan.org/tex-archive/systems/knuth/dist/texware/tftopl.web) を WEAVE して得られるドキュメント。\[tftopl は、TFM ファイルを人間が可読なフォーマット (PL) に変換するプログラムです\]
 
 を参照してください。（上記リンク先の PDF は低画質のスキャン画像です）
 
@@ -769,4 +769,4 @@ kpsewhich がそのファイルを見つけられないということは、フ�
 
 参考文献
 
-- [(La)TeX font errors cheat sheet](http://www.ctan.org/tex-archive/info/tex-font-errors-cheatsheet)
+- [(La)TeX font errors cheat sheet](https://ctan.org/tex-archive/info/tex-font-errors-cheatsheet)
