@@ -121,7 +121,7 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 - [Eplain](https://tug.org/eplain/)：Expanded plain TeX
 - [CSTeX](http://petr.olsak.net/cstex/)
 - [JadeTeX](http://jadetex.sourceforge.net/)
-- [Lollipop](http://ctan.org/pkg/lollipop)
+- [Lollipop](https://ctan.org/pkg/lollipop)
 - [MeX](https://www.ctan.org/tex-archive/language/polish)
 - [MLTeX](https://www.ctan.org/pkg/mltex)
 - [TeXsis](http://www.texsis.org/)
