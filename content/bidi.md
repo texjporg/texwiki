@@ -14,10 +14,10 @@ bidi は，左から右または右から左へ双方向 (Bi-Directional)
 
 ### bidi {#w2512f78}
 
-- [https://github.com/persian-tex/bidi](https://github.com/persian-tex/bidi)
-- [http://ctan.org/pkg/bidi](http://ctan.org/pkg/bidi)
+- [https://github.com/tex-xet/bidi](https://github.com/tex-xet/bidi)
+- [https://ctan.org/pkg/bidi](https://ctan.org/pkg/bidi)
 - [http://tex.stackexchange.com/questions/tagged/bidi](http://tex.stackexchange.com/questions/tagged/bidi)
 
 ### luabidi {#vd408e52}
 
-- [http://ctan.org/pkg/luabidi](http://ctan.org/pkg/luabidi)
+- [https://ctan.org/pkg/luabidi](https://ctan.org/pkg/luabidi)
