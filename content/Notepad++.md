@@ -18,6 +18,7 @@ pukiwiki: "Notepad++"
 ## Notepad++ とは {#ife0659c}
 
 Notepad++ はテキストエディタです．
+Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です．
 
 - LaTeX キーワードの色分け
 - LaTeX キーワードの補完機能
@@ -43,26 +44,25 @@ Windows
 
 [GPLv2](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
 
-### リリース情報 {#d2ceb628}
+### リリース情報/ChangeLog {#q10cf331}
 
-[News](https://notepad-plus-plus.org/news/) を参照．
-
-### ChangeLog {#q10cf331}
-
-- [New features and fixed bugs](https://notepad-plus-plus.org/download/)
+- [News](https://notepad-plus-plus.org/news/)
+- [Releases](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
 - [コミットログ](https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master)
+
+Notepad++ 7.5 で LaTeX のサポートが追加されました。
+
+- [Notepad++ Notepad++ 7.5 released](https://notepad-plus-plus.org/news/notepad-7.5-released.html)
+- [Add new languages support](https://github.com/notepad-plus-plus/notepad-plus-plus/commit/02bdd11700e6fb225157aa59f1f5f1a453865cee)
+- [「Notepad++」v7.5が公開、“LaTeX”や“Rust”、“Erlang”など19言語をサポート](http://forest.watch.impress.co.jp/docs/news/1076002.html)
 
 ### 派生版 {#l02b5ab5}
 
-Notepad++ の派生版 で ISO-2022-JP と EUC-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが，ISO-2022-JP と EUC-JP には対応していません．
+Notepad++ の派生版 で EUC-JP と ISO-2022-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが EUC-JP と ISO-2022-JP には対応していません．
 
 - [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
     - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
     - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
-
-<!-- **日本語言語ファイル [#i35c46e6] -->
-<!--  -->
-<!-- -[[Japanese Language File for Notepad++:https://gist.github.com/2664323]] -->
 
 ## プラグイン (Plugins) {#k2155ff2}
 
