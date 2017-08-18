@@ -7,7 +7,7 @@ pukiwiki: "nkf"
 
 # nkf
 
-## [nkf](https://osdn.jp/projects/nkf/) {#ie06d283}
+## [nkf](https://ja.osdn.net/projects/nkf/) {#ie06d283}
 
 nkf は，文字コードを変換するツールです。
 
@@ -17,7 +17,7 @@ nkf は，文字コードを変換するツールです。
 
 ### ダウンロード {#q89745b2}
 
-- [https://osdn.jp/projects/nkf/](https://osdn.jp/projects/nkf/)
+- [https://ja.osdn.net/projects/nkf/](https://ja.osdn.net/projects/nkf/)
 - [http://jaist.dl.osdn.jp/nkf/](http://jaist.dl.osdn.jp/nkf/)
 - [http://iij.dl.osdn.jp/nkf/](http://iij.dl.osdn.jp/nkf/)
 - [http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
