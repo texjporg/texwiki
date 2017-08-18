@@ -409,8 +409,8 @@ Homebrew で BasicTeX をインストールできます。
 ```
 $ brew cask install basictex
 $ sudo tlmgr update --self --all
-$ sudo tlmgr install collection-langjapanese
 $ sudo tlmgr paper a4
+$ sudo tlmgr install collection-langjapanese
 ```
 
 インストールのやり方などの事例も参考になります。
