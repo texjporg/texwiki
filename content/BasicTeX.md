@@ -78,9 +78,11 @@ $ sudo tlmgr install ptex
 日本語環境を構成するには，このページで解説しているように collection-langjapanese を
 インストールすることをおすすめします。
 
+<!-- TeX Live 2017 対応 -->
+<!-- -[[macOS に Tex Live 2017をインストールする:http://d.hatena.ne.jp/pyopyopyo/20170801/p1]] -->
+
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
-<!-- -[[Macbook air に texlive2014 をインストールする:http://d.hatena.ne.jp/pyopyopyo/20140815/p1]] -->
 
 ### BasicTeX + collection-langjapanese で LuaTeX-ja を使う {#f2230bb1}
 
