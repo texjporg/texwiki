@@ -156,9 +156,9 @@ D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0
 
 ### インストール（ソースから make する方法） {#z76d056e}
 
-#### Linux, OS X {#od0594e8}
+#### Linux, macOS {#od0594e8}
 
-以下は Linux や OS X でソースからインストールする方法です。
+以下は Linux や macOS でソースからインストールする方法です。
 デフォルトでは /usr/local にインストールされますが，既に Ghostscript 9.xx 系や 8.xx 系をインストールしている場合はそちらの /usr/local/bin/gs が存在しているはずですので，別の場所にインストールするとよいでしょう。
 たとえば /usr/local/teTeX にインストールする場合は以下のようにします：
 
@@ -230,7 +230,7 @@ GNU Ghostscript 7.07 から和文フォント TrueType フォントや OpenType 
 
 という作業が必要です[^1]。
 
-狩野さんが開発している TrueType フォント「[さざなみフォント](http://wiki.fdiary.net/font/?sazanami)」を使う場合，[osdn.jp](https://osdn.jp/projects/efont/) から最新のものをダウンロードし，中にある ttf ファイルを /usr/local/teTeX/share/ghostscript/fonts/ に入れます。
+狩野さんが開発している TrueType フォント「[さざなみフォント](http://wiki.fdiary.net/font/?sazanami)」を使う場合，[efont プロジェクト日本語トップページ - OSDN](https://ja.osdn.net/projects/efont/) から最新のものをダウンロードし，中にある ttf ファイルを /usr/local/teTeX/share/ghostscript/fonts/ に入れます。
 CIDFnmap には以下のように記述すれば，表示も PDF 化も大丈夫のようです：
 
 ```
@@ -267,13 +267,13 @@ CIDFnmap には以下のように記述すれば，表示も PDF 化も大丈夫
 /Ryumin-Light              (XXXXXX.ttc) 2 ;
 ```
 
-なお他 OS 用フォントを Linux から使うことについては，[三田さんがまとめてくださったもの](http://www.ee.t.u-tokyo.ac.jp/~mita/FreeBSD/Truetype-copyright.txt)があります。
+なお他 OS 用フォントを Linux から使うことについては，[三田さんがまとめてくださったもの](https://web.archive.org/web/20040811230145/http://www.ee.t.u-tokyo.ac.jp/~mita/FreeBSD/Truetype-copyright.txt)があります。
 この中では Microsoft だけ「Windows 以外での使用は認めません」と答えています。
 <em>←この情報は古いかもしれません。要確認</em>
 
 #### 和文フォントの設定（CID フォント） {#i37976e7}
 
-GNU Ghostscript 7.07 がリリースされた当時は[東風明朝 CID/OpenType 化キット](http://kappa.allnet.ne.jp/Kochi-CID/)がよく使われていましたが，いわゆる[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で配布中止となっています。 <!-- 「東風明朝 CID/OpenType 化キット」旧リンク → http://khdd.net/Kochi-CID/ -->
+GNU Ghostscript 7.07 がリリースされた当時は[東風明朝 CID/OpenType 化キット](https://web.archive.org/web/20101024195456/http://kappa.allnet.ne.jp/Kochi-CID/)がよく使われていましたが，いわゆる[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で配布中止となっています。 <!-- 「東風明朝 CID/OpenType 化キット」旧リンク → http://khdd.net/Kochi-CID/ -->
 
 和田研フォントを CID 化したサンプルフォントを使うには，以下のように設定します。
 <em>←この情報は古いが，失われるべきでないので残す</em>
