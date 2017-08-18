@@ -30,7 +30,7 @@ GNU, GNU/Linux，BSD, macOS, Windows, Solaris などの OS がサポートされ
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://osdn.jp/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://ja.osdn.net/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
 
 ### ダウンロード {#m56139cf}
 
@@ -70,7 +70,6 @@ GNU Emacs はフリーソフトウェアです．
 ### 拡張パッケージの入手 {#o0e71869}
 
 最近は [MELPA](https://melpa.org/) というサイトに Emacs の拡張パッケージの更新情報が集められるようになっています．
-YaTeX や AUCTeX の最新版もここから簡単に入手できます．
 
 使い方は，[Getting Started](https://melpa.org/#/getting-started) に書いてある設定をして M-x package-list-packages を実行するだけです．
 あとは，インストールしたいパッケージを i で選択して，x でインストールします．
@@ -95,7 +94,7 @@ YaTeX や AUCTeX の最新版もここから簡単に入手できます．
 - [latex_editor](https://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
 - [emacs, mozc, TeX 入力](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1319)
 - [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
-- [emacs内でTeX文書の作成からpdf閲覧まで行う](http://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
+- [emacs内でTeX文書の作成からpdf閲覧まで行う](https://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
 - [emacsでpdfファイルを閲覧する](http://d.hatena.ne.jp/daharu/20111126/1322272094)
 - [M-x align で TeX の表を整列できるようにする](http://d.hatena.ne.jp/supermassiveblackhole/20110223/1298443861)
 - [pdf-tools](https://github.com/politza/pdf-tools)
@@ -389,8 +388,9 @@ Source editor:
 
 ## 使い方 {#e776cf5f}
 
+- [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
-- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://osdn.jp/magazine/09/04/06/1138226)
+- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
