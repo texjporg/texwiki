@@ -108,13 +108,10 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%
 
 ## インストール {#b2ec65b9}
 
-### Emacs 標準のパッケージ管理システムを使用して YaTeX をインストールしようとしたけれども MELPA から YaTeX が削除されてインストールできない場合 --&gt; 公式サイトのパッケージを使用する {#x0d7daaa}
+### MELPA からインストール {#x0d7daaa}
 
-[MELPA](https://melpa.org/) には 2015-02-22 から 2017-08-17 まで YaTeX が登録されていましたが 2017-08-17 に削除されました．
+[MELPA](https://melpa.org/) には 2015-02-22 から 2017-08-17 まで YaTeX が登録されていましたが 2017-08-17 に削除されました．公式サイトのパッケージを使用してください．
 
-Emacs 標準のパッケージ管理システムを使用して YaTeX をインストールしようとしたけれども MELPA から YaTeX が削除されてインストールできない場合は公式サイトのパッケージを使用してください．
-
-- [YaTeXがMELPAから消えてるんだけど誰か情報持ってますか](https://twitter.com/JIIG_GI/status/898511416709103617)
 - [RM packages w/ incompatible or missing license](https://github.com/melpa/melpa/commit/cf92ce1a2bc92c73071d157e7e223982bbd3f818)
 
 ### 公式サイトのパッケージを使用する場合 {#jde46c87}
