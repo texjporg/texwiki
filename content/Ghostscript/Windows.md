@@ -192,6 +192,7 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 #### PS_View {#psview}
 
 PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
+[TeX Live](</TeX Live/>) (win32) に標準で含まれています。
 
 #### SumatraPDF {#f86c5a11}
 
