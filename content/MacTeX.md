@@ -74,9 +74,17 @@ GUI Applications には以下のアプリケーションが収録されていま
 #### Ghostscript-9.21 {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください。
+
 MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
-Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
+
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
+
+Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
+
+Homebrew の場合は MacTeX に付属する Ghostscript と Homebrew でインストールできる Ghostscript が競合してインストール・アンインストール時に問題が発生することがあるようです。
+
+- [Mac HomebrewでMacTex/Ghostscriptを導入する際の注意](https://rcmdnk.com/blog/2017/02/09/computer-mac-homebrew/)
+- [美文書第6版のTeX環境(Mac)を完全にアンインストールする方法](http://doratex.hatenablog.jp/entry/20150914/1442201523)
 
 ### インストール {#t244993f}
 
