@@ -8,20 +8,16 @@ pukiwiki: "Ghostscript"
 
 # Ghostscript
 
-## [Ghostscript](http://www.ghostscript.com/) {#odb09bf1}
+## [Ghostscript](https://www.ghostscript.com/) {#odb09bf1}
 
 Ghostscript は [PostScript](/PostScript/)/[Portable Document Format (PDF)](/PDF/) インタプリタです．
 PostScript/PDF ファイルを読み込んで，画面やプリンタや色々な形式のファイルに出力できます．
 詳しくは次のページをご覧ください．
 
-- [Ghostscript Website](http://www.ghostscript.com/)
-- [ghostscript.com Mailing Lists](http://ghostscript.com/mailman/listinfo/)
-    - [The gs-bugs Archives](http://ghostscript.com/pipermail/gs-bugs/)
-    - [The gs-devel Archives](http://ghostscript.com/pipermail/gs-devel/)
-- [http://downloads.ghostscript.com/public/](http://downloads.ghostscript.com/public/)
-- [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
-- [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
-- [Ghostscript Studio - Home](https://ghostscriptstudio.codeplex.com/)
+- [Ghostscript Website](https://www.ghostscript.com/)
+- [ghostscript.com Mailing Lists](https://ghostscript.com/mailman/listinfo/)
+    - [The gs-bugs Archives](https://ghostscript.com/pipermail/gs-bugs/)
+    - [The gs-devel Archives](https://ghostscript.com/pipermail/gs-devel/)
 
 ***
 
@@ -29,7 +25,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) の Ghostscript (tlgs.win32) はこの脆弱性が修正されています．
+Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
 
 - [JVNDB-2017-002808 Ghostscript に任意のコードが実行可能な脆弱性 - JVN iPedia - 脆弱性対策情報データベース](http://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002808.html)
 - [JVNVU#98641178: Ghostscript に任意のコードが実行可能な脆弱性](http://jvn.jp/vu/JVNVU98641178/)
