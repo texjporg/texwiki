@@ -7,7 +7,7 @@ pukiwiki: "Ghostscript 7.07"
 
 # Ghostscript 7.07
 
-## GNU Ghostscript 7.07 {#u1488af6}
+## GNU Ghostscript 7.07 (非推奨) {#u1488af6}
 
 <strong> <em>この項目は編集途中です</em> </strong>：削除されていた項目をとりあえず復活させることを急ぎました。
 
@@ -46,10 +46,10 @@ Ghostscript で利用する欧文フォントは，Sourceforge ([gs-fonts](https
 CJK フォントを扱うためには CMap Resource も必要で，これは [Adobe Type Tools - GitHub](https://github.com/adobe-type-tools/cmap-resources) からダウンロードできます。
 
 ソースから make する場合は，これに加えて GNU Ghostscript 7.07 本体と依存ライブラリのソースも必要です。
-本体のソースは Sourceforge ([gnu-gs](https://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/)) やそのミラーから，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
+本体のソースは ghostscript-7.07b.tar.gz の場合は [https://ftp.gnu.org/gnu/ghostscript/](https://ftp.gnu.org/gnu/ghostscript/) や [http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/](http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/) ，ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz の場合は Sourceforge ([gnu-gs](https://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/)) から，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
 
 - GNU Ghostscript 7.07 のソース
-    - ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
+    - ghostscript-7.07b.tar.gz または ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
 - 依存ライブラリ (jpeg, libpng, zlib) ← zlib-1.2.0 以降は infblock.c がないため make でエラーが出る
     - jpegsrc.v6b.tar.gz
     - libpng-1.0.2.tar.gz
@@ -349,7 +349,7 @@ Ghostscript にはかつて（2006年頃まで），ライセンス形態によ�
 ライセンスとバージョン番号の関係は [Ghostscript - pteTeX Wiki](http://tutimura.ath.cx/ptetex/?Ghostscript) で詳しく説明されています。
 
 Ghostscript は長らく日本語に対応しておらず，日本語化・CJK 化がさまざまな有志によって取り組まれてきました。
-特に，[gs-cjk プロジェクト](https://web.archive.org/web/20030203233101/http://www.gyve.org/gs-cjk/index.html)は2000年の AFPL Ghostscript 6.50 に対する gs-cjk パッチ公開をはじめとして，GNU Ghostscript への gs-cjk パッチをリリースして日本のユーザに広く使われてきました。
+特に，[gs-cjk プロジェクト](https://web.archive.org/web/20070808010517/http://www.gyve.org/gs-cjk/index.html) （[Japanese](https://web.archive.org/web/20071123213204/http://www.gyve.org/gs-cjk/index-j.html)）は2000年の AFPL Ghostscript 6.50 に対する gs-cjk パッチ公開をはじめとして，GNU Ghostscript への gs-cjk パッチをリリースして日本のユーザに広く使われてきました。
 GNU Ghostscript へはその後めでたく gs-cjk パッチが統合され，gs7.07 は幅広いプラットフォームで利用されるようになりました。
 
 しかし，残念ながら当時の最新版である AFPL Ghostscript に gs-cjk の成果物が取り込まれることはなく，GPL Ghostscript 8 以降は CJK への対応が不十分なままとなっています。
@@ -381,17 +381,18 @@ Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 
 GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクですが，いまでも一部は参考になるかもしれません。 <!-- gs-cjk に関する記述も10年以上経過してほとんど残っていないようなので， --> <!-- 言及があるサイトは（たとえ内容が gs7.07 でなくても）リンクに加えた -->
 
+- [Ghostscript: GNU Ghostscript 7](https://ghostscript.com/GNU_Ghostscript_7.07.html)
 - [Overview of Ghostscript](http://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
-- [GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)（奥村先生：Wiki 移転前のもの）
+- [ghostscript-7.07 のインストール](https://www.uconst.org/blog/archives/38)
+- [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
 - [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
-- [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090130073812/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
+- [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090925053250/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
 - [Ghostscript と Prosper のインストール](http://emoken.net/blog2/item_39.html)（Windows でのインストール事例）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
-- [Ghostscriptで日本語PDFファイルをつくる](http://kony.no-ip.info/~kon/tips/gsjpn.html)
-- [ghostscript-7.07 のインストール](http://www.uconst.org/blog/archives/38)
+- [Ghostscriptで日本語PDFファイルをつくる](https://web.archive.org/web/20161025040648/http://kony.no-ip.info/~kon/tips/gsjpn.html)
 - [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の OS X 版を配布
-- [Mac OS X でレーザープリンターを使うスレ（過去ログ）](http://mimizun.com/log/2ch/mac/1037063324)
+- [Mac OS X でレーザープリンターを使うスレ（過去ログ）](http://pc5.2ch.net/test/read.cgi/mac/1037063324/)
 
 ### TeX Forum / Q &amp; A より {#w096d520}
 
