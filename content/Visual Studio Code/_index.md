@@ -39,17 +39,15 @@ LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをする�
 - [Visual Studio CodeでTeX](http://qiita.com/yakigac/items/9113bdb4bf12fdc0a0b0)
 - [VS CodeからTeXのコンパイルを出来るようにするまで(仮)](http://mstn.hateblo.jp/entry/2017/06/09/163912)
 
-#### LaTeX Workshop \[3.3.2\] - 2017-08-15（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されない {#d86f44c2}
+#### LaTeX Workshop \[3.3.0\] - 2017-08-08 以降で PDF ファイルを表示すると日本語が表示できない {#d86f44c2}
 
-[LaTeX Workshop \[3.2.2\] - 2017-08-07 までは viewer/web/cmaps フォルダーが存在していた](https://github.com/James-Yu/LaTeX-Workshop/tree/edd12a5e11ff5f48fdb3cd60ee63801057de592a/viewer/web/cmaps)ため日本語が表示できていましたが [LaTeX Workshop \[3.3.0\] - 2017-08-08 で削除](https://github.com/James-Yu/LaTeX-Workshop/commit/0a0d227a435877f0c1a2043cc87355797f2610f5)され日本語が表示されなくなったようです。
-
-LaTeX Workshop \[3.3.2\] - 2017-08-15（LaTeX Workshop \[3.3.0\] - 2017-08-08 以降）で PDF ファイルを表示すると日本語が表示されません。
+[LaTeX Workshop \[3.2.2\] - 2017-08-07 までは viewer/web/cmaps フォルダーが存在していた](https://github.com/James-Yu/LaTeX-Workshop/tree/edd12a5e11ff5f48fdb3cd60ee63801057de592a/viewer/web/cmaps)ため日本語が表示できていましたが [LaTeX Workshop \[3.3.0\] - 2017-08-08 で削除](https://github.com/James-Yu/LaTeX-Workshop/commit/0a0d227a435877f0c1a2043cc87355797f2610f5)され日本語が表示できなくなりました。
 
 日本語を表示するためには以下の作業を実行します。
 
 1. [http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download) から PDF.js の Pre-built の Stable をクリックして zip ファイルをダウンロードして展開する
-1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.2\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.2/viewer/<br>フォルダーにコピーする
-1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.2\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.2/viewer/viewer.js<br>を開いて
+1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.3\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.3/viewer/<br>フォルダーにコピーする
+1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.3.3\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.3.3/viewer/viewer.js<br>を開いて
 
     ```
     PDFJS.cMapUrl = '../web/cmaps/';
@@ -63,7 +61,7 @@ LaTeX Workshop \[3.3.2\] - 2017-08-15（LaTeX Workshop \[3.3.0\] - 2017-08-08 �
 
     に修正して保存する
 
-以上の作業で日本語が表示されるようになります。
+以上の作業で日本語が表示できるようになります。
 
 #### 設定 {#f7cc6d6c}
 
