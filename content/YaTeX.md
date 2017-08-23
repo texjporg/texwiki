@@ -249,8 +249,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
@@ -352,8 +352,8 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
@@ -522,8 +522,8 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX-pdfdvi)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
@@ -785,7 +785,7 @@ YaTeX 1.79.4 (2017-08-22) 以降は YaTeX-kanji-code が nil に設定されて�
 (setq tex-command "xelatex -synctex=1")
 ```
 
-#### Latexmk-upLaTeX-pdfdvi {#bc88da07}
+#### Latexmk-upLaTeX {#bc88da07}
 
 ```
 (if (eq system-type 'windows-nt)
