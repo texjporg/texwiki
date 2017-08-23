@@ -155,7 +155,7 @@ else if (capt=="%%") commandline.replace("%%","%");
 
 と記述されており，正規表現は使用せずに1文字ずつ文字列をチェックして &#x25;&#x25; であれば &#x25; を追加して &#x25; であれば "basename" を追加して文字列リストを作成するようです．
 
-実例を挙げると例えば Windows 版の TeXstudio では Latexmk-upLaTeX-pdfdvi は以下の設定で動作します．
+実例を挙げると例えば Windows 版の TeXstudio では Latexmk-upLaTeX は以下の設定で動作します．
 
 > latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
