@@ -148,7 +148,9 @@ load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d
 (load "preview-latex.el" nil t t)
 ```
 
-### Windows {#w81a725c}
+## 設定 {#g686a32e}
+
+### Windows での設定例 {#w81a725c}
 
 Emacs を起動して
 
@@ -157,8 +159,6 @@ C-x C-f ~/
 ```
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-#### Windows での設定例 {#g637a7d7}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
@@ -285,7 +285,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > </table>
 >
 
-### macOS {#h32722ec}
+### macOS での設定例 {#h32722ec}
 
 - [Mac OS X El Capitan の AUCTeX の設定](http://ryogan.org/blog/2015/12/30/mac-os-x-el-capitan-%E3%81%AE-auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A/)
 - [AUCTex + RefTexで快適論文作成](http://ochiailab.blogspot.jp/2013/01/auctex-reftex.html)
@@ -300,11 +300,9 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-#### macOS での設定例 {#n55816de}
+&#x7e;/.emacs.d/init.el に設定を記述します．
 
 動作未確認です．
-
-&#x7e;/.emacs.d/init.el に設定を記述します．
 
 ***
 
@@ -434,7 +432,7 @@ C-x C-f ~/
 
 ***
 
-### Linux {#effc0642}
+### Linux での設定例 {#effc0642}
 
 Emacs を起動して
 
@@ -443,8 +441,6 @@ C-x C-f ~/
 ```
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
-
-#### Linux での設定例 {#p2d711b9}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
