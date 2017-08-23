@@ -9,11 +9,9 @@ pukiwiki: "TeXworks/設定/macOS"
 
 [TeXworks](/TeXworks/) > [設定](</TeXworks/設定/>) > [macOS](/Mac/)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
 
-```
-
-```
+***
 
 ## タイプセットの設定 {#q50d2378}
 
@@ -195,7 +193,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 ***
 
-#### Latexmk-upLaTeX-pdfdvi {#n543aa96}
+#### Latexmk-upLaTeX {#n543aa96}
 
 タイプセットの方法を設定します．
 
@@ -203,7 +201,7 @@ $ sudo cp -p pdfuplatex2 /usr/local/bin
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
