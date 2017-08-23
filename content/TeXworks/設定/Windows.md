@@ -9,7 +9,9 @@ pukiwiki: "TeXworks/設定/Windows"
 
 [TeXworks](/TeXworks/) > [設定](</TeXworks/設定/>) > [Windows](</Microsoft Windows/>)
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## タイプセットの設定 {#q50d2378}
 
@@ -19,7 +21,7 @@ pukiwiki: "TeXworks/設定/Windows"
 
 公式サイトで配布されている TeXworks は pdfLaTeX がデフォルトになっています．
 
-upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX-pdfdvi, Latexmk-upLaTeX-pdfps, Latexmk-pLaTeX-ng, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．
+upLaTeX (ptex2pdf), pdfupLaTeX, pdfupLaTeX2, pLaTeX-ng, Latexmk, Latexmk-upLaTeX, Latexmk-upLaTeX-pdfps, Latexmk-pLaTeX-ng, Latexmk-pdfLaTeX, Latexmk-LuaLaTeX, Latexmk-LuaJITLaTeX, Latexmk-XeLaTeX を使ってタイプセットできるように設定します．
 
 タイプセットの設定については [Common Workflows](https://github.com/TeXworks/texworks/wiki/AdvancedTypesettingTools#common-workflows) にも記述されているので参考にしてください．
 
@@ -250,7 +252,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk-upLaTeX-pdfdvi {#t6b9c629}
+#### Latexmk-upLaTeX {#t6b9c629}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -268,7 +270,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-upLaTeX-pdfdvi</ins><br>
+　　名前:　　　　<ins>Latexmk-upLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
@@ -553,7 +555,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
 　　　　 Latexmk<br>
-　　　　 Latexmk-upLaTeX-pdfdvi<br>
+　　　　 Latexmk-upLaTeX<br>
 　　　　 Latexmk-upLaTeX-pdfps<br>
 　　　　 Latexmk-pLaTeX-ng<br>
 　　　　 Latexmk-pdfLaTeX<br>
