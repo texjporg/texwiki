@@ -546,6 +546,7 @@ CMap テーブルを使用して TTF フォントにアクセスするには、k
 
 ## 関連リンク {#nae3b659}
 
+- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html)
 - [Ubuntu で pLaTeX を使わずに日本語を書く](http://jun0inoue.blogspot.jp/2013/05/ubuntu-platex.html)
 - [CJK，Unicode パッケージ，ロシア語多書体の利用](http://yasuda.homeip.net/tex/cjk.html)
 
