@@ -177,7 +177,7 @@ if ($^O eq 'MSWin32') {
 
 ***
 
-Latexmk-upLaTeX-pdfdvi の場合
+Latexmk-upLaTeX の場合
 
 ```
 latexmk -gg -pdfdvi foo.tex
@@ -261,7 +261,7 @@ if ($^O eq 'MSWin32') {
 
 ***
 
-Latexmk-upLaTeX-pdfdvi の場合
+Latexmk-upLaTeX の場合
 
 ```
 latexmk -gg -pdfdvi foo.tex
