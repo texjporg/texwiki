@@ -349,7 +349,7 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk-upLaTeX-pdfdvi {#t17eb179}
+#### Latexmk-upLaTeX {#t17eb179}
 
 ***
 
