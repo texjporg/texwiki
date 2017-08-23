@@ -91,7 +91,7 @@ brew install latexila
 
 ### Personal build tools {#kcfc97ba}
 
-#### Latexmk-upLaTeX-pdfdvi {#q6b26226}
+#### Latexmk-upLaTeX {#q6b26226}
 
 Commands
 : &nbsp;
@@ -103,7 +103,7 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-upLaTeX-pdfdvi\] で実行できます．<br>
+\[Build\]-\[Latexmk-upLaTeX\] で実行できます．<br>
 
 #### Latexmk-upLaTeX-pdfps {#s6b92cf0}
 
