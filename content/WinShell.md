@@ -364,7 +364,7 @@ LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しない
 
 LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します。<br>
 
-#### Latexmk-upLaTeX-pdfdvi の場合 {#kf0c5dfa}
+#### Latexmk-upLaTeX の場合 {#kf0c5dfa}
 
 以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です。<br>
 
@@ -738,10 +738,10 @@ TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[
 \[主なTeXプログラムの設定\] の \[BibTeX\] と \[DVI -> PS\] の項目に PDF ファイルを出力するための設定をします。<br>
 設定は以下を参照して設定します。<br>
 
-- [WinShell#BibTeX#Latexmk-upLaTeX-pdfdvi の場合](/WinShell/#kf0c5dfa)
+- [WinShell#BibTeX#Latexmk-upLaTeX の場合](/WinShell/#kf0c5dfa)
 - [WinShell#DVI -> PS#Latexmk-upLaTeX-pdfps の場合](/WinShell/#c693c76d)
 
-\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX-pdfdvi) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします。<br>
+\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします。<br>
 \[DVI -> PS\] に設定したプログラム (Latexmk-upLaTeX-pdfps) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします。<br>
 コマンド プロンプトに処理状況が表示されます。<br>
 
