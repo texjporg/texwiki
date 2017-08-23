@@ -197,9 +197,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfdvi"
+                                   '("Latexmk-upLaTeX"
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %t"
@@ -267,7 +267,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfdvi</td><td>C-c C-c latexmk-uplatex-pdfdvi RET</td><td>タイプセット (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
 > <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
@@ -337,9 +337,9 @@ C-x C-f ~/
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfdvi"
+                                   '("Latexmk-upLaTeX"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
@@ -411,7 +411,7 @@ C-x C-f ~/
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfdvi</td><td>C-c C-c latexmk-uplatex-pdfdvi RET</td><td>タイプセット (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
 > <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
@@ -473,9 +473,9 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfdvi"
+                                   '("Latexmk-upLaTeX"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfdvi"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-upLaTeX-pdfps"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
@@ -565,7 +565,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfdvi</td><td>C-c C-c latexmk-uplatex-pdfdvi RET</td><td>タイプセット (Latexmk-upLaTeX-pdfdvi)</td></tr>
+> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
 > <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
