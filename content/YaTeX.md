@@ -108,7 +108,7 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%
 
 ## インストール {#b2ec65b9}
 
-### MELPA からインストール {#x0d7daaa}
+### <del>MELPA からインストール</del> {#x0d7daaa}
 
 [MELPA](https://melpa.org/) には 2015-02-22 から 2017-08-17 まで YaTeX が登録されていましたが 2017-08-17 に削除されました．公式サイトのパッケージを使用してください．
 
@@ -129,8 +129,6 @@ C-x C-f ~/
 
 yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
 
-***
-
 ```
 ~
 └─.emacs.d
@@ -138,17 +136,15 @@ yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペース�
         └─yatex
 ```
 
-***
-
 &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
 ```
 
-### Windows {#n699538a}
+## 設定 {#p24cdf4a}
 
-#### 設定 {#edc51324}
+### Windows での設定例 {#n699538a}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
@@ -263,7 +259,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > </table>
 >
 
-### macOS {#p7238e02}
+### macOS での設定例 {#p7238e02}
 
 - [Mac miniをセットアップする その3 ~emacs,yatex,skim編~](http://t44or2.hatenablog.com/entry/2016/10/29/152327)
 - [emacsでyatexを使う簡単な方法(Mac)](http://ganmacs.hatenablog.com/entry/2013/09/07/225350)
@@ -273,12 +269,12 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 を参照．
 
-#### 設定 {#qe563613}
-
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
 プレビューと forward search は [Skim](/Skim/) を使用します．
 Skim の inverse search については [Emacs#Skim との連携#inverse search](/Emacs/#e9c08b3d) を参照してください．
+
+動作未確認です．
 
 ***
 
@@ -365,9 +361,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > </table>
 >
 
-### Linux {#e2cbcccd}
-
-#### 設定 {#nec42ee2}
+### Linux での設定例 {#e2cbcccd}
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
@@ -723,20 +717,21 @@ if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
 (autoload 'yatex-mode "yatex" "Yet Another LaTeX mode" t)
 ```
 
-### Kanji code {#j78164d5}
+### ファイルを保存する際の文字コードの指定 {#j78164d5}
 
-YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード以外の TeX ファイルも指定した文字コードで保存されてしまう</strong>ので nil を指定することをおすすめします．
+YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード以外の TeX ファイルや sty ファイルも指定した文字コードで保存されてしまう</strong>ので <strong>nil を指定することをおすすめします</strong>．
+
+YaTeX 1.79.4 (2017-08-22) 以降は YaTeX-kanji-code が nil に設定されています．
 
 - [8.4.3 文字エンコーディングの設定](http://hwb.ecc.u-tokyo.ac.jp/current/literacy/editor/emacs/encoding/)
-- [http://www.mzks.org/wiki/index.php?Emacs](http://www.mzks.org/wiki/index.php?Emacs)
 
 ```
-;;;   nil=YaTeX-kanji-code が nil なら coding-system に感知しない
-;;;   0=no-converion -> Emacs 内部で使用されている文字コードで保存される (Emacs 23 以降では utf-8-emacs)
-;;;   1=Shift JIS (Shift_JIS)
-;;;   2=JIS (ISO-2022-JP)
-;;;   3=EUC (EUC-JP)
-;;;   4=UTF-8
+;;;   nil: Do not care (Preserve coding-system) -> ファイルの文字コードを変更せずに保存する
+;;;   0: no-converion -> Emacs 内部で使用されている文字コードで保存される（Emacs 23 以降では utf-8-emacs）
+;;;   1: Shift JIS (Shift_JIS) -> Shift_JIS で保存される
+;;;   2: JIS (ISO-2022-JP) -> ISO-2022-JP で保存される
+;;;   3: EUC (EUC-JP) -> EUC-JP で保存される
+;;;   4: UTF-8 -> UTF-8 で保存される
 (setq YaTeX-kanji-code nil)
 ```
 
