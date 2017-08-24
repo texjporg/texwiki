@@ -54,27 +54,11 @@ LaTeX -> <ins>P</ins>DF
 
 : ptex2pdf -u -l -ot '-synctex=1 --file-line-error-style' "%f"
 
-: uplatex -synctex=1 --file-line-error-style "%f" &amp;&amp; dvips -z -f "%e.dvi" | convbkmk -u > "%e.ps" &amp;&amp; ps2pdf "%e.ps"
-
-: pdflatex -synctex=1 --file-line-error-style "%f"
-
 : lualatex -synctex=1 --file-line-error-style "%f"
-
-: luajitlatex -synctex=1 --file-line-error-style "%f"
-
-: xelatex -synctex=1 --file-line-error-style "%f"
 
 : latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
 
-: latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "%f"
-
-: latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "%f"
-
 : latexmk -e '$lualatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
-
-: latexmk -e '$lualatex=q/luajitlatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
-
-: latexmk -e '$xelatex=q/xelatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdfxe "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
