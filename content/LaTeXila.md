@@ -79,15 +79,15 @@ brew install latexila
 <!-- :Post Processor| -->
 <!-- :|latexmk -->
 <!--  -->
-<!-- となっています．~ -->
-<!-- デフォルトの設定を削除して以下のように設定します．~ -->
+<!-- となっています． -->
+<!-- デフォルトの設定を削除して以下のように設定します． -->
 <!--  -->
 <!-- :Commands| -->
 <!-- :|latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O - -bblencoding=utf8 -u -U - -output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename" -->
 <!-- :Post Processor| -->
 <!-- :|latexmk -->
 <!--  -->
-<!-- [Build]-[LaTeX → DVI → PDF (Latexmk)] で実行できます．~ -->
+<!-- [Build]-[LaTeX → DVI → PDF (Latexmk)] で実行できます． -->
 
 ### Personal build tools {#kcfc97ba}
 
@@ -103,49 +103,7 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-upLaTeX\] で実行できます．<br>
-
-#### Latexmk-upLaTeX-pdfps {#s6b92cf0}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-upLaTeX-pdfps\] で実行できます．<br>
-
-#### Latexmk-pLaTeX-ng {#f5986d7a}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$pdflatex=q/platex-ng %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdf "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-pLaTeX-ng\] で実行できます．<br>
-
-#### Latexmk-pdfLaTeX {#of015905}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-pdfLaTeX\] で実行できます．<br>
+\[Build\]-\[Latexmk-upLaTeX\] で実行できます．
 
 #### Latexmk-LuaLaTeX {#s8b1424d}
 
@@ -159,42 +117,14 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-LuaLaTeX\] で実行できます．<br>
-
-#### Latexmk-LuaJITLaTeX {#hea17a5b}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$lualatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-LuaJITLaTeX\] で実行できます．<br>
-
-#### Latexmk-XeLaTeX {#c3409718}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$xelatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdfxe "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\]-\[Latexmk-XeLaTeX\] で実行できます．<br>
+\[Build\]-\[Latexmk-LuaLaTeX\] で実行できます．
 
 ## Evince との連携 {#t97f1692}
 
 ### forward search {#o187dfd8}
 
-\[Search\]-\[Search Forward\] または Ctrl+Alt+F で forward search ができます．<br>
+\[Search\]-\[Search Forward\] または Ctrl+Alt+F で forward search ができます．
 
 ### inverse search {#tc58bb85}
 
-Evince 上で Ctrl + 左クリックを実行すると TeX 文書の対応する行にジャンプします．<br>
+Evince 上で Ctrl + 左クリックを実行すると TeX 文書の対応する行にジャンプします．
