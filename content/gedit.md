@@ -234,57 +234,6 @@ ptex2pdf -u -l -ot '-synctex=1' "$GEDIT_CURRENT_DOCUMENT_NAME"
 保存(S):
 : 編集中のドキュメント
 
-#### pdfupLaTeX2 {#k85e2282}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-uplatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME" && \
-dvips -z -f "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.dvi" | \
-convbkmk -u > "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps" && \
-ps2pdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.ps"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pLaTeX-ng {#m6f8fa02}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-platex-ng -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### pdfLaTeX {#f6f3d125}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
 #### LuaLaTeX {#dacfdc34}
 
 ***
@@ -294,38 +243,6 @@ pdflatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### LuaJITLaTeX {#p2dffd1c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-luajitlatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### XeLaTeX {#df8a1522}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-xelatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -365,54 +282,6 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 保存(S):
 : 編集中のドキュメント
 
-#### Latexmk-upLaTeX-pdfps {#p3caf947}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvips=q/dvips %O -z -f %S | convbkmk -u > %D/' -e '$ps2pdf=q/ps2pdf %O %S %D/' -norc -gg -pdfps "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Latexmk-pLaTeX-ng {#s063e57a}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/platex-ng %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Latexmk-pdfLaTeX {#q7311d5c}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/makeindex %O -o %D %S/' -norc -gg -pdf "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
 #### Latexmk-LuaLaTeX {#gd49f6fd}
 
 ***
@@ -422,38 +291,6 @@ latexmk -e '$pdflatex=q/pdflatex %O -synctex=1 %S/' -e '$bibtex=q/bibtex %O %B/'
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Latexmk-LuaJITLaTeX {#of7ecadb}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$lualatex=q/luajitlatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Latexmk-XeLaTeX {#s2321b30}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$xelatex=q/xelatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdfxe "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
