@@ -82,6 +82,10 @@ sudo apt-get install texworks
 
 タイプセットのデフォルトを upLaTeX (ptex2pdf) に変更します．
 
+- [LaTeX - リスト表示 - おもこん - Yahoo!ブログ](https://blogs.yahoo.co.jp/jeaou/folder/1202527.html)
+- [Vine Linux - リスト表示 - おもこん - Yahoo!ブログ](https://blogs.yahoo.co.jp/jeaou/folder/1199960.html)
+    - おもこんには、VineLinuxでgnuplotとTexworksを連携させる話題があり、Texworksのコンフィギュレーションファイルがその中で解説されています。[VineLinuxの書庫](https://blogs.yahoo.co.jp/jeaou/folder/1199960.html)から、「VineLinuxのgnuplot…」「pregnuplotを…」を見てください。
+
 ### [Emacs](/Emacs/) {#d8c86cfd}
 
 ```
