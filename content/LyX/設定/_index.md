@@ -83,7 +83,7 @@ babel のオプションを設定する場合は以下の方法があります�
 - [LyX wiki | Layouts / CreatingLayouts](http://wiki.lyx.org/Layouts/CreatingLayouts)
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
-pdfLaTeX/XeLaTeX/LuaLaTeX/LuaJITLaTeX で jsclasses 相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
+LuaLaTeX で jsclasses 相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
 レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．<br>
 Format 番号は LyX のバージョンによって異なります．<br>
 使用している LyX のバージョンの Format 番号を確認して編集してください．<br>
@@ -309,9 +309,9 @@ babel を使用して文書を作成する場合は babel を on にします．
 
 \[適用(A)\] をクリックします．
 
-#### [XeLaTeX](/XeTeX/)/[LuaLaTeX](/LuaTeX/)/LuaJITLaTeX で文書を作成する場合 {#n7a3be37}
+#### [LuaLaTeX](/LuaTeX/) で文書を作成する場合 {#n7a3be37}
 
-XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
+LuaLaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -362,7 +362,7 @@ XeLaTeX/LuaLaTeX/LuaJITLaTeX で文書を作成する場合は文字コードを
 11pt で文書を作成する場合は基本寸法を 11 に変更します．
 10pt, 11pt, 12pt 以外の大きさの基本寸法を使用する場合は文書クラスのクラスオプションで指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
-XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/ZXjatype](/xeCJK/), [LuaTeX-ja](/LuaTeX-ja/) を使用して LaTeXプリアンブルに日本語文書に使用するフォントの設定を記述してください．
+LuaLaTeX を使用して日本語文書を作成する場合は [LuaTeX-ja](/LuaTeX-ja/) を使用して LaTeXプリアンブルに日本語文書に使用するフォントの設定を記述してください．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -420,22 +420,10 @@ XeLaTeX/LuaLaTeX を使用して日本語文書を作成する場合は [xeCJK/Z
 > 出力形式<br>
 > 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^23]<br>
 
-#### PDF (ps2pdf) {#s335ea5f}
-
-文字コードが 日本語(pLaTeX) の場合は既定値は PDF (dvipdfm) です．
-日本語の文書を作成する場合に，dvips + ps2pdf を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (ps2pdf) に変更して \[適用(A)\] をクリックします．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 出力形式<br>
-> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (ps2pdf)　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
 #### PDF (LuaTeX) {#g2e3c1cf}
 
 文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．
-LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．
+LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -443,18 +431,6 @@ LuaLaTeX, LuaJITLaTeX を使用したい場合は，既定出力形式を PDF (L
 >
 > 出力形式<br>
 > 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
-
-#### PDF (XeTeX) {#zd1cca72}
-
-文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．
-XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変更して \[適用(A)\] をクリックします．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 出力形式<br>
-> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (XeTeX) 　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 ### 文書クラス {#g33dd885}
 
@@ -485,10 +461,10 @@ XeLaTeX を使用したい場合は，既定出力形式を PDF (XeTeX) に変�
 > 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
-#### uplatex + dvipdfmx の場合 {#ica39b31}
+#### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
 文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
-uplatex + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに uplatex と dvipdfmx を設定してグラフィックドライバに 既定値を指定します．
+upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
@@ -502,63 +478,16 @@ uplatex + dvipdfmx で bxjsarticle を使用する場合は，クラスオプシ
 >
 > 　クラスオプション<br>
 > 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>uplatex,dvipdfmx,11pt,ja=standard</ins><br>
+> 　任意設定(T):　　　 <ins>autodetect-engine,dvi=dvipdfmx,11pt,ja=standard</ins><br>
 >
 > <br>
 >
 > グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-#### uplatex + dvips + ps2pdf の場合 {#p803a02d}
-
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
-uplatex + dvips + ps2pdf で bxjsarticle を使用する場合は，クラスオプションに uplatex を設定してグラフィックドライバに 既定値を指定します．
-設定を反映させるために \[適用(A)\] をクリックします．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
->
-> <br>
->
-> 　クラスオプション<br>
-> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>uplatex,11pt,ja=standard</ins><br>
->
-> <br>
->
-> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-#### pdflatex の場合 {#n5e2e894}
-
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
-pdflatex で bxjsarticle を使用する場合は，クラスオプションに pdflatex を設定してグラフィックドライバに 既定値を指定します．
-設定を反映させるために \[適用(A)\] をクリックします．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
->
-> <br>
->
-> 　クラスオプション<br>
-> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>pdflatex,11pt,ja=standard</ins><br>
->
-> <br>
->
-> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-#### lualatex, luajitlatex の場合 {#l1a666c4}
+#### LuaLaTeX の場合 {#l1a666c4}
 
 文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．
-lualatex, luajitlatex で bxjsarticle を使用する場合は，クラスオプションに lualatex を設定してグラフィックドライバに 既定値を指定します．
-lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィックドライバに 既定値 または LuaTeX を指定します．
+LuaLaTeX で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
 ■ Japanese Article (bxjsarticle) の場合
@@ -574,7 +503,7 @@ lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィッ
 >
 > 　クラスオプション<br>
 > 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>lualatex,11pt,ja=standard</ins><br>
+> 　任意設定(T):　　　 <ins>autodetect-engine,dvi=dvipdfmx,11pt,ja=standard</ins><br>
 >
 > <br>
 >
@@ -594,29 +523,6 @@ lualatex, luajitlatex で ltjsarticle を使用する場合は，グラフィッ
 > 　クラスオプション<br>
 > 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
 > 　任意設定(T):　　　 <ins>11pt</ins><br>
->
-> <br>
->
-> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-#### xelatex の場合 {#ce0db196}
-
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
-xelatex で bxjsarticle を使用する場合は，クラスオプションに xelatex と precisetext を設定してグラフィックドライバに 既定値を指定します．
-設定を反映させるために \[適用(A)\] をクリックします．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
->
-> <br>
->
-> 　クラスオプション<br>
-> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>xelatex,11pt,ja=standard,precisetext</ins><br>
 >
 > <br>
 >
@@ -693,7 +599,7 @@ xelatex で bxjsarticle を使用する場合は，クラスオプションに x
 > 　　　　　出力<br>
 > 　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeXプリアンブル　　</span><br>
 
-uplatex + dvipdfmx, pdflatex, lualatex, luajitlatex, xelatex で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
+upLaTeX + dvipdfmx あるいは LuaLaTeX で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
