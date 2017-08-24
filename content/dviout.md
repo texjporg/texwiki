@@ -20,8 +20,6 @@ dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 
 このため，<strong>現在は DVI ではなく PDF でのプレビューが推奨されています。</strong>
 
-<!-- しかし，dviout で十分な場合も数多くあり，その場合には依然として高機能で高速な DVI viewer として有用です。 -->
-
 ***
 
 ***
@@ -48,7 +46,7 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 ### TeX Live の場合 {#se2d51a5}
 
-TeX Live の Win32 版には dviout が含まれています。
+TeX Live の Win32 版には 32-bit 版の dviout が含まれています。
 
 ### W32TeX の場合 {#r4cfc9ce}
 
@@ -69,35 +67,8 @@ W32TeX には dviout が含まれていないので，追加でインストー�
 - [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)
     （安定版のミラー）
 
-- [ftp://ftp.ne.jp/pub/tex/dviout/current/](ftp://ftp.ne.jp/pub/tex/dviout/current/) (安定版のミラー)
-- [ftp://ftp.ne.jp/pub/ctan/dviware/dviout/](ftp://ftp.ne.jp/pub/ctan/dviware/dviout/) (安定版のミラー)
-
-### ライセンス {#w9d4ec9d}
-
-[Expat License](http://tug.org/svn/dviout/trunk/README?view=markup) (MIT License)
-
-Expat License については
-
-- [License:Expat - Free Software Directory](http://directory.fsf.org/wiki/License:Expat)
-- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](https://www.gnu.org/licenses/license-list.html#Expat)
-
-を参照。
-
-### リリース情報 {#uce3262c}
-
-2013-12-14 dviout 3.18.4 ALPHA 1
-
-dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正されています。
-
-- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された，サイズの大きい PK フォントについてバグがあります。
-- 非常に長いフォント名を与えるとクラッシュします。
-
-### ChangeLog {#r5124b5a}
-
-- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
-    - [log](http://tug.org/svn/dviout/trunk/?view=log)
-- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
-    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
+- [ftp://ftp.kddilabs.jp/pub/tex/dviout/current/](ftp://ftp.kddilabs.jp/pub/tex/dviout/current/) (安定版のミラー)
+- [ftp://ftp.kddilabs.jp/pub/ctan/dviware/dviout/](ftp://ftp.kddilabs.jp/pub/ctan/dviware/dviout/) (安定版のミラー)
 
 ## ビルド {#d0101f83}
 
@@ -154,92 +125,13 @@ dviout は dvips と完全互換ではありません。
 [PostScript](/PostScript/) に依存したもの（PSTricks など）には対応していません。
 dvips で PostScript に変換して [Ghostscript](/Ghostscript/) で表示・印刷するといいでしょう。
 
-## upTeX で出力された DVI ファイルを dviout で表示 {#wadc9abf}
+## upLaTeX で出力された DVI ファイルを dviout で表示 {#wadc9abf}
 
-upTeX で DVI ファイルを作成し，初期設定の状態で dviout で表示しようとすると font file over のエラーが発生し，\[OK\] をクリックすると dviout が強制終了してしまうことがあります。
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの System タブの font buffer size を 400 K byte から 4000 K byte など，エラーが発生しない値に変更し，\[Save\]-\[適用(A)\]-\[OK\] をクリックします。
+upLaTeX で出力された DVI ファイルを dviout で表示する場合は
 
 - [dvioutでupLaTeXのDVIを扱う話](http://qiita.com/zr_tex8r/items/8b50836f719dec8b0bee)
-- upTeX のフォントと dviout ([qa:51135](https://okumuralab.org/~okumura/texfaq/qa/51135.html), [qa:51137](https://okumuralab.org/~okumura/texfaq/qa/51137.html))
-- upTeX のフォントと dviout (再検討) ([qa:51610](https://okumuralab.org/~okumura/texfaq/qa/51610.html))：[svn r180](http://tug.org/svn/dviout?limit_changes=0&view=revision&sortby=date&revision=180)以降，dviout 3.18.4 ALPHA 1などでは問題点が修正されています。
-- Re: dvipng と日本語 ([qa:51705](https://okumuralab.org/~okumura/texfaq/qa/51705.html))
-- uplatexのdvi表示(表罫線)について ([qa:55450](https://okumuralab.org/~okumura/texfaq/qa/55450.html), [qa:55452](https://okumuralab.org/~okumura/texfaq/qa/55452.html), [qa:55453](https://okumuralab.org/~okumura/texfaq/qa/55453.html), [qa:55454](https://okumuralab.org/~okumura/texfaq/qa/55454.html), [qa:55456](https://okumuralab.org/~okumura/texfaq/qa/55456.html))
-- upLaTeXを使おう \[電脳世界の奥底にて\] の中の [dvioutについて](http://zrbabbler.sp.land.to/uplatex.html#ssec-install-dviout)
-- [uptex, uplatex](http://d.hatena.ne.jp/gcg00467/20101223#1293103329)
-- [USBメモリ活用講座【実践編・dviout for Windowsポータブル化】#upTeX/upLaTeX を利用する場合の設定](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/dviout.shtml#UPTEX)
 
-font buffer size の値が小さいと起動しても dviout の下の方に警告が表示されます。
-このような警告が表示される場合は font buffer size の値を大きくしてください。
-
-***
-
-```
-Font buffer size -bf: 3200 K in [System] (<- Setup Parameters <- Option)
- is too small.
-Not an error but it is better to increase the size!
-```
-
-***
-
-DVI ファイルを表示するとフォントが正しく表示されず，dviout の下の方に Cannot find font file for uprml-h! の警告が表示されます。
-
-***
-
-```
-Cannot find font file for uprml-h!
-A default FONT will be used.
-```
-
-***
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの Font2 タブの \[ftt:\] をクリックします。
-
-```
-^x\map\ttfonts.map
-```
-
-が入力されるのを確認して，\[Save\]-\[適用(A)\]-\[OK\] をクリックします。
-
-C:\w32tex\dviout\map\ttfonts.map に
-
-```
-%input  $user.map
-```
-
-という行が存在するのを確認します。
-C:\w32tex\dviout\map\\$user.map を開くと
-
-***
-
-```
-; In this file one may define the font mappings or the files to be input.
-; This file will not be overwritten by dviout (verion up).
-;
-```
-
-***
-
-と記述されているのでこの次の行に
-
-***
-
-```
-uprml-h "ＭＳ 明朝"     unicode
-upgbm-h "ＭＳ ゴシック"     unicode
-uprml-v "@ＭＳ 明朝"     unicode
-upgbm-v "@ＭＳ ゴシック"     unicode
-```
-
-***
-
-を追加して保存します。
-保存するときは文字コードを Shift_JIS で保存してください。
-C:\w32tex\share\texmf-dist\doc\uptex\base\for_dviout.map に dviout 用 map ファイルの記述例があるので参考にしてみてください。
-
-これで DVI ファイルを表示するとフォントが正しく表示されるようになります。
-
-\[Option\]-\[Setup Parameters...\] から DVIOUTのプロパティの JFont2 タブの Adjust basepoint (Jgt:) にチェックを入れます。
+を参照してください。
 
 ## プレビューの自動更新 {#t2d3346c}
 
@@ -356,3 +248,30 @@ synctex help edit
 
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
 - [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://twitter.com/aminophen/status/873785429765480448)
+
+### ライセンス {#w9d4ec9d}
+
+[Expat License](http://tug.org/svn/dviout/trunk/README?view=markup) (MIT License)
+
+Expat License については
+
+- [License:Expat - Free Software Directory](http://directory.fsf.org/wiki/License:Expat)
+- [さまざまなライセンスとそれらについての解説 - GNU プロジェクト - フリーソフトウェア財団 (FSF)#Expat](https://www.gnu.org/licenses/license-list.html#Expat)
+
+を参照。
+
+### リリース情報 {#uce3262c}
+
+2013-12-14 dviout 3.18.4 ALPHA 1
+
+dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正されています。
+
+- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された，サイズの大きい PK フォントについてバグがあります。
+- 非常に長いフォント名を与えるとクラッシュします。
+
+### ChangeLog {#r5124b5a}
+
+- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
+    - [log](http://tug.org/svn/dviout/trunk/?view=log)
+- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
+    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
