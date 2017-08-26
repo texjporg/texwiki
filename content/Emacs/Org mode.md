@@ -114,7 +114,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article"
+             '("jlreq"
                "\\documentclass[11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -136,7 +136,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article-tate"
+             '("jlreq-tate"
                "\\documentclass[tate,11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -211,7 +211,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article"
+             '("jlreq"
                "\\documentclass[11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -233,7 +233,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article-tate"
+             '("jlreq-tate"
                "\\documentclass[tate,11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -300,7 +300,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article"
+             '("jlreq"
                "\\documentclass[11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -322,7 +322,7 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-article-tate"
+             '("jlreq-tate"
                "\\documentclass[tate,11pt,paper=a4]{jlreq}
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
@@ -358,26 +358,26 @@ org ファイルの先頭に
 
 を追加します．
 
-### jlreq の article の横書きを使用する場合 {#t4ccb221}
+### jlreq の横書きを使用する場合 {#t4ccb221}
 
 org ファイルの先頭に
 
 ```
 #+TITLE: hoge
 #+AUTHOR: fuga
-#+LATEX_CLASS: jlreq-article
+#+LATEX_CLASS: jlreq
 ```
 
 を追加します．
 
-### jlreq の article の縦書きを使用する場合 {#c3a15d54}
+### jlreq の縦書きを使用する場合 {#c3a15d54}
 
 org ファイルの先頭に
 
 ```
 #+TITLE: hoge
 #+AUTHOR: fuga
-#+LATEX_CLASS: jlreq-article-tate
+#+LATEX_CLASS: jlreq-tate
 ```
 
 を追加します．
