@@ -142,15 +142,15 @@ Provides japanese 1
 Input book.layout
 ```
 
-#### ltjsarticle.layout <a id="ltjsarticle-layout"></a> {#v6cea741}
+#### jlreq.layout <a id="jlreq-layout"></a> {#paa8e862}
 
-ltjsarticle.layout ファイルを新規作成して以下の内容を編集します．
+jlreq.layout ファイルを新規作成して以下の内容を編集します．
 
 ```
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Article (ltjsarticle)}
+#  \DeclareLaTeXClass{Requirements for Japanese Text Layout (jlreq)}
 #  \DeclareCategory{Articles}
-# Japanese new article textclass definition file.
+# Requirements for Japanese Text Layout textclass definition file.
 
 # This style provides japanese features 
 Format 63
@@ -158,42 +158,6 @@ Provides japanese 1
 
 # Input general definitions
 Input article.layout
-```
-
-#### ltjsreport.layout <a id="ltjsreport-layout"></a> {#c03201a4}
-
-ltjsreport.layout ファイルを新規作成して以下の内容を編集します．
-
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Report (ltjsreport)}
-#  \DeclareCategory{Reports}
-# Japanese new report textclass definition file.
-
-# This style provides japanese features 
-Format 63
-Provides japanese 1
-
-# Input general definitions
-Input report.layout
-```
-
-#### ltjsbook.layout <a id="ltjsbook-layout"></a> {#p91c61b8}
-
-ltjsbook.layout ファイルを新規作成して以下の内容を編集します．
-
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Book (ltjsbook)}
-#  \DeclareCategory{Books}
-# Japanese new book textclass definition file.
-
-# This style provides japanese features 
-Format 63
-Provides japanese 1
-
-# Input general definitions
-Input book.layout
 ```
 
 #### レイアウトファイルを LyX に追加する {#k55c07b3}
@@ -226,9 +190,7 @@ Linux の場合はレイアウトファイルを
 - Japanese Article (bxjsarticle)
 - Japanese Report (bxjsreport)
 - Japanese Book (bxjsbook)
-- Japanese Article (ltjsarticle)
-- Japanese Report (ltjsreport)
-- Japanese Book (ltjsbook)
+- Requirements for Japanese Text Layout (jlreq)
 
 が追加されていることを確認します．
 
@@ -467,6 +429,8 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
+■ Japanese Article (bxjsarticle) の場合
+
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
@@ -479,6 +443,25 @@ upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプシ
 > 　クラスオプション<br>
 > 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
 > 　任意設定(T):　　　 <ins>autodetect-engine,dvi=dvipdfmx,11pt,ja=standard</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
+
+■ Requirements for Japanese Text Layout (jlreq) の場合
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Requirements for Japanese Text Layout (jlreq)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>dvipdfmx,11pt</ins><br>
 >
 > <br>
 >
@@ -509,14 +492,14 @@ LuaLaTeX で bxjsarticle を使用する場合は，クラスオプションに 
 >
 > グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-■ Japanese Article (ltjsarticle) の場合
+■ Requirements for Japanese Text Layout (jlreq) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (ltjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Requirements for Japanese Text Layout (jlreq)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
