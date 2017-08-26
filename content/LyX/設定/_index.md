@@ -425,8 +425,9 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで Japanese Article (bxjsarticle) を選択し，クラスオプションを設定します．
+文書クラスで Japanese Article (bxjsarticle) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
 upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+upLaTeX + dvipdfmx で jlreq を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
 ■ Japanese Article (bxjsarticle) の場合
@@ -469,8 +470,9 @@ upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプシ
 
 #### LuaLaTeX の場合 {#l1a666c4}
 
-文書クラスで Japanese Article (bxjsarticle) または Japanese Article (ltjsarticle) を選択し，クラスオプションを設定します．
+文書クラスで Japanese Article (bxjsarticle) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
 LuaLaTeX で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+LuaLaTeX で jlreq を使用する場合は，グラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
 ■ Japanese Article (bxjsarticle) の場合
