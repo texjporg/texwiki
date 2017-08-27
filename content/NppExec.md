@@ -73,135 +73,6 @@ GPLv3
 
 ***
 
-### pdfupLaTeX2 {#k41459c9}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pdfupLaTeX2</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### pLaTeX-ng {#u5967a24}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; platex-ng -synctex=1 "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pLaTeX-ng</span>　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pLaTeX-ng</ins><br>
-　　　☑CTRL<br>
-　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### pdfLaTeX {#b792f14c}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; pdflatex -synctex=1 "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeX</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>pdfLaTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[H　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
 ### LuaLaTeX {#fa30dbb3}
 
 ***
@@ -232,95 +103,9 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>LuaLaTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### LuaJITLaTeX {#r054d32d}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; luajitlatex -cmdx -synctex=1 "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeX</span>　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　☑ALT<br>
-
-<br>
-
-　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
-
-<br>
-
-***
-
-### XeLaTeX {#v5239682}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; xelatex -synctex=1 "$(NAME_PART)"<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeX</span>　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　Name :　<ins>XeLaTeX</ins><br>
-　　　☐CTRL<br>
-　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[I　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　　　　Name :　<ins>pdfupLaTeX2</ins><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
 
 <br>
@@ -408,6 +193,23 @@ GPLv3
 
 ***
 
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>pdfLaTeX</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[H　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
 ### inverse search {#fe81f375}
 
 [Notepad++#SumatraPDF との連携](/Notepad++/#ted60cbe) を参照．
@@ -441,6 +243,23 @@ GPLv3
 
 ***
 
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
+
+<br>
+
+　　　　　　Name :　<ins>pLaTeX-ng</ins><br>
+　　　☑CTRL<br>
+　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
+
+<br>
+
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
+
+<br>
+
+***
+
 ## Adobe Acrobat Reader DC との連携 {#wbbe918a}
 
 ### forward search {#safe0b18}
@@ -471,81 +290,20 @@ GPLv3
 
 ***
 
-#### pdfupLaTeX2A {#te20483a}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal "$(NAME_PART)" &amp;&amp; dvips -z -f "$(NAME_PART).dvi" | convbkmk -u > "$(NAME_PART).ps" &amp;&amp; ps2pdf.exe "$(NAME_PART).ps" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　　　　Name :　<ins>LuaLaTeX</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
 
 <br>
 
-<br>
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
 
 <br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfupLaTeX2A</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-#### pLaTeX-ngA {#w213bfdd}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; platex-ng -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pLaTeX-ngA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-#### pdfLaTeXA {#w4e87b4b}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; pdflatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">pdfLaTeXA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
@@ -575,55 +333,20 @@ GPLv3
 
 ***
 
-#### LuaJITLaTeXA {#b880cc86}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Shortcut</strong></span>　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[<span style="color:White;"><strong>🗙</strong></span>\]<ins></span></ins></span><br>
 
 <br>
 
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; luajitlatex -cmdx -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
+　　　☐CTRL<br>
+　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
+　　　☑ALT<br>
 
 <br>
 
-<br>
+　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[　　　OK　　　\]</span>　　　　 <span style="color:Black;background-color:#EEEEEE;">\[　　Cancel　　\]</span><br>
 
 <br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">LuaJITLaTeXA</span>　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
-
-***
-
-#### XeLaTeXA {#e131fdc9}
-
-***
-
-<span style="color:#94CE18;background-color:#94CE18;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Execute...</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　Command(s):<br>
-　　　NPP_SAVE<br>
-　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; xelatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">　Script name:　　　　　　　　　　　　　　　　　　　　　</span><br>
-　　　 <ins>\[<span style="color:White;background-color:#1188FF;">XeLaTeXA</span>　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</ins><br>
 
 ***
 
