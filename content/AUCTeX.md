@@ -179,6 +179,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "bxjsarticle")
+;(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
@@ -201,25 +202,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfps"
-                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/\" -e \"$ps2pdf=q/ps2pdf.exe %%O %%S %%D/\" -norc -gg -pdfps %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX"
-                                     "latexmk -e \"$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/makeindex %%O -o %%D %%S/\" -norc -gg -pdf %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
                                      "latexmk -e \"$lualatex=q/lualatex -cmdx %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX"
-                                     "latexmk -e \"$lualatex=q/luajitlatex -cmdx %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX"
-                                     "latexmk -e \"$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdfxe %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
                                      "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
@@ -268,11 +253,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
-> <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
-> <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td>Fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
@@ -321,6 +302,7 @@ C-x C-f ~/
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "bxjsarticle")
+;(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "displayline")))
@@ -341,25 +323,9 @@ C-x C-f ~/
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfps"
-                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX"
-                                     "latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX"
-                                     "latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX"
-                                     "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Displayline"
                                      "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
@@ -412,11 +378,7 @@ C-x C-f ~/
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
-> <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
-> <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
 > <tr><td>Displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
 > <tr><td>Skim</td><td>C-c C-c skim RET</td><td>Skim でプレビュー</td></tr>
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>Preview でプレビュー</td></tr>
@@ -457,6 +419,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "bxjsarticle")
+;(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "Evince")))
@@ -477,25 +440,9 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX-pdfps"
-                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvips=q/dvips %%O -z -f %%S | convbkmk -u > %%D/' -e '$ps2pdf=q/ps2pdf %%O %%S %%D/' -norc -gg -pdfps %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX-pdfps"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-pdfLaTeX"
-                                     "latexmk -e '$pdflatex=q/pdflatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/makeindex %%O -o %%D %%S/' -norc -gg -pdf %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-pdfLaTeX"))
-                      (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaJITLaTeX"
-                                     "latexmk -e '$lualatex=q/luajitlatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaJITLaTeX"))
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk-XeLaTeX"
-                                     "latexmk -e '$xelatex=q/xelatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdfxe %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-XeLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Xdg-open"
                                      "xdg-open %s.pdf"
@@ -566,11 +513,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
 > <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-upLaTeX-pdfps</td><td>C-c C-c latexmk-uplatex-pdfps RET</td><td>タイプセット (Latexmk-upLaTeX-pdfps)</td></tr>
-> <tr><td>Latexmk-pdfLaTeX</td><td>C-c C-c latexmk-pdflatex RET</td><td>タイプセット (Latexmk-pdfLaTeX)</td></tr>
 > <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaJITLaTeX</td><td>C-c C-c latexmk-luajitlatex RET</td><td>タイプセット (Latexmk-LuaJITLaTeX)</td></tr>
-> <tr><td>Latexmk-XeLaTeX</td><td>C-c C-c latexmk-xelatex RET</td><td>タイプセット (Latexmk-XeLaTeX)</td></tr>
 > <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
 > <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
@@ -633,6 +576,12 @@ upTeX をデフォルトにして dvipdfmx を使用する場合は次のよう�
 (setq japanese-LaTeX-default-style "bxjsarticle")
 ```
 
+[jlreq](/jlreq/) を標準に設定する場合は次のように記述します．
+
+```
+(setq japanese-LaTeX-default-style "jlreq")
+```
+
 ### PDF ビューアーの変更 {#pfbe6148}
 
 PDF Viewer を変更する場合は
@@ -691,10 +640,8 @@ PDF Viewer を変更する場合は
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">TeX エンジンの選択</th></tr>
-> <tr><td>TeXing Options -&gt; Use Default engine</td><td>M-x TeX-engine RET default RET</td><td>デフォルト (pdfTeX) を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use LuaTeX engine</td><td>M-x TeX-engine RET luatex RET</td><td>LuaTeX を使用</td></tr>
 > <tr><td>TeXing Options -&gt; Use upTeX engine</td><td>M-x TeX-engine RET uptex RET</td><td>upTeX を使用</td></tr>
-> <tr><td>TeXing Options -&gt; Use XeTeX engine</td><td>M-x TeX-engine RET xetex RET</td><td>XeTeX を使用</td></tr>
 > </tbody>
 > </table>
 >
