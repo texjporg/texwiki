@@ -53,35 +53,6 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             execute(cmd);
         }
     };
-    var pdfupLaTeX2 = {
-        text: "upLaTeX (dvips + ps2pdf)",
-        cmd: function(){
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
-            var c = fso.GetParentFolderName(currentTeXFile);
-            var b = fso.GetBaseName(currentTeXFile);
-            var cd = "cd /d " + ["\"", c, "\""].join("");
-            var uplatex = "uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal" + " " + ["\"", b, "\""].join("");
-            var dvips = "dvips -Ppdf -z -f" + " " + ["\"", b, ".dvi", "\""].join("") + " | convbkmk -u > " + ["\"", b, ".ps", "\""].join("");
-            var ps2pdf = "ps2pdf.exe" + " " + ["\"", b, ".ps", "\""].join("");
-            var uplatex_dvips_ps2pdf = uplatex + " && " + dvips + " && " + ps2pdf;
-            var cmd = "cmd /c " + cd + " && " + uplatex_dvips_ps2pdf;
-            execute(cmd);
-        }
-    };
-    var pdfLaTeX = {
-        text: "pdfLaTeX",
-        cmd: function(){
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
-            var c = fso.GetParentFolderName(currentTeXFile);
-            var b = fso.GetBaseName(currentTeXFile);
-            var cd = "cd /d " + ["\"", c, "\""].join("");
-            var pdflatex = "pdflatex -synctex=1" + " " + ["\"", b, "\""].join("");
-            var cmd = "cmd /c " + cd + " && " + pdflatex;
-            execute(cmd);
-        }
-    };
     var luaLaTeX = {
         text: "LuaLaTeX",
         cmd: function(){
@@ -91,32 +62,6 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             var b = fso.GetBaseName(currentTeXFile);
             var cd = "cd /d " + ["\"", c, "\""].join("");
             var pdflatex = "lualatex -cmdx -synctex=1" + " " + ["\"", b, "\""].join("");
-            var cmd = "cmd /c " + cd + " && " + pdflatex;
-            execute(cmd);
-        }
-    };
-    var luaJITLaTeX = {
-        text: "LuaJITLaTeX",
-        cmd: function(){
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
-            var c = fso.GetParentFolderName(currentTeXFile);
-            var b = fso.GetBaseName(currentTeXFile);
-            var cd = "cd /d " + ["\"", c, "\""].join("");
-            var pdflatex = "luajitlatex -cmdx -synctex=1" + " " + ["\"", b, "\""].join("");
-            var cmd = "cmd /c " + cd + " && " + pdflatex;
-            execute(cmd);
-        }
-    };
-    var xeLaTeX = {
-        text: "XeLaTeX",
-        cmd: function(){
-            var fso = new ActiveXObject("Scripting.FileSystemObject");
-            var currentTeXFile = Editor.currentView.files[Editor.currentView.file];
-            var c = fso.GetParentFolderName(currentTeXFile);
-            var b = fso.GetBaseName(currentTeXFile);
-            var cd = "cd /d " + ["\"", c, "\""].join("");
-            var pdflatex = "xelatex -synctex=1" + " " + ["\"", b, "\""].join("");
             var cmd = "cmd /c " + cd + " && " + pdflatex;
             execute(cmd);
         }
@@ -182,11 +127,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
     }
     var typesetMenu = Editor.addMenu("Typeset");
     typesetMenu.addItem(pdfupLaTeX);
-    typesetMenu.addItem(pdfupLaTeX2);
-    typesetMenu.addItem(pdfLaTeX);
     typesetMenu.addItem(luaLaTeX);
-    typesetMenu.addItem(luaJITLaTeX);
-    typesetMenu.addItem(xeLaTeX);
     typesetMenu.addItem(sumatraPDF);
     typesetMenu.addItem(fwdsumatrapdf);
 })();
