@@ -15,7 +15,7 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 ## ビルダー設定 <a id="builder"></a> {#j3f79297}
 
-デフォルトの設定では，upLaTeX が使えないので変更します．<br>
+デフォルトの設定では，upLaTeX が使えないので変更します．
 
 ***
 
@@ -37,8 +37,6 @@ pukiwiki: "TeXlipse/設定/Windows"
 　　…<br>
 
 ***
-
-### 編集前 {#j7da835a}
 
 TeX Live がインストールされていれば以下のような表示になっているはずです．<br>
 
@@ -65,7 +63,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 
 ***
 
-これらを \[編集(E)...\] します．<br>
+これらを \[編集(E)...\] します．
 
 ### 編集 {#je390768}
 
@@ -88,63 +86,14 @@ TeX Live がインストールされていれば以下のような表示にな�
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　PdfLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\pdflatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\pdflatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\xelatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\xelatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
 
-■ lualatex の場合<br>
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\lualatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\lualatex.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-cmdx -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ luajitlatex の場合<br>
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\luajitlatex.exe</ins> または <ins>C:\texlive\2017\bin\win32\luajitlatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-cmdx -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -205,23 +154,6 @@ TeX Live がインストールされていれば以下のような表示にな�
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\dvips.exe</ins> または <ins>C:\texlive\2017\bin\win32\dvips.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>-Ppdf -o "%output" "%input"</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvipdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -232,23 +164,6 @@ TeX Live がインストールされていれば以下のような表示にな�
 　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\dvipdfmx.exe</ins> または <ins>C:\texlive\2017\bin\win32\dvipdfmx.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Ps2pdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2017\bin\win64\ps2pdf.exe</ins> または <ins>C:\texlive\2017\bin\win32\ps2pdf.exe</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
-　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
 
@@ -270,31 +185,6 @@ TeX Live がインストールされていれば以下のような表示にな�
 <br>
 
 　　　Program file ok
-
-***
-
-### 編集後 {#q5808f84}
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>🗕</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>🗖</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
-
-　<strong>ビルダー設定</strong>
-
-　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\texlive\2017\bin\win64\uplatex.exe または C:\texlive\2017\bin\win32\uplatex.exe)<br>
-　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\texlive\2017\bin\win64\pdflatex.exe または C:\texlive\2017\bin\win32\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\texlive\2017\bin\win64\xelatex.exe または C:\texlive\2017\bin\win32\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\texlive\2017\bin\win64\lualatex.exe または C:\texlive\2017\bin\win32\lualatex.exe)<br>
-　　Bibtex program　　　(C:\texlive\2017\bin\win64\upbibtex.exe または C:\texlive\2017\bin\win32\upbibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\texlive\2017\bin\win64\biber.exe または C:\texlive\2017\bin\win32\biber.exe)<br>
-　　Makeindex program　　　(C:\texlive\2017\bin\win64\upmendex.exe または C:\texlive\2017\bin\win32\upmendex.exe)<br>
-　　Dvips program　　　(C:\texlive\2017\bin\win64\dvips.exe または C:\texlive\2017\bin\win32\dvips.exe)<br>
-　　Dvipdf program　　　(C:\texlive\2017\bin\win64\dvipdfmx.exe または C:\texlive\2017\bin\win32\dvipdfmx.exe)<br>
-　　Ps2pdf program　　　(C:\texlive\2017\bin\win64\ps2pdf.exe または C:\texlive\2017\bin\win32\ps2pdf.exe)<br>
-　　Makeindex program (nomencl)　　　(C:\texlive\2017\bin\win64\upmendex.exe または C:\texlive\2017\bin\win32\upmendex.exe)<br>
-　　Kpsewhich program　　　(C:\texlive\2017\bin\win64\kpsewhich.exe または C:\texlive\2017\bin\win32\kpsewhich.exe)<br>
 
 ***
 
@@ -322,10 +212,6 @@ PDF ファイルを表示するための設定をします．
 　　　　▷<span style="color:Black;background-color:#DAEAFF;">　ビューアー設定　</span><br>
 　　　　▷　ビルダー設定<br>
 　　…<br>
-
-***
-
-### 編集前 {#q44f328c}
 
 ***
 
@@ -649,33 +535,6 @@ Adobe Acrobat Reader DC を使用する場合は，
 > <span style="color:White;background-color:#1188FF;">　acroread (C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (32-bit Windows の場合))　</span><br>
 
 の優先度を一番上にします．
-
-### 編集後 {#y59ef935}
-
-***
-
-<span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>🗕</strong></span> \]<ins></span><span style="color:#675EDE;background-color:#675EDE;"></ins>\[ <span style="color:Black;"><strong>🗖</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
-
-　<strong>ビューアー設定</strong>
-
-　このページは使用可能なビューアーのためにデフォルトを構成します。プレビューがエディターから起動されたと<br>
-　き、現在の出力に合う最も優先度の高いビューアーが選択されます。<br>
-
-<br>
-
-　ビューアー構成 (優先度降順)：<br>
-　sumatra PDF (C:\Program Files\SumatraPDF\SumatraPDF.exe)<br>
-　TeXworks (C:\texlive\2017\tlpkg\texworks\texworks.exe)<br>
-　TeXstudio (C:\Program Files (x86)\TeXstudio\texstudio.exe (64-bit Windows の場合) C:\Program Files\TeXstudio\texstudio.exe (32-bit Windows の場合))<br>
-　Mozilla Firefox (C:\Windows\System32\cmd.exe)<br>
-　Chrome PDF Viewer (C:\Windows\System32\cmd.exe)<br>
-　acroread (C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (64-bit Windows の場合) C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe (32-bit Windows の場合))<br>
-　yap ()<br>
-　xdvi ()<br>
-　itexmac ()<br>
-　kdvi ()<br>
-　gv ()<br>
-　none ()<br>
 
 ***
 
