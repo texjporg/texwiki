@@ -117,8 +117,7 @@ TeX Wiki には OS ごとのインストール方法が詳しく書かれてい�
 インストール不要で LaTeX が使えるウェブページもあります。
 初めて LaTeX に触れるにあたり，とりあえず使ってみたい場合は
 
-<!-- -「[[TeXを使ってみよう（upTeX版）:http://glc.l.u-tokyo.ac.jp/texonweb/]]」（サーバが廃止されました） -->
-- 「[TeXを使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」
+- 「[TeXを使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)」
 
 が便利です。
 このようなサービスの作り方については，[TeX を Web で](</TeXをWebで/>)を参照してください。
