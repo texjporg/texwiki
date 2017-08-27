@@ -48,7 +48,7 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 インストールせずに Web で試してみることもできます．
 
-- [TeX を使ってみよう](http://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
+- [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 - [TeX を Web で](</TeXをWebで/>)
 
 ### 主要な TeX ディストリビューション {#ef41d307}
