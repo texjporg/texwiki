@@ -379,8 +379,6 @@ TeX ファイルを保存して \ll でコンパイルすれば，自動的に�
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#070;text-align:center">メニュー [TeX-Suite]</th><th style="color:#FFF;background-color:#070;text-align:center">コマンドラインモード</th><th style="color:#FFF;background-color:#070;text-align:center">機能</th></tr>
 > <tr><td>Target Format</td><td>:TTarget pdf</td><td>コンパイル・プレビュー対象フォーマットを PDF に変更</td></tr>
-> <tr><td>Target Format</td><td>:TTarget ps</td><td>コンパイル・プレビュー対象フォーマットを PS に変更</td></tr>
-> <tr><td>Target Format</td><td>:TTarget dvi</td><td>コンパイル・プレビュー対象フォーマットを DVI に変更</td></tr>
 > </tbody>
 > </table>
 >
