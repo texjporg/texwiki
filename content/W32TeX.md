@@ -83,10 +83,10 @@ W32TeX の最新版は，[ミラーサイト](/W32TeX/#mirror)からダウンロ
 
 #### ダウンロードファイル {#i853d3d5}
 
-W32TeX には，最小インストール / 標準インストール / フルインストール の三つの構成があります．
+W32TeX には，フルインストール / 標準インストール / 最小インストール の三つの構成があります．
 <strong>HDD の容量に余裕があればフルインストールを選んでおくのが無難</strong>でしょう．
 
-フルインストールで 2.6G 程度の容量が必要です．
+フルインストールで 2.8 GiB 程度の容量が必要です．
 
 構成によりダウンロードするファイルが変わります．
 [ダウンロードファイルの一覧](/W32TeX/#filelist)を参考に，適当なフォルダにダウンロードしてください．
@@ -407,7 +407,6 @@ command_line_encoding.dvips = none
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/timesnew.tar.xz">timesnew.tar.xz</a></td><td>Times New Roman, Arial を使用するためのパッケージ</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/ttf2pk-w64.tar.xz">ttf2pk-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ttf2pk-w32.tar.xz">ttf2pk-w32.tar.xz</a></td><td>TrueType → PK 変換ツール</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/txpx-pazofonts.tar.xz">txpx-pazofonts.tar.xz</a></td><td><a href="/newtx/#uba8f4cc">TX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html">PX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html">Pazo</a> フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/vf-a2bk.tar.xz">vf-a2bk.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/ptex.html">pTeX</a> 用 virtual fonts</td></tr>
 <tr><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
 <tr><td>なし</td><td><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ (<a href="/索引作成/">索引作成</a>ツール xindy)</td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/Xy-pic/">Xy-pic</a> パッケージ: 可換図などを描くのに便利</td></tr>
