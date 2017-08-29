@@ -170,7 +170,26 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 
 ## インストール {#install}
 
-### Mac OS X {#inst-mac}
+### Windows {#inst-windows}
+
+[W32TeX](/W32TeX/) には標準で含まれています．
+
+公式サイトから
+
+- mingw64 バイナリ
+- mingw32 バイナリ
+- msvc64 バイナリ
+- msvc32 バイナリ
+
+が入手できます．
+
+### macOS {#inst-mac}
+
+#### Homebrew を利用したインストール {#oa2529b2}
+
+```
+$ brew install qpdf
+```
 
 #### MacPorts を利用したイントール {#q9f4b635}
 
@@ -191,11 +210,7 @@ QPDF を利用したプログラムを自分でコンパイルしない場合は
 $ sudo apt install qpdf
 ```
 
-qpdf をインストールすると、libqpdf13 が依存関係により自動的にインストールされます。
-
-### Windows {#inst-windows}
-
-[W32TeX](/W32TeX/) には標準で含まれています．
+qpdf をインストールすると、libqpdf17 が依存関係により自動的にインストールされます。
 
 ## 関連リンク {#links}
 
