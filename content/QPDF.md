@@ -201,3 +201,4 @@ qpdf をインストールすると、libqpdf13 が依存関係により自動�
 
 - [qpdf でパスワードの設定と解除](http://konoyonohana.blog.fc2.com/blog-entry-28.html)
 - [PDFの暗号化 ～３つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
+- [qpdfでPDFの暗号化による保護を解除](http://cartman0.hatenablog.com/entry/2017/08/22/012915)
