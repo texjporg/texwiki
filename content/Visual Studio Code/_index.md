@@ -46,8 +46,8 @@ LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをする�
 日本語を表示するためには以下の作業を実行します。
 
 1. [http://mozilla.github.io/pdf.js/getting_started/#download](http://mozilla.github.io/pdf.js/getting_started/#download) から PDF.js の Pre-built の Stable をクリックして zip ファイルをダウンロードして展開する
-1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.4.0\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.4.0/viewer/<br>フォルダーにコピーする
-1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.4.0\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.4.0/viewer/viewer.js<br>を開いて
+1. 展開したファルダーの中にある web フォルダーをクリックすると cmaps フォルダーがあるので cmaps フォルダーを<br>Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.4.1\viewer\\<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.4.1/viewer/<br>フォルダーにコピーする
+1. Windows の場合は %USERPROFILE%\\.vscode\extensions\James-Yu.latex-workshop-3.4.1\viewer\viewer.js<br>macOS, Linux の場合は $HOME/.vscode/extensions/James-Yu.latex-workshop-3.4.1/viewer/viewer.js<br>を開いて
 
     ```
     PDFJS.cMapUrl = '../web/cmaps/';
