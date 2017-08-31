@@ -10,7 +10,7 @@ pukiwiki: "PDF"
 ## PDF {#kf03468a}
 
 PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](http://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
-現在は，国際規格 [ISO 32000-1](https://www.iso.org/standard/51502.html) として ISO により公開されています．
+現在は，国際規格 [ISO 32000-2](https://www.iso.org/standard/63534.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
 その用途は二十数年前の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
@@ -24,7 +24,7 @@ PDF から派生した規格として，主に以下のものがあります：
 
 Adobe より，元となる PDF の仕様書が公開されています (ISO の規格書は有償です)：
 
-- [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/jp/devnet/pdf/pdf_reference.html)
+- [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
 Windows 10 と macOS では標準で PDF 出力が可能です．
@@ -208,4 +208,5 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 ### 関連リンク {#j6d79d4c}
 
+- [PDF 2.0 でドキュメントを次世代のステージへ](https://blogs.adobe.com/creativestation/taking-documents-to-the-next-level-with-pdf-2-0)
 - [今さら聞けない Adobe Acrobat &amp; PDF](http://m-school.biz/dev/acrobat-pdf/)
