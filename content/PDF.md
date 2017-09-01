@@ -179,7 +179,7 @@ PDF ライブラリにはその用途に応じて，大別して3種類ありま
 
 Java ではいくつかの活発なプロジェクトがあります．
 
-- [今どきのJavaのPDFライブラリ まとめ (2014年版)](http://weblabo.oscasierra.net/java-pdf-lib-2014/)
+- [今どきのJavaのPDFライブラリ まとめ (2017年版)](https://weblabo.oscasierra.net/java-pdf-lib-2017/)
 
 などを参照すると良いでしょう．
 
