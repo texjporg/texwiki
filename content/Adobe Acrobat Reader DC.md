@@ -77,6 +77,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 Wine 2.14 で実行したところ Adobe Acrobat Reader DC は PDF ファイルを開いて 3 秒後に強制終了しましたが
 Adobe Reader XI であれば PDF ファイルを開いても強制終了せずに表示できました．
+ただし [Adobe Reader XI のサポートは 2017-10-15 に終了します](https://helpx.adobe.com/jp/acrobat/kb/end-of-support-acrobat-xi-reader-xi.html)．
 
 ### Android {#k545c7f3}
 
@@ -436,7 +437,6 @@ synctex help edit
 - [MFCを利用しないプロジェクトからのIACの使用](http://kb2.adobe.com/jp/cps/510/510052.html)
 - [VOLE - A Neat C++ COM/Automation Driver](http://vole.sourceforge.net/)
 - [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
-- [Acrobat SDK をダウンロードする](http://atamoco.boy.jp/vbcs/windows.app/adobe-pdf/sdk-download.php)
 - \[[ VB.NET / C# \] PDF ファイルをフォーム上に表示して印刷する](http://hensa40.cutegirl.jp/archives/1189)
 - [WindowsフォームでPDFを扱う](http://wiki.livedoor.jp/kabamaro/d/Windows%A5%D5%A5%A9%A1%BC%A5%E0%A4%C7PDF%A4%F2%B0%B7%A4%A6)
 - [.NET製Winフォーム上にPDFを表示する](http://d.hatena.ne.jp/foohogehoge/20091222/1261454425)
@@ -446,9 +446,6 @@ synctex help edit
 - [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
-- [Acrobat最新ニュース速報 - 日本のニュース](http://www.jp01.net/tag-Acrobat.html)
-- \[[研究\] Adobe Acrobat Reader DC v2015 繁體中文版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-reader-dc-v2015.html)
-- \[[研究\] Adobe Acrobat Pro DC v2015 30天試用版](http://shaurong.blogspot.com/2015/04/adobe-acrobat-pro-dc-v2015-30.html)
 
 [^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17 です。
 [^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
