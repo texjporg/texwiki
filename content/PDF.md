@@ -173,7 +173,7 @@ PDF ライブラリにはその用途に応じて，大別して3種類ありま
 
 [PoDoFo](http://podofo.sourceforge.net/) は PDF ファイルを扱うための C++ ライブラリです．PDF を読み込み，加工することができます．
 
-また，2D グラフィックス・ライブラリの [Cairo](http://cairographics.org/) も PDF 出力をサポートしており，手軽に PDF 生成が可能です．しおりやハイパーリンクなどの機能が不要であれば Cairo を使うのが簡単で良いでしょう．Cairo には Ruby など様々な言語でのバインディングがあります．
+また，2D グラフィックス・ライブラリの [Cairo](https://www.cairographics.org/) も PDF 出力をサポートしており，手軽に PDF 生成が可能です．しおりやハイパーリンクなどの機能が不要であれば Cairo を使うのが簡単で良いでしょう．Cairo には Ruby など様々な言語でのバインディングがあります．
 
 #### Java {#da4d96c8}
 
