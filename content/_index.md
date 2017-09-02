@@ -9,8 +9,6 @@ pukiwiki: "FrontPage"
 
 # FrontPage
 
-2017年9月3日中に、TeX Wikiを動かしているサーバーを別のサーバーへ移行することになりました。サーバ移行作業中、本TeX Wikiのサービスは一時的に停止します。
-
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
 <!-- * FrontPage [#pe4f375a] -->
