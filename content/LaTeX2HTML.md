@@ -11,16 +11,11 @@ pukiwiki: "LaTeX2HTML"
 
 ## LaTeX2HTML とは {#n478b3bb}
 
-LaTeX2HTML は LaTeX ドキュメントを HTML に変換するコンバーターです.<br>
-LaTeX2HTML は Perl で記述されています．<br>
+LaTeX2HTML は LaTeX ドキュメントを HTML に変換するコンバーターです.
+LaTeX2HTML は Perl で記述されています．
 
 - [LaTeX2HTML](http://www.latex2html.org/)
-    - [current](http://www.latex2html.org/current/)
 - [CTAN:help/Catalogue/entries/latex2html.html](https://mirror.ctan.org/help/Catalogue/entries/latex2html.html)
-
-### 派生版 {#t629466e}
-
-- [Tools for Publishing LaTeX Documents on the Web](https://ccrma.stanford.edu/~jos/webpub/webpub.html)
 
 ## LaTeX2HTML 日本語化パッチ {#ca003217}
 
@@ -31,12 +26,10 @@ LaTeX2HTML は Perl で記述されています．<br>
 ### Windows {#tb4f0a0a}
 
 - [MS-Windows への LaTeX2HTML のインストール (Japanese)](http://takeno.iee.niit.ac.jp/~shige/TeX/latex2html/l2h-win.html)
-- [Windows 環境への LaTeX2HTML のインストールと手直し](http://www.kagami.org/diary/2012-02-25-1.html)
-- [Latex2HtmlをWindowsで使う](http://tmlaboratory.at-ninja.jp/memo/latex2html_install.html)
-- [latex2html の設定](http://medt00lz.s59.xrea.com/blog/archives/2008/04/latex2html.html)
 
 ### macOS {#u17fe485}
 
+- [LaTeX2HTMLのインストール（OS X 10.9 Mavericks以降）](http://www.geidai.ac.jp/~marui/dont_forget/node3.html#SECTION00036000000000000000)
 - [若松久仁光のブログ - LaTeX2HTML, eLyXer](http://www.geocities.jp/flutecore/Weblog/archives/cat_latex2htmlelyxer.html)
 - [LaTeX2HTMLのインストール con gusto](http://www.geocities.jp/flutecore/install-latex2html.html)
 - [Homebrew + MacTeXのUTF-8環境でLaTeX2HTMLを動かすメモ](http://d.hatena.ne.jp/amarui/20120327/1332817158)
@@ -58,3 +51,4 @@ LaTeX2HTML は Perl で記述されています．<br>
 
 - [latex2html 日本語の使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=748)
 - [やる夫で学ぶディジタル信号処理](http://www.ic.is.tohoku.ac.jp/~swk/lecture/yaruodsp/main.html)
+- [Tools for Publishing LaTeX Documents on the Web](https://ccrma.stanford.edu/~jos/webpub/webpub.html)
