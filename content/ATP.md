@@ -25,7 +25,7 @@ Automatic LaTeX Plugin for Vim (ATP) は [Vim](/Vim/) で LaTeX ドキュメン�
 - [Automatic LaTeX Plugin for Vim](http://atp-vim.sourceforge.net/)
     - [ATP Requirements](http://atp-vim.sourceforge.net/requirements.shtml)
 - [Automatic LaTex Plugin for Vim at SourceForge](https://sourceforge.net/projects/atp-vim/)
-- [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](http://www.vim.org/scripts/script.php?script_id=2945)
+- [AutomaticTexPlugin - Background compilation, completion, bib serch, toc and other nice features. : vim online](https://vim.sourceforge.io/scripts/script.php?script_id=2945)
 
 ### License {#s306eff3}
 
@@ -159,7 +159,7 @@ let g:atp_folding = 1
 
 ***
 
-<span style="color:#4E03C7;background-color:#4E03C7;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png" alt="welcome home : vim online" width="28" height="28">](http://www.vim.org/)<span style="color:#4E03C7;background-color:#4E03C7;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>vim.tex - GVIM1</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#4E03C7;background-color:#4E03C7;"></ins>\[ <span style="color:Black;"><strong>🗕</strong></span> \]<ins></span><span style="color:#4E03C7;background-color:#4E03C7;"></ins>\[ <span style="color:Black;"><strong>🗖</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
+<span style="color:#4E03C7;background-color:#4E03C7;"><ins>　</ins></span>[<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/200px-Vimlogo.svg.png" alt="welcome home : vim online" width="28" height="28">](https://vim.sourceforge.io/)<span style="color:#4E03C7;background-color:#4E03C7;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>vim.tex - GVIM1</strong></span>　　　　　　　　　　　　　　　　　<span style="color:#4E03C7;background-color:#4E03C7;"></ins>\[ <span style="color:Black;"><strong>🗕</strong></span> \]<ins></span><span style="color:#4E03C7;background-color:#4E03C7;"></ins>\[ <span style="color:Black;"><strong>🗖</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;"><strong>🗙</strong></span>　\]<ins></span></ins></span><br>
 
 <span style="color:Black;background-color:#DAE0FE;"><ins>　　ファイル(F)　 編集(E)　 ツール(T)　 シンタックス(S)　 バッファ(B)　 ウィンドウ(W)　 LaTeX　 ヘルプ(H)　　　</ins></span><br>
 
