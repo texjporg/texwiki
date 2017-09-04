@@ -164,6 +164,10 @@ $ sudo tlmgr paper a4
 <!-- -[[MacTeX 2014 を再インストールしたときの覚書:https://pt-diary.tumblr.com/post/107214765605/20150105-mactex]] -->
 <!-- -[[Sublime TextでTeX論文執筆できるようにした時のメモ:http://kzhrknt.hatenablog.com/entry/2014/09/14/032907]] -->
 
+### アンインストール {#uninstalling}
+
+- [Uninstalling - MacTeX - TeX Users Group](http://www.tug.org/mactex/uninstalling.html)
+
 ### リリース情報 {#c5157a75}
 
 [MacTeX - TeX Users Group](http://tug.org/mactex/) を参照。
