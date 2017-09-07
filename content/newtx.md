@@ -19,7 +19,7 @@ TeX Live，W32TeX に標準で含まれています．
 ### 公式サイトなど {#o3f5f613}
 
 - [Michael Sharpe Home Page](http://math.ucsd.edu/~msharpe/)
-    - [MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html)
+    - [MSharpe TeX software](https://mjsharpe.github.io/tex-software/)
 - [https://ctan.org/pkg/newtx](https://ctan.org/pkg/newtx)
     - newtx – Al­ter­na­tive uses of the TX fonts, with im­proved met­rics
 - [https://ctan.org/pkg/newtxtt](https://ctan.org/pkg/newtxtt)
@@ -34,10 +34,6 @@ TeX Live，W32TeX に標準で含まれています．
 ### License {#ga9ac954}
 
 [The LaTeX Project Public Li­cense](http://latex-project.org/lppl/)
-
-### News {#s0ef87dd}
-
-[MSharpe TeX software](https://dl.dropboxusercontent.com/u/3825336/TeX/index.html) を参照．<br>
 
 ### インストール {#va9608e1}
 
