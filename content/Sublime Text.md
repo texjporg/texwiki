@@ -80,7 +80,7 @@ LaTeXTools というプラグインを利用すれば，LaTeX 用のエディタ
 ### インストール {#i186fdb3}
 
 メニューの \[Preferences\] &gt; \[Package Control\] を選択します。
-\[Package Control\] が存在しない場合は [Installation - Package Control](https://packagecontrol.io/installation) を参照して
+\[Package Control\] が存在しない場合は \[Tools\] &gt; \[Install Package Control...\] から
 Package Control をインストールします。
 Package Control: Install Package を選択します。
 LaTeXTools を入力して LaTeXTools を選択します。
