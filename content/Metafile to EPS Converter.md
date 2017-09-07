@@ -29,10 +29,11 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 
 です。
 
-設定 &gt; デバイス &gt; デバイスとプリンター のプリンターにも Metafile to EPS Converter が追加されます。
+設定 &gt; デバイス &gt; プリンターとスキャナー にも Metafile to EPS Converter が追加されます。
 
 ### 関連リンク {#o6f53214}
 
+- [TeXに貼る図の作り方 EPS or PDF](http://qiita.com/patekawa/items/fe18b8a779af02bf23e3)
 - [Metafile to EPS Converter で Windows Metafile を EPS に変換](http://qiita.com/tubo28/items/1f8672fb164aafa9ab31)
 - [EPS変換 Metafile to EPS Converter](http://ameblo.jp/amazingsky/entry-12062809562.html)
 - [【PowerPoint】パワポがなかったら卒論は書けなかった話をする【パワポすごい】](http://buutan.hatenablog.com/entry/2015/02/14/043201)
