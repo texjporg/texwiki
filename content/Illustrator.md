@@ -797,7 +797,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### リリース情報 {#u178a7b2}
 
-- Adobe Illustrator CC 17.1.0 2014年
+- Adobe Illustrator CC 2017 2017年および2016年
 
 情報等
 
