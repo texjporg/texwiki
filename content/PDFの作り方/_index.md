@@ -37,7 +37,7 @@ Windows でも，Windows 10 から「Microsoft Print to PDF」というプリン
 
 Windows 8.1, Windows 8, Windows 7 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
 
-Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの[Cairo](https://www.cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
+Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの [Cairo](https://www.cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
 
 ### 仮想プリンタの導入 {#ge6f5633}
 
@@ -46,13 +46,7 @@ Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフト�
 
 Windows では，[Ghostscript](/Ghostscript/) というオープンソースのソフトウェアを用いた，
 PDF へ出力するための無償の仮想プリンタが多数あります：
-[PDFCreator](http://www.pdfforge.org/)，
-[CubePDF](http://www.cube-soft.jp/cubepdf/)，
-[BullZip PDF Printer](http://www.bullzip.com/products/pdf/info.php)，
-[CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)，
-[PDF24 Creator](https://en.pdf24.org/)，
-[PrimoPDF](http://www.primopdf.com/)，
-[pdf995](http://www.pdf995.com/)
+[PDF#PDF を扱うソフトウェア](/PDF/#o7e2223a) を参照．
 
 インストール方法や使い方については，それぞれのソフトウェア名で検索してください．
 
@@ -122,13 +116,14 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 
 ### Adobe Acrobat DC の設定 {#e5e57a76}
 
-PDF 出力をデフォルトのプリンターとして設定することができます．
-設定から 「デバイス」 → 「デバイスとプリンター」をクリックして［デバイスとプリンター］画面を表示します．
-［プリンター］にある「Adobe PDF」プリンターアイコンを右クリックし，
-「通常使うプリンターに設定」します．
+[Windows 10 で通常使うプリンターを設定する方法](https://support.microsoft.com/ja-jp/help/4028622/windows-how-to-set-a-default-printer-in-windows-10) を参照して
+Adobe Acrobat DC を通常使うプリンターとして設定することができます．
+設定から 「デバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
+［プリンターとスキャナー］の「Windows で通常使うプリンターを管理する」のチェックをはずし，「Adobe PDF」プリンターアイコンをクリックして
+「管理」→「既定に設定」します．
 
-出力の細かい設定を行うには，「Adobe PDF」プリンターアイコンを右クリックし，
-［印刷設定］ → ［レイアウト］ → ［詳細設定］へと進みます．
+出力の細かい設定を行うには，「Adobe PDF」プリンターをクリックし，
+［管理］ → ［印刷設定］ → ［レイアウト］ → ［詳細設定］へと進みます．
 
 まずは［Adobe PDF 設定］タブの［PDF設定］で設定を選びます．
 Web 用，論文提出用には低品位でよければ「標準」，
@@ -153,17 +148,17 @@ Web 用，論文提出用には低品位でよければ「標準」，
 
 [ImageMagick](/ImageMagick/) などを使うとよいでしょう．
 
-### Illustrator のヒント {#zf39d5a5}
+### Illustrator CC のヒント {#zf39d5a5}
 
-Illustrator 9/10 から EPS 形式で保存するときは，
-互換性は最新のもの（「バージョン 9」「バージョン 10」）でかまいません．
-CMYK ポストスクリプト（レベル 2）にします．
+Illustrator CC から EPS 形式で保存するときは，
+バージョンは最新のもの（「Illustrator CC EPS」）でかまいません．
+「CMYK PostScript を RGB ファイルに含む」チェックボックスをオンにして Adobe PostScript を レベル 2 に設定します．
 プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
-Word などに埋め込む際には，プレビューのラジオボタンは必ず「不透明」にします．
+Word などに埋め込む際には，プレビューフォーマットのラジオボタンは必ず「不透明」にします．
 
-「フォントデータを含む」チェックボックスはオンにしないと文字化けします．
+「他のアプリケーション用にフォントを埋め込む」チェックボックスはオンにしないと文字化けします．
 あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．
-たとえば Illustrator に附いている小塚明朝 Std M を使った場合，KozMinStd-Medium-90ms-RKSJ-H を
+たとえば Illustrator CC に附いている小塚明朝 Pr6N M を使った場合，KozMinPr6N-Medium-90ms-RKSJ-H を
 Ryumin-Light-RKSJ-H に置き換えます．
 
 ## PDF を作る際の Tips {#k491ed05}
