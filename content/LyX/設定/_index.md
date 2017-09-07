@@ -372,19 +372,19 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで Japanese Article (bxjsarticle) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-upLaTeX + dvipdfmx で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
-upLaTeX + dvipdfmx で jlreq を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
+upLaTeX + dvipdfmx で Japanese Article (BXJS Class) を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
-■ Japanese Article (bxjsarticle) の場合
+■ Japanese Article (BXJS Class) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BXJS Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
@@ -417,19 +417,19 @@ upLaTeX + dvipdfmx で jlreq を使用する場合は，クラスオプション
 
 #### LuaLaTeX の場合 {#l1a666c4}
 
-文書クラスで Japanese Article (bxjsarticle) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-LuaLaTeX で bxjsarticle を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
-LuaLaTeX で jlreq を使用する場合は，グラフィックドライバに既定値を指定します．
+文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
+LuaLaTeX で Japanese Article (BXJS Class) を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+LuaLaTeX で Requirements for Japanese Text Layout (jlreq) を使用する場合は，グラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
-■ Japanese Article (bxjsarticle) の場合
+■ Japanese Article (BXJS Class) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (bxjsarticle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BXJS Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
