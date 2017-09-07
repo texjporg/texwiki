@@ -82,65 +82,15 @@ babel のオプションを設定する場合は以下の方法があります�
 - [LyX wiki | Layouts / Layouts](http://wiki.lyx.org/Layouts/Layouts)
 - [LyX wiki | Layouts / CreatingLayouts](http://wiki.lyx.org/Layouts/CreatingLayouts)
 
-LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．<br>
-LuaLaTeX で jsclasses 相当のレイアウトを実現したい場合はレイアウトファイルを作成して追加します．<br>
-レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．<br>
-Format 番号は LyX のバージョンによって異なります．<br>
-使用している LyX のバージョンの Format 番号を確認して編集してください．<br>
+LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．
 
-#### bxjsarticle.layout <a id="bxjsarticle-layout"></a> {#zcc42b2e}
+jlreq を使用する場合はレイアウトファイルを作成して追加します．
 
-bxjsarticle.layout ファイルを新規作成して以下の内容を編集します．
+レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [bxjsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/bxjsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．
 
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Article (bxjsarticle)}
-#  \DeclareCategory{Articles}
-# Japanese new article textclass definition file.
+Format 番号は LyX のバージョンによって異なります．
 
-# This style provides japanese features 
-Format 63
-Provides japanese 1
-
-# Input general definitions
-Input article.layout
-```
-
-#### bxjsreport.layout <a id="bxjsreport-layout"></a> {#a19d53bc}
-
-bxjsreport.layout ファイルを新規作成して以下の内容を編集します．
-
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Report (bxjsreport)}
-#  \DeclareCategory{Reports}
-# Japanese new report textclass definition file.
-
-# This style provides japanese features 
-Format 63
-Provides japanese 1
-
-# Input general definitions
-Input report.layout
-```
-
-#### bxjsbook.layout <a id="bxjsbook-layout"></a> {#p03557b7}
-
-bxjsbook.layout ファイルを新規作成して以下の内容を編集します．
-
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Japanese Book (bxjsbook)}
-#  \DeclareCategory{Books}
-# Japanese new book textclass definition file.
-
-# This style provides japanese features 
-Format 63
-Provides japanese 1
-
-# Input general definitions
-Input book.layout
-```
+使用している LyX のバージョンの Format 番号を確認して編集してください．
 
 #### jlreq.layout <a id="jlreq-layout"></a> {#paa8e862}
 
@@ -153,7 +103,7 @@ jlreq.layout ファイルを新規作成して以下の内容を編集します�
 # Requirements for Japanese Text Layout textclass definition file.
 
 # This style provides japanese features 
-Format 63
+Format 64
 Provides japanese 1
 
 # Input general definitions
@@ -187,9 +137,6 @@ Linux の場合はレイアウトファイルを
 \[ツール(T)\] &gt; \[環境構成(R)\] をクリックして LyX を再起動します．
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\] に
 
-- Japanese Article (bxjsarticle)
-- Japanese Report (bxjsreport)
-- Japanese Book (bxjsbook)
 - Requirements for Japanese Text Layout (jlreq)
 
 が追加されていることを確認します．
