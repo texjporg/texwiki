@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 Mark A. Wicks 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 [Mark A. Wicks](https://twitter.com/mawicks0930) 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -603,7 +603,6 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 
 ## 関連リンク {#me536d1a}
 
-- [Unofficial LaTeX graphics drivers - 概要 \[Puszcza\]](http://puszcza.gnu.org.ua/projects/latexfmxdef)
 - [Newest &#39;dvipdfmx&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/dvipdfmx)
 - [「dvipdfmx」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=dvipdfmx)
 - [PXchfon パッケージ ～pLaTeX文書のフォントを簡単に変更～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxchfon.html)
@@ -621,7 +620,7 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 
 ### ライセンス {#w1524716}
 
-[GPLv3, GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)
+[GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)
 
 ### ChangeLog {#he60a3d0}
 
