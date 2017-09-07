@@ -370,7 +370,7 @@ TeXShop メニューの
 
 TeXShop の環境設定ウィンドウは，多量の設定項目によってウィンドウが煩雑になることを防ぐため，GUI から設定可能な項目の数はあえて抑えてあります。その代わり，TeXShop には，コマンドラインのみから設定できる隠し設定項目がいくつもあります。
 
-[TeXShop Customizer](https://dl.dropboxusercontent.com/u/5807100/TeXShopCustomizer/index.ja.html) を利用することで，それらの隠し設定を変更するコマンドを生成することができます。
+[TeXShop Simulator](http://island.geocities.jp/loveinequality/misc/TeXShopSimulator/index.ja.html) を利用することで，それらの隠し設定を変更するコマンドを生成することができます。
 
 ### TeXShop Ver. 3.37 でアプリアイコンが丸いのに変わったのはなぜ？ {#w4c35dcc}
 
