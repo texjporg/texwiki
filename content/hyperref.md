@@ -161,7 +161,25 @@ hyperref は pTeX の縦書きモードの場合にうまくいかないこと�
 
 使用方法は [hyperref で日本語しおりに endash を出す件について](http://d.hatena.ne.jp/zrbabbler/20120527/1338111080) を参照してください．
 PXjahyper パッケージが使用できない場合はプリアンブルに以下を記述しておけば，しおり・タイトル等の日本語の文字化けを防止できます．(解説は [TeXnique を更新](http://blog.arq.name/archives/736) を参照)
-CMap は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．
+CMap は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex-fonts/UTF8-UTF16?view=markup) を使用します．補助面 (U+10000以上) の文字を使用することができます．TeX Live, W32TeX の場合は UTF8-UTF16 はインストール済み (texmf-dist\fonts\cmap\uptex-fonts\UTF8-UTF16) です．[^1]PXjahyper を使用する場合は bigcode オプションで UTF8-UTF16 を使用します．[TeX Live 2014 以降で bigcode が既定になっています](http://d.hatena.ne.jp/zrbabbler/20160615/1465995071)．
+
+```
+\ifx\kanjiskip\undefined\else
+  \usepackage{atbegshi}
+  \ifx\ucs\undefined
+    \ifnum 42146=\euc"A4A2
+      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
+    \else
+      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
+    \fi
+  \else
+    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
+  \fi
+  \usepackage[dvipdfmx]{hyperref}
+\fi
+```
+
+TeX Live 2011 以前などの CMap UTF8-UTF16 が存在しない古い環境を使用している場合は [UTF8-UCS2](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/dvipdfmx/UTF8-UCS2?view=markup) を使用します．
 TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場合は，UTF8-UCS2 はインストール済みです．
 
 ```
@@ -175,24 +193,6 @@ TeX Live, W32TeX (C:\w32tex\share\texmf-dist\fonts\cmap\misc\UTF8-UCS2) の場�
     \fi
   \else
     \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UCS2}}
-  \fi
-  \usepackage[dvipdfmx]{hyperref}
-\fi
-```
-
-補助面 (U+10000以上) の文字を使用する場合は [UTF8-UTF16](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/cmap/uptex-fonts/UTF8-UTF16?view=markup) を使用します．TeX Live, W32TeX の場合は UTF8-UTF16 はインストール済み (texmf-dist\fonts\cmap\uptex-fonts\UTF8-UTF16) です．[^1]
-
-```
-\ifx\kanjiskip\undefined\else
-  \usepackage{atbegshi}
-  \ifx\ucs\undefined
-    \ifnum 42146=\euc"A4A2
-      \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}
-    \else
-      \AtBeginShipoutFirst{\special{pdf:tounicode 90ms-RKSJ-UCS2}}
-    \fi
-  \else
-    \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
   \fi
   \usepackage[dvipdfmx]{hyperref}
 \fi
