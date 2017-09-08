@@ -29,7 +29,7 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 
 です。
 
-設定 &gt; デバイス &gt; プリンターとスキャナー にも Metafile to EPS Converter が追加されます。
+スタート &gt; 設定 &gt; デバイス &gt; プリンターとスキャナー にも Metafile to EPS Converter が追加されるのでプリンターとして使用することもできます。
 
 ### 関連リンク {#o6f53214}
 
