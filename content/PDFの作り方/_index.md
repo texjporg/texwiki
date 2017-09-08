@@ -148,19 +148,6 @@ Web 用，論文提出用には低品位でよければ「標準」，
 
 [ImageMagick](/ImageMagick/) などを使うとよいでしょう．
 
-### Illustrator CC のヒント {#zf39d5a5}
-
-Illustrator CC から EPS 形式で保存するときは，
-バージョンは最新のもの（「Illustrator CC EPS」）でかまいません．
-「CMYK PostScript を RGB ファイルに含む」チェックボックスをオンにして Adobe PostScript を レベル 2 に設定します．
-プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
-Word などに埋め込む際には，プレビューフォーマットのラジオボタンは必ず「不透明」にします．
-
-「他のアプリケーション用にフォントを埋め込む」チェックボックスはオンにしないと文字化けします．
-あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．
-たとえば Illustrator CC に附いている小塚明朝 Pr6N M を使った場合，KozMinPr6N-Medium-90ms-RKSJ-H を
-Ryumin-Light-RKSJ-H に置き換えます．
-
 ## PDF を作る際の Tips {#k491ed05}
 
 ### 読み手に親切な PDF ファイル {#hb3bee4c}
@@ -185,7 +172,7 @@ OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋�
 
 フォントの埋め込みはよい PDF を作成するために推奨されることですが，これにはライセンス上の微妙な問題も絡み，注意が必要です。「[フォントの埋め込みとライセンス](</フォントの埋め込みとライセンス/>)」の項なども参照してください．
 
-Adobe Acrobat DC (Distiller)，dvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．
+Adobe Acrobat DC (Distiller)，dvipdfmx，xdvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．
 
 #### テキスト情報 {#g073c42c}
 
