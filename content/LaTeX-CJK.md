@@ -368,7 +368,7 @@ dvipdfmx は以下のフォントを「知って」います。
 <tr><th style="text-align:center">言語</th><th style="text-align:center">文字集合</th><th style="text-align:center">フォント名</th></tr>
 </thead>
 <tbody>
-<tr><th rowspan="8" style="text-align:center">日本語</th><td rowspan="4">Adobe-Japan1</td><td>Ryumin-Light</td></tr>
+<tr><th rowspan="9" style="text-align:center">日本語</th><td rowspan="4">Adobe-Japan1</td><td>Ryumin-Light</td></tr>
 <tr><td>GothicBBB-Medium</td></tr>
 <tr><td>HeiseiMin-W3</td></tr>
 <tr><td>HeiseiKakuGo-W5</td></tr>
@@ -376,6 +376,7 @@ dvipdfmx は以下のフォントを「知って」います。
 <tr><td>HeiseiKakuGo-W5-Acro</td></tr>
 <tr><td rowspan="2">Adobe-Japan1-4</td><td>KozMinPro-Regular-Acro</td></tr>
 <tr><td>KozGoPro-Medium-Acro</td></tr>
+<tr><td>Adobe-Japan1-6</td><td>KozMinProVI-Regular</td></tr>
 <tr><th rowspan="3" style="text-align:center">簡体中文<br>（簡化字中文）</th><td>Adobe-GB1</td><td>STSong-Light</td></tr>
 <tr><td>Adobe-GB1-2</td><td>STSong-Light-Acro</td></tr>
 <tr><td>Adobe-GB1-4</td><td>AdobeSongStd-Light-Acro</td></tr>
@@ -524,7 +525,7 @@ CMap テーブルを使用して TTF フォントにアクセスするには、k
     dvipdfmx-20070409 以降が必要です。更に商用フォントも使いました。
     そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
-        - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（[cvs 版 Fri Jan 19 10:57:22 2007 UTC](http://cvs.ktug.org/viewcvs/dvipdfmx/src/fontmap.c?r1=1.33&r2=1.34), [svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
+        - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（[svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
         - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
             の二つのファイルに分けないと、SIP の文字を文書の最初に使えない。
         - 商用フォントを使う設定になっている。これは、kanjix.map を書き換えて、[HAN NOM FONTs](http://vietunicode.sourceforge.net/fonts/fonts_hannom.html) を使う設定に直した方がいい。（それにしても、Han Nom のデザインは SimSun に似ている。）
