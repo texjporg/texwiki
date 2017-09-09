@@ -313,6 +313,7 @@ xelatex の場合はドライバは自動検出されます．指定しないと
 <tr><td>linkbordercolor</td><td>color of border around links</td><td>RGB値 <strong>1 0 0</strong></td></tr>
 <tr><td>linkcolor</td><td>color of links</td><td><strong>red</strong></td></tr>
 <tr><td>linktocpage</td><td>make page number, not text, be link on TOC, LOF and LOT</td><td>true/<strong>false</strong></td></tr>
+<tr><td>luatex</td><td>use LuaTeX backend (6.83p 以降)</td><td style="text-align:center"> -</td></tr>
 <tr><td>menubordercolor</td><td>color of border around menu links</td><td>RGB値 <strong>1 0 0</strong></td></tr>
 <tr><td>menucolor</td><td>color for menu links</td><td><strong>red</strong></td></tr>
 <tr><td>naturalnames</td><td>use LATEX-computed names for links</td><td>true/<strong>false</strong></td></tr>
@@ -340,7 +341,7 @@ xelatex の場合はドライバは自動検出されます．指定しないと
 <tr><td>pdfstartpage</td><td>page at which PDF document opens</td><td><strong>1</strong></td></tr>
 <tr><td>pdfstartview</td><td>starting view of PDF document</td><td><strong>/Fit</strong></td></tr>
 <tr><td>pdfsubject</td><td>text for PDF Subject field</td><td>空</td></tr>
-<tr><td>pdftex</td><td>use pdfTEX backend</td><td style="text-align:center"> -</td></tr>
+<tr><td>pdftex</td><td>use pdfTeX backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>pdftitle</td><td>text for PDF Title field</td><td>空</td></tr>
 <tr><td>pdftoolbar</td><td>make PDF toolbar visible</td><td><strong>true</strong>/false</td></tr>
 <tr><td>pdfview</td><td>PDF `view' when on link traversal</td><td>空</td></tr>
@@ -407,7 +408,7 @@ url 及び nolinkurl とは，hyperref.styを読み込むことによって使�
 #### pdfファイル作成 {#ib05c931}
 
 タイプセットでpdfファイルを作成し，
-Adobe Reader で開くと（その御節介機能により），
+Adobe Acrobat Reader で開くと（その御節介機能により），
 url文字列にはhyper link機能が付与されます．（下記例ではnolinkurとtextttの両方に）
 
 ```
@@ -425,14 +426,14 @@ url文字列にはhyper link機能が付与されます．（下記例ではnoli
 \end{document}
 ```
 
-### Adobe Reader を操作するボタン {#bfd00112}
+### Adobe Acrobat Reader を操作するボタン {#bfd00112}
 
 ```
 \Acrobatmenu{menuoption}{text}
 ```
 
 PDF 文書の中に「次のページへ」や「先頭のページへ」などリンクを埋め込むことができます．
-最新の Adobe Reader では，セキュリティ上の制限により，過去のバージョンのものとは挙動が異なるものもあります．
+最新の Adobe Acrobat Reader DC では，セキュリティ上の制限により，過去のバージョンのものとは挙動が異なるものもあります．
 
 #### \Acrobatmenu の例 {#p427ac0e}
 
