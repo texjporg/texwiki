@@ -22,7 +22,7 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 
 ## YaTeX とは {#q88fd71b}
 
-- [YaTeX (Yet Another TeX mode for Emacs)](https://www.yatex.org/) (公式ページ)
+- [YaTeX (Yet Another LaTeX mode for Emacs.)](https://www.yatex.org/) (公式ページ)
     - [『野鳥』クイックリファレンス](https://www.yatex.org/yatexref.txt)
     - [Yet Another tex-mode for Emacs - Table of Contents](https://www.yatex.org/info/yatexj_toc.html)
 
@@ -43,7 +43,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 
 ## 不具合 {#m12f4e1b}
 
-### YaTeX 1.79.1 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
+### YaTeX 1.80 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
 
 Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．
 ただし，[2016-01-08](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e) 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
@@ -694,7 +694,7 @@ if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
 
 YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード以外の TeX ファイルや sty ファイルも指定した文字コードで保存されてしまう</strong>ので <strong>nil を指定することをおすすめします</strong>．
 
-YaTeX 1.79.4 (2017-08-22) 以降は YaTeX-kanji-code が nil に設定されています．
+YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されました．
 
 - [8.4.3 文字エンコーディングの設定](http://hwb.ecc.u-tokyo.ac.jp/current/literacy/editor/emacs/encoding/)
 
@@ -1402,4 +1402,3 @@ TeX ソースの先頭行に例えば，
     - [変更点](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/file/tip/yatex.new)
     - [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
 - [http://twilog.org/hiroseyuuji/search?word=YaTeX](http://twilog.org/hiroseyuuji/search?word=YaTeX)
-- [http://twilog.org/ryseto/search?word=YaTeX](http://twilog.org/ryseto/search?word=YaTeX)
