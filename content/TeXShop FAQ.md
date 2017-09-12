@@ -9,7 +9,7 @@ pukiwiki: "TeXShop FAQ"
 
 [TeXShop](/TeXShop/) > TeXShop FAQ
 
-OS X 用の TeX 統合環境である TeXShop について，よくあるトラブルへの対処法や Tips をまとめます。
+macOS 用の TeX 統合環境である TeXShop について，よくあるトラブルへの対処法や Tips をまとめます。
 
 ***
 
@@ -84,7 +84,7 @@ defaults write TeXShop SourceScrollElasticity NO
 ### 行番号表示のスクロールが遅れる {#p0829a60}
 
 10.7 Lion において，OS のバグが原因で，ソースをスクロールしても行番号が全くスクロールされない問題が生じていました。TeXShop には，それを解決するための対症療法的解決策が仕込んであります。ただし，その対症療法は画面のちらつきや行番号スクロールの遅れの原因となります。
-最新の OS X では，この問題は解決されましたので，もはや対症療法は不要になりました。
+最新の macOS では，この問題は解決されましたので，もはや対症療法は不要になりました。
 
 ```
 defaults write TeXShop FixLineNumberScroll NO
@@ -117,7 +117,7 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 ### 日本語 JIS キーボードでバックスラッシュ \ ではなく円記号 ¥ が入力される {#y43ef465}
 
-[OS X の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，TeXShop にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
+[macOS の入力システム側で対処する](/Mac/#me741d27)ほうが筋ですが，TeXShop にはキーバインドの編集機能がありますので，そちらで円記号 ¥ の代わりに \ が入力されるように設定することができます。
 
 メニューの「ソース＞キーバインド＞キーバインドファイルの編集」で設定画面が出てきます。
 
@@ -167,7 +167,7 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 ### ソース上何も問題ないはずなのに，Text line contains an invalid character. ^^H や Package inputenc Error: Keyboard character used is undefined (inputenc) in inputencoding \`utf8' というエラーが出てコンパイルできない {#tb887cbe}
 
-これは TeXShop というより，OS X 標準の日本語入力システムが持っているバグです。
+これは TeXShop というより，macOS 標準の日本語入力システムが持っているバグです。
 10.10 Yosemite でそのバグが入り込んできました。
 日本語入力中に制御コードが入力されてしまうことがあるようです。
 見た目には何も見えませんが，カーソルキーで1文字ずつカーソルを動かしたときに，何もない場所でカーソル移動が空振りする場所があれば，そこに見えない制御コードが入っています。
@@ -428,7 +428,7 @@ Unicodeでは，1つの文字に対して複数の表現方法が存在する場
 
 という2つの表現方法があります。
 よく使われるのは U+304C の，初めから結合された形です。TeX をはじめ，多くの Unix ツール類もこちらを標準的に取り扱うものが多いです。
-それに対し，OS X は HFS+ などで内部的に第2の表現方法 (U+304B + U+3099) を使っています。そのため，
+それに対し，macOS は HFS+ などで内部的に第2の表現方法 (U+304B + U+3099) を使っています。そのため，
 
 - ターミナルの ls コマンドによる濁点入りファイル名の出力結果をコピー
 - Finder から濁点入りファイル名をコピー
