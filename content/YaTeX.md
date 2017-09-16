@@ -108,11 +108,13 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%
 
 ## インストール {#b2ec65b9}
 
-### <del>MELPA からインストール</del> {#x0d7daaa}
+### MELPA からインストール {#x0d7daaa}
 
-[MELPA](https://melpa.org/) には 2015-02-22 から 2017-08-17 まで YaTeX が登録されていましたが 2017-08-17 に削除されました．公式サイトのパッケージを使用してください．
+[MELPA](https://melpa.org/) から YaTeX がインストールできます．
 
-- [RM packages w/ incompatible or missing license](https://github.com/melpa/melpa/commit/cf92ce1a2bc92c73071d157e7e223982bbd3f818)
+- [https://melpa.org/#/yatex](https://melpa.org/#/yatex)
+- [https://github.com/melpa/melpa/blob/master/recipes/yatex](https://github.com/melpa/melpa/blob/master/recipes/yatex)
+- [https://github.com/melpa/melpa/commits/master/recipes/yatex](https://github.com/melpa/melpa/commits/master/recipes/yatex)
 
 ### 公式サイトのパッケージを使用する場合 {#jde46c87}
 
