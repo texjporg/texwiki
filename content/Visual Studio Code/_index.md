@@ -157,10 +157,8 @@ Ctrl+Alt+V でウェブブラウザで PDF ファイルを表示します。右�
 
 ### その他の Extension {#d3eb8f1f}
 
+- [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
 - [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
-- [LaTeX Compile](https://marketplace.visualstudio.com/items/mathiasfrohlich.latexcompile)
-- [VSCode-LaTeX](https://marketplace.visualstudio.com/items/ms-vscode.latex)
-    - [vscode-LaTeX にLine commenting 追加](http://what-alnk.hatenablog.com/entry/2016/06/21/180000)
 
 ## SumatraPDF との連携 {#d61e968a}
 
