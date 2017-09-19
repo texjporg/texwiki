@@ -33,5 +33,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 #### ChangeLog {#i8edb00b}
 
+- [https://github.com/tekezo/Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements)
+    - [https://github.com/tekezo/Karabiner-Elements/commits/master](https://github.com/tekezo/Karabiner-Elements/commits/master)
 - [https://github.com/tekezo/Karabiner](https://github.com/tekezo/Karabiner)
     - [https://github.com/tekezo/Karabiner/commits/master](https://github.com/tekezo/Karabiner/commits/master)
