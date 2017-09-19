@@ -42,16 +42,14 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
 - [atom-latex](https://atom.io/packages/atom-latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
 - [latextools](https://atom.io/packages/latextools) -- Atom から LaTeX 文書をコンパイル・プレビュー
-    <!-- -[[myLaTeX:https://atom.io/packages/mylatex]] - - LaTeX の構文ハイライトとスニペット -->
-
 - [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライトとスニペット
 - [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
 - [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
-- [vim-mode-plus](https://atom.io/packages/vim-mode-plus)
-- [atomic-emacs](https://atom.io/packages/atomic-emacs)
+- [vim-mode-plus](https://atom.io/packages/vim-mode-plus) -- Vim キーバインド
+- [atomic-emacs](https://atom.io/packages/atomic-emacs) -- Emacs キーバインド
 - [minimap](https://atom.io/packages/minimap) -- Sublime Text みたいにミニマップを表示させる
 
 ### ターミナルエミュレータ {#v730a901}
