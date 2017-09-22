@@ -195,6 +195,4 @@ MathJax による描画で、保存した HTML にも結果は反映されます
 
 ## 参考 {#ue2446c0}
 
-- [Atom入門 (全12回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_atom)
-- [Atomでplatex->dvipdfmxチェーンを実装する話](http://blog.ishotihadus.com/?p=95)
-- [Atom で LaTeX on Windows （+ 最近のビルド環境） - Ichiro Maruta Homepage](http://ichiro-maruta.blogspot.jp/2016/01/atom-latex-on-windows.html)
+- [Atom入門 (全15回) - プログラミングならドットインストール](https://dotinstall.com/lessons/basic_atom_v2)
