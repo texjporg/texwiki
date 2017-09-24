@@ -27,8 +27,8 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 [PostScript や EPS をインポートするには、Ghostscript をインストールする必要があり、ps2pdf が環境変数 Path 上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
 
 - [Inkscape 公式サイト](https://inkscape.org/)
-- [Inkscape 開発サイト](https://launchpad.net/~inkscape.dev)
-    - [コミットログ](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
+- [Inkscape 開発サイト](https://gitlab.com/inkscape/inkscape)
+    - [コミットログ](https://gitlab.com/inkscape/inkscape/commits/master)
 - [Inkscape Wiki](http://wiki.inkscape.org)
     - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
         - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
@@ -44,7 +44,7 @@ Windows, macOS, Linux
 
 ### License {#ibc5e002}
 
-[GPLv2 or later (GIMP からコピーしたファイルに関しては GPLv3 or later)](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/annotate/head:/COPYING)
+[GPLv2 or later (GIMP からコピーしたファイルに関しては GPLv3 or later)](https://gitlab.com/inkscape/inkscape/blob/master/COPYING)
 
 ### リリース情報 {#d961699f}
 
@@ -52,7 +52,7 @@ Windows, macOS, Linux
 
 ### ChangeLog {#q8a7ad68}
 
-[Changes](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/changes)
+[コミットログ](https://gitlab.com/inkscape/inkscape/commits/master)
 
 ## ダウンロード {#i5a8dfd7}
 
