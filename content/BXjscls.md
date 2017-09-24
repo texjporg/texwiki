@@ -12,8 +12,8 @@ pukiwiki: "BXjscls"
 BXjscls パッケージは pdflatex, lualatex, xelatex, platex-ng, uplatex, platex で使用可能な日本語文書組版のための LaTeX 文書クラスのコレクションです．
 TeX Live, W32TeX に含まれています．
 
-奥村先生の「[pLaTeX2e 新ドキュメントクラス](/jsclasses/)」は pLaTeX2e での使用を前提としているため，uplatex, platex 以外では使用することができません．
-BXjscls は新ドキュメントクラスから pLaTeX 依存の部分を分離したもので，これと各エンジン用の日本語処理パッケージを組み合わせることで，pLaTeX 以外でも新ドキュメントクラスを用いた場合と同等の文書作成が可能となります．
+奥村先生の「[pLaTeX2e 新ドキュメントクラス（jsclasses）](/jsclasses/)」は (u)pLaTeX での使用を前提としているため，他のエンジンでは使用することができません．
+BXjscls は jsclasses から (u)pLaTeX 依存の部分を分離したもので，これと各エンジン用の日本語処理パッケージを組み合わせることで，(u)pLaTeX 以外でも新ドキュメントクラスを用いた場合と同等の文書作成が可能となります．
 
 - [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
 - [https://ctan.org/pkg/bxjscls](https://ctan.org/pkg/bxjscls)
@@ -34,7 +34,9 @@ BXjscls パッケージには次の 4 つの文書クラス（「BXJS クラス�
 これらは何れも「新ドキュメントクラス」（JS クラス）の文書レイアウトと機能を継承したものとなっています．
 
 - bxjsarticle クラス： 「章のないレポート」用．jsarticle クラスに相当．
-- bxjsreport クラス： 「章のあるレポート」用．jsbook クラス + report オプションに相当．
+- bxjsreport クラス： 「章のあるレポート」用．jsreport クラスに相当．<br>
+    ※v1.6から継承元が従来の「jsbook + report オプション」から変更されました．
+
 - bxjsbook クラス： 書籍用．jsbook クラスに相当．
 - bxjsslide クラス： スライド用．jsarticle クラス + slide オプションに相当．
 
