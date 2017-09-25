@@ -329,8 +329,8 @@ $ make install
 $ popd
 ```
 
-<!-- -http://svn.r-project.org/R/trunk/src/main/datetime.c -->
-<!-- -http://svn.r-project.org/R/trunk/src/main/mkdtemp.c -->
+<!-- -https://svn.r-project.org/R/trunk/src/main/datetime.c -->
+<!-- -https://svn.r-project.org/R/trunk/src/main/mkdtemp.c -->
 <!-- mkdtemp は MinGW でエラー -->
 <!-- auto p = mkdtemp(buf); -->
 <!-- _mktemp は MinGW でも OK -->
