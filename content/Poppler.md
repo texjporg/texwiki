@@ -113,7 +113,7 @@ pacman -S poppler poppler-data
 - [https://packages.ubuntu.com/ja/poppler](https://packages.ubuntu.com/ja/poppler)
 - [https://packages.debian.org/ja/poppler](https://packages.debian.org/ja/poppler)
 
-Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler58 という名前だったり，libpoppler64 という名前だったりします。
+Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler68 という名前だったり，libpoppler64 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
 日本語を使う場合は poppler-data も必要です。
 
