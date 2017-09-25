@@ -15,10 +15,9 @@ pukiwiki: "CotEditor"
 
 ## CotEditor とは {#x19d88d4}
 
-CotEditor はテキストエディタです．
+CotEditor は macOS 専用テキストエディタです．
 
-- [CotEditor -Text Editor for OS X](http://coteditor.com/)
-    - [CotEditor Beta](http://coteditor.com/beta)
+- [CotEditor -Text Editor for macOS](http://coteditor.com/)
 - [CotEditor Project · GitHub](https://github.com/coteditor/)
 - [https://twitter.com/coteditor](https://twitter.com/coteditor)
 
