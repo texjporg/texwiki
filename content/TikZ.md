@@ -989,8 +989,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [tkz-euclide](http://altermundus.fr/pages/euclide.html)
 - [Altermundus.com](http://altermundus.com/index.html)
     - TikZ/PGF をベースにしたtkz-base，tkz-euclideパッケージなどの紹介
-- [tikzDevice: A Device for R Graphics Output in PGF/TikZ Format](http://cran.r-project.org/web/packages/tikzDevice/index.html)
-    - マニュアルは[こちら](http://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf)
+- [tikzDevice: A Device for R Graphics Output in PGF/TikZ Format](https://cran.r-project.org/web/packages/tikzDevice/index.html)
+    - マニュアルは[こちら](https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf)
 
 ### 使用例や解説 {#d081bd28}
 
