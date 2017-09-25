@@ -61,7 +61,7 @@ Windows, macOS, Linux
 ## 不具合 {#caadafb3}
 
 - [https://bugs.launchpad.net/inkscape](https://bugs.launchpad.net/inkscape)
-- [Bug #1502126 “OSX 10.11 El Capitan can't run LaTeX extension” : Bugs : Inkscape](https://bugs.launchpad.net/inkscape/+bug/1502126) → [packaging/macosx: fix for bug #1502126 (support MacTeX on El Capitan)](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/revision/14391)
+    <!-- -[[Bug #1502126 “OSX 10.11 El Capitan can't run LaTeX extension” : Bugs : Inkscape:https://bugs.launchpad.net/inkscape/+bug/1502126]] → [[packaging/macosx: fix for bug #1502126 (support MacTeX on El Capitan):https://gitlab.com/inkscape/inkscape/commit/b3a069d14c6b7b180555e2d6ad0fdf7bba2d0bcb]] -->
 
 ## PDF/EPS/PS + LaTeX {#d6b72996}
 
@@ -141,13 +141,13 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
     - <span style="color:Red;"><strong>コメントアウトは # (シャープ) を使用します．</strong></span>
     - <span style="color:Red;"><strong>Python で Windows のパスを文字列で表す場合は raw 文字列 (r'...') を使用すると便利です．</strong></span>
 
-### [EqTeXSVG (LaTeX formula)](http://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
+### [EqTeXSVG (LaTeX formula)](https://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．
 <strong>環境変数 Path に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
 
-[EqTeXSvg の公式サイト](http://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
-[Inkscape にデフォルトで含まれています](http://bazaar.launchpad.net/~inkscape.dev/inkscape/trunk/view/head:/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
+[EqTeXSvg の公式サイト](https://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
+[Inkscape にデフォルトで含まれています](https://gitlab.com/inkscape/inkscape/blob/master/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
 
 - [Inkscape (Win)でLaTeX数式を使えるようにする](http://nan-hen.com/?p=9244)
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
