@@ -37,10 +37,6 @@ BasicTeX のインストールの概略は以下のとおりです。
 
     collection-langjapanese をインストールすれば，依存関係で collection-langcjk もインストールされます。
 
-1. ヒラギノフォントを TeX でも利用する場合は設定します。（→[macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>)）
-
-> - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできます。
-
 [Ghostscript](/Ghostscript/) は別途インストールする必要があります。
 
 #### Homebrew でインストール {#w71ff68b}
