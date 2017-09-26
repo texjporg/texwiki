@@ -137,7 +137,6 @@ pukiwiki: "TeXlipse/設定"
 >
 > 　　…<br>
 > 　　◢　Texlipse<br>
-> 　　　　　　BibSonomy<br>
 > 　　　　▷　BibTeX エディター<br>
 > 　　　　▷　エディター<br>
 > 　　　　▷<span style="color:Black;background-color:#DAEAFF;">　スペル・チェッカー　</span><br>
@@ -187,7 +186,6 @@ TeX ファイル編集中に改行すると Parsing が行われ，間違った�
 >
 > 　　…<br>
 > 　　◢　Texlipse<br>
-> 　　　　　　BibSonomy<br>
 > 　　　　▷　BibTeX エディター<br>
 > 　　　　▷　エディター<br>
 > 　　　　▷　スペル・チェッカー<br>
