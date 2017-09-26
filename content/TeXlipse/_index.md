@@ -24,7 +24,6 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 - [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
 - [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
-- [BibSonomy](http://www.bibsonomy.org/)
 - [CTAN:help/Catalogue/entries/texlipse.html](https://mirror.ctan.org/help/Catalogue/entries/texlipse.html)
 
 ### License {#y9484ed1}
@@ -118,7 +117,6 @@ PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直
 
 を入力して \[OK\] をクリックします．
 
-- Bibsonomy
 - Pdf4Eclipse
 - TeXlipse
 
@@ -146,7 +144,6 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 - [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
-- [Feature of the Week: BibSonomy TeXlipse Plugin](http://blog.bibsonomy.org/2012/08/feature-of-week-bibsonomy-texlipse.html)
 - [spell check does not run](https://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
 - [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
