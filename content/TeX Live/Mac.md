@@ -124,8 +124,6 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo /usr/local/texlive/2017/bin/x86_64-darwin/tlmgr path add
 ```
 
-ヒラギノフォントを使用する場合は [macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>) を参照して設定してください．
-
 ### Xcode のインストール要求ダイアログについての注意 {#d359d79d}
 
 Xcode がインストールされていない環境下では，TeX Live のインストーラの実行中，および tlmgr によるアップデートの実行中に，次のようなダイアログが表示されて実行が中断される問題が知られています。
@@ -464,6 +462,8 @@ tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
 ### ヒラギノフォント {#d19a1537}
+
+macOS High Sierra に付属するヒラギノフォントに関しては [macOS High Sierra のヒラギノフォント](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2267) を参照してください。
 
 macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
 
