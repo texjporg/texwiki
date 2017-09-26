@@ -27,7 +27,6 @@ pukiwiki: "TeXlipse/設定/Windows"
 
 　　…<br>
 　　◢　Texlipse<br>
-　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷　スペル・チェッカー<br>
@@ -204,7 +203,6 @@ PDF ファイルを表示するための設定をします．
 
 　　…<br>
 　　◢　Texlipse<br>
-　　　　　　BibSonomy<br>
 　　　　▷　BibTeX エディター<br>
 　　　　▷　エディター<br>
 　　　　▷　スペル・チェッカー<br>
