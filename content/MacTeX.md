@@ -109,10 +109,6 @@ MacTeX のインストールの概略は以下のとおりです。
 
 > - ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更することもできます。
 
-1. ヒラギノフォントを TeX でも利用する場合は設定します。（→[macOS Sierra / OS X El Capitan での TeX Live のセットアップ](</TeX Live/Mac/#l8c867e9>)）
-
-> - この設定をしなくても日本語は使用できますし，IPAexフォント/IPAフォントを埋め込んだPDFの作成もできます。
-
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
 
 > - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
