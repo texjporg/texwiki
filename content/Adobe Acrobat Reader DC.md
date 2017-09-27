@@ -61,8 +61,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ### Linux {#s5dbb0cf}
 
 ```
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1700920044/AcroRdrDC1700920044_ja_JP.exe
-wine AcroRdrDC1700920044_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1701220093/AcroRdrDC1701220093_ja_JP.exe
+wine AcroRdrDC1701220093_ja_JP.exe
 cd ~/.wine/drive_c/users/Public/Application\ Data/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AC0F074E4100\}
 msiexec /i AcroRead.msi
 ```
@@ -75,7 +75,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 のように実行します。
 
-Wine 2.16 で実行したところ Adobe Acrobat Reader DC は PDF ファイルを開いて 3 秒後に強制終了しましたが
+Wine 2.17 で実行したところ Adobe Acrobat Reader DC は PDF ファイルを開いて 3 秒後に強制終了しましたが
 Adobe Reader XI であれば PDF ファイルを開いても強制終了せずに表示できました．
 ただし [Adobe Reader XI のサポートは 2017-10-15 に終了します](https://helpx.adobe.com/jp/acrobat/kb/end-of-support-acrobat-xi-reader-xi.html)．
 
@@ -182,7 +182,7 @@ pdfclose --file foo.pdf
 ある程度効率が良いと思われます。
 pdfdde.exe の詳細については pdfdde.c を参照してください。
 
-[https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.gz/ktx/utils/pdfopen/pdfdde.c)
+[https://fossies.org/windows/misc/w32tex-src.tar.xz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.xz/ktx/utils/pdfopen/pdfdde.c)
 
 pdfdde.exe で使用できる機能に関してはコマンドラインから
 
