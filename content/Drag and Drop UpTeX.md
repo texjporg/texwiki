@@ -7,14 +7,25 @@ pukiwiki: "Drag and Drop UpTeX"
 
 # Drag and Drop UpTeX
 
-## [Drag &amp; Drop UpTeX (UpTeX.app)](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
+## [Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
 Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small + collection-langjapanese ベースの macOS 専用 TeX ディストリビューションです。
-OS X 10.11 El Capitan / OS X 10.10 Yosemite 以降の環境になるべくコンパクトな日本語 TeX 処理系を簡単に導入するためにパッケージされています。
+macOS でコンパクトな日本語 TeX 処理系を簡単に導入できます。
 あらかじめ TeX Live scheme-small に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
 
+- [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)
+
+### 動作環境 {#s8a76771}
+
+- macOS 10.13 High Sierra
+- macOS 10.12 Sierra
+- OS X 10.11 El Capitan
+- OS X 10.10 Yosemite
+
 ### History {#a33a457a}
+
+Drag &amp; Drop UpTeX 20170927 は TeX Live 2017 scheme-small + collection-langjapanese。macOS 10.13 High Sierra に対応。
 
 Drag &amp; Drop UpTeX 20170606 は TeX Live 2017 scheme-small + collection-langjapanese。
 
@@ -37,7 +48,7 @@ Drag &amp; Drop UpTeX は，2011年公開の UTeX20111010.dmg までは teTeX-3.
 
 インストールしたら，[dvipdfmx](/dvipdfmx/) による PDF 作成で埋め込む日本語フォントを設定します。
 UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX」-「環境設定」から環境設定パネルを開きます。
-「dvipdfmx のフォント」のプルダウンメニューからお使いの OS X のバージョン（El Capitan または Yosemite）に合わせたヒラギノフォントを選択するとよいでしょう。
+「dvipdfmx のフォント」のプルダウンメニューからお使いの macOS のバージョン（High Sierra または Sierra または El Capitan または Yosemite）に合わせたヒラギノフォントを選択するとよいでしょう。
 （これはバックグラウンドで updmap-sys と mktexlsr を実行します。あらかじめヒラギノフォントのシンボリックリンクを作成してあるため，簡単に設定を完了することができます。）
 
 TeX Live のアップデートは，同じく環境設定パネルから「TeX コンポーネントのアップデート」で行います。
