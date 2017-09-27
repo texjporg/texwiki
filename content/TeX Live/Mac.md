@@ -519,7 +519,7 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
     - ptex2pdf を使用するとその都度フォントを指定できます。（下の例は upLaTeX + dvipdfmx で ヒラギノProN JIS2004字体を使用して PDF を作成するものです。）
 
         ```
-        $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-hiragino-elcapitan-pron-04.map' hoge.tex
+        $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-hiragino-highsierra-pron-04.map' hoge.tex
         ```
 
 ## TeX Live のインストールディレクトリ {#k03895bf}
