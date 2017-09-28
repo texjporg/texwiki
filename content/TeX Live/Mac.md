@@ -203,36 +203,6 @@ $ sudo tlmgr update --self --all
 
 [MacTeX](/MacTeX/) を使用している場合は MacTeX 付属の [TeX Live Utility](</TeX Live Utility/>) という GUI ユーティリティを使うことで TeX Live をアップデートすることもできます。
 
-<!-- [[MacTeX]] を使用している場合は MacTeX 付属の [[TeX Live Utility]] という GUI ユーティリティを使うことで TeX Live をアップデートすることもできます（この場合，更新前に ptex-fontmaps が 20151002.0 以上であるかどうかを簡単に確認できるというメリットもあります）。 -->
-<!--  -->
-<!-- 次に，TeX Live の更新によってインストールされた ptex-fontmaps が「revision 38527 以降であること」（すなわち catalogue-version 20151002.0 以降であること）を確認します。 -->
-<!--  -->
-<!-- $ tlmgr info ptex-fontmaps -->
-<!-- package:     ptex-fontmaps -->
-<!-- category:    Package -->
-<!-- (中略) -->
-<!-- installed:   Yes -->
-<!-- revision:    43012 -->
-<!-- (中略) -->
-<!-- cat-version: 20170114.0 -->
-<!--  -->
-<!-- 該当すれば，El Capitan に対応したマップファイルがインストールされていますので，以下の手順を実行します。 -->
-<!--  -->
-<!--  -->
-<!-- パッケージ更新前に ptex-fontmaps のバージョンが 20151002.0 以上になっているかどうかをターミナルから確認する方法の例： -->
-<!-- （下の例はまだ JAIST のミラーに 20151002.0 が到達していないことを示す） -->
-<!--  -->
-<!-- $ tlmgr dump-tlpdb - -remote | grep -C2 "name ptex-fontmaps" -->
-<!-- tlmgr.pl: package repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet -->
-<!-- (中略) -->
-<!-- name ptex-fontmaps -->
-<!-- category Package -->
-<!-- revision 38460 -->
-<!-- -  -->
-<!-- catalogue-version 20150924.0 -->
-<!-- (略：かなり長い) -->
-<!--  -->
-
 次に，新しいヒラギノフォントなどの和文フォントにシンボリックリンクを張るスクリプトを実行します[^2]。
 
 TeX Live あるいは MacTeX の場合は
@@ -301,11 +271,11 @@ TeXShop などのアプリケーション（の少し古いバージョン）は
 
     そのうえで，アプリケーションの設定変更を行ってください。
     ただし，<strong>TeX Live 2014 以前に収録されている dvipdfmx は，新しい OpenType Collection というフォント形式に非対応</strong>ですので，macOS Sierra / OS X El Capitan に収録されているヒラギノなどのフォントを扱うことができません。
-    新しい MacTeX / BasicTeX をインストールするか（2014以下がインストールされていることは気にせずに新規インストールすれば結構です），[下](</TeX Live/Mac/#y64b5891>)を参考に IPA(ex) フォントを埋め込むことで凌ぐとよいでしょう。
+    新しい MacTeX / BasicTeX をインストールするか（2014以下がインストールされていることは気にせずに新規インストールすれば結構です），IPA(ex) フォントを埋め込むことで凌ぐとよいでしょう。
 
-#### macOS Sierra / OS X El Capitan に向けての注意（2015-07-12 版アーカイブ） {#r55ca802}
+#### macOS Sierra / OS X El Capitan での注意点 {#r55ca802}
 
-macOS Sierra / OS X El Capitan では，セキュリティ上の理由から /usr への書き込みは出来なくなるため，各種バイナリへのシンボリックリンクが変更となります。（/usr/local 以下には書きこめるので，/usr/local/texlive はこれまでと変わりません。）
+macOS Sierra / OS X El Capitan では，セキュリティ上の理由から /usr への書き込みは出来なくなったため，各種バイナリへのシンボリックリンクが変更となります。/usr/local 以下には書きこめるので，/usr/local/texlive はこれまでと変わりません。
 
 <table>
 <tbody>
@@ -328,48 +298,9 @@ MacTeX-2014 および BasicTeX-2014 以前をインストールしている場�
 
 - 参考：[(1)](https://twitter.com/doraTeX/status/608620177282846720), [(2)](https://twitter.com/doraTeX/status/608620746370260992), [(3)](https://twitter.com/doraTeX/status/608625460453363712)
 
-また，現在 (2015-07-12) 公開中の El Capitan Public Beta 3 では<strong>和文フォント周りの構成が大きく変化</strong>しており，従来の（この Wiki 内で説明している）方法ではヒラギノフォントなどを正しく埋め込むことができません。
-現在，TeX Live のディストリビューション側でこの変更にどう対応するか検討中の段階ですので，現時点では El Capitan Public Beta をインストールしないのが無難です。
+また，macOS Sierra / OS X El Capitan では<strong>和文フォント周りの構成が大きく変化</strong>しており，Ghostscript では macOS Sierra / OS X El Capitan 付属のヒラギノフォントを埋め込むことができません。
 
 - 参考：[(1)](https://twitter.com/doraTeX/status/621217678259154944), [(2)](https://twitter.com/doraTeX/status/621218337599586304), [(3)](https://twitter.com/doraTeX/status/621219702774235136), [(4)](https://twitter.com/doraTeX/status/646331410043699201), [(5)](https://twitter.com/doraTeX/status/646376155231092740), [(6)](https://twitter.com/doraTeX/status/646376295115288576), [(7)](https://twitter.com/doraTeX/status/646502384059813889), [(8)](https://twitter.com/doraTeX/status/646502515014438912), [(9)](https://twitter.com/doraTeX/status/646511280858071040)
-
-#### 上の情報を知らずに macOS Sierra / OS X El Capitan をインストールした方へ（2015-10-02 版アーカイブ） {#y64b5891}
-
-macOS Sierra / OS X El Capitan のヒラギノフォントを埋め込むことができずに (u)pLaTeX + dvipdfmx が機能できなくなった場合で，かつ急ぎで日本語の LaTeX 環境を必要としている場合を想定して説明します (2015-10-02) 。
-→ <em>この情報は既にアーカイブされています。</em>
-[最新情報](</TeX Live/Mac/#elcapitan>)を参考にセットアップを実行してください。
-
-<!-- pxchfon を使う方法や．開発版の ptex-fontmaps と lnsysfnt.sh を入手してヒラギノを pTeX で -->
-<!-- 使えるようにする方法はあるが，混乱を避けるためあくまで応急処置として IPA(ex) を選択。 -->
-
-ヒラギノフォントの代わりに，IPAex フォントまたは IPA フォントをマッピングすれば，pTeX 系で日本語の LaTeX 文書を作成することができます。
-IPA(ex) フォントは TeX Live に含まれているため，最新のパッケージにアップデートすることなく従来どおり利用することができます。
-
-pLaTeX + dvipdfmx または upLaTeX + dvipdfmx でヒラギノフォントではなく IPA(ex) フォントを埋め込む設定は，ターミナルから以下を実行します：
-
-IPAexフォントを埋め込む場合は
-
-```
-$ sudo updmap-sys --setoption kanjiEmbed ipaex
-```
-
-IPAフォントを埋め込む場合は
-
-```
-$ sudo updmap-sys --setoption kanjiEmbed ipa
-```
-
-を実行します。
-
-ここで仮に updmap-sys というコマンドが見つからない場合は，MacTeX-2014 / BasicTeX-2014 のユーザで，macOS Sierra / OS X El Capitan へのアップグレードに伴いパス設定が変わってしまったのでしょう。
-[こちら](</TeX Live/Mac/#i8a16a2b>)を参考に改めて古い TeX 環境にパスを通しなおすか，一旦 MacTeX-2015 / BasicTeX-2015 以降をインストールしてから行う必要があります（上書きで構いません）。
-
-2015年10月2日11:30現在，CTAN に macOS Sierra / OS X El Capitan 正式リリース版に対応した ptex-fontmaps (旧名:jfontmaps) が遂にアップロードされました。
-数日以内に TeX Live にも反映されると見込まれますので，それ以降は pLaTeX や upLaTeX と dvipdfmx の組み合わせでヒラギノフォントを埋め込むことができるようになります。
-[^3]
-
-追加：2015年10月3日9:30現在，ptex-fontmaps (旧名:jfontmaps) &amp; cjk-gs-integrate 20151002.0 が TeX Live に取り込まれました。
-一両日中に日本国内の主要なミラーサイトまで下りてくると期待できますので，それ以降は[こちら](</TeX Live/Mac/#elcapitan>)を参考にセットアップを実行してください。
 
 ### [MacTeX](/MacTeX/) {#mactex}
 
@@ -461,15 +392,15 @@ $ sudo tlmgr update --self --all
 tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
+### IPAexフォント/IPAフォント {#x667dd85}
+
+IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので，updmap-sys の設定だけですぐに pdf に埋め込めます。
+
 ### ヒラギノフォント {#d19a1537}
 
 macOS High Sierra に付属するヒラギノフォントに関しては [macOS High Sierra のヒラギノフォント](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2267) を参照してください。
 
 macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
-
-### IPAexフォント/IPAフォント {#x667dd85}
-
-IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので，updmap-sys の設定だけですぐに pdf に埋め込めます。
 
 ### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
@@ -581,4 +512,3 @@ macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使
 
 [^1]: 古いバージョンの TeX Live がインストールされていても気にせずに，新規インストールと同じ手順でインストールします。
 [^2]: 従来の cjk-gs-integrate のオプションは --link-texmflocal でしたが，新しい版では --link-texmf \[DIR\] でディレクトリを指定する形式となりました。この \[DIR\] を空白にした場合，TEXMFLOCAL の場所が指定されたとみなされます。
-[^3]: ptex-fontmaps (旧名:jfontmaps) 20150924.0 は El Capitan Public Beta の際に入っていたヒラギノフォントに対応しており，N あり・N なしの字形の収録順序が正式リリースの OS X El Capitan と異なっていましたので注意が必要です。
