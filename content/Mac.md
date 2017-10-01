@@ -170,17 +170,17 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 
 ### Karabiner によるキーバインドの変更 {#karabiner}
 
-macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。
+OS X 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。（〜El Capitan）
 
 ### Ukelele  によるキーバインドの変更 {#pc59ea4e}
 
-Unicode Keyboard Layout Editor の [Ukelele](http://scripts.sil.org/ukelele) で，¥ を入力すると \ に変換することができます。
+Unicode Keyboard Layout Editor の [Ukelele](http://scripts.sil.org/ukelele) で，\_（アンダースコア） を入力すると \ に変換することができます。
 
 - [Mac(Sierra)でのキーリマップ](http://uitspitss.hatenablog.com/entry/2017/05/31/031642)
 
 ### Hammerspoon によるキーバインドの変更 {#o4723e6f}
 
-macOS 用の自動化ツール [Hammerspoon](http://www.hammerspoon.org/) で，¥ を入力すると \ に変換することができます。
+OS X 用の自動化ツール [Hammerspoon](http://www.hammerspoon.org/) で，¥ を入力すると \ に変換することができます。
 
 - [IntelliJとかJVMのIDE使いでもKarabinerなしでバックスラッシュを片手入力したい](http://qiita.com/tanakahisateru/items/d8a67ad89c07baf8c0da)
 
