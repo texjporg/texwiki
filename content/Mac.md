@@ -204,7 +204,7 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ### ATOK を利用している場合 {#atok}
 
-日本語入力に ATOK を利用している場合は，ATOK 2015 for Mac でも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定画面がありません。
+日本語入力に ATOK を利用している場合は，ATOK 2017 for Mac でも JIS キーボードの ¥ キーで入力する文字を \ に変更する設定画面がありません。
 
 [&#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更](/Mac/#defaultkeybinding-dict) を参照して設定します。
 
