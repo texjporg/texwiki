@@ -7,9 +7,9 @@ pukiwiki: "Kile"
 
 # Kile
 
-## [Kile](http://kile.sourceforge.net/) (非推奨) {#pab65dd4}
+## [Kile](https://kile.sourceforge.io/) {#pab65dd4}
 
-Kile の最新の安定版である Kile 2.1.3 はリリース日が 2012-09-23 で KDE Plasma 5 に対応していません。
+2017-09-03 に KDE Frameworks 5 に対応した Kile 3.0 beta 1 がリリースされています。
 
 ***
 
@@ -17,11 +17,13 @@ Kile の最新の安定版である Kile 2.1.3 はリリース日が 2012-09-23 
 
 ## Kile とは {#v4a214a0}
 
-Kile は LaTeX の統合環境です．<br>
-SyncTeX に対応しています．<br>
-エディタ部分は [Kate](https://kate-editor.org/) を使用しています．<br>
+Kile は LaTeX の統合環境です．
 
-- [Kile - an Integrated LaTeX Environment](http://kile.sourceforge.net/)
+SyncTeX に対応しています．
+
+エディタ部分は [Kate](https://kate-editor.org/) を使用しています．
+
+- [Kile - an Integrated LaTeX Environment](https://kile.sourceforge.io/)
 
 ### 動作環境 {#fc95c26d}
 
@@ -33,7 +35,7 @@ Windows, Linux
 
 ### リリース情報 {#qfb7e12c}
 
-[News](http://kile.sourceforge.net/news.php)
+[News](https://kile.sourceforge.io/news.php)
 
 ### ChangeLog {#k30d45b0}
 
