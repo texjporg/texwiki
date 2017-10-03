@@ -40,7 +40,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 ### お知らせ {#p837b6a7}
 
 - [TeXConf 2017](https://texconf2017.tumblr.com/) は、2017年10月14日（土）日本大学生物資源科学部10号館1012教室で開催されます。
-- 【重要】2017/06/01 付の CTAN の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）について、非互換な変更が入っています。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。この影響を避けたい場合は、TeX Live 2017 の更新を控えてください。
+- 【重要】2017/06/01 以降の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）には、それ以前のバージョンと比べて非互換な変更が含まれます。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。
     - [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)<br>
     - [graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件](http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e)
 - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．<strong>可能な場合は，速やかに TeX Live のアップデートを実行してください</strong>．この問題についての詳細は[こちら](</外部コマンドの実行/#security>)を参照してください．
