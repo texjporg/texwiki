@@ -21,7 +21,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     <!-- - -[[Logotype:http://wiki.lyx.org/LyX/Logotype]] -->
     <!-- - -[[SplashScreen:http://wiki.lyx.org/LyX/SplashScreen]] -->
 
-- [lyx-devel](http://www.mail-archive.com/lyx-devel@lists.lyx.org/)
+- [lyx-devel](https://www.mail-archive.com/lyx-devel@lists.lyx.org/)
 
 ***
 
