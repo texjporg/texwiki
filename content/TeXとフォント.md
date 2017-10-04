@@ -100,7 +100,7 @@ TeX Live では [tlmgr](/tlmgr/) からインストール可能ですのでそ�
    tabular,t       fixed-width figures
 ```
 
-があります。上付き・下付き数字（\textsu{}、\textinf{}）、スワッシュ・イタリック（\textsw{}）やいくつかの文字に関しては装飾付のものがあります（\textin{}）。数式用はありません。（TeXLive 2015 では ebgaramond-math というパッケージがあり、数式用の記号の一部を EB Garamond で置き換えます）
+があります。上付き・下付き数字（\textsu{}、\textinf{}）、スワッシュ・イタリック（\textsw{}）やいくつかの文字に関しては装飾付のものがあります（\textin{}）。数式用はありません。（TeX Live 2015 では ebgaramond-math というパッケージがあり、数式用の記号の一部を EB Garamond で置き換えます）
 
 CTAN のページは
 
@@ -225,7 +225,7 @@ uplatex
 [みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
-自力で一から構築する場合は [(u)pTeX における和文多書体の実現 〜Sierraの全和文フォント出力を例として〜](http://doratex.hatenablog.jp/entry/20161206/1480950097) や [MacPortsのpTeXにおける和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
+自力で一から構築する場合は [(u)pTeX における和文多書体の実現 〜Sierraの全和文フォント出力を例として〜](http://doratex.hatenablog.jp/entry/20161206/1480950097) や [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
 
 ## フォントを変えてみる（数式フォント） {#k266362f}
 
@@ -591,7 +591,7 @@ Virtual Font は小さなプログラムの集まりです。これは様々な�
    kpsewhich ptmr7t.vf
 ```
 
-が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeXLive では　fontware パッケージに含まれます。W32TeX では最小インストールに含まれますので既に入っています。
+が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeX Live では　fontware パッケージに含まれます。W32TeX では最小インストールに含まれますので既に入っています。
 
 ```
    vftovp ptmr7t
