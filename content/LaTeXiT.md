@@ -7,14 +7,14 @@ pukiwiki: "LaTeXiT"
 
 # LaTeXiT
 
-## [LaTeXiT](http://pierre.chachatelier.fr/latexit/) {#b58323c5}
+## [LaTeXiT](https://pierre.chachatelier.fr/latexit/) {#b58323c5}
 
 LaTeXiT は，TeX ソースコードをタイプセットして画像に変換するアプリケーションです．
 [MacTeX](/MacTeX/) に標準で含まれています．
 
 <strong>公式サイト</strong>
 
-- [LaTeXiT](http://pierre.chachatelier.fr/latexit/)
+- [LaTeXiT](https://pierre.chachatelier.fr/latexit/)
 - [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
 
 類似ソフトウェアとして，[TeX2img](/TeX2img/) があります．
@@ -46,12 +46,11 @@ PNG は背景を透過させることができます．
 ### 動作環境 {#e0e2eaf2}
 
 macOS で動作します．
-[COMPATIBILITY](http://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照してください．
+[COMPATIBILITY](https://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照してください．
 
 ### インストール {#z9061d08}
 
-LaTeXiT 本体は [LaTeXiT Downloads](http://pierre.chachatelier.fr/latexit/latexit-downloads.php) からダウンロードできます．
-Beta 版も [LaTeXiT Beta](http://pierre.chachatelier.fr/latexit/latexit-beta.php) で入手できます，
+LaTeXiT 本体は [LaTeXiT Downloads](https://pierre.chachatelier.fr/latexit/latexit-downloads.php) からダウンロードできます．
 
 ### 環境設定 {#tab3d738}
 
@@ -103,7 +102,7 @@ ps2pdf
 
 に変更してください。
 
-[小川版 UpTeX.app](http://www2.kumagaku.ac.jp/teacher/herogw/) をお使いの場合は，以下のようにすれば良いでしょう。
+[小川版 UpTeX.app](</Drag and Drop UpTeX/>) をお使いの場合は，以下のようにすれば良いでしょう。
 
 pdfLaTeX
 : /Applications/UpTeX.app/Contents/Resources/TEX/texbin/lualatex
@@ -122,7 +121,7 @@ pdfLaTeX
 
 ### 関連リンク {#tab9989c}
 
-- [LaTeXiT FAQ](http://pierre.chachatelier.fr/latexit/latexit-faq.php)
+- [LaTeXiT FAQ](https://pierre.chachatelier.fr/latexit/latexit-faq.php)
 - [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](http://ottan.xyz/mac-latex-presentation-92/)
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
@@ -133,4 +132,4 @@ pdfLaTeX
 
 #### ChangeLog {#sb3b1ab6}
 
-- [ChangeLog](http://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
+- [ChangeLog](https://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
