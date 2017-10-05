@@ -30,7 +30,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
 <!-- -[[[texlive] Revision 31504:http://www.tug.org/svn/texlive?view=revision&revision=31504]] -->
 
-日本語の縦書き PostScript ファイルを表示する必要がある場合は TeX Live 2017 (win32) 以降の Ghostscript (tlgs.win32) あるいは角藤版 Ghostscript を使用してください。
+日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
 
 ***
 
@@ -59,29 +59,29 @@ TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれています�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs921w64full-gpl.exe または gs921w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.21” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.21” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の角藤版 Ghostscript インストーラ（gs922w64full-gpl.exe または gs922w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.22” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.22” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.21 などというフォルダにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.21 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.22 などというフォルダにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.22 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダと lib フォルダをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.21 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.22 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs9.21\bin
+C:\Program Files\gs\gs9.22\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs9.21\lib
+C:\Program Files\gs\gs9.22\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -91,13 +91,13 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 - 64-bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib;…
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.22\bin;C:\Program Files\gs\gs9.22\lib;…
     ```
 
 - 32-bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.21\bin;C:\Program Files\gs\gs9.21\lib;…
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.22\bin;C:\Program Files\gs\gs9.22\lib;…
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -466,8 +466,6 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 
 5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
 
-参考) 角藤版 Ghostscript に存在する option -dWINKANJI を用いて，Windows API ドライバによって日本語等のフォントが出力される場合には，上記に述べてきたようなパスの制限は一切無くなります。
-
 参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです。通常は問題ありませんが，まれに問題を引き起こすかもしれません。
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
@@ -570,10 +568,6 @@ composefont pop
 > - STSong-Light-Identity-V
 
 [TeXWiki:OTF #dvips 用の map ファイル](/OTF/#k1eb9f9c) も参照。
-
-### オプション “-dWINKANJI” と “-dNOWINKANJI” {#d2d73a0c}
-
-角藤版 Ghostscript には -dWINKANJI というオプションが存在します。この -dWINKANJI を指定すると，日本語フォントは Windows API ドライバを用いて表示されます。ただし -dNOWINKANJI が同時に指定されている場合には，-dWINKANJI は無効化されます。特に縦組み時においてこの -dWINKANJI は有用です。Windows API ドライバで使うフォントの割り当ては gs\gs$(rungs --version)\kanji\kconfig.ps の記述内容によって設定されます。
 
 #### gs\gs$(rungs --version)\kanji\kconfig.ps の記述例 {#d0c50ae3}
 
