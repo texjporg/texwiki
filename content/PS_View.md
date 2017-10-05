@@ -13,21 +13,3 @@ PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビ
 [TeX Live](</TeX Live/>) (win32) に標準で含まれています。
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
-
-### TeX Live 2017 以降の PS_View で縦書きの日本語 PostScript ファイルを表示するための設定 {#j2f12ac2}
-
-TeX Live 2017 以降の Ghostscript は -dWINKANJI オプションをサポートしています。
-
-PS_View で縦書きの日本語 PostScript ファイルを表示する場合は psv.wx.lua の PSV_DftGsPars
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS"}
-```
-
-を
-
-```
-local PSV_DftGsPars = {"-dNOPAUSE","-dDELAYBIND","-dNOEPS","-dWINKANJI"}
-```
-
-に修正すると正しく表示できるようになります。
