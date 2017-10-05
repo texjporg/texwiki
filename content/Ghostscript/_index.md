@@ -25,7 +25,9 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
+Ghostscript 9.22 以降に更新してください．
+Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
+TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
 
 - [JVNDB-2017-002808 Ghostscript に任意のコードが実行可能な脆弱性 - JVN iPedia - 脆弱性対策情報データベース](http://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002808.html)
 - [JVNVU#98641178: Ghostscript に任意のコードが実行可能な脆弱性](http://jvn.jp/vu/JVNVU98641178/)
@@ -76,11 +78,13 @@ GSview は [CTAN](/CTAN/) から提供されなくなりました．
 
 ### 縦書きに関して {#o39e11da}
 
-GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています．
-残念ながら Ghostscript 8 以降ではこれが削除されてしまいました．
-Ghostscript 7.07 と比べて，CJK（中国語・日本語・韓国語）の縦書きへの対応が不充分です．
-CID フォントや Windows API を使った日本語の表示はできます．
-Ghostscript 7.07 には脆弱性が存在しますので，縦書きが必要ない場合は最新版の Ghostscript を使用してください．
+Ghostscript 9.22 では日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
+
+<!-- GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています． -->
+<!-- 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました． -->
+<!-- Ghostscript 7.07 と比べて，CJK（中国語・日本語・韓国語）の縦書きへの対応が不充分です． -->
+<!-- CID フォントや Windows API を使った日本語の表示はできます． -->
+<!-- Ghostscript 7.07 には脆弱性が存在しますので，縦書きが必要ない場合は最新版の Ghostscript を使用してください． -->
 
 ### フロントエンド {#ka477802}
 
