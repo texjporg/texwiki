@@ -20,7 +20,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ {#x301c4e2}
 
-- 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，Ghostscript に続いて GSview が既にインストールされているはずです（ただし，設定の -dWINKANJI オプションの追加だけは完了していません）。
+- 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，Ghostscript に続いて GSview が既にインストールされているはずです。
     - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
 - GSview は CTAN から提供されなくなりました。
@@ -41,14 +41,6 @@ Windows への Ghostscript のインストール方法は [Ghostscript/Windows](
 <!-- - --[[GSview 5.0 (64-bit版):http://pages.cs.wisc.edu/~ghost/gsview/get50.htm]]（64-bit版の Ghostscript が必要） -->
 
 インストーラを起動したら，あとは指示に従うだけでインストールが完了します。
-
-### 設定（角藤版 Ghostscript を利用する場合） {#r5baf71a}
-
-角藤版 Ghostscript をインストールした場合，-dWINKANJI オプションを使用して日本語の PostScript ファイルを表示することができます。
-これは必須ではありませんが，この設定により，OS が認識する日本語 TrueType フォントや日本語 OpenType フォントを使って，Windows API 経由で PostScript ファイルを表示する付加機能を利用できるようになります。
-“-dWINKANJI” オプションに関しては，[オプション “-dWINKANJI” と “-dNOWINKANJI”](/Ghostscript/Windows/#d2d73a0c) に簡単な解説があります。
-
-GSview を起動し，メニューの \[Options\] → \[Advanced Configure...\] を選択し，\[Ghostscript Options\] の末尾に “-dWINKANJI” を追加します。
 
 ### 注意点 {#y9339e21}
 
