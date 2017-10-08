@@ -398,7 +398,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 
 ### ヒラギノフォント {#d19a1537}
 
-macOS High Sierra に付属するヒラギノフォントに関しては [macOS High Sierra のヒラギノフォント](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2267)，[macOS High Sierra + Texlive 2017 + ヒラギノフォント](https://qiita.com/osamu620/items/8a299e44d087542e29a9) を参照してください。
+macOS High Sierra に付属するヒラギノフォントに関しては [macOS High Sierra のヒラギノフォント](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2267)，[High Sierra 用 TeX Live 2017 追加ファイル](http://www.muskmelon.jp/?p=2013)，[macOS High Sierra + Texlive 2017 + ヒラギノフォント](https://qiita.com/osamu620/items/8a299e44d087542e29a9) を参照してください。
 
 macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
 
