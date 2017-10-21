@@ -8,7 +8,7 @@ pukiwiki: "TeXstudio"
 
 # TeXstudio
 
-## [TeXstudio](http://www.texstudio.org/) {#wc9679cf}
+## [TeXstudio](https://www.texstudio.org/) {#wc9679cf}
 
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具合修正した LaTeX 統合環境です．
 
@@ -22,7 +22,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 
 ### Webサイト {#w233c0c1}
 
-- [TeXstudio](http://www.texstudio.org/)
+- [TeXstudio](https://www.texstudio.org/)
 - [TeXstudio - A LaTeX Editor | SourceForge.net](https://sourceforge.net/projects/texstudio/)
 - [TeXstudio - A LaTeX Editor / Wiki / Home](https://sourceforge.net/p/texstudio/wiki/)
 - [https://twitter.com/texstudio](https://twitter.com/texstudio)
@@ -39,7 +39,7 @@ Windows, macOS, Linux
 
 TeXstudio 公式サイトの Download ページ
 
-> [http://www.texstudio.org/#download](http://www.texstudio.org/#download)
+> [https://www.texstudio.org/#download](https://www.texstudio.org/#download)
 
 または JAIST ミラー
 
