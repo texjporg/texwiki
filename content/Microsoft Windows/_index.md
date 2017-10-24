@@ -8,14 +8,14 @@ pukiwiki: "Microsoft Windows"
 
 # Microsoft Windows
 
-## [Microsoft Windows](http://www.windows.com/) での TeX の利用 {#headline}
+<!-- *[[Microsoft Windows:http://www.windows.com/]] での TeX の利用 [#headline] -->
 
-Windows に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
-
-1. TeX の処理系（“TeX ディストリビューション”）のインストールと設定
-1. 統合環境またはエディタ，PDF ビューアなどの周辺ツールのインストールと設定
-
-が必要です．
+<!-- Windows に TeX をインストールして使えるようになるまでの大まかな流れとしては，[[TeX 入手法>TeX入手法]]で簡単に述べたとおり -->
+<!--  -->
+<!-- +TeX の処理系（“TeX ディストリビューション”）のインストールと設定 -->
+<!-- +統合環境またはエディタ，PDF ビューアなどの周辺ツールのインストールと設定 -->
+<!--  -->
+<!-- が必要です． -->
 
 ***
 
@@ -26,20 +26,12 @@ Windows に TeX をインストールして使えるようになるまでの大�
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます．
 Windows 上で日本語が利用可能な TeX ディストリビューションは次の二つのどちらかでしょう．
 
-- TeX Live: Windows だけでなく様々な OS で使えるディスビューションです．CTAN にある膨大なパッケージが含まれています．
-- W32TeX: 角藤さんにより配布されている TeX ディストリビューションです．頻繁に更新がされています．
+- TeX Live: Windows だけでなく様々な OS で使えるディスビューションです．CTAN にある膨大なパッケージが含まれています．インストールはこちら：[TeX Live/Windows - TeX Wiki](</TeX Live/Windows/>)
+- W32TeX: 角藤さんにより配布されている TeX ディストリビューションです．頻繁に更新がされています．インストールはこちら：[W32TeX - TeX Wiki](/W32TeX/)
 
 どちらを選んでも大差はありません[^1]．
 Web 上の情報は TeX Live の方が多いです．
 日本語の古い情報は W32TeX の方が多いかもしれません（TeX Live に日本語用 TeX が取り込まれたのが 2010 年からのためです）．
-
-### [TeX Live](</TeX Live/>) (Win64, Win32) {#texlive}
-
-TeX Live のインストールについては [TeX Live/Windows - TeX Wiki](</TeX Live/Windows/>) を参照してください．
-
-### [W32TeX](/W32TeX/) {#w32tex}
-
-W32TeX のインストールについては [W32TeX - TeX Wiki](/W32TeX/) を参照してください．
 
 ## TeX を使い始める前に：拡張子の表示 {#extension}
 
