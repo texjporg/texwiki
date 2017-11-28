@@ -27,7 +27,7 @@ pukiwiki: "TeXが苦手とする処理"
 
 - [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)：中島 浩氏。下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
 - [udline パッケージ](http://minamo.my.coocan.jp/tex/udline.html)：みなも氏。実線・破線・点線・波線などによる下線・打ち消し線・上線を提供
-- <del>[uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)：吉永徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）</del>（リンク切れ）
+- [uline-- パッケージ](http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)（リンク切れ → [Internet Archive](https://web.archive.org/web/20160613154204/http://www.h4.dion.ne.jp:80/~latexcat/macros/macro-index.html)）：吉永徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
 
 なお，欧文のみでよければ，[ulem パッケージ](https://ctan.org/pkg/ulem)が下線・二重下線・打ち消し線・波線などを提供しています。
 
