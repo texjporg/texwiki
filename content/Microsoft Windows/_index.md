@@ -51,7 +51,7 @@ TeX を使い始める前に（あるいはインストールする前に），�
    %SystemRoot%
 ```
 
-なお、 %SystemRoot% は、 C:\WINDOWS です。
+なお， %SystemRoot% は，通常 C:\WINDOWS です．
 
 ## TeX のインストールが成功したかどうかテストする {#test}
 
