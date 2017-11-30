@@ -225,6 +225,13 @@ AcroViewR17 という1行だけの内容を持つ pdfddeservername.txt が pdfdd
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
+Adobe Acrobat Reader DC バージョン 2018 では
+
+```
+AcroViewR18
+```
+
+として下さい。
 
 また Windows 10 で PDF ファイルが Microsoft Edge や SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けされている場合はエラーが発生します。
 
