@@ -138,6 +138,8 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
 - [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
 
+また，[XeTeX mailing list](http://tug.org/pipermail/xetex/2017-June/027147.html) に出ているパッチで回避できるようです。([r46025](http://www.tug.org/svn/texlive?view=revision&revision=46025))
+
 ## インストール {#p3eca5bb}
 
 ### Windows でのインストール {#j287e7c2}
