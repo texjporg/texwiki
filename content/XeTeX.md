@@ -117,6 +117,8 @@ XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が
 
 TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．
 
+- [W32TeX - 漢字入出力対応状況](https://texwiki.texjp.org/?W32TeX#qc9f2e7d)
+- [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
 - [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
 - [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
 - \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
