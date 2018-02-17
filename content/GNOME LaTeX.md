@@ -7,7 +7,7 @@ pukiwiki: "GNOME LaTeX"
 
 # GNOME LaTeX
 
-## [GNOME LaTeX](https://wiki.gnome.org/Apps/LaTeXila) {#e966f73d}
+## [GNOME LaTeX](https://wiki.gnome.org/Apps/GNOME-LaTeX) {#e966f73d}
 
 ***
 
