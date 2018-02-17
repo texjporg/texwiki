@@ -163,7 +163,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
-    - LaTeXila
+    - GNOME LaTeX
 
 - 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Emacs](/Emacs/)
