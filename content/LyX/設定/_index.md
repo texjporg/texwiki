@@ -103,7 +103,7 @@ jlreq.layout ファイルを新規作成して以下の内容を編集します�
 # Requirements for Japanese Text Layout textclass definition file.
 
 # This style provides japanese features 
-Format 65
+Format 66
 Provides japanese 1
 
 # Input general definitions
