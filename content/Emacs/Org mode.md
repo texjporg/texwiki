@@ -9,7 +9,7 @@ pukiwiki: "Emacs/Org mode"
 
 [Emacs](/Emacs/) > Org mode
 
-## [Org mode](http://orgmode.org/) {#d6cfda4f}
+## [Org mode](https://orgmode.org/) {#d6cfda4f}
 
 <!-- Org mode is for keeping notes, maintaining TODO lists, planning projects, and authoring documents with a fast and effective plain-text system. -->
 
@@ -22,8 +22,8 @@ Org mode は
 をするための Emacs のメジャーモードです．
 テキストファイルを高速・効率的に編集することができます．
 
-- [Org mode for Emacs &ndash; Your Life in Plain Text](http://orgmode.org/)
-- [Org Mode - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
+- [Org mode for Emacs &ndash; Your Life in Plain Text](https://orgmode.org/)
+- [Org Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
 - [GNU Emacs Manual(Japanese Translation): Org Mode](https://ayatakesi.github.io/emacs/25.1/Org-Mode.html#Org-Mode)
 
 ***
@@ -409,14 +409,12 @@ org ファイルの先頭に
 
 ### License {#da0cead0}
 
-[GPLv3](http://orgmode.org/w/?p=org-mode.git;a=blob;f=COPYING;hb=HEAD)
+[GPLv3](https://code.orgmode.org/bzg/org-mode/src/master/COPYING)
 
 ### リリース情報 {#lb82f3d0}
 
-- [http://orgmode.org/cgit.cgi/org-mode.git/refs/](http://orgmode.org/cgit.cgi/org-mode.git/refs/)
-- [http://orgmode.org/w/?p=org-mode.git;a=tags](http://orgmode.org/w/?p=org-mode.git;a=tags)
+- [https://code.orgmode.org/bzg/org-mode/releases](https://code.orgmode.org/bzg/org-mode/releases)
 
 ### ChangeLog {#r21fa6e2}
 
-- [http://orgmode.org/cgit.cgi/org-mode.git/](http://orgmode.org/cgit.cgi/org-mode.git/)
-- [http://orgmode.org/w/?p=org-mode.git](http://orgmode.org/w/?p=org-mode.git)
+- [https://code.orgmode.org/bzg/org-mode/commits/master](https://code.orgmode.org/bzg/org-mode/commits/master)
