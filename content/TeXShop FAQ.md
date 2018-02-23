@@ -170,6 +170,9 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 これは TeXShop というより，macOS 標準の日本語入力システムが持っているバグです。
 10.10 Yosemite でそのバグが入り込んできました。
 日本語入力中に制御コードが入力されてしまうことがあるようです。
+
+- [再現手順の一例](http://blog.ukixa.com/2015/06/input-ascii-code-bs.html)
+
 見た目には何も見えませんが，カーソルキーで1文字ずつカーソルを動かしたときに，何もない場所でカーソル移動が空振りする場所があれば，そこに見えない制御コードが入っています。
 これが入っていると，不正な UTF-8 文字列と見なされ，コンパイルに失敗します。
 
