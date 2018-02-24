@@ -300,9 +300,9 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 
 ### 欧文 (ギリシャ文字、キリル文字を含む) {#g25333bf}
 
-upTeX のデフォルトでは、U+0080 以上の文字は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。
+upTeX のデフォルトでは、U+0080 以上の文字の大部分[^2]は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。
 欧文 LaTeX の inputenc パッケージを利用することで、UTF-8 で記述された文書が処理出来ます。
-pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^2]が、upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。
+pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^3]が、upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。
 [upLaTeXでの全角ギリシャ文字の取り扱い](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2275) もご参照ください。
 ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。
 欧文 LaTeX の babel パッケージも、欧文 LaTeX と同様に利用出来ます。
@@ -319,8 +319,8 @@ pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱�
 
 ```
 \begin{document}
-\kcatcode`ç=15% not cjk character
-\kcatcode`Ŕ=15
+\kcatcode"E7=15%  ç:U+00E7   15: not cjk character
+\kcatcode"154=15%  Ŕ:U+0154
 \kcatcode`П=15
 \kcatcode`α=15
 \kcatcode`ἀ=15
@@ -418,4 +418,5 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
 
 [^1]: 内部 Unicode になっているのは、CJK の文字。欧文の処理は欧文 TeX, pTeX と同様、8-bit のままです。
-[^2]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
+[^2]: upTeX-1.23以降は、欧文の一部のデフォルトが欧文となります。[TeXフォーラムの記事](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2374)を参考。
+[^3]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
