@@ -41,7 +41,6 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 
 <!-- 増殖しそうだったので少し消しておきます。 -->
 - macOS 10.13 High Sierra でヒラギノフォントを使うための一連のサポートファイルは，諸事情により TeX Live 2017 の期間中にはリリースされない見込みです。ヒラギノフォントを使いたい場合は，非公式ではありますが，山本さんによる[［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://qiita.com/munepi/items/c4274da0646b3e785c7f)を参考に設定してください。
-- [TeXConf 2017](https://texconf2017.tumblr.com/) は、2017年10月14日（土）日本大学生物資源科学部10号館1012教室で開催されました。
     <!-- - 【重要】2017/06/01 以降の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）には、それ以前のバージョンと比べて非互換な変更が含まれます。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。 -->
     <!-- - - [[graphicx パッケージの仕様変更（dvipdfmx オプション）>forum:2211]]~ -->
     <!-- - - [[graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件:http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e]] -->
