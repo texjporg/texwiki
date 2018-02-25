@@ -170,27 +170,6 @@ Windows や macOS に比べ，Linux の方が LaTeX の実行速度が速いよ�
 - [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
 - [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
 
-## イベント {#df4b96d9}
-
-### TeXConf {#kb0df6ac}
-
-- [TeXConf 2017](https://texconf2017.tumblr.com/)
-
-### TeXユーザの集い {#e38306bd}
-
-- [TeXユーザの集い 2016](https://texconf16.tumblr.com/)
-- [TeXユーザの集い 2015](http://texconf15.tumblr.com/)
-- [TeXユーザの集い 2014](http://texconf14.tumblr.com/)
-- [TeXユーザの集い 2012](http://oku.edu.mie-u.ac.jp/texconf12/)
-- [TeXユーザの集い 2011](http://oku.edu.mie-u.ac.jp/texconf11/)
-- [TeXユーザの集い 2010](http://oku.edu.mie-u.ac.jp/texconf10/)
-- [TeXユーザの集い 2009](http://oku.edu.mie-u.ac.jp/texconf09/)
-
-### TeX Users Group (TUG) {#o7d3e65b}
-
-- [TUG 2013（第34回TeX Users Group年次大会）](http://tug.org/tug2013/jp/)
-- [TUG 2013 チュートリアルを日本語で聞く会](http://tug.org/tug2013/jp/followup.html)
-
 ## 関連リンク {#f53c2f34}
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
