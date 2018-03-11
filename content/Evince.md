@@ -135,7 +135,7 @@ $ vi ~/.config/fontconfig/fonts.conf
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-<dir>/usr/local/texlive/2017/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/local/texlive/2018/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
