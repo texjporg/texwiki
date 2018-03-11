@@ -104,7 +104,7 @@ $ sudo port install texlive-lang-japanese -doc
 - [luatex でPDFを作れるようになるまで](http://sqr.hateblo.jp/entry/2014/04/20/151523)
 - [定理環境の修飾 mdframed.sty](http://ubutun.blogspot.jp/2013/08/mdframedsty.html)
 - [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
-- [2011-09-06 - にっき♪](http://d.hatena.ne.jp/abenori/20110906)
+- [2011-09-06 - にっき♪](http://web.archive.org/web/20160404124429/http://d.hatena.ne.jp/abenori/20110906)
 
 W32TeX の場合，mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．
 また，LuaJITTeX を使用すると 1.3 倍ぐらい早くなることもあるようです ([forum:911](https://okumuralab.org/tex/mod/forum/discuss.php?d=911))．
