@@ -8,7 +8,7 @@ pukiwiki: "Vim"
 
 # Vim
 
-## [Vim](https://vim.sourceforge.io/) {#c1593263}
+## [Vim](https://www.vim.org/) {#c1593263}
 
 ***
 
@@ -23,7 +23,7 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 モードを切り替えることで，一つのキーに対して複数の意味を割り当てることができます．
 ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．
 
-- [Vim 公式サイト](https://vim.sourceforge.io/)
+- [Vim 公式サイト](https://www.vim.org/)
     - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
         - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
         - [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/)
@@ -42,7 +42,7 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 
 ### 動作環境 {#w6b94f3c}
 
-[download : vim online](https://vim.sourceforge.io/download.php) を参照．
+[download : vim online](https://www.vim.org/download.php) を参照．
 
 ### License {#w85a7064}
 
@@ -125,14 +125,14 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - [Vim-LaTeX](/Vim-LaTeX/)
 - ATP
-- [latex-support.vim : LaTeX-IDE for Vim/gVim ](https://vim.sourceforge.io/scripts/script.php?script_id=4405)
-- [vim-latex-live-preview](https://vim.sourceforge.io/scripts/script.php?script_id=4524)
+- [latex-support.vim : LaTeX-IDE for Vim/gVim ](https://www.vim.org/scripts/script.php?script_id=4405)
+- [vim-latex-live-preview](https://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
-- [TeX 9 : A semi-automatic LaTeX ftplugin with lots of firepower!](https://vim.sourceforge.io/scripts/script.php?script_id=3508)
+- [TeX 9 : A semi-automatic LaTeX ftplugin with lots of firepower!](https://www.vim.org/scripts/script.php?script_id=3508)
     - [vim-scripts/TeX-9 · GitHub](https://github.com/vim-scripts/TeX-9)
-- [auctex.vim](https://vim.sourceforge.io/scripts/script.php?script_id=162)
+- [auctex.vim](https://www.vim.org/scripts/script.php?script_id=162)
     - [vim-scripts/auctex.vim - GitHub](https://github.com/vim-scripts/auctex.vim)
-- [tex.vim : Indent file for TeX](https://vim.sourceforge.io/scripts/script.php?script_id=218)
+- [tex.vim : Indent file for TeX](https://www.vim.org/scripts/script.php?script_id=218)
     - [vim-scripts/tex.vim--Tanzler - GitHub](https://github.com/vim-scripts/tex.vim--Tanzler)
 - [vim-latex-omnifunc](https://github.com/igrep/vim-latex-omnifunc)
 - [vim-latex-live-preview](https://github.com/xuhdev/vim-latex-live-preview)
@@ -150,14 +150,14 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 - [zencoding-vim](https://github.com/mattn/zencoding-vim)
     - \[[TeX\]記事一覧 - blob glob](http://d.hatena.ne.jp/cobodo/archive?word=*%5bTeX%5d)
         - [zen-codingっぽくTeX(etc.)](http://d.hatena.ne.jp/cobodo/20100416/1271408225)
-- [snippetsEmu - An attempt to emulate TextMate's snippet expansion](https://vim.sourceforge.io/scripts/script.php?script_id=1318)
+- [snippetsEmu - An attempt to emulate TextMate's snippet expansion](https://www.vim.org/scripts/script.php?script_id=1318)
     - [TeXの図や表をsnippetsEmu.vimで簡単に入力出来るようにする](http://vim.g.hatena.ne.jp/y_yanbe/20080926)
 - [texファイルの更新を見て自動でコンパイルしてpdf開く](http://d.hatena.ne.jp/soh335/20111021/1319133018)
 - [texのerrorとかwarningとかの監視](http://d.hatena.ne.jp/soh335/20111223/1324610999)
     - [App::watcher](http://search.cpan.org/search?query=App%3A%3Awatcher)
     - [watchr](https://github.com/mynyml/watchr)
 - [Vim - ConTeXt wiki](http://sandbox.contextgarden.net/Vim)
-- [tex_autoclose.vim : TeX / LaTeX ftplugin to automatically close environments ](https://vim.sourceforge.io/scripts/script.php?script_id=920)
+- [tex_autoclose.vim : TeX / LaTeX ftplugin to automatically close environments ](https://www.vim.org/scripts/script.php?script_id=920)
 - [Writing LaTeX files with GVim &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/2010/10/07/writing-latex-files-with-gvim/)
 - [vimのlatexの書き方　、や。の扱い · Issue #532 · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/532)
 - [【Vim】Conceal機能ってぶっちゃけ見にくいと思う](http://qiita.com/xeno1991/items/8d1c8f38595337bab7c8)
