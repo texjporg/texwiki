@@ -91,15 +91,15 @@ LyX のインストーラーを右クリックします。
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　51.6 MB (54,201,861 バイト)<br>
-　　　　ディスク上　　　　　　51.6 MB (54,202,368 バイト)<br>
+　　　　サイズ:　　　　　　　　51.9 MB (54,484,419 バイト)<br>
+　　　　ディスク上　　　　　　51.9 MB (54,484,992 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2017年5月4日、01:00:00<br>
-　　　　更新日時:　　　　　　2017年5月4日、01:00:00<br>
-　　　　アクセス日時:　　　　2017年5月4日、01:00:00<br>
+　　　　作成日時:　　　　　　2018年3月11日、01:00:00<br>
+　　　　更新日時:　　　　　　2018年3月11日、01:00:00<br>
+　　　　アクセス日時:　　　　2018年3月11日、01:00:00<br>
 
 <br>
 
@@ -304,8 +304,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2017\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
-> 　　　　　<ins>C:\texlive\2017\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2018\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2018\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
 >
 > <br>
 >
@@ -523,6 +523,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 ## 関連リンク {#j2a0a89a}
 
 - [http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
+- [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
 - [Search - LyX - Pseudo Moon](https://www.pseudomoon.jp/dotclear/index.php?q=LyX)
