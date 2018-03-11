@@ -269,7 +269,7 @@ TeX2img は，Windows 版でも Mac 版でも，画像生成の元となった L
 
 #### 技術的詳細 {#n7de51d4}
 
-元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，Windows 版では NTFS の [代替データストリーム (Alternative Data Stream)](http://d.hatena.ne.jp/abenori/20150225)，Mac 版では HFS+ の [拡張属性 (Extended Attributes)](http://news.mynavi.jp/column/osx/253/) の部分にソースコードの情報を埋め込んでいます。
+元ソースは，生成した画像ファイル本体に埋め込まれているのではなく，Windows 版では NTFS の 代替データストリーム (Alternative Data Stream)，Mac 版では HFS+ の [拡張属性 (Extended Attributes)](http://news.mynavi.jp/column/osx/253/) の部分にソースコードの情報を埋め込んでいます。
 
 例えば Mac のファイルシステム HFS+ の場合，1つのファイルに対し，
 
