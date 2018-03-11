@@ -1011,7 +1011,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
         - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
 - [いわにぃのブログ : TikZ](http://blog.livedoor.jp/ti5942/tag/TikZ), [いわにぃのブログ : PGF/TikZ](http://blog.livedoor.jp/ti5942/archives/cat_131138.html)
 - [岩崎 隆盛/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=TikZ)
-- [「TikZ」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=TikZ)
+- [にっき&#9834;: TikZの検索結果](http://abenori.blogspot.com/search?q=TikZ&by-date=true)
 - [うぶつん: Tikz](http://ubutun.blogspot.jp/search/label/Tikz)
 - [TikZ | 人ごとな独り言](http://hitgot.org/archives/category/computer/programming/tex/tikz/)
 - [ちっちのぶろぐ: Tikz](http://chitchnoblog.blogspot.jp/search/label/Tikz)
@@ -1022,7 +1022,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [Software Design Laboratory &raquo; TeX macros](http://softcream.oka-pu.ac.jp/tex-macros/)
     - TikZ/PGFを利用して，構文解析器のXML出力から構文木を自動描画したり，２変数２次関数の等高線を描画するマクロなど。クリップアート集も。
 - [Fibonacci 数列で TikZ してみた](http://d.hatena.ne.jp/munepi/20120425/PGFandTikZ)
-    - [TikZ（＋expl3）を用いてフィボナッチ数列](http://d.hatena.ne.jp/abenori/20120425)
+    - [TikZ（＋expl3）を用いてフィボナッチ数列](http://web.archive.org/web/20151230222501/http://d.hatena.ne.jp/abenori/20120425)
     - [テンプレート的 LaTeX，再び (1)](http://d.hatena.ne.jp/zrbabbler/20120504/1336153796)
 - [Graphics with PGF and TikZ](http://www.tug.org/pracjourn/2007-1/mertz/)
     - PracTeX journal(2007-1)の記事で，代表的な用法をシンプルに紹介（英文）
