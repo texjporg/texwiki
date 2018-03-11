@@ -373,7 +373,7 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
 文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-upLaTeX + dvipdfmx で Japanese Article (BXJS Class) を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+upLaTeX + dvipdfmx で Japanese Article (BXJS Class) を使用する場合は，グラフィックドライバに既定値を指定します．
 upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
@@ -389,8 +389,8 @@ upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用�
 > <br>
 >
 > 　クラスオプション<br>
-> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>autodetect-engine,dvi=dvipdfmx,11pt,ja=standard</ins><br>
+> 　☑事前定義(P):　　<ins>autodetect-engine, dvi=dvipdfmx, ja=standard</ins><br>
+> 　任意設定(T):　　　 <ins>11pt</ins><br>
 >
 > <br>
 >
@@ -418,7 +418,7 @@ upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用�
 #### LuaLaTeX の場合 {#l1a666c4}
 
 文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-LuaLaTeX で Japanese Article (BXJS Class) を使用する場合は，クラスオプションに autodetect-engine と dvi=dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+LuaLaTeX で Japanese Article (BXJS Class) を使用する場合は，グラフィックドライバに既定値を指定します．
 LuaLaTeX で Requirements for Japanese Text Layout (jlreq) を使用する場合は，グラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
@@ -434,8 +434,8 @@ LuaLaTeX で Requirements for Japanese Text Layout (jlreq) を使用する場合
 > <br>
 >
 > 　クラスオプション<br>
-> 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
-> 　任意設定(T):　　　 <ins>autodetect-engine,dvi=dvipdfmx,11pt,ja=standard</ins><br>
+> 　☑事前定義(P):　　<ins>autodetect-engine, dvi=dvipdfmx, ja=standard</ins><br>
+> 　任意設定(T):　　　 <ins>11pt</ins><br>
 >
 > <br>
 >
