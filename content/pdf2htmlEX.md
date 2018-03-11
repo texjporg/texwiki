@@ -241,7 +241,7 @@ $ make install
 $ popd
 ```
 
-[FontForge](http://fontforge.github.io/) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ --> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar xvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar xvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
+[FontForge](http://fontforge.github.io/) をインストールします．<br> <!-- -FontForge 20120731-b をインストールする場合 --> <!--  --> <!-- $ curl -R -L -O http://download.sourceforge.net/fontforge/fontforge_full-20120731-b.tar.bz2 --> <!-- $ tar xvf fontforge_full-20120731-b.tar.bz2 --> <!-- $ pushd fontforge-20120731-b --> <!-- $ curl -R -L -O http://download.sourceforge.net/freetype/freetype-2.4.10.tar.bz2 --> <!-- $ tar xvf freetype-2.4.10.tar.bz2 --> <!-- $ ./configure - -prefix=/mingw - -with-freetype-src=freetype-2.4.10 --> <!-- $ make --> <!-- $ make install --> <!-- $ popd --> <!--  --> <!-- -FontForge 最新版をインストールする場合 -->
 
 ```
 $ curl --insecure -R -L -o fontforge-fontforge.tar.gz https://github.com/fontforge/fontforge/tarball/master
@@ -336,7 +336,7 @@ $ popd
 <!-- _mktemp は MinGW でも OK -->
 <!-- auto p = _mktemp(buf); -->
 
-[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br> <!-- エラーが発生する場合はビルドできるように修正してインストールします．→ [[2012-09-12 - にっき♪:http://d.hatena.ne.jp/abenori/20120912]]~ -->
+[pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX) をインストールします．<br>
 
 ```
 $ curl --insecure -R -L -o coolwanglu-pdf2htmlEX.tar.gz https://github.com/coolwanglu/pdf2htmlEX/tarball/master
@@ -587,7 +587,6 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
 - [香港のプログラマーの御紹介](http://blogs.yahoo.co.jp/igproj_fusion/16098576.html)
 - [Gentoo Linux での pdf2htmlEX のビルド](http://blogs.yahoo.co.jp/igproj_fusion/16101259.html)
-- [「pdf2htmlEX」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=pdf2htmlEX)
 - [これがHTML？と言いたくなるようなPDF変換ソフトウェア「pdf2htmlEX」](http://www.moongift.jp/2012/09/20120926/)
 - [はてなブックマーク - pdf2htmlEX - TeX Wiki](http://b.hatena.ne.jp/entry/oku.edu.mie-u.ac.jp/~okumura/texwiki/?pdf2htmlEX)
 - [Pdf2htmlEX: A PDF to HTML converter | Hacker News](http://news.ycombinator.com/item?id=4528797)
