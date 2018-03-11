@@ -26,16 +26,16 @@ Windows, macOS, Linux
 
 ### License {#a34a81c6}
 
-[GPLv3](https://git.gnome.org/browse/latexila/tree/COPYING)
+[GPLv3](https://gitlab.gnome.org/GNOME/gnome-latex/blob/master/COPYING)
 
 ### リリース情報/ChangeLog {#p49a2369}
 
-- [latexila - LaTeXila, an Integrated LaTeX Environment](https://git.gnome.org/browse/latexila/)
-    - [NEWS](https://git.gnome.org/browse/latexila/plain/NEWS)
-    - [log](https://git.gnome.org/browse/latexila/log/)
-- [GNOME/latexila · GitHub](https://github.com/GNOME/latexila)
-    - [NEWS](https://github.com/GNOME/latexila/blob/master/NEWS)
-    - [コミットログ](https://github.com/GNOME/latexila/commits/master)
+- [GNOME / gnome-latex · GitLab](https://gitlab.gnome.org/GNOME/gnome-latex)
+    - [NEWS](https://gitlab.gnome.org/GNOME/gnome-latex/blob/master/NEWS)
+    - [コミットログ](https://gitlab.gnome.org/GNOME/gnome-latex/commits/master)
+- [GitHub - GNOME/gnome-latex: GNOME LaTeX, a LaTeX editor](https://github.com/GNOME/gnome-latex)
+    - [NEWS](https://github.com/GNOME/gnome-latex/blob/master/NEWS)
+    - [コミットログ](https://github.com/GNOME/gnome-latex/commits/master)
 
 <!-- *不具合 [#o7b20b21] -->
 
