@@ -93,7 +93,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewR17
+AcroViewR18
 ```
 
 に修正することで解消できます。
