@@ -190,7 +190,7 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定できるフォント &lt;fontname> は次のものです．
 
 ```
-hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
+ipaex, ipa, hiragino-highsierra, hiragino-highsierra-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ms, yu-win10, yu-osx
 ```
 
 - Mac (macOS) の場合には事前準備が必要です。
