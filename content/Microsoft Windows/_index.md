@@ -8,7 +8,7 @@ pukiwiki: "Microsoft Windows"
 
 # Microsoft Windows
 
-<!-- *[[Microsoft Windows:http://www.windows.com/]] での TeX の利用 [#headline] -->
+## [Microsoft Windows](https://www.windows.com/) での TeX の利用 {#headline}
 
 <!-- Windows に TeX をインストールして使えるようになるまでの大まかな流れとしては，[[TeX 入手法>TeX入手法]]で簡単に述べたとおり -->
 <!--  -->
@@ -48,7 +48,7 @@ TeX を使うには環境変数 Path の設定が必要です．
 
 環境変数 Path は以下のように確認できます．
 
-> スタート &gt; 設定 &gt;  設定の検索から「環境変数」を入力して検索 &gt; 環境変数を編集
+> スタート &gt; 設定 &gt;  「設定の検索」と書かれた入力欄に「環境変数」と入力して検索 &gt; 「環境変数を編集」を選択
 
 <!-- -Windows PowerShell の場合 -->
 <!--  -->
@@ -85,7 +85,7 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 以下では，TeXworks をもちいてみます．
 TeXworks は
 
-- TeX Live をインストールした場合はスタートメニューの「TeX Live 2017」→「TeXworks editor」から
+- TeX Live をインストールした場合はスタートメニューの「TeX Live 2018」→「TeXworks editor」から
 - W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
 - W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，コマンドラインから 「texworks」で
 
@@ -211,7 +211,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - <strong>[SumatraPDF](/SumatraPDF/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
 - [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．SumatraPDF などで使われています．
-- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy などで使われています．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio などで使われています．
 
 などがあります．
 
