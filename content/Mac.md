@@ -113,7 +113,6 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://www.jabref.org/)
-- [QRef](http://hp.vector.co.jp/authors/VA011272/)
 - [BibDesk](http://bibdesk.sourceforge.net/)
 
 このほかにも
