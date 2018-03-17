@@ -100,7 +100,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - <strong>[Skim](/Skim/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
 - [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．
-- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Texmaker, TexitEasy などで使われています．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio などで使われています．
 - [LiveTeX](https://github.com/questbeat/LiveTeX)：LiveTeX is a PDF previewer for TeX writing. --&gt; [TeX のプレビュー用アプリを作った](http://questbeat.hatenablog.jp/entry/2016/02/16/213249)
 
 などがあります．
