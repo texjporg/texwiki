@@ -9,10 +9,13 @@ pukiwiki: "Karabiner"
 
 ## Karabiner {#oad54c3b}
 
-Karabiner は OS X （〜El Capitan）用のキーボードカスタマイズツールです．
+Karabiner は macOS 用のキーボードカスタマイズツールです．
 
 - [Karabiner - Software for macOS](https://pqrs.org/osx/karabiner/)
-    Sierra 以降の macOS では Karabiner は動作せず、Karabiner-Elements を使用することになります．ただし，Sierra 以降の macOS の制約により， <strong> [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) &lt;-> [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C)の交換は Karabiner-Elements ではできません</strong>．そのようなキーバインドの変更には [Hammerspoon](http://www.hammerspoon.org) などのツールが必要です．
+
+### 注意点 {#ofc2fe00}
+
+Sierra 以降の macOS では Karabiner 10 は動作せず、Karabiner-Elements を使用することになります．ただし，Sierra 以降の macOS の制約により， <strong> [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) &lt;-> [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C)の交換は Karabiner-Elements ではできません</strong>．そのようなキーバインドの変更には [Hammerspoon](http://www.hammerspoon.org) などのツールが必要です．
 
 ### 使い方 {#g3053829}
 
