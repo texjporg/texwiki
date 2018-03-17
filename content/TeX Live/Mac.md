@@ -458,8 +458,8 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 インストール方法によってディレクトリが異なりますので，ここにまとめておきます。
 
 > <table><tbody>
-> <tr><td></td><td>MacTeX-2017</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a></td></tr>
-> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2017</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2016</td></tr>
+> <tr><td></td><td>MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a></td></tr>
+> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2018</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2016</td></tr>
 > <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
 > <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
 > </tbody></table>
@@ -467,7 +467,7 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 
 ### 基本システムのインストール場所 {#ffbf8218}
 
-- MacTeX-2017 に収録されている TeXLive-2017 は，デフォルトでは /usr/local/texlive/2017 以下にインストールされます。
+- MacTeX-2018 に収録されている TeXLive-2018 は，デフォルトでは /usr/local/texlive/2018 以下にインストールされます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からインストールすると，デフォルトではアプリケーションフォルダにインストールされます。
 
 #### TEXMFLOCAL {#d2b2c9d5}
@@ -475,13 +475,13 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 - TEXMFLOCAL とは，MacTeX/TeX Live 本体のアップデートに影響を受けないディレクトリで，そのコンピュータのユーザー全員に共通の設定を保存します。<br>
     <strong>自分でスタイルファイル（.sty）やフォントなどを追加するときは，この TEXMFLOCAL または下記の TEXMFHOME 以下に置きます。</strong>
 
-- MacTeX-2017 に収録されている TeXLive-2017 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
+- MacTeX-2018 に収録されている TeXLive-2018 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFLOCAL はユーザのホームフォルダの一つ上の階層「ユーザ」の中の「共有」フォルダに作成されます。
 
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
-- MacTeX-2017 に収録されている TeXLive-2017 では，初期設定ではホームのライブラリ以下に収めます。
+- MacTeX-2018 に収録されている TeXLive-2018 では，初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFHOME はユーザのホームフォルダに作成されます。
 
 #### その他 {#w4248b01}
@@ -496,8 +496,8 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため，/usr/local/texlive 以下の設定よりも優先されます。<br>また，mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
-> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2017/texmf-config</td></tr>
-> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2017/texmf-var</td></tr>
+> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2018/texmf-config</td></tr>
+> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2018/texmf-var</td></tr>
 > <tr><td>TEXMFHOME</td><td>~/Library/texmf</td></tr>
 > </tbody></table>
 >
