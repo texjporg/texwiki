@@ -150,7 +150,7 @@ Tried to set a nonexistent character in a virtual font
 
 と表示されて Adobe Acrobat Reader DC で 𠮷 (U+20BB7) の字が表示されませんでした。
 
-LuaTeX-ja では otf パッケージ自身は使えませんが，代わりに同等の機能を提供する luatexja-otf パッケージが利用かのうです。
+LuaTeX-ja では otf パッケージ自身は使えませんが，代わりに同等の機能を提供する luatexja-otf パッケージが利用可能です。
 
 ```
 \documentclass{ltjsarticle}
