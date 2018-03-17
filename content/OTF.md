@@ -378,10 +378,12 @@ Windows 10, macOS に付属している游書体フォントは Adobe-Japan1-6 �
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
-TeX Live をインストールして
+TeX Live, cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールして
 
 ```
-sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
+sudo cjk-gs-integrate --link-texmf --cleanup
+sudo cjk-gs-integrate-macos --link-texmf
+sudo kanji-config-updmap-sys -jis2004 hiragino-highsierra-pron
 ```
 
 を実行しました。
@@ -458,14 +460,14 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定されるフォント &lt;fontname> は次のものです。
 
 ```
-hiragino-elcapitan, hiragino-elcapitan-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ipaex, ipa, ms, yu-win10, yu-osx
+ipaex, ipa, hiragino-highsierra, hiragino-highsierra-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ms, yu-win10, yu-osx
 （いずれもないときは nofont になります）
 ```
 
 dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
 
 ```
-dvipdfmx -f uptex-hiragino-elcapitan-pron-04.map -f otf-up-hiragino-elcapitan-pron.map hoge.dvi
+dvipdfmx -f uptex-hiragino-highsierra-pron-04.map -f otf-up-hiragino-highsierra-pron.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
@@ -799,15 +801,13 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
-- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan/)
-- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-elcapitan-pron/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan-pron/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/hiragino-elcapitan-pron/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra/)
+- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra-pron/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra-pron/)
 
 - TeX Live の場合
 
 ```
-ptex2pdf -u -l -od "-f uptex-hiragino-elcapitan-pron-04.map -f otf-up-hiragino-elcapitan-pron.map" hoge.tex
+ptex2pdf -u -l -od "-f uptex-hiragino-highsierra-pron-04.map -f otf-up-hiragino-highsierra-pron.map" hoge.tex
 ```
 
 - W32TeX の場合
