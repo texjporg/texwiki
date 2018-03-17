@@ -214,7 +214,6 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://www.jabref.org/)
-- [QRef](http://hp.vector.co.jp/authors/VA011272/)
 
 このほかにも
 
