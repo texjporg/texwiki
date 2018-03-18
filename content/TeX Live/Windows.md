@@ -36,7 +36,7 @@ pukiwiki: "TeX Live/Windows"
 
 以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
-以降は2015の例ですが，2017でもほとんど変わりません．
+以降は TeX Live 2015 の例ですが，TeX Live 2018 でもほとんど変わりません．
 
 <!-- 誰か更新してー -->
 
@@ -88,7 +88,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2017.iso をダウンロードしてください．
+「download from a nearby CTAN mirror」から，texlive2018.iso をダウンロードしてください．
 Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
 Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
@@ -114,17 +114,21 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2017）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2018）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
+- [Texliveのインストールに失敗する](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387)
+    （[Re: Texliveのインストールに失敗する#p14036](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14036),
+    [Re: Texliveのインストールに失敗する#p14035](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14035)）
+
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
-- [「セキュリティソフト」がインストールの障害になっている例](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
+- [「セキュリティソフト」がインストールの障害になっている例](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
 
 以下も参考に．
 
-- [windowsにtexliveをインストール出来ません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
-- [インストーラーの初期化に失敗しました。](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
+- [windowsにtexliveをインストール出来ません](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
+- [インストーラーの初期化に失敗しました。](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
 <!-- ** 追加設定 [#t30edd37] -->
 
@@ -171,7 +175,7 @@ TeX Live 2016 対応の事例です．
 
 ## アップデート {#a6223106}
 
-スタートメニューから 「TeX Live 2017」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
+スタートメニューから 「TeX Live 2018」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
 「導入済のものを全て更新」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -185,7 +189,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2017\tlpkg\backups
+- C:\texlive\2018\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
