@@ -23,6 +23,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 ### Webサイト {#w233c0c1}
 
 - [TeXstudio](https://www.texstudio.org/)
+- [GitHub - texstudio-org/texstudio: TeXstudio is a fully featured LaTeX editor. Our goal is to make writing LaTeX documents as easy and comfortable as possible.](https://github.com/texstudio-org/texstudio)
 - [TeXstudio - A LaTeX Editor | SourceForge.net](https://sourceforge.net/projects/texstudio/)
 - [TeXstudio - A LaTeX Editor / Wiki / Home](https://sourceforge.net/p/texstudio/wiki/)
 - [https://twitter.com/texstudio](https://twitter.com/texstudio)
@@ -33,7 +34,7 @@ Windows, macOS, Linux
 
 ### License {#od98a625}
 
-[GPLv2](http://hg.code.sf.net/p/texstudio/hg/file/tip/utilities/COPYING)（QCodeEdit は [GPLv3](https://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
+[GPLv2](https://github.com/texstudio-org/texstudio/blob/master/utilities/COPYING)（QCodeEdit は [GPLv3](https://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
 
 ### ダウンロード/インストール {#f36a3b67}
 
@@ -41,9 +42,9 @@ TeXstudio 公式サイトの Download ページ
 
 > [https://www.texstudio.org/#download](https://www.texstudio.org/#download)
 
-または JAIST ミラー
+または GitHub
 
-> [http://jaist.dl.sourceforge.net/project/texstudio/texstudio/](http://jaist.dl.sourceforge.net/project/texstudio/texstudio/)
+> [https://github.com/texstudio-org/texstudio/releases](https://github.com/texstudio-org/texstudio/releases)
 
 からダウンロードできます．
 
@@ -79,7 +80,7 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 ### 更新履歴 {#w7aac056}
 
-- [http://texstudio.sourceforge.net/manual/current/CHANGELOG.txt](http://texstudio.sourceforge.net/manual/current/CHANGELOG.txt)
+- [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
 
 ### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
 
