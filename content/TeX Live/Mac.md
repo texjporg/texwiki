@@ -118,10 +118,10 @@ $ sudo ./install-tl --profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2017，\* は x86_64-darwin などにマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2018，\* は x86_64-darwin などにマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2017/bin/x86_64-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2018/bin/x86_64-darwin/tlmgr path add
 ```
 
 ### Xcode のインストール要求ダイアログについての注意 {#d359d79d}
