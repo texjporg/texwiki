@@ -104,7 +104,7 @@ LyX のインストーラーを右クリックします。
 <br>
 
 　　　　属性:　　　　　　☐読み取り専用(R)　　☐隠しファイル(H)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 詳細設定(D)... \]</span><br>
-　　　　セキュリティ:　　このファイルは他のコンピューターから取得し　☑ブロックの解除(K) &lt;-- ブロックを解除して \[適用(A)\] と \[OK\] をクリック<br>
+　　　　セキュリティ:　　このファイルは他のコンピューターから取得し　☑許可する(K) &lt;-- 許可するをチェックして \[適用(A)\] と \[OK\] をクリック<br>
 　　　　　　　　　　　　　 たものです。このコンピューターを保護するた<br>
 　　　　　　　　　　　　　 め、このファイルへのアクセスはブロックされる<br>
 　　　　　　　　　　　　　 可能性があります。<br>
@@ -113,7 +113,7 @@ LyX のインストーラーを右クリックします。
 
 　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>　<span style="color:Gray;background-color:#EEEEEE;">\[ 　　適用(A)　　 \]</span><br>
 
-☑ブロックの解除(K) をして \[適用(A)\] と \[OK\] をクリックします。
+☑許可する(K) の状態にして \[適用(A)\] と \[OK\] をクリックします。
 LyX のインストーラーを右クリックします。
 
 > 　　　<strong>開く(O)</strong><br>
