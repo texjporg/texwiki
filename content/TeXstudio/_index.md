@@ -24,8 +24,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 
 - [TeXstudio](https://www.texstudio.org/)
 - [GitHub - texstudio-org/texstudio: TeXstudio is a fully featured LaTeX editor. Our goal is to make writing LaTeX documents as easy and comfortable as possible.](https://github.com/texstudio-org/texstudio)
-- [TeXstudio - A LaTeX Editor | SourceForge.net](https://sourceforge.net/projects/texstudio/)
-- [TeXstudio - A LaTeX Editor / Wiki / Home](https://sourceforge.net/p/texstudio/wiki/)
+- [Home · texstudio-org/texstudio Wiki · GitHub](https://github.com/texstudio-org/texstudio/wiki)
 - [https://twitter.com/texstudio](https://twitter.com/texstudio)
 
 ### 動作環境 {#e7cc7bd5}
@@ -51,6 +50,8 @@ TeXstudio 公式サイトの Download ページ
 #### Windows {#ca4cc4c7}
 
 Windows 用のインストーラーをダウンロードして実行します．
+インストーラーを実行して「WindowsによってPCが保護されました」と表示される場合は
+インストーラーを右クリックして全般タブのセキュリティ:の項目の許可するをチェックして☑許可する(K)の状態にして再度インストーラーを実行します．
 
 #### macOS {#d9a96322}
 
@@ -80,6 +81,7 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 ### 更新履歴 {#w7aac056}
 
+- [https://github.com/texstudio-org/texstudio/commits/master](https://github.com/texstudio-org/texstudio/commits/master)
 - [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
 
 ### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
@@ -102,7 +104,7 @@ export PATH=$PATH:/Library/TeX/texbin
 
 ## 不具合 {#k30ccccc}
 
-- [TeXstudio - A LaTeX Editor / Bugs](https://sourceforge.net/p/texstudio/bugs/)
+- [Issues · texstudio-org/texstudio · GitHub](https://github.com/texstudio-org/texstudio/issues)
 
 ### macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
 
