@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2017 には以下のパッケージが収録されています。
+MacTeX-2018 には以下のパッケージが収録されています。
 
-#### TeX Live-2017 {#v03e546d}
+#### TeXLive-2018 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -41,16 +41,16 @@ MacTeX は TeX Live の scheme-full に対応していますので，TeX Live �
 #### GUI-Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-README-ja.pdf（日本語を扱うための初期設定手順の解説），READ ME FIRST.pdf，What Is Installed.pdf，Eps-Tiff-Conversion-2017.pdf，Ghostscript.pdf の書類もインストールされます。
+README-ja.pdf（日本語を扱うための初期設定手順の解説），READ ME FIRST.pdf，What Is Installed.pdf，Eps-Tiff-Conversion.pdf，Ghostscript.pdf の書類もインストールされます。
 
 GUI Applications には以下のアプリケーションが収録されています。
 アプリケーションフォルダの中の TeX フォルダに収められています。
 
 - [BibDesk](http://bibdesk.sourceforge.net/)
-    - 文献管理ソフトです。
+    - 文献管理ソフト。
 
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
-    - TeX に対応したスペルチェッカー。macOS Sierra / OS X El Capitan で動作します。
+    - TeX に対応したスペルチェッカー。
 
 - [Excalibur](http://excalibur.sourceforge.net/)
     - TeX に対応したスペルチェッカー。
@@ -68,14 +68,11 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-- [FixLink](http://pages.uoregon.edu/koch/)
-    - システムにインストールされている過去のバージョンの MacTeX を OS X El Capitan で動作するように新しいシンボリックリンクを作成するインストールパッケージ。
-
-#### Ghostscript-9.21 {#n1354f54}
+#### Ghostscript-9.22 {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください。
 
-MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](http://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
+MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
 
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
@@ -130,16 +127,16 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
-- [MacTeXに関する投稿 - Qiita](http://qiita.com/tags/MacTeX)
-- [El Capitan / SierraでTeX環境をゼロから構築する方法](http://qiita.com/hideaki_polisci/items/3afd204449c6cdd995c9)
+- [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
+- [El Capitan / SierraでTeX環境をゼロから構築する方法](https://qiita.com/hideaki_polisci/items/3afd204449c6cdd995c9)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
 
 <!-- MacTeX-2016 の場合 -->
 <!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
-<!-- -[[[El Capitan] MacTeX-2016をインストールする:http://qiita.com/Aruneko/items/6a524896df0e90181044]] -->
-<!-- -[[LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編:http://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68]] -->
+<!-- -[[[El Capitan] MacTeX-2016をインストールする:https://qiita.com/Aruneko/items/6a524896df0e90181044]] -->
+<!-- -[[LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編:https://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68]] -->
 
 <!-- MacTeX-2015 の場合 -->
 <!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
