@@ -8,18 +8,18 @@ pukiwiki: "LyX"
 
 # LyX
 
-## [LyX](http://www.lyx.org/) {#odce06b4}
+## [LyX](https://www.lyx.org/) {#odce06b4}
 
 LyX は，LaTeX 文書が出力できるドキュメントプロセッサです．
 LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援します．
 文書の見た目による (WYSIWYG) 書き方を支援するものではありません．
 
-- [LyX | LyX &ndash; The Document Processor](http://www.lyx.org/)
-- [LyX | LyX &ndash; 文書プロセッサ](http://www.lyx.org/WebJa.Home)
-- [LyX wiki | LyX / LyX](http://wiki.lyx.org/)
-    <!-- - -[[SyncTeX:http://wiki.lyx.org/LyX/SyncTeX]] -->
-    <!-- - -[[Logotype:http://wiki.lyx.org/LyX/Logotype]] -->
-    <!-- - -[[SplashScreen:http://wiki.lyx.org/LyX/SplashScreen]] -->
+- [LyX | LyX &ndash; The Document Processor](https://www.lyx.org/)
+- [LyX | LyX &ndash; 文書プロセッサ](https://www.lyx.org/WebJa.Home)
+- [LyX wiki | LyX / LyX](https://wiki.lyx.org/)
+    <!-- - -[[SyncTeX:https://wiki.lyx.org/LyX/SyncTeX]] -->
+    <!-- - -[[Logotype:https://wiki.lyx.org/LyX/Logotype]] -->
+    <!-- - -[[SplashScreen:https://wiki.lyx.org/LyX/SplashScreen]] -->
 
 - [lyx-devel](https://www.mail-archive.com/lyx-devel@lists.lyx.org/)
 
@@ -33,8 +33,8 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
 
 ### LyX の読み方 {#r8403bf4}
 
-- [http://wiki.lyx.org/FAQ/Pronunciation](http://wiki.lyx.org/FAQ/Pronunciation)
-- [http://en.wikipedia.org/wiki/LyX#Pronunciation](http://en.wikipedia.org/wiki/LyX#Pronunciation)
+- [https://wiki.lyx.org/FAQ/Pronunciation](https://wiki.lyx.org/FAQ/Pronunciation)
+- [https://en.wikipedia.org/wiki/LyX#Pronunciation](https://en.wikipedia.org/wiki/LyX#Pronunciation)
 
 によると LyX の開発者は「りっくす」，「りくす」，「りーくす」などと発音しているようですが，結論としては自分の好きなように発音していいようです．
 
@@ -79,27 +79,27 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-230-Installer-1.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-230-Installer-6.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="http://git.lyx.org/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-230-Installer-1.exe</ins><br>
+　　　　　　 <ins>LyX-230-Installer-6.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　51.9 MB (54,484,419 バイト)<br>
+　　　　サイズ:　　　　　　　　51.9 MB (54,479,762 バイト)<br>
 　　　　ディスク上　　　　　　51.9 MB (54,484,992 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2018年3月11日、01:00:00<br>
-　　　　更新日時:　　　　　　2018年3月11日、01:00:00<br>
-　　　　アクセス日時:　　　　2018年3月11日、01:00:00<br>
+　　　　作成日時:　　　　　　2018年3月21日、01:00:00<br>
+　　　　更新日時:　　　　　　2018年3月21日、01:00:00<br>
+　　　　アクセス日時:　　　　2018年3月21日、01:00:00<br>
 
 <br>
 
@@ -522,7 +522,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ## 関連リンク {#j2a0a89a}
 
-- [http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](http://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
+- [https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
 - [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
@@ -547,12 +547,12 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ### License {#pb9a4019}
 
-[GPLv2](http://www.lyx.org/License) ([日本語訳](http://www.lyx.org/WebJa.License))
+[GPLv2](https://www.lyx.org/License) ([日本語訳](https://www.lyx.org/WebJa.License))
 
 ### リリース情報 {#k8ba7cf7}
 
 - [http://git.lyx.org/?p=lyx.git;a=tags](http://git.lyx.org/?p=lyx.git;a=tags)
-- [LyX | ニュース](http://www.lyx.org/WebJa.News)
+- [LyX | ニュース](https://www.lyx.org/WebJa.News)
 
 を参照．
 
@@ -560,8 +560,8 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 - [git.lyx.org](http://git.lyx.org/?p=lyx.git;a=summary)
     - [shortlog](http://git.lyx.org/?p=lyx.git;a=shortlog)
-- [timeline](http://www.lyx.org/trac/timeline)
-- [http://www.lyx.org/trac/log/lyxgit/](http://www.lyx.org/trac/log/lyxgit/)
+- [timeline](https://www.lyx.org/trac/timeline)
+- [https://www.lyx.org/trac/log/lyxgit/](https://www.lyx.org/trac/log/lyxgit/)
 - [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
     - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
 
