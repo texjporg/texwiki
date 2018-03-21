@@ -59,7 +59,7 @@ TeX Live は OS ごとにインストール方法が異なります．
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2017/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2018/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
