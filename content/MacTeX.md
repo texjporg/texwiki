@@ -72,7 +72,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください。
 
-MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
+MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
 
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
