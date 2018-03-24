@@ -68,7 +68,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.22 {#n1354f54}
+#### Ghostscript-9.23 {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](http://pages.uoregon.edu/koch/) から最新版を入手してください。
 
@@ -128,7 +128,6 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
-- [El Capitan / SierraでTeX環境をゼロから構築する方法](https://qiita.com/hideaki_polisci/items/3afd204449c6cdd995c9)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
@@ -150,11 +149,10 @@ $ sudo tlmgr paper a4
 <!-- そして，そんな場合は上の最新記事に“昇格”です． -->
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
-<!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html]] -->
+<!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):https://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html]] -->
 <!-- -[『Fuzoku実践入門』サンプルリポジトリの紹介:http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019]] -->
 <!-- - -[『Fuzoku実践入門』環境サンプルファイル:https://github.com/akinomurasame/learning-fuzoku-sample] -->
 <!-- -[[MacTeX 2014 - 一歩前進:http://succzero.hatenablog.com/entry/2014/07/17/041211]] -->
-<!-- -[[MacTeX 2014 を再インストールしたときの覚書:https://pt-diary.tumblr.com/post/107214765605/20150105-mactex]] -->
 <!-- -[[Sublime TextでTeX論文執筆できるようにした時のメモ:http://kzhrknt.hatenablog.com/entry/2014/09/14/032907]] -->
 
 ### アンインストール {#uninstalling}
