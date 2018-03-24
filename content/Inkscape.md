@@ -319,6 +319,10 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが Pa
         \begin{equation}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation}
         ```
 
+### [Tex Text](https://github.com/textext/textext) {#l1a0873e}
+
+Inkscape で LaTeX の数式を埋め込むエクステンション．再編集可能．
+
 ### [SVG2TikZ](https://github.com/kjellmf/svg2tikz) {#u5ee2f7d}
 
 Inkscape 等で作成した SVG ファイルを TikZ のコードに変換するプログラムです．
