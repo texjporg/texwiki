@@ -46,11 +46,11 @@ $ context --version
 ```
 
 ```
-resolvers       | trees | analyzing 'home:.texlive2017/texmf-config'
-mtx-context     | ConTeXt Process Management 1.01
+resolvers       | trees | analyzing 'home:.texlive2018/texmf-config'
+mtx-context     | ConTeXt Process Management 1.02
 mtx-context     |
-mtx-context     | main context file: /usr/local/texlive/2017/texmf-dist/tex/context/base/mkiv/context.mkiv
-mtx-context     | current version: 2017.05.15 21:48
+mtx-context     | main context file: /usr/local/texlive/2018/texmf-dist/tex/context/base/mkiv/context.mkiv
+mtx-context     | current version: 2018.03.16 22:20
 ```
 
 上のようにバージョン情報が出ればOKです．
