@@ -27,9 +27,9 @@ PDF ファイルの結合，分割，並べ替え，ページ回転，ページ�
 
 [本家](https://www.pdflabs.com/tools/pdftk-server/)に Windows, Mac OS X, Red Hat Enterprise Linux, CentOS 用インストーラがあります．
 
-macOS Sierra / OS X El Capitan の場合は [https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg) をダウンロードします．
+macOS High Sierra / macOS Sierra / OS X El Capitan の場合は [https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg) をダウンロードします．
 
-パッケージ管理からも可能です．OS X の場合は MacPorts を使用しているなら
+パッケージ管理からも可能です．macOS の場合は MacPorts を使用しているなら
 
 ```
 sudo port install pdftk
@@ -52,3 +52,4 @@ pdftk --help または pdftk -h と入力すれば詳しいマニュアルが現
 - [pdftk: Linux Wiki](http://oku.edu.mie-u.ac.jp/~okumura/linux/?pdftk)
 - [PDFをコマンドラインから編集できるPDFtk使い方メモ ](http://nwpct1.hatenablog.com/entry/2013/12/14/192914)
 - [Tips: PDFの作り方(1) pdftkの活用](http://acetaminophen.hatenablog.com/entry/2014/11/10/000559)
+- [pdftk(OS10.13)](http://blog.toshihiro-kaneko.tonkotsu.jp/?eid=24)
