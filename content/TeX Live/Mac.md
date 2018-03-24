@@ -182,17 +182,10 @@ $ sudo bash -c "CC=: tlmgr update --self"
 macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじめに
 
 - macOS Sierra または OS X El Capitan へのアップグレード
-- TeX Live 2017（または MacTeX-2017 / BasicTeX-2017）のインストール
+- TeX Live 2018（または MacTeX-2018 / BasicTeX-2018）のインストール
 
 を完了させてください（どちらを先に行ってもかまいません；TeX Live や MacTeX / BasicTeX のインストールは，macOS Sierra / OS X El Capitan かどうかにかかわらず従来と同じ方法で可能です[^1]）。
-そのうえで，macOS Sierra / OS X El Capitan 対応の大まかなセットアップ手順は以下のとおりです：
-
-1. TeX Live を最新の状態に更新
-    <!-- + ptex-fontmaps (旧名:jfontmaps) & cjk-gs-integrate.pl のバージョン確認 -->
-
-1. 新しいヒラギノフォントへのシンボリックリンクを作成
-1. マップファイルの更新
-1. （周辺アプリケーションの設定変更：必要であれば）
+そのうえで，macOS Sierra / OS X El Capitan 対応のセットアップ手順は以下のとおりです：
 
 まず，TeX Live を最新の状態に更新します。
 ターミナルから [tlmgr](/tlmgr/) を実行します。
@@ -203,46 +196,24 @@ $ sudo tlmgr update --self --all
 
 [MacTeX](/MacTeX/) を使用している場合は MacTeX 付属の [TeX Live Utility](</TeX Live Utility/>) という GUI ユーティリティを使うことで TeX Live をアップデートすることもできます。
 
-次に，新しいヒラギノフォントなどの和文フォントにシンボリックリンクを張るスクリプトを実行します[^2]。
+次に，TLContrib から cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールします。
 
-TeX Live あるいは MacTeX の場合は
-
-```
-$ cd /usr/local/texlive/2017/texmf-dist/scripts/cjk-gs-integrate
-```
-
-BasicTeX の場合は
+cjk-gs-integrate を --link-texmf --cleanup オプション付きで実行します。
 
 ```
-$ cd /usr/local/texlive/2017basic/texmf-dist/scripts/cjk-gs-integrate
+$ sudo cjk-gs-integrate --link-texmf --cleanup
 ```
 
-を実行して cjk-gs-integrate.pl の存在するフォルダに移動します。
-
-cjk-gs-integrate.pl を --link-texmf --force オプション付きで実行します。
+cjk-gs-integrate-macos を --link-texmf オプション付きで実行します。
 
 ```
-$ sudo perl cjk-gs-integrate.pl --link-texmf --force
-```
-
-mktexlsr を実行します。
-
-```
-$ sudo mktexlsr
+$ sudo cjk-gs-integrate-macos --link-texmf
 ```
 
 最後に，macOS Sierra / OS X El Capitan の新しいヒラギノフォントを埋め込むためのマップファイルを指定しなおします。
 
-ヒラギノの N シリーズを埋め込む場合は
-
 ```
-$ sudo updmap-sys --setoption jaEmbed hiragino-elcapitan-pron
-```
-
-ヒラギノの N シリーズでない方を埋め込む場合は
-
-```
-$ sudo updmap-sys --setoption jaEmbed hiragino-elcapitan
+$ sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
 ```
 
 を実行します。
@@ -398,7 +369,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 
 ### ヒラギノフォント {#d19a1537}
 
-macOS High Sierra に付属するヒラギノフォントに関しては [macOS High Sierra のヒラギノフォント](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2267)，[High Sierra 用 TeX Live 2017 追加ファイル](http://www.muskmelon.jp/?p=2013)，[macOS High Sierra + Texlive 2017 + ヒラギノフォント](https://qiita.com/osamu620/items/8a299e44d087542e29a9) を参照してください。
+macOS High Sierra に付属するヒラギノフォントに関しては [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382) を参照してください。
 
 macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
 
@@ -417,8 +388,7 @@ cjk-gs-integrate.pl のオプションは，バージョン 20151002.0 以降で
 $ sudo mkdir -p /usr/local/texlive/texmf-local/fonts/truetype
 $ cd $(dirname $(gs --help | grep "Resource/Font" | awk '{print $1}'))
 $ sudo zsh -c "rm ./CIDFont/*(@) ./CIDFSubst/*(@)"
-$ cd /usr/local/texlive/2017/texmf-dist/scripts/cjk-gs-integrate
-$ sudo perl cjk-gs-integrate.pl --link-texmf --force
+$ sudo cjk-gs-integrate.pl --link-texmf --force
 ```
 
 ### updmap(-sys) の使用に関する注意点 {#qdce07c2}
@@ -511,4 +481,3 @@ $ sudo perl cjk-gs-integrate.pl --link-texmf --force
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
 
 [^1]: 古いバージョンの TeX Live がインストールされていても気にせずに，新規インストールと同じ手順でインストールします。
-[^2]: 従来の cjk-gs-integrate のオプションは --link-texmflocal でしたが，新しい版では --link-texmf \[DIR\] でディレクトリを指定する形式となりました。この \[DIR\] を空白にした場合，TEXMFLOCAL の場所が指定されたとみなされます。
