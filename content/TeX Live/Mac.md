@@ -32,25 +32,24 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2017 以降のバイナリの動作環境に関する変更点 {#obbbdbf4}
+### TeX Live 2018 のバイナリの動作環境に関する変更点 {#obbbdbf4}
 
 TeX Live 2017 以降は x86_64-darwin バイナリは Apple セキュリティアップデートが提供されている OS のみサポートされることになりました。
-TeX Live 2016 まで存在していた universal-darwin バイナリが削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
-Apple セキュリティアップデートが提供されないレガシーな OS では x86_64-darwinlegacy バイナリ，i386-darwin バイナリ，powerpc-darwin バイナリのいずれかを使用します。
+Apple セキュリティアップデートが提供されないレガシーな OS では x86_64-darwinlegacy バイナリを使用します。
+TeX Live 2016 まで存在していた universal-darwin バイナリは TeX Live 2017 で削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
+[TeX Live 2017 の i386-darwin バイナリと powerpc-darwin バイナリは TeX Live 2018 で削除されました](http://www.tug.org/svn/texlive?view=revision&revision=47075)。
 
-MacTeX-2017 / BasicTeX-2017 以降に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
+MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
 
 下の表で自分が使用している OS はどのバイナリをインストールすればよいのか確認できます。
 &#x2714; マークは OS と対応するバイナリを示しています。
 
 <div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
 
-|  | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard | Mac OS X 10.5 Leopard (Intel) | Mac OS X 10.5 Leopard (PowerPC) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |
-| i386-darwin |  |  |  |  |  |  |  | &#x2714; | &#x2714; |  |
-| powerpc-darwin |  |  |  |  |  |  |  |  |  | &#x2714; |
+|  | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
+|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
 #### TeX Live のインストール {#texliveinstall}
 
@@ -59,8 +58,8 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されることになったので，
-ここでは x86_64-darwin バイナリがサポートしていないレガシーな環境でも TeX Live をインストールできるように MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されるので，
+ここでは x86_64-darwin バイナリがサポートしていない x86_64-darwinlegacy な環境でも TeX Live をインストールできるように MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -118,7 +117,7 @@ $ sudo ./install-tl --profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2018，\* は x86_64-darwin などにマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2018，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
 $ sudo /usr/local/texlive/2018/bin/x86_64-darwin/tlmgr path add
