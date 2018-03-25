@@ -43,7 +43,7 @@ MacTeX-2017 / BasicTeX-2017 以降に付属する TeX Live には x86_64-darwin 
 下の表で自分が使用している OS はどのバイナリをインストールすればよいのか確認できます。
 &#x2714; マークは OS と対応するバイナリを示しています。
 
-<div style="text-align:center">TeX Live 2017 が動作する OS と対応するバイナリ</div>
+<div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
 
 |  | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard | Mac OS X 10.5 Leopard (Intel) | Mac OS X 10.5 Leopard (PowerPC) |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -216,8 +216,6 @@ $ sudo cjk-gs-integrate-macos --link-texmf
 $ sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
 ```
 
-を実行します。
-
 以上で，ヒラギノフォントを pLaTeX / upLaTeX + dvipdfmx で PDF に埋め込むことができます。
 
 #### macOS Sierra / OS X El Capitan でのアプリケーションの設定変更 {#i8a16a2b}
@@ -345,7 +343,7 @@ $ sudo port install texlive-lang-japanese texlive-luatex texlive-xetex texlive
 
 インストールのやり方などの事例も参考になります。
 
-- [SphinxでLatex拡張を使ってPDF出力する](http://qiita.com/H-A-L/items/8222d894daf1552cef67)
+- [SphinxでLatex拡張を使ってPDF出力する](https://qiita.com/H-A-L/items/8222d894daf1552cef67)
 - [LaTeXをmacportsを使ってインストール](http://regry358.hatenablog.com/entry/2014/06/02/155405)
 - [OSXへのTeXliveインストール (MacTex / MacPorts)](http://sphinx-users.jp/cookbook/pdf/latex-install-osx.html)
 
