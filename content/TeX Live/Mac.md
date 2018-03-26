@@ -172,7 +172,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 
 - macOS Sierra / OS X El Capitan に新たに収録された日本語フォントの多くは，従来の拡張子 .otf の OpenType Font を束ねた形式の OpenType Collection Font です。
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
-    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](http://www.muskmelon.jp/?p=1169)
+    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](https://www.muskmelon.jp/?p=1169)
 
 #### macOS Sierra / OS X El Capitan での TeX Live のセットアップ {#l8c867e9}
 
@@ -195,7 +195,7 @@ $ sudo tlmgr update --self --all
 
 [MacTeX](/MacTeX/) を使用している場合は MacTeX 付属の [TeX Live Utility](</TeX Live Utility/>) という GUI ユーティリティを使うことで TeX Live をアップデートすることもできます。
 
-次に，TLContrib から cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールします。
+次に，[TLContrib](http://contrib.texlive.info/) から cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールします。
 
 cjk-gs-integrate を --link-texmf --cleanup オプション付きで実行します。
 
@@ -209,7 +209,7 @@ cjk-gs-integrate-macos を --link-texmf オプション付きで実行します�
 $ sudo cjk-gs-integrate-macos --link-texmf
 ```
 
-最後に，macOS Sierra / OS X El Capitan の新しいヒラギノフォントを埋め込むためのマップファイルを指定しなおします。
+最後に，macOS Sierra / OS X El Capitan に付属するヒラギノフォントを埋め込むためのマップファイルを指定します。
 
 ```
 $ sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
@@ -366,9 +366,9 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 
 ### ヒラギノフォント {#d19a1537}
 
-macOS High Sierra に付属するヒラギノフォントに関しては [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382) を参照してください。
+macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントに関しては [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382) を参照してください。
 
-macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。[macOS 10.12 Sierra / OS X 10.11 El Capitan への対応](</TeX Live/Mac/#elcapitan>)を実行してください。
+macOS High Sierra / macOS Sierra / OS X El Capitan では OS X Yosemite 以前と比較して日本語フォントの構成が変更されています。
 
 ### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
@@ -385,7 +385,7 @@ cjk-gs-integrate.pl のオプションは，バージョン 20151002.0 以降で
 $ sudo mkdir -p /usr/local/texlive/texmf-local/fonts/truetype
 $ cd $(dirname $(gs --help | grep "Resource/Font" | awk '{print $1}'))
 $ sudo zsh -c "rm ./CIDFont/*(@) ./CIDFSubst/*(@)"
-$ sudo cjk-gs-integrate.pl --link-texmf --force
+$ sudo cjk-gs-integrate --link-texmf --force
 ```
 
 ### updmap(-sys) の使用に関する注意点 {#qdce07c2}
