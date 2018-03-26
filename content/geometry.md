@@ -63,8 +63,9 @@ TeX Live, W32TeX に含まれています。
 geometry パッケージは，ページレイアウトの指定を \special コマンドとして埋め込みます。
 したがって，graphicx や color，xcolor と同様のドライバ指定が必要です。
 
-ただし，geometry には dvipdfmx ドライバオプションが作られていませんので，dvipdfm を指定するしかありません[^1]。
+geometry 2018/03/26 v5.8 以降は dvipdfmx ドライバオプションが使用できます。geometry v5.7 以前は dvipdfmx ドライバオプションが作られていませんので，dvipdfm を指定するしかありません[^1]。
 
+- [(x)dvipdfmx aliases for issue #1 · davidcarlisle/geometry@1598677 · GitHub](https://github.com/davidcarlisle/geometry/commit/1598677bcb905344e14d196fad15eac50e1ae92b)
 - [LaTeX 覚え書き・その２](http://blog.ousaan.com/index.cgi/links/20140904.html)
 
 ### geometry パッケージの縦組み対応 {#j41bdb1d}
@@ -98,4 +99,4 @@ LuaTeX-ja 20150420.0 リリースにより，これも TeX Live, W32TeX に含�
 
 - [LaTeX 覚え書き・その４](http://blog.ousaan.com/index.cgi/links/20140910.html)（geometry パッケージを使わずに，複数のパラメータを整合性を保って設定する例）
 
-[^1]: 当然ですが，graphicx や color，xcolor には dvipdfmx オプションがありますので，これらには正しく dvipdfmx を指定しましょう。[古い情報](</古い情報/#g29113d8>)も参考に。
+[^1]: geometry v5.7 以前は dvipdfmx オプションがありませんが graphicx や color，xcolor などのパッケージには dvipdfmx オプションがありますので，これらの dvipdfmx オプションに対応したパッケージについては dvipdfmx を指定しましょう。[古い情報](</古い情報/#g29113d8>)も参考に。
