@@ -97,7 +97,6 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
@@ -194,7 +193,6 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
@@ -283,7 +281,6 @@ pdfLaTeX ではなく upLaTeX + dvipdfmx で処理をする場合は latexmk を
   \\hypersetup{colorlinks=true}
 \\else
   \\ifdefined\\XeTeXversion
-      \\XeTeXgenerateactualtext=1
       \\hypersetup{colorlinks=true}
   \\else
     \\ifdefined\\directlua
