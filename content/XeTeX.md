@@ -133,14 +133,16 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 
 ## 注意点 {#v6fc9cef}
 
-### \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
+### XeTeX 0.99998 以前のバージョンで \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
 
-この場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
+XeTeX 0.99995 以降を使用している場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
 
 - [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
 - [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
 
 また，[XeTeX mailing list](http://tug.org/pipermail/xetex/2017-June/027147.html) に出ているパッチで回避できるようです。([r46025](http://www.tug.org/svn/texlive?view=revision&revision=46025))
+
+この問題は XeTeX 0.99999 で修正されました。XeTeX 0.99999 は TeX Live 2018 または W32TeX \[2018/02/03\] に収録されています。
 
 ## インストール {#p3eca5bb}
 
@@ -229,18 +231,20 @@ nkf によって 2 バイト仮名に変換されたりするからです。
 
 #### TeX Live {#r40835b3}
 
-[MacTeX &amp; TeX Live](</TeX Live/Mac/#mactex>) をインストールすると XeTeX がインストールされます．
+TeX Live をインストールすると XeTeX がインストールされます．
 
 ## 使い方 {#k7f2c3d5}
 
 ### \XeTeXgenerateactualtext=1 {#d17aa157}
 
-XeTeX でタイプセットして出力された PDF ファイルの検索やコピー &amp; ペーストがうまく動作しない場合は \XeTeXgenerateactualtext=1 を記述します。
+XeTeX 0.99995 以降かつ XeTeX 0.99998 以前のバージョンでタイプセットして出力された PDF ファイルの検索やコピー &amp; ペーストがうまく動作しない場合は \XeTeXgenerateactualtext=1 を記述します。
 
 \XeTeXgenerateactualtext は XeTeX 0.99995 で追加されました。
 TeX Live 2016 以降または W32TeX \[2016/02/29\] 以降で使用できます。
 
 - [http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=XeTeXgenerateactualtext)
+
+PDF ファイルの検索やコピー &amp; ペーストがうまく動作しない問題は XeTeX 0.99999 で修正されました。XeTeX 0.99999 は TeX Live 2018 または W32TeX \[2018/02/03\] に収録されています。
 
 ### 入力用エンコーディング {#dd951bae}
 
