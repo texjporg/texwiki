@@ -17,13 +17,13 @@ pukiwiki: "TeX Live/Mac"
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
 
+- TeX Live 公式のインストーラを使用する
+    - install-tl を入手してターミナルから実行
 - TeX Live をベースにした macOS 専用の TeX ディストリビューションを入手する
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。
     - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。
         - MacTeX と BasicTeX の入手先：[http://www.tug.org/mactex/](http://www.tug.org/mactex/)
     - 小川版 [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)：TeX Live のサブセット (scheme-small) に日本語パッケージが予め追加されています。
-- TeX Live 公式のインストーラを使用する
-    - install-tl を入手してターミナルから実行
 - パッケージ管理システムを利用する
     - Homebrew 向けパッケージ
     - MacPorts 向けパッケージ
@@ -376,17 +376,6 @@ macOS High Sierra / macOS Sierra / OS X El Capitan では OS X Yosemite 以前�
 設定は，多少面倒です。
 [PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
-
-### Ghostscript で日本語を扱えるようにする設定（ReadMe-ja.pdf より） {#mc6bf937}
-
-cjk-gs-integrate.pl のオプションは，バージョン 20151002.0 以降では --link-texmflocal から --link-texmf へ変更されていますので注意してください。
-
-```
-$ sudo mkdir -p /usr/local/texlive/texmf-local/fonts/truetype
-$ cd $(dirname $(gs --help | grep "Resource/Font" | awk '{print $1}'))
-$ sudo zsh -c "rm ./CIDFont/*(@) ./CIDFSubst/*(@)"
-$ sudo cjk-gs-integrate --link-texmf --force
-```
 
 ### updmap(-sys) の使用に関する注意点 {#qdce07c2}
 
