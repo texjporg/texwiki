@@ -209,7 +209,7 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 
 ### 漢字入出力対応状況 {#qc9f2e7d}
 
-コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2017/6/24 現在）．
+コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2018/3/26 現在）．
 
 <table>
 <thead>
@@ -217,8 +217,8 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 <tr><th> キーボード   </th><th> パイプ    </th><th> スクリーン  </th><th> パイプ      </th><th>(註)</th></tr>
 </thead>
 <tbody>
-<tr><td> p(la)tex.exe </td><td> (無視される)      </td><td> CP932          </td><td> CP932  </td><td> Shift_JIS </td><td>CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
-<tr><td> p(la)tex.exe -kanji=utf8 </td><td> (無視される)  </td><td> CP932          </td><td> CP932  </td><td> UTF-8 </td><td> CP932(UTF-8) </td><td> UTF-8 </td><td>(A)</td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> p(la)tex.exe -kanji=sjis </td><td> (無視される)      </td><td> CP932          </td><td> CP932  </td><td> Shift_JIS </td><td>CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> p(la)tex.exe<br>p(la)tex.exe -kanji=utf8 </td><td> (無視される)  </td><td> CP932          </td><td> CP932  </td><td> UTF-8 </td><td> CP932(UTF-8) </td><td> UTF-8 </td><td>(A)</td><td> CP932 </td><td> Shift_JIS </td></tr>
 <tr><td> up(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td>(A)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td> xe(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode(*) </td><td> UTF-8 </td><td>(C)</td><td> Unicode </td><td> UTF-8 </td></tr>
 <tr><td rowspan="2"> dvipdfmx.exe  </td><td> (空)          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td></td><td> CP932 </td><td> Shift_JIS </td></tr>
