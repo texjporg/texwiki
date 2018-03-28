@@ -197,8 +197,6 @@ macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじ
 $ sudo tlmgr update --self --all
 ```
 
-[MacTeX](/MacTeX/) を使用している場合は MacTeX 付属の [TeX Live Utility](</TeX Live Utility/>) という GUI ユーティリティを使うことで TeX Live をアップデートすることもできます。
-
 次に，[TLContrib](http://contrib.texlive.info/) から cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールします。
 
 cjk-gs-integrate を --link-texmf --cleanup オプション付きで実行します。
