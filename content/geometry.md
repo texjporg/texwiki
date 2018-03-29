@@ -13,6 +13,7 @@ geometry は，ページのレイアウトを柔軟に変更することがで�
 梅木さんによって作られました。
 
 - [https://www.ctan.org/pkg/geometry](https://www.ctan.org/pkg/geometry)
+- [https://github.com/davidcarlisle/geometry](https://github.com/davidcarlisle/geometry)
 
 TeX Live, W32TeX に含まれています。
 
