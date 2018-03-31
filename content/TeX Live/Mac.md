@@ -178,15 +178,15 @@ $ sudo bash -c "CC=: tlmgr update --self"
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
     - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](https://www.muskmelon.jp/?p=1169)
 
-#### macOS Sierra / OS X El Capitan での TeX Live のセットアップ {#l8c867e9}
+#### macOS Sierra / OS X El Capitan に付属するヒラギノフォントのセットアップ {#l8c867e9}
 
-macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじめに
+macOS Sierra / OS X El Capitan に付属するヒラギノフォントを TeX Live で利用したい場合は，はじめに
 
 - macOS Sierra または OS X El Capitan へのアップグレード
 - TeX Live 2018（または MacTeX-2018 / BasicTeX-2018）のインストール
 
 を完了させてください（どちらを先に行ってもかまいません；TeX Live や MacTeX / BasicTeX のインストールは，macOS Sierra / OS X El Capitan かどうかにかかわらず従来と同じ方法で可能です[^1]）。
-そのうえで，macOS Sierra / OS X El Capitan 対応のセットアップ手順は以下のとおりです：
+そのうえで，macOS Sierra / OS X El Capitan に付属するヒラギノフォントのセットアップ手順は以下のとおりです：
 
 まず，TeX Live を最新の状態に更新します。
 ターミナルから [tlmgr](/tlmgr/) を実行します。
