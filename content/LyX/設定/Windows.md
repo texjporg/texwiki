@@ -144,7 +144,7 @@ pukiwiki: "LyX/設定/Windows"
 > 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
 > <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (LuaTeX)　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[PDF (LuaTeX)　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
-> 変換子(O):　　　<ins>lualatex -cmdx -synctex=1</ins><br>
+> 変換子(O):　　　<ins>lualatex -synctex=1</ins><br>
 > 追加フラグ(X):　<ins>latex=lualatex</ins><br>
 
 \[修正(M)\] &gt; \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
