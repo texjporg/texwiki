@@ -192,7 +192,7 @@ Latexmk で PDF ファイルを作成します．
 　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$lualatex=q/lualatex -cmdx %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$lualatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -322,7 +322,7 @@ lualatexS.bat を作成します．
 
 ```
 @echo off
-lualatex -cmdx -synctex=1 %1 && ^
+lualatex -synctex=1 %1 && ^
 if %ERRORLEVEL% equ 0 (
 tasklist /fi "IMAGENAME eq SumatraPDF.exe" /nh | ^
 findstr "SumatraPDF.exe" > nul || ^
@@ -443,7 +443,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
-lualatex -cmdx -synctex=1 %1 && ^
+lualatex -synctex=1 %1 && ^
 powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-String "^Pages:"); $page = (-split $pages)[1]; pdfopen --file $pdf --page $page}"
 ```
 
