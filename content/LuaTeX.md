@@ -12,7 +12,9 @@ pukiwiki: "LuaTeX"
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
 が使える TeX です．派生版として LuaJITTeX があります．
 
-LuaTeX は 2016 年に 1.0.0 がリリースされました。TeX Live 2017 には 1.0.4 が収録されています。
+LuaTeX は 2016 年に 1.0.0 がリリースされました。
+TeX Live 2018 には 1.07.0 が，
+TeX Live 2017 には 1.0.4 が収録されています。
 TeX Live 2016 は beta-0.95.0，TeX Live 2015 は beta-0.80.0 でしたが，beta-0.80.0 から beta-0.95.0 に至る間に多くの仕様変更がありました。
 [pdfTeX](/pdfTeX/) の後継として期待されています。
 
