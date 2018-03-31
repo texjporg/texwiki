@@ -138,7 +138,7 @@ TeXstudio, Texmaker, TeXlipse, Emacs の TeX mode, AUCTeX (TeX-interactive-mode 
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
   $pdflatex = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
-  $lualatex = 'lualatex -cmdx %O -synctex=1 -interaction=nonstopmode %S';
+  $lualatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $xelatex = 'xelatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
@@ -222,7 +222,7 @@ TeXworks, TeXShop, AUCTeX (TeX-interactive-mode が ON の場合), YaTeX など�
 if ($^O eq 'MSWin32') {
   $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S';
   $pdflatex = 'pdflatex %O -synctex=1 %S';
-  $lualatex = 'lualatex -cmdx %O -synctex=1 %S';
+  $lualatex = 'lualatex %O -synctex=1 %S';
   $xelatex = 'xelatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
   $bibtex = 'upbibtex %O %B';
