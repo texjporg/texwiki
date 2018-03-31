@@ -26,13 +26,13 @@ pukiwiki: "Ghostscript/macOS"
 macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>macOS Sierra / OS X El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
-- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
-- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](http://www.muskmelon.jp/?p=1177)
+- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
+- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1177)
 
 なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
-- [OTC から OTF を抽出](http://www.muskmelon.jp/?p=1194)
-- [OTC から OTF を抽出（自動化）](http://www.muskmelon.jp/?p=1204)
+- [OTC から OTF を抽出](https://www.muskmelon.jp/?p=1194)
+- [OTC から OTF を抽出（自動化）](https://www.muskmelon.jp/?p=1204)
 
 ### Homebrew で MacTeX/Ghostscript を導入する場合の注意 {#d72e7856}
 
@@ -44,10 +44,9 @@ Homebrew で MacTeX/Ghostscript を導入する場合は MacTeX に付属する 
 ### 配布先 {#see6fdd7}
 
 - [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
-- [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75)
-    - [Ghostscript | 検索結果:  | マスクメロン](http://www.muskmelon.jp/?s=Ghostscript)
+- [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)
+    - [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
-- [mactexaddons](https://github.com/munepi/mactexaddons/releases)
 - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
