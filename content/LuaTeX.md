@@ -53,6 +53,12 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 
 - [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
 
+#### LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプションを使用してバックスラッシュを使用したフルパス指定するとコンパイルできない {#c58950f3}
+
+LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプションを使用してバックスラッシュを使用したフルパス指定するとコンパイルできません。
+
+&#x2d;cmdx オプションを外すあるいは lualatex -cmdx "C:/foo/bar.tex" のようにスラッシュを使用したフルパス指定するとコンパイルできます。
+
 ### 関連リンク {#cdd9fc14}
 
 - \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
