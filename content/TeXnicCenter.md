@@ -460,7 +460,7 @@ Path to the (La)TeX<br>
 <ins>C:\texlive\2017\bin\win32\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-cmdx -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
@@ -501,7 +501,7 @@ Path to the (La)TeX<br>
 <ins>C:\texlive\2017\bin\win32\luajitlatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
-<ins>-cmdx -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
+<ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
 
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
