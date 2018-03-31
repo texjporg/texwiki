@@ -36,7 +36,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 TeX Live 2017 以降は x86_64-darwin バイナリは Apple セキュリティアップデートが提供されている OS のみサポートされることになりました。
 Apple セキュリティアップデートが提供されないレガシーな OS では x86_64-darwinlegacy バイナリを使用します。
-TeX Live 2016 まで存在していた universal-darwin バイナリは TeX Live 2017 で削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました。
+[TeX Live 2016 まで存在していた universal-darwin バイナリは TeX Live 2017 で削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871)。
 [TeX Live 2017 の i386-darwin バイナリと powerpc-darwin バイナリは TeX Live 2018 で削除されました](http://www.tug.org/svn/texlive?view=revision&revision=47075)。
 
 MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
@@ -152,7 +152,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 
 2015年10月3日（日本時間）に，macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps (旧名:jfontmaps) &amp; cjk-gs-integrate 20151002.0 が TeX Live 2015 に取り込まれました。
 そして ptex-fontmaps &amp; cjk-gs-integrate 20180306.0 で [macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps が削除され](http://www.tug.org/svn/texlive?view=revision&revision=46861)，
-[cjk-gs-integrate で OS X 10.11 El Capitan に付属するヒラギノフォントを扱う場合は外部のデータベースを取得して利用する方法に変更されました](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/cjk-gs-integrate/cjk-gs-integrate.pl?r1=46862&r2=46861&pathrev=46862)。
+[cjk-gs-integrate で OS X 10.11 El Capitan 以降に付属するヒラギノフォントを扱う場合は外部のデータベースを取得して利用する方法に変更されました](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/cjk-gs-integrate/cjk-gs-integrate.pl?r1=46862&r2=46861&pathrev=46862)。
 そのため TeX Live 2018 以降は macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live ではサポートされなくなり，[TLContrib](http://contrib.texlive.info/) から cjk-gs-integrate-macos, ptex-fontmaps-macos を別途インストールする必要があります。
 <strong>pLaTeX / upLaTeX + dvipdfmx でヒラギノフォントを埋め込みたい場合</strong>については macOS Sierra / OS X El Capitan へのアップグレードが可能です。
 
@@ -164,12 +164,12 @@ $ sudo bash -c "CC=: tlmgr update --self"
 この情報は macOS Sierra / OS X El Capitan への積極的なアップデートをすすめるものではありません。
 ただし，OS X Yosemite 以前には既知の脆弱性があり，その対策は macOS Sierra / OS X El Capitan へのアップデートでしか提供されていないため，macOS Sierra / OS X El Capitan へのアップデートを見合わせるということは TeX や DTP のためにセキュリティ対策を犠牲にしていると心得る必要があります。
 
-- TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，OS X El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
+- TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，macOS Sierra / OS X El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
     したがって，[LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを使うためには2015年10月8日にリリースされた LuaTeX beta-0.81.0 に更新する必要があります（ただし，luaotfload パッケージの対応が未完了）。
     なお，IPA(ex) フォントを利用するのであれば無理に LuaTeX を更新する必要はありません。
 
 - DTP で OS X El Capitan（10.11、10.11.1）搭載のヒラギノフォントを利用する場合，以前のヒラギノフォントとの互換性の問題により「Adobe InDesign CC/CS や Illustrator CC/CS などで文字間のカーニングをオプティカルに設定していると組体裁が崩れる」という情報もあります。
-    （多くの場合，ヒラギノフォントを OS X にたよらず購入していることが想定されますが…）
+    （多くの場合，ヒラギノフォントを macOS にたよらず購入していることが想定されますが…）
     - 参考：[OS X El Capitan（10.11、10.11.1）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan_1011_10111.html)
     - 追記 (2015-12-11)：OS X El Capitan 10.11.2 でついに深刻な問題が解消されました。[OS X El Capitan（10.11.2）搭載のヒラギノフォントと弊社製品版フォントについて](http://www.screen.co.jp/ga_product/sento/support/otf_osx_El_Capitan.html)
     - 追記 (2016-12-02)：macOS Sierra と OS X El Capitan に搭載のヒラギノフォントは同じ仕様です。[Sierra 時代の TeX Live 環境](http://doratex.hatenablog.jp/entry/20161202/1480665692)
@@ -179,8 +179,6 @@ $ sudo bash -c "CC=: tlmgr update --self"
     - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](https://www.muskmelon.jp/?p=1169)
 
 #### macOS Sierra / OS X El Capitan での TeX Live のセットアップ {#l8c867e9}
-
-<strong>注意</strong>：奥村先生の「［改訂第6版］LaTeX2e 美文書作成入門」のインストーラから TeX Live 2013 をインストールした場合については，[サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)の[Mac: OS X El Capitanに更新する際のご注意](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/#elcapitan)をご覧ください。
 
 macOS Sierra / OS X El Capitan で TeX Live を利用したい場合は，はじめに
 
@@ -321,11 +319,11 @@ $ sudo tlmgr install collection-langjapanese
 
 - [TeXLivePackages – MacPorts](https://trac.macports.org/wiki/TeXLivePackages)
 - [https://www.macports.org/ports.php?by=name&substr=texlive](https://www.macports.org/ports.php?by=name&substr=texlive)
-- [https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile)
-- [https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile)
-- [https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile)
-- [https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile)
 - [https://github.com/macports/macports-ports/tree/master/tex](https://github.com/macports/macports-ports/tree/master/tex)
+    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile)
+    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile)
+    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile)
+    - [https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile)
 
 MacPorts 用に TeX Live/MacPorts というパッケージが提供されています。
 TeX Live/MacPorts をフルインストールする場合は
