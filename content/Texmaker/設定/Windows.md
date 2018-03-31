@@ -52,9 +52,9 @@ XeLaTeX
 LuaLaTeX
 : &nbsp;
 
-: lualatex -cmdx -synctex=1 -interaction=nonstopmode %.tex
+: lualatex -synctex=1 -interaction=nonstopmode %.tex
 
-: luajitlatex -cmdx -synctex=1 -interaction=nonstopmode %.tex
+: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
 
 Latexmk
 : &nbsp;
@@ -300,7 +300,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
-lualatex -cmdx -synctex=1 -interaction=nonstopmode %1 && ^
+lualatex -synctex=1 -interaction=nonstopmode %1 && ^
 synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
@@ -330,7 +330,7 @@ tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
 findstr "AcroRd32.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
-luajitlatex -cmdx -synctex=1 -interaction=nonstopmode %1 && ^
+luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
 synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
 ```
 
