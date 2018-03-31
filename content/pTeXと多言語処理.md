@@ -67,14 +67,14 @@ input method については，[Google](https://www.google.co.jp/) などで探�
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
-[Atom](/Atom/)，
 [Visual Studio Code](</Visual Studio Code/>)，
+[Atom](/Atom/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降などがあります。
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。
 起動の速さを重視する方はメモ帳がおすすめです。
 
-macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/)，[Atom](/Atom/)，[Visual Studio Code](</Visual Studio Code/>) が定番だと思います。
+macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/)，[Visual Studio Code](</Visual Studio Code/>)，[Atom](/Atom/) が定番だと思います。
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
