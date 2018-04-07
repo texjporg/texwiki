@@ -37,8 +37,6 @@ X Window System
 
 ### ChangeLog {#p61511cc}
 
-- [SourceForge.net Repository - \[xdvi\] Contents of /xdvik/texk/xdvik/CHANGES](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/CHANGES?view=markup)
-- [https://sourceforge.net/p/xdvi/activity/](https://sourceforge.net/p/xdvi/activity/)
 - \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
     - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
@@ -148,7 +146,7 @@ $ pdflatex -synctex=1 hoge
 
 #### コマンドラインオプション {#ce42827f}
 
-- [http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup](http://xdvi.cvs.sourceforge.net/viewvc/xdvi/xdvik/texk/xdvik/main.c?view=markup)
+- [http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup)
 
 ### SyncTeX {#g4e4f193}
 
