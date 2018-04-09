@@ -190,6 +190,10 @@ Mac版の場合，以下の出力の場合は Ghostscript を経由せず，こ�
 - SVG 出力の場合
 - PNG / JPEG / GIF / TIFF / BMP 出力で変換処理が「速度優先モード」（環境設定→変換ツール）の場合
 
+どのような場合にどのような変換経路を通るかは，次の図にまとめられています。
+
+- [Mac版の変換経路図(GitHub)](https://github.com/doraTeX/TeX2img/blob/master/info/conversion.pdf)
+
 <!-- ** Mac 版で EMF 出力すると文字のアウトラインがギザギザしている [#k308980f] -->
 <!--  -->
 <!-- Mac 版では，EMF 画像の出力のために [[pstoedit]]（を高画質になるよう独自改修したバージョン）を内蔵していますが，これで生成される EMF は，ベジエ曲線を用いることができず，細かい折れ線の集合体になってしまいます。 -->
@@ -237,6 +241,21 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 \usepackage{amsmath,amssymb}
 \usepackage[dvipdfmx]{graphicx,color}
 \usepackage[dvipdfm,papersize={210mm,100cm},margin=5mm]{geometry}
+\pagestyle{empty}
+```
+
+### 画像化すると右端が切れる {#ya767e23}
+
+ディスプレイ数式やTikZ図版などの横幅が長すぎて，用紙サイズの横幅に収まらない場合，右端が切れてしまいます。
+前項と同様に，[geometry](/geometry/) パッケージを利用して，プリアンブルで用紙サイズの横幅を十分大きく指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52463.html)点に注意してください）。
+
+```
+% LaTeX compiler: platex
+% DVI driver: dvipdfmx 
+\documentclass[fleqn]{jsarticle}
+\usepackage{amsmath,amssymb}
+\usepackage[dvipdfmx]{graphicx,color}
+\usepackage[dvipdfm,papersize={50cm,50cm},margin=5mm]{geometry}
 \pagestyle{empty}
 ```
 
