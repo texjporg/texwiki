@@ -110,7 +110,7 @@ EPS にプレビューを付けておけば，配置したときにプレビュ�
 箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には次のようにします。
 ただし，Illustrator のフォントリストにたくさんのフォントが追加されてしまいますのでご注意ください。
 
-あらかじめ $TEXMF\fonts\type1\ フォルダー（例えば C:\texlive\2017\texmf-dist\fonts\type1\）をフォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
+あらかじめ $TEXMF\fonts\type1\ フォルダー（例えば C:\texlive\2018\texmf-dist\fonts\type1\）をフォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
 こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
