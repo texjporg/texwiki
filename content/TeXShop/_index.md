@@ -49,5 +49,4 @@ GPLv2
 
 ### 関連リンク {#qb1b8010}
 
-- MacWiki:TeXShop
 - [Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
