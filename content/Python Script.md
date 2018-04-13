@@ -162,7 +162,7 @@ if __name__ == '__main__':
 
 ***
 
-### LuaJITLaTeX.py {#w98c875c}
+### LuajitLaTeX.py {#w98c875c}
 
 ***
 
