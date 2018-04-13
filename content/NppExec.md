@@ -337,7 +337,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>LuaJITLaTeX</ins><br>
+　　　　　　Name :　<ins>LuajitLaTeX</ins><br>
 　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
