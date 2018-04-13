@@ -3,7 +3,7 @@ title: "TeX Wiki"
 url: "/"
 date: 2014-07-10T02:13:46Z
 description: "TeX, LaTeX, PDF, PostScript などに関する読者参加型ページです．"
-keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "upLaTeX", "upLaTeX2e", "pdfTeX", "pdfLaTeX", "LuaTeX", "LuaLaTeX", "LuaJITTeX", "LuaJITLaTeX", "XeTeX", "XeLaTeX", "DVI", "PostScript", "PDF"]
+keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "upLaTeX", "upLaTeX2e", "pdfTeX", "pdfLaTeX", "LuaTeX", "LuaLaTeX", "LuajitTeX", "LuajitLaTeX", "XeTeX", "XeLaTeX", "DVI", "PostScript", "PDF"]
 pukiwiki: "FrontPage"
 ---
 
@@ -92,7 +92,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [e-TeX](/e-TeX/)，[e-pTeX](/e-pTeX/)，[e-upTeX](/upTeX,upLaTeX/)，[pTeX-ng](/pTeX-ng/)
 - [pdfTeX](/pdfTeX/)
 - [XeTeX](/XeTeX/)
-- [LuaTeX](/LuaTeX/)，LuaJITTeX
+- [LuaTeX](/LuaTeX/)，[LuajitTeX](/LuajitTeX/)
 - マクロパッケージ：[LaTeX](/LaTeX/)，[ConTeXt](/ConTeXt/)
 
 <!-- *** TeX 処理系を変更する際にはソースにも変更が必要となることがあります．例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります． [#j08ab319] -->
