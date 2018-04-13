@@ -19,7 +19,7 @@ TeX の超巨大な集大成ともいえるもので，現在では国際的に�
 - [The tex-live Archives](http://tug.org/pipermail/tex-live/)
 
 TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました．
-TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), LuaJITTeX が収録されています．
+TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています．
 
 ***
 
