@@ -98,6 +98,8 @@ GPLv3, GPLv2
 #### ChangeLog <a id="changelog"></a> {#h5bae295}
 
 - [https://serveur-svn.lri.fr/svn/modhel/luatex/](https://serveur-svn.lri.fr/svn/modhel/luatex/)
+- [https://github.com/tex-mirror/luatex](https://github.com/tex-mirror/luatex)
+    - [https://github.com/tex-mirror/luatex/commits/trunk](https://github.com/tex-mirror/luatex/commits/trunk)
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
