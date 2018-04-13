@@ -20,7 +20,7 @@ TeX Live をフルインストールし，オプションでいくつかの追�
     - [MacTeX Screen Saver](http://www.tug.org/tug2003/mactex/screensaver.html)
         - [screen image](http://www.tug.org/tug2003/mactex/screen_images/)
 
-MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), LuaJITTeX が収録されています。
+MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
 
 ***
 
