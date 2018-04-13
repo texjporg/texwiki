@@ -608,7 +608,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
@@ -643,7 +643,7 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
@@ -680,7 +680,7 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuaJITLaTeX に変更</td></tr>
+> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
