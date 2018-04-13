@@ -341,7 +341,7 @@ lualatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-#### LuaJITLaTeXA {#ie839257}
+#### LuajitLaTeXA {#ie839257}
 
 luajitlatexA-nonstopmode.bat を作成します．
 
