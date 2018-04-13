@@ -94,7 +94,7 @@ OpenType の機能を通じて，高度な組版機能と様々な複雑な用�
 #### LuaTeX {#j0605b0c}
 
 - [LuaTeX](/LuaTeX/)
-- LuaJITTeX
+- [LuajitTeX](/LuajitTeX/)
 
 ## チュートリアル {#q0b4ff33}
 
