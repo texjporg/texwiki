@@ -31,7 +31,7 @@ pTeX 上で多言語混在文書を扱う方法をまとめたものとして，
 ちなみに，upTeX, pTeX でなくても良い場合は，
 
 1. [LuaTeX](/LuaTeX/)
-1. LuaJITTeX
+1. [LuajitTeX](/LuajitTeX/)
 1. [XeTeX](/XeTeX/)
 
 によるアプローチなどが考えられます。
