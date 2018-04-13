@@ -283,7 +283,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
     lualatex hoge.tex
     ```
 
-- LuaJITLaTeX の場合
+- LuajitLaTeX の場合
 
     ```
     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
