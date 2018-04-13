@@ -94,7 +94,7 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaJITLaTeX, SumatraPDF を使用する場合 {#w61e8fca}
+#### LuajitLaTeX, SumatraPDF を使用する場合 {#w61e8fca}
 
 ***
 
@@ -209,7 +209,7 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaJITLaTeX, open を使用する場合 {#ha729285}
+#### LuajitLaTeX, open を使用する場合 {#ha729285}
 
 ***
 
@@ -319,7 +319,7 @@ let g:quickrun_config = {
 
 ***
 
-#### LuaJITLaTeX, xdg-open を使用する場合 {#m611735a}
+#### LuajitLaTeX, xdg-open を使用する場合 {#m611735a}
 
 ***
 
