@@ -66,8 +66,8 @@ pTeX, pLaTeX
 現在は pTeX, pLaTeX を内部 Unicode 化した
 [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。
 
-最近では，Unicode に完全対応した [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/) というエンジンが開発されています。
-これらのエンジンの上で動く LuaLaTeX, LuaJITLaTeX, XeLaTeX を使っても日本語を出力できます。
+最近では，Unicode に完全対応した [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/) というエンジンが開発されています。
+これらのエンジンの上で動く LuaLaTeX, LuajitLaTeX, XeLaTeX を使っても日本語を出力できます。
 
 ### LaTeX のバージョン {#q9d2d675}
 
@@ -86,7 +86,7 @@ LaTeX 2ε を “LaTeX2e” と書くことになっています。
 まずは次の本を挙げておきます。
 
 - [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』（[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,456 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
-    - [TeX Live](</TeX Live/>) 2016 を収録した
+    - 第2刷は [TeX Live](</TeX Live/>) 2017，第1刷は [TeX Live](</TeX Live/>) 2016 を収録した
         DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2017/978-4-7741-8764-8)もあります。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
@@ -94,7 +94,6 @@ LaTeX 2ε を “LaTeX2e” と書くことになっています。
 <strong> <em>注意</em> </strong>：
 
 LaTeX には大きく分けて LaTeX2e と LaTeX 2.09 という二つの異なるバージョンがあります。
-図書館には今でも LaTeX 2.09 時代の解説書が並んでいたりするかもしれません。
 <strong>LaTeX2e と LaTeX 2.09 は別物</strong>と考えて良いくらい異なるものですので，注意してください。
 
 文書ソースを \documentclass で始めるのが
@@ -148,4 +147,4 @@ LaTeX の使い方を簡単に解説しています。
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 - [発展編：最近の LaTeX の動向](</LaTeX入門/発展編/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](http://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](https://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
