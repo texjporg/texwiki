@@ -35,7 +35,7 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 
 対処法は，大別すると次の3通りになります．
 
-1. [LuaTeX](/LuaTeX/), LuaJITTeX, [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など，Unicode 化された TeX を利用する．
+1. [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/), [upTeX](/upTeX,upLaTeX/) など，Unicode 化された TeX を利用する．
 1. 丸附き数字などの字形をもったフォントを利用：
     - ITC Zapf Dingbats フォント（“{\usefont{U}{pzd}{m}{n} \symbol{"AC}}” など）
     - pifont パッケージ（“\ding{"AC}”，“\Pisymbol{pzd}{"AC}” など）
