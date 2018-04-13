@@ -10,7 +10,7 @@ pukiwiki: "LuaTeX"
 ## [LuaTeX](http://www.luatex.org/) {#af5563d6}
 
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
-が使える TeX です．派生版として LuaJITTeX があります．
+が使える TeX です．派生版として [LuajitTeX](/LuajitTeX/) があります．
 
 LuaTeX は 2016 年に 1.0.0 がリリースされました。
 TeX Live 2018 には 1.07.0 が，
@@ -45,9 +45,9 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 - lualatex で不具合 [forum:1681](https://okumuralab.org/tex/mod/forum/discuss.php?d=1681)
 - [LuaTeX の “pdfTeX のバージョン”がアレな件](http://d.hatena.ne.jp/zrbabbler/20150720/1437366487)，[補足](http://d.hatena.ne.jp/zrbabbler/20150722/1437549646)
 
-#### W32TeX における LuaTeX, LuaJITTEX と日本語ファイル名 {#r425bd72}
+#### W32TeX における LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
 
-[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuaJITTEX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
+[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuajitTeX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
 
 ### 不具合 {#v600e2c1}
 
@@ -89,16 +89,15 @@ LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプシ�
 - [lualatex · GitHub](https://github.com/lualatex)
 - [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
 - [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
-- [The dev-luatex Archives](http://www.ntg.nl/pipermail/dev-luatex/)
+- [The dev-luatex Archives](https://mailman.ntg.nl/pipermail/dev-luatex/)
 
 #### License {#u58971dd}
 
-[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
+GPLv3, GPLv2
 
-#### ChangeLog {#h5bae295}
+#### ChangeLog <a id="changelog"></a> {#h5bae295}
 
-- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
+- [https://serveur-svn.lri.fr/svn/modhel/luatex/](https://serveur-svn.lri.fr/svn/modhel/luatex/)
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
