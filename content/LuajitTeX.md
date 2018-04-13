@@ -7,9 +7,9 @@ pukiwiki: "LuajitTeX"
 
 # LuajitTeX
 
-## [LuaJITTeX](https://foundry.supelec.fr/projects/luajittex/) {#y53144a3}
+## LuajitTeX {#y53144a3}
 
-LuaJITTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を
+LuajitTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.org/) を
 [LuaJIT](http://luajit.org/) に置き換えたものです．
 JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compiler，つまりその場で機械語へのコンパイルを行うという意味であり，これによりインタプリタ方式の通常の Lua よりも高速な動作が期待できます．
 
@@ -24,7 +24,7 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 ### インストール {#e0acc4f5}
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
-[LuaTeX-ja](/LuaTeX-ja/) は LuaJITTeX にも対応しています．
+[LuaTeX-ja](/LuaTeX-ja/) は LuajitTeX にも対応しています．
 
 #### TeX Live の場合 {#t625c951}
 
@@ -35,7 +35,7 @@ TeX Live をインストールした状態では、luajittex は使えますが�
 1. fmtutil-sys --byfmt luajitlatex を実行。
 1. luajittex --fmt=luajitlatex.fmt foo.tex で latex として使用可。
 
-Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Unix 系 OS（Mac OS X を含む）の場合は、~/.bashrc 等に、
+Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Unix 系 OS（macOS を含む）の場合は、~/.bashrc 等に、
 
 ```
    alias luajitlatex='luajittex --fmt=luajitlatex.fmt'
@@ -47,16 +47,16 @@ Windows の場合は、この設定を行うことで luajitlatex.exe が使用�
 
 基本的には通常の LuaTeX と同様に使うことができます．
 
-LuaJITTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
+LuajitTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
 最新の場合 (バージョン 1.0.3 以降) には LuaTeX でも使えます． LuaTeX では ffi が大域的なので
 
 ```
 local ffi = require("ffi")
 ```
 
-は不要です． LuaTeX や LuaJITTeX には secure mode は無いと思っておいたほうが
+は不要です． LuaTeX や LuajitTeX には secure mode は無いと思っておいたほうが
 良いそうですが，FFI は特に簡単に危ないことができるので，最新の場合には
-LuaTeX でも LuaJITTeX でも
+LuaTeX でも LuajitTeX でも
 
 ```
 --shell-escape
@@ -66,7 +66,7 @@ LuaTeX でも LuaJITTeX でも
 
 #### Windows {#b1c497b6}
 
-LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能です．
+LuajitTeX は MessageBox などの Windows API を呼び出すことが可能です．
 
 ***
 
@@ -83,7 +83,7 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
     typedef const char*    LPCSTR;
     int MessageBoxA(HWND hWnd, LPCSTR lpText, LPCSTR lpCaption, UINT uType);
   ]]
-  ffi.C.MessageBoxA(nil, "Happy LuaJITLaTeXing!", "LuaJITTeX", 0)
+  ffi.C.MessageBoxA(nil, "Happy LuajitLaTeXing!", "LuajitTeX", 0)
 \end{luacode*}
 \end{document}
 ```
@@ -123,7 +123,7 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
     end
     return buffer
   end
-  user32.MessageBoxW(nil, toWide("Happy LuaJITLaTeXing!"), toWide("LuaJITTeX"), 0)
+  user32.MessageBoxW(nil, toWide("Happy LuajitLaTeXing!"), toWide("LuajitTeX"), 0)
 \end{luacode*}
 \end{document}
 ```
@@ -138,9 +138,8 @@ LuaJITTeX は MessageBox などの Windows API を呼び出すことが可能で
 
 #### License {#a9b7759e}
 
-[GPLv3, GPLv2](https://foundry.supelec.fr/scm/viewvc.php/trunk/COPYING?view=markup&root=luatex)
+GPLv3, GPLv2
 
-#### ChangeLog {#s3ef1408}
+#### ChangeLog <a id="changelog"></a> {#s3ef1408}
 
-- [FusionForge: LuaTeX: SCM Repository](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex)
-    - [log](https://foundry.supelec.fr/scm/viewvc.php/trunk/?root=luatex&view=log)
+[LuaTeX](/LuaTeX/#changelog)
