@@ -64,8 +64,6 @@ TeX や LaTeX に関する本の紹介です．
 - [藤田 眞作さん](http://xymtex.com/)
     [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp)
 
-- [吉永 徹美さん](http://www.h4.dion.ne.jp/~latexcat/)『[LaTeX 入門](http://www.h4.dion.ne.jp/~latexcat/intro/intro-index.html)』
-
 ### 書籍 {#z5fa285b}
 
 [TeX/LaTeX：　文献](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/texbiblio.html) や
