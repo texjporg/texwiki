@@ -110,11 +110,13 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2007</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun4/">『[改訂第4版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">3</td><td style="text-align:center"></td><td>upTeX, upLaTeXが初めて公開される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/tex/">TeX フォーラム</a> が開設される。</td></tr>
+<tr><td style="text-align:center">2008</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>e-pTeX, e-upTeXが初めて公開される。</td></tr>
 <tr><td style="text-align:center">2009</td><td style="text-align:right">8</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf09/">TeX ユーザの集い 2009</a> が開催される。<br>pTeX p3.1.11公開。ASCII社によるpTeXの最終版となる。</td></tr>
 <tr><td style="text-align:center">2010</td><td style="text-align:right">7</td><td style="text-align:center"></td><td>奥村晴彦<a href="http://oku.edu.mie-u.ac.jp/~okumura/bibun5/">『[改訂第5版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">8</td><td style="text-align:center"></td><td>TeX Live 2010リリース。TeX LiveにpTeX, pLaTeXが初めて導入される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf10/">TeX ユーザの集い 2010</a> が開催される。</td></tr>
-<tr><td style="text-align:center">2011</td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf11/">TeX ユーザの集い 2011</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2011</td><td style="text-align:right">3</td><td style="text-align:center"></td><td>LuaTeX-jaの開発が開始される。</td></tr>
+<tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf11/">TeX ユーザの集い 2011</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2012</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>upTeX 1.00リリース。</td></tr>
 <tr><td style="text-align:center"></td><td style="text-align:right">7</td><td style="text-align:center"></td><td>TeX Live 2012リリース。TeX LiveにupTeX, upLaTeXが初めて導入される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://oku.edu.mie-u.ac.jp/texconf12/">TeX ユーザの集い 2012</a> が開催される。</td></tr>
