@@ -21,6 +21,10 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ***
 
+### お知らせ {#jd858e78}
+
+TeX Live 2018 には 1.07.0 が収録されています。LuaJIT 2.1.0-beta3 が収録されています。
+
 ### インストール {#e0acc4f5}
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
@@ -48,7 +52,7 @@ Windows の場合は、この設定を行うことで luajitlatex.exe が使用�
 基本的には通常の LuaTeX と同様に使うことができます．
 
 LuajitTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
-最新の場合 (バージョン 1.0.3 以降) には LuaTeX でも使えます． LuaTeX では ffi が大域的なので
+LuaTeX でも LuaTeX Version 1.0.3 以降は FFI が使えます． LuaTeX では FFI が大域的なので
 
 ```
 local ffi = require("ffi")
