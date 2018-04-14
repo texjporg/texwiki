@@ -22,7 +22,7 @@ pukiwiki: "LaTeX入門"
 
 ## TeX，LaTeX とは？ {#nef9fd41}
 
-[TeX](/TeX/) は [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
+[TeX](/TeX/) は [Donald Ervin Knuth](https://www-cs-faculty.stanford.edu/~knuth/)
 によって開発された，フリーの「<strong>組版システム</strong>」です。
 すなわち，活版印刷のような「文字や図版などの要素を紙面に配置する」という作業をコンピュータで行います。
 
@@ -147,4 +147,4 @@ LaTeX の使い方を簡単に解説しています。
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 - [発展編：最近の LaTeX の動向](</LaTeX入門/発展編/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](https://www.kadokawa.co.jp/) のアスキー・メディアワークス　ブランドカンパニー）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](https://www.kadokawa.co.jp/) のアスキー・メディアワークス）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
