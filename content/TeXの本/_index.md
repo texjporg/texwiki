@@ -58,8 +58,8 @@ TeX や LaTeX に関する本の紹介です．
     - 『[好き好き LaTeX2e ポケットブック編](https://ja.osdn.net/projects/mytexpert/releases/p6829)』
     - 『[LaTeX による論文作成の手引き](https://ja.osdn.net/projects/mytexpert/releases/p6274)』
 
-- [阿部 紀行さん](http://www.math.sci.hokudai.ac.jp/~abenori/)
-    [TeXの話](http://www.math.sci.hokudai.ac.jp/~abenori/tex/)
+- [阿部 紀行さん](http://www.ms.u-tokyo.ac.jp/~abenori/)
+    [TeXの話](http://www.ms.u-tokyo.ac.jp/~abenori/tex/)
 
 - [藤田 眞作さん](http://xymtex.com/)
     [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp)
@@ -77,7 +77,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2017年 {#w6228190}
 
-- [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
     （[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,456 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
     ……
     第2刷は [TeX Live](</TeX Live/>) 2017，第1刷は [TeX Live](</TeX Live/>) 2016 を収録した
@@ -136,10 +136,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2006年 {#za2d8d5e}
 
-- [阿部 紀行](http://www.math.sci.hokudai.ac.jp/~abenori/)
+- [阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](http://www.saiensu.co.jp/?page=book_details&ISBN=ISBN4-7819-1158-7)』
     （[サイエンス社](http://www.saiensu.co.jp/)，2006年，価格 &yen;2,376 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
-    - [「一歩踏み込む LaTeXの基本」サポートページ](http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
+    - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
 - 寒川 光『[LaTeX&amp;PostScriptスーパーユーザのテクニック](http://www.kyoritsu-pub.co.jp/bookdetail/9784320121652)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2006年，税込価格 &yen;3,240，[ISBN 978-4-320-12165-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-12165-2)）
 
