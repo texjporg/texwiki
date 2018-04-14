@@ -14,7 +14,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
 
 <strong>公式サイト</strong>
 
-- [TeX2img](http://www.math.sci.hokudai.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
+- [TeX2img](http://www.ms.u-tokyo.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
 - [TeX2img](http://island.geocities.jp/loveinequality/) (Mac 版)
 
 類似ソフトウェアとして，[LaTeXiT](/LaTeXiT/) があります．
