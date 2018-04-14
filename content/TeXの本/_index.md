@@ -25,7 +25,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://www.facebook.com/watanabe.thor))
     - [myTeXpert プロジェクト日本語トップページ - OSDN](https://ja.osdn.net/projects/mytexpert/)
-        - [FrontPage - MyTeXpert](http://mytexpert.osdn.jp/index.php?FrontPage)
+        - [FrontPage - MyTeXpert](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?FrontPage)
     - 『[好き好き LaTeX2e 初級編](https://ja.osdn.net/projects/mytexpert/releases/p6276)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
             として出版もされています。
@@ -73,6 +73,8 @@ TeX や LaTeX に関する本の紹介です．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
+#### 2018年 {#l525d944}
+
 #### 2017年 {#w6228190}
 
 - [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
@@ -117,7 +119,7 @@ TeX や LaTeX に関する本の紹介です．
 - [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年，定価 &yen;2,376，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
     ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
 
-- [吉永 徹美](http://www.h4.dion.ne.jp/~latexcat/)『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
+- 吉永 徹美『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](http://www.shoeisha.co.jp/)，2008年，販売価格 &yen;3,456，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
     <!-- 「ただし，」以下の文章は，どの本についても言えることなので要らないと思います． -->
@@ -162,7 +164,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - Adobe Systems 著，桑沢清志 訳
     『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](http://asciimw.jp/search/mode/item/cd/A0140010)』
-    （アスキー（現：[株式会社KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス　ブランドカンパニー），2001年，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
+    （アスキー（現：[株式会社KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
 
 #### 2000年 {#o161a1dd}
 
