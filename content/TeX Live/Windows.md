@@ -130,13 +130,6 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [windowsにtexliveをインストール出来ません](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
 - [インストーラーの初期化に失敗しました。](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
-<!-- ** 追加設定 [#t30edd37] -->
-
-<!-- 以下の設定を自動で行う [[abtlinst_patch.exe:http://www.math.sci.hokudai.ac.jp/~abenori/soft/#ABTLINSTPATCH]] があります． -->
-<!-- ダウンロード後ダブルクリックを行えば自動で設定が行われます（TeX Live のインストール後に実行してください）． -->
-
-<!-- 以下は手動で行う方法です． -->
-
 <!-- ***TeXworks の設定 [#wa1faa7d] -->
 
 <!-- LaTeX 用のエディタとして [[TeXworks]] が TeX Live とともにインストールされています． -->
@@ -152,7 +145,6 @@ TeX Live 2017 対応の事例です．
 
 TeX Live 2016 対応の事例です．
 
-- [WindowsユーザのためのpLaTeX環境(TeX Live 2016)のインストール方法](http://www.e.gsic.titech.ac.jp/~wakita/il16/md/texlive-windows.html)
 - [Windows 10 に TeX Live 2016 をインストール](http://www.muskmelon.jp/?p=1533)
 - [ゼロから作るTeX環境 (Windows版)](http://qiita.com/umireon/items/b540dc2c83412fc144d2)
     <!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
