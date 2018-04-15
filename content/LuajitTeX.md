@@ -25,6 +25,14 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 TeX Live 2018 には 1.07.0 が収録されています。LuaJIT 2.1.0-beta3 が収録されています。
 
+### 動作環境 {#p62af3af}
+
+LuajitTeX は Windows, macOS, Linux, \*BSD で動作します。
+
+LuajitTeX は TeX Live がサポートしている全ての環境で提供されているわけではありません。
+
+[sparc-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/sparc-solaris/) と [x86_64-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
+
 ### インストール {#e0acc4f5}
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
@@ -52,7 +60,7 @@ Windows の場合は、この設定を行うことで luajitlatex.exe が使用�
 基本的には通常の LuaTeX と同様に使うことができます．
 
 LuajitTeX では，LuaJIT の追加機能である [FFI library](http://luajit.org/ext_ffi.html) を使って簡単に C の関数を呼び出すことができます．
-LuaTeX でも LuaTeX Version 1.0.3 以降は FFI が使えます． LuaTeX では FFI が大域的なので
+LuaTeX でも Version 1.0.3 以降は FFI が使えます． LuaTeX では FFI が大域的なので
 
 ```
 local ffi = require("ffi")
@@ -72,7 +80,7 @@ LuaTeX でも LuajitTeX でも
 
 LuajitTeX は MessageBox などの Windows API を呼び出すことが可能です．
 
-***
+■ MessageBoxA を使用する場合
 
 ```
 \documentclass{article}
@@ -92,7 +100,7 @@ LuajitTeX は MessageBox などの Windows API を呼び出すことが可能で
 \end{document}
 ```
 
-***
+■ MessageBoxW を使用する場合
 
 ```
 \documentclass{article}
@@ -131,8 +139,6 @@ LuajitTeX は MessageBox などの Windows API を呼び出すことが可能で
 \end{luacode*}
 \end{document}
 ```
-
-***
 
 ### 関連リンク {#s999db35}
 
