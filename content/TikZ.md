@@ -32,8 +32,6 @@ LaTeX の場合について記述します。
 
 - [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
 - [PGF and TikZ -- Graphic systems for TeX](https://sourceforge.net/projects/pgf/)
-    <!-- -http://pgf.cvs.sourceforge.net/viewvc/pgf/?view=tar -->
-
 - [https://ctan.org/pkg/pgf](https://ctan.org/pkg/pgf)
 - CTAN.ring:help/Catalogue/entries/pgf.html
     - [e-TeX](/e-TeX/) 拡張が必要です。 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
