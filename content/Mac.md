@@ -25,7 +25,7 @@ macOS (Mac) に TeX をインストールして使えるようになるまでの
 TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます。
 macOS 上で日本語が利用可能な TeX ディストリビューションは [TeX Live](</TeX Live/>) です。
 [MacTeX](/MacTeX/) や [BasicTeX](/BasicTeX/) というディストリビューションも，この TeX Live をベースとしたものです。
-奥村先生の[［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)には TeX Live 2016 が収録されています。
+奥村先生の[［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)第2刷には TeX Live 2017 が収録されています。
 
 macOS への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
 TUG による公式サイト
@@ -84,6 +84,7 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
     - [Visual Studio Code](</Visual Studio Code/>)
+        - LaTeX Workshop
     - [Atom](/Atom/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
