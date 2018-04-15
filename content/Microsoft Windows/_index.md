@@ -191,6 +191,7 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
         - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
         - ATP
     - [Visual Studio Code](</Visual Studio Code/>)
+        - LaTeX Workshop
     - [Atom](/Atom/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
