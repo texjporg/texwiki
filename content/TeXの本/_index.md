@@ -161,7 +161,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2001年 {#f1b02c0b}
 
 - Adobe Systems 著，桑沢清志 訳
-    『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](http://asciimw.jp/search/mode/item/cd/A0140010)』
+    『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](https://store.kadokawa.co.jp/shop/g/g200600003703/)』
     （アスキー（現：[株式会社KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
 
 #### 2000年 {#o161a1dd}
