@@ -53,11 +53,13 @@ gnuplot は (La)TeX で処理できる形式でグラフを出力することが
 
 #### License {#fe234317}
 
-[オープンソース（オリジナル）](http://gnuplot.cvs.sourceforge.net/gnuplot/gnuplot/Copyright)
+[オープンソース（オリジナル）](https://github.com/gnuplot/gnuplot/blob/master/Copyright)
 
 #### ChangeLog {#g96dff3f}
 
-- [http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/ChangeLog?view=markup](http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/ChangeLog?view=markup)
-- [http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/NEWS?view=markup](http://gnuplot.cvs.sourceforge.net/viewvc/gnuplot/gnuplot/NEWS?view=markup)
+- [https://github.com/gnuplot/gnuplot](https://github.com/gnuplot/gnuplot)
+    - [https://github.com/gnuplot/gnuplot/commits/master](https://github.com/gnuplot/gnuplot/commits/master)
+    - [https://github.com/gnuplot/gnuplot/blob/master/ChangeLog](https://github.com/gnuplot/gnuplot/blob/master/ChangeLog)
+    - [https://github.com/gnuplot/gnuplot/blob/master/NEWS](https://github.com/gnuplot/gnuplot/blob/master/NEWS)
 
 [^1]: ただし英語ではセンテンスの頭では Gnuplot となり，タイトルなどでは GNUPLOT と表記することもあります．
