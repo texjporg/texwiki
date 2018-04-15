@@ -39,7 +39,7 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 以下のサイトには，スクリーンショット付の詳細な解説があります．
 
-- [簡単LaTeXインストールWindows編（2014年7月版）](http://did2memo.net/2014/03/06/easy-latex-install-windows-8-2014-03/)
+- [簡単LaTeXインストールWindows編（2016年4月版）](http://did2memo.net/2016/04/24/easy-latex-install-windows-10-2016-04/)
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)，[（簡単 W32TeX・後編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/212810)，[（W32TeX・発展編）](http://acetaminophen.hatenablog.com/entry/2015/05/17/001048)
 
 #### トラブルシューティング {#t3a0d8db}
