@@ -148,7 +148,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 と実行すれば，cc コマンドを無効化して tlmgr を実行できます（ : は「何もしない」という bash の組み込みコマンド）。
 この場合，Xcode のインストールが要求されることなく，tlmgr の実行が正常に完了します。
 
-### macOS 10.12 Sierra / OS X 10.11 El Capitan への対応 {#elcapitan}
+### macOS 10.12 Sierra / OS X 10.11 El Capitan への対応 <a id="sierra"></a> <a id="elcapitan"></a> {#elcapitan}
 
 2015年10月3日（日本時間）に，macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps (旧名:jfontmaps) &amp; cjk-gs-integrate 20151002.0 が TeX Live 2015 に取り込まれました。
 そして ptex-fontmaps &amp; cjk-gs-integrate 20180306.0 で [macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps が削除され](http://www.tug.org/svn/texlive?view=revision&revision=46861)，
