@@ -42,6 +42,7 @@ TeX で作った本を出している出版社：
 > - [森北出版](http://www.morikita.co.jp/)
 > - [オーム社](http://www.ohmsha.co.jp/)
 > - [多摩通信社](http://www.tamacom.com/index-j.html)
+> - [ラムダノート](https://www.lambdanote.com/)
 
 意外な本（コンピュータ書や大学レベル以上の理系の本は沢山のものが
 TeX で組まれていますが，それ以外のもの）：
