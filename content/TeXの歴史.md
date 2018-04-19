@@ -113,12 +113,13 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2008</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>e-pTeX, e-upTeXが初めて公開される。</td></tr>
 <tr><td style="text-align:center">2009</td><td style="text-align:right">8</td><td style="text-align:center"></td><td><a href="https://oku.edu.mie-u.ac.jp/texconf09/">TeX ユーザの集い 2009</a> が開催される。<br>pTeX p3.1.11公開。アスキーによるpTeXの最終版となる。</td></tr>
 <tr><td style="text-align:center">2010</td><td style="text-align:right">7</td><td style="text-align:center"></td><td>奥村晴彦<a href="https://oku.edu.mie-u.ac.jp/~okumura/bibun5/">『[改訂第5版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:right">8</td><td style="text-align:center"></td><td>TeX Live 2010リリース。TeX LiveにpTeX, pLaTeXが初めて導入される。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">8</td><td style="text-align:center"></td><td>TeX Live 2010リリース。TeX LiveにpTeX, pLaTeXが初めて収録される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="https://oku.edu.mie-u.ac.jp/texconf10/">TeX ユーザの集い 2010</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2011</td><td style="text-align:right">3</td><td style="text-align:center"></td><td>LuaTeX-jaの開発が開始される。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">7</td><td style="text-align:center"></td><td>TeX Live 2011リリース。TeX Liveにe-pTeXが初めて収録される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="https://oku.edu.mie-u.ac.jp/texconf11/">TeX ユーザの集い 2011</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2012</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>upTeX 1.00リリース。</td></tr>
-<tr><td style="text-align:center"></td><td style="text-align:right">7</td><td style="text-align:center"></td><td>TeX Live 2012リリース。TeX LiveにupTeX, upLaTeX, LuaTeX-jaが初めて導入される。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">7</td><td style="text-align:center"></td><td>TeX Live 2012リリース。TeX LiveにupTeX, upLaTeX, LuaTeX-jaが初めて収録される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="https://oku.edu.mie-u.ac.jp/texconf12/">TeX ユーザの集い 2012</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2013</td><td>10</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="https://oku.edu.mie-u.ac.jp/~okumura/bibun6/">『[改訂第6版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="http://tug.org/tug2013/">TUG 2013</a> が開催される。</td></tr>
@@ -126,7 +127,9 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2015</td><td style="text-align:right">6</td><td style="text-align:center"></td><td><a href="https://texjp.org/">日本語 TeX 開発コミュニティ</a>、<a href="https://ml.texjp.org/mailman/listinfo/devel">日本語 TeX 開発者向けの招待制メーリングリスト</a>が開設される。</td></tr>
 <tr><td style="text-align:center"></td><td>11</td><td style="text-align:center"></td><td><a href="http://texconf15.tumblr.com/">TeX ユーザの集い 2015</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2016</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>TeX Wiki が &#x68;ttp://oku.edu.mie-u.ac.jp/~okumura/texwiki/ から <a href="https://texwiki.texjp.org">https://texwiki.texjp.org</a> へ移転。</td></tr>
+<tr><td style="text-align:center"></td><td style="text-align:right">6</td><td style="text-align:center"></td><td>TeX Live 2016リリース。pLaTeX, upLaTeXが日本語 TeX 開発コミュニティによる版となる。</td></tr>
 <tr><td style="text-align:center"></td><td>11</td><td style="text-align:center"></td><td><a href="https://texconf16.tumblr.com/">TeX ユーザの集い 2016</a> が開催される。</td></tr>
+<tr><td style="text-align:center"></td><td>12</td><td style="text-align:center"></td><td>アスキーメディアワークスによるpTeXの公式配布元のウェブサイトが閉鎖される。</td></tr>
 <tr><td style="text-align:center">2017</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="https://okumuralab.org/bibun7/">『[改訂第7版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="https://texconf2017.tumblr.com/">TeXConf 2017</a> が開催される。</td></tr>
 </tbody></table>
