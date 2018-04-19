@@ -81,4 +81,4 @@ GPLv2
 
 #### ChangeLog {#x5a34f7d}
 
-- [http://www.helga-glunz.homepage.t-online.de/pstoedit/changelog.htm](http://www.helga-glunz.homepage.t-online.de/pstoedit/changelog.htm)
+- [http://www.calvina.de/pstoedit/changelog.htm](http://www.calvina.de/pstoedit/changelog.htm)
