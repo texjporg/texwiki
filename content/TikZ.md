@@ -87,7 +87,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 \def\pgfsysdriver{pgfsys-dvipdfmx.def} % dvipdfmx の場合
 \def\pgfsysdriver{pgfsys-dvips.def}    % dvips の場合
 \def\pgfsysdriver{pgfsys-dvisvgm.def}  % dvisvgm の場合
-\def\pgfsysdriver{pgfsys-pdftex.def}   % pdfTeX, LuaTeX, LuaJITTeX の場合。最も高機能
+\def\pgfsysdriver{pgfsys-pdftex.def}   % pdfTeX, LuaTeX, LuajitTeX の場合。最も高機能
 \def\pgfsysdriver{pgfsys-xetex.def}    % XeTeX の場合
 ```
 
