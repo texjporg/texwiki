@@ -7,7 +7,7 @@ pukiwiki: "PSTricks"
 
 # PSTricks
 
-## [PSTricks](http://tug.org/PSTricks/) → dvipdfmx, dvisvgm, pdfTeX, LuaTeX, LuaJITTeX を使用する場合は [TikZ](/TikZ/) を使用する {#c2b5878d}
+## [PSTricks](http://tug.org/PSTricks/) → dvipdfmx, dvisvgm, pdfTeX, LuaTeX, LuajitTeX を使用する場合は [TikZ](/TikZ/) を使用する {#c2b5878d}
 
 <!-- mimetex を使っている行をコメントアウトしました．復帰させました． -->
 
