@@ -18,12 +18,14 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 - [upTeX, pTeX と多言語処理](</pTeXと多言語処理/>)
 - [upTeX, 新 pTeX と Babel](</新 pTeX とBabel/>)
 
-### japanese {#h2523f84}
+### babel-japanese <a id="babel-japanese"></a> {#h2523f84}
 
 日本語クラスを使用していて babel パッケージを読み込むと，キャプションなどが英語などの他言語に変わってしまいます．
-対処法の一つが，日本語に再変更しなおすことで，これを実現するのが japanese パッケージです．
+対処法の一つが，日本語に再変更しなおすことで，これを実現するのが babel-japanese パッケージです．
 
+- [https://ctan.org/pkg/babel-japanese](https://ctan.org/pkg/babel-japanese)
 - [https://github.com/texjporg/babel-japanese](https://github.com/texjporg/babel-japanese)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup)
 
 2016/12/17 以降，従来の japanese パッケージは babel-japanese パッケージとリネームされています（ただし使い方は従来と全く同じ）．
 
@@ -35,9 +37,9 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 #### インストール {#u48e60e8}
 
-TeX Live では Babel の japanese パッケージはすでにインストールされています．
+TeX Live では babel-japanese パッケージはすでにインストールされています．
 
-W32TeX の場合は Babel の japanese パッケージは 2013/10/17 以降の版にインストールされています．
+W32TeX の場合は babel-japanese パッケージは 2013/10/17 以降の版にインストールされています．
 
 ### polyglossia {#q0893d44}
 
