@@ -44,8 +44,8 @@ LaTeX の場合について記述します。
 TikZ の発音について，“公式”のものは特に定められていないようです。
 実際に使われる発音としては，Tik- は /tik/（ティク）で，-Z は /s/ か /ts/ か“Zの文字名”で読まれています。
 
-- [http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](http://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz) ― /tiks/ という答え。
-- [http://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee](http://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee) ― /tikts/ という答え。
+- [https://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](https://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz) ― /tiks/ という答え。
+- [https://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee](https://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee) ― /tikts/ という答え。
 - [TikZって何て発音すればいいの?](https://twitter.com/keno_ss/status/354006358468739072)
 
 ### 初期設定 {#e634a5d8}
