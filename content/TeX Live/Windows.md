@@ -141,6 +141,7 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 TeX Live 2017 対応の事例です．
 
+- [そうだ， TeX Live 2017 (for Windows) をインストールしよう！](http://text.baldanders.info/remark/2017/09/install-tex-live-2017-for-windows/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 
 TeX Live 2016 対応の事例です．
