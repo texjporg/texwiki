@@ -214,13 +214,13 @@ $ sudo cjk-gs-integrate-macos --link-texmf
 macOS High Sierra の場合は
 
 ```
-$ sudo kanji-config-updmap-sys -jis2004 hiragino-highsierra-pron
+$ sudo kanji-config-updmap-sys --jis2004 hiragino-highsierra-pron
 ```
 
 macOS Sierra / OS X El Capitan の場合は
 
 ```
-$ sudo kanji-config-updmap-sys -jis2004 hiragino-elcapitan-pron
+$ sudo kanji-config-updmap-sys --jis2004 hiragino-elcapitan-pron
 ```
 
 を実行します。
@@ -410,10 +410,10 @@ macOS High Sierra / macOS Sierra / OS X El Capitan では OS X Yosemite 以前�
     $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
     ```
 
-    - オプションとして -jis2004 を指定すると，JIS2004字形を使用する設定となります。
+    - オプションとして --jis2004 を指定すると，JIS2004 字形を使用する設定となります。
     - kanji-config-updmap-sys は内部で updmap-sys を呼び出しますので，設定はシステムレベルで共通の設定として保存されます。
         ユーザー個別の設定としてフォントを指定したいときは，kanji-config-updmap を使用します。
-    - ptex2pdf を使用するとその都度フォントを指定できます。（下の例は upLaTeX + dvipdfmx で ヒラギノProN JIS2004字体を使用して PDF を作成するものです。）
+    - ptex2pdf を使用するとその都度フォントを指定できます。（下の例は upLaTeX + dvipdfmx で ヒラギノProN JIS2004 字体を使用して PDF を作成するものです。）
 
         ```
         $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-hiragino-highsierra-pron-04.map' hoge.tex
