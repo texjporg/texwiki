@@ -11,10 +11,11 @@ pukiwiki: "Babel"
 
 Babel は LaTeX で多言語文書を作成するためのパッケージです．
 
-- [CTAN web interface: package babel](https://ctan.org/pkg/babel)
-- [CTAN web interface: Directory listing for /macros/latex/required/babel](https://ctan.org/tex-archive/macros/latex/required/babel)
+- [CTAN: Package babel](https://ctan.org/pkg/babel)
+- [CTAN: /tex-archive/macros/latex/required/babel](https://ctan.org/tex-archive/macros/latex/required/babel)
 - [「Babel」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Babel)
-- [日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)
+- [多言語環境 Babel](http://www.clas.kitasato-u.ac.jp/~fujiwara/infoScienceB/TeX/babel.html)
+- [日本語 LaTeX による多言語処理](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)
 - [upTeX, pTeX と多言語処理](</pTeXと多言語処理/>)
 - [upTeX, 新 pTeX と Babel](</新 pTeX とBabel/>)
 
@@ -43,6 +44,6 @@ W32TeX の場合は babel-japanese パッケージは 2013/10/17 以降の版に
 
 ### polyglossia {#q0893d44}
 
-babel の事実上の後継として [polyglossia](https://ctan.org/pkg/polyglossia) が公開されています．
+babel の代替として [polyglossia](https://ctan.org/pkg/polyglossia) が公開されています．
 polyglossia は LuaLaTeX と XeLaTeX がサポートされています．
 polyglossia は TeX Live にも W32TeX にもインストールされています．
