@@ -176,7 +176,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 
 - macOS High Sierra / macOS Sierra / OS X El Capitan に新たに収録された日本語フォントの多くは，従来の拡張子 .otf の OpenType Font を束ねた形式の OpenType Collection Font です。
     OpenType Collection Font の拡張子は既存の TrueType Collection Font と同じ .ttc ですが中身は別物ですので，TeX Live 2014 以前に収録されている dvipdfmx は OpenType Collection Font に対応していません。
-    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](https://www.muskmelon.jp/?p=1169)
+    - 参考：[TeX で OpenType Collection フォントを扱ってみると（その1）](http://d.hatena.ne.jp/acetaminophen/20151003/1443865926)，[（その2）](http://d.hatena.ne.jp/acetaminophen/20151004/1443980435)，[（その3）](http://d.hatena.ne.jp/acetaminophen/20151005/1443984259)，[El Capitan フォントリスト](https://www.muskmelon.jp/?p=1169)，[El Capitan Japanese Font List](https://docs.google.com/spreadsheets/d/1hfZiU3YdAz7a6N_yM7aASUVFiHaOqHv2_1wZZejxCcU)，[Sierra Japanese Font List](https://docs.google.com/spreadsheets/d/1XOTLBnKsiIJd1Y8yBaIoqU_YVyCre0jVc3MTzGGlPd0)，[High Sierra Japanese Font List](https://docs.google.com/spreadsheets/d/1jVy2l1SJif8fP7hLxjt05l3Kmh7_2_YJ3M5oGtM6Lqw)
 
 #### macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントのセットアップ {#l8c867e9}
 
