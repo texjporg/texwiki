@@ -25,7 +25,7 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-6，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
+- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
 
 ## インストール {#g2a8e99e}
@@ -367,13 +367,6 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
 - [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
     - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
 
-### 游書体 {#qe2ec43e}
-
-Windows 10, macOS に付属している游書体フォントは Adobe-Japan1-6 に準拠しています。
-
-- [OS搭載の游書体について](http://www.jiyu-kobo.co.jp/os-installed-y/)
-- [OS搭載の游書体一覧PDF](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/04/compatibility_160325.pdf)
-
 ## ヒラギノと macOS {#l1d1369f}
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
@@ -383,7 +376,7 @@ TeX Live, cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールし�
 ```
 sudo cjk-gs-integrate --link-texmf --cleanup
 sudo cjk-gs-integrate-macos --link-texmf
-sudo kanji-config-updmap-sys -jis2004 hiragino-highsierra-pron
+sudo kanji-config-updmap-sys --jis2004 hiragino-highsierra-pron
 ```
 
 を実行しました。
@@ -437,14 +430,8 @@ TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.t
 
 ```
 $ sudo updmap-sys --setoption jaEmbed noEmbed  （埋め込まない）
-$ sudo updmap-sys --setoption jaEmbed hiragino （ヒラギノ書体を埋め込む）
 $ sudo updmap-sys --setoption jaEmbed ipaex    （IPAexフォントを埋め込む）
 $ sudo updmap-sys --setoption jaEmbed ipa      （IPAフォントを埋め込む）
-$ sudo updmap-sys --setoption jaEmbed ms       （MSフォントを埋め込む）
-$ sudo updmap-sys --setoption jaEmbed yu-win10 （游書体を埋め込む）
-$ sudo updmap-sys --setoption jaEmbed yu-osx   （游書体を埋め込む）
-$ sudo updmap-sys --setoption jaEmbed kozuka   （小塚書体を埋め込む）
-$ sudo updmap-sys --setoption jaEmbed morisawa （モリサワフォントを埋め込む）
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。
@@ -457,17 +444,17 @@ $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込ま
 $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
 ```
 
-自動的に埋め込み設定されるフォント &lt;fontname> は次のものです。
+自動的に埋め込み設定されるフォント &lt;fontname> は例えば次のものがあります。
 
 ```
-ipaex, ipa, hiragino-highsierra, hiragino-highsierra-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ms, yu-win10, yu-osx
+ipaex, ipa
 （いずれもないときは nofont になります）
 ```
 
 dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
 
 ```
-dvipdfmx -f uptex-hiragino-highsierra-pron-04.map -f otf-up-hiragino-highsierra-pron.map hoge.dvi
+dvipdfmx -f uptex-ipaex.map -f otf-up-ipaex.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
@@ -737,6 +724,9 @@ ptex2pdf -u -l -od "-f ipaex.map" hoge.tex
 ```
 ptex2pdf -u -l -od "-f yu-win10.map" hoge.tex
 ```
+
+- [OS搭載の游書体について](http://www.jiyu-kobo.co.jp/os-installed-y/)
+- [OS搭載の游書体一覧PDF](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/04/compatibility_160325.pdf)
 
 #### MSフォントを使う場合 {#g54b5df7}
 
