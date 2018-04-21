@@ -156,7 +156,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 そのため TeX Live 2018 以降は macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live ではサポートされなくなり，[TLContrib](http://contrib.texlive.info/) から cjk-gs-integrate-macos, ptex-fontmaps-macos を別途インストールする必要があります。
 <strong>pLaTeX / upLaTeX + dvipdfmx でヒラギノフォントを埋め込みたい場合</strong>については macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレードが可能です。
 
-この件を含めた一連の TeX 界の対応については，以下を参照してください。
+この件を含めた一連の対応については，以下を参照してください。
 
 - [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382)
 - [TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306)
@@ -165,7 +165,7 @@ $ sudo bash -c "CC=: tlmgr update --self"
 ただし，OS X Yosemite 以前には既知の脆弱性があり，その対策は macOS High Sierra / macOS Sierra / OS X El Capitan へのアップデートでしか提供されていないため，macOS High Sierra / macOS Sierra / OS X El Capitan へのアップデートを見合わせるということは TeX や DTP のためにセキュリティ対策を犠牲にしていると心得る必要があります。
 
 - TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，macOS High Sierra / macOS Sierra / OS X El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
-    したがって，[LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを使うためには2015年10月8日にリリースされた LuaTeX beta-0.81.0 に更新する必要があります（ただし，luaotfload パッケージの対応が未完了）。
+    したがって，[LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを使うためには2015年10月8日にリリースされた LuaTeX beta-0.81.0 以降に更新する必要があります（ただし，luaotfload パッケージの対応が未完了）。
     なお，IPA(ex) フォントを利用するのであれば無理に LuaTeX を更新する必要はありません。
 
 - DTP で OS X El Capitan（10.11、10.11.1）搭載のヒラギノフォントを利用する場合，以前のヒラギノフォントとの互換性の問題により「Adobe InDesign CC/CS や Illustrator CC/CS などで文字間のカーニングをオプティカルに設定していると組体裁が崩れる」という情報もあります。
