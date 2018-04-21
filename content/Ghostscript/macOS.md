@@ -15,15 +15,11 @@ pukiwiki: "Ghostscript/macOS"
 
 ***
 
-### macOS 10.13 High Sierra に関する注意 {#z4aba3e3}
-
-現在 <span style="color:#FF2800;"><strong>macOS High Sierra 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
-
-### macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
+### macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
 以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
 
-macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>macOS Sierra / OS X El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
+macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>macOS High Sierra / macOS Sierra / OS X El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
 - [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
