@@ -523,6 +523,8 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 ## 関連リンク {#j2a0a89a}
 
 - [https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
+- [https://knnlog.wordpress.com/?s=LyX](https://knnlog.wordpress.com/?s=LyX)
+    - [LyX 2.3.0 の導入](https://knnlog.wordpress.com/2018/04/14/lyx-2-3-0-%E3%82%92%E5%B0%8E%E5%85%A5/)
 - [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
