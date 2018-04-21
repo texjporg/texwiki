@@ -100,7 +100,7 @@ Adobe-Japan1-6 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 
 ### IPAmj 明朝の利用 {#d0fddba5}
 
-人名の表記等，細かな字形の差異を特別に使い分ける必要のある業務等での活用を想定した [IPAmj 明朝](http://mojikiban.ipa.go.jp/1300.html)フォントを利用する [ipamjm パッケージ](http://psitau.kitunebi.com/experiment.html) があります。
+人名の表記等，細かな字形の差異を特別に使い分ける必要のある業務等での活用を想定した [IPAmj 明朝](https://mojikiban.ipa.go.jp/)フォントを利用する [ipamjm パッケージ](http://psitau.kitunebi.com/experiment.html) があります。
 IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表示させます。
 
 さらに，IVS による異体字表現をサポートする [PXipamjm パッケージ](https://github.com/zr-tex8r/PXipamjm)もあります。
