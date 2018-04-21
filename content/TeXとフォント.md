@@ -120,7 +120,7 @@ tlmgr から入れましょう。
 
 プロジェクトページへは
 
-- GitHub の [Adobe Fonts](http://github.com/adobe-fonts) ページから
+- GitHub の [Adobe Fonts](https://github.com/adobe-fonts) ページから
 
 CTAN ページ
 
@@ -187,10 +187,10 @@ $ sudo kanji-config-updmap-sys nofont      （PDF にフォントを埋め込ま
 $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確認する）
 ```
 
-自動的に埋め込み設定できるフォント &lt;fontname> は次のものです．
+自動的に埋め込み設定できるフォント &lt;fontname> は例えば次のものがあります．
 
 ```
-ipaex, ipa, hiragino-highsierra, hiragino-highsierra-pron, morisawa, morisawa-pr6n, kozuka, kozuka-pr6, kozuka-pr6n, ms, yu-win10, yu-osx
+ipaex, ipa
 ```
 
 - Mac (macOS) の場合には事前準備が必要です。
