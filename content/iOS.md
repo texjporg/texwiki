@@ -29,7 +29,7 @@ pukiwiki: "iOS"
 TeX Writer は日本語の文書をローカルでコンパイルできるそうです．<br>
 TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています．<br>
 
-- [http://www.texwriterapp.com/](http://www.texwriterapp.com/)
+- [https://apps.texwriter.net/](https://apps.texwriter.net/)
 - [https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8](https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8)
 - [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
 
