@@ -219,6 +219,14 @@ base オプションで，基底フォントサイズ（\normalsize のフォン
 \usepackage[hiragino-pron]{zxjafont}
 ```
 
+- 例えば、「jafont=sourcehan(-otc)」のように括弧付きの値を指定すると、XeLaTeX/LuaLaTeX
+
+では「sourcehan」、それ以外のエンジンでは「sourcehan-otc」と解釈されます。（）
+
+- 「jafont=auto」を指定すると、TeX Liveのkanji-config-updmapコマンドで指定した
+
+ファミリ名が実際のプリセット名として使われます。（）
+
 ※もちろん，jafont を使わずに手動で和文フォントを設定しても構いません．
 
 ```
@@ -227,6 +235,31 @@ base オプションで，基底フォントサイズ（\normalsize のフォン
 \setCJKmainfont[BoldFont=YuMincho-DemiBold]{YuMincho-Regular}
 \setCJKsansfont[BoldFont=YuGothic-Bold]{YuGothic-Regular}
 ```
+
+#### jafont オプションの応用的な使用法 {#vcf338a2}
+
+※“標準設定”（ja=standard）を前提にします．
+
+- 例えば，「jafont=sourcehan(-otc)」のように括弧付きの値を指定すると，XeLaTeX/LuaLaTeX では「sourcehan」，それ以外のエンジンでは「sourcehan-otc」と解釈されます．（v1.7b 以降）
+- 「jafont=auto」を指定すると，TeX Live の kanji-config-updmap コマンドで指定したファミリ名が実際のプリセット名として使われます．
+
+#### 2004JIS 字形を選択する {#z7248164}
+
+※“標準設定”（ja=standard）を前提にします．
+
+jafont でプリセットを指定した場合，既定では 90JIS 字形が選択されます．2004JIS 字形を選択するには，「japaram オプションの値のリストの中に“jis2004”を追加」します．
+
+```
+\documentclass[lualatex,ja=standard,jafont=noto,
+    japaram={jis2004},a4paper]{bxjsarticle}
+\begin{document}
+巷で噂の葛飾区。
+\end{document}
+```
+
+※プリセットに対する補助設定という位置付けです．<br>
+※実際に字形の切り替えができるかはフォントに依ります．<br>
+※現状では (u)pLaTeX/LuaLaTeX でのみ有効です．
 
 #### 和文用の単位 {#tf4c0036}
 
@@ -268,6 +301,16 @@ BXJS クラスではこれらの単位の代用となる長さ命令を提供し
 <tr><td style="text-align:center"> \Cvs </td><td style="text-align:left"> 標準の和文行送り（\normalsize の \baselineskip 自然長） </td></tr>
 </tbody>
 </table>
+
+#### 和文用の単位そのものを使う {#b66764f6}
+
+v1.8より，(u)pLaTeX 以外のエンジンでも和文用の単位そのものを使う機能が追加されました．
+
+次のように，「japaram オプションの値のリストの中に“units”を追加するとこの機能が有効になり，「\hspace{1zw}」などの命令が全てのエンジンで通るようになります．
+
+```
+\documentclass[lualatex,ja=standard,japaram={units}]{bxjsarticle}
+```
 
 #### hyperrefの文書情報の文字化け対策 {#k7783d8f}
 
