@@ -27,6 +27,8 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ReadMe.pdf の更新履歴 を参照。
 
+Drag &amp; Drop UpTeX 20180430 は TeX Live 2018 scheme-small + collection-langjapanese。
+
 Drag &amp; Drop UpTeX 20170927 は TeX Live 2017 scheme-small + collection-langjapanese。macOS 10.13 High Sierra に対応。
 
 Drag &amp; Drop UpTeX 20170606 は TeX Live 2017 scheme-small + collection-langjapanese。
