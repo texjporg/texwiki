@@ -47,7 +47,7 @@ sudo dnf install texlive-collection-langjapanese
 
 を実行します．
 
-Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で upLaTeX を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
 uplatex, uptex, euptex の項目がコメントアウトされているためなので，これらのコメントアウトを外します．
 
