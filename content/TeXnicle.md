@@ -78,9 +78,11 @@ MacTeX がインストールされていることを前提としています．<
 1. 76行目〜の dvips を使用する設定を dvipdfmx を使用するように設定し直します．
 
     ```
-    # Run dvipdfmx
-    echo "*** Doing dvipdfmx on $mainfile..."
-    $DVIPDFMX "$mainfile"
+      # Run dvipdfmx
+      echo "***------------------------------------------------------------"
+      echo "*** Doing dvipdfmx on $mainfile..."
+      echo "***------------------------------------------------------------"
+      $DVIPDFMX "$mainfile"
     ```
 
 1. 92行目の完了表示を以下のように修正します．
