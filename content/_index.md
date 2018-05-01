@@ -37,16 +37,15 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/Po
 
 <!-- インストールまでが長いように思えたのでダイエットしてみました． -->
 
-### お知らせ {#p837b6a7}
-
+<!-- ** お知らせ [#p837b6a7] -->
 <!-- 増殖しそうだったので少し消しておきます。 -->
-- macOS 10.13 High Sierra でヒラギノフォントを使うための一連のサポートファイルは，諸事情により TeX Live 2017 の期間中にはリリースされない見込みです。ヒラギノフォントを使いたい場合は，非公式ではありますが，山本さんによる[［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://qiita.com/munepi/items/c4274da0646b3e785c7f)を参考に設定してください。
-    <!-- - 【重要】2017/06/01 以降の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）には、それ以前のバージョンと比べて非互換な変更が含まれます。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。 -->
-    <!-- - - [[graphicx パッケージの仕様変更（dvipdfmx オプション）>forum:2211]]~ -->
-    <!-- - - [[graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件:http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e]] -->
-    <!-- - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．''可能な場合は，速やかに TeX Live のアップデートを実行してください''．この問題についての詳細は[[こちら>外部コマンドの実行#security]]を参照してください． -->
-    <!-- - [[奥村晴彦先生:https://oku.edu.mie-u.ac.jp/~okumura/]]が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[[日本語 TeX 開発コミュニティ:https://texjp.org/]]上の https://texwiki.texjp.org/ に移転しました． -->
-    <!-- - OS X 10.10 Yosemite 以前で TeX Live 2015 以前または MacTeX-2015 以前を使っている場合， macOS 10.12 Sierra / OS X 10.11 El Capitan へのアップグレード後，設定作業が必要です．アップデート前に[[こちら>TeX Live/Mac#elcapitan]]をご覧ください． -->
+<!-- - macOS 10.13 High Sierra でヒラギノフォントを使うための一連のサポートファイルは，諸事情により TeX Live 2017 の期間中にはリリースされない見込みです。ヒラギノフォントを使いたい場合は，非公式ではありますが，山本さんによる[[［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ:https://qiita.com/munepi/items/c4274da0646b3e785c7f]]を参考に設定してください。 -->
+<!-- - 【重要】2017/06/01 以降の dvipdfmx-def パッケージ（LaTeX の graphics/x パッケージの dvipdfmx 用ドライバ）には、それ以前のバージョンと比べて非互換な変更が含まれます。このため、PDF 画像の挿入した場合に従来と異なる出力になる可能性があります。 -->
+<!-- - - [[graphicx パッケージの仕様変更（dvipdfmx オプション）>forum:2211]]~ -->
+<!-- - - [[graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件:http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e]] -->
+<!-- - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．''可能な場合は，速やかに TeX Live のアップデートを実行してください''．この問題についての詳細は[[こちら>外部コマンドの実行#security]]を参照してください． -->
+<!-- - [[奥村晴彦先生:https://oku.edu.mie-u.ac.jp/~okumura/]]が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[[日本語 TeX 開発コミュニティ:https://texjp.org/]]上の https://texwiki.texjp.org/ に移転しました． -->
+<!-- - OS X 10.10 Yosemite 以前で TeX Live 2015 以前または MacTeX-2015 以前を使っている場合， macOS 10.12 Sierra / OS X 10.11 El Capitan へのアップグレード後，設定作業が必要です．アップデート前に[[こちら>TeX Live/Mac#elcapitan]]をご覧ください． -->
 
 ### TeX，LaTeX とは？ {#la57baab}
 
