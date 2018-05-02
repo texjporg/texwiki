@@ -52,10 +52,7 @@ $ sudo tlmgr install collection-langjapanese
 
 #### インストールの事例 {#q65e25e8}
 
-- [BasicTeX 2017 のインストール @HighSierra](http://saphir-jaune.hatenablog.com/entry/2017/11/28/175708)
-- [macOS Sierra に コンパクトなtex環境を作る](http://qiita.com/ryosebach/items/bea8e8b084b07eaf88ae)
-- [macOS Sierra に LaTeX 環境を作る](http://qiita.com/sira/items/d7f5c411ccb0f90c43d8)
-- [Mac bookにBasicTeXを導入してみた](http://pf-siedler.hatenablog.com/entry/2016/11/23/141723)
+- [Macbook Pro 事始め備忘録#BasicTeXのインストール](https://qiita.com/nqomorita/items/8491e10866aa53277f80#basictex%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab)
 
 #### TeX Live 2016 以降での注意点 {#y0fc0688}
 
