@@ -15,11 +15,11 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
 <strong>公式サイト</strong>
 
 - [TeX2img](http://www.ms.u-tokyo.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
-- [TeX2img](http://island.geocities.jp/loveinequality/) (Mac 版)
+- [TeX2img](http://island.geocities.jp/loveinequality/) (macOS 版)
 
 類似ソフトウェアとして，[LaTeXiT](/LaTeXiT/) があります．
 
-奥村先生の [［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/) には，Windows版/Mac版が標準インストールソフトウェアとしてバンドルされています．
+奥村先生の [［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/) には，Windows版/macOS版が標準インストールソフトウェアとしてバンドルされています．
 
 ***
 
@@ -44,7 +44,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
     - TIFF ファイル
     - GIF ファイル
 
-PNG は背景を透過させることができます．（Mac 版は TIFF / GIF も透過対応．）
+PNG は背景を透過させることができます．（macOS 版は TIFF / GIF も透過対応．）
 
 <!-- **使い方 [#usage] -->
 
@@ -64,9 +64,9 @@ Windows, macOS
 
 ### お知らせ {#notice}
 
-Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくインストールされていることが必要です．
+Windows/macOS 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくインストールされていることが必要です．
 
-- Windows 版，Mac 版ともに SVG 画像の出力に使用する
+- Windows 版，macOS 版ともに SVG 画像の出力に使用する
     [MuPDF](/MuPDF/) の mudraw を内蔵しています．
     <!-- [[pdf2svg]] よりすぐれた SVG 変換法に乗り換えました． -->
 
@@ -74,12 +74,12 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
     [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．なお
     1.5.0 以降では ImageMagick に依存しない改良が施されました．
 
-- Mac 版はビットマップ画像の生成に macOS 標準の画像処理 API を活用します．
+- macOS 版はビットマップ画像の生成に macOS 標準の画像処理 API を活用します．
 - Windows 版は EMF 画像の出力に，Google が開発した
     [PDFium](</Google Chrome/#l83f1380>) という PDF レンダリングエンジンを利用しています．
 
-- Mac 版は，EMF 画像を出力するために，[pstoedit](/pstoedit/)（を高画質になるように独自改修したバージョン）を内蔵しています．
-- Mac 版は，[Ghostscript 9.15 以降でテキスト形式の EPS を出力する](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)ために，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵しています．
+- macOS 版は，EMF 画像を出力するために，[pstoedit](/pstoedit/)（を高画質になるように独自改修したバージョン）を内蔵しています．
+- macOS 版は，[Ghostscript 9.15 以降でテキスト形式の EPS を出力する](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)ために，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵しています．
 
 ### トラブルシューティング・よくある質問 {#faq}
 
@@ -111,7 +111,7 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 - Windows 版：
     [BSD 2-Clause](https://github.com/abenori/TeX2img/blob/master/license.txt)
 
-- Mac 版：
+- macOS 版：
     [GPLv2](https://github.com/doraTeX/TeX2img/blob/master/LICENSE.txt)
 
 #### ソースコード {#repository}
@@ -119,7 +119,7 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 - Windows 版：
     [https://github.com/abenori/TeX2img](https://github.com/abenori/TeX2img)
 
-- Mac 版：
+- macOS 版：
     [https://github.com/doraTeX/TeX2img](https://github.com/doraTeX/TeX2img)
 
 #### 変更履歴 {#changelog}
@@ -127,6 +127,6 @@ Windows/Mac 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイン
 - Windows 版
     - [https://github.com/abenori/TeX2img/blob/master/TeX2img.txt](https://github.com/abenori/TeX2img/blob/master/TeX2img.txt)
     - [https://github.com/abenori/TeX2img/commits/master](https://github.com/abenori/TeX2img/commits/master)
-- Mac 版
-    - [http://island.geocities.jp/loveinequality/#history](http://island.geocities.jp/loveinequality/#history)
+- macOS 版
+    - [http://island.geocities.jp/loveinequality/#machistory](http://island.geocities.jp/loveinequality/#machistory)
     - [https://github.com/doraTeX/TeX2img/commits/master](https://github.com/doraTeX/TeX2img/commits/master)
