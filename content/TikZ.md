@@ -1007,6 +1007,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
         - TikZによるグラフ作成（折れ線グラフ，棒グラフ）の例
     - [TeX Alchemist Online / TikZによる連成振動アニメーション (1) ～ アニメーションGIF篇](http://doratex.hatenablog.jp/entry/20140417/1397742060) [(2) ～ 動くPDF篇](http://doratex.hatenablog.jp/entry/20140418/1397750533)
         - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
+- [Japanese TikZ Tutorial](https://github.com/Yasunari15/Japanese-TikZ-Tutorial)
 - [いわにぃのブログ : TikZ](http://blog.livedoor.jp/ti5942/tag/TikZ), [いわにぃのブログ : PGF/TikZ](http://blog.livedoor.jp/ti5942/archives/cat_131138.html)
 - [岩崎 隆盛/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=TikZ)
 - [にっき&#9834;: TikZの検索結果](http://abenori.blogspot.com/search?q=TikZ&by-date=true)
