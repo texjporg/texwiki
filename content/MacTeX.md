@@ -158,6 +158,7 @@ $ sudo tlmgr paper a4
 ### アンインストール {#uninstalling}
 
 - [Uninstalling - MacTeX - TeX Users Group](http://www.tug.org/mactex/uninstalling.html)
+- [MacTexのアンインストール](http://ikapblg.blog.fc2.com/blog-entry-141.html)
 
 ### リリース情報 {#c5157a75}
 
