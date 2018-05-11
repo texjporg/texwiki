@@ -19,6 +19,28 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 - [upTeX, pTeX と多言語処理](</pTeXと多言語処理/>)
 - [upTeX, 新 pTeX と Babel](</新 pTeX とBabel/>)
 
+### 注意点 {#je0f80cc}
+
+#### Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない {#r73ec466}
+
+Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない問題は [pLaTeX 2018-05-11](https://github.com/texjporg/platex/releases/tag/2018-05-11) で修正されました．
+
+- [Babel v3.21 で pLaTeX 2018-04-01 patch level 1 は動きません](https://okumuralab.org/tex/mod/forum/discuss.php?d=2428)
+- [\everyjob でのバナー表示の簡略化 &#183; Issue #71 &#183; texjporg/platex &#183; GitHub](https://github.com/texjporg/platex/issues/71)
+
+```
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.sjis) (TeX Live 2018/W32TeX) (preloaded format=platex)
+ restricted \write18 enabled.
+entering extended mode
+(./ex1.tex(guessed encoding: UTF-8 = utf8)
+! Argument of \UTFviii@four@octets@@ has an extra }.
+<inserted text>
+                \par
+l.1
+    \documentclass{jsarticle}
+?
+```
+
 ### babel-japanese <a id="babel-japanese"></a> {#h2523f84}
 
 日本語クラスを使用していて babel パッケージを読み込むと，キャプションなどが英語などの他言語に変わってしまいます．
