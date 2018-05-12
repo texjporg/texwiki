@@ -35,9 +35,9 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2017-ex.txt
-equivs-build debian-equivs-2017-ex.txt
-sudo dpkg -i texlive-local_2017-1_all.deb
+wget http://www.tug.org/texlive/files/debian-equivs-2018-ex.txt
+equivs-build debian-equivs-2018-ex.txt
+sudo dpkg -i texlive-local_2018-1_all.deb
 ```
 
 ### Fedora <a id="fedora"></a> {#cf6b23bc}
@@ -57,7 +57,6 @@ sudo dnf install texlive-dummy
 - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
     - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE](https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
 - [https://ctan.org/pkg/texlive-dummy-opensuse](https://ctan.org/pkg/texlive-dummy-opensuse)
-- [https://software.opensuse.org/package/texlive-dummy](https://software.opensuse.org/package/texlive-dummy)
 - [https://software.opensuse.org/package/texlive-dummy_install](https://software.opensuse.org/package/texlive-dummy_install)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
