@@ -9,7 +9,7 @@ pukiwiki: "Kile"
 
 ## [Kile](https://kile.sourceforge.io/) {#pab65dd4}
 
-2017-09-03 に KDE Frameworks 5 に対応した Kile 3.0 beta 1 がリリースされています。
+2018-05-11 に KDE Frameworks 5 に対応した Kile 3.0 beta 2 がリリースされています。
 
 ***
 
@@ -302,6 +302,7 @@ Source editor:
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
     - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
+- [app-editors/kile-2.9.91](https://blogs.yahoo.co.jp/igproj_fusion/20944032.html)
 - [Kile | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/?q=Kile&charset=utf-8)
 - [latex | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/blog-category-2.html)
 - [TeX Live 2013 on Gentoo Linux](http://blogs.yahoo.co.jp/igproj_fusion/17319986.html)
