@@ -23,7 +23,7 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 #### Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない {#r73ec466}
 
-Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない問題は [pLaTeX 2018-05-11](https://github.com/texjporg/platex/releases/tag/2018-05-11) で修正されました．
+Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない問題は [pLaTeX 2018-05-11](https://github.com/texjporg/platex/releases/tag/2018-05-11) ([TeX Live revision 47683](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/base/plcore.ltx?r1=47402&r2=47683&pathrev=47683)) で修正されました．
 
 - [Babel v3.21 で pLaTeX 2018-04-01 patch level 1 は動きません](https://okumuralab.org/tex/mod/forum/discuss.php?d=2428)
 - [\everyjob でのバナー表示の簡略化 &#183; Issue #71 &#183; texjporg/platex &#183; GitHub](https://github.com/texjporg/platex/issues/71)
