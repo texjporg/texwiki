@@ -484,7 +484,7 @@ $ sudo dnf install lyx
 
 #### openSUSE {#s2677dff}
 
-- [http://software.opensuse.org/package/lyx](http://software.opensuse.org/package/lyx)
+- [https://software.opensuse.org/package/lyx](https://software.opensuse.org/package/lyx)
 
 ```
 $ sudo zypper install lyx
@@ -492,9 +492,7 @@ $ sudo zypper install lyx
 
 #### CentOS {#rb8db70c}
 
-- [https://pkgs.org/search/LyX](https://pkgs.org/search/LyX)
-- [http://dl.fedoraproject.org/pub/epel/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/7/x86_64/l/)
-- [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/)
+- [https://pkgs.org/download/lyx](https://pkgs.org/download/lyx)
 
 #### Vine Linux {#fb02866e}
 
