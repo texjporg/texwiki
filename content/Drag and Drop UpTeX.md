@@ -9,9 +9,9 @@ pukiwiki: "Drag and Drop UpTeX"
 
 ## [Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small + collection-langjapanese ベースの macOS 専用 TeX ディストリビューションです。
+Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small をベースに collection-langjapanese + α を追加した macOS 専用 TeX ディストリビューションです。
 macOS でコンパクトな日本語 TeX 処理系を簡単に導入できます。
-あらかじめ TeX Live scheme-small に collection-langjapanese を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
+あらかじめ TeX Live scheme-small に collection-langjapanese + α を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
 
 - [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)
@@ -27,11 +27,9 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ReadMe.pdf の更新履歴 を参照。
 
-Drag &amp; Drop UpTeX 20180430 は TeX Live 2018 scheme-small + collection-langjapanese。
+Drag &amp; Drop UpTeX 20180522 は TeX Live 2018 scheme-small + collection-langjapanese + α。
 
-Drag &amp; Drop UpTeX 20170927 は TeX Live 2017 scheme-small + collection-langjapanese。macOS 10.13 High Sierra に対応。
-
-Drag &amp; Drop UpTeX 20170606 は TeX Live 2017 scheme-small + collection-langjapanese。
+Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
 
 Drag &amp; Drop UpTeX 20160907 は BasicTeX を使わず，「TeX Live 2016 scheme-small + collection-langjapanese」を収録しています ([forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)) 。
 
