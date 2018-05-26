@@ -9,7 +9,7 @@ pukiwiki: "gedit"
 
 ## [gedit](https://wiki.gnome.org/Apps/Gedit) {#c704b7fa}
 
-<!-- #ref(https://git.gnome.org/browse/gedit/plain/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
+<!-- #ref(https://gitlab.gnome.org/GNOME/gedit/raw/master/gedit/resources/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
 
 ***
 
@@ -73,13 +73,13 @@ Windows, macOS, Linux
 
 ### License {#bf49560f}
 
-[GPLv2](https://git.gnome.org/browse/gedit/tree/COPYING)
+[GPLv2](https://gitlab.gnome.org/GNOME/gedit/blob/master/COPYING)
 
 ### リリース情報/ChangeLog {#z39e4e65}
 
-- [gedit - GNOME Text Editor](https://git.gnome.org/browse/gedit/) GNOME GIT source code repository
-    - [https://git.gnome.org/browse/gedit/refs/tags](https://git.gnome.org/browse/gedit/refs/tags)
-    - [log](https://git.gnome.org/browse/gedit/log/)
+- [GNOME / gedit · GitLab](https://gitlab.gnome.org/GNOME/gedit)
+    - [https://gitlab.gnome.org/GNOME/gedit/tags](https://gitlab.gnome.org/GNOME/gedit/tags)
+    - [https://gitlab.gnome.org/GNOME/gedit/commits/master](https://gitlab.gnome.org/GNOME/gedit/commits/master)
 
 ### 派生版 {#k13d1526}
 
@@ -96,7 +96,7 @@ Windows, macOS, Linux
 ### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
 
 - [https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin)
-- [https://git.gnome.org/browse/gedit-latex/](https://git.gnome.org/browse/gedit-latex/)
+- [https://gitlab.gnome.org/GNOME/gedit-latex](https://gitlab.gnome.org/GNOME/gedit-latex)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
 
@@ -147,9 +147,9 @@ LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX �
 
 forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
-### [gedit-plugins (SyncTeX)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex) {#uc9a113c}
+### [gedit-plugins (SyncTeX)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex) {#uc9a113c}
 
-- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex)
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex)
     <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
 
 - [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
@@ -167,12 +167,12 @@ inverse search は Evince で Ctrl + 左クリックを使用すると gedit の
 エラーメッセージが表示される場合は
 /usr/lib/gedit/plugins/synctex/synctex.py または
 /usr/lib64/gedit/plugins/synctex/synctex.py を
-[最新版の synctex.py](https://git.gnome.org/browse/gedit-plugins/plain/plugins/synctex/synctex/synctex.py) で上書きすれば
+[最新版の synctex.py](https://gitlab.gnome.org/GNOME/gedit-plugins/blob/master/plugins/synctex/synctex/synctex.py) で上書きすれば
 forward and inverse search が動作するかもしれません．
 
-### [gedit-plugins (Code Comment)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment) {#q8313fab}
+### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment) {#q8313fab}
 
-- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment](https://git.gnome.org/browse/gedit-plugins/tree/plugins/codecomment)
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment)
 
 Code Comment プラグインは gedit-plugins に収録されています．
 
@@ -182,9 +182,9 @@ Code Comment プラグインを使用するとコメントアウト，コメン�
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
-### [gedit-plugins (Bracket Completion)](https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion) {#af44b88e}
+### [gedit-plugins (Bracket Completion)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/bracketcompletion) {#af44b88e}
 
-- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion](https://git.gnome.org/browse/gedit-plugins/tree/plugins/bracketcompletion)
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/bracketcompletion](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/bracketcompletion)
 
 Bracket Completion プラグインは gedit-plugins に収録されています．
 
