@@ -26,7 +26,7 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 
 ## ダウンロード {#de2773fb}
 
-- [http://www.qt.io/download-open-source/](http://www.qt.io/download-open-source/)
+- [https://www.qt.io/download](https://www.qt.io/download)
 - [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/)
 
 ## 不具合 {#zc678b55}
@@ -36,6 +36,19 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 - \[[QTBUG-43756\] setExtraSelections with QTextFormat::FullWidthSelection makes preedit text difficult to read - Qt Bug Tracker](https://bugreports.qt.io/browse/QTBUG-43756)
 
 ## Unicode {#oce7c878}
+
+### Qt 5.11 {#f03ec2c2}
+
+One of the larger updates in Qt Core went into our Unicode support. QChar, QString, QText&#x42;oundaryFinder and our algorithm for bidirectional text are now fully compatible with [Unicode 10](http://www.unicode.org/versions/Unicode10.0.0/).
+
+Qt Core の大きな変更の１つは Unicode 対応です。今回 QChar、QString、QText&#x42;oundaryFinder と、双方向テキストを [Unicode 10](http://www.unicode.org/versions/Unicode10.0.0/) に完璧に対応させました。
+
+- [http://blog.qt.io/blog/2018/05/22/qt-5-11-released/](http://blog.qt.io/blog/2018/05/22/qt-5-11-released/)
+- [http://blog.qt.io/jp/2018/05/23/qt-5-11-released/](http://blog.qt.io/jp/2018/05/23/qt-5-11-released/)
+
+### Qt 5.0 {#ceb62694}
+
+Qt 5.0 uses and fully supports version [6.2](http://www.unicode.org/versions/Unicode6.2.0/) of the Unicode standard.
 
 Qt 5.0 は [Unicode 6.2](http://www.unicode.org/versions/Unicode6.2.0/) をサポートしています。
 
