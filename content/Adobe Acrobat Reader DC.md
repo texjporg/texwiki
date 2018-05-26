@@ -60,6 +60,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### Linux {#s5dbb0cf}
 
+- [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](http://motchy99.blog.fc2.com/blog-entry-106.html)
+
 ```
 wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1801120036/AcroRdrDC1801120035_ja_JP.exe
 wine AcroRdrDC1801120035_ja_JP.exe
