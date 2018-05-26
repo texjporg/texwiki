@@ -9,7 +9,7 @@ pukiwiki: "Drag and Drop UpTeX"
 
 ## [Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている TeX Live scheme-small をベースに collection-langjapanese + α を追加した macOS 専用 TeX ディストリビューションです。
+Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている macOS 専用 TeX ディストリビューションです。
 macOS でコンパクトな日本語 TeX 処理系を簡単に導入できます。
 あらかじめ TeX Live scheme-small に collection-langjapanese + α を追加した状態で配布されており，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
@@ -25,9 +25,9 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ### History {#a33a457a}
 
-ReadMe.pdf の更新履歴 を参照。
+[ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
 
-Drag &amp; Drop UpTeX 20180525 は TeX Live 2018 scheme-small + collection-langjapanese + α。
+Drag &amp; Drop UpTeX 20180526 は TeX Live 2018 scheme-small + collection-langjapanese + α。
 
 Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
 
@@ -42,23 +42,21 @@ Drag &amp; Drop UpTeX は，2015年9月10日の UTeX20150910.dmg からは TeX L
 
 ### Drag &amp; Drop UpTeX のインストールと設定 {#e30d8e71}
 
-添付の README.pdf をよくお読みください。
+添付の [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) をよくお読みください。
 アプリケーションファイル名は UpTeX.app です。
 基本的にはこれを /Applications 以下などにインストールするとよいでしょう。
 
 インストールしたら，[dvipdfmx](/dvipdfmx/) による PDF 作成で埋め込む日本語フォントを設定します。
 UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX」-「環境設定」から環境設定パネルを開きます。
-「dvipdfmx のフォント」のプルダウンメニューからお使いの macOS のバージョンに合わせたヒラギノフォントを選択するとよいでしょう。
-（これはバックグラウンドで updmap-sys と mktexlsr を実行します。あらかじめヒラギノフォントのシンボリックリンクを作成してあるため，簡単に設定を完了することができます。）
+「dvipdfmx のフォント」のプルダウンメニューからお使いの macOS のバージョンに合わせたヒラギノNを選択するとよいでしょう。
+（これはバックグラウンドで kanji-config-updmap-sys --jis2004 を実行します。初回起動時にヒラギノフォントのシンボリックリンクを作成しているため，簡単に設定を完了することができます。）
 
-TeX Live のアップデートは，同じく環境設定パネルから「TeX コンポーネントのアップデート」で行います。
+TeX Live のアップデートは，同じく環境設定パネルから「パッケージの管理」ボタンをクリックしてパッケージ管理ウィンドウを起ちあげ「全て更新」ボタンをクリックします。
 （これはバックグラウンドで [tlmgr](/tlmgr/) をターミナルに実行させています。）
 
 以下のインストールのやり方などの事例も参照してください。
 
-- [El CapitanでDrag &amp; Drop UpTeX を使って日本語TeX環境を整える](http://ijairai.hatenablog.com/entry/2015/10/24/170311)
-    - 当該ページの TeXShop の設定（特に upTeX (ptex2pdf) を使うのに ShiftJIS に設定変更している部分）は誤りだが、他のスクリーンショットは参考になる。
-        - 具体的にどのような点が誤りなのでしょうか？
+- [OS X El Capitanで複数のエンコーディングに対応したTeXの設定方法](https://ryorsk.wordpress.com/2016/03/26/tex_for_el_capitan/)
 
 ### Drag &amp; Drop UpTeX で LuaTeX-ja を使う {#vf102fe3}
 
