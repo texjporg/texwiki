@@ -26,16 +26,16 @@ Windows, macOS, Linux
 
 ### ライセンス {#lf30b1e1}
 
-[GPLv2](https://git.gnome.org/browse/evince/tree/COPYING)
+[GPLv2](https://gitlab.gnome.org/GNOME/evince/blob/master/COPYING)
 
 ### リリース情報 {#m8e1200a}
 
-[https://git.gnome.org/browse/evince/refs/tags](https://git.gnome.org/browse/evince/refs/tags)
+[https://gitlab.gnome.org/GNOME/evince/tags](https://gitlab.gnome.org/GNOME/evince/tags)
 
 ### 変更履歴 {#nb7ae766}
 
-- [https://git.gnome.org/browse/evince/](https://git.gnome.org/browse/evince/)
-    - [log](https://git.gnome.org/browse/evince/log/)
+- [https://gitlab.gnome.org/GNOME/evince](https://gitlab.gnome.org/GNOME/evince)
+    - [コミットログ](https://gitlab.gnome.org/GNOME/evince/commits/master)
 
 ### Forks {#z48adc83}
 
@@ -173,7 +173,7 @@ ipaexg.ttf: "IPAexゴシック" "Regular"
 
 ### コマンドラインオプション {#bc93383b}
 
-- [https://git.gnome.org/browse/evince/tree/shell/main.c](https://git.gnome.org/browse/evince/tree/shell/main.c)
+- [https://gitlab.gnome.org/GNOME/evince/blob/master/shell/main.c](https://gitlab.gnome.org/GNOME/evince/blob/master/shell/main.c)
 
 ```
 $ evince --help
