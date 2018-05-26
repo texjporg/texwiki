@@ -79,7 +79,7 @@ sudo pacman -S evince poppler-data
 - [https://packages.ubuntu.com/ja/evince](https://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
-Evince は Gnome の標準ドキュメントビューアなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
+Evince は GNOME の標準ドキュメントビューアなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
 
 ```
 sudo apt install evince
@@ -104,11 +104,6 @@ sudo dnf install evince
 ```
 sudo zypper install evince
 ```
-
-### CentOS {#pb1cfba1}
-
-- [http://centos-packages.com/7/results/evince/](http://centos-packages.com/7/results/evince/)
-- [http://centos-packages.com/7/package/evince/](http://centos-packages.com/7/package/evince/)
 
 ### Beyond Linux From Scratch {#i9f92bae}
 
