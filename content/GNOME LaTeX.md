@@ -36,9 +36,6 @@ Windows, macOS, Linux
 - [GitHub - GNOME/gnome-latex: GNOME LaTeX, a LaTeX editor](https://github.com/GNOME/gnome-latex)
     - [NEWS](https://github.com/GNOME/gnome-latex/blob/master/NEWS)
     - [コミットログ](https://github.com/GNOME/gnome-latex/commits/master)
-- [gnome-latex - GNOME LaTeX, a LaTeX editor](https://git.gnome.org/browse/gnome-latex/)
-    - [NEWS](https://git.gnome.org/browse/gnome-latex/tree/NEWS)
-    - [コミットログ](https://git.gnome.org/browse/gnome-latex/log/)
 
 <!-- *不具合 [#o7b20b21] -->
 
