@@ -13,8 +13,6 @@ Okular は KDE に搭載されている，PDF, PS, DVI ファイルが表示可�
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/02/KDE-graphics-viewer-document.svg/200px-KDE-graphics-viewer-document.svg.png" alt="Okular" style="float:right">
-
 ***
 
 ***
@@ -29,7 +27,7 @@ KDE
 
 ### ライセンス {#qbc60c11}
 
-[GPLv2](https://quickgit.kde.org/?p=okular.git&a=blob&f=COPYING)
+[GPLv2](https://cgit.kde.org/okular.git/tree/COPYING)
 
 ### リリース情報 {#v4dc0489}
 
@@ -37,7 +35,7 @@ KDE
 
 ### ChangeLog {#h7a9328d}
 
-- [https://quickgit.kde.org/?p=okular.git&a=shortlog](https://quickgit.kde.org/?p=okular.git&a=shortlog)
+- [https://cgit.kde.org/okular.git/log/](https://cgit.kde.org/okular.git/log/)
 
 ### 派生版 {#m771d62f}
 
@@ -51,7 +49,7 @@ KDE
 
 ### Windows {#h8e4fcbd}
 
-[KDE on Windows](http://windows.kde.org/) のインストーラーを使用してインストールできます．
+[KDE on Windows](https://sourceforge.net/projects/kde-windows/) のインストーラーを使用してインストールできます．
 
 ## 代替フォントの設定 {#o2eb9a55}
 
@@ -61,7 +59,7 @@ KDE
 
 ### コマンドラインオプション {#md2d6a7f}
 
-- [https://quickgit.kde.org/?p=okular.git&a=blob&f=shell%2Fmain.cpp](https://quickgit.kde.org/?p=okular.git&a=blob&f=shell%2Fmain.cpp)
+- [https://cgit.kde.org/okular.git/tree/shell/main.cpp](https://cgit.kde.org/okular.git/tree/shell/main.cpp)
 
 ```
 $ okular --help
