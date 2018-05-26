@@ -30,15 +30,13 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 #### TeX Live 公式パッケージ {#jc67c0a8}
 
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#centos)
+- [参考メモ/CentOS7に TeX Live 2016 をインストールして簡単な動作確認をする](https://qiita.com/msakamoto_sf/items/78c322cb8656615ce134)
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 
 #### TeX Live/RHEL/CentOS/SL --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
 
-- [http://centos-packages.com/7/results/texlive/](http://centos-packages.com/7/results/texlive/)
-- [http://centos-packages.com/7/package/texlive/](http://centos-packages.com/7/package/texlive/)
-
-RHEL/CentOS/SL 7.3 の TeX Live は TeX Live 2012 です．
+RHEL/CentOS/SL 7.5 の TeX Live は TeX Live 2012 です．
 最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
 ```
@@ -58,8 +56,6 @@ sudo yum install ghostscript
 - [https://ius.io/LifeCycle/#python](https://ius.io/LifeCycle/#python) , [https://github.com/iuscommunity-pkg/](https://github.com/iuscommunity-pkg/)
     - [Python 3 を CentOS 7 に yum でインストールする手順](https://weblabo.oscasierra.net/python3-centos7-yum-install/)
 - [https://www.softwarecollections.org/scls/?search=Python](https://www.softwarecollections.org/scls/?search=Python)
-- [http://dl.fedoraproject.org/pub/epel/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/7/x86_64/p/)
-- [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/p/)
 
 #### Python 2 {#b51e9b09}
 
@@ -98,9 +94,7 @@ sudo yum install okular
 
 ### [LyX](/LyX/) {#ucf886d7}
 
-- [https://pkgs.org/search/LyX](https://pkgs.org/search/LyX)
-- [http://dl.fedoraproject.org/pub/epel/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/7/x86_64/l/)
-- [http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/](http://dl.fedoraproject.org/pub/epel/testing/7/x86_64/l/)
+- [https://pkgs.org/download/lyx](https://pkgs.org/download/lyx)
 
 ### [TeXstudio](/TeXstudio/) {#d3954fd9}
 
