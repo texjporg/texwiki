@@ -8,7 +8,7 @@ pukiwiki: "サクラエディタ"
 
 # サクラエディタ
 
-## [サクラエディタ](http://sakura-editor.sourceforge.net/) {#a8762a1e}
+## [サクラエディタ](https://sakura-editor.github.io/) {#a8762a1e}
 
 サクラエディタは国産のテキストエディタです．
 サクラエディタは
@@ -19,7 +19,9 @@ pukiwiki: "サクラエディタ"
 
 に対応しています．
 
-- [サクラエディタ - SourceForge](http://sakura-editor.sourceforge.net/)
+- [サクラエディタ - GitHub Pages](https://sakura-editor.github.io/)
+- [Sakura Editor Project Top Page - OSDN](https://osdn.net/projects/sakura-editor/)
+- [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
     - 掲示板\[[一般\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
     - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
     - [Members](https://sourceforge.net/p/sakura-editor/_members/)
@@ -36,13 +38,15 @@ Windows
 
 ### ダウンロード {#p4ea6725}
 
+- [https://sakura-editor.github.io/download.html](https://sakura-editor.github.io/download.html)
+- [https://github.com/sakura-editor/sakura/releases](https://github.com/sakura-editor/sakura/releases)
 - [http://jaist.dl.sourceforge.net/project/sakura-editor/](http://jaist.dl.sourceforge.net/project/sakura-editor/)
-- [パッケージダウンロード](http://sakura-editor.sourceforge.net/download.html)
 - [https://sourceforge.net/projects/sakura-editor/files/](https://sourceforge.net/projects/sakura-editor/files/)
 - [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
 
 ### 不具合 {#jbc9f4c6}
 
+- [Issues · sakura-editor/sakura · GitHub](https://github.com/sakura-editor/sakura/issues)
 - [BugReport - SakuraEditorWiki](http://sakura.qp.land.to/?BugReport)
 
 ### コマンドラインオプション {#j41d5a42}
@@ -204,8 +208,7 @@ $ wine sakura.exe
 
 - [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
 - [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
-- [log](https://sourceforge.net/p/sakura-editor/code/log/)
-- [https://sourceforge.net/p/sakura-editor/activity/](https://sourceforge.net/p/sakura-editor/activity/)
+- [コミットログ](https://github.com/sakura-editor/sakura/commits/master)
 
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
