@@ -101,6 +101,10 @@ Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%
           (YaTeX-system cmd "jump-line" 'noask pdir))))))
 ```
 
+### C-c C-t j でのコンパイル時に \includeonly の引数の置き換えがうまくできない {#ga957746}
+
+Emacs 26.1 から switch-to-buffer の仕様が変更されたため想定通りの動作をしない．YaTeX 1.80.3 で修正されたので YaTeX を更新する．
+
 ## ダウンロード {#g0fb682c}
 
 - [YaTeX リリース版](https://www.yatex.org/)
