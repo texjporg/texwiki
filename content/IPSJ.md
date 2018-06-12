@@ -12,7 +12,7 @@ pukiwiki: "IPSJ"
 現在の情報処理学会スタイル ipsj.cls は jis フォントメトリックに対応しています． <!-- というわけなので，「ipsj+jisフォントメトリック」という項目名から「IPSJ」に変更しました． -->
 ただし，uplatex には対応できていないようです．
 
-- [ipsj.cls で uplatex → NG](http://uep.ipe.media.kyoto-u.ac.jp/ipsj-cls-%E3%81%A7-uplatex-ng/)
+- [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
 
 % Fix Me! 以下は情報が古そうなので，どなたか修正お願いします！
 
@@ -52,12 +52,14 @@ pukiwiki: "IPSJ"
 
 ### 派生版 {#q33e05d4}
 
-- [IPSJ-techrep-xelatex](https://github.com/ken1row/IPSJ-techrep-xelatex) 情報処理学会研究会原稿をShareLatexなどのXeLaTeX環境で執筆するための疑似スタイルファイル
-- [ShareLatex を用いた情報処理学会研究会原稿の共同執筆](http://ken1row.net/archives/42)
+- [IPSJ-techrep-xelatex](https://github.com/ken1row/IPSJ-techrep-xelatex) 情報処理学会研究会原稿をOverleafなどのXeLaTeX環境で執筆するための疑似スタイルファイル
+- [ShareLatex を用いた情報処理学会研究会原稿の共同執筆](http://blog.k-tanaka.me/archives/42)
 
 ### 関連リンク {#xd2bfe1e}
 
+- [突然ですが：MacでTeX環境を作って情報処理学会の研究会フォーマットでコンパイルするまで](https://ameblo.jp/a33amimi/entry-12335729743.html)
+- [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/d-dsatoi/13c970563a2f5a489c9d)
 - [情報処理学会のLaTeXファイルをコンパイル](http://d.akiroom.com/2013-02/ipsj-latex-compile/)
-- [ipsj.cls で uplatex → NG](http://uep.ipe.media.kyoto-u.ac.jp/ipsj-cls-%E3%81%A7-uplatex-ng/)
+- [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
 - [（情報処理学会論文誌の投稿に関する）LaTeX による論文作成のガイド（第6版）](https://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/ipsj-old/sample.pdf)
 - [情報処理学会論文誌等を執筆時にdvipdfmxでlandscapeしなくて困った人が読むエントリ](http://written.4403.biz/archives/2009/02/dvipdfmxlandscape.html)
