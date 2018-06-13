@@ -9,7 +9,7 @@ pukiwiki: "PDF"
 
 ## PDF {#kf03468a}
 
-PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](http://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
+PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](https://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
 現在は，国際規格 [ISO 32000-2](https://www.iso.org/standard/63534.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
@@ -60,14 +60,14 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 有償のソフトウェアも様々な価格帯で多数あります．
 
 - [Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat.html)
-    ([Adobe Systems](http://www.adobe.com/jp/))
+    ([Adobe Systems](https://www.adobe.com/jp/))
 
-- [いきなりPDF シリーズ](http://www.sourcenext.com/titles/pdf/?i=com_top)
+- [いきなりPDF シリーズ](http://www.sourcenext.com/product/pdf/)
     ([ソースネクスト](http://www.sourcenext.com/))
 
-- [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](http://www.skycom.jp/))
-- [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](http://www.justsystems.com/jp/))
+- [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/))
 - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
+- [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
 
 既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat DC では多様なことができます．Acrobat DC の使い方については，
 [Acrobat DC ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
@@ -136,8 +136,8 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
+    - [Visual Studio Code](</Visual Studio Code/>) で LaTeX Workshop パッケージを使う
     - [Atom](/Atom/) で [pdf-view](https://atom.io/packages/pdf-view) パッケージを使う
-    - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) パッケージを使う
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
 - [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
@@ -158,17 +158,17 @@ PDF 関連のソフトウェアを作成するためのライブラリも様々�
 - [手書きPDF入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
 - [詳細PDF入門 ー 実装して学ぼう！PDFファイルの構造とその書き方読み方](http://itchyny.hatenablog.com/entry/2015/09/16/100000)
 
-PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](http://www.pdflib.com/) ([日本語サイト](http://www.pdflib.jp/)) が有名ですが，無償で公開されている　[PDFlib Lite](http://www.pdflib.com/download/free-software/pdflib-lite-7/) は，機能がかなり限定的です．
+PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](http://www.pdflib.com/) ([日本語サイト](http://www.pdflib.jp/)) が有名ですが，無償で公開されている [PDFlib Lite](http://www.pdflib.com/download/free-software/pdflib-lite-7/) は，機能がかなり限定的です．
 
 #### C と C++ {#hc56261e}
 
 [Poppler](/Poppler/) は PDF の描画・操作ライブラリで，様々なビューアに利用されています．多くの言語に対するバインディングが存在し，[Ruby](/Ruby/) などの各種言語で利用可能です．Xpdf-3.0 をベースに開発がスタートし，多くの改善がなされるとともに，Windows など様々なプラットフォームで利用可能となっています．
 
-[Haru free PDF library](http://libharu.org/)　は C　や C++　などをサポートする生成ライブラリです。様々な高水準グラフィックス・テキスト描画関数を備えており，PostScript Type1 や TrueType フォントなどの埋め込みが可能です．暗号化による PDF の保護にも対応しています．既存の PDF の読み込みには対応していません．
+[Haru free PDF library](http://libharu.org/) は C や C++ などをサポートする生成ライブラリです。様々な高水準グラフィックス・テキスト描画関数を備えており，PostScript Type1 や TrueType フォントなどの埋め込みが可能です．暗号化による PDF の保護にも対応しています．既存の PDF の読み込みには対応していません．
 
 [QPDF](/QPDF/) は，Jay Berkenbilt により保守・開発されている C++ の PDF 操作ライブラリです．既存の PDF の読み込みが行え，データの抽出や加工などに便利です．また，暗号化やリニアライゼーションをよくサポートしている点が魅力です．グラフィックス描画関数などは全くないため，PDF 生成を行うには，相当の PDF による図形やテキストの描画の知識が必要です．テキストやフォント関連のサポートなどもないため，自身で実装する必要があります．
 
-[Hummus PDF Writer](http://pdfhummus.com/)　は C++　や JavaScript (Node.js)　で利用可能な生成ライブラリです．テキストやグラフィックスの描画だけでなく，既存の PDF の取り込みと加工が可能です．OpenType など様々なフォント形式をサポートします．
+[Hummus PDF Writer](http://pdfhummus.com/) は C++ や JavaScript (Node.js) で利用可能な生成ライブラリです．テキストやグラフィックスの描画だけでなく，既存の PDF の取り込みと加工が可能です．OpenType など様々なフォント形式をサポートします．
 詳しくは，開発元の [Features](https://github.com/galkahana/PDF-Writer/wiki/Features) の項を参照してください．
 
 [PoDoFo](http://podofo.sourceforge.net/) は PDF ファイルを扱うための C++ ライブラリです．PDF を読み込み，加工することができます．
