@@ -14,7 +14,7 @@ QPDF は PDF ファイルの内容を維持したまま構造的な変換を行�
 
 <strong>公式サイト</strong>
 
-- [http://qpdf.sourceforge.net](http://qpdf.sourceforge.net)
+- [https://github.com/qpdf/qpdf](https://github.com/qpdf/qpdf)
 
 QPDF は PDF を暗号化したり，Web 表示用に最適化（ここではリニアライズのみ）したり操作したり，解析したりするコマンドラインプログラム (qpdf) や，テキストエディタで PDF をいじるためのプログラム (qpdf --qdf と fix-qdf) や PDF を読み込み操作するためのライブラリ (libqpdf) からなります．
 
