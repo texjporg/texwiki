@@ -106,7 +106,7 @@ Adobe Acrobat Distiller DC を含む製品（商品）です．
 値段は Adobe のサイトで確認してください．
 
 有償の Adobe Acrobat DC には，その機能によってプランが幾つか存在しています．
-「[Acrobat DCプラン別機能比較](https://acrobat.adobe.com/jp/ja/pricing/pricing-compare-plans.html)」などを参照してください．
+「[プランと価格 | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat/pricing.html)」などを参照してください．
 Standard と Pro がありますが，どちらも様々な文書ファイルや画像ファイルの PDF への変換をサポートしており，PDF のパスワード保護，複数の PDF の統合，PDF の編集などに対応しており，また，Word への書き出しや署名なども可能です．Pro ではこれに加え，PDF/X や PDF/A への変換や，これらへの規格適合性の検証 (プリフライト) などプロフェッショナル向けの機能を備えています．
 
 Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
