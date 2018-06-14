@@ -24,8 +24,8 @@ PDF から派生した規格として，主に以下のものがあります：
 
 Adobe より，元となる PDF の仕様書が公開されています (ISO の規格書は有償です)：
 
-- [PDF Reference and Adobe Extensions to the PDF Specification](http://www.adobe.com/devnet/pdf/pdf_reference.html)
-- [Adobe PDF Reference Archives](http://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
+- [PDF Reference and Adobe Extensions to the PDF Specification](https://www.adobe.com/devnet/pdf/pdf_reference.html)
+- [Adobe PDF Reference Archives](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
 Windows 10 と macOS では標準で PDF 出力が可能です．
 Windows 10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
