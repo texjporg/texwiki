@@ -10,10 +10,10 @@ pukiwiki: "PDF"
 ## PDF {#kf03468a}
 
 PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](https://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
-現在は，国際規格 [ISO 32000-2](https://www.iso.org/standard/63534.html) として ISO により公開されています．
+現在は，国際規格 [ISO 32000-2:2017](https://www.iso.org/standard/63534.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
-その用途は二十数年前の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
+その用途は 1993 年の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
 PDF から派生した規格として，主に以下のものがあります：
 
 - PDF/X -- 印刷用途に特化した規格。より安全な印刷データの受け渡しのため，PDF に様々な制約を設けています．
@@ -125,8 +125,8 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
 - [Poppler](/Poppler/) 系：Poppler を利用したものが多数あります．
     - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
     - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
-    - [Evince](/Evince/) (GNOME) SyncTeX に対応した GNOME 標準の PDF ビューア
-    - [Okular](/Okular/) (KDE) SyncTeX に対応した KDE 標準の PDF ビューア
+    - [Evince](/Evince/) (GTK+) SyncTeX に対応した GNOME 標準の PDF ビューア
+    - [Okular](/Okular/) (Qt) SyncTeX に対応した KDE 標準の PDF ビューア
     - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/) (Qt) Dual-Screen PDF Viewer for LaTeX-beamer
