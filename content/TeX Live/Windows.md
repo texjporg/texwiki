@@ -15,11 +15,20 @@ pukiwiki: "TeX Live/Windows"
 
 ## インストール {#rc65f8ae}
 
-ネットワークインストーラである install-tl-windows.exe / install-tl.zip と，全てのファイルが入っている ISO イメージからダウンロードする二つの方法があります．
+ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法，また，Windows バイナリを用いる方法を説明します．
 
-どちらを用いてもインストーラの手順はほぼ変わりません．基本的にはネットワークインストーラがよいと思いますが，うまく行かない場合などは ISO イメージを試してみてください．
+基本的には ISO イメージを用いる方法をおすすめします．
 
 いくつか追加で設定を行っておくと更に便利です．追加設定の項もご覧ください．
+
+### ISO イメージからのインストール {#zc468876}
+
+[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
+「download from a nearby CTAN mirror」から，texlive2018.iso をダウンロードしてください．
+Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
+Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
+ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
+中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
 ### ネットワークインストーラの場合 {#w369638d}
 
@@ -84,15 +93,6 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 > .\install-tl-windows.bat -help
 
 でヘルプを参照してください．
-
-### ISO イメージからのインストール {#zc468876}
-
-[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2018.iso をダウンロードしてください．
-Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
-Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
-ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
-中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
 ### 64-bit TeX Live Windows バイナリ (tl-win64.zip) {#t70745b0}
 
