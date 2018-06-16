@@ -104,8 +104,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2011年 {#k477190e}
 
-- CASTeX応用研究会　編『[KETpicで楽々TeXグラフ](http://www.etext.jp/publish.html#ketpic)』（[イーテキスト研究所](http://www.etext.jp/index.html)，2011年3月，定価 &yen;1,500＋税，[ISBN 978-4-904013-07-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-904013-07-6))
-
 #### 2010年 {#w6539047}
 
 #### 2009年 {#f22a42b4}
@@ -155,8 +153,6 @@ TeX や LaTeX に関する本の紹介です．
     - [やさしく学べるpLaTeX2e入門(サポートページ)](http://www.ma.is.saga-u.ac.jp/minamoto/latex/)
 
 #### 2002年 {#cd408659}
-
-- 横尾 英俊『[LaTeXユーザのためのレポート・論文作成入門](http://www.kyoritsu-pub.co.jp/bookdetail/9784320005655)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2002年，税込価格 &yen;2,376，[ISBN 978-4-320-00565-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-00565-5)）
 
 #### 2001年 {#f1b02c0b}
 
