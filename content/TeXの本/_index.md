@@ -67,7 +67,7 @@ TeX や LaTeX に関する本の紹介です．
 ### 書籍 {#z5fa285b}
 
 [TeX/LaTeX：　文献](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/texbiblio.html) や
-[本棚.org ](http://pitecan.com/Bookshelf/TeX/) も参照．
+[本棚.org ](http://hondana.org/TeX/) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
