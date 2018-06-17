@@ -382,7 +382,7 @@ sudo kanji-config-updmap-sys --jis2004 hiragino-highsierra-pron
 を実行しました。
 これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。
 
-!["ヒラギノ出力例"](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
+!["ヒラギノ出力例"](http://web.archive.org/web/20170304200444if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
 
 \usepackage\[uplatex,jis2004,expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
