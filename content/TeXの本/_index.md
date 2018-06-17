@@ -112,11 +112,11 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2008年 {#qb443317}
 
-- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年，定価 &yen;2,376，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
+- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,376，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
     ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
 
 - 吉永 徹美『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
-    （[翔泳社](http://www.shoeisha.co.jp/)，2008年，販売価格 &yen;3,456，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
+    （[翔泳社](http://www.shoeisha.co.jp/)，2008年3月，販売価格 &yen;3,456，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
     <!-- 「ただし，」以下の文章は，どの本についても言えることなので要らないと思います． -->
     <!-- - - 少なくとも「美文書」は違います。ただこの本に特筆すべきでない気もします。 -->
@@ -134,10 +134,10 @@ TeX や LaTeX に関する本の紹介です．
 
 - [阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](http://www.saiensu.co.jp/?page=book_details&ISBN=ISBN4-7819-1158-7)』
-    （[サイエンス社](http://www.saiensu.co.jp/)，2006年，価格 &yen;2,376 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
+    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月，価格 &yen;2,376 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
-- 寒川 光『[LaTeX&amp;PostScriptスーパーユーザのテクニック](http://www.kyoritsu-pub.co.jp/bookdetail/9784320121652)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2006年，税込価格 &yen;3,240，[ISBN 978-4-320-12165-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-12165-2)）
+- 寒川 光『[LaTeX&amp;PostScriptスーパーユーザのテクニック](http://www.kyoritsu-pub.co.jp/bookdetail/9784320121652)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2006年11月，税込価格 &yen;3,240，[ISBN 978-4-320-12165-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-12165-2)）
 
 #### 2005年 {#naf302ff}
 
@@ -146,7 +146,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2003年 {#d710115e}
 
 - [皆本 晃弥](http://www.ma.is.saga-u.ac.jp/minamoto/)『[やさしく学べる pLaTeX2e 入門 —文書作成からプレゼンテーションまで—](http://www.saiensu.co.jp/books-htm/ISBN978-4-7819-1032-1.htm)』
-    （サイエンス社，2003年，定価 &yen;2,916 (本体 &yen;2,700)，[ISBN 978-4-7819-1032-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1032-1)）……情報処理教育と
+    （サイエンス社，2003年6月，定価 &yen;2,916 (本体 &yen;2,700)，[ISBN 978-4-7819-1032-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1032-1)）……情報処理教育と
     しての講義・演習に使える pLaTeX2e の入門書。
     基本から数式，表作成，パッケージ，Web，プレゼンテーションへの利用まで解説。
     複雑な数式も扱えるように AMS-LaTeX についても紹介している。
@@ -158,17 +158,17 @@ TeX や LaTeX に関する本の紹介です．
 
 - Adobe Systems 著，桑沢清志 訳
     『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](https://store.kadokawa.co.jp/shop/g/g200600003703/)』
-    （アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
+    （アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年6月，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
 
 #### 2000年 {#o161a1dd}
 
 - 生田 誠三
     『[LaTeX2e 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
-    （朝倉書店，2000年，定価 &yen;6,264 (税込)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+    （朝倉書店，2000年6月，定価 &yen;6,264 (税込)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 ### 書籍 (絶版) {#qa17acad}
 
-[TeXの本/絶版](</TeXの本/絶版/>) を参照．<br>
+[TeXの本/絶版](</TeXの本/絶版/>) を参照．
 
 ## 英語の本 {#j5832dce}
 
