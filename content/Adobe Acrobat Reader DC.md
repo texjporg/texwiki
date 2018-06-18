@@ -22,6 +22,10 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ***
 
+### お知らせ {#k350f003}
+
+[Adobe Reader XI のサポートは 2017-10-15 に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
+
 ### 公式 Web ページ {#t103678c}
 
 - [PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html)
@@ -64,10 +68,10 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](http://motchy99.blog.fc2.com/blog-entry-106.html)
 
 ```
+sudo apt install wine-development winetricks
+winetricks mspatcha
 wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1801120040/AcroRdrDC1801120040_ja_JP.exe
 wine AcroRdrDC1801120040_ja_JP.exe
-cd ~/.wine/drive_c/ProgramData/Adobe/Setup/\{AC76BA86-7AD7-1041-7B44-AC0F074E4100\}
-msiexec /i AcroRead.msi
 ```
 
 Linux で Adobe Acrobat Reader DC を起動するには
@@ -77,10 +81,6 @@ wine cmd /c start AcroRd32.exe file.pdf
 ```
 
 のように実行します。
-
-Wine 3.4 で実行したところ Adobe Acrobat Reader DC は PDF ファイルを開いて 3 秒後に強制終了しましたが
-Adobe Reader XI であれば PDF ファイルを開いても強制終了せずに表示できました．
-ただし [Adobe Reader XI のサポートは 2017-10-15 に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
 
 ### Android {#k545c7f3}
 
