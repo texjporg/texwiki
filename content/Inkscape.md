@@ -31,7 +31,6 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
     - [コミットログ](https://gitlab.com/inkscape/inkscape/commits/master)
 - [Inkscape Wiki](http://wiki.inkscape.org)
     - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
-        - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
     - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
         - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
         - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
@@ -67,8 +66,9 @@ Windows, macOS, Linux
 
 - [Inkscape Wiki](http://wiki.inkscape.org)
     - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
-    - [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
-    - [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
+        - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
+        - [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
+        - [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
 - [svg-inkscape](https://ctan.org/pkg/svg-inkscape), [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html)
     - 使い方は texdoc で確認してください
 
@@ -79,7 +79,7 @@ Windows, macOS, Linux
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
-Inkscape は PDF, EPS, PS ファイルで保存する場合にテキストを除外して LaTeX ファイルを生成できます．
+Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS のテキストを除外して LaTeX ファイルを生成できます．
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
@@ -87,7 +87,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合にテキストを除
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
 >             ◯ テキストをパスに変換する<br>
 >             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
->   ☑ フィルダーエフェクトをラスタライズする<br>
+>   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
 >             ◯ エクスポートオブジェクトのサイズを使用<br>
@@ -100,7 +100,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合にテキストを除
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
 >             ◯ テキストをパスに変換する<br>
 >             🔘 EPS のテキストを除外して LaTeX ファイルを生成<br>
->   ☑ フィルダーエフェクトをラスタライズする<br>
+>   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
 >             ◯ エクスポートオブジェクトのサイズを使用<br>
@@ -113,14 +113,14 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合にテキストを除
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
 >             ◯ テキストをパスに変換する<br>
 >             🔘 PS のテキストを除外して LaTeX ファイルを生成<br>
->   ☑ フィルダーエフェクトをラスタライズする<br>
+>   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
 >             ◯ エクスポートオブジェクトのサイズを使用<br>
 >  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
 >  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
 
-コマンドラインからテキストを除外して LaTeX ファイルを出力することも可能です．
+コマンドラインから PDF, EPS, PS のテキストを除外して LaTeX ファイルを出力することも可能です．
 
 <!-- -https://inkscape.modevia.com/inkscape-man.html -->
 
