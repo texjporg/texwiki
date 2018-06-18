@@ -79,13 +79,14 @@ Windows, macOS, Linux
 - [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
 - [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
-Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+LaTeX, PS+LaTeX を指定できます．
+Inkscape は PDF, EPS, PS ファイルで保存する場合にテキストを除外して LaTeX ファイルを生成できます．
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PDF バージョン制限 <ins> PDF 1.5               \[ <strong>ᐯ</strong> \]</ins><br>
->   ☐ テキストをパスに変換する<br>
->   ☑ PDF+LaTeX: PDF のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション：  ◯ フォントを埋め込む<br>
+>             ◯ テキストをパスに変換する<br>
+>             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルダーエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
@@ -96,8 +97,9 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->   ☐ テキストをパスに変換する<br>
->   ☑ EPS+LaTeX: EPS のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション：  ◯ フォントを埋め込む<br>
+>             ◯ テキストをパスに変換する<br>
+>             🔘 EPS のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルダーエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
@@ -108,8 +110,9 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->   ☐ テキストをパスに変換する<br>
->   ☑ PS+LaTeX: PS のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション：  ◯ フォントを埋め込む<br>
+>             ◯ テキストをパスに変換する<br>
+>             🔘 PS のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルダーエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
 >  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
@@ -117,7 +120,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF+LaTeX, EPS+La
 >  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
 >  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
 
-コマンドラインから PDF+LaTeX, EPS+LaTeX, PS+LaTeX で出力することも可能です．
+コマンドラインからテキストを除外して LaTeX ファイルを出力することも可能です．
 
 <!-- -https://inkscape.modevia.com/inkscape-man.html -->
 
@@ -176,8 +179,8 @@ eqtexsvg.inx, eqtexsvg.py を C:\inkscape\\\share\extensions にコピーして�
 EqTeXSVG (LaTeX formula) は tempdir に inkscape-?????? フォルダーを作成しますが作成される inkscape-?????? フォルダーの親ディレクトリは
 
 ```
-PS C:\inkscape> .\python\python.exe
-Python 2.7.12 (v2.7.12:d33e0cf91556, Jun 27 2016, 15:19:22) [MSC v.1500 32 bit (Intel)] on win32
+PS C:\inkscape> .\python.exe
+Python 2.7.14 (default, Jan 24 2018, 14:36:54)  [GCC 7.2.0 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import tempfile
 >>> tempfile.gettempdir()
