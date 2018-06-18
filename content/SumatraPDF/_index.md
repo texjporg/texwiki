@@ -52,6 +52,8 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
     - [tex.vim](/Vim/tex.vim/)
     - vimtex
     - [Vim-LaTeX](/Vim-LaTeX/)
+- [Visual Studio Code](</Visual Studio Code/>)
+    - LaTeX Workshop
 - [Atom](/Atom/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Notepad++](/Notepad++/)
