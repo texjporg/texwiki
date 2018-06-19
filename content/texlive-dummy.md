@@ -11,20 +11,27 @@ pukiwiki: "texlive-dummy"
 
 Linux で TeX Live 公式パッケージをインストールした場合は TeX Live に依存するパッケージによって各種 Linux ディストリビューションが提供している TeX Live がインストールされないように TeX Live の dummy パッケージをインストールします．
 
+- [MyTeXpert:texlive-dummy](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?texlive-dummy)
+
 ***
 
 ***
 
 ### Arch Linux <a id="archlinux"></a> {#e2fe8ca0}
 
-- [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/)
+- [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/) (404 - Page Not Found)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/) をインストールします．
-texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
+<del>TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/) をインストールします．</del>
+
+<del>texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．</del>
 
 ```
 yaourt -S texlive-dummy
 ```
+
+AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911](http://mao.5ch.net/test/read.cgi/linux/1506160955/911) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/912](http://mao.5ch.net/test/read.cgi/linux/1506160955/912)
+
+[https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz) からダウンロードできるようです．
 
 ### Linux Mint/Debian/Ubuntu <a id="linuxmint"></a> <a id="debian"></a> <a id="ubuntu"></a> {#w5728cb9}
 
