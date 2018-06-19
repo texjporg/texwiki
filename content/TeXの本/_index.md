@@ -18,7 +18,7 @@ TeX や LaTeX に関する本の紹介です．
 
 ## 日本語の本 {#g6b468a6}
 
-### オンライン本 {#n75007a3}
+### オンライン本 <a id="online"></a> {#n75007a3}
 
 - ウィキブックス (Wikibooks) &mdash;
     [TeX/LaTeX 入門](http://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
