@@ -142,6 +142,7 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 TeX Live 2018 対応の事例です．
 
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
+- [TeX Live 2018をインストールした](http://alg-d.com/blog/2018/05/03.shtml)
 
 TeX Live 2017 対応の事例です．
 
