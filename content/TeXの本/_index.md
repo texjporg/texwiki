@@ -24,8 +24,8 @@ TeX や LaTeX に関する本の紹介です．
     [TeX/LaTeX 入門](http://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://www.facebook.com/watanabe.thor))
+    - [FrontPage - MyTeXpert](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?FrontPage)
     - [myTeXpert プロジェクト日本語トップページ - OSDN](https://ja.osdn.net/projects/mytexpert/)
-        - [FrontPage - MyTeXpert](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?FrontPage)
     - 『[好き好き LaTeX2e 初級編](https://ja.osdn.net/projects/mytexpert/releases/p6276)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
             として出版もされています。
