@@ -49,18 +49,18 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ### Windows {#l93a8183}
 
 - Adobe Acrobat Reader DC
-    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Windows)
+    - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
 - Adobe Acrobat DC
-    - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Windows)
+    - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows)
 
 ### macOS {#e9b65d66}
 
 - Adobe Acrobat Reader DC
-    - [http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=10&platform=Macintosh)
+    - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh)
     - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
 - Adobe Acrobat DC
-    - [http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh](http://www.adobe.com/support/downloads/product.jsp?product=1&platform=Macintosh)
+    - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh)
 
 ### Linux {#s5dbb0cf}
 
@@ -421,22 +421,19 @@ synctex help edit
 
 ## 関連リンク {#m8d917f7}
 
+- [MyTeXpert:Adobe Acrobat Reader DC](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Adobe%20Acrobat%20Reader%20DC)
 - [Visual Basic を使用した Adobe Reader の制御について](http://kb2.adobe.com/jp/cps/255/2556.html)
 - [Acrobat DDE Message 一覧](http://pdf-dde.nnn2.com/?p=43)
 - [PDFの指定ページを表示する。](http://goungoun.dip.jp/app/fswiki/wiki.cgi/devnotebook?page=Visual+Studio+.NET+2003+C%23%A1%A2PDF%B4%D8%CF%A2)
-- [Adobe Reader で PDF 文書を表示/印刷する方法](http://www.f3.dion.ne.jp/~element/msaccess/AcTipsAdobeReader.html)
 - [DDE通信を使用してPDFファイルを印刷する](http://www.knowledge-base.jp/2010/02/06/pdf-7/)
-- [Acrobat XIで保存したPDFファイルはTeXworksで使えない。](http://kilin.clas.kitasato-u.ac.jp/wordpress/?p=18487)
 - [【悲報（？）】魔改造版Win2000でAdobe Reader DCが動作することが判明](http://blog.livedoor.jp/blackwingcat/archives/1898824.html)
 - [黒翼猫/「Adobe Reader」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=BlackWingCat&word=Adobe+Reader)
-- [Acrobat | 初心者備忘録](http://www.ka-net.org/blog/?cat=136)
+- [Acrobat | 初心者備忘録](https://www.ka-net.org/blog/?cat=136)
 - [「Adobe Acrobat Reader」カテゴリーの記事一覧 | Solomonレビュー\[redémarrage\]](http://solomon-review.net/category/adobe-acrobat-reader/)
 - [スプールが終わるまでAdobeReaderを閉じる処理を待ちたいのですが、50ページ以上とかページ数が多いと、スプールが終わる前にAdobeReaderを閉じてしまいます。](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1421469214)
 - [AcroReloadPDF.js](https://mirror.ctan.org/support/acroreloadpdf/)
-- [Acrobat and PDF Library API Reference](http://livedocs.adobe.com/pdfl_sdk/10/PDFL_SDK10_HTMLHelp/API_References/Acrobat_API_Reference/)
-- [Interapplication communication | Adobe Acrobat Developer Center](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
-- [http://www.adobe.com/devnet/acrobat/interapplication_communication.html](http://www.adobe.com/devnet/acrobat/interapplication_communication.html)
-- [http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html](http://livedocs.adobe.com/acrobat_sdk/9.1/Acrobat9_1_HTMLHelp/wwhelp/wwhimpl/common/html/wwhelp.htm?context=Acrobat9_HTMLHelp&file=Reader_IAC.27.2.html)
+- [PDF&nbsp;Library&nbsp;API&nbsp;Reference](https://help.adobe.com/pdfl_sdk/15/PDFL_SDK_HTMLHelp/PDFL_SDK_HTMLHelp/API_References/PDFL_API_Reference/)
+- [Interapplication communication | Adobe Acrobat Developer Center](https://www.adobe.com/devnet/acrobat/interapplication_communication.html)
 - [MFCを利用しないプロジェクトからのIACの使用](http://kb2.adobe.com/jp/cps/510/510052.html)
 - [VOLE - A Neat C++ COM/Automation Driver](http://vole.sourceforge.net/)
 - [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
