@@ -27,7 +27,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
 
-Drag &amp; Drop UpTeX 20180608 は TeX Live 2018 scheme-small + collection-langjapanese + α。
+Drag &amp; Drop UpTeX 20180618 は TeX Live 2018 scheme-small + collection-langjapanese + α。
 
 Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
 
