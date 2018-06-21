@@ -52,6 +52,7 @@ $ sudo tlmgr install collection-langjapanese
 
 #### インストールの事例 {#q65e25e8}
 
+- [Mac に最小限の LaTeX 環境を導入する（2018年版）](https://qiita.com/yskuniv/items/8d9558b6d2edf8846520)
 - [Macbook Pro 事始め備忘録#BasicTeXのインストール](https://qiita.com/nqomorita/items/8491e10866aa53277f80#basictex%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab)
 
 #### TeX Live 2016 以降での注意点 {#y0fc0688}
@@ -86,4 +87,4 @@ LuaTeX-ja を実際に使用するには，別途 collection-luatex (ctablestack
 
 % [Twitter](https://twitter.com/_yyu_/status/728825087470632961) などを参考に再現してみて，最小構成を確認できれば追記します。 -- アセトアミノフェン (2016-06-22)
 
-% [ここ](http://qiita.com/yyu/items/e3451caa86779b94abe1)が参考になりそう。
+% [ここ](https://qiita.com/yyu/items/e3451caa86779b94abe1)が参考になりそう。
