@@ -39,7 +39,7 @@ Microsoft Windows（7 以降）, macOS, GNU/Linux で利用できます．TeXwor
 
 ### 設定 {#q50d2378}
 
-TeX Live （2016 以降）や W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
+TeX Live 2016 以降や W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
 
 [TeXworks/設定](</TeXworks/設定/>) を参照．
 
