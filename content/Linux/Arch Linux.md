@@ -28,8 +28,8 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - ArchWiki:TeX_Live, ArchWiki.ja:TeX_Live
+- \[[Arch Linux\] LaTeX環境を整える](https://qiita.com/Aruneko/items/6d073447bff91addd512)
 - [研究室のパソコンに Arch を入れるメモ](http://qiita.com/sira/items/e231fa11da611d4387c6)
-- [Arch Linux - TeX Liveのインストール](http://oldmanpylos14.seesaa.net/article/415312508.html)
 
 通常は texlive-langjapanese と texlive-most をインストールします．
 
@@ -108,7 +108,7 @@ sudo pacman -S zathura zathura-pdf-poppler zathura-ps
 ### [qpdfview](/qpdfview/) {#xe3804e4}
 
 ```
-yaourt -S qpdfview
+sudo pacman -S qpdfview
 ```
 
 ### [MuPDF](/MuPDF/) {#w1b2cec8}
@@ -160,7 +160,7 @@ sudo pacman -S texmaker
 ### [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
-yaourt -S texworks
+yay -S texworks
 ```
 
 ### [Emacs](/Emacs/) {#le6bf422}
@@ -196,7 +196,7 @@ sudo pacman -S inkscape pstoedit python2-lxml
 - ArchWiki:Fcitx, ArchWiki.ja:Fcitx
     <!-- -https://aur.archlinux.org/packages/fcitx-mozc-ut/ -->
     <!--  -->
-    <!-- yaourt -S fcitx-mozc-ut -->
+    <!-- yay -S fcitx-mozc-ut -->
 
 <!-- *Arch Linux のインストール [#ba9eb570] -->
 <!--  -->
@@ -235,8 +235,4 @@ sudo pacman -S inkscape pstoedit python2-lxml
 <!--  -->
 <!-- -[[ArchWiki:Pacman]], [[ArchWiki.ja:Pacman]] -->
 <!-- -[[Pacman Rosetta:https://wiki.archlinux.org/index.php/Pacman_Rosetta]] -->
-<!--  -->
-<!-- **Yaourt [#nf53cc4e] -->
-<!--  -->
-<!-- -[[ArchWiki:Yaourt]], [[ArchWiki.ja:Yaourt]] -->
 <!--  -->
