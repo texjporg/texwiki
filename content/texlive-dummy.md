@@ -26,7 +26,7 @@ Linux で TeX Live 公式パッケージをインストールした場合は TeX
 <del>texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．</del>
 
 ```
-yaourt -S texlive-dummy
+yay -S texlive-dummy
 ```
 
 AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911](http://mao.5ch.net/test/read.cgi/linux/1506160955/911) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/912](http://mao.5ch.net/test/read.cgi/linux/1506160955/912)
