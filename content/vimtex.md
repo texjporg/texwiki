@@ -23,11 +23,18 @@ vimtex は Vim の LaTeX プラグインです．
 
 - [https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt](https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt)
 - [https://github.com/lervag/dotvim/blob/master/vimrc](https://github.com/lervag/dotvim/blob/master/vimrc)
+- [【解決済】vimtex 更新で vim + vimtex + latexmk + (p)latex + dvipdfm(x) 環境が壊れる問題](https://www8281uo.sakura.ne.jp/blog/?p=626) --&gt; let g:vimtex_compiler_latexmk_engines = { '\_' : '-pdfdvi' }
 - [CLIのneovimでSkimとSyncTeXするには](http://qiita.com/KeitaNakamura/items/87dad47dc09ae8bf6abf)
 - [vimtexでuplatexがコンパイルできない（vimtex_compiler_latexmkの設定）](https://sakura-education.com/myblog/archives/936)
 
 vimtex はタイプセットに Latexmk を使用します．
-[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成してください．
+[Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成して $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (macOS, Linux) に
+
+```
+let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
+```
+
+を記述してください．
 
 vimtex 以外の Vim プラグインとしては，[tex.vim](/Vim/tex.vim/)，LaTeX Box，[quickrun](/quickrun/) があります．
 
