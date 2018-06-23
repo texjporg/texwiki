@@ -46,10 +46,10 @@ MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイ
 
 <div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
 
-|  | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
-|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+|  | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
+|---|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
 #### TeX Live のインストール {#texliveinstall}
 
