@@ -7,6 +7,8 @@ pukiwiki: "texlive-dummy"
 
 # texlive-dummy
 
+[TeX Live](</TeX Live/>) &gt; [Linux](/Linux/#texlive) &gt; texlive-dummy
+
 ## texlive-dummy {#u693d45c}
 
 Linux で TeX Live 公式パッケージをインストールした場合は TeX Live に依存するパッケージによって各種 Linux ディストリビューションが提供している TeX Live がインストールされないように TeX Live の dummy パッケージをインストールします．
@@ -20,22 +22,48 @@ Linux で TeX Live 公式パッケージをインストールした場合は TeX
 ### Arch Linux <a id="archlinux"></a> {#e2fe8ca0}
 
 - [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/) (404 - Page Not Found)
+- [https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy](https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy)
+- [https://github.com/zhou13/aur/tree/master/texlive-dummy](https://github.com/zhou13/aur/tree/master/texlive-dummy)
 
-<del>TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://aur.archlinux.org/packages/texlive-dummy/) をインストールします．</del>
-
-<del>texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．</del>
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は AUR の texlive-dummy をインストールします．
+texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
 
 ```
 yay -S texlive-dummy
 ```
 
-AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911](http://mao.5ch.net/test/read.cgi/linux/1506160955/911) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/912](http://mao.5ch.net/test/read.cgi/linux/1506160955/912)
+AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911](http://mao.5ch.net/test/read.cgi/linux/1506160955/911) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/912](http://mao.5ch.net/test/read.cgi/linux/1506160955/912) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/913](http://mao.5ch.net/test/read.cgi/linux/1506160955/913) , [http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/](http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/)
 
-[https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz) からダウンロードできるようです．
+AUR の texlive-dummy は [https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz) からダウンロードできるようです．
+
+[http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/](http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/) のコメント欄でのやりとりは以下のようになります．
+
+&amp;<span style="color:#1794D1">Latest Comments</span>;<br>
+
+<strong>zhou13 commented on 2018-02-26 21:56</strong><br>
+
+I am not on the mail list so I cannot post there. But I don't agree with that argument. He argued that "if we let people submit dummy packages, eventually we will have one dummy package in the AUR for each real package in the repos, on top of the numerous variations, patched versions, git version, devel versions, and compat versions". However, there is a reason why packages likes texlive and maybe nodejs deserve a different treatment. They have their own repository so essentially they are like distribution. It is reasonable to use the upstream package, which has less bugs and upgrades more frequently. In case of texlive, it has a huge list of dependency. Having an aur package is really convenient.
+
+<strong>Fabio&#x4c;olix commented on 2018-02-25 23:09</strong><br>
+
+As per this discussion [https://lists.archlinux.org/pipermail/aur-requests/2018-January/021830.html](https://lists.archlinux.org/pipermail/aur-requests/2018-January/021830.html) keep your pacman trickery for yourself and ask for deletion of this package or I'll do it. Thanks &#x3a;)
+
+<strong>zhou13 commented on 2018-01-21 23:53</strong><br>
+
+I don't know why the old texlive-dummy is removed from AUR so I created this. I just looked up the --asume-installed and I think they are very different. IMO the former is more likely to be a temporary solution. I don't want to have any inconsistency in my package dependency and texlive-dummy seems to be the only solution. I don't think such functionality can be replaced by --assumend-installed.
+
+<strong>Foucault commented on 2018-01-21 11:57</strong><br>
+
+This will get flagged for deletion again because the functionality is built-in to pacman.
+
+pacman --assume-installed texlive-bin=2017.44590 etc.
+
+It is however more convenient to have a separate package instead of adding a dozen command line arguments when installing a package.
 
 ### Linux Mint/Debian/Ubuntu <a id="linuxmint"></a> <a id="debian"></a> <a id="ubuntu"></a> {#w5728cb9}
 
 - [http://www.tug.org/texlive/debian.html#vanilla](http://www.tug.org/texlive/debian.html#vanilla)
+- [インストール後にやること#dummy パッケージの作成・インストール](http://www.fugenji.org/~thomas/texlive-guide/post_install.html)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
