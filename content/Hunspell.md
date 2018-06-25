@@ -70,7 +70,7 @@ $HOME/.emacs.d/init.elに次の行を追加してバイトコンパイルして�
 
 ## インストール {#y7b755eb}
 
-### Mac OS X {#x81dd2d5}
+### macOS {#x81dd2d5}
 
 #### MacPortsを利用したインストール {#i50afc8d}
 
@@ -118,9 +118,9 @@ $ pacman -S mingw-w64-i686-hunspell
 #### MinGW {#deab3978}
 
 ```
-$ curl -kRLO https://github.com/hunspell/hunspell/archive/v1.3.4.tar.gz
-$ tar xvf v1.3.4.tar.gz
-$ pushd hunspell-1.3.4
+$ curl -kRLO https://github.com/hunspell/hunspell/archive/v1.6.2.tar.gz
+$ tar xvf v1.6.2.tar.gz
+$ pushd hunspell-1.6.2
 $ ./configure --prefix=/mingw
 $ make
 $ make install
