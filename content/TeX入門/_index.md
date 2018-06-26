@@ -8,7 +8,7 @@ pukiwiki: "TeX入門"
 
 # TeX入門
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX 入門&quot;">
+<img src="http://web.archive.org/web/20140913010820if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX 入門&quot;">
 
 <div style="text-align:right"><strong>TeX</strong> /t&eacute;k/［名］〔コンピュータ〕テフ，テック</div>
 
