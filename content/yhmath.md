@@ -76,12 +76,12 @@ W32TeX の場合は，
 これについて Haralambous 氏にメールしたのですが，返事がありません。
 角藤さん [qa:22089](https://okumuralab.org/~okumura/texfaq/qa/22089.html) が直してくださいました。
 念のためここにも角藤さんの直された
-[yhcmex10.tfm](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex10.tfm) と
-[yhcmex10.vf](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex10.vf) を置いておきます。
+[yhcmex10.tfm](http://web.archive.org/web/20101128180449/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex10.tfm) と
+[yhcmex10.vf](http://web.archive.org/web/20101128180539/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/yhcmex10.vf) を置いておきます。
 
 大熊さんがさらにバグと解決法を見つけられました [qa:23593](https://okumuralab.org/~okumura/texfaq/qa/23593.html)。
 これについても Haralambous 氏に連絡しておきました。
 
 ### 関連リンク {#l55021be}
 
-- [Macports で導入した pTeX で yhmath フォント](http://knmac.math.kyushu-u.ac.jp/konno/modules/wpkonno/?p=12)
+- [Macports で導入した pTeX で yhmath フォント](https://knnlog.wordpress.com/2011/08/18/macports-%E3%81%A7%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%9F-ptex-%E3%81%A7-yhmath-%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88/)
