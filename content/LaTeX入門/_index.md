@@ -8,7 +8,9 @@ pukiwiki: "LaTeX入門"
 
 # LaTeX入門
 
-<img src="http://web.archive.org/web/20140913010820if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX 入門&quot;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/320px-LaTeX_logo.svg.png" alt="&quot;LaTeX 入門&quot;" width="140" height="57">
+
+<div style="text-align:left"><span style="font-size:36px">入門</span></div>
 
 <div style="text-align:right"><strong>TeX</strong> /t&eacute;k/［名］〔コンピュータ〕テフ，テック</div>
 
@@ -66,7 +68,9 @@ pTeX, pLaTeX
 現在は pTeX, pLaTeX を内部 Unicode 化した
 [upTeX, upLaTeX](/upTeX,upLaTeX/) が利用できます。
 
-最近では，Unicode に完全対応した [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/) というエンジンが開発されています。
+### Unicode 化された TeX, LaTeX {#gdc33ce4}
+
+Unicode に完全対応した [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/) というエンジンが利用できます。
 これらのエンジンの上で動く LuaLaTeX, LuajitLaTeX, XeLaTeX を使っても日本語を出力できます。
 
 ### LaTeX のバージョン {#q9d2d675}
