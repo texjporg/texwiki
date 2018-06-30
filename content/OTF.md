@@ -791,8 +791,8 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 
 #### [ヒラギノ書体](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使う場合 {#l6a3d188}
 
-- [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra/)
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra-pron/](https://github.com/texjporg/jfontmaps/tree/master/maps/hiragino-highsierra-pron/)
+- [http://git.texlive.info/tlcontrib/tree/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps-macos/hiragino-highsierra-pron](http://git.texlive.info/tlcontrib/tree/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps-macos/hiragino-highsierra-pron)
 
 - TeX Live の場合
 
