@@ -23,9 +23,9 @@ pukiwiki: "Emacs"
 
 ### 動作環境 {#tabe669d}
 
-GNU, GNU/Linux，BSD, macOS, Windows, Solaris などの OS がサポートされています．
+GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS Windows, Solaris などの OS で動作します．
 
-- [Wikipedia.en&#x3a;GNU_Emacs&#x23;Platforms](https://en.wikipedia.org/wiki/GNU_Emacs%23Platforms)
+- [GNU Emacs download - GNU Project](https://www.gnu.org/software/emacs/download.html)
 
 ### License {#u2ed578f}
 
@@ -41,13 +41,13 @@ GNU Emacs はフリーソフトウェアです．
 #### Windows {#k091604e}
 
 - 64-bit binary
-    - [NTEmacs64](https://github.com/chuntaro/NTEmacs64)
+    - [64bit版 GNU Emacs 26.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime)
     - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
         - [https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
     - [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
         - [https://vigou3.github.io/emacs-modified-windows/](https://vigou3.github.io/emacs-modified-windows/)
 - 32-bit binary
-    - [NTEmacs](http://cha.la.coocan.jp/doc/NTEmacs.html)
+    - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
 
 #### macOS {#v2ece0ad}
 
