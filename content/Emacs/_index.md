@@ -42,8 +42,6 @@ GNU Emacs はフリーソフトウェアです．
 
 - 64-bit binary
     - [64bit版 GNU Emacs 26.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime)
-    - [emacs-w64 | 64-Bit GNU Emacs for MS Windows with optimization](http://emacsbinw64.sourceforge.net/)
-        - [https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/](https://sourceforge.net/p/emacsbinw64/wiki/Build%20guideline%20for%20MSYS2-MinGW-w64%20system/)
     - [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
         - [https://vigou3.github.io/emacs-modified-windows/](https://vigou3.github.io/emacs-modified-windows/)
 - 32-bit binary
@@ -337,18 +335,18 @@ Source editor:
 
 ### Windows {#a1ddfe8b}
 
+- [NTEmacs の設定](https://www49.atwiki.jp/ntemacs/pages/1.html)
 - [Window版emacs24.4をclangでビルドする](http://blog.livedoor.jp/tek_nishi/archives/8597627.html)
-- [NTEmacs の設定](http://www49.atwiki.jp/ntemacs/pages/1.html)
 - [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
-- [C/Migemo を Windows 8 にインストール (Emacs 24 に移行のため)](http://uep.ipe.media.kyoto-u.ac.jp/cmigemo-%E3%82%92-windows-8-%E3%81%AB%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-emacs-24-%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%AE%E3%81%9F%E3%82%81/)
-- [Emacs 24のpackage管理機能を使う](http://keisanbutsuriya.blog.fc2.com/blog-entry-43.html)
+- [Windows環境でEmacs+C/Migemoの設定に詰まったのでメモ](http://grugrut.hatenablog.jp/entry/2015/04/emacs-migemo-on-windows)
+- [Emacs 24のpackage管理機能を使う](http://keisanbutsuriya.hateblo.jp/entry/2015/01/29/182251)
 - [NTEmacs version 24 とパッケージマネージャ](http://skalldan.wordpress.com/2012/06/26/ntemacs-version-24-%E3%81%A8%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3/)
 - [emacs.exe と emacsclient.exe を自動的に使い分ける AutoHotkey のスクリプトを作成した (gnupack 向け)](http://blechmusik.hatenablog.jp/entry/20120721/1342805665)
 - [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
 - [NTEmacs で UTF-8 な環境構築を試行錯誤](http://skalldan.wordpress.com/2011/11/09/ntemacs-%E3%81%A7-utf-8-%E3%81%AA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%82%92%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4/)
 - [Winodws 7 で Cygwin + NTEmacs 事始め](http://skalldan.wordpress.com/2011/11/04/winodws-7-%E3%81%A7-cygwin-ntemacs-%E4%BA%8B%E5%A7%8B%E3%82%81/)
 - [Emacs使いのミサワがWindowsで(NT)Emacs使うってそれどこ情報よー](http://d.hatena.ne.jp/sandai/20101015/p1)
-- [SanRin舎 &raquo; Emacs](http://sanrinsha.lolipop.jp/blog/2010/07/emacs-1.html)
+- [Emacs - SanRin舎](https://tmsanrinsha.net/post/2010/07/emacs-1/)
 - [Emacs 23.1登場](http://dev.ariel-networks.com/articles/emacs/part6/)
 - [GNU Emacsのinitファイルの置き場所＠Windows7](http://tamatamablog.blog.so-net.ne.jp/2010-02-10)
 - \[[ソフトウェア\] NTEmacs 23.2 のインストール・設定](http://d.hatena.ne.jp/itouhiro/20100605)
@@ -357,21 +355,17 @@ Source editor:
 
 ### macOS {#pa8b5a16}
 
+- [https://oku.edu.mie-u.ac.jp/~okumura/macosx/#emacs](https://oku.edu.mie-u.ac.jp/~okumura/macosx/#emacs)
+- [MacEmacs JP](https://ja.osdn.net/projects/macemacsjp/)
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
-    - [Emacs24 のインストールと新機能](http://sakito.jp/emacs/emacs24.html)
-- [emacs:init.el - PastelWiki](http://pastelwill.jp/wiki/doku.php?id=emacs:init.el)
-- [MacEmacs JP Project](http://macemacsjp.osdn.jp/)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [Retina を活かす Emacs へ移行](http://milanista224.blogspot.jp/2012/08/retina-emacs24.html)
-- [Mac研究環境/【エディタ】](http://www.rmss.is.uec.ac.jp/pukiwiki/index.php?Mac%B8%A6%B5%E6%B4%C4%B6%AD%2F%A1%DA%A5%A8%A5%C7%A5%A3%A5%BF%A1%DB)
 - [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
 - [Cocoa Emacs のフォント設定について](http://d.hatena.ne.jp/setoryohei/20110117/1295336454)
 - [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [CocoaEmacsに環境変数は引き継がれない](http://d.hatena.ne.jp/sugyan/20100704/1278241492)
 
-### Linux {#l2b4bca7}
-
-- [CentOS 6.4 に emacs 24.3 をインストールする。](http://jaxx2104.info/centos-6-4-emacs-24-3)
+<!-- **Linux [#l2b4bca7] -->
 
 ### リリース情報 {#z96ff3b2}
 
@@ -388,6 +382,7 @@ Source editor:
 
 ## 使い方 {#e776cf5f}
 
+- [emacs 26.1の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
 - [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
