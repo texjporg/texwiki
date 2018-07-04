@@ -63,6 +63,7 @@ It is however more convenient to have a separate package instead of adding a doz
 ### Linux Mint/Debian/Ubuntu <a id="linuxmint"></a> <a id="debian"></a> <a id="ubuntu"></a> {#w5728cb9}
 
 - [http://www.tug.org/texlive/debian.html#vanilla](http://www.tug.org/texlive/debian.html#vanilla)
+- [WSL に TeX Live の導入(+AucTeX の設定)#設定](https://qiita.com//ignorant/items/f8039a1e01292afff07f#%E8%A8%AD%E5%AE%9A)
 - [インストール後にやること#dummy パッケージの作成・インストール](http://www.fugenji.org/~thomas/texlive-guide/post_install.html)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
