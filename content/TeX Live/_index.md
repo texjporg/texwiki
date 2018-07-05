@@ -168,6 +168,10 @@ tltexjp は TeX Live の補助リポジトリです．
 - [https://texjp.org/#tltexjp](https://texjp.org/#tltexjp)
 - [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
 
+### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
+
+[TLContrib](/TLContrib/) は TeX Live の補完リポジトリです．
+
 ### [Pretests](</TeX Live/pretest/>) <a id="pretest"></a> {#tfc3ba44}
 
 [TeX Live/pretest](</TeX Live/pretest/>) を参照
