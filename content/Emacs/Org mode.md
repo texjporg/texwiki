@@ -389,7 +389,7 @@ org ファイルの先頭に
 
 ### Export to LaTeX {#k6bbb6c5}
 
-- [LaTeX and PDF export](http://orgmode.org/manual/LaTeX-and-PDF-export.html)
+- [LaTeX export](https://orgmode.org/manual/LaTeX-export.html#LaTeX-export)
 - [Org-mode で書いたファイルから A5 縦書き二段組の PDF を生成するツール](http://qiita.com/BooksThere/items/ff46ee6a5dc796df1e78)
 - [Emacs Org Mode から LaTeX Export する](http://ryogan.org/blog/2015/12/31/emacs-org-mode-%E3%81%8B%E3%82%89-latex-export-%E3%81%99%E3%82%8B/)
 - [BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで](http://gongo.hatenablog.com/entry/2014/01/13/225304)
