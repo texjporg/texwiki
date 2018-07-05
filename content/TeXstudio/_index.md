@@ -33,7 +33,7 @@ Windows, macOS, Linux
 
 ### License {#od98a625}
 
-[GPLv2](https://github.com/texstudio-org/texstudio/blob/master/utilities/COPYING)（QCodeEdit は [GPLv3](https://git.tuxfamily.org/qcodeedit/qce3.git/tree/GPL.txt)）
+[GPLv2](https://github.com/texstudio-org/texstudio/blob/master/utilities/COPYING)（QCodeEdit は [GPLv3](https://github.com/texstudio-org/texstudio/blob/master/src/qcodeedit/COPYING)）
 
 ### ダウンロード/インストール {#f36a3b67}
 
@@ -144,61 +144,58 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### macOS の場合 {#ued437e7}
 
-- [TexStudioをEl Capitanで使うまでにしたこと](http://qiita.com/kztka/items/80a244f4f90c1d48767d)
-- [MacでTex Live 2015 + TexStudio](http://www.hsakurai.com/entry/2015/07/03/190621)
+- [MacにTeXstudio(2017版)の環境を構築し、日本語入力出来るようになるまで](https://saisyojyugyo.com/tex-studio-on-mac)
 
-macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置します．
+macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は
+TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します．
 poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
-[TeXworks](/TeXworks/) をインストールしている場合は TeXworks に含まれている poppler-data を /usr/local/share/poppler にコピーして使用することもできます．
 
 poppler-data を配置する場所は strings と grep で調べることができます．
 
 ```
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
-/usr/local/share/poppler
-Unknown CID font collection, please report to poppler bugzilla.
-%Produced by poppler pdftops version: {0:s} (http://poppler.freedesktop.org)
 ```
 
-この場合は /usr/local/share/poppler が poppler-data を配置するディレクトリになります．
+TeXstudio 2.12.8 の場合は出力結果は以下のようになります．
 
-Homebrew で poppler-data をインストールする場合は以下のように実行します．
+> /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler/Color&#x50;rofiles/<br>
+> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/0.57.0-texworks/share/poppler</span>;<br>
+> %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
 
-```
-$ brew install poppler
-```
+出力結果から /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler が poppler-data を配置するディレクトリになります．
 
-poppler-data が /usr/local/share/poppler に配置されているかを確認します．配置されていない場合は /usr/local/share/poppler に配置します．
-
-brew install poppler でうまくいかない場合は以下のように実行します．
+poppler-data をインストールします．
 
 ```
 $ cd ~
 $ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz
 $ tar xvf poppler-data-0.4.9.tar.gz
-$ sudo mkdir -p /usr/local/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/share/poppler
+$ sudo mkdir -p /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler
 ```
 
-poppler-data は以下のように配置されます．
+<!-- poppler-data は以下のように配置されます． -->
+<!--  -->
+<!-- / -->
+<!-- └─usr/ -->
+<!--     └─local/ -->
+<!--         └─Cellar/ -->
+<!--             └─poppler/ -->
+<!--                 └─0.57.0-texworks/ -->
+<!--                     └─share/ -->
+<!--                         └─poppler/ -->
+<!--                             ├─cidToUnicode/ -->
+<!--                             ├─cMap/ -->
+<!--                             ├─nameToUnicode/ -->
+<!--                             ├─unicodeMap/ -->
+<!--                             ├─CMakeLists.txt -->
+<!--                             ├─COPYING -->
+<!--                             ├─COPYING.adobe -->
+<!--                             ├─COPYING.gpl2 -->
+<!--                             ├─Makefile -->
+<!--                             └─README -->
 
-```
-/
-└─usr/
-    └─local/
-        └─share/
-            └─poppler/
-                ├─cidToUnicode/
-                ├─cMap/
-                ├─nameToUnicode/
-                ├─unicodeMap/
-                ├─CMakeLists.txt
-                ├─COPYING
-                ├─COPYING.adobe
-                ├─COPYING.gpl2
-                ├─Makefile
-                └─README
-```
+組み込みの PDF ビューアで日本語が表示できることを確認します．
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
