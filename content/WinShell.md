@@ -12,7 +12,7 @@ pukiwiki: "WinShell"
 WinShell は Windows 向けに開発された TeX 用の統合環境です。
 しかし，WinShell には
 
-- エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
+- 「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
     [^1]
 
@@ -67,13 +67,13 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ## 不具合 {#m3e6b0cc}
 
-### エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### 「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [TeXworks](/TeXworks/)
 
-などのオープンソースの統合環境では，UTF-8 でも問題が発生しません。
+などのオープンソースの統合環境では，「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 でも問題が発生しません。
 
 ### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
@@ -122,7 +122,7 @@ WinShell の場合は例えば LaTeX のコマンドラインの設定で &#x25;
 Ruby や Windows PowerShell の変数を使用して &#x25;s を一度だけ使用するように設定を記述すれば OK です。
 Ruby, Windows PowerShell の他に バッチファイルを使用しても OK です。
 
-### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → UTF-8 を使用する {#n7cba889}
+### エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする → 「ワールドワイド言語サポートで Unicode UTF-8 を使用」を有効にして UTF-8 を使用する {#n7cba889}
 
 エンコーディングが ShiftJIS の場合，対応する括弧の強調表示時に日本語が文字化けする不具合があります。
 例えば
@@ -134,7 +134,7 @@ Ruby, Windows PowerShell の他に バッチファイルを使用しても OK �
 と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします。
 
 エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し，文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
-UTF-8 を使用すれば文字化けは回避できますが，UTF-8 では上述のとおり Runtime Error! が発生することがあります。
+「ワールドワイド言語サポートで Unicode UTF-8 を使用」を有効にして UTF-8 を使用すれば文字化けと Runtime Error! を回避できます。
 ShiftJIS を使用してなおかつ文字化けを回避したければ，対応する括弧の強調表示のチェックを外すほかありません。
 「オプション」から「強調表示」を選択し，対応する括弧の強調表示(M) のチェックをはずしてください。
 
@@ -219,9 +219,7 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 ### フォント {#y5d09419}
 
 初回起動時に言語選択で Japanese を選択した場合は, デフォルトで『スクリプト』が「日本語」，『エンコーディング』が「ShiftJIS」に設定されます。<br>
-[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更します。<br>
-ただし，UTF-8 を使用する場合は[上述](/WinShell/#g47585a4)のように，より致命的な Runtime Error が発生する場合があります。<br>
-エンコーディング指定を ShiftJIS と UTF-8 で試したうえで，<strong>不具合が避けられない場合は他の統合環境への移行を検討しましょう</strong>。<br>
+[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更して「ワールドワイド言語サポートで Unicode UTF-8 を使用」を ON にします。<br>
 フォントは確認の上ご自分の用途に応じたものを選んでください。<br>
 フォント名として「@ＭＳ ゴシック」のような “@” から始まる名前のフォントを選択するとテキストエディタの和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう。<br>
 
@@ -254,9 +252,9 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 デフォルトでは自動スペルチェックが有効になっています。<br>
 自動スペルチェックが必要ない場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします。
 
-## 主なTeXプログラムの設定：エンコーディングが UTF-8 の場合 {#vfb035c6}
+## 主なTeXプログラムの設定：「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合 {#vfb035c6}
 
-エンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
+「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
 
 Runtime Error! を回避するには，\[主なTeXプログラムの設定\] のプログラムの
 
