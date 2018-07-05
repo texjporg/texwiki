@@ -34,27 +34,22 @@ GNU Emacs はフリーソフトウェアです．
 
 ### ダウンロード {#m56139cf}
 
-- [https://www.gnu.org/software/emacs/download.html](https://www.gnu.org/software/emacs/download.html)
+- [GNU Emacs download - GNU Project](https://www.gnu.org/software/emacs/download.html)
 
 ### 派生版 {#n86b811e}
 
 #### Windows {#k091604e}
 
-- 64-bit binary
-    - [64bit版 GNU Emacs 26.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime)
-    - [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
-        - [https://vigou3.github.io/emacs-modified-windows/](https://vigou3.github.io/emacs-modified-windows/)
-- 32-bit binary
-    - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
+- [64bit版 GNU Emacs 26.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime) (64-bit binary)
+- [Emacs Modified for Windows](https://vigou3.github.io/emacs-modified-windows/) (64-bit binary)
+- [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html) (32-bit binary)
 
 #### macOS {#v2ece0ad}
 
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
-    - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
+- [Emacs Modified for macOS](https://vigou3.github.io/emacs-modified-macos/)
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
-    - [Emacs For Mac OS X: Releases, Pretests &amp; Nightlies](https://emacsformacosx.com/builds)
-- [http://vgoulet.act.ulaval.ca/en/home/](http://vgoulet.act.ulaval.ca/en/home/)
-    - [https://vigou3.github.io/emacs-modified-macos/](https://vigou3.github.io/emacs-modified-macos/)
+- [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
 
