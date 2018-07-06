@@ -560,7 +560,7 @@ texlipse.jar の PATH は自分の環境に合わせて修正してください�
 
 ```
 @echo off
-java -classpath "C:\eclipse\plugins\net.sourceforge.texlipse_1.5.0\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
+java -classpath "C:\eclipse\plugins\org.eclipse.texlipse_2.0.1.201801202105\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
 ```
 
 ***
