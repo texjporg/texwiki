@@ -22,8 +22,6 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 - [Eclipse TeXlipse | projects.eclipse.org](http://projects.eclipse.org/projects/science.texlipse)
 - [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
-- [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
-- [This is a backup of the TeXlipse homepage](https://texlipse.github.io/)
 - [Pdf4Eclipse](http://borisvl.github.io/Pdf4Eclipse/)
 - [GitHub - Borisvl/Pdf4Eclipse: A pdf viewer for Eclipse](https://github.com/Borisvl/Pdf4Eclipse)
 
@@ -87,9 +85,9 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 を参照．
 
-### Eclipse 4.8 Photon で TeXlipse をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できない {#ecef3992}
+### Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できない {#ecef3992}
 
-Eclipse 4.8 Photon で TeXlipse をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できません．
+Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できません．
 
 Eclipse Oxygen.3a (4.7.3a) を使用してください．
 
@@ -119,8 +117,6 @@ TeXlipse と Pdf4Eclipse をインストールします．
 
 ### TeXlipse {#xc1bd64d}
 
-#### TeXlipse 2.0.1 の場合 {#n71d7648}
-
 Eclipse を起動します．
 メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
 
@@ -129,20 +125,6 @@ Eclipse を起動します．
 を入力して Enter キーを押します．
 
 > LaTeX support for Eclipse
-
-にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
-インストール後 Eclipse を再起動します．
-
-#### TeXlipse 1.5.0（旧バージョン）の場合 {#nc0b962e}
-
-Eclipse を起動します．
-メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
-
-> &#x68;ttp://texlipse.github.io/
-
-を入力して Enter キーを押します．
-
-> TeXlipse
 
 にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
 インストール後 Eclipse を再起動します．
@@ -193,8 +175,6 @@ Eclipse を起動します．
 
 - [http://projects.eclipse.org/projects/science.texlipse/governance](http://projects.eclipse.org/projects/science.texlipse/governance)
 - [Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases)
-
-を参照．
 
 ### ChangeLog {#e321b2d0}
 
