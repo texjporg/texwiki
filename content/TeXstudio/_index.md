@@ -156,13 +156,12 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
 ```
 
-TeXstudio 2.12.8 の場合は出力結果は以下のようになります．
+TeXstudio 2.12.10 の場合は出力結果は以下のようになります．
 
-> /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler/Color&#x50;rofiles/<br>
-> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/0.57.0-texworks/share/poppler</span>;<br>
+> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/0.61.0-texworks/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
 
-出力結果から /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler が poppler-data を配置するディレクトリになります．
+出力結果から /usr/local/Cellar/poppler/0.61.0-texworks/share/poppler が poppler-data を配置するディレクトリになります．
 
 poppler-data をインストールします．
 
@@ -170,8 +169,8 @@ poppler-data をインストールします．
 $ cd ~
 $ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz
 $ tar xvf poppler-data-0.4.9.tar.gz
-$ sudo mkdir -p /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/Cellar/poppler/0.57.0-texworks/share/poppler
+$ sudo mkdir -p /usr/local/Cellar/poppler/0.61.0-texworks/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/Cellar/poppler/0.61.0-texworks/share/poppler
 ```
 
 <!-- poppler-data は以下のように配置されます． -->
@@ -181,7 +180,7 @@ $ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/Cellar/poppler/0.57.0-texworks/s
 <!--     └─local/ -->
 <!--         └─Cellar/ -->
 <!--             └─poppler/ -->
-<!--                 └─0.57.0-texworks/ -->
+<!--                 └─0.61.0-texworks/ -->
 <!--                     └─share/ -->
 <!--                         └─poppler/ -->
 <!--                             ├─cidToUnicode/ -->
