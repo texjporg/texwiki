@@ -10,7 +10,7 @@ pukiwiki: "TeXlipse"
 
 [Eclipse](/Eclipse/) > TeXlipse
 
-## [TeXlipse](http://texlipse.sourceforge.net/) {#cc0edd31}
+## [TeXlipse](http://projects.eclipse.org/projects/science.texlipse) {#cc0edd31}
 
 TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
@@ -20,18 +20,20 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ## 公式サイト {#m60f5d27}
 
-- [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
+- [Eclipse TeXlipse | projects.eclipse.org](http://projects.eclipse.org/projects/science.texlipse)
 - [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
+- [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
+- [This is a backup of the TeXlipse homepage](https://texlipse.github.io/)
 - [Pdf4Eclipse](http://borisvl.github.io/Pdf4Eclipse/)
-    - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
+- [GitHub - Borisvl/Pdf4Eclipse: A pdf viewer for Eclipse](https://github.com/Borisvl/Pdf4Eclipse)
 
 ### License {#y9484ed1}
 
-[Eclipse Public License (EPL)](https://github.com/eclipse/texlipse/blob/master/LICENSE)
+[Eclipse Public License 1.0](https://github.com/eclipse/texlipse/blob/master/LICENSE)
 
 ### スクリーンショット {#j94c34b3}
 
-[公式のスクリーンショットのページ](http://texlipse.sourceforge.net/screenshots/)を参照．
+[Pdf4Eclipse の Screenshot](http://borisvl.github.io/Pdf4Eclipse/pics/screenshot.jpg) を参照．
 
 ### 特徴 {#qe22fab6}
 
@@ -85,6 +87,12 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 を参照．
 
+### Eclipse 4.8 Photon で TeXlipse をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できない {#ecef3992}
+
+Eclipse 4.8 Photon で TeXlipse をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できません．
+
+Eclipse Oxygen.3a (4.7.3a) を使用してください．
+
 ### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない {#c876c383}
 
 - [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) (closed)
@@ -107,24 +115,32 @@ PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直
 
 ## インストール {#u4a48677}
 
+TeXlipse と Pdf4Eclipse をインストールします．
+
 ### TeXlipse {#xc1bd64d}
 
+#### TeXlipse 2.0.1 の場合 {#n71d7648}
+
 Eclipse を起動します．
-メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に<br>
-TeXlipse 2.0.1 をインストールする場合は
+メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
 
 > &#x68;ttp://download.eclipse.org/texlipse/2.0.1/
 
-TeXlipse 1.5.0 をインストールする場合は
-
-> &#x68;ttp://texlipse.github.io/
-
-を入力して Enter キーを押します．<br>
-TeXlipse 2.0.1 の場合は
+を入力して Enter キーを押します．
 
 > LaTeX support for Eclipse
 
-TeXlipse 1.5.0 の場合は
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
+インストール後 Eclipse を再起動します．
+
+#### TeXlipse 1.5.0（旧バージョン）の場合 {#nc0b962e}
+
+Eclipse を起動します．
+メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
+
+> &#x68;ttp://texlipse.github.io/
+
+を入力して Enter キーを押します．
 
 > TeXlipse
 
@@ -175,7 +191,10 @@ Eclipse を起動します．
 
 ### リリース情報 {#f49b6dcf}
 
-[Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases) を参照．
+- [http://projects.eclipse.org/projects/science.texlipse/governance](http://projects.eclipse.org/projects/science.texlipse/governance)
+- [Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases)
+
+を参照．
 
 ### ChangeLog {#e321b2d0}
 
