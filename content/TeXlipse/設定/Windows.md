@@ -548,27 +548,13 @@ forward search は PDF ファイル ビューアーの [TeXlipse/設定/Windows#
 
 ### inverse search {#lcd98656}
 
-inverse search は C:\eclipse\invtexlipse.bat を作成します．
-
-texlipse.jar の PATH は自分の環境に合わせて修正してください．
-
-***
-
-- C:\eclipse\invtexlipse.bat
-
-***
+inverse search は
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定で
 
 ```
-@echo off
-java -classpath "C:\eclipse\plugins\org.eclipse.texlipse_2.0.1.201801202105\texlipse.jar" net.sourceforge.texlipse.viewer.util.FileLocationClient -p 55000 -f %1 -l %2
+javaw -classpath "C:\eclipse\plugins\\org.eclipse.texlipse_2.0.1.201801202105\texlipse.jar" org.eclipse.texlipse.viewer.util.FileLocationClient -p 55000 -f "%f" -l %l
 ```
 
-***
+と設定します．
 
-SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定で C:\eclipse\invtexlipse.bat を指定し，
-
-```
-C:\eclipse\invtexlipse.bat "%f" %l
-```
-
-とします．
+texlipse.jar のフルパスは自分の環境に合わせて修正してください．
