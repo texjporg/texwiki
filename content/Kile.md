@@ -298,6 +298,14 @@ Source editor:
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
 
+## zathura との連携 {#k6bc7213}
+
+### forward and inverse search {#k321c508}
+
+- [Wikipedia.en:Zathura\_(document_viewer)](https://en.wikipedia.org/wiki/Zathura_%28document_viewer%29)
+
+の Forward/Inverse Search with Kile を参照．
+
 ## 関連リンク {#o6aee049}
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
