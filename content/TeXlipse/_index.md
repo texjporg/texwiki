@@ -22,9 +22,8 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 - [TeXlipse homepage &mdash; LaTeX for Eclipse](http://texlipse.sourceforge.net/)
 - [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
-- [Pdf4Eclipse](http://borisvl.github.com/Pdf4Eclipse/)
+- [Pdf4Eclipse](http://borisvl.github.io/Pdf4Eclipse/)
     - [Borisvl/Pdf4Eclipse · GitHub](https://github.com/Borisvl/Pdf4Eclipse)
-- [CTAN:help/Catalogue/entries/texlipse.html](https://mirror.ctan.org/help/Catalogue/entries/texlipse.html)
 
 ### License {#y9484ed1}
 
@@ -108,25 +107,43 @@ PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直
 
 ## インストール {#u4a48677}
 
-[Eclipse](/Eclipse/) を起動します．
-メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，
-「インストール」ウィンドウの \[追加(A)...\]で，
+### TeXlipse {#xc1bd64d}
 
-- 名前(N): TeXlipse Update Site
-- ロケーション(L): &#x68;ttp://texlipse.sourceforge.net
+Eclipse を起動します．
+メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に<br>
+TeXlipse 2.0.1 をインストールする場合は
 
-を入力して \[OK\] をクリックします．
+> &#x68;ttp://download.eclipse.org/texlipse/2.0.1/
 
-- Pdf4Eclipse
-- TeXlipse
+TeXlipse 1.5.0 をインストールする場合は
+
+> &#x68;ttp://texlipse.github.io/
+
+を入力して Enter キーを押します．<br>
+TeXlipse 2.0.1 の場合は
+
+> LaTeX support for Eclipse
+
+TeXlipse 1.5.0 の場合は
+
+> TeXlipse
 
 にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って TeXlipse をインストールします．
-TeXlipse のインストール後 Eclipse を再起動します．
+インストール後 Eclipse を再起動します．
 
-Update Site を使う方法がうまくいかない場合は [CTAN:support/texlipse/](https://mirror.ctan.org/support/texlipse/) や [texlipse.sourceforge.net/release.html](http://texlipse.sourceforge.net/release.html)
-から直接ダウンロードして展開 (解凍) します．
-展開したファイルの中に plugins フォルダーがあります．
-この plugins フォルダーを Eclipse フォルダーに上書きコピーします．
+### Pdf4Eclipse {#t020dd4e}
+
+Eclipse を起動します．
+メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
+
+> &#x68;ttp://borisvl.github.io/Pdf4Eclipse/
+
+を入力して Enter キーを押します．
+
+> Pdf4Eclipse
+
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って Pdf4Eclipse をインストールします．
+インストール後 Eclipse を再起動します．
 
 ## 設定 {#j3f79297}
 
@@ -139,13 +156,13 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 ## 関連リンク {#g42d5edd}
 
 - [Newest &#39;texlipse&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/texlipse)
+- [TeX環境構築（TeXlipse）](http://kougen.iobb.net/hobbygardens/article.php?id=64)
 - [Haru Blog｜TeXlipse](http://harublo9.blog57.fc2.com/?q=TeXlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
 - [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
 - [spell check does not run](https://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)
-- [TeXlipse and Chrome](http://bigneek.com/content/texlipse-and-chrome)
 - [Texlipse-Article-Template](https://github.com/feldob/Texlipse-Article-Template)
 - [TeXlipse as a lightweight portable TeX editor](http://blog.keyboardplaying.org/2012/05/26/texlipse-lightweight-portable-tex-editor/)
 - [TeXlipse is again my favorite LaTeX environment](http://joelslinux.blogspot.jp/2012/05/texlipse-is-again-my-favorite-latex.html)
@@ -158,7 +175,7 @@ Update Site を使う方法がうまくいかない場合は [CTAN:support/texli
 
 ### リリース情報 {#f49b6dcf}
 
-[News](http://texlipse.sourceforge.net/news.php) を参照．
+[Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases) を参照．
 
 ### ChangeLog {#e321b2d0}
 
