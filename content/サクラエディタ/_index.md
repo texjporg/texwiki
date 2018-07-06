@@ -198,7 +198,7 @@ $ wine sakura.exe
 ### License {#y5064e03}
 
 サクラエディタは，ソースコードの大部分が zlib/libpng ライセンスです．
-詳細は [ライセンス明確化推進計画](http://sakura.qp.land.to/?Develop/Licenses) を参照してください．
+詳細は [License · sakura-editor/sakura Wiki · GitHub](https://github.com/sakura-editor/sakura/wiki/License) を参照してください．
 
 ### リリース情報 {#qe1b7074}
 
