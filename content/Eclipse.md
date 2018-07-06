@@ -29,7 +29,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### License {#aa464649}
 
-[Eclipse Public License (EPL)](http://www.eclipse.org/org/documents/epl-v10.php)
+[Eclipse Public License 2.0](http://www.eclipse.org/legal/epl-2.0/)
 
 ### リリース情報 {#q303f311}
 
@@ -61,7 +61,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 を追加します．
 
-## Eclipse で TeX {#i62a454e}
+## Eclipse で LaTeX {#i62a454e}
 
 - [TeXlipse](/TeXlipse/)
 
@@ -70,5 +70,4 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 - Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
 - Pleiades - [http://mergedoc.osdn.jp/](http://mergedoc.osdn.jp/)
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
-- [Eclipse を使おう](http://x19290.appspot.com/using-eclipse/main.html)
 - [OpenJDK](http://openjdk.java.net/)
