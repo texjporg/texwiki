@@ -125,7 +125,7 @@ pukiwiki: "TeXlipse/設定"
 >
 > 　　使用するエンジンのスペルを選択(U): <span style="color:Black;background-color:#EEEEEE;">\[Latex　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 
-[http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/](http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/) や [https://sourceforge.net/projects/texlipse/files/dictionaries/](https://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
+[https://github.com/dcharkes/texlipse-en_US-dictionary](https://github.com/dcharkes/texlipse-en_US-dictionary) や [http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/](http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/) や [https://sourceforge.net/projects/texlipse/files/dictionaries/](https://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
 
 辞書ファイルを展開します．
 
