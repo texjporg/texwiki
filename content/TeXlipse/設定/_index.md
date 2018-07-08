@@ -224,16 +224,18 @@ makeidx パッケージが作成するテンポラリーファイルを tmp デ�
 
 [Vrapper — Vim-like editing in Eclipse](http://vrapper.sourceforge.net/) を使用すれば可能です．
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">\[追加(A)...\]</span>　</span><br>
+<span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span>　</span><br>
 
-> <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>リポジトリーの追加</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
->
-> 名前(N):　　　　　<ins>Vrapper Update Site</ins><br>
-> ロケーション(L): <ins>&#x68;ttp://vrapper.sourceforge.net/update-site/stable</ins>
+> &#x68;ttp://vrapper.sourceforge.net/update-site/stable
 
-を追加します．Vrapper にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って Vrapper をインストールします．
+を入力して Enter キーを押します．
 
-ツールバーの [Vim](/Vim/) アイコンをクリックすると [Vim](/Vim/) 風のキーバインドで編集できます．
+> Vrapper
+
+にチェックを入れ，\[次へ(N) >\] をクリックして，指示に従って Vrapper をインストールします．
+インストール後 Eclipse を再起動します．
+
+<!-- ツールバーの [[Vim]] アイコンをクリックすると [[Vim]] 風のキーバインドで編集できます． -->
 
 ### 表示色の変更 {#fcb1af55}
 
