@@ -24,6 +24,7 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
 
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#archlinux)
+- [【Arch Linux】TeX LiveインストーラでLaTeXの環境を構築する](https://qiita.com//kazushisan/items/9a5cbd389de63f4aaf75)
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
