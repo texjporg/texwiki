@@ -60,6 +60,7 @@ W32TeX には dviout が含まれていないので，追加でインストー�
 
 #### 32-bit dviout {#h6957949}
 
+- [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
     （安定版）
 
@@ -246,7 +247,7 @@ synctex help edit
 
 ## 関連リンク {#a0623ac1}
 
-- [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/)
+- [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/) [関連ファイル](http://argent.shinshu-u.ac.jp/~otobe/tex/files/) (乙部先生@信州大学)
 - [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://twitter.com/aminophen/status/873785429765480448)
 
 ### ライセンス {#w9d4ec9d}
