@@ -835,6 +835,6 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
 
-[^1]: [e-pTeX](/e-pTeX/#p4d23466) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします。ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます。
+[^1]: [ptexenc](/ptexenc/) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします。ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます。
 [^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください。
 [^3]: レジストリの編集には危険が伴う場合があります。自信のない場合は控えるなど，十分ご注意ください。
