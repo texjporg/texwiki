@@ -54,10 +54,10 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
     - [ftp://ftp.lyx.org/pub/lyx/bin/](ftp://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [ftp://ftp.lyx.org/pub/lyx/stable/](ftp://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [ftp://ftp.lyx.org/pub/lyx/devel/](ftp://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- LyXWinInstaller
-    - [http://ftp.lyx.de/](http://ftp.lyx.de/) 開発版と安定版の Windows バイナリ
-    - [http://jaist.dl.sourceforge.net/project/lyxwininstaller/](http://jaist.dl.sourceforge.net/project/lyxwininstaller/) 安定版の Windows バイナリ
-    - [https://sourceforge.net/projects/lyxwininstaller/files/](https://sourceforge.net/projects/lyxwininstaller/files/) 安定版の Windows バイナリ
+        <!-- -LyXWinInstaller -->
+        <!-- - -http://ftp.lyx.de/ 開発版と安定版の Windows バイナリ -->
+        <!-- - -http://jaist.dl.sourceforge.net/project/lyxwininstaller/ 安定版の Windows バイナリ -->
+        <!-- - -https://sourceforge.net/projects/lyxwininstaller/files/ 安定版の Windows バイナリ -->
 
 ## インストール {#r9ac9b39}
 
