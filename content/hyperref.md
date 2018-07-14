@@ -1089,7 +1089,7 @@ abc
 - [http://www.tug.org/applications/hyperref/](http://www.tug.org/applications/hyperref/)
 - [CTAN:help/Catalogue/entries/hyperref.html](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html)
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
-- [bst fileでhyperrefを入れる方法](http://warubobo13.hatenablog.jp/entry/2013/02/03/074303)
+- [LaTeXの縦書き右綴じの文書をPDFにしたときに、うまく見開き表示するための方法](http://id.fnshr.info/2015/11/03/latex-pdf-r2l/)
 - [hyperref利用時の2つの注意点](http://0-chromosome.hatenablog.jp/entry/2015/04/10/175912)
 - [HyperTeX](/HyperTeX/)
 
