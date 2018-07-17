@@ -143,7 +143,7 @@ else if (capt=="%%") commandline.replace("%%","%");
 
 と記述されており，最初に &#x25; にマッチした場合は &#x25; が "basename" に置き換えられて &#x25;&#x25; は &#x25; に変換されずに "basename" が2回出力され，最初に &#x25;&#x25; にマッチした場合は &#x25;&#x25; は &#x25; に変換されますが &#x25; は "basename" に変換されずに &#x25; のまま出力されるためこの処理方法ではファイル名 (&#x25;) と % の表記 (&#x25;&#x25;) は同時に使用することが困難であると考えられます．
 
-[http://hg.code.sf.net/p/texstudio/hg/file/tip/buildmanager.cpp#l476](http://hg.code.sf.net/p/texstudio/hg/file/tip/buildmanager.cpp#l476) によると TeXstudio では
+[https://github.com/texstudio-org/texstudio/blob/master/src/buildmanager.cpp#L476](https://github.com/texstudio-org/texstudio/blob/master/src/buildmanager.cpp#L476) によると TeXstudio では
 
 ```
  	for (int i = 0; i < str.size(); i++) {
