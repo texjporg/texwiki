@@ -79,27 +79,27 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-230-Installer-004.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-230-Installer-005.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="http://git.lyx.org/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-230-Installer-004.exe</ins><br>
+　　　　　　 <ins>LyX-230-Installer-005.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　58.0 MB (60,909,637 バイト)<br>
-　　　　ディスク上　　　　　　58.0 MB (60,911,616 バイト)<br>
+　　　　サイズ:　　　　　　　　58.4 MB (61,316,807 バイト)<br>
+　　　　ディスク上　　　　　　58.4 MB (61,317,120 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2018年7月7日、01:00:00<br>
-　　　　更新日時:　　　　　　2018年7月7日、01:00:00<br>
-　　　　アクセス日時:　　　　2018年7月7日、01:00:00<br>
+　　　　作成日時:　　　　　　2018年7月14日、01:00:00<br>
+　　　　更新日時:　　　　　　2018年7月14日、01:00:00<br>
+　　　　アクセス日時:　　　　2018年7月14日、01:00:00<br>
 
 <br>
 
