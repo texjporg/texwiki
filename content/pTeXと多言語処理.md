@@ -89,7 +89,7 @@ macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/)，[Visual Studio Co
 文字がラテンアルファベットやキリル文字でない場合，各種パッケージを用いることになるかもしれません。
 欧米の諸言語であれば「[pTeX 3.1.41とBabel 3.8](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」でも取り扱っていますが，ここでは例としてグルジア語について紹介します。
 
-#### グルジア語 {#mxeldrul}
+#### グルジア語 (ジョージア語) {#mxeldrul}
 
 グルジア語の場合，TeX では [mxedruli パッケージ](https://mirror.ctan.org/help/Catalogue/entries/mxedruli.html)を用いることで，多数のグルジア文字を扱うことができます。
 mxedruli パッケージは ASCII アルファベットでグルジア語を記述することになります。
