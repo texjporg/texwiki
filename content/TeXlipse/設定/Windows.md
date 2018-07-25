@@ -552,7 +552,7 @@ inverse search は
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定で
 
 ```
-javaw -classpath "C:\eclipse\plugins\\org.eclipse.texlipse_2.0.1.201801202105\texlipse.jar" org.eclipse.texlipse.viewer.util.FileLocationClient -p 55000 -f "%f" -l %l
+javaw -classpath "C:\eclipse\plugins\\org.eclipse.texlipse_2.0.2.201807241928\texlipse.jar" org.eclipse.texlipse.viewer.util.FileLocationClient -p 55000 -f "%f" -l %l
 ```
 
 と設定します．
