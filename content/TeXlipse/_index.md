@@ -85,13 +85,13 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 を参照．
 
-### Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できない {#ecef3992}
-
-Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できません．
-
-Eclipse Oxygen.3a (4.7.3a) を使用してください．
-
-- [Texlipse preferences crash in Eclipse Photon Release (4.8.0) · Issue #61 · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/issues/61)
+<!-- **Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できない [#ecef3992] -->
+<!--  -->
+<!-- Eclipse Photon (4.8) で TeXlipse 2.0.1 をインストールして設定しようとすると「現在表示されているページに、無効な値が含まれています。」と表示され設定できません． -->
+<!--  -->
+<!-- Eclipse Oxygen.3a (4.7.3a) を使用してください． -->
+<!--  -->
+<!-- -[[Texlipse preferences crash in Eclipse Photon Release (4.8.0) · Issue #61 · eclipse/texlipse · GitHub:https://github.com/eclipse/texlipse/issues/61]] -->
 
 ### PDF renderer が SUN renderer の場合に ä ö ü fi などの文字が Pdf4Eclipse で表示されない {#c876c383}
 
@@ -122,7 +122,7 @@ TeXlipse と Pdf4Eclipse をインストールします．
 Eclipse を起動します．
 メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
 
-> &#x68;ttp://download.eclipse.org/texlipse/2.0.1/
+> &#x68;ttp://download.eclipse.org/texlipse/2.0.2/
 
 を入力して Enter キーを押します．
 
