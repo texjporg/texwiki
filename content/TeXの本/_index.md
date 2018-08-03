@@ -73,6 +73,8 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2018年 {#l525d944}
 
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』（[翔泳社](https://www.shoeisha.co.jp/)，2018年8月，価格 &yen;3,218 (本体 &yen;2,980)，[ISBN 978-4-7981-5707-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
+
 #### 2017年 {#w6228190}
 
 - [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
