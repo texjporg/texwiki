@@ -49,7 +49,7 @@ cmap-resources-master.zip を取得できます。
 \CID や \UTF を使いたい場合は，次のパッケージを使います。
 
 - [LuaTeX-ja](/LuaTeX-ja/) の場合：luatexja-otf パッケージを読み込みます。
-- XeLaTeX の場合：[ZXotf パッケージ](http://zrbabbler.sp.land.to/zxotf.html)を読み込みます。
+- XeLaTeX の場合：[ZXotf](https://github.com/zr-tex8r/ZXotf) パッケージを読み込みます。
 
 ## 使い方 {#c8490780}
 
@@ -1008,7 +1008,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [https://ctan.org/pkg/japanese-otf-uptex](https://ctan.org/pkg/japanese-otf-uptex)
 - [https://ctan.org/pkg/ptex-fontmaps](https://ctan.org/pkg/ptex-fontmaps)
 - [upLaTeX + \propshape](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1235)
-- [ZXotf パッケージ ～XeTeX でも CID フォントを～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxotf.html) （ZRさん）
+- [GitHub - zr-tex8r/ZXotf: LaTeX: AJ1 CID input on XeLaTeX](https://github.com/zr-tex8r/ZXotf) （ZRさん）
 - [フリーフォントを活用するために](http://fugenji.org/thomas/texlive-guide/free_font.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [Mac OS X 上のLaTeXで外字、異体字を使う方法](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/gaiji.html) （たちゃなさん）
