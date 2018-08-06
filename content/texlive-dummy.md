@@ -33,11 +33,15 @@ texlive-dummy をインストールすると TeX Live/Arch Linux に依存する
 yay -S texlive-dummy
 ```
 
-AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911](http://mao.5ch.net/test/read.cgi/linux/1506160955/911) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/912](http://mao.5ch.net/test/read.cgi/linux/1506160955/912) , [http://mao.5ch.net/test/read.cgi/linux/1506160955/913](http://mao.5ch.net/test/read.cgi/linux/1506160955/913) , [http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/](http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/)
+AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911-913](http://mao.5ch.net/test/read.cgi/linux/1506160955/911-913)
 
-AUR の texlive-dummy は [https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.xz) からダウンロードできるようです．
+AUR の texlive-dummy は [https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.gz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.gz) からダウンロードできるようです．
 
-[http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/](http://webcache.googleusercontent.com/search?q=cache:EaXS6hdXOb8J:https://aur.archlinux.org/pkgbase/texlive-dummy/) のコメント欄でのやりとりは以下のようになります．
+AUR の texlive-dummy ではなく pacman --assume-installed を使用する場合は &#x7e;/.bashrc に以下の記述を追加してターミナルから source &#x7e;/.bashrc を実行するといいようです．
+
+> alias pacman="pacman --assume-installed texlive-bin $(\pacman -Sgq texlive-most texlive-lang)"
+
+[https://aur.archlinux.org/pkgbase/texlive-dummy/](https://aur.archlinux.org/pkgbase/texlive-dummy/) (404 - Page Not Found) のアーカイブのコメント欄でのやりとりは以下のようになります．
 
 &amp;<span style="color:#1794D1">Latest Comments</span>;<br>
 
