@@ -97,7 +97,7 @@ W32TeX には，フルインストール / 標準インストール / 最小イ�
 
 #### 簡易インストーラの実行 {#wa3b57f2}
 
-[texinstwin.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/texinstwin.zip) を展開してください．
+[texinstwin.zip](http://ftp.ne.jp/CTAN/systems/win32/w32tex/texinstwin.zip) を展開してください．
 展開した場所がインストールフォルダとなります．
 以下では，C:\w32tex 内に展開されたとします．
 
@@ -301,12 +301,11 @@ command_line_encoding.dvips = none
 
 <strong>FTP</strong>
 <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
-- [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-    <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
-    <!-- -[[KDDI研究所:http://www.kddilabs.jp/]] -->
-
+<!-- -ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- -ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- -ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
+<!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+<!-- -[[KDDI研究所:http://www.kddilabs.jp/]] -->
 - [KDDI研究所](ftp://ftp.kddilabs.jp/TeX/ptex-win32/current/)
     <!-- - -ftp://ftp-srv2.kddilabs.jp/TeX/ptex-win32/current/ -->
     <!-- - -ftp://ftp.ne.jp/TeX/ptex-win32/current/ -->
@@ -334,10 +333,9 @@ command_line_encoding.dvips = none
 <!-- -[[ctan.ijs.si (in スロベニア):http://ctan.ijs.si/]] -->
 - [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
     <!-- -[[Ring Server:http://www.ring.gr.jp/]] -->
-
-- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+    <!-- -http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- -http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
+    <!-- -http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/ -->
     <!-- -[[KDDI研究所:http://www.kddilabs.jp/]] -->
 
 - [KDDI研究所](http://ftp.kddilabs.jp/TeX/ptex-win32/current/)
