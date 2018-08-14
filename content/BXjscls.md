@@ -219,13 +219,7 @@ base オプションで，基底フォントサイズ（\normalsize のフォン
 \usepackage[hiragino-pron]{zxjafont}
 ```
 
-- 例えば、「jafont=sourcehan(-otc)」のように括弧付きの値を指定すると、XeLaTeX/LuaLaTeX
-
-では「sourcehan」、それ以外のエンジンでは「sourcehan-otc」と解釈されます。（）
-
-- 「jafont=auto」を指定すると、TeX Liveのkanji-config-updmapコマンドで指定した
-
-ファミリ名が実際のプリセット名として使われます。（）
+<!-- 別小節(#vcf338a2,#z7248164)に移した前の残骸が残っていた -->
 
 ※もちろん，jafont を使わずに手動で和文フォントを設定しても構いません．
 
