@@ -25,7 +25,13 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.22 以降に更新してください．
+Ghostscript 9.24 以降に更新してください．
+
+Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱性が存在します．
+
+- [Ghostscript の -dSAFER オプションの脆弱性に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180035.html)
+- [JVNVU#90390242: Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性](http://jvn.jp/vu/JVNVU90390242/)
+
 Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
 TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
 
@@ -125,7 +131,7 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 #### リリース情報 {#jbfe1b2f}
 
 - [http://git.ghostscript.com/?p=ghostpdl.git;a=tags](http://git.ghostscript.com/?p=ghostpdl.git;a=tags)
-- [Ghostscript: News](http://www.ghostscript.com/News.html)
+- [Ghostscript: Release History](https://www.ghostscript.com/release_history.html)
 
 #### ChangeLog {#ua2f6680}
 
