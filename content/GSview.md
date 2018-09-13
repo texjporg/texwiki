@@ -7,10 +7,10 @@ pukiwiki: "GSview"
 
 # GSview
 
-## [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) {#o3c38991}
+## [GSview](http://pages.cs.wisc.edu/~ghost/gsview/) (Ghostgum GSview) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
-紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物のようにみえます（確かではありません）。
+紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
@@ -74,6 +74,7 @@ jisB8=181,258
 
 ### 関連リンク {#yb0d4b4b}
 
+- [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
 - [gs-9.19 for windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1867)
 - [gs-9.18 for windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1678)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
