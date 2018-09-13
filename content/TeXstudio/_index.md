@@ -12,7 +12,7 @@ pukiwiki: "TeXstudio"
 
 TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具合修正した LaTeX 統合環境です．
 
-- エディタ部分は [QCodeEdit](http://qcodeedit.org/) をベースにして改変したものを使用しています．
+- エディタ部分は [QCodeEdit](http://web.archive.org/web/20180330084443/http://qcodeedit.org/) をベースにして改変したものを使用しています．
 - PDF ビューアは [TeXworks](/TeXworks/) の PDF ビューアをベースにして改変したものを使用しています．
 - メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
