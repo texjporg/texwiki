@@ -7,9 +7,9 @@ pukiwiki: "dvisvgm"
 
 # dvisvgm
 
-## [dvisvgm](http://dvisvgm.bplaced.net/) {#hefd7ca2}
+## [dvisvgm](http://dvisvgm.de/) {#hefd7ca2}
 
-<!-- 旧 URL は http://dvisvgm.sourceforge.net/ -->
+<!-- 旧 URL は http://dvisvgm.bplaced.net/ -->
 <!-- tex-llive mailing list のお知らせでは http://dvisvgm.2ix.de/ -->
 <!-- その後また移転したもよう． -->
 
@@ -119,11 +119,11 @@ $ pdftocairo -svg hoge.pdf
 
 #### 公式サイト {#vab19c08}
 
-- [dvisvgm](http://dvisvgm.bplaced.net/)
+- [dvisvgm](http://dvisvgm.de/)
 
 #### リリース情報 {#t6f93e11}
 
-- [http://dvisvgm.bplaced.net/News](http://dvisvgm.bplaced.net/News)
+- [http://dvisvgm.de/News/](http://dvisvgm.de/News/)
 - [https://github.com/mgieseki/dvisvgm/releases](https://github.com/mgieseki/dvisvgm/releases)
 
 #### License {#b1b30f5a}
