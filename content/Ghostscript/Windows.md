@@ -64,8 +64,7 @@ TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれています�
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.25” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-gs-9.24は，@filename スキームが使用できないので，ps2pdf.bat などが一切使用
-できず，使えないので削除しました。近いうちに gs-9.25 がreleaseされる予定です。
+Ghostscript 9.24 は，@filename スキームが使用できないので，ps2pdf.bat などが一切使用できず，使えないので削除しました。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
 なお，歴史的な理由等から gs\gs9.25 などというフォルダにインストールされることがほとんどです。
@@ -975,7 +974,7 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 #### Ghostscript 公式バイナリの配布元 {#q1e803c3}
 
 - [https://www.ghostscript.com/download/](https://www.ghostscript.com/download/)
-- [http://artifex.com/developers-ghostscript-download/ghostscript-current/](http://artifex.com/developers-ghostscript-download/ghostscript-current/)
+- [https://www.ghostscript.com/download/gsdnld.html](https://www.ghostscript.com/download/gsdnld.html)
 - [https://github.com/ArtifexSoftware/ghostpdl-downloads/releases](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases)
 
 #### 角藤版 Ghostscript の配布元 {#sbee10cb}
