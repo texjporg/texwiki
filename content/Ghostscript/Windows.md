@@ -64,7 +64,39 @@ TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれています�
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.25” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 
-Ghostscript 9.24 は，@filename スキームが使用できないので，ps2pdf.bat などが一切使用できず，使えないので削除しました。
+［gsview-5.0 上で使用する場合の注意］本家のWindows用バイナリは，iccprofilesを
+バイナリに含んでいるので，gsview-5.0の
+
+```
+Options--->Safer
+```
+
+をチェックしてあってもGhostscript-9.25を使用できますが，角藤版の場合は
+iccprofilesはディスク上のディレクトリであり，gsview-5.0は古すぎるので
+
+```
+Options--->Safer
+```
+
+がこのような構成に対応していません。そこで角藤版をgsview-5.0上で使用するには，
+
+```
+Options--->Safer
+```
+
+のチェックをはずして，代わりに
+
+```
+Options--->Advanced Configure...--->Ghostscript Options:
+```
+
+に
+
+```
+-dSAFER
+```
+
+を書き加えて下さい。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
 なお，歴史的な理由等から gs\gs9.25 などというフォルダにインストールされることがほとんどです。
