@@ -32,7 +32,7 @@ TeXShop には文字コード自動判定機能はありませんので，開き
 ### TeXShop のアップデートに失敗する {#bc4016e9}
 
 OS X Mavericks 10.9.5 のアップデートにおいて，[デジタル署名のバージョンがアップデートされた](http://readwrite.jp/archives/11485)影響で，それ以前の時代に開発されたアプリを自動アップデートしようとすると，アップデートに失敗することがあります。
-TeXShop のメニューからの自動アップデートがうまくいかない場合は，[TeXShop の公式サイト](http://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして，既存の TeXShop.app を上書きすることで，手動アップデートを行ってください。
+TeXShop のメニューからの自動アップデートがうまくいかない場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして，既存の TeXShop.app を上書きすることで，手動アップデートを行ってください。
 
 - TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8979)
 
