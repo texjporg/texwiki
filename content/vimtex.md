@@ -47,6 +47,7 @@ vimtex 以外の Vim プラグインとしては，[tex.vim](/Vim/tex.vim/)，La
 > <tr><th style="color:#FFF;background-color:#57E;text-align:center">ノーマルモード</th><th style="color:#FFF;background-color:#57E;text-align:center">機能</th></tr>
 > <tr><td>\ll</td><td>タイプセットまたはタイプセット &amp; プレビュー</td></tr>
 > <tr><td>\lv</td><td>プレビューまたは forward search</td></tr>
+> <tr><td>\lL</td><td>選択した範囲をタイプセット &amp; プレビュー</td></tr>
 > </tbody>
 > </table>
 >
