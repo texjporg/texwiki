@@ -14,8 +14,8 @@ TeXShop は macOS 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標�
 
 <strong>公式 Web サイト</strong>
 
-- [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
-    - [TeXShop](http://pages.uoregon.edu/koch/texshop/)
+- [Richard Koch Home Page](https://pages.uoregon.edu/koch/)
+    - [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 
 TeXShop をモデルにしたクロスプラットフォームな統合環境として [TeXworks](/TeXworks/) があります．
 
