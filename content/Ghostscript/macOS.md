@@ -39,7 +39,7 @@ Homebrew で MacTeX/Ghostscript を導入する場合は MacTeX に付属する 
 
 ### 配布先 {#see6fdd7}
 
-- [Richard Koch Home Page](http://pages.uoregon.edu/koch/)
+- [Richard Koch Home Page](https://pages.uoregon.edu/koch/)
 - [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)
     - [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
