@@ -17,15 +17,14 @@ pukiwiki: "Ghostscript/macOS"
 
 ### macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
-以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
-
-macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったため，現在 <span style="color:#FF2800;"><strong>macOS 10.14 Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
+現在 <span style="color:#FF2800;"><strong>macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
+これは macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったためです。
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
 - [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
 - [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1177)
 
-なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](http://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
+なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](https://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
 - [OTC から OTF を抽出](https://www.muskmelon.jp/?p=1194)
 - [OTC から OTF を抽出（自動化）](https://www.muskmelon.jp/?p=1204)
@@ -46,6 +45,10 @@ Homebrew で MacTeX/Ghostscript を導入する場合は MacTeX に付属する 
 - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
+
+### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
+
+以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
 
 和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。<br>
 ヒラギノを利用するなら
