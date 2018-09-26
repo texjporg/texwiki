@@ -14,8 +14,8 @@ pukiwiki: "LaTeX2HTML"
 LaTeX2HTML は LaTeX ドキュメントを HTML に変換するコンバーターです.
 LaTeX2HTML は Perl で記述されています．
 
-- [LaTeX2HTML](http://www.latex2html.org/)
-- [CTAN:help/Catalogue/entries/latex2html.html](https://mirror.ctan.org/help/Catalogue/entries/latex2html.html)
+- [LaTeX2HTML](https://www.latex2html.org/)
+- [CTAN:support/latex2html](https://mirror.ctan.org/support/latex2html)
 
 ## LaTeX2HTML 日本語化パッチ {#ca003217}
 
