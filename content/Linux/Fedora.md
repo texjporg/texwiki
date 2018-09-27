@@ -27,7 +27,7 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
-- [Features/TeXLive - FedoraProject](http://fedoraproject.org/wiki/Features/TeXLive)
+- [Features/TeXLive - FedoraProject](https://fedoraproject.org/wiki/Features/TeXLive)
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
@@ -47,7 +47,7 @@ sudo dnf install texlive-collection-langjapanese
 
 を実行します．
 
-Fedora 29 の TeX Live 2018 あるいは Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+Fedora 30, Fedora 29 の TeX Live 2018 あるいは Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
 uplatex, uptex, euptex の項目がコメントアウトされているためなので，これらのコメントアウトを外します．
 
