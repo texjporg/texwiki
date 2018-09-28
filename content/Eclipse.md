@@ -39,7 +39,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-- Java - TeX Wiki を参照．
+Windows の場合は [Windows 版 OpenJDK インストール手順](https://qiita.com/ryo-sato/items/87d05021fcc0519e8828)を参照して OpenJDK をインストールします．
 
 ## Eclipse のインストール {#r143ba66}
 
