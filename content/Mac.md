@@ -67,7 +67,7 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - <strong>[TeXShop](/TeXShop/)</strong>
         - MacTeX に標準で付属しています。
     - <strong>[TeXstudio](/TeXstudio/)</strong>
-        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を /usr/local/share/poppler に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
+        - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を適切な場所に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
