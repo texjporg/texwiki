@@ -26,15 +26,8 @@ pukiwiki: "Ghostscript/macOS"
 
 なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](https://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
-- [OTC から OTF を抽出](https://www.muskmelon.jp/?p=1194)
-- [OTC から OTF を抽出（自動化）](https://www.muskmelon.jp/?p=1204)
-
-### Homebrew で MacTeX/Ghostscript を導入する場合の注意 {#d72e7856}
-
-Homebrew で MacTeX/Ghostscript を導入する場合は MacTeX に付属する Ghostscript と Homebrew でインストールできる Ghostscript が競合してインストール・アンインストール時に問題が発生することがあるようです。
-
-- [Mac HomebrewでMacTex/Ghostscriptを導入する際の注意](https://rcmdnk.com/blog/2017/02/09/computer-mac-homebrew/)
-- [美文書第6版のTeX環境(Mac)を完全にアンインストールする方法](http://doratex.hatenablog.jp/entry/20150914/1442201523)
+- [OTC から OTF を抽出 &#8211; マスクメロン](https://www.muskmelon.jp/?p=1194)
+- [OTC から OTF を抽出（自動化） &#8211; マスクメロン](https://www.muskmelon.jp/?p=1204)
 
 ### 配布先 {#see6fdd7}
 
