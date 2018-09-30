@@ -25,5 +25,6 @@ jlreq は Lua(jit)LaTeX + LuaTeX-ja, upLaTeX, pLaTeX で日本語組版処理の
 
 ### 使い方 {#edac77d9}
 
+- [jlreq | 澍法雨](https://ryogan.org/blog/?s=jlreq)
 - \[[LaTeX\] jlreq --- もう一つの日本語ドキュメントクラス](http://konoyonohana.blog.fc2.com/blog-entry-382.html)
 - [https://github.com/zr-tex8r/latex-jlreq-sample](https://github.com/zr-tex8r/latex-jlreq-sample)
