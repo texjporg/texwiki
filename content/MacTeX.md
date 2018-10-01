@@ -68,7 +68,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.23 {#n1354f54}
+#### Ghostscript-9.23 --&gt; Ghostscript 9.25 がリリースされています {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
 
@@ -77,11 +77,6 @@ MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マ�
 Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
 Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
-
-Homebrew の場合は MacTeX に付属する Ghostscript と Homebrew でインストールできる Ghostscript が競合してインストール・アンインストール時に問題が発生することがあるようです。
-
-- [Mac HomebrewでMacTex/Ghostscriptを導入する際の注意](https://rcmdnk.com/blog/2017/02/09/computer-mac-homebrew/)
-- [美文書第6版のTeX環境(Mac)を完全にアンインストールする方法](http://doratex.hatenablog.jp/entry/20150914/1442201523)
 
 ### インストール {#t244993f}
 
