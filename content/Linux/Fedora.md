@@ -11,7 +11,7 @@ pukiwiki: "Linux/Fedora"
 
 ## [Fedora](https://getfedora.org/) {#l0a22986}
 
-Fedora は信頼性が高く、ユーザーフレンドリーで、パワフルな Linux ディストリビューションです．
+Fedora Workstation は、ノート PC やデスクトップ向けに洗練された簡単に使えるオペレーティングシステムです。
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Fedora_logo_and_wordmark.svg/500px-Fedora_logo_and_wordmark.svg.png,right,around,nolink,Fedora) -->
 
@@ -54,7 +54,7 @@ Fedora 30, Fedora 29 の TeX Live 2018 で uplatex を実行すると I can't fi
 euptex -etex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
 ```
 
-を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を継続させると uplatex.fmt が作成され upLaTeX が使用できるようになります．
+を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を進めると uplatex.fmt が作成され upLaTeX が使用できるようになります．
 
 Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
@@ -88,11 +88,15 @@ sudo fmtutil-sys --byfmt uplatex
 
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
-Fedora の Ghostscript は初期設定では日本語が文字化けするかもしれません．
-[Ghostscript/Linux](/Ghostscript/Linux/) を参照して適切に設定することで文字化けせずに出力できるようになります．
+Fedora の Ghostscript は初期設定では日本語が文字化けします．
+cjk-gs-integrate を使用することで文字化けせずに出力できるようになります．
 
 ```
 sudo dnf install ghostscript
+wget https://github.com/texjporg/cjk-gs-support/releases/download/20180306.0/cjk-gs-integrate-20180306.0.tar.gz
+tar xvf cjk-gs-integrate-20180306.0.tar.gz
+cd cjk-gs-integrate-20180306.0
+sudo ./cjk-gs-integrate.pl 
 ```
 
 ### [Python](/Python/) {#z2c220a1}
