@@ -33,6 +33,7 @@ Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱
 
 - [Ghostscript の -dSAFER オプションの脆弱性に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180035.html)
 - [JVNVU#90390242: Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性](http://jvn.jp/vu/JVNVU90390242/)
+- [Ghostscript脆弱性とImageMagick/GraphicsMagick、そしてGoogle Project Zero](http://d.hatena.ne.jp/ozuma/20180826/1535258202)
 
 Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
 TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
