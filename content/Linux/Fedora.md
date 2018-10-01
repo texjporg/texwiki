@@ -31,6 +31,7 @@ Fedora は信頼性が高く、ユーザーフレンドリーで、パワフル�
 - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
 - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
 - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
+- [https://apps.fedoraproject.org/packages/texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex)
 - [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
 
 フルインストールする場合は
@@ -42,10 +43,18 @@ sudo dnf install texlive-scheme-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo dnf install texlive-collection-langjapanese
+sudo dnf install texlive-collection-langjapanese texlive-xetex
 ```
 
 を実行します．
+
+Fedora 30, Fedora 29 の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+
+```
+euptex -etex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
+```
+
+を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を継続させると uplatex.fmt が作成され upLaTeX が使用できるようになります．
 
 Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
