@@ -35,8 +35,8 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ### 派生版 {#t29f2245}
 
-- [GhostBSD](http://www.ghostbsd.org/)
-- [PC-BSD](http://www.pcbsd.org/)
+- [GhostBSD](https://www.ghostbsd.org/)
+- [TrueOS](https://www.trueos.org/)
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
