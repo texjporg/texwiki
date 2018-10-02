@@ -32,6 +32,7 @@ Ghostscript 9.24 は，@filename スキームが使用できず，ps2pdf.bat な
 Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱性が存在します．
 
 - [Ghostscript の -dSAFER オプションの脆弱性に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180035.html)
+- [JVNDB-2018-006474 Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006474.html)
 - [JVNVU#90390242: Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性](http://jvn.jp/vu/JVNVU90390242/)
 - [Ghostscript脆弱性とImageMagick/GraphicsMagick、そしてGoogle Project Zero](http://d.hatena.ne.jp/ozuma/20180826/1535258202)
 
@@ -118,9 +119,8 @@ Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/S
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
-- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)（山田さん）
+- [Data storage for gs-cjk project](https://www.aihara.co.jp/~taiji/gyve/)（山田さん）
 - [情報工学特別講義 II](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/)
-    <!-- 旧 URL は http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/ -->
     - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
     - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
 
