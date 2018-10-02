@@ -47,14 +47,23 @@ sudo dnf install texlive-collection-langjapanese texlive-xetex
 ```
 
 を実行します．
+dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている [texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex/contents/) が必要です．
 
-Fedora 30, Fedora 29 の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+Fedora 30 (Rawhide), Fedora 29 (Beta) の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 
 ```
 euptex -etex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
 ```
 
 を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を進めると uplatex.fmt が作成され upLaTeX が使用できるようになります．
+
+Fedora 28 (Updates) の TeX Live 2017 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+
+```
+sudo dnf install texlive-uplatex
+```
+
+を実行して下の TeX Live 2016 の場合と同様の作業をすると  uplatex.fmt が作成され upLaTeX が使用できるようになります．
 
 Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
