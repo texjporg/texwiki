@@ -49,7 +49,7 @@ KDE
 
 ### Windows {#h8e4fcbd}
 
-[KDE on Windows](https://sourceforge.net/projects/kde-windows/) のインストーラーを使用してインストールできます．
+[Chocolatey Gallery | Okular](https://chocolatey.org/packages/okular) または [KDE on Windows](https://sourceforge.net/projects/kde-windows/) のインストーラーを使用してインストールできます．
 
 ## 代替フォントの設定 {#o2eb9a55}
 
