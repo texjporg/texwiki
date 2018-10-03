@@ -87,6 +87,7 @@ Okular, 汎用文書ビューア
   -p, --page <number>       表示する文書のページ
   --presentation            文書をプレゼンテーションモードで開く
   --print                   Start with print dialog
+  --print-and-exit          Start with print dialog and exit after printing
   --unique                  1 つのインスタンスのみ許可
   --noraise                 Not raise window
 ```
@@ -110,7 +111,7 @@ $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 
 ### inverse search {#ja9305fc}
 
-\[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\]
+\[設定(<ins>S</ins>)\] &gt; \[Okular を設定(<ins>O</ins>)...\] &gt; \[エディタ\]
 
 例えば [TeXstudio](/TeXstudio/) の場合は
 エディタ の項目に
