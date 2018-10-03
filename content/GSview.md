@@ -28,8 +28,8 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 - The Fossies Software Archive からも GSview が入手できるようです。
     - [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
-        - [https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe](https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe)
-        - [https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe](https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe)
+        <!-- - --https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe -->
+        <!-- - --https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe -->
 
 ### インストール {#je84b8ea}
 
