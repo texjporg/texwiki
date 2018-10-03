@@ -1012,9 +1012,6 @@ PostScript Level 1 での基本14書体が正確に表示されます。<br>
 #### 角藤版 Ghostscript の配布元 {#sbee10cb}
 
 - [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/)
-- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
 
 #### ChangeLog (tlgs.win32) {#a9e655e3}
 
