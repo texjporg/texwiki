@@ -102,14 +102,14 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 - <strong>HTTP</strong>
     - [http://ctan.ijs.si/mirror/w32tex/current/TLW64/](http://ctan.ijs.si/mirror/w32tex/current/TLW64/)
-    - [http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-    - [http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 
 - <strong>FTP</strong>
-    - [ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-    - [ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-    - [ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 
 ### トラブル時 {#s0045851}
 
@@ -143,19 +143,15 @@ TeX Live 2018 対応の事例です．
 
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [TeX Live 2018をインストールした](http://alg-d.com/blog/2018/05/03.shtml)
+- [そうだ， TeX Live 2017 (for Windows) をインストールしよう！](http://text.baldanders.info/remark/2017/09/install-tex-live-2017-for-windows/) --&gt; [TeX Live 2017 から 2018 へのアップグレード](http://text.baldanders.info/remark/2018/09/upgrade-texlive-from-2017-to-2018/)
 
-TeX Live 2017 対応の事例です．
-
-- [そうだ， TeX Live 2017 (for Windows) をインストールしよう！](http://text.baldanders.info/remark/2017/09/install-tex-live-2017-for-windows/)
-
-TeX Live 2016 対応の事例です．
-
-- [Windows 10 に TeX Live 2016 をインストール](http://www.muskmelon.jp/?p=1533)
-- [ゼロから作るTeX環境 (Windows版)](http://qiita.com/umireon/items/b540dc2c83412fc144d2)
-    <!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
-    <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-826.html]] -->
-    <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編:http://yoshiiz.blog129.fc2.com/blog-entry-827.html]] -->
-    <!-- -[[TeX Live 2015をWindows 8にインストールする:http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3]] -->
+<!-- TeX Live 2016 対応の事例です． -->
+<!-- -[[Windows 10 に TeX Live 2016 をインストール:http://www.muskmelon.jp/?p=1533]] -->
+<!-- -[[ゼロから作るTeX環境 (Windows版):https://qiita.com/umireon/items/b540dc2c83412fc144d2]] -->
+<!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
+<!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-826.html]] -->
+<!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ ISO イメージ編:http://yoshiiz.blog129.fc2.com/blog-entry-827.html]] -->
+<!-- -[[TeX Live 2015をWindows 8にインストールする:http://qiita.com/makisyu/items/df20f7d51c2bff90ffd3]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
 <!-- 不具合対応まで書かれていたりするので，残しておきたいと思います． -->
