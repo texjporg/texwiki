@@ -52,7 +52,7 @@ dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が�
 Fedora 30 (Rawhide), Fedora 29 (Beta) の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 
 ```
-euptex -etex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
+euptex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
 ```
 
 を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を進めると uplatex.fmt が作成され upLaTeX が使用できるようになります．
