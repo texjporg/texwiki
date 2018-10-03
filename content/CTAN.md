@@ -42,6 +42,11 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
         <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
+- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
+    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+        (HTTP, FTP)
+        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
+
 ### オリジナルの CTAN {#original}
 
 オリジナルの CTAN サイトは次のとおりです．
@@ -80,49 +85,42 @@ CTAN の世界的なミラーリングとして次の URI があります．
         (HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
-- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
-    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTP, FTP)
-        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
-
 <!-- ***FTP のみ [#FTP-only] -->
 
-### Ring Server によるミラーリング {#RingServer}
-
-アメリカのウェブサイトは [ctan.org](https://ctan.org/)
-ですが，日本語で検索できるミラーサイト [Ring Server](http://www.ring.gr.jp/)
-での CTAN のミラーリングの利用も可能です．
-Ring Server
-のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください．
-Ring Server
-のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので，
-ここをクリックすれば検索の画面になります．
-
-上位のディレクトリから辿っていく場合には，
-[Ring Server の /pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
-から始めるのが良いでしょう．
-
-- HTTP
-    - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/)
-        （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/)
-        （近いサーバ優先 …… [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html) による動的な負荷分散を行う）
-    - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/)
-- FTP
-    - [ftp.ring.gr.jp/pub/text/CTAN/](ftp://ftp.ring.gr.jp/pub/text/CTAN/)
-        （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る）
-    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/)
-        （近いサーバ優先 …… [DNS Balance](http://openlab.jp/dns_balance/dns_balance.html) による動的な負荷分散を行う）
-    - [core.ring.gr.jp/pub/text/CTAN/](ftp://core.ring.gr.jp/pub/text/CTAN/)
-
-【注意】Ring Server は複数のファイルサーバの集合体です．
-ホームページの中ほどにサーバの一覧がありますので，
-ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です．
-CTAN 以外にもたくさんのフリーウェアをミラーしています．
-以下のような DNS による負荷分散も実験的に行われています
-（Ring Server の「[利用者の皆様の声 &amp; FAQ](http://www.ring.gr.jp/ring/uvoice.html)」のページの
-「TENBIN，DNS BALANCE って何ですか？ また，RingServer での負荷分散はどのように行っているのですか？」
-の項目を参照）．
+<!-- **Ring Server によるミラーリング [#RingServer] -->
+<!-- アメリカのウェブサイトは [[ctan.org:https://ctan.org/]] -->
+<!-- ですが，日本語で検索できるミラーサイト [[Ring Server:http://www.ring.gr.jp/]] -->
+<!-- での CTAN のミラーリングの利用も可能です． -->
+<!-- Ring Server -->
+<!-- のホームページが英語表記になるようでしたら，［日本語］というボタンを押してください． -->
+<!-- Ring Server -->
+<!-- のホームページを少し下にスクロールすると右に「検索」と書いた犬の絵が見えますので， -->
+<!-- ここをクリックすれば検索の画面になります． -->
+<!--  -->
+<!-- 上位のディレクトリから辿っていく場合には， -->
+<!-- [[Ring Server の /pub/text/CTAN/:http://www.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- から始めるのが良いでしょう． -->
+<!-- -HTTP -->
+<!-- - -[[www.ring.gr.jp/pub/text/CTAN/:http://www.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る） -->
+<!-- - -[[www.dnsbalance.ring.gr.jp/pub/text/CTAN/:http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- （近いサーバ優先 …… [[DNS Balance:http://openlab.jp/dns_balance/dns_balance.html]] による動的な負荷分散を行う） -->
+<!-- - -[[core.ring.gr.jp/pub/text/CTAN/:http://core.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- -FTP -->
+<!-- - -[[ftp.ring.gr.jp/pub/text/CTAN/:ftp://ftp.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る） -->
+<!-- - -[[ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/:ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/]] -->
+<!-- （近いサーバ優先 …… [[DNS Balance:http://openlab.jp/dns_balance/dns_balance.html]] による動的な負荷分散を行う） -->
+<!-- - -[[core.ring.gr.jp/pub/text/CTAN/:ftp://core.ring.gr.jp/pub/text/CTAN/]] -->
+<!--  -->
+<!-- 【注意】Ring Server は複数のファイルサーバの集合体です． -->
+<!-- ホームページの中ほどにサーバの一覧がありますので， -->
+<!-- ご自分のところからネットワーク的に近いサーバを一つ選んでブックマーク（お気に入り）に入れておくと便利です． -->
+<!-- CTAN 以外にもたくさんのフリーウェアをミラーしています． -->
+<!-- 以下のような DNS による負荷分散も実験的に行われています -->
+<!-- （Ring Server の「[[利用者の皆様の声 & FAQ:http://www.ring.gr.jp/ring/uvoice.html]]」のページの -->
+<!-- 「TENBIN，DNS BALANCE って何ですか？ また，RingServer での負荷分散はどのように行っているのですか？」 -->
+<!-- の項目を参照）． -->
 
 ### CTAN内日本語関連収録物 {#p09c9b86}
 
