@@ -7,13 +7,13 @@ pukiwiki: "Adobe Acrobat Reader DC"
 
 # Adobe Acrobat Reader DC
 
-## [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) {#k3c2311c}
+## [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) {#k3c2311c}
 
 Adobe Acrobat Reader DC は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです．
 
-Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
+Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) からダウンロードした場合は Continuous になります．
+Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 - [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
@@ -42,7 +42,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### リリース情報 {#y313b500}
 
-[Overview &mdash; Acrobat and Adobe Reader Release Notes](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotes/)
+- [リリースノート | Adobe Acrobat、Reader](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html)
+- [DC Release Notes &mdash; Release Notes for Acrobat DC Products](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/)
 
 ## ダウンロード {#ne09e93f}
 
@@ -130,7 +131,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 「Windows Explorer で PDF サムネールのプレビューを有効にする」 を ON にすることでサムネールのプレビューができるようになります．
 
-> \[編集\] &gt; \[環境設定(N)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする(B)
+> \[編集(E)\] &gt; \[環境設定(<ins>N</ins>)...\] &gt; \[一般\] &gt; ☑Windows Explorer で PDF サムネールのプレビューを有効にする(B)
 
 <!-- ■ Continuous Track の場合 -->
 <!--  -->
