@@ -15,9 +15,9 @@ pukiwiki: "Ghostscript/Windows"
 
 Windows 版の Ghostscript にはいくつかの種類があります。
 
-- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) に対応しています。
+- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
     - TeX Live 2016 以前に含まれている Ghostscript (tlgs.win32) は本家版をベースにしています。
-- 本家版の機能に加え，日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
+- 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
     - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
     - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
 
@@ -29,8 +29,6 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
 <!-- -[[[texlive] Revision 31504:http://www.tug.org/svn/texlive?view=revision&revision=31504]] -->
-
-日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
 
 ***
 
@@ -99,12 +97,12 @@ Options--->Advanced Configure...--->Ghostscript Options:
 を書き加えて下さい。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.25 などというフォルダにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.25 などといったフォルダ構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.25 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.25 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
-インストールした Ghostscript に含まれる bin フォルダと lib フォルダをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
+インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
 Ghostscript を C:\Program Files\gs\gs9.25 にインストールした場合は
 
@@ -810,3 +808,5 @@ composefont pop
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+
+[^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276)&#x29;
