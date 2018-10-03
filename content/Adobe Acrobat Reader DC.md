@@ -45,7 +45,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - [リリースノート | Adobe Acrobat、Reader](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html)
 - [DC Release Notes &mdash; Release Notes for Acrobat DC Products](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/)
 
-## ダウンロード {#ne09e93f}
+## ダウンロード/インストール {#ne09e93f}
 
 ### Windows {#l93a8183}
 
@@ -63,25 +63,40 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh)
 
-### Linux {#s5dbb0cf}
+### Linux <a id="linux"></a> {#s5dbb0cf}
 
 - [How to Install Latest Adobe Acrobat Reader DC on Ubuntu 18.04 Bionic Beaver Linux with Wine](https://linuxconfig.org/how-to-install-latest-adobe-acrobat-reader-dc-on-ubuntu-18-04-bionic-beaver-linux-with-wine)
 - [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](http://motchy99.blog.fc2.com/blog-entry-106.html)
 
+Linux Mint/Debian/Ubuntu の場合は
+
 ```
 sudo apt install wine-development winetricks
+```
+
+Fedora の場合は
+
+```
+sudo dnf install wine winetricks
+```
+
+を実行します。
+
+以下のコマンドを実行して Adobe Acrobat Reader DC をインストールします。
+
+```
 winetricks mspatcha
 wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_ja_JP.exe
 wine AcroRdrDC1900820071_ja_JP.exe
 ```
 
-Linux で Adobe Acrobat Reader DC を起動するには
+Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
 
 ```
 wine cmd /c start AcroRd32.exe file.pdf
 ```
 
-のように実行します。
+のように実行して「常に保護モードを無効にして開く(<ins>A</ins>)」を選択して OK を押します。
 
 ### Android {#k545c7f3}
 
