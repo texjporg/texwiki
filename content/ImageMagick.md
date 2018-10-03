@@ -26,7 +26,7 @@ ImageMagick は，ビットマップ画像を操作したり変換したりす�
 
 #### Microsoft Windows の場合 {#i4b62fab}
 
-[本家サイト](http://imagemagick.org/script/binary-releases.php#windows)または上記の[ミラーサイト](/ImageMagick/#b913ec3c)から，インストーラを取得して実行します．
+[本家サイト](http://imagemagick.org/script/binary-releases.php#windows)または上記の[ミラーサイト](/ImageMagick/#mirror)から，インストーラを取得して実行します．
 
 <strong> <em>重要！</em> </strong>
 
@@ -60,9 +60,6 @@ ImageMagick 6.9.3-9 以前の画像変換コマンド名は convert でしたの
 #### ミラーサイト {#mirror}
 
 - [http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/](http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/)
-- [http://www.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://www.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
-- [http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://www.dnsbalance.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
-- [http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://core.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 
 #### 派生版 {#t37f9970}
 
