@@ -55,6 +55,7 @@ SyncTeX 用のデータが出力できたら，エディタとビューワのそ
 
 ### 関連リンク {#b9d9b106}
 
+- [SyncTeX対応のPDFビューワ。](https://chiyosuke.blogspot.com/2018/05/synctexpdf.html)
 - [秀丸と SumatraPDF で SyncTeX](http://www.muskmelon.jp/?p=1024)
 - [Windows 7 で W32TeX を導入して日本語 SyncTeX を試してみる](https://skalldan.wordpress.com/2011/11/11/windows-7-%E3%81%A7-w32tex-%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E6%97%A5%E6%9C%AC%E8%AA%9E-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
 - [LinuxでSyncTeXを使う](http://kubuser.blog.fc2.com/blog-entry-26.html)
