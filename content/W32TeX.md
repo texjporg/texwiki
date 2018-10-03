@@ -27,7 +27,7 @@ W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
 W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
-これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，[GSview](/GSview/)，[TeXworks](/TeXworks/)）を自動でインストールし，設定まで済ませてくれます．
+これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，<del>[GSview](/GSview/)</del>，[TeXworks](/TeXworks/)）を自動でインストールし，設定まで済ませてくれます．
 基本的にはインストーラを取得後，解凍し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
 
@@ -39,6 +39,7 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 以下のサイトには，スクリーンショット付の詳細な解説があります．
 
+- [TeXのインストール方法　Windows 64bit　インストーラ3](http://www.mathtext.info/blog/2018/04/20/tex%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95/)
 - [簡単LaTeXインストールWindows編（2016年4月版）](http://did2memo.net/2016/04/24/easy-latex-install-windows-10-2016-04/)
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)，[（簡単 W32TeX・後編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/212810)，[（W32TeX・発展編）](http://acetaminophen.hatenablog.com/entry/2015/05/17/001048)
 
@@ -314,6 +315,7 @@ command_line_encoding.dvips = none
 - [理化学研究所](ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/)
 - [KDDI総合研究所](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/)
+- [山形大学](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
 
 ### 過去のバージョンの W32TeX {#mirror-old}
 
