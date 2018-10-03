@@ -9,7 +9,7 @@ pukiwiki: "Adobe Acrobat Reader DC"
 
 ## [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) {#k3c2311c}
 
-Adobe Acrobat Reader DC は PDF ファイルを表示・印刷したり，注釈を追加したりするソフトウェアです．
+Adobe Acrobat Reader DC は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです．
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
@@ -70,8 +70,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ```
 sudo apt install wine-development winetricks
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1801120040/AcroRdrDC1801120040_ja_JP.exe
-wine AcroRdrDC1801120040_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_ja_JP.exe
+wine AcroRdrDC1900820071_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動するには
@@ -208,11 +208,11 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader DC バージョン 2018
+Windows 版の Adobe Acrobat Reader DC バージョン 2019
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
 ```
-AcroViewR18
+AcroViewR19
 ```
 
 という1行だけを持ち，ファイル名が
@@ -223,11 +223,27 @@ pdfddeservername.txt
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewR18 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewR19 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
+
+AcroViewR19 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+
+Windows PowerShell の場合は
+
+```
+start AcroRd32;if($?){timeout 1};if($?){pdfopen foo.pdf}
+```
+
+コマンド プロンプトの場合は
+
+```
+start AcroRd32 && timeout 1 && pdfopen foo.pdf
+```
+
+のようにして実行してください。
 
 また Windows 10 で PDF ファイルが Microsoft Edge や SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けされている場合はエラーが発生します。
 
@@ -447,6 +463,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19 です。
 [^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
