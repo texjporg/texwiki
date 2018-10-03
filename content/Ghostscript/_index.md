@@ -48,7 +48,7 @@ TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) は
 
 Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問題が発生する場合は TeX Live 2015 以降に更新してください．
 
-- [QA: gs9.15 and gs9.10](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
+- [QA: gs9.15 and gs9.10](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
 - \[[texlive\] Revision 35312](http://www.tug.org/svn/texlive?view=revision&revision=35312)
 
 また Ghostscript 9.15 で，output device から epswrite が廃止され，9.14 で追加・推奨されていた eps2write に完全に置き換わりました．
@@ -76,10 +76,6 @@ Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版
 Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
 
 - [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
-
-GSview は [CTAN](/CTAN/) から提供されなくなりました．
-
-- [GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](https://ctan.org/pkg/gsview)
 
 ### 動作環境 {#e8b195dc}
 
