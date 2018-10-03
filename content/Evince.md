@@ -46,6 +46,9 @@ Windows, macOS, Linux
 
 ### Windows {#f2460848}
 
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince)
+- [Windows で evince](http://www.yamamo10.jp/yamamoto/wordpress/?p=842)
+
 Windows 版 Evince は MSYS2 の pacman でインストールできます．フォントを埋め込まなくても日本語を表示することができます．
 
 64-bit Evince の場合は
