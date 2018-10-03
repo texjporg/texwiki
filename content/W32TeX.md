@@ -35,6 +35,10 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 [拡張子の表示](</Microsoft Windows/#extension>)を設定しておくと，拡張子 .exe が表示されてわかりやすくなるでしょう．
 
+W32TeX の取得先の URL がデフォルトでは [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/) になっていますが
+2018年7月29日で更新が止まっているのでリストから [http://ctan.ijs.si/mirror/w32tex/current/](http://ctan.ijs.si/mirror/w32tex/current/) を選んで変更してください．
+GhostscriptのURLも一覧以外を使う（↓に入力）に [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/) を入力して変更してください．
+
 #### インストールの事例 {#sfa1e1a0}
 
 以下のサイトには，スクリーンショット付の詳細な解説があります．
