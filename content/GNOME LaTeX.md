@@ -43,18 +43,20 @@ Windows, macOS, Linux
 
 ### Windows {#xe7a69b8}
 
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-gnome-latex](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-gnome-latex)
+
 Windows 版 GNOME LaTeX は MSYS2 の pacman でインストールできます．
 
 64-bit GNOME LaTeX の場合は
 
 ```
-pacman -S mingw-w64-x86_64-latexila
+pacman -S mingw-w64-x86_64-gnome-latex
 ```
 
 32-bit GNOME LaTeX の場合は
 
 ```
-pacman -S mingw-w64-i686-latexila
+pacman -S mingw-w64-i686-gnome-latex
 ```
 
 ### macOS {#b3c38ac4}
@@ -123,7 +125,7 @@ Post Processor
 
 ### forward search {#o187dfd8}
 
-\[Search\]-\[Search Forward\] または Ctrl+Alt+F で forward search ができます．
+\[Search\] &gt; \[Search Forward\] または Ctrl+Alt+F で forward search ができます．
 
 ### inverse search {#tc58bb85}
 
