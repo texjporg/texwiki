@@ -80,6 +80,12 @@ Fedora の場合は
 sudo dnf install wine winetricks
 ```
 
+openSUSE の場合は
+
+```
+sudo zypper install wine
+```
+
 を実行します。
 
 以下のコマンドを実行して Adobe Acrobat Reader DC をインストールします。
