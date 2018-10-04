@@ -37,7 +37,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 ### インストール {#a4d9c6ea}
 
 TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
-また，W32TeX を TeX インストーラ 3 を使ってインストールした場合は，途中で角藤版 Ghostscript もインストールされているはずです。
+また，W32TeX を TeX インストーラ 3 を使ってインストールした場合は，角藤版 Ghostscript もインストールされているはずです。
 
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
