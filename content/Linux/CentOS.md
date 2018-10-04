@@ -7,19 +7,16 @@ pukiwiki: "Linux/CentOS"
 
 # Linux/CentOS
 
-[Linux](/Linux/) > Red Hat Enterprise Linux (RHEL)/CentOS/Scientific Linux (SL)
+[Linux](/Linux/) > Red Hat Enterprise Linux (RHEL)/CentOS
 
-## [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)/[CentOS](https://www.centos.org/)/[Scientific Linux (SL)](http://www.scientificlinux.org/) {#n9cb81ae}
+## [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)/[CentOS](https://www.centos.org/) {#n9cb81ae}
 
 Red Hat Enterprise Linux (RHEL) は Red Hat が開発・販売している Linux ディストリビューションです．
 
 CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．
 
-Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディストリビューションです．
-
 <!-- #ref(http://upload.wikimedia.org/wikipedia/en/thumb/6/6c/RedHat.svg/500px-RedHat.svg.png,right,around,nolink,Red Hat Enterprise Linux (RHEL)) -->
 <!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Centos_full.svg/500px-Centos_full.svg.png,right,around,nolink,CentOS) -->
-<!-- #ref(http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scientific_Linux_logo_and_wordmark.svg/200px-Scientific_Linux_logo_and_wordmark.svg.png,right,around,nolink,Scientific Linux (SL)) -->
 
 ***
 
@@ -98,10 +95,9 @@ sudo yum install okular
 
 ### [TeXstudio](/TeXstudio/) {#d3954fd9}
 
-TeXstudio の公式サイトから CentOS と Scientific Linux 用の TeXstudio のパッケージが入手できます．
+TeXstudio の公式サイトから CentOS 用の TeXstudio のパッケージが入手できます．
 
 - [http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/CentOS_CentOS-7/x86_64/)
-- [http://download.opensuse.org/repositories/home:/jsundermeyer/ScientificLinux_7/x86_64/](http://download.opensuse.org/repositories/home:/jsundermeyer/ScientificLinux_7/x86_64/)
 
 ### Software Collections {#m01d8b64}
 
