@@ -47,7 +47,7 @@ TeX Live は OS ごとにインストール方法が異なります．
     - [Linux/Linux Mint/Debian/Ubuntu#texlive](</Linux/Linux Mint/#texlive>)
     - [Linux/Fedora](/Linux/Fedora/#texlive)
     - [Linux/openSUSE](/Linux/openSUSE/#texlive)
-    - Linux/RHEL/CentOS/SL#texlive
+    - Linux/RHEL/CentOS#texlive
     - Linux/Vine Linux
 - [BSD](/BSD/)
     - [BSD/FreeBSD](/BSD/FreeBSD/#texlive)
