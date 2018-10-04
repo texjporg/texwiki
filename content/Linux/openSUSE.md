@@ -11,7 +11,7 @@ pukiwiki: "Linux/openSUSE"
 
 ## [openSUSE](https://www.opensuse.org/) {#nea99a9d}
 
-openSUSE は安定・使い易い・多目的な Linux ディストリビューションです．
+openSUSE Tumbleweed はローリングリリースモデルで最新の Linux パッケージを提供する、高速で統合性に優れた Linux ディストリビューションです．
 
 ***
 
@@ -24,7 +24,7 @@ openSUSE は安定・使い易い・多目的な Linux ディストリビュー�
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#opensuse)
 - [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
 
-#### TeX Live/TeX Live for opensuse.org {#y0f6032d}
+#### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
 - [https://software.opensuse.org/package/texlive-scheme-full](https://software.opensuse.org/package/texlive-scheme-full)
 - [https://software.opensuse.org/package/texlive-collection-langjapanese](https://software.opensuse.org/package/texlive-collection-langjapanese)
