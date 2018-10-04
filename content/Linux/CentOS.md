@@ -34,9 +34,9 @@ Scientific Linux (SL) は Red Hat Enterprise Linux (RHEL) と互換性のある 
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 
-#### TeX Live/RHEL/CentOS/SL --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
+#### TeX Live/CentOS 7 (1804) --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
 
-RHEL/CentOS/SL 7.5 の TeX Live は TeX Live 2012 です．
+CentOS 7 (1804) の TeX Live は TeX Live 2013 です．
 最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
 ```
