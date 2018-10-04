@@ -49,7 +49,7 @@ sudo dnf install texlive-collection-langjapanese texlive-xetex
 を実行します．
 dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている [texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex/contents/) が必要です．
 
-Fedora 30 (Rawhide), Fedora 29 (Beta) の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
+Fedora 29 (Beta) の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
 
 ```
 euptex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
