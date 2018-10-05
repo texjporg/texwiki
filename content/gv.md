@@ -7,6 +7,6 @@ pukiwiki: "gv"
 
 # gv
 
-gv
+gv は [Ghostscript](/Ghostscript/) のフロントエンドです。
 
 - [GV - GNU Project - Free Software Foundation](https://www.gnu.org/software/gv/)
