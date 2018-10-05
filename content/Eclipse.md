@@ -25,7 +25,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### 動作環境 {#aae7926e}
 
-- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_9.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_9.xml#target_environments)
+- [http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments](http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
 
 ### License {#aa464649}
 
@@ -33,7 +33,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
-- [http://projects.eclipse.org/projects/eclipse/governance](http://projects.eclipse.org/projects/eclipse/governance)
+- [https://projects.eclipse.org/projects/eclipse/governance](https://projects.eclipse.org/projects/eclipse/governance)
 
 ## Java のインストール {#ca668ec2}
 
@@ -51,7 +51,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 を解凍し，
 
-- [Pleiades 本体の最新版](http://mergedoc.osdn.jp/) (Eclipse 本体とプラグインの日本語化)
+- [Pleiades プラグイン](http://mergedoc.osdn.jp/) (Eclipse 本体とプラグインの日本語化)
 
 を Eclipse のルートフォルダに解凍して eclipse.ini の最終行に
 
