@@ -7,7 +7,7 @@ pukiwiki: "MuPDF"
 
 # MuPDF
 
-## [MuPDF](https://www.mupdf.com/) {#x9985d4a}
+## [MuPDF](https://mupdf.com/) {#x9985d4a}
 
 MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 また MuPDF は PDF/XPS/CBZ のパーサ/レンダリングライブラリとしても使用できます．
@@ -28,7 +28,7 @@ Windows, macOS, Linux, Android, iOS
 
 #### Windows {#j0820160}
 
-- [https://www.mupdf.com/downloads/](https://www.mupdf.com/downloads/) から mupdf-\*-windows.zip をダウンロードして展開します．
+- [https://mupdf.com/downloads/](https://mupdf.com/downloads/) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
 
 #### macOS {#bad1a3d8}
 
@@ -124,7 +124,7 @@ CC="gcc" make prefix=/mingw install
 popd
 ```
 
-- [MuPDF](http://www.mupdf.com/) をインストールします．
+- [MuPDF](http://mupdf.com/) をインストールします．
 
 <!-- curl -RLo mupdf.tar.gz "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz" -->
 
@@ -138,7 +138,7 @@ popd
 
 #### Android {#rd0a741b}
 
-- [How to build MuPDF for Android](http://www.mupdf.com/docs/how-to-build-mupdf-for-android)
+- [How to build MuPDF for Android](http://mupdf.com/docs/how-to-build-mupdf-for-android)
 
 ### 関連記事 {#u27a744e}
 
@@ -148,7 +148,7 @@ popd
 
 #### リリース情報/変更履歴 {#vbbec018}
 
-- [MuPDF News](http://www.mupdf.com/news)
+- [MuPDF Release History](https://mupdf.com/release_history.html)
 - [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
     - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
     - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
