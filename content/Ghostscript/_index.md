@@ -84,7 +84,7 @@ Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正�
 
 ### 縦書きに関して {#o39e11da}
 
-Ghostscript 9.22 では日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
+Ghostscript 9.22 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
 
 <!-- GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています． -->
 <!-- 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました． -->
