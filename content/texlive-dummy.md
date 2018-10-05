@@ -11,7 +11,8 @@ pukiwiki: "texlive-dummy"
 
 ## texlive-dummy {#u693d45c}
 
-Linux で TeX Live 公式パッケージをインストールした場合は TeX Live に依存するパッケージによって各種 Linux ディストリビューションが提供している TeX Live がインストールされないように TeX Live の dummy パッケージをインストールします．
+TeX Live 公式パッケージをインストールしても TeX Live に依存するパッケージをインストールすると Linux ディストリビューションが提供している TeX Live も同時にインストールされてしまいます．
+Linux ディストリビューションが提供する TeX Live をインストールさせないようにするには TeX Live の dummy パッケージを事前にインストールしてパッケージマネージャに TeX Live が既にインストールされていると錯覚させる必要があります．
 
 - [MyTeXpert:texlive-dummy](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?texlive-dummy)
 
@@ -19,7 +20,7 @@ Linux で TeX Live 公式パッケージをインストールした場合は TeX
 
 ***
 
-### Arch Linux <a id="archlinux"></a> {#e2fe8ca0}
+### [Arch Linux](</Linux/Arch Linux/>) <a id="archlinux"></a> {#e2fe8ca0}
 
 - [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/) (404 - Page Not Found)
 - [https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy](https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy)
@@ -65,7 +66,7 @@ pacman --assume-installed texlive-bin=2017.44590 etc.
 
 It is however more convenient to have a separate package instead of adding a dozen command line arguments when installing a package.
 
-### Linux Mint/Debian/Ubuntu <a id="linuxmint"></a> <a id="debian"></a> <a id="ubuntu"></a> {#w5728cb9}
+### [Linux Mint/Debian/Ubuntu](</Linux/Linux Mint/>) <a id="linuxmint"></a> <a id="debian"></a> <a id="ubuntu"></a> {#w5728cb9}
 
 - [http://www.tug.org/texlive/debian.html#vanilla](http://www.tug.org/texlive/debian.html#vanilla)
 - [WSL に TeX Live の導入(+AucTeX の設定)#設定](https://qiita.com//ignorant/items/f8039a1e01292afff07f#%E8%A8%AD%E5%AE%9A)
@@ -81,7 +82,7 @@ equivs-build debian-equivs-2018-ex.txt
 sudo dpkg -i texlive-local_2018-1_all.deb
 ```
 
-### Fedora <a id="fedora"></a> {#cf6b23bc}
+### [Fedora](/Linux/Fedora/) <a id="fedora"></a> {#cf6b23bc}
 
 - [https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/)
 
@@ -93,7 +94,7 @@ sudo dnf copr enable fatka/texlive-dummy
 sudo dnf install texlive-dummy
 ```
 
-### openSUSE <a id="opensuse"></a> {#y33add76}
+### [openSUSE](/Linux/openSUSE/) <a id="opensuse"></a> {#y33add76}
 
 - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
     - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE](https://ctan.org/tex-archive/support/texlive/texlive-dummy/openSUSE)
