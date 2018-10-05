@@ -33,6 +33,8 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 #### TeX Live/CentOS 7 (1804) --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
 
+- [仮想マシンのCentOS7にLaTeXとGhostScriptとImageMagickをインストール](https://water2litter.net/rum/post/vm_setup_tex/)
+
 CentOS 7 (1804) の TeX Live は TeX Live 2013 です．
 最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
 
