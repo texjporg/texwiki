@@ -10,7 +10,7 @@ pukiwiki: "TeXlipse"
 
 [Eclipse](/Eclipse/) > TeXlipse
 
-## [TeXlipse](http://projects.eclipse.org/projects/science.texlipse) {#cc0edd31}
+## [TeXlipse](https://projects.eclipse.org/projects/science.texlipse) {#cc0edd31}
 
 TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
@@ -20,7 +20,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ## 公式サイト {#m60f5d27}
 
-- [Eclipse TeXlipse | projects.eclipse.org](http://projects.eclipse.org/projects/science.texlipse)
+- [Eclipse TeXlipse | projects.eclipse.org](https://projects.eclipse.org/projects/science.texlipse)
 - [GitHub - eclipse/texlipse: Texlipse](https://github.com/eclipse/texlipse)
 - [Pdf4Eclipse](http://borisvl.github.io/Pdf4Eclipse/)
 - [GitHub - Borisvl/Pdf4Eclipse: A pdf viewer for Eclipse](https://github.com/Borisvl/Pdf4Eclipse)
@@ -175,7 +175,7 @@ Eclipse を起動します．
 
 ### リリース情報 {#f49b6dcf}
 
-- [http://projects.eclipse.org/projects/science.texlipse/governance](http://projects.eclipse.org/projects/science.texlipse/governance)
+- [https://projects.eclipse.org/projects/science.texlipse/governance](https://projects.eclipse.org/projects/science.texlipse/governance)
 - [Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases)
 
 ### ChangeLog {#e321b2d0}
