@@ -94,7 +94,7 @@ Ghostscript 9.22 では日本語の縦書き PostScript ファイルがうまく
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では [GSView](/GSview/), gv という Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), [GSView](/GSview/), [SumatraPDF](/SumatraPDF/), PS_View, Ghostscript.NET.Viewer, UNIX 互換 OS では [gv](/gv/), [GSView](/GSview/) という Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
