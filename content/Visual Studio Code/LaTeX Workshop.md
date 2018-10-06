@@ -180,3 +180,14 @@ Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリッ�
 > Miscellaneous LaTeX functions<br>
 > Create an issue on Github<br>
 > Star the project<br>
+
+## SumatraPDF との連携 {#d61e968a}
+
+- [LaTeX Workshop + Sumatra PDFの設定](http://funct.hatenablog.com/entry/2018/07/22/193416)
+- [SmatraPDFとVisualStudioCodeでSyncTeXする](http://qiita.com/netwing/items/9c25a3363ab8199709a5)
+
+### inverse search {#he69ec2b}
+
+```
+"C:\Program Files\Microsoft VS Code\Code.exe" -g "%f:%l"
+```
