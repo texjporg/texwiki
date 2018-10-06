@@ -28,7 +28,10 @@ Arch Linux はシンプルで軽量な Linux ディストリビューション�
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
-- ArchWiki:TeX_Live, ArchWiki.ja:TeX_Live
+- [https://wiki.archlinux.jp/index.php/TeX_Live](https://wiki.archlinux.jp/index.php/TeX_Live)
+- [https://www.archlinux.jp/packages/?q=texlive](https://www.archlinux.jp/packages/?q=texlive)
+- [https://www.archlinux.jp/groups/x86_64/texlive-most/](https://www.archlinux.jp/groups/x86_64/texlive-most/)
+- [https://www.archlinux.jp/groups/x86_64/texlive-lang/](https://www.archlinux.jp/groups/x86_64/texlive-lang/)
 - \[[Arch Linux\] LaTeX環境を整える](https://qiita.com/Aruneko/items/6d073447bff91addd512)
 - [研究室のパソコンに Arch を入れるメモ](http://qiita.com/sira/items/e231fa11da611d4387c6)
 
