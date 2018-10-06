@@ -153,7 +153,6 @@ sudo pacman -S texstudio
 ```
 
 Arch Linux の TeXstudio は Qt 5 を使用しています．
-Qt 5 版の TeXstudio では，日本語を入力して確定するとカーソルが文字の位置からずれたりする現象が発生することがあります（[不具合情報](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?TeXstudio#ped67bdd)を参照）．
 
 ### [Texmaker](/Texmaker/) {#gbe0fd81}
 
@@ -194,14 +193,7 @@ sudo pacman -S inkscape pstoedit python2-lxml
 <!-- **sakura [#kf265bc9] -->
 <!--  -->
 <!-- sudo pacman -S sakura -->
-
-### fcitx {#y9e621be}
-
-- ArchWiki:Fcitx, ArchWiki.ja:Fcitx
-    <!-- -https://aur.archlinux.org/packages/fcitx-mozc-ut/ -->
-    <!--  -->
-    <!-- yay -S fcitx-mozc-ut -->
-
+<!--  -->
 <!-- *Arch Linux のインストール [#ba9eb570] -->
 <!--  -->
 <!-- -[[ArchWiki:Beginners'_guide]], [[ArchWiki.ja:ビギナーズガイド]] -->
