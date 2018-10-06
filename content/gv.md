@@ -51,3 +51,10 @@ gv foo.ps
 - [https://packages.ubuntu.com/search?keywords=gv](https://packages.ubuntu.com/search?keywords=gv)
 - [https://apps.fedoraproject.org/packages/gv](https://apps.fedoraproject.org/packages/gv)
 - [https://software.opensuse.org/package/gv](https://software.opensuse.org/package/gv)
+
+### 関連リンク {#u6f90105}
+
+#### ChangeLog {#m137e578}
+
+- [http://git.savannah.gnu.org/cgit/gv.git/](http://git.savannah.gnu.org/cgit/gv.git/)
+    - [log](http://git.savannah.gnu.org/cgit/gv.git/log/)
