@@ -68,6 +68,12 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - [How to Install Latest Adobe Acrobat Reader DC on Ubuntu 18.04 Bionic Beaver Linux with Wine](https://linuxconfig.org/how-to-install-latest-adobe-acrobat-reader-dc-on-ubuntu-18-04-bionic-beaver-linux-with-wine)
 - [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](http://motchy99.blog.fc2.com/blog-entry-106.html)
 
+Arch Linux/Manjaro Linux の場合は
+
+```
+sudo pacman -S wine winetricks
+```
+
 Linux Mint/Debian/Ubuntu の場合は
 
 ```
