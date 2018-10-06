@@ -14,11 +14,11 @@ pukiwiki: "Ghostscript 7.07"
 全面的に2015年の環境で可能かどうか検証作業中です。
 動く保証はまったくありませんので，<strong>よくわからない方はこのページは無視してください</strong>。 (2015-10-16)
 
-[Ghostscript](/Ghostscript/) には最新の GPL Ghostscript（ライセンスは AGPL）もありますが，日本語の縦書き等に難点が残っています。
-GNU Ghostscript 7.07 は，日本の gs-cjk プロジェクトの寄与を含み，日本語の縦書き PostScript ファイルを正しく扱うことができました。
+最新の GPL [Ghostscript](/Ghostscript/)（ライセンスは AGPL）は，日本語の縦書き PostScript ファイルが正しく表示できます。
+かつて Ghostscript には GNU Ghostscript 7.07 というバージョンが存在し，日本の gs-cjk プロジェクトの寄与を含み，日本語の縦書き PostScript ファイルを正しく扱うことができました。
 ここではその Ghostscript 7.07 について説明します。
 
-なお，Ghostscript 7.07 には脆弱性が存在しますので，縦書きしない場合は最新の Ghostscript を利用することをお勧めします。
+なお，Ghostscript 7.07 には脆弱性が存在しますので，最新の Ghostscript を利用することをお勧めします。
 
 <!-- 日本語 PS を正しく表示・印刷できる最後の Ghostscript である -->
 <!-- 日本の開発者がコミットした gs-cjk プロジェクトの記録が消滅するのを防ぐ -->
@@ -35,7 +35,7 @@ GNU Ghostscript 7.07 は，日本の gs-cjk プロジェクトの寄与を含み
 ***
 
 <!-- ここは古い記述の残りもの…残すか消すか？ -->
-<!-- Mac OS X (+ X11) でもまったく同様にインストールできます -->
+<!-- macOS (+ X11) でもまったく同様にインストールできます -->
 <!-- （Mac OS X 10.4 では ./configure - -without-gimp-print -->
 <!-- で Makefile の XLIBS=Xt Xext X11 は XLIBS=Xt SM ICE Xext X11 に直しました）。 -->
 <!-- [[ESP Ghostscript:http://www.cups.org/ghostscript.php]] はまだ試していません。 -->
@@ -159,7 +159,7 @@ D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0
 #### Linux, macOS {#od0594e8}
 
 以下は Linux や macOS でソースからインストールする方法です。
-デフォルトでは /usr/local にインストールされますが，既に Ghostscript 9.xx 系や 8.xx 系をインストールしている場合はそちらの /usr/local/bin/gs が存在しているはずですので，別の場所にインストールするとよいでしょう。
+デフォルトでは /usr/local にインストールされますが，既に Ghostscript 8.xx 系をインストールしている場合はそちらの /usr/local/bin/gs が存在しているはずですので，別の場所にインストールするとよいでしょう。
 たとえば /usr/local/teTeX にインストールする場合は以下のようにします：
 
 ```
@@ -174,7 +174,7 @@ $ mv zlib-1.1.3 zilb
 $ ./configure --prefix=/usr/local/teTeX
 ```
 
-この段階で[山田泰司さん](http://www.aihara.co.jp/~taiji/gyve/)のパッチを当てておくと，多くの TrueType フォントや OpenType フォントを扱えるようになります。
+この段階で[山田泰司さん](https://www.aihara.co.jp/~taiji/gyve/)のパッチを当てておくと，多くの TrueType フォントや OpenType フォントを扱えるようになります。
 そして，トップレベルで make，make install します。
 
 ```
@@ -218,7 +218,7 @@ $ tar xvzf gnu-gs-fonts-other-6.0.tar.gz
 ### 和文フォントの設定 {#l9833aef}
 
 次は和文フォントを使えるようにします。
-あらかじめ[山田泰司さん](http://www.aihara.co.jp/~taiji/gyve/)のページにあるパッチを当てておけば，TrueType フォントや OpenType フォントを扱うことができます（一部，非対応のためうまくいかないフォントもあります）。
+あらかじめ[山田泰司さん](https://www.aihara.co.jp/~taiji/gyve/)のページにあるパッチを当てておけば，TrueType フォントや OpenType フォントを扱うことができます（一部，非対応のためうまくいかないフォントもあります）。
 GNU Ghostscript 当時は CID フォントが使われていましたが，今となっては少数派でしょう。
 
 #### 和文フォントの設定（TrueType フォント，OpenType フォント） {#bc8f8373}
@@ -307,7 +307,7 @@ ps2pdf は gs で PDF を作るシェルスクリプトです。
     TrueType フォントや OpenType フォントの場合に PDF 化がうまくいかない場合がありますが，エラーさえ出なければ，PDF 化した後で replacecjkfonts.pl で外せば大丈夫です。
 
 - もう一つは，上の中丸さんのページにも書かれていますが，小川さんの[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で解説されているように，Ghostscript に鈴木俊哉さんの[このパッチ](https://sourceforge.net/tracker/index.php?func=detail&aid=653140&group_id=1897&atid=301897)を当てる方法です。
-    さらに TrueType を指定してもうまくいくパッチを[山田泰司さん](http://www.aihara.co.jp/~taiji/gyve/)が作ってくださいました。
+    さらに TrueType を指定してもうまくいくパッチを[山田泰司さん](https://www.aihara.co.jp/~taiji/gyve/)が作ってくださいました。
     結局，山田さんのページに従ってすべてのパッチを当て，dvipdfmx.cfg を次のように直せば完璧です（適当に改行してありますのでつなげてください）。
 
     ```
@@ -356,7 +356,7 @@ GNU Ghostscript へはその後めでたく gs-cjk パッチが統合され，gs
 GPL Ghostscript 9 系となった現在でも，日本語の縦書き（括弧などが回転され，拗音・句読点などが適切にシフトされる）などを正しく扱うことができません。
 このため，GNU Ghostscript 7.07 が「CJK に完全対応した最後の Ghostscript のバージョン」ということになっています。
 
-- [Data storage for gs-cjk project](http://www.aihara.co.jp/~taiji/gyve/)，[Tips on PostScript](http://www.aihara.co.jp/~taiji/tops/index-j.html)（山田さん）
+- [Data storage for gs-cjk project](https://www.aihara.co.jp/~taiji/gyve/)，[Tips on PostScript](https://www.aihara.co.jp/~taiji/tops/index-j.html)（山田さん）
 - [情報工学特別講義 II](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/)（池口先生の講義サポートページ）
     <!-- 旧 URL は http://www.nls.ics.saitama-u.ac.jp/~tohru/Lectures/2003/SLICS2/ -->
     - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
@@ -391,7 +391,7 @@ GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクで�
 - [Ghostscript と Prosper のインストール](http://emoken.net/blog2/item_39.html)（Windows でのインストール事例）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
 - [Ghostscriptで日本語PDFファイルをつくる](https://web.archive.org/web/20161025040648/http://kony.no-ip.info/~kon/tips/gsjpn.html)
-- [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の OS X 版を配布
+- [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の macOS 版を配布
 - [Mac OS X でレーザープリンターを使うスレ（過去ログ）](http://pc5.2ch.net/test/read.cgi/mac/1037063324/)
 
 ### TeX Forum / Q &amp; A より {#w096d520}
