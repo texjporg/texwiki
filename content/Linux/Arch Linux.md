@@ -121,24 +121,11 @@ sudo pacman -S qpdfview
 sudo pacman -S mupdf mupdf-tools
 ```
 
-<!-- **Xpdf [#yfd9416b] -->
-<!--  -->
-<!-- sudo pacman -S xpdf xpdf-japanese -->
-<!--  -->
-<!-- xpdf で日本語が表示できるように &#x7e;/.xpdfrc を編集します． -->
-<!--  -->
-<!-- vi ~/.xpdfrc -->
-<!--  -->
-<!-- - --  -->
-<!-- cidToUnicode Adobe-Japan1 /usr/share/xpdf/japanese/Adobe-Japan1.cidToUnicode -->
-<!-- unicodeMap ISO-2022-JP /usr/share/xpdf/japanese/ISO-2022-JP.unicodeMap -->
-<!-- unicodeMap EUC-JP /usr/share/xpdf/japanese/EUC-JP.unicodeMap -->
-<!-- unicodeMap Shift-JIS /usr/share/xpdf/japanese/Shift-JIS.unicodeMap -->
-<!-- cMapDir Adobe-Japan1 /usr/share/xpdf/japanese/CMap -->
-<!-- toUnicodeDir /usr/share/xpdf/japanese/CMap -->
-<!-- fontFile Ryumin-Light-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf -->
-<!-- fontFile GothicBBB-Medium-Identity-H /usr/share/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf -->
-<!-- - --  -->
+または
+
+```
+sudo pacman -S mupdf-gl mupdf-tools
+```
 
 ### [LyX](/LyX/) {#odd649e9}
 
@@ -151,8 +138,6 @@ sudo pacman -S lyx
 ```
 sudo pacman -S texstudio
 ```
-
-Arch Linux の TeXstudio は Qt 5 を使用しています．
 
 ### [Texmaker](/Texmaker/) {#gbe0fd81}
 
