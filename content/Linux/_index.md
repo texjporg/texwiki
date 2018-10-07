@@ -17,6 +17,8 @@ Linux に TeX をインストールして使えるようになるまでの大ま
 
 が必要です。
 
+- [MyTeXpert:Linux](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Linux)
+
 ***
 
 ***
@@ -228,3 +230,4 @@ Linux では TeX Live をインストールするのが一般的ですが，ほ�
 
 - [W32TeX](/W32TeX/)：Microsoft Windows 向けの TeX ディストリビューションですが，[Wine](https://www.winehq.org/) を使えば Linux 上で利用することも可能です．
     - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
+- [MiKTeX](/MiKTeX/)：主に Microsoft Windows で使用されている TeX ディストリビューションですが Linux にも対応しています．Linux Mint/Debian/Ubuntu, Fedora, openSUSE で利用できるようです．
