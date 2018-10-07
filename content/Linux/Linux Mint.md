@@ -9,7 +9,7 @@ pukiwiki: "Linux/Linux Mint"
 
 [Linux](/Linux/) > Linux Mint/Debian/Ubuntu
 
-## [Linux Mint](https://linuxmint.com/)/[Debian](https://www.debian.org/)/[Ubuntu](http://www.ubuntu.com/) {#f4077eb2}
+## [Linux Mint](https://linuxmint.com/)/[Debian](https://www.debian.org/)/[Ubuntu](https://www.ubuntu.com/) {#f4077eb2}
 
 Linux Mint はデスクトップ向けの使いやすい Linux ディストリビューションです．
 
