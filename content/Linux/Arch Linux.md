@@ -7,11 +7,13 @@ pukiwiki: "Linux/Arch Linux"
 
 # Linux/Arch Linux
 
-[Linux](/Linux/) > Arch Linux
+[Linux](/Linux/) > Arch Linux/Manjaro Linux
 
-## [Arch Linux](https://www.archlinux.org/) {#e64e7986}
+## [Arch Linux](https://www.archlinux.org/)/[Manjaro Linux](https://manjaro.org/) {#e64e7986}
 
 Arch Linux はシンプルで軽量な Linux ディストリビューションです．
+
+Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux ディストリビューションです．
 
 <!-- #ref(http://upload.wikimedia.org/wikipedia/en/thumb/a/ac/Archlinux-official-fullcolour.svg/500px-Archlinux-official-fullcolour.svg.png,right,around,nolink,Arch Linux) -->
 
