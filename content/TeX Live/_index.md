@@ -43,7 +43,7 @@ TeX Live は OS ごとにインストール方法が異なります．
 - [macOS](/Mac/)
     - macOS へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
 - [Linux](/Linux/#texlive)
-    - [Linux/Arch Linux](</Linux/Arch Linux/#texlive>)
+    - [Linux/Arch Linux/Manjaro Linux#texlive](</Linux/Arch Linux/#texlive>)
     - [Linux/Linux Mint/Debian/Ubuntu#texlive](</Linux/Linux Mint/#texlive>)
     - [Linux/Fedora](/Linux/Fedora/#texlive)
     - [Linux/openSUSE](/Linux/openSUSE/#texlive)
