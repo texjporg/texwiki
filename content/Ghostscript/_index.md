@@ -28,6 +28,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 Ghostscript 9.25 以降に更新してください．
 
 Ghostscript 9.24 は，@filename スキームが使用できず，ps2pdf.bat などが一切使用できないという問題があるので，インストールしない方が無難です。
+また Ghostscript 9.24 から PDF を出力する際のバージョンが PDF 1.5 から PDF 1.7 に変更されています。([pdfwrite - ensure correct ICC profile version being written out](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=bb2ea8ca0482cb0bb5632c30e9184e3d19fdc8d2))
 
 Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱性が存在します．
 
