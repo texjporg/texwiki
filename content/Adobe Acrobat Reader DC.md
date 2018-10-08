@@ -32,17 +32,14 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### 公式 Web ページ {#t103678c}
 
-- [PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html)
-- [iPad向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app.html)
-- [iPhone向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/iphone.html)
-- [Androidフォン向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/android.html)
-- [Windows Phone向けの無償モバイル版アプリとPDFビューア | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/products/mobile-app/windows-phone.html)
-- [アドビ サポート担当 (adobesupportj) on Twitter](https://twitter.com/AdobeSupportJ)
-- [ニュースルーム | Adobe](http://www.adobe.com/jp/news-room.html)
+- [PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html)
+- [Acrobatモバイル版アプリ、iPad、iPhone、Android版PDFリーダー | Adobe Document Cloud](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
+- [アドビ サポート担当 (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
+- [アドビの最新のプレスリリース | Adobe ニュースルーム](https://www.adobe.com/jp/about-adobe/newsroom.html)
 
 ### 動作環境 {#v8f82e43}
 
-[&#x5fc5;&#x8981;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#x69cb;&#x6210; &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/system-requirements.html)を参照．
+[&#x5fc5;&#x8981;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#x69cb;&#x6210; &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/system-requirements.html)
 
 ### リリース情報 {#y313b500}
 
@@ -55,7 +52,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 - Adobe Acrobat Reader DC
     - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/win/](ftp://ftp.adobe.com/pub/adobe/reader/win/)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/)
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows)
 
@@ -63,7 +60,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 - Adobe Acrobat Reader DC
     - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/](ftp://ftp.adobe.com/pub/adobe/reader/mac/)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/)
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh)
 
