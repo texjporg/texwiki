@@ -87,6 +87,10 @@ sudo zypper install qpdfview
 sudo zypper install mupdf
 ```
 
+### [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) {#e5e1f8c0}
+
+[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/#linux>)
+
 ### [LyX](/LyX/) {#uad65708}
 
 ```
