@@ -219,9 +219,11 @@ pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 ### ChangeLog {#y0777637}
 
 - [https://github.com/texjporg/tltexjp/commits/master](https://github.com/texjporg/tltexjp/commits/master)
+- [https://salsa.debian.org/uwabami-guest/xdvik-ja](https://salsa.debian.org/uwabami-guest/xdvik-ja)
+    - [https://salsa.debian.org/uwabami-guest/xdvik-ja/commits/master](https://salsa.debian.org/uwabami-guest/xdvik-ja/commits/master)
+- [https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1](https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1)
 - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/)
     - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log)
-- [https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1](https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
