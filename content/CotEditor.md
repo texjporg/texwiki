@@ -7,7 +7,7 @@ pukiwiki: "CotEditor"
 
 # CotEditor
 
-## [CotEditor](http://coteditor.com/) {#hbea6b64}
+## [CotEditor](https://coteditor.com/) {#hbea6b64}
 
 ***
 
@@ -17,7 +17,7 @@ pukiwiki: "CotEditor"
 
 CotEditor は macOS 専用テキストエディタです．
 
-- [CotEditor -Text Editor for macOS](http://coteditor.com/)
+- [CotEditor -Text Editor for macOS](https://coteditor.com/)
 - [CotEditor Project · GitHub](https://github.com/coteditor/)
 - [https://twitter.com/coteditor](https://twitter.com/coteditor)
 
@@ -44,7 +44,7 @@ macOS 10.12.2 Sierra 以上
 ## CotEditor で LaTeX {#acb0f7fd}
 
 - [CotEditor で SyncTeX](http://www.muskmelon.jp/?p=1962)
-- [CotEditor から LaTeX をタイプセットするスクリプト](http://qiita.com/yunarsoa/items/6573bbfcd1814124bb2f)
+- [CotEditor から LaTeX をタイプセットするスクリプト](https://qiita.com/yunarsoa/items/6573bbfcd1814124bb2f)
 - [CotEditor から AppleScript で latexmk を叩く](https://aximov.wordpress.com/2016/01/20/coteditor-latexmk/)
     <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
     <!-- **[[CotEditorでLaTeXファイルをタイプセットするスクリプト:http://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] [#nbc61989] -->
