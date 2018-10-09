@@ -113,12 +113,12 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ### Android {#k545c7f3}
 
-- [Adobe Acrobat Reader - Android Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
-- [ftp://ftp.adobe.com/pub/adobe/reader/android/](ftp://ftp.adobe.com/pub/adobe/reader/android/)
+- [Adobe Acrobat Reader - Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
+    <!-- -ftp://ftp.adobe.com/pub/adobe/reader/android/ -->
 
 ### iOS {#ac2b971a}
 
-- [Adobe Acrobat Reader: View, Create, &amp; Convert PDFs on the App Store](https://itunes.apple.com/jp/app/adobe-reader/id469337564?mt=8)
+- [Adobe Acrobat Reader on the App Store](https://itunes.apple.com/jp/app/adobe-reader/id469337564?mt=8)
 
 ## アンインストール {#j28c578e}
 
