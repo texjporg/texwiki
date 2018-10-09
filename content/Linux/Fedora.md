@@ -27,11 +27,9 @@ Fedora Workstation は、ノート PC やデスクトップ向けに洗練され
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
-- [Features/TeXLive - FedoraProject](https://fedoraproject.org/wiki/Features/TeXLive)
-- [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
-- [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
-- [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
-- [https://apps.fedoraproject.org/packages/texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex)
+- [https://apps.fedoraproject.org/packages/s/texlive](https://apps.fedoraproject.org/packages/s/texlive)
+    - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
+    - [https://apps.fedoraproject.org/packages/texlive-base](https://apps.fedoraproject.org/packages/texlive-base)
 - [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
 
 フルインストールする場合は
@@ -47,53 +45,7 @@ sudo dnf install texlive-collection-langjapanese texlive-xetex
 ```
 
 を実行します．
-dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている [texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex/contents/) が必要です．
-
-Fedora 29 (Beta) の TeX Live 2018 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
-
-```
-euptex -ini -jobname=uplatex -progame=uplatex *uplatex.ini
-```
-
-を実行すると ? が 5 回表示されるのでそれぞれ Enter を入力して処理を進めると uplatex.fmt が作成され upLaTeX が使用できるようになります．
-
-Fedora 28 (Updates) の TeX Live 2017 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
-
-```
-sudo dnf install texlive-uplatex
-```
-
-を実行して下の TeX Live 2016 の場合と同様の作業をすると  uplatex.fmt が作成され upLaTeX が使用できるようになります．
-
-Fedora 28, Fedora 27, Fedora 26, Fedora 25 の TeX Live 2016 で uplatex を実行すると I can't find the format file \`uplatex.fmt'! と表示されます．
-これは /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf の
-uplatex, uptex, euptex の項目がコメントアウトされているためなので，これらのコメントアウトを外します．
-
-```
---- /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf.org	2017-02-09 14:19:54.883499043 +0900
-+++ /usr/share/texlive/texmf-dist/web2c/fmtutil.cnf	2017-02-09 14:20:59.219760319 +0900
-@@ -121,11 +121,11 @@ tex tex - tex.ini
- tex tex - tex.ini
- #
- # from uplatex:
--#! uplatex euptex language.dat *uplatex.ini
-+uplatex euptex language.dat *uplatex.ini
- #
- # from uptex:
--#! uptex uptex - uptex.ini
--#! euptex euptex language.def *euptex.ini
-+uptex uptex - uptex.ini
-+euptex euptex language.def *euptex.ini
- #
- # from xetex:
- xetex xetex language.def -etex xetex.ini
-```
-
-sudo fmtutil-sys --byfmt uplatex を実行すると uplatex.fmt が作成され upLaTeX が使用できるようになります．
-
-```
-sudo fmtutil-sys --byfmt uplatex
-```
+dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている texlive-xetex が必要です．
 
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
