@@ -71,7 +71,7 @@ sudo dnf install python3
 #### Python 2 {#c019fdb6}
 
 ```
-sudo dnf install python
+sudo dnf install python2
 ```
 
 ### Julia {#h3524e63}
