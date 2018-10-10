@@ -41,7 +41,7 @@ Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がな�
 macOS でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
 Asymptote ソースを展開したディレクトリに
-[gc-7.6.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-7.6.0.tar.gz)
+[gc-8.0.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-8.0.0.tar.gz)
 を展開せずに置き，
 
 ```
@@ -132,7 +132,8 @@ psviewer="c:/ghostgum/gsview/gsview32.exe";
 
 うまくいったのは、偶然うまくゆく例を使ったためで，一般には Shift_JIS
 エンコーディングの場合，0x5c を含む文字はだめです。
-W32TeX の platex は Shift_JIS がデフォルトなので，texcommand="platex";
+W32TeX \[2018/03/26\] 以降の platex は UTF-8 がデフォルトですが
+W32TeX \[2018/03/25\] 以前の platex は Shift_JIS がデフォルトなので，texcommand="platex";
 などとすることはできません。
 platex --kanji=utf8 ... と同じ役割をするコマンド
 platex-utf8.exe を使って以下のように設定し，Asymptote で日本語を使うには
