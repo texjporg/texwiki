@@ -160,7 +160,7 @@ texdvicommand="platex-euc";
 
 #### 日本語を使った例 {#x0dd2813}
 
-jsarticle 相当の日本語フォントの設定をするために [minijs.sty](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/minijs.sty)
+jsarticle 相当の日本語フォントの設定をするために [minijs.sty](https://github.com/texjporg/jsclasses/blob/master/minijs.sty)
 を読み込んでいます。
 
 ```
