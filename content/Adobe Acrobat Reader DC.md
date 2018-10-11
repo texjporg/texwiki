@@ -27,6 +27,10 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 19.008.20071 が起動していない状態で pdfopen file.pdf を実行すると file.pdf が開けないようです。
     Acrobat Reader DC が起動した状態では file.pdf を開くことができます。
+    バージョン 2019.008.20074 と表示されるものでは，起動していない状態で開くことが
+    できました。しかし環境によるかも知れません。いずれにしても
+    起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
+    pdfclose を繰り返すのが良いでしょう。
 
 - [Adobe Reader XI のサポートは 2017-10-15 に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
 
