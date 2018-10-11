@@ -24,9 +24,13 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
-- [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
-    Adobe Acrobat Reader DC 19.008.20071 が起動していない状態で pdfopen file.pdf を実行すると file.pdf が開けないようです。
+- [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
+    pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
+    Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
+    pdfopen file.pdf を実行すると Cannot contact a server. エラーが表示され
+    file.pdf が開けないようです。
     Acrobat Reader DC が起動した状態では file.pdf を開くことができます。
+    起動していない状態でも開ける方もおられるようです。--&gt;
     バージョン 2019.008.20074 と表示されるものでは，起動していない状態で開くことが
     できました。しかし環境によるかも知れません。いずれにしても
     起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
