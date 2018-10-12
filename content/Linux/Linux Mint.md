@@ -207,12 +207,6 @@ sudo apt install texmaker
 sudo apt install texworks
 ```
 
-### [Eclipse](/Eclipse/) <a id="eclipse"></a> {#bd4e03c3}
-
-```
-sudo apt install eclipse
-```
-
 ### [Emacs](/Emacs/) <a id="emacs"></a> {#w2c42a95}
 
 ```
