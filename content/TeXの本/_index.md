@@ -139,8 +139,6 @@ TeX や LaTeX に関する本の紹介です．
     （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月，価格 &yen;2,376 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
-- 寒川 光『[LaTeX&amp;PostScriptスーパーユーザのテクニック](http://www.kyoritsu-pub.co.jp/bookdetail/9784320121652)』（[共立出版](http://www.kyoritsu-pub.co.jp/)，2006年11月，税込価格 &yen;3,240，[ISBN 978-4-320-12165-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-12165-2)）
-
 #### 2005年 {#naf302ff}
 
 #### 2004年 {#v7e7f685}
