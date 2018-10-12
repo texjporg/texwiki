@@ -150,12 +150,6 @@ sudo dnf install texmaker
 sudo dnf install texworks
 ```
 
-### [Eclipse](/Eclipse/) {#p298a48c}
-
-```
-sudo dnf install eclipse
-```
-
 ### [Emacs](/Emacs/) {#m28f0609}
 
 ```
