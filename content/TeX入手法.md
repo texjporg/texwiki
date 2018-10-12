@@ -61,7 +61,7 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
 - <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
 - <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
 - [BasicTeX](/BasicTeX/) (for macOS)
-- [MiKTeX](/MiKTeX/) (for Windows)
+- [MiKTeX](/MiKTeX/) (for Windows, macOS, Linux)
 
 ### インストール時のよくあるトラブル・勘違い {#l1a033e5}
 
