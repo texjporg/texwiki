@@ -153,6 +153,9 @@ forward and inverse search が必要な場合は SyncTeX プラグインを使�
     <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
 
 - [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
+- [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
+- [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
+- [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
 SyncTeX プラグインは gedit-plugins に収録されています．
 
