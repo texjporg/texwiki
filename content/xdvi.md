@@ -17,6 +17,8 @@ xdvi を使用すると，日本語が表示されないといった問題が発
 
 このため，<strong>現在は DVI ではなく PDF でのプレビューが推奨されています。</strong>
 
+- [MyTeXpert:xdvi](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?xdvi)
+
 ***
 
 ***
