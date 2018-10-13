@@ -74,18 +74,16 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - TeXnicle
 
 - 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
-    - [Emacs](/Emacs/)
-        - [YaTeX](/YaTeX/)（野鳥）
-        - [AUCTeX](/AUCTeX/)
-        - [Org mode](</Emacs/Org mode/>) + [YASnippet](/YASnippet/)
-        - [TeX mode](</Emacs/TeX mode/>) + [YASnippet](/YASnippet/)
-    - [Vim](/Vim/)
-        - [Vim-LaTeX](/Vim-LaTeX/)
-        - [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/)
-        - ATP
     - [Visual Studio Code](</Visual Studio Code/>)
         - LaTeX Workshop
     - [Atom](/Atom/)
+    - [Emacs](/Emacs/)
+        - [Org mode](</Emacs/Org mode/>)
+        - [TeX mode](</Emacs/TeX mode/>)
+        - [AUCTeX](/AUCTeX/)
+        - [YaTeX](/YaTeX/)（野鳥）
+    - [Vim](/Vim/)
+        - vimtex
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [CotEditor](/CotEditor/)
