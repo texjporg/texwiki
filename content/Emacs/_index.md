@@ -41,13 +41,13 @@ GNU Emacs はフリーソフトウェアです．
 #### Windows {#k091604e}
 
 - [64bit版 GNU Emacs 26.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime) (64-bit binary)
-- [Emacs Modified for Windows](https://vigou3.github.io/emacs-modified-windows/) (64-bit binary)
+- [Emacs Modified for Windows](http://vigou3.gitlab.io/emacs-modified-windows/) (64-bit binary)
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html) (32-bit binary)
 
 #### macOS {#v2ece0ad}
 
 - [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
-- [Emacs Modified for macOS](https://vigou3.github.io/emacs-modified-macos/)
+- [Emacs Modified for macOS](http://vigou3.gitlab.io/emacs-modified-macos/)
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
 - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
 
@@ -62,7 +62,7 @@ GNU Emacs はフリーソフトウェアです．
 
 ### 拡張パッケージの入手 {#o0e71869}
 
-最近は [MELPA](https://melpa.org/) というサイトに Emacs の拡張パッケージの更新情報が集められるようになっています．
+[MELPA](https://melpa.org/) から Emacs の拡張パッケージの更新情報が集められます．
 
 使い方は，[Getting Started](https://melpa.org/#/getting-started) に書いてある設定をして M-x package-list-packages を実行するだけです．
 あとは，インストールしたいパッケージを i で選択して，x でインストールします．
