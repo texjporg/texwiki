@@ -41,19 +41,14 @@ MacTeX は TeX Live の scheme-full に対応していますので，TeX Live �
 #### GUI-Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-README-ja.pdf（日本語を扱うための初期設定手順の解説），READ ME FIRST.pdf，What Is Installed.pdf，Eps-Tiff-Conversion.pdf，Ghostscript.pdf の書類もインストールされます。
+TeX フォルダの中の Docs and Spell Utilities フォルダの中に Documents フォルダと READ ME FIRST.pdf と Spelling フォルダがあり README-ja.pdf（日本語を扱うための初期設定手順の解説），What Is Installed.pdf，Eps-Tiff-Conversion.pdf，Ghostscript.pdf の書類もインストールされます。
 
 GUI Applications には以下のアプリケーションが収録されています。
+
 アプリケーションフォルダの中の TeX フォルダに収められています。
 
 - [BibDesk](http://bibdesk.sourceforge.net/)
     - 文献管理ソフト。
-
-- [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
-    - TeX に対応したスペルチェッカー。
-
-- [Excalibur](http://excalibur.sourceforge.net/)
-    - TeX に対応したスペルチェッカー。
 
 - [LaTeXiT](/LaTeXiT/)
     - 単独の数式を作成して他のアプリケーションにコピペするのに便利なソフトウェア。
@@ -67,6 +62,14 @@ GUI Applications には以下のアプリケーションが収録されていま
     - macOS 専用の TeX 統合環境。
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
+
+アプリケーションフォルダの中の TeX フォルダの中の Docs and Spell Utilities フォルダの中の Spelling フォルダに収められています。
+
+- [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
+    - TeX に対応したスペルチェッカー。
+
+- [Excalibur](http://excalibur.sourceforge.net/)
+    - TeX に対応したスペルチェッカー。32-bit アプリケーション。
 
 #### Ghostscript-9.23 --&gt; Ghostscript 9.25 がリリースされています {#n1354f54}
 
@@ -122,6 +125,7 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
+- [MacTeX Live 2018をインストールした：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2018-05-01)
 - [MacTeX 2018 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20180501/1525144736)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
