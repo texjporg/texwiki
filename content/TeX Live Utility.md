@@ -20,16 +20,16 @@ TeX Live のパッケージ管理などができる [TeX Live Manager](</TeX Liv
 
 1. TeX Live に随時追加・アップデートされるパッケージなどを個別またはまとめてインストール（アップデート）したり，その説明ドキュメントを読めます（とくに後者の機能はコマンドラインの tlmgr に比べて優れています）．
 1. デフォルトの紙面サイズも設定できます（A4またはレター）．
-1. 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] > \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます．
-1. うまく動作しない場合は，リポジトリ アドレスを別のミラーサイトに変更してみてください．
+1. 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます．
+1. うまく動作しない場合は，リポジトリ アドレスを別のミラーサイトに変更してみてください．メニューの \[設定\] &gt; \[リポジトリを管理\] を選択することでリポジトリの表示・編集ができます．
 
 - [http://amaxwell.github.io/tlutility/](http://amaxwell.github.io/tlutility/)
 - [https://github.com/amaxwell/tlutility](https://github.com/amaxwell/tlutility)
+- [TeX Live Utilityについて](http://www2.kumagaku.ac.jp/teacher/herogw/tlu.html)
 
 ### リリース情報 {#d0019337}
 
 - [https://github.com/amaxwell/tlutility/releases](https://github.com/amaxwell/tlutility/releases)
-- [https://github.com/amaxwell/tlutility/tags](https://github.com/amaxwell/tlutility/tags)
 
 ### ChangeLog {#l3e78d70}
 
