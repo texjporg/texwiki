@@ -221,7 +221,7 @@ Bracket Completion プラグインを使用すると閉じかっこを自動的�
 
 \[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tool Output\] タブをクリックすると処理状況が表示されます．
 
-#### pdfupLaTeX {#x4f1ba2c}
+#### ptex2pdf-upLaTeX {#x4f1ba2c}
 
 ***
 
