@@ -37,7 +37,7 @@ Windows, macOS, Linux
 - [https://gitlab.gnome.org/GNOME/evince](https://gitlab.gnome.org/GNOME/evince)
     - [コミットログ](https://gitlab.gnome.org/GNOME/evince/commits/master)
 
-### Forks {#z48adc83}
+### 派生版 {#z48adc83}
 
 - [Atril](https://github.com/mate-desktop/atril)
 - [Xreader](https://github.com/linuxmint/xreader)
