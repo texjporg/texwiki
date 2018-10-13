@@ -18,7 +18,7 @@ macOS では [TeX Live Utility](</TeX Live Utility/>) というツールで管�
 
 ### 使い方 {#jf67d712}
 
-コマンド プロンプトから
+コマンドラインから
 
 ```
 tlmgr-gui
