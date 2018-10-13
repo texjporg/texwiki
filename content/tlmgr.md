@@ -52,10 +52,14 @@ category:    Package
 shortdesc:   Flexible and complete interface to document dimensions.
 longdesc:    The package provides an easy and flexible user interface (以下略)
 installed:   Yes
-revision:    19716
-cat-version: 5.6
-cat-date:    2010-09-13 00:36:13 +0200
+revision:    47638
+sizes:       src: 157k, doc: 465k, run: 45k
+relocatable: No
+cat-version: 5.8
+cat-date:    2018-05-07 13:41:20 +0200
 cat-license: lppl
+cat-topics:  geometry
+cat-related: vmargin typearea
 collection:  collection-latex
 ```
 
