@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は [tex.vim](/Vim/tex.vim/) + (vimtex or LaTeX Box) + [quickrun](/quickrun/) + [neocomplete &amp; neosnippet](/neocomplete/) を使用する {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は vimtex を使用する {#z8e30b5a}
 
 ***
 
@@ -72,7 +72,7 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 - [https://github.com/vim-latex/vim-latex/issues](https://github.com/vim-latex/vim-latex/issues)
 - [https://sourceforge.net/p/vim-latex/bugs/](https://sourceforge.net/p/vim-latex/bugs/)
 
-### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [macOS SierraでIMEをノーマルモードで必ずオフにする](https://rcmdnk.com/blog/2013/06/20/computer-mac-keyremap4macbook-vim/) {#p586f5da}
+### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [VimでNormalモード切り替え時にIMEをOFFにする、をMacでKarabiner-Elementsを使って実現する](https://rcmdnk.com/blog/2017/08/31/computer-mac-vim/) {#p586f5da}
 
 ### MacVim-KaoriYa で Vim-LaTeX を使用すると日本語入力が中断される → $HOME/.vim/gvimrc に set imdisable を記述して MacVim メニューの「環境設定」「詳細」の「インラインインプットメソッドを使用する」のチェックをはずす {#qac1e623}
 
