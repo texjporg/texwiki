@@ -83,8 +83,8 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 Linux の GVim で Vim-LaTeX を使用すると日本語入力に問題が発生します．<br>
 GVim の on-the-spot の実装に問題があるようです．<br>
 
-- [http://www.bookshelf.jp/2ch/unix/1232035011.html#45](http://www.bookshelf.jp/2ch/unix/1232035011.html#45)
-- [http://www.bookshelf.jp/2ch/unix/1258278511.html#366](http://www.bookshelf.jp/2ch/unix/1258278511.html#366)
+- [http://pc11.5ch.net/test/read.cgi/unix/1232035011/45](http://pc11.5ch.net/test/read.cgi/unix/1232035011/45)
+- [http://hibari.5ch.net/test/read.cgi/unix/1258278511/366](http://hibari.5ch.net/test/read.cgi/unix/1258278511/366)
 - [https://github.com/vim/vim/blob/master/src/mbyte.c](https://github.com/vim/vim/blob/master/src/mbyte.c)
 
 ### CTRL-J が使えない → [https://github.com/vim-jp/issues/issues/523#issuecomment-35015892](https://github.com/vim-jp/issues/issues/523#issuecomment-35015892) {#v27fb866}
