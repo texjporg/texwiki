@@ -107,7 +107,7 @@ Emacs 26.1 から switch-to-buffer の仕様が変更されたため想定通り
 
 ## ダウンロード {#g0fb682c}
 
-- [YaTeX リリース版](https://www.yatex.org/)
+- [YaTeX リリース版](https://www.yatex.org/), [Releases - yuuji/yatex](https://www.yatex.org/gitbucket/yuuji/yatex/releases)
 - [YaTeX テスト版](http://www.gentei.org/~yuuji/bin/yatexcurrent.cgi)
 
 ## インストール {#b2ec65b9}
