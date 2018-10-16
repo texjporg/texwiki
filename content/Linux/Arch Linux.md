@@ -155,7 +155,7 @@ sudo pacman -S texmaker
 
 ```
 yay -S texworks
-pacman -S poppler-data
+sudo pacman -S poppler-data
 ```
 
 ### [Emacs](/Emacs/) {#le6bf422}
