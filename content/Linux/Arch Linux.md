@@ -102,19 +102,19 @@ sudo pacman -S evince poppler-data
 ### [Okular](/Okular/) {#d36d48ab}
 
 ```
-sudo pacman -S kdegraphics-okular kde-l10n-ja
+sudo pacman -S okular poppler-data
 ```
 
 ### [zathura](/zathura/) {#cae6188b}
 
 ```
-sudo pacman -S zathura zathura-pdf-poppler zathura-ps
+sudo pacman -S zathura zathura-pdf-poppler zathura-ps poppler-data
 ```
 
 ### [qpdfview](/qpdfview/) {#xe3804e4}
 
 ```
-sudo pacman -S qpdfview
+sudo pacman -S qpdfview poppler-data
 ```
 
 ### [MuPDF](/MuPDF/) {#w1b2cec8}
@@ -142,7 +142,7 @@ sudo pacman -S lyx
 ### [TeXstudio](/TeXstudio/) {#geb231cb}
 
 ```
-sudo pacman -S texstudio
+sudo pacman -S texstudio poppler-data
 ```
 
 ### [Texmaker](/Texmaker/) {#gbe0fd81}
@@ -155,6 +155,7 @@ sudo pacman -S texmaker
 
 ```
 yay -S texworks
+pacman -S poppler-data
 ```
 
 ### [Emacs](/Emacs/) {#le6bf422}
