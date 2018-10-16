@@ -63,38 +63,25 @@ KDE
 
 ```
 $ okular --help
-使用法: okular [Qt-オプション] [KDE-オプション] [オプション] [URL]
-```
-
-```
+Usage: okular [options] urls
 Okular, 汎用文書ビューア
-```
 
-```
-一般的なオプション:
-  --help                    オプションに関するヘルプを表示
-  --help-qt                 Qt に特有なオプションを表示
-  --help-kde                KDE に特有なオプションを表示
-  --help-all                すべてのオプションを表示
-  --author                  著作者情報
-  -v, --version             バージョン情報を表示
-  --license                 ライセンス情報を表示
-  --                        オプションの最後
-```
+Options:
+  -h, --help                 Displays this help.
+  -v, --version              Displays version information.
+  --author                   Show author information.
+  --license                  Show license information.
+  --desktopfile <file name>  The base file name of the desktop entry for this
+                             application.
+  -p, --page <number>        表示する文書のページ
+  --presentation             文書をプレゼンテーションモードで開く
+  --print                    Start with print dialog
+  --print-and-exit           Start with print dialog and exit after printing
+  --unique                   1 つのインスタンスのみ許可
+  --noraise                  Not raise window
 
-```
-オプション:
-  -p, --page <number>       表示する文書のページ
-  --presentation            文書をプレゼンテーションモードで開く
-  --print                   Start with print dialog
-  --print-and-exit          Start with print dialog and exit after printing
-  --unique                  1 つのインスタンスのみ許可
-  --noraise                 Not raise window
-```
-
-```
-引数:
-  URL                       開く文書。標準入力から読む場合は “-” を指定。
+Arguments:
+  urls                       Documents to open. Specify '-' to read from stdin.
 ```
 
 ## SyncTeX {#ya8f4753}
