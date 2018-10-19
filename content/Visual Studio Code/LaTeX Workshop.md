@@ -168,18 +168,17 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
 
 #### 使い方 {#mdd9327c}
 
-ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B あるいは右クリック → Build LaTeX project でビルドコマンドを実行します。
+ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B でビルドコマンドを実行します。
 
-Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで右側に新しいタブで PDF ファイルを表示します。右クリック → SyncTeX from cursor で forward search，Ctrl+左クリックで inverse search を行います。
+Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+J で forward search，Ctrl+左クリックで inverse search を行います。
 
-右クリック → LaTeX Workshop: All actions あるいは左下のチェックマークをクリックで以下のリストが表示されリストの項目から Action を選択すると実行されます。
+Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリックで以下のリストが表示されリストの項目から Action を選択すると実行されます。
 
 > Build LaTeX project<br>
 > View LaTeX PDF<br>
-> View log messages<br>
-> Miscellaneous LaTeX functions<br>
-> Create an issue on Github<br>
-> Star the project<br>
+> View Log messages<br>
+> Navigate, select, and exit<br>
+> Miscellaneous<br>
 
 ## SumatraPDF との連携 {#d61e968a}
 
