@@ -32,14 +32,3 @@ MIT License
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
 - [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
-
-## SumatraPDF との連携 {#d61e968a}
-
-- [LaTeX Workshop + Sumatra PDFの設定](http://funct.hatenablog.com/entry/2018/07/22/193416)
-- [SmatraPDFとVisualStudioCodeでSyncTeXする](http://qiita.com/netwing/items/9c25a3363ab8199709a5)
-
-### inverse search {#he69ec2b}
-
-```
-"C:\Program Files\Microsoft VS Code\Code.exe" -g "%f:%l"
-```
