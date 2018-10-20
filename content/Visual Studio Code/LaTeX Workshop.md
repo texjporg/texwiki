@@ -11,14 +11,14 @@ pukiwiki: "Visual Studio Code/LaTeX Workshop"
 
 ### LaTeX Workshop {#b34f0500}
 
-LaTeX Workshop は Visual Studio Code で LaTeX のタイプセットをするための extension です。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
 - [https://github.com/James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
     - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
     - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
-- [VSCode でLatexの日本語環境を作る](https://gist.github.com/Ikuyadeu/204d06fffd912f441b383eb02463e29b)
+- [MyTeXpert:Visual Studio Code/LaTeX Workshop](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX%20Workshop)
 
 #### 設定 {#f7cc6d6c}
 
@@ -170,7 +170,7 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
 
 ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B でビルドコマンドを実行します。
 
-Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+J で forward search，Ctrl+左クリックで inverse search を行います。
+Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで指定した PDF ビューアで PDF ファイルを表示します。デフォルトでは右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+J で forward search，Ctrl+左クリックで inverse search を行います。
 
 Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリックで以下のリストが表示されリストの項目から Action を選択すると実行されます。
 
@@ -182,11 +182,35 @@ Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリッ�
 
 ## SumatraPDF との連携 {#d61e968a}
 
-- [LaTeX Workshop + Sumatra PDFの設定](http://funct.hatenablog.com/entry/2018/07/22/193416)
-- [SmatraPDFとVisualStudioCodeでSyncTeXする](http://qiita.com/netwing/items/9c25a3363ab8199709a5)
+### forward search {#ydcc4b93}
+
+settings.json に以下の設定を追加・保存します。
+
+```
+  "latex-workshop.view.pdf.viewer": "external",
+  "latex-workshop.view.pdf.external.command": {
+      "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+      "args": [
+          "-reuse-instance",
+          "%PDF%"
+      ]
+  },
+  "latex-workshop.view.pdf.external.synctex": {
+      "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+      "args": [
+          "-reuse-instance",
+          "-forward-search",
+          "%TEX%",
+          "%LINE%",
+          "%PDF%"
+      ]
+  }
+```
 
 ### inverse search {#he69ec2b}
 
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「逆順検索コマンドラインの設定」に以下の設定をします。
+
 ```
-"C:\Program Files\Microsoft VS Code\Code.exe" -g "%f:%l"
+"C:\Program Files\Microsoft VS Code\bin\code.cmd" -g "%f:%l"
 ```
