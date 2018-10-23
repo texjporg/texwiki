@@ -61,7 +61,6 @@ Ctrl+Comma で既定の設定と settings.json を開きます。左側に表示
 Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
 
 ```
-{
     "latex-workshop.latex.tools": [
       {
         "name": "latexmk",
@@ -83,13 +82,11 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
         ]
       }
     ]
-}
 ```
 
 Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
 
 ```
-{
     "latex-workshop.latex.tools": [
       {
         "name": "latexmk",
@@ -109,13 +106,11 @@ Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されてい
         ]
       }
     ]
-}
 ```
 
 macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
 
 ```
-{
     "latex-workshop.latex.tools": [
       {
         "name": "latexmk",
@@ -137,13 +132,11 @@ macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示され�
         ]
       }
     ]
-}
 ```
 
 macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
 
 ```
-{
     "latex-workshop.latex.tools": [
       {
         "name": "latexmk",
@@ -163,7 +156,6 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
         ]
       }
     ]
-}
 ```
 
 #### 使い方 {#mdd9327c}
@@ -187,24 +179,24 @@ Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリッ�
 settings.json に以下の設定を追加・保存します。
 
 ```
-  "latex-workshop.view.pdf.viewer": "external",
-  "latex-workshop.view.pdf.external.command": {
-      "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
-      "args": [
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.command": {
+        "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+        "args": [
           "-reuse-instance",
           "%PDF%"
-      ]
-  },
-  "latex-workshop.view.pdf.external.synctex": {
-      "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
-      "args": [
+        ]
+    },
+    "latex-workshop.view.pdf.external.synctex": {
+        "command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+        "args": [
           "-reuse-instance",
           "-forward-search",
           "%TEX%",
           "%LINE%",
           "%PDF%"
-      ]
-  }
+        ]
+    }
 ```
 
 ### inverse search {#he69ec2b}
