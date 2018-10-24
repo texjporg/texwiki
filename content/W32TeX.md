@@ -320,6 +320,7 @@ command_line_encoding.dvips = none
 - [KDDI総合研究所](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/)
 - [山形大学](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
+- [東京大学](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
 
 ### 過去のバージョンの W32TeX {#mirror-old}
 
