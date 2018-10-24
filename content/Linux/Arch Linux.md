@@ -117,6 +117,12 @@ sudo pacman -S zathura zathura-pdf-poppler zathura-ps poppler-data
 sudo pacman -S qpdfview poppler-data
 ```
 
+### [llpp](/llpp/) {#wc4e0815}
+
+```
+sudo pacman -S llpp
+```
+
 ### [MuPDF](/MuPDF/) {#w1b2cec8}
 
 ```
