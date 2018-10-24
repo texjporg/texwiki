@@ -24,7 +24,6 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 LuaTeX は 2016 年に 1.0.0 がリリースされました。
 
 TeX Live 2018 には 1.07.0 が収録されています。
-Lua 5.2.4 と Lua 5.3.4 の異なるバージョンの Lua が収録されておりデフォルトでは Lua 5.2.4 が使用されます。
 
 TeX Live 2017 には 1.0.4 が収録されています。
 
@@ -44,6 +43,15 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 #### LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
 
 [W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuajitTeX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
+
+#### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの LuaTeX (1.07.0) バイナリが収録されています。
+
+- luatex, texlua: Lua 5.2.4 を内蔵（デフォルト）
+- luatex53, texlua53: Lua 5.3.4 を内蔵
+
+また LuaTeX 開発者 [Luigi Scarso のツイート](https://twitter.com/luigi_scarso/status/1054799795628453889)によれば LuaTeX 1.09.0 が Lua 5.2 をサポートする最後のバージョンになり、その後は Lua 5.3 に完全に移行する模様です。さらに LuaTeX チームには今後 Lua 5.4 に移行していく意思もあるようです。（参考：[NEWS (r6924)](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?revision=48591&view=markup)）
 
 ### LuaTeX, LuaLaTeX で日本語 {#a0eb47cd}
 
