@@ -42,7 +42,7 @@ TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式などの画像フ�
 
 例えば次の数式を作ってみましょう。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
+<img src="http://web.archive.org/web/20111118063529if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
 
 お好きなテキストエディタに次のように打ち込んでください（Linux でも macOS でも Microsoft Windows でも何でもかまいません）。
 
@@ -72,7 +72,7 @@ $ dvips -E testeq.dvi -o testeq.eps
 
 上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
+<img src="http://web.archive.org/web/20111118063622if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
 「[数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
@@ -87,7 +87,7 @@ PDF でもリンク配置なら問題ありません。macOS のプレビュー�
 
 <table>
 <tbody>
-<tr><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
+<tr><td><img src="http://web.archive.org/web/20111118063631if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="http://web.archive.org/web/20111118063533if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
 <tr><td>Illustrator 10.0.3 に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustrator から保存した EPS。</td></tr>
 </tbody>
 </table>
