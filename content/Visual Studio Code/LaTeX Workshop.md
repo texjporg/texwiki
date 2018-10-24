@@ -9,6 +9,10 @@ pukiwiki: "Visual Studio Code/LaTeX Workshop"
 
 [Visual Studio Code](</Visual Studio Code/>) &gt; LaTeX Workshop
 
+***
+
+***
+
 ### LaTeX Workshop {#b34f0500}
 
 LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。
@@ -20,10 +24,12 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
     - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
 - [MyTeXpert:Visual Studio Code/LaTeX Workshop](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX%20Workshop)
 
-#### 設定 {#f7cc6d6c}
+#### 日本語文書向けの設定 {#f7cc6d6c}
 
-Ctrl+Comma で既定の設定と settings.json を開きます。左側に表示されている既定の設定の LaTeX Workshop configuration を選択します。
-デフォルトでは latex-workshop.latex.tools が以下のように設定されています。
+Ctrl+Comma で Settings タブを開きます。
+「設定の検索」で「Tools」を入力して「Latex-workshop &gt; Latex: Tools」を探して「settings.json で編集」をクリックします。
+左側に既定のユーザー設定、右側にユーザー設定 (settings.json) が開かれます。
+左側に表示されている既定のユーザー設定の latex-workshop.latex.tools は以下のように設定されています。
 
 ```
   "latex-workshop.latex.tools": [
@@ -55,10 +61,10 @@ Ctrl+Comma で既定の設定と settings.json を開きます。左側に表示
         "%DOCFILE%"
       ]
     }
-  ],
+  ]
 ```
 
-Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
+Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -84,7 +90,7 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
     ]
 ```
 
-Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
+Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -108,7 +114,7 @@ Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されてい
     ]
 ```
 
-macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
+macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -134,7 +140,7 @@ macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示され�
     ]
 ```
 
-macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存してデフォルトの設定を上書きします。
+macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -162,7 +168,10 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
 
 ファイルの内容を変更して Ctrl+S で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B でビルドコマンドを実行します。
 
-Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで指定した PDF ビューアで PDF ファイルを表示します。デフォルトでは右側に新しいタブで PDF ファイルを表示します。Ctrl+Alt+J で forward search，Ctrl+左クリックで inverse search を行います。
+Ctrl+Alt+V あるいは右上の PDF ファイルのアイコンを左クリックで指定した PDF ビューアで PDF ファイルを表示します。
+タブで開く場合は右側に新しいタブで PDF ファイルを表示します。
+ブラウザで開く場合は既定のブラウザで PDF ファイルを表示します。
+Ctrl+Alt+J で forward search，Ctrl+左クリックで inverse search を行います。
 
 Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリックで以下のリストが表示されリストの項目から Action を選択すると実行されます。
 
@@ -172,9 +181,25 @@ Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリッ�
 > Navigate, select, and exit<br>
 > Miscellaneous<br>
 
-## SumatraPDF との連携 {#d61e968a}
+### タブで PDF を開く {#h0e50815}
 
-### forward search {#ydcc4b93}
+settings.json に以下の設定を追加・保存します。
+
+```
+    "latex-workshop.view.pdf.viewer": "tab"
+```
+
+### 既定のブラウザで PDF を開く {#m1b4a870}
+
+settings.json に以下の設定を追加・保存します。
+
+```
+    "latex-workshop.view.pdf.viewer": "browser"
+```
+
+### SumatraPDF との連携 {#d61e968a}
+
+#### forward search {#ydcc4b93}
 
 settings.json に以下の設定を追加・保存します。
 
@@ -199,7 +224,7 @@ settings.json に以下の設定を追加・保存します。
     }
 ```
 
-### inverse search {#he69ec2b}
+#### inverse search {#he69ec2b}
 
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「逆順検索コマンドラインの設定」に以下の設定をします。
 
