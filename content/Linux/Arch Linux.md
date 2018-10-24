@@ -30,12 +30,14 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
+- [https://wiki.archlinux.org/index.php/TeX_Live](https://wiki.archlinux.org/index.php/TeX_Live)
 - [https://wiki.archlinux.jp/index.php/TeX_Live](https://wiki.archlinux.jp/index.php/TeX_Live)
 - [https://www.archlinux.jp/packages/?q=texlive](https://www.archlinux.jp/packages/?q=texlive)
 - [https://www.archlinux.jp/groups/x86_64/texlive-most/](https://www.archlinux.jp/groups/x86_64/texlive-most/)
 - [https://www.archlinux.jp/groups/x86_64/texlive-lang/](https://www.archlinux.jp/groups/x86_64/texlive-lang/)
-- \[[Arch Linux\] LaTeX環境を整える](https://qiita.com/Aruneko/items/6d073447bff91addd512)
-- [研究室のパソコンに Arch を入れるメモ](http://qiita.com/sira/items/e231fa11da611d4387c6)
+- [https://www.archlinux.org/packages/?name=texlive-langjapanese](https://www.archlinux.org/packages/?name=texlive-langjapanese)
+- [https://www.archlinux.org/packages/?name=texlive-latexextra](https://www.archlinux.org/packages/?name=texlive-latexextra)
+- [MyTeXpert:TeX Live/Arch Linux](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FArch%20Linux)
 
 通常は texlive-langjapanese と texlive-most をインストールします．
 
@@ -43,10 +45,11 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 sudo pacman -S texlive-langjapanese texlive-most
 ```
 
-必要最小限のパッケージのみインストールする場合は texlive-most ではなく texlive-core をインストールします．
+日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-latexextra をインストールします．
+[jlreq](/jlreq/) には everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
 
 ```
-sudo pacman -S texlive-langjapanese texlive-core
+sudo pacman -S texlive-langjapanese texlive-latexextra
 ```
 
 ### [Ghostscript](/Ghostscript/) {#q940a9dc}
@@ -162,6 +165,24 @@ sudo pacman -S texmaker
 ```
 yay -S texworks
 sudo pacman -S poppler-data
+```
+
+### [Visual Studio Code](</Visual Studio Code/>) {#q33f10c6}
+
+```
+sudo pacman -S code
+```
+
+または
+
+```
+yay -S visual-studio-code-bin
+```
+
+### [Atom](/Atom/) {#o4f97d9a}
+
+```
+sudo pacman -S atom
 ```
 
 ### [Emacs](/Emacs/) {#le6bf422}
