@@ -68,8 +68,21 @@ Windows の場合は Xpdf tools をインストールしなくても [TeX Live](
 
 macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
+Xpdf 4.00 の場合
+
 - 公式サイトのバイナリを使用する方法
     - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
+
+- Homebrew を用いる方法
+    - [https://formulae.brew.sh/formula/xpdf](https://formulae.brew.sh/formula/xpdf)
+        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb)
+
+            ```
+            $ brew install xpdf
+            ```
+
+Xpdf 3.04 の場合
+
 - マスクメロンの Xpdf.app を使用する方法
     - [マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，Applications フォルダにインストールします。
         /Applications/Xpdf.app 及び /Applications/Xpdf.app/bin
@@ -83,8 +96,8 @@ macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は�
 
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
 
-- パッケージ管理システムを用いる方法
-    - MacPorts や Homebrew を用いたインストールも可能です。MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
+- MacPorts を用いる方法
+    - MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
 
         ```
         $ port variants xpdf
@@ -133,8 +146,6 @@ macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は�
 
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
     - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
-        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb)
-
 - ソースコードからインストールする方法
     - ソースコードからインストールする場合は [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
 
