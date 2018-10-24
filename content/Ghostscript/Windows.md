@@ -217,10 +217,6 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 [GSview](/GSview/) は Ghostscript のフロントエンドです。
 
-#### GSView {#g86194c3}
-
-[GSView](/GSview/) は Ghostscript のフロントエンドです。
-
 #### PS_View {#psview}
 
 PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
@@ -803,6 +799,7 @@ composefont pop
 #### 角藤版 Ghostscript の配布元 {#sbee10cb}
 
 - [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/)
+- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/)
 
 #### ChangeLog (tlgs.win32) {#a9e655e3}
 
