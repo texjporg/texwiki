@@ -11,6 +11,7 @@ pukiwiki: "GSview"
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
+なお、Artifex GSView 6.0 は終了しました。
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
