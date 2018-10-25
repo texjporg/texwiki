@@ -11,6 +11,7 @@ gv は [Ghostscript](/Ghostscript/) のフロントエンドです。
 
 - [GV - GNU Project - Free Software Foundation](https://www.gnu.org/software/gv/)
 - [gv, a PostScript and PDF previewer](http://pages.cs.wisc.edu/~ghost/gv/gv.htm)
+- [MyTeXpert:gv](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?gv)
 
 ### Cygwin {#n4a211dd}
 
@@ -40,9 +41,6 @@ gv foo.ps
 - [https://github.com/macports/macports-ports/blob/master/print/gv/Portfile](https://github.com/macports/macports-ports/blob/master/print/gv/Portfile)
 - [&#8220;gv&#8221; の検索結果 &#8211; マスクメロン](http://www.muskmelon.jp/?s=gv)
     - [TeXの記憶(125) — Mac用Ghostscript（gv付き）を入れてみた](https://oversleptabit.com/archives/1337)
-- [GS Previewers set for pTeX with X11 (ppc/intel)](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/old/gsv060121.dmg)
-    - [教授でもできるMacOSXへのX11とLaTeX、Ghostviewのインストレーション](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/old/install_gv.html)
-    - [Mac の設定：A Day in the Life](https://s.webry.info/sp/dayinthelife.at.webry.info/200903/article_3.html)
 
 ### Linux {#p8553828}
 
