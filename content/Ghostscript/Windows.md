@@ -229,7 +229,6 @@ PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビ
 #### Ghostscript.NET.Viewer {#ha9e1164}
 
 - [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
-- [Ghostscript.NET - Home](http://ghostscriptnet.codeplex.com/)
 
 を参照してください。
 
