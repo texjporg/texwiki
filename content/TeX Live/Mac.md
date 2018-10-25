@@ -23,7 +23,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。
     - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。
         - MacTeX と BasicTeX の入手先：[http://www.tug.org/mactex/](http://www.tug.org/mactex/)
-    - 小川版 [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)：TeX Live のサブセット (scheme-small) に日本語パッケージが予め追加されています。
+    - 小川版 [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)：TeX Live のサブセット (scheme-small) に日本語パッケージ + α が予め追加されています。
 - パッケージ管理システムを利用する
     - Homebrew 向けパッケージ
     - MacPorts 向けパッケージ
@@ -157,7 +157,10 @@ MacTeX は [TeX Live](</TeX Live/>) をベースにした macOS 専用の TeX �
 BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
 TeX Live をフルインストールしたくない場合は BasicTeX をインストールします。
 
-あるいは，[小川版 Drag &amp; Drop UpTeX (UpTeX.app)](</Drag and Drop UpTeX/>) が，TeX Live scheme-small をベースに collection-langjapanese を加えたディストリビューションとして配布されています。
+### [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) {#i2fc7a04}
+
+[小川版 Drag &amp; Drop UpTeX (UpTeX.app)](</Drag and Drop UpTeX/>) は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
+TeX Live scheme-small をベースに collection-langjapanese + α を加えたディストリビューションとして配布されています。
 UpTeX.app は日本語フォントのセットアップを自動で行う AppleScript の GUI がかぶせてあり，簡単にセットアップを行うことができます。
 
 ### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#e3decd1a}
