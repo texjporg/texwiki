@@ -11,7 +11,7 @@ pukiwiki: "GSview"
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
-なお、Artifex GSView 6.0 は終了しました。
+なお、Artifex GSView 6.0 の開発・サポートは終了しました。
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
@@ -21,7 +21,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ {#x301c4e2}
 
-- 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，GSview がインストールされません。現在 GSview のファイル名が表示されないトラブルが発生しているようです．([参考](https://twitter.com/nikola_yamamoto/status/1044300935210590211))
+- 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，GSview がインストールされません。GSview のファイル名が表示されないトラブルが発生するようです．([参考](https://twitter.com/nikola_yamamoto/status/1044300935210590211))
     - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
 - GSview は CTAN から提供されなくなりました。
