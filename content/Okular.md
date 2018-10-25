@@ -23,7 +23,7 @@ Okular は KDE に搭載されている，PDF, PS, DVI ファイルが表示可�
 
 ### 動作環境 {#ca9192aa}
 
-KDE
+Windows, macOS, Linux
 
 ### ライセンス {#qbc60c11}
 
@@ -43,13 +43,13 @@ KDE
 
 ## インストール {#xecad964}
 
+### Windows {#h8e4fcbd}
+
+[https://binary-factory.kde.org/job/Okular_Nightly_win32/](https://binary-factory.kde.org/job/Okular_Nightly_win32/) から Okular のインストーラーをダウンロードしてインストールできます．
+
 ### Linux {#c209770f}
 
 ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
-
-### Windows {#h8e4fcbd}
-
-[Chocolatey Gallery | Okular](https://chocolatey.org/packages/okular) または [KDE on Windows](https://sourceforge.net/projects/kde-windows/) のインストーラーを使用してインストールできます．
 
 ## 代替フォントの設定 {#o2eb9a55}
 
