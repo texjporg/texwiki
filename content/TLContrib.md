@@ -62,6 +62,20 @@ $ sudo tlmgr update --self --all
 
 次に，TLContrib から cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールします。
 
+macOS Mojave を使用している場合は
+[TLContrib の cjk-gs-integrate-macos.pl](http://git.texlive.info/tlcontrib/tree/texmf-dist/scripts/cjk-gs-integrate-macos/cjk-gs-integrate-macos.pl) が
+[macOS Mojave に対応した cjk-gs-integrate-macos.pl](https://github.com/texjporg/cjk-gs-support/blob/master/cjk-gs-integrate-macos.pl)
+かどうかを確認します。
+TLContrib の cjk-gs-integrate-macos.pl が macOS Mojave に対応していない場合は
+[Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)
+を使用するかあるいは
+
+```
+$ sudo cjk-gs-integrate --fontdef-add=cjkgs-macos-highsierra.dat --link-texmf --force
+```
+
+を実行します。([参考](https://twitter.com/aminophen/status/1054735620776570881))
+
 cjk-gs-integrate を --link-texmf --cleanup オプション付きで実行します。
 
 ```
