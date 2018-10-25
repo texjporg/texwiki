@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 [Mark A. Wicks](https://twitter.com/mawicks0930) 氏によって開発された [dvipdfm](https://web.archive.org/web/20160703003417/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 [Mark A. Wicks](https://twitter.com/mawicks0930) 氏によって開発された [dvipdfm](http://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -20,7 +20,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 
 ### 特徴 {#ia9746cb}
 
-元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) では次が挙げられています．
+元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) に次に示す項目などが挙げられています．
 
 - アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller DC の pdfmark に対応した多くの機能を提供します．
 - [HyperTeX](/HyperTeX/) (HTML)，[TPIC](/pic/)，カラー，PSFile，その他 [PostScript](/PostScript/) special など "標準的な" DVI special 機能を提供します．
@@ -34,7 +34,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 - Acrobat 製品群では不完全な（dvipdfm マニュアルが書かれた当時）エンコーディングの問題に対処するために，フォントの再エンコーディングの機能を提供します．
 - ページとデスティネーション・ツリーに対する平衡木の利用により，巨大な文書における PDF ビューアのアクセスを高速化します．
 
-dvipdfmx での主な変更・拡張は
+dvipdfmx での主な変更・拡張は [The Dvipdfmx User's Manual](https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf) に次に示す項目などが挙げられています．
 
 - OpenType/TrueType に対するより完全な対応，特に2バイトフォントとしての利用や縦組み用のグリフ置換機能を提供します．
 - Subfont Definition ファイルへの対応．CJK-LaTeX を使う際のフォントの問題を解消します．
@@ -44,8 +44,6 @@ dvipdfmx での主な変更・拡張は
 - pdfTeX 互換 special などいくつかの special コマンドを追加します．
 - Type1 フォントの CFF (Type1C) への変換や オブジェクト・ストリーム対応などファイル・サイズ削減のための様々な機能を提供します．
 - アルファ・チャンネルや埋め込み ICC プロファイル対応などの改善されたラスタ画像への対応．
-
-などです．
 
 ### xdvipdfmx {#b22e1172}
 
@@ -84,7 +82,7 @@ foo.dvi -> foo.pdf
 ```
 
 とします．
-macOS ではヒラギノを使うとよいかもしれません（設定については [TeX Live/Mac](</TeX Live/Mac/>) を参照してください）．
+macOS ではヒラギノを使うとよいかもしれません（設定については [TLContrib](/TLContrib/) を参照してください）．
 
 ### コマンドラインオプション {#tc481bdb}
 
