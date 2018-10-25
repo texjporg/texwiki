@@ -46,8 +46,6 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
 
 ## ダウンロード {#x6ddd58f}
 
-<span style="font-size:30px"><strong>Windows 版は Bundle ではなく Installer の方をダウンロードしてください．</strong></span>
-
 [LyX | ダウンロード](http://www.lyx.org/WebJa.Download) からダウンロードできます．
 
 - FTP (公式サイト)
@@ -65,13 +63,11 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
 
 #### Win64, Win32 {#yd2a5f14}
 
-<span style="font-size:30px"><strong>Windows 版は Bundle ではなく Installer の方をダウンロードしてください．</strong></span>
-
 <strong>ユーザー アカウント名が Lydia の場合で説明します．</strong>
 
 <strong>Lydia の部分は自分のアカウント名に置き換えてください．</strong>
 
-LyX のインストーラーを右クリックします。
+LyX の Windows インストーラーを右クリックします。
 
 > 　　　<strong>開く(O)</strong><br>
 > 　　　...<br>
@@ -440,7 +436,7 @@ LyX のインストーラーを右クリックします。
 
 #### Cygwin {#gf73e678}
 
-Cygwin 版の LyX は公式サイトのバイナリ以外に Cygwin のインストーラーからもインストールすることができます．
+Cygwin 版の LyX は公式サイトの Cygwin 用バイナリ以外に Cygwin のインストーラーからもインストールすることができます．
 
 ### macOS {#l288fea5}
 
@@ -464,11 +460,16 @@ $ sudo port install lyx
 
 #### Arch Linux {#p780bd78}
 
+- [https://www.archlinux.org/packages/?q=lyx](https://www.archlinux.org/packages/?q=lyx)
+
 ```
 $ sudo pacman -S lyx
 ```
 
 #### Linux Mint/Debian/Ubuntu {#o9ab2f9b}
+
+- [https://packages.ubuntu.com/search?keywords=lyx](https://packages.ubuntu.com/search?keywords=lyx)
+- [https://packages.debian.org/search?keywords=lyx](https://packages.debian.org/search?keywords=lyx)
 
 ```
 $ sudo apt install lyx
@@ -521,6 +522,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 ## 関連リンク {#j2a0a89a}
 
 - [https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
+- [LyXで日本語を使うようにする設定(Windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E8%A8%AD%E5%AE%9Awindows/)
 - [https://knnlog.wordpress.com/?s=LyX](https://knnlog.wordpress.com/?s=LyX)
     - [LyX 2.3.0 の導入](https://knnlog.wordpress.com/2018/04/14/lyx-2-3-0-%E3%82%92%E5%B0%8E%E5%85%A5/)
 - [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
