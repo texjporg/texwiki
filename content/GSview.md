@@ -78,6 +78,10 @@ jisB8=181,258
 
 無論こんなにたくさん用意する必要はなく，自分に必要なものを設定すればそれで十分です。
 
+### ライセンス {#y06b3066}
+
+AFPL (Aladdin Free Public Licence)
+
 ### 関連リンク {#yb0d4b4b}
 
 - [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
