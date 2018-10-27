@@ -47,6 +47,10 @@ Windows, macOS, Linux
 
 [https://binary-factory.kde.org/job/Okular_Nightly_win32/](https://binary-factory.kde.org/job/Okular_Nightly_win32/) から Okular のインストーラーをダウンロードしてインストールできます．
 
+### macOS {#ye831736}
+
+- [https://github.com/KDE-mac/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE-mac/homebrew-kde/blob/master/Formula/okular.rb)
+
 ### Linux {#c209770f}
 
 ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
