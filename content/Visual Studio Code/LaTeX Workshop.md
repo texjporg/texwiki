@@ -64,7 +64,7 @@ Ctrl+Comma で Settings タブを開きます。
   ]
 ```
 
-Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -90,7 +90,7 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
     ]
 ```
 
-Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -114,7 +114,7 @@ Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されてい
     ]
 ```
 
-macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -140,7 +140,7 @@ macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示され�
     ]
 ```
 
-macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
 
 ```
     "latex-workshop.latex.tools": [
@@ -183,7 +183,7 @@ Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリッ�
 
 ### タブで PDF を開く {#h0e50815}
 
-settings.json に以下の設定を追加・保存します。
+settings.json の {} の中に以下の設定を追加・保存します。
 
 ```
     "latex-workshop.view.pdf.viewer": "tab"
@@ -191,7 +191,7 @@ settings.json に以下の設定を追加・保存します。
 
 ### 既定のブラウザで PDF を開く {#m1b4a870}
 
-settings.json に以下の設定を追加・保存します。
+settings.json の {} の中に以下の設定を追加・保存します。
 
 ```
     "latex-workshop.view.pdf.viewer": "browser"
@@ -201,7 +201,7 @@ settings.json に以下の設定を追加・保存します。
 
 #### forward search {#ydcc4b93}
 
-settings.json に以下の設定を追加・保存します。
+settings.json の {} の中に以下の設定を追加・保存します。
 
 ```
     "latex-workshop.view.pdf.viewer": "external",
