@@ -41,13 +41,13 @@ MacTeX は TeX Live の scheme-full に対応していますので，TeX Live �
 #### GUI-Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-TeX フォルダの中の Docs and Spell Utilities フォルダの中に Documents フォルダと READ ME FIRST.pdf と Spelling フォルダがあり README-ja.pdf（日本語を扱うための初期設定手順の解説），What Is Installed.pdf，Eps-Tiff-Conversion.pdf，Ghostscript.pdf の書類もインストールされます。
+TeX フォルダの中の Docs and Spell Utilities フォルダの中に Documents フォルダと Spelling フォルダと READ ME FIRST.pdf があり Documents フォルダの中に Eps-Tiff-Conversion.pdf，Ghostscript.pdf，README-ja.pdf（日本語を扱うための初期設定手順の解説），What Is Installed.pdf があります。
 
 GUI Applications には以下のアプリケーションが収録されています。
 
 アプリケーションフォルダの中の TeX フォルダに収められています。
 
-- [BibDesk](http://bibdesk.sourceforge.net/)
+- [BibDesk](https://bibdesk.sourceforge.io/)
     - 文献管理ソフト。
 
 - [LaTeXiT](/LaTeXiT/)
@@ -71,15 +71,13 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [Excalibur](http://excalibur.sourceforge.net/)
     - TeX に対応したスペルチェッカー。32-bit アプリケーション。
 
-#### Ghostscript-9.23 --&gt; Ghostscript 9.25 がリリースされています {#n1354f54}
+#### Ghostscript-9.23（脆弱性あり） --&gt; 脆弱性が修正された Ghostscript 9.25 がリリースされています {#n1354f54}
 
 MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
 
 Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
 
 MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
-
-Ghostscript でも日本語を簡単に扱うための設定スクリプトがあります。（→[CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)）
 
 ### インストール {#t244993f}
 
@@ -124,13 +122,14 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
+- [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
 - [MacTeX Live 2018をインストールした：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2018-05-01)
 - [MacTeX 2018 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20180501/1525144736)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
-- [http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](http://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
+- [https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
 
 <!-- MacTeX-2016 の場合 -->
 <!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
