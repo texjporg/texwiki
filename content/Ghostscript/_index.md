@@ -112,6 +112,7 @@ Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/)
 
 ### 関連リンク {#we8f22aa}
 
+- [CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)
 - [GhostScriptあれこれ](http://xanadu62.blogspot.jp/2014/11/ghostscript_22.html)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
