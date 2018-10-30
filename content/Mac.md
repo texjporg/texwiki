@@ -112,7 +112,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - [Zotero](https://www.zotero.org/)
 - [JabRef](http://www.jabref.org/)
-- [BibDesk](http://bibdesk.sourceforge.net/)
+- [BibDesk](https://bibdesk.sourceforge.io/)
 
 このほかにも
 
