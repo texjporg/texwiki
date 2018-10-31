@@ -77,6 +77,7 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - [Visual Studio Code](</Visual Studio Code/>)
         - LaTeX Workshop
     - [Atom](/Atom/)
+        - [Atom/LaTeX](/Atom/LaTeX/)
     - [Emacs](/Emacs/)
         - [Org mode](</Emacs/Org mode/>)
         - [TeX mode](</Emacs/TeX mode/>)
@@ -87,8 +88,6 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [CotEditor](/CotEditor/)
-    - [gedit](/gedit/)
-    - [Geany](/Geany/)
 
 ## PDF ファイルビューア {#pdfviewer}
 
