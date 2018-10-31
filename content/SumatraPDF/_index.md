@@ -13,7 +13,8 @@ pukiwiki: "SumatraPDF"
 SumatraPDF は Windows 用のタブ切り替え型の軽量な PDF ビューアです．
 ePub, MOBI, CHM, XPS, DjVu, CBZ, CBR などの形式も閲覧できます．
 [SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています．
-PDF ファイルだけではなく PostScript ファイルも表示可能です．([Ghostscript](/Ghostscript/) が必要です．)
+PDF ファイルだけではなく PostScript ファイルも表示可能です．
+PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要です．
 
 ***
 
@@ -35,15 +36,18 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 
 コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．
 
-以下のエディタ・マクロ・プラグインは SumatraPDF で forward and inverse search が可能です．
+以下の統合環境，テキストエディタ +（マクロ・プラグイン）は SumatraPDF で forward and inverse search が可能です．
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
-- [Eclipse](/Eclipse/)
-    - [TeXlipse](/TeXlipse/)
+- [TeXnicCenter](/TeXnicCenter/)
+- [Visual Studio Code](</Visual Studio Code/>)
+    - LaTeX Workshop
+- [Atom](/Atom/)
+    - [Atom/LaTeX](/Atom/LaTeX/)
 - [Emacs](/Emacs/)
     - [TeX mode](</Emacs/TeX mode/>)
     - [AUCTeX](/AUCTeX/)
@@ -52,10 +56,8 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
     - [tex.vim](/Vim/tex.vim/)
     - vimtex
     - [Vim-LaTeX](/Vim-LaTeX/)
-- [Visual Studio Code](</Visual Studio Code/>)
-    - LaTeX Workshop
-- [Atom](/Atom/)
-- [TeXnicCenter](/TeXnicCenter/)
+- [Eclipse](/Eclipse/)
+    - [TeXlipse](/TeXlipse/)
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
@@ -93,7 +95,7 @@ SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆�
 
 inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．
 
-どのように設定するかはエディタ・マクロ・プラグインによって異なるのでそれぞれのマニュアルを見て設定してください．
+どのように設定するかは統合環境，テキストエディタ +（マクロ・プラグイン）によって異なるのでそれぞれのマニュアルを見て設定してください．
 
 64-bit Windows での [TeXstudio](/TeXstudio/) であれば
 
