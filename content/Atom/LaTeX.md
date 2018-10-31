@@ -7,7 +7,9 @@ pukiwiki: "Atom/LaTeX"
 
 # Atom/LaTeX
 
-## LaTeX 環境の整備 {#o1b2f62a}
+[Atom](/Atom/) &gt; LaTeX
+
+## LaTeX 環境の整備 {#z8c19e98}
 
 latex, language-latex, pdf-view などのパッケージをインストールしましょう。
 
@@ -63,9 +65,3 @@ Ctrl+Alt+B をタイプするとタイプセットしたあと SumatraPDF で fo
 Ctrl+Alt+S をタイプすると SumatraPDF で forward search が実行されます。
 
 SumatraPDF の画面をダブルクリックすると Atom の該当する TeX ファイルの行にジャンプします。
-
-### latextools (LaTeXTools for Atom) パッケージと Skim との連携 (macOS) {#i645c95d}
-
-latextools パッケージも使用可能なようです。
-
-- [Macの設定の覚書](http://www-het.phys.sci.osaka-u.ac.jp/~yamaguch/j/mac_setting.html)
