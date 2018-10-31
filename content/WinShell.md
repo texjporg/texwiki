@@ -77,6 +77,8 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
+- [ACROBAT　Xと美文書４版との整合性](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1761)
+
 Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
 Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
 
@@ -90,7 +92,10 @@ Cannot start AcrobatReader or open the document.
 ```
 
 という警告メッセージが表示され，PDF ファイルが表示できない場合があります。
-この問題は，上記のレジストリの (既定) の値のデータを
+
+<img src="https://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/10292/winshell.png" alt="" width="50%">
+
+この問題は，Adobe Acrobat Reader DC を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
 AcroViewR19
