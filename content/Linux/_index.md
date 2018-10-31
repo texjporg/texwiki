@@ -172,6 +172,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - [Visual Studio Code](</Visual Studio Code/>)
         - LaTeX Workshop
     - [Atom](/Atom/)
+        - [Atom/LaTeX](/Atom/LaTeX/)
     - [Emacs](/Emacs/)
         - [Org mode](</Emacs/Org mode/>)
         - [TeX mode](</Emacs/TeX mode/>)
