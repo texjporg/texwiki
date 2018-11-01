@@ -958,14 +958,14 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
+- [TikZiT](https://tikzit.github.io/)
 - [TikzEdt](http://www.tikzedt.org/)
 - [TikZ Editor](https://github.com/fredokun/TikZ-Editor)
     - [TikZ Editor (Mac) で \\(backslash)が入力できない場合の対処法](http://yt-siden-memo.tumblr.com/post/96350093900/tikz-editor-mac-backslash)
-- [TikZiT](http://tikzit.sourceforge.net/)
 - [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
 - [KtikZ/QtikZ](http://kde-apps.org/content/show.php/ktikz?content=63188)
     - [Ubuntu 12.10: QTikZ で日本語（１）導入，メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
-- [GeoGebra](http://www.geogebra.org/cms/ja)
+- [GeoGebra](https://www.geogebra.org/)
     - GeoGebraの使い方…[GeoGebra日本](https://sites.google.com/site/geogebrajp/)
 - [Jpdgdraw](http://www.dickimaw-books.com/apps/jpgfdraw/)
 - [Sketch -- A 3D Scene Description Translator](http://www.frontiernet.net/~eugene.ressler/)
@@ -1038,4 +1038,5 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ### ChangeLog {#off3b30e}
 
-- [http://pgf.sourceforge.net/pgf_CVS.ChangeLog](http://pgf.sourceforge.net/pgf_CVS.ChangeLog)
+- [https://sourceforge.net/p/pgf/git/ci/master/log/](https://sourceforge.net/p/pgf/git/ci/master/log/)
+- [https://sourceforge.net/p/pgf/git/ci/master/tree/doc/generic/pgf/ChangeLog](https://sourceforge.net/p/pgf/git/ci/master/tree/doc/generic/pgf/ChangeLog)
