@@ -42,7 +42,7 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 Windows 10 と macOS では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
-また，PostScript や PDF などを扱う，GhostScript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
+また，PostScript や PDF などを扱う，Ghostscript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
 
 PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
 
@@ -55,7 +55,7 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 - [CubePDF](http://www.cube-soft.jp/cubepdf/)（[悪質アドウェアが附属してくるフリーソフトまとめ](https://matome.naver.jp/odai/2138879734745823101/2140077252856194503) を参照）
 - [PDFCreator](http://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
 - [BullZip PDF Printer Community Edition](http://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
-- [pdf995](http://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](http://blog.so-net.ne.jp/susshi_blog/2005-07-29) を参照）
+- [pdf995](http://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](https://susshiblog.blog.so-net.ne.jp/2005-07-29) を参照）
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
