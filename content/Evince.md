@@ -9,7 +9,7 @@ pukiwiki: "Evince"
 
 ## [Evince](https://wiki.gnome.org/Apps/Evince) {#fec1fb99}
 
-Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・ビューアです．
+Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメントビューアーです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 
@@ -53,13 +53,13 @@ Windows, macOS, Linux
 
 Windows 版 Evince は MSYS2 の pacman でインストールできます．フォントを埋め込まなくても日本語を表示することができます．
 
-64-bit Evince の場合は
+64-bit Evince をインストールする場合は
 
 ```
 pacman -S mingw-w64-x86_64-evince mingw-w64-x86_64-gstreamer mingw-w64-x86_64-gst-plugins-base
 ```
 
-32-bit Evince の場合は
+32-bit Evince をインストールする場合は
 
 ```
 pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plugins-base
@@ -67,7 +67,7 @@ pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plug
 
 を実行します．
 
-MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca) から Evince 3.26.0 の Windows 版インストーラがダウンロードできます．
+MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
 
 ### macOS {#y8d21820}
 
