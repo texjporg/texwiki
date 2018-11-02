@@ -15,6 +15,8 @@ Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメント・
 
 - [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
+- [The evince-list Archives](https://mail.gnome.org/archives/evince-list/)
+- [MyTeXpert:Evince](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Evince)
 
 ***
 
@@ -62,6 +64,10 @@ pacman -S mingw-w64-x86_64-evince mingw-w64-x86_64-gstreamer mingw-w64-x86_64-gs
 ```
 pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plugins-base
 ```
+
+を実行します．
+
+MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca) から Evince 3.26.0 の Windows 版インストーラがダウンロードできます．
 
 ### macOS {#y8d21820}
 
@@ -195,6 +201,12 @@ $ evince --help
   -l, --find=STRING               ドキュメントの中から単語や語句を検索する
   --display=DISPLAY               使用するXのディスプレイを指定する
 ```
+
+### Night Mode {#c3b2e12b}
+
+Evince には Night Mode という色を反転させる機能があります。
+
+Ctrl+I で色が反転します。
 
 ## SyncTeX {#w699c2c2}
 
