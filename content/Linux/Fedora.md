@@ -29,8 +29,12 @@ Fedora Workstation は、ノート PC やデスクトップ向けに洗練され
 
 - [https://apps.fedoraproject.org/packages/s/texlive](https://apps.fedoraproject.org/packages/s/texlive)
     - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
+        - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
+        - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
     - [https://apps.fedoraproject.org/packages/texlive-base](https://apps.fedoraproject.org/packages/texlive-base)
+        - [https://apps.fedoraproject.org/packages/texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex)
 - [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
+- [MyTeXpert:TeX Live/Fedora](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FFedora)
 
 フルインストールする場合は
 
