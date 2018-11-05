@@ -75,7 +75,7 @@ MSYS2 からインストールできる Evince よりも若干古いバージョ
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
 - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
-### Arch Linux {#eb51c4f9}
+### Arch Linux/Manjaro Linux {#eb51c4f9}
 
 - [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
 - [Arch LinuxでTeXで出力された日本語pdfをevinceで表示する &amp; fonts.conf公開](http://blog.yomak.info/2015/03/arch-linuxtexpdfevince-fontsconf.html)
