@@ -35,7 +35,8 @@ pukiwiki: "Ghostscript/macOS"
 - [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)
     - [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
-- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
+- [https://formulae.brew.sh/formula/ghostscript](https://formulae.brew.sh/formula/ghostscript)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
 - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
 
