@@ -128,7 +128,7 @@ sudo apt install python3
 #### Python 2 {#a93b92ac}
 
 ```
-sudo apt install python
+sudo apt install python2
 ```
 
 ### Julia <a id="julia"></a> {#xf5a03c6}
