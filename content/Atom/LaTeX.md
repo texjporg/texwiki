@@ -9,14 +9,26 @@ pukiwiki: "Atom/LaTeX"
 
 [Atom](/Atom/) &gt; LaTeX
 
+***
+
+***
+
 ## LaTeX 環境の整備 {#z8c19e98}
 
-latex, language-latex, pdf-view などのパッケージをインストールしましょう。
+[latex](https://atom.io/packages/latex), [language-latex](https://atom.io/packages/language-latex), [pdf-view](https://atom.io/packages/pdf-view) などのパッケージをインストールしましょう。
 
 ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
 [DiCy](https://yitzchak.github.io/dicy/) を使うこともできます。
 Latexmk がインストールされ、パスが通っている前提で進めます。
+
+### 日本語文書向けの設定 {#ca64206f}
+
+Engine のリストから uplatex を選択します。
+
+Output Format のリストから pdf を選択します。
+
+PDF Producer のリストから dvipdfmx を選択します。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
@@ -24,13 +36,7 @@ Latexmk がインストールされ、パスが通っている前提で進めま
 
 #### 設定 {#e1f3ae0a}
 
-Engine のリストから uplatex を選択します。
-
 Enable SyncTeX を ON にします。
-
-Output Format のリストから pdf を選択します。
-
-PDF Producer のリストから dvipdfmx を選択します。
 
 Opener のリストから pdf-view を選択します。
 
@@ -48,13 +54,7 @@ Windows で LaTeX package をインストールすると uplatex + dvipdfmx で�
 
 #### 設定 {#wa284717}
 
-Engine のリストから uplatex を選択します。
-
 Enable SyncTeX を ON にします。
-
-Output Format のリストから pdf を選択します。
-
-PDF Producer のリストから dvipdfmx を選択します。
 
 Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
 
