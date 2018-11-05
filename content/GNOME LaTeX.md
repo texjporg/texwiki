@@ -59,17 +59,28 @@ pacman -S mingw-w64-x86_64-gnome-latex
 pacman -S mingw-w64-i686-gnome-latex
 ```
 
+を実行します．
+
 ### macOS {#b3c38ac4}
 
-- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/latexila.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/latexila.rb)
+- [https://formulae.brew.sh/formula/gnome-latex](https://formulae.brew.sh/formula/gnome-latex)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnome-latex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnome-latex.rb)
 
 ```
-brew install latexila
+brew install gnome-latex
+```
+
+### Arch Linux/Manjaro Linux {#z0c32b42}
+
+- [https://www.archlinux.org/packages/?name=gnome-latex](https://www.archlinux.org/packages/?name=gnome-latex)
+
+```
+pacman -S gnome-latex
 ```
 
 ## Build Tool {#t1320044}
 
-\[Build\]-\[Manage Build Tools\]
+\[Build\] &gt; \[Manage Build Tools\]
 
 <!-- **Default build tools [#s9d34304] -->
 <!--  -->
@@ -89,7 +100,7 @@ brew install latexila
 <!-- :Post Processor| -->
 <!-- :|latexmk -->
 <!--  -->
-<!-- [Build]-[LaTeX → DVI → PDF (Latexmk)] で実行できます． -->
+<!-- [Build] &gt; [LaTeX → DVI → PDF (Latexmk)] で実行できます． -->
 
 ### Personal build tools {#kcfc97ba}
 
@@ -105,7 +116,7 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-upLaTeX\] で実行できます．
+\[Build\] &gt; \[Latexmk-upLaTeX\] で実行できます．
 
 #### Latexmk-LuaLaTeX {#s8b1424d}
 
@@ -119,7 +130,7 @@ Post Processor
 
 : latexmk
 
-\[Build\]-\[Latexmk-LuaLaTeX\] で実行できます．
+\[Build\] &gt; \[Latexmk-LuaLaTeX\] で実行できます．
 
 ## Evince との連携 {#t97f1692}
 
