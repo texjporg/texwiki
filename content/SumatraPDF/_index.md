@@ -45,7 +45,7 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 - [Texmaker](/Texmaker/)
 - [TeXnicCenter](/TeXnicCenter/)
 - [Visual Studio Code](</Visual Studio Code/>)
-    - LaTeX Workshop
+    - [LaTeX](</Visual Studio Code/LaTeX/>)
 - [Atom](/Atom/)
     - [Atom/LaTeX](/Atom/LaTeX/)
 - [Emacs](/Emacs/)
@@ -126,11 +126,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
     - [SumatraPDF pre-release builds](https://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
-        - [DDE commands ](https://github.com/sumatrapdfreader/sumatrapdf/wiki/DDE-commands)
-- [Sumatra PDF Viewer forum](http://forums.fofou.org/sumatrapdf/)
-    <!-- - -[[forward search fails in texlive 2011:http://forums.fofou.org/sumatrapdf/topic?id=2131346]] -->
-    <!-- - -[[Forward search from Vim to sumatrapdf:http://forums.fofou.org/sumatrapdf/topic?id=2353338]] -->
-
+- [Sumatra Reader Discussion Forum](https://forum.sumatrapdfreader.org/)
 - [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
 
 #### License {#f48c8095}
