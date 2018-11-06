@@ -8,6 +8,7 @@ pukiwiki: "gv"
 # gv
 
 gv は [Ghostscript](/Ghostscript/) のフロントエンドです。
+PostScript/PDF ファイルを表示します。
 
 - [GV - GNU Project - Free Software Foundation](https://www.gnu.org/software/gv/)
 - [gv, a PostScript and PDF previewer](http://pages.cs.wisc.edu/~ghost/gv/gv.htm)
@@ -38,7 +39,8 @@ gv foo.ps
 
 - [https://formulae.brew.sh/formula/gv](https://formulae.brew.sh/formula/gv)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/gv.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/gv.rb)
-- [https://github.com/macports/macports-ports/blob/master/print/gv/Portfile](https://github.com/macports/macports-ports/blob/master/print/gv/Portfile)
+- [https://www.macports.org/ports.php?by=library&substr=gv](https://www.macports.org/ports.php?by=library&substr=gv)
+    - [https://github.com/macports/macports-ports/blob/master/print/gv/Portfile](https://github.com/macports/macports-ports/blob/master/print/gv/Portfile)
 - [&#8220;gv&#8221; の検索結果 &#8211; マスクメロン](http://www.muskmelon.jp/?s=gv)
     - [TeXの記憶(125) — Mac用Ghostscript（gv付き）を入れてみた](https://oversleptabit.com/archives/1337)
 
