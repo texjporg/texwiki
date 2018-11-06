@@ -29,7 +29,7 @@ MIT License
 
 ## Visul Studio Code の LaTeX Extension {#ab9306b3}
 
-- LaTeX Workshop
+- [LaTeX](</Visual Studio Code/LaTeX/>)
 
 ### その他の Extension {#d3eb8f1f}
 
