@@ -37,8 +37,9 @@ pukiwiki: "Ghostscript/macOS"
     - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 - [https://formulae.brew.sh/formula/ghostscript](https://formulae.brew.sh/formula/ghostscript)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
-- [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
-- [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
+- [https://www.macports.org/ports.php?by=name&substr=ghostscript](https://www.macports.org/ports.php?by=name&substr=ghostscript)
+    - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
+    - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
 
 ### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
 
