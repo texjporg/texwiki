@@ -80,8 +80,7 @@ Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正�
 
 ### 動作環境 {#e8b195dc}
 
-- Windows
-- macOS, Linux など UNIX 互換 OS
+Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
 
@@ -95,7 +94,7 @@ Ghostscript 9.22 以降は日本語の縦書き PostScript ファイルがうま
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Ghostscript.NET.Viewer](https://github.com/jhabjan/Ghostscript.NET), UNIX 互換 OS では [gv](/gv/), [Evince](/Evince/) という Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Ghostscript.NET.Viewer](https://github.com/jhabjan/Ghostscript.NET), macOS, Linux では [gv](/gv/), [Evince](/Evince/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
