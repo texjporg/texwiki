@@ -13,7 +13,8 @@ pukiwiki: "vimtex"
 
 vimtex は Vim の LaTeX プラグインです．
 
-- [https://github.com/lervag/vimtex](https://github.com/lervag/vimtex)
+- [GitHub - lervag/vimtex: A modern vim plugin for editing LaTeX files.](https://github.com/lervag/vimtex)
+- [MyTeXpert:Vim/vimtex](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Vim%2Fvimtex)
 
 ***
 
@@ -35,8 +36,6 @@ let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
 ```
 
 を記述してください．
-
-vimtex 以外の Vim プラグインとしては，[tex.vim](/Vim/tex.vim/)，LaTeX Box，[quickrun](/quickrun/) があります．
 
 ## 使い方 {#x2ba2b16}
 
