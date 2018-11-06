@@ -73,7 +73,8 @@ MSYS2 からインストールできる Evince よりも若干古いバージョ
 
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
-- [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
+- [https://www.macports.org/ports.php?by=name&substr=evince](https://www.macports.org/ports.php?by=name&substr=evince)
+    - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
 ### Arch Linux/Manjaro Linux {#eb51c4f9}
 
