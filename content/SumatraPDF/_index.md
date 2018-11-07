@@ -127,6 +127,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
 - [Sumatra Reader Discussion Forum](https://forum.sumatrapdfreader.org/)
+- [MyTeXpert:SumatraPDF](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?SumatraPDF)
 - [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
 
 #### License {#f48c8095}
