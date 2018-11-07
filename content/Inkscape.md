@@ -147,10 +147,10 @@ inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ### [EqTeXSVG (LaTeX formula)](https://www.julienvitard.eu/en/eqtexsvg_en.html) {#w6edd3aa}
 
 LaTeX と連携するためのエクステンション．
-<strong>環境変数 Path に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．<br>
+<strong>環境変数 Path に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[LaTeX formula...\] から使用可能．<br>
 
 [EqTeXSvg の公式サイト](https://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
-[Inkscape にデフォルトで含まれています](https://gitlab.com/inkscape/inkscape/blob/master/share/extensions/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
+[Inkscape にデフォルトで含まれています](https://gitlab.com/inkscape/extensions/blob/master/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
 
 - [Inkscape (Win)でLaTeX数式を使えるようにする](http://nan-hen.com/?p=9244)
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
@@ -211,11 +211,11 @@ $ chmod +x eqtexsvg.py
 $ sudo cp -p eqtexsvg.py eqtexsvg.inx /usr/share/inkscape/extensions
 ```
 
-Inkscape を起動すると \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] が使用出来ます．
+Inkscape を起動すると \[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[LaTeX formula...\] が使用出来ます．
 
 #### 使用方法 {#se15d9b2}
 
-- <strong>環境変数 Path に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] → \[レンダリング\] → \[LaTeX formula...\] から使用可能．
+- <strong>環境変数 Path に pstoedit, dvisvgm, dvips, latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[LaTeX formula...\] から使用可能．
 
 LaTeX formula が表示されない場合は，まず環境変数 Path を確認します．
 
@@ -353,5 +353,4 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 - [Wikibooks.ja:Inkscape](https://ja.wikibooks.org/wiki/Inkscape)
 - MacWiki:Inkscape
 - [Inkscape - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/inkscape/)
-- [macOS Sierra でInkscape の日本語化](http://a244.hateblo.jp/entry/2016/10/22/001621)
 - [Beamerscape](https://github.com/jbohren/beamerscape)
