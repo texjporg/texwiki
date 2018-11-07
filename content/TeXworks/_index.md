@@ -146,6 +146,7 @@ TeXworks で \[編集\] &gt; \[設定\] のエディタタブの「エディタ�
 
 ## 関連リンク {#e07d54a5}
 
+- [MyTeXpert:TeXworks](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeXworks)
 - [新しい TeX ドキュメント制作環境 TeXworks の紹介  - I'm Just Another TeXnician.](http://d.hatena.ne.jp/munepi/20100819/texworks)
 - [TeXworks のテンプレートに日本語の雛形を入れてみました  - I'm Just Another TeXnician.](http://d.hatena.ne.jp/munepi/20110625/texworks)
     - [munepi/texworks-templates-japanese: Japanese templates of TeXworks](https://github.com/munepi/texworks-templates-japanese)
