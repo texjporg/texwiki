@@ -17,14 +17,15 @@ pukiwiki: "Atom/LaTeX"
 
 [latex](https://atom.io/packages/latex), [language-latex](https://atom.io/packages/language-latex), [pdf-view](https://atom.io/packages/pdf-view) などのパッケージをインストールしましょう。
 
-ここでは、(u)pTeX 系エンジンを使って文書を作成する設定を解説します。
+ここでは、(u)pTeX 系エンジンまたは LuaTeX エンジンを使って文書を作成する設定を解説します。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
 [DiCy](https://yitzchak.github.io/dicy/) を使うこともできます。
 Latexmk がインストールされ、パスが通っている前提で進めます。
 
 ### 日本語文書向けの設定 {#ca64206f}
 
-Engine のリストから uplatex を選択します。
+Engine のリストから日本語をサポートしているエンジンを選択します。
+upLaTeX を使用する場合は uplatex、LuaLaTeX を使用する場合は lualatex を選択します。
 
 Output Format のリストから pdf を選択します。
 
@@ -50,7 +51,7 @@ PDF の表示画面をクリックすると TeX ファイルの該当する行�
 
 ### latex パッケージと SumatraPDF との連携 (Windows) {#xd2a02e0}
 
-Windows で LaTeX package をインストールすると uplatex + dvipdfmx でタイプセットして SumatraPDF で forward and inverse search が実行できます。
+Windows で LaTeX package をインストールすると SumatraPDF で forward and inverse search が実行できます。
 
 #### 設定 {#wa284717}
 
