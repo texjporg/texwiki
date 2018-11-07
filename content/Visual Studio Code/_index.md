@@ -35,3 +35,4 @@ MIT License
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
 - [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
+- [LaTeX Shape Completion](https://github.com/konn/vscode-latex-shape-completion)
