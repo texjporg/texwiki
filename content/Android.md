@@ -7,7 +7,7 @@ pukiwiki: "Android"
 
 # Android
 
-## [Android](http://www.android.com/) での TeX の利用 {#q41b698a}
+## [Android](https://www.android.com/) での TeX の利用 {#q41b698a}
 
 ***
 
@@ -15,14 +15,29 @@ pukiwiki: "Android"
 
 ## TeX Live <a id="texlive"></a> {#ec902282}
 
-### termux-texlive {#zfd543bb}
+### TeX Live/Termux {#zfd543bb}
 
+- [https://wiki.termux.com/wiki/TeX_Live](https://wiki.termux.com/wiki/TeX_Live)
 - [https://github.com/termux/termux-packages/tree/master/packages/texlive](https://github.com/termux/termux-packages/tree/master/packages/texlive)
-- [https://www.euro-online.org/termux-texlive/](https://www.euro-online.org/termux-texlive/)
+- [https://sdrausty.github.io/pages/tit](https://sdrausty.github.io/pages/tit)
 
 ```
 packages install texlive
 ```
+
+または
+
+```
+apt install texlive
+```
+
+を実行して
+
+```
+tlmgr install scheme-full
+```
+
+を実行します
 
 ### TeX Live Mobile (TeX Live for Android/iOS) {#qa1790de}
 
@@ -32,86 +47,6 @@ packages install texlive
 - [TeX Live Mobile：在Android下使用pdfTeX](https://zhuanlan.zhihu.com/p/22053664)
 - [TeX Live Mobile今日更新](https://zhuanlan.zhihu.com/p/21959676)
 - [TeX Live Mobile开始build](https://zhuanlan.zhihu.com/p/21942557)
-
-### TeX Live for Android {#p2cbca91}
-
-- [TeXLive for Android](https://play.google.com/store/apps/details?id=texlive.androidport)
-    - [texlive-for-android - TeX Live for Android - Google Project Hosting](https://code.google.com/p/texlive-for-android/)
-    - [TeXLive for Android インストールマニュアル](http://tkyon.blogspot.jp/2014/08/texlive-for-android.html)
-    - [TeXLive-for-Android : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/TeXLive-for-Android)
-    - [http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android](http://twilog.org/ti5942/search?word=TeX%20Live%20for%20Android)
-    - [http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones](http://tex.stackexchange.com/questions/87520/how-to-install-tex-on-android-phones)
-
-pdflatex は普通に使用できるそうです：[https://twitter.com/ti5942/status/398938593088901120](https://twitter.com/ti5942/status/398938593088901120)
-
-```
-u0_a77@android:/ $ pdflatex -version
-pdfTeX 3.14159265-2.6-1.40.16 (Web2C 2015 for Android)
-```
-
-uplatex も普通に使用できるそうです：[https://twitter.com/ti5942/status/398946031406034945](https://twitter.com/ti5942/status/398946031406034945)
-
-```
-u0_a77@android:/ $ uplatex -version
-e-upTeX 3.14159265-p3.6-u1.20-141210-2.6 (utf8.uptex) (Web2C 2015 for Android)　　　　　　　　　
-```
-
-dvipdfmx でエラーが発生する場合は dvipdfmx.cfg の K と P の行をコメントアウトすると DVI ファイルを dvipdfmx で処理できるそうです：[https://twitter.com/ti5942/status/385378025983856640](https://twitter.com/ti5942/status/385378025983856640)
-
-***
-
-- dvipdfmx.cfg
-
-***
-
-```
-%% PDF Security (Encryption) Setting
-%%
-%% Those options won't take effects unless you use flag 'S'.
-%%
-%% Key bits for PDF encryption (40 - 128)
-```
-
-```
-%K  40
-```
-
-```
-%% Permission flag for PDF encryption: Revision will be 3 if the key size
-%% is greater than 40 bits.
-%%
-%% 0x0004 (Revision 2) Print the document.
-%%        (Revision 3) Print the document (possibly not at the highest quality
-%%        level, depending on whether bit 12[0x0800] is also set).
-%% 0x0008 Modify the contents of the document by operations other than those
-%%        controlled by bits 6[0x0020], 9[0x0100], and 11[0x0400].
-%% 0x0010 (Revision 2) Copy or otherwise extract text and graphics from the
-%%        document, including extracting text and graphics (in support of
-%%        accessibility to disabled users or for other purposes).
-%%        (Revision 3) Copy or otherwise extract text and grphics from the
-%%        document by operations other than that controlled by bit 10[0x0200].
-%% 0x0020 Add or modify text annotations, fill in interactive form fields,
-%%        and, if bit 4[0x0008] is also set, create or modify interactive
-%%        form fields (including signature fields).
-%%
-%% (Revision 3 only)
-%% 0x0100 Fill in existing interactive form fields (including signature
-%%        fields), even if bit 6 is clear.
-%% 0x0200 Extract text and graphics (in support of accessibility to disabled
-%%        users or for other purposes).
-%% 0x0400 Assemble the document (insert, rotate, or delete pages and create
-%%        bookmarks or thumbnail images), even if bit 4 is clear.
-%% 0x0800 Print the document to a representation from which a faithful digital
-%%        copy of the PDF content could be generated. When this bit is clear
-%%        (and bit 3 is set), printing is limited to a low-level representation
-%%        of the appearance, possibly of degraded quality.
-```
-
-```
-%P  0x003C
-```
-
-***
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
