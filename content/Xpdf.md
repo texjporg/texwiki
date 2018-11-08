@@ -145,7 +145,8 @@ Xpdf 3.04 の場合
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
 
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
-    - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
+    - [https://www.macports.org/ports.php?by=name&substr=xpdf](https://www.macports.org/ports.php?by=name&substr=xpdf)
+        - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
 - ソースコードからインストールする方法
     - ソースコードからインストールする場合は [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
 
