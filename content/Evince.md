@@ -95,7 +95,7 @@ sudo pacman -S evince poppler-data
 Evince は GNOME の標準ドキュメントビューアーなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
 
 ```
-sudo apt install evince
+sudo apt install evince poppler-data
 ```
 
 依存関係により evince-common パッケージもインストールされます。
@@ -107,7 +107,7 @@ libevince-dev パッケージが必要です。
 - [https://apps.fedoraproject.org/packages/evince](https://apps.fedoraproject.org/packages/evince)
 
 ```
-sudo dnf install evince
+sudo dnf install evince poppler-data
 ```
 
 ### openSUSE {#rd040fd0}
@@ -115,7 +115,7 @@ sudo dnf install evince
 - [https://software.opensuse.org/package/evince](https://software.opensuse.org/package/evince)
 
 ```
-sudo zypper install evince
+sudo zypper install evince poppler-data
 ```
 
 ### Beyond Linux From Scratch {#i9f92bae}
