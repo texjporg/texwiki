@@ -49,6 +49,8 @@ Windows, macOS, Linux
 ### Windows {#f2460848}
 
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince)
+- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 - [Windows で evince](http://www.yamamo10.jp/yamamoto/wordpress/?p=842)
 
 Windows 版 Evince は MSYS2 の pacman でインストールできます．フォントを埋め込まなくても日本語を表示することができます．
@@ -67,7 +69,7 @@ pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plug
 
 を実行します．
 
-MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
+MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
 
 ### macOS {#y8d21820}
 
@@ -90,7 +92,7 @@ sudo pacman -S evince poppler-data
 - [https://packages.ubuntu.com/ja/evince](https://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
-Evince は GNOME の標準ドキュメントビューアなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
+Evince は GNOME の標準ドキュメントビューアーなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
 
 ```
 sudo apt install evince
