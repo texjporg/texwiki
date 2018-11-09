@@ -60,6 +60,12 @@ $ sudo port install nkf
 
 ### ビルド {#vec07303}
 
+#### MSYS2 {#if83f36c}
+
+- [msys2にnkfを入れる](https://twinbird-htn.hatenablog.com/entry/2016/05/24/084002)
+- [&lt;msys2> nkfを入れる。](http://nekoyukimmm.hatenablog.com/entry/2016/03/31/152538)
+- [MSYS2上で動作するnkfコマンドのパッケージを作成する](https://qiita.com/magichan/items/1af5befb2b9750d585a2)
+
 #### MinGW {#gdd930d3}
 
 ソースからビルドする方法です。
