@@ -20,6 +20,7 @@ nkf は，文字コードを変換するツールです。
 - [https://ja.osdn.net/projects/nkf/](https://ja.osdn.net/projects/nkf/)
 - [http://jaist.dl.osdn.jp/nkf/](http://jaist.dl.osdn.jp/nkf/)
 - [http://iij.dl.osdn.jp/nkf/](http://iij.dl.osdn.jp/nkf/)
+- [http://ymu.dl.osdn.jp/nkf/](http://ymu.dl.osdn.jp/nkf/)
 - [http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
 - [http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
 - [http://ftp.iij.ad.jp/pub/osdn.jp/nkf/](http://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
@@ -32,7 +33,7 @@ nkf は，文字コードを変換するツールです。
 #### Windows {#md1ac383}
 
 [W32TeX](/W32TeX/) には標準で含まれています。
-Windows に [TeX Live](</TeX Live/>) を『[［改訂第6版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)』からインストールした場合も付属しています。
+Windows に [TeX Live](</TeX Live/>) を『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』からインストールした場合も付属しています。
 
 それ以外の場合は，Vector のサイトから，ビルド済みのバイナリを入手してインストールするのが簡単です。
 
