@@ -19,9 +19,10 @@ pukiwiki: "Atom/LaTeX"
 
 1. Ctrl+Comma で Settings タブを開きます。
 1. 左側の Install をクリックします。
-1. Install Packages の Search packages と表示されている入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
-1. Install Packages の Search packages と表示されている入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
-1. Install Packages の Search packages と表示されている入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
+1. Install Packages の Search packages と表示されている入力欄にパッケージ名を入力してパッケージをインストールします。
+    1. 入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
+    1. 入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
+    1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
 
 ### 日本語文書向けの設定 {#ca64206f}
 
@@ -32,8 +33,8 @@ Latexmk がインストールされ、パスが通っている前提で進めま
 
 1. latex パッケージの Settings をクリックします。
 1. Engine のリストから日本語をサポートしているエンジンを選択します。upLaTeX を使用する場合は uplatex、LuaLaTeX を使用する場合は lualatex を選択します。
-1. Output Format が pdf に設定されていることを確認します。pdf に設定されていない場合はリストから pdf を選択します。
-1. PDF Producer が dvipdfmx に設定されていることを確認します。dvipdfmx に設定されていない場合はリストから dvipdfmx を選択します。
+1. Output Format が pdf に設定されていることを確認します。設定されていない場合はリストから pdf を選択します。
+1. PDF Producer が dvipdfmx に設定されていることを確認します。設定されていない場合はリストから dvipdfmx を選択します。
 1. ファイルを保存したときに自動的にビルドしたい場合は Build on Save を true にします。デフォルトでは false になっています。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
@@ -42,7 +43,7 @@ pdf-view パッケージを使用することで Atom 内で PDF プレビュー
 
 #### 設定 {#e1f3ae0a}
 
-1. Enable SyncTeX が true に設定されていることを確認します。false に設定されている場合は true にします。
+1. Enable SyncTeX が true に設定されていることを確認します。設定されていない場合は true にします。
 1. Opener のリストから pdf-view を選択します。
 
 #### 使い方 {#x26304ba}
@@ -59,7 +60,7 @@ Windows で LaTeX package をインストールすると SumatraPDF で forward 
 
 #### 設定 {#wa284717}
 
-1. Enable SyncTeX が true に設定されていることを確認します。false に設定されている場合は true にします。
+1. Enable SyncTeX が true に設定されていることを確認します。設定されていない場合は true にします。
 1. Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
 
 #### 使い方 {#f1b15dfc}
