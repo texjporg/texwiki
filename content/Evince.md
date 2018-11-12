@@ -29,14 +29,14 @@ Evince 3.30.0 で PostScript バックエンドがデフォルトで無効化さ
 
 Arch Linux/Manjaro Linux, Linux Mint/Debian/Ubuntu, Fedora, openSUSE
 などで使われているパッケージ管理システムからインストールされる Linux 版 Evince は
-PostScript バックエンドのサポートが有効化されているので Evince で PS, EPS ファイルが表示できます。
+PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
 - \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- Disable PostScript backend by default
-- [build: Disable PostScript backend by default (1621cacf) · Commits · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/commit/1621cacf75ebff4ab4ab0fa6855977a2d8da0ac6) &lt;-- evince 3.30.0 で enable_ps=no
+- [build: Disable PostScript backend by default (1621cacf) · Commits · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/commit/1621cacf75ebff4ab4ab0fa6855977a2d8da0ac6) &lt;-- evince 3.30.0 で enable_ps=no に変更
 - [https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6](https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6) &lt;-- Arch Linux の evince 3.30.0-1 で --enable-ps が追加
 - [releasing package evince version 3.30.0-2 (7b631abe) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/7b631abe927e17919243a5407c1b79fb40ed1507), [Enable postscript (0029cfba) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/0029cfba6afdf308023f387447779ffe21716ed7) &lt;-- Debian GNU/Linux の evince 3.30.0-2 で --enable-ps が追加
 - [Commit - rpms/evince - 382cdcb280f4114cecd34f0df02eda7727282b34 - Pagure](https://src.fedoraproject.org/rpms/evince/c/382cdcb280f4114cecd34f0df02eda7727282b34?branch=master) &lt;-- Fedora の evince 3.30.1-2 で --enable-ps=yes が追加
-- [File evince.changes of Package evince - openSUSE Build Service](https://build.opensuse.org/package/view_file/openSUSE:Factory/evince/evince.changes) &lt;-- openSUSE の evince 3.30.1 で enable-ps
+- [File evince.changes of Package evince - openSUSE Build Service](https://build.opensuse.org/package/view_file/openSUSE:Factory/evince/evince.changes), [Request 639947 - openSUSE Build Service](https://build.opensuse.org/request/show/639947) &lt;-- openSUSE の evince 3.30.1 で --enable-ps が追加
 
 ### 動作環境 {#q9c64542}
 
