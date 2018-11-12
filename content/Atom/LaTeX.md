@@ -15,31 +15,35 @@ pukiwiki: "Atom/LaTeX"
 
 ## LaTeX 環境の整備 {#z8c19e98}
 
-[latex](https://atom.io/packages/latex), [language-latex](https://atom.io/packages/language-latex), [pdf-view](https://atom.io/packages/pdf-view) などのパッケージをインストールしましょう。
+### パッケージのインストール {#i20a9a37}
 
-ここでは、(u)pTeX 系エンジンまたは LuaTeX エンジンを使って文書を作成する設定を解説します。
+1. Ctrl+Comma で Settings タブを開きます。
+1. 左側の Install をクリックします。
+1. Install Packages の Search packages と表示されている入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
+1. Install Packages の Search packages と表示されている入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
+1. Install Packages の Search packages と表示されている入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
+
+### 日本語文書向けの設定 {#ca64206f}
+
+(u)pLaTeX エンジンまたは LuaLaTeX エンジンを使って日本語文書を作成する設定をします。
 latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
 [DiCy](https://yitzchak.github.io/dicy/) を使うこともできます。
 Latexmk がインストールされ、パスが通っている前提で進めます。
 
-### 日本語文書向けの設定 {#ca64206f}
-
-Engine のリストから日本語をサポートしているエンジンを選択します。
-upLaTeX を使用する場合は uplatex、LuaLaTeX を使用する場合は lualatex を選択します。
-
-Output Format のリストから pdf を選択します。
-
-PDF Producer のリストから dvipdfmx を選択します。
+1. latex パッケージの Settings をクリックします。
+1. Engine のリストから日本語をサポートしているエンジンを選択します。upLaTeX を使用する場合は uplatex、LuaLaTeX を使用する場合は lualatex を選択します。
+1. Output Format が pdf に設定されていることを確認します。pdf に設定されていない場合はリストから pdf を選択します。
+1. PDF Producer が dvipdfmx に設定されていることを確認します。dvipdfmx に設定されていない場合はリストから dvipdfmx を選択します。
+1. ファイルを保存したときに自動的にビルドしたい場合は Build on Save を true にします。デフォルトでは false になっています。
 
 ### latex パッケージと pdf-view パッケージとの連携 {#l8d4ce3a}
 
-[pdf-view](https://atom.io/packages/pdf-view) パッケージを使用することで Atom 内で PDF プレビューができます。SyncTeX にも対応しています。
+pdf-view パッケージを使用することで Atom 内で PDF プレビューができます。SyncTeX にも対応しています。
 
 #### 設定 {#e1f3ae0a}
 
-Enable SyncTeX を ON にします。
-
-Opener のリストから pdf-view を選択します。
+1. Enable SyncTeX が true に設定されていることを確認します。false に設定されている場合は true にします。
+1. Opener のリストから pdf-view を選択します。
 
 #### 使い方 {#x26304ba}
 
@@ -55,9 +59,8 @@ Windows で LaTeX package をインストールすると SumatraPDF で forward 
 
 #### 設定 {#wa284717}
 
-Enable SyncTeX を ON にします。
-
-Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
+1. Enable SyncTeX が true に設定されていることを確認します。false に設定されている場合は true にします。
+1. Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
 
 #### 使い方 {#f1b15dfc}
 
