@@ -35,4 +35,5 @@ MIT License
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
 - [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
+- [CaTeX - YaTeX like completions for LaTeX in VSCode](https://github.com/konn/catex)
 - [Generic Input Method for VSCode](https://github.com/konn/vscode-generic-input-method)
