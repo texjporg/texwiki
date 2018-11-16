@@ -131,8 +131,6 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 
 - [XeTeX - Unicode-based TeX / Bugs](https://sourceforge.net/p/xetex/bugs/)
 
-## 注意点 {#v6fc9cef}
-
 ### XeTeX 0.99998 以前のバージョンで \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
 
 XeTeX 0.99995 以降を使用している場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
@@ -767,7 +765,6 @@ Hello, \TeX !
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
 - [世界の言語と文字](http://www2.tba.t-com.ne.jp/ing/language.html)
-- [XeTeXに関するメモ](http://math.kyokyo-u.ac.jp/users/skiriki/) (桐木さん)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
 - [XeLaTeXでレポートかきたい。](http://pushl.hatenablog.com/entry/2012/05/27/000233)
 - [Imported from http://ustunozgur.blogspot.com - Filed under 'XeLaTeX'](http://import-chki.posterous.com/tag/xelatex)
