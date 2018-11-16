@@ -19,8 +19,7 @@ pukiwiki: "gedit"
 
 gedit は GNOME 公式のテキストエディタです．
 
-- [gedit](https://wiki.gnome.org/Apps/Gedit)
-- [https://wiki.gnome.org/action/show/Apps/Gedit](https://wiki.gnome.org/action/show/Apps/Gedit)
+- [Apps/Gedit - GNOME Wiki!](https://wiki.gnome.org/Apps/Gedit)
 
 ***
 
