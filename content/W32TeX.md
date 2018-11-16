@@ -291,8 +291,8 @@ command_line_encoding.dvips = none
 ## 関連リンク {#b5892c8c}
 
 - [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
-- [CTAN web interface: package w32tex](https://ctan.org/pkg/w32tex)
-- [CTAN web interface: Directory listing for /systems/win32/w32tex](https://ctan.org/tex-archive/systems/win32/w32tex)
+- [CTAN: Package w32tex](https://ctan.org/pkg/w32tex)
+- [CTAN: /tex-archive/systems/win32/w32tex](https://ctan.org/tex-archive/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
 - [W32TeXとは - はてなキーワード](http://d.hatena.ne.jp/keyword/W32TeX)
 - [「W32TeX」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/W32TeX)
@@ -307,7 +307,7 @@ command_line_encoding.dvips = none
 - [理化学研究所](http://ftp.riken.jp/CTAN/systems/win32/w32tex/)
 - [KDDI総合研究所](http://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/) &lt;-- 更新が速い
+- [ctan.ijs.si (スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/) &lt;-- 更新が速い
 - [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/) &lt;-- 更新が速い
 - [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
