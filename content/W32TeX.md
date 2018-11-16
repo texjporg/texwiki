@@ -35,10 +35,6 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 [拡張子の表示](</Microsoft Windows/#extension>)を設定しておくと，拡張子 .exe が表示されてわかりやすくなるでしょう．
 
-W32TeX の取得先の URL がデフォルトでは [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/) になっていますが
-2018年7月29日で更新が止まっているのでリストから [http://ctan.ijs.si/mirror/w32tex/current/](http://ctan.ijs.si/mirror/w32tex/current/) を選んで変更してください．
-GhostscriptのURLも一覧以外を使う（↓に入力）に [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/) を入力して変更してください．
-
 #### インストールの事例 {#sfa1e1a0}
 
 以下のサイトには，スクリーンショット付の詳細な解説があります．
@@ -311,7 +307,10 @@ command_line_encoding.dvips = none
 - [理化学研究所](http://ftp.riken.jp/CTAN/systems/win32/w32tex/)
 - [KDDI総合研究所](http://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/)
+- [ctan.ijs.si (in スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/) &lt;-- 更新が速い
+- [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/) &lt;-- 更新が速い
+- [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
 <strong>FTP</strong>
 
@@ -320,7 +319,10 @@ command_line_encoding.dvips = none
 - [KDDI総合研究所](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/)
 - [山形大学](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [東京大学](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/)
+- [東京大学](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/) &lt;-- 更新が速い
+- [Ring Server (core.ring.gr.jp)](ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/) &lt;-- 更新が速い
+- [Ring Server (近いサーバー優先)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [Ring Server](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
 ### 過去のバージョンの W32TeX {#mirror-old}
 
