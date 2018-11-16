@@ -803,6 +803,12 @@ composefont pop
 
 - [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/)
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/)
+- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
+- [http://core.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
+- [http://www.dnsbalance.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
+- [http://www.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
 
 #### ChangeLog (tlgs.win32) {#a9e655e3}
 
