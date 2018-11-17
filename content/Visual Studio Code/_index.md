@@ -27,13 +27,13 @@ Windows, macOS, Linux
 
 MIT License
 
-## Visul Studio Code の LaTeX Extension {#ab9306b3}
+## Visul Studio Code の LaTeX 用 Extension {#ab9306b3}
 
 - [LaTeX](</Visual Studio Code/LaTeX/>)
+- [CaTeX](https://marketplace.visualstudio.com/items?itemName=mr-konn.catex)
 
 ### その他の Extension {#d3eb8f1f}
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
 - [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
-- [CaTeX (軽鳥／怪鳥) - YaTeX like completions for LaTeX in VSCode](https://github.com/konn/catex)
 - [Generic Input Method for VSCode](https://github.com/konn/vscode-generic-input-method)
