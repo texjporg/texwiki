@@ -177,6 +177,7 @@ $ sudo tlmgr paper a4
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/)
     - [http://mirror.ctan.org/systems/mac/mactex/](http://mirror.ctan.org/systems/mac/mactex/)
+    - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
 
 - <strong>FTP</strong>
     - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
@@ -189,3 +190,4 @@ $ sudo tlmgr paper a4
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/)
+    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
