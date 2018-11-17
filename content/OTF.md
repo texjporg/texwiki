@@ -37,9 +37,10 @@ TeX Live や W32TeX（フルインストール）とともにインストール�
 Adobe 提供の CMap ファイルが2009年9月、オープンソースになりました。
 [adobe-type-tools/cmap-resources · GitHub](https://github.com/adobe-type-tools/cmap-resources/) から "Clone or download" &gt; "Download ZIP" をクリックすると、
 Adobe-Identity-0,
-Adobe-Japan1-6,
+Adobe-Japan1-7,
 Adobe-GB1-5,
 Adobe-CNS1-7,
+Adobe-KR-9,
 Adobe-Korea1-2
 が含まれている
 cmap-resources-master.zip を取得できます。
@@ -60,8 +61,8 @@ Ryimun-Light と GothicBBB-Meduim は埋め込まれていないフォントを�
 Adobe Acrobat Reader DC は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
 Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパック
 
-- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5877)
-- [Adobe - Adobe Reader : For Macintosh : Adobe Acrobat Reader DC Font Pack (Continuous)](http://www.adobe.com/support/downloads/detail.jsp?ftpID=5878)
+- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6484)
+- [Adobe - Adobe Reader : For Macintosh : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6486)
 
 はインストール済みとします。
 
@@ -371,14 +372,8 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
-TeX Live, cjk-gs-integrate-macos, ptex-fontmaps-macos をインストールして
-
-```
-sudo cjk-gs-integrate --link-texmf --cleanup
-sudo cjk-gs-integrate-macos --link-texmf
-sudo kanji-config-updmap-sys --jis2004 hiragino-highsierra-pron
-```
-
+TeX Live をインストールして
+[Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)
 を実行しました。
 これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。
 
