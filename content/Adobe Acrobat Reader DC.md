@@ -24,6 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
+- Adobe Acrobat Reader DC 2019.008.20080 およびそれ以前には脆弱性が存在します。Adobe Acrobat Reader DC 2019.008.20081 以降に更新してください。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB18-40) に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180045.html)
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
@@ -36,7 +37,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
     起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
     pdfclose を繰り返すのが良いでしょう。
 
-- [Adobe Reader XI のサポートは 2017-10-15 に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
+- [Adobe Reader XI のサポートは 2017年10月15日（日）に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
 
 ### 公式 Web ページ {#t103678c}
 
@@ -61,6 +62,9 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - Adobe Acrobat Reader DC
     - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/)
+- Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x
+    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6484](https://supportdownloads.adobe.com/detail.jsp?ftpID=6484)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/)
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows)
 
@@ -69,6 +73,9 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 - Adobe Acrobat Reader DC
     - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh)
     - [ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/)
+- Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x
+    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6486](https://supportdownloads.adobe.com/detail.jsp?ftpID=6486)
+    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/misc/](ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/misc/)
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh)
 
@@ -107,8 +114,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820071/AcroRdrDC1900820071_ja_JP.exe
-wine AcroRdrDC1900820071_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1900820081/AcroRdrDC1900820081_ja_JP.exe
+wine AcroRdrDC1900820081_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
@@ -492,11 +499,9 @@ synctex help edit
 - [PDF documents printing using Acrobat dll](http://social.msdn.microsoft.com/Forums/br/csharplanguage/thread/802f2024-a7a4-49ca-83d1-850a1ef27dee)
 - \[[ VB.NET / C# \] PDF ファイルをフォーム上に表示して印刷する](http://hensa40.cutegirl.jp/archives/1189)
 - [WindowsフォームでPDFを扱う](http://wiki.livedoor.jp/kabamaro/d/Windows%A5%D5%A5%A9%A1%BC%A5%E0%A4%C7PDF%A4%F2%B0%B7%A4%A6)
-- [.NET製Winフォーム上にPDFを表示する](http://d.hatena.ne.jp/foohogehoge/20091222/1261454425)
 - [Not able to instantiate PDF browser control from AcroPDF.dll using COM and .NET interop](http://stackoverflow.com/questions/2702164/not-able-to-instantiate-pdf-browser-control-from-acropdf-dll-using-com-and-net)
 - [How can one open Adobe Reader with VBScript?](http://stackoverflow.com/questions/3298683/how-can-one-open-adobe-reader-with-vbscript)
 - [Adobe Reader XIを利用してPDFファイルのページ数を取得するVBAマクロ](http://www.ka-net.org/blog/?p=2337)
-- [Adobe Acrobatのない環境でのPDFファイルのページ数取得](http://www.moug.net/faq/viewtopic.php?t=64473)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
