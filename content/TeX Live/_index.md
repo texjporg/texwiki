@@ -101,6 +101,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/)
     - [http://mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
     - [http://texlive.texjp.org/current/tlnet/](http://texlive.texjp.org/current/tlnet/)
+    - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 
 - <strong>FTP</strong>
     - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
@@ -113,6 +114,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/)
+    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 
 ### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#iso}
 
@@ -136,6 +138,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
     - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/)
     - [http://mirror.ctan.org/systems/texlive/Images/](http://mirror.ctan.org/systems/texlive/Images/)
+    - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 
 - <strong>FTP</strong>
     - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
@@ -148,6 +151,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
     - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/)
+    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 
 ### [tltexjp](https://texjp.org/#tltexjp) <a id="tltexjp"></a> {#r64bfbe1}
 
