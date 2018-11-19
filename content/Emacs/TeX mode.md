@@ -120,7 +120,7 @@ C-x C-f ~/
          (cmd "rundll32 shell32,ShellExec_RunDLL SumatraPDF")
          (args (concat "-reuse-instance \"" pf "\" -forward-search \"" ctf "\" " ln)))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "sumatrapdf" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -136,7 +136,7 @@ C-x C-f ~/
          (cmd "fwdsumatrapdf")
          (args (concat "\"" pf "\" \"" ctf "\" " ln)))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "fwdsumatrapdf" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -204,7 +204,7 @@ C-x C-f ~/
          (cmd "/Applications/Skim.app/Contents/SharedSupport/displayline")
          (args (concat ln " " pf " " ctf)))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "displayline" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -269,7 +269,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "fwdevince")
          (args (concat "\"" pf "\" " ln " \"" ctf "\"")))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "fwdevince" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -311,7 +311,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "okular")
          (args (concat "--unique \"file:" pf "#src:" ln " " ctf "\"")))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "okular" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -327,7 +327,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "zathura")
          (args (concat "--synctex-forward " ln ":0:" ctf " " pf)))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "zathura" nil cmd args))))
 
 (add-hook 'latex-mode-hook
@@ -343,7 +343,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "qpdfview")
          (args (concat "--unique \"" pf "#src:" ctf ":" ln ":0\"")))
     (message (concat cmd " " args))
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process-shell-command "qpdfview" nil cmd args))))
 
 (add-hook 'latex-mode-hook
