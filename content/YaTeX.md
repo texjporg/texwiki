@@ -199,7 +199,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (defun fwdsumatrapdf-forward-search ()
   (interactive)
   (progn
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process
       "fwdsumatrapdf"
       nil
@@ -1146,7 +1146,7 @@ off の場合
 (defun fwdsumatrapdf-forward-search ()
   (interactive)
   (progn
-    (process-kill-without-query
+    (process-query-on-exit-flag
      (start-process
       "fwdsumatrapdf"
       nil
