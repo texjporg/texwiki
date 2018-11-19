@@ -31,6 +31,7 @@ MIT License
 
 - [LaTeX](</Visual Studio Code/LaTeX/>)
 - [CaTeX](https://marketplace.visualstudio.com/items?itemName=mr-konn.catex)
+- [VSCode で YaTeX のイメージ補完やユニコード数式記号を入力する為の拡張をつくった](https://konn-san.com/prog/generic-input-method-and-latex-in-vscode.html)
 
 ### その他の Extension {#d3eb8f1f}
 
