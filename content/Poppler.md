@@ -31,7 +31,7 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 ### お知らせ {#qdd1dda1}
 
-- Poppler 0.69 以降はビルドする際に C++14 をサポートした処理系が必要です。
+- Poppler 0.69 以降はビルドする際に C++14 をサポートした処理系が必要です。--&gt; [Bump required C++ standard version to C++14 and convert a few hopefully obvious call sites where types are repeated to using std::make_unique.](https://cgit.freedesktop.org/poppler/poppler/commit/?id=9bfc10eecb57354270806aa1d9278eebb1db2287)
 - Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
     使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
@@ -46,6 +46,8 @@ TeX Live 2017 以降あるいは W32TeX \[2017/02/20\] 以降をインストー�
 
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler)
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data)
+- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 MSYS2 の pacman でインストールすることもできます。
 
@@ -112,7 +114,7 @@ Poppler をインストールしたい場合は，xpdf-tools と pdftohtml を�
 - [https://www.archlinux.org/packages/?q=poppler](https://www.archlinux.org/packages/?q=poppler)
 
 ```
-pacman -S poppler poppler-data
+sudo pacman -S poppler poppler-data
 ```
 
 #### Linux Mint/Debian/Ubuntu {#k603e696}
@@ -437,3 +439,7 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 - [poppler/poppler - The poppler pdf rendering library](https://cgit.freedesktop.org/poppler/poppler)
     - [https://cgit.freedesktop.org/poppler/poppler/refs/tags](https://cgit.freedesktop.org/poppler/poppler/refs/tags)
     - [https://cgit.freedesktop.org/poppler/poppler/log/](https://cgit.freedesktop.org/poppler/poppler/log/)
+- [https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/](https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/)
+    - [https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/?view=log](https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/?view=log)
+- [https://github.com/TeX-Live/texlive-source/tree/trunk/libs/poppler](https://github.com/TeX-Live/texlive-source/tree/trunk/libs/poppler)
+    - [https://github.com/TeX-Live/texlive-source/commits/trunk/libs/poppler](https://github.com/TeX-Live/texlive-source/commits/trunk/libs/poppler)
