@@ -31,8 +31,9 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 ### お知らせ {#qdd1dda1}
 
-Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
-使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
+- Poppler 0.69 以降はビルドする際に C++14 をサポートした処理系が必要です。
+- Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
+    使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
 ### インストール {#tafa7455}
 
@@ -42,6 +43,9 @@ TeX Live 2017 以降あるいは W32TeX \[2017/02/20\] 以降をインストー�
 以下のコマンドが利用できます：
 
 > pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
+
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler)
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data)
 
 MSYS2 の pacman でインストールすることもできます。
 
@@ -57,7 +61,9 @@ pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
 pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
 ```
 
-[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，旧バージョンのビルド済みの Poppler のユーティリティ類を入手することもできます。
+を実行します．
+
+[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，Poppler のユーティリティのバイナリを入手することもできます。
 
 #### macOS {#l3620b9b}
 
@@ -70,7 +76,6 @@ $ brew install poppler
 ```
 
 MacPorts の場合は poppler と poppler-data という名前の Port をインストールします。
-variants は universal のみです。
 
 ```
 $ sudo port install poppler poppler-data
@@ -96,9 +101,11 @@ $ port contents poppler | grep /bin
 なお，[Xpdf](/Xpdf/) 関連の Port（具体的には xpdf-tools と pdftohtml が該当）がインストールされていると衝突してインストールできなくなります。
 Poppler をインストールしたい場合は，xpdf-tools と pdftohtml をアンインストールしてください。
 
-- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb)
-- [https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile)
-- [https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile)
+- [https://formulae.brew.sh/formula/poppler](https://formulae.brew.sh/formula/poppler)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb)
+- [https://www.macports.org/ports.php?by=name&substr=poppler](https://www.macports.org/ports.php?by=name&substr=poppler)
+    - [https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler/Portfile)
+    - [https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/poppler-data/Portfile)
 
 #### Arch Linux {#kbfeb6e5}
 
@@ -113,7 +120,7 @@ pacman -S poppler poppler-data
 - [https://packages.ubuntu.com/ja/poppler](https://packages.ubuntu.com/ja/poppler)
 - [https://packages.debian.org/ja/poppler](https://packages.debian.org/ja/poppler)
 
-Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler68 という名前だったり，libpoppler64 という名前だったりします。
+Linux Mint や Debian GNU/Linux や Ubuntu では poppler ライブラリは libpoppler80 という名前だったり，libpoppler73 という名前だったりします。
 poppler-utils をインストールすれば，依存関係で適宜判断されますので，poppler-utils をインストールします。
 日本語を使う場合は poppler-data も必要です。
 
