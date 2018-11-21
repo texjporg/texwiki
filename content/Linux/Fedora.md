@@ -49,7 +49,7 @@ sudo dnf install texlive-collection-langjapanese texlive-xetex
 ```
 
 を実行します．
-TeX Live 2018/Fedora 30, TeX Live 2018/Fedora 29, TeX Live 2017/Fedora 28 の texlive-collection-langjapanese では dvipdfmx がインストールされません．
+TeX Live 2018/Fedora 30, TeX Live 2018/Fedora 29 の texlive-collection-langjapanese では dvipdfmx がインストールされません．
 dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている texlive-xetex が必要です．
 
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
