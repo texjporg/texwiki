@@ -174,5 +174,6 @@ Windows や macOS に比べ，Linux の方が LaTeX の実行速度が速いよ�
 
 - [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
 - [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
+- \[[tex-live\]  TeX versions](http://tug.org/pipermail/tex-live/2018-November/042697.html)
 
 [^1]: 7つあるか不明
