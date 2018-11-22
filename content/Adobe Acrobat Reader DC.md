@@ -57,6 +57,9 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ## ダウンロード/インストール {#ne09e93f}
 
+- [https://get.adobe.com/jp/reader/](https://get.adobe.com/jp/reader/)
+- [https://get.adobe.com/jp/reader/enterprise/](https://get.adobe.com/jp/reader/enterprise/)
+
 ### Windows {#l93a8183}
 
 - Adobe Acrobat Reader DC
