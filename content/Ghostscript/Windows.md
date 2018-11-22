@@ -15,11 +15,15 @@ pukiwiki: "Ghostscript/Windows"
 
 Windows 版の Ghostscript にはいくつかの種類があります。
 
-- 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
-    - TeX Live 2016 およびそれ以前に収録されている Ghostscript (tlgs.win32) は本家版をベースにしています。
-- 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
-    - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
-    - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+- 本家の公式 Windows 版バイナリ
+    - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
+        - TeX Live 2016 およびそれ以前に収録されている Ghostscript (tlgs.win32) は本家版をベースにしています。
+- 角藤版 Ghostscript
+    - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
+        - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
+        - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+- MSYS2 Ghostscript (mingw-w64-ghostscript)
+    - MSYS2 の pacman からインストールできる Ghostscript
 
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
@@ -781,5 +785,11 @@ composefont pop
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+
+#### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
+
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript)
+- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 [^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276)&#x29;
