@@ -85,6 +85,14 @@ CTAN の世界的なミラーリングとして次の URI があります．
         (HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
+- [Ring Server](http://www.ring.gr.jp/)
+    - [ftp.core.ring.gr.jp/pub/text/CTAN/](http://ftp.core.ring.gr.jp/pub/text/CTAN/index.html)
+        (HTTP, FTP)
+    - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html)
+        (HTTP, FTP)
+    - [ftp.ring.gr.jp/pub/text/CTAN/](http://ftp.ring.gr.jp/pub/text/CTAN/index.html)
+        (HTTP, FTP)
+
 <!-- ***FTP のみ [#FTP-only] -->
 
 <!-- **Ring Server によるミラーリング [#RingServer] -->
