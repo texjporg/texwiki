@@ -19,7 +19,43 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ***
 
-### お知らせ {#x301c4e2}
+### お知らせ <a id="information"></a> {#x301c4e2}
+
+- gsview-5.0 上で角藤版 Ghostscript を使用する場合の注意 --&gt; [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
+
+> 本家の Windows 用 Ghostscript バイナリは，iccprofiles を
+> バイナリに含んでいるので，gsview-5.0 の
+>
+> ```
+> Options--->Safer
+> ```
+>
+> をチェックしてあっても Ghostscript-9.26 を使用できますが，角藤版 Ghostscript の場合は
+> iccprofiles はディスク上のディレクトリであり，gsview-5.0 は古すぎるので
+>
+> ```
+> Options--->Safer
+> ```
+>
+> がこのような構成に対応していません。そこで角藤版 Ghostscript を gsview-5.0 上で使用するには，
+>
+> ```
+> Options--->Safer
+> ```
+>
+> のチェックをはずして，代わりに
+>
+> ```
+> Options--->Advanced Configure...--->Ghostscript Options:
+> ```
+>
+> に
+>
+> ```
+> -dSAFER
+> ```
+>
+> を書き加えて下さい。
 
 - 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，GSview がインストールされません。GSview のファイル名が表示されないトラブルが発生するようです．([参考](https://twitter.com/nikola_yamamoto/status/1044300935210590211))
     - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
@@ -84,7 +120,4 @@ AFPL (Aladdin Free Public Licence)
 
 ### 関連リンク {#yb0d4b4b}
 
-- [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
-- [gs-9.19 for windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1867)
-- [gs-9.18 for windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1678)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
