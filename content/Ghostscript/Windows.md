@@ -16,15 +16,15 @@ pukiwiki: "Ghostscript/Windows"
 Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
-    - TeX Live 2016 以前に含まれている Ghostscript (tlgs.win32) は本家版をベースにしています。
+    - TeX Live 2016 およびそれ以前に収録されている Ghostscript (tlgs.win32) は本家版をベースにしています。
 - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
     - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
     - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
 
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
-- TeX Live に含まれている Ghostscript (tlgs.win32)
-- W32TeX と同じサイトで配布されている角藤版 Ghostscript
+- TeX Live の win32 版に収録されている Ghostscript (tlgs.win32)
+- W32TeX のサイトで配布されている角藤版 Ghostscript
 
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
@@ -36,8 +36,8 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 ### インストール {#a4d9c6ea}
 
-TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
-また，W32TeX を TeX インストーラ 3 を使ってインストールした場合は，角藤版 Ghostscript もインストールされているはずです。
+TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
+また，W32TeX を TeX インストーラ 3 を使ってインストールした場合も，角藤版 Ghostscript がインストールされているはずです。
 
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
@@ -50,70 +50,37 @@ TeX Live の win32 版には Ghostscript (tlgs.win32) が含まれています�
 - 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます。
 - \[設定\] -&gt; \[アプリ\] の \[アプリの機能\] から Ghostscript をアンインストールします。
 
-旧バージョンの Ghostscript Fonts があったならばそれもアンインストールします。
+旧バージョンの Ghostscript Fonts があればそれもアンインストールします。
 
 - 旧バージョンの Ghostscript のフォルダーを探し，何か残っていたならばフォルダーごと削除します。
 - その後，Ghostscript をインストールします。
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs925w64full-gpl.exe または gs925w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.25” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.25” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の角藤版 Ghostscript インストーラ（gs926w64full-gpl.exe または gs926w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.26” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.26” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-
-［gsview-5.0 上で使用する場合の注意］本家のWindows用バイナリは，iccprofilesを
-バイナリに含んでいるので，gsview-5.0の
-
-```
-Options--->Safer
-```
-
-をチェックしてあってもGhostscript-9.25を使用できますが，角藤版の場合は
-iccprofilesはディスク上のディレクトリであり，gsview-5.0は古すぎるので
-
-```
-Options--->Safer
-```
-
-がこのような構成に対応していません。そこで角藤版をgsview-5.0上で使用するには，
-
-```
-Options--->Safer
-```
-
-のチェックをはずして，代わりに
-
-```
-Options--->Advanced Configure...--->Ghostscript Options:
-```
-
-に
-
-```
--dSAFER
-```
-
-を書き加えて下さい。
+1. GSview 5.0 で 角藤版 Ghostscript を使用する場合は [GSview#お知らせ](/GSview/#information) を参照して設定をしてください。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.25 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.25 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.26 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.26 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.25 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.26 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs9.25\bin
+C:\Program Files\gs\gs9.26\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs9.25\lib
+C:\Program Files\gs\gs9.26\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -123,13 +90,13 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 - 64-bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.25\bin;C:\Program Files\gs\gs9.25\lib;…
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.26\bin;C:\Program Files\gs\gs9.26\lib;…
     ```
 
 - 32-bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.25\bin;C:\Program Files\gs\gs9.25\lib;…
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.26\bin;C:\Program Files\gs\gs9.26\lib;…
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
