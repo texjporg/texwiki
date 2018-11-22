@@ -193,8 +193,8 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 ipaex, ipa
 ```
 
-- Mac (macOS) の場合には事前準備が必要です。
-    - [TeX Live/Mac](</TeX Live/Mac/#i9febc9b>) を参照してください。
+- Mac (macOS) でヒラギノを使いたい場合には事前準備が必要です。
+    - [TLContrib](/TLContrib/) を参照してください。
 - Windows でヒラギノを使いたい場合にも事前準備が必要です。
     - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](http://ichiro-maruta.blogspot.jp/2013/08/windows-tex-live-2013.html)
     - ヒラギノ基本6書体パック [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
