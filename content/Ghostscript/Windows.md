@@ -13,6 +13,12 @@ pukiwiki: "Ghostscript/Windows"
 
 % とりあえず整理を開始します。古い情報・誤った情報も混ざっているかもしれませんので，詳しい方，修正お願いします。
 
+***
+
+***
+
+### Ghostscript の種類 {#b73aac8a}
+
 Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリ
@@ -37,10 +43,6 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
 <!-- -[[[texlive] Revision 31504:http://www.tug.org/svn/texlive?view=revision&revision=31504]] -->
-
-***
-
-***
 
 ### インストール {#a4d9c6ea}
 
