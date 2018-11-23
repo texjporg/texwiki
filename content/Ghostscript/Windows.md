@@ -22,8 +22,12 @@ Windows 版の Ghostscript にはいくつかの種類があります。
     - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
         - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
         - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+- Chocolatey Ghostscript
+    - Chocolatey からインストールできる Ghostscript
 - MSYS2 Ghostscript (mingw-w64-ghostscript)
     - MSYS2 の pacman からインストールできる Ghostscript
+- Cygwin Ghostscript
+    - Cygwin からインストールできる Ghostscript
 
 [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
 
@@ -45,7 +49,7 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
-以下では主に W32TeX ユーザ向けに Ghostscript のインストール方法を説明します。
+以下では主に W32TeX ユーザー向けに Ghostscript のインストール方法を説明します。
 
 #### インストールの前に（旧バージョンが既にインストールされている場合） {#zea1e76f}
 
@@ -153,7 +157,7 @@ Dictionary stack:
    --dict:1186/1684(ro)(G)--   --dict:0/20(G)--   --dict:79/200(L)--
 Current allocation mode is local
 Last OS error: No such file or directory
-GPL Ghostscript 9.19: Unrecoverable error, exit code 1
+GPL Ghostscript 9.26: Unrecoverable error, exit code 1
 ```
 
 rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます。
@@ -786,10 +790,21 @@ composefont pop
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
 
+#### Chocolatey Ghostscript {#x1695e76}
+
+- [https://chocolatey.org/packages/ghostscript](https://chocolatey.org/packages/ghostscript)
+
 #### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
 
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 - [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
+
+#### Cygwin Ghostscript {#q45fc3c8}
+
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64)
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86)
+- [https://cygwin.com/cygwin/packages/x86_64/ghostscript/](https://cygwin.com/cygwin/packages/x86_64/ghostscript/)
+- [https://cygwin.com/cygwin/packages/x86/ghostscript/](https://cygwin.com/cygwin/packages/x86/ghostscript/)
 
 [^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276)&#x29;
