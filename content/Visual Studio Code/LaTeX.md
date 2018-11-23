@@ -23,6 +23,7 @@ LaTeX は Visual Studio Code に LaTeX の統合環境を追加する extension 
     - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
     - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
 - [MyTeXpert:Visual Studio Code/LaTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX)
+- [最速で最小構成のLaTeX環境をVSCodeに構築する](https://qiita.com//geek_shanshan/items/d2b6218bbd66e3f62497)
 
 #### 日本語文書向けの設定 {#f7cc6d6c}
 
