@@ -160,16 +160,18 @@ Last OS error: No such file or directory
 GPL Ghostscript 9.26: Unrecoverable error, exit code 1
 ```
 
-rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができます。
-
-```
-rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
-```
-
-TeX Live の ps2pdf.exe を使用しても OK です。
+TeX Live 2018 の ps2pdf.exe を使用するとエラーにはなりませんが
 
 ```
 ps2pdf.exe "予定.ps"
+```
+
+を実行すると 予定.pdf ではなく 定.pdf が出力されてしまいます。
+
+rungs.exe, gswin64c.exe, gswin32c.exe から直接実行すれば処理ができて 予定.pdf が出力されます。
+
+```
+rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFile="予定.pdf" -c save pop -f "予定.ps"
 ```
 
 #### コマンド プロンプトから chcp 65001 で CodePage を変更して ps2pdf.bat を実行すると PDF ファイルが作成されない → CodePage の値を 932 に変更する {#bb074173}
