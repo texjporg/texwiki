@@ -101,13 +101,18 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 インストール方法は 00README.TLW64 を参照してください．
 
 - <strong>HTTP</strong>
+    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
     - [http://ctan.ijs.si/mirror/w32tex/current/TLW64/](http://ctan.ijs.si/mirror/w32tex/current/TLW64/)
-    - [http://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+    - [http://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 
 - <strong>FTP</strong>
-    - [ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/TLW64/)
+    - [ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/TLW64/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/TLW64/)
+    - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+    - [ftp://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
 
