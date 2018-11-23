@@ -41,9 +41,12 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 - [https://atom.io/packages/search?q=latex](https://atom.io/packages/search?q=latex)
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
 - [atom-latex](https://atom.io/packages/atom-latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
-- [latextools](https://atom.io/packages/latextools) -- Atom から LaTeX 文書をコンパイル・プレビュー
+    <!-- -[[latextools:https://atom.io/packages/latextools]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
+
 - [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライトとスニペット
-- [latexer](https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
+    <!-- -[[latexer:https://atom.io/packages/latexer]] - - LaTeX 文書編集用の自動補完パッケージ -->
+
+- [document-outline](https://atom.io/packages/document-outline) -- アウトライン
 - [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
