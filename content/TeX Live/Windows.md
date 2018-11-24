@@ -15,7 +15,7 @@ pukiwiki: "TeX Live/Windows"
 
 ## インストール {#rc65f8ae}
 
-ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法，また，Windows バイナリを用いる方法を説明します．
+ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法，また，64-bit TeX Live Windows バイナリを用いる方法を説明します．
 
 基本的には ISO イメージを用いる方法をおすすめします．
 
