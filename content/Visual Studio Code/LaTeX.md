@@ -13,11 +13,11 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 ***
 
-### LaTeX {#b34f0500}
+### LaTeX Workshop {#b34f0500}
 
-LaTeX は Visual Studio Code に LaTeX の統合環境を追加する extension です。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。
 
-- [LaTeX](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
+- [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
 - [https://github.com/James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
     - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
