@@ -182,6 +182,51 @@ Ctrl+Alt+X あるいは左側の Activity Bar の TeX アイコンをクリッ�
 > Navigate, select, and exit<br>
 > Miscellaneous<br>
 
+### マジックコメント {#z988d211}
+
+LaTeX Workshop は % !TEX root と % !TEX program のマジックコメントをサポートしています。
+
+#### root ファイル（メインファイル）の指定 {#k193d136}
+
+LaTeX Workshop は root ファイル（メインファイル）を自動判別しますがうまく動作しない場合はマジックコメントで指定することができます。
+root ファイル（メインファイル）を指定する場合は
+
+```
+% !TEX root = relative/or/absolute/path/to/root/file.tex
+```
+
+のように設定します。
+
+#### ビルドコマンドの変更 {#x21aa1d8}
+
+「普段は Latexmk-upLaTeX を使うように設定しているけれど特定の文書だけ Latexmk-LuaLaTeX を使いたい」といった場合は設定を変更しなくてもマジックコメントを追加して Latexmk-LuaLaTeX を使用することができます。
+
+settings.json の {} の中に以下の設定を追加・保存します。
+
+```
+      "latex-workshop.latex.magic.args": [
+        "-e",
+        "$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+        "-e",
+        "$bibtex=q/upbibtex %O %B/",
+        "-e",
+        "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+        "-e",
+        "$makeindex=q/upmendex %O -o %D %S/",
+        "-norc",
+        "-pdflua",
+        "%DOC%"
+      ]
+```
+
+LaTeX 文書の root ファイル（メインファイル）に以下の行を追加します。
+
+```
+% !TEX program = latexmk
+```
+
+Ctrl+S で保存あるいは Ctrl+Alt+B でビルドコマンドを実行すると Latexmk-LuaLaTeX が実行されます。
+
 ### タブで PDF を開く {#h0e50815}
 
 settings.json の {} の中に以下の設定を追加・保存します。
