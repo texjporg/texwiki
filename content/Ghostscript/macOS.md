@@ -40,6 +40,8 @@ pukiwiki: "Ghostscript/macOS"
 - [https://www.macports.org/ports.php?by=name&substr=ghostscript](https://www.macports.org/ports.php?by=name&substr=ghostscript)
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
+        - [El Capitan での MacPorts ghostscript-fonts-hiragino](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2016/node4.html)
+        - [https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority](https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority)
 
 ### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
 
