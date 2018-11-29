@@ -48,7 +48,7 @@ itemize 環境などは
 
 b&lt;Enter>it&lt;Enter>
 
-のように b を入力して Enter キーをタイプしてit を入力して Enter キーをタイプすると
+のように b を入力して Enter キーをタイプして it を入力して Enter キーをタイプすると
 
 \begin{\begin{itemize}<br>
 &nbsp;&nbsp;\item <br>
