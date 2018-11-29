@@ -39,6 +39,7 @@ Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packa
 LaTeX での文書作成を補助するパッケージも色々とあります。
 
 - [https://atom.io/packages/search?q=latex](https://atom.io/packages/search?q=latex)
+- [https://atom.io/packages/search?q=keyword:latex](https://atom.io/packages/search?q=keyword:latex)
 - [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
     <!-- -[[atom-latex:https://atom.io/packages/atom-latex]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
     <!-- -[[latextools:https://atom.io/packages/latextools]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
