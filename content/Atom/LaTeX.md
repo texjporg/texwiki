@@ -38,6 +38,38 @@ Latexmk がインストールされ、パスが通っている前提で進めま
 1. PDF Producer が dvipdfmx に設定されていることを確認します。設定されていない場合はリストから dvipdfmx を選択します。
 1. ファイルを保存したときに自動的にビルドしたい場合は Build on Save を true にします。デフォルトでは false になっています。
 
+### language-latex パッケージ {#q2b63e16}
+
+LaTeX の シンタックスハイライト（色分け）とスニペットを追加します。
+
+スニペットの使用に関して注意点があります。
+
+itemize 環境などは
+
+b&lt;Enter>it&lt;Enter>
+
+のように b を入力して Enter キーをタイプしてit を入力して Enter キーをタイプすると
+
+\begin{\begin{itemize}<br>
+&nbsp;&nbsp;\item <br>
+\end{itemize}}<br>
+&nbsp;&nbsp;<br>
+\end{\begin{itemize}<br>
+&nbsp;&nbsp;\item <br>
+\end{itemize}}<br>
+
+のように出力されてしまいます。
+
+it&lt;Enter>
+
+のように it を入力して Enter キーをタイプすると
+
+\begin{itemize}<br>
+&nbsp;&nbsp;\item <br>
+\end{itemize}<br>
+
+のように出力されます。
+
 ### latex-tree パッケージ {#w9a117b7}
 
 Ctrl+Alt+M で Document Tree の表示／非表示の切り替えができます。
