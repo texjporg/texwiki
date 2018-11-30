@@ -46,27 +46,27 @@ LaTeX の シンタックスハイライト（色分け）とスニペットを�
 
 itemize 環境などは
 
-b&lt;Enter>it&lt;Enter>
+> b&lt;Enter>it&lt;Enter>
 
 のように b を入力して Enter キーをタイプして it を入力して Enter キーをタイプすると
 
-\begin{\begin{itemize}<br>
-&nbsp;&nbsp;\item <br>
-\end{itemize}}<br>
-&nbsp;&nbsp;<br>
-\end{\begin{itemize}<br>
-&nbsp;&nbsp;\item <br>
-\end{itemize}}<br>
+> \begin{\begin{itemize}<br>
+> &nbsp;&nbsp;\item <br>
+> \end{itemize}}<br>
+> &nbsp;&nbsp;<br>
+> \end{\begin{itemize}<br>
+> &nbsp;&nbsp;\item <br>
+> \end{itemize}}<br>
 
 のように出力されてしまいます。
 
-it&lt;Enter>
+> it&lt;Enter>
 
 のように it を入力して Enter キーをタイプすると
 
-\begin{itemize}<br>
-&nbsp;&nbsp;\item <br>
-\end{itemize}<br>
+> \begin{itemize}<br>
+> &nbsp;&nbsp;\item <br>
+> \end{itemize}<br>
 
 のように出力されます。
 
@@ -82,6 +82,7 @@ pdf-view パッケージを使用することで Atom 内で PDF プレビュー
 
 #### 設定 {#e1f3ae0a}
 
+1. latex パッケージの Settings をクリックします。
 1. Enable SyncTeX が true に設定されていることを確認します。設定されていない場合は true にします。
 1. Opener のリストから pdf-view を選択します。
 
@@ -99,6 +100,7 @@ Windows で LaTeX package をインストールすると SumatraPDF で forward 
 
 #### 設定 {#wa284717}
 
+1. latex パッケージの Settings をクリックします。
 1. Enable SyncTeX が true に設定されていることを確認します。設定されていない場合は true にします。
 1. Opener のリストから sumatra を選択して SumatraPDF Path を設定します。
 
