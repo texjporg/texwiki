@@ -13,6 +13,8 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 ***
 
+## LaTeX 環境の整備 {#rd4c94a6}
+
 ### LaTeX Workshop {#b34f0500}
 
 LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。
