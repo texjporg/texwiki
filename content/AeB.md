@@ -7,7 +7,7 @@ pukiwiki: "AeB"
 
 # AeB
 
-## [The AcroTeX eDucation Bundle (AeB)](http://www.math.uakron.edu/~dpstory/webeq.html) {#laec97db}
+## [The AcroTeX eDucation Bundle (AeB)](http://www.acrotex.net/aeb_index.php) {#laec97db}
 
 ***
 
@@ -18,9 +18,8 @@ pukiwiki: "AeB"
 The AcroTeX eDucation Bundle (AeB) は Web 用の PDF ファイルを作成するためのパッケージです．<br>
 The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使った PDF ファイルを作成することもできます．<br>
 
-- [The AcroTeX eDucation Bundle](http://www.math.uakron.edu/~dpstory/webeq.html)
-- [Aeb_Pro](http://www.math.uakron.edu/~dpstory/aeb_pro.html)
 - [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
+    - [AcroTeX - AcroTeX eDucation Bundle](http://www.acrotex.net/aeb_index.php)
     - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
 - [https://ctan.org/pkg/acrotex](https://ctan.org/pkg/acrotex)
 - [CTAN:help/Catalogue/entries/acrotex.html](https://mirror.ctan.org/help/Catalogue/entries/acrotex.html)
@@ -28,18 +27,17 @@ The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使っ�
 
 ## インストール {#a7637893}
 
-acrotex_pack.zip をダウンロードして展開します．
-
 ### TeX Live の場合 {#a104916b}
 
-acrotex フォルダーを C:\texlive\texmf-local\tex\latex\acrotex に配置します．
+[TLContrib](/TLContrib/) からインストールできます。
 
-```
-C:\texlive\\texmf-local\tex\latex\acrotex>latex acrotex.ins
-C:\texlive\\texmf-local\tex\latex\acrotex>mktexlsr
-```
+- [http://git.texlive.info/tlcontrib/tree/texmf-dist/doc/latex/acrotex](http://git.texlive.info/tlcontrib/tree/texmf-dist/doc/latex/acrotex)
+- [http://git.texlive.info/tlcontrib/tree/texmf-dist/source/latex/acrotex](http://git.texlive.info/tlcontrib/tree/texmf-dist/source/latex/acrotex)
+- [http://git.texlive.info/tlcontrib/tree/texmf-dist/tex/latex/acrotex](http://git.texlive.info/tlcontrib/tree/texmf-dist/tex/latex/acrotex)
 
 ### W32TeX の場合 {#v4089369}
+
+acrotex.zip をダウンロードして展開します．
 
 acrotex フォルダーを C:\w32tex\share\texmf-local\tex\latex\acrotex に配置します．
 
