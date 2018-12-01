@@ -58,8 +58,7 @@ macOS Mojave を使用している場合は
 [macOS Mojave に対応した cjk-gs-integrate-macos.pl](https://github.com/texjporg/cjk-gs-support/blob/master/cjk-gs-integrate-macos.pl)
 かどうかを確認します。
 TLContrib の cjk-gs-integrate-macos.pl の $macos_ver_minor の値が 14 の場合の処理が記述されていない場合は macOS Mojave に対応していないので
-[Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)
-を使用します。([参考](https://twitter.com/aminophen/status/1054735620776570881))
+[Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)を使用します。([参考](https://twitter.com/aminophen/status/1054735620776570881))
 
 TLContrib の cjk-gs-integrate-macos.pl が macOS Mojave に対応している場合あるいは macOS High Sierra / macOS Sierra / OS X El Capitan を使用している場合は以下を実行してヒラギノフォントを pLaTeX / upLaTeX + dvipdfmx で PDF に埋め込むことができます。
 
@@ -121,6 +120,7 @@ sudo kanji-config-updmap-sys --jis2004 hiragino-elcapitan-pron
 - [TeX Live 2018 注目ポイントまとめ (2)#8. macOS 向けサポートファイルの分離・TLContrib 収録](http://acetaminophen.hatenablog.com/entry/tl2018-02#main-8)
 - [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382)
 - [japanese-otf &amp; japanese-otf-uptex 2018-02-11](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2366)
+- [http://www.preining.info/blog/tag/tlcontrib/](http://www.preining.info/blog/tag/tlcontrib/)
 
 ### ChangLog {#s9b42273}
 
