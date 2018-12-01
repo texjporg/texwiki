@@ -18,7 +18,7 @@ TLContrib は TeX Live に収録できないパッケージを補完するため
 2015年10月3日（日本時間）に，macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps (旧名:jfontmaps) &amp; cjk-gs-integrate 20151002.0 が TeX Live 2015 に取り込まれました。
 しかし ptex-fontmaps &amp; cjk-gs-integrate 20180306.0 で [macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps が削除され](http://www.tug.org/svn/texlive?view=revision&revision=46861)，
 [cjk-gs-integrate で OS X 10.11 El Capitan 以降に付属するヒラギノフォントを扱う場合は外部のデータベースを取得して利用する方法に変更されました](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/cjk-gs-integrate/cjk-gs-integrate.pl?r1=46862&r2=46861&pathrev=46862)。
-そのため macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live 2018 ではサポートされなくなりました。TeX Live 2018 以降は TLContrib から japanese-otf-nonfree, japanese-otf-uptex-nonfree, ptex-fontmaps-macos, cjk-gs-integrate-macos を別途インストールする必要があります。
+そのため macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live 2018 ではサポートされなくなりました。TeX Live 2018 以降は TeX Live に収録できないパッケージを補完するためのリポジトリである TLContrib から japanese-otf-nonfree, japanese-otf-uptex-nonfree, ptex-fontmaps-macos, cjk-gs-integrate-macos を別途インストールする必要があります。
 <strong>pLaTeX / upLaTeX + dvipdfmx でヒラギノフォントを埋め込みたい場合</strong>については macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレードが可能です。
 
 この件を含めた一連の対応については，以下を参照してください。
@@ -48,9 +48,9 @@ TLContrib は TeX Live に収録できないパッケージを補完するため
 macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントを TeX Live で利用したい場合は，はじめに
 
 - macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレード
-- TeX Live 2018（または MacTeX-2018 / BasicTeX-2018）のインストール
+- TeX Live 2018 / MacTeX-2018 / BasicTeX-2018 のインストール
 
-を完了させてください（どちらを先に行ってもかまいません；TeX Live や MacTeX / BasicTeX のインストールは，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan かどうかにかかわらず従来と同じ方法で可能です[^1]）。
+を完了させてください（どちらを先に行ってもかまいません；TeX Live / MacTeX / BasicTeX のインストールは，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan かどうかにかかわらず従来と同じ方法で可能です[^1]）。
 そのうえで，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントのセットアップ手順は以下のとおりです：
 
 macOS Mojave を使用している場合は
