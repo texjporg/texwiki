@@ -19,15 +19,15 @@ TLContrib は TeX Live に収録できないパッケージを補完するため
 しかし ptex-fontmaps &amp; cjk-gs-integrate 20180306.0 で [macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps が削除され](http://www.tug.org/svn/texlive?view=revision&revision=46861)，
 [cjk-gs-integrate で OS X 10.11 El Capitan 以降に付属するヒラギノフォントを扱う場合は外部のデータベースを取得して利用する方法に変更されました](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/cjk-gs-integrate/cjk-gs-integrate.pl?r1=46862&r2=46861&pathrev=46862)。
 そのため macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live 2018 ではサポートされなくなりました。TeX Live 2018 以降は TeX Live に収録できないパッケージを補完するためのリポジトリである TLContrib から japanese-otf-nonfree, japanese-otf-uptex-nonfree, ptex-fontmaps-macos, cjk-gs-integrate-macos を別途インストールする必要があります。
-<strong>pLaTeX / upLaTeX + dvipdfmx でヒラギノフォントを埋め込みたい場合</strong>については macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレードが可能です。
+<strong>pLaTeX / upLaTeX + dvipdfmx では macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントを埋め込み可能です。</strong>
 
-この件を含めた一連の対応については，以下を参照してください。
+macOS 付属のヒラギノフォントに関する一連の対応については，以下を参照してください。
 
 - [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2382)
 - [TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306)
 
-この情報は macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan への積極的なアップデートをすすめるものではありません。
-ただし，OS X Yosemite 以前には既知の脆弱性があり，その対策は macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップデートでしか提供されていないため，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップデートを見合わせるということは TeX や DTP のためにセキュリティ対策を犠牲にしていると心得る必要があります。
+この情報は macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレードをすすめるものではありません。
+ただし，OS X Yosemite 以前には既知の脆弱性があり，その対策は macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップデートでしか提供されていないため，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan へのアップグレードを見合わせるということは TeX や DTP のためにセキュリティ対策を犠牲にしていると心得る必要があります。
 
 - TeX Live 2015 に収録されている [LuaTeX](/LuaTeX/) beta-0.80.0 は，macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan に搭載された新しい形式のヒラギノフォントを利用することができません。
     したがって，[LuaTeX-ja](/LuaTeX-ja/) でヒラギノフォントを使うためには2015年10月8日にリリースされた LuaTeX beta-0.81.0 以降に更新する必要があります（ただし，luaotfload パッケージの対応が未完了）。
