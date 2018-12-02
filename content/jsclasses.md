@@ -7,9 +7,9 @@ pukiwiki: "jsclasses"
 
 # jsclasses
 
-## [jsclasses](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)（pLaTeX2e 新ドキュメントクラス） {#m850c7de}
+## [jsclasses](https://github.com/texjporg/jsclasses) {#m850c7de}
 
-jsclasses は奥村晴彦先生による upLaTeX, pLaTeX 用新ドキュメントクラスです．
+jsclasses は Japanese TeX Development Community による upLaTeX, pLaTeX 用ドキュメントクラスです．
 従来の jarticle や jbook といったドキュメントクラスは
 JIS フォントメトリックに従っていませんでしたが，今では日本語文書の行組版方法に即した
 jsclasses が標準になっています．
@@ -74,5 +74,9 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
 #### CTAN 配布サイト {#q7ee37eb}
 
 - [https://ctan.org/pkg/jsclasses](https://ctan.org/pkg/jsclasses)
+
+#### pLaTeX2e 新ドキュメントクラス {#k48ec8db}
+
+- [pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)
 
 [^1]: 環境によっては texhash コマンドかもしれません．
