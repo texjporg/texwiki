@@ -18,7 +18,7 @@ TLContrib は TeX Live に収録できないパッケージを補完するため
 2015年10月3日（日本時間）に，macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps (旧名:jfontmaps) &amp; cjk-gs-integrate 20151002.0 が TeX Live 2015 に取り込まれました。
 しかし ptex-fontmaps &amp; cjk-gs-integrate 20180306.0 で [macOS Sierra / OS X El Capitan のヒラギノフォントに対応した ptex-fontmaps が削除され](http://www.tug.org/svn/texlive?view=revision&revision=46861)，
 [cjk-gs-integrate で OS X 10.11 El Capitan 以降に付属するヒラギノフォントを扱う場合は外部のデータベースを取得して利用する方法に変更されました](http://www.tug.org/svn/texlive/trunk/Build/source/texk/texlive/linked_scripts/cjk-gs-integrate/cjk-gs-integrate.pl?r1=46862&r2=46861&pathrev=46862)。
-そのため macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live 2018 ではサポートされなくなりました。TeX Live 2018 以降は TeX Live に収録できないパッケージを補完するためのリポジトリである TLContrib から japanese-otf-nonfree, japanese-otf-uptex-nonfree, ptex-fontmaps-macos, cjk-gs-integrate-macos を別途インストールする必要があります。
+そのため macOS Sierra / OS X El Capitan に付属するヒラギノフォントは TeX Live 2018 ではサポートされなくなりました。TeX Live 2018 以降は TeX Live に収録できないパッケージを補完するためのリポジトリである TLContrib から japanese-otf-nonfree, japanese-otf-uptex-nonfree, ptex-fontmaps-macos, cjk-gs-integrate-macos を別途インストールして設定する必要があります。
 <strong>pLaTeX / upLaTeX + dvipdfmx では macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan に付属するヒラギノフォントを埋め込み可能です。</strong>
 
 macOS 付属のヒラギノフォントに関する一連の対応については，以下を参照してください。
@@ -57,7 +57,7 @@ macOS Mojave を使用している場合は
 [TLContrib の cjk-gs-integrate-macos.pl](http://git.texlive.info/tlcontrib/tree/texmf-dist/scripts/cjk-gs-integrate-macos/cjk-gs-integrate-macos.pl) が
 [macOS Mojave に対応した cjk-gs-integrate-macos.pl](https://github.com/texjporg/cjk-gs-support/blob/master/cjk-gs-integrate-macos.pl)
 かどうかを確認します。
-TLContrib の cjk-gs-integrate-macos.pl の $macos_ver_minor の値が 14 の場合の処理が記述されていない場合は macOS Mojave に対応していないので
+TLContrib の cjk-gs-integrate-macos.pl の [$macos_ver_minor の値が 14 の場合の処理](https://github.com/texjporg/cjk-gs-support/commit/4aa66186f854701bcfff77c9b4b32314cafeb90a#diff-c3805f5784f287c20c6562ee48a1c6d9)が記述されていない場合は macOS Mojave に対応していないので
 [Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)を使用します。([参考](https://twitter.com/aminophen/status/1054735620776570881))
 
 TLContrib の cjk-gs-integrate-macos.pl が macOS Mojave に対応している場合あるいは macOS High Sierra / macOS Sierra / OS X El Capitan を使用している場合は以下を実行してヒラギノフォントを pLaTeX / upLaTeX + dvipdfmx で PDF に埋め込むことができます。
