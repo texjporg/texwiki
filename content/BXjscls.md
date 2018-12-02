@@ -12,7 +12,7 @@ pukiwiki: "BXjscls"
 BXjscls パッケージは pdflatex, lualatex, xelatex, platex-ng, uplatex, platex で使用可能な日本語文書組版のための LaTeX 文書クラスのコレクションです．
 TeX Live, W32TeX に含まれています．
 
-奥村先生の「[pLaTeX2e 新ドキュメントクラス（jsclasses）](/jsclasses/)」は (u)pLaTeX での使用を前提としているため，他のエンジンでは使用することができません．
+Japanese TeX Development Community の [jsclasses](/jsclasses/) は (u)pLaTeX での使用を前提としているため，他のエンジンでは使用することができません．
 BXjscls は jsclasses から (u)pLaTeX 依存の部分を分離したもので，これと各エンジン用の日本語処理パッケージを組み合わせることで，(u)pLaTeX 以外でも新ドキュメントクラスを用いた場合と同等の文書作成が可能となります．
 
 - [https://github.com/zr-tex8r/BXjscls](https://github.com/zr-tex8r/BXjscls)
@@ -554,6 +554,10 @@ BXJS クラス（標準設定）では \jachar{&lt;文字>} という命令を�
 現在の和文フォント（IPAex明朝）には“☃”の字形があるため，これで正常に“☃”が出力できます．
 
 ※ \jachar の引数には文字 1 つだけを指定できます．
+
+#### macOS で IPAex フォントがシステムにインストールされていない状態で BXjscls のデフォルト設定のまま XeLaTeX を使用するとエラーになる {#gc18a2b0}
+
+macOS で IPAex フォントがシステムにインストールされていない状態で BXjscls のデフォルト設定のまま XeLaTeX を使用するとエラーになるようです。--&gt; ([参考](https://twitter.com/wtsnjp/status/1068110801381163008))
 
 ### 不具合 {#x3d34063}
 
