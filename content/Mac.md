@@ -173,7 +173,7 @@ macOS 用の汎用的なキーボードカスタマイズツール Karabiner で
 
 Unicode Keyboard Layout Editor の [Ukelele](http://scripts.sil.org/ukelele) で，\_（アンダースコア） を入力すると \ に変換することができます。
 
-- [Mac(Sierra)でのキーリマップ](http://uitspitss.hatenablog.com/entry/2017/05/31/031642)
+- [Mac(Sierra)でのキーリマップ](https://uitspitss.hatenablog.com/entry/2017/05/31/031642)
 
 ### Hammerspoon によるキーバインドの変更 {#o4723e6f}
 
@@ -214,7 +214,6 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 ## 関連リンク {#links}
 
-- [MacTeX 2018 のインストール＆日本語環境構築法](http://doratex.hatenablog.jp/entry/20180501/1525144736)
 - [Newest &#39;mac&#39; Questions - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/tagged/mac)
 - [The MacOSX-TeX Archives](https://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
