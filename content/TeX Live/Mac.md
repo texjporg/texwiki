@@ -34,8 +34,8 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 ### TeX Live 2018 のバイナリの動作環境に関する変更点 {#obbbdbf4}
 
-TeX Live 2017 以降は x86_64-darwin バイナリは Apple セキュリティアップデートが提供されている OS のみサポートされることになりました。
-Apple セキュリティアップデートが提供されないレガシーな OS では x86_64-darwinlegacy バイナリを使用します。
+TeX Live 2017 以降は x86_64-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみサポートされることになりました。
+[Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されないレガシーな OS では x86_64-darwinlegacy バイナリを使用します。
 [TeX Live 2016 まで存在していた universal-darwin バイナリは TeX Live 2017 で削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871)。
 [TeX Live 2017 の i386-darwin バイナリと powerpc-darwin バイナリは TeX Live 2018 で削除されました](http://www.tug.org/svn/texlive?view=revision&revision=47075)。
 
