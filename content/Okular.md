@@ -68,6 +68,7 @@ choco install okular
 
 ## 代替フォントの設定 {#o2eb9a55}
 
+- [Evince#代替フォントの設定](/Evince/#fallback)
 - [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](http://blogs.yahoo.co.jp/igproj_fusion/16383026.html)
 
 ## 使い方 {#jf24f8bb}
