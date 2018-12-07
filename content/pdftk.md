@@ -47,6 +47,10 @@ sudo port install pdftk
 [本家ドキュメント](https://www.pdflabs.com/docs/pdftk-man-page/)参照．
 pdftk --help または pdftk -h と入力すれば詳しいマニュアルが現れます．
 
+### 派生版 {#le1443b7}
+
+- [pdftk-java](https://gitlab.com/pdftk-java/pdftk) A port of pdftk into java
+
 ### 関連リンク {#ex5bb0d4}
 
 - [pdftk: Linux Wiki](http://oku.edu.mie-u.ac.jp/~okumura/linux/?pdftk)
