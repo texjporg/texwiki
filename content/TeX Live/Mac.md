@@ -169,6 +169,7 @@ UpTeX.app は日本語フォントのセットアップを自動で行う AppleS
 
 - [https://github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb)
+- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex-no-gui.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex-no-gui.rb)
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/basictex.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/basictex.rb)
 
 TeX Live をフルインストールする場合は MacTeX をインストールしてください。
