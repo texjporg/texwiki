@@ -51,6 +51,8 @@ MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイ
 | x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
 | x86_64-darwinlegacy |  |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
+@kauplan 氏によって Qiita に投稿された記事「[LaTeXの環境構築がクソ^H^H苦行すぎる（macOS Mojave+MacTex 2018）](https://qiita.com/kauplan/items/44ac2ecc37a31babb577)」によると、Mojaveでの問題点が「[TLContrib](/TLContrib/)」で説明されているらしいのですが、本ページからのリンクがないためたいへんご苦労された様子です。Mojave の人はそちらの記事も参照してみると良いでしょう。
+
 ### TeX Live のインストール {#texliveinstall}
 
 TeX Live のインストールガイド
