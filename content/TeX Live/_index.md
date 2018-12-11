@@ -37,6 +37,8 @@ TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/)
 TeX Live は OS ごとにインストール方法が異なります．
 それぞれの OS のインストール方法を参照してください．
 
+TeX Live は年次ごとにバージョンが新しくなりますが，基本的に古い年次のものが既にインストールされていても，気にせずに新規インストールと同じ手順をとって構いません。
+
 - [Microsoft Windows](</Microsoft Windows/>)
     - Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
     - [Cygwin](/Cygwin/#texlive) へのインストールも可能です．
