@@ -13,36 +13,39 @@ pukiwiki: "TeX Live/Mac"
 
 ***
 
-## インストール {#y09289cd}
+## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
+お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2018 のバイナリの動作環境に関する注意](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
-    - install-tl を入手してターミナルから実行
+    - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
 - TeX Live をベースにした macOS 専用の TeX ディストリビューションを入手する
-    - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。
-    - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。
-        - MacTeX と BasicTeX の入手先：[http://www.tug.org/mactex/](http://www.tug.org/mactex/)
-    - 小川版 [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>)：TeX Live のサブセット (scheme-small) に日本語パッケージ + α が予め追加されています。
+    - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。 → [こちら](/MacTeX/)
+    - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。 → [こちら](/BasicTeX/)
+    - 小川版 Drag &amp; Drop UpTeX：TeX Live のサブセット (scheme-small) に日本語パッケージ + α が予め追加されており，日本語フォントのセットアップを自動で簡単に行う GUI も付いています。 → [こちら](</Drag and Drop UpTeX/>)
 - パッケージ管理システムを利用する
-    - Homebrew 向けパッケージ
-    - MacPorts 向けパッケージ
+    - Homebrew 向けパッケージ → [こちら](#texlive-install-brew)
+    - MacPorts 向けパッケージ → [こちら](#texlive-install-port)
 
-いずれの方法でも，TeX Live をインストールして必要であれば最新版にアップデートします。
+なお，macOS (OS X, Mac OS X) に付属のヒラギノフォントを使用したい場合は，インストールと最新へのアップデートが完了した後で，[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
+下記の理由により，これは特に必須というわけではありません。
+
+- TeX Live 2015 以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
+- ところが，TeX Live 2016 以降では状況が変わり，標準で IPAex フォントが埋め込まれるようになりました（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)）。そのため，もはやヒラギノフォントを使う設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2018 のバイナリの動作環境に関する変更点 {#obbbdbf4}
+### はじめに：TeX Live 2018 のバイナリの動作環境に関する注意 {#binary}
 
-TeX Live 2017 以降は x86_64-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみサポートされることになりました。
-[Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されないレガシーな OS では x86_64-darwinlegacy バイナリを使用します。
-[TeX Live 2016 まで存在していた universal-darwin バイナリは TeX Live 2017 で削除され、i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871)。
-[TeX Live 2017 の i386-darwin バイナリと powerpc-darwin バイナリは TeX Live 2018 で削除されました](http://www.tug.org/svn/texlive?view=revision&revision=47075)。
+macOS 用として配布される TeX Live 2018 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
-MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイナリのみ収録されます。
+- x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみをサポートします。
+- x86_64-darwinlegacy バイナリ：それ以前のレガシーな OS をサポートします[^1]。
 
-下の表で自分が使用している OS はどのバイナリをインストールすればよいのか確認できます。
-&#x2714; マークは OS と対応するバイナリを示しています。
+お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
+具体的には，以下の表を参照してください（&#x2714; マークが OS と対応するバイナリを示す）。
+なお，MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな OS では使用できません。
 
 <div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
 
@@ -56,17 +59,15 @@ MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイ
 <!-- このような執拗に「ヒラギノフォント」に拘る人のために、一番上に「ヒラギノフォントを埋め込む」方法を1行ぐらいで書いてあげたら良いのではないでしょうか？　一発でできないかぎり、またこのような人物が現れるかねないでしょう。 -->
 <!-- @kauplan 氏によって Qiita に投稿された記事「[[LaTeXの環境構築がクソ^H^H苦行すぎる（macOS Mojave+MacTex 2018）:https://qiita.com/kauplan/items/44ac2ecc37a31babb577]]」によると、Mojaveでの問題点が「[[TLContrib]]」で説明されているらしいのですが、本ページからのリンクがないためたいへんご苦労された様子です。Mojave の人はそちらの記事も参照してみると良いでしょう。 -->
 
-macOS (OS X, Mac OS X) に付属のヒラギノフォントを使用したい場合は、[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino>)を参照してください。
-
-### TeX Live のインストール {#texliveinstall}
+### TeX Live 公式のインストーラの使用 {#texlive-install-official}
 
 TeX Live のインストールガイド
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみ収録されるので，
-ここでは x86_64-darwin バイナリがサポートしていない x86_64-darwinlegacy な環境でも TeX Live をインストールできるように MacTeX に付属する TeX Live ではなく TeX Live の公式サイトにあるインストーラからインストールする方法について簡単に説明します．
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されており，レガシーな  OS にはインストールできません。
+一方，TeX Live 公式のインストーラを使えば，x86_64-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -130,7 +131,7 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo /usr/local/texlive/2018/bin/x86_64-darwin/tlmgr path add
 ```
 
-### Xcode のインストール要求ダイアログについての注意 {#d359d79d}
+### Xcode のインストール要求ダイアログについての注意 {#xcode}
 
 Xcode がインストールされていない環境下では，TeX Live のインストーラの実行中，および tlmgr によるアップデートの実行中に，次のようなダイアログが表示されて実行が中断される問題が知られています。
 
@@ -155,24 +156,9 @@ $ sudo bash -c "CC=: tlmgr update --self"
 と実行すれば，cc コマンドを無効化して tlmgr を実行できます（ : は「何もしない」という bash の組み込みコマンド）。
 この場合，Xcode のインストールが要求されることなく，tlmgr の実行が正常に完了します。
 
-### [MacTeX](/MacTeX/) {#mactex}
+### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#texlive-install-pacman}
 
-MacTeX は [TeX Live](</TeX Live/>) をベースにした macOS 専用の TeX ディストリビューションです。
-
-### [BasicTeX](/BasicTeX/) {#basictex}
-
-BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
-TeX Live をフルインストールしたくない場合は BasicTeX をインストールします。
-
-### [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) {#i2fc7a04}
-
-[小川版 Drag &amp; Drop UpTeX (UpTeX.app)](</Drag and Drop UpTeX/>) は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
-TeX Live scheme-small をベースに collection-langjapanese + α を加えたディストリビューションとして配布されています。
-UpTeX.app は日本語フォントのセットアップを自動で行う AppleScript の GUI がかぶせてあり，簡単にセットアップを行うことができます。
-
-### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#e3decd1a}
-
-#### [Homebrew](http://brew.sh/) によるインストール {#za78e055}
+#### [Homebrew](http://brew.sh/) によるインストール {#texlive-install-brew}
 
 - [https://github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb)
@@ -204,7 +190,7 @@ $ sudo tlmgr install collection-langjapanese
 - [MacTeX](/MacTeX/#n379ea53)
 - [BasicTeX](/BasicTeX/#q65e25e8)
 
-#### [MacPorts](http://www.macports.org/) によるインストール {#ebd5afd3}
+#### [MacPorts](http://www.macports.org/) によるインストール {#texlive-install-port}
 
 - [TeXLivePackages – MacPorts](https://trac.macports.org/wiki/TeXLivePackages)
 - [https://www.macports.org/ports.php?by=name&substr=texlive](https://www.macports.org/ports.php?by=name&substr=texlive)
@@ -348,3 +334,5 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
+
+[^1]: TeX Live 2016 までは universal-darwin バイナリが存在しましたが，TeX Live 2017 で削除されて i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました ([r43871](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871))。TeX Live 2018 では i386-darwin バイナリと powerpc-darwin バイナリも削除されました ([r47075](http://www.tug.org/svn/texlive?view=revision&revision=47075))。
