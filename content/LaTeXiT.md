@@ -7,14 +7,14 @@ pukiwiki: "LaTeXiT"
 
 # LaTeXiT
 
-## [LaTeXiT](https://pierre.chachatelier.fr/latexit/) {#b58323c5}
+## [LaTeXiT](https://www.chachatelier.fr/latexit/) {#b58323c5}
 
 LaTeXiT は，TeX ソースコードをタイプセットして画像に変換するアプリケーションです．
 [MacTeX](/MacTeX/) に標準で含まれています．
 
 <strong>公式サイト</strong>
 
-- [LaTeXiT](https://pierre.chachatelier.fr/latexit/)
+- [LaTeXiT](https://www.chachatelier.fr/latexit/)
 - [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
 
 類似ソフトウェアとして，[TeX2img](/TeX2img/) があります．
@@ -46,11 +46,11 @@ PNG は背景を透過させることができます．
 ### 動作環境 {#e0e2eaf2}
 
 macOS で動作します．
-[COMPATIBILITY](https://pierre.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照してください．
+[COMPATIBILITY](https://www.chachatelier.fr/latexit/latexit-features.php?lang=en#main) を参照してください．
 
 ### インストール {#z9061d08}
 
-LaTeXiT 本体は [LaTeXiT Downloads](https://pierre.chachatelier.fr/latexit/latexit-downloads.php) からダウンロードできます．
+LaTeXiT 本体は [LaTeXiT Downloads](https://www.chachatelier.fr/latexit/latexit-downloads.php) からダウンロードできます．
 
 ### 環境設定 {#tab3d738}
 
@@ -121,7 +121,7 @@ pdfLaTeX
 
 ### 関連リンク {#tab9989c}
 
-- [LaTeXiT FAQ](https://pierre.chachatelier.fr/latexit/latexit-faq.php)
+- [LaTeXiT FAQ](https://www.chachatelier.fr/latexit/latexit-faq.php)
 - [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](http://ottan.xyz/mac-latex-presentation-92/)
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
@@ -132,4 +132,4 @@ pdfLaTeX
 
 #### ChangeLog {#sb3b1ab6}
 
-- [ChangeLog](https://pierre.chachatelier.fr/latexit/latexit-downloads.php#main)
+- [ChangeLog](https://www.chachatelier.fr/latexit/latexit-downloads.php#main)
