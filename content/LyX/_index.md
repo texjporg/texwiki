@@ -517,7 +517,7 @@ sudo apt-get install lyx
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
 
-### Windows 版 LyX 2.3.2 をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
+### Windows 版 LyX 2.3.2 (LyX-232-Installer-3.exe) をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
 
 > 選択した文書クラス<br>
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)<br>
