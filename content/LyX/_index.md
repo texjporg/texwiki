@@ -517,18 +517,19 @@ sudo apt-get install lyx
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
 
-### Windows 版 LyX 2.3.2 (LyX-232-Installer-3.exe) をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
-
-> 選択した文書クラス<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)<br>
-> は，利用可能になっていない外部ファイルを要求しています．<br>
-> この文書クラスを使用することはできますが，<br>
-> 必要とされている<br>
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jarticle.cls<br>
-> が導入されるまでは，文書をコンパイルすることができません．<br>
-> 詳細については，ユーザーの手引きの第3.1.2.2節<br>
-> （利用可能性）をご覧ください．<br>
-> ☐ この警告を再表示しない！(D)
+<!-- **Windows 版 LyX 2.3.2 (LyX-232-Installer-3.exe) をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される [#vec27fb0] -->
+<!-- > -->
+<!-- 選択した文書クラス&br; -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)&br; -->
+<!-- は，利用可能になっていない外部ファイルを要求しています．&br; -->
+<!-- この文書クラスを使用することはできますが，&br; -->
+<!-- 必要とされている&br; -->
+<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jarticle.cls&br; -->
+<!-- が導入されるまでは，文書をコンパイルすることができません．&br; -->
+<!-- 詳細については，ユーザーの手引きの第3.1.2.2節&br; -->
+<!-- （利用可能性）をご覧ください．&br; -->
+<!-- ☐ この警告を再表示しない！(D) -->
+<!-- < -->
 
 ### macOS の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
 
