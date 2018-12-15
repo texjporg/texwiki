@@ -48,10 +48,22 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
 
 [LyX | ダウンロード](http://www.lyx.org/WebJa.Download) からダウンロードできます．
 
+- HTTP (公式サイト)
+    - [http://ftp.lyx.org/pub/lyx/bin/](http://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
+    - [http://ftp.lyx.org/pub/lyx/stable/](http://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
+    - [http://ftp.lyx.org/pub/lyx/devel/](http://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
 - FTP (公式サイト)
     - [ftp://ftp.lyx.org/pub/lyx/bin/](ftp://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [ftp://ftp.lyx.org/pub/lyx/stable/](ftp://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [ftp://ftp.lyx.org/pub/lyx/devel/](ftp://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
+- HTTP (ミラーサイト)(日本)
+    - [http://ftp.ne.jp/TeX/lyx/bin/](http://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
+    - [http://ftp.ne.jp/TeX/lyx/stable/](http://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
+    - [http://ftp.ne.jp/TeX/lyx/devel/](http://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
+- FTP (ミラーサイト)(日本)
+    - [ftp://ftp.ne.jp/TeX/lyx/bin/](ftp://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
+    - [ftp://ftp.ne.jp/TeX/lyx/stable/](ftp://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
+    - [ftp://ftp.ne.jp/TeX/lyx/devel/](ftp://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
         <!-- -LyXWinInstaller -->
         <!-- - -http://ftp.lyx.de/ 開発版と安定版の Windows バイナリ -->
         <!-- - -http://jaist.dl.sourceforge.net/project/lyxwininstaller/ 安定版の Windows バイナリ -->
@@ -75,27 +87,27 @@ LyX の Windows インストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-232-Installer-1.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-232-Installer-3.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="http://git.lyx.org/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-232-Installer-1.exe</ins><br>
+　　　　　　 <ins>LyX-232-Installer-3.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　57.5 MB (60,339,358 バイト)<br>
-　　　　ディスク上　　　　　　57.5 MB (60,342,272 バイト)<br>
+　　　　サイズ:　　　　　　　　58.6 MB (61,509,262 バイト)<br>
+　　　　ディスク上　　　　　　58.6 MB (61,509,632 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2018年12月14日、01:00:00<br>
-　　　　更新日時:　　　　　　2018年12月14日、01:00:00<br>
-　　　　アクセス日時:　　　　2018年12月14日、01:00:00<br>
+　　　　作成日時:　　　　　　2018年12月15日、01:00:00<br>
+　　　　更新日時:　　　　　　2018年12月15日、01:00:00<br>
+　　　　アクセス日時:　　　　2018年12月15日、01:00:00<br>
 
 <br>
 
@@ -445,7 +457,7 @@ Cygwin 版の LyX は公式サイトの Cygwin 用バイナリ以外に Cygwin �
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb)
 
 ```
-$ brew cask install lyx
+brew cask install lyx
 ```
 
 #### MacPorts {#q338f601}
@@ -453,7 +465,7 @@ $ brew cask install lyx
 - [https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile](https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile)
 
 ```
-$ sudo port install lyx
+sudo port install lyx
 ```
 
 ### Linux {#g8a44f96}
@@ -463,7 +475,7 @@ $ sudo port install lyx
 - [https://www.archlinux.org/packages/?q=lyx](https://www.archlinux.org/packages/?q=lyx)
 
 ```
-$ sudo pacman -S lyx
+sudo pacman -S lyx
 ```
 
 #### Linux Mint/Debian/Ubuntu {#o9ab2f9b}
@@ -472,7 +484,7 @@ $ sudo pacman -S lyx
 - [https://packages.debian.org/search?keywords=lyx](https://packages.debian.org/search?keywords=lyx)
 
 ```
-$ sudo apt install lyx
+sudo apt install lyx
 ```
 
 #### Fedora {#e67f26b3}
@@ -480,7 +492,7 @@ $ sudo apt install lyx
 - [https://apps.fedoraproject.org/packages/lyx](https://apps.fedoraproject.org/packages/lyx)
 
 ```
-$ sudo dnf install lyx
+sudo dnf install lyx
 ```
 
 #### openSUSE {#s2677dff}
@@ -488,7 +500,7 @@ $ sudo dnf install lyx
 - [https://software.opensuse.org/package/lyx](https://software.opensuse.org/package/lyx)
 
 ```
-$ sudo zypper install lyx
+sudo zypper install lyx
 ```
 
 #### CentOS {#rb8db70c}
@@ -498,7 +510,7 @@ $ sudo zypper install lyx
 #### Vine Linux {#fb02866e}
 
 ```
-$ sudo apt-get install lyx
+sudo apt-get install lyx
 ```
 
 ## 不具合 {#h17851b4}
@@ -521,10 +533,10 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 
 ## 関連リンク {#j2a0a89a}
 
+- [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
 - [https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
 - [LyXで日本語を使うようにする設定(Windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E8%A8%AD%E5%AE%9Awindows/)
 - [https://knnlog.wordpress.com/?s=LyX](https://knnlog.wordpress.com/?s=LyX)
-    - [LyX 2.3.0 の導入](https://knnlog.wordpress.com/2018/04/14/lyx-2-3-0-%E3%82%92%E5%B0%8E%E5%85%A5/)
 - [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
 - [LyX &laquo; Konno Log](https://knnlog.wordpress.com/tag/lyx/)
@@ -538,8 +550,6 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 - [LyX 2.xでUTF-8のプレーンLaTeXファイルを読みこむには](http://www.dbc-works.org/feedback/entry/2014/12/1/)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
 - [LyX を使用してグラフィカルな方法で LaTeX 文書を作成する](http://www.ibm.com/developerworks/jp/opensource/library/os-lyx/)
-- [How to Use LyX on OS X](http://mac.tutsplus.com/tutorials/app-training/how-to-use-lyx-on-os-x/)
-- [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
 - [LyX HowTo](http://www.int.otaru-uc.ac.jp/lyx-howto.aspx/) 横田 宏治 さんによる詳しい解説
