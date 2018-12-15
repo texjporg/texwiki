@@ -56,11 +56,11 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
     - [ftp://ftp.lyx.org/pub/lyx/bin/](ftp://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [ftp://ftp.lyx.org/pub/lyx/stable/](ftp://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [ftp://ftp.lyx.org/pub/lyx/devel/](ftp://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- HTTP (ミラーサイト)(日本)
+- HTTP (ミラーサイト)(日本)(KDDI総合研究所)
     - [http://ftp.ne.jp/TeX/lyx/bin/](http://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
     - [http://ftp.ne.jp/TeX/lyx/stable/](http://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
     - [http://ftp.ne.jp/TeX/lyx/devel/](http://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
-- FTP (ミラーサイト)(日本)
+- FTP (ミラーサイト)(日本)(KDDI総合研究所)
     - [ftp://ftp.ne.jp/TeX/lyx/bin/](ftp://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
     - [ftp://ftp.ne.jp/TeX/lyx/stable/](ftp://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
     - [ftp://ftp.ne.jp/TeX/lyx/devel/](ftp://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
@@ -99,8 +99,8 @@ LyX の Windows インストーラーを右クリックします。
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　58.6 MB (61,509,262 バイト)<br>
-　　　　ディスク上　　　　　　58.6 MB (61,509,632 バイト)<br>
+　　　　サイズ:　　　　　　　　57.5 MB (60,329,273 バイト)<br>
+　　　　ディスク上　　　　　　57.5 MB (60,329,984 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
@@ -185,8 +185,8 @@ LyX のインストーラーを右クリックします。
 >
 > <br>
 >
-> 　　LyX 2.3.2を自分自身のためだけにインストールしたいのか、このコンピューターの全ユーザーのた<br>
-> 　　めにインストールしたいのかを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
+> 　　LyX 2.3.2を自分自身のためだけにインストールしたいのか、このコンピューターの全ユーザーのためにイ<br>
+> 　　ンストールしたいのかを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
 >
 > <br>
 >
@@ -516,6 +516,19 @@ sudo apt-get install lyx
 ## 不具合 {#h17851b4}
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
+
+### Windows 版 LyX 2.3.2 をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
+
+> 選択した文書クラス<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)<br>
+> は，利用可能になっていない外部ファイルを要求しています．<br>
+> この文書クラスを使用することはできますが，<br>
+> 必要とされている<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jarticle.cls<br>
+> が導入されるまでは，文書をコンパイルすることができません．<br>
+> 詳細については，ユーザーの手引きの第3.1.2.2節<br>
+> （利用可能性）をご覧ください．<br>
+> ☐ この警告を再表示しない！(D)
 
 ### macOS の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
 
