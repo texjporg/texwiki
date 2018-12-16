@@ -171,8 +171,18 @@ TeX Live をフルインストールする場合は MacTeX をインストール
 Homebrew で MacTeX をインストールできます。
 Ghostscript などのツールも Homebrew でインストールできます。
 
+GUI-Applications ありの場合
+
 ```
 $ brew cask install mactex
+$ sudo tlmgr update --self --all
+$ sudo tlmgr paper a4
+```
+
+GUI-Applications なしの場合
+
+```
+$ brew cask install mactex-no-gui
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
