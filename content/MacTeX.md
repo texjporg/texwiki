@@ -110,8 +110,18 @@ MacTeX のインストールの概略は以下のとおりです。
 
 Homebrew で MacTeX をインストールできます。
 
+GUI-Applications ありの場合
+
 ```
 $ brew cask install mactex
+$ sudo tlmgr update --self --all
+$ sudo tlmgr paper a4
+```
+
+GUI-Applications なしの場合
+
+```
+$ brew cask install mactex-no-gui
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -157,6 +167,7 @@ $ sudo tlmgr paper a4
 ### アンインストール {#uninstalling}
 
 - [Uninstalling - MacTeX - TeX Users Group](http://www.tug.org/mactex/uninstalling.html)
+- [Homebrewを使ったmactexのインストール・アンインストール](https://oversleptabit.com/archives/4701)
 - [MacTexのアンインストール](http://ikapblg.blog.fc2.com/blog-entry-141.html)
 
 ### リリース情報 {#c5157a75}
