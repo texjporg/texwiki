@@ -73,11 +73,11 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 #### Ghostscript-9.23（脆弱性あり） --&gt; 脆弱性が修正された Ghostscript 9.26 がリリースされています {#n1354f54}
 
-MacTeX のリリース後に新しい Ghostscript がリリースされた場合はチェックをはずして [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
+以下の場合に当てはまる場合はチェックをはずします。
 
-Homebrew または MacPorts を使用して Ghostscript をインストールする場合はチェックをはずしてください。
-
-MacTeX の Ghostscript で問題が発生する場合は [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75) を使用することもできます。 (→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196))
+- MacTeX のリリース後に新しい Ghostscript がリリースされた場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
+- Homebrew または MacPorts を使用して Ghostscript をインストールする場合。
+- [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)を使用する場合。（→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196)）
 
 ### インストール {#t244993f}
 
