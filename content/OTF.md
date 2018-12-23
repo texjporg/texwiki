@@ -372,9 +372,7 @@ Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用でき�
 
 ヒラギノを買ったら MacBook Air がオマケに附いてきました（ウソ）。
 
-TeX Live をインストールして
-[Bibunsho7-patch/Patch.app: ［改訂第7版］LaTeX2e美文書作成入門 ヒラギノフォントパッチ](https://github.com/munepi/bibunsho7-patch)
-を実行しました。
+TeX Live をインストールして[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>) を参考に設定しました。
 これで2万グリフのヒラギノが使えるようになりました。めでたしめでたし。
 
 !["ヒラギノ出力例"](http://web.archive.org/web/20170304200444if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/hiragino.png)
