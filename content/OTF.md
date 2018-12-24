@@ -9,7 +9,7 @@ pukiwiki: "OTF"
 
 ## OTF パッケージ {#l22413ec}
 
-[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，Adobe-Japan1-6 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
+[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，[Adobe-Japan1-6](/Adobe-Japan1-6/) 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
 ここでは OTF パッケージを Microsoft Windows と macOS で使う方法を説明します。
 
 OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeXと外字/>)を参照してください。
@@ -25,7 +25,7 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは Adobe-Japan1-6，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
+- OTF パッケージの扱えるグリフは [Adobe-Japan1-6](/Adobe-Japan1-6/)，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
 
 ## インストール {#g2a8e99e}
@@ -187,7 +187,7 @@ upLaTeX や LuaTeX-ja で使う場合は，Unicode で直接入力ができま�
 
 となります。
 
-最新の Adobe-Japan1-6 の文字を表示させて見ましょう。
+最新の [Adobe-Japan1-6](/Adobe-Japan1-6/) の文字を表示させて見ましょう。
 OTF パッケージはベータ版を使用します。
 
 テスト用のソースは，例えば次のものを用いてみます。
@@ -230,7 +230,7 @@ Adobe-Japan1-6で追加された文字を使った例
 
 ***
 
-最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に Adobe-Japan1-6 で追加された文字を使っています。
+最初の3項目に Adobe-Japan1-5 で追加された文字を，次の5項目に [Adobe-Japan1-6](/Adobe-Japan1-6/) で追加された文字を使っています。
 コマンド処理は上と同様です。
 
 uplatex で処理する場合に \kcatcode\`゜=18 を追加しています。
@@ -291,12 +291,12 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
     luajitlatex hoge.tex
     ```
 
-これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
+これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
 OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC でのプレビュー・印刷用途を想定しているようです。
 上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
-[TeXWiki:フォント](</フォント/>) にある Adobe-Japan1-6 に完全対応した和文フォント（有償）を購入している場合には問題ありません。
+[TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### macOS の場合 {#c2475144}
 
@@ -318,55 +318,7 @@ $TEXMFLOCAL/fonts/opentype// ディレクトリ以下に Adobe Acrobat Reader DC
     ```
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので
-Adobe-Japan1-6 の範囲なら誰でも読めるようになります。
-
-## Adobe-Japan1-6 とは {#j54465d8}
-
-2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，
-JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004 の印刷標準字体や
-U-PRESS 用の文字を含む
-23,058 グリフの文字セットです。
-
-### 小塚書体 {#gb6f9473}
-
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader DC 日本語版または Adobe Acrobat Reader DC に用いるアジア・拡張言語フォントパックに含まれているので
-Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用できます。
-アジア・拡張言語フォントパックには
-
-- KozMinPr6N-Regular.otf ［Adobe-Japan1-6 対応の日本語明朝体フォント］
-- KozGoPr6N-Medium.otf ［Adobe-Japan1-6 対応の日本語ゴシック体フォント］
-- AdobeSongStd-Light.otf ［Adobe-GB1-5 対応の簡化字中国語宋体フォント］
-- AdobeHeitiStd-Regular.otf ［Adobe-GB1-5 対応の簡化字中国語黒体フォント］
-- AdobeMingStd-Light.otf ［Adobe-CNS1-6[^1] 対応の繁體中国語明體フォント］
-- AdobeFanHeitiStd-Bold.otf ［Adobe-CNS1-6 対応の繁體中国語黒體フォント］
-- AdobeMyungjoStd-Medium.otf ［Adobe-Korea1-2 対応の
-    韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝明朝體｛&#xba85;&#xc870;&#xccb4;｝フォント］
-
-- AdobeGothicStd-Bold.otf ［Adobe-Korea1-2 対応の
-    韓国語｛&#xd55c;&#xad6d;&#xc5b4;｝ゴシック体フォント］
-
-が付属しています。
-
-#### CID 番号参照用のサンプルへのリンク {#ze53c84a}
-
-- [Font and Type Technology Center&mdash;Font technical notes](http://www.adobe.com/devnet/font.html)
-    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf)
-    - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,15.2 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
-    - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf)
-    - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
-
-- [ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/)<br>
-    [ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/)<br>
-    [http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/](http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/)
-    - [aj16-radical-stroke.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-radical-stroke.pdf)
-    - [aj16-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-utf32.pdf)
-    - [ag15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ag15-utf32.pdf)
-    - [ac15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ac15-utf32.pdf)
-    - [ak12-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ak12-utf32.pdf)
-
-- [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
-    - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
+[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
 
 ## ヒラギノと macOS {#l1d1369f}
 
@@ -1027,5 +979,3 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log)
 - [texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log)
-
-[^1]: 「Adobe Creative Suite 5」に同梱ではないものはAdobe-CNS1-5 対応。
