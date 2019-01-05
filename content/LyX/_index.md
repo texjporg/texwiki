@@ -87,27 +87,27 @@ LyX の Windows インストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-232-Installer-3.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-232-2-Installer-10.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="http://git.lyx.org/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-232-Installer-3.exe</ins><br>
+　　　　　　 <ins>LyX-232-2-Installer-10.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Desktop<br>
-　　　　サイズ:　　　　　　　　57.5 MB (60,329,273 バイト)<br>
-　　　　ディスク上　　　　　　57.5 MB (60,329,984 バイト)<br>
+　　　　サイズ:　　　　　　　　57.5 MB (60,338,485 バイト)<br>
+　　　　ディスク上　　　　　　57.5 MB (60,342,272 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2018年12月15日、01:00:00<br>
-　　　　更新日時:　　　　　　2018年12月15日、01:00:00<br>
-　　　　アクセス日時:　　　　2018年12月15日、01:00:00<br>
+　　　　作成日時:　　　　　　2019年1月2日、01:00:00<br>
+　　　　更新日時:　　　　　　2019年1月2日、01:00:00<br>
+　　　　アクセス日時:　　　　2019年1月2日、01:00:00<br>
 
 <br>
 
@@ -517,19 +517,21 @@ sudo apt-get install lyx
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
 
-<!-- **Windows 版 LyX 2.3.2 (LyX-232-Installer-3.exe) をインストールしたあとで LyX を起動すると「文書クラスが利用不可能です」という警告が表示される [#vec27fb0] -->
-<!-- > -->
-<!-- 選択した文書クラス&br; -->
-<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)&br; -->
-<!-- は，利用可能になっていない外部ファイルを要求しています．&br; -->
-<!-- この文書クラスを使用することはできますが，&br; -->
-<!-- 必要とされている&br; -->
-<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jarticle.cls&br; -->
-<!-- が導入されるまでは，文書をコンパイルすることができません．&br; -->
-<!-- 詳細については，ユーザーの手引きの第3.1.2.2節&br; -->
-<!-- （利用可能性）をご覧ください．&br; -->
-<!-- ☐ この警告を再表示しない！(D) -->
-<!-- < -->
+### LyX 2.3.2 で 64-bit TeX Live Windows バイナリを使用すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
+
+LyX 2.3.2 で 64-bit TeX Live Windows バイナリを使用すると「文書クラスが利用不可能です」という警告が表示されます。
+32-bit TeX Live Windows バイナリでは表示されません。
+
+> 選択した文書クラス<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Japanese Article (Standard Class)<br>
+> は，利用可能になっていない外部ファイルを要求しています．<br>
+> この文書クラスを使用することはできますが，<br>
+> 必要とされている<br>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jarticle.cls<br>
+> が導入されるまでは，文書をコンパイルすることができません．<br>
+> 詳細については，ユーザーの手引きの第3.1.2.2節<br>
+> （利用可能性）をご覧ください．<br>
+> ☐ この警告を再表示しない！(D)
 
 ### macOS の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
 
