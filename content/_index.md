@@ -87,6 +87,7 @@ TeX が組版機能を担う一方で，実際の処理には TeX 以外にも�
 Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
 
 - [TeX](/TeX/)
+- [pTeX](/pTeX/)
 - [pTeX と多言語処理](</pTeXと多言語処理/>)
 - [e-TeX](/e-TeX/)，[e-pTeX](/e-pTeX/)，[e-upTeX](/upTeX,upLaTeX/)，[pTeX-ng](/pTeX-ng/)
 - [pdfTeX](/pdfTeX/)
