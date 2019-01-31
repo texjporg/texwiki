@@ -12,7 +12,7 @@ pukiwiki: "upTeX,upLaTeX"
 [upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) は、pTeX の内部 Unicode[^1]版です。
 pTeX では漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、upTeX では漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。
 そのおかげで、従来は [otf パッケージ](/OTF/)などが必要であった丸数字（①②③…）なども、ソースにそのまま記述してコンパイルできます。
-また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pLaTeX よりも扱いやすくなっています。
+また、\kcatcode の設定切替えで欧文 LaTeX の \inputenc{utf8} や Babel が障害なく利用でき、CJK 以外の多言語についても pTeX よりも扱いやすくなっています。
 
 e-upTeX は upTeX に [e-TeX](/e-TeX/) 拡張を追加したものです。
 [e-pTeX](/e-pTeX/) の成果を upTeX に取り込んだもので、現在では uplatex を起動したときに使われるのは e-upTeX になっています。
