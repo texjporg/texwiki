@@ -7,7 +7,7 @@ pukiwiki: "upTeX,upLaTeX"
 
 # upTeX,upLaTeX
 
-## e-upTeX {#t3be9c34}
+## upTeX {#t3be9c34}
 
 [upTeX](http://www.t-lab.opal.ne.jp/tex/uptex.html) は、pTeX の内部 Unicode[^1]版です。
 pTeX では漢字/かな/和文記号としてJIS第一・第二水準(JIS X 0208)の範囲を扱うのに対し、upTeX では漢字/かな/CJK(日中韓)記号/ハングルとして Unicode の範囲を扱えるようになっています。
