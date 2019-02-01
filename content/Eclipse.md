@@ -7,7 +7,7 @@ pukiwiki: "Eclipse"
 
 # Eclipse
 
-## [Eclipse](http://www.eclipse.org/) {#t7934744}
+## [Eclipse](https://www.eclipse.org/) {#t7934744}
 
 ***
 
@@ -19,17 +19,17 @@ pukiwiki: "Eclipse"
 
 Eclipse は Java で書かれた IDE (統合開発環境) です．
 
-- [Eclipse.org home](http://www.eclipse.org/)
-- [Eclipse.org Git repositories](http://git.eclipse.org/)
+- [Eclipse.org home](https://www.eclipse.org/)
+- [Eclipse.org Git repositories](https://git.eclipse.org/)
 - [Eclipse - Google+](https://plus.google.com/+Eclipse)
 
 ### 動作環境 {#aae7926e}
 
-- [http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments](http://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_10.xml#target_environments)
+- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_11.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_11.xml#target_environments)
 
 ### License {#aa464649}
 
-[Eclipse Public License 2.0](http://www.eclipse.org/legal/epl-2.0/)
+[Eclipse Public License 2.0](https://www.eclipse.org/legal/epl-2.0/)
 
 ### リリース情報 {#q303f311}
 
@@ -47,7 +47,7 @@ Windows の場合 [Pleiades All in One](http://mergedoc.osdn.jp/) を使えば�
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
-- [Eclipse の最新リリース版](http://download.eclipse.org/eclipse/downloads/) (本体)
+- [Eclipse の最新リリース版](https://download.eclipse.org/eclipse/downloads/) (本体)
 
 を解凍し，
 
@@ -67,7 +67,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 ## 関連リンク {#o908ecbb}
 
-- Eclipse - [http://www.eclipse.org/](http://www.eclipse.org/)
+- Eclipse - [https://www.eclipse.org/](https://www.eclipse.org/)
 - Pleiades - [http://mergedoc.osdn.jp/](http://mergedoc.osdn.jp/)
     - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
 - [OpenJDK](http://openjdk.java.net/)
