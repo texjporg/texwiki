@@ -7,11 +7,15 @@ pukiwiki: "upLaTeX"
 
 # upLaTeX
 
-## upLaTeX {#e6046c46}
+## upTeX, upLaTeX {#e6046c46}
 
-upLateX (pLaTeX2ε and miscellaneous macros for upTeX)とは、アスキー社が作った日本語版TeXマクロであるpLaTeX2εからフォークして[日本語TEX開発コミュニティ](https://texjp.org/)によって配布されているコミュニティー版pLaTeX2ε。
+田中氏によってされたp-TeXの拡張。
 
-## pTeX {#e6046c46}
+## upLaTeX2ε {#e6046c46}
+
+uplatex (pLaTeX2ε and miscellaneous macros for upTeX)とは、アスキー社が作った日本語版TeXマクロであるpLaTeX2εからフォークして[日本語TEX開発コミュニティ](https://texjp.org/)によって配布されているコミュニティー版pLaTeX2ε。
+
+### pLaTeX2ε {#x242cb3f}
 
 ***
 
@@ -19,7 +23,6 @@ upLateX (pLaTeX2ε and miscellaneous macros for upTeX)とは、アスキー社�
 
 ### 参考サイト {#r7320472}
 
-- 
-- [uplatex – pLaTeX2ε and miscellaneous macros for upTeX](https://ctan.org/author/texjp)
-- [uptex – Unicode version of pTeX](https://ctan.org/pkg/uptex)
 - [upTeX, upLaTeX − 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
+- [uptex – Unicode version of pTeX](https://ctan.org/pkg/uptex)
+- [uplatex – pLaTeX2ε and miscellaneous macros for upTeX](https://ctan.org/pkg/uplatex)
