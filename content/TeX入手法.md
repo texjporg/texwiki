@@ -29,7 +29,19 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 ***
 
-### TeX のインストール {#w6f35a2c}
+### TeX のインストール {#ef41d307}
+
+TeX ディストリビューションごとの解説ページです．
+現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
+macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
+
+- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, macOS, Linux)
+- <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
+- <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
+- [BasicTeX](/BasicTeX/) (for macOS)
+- [MiKTeX](/MiKTeX/) (for Windows, macOS, Linux)
+
+### OS別のTeXのインストール {#w6f35a2c}
 
 詳しいインストール方法は，利用する OS にあわせた解説ページを参照してください．
 
@@ -50,18 +62,6 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 
 - [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 - [TeX を Web で](</TeXをWebで/>)
-
-### 主要な TeX ディストリビューション {#ef41d307}
-
-TeX ディストリビューションごとの解説ページです．
-現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
-macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
-
-- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, macOS, Linux)
-- <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
-- <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
-- [BasicTeX](/BasicTeX/) (for macOS)
-- [MiKTeX](/MiKTeX/) (for Windows, macOS, Linux)
 
 ### インストール時のよくあるトラブル・勘違い {#l1a033e5}
 
