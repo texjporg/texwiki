@@ -17,7 +17,7 @@ pukiwiki: "TeXstudio/設定/Windows"
 
 - コマンドの LaTeX に設定されている latex.exe を uplatex.exe に変更して -src を -synctex=1 に変更します．
 - コマンドの DviPdf に設定されている dvipdfm.exe を dvipdfmx.exe に変更します．
-- コマンドの BibTeX に設定されている bibtex.exe を upbibtex.exe に変更します．
+- コマンドの BibTeX に設定されている bibtex.exe を pbibtex.exe に変更し，-kanji=utf8 を追加します．
 - コマンドの Biber に設定されている biber を biber --bblencoding=utf8 -u -U --output_safechars に変更します．
 - 詳細な設定をする場合は高度なオプションの表示を ON にします．
 
@@ -83,7 +83,11 @@ DviPdf
 BibTeX
 : &nbsp;
 
-: upbibtex.exe %
+: pbibtex.exe -kanji=utf8 %
+
+<!-- 2019-02-05 以前に書かれていた "upbibtex.exe %" では，日本語を含むbibファイルで -->
+<!-- 文字化けまたはフリーズなどすることがあります． -->
+<!-- 参考: https://texwiki.texjp.org/?upTeX%2CupLaTeX#p35560b1 -->
 
 BibTex 8ビット
 : &nbsp;
