@@ -53,6 +53,12 @@ Windows 用のインストーラーをダウンロードして実行します．
 インストーラーを実行して「WindowsによってPCが保護されました」と表示される場合は
 インストーラーを右クリックして全般タブのセキュリティ:の項目の許可するをチェックして☑許可する(K)の状態にして再度インストーラーを実行します．
 
+#### Linux {#v5002500}
+
+各ディストリビューションのパッケージ管理システムからインストールします．
+パッケージ名は大抵 texstudio でしょう．
+Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう．
+
 #### macOS {#d9a96322}
 
 macOS 用の zip アーカイブをダウンロードして展開します．
@@ -64,12 +70,6 @@ Homebrew でインストールすることもできます．
 ```
 brew cask install texstudio
 ```
-
-#### Linux {#v5002500}
-
-各ディストリビューションのパッケージ管理システムからインストールします．
-パッケージ名は大抵 texstudio でしょう．
-Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう．
 
 ### 設定 {#d18b43a8}
 
@@ -83,10 +83,6 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 - [https://github.com/texstudio-org/texstudio/commits/master](https://github.com/texstudio-org/texstudio/commits/master)
 - [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
-
-### TeXstudio UI 日本語訳用ファイル {#d46c6bb1}
-
-- [TeXstudio UI 日本語訳用ファイル](https://github.com/anastashia/texstudio_jp_ui)
 
 ## 注意点 {#g9d4fa21}
 
