@@ -25,7 +25,8 @@ pukiwiki: "IPSJ"
 ### 注意 {#q68d87fb}
 
 現在の情報処理学会スタイル ipsj.cls は jis フォントメトリックに対応しています． <!-- というわけなので，「ipsj+jisフォントメトリック」という項目名から「IPSJ」に変更しました． -->
-ただし，uplatex には対応できていないようです．
+ただし，upLaTeX には対応できていないようです．
+upLaTeX に対応した up-ipsj.cls が存在します --&gt; [ipsj.cls を upLaTeX 用にしてみる（源ノ明朝・源ノ角ゴシックを使う）](https://gist.github.com/trueroad/c44312923bf02226c2274388941d0453)
 
 - [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
 
@@ -47,6 +48,7 @@ pukiwiki: "IPSJ"
 
 ### 派生版 {#q33e05d4}
 
+- [ipsj.cls を upLaTeX 用にしてみる（源ノ明朝・源ノ角ゴシックを使う）](https://gist.github.com/trueroad/c44312923bf02226c2274388941d0453)
 - [IPSJ-techrep-xelatex](https://github.com/ken1row/IPSJ-techrep-xelatex) 情報処理学会研究会原稿をOverleafなどのXeLaTeX環境で執筆するための疑似スタイルファイル
 - [ShareLatex を用いた情報処理学会研究会原稿の共同執筆](http://blog.k-tanaka.me/archives/42)
 
