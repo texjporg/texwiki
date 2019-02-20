@@ -171,7 +171,8 @@ TeX Live 2018 に付属している TikZ/PDF のマニュアルは ver 3.0.1a Au
 <table>
 <tbody>
 <tr><td> コマンド</td><td> 正式名 </td><td colspan="2"> 機能やオプション</td></tr>
-<tr><td> \draw </td><td> \path[draw] </td><td colspan="2">線を描く（線の太さ ultra thin (0.1pt) 〜 ultra thick (1.6pt)，色指定も可能）</td></tr>
+<tr><td> \draw </td><td> \path[draw] </td><td colspan="2">線を描く（線の太さ ultra thin (0.1pt) 〜 ultra thick (1.6pt)，色指定（xcolor流）も可能）</td></tr>
+<tr><td> \draw[線のスタイル] </td><td> \path[draw, 線のスタイル] </td><td>点線（dotted）／破線（dashed）／二重線（double），密度や線間隔も指定可</td><td><strong>[loosely dotted]</strong>／<strong>[densely dashed]</strong>／<strong>[double distance=2pt]</strong></td></tr>
 <tr><td> \draw[-&gt;]</td><td>\path[draw, -&gt;]</td><td>終点／始点／両端に矢印，二重矢印，latex風矢印，ステルス機風矢印</td><td><strong>[-&gt;]</strong>／<strong>[&lt;-]</strong>／<strong>[&lt;-&gt;]</strong>／<strong>[-&gt;&gt;]</strong>／<strong>[&gt;=latex]</strong>／<strong>[&gt;=stealth]</strong></td></tr>
 <tr><td> \fill </td><td> \path[fill] </td><td> 描かれた図形の内側を塗る（色・透明度の指定も可能）  </td><td><strong>例：[red, opacity=.5]</strong> </td></tr>
 <tr><td> \filldraw </td><td> \path[fill, draw] </td><td> パス自身の色と内側の色をそれぞれ別に指定する </td><td> <strong>例：[fill=cyan, draw=blue]</strong> </td></tr>
@@ -339,12 +340,20 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
         - 3次のベジェ曲線になる
         - 方向点2を省略すると，方向点2と終点が一致していると見なされて描画される
 1. 関数による描画
-    - 座標指定の y 座標が x 座標（\x）の関数になるように記述する
-        - デフォルトの変数は \x だが，オプションで variable = \t などとすれば変えられる
+    - \draw \[オプション\] plot (\x, \xの式);
+    - <strong>関数 y=f(x)</strong> ならば，座標指定の y 座標が x 座標（\x）の関数になるように記述する
+        - \draw\[domain=.5:2\] plot (\x, 1/\x);%%反比例のグラフ
         - 変域のデフォルトは\[-5:5\]だが，オプションで domain = &lt;start>:&lt;end> と指定できる
-        - 必要に応じて中括弧（{, }）を使用する
-    - ここでは PGF (TikZ) の計算機能を利用している（gnuplot などの外部エンジンの利用も可能）
-        - 使用可能な PGF の計算機能についてはマニュアルの第89章 Mathematical Expressions を参照
+    - デフォルトの変数は \x だが，オプションで variable = \t などと変えれば<strong>媒介変数表示</strong>も可能
+        - \draw\[domain= -3.14:3.14, smooth, variable=\t\] plot ({(1+cos(\t r))\*cos(\t r)}, {(1+cos(\t r))\*sin(\t r))});%%カージオイド
+        - 角度は度数で扱われるが，関数中で \x r とすれば弧度法表記とみなされる
+        - PGF (TikZ) の計算機能で括弧を用いる座標は中括弧で囲む
+    - 極座標を用いれば<strong>極方程式</strong>も描画できる
+        - \draw\[smooth, samples=100, variable=\t, domain=-3.14:3.14\] plot (\t r:{cos(2\*\t r)});%%四葉線
+        - デフォルトのサンプル数は25なので，オプションで samples=サンプル数と増やしたり smooth と指定するとより滑らかな曲線になる
+    - ここでは PGF (TikZ) の計算機能を利用している
+        - 使用可能な PGF の計算機能についてはマニュアルの第93章 Mathematical Expressions を参照（四則演算、三角関数、指数・対数、平方根など）
+        - gnuplot 呼び出して描画することも可能（--shell-escape の設定が必要）
 
 ### スタイルの設定 {#vc8500e0}
 
