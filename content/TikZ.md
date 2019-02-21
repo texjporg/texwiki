@@ -61,7 +61,7 @@ DVI 出力のエンジン（pTeX，upTeX）で TIkZ（tikz パッケージ）を
 ドライバをグローバルに指定すると不都合な場合は，事前に graphicx と xcolor の両パッケージを当該のドライバ指定で読み込むといいでしょう。（なお，先の例においても，PGF 自体により graphicx と xcolor は読み込まれています。）
 
 ```
-\docuemntclass[a4paper]{jsarticle}
+\documentclass[a4paper]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,xcolor}% ドライバ指定のため
 \usepackage{tikz}
 ```
