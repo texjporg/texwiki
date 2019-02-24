@@ -24,9 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 2019.010.20064 およびそれ以前には脆弱性が存在します。Adobe Acrobat Reader DC 2019.010.20069 以降に更新してください。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB19-02) に関する注意喚起](http://www.jpcert.or.jp/at/2019/at190001.html)
-- Adobe Acrobat Reader DC 2019.008.20081 およびそれ以前には脆弱性が存在します。Adobe Acrobat Reader DC 2019.010.20064 以降に更新してください。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB18-41) に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180049.html)
-- Adobe Acrobat Reader DC 2019.008.20080 およびそれ以前には脆弱性が存在します。Adobe Acrobat Reader DC 2019.008.20081 以降に更新してください。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB18-40) に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180045.html)
+- Adobe Acrobat Reader DC 2019.010.20091 およびそれ以前のバージョンには脆弱性が存在します。Adobe Acrobat Reader DC 2019.010.20098 以降に更新してください。--&gt; [Adobe Acrobat および Reader の脆弱性対策について(APSB19-13)(CVE-2019-7815)](https://www.ipa.go.jp/security/ciadr/vul/20190222-adobereader.html)
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
@@ -119,8 +117,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1901020064/AcroRdrDC1901020064_ja_JP.exe
-wine AcroRdrDC1901020064_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1901020098/AcroRdrDC1901020098_ja_JP.exe
+wine AcroRdrDC1901020098_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
