@@ -29,7 +29,7 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 
 ### 動作環境 {#e7cc7bd5}
 
-Windows, macOS, Linux
+Windows, Linux, macOS
 
 ### License {#od98a625}
 
