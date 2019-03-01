@@ -9,6 +9,10 @@ pukiwiki: "TeX Live/Mac"
 
 [TeX Live](</TeX Live/>) > [macOS](/Mac/)
 
+編集している方＞
+2019年3月1日現在、TeX Live 2019はpretestの状態で、まだリリースされていません。
+それゆえ、TeX Live 2019がリリースされるまでは、TeX Live 2018の内容にしてもらえませんでしょうか？
+
 ***
 
 ***
@@ -38,23 +42,23 @@ macOS (OS X, Mac OS X) に付属のヒラギノフォントを使用したい場
 - TeX Live 2015 以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
 - ところが，TeX Live 2016 以降では状況が変わり，標準で IPAex フォントが埋め込まれるようになりました（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)）。そのため，もはやヒラギノフォントを使う設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
 
-### はじめに：TeX Live 2018 のバイナリの動作環境に関する注意 {#binary}
+### はじめに：TeX Live 2019 のバイナリの動作環境に関する注意 {#binary}
 
-macOS 用として配布される TeX Live 2018 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
+macOS 用として配布される TeX Live 2019 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
 - x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみをサポートします。
 - x86_64-darwinlegacy バイナリ：それ以前のレガシーな OS をサポートします[^1]。
 
 お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
 具体的には，以下の表を参照してください（&#x2714; マークが OS と対応するバイナリを示す）。
-なお，MacTeX-2018 / BasicTeX-2018 に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな OS では使用できません。
+なお，MacTeX-2019 / BasicTeX-2019 に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな OS では使用できません。
 
-<div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
+<div style="text-align:center">TeX Live 2019 が動作する OS と対応するバイナリ</div>
 
 |  | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
 |---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -127,10 +131,10 @@ $ sudo ./install-tl --profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2018，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2019，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2018/bin/x86_64-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2019/bin/x86_64-darwin/tlmgr path add
 ```
 
 ### Xcode のインストール要求ダイアログについての注意 {#xcode}
