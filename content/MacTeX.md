@@ -69,7 +69,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - TeX に対応したスペルチェッカー。
 
 - [Excalibur](http://excalibur.sourceforge.net/)
-    - TeX に対応したスペルチェッカー。32-bit アプリケーション。
+    - TeX に対応したスペルチェッカー。32-bit アプリケーションのため MacTeX-2019 では削除されています。
 
 #### Ghostscript-9.23（脆弱性あり） --&gt; 脆弱性が修正された Ghostscript 9.26 がリリースされています {#n1354f54}
 
