@@ -121,8 +121,8 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 ### スペルチェッカー {#spell}
 
+- [Hunspell](/Hunspell/)
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
-- [Excalibur](http://excalibur.sourceforge.net/)
 
 このほかにも
 
