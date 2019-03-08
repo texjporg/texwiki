@@ -40,6 +40,7 @@ getnonfreefonts はそのような「無料だが『フリー』でないフォ�
 この外部データベースなどを収録したのが cjk-gs-integrate-macos，ptex-fontmaps-macos です。
 セットアップ方法は[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)に説明があります。
 
+- [cjk-gs-integrate 20190303.0（Mojave 対応）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2583)
 - [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://okumuralab.org/tex/mod/forum/discuss.php?d=2382)
 
 #### japanese-otf-nonfree japanese-otf-uptex-nonfree {#m957f673}
