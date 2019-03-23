@@ -30,8 +30,8 @@ LaTeX2HTML は Perl で記述されています．
 ### macOS {#u17fe485}
 
 - [LaTeX2HTMLのインストール（OS X 10.9 Mavericks以降）](http://www.geidai.ac.jp/~marui/dont_forget/node3.html#SECTION00036000000000000000)
-- [若松久仁光のブログ - LaTeX2HTML, eLyXer](http://www.geocities.jp/flutecore/Weblog/archives/cat_latex2htmlelyxer.html)
-- [LaTeX2HTMLのインストール con gusto](http://www.geocities.jp/flutecore/install-latex2html.html)
+- [若松久仁光のブログ - LaTeX2HTML, eLyXer](http://flutecore.g2.xrea.com/Weblog/archives/cat_latex2htmlelyxer.html)
+- [LaTeX2HTMLのインストール con gusto](http://flutecore.g2.xrea.com/install-latex2html.html)
 - [Homebrew + MacTeXのUTF-8環境でLaTeX2HTMLを動かすメモ](http://d.hatena.ne.jp/amarui/20120327/1332817158)
 
 ### Linux {#v5b81e24}
