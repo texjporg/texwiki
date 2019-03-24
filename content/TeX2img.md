@@ -15,7 +15,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
 <strong>公式サイト</strong>
 
 - [TeX2img](http://www.ms.u-tokyo.ac.jp/~abenori/soft/#TEX2IMG) (Windows 版)
-- [TeX2img](http://island.geocities.jp/loveinequality/) (macOS 版)
+- [TeX2img](https://tex2img.tech) (macOS 版)
 
 類似ソフトウェアとして，[LaTeXiT](/LaTeXiT/) があります．
 
@@ -128,5 +128,5 @@ Windows/macOS 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイ�
     - [https://github.com/abenori/TeX2img/blob/master/TeX2img.txt](https://github.com/abenori/TeX2img/blob/master/TeX2img.txt)
     - [https://github.com/abenori/TeX2img/commits/master](https://github.com/abenori/TeX2img/commits/master)
 - macOS 版
-    - [http://island.geocities.jp/loveinequality/#machistory](http://island.geocities.jp/loveinequality/#machistory)
+    - [https://tex2img.tech/#HISTORY](https://tex2img.tech/#HISTORY)
     - [https://github.com/doraTeX/TeX2img/commits/master](https://github.com/doraTeX/TeX2img/commits/master)
