@@ -135,7 +135,7 @@ $ sudo tlmgr paper a4
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
 - [MacTeX Live 2018をインストールした：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2018-05-01)
-- [MacTeX 2018 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20180501/1525144736)
+- [MacTeX 2018 のインストール＆日本語環境構築法【Mojave対応更新版】 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190327/1553617143)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
