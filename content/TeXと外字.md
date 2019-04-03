@@ -20,14 +20,14 @@ pukiwiki: "TeXと外字"
 
 ***
 
-### OTF パッケージで Adobe-Japan1-6 の 23,058 グリフ {#ve311433}
+### OTF パッケージで Adobe-Japan1-7 の 23,060 グリフ {#ve311433}
 
-[OTF パッケージ（ベータ版・開発版）](/OTF/)を使えば，Adobe-Japan1-6 の 23,058 グリフを出力できます。
+[OTF パッケージ（ベータ版・開発版）](/OTF/)を使えば，Adobe-Japan1-7 の 23,060 グリフを出力できます。
 ほとんどの文字はこれで大丈夫でしょう。
 
 ### Illustrator や Inkscape による外字作成 {#oad7ee64}
 
-Adobe-Japan1-6 にもない文字は [Illustrator](/Illustrator/) や [Inkscape](/Inkscape/) で作ってしまいましょう。
+Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape](/Inkscape/) で作ってしまいましょう。
 ここでは Illustrator を例に説明します。
 
 まず目印に一辺100ポイントの正方形を描いておきます。
