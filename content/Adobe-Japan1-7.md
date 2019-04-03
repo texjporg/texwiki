@@ -8,5 +8,6 @@ pukiwiki: "Adobe-Japan1-7"
 # Adobe-Japan1-7
 
 - [GitHub - adobe-type-tools/Adobe-Japan1: The Adobe-Japan1-7 Character Collection](https://github.com/adobe-type-tools/Adobe-Japan1/)
+- [QA: upTeX 1.24, upTeXの新元号対応](https://okumuralab.org/tex/mod/forum/discuss.php?d=2570)
 
-Adobe-Japan1-7 は [Adobe-Japan1-6](/Adobe-Japan1-6/) に新元号（令和）を追加したものです。
+Adobe-Japan1-7 は [Adobe-Japan1-6](/Adobe-Japan1-6/) に新元号「令和」を追加したものです。
