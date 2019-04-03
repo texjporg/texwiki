@@ -9,7 +9,7 @@ pukiwiki: "OTF"
 
 ## OTF パッケージ {#l22413ec}
 
-[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，[Adobe-Japan1-6](/Adobe-Japan1-6/) 相当のフォントあたり最大23,058文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
+[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，[Adobe-Japan1-7](/Adobe-Japan1-7/) 相当のフォントあたり最大23,060文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
 ここでは OTF パッケージを Microsoft Windows と macOS で使う方法を説明します。
 
 OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeXと外字/>)を参照してください。
@@ -25,7 +25,7 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは [Adobe-Japan1-6](/Adobe-Japan1-6/)，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
+- OTF パッケージの扱えるグリフは [Adobe-Japan1-7](/Adobe-Japan1-7/)，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
 
 ## インストール {#g2a8e99e}
@@ -187,7 +187,7 @@ upLaTeX や LuaTeX-ja で使う場合は，Unicode で直接入力ができま�
 
 となります。
 
-最新の [Adobe-Japan1-6](/Adobe-Japan1-6/) の文字を表示させて見ましょう。
+[Adobe-Japan1-6](/Adobe-Japan1-6/) の文字を表示させて見ましょう。
 OTF パッケージはベータ版を使用します。
 
 テスト用のソースは，例えば次のものを用いてみます。
