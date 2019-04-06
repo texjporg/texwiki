@@ -71,7 +71,7 @@ libpstoedit0c2a は依存関係で自動的にインストールされます。
 
 - [pstoedit | Inkscape@JP](http://inkscape.paix.jp/manual/overview/external/pstoedit/)
 - [PostScriptファイルを加工する - Tgif 入門](http://dsl4.eee.u-ryukyu.ac.jp/DOCS/tgif/node96.html)
-- [グラフをWordに貼っつける（pstoeditの使い方）](http://www.geocities.jp/ne_o_t/GMT-USE/sonota/pstoedit.htm)
+- [グラフをWordに貼っつける（pstoeditの使い方）\[Wayback Machine\]](http://web.archive.org/web/20181106045634/http://www.geocities.jp/ne_o_t/GMT-USE/sonota/pstoedit.htm)
 - [pstoedit --- ps/pdf ファイルをベクター形式に変換](http://konoyonohana.blog.fc2.com/blog-entry-103.html)
 - [OpenOffice Drawの図をWordに貼り付ける](http://blog.umasaka.com/archives/1232)
 
