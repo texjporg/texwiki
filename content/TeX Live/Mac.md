@@ -303,7 +303,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 インストール方法によってディレクトリが異なりますので，ここにまとめておきます。
 
 > <table><tbody>
-> <tr><td></td><td>MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
+> <tr><td></td><td>TeX Live 2018/MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
 > <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2018</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2017</td></tr>
 > <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
 > <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
@@ -312,7 +312,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 
 ### 基本システムのインストール場所 {#ffbf8218}
 
-- MacTeX-2018 に収録されている TeXLive-2018 は，デフォルトでは /usr/local/texlive/2018 以下にインストールされます。
+- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 は，デフォルトでは /usr/local/texlive/2018 以下にインストールされます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からインストールすると，デフォルトではアプリケーションフォルダにインストールされます。
 
 #### TEXMFLOCAL {#d2b2c9d5}
@@ -326,7 +326,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
-- MacTeX-2018 に収録されている TeXLive-2018 では，初期設定ではホームのライブラリ以下に収めます。
+- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 では，初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFHOME はユーザのホームフォルダに作成されます。
 
 #### その他 {#w4248b01}
