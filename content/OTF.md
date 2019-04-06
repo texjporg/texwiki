@@ -721,7 +721,7 @@ ptex2pdf -u -l -od "-f msmingoth.map" hoge.tex
 それぞれ [RYOBI IMAGIX](http://www.ryobi-group.co.jp/projects/printing/font/) の
 「[本明朝-L](http://www.ryobi-group.co.jp/projects/printing/font/products/f_mihon01.html#minti)」
 「[ゴシック-B](http://www.ryobi-group.co.jp/projects/printing/font/products/f_mihon01.html#goshi)」の
-字母を基に [RICOH](http://font.ricoh.co.jp/) が作成したものなので，
+字母を基に [RICOH](https://industry.ricoh.com/font/) が作成したものなので，
 「ＭＳ 明朝」「ＭＳ ゴシック」を
 それぞれ “Light”，“Bold” のウェイトに分類しています。
 
@@ -778,7 +778,7 @@ ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 
 Microsoft Windows から利用する場合は $TEXMF/fonts/opentype/adobe/ に KozMinPr6N-Regular.otf 等のシンボリックリンク（管理者権限で「Windows PowerShell 」を開き，New-Item コマンドレットを実行あるいは管理者権限で「コマンド プロンプト」を開き， mklink を実行します。）を作成します（C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません）。
 
-#### [モリサワフォント](http://www.morisawa.co.jp/font/)を使う場合 {#n4b1d474}
+#### [モリサワフォント](https://www.morisawa.co.jp/fonts/)を使う場合 {#n4b1d474}
 
 <!-- -https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa/ -->
 - [https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/](https://github.com/texjporg/jfontmaps/tree/master/maps/morisawa-pr6n/)
