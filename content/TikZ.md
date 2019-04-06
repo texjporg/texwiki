@@ -7,7 +7,7 @@ pukiwiki: "TikZ"
 
 # TikZ
 
-## [TikZ/PGF](http://pgf.sourceforge.net/) {#w315bc8f}
+## [TikZ/PGF](https://pgf-tikz.github.io/) {#w315bc8f}
 
 PGF (Portable Graphics Format) は，Till Tantau（Beamerのオリジナルの開発者） および Mark Wibrow, Christian Feuers&auml;nger を中心として開発されている TeX 用の描画パッケージです。
 PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します。
@@ -30,8 +30,8 @@ TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euc
 TikZ/PGF は LaTeX だけでなく plain TeX と [ConTeXt](/ConTeXt/) にも対応していますが，以下では
 LaTeX の場合について記述します。
 
-- [TikZ/PGF - Graphic systems for TeX](http://pgf.sourceforge.net/)
-- [PGF and TikZ -- Graphic systems for TeX](https://sourceforge.net/projects/pgf/)
+- [PGF and TikZ, Manual](https://pgf-tikz.github.io/)
+- [GitHub - pgf-tikz/pgf](https://github.com/pgf-tikz/pgf)
 - [https://ctan.org/pkg/pgf](https://ctan.org/pkg/pgf)
 - CTAN.ring:help/Catalogue/entries/pgf.html
     - [e-TeX](/e-TeX/) 拡張が必要です。 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1276ページの長大なマニュアル (ver 3.0.1 November 3, 2017 の場合)](http://pgf.sourceforge.net/pgf_CVS.pdf)
+- [1289ページの長大なマニュアル (ver 3.1.2 の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはコマンドラインから
@@ -1048,5 +1048,5 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ### ChangeLog {#off3b30e}
 
-- [https://sourceforge.net/p/pgf/git/ci/master/log/](https://sourceforge.net/p/pgf/git/ci/master/log/)
-- [https://sourceforge.net/p/pgf/git/ci/master/tree/doc/generic/pgf/ChangeLog](https://sourceforge.net/p/pgf/git/ci/master/tree/doc/generic/pgf/ChangeLog)
+- [https://github.com/pgf-tikz/pgf/commits/master](https://github.com/pgf-tikz/pgf/commits/master)
+- [https://github.com/pgf-tikz/pgf/blob/master/doc/generic/pgf/ChangeLog](https://github.com/pgf-tikz/pgf/blob/master/doc/generic/pgf/ChangeLog)
