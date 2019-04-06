@@ -527,7 +527,7 @@ t と nil ではキーバインドが異なります（前者だと C-c C-t lett
 Linux Mint, Debian GNU/Linux, Vine Linux に収録されている YaTeX の最新版はデフォルトで t となっており，YaTeX の作者も t を推奨しています （YaTeX ML \[yatex:04567\] を参照）．
 変更の理由は YaTeX が使用していたキーバインドがユーザー向けに予約されていた C-c letter に設定されていたためと思われます．
 
-[Emacs Lispのコーディングの慣習](http://www.geocities.co.jp/SiliconValley-Bay/9285/ELISP-JA/elisp_657.html) より
+[https://github.com/emacs-jp/elisp-manual-ja/blob/master/tips.texi#L172-L198](https://github.com/emacs-jp/elisp-manual-ja/blob/master/tips.texi#L172-L198) より
 
 > - 読者のメジャーモードでは、 C-c letter をキーとして定義しないこと。 これらのキー列はユーザー向けに予約済みである。 それら<strong>だけ</strong>がユーザー向けに予約されたキー列であり、 それらを禁止しないこと。
 
