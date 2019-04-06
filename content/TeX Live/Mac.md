@@ -20,7 +20,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2018 のバイナリの動作環境に関する注意](#binary)をお読みください。
+お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 / TeX Live 2018 のバイナリの動作環境に関する注意](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -42,9 +42,9 @@ macOS (OS X, Mac OS X) に付属のヒラギノフォントを使用したい場
 - TeX Live 2015 以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
 - ところが，TeX Live 2016 以降では状況が変わり，標準で IPAex フォントが埋め込まれるようになりました（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)）。そのため，もはやヒラギノフォントを使う設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
 
-### はじめに：TeX Live 2018 のバイナリの動作環境に関する注意 {#binary}
+### はじめに：TeX Live 2019 / TeX Live 2018 のバイナリの動作環境に関する注意 {#binary}
 
-macOS 用として配布される TeX Live 2018 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
+macOS 用として配布される TeX Live 2019 / TeX Live 2018 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
 - x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみをサポートします。
 - x86_64-darwinlegacy バイナリ：それ以前のレガシーな OS をサポートします[^1]。
@@ -52,6 +52,15 @@ macOS 用として配布される TeX Live 2018 のバイナリは，x86_64-darw
 お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
 具体的には，以下の表を参照してください（&#x2714; マークが OS と対応するバイナリを示す）。
 なお，MacTeX / BasicTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな OS では使用できません。
+
+<div style="text-align:center">TeX Live 2019 が動作する OS と対応するバイナリ</div>
+
+|  | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
+|---|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+
+<br>
 
 <div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
 
@@ -131,10 +140,10 @@ $ sudo ./install-tl --profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2018，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2019 または 2018，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2018/bin/x86_64-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2019/bin/x86_64-darwin/tlmgr path add
 ```
 
 ### Xcode のインストール要求ダイアログについての注意 {#xcode}
@@ -303,15 +312,16 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 インストール方法によってディレクトリが異なりますので，ここにまとめておきます。
 
 > <table><tbody>
-> <tr><td></td><td>TeX Live 2018/MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
-> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2018</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2017</td></tr>
-> <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
-> <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
+> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td><td>TeX Live 2018 / MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
+> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2019</td><td style="text-align:right">/usr/local/texlive/2018</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2017</td></tr>
+> <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
+> <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
 > </tbody></table>
 >
 
 ### 基本システムのインストール場所 {#ffbf8218}
 
+- TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 は，デフォルトでは /usr/local/texlive/2019 以下にインストールされます。
 - TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 は，デフォルトでは /usr/local/texlive/2018 以下にインストールされます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からインストールすると，デフォルトではアプリケーションフォルダにインストールされます。
 
@@ -320,12 +330,14 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 - TEXMFLOCAL とは，MacTeX/TeX Live 本体のアップデートに影響を受けないディレクトリで，そのコンピュータのユーザー全員に共通の設定を保存します。<br>
     <strong>自分でスタイルファイル（.sty）やフォントなどを追加するときは，この TEXMFLOCAL または下記の TEXMFHOME 以下に置きます。</strong>
 
-- MacTeX-2018 に収録されている TeXLive-2018 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
+- TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
+- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFLOCAL はユーザのホームフォルダの一つ上の階層「ユーザ」の中の「共有」フォルダに作成されます。
 
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
+- TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 では，初期設定ではホームのライブラリ以下に収めます。
 - TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 では，初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFHOME はユーザのホームフォルダに作成されます。
 
@@ -337,7 +349,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
     $ kpsewhich -var-value TEXMF
     ```
 
-- MacTeX/TeX Live 2013より，最上位の texmf/ は簡便化のため texmf-dist/ と統合されました。<br>TEXMFMAIN も TEXMFDIST も共に texmf-dist/ を示します。
+- TeX Live/MacTeX 2013より，最上位の texmf/ は簡便化のため texmf-dist/ と統合されました。<br>TEXMFMAIN も TEXMFDIST も共に texmf-dist/ を示します。
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため，/usr/local/texlive 以下の設定よりも優先されます。<br>また，mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
