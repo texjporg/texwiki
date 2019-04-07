@@ -36,7 +36,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 ### ［重要］macOS に付属のヒラギノフォント {#yf81dd15}
 
-macOS (OS X, Mac OS X) に付属のヒラギノフォントを使用したい場合は，インストールと最新へのアップデートが完了した後で，[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
+macOS (OS X El Capitan 以降) に付属のヒラギノフォントを使用したい場合は，インストールと最新へのアップデートが完了した後で，[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
 下記の理由により，これは特に必須というわけではありません。
 
 - TeX Live 2015 以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
@@ -273,7 +273,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 [みかちゃんフォント](http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
-自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
+自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になるかもしれません。
 
 ### updmap(-sys) の使用に関する注意点 {#qdce07c2}
 
@@ -353,9 +353,10 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため，/usr/local/texlive 以下の設定よりも優先されます。<br>また，mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
-> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2018/texmf-config</td></tr>
-> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2018/texmf-var</td></tr>
-> <tr><td>TEXMFHOME</td><td>~/Library/texmf</td></tr>
+> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td><td>TeX Live 2018 / MacTeX-2018</td></tr>
+> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2019/texmf-config</td><td>~/Library/texlive/2018/texmf-config</td></tr>
+> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2019/texmf-var</td><td>~/Library/texlive/2018/texmf-var</td></tr>
+> <tr><td>TEXMFHOME</td><td>~/Library/texmf</td><td>~/Library/texmf</td></tr>
 > </tbody></table>
 >
 
