@@ -9,7 +9,7 @@ pukiwiki: "TikZ"
 
 ## [TikZ/PGF](https://pgf-tikz.github.io/) {#w315bc8f}
 
-PGF (Portable Graphics Format) は，Till Tantau（Beamerのオリジナルの開発者） および Mark Wibrow, Christian Feuers&auml;nger を中心として開発されている TeX 用の描画パッケージです。
+PGF (Portable Graphics Format) は，Till Tantau（Beamerのオリジナルの開発者）によって作成され，現在は Henri Menke, Christian Feuers&auml;nger などのメンバーによって開発・メンテナンスされている TeX 用の描画パッケージです。
 PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します。
 Beamer が基礎としている描画エンジンも PGF です。
 
@@ -107,11 +107,11 @@ texdoc tikz
 ```
 
 を実行することで表示できます。
-TeX Live 2018 に付属している TikZ/PDF のマニュアルは ver 3.0.1a August 29, 2015 で古いマニュアルなので上記の新しいマニュアルに更新してください。
+TeX Live に付属している TikZ/PDF のマニュアルが古い場合は上記の新しいマニュアルに更新してください。
 マニュアルの前半には 70 ページにも及ぶチュートリアルがあるので，学習を始めるのは比較的容易です。
 ところが，示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり，マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
 
-たとえば，チュートリアルの p.40 (ver 3.0.1 の場合) にある「パスの交錯」のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
+たとえば，チュートリアルの p.40 (ver 3.1.2 の場合) にある「パスの交錯」のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
 プリアンブルに
 
 ```
@@ -954,13 +954,13 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - 「縦書き (tarticle) で tikz を使おうとするとエラーが出る」→ ([qa:56760](https://okumuralab.org/~okumura/texfaq/qa/56760.html), [qa:56761](https://okumuralab.org/~okumura/texfaq/qa/56761.html))
     - [A package to make everyshi compatible with tate-mode of pTeX.](https://gist.github.com/zr-tex8r/2702969)
     - 上のパッケージは TeX Live 2016 (2016/10/15) および W32TeX (2016/10/16) 以降に取り込まれています。 → [pLaTeX の新しいパッケージバンドル「platex-tools」の紹介](http://acetaminophen.hatenablog.com/entry/2016/10/17/235850)
-- dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.1.2 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.118 (ver 3.0.1 の場合)。以下同）
+- dvipdfmx を使用することによる制約が以前はいくつかありましたが，3.1.2 ではほぼ解消されています。LuaTeX, pdfTeX を使用すれば可能です。（マニュアル  p.118 (ver 3.1.2 の場合)。以下同）
     - <strong>dvipdfmx でパターンは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{patterns}は有効）（マニュアル p.174-175）
-    - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.177-178）
     - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.176-177）
-    - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1135-1136）
+    - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.177-178）
+    - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1148-1149）
     - <strong>dvipdfmx で \[remember picture\] は使用可</strong> --&gt; [TikZ/PGF の図画間結合 (inter-picture connections) が pLaTeX/upLaTeX でも標準サポートされたようだ。つまり『pxpgfmark パッケージは不要になった』ということ。](https://twitter.com/aminophen/status/1114133430826987520)
-        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](http://d.hatena.ne.jp/zrbabbler/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](http://d.hatena.ne.jp/zrbabbler/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
+        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](https://zrbabbler.hatenablog.com/entry/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](https://zrbabbler.hatenablog.com/entry/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが，品質は落ちる／透明度は最近のGhostscriptを必要とする
 
@@ -1009,10 +1009,10 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [How can we display fireworks?](http://tex.stackexchange.com/questions/39485/how-can-we-display-fireworks)
     - [How to draw nanotubes with TeX?](http://tex.stackexchange.com/questions/54341/how-to-draw-nanotubes-with-tex)
 - [Tikzに関する投稿 (Qiita)](https://qiita.com/tags/tikz)
-- [Tikz&amp;pgf | LaTeX工作室](http://www.latexstudio.net/category/tex-graphics/tikz-example/)
-- [「TikZ」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=TikZ)
-- [ZR-TeXnobabbler/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=TikZ)
     - [TikZで"インラインな"図を描く](http://qiita.com/zr_tex8r/items/61d14cec3f54972578ea)
+- [Tikz&amp;pgf | LaTeX工作室](http://www.latexstudio.net/category/tex-graphics/tikz-example/)
+- [TikZ の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=TikZ) / [PGF の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=PGF)
+- [ZR-TeXnobabbler/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=zr_tex8r&word=TikZ)
 - [TikZ - TeX Alchemist Online](http://doratex.hatenablog.jp/category/TikZ)
     - [TeX Alchemist Online / 東大化学設問数のTikZによるグラフ化](http://doratex.hatenablog.jp/entry/20140301/1393604168)
         - TikZによるグラフ作成（折れ線グラフ，棒グラフ）の例
