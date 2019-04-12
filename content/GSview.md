@@ -57,6 +57,10 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 >
 > を書き加えて下さい。
 
+- gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
+    GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
+    PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
+
 - 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，GSview がインストールされません。GSview のファイル名が表示されないトラブルが発生するようです．([参考](https://twitter.com/nikola_yamamoto/status/1044300935210590211))
     - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
 
