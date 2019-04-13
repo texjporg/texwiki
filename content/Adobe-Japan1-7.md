@@ -19,6 +19,12 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 ### Adobe-Japan1-7 対応フォント {#ca406051}
 
+#### フリー {#hfe0fa63}
+
+- [原ノ味フォント / Harano Aji Fonts](https://github.com/trueroad/HaranoAjiFonts) 20190413 以降
+
+#### 商用 {#r57b1206}
+
 - [アドビ、新元号「令和」の合字をAdobe Fontに追加 各ソリューションでも新元号への対応をサポート| Adobe](https://www.adobe.com/jp/news-room/news/201904/20190401-adobe-newera.html)
     - [小塚明朝 Pr6N](https://fonts.adobe.com/fonts/kozuka-mincho-pr6n)
     - [小塚ゴシック Pr6N](https://fonts.adobe.com/fonts/kozuka-gothic-pr6n)
