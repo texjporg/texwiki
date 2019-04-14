@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2018 には以下のパッケージが収録されています。
+MacTeX-2019 には以下のパッケージが収録されています。
 
-#### TeXLive-2018 {#v03e546d}
+#### TeXLive-2019 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -68,10 +68,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
     - TeX に対応したスペルチェッカー。
 
-- [Excalibur](http://excalibur.sourceforge.net/)
-    - TeX に対応したスペルチェッカー。32-bit アプリケーションのため MacTeX-2019 では削除されています。
-
-#### Ghostscript-9.23（脆弱性あり） --&gt; 脆弱性が修正された Ghostscript 9.27 がリリースされています {#n1354f54}
+#### Ghostscript-9.27 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
