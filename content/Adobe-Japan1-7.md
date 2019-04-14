@@ -9,7 +9,7 @@ pukiwiki: "Adobe-Japan1-7"
 
 ## Adobe-Japan1-7 とは {#u1f03501}
 
-Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe-Japan1-6/) に新元号「[令和](https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C)」を追加したものです。
+Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe-Japan1-6/) に新元号「[令和](https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C)」の合字を追加したものです。
 
 - [GitHub - adobe-type-tools/Adobe-Japan1: The Adobe-Japan1-7 Character Collection](https://github.com/adobe-type-tools/Adobe-Japan1/)
 - [Adobe-Japan1-7 Published!](http://blogs.adobe.com/CCJKType/2019/04/aj17-published.html)
