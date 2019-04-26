@@ -31,7 +31,7 @@ LuajitTeX は Windows, macOS, Linux, \*BSD で動作します。
 
 LuajitTeX は TeX Live がサポートしている全ての環境で提供されているわけではありません。
 
-[sparc-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/sparc-solaris/) と [x86_64-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
+[x86_64-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
 
 ### インストール {#e0acc4f5}
 
