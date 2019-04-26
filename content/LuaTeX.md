@@ -21,11 +21,13 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-LuaTeX は 2016 年に 1.0.0 がリリースされました。
+TeX Live 2019 には 1.10.0 が収録されています。
 
 TeX Live 2018 には 1.07.0 が収録されています。
 
 TeX Live 2017 には 1.0.4 が収録されています。
+
+2016 年に 1.0.0 がリリースされました。
 
 TeX Live 2016 は beta-0.95.0，TeX Live 2015 は beta-0.80.0 でしたが，beta-0.80.0 から beta-0.95.0 に至る間に多くの仕様変更がありました。
 
@@ -75,8 +77,8 @@ LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプシ�
 
 ### 関連リンク {#cdd9fc14}
 
-- \[[LuaTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=*%5BLuaTeX%5D)
-- [「LuaTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=LuaTeX)
+- [LuaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=LuaTeX)
+- [LuaLaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=LuaLaTeX)
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
 - [にっき&#9834;: LuaTeXの検索結果](http://abenori.blogspot.com/search?q=LuaTeX&by-date=true)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
