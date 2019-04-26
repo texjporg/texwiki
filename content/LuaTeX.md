@@ -21,15 +21,15 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-TeX Live 2019 には 1.10.0 が収録されています。
+TeX Live 2019 には LuaTeX 1.10.0 が収録されています。
 
-TeX Live 2018 には 1.07.0 が収録されています。
+TeX Live 2018 には LuaTeX 1.07.0 が収録されています。
 
-TeX Live 2017 には 1.0.4 が収録されています。
+TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 
-2016 年に 1.0.0 がリリースされました。
+2016 年に LuaTeX 1.0.0 がリリースされました。
 
-TeX Live 2016 は beta-0.95.0，TeX Live 2015 は beta-0.80.0 でしたが，beta-0.80.0 から beta-0.95.0 に至る間に多くの仕様変更がありました。
+TeX Live 2016 は LuaTeX beta-0.95.0，TeX Live 2015 は LuaTeX beta-0.80.0 でしたが，LuaTeX beta-0.80.0 から LuaTeX beta-0.95.0 に至る間に多くの仕様変更がありました。
 
 #### LuaTeX のプリミティブの変更 {#f5c38821}
 
@@ -37,7 +37,7 @@ LuaTeX beta-0.81.0 では多くのプリミティブ名が変更されました�
 詳細は [NEWS (r5348)](https://github.com/tex-mirror/luatex/commit/e4e49d9cfbe51e8a2b7b66d6f9f62cfe2bd81036#diff-e7bbc46d2b59f615d21a8349c1184135) を参照してください。
 
 特に LuaTeX beta-0.81.0 で \pdftexversion が未定義になったことで，いくつかのパッケージに影響すると予想されます。
-LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していましたが，TeX Live 2015 の beta-0.80.0 では \luatexversion と同じ値に定義されていました。
+LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していましたが，TeX Live 2015 の LuaTeX beta-0.80.0 では \luatexversion と同じ値に定義されていました。
 
 - lualatex で不具合 [forum:1681](https://okumuralab.org/tex/mod/forum/discuss.php?d=1681)
 - [LuaTeX の “pdfTeX のバージョン”がアレな件](http://d.hatena.ne.jp/zrbabbler/20150720/1437366487)，[補足](http://d.hatena.ne.jp/zrbabbler/20150722/1437549646)
