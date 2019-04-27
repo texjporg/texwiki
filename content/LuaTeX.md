@@ -86,7 +86,7 @@ LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプシ�
 - [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
 - [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
-- [LuaTeX - ConTeXt wiki](http://wiki.contextgarden.net/LuaTeX)
+- [LuaTeX - ConTeXt wiki](https://wiki.contextgarden.net/LuaTeX)
 - [slnunicode](https://github.com/LuaDist/slnunicode)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
 - [Switched to LuaLaTeX](http://the-user.org/post/switched-to-lualatex)
@@ -95,7 +95,6 @@ LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプシ�
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html), [qa:56952](https://okumuralab.org/~okumura/texfaq/qa/56952.html), [qa:56955](https://okumuralab.org/~okumura/texfaq/qa/56955.html))
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
-- [Lua 入門（北川さん・荒田さん）](http://material.utmsks.net/home/lua-intro)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
