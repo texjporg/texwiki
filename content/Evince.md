@@ -221,9 +221,9 @@ $ evince --help
   --display=DISPLAY               使用するXのディスプレイを指定する
 ```
 
-### Night Mode {#c3b2e12b}
+### Night Mode（夜間モード） {#c3b2e12b}
 
-Evince には Night Mode という色を反転させる機能があります。
+Evince には Night Mode（夜間モード）という色を反転させる機能があります。
 
 Ctrl+I で色が反転します。
 
