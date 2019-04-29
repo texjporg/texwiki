@@ -21,7 +21,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 #### フリー {#hfe0fa63}
 
-- [原ノ味フォント / Harano Aji Fonts](https://github.com/trueroad/HaranoAjiFonts) 20190413 以降
+- [原ノ味フォント / Harano Aji Fonts](https://github.com/trueroad/HaranoAjiFonts) 20190413
 
 #### 商用 {#r57b1206}
 
@@ -49,3 +49,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - UD角ゴ_スモール-UL/EL/L/R/M/DB/B/E/H/U（Pr6/Pr6N）
     - UD丸ゴ_ラージ-L/M/DB/B/E/H/U（Pr6/Pr6N）
     - UD丸ゴ_スモール-L/M/DB/B/E/H/U（Pr6/Pr6N）
+- [ヒラギノフォントの新元号対応についてのお知らせ](https://www.screen.co.jp/ga/news/info/gan190403)
+    - ヒラギノ明朝 Pr6N W3/W6 （2書体）
+    - ヒラギノ角ゴ Pr6N W3/W6 （2書体）
+    - ヒラギノ丸ゴ Pr6N W4 （1書体）
