@@ -202,23 +202,22 @@ ipaexg.ttf: "IPAexゴシック" "Regular"
 ```
 $ evince --help
 用法:
-  evince [オプション...] [ファイル…] GNOME ドキュメントビューアー
+  evince [OPTION…] [ファイル…] GNOME ドキュメントビューアー
 
 ヘルプのオプション:
-  -h, --help                      ヘルプのオプションを表示する
-  --help-all                      ヘルプのオプションをすべて表示する
-  --help-sm-client                Show session management options
-  --help-gtk                      GTK+ のオプションを表示する
+  -h, --help                  ヘルプのオプションを表示する
+  --help-all                  ヘルプのオプションをすべて表示する
+  --help-gtk                  GTK+ のオプションを表示する
 
 アプリケーションのオプション:
-  -p, --page-label=PAGE           表示するドキュメントのページラベル
-  -i, --page-index=NUMBER         表示するドキュメントのページ番号
-  -n, --named-dest=DEST           表示する Named destination
-  -f, --fullscreen                フルスクリーンモードで起動する
-  -s, --presentation              プレゼンテーションモードで起動する
-  -w, --preview                   プレビューアーで起動する
-  -l, --find=STRING               ドキュメントの中から単語や語句を検索する
-  --display=DISPLAY               使用するXのディスプレイを指定する
+  -p, --page-label=PAGE       表示するドキュメントのページラベル
+  -i, --page-index=NUMBER     表示するドキュメントのページ番号
+  -n, --named-dest=DEST       表示する Named destination
+  -f, --fullscreen            フルスクリーンモードで起動する
+  -s, --presentation          プレゼンテーションモードで起動する
+  -w, --preview               プレビューアーで起動する
+  -l, --find=STRING           ドキュメントの中から単語や語句を検索する
+  --display=DISPLAY           使用するXのディスプレイを指定する
 ```
 
 ### Night Mode（夜間モード） {#c3b2e12b}
