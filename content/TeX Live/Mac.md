@@ -9,10 +9,6 @@ pukiwiki: "TeX Live/Mac"
 
 [TeX Live](</TeX Live/>) > [macOS](/Mac/)
 
-編集している方＞
-2019年3月1日現在、TeX Live 2019はpretestの状態で、まだリリースされていません。
-それゆえ、TeX Live 2019がリリースされるまでは、TeX Live 2018の内容にしてもらえませんでしょうか？
-
 ***
 
 ***
@@ -20,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 / TeX Live 2018 のバイナリの動作環境に関する注意](#binary)をお読みください。
+お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 のバイナリの動作環境に関する注意](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -42,9 +38,9 @@ macOS (OS X El Capitan 以降) に付属のヒラギノフォントを使用し�
 - TeX Live 2015 以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
 - ところが，TeX Live 2016 以降では状況が変わり，標準で IPAex フォントが埋め込まれるようになりました（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)）。そのため，もはやヒラギノフォントを使う設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
 
-### はじめに：TeX Live 2019 / TeX Live 2018 のバイナリの動作環境に関する注意 {#binary}
+### はじめに：TeX Live 2019 のバイナリの動作環境に関する注意 {#binary}
 
-macOS 用として配布される TeX Live 2019 / TeX Live 2018 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
+macOS 用として配布される TeX Live 2019 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
 - x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみをサポートします。
 - x86_64-darwinlegacy バイナリ：それ以前のレガシーな OS をサポートします[^1]。
@@ -59,15 +55,6 @@ macOS 用として配布される TeX Live 2019 / TeX Live 2018 のバイナリ�
 |---|---|---|---|---|---|---|---|---|---|
 | x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
 | x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
-
-<br>
-
-<div style="text-align:center">TeX Live 2018 が動作する OS と対応するバイナリ</div>
-
-|  | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
-|---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -140,7 +127,7 @@ $ sudo ./install-tl --profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2019 または 2018，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2019，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
 $ sudo /usr/local/texlive/2019/bin/x86_64-darwin/tlmgr path add
@@ -312,17 +299,16 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 インストール方法によってディレクトリが異なりますので，ここにまとめておきます。
 
 > <table><tbody>
-> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td><td>TeX Live 2018 / MacTeX-2018</td><td style="text-align:right"><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
-> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2019</td><td style="text-align:right">/usr/local/texlive/2018</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2017</td></tr>
-> <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
-> <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
+> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td><td><a href="http://okumuralab.org/bibun7/">［改訂第7版］LaTeX2e美文書作成入門</a>第2刷</td></tr>
+> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2019</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2017</td></tr>
+> <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
+> <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
 > </tbody></table>
 >
 
 ### 基本システムのインストール場所 {#ffbf8218}
 
 - TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 は，デフォルトでは /usr/local/texlive/2019 以下にインストールされます。
-- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 は，デフォルトでは /usr/local/texlive/2018 以下にインストールされます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からインストールすると，デフォルトではアプリケーションフォルダにインストールされます。
 
 #### TEXMFLOCAL {#d2b2c9d5}
@@ -331,14 +317,12 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
     <strong>自分でスタイルファイル（.sty）やフォントなどを追加するときは，この TEXMFLOCAL または下記の TEXMFHOME 以下に置きます。</strong>
 
 - TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
-- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFLOCAL はユーザのホームフォルダの一つ上の階層「ユーザ」の中の「共有」フォルダに作成されます。
 
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
 - TeX Live 2019 および MacTeX-2019 に収録されている TeXLive-2019 では，初期設定ではホームのライブラリ以下に収めます。
-- TeX Live 2018 および MacTeX-2018 に収録されている TeXLive-2018 では，初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第7版］LaTeX2e美文書作成入門](http://okumuralab.org/bibun7/)からのインストールでは，TEXMFHOME はユーザのホームフォルダに作成されます。
 
 #### その他 {#w4248b01}
@@ -353,10 +337,10 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため，/usr/local/texlive 以下の設定よりも優先されます。<br>また，mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
-> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td><td>TeX Live 2018 / MacTeX-2018</td></tr>
-> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2019/texmf-config</td><td>~/Library/texlive/2018/texmf-config</td></tr>
-> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2019/texmf-var</td><td>~/Library/texlive/2018/texmf-var</td></tr>
-> <tr><td>TEXMFHOME</td><td>~/Library/texmf</td><td>~/Library/texmf</td></tr>
+> <tr><td></td><td>TeX Live 2019 / MacTeX-2019</td></tr>
+> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2019/texmf-config</td></tr>
+> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2019/texmf-var</td></tr>
+> <tr><td>TEXMFHOME</td><td>~/Library/texmf</td></tr>
 > </tbody></table>
 >
 
