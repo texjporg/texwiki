@@ -10,8 +10,8 @@ pukiwiki: "LuaTeX"
 ## [LuaTeX](http://www.luatex.org/) {#af5563d6}
 
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
-が使える TeX です．派生版として [LuajitTeX](/LuajitTeX/) があります．
-[pdfTeX](/pdfTeX/) の後継として期待されています。
+が使える TeX です．[pdfTeX](/pdfTeX/) の後継として期待されています。
+派生版として [LuajitTeX](/LuajitTeX/), [HarfTeX](https://github.com/khaledhosny/harftex) があります．
 
 ***
 
@@ -29,9 +29,24 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 
 2016 年に LuaTeX 1.0.0 がリリースされました。
 
-TeX Live 2016 は LuaTeX beta-0.95.0，TeX Live 2015 は LuaTeX beta-0.80.0 でしたが，LuaTeX beta-0.80.0 から LuaTeX beta-0.95.0 に至る間に多くの仕様変更がありました。
+#### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2019 には内臓 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.10.0) バイナリが収録されています。
+
+TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの LuaTeX (1.07.0) バイナリが収録されています。
+
+- luatex, texlua: Lua 5.2.4 を内蔵（デフォルト）
+- luatex53, texlua53: Lua 5.3.4 を内蔵
+
+LuaTeX 開発者 [Luigi Scarso のツイート](https://twitter.com/luigi_scarso/status/1054799795628453889)によれば LuaTeX 1.09.0 が Lua 5.2 をサポートする最後のバージョンになり、その後は Lua 5.3 に完全に移行する模様です。さらに LuaTeX チームには今後 Lua 5.4 に移行していく意思もあるようです。（参考：[NEWS (r6924)](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?revision=48591&view=markup)）
+
+#### LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
+
+[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuajitTeX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
 
 #### LuaTeX のプリミティブの変更 {#f5c38821}
+
+TeX Live 2016 は LuaTeX beta-0.95.0，TeX Live 2015 は LuaTeX beta-0.80.0 が収録されていますが，LuaTeX beta-0.80.0 から LuaTeX beta-0.95.0 に至る間に多くの仕様変更がありました。
 
 LuaTeX beta-0.81.0 では多くのプリミティブ名が変更されました。
 詳細は [NEWS (r5348)](https://github.com/tex-mirror/luatex/commit/e4e49d9cfbe51e8a2b7b66d6f9f62cfe2bd81036#diff-e7bbc46d2b59f615d21a8349c1184135) を参照してください。
@@ -41,19 +56,6 @@ LuaTeX beta-0.79.1 までは \pdftexversion は “200” と定義していま�
 
 - lualatex で不具合 [forum:1681](https://okumuralab.org/tex/mod/forum/discuss.php?d=1681)
 - [LuaTeX の “pdfTeX のバージョン”がアレな件](http://d.hatena.ne.jp/zrbabbler/20150720/1437366487)，[補足](http://d.hatena.ne.jp/zrbabbler/20150722/1437549646)
-
-#### LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
-
-[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuajitTeX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
-
-#### 内蔵 Lua 処理系のバージョン {#wb3b0391}
-
-TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの LuaTeX (1.07.0) バイナリが収録されています。
-
-- luatex, texlua: Lua 5.2.4 を内蔵（デフォルト）
-- luatex53, texlua53: Lua 5.3.4 を内蔵
-
-また LuaTeX 開発者 [Luigi Scarso のツイート](https://twitter.com/luigi_scarso/status/1054799795628453889)によれば LuaTeX 1.09.0 が Lua 5.2 をサポートする最後のバージョンになり、その後は Lua 5.3 に完全に移行する模様です。さらに LuaTeX チームには今後 Lua 5.4 に移行していく意思もあるようです。（参考：[NEWS (r6924)](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?revision=48591&view=markup)）
 
 ### LuaTeX, LuaLaTeX で日本語 {#a0eb47cd}
 
@@ -121,4 +123,5 @@ GPLv3, GPLv2
 
 #### 派生版 {#n2ca8cf1}
 
+- [LuajitTeX](/LuajitTeX/)
 - [HarfTeX](https://github.com/khaledhosny/harftex) A TeX enginge with embedded HarfBuzz and Lua
