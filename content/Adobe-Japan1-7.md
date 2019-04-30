@@ -38,6 +38,9 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - 游ゴシック Medium
     - 游ゴシック Bold
 - [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506)
+    / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
+    - 游明朝体ファミリー
+    - 游ゴシック体ファミリー
 - [新元号対応についてのお知らせ｜新着情報｜FONTWORKS | フォントワークス](https://www.fontworks.co.jp/news/archives/349)
     - 筑紫明朝-L/LB/R/RB/M/D/B/E/H（Pr6/Pr6N）
     - 筑紫B明朝-L（Pr6/Pr6N）
