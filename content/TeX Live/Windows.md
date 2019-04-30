@@ -24,7 +24,7 @@ pukiwiki: "TeX Live/Windows"
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2018.iso をダウンロードしてください．
+「download from a nearby CTAN mirror」から，texlive2019.iso をダウンロードしてください．
 Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
 Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
@@ -45,7 +45,7 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 
 以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
-以降は TeX Live 2015 の例ですが，TeX Live 2018 でもほとんど変わりません．
+以降は TeX Live 2015 の例ですが，TeX Live 2016, TeX Live 2017, TeX Live 2018 でもほとんど変わりません．TeX Live 2019 では新しいインストーラに変更されたため以下の例とは異なります。
 
 <!-- 誰か更新してー -->
 
@@ -119,7 +119,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2018）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2019）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -174,8 +174,8 @@ TeX Live 2018 対応の事例です．
 
 ## アップデート {#a6223106}
 
-スタートメニューから 「TeX Live 2018」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
-「導入済のものを全て更新」を押せば更新されます．
+スタートメニューから 「TeX Live 2019」→「TeX Live Manager」 と起動することで，パッケージをアップデートすることが可能です．
+「すべてアップデート」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
 コマンドラインから
@@ -188,7 +188,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2018\tlpkg\backups
+- C:\texlive\2019\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
@@ -196,7 +196,7 @@ tlmgr update --self --all
 パッケージは
 
 - [tlmgr](/tlmgr/) (コマンドライン)
-- [TeX Live Manager](</TeX Live Manager/>) (GUI)
+- [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) (GUI)
 
 で管理できます．
 
