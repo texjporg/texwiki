@@ -30,17 +30,11 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - [小塚明朝 Pr6N](https://fonts.adobe.com/fonts/kozuka-mincho-pr6n)
     - [小塚ゴシック Pr6N](https://fonts.adobe.com/fonts/kozuka-gothic-pr6n)
 - [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/10/compatibility_1610.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/10/compatibility_1610.pdf)
-    - 游明朝 Regular
-    - 游明朝 Light
-    - 游明朝 Demibold
-    - 游ゴシック Regular
-    - 游ゴシック Light
-    - 游ゴシック Medium
-    - 游ゴシック Bold
-- [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506)
-    / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
-    - 游明朝体ファミリー
-    - 游ゴシック体ファミリー
+    - 游明朝 Regular/Light/Demibold
+    - 游ゴシック Regular/Light/Medium/Bold
+- [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506) / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
+    - 游明朝体 Pr6N R/M/D
+    - 游ゴシック体 Pr6N L/R/M/D/B
 - [新元号対応についてのお知らせ｜新着情報｜FONTWORKS | フォントワークス](https://www.fontworks.co.jp/news/archives/349)
     - 筑紫明朝-L/LB/R/RB/M/D/B/E/H（Pr6/Pr6N）
     - 筑紫B明朝-L（Pr6/Pr6N）
