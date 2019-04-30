@@ -312,8 +312,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2018\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
-> 　　　　　<ins>C:\texlive\2018\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2019\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2019\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
 >
 > <br>
 >
