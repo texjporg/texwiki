@@ -23,7 +23,15 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
-TeX Live 2018 には 1.07.0 が収録されています。LuaJIT 2.1.0-beta3 が収録されています。
+TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
+
+TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
+
+#### 内臓 LuaJIT 処理系のバージョン {#db5f144e}
+
+TeX Live 2019 には LuaJIT 2.1.0-beta3 が収録されています。
+
+TeX Live 2018 には LuaJIT 2.1.0-beta3 が収録されています。
 
 ### 動作環境 {#p62af3af}
 
