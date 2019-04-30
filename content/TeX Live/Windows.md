@@ -45,7 +45,7 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 
 以下は install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
-以降は TeX Live 2015 の例ですが，TeX Live 2016, TeX Live 2017, TeX Live 2018 でもほとんど変わりません．TeX Live 2019 では新しいインストーラに変更されたため以下の例とは異なります。
+以降は TeX Live 2015 の例ですが，TeX Live 2016, TeX Live 2017, TeX Live 2018 でもほとんど変わりません．TeX Live 2019 では Tcl/Tk による GUI インストーラに変更されたため以下の例とは異なります。
 
 <!-- 誰か更新してー -->
 
@@ -88,7 +88,7 @@ install-tl.zip を解凍して現れる install-tl-advanced.bat をダブルク�
 
 #### テキストモードでのインストール {#f2f98067}
 
-Windows PowerShell またはコマンド プロンプトから install-tl-windows.bat に -nogui オプションをつけて実行することで，テキストモードでのインストールが可能となります．
+Windows PowerShell またはコマンド プロンプトから install-tl-windows.bat に -no-gui オプションをつけて実行することで，テキストモードでのインストールが可能となります．
 
 > .\install-tl-windows.bat -help
 
