@@ -21,7 +21,9 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 #### フリー {#hfe0fa63}
 
-- [原ノ味フォント / Harano Aji Fonts](https://github.com/trueroad/HaranoAjiFonts) 20190413
+- [原ノ味フォント / Harano Aji Fonts](https://github.com/trueroad/HaranoAjiFonts) 20190413 以降
+    - 原ノ味明朝 (CID+23058, CID+23059 が存在しない Adobe-Japan1-7 サブセットフォント)
+    - 原ノ味角ゴシック
 
 #### 商用 {#r57b1206}
 
