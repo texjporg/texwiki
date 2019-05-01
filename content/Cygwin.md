@@ -71,7 +71,7 @@ $ cd install-tl*
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
@@ -89,7 +89,7 @@ I を入力してインストールを開始します．
 エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．
 
 ```
-$ ./install-tl --profile installation.profile
+$ ./install-tl -no-gui -profile installation.profile
 ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
