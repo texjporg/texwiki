@@ -55,7 +55,7 @@ root 権限でインストーラを実行します．
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl --repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
@@ -72,7 +72,7 @@ I を入力してインストールを開始します．<br>
 エラーが発生した場合は以下のコマンドで途中から再開できたりできなかったりします．<br>
 
 ```
-$ sudo ./install-tl --profile installation.profile
+$ sudo ./install-tl -no-gui -profile installation.profile
 ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
