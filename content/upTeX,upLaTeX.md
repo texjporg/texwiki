@@ -68,6 +68,18 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 ### 不具合 {#p35560b1}
 
+#### upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値が 17 ではなく 18 {#h94b455a}
+
+- [upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値 by doraTeX · Pull Request #79 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/pull/79)
+
+#### upbibtex (upBibTeX 0.99d-j0.33-u1.23) が特定の方法で substring を使うとフリーズする {#de52f8a4}
+
+upbibtex (upBibTeX 0.99d-j0.33-u1.24) で修正されました．
+
+- upBibTeXが特定の方法でsubstringを使うとフリーズする ([forum:2496](https://okumuralab.org/tex/mod/forum/discuss.php?d=2496))
+- [upBibTeXが特定の方法でsubstringを使うとフリーズする · Issue #64 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/issues/64)
+- [upbibtex: fix bug and remove unused code on substring$ by miimou · Pull Request #66 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/pull/66)
+
 #### [biblatex](/Biblatex/) の backend に bibtex を指定して upbibtex (upBibTeX 0.99d-j0.33-u1.21) を使用すると upbibtex がフリーズする {#g3e20a4e}
 
 upbibtex (upBibTeX 0.99d-j0.33-u1.22) を使用すると回避できます．
@@ -392,7 +404,8 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - コミュニティ版 [uptex-base](https://github.com/texjporg/uptex-base), [uptex-fonts](https://github.com/texjporg/uptex-fonts), [uplatex](https://github.com/texjporg/uplatex)
-- [「upTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=upTeX)
+- [upTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=upTeX)
+- [upLaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=upLaTeX)
 - [［改訂新版］upLaTeXを使おう](http://qiita.com/zr_tex8r/items/5c14042078b20edbfb07) ZRさん
 - [upLaTeX文書で源ノ明朝／Noto Serif CJKを簡単に使う方法（最新のdvipdfmxとpxchfonを使用）](http://qiita.com/zr_tex8r/items/9dfeafecca2d091abd02) ZRさん
 - [upLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/upLaTeX)
