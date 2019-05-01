@@ -144,3 +144,4 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 - [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
+- [http://www.ring.gr.jp/ring/newfiles/CTAN.html](http://www.ring.gr.jp/ring/newfiles/CTAN.html)
