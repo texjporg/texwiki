@@ -17,10 +17,9 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ### 動作環境 {#s8a76771}
 
+- macOS 10.14 Mojave
 - macOS 10.13 High Sierra
 - macOS 10.12 Sierra
-- OS X 10.11 El Capitan
-- OS X 10.10 Yosemite
 
 <!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， -->
 <!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
@@ -69,6 +68,7 @@ texlive フォルダごと削除してしまってもかまいません。
 
 [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
 
+- Drag &amp; Drop UpTeX 20190501 は TeX Live 2019 scheme-small + collection-langjapanese + α。
 - Drag &amp; Drop UpTeX 20180702 は TeX Live 2018 scheme-small + collection-langjapanese + α。
 - Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
 - Drag &amp; Drop UpTeX 20160907 は BasicTeX を使わず，「TeX Live 2016 scheme-small + collection-langjapanese」を収録しています ([forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)) 。
