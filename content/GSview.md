@@ -21,6 +21,10 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
+- gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
+    GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
+    PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
+
 - gsview-5.0 上で角藤版 Ghostscript を使用する場合の注意 --&gt; [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
 
 > 本家の Windows 用 Ghostscript バイナリは，iccprofiles を
@@ -57,21 +61,6 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 >
 > を書き加えて下さい。
 
-- gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
-    GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
-    PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
-
-- 阿部紀行さんによる「TeX インストーラ 3」を使用して W32TeX をインストールした場合は，GSview がインストールされません。GSview のファイル名が表示されないトラブルが発生するようです．([参考](https://twitter.com/nikola_yamamoto/status/1044300935210590211))
-    - [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
-
-- GSview は CTAN から提供されなくなりました。
-    - 参考：[GSview is no longer avail­able from CTAN: it should be re­trieved from its home page.](https://ctan.org/pkg/gsview)
-
-- The Fossies Software Archive からも GSview が入手できるようです。
-    - [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
-        <!-- - --https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe -->
-        <!-- - --https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe -->
-
 ### インストール {#je84b8ea}
 
 GSview は，Ghostscript を正常にインストールした後にインストールしてください（Ghostscript のレジストリ情報が使用されるためです）。
@@ -79,7 +68,7 @@ Windows への Ghostscript のインストール方法は [Ghostscript/Windows](
 
 GSview 5.0 インストーラを [Obtaining GSview 5.0](http://www.ghostgum.com.au/software/gsview.htm) からダウンロードし，実行します。
 
-- GSview 5.0 には 64-bit 版/32-bit 版の区別がありますが，これは<strong>使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません</strong>。64-bit 版 Ghostscript をインストールした場合は 64-bit 版 GSview を，32-bit 版 Ghostscript をインストールした場合は 32-bit 版 GSview を選択してください。
+GSview 5.0 には 64-bit 版/32-bit 版の区別がありますが，これは<strong>使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません</strong>。64-bit 版 Ghostscript をインストールした場合は 64-bit 版 GSview を，32-bit 版 Ghostscript をインストールした場合は 32-bit 版 GSview を選択してください。
 
 <!-- -GSview のインストーラ -->
 <!-- - -[[GSview 5.0:http://www.ghostgum.com.au/software/gsview.htm]] Ghostscript を GUI 操作できるソフトウェア -->
@@ -87,6 +76,12 @@ GSview 5.0 インストーラを [Obtaining GSview 5.0](http://www.ghostgum.com.
 <!-- - --[[GSview 5.0 (32-bit版):http://www.ghostgum.com.au/download/gsv50w32.exe]]（32-bit版の Ghostscript が必要） -->
 
 インストーラを起動したら，あとは指示に従うだけでインストールが完了します。
+
+The Fossies Software Archive からも GSview が入手できるようです。
+
+- [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
+    <!-- - -https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe -->
+    <!-- - -https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe -->
 
 ### 注意点 {#y9339e21}
 
