@@ -18,7 +18,7 @@ pukiwiki: "TeX Live/Mac"
 macOS に TeX Live をインストールする場合，以下の方法があります。
 お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 のバイナリの動作環境](#binary)をお読みください。
 
-- TeX Live 公式のインストーラを使用する
+- TeX Live 公式のインストーラを使用する（最も多くの Mac で動作する方法です）
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
 - TeX Live をベースにした macOS 専用の TeX ディストリビューションを入手する
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。 → [こちら](/MacTeX/)
@@ -268,7 +268,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
     tlmgr および kanji-config-updmap-sys は updmap-sys を内部で呼びだしますが，-sys なしの kanji-config-updmap-sys は -sys なしの updmap を実行します。
     <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は，-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
 
-- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+](http://tug.org/mactex/TeXLive2018+Changes.pdf) を参照)
+- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+ \[Wayback Machine\]](http://web.archive.org/web/20190406212917/http://tug.org/mactex/TeXLive2018+Changes.pdf) を参照)
     TEXMFHOME にフォントを置く場合は，updmap（-sys なし）を実行する必要があります。
     - 埋め込むフォントを細かく制御したい場合は，手動で map ファイルを書き換えます。
 
