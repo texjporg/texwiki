@@ -31,7 +31,7 @@ pukiwiki: "Ghostscript/Linux"
 
 #### CentOS {#hf131f80}
 
-- [CentOSにGhostScript9.1をソースから入れる](http://qiita.com/moonsubaru/items/f21247c5b43de9820b31)
+- \[[CentOS-announce\] CESA-2018:2918 Important CentOS 7 ghostscript Security Update](https://lists.centos.org/pipermail/centos-announce/2018-October/023066.html)
 
 #### Fedora {#v3e95c6b}
 
