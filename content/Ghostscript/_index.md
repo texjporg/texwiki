@@ -25,7 +25,15 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.25 以降に更新してください．
+Ghostscript 9.25 以降（Ghostscript 9.27 (2019-04-04) を除く）に更新してください．
+
+Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
+
+- commit [06c920713e11bce9bd541bbf9bf294b2ba16aee8](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=06c920713e11bce9bd541bbf9bf294b2ba16aee8)
+    で修正されたようです。--&gt; pdfcrop in gs-9.27 ([forum:2622](https://okumuralab.org/tex/mod/forum/discuss.php?d=2622))
+
+- [pdfcrop fails with gs9.27 · Issue #63 · ho-tex/oberdiek · GitHub](https://github.com/ho-tex/oberdiek/issues/63)
+- Debian GNU/Linux では ghostscript (9.27~dfsg-2) で修正されました。--&gt; [#927429 - ghostscript: incorrect bbox is produced in pdfcrop - Debian Bug report logs](https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=927429)
 
 Ghostscript 9.24 は，@filename スキームが使用できず，ps2pdf.bat などが一切使用できないという問題があるので，インストールしない方が無難です。
 また Ghostscript 9.24 から PDF を出力する際のバージョンが PDF 1.5 から PDF 1.7 に変更されています。([pdfwrite - ensure correct ICC profile version being written out](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=bb2ea8ca0482cb0bb5632c30e9184e3d19fdc8d2))
