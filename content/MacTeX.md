@@ -68,10 +68,11 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
     - TeX に対応したスペルチェッカー。
 
-#### Ghostscript-9.27 {#n1354f54}
+#### Ghostscript-9.27 --&gt; pdfcrop がおかしくなる問題が発生するためチェックをはずして [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から Ghostscript 9.26 をダウンロードする {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
+- MacTeX 付属の Ghostscript を使用すると不具合が発生する場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から不具合が発生しないバージョンを入手してください。
 - MacTeX のリリース後に新しい Ghostscript がリリースされた場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
 - Homebrew または MacPorts を使用して Ghostscript をインストールする場合。
 - [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)を使用する場合。（→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196)）
@@ -130,9 +131,10 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
+- [2019年のコンピューターノウハウ (Mac) 4 MacTeX 2019](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2019/node4.html)
+- [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
 - [MacTeX Live 2018をインストールした：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2018-05-01)
-- [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
 - [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
