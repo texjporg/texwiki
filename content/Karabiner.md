@@ -21,7 +21,9 @@ Sierra 以降の macOS では Karabiner 10 は動作せず、Karabiner-Elements 
 
 #### キーバインドの変更（Karabiner-Elements） {#s5d572d9}
 
-- [https://pqrs.org/osx/karabiner/complex_modifications/json/exchange_underscore_and_backslash.json](https://pqrs.org/osx/karabiner/complex_modifications/json/exchange_underscore_and_backslash.json)
+- [https://pqrs.org/osx/karabiner/complex_modifications/#swap_yen_and_backslash_jis](https://pqrs.org/osx/karabiner/complex_modifications/#swap_yen_and_backslash_jis)
+- [https://pqrs.org/osx/karabiner/complex_modifications/json/swap_yen_and_backslash_jis.json](https://pqrs.org/osx/karabiner/complex_modifications/json/swap_yen_and_backslash_jis.json)
+- [JIS配列のMacで、バックスラッシュをさくっと入力する方法(JetBrainsのIDE対応)](https://qiita.com/kunit/items/f6ec7e159d93002bfc48)
 - [Karabiner-Elementsでアンダースコアをバックスラッシュへ変換](http://koodzy.hatenadiary.jp/entry/2017/09/19/010447)
 
 #### キーバインドの変更（Karabiner 10） {#j490b288}
