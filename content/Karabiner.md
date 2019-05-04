@@ -15,7 +15,7 @@ Karabiner は macOS 用のキーボードカスタマイズツールです．
 
 ### 注意点 {#ofc2fe00}
 
-Sierra 以降の macOS では Karabiner 10 は動作せず、Karabiner-Elements 12 を使用します．ただし，Sierra 以降の macOS の制約により， <strong> [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) &lt;-> [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C)の交換は Karabiner-Elements ではできません</strong>．そのようなキーバインドの変更には [Hammerspoon](http://www.hammerspoon.org) などのツールが必要です．
+Sierra 以降の macOS では Karabiner 10 は動作せず、Karabiner-Elements 12 を使用します．ただし，Sierra 以降の macOS の制約により， <strong> [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) &lt;-> [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C)の交換は Karabiner-Elements ではできるかもしれないしできないかもしれません</strong>．Karabiner-Elements でキーバインドの変更ができない場合は [Hammerspoon](http://www.hammerspoon.org) などのツールを使用すればできるようです．
 
 ### 使い方 {#g3053829}
 
@@ -24,7 +24,6 @@ Sierra 以降の macOS では Karabiner 10 は動作せず、Karabiner-Elements 
 - [https://pqrs.org/osx/karabiner/complex_modifications/#swap_yen_and_backslash_jis](https://pqrs.org/osx/karabiner/complex_modifications/#swap_yen_and_backslash_jis)
 - [https://pqrs.org/osx/karabiner/complex_modifications/json/swap_yen_and_backslash_jis.json](https://pqrs.org/osx/karabiner/complex_modifications/json/swap_yen_and_backslash_jis.json)
 - [JIS配列のMacで、バックスラッシュをさくっと入力する方法(JetBrainsのIDE対応)](https://qiita.com/kunit/items/f6ec7e159d93002bfc48)
-- [Karabiner-Elementsでアンダースコアをバックスラッシュへ変換](http://koodzy.hatenadiary.jp/entry/2017/09/19/010447)
 
 #### キーバインドの変更（Karabiner 10） {#j490b288}
 
