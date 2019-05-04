@@ -133,7 +133,7 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 
 ```
 $ pdftex -ini
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (INITEX)
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (INITEX)
  restricted \write18 enabled.
 **
 ```
