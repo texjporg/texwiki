@@ -18,20 +18,6 @@ pukiwiki: "TeXworks/設定"
 
 以下の（またはそれに対応する）設定は，TeX Live （2016 以降）や W32TeX に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリは，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
 
-<!-- W32TeX の TeXworks は pdfpLaTeX が標準になっています． -->
-<!-- この pdfpLaTeX で使用されている C:\w32tex\bin\pdfplatex.bat は以下のように記述されています． -->
-
-<!-- @echo off -->
-<!-- platex -synctex=1 -jobname="%~n1" -kanji=utf8 -guess-input-enc %1 && dvipdfmx "%~n1" -->
-
-<!-- この処理方法の場合 -->
-<!--  -->
-<!-- -ファイルの文字コードは自動判別されます． -->
-<!-- -コンソールへの出力や log ファイルへの出力は UTF-8 で行われます． -->
-<!-- -SyncTeX が使用できます． -->
-<!-- -platex でエラーが発生して x を入力すると dvipdfmx が実行されずに終了できます． -->
-<!-- -platex でエラーが発生して e を入力すると PDF ファイルが作成されている場合に PDF ビューアがアクティブにならずにすぐにエラー行にジャンプできます． -->
-
 公式サイトの Windows バイナリを使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
@@ -155,5 +141,5 @@ W32TeX に付属のものは，スペルチェック用の英語辞書を前も�
 
 ## 背景色・文字色の変更 {#g4b457a4}
 
-- [Texworksで背景色と文字の色やキーワードの色を変更するには](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
-- [TeXworksの背景色・文字色を変える](http://d.hatena.ne.jp/tasusu/20111106/1320588877)
+- [Texworksで背景色と文字の色やキーワードの色を変更するには](https://blogs.yahoo.co.jp/tensai10432/14697466.html)
+- [TeXworksの背景色・文字色を変える](https://tasusu.hatenablog.com/entry/20111106/1320588877)
