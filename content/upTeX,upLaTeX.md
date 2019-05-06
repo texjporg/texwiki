@@ -70,6 +70,8 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 #### upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値が 17 ではなく 18 {#h94b455a}
 
+upTeX 1.25 で修正されました．
+
 - [upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値 by doraTeX · Pull Request #79 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/pull/79)
 
 #### upbibtex (upBibTeX 0.99d-j0.33-u1.23) が特定の方法で substring を使うとフリーズする {#de52f8a4}
