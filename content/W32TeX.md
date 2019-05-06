@@ -282,6 +282,23 @@ command_line_encoding.dvips = none
 
 と設定するとよいでしょう．
 
+最新の場合には，p(la)tex を主に使用される場合も
+
+```
+command_line_encoding = utf-8
+```
+
+だけでも可です。dvipdfmx, dvips は command_line_encoding の値によらず，
+OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に名前が書かれて
+いるファイルを見つけることができます。現在 (2019/05) の W32TeX における
+デフォルトは
+
+```
+command_line_encoding = utf-8
+```
+
+となっています。
+
 なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
 文字エンコーディングの齟齬により，ソフトウェアによっては kpathsea 経由で探し出すことに失敗するケースがあるためです．
 また，p(la)tex において special の種類によっては 0x5c を含むファイル名の場合，失敗することがあります．
@@ -386,6 +403,7 @@ command_line_encoding.dvips = none
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2ps-w64.tar.xz">dvi2ps-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2ps-w32.tar.xz">dvi2ps-w32.tar.xz</a></td><td>DVI to PS driver</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2tty-w64.tar.xz">dvi2tty-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2tty-w32.tar.xz">dvi2tty-w32.tar.xz</a></td><td>DVI to TTY driver</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvitools-w64.tar.xz">dvitools-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvitools-w32.tar.xz">dvitools-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/extractpdfmark-w64.tar.xz">extractpdfmark-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/extractpdfmark-w32.tar.xz">extractpdfmark-w32.tar.xz</a></td><td>extractpdfmark</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/gregorio-w64.tar.xz">gregorio-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/gregorio-w32.tar.xz">gregorio-w32.tar.xz</a></td><td>Gregorio</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/harftex-w64.tar.xz">harftex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/harftex-w32.tar.xz">harftex-w32.tar.xz</a></td><td>HarfTeX<br>TeX Live には収録されていません．</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
@@ -393,7 +411,7 @@ command_line_encoding.dvips = none
 <tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/minitoc.tar.xz">minitoc.tar.xz</a></td><td>minitoc パッケージ</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．<br>otf パッケージの最新版は otfbeta です．</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
 <tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for <a href="/楽譜/#l0a501fd">MusiXTeX</a></td></tr>
 <tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
