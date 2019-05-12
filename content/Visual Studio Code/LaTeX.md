@@ -102,7 +102,7 @@ recipe 内の tools で指定されている tool は latex-workshop.latex.tools
 ]
 ```
 
-どのような recipe があるかは .tex ファイルを開いているときに示されるサイドバーのTeXアイコンから確認できます。複数の recipe が設定されていればそれを選択することでそれぞれの設定でのコンパイルが可能になります。（複数の recipe が用意されているとき，デフォルトでは最初の recipe が実行されます。）
+どのような recipe があるかは .tex ファイルを開いているときに示されるアクティビティバーのTeXアイコンからサイドバーを開いて確認できます。複数の recipe が設定されていればそれを選択することでそれぞれの設定でのコンパイルが可能になります。（複数の recipe が用意されているとき，デフォルトでは最初の recipe が実行されます。）
 
 #### recipe/tool を日本語文書用に設定 {#c465cb18}
 
@@ -247,7 +247,7 @@ Ctrl+Alt+V (Cmd+opt+V) あるいは右上の PDF ファイルのアイコンを�
 
 synctex を有効にしている場合，tex ファイル上で Ctrl+Alt+J (Cmd+opt+J) すると forward search，PDF ファイル上で Ctrl+左クリック (Cmd+クリック)すると inverse search を行います。
 
-Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側の Activity Bar の TeX アイコンをクリックで以下のリストが表示されます。リストの項目から Action を選択すると実行されます。
+Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティバーの TeX アイコンをクリックで以下のリストがサイドバーに表示されます。リストの項目から Action を選択すると実行されます。
 
 > Build LaTeX project<br>
 > View LaTeX PDF<br>
@@ -257,7 +257,7 @@ Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側の Activity Bar の TeX 
 
 #### 入力支援 {#c2c9aa18}
 
-数文字入力すると，入力補完の候補がポップアップします。読み込んである自作マクロなどに含まれる命令も補完候補に含まれます。詳細は以下に。
+「\\+先頭アルファベット」で入力補完モードとなって候補がポップアップし，それ以降の入力文字は順不同で絞り込みに用いられます。読み込んである自作マクロなどに含まれる命令も補完候補に含まれます。なお，下の表に示された文字列は「\」なしに2文字目から補完モードとなります。詳細は以下に。
 
 - [https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets](https://github.com/James-Yu/LaTeX-Workshop/wiki/Snippets)
 
@@ -277,7 +277,7 @@ Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側の Activity Bar の TeX 
 
 環境で囲むときは，Ctrl+shift+P (Cmd+shift+P)でコマンドパレットを呼び出してから LaTeX Workshop: Surround selection with \begin{}...\end{} を選択します。（コマンドパレットに latex sur と入力すれば見つけられます。）
 
-テキストを選択した状態で$, (, {, \[, ', ''を入力することでもテキストを囲むことができます。
+テキストを選択した状態で$, (, {, \[, ', ''を入力すると，これらの文字で選択テキストを囲むことができます。
 
 ### マジックコメント {#b7b858ba}
 
@@ -400,7 +400,7 @@ settings.json に設定を記述することでVS Code や LaTeX Workshop の動
 
 <table>
 <tbody>
-<tr><td><strong>設定</strong></td><td><strong>説明</strong></td></tr>
+<tr><td><strong>設定</strong></td><td>説明</td></tr>
 <tr><td>never</td><td>自動削除機能を利用しない</td></tr>
 <tr><td>onFailed</td><td>コンパイルに失敗したときにのみ上記の拡張子のファイルを自動削除</td></tr>
 <tr><td>onBuilt</td><td>コンパイルのたびに上記の拡張子のファイルを自動削除</td></tr>
