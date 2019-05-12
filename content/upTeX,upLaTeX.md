@@ -68,11 +68,19 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 ### 不具合 {#p35560b1}
 
-#### upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値が 17 ではなく 18 {#h94b455a}
+#### upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値が 17(kana) ではなく 18(other_kchar) {#h94b455a}
 
 upTeX 1.25 で修正されました．
+環境が upTeX 1.24 の場合，本バグが「全角英数・半角カナを制御綴の一部として使う動作」「全角疑問符・感嘆符・カンマ・ピリオド等周辺のwidow penaltyの動作」に影響します．これらを両立させたい場合，文書の冒頭で
+
+```
+\kcatcode"FF00=16% Halfwidth and Fullwidth Forms -> 16(kanji)
+```
+
+とすれば緩和できます．
 
 - [upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値 by doraTeX · Pull Request #79 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/pull/79)
+- [全角英数・半角カナの \kcatcode のデフォルト値 · texjporg/uptex-base · GitHub](https://github.com/texjporg/uptex-base/issues/3)
 
 #### upbibtex (upBibTeX 0.99d-j0.33-u1.23) が特定の方法で substring を使うとフリーズする {#de52f8a4}
 
