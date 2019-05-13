@@ -212,6 +212,10 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
 
 TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を用いる場合は latex-workshop.latex.recipes に ptex2pdf を追加し，latex-workshop.latex.tools にその詳細設定を記します。（以下の ptex2pdf の設定は「upLaTeXでコンパイル」「synctex 有効」というものです。）
 
+※この設定は「ptex2pdfを1度実行する」だけであるため、「2度以上のコンパイルが必要」「BibTeXやMakeindexの実行が必要」な文書に関しては正しい出力を得られないことに注意が必要です。
+
+<!-- ところで -interactionmode の設定はなくてもいいんだっけ？ -->
+
 ```
 "latex-workshop.latex.recipes": [
 {
