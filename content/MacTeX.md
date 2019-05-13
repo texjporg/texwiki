@@ -68,11 +68,11 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
     - TeX に対応したスペルチェッカー。
 
-#### Ghostscript-9.27 --&gt; pdfcrop がおかしくなる問題が発生するためチェックをはずして [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から Ghostscript 9.26 をダウンロードする {#n1354f54}
+#### Ghostscript-9.27 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
-- MacTeX 付属の Ghostscript を使用すると不具合が発生する場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から不具合が発生しないバージョンを入手してください。
+<!-- -MacTeX 付属の Ghostscript を使用すると不具合が発生する場合。- -&gt; [[Richard Koch Home Page:https://pages.uoregon.edu/koch/]] から不具合が発生しないバージョンを入手してください。 -->
 - MacTeX のリリース後に新しい Ghostscript がリリースされた場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
 - Homebrew または MacPorts を使用して Ghostscript をインストールする場合。
 - [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)を使用する場合。（→ [MacTeX 2014+texmaker+GhostView の環境で日本語PDFを作成する方法](https://qiita.com/mmurasawa/items/25a88b0c5548c96f6196)）
