@@ -233,7 +233,7 @@ TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を用いる場合は late
  "-u",
  "-l",
  "-ot",
- "-kanji=utf8 -synctex=1 -file-line-error",
+ "-kanji=utf8 -interaction=nonstopmode -synctex=1 -file-line-error",
  "%DOC%"
 ]
 }
@@ -298,7 +298,7 @@ root ファイル（メインファイル）を指定する場合は
 
 のように設定します。
 
-#### ビルドコマンドの変更 {#kc7e31e9}
+#### ビルドコマンドの一時的変更 {#kc7e31e9}
 
 「普段は Latexmk-upLaTeX を使うように設定しているけれど特定の文書だけ Latexmk-LuaLaTeX を使いたい」といった場合は設定を変更しなくてもマジックコメントを追加して Latexmk-LuaLaTeX を使用することができます。（ただし，これは後方互換性のために組み込まれた機能で，原則として recipe システムを利用することが推奨されています。）
 
