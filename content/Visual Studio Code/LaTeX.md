@@ -17,11 +17,11 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。
 
-サイドバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（好みにより Japanese Language Pack for VS Code を導入することもできます。）
+左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（好みにより Japanese Language Pack for VS Code を導入することもできます。）
 
 ## LaTeX Workshop {#n2442e05}
 
-LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントを開く，などの機能があります。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
@@ -215,6 +215,7 @@ TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を用いる場合は late
 ※この設定は「ptex2pdfを1度実行する」だけであるため、「2度以上のコンパイルが必要」「BibTeXやMakeindexの実行が必要」な文書に関しては正しい出力を得られないことに注意が必要です。
 
 <!-- ところで -interactionmode の設定はなくてもいいんだっけ？ -->
+<!-- ptex2pdf の利用の仕方を見ているとみなさん -interaction をつけてませんが，ptex2pdf のスクリプト自体には特に設定はなさそうです。なので，ほかの latexmk 仕様に合わせました。 -->
 
 ```
 "latex-workshop.latex.recipes": [
@@ -233,7 +234,7 @@ TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を用いる場合は late
  "-u",
  "-l",
  "-ot",
- "-kanji=utf8 -interaction=nonstopmode -synctex=1 -file-line-error",
+ "-kanji=utf8 -synctex=1 -interaction=nonstopmode -file-line-error",
  "%DOC%"
 ]
 }
@@ -249,7 +250,7 @@ Ctrl+Alt+V (Cmd+opt+V) あるいは右上の PDF ファイルのアイコンを�
 タブで開く場合は右側に新しいタブで PDF ファイルを表示します。
 ブラウザで開く場合は既定のブラウザで PDF ファイルを表示します。
 
-synctex を有効にしている場合，tex ファイル上で Ctrl+Alt+J (Cmd+opt+J) すると forward search，PDF ファイル上で Ctrl+左クリック (Cmd+クリック)すると inverse search を行います。
+synctex を有効にしている場合，tex ファイル上で Ctrl+Alt+J (Cmd+opt+J) すると forward search，PDF ファイル上で Ctrl+左クリック (Cmd+クリック)すると inverse search を行います。タブで開かれた PDF は synctex に対応しています。
 
 Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティバーの TeX アイコンをクリックで以下のリストがサイドバーに表示されます。リストの項目から Action を選択すると実行されます。
 
@@ -423,13 +424,13 @@ true/false で設定が切り替わります。（この設定値には引用符
 
 #### 日本語の単語区切りを設定する {#u7d79829}
 
-単語移動を行いやすくするため日本語の句読点や括弧類を単語区切りとして設定する。
+単語移動を行いやすくするため日本語の句読点や括弧類を単語区切りとして設定します。
 
 ```
 "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》",
 ```
 
-助詞も単語区切りに設定するならば，以下のように設定する。
+助詞も単語区切りに設定するならば，以下のように設定します。
 
 ```
 "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
