@@ -24,7 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 2019.010.20099 以降に更新してください。Adobe Acrobat Reader DC 2019.010.20098 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB19-17) に関する注意喚起](http://www.jpcert.or.jp/at/2019/at190013.html)
+- Adobe Acrobat Reader DC 2019.012.20034 以降に更新してください。Adobe Acrobat Reader DC 2019.010.20099 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB19-18) に関する注意喚起](https://www.jpcert.or.jp/at/2019/at190022.html)
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
@@ -117,8 +117,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1901020099/AcroRdrDC1901020099_ja_JP.exe
-wine AcroRdrDC1901020099_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1901220034/AcroRdrDC1901220034_ja_JP.exe
+wine AcroRdrDC1901220034_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
