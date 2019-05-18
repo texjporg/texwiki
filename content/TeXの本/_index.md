@@ -156,10 +156,12 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2002年 {#cd408659}
 
+- 横尾 英俊『[LaTeXユーザのためのレポート・論文作成入門](https://www.kyoritsu-pub.co.jp/bookdetail/9784320005655)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，2002年，税込価格 &yen;2,376，[ISBN 978-4-320-00565-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-00565-5)）
+
 #### 2001年 {#f1b02c0b}
 
 - Adobe Systems 著，桑沢清志 訳
-    『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](https://store.kadokawa.co.jp/shop/g/g200600003703/)』
+    『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](http://web.archive.org/web/20160212073106/http://ascii.asciimw.jp/books/books/detail/4-7561-3822-5.shtml)』
     （アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年6月，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
 
 #### 2000年 {#o161a1dd}
