@@ -15,7 +15,7 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 ## LaTeX 環境の整備 {#ic8fac5c}
 
-Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。
+Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。CaTeX は LaTeX Workshop と共に使うことを想定し，ギリシア文字補完，イメージ補完，フォント補完の機能をもつほか，Ctrl-c s と入力することで「セクション」「環境」「\maketitle」「{\Large }」のタイプの補完が可能となります。また，LaTeX Workshop では補完機能の拡張ができないため，CaTeX では自作コマンドの補完をその場で辞書登録する機能も搭載しています。
 
 左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（好みにより Japanese Language Pack for VS Code を導入することもできます。）
 
@@ -283,6 +283,29 @@ Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティ�
 環境で囲むときは，Ctrl+shift+P (Cmd+shift+P)でコマンドパレットを呼び出してから LaTeX Workshop: Surround selection with \begin{}...\end{} を選択します。（コマンドパレットに latex sur と入力すれば見つけられます。）
 
 テキストを選択した状態で$, (, {, \[, ', ''を入力すると，これらの文字で選択テキストを囲むことができます。
+
+#### 自作のショートカットキーでテキストを入力する／囲む（VS Code の機能） {#a67589f0}
+
+keybindings.json を編集することで，自作のショートカットキーで特定の動作をさせることができます。（キーボードショートカット (Keyboard Shortcuts)の設定を開いた後で上部のタブの右側にある{}をクリックすると keybindings.json が開きます。）
+
+特殊文字は"\\"でエスケープします。
+
+```
+{
+   "key": "cmd+shift+h",
+   "command": "type",//テキストの入力
+   "args":{"text": "\"Hello world!\""}
+   "when": "editorTextFocus"
+},
+{
+   "key": "cmd+shift+a",
+   "command": "editor.action.insertSnippet",//スニペットの入力
+   "when": "editorTextFocus && editorLangId == latex",
+   "args": {
+       "snippet": "\\endnote{${TM_SELECTED_TEXT}}"//選択部分を囲む
+   }
+}
+```
 
 ### マジックコメント {#b7b858ba}
 
