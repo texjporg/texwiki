@@ -1368,6 +1368,7 @@ TeX ソースの先頭行に例えば，
 
 ## 関連リンク {#fcad5d2d}
 
+- [私的 YaTeX 事始め](http://mtino1594.hatenablog.com/entry/2019/04/07/200000)
 - [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 - [ Emacs26.1を入れてみる（その15）EmacsでLaTeX](https://blogs.yahoo.co.jp/t_terui/66967449.html), [ Emacs26.1を入れてみる（その16）YaTeX にアウトラインモードを追加](https://blogs.yahoo.co.jp/t_terui/66970175.html)
 - [YaTeX \[ShotakahaDokuWiki](http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:yatex:start)\]
