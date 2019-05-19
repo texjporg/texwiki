@@ -15,9 +15,13 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 ## LaTeX 環境の整備 {#ic8fac5c}
 
-Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。CaTeX は LaTeX Workshop と共に使うことを想定し，ギリシア文字補完，イメージ補完，フォント補完の機能をもつほか，Ctrl-c s と入力することで「セクション」「環境」「\maketitle」「{\Large }」のタイプの補完が可能となります。また，LaTeX Workshop では補完機能の拡張ができないため，CaTeX では自作コマンドの補完をその場で辞書登録する機能も搭載しています。
+Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。
 
 左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（好みにより Japanese Language Pack for VS Code を導入することもできます。）
+
+### LaTeX Workshop と CaTeX の併用 {#qb107d73}
+
+CaTeX は LaTeX Workshop と共に使うことを想定し，LaTeX Workshop にない機能を追加します。ギリシア文字補完，イメージ補完，フォント補完の機能をもつほか，Ctrl-c s と入力することで「セクション」「環境」「\maketitle」「{\Large }」のタイプの補完が可能となります。また，CaTeX では自作コマンドの補完をその場で辞書登録する機能も搭載しています。一方，LaTeX Workshop の数式の「@補完」とかぶるところもあり，併用すると「@補完」はやや使いにくくなります。
 
 ## LaTeX Workshop {#n2442e05}
 
@@ -268,21 +272,67 @@ Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティ�
 
 <table>
 <tbody>
-<tr><td><strong>略記</strong></td><td>説明</td><td>例</td></tr>
-<tr><td><strong>BXY</strong></td><td>環境 XY... を入力補完</td><td>BEQ, BEN, BIT,BCAS,...</td></tr>
-<tr><td><strong>SXY</strong></td><td>部・章・節などを入力補完</td><td>SPA, SCH, SSE, SSS, SS2,...</td></tr>
-<tr><td><strong>@a</strong>など</td><td>ギリシャ文字の入力補完</td><td>@a, @b,@g,...</td></tr>
-<tr><td><strong>@(</strong>など</td><td>数学記号の入力補完</td><td>括弧類，分数，...</td></tr>
-<tr><td><strong>FXY</strong></td><td>フォント設定</td><td>FRM, FTT, FIT, FBF,...</td></tr>
-<tr><td><strong>MXY</strong></td><td>数学フォント設定</td><td>MRM, MBF, MBB,...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>略記</strong></td><td>説明</td><td>例</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>BXY</strong></td><td>環境 XY... を入力補完</td><td>BEQ, BEN, BIT,BCAS,...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>SXY</strong></td><td>部・章・節などを入力補完</td><td>SPA, SCH, SSE, SSS, SS2,...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>@a</strong>など</td><td>ギリシャ文字の入力補完</td><td>@a, @b,@g,...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>@(</strong>など</td><td>数学記号の入力補完</td><td>括弧類，分数，...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>FXY</strong></td><td>フォント設定</td><td>FRM, FTT, FIT, FBF,...</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>MXY</strong></td><td>数学フォント設定</td><td>MRM, MBF, MBB,...</td></tr>
 </tbody>
 </table>
 
-記述済みのテキストをコマンドで囲むときは，テキストを選択してから Ctrl+L, Ctrl+W（Cmd+L, Cmd+W）と連続入力すると，囲みコマンドの候補がポップアップします。複数選択に対しても有効です。
+記述済みのテキストをコマンドで囲むときは，テキストを選択してから Ctrl+L, Ctrl+W (Cmd+L, Cmd+W) と連続入力すると，囲みコマンドの候補がポップアップします。複数選択に対しても有効です。
 
 環境で囲むときは，Ctrl+shift+P (Cmd+shift+P)でコマンドパレットを呼び出してから LaTeX Workshop: Surround selection with \begin{}...\end{} を選択します。（コマンドパレットに latex sur と入力すれば見つけられます。）
 
-テキストを選択した状態で$, (, {, \[, ', ''を入力すると，これらの文字で選択テキストを囲むことができます。
+テキストを選択した状態で「$」「(」「{」「\[」「'」「｀」「"」を入力すると，これらの文字（と対応する閉じ括弧）で選択テキストを囲みます。
+
+#### スニペットを自作する（VS Code の機能） {#ba588a9e}
+
+- [https://code.visualstudio.com/docs/editor/userdefinedsnippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+
+言語ごとのスニペット，またはグローバルなスニペット（またはワークスペースやフォルダ専用のスニペット）を作成できます。
+
+メニューの Code -基本設定- User Snippets から適切なファイルを選択します。（LaTeX 専用とするならば，latex.json を選択します。）{}内に以下の例のように記述します。
+
+```
+"log": {
+"prefix": ["\\log", "@log"],
+"body": [
+	"\\log_{${1:e}}{${2}}"
+],
+"description": "対数を入力"
+},
+"naki": {
+"prefix": "nakigao",
+"body": [
+	"${1|(ToT),(;_;)|}"
+],
+"description": "泣き顔"
+}
+```
+
+<table>
+<tbody>
+<tr><td style="background-color:#f0f0f0">スニペット名</td><td>他から参照するときにも用いられる</td></tr>
+<tr><td style="background-color:#f0f0f0">prefix</td><td>呼び出しトリガー（[...]内にコンマ区切りで複数のエイリアスも登録可能）</td></tr>
+<tr><td style="background-color:#f0f0f0">body</td><td>展開される本体。[...]内にコンマ区切りの配列で記述すると改行される</td></tr>
+<tr><td style="background-color:#f0f0f0">description</td><td>スニペット呼び出し時のポップアップに表示される説明</td></tr>
+</tbody>
+</table>
+
+body 内は空白もそのまま出力されます。また，タブでカーソルを移動させるタブストップを設定できます。
+
+<table><tbody>
+<tr><td>${1},${2};</td><td>${1}，${2}とタブを押すと順に移動する</td></tr>
+<tr><td>${1:text}</td><td>タブストップにデフォルト値を設定（タブ移動時に選択される）</td></tr>
+<tr><td>${1|one, two|}</td><td>パイプ文字（|）で囲った中に複数の選択肢をコンマ区切りで設定</td></tr>
+<tr><td>$0</td><td>カーソルの最終移動場所の指定</td></tr>
+<tr><td>$変数</td><td>$TM_SELECTED_TEXTで選択テキスト，$CLIPBOARDでクリップボードの内容など</td></tr>
+</tbody></table>
+
+$，}，\は"\\"によってエスケープします。選択肢要素中はコンマ（,）とパイプ文字（|）も"\\"でエスケープします。
 
 #### 自作のショートカットキーでテキストを入力する／囲む（VS Code の機能） {#a67589f0}
 
@@ -291,18 +341,27 @@ keybindings.json を編集することで，自作のショートカットキー
 特殊文字は"\\"でエスケープします。
 
 ```
-{
+{//テキストの入力
    "key": "cmd+shift+h",
-   "command": "type",//テキストの入力
+   "command": "type",
    "args":{"text": "\"Hello world!\""}
    "when": "editorTextFocus"
 },
-{
+{//スニペットをショートカットキーで入力
    "key": "cmd+shift+a",
-   "command": "editor.action.insertSnippet",//スニペットの入力
+   "command": "editor.action.insertSnippet",
    "when": "editorTextFocus && editorLangId == latex",
    "args": {
-       "snippet": "\\endnote{${TM_SELECTED_TEXT}}"//選択部分を囲む
+       "snippet": "\\endnote{$TM_SELECTED_TEXT}"//選択部分を囲む
+   }
+},
+{//設定済みのスニペットを呼び出して入力
+   "key": "cmd+shift+n",
+   "command": "editor.action.insertSnippet",
+   "when": "editorTextFocus",
+   "args": {
+       "langId": "latex",//latex.json 中の snippet を呼び出す
+       "name": "naki"
    }
 }
 ```
@@ -363,11 +422,11 @@ settings.json の {} の中で latex-workshop.view.pdf.viewer を設定します
 
 <table>
 <tbody>
-<tr><td><strong>設定</strong></td><td>説明</td></tr>
-<tr><td>none</td><td>既定の PDF ビューワーを設定しない</td></tr>
-<tr><td>tab</td><td>PDF をタブ表示する</td></tr>
-<tr><td>browser</td><td>既定の web ブラウザで開く</td></tr>
-<tr><td>external</td><td>外部ビューワーで開く</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>設定</strong></td><td>説明</td></tr>
+<tr><td style="background-color:#f0f0f0">none</td><td>既定の PDF ビューワーを設定しない</td></tr>
+<tr><td style="background-color:#f0f0f0">tab</td><td>PDF をタブ表示する</td></tr>
+<tr><td style="background-color:#f0f0f0">browser</td><td>既定の web ブラウザで開く</td></tr>
+<tr><td style="background-color:#f0f0f0">external</td><td>外部ビューワーで開く</td></tr>
 </tbody>
 </table>
 
@@ -428,10 +487,10 @@ settings.json に設定を記述することでVS Code や LaTeX Workshop の動
 
 <table>
 <tbody>
-<tr><td><strong>設定</strong></td><td>説明</td></tr>
-<tr><td>never</td><td>自動削除機能を利用しない</td></tr>
-<tr><td>onFailed</td><td>コンパイルに失敗したときにのみ上記の拡張子のファイルを自動削除</td></tr>
-<tr><td>onBuilt</td><td>コンパイルのたびに上記の拡張子のファイルを自動削除</td></tr>
+<tr><td style="background-color:#f0f0f0"><strong>設定</strong></td><td>説明</td></tr>
+<tr><td style="background-color:#f0f0f0">never</td><td>自動削除機能を利用しない</td></tr>
+<tr><td style="background-color:#f0f0f0">onFailed</td><td>コンパイルに失敗したときにのみ上記の拡張子のファイルを自動削除</td></tr>
+<tr><td style="background-color:#f0f0f0">onBuilt</td><td>コンパイルのたびに上記の拡張子のファイルを自動削除</td></tr>
 </tbody>
 </table>
 
