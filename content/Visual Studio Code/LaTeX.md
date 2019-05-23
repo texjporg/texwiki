@@ -32,6 +32,8 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
 - [https://github.com/James-Yu/LaTeX-Workshop](https://github.com/James-Yu/LaTeX-Workshop)
     - [https://github.com/James-Yu/LaTeX-Workshop/commits/master](https://github.com/James-Yu/LaTeX-Workshop/commits/master)
     - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
+- 公式マニュアル
+    - [https://github.com/James-Yu/LaTeX-Workshop/wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
 - [MyTeXpert:Visual Studio Code/LaTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX)
 - [vs code で latex](https://kandai.hatenadiary.jp/entry/2019/02/21/091432)
 - [VSCode で LaTeX を書く (2018)](https://qiita.com/popunbom/items/7d02fc75ad23b735d28c)
@@ -516,4 +518,12 @@ true/false で設定が切り替わります。（この設定値には引用符
 
 ```
 "editor.wordSeparators": "./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}`~?．。，、（）「」［］｛｝《》てにをはがのともへでや",
+```
+
+#### 日本語文書特有の LaTeX Font Warning を警告表示に含めないようにする {#n019e1af}
+
+和文フォントでイタリック体や斜体などが指定されていないときに出る "LaTeX Font Warning: Font shape \`JY1/mc/m/it' undefined" などの[警告](</よくある質問/#bf583189>)が「問題(Problems)パネル」に表示されないよう設定できます。実際のログは「出力(Output)パネル」から確認できます。
+
+```
+"latex-workshop.message.latexlog.exclude":["(Font shape `(JY1|JT1|JY2|JT2)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"]
 ```
