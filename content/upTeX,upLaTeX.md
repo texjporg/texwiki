@@ -87,6 +87,7 @@ upTeX 1.25 で修正されました．
 
 - [upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値 by doraTeX · Pull Request #79 · texjporg/tex-jp-build · GitHub](https://github.com/texjporg/tex-jp-build/pull/79)
 - [全角英数・半角カナの \kcatcode のデフォルト値 · texjporg/uptex-base · GitHub](https://github.com/texjporg/uptex-base/issues/3)
+- tlpkgでupdateするとき、\*\*\*\*を除くすべてをupdateするというオプションがほしい ([forum:2638](https://okumuralab.org/tex/mod/forum/discuss.php?d=2638))
 
 #### upbibtex (upBibTeX 0.99d-j0.33-u1.23) が特定の方法で substring を使うとフリーズする {#de52f8a4}
 
