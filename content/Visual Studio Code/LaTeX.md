@@ -17,7 +17,7 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。
 
-左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（好みにより Japanese Language Pack for VS Code を導入することもできます。）
+左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（このとき Japanese Language Pack for VS Code を導入するとメニューや各種設定の説明も日本語化できます。）
 
 ### LaTeX Workshop と CaTeX の併用 {#qb107d73}
 
@@ -25,7 +25,7 @@ CaTeX は LaTeX Workshop と共に使うことを想定し，LaTeX Workshop に�
 
 ## LaTeX Workshop {#n2442e05}
 
-LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
@@ -43,7 +43,7 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
 
 （VS Code の機能）
 
-Ctrl+Comma (Cmd+Comma) で「設定(Settings)」 タブを開きます。「設定の検索」フィールドに適切な用語を入力して必要な設定を絞り込むことができます。「settings.json で編集」をクリックすると「ユーザー設定(settings.json)」が開きます。初回は{}しか記述されていない画面が開きますので，その{}内に各種設定を書きこみます。
+Ctrl+Comma (Cmd+Comma) で「設定(Settings)」 タブを開きます。「設定の検索」フィールドに適切な用語を入力して必要な設定を絞り込むことができます。代表的な設定はこの画面上で設定できますが，詳細な設定は settings.json に直接書きこみます。「settings.json で編集」をクリックすると「ユーザー設定(settings.json)」が開きます。初回は{}しか記述されていない画面が開きますので，その{}内に各種設定を書きこみます。
 
 「ユーザー設定(settings.json)」は「既定の設定(defaultSettings.json)」に優先します。「既定の設定」を確認するには，Ctrl+shift+P (Cmd+shift+P)から default を検索すると見つかります。
 
@@ -108,15 +108,14 @@ recipe 内の tools で指定されている tool は latex-workshop.latex.tools
 ]
 ```
 
-どのような recipe があるかは .tex ファイルを開いているときに示されるアクティビティバーのTeXアイコンからサイドバーを開いて確認できます。複数の recipe が設定されていればそれを選択することでそれぞれの設定でのコンパイルが可能になります。（複数の recipe が用意されているとき，デフォルトでは最初の recipe が実行されます。）
+どのような recipe があるかは .tex ファイルを開いているときに画面左端のアクティビティバーに示される TeX アイコンからサイドバーを開いて確認できます。複数の recipe が設定されていればそれを選択することでそれぞれの設定でのコンパイルが可能になります。（複数の recipe が用意されているとき，デフォルトでは最初の recipe が実行されます。）
 
 #### recipe/tool を日本語文書用に設定 {#c465cb18}
 
-Ctrl+Comma (Cmd+Comma) で Settings タブを開きます。
-「設定の検索」で「Tools」を入力して「Latex-workshop &gt; Latex: Tools」を探し「settings.json で編集」をクリックします。
-左側に既定の設定（defaultSettings.json），右側にユーザー設定 (settings.json) が開かれます。
+Ctrl+Comma (Cmd+Comma) で設定(Settings) タブを開きます。
+「設定の検索」で「Tools」と入力して「Latex-workshop &gt; Latex: Tools」を探し，「settings.json で編集」をクリックするとユーザー設定 (settings.json) が開かれます。
 
-Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
 
 ```
 "latex-workshop.latex.tools": [
@@ -142,7 +141,7 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
 ]
 ```
 
-Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
 
 ```
 "latex-workshop.latex.tools": [
@@ -166,7 +165,7 @@ Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されてい
 ]
 ```
 
-macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
 
 ```
 "latex-workshop.latex.tools": [
@@ -192,7 +191,7 @@ macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示され�
 ]
 ```
 
-macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存して既定のユーザー設定を上書きします。
+macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
 
 ```
 "latex-workshop.latex.tools": [
@@ -252,19 +251,51 @@ TeX Live に含まれている [ptex2pdf](/ptex2pdf/) を用いる場合は late
 
 ファイルの内容を変更して Ctrl+S (Cmd+S) で保存するとビルドコマンドが実行されます。ファイルの内容を変更していない状態でビルドコマンドを実行したい場合は Ctrl+Alt+B (Cmd+opt+B) でビルドコマンドを実行します。
 
+コンパイル時のエラーや警告は「問題(Problems)パネル」にまとめられて表示されます。ログは「出力(Output)パネル」から確認できます。
+
 Ctrl+Alt+V (Cmd+opt+V) あるいは右上の PDF ファイルのアイコンを左クリックで指定した PDF ビューアで PDF ファイルを表示します。
 タブで開く場合は右側に新しいタブで PDF ファイルを表示します。
 ブラウザで開く場合は既定のブラウザで PDF ファイルを表示します。
+外部ビューワーで開く機能は，推奨されていません。
 
 synctex を有効にしている場合，tex ファイル上で Ctrl+Alt+J (Cmd+opt+J) すると forward search，PDF ファイル上で Ctrl+左クリック (Cmd+クリック)すると inverse search を行います。タブで開かれた PDF は synctex に対応しています。
 
-Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティバーの TeX アイコンをクリックで以下のリストがサイドバーに表示されます。リストの項目から Action を選択すると実行されます。
+Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティバーの TeX アイコンをクリックで以下のコマンドのリストがサイドバーに表示されます。リストの項目からコマンド(Command)を選択すると実行されます。
 
 > Build LaTeX project<br>
-> View LaTeX PDF<br>
-> View Log messages<br>
-> Navigate, select, and exit<br>
-> Miscellaneous<br>
+
+> Clean up auxiliary files<br>
+> Terminate current compilation<br>
+> Recipe: latexmk<br>
+> Recipe: pdflatex ➞ bibtex ➞ pdflatex × 2<br>
+
+View LaTeX PDF<br>
+
+> View in VSCode tab<br>
+> View in web browser<br>
+> View in external browser<br>
+> Set default viewer<br>
+> Refresh all viewers<br>
+
+View Log messages<br>
+
+> View LaTeX Workshop extension log<br>
+> View LaTeX compiler log<br>
+
+Navigate, select, and edit<br>
+
+> SyncTeX from cursor<br>
+> Navigate to matching begin/end<br>
+> Select current environment name<br>
+> Close current environment<br>
+> Surround with begin{}...\end{}<br>
+> Insert %!TeX root magic comment<br>
+
+Miscellaneous<br>
+
+> Open citation browser<br>
+> Count words in LaTeX project<br>
+> Reveal output folder in OS<br>
 
 #### 入力支援 {#c2c9aa18}
 
@@ -296,7 +327,7 @@ Ctrl+Alt+X (Cmd+opt+XまたはCmd+B) あるいは左側のアクティビティ�
 
 言語ごとのスニペット，またはグローバルなスニペット（またはワークスペースやフォルダ専用のスニペット）を作成できます。
 
-メニューの Code -基本設定- User Snippets から適切なファイルを選択します。（LaTeX 専用とするならば，latex.json を選択します。）{}内に以下の例のように記述します。
+メニューの Code−基本設定(Preferences)−ユーザースニペット(User Snippets) から適切なファイルを選択します。（LaTeX 専用とするならば，latex.json を選択します。）{}内に以下の例のように記述します。
 
 ```
 "log": {
@@ -334,11 +365,11 @@ body 内は空白もそのまま出力されます。また，タブでカーソ
 <tr><td>$変数</td><td>$TM_SELECTED_TEXTで選択テキスト，$CLIPBOARDでクリップボードの内容など</td></tr>
 </tbody></table>
 
-$，}，\は"\\"によってエスケープします。選択肢要素中はコンマ（,）とパイプ文字（|）も"\\"でエスケープします。
+「$」「}」「\」は"\\"によってエスケープします。選択肢要素中はコンマ「,」とパイプ文字「|」も"\\"でエスケープします。
 
 #### 自作のショートカットキーでテキストを入力する／囲む（VS Code の機能） {#a67589f0}
 
-keybindings.json を編集することで，自作のショートカットキーで特定の動作をさせることができます。（キーボードショートカット (Keyboard Shortcuts)の設定を開いた後で上部のタブの右側にある{}をクリックすると keybindings.json が開きます。）
+keybindings.json を編集することで，自作のショートカットキーで特定の動作をさせることができます。（Code−基本設定(Preferences)−キーボードショートカット (Keyboard Shortcuts)の設定を開いた後で上部のタブの右側にある{}をクリックすると keybindings.json が開きます。）
 
 特殊文字は"\\"でエスケープします。
 
@@ -416,7 +447,8 @@ Ctrl+S(Cmd+S) で保存あるいは Ctrl+Alt+B(Cmd+opt+B) でビルドコマン�
 ### PDF 表示の設定 {#t6002d57}
 
 PDF を表示させる際に「その都度決定する」「VS Code のタブで開く」「既定のブラウザで開く」「指定された外部ビューワーで開く」ことができます。
-settings.json の {} の中で latex-workshop.view.pdf.viewer を設定します。
+
+Ctrl+Comma (Cmd+Comma) で「設定(Settings)」 タブを開き，「設定の検索」で pdf と打って絞り込むと PDF に関わる各種設定を一覧できます。Latex-workshop > View > Pdf: Viewer で PDF 表示のビューワーを設定します。（自動的に settings.json 中に "latex-workshop.view.pdf.viewer" の設定として書きこまれます。）
 
 ```
 "latex-workshop.view.pdf.viewer": "設定"
@@ -471,11 +503,11 @@ SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「�
 
 ### 便利な設定 {#o2d1e90d}
 
-settings.json に設定を記述することでVS Code や LaTeX Workshop の動作を変更できます。
+settings.json に設定を記述することでVS Code や LaTeX Workshop の動作を変更できます。Ctrl+Comma (Cmd+Comma) で「設定(Settings)」 タブを開き，「設定の検索」で適切なキーワードで絞り込んでビジュアルに設定することもできます。
 
 #### コンパイル時に生成されたファイルを自動削除 {#he95e080}
 
-自動削除するファイルの拡張子を設定し，コンパイル後の自動削除の設定を記述します。（synctex を使いたい場合は，一覧から"\*.synctex.gz"は外しておきます。）
+自動削除するファイルの拡張子を設定し，コンパイル後の自動削除の設定を記述します。常に自動削除する設定とした場合は，目次作成や synctex に必要なファイルが削除されないよう，一覧から".toc"や"\*.synctex.gz"は外しておく必要があります。
 
 ```
 "latex-workshop.latex.clean.fileTypes": [
@@ -527,3 +559,20 @@ true/false で設定が切り替わります。（この設定値には引用符
 ```
 "latex-workshop.message.latexlog.exclude":["(Font shape `(JY1|JT1|JY2|JT2)(/.*)(sl|it|sc)'.*|Some font shapes were not available.*)"]
 ```
+
+### 既知の不具合 {#n5df1b94}
+
+#### OS X でかな漢字変換の途中で backspace を押すと意図しない制御文字が挿入される {#r2fc8a4f}
+
+VS Code の不具合。対応策として，その制御文字を自動的に取り除くため拡張機能の Remove backspace control character を導入します。
+
+- [Visual Studio Code の日本語問題まとめ](https://qiita.com/EbXpJ6bp/items/e6a0ed52bdcb60bfd145)
+
+#### 以下の extension とは共存できません {#e01a16d3}
+
+LaTeX Workshop と同時に使用すると CPU 負荷が高くなり，大きなファイルで作業するときに Enter キーへの反応が遅くなります。
+
+- [https://github.com/James-Yu/LaTeX-Workshop/wiki/FAQ](https://github.com/James-Yu/LaTeX-Workshop/wiki/FAQ)
+    - Spell Right
+    - Brackets Pair Colorizer 2
+    - Prettify Symbols Mode
