@@ -144,6 +144,10 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+TeX Live 2019 対応の事例です．
+
+- [とりあえず TeX を使いたい、もしくは使わざるを得なくなった人のために](http://www.fugenji.org/~thomas/tori-tex/)
+
 TeX Live 2018 対応の事例です．
 
 - [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
