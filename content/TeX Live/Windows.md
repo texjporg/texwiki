@@ -47,6 +47,45 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 
 以降は TeX Live 2015 の例ですが，TeX Live 2016, TeX Live 2017, TeX Live 2018 でもほとんど変わりません．TeX Live 2019 では Tcl/Tk による GUI インストーラに変更されたため以下の例とは異なります。
 
+「Windows によって PC が保護されました」と表示される場合は「<ins>詳細情報</ins>」をクリックして \[実行\] ボタンをクリックしてください。
+
+> <ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins>
+
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:26px">\[&nbsp;&nbsp;&#x1f5d9;&nbsp;&nbsp;\]</span><br>
+> <span style="font-size:26px">Windows によって PC が保護されまし</span><br>
+>
+> <span style="font-size:26px">た</span><br>
+>
+> <br>
+>
+> Windows Defender SmartScreen は認識されないアプリの起動を停止しま<br>
+> した。このアプリを実行すると、PC に問題が起こる可能性があります。<br>
+> <ins>詳細情報</ins><br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> <br>
+>
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\[&nbsp;&nbsp;実行しない&nbsp;&nbsp;\]&nbsp;&nbsp;
+
+<ins>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ins><br>
+
 <!-- 誰か更新してー -->
 
 [<img src="/attach/TeX Live/Windows/2015_inst1.png" alt="" width="50%">](</attach/TeX Live/Windows/2015_inst1.png>)
@@ -82,9 +121,9 @@ Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](h
 
 - 裏にこっそり残っていたこの画面を \[Close\] を押して閉じたらインストールは完了です．
 
-#### 詳細な設定を行う場合 {#l8a32d32}
+#### 高度な設定を行う場合 {#l8a32d32}
 
-install-tl.zip を解凍して現れる install-tl-advanced.bat をダブルクリック（または右クリックから「管理者として実行(A)」）するとインストールに関する詳しい設定を行うことができます．
+TeX Live インストーラの \[高度な設定\] ボタンをクリックします．
 
 #### テキストモードでのインストール {#f2f98067}
 
@@ -146,6 +185,7 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 TeX Live 2019 対応の事例です．
 
+- [WindowsにLaTeX環境を構築する方法 - つるおの気の向くままブログ](https://www.tsuruo5388.jp/entry/tech/latex-win-setting)
 - [とりあえず TeX を使いたい、もしくは使わざるを得なくなった人のために](http://www.fugenji.org/~thomas/tori-tex/)
 
 TeX Live 2018 対応の事例です．
