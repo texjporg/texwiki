@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-お使いの OS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 のバイナリの動作環境](#binary)をお読みください。
+お使いの macOS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2019 のバイナリの動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する（最も多くの Mac で動作する方法です）
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -42,19 +42,19 @@ macOS (OS X El Capitan 以降) に付属のヒラギノフォントを使用し�
 
 macOS 用として配布される TeX Live 2019 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
-- x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている OS のみをサポートします。
-- x86_64-darwinlegacy バイナリ：それ以前のレガシーな OS をサポートします[^1]。
+- x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。
+- x86_64-darwinlegacy バイナリ：それ以前のレガシーな macOS をサポートします[^1]。
 
 お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
-具体的には，以下の表を参照してください（&#x2714; マークが OS と対応するバイナリを示す）。
-なお，MacTeX / BasicTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな OS では使用できません。
+具体的には，以下の表を参照してください（&#x2714; マークが macOS と対応するバイナリを示す）。
+なお，MacTeX / BasicTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな macOS では使用できません。
 
-<div style="text-align:center">TeX Live 2019 が動作する OS と対応するバイナリ</div>
+<div style="text-align:center">TeX Live 2019 が動作する macOS と対応するバイナリ</div>
 
-|  | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
-|---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+|  | macOS 10.15 Catalina | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
+|---|---|---|---|---|---|---|---|---|---|---|
+| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
+| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -68,7 +68,7 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されており，レガシーな  OS にはインストールできません。
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されており，レガシーな macOS にはインストールできません。
 一方，TeX Live 公式のインストーラを使えば，x86_64-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
@@ -352,4 +352,4 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
 
-[^1]: TeX Live 2016 までは universal-darwin バイナリが存在しましたが，TeX Live 2017 で削除されて i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました ([r43871](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871))。TeX Live 2018 では i386-darwin バイナリと powerpc-darwin バイナリも削除されました ([r47075](http://www.tug.org/svn/texlive?view=revision&revision=47075))。
+[^1]: TeX Live 2016 までは universal-darwin バイナリが存在しましたが，TeX Live 2017 で削除されて i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました ([r43871](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871))。TeX Live 2018 で i386-darwin バイナリと powerpc-darwin バイナリも削除されました ([r47075](http://www.tug.org/svn/texlive?view=revision&revision=47075))。
