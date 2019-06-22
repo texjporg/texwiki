@@ -131,6 +131,7 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
+- [【環境構築】MacでLaTeX2019が使えるようになるまで](https://www.tsuruo5388.jp/tech-latex-mac-setting/)
 - [2019年のコンピューターノウハウ (Mac) 4 MacTeX 2019](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2019/node4.html)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
