@@ -202,6 +202,8 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
+- [TeX Live インストールがウイルスバスターに阻まれる件](https://twitter.com/aminophen/status/1143491330116476928)
+- [TeX Live 2019 インストール失敗](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2659)
 - [Texliveのインストールに失敗する](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387)
     （[Re: Texliveのインストールに失敗する#p14036](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14036),
     [Re: Texliveのインストールに失敗する#p14035](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14035)）
