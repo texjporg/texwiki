@@ -49,12 +49,23 @@ macOS 用として配布される TeX Live 2019 のバイナリは，x86_64-darw
 具体的には，以下の表を参照してください（&#x2714; マークが macOS と対応するバイナリを示す）。
 なお，MacTeX / BasicTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな macOS では使用できません。
 
-<div style="text-align:center">TeX Live 2019 が動作する macOS と対応するバイナリ</div>
+<div style="text-align:left">TeX Live 2019 が動作する macOS と対応するバイナリ</div>
 
-|  | macOS 10.15 Catalina | macOS 10.14 Mojave | macOS 10.13 High Sierra  | macOS 10.12 Sierra | OS X 10.11 El Capitan | OS X 10.10 Yosemite | OS X 10.9 Mavericks | OS X 10.8 Mountain Lion | Mac OS X 10.7 Lion | Mac OS X 10.6 Snow Leopard |
-|---|---|---|---|---|---|---|---|---|---|---|
-| x86_64-darwin | &#x2714; | &#x2714; | &#x2714; | &#x2714; |  |  |  |  |  |  |
-| x86_64-darwinlegacy |  |  |  |  | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; | &#x2714; |
+<table>
+<tbody>
+<tr><td style="background-color:#f0f0f0"></td><td>x86_64-darwin</td><td>x86_64-darwinlegacy</td></tr>
+<tr><td style="background-color:#f0f0f0">macOS 10.15 Catalina</td><td>&#x2714;</td><td></td></tr>
+<tr><td style="background-color:#f0f0f0">macOS 10.14 Mojave</td><td>&#x2714;</td><td></td></tr>
+<tr><td style="background-color:#f0f0f0">macOS 10.13 High Sierra</td><td>&#x2714;</td><td></td></tr>
+<tr><td style="background-color:#f0f0f0">macOS 10.12 Sierra</td><td>&#x2714;</td><td></td></tr>
+<tr><td style="background-color:#f0f0f0">OS X 10.11 El Capitan</td><td></td><td>&#x2714;</td></tr>
+<tr><td style="background-color:#f0f0f0">OS X 10.10 Yosemite</td><td></td><td>&#x2714;</td></tr>
+<tr><td style="background-color:#f0f0f0">OS X 10.9 Mavericks</td><td></td><td>&#x2714;</td></tr>
+<tr><td style="background-color:#f0f0f0">OS X 10.8 Mountain Lion</td><td></td><td>&#x2714;</td></tr>
+<tr><td style="background-color:#f0f0f0">Mac OS X 10.7 Lion</td><td></td><td>&#x2714;</td></tr>
+<tr><td style="background-color:#f0f0f0">Mac OS X 10.6 Snow Leopard</td><td></td><td>&#x2714;</td></tr>
+</tbody>
+</table>
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
