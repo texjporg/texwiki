@@ -248,8 +248,10 @@ LyX のインストーラーを右クリックします。
 >
 > <br>
 >
-> 　　インストール コンポーネントを選　　<span style="color:#888888;background-color:White;">☑</span> <strong>LyX</strong><br> <!-- 　　択：　　　　　　　　　　　　　　　　　　　&color(Green){☑}; ファイル関連付け&br; -->
-> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐</span> ファイル関連付け<br>
+> <!-- 　　インストール コンポーネントを選　　&color(#888888,White){☑}; ''LyX''&br; -->
+>
+> 　　インストール コンポーネントを選<br>
+> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> ファイル関連付け<br> <!-- 　　択：　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐}; ファイル関連付け&br; -->
 > 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> デスクトップ・アイコン<br>
 > 　　　　　　　　　　　　　　　　　　　　 \[+\]　<span style="color:#EEEEEE;background-color:#888888;">☑</span> 辞書<br>
 > 　　　　　　　　　　　　　　　　　　　　 \[+\]　☐ シソーラス<br>
