@@ -13,10 +13,10 @@ pukiwiki: "iOS"
 
 ***
 
-<!-- *TeX Live [#w97b9c35] -->
-<!--  -->
-<!-- -[[TeX Live for iPhone:http://gamma-level.com/iphoneos/ports/texlive]] -->
-<!-- -[[How TeX made it to the iOS App Store - running on DOS, inside an emulator | Hacker News:http://news.ycombinator.com/item?id=4438047]] -->
+## TeX Live {#w97b9c35}
+
+- [lib-tex](https://github.com/holzschu/lib-tex) pdftex and luatex as a library. Developped for iOS, but should work on all systems.
+    - [Tex-live 2019 binaries](https://github.com/holzschu/lib-tex/releases)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
