@@ -56,6 +56,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
     - [BSD/OpenBSD](/BSD/OpenBSD/#texlive)
     - [BSD/NetBSD](/BSD/NetBSD/#texlive)
 - [Android](/Android/#texlive)
+- [iOS](/iOS/#texlive)
 
 ### TeX Live のサブセット {#p06f63c2}
 
