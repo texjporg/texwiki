@@ -25,7 +25,7 @@ CaTeX は LaTeX Workshop と共に使うことを想定し，LaTeX Workshop に�
 
 ## LaTeX Workshop {#n2442e05}
 
-LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。文書全体をコンパイルすることなく tikzpicture 環境中の図表の単独プレビューもできます。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
