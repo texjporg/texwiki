@@ -69,23 +69,28 @@ Windows, macOS, Linux
 - [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 - [Windows で evince](http://www.yamamo10.jp/yamamoto/wordpress/?p=842)
 
-Windows 版 Evince は MSYS2 の pacman でインストールできます．フォントを埋め込まなくても日本語を表示することができます．
+Windows 版 Evince は MSYS2 の pacman でインストールできます．
 
 64-bit Evince をインストールする場合は
 
 ```
-pacman -S mingw-w64-x86_64-evince mingw-w64-x86_64-gstreamer mingw-w64-x86_64-gst-plugins-base
+pacman -S mingw-w64-x86_64-evince
 ```
 
 32-bit Evince をインストールする場合は
 
 ```
-pacman -S mingw-w64-i686-evince mingw-w64-i686-gstreamer mingw-w64-i686-gst-plugins-base
+pacman -S mingw-w64-i686-evince
 ```
 
 を実行します．
 
-MSYS2 からインストールできる Evince よりも若干古いバージョンになりますが [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
+Evince 3.32.0 で PDF ファイルを開こうとすると
+
+> ドキュメント“file:///C:/path/to/foo.pdf”を開けません。<br>
+> ファイルタイプ (unknown) (application/octet-stream) はサポートしていません<br>
+
+といったメッセージが表示されて PDF ファイルが表示できない場合は [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
 
 ### macOS {#y8d21820}
 
