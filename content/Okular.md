@@ -45,7 +45,7 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-[https://binary-factory.kde.org/job/Okular_Nightly_win32/](https://binary-factory.kde.org/job/Okular_Nightly_win32/) から Okular のインストーラーをダウンロードしてインストールできます．
+[https://binary-factory.kde.org/job/Okular_Nightly_win64/](https://binary-factory.kde.org/job/Okular_Nightly_win64/) から Okular のインストーラーをダウンロードしてインストールできます．
 
 Chocolatey でインストールすることもできます．
 Chocolatey を使用する場合は [https://chocolatey.org/packages/okular](https://chocolatey.org/packages/okular) を参照してください．
