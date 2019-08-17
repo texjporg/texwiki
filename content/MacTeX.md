@@ -135,10 +135,10 @@ $ sudo tlmgr paper a4
 - [2019年のコンピューターノウハウ (Mac) 4 MacTeX 2019](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2019/node4.html)
 - [MacTeX-2019をインストールするときの説明書：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2019-05-08)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
-- [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
+- [TeX/Install - 松浦高志のWikiページ](https://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
+- [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
-- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
 - [https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
 
 <!-- MacTeX-2016 の場合 -->
@@ -167,8 +167,9 @@ $ sudo tlmgr paper a4
 ### アンインストール {#uninstalling}
 
 - [Uninstalling - MacTeX - TeX Users Group](http://www.tug.org/mactex/uninstalling.html)
+- [MacTeX で、使用しないバージョンの TeX Live を削除してみる。](https://ez-net.jp/article/29/CEWazhdF/8ITDHJPSLPq_/)
 - [Homebrewを使ったmactexのインストール・アンインストール](https://oversleptabit.com/archives/4701)
-- [MacTexのアンインストール](http://ikapblg.blog.fc2.com/blog-entry-141.html)
+- [MacTexのアンインストール](https://blog.ikappio.com/how-to-uninstall-mactex/)
 
 ### リリース情報 {#c5157a75}
 
