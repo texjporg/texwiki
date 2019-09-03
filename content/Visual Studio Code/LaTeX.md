@@ -23,9 +23,13 @@ Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(exten
 
 CaTeX は LaTeX Workshop と共に使うことを想定し，LaTeX Workshop にない機能を追加します。ギリシア文字補完，イメージ補完，フォント補完の機能をもつほか，Ctrl-c s と入力することで「セクション」「環境」「\maketitle」「{\Large }」のタイプの補完が可能となります。また，CaTeX では自作コマンドの補完をその場で辞書登録する機能も搭載しています。一方，LaTeX Workshop の数式の「@補完」とかぶるところもあり，併用すると「@補完」はやや使いにくくなります。
 
+### LaTeX Workshop と LaTeX Utilities の併用 {#xf262f5b}
+
+LaTeX Utilities は LaTeX Workshop への add-on で，LaTeX Workshop にない機能を追加します。文書全体をコンパイルすることなく tikzpicture 環境中の図表を単独プレビューする機能はこの add-on の機能として分離しました。
+
 ## LaTeX Workshop {#n2442e05}
 
-LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。文書全体をコンパイルすることなく tikzpicture 環境中の図表の単独プレビューもできます。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
