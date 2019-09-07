@@ -17,7 +17,7 @@ pukiwiki: "gedit"
 
 ## gedit とは {#s7f61b9d}
 
-gedit は GNOME 公式のテキストエディタです．
+gedit は GNOME プロジェクトのテキストエディタです．
 
 - [Apps/Gedit - GNOME Wiki!](https://wiki.gnome.org/Apps/Gedit)
 
@@ -68,7 +68,7 @@ gedit is released under the GNU General Public License (GPL).
 
 ### 動作環境 {#kd6ded02}
 
-Windows, macOS, Linux
+Linux, Windows, macOS
 
 ### License {#bf49560f}
 
@@ -86,11 +86,6 @@ Windows, macOS, Linux
 - [xed](https://github.com/linuxmint/xed)
 
 ## プラグイン {#c01f900c}
-
-- [geditのプラグイン : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/gedit%E3%81%AE%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3)
-- [LaTeX入門 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/LaTeX%E5%85%A5%E9%96%80)
-
-を参照．
 
 ### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
 
@@ -146,17 +141,20 @@ LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX �
 
 forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
-### [gedit-plugins (SyncTeX)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex) {#uc9a113c}
+### gedit-plugins (SyncTeX) {#uc9a113c}
 
-- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex)
+<!-- -https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex -->
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex)
+- [https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex](https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex)
     <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
 
 - [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
+- [https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/)
 - [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
 - [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
 - [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
-SyncTeX プラグインは gedit-plugins に収録されています．
+SyncTeX プラグインは gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除されました](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)．
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
@@ -169,7 +167,7 @@ inverse search は Evince で Ctrl + 左クリックを使用すると gedit の
 エラーメッセージが表示される場合は
 /usr/lib/gedit/plugins/synctex/synctex.py または
 /usr/lib64/gedit/plugins/synctex/synctex.py を
-[最新版の synctex.py](https://gitlab.gnome.org/GNOME/gedit-plugins/blob/master/plugins/synctex/synctex/synctex.py) で上書きすれば
+[最新版の synctex.py](https://salsa.debian.org/gnome-team/gedit-plugins/blob/debian/master/plugins/synctex/synctex/synctex.py) で上書きすれば
 forward and inverse search が動作するかもしれません．
 
 ### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment) {#q8313fab}
