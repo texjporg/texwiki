@@ -23,7 +23,7 @@ gedit は GNOME デスクトップ用に作られた小型軽量のテキスト�
 
 ***
 
-<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　　<span style="color:Black;">ファイル(</ins>F<ins>)</span>　 <span style="color:Black;">編集(</ins>E<ins>)</span>　 <span style="color:Black;">表示(</ins>V<ins>)</span>　 <span style="color:Black;">検索(</ins>S<ins>)</span>　 <span style="color:Black;">ツール(</ins>T<ins>)</span>　 <span style="color:Black;">ドキュメント(</ins>D<ins>)</span>　 <span style="color:Black;">ヘルプ(</ins>H<ins>)</span>　　　　　　　　　　　　　</ins></span><br>
+<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　<span style="color:Black;">\[開く(O)\]</span> <span style="color:Black;">\[+\]</span>　 　　　　　　　<span style="color:Black;">無題のドキュメント1</span>　　　　　　　　<span style="color:Black;">\[保存(S)\]</span> <span style="color:Black;">\[☰\]</span> <span style="color:Black;">×</span>　</ins></span><br>
 
 ```
 \documentclass[12pt]{scrartcl}
@@ -146,9 +146,10 @@ forward and inverse search が必要な場合は SyncTeX プラグインを使�
 - [https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/)
 - [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
 - [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
+- [https://apps.fedoraproject.org/packages/gedit-plugin-synctex](https://apps.fedoraproject.org/packages/gedit-plugin-synctex)
 - [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
-SyncTeX プラグインは gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除されました](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)．
+SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除されました](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)．
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
