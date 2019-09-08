@@ -17,7 +17,7 @@ pukiwiki: "gedit"
 
 ## gedit とは {#s7f61b9d}
 
-gedit は GNOME プロジェクトのテキストエディタです．
+gedit は GNOME デスクトップ用に作られた小型軽量のテキストエディターです．
 
 - [Apps/Gedit - GNOME Wiki!](https://wiki.gnome.org/Apps/Gedit)
 
@@ -158,11 +158,11 @@ forward search は gedit で \[☰\] &gt; \[ツール\] &gt; \[Forward Search\] 
 
 inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．
 
-エラーメッセージが表示される場合は
-/usr/lib/gedit/plugins/synctex/synctex.py または
-/usr/lib64/gedit/plugins/synctex/synctex.py を
-[削除される前の最新版の synctex.py](https://gitlab.gnome.org/GNOME/gedit-plugins/blob/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex/synctex.py) で上書きすれば
-forward and inverse search が動作するかもしれません．
+<!-- エラーメッセージが表示される場合は -->
+<!-- /usr/lib/gedit/plugins/synctex/synctex.py または -->
+<!-- /usr/lib64/gedit/plugins/synctex/synctex.py を -->
+<!-- [[削除される前の最新版の synctex.py:https://gitlab.gnome.org/GNOME/gedit-plugins/blob/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex/synctex.py]] で上書きすれば -->
+<!-- forward and inverse search が動作するかもしれません． -->
 
 ### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment) {#q8313fab}
 
