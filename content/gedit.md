@@ -30,10 +30,10 @@ gedit は GNOME プロジェクトのテキストエディタです．
 \usepackage{indentfirst}
 \begin{document}
 \section{What is gedit?}
-gedit is the official text editor of the GNOME desktop environment.
+gedit is the GNOME text editor.
 
 While aiming at simplicity and ease of use, gedit is a powerful general purpose text editor.\par
-Currently it features:
+Notable Features
 
 \begin{itemize}
   \item Full support for internationalized text (UTF-8)
@@ -55,12 +55,6 @@ Currently it features:
   \item Configurable fonts and colors
   \item A complete online user manual
 \end{itemize}
-
-gedit features also a flexible plugin system which can be used to dynamically add new advanced features to gedit itself. See the plugins page for more info on the existing plugins.
-
-Go to the screenshots page to see gedit in action!
-
-gedit is released under the GNU General Public License (GPL).
 \end{document}
 ```
 
@@ -167,7 +161,7 @@ inverse search は Evince で Ctrl + 左クリックを使用すると gedit の
 エラーメッセージが表示される場合は
 /usr/lib/gedit/plugins/synctex/synctex.py または
 /usr/lib64/gedit/plugins/synctex/synctex.py を
-[最新版の synctex.py](https://salsa.debian.org/gnome-team/gedit-plugins/blob/debian/master/plugins/synctex/synctex/synctex.py) で上書きすれば
+[削除される前の最新版の synctex.py](https://gitlab.gnome.org/GNOME/gedit-plugins/blob/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex/synctex.py) で上書きすれば
 forward and inverse search が動作するかもしれません．
 
 ### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/codecomment) {#q8313fab}
