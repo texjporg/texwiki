@@ -32,6 +32,7 @@ TUG による公式サイト
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
 
 にも情報があります。
 
