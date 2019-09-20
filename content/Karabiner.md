@@ -7,11 +7,11 @@ pukiwiki: "Karabiner"
 
 # Karabiner
 
-## Karabiner {#oad54c3b}
+## Karabiner-Elements, Karabiner {#oad54c3b}
 
-Karabiner は macOS 用のキーボードカスタマイズツールです．
+Karabiner-Elements と Karabiner は macOS 用のキーボードカスタマイズツールです．
 
-- [Karabiner - Software for macOS](https://pqrs.org/osx/karabiner/)
+- [Karabiner-Elements - Software for macOS](https://pqrs.org/osx/karabiner/)
 
 ### 注意点 {#ofc2fe00}
 
