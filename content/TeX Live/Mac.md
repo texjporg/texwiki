@@ -78,6 +78,7 @@ TeX Live のインストールガイド
 
 - [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
 
 を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されており，レガシーな macOS にはインストールできません。
 一方，TeX Live 公式のインストーラを使えば，x86_64-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
