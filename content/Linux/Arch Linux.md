@@ -173,12 +173,6 @@ sudo pacman -S poppler-data
 sudo pacman -S code
 ```
 
-または
-
-```
-yay -S visual-studio-code-bin
-```
-
 ### [Atom](/Atom/) {#o4f97d9a}
 
 ```
