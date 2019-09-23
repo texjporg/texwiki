@@ -14,13 +14,14 @@ pukiwiki: "Linux/Vine Linux"
 Vine Linux はコンパクトで軽量な国産の日本語 Linux ディストリビューションです．
 
 [VineSeed](http://trac.vinelinux.org/wiki/VineSeed) は Vine Linux の開発版です．
-新しい TeX Live/Vine Linux を使用したい場合は VineSeed がおすすめです．
 
 ***
 
 ***
 
 ### TeX Live {#texlive}
+
+新しい TeX Live を使用したい場合は TeX Live 公式パッケージがおすすめです．
 
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#a6e990be}
 
