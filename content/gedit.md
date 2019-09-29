@@ -111,13 +111,13 @@ gvfs-open "$shortname.pdf"
 
 これらを \[削除\] して
 
-[ptex2pdf](/ptex2pdf/) を使用する場合は
+[ptex2pdf](/ptex2pdf/)-upLaTeX を使用する場合は
 
 ```
 ptex2pdf -u -l -ot '-synctex=1' "$filename"
 ```
 
-Latexmk を使用する場合は
+Latexmk-upLaTeX を使用する場合は
 
 ```
 latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
