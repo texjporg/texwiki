@@ -139,21 +139,20 @@ LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX �
 
 forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
-### gedit-plugins 3.32.2 (SyncTeX) {#uc9a113c}
+### [gedit-plugins (SyncTeX)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex) {#uc9a113c}
 
-<!-- -https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex -->
-- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex)
-- [https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex](https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex)
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex)
+    <!-- -https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex -->
     <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
 
 - [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
-- [https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/) &lt;-- [gedit-plugins 3.34.0-1 では SyncTeX プラグインは収録されていない](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/files/)
-- [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
+- [https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/) &lt;-- gedit-plugins 3.34.0-1 には SyncTeX プラグインは収録されていない
+- [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex) &lt;-- gedit-plugin-synctex (3.34.0-2~build1) には SyncTeX プラグインが収録されている
 - [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
-- [https://apps.fedoraproject.org/packages/gedit-plugin-synctex](https://apps.fedoraproject.org/packages/gedit-plugin-synctex) --&gt; [fedora-obsolete-packages](https://apps.fedoraproject.org/packages/fedora-obsolete-packages) &lt;-- [gedit-plugins 3.33.90 で SyncTeX プラグインが削除された](https://src.fedoraproject.org/rpms/gedit-plugins/pull-request/1)
+- [https://apps.fedoraproject.org/packages/gedit-plugin-synctex](https://apps.fedoraproject.org/packages/gedit-plugin-synctex) --&gt; [fedora-obsolete-packages](https://apps.fedoraproject.org/packages/fedora-obsolete-packages) &lt;-- gedit-plugins 3.33.90 は SyncTeX プラグインが削除されている
 - [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
-SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90 以降には収録されていません．
+SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90, 3.33.92, 3.34.0 には収録されていません．[2019年9月20日に元に戻されました](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/3f135d1719f1e6418fcbf175fdac1b48ca086eb5)．
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
