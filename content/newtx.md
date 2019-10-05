@@ -39,11 +39,11 @@ TeX Live，W32TeX に標準で含まれています．
 
 #### TeX Live {#v5e856b3}
 
-TeX Live 2014 には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
+TeX Live には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．
 
 #### W32TeX {#h170776e}
 
-W32TeX には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．<br>
+W32TeX には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．
 
 ### 使い方 {#rcf88e0c}
 
