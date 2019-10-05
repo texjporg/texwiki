@@ -61,6 +61,7 @@ texdoc newtx
 
 ### 関連リンク {#s6bcb75e}
 
+- e-(u)pTeX で newtxmath がエラー ([forum:2705](https://okumuralab.org/tex/mod/forum/discuss.php?d=2705))
 - newtx フォントで脚注に不具合(通常より脚注マークの位置が下がる) ([qa:57284](https://okumuralab.org/~okumura/texfaq/qa/57284.html), [qa:57286](https://okumuralab.org/~okumura/texfaq/qa/57286.html), [qa:57287](https://okumuralab.org/~okumura/texfaq/qa/57287.html), [qa:57288](https://okumuralab.org/~okumura/texfaq/qa/57288.html))
 
 ## TX フォント → TX フォントを改良した newtx がリリースされています {#uba8f4cc}
