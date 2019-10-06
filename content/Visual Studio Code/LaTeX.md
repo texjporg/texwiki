@@ -39,6 +39,7 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
 - 公式マニュアル
     - [https://github.com/James-Yu/LaTeX-Workshop/wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
 - [MyTeXpert:Visual Studio Code/LaTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX)
+- [LaTeX with VSCodeな環境を整える（Mac）](https://m12watanabe1a.hatenablog.com/entry/2019/09/30/020036)
 - [vs code で latex](https://kandai.hatenadiary.jp/entry/2019/02/21/091432)
 - [VSCode で LaTeX を書く (2018)](https://qiita.com/popunbom/items/7d02fc75ad23b735d28c)
 - [最速で最小構成のLaTeX環境をVSCodeに構築する](https://qiita.com//geek_shanshan/items/d2b6218bbd66e3f62497)
@@ -566,7 +567,7 @@ true/false で設定が切り替わります。（この設定値には引用符
 
 ### 既知の不具合 {#n5df1b94}
 
-#### OS X でかな漢字変換の途中で backspace を押すと意図しない制御文字が挿入される {#r2fc8a4f}
+#### macOS でかな漢字変換の途中で backspace を押すと意図しない制御文字が挿入される {#r2fc8a4f}
 
 VS Code の不具合。対応策として，その制御文字を自動的に取り除くため拡張機能の Remove backspace control character を導入します。
 
