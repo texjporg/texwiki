@@ -31,16 +31,9 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 - [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 
-#### TeX Live/CentOS 7 (1804) --&gt; TeX Live 公式パッケージを使用する {#w0c3dfae}
+#### TeX Live/CentOS {#w0c3dfae}
 
-- [仮想マシンのCentOS7にLaTeXとGhostScriptとImageMagickをインストール](https://water2litter.net/rum/post/vm_setup_tex/)
-
-CentOS 7 (1804) の TeX Live は TeX Live 2013 です．
-最新版の TeX Live が必要な場合あるいは (u)pTeX が必要で sudo yum install texlive-\* でインストールすると (u)pTeX がインストールされなかった場合は TeX Live 公式パッケージを使用してください．
-
-```
-sudo yum install texlive-*
-```
+CentOS 8 の TeX Live は TeX Live 2018 です．
 
 ### [Ghostscript](/Ghostscript/) {#j27db6cf}
 
@@ -50,16 +43,10 @@ sudo yum install ghostscript
 
 ### [Python](/Python/) {#r2377e5f}
 
-#### Python 3 {#h7df1ef5}
-
-- [https://ius.io/LifeCycle/#python](https://ius.io/LifeCycle/#python) , [https://github.com/iuscommunity-pkg/](https://github.com/iuscommunity-pkg/)
-    - [Python 3 を CentOS 7 に yum でインストールする手順](https://weblabo.oscasierra.net/python3-centos7-yum-install/)
-- [https://www.softwarecollections.org/scls/?search=Python](https://www.softwarecollections.org/scls/?search=Python)
-
-#### Python 2 {#b51e9b09}
+#### Python 3.6 {#h7df1ef5}
 
 ```
-sudo yum install python
+sudo dnf install python36
 ```
 
 ### Julia {#p0236f37}
@@ -70,25 +57,25 @@ sudo yum install python
 ### [Ruby](/Ruby/) {#pa5990a1}
 
 ```
-sudo yum install ruby
+sudo dnf install ruby
 ```
 
 ### [Perl](/Perl/) {#ye8ee108}
 
 ```
-sudo yum install perl
+sudo dnf install perl
 ```
 
 ### [Evince](/Evince/) {#b582893c}
 
 ```
-sudo yum install evince
+sudo dnf install evince
 ```
 
 ### [Okular](/Okular/) {#nf124489}
 
 ```
-sudo yum install okular
+sudo dnf install okular
 ```
 
 ### [LyX](/LyX/) {#ucf886d7}
