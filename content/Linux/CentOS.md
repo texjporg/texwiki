@@ -26,10 +26,9 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 #### TeX Live 公式パッケージ {#jc67c0a8}
 
-- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#centos)
-- [参考メモ/CentOS7に TeX Live 2016 をインストールして簡単な動作確認をする](https://qiita.com/msakamoto_sf/items/78c322cb8656615ce134)
+<!-- -[[Linux#texliveinstall]] &amp; [[texlive-dummy#centos]] -->
+- [Linux](/Linux/#texliveinstall)
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
-- [CentOS 7 における TeX Live 2015 のインストール手順 ISO イメージ編](http://yoshiiz.blog129.fc2.com/blog-entry-828.html)
 
 #### TeX Live/CentOS {#w0c3dfae}
 
@@ -38,7 +37,7 @@ CentOS 8 の TeX Live は TeX Live 2018 です．
 ### [Ghostscript](/Ghostscript/) {#j27db6cf}
 
 ```
-sudo yum install ghostscript
+sudo dnf install ghostscript
 ```
 
 ### [Python](/Python/) {#r2377e5f}
