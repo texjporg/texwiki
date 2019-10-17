@@ -25,7 +25,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.25 以降（Ghostscript 9.27 (2019-04-04) を除く）に更新してください．
+Ghostscript 9.50 以降に更新してください．
 
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
