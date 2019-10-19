@@ -12,7 +12,7 @@ pukiwiki: "Evince"
 Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメントビューアーです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
-PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) が必要です．
+PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) と PS, EPS ファイルを表示できるようにビルドされた Evince が必要です．
 
 - [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
@@ -31,7 +31,7 @@ Arch Linux/Manjaro Linux, Linux Mint/Debian/Ubuntu, Fedora, openSUSE
 などで使われているパッケージ管理システムからインストールされる Linux 版 Evince は
 PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
-- \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- Disable PostScript backend by default
+- \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
 - [build: Disable PostScript backend by default (1621cacf) · Commits · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/commit/1621cacf75ebff4ab4ab0fa6855977a2d8da0ac6) &lt;-- evince 3.30.0 で enable_ps=no に変更
 - [https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6](https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6) &lt;-- Arch Linux の evince 3.30.0-1 で --enable-ps が追加
 - [releasing package evince version 3.30.0-2 (7b631abe) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/7b631abe927e17919243a5407c1b79fb40ed1507), [Enable postscript (0029cfba) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/0029cfba6afdf308023f387447779ffe21716ed7) &lt;-- Debian GNU/Linux の evince 3.30.0-2 で --enable-ps が追加
@@ -85,12 +85,15 @@ pacman -S mingw-w64-i686-evince
 
 を実行します．
 
-Evince 3.32.0 で PDF ファイルを開こうとすると
+mingw-w64-evince 3.34.1 は PDF ファイルは表示できますが、[PS, EPS ファイルを表示できるようにビルドされていない](https://github.com/msys2/MINGW-packages/blob/master/mingw-w64-evince/PKGBUILD)ため PS, EPS ファイルを開こうとすると
 
-> ドキュメント“file:///C:/path/to/foo.pdf”を開けません。<br>
-> ファイルタイプ (unknown) (application/octet-stream) はサポートしていません<br>
+> ドキュメント“file:///C:/path/to/foo.ps”を開けません。<br>
+> ファイルタイプ (Text Document) (test/plain) はサポートしていません<br>
 
-といったメッセージが表示されて PDF ファイルが表示できない場合は [https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=](https://www.dropbox.com/sh/9oaq3bdmjjroiso/AADl3RV_XaiJ1dotrhH2D-8Ca?lst=) から Evince 3.26.0 の Windows 版インストーラ（64-bit 版と 32-bit 版）がダウンロードできます．
+> ドキュメント“file:///C:/path/to/foo.eps”を開けません。<br>
+> ファイルタイプ (Text Document) (test/plain) はサポートしていません<br>
+
+といったメッセージが表示されて PS, EPS ファイルが表示できません。 PS, EPS ファイルを表示できるようにビルドすれば表示できると思われるので必要な方は自分でビルドしてください。
 
 ### macOS {#y8d21820}
 
