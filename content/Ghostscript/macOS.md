@@ -15,10 +15,10 @@ pukiwiki: "Ghostscript/macOS"
 
 ***
 
-### macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
+### macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
-現在 <span style="color:#FF2800;"><strong>macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
-これは macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったためです。
+現在 <span style="color:#FF2800;"><strong>macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
+これは macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったためです。
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
 - [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
@@ -32,9 +32,6 @@ pukiwiki: "Ghostscript/macOS"
 ### 配布先 {#see6fdd7}
 
 - [Richard Koch Home Page](https://pages.uoregon.edu/koch/)
-- [Ghostscript.app - マスクメロン](https://www.muskmelon.jp/?page_id=75)
-    - [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
-    - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 - [https://formulae.brew.sh/formula/ghostscript](https://formulae.brew.sh/formula/ghostscript)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
 - [https://www.macports.org/ports.php?by=name&substr=ghostscript](https://www.macports.org/ports.php?by=name&substr=ghostscript)
@@ -42,6 +39,9 @@ pukiwiki: "Ghostscript/macOS"
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
         - [El Capitan での MacPorts ghostscript-fonts-hiragino](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2016/node4.html)
         - [https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority](https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority)
+- [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
+    - [サイト閉鎖に係る後処理（Ghostscript）](https://www.muskmelon.jp/?p=2367)
+    - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 
 ### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
 
