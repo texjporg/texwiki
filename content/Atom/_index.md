@@ -51,6 +51,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
     <!-- -[[document-outline:https://atom.io/packages/document-outline]] - - アウトライン -->
 
 - [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
+- [pdf-view-plus](https://github.atom.io/packages/pdf-view-plus) -- Atom 内で PDF プレビューをするためのパッケージ
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
