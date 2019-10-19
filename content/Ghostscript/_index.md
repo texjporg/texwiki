@@ -25,7 +25,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.50 以降に更新してください．
+Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
@@ -82,10 +82,6 @@ Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版
 - \[[tex-live\] Links fails in latex->dvips after update of tlgs.win32](http://tug.org/pipermail/tex-live/2014-April/thread.html#35059)
 - [http://tug.org/pipermail/tex-live/2014-May/035415.html](http://tug.org/pipermail/tex-live/2014-May/035415.html)
 
-Ghostscript 9.05 で日本語 OpenType フォントに関するバグが修正されたようです．
-
-- [更新履歴［Mac OS X バイナリ］ - マスクメロン](http://www.muskmelon.jp/?p=360)
-
 ### 動作環境 {#e8b195dc}
 
 Windows, macOS, Linux
@@ -102,7 +98,7 @@ Ghostscript 9.22 以降は日本語の縦書き PostScript ファイルがうま
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Ghostscript.NET.Viewer](https://github.com/jhabjan/Ghostscript.NET), macOS, Linux では [gv](/gv/), [Evince](/Evince/) などの Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Ghostscript.NET.Viewer](https://github.com/jhabjan/Ghostscript.NET), macOS, Linux では [Evince](/Evince/), [gv](/gv/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
