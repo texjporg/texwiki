@@ -310,7 +310,7 @@ Source editor:
 
 - [Newest &#39;kile&#39; Questions - TeX - LaTeX](http://tex.stackexchange.com/questions/tagged/kile)
     - [Configure kile to enable inverse search function](http://tex.stackexchange.com/questions/11528/configure-kile-to-enable-inverse-search-function)
-- [app-editors/kile-2.9.91](https://blogs.yahoo.co.jp/igproj_fusion/20944032.html)
+- [app-editors/kile-2.9.91](http://fusion0202.blog.jp/archives/609136.html)
 - [Kile | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/?q=Kile&charset=utf-8)
 - [latex | Kubuntuにっき(仮)](http://kubuser.blog.fc2.com/blog-category-2.html)
-- [TeX Live 2013 on Gentoo Linux](http://blogs.yahoo.co.jp/igproj_fusion/17319986.html)
+- [TeX Live 2013 on Gentoo Linux](http://fusion0202.blog.jp/archives/603893.html)
