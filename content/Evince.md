@@ -67,7 +67,7 @@ Windows, macOS, Linux
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 - [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
-- [Windows で evince](http://www.yamamo10.jp/yamamoto/wordpress/?p=842)
+- [FOSS な PDF Viewer for Windows (Evince も導入できた)](https://text.baldanders.info/remark/2019/03/about-free-software-pdf-viewers/)
 
 Windows 版 Evince は MSYS2 の pacman でインストールできます．
 
@@ -93,7 +93,9 @@ mingw-w64-evince 3.34.1 は PDF ファイルは表示できますが、[PS, EPS 
 > ドキュメント“file:///C:/path/to/foo.eps”を開けません。<br>
 > ファイルタイプ (Text Document) (test/plain) はサポートしていません<br>
 
-といったメッセージが表示されて PS, EPS ファイルが表示できません。 PS, EPS ファイルを表示できるようにビルドすれば表示できると思われるので必要な方は自分でビルドしてください。
+といったメッセージが表示されて PS, EPS ファイルが表示できません。
+mingw-w64-evince 3.28.2 までは PostScript バックエンドがデフォルトで有効化されていたので PS, EPS ファイルが表示できました。
+PS, EPS ファイルを表示できるようにビルドすれば表示できると思われるので必要な方は自分でビルドしてください。
 
 ### macOS {#y8d21820}
 
