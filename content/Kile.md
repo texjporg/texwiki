@@ -9,7 +9,7 @@ pukiwiki: "Kile"
 
 ## [Kile](https://kile.sourceforge.io/) {#pab65dd4}
 
-2018-05-11 に KDE Frameworks 5 に対応した Kile 3.0 beta 2 がリリースされています。
+2019-10-19 に KDE Frameworks 5 に対応した Kile 3.0 beta 3 がリリースされています。
 
 ***
 
