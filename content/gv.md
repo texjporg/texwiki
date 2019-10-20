@@ -37,8 +37,13 @@ gv foo.ps
 
 ### macOS {#k8b85c7c}
 
-- [https://formulae.brew.sh/formula/gv](https://formulae.brew.sh/formula/gv)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/gv.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/gv.rb)
+- [https://github.com/denismm/homebrew-gv](https://github.com/denismm/homebrew-gv)
+    - [https://github.com/denismm/homebrew-gv/blob/master/Formula/gv.rb](https://github.com/denismm/homebrew-gv/blob/master/Formula/gv.rb)
+
+        ```
+        brew install denismm/gv/gv
+        ```
+
 - [https://www.macports.org/ports.php?by=library&substr=gv](https://www.macports.org/ports.php?by=library&substr=gv)
     - [https://github.com/macports/macports-ports/blob/master/print/gv/Portfile](https://github.com/macports/macports-ports/blob/master/print/gv/Portfile)
 - [&#8220;gv&#8221; の検索結果 &#8211; マスクメロン](http://www.muskmelon.jp/?s=gv)
