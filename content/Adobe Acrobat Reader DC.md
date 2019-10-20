@@ -24,7 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 2019.012.20036 以降に更新してください。Adobe Acrobat Reader DC 2019.012.20035 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB19-41) に関する注意喚起](https://www.jpcert.or.jp/at/2019/at190031.html)
+- Adobe Acrobat Reader DC 2019.021.20048 以降に更新してください。Adobe Acrobat Reader DC 2019.012.20040 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB19-49) に関する注意喚起](https://www.jpcert.or.jp/at/2019/at190039.html)
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
