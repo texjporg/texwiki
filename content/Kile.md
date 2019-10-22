@@ -9,8 +9,6 @@ pukiwiki: "Kile"
 
 ## [Kile](https://kile.sourceforge.io/) {#pab65dd4}
 
-2019-10-19 に KDE Frameworks 5 に対応した Kile 3.0 beta 3 がリリースされています。
-
 ***
 
 ***
@@ -36,6 +34,8 @@ Windows, Linux
 ### リリース情報 {#qfb7e12c}
 
 [News](https://kile.sourceforge.io/news.php)
+
+2019-10-19 に KDE Frameworks 5 に対応した Kile 3.0 beta 3 がリリースされています。
 
 ### ChangeLog {#k30d45b0}
 
