@@ -25,7 +25,7 @@ PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) と PS, EPS フ
 
 ### お知らせ {#i6e6a97a}
 
-Evince 3.30.0 で PostScript バックエンドがデフォルトで無効化されました。
+Evince 3.30.0 (2018-09-04) で PostScript バックエンドがデフォルトで無効化されました。
 
 Arch Linux/Manjaro Linux, Linux Mint/Debian/Ubuntu, Fedora, openSUSE
 などで使われているパッケージ管理システムからインストールされる Linux 版 Evince は
