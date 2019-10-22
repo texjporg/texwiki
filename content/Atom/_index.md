@@ -57,7 +57,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 - [vim-mode-plus](https://atom.io/packages/vim-mode-plus) -- Vim キーバインド
 - [atomic-emacs](https://atom.io/packages/atomic-emacs) -- Emacs キーバインド
-- [minimap](https://atom.io/packages/minimap) -- Sublime Text みたいにミニマップを表示させる
+- [minimap](https://atom.io/packages/minimap) -- Visual Studio Code, Sublime Text みたいにミニマップを表示させる
 
 ### ターミナルエミュレータ {#v730a901}
 
