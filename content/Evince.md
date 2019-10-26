@@ -101,6 +101,7 @@ PS, EPS ファイルを表示できるようにビルドすれば表示できる
 
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
+        - [homebrewで導入したevinceでpostscriptのバックエンドを復活する方法](https://qiita.com/tnagai-github/items/3051ed9e9dbfc924f5ab)
 - [https://www.macports.org/ports.php?by=name&substr=evince](https://www.macports.org/ports.php?by=name&substr=evince)
     - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
