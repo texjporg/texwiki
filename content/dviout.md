@@ -27,13 +27,10 @@ dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 ## dviout for Windows とは？ {#i1497a3b}
 
 dviout for Windows は (e-)(u)pTeX 対応の DVI プレビューアです。
-詳しくは開発者（[大島利雄さん](http://akagi.ms.u-tokyo.ac.jp/~oshima/)）ご自身によるページをご覧ください。
+詳しくは開発者（[大島利雄さん](https://www.ms.u-tokyo.ac.jp/~oshima/)）ご自身によるページをご覧ください。
 
-- [Oshima Laboratory Home Page (JP)](http://akagi.ms.u-tokyo.ac.jp/index-j.html) (大島研究室＠東京大)
-    - [dviout/dviprt 情報](http://akagi.ms.u-tokyo.ac.jp/dviout.html)
-    - [dviout/dviprt 開発室](http://akagi.ms.u-tokyo.ac.jp/dvitest.html)
-    - [DVIware としての dviout](http://akagi.ms.u-tokyo.ac.jp/cmode.html)
-    - [Windows95/98/Me/NT/2000/XP における dviout のインストール](http://akagi.ms.u-tokyo.ac.jp/tex_dvioutw.html)
+- [Oshima Laboratory Home Page (JP)](https://www.ms.u-tokyo.ac.jp/~oshima/index-j.html) (大島研究室＠東京大)
+    - [Versions of dviout for Windows](https://www.ms.u-tokyo.ac.jp/~oshima/dviout/dvihist.html)
 
 USBメモリ活用講座の dviout for Windows のページも参考にしてください。
 
