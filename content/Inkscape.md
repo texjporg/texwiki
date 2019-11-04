@@ -150,7 +150,7 @@ LaTeX と連携するためのエクステンション．
 <strong>環境変数 Path に [pstoedit](/pstoedit/), [dvisvgm](/dvisvgm/), [dvips](/dvips/), latex が存在するディレクトリが含まれていれば</strong> \[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[LaTeX formula...\] から使用可能．<br>
 
 [EqTeXSvg の公式サイト](https://www.julienvitard.eu/en/eqtexsvg_en.html)から最新版 (2015-02-25) をインストールしてください ([インストール](/Inkscape/#v77ed75c) を参照)．
-[Inkscape にデフォルトで含まれています](https://gitlab.com/inkscape/extensions/blob/master/eqtexsvg.py)が，バージョンが古く (2010-04-04)，正しく動作しません．
+以前は Inkscape に含まれていましたが[2019年3月30日に削除されました](https://gitlab.com/inkscape/extensions/commit/40f053da73ae95d16f1f98bc441f063ef5ef7b86)．
 
 - [Inkscape (Win)でLaTeX数式を使えるようにする](http://nan-hen.com/?p=9244)
 - [InkscapeでLaTexを使う](http://chiron.blog.ocn.ne.jp/astrocal/2012/09/inkscapelatex_1.html)
@@ -322,7 +322,7 @@ pstoedit, dvisvgm, dvips, latex が格納されているディレクトリが Pa
         \begin{equation}\frac{\pi^2}{6}=\lim_{n \to \infty}\sum_{k=1}^n \frac{1}{k^2}\end{equation}
         ```
 
-### [Tex Text](https://github.com/textext/textext) {#l1a0873e}
+### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
 Inkscape で LaTeX の数式を埋め込むエクステンション．再編集可能．
 
