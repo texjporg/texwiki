@@ -187,6 +187,7 @@ tltexjp は TeX Live の補助リポジトリです．
 
 ### 関連リンク {#udd48b1b}
 
+- [日本語版 TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
 - [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
 
