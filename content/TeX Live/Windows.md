@@ -227,7 +227,7 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 
 TeX Live 2019 対応の事例です．
 
-- [WindowsにLaTeX環境を構築する方法 - つるおの気の向くままブログ](https://www.tsuruo5388.jp/entry/tech/latex-win-setting)
+- [【環境構築】WindowsでLaTeX2019が使えるようになるまで - 工業大学生ももやまのうさぎ塾](https://www.momoyama-usagi.com/entry/tech-latex-win-setting)
 - [とりあえず TeX を使いたい、もしくは使わざるを得なくなった人のために](http://www.fugenji.org/~thomas/tori-tex/)
 
 TeX Live 2018 対応の事例です．
