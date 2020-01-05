@@ -28,7 +28,12 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
 - ただし，TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。問題のある場合は Ghostscript 9.26 以前を使うようにしてください。
-    <!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
+
+<!-- gs-9.50 で XeTeX での pstricks も失敗する。以下で対応。 -->
+<!-- (1) dvipdfmx.cfg の変更 (r52766) -->
+<!-- (2) (x)dvipdfmx のソース spc_dvips.c の変更 (r52765) -->
+
+<!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
 
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
