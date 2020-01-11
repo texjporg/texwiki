@@ -12,7 +12,7 @@ pukiwiki: "newtx"
 newtx は TX フォントを改良した Times 系フォントです．
 TeX Live，W32TeX に標準で含まれています．
 
-注意：jsarticle 系クラス + newtxtext での \sffamily の注意点 ([forum:2763](https://okumuralab.org/tex/mod/forum/discuss.php?d=2763))
+注意：jsarticle 系クラス / jlreq クラス + newtxtext での \sffamily の注意点 ([forum:2763](https://okumuralab.org/tex/mod/forum/discuss.php?d=2763))
 
 ***
 
