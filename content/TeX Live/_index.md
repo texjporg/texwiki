@@ -50,7 +50,6 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
     - [Linux/Fedora](/Linux/Fedora/#texlive)
     - [Linux/openSUSE](/Linux/openSUSE/#texlive)
     - Linux/RHEL/CentOS#texlive
-    - Linux/Vine Linux
 - [BSD](/BSD/)
     - [BSD/FreeBSD](/BSD/FreeBSD/#texlive)
     - [BSD/OpenBSD](/BSD/OpenBSD/#texlive)
