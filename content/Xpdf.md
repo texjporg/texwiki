@@ -83,19 +83,6 @@ Xpdf 4.02 の場合
 
 Xpdf 3.04 の場合
 
-- マスクメロンの Xpdf.app を使用する方法
-    - [マスクメロンの Xpdf.app](http://www.muskmelon.jp/?page_id=86) をダウンロードし，Applications フォルダにインストールします。
-        /Applications/Xpdf.app 及び /Applications/Xpdf.app/bin
-        にこの順番でパスを通します。ターミナルから
-
-        ```
-        export PATH=/Applications/Xpdf.app:/Applications/Xpdf.app/bin:$PATH
-        ```
-
-        を実行してください。既に言語設定は済んでいるので，特別な操作は不要です。以下が利用可能になります：
-
-> pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
-
 - MacPorts を用いる方法
     - MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
 
