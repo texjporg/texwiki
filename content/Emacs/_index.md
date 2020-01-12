@@ -40,13 +40,12 @@ GNU Emacs はフリーソフトウェアです．
 
 #### Windows {#k091604e}
 
-- [64bit版 GNU Emacs 26.2 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime) (64-bit binary)
+- [64bit版 GNU Emacs 26.3 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime) (64-bit binary)
 - [Emacs Modified for Windows](http://vigou3.gitlab.io/emacs-modified-windows/) (64-bit binary)
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html) (32-bit binary)
 
 #### macOS {#v2ece0ad}
 
-- [Emacs.app - マスクメロン](http://www.muskmelon.jp/?page_id=79)
 - [Emacs Modified for macOS](http://vigou3.gitlab.io/emacs-modified-macos/)
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
 - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
