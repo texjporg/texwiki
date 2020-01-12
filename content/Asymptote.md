@@ -41,7 +41,7 @@ Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がな�
 macOS でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
 Asymptote ソースを展開したディレクトリに
-[gc-8.0.0.tar.gz](http://www.hboehm.info/gc/gc_source/gc-8.0.0.tar.gz)
+[gc-8.0.4.tar.gz](https://www.hboehm.info/gc/gc_source/gc-8.0.4.tar.gz)
 を展開せずに置き，
 
 ```
