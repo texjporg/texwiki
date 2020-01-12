@@ -102,7 +102,7 @@ MacTeX のインストールの概略は以下のとおりです。
 
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
 
-> - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/), TeXnicle などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
+> - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/) などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
 
 #### Homebrew でインストール {#s59a1243}
 
