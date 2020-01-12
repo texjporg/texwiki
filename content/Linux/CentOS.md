@@ -51,7 +51,6 @@ sudo dnf install python36
 ### Julia {#p0236f37}
 
 - [https://copr.fedorainfracloud.org/coprs/nalimilan/julia/](https://copr.fedorainfracloud.org/coprs/nalimilan/julia/)
-- [https://copr.fedorainfracloud.org/coprs/nalimilan/julia-nightlies/](https://copr.fedorainfracloud.org/coprs/nalimilan/julia-nightlies/)
 
 ### [Ruby](/Ruby/) {#pa5990a1}
 
