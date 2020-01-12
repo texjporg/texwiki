@@ -72,7 +72,6 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
-    - TeXnicle
 
 - 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Visual Studio Code](</Visual Studio Code/>)
