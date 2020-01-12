@@ -73,16 +73,17 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#sf1a21f3}
 
-- [坂東慶太](https://twitter.com/BandoKeita)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,592 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
+- [坂東慶太](https://twitter.com/BandoKeita)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
 #### 2018年 {#l525d944}
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』（[翔泳社](https://www.shoeisha.co.jp/)，2018年8月，価格 &yen;3,218 (本体 &yen;2,980)，[ISBN 978-4-7981-5707-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』（[翔泳社](https://www.shoeisha.co.jp/)，2018年8月，価格 &yen;3,278 (本体 &yen;2,980)，[ISBN 978-4-7981-5707-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
+- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](http://www.cutt.co.jp/book/978-4-87783-311-4.html)』（[カットシステム](http://www.cutt.co.jp/)，2018年8月，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
 
 #### 2017年 {#w6228190}
 
 - [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
-    （[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,456 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
+    （[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,520 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
     ……
     第2刷は [TeX Live](</TeX Live/>) 2017，第1刷は [TeX Live](</TeX Live/>) 2016 を収録した
     DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2017/978-4-7741-8705-1)もあります。
@@ -103,8 +104,6 @@ TeX や LaTeX に関する本の紹介です．
     （[工学社](http://www.kohgakusha.co.jp/)，2014年10月，価格 &yen;2,484 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
 
 #### 2013年 {#f211a577}
-
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeXはじめの一歩―Windows 8/7 対応](http://www.cutt.co.jp/book/978-4-87783-311-4.html)』（[カットシステム](http://www.cutt.co.jp/)，2013年5月，税込価格 &yen;2,808 (本体 &yen;2,600)，[ISBN 978-4-87783-311-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-311-4)）
 
 #### 2012年 {#y2f27432}
 
