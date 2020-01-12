@@ -43,7 +43,6 @@ macOS 10.13 High Sierra 以降
 
 ## CotEditor で LaTeX {#acb0f7fd}
 
-- [CotEditor で SyncTeX](http://www.muskmelon.jp/?p=1962)
 - [CotEditor から LaTeX をタイプセットするスクリプト](https://qiita.com/yunarsoa/items/6573bbfcd1814124bb2f)
 - [CotEditor から AppleScript で latexmk を叩く](https://aximov.wordpress.com/2016/01/20/coteditor-latexmk/)
     <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
