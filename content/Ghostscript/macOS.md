@@ -39,9 +39,6 @@ pukiwiki: "Ghostscript/macOS"
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
         - [El Capitan での MacPorts ghostscript-fonts-hiragino](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2016/node4.html)
         - [https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority](https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority)
-- [Ghostscript | 検索結果:  | マスクメロン](https://www.muskmelon.jp/?s=Ghostscript)
-    - [サイト閉鎖に係る後処理（Ghostscript）](https://www.muskmelon.jp/?p=2367)
-    - [Mac用Ghostscript（gv付き）を入れてみた](http://oversleptabit.com/?p=1337)
 
 ### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
 
