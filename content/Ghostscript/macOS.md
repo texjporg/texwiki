@@ -21,13 +21,13 @@ pukiwiki: "Ghostscript/macOS"
 これは macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったためです。
 
 - [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
-- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
-- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](https://www.muskmelon.jp/?p=1177)
+- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://web.archive.org/web/20180521112227/https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
+- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](https://web.archive.org/web/20180521112228/https://www.muskmelon.jp/?p=1177)
 
 なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](https://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
 
-- [OTC から OTF を抽出 &#8211; マスクメロン](https://www.muskmelon.jp/?p=1194)
-- [OTC から OTF を抽出（自動化） &#8211; マスクメロン](https://www.muskmelon.jp/?p=1204)
+- [OTC から OTF を抽出 &#8211; マスクメロン](https://web.archive.org/web/20180521112655/https://www.muskmelon.jp/?p=1194)
+- [OTC から OTF を抽出（自動化） &#8211; マスクメロン](https://web.archive.org/web/20180521112237/https://www.muskmelon.jp/?p=1204)
 
 ### 配布先 {#see6fdd7}
 
