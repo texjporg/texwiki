@@ -98,7 +98,7 @@ bregonig.dll を
 
 bregonig.dll が有効になると，検索／置換／Grep で
 
-> bregonig.dll Ver.4.12 with Onigmo 6.1.2
+> bregonig.dll Ver.4.20 with Onigmo 6.2.0
 
 のように表示されます．
 
@@ -196,7 +196,7 @@ $ wine sakura.exe
 
 ### License {#y5064e03}
 
-サクラエディタは，ソースコードの大部分が zlib/libpng ライセンスです．
+サクラエディタ本体は，zlib ライセンスです．
 詳細は [License · sakura-editor/sakura Wiki · GitHub](https://github.com/sakura-editor/sakura/wiki/License) を参照してください．
 
 ### リリース情報 {#qe1b7074}
@@ -205,12 +205,10 @@ $ wine sakura.exe
 
 ### ChangeLog {#l31b371d}
 
-- [History - SakuraEditorWiki](http://sakura.qp.land.to/?History)
-- [変更履歴](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000009.html)
 - [コミットログ](https://github.com/sakura-editor/sakura/commits/master)
 
 ### 派生版 &amp; 改造版 {#mc0d532c}
 
 - [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
-- [サクラエディタ Unicode/64bit(x64)版](https://sourceforge.net/p/sakura-editor/wiki/64bit/)
+- [Ver.2.3.2.0 64bit版バイナリ](https://ux.getuploader.com/sakura_editor/download/149)
 - [BeniZakura](https://bitbucket.org/suzzsegv/benizakura/downloads)
