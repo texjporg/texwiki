@@ -29,6 +29,10 @@ Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
 - ただし，TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。問題のある場合は Ghostscript 9.26 以前を使うようにしてください。
 
+- gs-9.50 を使うと [dviout](/dviout/) で EPS 画像が表示できない問題が発生します。gsx: を
+    c:\path_to_gs\gs9.50\bin\gswin32c.exe -dDELAYSAFER
+    に書き換えると表示できるようになります。（path_to_gs はお使いの環境の Ghostscript のパスに従ってください。）
+
 <!-- gs-9.50 で .setpdfwrite オペレータが deprecated とマークされた。 -->
 <!-- ちなみに .dashpath オペレータが削除されたのは gs-9.22 の模様。 -->
 
