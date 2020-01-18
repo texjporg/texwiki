@@ -152,7 +152,7 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
 ```
 
-TeXstudio 2.12.18 の場合は出力結果は以下のようになります．
+TeXstudio 2.12.20 の場合は出力結果は以下のようになります．
 
 > /usr/local/Cellar/poppler/0.79.0-texworks/share/poppler/ColorProfiles/<br>
 > &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/0.79.0-texworks/share/poppler</span>;<br>
