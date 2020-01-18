@@ -39,6 +39,8 @@ X Window System
 
 ### ChangeLog {#p61511cc}
 
+- [xdvik / Code (main) / \[HEAD\] /trunk/xdvik](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/)
+    - [log](https://sourceforge.net/p/xdvi/code/log/)
 - \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
     - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
@@ -148,6 +150,7 @@ $ pdflatex -synctex=1 hoge
 
 #### コマンドラインオプション {#ce42827f}
 
+- [https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c)
 - [http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup)
 
 ### SyncTeX {#g4e4f193}
@@ -210,6 +213,7 @@ pxdvi は (e-(u))pTeX で出力された DVI ファイルに対応した DVI プ
 pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 
 - [tltexjp](https://texjp.org/#tltexjp)
+- [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
 - [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
