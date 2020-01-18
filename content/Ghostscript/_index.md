@@ -33,6 +33,8 @@ Ghostscript 9.50 (2019-10-15) 以降に更新してください．
     c:\path_to_gs\gs9.50\bin\gswin32c.exe -dDELAYSAFER
     に書き換えると表示できるようになります。（path_to_gs はお使いの環境の Ghostscript のパスに従ってください。）
 
+<!-- gs-9.50 で hyperref のリンク枠線が太くなる？ https://tex.stackexchange.com/questions/524044 -->
+
 <!-- gs-9.50 で .setpdfwrite オペレータが deprecated とマークされた。 -->
 <!-- ちなみに .dashpath オペレータが削除されたのは gs-9.22 の模様。 -->
 
