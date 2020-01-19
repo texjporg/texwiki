@@ -217,6 +217,7 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 
 ## 関連リンク {#b0ba1b9b}
 
+- [MyTeXpert:TeXstudio](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeXstudio)
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](https://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
 - [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](https://mag.osdn.jp/12/07/16/0613248)
 - [すぐできるTeX Live + TeXstudioによる論文執筆環境](http://www.hsakurai.com/entry/2015/07/28/150459)
