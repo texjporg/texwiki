@@ -55,6 +55,9 @@ Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発�
 <!-- gs-9.27 の他の仕様変更：GS_PDF_ProcSet オペレータの削除 -->
 <!-- https://github.com/mgieseki/dvisvgm/issues/108#issuecomment-496382796 -->
 
+<!-- gs-9.27 で xdvi 22.87.03 で EPS 画像が表示されない → TeX Live r51707 で対処 -->
+<!-- http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html#20190924 -->
+
 Ghostscript 9.24 は，@filename スキームが使用できず，ps2pdf.bat などが一切使用できないという問題があるので，インストールしない方が無難です。
 また Ghostscript 9.24 から PDF を出力する際のバージョンが PDF 1.5 から PDF 1.7 に変更されています。([pdfwrite - ensure correct ICC profile version being written out](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=bb2ea8ca0482cb0bb5632c30e9184e3d19fdc8d2))
 
@@ -64,6 +67,9 @@ Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱
 - [JVNDB-2018-006474 Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006474.html)
 - [JVNVU#90390242: Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性](http://jvn.jp/vu/JVNVU90390242/)
 - [Ghostscript脆弱性とImageMagick/GraphicsMagick、そしてGoogle Project Zero](http://d.hatena.ne.jp/ozuma/20180826/1535258202)
+
+<!-- gs-9.22 で xdvi で EPS 画像が表示されない → gs_init.ps を一箇所修正 -->
+<!-- http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html#20190719 -->
 
 Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
 TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
