@@ -100,8 +100,8 @@ $ port contents poppler | grep /bin
   /opt/local/bin/pdfunite
 ```
 
-なお，[Xpdf](/Xpdf/) 関連の Port（具体的には xpdf-tools と pdftohtml が該当）がインストールされていると衝突してインストールできなくなります。
-Poppler をインストールしたい場合は，xpdf-tools と pdftohtml をアンインストールしてください。
+なお，[Xpdf](/Xpdf/) 関連の Port（具体的には xpdf-tools が該当）がインストールされていると衝突してインストールできなくなります。
+Poppler をインストールしたい場合は，xpdf-tools をアンインストールしてください。
 
 - [https://formulae.brew.sh/formula/poppler](https://formulae.brew.sh/formula/poppler)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/poppler.rb)
