@@ -26,16 +26,16 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 #### 本家 Windows executable installer {#vff4acd8}
 
-本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python37\ にインストールした場合は
+本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python38\ にインストールした場合は
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python37\Scripts\
+%USERPROFILE%\AppData\Local\Programs\Python\Python38\Scripts\
 ```
 
 と
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python37\
+%USERPROFILE%\AppData\Local\Programs\Python\Python38\
 ```
 
 を環境変数 Path に追加します．
