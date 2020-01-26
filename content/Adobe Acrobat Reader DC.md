@@ -136,7 +136,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ### iOS {#ac2b971a}
 
-- [Adobe Acrobat Reader on the App Store](https://itunes.apple.com/jp/app/adobe-reader/id469337564?mt=8)
+- [Adobe Acrobat Reader on the App Store](https://apps.apple.com/jp/app/adobe-reader/id469337564)
 
 ## アンインストール {#j28c578e}
 
