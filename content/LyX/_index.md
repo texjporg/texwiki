@@ -495,6 +495,7 @@ sudo apt install lyx
 
 #### Fedora {#e67f26b3}
 
+- [https://rpms.remirepo.net/rpmphp/zoom.php?rpm=lyx](https://rpms.remirepo.net/rpmphp/zoom.php?rpm=lyx)
 - [https://apps.fedoraproject.org/packages/lyx](https://apps.fedoraproject.org/packages/lyx)
 
 ```
