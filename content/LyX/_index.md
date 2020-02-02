@@ -454,6 +454,10 @@ Cygwin 版の LyX は公式サイトの Cygwin 用バイナリ以外に Cygwin �
 
 ### macOS {#l288fea5}
 
+macOS 用の dmg ファイルをダブルクリックします．
+
+Homebrew, MacPorts でインストールすることもできます．
+
 #### Homebrew {#se88dc8b}
 
 - [https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb)
@@ -512,6 +516,10 @@ sudo zypper install lyx
 ## 不具合 {#h17851b4}
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
+
+### Japanese IME: preedit is shown while selecting conversion candidate {#r4c8f06e}
+
+- [#11723 (Japanese IME: preedit is shown while selecting conversion candidate) – The LyX Project](https://www.lyx.org/trac/ticket/11723)
 
 ### LyX 2.3.2 で 64-bit TeX Live Windows バイナリを使用すると「文書クラスが利用不可能です」という警告が表示される {#vec27fb0}
 
