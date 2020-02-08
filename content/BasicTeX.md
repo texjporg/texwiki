@@ -22,7 +22,7 @@ collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/
 
 #### BasicTeX.pkg でインストール {#if691d16}
 
-[More Packages - MacTeX](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](/MacTeX/#mirror) から BasicTeX.pkg をダウンロードします。
+[More Packages - MacTeX - TeX Users Group](http://tug.org/mactex/morepackages.html) または[ミラーサイト (MacTeX)](/MacTeX/#mirror) から BasicTeX.pkg をダウンロードします。
 
 BasicTeX のインストールの概略は以下のとおりです。
 
@@ -37,7 +37,7 @@ BasicTeX のインストールの概略は以下のとおりです。
 
     collection-langjapanese をインストールすれば，依存関係で collection-langcjk もインストールされます。
 
-[Ghostscript](/Ghostscript/) は別途インストールする必要があります。
+[Ghostscript](/Ghostscript/)、[Latexmk](/Latexmk/) は別途インストールする必要があります。
 
 #### Homebrew でインストール {#w71ff68b}
 
@@ -53,8 +53,7 @@ $ sudo tlmgr install collection-langjapanese
 #### インストールの事例 {#q65e25e8}
 
 - [macOS CatalinaでLaTeX環境整えた時のメモ(2019)](https://qiita.com/yaplus/items/55fa6957c1b15dbcf387)
-- [Mac に最小限の LaTeX 環境を導入する（2018年版）](https://qiita.com/yskuniv/items/8d9558b6d2edf8846520)
-- [Macbook Pro 事始め備忘録#BasicTeXのインストール](https://qiita.com/nqomorita/items/8491e10866aa53277f80#basictex%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab)
+- [初心者がBasicTexをmacにインストールする(2019年)](https://qiita.com/yuukami1024/items/bec77e17111ad95a1188)
 
 #### TeX Live 2016 以降での注意点 {#y0fc0688}
 
