@@ -44,6 +44,10 @@ Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
 <!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
 
+Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
+
+- [JVN#52486659: Ghostscript におけるアクセス制限回避の脆弱性](https://jvn.jp/jp/JVN52486659/)
+
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
 - commit [06c920713e11bce9bd541bbf9bf294b2ba16aee8](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=06c920713e11bce9bd541bbf9bf294b2ba16aee8)
