@@ -27,7 +27,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
-- ただし，TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。問題のある場合は Ghostscript 9.26 以前を使うようにしてください。
+- ただし，TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在するので、問題のある場合は TeX Live を最新版に更新してください。
 
 - gs-9.50 を使うと [dviout](/dviout/) で EPS 画像が表示できない問題が発生します。gsx: を
     c:\path_to_gs\gs9.50\bin\gswin32c.exe -dDELAYSAFER
@@ -47,6 +47,7 @@ Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
 
 - [JVN#52486659: Ghostscript におけるアクセス制限回避の脆弱性](https://jvn.jp/jp/JVN52486659/)
+- [JVNDB-2019-012236 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012236.html)
 
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
@@ -62,10 +63,10 @@ Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発�
 <!-- gs-9.27 で xdvi 22.87.03 で EPS 画像が表示されない → TeX Live r51707 で対処 -->
 <!-- http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html#20190924 -->
 
-Ghostscript 9.24 は，@filename スキームが使用できず，ps2pdf.bat などが一切使用できないという問題があるので，インストールしない方が無難です。
+Ghostscript 9.24 (2018-09-03) は，@filename スキームが使用できず，ps2pdf.bat などが一切使用できないという問題があるので，インストールしない方が無難です。
 また Ghostscript 9.24 から PDF を出力する際のバージョンが PDF 1.5 から PDF 1.7 に変更されています。([pdfwrite - ensure correct ICC profile version being written out](http://git.ghostscript.com/?p=ghostpdl.git;a=commitdiff;h=bb2ea8ca0482cb0bb5632c30e9184e3d19fdc8d2))
 
-Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱性が存在します．
+Ghostscript 9.23 (2018-03-21) およびそれ以前の -dSAFER オプションには、脆弱性が存在します．
 
 - [Ghostscript の -dSAFER オプションの脆弱性に関する注意喚起](http://www.jpcert.or.jp/at/2018/at180035.html)
 - [JVNDB-2018-006474 Ghostscript に -dSAFER オプションによる保護が回避される複数の脆弱性 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2018/JVNDB-2018-006474.html)
@@ -75,7 +76,7 @@ Ghostscript 9.23 およびそれ以前の -dSAFER オプションには、脆弱
 <!-- gs-9.22 で xdvi で EPS 画像が表示されない → gs_init.ps を一箇所修正 -->
 <!-- http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html#20190719 -->
 
-Ghostscript 9.21 およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
+Ghostscript 9.21 (2017-03-16) およびそれ以前には任意のコードが実行可能な脆弱性が存在します．
 TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) はこの脆弱性が修正されています．
 
 - [JVNDB-2017-002808 Ghostscript に任意のコードが実行可能な脆弱性 - JVN iPedia - 脆弱性対策情報データベース](http://jvndb.jvn.jp/ja/contents/2017/JVNDB-2017-002808.html)
@@ -85,12 +86,12 @@ TeX Live 2017 (win32) に収録されている Ghostscript 9.21 (tlgs.win32) は
 - [Bug 697846 &ndash; Security fix causes regression](https://bugs.ghostscript.com/show_bug.cgi?id=697846)
 - [Bug 697799 &ndash; corruption of operand stack](https://bugs.ghostscript.com/show_bug.cgi?id=697799)
 
-Ghostscript 9.15 以降で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問題が発生する場合は TeX Live 2015 以降に更新してください．
+Ghostscript 9.15 (2014-09-22) で [XeTeX](/XeTeX/) 上の [PSTricks](/PSTricks/) で問題が発生する場合は TeX Live 2015 以降に更新してください．
 
 - [QA: gs9.15 and gs9.10](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1393)
 - \[[texlive\] Revision 35312](http://www.tug.org/svn/texlive?view=revision&revision=35312)
 
-また Ghostscript 9.15 で，output device から epswrite が廃止され，9.14 で追加・推奨されていた eps2write に完全に置き換わりました．
+また Ghostscript 9.15 (2014-09-22) で，output device から epswrite が廃止され，Ghostscript 9.14 (2014-03-26) で追加・推奨されていた eps2write に完全に置き換わりました．
 eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript/使い方/>) を参照してください．
 以下のようなアプリケーションは，すでに対応を完了しています．
 
@@ -99,11 +100,11 @@ eps2write/epswrite の挙動の詳細は，[Ghostscript/使い方](</Ghostscript
 - Windows で TeX に挿入できるグラフ，図を作成するツール「WinTpic」（[参考](http://aogaeru-lab.my.coocan.jp/sub1.html)）
 - [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述ツール「[Asymptote](/Asymptote/)」（[参考](https://twitter.com/aminophen/status/601611509001687040)）
 
-Ghostscript 9.15 では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．
+Ghostscript 9.15 (2014-09-22) では回転したテキストを含むファイルを eps2write で処理すると BoundingBox がおかしくなるバグが報告されています．
 
 - [Bug 695671 - eps2write gives incorrect bounding box with rotated text](https://bugs.ghostscript.com/show_bug.cgi?id=695671)
 
-Ghostscript 9.14 ではハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
+Ghostscript 9.14 (2014-03-26) ではハイパーリンクが動作しないので，最新版の TeX Live, 最新版の Ghostscript に更新してください．
 
 - [pdfwrite - fix Named destinations with Names tree](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=c79b0ee1dbc1cbbcbe406abd4bc47f617ed5cb2c)
 - [Bug 695162 &ndash; Internal hyperlinks lost when converting to pdf](https://bugs.ghostscript.com/show_bug.cgi?id=695162)
@@ -118,7 +119,7 @@ Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
 
-Ghostscript 9.22 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
+Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
 
 <!-- GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています． -->
 <!-- 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました． -->
