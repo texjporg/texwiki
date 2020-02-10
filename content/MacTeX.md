@@ -68,7 +68,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
     - TeX に対応したスペルチェッカー。
 
-#### Ghostscript-9.27 --&gt; [Ghostscript 9.50](https://pages.uoregon.edu/koch/) のパッケージがリリースされています {#n1354f54}
+#### Ghostscript-9.27（アクセス制限回避の脆弱性が存在） --&gt; アクセス制限回避の脆弱性が修正された [Ghostscript 9.50](https://pages.uoregon.edu/koch/) のパッケージがリリースされています {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
