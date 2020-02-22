@@ -111,13 +111,13 @@ sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSU
 ### RHEL/CentOS <a id="rhel"></a> <a id="centos"></a> {#ha758dd0}
 
 - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
-    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7](https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-7)
+    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8](https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/RHEL/CentOS に依存するパッケージが TeX Live/RHEL/CentOS をインストールするのを防止できます．
 
 ```
-sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-7/texlive-dummy-2012a-1.el7.noarch.rpm
+sudo dnf install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-8/texlive-dummy-2020-4.el8.noarch.rpm
 ```
 
 ### Gentoo Linux <a id="gentoolinux"></a> {#i10c1e71}
