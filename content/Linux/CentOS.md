@@ -26,8 +26,9 @@ CentOS は Red Hat Enterprise Linux (RHEL) と互換性のある Linux ディス
 
 #### TeX Live 公式パッケージ {#jc67c0a8}
 
-<!-- -[[Linux#texliveinstall]] &amp; [[texlive-dummy#centos]] -->
-- [Linux](/Linux/#texliveinstall)
+- [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#centos)
+    <!-- -[[Linux#texliveinstall]] -->
+
 - [TeXを任意のディレクトリにインストールする（CentOS版）](http://nc30mtd.oops.jp/blog/2015/11/texcentos.html)
 
 #### TeX Live/CentOS {#w0c3dfae}
