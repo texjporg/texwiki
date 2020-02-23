@@ -23,7 +23,7 @@ pukiwiki: "Atom/LaTeX"
     1. 入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
     1. 入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
     1. 入力欄に latex-tree を入力して [latex-tree](https://atom.io/packages/latex-tree) パッケージをインストールします。
-    1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
+    1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) または [pdf-view-plus](https://atom.io/packages/pdf-view-plus) パッケージをインストールします。
 
 ### 日本語文書向けの設定 {#ca64206f}
 
