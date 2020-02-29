@@ -37,7 +37,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 - [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506) / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
     - 游明朝体 Pr6N R/M/D
     - 游ゴシック体 Pr6N L/R/M/D/B
-- [新元号対応についてのお知らせ｜新着情報｜FONTWORKS | フォントワークス](https://www.fontworks.co.jp/news/archives/349)
+- [新元号「令和」対応書体をリリースしました](https://fontworks.co.jp/news/2019/09/25/5223/),[新元号「令和」対応書体のリリースについて](https://fontworks.co.jp/news/2019/06/24/5184/),[新元号対応についてのお知らせ | Fontworks](https://fontworks.co.jp/news/2019/04/02/5158/)
     - 筑紫明朝-L/LB/R/RB/M/D/B/E/H（Pr6/Pr6N）
     - 筑紫B明朝-L（Pr6/Pr6N）
     - 筑紫Aオールド明朝-L/R/M/D/B/E（Pr6/Pr6N）
@@ -49,7 +49,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - UD角ゴ_スモール-UL/EL/L/R/M/DB/B/E/H/U（Pr6/Pr6N）
     - UD丸ゴ_ラージ-L/M/DB/B/E/H/U（Pr6/Pr6N）
     - UD丸ゴ_スモール-L/M/DB/B/E/H/U（Pr6/Pr6N）
-- [ヒラギノフォントの新元号対応についてのお知らせ](https://www.screen.co.jp/ga/news/info/gan190403)
+- [ヒラギノフォントの新元号対応フォントの提供開始について](https://www.screen.co.jp/ga/news/info/gan190925),[ヒラギノフォントの新元号対応についてのお知らせ](https://www.screen.co.jp/ga/news/info/gan190403)
     - ヒラギノ明朝 Pr6N W3/W6 （2書体）
     - ヒラギノ角ゴ Pr6N W3/W6 （2書体）
     - ヒラギノ丸ゴ Pr6N W4 （1書体）
