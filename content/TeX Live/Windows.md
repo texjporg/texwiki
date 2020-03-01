@@ -238,7 +238,6 @@ TeX Live 2018 対応の事例です．
 - [そうだ， TeX Live 2017 (for Windows) をインストールしよう！](http://text.baldanders.info/remark/2017/09/install-tex-live-2017-for-windows/) --&gt; [TeX Live 2017 から 2018 へのアップグレード](http://text.baldanders.info/remark/2018/09/upgrade-texlive-from-2017-to-2018/)
 
 <!-- TeX Live 2016 対応の事例です． -->
-<!-- -[[Windows 10 に TeX Live 2016 をインストール:http://www.muskmelon.jp/?p=1533]] -->
 <!-- -[[ゼロから作るTeX環境 (Windows版):https://qiita.com/umireon/items/b540dc2c83412fc144d2]] -->
 <!-- -[[TeX Live 2015 でアップデートされたパッケージ:http://ichiro-maruta.blogspot.jp/2015/06/tex-live-2015-changes.html]] -->
 <!-- -[[Windows 8.1 における TeX Live 2015 のセットアップ作業のメモ:http://yoshiiz.blog129.fc2.com/blog-entry-826.html]] -->
