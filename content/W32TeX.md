@@ -266,13 +266,13 @@ C:\work>dvips sourcename.dvi 2>&1 | utf8prin
 
 以前存在したオプション -sjis-terminal は廃止されました(2018/6/15)．
 
-up(la)tex を主に使用される方は，texmf.cnf に
+最新の W32TeX の場合、または「2019年05月以前の W32TeX で up(la)tex を主に使用される方」は，texmf.cnf に
 
 ```
 command_line_encoding = utf-8
 ```
 
-p(la)tex を主に使用される方は，texmf.cnf に
+2019年05月以前の W32TeX で p(la)tex を主に使用される方は，texmf.cnf に
 
 ```
 command_line_encoding = utf-8
@@ -282,15 +282,7 @@ command_line_encoding.dvips = none
 
 と設定するとよいでしょう．
 
-最新の場合には，p(la)tex を主に使用される場合も
-
-```
-command_line_encoding = utf-8
-```
-
-だけでも可です。dvipdfmx, dvips は command_line_encoding の値によらず，
-OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に名前が書かれて
-いるファイルを見つけることができます。現在 (2019/05) の W32TeX における
+現在 (2019/05) の W32TeX における
 デフォルトは
 
 ```
@@ -298,6 +290,10 @@ command_line_encoding = utf-8
 ```
 
 となっています。
+
+最新の W32TeX では dvipdfmx, dvips は command_line_encoding の値によらず，
+OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に名前が書かれて
+いるファイルを見つけることができます。
 
 なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
 文字エンコーディングの齟齬により，ソフトウェアによっては kpathsea 経由で探し出すことに失敗するケースがあるためです．
