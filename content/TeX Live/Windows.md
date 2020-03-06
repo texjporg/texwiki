@@ -233,7 +233,7 @@ TeX Live 2019 対応の事例です．
 TeX Live 2018 対応の事例です．
 
 - [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
-- [TeX/Install - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
+- [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [TeX Live 2018をインストールした](http://alg-d.com/blog/2018/05/03.shtml)
 - [そうだ， TeX Live 2017 (for Windows) をインストールしよう！](http://text.baldanders.info/remark/2017/09/install-tex-live-2017-for-windows/) --&gt; [TeX Live 2017 から 2018 へのアップグレード](http://text.baldanders.info/remark/2018/09/upgrade-texlive-from-2017-to-2018/)
 
