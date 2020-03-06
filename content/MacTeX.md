@@ -134,7 +134,7 @@ $ sudo tlmgr paper a4
 - [2019年のコンピューターノウハウ (Mac) 4 MacTeX 2019](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2019/node4.html)
 - [MacTeX-2019をインストールするときの説明書：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2019-05-08)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
-- [TeX/Install - 松浦高志のWikiページ](https://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Install)
+- [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
 - [Mac 用 TeX による英文・和文のタイプセット](http://fujioizumi.verse.jp/)
