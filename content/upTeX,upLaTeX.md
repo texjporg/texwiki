@@ -421,7 +421,7 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
 ## 関連リンク {#of92a3e9}
 
 - [upTeX, upLaTeX － 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
-- コミュニティ版 [uptex-base](https://github.com/texjporg/uptex-base), [uptex-fonts](https://github.com/texjporg/uptex-fonts), [uplatex](https://github.com/texjporg/uplatex)
+- コミュニティ版 [uptex-base](https://github.com/texjporg/uptex-base), [uptex-fonts](https://github.com/texjporg/uptex-fonts), [uplatex](https://github.com/texjporg/uplatex), [uptex-manual](https://github.com/texjporg/uptex-manual)
 - [upTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=upTeX)
 - [upLaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=upLaTeX)
 - [［改訂新版］upLaTeXを使おう](http://qiita.com/zr_tex8r/items/5c14042078b20edbfb07) ZRさん
