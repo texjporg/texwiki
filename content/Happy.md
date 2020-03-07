@@ -9,12 +9,15 @@ pukiwiki: "Happy"
 
 ## Happy {#qc7045dc}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## Happy とは {#afbf7ee4}
 
-Happy は TeX を便利に使うためのスクリプトです．<br>
-[サクラエディタ](</サクラエディタ/>) などに対応しています．<br>
+Happy は TeX を便利に使うためのスクリプトです．
+
+[サクラエディタ](</サクラエディタ/>) などに対応しています．
 
 - [Happy](http://www.u-gakugei.ac.jp/~takizawa/Happy/)
     - HappyTeX (TeX タイプセット＆プレビュー支援スクリプト)
@@ -27,11 +30,11 @@ Windows
 
 ## HappyTeX {#la331529}
 
-[サクラエディタ](</サクラエディタ/>) で HappyTeX を使用する場合について記述します．<br>
+[サクラエディタ](</サクラエディタ/>) で HappyTeX を使用する場合について記述します．
 
 ### bin/HappyTeX.ini {#o68500b3}
 
-HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．<br>
+HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．
 
 ■ 64-bit Windows の場合
 
@@ -44,7 +47,7 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin64
 dviout=C:\w32tex\dviout-x64\dviout.exe
-GSmain=C:\Program Files\gs\gs9.26
+GSmain=C:\Program Files\gs\gs9.50
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
 pdfviewer=C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
@@ -66,7 +69,7 @@ Path=C:\Program Files (x86)\sakura\sakura.exe
 LineNumOpt=-X=1 -Y=*
 ArgOrder=1
 
-Path=C:\Program Files (x86)\Mery\Mery.exe
+Path=C:\Program Files\Mery\Mery.exe
 LineNumOpt=/l *
 ArgOrder=1
 
@@ -96,7 +99,7 @@ Type=Tokyo
 [Program]
 TeXbin=C:\w32tex\bin
 dviout=C:\w32tex\dviout\dviout.exe
-GSmain=C:\Program Files\gs\gs9.26
+GSmain=C:\Program Files\gs\gs9.50
 gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
 
 pdfviewer=C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
@@ -139,10 +142,13 @@ EFontType=1
 
 ### editor/Sakura/HappyTeX.vbs {#pf371c1a}
 
-HappyTeX.vbs の ScriptPath に HappyTeX.exe のフルパスを設定します．<br>
-HappyTeX.vbs をサクラエディタのマクロに登録します．<br>
-HappyTeX.vbs をサクラエディタから実行すると以下の様な画面が表示されます．<br>
-LaTeX を実行する場合は \[実行\] をクリックします．<br>
+HappyTeX.vbs の ScriptPath に HappyTeX.exe のフルパスを設定します．
+
+HappyTeX.vbs をサクラエディタのマクロに登録します．
+
+HappyTeX.vbs をサクラエディタから実行すると以下の様な画面が表示されます．
+
+LaTeX を実行する場合は \[実行\] をクリックします．
 
 ***
 
@@ -177,6 +183,8 @@ Warning<br>
 
 ### editor/Sakura/HappyTeX2.vbs {#k547ed0e}
 
-HappyTeX2.vbs の ScriptPath に HappyTeX.exe のフルパスを設定します．<br>
-HappyTeX2.vbs をサクラエディタのマクロに登録します．<br>
-HappyTeX2.vbs をサクラエディタから実行すると HappyTeX.vbs を実行したときに表示される画面は表示されずにすぐに LaTeX が実行されます．<br>
+HappyTeX2.vbs の ScriptPath に HappyTeX.exe のフルパスを設定します．
+
+HappyTeX2.vbs をサクラエディタのマクロに登録します．
+
+HappyTeX2.vbs をサクラエディタから実行すると HappyTeX.vbs を実行したときに表示される画面は表示されずにすぐに LaTeX が実行されます．
