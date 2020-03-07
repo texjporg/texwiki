@@ -78,7 +78,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2018年 {#l525d944}
 
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』（[翔泳社](https://www.shoeisha.co.jp/)，2018年8月，価格 &yen;3,278 (本体 &yen;2,980)，[ISBN 978-4-7981-5707-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](http://www.cutt.co.jp/book/978-4-87783-311-4.html)』（[カットシステム](http://www.cutt.co.jp/)，2018年8月，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
+- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](http://www.cutt.co.jp/book/978-4-87783-438-8.html)』（[カットシステム](http://www.cutt.co.jp/)，2018年8月，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
 
 #### 2017年 {#w6228190}
 
