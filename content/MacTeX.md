@@ -49,14 +49,16 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 - [BibDesk](https://bibdesk.sourceforge.io/)
     - 文献管理ソフト。
+    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
 
 - [LaTeXiT](/LaTeXiT/)
-    - 単独の数式を作成して他のアプリケーションにコピペするのに便利なソフトウェア。
+    - 単独の数式を作成して他のアプリケーションにコピペするのに便利な Mac アプリ。
 
 - [TeX Live Utility](</TeX Live Utility/>)
     - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
     - 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます。
+    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
 
 - [TeXShop](/TeXShop/)
     - macOS 専用の TeX 統合環境。
@@ -67,6 +69,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
     - TeX に対応したスペルチェッカー。
+    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
 
 #### Ghostscript-9.27（アクセス制限回避の脆弱性が存在） --&gt; アクセス制限回避の脆弱性が修正された [Ghostscript 9.50](https://pages.uoregon.edu/koch/) のパッケージがリリースされています {#n1354f54}
 
@@ -91,17 +94,11 @@ MacTeX のインストールの概略は以下のとおりです。
 
 1. [MacTeX のホームページ](http://tug.org/mactex/)または[ミラーサイト](/MacTeX/#mirror)から MacTeX.pkg をダウンロードします。
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
-1. [TeX Live Utility](</TeX Live Utility/>) を用いて最新版までアップデートします。
-
-> - ターミナル上で sudo tlmgr update --self --all を実行してアップデートすることもできます。
-
-1. [TeX Live Utility](</TeX Live Utility/>) を用いてデフォルトの用紙サイズを A4 に変更します。
-
-> - ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更することもできます。
-
+1. ターミナルを起動します。
+    1. sudo tlmgr update --self --all を実行して最新版にアップデートします。
+    1. sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更します。
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
-
-> - [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/) などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
+    1. [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/) などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
 
 #### Homebrew でインストール {#s59a1243}
 
