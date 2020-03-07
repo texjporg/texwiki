@@ -10,7 +10,8 @@ pukiwiki: "TeX Live Utility"
 ## [TeX Live Utility](http://amaxwell.github.io/tlutility/) {#iead361a}
 
 TeX Live のパッケージ管理などができる [TeX Live Manager](</TeX Live Manager/>) の macOS ネイティブの GUI ユーティリティです．
-[MacTeX](/MacTeX/) をインストールすると，アプリケーションフォルダの TeX フォルダの中にインストールされます．
+MacTeX-2019 をインストールすると，アプリケーションフォルダの TeX フォルダの中にインストールされます．
+署名されていないため、MacTeX-2020 pretest 版で削除されました．
 
 ***
 
