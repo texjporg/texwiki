@@ -61,7 +61,7 @@ Ryimun-Light と GothicBBB-Meduim は埋め込まれていないフォントを�
 Adobe Acrobat Reader DC は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
 Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパック
 
-- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6484)
+- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6839)
 - [Adobe - Adobe Reader : For Macintosh : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6486)
 
 はインストール済みとします。
