@@ -37,7 +37,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
     起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
     pdfclose を繰り返すのが良いでしょう。
 
-- [Adobe Reader XI のサポートは 2017年10月15日（日）に終了しました](https://www.adobe.com/jp/information/acrobat/endsupport.html)．
+- [Adobe Reader XI のサポートは 2017年10月15日（日）に終了しました](https://www.adobe.com/jp/information/acrobat/eosnotice.html)．
 
 ### 公式 Web ページ {#t103678c}
 
@@ -66,7 +66,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
     - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/)
 - Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x
-    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6484](https://supportdownloads.adobe.com/detail.jsp?ftpID=6484)
+    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6839](https://supportdownloads.adobe.com/detail.jsp?ftpID=6839)
     - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/)
 - Adobe Acrobat DC
     - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows)
@@ -117,8 +117,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_ja_JP.exe
-wine AcroRdrDC1902120058_ja_JP.exe
+wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/2000620034/AcroRdrDC2000620034_ja_JP.exe
+wine AcroRdrDC2000620034_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
