@@ -71,6 +71,8 @@ TeX や LaTeX に関する本の紹介です．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
+#### 2020年 {#q26632bb}
+
 #### 2019年 {#sf1a21f3}
 
 - [坂東慶太](https://twitter.com/BandoKeita)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
@@ -112,6 +114,8 @@ TeX や LaTeX に関する本の紹介です．
 #### 2010年 {#w6539047}
 
 #### 2009年 {#f22a42b4}
+
+- 豊沢 聡『[LaTeXの精義](http://www.cutt.co.jp/book/978-4-87783-230-8.html)』（[カットシステム](http://www.cutt.co.jp/)，2009年11月，税込価格 &yen;3,240 (本体 &yen;3,000)，[ISBN 978-4-87783-230-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-230-8)）
 
 #### 2008年 {#qb443317}
 
