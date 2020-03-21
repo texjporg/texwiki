@@ -119,7 +119,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2008年 {#qb443317}
 
-- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,376，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
+- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
     ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
 
 - 吉永 徹美『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
@@ -140,8 +140,8 @@ TeX や LaTeX に関する本の紹介です．
 #### 2006年 {#za2d8d5e}
 
 - [阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)
-    『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](http://www.saiensu.co.jp/?page=book_details&ISBN=ISBN4-7819-1158-7)』
-    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月，価格 &yen;2,376 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
+    『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
+    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月，価格 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
 #### 2005年 {#naf302ff}
@@ -150,8 +150,8 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2003年 {#d710115e}
 
-- [皆本 晃弥](http://www.ma.is.saga-u.ac.jp/minamoto/)『[やさしく学べる pLaTeX2e 入門 —文書作成からプレゼンテーションまで—](http://www.saiensu.co.jp/books-htm/ISBN978-4-7819-1032-1.htm)』
-    （サイエンス社，2003年6月，定価 &yen;2,916 (本体 &yen;2,700)，[ISBN 978-4-7819-1032-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1032-1)）……情報処理教育と
+- [皆本 晃弥](http://www.ma.is.saga-u.ac.jp/minamoto/)『[やさしく学べる pLaTeX2e 入門 —文書作成からプレゼンテーションまで—](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1032-1&y=2003)』
+    （サイエンス社，2003年6月，定価 &yen;2,970 (本体 &yen;2,700)，[ISBN 978-4-7819-1032-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1032-1)）……情報処理教育と
     しての講義・演習に使える pLaTeX2e の入門書。
     基本から数式，表作成，パッケージ，Web，プレゼンテーションへの利用まで解説。
     複雑な数式も扱えるように AMS-LaTeX についても紹介している。
@@ -159,19 +159,13 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2002年 {#cd408659}
 
-- 横尾 英俊『[LaTeXユーザのためのレポート・論文作成入門](https://www.kyoritsu-pub.co.jp/bookdetail/9784320005655)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，2002年，税込価格 &yen;2,376，[ISBN 978-4-320-00565-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-00565-5)）
-
 #### 2001年 {#f1b02c0b}
-
-- Adobe Systems 著，桑沢清志 訳
-    『[PostScript リファレンスマニュアル 第3版 (電子出版シリーズ)](http://web.archive.org/web/20160212073106/http://ascii.asciimw.jp/books/books/detail/4-7561-3822-5.shtml)』
-    （アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) の アスキー・メディアワークス），2001年6月，定価 &yen;9,504 (本体 &yen;8,800)，[ISBN 978-4-7561-3822-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-3822-4)）
 
 #### 2000年 {#o161a1dd}
 
 - 生田 誠三
     『[LaTeX2e 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
-    （朝倉書店，2000年6月，定価 &yen;6,264 (税込)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+    （朝倉書店，2000年6月，定価 &yen;6,380 (本体 &yen;5,800)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 ### 書籍 (絶版) {#qa17acad}
 
