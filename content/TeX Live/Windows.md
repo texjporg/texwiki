@@ -216,6 +216,11 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [windowsにtexliveをインストール出来ません](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
 - [インストーラーの初期化に失敗しました。](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
 
+MinGWが悪さをする場合もあるようです．
+
+- [Error installing latest version of TeX Live on Windows 10](https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10)
+- [No Such Blog or Diary - 今日の疑問](https://emoken.net/blog2/category_6/archive/2020-01-10/)
+
 <!-- ***TeXworks の設定 [#wa1faa7d] -->
 
 <!-- LaTeX 用のエディタとして [[TeXworks]] が TeX Live とともにインストールされています． -->
