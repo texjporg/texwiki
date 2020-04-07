@@ -179,6 +179,34 @@ yaxis("$y$",LeftRight,RightTicks);
 [dnorm-asy.pdf](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.pdf), 
 [dnorm-asy.png](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png)
 
+#### 日本語対応 (Linux/BSD/macOS/Windows共通) {#k4f596cf}
+
+AsymptoteスクリプトをUTF-8で書いてその中でbxcjkjatypeパッケージの利用を指定すれば，config.asyを設けなくても日本語を含むEPSやPDFが生成できるようです。
+例:
+
+```
+texpreamble("\usepackage[whole]{bxcjkjatype}");
+for(int i=0; i<=9; i+=1){
+  draw(shift(4.5W+(i-4.5)*N)*(0E--9E));
+  draw(shift(4.5S+(i-4.5)*E)*(0N--9N));
+}
+string[] k={"一", "二", "三", "四", "五", "六", "七", "八", "九"};
+for(int i=1; i<=9; i+=1){
+  label(format("%d", i), (i-5)*W+5N);
+  label(scale(0.8)*k[i-1], 5E+(i-5)*S);
+}
+label("将棋図巧\quad 第一番", 6S);
+void put(pair z, string s, transform t){label(t*s, (z.x-5)*W+(z.y-5)*S);}
+void operator +(pair z, string s){put(z, s, rotate(0));}
+void operator -(pair z, string s){put(z, s, rotate(180));}
+5+1I+"角"; 7+1I+"金"; 7+2I+"と"; 9+2I+"金"; 8+3I+"歩"; 8+6I+"香"; 5+7I+"龍";
+8+8I+"銀"; 7+9I+"桂";
+10+6I+"▲"; 10+7I+"歩"; 10+8I+"銀";
+8+1I-"歩"; 8+2I-"銀"; 9+3I-"歩"; 6+4I-"銀"; 7+4I-"香"; 9+4I-"桂"; 6+5I-"玉";
+1+6I-"角"; 3+6I-"龍"; 9+6I-"桂"; 6+7I-"歩"; 8+7I-"と";
+unitsize(15pt);
+```
+
 ### 関連リンク {#xbb02c40}
 
 - [Asymptote project on GitHub](https://github.com/vectorgraphics/asymptote)
