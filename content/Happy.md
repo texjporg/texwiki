@@ -54,7 +54,7 @@ pdfviewer=C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR19/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewR20/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
@@ -106,7 +106,7 @@ pdfviewer=C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR19/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewR20/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
