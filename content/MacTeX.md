@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2019 には以下のパッケージが収録されています。
+MacTeX-2020 には以下のパッケージが収録されています。
 
-#### TeXLive-2019 {#v03e546d}
+#### TeXLive-2020 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -47,31 +47,15 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 アプリケーションフォルダの中の TeX フォルダに収められています。
 
-- [BibDesk](https://bibdesk.sourceforge.io/)
-    - 文献管理ソフト。
-    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
-
 - [LaTeXiT](/LaTeXiT/)
     - 単独の数式を作成して他のアプリケーションにコピペするのに便利な Mac アプリ。
-
-- [TeX Live Utility](</TeX Live Utility/>)
-    - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
-    - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
-    - 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます。
-    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
 
 - [TeXShop](/TeXShop/)
     - macOS 専用の TeX 統合環境。
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-アプリケーションフォルダの中の TeX フォルダの中の Docs and Spell Utilities フォルダの中の Spelling フォルダに収められています。
-
-- [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
-    - TeX に対応したスペルチェッカー。
-    - 署名されていないため、MacTeX-2020 pretest 版で削除されました。
-
-#### Ghostscript-9.27（アクセス制限回避の脆弱性が存在） --&gt; アクセス制限回避の脆弱性が修正された [Ghostscript 9.50](https://pages.uoregon.edu/koch/) のパッケージがリリースされています {#n1354f54}
+#### Ghostscript-9.50 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
