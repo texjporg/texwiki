@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2020 には LuaTeX 1.12.0, LuaHBTeX 1.12.0 が収録されています。
+
 TeX Live 2019 には LuaTeX 1.10.0 が収録されています。
 
 TeX Live 2018 には LuaTeX 1.07.0 が収録されています。
@@ -30,6 +32,8 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 2016 年に LuaTeX 1.0.0 がリリースされました。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2020 には内臓 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.12.0) バイナリと LuaHBTeX (1.12.0) バイナリが収録されています。
 
 TeX Live 2019 には内臓 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.10.0) バイナリが収録されています。
 
@@ -42,7 +46,7 @@ LuaTeX 開発者 [Luigi Scarso のツイート](https://twitter.com/luigi_scarso
 
 #### LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
 
-[W32TeX](/W32TeX/) における Windows 用 LuaTeX と LuajitTeX は，最初のオプション，つまり C 言語の言葉で argv\[1\] が -cmdx あるいは --cmdx である場合に限り，日本語ファイル名を使用することができます．その他の場合には日本語ファイル名は使用できません．-cmdx あるいは --cmdx オプションは argv\[1\] でないところに記述しても害はありませんが，何の効果も無く，単に無視されます．なお，この機能は TeX Live 2015 の Win32 版にも持たせる予定です．(2015/01/26 --Akira Kakuto)
+Windows 用 LuaTeX と LuajitTeX も，日本語ファイル名を使用することができます．
 
 #### LuaTeX のプリミティブの変更 {#f5c38821}
 
@@ -66,16 +70,6 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 ### その他パッケージ {#u56aae1f}
 
 - [recursive-input.sty](https://github.com/chemicl-t/recursive-input) フォルダを指定すると、そのフォルダ内を再帰的に探索して全てのファイルを\inputするパッケージ。
-
-### 不具合 {#v600e2c1}
-
-- [http://tracker.luatex.org/view_all_bug_page.php](http://tracker.luatex.org/view_all_bug_page.php)
-
-#### LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプションを使用してバックスラッシュを使用したフルパス指定するとコンパイルできない {#c58950f3}
-
-LuaTeX 1.07.0 で lualatex -cmdx "C:\foo\bar.tex" のように -cmdx オプションを使用してバックスラッシュを使用したフルパス指定するとコンパイルできません。
-
-&#x2d;cmdx オプションを外すあるいは lualatex -cmdx "C:/foo/bar.tex" のようにスラッシュを使用したフルパス指定するとコンパイルできます。
 
 ### 関連リンク {#cdd9fc14}
 
