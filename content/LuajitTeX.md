@@ -52,23 +52,6 @@ LuajitTeX は TeX Live がサポートしている全ての環境で提供され
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
 [LuaTeX-ja](/LuaTeX-ja/) は LuajitTeX にも対応しています．
 
-#### TeX Live の場合 {#t625c951}
-
-TeX Live をインストールした状態では、luajittex は使えますが、luajitlatex を使用するためには、以下のような手順で設定を行う必要があります。
-
-1. kpsewhich fmtutil.cnf で fmtutil.cnf の path を探す。
-1. fmtutil.cnf をエディタで開き、luajitlatex を検索。該当行の行頭は #! でコメントアウトされているので、これを消して行を有効にする。
-1. fmtutil-sys --byfmt luajitlatex を実行。
-1. luajittex --fmt=luajitlatex.fmt foo.tex で latex として使用可。
-
-Windows の場合は、この設定を行うことで luajitlatex.exe が使用できるようになります。Unix 系 OS（macOS を含む）の場合は、~/.bashrc 等に、
-
-```
-   alias luajitlatex='luajittex --fmt=luajitlatex.fmt'
-```
-
-を追加して alias として設定するとよいでしょう。
-
 ### 使い方 {#vad7d54e}
 
 基本的には通常の LuaTeX と同様に使うことができます．
