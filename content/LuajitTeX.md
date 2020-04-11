@@ -23,6 +23,8 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
+TeX Live 2020 には LuajitTeX 1.12.0, LuajitHBTeX 1.12.0 が収録されています。
+
 TeX Live [Revision 52828](http://www.tug.org/svn/texlive?view=revision&revision=52828)，W32TeX \[2019/11/18\] で LuajitLaTeX が削除されました。
 
 TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
@@ -30,6 +32,8 @@ TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
 TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 #### 内臓 LuaJIT 処理系のバージョン {#db5f144e}
+
+TeX Live 2020 には LuaJIT 2.1.0-beta3 が収録されています。
 
 TeX Live 2019 には LuaJIT 2.1.0-beta3 が収録されています。
 
