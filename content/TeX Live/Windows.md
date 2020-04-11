@@ -25,8 +25,8 @@ pukiwiki: "TeX Live/Windows"
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
 「download from a nearby CTAN mirror」から，texlive2020.iso をダウンロードしてください．
-Windows 10, Windows 8.1, Windows 8 では基本機能で ISO イメージの中身を見ることが可能です．
-Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
+Windows 10, Windows 8.1 では基本機能で ISO イメージの中身を見ることが可能です．
+2020 年 1 月 14 日にサポートが終了した Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
@@ -293,6 +293,10 @@ tlmgr update --self --all
 - [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) (GUI)
 
 で管理できます．
+
+## アンインストール {#od7715ce}
+
+\[スタート\]ボタン &gt; \[TeX Live 2020\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
