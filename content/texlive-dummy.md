@@ -77,9 +77,9 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2019-ex.txt
-equivs-build debian-equivs-2019-ex.txt
-sudo dpkg -i texlive-local_2019-1_all.deb
+wget http://www.tug.org/texlive/files/debian-equivs-2020-ex.txt
+equivs-build debian-equivs-2020-ex.txt
+sudo dpkg -i texlive-local_2020-1_all.deb
 ```
 
 ### [Fedora](/Linux/Fedora/) <a id="fedora"></a> {#cf6b23bc}
