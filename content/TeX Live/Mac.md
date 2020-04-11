@@ -30,10 +30,10 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### ［重要］macOS に付属のヒラギノフォント {#yf81dd15}
+### ［非重要］macOS に付属するヒラギノフォント {#yf81dd15}
 
-macOS (OS X El Capitan 以降) に付属のヒラギノフォントを使用したい場合は，インストールと最新へのアップデートが完了した後で，[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
-下記の理由により，これは特に必須というわけではありません。
+macOS High Sierra 以降に付属するヒラギノフォントを使用したい場合は，インストールが完了した後で，[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
+下記の理由により，この設定は必須ではありません。
 
 - TeX Live 2015 およびそれ以前では，PDF を作成すると日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」としてヒラギノフォントの利用を推奨していました。
 - ところが，TeX Live 2016 以降は状況が変わり，TeX Live 2016 から TeX Live 2019 までは標準で IPAex フォントが埋め込まれるようになりました（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)）。TeX Live 2020 以降は標準で原ノ味フォントが埋め込まれるようになりました。そのため，もはやヒラギノフォントを使う設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
@@ -259,7 +259,7 @@ $ sudo tlmgr update --self --all
 tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
-### macOS に付属のヒラギノフォント {#zdc78348}
+### macOS に付属するヒラギノフォント {#zdc78348}
 
 [ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
 
@@ -280,7 +280,7 @@ IPAexフォント/IPAフォントは TeX で使用可能な状態でインスト
     tlmgr および kanji-config-updmap-sys は updmap-sys を内部で呼びだしますが，-sys なしの kanji-config-updmap-sys は -sys なしの updmap を実行します。
     <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は，-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
 
-- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+ \[Wayback Machine\]](http://web.archive.org/web/20190406212917/http://tug.org/mactex/TeXLive2018+Changes.pdf) を参照)
+- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+](http://tug.org/mactex/TeXLive2018+Changes.pdf) を参照)
     TEXMFHOME にフォントを置く場合は，updmap（-sys なし）を実行する必要があります。
     - 埋め込むフォントを細かく制御したい場合は，手動で map ファイルを書き換えます。
 
