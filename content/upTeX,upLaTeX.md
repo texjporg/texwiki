@@ -40,7 +40,7 @@ e-upTeX は upTeX に [e-TeX](/e-TeX/) 拡張を追加したものです。
 以下の様な TeX ファイルを hoge.tex という名前で UTF-8 without BOM で保存します．
 
 ```
-\documentclass[uplatex]{jsarticle}
+\documentclass[uplatex,dvipdfmx]{jsarticle}
 \begin{document}
 日本語①
 \end{document}
@@ -133,7 +133,7 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 
 ```
 % kumo.tex
-\documentclass{utarticle}
+\documentclass[dvipdfmx]{utarticle}
 \begin{document}
 \section{幸田露伴「雲のいろ〳〵――卿雲」}
 景雲といひ、卿雲といひ、慶雲といへる、しかと指し定められたる雲にはあらざるべし。
@@ -219,7 +219,7 @@ jsarticle.cls では、uplatex オプションを追加してください。
 [otf パッケージ](/OTF/)では、uplatex オプションを追加してください。
 
 ```
-\documentclass[uplatex]{jsarticle}
+\documentclass[uplatex,dvipdfmx]{jsarticle}
 \usepackage[uplatex]{otf}
 \begin{document}
   ①②③
@@ -266,7 +266,7 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 以下は、入力例です。
 
 ```
-\documentclass{ujarticle}
+\documentclass[dvipdfmx]{ujarticle}
 ```
 
 ```
@@ -339,7 +339,7 @@ pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱�
 以下は、入力例です。
 
 ```
-\documentclass{ujarticle}
+\documentclass[dvipdfmx]{ujarticle}
 %\usepackage{lmodern}% Latin Modern
 \usepackage[utf8x]{inputenc}
 %\usepackage{type1ec}
