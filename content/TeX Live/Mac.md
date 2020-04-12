@@ -259,13 +259,13 @@ $ sudo tlmgr update --self --all
 tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
-### macOS に付属するヒラギノフォント {#zdc78348}
+### 原ノ味フォント {#zdc78348}
 
-[ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>)を参考に設定を行ってください。
+原ノ味フォントは標準でインストールされていますので，updmap-sys の設定だけで PDF に埋め込めます。
 
 ### IPAexフォント/IPAフォント {#x667dd85}
 
-IPAexフォント/IPAフォントは TeX で使用可能な状態でインストールされていますので，updmap-sys の設定だけですぐに pdf に埋め込めます。
+IPAexフォント/IPAフォントは標準でインストールされていますので，updmap-sys の設定だけで PDF に埋め込めます。
 
 ### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
