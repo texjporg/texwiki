@@ -59,10 +59,10 @@ cjk-gs-integrate を使用することで文字化けせずに出力できるよ
 
 ```
 sudo dnf install ghostscript
-wget https://github.com/texjporg/cjk-gs-support/releases/download/20190816.0/cjk-gs-integrate-20190816.0.tar.gz
-tar xvf cjk-gs-integrate-20190816.0.tar.gz
-cd cjk-gs-integrate-20190816.0
-sudo ./cjk-gs-integrate.pl 
+wget https://github.com/texjporg/cjk-gs-support/releases/download/20200307.0/cjk-gs-integrate-20200307.0.tar.gz
+tar xvf cjk-gs-integrate-20200307.0.tar.gz
+cd cjk-gs-integrate-20200307.0
+sudo ./cjk-gs-integrate.pl --link-texmf --force
 ```
 
 ### [Python](/Python/) {#z2c220a1}
