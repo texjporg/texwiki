@@ -85,7 +85,7 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 以下では，TeXworks をもちいてみます．
 TeXworks は
 
-- TeX Live をインストールした場合はスタートメニューの「TeX Live 2018」→「TeXworks editor」から
+- TeX Live をインストールした場合はスタートメニューの「TeX Live 2020」→「TeXworks editor」から
 - W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
 - W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，コマンドラインから 「texworks」で
 
@@ -106,7 +106,7 @@ Hello World!
 日本語も試してみましょう．今度は次のようにします．
 
 ```
-\documentclass{jsarticle}
+\documentclass[dvipdfmx]{jsarticle}
 \begin{document}
 こんにちは，\LaTeX
 \end{document}
@@ -130,7 +130,7 @@ Hello World!
 コンパイルでエラーが発生すると，TeXworks 下段の「ログの表示」にエラーに関する情報が表示されます．たとえば
 
 ```
-\ddocumentclass{jsarticle}
+\ddocumentclass[dvipdfmx]{jsarticle}
 ```
 
 としてしまうと（dが一つ多い）次のように表示されます．
@@ -138,7 +138,7 @@ Hello World!
 ```
 ! Undefined control sequence.
 l.1 \ddocumentclass
-                   {jsarticle}
+                   [dvipdfmx]{jsarticle}
 ```
 
 「x」または「e」を入力することで，ファイルの編集に戻ることができます．このようにエラーのある箇所が表示されるので，そこを中心に確認してみてください．エラー内容に関しては[LaTeX のエラーメッセージ](</LaTeX のエラーメッセージ/>)も参考にしてください．
@@ -237,4 +237,4 @@ TeX Live, W32TeX 以外にも Windows で利用可能な TeX ディストリビ�
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
 - [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
 
-[^1]: パッケージがより多く含まれているのは TeX Live です（約3,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量を節約できるでしょう．ただし，TeX Live もフルインストールせずに最小限のインストールで済ませれば，それほど容量を必要としません．
+[^1]: パッケージがより多く含まれているのは TeX Live です（約4,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量を節約できるでしょう．ただし，TeX Live もフルインストールせずに最小限のインストールで済ませれば，それほど容量を必要としません．
