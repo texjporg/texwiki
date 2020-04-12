@@ -235,6 +235,7 @@ TeX Live 2020 対応の事例です．
 
 - [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
+- [【VScode】TeX LiveのインストールからAuto Buildの設定まで](https://qiita.com/2019Shun/items/09fffdbd6c9820ff6074)
 
 TeX Live 2019 対応の事例です．
 
