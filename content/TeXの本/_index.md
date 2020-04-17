@@ -115,12 +115,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2009年 {#f22a42b4}
 
-- 豊沢 聡『[LaTeXの精義](http://www.cutt.co.jp/book/978-4-87783-230-8.html)』（[カットシステム](http://www.cutt.co.jp/)，2009年11月，税込価格 &yen;3,240 (本体 &yen;3,000)，[ISBN 978-4-87783-230-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-230-8)）
-
 #### 2008年 {#qb443317}
-
-- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
-    ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
 
 - 吉永 徹美『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](http://www.shoeisha.co.jp/)，2008年3月，販売価格 &yen;3,456，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
