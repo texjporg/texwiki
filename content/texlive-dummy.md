@@ -105,7 +105,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．
 
 ```
-sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2019.9999-1.noarch.rpm
+sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2020.9999-1.noarch.rpm
 ```
 
 ### RHEL/CentOS <a id="rhel"></a> <a id="centos"></a> {#ha758dd0}
