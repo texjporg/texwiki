@@ -15,6 +15,14 @@ pukiwiki: "Ghostscript/macOS"
 
 ***
 
+### 原ノ味フォントの設定 {#x59ee93b}
+
+- [https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389)
+
+```
+$ sudo cjk-gs-integrate --link-texmf --force
+```
+
 ### macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
 
 現在 <span style="color:#FF2800;"><strong>macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
