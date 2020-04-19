@@ -15,6 +15,14 @@ pukiwiki: "Ghostscript/Linux"
 
 ***
 
+### 原ノ味フォントの設定 {#ne11fdca}
+
+- [https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389)
+
+```
+$ sudo cjk-gs-integrate --link-texmf --force
+```
+
 ### ダウンロード/インストール {#g31ae747}
 
 #### Arch Linux {#icf0081e}
