@@ -199,11 +199,11 @@ Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場�
 
 ### TeX Live の場合 {#xf7e038f}
 
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
+デフォルトでは原ノ味フォントを埋め込みます．
 
 ### W32TeX の場合 {#y0816396}
 
-デフォルトでは IPAexMincho・IPAexGothic を埋め込みます．
+デフォルトでは原ノ味フォントを埋め込みます．
 
 ## 組み込みの PDF ビューアで日本語を表示するために使用される代替フォント {#u9344b03}
 
