@@ -34,7 +34,7 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows
+Windows 10
 
 ### ダウンロード {#p4ea6725}
 
