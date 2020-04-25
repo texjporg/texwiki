@@ -20,6 +20,9 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 - macOS 10.15 Catalina
 - macOS 10.14 Mojave
 - macOS 10.13 High Sierra
+- macOS 10.12 Sierra
+- OS X 10.11 El Capitan
+- OS X 10.10 Yosemite
 
 <!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， -->
 <!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
@@ -30,12 +33,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 アプリケーションファイル名は UpTeX.app です。
 基本的にはこれを /Applications 以下などにインストールするとよいでしょう。
 
-インストールしたら，[dvipdfmx](/dvipdfmx/) による PDF 作成で埋め込む日本語フォントを設定します。
-UpTeX.app をダブルクリックで起動し，メニューバーの「UpTeX」-「環境設定」から環境設定パネルを開きます。
-「dvipdfmx のフォント」のプルダウンメニューからお使いの macOS のバージョンに合わせたヒラギノNを選択するとよいでしょう。
-（これはバックグラウンドで kanji-config-updmap-sys --jis2004 を実行します。初回起動時にヒラギノフォントのシンボリックリンクを作成しているため，簡単に設定を完了することができます。）
-
-TeX Live のアップデートは，同じく環境設定パネルから「パッケージの管理」ボタンをクリックしてパッケージ管理ウィンドウを起ちあげ「全て更新」ボタンをクリックします。
+TeX Live のアップデートは，環境設定パネルから「パッケージの管理」ボタンをクリックしてパッケージ管理ウィンドウを起ちあげ「全て更新」ボタンをクリックします。
 （これはバックグラウンドで [tlmgr](/tlmgr/) をターミナルに実行させています。）
 
 以下のインストールのやり方などの事例も参照してください。
@@ -68,7 +66,7 @@ texlive フォルダごと削除してしまってもかまいません。
 
 [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
 
-- Drag &amp; Drop UpTeX 20200415 は TeX Live 2020 scheme-small + collection-langjapanese + α。
+- Drag &amp; Drop UpTeX 20200423 は TeX Live 2020 scheme-small + collection-langjapanese + α。
 - Drag &amp; Drop UpTeX 20190717 は TeX Live 2019 scheme-small + collection-langjapanese + α。
 - Drag &amp; Drop UpTeX 20180702 は TeX Live 2018 scheme-small + collection-langjapanese + α。
 - Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
