@@ -139,6 +139,7 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
  "-e",
  "$dvipdf=q/dvipdfmx %O -o %D %S/",
  "-norc",
+ "-gg",
  "-pdfdvi",
  "%DOC%"
 ]
@@ -163,6 +164,7 @@ Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されてい
  "-e",
  "$makeindex=q/upmendex %O -o %D %S/",
  "-norc",
+ "-gg",
  "-pdflua",
  "%DOC%"
 ]
@@ -189,6 +191,7 @@ macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示され�
  "-e",
  "$dvipdf=q/dvipdfmx %O -o %D %S/",
  "-norc",
+ "-gg",
  "-pdfdvi",
  "%DOC%"
 ]
@@ -213,6 +216,7 @@ macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示され�
  "-e",
  "$makeindex=q/upmendex %O -o %D %S/",
  "-norc",
+ "-gg",
  "-pdflua",
  "%DOC%"
 ]
@@ -436,6 +440,7 @@ settings.json の {} の中に以下の設定を追加・保存します。
 "-e",
 "$makeindex=q/upmendex %O -o %D %S/",
 "-norc",
+"-gg",
 "-pdflua",
 "%DOC%"
 ]
@@ -473,29 +478,21 @@ external を指定した際には，さらにそのビューワーを latex-work
 
 ### SumatraPDF との synctex 連携 {#g142ea7e}
 
+- [https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex)
+
 #### forward search {#g7538c56}
 
 settings.json の {} の中に以下の設定を追加・保存します。
 
 ```
-"latex-workshop.view.pdf.viewer": "external",
-"latex-workshop.view.pdf.external.command": {
-"command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
-"args": [
- "-reuse-instance",
- "%PDF%"
+"latex-workshop.view.pdf.external.synctex.command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+"latex-workshop.view.pdf.external.synctex.args": [
+"-reuse-instance",
+"%PDF%",
+"-forward-search",
+"%TEX%",
+"%LINE%"
 ]
-},
-"latex-workshop.view.pdf.external.synctex": {
-"command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
-"args": [
- "-reuse-instance",
- "-forward-search",
- "%TEX%",
- "%LINE%",
- "%PDF%"
-]
-}
 ```
 
 #### inverse search {#lc044abd}
