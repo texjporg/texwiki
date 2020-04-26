@@ -480,12 +480,29 @@ external を指定した際には，さらにそのビューワーを latex-work
 
 - [https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex)
 
-#### forward search {#g7538c56}
+#### forward and inverse search {#a05fb9f6}
 
-settings.json の {} の中に以下の設定を追加・保存します。
+settings.json の {} の中に以下の設定を追加・保存します。&lt;ユーザー名>の部分は自分のユーザー名に置き換えてください。
 
 ```
-"latex-workshop.view.pdf.external.synctex.command": "C:/Program Files/SumatraPDF/SumatraPDF.exe",
+"latex-workshop.view.pdf.external.synctex.command": "C:/Users/<ユーザー名>/AppData/Local/SumatraPDF/SumatraPDF.exe",
+"latex-workshop.view.pdf.external.synctex.args": [
+"-reuse-instance",
+"%PDF%",
+"-forward-search",
+"%TEX%",
+"%LINE%",
+"-inverse-search",
+"\"C:\\Users\\<ユーザー名>\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd\" -r -g \"%f:%l\""
+]
+```
+
+#### forward search {#g7538c56}
+
+settings.json の {} の中に以下の設定を追加・保存します。&lt;ユーザー名>の部分は自分のユーザー名に置き換えてください。
+
+```
+"latex-workshop.view.pdf.external.synctex.command": "C:/Users/<ユーザー名>/AppData/Local/SumatraPDF/SumatraPDF.exe",
 "latex-workshop.view.pdf.external.synctex.args": [
 "-reuse-instance",
 "%PDF%",
@@ -497,10 +514,10 @@ settings.json の {} の中に以下の設定を追加・保存します。
 
 #### inverse search {#lc044abd}
 
-SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「逆順検索コマンドラインの設定」に以下の設定をします。
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「逆順検索コマンドラインの設定」に以下の設定をします。&lt;ユーザー名>の部分は自分のユーザー名に置き換えてください。
 
 ```
-"C:\Program Files\Microsoft VS Code\bin\code.cmd" -g "%f:%l"
+"C:\Users\<ユーザー名>\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd" -r -g "%f:%l"
 ```
 
 ### 便利な設定 {#o2d1e90d}
