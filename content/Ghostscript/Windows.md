@@ -612,12 +612,12 @@ composefont pop
 ```
 %!
 %%% aliases
-/Ryumin-Light                 /MS-Mincho                   ;
+/Ryumin-Light                 /HaranoAjiMincho-Regular     ;
 /Ryumin-Medium                /MS-Mincho                   ;
 /FutoMinA101-Bold             /HGMinchoB                   ;
 /MidashiMin-MA31              /HGMinchoE                   ;
 %/GothicBBB-Medium             /HGGothicM                   ;
-/GothicBBB-Medium             /MS-Gothic                   ;
+/GothicBBB-Medium             /HaranoAjiGothic-Medium      ;
 /FutoGoB101-Bold              /HGGothicE                   ;
 /MidashiGo-MB31               /HGSoeiKakugothicUB          ;
 /Jun101-Light                 /HGMaruGothicMPRO            ;
