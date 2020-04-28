@@ -117,11 +117,11 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 ```
 %!
 %%% aliases
-/Ryumin-Light                 /IPAexMincho                 ;
+/Ryumin-Light                 /HaranoAjiMincho-Regular     ;
 /Ryumin-Medium                /IPAexMincho                 ;
 /FutoMinA101-Bold             /WadaMin-Bold                ;
 %/MidashiMin-MA31              /                            ;
-/GothicBBB-Medium             /IPAexGothic                 ;
+/GothicBBB-Medium             /HaranoAjiGothic-Medium      ;
 %/GothicBBB-Medium             /VL-Gothic-Regular           ;
 %/FutoGoB101-Bold              /                            ;
 %/MidashiGo-MB31               /                            ;
