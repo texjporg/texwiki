@@ -38,7 +38,6 @@ Windows 10
 
 ### ダウンロード {#p4ea6725}
 
-- [https://sakura-editor.github.io/download.html](https://sakura-editor.github.io/download.html)
 - [https://github.com/sakura-editor/sakura/releases](https://github.com/sakura-editor/sakura/releases)
 - [http://jaist.dl.sourceforge.net/project/sakura-editor/](http://jaist.dl.sourceforge.net/project/sakura-editor/)
 - [https://sourceforge.net/projects/sakura-editor/files/](https://sourceforge.net/projects/sakura-editor/files/)
