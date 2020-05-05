@@ -20,7 +20,7 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 <table>
 <tbody>
 <tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>インポート可能な形式</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
-<tr><td>SVG, PDF, AI (Adobe Illustrator)</td><td>EPS, PS</td><td>SVG, PDF, EPS, PS, ODG</td></tr>
+<tr><td>SVG, PDF</td><td>EPS, PS</td><td>SVG, PDF, EPS, PS, ODG</td></tr>
 </tbody>
 </table>
 
