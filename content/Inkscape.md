@@ -68,15 +68,6 @@ Windows, macOS, Linux
         - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
         - [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
         - [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
-- [svg-inkscape](https://ctan.org/pkg/svg-inkscape), [CTAN:help/Catalogue/entries/svg-inkscape.html](https://mirror.ctan.org/help/Catalogue/entries/svg-inkscape.html)
-    - 使い方は texdoc で確認してください
-
-        ```
-        texdoc svg-inkscape
-        ```
-
-- [InkscapeでTex用の図を作成する方法](http://akitosblog.seesaa.net/article/225071699.html)
-- [InkscapeでLaTeX用の図を書く](http://d.hatena.ne.jp/amarui/20130124/1358995146)
 
 Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS のテキストを除外して LaTeX ファイルを生成できます．
 
@@ -129,6 +120,11 @@ inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
 inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
 ```
 
+## svg – Include and extract SVG pictures in LaTeX documents {#p2c351e1}
+
+- [svg](https://ctan.org/pkg/svg)
+    - \[[LaTeX\] svg --- LaTeX文書にSVG画像を含める方法](http://konoyonohana.blog.fc2.com/blog-entry-432.html)
+
 ## エクステンション {#s696e33c}
 
 ### LaTeX (pdflatex) {#w6edd3aa}
@@ -156,9 +152,19 @@ Inkscape に標準で収録されています．
 
 Inkscape で LaTeX の数式を埋め込むエクステンション．再編集可能．
 
-### [SVG2TikZ](https://github.com/kjellmf/svg2tikz) {#u5ee2f7d}
+### SVG2TikZ, svg2tikz {#u5ee2f7d}
 
 Inkscape 等で作成した SVG ファイルを TikZ のコードに変換するプログラムです．
+
+- [SVG2TikZ](https://github.com/kjellmf/svg2tikz)
+- [svg2tikz](https://github.com/paaguti/svg2tikz)
+- [SVG を TikZ ソースに変換する Docker コンテナを作る](https://qiita.com/doraTeX/items/4d48e86cf3fc6f2ae132)
+
+### svg2pdf {#g07406d0}
+
+- [https://github.com/yambi/bin/blob/master/svg2pdf](https://github.com/yambi/bin/blob/master/svg2pdf)
+- [続・Inkscape SVG の各レイヤを PDF にエクスポートする](http://empitsu.hatenablog.com/entry/2013/02/06/205135)
+- [Inkscapeでプレゼンテーション（jessyinkなし）](http://yambi.hatenablog.com/entry/20140211/1392110852)
 
 ### [JessyInk](https://launchpad.net/jessyink) {#k0206a78}
 
