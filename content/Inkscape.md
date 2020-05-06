@@ -150,7 +150,18 @@ Inkscape に標準で収録されています．
 
 ### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
-Inkscape で LaTeX の数式を埋め込むエクステンション．再編集可能．
+Inkscape で LaTeX のグラフィックスを埋め込むエクステンション．再編集可能．
+
+- [https://github.com/textext/textext](https://github.com/textext/textext)
+- [https://textext.github.io/textext/](https://textext.github.io/textext/)
+
+#### インストール {#j75ce7d3}
+
+- [https://textext.github.io/textext/index.html#installation-toc](https://textext.github.io/textext/index.html#installation-toc)
+
+#### 使用方法 {#fce319ec}
+
+- [https://textext.github.io/textext/index.html#usage-toc](https://textext.github.io/textext/index.html#usage-toc)
 
 ### SVG2TikZ, svg2tikz {#u5ee2f7d}
 
