@@ -55,11 +55,11 @@ Windows, macOS, Linux
 
 ## ダウンロード {#i5a8dfd7}
 
-- [https://inkscape.org/download/](https://inkscape.org/download/)
+- [https://inkscape.org/ja/release/](https://inkscape.org/ja/release/)
 
 ## 不具合 {#caadafb3}
 
-- [https://bugs.launchpad.net/inkscape](https://bugs.launchpad.net/inkscape)
+- [https://gitlab.com/inkscape/inkscape/issues](https://gitlab.com/inkscape/inkscape/issues)
 
 ## PDF/EPS/PS + LaTeX {#d6b72996}
 
