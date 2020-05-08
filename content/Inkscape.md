@@ -158,6 +158,7 @@ Inkscape で LaTeX のグラフィックスを埋め込むエクステンショ�
 #### インストール {#j75ce7d3}
 
 - [https://textext.github.io/textext/index.html#installation-toc](https://textext.github.io/textext/index.html#installation-toc)
+- [FYI：Mac版TeXTextのインストール](https://okumuralab.org/tex/mod/forum/discuss.php?d=2842)
 
 #### 使用方法 {#fce319ec}
 
