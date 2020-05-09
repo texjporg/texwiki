@@ -15,6 +15,8 @@ pukiwiki: "iOS"
 
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
+- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, JavaScript, C, C++ for programming and TeX (texlive 2019, including LuaTeX) for text processing.
+    - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
 - [lib-tex](https://github.com/holzschu/lib-tex) pdftex and luatex as a library. Developped for iOS, but should work on all systems.
     - [Tex-live 2019 binaries](https://github.com/holzschu/lib-tex/releases)
 
