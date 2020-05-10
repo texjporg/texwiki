@@ -117,6 +117,12 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
+上記の ???? は 2020，\* は x86_64-linux または i386-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+
+```
+$ sudo /usr/local/texlive/2020/bin/x86_64-linux/tlmgr path add
+```
+
 #### アップデート {#texliveupdate}
 
 アップデートは
@@ -204,7 +210,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 などがあります．
 ほかにも
 
-- [Common Applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/Common_Applications/Documents)
+- [List of applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/List_of_applications/Documents)
 - [Get a Free Software PDF reader!](http://pdfreaders.org/)
     <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
 
