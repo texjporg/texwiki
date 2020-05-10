@@ -135,6 +135,14 @@ Inkscape に標準で収録されています．
 - [https://gitlab.com/inkscape/extensions/blob/master/pdflatex.inx](https://gitlab.com/inkscape/extensions/blob/master/pdflatex.inx)
 - [https://gitlab.com/inkscape/extensions/blob/master/pdflatex.py](https://gitlab.com/inkscape/extensions/blob/master/pdflatex.py)
 
+#### 動作環境 {#z851d64f}
+
+Windows 10 Pro バージョン 1909 x64、Inkscape 1.0 x64 with Python 3.8.2、TeX Live 2020 win32 版で動作することを確認しています。
+
+macOS ではグレーアウトされて動作しないようですが、解決したようです。--&gt; [Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844)
+
+Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linux 10 (Buster) で動作に失敗するようです。--&gt; [Re: Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない。](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844%23p16693)
+
 #### 使用方法 {#se15d9b2}
 
 \[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[Mathmatics\] &gt; \[LaTeX (pdflatex)...\] を選択．
