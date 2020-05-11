@@ -139,7 +139,7 @@ Inkscape に標準で収録されています．
 
 Windows 10 Pro バージョン 1909 x64、Inkscape 1.0 x64 with Python 3.8.2、TeX Live 2020 win32 版で動作することを確認しています。
 
-macOS ではグレーアウトされて動作しないようですが、解決したようです。--&gt; [Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844)
+macOS ではグレーアウトされて動作しないようですが、TexText が動作するので問題ないようです。--&gt; [Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844)
 
 Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linux 10 (Buster) で動作に失敗するようです。--&gt; [Re: Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない。](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844%23p16693)
 
