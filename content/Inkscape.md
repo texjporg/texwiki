@@ -139,7 +139,7 @@ Inkscape に標準で収録されています．
 
 Windows 10 Pro バージョン 1909 x64、Inkscape 1.0 x64 with Python 3.8.2、TeX Live 2020 win32 版で動作することを確認しています。
 
-macOS ではグレーアウトされて動作しないようですが、TexText が動作するので問題ないようです。--&gt; [Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844), [「Inkscape グレーアウト問題は解決」の報告フォーマットに関して](https://okumuralab.org/tex/mod/forum/discuss.php?d=2845), [Inkscape Can not find the command 'pdflatex'](https://okumuralab.org/tex/mod/forum/discuss.php?d=2847), [Can not find the command &#39;pdflatex&#39; (#1221) · Issues · Inkscape / Inbox · GitLab](https://gitlab.com/inkscape/inbox/issues/1221)
+macOS では Finder からダブルクリックで Inkscape を実行するとグレーアウトされて動作しないようですが、Terminal から Inkscape を実行すると動作するようです。--&gt; [Mac版Inkscape1.0のpdflatex](https://okumuralab.org/tex/mod/forum/discuss.php?d=2849) <!-- macOS ではグレーアウトされて動作しないようですが、TexText が動作するので問題ないようです。- -&gt; [[Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？>forum:2844]], [[「Inkscape グレーアウト問題は解決」の報告フォーマットに関して>forum:2845]], [[Inkscape Can not find the command 'pdflatex'>forum:2847]], [[Can not find the command &#39;pdflatex&#39; (#1221) · Issues · Inkscape / Inbox · GitLab:https://gitlab.com/inkscape/inbox/issues/1221]] -->
 
 Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linux 10 (Buster) で動作に失敗するようです。--&gt; [Re: Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない。](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844%23p16693)
 
