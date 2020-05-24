@@ -8,10 +8,6 @@ pukiwiki: "WinShell3"
 # WinShell3
 
 \documentclass{jsarticle}
-\usepackage{otf}
-
 \begin{document}
-
-日本國\CID{13750}法
-
+Hello \tex
 \end{document}
