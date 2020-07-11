@@ -63,6 +63,13 @@ GUI Applications には以下のアプリケーションが収録されていま
 - MacTeX のリリース後に新しい Ghostscript がリリースされた場合。--&gt; [Richard Koch Home Page](https://pages.uoregon.edu/koch/) から最新版を入手してください。
 - Homebrew または MacPorts を使用して Ghostscript をインストールする場合。
 
+### 諸注意 {#c31c9ec0}
+
+MacTeX には「一度インストールすると、完全なアンインストールは難しい」という性質があります。macOS に TeX 環境を構築する手段には、他にも TeX Live 公式インストーラを利用する方法等があります。MacTeX を利用するべきか、TeX Live 公式インストーラを利用するべきか、それ以外の方法を利用するべきかは <strong>MacTeX をインストールする前に</strong>よく考えて判断してください。
+
+- TeX Live 公式インストーラを用いる方法については [TeX Live/Mac](</TeX Live/Mac/>) または [TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)を参照してください
+- 参考：[MacTeX をおすすめできる場合とそうでない場合（私見） | ラング・ラグー](https://blog.wtsnjp.com/2020/07/07/about-mactex/)
+
 ### インストール {#t244993f}
 
 #### MacTeX.pkg でインストール {#j62e687a}
