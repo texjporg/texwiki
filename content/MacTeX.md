@@ -119,7 +119,7 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
 - [MacでLaTeX2020が使えるようになるまで](https://www.russyi.jp/latex-mac-setup/)
-- [2019年のコンピューターノウハウ (Mac) 4 MacTeX 2019](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2019/node4.html)
+- [2020年のコンピューターノウハウ (Mac) 6 MacTeX 2020](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2020/node6.html)
 - [MacTeX-2019をインストールするときの説明書：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2019-05-08)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
