@@ -225,9 +225,9 @@ pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 ### ChangeLog {#y0777637}
 
 - [https://github.com/texjporg/tltexjp/commits/master](https://github.com/texjporg/tltexjp/commits/master)
-- [https://salsa.debian.org/uwabami-guest/xdvik-ja](https://salsa.debian.org/uwabami-guest/xdvik-ja)
-    - [https://salsa.debian.org/uwabami-guest/xdvik-ja/commits/master](https://salsa.debian.org/uwabami-guest/xdvik-ja/commits/master)
-- [https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1](https://launchpad.net/debian/+source/xdvik-ja/22.87.03+j1.42-1)
+- [https://salsa.debian.org/uwabami/xdvik-ja](https://salsa.debian.org/uwabami/xdvik-ja)
+    - [https://salsa.debian.org/uwabami/xdvik-ja/commits/master](https://salsa.debian.org/uwabami/xdvik-ja/commits/master)
+- [https://launchpad.net/debian/+source/xdvik-ja/22.87.05+j1.42-2](https://launchpad.net/debian/+source/xdvik-ja/22.87.05+j1.42-2)
 - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/)
     - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log)
 
