@@ -24,7 +24,7 @@ MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化�
 
 ### LANG {#w1a07eeb}
 
-- [MSYS2 から Visual C++ （の環境変数を設定するバッチファイル）を叩く](http://d-poppo.nazo.cc/blog/2016/02/msys2-vcvars-bat/)
+- [MSYS2 から Visual C++ （の環境変数を設定するバッチファイル）を叩く](https://blog.miz-ar.info/2016/02/msys2-vcvars-bat/)
 - [CygwinとMSYS2でのWindowsコマンドの文字化け対策](http://myfuturesightforpast.blogspot.jp/2015/10/cygwinmsys2windows.html)
 
 日本語版 Windows では MSYS2 の環境変数 LANG は ja_JP.UTF-8 です．
@@ -86,7 +86,7 @@ $ ../Build --no-clean
 - [http://qiita.com/tags/msys](http://qiita.com/tags/msys)
 - [https://sourceforge.jp/projects/msys2-crossgcc/](https://sourceforge.jp/projects/msys2-crossgcc/)
     - [https://sourceforge.jp/projects/msys2-crossgcc/howto/install](https://sourceforge.jp/projects/msys2-crossgcc/howto/install)
-- [http://d-poppo.nazo.cc/blog/?s=MSYS2](http://d-poppo.nazo.cc/blog/?s=MSYS2)
+- [https://blog.miz-ar.info/?s=MSYS2](https://blog.miz-ar.info/?s=MSYS2)
 - [http://yaritakunai.hatenablog.com/archive/category/MSYS2](http://yaritakunai.hatenablog.com/archive/category/MSYS2)
 - [MSYS2を試してみる](http://verifiedby.me/adiary/055)
 - [MSYS2＋VagrantによるWindowsでのUNIX環境](https://tamosblog.wordpress.com/2014/12/25/msys2_vagrant_1/)
