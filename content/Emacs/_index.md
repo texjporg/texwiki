@@ -36,19 +36,20 @@ GNU Emacs はフリーソフトウェアです．
 
 - [GNU Emacs download - GNU Project](https://www.gnu.org/software/emacs/download.html)
 
-### 派生版 {#n86b811e}
+### OSごとのバイナリ {#n86b811e}
 
 #### Windows {#k091604e}
 
 - [http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/](http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/)
-- [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html) (64-bit binary)
-- [64bit版 GNU Emacs 26.3 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-26-x86_64-win-ime) (64-bit binary)
-- [Emacs Modified for Windows](http://vigou3.gitlab.io/emacs-modified-windows/) (64-bit binary)
+- [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
+    <!-- -[[64bit版 GNU Emacs 26.3 for Windows（w/ IMEパッチ）:https://github.com/mhatta/emacs-26-x86_64-win-ime]] -->
+    <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
 
 #### macOS {#v2ece0ad}
 
-- [Emacs Modified for macOS](http://vigou3.gitlab.io/emacs-modified-macos/)
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
+    <!-- -[[Emacs Modified for macOS:http://vigou3.gitlab.io/emacs-modified-macos/]] -->
+
 - [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
