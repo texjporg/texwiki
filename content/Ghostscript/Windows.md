@@ -67,30 +67,30 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs950w64full-gpl.exe または gs950w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.50” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.50” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の角藤版 Ghostscript インストーラ（gs9530w64full-gpl.exe または gs9530w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.53.0” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.53.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 1. GSview 5.0 で 角藤版 Ghostscript を使用する場合は [GSview#お知らせ](/GSview/#information) を参照して設定をしてください。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.50 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.50 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.53.0 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.53.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.50 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.53.0 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs9.50\bin
+C:\Program Files\gs\gs9.53.0\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs9.50\lib
+C:\Program Files\gs\gs9.53.0\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -100,13 +100,13 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 - 64-bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.50\bin;C:\Program Files\gs\gs9.50\lib;…
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.53.0\bin;C:\Program Files\gs\gs9.53.0\lib;…
     ```
 
 - 32-bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.50\bin;C:\Program Files\gs\gs9.50\lib;…
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.53.0\bin;C:\Program Files\gs\gs9.53.0\lib;…
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
