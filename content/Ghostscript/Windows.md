@@ -67,30 +67,30 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs9532w64full-gpl.exe または gs9532w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.53.2” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.53.2” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の角藤版 Ghostscript インストーラ（gs9533w64full-gpl.exe または gs9533w32full-gpl.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.53.3” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.53.3” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-1. GSview 5.0 で 角藤版 Ghostscript を使用する場合は [GSview#お知らせ](/GSview/#information) を参照して設定をしてください。
+1. GSview 5.0 は gs-9.53.0 以上には対応していません。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.53.2 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.53.2 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.53.3 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.53.3 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.53.2 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.53.3 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs9.53.2\bin
+C:\Program Files\gs\gs9.53.3\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs9.53.2\lib
+C:\Program Files\gs\gs9.53.3\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -100,13 +100,13 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 - 64-bit の場合
 
     ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.53.2\bin;C:\Program Files\gs\gs9.53.2\lib;…
+    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.53.3\bin;C:\Program Files\gs\gs9.53.3\lib;…
     ```
 
 - 32-bit の場合
 
     ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.53.2\bin;C:\Program Files\gs\gs9.53.2\lib;…
+    …;C:\w32tex\bin;C:\Program Files\gs\gs9.53.3\bin;C:\Program Files\gs\gs9.53.3\lib;…
     ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -194,12 +194,12 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 #### GSview {#gsview}
 
-[GSview](/GSview/) は Ghostscript のフロントエンドです。
+[GSview](/GSview/) は Ghostscript のフロントエンドです。gs-9.53.0 以上では使用不可です。
 
 #### PS_View {#psview}
 
 PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
-[TeX Live](</TeX Live/>) (win32) に標準で含まれています。
+[TeX Live](</TeX Live/>) (win32) に標準で含まれています。メンテナンスされていなくて現在ではおそらく使用不可です。
 
 #### SumatraPDF {#f86c5a11}
 
@@ -477,6 +477,7 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
 
 参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです。通常は問題ありませんが，まれに問題を引き起こすかもしれません。
+なお、GSview 5.0 は gs-9.53.0 以上には対応していません。
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
