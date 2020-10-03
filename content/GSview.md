@@ -7,7 +7,7 @@ pukiwiki: "GSview"
 
 # GSview
 
-## [GSview](http://www.ghostgum.com.au/software/gsview.htm) (Ghostgum GSview) {#o3c38991}
+## [GSview](http://www.ghostgum.com.au/software/gsview.htm) (Ghostgum GSview)(非推奨) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
@@ -21,6 +21,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
+- GSview 5.0 は gs-9.53.0 以上には対応していません。
 - gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
     PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
