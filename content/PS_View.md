@@ -7,7 +7,7 @@ pukiwiki: "PS_View"
 
 # PS_View
 
-## [PS_View](http://psview.sourceforge.net/) {#xe5bc4f2}
+## [PS_View](http://psview.sourceforge.net/)(非推奨) {#xe5bc4f2}
 
 PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
 [TeX Live](</TeX Live/>) (win32) に標準で含まれています。
