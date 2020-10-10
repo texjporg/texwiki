@@ -31,9 +31,6 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 - [アドビ、新元号「令和」の合字をAdobe Fontに追加 各ソリューションでも新元号への対応をサポート| Adobe](https://www.adobe.com/jp/news-room/news/201904/20190401-adobe-newera.html)
     - [小塚明朝 Pr6N](https://fonts.adobe.com/fonts/kozuka-mincho-pr6n)
     - [小塚ゴシック Pr6N](https://fonts.adobe.com/fonts/kozuka-gothic-pr6n)
-- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/10/compatibility_1610.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2016/10/compatibility_1610.pdf)
-    - 游明朝 Regular/Light/Demibold
-    - 游ゴシック Regular/Light/Medium/Bold
 - [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506) / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
     - 游明朝体 Pr6N R/M/D
     - 游ゴシック体 Pr6N L/R/M/D/B
@@ -53,3 +50,13 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - ヒラギノ明朝 Pr6N W3/W6 （2書体）
     - ヒラギノ角ゴ Pr6N W3/W6 （2書体）
     - ヒラギノ丸ゴ Pr6N W4 （1書体）
+
+### Adobe-Japan1-7 非対応フォント {#zb516b53}
+
+#### 商用 {#ke35352a}
+
+- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2019/07/compatibility_1907.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2019/07/compatibility_1907.pdf)
+    - 游明朝 Regular/Light/Demibold
+    - 游ゴシック Regular/Light/Medium/Bold
+    - [Windows10の游明朝はどこまでAdobe-Japan1-7をサポートするか?](https://okumuralab.org/tex/mod/forum/discuss.php?d=2953)
+    - [Windows10の游フォントで\CIDしたい話](https://zrbabbler.hatenablog.com/entry/2020/10/10/235701)
