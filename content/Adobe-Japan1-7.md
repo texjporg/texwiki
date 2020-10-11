@@ -55,7 +55,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 #### 商用 {#ke35352a}
 
-- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2019/07/compatibility_1907.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2019/07/compatibility_1907.pdf)
+- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdf)
     - 游明朝 Regular/Light/Demibold
     - 游ゴシック Regular/Light/Medium/Bold
     - [Windows10の游明朝はどこまでAdobe-Japan1-7をサポートするか?](https://okumuralab.org/tex/mod/forum/discuss.php?d=2953)
