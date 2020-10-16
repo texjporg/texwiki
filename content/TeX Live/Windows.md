@@ -143,6 +143,8 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
     - [http://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.kddilabs.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/](http://ftp.riken.jp/CTAN/systems/win32/w32tex/TLW64/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/TLW64/)
+    - [https://texlive.texjp.org/current/w32tex/TLW64/](https://texlive.texjp.org/current/w32tex/TLW64/)
+    - [https://texlive.texjp.org/2020/w32tex/TLW64/](https://texlive.texjp.org/2020/w32tex/TLW64/)
 
 - <strong>FTP</strong>
     - [ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
