@@ -42,7 +42,7 @@ GNU Emacs はフリーソフトウェアです．
 
 - [http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/](http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/)
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
-    <!-- -[[64bit版 GNU Emacs 26.3 for Windows（w/ IMEパッチ）:https://github.com/mhatta/emacs-26-x86_64-win-ime]] -->
+- [64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-27-x86_64-win-ime)
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
 
 #### macOS {#v2ece0ad}
