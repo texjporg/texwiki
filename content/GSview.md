@@ -7,11 +7,12 @@ pukiwiki: "GSview"
 
 # GSview
 
-## [GSview](http://www.ghostgum.com.au/software/gsview.htm) (Ghostgum GSview)(非推奨) {#o3c38991}
+## [GSview](https://git.ghostscript.com/?p=user/ghostgum/gsview.git) (Ghostgum GSview) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
-なお、Artifex GSView 6.0 の開発・サポートは終了しました。
+なお、GSview 5.0 は Ghostscript 9.53.0 以上には対応していません。
+[GSview 5.01 beta は Ghostscript 9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
@@ -21,6 +22,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
+- [GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
 - GSview 5.0 は gs-9.53.0 以上には対応していません。
 - gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
@@ -116,7 +118,7 @@ jisB8=181,258
 
 ### ライセンス {#y06b3066}
 
-AFPL (Aladdin Free Public Licence)
+[GPLv3](https://git.ghostscript.com/?p=user/ghostgum/gsview.git)
 
 ### 関連リンク {#yb0d4b4b}
 
