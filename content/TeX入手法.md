@@ -56,7 +56,7 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
 
 入門書に付属するインストーラからも可能です．
 
-- [［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)
+- [［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)
 
 インストールせずに Web で試してみることもできます．
 
