@@ -36,7 +36,7 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)，黒木裕介 著
 『LaTeX2e 美文書作成入門』
-([改訂第7版](http://okumuralab.org/bibun7/)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
+([改訂第8版](https://github.com/okumuralab/bibun8)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
 
 ### 動作環境 {#f8ed906d}
 
