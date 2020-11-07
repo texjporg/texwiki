@@ -134,6 +134,7 @@ pukiwiki: "TeXの歴史"
 <tr><td style="text-align:center">2017</td><td style="text-align:right">1</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="https://okumuralab.org/bibun7/">『[改訂第7版]LaTeX2e 美文書作成入門』</a>が出版される。</td></tr>
 <tr><td style="text-align:center"></td><td>10</td><td style="text-align:center"></td><td><a href="https://texconf2017.tumblr.com/">TeXConf 2017</a> が開催される。</td></tr>
 <tr><td style="text-align:center">2018</td><td>11</td><td style="text-align:center"></td><td><a href="https://texconf2018.tumblr.com/">TeXConf 2018</a> が開催される。</td></tr>
+<tr><td style="text-align:center">2020</td><td>11</td><td style="text-align:center"></td><td>奥村晴彦, 黒木裕介<a href="https://github.com/okumuralab/bibun8">『［改訂第8版］LaTeX2e美文書作成入門』</a>が出版される。</td></tr>
 </tbody></table>
 
 ### コメントなど {#x6df72ef}
