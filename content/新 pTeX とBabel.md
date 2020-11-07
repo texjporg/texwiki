@@ -44,12 +44,12 @@ Cygwin については
 「[Cygwin - TeX Wiki](/Cygwin/)」
 をご覧ください。
 
-#### 『［改訂第7版］ LaTeX2e 美文書作成入門』第2刷付録 DVD-ROM {#oe0dfa58}
+#### 『［改訂第8版］LaTeX2e美文書作成入門』付録 DVD-ROM {#oe0dfa58}
 
-『[［改訂第7版］ LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』
-第2刷付録 DVD-ROM には
-[TeX Live](</TeX Live/>) 2017 が収録されています。
-TeX Live 2017 には Babel が収録されています。
+『[［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)』
+付録 DVD-ROM には
+[TeX Live](</TeX Live/>) 2020 が収録されています。
+TeX Live 2020 には Babel が収録されています。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
