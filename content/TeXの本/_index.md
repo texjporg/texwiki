@@ -73,6 +73,12 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2020年 {#q26632bb}
 
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2e美文書作成入門](https://gihyo.jp/book/2020/978-4-297-11712-2)』
+    （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，定価 &yen;3,608 (本体 &yen;3,280＋税)，[ISBN 978-4-297-11712-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11712-2)）
+    ……
+    [TeX Live](</TeX Live/>) 2020 を収録した
+    DVD-ROM 付。電子版もあります。
+
 #### 2019年 {#sf1a21f3}
 
 - [坂東慶太](https://twitter.com/BandoKeita)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
