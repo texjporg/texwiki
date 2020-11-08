@@ -22,11 +22,15 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 ### 動作環境 {#w51d5d67}
 
 - [https://doc.qt.io/qt-5/supported-platforms.html](https://doc.qt.io/qt-5/supported-platforms.html)
+- [https://doc-snapshots.qt.io/qt6-dev/supported-platforms.html](https://doc-snapshots.qt.io/qt6-dev/supported-platforms.html)
 
 ## ダウンロード {#de2773fb}
 
+Qt 5.15 以降のオープンソース版のオフラインインストーラーは提供されなくなりました。--&gt; [Qtライセンスに関する変更 – 2020年](https://www.qt.io/jp/blog/qt-offering-changes-2020)
+
 - [https://www.qt.io/download](https://www.qt.io/download)
 - [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/)
+- [http://download.qt.io/development_releases/qt/](http://download.qt.io/development_releases/qt/)
 
 ## 不具合 {#zc678b55}
 
