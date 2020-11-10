@@ -1044,7 +1044,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ)
 - [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
 - [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
-- \[<del>\[Half Face:https://half-face.info/\]</del>\]
+- [TikZのHowTo](https://note.com/okami_room/m/m5d8c7ff3e33b)
 
 ### ChangeLog {#off3b30e}
 
