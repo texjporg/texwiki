@@ -555,6 +555,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 ## 関連リンク {#j2a0a89a}
 
 - [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
+- [&#8220;LyX&#8221; の検索結果  |  数学で行こう](https://blog.lets-go-with-math.net/?s=LyX)
 - [https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2](https://oku.edu.mie-u.ac.jp/tex/mod/forum/search.php?search=LyX&id=2)
 - [スタイルファイルの導入～LyXでのレイアウト設定まで\[Win10+texlive+LyX\]](https://qiita.com/merliborn/items/ac0d0a01f056d9e179b5)
 - [LyXで日本語を使うようにする設定(Windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E8%A8%AD%E5%AE%9Awindows/)
