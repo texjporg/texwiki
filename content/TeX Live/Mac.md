@@ -146,30 +146,30 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo /usr/local/texlive/2020/bin/x86_64-darwin/tlmgr path add
 ```
 
-### Xcode のインストール要求ダイアログについての注意 {#xcode}
-
-Xcode がインストールされていない環境下では，TeX Live のインストーラの実行中，および tlmgr によるアップデートの実行中に，次のようなダイアログが表示されて実行が中断される問題が知られています。
-
-> [<img src="/attach/TeX Live/Mac/XcodeCommandLineTools.png" alt="" width="50%">](</attach/TeX Live/Mac/XcodeCommandLineTools.png>)
-
-cc コマンドの実行のために Xcode Command Line Tools のインストールが要求されているのですが，実際には，Xcode のインストールは必須ではありません。
-「今はしない」をクリックしてスキップして問題なく，そのままインストール・アップデートが続行できます。
-
-なお，このダイアログを出さずに tlmgr を実行するために，次のような回避策が存在します。
-例えば
-
-```
-$ sudo tlmgr update --self
-```
-
-の代わりに
-
-```
-$ sudo bash -c "CC=: tlmgr update --self"
-```
-
-と実行すれば，cc コマンドを無効化して tlmgr を実行できます（ : は「何もしない」という bash の組み込みコマンド）。
-この場合，Xcode のインストールが要求されることなく，tlmgr の実行が正常に完了します。
+<!-- https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2675#p17225 により TeX Live 2020 の tlmgr で対応されたようです。 -->
+<!-- ↓ -->
+<!-- **Xcode のインストール要求ダイアログについての注意 [#xcode] -->
+<!--  -->
+<!-- Xcode がインストールされていない環境下では，TeX Live のインストーラの実行中，および tlmgr によるアップデートの実行中に，次のようなダイアログが表示されて実行が中断される問題が知られています。 -->
+<!--  -->
+<!-- > -->
+<!-- &ref(TeX Live/Mac/XcodeCommandLineTools.png,50%); -->
+<!-- < -->
+<!--  -->
+<!-- cc コマンドの実行のために Xcode Command Line Tools のインストールが要求されているのですが，実際には，Xcode のインストールは必須ではありません。 -->
+<!-- 「今はしない」をクリックしてスキップして問題なく，そのままインストール・アップデートが続行できます。 -->
+<!--  -->
+<!-- なお，このダイアログを出さずに tlmgr を実行するために，次のような回避策が存在します。 -->
+<!-- 例えば -->
+<!--  -->
+<!-- $ sudo tlmgr update - -self -->
+<!--  -->
+<!-- の代わりに -->
+<!--  -->
+<!-- $ sudo bash -c "CC=: tlmgr update - -self" -->
+<!--  -->
+<!-- と実行すれば，cc コマンドを無効化して tlmgr を実行できます（ : は「何もしない」という bash の組み込みコマンド）。 -->
+<!-- この場合，Xcode のインストールが要求されることなく，tlmgr の実行が正常に完了します。 -->
 
 ### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#texlive-install-pacman}
 
