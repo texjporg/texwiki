@@ -78,6 +78,8 @@ TeX や LaTeX に関する本の紹介です．
     ……
     [TeX Live](</TeX Live/>) 2020 を収録した
     DVD-ROM 付。電子版もあります。
+    - [サポートページ](https://github.com/okumuralab/bibun8)
+- 水谷正大『LaTeX超入門 ゼロからはじめる理系の文書作成術』（講談社，ブルーバックス B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 
 #### 2019年 {#sf1a21f3}
 
