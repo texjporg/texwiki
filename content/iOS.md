@@ -16,7 +16,7 @@ pukiwiki: "iOS"
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
 - [iSH](https://ish.app/) A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more!
-    - [https://twilog.org/TrpFrog/search?word=texlive&ao=a](https://twilog.org/TrpFrog/search?word=texlive&ao=a)
+    - [iPadにTeXLiveを突っ込んでLaTeXを書く](https://trpfrog.hateblo.jp/entry/latex-on-ipad)
 - [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, JavaScript, C, C++ for programming and TeX (texlive 2019, including LuaTeX) for text processing.
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
 - [lib-tex](https://github.com/holzschu/lib-tex) pdftex and luatex as a library. Developped for iOS, but should work on all systems.
