@@ -39,7 +39,7 @@ TeX Live のアップデートは，環境設定パネルから「パッケー�
 
 以下のインストールのやり方などの事例も参照してください。
 
-- [OS X El Capitanで複数のエンコーディングに対応したTeXの設定方法](https://ryorsk.wordpress.com/2016/03/26/tex_for_el_capitan/)
+- [macOSでLaTeX環境（Drag &amp; Drop UpTeXを使って）](https://tsuu32.hatenablog.com/entry/2019/08/12/024301)
 
 ### Drag &amp; Drop UpTeX で LuaTeX-ja を使う {#vf102fe3}
 
