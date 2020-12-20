@@ -510,10 +510,6 @@ sudo dnf install lyx
 sudo zypper install lyx
 ```
 
-#### CentOS {#rb8db70c}
-
-- [https://pkgs.org/download/lyx](https://pkgs.org/download/lyx)
-
 ## 不具合 {#h17851b4}
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
