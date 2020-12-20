@@ -116,7 +116,6 @@ make latexpdfja
 - [latex_documentsで \and を使うとLaTeXのビルドでこける](http://d.hatena.ne.jp/tboffice/20121126/1353945728)
 - [Windows8にPDFありのsphinx環境](http://fseek.blogspot.com/2012/11/windows8pdfsphinx.html)
 - [独学Linux : Sphinx を含む記事](http://blog.livedoor.jp/vine_user/search?q=Sphinx)
-- [CentOS5(Scientific Linux 6) + texlive2011 + Sphinx1.1でlatex経由のpdf出力](http://room6933.com/blog/2012/01/16/sphinx2pdf/)
 - [SphinxでTex](http://d.hatena.ne.jp/yukichanko/20100816/1281936940)
 - [Sphinx と W32TeX で PDF 出力](http://d.hatena.ne.jp/hokorobi/20120108/1326023180)
 - [Sphinx で 日本語 pdf を出力する(Mac OS X Lion)](http://d.hatena.ne.jp/shiumachi/20120107/1325930802)
