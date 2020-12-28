@@ -460,10 +460,10 @@ Homebrew, MacPorts でインストールすることもできます．
 
 #### Homebrew {#se88dc8b}
 
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/lyx.rb)
+- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lyx.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lyx.rb)
 
 ```
-brew cask install lyx
+brew install lyx --cask
 ```
 
 #### MacPorts {#q338f601}
