@@ -98,7 +98,7 @@ Homebrew で MacTeX をインストールできます。
 GUI-Applications ありの場合
 
 ```
-$ brew cask install mactex
+$ brew install mactex --cask
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -106,7 +106,7 @@ $ sudo tlmgr paper a4
 GUI-Applications なしの場合
 
 ```
-$ brew cask install mactex-no-gui
+$ brew install mactex-no-gui --cask
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
