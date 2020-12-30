@@ -193,7 +193,7 @@ pTeX, pLaTeX で利用しているコマンド名等は以下のように読み�
 <tbody>
 <tr><td>article.cls </td><td>jarticle.cls </td><td>ujarticle.cls </td><td>tarticle.cls </td><td>utarticle.cls </td></tr>
 <tr><td>report.cls  </td><td>jreport.cls  </td><td>ujreport.cls  </td><td>treport.cls  </td><td>utreport.cls </td></tr>
-<tr><td>book.cls    </td><td>jbook.cls    </td><td>ujreport.cls  </td><td>tbook.cls    </td><td>utreport.cls </td></tr>
+<tr><td>book.cls    </td><td>jbook.cls    </td><td>ujbook.cls  </td><td>tbook.cls    </td><td>utbook.cls </td></tr>
 </tbody>
 </table>
 
