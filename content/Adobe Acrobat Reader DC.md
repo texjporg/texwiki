@@ -16,7 +16,7 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
-- [エンタープライズ管理ガイド - トラックの比較とバージョン表記（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102125.html)
+- [エンタープライズ管理ガイド - アップデートの管理と環境設定（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq05121335.html)
 
 ***
 
@@ -137,7 +137,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ### iOS {#ac2b971a}
 
-- [Adobe Acrobat Reader on the App Store](https://apps.apple.com/jp/app/adobe-reader/id469337564)
+- [Adobe Acrobat Reader for PDF on the App Store](https://apps.apple.com/jp/app/adobe-reader/id469337564)
 
 ## アンインストール {#j28c578e}
 
