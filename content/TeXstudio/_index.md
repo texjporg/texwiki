@@ -123,7 +123,7 @@ Karabiner で Backslash が優先されるようにキーバインドを変更�
 Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
 「高度なオプションの表示」を ON にして「詳細なエディタ設定」から「ハック/回避策」の「最適なディスプレイオプションの自動選択」を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
 
-なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした．
+<!-- なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした． -->
 
 - [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
 
@@ -149,25 +149,24 @@ poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)�
 poppler-data を配置する場所は strings と grep で調べることができます．
 
 ```
-$ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.??.dylib | grep poppler
+$ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.*.dylib | grep poppler
 ```
 
-TeXstudio 2.12.22 の場合は出力結果は以下のようになります．
+TeXstudio 3.0.4 の場合は出力結果は以下のようになります．
 
-> /usr/local/Cellar/poppler/0.79.0-texworks/share/poppler/ColorProfiles/<br>
-> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/0.79.0-texworks/share/poppler</span>;<br>
+> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler/20.10.0/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
 
-出力結果から /usr/local/Cellar/poppler/0.79.0-texworks/share/poppler が poppler-data を配置するディレクトリになります．
+出力結果から /usr/local/Cellar/poppler/20.10.0/share/poppler が poppler-data を配置するディレクトリになります．
 
 poppler-data をインストールします．
 
 ```
 $ cd ~
-$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz
-$ tar xvf poppler-data-0.4.9.tar.gz
-$ sudo mkdir -p /usr/local/Cellar/poppler/0.79.0-texworks/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.9/* /usr/local/Cellar/poppler/0.79.0-texworks/share/poppler
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.10.tar.gz
+$ tar xvf poppler-data-0.4.10.tar.gz
+$ sudo mkdir -p /usr/local/Cellar/poppler/20.10.0/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.10/* /usr/local/Cellar/poppler/20.10.0/share/poppler
 ```
 
 <!-- poppler-data は以下のように配置されます． -->
