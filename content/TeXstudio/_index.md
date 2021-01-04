@@ -140,7 +140,8 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### macOS の場合 {#ued437e7}
 
-- [MacにTeXstudio(2017版)の環境を構築し、日本語入力出来るようになるまで](https://saisyojyugyo.com/tex-studio-on-mac)
+- [TexStudio日本語設定（Macでもok）](https://okb-mathphys.wixsite.com/oboegaki/texstudio-mac-ok)
+- [MACのTexStudioで日本語を入力＆出力できるようにする](http://robomixcom.hatenablog.com/entry/2020/05/21/014858)
 
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は
 TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します．
@@ -189,6 +190,8 @@ $ sudo cp -pR ~/poppler-data-0.4.10/* /usr/local/Cellar/poppler/20.10.0/share/po
 <!--                             ├─COPYING.gpl2 -->
 <!--                             ├─Makefile -->
 <!--                             └─README -->
+
+TeXstudio を起動している場合は TeXstudio を再起動します．
 
 組み込みの PDF ビューアで日本語が表示できることを確認します．
 
