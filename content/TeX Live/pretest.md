@@ -25,7 +25,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - Network Based Installer, MacTeX, BasicTeX
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [ftp://ftp.math.utah.edu/pub/texlive/tlpretest/](ftp://ftp.math.utah.edu/pub/texlive/tlpretest/)
-    - [https://texlive.texjp.org/pretest/tlnet/](https://texlive.texjp.org/pretest/tlnet/)
+    - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
 - TeX Live ISO Images
     - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
     - [ftp://ftp.math.utah.edu/pub/texlive/Images/test/](ftp://ftp.math.utah.edu/pub/texlive/Images/test/)
