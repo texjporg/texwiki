@@ -92,13 +92,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2017年 {#w6228190}
 
-- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2e 美文書作成入門](https://gihyo.jp/book/2017/978-4-7741-8705-1)』
-    （[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,520 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
-    ……
-    第2刷は [TeX Live](</TeX Live/>) 2017，第1刷は [TeX Live](</TeX Live/>) 2016 を収録した
-    DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2017/978-4-7741-8705-1)もあります。
-    - [奥村晴彦『［改訂第7版］LaTeX2e 美文書作成入門』サポートページ](http://okumuralab.org/bibun7/)
-
 #### 2016年 {#ke204ca5}
 
 - 小林 雅人
@@ -124,6 +117,9 @@ TeX や LaTeX に関する本の紹介です．
 #### 2009年 {#f22a42b4}
 
 #### 2008年 {#qb443317}
+
+- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
+    ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
 
 - 吉永 徹美『[独習 LaTeX2e](http://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](http://www.shoeisha.co.jp/)，2008年3月，販売価格 &yen;3,456，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
@@ -153,12 +149,9 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2003年 {#d710115e}
 
-- [皆本 晃弥](http://www.ma.is.saga-u.ac.jp/minamoto/)『[やさしく学べる pLaTeX2e 入門 —文書作成からプレゼンテーションまで—](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1032-1&y=2003)』
-    （サイエンス社，2003年6月，定価 &yen;2,970 (本体 &yen;2,700)，[ISBN 978-4-7819-1032-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1032-1)）……情報処理教育と
-    しての講義・演習に使える pLaTeX2e の入門書。
-    基本から数式，表作成，パッケージ，Web，プレゼンテーションへの利用まで解説。
-    複雑な数式も扱えるように AMS-LaTeX についても紹介している。
-    - [やさしく学べるpLaTeX2e入門(サポートページ)](http://www.ma.is.saga-u.ac.jp/minamoto/latex/)
+- 生田 誠三
+    『[LaTeX2e 入門](http://www.asakura.co.jp/books/isbn/978-4-254-12157-5/)』
+    （朝倉書店，2003年6月，定価 &yen;3,630 (本体 &yen;3,300＋税)，[ISBN 978-4-254-12157-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12157-5)）
 
 #### 2002年 {#cd408659}
 
@@ -168,7 +161,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - 生田 誠三
     『[LaTeX2e 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
-    （朝倉書店，2000年6月，定価 &yen;6,380 (本体 &yen;5,800)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+    （朝倉書店，2000年6月，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 ### 書籍 (絶版) {#qa17acad}
 
