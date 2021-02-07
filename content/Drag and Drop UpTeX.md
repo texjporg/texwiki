@@ -17,7 +17,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ### 動作環境 {#s8a76771}
 
-- macOS Big Sur 11.0.1
+- macOS Big Sur 11
 - macOS 10.15 Catalina
 - macOS 10.14 Mojave
 - macOS 10.13 High Sierra
