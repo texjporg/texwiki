@@ -96,6 +96,8 @@ install-tl-unx.tar.gz を展開します．
 $ tar xvf install-tl-unx.tar.gz
 ```
 
+<!-- なぜ無意味に yamagata-u.ac.jp 限定にする？→（ここでUnrecognized archive formatのエラーが出た方は、こちらからcurlするとうまくいくかもしれません。https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz） -->
+
 展開したインストーラのディレクトリに移動します．
 
 ```
