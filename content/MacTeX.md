@@ -74,10 +74,7 @@ MacTeX には「一度インストールすると、完全なアンインスト�
 
 #### MacTeX.pkg でインストール {#j62e687a}
 
-- [ftp://ftp.tug.org/tex/mactex/](ftp://ftp.tug.org/tex/mactex/)
-- [ftp://tug.org/historic/systems/mactex/](ftp://tug.org/historic/systems/mactex/)
-
-MacTeX はサイズが大きいので，ダウンロードする際は上の TUG のサイトからではなく[ミラーサイト](/MacTeX/#mirror)を利用してください。
+MacTeX はサイズが大きいので，ダウンロードする際は[ミラーサイト](/MacTeX/#mirror)を利用してください。
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
 Google Chrome, Mozilla Firefox で MacTeX をダウンロードしてインストールできない場合は Safari でダウンロードしてください。
 
@@ -175,19 +172,7 @@ $ sudo tlmgr paper a4
     - [http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
     - [http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/mac/mactex/)
     - [http://mirror.ctan.org/systems/mac/mactex/](http://mirror.ctan.org/systems/mac/mactex/)
+    - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
+    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
-
-- <strong>FTP</strong>
-    - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](ftp://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
-    - [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
-    - [ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-    - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-    - [ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/mac/mactex/)
-    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
