@@ -13,8 +13,6 @@ TeX Live pretest はミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 
 - [Testing TeX Live before release](http://www.tug.org/texlive/pretest.html)
-- [ftp://ftp.tug.org/texlive/tlpretest/](ftp://ftp.tug.org/texlive/tlpretest/)
-- [ftp://ftp.tug.org/texlive/Images/test/](ftp://ftp.tug.org/texlive/Images/test/)
 - [http://ftp.tug.org/texlive/Images/test/](http://ftp.tug.org/texlive/Images/test/)
 - [http://www.tug.org/texlive/Images/test/](http://www.tug.org/texlive/Images/test/)
 
@@ -24,11 +22,9 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 - Network Based Installer, MacTeX, BasicTeX
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
-    - [ftp://ftp.math.utah.edu/pub/texlive/tlpretest/](ftp://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
 - TeX Live ISO Images
     - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
-    - [ftp://ftp.math.utah.edu/pub/texlive/Images/test/](ftp://ftp.math.utah.edu/pub/texlive/Images/test/)
 
 ### TeX Live pretest のインストール {#j4d40fa3}
 
@@ -54,8 +50,6 @@ Windows PowerShell またはコマンド プロンプトから
 mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
 
 #### Linux {#v9c33c6a}
-
-- [TeX Live 2020 pretest 配布開始](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=1328)
 
 install-tl-unx.tar.gz をダウンロードします．
 
