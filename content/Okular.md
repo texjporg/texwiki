@@ -27,7 +27,7 @@ Windows, macOS, Linux
 
 ### ライセンス {#qbc60c11}
 
-[GPLv2](https://cgit.kde.org/okular.git/tree/COPYING)
+[GPLv2](https://github.com/KDE/okular/blob/master/COPYING)
 
 ### リリース情報 {#v4dc0489}
 
@@ -35,7 +35,7 @@ Windows, macOS, Linux
 
 ### ChangeLog {#h7a9328d}
 
-- [https://cgit.kde.org/okular.git/log/](https://cgit.kde.org/okular.git/log/)
+- [https://github.com/KDE/okular/commits/master](https://github.com/KDE/okular/commits/master)
 
 ### 派生版 {#m771d62f}
 
@@ -75,7 +75,7 @@ choco install okular
 
 ### コマンドラインオプション {#md2d6a7f}
 
-- [https://cgit.kde.org/okular.git/tree/shell/main.cpp](https://cgit.kde.org/okular.git/tree/shell/main.cpp)
+- [https://github.com/KDE/okular/blob/master/shell/main.cpp](https://github.com/KDE/okular/blob/master/shell/main.cpp)
 
 ```
 $ okular --help
