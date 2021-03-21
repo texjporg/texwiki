@@ -332,18 +332,6 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
-<strong>FTP</strong>
-
-- [北陸先端科学技術大学院大学](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [理化学研究所](ftp://ftp.riken.jp/CTAN/systems/win32/w32tex/)
-- [KDDI総合研究所](ftp://ftp.ne.jp/CTAN/systems/win32/w32tex/)
-- [会津大学](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/win32/w32tex/)
-- [山形大学](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [東京大学](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32/) &lt;-- 更新が速い
-- [Ring Server (core.ring.gr.jp)](ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/) &lt;-- 更新が速い
-- [Ring Server (近いサーバー優先)](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [Ring Server](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-
 ### 過去のバージョンの W32TeX {#mirror-old}
 
 何らかの理由で過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：
