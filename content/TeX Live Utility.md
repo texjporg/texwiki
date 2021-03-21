@@ -10,7 +10,7 @@ pukiwiki: "TeX Live Utility"
 ## [TeX Live Utility](http://amaxwell.github.io/tlutility/) {#iead361a}
 
 TeX Live のパッケージ管理などができる [TeX Live Manager](</TeX Live Manager/>) の macOS ネイティブの GUI ユーティリティです．
-署名されていないため、MacTeX-2020 で削除されましたが、
+署名されていなかったため、MacTeX-2020 で削除されましたが、その後署名され
 MacTeX-2021 で復帰しました．
 
 ***
