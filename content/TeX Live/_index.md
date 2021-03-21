@@ -91,10 +91,7 @@ TeX Live に収録されるのは，基本的には
 
 ### [Network Based Installer](http://www.tug.org/texlive/acquire-netinstall.html) {#tlnet}
 
-- [ftp://ftp.tug.org/texlive/tlnet/](ftp://ftp.tug.org/texlive/tlnet/)
-- [ftp://tug.org/historic/systems/texlive/](ftp://tug.org/historic/systems/texlive/)
-
-ネットワーク経由でのインストールは，上の TUG のサイトからでなく以下のミラーサイトを利用してください．
+ネットワーク経由でのインストールは，以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 TeX Live は，ネットワーク経由でのインストールが推奨されています．
 ただし，ネットワーク経由ではうまくインストールできない場合があるので，その場合は ISO Image をダウンロードしてください．
@@ -109,32 +106,16 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - [http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
     - [http://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/tlnet/)
     - [http://mirror.ctan.org/systems/texlive/tlnet/](http://mirror.ctan.org/systems/texlive/tlnet/)
     - [http://texlive.texjp.org/current/tlnet/](http://texlive.texjp.org/current/tlnet/)
+    - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
+    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
-
-- <strong>FTP</strong>
-    - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/](ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/)
-    - [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
-    - [ftp://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](ftp://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
-    - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
-    - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/tlnet/)
-    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 
 ### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#iso}
 
-- [ftp://ftp.tug.org/texlive/Images/](ftp://ftp.tug.org/texlive/Images/)
-- [http://ftp.tug.org/texlive/Images/](http://ftp.tug.org/texlive/Images/)
-- [http://www.tug.org/texlive/Images/](http://www.tug.org/texlive/Images/)
-
 ネットワーク経由のインストールがうまくいかない場合は ISO Image をダウンロードしてください．
-TeX Live の ISO Image はサイズが大きいので，上の TUG のサイトからでなく以下のミラーサイトを利用してください．
+TeX Live の ISO Image はサイズが大きいので，以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 
 - <strong>HTTP</strong>
@@ -147,22 +128,10 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](http://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
     - [http://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/)
     - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - [http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/](http://mirror.math.kyushu-u.ac.jp/tex-archive/systems/texlive/Images/)
     - [http://mirror.ctan.org/systems/texlive/Images/](http://mirror.ctan.org/systems/texlive/Images/)
+    - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
+    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
-
-- <strong>FTP</strong>
-    - [ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/](ftp://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/)
-    - [ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](ftp://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
-    - [ftp://ftp.ne.jp/pub/ctan/systems/texlive/Images/](ftp://ftp.ne.jp/pub/ctan/systems/texlive/Images/)
-    - [ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](ftp://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
-    - [ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.riken.go.jp/pub/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](ftp://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/systems/texlive/Images/)
-    - [ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](ftp://ftp.core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 
 ### [tltexjp](https://texjp.org/#tltexjp) <a id="tltexjp"></a> {#r64bfbe1}
 
@@ -186,7 +155,7 @@ tltexjp は TeX Live の補助リポジトリです．
 ### 関連リンク {#udd48b1b}
 
 - [日本語版 TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
-- [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=TeX+Live)
+- [https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
 
 #### リリース情報 {#k5761e9e}
