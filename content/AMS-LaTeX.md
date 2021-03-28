@@ -24,8 +24,8 @@ TeX Live, W32TeX には最初から含まれていますが，
 - User’s Guide for the amsmath Package  [amsldoc.pdf](https://mirror.ctan.org/macros/latex/required/amslatex/math/amsldoc.pdf)
     （$TEXMF/doc/latex/amslatex/math/amsldoc.pdf）（amsmathの基本的マニュアル）
 
-- Short Math Guide for LaTeX (short-math-guide.pdf from [ftp@ams.org](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)[http@chiba-u.ac.jp](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf))
-    - [「Short Math Guide for LaTeX」を読んで](http://www.le.chiba-u.ac.jp/~aoyama/tex/short-math-guide.pdf)（青山耕治さん）
+- Short Math Guide for LaTeX (short-math-guide.pdf from [ftp@ams.org](ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf)[http@chiba-u.jp](http://bm.skr.jp/tex/short-math-guide.pdf))
+    - [「Short Math Guide for LaTeX」を読んで](http://bm.skr.jp/tex/short-math-guide.pdf)（青山耕治さん）
 
 ### amsmath {#h5d7d27f}
 
