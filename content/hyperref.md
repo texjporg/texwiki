@@ -353,7 +353,7 @@ xelatex の場合はドライバは自動検出されます．指定しないと
 <tr><td>setpagesize</td><td>set page size by special driver commands</td><td><strong>true</strong>/false</td></tr>
 <tr><td>tex4ht</td><td>use TEX4ht backend</td><td style="text-align:center"> -</td></tr>
 <tr><td>textures</td><td>use Textures backend</td><td style="text-align:center"> -</td></tr>
-<tr><td>unicode</td><td>Unicode encoded pdf strings</td><td></td></tr>
+<tr><td>unicode</td><td>Unicode encoded pdf strings</td><td><strong>true</strong>/false <span class="footnote">(v7.00g 2021-02-04でデフォルトtrueに。upLaTeX＋hyperref+pxjahyperでは明示的にfalseにしないとpdfタイトルが文字化けする<a href="https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=3067&amp;parent=18164">場合</a>がある)</span></td></tr>
 <tr><td>urlbordercolor</td><td>color of border around URL links</td><td>RGB値 <strong>0 1 1</strong></td></tr>
 <tr><td>urlcolor</td><td>color of URL links</td><td><strong>magenta</strong></td></tr>
 <tr><td>verbose</td><td>be chatty</td><td>true/<strong>false</strong></td></tr>
