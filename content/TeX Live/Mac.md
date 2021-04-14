@@ -87,8 +87,11 @@ TeX Live のインストールガイド
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
+
+<!-- Unrecognized archive formatのエラーはLオプションがないのが原因？ -->
+<!-- $ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -->
 
 install-tl-unx.tar.gz を展開します．
 
@@ -103,6 +106,8 @@ $ tar xvf install-tl-unx.tar.gz
 ```
 $ cd install-tl*
 ```
+
+<!-- bashならこのままでいいですが，zshだとinstall-tl-unx.tar.gzをrenameしないとcd: string not in pwdとなります... -->
 
 root 権限でインストーラを実行します．
 デフォルトでは Tcl/Tk による GUI インストーラが起動します．-no-gui オプションでテキストモードで起動します．-repository オプションでダウンロードするリポジトリを指定できます．
