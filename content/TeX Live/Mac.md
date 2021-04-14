@@ -147,11 +147,13 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2020，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2020，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください． <!-- $ sudo /usr/local/texlive/2021/bin/universal-darwin/tlmgr path add -->
 
 ```
 $ sudo /usr/local/texlive/2020/bin/x86_64-darwin/tlmgr path add
 ```
+
+<!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
 
 <!-- https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2675#p17225 により TeX Live 2020 の tlmgr で対応されたようです。 -->
 <!-- ↓ -->
