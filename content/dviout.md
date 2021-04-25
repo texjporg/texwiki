@@ -49,13 +49,7 @@ TeX Live の Win32 版には 32-bit 版の dviout が含まれています。
 
 W32TeX には dviout が含まれていないので，追加でインストールする必要があります。
 
-#### 64-bit dviout {#e57715d6}
-
-- [64bit dviout](http://w32tex.org/toolsw32/dviout-x64.zip)
-
-64-bit 版 Susie Plug-in の拡張子は .sph であると仮定してあります。(2014/01/29以降)。
-
-#### 32-bit dviout {#h6957949}
+#### dviout {#h6957949}
 
 - [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
