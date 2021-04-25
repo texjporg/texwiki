@@ -195,7 +195,7 @@ dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2
 
 ## EPS 以外の画像を使うには {#z97e7e7b}
 
-dviout for Windows は Susieプラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。
+dviout for Windows は [Susie](https://www.digitalpad.co.jp/~takechin/)プラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。
 
 - [\`dviout' for package \`graphics'に関しての質問](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2235)
 - [\`dviout' for package \`graphics'.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1569)
