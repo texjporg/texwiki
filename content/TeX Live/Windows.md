@@ -192,7 +192,7 @@ MinGWが悪さをする場合もあるようです．
 TeX Live 2020 対応の事例です．
 
 - [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
-- [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.tsuruo5388.jp/latex-vscode/)
+- [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.russyi.com/tech-latex-vscode/)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [【VScode】TeX LiveのインストールからAuto Buildの設定まで](https://qiita.com/2019Shun/items/09fffdbd6c9820ff6074)
 - [TeXLive2020をインストールしてLaTeXを始める](https://tm23forest.com/contents/texlive2020-install-latex-begin)
