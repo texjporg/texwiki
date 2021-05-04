@@ -74,7 +74,7 @@ svn co svn://tug.org/dviout/trunk
 ```
 
 trunk の dviout.sln をダブルクリックして Microsoft Visual Studio を起動します。
-Solution Explorer から dviwin.c を削除し，BUILD -> Build Solution で dviout をビルドします。
+BUILD -> Build Solution で dviout をビルドします。
 
 コマンドラインから MSBuild を使用してビルドすることもできます。
 
