@@ -196,7 +196,7 @@ Ghostscript などのツールも Homebrew でインストールできます。
 GUI-Applications ありの場合
 
 ```
-$ brew install mactex --cask
+$ brew install --cask mactex
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -204,7 +204,7 @@ $ sudo tlmgr paper a4
 GUI-Applications なしの場合
 
 ```
-$ brew install mactex-no-gui --cask
+$ brew install --cask mactex-no-gui
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -213,7 +213,7 @@ TeX Live をフルインストールしたくない場合は BasicTeX をイン�
 Homebrew で BasicTeX をインストールできます。
 
 ```
-$ brew install basictex --cask
+$ brew install --cask basictex
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 $ sudo tlmgr install collection-langjapanese
