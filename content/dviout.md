@@ -49,18 +49,19 @@ TeX Live の Win32 版には 32-bit 版の dviout が含まれています。
 
 W32TeX には dviout が含まれていないので，追加でインストールする必要があります。
 
-#### dviout {#h6957949}
+### dvioutの配布 {#h6957949}
+
+#### TeX Users Group repositoryの版 (Ver.3.19.0~) {#x61c7151}
 
 - [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
-- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)
-    （安定版）
+- [http://ftp.kddilabs.jp/pub/ctan/dviware/dviout/](http://ftp.kddilabs.jp/pub/ctan/dviware/dviout/) (CTANに登録された最新版のミラー)
 
+#### 東京大学の版 (Ver.3.18.5) {#zdd6e510}
+
+- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)（安定版）
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/) (安定版)
-- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)
-    （安定版のミラー）
-
-- [ftp://ftp.kddilabs.jp/pub/tex/dviout/current/](ftp://ftp.kddilabs.jp/pub/tex/dviout/current/) (安定版のミラー)
-- [ftp://ftp.kddilabs.jp/pub/ctan/dviware/dviout/](ftp://ftp.kddilabs.jp/pub/ctan/dviware/dviout/) (安定版のミラー)
+- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)（安定版のミラー）
+- [http://ftp.kddilabs.jp/pub/tex/dviout/current/](http://ftp.kddilabs.jp/pub/tex/dviout/current/) (安定版のミラー)
 
 ## ビルド {#d0101f83}
 
