@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-お使いの macOS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2020 のバイナリの動作環境](#binary)をお読みください。
+お使いの macOS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2021 のバイナリの動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する（最も多くの Mac で動作する方法です）
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -38,26 +38,26 @@ macOS High Sierra 以降に付属するヒラギノフォントを使用した�
 - TeX Live 2015 およびそれ以前では，標準では出力された PDF ファイルに日本語フォントが埋め込まれませんでした。この状況では，何らかの日本語フォントの埋込設定を「必ず」行う必要があり，この TeX Wiki でも「日本語設定の一環」として macOS に付属するヒラギノフォントの使用を推奨していました。
 - ところが，TeX Live 2016 以降は状況が変わり，TeX Live 2016 から TeX Live 2019 までは標準で IPAex フォントが埋め込まれるようになり（[参考](http://acetaminophen.hatenablog.com/entry/texlive2016-changes#main-7)），TeX Live 2020 以降は標準で原ノ味フォントが埋め込まれるようになりました。そのため，macOS に付属するヒラギノフォントを使用する設定は「日本語設定の一環」ではなく，単に好みの問題となりました。
 
-### はじめに：TeX Live 2020 のバイナリの動作環境 {#binary}
+### はじめに：TeX Live 2021 のバイナリの動作環境 {#binary}
 
-macOS 用として配布される TeX Live 2020 のバイナリは，x86_64-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
+macOS 用として配布される TeX Live 2021 のバイナリは，universal-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
 
-- x86_64-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。
-- x86_64-darwinlegacy バイナリ：それ以前のレガシーな macOS をサポートします[^1]。
+- universal-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします[^1]。
+- x86_64-darwinlegacy バイナリ：それ以前のレガシーな macOS をサポートします。
 
 お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
 具体的には，以下の表を参照してください。&#x2714; マークが macOS と対応するバイナリを示しています。
-なお，MacTeX / BasicTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されていますので，レガシーな macOS では使用できません。
+なお，MacTeX / BasicTeX に付属する TeX Live には universal-darwin バイナリのみが収録されていますので，レガシーな macOS では使用できません。
 
-<div style="text-align:left">TeX Live 2020 が動作する macOS と対応するバイナリ</div>
+<div style="text-align:left">TeX Live 2021 が動作する macOS と対応するバイナリ</div>
 
 <table>
 <tbody>
-<tr><td style="background-color:#f0f0f0"></td><td>x86_64-darwin</td><td>x86_64-darwinlegacy</td></tr>
+<tr><td style="background-color:#f0f0f0"></td><td>universal-darwin</td><td>x86_64-darwinlegacy</td></tr>
 <tr><td style="background-color:#f0f0f0">macOS Big Sur 11</td><td>&#x2714;</td><td></td></tr>
 <tr><td style="background-color:#f0f0f0">macOS 10.15 Catalina</td><td>&#x2714;</td><td></td></tr>
 <tr><td style="background-color:#f0f0f0">macOS 10.14 Mojave</td><td>&#x2714;</td><td></td></tr>
-<tr><td style="background-color:#f0f0f0">macOS 10.13 High Sierra</td><td>&#x2714;</td><td></td></tr>
+<tr><td style="background-color:#f0f0f0">macOS 10.13 High Sierra</td><td></td><td>&#x2714;</td></tr>
 <tr><td style="background-color:#f0f0f0">macOS 10.12 Sierra</td><td></td><td>&#x2714;</td></tr>
 <tr><td style="background-color:#f0f0f0">OS X 10.11 El Capitan</td><td></td><td>&#x2714;</td></tr>
 <tr><td style="background-color:#f0f0f0">OS X 10.10 Yosemite</td><td></td><td>&#x2714;</td></tr>
@@ -81,8 +81,8 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には x86_64-darwin バイナリのみが収録されており，レガシーな macOS にはインストールできません。
-一方，TeX Live 公式のインストーラを使えば，x86_64-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
+を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には universal-darwin バイナリのみが収録されており，レガシーな macOS にはインストールできません。
+一方，TeX Live 公式のインストーラを使えば，universal-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -147,10 +147,10 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2020，\* は x86_64-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください． <!-- $ sudo /usr/local/texlive/2021/bin/universal-darwin/tlmgr path add -->
+上記の ???? は 2021，\* は universal-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2020/bin/x86_64-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2021/bin/universal-darwin/tlmgr path add
 ```
 
 <!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
@@ -374,4 +374,4 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
 
-[^1]: TeX Live 2016 までは universal-darwin バイナリが存在しましたが，TeX Live 2017 で削除されて i386-darwin バイナリと powerpc-darwin バイナリに置き換えられました ([r43871](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=43871))。TeX Live 2018 で i386-darwin バイナリと powerpc-darwin バイナリも削除されました ([r47075](http://www.tug.org/svn/texlive?view=revision&revision=47075))。
+[^1]: TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908)) 
