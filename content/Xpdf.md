@@ -66,9 +66,9 @@ Windows の場合は Xpdf command line tools をインストールしなくて�
 
 #### macOS {#inst-mac}
 
-macOS の [TeX Live](</TeX Live/>) (x86_64-darwin) には Poppler や Xpdf は含まれていないので，別途インストールします。
+macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
-Xpdf 4.02 の場合
+Xpdf 4.03 の場合
 
 - 公式サイトのバイナリを使用する方法
     - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf command line tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
