@@ -54,7 +54,7 @@ Homebrew でインストールすることもできます．
 > [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texmaker.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texmaker.rb)
 
 ```
-brew install texmaker --cask
+brew install --cask texmaker
 ```
 
 #### Linux {#d8deaab2}
