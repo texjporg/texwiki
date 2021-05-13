@@ -117,10 +117,10 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2020，\* は x86_64-linux または i386-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2021，\* は x86_64-linux または i386-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2020/bin/x86_64-linux/tlmgr path add
+$ sudo /usr/local/texlive/2021/bin/x86_64-linux/tlmgr path add
 ```
 
 #### アップデート {#texliveupdate}
