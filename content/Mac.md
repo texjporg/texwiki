@@ -124,12 +124,6 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 - [Hunspell](/Hunspell/)
 - [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/)
 
-このほかにも
-
-- MacWiki:スペルチェック
-
-には，macOS で使用可能なスペルチェッカーが紹介されています。
-
 ## JIS キーボードでバックスラッシュ &#x5c; ではなく円記号 &#xa5; が入力される場合 {#me741d27}
 
 macOS で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
@@ -217,4 +211,3 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 - [Newest &#39;mac&#39; Questions - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/tagged/mac)
 - [The MacOSX-TeX Archives](https://email.esm.psu.edu/pipermail/macosx-tex/)
 - [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
-- MacWiki:リスト/TeX
