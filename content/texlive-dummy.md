@@ -71,6 +71,7 @@ It is however more convenient to have a separate package instead of adding a doz
 - [http://www.tug.org/texlive/debian.html#vanilla](http://www.tug.org/texlive/debian.html#vanilla)
 - [WSL に TeX Live の導入(+AucTeX の設定)#設定](https://qiita.com//ignorant/items/f8039a1e01292afff07f#%E8%A8%AD%E5%AE%9A)
 - [インストール後にやること#dummy パッケージの作成・インストール](http://www.fugenji.org/~thomas/texlive-guide/post_install.html)
+- [WSL+TeX Live環境を一から構築する#TeX 環境構築](https://www.ykyki.com/blog/install-wsl-and-texlive/#tex-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
