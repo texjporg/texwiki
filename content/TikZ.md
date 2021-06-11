@@ -1039,8 +1039,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [BeamerのためのTikZ](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html)
     - 木構造を表す模式図の作成例
 - [Miffy Code Snipets](http://miffysora.wikidot.com/tikz)
-- [TikZを利用した図形描画](http://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)
-    - 初等幾何の作図例（扇型，円を組み合わせた面積，角度）
+- [TikZを利用した図形描画](https://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)、[プレ高数学科](https://unilab.gbb60166.jp/prekou/prekou.htm)
+    - 初等幾何の作図例（扇型，円を組み合わせた面積，角度）、算数・数学の図形・グラフやイラストの描画
 - [http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ)
 - [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
 - [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
