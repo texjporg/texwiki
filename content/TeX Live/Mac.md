@@ -104,7 +104,7 @@ $ tar xvf install-tl-unx.tar.gz
 展開したインストーラのディレクトリに移動します．
 
 ```
-$ cd install-tl*
+$ cd install-tl-2*
 ```
 
 <!-- bashならこのままでいいですが，zshだとinstall-tl-unx.tar.gzをrenameしないとcd: string not in pwdとなります... -->
