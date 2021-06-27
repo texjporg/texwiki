@@ -11,7 +11,7 @@ pukiwiki: "LuaTeX"
 
 LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
 が使える TeX です．[pdfTeX](/pdfTeX/) の後継として期待されています。
-派生版として [LuajitTeX](/LuajitTeX/), [HarfTeX](https://github.com/khaledhosny/harftex) があります．
+派生版として [LuajitTeX](/LuajitTeX/) があります．
 
 ***
 
@@ -21,7 +21,9 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-TeX Live 2020 には LuaTeX 1.12.0, LuaHBTeX 1.12.0 が収録されています。
+TeX Live 2021 には LuaHBTeX 1.13.2, LuaTeX 1.13.2 が収録されています。
+
+TeX Live 2020 には LuaHBTeX 1.12.0, LuaTeX 1.12.0 が収録されています。LuaLaTeX は LuaHBTeX ベースになりました。
 
 TeX Live 2019 には LuaTeX 1.10.0 が収録されています。
 
@@ -33,7 +35,9 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
 
-TeX Live 2020 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.12.0) バイナリと LuaHBTeX (1.12.0) バイナリが収録されています。
+TeX Live 2021 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX (1.13.2) バイナリと LuaTeX (1.13.2) バイナリが収録されています。
+
+TeX Live 2020 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaHBTeX (1.12.0) バイナリと LuaTeX (1.12.0) バイナリが収録されています。
 
 TeX Live 2019 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.10.0) バイナリが収録されています。
 
@@ -118,4 +122,3 @@ GPLv3, GPLv2
 #### 派生版 {#n2ca8cf1}
 
 - [LuajitTeX](/LuajitTeX/)
-- [HarfTeX](https://github.com/khaledhosny/harftex) A TeX enginge with embedded HarfBuzz and Lua
