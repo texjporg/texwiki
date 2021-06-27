@@ -80,6 +80,7 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 sudo apt install equivs
 wget http://www.tug.org/texlive/files/debian-equivs-2021-ex.txt
 equivs-build debian-equivs-2021-ex.txt
+sudo apt install freeglut3
 sudo dpkg -i texlive-local_2021.99999999-1_all.deb
 ```
 
