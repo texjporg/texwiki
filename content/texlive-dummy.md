@@ -110,6 +110,15 @@ texlive-dummy をインストールすると TeX Live/TeX Live for SUSE Linux �
 sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2021.9999-2.noarch.rpm
 ```
 
+### Red Hat Enterprise Linux (RHEL) {#xcb6b24c}
+
+- [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
+    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8](https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8)
+
+```
+sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-8/texlive-dummy-2020-4.el8.noarch.rpm
+```
+
 ### Gentoo Linux <a id="gentoolinux"></a> {#i10c1e71}
 
 - [GentooでTeXLiveを使う話](http://ryokubudoh.hatenadiary.com/entry/2015/12/09/171356)
