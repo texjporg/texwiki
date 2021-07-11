@@ -21,17 +21,9 @@ pukiwiki: "Microsoft Windows"
 
 ***
 
-## TeX ディストリビューション {#distribution}
+## インストール {#install}
 
-TeX 及び関連ソフトウェアをまとめたものを TeX ディストリビューションといいます．
-Windows 上で日本語が利用可能な TeX ディストリビューションは次の二つのどちらかでしょう．
-
-- TeX Live: Windows だけでなく様々な OS で使えるディスビューションです．CTAN にある膨大なパッケージが含まれています．インストールはこちら：[TeX Live/Windows - TeX Wiki](</TeX Live/Windows/>)
-- W32TeX: 角藤さんにより配布されている TeX ディストリビューションです．頻繁に更新がされています．インストールはこちら：[W32TeX - TeX Wiki](/W32TeX/)
-
-どちらを選んでも大差はありません[^1]．
-Web 上の情報は TeX Live の方が多いです．
-日本語の古い情報は W32TeX の方が多いかもしれません（TeX Live に日本語用 TeX が取り込まれたのが 2010 年からのためです）．
+[TeX Live/Windows - TeX Wiki](</TeX Live/Windows/>)を参考にしてTeX Liveをインストールしてください．
 
 ## TeX を使い始める前に：拡張子の表示 {#extension}
 
@@ -236,5 +228,3 @@ TeX Live, W32TeX 以外にも Windows で利用可能な TeX ディストリビ�
 
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
 - [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
-
-[^1]: パッケージがより多く含まれているのは TeX Live です（約4,000）が，実際に一人のユーザが常用するパッケージはそんなに多くありません．W32TeX は通常の用途で必要なパッケージは網羅しているので，フルインストールした場合は W32TeX のほうが容量を節約できるでしょう．ただし，TeX Live もフルインストールせずに最小限のインストールで済ませれば，それほど容量を必要としません．
