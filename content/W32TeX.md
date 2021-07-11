@@ -11,6 +11,8 @@ pukiwiki: "W32TeX"
 
 ## [W32TeX](http://w32tex.org/index-ja.html) {#ba560630}
 
+<strong>配布が終了しました．以下は古い情報です．</strong>
+
 W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです．
 W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
 
