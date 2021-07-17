@@ -71,16 +71,12 @@ TeX を使うには環境変数 Path の設定が必要です．
 
 LaTeX ソース編集には統合環境やテキストエディタが必要です．
 すでにお気に入りのエディタがある場合は，LaTeX 用のマクロがあるか探してみるとよいでしょう．
-特にこだわりのない方は，TeX Live や W32TeX とともにインストールされる [TeXworks](/TeXworks/) がお勧めです． <!-- （長らく推奨されていた [[WinShell]] よりお勧めです．WinShell に関しては[[古い情報]]もご覧ください．） -->
+特にこだわりのない方は，TeX Live とともにインストールされる [TeXworks](/TeXworks/) がお勧めです．
 そのほかのエディタなどについては，この後の[統合環境やエディタのインストール](</Microsoft Windows/#editor>)でも紹介しています．
 
 以下では，TeXworks をもちいてみます．
 TeXworks は
-
-- TeX Live をインストールした場合はスタートメニューの「TeX Live 2020」→「TeXworks editor」から
-- W32TeX を TeX インストーラ 3 でインストールした場合はデスクトップのアイコンから
-- W32TeX を簡易インストーラをもちいて（または自分で展開して）インストールした場合は，コマンドラインから 「texworks」で
-
+スタートメニューの「TeX Live 2021」→「TeXworks editor」から
 起動することができます．
 
 次の四行を入力してみます．
@@ -224,7 +220,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 ## その他の選択肢 {#others}
 
-TeX Live, W32TeX 以外にも Windows で利用可能な TeX ディストリビューションが存在します．
+TeX Live 以外にも Windows で利用可能な TeX ディストリビューションが存在します．
 
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
 - [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
