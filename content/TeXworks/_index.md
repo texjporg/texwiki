@@ -10,7 +10,7 @@ pukiwiki: "TeXworks"
 
 ## TeXworks {#e8144da8}
 
-TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．macOS 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[W32TeX](/W32TeX/)，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
+TeXworks は TeX でドキュメントを作成するためのシンプルな統合環境です．macOS 用の優れた統合環境である [TeXShop](/TeXShop/) をモデルに，同様の環境を全てのシステム上で実現すべく，開発されています．[TeX Live](</TeX Live/>)[^1]，[MiKTeX](/MiKTeX/) 等の TeX ディストリビューションに標準で含まれています．メニューは日本語化されており，[SyncTeX](/SyncTeX/) もサポートしています．
 
 奥村晴彦・黒木裕介『[［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)』では，おすすめの統合環境に TeXworks が紹介されています．
 
@@ -27,7 +27,7 @@ TeXworks は TeX でドキュメントを作成するためのシンプルな統
 
 ### 動作環境 {#ye220c29}
 
-Microsoft Windows（7 以降）, macOS, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](http://doc.qt.io/qt-5/supported-platforms.html)では動作すると思われます．
+Microsoft Windows, macOS, GNU/Linux で利用できます．TeXworks はツールキットとして [Qt](/Qt/) を使用しているため，これら以外にも [Qt がサポートされているプラットフォーム](https://doc.qt.io/qt-6/supported-platforms.html)では動作すると思われます．
 
 ### License {#lccd03cb}
 
@@ -39,7 +39,7 @@ Microsoft Windows（7 以降）, macOS, GNU/Linux で利用できます．TeXwor
 
 ### 設定 {#q50d2378}
 
-TeX Live 2016 以降や W32TeX で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
+TeX Live 2016 以降で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
 
 [TeXworks/設定](</TeXworks/設定/>) を参照．
 
@@ -65,7 +65,7 @@ TeXworks で使用する文字コードはデフォルトでは UTF-8 です．
 <!-- -バイナリエディタで TeXworks.exe を開いて msmincho を検索して msmincho を msgothic に修正して保存 (フォントを埋め込んでいない場合に明朝体が MS-Gothic で表示されるようになります) -->
 <!-- -fontconfig で使用する代替フォントを設定して poppler-data を適切な場所に配置して fontconfig にリンクさせた Poppler を使用して TeXworks をビルド -->
 
-Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．最近の TeX Live や W32TeX の設定では規定で埋め込まれます．
+Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．最近の TeX Live の設定では規定で埋め込まれます．
 
 - dvipdfmx の場合：[dvipdfmx/フォントの設定](</dvipdfmx/フォントの設定/>)を参照．
 - LuaTeX-ja の場合：[LuaTeX-ja](/LuaTeX-ja/#od9778bc) を参照
