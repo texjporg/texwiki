@@ -11,7 +11,7 @@ pukiwiki: "MiKTeX"
 
 MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビューションです．
 TeX Live と並んで国際的に広く使われていますが，日本語 pTeX が含まれていません．
-特別な理由がない限り [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) の利用をおすすめします．
+特別な理由がない限り [TeX Live](</TeX Live/>) の利用をおすすめします．
 
 - [Home - MiKTeX.org](https://miktex.org/)
 - [https://github.com/MiKTeX/miktex](https://github.com/MiKTeX/miktex)
