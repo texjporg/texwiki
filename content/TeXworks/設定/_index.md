@@ -16,7 +16,7 @@ pukiwiki: "TeXworks/設定"
 
 ## 日本語環境用の設定 {#bcc74f23}
 
-以下の（またはそれに対応する）設定は，TeX Live （2016 以降）や W32TeX に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリは，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
+以下の（またはそれに対応する）設定は，TeX Live （2016 以降）に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリは，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
 
 公式サイトの Windows バイナリを使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
 
@@ -105,19 +105,15 @@ OK を押して最初の画面に戻り，必要ならば左上のコンボボ�
 
 ## スペルチェックの辞書の設定 {#vd0f0d24}
 
-TeX Live の TeXworks と macOS の TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．
+TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．
 
-W32TeX の TeXworks はスペルチェックの辞書が含まれているので設定する必要はありません．
-W32TeX に付属のものは，スペルチェック用の英語辞書を前もって入れてあります．
-詳細については，ヘルプを見てください．
-
-### Windows の TeX Live 2020 の場合 {#ycb12d64}
+### Windows の TeX Live 2021 の場合 {#ycb12d64}
 
 1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2020\texmf-config\texworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーが作成されていることを確認します
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2020\texmf-config\texworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2021\texmf-config\texworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーが作成されていることを確認します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2021\texmf-config\texworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\] &gt; \[設定\] &gt; \[エディタ\] &gt; \[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\] &gt; \[スペルチェック\] で辞書を選択します．
 
@@ -133,7 +129,10 @@ W32TeX に付属のものは，スペルチェック用の英語辞書を前も�
 
 ### 設定がうまくいかない場合 {#e58dee18}
 
-texworks で スペルチェッカーがインストールできない ([forum:2651](https://okumuralab.org/tex/mod/forum/discuss.php?d=2651)) を参照してください。
+- texworksでスペルチェッカーが機能しない([forum:3149](https://okumuralab.org/tex/mod/forum/discuss.php?d=3149))
+- texworks で スペルチェッカーがインストールできない ([forum:2651](https://okumuralab.org/tex/mod/forum/discuss.php?d=2651))
+
+を参照してください。
 
 ## フォントの選択 {#h886fb41}
 
