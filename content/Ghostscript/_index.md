@@ -27,7 +27,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在しますので，Ghostscript 9.50 (2019-10-15) 以降に更新してください．
 
-- ただし，TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。TeX Live 2020 では修正される予定です。
+- TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。TeX Live 2020 で修正されました。
 
 - gs-9.50 を使うと [dviout](/dviout/) で EPS 画像が表示できない問題が発生します。gsx: を
     c:\path_to_gs\gs9.50\bin\gswin32c.exe -dDELAYSAFER
@@ -166,7 +166,7 @@ Microsoft Windows では [GSview](/GSview/), PS_View, [SumatraPDF](/SumatraPDF/)
 #### リリース情報 {#jbfe1b2f}
 
 - [http://git.ghostscript.com/?p=ghostpdl.git;a=tags](http://git.ghostscript.com/?p=ghostpdl.git;a=tags)
-- [Ghostscript: Release History](https://www.ghostscript.com/release_history.html)
+- [Ghostscript: Releases](https://www.ghostscript.com/releases.html)
 
 #### ChangeLog {#ua2f6680}
 
