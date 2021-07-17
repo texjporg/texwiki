@@ -24,9 +24,7 @@ pukiwiki: "TeX Live/Windows"
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2020.iso をダウンロードしてください．
-Windows 10, Windows 8.1 では基本機能で ISO イメージの中身を見ることが可能です．
-2020 年 1 月 14 日にサポートが終了した Windows 7 では ISO イメージの中身を見るには [Virtual CloneDrive](http://www.forest.impress.co.jp/library/software/vclonedrive/) などのソフトウェアが追加で必要です．
+「download from a nearby CTAN mirror」から，texlive2021.iso をダウンロードしてください．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
@@ -43,7 +41,7 @@ Windows 10, Windows 8.1 では基本機能で ISO イメージの中身を見る
 かなりの時間がかかります．
 環境にもよりますが，多くの場合一時間から二時間ほどかかると思います．
 
-以下は TeX Live 2020 の install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
+以下は TeX Live 2021 の install-tl-windows.exe を右クリックから「管理者として実行(A)」を選んで実行した例です．
 
 > <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
@@ -108,13 +106,19 @@ Windows 10, Windows 8.1 では基本機能で ISO イメージの中身を見る
 <!-- -[次へ→] を押します． -->
 <!-- -[導入] を押します． -->
 
-[<img src="/attach/TeX Live/Windows/1.png" alt="" width="100%">](</attach/TeX Live/Windows/1.png>)
+<!-- &ref(./1.png,100%); -->
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hkob/20210403/20210403081419.png" alt="" width="100%">
 
 - \[インストール\] を押します．するとインストールが開始します．かなり時間がかかります．
     - 高度な設定を行う場合は \[高度な設定\] をクリックします．
 
-[<img src="/attach/TeX Live/Windows/2.png" alt="" width="100%">](</attach/TeX Live/Windows/2.png>)
-[<img src="/attach/TeX Live/Windows/final.png" alt="" width="100%">](</attach/TeX Live/Windows/final.png>)
+<!-- &ref(./2.png,100%); -->
+<!-- &ref(./final.png,100%); -->
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hkob/20210403/20210403081657.png" alt="" width="100%">
+
+<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/h/hkob/20210403/20210403094336.png" alt="" width="100%">
 
 - インストールが終わると「TeX Live へようこそ！」と表示されるので \[閉じる\] を押します．
 
@@ -157,7 +161,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2020）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2021）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -180,23 +184,19 @@ MinGWが悪さをする場合もあるようです．
 - [Error installing latest version of TeX Live on Windows 10](https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10)
 - [No Such Blog or Diary - 今日の疑問](https://emoken.net/blog2/category_6/archive/2020-01-10/)
 
-<!-- ***TeXworks の設定 [#wa1faa7d] -->
-
-<!-- LaTeX 用のエディタとして [[TeXworks]] が TeX Live とともにインストールされています． -->
-<!-- 手軽で便利なエディタですので，特にこだわりのエディタがなければ使ってみてください． -->
-<!-- スタートメニューから起動することで動きます． -->
-<!-- ただし，日本語用の設定が必要です → [[TeXworks/設定]] をご覧ください． -->
-
 #### インストールのやり方などの事例 {#w0a33f0d}
+
+TeX Live 2021 対応の事例です．
+
+- [2021-w3 : LaTeX 環境の構築(Windows) : BYOD PC のセッティング](https://hkob.hatenablog.com/entry/2021/04/03/100000)
+- [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
 
 TeX Live 2020 対応の事例です．
 
-- [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
 - [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.russyi.com/tech-latex-vscode/)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [【VScode】TeX LiveのインストールからAuto Buildの設定まで](https://qiita.com/2019Shun/items/09fffdbd6c9820ff6074)
 - [TeXLive2020をインストールしてLaTeXを始める](https://tm23forest.com/contents/texlive2020-install-latex-begin)
-- [WindowsでLaTeX2020が使えるようになるまで](https://www.tsuruo5388.jp/latex-windows-setup/)
 
 <!-- TeX Live 2019 対応の事例です． -->
 <!--  -->
@@ -230,7 +230,7 @@ TeX Live 2020 対応の事例です．
 
 ## アップデート {#a6223106}
 
-\[スタート\]ボタン &gt; \[TeX Live 2020\] &gt; \[TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
+\[スタート\]ボタン &gt; \[TeX Live 2021\] &gt; \[TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
 \[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -244,7 +244,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2020\tlpkg\backups
+- C:\texlive\2021\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
@@ -256,9 +256,9 @@ tlmgr update --self --all
 
 で管理できます．
 
-## アンインストール {#od7715ce}
-
-\[スタート\]ボタン &gt; \[TeX Live 2020\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
+<!-- * アンインストール [#od7715ce] -->
+<!--  -->
+<!-- [スタート]ボタン &gt; [TeX Live 2020] &gt; [Uninstall TeX Live] を選択することで，TeX Live をアンインストールすることが可能です． -->
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
