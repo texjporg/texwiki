@@ -23,6 +23,7 @@ TeX Live と並んで国際的に広く使われていますが，日本語 pTeX
 ### インストール {#c18f5cec}
 
 - [Getting MiKTeX - MiKTeX.org](https://miktex.org/download)
+- [MiKTeXのWindowsへのインストール](https://self-development.info/miktex%e3%81%aewindows%e3%81%b8%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab/)
 
 <!-- **注意事項 [#e87c6af7] -->
 
