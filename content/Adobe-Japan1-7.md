@@ -55,8 +55,10 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 #### 商用 {#ke35352a}
 
-- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdf](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdf)
+- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdflive](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdflive)
     - 游明朝 Regular/Light/Demibold
     - 游ゴシック Regular/Light/Medium/Bold
+- Adobe-Japan1-7非対応でもAdobe-Japan1-7のグリフは利用できます(ややこしい)。
     - [Windows10の游明朝はどこまでAdobe-Japan1-7をサポートするか?](https://okumuralab.org/tex/mod/forum/discuss.php?d=2953)
     - [Windows10の游フォントで\CIDしたい話](https://zrbabbler.hatenablog.com/entry/2020/10/10/235701)
+        - [https://github.com/zr-tex8r/ttf-cmaps](https://github.com/zr-tex8r/ttf-cmaps) を利用するとTeXLive2021ではdvipdfmxでフォント埋め込みできます。
