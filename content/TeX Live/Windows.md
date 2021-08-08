@@ -142,7 +142,6 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 - <strong>HTTP</strong>
     - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
-    - [https://texlive.texjp.org/2020/w32tex/TLW64/](https://texlive.texjp.org/2020/w32tex/TLW64/)
 
 - <strong>FTP</strong>
     - [ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](ftp://ftp.core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
