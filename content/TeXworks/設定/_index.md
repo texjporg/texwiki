@@ -122,8 +122,8 @@ TeXworks はスペルチェックの辞書が含まれていないので自分�
 1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
-1. /Users/&lt;ユーザー名>/Library/TeXworks/ ディレクトリが作成されていることを確認します
-1. /Users/&lt;ユーザー名>/Library/TeXworks/dictionaries ディレクトリを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
+1. /Users/&lt;ユーザー名>/Library/TeXworks/ ディレクトリ、もしくは/Users/&lt;ユーザー名>/Library/Application Support/TUG/TeXworks ディレクトリが作成されていることを確認します
+1. 上記の TeXworks ディレクトリの中に dictionaries ディレクトリを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\] &gt; \[設定\] &gt; \[エディタ\] &gt; \[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\] &gt; \[スペルチェック\] で辞書を選択します．
 
