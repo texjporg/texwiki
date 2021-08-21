@@ -174,6 +174,7 @@ MinGWが悪さをする場合もあるようです．
 
 TeX Live 2021 対応の事例です．
 
+- [TeXのインストール](https://coicos.net/site/how2/tex/install/)
 - [2021-w3 : LaTeX 環境の構築(Windows) : BYOD PC のセッティング](https://hkob.hatenablog.com/entry/2021/04/03/100000)
 - [MyTeXpert:TeX Live/Windows](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FWindows)
 
