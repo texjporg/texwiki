@@ -314,8 +314,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2019\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
-> 　　　　　<ins>C:\texlive\2019\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2021\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2021\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
 >
 > <br>
 >
@@ -517,12 +517,6 @@ sudo zypper install lyx
 ### Japanese IME: preedit is shown while selecting conversion candidate {#r4c8f06e}
 
 - [#11723 (Japanese IME: preedit is shown while selecting conversion candidate) – The LyX Project](https://www.lyx.org/trac/ticket/11723)
-
-### macOS の LyX で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#i84c7128}
-
-macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．→ [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
-
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
 
 ## 設定 {#ue19dc3a}
 
