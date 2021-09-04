@@ -102,31 +102,6 @@ export PATH=$PATH:/Library/TeX/texbin
 
 - [Issues · texstudio-org/texstudio · GitHub](https://github.com/texstudio-org/texstudio/issues)
 
-### macOS の TeXstudio で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#ffe2f4b8}
-
-macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです．
-Karabiner で Backslash が優先されるようにキーバインドを変更するといいようです．
-
-また、IME ソフトの Google 日本語入力では文字入力時に円記号を Backslash に変更するオプションがあります.
-これを有効にすると TeXstudio のテキストフィールドには Backslash が入力されますが、実際には正しく Backslash の文字コードが送られていないようです．
-そのため TeXstudio が TeX コマンドを認識できず、自動補完機能が正常に動作しません．
-以上から Google 日本語入力を使用する際も Karabiner を併用するのが良いでしょう．
-
-- [Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)
-- [Macで円記号の代わりにバックスラッシュをデフォルトにする](http://hajimesakurai.hatenablog.com/entry/2015/08/26/222753)
-- [TeXStudio on Macでコマンド補完が使えない](http://qiita.com/o_nishy/items/e674b6e219e3d3bd7381)
-
-### Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがある {#ped67bdd}
-
-% これもバグ報告しています？
-
-Qt 5 版の TeXstudio では，日本語を入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりすることがあります．
-「高度なオプションの表示」を ON にして「詳細なエディタ設定」から「ハック/回避策」の「最適なディスプレイオプションの自動選択」を OFF にして，描画モードを QCE（推奨） から Qt に変更してください．
-
-<!-- なお，Qt 4 版の TeXstudio では，描画モードが QCE（推奨）の場合でも日本語入力するとカーソルが文字の位置からずれたり日本語が重なって表示されたりする現象は発生しませんでした． -->
-
-- [&#x5b;雑記&#x5d;Mac OS YosemiteへのTeX環境の導入(含TeXStudio) | fenrir's memorandum](http://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html)
-
 ## 文字コードの変換 {#v4ac40ab}
 
 TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
