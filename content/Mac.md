@@ -57,7 +57,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
 LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです．
-この場合は，Karabiner で Backslash が優先されるようにキーバインドを変更してください。
+この場合は，[Karabiner](/Karabiner-Elements/) で Backslash が優先されるようにキーバインドを変更してください。
 
 <!-- ここに並べる統合環境は -->
 <!-- 1. TeX ディストリビューションにバンドルされているもの (TeXworks, TeXShop) -->
@@ -159,9 +159,9 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 1. その中に DefaultKeyBinding.dict という名前のテキストファイルを作成し，上記内容を記載する。
 1. 一旦ログアウトして，再ログインすると，\ と ¥ の入れ替えが有効になる。
 
-### Karabiner によるキーバインドの変更 {#karabiner}
+### Karabiner-Elements によるキーバインドの変更 {#karabiner}
 
-macOS 用の汎用的なキーボードカスタマイズツール Karabiner で，¥ を入力すると \ に変換することができます。（〜El Capitan）
+macOS 用の汎用的なキーボードカスタマイズツール [Karabiner-Elements](/Karabiner-Elements/) で，¥ を入力すると \ に変換することができます。
 
 ### Ukelele  によるキーバインドの変更 {#pc59ea4e}
 
