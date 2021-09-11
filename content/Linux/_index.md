@@ -172,8 +172,6 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
     - <strong>[LyX](/LyX/)</strong>
     - <strong>[TeXworks](/TeXworks/)</strong>
     - [Texmaker](/Texmaker/)
-    - GNOME LaTeX
-    - [Kile](/Kile/)
 
 - 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Visual Studio Code](</Visual Studio Code/>)
