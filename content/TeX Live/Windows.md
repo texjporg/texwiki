@@ -141,8 +141,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 インストール方法は 00README.TLW64 を参照してください．
 
 - <strong>HTTP</strong>
-    - [http://mirror.ctan.org/systems/win32/w32tex/TLW64/](http://mirror.ctan.org/systems/win32/w32tex/TLW64/)
-    - [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/TLW64/)
+    - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
 ### トラブル時 {#s0045851}
 
