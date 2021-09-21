@@ -254,9 +254,14 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 どのような環境でも読めるようにするには，フォントを埋め込まなければなりません。
 そのためには OpenType フォントが必要です。
 
+なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
+OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC でのプレビュー・印刷用途を想定しているようです。
+dvipdfmx, lualatex, luajitlatex を利用した Adobe Acrobat Reader DC/Acrobat DC 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
+[TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
+
 #### Microsoft Windows の場合 {#p413a15f}
 
-$TEXMF/fonts/opentype/Adobe/ に Adobe Acrobat Reader DC/Acrobat DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成して必要があれば mktexlsr を実行します。
+$TEXMF/fonts/opentype/Adobe/ に、購入した KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のシンボリックリンクを作成して必要があれば mktexlsr を実行します。
 シンボリックリンクは管理者権限で「Windows PowerShell 」を開き，New-Item コマンドレットを実行あるいは管理者権限で「コマンド プロンプト」を開き， mklink を実行すれば作成できます。
 C:/Windows/Fonts/ にある KozMinPr6N-Regular.otf 等の otf ファイルを $TEXMF/fonts/opentype/Adobe/ に直接コピーすることはライセンス上できません。
 
@@ -293,14 +298,9 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
 
-なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
-OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC でのプレビュー・印刷用途を想定しているようです。
-上のような dvipdfmx, lualatex, luajitlatex を利用したフォントの埋め込みはライセンス違反となりますのでご注意下さい。
-[TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
-
 #### macOS の場合 {#c2475144}
 
-$TEXMFLOCAL/fonts/opentype// ディレクトリ以下に Adobe Acrobat Reader DC の KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のあるディレクトリをシンボリックリンクして mktexlsr を実行します。
+$TEXMFLOCAL/fonts/opentype// ディレクトリ以下に、購入した KozMinPr6N-Regular.otf ・ KozGoPr6N-Medium.otf のあるディレクトリをシンボリックリンクして mktexlsr を実行します。
 
 次のようにして処理します。
 
