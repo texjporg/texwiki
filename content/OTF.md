@@ -30,7 +30,7 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
 
 ## インストール {#g2a8e99e}
 
-TeX Live や W32TeX（フルインストール）とともにインストールされるので，特に追加でインストールする必要はありません。
+TeX Live とともにインストールされるので，特に追加でインストールする必要はありません。
 
 ### CMap {#n2a34850}
 
@@ -104,12 +104,6 @@ Windows PowerShell またはコマンドプロンプトやターミナルエミ�
 >
 >     ```
 >     ptex2pdf -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
->     ```
->
-> - W32TeX の場合
->
->     ```
->     ptex2pdf -l -od "-f noembed04.map" hoge.tex
 >     ```
 >
 
@@ -237,8 +231,7 @@ uplatex で処理する場合に \kcatcode\`゜=18 を追加しています。
 これを追加しない場合は uplatex でエラーが発生します。
 upTeX での kcatcode の既定値が pTeX から変更されているようです。
 
-- W32TeX の upTeX-0.11 ([qa:49088](https://okumuralab.org/~okumura/texfaq/qa/49088.html))
-- pTeX-0.11 の kcatcode の既定値 (Re: W32TeX の...) ([qa:49120](https://okumuralab.org/~okumura/texfaq/qa/49120.html))
+- pTeX-0.11 の kcatcode の既定値 ([qa:49120](https://okumuralab.org/~okumura/texfaq/qa/49120.html))
 - upTeX の kcatcode の既定値(Re: 欧文ギリシア語の...) ([qa:48229](https://okumuralab.org/~okumura/texfaq/qa/48229.html), [qa:48242](https://okumuralab.org/~okumura/texfaq/qa/48242.html))
 
 を参考にしてください。
@@ -273,12 +266,6 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
 >
 >     ```
 >     ptex2pdf -u -l -od "-f uptex-kozuka-pr6n-04.map -f otf-up-kozuka-pr6n.map" hoge.tex
->     ```
->
-> - W32TeX の場合
->
->     ```
->     ptex2pdf -u -l -od "-f kozukapr6n04.map" hoge.tex
 >     ```
 >
 
