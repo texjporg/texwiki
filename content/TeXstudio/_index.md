@@ -118,6 +118,8 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 - [TexStudio日本語設定（Macでもok）](https://okb-mathphys.wixsite.com/oboegaki/texstudio-mac-ok)
 - [MACのTexStudioで日本語を入力＆出力できるようにする](http://robomixcom.hatenablog.com/entry/2020/05/21/014858)
 
+#### 方法1 {#d8cab603}
+
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は
 TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します．
 poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
@@ -169,6 +171,18 @@ $ sudo cp -pR ~/poppler-data-0.4.10/* /usr/local/Cellar/poppler/21.05.0/share/po
 TeXstudio を起動している場合は TeXstudio を再起動します．
 
 組み込みの PDF ビューアで日本語が表示できることを確認します．
+
+#### 方法2 {#fca07def}
+
+上記の方法でディレクトリ/usr/local/Cellar/poppler/21.05.0/share/popplerを作成した場合、brew upgradeを実行した際にエラーが発生してパッケージの更新ができなるなることがあります。それを避けるために、/Applications/texstudio.app/Contents/Frameworks/libpoppler.\*.dylibをバイナリエディタで改変するという方法があります。具体的には、libpoppler.\*.dylibにおいて以下のように文字列を変更します。
+
+(変更前) /usr/local/Cellar/poppler/21.05.0/share/poppler
+
+(変更後) /usr/local/share/poppler______________________\_
+
+アンダースコア\[\_\]部分にはNull文字\[00\]を入力して、変更前後の文字列長を維持してください。
+
+※バイナリファイルの変更になりますので、バックアップをとっておく等、最新の注意を払って各個人の責任のもとで実行してください。
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
