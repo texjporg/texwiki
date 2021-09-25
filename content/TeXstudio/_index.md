@@ -141,10 +141,10 @@ poppler-data をインストールします．
 
 ```
 $ cd ~
-$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.10.tar.gz
-$ tar xvf poppler-data-0.4.10.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz
+$ tar xvf poppler-data-0.4.11.tar.gz
 $ sudo mkdir -p /usr/local/Cellar/poppler/21.05.0/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.10/* /usr/local/Cellar/poppler/21.05.0/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.11/* /usr/local/Cellar/poppler/21.05.0/share/poppler
 ```
 
 <!-- poppler-data は以下のように配置されます． -->
@@ -154,7 +154,7 @@ $ sudo cp -pR ~/poppler-data-0.4.10/* /usr/local/Cellar/poppler/21.05.0/share/po
 <!--     └─local/ -->
 <!--         └─Cellar/ -->
 <!--             └─poppler/ -->
-<!--                 └─0.74.0-texworks/ -->
+<!--                 └─21.05.0/ -->
 <!--                     └─share/ -->
 <!--                         └─poppler/ -->
 <!--                             ├─cidToUnicode/ -->
@@ -174,7 +174,7 @@ TeXstudio を起動している場合は TeXstudio を再起動します．
 
 #### 方法2 {#fca07def}
 
-上記の方法でディレクトリ/usr/local/Cellar/poppler/21.05.0/share/popplerを作成した場合、brew upgradeを実行した際にエラーが発生してパッケージの更新ができなるなることがあります。それを避けるために、/Applications/texstudio.app/Contents/Frameworks/libpoppler.\*.dylibをバイナリエディタで改変するという方法があります。具体的には、libpoppler.\*.dylibにおいて以下のように文字列を変更します。
+上記の方法でディレクトリ/usr/local/Cellar/poppler/21.05.0/share/popplerを作成した場合、brew upgradeを実行した際にエラーが発生してパッケージの更新ができなくなることがあります。それを避けるために、/Applications/texstudio.app/Contents/Frameworks/libpoppler.\*.dylibをバイナリエディタで改変するという方法があります。具体的には、libpoppler.\*.dylibにおいて以下のように文字列を変更します。
 
 (変更前) /usr/local/Cellar/poppler/21.05.0/share/poppler
 
@@ -182,7 +182,7 @@ TeXstudio を起動している場合は TeXstudio を再起動します．
 
 アンダースコア\[\_\]部分にはNull文字\[00\]を入力して、変更前後の文字列長を維持してください。
 
-※バイナリファイルの変更になりますので、バックアップをとっておく等、最新の注意を払って各個人の責任のもとで実行してください。
+※バイナリファイルの変更になりますので、バックアップをとっておく等、細心の注意を払って各個人の責任のもとで実行してください。
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
