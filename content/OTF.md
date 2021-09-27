@@ -361,9 +361,10 @@ TeX Live には，(e-)(u)pTeX エンジン用の [map ファイル](http://www.t
 埋め込み制御は
 
 ```
-$ sudo updmap-sys --setoption jaEmbed noEmbed  （埋め込まない）
-$ sudo updmap-sys --setoption jaEmbed ipaex    （IPAexフォントを埋め込む）
-$ sudo updmap-sys --setoption jaEmbed ipa      （IPAフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed noEmbed   （埋め込まない）
+$ sudo updmap-sys --setoption jaEmbed haranoaji （原ノ味フォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed ipaex     （IPAexフォントを埋め込む）
+$ sudo updmap-sys --setoption jaEmbed ipa       （IPAフォントを埋め込む）
 ```
 
 などを実行すれば dvipdfmx/dvips/xdvi の設定がすべて切り替わります。
@@ -379,14 +380,14 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 自動的に埋め込み設定されるフォント &lt;fontname> は例えば次のものがあります。
 
 ```
-ipaex, ipa
+haranoaji, ipaex, ipa
 （いずれもないときは nofont になります）
 ```
 
 dvipdfmx の設定を一時的に変更したいだけなら，コマンドラインから
 
 ```
-dvipdfmx -f uptex-ipaex.map -f otf-up-ipaex.map hoge.dvi
+dvipdfmx -f uptex-haranoaji-04.map -f otf-up-haranoaji.map hoge.dvi
 ```
 
 などとオプション “-f” で直接指定する方法もあります。
@@ -398,6 +399,8 @@ W32TeX には，(e-)(u)pTeX エンジン用の map ファイルが準備され�
 
 ```
 dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
+dvipdfmx -f haranoaji.map dviname (原ノ味)
+dvipdfmx -f haranoaji04.map dviname (原ノ味, JIS2004字形)
 dvipdfmx -f hiragino.map dviname (Hiragino)
 dvipdfmx -f hiraginopron.map dviname (Hiragino ProN)
 dvipdfmx -f hiraginopron04.map dviname (Hiragino ProN, JIS2004字形)
@@ -419,6 +422,8 @@ dvips の場合は
 
 ```
 dvips -Pdl dviname (デフォルト,otf は Hiragino ProN)
+dvips -Pdl -u+haranoaji-ps.map dviname (原ノ味)
+dvips -Pdl -u+haranoaji04-ps.map dviname (原ノ味, JIS2004字形)
 dvips -Pdl -u+hiragino-ps.map dviname (Hiragino)
 dvips -Pdl -u+hiraginopron-ps.map dviname (Hiragino ProN)
 dvips -Pdl -u+hiraginopron04-ps.map dviname (Hiragino ProN, JIS2004字形)
@@ -608,6 +613,23 @@ ptex2pdf -u -l -od "-f uptex-noEmbed-04.map -f otf-up-noEmbed.map" hoge.tex
 
 ```
 ptex2pdf -u -l -od "-f noembed04.map" hoge.tex
+```
+
+#### [原ノ味フォント](</原ノ味フォント/>)を使う場合 {#l97369c0}
+
+- [https://github.com/texjporg/ptex-fontmaps/tree/master/maps/haranoaji](https://github.com/texjporg/ptex-fontmaps/tree/master/maps/haranoaji)
+- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/haranoaji/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/fonts/map/dvipdfmx/ptex-fontmaps/haranoaji/)
+
+- TeX Live の場合
+
+```
+ptex2pdf -u -l -od "-f uptex-haranoaji-04.map -f otf-up-haranoaji.map" hoge.tex
+```
+
+- W32TeX の場合
+
+```
+ptex2pdf -u -l -od "-f haranoaji04.map" hoge.tex
 ```
 
 #### IPAexフォントを使う場合 {#xcbe9625}
