@@ -35,10 +35,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 - Cygwin Ghostscript
     - Cygwin からインストールできる Ghostscript
 
-[TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) とよく一緒に用いられているのは，以下の2つでしょう。
-
-- TeX Live の win32 版に収録されている Ghostscript (tlgs.win32)
-- W32TeX のサイトで配布されている角藤版 Ghostscript
+[TeX Live](</TeX Live/>) と一緒に用いられているのは，TeX Live の win32 版に収録されている Ghostscript (tlgs.win32) です。
 
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
@@ -47,11 +44,8 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 ### インストール {#a4d9c6ea}
 
 TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
-また，W32TeX を TeX インストーラ 3 を使ってインストールした場合も，角藤版 Ghostscript がインストールされているはずです。
 
-- [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)には途中経過のスクリーンショットがあります。
-
-以下では主に W32TeX ユーザー向けに Ghostscript のインストール方法を説明します。
+以下で Ghostscript のインストール方法を説明します。
 
 #### インストールの前に（旧バージョンが既にインストールされている場合） {#zea1e76f}
 
@@ -67,47 +61,39 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs9540w64full-gpl.exe または gs9540w32full-gpl.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs9.54.0” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.54.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. 最新の Ghostscript インストーラ（gs9550w64.exe または gs9550w32.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs9.55.0” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.55.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 1. GSview 5.0 は gs-9.53.0 以上には対応していません。[GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs9.54.0 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs9.54.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs9.55.0 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs9.55.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs9.54.0 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs9.55.0 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs9.54.0\bin
+C:\Program Files\gs\gs9.55.0\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs9.54.0\lib
+C:\Program Files\gs\gs9.55.0\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 
-W32TeX と Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
+Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
 
-- 64-bit の場合
-
-    ```
-    …;C:\w32tex\bin64;C:\w32tex\bin;C:\Program Files\gs\gs9.54.0\bin;C:\Program Files\gs\gs9.54.0\lib;…
-    ```
-
-- 32-bit の場合
-
-    ```
-    …;C:\w32tex\bin;C:\Program Files\gs\gs9.54.0\bin;C:\Program Files\gs\gs9.54.0\lib;…
-    ```
+```
+…;C:\Program Files\gs\gs9.55.0\bin;C:\Program Files\gs\gs9.55.0\lib;…
+```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
 これは腕に自信が無い限り削除しておくのがよいでしょう（ただし，後で述べるフォントを置く場所を追加する方法としてこの GS_LIB を用いる手法もあります）。
@@ -130,11 +116,11 @@ W32TeX と Ghostscript をインストールした場合，Windows PowerShell �
 
 ### 注意点 {#de072348}
 
-- 本家版や角藤版の Ghostscript をインストールした場合
-    - Ghostscript を起動するコマンドは 64-bit 版なら gswin64c，32-bit 版なら gswin32c です。ただし，W32TeX とともにインストールした場合は rungs でも起動できます。
+- 本家版の Ghostscript をインストールした場合
+    - Ghostscript を起動するコマンドは 64-bit 版なら gswin64c，32-bit 版なら gswin32c です。
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合
-    - TeX Live (win32) をインストールした場合は TeX Live (win32) に付属する Ghostscript (tlgs.win32) が自動的にインストールされます。TeX Live (win64) をインストールする場合は 64-bit 版の角藤版 Ghostscript もインストールしてください。
+    - TeX Live (win32) をインストールした場合は TeX Live (win32) に付属する Ghostscript (tlgs.win32) が自動的にインストールされます。TeX Live (win64) をインストールする場合は 64-bit 版の Ghostscript もインストールしてください。
     - Ghostscript (tlgs.win32) を起動するコマンドは rungs です。TeX Live (win64) にも rungs.exe が収録されています。
     - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.win32) を使用する場合は ps2pdf.exe という実行ファイルになっています。TeX Live (win64) にも ps2pdf.exe が収録されています。
 
@@ -778,17 +764,6 @@ composefont pop
 - [https://www.ghostscript.com/download/](https://www.ghostscript.com/download/)
 - [https://www.ghostscript.com/download/gsdnld.html](https://www.ghostscript.com/download/gsdnld.html)
 - [https://github.com/ArtifexSoftware/ghostpdl-downloads/releases](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases)
-
-#### 角藤版 Ghostscript の配布元 {#sbee10cb}
-
-- [http://ctan.ijs.si/mirror/w32tex/gs/](http://ctan.ijs.si/mirror/w32tex/gs/)
-- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/win32-gs/)
-- [http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/gs/)
-- [http://core.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://core.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
-- [http://www.dnsbalance.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://www.dnsbalance.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
-- [http://www.ring.gr.jp/archives/text/TeX/ptex-win32/gs/](http://www.ring.gr.jp/archives/text/TeX/ptex-win32/gs/)
 
 #### ChangeLog (tlgs.win32) {#a9e655e3}
 
