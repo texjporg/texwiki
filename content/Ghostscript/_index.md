@@ -25,7 +25,12 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在しますので，Ghostscript 9.50 (2019-10-15) 以降に更新してください．
+Ghostscript 9.54.0，9.53.3，9.52，9.5 には，任意のコマンド実行が可能な脆弱性が存在しますので，Ghostscript 9.55.0 (2021-09-27) 以降に更新してください。
+
+- [Ghostscript: CVE-2021-3781](https://ghostscript.com/CVE-2021-3781.html)
+- [Ghostscriptの任意のコマンド実行が可能な脆弱性（CVE-2021-3781）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210039.html)
+
+Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
 
 - TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。TeX Live 2020 で修正されました。
 
@@ -43,8 +48,6 @@ Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限�
 <!-- (2) (x)dvipdfmx のソース spc_dvips.c の変更 (r52765) -->
 
 <!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
-
-Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
 
 - [JVN#52486659: Ghostscript におけるアクセス制限回避の脆弱性](https://jvn.jp/jp/JVN52486659/)
 - [JVNDB-2019-012236 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012236.html)
