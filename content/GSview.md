@@ -11,8 +11,7 @@ pukiwiki: "GSview"
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
-なお、GSview 5.0 は Ghostscript 9.53.0 以上には対応していません。
-[GSview 5.01 beta は Ghostscript 9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
+なお、GSview 5.0 は gs-9.55.0 には対応していません。[GSview 5.01beta は gs-9.55.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
@@ -22,8 +21,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
-- [GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
-- GSview 5.0 は gs-9.53.0 以上には対応していません。
+- GSview 5.0 は gs-9.55.0 には対応していません。[GSview 5.01beta は gs-9.55.0 に対応しています。（動作確認済み）](/GSview/#install)
 - gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
     PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
@@ -64,27 +62,49 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 >
 > を書き加えて下さい。
 
-### インストール {#je84b8ea}
+### インストール <a id="install"></a> {#je84b8ea}
 
 GSview は，Ghostscript を正常にインストールした後にインストールしてください（Ghostscript のレジストリ情報が使用されるためです）。
 Windows への Ghostscript のインストール方法は [Ghostscript/Windows](/Ghostscript/Windows/) で解説しています。
 
-GSview 5.0 インストーラを [Obtaining GSview 5.0](http://www.ghostgum.com.au/software/gsview.htm) からダウンロードし，実行します。
+GSview 5.01beta はバイナリ配布されていないので自分でビルドする必要があります。
 
-GSview 5.0 には 64-bit 版/32-bit 版の区別がありますが，これは<strong>使用する Ghostscript の 64-bit 版/32-bit 版に合わせなけなければなりません</strong>。64-bit 版 Ghostscript をインストールした場合は 64-bit 版 GSview を，32-bit 版 Ghostscript をインストールした場合は 32-bit 版 GSview を選択してください。
+GSview のビルドには [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>) が必要です。
 
-<!-- -GSview のインストーラ -->
-<!-- - -[[GSview 5.0:http://www.ghostgum.com.au/software/gsview.htm]] Ghostscript を GUI 操作できるソフトウェア -->
-<!-- - --[[GSview 5.0 (64-bit版):http://www.ghostgum.com.au/download/gsv50w64.exe]]（64-bit版の Ghostscript が必要） -->
-<!-- - --[[GSview 5.0 (32-bit版):http://www.ghostgum.com.au/download/gsv50w32.exe]]（32-bit版の Ghostscript が必要） -->
+ビルド方法は [GSview Readme#Compilation](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob_plain;f=Readme.htm;hb=refs/heads/master#Compilation) を参照してください。
 
-インストーラを起動したら，あとは指示に従うだけでインストールが完了します。
+GSview 5.01beta 2020-08-23 のソースコード
 
-The Fossies Software Archive からも GSview が入手できるようです。
+[https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz)
 
-- [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
-    <!-- - -https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w64.exe -->
-    <!-- - -https://fossies.org/linux/misc/old/ghost/ghostgum/gsv50w32.exe -->
+をダウンロードして展開します。
+
+GSview のベータ版には使用期限が設けられており 5.01beta 2020-08-23 の使用期限は 2020-12-30 までとなっています。
+このままビルドしても期限切れで使用できないので [.\src\gvcver.h](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=src/gvcver.h;h=e4017ab0ec253c1ab9479d9d57eb05a566cf9fbf;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) の
+
+```
+#define BETA_YEAR    2020
+```
+
+を来年の値
+
+```
+#define BETA_YEAR    2022
+```
+
+に修正します。
+
+[.\srcwin\win.mak](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=srcwin/win.mak;h=40874d8eb1d3e66b8392cf9fa1d0487be27cc660;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) を .\Makefile にコピーします。
+
+x64 Native Tools Command Prompt for VS から
+
+```
+nmake WIN64=1
+```
+
+を実行すると .\bin に実行ファイルが作成されます。
+
+ファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Advanced Configure...\] から適切な設定を行ってください。
 
 ### 注意点 {#y9339e21}
 
@@ -122,4 +142,6 @@ jisB8=181,258
 
 ### 関連リンク {#yb0d4b4b}
 
+- [GSview Readme](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob_plain;f=Readme.htm;hb=refs/heads/master)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
+- [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
