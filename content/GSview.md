@@ -73,36 +73,32 @@ GSview のビルドには [Microsoft Visual Studio Community](</Microsoft Visual
 
 ビルド方法は [GSview Readme#Compilation](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob_plain;f=Readme.htm;hb=refs/heads/master#Compilation) を参照してください。
 
+64-bit GSview のビルド方法を以下に示します。
+
 GSview 5.01beta 2020-08-23 のソースコード
 
 [https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz)
 
-をダウンロードして展開します。
+をダウンロードして gsview-09e7545.tar.gz を展開します。
 
 GSview のベータ版には使用期限が設けられており 5.01beta 2020-08-23 の使用期限は 2020-12-30 までとなっています。
-このままビルドしても期限切れで使用できないので [.\src\gvcver.h](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=src/gvcver.h;h=e4017ab0ec253c1ab9479d9d57eb05a566cf9fbf;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) の
+このままビルドしても期限切れで使用できないので [gsview-09e7545\src\gvcver.h](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=src/gvcver.h;h=e4017ab0ec253c1ab9479d9d57eb05a566cf9fbf;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) の
 
-```
-#define BETA_YEAR    2020
-```
+> #define
 
-を来年の値
+を使用可能な値（例えば来年）
 
-```
-#define BETA_YEAR    2022
-```
+> #define
 
 に修正します。
 
-[.\srcwin\win.mak](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=srcwin/win.mak;h=40874d8eb1d3e66b8392cf9fa1d0487be27cc660;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) を .\Makefile にコピーします。
+[gsview-09e7545\srcwin\win.mak](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=srcwin/win.mak;h=40874d8eb1d3e66b8392cf9fa1d0487be27cc660;hb=09e7545912ad1439e38d2b56516f50b150ff50eb) を gsview-09e7545\Makefile にコピーします。
 
-x64 Native Tools Command Prompt for VS から
+スタートから x64 Native Tools Command Prompt for VS を起動して gsview-09e7545 ディレクトリ移動後に
 
-```
-nmake WIN64=1
-```
+> nmake WIN64=1
 
-を実行すると .\bin に実行ファイルが作成されます。
+を実行すると gsview-09e7545\bin に実行ファイル gsview64.exe が作成されます。
 
 ファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Advanced Configure...\] から適切な設定を行ってください。
 
@@ -138,10 +134,12 @@ jisB8=181,258
 
 ### ライセンス {#y06b3066}
 
-[GPLv3](https://git.ghostscript.com/?p=user/ghostgum/gsview.git)
+[GPLv3](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob;f=LICENCE;hb=HEAD)
 
 ### 関連リンク {#yb0d4b4b}
 
+- [git.ghostscript.com Git - user/ghostgum/gsview.git/summary](https://git.ghostscript.com/?p=user/ghostgum/gsview.git)
 - [GSview Readme](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob_plain;f=Readme.htm;hb=refs/heads/master)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
+- [■ \[Windows\] GSView 5.01beta](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20210402#p02)
 - [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
