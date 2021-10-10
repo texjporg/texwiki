@@ -122,7 +122,6 @@ $ sudo tlmgr paper a4
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
 - [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.russyi.com/tech-latex-vscode/)
 - [2021年のコンピューターノウハウ (Mac) 2 MacTeX 2021を待つ …M1対応バージョン やって来ました!](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2021/node2.html)
-- [uplatexはTeXLive2020とTeXLive2021とでは異なるのか：パソコンや自然科学っぽい話題：SSブログ](https://math-sci.blog.ss-blog.jp/2021-07-26)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
