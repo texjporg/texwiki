@@ -182,11 +182,6 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 [GSview](/GSview/) は Ghostscript のフロントエンドです。GSview 5.0 は gs-9.55.0 には対応していません。[GSview 5.01beta は gs-9.55.0 に対応しています。（動作確認済み）](/GSview/#install)
 
-#### PS_View {#psview}
-
-PS_View は Ghostscript を使って PS/PDF ファイルを表示するプレビューアです。
-[TeX Live](</TeX Live/>) (win32) に標準で含まれています。メンテナンスされていなくて現在ではおそらく使用不可です。
-
 #### SumatraPDF {#f86c5a11}
 
 [SumatraPDF](/SumatraPDF/) も Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
