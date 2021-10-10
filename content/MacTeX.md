@@ -60,7 +60,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.53.3 {#n1354f54}
+#### Ghostscript-9.53.3 ← 脆弱性が存在するので Ghostscript-9.55.0 以降に更新してください。 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
@@ -121,8 +121,8 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
 - [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.russyi.com/tech-latex-vscode/)
-- [2020年のコンピューターノウハウ (Mac) 6 MacTeX 2020](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2020/node6.html)
-- [MacTeX-2019をインストールするときの説明書：パソコンや自然科学っぽい話題：So-netブログ](https://math-sci.blog.so-net.ne.jp/2019-05-08)
+- [2021年のコンピューターノウハウ (Mac) 2 MacTeX 2021を待つ …M1対応バージョン やって来ました!](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2021/node2.html)
+- [uplatexはTeXLive2020とTeXLive2021とでは異なるのか：パソコンや自然科学っぽい話題：SSブログ](https://math-sci.blog.ss-blog.jp/2021-07-26)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
