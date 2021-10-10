@@ -65,7 +65,7 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
     - デフォルトのインストール先は “C:\Program Files\gs\gs9.55.0” です。
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.55.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-1. GSview 5.0 は gs-9.53.0 以上には対応していません。[GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
+1. GSview 5.0 は gs-9.55.0 には対応していません。[GSview 5.01beta は gs-9.55.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
 なお，歴史的な理由等から gs\gs9.55.0 などというフォルダーにインストールされることがほとんどです。
@@ -180,7 +180,7 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 #### GSview {#gsview}
 
-[GSview](/GSview/) は Ghostscript のフロントエンドです。GSview 5.0 は gs-9.53.0 以上では使用不可です。[GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
+[GSview](/GSview/) は Ghostscript のフロントエンドです。GSview 5.0 は gs-9.55.0 には対応していません。[GSview 5.01beta は gs-9.55.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 #### PS_View {#psview}
 
