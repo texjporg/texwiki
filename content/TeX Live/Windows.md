@@ -140,6 +140,8 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 インストール方法は 00README.TLW64 を参照してください．
 
+64-bit Ghostscript も必要になるので gs9550w64full-gpl.exe も置いてあります．
+
 - <strong>HTTP</strong>
     - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
