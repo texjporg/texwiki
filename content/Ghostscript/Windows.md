@@ -61,7 +61,7 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の Ghostscript インストーラ（gs9550w64.exe または gs9550w32.exe）を実行します。
+1. 最新の角藤版 Ghostscript インストーラ（gs9550w64full-gpl.exe）または本家版 Ghostscript インストーラ（gs9550w64.exe または gs9550w32.exe）を実行します。
     - デフォルトのインストール先は “C:\Program Files\gs\gs9.55.0” です。
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs9.55.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
@@ -759,6 +759,10 @@ composefont pop
 - [https://www.ghostscript.com/download/](https://www.ghostscript.com/download/)
 - [https://www.ghostscript.com/download/gsdnld.html](https://www.ghostscript.com/download/gsdnld.html)
 - [https://github.com/ArtifexSoftware/ghostpdl-downloads/releases](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases)
+
+#### 角藤版 Ghostscript の配布元 {#sbee10cb}
+
+- [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
 #### ChangeLog (tlgs.win32) {#a9e655e3}
 
