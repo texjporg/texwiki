@@ -40,7 +40,7 @@ XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用
 
 Xpdf 4.00 で GUI に使用されるツールキットが Motif から Qt に変更されました。
 
-現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降あるいは W32TeX \[2017/02/20\] 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
+現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
 
 ### Xpdf のツール一覧 {#tools}
 
@@ -62,7 +62,7 @@ PDF ビューアである [xpdf](http://www.xpdfreader.com/xpdf-man.html)（Xpdf
 
 [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Windows 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf command line tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
 
-Windows の場合は Xpdf command line tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) あるいは [W32TeX](/W32TeX/) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前および W32TeX \[2017/02/19\] 以前に含まれていた xpdf utilities は TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は poppler utilities で置き換えられました。
+Windows の場合は Xpdf command line tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前に含まれていた xpdf utilities は TeX Live 2017 以降は poppler utilities で置き換えられました。
 
 #### macOS {#inst-mac}
 
@@ -132,7 +132,7 @@ Xpdf 3.04 の場合
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
 
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
-    - [https://www.macports.org/ports.php?by=name&substr=xpdf](https://www.macports.org/ports.php?by=name&substr=xpdf)
+    - [https://ports.macports.org/port/xpdf/](https://ports.macports.org/port/xpdf/)
         - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
 - ソースコードからインストールする方法
     - ソースコードからインストールする場合は [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
