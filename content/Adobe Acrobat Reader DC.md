@@ -24,7 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 2020.013.20074 以降に更新してください。Adobe Acrobat Reader DC 2020.013.20066 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe Acrobat および Reader の脆弱性 (APSB20-75) に関する注意喚起](https://www.jpcert.or.jp/at/2020/at200049.html)
+- Adobe Acrobat Reader DC 2021.007.20091 以降に更新してください。Adobe Acrobat Reader DC 2021.005.20060 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-55）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210040.html)
 - Adobe Acrobat Reader DC Version 2020.006.20034 で DDE server name が AcroViewR20 に変更されました。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -37,8 +37,6 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
     できました。しかし環境によるかも知れません。いずれにしても
     起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
     pdfclose を繰り返すのが良いでしょう。
-
-- [Adobe Reader XI のサポートは 2017年10月15日（日）に終了しました](https://www.adobe.com/jp/information/acrobat/eosnotice.html)．
 
 ### 公式 Web ページ {#t103678c}
 
@@ -256,11 +254,11 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader DC バージョン 2020
+Windows 版の Adobe Acrobat Reader DC バージョン 2021
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
 ```
-AcroViewR20
+AcroViewR21
 ```
 
 という1行だけを持ち，ファイル名が
@@ -271,13 +269,13 @@ pdfddeservername.txt
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewR20 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewR21 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
 
-AcroViewR20 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+AcroViewR21 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
 
 Windows PowerShell の場合は
 
@@ -509,6 +507,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 は AcroViewR21 です。
 [^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
