@@ -184,17 +184,7 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 
 #### SumatraPDF {#f86c5a11}
 
-[SumatraPDF](/SumatraPDF/) も Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
-
-#### Evince {#z09c3b39}
-
-[Evince](/Evince/) も Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
-
-#### Ghostscript.NET.Viewer {#ha9e1164}
-
-- [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET)
-
-を参照してください。
+[SumatraPDF](/SumatraPDF/) は Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
 
 #### \[参考\] 関連するアプリケーション {#m1110769}
 
