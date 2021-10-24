@@ -25,6 +25,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ### お知らせ {#k350f003}
 
 - Adobe Acrobat Reader DC 2021.007.20091 以降に更新してください。Adobe Acrobat Reader DC 2021.005.20060 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-55）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210040.html)
+- Adobe Acrobat Reader DC Version 2021（32ビット）の DDE server name は AcroViewR21, Adobe Acrobat Reader DC Version 2021（64ビット）の DDE server name は AcroViewA21 です。
 - Adobe Acrobat Reader DC Version 2020.006.20034 で DDE server name が AcroViewR20 に変更されました。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -62,24 +63,18 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ### Windows {#l93a8183}
 
 - Adobe Acrobat Reader DC
-    - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Windows)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/)
-- Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x
-    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6839](https://supportdownloads.adobe.com/detail.jsp?ftpID=6839)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/](ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/misc/)
-- Adobe Acrobat DC
-    - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Windows)
+    - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe)
+- Adobe Acrobat Reader DC Font Pack (Continuous)
+    - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
 
 ### macOS {#e9b65d66}
 
 - Adobe Acrobat Reader DC
-    - [https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=10&platform=Macintosh)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/](ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/)
-- Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x
-    - [https://supportdownloads.adobe.com/detail.jsp?ftpID=6486](https://supportdownloads.adobe.com/detail.jsp?ftpID=6486)
-    - [ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/misc/](ftp://ftp.adobe.com/pub/adobe/reader/mac/AcrobatDC/misc/)
-- Adobe Acrobat DC
-    - [https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh](https://supportdownloads.adobe.com/product.jsp?product=1&platform=Macintosh)
+    - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html)
+- Adobe Acrobat Reader DC Font Pack (Continuous)
+    - [https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
 
 ### Linux <a id="linux"></a> {#s5dbb0cf}
 
@@ -116,8 +111,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget ftp://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/2001320064/AcroRdrDC2001320064_ja_JP.exe
-wine AcroRdrDC2001320064_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe
+wine AcroRdrDC2100720099_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC を起動して file.pdf を表示するには
@@ -257,15 +252,11 @@ exit                    exit acroview and pdfdde
 Windows 版の Adobe Acrobat Reader DC バージョン 2021
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
-```
-AcroViewR21
-```
+> AcroViewR21
 
 という1行だけを持ち，ファイル名が
 
-```
-pdfddeservername.txt
-```
+> [pdfddeservername.txt](https://www.tug.org/svn/texlive/trunk/Master/bin/win32/pdfddeservername.txt?view=markup)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
@@ -507,6 +498,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 は AcroViewR21 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021（32ビット）は AcroViewR21, Adobe Acrobat Reader DC Version 2021（64ビット）は AcroViewA21 です。
 [^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
