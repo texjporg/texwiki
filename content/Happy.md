@@ -45,16 +45,16 @@ HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．
 Type=Tokyo
 
 [Program]
-TeXbin=C:\w32tex\bin64
-dviout=C:\w32tex\dviout-x64\dviout.exe
-GSmain=C:\Program Files\gs\gs9.50
+TeXbin=C:\texlive\2021\bin\win64
+dviout=C:\texlive\2021\bin\win64\dviout.exe
+GSmain=C:\Program Files\gs\gs9.55.0
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
-pdfviewer=C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
+pdfviewer=C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR20/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewA21/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
@@ -97,16 +97,16 @@ EFontType=1
 Type=Tokyo
 
 [Program]
-TeXbin=C:\w32tex\bin
-dviout=C:\w32tex\dviout\dviout.exe
-GSmain=C:\Program Files\gs\gs9.50
+TeXbin=C:\texlive\2021\bin\win32
+dviout=C:\texlive\2021\bin\win32\dviout.exe
+GSmain=C:\Program Files\gs\gs9.55.0
 gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
 
 pdfviewer=C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=acroviewR20/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=acroviewR21/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
