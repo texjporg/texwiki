@@ -13,7 +13,7 @@ Adobe Acrobat Reader DC は PDF ファイルの表示，印刷，注釈の追加
 
 Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
+Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 - [エンタープライズ管理ガイド - アップデートの管理と環境設定（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq05121335.html)
@@ -25,7 +25,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 ### お知らせ {#k350f003}
 
 - Adobe Acrobat Reader DC 2021.007.20091 以降に更新してください。Adobe Acrobat Reader DC 2021.005.20060 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-55）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210040.html)
-- Adobe Acrobat Reader DC Version 2021（32ビット）の DDE server name は AcroViewR21, Adobe Acrobat Reader DC Version 2021（64ビット）の DDE server name は AcroViewA21 です。
+- Adobe Acrobat Reader DC Version 2021 (32-bit) の DDE server name は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) の DDE server name は AcroViewA21 です。
 - Adobe Acrobat Reader DC Version 2020.006.20034 で DDE server name が AcroViewR20 に変更されました。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -41,9 +41,9 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[PDF�
 
 ### 公式 Web ページ {#t103678c}
 
-- [PDFリーダー、PDFビューア | Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html)
-- [Acrobatモバイル版アプリ、iPad、iPhone、Android版PDFリーダー | Adobe Document Cloud](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
-- [アドビ サポート担当 (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
+- [【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html)
+- [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
+- [アドビ クリエイター サポート (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
 - [アドビの最新のプレスリリース | Adobe ニュースルーム](https://www.adobe.com/jp/about-adobe/newsroom.html)
 
 ### 動作環境 {#v8f82e43}
