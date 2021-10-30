@@ -24,7 +24,7 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 2021.007.20091 以降に更新してください。Adobe Acrobat Reader DC 2021.005.20060 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-55）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210040.html)
+- Adobe Acrobat Reader DC 21.007.20099 以降に更新してください。Adobe Acrobat Reader DC 21.007.20095 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-104）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210044.html)
 - Adobe Acrobat Reader DC Version 2021 (32-bit) の DDE server name は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) の DDE server name は AcroViewA21 です。
 - Adobe Acrobat Reader DC Version 2020.006.20034 で DDE server name が AcroViewR20 に変更されました。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
