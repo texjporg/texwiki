@@ -46,6 +46,7 @@ macOS 用として配布される TeX Live 2021 のバイナリは，universal-d
 <table>
 <tbody>
 <tr><td style="background-color:#f0f0f0"></td><td>universal-darwin</td><td>x86_64-darwinlegacy</td></tr>
+<tr><td style="background-color:#f0f0f0">macOS Monterey 12</td><td>&#x2714;</td><td></td></tr>
 <tr><td style="background-color:#f0f0f0">macOS Big Sur 11</td><td>&#x2714;</td><td></td></tr>
 <tr><td style="background-color:#f0f0f0">macOS 10.15 Catalina</td><td>&#x2714;</td><td></td></tr>
 <tr><td style="background-color:#f0f0f0">macOS 10.14 Mojave</td><td>&#x2714;</td><td></td></tr>
