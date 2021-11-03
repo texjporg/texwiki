@@ -16,9 +16,9 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-お使いの macOS のバージョンによっては，ご利用になれないインストール方法もありますので，事前に[はじめに：TeX Live 2021 のバイナリの動作環境](#binary)をお読みください。
+動作環境については[TeX Live 2021 のバイナリの動作環境](#binary)をお読みください。
 
-- TeX Live 公式のインストーラを使用する（最も多くの Mac で動作する方法です）
+- TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
 - TeX Live をベースにした macOS 専用の TeX ディストリビューションを入手する
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。 → [こちら](/MacTeX/)
@@ -30,36 +30,17 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### はじめに：TeX Live 2021 のバイナリの動作環境 {#binary}
+### TeX Live 2021 のバイナリの動作環境 {#binary}
 
-macOS 用として配布される TeX Live 2021 のバイナリは，universal-darwin バイナリと x86_64-darwinlegacy バイナリの 2 種類があります。
+macOS 用として配布される TeX Live 2021 は，universal-darwin バイナリです。universal-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
+MacTeX-2021 / BasicTeX-2021 に付属する TeX Live も universal-darwin バイナリです。
 
-- universal-darwin バイナリ： [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします[^1]。
-- x86_64-darwinlegacy バイナリ：それ以前のレガシーな macOS をサポートします。
+TeX Live 2021 universal-darwin バイナリが動作する macOS
 
-お使いの macOS のバージョンに応じて，適切な方を選択する必要があります。
-具体的には，以下の表を参照してください。&#x2714; マークが macOS と対応するバイナリを示しています。
-なお，MacTeX / BasicTeX に付属する TeX Live には universal-darwin バイナリのみが収録されていますので，レガシーな macOS では使用できません。
-
-<div style="text-align:left">TeX Live 2021 が動作する macOS と対応するバイナリ</div>
-
-<table>
-<tbody>
-<tr><td style="background-color:#f0f0f0"></td><td>universal-darwin</td><td>x86_64-darwinlegacy</td></tr>
-<tr><td style="background-color:#f0f0f0">macOS Monterey 12</td><td>&#x2714;</td><td></td></tr>
-<tr><td style="background-color:#f0f0f0">macOS Big Sur 11</td><td>&#x2714;</td><td></td></tr>
-<tr><td style="background-color:#f0f0f0">macOS 10.15 Catalina</td><td>&#x2714;</td><td></td></tr>
-<tr><td style="background-color:#f0f0f0">macOS 10.14 Mojave</td><td>&#x2714;</td><td></td></tr>
-<tr><td style="background-color:#f0f0f0">macOS 10.13 High Sierra</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">macOS 10.12 Sierra</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">OS X 10.11 El Capitan</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">OS X 10.10 Yosemite</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">OS X 10.9 Mavericks</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">OS X 10.8 Mountain Lion</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">Mac OS X 10.7 Lion</td><td></td><td>&#x2714;</td></tr>
-<tr><td style="background-color:#f0f0f0">Mac OS X 10.6 Snow Leopard</td><td></td><td>&#x2714;</td></tr>
-</tbody>
-</table>
+- macOS Monterey 12
+- macOS Big Sur 11
+- macOS Catalina 10.15
+- macOS Mojave 10.14
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -74,8 +55,8 @@ TeX Live のインストールガイド
 - [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますが，MacTeX に付属する TeX Live には universal-darwin バイナリのみが収録されており，レガシーな macOS にはインストールできません。
-一方，TeX Live 公式のインストーラを使えば，universal-darwin / x86_64-darwinlegacy いずれの環境でも TeX Live をインストールすることができます。
+を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。[M1 Mac](https://oku.edu.mie-u.ac.jp/~okumura/macosx/m1.html) の TeX
+の項目にも説明があります。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
@@ -140,7 +121,7 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2021，\* は universal-darwin または x86_64-darwinlegacy にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2021，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
 $ sudo /usr/local/texlive/2021/bin/universal-darwin/tlmgr path add
@@ -280,7 +261,7 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 ### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
-[みかちゃんフォント](https://web.archive.org/web/20210126141231/http://www001.upp.so-net.ne.jp/mikachan/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
+[みかちゃんフォント](http://mikachan-font.com/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になるかもしれません。
@@ -374,5 +355,3 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
-
-[^1]: TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908)) 
