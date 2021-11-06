@@ -152,6 +152,10 @@ tltexjp は TeX Live の補助リポジトリです．
 
 [TeX Live/build](</TeX Live/build/>) を参照
 
+### Archive {#s2007652}
+
+[Historic archive - TeX Users Group](https://www.tug.org/historic/)
+
 ### 関連リンク {#udd48b1b}
 
 - [日本語版 TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
