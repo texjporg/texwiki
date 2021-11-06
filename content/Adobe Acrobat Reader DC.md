@@ -64,9 +64,10 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 - Adobe Acrobat Reader DC
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe)
     - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe)
 - Adobe Acrobat Reader DC Font Pack (Continuous)
+    - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
     - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
 
 ### macOS {#e9b65d66}
