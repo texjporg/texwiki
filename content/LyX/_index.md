@@ -52,22 +52,14 @@ Windows (Win64, Win32, Cygwin), macOS, Linux
     - [http://ftp.lyx.org/pub/lyx/bin/](http://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [http://ftp.lyx.org/pub/lyx/stable/](http://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [http://ftp.lyx.org/pub/lyx/devel/](http://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- FTP (公式サイト)
-    - [ftp://ftp.lyx.org/pub/lyx/bin/](ftp://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
-    - [ftp://ftp.lyx.org/pub/lyx/stable/](ftp://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
-    - [ftp://ftp.lyx.org/pub/lyx/devel/](ftp://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
 - HTTP (ミラーサイト)(日本)(KDDI総合研究所)
     - [http://ftp.ne.jp/TeX/lyx/bin/](http://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
     - [http://ftp.ne.jp/TeX/lyx/stable/](http://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
     - [http://ftp.ne.jp/TeX/lyx/devel/](http://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
-- FTP (ミラーサイト)(日本)(KDDI総合研究所)
-    - [ftp://ftp.ne.jp/TeX/lyx/bin/](ftp://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
-    - [ftp://ftp.ne.jp/TeX/lyx/stable/](ftp://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
-    - [ftp://ftp.ne.jp/TeX/lyx/devel/](ftp://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
-        <!-- -LyXWinInstaller -->
-        <!-- - -http://ftp.lyx.de/ 開発版と安定版の Windows バイナリ -->
-        <!-- - -http://jaist.dl.sourceforge.net/project/lyxwininstaller/ 安定版の Windows バイナリ -->
-        <!-- - -https://sourceforge.net/projects/lyxwininstaller/files/ 安定版の Windows バイナリ -->
+- HTTPS (ミラーサイト)(日本)(山形大学)
+    - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/) 安定版のバイナリ
+    - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/) 安定版のソースコード
+    - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/) 開発版のバイナリとソースコード
 
 ## インストール {#r9ac9b39}
 
@@ -225,7 +217,7 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　インストール先 フォルダ<br>
-> 　　　　<ins>C:\Program Files (x86)\LyX 2.3</ins> (64-bit Windows の場合) または <ins>C:\Program Files\LyX 2.3</ins> (32-bit Windows の場合) &lt;-- <strong>全てのユーザーに対してインストールする場合</strong><br>
+> 　　　　<ins>C:\Program Files\LyX 2.3</ins> &lt;-- <strong>全てのユーザーに対してインストールする場合</strong><br>
 > 　　　　<ins>C:\Users\Lydia\AppData\Local\LyX 2.3</ins> &lt;-- <strong>自分専用にインストールする場合</strong><br>
 >
 > <br>
@@ -314,8 +306,7 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2021\bin\win64</ins> &lt;-- 64-bit TeX Live Windows バイナリの場合<br>
-> 　　　　　<ins>C:\texlive\2021\bin\win32</ins> &lt;-- 32-bit TeX Live Windows バイナリの場合<br>
+> 　　　　　<ins>C:\texlive\2021\bin\win64</ins><br>
 >
 > <br>
 >
