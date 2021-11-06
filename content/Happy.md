@@ -36,8 +36,6 @@ Windows
 
 HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．
 
-■ 64-bit Windows の場合
-
 ***
 
 ```
@@ -66,58 +64,6 @@ cmd-Path=
 
 [Editor]
 Path=C:\Program Files (x86)\sakura\sakura.exe
-LineNumOpt=-X=1 -Y=*
-ArgOrder=1
-
-Path=C:\Program Files\Mery\Mery.exe
-LineNumOpt=/l *
-ArgOrder=1
-
-[Delay]
-Delay1=0.75
-Delay2=3
-Delay3=2
-
-[Font]
-FontmapList=MS|Win|IPA-ex|Moga|Moga90|Koz|Koz04
-psFontmapList=MS-ps|Win-ps|IPA-ex-ps|Moga-ps|Moga90-ps
-NoEmbedType=1
-EFontType=1
-...
-```
-
-***
-
-■ 32-bit Windows の場合
-
-***
-
-```
-[Message]
-Type=Tokyo
-
-[Program]
-TeXbin=C:\texlive\2021\bin\win32
-dviout=C:\texlive\2021\bin\win32\dviout.exe
-GSmain=C:\Program Files\gs\gs9.55.0
-gsview=C:\Program Files\Ghostgum\gsview\gsview32.exe
-
-pdfviewer=C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe
-pdfviewertitle=
-pdflock=Yes
-pdfopen="%f"
-pdfjump=acroviewR21/control/[DocOpen("%f")][DocGoTo("%f",%q)]
-
-pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
-pdfviewertitle=
-pdflock=No
-pdfopen=-reuse-instance "%f"
-pdfjump=SUMATRA/control/[ForwardSearch("%f","%t",%l,0,0,1)]
-
-cmd-Path=
-
-[Editor]
-Path=C:\Program Files\sakura\sakura.exe
 LineNumOpt=-X=1 -Y=*
 ArgOrder=1
 
