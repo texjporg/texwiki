@@ -16,20 +16,18 @@ pukiwiki: "TeXworks/設定"
 
 ## 日本語環境用の設定 {#bcc74f23}
 
-以下の（またはそれに対応する）設定は，TeX Live （2016 以降）に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリは，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
+以下の（またはそれに対応する）設定は，TeX Live （2016 以降）に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリ〔のうち、2016 より前のもの …ということでしょうか？ ちょっと曖昧に思えて読んでいて不安になったので。fix願います。〕は，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
 
-公式サイトの Windows バイナリを使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように設定しておきます．
+公式サイトの Windows バイナリ〔のうち、2016 より前のもの …ということでしょうか？ こちらもfix願います。〕を使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように、タイプセットエンジンを選択するドロップダウンリストに新しい選択肢として追加登録しておきます．
+まず、次の図に示すように、メニューから「編集」→「設定」と選びます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
 
-メニューから「編集」→「設定」と選びます．
+続いて、出てきた設定ダイアログで次の図のように「タイプセット」タブを選び（赤囲み），右下の「＋」ボタン（青囲み）を押します．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set2.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set2.png" alt=""></a>
 
-出てきた画面から「タイプセット」タブを選び（赤囲み），右下の「＋」ボタン（青囲み）を押します．
-
-<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png" alt=""></a>
-
+続いて、出てきた選択肢追加用のダイアログで次の図のように新しいタイプセットエンジンの設定を登録します。
 次のように入力してください．（間違わないように以下をコピー＆ペーストするとよいでしょう．）引数を入力する際には「＋」ボタン（赤囲み）を押します．
 
 - 名前：pLaTeX (ptex2pdf)
@@ -40,11 +38,13 @@ pukiwiki: "TeXworks/設定"
     - -kanji=utf8 $synctexoption
     - $fullname
 
-OKを押して閉じてください．
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set3.png" alt=""></a>
 
-<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png" alt=""></a>
+各項目の入力が済んだらOKを押して閉じてください．
 
-更に二つのプログラム設定を追加します．
+今後の運用で索引付きの文書を作成する場合は、索引作成用の二つの補助プログラムを同じように登録しておくと簡単に起動できるようになります。索引作成用のプログラムはタイプセットエンジンではありませんが、タイプセットエンジンの登録と同じダイアログで行います。
+
+まず、pBibTeX を次の図のように登録します。
 
 - 名前：pBibTeX
 - プログラム：pbibtex.exe
@@ -52,21 +52,25 @@ OKを押して閉じてください．
 
 「実行後，PDF を表示する」のチェックを外しておきます．
 
-<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png" alt=""></a>
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set4.png" alt=""></a>
+
+もう一つは mendex です。やはり次の図のように登録します。
 
 - 名前：mendex
 - プログラム：mendex.exe
 - 引数：$basename
 
-やはり「実行後，PDF を表示する」のチェックを外しておきます．
+これも「実行後，PDF を表示する」のチェックを外しておきます．
+
+<a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set5.png" alt=""></a>
+
+各プログラムの登録が済んだら、次の図のように、タイプセット時に優先的に使用するエンジン（デフォルトエンジン）として「pLaTeX (ptex2pdf)」を設定しておきます。
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set7.png" alt=""></a>
 
-デフォルトを「pLaTeX (ptex2pdf)」に変更しておきます．
+OK を押して最初の画面に戻り，必要ならば次の図に示すように左上のドロップダウンリストから「pLaTeX (ptex2pdf)」を選んだ状態にしておきます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set6.png" alt=""></a>
-
-OK を押して最初の画面に戻り，必要ならば左上のコンボボックスから「pLaTeX (ptex2pdf)」を選びます．
 
 ## エンコーディングの設定 {#sc2efa04}
 
