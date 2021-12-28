@@ -55,7 +55,7 @@ TeX Live, W32TeX に含まれています。
 
 ### 使い方 {#c2c67492}
 
-- [geometry.sty LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/geometry.html)
+- [geometry.sty LaTeX パッケージ](http://xyoshiki.web.fc2.com/tex/geometry.html)
 - [LaTeX メモ ― geometry パッケージによるページレイアウトの設定](http://dayinthelife.at.webry.info/201401/article_2.html)
 - [geometryパッケージ 再訪](http://konoyonohana.blog.fc2.com/blog-entry-119.html)
 
