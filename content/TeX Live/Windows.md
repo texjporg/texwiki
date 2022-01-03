@@ -17,16 +17,10 @@ pukiwiki: "TeX Live/Windows"
 
 ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法，また，64-bit TeX Live Windows バイナリを用いる方法を説明します．
 
-基本的には ISO イメージを用いる方法をおすすめします．
+基本的には ネットワークインストーラ を用いる方法をおすすめします．
+ネットワークインストーラで問題のある場合に ISO イメージ を用いる方法をご利用ください． <!-- [[https://texwiki.texjp.org/?TeX%20Live]] と 公式ページの説明とおすすめするインストール方法を合わせます． -->
 
 いくつか追加で設定を行っておくと更に便利です．追加設定の項もご覧ください．
-
-### ISO イメージからのインストール {#zc468876}
-
-[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2021.iso をダウンロードしてください．
-ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
-中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 
 ### ネットワークインストーラの場合 {#w369638d}
 
@@ -144,6 +138,15 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 - <strong>HTTP</strong>
     - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
+
+### ISO イメージからのインストール {#zc468876}
+
+[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
+「download from a nearby CTAN mirror」から，texlive2021.iso をダウンロードしてください．
+ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
+中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
+なお，ISO イメージの更新頻度は1年に1度のため，インストールが完了した直後に後述するアップデートを行うことをおすすめします．
+ISO イメージが作成された当時に未解決であったバグや不具合が解決されていることがあります．
 
 ### トラブル時 {#s0045851}
 
