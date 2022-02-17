@@ -136,6 +136,8 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 64-bit Ghostscript も必要になるので gs9550w64full-gpl.exe も置いてあります．
 
+インストール後うまくいかない時は，fmtutil-sys --allの実行を試してみてください。
+
 - <strong>HTTP</strong>
     - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
