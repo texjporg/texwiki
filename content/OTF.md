@@ -975,16 +975,14 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
 - [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
 
-#### japanese-otf-uptex {#kd9a1a12}
-
-- \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf-uptex/?view=log)
-- \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf-uptex/?view=log)
-
 #### japanese-otf {#b26e364e}
 
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log)
 - [texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log)
+
+#### japanese-otf-uptex {#kd9a1a12}
+
+- \[[GitHub\] japanese-otf-uptex](https://github.com/t-tk/japanese-otf-uptex/blob/master/japanese-otf-uptex)
+    - [readme](https://github.com/t-tk/japanese-otf-uptex/blob/master/japanese-otf-uptex/00otf-uptex.txt)
