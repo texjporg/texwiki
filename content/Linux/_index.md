@@ -62,7 +62,7 @@ TeX Live のインストールガイド
 - curl を使用する場合
 
     ```
-    $ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 install-tl-unx.tar.gz を展開します．
