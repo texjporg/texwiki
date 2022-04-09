@@ -144,7 +144,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2021.iso をダウンロードしてください．
+「download from a nearby CTAN mirror」から，texlive2022iso をダウンロードしてください．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 なお，ISO イメージの更新頻度は1年に1度のため，インストールが完了した直後に後述するアップデートを行うことをおすすめします．
