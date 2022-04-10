@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2021 には以下のパッケージが収録されています。
+MacTeX-2022 には以下のパッケージが収録されています。
 
-#### TeXLive-2021 {#v03e546d}
+#### TeXLive-2022 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -46,6 +46,9 @@ TeX フォルダの中の Docs and Spell Utilities フォルダの中に Documen
 GUI Applications には以下のアプリケーションが収録されています。
 
 アプリケーションフォルダの中の TeX フォルダに収められています。
+
+- [BibDesk](https://bibdesk.sourceforge.io/)
+    - 文献管理ソフト。
 
 - [LaTeXiT](/LaTeXiT/)
     - 単独の数式を作成して他のアプリケーションにコピペするのに便利な Mac アプリ。
@@ -60,7 +63,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.53.3 ← 脆弱性が存在するので Ghostscript-9.55.0 以降に更新してください。 {#n1354f54}
+#### Ghostscript-9.55.0 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
