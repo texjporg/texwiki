@@ -17,8 +17,6 @@ Linux に TeX をインストールして使えるようになるまでの大ま
 
 が必要です。
 
-- [MyTeXpert:Linux](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Linux)
-
 ***
 
 ***
@@ -117,10 +115,10 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2021，\* は x86_64-linux または i386-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2022，\* は x86_64-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2021/bin/x86_64-linux/tlmgr path add
+$ sudo /usr/local/texlive/2022/bin/x86_64-linux/tlmgr path add
 ```
 
 #### アップデート {#texliveupdate}
@@ -233,6 +231,4 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 Linux では TeX Live をインストールするのが一般的ですが，ほかの TeX ディストリビューションをインストールすることもできます．
 
-- [W32TeX](/W32TeX/)：Microsoft Windows 向けの TeX ディストリビューションですが，[Wine](https://www.winehq.org/) を使えば Linux 上で利用することも可能です．
-    - [Wine への W32TeX インストーラ](http://kmaeda.net/kmaeda/tex/) ([install-w32tex.py](https://gist.github.com/2766442))
 - [MiKTeX](/MiKTeX/)：主に Microsoft Windows で使用されている TeX ディストリビューションですが Linux にも対応しています．Linux Mint/Debian/Ubuntu, Fedora, openSUSE で利用できるようです．
