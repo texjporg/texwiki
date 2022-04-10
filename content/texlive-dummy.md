@@ -14,8 +14,6 @@ pukiwiki: "texlive-dummy"
 TeX Live 公式パッケージをインストールしても TeX Live に依存するパッケージをインストールすると Linux ディストリビューションが提供している TeX Live も同時にインストールされてしまいます．
 Linux ディストリビューションが提供する TeX Live をインストールさせないようにするには TeX Live の dummy パッケージを事前にインストールしてパッケージマネージャに TeX Live が既にインストールされていると錯覚させる必要があります．
 
-- [MyTeXpert:texlive-dummy](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?texlive-dummy)
-
 ***
 
 ***
@@ -78,10 +76,10 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2021-ex.txt
-equivs-build debian-equivs-2021-ex.txt
+wget http://www.tug.org/texlive/files/debian-equivs-2022-ex.txt
+equivs-build debian-equivs-2022-ex.txt
 sudo apt install freeglut3
-sudo dpkg -i texlive-local_2021.99999999-1_all.deb
+sudo dpkg -i texlive-local_2022.99999999-1_all.deb
 ```
 
 ### [Fedora](/Linux/Fedora/) <a id="fedora"></a> {#cf6b23bc}
