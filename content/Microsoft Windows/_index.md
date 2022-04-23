@@ -179,7 +179,7 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
         - [AUCTeX](/AUCTeX/)
         - [YaTeX](/YaTeX/)（野鳥）
     - [Vim](/Vim/)
-        - vimtex
+        - [VimTeX](/VimTeX/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [gedit](/gedit/)
