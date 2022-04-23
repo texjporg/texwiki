@@ -40,7 +40,7 @@ GNU Emacs はフリーソフトウェアです．
 
 #### Windows {#k091604e}
 
-- [http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/](http://ftp.gnu.org/pub/gnu/emacs/windows/emacs-27/)
+- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/)
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-27-x86_64-win-ime)
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
@@ -49,8 +49,7 @@ GNU Emacs はフリーソフトウェアです．
 
 - [Emacs For Mac OS X](https://emacsformacosx.com/)
     <!-- -[[Emacs Modified for macOS:http://vigou3.gitlab.io/emacs-modified-macos/]] -->
-
-- [Emacs Mac port \[experimental/hackers-only\]](ftp://ftp.math.s.chiba-u.ac.jp/emacs/)
+    <!-- -[[Emacs Mac port [experimental/hackers-only]:ftp://ftp.math.s.chiba-u.ac.jp/emacs/]] -->
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
 
@@ -356,7 +355,6 @@ Source editor:
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [Retina を活かす Emacs へ移行](http://milanista224.blogspot.jp/2012/08/retina-emacs24.html)
-- [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
 - [Cocoa Emacs のフォント設定について](http://d.hatena.ne.jp/setoryohei/20110117/1295336454)
 - [CocoaEmacsに環境変数は引き継がれない](http://d.hatena.ne.jp/sugyan/20100704/1278241492)
 
@@ -377,7 +375,7 @@ Source editor:
 
 ## 使い方 {#e776cf5f}
 
-- [emacs 26.3の日本語マニュアル](https://ayatakesi.github.io/)
+- [emacs 28.1の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
 - [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
