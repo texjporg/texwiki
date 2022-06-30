@@ -382,6 +382,8 @@ new grid/.default=blue]%パラメーターのデフォルト値
 \end{tikzpicture}
 ```
 
+<a href="/attach/TikZ/tikz-samp02.png"><img src="/attach/TikZ/tikz-samp02.png" alt=""></a>
+
 <!-- every node/ .styleなど -->
 
 ### 点，そして交点の設定 {#e28f8154}
@@ -458,6 +460,8 @@ node はそれ自体に大きさがあり，色や形も指定できます。
 \end{tikzpicture}
 ```
 
+<a href="/attach/TikZ/tikz-samp03.png"><img src="/attach/TikZ/tikz-samp03.png" alt="" width="80%"></a>
+
 <!-- +, ++について -->
 
 #### 直交する2つの直線の交点 {#o7fb6e19}
@@ -491,6 +495,8 @@ node はそれ自体に大きさがあり，色や形も指定できます。
 \fill (B) circle (2pt);
 \end{tikzpicture}
 ```
+
+<a href="/attach/TikZ/tikz-samp04.png"><img src="/attach/TikZ/tikz-samp04.png" alt="" width="70%"></a>
 
 #### 任意のパスの交点 {#a5e018c3}
 
@@ -545,6 +551,8 @@ intersectionsライブラリを読み込んでおく必要があります。
 \end{tikzpicture}
 \end{document}
 ```
+
+<a href="/attach/TikZ/tikz-samp05.jpg"><img src="/attach/TikZ/tikz-samp05.jpg" alt=""></a>
 
 #### 計算による座標設定（例：三角形の重心と垂心を求めてみる） {#vc9ec410}
 
@@ -691,6 +699,8 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
 \end{tikzpicture}
 ```
 
+<a href="/attach/TikZ/tikz-samp07.png"><img src="/attach/TikZ/tikz-samp07.png" alt=""></a>
+
 ```
 %直角記号の付け方の例2（calc ライブラリ必須）
 \begin{tikzpicture}
@@ -701,6 +711,8 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
  \draw[thick, red] ($(O)!8pt!(A)$)--($(O)!8pt!(A)!8pt!90:(A)$)--($(O)!8pt!(C)$);
 \end{tikzpicture}
 ```
+
+<a href="/attach/TikZ/tikz-samp08.png"><img src="/attach/TikZ/tikz-samp08.png" alt=""></a>
 
 ```
 %一般の角度記号の付け方（3.0.0以降，angles ライブラリ必須）
@@ -716,6 +728,8 @@ calc ライブラリを読み込むことで，簡単な座標計算ができま
 \end{tikzpicture}
 \end{document}
 ```
+
+<a href="/attach/TikZ/tikz-samp09.png"><img src="/attach/TikZ/tikz-samp09.png" alt=""></a>
 
 #### 2点間の距離を計算する（例：三角形の外心と内心を求めてみる） {#c9ba66a8}
 
@@ -851,6 +865,8 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば，
 \end{tikzpicture}
 ```
 
+<a href="/attach/TikZ/tikz-samp11.png"><img src="/attach/TikZ/tikz-samp11.png" alt="" width="75%"></a>
+
 ```
 %時計の例（2変数指定の例）
 \begin{tikzpicture}
@@ -867,6 +883,8 @@ through ライブラリを\usetikzlibrary{through}で読み込んであれば，
 \draw[line width=3pt, cap=round] (0,0) -- (30:1.2cm);%長針
 \end{tikzpicture}%
 ```
+
+<a href="/attach/TikZ/tikz-samp12.jpg"><img src="/attach/TikZ/tikz-samp12.jpg" alt="" width="70%"></a>
 
 ### 図画のみの出力 {#nf2ceec5}
 
