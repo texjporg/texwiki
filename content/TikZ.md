@@ -22,7 +22,7 @@ Beamer が基礎としている描画エンジンも PGF です。
 ## はじめに {#aacc19e6}
 
 TikZ/PGF が提供する tikzpicture 環境は，[LaTeX](/LaTeX/) 標準の picture 環境と同様に TeX 文書中に描画コマンドを直接書き込むものですが，かなり高度な描画機能を持っています。
-（→図版の例は[こちら](http://www.texample.net/tikz/)を参照。）
+（→図版の例は[TeXample.net](http://www.texample.net/tikz/)を参照。）
 TikZ/PGF 自身に付属するライブラリで機能が拡充されるほか，TikZ/PGF を利用して高度な描画を行うパッケージも数多く作られています。
 TikZ/PGF を利用するパッケージには PGFPlots, TikZ-dependency, tkz-euclide などがあります。
 同じく高度な描画機能を持っている [PSTricks](/PSTricks/) との大きな違いは，[PostScript](/PostScript/) (PS) を経由せずに PDF を作成できる点です。
@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1289ページの長大なマニュアル (ver 3.1.2 の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
+- [1321ページの長大なマニュアル (ver 3.1.9a の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはコマンドラインから
@@ -106,19 +106,19 @@ TikZ/PGF のマニュアルはコマンドラインから
 texdoc tikz
 ```
 
-を実行することで表示できます。
+を実行することでも表示できます。
 TeX Live に付属している TikZ/PDF のマニュアルが古い場合は上記の新しいマニュアルに更新してください。
 マニュアルの前半には 70 ページにも及ぶチュートリアルがあるので，学習を始めるのは比較的容易です。
 ところが，示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり，マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
 
-たとえば，チュートリアルの p.40 (ver 3.1.2 の場合) にある「パスの交錯」のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
+たとえば，チュートリアルの p.41 (ver 3.1.9a の場合) にある[「パスの交錯（Intersecting Paths）」](https://ftp.kddilabs.jp/CTAN/graphics/pgf/base/doc/pgfmanual.pdf#subsection.2.16)のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
 プリアンブルに
 
 ```
 \usetikzlibrary{intersections}
 ```
 
-と設定しておく必要があります。
+と設定しておく必要があります（コメントには記載があります）。
 
 <!-- ver 3.0.0 からは examplefill という色は用いられなくなりましたので，以下の記述は obsolete です。 -->
 <!-- また，初期設定では examplefill という色は定義されていません。 -->
@@ -242,36 +242,92 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 %%直線の例
 \draw (0,0) -- (2,1)  [rounded corners]--(2,2) -- (0,2) [sharp corners] --  (0,1)-- (1,1);
    %点(0,0), (2,1), (2,2), (0,2), (0,1), (1,1)を結ぶ"線分"で，(2,2)と(0,2)では"滑らか"
+```
+
+<a href="/attach/TikZ/tikz-samp01a.png"><img src="/attach/TikZ/tikz-samp01a.png" alt=""></a>
+
+```
 \draw [orange, thick] (1,2.5) -- ++(35:2cm);
    %(1,2.5)を始点として35°の方向に2cmの"オレンジ色の太い線分"
+```
+
+<a href="/attach/TikZ/tikz-samp01b.png"><img src="/attach/TikZ/tikz-samp01b.png" alt=""></a>
+
+```
 \draw [very thick] (0,3) rectangle (1.5,4);
    %(0,3)を左下，(1.5,4)を右上とする"極太の長方形"
+```
+
+<a href="/attach/TikZ/tikz-samp01c.png"><img src="/attach/TikZ/tikz-samp01c.png" alt=""></a>
+
+```
 \draw (1.5,0) -| (2.5,1.5);
    %(2,0)と(3,1.5)をまっすぐ結ばずに"横線と縦線のみで結ぶ"
+```
 
+<a href="/attach/TikZ/tikz-samp01d.png"><img src="/attach/TikZ/tikz-samp01d.png" alt=""></a>
+
+```
 %%円，楕円，扇形
 \draw [red, thick] (3,3) circle (1);
    %(3,3)を中心とする半径1の"赤い太線の円"（古い書式で，現在は非推奨）
+```
+
+<a href="/attach/TikZ/tikz-samp01e.png"><img src="/attach/TikZ/tikz-samp01e.png" alt=""></a>
+
+```
 \fill [green!80] (4,3) circle [x radius=1cm, y radius=5mm, rotate=30];
-   %中心(4,3)，横1cm，縦5mmの"楕円を30°傾け緑80%で塗った図形"（推奨されている新しい円の書式）
+   %中心(4,3)，横1cm，縦5mmの"楕円を30°傾け"緑80%で塗った図形"（推奨されている新しい円の書式）
+```
+
+<a href="/attach/TikZ/tikz-samp01f.png"><img src="/attach/TikZ/tikz-samp01f.png" alt=""></a>
+
+```
 \filldraw [fill=blue, opacity=.5, draw=Indigo] (5,0)  arc (0:45:2) --(3,0)--cycle;
    %(5,0)を出発点に半径2の弧を0°から45°まで描き，(3,0)を経由して出発点まで線分で戻って囲んだ"透明度50%の青で塗った扇形"
 ```
+
+<a href="/attach/TikZ/tikz-samp01g.png"><img src="/attach/TikZ/tikz-samp01g.png" alt=""></a>
 
 ```
 %%放物線，サインカーブ，曲線，ベジェ曲線
 \draw (5,4) parabola bend (7,2) (8,4);
    %(5,4)を始点とし(7,2)を頂点とする放物線と(7,2)を頂点とし(8,4)を終点とする"放物線"
+```
+
+<a href="/attach/TikZ/tikz-samp01h.png"><img src="/attach/TikZ/tikz-samp01h.png" alt=""></a>
+
+```
 \draw [thick] (5,1) sin (6,2) cos (7,1) sin (8,0) cos (9,1);
    %(5,1)から始まり，(6,2)，(8,0)を頂点として(9,1)で終わる"太線のサインカーブ"
+```
+
+<a href="/attach/TikZ/tikz-samp01i.png"><img src="/attach/TikZ/tikz-samp01i.png" alt=""></a>
+
+```
 \draw [purple, thick] (6,3) to [out=75, in=90] (8,2);
    %(6,3)から75°の角度で出発し，90°の角度で終点(8,3)に至る"紫の太い曲線"
+```
+
+<a href="/attach/TikZ/tikz-samp01j.png"><img src="/attach/TikZ/tikz-samp01j.png" alt=""></a>
+
+```
 \draw [purple, thin, bend right = 30] (6,3) to (8,2);
    %2点(6,3)と(8,2)を結ぶ"右に膨らんだ紫の細い曲線"（30°の角度で始点を出発し，150°の角度で終点に至る）
+```
+
+<a href="/attach/TikZ/tikz-samp01k.png"><img src="/attach/TikZ/tikz-samp01k.png" alt=""></a>
+
+```
 \draw [ultra thick] (8,1) .. controls (10,2) and (10,3.5) ..(9,4);
    %始点(8,1)，終点(9,4)で方向点がそれぞれ(10,2)と(10,3)である"超極太の3次ベジェ曲線"
 \draw [->, very thin]    (8,1) -- (10,2); \draw[<-, very thin] (10,3.5) -- (9,4);
    %上のベジェ曲線の"→つき方向線を示した細線"
+```
+
+<a href="/attach/TikZ/tikz-samp01l.png"><img src="/attach/TikZ/tikz-samp01l.png" alt=""></a>
+
+```
 \end{tikzpicture}
 
 %%関数による描画（マニュアルp.329の例）
