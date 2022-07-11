@@ -244,28 +244,28 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
    %点(0,0), (2,1), (2,2), (0,2), (0,1), (1,1)を結ぶ"線分"で，(2,2)と(0,2)では"滑らか"
 ```
 
-<a href="/attach/TikZ/tikz-samp01a.png"><img src="/attach/TikZ/tikz-samp01a.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01a.png"><img src="/attach/TikZ/tikz-samp01a.png" alt="&quot;% tikz-samp01a.png&quot;"></a>
 
 ```
 \draw [orange, thick] (1,2.5) -- ++(35:2cm);
    %(1,2.5)を始点として35°の方向に2cmの"オレンジ色の太い線分"
 ```
 
-<a href="/attach/TikZ/tikz-samp01b.png"><img src="/attach/TikZ/tikz-samp01b.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01b.png"><img src="/attach/TikZ/tikz-samp01b.png" alt="&quot;% tikz-samp01b.png&quot;"></a>
 
 ```
 \draw [very thick] (0,3) rectangle (1.5,4);
    %(0,3)を左下，(1.5,4)を右上とする"極太の長方形"
 ```
 
-<a href="/attach/TikZ/tikz-samp01c.png"><img src="/attach/TikZ/tikz-samp01c.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01c.png"><img src="/attach/TikZ/tikz-samp01c.png" alt="&quot;% tikz-samp01c.png&quot;"></a>
 
 ```
 \draw (1.5,0) -| (2.5,1.5);
    %(2,0)と(3,1.5)をまっすぐ結ばずに"横線と縦線のみで結ぶ"
 ```
 
-<a href="/attach/TikZ/tikz-samp01d.png"><img src="/attach/TikZ/tikz-samp01d.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01d.png"><img src="/attach/TikZ/tikz-samp01d.png" alt="&quot;% tikz-samp01d.png&quot;"></a>
 
 ```
 %%円，楕円，扇形
@@ -273,21 +273,21 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
    %(3,3)を中心とする半径1の"赤い太線の円"（古い書式で，現在は非推奨）
 ```
 
-<a href="/attach/TikZ/tikz-samp01e.png"><img src="/attach/TikZ/tikz-samp01e.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01e.png"><img src="/attach/TikZ/tikz-samp01e.png" alt="&quot;% tikz-samp01e.png&quot;"></a>
 
 ```
 \fill [green!80] (4,3) circle [x radius=1cm, y radius=5mm, rotate=30];
    %中心(4,3)，横1cm，縦5mmの"楕円を30°傾け"緑80%で塗った図形"（推奨されている新しい円の書式）
 ```
 
-<a href="/attach/TikZ/tikz-samp01f.png"><img src="/attach/TikZ/tikz-samp01f.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01f.png"><img src="/attach/TikZ/tikz-samp01f.png" alt="&quot;% tikz-samp01f.png&quot;"></a>
 
 ```
 \filldraw [fill=blue, opacity=.5, draw=Indigo] (5,0)  arc (0:45:2) --(3,0)--cycle;
    %(5,0)を出発点に半径2の弧を0°から45°まで描き，(3,0)を経由して出発点まで線分で戻って囲んだ"透明度50%の青で塗った扇形"
 ```
 
-<a href="/attach/TikZ/tikz-samp01g.png"><img src="/attach/TikZ/tikz-samp01g.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01g.png"><img src="/attach/TikZ/tikz-samp01g.png" alt="&quot;% tikz-samp01g.png&quot;"></a>
 
 ```
 %%放物線，サインカーブ，曲線，ベジェ曲線
@@ -295,28 +295,28 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
    %(5,4)を始点とし(7,2)を頂点とする放物線と(7,2)を頂点とし(8,4)を終点とする"放物線"
 ```
 
-<a href="/attach/TikZ/tikz-samp01h.png"><img src="/attach/TikZ/tikz-samp01h.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01h.png"><img src="/attach/TikZ/tikz-samp01h.png" alt="&quot;% tikz-samp01h.png&quot;"></a>
 
 ```
 \draw [thick] (5,1) sin (6,2) cos (7,1) sin (8,0) cos (9,1);
    %(5,1)から始まり，(6,2)，(8,0)を頂点として(9,1)で終わる"太線のサインカーブ"
 ```
 
-<a href="/attach/TikZ/tikz-samp01i.png"><img src="/attach/TikZ/tikz-samp01i.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01i.png"><img src="/attach/TikZ/tikz-samp01i.png" alt="&quot;% tikz-samp01i.png&quot;"></a>
 
 ```
 \draw [purple, thick] (6,3) to [out=75, in=90] (8,2);
    %(6,3)から75°の角度で出発し，90°の角度で終点(8,3)に至る"紫の太い曲線"
 ```
 
-<a href="/attach/TikZ/tikz-samp01j.png"><img src="/attach/TikZ/tikz-samp01j.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01j.png"><img src="/attach/TikZ/tikz-samp01j.png" alt="&quot;% tikz-samp01j.png&quot;"></a>
 
 ```
 \draw [purple, thin, bend right = 30] (6,3) to (8,2);
    %2点(6,3)と(8,2)を結ぶ"右に膨らんだ紫の細い曲線"（30°の角度で始点を出発し，150°の角度で終点に至る）
 ```
 
-<a href="/attach/TikZ/tikz-samp01k.png"><img src="/attach/TikZ/tikz-samp01k.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01k.png"><img src="/attach/TikZ/tikz-samp01k.png" alt="&quot;% tikz-samp01k.png&quot;"></a>
 
 ```
 \draw [ultra thick] (8,1) .. controls (10,2) and (10,3.5) ..(9,4);
@@ -325,7 +325,7 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
    %上のベジェ曲線の"→つき方向線を示した細線"
 ```
 
-<a href="/attach/TikZ/tikz-samp01l.png"><img src="/attach/TikZ/tikz-samp01l.png" alt=""></a>
+<a href="/attach/TikZ/tikz-samp01l.png"><img src="/attach/TikZ/tikz-samp01l.png" alt="&quot;% tikz-samp01l.png&quot;"></a>
 
 ```
 \end{tikzpicture}
