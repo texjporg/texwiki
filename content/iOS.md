@@ -7,7 +7,7 @@ pukiwiki: "iOS"
 
 # iOS
 
-## [iOS](http://www.apple.com/jp/ios/) での TeX の利用 {#h8fdec00}
+## [iOS](http://www.apple.com/jp/ios/)/[iPadOS](https://www.apple.com/jp/ipados/) での LaTeX の利用 {#h8fdec00}
 
 ***
 
@@ -15,18 +15,23 @@ pukiwiki: "iOS"
 
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
+- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2022, with Tikz and LuaTeX) for text processing.
+    - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
+    - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
 - [iSH](https://ish.app/) A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more!
     - [iPadにTeXLiveを突っ込んでLaTeXを書く](https://trpfrog.hateblo.jp/entry/latex-on-ipad)
-- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, JavaScript, C, C++ for programming and TeX (texlive 2019, including LuaTeX) for text processing.
-    - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
-- [lib-tex](https://github.com/holzschu/lib-tex) pdftex and luatex as a library. Developped for iOS, but should work on all systems.
-    - [Tex-live 2019 binaries](https://github.com/holzschu/lib-tex/releases)
+    - [iPadで「TeX」環境構築](https://yunavi.lsv.jp/tex.html#iPad)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
-- [http://appcrawlr.com/ios-apps/best-apps-latex-editor](http://appcrawlr.com/ios-apps/best-apps-latex-editor)
+### Texpad {#f10ec168}
 
-を参照．<br>
+Texpad はクラウドタイプセットで日本語の文書をコンパイルできるそうです．<br>
+
+- [https://www.texpad.com/](https://www.texpad.com/)
+    - [https://www.texpad.com/ios](https://www.texpad.com/ios)
+- [https://apps.apple.com/jp/app/texpad-latex-editor/id550419159](https://apps.apple.com/jp/app/texpad-latex-editor/id550419159)
+- [TeXPadで日本語を扱う方法(iPad , iPhoneでLaTeX)](https://murabitoleg.com/texpad-japanese/)
 
 ### TeX Writer {#q0ac10e0}
 
@@ -34,7 +39,7 @@ TeX Writer は日本語の文書をローカルでコンパイルできるそう
 TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています．<br>
 
 - [https://apps.texwriter.net/](https://apps.texwriter.net/)
-- [https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8](https://itunes.apple.com/jp/app/tex-writer-latex-editor-compiler/id552717222?mt=8)
+- [https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222](https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222)
 - [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
 
 <!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
