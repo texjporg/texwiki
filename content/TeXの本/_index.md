@@ -71,6 +71,16 @@ TeX や LaTeX に関する本の紹介です．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
+#### 2022年 {#v85cf0f1}
+
+- [明松 真司](https://www.skillupai.com/teacher/akematsu-shinji/)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
+    （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税），[ISBN 978-4295013884](http://ja.wikipedia.org/wiki/Special:Booksources/978-4295013884)）
+
+#### 2021年 {#jf0f3e5a}
+
+- [ふぉれぽん](https://twitter.com/forepon1979)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集 ペーパーバック](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
+    （Independently published，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](http://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
+
 #### 2020年 {#q26632bb}
 
 - [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2e美文書作成入門](https://gihyo.jp/book/2020/978-4-297-11712-2)』
@@ -79,7 +89,7 @@ TeX や LaTeX に関する本の紹介です．
     [TeX Live](</TeX Live/>) 2020 を収録した
     DVD-ROM 付。電子版もあります。
     - [サポートページ](https://github.com/okumuralab/bibun8)
-- 水谷正大『LaTeX超入門 ゼロからはじめる理系の文書作成術』（講談社，ブルーバックス B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [水谷正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 
 #### 2019年 {#sf1a21f3}
 
