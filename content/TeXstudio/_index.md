@@ -178,7 +178,7 @@ TeXstudio を起動している場合は TeXstudio を再起動します．
 
 (変更前) /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler
 
-(変更後) /usr/local/share/poppler______________________\_
+(変更後) /usr/local/share/poppler__________________________\_
 
 アンダースコア\[\_\]部分には Null 文字\[00\] を入力して、変更前後の文字列長を維持してください。
 
