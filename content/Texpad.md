@@ -7,12 +7,19 @@ pukiwiki: "Texpad"
 
 # Texpad
 
+## Texpad {#q728ac5b}
+
 TexpadはmacOS, iPadOS, iOSで動作する，高機能な(La)TeX統合環境です。
 
-"公式Webサイト"
+<strong>公式Webサイト</strong>
 
 - [Texpad - Smoothest way to write LaTeX](https://www.texpad.com/)
 
-## 動作環境 {#m6120f50}
+### 動作環境 {#m6120f50}
 
 macOS, iPadOS, iOS
+
+### 使い方（macOS版） {#b748650e}
+
+- 左上のエンジン名（XeTeXなど）の右のつまみマークをクリックして、エンジンをpLaTeX,
+    LuaLaTeXなどに切り替えられます。
