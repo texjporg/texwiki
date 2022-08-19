@@ -233,7 +233,7 @@ pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-pxdvi は [tltexjp](https://texjp.org/#tltexjp) からインストールできます。
+[TexLive-2021-on-CentOS8 - RIBFcomp Wiki#pxdvi のインストール](https://ribf.riken.jp/ribfcomp/TexLive-2021-on-CentOS8#pxdvi_.2BMG4wpDDzMLkwyDD8MOs-)を参照。
 
 ### 注意点など {#uca9d6da}
 
