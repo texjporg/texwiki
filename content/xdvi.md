@@ -23,7 +23,7 @@ xdvi を使用すると，日本語が表示されないといった問題が発
 
 ***
 
-## [xdvik](http://xdvi.sourceforge.net/) <a id="xdvik"></a> {#s47919ef}
+## [xdvik](http://xdvi.sourceforge.net/) (非推奨) <a id="xdvik"></a> {#s47919ef}
 
 ### xdvik とは {#de90c407}
 
@@ -205,14 +205,16 @@ $ synctex help edit
 
 を参照してください。
 
-## [pxdvi](</TeX Live/#tltexjp>) <a id="pxdvi"></a> {#s1b173bb}
+## pxdvi (非推奨) <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
 
 pxdvi は (e-(u))pTeX で出力された DVI ファイルに対応した DVI プレビューアです。
 pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 
-- [tltexjp](https://texjp.org/#tltexjp)
+tltexjp リポジトリが削除されたので pxdvi は配布終了しました。（[pxdvi, ptex-ngを削除 · Issue #5 · texjporg/tltexjp · GitHub](https://github.com/texjporg/tltexjp/issues/5)を参照）
+
+- [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
 - [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
 - [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
 - [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
