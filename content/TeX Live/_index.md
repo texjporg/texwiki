@@ -133,13 +133,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
     - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 
-### [tltexjp](https://texjp.org/#tltexjp) <a id="tltexjp"></a> {#r64bfbe1}
-
-tltexjp は TeX Live の補助リポジトリです．
-
-- [https://texjp.org/#tltexjp](https://texjp.org/#tltexjp)
-- [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
-
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
 [TLContrib](/TLContrib/) は TeX Live の補完リポジトリです．
