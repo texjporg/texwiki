@@ -235,7 +235,7 @@ tltexjp リポジトリが削除されたので pxdvi は配布終了しまし�
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
-[TexLive-2021-on-CentOS8 - RIBFcomp Wiki#pxdvi のインストール](https://ribf.riken.jp/ribfcomp/TexLive-2021-on-CentOS8#pxdvi_.2BMG4wpDDzMLkwyDD8MOs-)を参照。
+pxdvi の配布は終了しました。tltexjp 先生の次回作にご期待ください。
 
 ### 注意点など {#uca9d6da}
 
