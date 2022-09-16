@@ -182,7 +182,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
         - [AUCTeX](/AUCTeX/)
         - [YaTeX](/YaTeX/)（野鳥）
     - [Vim](/Vim/)
-        - vimtex
+        - [VimTeX](/VimTeX/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [gedit](/gedit/)
