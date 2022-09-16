@@ -25,7 +25,7 @@ Pandoc はあるマークアップ言語で書かれた文書を別の形式に�
 
 #### PDF への変換で ltjsarticle を使うとエラーが出る {#h2f8de68}
 
-- [pandoc で PDF変換 エラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1005)
+- [pandoc で PDF変換 エラー](https://okumuralab.org/tex/mod/forum/discuss.php?d=1005)
 - [Pandocを使ってMarkdownからPDFを生成する](http://qiita.com/takeh1k0/items/ff84cb85bfffedc75066)
 
 pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定して lualatex を実行するとエラーが発生する現象は 2015-01-07 に修正されました．
@@ -36,8 +36,8 @@ pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定�
     - [Pandoc-mode](http://joostkremers.github.io/pandoc-mode/)
 - [Vim](/Vim/)
     - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
-- [Atom](/Atom/)
 - [Visual Studio Code](</Visual Studio Code/>)
+- [Atom](/Atom/)
 
 ### 関連リンク {#ud9aba13}
 
@@ -58,7 +58,7 @@ pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定�
 - [markdown->TeXの変換だけで卒論を仕上げるのに便利だったツール10個まとめ](http://mizchi.hatenablog.com/entry/2014/01/20/090957)
 - [MarkdownとPandocを用いた簡易Latex環境の構築 ref: http://qiita.com/mountcedar/items/e7603c2eb65661369c3b](https://gist.github.com/mountcedar/7006977)
 - [pandocでlatexをpdfに変換](https://gist.github.com/add20/a4ea9b143c41552e72f5)
-- [http://blog.fusic.co.jp/archives/3924](http://blog.fusic.co.jp/archives/3924)
+- [Fusic勉強会でPandocについて発表しました](http://blog.fusic.co.jp/archives/3924)
 - [省力TeX](http://mith009.hatenablog.com/entry/2013/11/18/025450)
 - [kramdownに関する覚え書き](http://cup.sakura.ne.jp/kmd_a.htm)
 - [md2pdf](https://github.com/vzaccaria/md2pdf)
