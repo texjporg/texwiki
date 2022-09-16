@@ -56,6 +56,12 @@ sudo port install mupdf
 pacman -S mupdf mupdf-tools
 ```
 
+または
+
+```
+pacman -S mupdf-gl mupdf-tools
+```
+
 #### Linux Mint/Debian/Ubuntu {#od9b1036}
 
 - [https://packages.ubuntu.com/ja/mupdf](https://packages.ubuntu.com/ja/mupdf)
