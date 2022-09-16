@@ -163,8 +163,7 @@ sudo pacman -S texmaker
 ### [TeXworks](/TeXworks/) {#y01d9b26}
 
 ```
-yay -S texworks
-sudo pacman -S poppler-data
+sudo pacman -S texworks poppler-data
 ```
 
 ### [Visual Studio Code](</Visual Studio Code/>) {#q33f10c6}
