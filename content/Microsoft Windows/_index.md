@@ -76,7 +76,7 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 
 以下では，TeXworks をもちいてみます．
 TeXworks は
-スタートメニューの「TeX Live 2021」→「TeXworks editor」から
+スタートメニューの「TeX Live 2022」→「TeXworks editor」から
 起動することができます．
 
 次の四行を入力してみます．
