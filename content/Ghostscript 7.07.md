@@ -46,7 +46,7 @@ Ghostscript で利用する欧文フォントは，Sourceforge ([gs-fonts](https
 CJK フォントを扱うためには CMap Resource も必要で，これは [Adobe Type Tools - GitHub](https://github.com/adobe-type-tools/cmap-resources) からダウンロードできます。
 
 ソースから make する場合は，これに加えて GNU Ghostscript 7.07 本体と依存ライブラリのソースも必要です。
-本体のソースは ghostscript-7.07b.tar.gz の場合は [https://ftp.gnu.org/gnu/ghostscript/](https://ftp.gnu.org/gnu/ghostscript/) や [http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/](http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/) ，ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz の場合は Sourceforge ([gnu-gs](https://sourceforge.net/projects/ghostscript/files/gnu-gs/7.07/)) から，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
+本体のソースは ghostscript-7.07b.tar.gz の場合は [https://ftp.gnu.org/gnu/ghostscript/](https://ftp.gnu.org/gnu/ghostscript/) や [http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/](http://ftp.yz.yamagata-u.ac.jp/pub/GNU/ghostscript/) ，ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz の場合は [https://fossies.org/linux/misc/old/ghost/gnu/gs707/ghostscript-7.07.tar.gz/](https://fossies.org/linux/misc/old/ghost/gnu/gs707/ghostscript-7.07.tar.gz/) から，依存ライブラリのソースは，[ftp.gnu.org](https://ftp.gnu.org/gnu/ghostscript/) やそのミラーから入手できます。
 
 - GNU Ghostscript 7.07 のソース
     - ghostscript-7.07b.tar.gz または ghostscript-7.07.tar.bz2 または ghostscript-7.07.tar.gz
@@ -83,7 +83,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 #### Windows {#y7d058ad}
 
-角藤さんが配布している [gs707w32full.zip](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
+角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
 デフォルトでは C:\gs に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
