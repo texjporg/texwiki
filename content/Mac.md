@@ -84,7 +84,7 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
         - [AUCTeX](/AUCTeX/)
         - [YaTeX](/YaTeX/)（野鳥）
     - [Vim](/Vim/)
-        - vimtex
+        - [VimTeX](/VimTeX/)
     - [Eclipse](/Eclipse/)
         - [TeXlipse](/TeXlipse/)
     - [CotEditor](/CotEditor/)
