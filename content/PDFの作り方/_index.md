@@ -35,7 +35,7 @@ macOS では標準で印刷機能から PDF で保存ができます．
 
 Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
 
-Windows 8.1, Windows 8, Windows 7 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
+Windows 8.1, 2020 年 1 月 14 日にサポートが終了した Windows 7 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
 
 Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの [Cairo](https://www.cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
 
