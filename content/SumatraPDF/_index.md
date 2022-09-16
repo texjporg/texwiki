@@ -54,7 +54,7 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
     - [YaTeX](/YaTeX/)
 - [Vim](/Vim/)
     - [tex.vim](/Vim/tex.vim/)
-    - vimtex
+    - [VimTeX](/VimTeX/)
     - [Vim-LaTeX](/Vim-LaTeX/)
 - [Eclipse](/Eclipse/)
     - [TeXlipse](/TeXlipse/)
