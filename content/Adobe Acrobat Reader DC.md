@@ -24,9 +24,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 21.007.20099 以降に更新してください。Adobe Acrobat Reader DC 21.007.20095 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB21-104）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210044.html)
-- Adobe Acrobat Reader DC Version 2021 (32-bit) の DDE server name は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) の DDE server name は AcroViewA21 です。
-- Adobe Acrobat Reader DC Version 2020.006.20034 で DDE server name が AcroViewR20 に変更されました。
+- Adobe Acrobat Reader DC 22.001.20117 以降に更新してください。Adobe Acrobat Reader DC 22.001.20085 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB22-16）に関する注意喚起](https://www.jpcert.or.jp/at/2022/at220009.html)
+- Adobe Acrobat Reader DC Version 2022 (32-bit) の DDE server name は AcroViewR22, Adobe Acrobat Reader DC Version 2022 (64-bit) の DDE server name は AcroViewA22 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
@@ -119,7 +118,7 @@ wine AcroRdrDC2100720099_ja_JP.exe
 Linux で Adobe Acrobat Reader DC (32-bit) を起動して file.pdf を表示するには
 
 ```
-wine cmd /c start AcroRd32.exe file.pdf
+wine cmd /c start Acrobat.exe file.pdf
 ```
 
 のように実行して「常に保護モードを無効にして開く(<ins>A</ins>)」を選択して OK を押します。
@@ -250,10 +249,10 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader DC バージョン 2021 (32-bit)
+Windows 版の Adobe Acrobat Reader DC バージョン 2022 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
-> AcroViewR21
+> AcroViewA22
 
 という1行だけを持ち，ファイル名が
 
@@ -261,24 +260,24 @@ Windows 版の Adobe Acrobat Reader DC バージョン 2021 (32-bit)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewR21 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewA22 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
 
-AcroViewR21 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+AcroViewA22 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
 
 Windows PowerShell の場合は
 
 ```
-start AcroRd32;if($?){timeout 1};if($?){pdfopen foo.pdf}
+start Acrobat;if($?){timeout 1};if($?){pdfopen foo.pdf}
 ```
 
 コマンド プロンプトの場合は
 
 ```
-start AcroRd32 && timeout 1 && pdfopen foo.pdf
+start Acrobat && timeout 1 && pdfopen foo.pdf
 ```
 
 のようにして実行してください。
@@ -296,15 +295,15 @@ SumatraPDF に関連付けされている場合は
 というエラーが発生して PDF ファイルが開けないので pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合は
 PDF ファイルは Adobe Acrobat Reader DC に関連付けしておいてください。
 
-pdfopen.exe で PDF ファイルを開くのに AcroRd32.exe で直接開く場合と比べて時間がかかったり
+pdfopen.exe で PDF ファイルを開くのに Acrobat.exe で直接開く場合と比べて時間がかかったり
 PDF ファイルを SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けしたい場合は
-pdfopen.exe, pdfclose.exe, pdfdde.exe を使用せずに AcroRd32.exe を直接使用してください。
+pdfopen.exe, pdfclose.exe, pdfdde.exe を使用せずに Acrobat.exe を直接使用してください。
 
-MSYS2 の time コマンドで AcroRd32.exe で直接開く場合と pdfopen.exe を使用する場合で比較すると
-pdfopen.exe を使用した場合は AcroRd32.exe で直接開く場合に比べて 12 倍 ～ 19 倍ぐらい時間がかかるようです．
+MSYS2 の time コマンドで Acrobat.exe で直接開く場合と pdfopen.exe を使用する場合で比較すると
+pdfopen.exe を使用した場合は Acrobat.exe で直接開く場合に比べて 12 倍 ～ 19 倍ぐらい時間がかかるようです．
 
 ```
-$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf'
+$ time C:/Windows/System32/cmd.exe /c 'start Acrobat foo.pdf'
 
 real    0m0.100s
 user    0m0.015s
@@ -317,17 +316,17 @@ user    0m0.000s
 sys     0m0.015s
 ```
 
-MSYS2 の time コマンドで「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」場合と「AcroRd32.exe で開く --&gt; pdfopen.exe で開いて pdfclose.exe で閉じる --&gt; AcroRd32.exe で開く」場合を比較すると AcroRd32.exe を終了して AcroRd32.exe で開くほうが pdfopen.exe と pdfclose.exe で閉じて AcroRd32.exe で開くよりも 2 倍早く動作するようです．
+MSYS2 の time コマンドで「Acrobat.exe で開く --&gt; Acrobat.exe を終了する --&gt; Acrobat.exe で開く」場合と「Acrobat.exe で開く --&gt; pdfopen.exe で開いて pdfclose.exe で閉じる --&gt; Acrobat.exe で開く」場合を比較すると Acrobat.exe を終了して Acrobat.exe で開くほうが pdfopen.exe と pdfclose.exe で閉じて Acrobat.exe で開くよりも 2 倍早く動作するようです．
 
 ```
 
-$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf && tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" >nul && taskkill /im AcroRd32.exe & echo start AcroRd32 foo.pdf | cmd'
+$ time C:/Windows/System32/cmd.exe /c 'start Acrobat foo.pdf && tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" >nul && taskkill /im Acrobat.exe & echo start Acrobat foo.pdf | cmd'
 
 real    0m0.520s
 user    0m0.000s
 sys     0m0.015s
 
-$ time C:/Windows/System32/cmd.exe /c 'start AcroRd32 foo.pdf && pdfopen --file foo.pdf && pdfclose --file foo.pdf & echo start AcroRd32 foo.pdf | cmd'
+$ time C:/Windows/System32/cmd.exe /c 'start Acrobat foo.pdf && pdfopen --file foo.pdf && pdfclose --file foo.pdf & echo start Acrobat foo.pdf | cmd'
 
 real    0m1.096s
 user    0m0.015s
@@ -337,7 +336,7 @@ sys     0m0.000s
 昔は Adobe Acrobat Reader の起動に時間がかかったため，Adobe Acrobat Reader を起動したままで
 DDE を使用して PDF ファイルを閉じる方法が有効に機能していましたが，現在は DDE サーバー名が Adobe Acrobat Reader のバージョンによって変化するようになり[^1]
 DDE の使い勝手が悪くなってしまったことと Adobe Acrobat Reader の起動が早くなったため
-DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd32.exe を終了する --&gt; AcroRd32.exe で開く」といった処理でも十分に実用的な速度で動作するようです．[^2]
+DDE でファイルを閉じなくても「Acrobat.exe で開く --&gt; Acrobat.exe を終了する --&gt; Acrobat.exe で開く」といった処理でも十分に実用的な速度で動作するようです．[^2]
 
 ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader DC で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
 
@@ -352,13 +351,13 @@ DDE でファイルを閉じなくても「AcroRd32.exe で開く --&gt; AcroRd3
 Windows PowerShell の場合は
 
 ```
-Start-Process AcroRd32 'foo.pdf'
+Start-Process Acrobat 'foo.pdf'
 ```
 
 コマンド プロンプトの場合は
 
 ```
-start AcroRd32 "foo.pdf"
+start Acrobat "foo.pdf"
 ```
 
 pdfopen.exe を使う場合は
@@ -380,13 +379,13 @@ pdfopen foo.pdf
 Windows PowerShell の場合は
 
 ```
-Start-Process AcroRd32 -ArgumentList ('/A', 'page=3', 'foo.pdf')
+Start-Process Acrobat -ArgumentList ('/A', 'page=3', 'foo.pdf')
 ```
 
 コマンド プロンプトの場合は
 
 ```
-start AcroRd32 /A "page=3" "foo.pdf"
+start Acrobat /A "page=3" "foo.pdf"
 ```
 
 pdfopen.exe を使う場合は
@@ -418,13 +417,13 @@ pdfopen --file foo.pdf && pdfclose --file foo.pdf
 Windows PowerShell の場合は
 
 ```
-Stop-Process -Name AcroRd32
+Stop-Process -Name Acrobat
 ```
 
 コマンド プロンプトの場合は
 
 ```
-taskkill /IM AcroRd32.exe
+taskkill /IM Acrobat.exe
 ```
 
 pdfdde.exe を使う場合は
@@ -442,7 +441,7 @@ Adobe Acrobat Reader DC は [SyncTeX](/SyncTeX/) には対応していません�
 TeX ファイルの 30 行目に対応する PDF ファイルの該当するページにジャンプしたい場合は
 
 ```
-synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "rundll32 shell32,ShellExec_RunDLL AcroRd32 /A 'page=%{page+1}' '%{output}'"
+synctex view -i "30:0:hoge.tex" -o "hoge.pdf" -x "rundll32 shell32,ShellExec_RunDLL Acrobat /A 'page=%{page+1}' '%{output}'"
 ```
 
 のように実行します．
@@ -499,6 +498,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader DC Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader DC Version 2022 (64-bit) は AcroViewA22 です。
 [^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
