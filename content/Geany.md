@@ -7,7 +7,7 @@ pukiwiki: "Geany"
 
 # Geany
 
-## [Geany](http://www.geany.org/) {#d1003dd0}
+## [Geany](https://www.geany.org/) {#d1003dd0}
 
 ***
 
@@ -20,7 +20,7 @@ Geany は 基本的な IDE の機能があります．
 Geany は LaTeX の編集に対応しています．
 Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．
 
-- [Geany](http://www.geany.org/)
+- [Geany](https://www.geany.org/)
 
 ### 動作環境 {#ib302119}
 
@@ -32,7 +32,7 @@ Windows, macOS, Linux
 
 ### リリース情報/ChangeLog {#n1e93e0e}
 
-- [ChangeLog](http://www.geany.org/Documentation/ChangeLog)
+- [ChangeLog](https://www.geany.org/Documentation/ChangeLog)
 - [geany/geany · GitHub](https://github.com/geany/geany)
     - [tags](https://github.com/geany/geany/tags)
     - [commit](https://github.com/geany/geany/commits/)
@@ -96,11 +96,9 @@ V<ins>i</ins>ew PDF File
 > </table>
 >
 
-### [GeanyLaTeX](http://frank.uvena.de/en/Geany/geanylatex/) {#scc8a76c}
+### LaTeX {#scc8a76c}
 
-- [http://git.geany.org/geany-plugins/tree/geanylatex](http://git.geany.org/geany-plugins/tree/geanylatex)
-    - [http://git.geany.org/geany-plugins/log/geanylatex](http://git.geany.org/geany-plugins/log/geanylatex)
-    - [http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX](http://git.geany.org/geany-plugins/log/?qt=grep&q=GeanyLaTeX)
+- [https://github.com/geany/geany-plugins/tree/master/latex](https://github.com/geany/geany-plugins/tree/master/latex)
 
 \[ツール(<ins>T</ins>)\]-\[プラグインマネージャ(<ins>P</ins>)\] で GeanyLaTeX にチェックをいれてアクティブにします．<br>
 メニューに \[<ins>L</ins>aTeX\] や \[<ins>B</ins>ibTeX\] が追加されます．<br>
