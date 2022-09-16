@@ -136,7 +136,7 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
-    - [Visual Studio Code](</Visual Studio Code/>) で LaTeX Workshop パッケージを使う
+    - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX](</Visual Studio Code/LaTeX/>) パッケージを使う
     - [Atom](/Atom/) で [pdf-view](https://atom.io/packages/pdf-view) パッケージを使う
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
