@@ -15,7 +15,7 @@ pukiwiki: "Geany"
 
 ## Geany とは {#u4d63bea}
 
-Geany は GTK+ を使用した高速で軽量なテキストエディタです．
+Geany は GTK を使用した高速で軽量なテキストエディタです．
 Geany は 基本的な IDE の機能があります．
 Geany は LaTeX の編集に対応しています．
 Geany は UTF-8/EUC-JP/ISO-2022-JP/Shift_JIS/CP932 等の文字コードに対応しています．
