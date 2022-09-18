@@ -18,10 +18,10 @@ pukiwiki: "PDFの作り方"
 - OS の印刷機能などを使う．
 - ブラウザの印刷機能などで HTML から生成する．
 - グラフィックソフトから PDF で出力する．
-- Adobe Acrobat DC などの専用ソフトを使う．
+- Adobe Acrobat などの専用ソフトを使う．
 - [LaTeX](/LaTeX/) などの文書作成環境を整え，PDF として文書を出力する．
 
-Adobe Acrobat DC が高機能で高品質ですが，高価な有償製品です．カジュアルなユーザのために，PDF を無償で作成するソフトウェアも多数用意されています．
+Adobe Acrobat が高機能で高品質ですが，高価な有償製品です．カジュアルなユーザのために，PDF を無償で作成するソフトウェアも多数用意されています．
 
 PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) という項目にまとめられていますので，そちらを参照して下さい．
 
@@ -35,14 +35,14 @@ macOS では標準で印刷機能から PDF で保存ができます．
 
 Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
 
-Windows 8.1, 2020 年 1 月 14 日にサポートが終了した Windows 7 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
+Windows 8.1 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
 
-Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの [Cairo](https://www.cairographics.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Inkscape](/Inkscape/) などのソフトウェアでは，PDF への出力が可能です．
+Linux などの環境でも，近年は PDF 生成環境は整ってきています。2D グラフィックス・ライブラリの [Skia](https://skia.org/) が標準で PDF への書き出しをサポートしており，これを用いる [Google Chrome](</Google Chrome/>) などのソフトウェアでは，PDF への出力が可能です．
 
 ### 仮想プリンタの導入 {#ge6f5633}
 
 PDF 出力用の仮想プリンタを導入することで，様々なアプリケーションから，印刷機能を使って PDF を作成できるようになります．
-Adobe Acrobat DC など商品をはじめ，CutePDF などのフリーソフトなど，仮想プリンタとして動作可能な，様々な PDF 作成用のソフトがあります．
+Adobe Acrobat など商品をはじめ，CutePDF などのフリーソフトなど，仮想プリンタとして動作可能な，様々な PDF 作成用のソフトがあります．
 
 Windows では，[Ghostscript](/Ghostscript/) というオープンソースのソフトウェアを用いた，
 PDF へ出力するための無償の仮想プリンタが多数あります：
@@ -82,42 +82,42 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
     - platex→dvipdfmx (現在日本で最も主流)
     - uplatex→dvipdfmx (現在日本で主流)
 1. tex → dvi → ps → pdf
-    - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller DC" で ps → pdf
+    - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller" で ps → pdf
 
-arXiv などでは 3. を要求されます．Adobe Acrobat Distiller DC を用いると信頼性が高く，印刷所などでも好まるケースがあるようです．
+arXiv などでは 3. を要求されます．Adobe Acrobat Distiller を用いると信頼性が高く，印刷所などでも好まるケースがあるようです．
 
 ### dvips の使い方 {#lf015a28}
 
 dvips は TeX の出力（DVI ファイル）を PostScript (PS) ファイルに変換するツールです．
 
-dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマンドや Adobe Acrobat Distiller DC で PDF ファイルに変換できます．
+dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマンドや Adobe Acrobat Distiller で PDF ファイルに変換できます．
 
 詳細は [dvips](/dvips/) を参照してください．
 
-## Adobe Acrobat DC で PDF {#w441bc87}
+## Adobe Acrobat で PDF {#w441bc87}
 
-Adobe Acrobat DC は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
+Adobe Acrobat は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
 
-### Adobe Acrobat Reader DC と Adobe Acrobat DC の違い {#c982e6e9}
+### Adobe Acrobat Reader DC と Adobe Acrobat の違い {#c982e6e9}
 
-Adobe Acrobat Reader DC は Adobe Acrobat DC から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](https://get.adobe.com/jp/reader/)から無償で入手できます．
-[Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat.html) は
-Adobe Acrobat Distiller DC を含む製品（商品）です．
+Adobe Acrobat Reader DC は Adobe Acrobat から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](https://get.adobe.com/jp/reader/)から無償で入手できます．
+[Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat.html) は
+Adobe Acrobat Distiller を含む製品（商品）です．
 値段は Adobe のサイトで確認してください．
 
-有償の Adobe Acrobat DC には，その機能によってプランが幾つか存在しています．
-「[プランと価格 | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat/pricing.html)」などを参照してください．
+有償の Adobe Acrobat には，その機能によってプランが幾つか存在しています．
+「[プランと価格 | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pricing.html)」などを参照してください．
 Standard と Pro がありますが，どちらも様々な文書ファイルや画像ファイルの PDF への変換をサポートしており，PDF のパスワード保護，複数の PDF の統合，PDF の編集などに対応しており，また，Word への書き出しや署名なども可能です．Pro ではこれに加え，PDF/X や PDF/A への変換や，これらへの規格適合性の検証 (プリフライト) などプロフェッショナル向けの機能を備えています．
 
-Adobe Acrobat DC があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
+Adobe Acrobat があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
 
 Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．
 アップデートについては Adobe のダウンロードのページをご覧ください．
 
-### Adobe Acrobat DC の設定 {#e5e57a76}
+### Adobe Acrobat の設定 {#e5e57a76}
 
-[Windows 10 で通常使うプリンターを設定する方法](https://support.microsoft.com/ja-jp/help/4028622/windows-how-to-set-a-default-printer-in-windows-10) を参照して
-Adobe Acrobat DC を通常使うプリンターとして設定することができます．
+[Windowsで既定のプリンターを設定する](https://support.microsoft.com/ja-jp/windows/windows%E3%81%A7%E6%97%A2%E5%AE%9A%E3%81%AE%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-e10cf8b8-e596-b102-bf84-c41022b5036f) を参照して
+Adobe Acrobat を通常使うプリンターとして設定することができます．
 設定から 「デバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
 ［プリンターとスキャナー］の「Windows で通常使うプリンターを管理する」のチェックをはずし，「Adobe PDF」プリンターアイコンをクリックして
 「管理」→「既定に設定」します．
@@ -172,7 +172,7 @@ OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋�
 
 フォントの埋め込みはよい PDF を作成するために推奨されることですが，これにはライセンス上の微妙な問題も絡み，注意が必要です。「[フォントの埋め込みとライセンス](</フォントの埋め込みとライセンス/>)」の項なども参照してください．
 
-Adobe Acrobat DC (Distiller)，dvipdfmx，xdvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．
+Adobe Acrobat (Distiller)，dvipdfmx，xdvipdfmx (XeTeX)，LuaTeX は日本語フォントを埋め込まないで使うと，ISO の仕様に違反した PDF を生成します．注意してください．
 
 #### テキスト情報 {#g073c42c}
 
@@ -182,7 +182,7 @@ PDF 文書内で文字列を検索したり，文書から文字列をコピー�
 
 PDF 文書内にとりこむ画像の解像度は，ファイルサイズ，ページが完全に描画されるまでの時間などに影響します。読み手がストレスなく文書を読めるように適切に取り扱いましょう．
 
-Adobe Acrobat DC などの製品では，必要であればダウンサンプルによって，画像の解像度を自動的に落としてくれますが，LaTeX などの環境ではまずこういった機能はありません．pdfTeX，LuaTeX，XeTeX，dvipdfmx などすべてダウンサンプルの機能はありません。この場合は，グラフィックソフトなどで，手動で画像サイズの調整が必要となってきます．
+Adobe Acrobat などの製品では，必要であればダウンサンプルによって，画像の解像度を自動的に落としてくれますが，LaTeX などの環境ではまずこういった機能はありません．pdfTeX，LuaTeX，XeTeX，dvipdfmx などすべてダウンサンプルの機能はありません。この場合は，グラフィックソフトなどで，手動で画像サイズの調整が必要となってきます．
 
 例えば，iPhone 6 のカメラで写真を撮る場合の標準的なサイズは 3264×2448 ですが，これを 5cm 幅の画像として取り込むと，解像度は 1600 dpi となってしまい，標準的なプリンタやディスプレイの能力をはるかに超えてしまいます。実際にはこの 3割 くらいの解像度で十分なので，ピクセルサイズを 20% から 30% くらいに縮小してもよいでしょう．
 
@@ -196,7 +196,7 @@ PDF ファイルは長大な文書に利用されることが多く，また文�
 
 Web 表示用に最適化すると、PDF 文書の構造が再構成され，Web サーバーからページ単位でのダウンロードなどが可能になります．Web 表示用に最適された PDF では，PDF ファイル全体ではなく，特定のページを描画するのに必要な情報だけが，Web サーバーから送信されます．ダウンロードに時間がかかるサイズの大きい PDF ファイルでは，このオプションを選択すると特に効果的です．
 
-Adobe Acrobat DC での設定は，[PDF の最適化（Adobe Acrobat Pro DC）&#x23;PDF を Web 表示用に最適化](https://helpx.adobe.com/jp/acrobat/using/optimizing-pdfs-acrobat-pro.html#PDF%20%E3%82%92%20Web%20%E8%A1%A8%E7%A4%BA%E7%94%A8%E3%81%AB%E6%9C%80%E9%81%A9%E5%8C%96) にて確認してください．
+Adobe Acrobat での設定は，[Adobe Acrobat Pro での PDF の最適化&#x23;PDF の最適化を使用した保存（Acrobat Pro）](https://helpx.adobe.com/jp/acrobat/using/optimizing-pdfs-acrobat-pro.html) にて確認してください．
 
 [QPDF](/QPDF/) は，既存の PDF を Web 表示用に最適化 (リニアライズ) する機能を備えています．
 
@@ -214,7 +214,7 @@ PDF 文書をパスワードで保護するには，いくつかの方法があ�
 
 - [天地有情 \[LaTeX\] PDF-crypt --- PDFの暗号化 ～2つの暗号化コマンドの紹介 ～](http://konoyonohana.blog.fc2.com/blog-entry-49.html)
 
-Adobe Acrobat DC を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
+Adobe Acrobat を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
 また，macOS では印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
 ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
