@@ -46,8 +46,6 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 - [TeXnicCenter](/TeXnicCenter/)
 - [Visual Studio Code](</Visual Studio Code/>)
     - [LaTeX](</Visual Studio Code/LaTeX/>)
-- [Atom](/Atom/)
-    - [Atom/LaTeX](/Atom/LaTeX/)
 - [Emacs](/Emacs/)
     - [TeX mode](</Emacs/TeX mode/>)
     - [AUCTeX](/AUCTeX/)
