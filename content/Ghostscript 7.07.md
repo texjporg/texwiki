@@ -83,7 +83,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 #### Windows {#y7d058ad}
 
-角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
+[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://twitter.com/aminophen/status/1304059223580450820) (gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
 デフォルトでは C:\gs に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
@@ -159,7 +159,7 @@ D "gswin32c -q -dSAFER -dNOPAUSE -dBATCH -sPAPERSIZE=a0
 #### Linux, macOS {#od0594e8}
 
 以下は Linux や macOS でソースからインストールする方法です。
-デフォルトでは /usr/local にインストールされますが，既に Ghostscript 8.xx 系をインストールしている場合はそちらの /usr/local/bin/gs が存在しているはずですので，別の場所にインストールするとよいでしょう。
+デフォルトでは /usr/local にインストールされますが，既に Ghostscript 9 系をインストールしている場合はそちらの /usr/local/bin/gs が存在しているはずですので，別の場所にインストールするとよいでしょう。
 たとえば /usr/local/teTeX にインストールする場合は以下のようにします：
 
 ```
@@ -381,7 +381,7 @@ Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 
 GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクですが，いまでも一部は参考になるかもしれません。 <!-- gs-cjk に関する記述も10年以上経過してほとんど残っていないようなので， --> <!-- 言及があるサイトは（たとえ内容が gs7.07 でなくても）リンクに加えた -->
 
-- [Ghostscript: GNU Ghostscript 7](https://ghostscript.com/GNU_Ghostscript_7.07.html)
+- [Windows 用 Ghostscript 7.07 の環境設定](https://chirimenmonster.github.io/2021/08/22/gs7win.html)
 - [Overview of Ghostscript](http://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
 - [ghostscript-7.07 のインストール](https://www.uconst.org/blog/archives/38)
 - [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
