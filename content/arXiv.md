@@ -18,7 +18,7 @@ pukiwiki: "arXiv"
 ### はじめに {#x55fea18}
 
 物理のe-Printアーカイブ（プレプリントサーバ）
-[arXiv.org e-Print archive](http://arxiv.org/)
+[arXiv.org e-Print archive](https://arxiv.org/)
 （旧Los Alamos e-Print Server [http://xxx.lanl.gov/](http://xxx.lanl.gov/)）は，1991年にLANL（Los Alamos National Laboratory）のPaul Ginspargが作り，世界中で広く利用されています。
 現在では物理学以外に，数学・計算機関係の関連分野も扱われており，通称 <strong>arXiv</strong> で通るようになっています。
 Ginspargが2001年にLANLからCornell Universityに移動し，現在ではarXiv.orgもCornellにあります。
@@ -42,7 +42,7 @@ TeX/LaTeX で投稿すれば，PostScript や PDF にも自動変換してくれ
 
 ### まず登録する {#i9e851ff}
 
-[Register](http://arxiv.org/edit-user/) のページに行き，必要事項を記入します。
+[Register](https://arxiv.org/edit-user/) のページに行き，必要事項を記入します。
 入力したメールアドレスにメールが来ますので，
 そこに書いてあるページに行き，登録を完了させます。
 
