@@ -19,7 +19,7 @@ Evince/fwdevince/Python を参照．<br>
 
 ## 関連リンク {#bb04e129}
 
-- [https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex](https://git.gnome.org/browse/gedit-plugins/tree/plugins/synctex)
+- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex)
 - [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
 - [LaTeXTools/evince at master · SublimeText/LaTeXTools · GitHub](https://github.com/SublimeText/LaTeXTools/tree/master/evince)
 - [synctex + gedit + evince](http://www.benwhale.com/blog/2011/06/26/synctex-gedit-evince/)
