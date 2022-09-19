@@ -40,6 +40,7 @@ Latexmk がインストールされ、パスが通っている前提で進めま
 1. Output Format が pdf に設定されていることを確認します。設定されていない場合はリストから pdf を選択します。
 1. PDF Producer が dvipdfmx に設定されていることを確認します。設定されていない場合はリストから dvipdfmx を選択します。
 1. ファイルを保存したときに自動的にビルドしたい場合は Build on Save を true にします。デフォルトでは false になっています。
+1. mendex を使用する場合は [AtomのLaTeXにmendexを使わせるには？](https://ja.stackoverflow.com/questions/78022/atom%e3%81%aelatex%e3%81%abmendex%e3%82%92%e4%bd%bf%e3%82%8f%e3%81%9b%e3%82%8b%e3%81%ab%e3%81%af) を参照して設定します。
 
 ### language-latex パッケージ {#q2b63e16}
 
