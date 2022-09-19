@@ -23,7 +23,7 @@ pukiwiki: "hyperref"
 ### [PXjahyper](https://github.com/zr-tex8r/PXjahyper) {#ve9bb11b}
 
 [PXjahyper](https://github.com/zr-tex8r/PXjahyper) パッケージは (u)pLaTeX + hyperref + dvipdfmx の環境における日本語の「しおり」の作成を支援する upLaTeX, pLaTeX 用のパッケージです．
-PXjahyper パッケージは TeX Live, W32TeX に含まれています．
+PXjahyper パッケージは TeX Live に含まれています．
 
 #### ChangeLog {#h773478f}
 
@@ -1088,6 +1088,7 @@ abc
 
 - [http://www.tug.org/applications/hyperref/](http://www.tug.org/applications/hyperref/)
 - [CTAN:help/Catalogue/entries/hyperref.html](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html)
+- [https://miktex.org/packages/pxjahyper](https://miktex.org/packages/pxjahyper)
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
 - [LaTeXの縦書き右綴じの文書をPDFにしたときに、うまく見開き表示するための方法](http://id.fnshr.info/2015/11/03/latex-pdf-r2l/)
 - [hyperref利用時の2つの注意点](http://0-chromosome.hatenablog.jp/entry/2015/04/10/175912)
