@@ -25,7 +25,10 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在するので，Ghostscript 9.55.0 (2021-09-27) 以降に更新してください。
+Ghostscript 9.55.0 (2021-09-27) 以降に更新してください。
+Ghostscript 9.54.0 (2021-03-19) およびそれ以前には，脆弱性が存在します。
+
+Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在します。
 
 - [Ghostscript: CVE-2021-3781](https://ghostscript.com/CVE-2021-3781.html)
 - [Ghostscriptの任意のコマンド実行が可能な脆弱性（CVE-2021-3781）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210039.html)
@@ -72,7 +75,7 @@ Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
 
-Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276))
+Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://okumuralab.org/tex/mod/forum/discuss.php?d=2276))
 
 <!-- GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています． -->
 <!-- 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました． -->
@@ -82,7 +85,7 @@ Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファ�
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Ghostscript.NET.Viewer](https://github.com/jhabjan/Ghostscript.NET), macOS では [Evince](/Evince/), [Okular](/Okular/), [gv](/gv/), Linux では [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [gv](/gv/) などの Ghostscript のフロントエンドがあります．
+Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evince/), [Okular](/Okular/),  Linux では [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
