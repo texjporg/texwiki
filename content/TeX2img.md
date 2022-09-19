@@ -36,7 +36,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
     - アウトラインをとった PDF ファイル
     - テキストを保持した PDF ファイル
     - アウトラインをとった（かつテキスト保持も可能） SVG ファイル（圧縮した SVGZ 形式も対応）
-    - アウトラインをとった EMF ファイル
+    - アウトラインをとった EMF ファイル（※Windows版のみ）
 - ビットマップ画像
     - JPEG ファイル
     - PNG ファイル
@@ -70,15 +70,10 @@ Windows/macOS 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイ�
     [MuPDF](/MuPDF/) の mudraw を内蔵しています．
     <!-- [[pdf2svg]] よりすぐれた SVG 変換法に乗り換えました． -->
 
-- Windows 版の 1.4.0 以前のバージョンでは，オプションで
-    [ImageMagick](/ImageMagick/) をインストールすれば，より綺麗な出力画像を得られます．なお
-    1.5.0 以降では ImageMagick に依存しない改良が施されました．
-
 - macOS 版はビットマップ画像の生成に macOS 標準の画像処理 API を活用します．
 - Windows 版は EMF 画像の出力に，Google が開発した
     [PDFium](</Google Chrome/#l83f1380>) という PDF レンダリングエンジンを利用しています．
 
-- macOS 版は，EMF 画像を出力するために，[pstoedit](/pstoedit/)（を高画質になるように独自改修したバージョン）を内蔵しています．
 - macOS 版は，[Ghostscript 9.15 以降でテキスト形式の EPS を出力する](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)ために，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵しています．
 
 ### トラブルシューティング・よくある質問 {#faq}
