@@ -19,14 +19,19 @@ ImageMagick は，ビットマップ画像を操作したり変換したりす�
 
 ### 動作環境 {#h6356e3a}
 
-- Windows
-- macOS, Linux など UNIX 互換 OS
+Windows, macOS, Linux
 
 ### インストール {#s8fd7568}
 
 #### Microsoft Windows の場合 {#i4b62fab}
 
-[本家サイト](http://imagemagick.org/script/binary-releases.php#windows)または上記の[ミラーサイト](/ImageMagick/#mirror)から，インストーラを取得して実行します．
+[本家サイト](http://www.imagemagick.org/script/download.php#windows)または[ミラーサイト](/ImageMagick/#mirror)から，インストーラをダウンロードして実行します．
+あるいは Chocolatey や MSYS2 の pacman などのパッケージ管理システムからインストールすることも可能です。
+
+- [https://chocolatey.org/packages/imagemagick](https://chocolatey.org/packages/imagemagick)
+- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick)
+- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 <strong> <em>重要！</em> </strong>
 
@@ -45,8 +50,15 @@ ImageMagick 6.9.3-9 以前の画像変換コマンド名は convert でしたの
 
 #### macOS の場合 {#g2f35f2c}
 
-簡単にインストールできるパッケージが [Cactuslab](http://cactuslab.com/imagemagick/) で配布されています．
-また，MacPorts や Homebrew などのパッケージ管理ツールからもインストール可能です．
+[本家サイト](http://www.imagemagick.org/script/download.php#macosx)または[ミラーサイト](/ImageMagick/#mirror)から，パッケージをダウンロードして展開します．
+あるいは Homebrew や MacPorts などのパッケージ管理システムからインストールすることも可能です．
+
+- [https://formulae.brew.sh/formula/imagemagick](https://formulae.brew.sh/formula/imagemagick)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/imagemagick.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/imagemagick.rb)
+- [https://formulae.brew.sh/formula/imagemagick@6](https://formulae.brew.sh/formula/imagemagick@6)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/imagemagick@6.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/imagemagick@6.rb)
+- [https://www.macports.org/ports.php?by=name&substr=ImageMagick](https://www.macports.org/ports.php?by=name&substr=ImageMagick)
+    - [https://github.com/macports/macports-ports/blob/master/graphics/ImageMagick/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/ImageMagick/Portfile)
 
 ### 関連リンク {#f3e124e5}
 
@@ -60,8 +72,8 @@ ImageMagick 6.9.3-9 以前の画像変換コマンド名は convert でしたの
 #### ミラーサイト {#mirror}
 
 - [http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/](http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/)
+- [http://ftp.core.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://ftp.core.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 
 #### 派生版 {#t37f9970}
 
 - [GraphicsMagick](http://www.graphicsmagick.org/)
-- [YoyaMagick](https://github.com/gree/YoyaMagick)
