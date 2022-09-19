@@ -81,7 +81,7 @@ LaTeX マクロの作成方法は後で [LaTeX マクロの作成](</LaTeX入門
   <dt>品目</dt>
     <dd>書籍</dd>
   <dt>タイトル</dt>
-    <dd>［改訂第6版］LaTeX2e 美文書作成入門</dd>
+    <dd>［改訂第7版］LaTeX2e 美文書作成入門</dd>
   <dt>本体価格</dt>
     <dd>3,200 円</dd>
  </li>
@@ -101,7 +101,7 @@ LaTeX マクロの作成方法は後で [LaTeX マクロの作成](</LaTeX入門
 ```
 <ShoppingList>
  <product type = "書籍">
-   <title>［改訂第6版］LaTeX2e 美文書作成入門</title>
+   <title>［改訂第7版］LaTeX2e 美文書作成入門</title>
    <price unit = "yen">3,200</price>
  </product>
  <product type = "DVD">
