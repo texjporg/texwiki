@@ -66,9 +66,9 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 - CMap Resources (Adobe Type Tools)
     - cmapresources_identity-0.zip
-    - cmapresources_cns1-6.zip
+    - cmapresources_cns1-7.zip
     - cmapresources_gb1-5.zip
-    - cmapresources_japan1-6.zip
+    - cmapresources_japan1-7.zip
     - cmapresources_korea1-2.zip
 
 <!-- 次のものは元々 gs-cjk に置かれていたものですが，ドメインが無くなっています。 -->
