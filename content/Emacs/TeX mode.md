@@ -363,7 +363,6 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 - [TeX Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
 - [TeX Mode (GNU Emacs Manual(Japanese Translation))](https://ayatakesi.github.io/emacs/26.1/html/TeX-Mode.html#TeX-Mode)
 - [RefTeX User Manual](https://www.gnu.org/software/emacs/manual/html_node/reftex/)
-- [Emacs.app の設定 - マスクメロン](http://www.muskmelon.jp/?page_id=410)
 - [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](https://srad.jp/~t-nissie/journal/560083)
 
 ### レポジトリ {#kdedd1cc}
