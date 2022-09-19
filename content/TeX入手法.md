@@ -32,11 +32,10 @@ TeX の処理系（TeX 関連プログラム）や拡張マクロなどの一式
 ### TeX のインストール {#ef41d307}
 
 TeX ディストリビューションごとの解説ページです．
-現在，日本国内では [TeX Live](</TeX Live/>) または [W32TeX](/W32TeX/) というディストリビューションが多く用いられています．
+現在，日本国内では [TeX Live](</TeX Live/>) というディストリビューションが多く用いられています．
 macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
 
 - <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, macOS, Linux)
-- <strong>[W32TeX](/W32TeX/)</strong> (for Windows)
 - <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
 - [BasicTeX](/BasicTeX/) (for macOS)
 - [MiKTeX](/MiKTeX/) (for Windows, macOS, Linux)
@@ -84,7 +83,7 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
 - TeX ディストリビューションのインストールとパス設定は成功したが，TeXworks 側の設定ができていない
 
 などの原因が考えられますが，「日本語が出ません」だけではどこが原因なのか判断できないのです。
-このような質問は既に何度もフォーラムで尋ねられていますし，ほかにもインストール時のトラブルが[よくある質問](</よくある質問/>)や [TeX フォーラム](https://oku.edu.mie-u.ac.jp/tex/) の過去ログを見れば解決するかもしれません。
+このような質問は既に何度もフォーラムで尋ねられていますし，ほかにもインストール時のトラブルが[よくある質問](</よくある質問/>)や [TeX フォーラム](https://okumuralab.org/tex/) の過去ログを見れば解決するかもしれません。
 
 どうしても解決せず質問する場合は，上にあげた失敗例も参考に「使用している OS」「インストールした TeX ディストリビューションの種類」「使用した統合環境やエディタ」「作成した LaTeX ソース」「実行手順」などを詳しく回答者に伝えましょう。
 [質問のしかた](</質問のしかた/>)も参照してください。
