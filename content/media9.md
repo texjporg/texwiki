@@ -17,12 +17,12 @@ pukiwiki: "media9"
 ### 日本語 pTeX で使用する場合の注意 {#t6u982n7}
 
 media9 は LaTeX3 の構文で記述されています．
-内部で expl3 を読み込むのですが，現在の expl3 は pTeX をエンジンとして知らないため，pdfTeX だと誤判定します．
+内部で expl3 を読み込むのですが，2015 年 7 月頃までの expl3 は pTeX や upTeX というエンジンを知らないため，pdfTeX だと誤判定します．
 対処法として
 
 - ZR さんによる [bxexpl3ptex.sty](https://gist.github.com/zr-tex8r/2adc6f1e62cb591a1204) を用いる
 
-があります．
+方法がありましたが，2015 年 8 月頃から expl3 側が e-(u)pTeX を公式にサポートするようになったため、不要となりました．
 
 より古い pTeX では media9 やその依存パッケージを処理できないことがあります[^1]．その場合は media9 の前身である movie15 や，それを dvipdfmx 用に改善した movie15_dvipdfmx を使うことができます．
 なお，movie15 には [qa:56612](https://okumuralab.org/~okumura/texfaq/qa/56612.html) のような問題があります．
