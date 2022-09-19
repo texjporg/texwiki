@@ -84,14 +84,14 @@ sudo dpkg -i texlive-local_2022.99999999-1_all.deb
 
 ### [Fedora](/Linux/Fedora/) <a id="fedora"></a> {#cf6b23bc}
 
-- [https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/)
+- [https://ctan.org/tex-archive/support/texlive/texlive-dummy/](https://ctan.org/tex-archive/support/texlive/texlive-dummy/)
+    - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/Fedora](https://ctan.org/tex-archive/support/texlive/texlive-dummy/Fedora)
 
-TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://copr.fedorainfracloud.org/coprs/fatka/texlive-dummy/) をインストールします．
+TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は [texlive-dummy](https://ctan.org/tex-archive/support/texlive/texlive-dummy/) をインストールします．
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
-sudo dnf copr enable fatka/texlive-dummy
-sudo dnf install texlive-dummy
+sudo dnf install http://mirrors.ctan.org/support/texlive/texlive-dummy/Fedora/texlive-dummy-2022-1.fc36.noarch.rpm
 ```
 
 ### [openSUSE](/Linux/openSUSE/) <a id="opensuse"></a> {#y33add76}
