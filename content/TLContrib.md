@@ -43,12 +43,12 @@ getnonfreefonts はそのような「無料だが『フリー』でないフォ�
 - [cjk-gs-integrate 20190303.0（Mojave 対応）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2583)
 - [cjk-gs-integrate &amp; ptex-fontmaps 20180306.0](https://okumuralab.org/tex/mod/forum/discuss.php?d=2382)
 
-#### japanese-otf-nonfree, japanese-otf-uptex-nonfree {#m957f673}
+#### japanese-otf-nonfree {#m957f673}
 
 いわゆる [OTF](/OTF/) パッケージ（pLaTeX 用）とその upLaTeX 対応版です。
 ヒラギノフォントの仮名文字や記号類といったプロポーショナル和文文字を使用する \propshape という命令のために使われる TFM / VF のセットが含まれています。
 
-- [japanese-otf &amp; japanese-otf-uptex 2018-02-11](https://okumuralab.org/tex/mod/forum/discuss.php?d=2366)
+- [japanese-otf  2022-02-17](https://okumuralab.org/tex/mod/forum/discuss.php?d=3330)
 
 ### 関連リンク {#vd8e3fd2}
 
