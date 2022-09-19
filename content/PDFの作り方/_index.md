@@ -33,7 +33,7 @@ PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) とい�
 
 macOS では標準で印刷機能から PDF で保存ができます．
 
-Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 10 上で動く様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
+Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 11，Windows 10 で動作する様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
 
 Windows 8.1 を使っている場合には，PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加できます。仮想プリンタの導入については後述します．
 
