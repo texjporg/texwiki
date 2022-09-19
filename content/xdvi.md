@@ -205,6 +205,33 @@ $ synctex help edit
 
 を参照してください。
 
+## xdvik-ja (非推奨) <a id="xdvik-ja"></a> {#vab2aa47}
+
+xdvik-ja は日本語対応 DVI プレビューアです。
+
+- [https://twilog.org/uwabami/search?word=xdvik-ja](https://twilog.org/uwabami/search?word=xdvik-ja)
+- [https://salsa.debian.org/uwabami/xdvik-ja](https://salsa.debian.org/uwabami/xdvik-ja)
+    - [https://salsa.debian.org/uwabami/xdvik-ja/commits/master](https://salsa.debian.org/uwabami/xdvik-ja/commits/master)
+- [https://launchpad.net/debian/+source/xdvik-ja](https://launchpad.net/debian/+source/xdvik-ja)
+- \[[debian-devel:19159\] Orphan jtex-base, multex-base, xdvik-ja](http://lists.debian.or.jp/debian-devel/201606/msg00008.html), \[[debian-devel:19164\]](http://lists.debian.or.jp/debian-devel/201606/msg00013.html)
+
+% 最後のリンクについて，これだけを書き込むのがよくわかりませんが，どういう意図なのでしょうか？ -- kmaeda (2016/07/02)
+
+## japanese/ja-tex-xdvik (非推奨) <a id="ja-tex-xdvik"></a> {#l6d2c61a}
+
+ja-tex-xdvik は日本語対応 DVI プレビューアです。
+
+- [https://www.freshports.org/japanese/ja-tex-xdvik/](https://www.freshports.org/japanese/ja-tex-xdvik/)
+- [https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik](https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik)
+    - [https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik](https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik)
+- [https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik/files](https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik/files)
+    - [https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik/files](https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik/files)
+- [FreeBSD: その他のメモ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html)
+- [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
+- [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
+- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
+- [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
+
 ## pxdvi (非推奨) <a id="pxdvi"></a> {#s1b173bb}
 
 ### pxdvi とは {#e137631f}
@@ -215,23 +242,11 @@ pxdvi は xdvik を (e-(u))pTeX に対応させたものです。
 tltexjp リポジトリが削除されたので pxdvi は配布終了しました。（[pxdvi, ptex-ngを削除 · Issue #5 · texjporg/tltexjp · GitHub](https://github.com/texjporg/tltexjp/issues/5)を参照）
 
 - [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
-- [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
-- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
-- [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
-- [pxdvi の使用用途について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=731)
-- [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
-- \[[debian-devel:19159\] Orphan jtex-base, multex-base, xdvik-ja](http://lists.debian.or.jp/debian-devel/201606/msg00008.html), \[[debian-devel:19164\]](http://lists.debian.or.jp/debian-devel/201606/msg00013.html)
-
-% 最後のリンクについて，これだけを書き込むのがよくわかりませんが，どういう意図なのでしょうか？ -- kmaeda (2016/07/02)
+- [pxdvi の使用用途について](https://okumuralab.org/tex/mod/forum/discuss.php?d=731)
 
 ### ChangeLog {#y0777637}
 
 - [https://github.com/texjporg/tltexjp/commits/master](https://github.com/texjporg/tltexjp/commits/master)
-- [https://salsa.debian.org/uwabami/xdvik-ja](https://salsa.debian.org/uwabami/xdvik-ja)
-    - [https://salsa.debian.org/uwabami/xdvik-ja/commits/master](https://salsa.debian.org/uwabami/xdvik-ja/commits/master)
-- [https://launchpad.net/debian/+source/xdvik-ja/22.87.05+j1.42-2](https://launchpad.net/debian/+source/xdvik-ja/22.87.05+j1.42-2)
-- [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/)
-    - [https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log](https://svnweb.freebsd.org/ports/head/print/tex-xdvik/files/?view=log)
 
 ### インストール <a id="pxdviinstall"></a> {#cce5d1ed}
 
