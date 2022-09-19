@@ -32,56 +32,13 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　PdfLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-　　 Setup the PdfLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>pdflatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　XeLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-　　 Setup the XeLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>xelatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　LuaLatex program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
 
-■ lualatex の場合<br>
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>lualatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
-　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-■ luajitlatex の場合<br>
-　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>luajitlatex -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
 <br>
@@ -135,21 +92,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 ***
 
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvips program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-　　 Setup the Dvips program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>dvips -Ppdf -o "%output" "%input"</ins><br>
-　　　Input format： .dvi 　　　出力フォーマット： .ps<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
 <span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Dvipdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
 
 ***
@@ -158,21 +100,6 @@ pukiwiki: "TeXlipse/設定/Linux"
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>dvipdfmx "&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
-
-<br>
-
-　　　Program file ok
-
-***
-
-<span style="color:Black;background-color:#473EBE;">　<span style="color:White;background-color:#1188FF;">　Ps2pdf program　…　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DEDEEF;">　<span style="color:Black;background-color:#DAEAFF;">\[編集(E)...\]</span>　</span>　</span><br>
-
-***
-
-　　 Setup the Ps2pdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>ps2pdf "&#x25;input"</ins><br>
-　　　Input format： .ps　　　　出力フォーマット： .pdf<br>
 
 <br>
 
