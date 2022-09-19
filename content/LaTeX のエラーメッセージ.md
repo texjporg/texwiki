@@ -424,6 +424,8 @@ index パッケージ使用時に \index または \printindex のオプショ�
 
 > 　(u)pLaTeXの場合、kanji-config-updmap-sys \[argument\]の設定が正しいかどうかも確認してください。例えばhiragino-pronのままmorisawaを使おうとすると、このエラーが出ます。
 
+> 　→<em>これは本当でしょうか？ 原理的には kanji-config-updmap-sys が担当するのは「dvipdfmx や dvips が使うマップ」なので，その手前である「(u)pLaTeX でのタイプセット」に使われるエンコーディングとは無関係のはずです。また，「例えばhiragino-pronのままmorisawaを使おうとする」とは具体的にどのような処理でしょうか？</em> むしろ，pLaTeX で処理すべきソースを upLaTeX で処理すると，JY2 ←→ JY1 が異なるのでエラーが発生するケースが多いような。 -- aminophen 2017-06-28
+
 #### ! LaTeX Error: LaTeX2e command \somecs in LaTeX 2.09 document. {#k47034d7}
 
 （\documentstyle を用いた）LaTeX 2.09 形式の文書を LaTeX2e（の LaTeX 2.09 互換モード）で処理するときに，その文書内に LaTeX2e 専用のコマンド \somecs が現れた場合のエラーメッセージです．
