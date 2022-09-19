@@ -35,25 +35,6 @@ The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使っ�
 - [http://git.texlive.info/tlcontrib/tree/texmf-dist/source/latex/acrotex](http://git.texlive.info/tlcontrib/tree/texmf-dist/source/latex/acrotex)
 - [http://git.texlive.info/tlcontrib/tree/texmf-dist/tex/latex/acrotex](http://git.texlive.info/tlcontrib/tree/texmf-dist/tex/latex/acrotex)
 
-### W32TeX の場合 {#v4089369}
-
-acrotex.zip をダウンロードして展開します．
-
-acrotex フォルダーを C:\w32tex\share\texmf-local\tex\latex\acrotex に配置します．
-
-```
-C:\w32tex\share\texmf-local\tex\latex\acrotex>latex acrotex.ins
-```
-
-- dljslib.sty
-- eforms.sty
-- exerquiz.sty
-- insdljs.sty
-- taborder.sty
-- web.sty
-
-が作成されます．
-
 ## 使い方 {#ub75b88a}
 
 acrotex\doc\aeb_man.pdf を参照してください．<br>
