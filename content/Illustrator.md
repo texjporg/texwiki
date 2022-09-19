@@ -50,8 +50,6 @@ bounding box 情報に ArtBox を指定する場合は
 \end{document}
 ```
 
-Adobe Illustrator CC 17.1.0 で作られたファイルで確認。
-
 ### EPS 形式ファイル {#h86d212a}
 
 Illustrator で EPS 保存したものを LaTeX に挿入する例：
@@ -88,6 +86,17 @@ W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” �
 ```
 >fixill.exe <old.eps >new.eps
 ```
+
+Illustrator CC から EPS 形式で保存するときは，
+バージョンは最新のもの（「Illustrator CC EPS」）でかまいません．
+「CMYK PostScript を RGB ファイルに含む」チェックボックスをオンにして Adobe PostScript を レベル 2 に設定します．
+プレビューやサムネールは TeX では不要ですが，他のアプリケーションに埋め込む際にはプレビューがあったほうが便利です．
+Word などに埋め込む際には，プレビューフォーマットのラジオボタンは必ず「不透明」にします．
+
+「他のアプリケーション用にフォントを埋め込む」チェックボックスはオンにしないと文字化けします．
+あるいは，逆にこれをオフにして，フォント名をエディタなどで標準的なものに置き換えるという手もあります．
+たとえば Illustrator CC に附いている小塚明朝 Pr6N M を使った場合，KozMinPr6N-Medium-UniJIS-UTF16-H を
+Ryumin-Light-UniJIS-UTF16-H に置き換えます．
 
 ## Illustrator上でTeX処理 &amp; 自動配置 {#paf3cb46}
 
