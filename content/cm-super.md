@@ -39,8 +39,6 @@ CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Mode
 <!-- （それ以外のファイルは，さしあたって不必要）． -->
 
 [TeX Live](</TeX Live/>) には標準で含まれています．
-[W32TeX](/W32TeX/) には標準で含まれていないので CTAN から入手します．
-→ [PDFへの変換について,](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1201)
 
 ### 関連リンク {#e74a0814}
 
