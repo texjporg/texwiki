@@ -23,14 +23,19 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### License {#qc08e5c2}
 
-[BSD 2-Clause](https://bitbucket.org/birkenfeld/sphinx/src/tip/LICENSE)
+<!-- BSD 2-Clause:https://bitbucket.org/birkenfeld/sphinx/src/tip/LICENSE -->
+
+[BSD 2-Clause](https://github.com/sphinx-doc/sphinx/blob/master/LICENSE)
 
 ### ChangeLog {#b34742d0}
 
 - [http://sphinx-doc.org/latest/changes.html](http://sphinx-doc.org/latest/changes.html)
 - [http://docs.sphinx-users.jp/latest/changes.html](http://docs.sphinx-users.jp/latest/changes.html)
-- [https://bitbucket.org/birkenfeld/sphinx/](https://bitbucket.org/birkenfeld/sphinx/)
-    - [https://bitbucket.org/birkenfeld/sphinx/commits/](https://bitbucket.org/birkenfeld/sphinx/commits/)
+    <!-- -https://bitbucket.org/birkenfeld/sphinx/ -->
+    <!-- - -https://bitbucket.org/birkenfeld/sphinx/commits/ -->
+
+- [https://github.com/sphinx-doc/sphinx](https://github.com/sphinx-doc/sphinx)
+    - [https://github.com/sphinx-doc/sphinx/graphs/commit-activity](https://github.com/sphinx-doc/sphinx/graphs/commit-activity)
 
 ### Sphinx-Users.jp {#d394d0e1}
 
