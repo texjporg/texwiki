@@ -2,7 +2,7 @@
 title: "TeX Wiki"
 url: "/"
 date: 2014-07-10T02:13:46Z
-description: "TeX, LaTeX, PDF, PostScript などに関する読者参加型ページです．"
+description: "TeX, LaTeX, PDF などに関する読者参加型ページです．"
 keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "upLaTeX", "upLaTeX2e", "pdfTeX", "pdfLaTeX", "LuaTeX", "LuaLaTeX", "LuajitTeX", "LuajitLaTeX", "XeTeX", "XeLaTeX", "DVI", "PostScript", "PDF"]
 pukiwiki: "FrontPage"
 ---
@@ -13,7 +13,7 @@ pukiwiki: "FrontPage"
 
 <!-- * FrontPage [#pe4f375a] -->
 
-TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/)，[PostScript](/PostScript/) などに関する情報を提供する，読者参加型ページです．誰でも編集できますので，「誤りを見つけた」「読みづらいので直したい」「最新情報を追記したい」などあれば，気軽に編集して下さい．編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります．
+TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/) などに関する情報を提供する，読者参加型ページです．誰でも編集できますので，「誤りを見つけた」「読みづらいので直したい」「最新情報を追記したい」などあれば，気軽に編集して下さい．編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります．
 
 編集方針は[TeX Wiki編集方針](</TeX Wiki編集方針/>)にあります．また，編集方針についてのご意見がありましたら [TeX Forum での議論](https://okumuralab.org/tex/mod/forum/discuss.php?d=1485)の方にお寄せください．
 
@@ -117,12 +117,12 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 
 ### それでも困ったときは {#t6f648b9}
 
-まずは[よくある質問](</よくある質問/>)や[エラーに遭遇したときは](#d1cf258f)，[それでも困ったときは](#t6f648b9)をご覧ください．また，[TeX フォーラム](http://oku.edu.mie-u.ac.jp/tex/)の過去記事を検索すると，同じようなトラブルにあった方の解決策がみつかるかもしれません．もちろん Google による検索も有効です．解決策にたどり着けない場合は，[TeX フォーラム](http://oku.edu.mie-u.ac.jp/tex/)で質問を行うと回答を得られるかもしれません．
+まずは[よくある質問](</よくある質問/>)や[エラーに遭遇したときは](#d1cf258f)，[それでも困ったときは](#t6f648b9)をご覧ください．また，[TeX フォーラム](https://okumuralab.org/tex/)の過去記事を検索すると，同じようなトラブルにあった方の解決策がみつかるかもしれません．もちろん Google による検索も有効です．解決策にたどり着けない場合は，[TeX フォーラム](https://okumuralab.org/tex/)で質問を行うと回答を得られるかもしれません．
 
 - [質問のしかた](</質問のしかた/>)/[回答のしかた](</回答のしかた/>)
 - [古い情報](</古い情報/>)
 
-「トラブルを解決したい！」という場合は，<strong>「[TeX フォーラム](http://oku.edu.mie-u.ac.jp/tex/)」で質問する前に「[よくある質問](</よくある質問/>)」を確認したり，「[エラーに遭遇したときは](#d1cf258f)」「[それでも困ったときは](#t6f648b9)」を参照する</strong>とすぐに答えが見つかるかもしれません．
+「トラブルを解決したい！」という場合は，<strong>「[TeX フォーラム](https://okumuralab.org/tex/)」で質問する前に「[よくある質問](</よくある質問/>)」を確認したり，「[エラーに遭遇したときは](#d1cf258f)」「[それでも困ったときは](#t6f648b9)」を参照する</strong>とすぐに答えが見つかるかもしれません．
 
 ### その他 {#uadd29af}
 
