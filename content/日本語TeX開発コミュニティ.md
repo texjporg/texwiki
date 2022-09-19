@@ -17,6 +17,10 @@ pukiwiki: "日本語TeX開発コミュニティ"
         - [TeX のインストール・設定方法](https://texjporg.github.io/install/)
         - [日本語 TeX 開発コミュニティの活動内容](https://texjporg.github.io/activities/)
 
+コミュニティの活動に貢献したい・興味がある方はこちらをご参照ください。
+
+- [日本語 TeX 開発コミュニティへ参加するには](https://texjporg.github.io/activities/join.html)
+
 ### 関連記事 {#ce2b0eda}
 
 - [知ってるようで知らないTeXの世界 自分の人生より歴史あるソフトウェア開発をマネジメントする技術 - エンジニアHub｜若手Webエンジニアのキャリアを考える！](https://eh-career.com/engineerhub/entry/2019/07/04/103000)
