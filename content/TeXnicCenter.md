@@ -9,7 +9,7 @@ pukiwiki: "TeXnicCenter"
 
 ## [TeXnicCenter](http://www.texniccenter.org/) {#f2674e4f}
 
-<img src="http://texniccenter.sourceforge.net/_static/TeXnicCenter.png" alt="TeXnicCenter" style="float:right">
+<!-- #ref(http://texniccenter.sourceforge.net/_static/TeXnicCenter.png,right,around,nolink,TeXnicCenter) -->
 
 <span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
 
@@ -139,7 +139,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2021\bin\win64</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2022\bin\win64</ins><br>
 
 <br>
 
@@ -897,21 +897,21 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
-Server: <ins>acroviewA21</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewA22</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]\[DocGoTo("%bm.pdf",0)\]</ins><br>
-Server: <ins>acroviewA21</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewA22</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
 ◯ Command line argument　🔘 DDE command　　◯ Do not close<br>
 Command <ins>\[DocClose("%bm.pdf")\]</ins><br>
-Server: <ins>acroviewA21</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>acroviewA22</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
@@ -990,9 +990,11 @@ dvipdfmx で PDF ファイルを作成する場合は，プロファイルを La
 
 ## 関連リンク {#r73017f2}
 
+- [Texnic center and Adobe Acrobat DC, again](https://tex.stackexchange.com/questions/618616/texnic-center-and-adobe-acrobat-dc-again)
+- [TeXnicCenter &amp; Adobe Reader DC](https://tex.stackexchange.com/questions/250472/texniccenter-adobe-reader-dc/)
 - [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その２](http://blog.goo.ne.jp/xmldtp/e/6c445d6fca39c15d20103bb28264384a)
 - [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その１](http://blog.goo.ne.jp/xmldtp/e/3694c7b9cef534f3555b1bc41a96b5de)
-- [TexnicCenter2.0の日本語使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=794)
+- [TexnicCenter2.0の日本語使用について](https://okumuralab.org/tex/mod/forum/discuss.php?d=794)
 - [工大院生の学生メモ : Texniccenter](http://blog.livedoor.jp/gastttt3678/archives/2846954.html)
 - [Newest &#39;texniccenter&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texniccenter)
 - [DDE Message of Acrobat and Adobe Reader](http://acrobat-dde.nnn2.com/)
