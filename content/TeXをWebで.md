@@ -19,8 +19,8 @@ pukiwiki: "TeXをWebで"
 
 #### フリーソフトウェア（オープンソースソフトウェア） {#g834836b}
 
+- [Overleaf](https://github.com/overleaf/overleaf)（旧 writeLaTeX）
 - [CoCalc](https://github.com/sagemathinc/cocalc)
-- [ShareLaTeX](https://github.com/sharelatex/sharelatex)
 - [JaxEdit](https://github.com/zohooo/jaxedit)
 - [texlive.js](https://github.com/manuels/texlive.js/)
 - [NoTex.ch](https://github.com/hsk81/notex-v2.0)
@@ -29,7 +29,6 @@ pukiwiki: "TeXをWebで"
 
 - [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
-- [Overleaf](https://www.overleaf.com/)（旧 writeLaTeX）
 - [Mathcha](https://www.mathcha.io/)
 
 ### Web で数式 {#m2a3514f}
