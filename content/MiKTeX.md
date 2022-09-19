@@ -16,6 +16,10 @@ TeX Live と並んで国際的に広く使われていますが，日本語 pTeX
 - [Home - MiKTeX.org](https://miktex.org/)
 - [https://github.com/MiKTeX/miktex](https://github.com/MiKTeX/miktex)
 
+更新：2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されていますが，2022年8月現在もまだ不安定なようです。
+
+- [https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07](https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07)
+
 ***
 
 ***
@@ -31,8 +35,8 @@ TeX Live と並んで国際的に広く使われていますが，日本語 pTeX
 
 - [「はじめてのLaTeX」著者サポート：MiKTeX2.9のインストール](http://supportdoc.net/support-latex/newmik.html)
 - [「はじめてのLaTeX」: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
-- [TeXworksでMiKTeXを使う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=905)
-- [TexnicCenter2.0の日本語使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=794)
+- [TeXworksでMiKTeXを使う](https://okumuralab.org/tex/mod/forum/discuss.php?d=905)
+- [TexnicCenter2.0の日本語使用について](https://okumuralab.org/tex/mod/forum/discuss.php?d=794)
 
 #### Building MiKTeX {#o3eda5f2}
 
