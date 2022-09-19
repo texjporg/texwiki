@@ -7,7 +7,9 @@ pukiwiki: "Atom/Markdown"
 
 # Atom/Markdown
 
-## Markdown 環境の整備 {#he8ae1a3}
+[Atom](/Atom/) &gt; Markdown
+
+## Markdown 環境の整備 {#gb093a0b}
 
 Markdown 関連の拡張パッケージも様々あります。Markdown での文書作成にはそれほど苦労しないと思われるので、入力補助ツールはあまり必要ないでしょう。必要に応じて探していくことになると思いますが、とりあえず、[markdown-writer](https://atom.io/packages/markdown-writer) などがあればよいでしょう。
 
