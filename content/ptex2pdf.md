@@ -146,7 +146,7 @@ $ ptex2pdf -u -l hoge.tex
 
 #### CTAN 配布サイト {#ctanurl}
 
-[http://www.ctan.org/pkg/ptex2pdf](http://www.ctan.org/pkg/ptex2pdf)
+[https://ctan.org/pkg/ptex2pdf](https://ctan.org/pkg/ptex2pdf)
 
 #### TeX Live 上の位置 {#texlive}
 
