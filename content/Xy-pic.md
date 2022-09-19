@@ -19,7 +19,7 @@ Xy-pic は，様々な図式を描くことに特化したパッケージです�
 - [http://maths.mq.edu.au/~ross/Xy-pic.html](http://maths.mq.edu.au/~ross/Xy-pic.html)
 - [http://tug.org/pipermail/xy-pic/](http://tug.org/pipermail/xy-pic/)
 - [http://www.math.unm.edu/~loring/links/graph_s07/](http://www.math.unm.edu/~loring/links/graph_s07/)
-- [Xy-pic 入門](http://www.math.sci.hokudai.ac.jp/~abenori/tex/index.html#xy-pic)
+- [Xy-pic 入門](http://www.ms.u-tokyo.ac.jp/~abenori/tex/index.html#xy-pic)
 - [Xy-pic（日本語での解説，より詳しい解説）](http://akagi.ms.u-tokyo.ac.jp/ftp-j.html)
 - [Xy-pic - LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/xypic.html)
 - [xy-picのインストールスクリプト ](http://itchyny.hatenablog.com/entry/20111106/1320541226)
