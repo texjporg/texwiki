@@ -21,33 +21,6 @@ pukiwiki: "Android"
 - [https://github.com/termux/termux-packages/tree/master/packages/texlive](https://github.com/termux/termux-packages/tree/master/packages/texlive)
 - [https://sdrausty.github.io/pages/tit](https://sdrausty.github.io/pages/tit)
 
-```
-packages install texlive
-```
-
-または
-
-```
-apt install texlive
-```
-
-を実行して
-
-```
-tlmgr install scheme-full
-```
-
-を実行します
-
-### TeX Live Mobile (TeX Live for Android/iOS) {#qa1790de}
-
-- [https://github.com/clerkma/texlive-mobile](https://github.com/clerkma/texlive-mobile)
-- [TeX Live Mobile：XeTeX编译通过](https://zhuanlan.zhihu.com/p/22077110)
-- [TeX Live Mobile：LuaTeX编译通过](https://zhuanlan.zhihu.com/p/22061126)
-- [TeX Live Mobile：在Android下使用pdfTeX](https://zhuanlan.zhihu.com/p/22053664)
-- [TeX Live Mobile今日更新](https://zhuanlan.zhihu.com/p/21959676)
-- [TeX Live Mobile开始build](https://zhuanlan.zhihu.com/p/21942557)
-
 ## [統合環境・エディタ](</TeX用エディタ/>) {#fcca172a}
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
