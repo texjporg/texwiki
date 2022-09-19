@@ -42,7 +42,7 @@ PdfLaTeX
 
 : pdflatex -synctex=1 -interaction=nonstopmode %.tex
 
-: ☐ 出力ファイルを "build" サブフォルダーに出力する
+: ☐ Use a "build" subdirectory for output files
 
 XeLaTeX
 : &nbsp;
@@ -111,14 +111,14 @@ R Sweave
 Add to PATH
 : &nbsp;
 
-PDF ビューア
+PDF Viewer
 : &nbsp;
 
-: 🔘　組み込みビューア
+: 🔘 Built-in Viewer
 
-: ☑　埋め込み
+: ☑ Embed
 
-: ◯　外部ビューア
+: ◯ External Viewer
 
 : ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
 
