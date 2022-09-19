@@ -27,14 +27,9 @@ Fedora Workstation は、ノート PC やデスクトップ向けに洗練され
 
 #### TeX Live/Fedora <a id="texlivefedora"></a> {#n44a0820}
 
-- [https://apps.fedoraproject.org/packages/s/texlive](https://apps.fedoraproject.org/packages/s/texlive)
-    - [https://apps.fedoraproject.org/packages/texlive](https://apps.fedoraproject.org/packages/texlive)
-        - [https://apps.fedoraproject.org/packages/texlive-scheme-full](https://apps.fedoraproject.org/packages/texlive-scheme-full)
-        - [https://apps.fedoraproject.org/packages/texlive-collection-langjapanese](https://apps.fedoraproject.org/packages/texlive-collection-langjapanese)
-    - [https://apps.fedoraproject.org/packages/texlive-base](https://apps.fedoraproject.org/packages/texlive-base)
-        - [https://apps.fedoraproject.org/packages/texlive-xetex](https://apps.fedoraproject.org/packages/texlive-xetex)
-- [https://kojipkgs.fedoraproject.org/packages/texlive/](https://kojipkgs.fedoraproject.org/packages/texlive/)
-- [MyTeXpert:TeX Live/Fedora](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FFedora)
+- [https://packages.fedoraproject.org/pkgs/texlive/](https://packages.fedoraproject.org/pkgs/texlive/)
+    - [https://packages.fedoraproject.org/pkgs/texlive/texlive-scheme-full/](https://packages.fedoraproject.org/pkgs/texlive/texlive-scheme-full/)
+    - [https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-langjapanese/](https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-langjapanese/)
 
 フルインストールする場合は
 
@@ -45,12 +40,10 @@ sudo dnf install texlive-scheme-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo dnf install texlive-collection-langjapanese texlive-xetex
+sudo dnf install texlive-collection-langjapanese
 ```
 
 を実行します．
-TeX Live 2018/Fedora 30 の texlive-collection-langjapanese では dvipdfmx がインストールされません．
-dvipdfmx は xdvipdfmx へのシンボリックリンクのため xdvipdfmx が収録されている texlive-xetex が必要です．
 
 ### [Ghostscript](/Ghostscript/) {#w3eeacef}
 
