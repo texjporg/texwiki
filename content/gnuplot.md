@@ -50,6 +50,7 @@ gnuplot は (La)TeX で処理できる形式でグラフを出力することが
 - [Wikipedia.ja:gnuplot](https://ja.wikipedia.org/wiki/gnuplot)
 - [LinuxWiki:gnuplot](https://okumuralab.org/~okumura/linux/?gnuplot)
 - [Python3の計算結果をGnuplotでグラフ化(subprocess Popenを使う)](http://auewe.hatenablog.com/entry/2013/10/16/201513)
+- [gnuplotスクリプトの解説](https://ss.scphys.kyoto-u.ac.jp/person/yonezawa/contents/program/gnuplot/index.html)
 
 #### License {#fe234317}
 
