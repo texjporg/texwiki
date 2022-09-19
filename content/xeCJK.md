@@ -41,13 +41,12 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 
 [Issues](https://github.com/CTeX-org/ctex-kit/issues?q=xeCJK)
 
-#### xeCJK 3.5.0 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
+#### xeCJK 3.6.1 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
-xeCJK 3.5.0 で 丸1「①」(U+2460) が表示されません．
+xeCJK 3.6.1 で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass{scrartcl}
-\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \begin{document}
@@ -59,7 +58,6 @@ ABCDEあいうえお①
 
 ```
 \documentclass{scrartcl}
-\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \xeCJKDeclareCharClass{CJK}{`①}
@@ -73,7 +71,6 @@ ABCDEあいうえお①
 #### IPAexMincho, IPAexGothic の場合 {#af21d789}
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{IPAexMincho}
 \setCJKsansfont{IPAexGothic}
@@ -111,7 +108,6 @@ kpathsea: Appending font creation commands to missfont.log.
 のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．<br>
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{ipaexm.ttf}
 \setCJKsansfont{ipaexg.ttf}
@@ -155,7 +151,6 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 #### MS Mincho, MS Gothic の場合 {#u1a0c13b}
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{xeCJK}
 \setCJKmainfont{MS Mincho}
 \setCJKsansfont{MS Gothic}
@@ -208,7 +203,6 @@ ZXjatype 0.6b で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass[xelatex]{bxjsarticle}
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \begin{document}
@@ -220,7 +214,6 @@ ABCDEあいうえお①
 
 ```
 \documentclass[xelatex]{bxjsarticle}
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \xeCJKDeclareCharClass{CJK}{`①}
@@ -239,7 +232,7 @@ ABCDEあいうえお①
 }
 ```
 
-#### [BXjsclsを使ったXeLaTeXのときだけparagraphの前にblacksquareが現れない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1704) {#k0a25489}
+#### [BXjsclsを使ったXeLaTeXのときだけparagraphの前にblacksquareが現れない](https://okumuralab.org/tex/mod/forum/discuss.php?d=1704) {#k0a25489}
 
 ### 使い方 {#v46b0c77}
 
@@ -255,7 +248,6 @@ ABCDEあいうえお①
 
 ```
 \documentclass[xelatex]{bxjsarticle}
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \setjasansfont{ipaexg.ttf}
@@ -283,7 +275,6 @@ xelatex neko.tex
 #### IPAexMincho, IPAexGothic の場合 {#ebafbaae}
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{IPAexMincho}
 \setjasansfont{IPAexGothic}
@@ -321,7 +312,6 @@ kpathsea: Appending font creation commands to missfont.log.
 のエラーが発生する場合はフォントファイル名を指定すればタイプセットできるようです．
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{ipaexm.ttf}
 \setjasansfont{ipaexg.ttf}
@@ -381,7 +371,6 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 #### MS Mincho, MS Gothic の場合 {#teab5b7f}
 
 ```
-\XeTeXgenerateactualtext=1
 \usepackage{zxjatype}
 \setjamainfont{MS Mincho}
 \setjasansfont{MS Gothic}
@@ -409,7 +398,7 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 - [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
 - [ZXjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/ZXjatype)
-- [QA: XeTeX で日本語、再び](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=139)
+- [QA: XeTeX で日本語、再び](https://okumuralab.org/tex/mod/forum/discuss.php?d=139)
 - [記事一覧 - tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
 - 仮名だけ別フォント ([qa:57028](https://okumuralab.org/~okumura/texfaq/qa/57028.html), [qa:57030](https://okumuralab.org/~okumura/texfaq/qa/57030.html), [qa:57031](https://okumuralab.org/~okumura/texfaq/qa/57031.html), [qa:57032](https://okumuralab.org/~okumura/texfaq/qa/57032.html))
 
