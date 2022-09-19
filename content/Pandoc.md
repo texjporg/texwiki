@@ -37,7 +37,6 @@ pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定�
 - [Vim](/Vim/)
     - [vim-pandoc](https://github.com/vim-pandoc/vim-pandoc)
 - [Visual Studio Code](</Visual Studio Code/>)
-- [Atom](/Atom/)
 
 ### 関連リンク {#ud9aba13}
 
