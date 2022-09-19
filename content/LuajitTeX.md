@@ -23,17 +23,21 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
+TeX Live 2022 には LuajitHBTeX 1.15.0, LuajitTeX 1.15.0 が収録されています。
+
 TeX Live 2021 には LuajitHBTeX 1.13.2, LuajitTeX 1.13.2 が収録されています。
 
 TeX Live 2020 には LuajitHBTeX 1.12.0, LuajitTeX 1.12.0 が収録されています。
 
-TeX Live [Revision 52828](http://www.tug.org/svn/texlive?view=revision&revision=52828)，W32TeX \[2019/11/18\] で LuajitLaTeX が削除されました。
+TeX Live [Revision 52828](http://www.tug.org/svn/texlive?view=revision&revision=52828) で LuajitLaTeX が削除されました。
 
 TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
 
 TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 #### 内臓 LuaJIT 処理系のバージョン {#db5f144e}
+
+TeX Live 2022 には LuaJIT 2.1.0-beta3 が収録されています。
 
 TeX Live 2021 には LuaJIT 2.1.0-beta3 が収録されています。
 
@@ -53,7 +57,7 @@ LuajitTeX は TeX Live がサポートしている全ての環境で提供され
 
 ### インストール {#e0acc4f5}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+[TeX Live](</TeX Live/>) に含まれています．
 [LuaTeX-ja](/LuaTeX-ja/) は LuajitTeX にも対応しています．
 
 ### 使い方 {#vad7d54e}
@@ -143,7 +147,7 @@ LuajitTeX は MessageBox などの Windows API を呼び出すことが可能で
 
 ### 関連リンク {#s999db35}
 
-- [QA: luajittex](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=911)
+- [QA: luajittex](https://okumuralab.org/tex/mod/forum/discuss.php?d=911)
 - [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
 - [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
 
