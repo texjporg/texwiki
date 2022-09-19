@@ -69,3 +69,6 @@ W32TeX の場合は babel-japanese パッケージは 2013/10/17 以降の版に
 babel の代替として [polyglossia](https://ctan.org/pkg/polyglossia) が公開されています．
 polyglossia は LuaLaTeX と XeLaTeX がサポートされています．
 polyglossia は TeX Live にも W32TeX にもインストールされています．
+
+- [XeLaTeXで日本語+ロシア語](https://nixeneko.hatenablog.com/entry/2015/11/28/061905)
+- [polyglossiaと日本語 (日本語とアラビア語の混植についての韓国語の記事)](https://hoze.tistory.com/1907)
