@@ -138,7 +138,7 @@ Groff（GNU troff）は GNU 版の troff です。プレーンテキストに文
 - ぶら下げ組み（Hanging characters）対応。
 - 国際化対応したハイフネーション。TeX の Liang アルゴリズムをもとに開発され、OpenOffice で用いられる　Raph Levien の LibHnj を用います。
 
-などがあります。PostScritp 出力が可能です。
+などがあります。PostScript 出力が可能です。
 
 Unix 互換な環境でないと動かすのは難しいようです。FreeBSD 11.0 では [GNU troff の代わりに Heirloom doctools の troff が同梱されるという話](https://www.mail-archive.com/freebsd-current@freebsd.org/msg160520.html)もあります。 
 
