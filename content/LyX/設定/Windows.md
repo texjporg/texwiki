@@ -41,9 +41,9 @@ pukiwiki: "LyX/設定/Windows"
 > ☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^1] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
 > DVIビューア用紙寸法設定:　　[^2]<br>
 > 書誌情報の生成<br>
-> &nbsp;処理子(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;オプション(O):　　　　　[^3]<br>
-> &nbsp;日本語用処理子(J):　<span style="color:Black;background-color:#EEEEEE;">\[upbibtex　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;処理子(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;コマンド(O):　　　　　upbibtex[^3]<br>
+> &nbsp;日本語用処理子(J):　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
 > &nbsp;オプション(I):　　　　　[^4]<br>
 > 索引の生成<br>
 > &nbsp;処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
