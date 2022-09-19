@@ -43,10 +43,10 @@ GPLv2
 
 [TeXShop/使い方](</TeXShop/使い方/>) を参照．
 
-### トラブルシューティング・よくある質問 {#o06db01d}
+## トラブルシューティング・よくある質問 {#o06db01d}
 
 [TeXShop FAQ](</TeXShop FAQ/>) を参照．
 
-### 関連リンク {#qb1b8010}
+## 関連リンク {#qb1b8010}
 
 - [Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
