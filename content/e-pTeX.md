@@ -9,7 +9,7 @@ pukiwiki: "e-pTeX"
 
 ## [e-pTeX](https://ja.osdn.net/projects/eptex/wiki/) {#u8bd5dfc}
 
-e-pTeX は [pTeX](http://ascii.asciimw.jp/pb/ptex/) に [e-TeX](/e-TeX/) 拡張他，いくつかの機能を追加したものです．
+e-pTeX は [pTeX](https://asciidwango.github.io/ptex/) に [e-TeX](/e-TeX/) 拡張他，いくつかの機能を追加したものです．
 
 e-pTeX は内部処理が Unicode ではないので Unicode を使用した文書を適切に処理できないことがあります．
 この場合は [e-upTeX](/upTeX,upLaTeX/) を使用してみてください．
@@ -20,7 +20,7 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 
 ### 関連リンク {#r0fcd4c9}
 
-- [アスキー日本語TeX(pTeX)](https://web.archive.org/web/20161229061414/http://ascii.asciimw.jp/pb/ptex/) ASCII Books のサイトの Internet Archive
+- [アスキー日本語TeX（pTeX）](https://asciidwango.github.io/ptex/)
 - [e-pTeX Wiki](https://ja.osdn.net/projects/eptex/wiki/FrontPage)
 - コミュニティ版 [ptex-base](https://github.com/texjporg/ptex-base), [ptex-fonts](https://github.com/texjporg/ptex-fonts), [platex](https://github.com/texjporg/platex), [pbibtex-base](https://github.com/texjporg/pbibtex-base)
 
