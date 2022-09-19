@@ -43,6 +43,8 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
     - [https://launchpad.net/ubuntu/+source/texlive-base/+changelog](https://launchpad.net/ubuntu/+source/texlive-base/+changelog)
 - [https://launchpad.net/ubuntu/+source/texlive-lang](https://launchpad.net/ubuntu/+source/texlive-lang)
     - [https://launchpad.net/ubuntu/+source/texlive-lang/+changelog](https://launchpad.net/ubuntu/+source/texlive-lang/+changelog)
+- [debian/ubuntuのuplatexでNotoフォントの太明朝体や丸ゴシック体など７書体使う手順](https://qiita.com//kakinaguru_zo/items/8c34ee921a8bbfd1663a)
+- [Ubuntu/Debian上のLuaTeXでGoogle Notoフォントの日本語７書体を使う](https://qiita.com/kakinaguru_zo/items/764c54f2e84d21092069)
 
 フルインストールする場合は
 
