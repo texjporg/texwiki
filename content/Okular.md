@@ -27,7 +27,7 @@ Windows, macOS, Linux
 
 ### ライセンス {#qbc60c11}
 
-[GPLv2](https://github.com/KDE/okular/blob/master/COPYING)
+[GPLv2](https://github.com/KDE/okular/tree/master/LICENSES)
 
 ### リリース情報 {#v4dc0489}
 
@@ -36,10 +36,6 @@ Windows, macOS, Linux
 ### ChangeLog {#h7a9328d}
 
 - [https://github.com/KDE/okular/commits/master](https://github.com/KDE/okular/commits/master)
-
-### 派生版 {#m771d62f}
-
-- [okular-backend-mupdf](https://github.com/xylosper/okular-backend-mupdf)
 
 ## インストール {#xecad964}
 
@@ -60,7 +56,7 @@ choco install okular
 
 ### macOS {#ye831736}
 
-- [https://github.com/KDE-mac/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE-mac/homebrew-kde/blob/master/Formula/okular.rb)
+- [https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb)
 
 ### Linux {#c209770f}
 
