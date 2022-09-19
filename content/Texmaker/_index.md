@@ -8,7 +8,7 @@ pukiwiki: "Texmaker"
 
 # Texmaker
 
-## [Texmaker](http://www.xm1math.net/texmaker/) {#x838d855}
+## [Texmaker](https://www.xm1math.net/texmaker/) {#x838d855}
 
 Texmaker は，統合環境として使える LaTeX エディタです．
 SyncTeX もサポートされています．
@@ -16,8 +16,8 @@ Texmaker のデフォルトの文字コードは UTF-8 です．
 
 現在は Texmaker から開発がフォークし，機能の追加や不具合が修正された [TeXstudio](/TeXstudio/) もあります．ただし，使用感が Texmaker とは違う部分もあります．
 
-- [Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/)
-    - [Texmaker : User manual](http://www.xm1math.net/texmaker/doc.html)
+- [Texmaker (free cross-platform latex editor)](https://www.xm1math.net/texmaker/)
+    - [Texmaker : User manual](https://www.xm1math.net/texmaker/doc.html)
 
 ***
 
@@ -34,11 +34,10 @@ GPLv2
 ### 派生版 {#n8123b82}
 
 - [TeXstudio](/TeXstudio/)
-- [bidiTeXmaker3](https://bitbucket.org/srazi/biditexmaker3)
 
 ### ダウンロード/インストール {#q69dea61}
 
-[Texmaker (free cross-platform latex editor)](http://www.xm1math.net/texmaker/download.html)
+[Texmaker (free cross-platform latex editor)](https://www.xm1math.net/texmaker/download.html)
 から，Windows, macOS, Linux 用の 64-bit バイナリおよびソースコードがダウンロードできます．
 
 #### Windows {#wc2183b7}
@@ -75,12 +74,6 @@ texmaker_jp.qm を texmaker.exe と同じフォルダーに置いて Texmaker �
         - [texmaker_jp.qm4texmaker4.0.1_20130306.zip](https://box.yahoo.co.jp/guest/viewer?sid=box-l-eoqe3irxlbfhq6sxm5553ou5rm-1001&uniqid=5f8f02fe-2d42-4fc2-ac67-1f3501d2f74a&viewtype=detail)
 
 ## 不具合 {#h6093782}
-
-### macOS の Texmaker で，文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまうため自動補完機能が使えない {#u2a90df7}
-
-macOS の Qt アプリケーションで [Backslash](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換されるバグがあるようです ([Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543))．
-
-Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
 
 ### Windows の Texmaker でかな漢字変換をする際に，変換候補の文字と背景が黒く表示され，読めなくなる {#c698d89f}
 
