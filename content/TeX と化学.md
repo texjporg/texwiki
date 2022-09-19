@@ -18,7 +18,7 @@ pukiwiki: "TeX と化学"
 - [Accelrys Draw](http://accelrys.co.jp/products/informatics/cheminformatics/draw/)
     ：for Windows（要登録：教育用に限り無償）
 
-- [Marvin Sketch](http://chemaxon.jp/wp/product/marvin)
+- [Marvin Sketch](https://patcore.com/product/marvin_sketch/)
     ：for Windows, Mac, Linux（要登録：スタンドアロンでの利用は無償）
 
 <!-- またはアカデミックユーザーのみ無料で使用可能であり登録する必要もない -->
@@ -42,7 +42,7 @@ pukiwiki: "TeX と化学"
 - [mhchem](/mhchem/)
     ：化学式や反応式をかくためのパッケージ．上付き・下付きを自動で整形するので，指定は最小限で済む．
 
-- [chemmacros](http://ctan.org/pkg/chemmacros)
+- [chemmacros](https://ctan.org/pkg/chemmacros)
     ：mhchem 同様の機能を持つ
     [chemformula](https://ctan.org/pkg/chemformula)，立体ギリシャ文字を出力する
     [chemgreek](https://ctan.org/pkg/chemgreek)
