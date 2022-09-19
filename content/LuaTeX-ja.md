@@ -159,7 +159,7 @@ l.64    }
 
 #### [OTF](/OTF/) {#g94672b9}
 
-OTF パッケージ (japanese-otf, japanese-otf-uptex) は使用できません．
+OTF パッケージ (japanese-otf) は使用できません．
 LuaTeX-ja では luatexja-otf.sty を使用します．
 
 ```
