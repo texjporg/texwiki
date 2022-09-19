@@ -11,7 +11,7 @@ Metafile to EPS Converter は EMF/WMF ファイルを EPS ファイルに変換�
 
 ### 公式サイト {#m7061940}
 
-- [http://wiki.lyx.org/Windows/MetafileToEPSConverter](http://wiki.lyx.org/Windows/MetafileToEPSConverter)
+- [https://wiki.lyx.org/Windows/MetafileToEPSConverter](https://wiki.lyx.org/Windows/MetafileToEPSConverter)
 
 ### インストール {#n618bcb7}
 
