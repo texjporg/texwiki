@@ -395,7 +395,7 @@ dvipdfmx -f uptex-haranoaji-04.map -f otf-up-haranoaji.map hoge.dvi
 ### W32TeX の場合 {#rffd4bea}
 
 W32TeX には，(e-)(u)pTeX エンジン用の map ファイルが準備されています。
-埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=866) を参照。)
+埋め込み制御はすべて dvipdfmx の -f オプションを使います。 (→ [OTF利用の際のフォント埋め込みの切り替えなど](https://okumuralab.org/tex/mod/forum/discuss.php?d=866) を参照。)
 
 ```
 dvipdfmx dviname (デフォルト,otf は Hiragino ProN、一般漢字は ipaex)
@@ -961,14 +961,14 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [https://ctan.org/pkg/japanese-otf](https://ctan.org/pkg/japanese-otf)
 - [https://ctan.org/pkg/japanese-otf-uptex](https://ctan.org/pkg/japanese-otf-uptex)
 - [https://ctan.org/pkg/ptex-fontmaps](https://ctan.org/pkg/ptex-fontmaps)
-- [upLaTeX + \propshape](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1235)
+- [upLaTeX + \propshape](https://okumuralab.org/tex/mod/forum/discuss.php?d=1235)
 - [GitHub - zr-tex8r/ZXotf: LaTeX: AJ1 CID input on XeLaTeX](https://github.com/zr-tex8r/ZXotf) （ZRさん）
 - [フリーフォントを活用するために](http://fugenji.org/thomas/texlive-guide/free_font.html) （Tamotsu Thomas UEDA さん）
 - [MacPorts の pTeX における和文多書体環境の整えかた](http://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) （たちゃなさん）
 - [Mac OS X 上のLaTeXで外字、異体字を使う方法](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/osx/gaiji.html) （たちゃなさん）
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://texuttex.g2.xrea.com/jfontsettings.html) （ut さん）
-- [TeX Live and upTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1148)
+- [TeX Live and upTeX](https://okumuralab.org/tex/mod/forum/discuss.php?d=1148)
 
 ### ChangeLog {#k32bef0c}
 
@@ -979,7 +979,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/platex/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/japanese-otf/?view=log)
-- [texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
+- \[[texlive\] Index of /trunk/Master/texmf-dist/source/fonts/japanese-otf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/fonts/japanese-otf/?view=log)
 
 #### japanese-otf-uptex {#kd9a1a12}
