@@ -8,7 +8,9 @@ pukiwiki: "TeX入門"
 
 # TeX入門
 
-<img src="http://web.archive.org/web/20140913010820if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;TeX,LaTeX 入門&quot;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/TeX_logo.svg/320px-TeX_logo.svg.png" alt="&quot;TeX 入門&quot;" width="100" height="57">
+
+<div style="text-align:left"><span style="font-size:36px">入門</span></div>
 
 <div style="text-align:right"><strong>TeX</strong> /t&eacute;k/［名］〔コンピュータ〕テフ，テック</div>
 
@@ -74,6 +76,9 @@ TeX の使い方は以下を参照してください．
 
 ### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
 
-- [2014](http://www.adventar.org/calendars/553)
-- [2013](http://www.adventar.org/calendars/187)
+- [2017](https://adventar.org/calendars/2229)
+- [2016](https://adventar.org/calendars/1734)
+- [2015](https://adventar.org/calendars/929)
+- [2014](https://www.adventar.org/calendars/553)
+- [2013](https://www.adventar.org/calendars/187)
 - [2012](https://atnd.org/events/34318)
