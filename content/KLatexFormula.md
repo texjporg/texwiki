@@ -7,7 +7,7 @@ pukiwiki: "KLatexFormula"
 
 # KLatexFormula
 
-KLatexFormula は LaTeX の数式を画像ファイに出力するアプリケーションです。
+KLatexFormula は LaTeX の数式を画像ファイルに出力するアプリケーションです。
 
 - [KLatexFormula &mdash; KLatexFormula](https://klatexformula.sourceforge.io/)
 
