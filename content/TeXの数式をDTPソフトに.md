@@ -63,7 +63,7 @@ $ latex testeq.tex
 $ dvips -E testeq.dvi -o testeq.eps
 ```
 
-これで [testeq.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。
+これで [testeq.eps](https://web.archive.org/web/20111118063732/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。
 ここで “-E” は EPS 形式で保存するオプションです。
 これを忘れると EPS でない PostScript 形式になってしまいます。
 この方法は（文字をアウトライン化しないので）テキストを保持した状態の EPS ファイルを出力します。
@@ -263,11 +263,11 @@ PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の�
 - Latin Modern フォントの OpenType フォント形式ファイル：
     [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/)
 
-- [Mac 版 Illustrator での数式の編集](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1048)
+- [Mac 版 Illustrator での数式の編集](https://okumuralab.org/tex/mod/forum/discuss.php?d=1048)
 
 - [Applied Symbols](http://www.appliedsymbols.com/cm/) （Computer Modern フォントの OpenType 版［商品］）
 
 ## オマケ {#u03ab148}
 
-- [tex.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/tex.eps)
+- [tex.eps](http://web.archive.org/web/20111118062821/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/tex.eps)
     （Illustrator でアウトラインを取った TeX のロゴです。何かに使えるかな？）
