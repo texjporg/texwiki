@@ -9,21 +9,35 @@ pukiwiki: "XCircuit"
 
 ## [XCircuit](http://opencircuitdesign.com/xcircuit/) - フリーの回路図作成ソフト {#g1267ee5}
 
+***
+
+***
+
 [XCircuit](http://opencircuitdesign.com/xcircuit/)
 は回路図を作成するためのフリーソフトウエアです。
 特に電気・電子系のレポート作成等に役立ちます。
 
-PostScript形式での出力が可能なためTeXへの挿入も簡単に行えます。
+PostScript 形式での出力が可能なため TeX への挿入も簡単に行えます。
 
 - [XCircuit](http://opencircuitdesign.com/xcircuit/)
 - [日本語解説](http://www.mlb.co.jp/linux/science/xcircuit/)
 
+### 動作環境 {#g2cd5520}
+
+Windows (Win64, Win32, Cygwin), OS X, Linux
+
+### ダウンロード {#c2add6d5}
+
+- [http://opencircuitdesign.com/xcircuit/download.html](http://opencircuitdesign.com/xcircuit/download.html)
+- [http://opencircuitdesign.com/xcircuit/archive/](http://opencircuitdesign.com/xcircuit/archive/)
+
 ### インストール {#l5809210}
 
-基本的にはX Windows System上で動作します。<br>
-Linux はもちろん、
-OS Xでは XQuartz (X11)、Cygwin などで動作します。<br>
-Cygwin を必要としない Windows Native バージョンもあります。<br>
+- [http://opencircuitdesign.com/xcircuit/install.html](http://opencircuitdesign.com/xcircuit/install.html)
+
+XCircuit の動作には Tcl/Tk が必要なので
+XCircuit をインストールする前に Tcl/Tk をインストールします。
+
 公式ページからダウンロードして展開します。
 
 ソースからインストールする場合は
@@ -44,55 +58,3 @@ GUIなので直感的に操作できます。
 
 左クリックで始点の指定、以後クリックごとにポイントをつけていきます。
 真ん中クリックで終点になります。
-
-真ん中クリック!?
-ここで挙動不審にならないでください。もしも真ん中にボタンがなくてもそれは
-あなたが幻覚を見ているだけでも、最近買ったパソコンが不良品だったわけでもなく、
-そういう仕様なのです。
-
-スクロールのふにふにがついているマウスはおそらくそれです。
-
-ラップトップマシンのどこを探してもボタンは2つしかありませんね。
-それから、デスクトップマシンでもボタンが2つしかないあなた。そうあなたですよ、あなた。
-
-おそらく左ボタンと右ボタンを同時に押すことにより9割のユーザは、
-心拍数が通常通りに戻るでしょう。
-
-あ、そうそう。Macノートはクリックボタンが1個しかないのか。
-う〜ん、グレードめちゃめちゃ高い。
-
-でもそんなときは、オプションキー（オルトキーっていうひともいるけど）と同時にクリックしてみてください。青ざめた顔に血が戻ってくるのがお分かりでしょう。
-
-はい。元祖うにユーザはたいていのことではびくともしませんが、
-Windowsのぬくぬくした環境で育った方々は、こういう事態に直面すると、
-パニックを起こしやすいみたいです。
-
-#### 記号やシンボルを挿入する {#w7628d4c}
-
-回路図エディタなんですから抵抗とかコンデンサはもとから入っています。
-WindowメニューのGoto LibraryからAnalogを選択。
-
-おー、立派な部品がたくさんあります。
-抵抗、コンデンサ、コイル、ダイオード、接地、矢印まである。
-
-でも、電源2つもいらないな・・・。そういう時は自分で地道に書いてください。
-
-余談ですが、このライブラリファイルを拡張すれば、
-楽譜だって何だって書けちゃうみたいです。
-FileメニューのAdd New Libraryから、Musicライブラリーを読み込んでみてください。
-
-## ちょっとした問題 {#l600297a}
-
-特にデスクトップを使っている人に多いようです。
-
-```
-Menuをクリックしても中身が展開されないぞ〜
-```
-
-ね、ちょっとした問題でしょ。
-インポートもエクスポートも、これから挿入しようとするコンデンサのライブラリも
-まったく開けない。
-
-でも、NumLockを押してみてください。
-
-ほとんどの問題は解決できます。
