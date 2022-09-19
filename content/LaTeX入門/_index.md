@@ -51,10 +51,11 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
 
 ほとんどの OS で動作します。つまり，ほとんどのコンピュータで使えます。
 
-- [Microsoft Windows](https://www.microsoft.com/ja-jp/windows)
-- UNIX&reg;（[macOS](https://www.apple.com/jp/macos/) など）
+- [Windows](https://www.microsoft.com/ja-jp/windows)
+- [macOS](https://www.apple.com/jp/macos/)
+- [Linux](https://www.kernel.org/)
 - UNIX 互換
-    OS（[Linux OS](https://www.kernel.org/)，[FreeBSD](https://www.freebsd.org/)
+    OS（[FreeBSD](https://www.freebsd.org/)
     など）
 
 - Windows 上で UNIX ライクな環境を提供する [Cygwin](https://www.cygwin.com/)
@@ -70,28 +71,30 @@ pTeX, pLaTeX
 
 ### Unicode 化された TeX, LaTeX {#gdc33ce4}
 
-Unicode に完全対応した [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/) というエンジンが利用できます。
-これらのエンジンの上で動く LuaLaTeX, LuajitLaTeX, XeLaTeX を使っても日本語を出力できます。
+Unicode に完全対応した [LuaTeX](/LuaTeX/), [XeTeX](/XeTeX/) というエンジンが利用できます。
+これらのエンジンの上で動く LuaLaTeX, XeLaTeX を使っても日本語を出力できます。
 
 ### LaTeX のバージョン {#q9d2d675}
 
 1994年に LaTeX の新版 LaTeX 2ε（トゥー・イー），1995年にはアスキーから日本語版
 pLaTeX 2ε が出ました。
 これにともなって，それ以前の古い LaTeX を特に LaTeX 2.09 と呼ぶことになりました。
-以下では現行の LaTeX 2ε と pLaTeX 2ε と upLaTeX 2ε に基づいて説明します。
+以下では LaTeX 2ε と pLaTeX 2ε と upLaTeX と LuaLaTeX について説明します。
 
 組版処理による表記ができないプレーンテキストや電子メールなどで書くときには
 LaTeX 2ε を “LaTeX2e” と書くことになっています。
-以下では LaTeX 2ε, pLaTeX 2ε, upLaTeX 2ε をそれぞれ
-“LaTeX2e”, “pLaTeX2e”, “upLaTeX2e” と書きます。
+以下では LaTeX 2ε, pLaTeX 2ε, upLaTeX, LuaLaTeX をそれぞれ
+“LaTeX2e”, “pLaTeX2e”, “upLaTeX”, “LuaLaTeX” と書きます。
 
-## LaTeX2e (pLaTeX2e, upLaTeX2e) の入門書 {#l062c239}
+## LaTeX2e, pLaTeX2e, upLaTeX, LuaLaTeX の入門書 {#l062c239}
 
-まずは次の本を挙げておきます。
+LaTeX2e, pLaTeX2e, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
 
-- [奥村 晴彦](http://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』（[技術評論社](http://gihyo.jp/)，2017年1月，定価 &yen;3,456 (本体 &yen;3,200)，[ISBN 978-4-7741-8705-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8705-1)）
-    - 第2刷は [TeX Live](</TeX Live/>) 2017，第1刷は [TeX Live](</TeX Live/>) 2016 を収録した
-        DVD-ROM 付。[電子版](https://gihyo.jp/dp/ebook/2017/978-4-7741-8764-8)もあります。
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2e美文書作成入門](https://gihyo.jp/book/2020/978-4-297-11712-2)』
+    （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，定価 &yen;3,608 (本体 &yen;3,280＋税)，[ISBN 978-4-297-11712-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11712-2)）
+    ……
+    [TeX Live](</TeX Live/>) 2020 を収録した
+    DVD-ROM 付。電子版もあります。
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
 
