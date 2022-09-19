@@ -41,7 +41,7 @@ Word は，同じファイルを開いても，同じように書いても，バ
 - 論文集などで論文ごとに違う和文フォントになるということが避けられる
 
 といった理由で，以前は好まれていました。
-しかし，最近では PDF の仕様が変更され，むしろ<strong>基本書体以外のフォントを埋め込むことが推奨</strong>されています（[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)）。
+しかし，最近では PDF の仕様が変更され，むしろ<strong>基本書体以外のフォントを埋め込むことが推奨</strong>されています（[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)）。
 
 > The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character sets may be used.
 
@@ -138,4 +138,4 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 - [LaTexスタイルの数式入力が「Office 365」で利用可能へ](http://forest.watch.impress.co.jp/docs/news/1073615.html)
 
 [^1]: プリンター依存性は Word 2000 でほぼ解消されたようです。
-[^2]: 「ＭＳ 明朝を埋め込むこと」といった指示は Linux/OS X ユーザに酷ですが…
+[^2]: 「ＭＳ 明朝を埋め込むこと」といった指示は Linux/macOS ユーザに酷ですが…
