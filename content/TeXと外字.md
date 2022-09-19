@@ -145,6 +145,10 @@ IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表�
 
 ### 絵文字を出力する {#ndee9c4c}
 
+[BXcoloremoji](https://github.com/zr-tex8r/BXcoloremoji) の紹介記事です。
+
+- [BXcoloremoji パッケージで最新の Apple Color Emoji を使う](https://doratex.hatenablog.jp/entry/20201209/1607521856)
+
 [upLaTeX](/upTeX,upLaTeX/) で絵文字を出力する試みがあります。
 
 - [TeXで絵文字を入出力する (1) 〜 白黒絵文字篇](http://doratex.hatenablog.jp/entry/20140107/1389033238)
@@ -153,6 +157,7 @@ IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表�
 [XeLaTeX](/XeTeX/) や [LuaLaTeX](/LuaTeX/) で絵文字を出力する方法の紹介です。
 
 - [LaTeX文書中に絵文字的なもの（Font-Awesome）を取り入れる](http://qiita.com/uri/items/00afdd95e68d47fd917b)
+- [TeXで絵文字を使う](https://rakunet.org/index.cgi?page=20210818)
 
 ### 関連リンク {#i9089a08}
 
