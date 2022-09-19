@@ -139,4 +139,4 @@ pdftitle=\@title
 
 <!-- MyTeXpert のページ -->
 <!-- -https://mytexpert.osdn.jp/index.php?HyperTeX  -->
-<!-- がアクセスできなくなったため移植。 -->
+<!-- から移植。 -->
