@@ -9,6 +9,10 @@ pukiwiki: "ptexenc"
 
 ## ptexenc {#w41f5dea}
 
+アスキー株式会社による pTeX の文字コードを扱う関数群を，ライブラリとして切り出したものです。
+ライブラリとしての ptexenc は，アスキーの著作物ではありません。
+現在（2010 年以降）の [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) の pTeX 系列のプログラム[^1]は ptexenc を使ってコンパイルされています。
+
 従来の pTeX では文字コードが Shift_JIS, ISO-2022-JP, EUC-JP のどれか一つのファイルしか処理できませんでしたが，現在では ptexenc というライブラリによって UTF-8 を含む文字コードを自動的に判別して変換し，処理することができます．
 これはあくまでも入力をそのエンジンが受け付ける文字コードに変換しているだけであり，内部処理が Unicode 化されているわけではないことに注意が必要です．
 以下に見るように，Unicode にある文字でも JIS X 0208 や JIX X 0213 などにない文字や機種依存文字は使用することができません．
@@ -236,3 +240,5 @@ pukiwiki: "ptexenc"
 <tr><td style="text-align:center">&#xfe3d;</td><td style="text-align:center">&#xfe3e;</td><td style="text-align:center">&#xfe41;</td><td style="text-align:center">&#xfe42;</td><td style="text-align:center">&#xfe43;</td><td style="text-align:center">&#xfe44;</td><td style="text-align:center">&#xfe3b;</td><td style="text-align:center">&#xfe3c;</td><td colspan="2" style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:center"></td><td style="text-align:left">\UTF{FE3D}</td></tr>
 </tbody>
 </table>
+
+[^1]: pTeX, upTeX, e-pTeX, e-upTeX, pPLtoTF, upPLtoTF, pBibTeX, upBibTeX, mendex などがあります。
