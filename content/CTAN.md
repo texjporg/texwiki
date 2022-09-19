@@ -138,7 +138,6 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ASCII pTeX](http://mirror.ctan.org/language/japanese/ptex/)
     - [ASCII pTeXマクロ類](http://mirror.ctan.org/language/japanese/ptex-texmf/)
     - [japanese-otfパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf/)
-    - [japanese-otf-uptexパッケージ](http://mirror.ctan.org/language/japanese/japanese-otf-uptex/)
 
 ### 関連リンク {#wc81d3dd}
 
