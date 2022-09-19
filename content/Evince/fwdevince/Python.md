@@ -19,7 +19,7 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 
 [Fedora](/Linux/Fedora/) 26 の Evince 3.24.0, Python 3.6.2, dbus-python 1.2.4, PyGObject 3.24.1 で動作確認しています．
 
-なお [https://www.freedesktop.org/wiki/Software/DBusBindings/](https://www.freedesktop.org/wiki/Software/DBusBindings/) によると dbus-pyton は Obsolete libraries で New applications should use pydbus, txdbus or GDBus/QtDBus bindings. とのことです．
+なお [https://www.freedesktop.org/wiki/Software/DBusBindings/](https://www.freedesktop.org/wiki/Software/DBusBindings/) によると dbus-python は Obsolete libraries で New applications should use pydbus, txdbus or GDBus/QtDBus bindings. とのことです．
 
 うまく動作しない場合は
 
@@ -62,11 +62,11 @@ fwdevince（Evince で forward and inverse search を行うツール）の Pytho
 # this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
 # Street, Fifth Floor, Boston, MA  02110-1301, USA
 
+from gi.repository import GLib, Gio
 import dbus
 import argparse
 import pathlib
 import traceback
-import sys
 import urllib.parse
 
 class EvinceForwardSearch:
@@ -84,12 +84,13 @@ class EvinceForwardSearch:
         tex = str(pathlib.Path(args.tex[0]).resolve().parent / pathlib.Path('./') / pathlib.Path(args.tex[0]).resolve().name)
 
         try:
-            bus = dbus.SessionBus()
-            daemon = bus.get_object('org.gnome.evince.Daemon', '/org/gnome/evince/Daemon')
-            dbus_name = daemon.FindDocument('file://' + urllib.parse.quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True, dbus_interface='org.gnome.evince.Daemon')
-            window = bus.get_object(dbus_name, '/org/gnome/evince/Window/0')
-            window.SyncView(tex, (line, 1), 0, dbus_interface='org.gnome.evince.Window')
-        except dbus.DBusException:
+            bus = Gio.bus_get_sync(Gio.BusType.SESSION, None)
+            daemon = Gio.DBusProxy.new_sync(bus, 0, None, 'org.gnome.evince.Daemon', '/org/gnome/evince/Daemon', 'org.gnome.evince.Daemon', None)
+            dbus_name = daemon.call_sync('FindDocument', GLib.Variant('(sb)', ('file://' + urllib.parse.quote(pdf, safe="%/:=&?~#+!$,;'@()*[]"), True)), Gio.DBusSignalFlags.NONE, -1, None)
+            dbus_name = dbus_name.unpack()[0]
+            window = Gio.DBusProxy.new_sync(bus, 0, None, dbus_name, '/org/gnome/evince/Window/0', 'org.gnome.evince.Window', None)
+            window.call_sync('SyncView', GLib.Variant('(s(ii)u)', (tex, (line, 1), 0)), Gio.DBusSignalFlags.NONE, -1, None)
+        except Exception:
             traceback.print_exc()
 
 class EvinceInverseSearch:
@@ -106,9 +107,7 @@ class EvinceInverseSearch:
         import dbus.mainloop.glib
         dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
         a = EvinceWindowProxy('file://' + pdf, editor, True)
-        from gi.repository import GLib
-        loop = GLib.MainLoop()
-        loop.run()
+        GLib.MainLoop().run()
 
 class EvinceWindowProxy:
     """A Dbus proxy for an Evince Window."""
@@ -126,7 +125,7 @@ class EvinceWindowProxy:
 
     EV_WINDOW_IFACE = 'org.gnome.evince.Window'
 
-    def __init__(self, uri, editor, apawn=False, logger=None):
+    def __init__(self, uri, editor, spawn=False, logger=None):
         self._log = logger
         self.uri = uri.replace(" ", "%20")
         self.editor = editor
@@ -215,6 +214,7 @@ class EvinceWindowProxy:
             self.source_handler(input_file, source_link, timestamp)
 
 if __name__ == '__main__':
+    import sys
     cmd = pathlib.Path(sys.argv[0]).name
     if cmd == 'fwdevince' or cmd == 'evince_forward_search':
         EvinceForwardSearch().run()
