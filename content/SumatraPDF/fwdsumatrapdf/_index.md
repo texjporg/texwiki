@@ -52,7 +52,6 @@ fwdsumatrapdf は以下のエディタ・マクロ・プラグインで使用可
 - [Notepad++](/Notepad++/)
     - [NppExec](/NppExec/)
     - [jN](/jN/)
-    - [Python Script](</Python Script/>)
 - [サクラエディタ](</サクラエディタ/>)
     - [Typeset.js](</サクラエディタ/マクロ/#i861969f>)
 
