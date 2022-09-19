@@ -45,8 +45,6 @@ LuaLaTeX
 
 : lualatex -synctex=1 -interaction=nonstopmode %.tex
 
-: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
-
 外部PDFビューア
 : &nbsp;
 
