@@ -65,16 +65,15 @@ input method については，[Google](https://www.google.co.jp/) などで探�
 参考までに，[フランス語入力](http://www.nagasaki-gaigo.ac.jp/toguchi/pc/keyboard_install.htm)，[ドイツ語入力](http://kazajirushi.net/germaninput_win10/)，[スペイン語入力](http://position.red/2016/05/pc/1322/)，[ギリシャ語入力](https://museion.sakura.ne.jp/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](https://www.jolco.com/pages/computer/language18.html)，[タイ語入力](https://sripasa.com/windows_thai) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
+[Visual Studio Code](</Visual Studio Code/>)，
 [Emacs](/Emacs/)，
 [Vim](/Vim/)，
-[Visual Studio Code](</Visual Studio Code/>)，
-[Atom](/Atom/)，
 [Notepad++](/Notepad++/)，
 [サクラエディタ](</サクラエディタ/>) Ver. 2 以降などがあります。
 Emacs は充分すぎるほどの多言語対応能力を持っていますが起動に多少時間がかかるかもしれません。
 起動の速さを重視する方はメモ帳がおすすめです。
 
-macOS や Linux などでは [Emacs](/Emacs/)，[Vim](/Vim/)，[Visual Studio Code](</Visual Studio Code/>)，[Atom](/Atom/) が定番だと思います。
+macOS や Linux などでは [Visual Studio Code](</Visual Studio Code/>)，[Emacs](/Emacs/)，[Vim](/Vim/) が定番だと思います。
 
 ## 欧米（キリル文字含む）の諸言語 {#obaldssd}
 
