@@ -201,3 +201,4 @@ Micro-typographic extensions to the TeX typesetting system
 ## Comments {#mlcomeiz}
 
 - Han The Thanhの学位論文を少し見てみましたが 少し Type 3 フォントも使われているようです．全て Type 1 フォントを実現できなかったのかなと思いました． -- kd 2007-07-21 (土) 02:13:11
+- 松本克己『世界言語への視座』三省堂, 2006 もTeX組みのようです。あとがきに記載があります -- アウッアー 2021-11-03 (水) 10:43:07
