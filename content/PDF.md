@@ -46,20 +46,20 @@ PDF を出力できます．
 
 PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
 
-- [PDF24 Creator](https://en.pdf24.org/)
+- [PDF24 Creator](https://www.pdf24.org/en/)
 - [PrimoPDF](http://www.primopdf.com/)
 - [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)
 
 広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
 
-- [CubePDF](http://www.cube-soft.jp/cubepdf/)（[悪質アドウェアが附属してくるフリーソフトまとめ](https://matome.naver.jp/odai/2138879734745823101/2140077252856194503) を参照）
+- [CubePDF](http://www.cube-soft.jp/cubepdf/)
 - [PDFCreator](http://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
 - [BullZip PDF Printer Community Edition](http://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
 - [pdf995](http://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](https://susshiblog.blog.so-net.ne.jp/2005-07-29) を参照）
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
-- [Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/acrobat.html)
+- [Adobe Acrobat](https://www.adobe.com/jp/acrobat.html)
     ([Adobe Systems](https://www.adobe.com/jp/))
 
 - [いきなりPDF シリーズ](http://www.sourcenext.com/product/pdf/)
@@ -69,8 +69,8 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
 - [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
 
-既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat DC では多様なことができます．Acrobat DC の使い方については，
-[Acrobat DC ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
+既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat では多様なことができます．使い方については，
+[Adobe Acrobat ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
 
 以下では，主にオープンソースのソフトウェアについて紹介していきます．
 
@@ -137,7 +137,6 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
     - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX](</Visual Studio Code/LaTeX/>) パッケージを使う
-    - [Atom](/Atom/) で [pdf-view](https://atom.io/packages/pdf-view) パッケージを使う
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
 - [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
