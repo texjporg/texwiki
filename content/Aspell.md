@@ -26,83 +26,55 @@ Aspell は本体と辞書ファイルが別々に配布されています．
 ただし，コマンドラインなどでは，ASCII 文字のアルファベット以外で構成された単語をスペルチェックすると文字化けすると思います．
 [Emacs](/Emacs/) や [Vim](/Vim/) など，さまざまな文字コードに対応したテキストエディタのマクロから呼び出すことを勧めます．
 
-まず，次の場所から Aspell 本体（Aspell-（任意の数字）-Setup)と英語辞書（Aspell-en-（任意の数字））をダウンロードします．
+Windows の場合は MSYS2 で Aspell をインストールします．
 
-[Aspell for Win32](http://aspell.net/win32/)
-
-まず本体をインストーラの指示通りにインストールします．
-基本的には Next と Install と Finish を押していくだけでインストールできるはずです．
-英語辞書もインストーラになっていますが，本体のインストール時にインストール先を変えた場合は，英語辞書のインストール先も適切に変更しておく必要があります．
-変えていない場合はデフォルトどおりにインストールします．
-
-辞書のインストール時に
+[Windows での Emacs の設定覚書#Aspell](http://qiita.com/ignorant/items/76e4c162cedc47336e75#aspell)
 
 ```
-replace TmpInstall/Copying? [y]es, [n]o, [A]ll, [N]one, [r]ename:
+pacman -S mingw-w64-x86_64-aspell mingw-w64-x86_64-aspell-en
 ```
 
-と聞かれることがあります．
-「A」と入力して Enter キーを押しておきましょう．
+#### macOS の場合 {#g5b60c70}
 
-Windows PowerShell またはコマンド プロンプトを用いる場合は環境変数 PATH を設定します．
-PATH の値は
+Homebrew を使ってインストールできます．
 
-- 64-bit Windows の場合
+```
+brew install aspell --lang=en
+```
 
-    ```
-    C:\Program Files (x86)\Aspell\bin
-    ```
+MacPorts を使ってインストールできます．
 
-- 32-bit Windows の場合
-
-    ```
-    C:\Program Files\Aspell\bin
-    ```
-
-です．
+```
+sudo port install aspell aspell-dict-en
+```
 
 #### Linux の場合 {#w22db8c3}
 
-Linux Mint の場合は
+Linux Mint/Debian/Ubuntu の場合は
 
 ```
-$ sudo apt install aspell aspell-en
-```
-
-です．
-
-Vine Linux の場合は
-
-```
-$ sudo apt-get install aspell
+sudo apt install aspell aspell-en
 ```
 
 です．
 
-#### OS X の場合 {#g5b60c70}
-
-Homebrew を使って簡単にインストールできます．
+Fedora の場合は
 
 ```
-$ brew install aspell --lang=en
+sudo dnf install aspell aspell-en
 ```
 
-MacPorts を使って簡単にインストールできます．
+です．
 
-```
-$ sudo port install aspell aspell-dict-en
-```
+### Aspell の使い方（コマンドライン編） {#aspus466}
 
-### Aspell の使い方（Windows PowerShell・コマンド プロンプト編） {#aspus466}
-
-PATH を通しているならば，
+コマンドラインから
 
 ```
 aspell --lang=en -c -t 調べたいtexファイル
 ```
 
 で TeX 文書を英語でスペルチェックできます．
-Linux など UNIX-like なシステムでも同様にターミナル上で上記コマンドを実行します．
 
 スペルチェック中の操作キーは下記の通り．
 
@@ -199,17 +171,11 @@ tex-check-comments true
 
 ### Aspell の使い方（Emacs編） {#aemcsfoi}
 
-Emacs の exec-path に Aspell の PATH を追加します．
-64-bit Windows の場合は
+Emacs の exec-path に Aspell のコマンド検索パスを追加します．
+Windows の場合は
 
 ```
-(add-to-list 'exec-path "C:/Program Files (x86)/Aspell/bin")
-```
-
-32-bit Windows の場合は
-
-```
-(add-to-list 'exec-path "C:/Program Files/Aspell/bin")
+(add-to-list 'exec-path "C:/msys64/mingw64/bin")
 ```
 
 を &#x7e;/.emacs.d/init.el に追加します．
@@ -220,13 +186,6 @@ Emacs の exec-path に Aspell の PATH を追加します．
 ```
 
 と1行書けばとりあえず使えます．
-ただし，バージョン3.0以前の ispell.el を使っている場合は，
-
-```
-(setq-default ispell-extra-args '("--reverse")) 
-```
-
-を足す必要がありますが，Aspell が標準で入っているシステムでは通常不要です．
 
 日本語混じりの TeX 文書のスペルをチェックしたい場合には，[qa:3898](https://okumuralab.org/~okumura/texfaq/qa/3898.html) にある通り，
 
