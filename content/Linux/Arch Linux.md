@@ -172,12 +172,6 @@ sudo pacman -S texworks poppler-data
 sudo pacman -S code
 ```
 
-### [Atom](/Atom/) {#o4f97d9a}
-
-```
-sudo pacman -S atom
-```
-
 ### [Emacs](/Emacs/) {#le6bf422}
 
 ```
