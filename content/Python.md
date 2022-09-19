@@ -26,20 +26,20 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 #### 本家 Windows executable installer {#vff4acd8}
 
-本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python38\ にインストールした場合は
+本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python39\ にインストールした場合は
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python38\Scripts\
+%USERPROFILE%\AppData\Local\Programs\Python\Python39\Scripts\
 ```
 
 と
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python38\
+%USERPROFILE%\AppData\Local\Programs\Python\Python39\
 ```
 
 を環境変数 Path に追加します．
 
-#### [ActivePython](http://downloads.activestate.com/ActivePython/releases/) {#e1aa7fe2}
+### macOS {#q6991b06}
 
-本家版の他の選択肢としては ActivePython があります．
+#### [macOS Big Sur の /usr/bin/python3 はユニバーサルバイナリで 3.8.2](https://twitter.com/h_okumura/status/1327154469130416129) {#r1052796}
