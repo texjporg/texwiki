@@ -26,7 +26,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
     PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
 
-- gsview-5.0 上で角藤版 Ghostscript を使用する場合の注意 --&gt; [Windows 用 gs-9.25 と gsview-5.0 について](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2500)
+- gsview-5.0 上で角藤版 Ghostscript を使用する場合の注意 --&gt; [Windows 用 gs-9.25 と gsview-5.0 について](https://okumuralab.org/tex/mod/forum/discuss.php?d=2500)
 
 > 本家の Windows 用 Ghostscript バイナリは，iccprofiles を
 > バイナリに含んでいるので，gsview-5.0 の
@@ -100,7 +100,7 @@ GSview のベータ版には使用期限が設けられており 5.01beta 2020-0
 
 を実行すると gsview-09e7545\bin に実行ファイル gsview64.exe が作成されます。
 
-角藤版 Ghostscript をインストールして GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
+64-bit 角藤版 Ghostscript をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
 
 Ghostscript DLL:
 : C:\Program Files\gs\gs9.56.1\bin\gsdll64.dll
