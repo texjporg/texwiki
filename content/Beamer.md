@@ -35,9 +35,9 @@ Beamer は
 
 で利用可能です．
 
-- pdfLaTeX の場合は [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) で日本語文書が作成出来ます．
 - LuaLaTeX/LuajitLaTeX の場合は [LuaTeX-ja](/LuaTeX-ja/) で日本語文書が作成できます．
 - XeLaTeX の場合は [xeCJK/ZXjatype](/xeCJK/) で日本語文書が作成できます．
+- pdfLaTeX の場合は [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) で日本語文書が作成出来ます．
 
 ## 不具合 {#d9dfcf20}
 
@@ -50,7 +50,7 @@ Beamer は
 <!-- -[[#10 Problem with ClassRCS and PackageRCS from beamerbasercs:https://github.com/josephwright/beamer/issues/10]] -->
 <!-- -[[#36 Cannot resolve codes around RCS - -- we need another software?:https://github.com/josephwright/beamer/issues/36]] -->
 <!-- -[[#56 Run latest beamer error in ubuntu 10.04:https://github.com/josephwright/beamer/issues/56]] -->
-<!-- -[[beamer コンパイル中のエラー:http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=462]] -->
+<!-- -[[beamer コンパイル中のエラー:https://okumuralab.org/tex/mod/forum/discuss.php?d=462]] -->
 <!-- -[[Beamer 3.10 にアップグレードした:http://d.hatena.ne.jp/triadsou/20101110/1289357503]] -->
 <!-- -https://bitbucket.org/rivanvx/beamer/wiki/Home#markdown-header-development -->
 <!--  -->
@@ -128,6 +128,7 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 ### Beamer Themes {#r446ce9a}
 
 - [LaTeX Beamer Themes](http://latex.simon04.net/)
+- [LaTeX Beamerの"Beamerらしく"ないおすすめテーマ集](https://qiita.com/htlsne/items/70cbb488e7a87cd9e228)
 - [Beamer mtheme](https://github.com/matze/mtheme)
 - [LaTeX Beamerにカスタムテーマをインストールして使う](http://d.hatena.ne.jp/muupan/20130922/1379830899)
 - [Beamer Theme Matrix](http://www.hartwork.org/beamer-theme-matrix/)
@@ -141,16 +142,16 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 ## TeX ► QA ► フォーラム ► 一般フォーラム ► {#u64515a4}
 
-- [Beamerで「メイリオ」フォントを使う方法](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1036)
-- [MacTex2012で日本語beamer文書のコンパイルエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=941)
-- [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=926)
-- [beamerでの数式フォントの変更](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=729)
-- [bemaerによるプレゼンテーション](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=700)
-- [Beamerの使い方について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=611)
-- [beamerでmovieの上に画像の貼り付け](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=399)
-- [beamerでxy-picを使いたい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=360)
-- [beamerでceo.styを活用したい](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=357)
-- [XeLaTeX で Beamer クラスを使用する際の日本語フォントの指定について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=317)
+- [Beamerで「メイリオ」フォントを使う方法](https://okumuralab.org/tex/mod/forum/discuss.php?d=1036)
+- [MacTex2012で日本語beamer文書のコンパイルエラー](https://okumuralab.org/tex/mod/forum/discuss.php?d=941)
+- [beamer の CambridgeUS などでの \tableofcontents の番号（\setcounter が反映されない）](https://okumuralab.org/tex/mod/forum/discuss.php?d=926)
+- [beamerでの数式フォントの変更](https://okumuralab.org/tex/mod/forum/discuss.php?d=729)
+- [bemaerによるプレゼンテーション](https://okumuralab.org/tex/mod/forum/discuss.php?d=700)
+- [Beamerの使い方について](https://okumuralab.org/tex/mod/forum/discuss.php?d=611)
+- [beamerでmovieの上に画像の貼り付け](https://okumuralab.org/tex/mod/forum/discuss.php?d=399)
+- [beamerでxy-picを使いたい](https://okumuralab.org/tex/mod/forum/discuss.php?d=360)
+- [beamerでceo.styを活用したい](https://okumuralab.org/tex/mod/forum/discuss.php?d=357)
+- [XeLaTeX で Beamer クラスを使用する際の日本語フォントの指定について](https://okumuralab.org/tex/mod/forum/discuss.php?d=317)
 
 <!-- **TeX Q & A [#n18c085c] -->
 
