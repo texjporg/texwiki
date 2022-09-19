@@ -23,7 +23,7 @@ SI 単位 (The International System of Units) の表記法の主な規則を挙�
 - 数値のあとにスペースを入れて単位をつける．
 
 詳細は
-[SI Brochure \[8th edition, 2006; updated in 2014\]](http://www.bipm.org/en/publications/si-brochure/)
+[SI Brochure \[8th edition, 2006; updated in 2014\]](https://www.bipm.org/en/publications/si-brochure/)
 や，その[日本語訳](https://www.nmij.jp/library/units/si/)を参照してください．
 
 siunitx は，単位記号のフルスペルを入力すれば，大文字小文字を間違わずに正しく記号化してくれます（例えば，mHz Mhz mhz MHz を区別してくれます）．
@@ -45,7 +45,7 @@ siunitx は，単位記号のフルスペルを入力すれば，大文字小文
 <!-- / 更新していただいた画像を確認できました．ありがとうございます．（14:58 アセトアミノフェン） -->
 
 なお，siunitx パッケージは expl3 パッケージに依存します．
-pTeX で expl3 がサポートされたのは
+pLaTeX / upLaTeX で expl3 がサポートされたのは
 [qa:55490](https://okumuralab.org/~okumura/texfaq/qa/55490.html)（→ [qa:55523](https://okumuralab.org/~okumura/texfaq/qa/55523.html) でバグ修正）以降ですので，それ以前では利用できないことにご注意ください．
 
 ### 関連リンク {#b1d93009}
