@@ -38,7 +38,7 @@ pukiwiki: "Vim-LaTeX"
 <!-- it is easy to handle for a new vim_texer just like me. I guess it -->
 <!-- would help the other beginners, too. -->
 
-## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は vimtex を使用する {#z8e30b5a}
+## [Vim-LaTeX (LaTeX-Suite)](https://github.com/vim-latex/vim-latex) → 問題が発生する場合は [VimTeX](/VimTeX/) を使用する {#z8e30b5a}
 
 ***
 
