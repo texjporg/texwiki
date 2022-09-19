@@ -34,7 +34,7 @@ TeXShop には文字コード自動判定機能はありませんので，開き
 OS X Mavericks 10.9.5 のアップデートにおいて，[デジタル署名のバージョンがアップデートされた](http://readwrite.jp/archives/11485)影響で，それ以前の時代に開発されたアプリを自動アップデートしようとすると，アップデートに失敗することがあります。
 TeXShop のメニューからの自動アップデートがうまくいかない場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして，既存の TeXShop.app を上書きすることで，手動アップデートを行ってください。
 
-- TeX Forum: [1575](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1575#p8979)
+- TeX Forum: [1575](https://okumuralab.org/tex/mod/forum/discuss.php?d=1575#p8979)
 
 ### OS をアップデートしたら \includegraphics で画像が出力されなくなった {#X11}
 
@@ -46,7 +46,7 @@ TeXShop のメニューからの自動アップデートがうまくいかない
 - OS をアップデートすると，既存の X11/XQuartz の環境が消されます。
 - その結果，「10.7 以前でMacTeXをインストール，または 10.8 以降 + XQuartz の環境に MacTeX をインストールした後に，OS をアップデート」という手順を経ると，gs が機能しなくなります。その場合，XQuartz をインストールするか，または /usr/local/bin/gs を gs-noX11 へシンボリックリンクの張り直しを行う必要があります。
 
-TeX Forum: [1291](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1291#p7302), [1439](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1439#p8051), [1449](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1449#p8097)
+TeX Forum: [1291](https://okumuralab.org/tex/mod/forum/discuss.php?d=1291#p7302), [1439](https://okumuralab.org/tex/mod/forum/discuss.php?d=1439#p8051), [1449](https://okumuralab.org/tex/mod/forum/discuss.php?d=1449#p8097)
 
 ### 出力 PDF のプレビュー画面がぼやけて見える {#y17d23d7}
 
@@ -142,7 +142,7 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 環境設定 → 詳細 → pTeX 拡張機能 → otf パッケージ対応 が意図せずONになっている可能性が高いです。これをOFFにしてください。特に，XeLaTeX など非 pTeX エンジンを使用している際は必ずOFFにする必要があります。詳細は「[環境設定 → 詳細 → pTeX 拡張対応 → otf パッケージ対応 とは何？](https://texwiki.texjp.org/?TeXShop%20FAQ#re61bdc6)」の項目を参照してください。
 
-- TeX Forum: [1977](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1977#p11591)
+- TeX Forum: [1977](https://okumuralab.org/tex/mod/forum/discuss.php?d=1977#p11591)
 
 ### コマンド補完のときのプレースホルダ文字 • が \UTF{2022} と入力されてしまう {#f7d84cff}
 
@@ -373,7 +373,7 @@ TeXShop メニューの
 
 TeXShop の環境設定ウィンドウは，多量の設定項目によってウィンドウが煩雑になることを防ぐため，GUI から設定可能な項目の数はあえて抑えてあります。その代わり，TeXShop には，コマンドラインのみから設定できる隠し設定項目がいくつもあります。
 
-[TeXShop Simulator](http://island.geocities.jp/loveinequality/misc/TeXShopSimulator/index.ja.html) を利用することで，それらの隠し設定を変更するコマンドを生成することができます。
+[TeXShop Simulator](https://doratex.github.io/misc-files/TeXShopSimulator/index.ja.html) を利用することで，それらの隠し設定を変更するコマンドを生成することができます。
 
 ### TeXShop Ver. 3.37 でアプリアイコンが丸いのに変わったのはなぜ？ {#w4c35dcc}
 
@@ -454,11 +454,11 @@ Unicodeでは，1つの文字に対して複数の表現方法が存在する場
 
 - 資料：[Development of TeXShop - The Past and the Future (TUG 2013)](http://www.slideshare.net/doraTeX/development-of-texshop-the-past-and-the)
 
-ただし，upTeX の側で同様の対処を施すよう改修([r38704](http://www.tug.org/svn/texlive?view=revision&revision=38704))が行われた結果，[upTeX](/upTeX,upLaTeX/) については今後はこの対処は不要になるものと思われます。([Forum 1701](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1701#p9932))
+ただし，upTeX の側で同様の対処を施すよう改修([r38704](http://www.tug.org/svn/texlive?view=revision&revision=38704))が行われた結果，[upTeX](/upTeX,upLaTeX/) については今後はこの対処は不要になるものと思われます。([Forum 1701](https://okumuralab.org/tex/mod/forum/discuss.php?d=1701#p9932))
 
-### タブインターフェースはないの？→ OSを Sierra にする，または統合ウィンドウを利用する {#b261aaa2}
+### タブインターフェースはないの？→ OSを Sierra 以降にする，または統合ウィンドウを利用する {#b261aaa2}
 
-macOS Sierra を用いている場合，ソースウィンドウとプレビューウィンドウのそれぞれで
+macOS Sierra 以降を用いている場合，ソースウィンドウとプレビューウィンドウのそれぞれで
 
 ```
  ウインドウ→すべてのウインドウを結合
@@ -544,7 +544,7 @@ Command + 2 でタグ行を挿入できます。
 
 ### cocoAspell の利用 {#s065005c}
 
-\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。cocoAspell は MacTeX-2017 にも収録されています。
+\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。cocoAspell は MacTeX にも収録されています。
 
 インストール手順は以下の通り：
 
