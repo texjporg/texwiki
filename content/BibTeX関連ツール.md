@@ -24,8 +24,8 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [BibDesk](https://bibdesk.sourceforge.io/)  | macOS |  BibTeXファイル編集ソフト．検索機能やBibTeXエントリとPDFを関連づける機能も持っているので，簡易的な論文データベースを構築できます  |
 | [KBibTeX](https://userbase.kde.org/KBibTeX) |  KDE  | KDE 用の BibTeX エディタ． |
 | [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) |   | .bib ファイルの管理ソフト．[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
-| [Tellico](http://tellico-project.org/)  | KDE, Qt, libxml2, libxslt1 |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
-| [Xfbib](http://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ． |
+| [Tellico](http://tellico-project.org/)  | KDE Frameworks 5, Qt5, libxml2, libxslt |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
+| [Xfbib](https://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ． |
 | [Pybliographer](https://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
 | [Mendeley](https://www.mendeley.com/)  | Windows, macOS, Linux | 文献管理ソフト |
 | [QRef](http://hp.vector.co.jp/authors/VA011272/) | Windows, macOS | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://hp.vector.co.jp/authors/VA011272/html/latex.htm) |
@@ -35,7 +35,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 | bibtex.el  |  emacs  |  文献の効率的入力を支援 |
-| [reftex.el](http://www.gnu.org/software/auctex/reftex.html)  |  emacs  |  LaTeX文書とbibファイルの連携機能を提供 |
+| [reftex.el](https://www.gnu.org/software/auctex/reftex.html)  |  emacs  |  LaTeX文書とbibファイルの連携機能を提供 |
 | [Ebib](http://joostkremers.github.io/ebib/) | emacs | emacs用のBibTeXデータベースマネージャ．複数のbibファイルを同時に操作できる． |
 |  bibfind  | perl | bibファイルの中を検索  |
 |  bibindex  | UNIX | bibファイルをbixファイルに変換．bixファイルの中を検索  |
