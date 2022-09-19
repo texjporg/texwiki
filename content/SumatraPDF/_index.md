@@ -20,11 +20,19 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ***
 
+### 不具合 {#v813d27a}
+
+#### SumatraPDF 3.4.6 (2022-06-08) で SyncTeX のエラー表示 → SumatraPDF 3.3.3 (2021-07-20) に戻す {#o17d1f9c}
+
+- [https://twitter.com/arai_amide/status/1564784523216568320](https://twitter.com/arai_amide/status/1564784523216568320)
+- [zipped synctex · Discussion #2640 · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/discussions/2640)
+- [zipped synctex fails in 3.4.x · Issue #2642 · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/issues/2642)
+
 ### インストール {#r04b7fad}
 
-[Download Sumatra PDF - a free reader](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします．
+[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします．
 64-bit Windows であれば 64-bit builds の Installer をダウンロードします．
-後はダブルクリックし指示に従えばインストールが完了します．
+後はダブルクリックして指示に従えばインストールが完了します．
 
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
 
