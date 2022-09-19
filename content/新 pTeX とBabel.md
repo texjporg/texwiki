@@ -20,7 +20,7 @@ pukiwiki: "新 pTeX とBabel"
 
 #### Microsoft Windows {#q1adb5c8}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には TeX Live 所収の ハイフネーションファイルが同梱されています。
+[TeX Live](</TeX Live/>) には TeX Live 所収の ハイフネーションファイルが同梱されています。
 8ビットコード対応済み
 ([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
