@@ -74,7 +74,7 @@ $ tar xvf install-tl-unx.tar.gz
 展開したインストーラのディレクトリに移動します．
 
 ```
-$ cd install-tl*
+$ cd install-tl-2*
 ```
 
 root 権限でインストーラを実行します．
