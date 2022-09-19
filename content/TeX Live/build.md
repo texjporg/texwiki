@@ -13,16 +13,21 @@ pukiwiki: "TeX Live/build"
 - [TeX Live build procedure](http://www.tug.org/texlive/build.html)
 - [The tlbuild Archives](http://tug.org/pipermail/tlbuild/)
 
-#### Windows {#mc7cf9a9}
+### Windows {#mc7cf9a9}
+
+#### x86_64-pc-mingw64 {#w2cf51ec}
 
 - [MSYS2#TeX Live](/MSYS2/#texlive)
+
+#### i686-pc-mingw32 {#o7f51595}
+
 - [MinGW#TeX Live](/MinGW/#texlive)
 
-#### macOS {#m1f2034d}
+### macOS {#m1f2034d}
 
-- [TexLive installation from sources, on Yosemite &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources/)
+- [TexLive installation from sources &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources)
 
-#### Linux {#ue7a2b2a}
+### Linux {#ue7a2b2a}
 
 - Momonga Linux
     - [TeX Live 2014 - その 1](http://lugia.hatenablog.com/entry/2014/06/22/195105)
@@ -31,4 +36,4 @@ pukiwiki: "TeX Live/build"
 - Beyond Linux From Scratch
     - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
     - [http://lfsbookja.osdn.jp/BLFS/svn-ja/pst/texlive.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/pst/texlive.html)
-    - [BLFS での TeXLive ビルド](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=609)
+    - [BLFS での TeXLive ビルド](https://okumuralab.org/tex/mod/forum/discuss.php?d=609)
