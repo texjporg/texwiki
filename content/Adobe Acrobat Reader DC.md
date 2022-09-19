@@ -15,8 +15,7 @@ Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてし
 
 Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
-- [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
-- [エンタープライズ管理ガイド - アップデートの管理と環境設定（Acrobat DC）](https://helpx.adobe.com/jp/acrobat/kb/cq05121335.html)
+- [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 
 ***
 
@@ -63,8 +62,8 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 - Adobe Acrobat Reader DC
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2100720099/AcroRdrDCx642100720099_ja_JP.exe)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200220191/AcroRdrDCx642200220191_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200220191/AcroRdrDCx642200220191_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_ja_JP.exe)
 - Adobe Acrobat Reader DC Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
     - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
@@ -111,8 +110,8 @@ sudo zypper install wine
 
 ```
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2100720099/AcroRdrDC2100720099_ja_JP.exe
-wine AcroRdrDC2100720099_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_ja_JP.exe
+wine AcroRdrDC2200220191_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader DC (32-bit) を起動して file.pdf を表示するには
