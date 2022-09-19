@@ -7,14 +7,14 @@ pukiwiki: "REVTeX"
 
 # REVTeX
 
-## [REVTeX](http://journals.aps.org/revtex/) {#cfdc01cb}
+## [REVTeX](https://journals.aps.org/revtex) {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
 TeX Live や 角藤さんの W32TeX
 などにはインストール済みですので，改めてインストールする必要はありません。
 使い方をもっと詳しくすべきですね。
 
-- [REVTeX Home Page](http://journals.aps.org/revtex/)
+- [REVTeX Home Page](https://journals.aps.org/revtex)
 
 ### リリース情報 {#i3bdc15f}
 
@@ -22,16 +22,16 @@ TeX Live や 角藤さんの W32TeX
 
 ### インストール {#jaaef53a}
 
-TeX Live, W32TeX には既にインストールされています．<br>
+TeX Live, W32TeX には既にインストールされています．
 
 参考
 
+- [UbuntuにLatex+Revtexをインストール](http://y-m-sakurai800.hatenadiary.jp/entry/2015/09/21/172017)
 - [latex: revtex4-1 スタイルのインストール (MacOS X)](http://qiita.com/ryokbys/items/206e5a9bdfa5f174edb9)
-- [VineLinux6にrevtex4-1を入れる](http://m.ils.uec.ac.jp/memo/)
 
 ### AMS-LaTeX と natbib のインストール {#f1d3fb76}
 
-TeX Live, W32TeX には既にインストールされています．<br>
+TeX Live, W32TeX には既にインストールされています．
 
 REVTeX の使用には次のパッケージも必要です。
 
