@@ -158,18 +158,18 @@ ISO イメージが作成された当時に未解決であったバグや不具�
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
 - [TeX Live インストールがウイルスバスターに阻まれる件](https://twitter.com/aminophen/status/1143491330116476928)
-- [TeX Live 2019 インストール失敗](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2659)
-- [Texliveのインストールに失敗する](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387)
-    （[Re: Texliveのインストールに失敗する#p14036](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14036),
-    [Re: Texliveのインストールに失敗する#p14035](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2387#p14035)）
+- [TeX Live 2019 インストール失敗](https://okumuralab.org/tex/mod/forum/discuss.php?d=2659)
+- [Texliveのインストールに失敗する](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387)
+    （[Re: Texliveのインストールに失敗する#p14036](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387#p14036),
+    [Re: Texliveのインストールに失敗する#p14035](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387#p14035)）
 
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
-- [「セキュリティソフト」がインストールの障害になっている例](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1226)
+- [「セキュリティソフト」がインストールの障害になっている例](https://okumuralab.org/tex/mod/forum/discuss.php?d=1226)
 
 以下も参考に．
 
-- [windowsにtexliveをインストール出来ません](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1126)
-- [インストーラーの初期化に失敗しました。](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1124)
+- [windowsにtexliveをインストール出来ません](https://okumuralab.org/tex/mod/forum/discuss.php?d=1126)
+- [インストーラーの初期化に失敗しました。](https://okumuralab.org/tex/mod/forum/discuss.php?d=1124)
 
 MinGWが悪さをする場合もあるようです．
 
@@ -242,12 +242,49 @@ tlmgr update --self --all
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
 
+- アップデートが失敗した場合は以下の例のように再度アップデートできる
+
+    ```
+    tlmgr update --reinstall-forcibly-removed --all --repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
+    ```
+
 パッケージは
 
 - [tlmgr](/tlmgr/) (コマンドライン)
 - [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) (GUI)
 
 で管理できます．
+
+### プロキシ認証が必要な場合 {#a1f81a23}
+
+- プロキシ認証がうまくいかなくてアップデートできない場合、
+    あるいは、アップデートに時間がかかりすぎると感じたら、
+    環境変数でプロキシ設定を試すと良いかも。
+
+    ```
+    setx http_proxy http://USER:PASSWORD@example.com:8080
+    setx https_proxy http://USER:PASSWORD@example.com:8080
+    ```
+
+- 上記でダメなら--no-persistent-downloads のオプションが効果あるかもしれません。
+
+    ```
+    tlmgr update --self --all --no-persistent-downloads
+    ```
+
+- 環境変数でダウンローダー指定する手も
+
+    ```
+    setx TEXLIVE_DOWNLOADER wget
+    ```
+
+    C:\texlive\2022\tlpkg\installer\wget\\.wgetrc のファイルに以下のような内容で保存しておく。
+
+    ```
+    http_proxy=http://USER:PASSWORD@example.com:8080
+    ftp_proxy=http://USER:PASSWORD@example.com:8080
+    use_proxy = on
+    ```
 
 <!-- * アンインストール [#od7715ce] -->
 <!--  -->
