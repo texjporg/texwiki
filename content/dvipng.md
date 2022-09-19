@@ -21,7 +21,7 @@ Version 1.9 からサブフォントに対応しているので，サブフォ�
 
 ### 使い方 {#ic72a209}
 
-dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mudraw または [Poppler](/Poppler/) の pdftocairo を使用する方法があります．[TeX2img](/TeX2img/) (Windows/Mac) も直接 PNG を出力できます．
+dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF](/MuPDF/) の mutool または [Poppler](/Poppler/) の pdftocairo を使用する方法があります．[TeX2img](/TeX2img/) (Windows/Mac) も直接 PNG を出力できます．
 
 #### DVI -> dvipng -> PNG {#wff0573c}
 
@@ -33,13 +33,13 @@ DVI ファイルを PNG ファイルに変換する場合は
 $ dvipng hoge.dvi
 ```
 
-#### DVI -> PDF -> MuPDF (mudraw) -> PNG {#vf3c0c13}
+#### DVI -> PDF -> MuPDF (mutool) -> PNG {#vf3c0c13}
 
-(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mudraw を使えば簡単に PNG ファイルに変換できます．
+(e-)(u)pTeX で日本語を使用したい場合は DVI ファイルを PDF ファイルに変換して [MuPDF](/MuPDF/) の mutool を使えば簡単に PNG ファイルに変換できます．
 PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-$ mudraw -o hoge.png hoge.pdf
+$ mutool draw -o hoge.png hoge.pdf
 ```
 
 #### DVI -> PDF -> Poppler (pdftocairo) -> PNG {#a65b7c7c}
