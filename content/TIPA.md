@@ -135,5 +135,4 @@ updmap --enable Map tipa.map
 - [コンピューターの部屋 TIPA](https://web.archive.org/web/20131011023815/http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
     @ 東京大学大学院 人文社会系研究科 韓国朝鮮文化研究専攻）
 
-- [LaTeX と TIPA を用いて音声科学／音声学する](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)［[Internet Archive](http://www.archive.org/)
-    によるウェブアーカイブ］（藤野さん）
+- [LaTeX と TIPA を用いて音声科学／音声学する \[Wayback Machine\]](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)（藤野さん）
