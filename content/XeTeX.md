@@ -118,9 +118,9 @@ XeLaTeX では [xeCJK/ZXjatype](/xeCJK/) を使って日本語文書の組版が
 TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．
 
 - [W32TeX - 漢字入出力対応状況](https://texwiki.texjp.org/?W32TeX#qc9f2e7d)
-- [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
-- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
-- [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
+- [Windowsのコマンドプロンプト上でUnicode文字を扱う](https://okumuralab.org/tex/mod/forum/discuss.php?d=397)
+- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](https://okumuralab.org/tex/mod/forum/discuss.php?d=1158)
+- [tty input in (e)upTeX on Windows](https://okumuralab.org/tex/mod/forum/discuss.php?d=1202)
 - \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
 - \[[texlive\] Revision 32314](http://www.tug.org/svn/texlive?view=revision&revision=32314)
 - \[[texlive\] Revision 32700](http://www.tug.org/svn/texlive?view=revision&revision=32700)
@@ -131,16 +131,16 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 
 - [XeTeX - Unicode-based TeX / Bugs](https://sourceforge.net/p/xetex/bugs/)
 
-### XeTeX 0.99998 以前のバージョンで \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある {#ne138062}
-
-XeTeX 0.99995 以降を使用している場合は \XeTeXgenerateactualtext=1 を記述すれば OK です．
-
-- [XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1325)
-- [Source Han Sans and XeTeX](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1352)
-
-また，[XeTeX mailing list](http://tug.org/pipermail/xetex/2017-June/027147.html) に出ているパッチで回避できるようです。([r46025](http://www.tug.org/svn/texlive?view=revision&revision=46025))
-
-この問題は XeTeX 0.99999 で修正されました。XeTeX 0.99999 は TeX Live 2018 または W32TeX \[2018/02/03\] に収録されています。
+<!-- **XeTeX 0.99998 以前のバージョンで \setmainfont{ipaexm.ttf} や \setmainfont{SourceHanSansJP-Normal.otf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される場合がある [#ne138062] -->
+<!--  -->
+<!-- 0.99995 以降を使用している場合は \XeTeXgenerateactualtext=1 を記述すれば OK です． -->
+<!--  -->
+<!-- -[[XeLaTeX で \setmainfont{ipaexm.ttf} で 見(U+898B) を処理すると ⾒(U+2F92) で出力される:https://okumuralab.org/tex/mod/forum/discuss.php?d=1325]] -->
+<!-- -[[Source Han Sans and XeTeX:https://okumuralab.org/tex/mod/forum/discuss.php?d=1352]] -->
+<!--  -->
+<!-- また，[[XeTeX mailing list:http://tug.org/pipermail/xetex/2017-June/027147.html]] に出ているパッチで回避できるようです。([[r46025:http://www.tug.org/svn/texlive?view=revision&revision=46025]]) -->
+<!--  -->
+<!-- この問題は XeTeX 0.99999 で修正されました。XeTeX 0.99999 は TeX Live 2018 または W32TeX [2018/02/03] に収録されています。 -->
 
 ## インストール {#p3eca5bb}
 
@@ -764,7 +764,7 @@ Hello, \TeX !
 - [XeTeX on Web](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130225214304767), [XeTeX on Web（続き）](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/yn_geeklog/article.php/20130226144129711)
 - [「はじめてのLaTeX」サポート: MiKTeXでXeTeXで日本語を](http://supportdoc.net/support-latex/xetex.html)
 - [インド学仏教学における UTF-8 による TeX 文書作成 (4)](http://skalldan.wordpress.com/2011/08/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-utf-8-%E3%81%AB%E3%82%88%E3%82%8B-tex-%E6%96%87%E6%9B%B8%E4%BD%9C%E6%88%90-4/)
-- [世界の言語と文字](http://www2.tba.t-com.ne.jp/ing/language.html)
+- [世界の言語と文字](https://web.archive.org/web/20130501000828/http://www2.tba.t-com.ne.jp/ing/language.html)
 - [XeLaTeX &laquo; A blog about LaTeX, Linux and FreeBSD](http://alexkrispin.wordpress.com/category/latex/xelatex/) (Alex Krispin さん)
 - [XeLaTeXでレポートかきたい。](http://pushl.hatenablog.com/entry/2012/05/27/000233)
 - [Imported from http://ustunozgur.blogspot.com - Filed under 'XeLaTeX'](http://import-chki.posterous.com/tag/xelatex)
@@ -772,7 +772,7 @@ Hello, \TeX !
 - [250びぼーろく;xelatex を使う](http://phys-diary.blogspot.jp/2014/07/250xelatex.html)
 - [人工知能基礎論](http://cl.naist.jp/~shimbo/courses.ja.html)
 - [Arch Linux: xelatex で UTF-8 日本語ソースの .tex → .pdf](http://usagi.hatenablog.jp/entry/2012/01/21/052328)
-- [XeLaTeXでLinux Libertineのイタリックが太すぎる件](https://galaxy.astro.isas.jaxa.jp/~yuasa/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
+- [XeLaTeXでLinux Libertineのイタリックが太すぎる件](http://ytkyk.info/blog/2012/05/17/xelatex%E3%81%A7linux-libertine%E3%81%AE%E3%82%A4%E3%82%BF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%8C%E5%A4%AA%E3%81%99%E3%81%8E%E3%82%8B%E4%BB%B6/)
 - [Jonathan Kew - Interview - TeX Users Group](http://www.tug.org/interviews/kew.html)
 
 ### ChangeLog {#w3545bdb}
