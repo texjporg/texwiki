@@ -82,7 +82,7 @@ $ sudo port install hunspell hunspell-dict-en_GB hunspell-dict-en_US
 
 ### Linux {#f74de4cd}
 
-#### Debian/Ubuntu {#n148086c}
+#### Linux Mint/Debian/Ubuntu {#n148086c}
 
 Hunspell本体と辞書をインストールします。
 
