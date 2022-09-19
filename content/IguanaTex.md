@@ -14,7 +14,8 @@ pLaTeX にも対応しているので日本語も使用できます。
 
 ### 公式サイト {#n7a418b3}
 
-- [IguanaTex - A Free Latex Add-In for PowerPoint](http://www.jonathanleroux.org/software/iguanatex/)
+- [IguanaTex - A Free Latex Add-In for PowerPoint](http://www.jonathanleroux.org/software/iguanatex/)（Windows 版）
+- [GitHub - ray851107/IguanaTexMac: IguanaTex for mac](https://github.com/ray851107/IguanaTexMac)（Mac 版）
 
 ### 解説 {#cff23727}
 
@@ -34,6 +35,7 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 
 ### 関連リンク {#pc5b4e12}
 
+- [【フォント】IguanaTexでPowerPointの数式フォントをまともにする](https://meltingrabbit.com/blog/article/2018061801/)
 - [IguanaTeX で日本語が通るようになった！](http://margaret-sdpara.blogspot.jp/2015/07/iguanatex.html)
 - [【 IguanaTeX 日本語対応版 】 PowerPoint で TeX な数式を。そして、日本語も。](http://karat5i.blogspot.jp/2015/04/iguanatex-powerpoint-tex.html)
 - [Iguana TeX で日本語を通す](http://margaret-sdpara.blogspot.jp/2014/02/iguana-tex.html)
