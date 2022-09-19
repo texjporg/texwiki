@@ -27,7 +27,6 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
     - [VimでMarkdown, ブラウザでプレビュー](http://qiita.com/us10096698/items/1ac05c5c9543d2f79fa3)
     - [Vim で GitHub Flavored Markdown をプレビューする](http://superbrothers.hatenablog.com/entry/2013/09/28/123546)
 - [Visual Studio Code](</Visual Studio Code/>)
-- [Atom](/Atom/)
 - [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)
 - [StackEdit](https://stackedit.io/)
     - [https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)
@@ -53,11 +52,6 @@ $ pandoc input.md -o output.pdf --latex-engine=lualatex -V documentclass=ltjarti
 ### Visual Studio Code による執筆環境 {#v6c4a934}
 
 Visual Studio Code は標準で Markdown 文書のリアルタイム・プレビュー機能を備えています。
-
-### Atom による執筆環境 {#r4f987bf}
-
-Atom は標準で Markdown 文書のリアルタイム・プレビュー機能を備えています。
-[Atom](/Atom/) -- Markdown　環境の整備の項目を参照してください。
 
 ### Markdown 記法 {#p66867c9}
 
