@@ -17,25 +17,11 @@ pukiwiki: "Ghostscript/macOS"
 
 ### 原ノ味フォントの設定 {#x59ee93b}
 
-- [https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2795&parent=16389)
+- [https://okumuralab.org/tex/mod/forum/discuss.php?d=2795&parent=16389](https://okumuralab.org/tex/mod/forum/discuss.php?d=2795&parent=16389)
 
 ```
 $ sudo cjk-gs-integrate --link-texmf --force
 ```
-
-### macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan に関する注意 {#b50634ac}
-
-現在 <span style="color:#FF2800;"><strong>macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan 付属のヒラギノフォントを Ghostscript で埋め込むことはできません。</strong></span>
-これは macOS 10.15 Catalina / macOS 10.14 Mojave / macOS 10.13 High Sierra / macOS 10.12 Sierra / OS X 10.11 El Capitan では，ヒラギノフォントの形式が変更されてしまったためです。
-
-- [Ghostscript の OpenType Collection 対応問題 - TeX界の El Capitan 迎撃戦記](http://doratex.hatenablog.jp/entry/20151008/1444310306#33)
-- [Ghostscript は El Capitan のヒラギノを扱えないようです。- マスクメロン](https://web.archive.org/web/20180521112227/https://www.muskmelon.jp/?p=1173)（ここには旧 OS から OTF 形式のヒラギノフォントを取り出して新 OS で利用するという対処法が記されていますが，収録 OS からフォントファイルを切り離して使用するというのはライセンス的には怪しいです。）
-- [Ghostscript 9.18 も El Capitan のヒラギノを扱えないようです。- マスクメロン](https://web.archive.org/web/20180521112228/https://www.muskmelon.jp/?p=1177)
-
-なお，次のリンク先には macOS Sierra / OS X El Capitan に付属しているヒラギノなどの OpenType Collection を [FontForge](http://fontforge.github.io/ja/) や [AFDKO](https://www.adobe.com/devnet/opentype/afdko.html) で分解するという対処法も記されていますが，これはフォントの改変とみなされる可能性もあり，ライセンス的には怪しいです。
-
-- [OTC から OTF を抽出 &#8211; マスクメロン](https://web.archive.org/web/20180521112655/https://www.muskmelon.jp/?p=1194)
-- [OTC から OTF を抽出（自動化） &#8211; マスクメロン](https://web.archive.org/web/20180521112237/https://www.muskmelon.jp/?p=1204)
 
 ### 配布先 {#see6fdd7}
 
@@ -44,112 +30,21 @@ $ sudo cjk-gs-integrate --link-texmf --force
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
 - [https://www.macports.org/ports.php?by=name&substr=ghostscript](https://www.macports.org/ports.php?by=name&substr=ghostscript)
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
-    - [https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript-fonts-hiragino/Portfile)
-        - [El Capitan での MacPorts ghostscript-fonts-hiragino](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2016/node4.html)
-        - [https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority](https://trac.macports.org/query?status=accepted&status=assigned&status=closed&status=new&status=reopened&port=~ghostscript-fonts-hiragino&col=id&col=summary&col=status&col=port&col=owner&col=type&col=priority&col=time&col=changetime&order=priority)
-
-### ヒラギノフォントを利用する設定方法 (OS X 10.10 Yosemite までの環境) {#qed7d951}
-
-以下ではヒラギノフォントを利用する設定方法が説明されていますが，これは OS X 10.10 Yosemite までの環境を前提としています。
-
-和文については，cidfmap (/usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap) に記述します。<br>
-ヒラギノを利用するなら
-
-```
-/Ryumin-Light      /HiraMinProN-W3   ;
-/GothicBBB-Medium  /HiraKakuProN-W3  ;
-/HeiseiMin-W3      /Ryumin-Light     ;
-/HeiseiKakuGo-W5   /GothicBBB-Medium ;
-```
-
-あとは /usr/local/share/ghostscript/\`gs --version\`/Resource/CIDFont/ の
-中から /{,System/}Library/Fonts/ の中のヒラギノに “HiraMinProN-W3” のような
-名前でシンボリックリンクを作っておきます。<br>
-例えば OS X Yosemite 以前なら
-
-```
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W3.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ明朝 ProN W6.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinProN-W6
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W3.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuProN-W3
-$ sudo ln -s /System/Library/Fonts/"ヒラギノ角ゴ ProN W6.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuProN-W6
-$ sudo ln -s /System/Library/Fonts/华文黑体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STHeiti.ttf
-$ sudo ln -s /System/Library/Fonts/华文细黑.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STXihei.ttf
-$ sudo ln -s /System/Library/Fonts/"儷黑 Pro.ttf" \
-> /usr/local/share/ghostscript/fonts/TrueType/LiHeiPro.ttf
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ StdN W8.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuStdN-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ ProN W4.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMaruProN-W4
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W3.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ明朝 Pro W6.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMinPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W3.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuPro-W3
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Pro W6.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuPro-W6
-$ sudo ln -s /Library/Fonts/"ヒラギノ角ゴ Std W8.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraKakuStd-W8
-$ sudo ln -s /Library/Fonts/"ヒラギノ丸ゴ Pro W4.otf" \
-> /usr/local/share/ghostscript/`gs --version`/Resource/CIDFont/HiraMaruPro-W4
-$ sudo ln -s /Library/Fonts/华文宋体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STSong.ttf
-$ sudo ln -s /Library/Fonts/华文楷体.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STKaiti.ttf
-$ sudo ln -s /Library/Fonts/华文仿宋.ttf \
-> /usr/local/share/ghostscript/fonts/TrueType/STFangsong.ttf
-$ sudo ln -s /Library/Fonts/"儷宋 Pro.ttf" \
-> /usr/local/share/ghostscript/fonts/TrueType/LiSongPro.ttf
-```
-
-さらに，/usr/local/share/ghostscript/\`gs --version\`/Resource/Font/ の中に
-例えば “HiraMinProN-W3-H” という名前で次のようなファイルを作っておきます：
-
-```
-
-```
-
-***
-
-```
-/HiraMinProN-W3-H
-/H /CMap findresource
-[/HiraMinProN-W3 /CIDFont findresource]
-composefont pop
-```
-
-***
-
-以上で PostScript ファイルの表示ができるようになりました。
-ps2pdf もうまく行えます。
-
-$TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
-シンボリックリンクを作っておくと良いでしょう
-（こちらは拡張子 “.otf”，“.ttf”，“.ttc” を付けたままにしておきます）。
-
-フォントパスが規定外のところにあると ps2pdf がエラーになるようです。<br>
-これは -dSAFER オプションのためで，解決法としては規定の場所にシンボリックリンクを張って使うか，あるいは export GS_FONTPATH=... のようにフォントのある場所を指定しておくことが考えられます。<br>
 
 ### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#g10fce9f}
 
-#### <a id="cidfmap-osx">For OS X Yosemite</a> {#eb079434}
+#### <a id="cidfmap-osx"></a> {#eb079434}
 
 ***
 
 ```
 %!
 %%% aliases
-/Ryumin-Light                 /HiraMinProN-W3              ;
+/Ryumin-Light                 /HaranoAjiMincho-Regular     ;
 /Ryumin-Medium                /HiraMinProN-W3              ;
 /FutoMinA101-Bold             /HiraMinProN-W6              ;
 /MidashiMin-MA31              /HiraMinProN-W6              ;
-/GothicBBB-Medium             /HiraKakuProN-W3             ;
+/GothicBBB-Medium             /HaranoAjiGothic-Medium      ;
 /FutoGoB101-Bold              /HiraKakuProN-W6             ;
 /MidashiGo-MB31               /HiraKakuStdN-W8             ;
 /Jun101-Light                 /HiraMaruProN-W4             ;
