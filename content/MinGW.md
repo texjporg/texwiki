@@ -62,6 +62,20 @@ c:/mingw		/mingw
 
 ***
 
+<!-- ~/.bash_profile に以下の内容を記述します。 -->
+<!-- if [ -f ~/.bashrc ]; then . ~/.bashrc; fi -->
+
+<!-- ~/.bashrc に以下の内容を記述します。 -->
+<!-- alias ls='ls - -color=auto - -show-control-chars' -->
+<!-- alias cp='cp -i' -->
+<!-- alias rm='rm -i' -->
+
+<!-- /etc/profile の cd "$HOME" の後に source ~/.bashrc を追加します。 -->
+<!-- cd "$HOME" -->
+<!-- source ~/.bashrc -->
+
+<!-- $ source ~/.bashrc -->
+
 ## TeX Live <a id="texlive"></a> {#h63c1837}
 
 ### Building TeX Live {#p61b773f}
