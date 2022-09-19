@@ -31,7 +31,7 @@ Latin Modern は，Comupter Modern や [CM-Super](/cm-super/) に代わるフォ
 
 ## 使い方 {#q073bbcd}
 
-- [TeX/PackageFile/lmodern - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/PackageFile/lmodern)
+- [TeX/PackageFile/lmodern - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/PackageFile/lmodern)
 - [LaTeX で Latin Modern Mono Light を使う](http://blog.wgag.net/112.html)
 - [XeLaTeX：欧文フォントについての補足 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/xelatex1.html)
 
