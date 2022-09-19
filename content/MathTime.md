@@ -12,9 +12,10 @@ pukiwiki: "MathTime"
 ### MathTime Pro Fonts とは？ {#v8d5765f}
 
 MathTime
-（\mathit{MathT\kern-.05em{\i}me}）Pro Fonts は Times ベースの数式用フォントで，商品です。<br>
-[Personal TeX Inc.](http://www.pctex.com/)から MathTime Professional 2 Fonts (MTPro2 Complete) が販売されています。<br>
+（\mathit{MathT\kern-.05em{\i}me}）Pro Fonts は Times ベースの数式用フォントで，商品です。
+[Personal TeX Inc.](http://www.pctex.com/) から MathTime Professional 2 Fonts (MTPro2 Complete) が販売されています。
 
+- [mtpro2 - PCTeXWeb](http://www.pctex.com/mtpro2.html)
 - [MathTime Professional 2 fonts on TeX Live](http://cims.nyu.edu/~fennell/mtpro2/)
 
 ## MathTime フォント {#n653d321}
@@ -23,22 +24,19 @@ MathTime
 
 ### MathTime とは？ {#x7ad6244}
 
-MathTime
-（\mathit{MathT\kern-.05em{\i}me}）は Times ベースの数式用フォントで，商品です。<br>
-以前はY&amp;Y Inc.から MathTime がオンライン購入できました。<br>
+MathTime (\mathit{MathT\kern-.05em{\i}me}) は Times ベースの数式用フォントで，商品です。
+以前はY&amp;Y Inc.から MathTime がオンライン購入できました。
 
 \[2014-08-10追記\] Y&amp;Y TeX はオープンソースとなり Clerk Ma さんによって開発が続けられています (→ [YandYTeX (Y&amp;Y TeX) · GitHub](https://github.com/YandYTeX))。
 
-\[2005-09-15追記\] MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。MathTimeを販売していた Y&amp;Y Inc. は倒産しました（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。<br>
+\[2005-09-15追記\] MathTimeの後継MathTime Professional 2 Fontsが [http://www.pctex.com/](http://www.pctex.com/) から出ています。MathTimeを販売していた Y&amp;Y Inc. は倒産しました（→ [TUGのY&amp;Yサポートページ](http://www.tug.org/yandy/)）。
 
 \[2004-09-30追記\] Y&amp;Yのサイトはあるものの、実際に営業活動をしていないようです。
 以下にある他のベンダについても古い情報ですのでご注意ください。
 
 \[2003年追記\] ↓現在Y&amp;Yは持ち直しています。
-CTAN: macros/latex/contrib/psnfssx/mathtimepro は2003年3月に新版が出ています。
 
-\[2002-10-18 追記\] Y&amp;Y Inc.
-は技術者が退社してしまったようで，今後が心配です。
+\[2002-10-18 追記\] Y&amp;Y Inc. は技術者が退社してしまったようで，今後が心配です。
 
 Times ベースの数式フォントとしては，ほかに
 [MicroPress](http://www.micropress-inc.com/)
@@ -120,7 +118,7 @@ teTeX ベースのシステムでないなら，他の設定もしなければ�
 まずはスタイルファイルです。
 いずれかの ZIP ファイルを展開してできる psnfss ディレクトリに LaTeX2e
 用の材料が収められています（[CTAN](/CTAN/) の
-[macros/latex/contrib/psnfssx/mathtime/](https://mirror.ctan.org/macros/latex/contrib/psnfssx/mathtime/)
+macros/latex/contrib/psnfssx/mathtime/
 にも同じものが入っています）。
 ここで次のようにします。
 
@@ -274,38 +272,39 @@ rmtmuh     rmtmuh.pfb     0      1
 ```
 
 T1 エンコーディングの場合，Computer Modern フォントを使うとそのままではビットマップになります。<br>
-[Latin Modern](</Latin Modern/>) フォント・パッケージを入れるか，[cm-super](/cm-super/) を入れる，ae パッケージを使う等の手が必要です。<br>
+[Latin Modern](</Latin Modern/>) フォント・パッケージを入れるか，[cm-super](/cm-super/) を入れる，ae パッケージを使う等の手が必要です。
 
 オプションの意味などは，mathtime.dtx を LaTeX
 で処理して得られるドキュメントに詳しく書かれています。
 
 ### 和文ゴシックが出ない？ {#f8b01a16}
 
-このままでは jarticle 等で \section などの和文がゴシック体になりません。<br>
-jsarticle 等では大丈夫です。<br>
+このままでは jarticle 等で \section などの和文がゴシック体になりません。
+jsarticle 等では大丈夫です。
 
 #### 理由 {#ea0721c5}
 
 まず，和文のゴシック体は，明朝体の太字（太明朝体）とはまったく違うものです。
 
 jsarticle 等では \section
-等のコマンドを「欧文はサンセリフ，和文はゴシック」と定義しています。<br>
-ところが，jarticle 等では「欧文も和文も太字」となっています。<br>
-つまり，欧文はローマン体の太字，和文は明朝体の太字になるはずです。<br>
+等のコマンドを「欧文はサンセリフ，和文はゴシック」と定義しています。
+ところが，jarticle 等では「欧文も和文も太字」となっています。
+つまり，欧文はローマン体の太字，和文は明朝体の太字になるはずです。
 
 しかし，pTeX では明朝体の太字を太明朝体ではなくゴシック体で代用しています。
 詳しく言えば，太字の太い方（bx）をゴシック体で代用し，太字の細い方（b）を標準の明朝体のままにしています。
 
 LaTeX の標準では太字は太い方（bx）を使うようになっているので，これで jarticle と jsarticle
-で同じ振舞いをするように見えます。<br>
-ところが，mathtime では Times を使う関係上，太字は細い方（b）を使うので，辻褄が合わなくなります。<br>
+で同じ振舞いをするように見えます。
+ところが，mathtime では Times を使う関係上，太字は細い方（b）を使うので，辻褄が合わなくなります。
 
 #### 辻褄を合わせる方法その1 {#n3487987}
 
-jarticle 等を fix する。<br>
-または jsarticle 等を使う。<br>
+jarticle 等を fix する。
+または jsarticle 等を使う。
+
 本文でゴシック体を使うには，明朝体の太字がゴシック体で代用されることを仮定せず，\gtfamily
-または \textgt{...}（または jsarticle 等なら \textsf{...} や \sffamily）を使う。<br>
+または \textgt{...}（または jsarticle 等なら \textsf{...} や \sffamily）を使う。
 
 #### 辻褄を合わせる方法その2 {#d089c836}
 
@@ -316,5 +315,5 @@ upTeX で細い太字（b）もゴシックで代用するようにする：
 \DeclareFontShape{JT2}{mc}{b}{n}{ssub*gt/m/n}{}
 ```
 
-これなら ujarticle 等もそのままで使えます。<br>
-明朝とゴシックの2書体の場合はこれで辻褄が合うでしょうが，多書体化を考えると，やはりまともな実装を最初からしたほうがいいように思います。<br>
+これなら ujarticle 等もそのままで使えます。
+明朝とゴシックの2書体の場合はこれで辻褄が合うでしょうが，多書体化を考えると，やはりまともな実装を最初からしたほうがいいように思います。
