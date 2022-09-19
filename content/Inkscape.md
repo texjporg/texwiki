@@ -206,6 +206,5 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 - [Inkscaper ～Inkscapeの使い方～](http://logo.dollsent.jp/)
 - [Wikipedia.ja:Inkscape](https://ja.wikipedia.org/wiki/Inkscape)
 - [Wikibooks.ja:Inkscape](https://ja.wikibooks.org/wiki/Inkscape)
-- MacWiki:Inkscape
 - [Inkscape - 窓の杜ライブラリ](http://www.forest.impress.co.jp/library/software/inkscape/)
 - [Beamerscape](https://github.com/jbohren/beamerscape)
