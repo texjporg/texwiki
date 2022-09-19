@@ -24,7 +24,7 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 - マージン・カーニング -- 特定の種類の文字を余白にいくらかはみ出させることで、テキストの端 (行頭や行末) をよりきれいに揃ったように見せることができます。マージン・カーニングなしでは、ある種の文字が端にきたとき、錯覚によりテキストの端ががたついているような印象を受けることがあります。マージン・カーニングはぶら下げ組み (hanging punctuation) と似たところがあります。適切な設定をした上でこれを適用することでテキスト・ブロックの見た目をかなり改善することができます。
 - フォント・エクスパンション -- これはわずかに横に伸縮させたフォントを利用することで単語間のスペースをより均一にするテクニックです。これはまたより良い位置でのライン・ブレイキングを行うことに使うこともできます。
 
-サポートされているフォントフォーマットは PostScript Type1　と TrueType で、PostScript 系の OpenType (.otf) は十分なサポートがありません。
+サポートされているフォントフォーマットは PostScript Type1 と TrueType で、PostScript 系の OpenType (.otf) は十分なサポートがありません。
 
 画像フォーマットは、PDF、PNG、JPEG、JBIG2 などをサポートします。
 
@@ -179,7 +179,6 @@ fontflags はフォントの特徴を記述したフラグです。上記の例�
 pdfLaTeX で日本語を扱うには CJK パッケージを使います。CJK パッケージについては
 
 - [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/)
-- [My Future Sight for Past: pdflatex](http://myfuturesightforpast.blogspot.jp/search/label/pdflatex)
 
 を参照してください。
 
