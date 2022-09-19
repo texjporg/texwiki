@@ -76,8 +76,6 @@ LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt
 - 汎用エディタ（TeX, LaTeX 用のパッケージが用意されているものがあります）
     - [Visual Studio Code](</Visual Studio Code/>)
         - [LaTeX](</Visual Studio Code/LaTeX/>)
-    - [Atom](/Atom/)
-        - [Atom/LaTeX](/Atom/LaTeX/)
     - [Emacs](/Emacs/)
         - [Org mode](</Emacs/Org mode/>)
         - [TeX mode](</Emacs/TeX mode/>)
