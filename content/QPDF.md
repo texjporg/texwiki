@@ -172,8 +172,6 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 
 ### Windows {#inst-windows}
 
-[W32TeX](/W32TeX/) には標準で含まれています．
-
 公式サイトから
 
 - mingw64 バイナリ
