@@ -11,7 +11,7 @@ pukiwiki: "mathabx"
 
 mathabx は [Anthony Phan](http://www-math.univ-poitiers.fr/~phan/) 氏により2002年4月30日に初めて公開された新しい数式用フォントで，Computer Modern および AMS fonts の上位互換を目指してデザインされています。
 
-- [http://www.ctan.org/pkg/mathabx](http://www.ctan.org/pkg/mathabx)
+- [https://ctan.org/pkg/mathabx](https://ctan.org/pkg/mathabx)
 
 名称は初期の配布が matha, mathb, mathx シリーズからなるものであったことに由来すると思われます。
 
