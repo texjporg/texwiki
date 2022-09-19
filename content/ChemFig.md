@@ -9,7 +9,7 @@ pukiwiki: "ChemFig"
 
 ## ChemFig {#e20bbb89}
 
-[chemfig](http://www.ctan.org/pkg/chemfig) は，[TikZ](/TikZ/) ベースの化学構造描画パッケージです．
+[chemfig](https://ctan.org/pkg/chemfig) は，[TikZ](/TikZ/) ベースの化学構造描画パッケージです．
 TeX Live, W32TeX に含まれています．
 
 - [chemfig の検索結果 - TeX Alchemist Online](http://doratex.hatenablog.jp/search?q=chemfig)
