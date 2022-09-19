@@ -92,16 +92,6 @@ ps2pdf
 
 > [![](/attach/LaTeXiT/LaTeXiT-program.png)](/attach/LaTeXiT/LaTeXiT-program.png)
 
-もし [Ghostscript.app - マスクメロン](http://www.muskmelon.jp/?page_id=75) を使用する場合は，上の Ghostscript (gs) と ps2pdf を
-
-Ghostscript (gs)
-: /Applications/Ghostscript.app/bin/gs
-
-ps2pdf
-: /Applications/Ghostscript.app/bin/ps2pdf
-
-に変更してください。
-
 [小川版 UpTeX.app](</Drag and Drop UpTeX/>) をお使いの場合は，以下のようにすれば良いでしょう。
 
 pdfLaTeX
@@ -126,7 +116,7 @@ pdfLaTeX
 - [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - LaTeXiT で Undefined control sequence. l.1 \documentclass とのエラーメッセージ ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
-- [LaTeXItで数式の一部に日本語](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=833)
+- [LaTeXItで数式の一部に日本語](https://okumuralab.org/tex/mod/forum/discuss.php?d=833)
 - [LaTeXit(xelatex)でテンプレート変更](http://blog.cocomoff.info/archives/2016/01/13/7642/)
 - LaTeXitが使えません。([forum:2236](https://okumuralab.org/tex/mod/forum/discuss.php?d=2236))
 
