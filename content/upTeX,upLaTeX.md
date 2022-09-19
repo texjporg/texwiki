@@ -66,6 +66,8 @@ uplatex -kanji=utf8 -no-guess-input-enc hoge
 
 として -kanji=utf8 -no-guess-input-enc オプションを指定してタイプセットまたは UTF-8 with BOM で保存すれば OK です．
 
+- [https://ja.osdn.net/projects/nkf/ticket/42653](https://ja.osdn.net/projects/nkf/ticket/42653)
+
 ### 不具合 {#p35560b1}
 
 #### upTeX 1.24 での全角英数・半角カナの \kcatcode のデフォルト値が 17(kana) ではなく 18(other_kchar) {#h94b455a}
@@ -235,19 +237,19 @@ jsarticle.cls では、uplatex オプションを追加してください。
 TeX Live 2014 以降はWindows版においてファイル名に日本語や他言語のUnicode文字が使用できます．
 
 - [W32TeX - 漢字入出力対応状況](https://texwiki.texjp.org/?W32TeX#qc9f2e7d)
-- [Windowsのコマンドプロンプト上でUnicode文字を扱う](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=397)
-- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1158)
-- [tty input in (e)upTeX on Windows](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1202)
+- [Windowsのコマンドプロンプト上でUnicode文字を扱う](https://okumuralab.org/tex/mod/forum/discuss.php?d=397)
+- [file names with multi-byte characters in (e)upTeX and XeTeX on Windows](https://okumuralab.org/tex/mod/forum/discuss.php?d=1158)
+- [tty input in (e)upTeX on Windows](https://okumuralab.org/tex/mod/forum/discuss.php?d=1202)
 - \[[texlive\] Revision 32308](http://www.tug.org/svn/texlive?view=revision&revision=32308)
 - \[[texlive\] Revision 32557](http://www.tug.org/svn/texlive?view=revision&revision=32557)
 
 texmf.cnf に command_line_encoding.dvipdfmx = utf8 を設定すると \includegraphics{表題.pdf} のように記述できます．
 
-- [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210)
+- [KANJI file name in special in dvi　(uptex)](https://okumuralab.org/tex/mod/forum/discuss.php?d=1210)
 
 texmf.cnf に command_line_encoding.dvips = utf8 を設定すると \includegraphics{表題.eps} のように記述できます．
 
-- [KANJI file name in special in dvi (II) (Windows)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1211))
+- [KANJI file name in special in dvi (II) (Windows)](https://okumuralab.org/tex/mod/forum/discuss.php?d=1211))
 
 Linux版においてはロケールがUTF-8系であればファイル名に日本語や他言語のUnicode文字が使用できます．
 
@@ -333,7 +335,7 @@ upTeX のデフォルトで、U+0080 以上の文字は、漢字, かな, CJK �
 upTeX のデフォルトでは、U+0080 以上の文字の大部分[^2]は欧文としては処理されませんが、\kcatcode を 15 に設定することで、欧文の 8-bit 文字列として扱うことが出来ます。
 欧文 LaTeX の inputenc パッケージを利用することで、UTF-8 で記述された文書が処理出来ます。
 pLaTeX の場合では、ギリシャ文字、キリル文字は必ず和文扱いされます[^3]が、upLaTeX の場合は、ギリシャ文字ブロック、キリル文字ブロックの \kcatcode を 15 に設定することで回避できます。
-[upLaTeXでの全角ギリシャ文字の取り扱い](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2275) もご参照ください。
+[upLaTeXでの全角ギリシャ文字の取り扱い](https://okumuralab.org/tex/mod/forum/discuss.php?d=2275) もご参照ください。
 ギリシャ文字とキリル文字のフォントのインストールは[新 pTeX とBabel](</新 pTeX とBabel/>)をご参照ください。
 欧文 LaTeX の babel パッケージも、欧文 LaTeX と同様に利用出来ます。
 以下は、入力例です。
@@ -449,5 +451,5 @@ upTeX 自身の機能としてアラビア文字など複雑な文字をレン�
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/ChangeLog?view=markup)
 
 [^1]: 内部 Unicode になっているのは、CJK の文字。欧文の処理は欧文 TeX, pTeX と同様、8-bit のままです。
-[^2]: upTeX-1.23以降は、欧文の一部のデフォルトが欧文となります。[TeXフォーラムの記事](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2374)を参考。
+[^2]: upTeX-1.23以降は、欧文の一部のデフォルトが欧文となります。[TeXフォーラムの記事](https://okumuralab.org/tex/mod/forum/discuss.php?d=2374)を参考。
 [^3]: プリプロセッサなどで入力を^^ab形式に変換すれば欧文扱いが可能です。
