@@ -29,18 +29,14 @@ Windows, Linux
 
 ### License {#bd454552}
 
-[GPLv2](https://cgit.kde.org/kile.git/tree/COPYING)
+[GPLv2](https://github.com/KDE/kile/blob/master/COPYING)
 
 ### リリース情報 {#qfb7e12c}
 
-[News](https://kile.sourceforge.io/news.php)
-
-2019-10-19 に KDE Frameworks 5 に対応した Kile 3.0 beta 3 がリリースされています。
+[https://github.com/KDE/kile/releases](https://github.com/KDE/kile/releases)
 
 ### ChangeLog {#k30d45b0}
 
-- [https://cgit.kde.org/kile.git/](https://cgit.kde.org/kile.git/)
-    - [https://cgit.kde.org/kile.git/log/](https://cgit.kde.org/kile.git/log/)
 - [https://github.com/KDE/kile](https://github.com/KDE/kile)
     - [https://github.com/KDE/kile/commits/master](https://github.com/KDE/kile/commits/master)
 
