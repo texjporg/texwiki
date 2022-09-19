@@ -37,7 +37,7 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 スライドに特化した他のパッケージのような高度な機能はありませんが，通常の jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
 
 ```
-\documentclass[slide,papersize]{jsarticle}
+\documentclass[dvipdfmx,slide,papersize]{jsarticle}
 \usepackage[dvipdfmx]{graphicx,color}
 \begin{document}
 
