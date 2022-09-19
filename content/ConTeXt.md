@@ -46,11 +46,10 @@ $ context --version
 ```
 
 ```
-resolvers       | trees | analyzing 'home:.texlive2018/texmf-config'
 mtx-context     | ConTeXt Process Management 1.02
 mtx-context     |
-mtx-context     | main context file: /usr/local/texlive/2018/texmf-dist/tex/context/base/mkiv/context.mkiv
-mtx-context     | current version: 2018.03.16 22:20
+mtx-context     | main context file: /usr/local/texlive/2019/texmf-dist/tex/context/base/mkiv/context.mkiv
+mtx-context     | current version: 2019.03.21 21:39
 ```
 
 上のようにバージョン情報が出ればOKです．
@@ -133,7 +132,7 @@ TeX Live の場合は初回実行時に fmt ファイルを作成するため，
 MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に使うことができます．
 このおかげで，あとは日本語組版ルールがきちんと実装されれば実用になると期待されます．
 
-まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（TeX Live 2015 および 2015/05/04 以降の W32TeX では不要）．
+まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](https://okumuralab.org/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（TeX Live 2015 および 2015/05/04 以降の W32TeX では不要）．
 
 - ConTeXt での日本語設定：[forum:1562](https://okumuralab.org/tex/mod/forum/discuss.php?d=1562)
 
