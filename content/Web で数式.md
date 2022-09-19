@@ -89,10 +89,6 @@ jsMath.js の mathchardef テーブル内に追加
 - [このサイトの数式](http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php)
 - [LaTeX数式のweb表示方法（奥村晴彦先生方式）](http://www.makisima.org/v3/2011/09/06/web-latex-okumura/)
 
-### Suim {#a6b583f5}
-
-- [Suim - Web-based Input Method for Mathematics](http://suim.heroku.com/)
-
 ### Google Closure Library {#q729594e}
 
 - [Google Closure Library](https://developers.google.com/closure/library/)
