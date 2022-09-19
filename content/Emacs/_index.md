@@ -41,6 +41,7 @@ GNU Emacs はフリーソフトウェアです．
 #### Windows {#k091604e}
 
 - [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/)
+    - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-27-x86_64-win-ime)
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
@@ -80,12 +81,12 @@ GNU Emacs はフリーソフトウェアです．
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
     - [EmacsWiki:LaTeXMathPreview](https://www.emacswiki.org/emacs/LaTeXMathPreview)
     - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
-    - [QA: YaTeXで数式のpreview](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=349)
+    - [QA: YaTeXで数式のpreview](https://okumuralab.org/tex/mod/forum/discuss.php?d=349)
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413)：(X)Emacs frontend to forward search with SumatraPDF
 - [RefTeX](https://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
 - [BibTeX](https://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
 - [latex_editor](https://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
-- [emacs, mozc, TeX 入力](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1319)
+- [emacs, mozc, TeX 入力](https://okumuralab.org/tex/mod/forum/discuss.php?d=1319)
 - [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
 - [emacs内でTeX文書の作成からpdf閲覧まで行う](https://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
 - [emacsでpdfファイルを閲覧する](http://d.hatena.ne.jp/daharu/20111126/1322272094)
@@ -335,11 +336,8 @@ Source editor:
 - [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
 - [Windows環境でEmacs+C/Migemoの設定に詰まったのでメモ](http://grugrut.hatenablog.jp/entry/2015/04/emacs-migemo-on-windows)
 - [Emacs 24のpackage管理機能を使う](http://keisanbutsuriya.hateblo.jp/entry/2015/01/29/182251)
-- [NTEmacs version 24 とパッケージマネージャ](http://skalldan.wordpress.com/2012/06/26/ntemacs-version-24-%E3%81%A8%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3/)
 - [emacs.exe と emacsclient.exe を自動的に使い分ける AutoHotkey のスクリプトを作成した (gnupack 向け)](http://blechmusik.hatenablog.jp/entry/20120721/1342805665)
 - [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
-- [NTEmacs で UTF-8 な環境構築を試行錯誤](http://skalldan.wordpress.com/2011/11/09/ntemacs-%E3%81%A7-utf-8-%E3%81%AA%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89%E3%82%92%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4/)
-- [Winodws 7 で Cygwin + NTEmacs 事始め](http://skalldan.wordpress.com/2011/11/04/winodws-7-%E3%81%A7-cygwin-ntemacs-%E4%BA%8B%E5%A7%8B%E3%82%81/)
 - [Emacs使いのミサワがWindowsで(NT)Emacs使うってそれどこ情報よー](http://d.hatena.ne.jp/sandai/20101015/p1)
 - [Emacs - SanRin舎](https://tmsanrinsha.net/post/2010/07/emacs-1/)
 - [Emacs 23.1登場](http://dev.ariel-networks.com/articles/emacs/part6/)
