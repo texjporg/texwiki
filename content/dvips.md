@@ -121,6 +121,17 @@ A4 にするには，ジョブオプションの設定でページサイズを�
 のように dvips オプションを指定します．
 図として EPS を挿入できます．
 
+% 以下，LaTeX入門/図表からの移転。
+
+(u)pLaTeX + [dvips](/dvips/) でタイプセットする場合には
+
+```
+\documentclass[dvips]{jsarticle}
+\usepackage[dvips]{graphicx}
+```
+
+と書くことで，画像取り込みの指示が dvips に正しく伝わります。
+
 #### しおりの文字化けを防ぐ {#v5d4fb65}
 
 LaTeX で作成した日本語文書を
