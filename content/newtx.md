@@ -10,7 +10,7 @@ pukiwiki: "newtx"
 ## newtx {#xd8a1457}
 
 newtx は TX フォントを改良した Times 系フォントです．
-TeX Live，W32TeX に標準で含まれています．
+TeX Live に標準で含まれています．
 
 注意：jsarticle 系クラス / jlreq クラス + newtxtext での \sffamily の注意点 ([forum:2763](https://okumuralab.org/tex/mod/forum/discuss.php?d=2763))
 
@@ -42,10 +42,6 @@ TeX Live，W32TeX に標準で含まれています．
 #### TeX Live {#v5e856b3}
 
 TeX Live には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．
-
-#### W32TeX {#h170776e}
-
-W32TeX には newtx, newtxtt, newpx, boondox, fontaxes パッケージが最初からインストールされています．
 
 ### 使い方 {#rcf88e0c}
 
@@ -129,17 +125,13 @@ TX フォントの作者
 TXフォントが出たころは、期待感がたいへん大きかったのですが、Ryu氏はその後TXやPXからまったく手を引いてしまい、彼のWebページからも削除された状態です。<br>
 バランスの悪いところは未修整のままです。<br>
 現在では、改良されたnewtx, newpxがあります。<br>
-newtx, newpx は TeX Live, W32TeX に標準でインストールされます。<br>
+newtx, newpx は TeX Live に標準でインストールされます。<br>
 
 ### インストール {#u8fe5614}
 
 #### TeX Live {#dd6c8b38}
 
 TeX Live には txfonts, pxfonts が含まれていますので，何もする必要はありません。
-
-#### W32TeX {#o79bd0d3}
-
-W32TeX にはすでに TX も PX も含まれています（txpx-pazofonts.tar.xz，t1fonts.tar.xz）ので，何もする必要はありません。<br>
 
 ### 使い方 {#w2da6d80}
 
