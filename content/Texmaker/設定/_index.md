@@ -23,9 +23,10 @@ pukiwiki: "Texmaker/設定"
 > <tr><th style="text-align:center">環境</th><th style="text-align:center">設定ファイルが保存されるフォルダー</th><th style="text-align:center">ファイル名</th></tr>
 > </thead>
 > <tbody>
-> <tr><td>Portable バージョン</td><td>Texmaker の実行ファイルと同じフォルダー</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
-> <tr><td>Windows</td><td>%APPDATA%\xm1\</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
-> <tr><td>macOS, Linux</td><td>$HOME/.config/xm1/</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>Windows (デスクトップ版インストーラー)</td><td>%APPDATA%\xm1\</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>Windows (USB パッケージ)</td><td>Texmaker の実行ファイルと同じフォルダー</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>macOS</td><td>$HOME/.config/xm1/</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
+> <tr><td>Linux</td><td>$HOME/.config/xm1/</td><td>texmaker.ini, texmakerapp.ini, texmakerpdfview.ini</td></tr>
 > </tbody>
 > </table>
 >
