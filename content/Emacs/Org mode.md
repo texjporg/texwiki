@@ -402,7 +402,7 @@ org ファイルの先頭に
 ### Export to HTML {#t60cf94b}
 
 - [HTML export](http://orgmode.org/manual/HTML-export.html)
-- [Org-mode による HTML 文書作成入門](http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
+- [Org-mode による HTML 文書作成入門 \[Wayback Machine\]](http://web.archive.org/web/20190330193554/http://www.geocities.jp/km_pp1/org-mode/org-mode-document.html)
 
 ### License {#da0cead0}
 
