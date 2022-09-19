@@ -9,7 +9,8 @@ pukiwiki: "mimeTeX"
 
 ## mimeTeX {#oc02e052}
 
-% このページもソースが汚いので（しかも環境依存でレイアウトが変わる），画像に置き換えた方がいいですね． -- アセトアミノフェン
+<!-- % このページもソースが汚いので（しかも環境依存でレイアウトが変わる），画像に置き換えた方がいいですね． - - アセトアミノフェン -->
+<!-- % というわけで書き換えました（WebArchive に昔 mimeTeX で生成された gif 画像があったので、流用します）． - - アセトアミノフェン -->
 
 [mimeTeX](http://www.forkosh.com/mimetex.html)
 は LaTeX のサブセットで書かれた数式をインライングラフィック化するソフトです。
@@ -25,12 +26,9 @@ PukiWiki から使うには
  #mimetex(\sqrt{x^2+y^2}=z^2)
 ```
 
-<!-- 閉じる中括弧 } は必要だと思うが -->
+と書けば
 
-と書けば <!-- #mimetex(\sqrt{x^2+y^2}=z^2) -->
-
-    <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span><br>
-<span style="font-size:40px">√x</span> <span style="font-size:40px">+</span> <span style="font-size:40px">y</span> <span style="font-size:40px">=</span> <span style="font-size:40px">z</span><br>
+[![](/attach/mimeTeX/mimetex1.gif)](/attach/mimeTeX/mimetex1.gif)
 
 のようになります。
 
@@ -38,7 +36,4 @@ PukiWiki から使うには
 インライン数式にも対応したようです。&mimetex(\sqrt{x^2+y^2}=z^2); のような具合に。
 ```
 
-<!-- インライン数式にも対応したようです。&mimetex(\sqrt{x^2+y^2}=z^2); のような具合に。 -->
-
-                   <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span>  <span style="font-size:30px">2</span><br>
-インライン数式にも対応したようです。<span style="font-size:40px">√x</span> <span style="font-size:40px">+</span> <span style="font-size:40px">y</span> <span style="font-size:40px">=</span> <span style="font-size:40px">z</span> のような具合に。
+インライン数式にも対応したようです。[![](/attach/mimeTeX/mimetex2.gif)](/attach/mimeTeX/mimetex2.gif) のような具合に。
