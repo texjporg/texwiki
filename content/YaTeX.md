@@ -28,7 +28,7 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 
 ### スクリーンショット {#c84d00bd}
 
-<!-- #ref(http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/1712/LaTeXMathPreviewScreenshot.png,nolink,latex-math-preview.el) -->
+<!-- #ref(https://okumuralab.org/tex/file.php/2/moddata/forum/2/1712/LaTeXMathPreviewScreenshot.png,nolink,latex-math-preview.el) -->
 
 <img src="http://www.emacswiki.org/pics/static/LaTeXMathPreviewScreenshot.png" alt="latex-math-preview.el">
 
@@ -1386,13 +1386,12 @@ TeX ソースの先頭行に例えば，
 - [Yatex導入](http://blogs.yahoo.co.jp/echotechsoft/158191.html)
 - [Emacs+YaTex-導入編](http://d.hatena.ne.jp/tukasa1919/20110507/1304783879)
 - [Emacs+YaTeX－使い方編](http://d.hatena.ne.jp/tukasa1919/20110509/1304937507)
-- [YaTeX reftex-modeの動作について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=308)
+- [YaTeX reftex-modeの動作について](https://okumuralab.org/tex/mod/forum/discuss.php?d=308)
 - [YaTeX World (野鳥わぁるど)](http://www.nk.rim.or.jp/~naru/yatex/) (成宮 隆之 さん)
 - [yatex キー操作](http://www.cosmo.sci.hokudai.ac.jp/~kk/emacs/yatex_key.html)
 - [YaTeXとRefTeXの共存](http://ubutun.blogspot.com/2011/06/yatexreftex.html)
 - [SyncTeXの設定。 Emacs(YaTeX) + Evince](http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html)
 - [RjpWiki:SweaveでエディタとDVIビューア間の相互移動](<http://www.okadajp.org/RWiki/?SweaveでエディタとDVIビューア間の相互移動>)
-- [MacWiki - CarbonEmacsAndYatex](http://macwiki.osdn.jp/wiki/index.php/CarbonEmacsAndYatex)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
 - [http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX](http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX)
 - [yatex-modeになったときにマイナーモードcdlatexを起動する](http://d.hatena.ne.jp/daharu/20111106/1320562641)
