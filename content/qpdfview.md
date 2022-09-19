@@ -44,7 +44,7 @@ Linux
 
 ### Arch Linux {#ua5dc612}
 
-- [https://aur.archlinux.org/packages/qpdfview/](https://aur.archlinux.org/packages/qpdfview/)
+- [https://www.archlinux.org/packages/?q=qpdfview](https://www.archlinux.org/packages/?q=qpdfview)
 
 ### Linux Mint {#c6d3b357}
 
