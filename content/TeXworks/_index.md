@@ -74,17 +74,6 @@ Windows 版 TeXworks の PDF ビューアでゴシック体を表示する場合
 
 - [Issues](https://github.com/TeXworks/texworks/issues)
 
-### macOS の TeXworks で文字コードが UTF-8 の場合に Backslash (U+005C) が入力できず 円記号 (U+00A5) になってしまう {#f4128341}
-
-macOS の TeXworks で，文字コードが UTF-8 の場合に[バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が入力できず[円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) になってしまうようです．
-
-- [backslash becomes yen · Issue #516 · TeXworks/texworks · GitHub](https://github.com/TeXworks/texworks/issues/516)
-- TeXworks 0.4.3でのバックスラッシュの入力(Mac) ([forum:674](https://okumuralab.org/tex/mod/forum/discuss.php?d=674))
-
-macOS の Qt アプリケーションで [バックスラッシュ](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%83%E3%82%AF%E3%82%B9%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A5) (U+005C) が [円記号](https://ja.wikipedia.org/wiki/%E5%86%86%E8%A8%98%E5%8F%B7) (U+00A5) に変換される[バグ](https://bugreports.qt.io/browse/QTBUG-10543)があるようです．Karabiner で Backslash が優先されるようにキーバインドを変更するとよいようです．
-
-- \[[QTBUG-10543\] Backslash is converted to YEN SIGN on Qt for Mac with JIS keyboard.](https://bugreports.qt.io/browse/QTBUG-10543)（バグ報告はされているが，残念ながら未だ修正されていない）
-
 ### かな漢字変換をする際に文字が白く表示され，ハイライトに隠れて見えにくくなることがある {#s5bfc44e}
 
 TeXworks で \[編集\] &gt; \[設定\] のエディタタブの「エディタ全体のオプション」で「現在カーソルのある行をハイライトする」にチェックを入れている場合，かな漢字変換の際に文字が白く表示され，ハイライトに隠れて見えにくくなるという現象が発生することがあります．このような現象が発生した場合は今のところ，「現在カーソルのある行をハイライトする」のチェックを外す（ハイライト機能を使わない）ぐらいしか対策はありません．
