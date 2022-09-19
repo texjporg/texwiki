@@ -12,7 +12,7 @@ pukiwiki: "pic"
 pic とは，簡単なフローチャートのような図を作成するためのプログラミング言語 (A Graphics Language for Typesetting) です．
 troff 用図形プリプロセッサとして実装されています．
 
-- [http://www.cs.bell-labs.com/10thEdMan/pic.pdf](http://www.cs.bell-labs.com/10thEdMan/pic.pdf) --- by Brian W. Kernighan
+- [http://9p.io/10thEdMan/pic.pdf](http://9p.io/10thEdMan/pic.pdf) --- by Brian W. Kernighan
 - [http://surf.ml.seikei.ac.jp/~nakano/JMwww/html/GNU_groff/man1/pic.1.html](http://surf.ml.seikei.ac.jp/~nakano/JMwww/html/GNU_groff/man1/pic.1.html)
 
 ***
@@ -26,7 +26,7 @@ troff 用図形プリプロセッサとして実装されています．
 
 ### gpic {#re376f4f}
 
-- [http://www.math.uiuc.edu/~west/gpic.html](http://www.math.uiuc.edu/~west/gpic.html)  by  Douglas B. West
+- [https://faculty.math.illinois.edu/~west/gpic.html](https://faculty.math.illinois.edu/~west/gpic.html)  by  Douglas B. West
 
 ### tpic {#xda9ac26}
 
@@ -118,10 +118,10 @@ KETpic とは，数式処理システム (Computer algebra system; CAS)
 現在 Maple 版と Mathematica 版，Maxima 版，Scilab 版があります．
 CAS の出力図を tpic 形式に変換して TeX の picture 環境に埋め込みます．
 
-- [KETpic で楽々 TeX グラフ](http://oku.edu.mie-u.ac.jp/texconf11/presentations/yamashita.pdf)
+- [KETpic で楽々 TeX グラフ](https://oku.edu.mie-u.ac.jp/texconf11/presentations/yamashita.pdf)
 - [KETpic の使い方](https://oku.edu.mie-u.ac.jp/texconf10/presentations/yamashita.pdf)
 - [KETpic による曲面描画と教育利用](http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1624-01.pdf)
 - [KETpic入門](http://www.ms.u-tokyo.ac.jp/~tado/ketpic/)
 - [KETpicメモ](http://www.math.sci.hokudai.ac.jp/~yano/ketpic/ketpic.html)
-- [KETpic できれいな図を書こう](http://www.slideshare.net/akimotoyoshitomo/ketpic)
-- [うぶつん: KETpic](http://ubutun.blogspot.jp/search/label/KETpic)
+- [KETpic できれいな図を書こう](https://www.slideshare.net/akimotoyoshitomo/ketpic)
+- [うぶつん: KETpic](https://ubutun.blogspot.jp/search/label/KETpic)
