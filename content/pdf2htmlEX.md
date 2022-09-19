@@ -569,10 +569,6 @@ $ sudo apt update
 $ sudo apt install pdf2htmlex
 ```
 
-#### CentOS {#q04cd947}
-
-- [How to install pdf2htmlEX in CentOS 7](http://www.khmer.pw/?p=57)
-
 ## 使い方 {#cc3ae41e}
 
 Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
@@ -581,7 +577,7 @@ Usage: pdf2htmlEX \[Options\] &lt;input.pdf> \[&lt;output.html>\]
 
 - [Pdf2htmlEX – Convert PDF to HTML without losing text or format (github.com)](https://news.ycombinator.com/item?id=5657988)
 - [pdf2htmlEXはGitHubで今月のトレンドRepoになりました！](http://lang-8.com/393787/journals/205776832576308965279285506837389641381/pdf2htmlEX%25E3%2581%25AFGitHub%25E3%2581%25A7%25E4%25BB%258A%25E6%259C%2588%25E3%2581%25AE%25E3%2583%2588%25E3%2583%25AC%25E3%2583%25B3%25E3%2583%2589Repo%25E3%2581%25AB%25E3%2581%25AA%25E3%2582%258A%25E3%2581%25BE%25E3%2581%2597%25E3%2581%259F%25EF%25BC%2581)
-- [pdf2htmlEXの紹介](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=873)
+- [pdf2htmlEXの紹介](https://okumuralab.org/tex/mod/forum/discuss.php?d=873)
 - [巫璐赛](http://lang-8.com/393787)
     - [150 僕が書いたツール：　pdf2htmlEX](http://lang-8.com/393787/journals/1662451)
 - [pdf2htmlEX（Lang-8より転載）](http://blogs.yahoo.co.jp/igproj_fusion/16093260.html)
