@@ -11,9 +11,9 @@ pukiwiki: "Latexmk"
 
 Latexmk は文書を作成するのに必要な回数タイプセットしてくれるツールです．BibTeX や Makeindex などの実行も自動で行われます．
 
-- [http://www.phys.psu.edu/~collins/software/latexmk-jcc/](http://www.phys.psu.edu/~collins/software/latexmk-jcc/)
+- [http://personal.psu.edu/jcc8/software/latexmk/](http://personal.psu.edu/jcc8/software/latexmk/)
 
-<!-- http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1645#p9535 -->
+<!-- https://okumuralab.org/tex/mod/forum/discuss.php?d=1645#p9535 -->
 <!-- に従い，設定は基本的にplatex + dvipdfmxで書く，ということにしています． -->
 
 ***
@@ -305,6 +305,5 @@ latexmk -gg -pdfxe foo.tex
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
-- [Latexmk（Windows特化で使い方を書いてみる）](http://d.hatena.ne.jp/abenori/20150110)
 
 [^1]: .latexmkrc に記述せずに実行時オプションで指定することもできます（[使い方](/Latexmk/#usage)を参照）．
