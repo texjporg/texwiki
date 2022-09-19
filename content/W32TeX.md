@@ -7,14 +7,11 @@ pukiwiki: "W32TeX"
 
 # W32TeX
 
-[Microsoft Windows](</Microsoft Windows/>) > W32TeX
-
-## [W32TeX](http://w32tex.org/index-ja.html) {#ba560630}
+## [W32TeX](http://w32tex.org/index-ja.html)（配布終了）→ [TeX Live](</TeX Live/>) に移行してください {#ba560630}
 
 <strong>配布が終了しました．以下は古い情報です．</strong>
 
-W32TeX は角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成した TeX のディストリビューションです．
-W32TeX についての詳細は[公式サイト](http://w32tex.org/index-ja.html)を参照してください．
+W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成されていた TeX のディストリビューションでしたが現在は配布が終了しています．[TeX Live](</TeX Live/>) に移行してください．
 
 ***
 
@@ -308,7 +305,7 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
 文字エンコーディングの齟齬により，ソフトウェアによっては kpathsea 経由で探し出すことに失敗するケースがあるためです．
 また，p(la)tex において special の種類によっては 0x5c を含むファイル名の場合，失敗することがあります．
-この場合も ASCII の範囲で使用してください．( → [KANJI file name in special in dvi　(uptex)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1210))
+この場合も ASCII の範囲で使用してください．( → [KANJI file name in special in dvi　(uptex)](https://okumuralab.org/tex/mod/forum/discuss.php?d=1210))
 
 ## 関連リンク {#b5892c8c}
 
