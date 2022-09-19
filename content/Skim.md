@@ -7,7 +7,7 @@ pukiwiki: "Skim"
 
 # Skim
 
-## [Skim](http://skim-app.sourceforge.net/) {#icc6746f}
+## [Skim](https://skim-app.sourceforge.io/) {#icc6746f}
 
 ***
 
@@ -18,7 +18,7 @@ pukiwiki: "Skim"
 Skim は PDF ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 
-- [http://skim-app.sourceforge.net/](http://skim-app.sourceforge.net/)
+- [https://skim-app.sourceforge.io/](https://skim-app.sourceforge.io/)
 
 ### 動作環境 {#rb90213b}
 
@@ -30,7 +30,7 @@ macOS
 
 ### リリース情報 {#z7f1eead}
 
-[Release Notes](http://skim-app.sourceforge.net/relnotes.html) を参照．
+[Release Notes](https://skim-app.sourceforge.io/relnotes.html) を参照．
 
 ### ChangeLog {#l1a8874a}
 
@@ -50,9 +50,10 @@ forward search を行う場合は Skim に含まれている [displayline](https
 ## DVI ファイルを PDF ファイルに変換して表示 {#nfee2aaa}
 
 DVI ファイルも PDF ファイルに変換して表示してくれます．
-DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=892) を参照して設定してください．
+DVI ファイルを PDF ファイルに変換してくれない場合は [Conversion dvi to pdf in Skim (代理投稿)](https://okumuralab.org/tex/mod/forum/discuss.php?d=892) を参照して設定してください．
 
 ## 関連リンク {#a3af5ca3}
 
+- [MyTeXpert:Skim](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Skim)
 - [Skim.appの自動更新の設定](https://ubutun.blogspot.jp/2016/11/skimapp.html)
 - [PDF ViewerのSkimでTeXのdviファイルを見る](http://njet.oops.jp/wordpress/2011/01/27/pdf-viewer%E3%81%AEskim%E3%81%A7tex%E3%81%AEdvi%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%A6%8B%E3%82%8B/)
