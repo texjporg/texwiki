@@ -77,7 +77,6 @@ LaTeX 用の支援として開発されたマクロ集としては，祝鳥が�
 
 ### 関連リンク {#mec8cd02}
 
-- [&#8220;秀丸&#8221; の検索結果 &#8211; マスクメロン](https://www.muskmelon.jp/?s=%E7%A7%80%E4%B8%B8)
 - [TeXLive 2012でLaTeXのエラー発生時に秀丸エディタを起動する設定](http://d.hatena.ne.jp/hyuki/20121016/tex)
 - [秀丸エディタのお勧めの設定](https://tipszone.jp/20121003_hidemaru-config/)
 - [「秀丸エディタ」定番のテキストエディター - 窓の杜ライブラリ](https://forest.watch.impress.co.jp/library/software/hidemaru/)
