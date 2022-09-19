@@ -24,12 +24,12 @@ pukiwiki: "iOS"
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
-### Texpad {#f10ec168}
+### [Texifier](/Texifier/) {#f10ec168}
 
-Texpad はクラウドタイプセットで日本語の文書をコンパイルできるそうです．<br>
+Texifier はクラウドタイプセットで日本語の文書をコンパイルできるそうです．<br>
 
-- [https://www.texpad.com/](https://www.texpad.com/)
-    - [https://www.texpad.com/ios](https://www.texpad.com/ios)
+- [https://www.texifier.com/](https://www.texifier.com/)
+    - [https://www.texifier.com/ios](https://www.texifier.com/ios)
 - [https://apps.apple.com/jp/app/texpad-latex-editor/id550419159](https://apps.apple.com/jp/app/texpad-latex-editor/id550419159)
 - [TeXPadで日本語を扱う方法(iPad , iPhoneでLaTeX)](https://murabitoleg.com/texpad-japanese/)
 
