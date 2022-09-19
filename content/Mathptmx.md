@@ -9,7 +9,7 @@ pukiwiki: "Mathptmx"
 
 ## Mathptmx {#a95ec0b1}
 
-Mathptmx は，本文・数式とも，フォントを Computer Modern から Times にかえるパッケージです。
+Mathptmx は，本文・数式の両方のフォントを Times に変更するパッケージです。
 
 ***
 
@@ -18,24 +18,16 @@ Mathptmx は，本文・数式とも，フォントを Computer Modern から Ti
 > ***
 >
 
-このパッケージを利用すると，\jmath，\amalg，\coprod が出力できなくなってしまいます。<br>
-下のようにすると，この3種類の文字（演算子）だけ Computer Modern で，ほかは Times で出力することができます。<br>
-このソースは，[newtx](/newtx/) を参考にして書きました。
+### サポートされない記号 {#j8ad9e3f}
+
+LaTeX 標準の数式記号のうち，\jmath，\amalg，\coprod は mathptmx では出力できません。
+
+以下のようにすると，この3種類の記号を Computer Modern で出力することができます。<br> <!-- mathptmx では letter と letter-like 以外の記号は CM が使われる。 -->
+
+<!-- このソースは，[[newtx]] を参考にして書きました。 -->
 
 ```
-\ifdefined\kanjiskip
-  \documentclass[uplatex]{jsarticle}
-\else
-  \ifdefined\pdfoutput
-    \ifdefined\directlua
-      \documentclass{ltjsarticle}
-    \else
-      \documentclass[pdflatex]{bxjsarticle}
-    \fi
-  \else
-    \documentclass[xelatex]{bxjsarticle}
-  \fi
-\fi
+\documentclass{article}
 \usepackage{mathptmx}
 \DeclareSymbolFont{cmletters}{OML}{cmm}{m}{it}
 \DeclareSymbolFont{cmsymbols}{OMS}{cmsy}{m}{n}
