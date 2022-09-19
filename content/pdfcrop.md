@@ -41,7 +41,7 @@ $ pdfcrop --margins "10 8 12 8" hoge.pdf
 Denian/Ubuntuのリポジトリを利用したインストール
 
 ```
-$ sudo apt-get install texlive-extra-utils
+$ sudo apt install texlive-extra-utils
 
 ```
 
