@@ -7,7 +7,10 @@ pukiwiki: "科研費LaTeX"
 
 # 科研費LaTeX
 
-## [科研費LaTeX](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/) {#y8669bc1}
+## 科研費LaTeX {#y8669bc1}
+
+[科研費LaTeX](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/) は，
+日本学術振興会と文部科学省の科学研究費補助金の応募の書類を LaTeX で書くためのものです．<br>
 
 - [科研費LaTeX](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/)
     - [科研費LaTeX FAQ](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/faq.html)
