@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-動作環境については[TeX Live 2021 のバイナリの動作環境](#binary)をお読みください。
+動作環境については[TeX Live 2022 のバイナリの動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -30,12 +30,12 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2021 のバイナリの動作環境 {#binary}
+### TeX Live 2022 のバイナリの動作環境 {#binary}
 
-macOS 用として配布される TeX Live 2021 は，universal-darwin バイナリです。universal-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
-MacTeX-2021 / BasicTeX-2021 に付属する TeX Live も universal-darwin バイナリです。
+macOS 用として配布される TeX Live 2022 は，universal-darwin バイナリです。universal-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
+MacTeX-2022 / BasicTeX-2022 に付属する TeX Live も universal-darwin バイナリです。
 
-TeX Live 2021 universal-darwin バイナリが動作する macOS
+TeX Live 2022 universal-darwin バイナリが動作する macOS
 
 - macOS Monterey 12
 - macOS Big Sur 11
@@ -121,15 +121,15 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2021，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2022，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2021/bin/universal-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2022/bin/universal-darwin/tlmgr path add
 ```
 
 <!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
 
-<!-- https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2675#p17225 により TeX Live 2020 の tlmgr で対応されたようです。 -->
+<!-- https://okumuralab.org/tex/mod/forum/discuss.php?d=2675#p17225 により TeX Live 2020 の tlmgr で対応されたようです。 -->
 <!-- ↓ -->
 <!-- **Xcode のインストール要求ダイアログについての注意 [#xcode] -->
 <!--  -->
