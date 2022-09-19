@@ -55,9 +55,8 @@ upLaTeX に対応した up-ipsj.cls が存在します --&gt; [ipsj.cls を upLa
 ### 関連リンク {#xd2bfe1e}
 
 - [突然ですが：MacでTeX環境を作って情報処理学会の研究会フォーマットでコンパイルするまで](https://ameblo.jp/a33amimi/entry-12335729743.html)
-- [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/d-dsatoi/13c970563a2f5a489c9d)
+- [OS X El Capitan＋Sublime Text 3でヒラギノを埋め込んだPDFを作る](https://gist.github.com/d-satoi/13c970563a2f5a489c9d)
 - [Overleaf で pLaTeX 使って日本語PDFをプレビューした話](http://3846masa.hatenablog.jp/entry/2016/02/15/003843)
 - [情報処理学会のLaTeXファイルをコンパイル](https://d.akiroom.com/2013-02/ipsj-latex-compile/)
 - [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
-- [（情報処理学会論文誌の投稿に関する）LaTeX による論文作成のガイド（第6版）](https://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/ipsj-old/sample.pdf)
 - [情報処理学会論文誌等を執筆時にdvipdfmxでlandscapeしなくて困った人が読むエントリ](http://written.4403.biz/archives/2009/02/dvipdfmxlandscape.html)
