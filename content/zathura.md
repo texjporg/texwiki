@@ -23,8 +23,6 @@ PDF ファイルや PS ファイルが表示できます．
 - [Home | pwmt.org](https://pwmt.org/)
     - [zathura](https://pwmt.org/projects/zathura/)
     - [girara](https://pwmt.org/projects/girara/)
-- [The zathura Archives](https://lists.pwmt.org/archive/zathura/)
-- [The girara Archives](https://lists.pwmt.org/archive/girara/)
 
 ### 動作環境 {#q9b59e7d}
 
