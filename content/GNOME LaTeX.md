@@ -75,7 +75,15 @@ brew install gnome-latex
 - [https://www.archlinux.org/packages/?name=gnome-latex](https://www.archlinux.org/packages/?name=gnome-latex)
 
 ```
-pacman -S gnome-latex
+sudo pacman -S gnome-latex
+```
+
+### openSUSE {#z63d593b}
+
+- [https://software.opensuse.org/package/gnome-latex](https://software.opensuse.org/package/gnome-latex)
+
+```
+sudo zypper install gnome-latex
 ```
 
 ## Build Tool {#t1320044}
