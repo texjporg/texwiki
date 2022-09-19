@@ -64,7 +64,7 @@ $ tar xvf install-tl-unx.tar.gz
 展開したインストーラのディレクトリに移動します．
 
 ```
-$ cd install-tl*
+$ cd install-tl-2*
 ```
 
 インストーラを実行します．
@@ -134,12 +134,6 @@ $ tlmgr update --self --all
     ```
     $ ptex2pdf -u -l -ot '-synctex=1' foo.tex
     ```
-
-なお，ptex2pdf v0.5 以前では
-/usr/bin/env: texlua : No such file or directory
-なるエラーが発生するバグが報告されていましたが，v0.6 で解決しています．
-
-- [ptex2pdf 0.6 - There and back again](https://www.preining.info/blog/2015/03/ptex2pdf-0-6/)
 
 ### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
 
