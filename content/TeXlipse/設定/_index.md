@@ -224,7 +224,10 @@ makeidx パッケージが作成するテンポラリーファイルを tmp デ�
 
 [Vrapper — Vim-like editing in Eclipse](http://vrapper.sourceforge.net/) を使用すれば可能です．
 
+Eclipse を起動します． メニューの<br>
 <span style="color:Black;background-color:#473EBE;">　<span style="color:Black;background-color:#DAEAFF;">　ヘルプ(H)　</span> <span style="color:White;"><strong>&gt;</strong></span> <span style="color:Black;background-color:#DAEAFF;">　新規ソフトウェアのインストール...　</span>　</span><br>
+
+を選択し，作業対象に
 
 > &#x68;ttp://vrapper.sourceforge.net/update-site/stable
 
