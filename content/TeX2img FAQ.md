@@ -69,10 +69,10 @@ Windows 版 TeX2img がある日突然動かなくなるという現象が発生
 ### Mac 版でアップデートに失敗する・アップデート後に起動できない {#sbc4fdda}
 
 OS のバージョンと TeX2img のバージョンの組み合わせ，あるいはパーミッション設定によっては，自動アップデートに失敗することがあります。
-自動アップデートに失敗する場合は，[公式サイト](http://island.geocities.jp/loveinequality/)から最新版をダウンロードして手動でアプリを差し替えてください。
+自動アップデートに失敗する場合は，[公式サイト](https://tex2img.tech)から最新版をダウンロードして手動でアプリを差し替えてください。
 
 なお，自動アップデート機能は Lion (OS X 10.7) 以降で機能します。
-Snow Leopard (OS X 10.6) をお使いの場合は，[公式サイト](http://island.geocities.jp/loveinequality/)にて配布されている Ver.1.10.x 系列をご利用ください。
+Snow Leopard (OS X 10.6) をお使いの場合は，[公式サイト](https://tex2img.tech)にて配布されている Ver.1.10.x 系列をご利用ください。
 自動アップデート機能をはじめ，Snow Leopard と互換性のない機能を削って，Snow Leopard で動くようにしたバージョンとなっています。
 
 ### Mac 版で ! Undefined control sequence. \UTF{xxxx} と出る {#xb2c033d}
@@ -143,7 +143,7 @@ Mac 版では，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵す�
 
 ### 他のアプリで作成した EPS ファイルは使えるのに TeX2img で出力した EPS が使えない {#jbf9ace6}
 
-トラブル例：[TeX2imgで作成したEPSファイルがWord2010で表示できない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1576)
+トラブル例：[TeX2imgで作成したEPSファイルがWord2010で表示できない](https://okumuralab.org/tex/mod/forum/discuss.php?d=1576)
 
 これは，上記の「Ghostscript 9.15 以降が出力する EPS はバイナリ形式である」ことに起因するトラブルです。
 Mac 版であれば，上述の「プレーンテキストで出力する」機能を用いて，プレーンテキスト形式で EPS を出力することを試してみてください。
@@ -199,7 +199,7 @@ Mac版の場合，以下の出力の場合は Ghostscript を経由せず，こ�
 <!-- Mac 版では，EMF 画像の出力のために [[pstoedit]]（を高画質になるよう独自改修したバージョン）を内蔵していますが，これで生成される EMF は，ベジエ曲線を用いることができず，細かい折れ線の集合体になってしまいます。 -->
 <!-- アンカーポイントをかなり細かくとるようにはしていますが，それでも拡大するとギザギザが目立ちます。 -->
 <!--  -->
-<!-- ベジエ曲線を用いた高品質な EMF 画像が必要な場合は，TeX2img で一旦 EPS 画像をさせた後に，それを[[補助ツール:http://island.geocities.jp/loveinequality/#eps2emf]]にドラッグ＆ドロップしてください。 -->
+<!-- ベジエ曲線を用いた高品質な EMF 画像が必要な場合は，TeX2img で一旦 EPS 画像をさせた後に，それを[[補助ツール:https://doratex.github.io/misc-files/files/eps2emf.zip]]にドラッグ＆ドロップしてください。 -->
 <!-- この補助ツールは，内包している [[Inkscape]] を用いて EMF 画像を生成します。 -->
 <!-- この場合，ベジエ曲線を用いた高品質な EMF 画像が生成されます。（TeX2img 自体にこの補助ツールを同梱していないのは，Inkscape のファイルサイズが非常に大きいからです。） -->
 
@@ -232,7 +232,7 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 長大なソースを画像化する場合，組版結果が1ページに収まらないと，意図せず複数画像に分割されてしまいます。
 それを1ページに収めた画像にしたい場合，用紙サイズの方を大きく設定しておく必要があります。
 用紙サイズを自由に指定するには，[geometry](/geometry/) パッケージを利用するのがよいでしょう。
-プリアンブル設定で，例えば次のように用紙サイズを十分大きく縦長に指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52463.html)点に注意してください）。
+プリアンブル設定で，例えば次のように用紙サイズを十分大きく縦長に指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](https://okumuralab.org/~okumura/texfaq/qa/52463.html)点に注意してください）。
 
 ```
 % LaTeX compiler: platex
@@ -247,7 +247,7 @@ TeX2img は，TeX による組版結果が複数ページにまたがる場合�
 ### 画像化すると右端が切れる {#ya767e23}
 
 ディスプレイ数式やTikZ図版などの横幅が長すぎて，用紙サイズの横幅に収まらない場合，右端が切れてしまいます。
-前項と同様に，[geometry](/geometry/) パッケージを利用して，プリアンブルで用紙サイズの横幅を十分大きく指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/52463.html)点に注意してください）。
+前項と同様に，[geometry](/geometry/) パッケージを利用して，プリアンブルで用紙サイズの横幅を十分大きく指定してください（この際，jsarticle の [papersize オプションは外しておく必要がある](https://okumuralab.org/~okumura/texfaq/qa/52463.html)点に注意してください）。
 
 ```
 % LaTeX compiler: platex
