@@ -203,7 +203,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("Latexmk-LuaLaTeX"
-                                     "latexmk -e \"$lualatex=q/lualatex -cmdx %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
+                                     "latexmk -e \"$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
