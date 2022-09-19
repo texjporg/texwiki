@@ -9,7 +9,7 @@ pukiwiki: "TeXが苦手とする処理"
 
 ## TeX が苦手とする処理 {#c889781f}
 
-[TeX Forum](http://oku.edu.mie-u.ac.jp/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では提供されず，ときとして TeX 自身は不得手とする処理について挙げます。
+[TeX Forum](https://okumuralab.org/tex/) や [TeX Q &amp; A](https://okumuralab.org/~okumura/texfaq/qa/index.html) などでしばしば話題になる処理のうち，TeX 本体では提供されず，ときとして TeX 自身は不得手とする処理について挙げます。
 既製品があるものについては既製品も紹介していますが，それらを用いた場合の出力結果に不満がある場合には，ユーザ自身で対処することになります。
 
 ここに挙げる処理を行うのが単なる「書き手の趣味」である場合には，無理をせずに書き手自身の腕で無難にできる範囲の処理で済ませるか，画像にしてしまう方が賢明である場合もあることでしょう。
@@ -28,6 +28,7 @@ pukiwiki: "TeXが苦手とする処理"
 - [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)：中島 浩氏。下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
 - [udline パッケージ](http://minamo.my.coocan.jp/tex/udline.html)：みなも氏。実線・破線・点線・波線などによる下線・打ち消し線・上線を提供
 - uline-- パッケージ（リンク切れ → [Wayback Machine](http://web.archive.org/web/20170720074429/http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)）：吉永徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
+    - LuaTeX(-ja) には非対応（禁則処理に不具合が生じるといった問題あり）．LuaTeX ユーザは Lua-UL パッケージの利用を検討するとよいかもしれない．
 - [breakfbox パッケージ](http://doratex.hatenablog.jp/entry/20171219/1513609345)：doraTeX氏。同梱されたuline--.sty パーケージをベースに，行分割可能な四角囲み（\fboxと同等）を提供
 
 なお，欧文のみでよければ，[ulem パッケージ](https://ctan.org/pkg/ulem)が下線・二重下線・打ち消し線・波線などを提供しています。
