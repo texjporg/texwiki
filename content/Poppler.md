@@ -31,15 +31,15 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 ### お知らせ {#qdd1dda1}
 
-- Poppler 0.69 以降はビルドする際に C++14 をサポートした処理系が必要です。--&gt; [Bump required C++ standard version to C++14 and convert a few hopefully obvious call sites where types are repeated to using std::make_unique.](https://cgit.freedesktop.org/poppler/poppler/commit/?id=9bfc10eecb57354270806aa1d9278eebb1db2287)
-- Windows 版の TeX Live 2017 以降, W32TeX \[2017/02/20\] 以降は xpdf utilities の代わりに poppler utilities が
+- Poppler 21.12.0 以降はビルドする際に C++17 をサポートした処理系が必要です。--&gt; [Increase C++ standard to 17](https://cgit.freedesktop.org/poppler/poppler/commit/?id=3f8b9e92aade630b90943fd3936bdaa089e0603d)
+- Windows 版の TeX Live 2017 以降は xpdf utilities の代わりに poppler utilities が
     使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
 ### インストール {#tafa7455}
 
 #### Windows {#v190b38b}
 
-TeX Live 2017 以降あるいは W32TeX \[2017/02/20\] 以降をインストールしている場合は poppler utilities が使用できます．
+TeX Live 2017 以降をインストールしている場合は poppler utilities が使用できます．
 以下のコマンドが利用できます：
 
 > pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
@@ -65,7 +65,7 @@ pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
 
 を実行します．
 
-[Poppler for Windows](http://blog.alivate.com.au/poppler-windows/) から，Poppler のユーティリティのバイナリを入手することもできます。
+[Poppler Packaged for Windows](https://github.com/oschwartz10612/poppler-windows) から，Poppler のユーティリティのバイナリを入手することもできます。
 
 #### macOS {#l3620b9b}
 
