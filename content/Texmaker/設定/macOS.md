@@ -31,8 +31,8 @@ pukiwiki: "Texmaker/設定/macOS"
 
 BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．
 
-- [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
-- [TeXshopでbibTeXがうまく動かなくなりました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=991)
+- [TeXmakerでbibTeXとdvipdfmxが動きません](https://okumuralab.org/tex/mod/forum/discuss.php?d=988)
+- [TeXshopでbibTeXがうまく動かなくなりました](https://okumuralab.org/tex/mod/forum/discuss.php?d=991)
 
 ***
 
@@ -49,7 +49,7 @@ PdfLaTeX
 
 : "/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex
 
-: ☐ 出力ファイルを "build" サブフォルダーに出力する
+: ☐ Use a "build" subdirectory for output files
 
 XeLaTeX
 : &nbsp;
@@ -120,14 +120,14 @@ R Sweave
 Add to PATH
 : &nbsp;
 
-PDF ビューア
+PDF Viewer
 : &nbsp;
 
-: <span style="color:White;background-color:#0F7FFF;">🔘</span>　組み込みビューア
+: <span style="color:White;background-color:#0F7FFF;">🔘</span> Built-in Viewer
 
-: ☑　埋め込み
+: ☑ Embed
 
-: ◯　外部ビューア
+: ◯ External Viewer
 
 : "/Applications/Skim.app/Contents/SharedSupport/displayline" @ %.pdf #.tex
 
