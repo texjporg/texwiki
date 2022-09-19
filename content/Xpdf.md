@@ -15,7 +15,6 @@ XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用
 
 <!-- とりあえず項目を復活させました。 -->
 <!-- ビューアとして obsolete な理由説明がほしいです。 -->
-<!-- W32TeX 関連の記載以外は検証していません。 -->
 <!-- // macOS の MacPorts, Homebrew について追記しました。 -->
 <!-- // 検証などお願いします。 -->
 <!-- // // Windows の TeX Live の場合を追記しました。 -->
@@ -68,7 +67,7 @@ Windows の場合は Xpdf command line tools をインストールしなくて�
 
 macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
-Xpdf 4.03 の場合
+Xpdf 4.04 の場合
 
 - 公式サイトのバイナリを使用する方法
     - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf command line tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
