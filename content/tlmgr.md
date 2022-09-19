@@ -10,7 +10,7 @@ pukiwiki: "tlmgr"
 ## tlmgr {#headline}
 
 tlmgr は [TeX Live](</TeX Live/>) のパッケージ管理ツールで，コマンドラインで使用します．
-GUI 版としては Windows の [TeX Live Manager](</TeX Live Manager/>) や macOS の [TeX Live Utility](</TeX Live Utility/>) もあります．
+GUI 版としては [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) や macOS の [TeX Live Utility](</TeX Live Utility/>) もあります．
 
 ### 使い方 {#usage}
 
