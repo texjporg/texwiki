@@ -369,7 +369,7 @@ TeX コマンドのオプションに -synctex=1 を追加します．
 SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下の記述を設定します．<br>
 
 ```
-"C:\texlive\2017\tlpkg\texworks\texworks.exe" --position=%l "%f"
+"C:\texlive\2018\tlpkg\texworks\texworks.exe" --position=%l "%f"
 ```
 
 &#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
