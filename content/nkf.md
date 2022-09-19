@@ -72,9 +72,9 @@ $ sudo port install nkf
 ソースからビルドする方法です。
 
 ```
-$ curl -kRLO http://jaist.dl.osdn.jp/nkf/64158/nkf-2.1.4.tar.gz
-$ tar xvf nkf-2.1.4.tar.gz
-$ pushd nkf-2.1.4
+$ curl -kRLO http://jaist.dl.osdn.jp/nkf/70406/nkf-2.1.5.tar.gz
+$ tar xvf nkf-2.1.5.tar.gz
+$ pushd nkf-2.1.5
 $ make
 $ make prefix=/mingw install
 mkdir /mingw/bin
