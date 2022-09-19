@@ -463,6 +463,11 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 
 [Latexmk - TeX Wiki](/Latexmk/) を参照．
 
+### arara {#vc2756b0}
+
+- [https://github.com/cereda/arara](https://github.com/cereda/arara)
+- [チョット arara してみた件](http://d.hatena.ne.jp/zrbabbler/20180627/1530099380)
+
 ### OMake → 問題が発生する場合は [Latexmk](/Latexmk/) を使用する {#df86b9ce}
 
 [http://omake.metaprl.org/](http://omake.metaprl.org/)
@@ -479,11 +484,6 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 - [OMakeで快適に論文執筆：TeX編](http://leoclock.blogspot.jp/2009/09/omaketex.html)
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
 - [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
-
-### arara {#vc2756b0}
-
-- [http://cereda.github.io/arara/](http://cereda.github.io/arara/)
-- [https://github.com/cereda/arara](https://github.com/cereda/arara)
 
 ### Lua スクリプト {#v301e7db}
 
