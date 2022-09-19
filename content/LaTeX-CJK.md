@@ -514,16 +514,16 @@ CMap テーブルを使用して TTF フォントにアクセスするには、k
 更にサンプル内の dvipdfm/config/cid-x.map-add.\* をインストールせずに試してみるには kanjix.map に
 改名、インストールして使用する場合はその内容をシステムの kanjix.map に追加します。
 
-1. [UTF-8 で書かれた TeX ファイルで CJK の各漢字字形を使い分ける。](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
+1. [UTF-8 で書かれた TeX ファイルで CJK の各漢字字形を使い分ける。](http://web.archive.org/web/20101219065541/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-UTF8-noembed.tar.bz2)
     - これまでに判明している問題点:
         - 各ページ、最下段を除いて意味不明な箇所がある。視点を変えて、少し距離をおいて眺める必要があるかも知れない。
-1. [縦書き](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2) JIS X 0213 を Shift_JIS で使うために必要な設定も一式入っています。
+1. [縦書き](http://web.archive.org/web/20101219065651/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-localEncoding-vertical.tar.bz2) JIS X 0213 を Shift_JIS で使うために必要な設定も一式入っています。
     - これまでに判明している問題点:
         - 同梱された TFM ファイルは全角文字以外に使えない。
         - 横書きフォントを縦書きに使う場合の fdx ファイルが無いため、CJKvert.sty を使った縦書きでは句読点の位置がおかしい（縦書きフォントを使う場合は問題ないと思います）。
-1. [Supplementary Ideographic Plane の使用](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルから PDF ファイルを作るのには、
+1. [Supplementary Ideographic Plane の使用](http://web.archive.org/web/20101219065610/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.tar.bz2)このサンプルから PDF ファイルを作るのには、
     dvipdfmx-20070409 以降が必要です。更に商用フォントも使いました。
-    そこで、[作成済み PDF](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
+    そこで、[作成済み PDF](http://web.archive.org/web/20101219065737/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/CJK-LaTeX-SIP.pdf) も置いておきます。
     - これまでに判明している問題点:
         - dvipdfmx-20070409 よりも前の dvipdfmx には fontmap.c に不具合がある ([qa:40437](https://okumuralab.org/~okumura/texfaq/qa/40437.html))。（[svn 版 Sun Jan 21 11:58:36 2007 UTC](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/fontmap.c?r1=3658&r2=2220), リリース版 dvipdfmx-20070409 で修正されています。）
         - c70usong.fd に二つのフォントが定義されている。これは c70usong.fd と c70usong2.fd
