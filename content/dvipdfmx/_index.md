@@ -66,9 +66,8 @@ foo.dvi -> foo.pdf
 
 なお，拡張子は省略できます．
 上の場合，単に foo としても foo.dvi が変換されます．
-ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります． なお，2018/05/23 以降の W32TeX では，別に foo という
-ファイルが存在する場合にも，単に foo とした場合，まず foo.dvi を優先して探しま
-す．TeX Live の場合も遅くても TeX Live 2019 からそのようになります．
+ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります． なお，遅くても TeX Live 2019 から別に foo という
+ファイルが存在する場合にも，単に foo とした場合，まず foo.dvi を優先して探します．
 
 なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．
 特に Windows 10 や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
@@ -203,7 +202,7 @@ dvipdfm(x) でこれらの \special 命令を利用する方法については�
 
 - [出力 PDF のバージョン（とか）を指定する](http://d.hatena.ne.jp/zrbabbler/20140705/1404540914), [出力 PDF のバージョン（とか）を指定する（補足）](http://d.hatena.ne.jp/zrbabbler/20140706/1404618797)
 - [https://github.com/zr-tex8r/BXpdfver](https://github.com/zr-tex8r/BXpdfver)
-- [pdfの図が表示されない](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=690)
+- [pdfの図が表示されない](https://okumuralab.org/tex/mod/forum/discuss.php?d=690)
 - [mediabb パッケージが（あまり）役に立たない話](http://d.hatena.ne.jp/zrbabbler/20140530/1401462549)
 
 例えば，PDF 1.4 で出力したい場合はプリアンブルに
@@ -220,7 +219,7 @@ dvipdfm(x) でこれらの \special 命令を利用する方法については�
 ```
 
 としてもよいです．
-1.4 以外に，1.5, 1.6, 1.7 が指定できます．
+1.4 以外に，1.5, 1.6, 1.7, 2.0 が指定できます．
 
 コマンドラインオプションで指定することもできます．
 
@@ -231,8 +230,8 @@ dvipdfm(x) でこれらの \special 命令を利用する方法については�
 #### 画像キャッシュで高速化 {#y11c4b43}
 
 - TeX Live 2013 以降で使用可能です (→ TeX Live [Revision 29495](http://www.tug.org/svn/texlive?view=revision&revision=29495), [Revision 29512](http://www.tug.org/svn/texlive?view=revision&revision=29512) でコミットされました)
-- [Image cache in (x)dvipdfmx by Tsuchimura-san](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1153)
-- [dvipdfmx を画像キャッシュで高速化](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=958)
+- [Image cache in (x)dvipdfmx by Tsuchimura-san](https://okumuralab.org/tex/mod/forum/discuss.php?d=1153)
+- [dvipdfmx を画像キャッシュで高速化](https://okumuralab.org/tex/mod/forum/discuss.php?d=958)
 
 デフォルトでは有効にならないようになっています．
 有効にするにはコマンドラインオプション
@@ -350,7 +349,7 @@ EPS ファイルを使っていないか確認しましょう．EPS を PDF へ�
 <!-- dvipdfmx が（余計な）おかしなことをやっているというよりは，むしろ -->
 <!-- dvipdfmx が必要と思しき処理をやっていないというほうが合致します。 -->
 
-TeX Live 2016 以降および W32TeX では，\includegraphics に pagebox オプションによって “意図どおりの Box” を指定することができるようになりました．
+TeX Live 2016 以降では，\includegraphics に pagebox オプションによって “意図どおりの Box” を指定することができるようになりました．
 
 - [graphicx パッケージの仕様変更（dvipdfmx オプション）](https://okumuralab.org/tex/mod/forum/discuss.php?d=2211)
 - [graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件](http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e)
@@ -397,27 +396,27 @@ TeX Live 2016 以降および W32TeX では，\includegraphics に pagebox オ�
 
 TeX Live 2014 ([Revision 31738](http://www.tug.org/svn/texlive?view=revision&revision=31738), [Revision 31739](http://www.tug.org/svn/texlive?view=revision&revision=31739)) で修正されました．
 
-- \[[dvipdfmx\] tikz のパターン描画でエラー](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1081)
+- \[[dvipdfmx\] tikz のパターン描画でエラー](https://okumuralab.org/tex/mod/forum/discuss.php?d=1081)
 
 #### [hyperref](/hyperref/) で作成したリンクやしおりが機能しない {#x496f09a}
 
 TeX Live 2014 ([Revision 31386](http://www.tug.org/svn/texlive?view=revision&revision=31386), [Revision 31672](http://www.tug.org/svn/texlive?view=revision&revision=31672), [Revision 31691](http://www.tug.org/svn/texlive?view=revision&revision=31691), [Revision 31759](http://www.tug.org/svn/texlive?view=revision&revision=31759)) で修正されました．
 
-- [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1225)
-- [hyperref.styによる目次からのリンクが無効](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1078)
+- [hyperref パッケージの hyperlink が機能しない(OS X10.9.1, MacTeX,TeXworks )](https://okumuralab.org/tex/mod/forum/discuss.php?d=1225)
+- [hyperref.styによる目次からのリンクが無効](https://okumuralab.org/tex/mod/forum/discuss.php?d=1078)
 
 #### A5 サイズ (148mm×210mm) で出力できない {#r12477d0}
 
 TeX Live 2014 ([Revision 31398](http://www.tug.org/svn/texlive?view=revision&revision=31398)) で修正されました．
 
-- [dvipdfmxでPDF変換した際に紙のサイズが異なる](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1073)
+- [dvipdfmxでPDF変換した際に紙のサイズが異なる](https://okumuralab.org/tex/mod/forum/discuss.php?d=1073)
 
 ### dvipdfmx-20120420 で IPAexフォント (Ver.002.01) を使うと \*\* ERROR \*\* Could not obtain necessary font info. {#z5173081}
 
 TeX Live 2013 ([Revision 28787](http://www.tug.org/svn/texlive?view=revision&revision=28787)) で修正されました．
 
-- [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/qa/56967.html)
-- [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=917)
+- [dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](https://okumuralab.org/~okumura/texfaq/qa/56967.html)
+- [QA: dvipdfmxでipaexフォントを使うと\*\* ERROR \*\* Could not obtain necessary font info.](https://okumuralab.org/tex/mod/forum/discuss.php?d=917)
 
 ### dvipdfmx-20120420, xdvipdfmx-0.7.8 で [Lucida](https://en.wikipedia.org/wiki/Lucida) や [Bitstream Charter](https://en.wikipedia.org/wiki/Bitstream_Charter) のアクセント記号 (発音記号) が表示できない {#za070e82}
 
@@ -469,7 +468,7 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中に \AtBeginDvi{\special{pdf:mapline uprml-h unicode :0:msmincho.ttc}} を追加することで解決できます．
 
-- [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1218)
+- [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](https://okumuralab.org/tex/mod/forum/discuss.php?d=1218)
 - [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
 - [https://twitter.com/zr_tex8r/status/422752198724825090](https://twitter.com/zr_tex8r/status/422752198724825090)
 - [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
@@ -543,9 +542,7 @@ dvipdfmx:warning: << /Rotate 90 >> found. (Not supported yet)
 これは，PDF の中に書かれている /Rotate という回転の命令に dvipdfmx が非対応であるためです．
 バージョン 20170806 以降では /Rotate に対応しています．XeTeXも
 xdvipdfmx-20170806 に対応したものであれば，/Rotate に対応します．
-TeX Live では TeX Live 2018 になります．W32TeX の場合には，dvipdfmx, XeTeX が
-既にアプデートされており，/Rotate を含む PDF イメージのとりこみに関して，
-pdfTeX と互換になっています．
+TeX Live では TeX Live 2018 になります．
 
 現状で有効な対処法として
 
@@ -578,7 +575,7 @@ pdfTeX と互換になっています．
 
 ### PDF-1.5 以上の図を取り込めない場合がある（2014/08/14 以前の dvipdfmx の場合；原因は /DecodeParms） {#v624328c}
 
-TeX Live 2014 以前，W32TeX \[2014/08/14\] 以前の dvipdfmx では，PDF-1.5 以上の一部のファイルについて
+TeX Live 2014 以前の dvipdfmx では，PDF-1.5 以上の一部のファイルについて
 
 ```
 ** WARNING ** Streams with DecodeParams not supported.
@@ -589,7 +586,7 @@ TeX Live 2014 以前，W32TeX \[2014/08/14\] 以前の dvipdfmx では，PDF-1.5
 
 という警告を吐いて取り込みに失敗することがありました．
 これは「dvipdfmx が解釈する必要のある領域に /DecodeParms がある PDF ファイル」に dvipdfmx が未対応だったことによるものです．
-2014/08/14 の修正でそのような PDF ファイルにも対応しましたので，以降の W32TeX および TeX Live 2015 以降では問題なく取り込むことができます．
+2014/08/14 の修正でそのような PDF ファイルにも対応しましたので，TeX Live 2015 以降では問題なく取り込むことができます．
 
 - 図の挿入について [forum:1588](https://okumuralab.org/tex/mod/forum/discuss.php?d=1588)
 - [美文書6版で PDF-1.5 の取り込みに関する問題](http://d.hatena.ne.jp/acetaminophen/20150530/1433009781)，[（続）](http://d.hatena.ne.jp/acetaminophen/20150531/1433042929)
@@ -599,7 +596,7 @@ TeX Live 2014 以前，W32TeX \[2014/08/14\] 以前の dvipdfmx では，PDF-1.5
 これは，graphics/x パッケージの dvipdfm ドライバでは dvips 互換な PostScript specials を用いるのに対し，dvipdfmx ドライバ は PDF 用 specials を用いるように改良されていることが原因です．
 ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.com/zr-tex8r/5237259)）を読み込むと解決できます．
 
-- [\scaleboxの縦組時挙動に付いて](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=961)
+- [\scaleboxの縦組時挙動に付いて](https://okumuralab.org/tex/mod/forum/discuss.php?d=961)
 
 ## 関連リンク {#me536d1a}
 
@@ -630,4 +627,4 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 - \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=markup)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=log)
 
-[^1]: ただし，完全に同じというわけではありません．W32TeX には dvipdfmo というプログラムも存在し，そちらは完全に古い dvipdfm と同じ動作をします．
+[^1]: ただし，完全に同じというわけではありません．
