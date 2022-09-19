@@ -28,7 +28,7 @@ Windows, macOS, Linux, Android, iOS
 
 #### Windows {#j0820160}
 
-- [https://mupdf.com/downloads/](https://mupdf.com/downloads/) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
+- [https://mupdf.com/releases/](https://mupdf.com/releases/) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
 
 #### macOS {#bad1a3d8}
 
