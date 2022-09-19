@@ -27,16 +27,16 @@ PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) と PS, EPS フ
 
 Evince 3.30.0 (2018-09-04) で PostScript バックエンドがデフォルトで無効化されました。
 
-Arch Linux/Manjaro Linux, Linux Mint/Debian/Ubuntu, Fedora, openSUSE
+Arch Linux, Fedora, openSUSE
 などで使われているパッケージ管理システムからインストールされる Linux 版 Evince は
 PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
 - \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
 - [build: Disable PostScript backend by default (1621cacf) · Commits · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/commit/1621cacf75ebff4ab4ab0fa6855977a2d8da0ac6) &lt;-- evince 3.30.0 で enable_ps=no に変更
-- [https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6](https://git.archlinux.org/svntogit/packages.git/commit/trunk?h=packages/evince&id=e364baf233db2b2455d4c990c8000df62628bbf6) &lt;-- Arch Linux の evince 3.30.0-1 で --enable-ps が追加
-- [releasing package evince version 3.30.0-2 (7b631abe) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/7b631abe927e17919243a5407c1b79fb40ed1507), [Enable postscript (0029cfba) · Commits · GNOME / evince · GitLab](https://salsa.debian.org/gnome-team/evince/commit/0029cfba6afdf308023f387447779ffe21716ed7) &lt;-- Debian GNU/Linux の evince 3.30.0-2 で --enable-ps が追加
-- [Commit - rpms/evince - 382cdcb280f4114cecd34f0df02eda7727282b34 - Pagure](https://src.fedoraproject.org/rpms/evince/c/382cdcb280f4114cecd34f0df02eda7727282b34?branch=master) &lt;-- Fedora の evince 3.30.1-2 で --enable-ps=yes が追加
-- [File evince.changes of Package evince - openSUSE Build Service](https://build.opensuse.org/package/view_file/openSUSE:Factory/evince/evince.changes), [Request 639947 - openSUSE Build Service](https://build.opensuse.org/request/show/639947) &lt;-- openSUSE の evince 3.30.1 で --enable-ps が追加
+- [https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD) &lt;-- Arch Linux の evince は ps=enabled
+- [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt) &lt;-- Debian GNU/Linux の evince は ps=disabled
+- [https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec](https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec) &lt;-- Fedora の evince は ps=enabled
+- [https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec](https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec) &lt;-- openSUSE の evince は ps=enabled
 
 ### 動作環境 {#q9c64542}
 
@@ -101,7 +101,7 @@ PS, EPS ファイルを表示できるようにビルドすれば表示できる
 
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
-        - [homebrewで導入したevinceでpostscriptのバックエンドを復活する方法](https://qiita.com/tnagai-github/items/3051ed9e9dbfc924f5ab)
+        - PostScript バックエンドが有効化されています --&gt; [evince reenable Postscript backend](https://github.com/Homebrew/homebrew-core/commit/97ff2d8c95d6fec9781db47aadcb9f7e8b489ea7)
 - [https://www.macports.org/ports.php?by=name&substr=evince](https://www.macports.org/ports.php?by=name&substr=evince)
     - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
@@ -170,7 +170,7 @@ $ vi ~/.config/fontconfig/fonts.conf
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
-<dir>/usr/local/texlive/2021/texmf-dist/fonts/truetype/public/ipaex</dir>
+<dir>/usr/local/texlive/2022/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texlive/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf-dist/fonts/truetype/public/ipaex</dir>
 <dir>/usr/share/texmf/fonts/truetype/public/ipaex</dir>
