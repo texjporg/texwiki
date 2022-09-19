@@ -123,7 +123,6 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [MyTeXpert:MacTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?MacTeX)
-- [VSCodeでLaTeX環境構築（Win, Mac対応, BigSur対応）](https://www.russyi.com/tech-latex-vscode/)
 - [2022年のコンピューターノウハウ (Mac) 2 MacTeX 2022が来ました](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2022/node2.html)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
