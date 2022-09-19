@@ -35,7 +35,19 @@ Perl 5 で書かれたスクリプトがあります（[latexmk.pl](/Latexmk/) �
 Strawberry Perl を C:\strawberry にインストールした場合は
 
 ```
-;C:\strawberry\c\bin;C:\strawberry\perl\site\bin;C:\strawberry\perl\bin
+C:\strawberry\c\bin
+```
+
+と
+
+```
+C:\strawberry\perl\site\bin
+```
+
+と
+
+```
+C:\strawberry\perl\bin
 ```
 
 がシステム環境変数 Path に追加されます．
