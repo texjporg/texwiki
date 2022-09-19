@@ -448,7 +448,7 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
 
 参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです。通常は問題ありませんが，まれに問題を引き起こすかもしれません。
-なお、GSview 5.0 は gs-9.53.0 以上には対応していません。[GSview 5.01 beta は gs-9.53.0 release candidate で動作します。](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=commit;h=09e7545912ad1439e38d2b56516f50b150ff50eb)
+なお、GSview 5.0 は gs-9.56.1 には対応していません。[GSview 5.01beta は gs-9.56.1 に対応しています。（動作確認済み）](/GSview/#install)
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
@@ -753,7 +753,7 @@ composefont pop
 
 - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
-#### ChangeLog (tlgs.win32) {#a9e655e3}
+#### tlgs {#a9e655e3}
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
@@ -775,4 +775,4 @@ composefont pop
 - [https://cygwin.com/cygwin/packages/x86_64/ghostscript/](https://cygwin.com/cygwin/packages/x86_64/ghostscript/)
 - [https://cygwin.com/cygwin/packages/x86/ghostscript/](https://cygwin.com/cygwin/packages/x86/ghostscript/)
 
-[^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2276)&#x29;
+[^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://okumuralab.org/tex/mod/forum/discuss.php?d=2276)&#x29;
