@@ -25,21 +25,6 @@ uplatex, platex 以外のエンジンでも利用可能にした [BXjscls](/BXjs
 
 [TeX Live](</TeX Live/>) には jsclasses パッケージが最初からインストールされています．
 
-[W32TeX](/W32TeX/) の場合は
-（[uptex-w32.tar.xz](ftp://ftp.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz)）
-をインストールすれば新ドキュメントクラスがインストールされます．
-手動でインストールする場合は jsclasses パッケージを $TEXMFLOCAL/tex/platex/jsclasses/
-（例えば C:\w32tex\share\texmf-local\tex\platex\jsclasses\）
-に展開すれば OK です。
-
-もしファイル名のデータベース
-$TEXMF/ls-R（例えば C:\w32tex\share\texmf\ls-R）が存在するのなら，mktexlsr
-コマンド[^1]でデータベースを更新しないと，新しくインストールしたファイルが認識されません．
-しかしこれは忘れやすいので，初心者のかたは
-mktexlsr コマンドを打ち込まないほうがいいでしょう．
-W32TeX を使用していて間違って mktexlsr コマンドを打ち込んでしまった場合は
-deltexlsr コマンドを打ち込めば，$TEXMF/ls-R ファイルが削除されます。
-
 ### 使い方 {#q5891f40}
 
 [LaTeX入門](</LaTeX入門/>) を参照．
@@ -78,5 +63,3 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
 #### pLaTeX2e 新ドキュメントクラス {#k48ec8db}
 
 - [pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)
-
-[^1]: 環境によっては texhash コマンドかもしれません．
