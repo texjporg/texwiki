@@ -20,7 +20,7 @@ PostScript は業界標準のページ記述言語です．
 
 PostScript の技術情報は Adobe の [Technical Notes for Developers](http://partners.adobe.com/asn/tech/ps/specifications.jsp) から全て得ることができます．
 
-- [Adobe PostScript language specifications](http://partners.adobe.com/public/developer/ps/index_specs.html)
+- [PostScript Language Reference, third edition - Adobe](https://www.adobe.com/jp/print/postscript/pdfs/PLRM.pdf) (PDF)
 - [PostScript &amp; GhostScript Resources](http://www.inkguides.com/postscript.asp)
 - [Beyond Linux® From Scratch (PostScript)](http://lfsbookja.osdn.jp/BLFS/svn-ja/pst/ps.html)
 - [Gutenprint (formerly called Gimp-Print)](http://gimp-print.sourceforge.net/)（高品質のプリンタドライバ）
