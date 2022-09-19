@@ -280,7 +280,8 @@ color special の引数の &lt;色指定> の書式は次の通りです。
     - gray &lt;G>
 - 「" &lt;PostScriptコード>」で任意の“色を設定するためのコード”が指定できます。
 
-※(x)color パッケージについて，dvips 等のいくつかのドライバは color special を利用しています。（dvipdfmx 用ドライバは PDF special を利用。）
+※(x)color パッケージについて，dvips 等のいくつかのドライバは color special を利用しています。
+かつて dvipdfmx 用ドライバは PDF special を利用していましたが，2017 年 6 月の改修で dvips と同様の color special に置き換わりました（共通部分が増えるとメンテナンスが容易になるため）。
 
 ### PostScript special {#ps-specials}
 
