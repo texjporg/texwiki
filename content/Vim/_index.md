@@ -117,14 +117,12 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 これで，気持ち良く LaTeX on Vim できますね。 
 
 - [tex.vim](/Vim/tex.vim/)
-- vimtex
-- LaTeX Box
+- [VimTeX](/VimTeX/)
 - [quickrun](/quickrun/)
 - [neocomplete &amp; neosnippet](/neocomplete/)
 - [UltiSnips](https://github.com/SirVer/ultisnips)
 - [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 - [Vim-LaTeX](/Vim-LaTeX/)
-- ATP
 - [latex-support.vim : LaTeX-IDE for Vim/gVim ](https://www.vim.org/scripts/script.php?script_id=4405)
 - [vim-latex-live-preview](https://www.vim.org/scripts/script.php?script_id=4524)
 - [platex-suite](https://github.com/lambdalisue/platex.vim)
@@ -168,7 +166,7 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 
 SumatraPDF はコマンドラインから forward search が可能です．
 
-詳しくは，[tex.vim](/Vim/tex.vim/), vimtex, [Vim-LaTeX](/Vim-LaTeX/) を参照してください．
+詳しくは，[tex.vim](/Vim/tex.vim/), [VimTeX](/VimTeX/), [Vim-LaTeX](/Vim-LaTeX/) を参照してください．
 
 ### inverse search {#b8f7bf28}
 
@@ -176,9 +174,9 @@ SumatraPDF はコマンドラインから forward search が可能です．
 
 [Vim-LaTeX](/Vim-LaTeX/) を参照．<br>
 
-#### tex.vim, vimtex, LaTeX Box, quickrun の場合 {#b099e4df}
+#### tex.vim, VimTeX, LaTeX Box, quickrun の場合 {#b099e4df}
 
-tex.vim, vimtex, LaTeX Box, quickrun の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
+tex.vim, VimTeX, LaTeX Box, quickrun の場合 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
 
 ```
 "C:\vim\gvim.exe" -n --remote-silent +%l "%f"
