@@ -9,14 +9,13 @@ pukiwiki: "Ispell"
 
 ## [Ispell](http://www.cs.hmc.edu/~geoff/ispell.html) {#m5b4a889}
 
-Ispell は，西洋の多くの言語をサポートした 古典的なUNIX 向けスペルチェッカです。Ispellの代替として[Aspell](/Aspell/)が長く使われてきましたが、現在は、MySpellをベースに開発された[Hunspell](/Hunspell/)が主流です。
+Ispell は，西洋の多くの言語をサポートした 古典的な UNIX 向けスペルチェッカです。Ispellの代替として [Aspell](/Aspell/) が長く使われてきましたが、現在は、[MySpell](https://en.wikipedia.org/wiki/MySpell) をベースに開発された [Hunspell](/Hunspell/) が主流です。
 Windows の場合は[角藤さんによる移植版](http://www.ring.gr.jp/archives/text/TeX/ptex-win32/w32/)を利用できます．
 
 ### 使い方 {#web8b1ab}
 
 - [ispellメモ - 理工系研究者のための Mac OS X メモ](http://www.proton.jp/main/apps/ispell.html)
 - [Ispell](http://www.an.econ.kobe-u.ac.jp/~namba/meadow/setup_08.html) （古い解説）
-- [ispellでスペルチェック](http://www.math.sci.hokudai.ac.jp/~abenori/soft/chm/fortex/howto/ispell.html) （[秀丸エディタ](</秀丸エディタ/>) + 祝鳥での利用）
 
 ### Ispell へのドイツ語辞書の追加法 {#l61b1466}
 
