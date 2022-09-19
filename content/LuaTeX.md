@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2022 には LuaHBTeX 1.15.0, LuaTeX 1.15.0 が収録されています。
+
 TeX Live 2021 には LuaHBTeX 1.13.2, LuaTeX 1.13.2 が収録されています。
 
 TeX Live 2020 には LuaHBTeX 1.12.0, LuaTeX 1.12.0 が収録されています。LuaLaTeX は LuaHBTeX ベースになりました。
@@ -34,6 +36,8 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 2016 年に LuaTeX 1.0.0 がリリースされました。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2022 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX (1.15.0) バイナリと LuaTeX (1.15.0) バイナリが収録されています。
 
 TeX Live 2021 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX (1.13.2) バイナリと LuaTeX (1.13.2) バイナリが収録されています。
 
@@ -82,7 +86,7 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
 - [にっき&#9834;: LuaTeXの検索結果](http://abenori.blogspot.com/search?q=LuaTeX&by-date=true)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
-- [os.execute() in LuaTeX 0.75.0](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
+- [os.execute() in LuaTeX 0.75.0](https://okumuralab.org/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
 - [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
 - [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
