@@ -16,7 +16,7 @@ pukiwiki: "NppExec"
 ## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) を使用する {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
-[https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/](https://sourceforge.net/projects/npp-plugins/files/NppExec/NppExec%20Plugin%20v0.5.9.9%20dev/) から NppExec の 64-bit プラグイン（NppExec20160628_dll_x64-2.zip）あるいは 32-bit プラグイン（NppExec20160628_dll.zip）がダウンロードできます．<br>
+[https://sourceforge.net/projects/npp-plugins/files/NppExec/](https://sourceforge.net/projects/npp-plugins/files/NppExec/) から NppExec の 64-bit プラグインあるいは 32-bit プラグインがダウンロードできます．<br>
 \[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
