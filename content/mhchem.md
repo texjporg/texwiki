@@ -9,7 +9,7 @@ pukiwiki: "mhchem"
 
 ## mhchem {#vc73fc75}
 
-[mhchem](http://www.ctan.org/pkg/mhchem) は，化学式や反応式を書くためのパッケージです．
+[mhchem](https://ctan.org/pkg/mhchem) は，化学式や反応式を書くためのパッケージです．
 
 [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
 
