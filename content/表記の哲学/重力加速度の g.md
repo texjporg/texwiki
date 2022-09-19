@@ -81,7 +81,7 @@ pukiwiki: "表記の哲学/重力加速度の g"
 
 ### 参考文献 {#y99182d5}
 
-- 奥村晴彦: 『\[[改訂第 3 版\] LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』, 技術評論社, 2004.2, p. 93.
+- 奥村晴彦: 『\[[改訂第 3 版\] LaTeX2e 美文書作成入門](https://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』, 技術評論社, 2004.2, p. 93.
 
 ### コメント {#g27ade79}
 
