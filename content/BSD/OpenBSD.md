@@ -11,7 +11,9 @@ pukiwiki: "BSD/OpenBSD"
 
 ## [OpenBSD](http://www.openbsd.org/) {#xa96e58c}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## OpenBSD とは {#vae9e6c5}
 
