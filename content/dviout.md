@@ -192,8 +192,8 @@ dviout で印刷がうまくいかない場合は dvipdfmx または dvips + ps2
 
 dviout for Windows は [Susie](https://www.digitalpad.co.jp/~takechin/)プラグインをインストールすることで PNG, JPEG 画像フォーマットを表示することができます。
 
-- [\`dviout' for package \`graphics'に関しての質問](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=2235)
-- [\`dviout' for package \`graphics'.](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1569)
+- [\`dviout' for package \`graphics'に関しての質問](https://okumuralab.org/tex/mod/forum/discuss.php?d=2235)
+- [\`dviout' for package \`graphics'.](https://okumuralab.org/tex/mod/forum/discuss.php?d=1569)
 
 うまくいかない場合は，dvipdfmx で PDF ファイルを出力して [SumatraPDF](/SumatraPDF/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などでプレビューしてください。
 
@@ -239,6 +239,9 @@ synctex help edit
 
 ## 関連リンク {#a0623ac1}
 
+- [CTAN dviout](https://ctan.org/tex-archive/dviware/dviout)
+- [TeX Users Group - subversion repository](https://www.tug.org/svn/dviout/)
+- [TeX Users Group - dviout Mailing List](https://tug.org/mailman/listinfo/dviout)
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/) [関連ファイル](http://argent.shinshu-u.ac.jp/~otobe/tex/files/) (乙部先生@信州大学)
 - [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://twitter.com/aminophen/status/873785429765480448)
 
@@ -255,16 +258,25 @@ Expat License については
 
 ### リリース情報 {#uce3262c}
 
-2013-12-14 dviout 3.18.4 ALPHA 1
+#### 2013-12-14 dviout 3.18.4 ALPHA 1 {#l6ffa3ca}
 
 dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正されています。
 
 - [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された，サイズの大きい PK フォントについてバグがあります。
 - 非常に長いフォント名を与えるとクラッシュします。
 
+#### 2021-05-09 dviout 3.19.0 {#z948889f}
+
+TeX Users Group [subversion repository](https://www.tug.org/svn/dviout/)のソースコードによるビルドです。
+
+- 0x8000〜0xFFFFFF(24bit)の文字コードを持つjfmの読み込みに対応
+- CID コード → Unicode 変換を Adobe-Japan1-7 対応に
+- chkfont.exe: TFM/JFMモードでOFM level 0, 1に対応。FONTモードでVF/OVFフォーマットに対応。
+
 ### ChangeLog {#r5124b5a}
 
 - \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
     - [log](http://tug.org/svn/dviout/trunk/?view=log)
+    - [ChangeLog](http://tug.org/svn/dviout/trunk/ChangeLog?view=log)
 - \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
     - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
