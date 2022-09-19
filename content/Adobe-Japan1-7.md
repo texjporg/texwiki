@@ -12,7 +12,7 @@ pukiwiki: "Adobe-Japan1-7"
 Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe-Japan1-6/) に新元号「[令和](https://ja.wikipedia.org/wiki/%E4%BB%A4%E5%92%8C)」の合字を追加したものです。
 
 - [GitHub - adobe-type-tools/Adobe-Japan1: The Adobe-Japan1-7 Character Collection](https://github.com/adobe-type-tools/Adobe-Japan1/)
-- [Adobe-Japan1-7 Published!](http://blogs.adobe.com/CCJKType/2019/04/aj17-published.html)
+- [Adobe-Japan1-7 Published!](https://ccjktype.fonts.adobe.com/2019/04/aj17-published.html)
 - [QA: upTeX 1.24, upTeXの新元号対応](https://okumuralab.org/tex/mod/forum/discuss.php?d=2570)
 - [新元号対応, Adobe-Japan1-7 · Issue #13 · texjporg/japanese-otf-mirror · GitHub](https://github.com/texjporg/japanese-otf-mirror/issues/13)
 - [グループ:aj1-23058-23059 - GlyphWiki](http://glyphwiki.org/wiki/Group:aj1-23058-23059)
