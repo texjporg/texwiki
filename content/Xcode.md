@@ -10,7 +10,7 @@ pukiwiki: "Xcode"
 ## Xcode {#u93d03a4}
 
 - [https://developer.apple.com/xcode/](https://developer.apple.com/xcode/)
-- [https://developer.apple.com/xcode/jp/](https://developer.apple.com/xcode/jp/)
+- [https://developer.apple.com/jp/xcode/](https://developer.apple.com/jp/xcode/)
 
 ### 動作環境 {#l2d97464}
 
