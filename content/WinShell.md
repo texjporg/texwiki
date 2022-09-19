@@ -77,7 +77,7 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 ### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
-- [ACROBAT　Xと美文書４版との整合性](https://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=1761)
+- [ACROBAT　Xと美文書４版との整合性](https://okumuralab.org/tex/mod/forum/discuss.php?d=1761)
 
 Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
 Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
@@ -93,12 +93,12 @@ Cannot start AcrobatReader or open the document.
 
 という警告メッセージが表示され，PDF ファイルが表示できない場合があります。
 
-<img src="https://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/10292/winshell.png" alt="" width="50%">
+<img src="https://okumuralab.org/tex/file.php/2/moddata/forum/2/10292/winshell.png" alt="" width="50%">
 
 この問題は，Adobe Acrobat Reader DC を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewR21
+AcroViewA22
 ```
 
 に修正することで解消できます。
@@ -107,8 +107,7 @@ AcroViewR21
 DDE を使用する場合は PDFView を以下のように設定します。
 
 - exeファイル名：
-    - "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (64-bit 版 Windows の場合)
-    - "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (32-bit 版 Windows の場合)<br>
+    - "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe"
 - コマンドライン：
     - "%s.pdf"
 
@@ -117,8 +116,7 @@ DDE を使用しない場合は PDFView を以下のように設定します。
 - exeファイル名：
     - cmd.exe
 - コマンドライン：
-    - /c start "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" "%s.pdf" (64-bit 版 Windows の場合)
-    - /c start "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" "%s.pdf" (32-bit 版 Windows の場合)
+    - /c start "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" "%s.pdf"
 
 ### 主なTeXプログラムの設定に使用するコマンドラインの引数のパースの仕方に問題がある → Ruby, Windows PowerShell, バッチファイル などを使用する {#v088befc}
 
