@@ -12,7 +12,7 @@ pukiwiki: "XyMTeX"
 XyMTeX は[藤田眞作さん](http://xymtex.com/fujitas/)@[湘南情報数理化学研究所](http://xymtex.com/)による化学構造式を描画するマクロ集です．
 
 - [XyMTeX 化学構造式描画](http://xymtex.com/fujitas3/xymtex/)
-- [http://www.ctan.org/pkg/xymtex](http://www.ctan.org/pkg/xymtex)
+- [https://ctan.org/pkg/xymtex](https://ctan.org/pkg/xymtex)
 
 TeX Live, W32TeX に含まれています．
 
