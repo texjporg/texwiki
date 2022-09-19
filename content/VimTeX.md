@@ -13,7 +13,7 @@ pukiwiki: "VimTeX"
 
 VimTeX は Vim の LaTeX プラグインです．
 
-- [GitHub - lervag/vimtex: A modern vim plugin for editing LaTeX files.](https://github.com/lervag/vimtex)
+- [GitHub - lervag/vimtex: VimTeX: A modern Vim and neovim filetype plugin for LaTeX files.](https://github.com/lervag/vimtex)
 - [MyTeXpert:Vim/vimtex](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Vim%2Fvimtex)
 
 ***
@@ -28,7 +28,7 @@ VimTeX は Vim の LaTeX プラグインです．
 - [CLIのneovimでSkimとSyncTeXするには](http://qiita.com/KeitaNakamura/items/87dad47dc09ae8bf6abf)
 - [vimtexでuplatexがコンパイルできない（vimtex_compiler_latexmkの設定）](https://sakura-education.com/myblog/archives/936)
 
-vimtex はタイプセットに Latexmk を使用します．
+VimTeX はタイプセットに Latexmk を使用します．
 [Latexmk](/Latexmk/) を参照して latexmk の設定ファイルを作成して $HOME/vimfiles/vimrc (Windows), $HOME/.vim/vimrc (macOS, Linux) に
 
 ```
