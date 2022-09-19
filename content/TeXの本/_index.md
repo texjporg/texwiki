@@ -24,7 +24,7 @@ TeX や LaTeX に関する本の紹介です．
     [TeX/LaTeX 入門](http://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://www.facebook.com/watanabe.thor))
-    - [FrontPage - MyTeXpert](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?FrontPage)
+    <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
     - [myTeXpert プロジェクト日本語トップページ - OSDN](https://ja.osdn.net/projects/mytexpert/)
     - 『[好き好き LaTeX2e 初級編](https://ja.osdn.net/projects/mytexpert/releases/p6276)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
@@ -73,7 +73,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2022年 {#v85cf0f1}
 
-- [明松 真司](https://www.skillupai.com/teacher/akematsu-shinji/)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
+- [明松 真司](https://mobile.twitter.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税），[ISBN 978-4295013884](http://ja.wikipedia.org/wiki/Special:Booksources/978-4295013884)）
 
 #### 2021年 {#jf0f3e5a}
