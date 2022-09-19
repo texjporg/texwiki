@@ -42,7 +42,7 @@ Windows
 
 ### License {#p3f91661}
 
-[GPLv2](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
+[GPLv3](https://github.com/notepad-plus-plus/notepad-plus-plus/blob/master/LICENSE)
 
 ### リリース情報/ChangeLog {#q10cf331}
 
