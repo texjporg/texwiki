@@ -7,7 +7,7 @@ pukiwiki: "Texmake/設定/macOS"
 
 # Texmake/設定/macOS
 
-[Texmaker](/Texmaker/) > [設定](</Texmaker/設定/>) > [OS X](/Mac/)
+[Texmaker](/Texmaker/) > [設定](</Texmaker/設定/>) > [macOS](/Mac/)
 
 ***
 
@@ -27,8 +27,8 @@ PDFビューアは，組み込みビューアと外部ビューアを選択す�
 コマンドの Dvipdfm に設定されている dvipdfm を dvipdfmx に変更します．<br>
 BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してください．<br>
 
-- [TeXmakerでbibTeXとdvipdfmxが動きません](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=988)
-- [TeXshopでbibTeXがうまく動かなくなりました](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=991)
+- [TeXmakerでbibTeXとdvipdfmxが動きません](https://okumuralab.org/tex/mod/forum/discuss.php?d=988)
+- [TeXshopでbibTeXがうまく動かなくなりました](https://okumuralab.org/tex/mod/forum/discuss.php?d=991)
 
 ***
 
