@@ -15,7 +15,7 @@ pukiwiki: "AMS-LaTeX"
 AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した amsmath と，
 アメリカ数学会の組版ルールに従った文書を作るための amscls の 2 つに分けられます。<br>
 
-TeX Live, W32TeX には最初から含まれていますが，
+TeX Live には最初から含まれていますが，
 [http://www.ams.org/publications/authors/tex/amslatex](http://www.ams.org/publications/authors/tex/amslatex) や
 [CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
 
