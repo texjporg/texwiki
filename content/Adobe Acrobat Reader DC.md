@@ -117,7 +117,7 @@ wine AcroRdrDC2200220191_ja_JP.exe
 Linux で Adobe Acrobat Reader DC (32-bit) を起動して file.pdf を表示するには
 
 ```
-wine cmd /c start Acrobat.exe file.pdf
+wine cmd /c start AcroRd32.exe file.pdf
 ```
 
 のように実行して「常に保護モードを無効にして開く(<ins>A</ins>)」を選択して OK を押します。
