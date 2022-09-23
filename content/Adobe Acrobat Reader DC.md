@@ -77,8 +77,9 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 ### Linux <a id="linux"></a> {#s5dbb0cf}
 
+- [Install Adobe Acrobat Reader DC on Ubuntu 22.04 LTS Jammy](https://www.how2shout.com/linux/install-adobe-acrobat-reader-dc-on-ubuntu-22-04-lts-jammy/)
 - [How to Install Latest Adobe Acrobat Reader DC on Ubuntu 18.04 Bionic Beaver Linux with Wine](https://linuxconfig.org/how-to-install-latest-adobe-acrobat-reader-dc-on-ubuntu-18-04-bionic-beaver-linux-with-wine)
-- [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](http://motchy99.blog.fc2.com/blog-entry-106.html)
+- [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](https://motchy99.blog.fc2.com/blog-entry-102.html)
 
 Arch Linux/Manjaro Linux の場合は
 
@@ -89,7 +90,7 @@ sudo pacman -S wine winetricks
 Linux Mint/Debian/Ubuntu の場合は
 
 ```
-sudo apt install wine-development winetricks
+sudo apt install wine64 winetricks
 ```
 
 Fedora の場合は
@@ -109,6 +110,7 @@ sudo zypper install wine
 以下のコマンドを実行して Adobe Acrobat Reader DC (32-bit) をインストールします。
 
 ```
+winetricks allfonts
 winetricks mspatcha
 wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200220191/AcroRdrDC2200220191_ja_JP.exe
 wine AcroRdrDC2200220191_ja_JP.exe
