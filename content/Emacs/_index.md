@@ -30,7 +30,7 @@ GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS Windows, Solaris などの O
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://ja.osdn.net/projects/opensource/wiki/licenses%2FGNU_General_Public_License_version_3.0)) でリリースされています．
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://licenses.opensource.jp/GPL-3.0/GPL-3.0.html)) でリリースされています．
 
 ### ダウンロード {#m56139cf}
 
@@ -337,8 +337,6 @@ Source editor:
 - [Windows環境でEmacs+C/Migemoの設定に詰まったのでメモ](http://grugrut.hatenablog.jp/entry/2015/04/emacs-migemo-on-windows)
 - [Emacs 24のpackage管理機能を使う](http://keisanbutsuriya.hateblo.jp/entry/2015/01/29/182251)
 - [emacs.exe と emacsclient.exe を自動的に使い分ける AutoHotkey のスクリプトを作成した (gnupack 向け)](http://blechmusik.hatenablog.jp/entry/20120721/1342805665)
-- [うわっ...私のEmacs、使いにくすぎ？だったら...ｶｽﾀﾏｲｽﾞｼﾔｯｾｰ!!ﾀﾞｧﾀﾞｧｼｴﾘｲｪｯｽｯｼｪｰｼｮｰﾍｲﾍｲ!!!](http://d.hatena.ne.jp/sandai/20120304/p2)
-- [Emacs使いのミサワがWindowsで(NT)Emacs使うってそれどこ情報よー](http://d.hatena.ne.jp/sandai/20101015/p1)
 - [Emacs - SanRin舎](https://tmsanrinsha.net/post/2010/07/emacs-1/)
 - [Emacs 23.1登場](http://dev.ariel-networks.com/articles/emacs/part6/)
 - [GNU Emacsのinitファイルの置き場所＠Windows7](http://tamatamablog.blog.so-net.ne.jp/2010-02-10)
