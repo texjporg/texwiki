@@ -61,7 +61,7 @@ TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含�
 
 #### インストール方法 {#q1167b48}
 
-1. Ghostscript インストーラ（gs1000w64.exe）を実行します。
+1. 最新の角藤版 Ghostscript インストーラ（gs1000w64full-gpl.exe）または本家版 Ghostscript インストーラ（gs1000w64.exe）を実行します。
     - デフォルトのインストール先は “C:\Program Files\gs\gs10.00.0” です。
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.00.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
