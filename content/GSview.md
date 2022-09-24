@@ -100,13 +100,13 @@ GSview のベータ版には使用期限が設けられており 5.01beta 2020-0
 
 を実行すると gsview-09e7545\bin に実行ファイル gsview64.exe が作成されます。
 
-64-bit 角藤版 Ghostscript 9.56.1 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
+64-bit 角藤版 Ghostscript 10.00.0 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
 
 Ghostscript DLL:
-: C:\Program Files\gs\gs9.56.1\bin\gsdll64.dll
+: C:\Program Files\gs\gs10.00.0\bin\gsdll64.dll
 
 Ghostscript include Path:
-: C:\Program Files\gs\gs9.56.1\Resource\Init;C:\Program Files\gs\gs9.56.1\Resource;C:\Program Files\gs\gs9.56.1\bin;C:\Program Files\gs\gs9.56.1\lib;C:\Program Files\gs\gs9.56.1\kanji;C:\Program Files\gs\gs9.56.1\fonts
+: C:\Program Files\gs\gs10.00.0\Resource\Init;C:\Program Files\gs\gs10.00.0\Resource;C:\Program Files\gs\gs10.00.0\bin;C:\Program Files\gs\gs10.00.0\lib;C:\Program Files\gs\gs10.00.0\kanji;C:\Program Files\gs\gs10.00.0\fonts
 
 Ghostscript Options:
 : -dSAFER -dNOPLATFONTS -sFONTPATH="c:\psfonts"
