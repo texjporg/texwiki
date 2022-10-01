@@ -64,14 +64,13 @@ Linux の場合はパッケージ管理システムからインストールす�
 
 Texmaker はデフォルトでは英語でメニューが表示されますが，メニューを日本語化するためのファイルが作成されています．
 
-#### Texmaker 4.0.1 {#h11371e4}
+#### Texmaker 5.0.2 {#h11371e4}
 
 texmaker_jp.qm を texmaker.exe と同じフォルダーに置いて Texmaker を起動して
 <ins>O</ins>ptions &gt; Interface Language &gt; jp を選択して Texmaker を再起動するとメニューが日本語化されます．
 
-- [TexmakerでTeX文書を書こう！](http://writingwithtexmaker.blogspot.jp/)
-    - [日本語キットfor texmaker4.0.1](http://writingwithtexmaker.blogspot.jp/2013/04/texmaker40.html)
-        - [texmaker_jp.qm4texmaker4.0.1_20130306.zip](https://box.yahoo.co.jp/guest/viewer?sid=box-l-eoqe3irxlbfhq6sxm5553ou5rm-1001&uniqid=5f8f02fe-2d42-4fc2-ac67-1f3501d2f74a&viewtype=detail)
+- [TexMaker で日本語文書を作成する環境を構築する](https://wiis.info/blog/how-to-write-japanese-documents-with-texmaker/#elementor-toc__heading-anchor-2)
+- [UbuntuでTeXmakerの日本語化（UI+日本語対応)](https://jp.magicode.io/nibosea/articles/8ac5ebe0b96c48e98bc65af8f3dcaae7)
 
 ## 不具合 {#h6093782}
 
