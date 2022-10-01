@@ -234,8 +234,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "powershell -Command \"& {Get-Process -Name MicrosoftEdgeCP 2>$null;if($?){for($i=0;$i -lt 3;$i++){Stop-Process -Name MicrosoftEdgeCP;Start-Sleep -Seconds 1}};Start-Process shell:AppsFolder\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge (Get-Item \"\"\"%s.pdf\"\"\").FullName}\""
                                      TeX-run-discard-or-function t t :help "Run Microsoft Edge"))
                       (add-to-list 'TeX-command-list
-                                   '("AcroRead"
-                                     "powershell -Command \"& {Get-Process -Name AcroRd32 2>$null;if($?){Stop-Process -Name AcroRd32};Start-Process synctex -ArgumentList ('view', '-i', '\"\"\"%n:0:%b\"\"\"', '-o', '\"\"\"%s.pdf\"\"\"', '-x', '\"\"\"rundll32 shell32,ShellExec_RunDLL AcroRd32 /A ''page=%%{page+1}'' ''%%{output}''\"\"\"')}\""
+                                   '("Acrobat"
+                                     "powershell -Command \"& {Get-Process -Name Acrobat 2>$null;if($?){Stop-Process -Name Acrobat};Start-Process synctex -ArgumentList ('view', '-i', '\"\"\"%n:0:%b\"\"\"', '-o', '\"\"\"%s.pdf\"\"\"', '-x', '\"\"\"rundll32 shell32,ShellExec_RunDLL Acrobat /A ''page=%%{page+1}'' ''%%{output}''\"\"\"')}\""
                                      TeX-run-discard-or-function t t :help "Forward search with Adobe Acrobat Reader DC")))))
 
 ;;
@@ -261,7 +261,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
 > <tr><td>Edge</td><td>C-c C-c edge RET</td><td>Edge でプレビュー</td></tr>
-> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC で forward search</td></tr>
+> <tr><td>Acrobat</td><td>C-c C-c acrobat RET</td><td>Adobe Acrobat Reader DC で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -359,7 +359,7 @@ C-x C-f ~/
                                      "open -a \"Google Chrome\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Google Chrome"))
                       (add-to-list 'TeX-command-list
-                                   '("AcroRead"
+                                   '("Acrobat"
                                      "open -a \"Adobe Acrobat Reader DC\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
@@ -387,7 +387,7 @@ C-x C-f ~/
 > <tr><td>TeXstudio</td><td>C-c C-c texstudio RET</td><td>TeXstudio で forward search</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
-> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
+> <tr><td>Acrobat</td><td>C-c C-c acrobat RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -494,7 +494,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "chromium --new-window %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Chromium"))
                       (add-to-list 'TeX-command-list
-                                   '("AcroRead"
+                                   '("Acrobat"
                                      "wine cmd /c start AcroRd32.exe %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader DC")))))
 
@@ -526,7 +526,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>MuPDF</td><td>C-c C-c mupdf RET</td><td>MuPDF でプレビュー</td></tr>
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chromium</td><td>C-c C-c chromium RET</td><td>Chromium でプレビュー</td></tr>
-> <tr><td>AcroRead</td><td>C-c C-c acroread RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
+> <tr><td>Acrobat</td><td>C-c C-c acrobat RET</td><td>Adobe Acrobat Reader DC でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
