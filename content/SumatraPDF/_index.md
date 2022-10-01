@@ -103,16 +103,10 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 
 どのように設定するかは統合環境，テキストエディタ +（マクロ・プラグイン）によって異なるのでそれぞれのマニュアルを見て設定してください．
 
-64-bit Windows での [TeXstudio](/TeXstudio/) であれば
+[TeXstudio](/TeXstudio/) であれば
 
 ```
-"C:\Program Files (x86)\TeXstudio\texstudio.exe" "%f" -line %l
-```
-
-32-bit Windows での TeXstudio であれば
-
-```
-"C:\Program Files\TeXstudio\texstudio.exe" "%f" -line %l
+"C:\Program Files\texstudio\texstudio.exe" "%f" -line %l
 ```
 
 となります．
@@ -132,9 +126,9 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
     - [SumatraPDF pre-release builds](https://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
-- [Sumatra Reader Discussion Forum](https://forum.sumatrapdfreader.org/)
+- [Discussions · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/discussions)
 - [MyTeXpert:SumatraPDF](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?SumatraPDF)
-- [Sumatora PDF のインストールと設定](http://blog.fujioizumi.verse.jp/?eid=230)
+- [Sumatra PDF のインストールと設定 | 　お知らせ＋活動記録＋たわごと](http://blog.fujioizumi.verse.jp/?eid=230)
 
 #### License {#f48c8095}
 
