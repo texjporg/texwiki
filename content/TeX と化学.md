@@ -15,7 +15,7 @@ pukiwiki: "TeX と化学"
 - [ChemSketch](http://www.acdlabs.com/resources/freeware/chemsketch/)
     ：for Windows（要登録：個人または教育用に限り無償）
 
-- [Accelrys Draw](http://accelrys.co.jp/products/informatics/cheminformatics/draw/)
+- [BIOVIA Draw](https://ls.ctc-g.co.jp/products/accelrys/accelrys_draw_direct.html)
     ：for Windows（要登録：教育用に限り無償）
 
 - [Marvin Sketch](https://patcore.com/product/marvin_sketch/)
