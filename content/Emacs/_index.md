@@ -186,7 +186,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 ### inverse search {#vecb4fd9}
 
 AUCTeX を使用する場合は TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
-YaTeX または TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
+YaTeX を使用する場合は YaTeX 2022-09-24 以降に更新します．TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (require 'dbus)
