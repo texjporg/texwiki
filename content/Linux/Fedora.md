@@ -60,16 +60,8 @@ sudo ./cjk-gs-integrate.pl --link-texmf --force
 
 ### [Python](/Python/) {#z2c220a1}
 
-#### Python 3 {#o15f7222}
-
 ```
 sudo dnf install python3
-```
-
-#### Python 2 {#c019fdb6}
-
-```
-sudo dnf install python2
 ```
 
 ### Julia {#h3524e63}
@@ -169,7 +161,7 @@ sudo dnf install vim
 ### [Inkscape](/Inkscape/) {#ue2d802a}
 
 ```
-sudo dnf install inkscape texlive-latex texlive-dvips texlive-dvisvgm pstoedit python-lxml
+sudo dnf install inkscape
 ```
 
 ### ibus-kkc {#a96c1055}
