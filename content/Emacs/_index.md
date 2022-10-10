@@ -186,7 +186,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 ### inverse search {#vecb4fd9}
 
 AUCTeX を使用する場合は TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
-YaTeX を使用する場合は YaTeX 2022-09-24 以降に更新します．TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
+YaTeX を使用する場合は YaTeX 1.82.1 (2022-09-24) 以降に更新します．TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (require 'dbus)
@@ -224,7 +224,7 @@ YaTeX を使用する場合は YaTeX 2022-09-24 以降に更新します．TeX m
 
 Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
 
-[Arch Linux](</Linux/Arch Linux/>) の Evince 3.18.2, GNU Emacs 24.5.1 で動作確認しています．
+TeX Live 2021, Evince 42.0, GNU Emacs 28.1 で動作確認しています．
 日本語のファイル名でも inverse search ができます．
 
 <!-- ディレクトリ名およびファイル名に日本語を含むと不具合が起こります． -->
