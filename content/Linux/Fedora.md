@@ -118,9 +118,9 @@ sudo dnf install qpdfview
 sudo dnf install mupdf
 ```
 
-### [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) {#k1d313de}
+### [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) {#k1d313de}
 
-[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/#linux>)
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/#linux>)
 
 ### [LyX](/LyX/) {#n0d7807d}
 
