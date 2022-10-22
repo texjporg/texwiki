@@ -192,7 +192,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process AcroRd32 -ArgumentList ($p)}\"")
+(setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process Acrobat -ArgumentList ($p)}\"")
 ```
 
 ```
@@ -249,7 +249,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td></td><td>C-c f または M-x fwdsumatrapdf-forward-search RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > </tbody>
@@ -343,7 +343,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
 > </tbody>
 > </table>
@@ -400,7 +400,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ;(setq tex-pdfview-command "qpdfview --unique")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
-(setq dviprint-command-format "wine cmd /c start AcroRd32.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+(setq dviprint-command-format "wine64 cmd /c start Acrobat.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 ```
 
 ```
@@ -470,7 +470,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
-> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader DC で PDF プレビューまたは印刷</td></tr>
+> <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
@@ -602,10 +602,10 @@ M-x describe-variable RET tex-command RET
 ```
 %% -*- coding: utf-8-unix -*-
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
-% #!tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe & ptex2pdf -u -l hogehoge && start AcroRd32 hogehoge.pdf
+% #!tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe & ptex2pdf -u -l hogehoge && start Acrobat hogehoge.pdf
 %#BIBTEX upbibtex hogehoge
 %#MAKEINDEX upmendex hogehoge
-%#LPR if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" ("C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
+%#LPR if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" ("C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
 % #LPR acroread.bat /p hogehoge.pdf
 ```
 
@@ -628,8 +628,8 @@ PDF ファイルでの印刷が多くなってきているので，LPR も PDF �
 ```
 @echo off
 REM USAGE: acroread.bat [options] filename
-if exist "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" (
-  "C:\Program Files\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
+if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" (
+  "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
 ) else (
   "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
 )
