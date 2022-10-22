@@ -187,7 +187,7 @@ forward search は PDFビューアの外部ビューアに以下のように設�
 powershell -Command "& {$param=[char]0x22+'@:0:#.tex'+[char]0x22; $pdf=[char]0x22+'%.pdf'+[char]0x22; $page=[char]0x25+'{page+1}'; $o=[char]0x27+[char]0x25+'{output}'+[char]0x27; synctex view -i $param -o $pdf -x """texworks --position=$page $o"""}"
 ```
 
-## Adobe Acrobat Reader DC との連携 {#u27e1718}
+## Adobe Acrobat Reader との連携 {#u27e1718}
 
 ### forward search {#l5bfe340}
 
@@ -203,8 +203,8 @@ pdfuplatexA-nonstopmode.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
@@ -221,69 +221,6 @@ pdfuplatexA-nonstopmode.bat % #.tex @
 
 を入力します．
 
-#### pdfupLaTeX2A {#pf77769a}
-
-pdfuplatex2A-nonstopmode.bat を作成します．
-
-***
-
-- pdfuplatex2A-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -u > "%~n1.ps" && ^
-ps2pdf.exe "%~n1.ps" && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-pdfuplatex2A-nonstopmode.bat % #.tex @
-```
-
-を入力します．
-
-#### pdfLaTeXA {#j7c9b397}
-
-pdflatexA-nonstopmode.bat を作成します．
-
-***
-
-- pdflatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-pdflatexA-nonstopmode.bat % #.tex @
-```
-
-を入力します．
-
 #### LuaLaTeXA {#b2053ddc}
 
 lualatexA-nonstopmode.bat を作成します．
@@ -296,8 +233,8 @@ lualatexA-nonstopmode.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 lualatex -synctex=1 -interaction=nonstopmode %1 && ^
@@ -310,66 +247,6 @@ synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' 
 
 ```
 lualatexA-nonstopmode.bat % #.tex @
-```
-
-を入力します．
-
-#### LuajitLaTeXA {#z4aadf43}
-
-luajitlatexA-nonstopmode.bat を作成します．
-
-***
-
-- luajitlatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-luajitlatexA-nonstopmode.bat % #.tex @
-```
-
-を入力します．
-
-#### XeLaTeXA {#md09c195}
-
-xelatexA-nonstopmode.bat を作成します．
-
-***
-
-- xelatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-xelatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-クイックビルドのコマンドのユーザー定義または \[ユーザー(U)\]-\[ユーザー定義コマンド(C)\]-\[ユーザー定義コマンドの編集(C)\] で
-
-```
-xelatexA-nonstopmode.bat % #.tex @
 ```
 
 を入力します．
