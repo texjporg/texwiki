@@ -134,7 +134,7 @@ C:\gs\gs7.07\lib も Path に含めておけば，ps2pdf コマンドで PostScr
 ただし『無効なフォント「MS-Mincho」が文書から削除されました。』と出て，すべてゴシック体で表示されてしまいます。
 これを防ぐには，MS-Mincho，MS-Gothic を文書から削除して Ryumin-Light，GothicBBB-Medium という名前に置き換えればいいわけです。
 これを自動化するスクリプト [replacecjkfonts, cjkps2pdf](http://www.eaflux.com/replacecjkfonts/) を[中丸幸治さん](http://www.eaflux.com/)が作られています。
-これを使えば PDF のサイズも小さくなりますし，[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) が適当なフォントできれいに表示してくれます。
+これを使えば PDF のサイズも小さくなりますし，[Adobe Acrobat Reader](</Adobe Acrobat Reader/>) が適当なフォントできれいに表示してくれます。
 
 2003年9月5日以降の角藤さんが配布なさっている Ghostscript 7.07 なら，replacecjkfonts 無しでうまくいくと思います。
 たとえば，[dvipdfmx](/dvipdfmx/) で PDF を作る際に和文フォントを埋め込まない設定は，dvipdfmx.cfg の “D” で始まる行を次のように書き直します（適当に改行してありますのでつなげてください；本当は1行です）：
@@ -303,7 +303,7 @@ ps2pdf は gs で PDF を作るシェルスクリプトです。
 <em>←この情報は古いかもしれません。要確認</em>
 
 - 一つは，できた PDF からフォントを外す中丸さん作の [replacecjkfonts, cjkps2pdf](http://www.eaflux.com/replacecjkfonts/) を使うことです。
-    このフィルタを通せば，埋め込まれた和田研フォントが外され，単に Ryumin-Light，GothicBBB-Medium への参照となるので，[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) できれいに表示・印刷できます。
+    このフィルタを通せば，埋め込まれた和田研フォントが外され，単に Ryumin-Light，GothicBBB-Medium への参照となるので，[Adobe Acrobat Reader](</Adobe Acrobat Reader/>) できれいに表示・印刷できます。
     TrueType フォントや OpenType フォントの場合に PDF 化がうまくいかない場合がありますが，エラーさえ出なければ，PDF 化した後で replacecjkfonts.pl で外せば大丈夫です。
 
 - もう一つは，上の中丸さんのページにも書かれていますが，小川さんの[東風問題](http://www2.kumagaku.ac.jp/teacher/herogw/gsfonts.html)で解説されているように，Ghostscript に鈴木俊哉さんの[このパッチ](https://sourceforge.net/tracker/index.php?func=detail&aid=653140&group_id=1897&atid=301897)を当てる方法です。
