@@ -19,7 +19,7 @@ GIF アニメのような動く画像を取り込む際に便利です．
 タイプセットには [e-TeX](/e-TeX/) 拡張が施されたエンジンを使用してください．
 [pdfLaTeX](/pdfTeX/) のほか，[XeLaTeX](/XeTeX/)，[LuaLaTeX](/LuaTeX/)，(u)pLaTeX + dvipdfmx，(u)pLaTeX + dvips + ps2pdf などでも利用できるようです．
 
-作成したアニメーションを正常に表示するには [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) または
+作成したアニメーションを正常に表示するには [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) または
 [PDF-XChange Editor](https://www.tracker-software.com/product/pdf-xchange-editor) または
 [PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer) または
 [Foxit Reader](https://www.foxitsoftware.com/pdf-reader/) が必要です．
