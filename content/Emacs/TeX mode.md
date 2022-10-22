@@ -96,7 +96,7 @@ C-x C-f ~/
 (setq tex-bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "start SumatraPDF -reuse-instance")
-(setq tex-dvi-print-command "start AcroRd32")
+(setq tex-dvi-print-command "start Acrobat")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -109,7 +109,7 @@ C-x C-f ~/
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
-        ("start AcroRd32 %r.pdf" "%r.pdf")))
+        ("start Acrobat %r.pdf" "%r.pdf")))
 
 (defun sumatrapdf-forward-search ()
   (interactive)
@@ -240,7 +240,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 (setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "evince")
-(setq tex-dvi-print-command "perl -e 'system(\"wine cmd /c start AcroRd32.exe `basename $ARGV[0]`\")'")
+(setq tex-dvi-print-command "perl -e 'system(\"wine64 cmd /c start Acrobat.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -258,7 +258,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
         ("mupdf %r.pdf &" "%r.pdf")
         ("firefox -new-window %r.pdf &" "%r.pdf")
         ("chromium --new-window %r.pdf &" "%r.pdf")
-        ("wine cmd /c start AcroRd32.exe %r.pdf &" "%r.pdf")))
+        ("wine64 cmd /c start Acrobat.exe %r.pdf &" "%r.pdf")))
 
 (defun evince-forward-search ()
   (interactive)
