@@ -7,13 +7,13 @@ pukiwiki: "Adobe Acrobat Reader"
 
 # Adobe Acrobat Reader
 
-## [Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) {#k3c2311c}
+## [Adobe Acrobat Reader](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) {#k3c2311c}
 
-Adobe Acrobat Reader DC は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです．
+Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです．
 
-Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader DC を使用するのは最終確認や印刷時のみとするのがおすすめです．
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
+Adobe Acrobat Reader には Continuous と Classic が存在します．[【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 
@@ -23,14 +23,14 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader DC 22.003.20258 以降に更新してください。Adobe Acrobat Reader DC 22.002.20212 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB22-46）に関する注意喚起](https://www.jpcert.or.jp/at/2022/at220027.html)
-- Adobe Acrobat Reader DC Version 2022 (32-bit) の DDE server name は AcroViewR22, Adobe Acrobat Reader DC Version 2022 (64-bit) の DDE server name は AcroViewA22 です。
+- Adobe Acrobat Reader 22.003.20258 以降に更新してください。Adobe Acrobat Reader 22.002.20212 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB22-46）に関する注意喚起](https://www.jpcert.or.jp/at/2022/at220027.html)
+- Adobe Acrobat Reader Version 2022 (32-bit) の DDE server name は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) の DDE server name は AcroViewA22 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
-    Adobe Acrobat Reader DC 2019.008.20071 または Adobe Acrobat Reader DC 2019.008.20074 が起動していない状態で
+    Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で
     pdfopen file.pdf を実行すると Cannot contact a server. エラーが表示され
     file.pdf が開けないようです。
-    Acrobat Reader DC が起動した状態では file.pdf を開くことができます。
+    Acrobat Reader が起動した状態では file.pdf を開くことができます。
     起動していない状態でも開ける方もおられるようです。--&gt;
     バージョン 2019.008.20074 と表示されるものでは，起動していない状態で開くことが
     できました。しかし環境によるかも知れません。いずれにしても
@@ -40,18 +40,18 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 ### 公式 Web ページ {#t103678c}
 
 - [【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html)
-- [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat DC](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
+- [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
 - [アドビ クリエイター サポート (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
 - [アドビの最新のプレスリリース | Adobe ニュースルーム](https://www.adobe.com/jp/about-adobe/newsroom.html)
 
 ### 動作環境 {#v8f82e43}
 
-[&#x5fc5;&#x8981;&#x30b7;&#x30b9;&#x30c6;&#x30e0;&#x69cb;&#x6210; &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/system-requirements.html)
+[Adobe Acrobat Reader の必要システム構成](https://helpx.adobe.com/jp/reader/system-requirements.html)
 
 ### リリース情報 {#y313b500}
 
 - [リリースノート | Adobe Acrobat、Reader](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html)
-- [DC Release Notes &mdash; Release Notes for Acrobat DC Products](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/)
+- [Acrobat Enterprise Release Notes &mdash; Acrobat-Acrobat Reader Release Notes](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/)
 
 ## ダウンロード/インストール {#ne09e93f}
 
@@ -60,19 +60,19 @@ Adobe Acrobat Reader DC には Continuous と Classic が存在します．[【�
 
 ### Windows {#l93a8183}
 
-- Adobe Acrobat Reader DC
+- Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe)
     - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/AcroRdrDC2200320258_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/AcroRdrDC2200320258_ja_JP.exe)
-- Adobe Acrobat Reader DC Font Pack (Continuous)
+- Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
     - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
 
 ### macOS {#e9b65d66}
 
-- Adobe Acrobat Reader DC
+- Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html)
-- Adobe Acrobat Reader DC Font Pack (Continuous)
+- Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
 
 ### Linux <a id="linux"></a> {#s5dbb0cf}
@@ -107,7 +107,7 @@ sudo zypper install wine
 
 を実行します。
 
-以下のコマンドを実行して Adobe Acrobat Reader DC (32-bit) をインストールします。
+以下のコマンドを実行して Adobe Acrobat Reader (32-bit) をインストールします。
 
 ```
 winetricks allfonts
@@ -116,7 +116,7 @@ wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/Acr
 wine AcroRdrDC2200320258_ja_JP.exe
 ```
 
-Linux で Adobe Acrobat Reader DC (32-bit) を起動して file.pdf を表示するには
+Linux で Adobe Acrobat Reader (32-bit) を起動して file.pdf を表示するには
 
 ```
 wine cmd /c start AcroRd32.exe file.pdf
@@ -139,13 +139,13 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ## ヘルプ {#je3a489e}
 
-- [FAQ &#x7c; Adobe Acrobat Reader DC](https://helpx.adobe.com/jp/reader/faq.html)
+- [Adobe Acrobat Reader FAQ](https://helpx.adobe.com/jp/reader/faq.html)
 
 ## 環境設定 {#j7b6be9a}
 
 ### 使用状況に関する情報 {#jd9c4023}
 
-初期設定では Adobe Acrobat Reader DC の使用方法に関する情報をアドビと共有します．
+初期設定では Adobe Acrobat Reader の使用方法に関する情報をアドビと共有します．
 この機能を OFF にしたい場合はレジストリの
 
 ```
@@ -191,7 +191,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 <!-- -[http://blogyujing.seesaa.net/article/436377991.html win7とAcrobat Reader DC でpdfファイルをサムネイル表示させる方法] -->
 <!-- -[http://blog.livedoor.jp/do_gubako/archives/50025308.html PDFのサムネイルが表示されない] -->
 
-## Windows で Adobe Acrobat Reader DC をコマンドラインから操作する方法 {#f9d733e4}
+## Windows で Adobe Acrobat Reader をコマンドラインから操作する方法 {#f9d733e4}
 
 - [Acrobat および Adobe Reader のコマンドラインオプション](https://helpx.adobe.com/jp/acrobat/kb/510705.html)
 - [AcrobatやReaderでPDFをコマンドラインで操作する方法](http://www.lifedesignedit.com/use_adobe_pdf_command_line_options)
@@ -206,7 +206,7 @@ wine cmd /c start AcroRd32.exe file.pdf
 
 ### pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合の注意点 {#lff102b3}
 
-TeX Live（win32 版）には Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
+TeX Live（win32 版）には Adobe Acrobat Reader で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
 pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。これらは，Adobe による
 PDF Reader がファイルをロックするので，この状況を少しでも改善するために作成された
 ものです。つまり，
@@ -250,7 +250,7 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader DC バージョン 2022 (64-bit)
+Windows 版の Adobe Acrobat Reader バージョン 2022 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
 > AcroViewA22
@@ -283,7 +283,7 @@ start Acrobat && timeout 1 && pdfopen foo.pdf
 
 のようにして実行してください。
 
-また Windows 10 で PDF ファイルが Microsoft Edge や SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けされている場合はエラーが発生します。
+また Windows 10 で PDF ファイルが Microsoft Edge や SumatraPDF など Adobe Acrobat Reader 以外の PDF Viewer に関連付けされている場合はエラーが発生します。
 
 Microsoft Edge に関連付けされている場合は
 
@@ -294,10 +294,10 @@ SumatraPDF に関連付けされている場合は
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けないので pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合は
-PDF ファイルは Adobe Acrobat Reader DC に関連付けしておいてください。
+PDF ファイルは Adobe Acrobat Reader に関連付けしておいてください。
 
 pdfopen.exe で PDF ファイルを開くのに Acrobat.exe で直接開く場合と比べて時間がかかったり
-PDF ファイルを SumatraPDF など Adobe Acrobat Reader DC 以外の PDF Viewer に関連付けしたい場合は
+PDF ファイルを SumatraPDF など Adobe Acrobat Reader 以外の PDF Viewer に関連付けしたい場合は
 pdfopen.exe, pdfclose.exe, pdfdde.exe を使用せずに Acrobat.exe を直接使用してください。
 
 MSYS2 の time コマンドで Acrobat.exe で直接開く場合と pdfopen.exe を使用する場合で比較すると
@@ -339,11 +339,11 @@ DDE を使用して PDF ファイルを閉じる方法が有効に機能して�
 DDE の使い勝手が悪くなってしまったことと Adobe Acrobat Reader の起動が早くなったため
 DDE でファイルを閉じなくても「Acrobat.exe で開く --&gt; Acrobat.exe を終了する --&gt; Acrobat.exe で開く」といった処理でも十分に実用的な速度で動作するようです．[^2]
 
-ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader DC で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
+ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
 
 - [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
 
-現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法で運用しているようです。[^3]
+現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法で運用しているようです。[^3]
 
 - [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
 
@@ -413,7 +413,7 @@ pdfopen --file foo.pdf;if($?){pdfclose --file foo.pdf}
 pdfopen --file foo.pdf && pdfclose --file foo.pdf
 ```
 
-### 起動している Adobe Acrobat Reader DC を終了する {#pb5aeda1}
+### 起動している Adobe Acrobat Reader を終了する {#pb5aeda1}
 
 Windows PowerShell の場合は
 
@@ -435,7 +435,7 @@ echo exit | pdfdde
 
 ## SyncTeX {#s533a23f}
 
-Adobe Acrobat Reader DC は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
+Adobe Acrobat Reader は [SyncTeX](/SyncTeX/) には対応していませんが synctex コマンドを使用して forward and inverse search を行うことができます．
 
 ### forward search {#s30ae8a0}
 
@@ -499,6 +499,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader DC Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader DC Version 2022 (64-bit) は AcroViewA22 です。
-[^2]: ただし起動している Adobe Acrobat Reader DC を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader DC ごと終了してしまうという問題があります。
-[^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader DC のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader DC は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22 です。
+[^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
+[^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
