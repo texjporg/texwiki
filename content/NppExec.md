@@ -103,7 +103,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>pdfupLaTeX2</ins><br>
+　　　　　　Name :　<ins>LuaLaTeX</ins><br>
 　　　☑CTRL<br>
 　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
@@ -197,7 +197,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>pdfLaTeX</ins><br>
+　　　　　　Name :　<ins>fwdsumatrapdf</ins><br>
 　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[H　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
@@ -247,7 +247,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>pLaTeX-ng</ins><br>
+　　　　　　Name :　<ins>TeXworks</ins><br>
 　　　☑CTRL<br>
 　　　　　　　　　　+ ☐SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[N　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
@@ -260,7 +260,7 @@ GPLv3
 
 ***
 
-## Adobe Acrobat Reader DC との連携 {#wbbe918a}
+## Adobe Acrobat Reader との連携 {#wbbe918a}
 
 ### forward search {#safe0b18}
 
@@ -275,7 +275,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -294,7 +294,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>LuaLaTeX</ins><br>
+　　　　　　Name :　<ins>pdfupLaTeXA</ins><br>
 　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[J　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
@@ -318,7 +318,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; lualatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; lualatex -synctex=1 "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 
@@ -337,7 +337,7 @@ GPLv3
 
 <br>
 
-　　　　　　Name :　<ins>LuajitLaTeX</ins><br>
+　　　　　　Name :　<ins>LuaLaTeXA</ins><br>
 　　　☐CTRL<br>
 　　　　　　　　　　+ ☑SHIFT　　+　　<span style="color:Black;background-color:#EEEEEE;">\[K　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　　☑ALT<br>
