@@ -138,9 +138,9 @@ sudo pacman -S mupdf mupdf-tools
 sudo pacman -S mupdf-gl mupdf-tools
 ```
 
-### [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) {#yd3a1e2d}
+### [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) {#yd3a1e2d}
 
-[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/#linux>)
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/#linux>)
 
 ### [LyX](/LyX/) {#odd649e9}
 
