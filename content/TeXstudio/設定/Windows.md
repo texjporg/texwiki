@@ -220,7 +220,7 @@ forward search は 外部PDFビューア に以下のように設定します．
 synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=%%{page+1} '%%{output}'"
 ```
 
-## Adobe Acrobat Reader DC との連携 {#b8db9f79}
+## Adobe Acrobat Reader との連携 {#b8db9f79}
 
 ### forward search {#qc0a4b5f}
 
@@ -236,8 +236,8 @@ pdfuplatexA-nonstopmode.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode" %1 && ^
@@ -254,69 +254,6 @@ pdfuplatexA-nonstopmode.bat % "?c:am.tex" @
 
 を入力します．
 
-#### pdfupLaTeX2A {#u3863aaf}
-
-pdfuplatex2A-nonstopmode.bat を作成します．
-
-***
-
-- pdfuplatex2A-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %1 && ^
-dvips -Ppdf -z -f "%~n1.dvi" | ^
-convbkmk -u > "%~n1.ps" && ^
-ps2pdf.exe "%~n1.ps" && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-ユーザーコマンドに
-
-```
-pdfuplatex2A-nonstopmode.bat % "?c:am.tex" @
-```
-
-を入力します．
-
-#### pdfLaTeXA {#s8c5a7ef}
-
-pdflatexA-nonstopmode.bat を作成します．
-
-***
-
-- pdflatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-pdflatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-ユーザーコマンドに
-
-```
-pdflatexA-nonstopmode.bat % "?c:am.tex" @
-```
-
-を入力します．
-
 #### LuaLaTeXA {#q18a41f2}
 
 lualatexA-nonstopmode.bat を作成します．
@@ -329,8 +266,8 @@ lualatexA-nonstopmode.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 lualatex -synctex=1 -interaction=nonstopmode %1 && ^
@@ -343,66 +280,6 @@ synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' 
 
 ```
 lualatexA-nonstopmode.bat % "?c:am.tex" @
-```
-
-を入力します．
-
-#### LuajitLaTeXA {#ie839257}
-
-luajitlatexA-nonstopmode.bat を作成します．
-
-***
-
-- luajitlatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-luajitlatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-ユーザーコマンドに
-
-```
-luajitlatexA-nonstopmode.bat % "?c:am.tex" @
-```
-
-を入力します．
-
-#### XeLaTeXA {#h2489244}
-
-xelatexA-nonstopmode.bat を作成します．
-
-***
-
-- xelatexA-nonstopmode.bat
-
-***
-
-```
-@echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
-pdfopen --file "%~n1.pdf" && ^
-pdfclose --file "%~n1.pdf" & ^
-xelatex -synctex=1 -interaction=nonstopmode %1 && ^
-synctex view -i "%~n3:0:%~n2.tex" -o "%~n1.pdf" -x "pdfopen --file '%%{output}' --page %%{page+1}"
-```
-
-***
-
-ユーザーコマンドに
-
-```
-xelatexA-nonstopmode.bat % "?c:am.tex" @
 ```
 
 を入力します．
