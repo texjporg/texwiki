@@ -209,7 +209,7 @@ pukiwiki: "LyX/設定/Windows"
 
 \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
-■ Adobe Acrobat Reader DC の場合
+■ Adobe Acrobat Reader の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -271,7 +271,7 @@ pukiwiki: "LyX/設定/Windows"
 
 \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
-■ Adobe Acrobat Reader DC の場合
+■ Adobe Acrobat Reader の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -362,14 +362,14 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．
 を記述して \[適用(A)\] &gt; \[保存(S)\] をクリックして LyX を再起動します．
 
 全てのユーザーに対してインストールした場合は
-C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (32-bit Windows の場合) を作成します．
+C:\Program Files\LyX 2.3\bin\lyxeditor.cmd を作成します．
 
 自分専用にインストールした場合は
 C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd を作成します．
 
 ***
 
-- C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (32-bit Windows の場合) (全てのユーザーに対してインストールした場合)
+- C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (全てのユーザーに対してインストールした場合)
 - C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd (自分専用にインストールした場合)
 
 ***
@@ -388,16 +388,10 @@ endlocal
 
 ***
 
-全てのユーザーに対してインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files (x86)\LyX 2.3\bin\ (64-bit Windows の場合) または C:\Program Files\LyX 2.3\bin\ (32-bit Windows の場合) に作成した lyxeditor.cmd ファイルをペーストしてください．
+全てのユーザーに対してインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.3\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．
 
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
-64-bit Windows で全てのユーザーに対してインストールした場合は
-
-```
-"C:\Program Files (x86)\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
-```
-
-32-bit Windows で全てのユーザーに対してインストールした場合は
+全てのユーザーに対してインストールした場合は
 
 ```
 "C:\Program Files\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
