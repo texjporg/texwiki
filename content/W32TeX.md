@@ -171,7 +171,7 @@ W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存し
 ### SumatraPDF {#g6688c53}
 
 [SumatraPDF](/SumatraPDF/) は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．
-Microsoft Edge や [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) のように開いている PDF ファイルをロックせず，ファイルの更新を自動で検知してプレビューを更新する優れもので，軽量な LaTeX 用 PDF ビューアとして最適です．
+Microsoft Edge や [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) のように開いている PDF ファイルをロックせず，ファイルの更新を自動で検知してプレビューを更新する優れもので，軽量な LaTeX 用 PDF ビューアとして最適です．
 TeXworks などの PDF ビューア付きの統合環境を利用する場合は不要かもしれませんが，それ以外の場合はインストールするとよいでしょう（TeX インストーラ 3 を利用した場合も，SumatraPDF は自動インストールの対象ではありません）．
 
 ## アップデート {#o482d037}
