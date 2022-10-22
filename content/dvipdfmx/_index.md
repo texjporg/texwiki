@@ -22,7 +22,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 
 元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) に次に示す項目などが挙げられています．
 
-- アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller DC の pdfmark に対応した多くの機能を提供します．
+- アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller の pdfmark に対応した多くの機能を提供します．
 - [HyperTeX](/HyperTeX/) (HTML)，[TPIC](/pic/)，カラー，PSFile，その他 [PostScript](/PostScript/) special など "標準的な" DVI special 機能を提供します．
 - MetaPost 出力を PDF に取り込む際のネイティブな対応と，任意の PostScript ファイルを外部プログラムの助けを借りて取り込む機能を提供します．
 - サムネイル埋め込み機能（[Ghostscript](/Ghostscript/) を利用します）を提供します．
