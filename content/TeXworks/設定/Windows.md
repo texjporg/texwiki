@@ -374,7 +374,7 @@ SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索�
 
 &#x2d;-position オプションはファイル名よりも先に指定しなければうまくいきません．
 
-## Adobe Acrobat Reader DC との連携 {#jad25a78}
+## Adobe Acrobat Reader との連携 {#jad25a78}
 
 ### pdfupLaTeXA {#p7c5112a}
 
@@ -388,8 +388,8 @@ pdfuplatexA.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 ptex2pdf -u -l -ot "-synctex=1 -kanji=utf8 -no-guess-input-enc" %1 && ^
@@ -439,8 +439,8 @@ lualatexA.bat を作成します．
 
 ```
 @echo off
-tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | ^
-findstr "AcroRd32.exe" > nul && ^
+tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | ^
+findstr "Acrobat.exe" > nul && ^
 pdfopen --file "%~n1.pdf" && ^
 pdfclose --file "%~n1.pdf" & ^
 lualatex -synctex=1 %1 && ^
