@@ -13,7 +13,7 @@ Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が
 
 Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです．
 
-Adobe Acrobat Reader には Continuous と Classic が存在します．[【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
+Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 
@@ -39,9 +39,9 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[【無�
 
 ### 公式 Web ページ {#t103678c}
 
-- [【無料】Adobe Acrobat Reader をダウンロード | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html)
-- [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/mobile/acrobat-reader.html)
-- [アドビ クリエイター サポート (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
+- [PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html)
+- [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat](https://www.adobe.com/jp/acrobat/mobile/acrobat-reader.html)
+- [アドビ カスタマー サポート (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
 - [アドビの最新のプレスリリース | Adobe ニュースルーム](https://www.adobe.com/jp/about-adobe/newsroom.html)
 
 ### 動作環境 {#v8f82e43}
@@ -107,19 +107,19 @@ sudo zypper install wine
 
 を実行します。
 
-以下のコマンドを実行して Adobe Acrobat Reader (32-bit) をインストールします。
+以下のコマンドを実行して Adobe Acrobat Reader (64-bit) をインストールします。
 
 ```
 winetricks allfonts
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/AcroRdrDC2200320258_ja_JP.exe
-wine AcroRdrDC2200320258_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe
+wine64 AcroRdrDCx642200320258_ja_JP.exe
 ```
 
-Linux で Adobe Acrobat Reader (32-bit) を起動して file.pdf を表示するには
+Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
 
 ```
-wine cmd /c start AcroRd32.exe file.pdf
+wine64 cmd /c start Acrobat.exe file.pdf
 ```
 
 のように実行して「常に保護モードを無効にして開く(<ins>A</ins>)」を選択して OK を押します。
