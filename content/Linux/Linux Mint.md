@@ -181,9 +181,9 @@ sudo apt install qpdfview
 sudo apt install mupdf mupdf-tools
 ```
 
-### [Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) {#je5a1069}
+### [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) {#je5a1069}
 
-[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/#linux>)
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/#linux>)
 
 ### [LyX](/LyX/) <a id="lyx"></a> {#jdcf4217}
 
