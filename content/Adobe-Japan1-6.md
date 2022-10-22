@@ -17,8 +17,8 @@ U-PRESS 用の文字を含む
 ### 小塚書体 {#gb6f9473}
 
 KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf が Adobe-Japan1-6 に準拠しています。
-KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader DC 日本語版または Adobe Acrobat Reader DC に用いるアジア・拡張言語フォントパックに含まれているので
-Adobe Acrobat Reader DC を使用すれば豊富なフォントを利用できます。
+KozMinPr6N-Regular.otf と KozGoPr6N-Medium.otf は Adobe Acrobat Reader 日本語版または Adobe Acrobat Reader に用いるアジア・拡張言語フォントパックに含まれているので
+Adobe Acrobat Reader を使用すれば豊富なフォントを利用できます。
 アジア・拡張言語フォントパックには
 
 - KozMinPr6N-Regular.otf ［Adobe-Japan1-6 対応の日本語明朝体フォント］
