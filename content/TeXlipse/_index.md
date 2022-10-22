@@ -97,7 +97,7 @@ TeXlipse は自前で LaTeX parser を持っていて，ほとんどの場合は
 
 - [Diacritics are not displayed when compiling with XeLaTeX](https://github.com/Borisvl/Pdf4Eclipse/issues/18) (closed)
 
-PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すか，または SumatraPDF, TeXworks, Adobe Acrobat Reader DC などの外部ビューアで表示することができます．
+PDF renderer を SUN renderer 以外に設定して PDF ファイルを開き直すか，または SumatraPDF などの外部ビューアで表示することができます．
 
 ### TeXlipse 1.5.0 で \cite{XXX} を使用した場合に Key XXX is undefined といった警告が表示される {#i0880f90}
 
