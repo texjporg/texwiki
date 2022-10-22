@@ -834,7 +834,7 @@ Close document before running (La)TeX<br>
 
 ***
 
-#### Adobe Acrobat Reader DC {#h47fd5db}
+#### Adobe Acrobat Reader {#h47fd5db}
 
 ■ コマンドラインを使用する場合<br>
 TeX ファイルの行番号に対応する PDF ファイルの該当するページにジャンプします．<br>
