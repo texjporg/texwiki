@@ -58,11 +58,11 @@ cmap-resources-master.zip を取得できます。
 
 まず OpenType フォントを持っていなくても試せる方法です。
 Ryimun-Light と GothicBBB-Meduim は埋め込まれていないフォントを表します。
-Adobe Acrobat Reader DC は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
-Adobe Acrobat Reader DC で使えるアジア・拡張言語フォントパック
+Adobe Acrobat Reader は埋め込まれていない Ryumin-Light と GothicBBB-Medium を適切なフォントに代替して表示・印刷します。
+Adobe Acrobat Reader で使えるアジア・拡張言語フォントパック
 
-- [Adobe - Adobe Reader : For Windows : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6839)
-- [Adobe - Adobe Reader : For Macintosh : Adobe Acrobat Reader DC Font Pack (Continuous) - For Acrobat Reader DC version 19.x](https://supportdownloads.adobe.com/detail.jsp?ftpID=6486)
+- [Reader | 64-bit Font Pack and Spelling Dictionary（Reader の 64 ビット版フォントパックとスペルチェック辞書をダウンロード）](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
+- [Font pack and spelling dictionary pack for Acrobat and Reader on macOS（macOS 上の Acrobat および Reader のフォントパックとスペルチェック辞書パック）](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
 
 はインストール済みとします。
 
@@ -121,7 +121,7 @@ start hoge.pdf
 open hoge.pdf
 ```
 
-PDF ファイルが Adobe Acrobat Reader DC に関連付けされている場合は hoge.pdf が Adobe Acrobat Reader DC で表示されると思います。
+PDF ファイルが Adobe Acrobat Reader に関連付けされている場合は hoge.pdf が Adobe Acrobat Reader で表示されると思います。
 
 upLaTeX でも利用可能です。その場合はプリアンブルを
 
@@ -143,7 +143,7 @@ char=0x20bb7(134071)
 Tried to set a nonexistent character in a virtual font
 ```
 
-と表示されて Adobe Acrobat Reader DC で 𠮷 (U+20BB7) の字が表示されませんでした。
+と表示されて Adobe Acrobat Reader で 𠮷 (U+20BB7) の字が表示されませんでした。
 
 LuaTeX-ja では otf パッケージ自身は使えませんが，代わりに同等の機能を提供する luatexja-otf パッケージが利用可能です。
 
@@ -248,8 +248,8 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 そのためには OpenType フォントが必要です。
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
-OpenType フォントの用途として，Adobe Acrobat Reader DC/Acrobat DC でのプレビュー・印刷用途を想定しているようです。
-dvipdfmx, lualatex, luajitlatex を利用した Adobe Acrobat Reader DC/Acrobat DC 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
+OpenType フォントの用途として，Adobe Acrobat Reader または Adobe Acrobat でのプレビュー・印刷用途を想定しているようです。
+dvipdfmx, lualatex, luajitlatex を利用した Adobe Acrobat Reader または Adobe Acrobat 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
 [TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### Microsoft Windows の場合 {#p413a15f}
