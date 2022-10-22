@@ -98,9 +98,9 @@ dvips で出力した PS ファイルを PDF ファイルに変換するには�
 
 - dvips で変換した PS ファイルは [Ghostscript](/Ghostscript/) 付属の ps2pdf コマンドで PDF ファイルに変換できます。きちんと設定すれば，日本語部分もきれいなアウトラインで出力されます。
 
-- Adobe Acrobat DC をお持ちであれば，PS ファイルをダブルクリックすれば Adobe Acrobat Distiller DC が PDF に変換してくれます。
+- Adobe Acrobat をお持ちであれば，PS ファイルをダブルクリックすれば Adobe Acrobat Distiller が PDF に変換してくれます。
 
-通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller DC のデフォルト設定では用紙がレターサイズになってしまいます。
+通常のドキュメントクラスでは，a4paper オプションを付けても，Adobe Acrobat Distiller のデフォルト設定では用紙がレターサイズになってしまいます。
 A4 にするには，ジョブオプションの設定でページサイズを変えるか，あるいは dvips に “-t a4” というオプションを付けてください。
 [jsclasses](/jsclasses/)なら
 
