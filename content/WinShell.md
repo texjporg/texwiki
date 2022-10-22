@@ -75,17 +75,17 @@ WinShell に付属の日本語言語ファイルは，一部翻訳されてい�
 
 などのオープンソースの統合環境では，「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 でも問題が発生しません。
 
-### Adobe Acrobat Reader DC で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
+### Adobe Acrobat Reader で PDF ファイルが表示できない → [SumatraPDF](/SumatraPDF/) を使用する {#s2ec7c9c}
 
 - [ACROBAT　Xと美文書４版との整合性](https://okumuralab.org/tex/mod/forum/discuss.php?d=1761)
 
-Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
-Adobe Acrobat Reader DC でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
+Adobe Acrobat Reader は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
+Adobe Acrobat Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
 
-WinShell 3.3.2.6 は Adobe Acrobat Reader DC, Adobe Acrobat DC, SumatraPDF の DDE に対応しています。
+WinShell 3.3.2.6 は Adobe Acrobat Reader, Adobe Acrobat, SumatraPDF の DDE に対応しています。
 [^2]
 これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します。
-ただし，Adobe Acrobat Reader DC で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
+ただし，Adobe Acrobat Reader で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
 
 ```
 Cannot start AcrobatReader or open the document.
@@ -95,7 +95,7 @@ Cannot start AcrobatReader or open the document.
 
 <img src="https://okumuralab.org/tex/file.php/2/moddata/forum/2/10292/winshell.png" alt="" width="50%">
 
-この問題は，Adobe Acrobat Reader DC を最新版にアップデートして上記のレジストリの (既定) の値のデータを
+この問題は，Adobe Acrobat Reader を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
 AcroViewA22
@@ -542,8 +542,8 @@ LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<
 ### PDFView {#x6d29bc8}
 
 PDFLaTeXを先に実行 のチェックを外します。<br>
-Windows 版の Adobe Acrobat Reader DC は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません。<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader DC を使用することをおすすめします。<br>
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません。<br>
+PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader を使用することをおすすめします。<br>
 
 #### SumatraPDF の場合 {#a003ae3e}
 
@@ -768,8 +768,8 @@ PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\
 
 エラーがなければ PDF ファイルが表示されます。<br>
 
-PDF ファイルを印刷する場合は Adobe Acrobat Reader DC から PDF ファイルを開いて印刷します。<br>
-Adobe Acrobat Reader DC は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。<br>
+PDF ファイルを印刷する場合は Adobe Acrobat Reader から PDF ファイルを開いて印刷します。<br>
+Adobe Acrobat Reader は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。<br>
 
 ### 補完機能 {#c8bc5b6d}
 
