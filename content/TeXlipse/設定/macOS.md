@@ -425,7 +425,7 @@ macOS の MacTeX, TeX Live の場合 uplatex は euptex にリンクされてい
 
 ***
 
-#### Adobe Acrobat Reader DC {#d960177c}
+#### Adobe Acrobat Reader {#d960177c}
 
 ***
 
