@@ -19,7 +19,7 @@ Okular は KDE に搭載されている，PDF, PS, DVI ファイルが表示可�
 
 ### 公式 Web サイト {#jde0a0e5}
 
-- [Okular - more than a reader](https://okular.kde.org/)
+- [Okular - The Universal Document Viewer](https://okular.kde.org/)
 
 ### 動作環境 {#ca9192aa}
 
