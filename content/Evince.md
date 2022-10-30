@@ -32,7 +32,7 @@ Arch Linux, Fedora, openSUSE
 PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
 - \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
-- [build: Disable PostScript backend by default (1621cacf) · Commits · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/commit/1621cacf75ebff4ab4ab0fa6855977a2d8da0ac6) &lt;-- evince 3.30.0 で enable_ps=no に変更
+- [meson_options.txt · main · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/-/blob/main/meson_options.txt#L13) &lt;-- option('ps', type: 'feature', value: 'disabled', description: 'whether PS support is requested')
 - [https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD) &lt;-- Arch Linux の evince は ps=enabled
 - [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt) &lt;-- Debian GNU/Linux の evince は ps=disabled
 - [https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec](https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec) &lt;-- Fedora の evince は ps=enabled
