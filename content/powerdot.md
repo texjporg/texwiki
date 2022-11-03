@@ -14,7 +14,7 @@ powerdot は プレゼンテーション用の LaTeX クラスです．
 - [https://ctan.org/pkg/powerdot](https://ctan.org/pkg/powerdot)
 - [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
 
-TeX Live, W32TeX には標準で含まれています．
+TeX Live に標準で含まれています．
 
 ***
 
@@ -22,7 +22,7 @@ TeX Live, W32TeX には標準で含まれています．
 
 ### お知らせ {#gda4eeab}
 
-powerdot は [dvipdfmx](/dvipdfmx/) に対応していないので，PDF を作るためには [dvips](/dvips/) + [Ghostscript](/Ghostscript/) (ps2pdf) または dvips + Adobe Acrobat Distiller DC の組み合わせで使用してください．
+powerdot は [dvipdfmx](/dvipdfmx/) に対応していないので，PDF を作るためには [dvips](/dvips/) + [Ghostscript](/Ghostscript/) (ps2pdf) または dvips + Adobe Acrobat Distiller の組み合わせで使用してください．
 しおりの文字化けを防止するには convbkmk または bkmk2uni を使用します．
 
 - powerdotについて ([qa:56578](https://okumuralab.org/~okumura/texfaq/qa/56578.html), [qa:56592](https://okumuralab.org/~okumura/texfaq/qa/56592.html))
