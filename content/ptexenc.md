@@ -11,7 +11,7 @@ pukiwiki: "ptexenc"
 
 アスキー株式会社による pTeX の文字コードを扱う関数群を，ライブラリとして切り出したものです。
 ライブラリとしての ptexenc は，アスキーの著作物ではありません。
-現在（2010 年以降）の [TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) の pTeX 系列のプログラム[^1]は ptexenc を使ってコンパイルされています。
+現在（2010 年以降）の [TeX Live](</TeX Live/>) の pTeX 系列のプログラム[^1]は ptexenc を使ってコンパイルされています。
 
 従来の pTeX では文字コードが Shift_JIS, ISO-2022-JP, EUC-JP のどれか一つのファイルしか処理できませんでしたが，現在では ptexenc というライブラリによって UTF-8 を含む文字コードを自動的に判別して変換し，処理することができます．
 これはあくまでも入力をそのエンジンが受け付ける文字コードに変換しているだけであり，内部処理が Unicode 化されているわけではないことに注意が必要です．
@@ -83,7 +83,7 @@ pukiwiki: "ptexenc"
 
 #### Microsoft Windows 環境で特に気を付けるべき環境依存文字 {#h9bb4c4e}
 
-- [Windowsの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc_img.html)
+- [Windowsの機種依存文字（画像） - CyberLibrarian](https://web.archive.org/web/20140720103450/http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdc_img.html)
 
 <!-- Windows-31J …… Microsoft による Shift_JIS の拡張 -->
 <!-- x-CP50220 …… Microsoft による ISO-2022-JP の拡張．IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある． -->
@@ -151,7 +151,7 @@ pukiwiki: "ptexenc"
 
 #### Mac OS 環境で特に気を付けるべき環境依存文字 {#w0cac168}
 
-- [Macintoshの機種依存文字（画像） - CyberLibrarian](http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc_img.html)
+- [Macintoshの機種依存文字（画像） - CyberLibrarian](https://web.archive.org/web/20140718084610/http://www.asahi-net.or.jp/~ax2s-kmtn/ref/mdcmc_img.html)
 
 <!-- x-Mac-Japanese …… Apple による Shift_JIS の拡張．IANA 非登録なので，MIME では “x-” または “X-” で始まる非標準の名称として用いる必要がある． -->
 
