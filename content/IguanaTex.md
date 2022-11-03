@@ -14,8 +14,11 @@ pLaTeX にも対応しているので日本語も使用できます。
 
 ### 公式サイト {#n7a418b3}
 
-- [IguanaTex - A Free Latex Add-In for PowerPoint](http://www.jonathanleroux.org/software/iguanatex/)（Windows 版）
-- [GitHub - ray851107/IguanaTexMac: IguanaTex for mac](https://github.com/ray851107/IguanaTexMac)（Mac 版）
+- [IguanaTex - A Free Latex Add-In for PowerPoint on Windows and Mac](http://www.jonathanleroux.org/software/iguanatex/)
+
+### ダウンロード {#v2c4c993}
+
+- [https://github.com/Jonathan-LeRoux/IguanaTex/releases](https://github.com/Jonathan-LeRoux/IguanaTex/releases)
 
 ### 解説 {#cff23727}
 
@@ -31,7 +34,7 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 日本語を使用する場合は，スタンダードな pLaTeX + [dvipdfmx](/dvipdfmx/) を経由する方法か，[XeLaTeX](/XeTeX/) または [LuaLaTeX](/LuaTeX/) を経由する方法を選択します[^1]。
 
 欧文用の LaTeX + [dvipng](/dvipng/) を使う変換方法以外では，[Ghostscript](/Ghostscript/) と [ImageMagick](/ImageMagick/) のインストールが必要です。
-また，Ghostscript によるアウトライン化の際に eps2write デバイスを利用しているため，Ghostscript のバージョンは 9.14 以上である必要があります（最新 v1.46 で確認）。
+また，Ghostscript によるアウトライン化の際に eps2write デバイスを利用しているため，Ghostscript のバージョンは 9.14 以上である必要があります（v1.46 で確認）。
 
 ### 関連リンク {#pc5b4e12}
 
@@ -43,10 +46,10 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 
 #### ライセンス {#k7bfbe3c}
 
-Creative Commons Attribution 3.0 License
+[Creative Commons Attribution 3.0 License](https://github.com/Jonathan-LeRoux/IguanaTex/blob/master/LICENSE.txt)
 
 #### 変更履歴 {#id065069}
 
-- [changelog](http://www.jonathanleroux.org/software/iguanatex/change.log)
+- [change.log](https://github.com/Jonathan-LeRoux/IguanaTex/blob/master/change.log)
 
 [^1]: [pdfLaTeX](/pdfTeX/) で [LaTeX-CJK](/LaTeX-CJK/) を使えば日本語を扱えないことはありませんが，綺麗な結果は得られません。
