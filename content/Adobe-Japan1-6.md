@@ -38,7 +38,7 @@ Adobe Acrobat Reader を使用すれば豊富なフォントを利用できま�
 #### CID 番号参照用のサンプルへのリンク {#ze53c84a}
 
 - [Font and Type Technology Center&mdash;Font technical notes](http://www.adobe.com/devnet/font.html)
-    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf)
+    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.mathsoc.jp/assets/pdf/overview/committee/info_system/5078.Adobe-Japan1-6.pdf)
     - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,15.2 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
     - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf)
     - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
