@@ -28,7 +28,7 @@ Perl 5 で書かれたスクリプトがあります（[latexmk.pl](/Latexmk/) �
 [TeX Live](</TeX Live/>) の Win32 版には
 [tlperl](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)（Perl 5
 の処理系）が含まれています．
-[W32TeX](/W32TeX/) を使用する場合は Strawberry Perl をインストールしてください．
+[MiKTeX](/MiKTeX/) を使用する場合は Strawberry Perl または ActivePerl をインストールしてください．
 
 #### [Strawberry Perl](http://strawberryperl.com/) {#bfff8462}
 
