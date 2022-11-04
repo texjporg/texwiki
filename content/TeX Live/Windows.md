@@ -134,7 +134,7 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 インストール方法は 00README.TLW64 を参照してください．
 
-64-bit Ghostscript も必要になるので gs9550w64full-gpl.exe も置いてあります．
+64-bit Ghostscript も必要になるので gs1000w64full-gpl.exe も置いてあります．
 
 インストール後うまくいかない時は，fmtutil-sys --allの実行を試してみてください。
 
@@ -223,7 +223,7 @@ TeX Live 2020 対応の事例です．
 
 ## アップデート {#a6223106}
 
-\[スタート\] &gt; \[TeX Live 2021\] &gt; \[TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
+\[スタート\] &gt; \[TeX Live 2022\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
 \[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -237,7 +237,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2021\tlpkg\backups
+- C:\texlive\2022\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
@@ -286,9 +286,9 @@ tlmgr update --self --all
     use_proxy = on
     ```
 
-<!-- * アンインストール [#od7715ce] -->
-<!--  -->
-<!-- [スタート]ボタン &gt; [TeX Live 2020] &gt; [Uninstall TeX Live] を選択することで，TeX Live をアンインストールすることが可能です． -->
+## アンインストール {#od7715ce}
+
+\[スタート\] &gt; \[TeX Live 2022\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
