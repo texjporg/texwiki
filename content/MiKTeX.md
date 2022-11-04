@@ -44,7 +44,3 @@ MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビュー
 #### ミラーサイト {#xfbee989}
 
 - [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/miktex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/miktex/)
-
-#### 派生版 {#v2c807b8}
-
-- [proTeXt](http://www.tug.org/protext/)
