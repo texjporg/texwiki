@@ -10,19 +10,18 @@ pukiwiki: "REVTeX"
 ## [REVTeX](https://journals.aps.org/revtex) {#cfdc01cb}
 
 \[FIXME\] 以下はかなり古い内容です。
-TeX Live や 角藤さんの W32TeX
-などにはインストール済みですので，改めてインストールする必要はありません。
+TeX Live にはインストール済みですので，改めてインストールする必要はありません。
 使い方をもっと詳しくすべきですね。
 
 - [REVTeX Home Page](https://journals.aps.org/revtex)
 
 ### リリース情報 {#i3bdc15f}
 
-2010-08-11 REVTeX 4.1
+2020-10-05 REVTeX 4.2e
 
 ### インストール {#jaaef53a}
 
-TeX Live, W32TeX には既にインストールされています．
+TeX Live には既にインストールされています．
 
 参考
 
