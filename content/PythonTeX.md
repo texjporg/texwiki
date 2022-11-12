@@ -10,7 +10,7 @@ pukiwiki: "PythonTeX"
 ## PythonTeX {#fef32cd2}
 
 PythonTeX は，LaTeX ドキュメントの中に埋め込んだ [Python](/Python/) コードを実行して，その結果を元の場所に出力するためのパッケージです．
-Python 以外に [Ruby](/Ruby/), Julia, Octave, Sage, Bash, Rust, R, Perl, Raku, JavaScript もサポートしています．
+Python 以外に Bash, JavaScript, Julia, Octave, Perl, R, Raku, [Ruby](/Ruby/), Rust, SageMath もサポートしています．
 
 - [https://github.com/gpoore/pythontex](https://github.com/gpoore/pythontex)
 - [https://ctan.org/pkg/pythontex](https://ctan.org/pkg/pythontex)
@@ -21,21 +21,13 @@ Python 以外に [Ruby](/Ruby/), Julia, Octave, Sage, Bash, Rust, R, Perl, Raku,
 
 ### インストール {#o64ddf5b}
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) には含まれています．
+[TeX Live](</TeX Live/>) に含まれています．
 
 PythonTeX の利用には，パッケージ自体の他に [Python](/Python/) のインタプリタと [Pygments](http://pygments.org/) という Python モジュールが必要になります．
 Pygments は pip を使ってインストールできます．
 
-Python 3 を使用している場合は
-
 ```
 pip3 install pygments
-```
-
-Python 2  を使用している場合は
-
-```
-pip2 install pygments
 ```
 
 でインストールできます．
