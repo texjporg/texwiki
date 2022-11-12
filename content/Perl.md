@@ -28,7 +28,7 @@ Perl 5 で書かれたスクリプトがあります（[latexmk.pl](/Latexmk/) �
 [TeX Live](</TeX Live/>) の Win32 版には
 [tlperl](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)（Perl 5
 の処理系）が含まれています．
-[MiKTeX](/MiKTeX/) を使用する場合は Strawberry Perl または ActivePerl をインストールしてください．
+[MiKTeX](/MiKTeX/) を使用する場合は Strawberry Perl をインストールしてください．
 
 #### [Strawberry Perl](http://strawberryperl.com/) {#bfff8462}
 
@@ -51,10 +51,6 @@ C:\strawberry\perl\bin
 ```
 
 がシステム環境変数 Path に追加されます．
-
-#### [ActivePerl](http://downloads.activestate.com/ActivePerl/releases/) {#jad19d56}
-
-Strawberry Perl 以外の選択肢としては，ActivePerl が挙げられます．
 
 ### TeX 関連モジュール {#y91d7e77}
 
