@@ -75,11 +75,11 @@ W32TeX の最新版は，[ミラーサイト](/W32TeX/#mirror)からダウンロ
 ダウンロードしたら，念のため次のことをご確認ください．
 
 - ファイルの拡張子が正しいか？
-    - Microsoft Edge や Internet Explorer などの一部のブラウザーやダウンローダーは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Microsoft Edge あるいは Internet Explorer 11 を使って [http://eplang.jp/w32tex/archive/latest/current/](http://eplang.jp/w32tex/archive/latest/current/) から \*.tar.xz ファイルを保存した場合に，
+    - Microsoft Edge や Internet Explorer などの一部のブラウザーやダウンローダーは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Microsoft Edge あるいは Internet Explorer 11 を使って <del> [http://eplang.jp/w32tex/archive/latest/current/](http://eplang.jp/w32tex/archive/latest/current/) </del> から \*.tar.xz ファイルを保存した場合に，
 
 > &#x2a;.tar.xz → \*.tar.tar
 
-のようにファイルの拡張子が変わります．
+のようにファイルの拡張子が変わります． <!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
 
 #### ダウンロードファイル {#i853d3d5}
 
@@ -331,11 +331,13 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
-### 過去のバージョンの W32TeX {#mirror-old}
+### <del>過去のバージョンの W32TeX</del> {#mirror-old}
 
-何らかの理由で過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：
+<!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
 
-- [eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)
+<del>何らかの理由で過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：</del>
+
+<del>-[eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)</del>
 
 ### 過去の W32TeX の仕様変更 {#changelog-old}
 
