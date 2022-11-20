@@ -331,6 +331,7 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 \end{tikzpicture}
 
 %%関数による描画（マニュアルp.329の例）
+%%plotのオプション[smooth]を忘れると折れ線で描画されます。
 \begin{tikzpicture}[domain=0:4]%グラフの描画領域は0≦x≦4
 \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
 \draw[->] (-0.2,0) -- (4.2,0) node[right] {$x$};%横軸（x軸）
@@ -338,9 +339,9 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 \draw[color=red] plot (\x,\x) node[right] {$f(x) =x$};
    %一次関数 y=x の赤線
 % \x r means to convert '\x' from degrees to _r_adians:
-\draw[color=blue] plot (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
+\draw[color=blue] plot[smooth] (\x,{sin(\x r)}) node[right] {$f(x) = \sin x$};
    %三角関数 y=sin x の青線（度数表記→ラジアンに変換）
-\draw[color=orange] plot (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
+\draw[color=orange] plot[smooth] (\x,{0.05*exp(\x)}) node[right] {$f(x) = \frac{1}{20} \mathrm e^x$};
    %指数関数 y=0.05e^x のオレンジの線
 \end{tikzpicture}
 \end{document}
@@ -948,6 +949,12 @@ TikZ/PGF で作成した図画を含んだソースファイルから，図画�
 
 dvips または LuaTeX または pdfTeX を用いると，ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。
 dvipdfmx を用いた場合は，コマンドラインから [pdfcrop](/pdfcrop/) を最後に適用することで画像の大きさちょうどの pdf を得られます。
+[Poppler](/Poppler/)のpdftocairoが使える環境（[TeX Live](</TeX Live/>)には標準で含まれている）にあれば、さらに以下のコマンドで svg や png 画像が生成できます。
+
+```
+$ pdftocairo -png -r 150 -transp filename.pdf#150は画像のPPI値。-transpは背景透過を指定します。
+$ pdftocairo -svg filename.pdf
+```
 
 - ソースコードに追加記述
 1. プリアンブルに追加
