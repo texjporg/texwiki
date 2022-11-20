@@ -115,10 +115,10 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### macOS の場合 {#ued437e7}
 
-- [TexStudio日本語設定（Macでもok）](https://okb-mathphys.wixsite.com/oboegaki/texstudio-mac-ok)
+- [TexStudio日本語設定（Macでもok）](https://mathphysnote.com/tex/texstudio-jpn-macok/)
 - [MACのTexStudioで日本語を入力＆出力できるようにする](http://robomixcom.hatenablog.com/entry/2020/05/21/014858)
 
-#### 方法1 {#d8cab603}
+#### 方法 {#d8cab603}
 
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は
 TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します．
@@ -130,12 +130,12 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.*.dylib | grep poppler
 ```
 
-TeXstudio 4.3.1 の場合は出力結果は以下のようになります．
+TeXstudio 4.4.0 の場合は出力結果は以下のようになります．
 
-> &amp;<span style="color:black,yellow">/usr/local/Cellar/poppler-qt6/22.06.0/share/poppler</span>;<br>
+> &amp;<span style="color:black,yellow">/usr/local/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
 
-出力結果から /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler が poppler-data を配置するディレクトリになります．
+出力結果から /usr/local/share/poppler が poppler-data を配置するディレクトリになります．
 
 poppler-data をインストールします．
 
@@ -143,8 +143,8 @@ poppler-data をインストールします．
 $ cd ~
 $ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz
 $ tar xvf poppler-data-0.4.11.tar.gz
-$ sudo mkdir -p /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.11/* /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler
+$ sudo mkdir -p /usr/local/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.11/* /usr/local/share/poppler
 ```
 
 <!-- poppler-data は以下のように配置されます． -->
@@ -152,37 +152,22 @@ $ sudo cp -pR ~/poppler-data-0.4.11/* /usr/local/Cellar/poppler-qt6/22.06.0/shar
 <!-- / -->
 <!-- └─usr/ -->
 <!--     └─local/ -->
-<!--         └─Cellar/ -->
-<!--             └─poppler-qt6/ -->
-<!--                 └─22.06.0/ -->
-<!--                     └─share/ -->
-<!--                         └─poppler/ -->
-<!--                             ├─cidToUnicode/ -->
-<!--                             ├─cMap/ -->
-<!--                             ├─nameToUnicode/ -->
-<!--                             ├─unicodeMap/ -->
-<!--                             ├─CMakeLists.txt -->
-<!--                             ├─COPYING -->
-<!--                             ├─COPYING.adobe -->
-<!--                             ├─COPYING.gpl2 -->
-<!--                             ├─Makefile -->
-<!--                             └─README -->
+<!--         └─share/ -->
+<!--             └─poppler/ -->
+<!--                 ├─cidToUnicode/ -->
+<!--                 ├─cMap/ -->
+<!--                 ├─nameToUnicode/ -->
+<!--                 ├─unicodeMap/ -->
+<!--                 ├─CMakeLists.txt -->
+<!--                 ├─COPYING -->
+<!--                 ├─COPYING.adobe -->
+<!--                 ├─COPYING.gpl2 -->
+<!--                 ├─Makefile -->
+<!--                 └─README -->
 
 TeXstudio を起動している場合は TeXstudio を再起動します．
 
 組み込みの PDF ビューアで日本語が表示できることを確認します．
-
-#### 方法2 {#fca07def}
-
-上記の方法でディレクトリ /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler を作成した場合、brew upgrade を実行した際にエラーが発生してパッケージの更新ができなくなることがあります。それを避けるために、/Applications/texstudio.app/Contents/Frameworks/libpoppler.\*.dylib をバイナリエディタで改変するという方法があります。具体的には、libpoppler.\*.dylib において以下のように文字列を変更します。
-
-(変更前) /usr/local/Cellar/poppler-qt6/22.06.0/share/poppler
-
-(変更後) /usr/local/share/poppler__________________________\_
-
-アンダースコア\[\_\]部分には Null 文字\[00\] を入力して、変更前後の文字列長を維持してください。
-
-※バイナリファイルの変更になりますので、バックアップをとっておく等、細心の注意を払って各個人の責任のもとで実行してください。
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
