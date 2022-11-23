@@ -37,6 +37,7 @@ MacTeX-2022 / BasicTeX-2022 に付属する TeX Live も universal-darwin バイ
 
 TeX Live 2022 universal-darwin バイナリが動作する macOS
 
+- macOS Ventura 13
 - macOS Monterey 12
 - macOS Big Sur 11
 - macOS Catalina 10.15
