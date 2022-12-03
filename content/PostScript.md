@@ -58,3 +58,4 @@ Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するた
 - [ページ記述言語 ポストスクリプトマニュアル](https://www1.doshisha.ac.jp/~jmizushi/ps.html)（同志社大学 水島研究室）
 - [PostScript Programing 入門](http://apollon.issp.u-tokyo.ac.jp/~watanabe/ps/)
 - [EPSグラフィック直書き入門](http://yubais.net/doc/eps/)
+- [Apple、macOS 13 VenturaのプレビューアプリでPostScript(.ps/.eps)ファイルのサポートを終了。](https://applech2.com/archives/20221028-macos-13-ventura-preview-app-drop-support-postscript.html)
