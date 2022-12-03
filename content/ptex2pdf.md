@@ -10,7 +10,7 @@ pukiwiki: "ptex2pdf"
 ## TeX ファイルから PDF ファイルを生成するプログラム ptex2pdf {#headline}
 
 ptex2pdf は uplatex, euptex, uptex, platex, eptex, ptex の中から指定したコマンドと dvipdfmx とを連続して実行する Lua スクリプトです．
-ptex2pdf は [TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+ptex2pdf は [TeX Live](</TeX Live/>) に含まれています．
 もともとは [TeXworks](/TeXworks/) での使用を簡便にするために開発されましたが，[TeXShop](/TeXShop/) などの統合環境においても使用できますし，コマンドライン（ターミナルからの直接の入力）でも使用できます．
 
 ***
