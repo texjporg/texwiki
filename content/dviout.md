@@ -45,10 +45,6 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 TeX Live の Win32 版には 32-bit 版の dviout が含まれています。
 
-### W32TeX の場合 {#r4cfc9ce}
-
-W32TeX には dviout が含まれていないので，追加でインストールする必要があります。
-
 ### dvioutの配布 {#h6957949}
 
 #### TeX Users Group repositoryの版 (Ver.3.19.0~) {#x61c7151}
@@ -65,7 +61,7 @@ W32TeX には dviout が含まれていないので，追加でインストー�
 
 ## ビルド {#d0101f83}
 
-[Subversion Windows Installer](http://alagazam.net/) から Windows バイナリをダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します。
+[Downloads | VisualSVN](https://www.visualsvn.com/downloads/) から Apache Subversion command-line tools をダウンロードして展開し，bin フォルダー (svn.exe のあるフォルダー) に PATH を通します。
 コマンドラインから dviout のソースコードを取得します。
 
 ```
@@ -258,13 +254,6 @@ Expat License については
 
 ### リリース情報 {#uce3262c}
 
-#### 2013-12-14 dviout 3.18.4 ALPHA 1 {#l6ffa3ca}
-
-dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正されています。
-
-- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された，サイズの大きい PK フォントについてバグがあります。
-- 非常に長いフォント名を与えるとクラッシュします。
-
 #### 2021-05-09 dviout 3.19.0 {#z948889f}
 
 TeX Users Group [subversion repository](https://www.tug.org/svn/dviout/)のソースコードによるビルドです。
@@ -272,6 +261,13 @@ TeX Users Group [subversion repository](https://www.tug.org/svn/dviout/)のソ�
 - 0x8000〜0xFFFFFF(24bit)の文字コードを持つjfmの読み込みに対応
 - CID コード → Unicode 変換を Adobe-Japan1-7 対応に
 - chkfont.exe: TFM/JFMモードでOFM level 0, 1に対応。FONTモードでVF/OVFフォーマットに対応。
+
+#### 2013-12-14 dviout 3.18.4 ALPHA 1 {#l6ffa3ca}
+
+dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正されています。
+
+- [QA54696](https://okumuralab.org/~okumura/texfaq/qa/54696.html) で指摘された，サイズの大きい PK フォントについてバグがあります。
+- 非常に長いフォント名を与えるとクラッシュします。
 
 ### ChangeLog {#r5124b5a}
 
