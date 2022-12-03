@@ -130,7 +130,7 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.*.dylib | grep poppler
 ```
 
-TeXstudio 4.4.0 の場合の出力結果は以下のようになります．
+TeXstudio 4.4.1 の場合の出力結果は以下のようになります．
 
 > &amp;<span style="color:black,yellow">/usr/local/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
