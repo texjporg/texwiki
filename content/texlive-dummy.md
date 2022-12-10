@@ -23,7 +23,7 @@ Linux ディストリビューションが提供する TeX Live をインスト�
 - [https://aur.archlinux.org/packages/texlive-dummy/](https://aur.archlinux.org/packages/texlive-dummy/) (404 - Page Not Found)
 - [https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy](https://aur.archlinux.org/cgit/aur.git/?h=texlive-dummy)
 - [https://github.com/zhou13/aur/tree/master/texlive-dummy](https://github.com/zhou13/aur/tree/master/texlive-dummy)
-- [【Arch Linux】TeX LiveインストーラでLaTeXの環境を構築する](https://qiita.com//kazushisan/items/9a5cbd389de63f4aaf75)
+- [https://gadgetlunatic.com/latex/install/#linux](https://gadgetlunatic.com/latex/install/#linux)
 
 TeX Live の公式サイトのインストーラで TeX Live をインストールした場合は AUR の texlive-dummy をインストールします．
 texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
