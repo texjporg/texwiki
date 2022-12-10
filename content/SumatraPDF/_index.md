@@ -34,6 +34,18 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 64-bit Windows であれば 64-bit builds の Installer をダウンロードします．
 後はダブルクリックして指示に従えばインストールが完了します．
 
+SumatraPDF インストール先フォルダは
+
+SumatraPDF をデフォルトでインストールした場合は
+
+> C:\Users\\&lt;ユーザー名>\AppData\Local\SumatraPDF
+
+SumatraPDF を全てのユーザーに対してインストールした場合は
+
+> C:\Program Files\SumatraPDF
+
+になります。
+
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
 
 [SyncTeX](/SyncTeX/) とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です．
@@ -116,7 +128,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．
 
 - [https://www.sumatrapdfreader.org/manual.html](https://www.sumatrapdfreader.org/manual.html)
-- [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/ParseCommandLine.cpp)
+- [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp)
 
 ### リンク {#pad542dc}
 
