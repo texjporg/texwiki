@@ -164,6 +164,11 @@ SVNADMIN
 
 : svnadmin
 
+GIT
+: &nbsp;
+
+: git
+
 ***
 
 ## Skim との連携 {#p9518b78}
