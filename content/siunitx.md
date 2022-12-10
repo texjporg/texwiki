@@ -23,8 +23,8 @@ SI 単位 (The International System of Units) の表記法の主な規則を挙�
 - 数値のあとにスペースを入れて単位をつける．
 
 詳細は
-[SI Brochure \[8th edition, 2006; updated in 2014\]](https://www.bipm.org/en/publications/si-brochure/)
-や，その[日本語訳](https://www.nmij.jp/library/units/si/)を参照してください．
+[SI Brochure \[9th edition, 2019\]](https://www.bipm.org/en/publications/si-brochure/)
+や，その[日本語版及び関連資料](https://unit.aist.go.jp/nmij/public/report/SI_9th/index.html)を参照してください．
 
 siunitx は，単位記号のフルスペルを入力すれば，大文字小文字を間違わずに正しく記号化してくれます（例えば，mHz Mhz mhz MHz を区別してくれます）．
 流儀によっていくつかの表記法がある場合にも対応しています．
@@ -50,6 +50,7 @@ pLaTeX / upLaTeX で expl3 がサポートされたのは
 
 ### 関連リンク {#b1d93009}
 
+- [物理化学で用いられる量・単位・記号](https://unit.aist.go.jp/nmij/public/report/translation/IUPAC/)（計量標準総合センター）
 - 数式の前後の四分アキ [forum:913](https://okumuralab.org/tex/mod/forum/discuss.php?d=913)
 - 角度記号の出力法 [forum:1518](https://okumuralab.org/tex/mod/forum/discuss.php?d=1518)
 - [例の和欧文間空白が入らないアレ](http://d.hatena.ne.jp/zrbabbler/20130105/1357384970)
