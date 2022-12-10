@@ -144,6 +144,11 @@ SVNADMIN
 
 : svnadmin
 
+GIT
+: &nbsp;
+
+: git
+
 ***
 
 ## [Evince](/Evince/) との連携 {#y63d1279}
