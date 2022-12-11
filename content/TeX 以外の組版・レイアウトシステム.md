@@ -19,7 +19,7 @@ TeX 以外の組版・レイアウトシステムについて紹介します。T
 
 Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト](http://xmlgraphics.apache.org/)により開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
 
-2015年6月5日の段階では Version 2.0 が最新のリリースとなっています。フロートのサポートや Mac OS X のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
+2022年12月11日の段階では Version 2.8 が最新のリリースとなっています。フロートのサポートや Mac OS X のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
 
 活発な開発下にあります。
 
@@ -144,7 +144,7 @@ Unix 互換な環境でないと動かすのは難しいようです。FreeBSD 1
 
 活発な開発下にあります。
 
-## [Patoline](http://patoline.org/) {#vdc178df}
+## [Patoline](https://patoline.github.io/) {#vdc178df}
 
 主に OCaml で書かれた組版システムです。LaTeX 風の独自入力フォーマットで PDF など様々なフォーマットで出力します。
 
@@ -173,7 +173,7 @@ Linux や Mac へのインストールはパッケージ管理システムを使
 
 #### 依存ライブラリ {#g916e4d4}
 
-SILE 自身は OpenType フォントサポートに [HarfBuzz](http://www.freedesktop.org/wiki/Software/HarfBuzz/) に依存しており、これはまた様々なライブラリに依存しています。また、フォント・アクセスに [Fontconfig](/Fontconfig/) を用います。SILE は XML 形式の入力を処理するために [Expat XML Parser](http://www.libexpat.org/) を利用します。これらは [GTK+の配布サイト](http://www.gtk.org/download/win32.php) からある程度そろえることができます。HarfBuzz や SILE をビルドするには Run-Time に加えて Dev パッケージも必要です。SILE の PDF 出力部は C言語で書かれており、libpng や zlib に依存するのでこれらも必要です。
+SILE 自身は OpenType フォントサポートに [HarfBuzz](http://www.freedesktop.org/wiki/Software/HarfBuzz/) に依存しており、これはまた様々なライブラリに依存しています。また、フォント・アクセスに [Fontconfig](/Fontconfig/) を用います。SILE は XML 形式の入力を処理するために [Expat XML Parser](http://www.libexpat.org/) を利用します。これらは [GTKの配布サイト](https://www.gtk.org/docs/installations/windows/) からある程度そろえることができます。HarfBuzz や SILE をビルドするには Run-Time に加えて Dev パッケージも必要です。SILE の PDF 出力部は C言語で書かれており、libpng や zlib に依存するのでこれらも必要です。
 
 必要な DLL がなくてプログラムがうまく起動しない場合は、
 
@@ -193,7 +193,7 @@ MinGW32 環境では、Lua を mingw-get で入れるのが簡単です。
    mingw-get install mingw32-lua
 ```
 
-Lua のパッケージ・マネージャ [LuaRocks](http://luarocks.org/) を入れるには、まずWindows 向けのファイルを[ダウンロード](http://keplerproject.github.io/luarocks/releases/)し展開ます。その後、コマンド プロンプトを立ち上げ、展開したフォルダに移動し、インストールします。例えば、Lua 5.2 で C:\Lua\5.2\LuaRocks にインストールするには、
+Lua のパッケージ・マネージャ [LuaRocks](http://luarocks.org/) を入れるには、まずWindows 向けのファイルを[ダウンロード](https://github.com/luarocks/luarocks/wiki/Download)し展開ます。その後、コマンド プロンプトを立ち上げ、展開したフォルダに移動し、インストールします。例えば、Lua 5.2 で C:\Lua\5.2\LuaRocks にインストールするには、
 
 ```
    install /P C:\Lua\5.2\LuaRocks /MW /LV 5.2 /TREE C:\Lua\5.2\LuaRocks
@@ -289,7 +289,7 @@ YesLogic Pty. Ltd. によって開発されている商品です。オープン�
 
 Vivliostyle プロジェクトは電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
 
-現在（2015年11月3日）、入手可能なのはベータ版のみです。
+現在（2022年12月11日）、入手可能な最新安定版はv2.19.2です。
 
 - [Vivliostyle](http://vivliostyle.com/ja/sample/)
 - [Vivliostyle Chrome 拡張](https://chrome.google.com/webstore/detail/vivliostyle/ffeiildjegeigkbobbakjjmfeacadbne)
