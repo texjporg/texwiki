@@ -10,7 +10,7 @@ pukiwiki: "PDF"
 ## PDF {#kf03468a}
 
 PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](https://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
-現在は，国際規格 [ISO 32000-2:2017](https://www.iso.org/standard/63534.html) として ISO により公開されています．
+現在は，国際規格 [ISO 32000-2:2020](https://www.iso.org/standard/75839.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
 その用途は 1993 年の登場から広がりを見せ，現在では様々なニーズにあわせ，それに特化した派生規格も存在します．
@@ -27,8 +27,8 @@ Adobe より，元となる PDF の仕様書が公開されています (ISO の
 - [PDF Reference and Adobe Extensions to the PDF Specification](https://www.adobe.com/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
-Windows 10 と macOS では標準で PDF 出力が可能です．
-Windows 10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
+Windows 11/10 と macOS では標準で PDF 出力が可能です．
+Windows 11/10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
 
 ***
 
@@ -40,7 +40,7 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 ### PDF を扱うソフトウェア {#o7e2223a}
 
-Windows 10 と macOS では，プリント機能を持ったどんなアプリケーションからも，
+Windows 11/10 と macOS では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
 また，PostScript や PDF などを扱う，Ghostscript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
 
@@ -118,21 +118,22 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 
 ### PDF ビューア {#zd559492}
 
-Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの PDFium がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
+Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの PDFium がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 11/10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
 
-[Adobe Acrobat Reader DC](https://acrobat.adobe.com/jp/ja/products/pdf-reader.html) が有名ですが，ほかにも様々あります：
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/>) が有名ですが，ほかにも様々あります：
 
 - [Poppler](/Poppler/) 系：Poppler を利用したものが多数あります．
     - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
     - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
-    - [Evince](/Evince/) (GTK+) SyncTeX に対応した GNOME 標準の PDF ビューア
+    - [Evince](/Evince/) (GTK) SyncTeX に対応した GNOME 標準の PDF ビューア
     - [Okular](/Okular/) (Qt) SyncTeX に対応した KDE 標準の PDF ビューア
-    - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
+    - [zathura](/zathura/) (GTK) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
+    - [pdfpc](https://pdfpc.github.io/) (GTK) presentation viewer
     - [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/) (Qt) Dual-Screen PDF Viewer for LaTeX-beamer
 - [MuPDF](/MuPDF/) 系：MuPDF を利用したものが多数あります．
     - [SumatraPDF](/SumatraPDF/) SyncTeX に対応したタブ切り替え型の PDF ビューア
-    - [zathura](/zathura/) (GTK+) SyncTeX に対応した軽量な PDF ビューア
+    - [zathura](/zathura/) (GTK) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
