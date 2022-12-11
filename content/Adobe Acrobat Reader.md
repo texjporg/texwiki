@@ -62,8 +62,8 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/AcroRdrDC2200320258_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320258/AcroRdrDC2200320258_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320282/AcroRdrDCx642200320282_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320282/AcroRdrDCx642200320282_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320282/AcroRdrDC2200320282_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2200320282/AcroRdrDC2200320282_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
     - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
@@ -112,8 +112,8 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320258/AcroRdrDCx642200320258_ja_JP.exe
-wine64 AcroRdrDCx642200320258_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2200320282/AcroRdrDCx642200320282_ja_JP.exe
+wine64 AcroRdrDCx642200320282_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
