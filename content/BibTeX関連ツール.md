@@ -42,7 +42,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 |  bible  | windows | bibファイル作成  |
 |  bibextract  | UNIX | bibファイルから検索条件に合致したエントリを抽出  |
 |  bibsort  | UNIX  | .bibファイルの中の文献データをsortするプログラム．emacsのBiBTeXモードのM-x bibtex-sort-bufferよりの断然速い  |
-| [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | gtk+ | .bib ファイルの作成・検索などを対話的に行う GUI プログラム．日本語が通らない． |
+| [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | GTK | .bib ファイルの作成・検索などを対話的に行う GUI プログラム．日本語が通らない． |
 | [tkbibtex](https://mirror.ctan.org/biblio/bibtex/utils/tkbibtex/) | tcl/tk | .bib ファイル作成編集プログラム．日本語表示 OK だが，atokx では入力できない． |
 | [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
 | [bibcursed](https://sourceforge.net/projects/bibcursed/) | ncurses | .bibファイル編集ソフト．ncursesを利用したインターフェイスで非常に高速に入力できる．日本語OK |
