@@ -98,18 +98,18 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマン�
 
 Adobe Acrobat は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
 
-### Adobe Acrobat Reader DC と Adobe Acrobat の違い {#c982e6e9}
+### Adobe Acrobat Reader と Adobe Acrobat の違い {#c982e6e9}
 
-Adobe Acrobat Reader DC は Adobe Acrobat から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader DC のダウンロードサイト](https://get.adobe.com/jp/reader/)から無償で入手できます．
-[Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat.html) は
+Adobe Acrobat Reader は Adobe Acrobat から表示・印刷・注釈の追加機能だけを抜き出したもので，[Adobe Acrobat Reader のダウンロードサイト](https://get.adobe.com/jp/reader/)から無償で入手できます．
+[Adobe Acrobat](https://acrobat.adobe.com/jp/ja/) は
 Adobe Acrobat Distiller を含む製品（商品）です．
 値段は Adobe のサイトで確認してください．
 
 有償の Adobe Acrobat には，その機能によってプランが幾つか存在しています．
-「[プランと価格 | Adobe Acrobat](https://acrobat.adobe.com/jp/ja/acrobat/pricing.html)」などを参照してください．
+「[Adobe Acrobat Proの価格とオプション | Adobe Acrobat](https://www.adobe.com/jp/acrobat/pricing.html)」などを参照してください．
 Standard と Pro がありますが，どちらも様々な文書ファイルや画像ファイルの PDF への変換をサポートしており，PDF のパスワード保護，複数の PDF の統合，PDF の編集などに対応しており，また，Word への書き出しや署名なども可能です．Pro ではこれに加え，PDF/X や PDF/A への変換や，これらへの規格適合性の検証 (プリフライト) などプロフェッショナル向けの機能を備えています．
 
-Adobe Acrobat があれば Adobe Acrobat Reader DC がなくても PDF ファイルを表示できます．
+Adobe Acrobat があれば Adobe Acrobat Reader がなくても PDF ファイルを表示できます．
 
 Adobe 製品は，なるべく最新のアップデートを適用しておきましょう．
 アップデートについては Adobe のダウンロードのページをご覧ください．
@@ -168,7 +168,7 @@ Word などで PDF 文書を作る場合でも，設定を行い，きちんと�
 
 #### フォントの利用 {#v9136148}
 
-OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader DC で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
+OpenType，TrueType，PostScript Type 1 フォントなどを用い，かつ埋め込んでください．ビットマップフォントの利用は避けましょう．Adobe Acrobat Reader で正常にテキスト検索できるように，妙なテキストエンコーディングも用いないでください．
 
 フォントの埋め込みはよい PDF を作成するために推奨されることですが，これにはライセンス上の微妙な問題も絡み，注意が必要です。「[フォントの埋め込みとライセンス](</フォントの埋め込みとライセンス/>)」の項なども参照してください．
 
@@ -204,7 +204,7 @@ Adobe Acrobat での設定は，[Adobe Acrobat Pro での PDF の最適化&#x23;
  qpdf --linearize input.pdf output.pdf
 ```
 
-また，Adobe Acrobat Reader DC などで保存しなおすことで，
+また，Adobe Acrobat Reader などで保存しなおすことで，
 Web 表示用に最適化するという方法もあります．
 PDF ビューアによっては，この部分ダウンロードを行えない場合もありますが，「Web 表示用に最適化」の操作は，PDF ファイルの構造を変えるだけで，品質の劣化を招くものではないので，やっておいても損はありません．
 
@@ -217,11 +217,11 @@ PDF 文書をパスワードで保護するには，いくつかの方法があ�
 Adobe Acrobat を使えばできますが，フリーウェアとして [QPDF](/QPDF/) もあります．
 
 また，macOS では印刷するときに「PDFで保存」を選択すれば必要なセキュリティオプションを選択できます．
-ただし，Adobe Acrobat Reader DC からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
+ただし，Adobe Acrobat Reader からはこの操作はできませんので，一度作成したPDFを「プレビュー」「[TeXShop](/TeXShop/)」などで開いてから実行してください．
 
 ### PDF に注釈をつける {#v9b289c9}
 
-Adobe Acrobat Reader DC をはじめ，様々な PDF ビューアが注釈をサポートしています．
+Adobe Acrobat Reader をはじめ，様々な PDF ビューアが注釈をサポートしています．
 LaTeX で注釈付きの PDF を作成する方法については，[PDFの作り方/注釈をつける](</PDFの作り方/注釈をつける/>)を参照してください．
 
 ## その他のリンク {#ed93164a}
