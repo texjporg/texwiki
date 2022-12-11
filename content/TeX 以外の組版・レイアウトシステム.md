@@ -19,7 +19,7 @@ TeX 以外の組版・レイアウトシステムについて紹介します。T
 
 Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト](http://xmlgraphics.apache.org/)により開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
 
-2022年12月11日の段階では Version 2.8 が最新のリリースとなっています。フロートのサポートや Mac OS X のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
+2022年12月11日の段階では Version 2.8 が最新のリリースとなっています。フロートのサポートや macOS のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
 
 活発な開発下にあります。
 
