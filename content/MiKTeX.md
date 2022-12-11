@@ -15,13 +15,26 @@ MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビュー
 - [Home - MiKTeX.org](https://miktex.org/)
 - [https://github.com/MiKTeX/miktex](https://github.com/MiKTeX/miktex)
 
-更新：2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されていますが，2022年8月現在もまだ不安定なようです。
+***
+
+***
+
+### お知らせ {#n83db2ac}
+
+2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されていますが，platex を実行して dvipdfmx を実行すると
+
+> dvipdfmx:warning: Could not locate a virtual/physical font for TFM "rml".<br>
+> dvipdfmx:warning: >> There are no valid font mapping entry for this font.<br>
+> dvipdfmx:warning: >> Font file name "rml" was assumed but failed to locate that font.<br>
+> dvipdfmx:fatal: Cannot proceed without .vf or "physical" font for PDF output...<br>
+>
+> <br>
+>
+> No output PDF file written.<br>
+
+となり、フォントに関するエラーが発生するため 2022年12月現在でもまだ不安定なようです。
 
 - [https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07](https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07)
-
-***
-
-***
 
 ### インストール {#c18f5cec}
 
