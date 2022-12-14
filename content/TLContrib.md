@@ -50,6 +50,12 @@ getnonfreefonts はそのような「無料だが『フリー』でないフォ�
 
 - [japanese-otf  2022-02-17](https://okumuralab.org/tex/mod/forum/discuss.php?d=3330)
 
+#### hiraprop {#nea4705d}
+
+2021年以降、hirapropパッケージもtlcontribリポジトリに収録されました。
+
+実際に、tlcontribはTeX Live 2016以降で動作しますので、TeX Live 2016以降でhirapropパッケージを使いたい場合に、tlcontribリポジトリも利用するとよいでしょう。
+
 ### 関連リンク {#vd8e3fd2}
 
 - \[[issue:200\] TLContrib packages into MacPorts?](https://ml.texjp.org/pipermail/issue/2018-July/#162)
