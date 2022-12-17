@@ -8,11 +8,12 @@ pukiwiki: "Atom"
 
 # Atom
 
-## [Atom](https://atom.io/) {#f28ffeb8}
+## [Atom](https://atom.io/) (開発終了) {#f28ffeb8}
 
 [Atom](https://atom.io/) は GitHub が開発するオープンソースのテキストエディタです。
 
 - [https://atom.io/](https://atom.io/)
+- [https://github.com/atom/atom](https://github.com/atom/atom)
 
 Windows、macOS、 Linux をはじめとした、様々な環境で動作します。
 "A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指していましたが開発は終了しました。
@@ -32,27 +33,32 @@ Atom の環境設定画面や、[https://atom.io/packages](https://atom.io/packa
 
 ### 日本語関連のパッケージ {#lfe144fd}
 
-- [japanese-menu](https://atom.io/packages/japanese-menu) -- メニューバーとコンテキストメニュー、設定画面を日本語化します。
+- [japanese-menu](https://web.archive.org/web/20220707163737/https://atom.io/packages/japanese-menu) -- メニューバーとコンテキストメニュー、設定画面を日本語化します。
+    - [https://github.com/syon/atom-japanese-menu](https://github.com/syon/atom-japanese-menu)
 
 ### LaTeX 関連のパッケージ {#gb891a80}
 
 LaTeX での文書作成を補助するパッケージも色々とあります。
 
-- [https://atom.io/packages/search?q=latex](https://atom.io/packages/search?q=latex)
-- [https://atom.io/packages/search?q=keyword:latex](https://atom.io/packages/search?q=keyword:latex)
-- [atom-latex](https://atom.io/packages/atom-latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
-- [latex](https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
-    <!-- -[[latextools:https://atom.io/packages/latextools]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
+<!-- -https://atom.io/packages/search?q=latex -->
+<!-- -https://atom.io/packages/search?q=keyword:latex -->
+<!-- -[[atom-latex:https://atom.io/packages/atom-latex]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
+- [latex](https://web.archive.org/web/20221208013622/https://atom.io/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
+    - [https://github.com/thomasjo/atom-latex](https://github.com/thomasjo/atom-latex)
+        <!-- -[[latextools:https://atom.io/packages/latextools]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
 
-- [language-latex](https://atom.io/packages/language-latex) -- LaTeX の構文ハイライトとスニペット
-    <!-- -[[latexer:https://atom.io/packages/latexer]] - - LaTeX 文書編集用の自動補完パッケージ -->
+- [language-latex](https://web.archive.org/web/20220919051527/https://atom.io/packages/language-latex) -- LaTeX の構文ハイライトとスニペット
+    - [https://github.com/area/language-latex](https://github.com/area/language-latex)
+- [latexer](https://web.archive.org/web/20220919051518/https://atom.io/packages/latexer) -- LaTeX 文書編集用の自動補完パッケージ
+    - [https://github.com/Focus/latexer](https://github.com/Focus/latexer)
+- [latex-tree](https://web.archive.org/web/20220707144639/https://atom.io/packages/latex-tree) -- LaTeX 文書用のツリービュー
+    - [https://github.com/raphael-cch/latex-tree](https://github.com/raphael-cch/latex-tree)
+        <!-- -[[document-outline:https://atom.io/packages/document-outline]] - - アウトライン -->
 
-- [latex-tree](https://atom.io/packages/latex-tree) -- LaTeX 文書用のツリービュー
-    <!-- -[[document-outline:https://atom.io/packages/document-outline]] - - アウトライン -->
-
-- [pdf-view](https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
-- [pdf-view-plus](https://github.atom.io/packages/pdf-view-plus) -- Atom 内で PDF プレビューをするためのパッケージ
-- [pdfjs-viewer](https://atom.io/packages/pdfjs-viewer) -- Atom 内で PDF プレビューをするためのパッケージ
+- [pdf-view](https://web.archive.org/web/20220919051530/https://atom.io/packages/pdf-view) -- Atom 内で PDF プレビューをするためのパッケージ
+    - [https://github.com/izuzak/atom-pdf-view](https://github.com/izuzak/atom-pdf-view)
+        <!-- -[[pdf-view-plus:https://github.atom.io/packages/pdf-view-plus]] - - Atom 内で PDF プレビューをするためのパッケージ -->
+        <!-- -[[pdfjs-viewer:https://atom.io/packages/pdfjs-viewer]] - - Atom 内で PDF プレビューをするためのパッケージ -->
 
 ### エディタ乗り換えに役立つパッケージ {#v70fe827}
 
