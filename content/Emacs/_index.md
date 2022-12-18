@@ -30,7 +30,7 @@ GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS Windows, Solaris などの O
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://licenses.opensource.jp/GPL-3.0/GPL-3.0.html)) でリリースされています．
+[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://licenses.opensource.jp/GPL-3.0/GPL-3.0.html)) ([Welcome to GPLv3](http://gplv3.fsf.org/)) でリリースされています．
 
 ### ダウンロード {#m56139cf}
 
@@ -42,13 +42,14 @@ GNU Emacs はフリーソフトウェアです．
 
 - [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
+- [最近のGNU Emacs for WindowsではフツーにMS IMEを使える話](https://scrapbox.io/tsuu32/%E6%9C%80%E8%BF%91%E3%81%AEGNU_Emacs_for_Windows%E3%81%A7%E3%81%AF%E3%83%95%E3%83%84%E3%83%BC%E3%81%ABMS_IME%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E8%A9%B1)
 - [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
 - [64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-27-x86_64-win-ime)
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
 
 #### macOS {#v2ece0ad}
 
-- [Emacs For Mac OS X](https://emacsformacosx.com/)
+- [GNU Emacs For Mac OS X](https://emacsformacosx.com/)
     <!-- -[[Emacs Modified for macOS:http://vigou3.gitlab.io/emacs-modified-macos/]] -->
     <!-- -[[Emacs Mac port [experimental/hackers-only]:ftp://ftp.math.s.chiba-u.ac.jp/emacs/]] -->
 
@@ -118,9 +119,6 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 - [YaTeX#インストール#Windows#設定](/YaTeX/#edc51324), [YaTeX#SumatraPDF との連携 (forward search)](/YaTeX/#ra95ecfb)
 
 を参照してください．
-
-あるいは [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) を利用して forward search を行うことも可能です．
-sumatra-forward.el を使用する場合は，あらかじめ SumatraPDF を起動しておいてください．
 
 ### inverse search {#a06810d6}
 
