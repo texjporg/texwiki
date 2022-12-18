@@ -23,16 +23,12 @@ pukiwiki: "Atom/LaTeX"
     1. 入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
     1. 入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
     1. 入力欄に latex-tree を入力して [latex-tree](https://atom.io/packages/latex-tree) パッケージをインストールします。
-    1. 以下の3つのパッケージの中から1つ選択してインストールします。
-        1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
-        1. 入力欄に pdf-view-plus を入力して [pdf-view-plus](https://atom.io/packages/pdf-view-plus) パッケージをインストールします。
-        1. 入力欄に pdfjs-viewer を入力して [pdfjs-viewer](https://atom.io/packages/pdfjs-viewer) パッケージをインストールします。
+    1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
 
 ### 日本語文書向けの設定 {#ca64206f}
 
 日本語をサポートしているエンジン（upLaTeX エンジンまたは LuaLaTeX エンジン）を使って日本語文書を作成する設定をします。
-latex パッケージを使うには [Latexmk](/Latexmk/) か texify が必要です。
-[DiCy](https://yitzchak.github.io/dicy/) を使うこともできます。
+latex パッケージを使うには [Latexmk](/Latexmk/) が必要です。
 Latexmk がインストールされ、パスが通っている前提で進めます。
 
 1. latex パッケージの Settings をクリックします。
