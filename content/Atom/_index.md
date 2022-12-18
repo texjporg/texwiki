@@ -8,16 +8,16 @@ pukiwiki: "Atom"
 
 # Atom
 
-## [Atom](https://atom.io/) (開発終了) {#f28ffeb8}
+## [Atom](https://github.com/atom/atom) (開発終了) {#f28ffeb8}
 
-[Atom](https://atom.io/) は GitHub が開発するオープンソースのテキストエディタです。
+Atom は、かつて GitHub が開発していたオープンソースのテキストエディタです。
 
-- [https://atom.io/](https://atom.io/)
+- [https://web.archive.org/web/20221214224500/https://atom.io/](https://web.archive.org/web/20221214224500/https://atom.io/)
 - [https://github.com/atom/atom](https://github.com/atom/atom)
 
 Windows、macOS、 Linux をはじめとした、様々な環境で動作します。
 "A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指していましたが開発は終了しました。
-内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能です。
+内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能なエディタでした。
 
 ***
 
@@ -64,7 +64,7 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 
 - [vim-mode-plus](https://atom.io/packages/vim-mode-plus) -- Vim キーバインド
 - [atomic-emacs](https://atom.io/packages/atomic-emacs) -- Emacs キーバインド
-- [minimap](https://atom.io/packages/minimap) -- Visual Studio Code, Sublime Text みたいにミニマップを表示させる
+- [minimap](https://atom.io/packages/minimap) -- Visual Studio Code みたいにミニマップを表示させる
 
 ### ターミナルエミュレータ {#v730a901}
 
