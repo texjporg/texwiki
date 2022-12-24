@@ -43,8 +43,9 @@ GNU Emacs はフリーソフトウェアです．
 - [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [最近のGNU Emacs for WindowsではフツーにMS IMEを使える話](https://scrapbox.io/tsuu32/%E6%9C%80%E8%BF%91%E3%81%AEGNU_Emacs_for_Windows%E3%81%A7%E3%81%AF%E3%83%95%E3%83%84%E3%83%BC%E3%81%ABMS_IME%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E8%A9%B1)
-- [NTEmacs / Emacs for Windows](http://cha.la.coocan.jp/doc/NTEmacs.html)
-- [64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）](https://github.com/mhatta/emacs-27-x86_64-win-ime)
+- [Emacs 28.2 +パッチ20220917版 build on Cygwin](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs_28.2_build_20220917.html)
+    <!-- -[[NTEmacs / Emacs for Windows:http://cha.la.coocan.jp/doc/NTEmacs.html]] -->
+    <!-- -[[64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）:https://github.com/mhatta/emacs-27-x86_64-win-ime]] -->
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
 
 #### macOS {#v2ece0ad}
