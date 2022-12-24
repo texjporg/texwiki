@@ -7,7 +7,7 @@ pukiwiki: "GNOME LaTeX"
 
 # GNOME LaTeX
 
-## [GNOME LaTeX](https://wiki.gnome.org/Apps/GNOME-LaTeX) {#e966f73d}
+## [GNOME LaTeX](https://gitlab.gnome.org/swilmet/gnome-latex) {#e966f73d}
 
 ***
 
@@ -18,7 +18,7 @@ pukiwiki: "GNOME LaTeX"
 GNOME LaTeX は LaTeX 統合環境 (LaTeX エディタ) です．
 SyncTeX に対応しています．
 
-- [Apps/GNOME-LaTeX - GNOME Wiki!](https://wiki.gnome.org/Apps/GNOME-LaTeX)
+- [Sébastien Wilmet / gnome-latex · GitLab](https://gitlab.gnome.org/swilmet/gnome-latex)
 
 ### 動作環境 {#a52783ff}
 
@@ -26,16 +26,13 @@ Windows, macOS, Linux
 
 ### License {#a34a81c6}
 
-[GPLv3](https://gitlab.gnome.org/GNOME/gnome-latex/blob/master/COPYING)
+[GPLv3](https://gitlab.gnome.org/swilmet/gnome-latex/-/blob/main/COPYING)
 
 ### リリース情報/ChangeLog {#p49a2369}
 
-- [GNOME / gnome-latex · GitLab](https://gitlab.gnome.org/GNOME/gnome-latex)
-    - [NEWS](https://gitlab.gnome.org/GNOME/gnome-latex/blob/master/NEWS)
-    - [コミットログ](https://gitlab.gnome.org/GNOME/gnome-latex/commits/master)
-- [GitHub - GNOME/gnome-latex: GNOME LaTeX, a LaTeX editor](https://github.com/GNOME/gnome-latex)
-    - [NEWS](https://github.com/GNOME/gnome-latex/blob/master/NEWS)
-    - [コミットログ](https://github.com/GNOME/gnome-latex/commits/master)
+- [Sébastien Wilmet / gnome-latex · GitLab](https://gitlab.gnome.org/swilmet/gnome-latex)
+    - [NEWS](https://gitlab.gnome.org/swilmet/gnome-latex/-/blob/main/NEWS)
+    - [コミットログ](https://gitlab.gnome.org/swilmet/gnome-latex/-/commits/main/)
 
 <!-- *不具合 [#o7b20b21] -->
 
@@ -112,7 +109,7 @@ sudo zypper install gnome-latex
 
 ### Personal build tools {#kcfc97ba}
 
-#### Latexmk-upLaTeX {#q6b26226}
+#### upLaTeXmk {#q6b26226}
 
 Commands
 : &nbsp;
@@ -124,9 +121,9 @@ Post Processor
 
 : latexmk
 
-\[Build\] &gt; \[Latexmk-upLaTeX\] で実行できます．
+\[Build\] &gt; \[upLaTeXmk\] で実行できます．
 
-#### Latexmk-LuaLaTeX {#s8b1424d}
+#### LuaLaTeXmk {#s8b1424d}
 
 Commands
 : &nbsp;
@@ -138,7 +135,7 @@ Post Processor
 
 : latexmk
 
-\[Build\] &gt; \[Latexmk-LuaLaTeX\] で実行できます．
+\[Build\] &gt; \[LuaLaTeXmk\] で実行できます．
 
 ## Evince との連携 {#t97f1692}
 
