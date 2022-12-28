@@ -222,3 +222,96 @@ TeX Live 以外にも Windows で利用可能な TeX ディストリビューシ
 
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
 - [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
+
+## 入出力関連の機能 {#t84cfc3e}
+
+### 漢字入出力対応状況 {#effb8e13}
+
+コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2020/12/11 現在）．
+Windowsではコンソールやファイル名でのワイド文字・Unicodeの扱いがLinux系と異なるので，それに対応するため「command_line_encoding」という kpathsearch の変数が導入されました．当初W32TeX上のupTeX系のみでしたが，現在はWindows版TeX Live上でXeTeX系, pdfTeX系にも導入されています．
+
+<table>
+<thead>
+<tr><th rowspan="2"> コマンド </th><th rowspan="2"> command_line_encoding </th><th rowspan="2"> コマンドライン<br>入力 </th><th colspan="2"> コンソール入力 </th><th colspan="2"> コンソール出力 </th><th rowspan="2"> 入出力<br>ファイル名 </th><th rowspan="2"> special <br>ファイル名 </th></tr>
+<tr><th> キーボード   </th><th> パイプ    </th><th> スクリーン  </th><th> パイプ      </th></tr>
+</thead>
+<tbody>
+<tr><td> p(la)tex.exe -kanji=sjis </td><td> (無視される)      </td><td> CP932          </td><td> CP932  </td><td> Shift_JIS </td><td>CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> p(la)tex.exe<br>p(la)tex.exe -kanji=utf8 </td><td> (無視される)  </td><td> CP932          </td><td> CP932  </td><td> UTF-8 </td><td> CP932(UTF-8) </td><td> UTF-8 </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> up(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xe(la)tex.exe </td><td> utf-8            </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td rowspan="2"> dvipdfmx.exe<br>pdf(la)tex.exe  </td><td> none          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xdvipdfmx.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> xbb.exe<br>extractbb.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
+<tr><td rowspan="2"> dvips.exe  </td><td> none          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> dvi2tty.exe  </td><td> none          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> --- </td></tr>
+<tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
+<tr><td> upmendex.exe </td><td> (無視される)        </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
+<tr><td> dvibook.exe<br>dviconcat.exe<br>dviselect.exe<br>dvitodvi.exe<br>dvidvi.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
+<tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= <br>指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
+<tr><td> Unicode        </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td></tr>
+<tr><td> gswin32c.exe<br>gswin64c.exe  </td><td> ---        </td><td> Unicode        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> Unicode </td><td> --- </td></tr>
+<tr><td> GSview  </td><td> ---        </td><td> ???        </td><td> --- </td><td> --- </td><td> ??? </td><td> ??? </td><td> CP932 </td><td> --- </td></tr>
+</tbody>
+</table>
+
+この表は，日本語版 Windows におけるものです。
+
+「command_line_encoding」とは，texmf.cnf のオプション設定です．
+「コンソール入力」は標準入力 (STDIN) からの入力を指し，「コンソール出力」は標準出力 (STDOUT) や標準エラー出力 (STDERR) への出力を指します．
+「special ファイル名」とは，挿入する画像のファイル名など，special 命令によって dvi ファイルに書き込まれるファイル名の文字コードを指します．
+
+「CP932」「Unicode」は文字集合の意味で，「Shift_JIS」「UTF-8」は文字エンコーディングの意味で用いています．
+スクリーンが「Unicode」「CP932(UTF-8)」のものは，そのままでも文字化けせずに表示させることができます．
+以下はその例です．
+
+```
+C:\work>platex -kanji=utf8 sourcename.tex
+```
+
+```
+C:\work>uplatex sourcename.tex
+```
+
+dvi2tty の場合，コードページを UTF-8 に設定することで，文字化けせずに表示させることができます．
+以下はその例です．
+
+```
+C:\work>chcp 65001
+C:\work>dvi2tty -Eu sourcename.dvi
+```
+
+あるいは、ページャーを使用しない場合はそのまま，文字化けせずに表示させることができます．
+以下はその例です．
+
+```
+C:\work>dvi2tty -Eu -q sourcename.dvi
+```
+
+最新の Windows版 TeX Live の場合は，texmf.cnf に
+
+```
+command_line_encoding = utf-8
+```
+
+と設定するとよいでしょう．
+
+現在の TeX Live における
+デフォルトは
+
+```
+command_line_encoding = utf-8
+```
+
+となっています。
+
+最新の TeX Live では dvipdfmx, dvips は command_line_encoding の値によらず，
+OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に名前が書かれて
+いるファイルを見つけることができます。
+
+なお，マクロ，パッケージやフォントなどのファイル名は ASCII の範囲にとどめ，漢字(日本語)や他言語の Unicode 文字を使用しないことをお勧めします．
+文字エンコーディングの齟齬により，ソフトウェアによっては kpathsea 経由で探し出すことに失敗するケースがあるためです．
+また，p(la)tex において special の種類によっては 0x5c を含むファイル名の場合，失敗することがあります．
+この場合も ASCII の範囲で使用してください．( → [KANJI file name in special in dvi　(uptex)](https://okumuralab.org/tex/mod/forum/discuss.php?d=1210))
