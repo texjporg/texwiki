@@ -17,10 +17,26 @@ pukiwiki: "ptexenc"
 これはあくまでも入力をそのエンジンが受け付ける文字コードに変換しているだけであり，内部処理が Unicode 化されているわけではないことに注意が必要です．
 以下に見るように，Unicode にある文字でも JIS X 0208 や JIX X 0213 などにない文字や機種依存文字は使用することができません．
 
-- [ptexenc/文字コード判定 - ptexlive Wiki](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA)
 - \[[texlive\] Index of /trunk/Build/source/texk/ptexenc](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/?view=log)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/ChangeLog?view=markup)
+
+### 文字コードの自動判別 {#x100a023}
+
+TeX Live (開発版r63556以降，TeX Live 2023以降(予定)) および W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．
+殆どの場合正しく推定がされますが，誤判定することもあります．（[例](/upTeX,upLaTeX/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
+
+自動判定を無効にし，文字コードを指定するには次のようにします．
+
+```
+platex --no-guess-input-enc --kanji=utf8 sample.tex
+```
+
+常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は，[texmf.cnf ファイル](</texmf.cnf ファイル/>)を参照．）
+
+- [ptexenc/文字コード判定 - ptexlive Wiki](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA)
+- [文字コード自動判定 TeX Live 2023](https://okumuralab.org/tex/mod/forum/discuss.php?d=3407)
+- \[[ptexenc\] 入力ファイルの文字コードの自動判定](https://github.com/texjporg/tex-jp-build/issues/142)
 
 ### 丸附き数字の使用について {#s7930698}
 
