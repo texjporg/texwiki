@@ -196,6 +196,8 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 
 ### 文字コードの自動判別 {#z6946085}
 
+<strong>TeX Liveにも導入されているため [https://texwiki.texjp.org/?ptexenc#x100a023](https://texwiki.texjp.org/?ptexenc#x100a023) に転記しました．以下は古い情報です．</strong>
+
 W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．
 殆どの場合正しく推定がされますが，誤判定することもあります．（[例](/upTeX,upLaTeX/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
 
@@ -208,6 +210,8 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は，[texmf.cnf ファイル](</texmf.cnf ファイル/>)を参照．）
 
 ### 漢字入出力対応状況 {#qc9f2e7d}
+
+<strong>TeX Liveにも導入されているため [https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13](https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13) に転記しました．以下は古い情報です．</strong>
 
 コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2020/12/11 現在）．
 
