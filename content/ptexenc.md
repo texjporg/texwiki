@@ -15,7 +15,7 @@ pukiwiki: "ptexenc"
 
 従来の pTeX では文字コードが Shift_JIS, ISO-2022-JP, EUC-JP のどれか一つのファイルしか処理できませんでしたが，現在では ptexenc というライブラリによって UTF-8 を含む文字コードを自動的に判別して変換し，処理することができます．
 これはあくまでも入力をそのエンジンが受け付ける文字コードに変換しているだけであり，内部処理が Unicode 化されているわけではないことに注意が必要です．
-以下に見るように，Unicode にある文字でも JIS X 0208 や JIX X 0213 などにない文字や機種依存文字は使用することができません．
+以下に見るように，Unicode にある文字でも JIS X 0208 や JIS X 0213 などにない文字や機種依存文字は使用することができません．
 
 - \[[texlive\] Index of /trunk/Build/source/texk/ptexenc](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/ptexenc/?view=log)
