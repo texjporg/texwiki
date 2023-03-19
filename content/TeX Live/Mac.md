@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-動作環境については[TeX Live 2022 のバイナリの動作環境](#binary)をお読みください。
+動作環境については[TeX Live 2023 のバイナリの動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -30,12 +30,12 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2022 のバイナリの動作環境 {#binary}
+### TeX Live 2023 のバイナリの動作環境 {#binary}
 
-macOS 用として配布される TeX Live 2022 は，universal-darwin バイナリです。universal-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
-MacTeX-2022 / BasicTeX-2022 に付属する TeX Live も universal-darwin バイナリです。
+macOS 用として配布される TeX Live 2023 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートします。
+MacTeX-2023 / BasicTeX-2023 に付属する TeX Live も universal-darwin バイナリです。
 
-TeX Live 2022 universal-darwin バイナリが動作する macOS
+TeX Live 2023 universal-darwin バイナリが動作する macOS
 
 - macOS Ventura 13
 - macOS Monterey 12
@@ -122,10 +122,10 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2022，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2023，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2022/bin/universal-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2023/bin/universal-darwin/tlmgr path add
 ```
 
 <!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
@@ -356,3 +356,5 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 [VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
+
+[^1]: TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
