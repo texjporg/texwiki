@@ -436,6 +436,9 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 
 #### ChangeLog {#u62118c7}
 
+- [poppler / poppler · GitLab](https://gitlab.freedesktop.org/poppler/poppler)
+    - [https://gitlab.freedesktop.org/poppler/poppler/-/tags](https://gitlab.freedesktop.org/poppler/poppler/-/tags)
+    - [https://gitlab.freedesktop.org/poppler/poppler/-/commits/master](https://gitlab.freedesktop.org/poppler/poppler/-/commits/master)
 - [poppler/poppler - The poppler pdf rendering library](https://cgit.freedesktop.org/poppler/poppler)
     - [https://cgit.freedesktop.org/poppler/poppler/refs/tags](https://cgit.freedesktop.org/poppler/poppler/refs/tags)
     - [https://cgit.freedesktop.org/poppler/poppler/log/](https://cgit.freedesktop.org/poppler/poppler/log/)
