@@ -40,7 +40,7 @@ TeX Live は OS ごとにインストール方法が異なります．
 TeX Live は年次ごとにバージョンが新しくなりますが，基本的に古い年次のものが既にインストールされていても，気にせずに新規インストールと同じ手順をとって構いません。
 
 - [Microsoft Windows](</Microsoft Windows/>)
-    - Win64, Win32 へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
+    - Windows へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
     - [MSYS2](/MSYS2/#texlive)、[Cygwin](/Cygwin/#texlive) へのインストールも可能です．
 - [macOS](/Mac/)
     - macOS へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
@@ -60,7 +60,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2022/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2023/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
