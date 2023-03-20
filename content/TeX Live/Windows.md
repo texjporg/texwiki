@@ -15,7 +15,7 @@ pukiwiki: "TeX Live/Windows"
 
 ## インストール {#rc65f8ae}
 
-ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法，また，64-bit TeX Live Windows バイナリを用いる方法を説明します．
+ここでは全てのファイルが入っている ISO イメージをダウンロードする方法と，ネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法を説明します．
 
 基本的には ネットワークインストーラ を用いる方法をおすすめします．
 ネットワークインストーラで問題のある場合に ISO イメージ を用いる方法をご利用ください． <!-- [[https://texwiki.texjp.org/?TeX%20Live]] と 公式ページの説明とおすすめするインストール方法を合わせます． -->
@@ -128,23 +128,24 @@ Windows PowerShell またはコマンド プロンプトから install-tl-window
 
 でヘルプを参照してください．
 
-### 64-bit TeX Live Windows バイナリ (tl-win64.zip) {#t70745b0}
-
-64-bit TeX Live Windows バイナリ (tl-win64.zip) も利用できます．
-
-インストール方法は 00README.TLW64 を参照してください．
-
-64-bit Ghostscript も必要になるので gs1000w64full-gpl.exe も置いてあります．
-
-インストール後うまくいかない時は，fmtutil-sys --allの実行を試してみてください。
-
-- <strong>HTTP</strong>
-    - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
+<!-- ** 64-bit TeX Live Windows バイナリ (tl-win64.zip) [#t70745b0] -->
+<!--  -->
+<!-- 64-bit TeX Live Windows バイナリ (tl-win64.zip) も利用できます． -->
+<!--  -->
+<!-- インストール方法は 00README.TLW64 を参照してください． -->
+<!--  -->
+<!--  -->
+<!-- 64-bit Ghostscript も必要になるので gs1000w64full-gpl.exe も置いてあります． -->
+<!--  -->
+<!-- インストール後うまくいかない時は，fmtutil-sys - -allの実行を試してみてください。 -->
+<!--  -->
+<!-- -''HTTP'' -->
+<!-- - -http://mirror.ctan.org/systems/win32/TLW64/ -->
 
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive2022iso をダウンロードしてください．
+「download from a nearby CTAN mirror」から，texlive.iso をダウンロードしてください．
 ダブルクリックすると BD-ROM/DVD-ROM ドライブとしてマウントされます．
 中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
 なお，ISO イメージの更新頻度は1年に1度のため，インストールが完了した直後に後述するアップデートを行うことをおすすめします．
@@ -153,7 +154,7 @@ ISO イメージが作成された当時に未解決であったバグや不具�
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2021）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2023）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -223,7 +224,7 @@ TeX Live 2020 対応の事例です．
 
 ## アップデート {#a6223106}
 
-\[スタート\] &gt; \[TeX Live 2022\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
+\[スタート\] &gt; \[TeX Live 2023\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
 \[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -237,7 +238,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2022\tlpkg\backups
+- C:\texlive\2023\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
@@ -278,7 +279,7 @@ tlmgr update --self --all
     setx TEXLIVE_DOWNLOADER wget
     ```
 
-    C:\texlive\2022\tlpkg\installer\wget\\.wgetrc のファイルに以下のような内容で保存しておく。
+    C:\texlive\2023\tlpkg\installer\wget\\.wgetrc のファイルに以下のような内容で保存しておく。
 
     ```
     http_proxy=http://USER:PASSWORD@example.com:8080
@@ -288,7 +289,7 @@ tlmgr update --self --all
 
 ## アンインストール {#od7715ce}
 
-\[スタート\] &gt; \[TeX Live 2022\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
+\[スタート\] &gt; \[TeX Live 2023\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
