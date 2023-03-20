@@ -306,7 +306,7 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2022\bin\win64</ins><br>
+> 　　　　　<ins>C:\texlive\2023\bin\windows</ins><br>
 >
 > <br>
 >
