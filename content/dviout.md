@@ -43,7 +43,7 @@ USBメモリ活用講座の dviout for Windows のページも参考にしてく
 
 ### TeX Live の場合 {#se2d51a5}
 
-TeX Live の Win32 版には 32-bit 版の dviout が含まれています。
+TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 
 ### dvioutの配布 {#h6957949}
 
