@@ -12,7 +12,7 @@ pukiwiki: "Cygwin"
 ## [Cygwin](https://www.cygwin.com/) での TeX の利用 {#y69b4c00}
 
 Cygwin は Microsoft Windows 上で動作する Linux（UNIX&reg; 互換システム）ライクな環境です．
-64-bit 版と 32-bit 版のインストーラがあります．
+x86_64 版のインストーラがあります．
 
 ここでは，Cygwin 上に TeX 環境を構築して利用する方法を説明します．
 Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
@@ -31,7 +31,7 @@ Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
 以下の操作で wget というコマンドを使用しますが，Cygwin
 インストール時にパッケージ選択画面で Default のままインストールした場合，wget
 がインストールされていないので，そのコマンドが使えません．
-あらためて setup-x86_64.exe または setup-x86.exe
+あらためて setup-x86_64.exe
 を立ち上げ，パッケージ選択画面で wget を検索し，Default から Install
 に変更し，wget をインストールしましょう．
 
@@ -150,17 +150,9 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 - [http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
 - [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
 
-#### TeX Live/Cygwin 32-bit 版 (x86) {#cf18fc4c}
-
-- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86)
-- [https://cygwin.com/cygwin/packages/x86/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86/texlive-collection-langjapanese/)
-- [https://cygwin.com/cygwin/packages/x86/texlive/](https://cygwin.com/cygwin/packages/x86/texlive/)
-- [http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86/release/texlive/)
-
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
-Cygwin オフィシャルインストーラの setup-x86_64.exe または setup-x86.exe を使って TeX Live/Cygwin をインストールできます．
+Cygwin オフィシャルインストーラの setup-x86_64.exe を使って TeX Live/Cygwin をインストールできます．
 パッケージ選択画面で Publishing を Default から Install に変更すると TeX Live/Cygwin がフルインストールされます．
 
 #### タイプセットのしかた {#ba49fc90}
@@ -170,11 +162,11 @@ Cygwin オフィシャルインストーラの setup-x86_64.exe または setup-
 
 ### 注意点 {#o2b6fd0e}
 
-#### TeX Live/Cygwin の dvipdfmx が TeX Live あるいは W32TeX の dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがある {#yc6e672e}
+#### TeX Live/Cygwin の dvipdfmx が TeX Live 公式パッケージの dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがある {#yc6e672e}
 
-TeX Live/Cygwin の dvipdfmx が TeX Live あるいは W32TeX の dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがあるようです．
+TeX Live/Cygwin の dvipdfmx が TeX Live 公式パッケージの dvipdfmx よりも優先的に実行されて Unable to find TFM file のエラーが発生することがあるようです．
 
-TeX Live あるいは W32TeX の dvipdfmx が優先的に実行されるように PATH を変更するとうまくいくようです．
+TeX Live 公式パッケージの dvipdfmx が優先的に実行されるように PATH を変更するとうまくいくようです．
 
 - [Unable to find TFM file “″ で2時間無駄にした](http://masuku0w0.hatenablog.jp/entry/2016/04/27/013612)
 - [https://twitter.com/I1zkE/status/723790138212376577](https://twitter.com/I1zkE/status/723790138212376577) , [https://twitter.com/I1zkE/status/723795415124996096](https://twitter.com/I1zkE/status/723795415124996096)
