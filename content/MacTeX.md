@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2022 には以下のパッケージが収録されています。
+MacTeX-2023 には以下のパッケージが収録されています。
 
-#### TeXLive-2022 {#v03e546d}
+#### TeXLive-2023 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -41,7 +41,7 @@ MacTeX は TeX Live の scheme-full に対応していますので，TeX Live �
 #### GUI-Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-TeX フォルダの中の Docs and Spell Utilities フォルダの中に Documents フォルダと Spelling フォルダと READ ME FIRST.pdf があり Documents フォルダの中に Eps-Tiff-Conversion.pdf，Ghostscript.pdf，README-ja.pdf（日本語を扱うための初期設定手順の解説），What Is Installed.pdf があります。
+TeX フォルダの中に READ ME FIRST.pdf があります。
 
 GUI Applications には以下のアプリケーションが収録されています。
 
@@ -63,7 +63,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-9.55.0 {#n1354f54}
+#### Ghostscript-10.00 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
