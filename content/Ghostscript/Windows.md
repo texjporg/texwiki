@@ -23,11 +23,11 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリ
     - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
-        - TeX Live 2016 およびそれ以前に収録されている Ghostscript (tlgs.win32) は本家版をベースにしています。
+        - TeX Live 2016 およびそれ以前に収録されている Ghostscript は本家版をベースにしています。
 - 角藤版 Ghostscript
     - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
         - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
-        - TeX Live 2017 (win32) の Ghostscript (tlgs.win32) に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+        - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
 - Chocolatey Ghostscript
     - Chocolatey からインストールできる Ghostscript
 - MSYS2 Ghostscript (mingw-w64-ghostscript)
@@ -35,7 +35,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 - Cygwin Ghostscript
     - Cygwin からインストールできる Ghostscript
 
-[TeX Live](</TeX Live/>) と一緒に用いられているのは，TeX Live の win32 版に収録されている Ghostscript (tlgs.win32) です。
+[TeX Live](</TeX Live/>) と一緒に用いられているのは，TeX Live の windows 版に収録されている Ghostscript (tlgs.windows) です。
 
 <!-- tlgs のリンク -->
 <!-- -[[[texlive] Revision 31760:http://www.tug.org/svn/texlive?view=revision&revision=31760]] -->
@@ -43,7 +43,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 ### インストール {#a4d9c6ea}
 
-TeX Live の win32 版を使用する場合は Ghostscript (tlgs.win32) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
+TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が含まれていますので，別途 Ghostscript をインストールする必要はありません。
 
 以下で Ghostscript のインストール方法を説明します。
 
@@ -120,9 +120,9 @@ Ghostscript をインストールした場合，Windows PowerShell で echo $Env
     - Ghostscript を起動するコマンドは 64-bit 版なら gswin64c，32-bit 版なら gswin32c です。
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合
-    - TeX Live (win32) をインストールした場合は TeX Live (win32) に付属する Ghostscript (tlgs.win32) が自動的にインストールされます。TeX Live (win64) をインストールする場合は 64-bit 版の Ghostscript もインストールしてください。
+    - TeX Live (windows) をインストールした場合は TeX Live (windows) に付属する Ghostscript (tlgs.windows) が自動的にインストールされます。
     - Ghostscript (tlgs.win32) を起動するコマンドは rungs です。TeX Live (win64) にも rungs.exe が収録されています。
-    - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.win32) を使用する場合は ps2pdf.exe という実行ファイルになっています。TeX Live (win64) にも ps2pdf.exe が収録されています。
+    - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.windows) を使用する場合は ps2pdf.exe という実行ファイルになっています。
 
 #### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
 
@@ -753,7 +753,7 @@ composefont pop
 
 - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
-#### tlgs {#a9e655e3}
+#### tlgs.windows {#a9e655e3}
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
