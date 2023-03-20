@@ -56,6 +56,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [TeX Live Utility](</TeX Live Utility/>)
     - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
+    - デフォルトの用紙サイズはメニューの \[設定\] &gt; \[用紙寸法を変更…\] を選択することで設定できます（A4またはレター）。
     - 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます。
 
 - [TeXShop](/TeXShop/)
