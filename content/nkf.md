@@ -39,7 +39,7 @@ Windows に [TeX Live](</TeX Live/>) を『[［改訂第7版］LaTeX2e 美文書
 
 - [nkf.exe nkf32.dll Windows用](http://www.vector.co.jp/soft/win95/util/se295331.html)
 
-アーカイブファイルを解凍すると複数の exe ファイルがありますが，このうち
+アーカイブファイルを展開すると複数の exe ファイルがありますが，このうち
 nkfwin/vc2005/win32(98,Me,NT,2000,XP,Vista,7)Windows-31J/
 フォルダ配下の nkf32.exe はデフォルトで Windows-31J（Shift_JIS の拡張）に変換してくれるので，よく使われています。
 これを nkf.exe とリネームしてパスの通ったディレクトリに配置するとよいでしょう。
