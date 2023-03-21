@@ -27,7 +27,7 @@ W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>
 
 W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
 これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，[TeXworks](/TeXworks/)）を自動でインストールし，設定まで済ませてくれます．
-基本的にはインストーラを取得後，解凍し，abtexinst.exe をダブルクリックして指示に従ってください．
+基本的にはインストーラを取得後，展開し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
 
 <a href="/attach/W32TeX/exeicon.png"><img src="/attach/W32TeX/exeicon.png" alt=""></a>
@@ -62,7 +62,7 @@ W32TeX 自身が簡易インストーラを提供しています．
 1. 環境変数 Path を設定する
 
 なお，簡易インストーラが行うことは tar.xz により圧縮されているファイルを展開するだけです．
-従って，手持ちの解凍ソフトが .tar.xz 形式に対応していれば，そちらで解凍して，適当な場所に展開することでもインストールが完了します（環境変数 Path の設定は必要です）．
+従って，手持ちの展開ソフトが .tar.xz 形式に対応していれば，そちらで展開して，適当な場所に展開することでもインストールが完了します（環境変数 Path の設定は必要です）．
 
 #### ダウンロードサイト {#y2ec963e}
 
