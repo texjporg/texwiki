@@ -50,11 +50,11 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 - [Eclipse の最新リリース版](https://download.eclipse.org/eclipse/downloads/) (本体)
 
-を解凍し，
+を展開し，
 
 - [Pleiades プラグイン](http://mergedoc.osdn.jp/) (Eclipse 本体とプラグインの日本語化)
 
-を Eclipse のルートフォルダに解凍して eclipse.ini の最終行に
+を Eclipse のルートフォルダに展開して eclipse.ini の最終行に
 
 ```
 -javaagent:plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar
