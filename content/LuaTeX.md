@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2023 には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。
+
 TeX Live 2022 には LuaHBTeX 1.15.0, LuaTeX 1.15.0 が収録されています。
 
 TeX Live 2021 には LuaHBTeX 1.13.2, LuaTeX 1.13.2 が収録されています。
@@ -37,15 +39,17 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
 
-TeX Live 2022 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX (1.15.0) バイナリと LuaTeX (1.15.0) バイナリが収録されています。
+TeX Live 2023 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
-TeX Live 2021 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX (1.13.2) バイナリと LuaTeX (1.13.2) バイナリが収録されています。
+TeX Live 2022 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
-TeX Live 2020 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaHBTeX (1.12.0) バイナリと LuaTeX (1.12.0) バイナリが収録されています。
+TeX Live 2021 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
-TeX Live 2019 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaTeX (1.10.0) バイナリが収録されています。
+TeX Live 2020 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
-TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの LuaTeX (1.07.0) バイナリが収録されています。
+TeX Live 2019 には内蔵 Lua 処理系のバージョンが 5.3.5 である LuaTeX バイナリが収録されています。
+
+TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの LuaTeX バイナリが収録されています。
 
 - luatex, texlua: Lua 5.2.4 を内蔵（デフォルト）
 - luatex53, texlua53: Lua 5.3.4 を内蔵
