@@ -17,6 +17,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ### 動作環境 {#s8a76771}
 
+- macOS Ventura 13
 - macOS Monterey 12
 - macOS Big Sur 11
 - macOS 10.15 Catalina
@@ -64,14 +65,6 @@ UTeX20160907.dmg 以降の版は，TeX Live scheme-small + collection-langjapane
 texlive フォルダごと削除してしまってもかまいません。
 そのうえで，最新版 の Drag &amp; Drop UpTeX をインストールしてください。
 
-### 過去の情報 {#a33a457a}
+### 更新履歴 {#a33a457a}
 
 [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
-
-- Drag &amp; Drop UpTeX 20201123 は TeX Live 2020 scheme-small + collection-langjapanese + α。
-- Drag &amp; Drop UpTeX 20190717 は TeX Live 2019 scheme-small + collection-langjapanese + α。
-- Drag &amp; Drop UpTeX 20180702 は TeX Live 2018 scheme-small + collection-langjapanese + α。
-- Drag &amp; Drop UpTeX 20180429 は TeX Live 2017 scheme-small + collection-langjapanese。
-- Drag &amp; Drop UpTeX 20160907 は BasicTeX を使わず，「TeX Live 2016 scheme-small + collection-langjapanese」を収録しています ([forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)) 。
-- Drag &amp; Drop UpTeX 20160614 までは「BasicTeX + collection-langjapanese」を収録していました。
-- Drag &amp; Drop UpTeX は，2015年9月10日の UTeX20150910.dmg からは TeX Live ベースになりました。
