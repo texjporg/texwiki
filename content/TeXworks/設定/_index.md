@@ -16,9 +16,15 @@ pukiwiki: "TeXworks/設定"
 
 ## 日本語環境用の設定 {#bcc74f23}
 
-以下の（またはそれに対応する）設定は，TeX Live （2016 以降）に付属する TeXworks では既にすんでいます．公式サイトの Windows バイナリ〔のうち、2016 より前のもの …ということでしょうか？ ちょっと曖昧に思えて読んでいて不安になったので。fix願います。〕は，デフォルトで pdflatex によるコンパイルを試みるため，これでは日本語を扱えません．
+### TeX Live に付属する TeXworks の場合 {#o58363ec}
 
-公式サイトの Windows バイナリ〔のうち、2016 より前のもの …ということでしょうか？ こちらもfix願います。〕を使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように、タイプセットエンジンを選択するドロップダウンリストに新しい選択肢として追加登録しておきます．
+TeX Live に付属する TeXworks では既に日本語環境用の設定がされています。
+
+### TeXworks 公式サイトの TeXworks の場合 {#tcf1ce56}
+
+TeXworks 公式サイトの TeXworks は、日本語環境用の設定はされておらず、デフォルトで pdflatex によるコンパイルを試みるため、日本語を扱えません。
+
+TeXworks 公式サイトの TeXworks を使用する場合は以下のように ptex2pdf （platex + dvipdfmx を行うスクリプト）によるコンパイルができるように、タイプセットエンジンを選択するドロップダウンリストに新しい選択肢として追加登録しておきます．
 まず、次の図に示すように、メニューから「編集」→「設定」と選びます．
 
 <a href="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png"><img src="/attach/TeXworks/%E8%A8%AD%E5%AE%9A/set1.png" alt=""></a>
