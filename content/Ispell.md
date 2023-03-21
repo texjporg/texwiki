@@ -24,7 +24,7 @@ Windows の場合は[角藤さんによる移植版](http://www.ring.gr.jp/archi
 角藤版 ispell-3.3.02-w32.tar.xz または ispell-3.4.00-w32.tar.xz がインストール済みのシステムに，新・旧両正書法対応のドイツ語辞書を追加する方法を説明します。
 
 - 
-    [dic-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・解凍して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
+    [dic-german.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-german.zip) をダウンロード・展開して得られる deutsch.hash, normal-german.hash, former-german.hash, extreme-german.hash を
 
     ```
     ispell-w32/dic/
@@ -263,7 +263,7 @@ M-x german-mode （トグル）で何が起こるのかは，お楽しみ！(man
 #### Windows の場合 {#w091e4da}
 
 - 
-    [dic-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-french.zip) をダウンロード・解凍して得られる francais.hash, francais-tex.hash を
+    [dic-french.zip](http://apapa.hum.fukuoka-u.ac.jp/~ynagata/latex/dic-french.zip) をダウンロード・展開して得られる francais.hash, francais-tex.hash を
 
     ```
     ispell-w32/dic/
