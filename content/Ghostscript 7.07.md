@@ -110,7 +110,7 @@ Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
 Ghostscript 7.07 単独で日本語の PDF を作る場合や，dvipdfmx 処理する EPS ファイルに日本語が含まれている場合など，CJK フォントを扱うためには作業が必要です。
 EPS ファイルに日本語が含まれていない（あるいは日本語がアウトライン化されている）ならば，dvipdfmx で処理する本文にいくら日本語が使われていても，以下の作業は特に不要です。
 
-リンクから CMap Resources の5つの zip アーカイブをダウンロードし，解凍してでてくる CMap フォルダの中身をすべて C:\gs\gs7.07\Resource\CMap というフォルダ（なければ作成）の中に配置します。
+リンクから CMap Resources の5つの zip アーカイブをダウンロードし，展開してでてくる CMap フォルダの中身をすべて C:\gs\gs7.07\Resource\CMap というフォルダ（なければ作成）の中に配置します。
 もし C:\gs\gs7.07\Resource 以外のフォルダに展開するなら，C:\gs\gs7.07\lib\gs_res.ps の248&ndash;249行を編集する必要があります。
 
 次は和文フォントを使えるようにします。
@@ -213,7 +213,7 @@ $ tar xvzf gnu-gs-fonts-other-6.0.tar.gz
 ```
 
 さらに，CJK フォントを扱うためには作業が必要です。
-リンクから CMap Resources の5つの zip アーカイブをダウンロードし，解凍してでてくる CMap フォルダの中身をすべて /usr/local/teTeX/share/ghostscript/gs7.07/Resource/CMap というフォルダ（なければ作成）の中に配置します。
+リンクから CMap Resources の5つの zip アーカイブをダウンロードし，展開してでてくる CMap フォルダの中身をすべて /usr/local/teTeX/share/ghostscript/gs7.07/Resource/CMap というフォルダ（なければ作成）の中に配置します。
 
 ### 和文フォントの設定 {#l9833aef}
 
