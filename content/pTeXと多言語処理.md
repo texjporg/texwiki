@@ -98,7 +98,7 @@ mxedruli パッケージは ASCII アルファベットでグルジア語を記�
 インストール方法について解説します。
 
 グルジア語を扱う TeX パッケージである
-[mxedruli パッケージ](https://mirror.ctan.org/fonts/georgian/mxedruli/)をダウンロードし，展開（解凍）します。
+[mxedruli パッケージ](https://mirror.ctan.org/fonts/georgian/mxedruli/)をダウンロードし，展開します。
 $TEXMFLOCAL/fonts/source/mxedruli/ に mf/ ディレクトリの中身を，$TEXMFLOCAL/tex/latex/mxedruli/ に inputs/ ディレクトリの中身をコピーします。
 （mxedruli/ ディレクトリは新たに作ります。名前は別に “mxedruli” でなくても良いですが。）
 必要な方は mktexlsr コマンドを実行しておきましょう。
@@ -157,7 +157,7 @@ PDF ファイルをプレビューしてみて，うまくいっているかど�
 
 TeX Live の場合は ArabTeX は最初からインストールされています。
 W32TeX の場合は [ArabTeX](https://ctan.org/pkg/arabtex) をダウンロードします。
-展開（解凍）後，次のようにコピーします。
+展開後，次のようにコピーします。
 $TEXMFLOCAL は C:/w32tex/share/texmf-local などご自分の環境に置き換えてください。
 
 - mfinput/ ディレクトリ内のファイルすべて → $TEXMFLOCAL/fonts/source/public/arabtex/
@@ -276,7 +276,7 @@ thailatexのWindows用はMikTeXで用いられるものになっていますが�
 
 以下 $TEXMFLOCAL を share/texmf-local など自分の環境に置き換えて作業を進めてください。
 
-miktl025.zip を展開（解凍）し，dvips/base/ にある拡張子 .enc のファイルを
+miktl025.zip を展開し，dvips/base/ にある拡張子 .enc のファイルを
 
 - $TEXMFLOCAL/fonts/enc/dvips/thai/
 
@@ -334,7 +334,7 @@ rnorasii Norasi-Italic " TeXTISEncoding ReEncodeFont " <TeXTIS.enc <norasii.pfb
 rnorasiz Norasi-BoldItalic " TeXTISEncoding ReEncodeFont " <TeXTIS.enc <norasiz.pfb
 ```
 
-と記述します。もう一つダウンロードしてきた swathw32.zip は展開（解凍）して， data/ ディレクトリと swath.exe を C:\w32tex\bin\ など PATH の通ったところにコピーします（data/ ディレクトリは別にどこにコピーしても同じだと思いますが）。
+と記述します。もう一つダウンロードしてきた swathw32.zip は展開して， data/ ディレクトリと swath.exe を C:\w32tex\bin\ など PATH の通ったところにコピーします（data/ ディレクトリは別にどこにコピーしても同じだと思いますが）。
 
 では，実際にタイ語文書を作りましょう。
 
@@ -1344,7 +1344,7 @@ ps2pdf cjkintro.ps
 
 まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) の3つをダウンロードします。
 
-montex.tgz のファイルを tar + gzip 形式に対応した展開（解凍）ソフトで展開し，次のようにコピーします。
+montex.tgz のファイルを tar + gzip 形式に対応した展開ソフトで展開し，次のようにコピーします。
 $TEXMF は share/texmf-local など，ご自分の環境に読み替えてください。
 
 - texinput/ ディレクトリの中のすべてのファイル → $TEXMF/tex/latex/montex/
@@ -1382,7 +1382,7 @@ fmtutil --byfmt platex
 Perl をインストールしていない方は [Strawberry Perl](http://strawberryperl.com/) をインストールしておきましょう。
 なお，PC-UNIX環境の方は各ディストリビューション毎にパッケージが用意されている（ないしインストール済みである）場合が多いです。
 
-まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開（解凍）します。
+まず，[Utf82TeX](http://yasuda.homeip.net/tex/utf82tex.html) の[ダウンロード・サービス](http://yasuda.homeip.net/dl/dl.html#g)から utf82tex-\*.zip をダウンロードし，展開します。
 展開したディレクトリ内のutf82texというファイルをUnicode対応のテキストエディタで開きますと，先頭の行に
 
 ```
