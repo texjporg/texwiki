@@ -23,11 +23,12 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリ
     - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書き[^1]に対応しています。
-        - TeX Live 2016 およびそれ以前に収録されている Ghostscript は本家版をベースにしています。
 - 角藤版 Ghostscript
     - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
         - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
         - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+- Scoop Ghostscript
+    - Scoop からインストールできる Ghostscript
 - Chocolatey Ghostscript
     - Chocolatey からインストールできる Ghostscript
 - MSYS2 Ghostscript (mingw-w64-ghostscript)
@@ -52,7 +53,7 @@ TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が�
 旧バージョンの Ghostscript が既にインストールされている場合は，最新版をインストールする前に旧バージョンをアンインストールしておきます。
 
 - 自分で追加した，あるいは書き換えたファイル等で必要なものは，別のフォルダーにバックアップを取っておきます。
-- \[設定\] -&gt; \[アプリ\] の \[アプリの機能\] から GPL Ghostscript をアンインストールします。
+- \[設定\] &gt; \[アプリ\] &gt; \[インストールされているアプリ\] から GPL Ghostscript をアンインストールします。
 
 旧バージョンの Ghostscript Fonts があればそれもアンインストールします。
 
@@ -61,30 +62,30 @@ TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が�
 
 #### インストール方法 {#q1167b48}
 
-1. 最新の角藤版 Ghostscript インストーラ（gs1000w64full-gpl.exe）または本家版 Ghostscript インストーラ（gs1000w64.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs10.00.0” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.00.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. Ghostscript インストーラ（gs10010w64.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs10.01.0” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.01.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-1. GSview 5.0 は gs-10.00.0 には対応していません。[GSview 5.01beta は gs-10.00.0 に対応しています。（動作確認済み）](/GSview/#install)
+1. [SumatraPDF](/SumatraPDF/) で PS ファイル、EPS ファイルが表示できます。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gsgs10.00.0 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs10.00.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gsgs10.01.0 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs10.01.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs10.00.0 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs10.01.0 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs10.00.0\bin
+C:\Program Files\gs\gs10.01.0\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs10.00.0\lib
+C:\Program Files\gs\gs10.01.0\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -92,7 +93,7 @@ C:\Program Files\gs\gs10.00.0\lib
 Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
 
 ```
-…;C:\Program Files\gs\gs10.00.0\bin;C:\Program Files\gs\gs10.00.0\lib;…
+…;C:\Program Files\gs\gs10.01.0\bin;C:\Program Files\gs\gs10.01.0\lib;…
 ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -121,7 +122,7 @@ Ghostscript をインストールした場合，Windows PowerShell で echo $Env
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合
     - TeX Live (windows) をインストールした場合は TeX Live (windows) に付属する Ghostscript (tlgs.windows) が自動的にインストールされます。
-    - Ghostscript (tlgs.win32) を起動するコマンドは rungs です。TeX Live (win64) にも rungs.exe が収録されています。
+    - Ghostscript (tlgs.windows) を起動するコマンドは rungs です。TeX Live 2023 (windows) の rungs は gswin64c が実行されます。
     - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.windows) を使用する場合は ps2pdf.exe という実行ファイルになっています。
 
 #### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
@@ -178,11 +179,7 @@ rungs.exe -dEPSCrop -q -dSAFER -dBATCH -dNOPAUSE -sDEVICE="pdfwrite" -sOutputFil
 
 Windows で使用可能な Ghostscript のフロントエンド（プレビューしたり，その他様々なことを GUI で行うためのソフトウェア）のいくつかについて，インストール方法と注意点を簡単に記しておきます。
 
-#### GSview {#gsview}
-
-[GSview](/GSview/) は Ghostscript のフロントエンドです。GSview 5.0 は gs-10.00.0 には対応していません。[GSview 5.01beta は gs-10.00.0 に対応しています。（動作確認済み）](/GSview/#install)
-
-#### SumatraPDF {#f86c5a11}
+#### SumatraPDF {#sumatrapdf}
 
 [SumatraPDF](/SumatraPDF/) は Ghostscript をバックエンドとして利用して PostScript ファイルを表示することができます。
 
@@ -446,9 +443,6 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 4) gs の option -dNOPLATFONTS が用いられた場合には，Windows のシステムフォントフォルダーにあるフォントは探されなくなります。ただし，LIB PATH, FONT PATH にそれが設定されているならば探されます。つまり，相対指定なら LIB PATH に，絶対指定ならば LIB PATH または FONT PATH にシステムフォントフォルダーの場所が記述されていれば探されます。
 
 5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
-
-参考) GSview で \[Options\]->\[Advanced Configure...\] の Ghostscript Options: を見ると，あらかじめ -dNOPLATFONTS -sFONTPATH="c:\psfonts" が設定されているはずです。通常は問題ありませんが，まれに問題を引き起こすかもしれません。
-なお、GSview 5.0 は gs-10.00.0 には対応していません。[GSview 5.01beta は gs-10.00.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
@@ -758,6 +752,10 @@ composefont pop
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
 
+#### Scoop Ghostscript {#ze908a4d}
+
+- [https://scoop.sh/#/apps?q=ghostscript&s=0&d=1&o=true](https://scoop.sh/#/apps?q=ghostscript&s=0&d=1&o=true)
+
 #### Chocolatey Ghostscript {#x1695e76}
 
 - [https://community.chocolatey.org/packages/Ghostscript](https://community.chocolatey.org/packages/Ghostscript)
@@ -771,8 +769,6 @@ composefont pop
 #### Cygwin Ghostscript {#q45fc3c8}
 
 - [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64)
-- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86)
 - [https://cygwin.com/cygwin/packages/x86_64/ghostscript/](https://cygwin.com/cygwin/packages/x86_64/ghostscript/)
-- [https://cygwin.com/cygwin/packages/x86/ghostscript/](https://cygwin.com/cygwin/packages/x86/ghostscript/)
 
 [^1]: 日本語の縦書き PostScript ファイルを表示する必要がある場合は Ghostscript 9.22 以降を使用してください。([gs-9.22](https://okumuralab.org/tex/mod/forum/discuss.php?d=2276)&#x29;
