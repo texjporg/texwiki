@@ -43,16 +43,9 @@ Windows, macOS, Linux
 
 [https://binary-factory.kde.org/job/Okular_Nightly_win64/](https://binary-factory.kde.org/job/Okular_Nightly_win64/) から Okular のインストーラーをダウンロードしてインストールできます．
 
-Chocolatey でインストールすることもできます．
-Chocolatey を使用する場合は [https://chocolatey.org/packages/okular](https://chocolatey.org/packages/okular) を参照してください．
+Scoop  でインストールすることもできます．[https://scoop.sh/#/apps?q=okular&s=0&d=1&o=true](https://scoop.sh/#/apps?q=okular&s=0&d=1&o=true) を参照してください．
 
-Windows Power&#x53;lhell を管理者として実行して
-
-```
-choco install okular
-```
-
-を実行します．
+Chocolatey でインストールすることもできます．[https://chocolatey.org/packages/okular](https://chocolatey.org/packages/okular) を参照してください．
 
 ### macOS {#ye831736}
 
