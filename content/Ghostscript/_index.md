@@ -85,7 +85,7 @@ Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファ�
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [GSview](/GSview/), [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evince/), [Okular](/Okular/),  Linux では [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
+Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evince/), [Okular](/Okular/),  Linux では [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
