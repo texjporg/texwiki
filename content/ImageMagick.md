@@ -31,7 +31,6 @@ Windows, macOS, Linux
 - [https://chocolatey.org/packages/imagemagick](https://chocolatey.org/packages/imagemagick)
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
-- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 <strong> <em>重要！</em> </strong>
 
