@@ -19,10 +19,6 @@ pukiwiki: "TeX Live/build"
 
 - [MSYS2#TeX Live](/MSYS2/#texlive)
 
-#### i686-pc-mingw32 {#o7f51595}
-
-- [MinGW#TeX Live](/MinGW/#texlive)
-
 ### macOS {#m1f2034d}
 
 - [TexLive installation from sources &#8211; Minimalia](http://www.kindoblue.nl/articles/latex-install-from-sources)
