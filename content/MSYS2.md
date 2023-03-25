@@ -67,20 +67,10 @@ MSYS2 で TeX Live をインストールしたりビルドしたりできます�
 
 ### TeX Live/Built by MSYS2 project {#p4932a37}
 
-64-bit バイナリ
-
 - [https://packages.msys2.org/group/mingw-w64-x86_64-texlive-full](https://packages.msys2.org/group/mingw-w64-x86_64-texlive-full)
 
 ```
 pacman -S mingw-w64-x86_64-texlive-full
-```
-
-32-bit バイナリ
-
-- [https://packages.msys2.org/group/mingw-w64-i686-texlive-full](https://packages.msys2.org/group/mingw-w64-i686-texlive-full)
-
-```
-pacman -S mingw-w64-i686-texlive-full
 ```
 
 ### Building TeX Live {#c3b844d4}
