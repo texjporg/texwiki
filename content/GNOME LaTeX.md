@@ -44,16 +44,8 @@ Windows, macOS, Linux
 
 Windows 版 GNOME LaTeX は MSYS2 の pacman でインストールできます．
 
-64-bit GNOME LaTeX の場合は
-
 ```
 pacman -S mingw-w64-x86_64-gnome-latex
-```
-
-32-bit GNOME LaTeX の場合は
-
-```
-pacman -S mingw-w64-i686-gnome-latex
 ```
 
 を実行します．
