@@ -47,20 +47,11 @@ TeX Live 2017 以降をインストールしている場合は poppler utilities
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler)
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
-- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 MSYS2 の pacman でインストールすることもできます。
 
-64-bit Poppler の場合は
-
 ```
 pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
-```
-
-32-bit Poppler の場合は
-
-```
-pacman -S mingw-w64-i686-poppler mingw-w64-i686-poppler-data
 ```
 
 を実行します．
