@@ -19,16 +19,8 @@ Fontconfig は、主に Linux などで用いられる、システムのフォ�
 
 ### MSYS2 {#pbb482ae}
 
-64-bit fontconfig の場合は
-
 ```
 pacman -S mingw-w64-x86_64-fontconfig
-```
-
-32-bit fontconfig の場合は
-
-```
-pacman -S mingw-w64-i686-fontconfig
 ```
 
 ### MinGW {#j2ea43a1}
