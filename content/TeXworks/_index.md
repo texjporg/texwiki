@@ -39,7 +39,7 @@ Microsoft Windows, macOS, GNU/Linux で利用できます．TeXworks はツー�
 
 ### 設定 {#q50d2378}
 
-TeX Live 2016 以降で配布のものを使用する場合は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
+TeX Live に付属する TeXworks は，既に日本語用の設定がされています．そうでない場合に日本語を含む文書の組版をするためには，upLaTeX (ptex2pdf) または pLaTeX (ptex2pdf) を使うための設定を追加する必要があります．
 
 [TeXworks/設定](</TeXworks/設定/>) を参照．
 
