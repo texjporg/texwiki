@@ -751,6 +751,7 @@ composefont pop
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+    - [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
 
 #### Scoop Ghostscript {#ze908a4d}
 
@@ -764,7 +765,6 @@ composefont pop
 
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-ghostscript)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
-- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 
 #### Cygwin Ghostscript {#q45fc3c8}
 
