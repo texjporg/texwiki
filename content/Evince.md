@@ -66,21 +66,12 @@ Windows, macOS, Linux
 
 - [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
-- [http://repo.msys2.org/mingw/i686/](http://repo.msys2.org/mingw/i686/)
 - [FOSS な PDF Viewer for Windows (Evince も導入できた)](https://text.baldanders.info/remark/2019/03/about-free-software-pdf-viewers/)
 
 Windows 版 Evince は MSYS2 の pacman でインストールできます．
 
-64-bit Evince をインストールする場合は
-
 ```
 pacman -S mingw-w64-x86_64-evince
-```
-
-32-bit Evince をインストールする場合は
-
-```
-pacman -S mingw-w64-i686-evince
 ```
 
 を実行します．
