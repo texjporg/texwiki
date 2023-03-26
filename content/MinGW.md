@@ -7,16 +7,16 @@ pukiwiki: "MinGW"
 
 # MinGW
 
-## [MinGW](http://www.mingw.org/) {#c9002cc1}
+## [MinGW](https://osdn.net/projects/mingw/) {#c9002cc1}
 
 MinGW は "Minimalist GNU for Windows" の略語で，Microsoft Windows アプリケーションを開発するための最小限の開発環境を提供します．
 
 <strong>公式サイト</strong>
 
-- [MinGW | Minimalist GNU for Windows](http://www.mingw.org/)
+- [MinGW | Minimalist GNU for Windows](https://osdn.net/projects/mingw/)
 
 TeX 関連プログラムには C, C++ で書かれたプログラムがあります．
-MinGW を使用すれば [TeX Live](</TeX Live/>) の最新の開発版を自分でビルドして使用することができます．
+MinGW を使用すれば [TeX Live](</TeX Live/>) の開発版の 32-bit バイナリをビルドして使用することができます．
 64-bit バイナリをビルドしたい場合は [MSYS2](/MSYS2/) を使用します．
 
 ***
@@ -25,11 +25,11 @@ MinGW を使用すれば [TeX Live](</TeX Live/>) の最新の開発版を自分
 
 ### インストーラ {#x50e277a}
 
-- [https://sourceforge.net/projects/mingw/files/Installer/](https://sourceforge.net/projects/mingw/files/Installer/)
+- [https://osdn.net/projects/mingw/releases/68260](https://osdn.net/projects/mingw/releases/68260)
 
 ## MSYS {#o619b52f}
 
-- [http://www.mingw.org/wiki/MSYS](http://www.mingw.org/wiki/MSYS)
+- [https://web.archive.org/web/20201127230203/http://www.mingw.org/wiki/MSYS](https://web.archive.org/web/20201127230203/http://www.mingw.org/wiki/MSYS)
 
 #### /etc/fstab の作成 {#n8a19258}
 
