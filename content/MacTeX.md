@@ -125,6 +125,7 @@ $ sudo tlmgr paper a4
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [2022年のコンピューターノウハウ (Mac) 73 MacTeX 2023 が来た](http://m-katsurada.sakura.ne.jp/knowhow-2022/node73.html)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
+- [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 - [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](http://murabitoleg.com/mac-vscode-latex/)
