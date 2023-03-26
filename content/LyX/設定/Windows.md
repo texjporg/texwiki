@@ -41,18 +41,18 @@ pukiwiki: "LyX/設定/Windows"
 > ☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^1] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
 > DVIビューア用紙寸法設定:　　[^2]<br>
 > 書誌情報の生成<br>
-> &nbsp;処理子(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;コマンド(O):　　　　　upbibtex[^3]<br>
-> &nbsp;日本語用処理子(J):　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;オプション(I):　　　　　[^4]<br>
+> &nbsp;処理プログラム(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;コマンド(O):　　　　　<ins>upbibtex</ins>[^3]<br>
+> &nbsp;日本語用処理プログラム(J):　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;コマンド(M):　　　　　<ins>upbibtex</ins>[^4]<br>
 > 索引の生成<br>
-> &nbsp;処理子(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[texindy　　　　　　　　　　　　　　　　　▼\]</span><br>
-> &nbsp;オプション(T):　　　　　[^5]<br>
-> &nbsp;日本語用処理子(J):　<ins>upmendex -c -q</ins>[^6]<br>
+> &nbsp;処理プログラム(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　▼\]</span><br>
+> &nbsp;コマンド(M):　　　　　<ins>upmendex -c -q</ins>[^5]<br>
+> &nbsp;日本語用処理プログラム(J):　<ins>upmendex -c -q</ins>[^6]<br>
 >
 > <br>
 >
-> &nbsp;用語集コマンド(N):　<ins>makeindex -s nomencl.ist</ins>[^7]<br>
+> &nbsp;用語集コマンド(N):　<ins>upmendex -s nomencl.ist</ins>[^7]<br>
 > &nbsp;CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8]<br>
 > &nbsp;☑ LaTeXファイルでWindows流のパス表記を使う(U)[^9]<br>
 > &nbsp;☐ 文書クラス変更時にクラスオプションをリセットする(E)[^10]<br>
@@ -361,16 +361,16 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．
 
 を記述して \[適用(A)\] &gt; \[保存(S)\] をクリックして LyX を再起動します．
 
-全てのユーザーに対してインストールした場合は
+すべてのユーザーにインストールした場合は
 C:\Program Files\LyX 2.3\bin\lyxeditor.cmd を作成します．
 
-自分専用にインストールした場合は
-C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd を作成します．
+自分にのみインストールした場合は
+C:\Users\Lydia\AppData\Local\Programs\LyX 2.3\bin\lyxeditor.cmd を作成します．
 
 ***
 
-- C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (全てのユーザーに対してインストールした場合)
-- C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd (自分専用にインストールした場合)
+- C:\Program Files\LyX 2.3\bin\lyxeditor.cmd (すべてのユーザーにインストールした場合)
+- C:\Users\Lydia\AppData\Local\Programs\LyX 2.3\bin\lyxeditor.cmd (自分にのみインストールした場合)
 
 ***
 
@@ -388,19 +388,19 @@ endlocal
 
 ***
 
-全てのユーザーに対してインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.3\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．
+すべてのユーザーにインストールした場合に lyxeditor.cmd が作成できない場合は，デスクトップで lyxeditor.cmd ファイルを作成して C:\Program Files\LyX 2.3\bin\ に作成した lyxeditor.cmd ファイルをペーストしてください．
 
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に<br>
-全てのユーザーに対してインストールした場合は
+すべてのユーザーにインストールした場合は
 
 ```
 "C:\Program Files\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
 ```
 
-自分専用にインストールした場合は
+自分にのみインストールした場合は
 
 ```
-"C:\Users\Lydia\AppData\Local\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
+"C:\Users\Lydia\AppData\Local\Programs\LyX 2.3\bin\lyxeditor.cmd" "%f" %l
 ```
 
 を記述します．
