@@ -536,9 +536,9 @@ sudo zypper install lyx
 - [LyX を使用してグラフィカルな方法で LaTeX 文書を作成する](http://www.ibm.com/developerworks/jp/opensource/library/os-lyx/)
 - [Lyx で Beamer](http://hasundue.hatenablog.com/entry/2012/06/17/134329)
 - [博士論文の執筆で役に立ったソフトウェア](http://blogos.com/article/45299/)
-- [LyX HowTo](http://www.int.otaru-uc.ac.jp/lyx-howto.aspx/) 横田 宏治 さんによる詳しい解説
-- [インド学仏教学における LyX の利用](http://skalldan.wordpress.com/2011/12/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-lyx-%E3%81%AE%E5%88%A9%E7%94%A8/)
-- [LyX の導入と Zotero との連携](http://skalldan.wordpress.com/2011/11/30/lyx-%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8-zotero-%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA/)
+- [LyX HowTo](https://web.archive.org/web/20170802204739/http://www.int.otaru-uc.ac.jp/lyx-howto.aspx/) 横田 宏治 さんによる詳しい解説
+- [インド学仏教学における LyX の利用](https://web.archive.org/web/20200808084242/http://skalldan.wordpress.com/2011/12/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-lyx-%E3%81%AE%E5%88%A9%E7%94%A8/)
+- [LyX の導入と Zotero との連携](https://web.archive.org/web/20170710224047/http://skalldan.wordpress.com/2011/11/30/lyx-%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8-zotero-%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA/)
 - [Lyxを使ってみました](http://d.hatena.ne.jp/mFumi/20090902/1251900233)
 
 ### License {#pb9a4019}
