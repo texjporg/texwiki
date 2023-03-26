@@ -132,7 +132,7 @@ LyX のインストーラーを右クリックします。
 <br>
 
 　　　　　　　　　　　　　　　　　　　　　このウィザードが、あなたのLyX導入作業中のご案内をします。<br>
-　　　　　　　　　　　　　　　　　　　　　続けるには \[次へ\] をクリックして下さい。<br>
+　　　　　　　　　　　　　　　　　　　　　\[次へ\] をクリックし続行します。<br>
 
 <br>
 
@@ -153,16 +153,15 @@ LyX のインストーラーを右クリックします。
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>ライセンス契約書</strong><br>
-> 　　LyX 2.3.7をインストールする前に、ライセンス条件を確認してください。<br>
+> 　　LyX 2.3.7 をインストールする前に、ライセンス条件を確認してください。<br>
 >
 > <br>
 >
-> 　　\[Page Down\]を押して契約書をすべてお読みください。<br>
-> ...<br>
-> ...<br>
-> ...<br>
-> 　　誓約書のすべての条件に同意するならば、\[同意する\]を選んでインストールを続けてください。LyX 2.3.7<br>
-> 　　をインストールするには、契約書に同意する必要があります。<br>
+> 　　\[Page Down\] を押し契約をすべてお読みください。<br>
+> 　　　　　　　　　　　　<strong>LyX Windows Distribution License Agreement</strong><br>
+> 　　...<br>
+> 　　誓約のすべての条件に同意するなら、「同意する」を選択しインストールを続行します。LyX 2.3.7 をインス<br>
+> 　　トールするには、契約に同意する必要があります。<br>
 >
 > <br>
 >
@@ -172,25 +171,25 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
-> 　<strong>ユーザーを選択</strong><br>
-> 　　どのユーザーのためにLyX 2.3.7をインストールするか選択してください。<br>
+> 　<strong>ユーザーの選択</strong><br>
+> 　　どのユーザーのために LyX 2.3.7 をインストールするか選択してください。<br>
 >
 > <br>
 >
-> 　　LyX 2.3.7を自分自身のためだけにインストールしたいのか、このコンピューターの全ユーザーのためにイ<br>
-> 　　ンストールしたいのかを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
+> 　　LyX 2.3.7 を自分自身のためだけにインストールするのか、このコンピューターのすべてのユーザーにイン<br>
+> 　　ストールするのか選択してください。「次へ」をクリックし続行します。<br>
 >
 > <br>
 >
-> 全てのユーザーに対してインストールする場合<br>
-> 　　　　　🔘 このコンピューターを使用している全ての人用にインストールする &lt;-- <strong>このコンピューターを使用している全ての人用にインストールする を選択</strong><br>
-> 　　　　　◯ 自分専用にインストールする<br>
+> すべてのユーザーにインストールする場合<br>
+> 　　　　　🔘 このコンピューターを使用する全員にインストール &lt;-- <strong>このコンピューターを使用する全員にインストール を選択</strong><br>
+> 　　　　　◯ 自分にのみインストール<br>
 >
 > <br>
 >
-> 自分専用にインストールする場合<br>
-> 　　　　　◯ このコンピューターを使用している全ての人用にインストールする<br>
-> 　　　　　🔘 自分専用にインストールする &lt;-- <strong>自分専用にインストールする を選択</strong><br>
+> 自分にのみインストールする場合<br>
+> 　　　　　◯ このコンピューターを使用する全員にインストール<br>
+> 　　　　　🔘 自分にのみインストール &lt;-- <strong>自分にのみインストール を選択</strong><br>
 >
 > <br>
 >
@@ -202,13 +201,13 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
-> 　<strong>インストール先を選んでください。</strong><br>
-> 　　LyX 2.3.7をインストールするフォルダを選んでください。<br>
+> 　<strong>インストール先の選択</strong><br>
+> 　　LyX 2.3.7 をインストールするフォルダを選択してください。<br>
 >
 > <br>
 >
-> 　　LyX 2.3.7を以下のフォルダにインストールします。異なったフォルダにインストールするには、\[参照\]を押<br>
-> 　　して、別のフォルダを選択してください。続けるには \[次へ\] をクリックして下さい。<br>
+> 　　LyX 2.3.7 を以下のフォルダにインストールします。別のフォルダにインストールするには、「参照」を押し<br>
+> 　　フォルダを選択してください。「次へ」をクリックし続行します。<br>
 >
 > <br>
 >
@@ -217,8 +216,8 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　インストール先 フォルダ<br>
-> 　　　　<ins>C:\Program Files\LyX 2.3</ins> &lt;-- <strong>全てのユーザーに対してインストールする場合</strong><br>
-> 　　　　<ins>C:\Users\Lydia\AppData\Local\LyX 2.3</ins> &lt;-- <strong>自分専用にインストールする場合</strong><br>
+> 　　　　<ins>C:\Program Files\LyX 2.3</ins> &lt;-- <strong>すべてのユーザーにインストールする場合</strong><br>
+> 　　　　<ins>C:\Users\Lydia\AppData\Local\Programs\LyX 2.3</ins> &lt;-- <strong>自分にのみインストールする場合</strong><br>
 >
 > <br>
 >
@@ -230,20 +229,18 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
-> 　<strong>コンポーネントを選んでください。</strong><br>
-> 　　LyX 2.3.7のインストールオプションを選んでください。<br>
+> 　<strong>構成要素の選択</strong><br>
+> 　　インストールしたい LyX 2.3.7 の機能を選択してください。<br>
 >
 > <br>
 >
-> 　　インストールしたいコンポーネントにチェックを付けて下さい。不要なものについては、チェックを外して下さ<br>
-> 　　い。続けるには \[次へ\] をクリックして下さい。<br>
+> 　　インストールしたい構成要素にチェックしてください。不要なものはチェックを外して下さい。「次へ」をクリ<br>
+> 　　ックし続行します。<br>
 >
 > <br>
 >
-> <!-- 　　インストール コンポーネントを選　　&color(#888888,White){☑}; ''LyX''&br; -->
->
-> 　　インストール コンポーネントを選<br>
-> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> ファイル関連付け<br> <!-- 　　択：　　　　　　　　　　　　　　　　　　　&color(#888888,White){☐}; ファイル関連付け&br; -->
+> 　　インストールする構成要素を選<br>
+> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> ファイル関連付け<br>
 > 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> デスクトップ・アイコン<br>
 > 　　　　　　　　　　　　　　　　　　　　 \[+\]　<span style="color:#EEEEEE;background-color:#888888;">☑</span> 辞書<br>
 > 　　　　　　　　　　　　　　　　　　　　 \[+\]　☐ シソーラス<br>
@@ -256,14 +253,14 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
-> 　<strong>スタートメニュー フォルダを選んでください。</strong><br>
-> 　　LyX 2.3.7のショートカットを作成するスタートメニュー フォルダを選んで下<br>
-> 　　さい。<br>
+> 　<strong>スタートメニューのフォルダの選択</strong><br>
+> 　　LyX 2.3.7 のショートカットを作成するスタートメニューのフォルダを選択し<br>
+> 　　てください。<br>
 >
 > <br>
 >
-> 　　このプログラムのショートカットを作成したいスタートメニュー フォルダを選択してください。また、作成する<br>
-> 　　新しいフォルダに名前をつけることもできます。<br>
+> 　　このプログラムのショートカットを作成したいスタートメニューのフォルダを選択してください。また、新規フ<br>
+> 　　ォルダの名前を入力することもできます。<br>
 >
 > <br>
 >
@@ -294,14 +291,14 @@ LyX のインストーラーを右クリックします。
 >
 > <br>
 >
-> 　　　　　ここでは、"latex.exe"ファイルへのパスを指定することができます。そうすることによって、<br>
-> 　　　　　LyXが使用すべきLaTeX頒布版を指定することができます。<br>
+> 　　　　　ここでは、"latex.exe"ファイルへのパスを指定することができます。そうすることによって、LyXが使用す<br>
+> 　　　　　べきLaTeX頒布版を指定することができます。<br>
 > 　　　　　もしLaTeXを使わなければ、LyXは文書を出力することができません！<br>
 >
 > <br>
 >
-> 　　　　　導入プログラムは、システム上にLaTeX頒布版として"TeXLive"があることを検出しました。<br>
-> 　　　　　下欄にはそのパスが表示されています。<br>
+> 　　　　　導入プログラムは、システム上にLaTeX頒布版として"TeXLive"があることを検出しました。下欄にはそ<br>
+> 　　　　　のパスが表示されています。<br>
 >
 > <br>
 >
@@ -323,13 +320,13 @@ LyX のインストーラーを右クリックします。
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>インストール</strong><br>
-> 　　LyX 2.3.7をインストールしています。しばらくお待ちください。<br>
+> 　　LyX 2.3.7 をインストール中です。お待ちください。<br>
 >
 > <br>
 >
 > <br>
 >
-> 　　抽出：<br>
+> 　　展開：<br>
 > 　　<span style="color:Black;background-color:#00CC44;">\[　　　　　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</span><br>
 > 　　<span style="color:Black;background-color:#DAEAFF;">\[ 詳細を表示(D) \]</span><br>
 >
@@ -349,14 +346,15 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.3.7 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.3.7 セットアップ ウィザードは完了しまし</strong><br>
-　　　　　　　　　　　　　　　　　　　　　 <strong>た。</strong><br>
+　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.3.7 セットアップの完了</strong><br>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　LyX 2.3.7は、このコンピュータにインストールされました。
+<br>
 
-　　　　　　　　　　　　　　　　　　　　　ウィザードを閉じるには \[完了\] を押してください。<br>
+　　　　　　　　　　　　　　　　　　　　　LyX 2.3.7 は、このコンピュータにインストールされました。
+
+　　　　　　　　　　　　　　　　　　　　　「完了」をクリックしセットアップを閉じます。<br>
 
 <br>
 
