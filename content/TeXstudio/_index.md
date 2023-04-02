@@ -82,7 +82,8 @@ brew install --cask texstudio
 ### 更新履歴 {#w7aac056}
 
 - [https://github.com/texstudio-org/texstudio/commits/master](https://github.com/texstudio-org/texstudio/commits/master)
-- [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/CHANGELOG.txt)
+- [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md)
+- [https://texstudio-org.github.io/CHANGELOG.html](https://texstudio-org.github.io/CHANGELOG.html)
 
 ## 注意点 {#g9d4fa21}
 
