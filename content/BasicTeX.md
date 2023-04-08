@@ -52,6 +52,7 @@ $ sudo tlmgr install collection-langjapanese
 
 #### インストールの事例 {#q65e25e8}
 
+- [macOSにtexlive2023 をインストールする方法](https://pyopyopyo.hatenablog.com/entry/2023/04/07/173000)
 - [Macでの日本語LaTeXお手軽インストール](https://twitter.com/BeryLiuM_Green/status/1390235461667364864)
 - [Mac で日本語 LaTeX 環境最短手順](https://twitter.com/u_sho_KyoPro/status/1388020287233355778)
 - [macOS Big SurでLaTeX環境整えた時のメモ(2020, x86_64/arm64対応)](https://qiita.com/yaplus/items/55fa6957c1b15dbcf387)
