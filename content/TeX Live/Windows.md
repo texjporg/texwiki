@@ -215,6 +215,7 @@ MinGWが悪さをする場合もあるようです．
 TeX Live 2023 対応の事例です．
 
 - [重点解説！ TeX Live 2023はココが違う！](https://qiita.com/zr_tex8r/items/18a78c93221ddb20d639)
+- [TeX Live 2023のインストール &#183; Obsica](https://obsica.com/texlive-basic-install/)
 
 TeX Live 2022 対応の事例です．
 
