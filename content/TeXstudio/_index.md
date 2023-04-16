@@ -131,7 +131,7 @@ poppler-data を配置する場所は strings と grep で調べることがで�
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.*.dylib | grep poppler
 ```
 
-TeXstudio 4.5.1 の場合の出力結果は以下のようになります．
+TeXstudio 4.5.2 の場合の出力結果は以下のようになります．
 
 > &amp;<span style="color:black,yellow">/usr/local/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
@@ -142,10 +142,10 @@ poppler-data をインストールします．
 
 ```
 $ cd ~
-$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.11.tar.gz
-$ tar xvf poppler-data-0.4.11.tar.gz
+$ curl -kO https://poppler.freedesktop.org/poppler-data-0.4.12.tar.gz
+$ tar xvf poppler-data-0.4.12.tar.gz
 $ sudo mkdir -p /usr/local/share/poppler
-$ sudo cp -pR ~/poppler-data-0.4.11/* /usr/local/share/poppler
+$ sudo cp -pR ~/poppler-data-0.4.12/* /usr/local/share/poppler
 ```
 
 <!-- poppler-data は以下のように配置されます． -->
