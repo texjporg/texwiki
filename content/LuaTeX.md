@@ -21,7 +21,9 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-TeX Live 2023 には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。
+TeX Live 2023 [Revision 66967](https://tug.org/svn/texlive?view=revision&revision=66967), [Revision 66994](https://tug.org/svn/texlive?view=revision&revision=66994) には LuaHBTeX 1.17.0, LuaTeX 1.17.0 が収録されています。
+
+TeX Live 2023 初回リリース版には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。
 
 TeX Live 2022 には LuaHBTeX 1.15.0, LuaTeX 1.15.0 が収録されています。
 
