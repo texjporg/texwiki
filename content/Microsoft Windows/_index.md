@@ -76,7 +76,7 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 
 以下では，TeXworks をもちいてみます．
 TeXworks は
-スタートメニューの「TeX Live 2022」→「TeXworks editor」から
+スタートメニューの「TeX Live 2023」→「TeXworks editor」から
 起動することができます．
 
 次の四行を入力してみます．
@@ -162,7 +162,7 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
 <!-- の順のつもり．従来の「アルファベット順」は無意味なので変更． -->
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
-    - <strong>[TeXworks](/TeXworks/)</strong> ← TeX Live (win32) に標準で含まれています．
+    - <strong>[TeXworks](/TeXworks/)</strong> ← TeX Live (windows) に標準で含まれています．
     - <strong>[TeXstudio](/TeXstudio/)</strong>
     - <strong>[LyX](/LyX/)</strong>
     - [Texmaker](/Texmaker/)
@@ -221,7 +221,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 TeX Live 以外にも Windows で利用可能な TeX ディストリビューションが存在します．
 
 - Cygwin での利用：Windows 上に UNIX のような環境を提供する Cygwin 用にも TeX Live が提供されています．[Cygwin](/Cygwin/) をご覧ください．
-- [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．日本語 pTeX が入っていません．[MiKTeX](/MiKTeX/) をご覧ください．
+- [MiKTeX](/MiKTeX/)：主に国外で使われている（と思う）TeX ディストリビューションです．[MiKTeX](/MiKTeX/) をご覧ください．
 
 ## 入出力関連の機能 {#t84cfc3e}
 
