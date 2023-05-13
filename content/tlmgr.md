@@ -29,7 +29,7 @@ $ tlmgr --help
 
 コマンドラインから以下のコマンドを実行します．
 
-- Windows (Win64, Win32, Cygwin) の場合（「管理者として実行」しなければならない場合があります）
+- Windows (Windows, Cygwin) の場合（「管理者として実行」しなければならない場合があります）
 
     ```
     tlmgr update --self --all
