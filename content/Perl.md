@@ -25,7 +25,7 @@ Perl 5 で書かれたスクリプトがあります（[latexmk.pl](/Latexmk/) �
 
 ### インストール (Windows) {#l06514b7}
 
-[TeX Live](</TeX Live/>) の Win32 版には
+[TeX Live](</TeX Live/>) の Windows 版には 64-bit
 [tlperl](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlperl/)（Perl 5
 の処理系）が含まれています．
 [MiKTeX](/MiKTeX/) を使用する場合は Strawberry Perl をインストールしてください．
