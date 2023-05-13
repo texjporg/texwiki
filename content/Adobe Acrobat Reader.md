@@ -24,7 +24,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 ### お知らせ {#k350f003}
 
 - Adobe Acrobat Reader 22.003.20310 以降に更新してください。Adobe Acrobat Reader 22.003.20282 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB23-01）に関する注意喚起](https://www.jpcert.or.jp/at/2023/at230001.html)
-- Adobe Acrobat Reader Version 2022 (32-bit) の DDE server name は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) の DDE server name は AcroViewA22 です。
+- Adobe Acrobat Reader Version 2023 (64-bit) の DDE server name は AcroViewA23 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で
@@ -499,6 +499,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23 です。
 [^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
