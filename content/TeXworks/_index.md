@@ -142,4 +142,4 @@ TeXworks で \[編集\] &gt; \[設定\] のエディタタブの「エディタ�
 - [Texworksで背景色と文字の色やキーワードの色を変更するには - ちょっと便利なパソコンノート - Yahoo!ブログ](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
 - [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)：Jonathan Kew（TeXworks project の一人）による TUG 2010 での講演ビデオ
 
-[^1]: TeXworks は Win32 版の TeX Live に収録されています．Cygwin, macOS, GNU/Linux の TeX Live には TeXworks は収録されていません．
+[^1]: TeXworks は Windows 版の TeX Live に収録されています．Cygwin, macOS, GNU/Linux の TeX Live には TeXworks は収録されていません．
