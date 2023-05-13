@@ -563,7 +563,7 @@ TeX Live では TeX Live 2018 になります．
     <!-- $ gs -sDEVICE=pdfwrite -dBATCH -dNOPAUSE -dAutoRotatePages=/None -sOutputFile=out.pdf -c .setpdfwrite -f in.pdf -->
 
     ```
-    $ ps2pdf -dAutoRotatePages=/None in.pdf out.pdf   (UN*X 系の場合，または TeX Live (win32) に付属の Ghostscript を使用する場合)
+    $ ps2pdf -dAutoRotatePages=/None in.pdf out.pdf   (UN*X 系の場合，または TeX Live (windows) に付属の Ghostscript を使用する場合)
     $ ps2pdf -dAutoRotatePages#/None in.pdf out.pdf   (Windows で別途インストールした Ghostscript を使用する場合)
     ```
 
