@@ -98,7 +98,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，Adobe Acrobat Reader を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewA22
+AcroViewA23
 ```
 
 に修正することで解消できます。
