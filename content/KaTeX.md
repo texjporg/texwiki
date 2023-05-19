@@ -28,8 +28,8 @@ KaTeX は，Web ブラウザ上で数式を高速に描画できるライブラ�
 
 #### License {#wc2593ee}
 
-[MIT License](https://github.com/Khan/KaTeX/blob/master/LICENSE.txt)
+[MIT License](https://github.com/KaTeX/KaTeX/blob/main/LICENSE)
 
 #### ChangeLog {#e5861658}
 
-- [https://github.com/Khan/KaTeX/commits/master](https://github.com/Khan/KaTeX/commits/master)
+- [https://github.com/KaTeX/KaTeX/commits/main](https://github.com/KaTeX/KaTeX/commits/main)
