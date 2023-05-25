@@ -46,19 +46,19 @@ TeX Live がインストールされていれば以下のような表示にな�
 　<strong>ビルダー設定</strong>
 
 　　ドキュメントのビルドに使用するプログラム：<br>
-　　Latex program　　　(C:\texlive\2021\bin\win64\latex.exe)<br>
+　　Latex program　　　(C:\texlive\2023\bin\windows\latex.exe)<br>
 　　PsLatex program　　　()<br>
-　　PdfLatex program　　　(C:\texlive\2021\bin\win64\pdflatex.exe)<br>
-　　XeLatex program　　　(C:\texlive\2021\bin\win64\xelatex.exe)<br>
-　　LuaLatex program　　　(C:\texlive\2021\bin\win64\lualatex.exe)<br>
-　　Bibtex program　　　(C:\texlive\2021\bin\win64\bibtex.exe)<br>
-　　Biber (BibLaTeX)　　　(C:\texlive\2021\bin\win64\biber.exe)<br>
-　　Makeindex program　　　(C:\texlive\2021\bin\win64\makeindex.exe)<br>
-　　Dvips program　　　(C:\texlive\2021\bin\win64\dvips.exe)<br>
-　　Dvipdf program　　　(C:\texlive\2021\bin\win64\dvipdfm.exe)<br>
+　　PdfLatex program　　　(C:\texlive\2023\bin\windows\pdflatex.exe)<br>
+　　XeLatex program　　　(C:\texlive\2023\bin\windows\xelatex.exe)<br>
+　　LuaLatex program　　　(C:\texlive\2023\bin\windows\lualatex.exe)<br>
+　　Bibtex program　　　(C:\texlive\2023\bin\windows\bibtex.exe)<br>
+　　Biber (BibLaTeX)　　　(C:\texlive\2023\bin\windows\biber.exe)<br>
+　　Makeindex program　　　(C:\texlive\2023\bin\windows\makeindex.exe)<br>
+　　Dvips program　　　(C:\texlive\2023\bin\windows\dvips.exe)<br>
+　　Dvipdf program　　　(C:\texlive\2023\bin\windows\dvipdfm.exe)<br>
 　　Ps2pdf program　　　()<br>
-　　Makeindex program (nomencl)　　　(C:\texlive\2021\bin\win64\makeindex.exe)<br>
-　　Kpsewhich program　　　(C:\texlive\2021\bin\win64\kpsewhich.exe または)<br>
+　　Makeindex program (nomencl)　　　(C:\texlive\2023\bin\windows\makeindex.exe)<br>
+　　Kpsewhich program　　　(C:\texlive\2023\bin\windows\kpsewhich.exe または)<br>
 
 ***
 
@@ -75,7 +75,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Latex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\uplatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\uplatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .dvi<br>
 
@@ -92,7 +92,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the LuaLatex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\lualatex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\lualatex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-synctex=1 -interaction=nonstopmode "%input"</ins><br>
 　　　Input format： .tex 　　　出力フォーマット： .pdf<br>
 
@@ -109,7 +109,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\upbibtex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\upbibtex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
@@ -126,7 +126,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Biber (BibLaTeX). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\biber.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\biber.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>--bblencoding=utf8 -u -U --output_safechar "&#x25;input"</ins><br>
 　　　Input format： .bcf 　　　出力フォーマット： .bbl<br>
 
@@ -143,7 +143,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\upmendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\upmendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>-s "%style" "%input"</ins><br>
 　　　Input format： .idx 　　　出力フォーマット： .ind<br>
 
@@ -160,7 +160,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Dvipdf program. If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\dvipdfmx.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\dvipdfmx.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input"</ins><br>
 　　　Input format： .dvi 　　　出力フォーマット： .pdf<br>
 
@@ -177,7 +177,7 @@ TeX Live がインストールされていれば以下のような表示にな�
 <span style="color:#675EDE;background-color:#675EDE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>Edit builder program</strong></span>　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
 　　 Setup the Makeindex program (nomencl). If the program file field is empty, this program is disabled.<br>
-　　 Program file： 　　　　　　　<ins>C:\texlive\2021\bin\win64\upmendex.exe</ins><br>
+　　 Program file： 　　　　　　　<ins>C:\texlive\2023\bin\windows\upmendex.exe</ins><br>
 　　 引数： 　　　　　　　　　　　<ins>"&#x25;input" -s nomencl.ist -o "%output"</ins><br>
 　　　Input format： .nlo 　　　出力フォーマット： .nls<br>
 
@@ -312,7 +312,7 @@ PDF ファイルの画面をダブルクリックすると inverse search がで
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>sumatra PDF</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2021\bin\win64\fwdsumatrapdf.exe</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2023\bin\windows\fwdsumatrapdf.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile" "&#x25;texfile" &#x25;line</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
@@ -351,7 +351,7 @@ SumatraPDF を使用する場合は，
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXworks</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2021\tlpkg\texworks\texworks.exe</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\texlive\2023\tlpkg\texworks\texworks.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
@@ -374,7 +374,7 @@ SumatraPDF を使用する場合は，
 
 TeXworks を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2021\tlpkg\texworks\texworks.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　TeXworks (C:\texlive\2023\tlpkg\texworks\texworks.exe)　</span><br>
 
 の優先度を一番上にします．
 
@@ -390,7 +390,7 @@ TeXworks を使用する場合は，
 
 　　 ビューアーを構成します。<br>
 　　 ビューアー名：　　　　　　　　　　　　　　　　<ins>TeXstudio</ins><br>
-　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\TeXstudio\texstudio.exe</ins><br>
+　　 ビューアー・コマンド：　　　　　　　　　　　　 <ins>C:\Program Files\texstudio\texstudio.exe</ins><br>
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>--pdf-viewer-only "&#x25;file"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <br>
@@ -413,7 +413,7 @@ TeXworks を使用する場合は，
 
 TeXstudio を使用する場合は，
 
-> <span style="color:White;background-color:#1188FF;">　TeXstudio (C:\Program Files\TeXstudio\texstudio.exe)　</span><br>
+> <span style="color:White;background-color:#1188FF;">　TeXstudio (C:\Program Files\texstudio\texstudio.exe)　</span><br>
 
 の優先度を一番上にします．
 
