@@ -10,7 +10,6 @@ pukiwiki: "Texifier"
 ## Texifier {#q728ac5b}
 
 Texifier は macOS、iPadOS、iOSで動作する、高機能な(La)TeX統合環境です。
-
 <strong>公式Webサイト</strong>
 
 - [Texifier &middot; Smoothest way to write LaTeX](https://www.texifier.com/)
