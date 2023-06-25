@@ -34,6 +34,8 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
 - [https://packages.debian.org/search?keywords=texlive-full](https://packages.debian.org/search?keywords=texlive-full)
 - [https://packages.ubuntu.com/ja/texlive-lang-japanese](https://packages.ubuntu.com/ja/texlive-lang-japanese)
 - [https://packages.debian.org/search?keywords=texlive-lang-japanese](https://packages.debian.org/search?keywords=texlive-lang-japanese)
+- [https://packages.ubuntu.com/ja/texlive-latex-extra](https://packages.ubuntu.com/ja/texlive-latex-extra)
+- [https://packages.debian.org/search?keywords=texlive-latex-extra](https://packages.debian.org/search?keywords=texlive-latex-extra)
 - [https://packages.ubuntu.com/ja/xzdec](https://packages.ubuntu.com/ja/xzdec)
 - [https://packages.debian.org/search?keywords=xzdec](https://packages.debian.org/search?keywords=xzdec)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
@@ -55,10 +57,11 @@ sudo apt install texlive-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo apt install texlive-lang-japanese
+sudo apt install texlive-lang-japanese texlive-latex-extra
 ```
 
 を実行します．
+[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latex-extra をインストールする必要があります．
 
 tlmgr も実行できます．
 tlmgr の実行には xzdec パッケージが必要です．
