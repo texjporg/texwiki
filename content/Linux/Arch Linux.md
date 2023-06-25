@@ -26,27 +26,25 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#w9579c29}
 
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#archlinux)
-- [【Arch Linux】TeX LiveインストーラでLaTeXの環境を構築する](https://qiita.com//kazushisan/items/9a5cbd389de63f4aaf75)
 
 #### TeX Live/Arch Linux <a id="texlivearchlinux"></a> {#y18009db}
 
 - [https://wiki.archlinux.org/index.php/TeX_Live](https://wiki.archlinux.org/index.php/TeX_Live)
 - [https://wiki.archlinux.jp/index.php/TeX_Live](https://wiki.archlinux.jp/index.php/TeX_Live)
 - [https://www.archlinux.jp/packages/?q=texlive](https://www.archlinux.jp/packages/?q=texlive)
-- [https://www.archlinux.jp/groups/x86_64/texlive-most/](https://www.archlinux.jp/groups/x86_64/texlive-most/)
+- [https://www.archlinux.jp/groups/x86_64/texlive/](https://www.archlinux.jp/groups/x86_64/texlive/)
 - [https://www.archlinux.jp/groups/x86_64/texlive-lang/](https://www.archlinux.jp/groups/x86_64/texlive-lang/)
 - [https://www.archlinux.org/packages/?name=texlive-langjapanese](https://www.archlinux.org/packages/?name=texlive-langjapanese)
 - [https://www.archlinux.org/packages/?name=texlive-latexextra](https://www.archlinux.org/packages/?name=texlive-latexextra)
-- [MyTeXpert:TeX Live/Arch Linux](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeX%20Live%2FArch%20Linux)
 
-通常は texlive-langjapanese と texlive-most をインストールします．
+通常は texlive-langjapanese と texlive をインストールします．
 
 ```
-sudo pacman -S texlive-langjapanese texlive-most
+sudo pacman -S texlive-langjapanese texlive
 ```
 
 日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-latexextra をインストールします．
-[jlreq](/jlreq/) には everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
+[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
 
 ```
 sudo pacman -S texlive-langjapanese texlive-latexextra
