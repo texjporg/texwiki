@@ -71,15 +71,27 @@ It is however more convenient to have a separate package instead of adding a doz
 - [インストール後にやること#dummy パッケージの作成・インストール](http://www.fugenji.org/~thomas/texlive-guide/post_install.html)
 - [WSL+TeX Live環境を一から構築する#TeX 環境構築](https://www.ykyki.com/blog/install-wsl-and-texlive/#tex-%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89)
 - [Debian 12 bookwormでのtexlive-dummy](https://okumuralab.org/tex/mod/forum/discuss.php?d=3600)
+- [Debian 12 texlive-dummyのインストールについて](https://okumuralab.org/tex/mod/forum/discuss.php?d=3604)
 
 TeX Live の公式サイトのパッケージをインストールしたあとで TeX Live/Debian に依存するパッケージをインストールしようとすると TeX Live/Debian も同時にインストールされてしまいます．
 TeX Live/Debian がインストールされないように [dummy パッケージ](http://www.tug.org/texlive/debian.html#vanilla)を作成して依存関係の問題を回避します．
 
+Debian 12 bookworm の場合
+
 ```
-sudo apt install equivs
+sudo apt install equivs libglut3.12
+wget http://www.tug.org/texlive/files/debian-equivs-2022-ex.txt
+sed 's/\(^Depends: \)freeglut3/\1libglut3\.12/' -i debian-equivs-2022-ex.txt
+equivs-build debian-equivs-2022-ex.txt
+sudo dpkg -i texlive-local_2022.99999999-1_all.deb
+```
+
+Linux Mint 21.2/Ubuntu 22.04 LTS の場合
+
+```
+sudo apt install equivs freeglut3
 wget http://www.tug.org/texlive/files/debian-equivs-2022-ex.txt
 equivs-build debian-equivs-2022-ex.txt
-sudo apt install freeglut3
 sudo dpkg -i texlive-local_2022.99999999-1_all.deb
 ```
 
