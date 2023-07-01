@@ -124,16 +124,8 @@ sudo apt install ghostscript
 
 ### [Python](/Python/) <a id="python"></a> {#reda4f97}
 
-#### Python 3 {#ia53444d}
-
 ```
 sudo apt install python3
-```
-
-#### Python 2 {#a93b92ac}
-
-```
-sudo apt install python2
 ```
 
 ### Julia <a id="julia"></a> {#xf5a03c6}
@@ -237,5 +229,5 @@ sudo apt install vim vim-gtk
 ### [Inkscape](/Inkscape/) <a id="inkscape"></a> {#ke45cdf4}
 
 ```
-sudo apt install inkscape pstoedit python-lxml
+sudo apt install inkscape pstoedit
 ```
