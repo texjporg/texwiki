@@ -121,6 +121,35 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 $ sudo /usr/local/texlive/2023/bin/x86_64-linux/tlmgr path add
 ```
 
+以下の警告が表示された場合は指示に従って tlmgr update --all --reinstall-forcibly-removed を実行してください．
+
+> &#x2a;\*\* PLEASE READ THIS WARNING \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*<br>
+>
+> <br>
+>
+> The following (inessential) packages failed to install properly:<br>
+>
+> <br>
+>
+> &#x3000;bib2gls bibcop blopentype chemfig l3kernel naive-ebnf nicematrix simpleicons tex4ht xindex<br>
+>
+> <br>
+>
+> You can fix this by running this command:<br>
+> &#x3000;tlmgr update --all --reinstall-forcibly-removed<br>
+> to complete the installation.<br>
+>
+> <br>
+>
+> However, if the problem was a failure to download (by far the<br>
+> most common cause), check that you can connect to the chosen mirror<br>
+> in a browser; you may need to specify a mirror explicitly.<br>
+> &#x2a;\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*<br>
+
+```
+$ sudo tlmgr update --all --reinstall-forcibly-removed
+```
+
 #### アップデート {#texliveupdate}
 
 アップデートは
