@@ -178,8 +178,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
-(setq japanese-LaTeX-default-style "bxjsarticle")
-;(setq japanese-LaTeX-default-style "jlreq")
+(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
@@ -198,11 +197,11 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX"
+                                   '("upLaTeXmk"
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX"
+                                   '("LuaLaTeXmk"
                                      "latexmk -e \"$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/upbibtex %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
@@ -252,8 +251,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
+> <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td>Fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
@@ -301,8 +300,7 @@ C-x C-f ~/
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
-(setq japanese-LaTeX-default-style "bxjsarticle")
-;(setq japanese-LaTeX-default-style "jlreq")
+(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "displayline")))
@@ -319,11 +317,11 @@ C-x C-f ~/
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX"
+                                   '("upLaTeXmk"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX"
+                                   '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
@@ -377,8 +375,8 @@ C-x C-f ~/
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
+> <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
 > <tr><td>Displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
 > <tr><td>Skim</td><td>C-c C-c skim RET</td><td>Skim でプレビュー</td></tr>
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>Preview でプレビュー</td></tr>
@@ -418,8 +416,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
   (dolist (command '("pTeX" "pLaTeX" "pBibTeX" "jTeX" "jLaTeX" "jBibTeX" "Mendex"))
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
-(setq japanese-LaTeX-default-style "bxjsarticle")
-;(setq japanese-LaTeX-default-style "jlreq")
+(setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
 (setq TeX-view-program-selection '((output-pdf "Evince")))
@@ -436,11 +433,11 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "latexmk %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-upLaTeX"
+                                   '("upLaTeXmk"
                                      "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
                       (add-to-list 'TeX-command-list
-                                   '("Latexmk-LuaLaTeX"
+                                   '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/upbibtex %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
                       (add-to-list 'TeX-command-list
@@ -512,8 +509,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>Latexmk-upLaTeX</td><td>C-c C-c latexmk-uplatex RET</td><td>タイプセット (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Latexmk-LuaLaTeX</td><td>C-c C-c latexmk-lualatex RET</td><td>タイプセット (Latexmk-LuaLaTeX)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
+> <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
 > <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
 > <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
@@ -570,16 +567,16 @@ upTeX をデフォルトにして dvipdfmx を使用する場合は次のよう�
 
 ### 日本語ドキュメントクラスの設定 {#l246b90f}
 
-[BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は次のように記述します．
-
-```
-(setq japanese-LaTeX-default-style "bxjsarticle")
-```
-
 [jlreq](/jlreq/) を標準に設定する場合は次のように記述します．
 
 ```
 (setq japanese-LaTeX-default-style "jlreq")
+```
+
+[BXjscls](/BXjscls/) の bxjsarticle を標準に設定する場合は次のように記述します．
+
+```
+(setq japanese-LaTeX-default-style "bxjsarticle")
 ```
 
 ### PDF ビューアーの変更 {#pfbe6148}
