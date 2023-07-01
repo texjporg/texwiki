@@ -58,16 +58,8 @@ sudo pacman -S ghostscript
 
 ### [Python](/Python/) {#i5b0d02d}
 
-#### Python 3 {#e996fe1c}
-
 ```
 sudo pacman -S python python-dbus python-gobject
-```
-
-#### Python 2 {#tc491f53}
-
-```
-sudo pacman -S python2 python2-dbus python2-gobject
 ```
 
 ### Julia {#xdaa5ad2}
@@ -185,7 +177,7 @@ sudo pacman -S vim
 ### [Inkscape](/Inkscape/) {#ca45a692}
 
 ```
-sudo pacman -S inkscape pstoedit python2-lxml
+sudo pacman -S inkscape pstoedit
 ```
 
 <!-- **awesome [#hf2862e7] -->
