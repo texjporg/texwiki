@@ -246,8 +246,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
@@ -340,8 +340,8 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
@@ -467,8 +467,8 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (Latexmk-upLaTeX)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (Latexmk-upLaTeX)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
@@ -566,17 +566,9 @@ begin 型補完を使うのを忘れた場合は
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">入力</th><th style="color:#FFF;background-color:#22D;text-align:center">タイプセット方式</th></tr>
-> </tbody>
-> </table>
->
-> <!-- |M-x set-variable RET tex-command RET "latexmk" RET|latexmk| -->
->
-> <table>
-> <tbody>
-> <tr><td>M-x set-variable RET tex-command RET "platex-ng -synctex=1" RET</td><td>platex-ng</td></tr>
+> <tr><td>M-x set-variable RET tex-command RET "latexmk" RET</td><td>latexmk</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "pdflatex -synctex=1" RET</td><td>pdflatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "lualatex -synctex=1" RET</td><td>lualatex</td></tr>
-> <tr><td>M-x set-variable RET tex-command RET "luajitlatex -synctex=1" RET</td><td>luajitlatex</td></tr>
 > <tr><td>M-x set-variable RET tex-command RET "xelatex -synctex=1" RET</td><td>xelatex</td></tr>
 > </tbody>
 > </table>
@@ -704,7 +696,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
   (setq tex-command "lualatex -synctex=1"))
 ```
 
-#### Latexmk-upLaTeX {#bc88da07}
+#### upLaTeXmk {#bc88da07}
 
 ```
 (if (eq system-type 'windows-nt)
@@ -712,7 +704,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
   (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
-#### Latexmk-LuaLaTeX {#d4a80fb8}
+#### LuaLaTeXmk {#d4a80fb8}
 
 ```
 (if (eq system-type 'windows-nt)
