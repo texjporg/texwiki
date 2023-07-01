@@ -112,5 +112,5 @@ sudo zypper install texmaker
 ### [TeXworks](/TeXworks/) {#n8431fb2}
 
 ```
-sudo zypper install texworks texworks-plugin-lua texworks-plugin-python
+sudo zypper install texworks
 ```
