@@ -29,9 +29,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 #### お知らせ {#w2f34805}
 
-- [Ports svn r392534 UPDATING 20150720](https://svnweb.freebsd.org/ports/head/UPDATING?r1=391745&r2=392534) にて，Ports は TeX Live 2015 ベースとなりました．
-- [Ports svn r365720 UPDATING 20140823](https://svnweb.freebsd.org/ports/head/UPDATING?r1=365599&r2=365720) にて，Ports は TeX Live 2014 ベースとなりました．
-- [Ports svn r362648 UPDATING 20140727](https://svnweb.freebsd.org/ports/head/UPDATING?r1=362614&r2=362648) にて，Port make 時の変数 TEX_DEFAULT が texlive になりました．
+- [FreshPorts -- print/texlive-base: TeX Live Typesetting System, base binaries](https://www.freshports.org/print/texlive-base/) にて，Ports は TeX Live 2023 ベースとなりました．
 
 ### 派生版 {#t29f2245}
 
@@ -193,9 +191,10 @@ make &amp;&amp; make installで導入できます．
 
 #### PostScript関連 {#v58c994c}
 
+<!-- |ghostview|print/ghostview|An X11 front-end for ghostscript, the GNU postscript previewer| -->
+
 <table>
 <tbody>
-<tr><td>ghostview</td><td>print/ghostview</td><td>An X11 front-end for ghostscript, the GNU postscript previewer</td></tr>
 <tr><td>gv</td><td>print/gv</td><td>A PostScript and PDF previewer</td></tr>
 </tbody>
 </table>
