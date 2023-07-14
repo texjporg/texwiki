@@ -45,6 +45,7 @@ X Window System
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
     - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
     - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
+- [https://www.freshports.org/print/tex-xdvik/](https://www.freshports.org/print/tex-xdvik/)
 - [http://pkgsrc.se/print/tex-xdvi](http://pkgsrc.se/print/tex-xdvi)
 
 ### インストール {#jfa6e6ec}
@@ -205,32 +206,30 @@ $ synctex help edit
 
 を参照してください。
 
+## print/tex-xdvik (非推奨) <a id="print_tex-xdvik"></a> {#l6d2c61a}
+
+print/tex-xdvik は日本語対応 DVI プレビューアです。
+
+- [https://www.freshports.org/print/tex-xdvik/](https://www.freshports.org/print/tex-xdvik/)
+- [https://cgit.freebsd.org/ports/tree/print/tex-xdvik](https://cgit.freebsd.org/ports/tree/print/tex-xdvik)
+    - [https://cgit.freebsd.org/ports/log/print/tex-xdvik](https://cgit.freebsd.org/ports/log/print/tex-xdvik)
+- [FreeBSD: その他のメモ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html)
+- [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
+- [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
+- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
+- [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
+
 ## xdvik-ja (非推奨) <a id="xdvik-ja"></a> {#vab2aa47}
 
 xdvik-ja は日本語対応 DVI プレビューアです。
 
-- [https://twilog.org/uwabami/search?word=xdvik-ja](https://twilog.org/uwabami/search?word=xdvik-ja)
+<!-- -https://twilog.org/uwabami/search?word=xdvik-ja -->
 - [https://salsa.debian.org/uwabami/xdvik-ja](https://salsa.debian.org/uwabami/xdvik-ja)
     - [https://salsa.debian.org/uwabami/xdvik-ja/commits/master](https://salsa.debian.org/uwabami/xdvik-ja/commits/master)
 - [https://launchpad.net/debian/+source/xdvik-ja](https://launchpad.net/debian/+source/xdvik-ja)
 - \[[debian-devel:19159\] Orphan jtex-base, multex-base, xdvik-ja](http://lists.debian.or.jp/debian-devel/201606/msg00008.html), \[[debian-devel:19164\]](http://lists.debian.or.jp/debian-devel/201606/msg00013.html)
 
 % 最後のリンクについて，これだけを書き込むのがよくわかりませんが，どういう意図なのでしょうか？ -- kmaeda (2016/07/02)
-
-## japanese/ja-tex-xdvik (非推奨) <a id="ja-tex-xdvik"></a> {#l6d2c61a}
-
-ja-tex-xdvik は日本語対応 DVI プレビューアです。
-
-- [https://www.freshports.org/japanese/ja-tex-xdvik/](https://www.freshports.org/japanese/ja-tex-xdvik/)
-- [https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik](https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik)
-    - [https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik](https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik)
-- [https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik/files](https://cgit.freebsd.org/ports/tree/japanese/ja-tex-xdvik/files)
-    - [https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik/files](https://cgit.freebsd.org/ports/log/japanese/ja-tex-xdvik/files)
-- [FreeBSD: その他のメモ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html)
-- [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
-- [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
-- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
-- [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
 
 ## pxdvi (非推奨) <a id="pxdvi"></a> {#s1b173bb}
 
