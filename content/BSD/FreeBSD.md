@@ -29,7 +29,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 #### お知らせ {#w2f34805}
 
-- [FreshPorts -- print/texlive-base: TeX Live Typesetting System, base binaries](https://www.freshports.org/print/texlive-base/) にて，Ports は TeX Live 2023 ベースとなりました．
+- [https://cgit.freebsd.org/ports/commit/?id=24e24a19568e8038e3926d7050e1a6052a8b0df5](https://cgit.freebsd.org/ports/commit/?id=24e24a19568e8038e3926d7050e1a6052a8b0df5) にて，Ports は TeX Live 2023 ベースとなりました．
 
 ### 派生版 {#t29f2245}
 
