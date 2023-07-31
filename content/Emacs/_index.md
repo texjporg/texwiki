@@ -40,7 +40,7 @@ GNU Emacs はフリーソフトウェアです．
 
 #### Windows {#k091604e}
 
-- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-28/)
+- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [最近のGNU Emacs for WindowsではフツーにMS IMEを使える話](https://scrapbox.io/tsuu32/%E6%9C%80%E8%BF%91%E3%81%AEGNU_Emacs_for_Windows%E3%81%A7%E3%81%AF%E3%83%95%E3%83%84%E3%83%BC%E3%81%ABMS_IME%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E8%A9%B1)
 - [Emacs 28.2 +パッチ20220917版 build on Cygwin](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs_28.2_build_20220917.html)
@@ -370,7 +370,7 @@ Source editor:
 
 ## 使い方 {#e776cf5f}
 
-- [emacs 28.1の日本語マニュアル](https://ayatakesi.github.io/)
+- [emacs 29.1の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
 - [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
