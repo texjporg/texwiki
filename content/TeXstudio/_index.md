@@ -65,7 +65,7 @@ macOS 用の dmg ファイルをダウンロードしてダブルクリックし
 
 Homebrew でインストールすることもできます．
 
-> [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texstudio.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texstudio.rb)
+> [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb)
 
 ```
 brew install --cask texstudio
