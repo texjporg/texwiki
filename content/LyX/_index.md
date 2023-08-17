@@ -449,7 +449,7 @@ Homebrew, MacPorts でインストールすることもできます．
 
 #### Homebrew {#se88dc8b}
 
-- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lyx.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/lyx.rb)
+- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/l/lyx.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/l/lyx.rb)
 
 ```
 brew install --cask lyx
