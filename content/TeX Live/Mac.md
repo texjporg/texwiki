@@ -37,6 +37,7 @@ MacTeX-2023 / BasicTeX-2023 に付属する TeX Live も universal-darwin バイ
 
 TeX Live 2023 universal-darwin バイナリが動作する macOS
 
+- macOS Sonoma 14
 - macOS Ventura 13
 - macOS Monterey 12
 - macOS Big Sur 11
