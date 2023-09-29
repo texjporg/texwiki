@@ -23,7 +23,7 @@ CotEditor は macOS 専用テキストエディタです．
 
 ### 動作環境 {#he679a78}
 
-macOS Monterey 12 以降
+macOS Ventura 13 以降
 
 ### License {#m60344b8}
 
