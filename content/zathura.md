@@ -75,7 +75,7 @@ macOS, Linux, BSD
 
 ### Fedora {#f03f2bfa}
 
-- [https://apps.fedoraproject.org/packages/zathura](https://apps.fedoraproject.org/packages/zathura)
+- [https://packages.fedoraproject.org/search?query=zathura](https://packages.fedoraproject.org/search?query=zathura)
 
 ### openSUSE {#p01e8065}
 
