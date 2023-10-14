@@ -24,9 +24,6 @@ nkf は，文字コードを変換するツールです。
 - [http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
 - [http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
 - [http://ftp.iij.ad.jp/pub/osdn.jp/nkf/](http://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
-- [ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](ftp://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
-- [ftp://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](ftp://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
-- [ftp://ftp.iij.ad.jp/pub/osdn.jp/nkf/](ftp://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
 
 ### インストール {#s4661abd}
 
@@ -142,7 +139,7 @@ nkf is /mingw/bin/nkf
 
 ### 使い方 {#t5e5a246}
 
-[upLaTeX](/upTeX,upLaTeX/), [LuaLaTeX](/LuaTeX/), [LuajitLaTeX](/LuajitTeX/), [XeLaTeX](/XeTeX/) を使う場合は，TeX ソースやパッケージファイルの文字コードを UTF-8 に統一する必要があります[^1]。
+[upLaTeX](/upTeX,upLaTeX/), [LuaLaTeX](/LuaTeX/), [XeLaTeX](/XeTeX/) を使う場合は，TeX ソースやパッケージファイルの文字コードを UTF-8 に統一する必要があります[^1]。
 このような場合に nkf が有用です。
 
 たとえば，古い TeX 環境などで Shift_JIS で作成した TeX ソース src.tex を UTF-8 に変換して dest.tex として保存したい場合は
