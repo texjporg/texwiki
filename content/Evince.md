@@ -28,12 +28,12 @@ PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) と PS, EPS フ
 Evince 3.30.0 (2018-09-04) で PostScript バックエンドがデフォルトで無効化されました。
 
 Arch Linux, Fedora, openSUSE
-などで使われているパッケージ管理システムからインストールされる Linux 版 Evince は
+のパッケージ管理システムでインストールした Linux 版 Evince は
 PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
 - \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
 - [meson_options.txt · main · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/-/blob/main/meson_options.txt#L13) &lt;-- option('ps', type: 'feature', value: 'disabled', description: 'whether PS support is requested')
-- [https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD](https://github.com/archlinux/svntogit-packages/blob/master/evince/repos/extra-x86_64/PKGBUILD) &lt;-- Arch Linux の evince は ps=enabled
+- [https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads](https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads) &lt;-- Arch Linux の evince は ps=enabled
 - [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt) &lt;-- Debian GNU/Linux の evince は ps=disabled
 - [https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec](https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec) &lt;-- Fedora の evince は ps=enabled
 - [https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec](https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec) &lt;-- openSUSE の evince は ps=enabled
@@ -90,9 +90,10 @@ PS, EPS ファイルを表示できるようにビルドすれば表示できる
 
 ### macOS {#y8d21820}
 
+Homebrew, MacPorts から Evince をインストールした場合は PostScript サポートが有効になっています。
+
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/evince.rb)
-        - PostScript バックエンドが有効化されています --&gt; [evince reenable Postscript backend](https://github.com/Homebrew/homebrew-core/commit/97ff2d8c95d6fec9781db47aadcb9f7e8b489ea7)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb)
 - [https://www.macports.org/ports.php?by=name&substr=evince](https://www.macports.org/ports.php?by=name&substr=evince)
     - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
 
@@ -122,7 +123,7 @@ libevince-dev パッケージが必要です。
 
 ### Fedora {#jbf882d0}
 
-- [https://apps.fedoraproject.org/packages/evince](https://apps.fedoraproject.org/packages/evince)
+- [https://packages.fedoraproject.org/pkgs/evince/evince/](https://packages.fedoraproject.org/pkgs/evince/evince/)
 
 ```
 sudo dnf install evince poppler-data
