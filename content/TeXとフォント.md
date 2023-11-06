@@ -140,7 +140,7 @@ CTAN ページ
 |  Cursor  |  Courier  |  \usepackage{cursor}  |
 |  Heros  |  Helvetica  |  \usepackage{heros}  |
 |  Pagella  |  Palatino  |  \usepackage{pagella}  |
-|  Schola  |  Century Schoolbook  |  \usepackage{schola}  |
+|  Schola  |  Century Schoolbook  |  \usepackage{tgschola}  |
 |  Termes  |  Times (new) Roman  |  \usepackage{termes}  |
 
 TeX Gyre フォントを上記のパッケージを利用して設定すると，日本語の太字が効かなくなってしまいますので，プリアンブルに以下を追加します。
