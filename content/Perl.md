@@ -30,7 +30,7 @@ Perl 5 で書かれたスクリプトがあります（[latexmk.pl](/Latexmk/) �
 の処理系）が含まれています．
 [MiKTeX](/MiKTeX/) を使用する場合は Strawberry Perl をインストールしてください．
 
-#### [Strawberry Perl](https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases) {#bfff8462}
+#### [Strawberry Perl](https://strawberryperl.com) {#bfff8462}
 
 Strawberry Perl を C:\strawberry にインストールした場合は
 
