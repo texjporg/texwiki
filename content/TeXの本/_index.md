@@ -71,6 +71,12 @@ TeX や LaTeX に関する本の紹介です．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
+#### 2023年 {#d39f7b4a}
+
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
+    （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+    - [サポートページ](https://github.com/okumuralab/bibun9)
+
 #### 2022年 {#v85cf0f1}
 
 - [明松 真司](https://mobile.twitter.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
