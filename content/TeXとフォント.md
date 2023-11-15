@@ -134,14 +134,14 @@ CTAN ページ
 
 |  TeX Gyre 名  |  元となった Adobe フォント  |  使用法  |
 |---|---|---|
-|  Adventor  |  Avant Garde  |  \usepackage{adventor}  |
-|  Bonum  |  Bookman  |  \usepackage{bonum}  |
-|  Chorus  |  Zapf Chancery  |  \usepackage{chorus}  |
-|  Cursor  |  Courier  |  \usepackage{cursor}  |
-|  Heros  |  Helvetica  |  \usepackage{heros}  |
-|  Pagella  |  Palatino  |  \usepackage{pagella}  |
+|  Adventor  |  Avant Garde  |  \usepackage{tgadventor}  |
+|  Bonum  |  Bookman  |  \usepackage{tgbonum}  |
+|  Chorus  |  Zapf Chancery  |  \usepackage{tgchorus}  |
+|  Cursor  |  Courier  |  \usepackage{tgcursor}  |
+|  Heros  |  Helvetica  |  \usepackage{tgheros}  |
+|  Pagella  |  Palatino  |  \usepackage{tgpagella}  |
 |  Schola  |  Century Schoolbook  |  \usepackage{tgschola}  |
-|  Termes  |  Times (new) Roman  |  \usepackage{termes}  |
+|  Termes  |  Times (new) Roman  |  \usepackage{tgtermes}  |
 
 TeX Gyre フォントを上記のパッケージを利用して設定すると，日本語の太字が効かなくなってしまいますので，プリアンブルに以下を追加します。
 
