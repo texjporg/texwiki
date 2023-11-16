@@ -90,11 +90,8 @@ LaTeX 2ε を “LaTeX2e” と書くことになっています。
 
 LaTeX2e, pLaTeX2e, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
 
-- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2e美文書作成入門](https://gihyo.jp/book/2020/978-4-297-11712-2)』
-    （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，定価 &yen;3,608 (本体 &yen;3,280＋税)，[ISBN 978-4-297-11712-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11712-2)）
-    ……
-    [TeX Live](</TeX Live/>) 2020 を収録した
-    DVD-ROM 付。電子版もあります。
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
+    （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
 
