@@ -21,7 +21,7 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 ### 関連リンク {#r0fcd4c9}
 
 - [アスキー日本語TeX（pTeX）](https://asciidwango.github.io/ptex/)
-- [e-pTeX Wiki](https://ja.osdn.net/projects/eptex/wiki/FrontPage)
+- [e-pTeX Wiki](https://ja.osdn.net/projects/eptex/wiki/FrontPage)→[e-pTeX について](https://github.com/h-kitagawa/eptex-wiki/)に移行作業中．
 - コミュニティ版 [ptex-base](https://github.com/texjporg/ptex-base), [ptex-fonts](https://github.com/texjporg/ptex-fonts), [platex](https://github.com/texjporg/platex), [pbibtex-base](https://github.com/texjporg/pbibtex-base)
 
 ### ChangeLog {#mf34fb2b}
