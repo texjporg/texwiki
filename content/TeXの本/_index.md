@@ -112,7 +112,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - 小林 雅人
     『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
-    （[工学社](http://www.kohgakusha.co.jp/)，2016年3月，価格 &yen;2,484 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
+    （[工学社](http://www.kohgakusha.co.jp/)，2016年3月，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
 
 #### 2015年 {#k912ee69}
 
@@ -120,7 +120,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - 赤間 世紀
     『[LaTeX論文作成マニュアル](http://www.kohgakusha.co.jp/books/detail/978-4-7775-1858-6)』
-    （[工学社](http://www.kohgakusha.co.jp/)，2014年10月，価格 &yen;2,484 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
+    （[工学社](http://www.kohgakusha.co.jp/)，2014年10月，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
 
 #### 2013年 {#f211a577}
 
