@@ -34,7 +34,7 @@ PostScript バックエンドのサポートが有効化されているので PS
 - \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
 - [meson_options.txt · main · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/-/blob/main/meson_options.txt#L13) &lt;-- option('ps', type: 'feature', value: 'disabled', description: 'whether PS support is requested')
 - [https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads](https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads) &lt;-- Arch Linux の evince は ps=enabled
-- [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt) &lt;-- Debian GNU/Linux の evince は ps=disabled
+- [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt#L13](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt#L13) &lt;-- Debian GNU/Linux の evince は ps=disabled
 - [https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec](https://src.fedoraproject.org/rpms/evince/blob/rawhide/f/evince.spec) &lt;-- Fedora の evince は ps=enabled
 - [https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec](https://build.opensuse.org/package/view_file/GNOME:Next/evince/evince.spec) &lt;-- openSUSE の evince は ps=enabled
 
@@ -90,12 +90,14 @@ PS, EPS ファイルを表示できるようにビルドすれば表示できる
 
 ### macOS {#y8d21820}
 
-Homebrew, MacPorts から Evince をインストールした場合は PostScript サポートが有効になっています。
+Homebrew から Evince をインストールした場合は PostScript サポートが有効になっています。
 
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
     - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb)
-- [https://www.macports.org/ports.php?by=name&substr=evince](https://www.macports.org/ports.php?by=name&substr=evince)
-    - [https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile](https://github.com/macports/macports-ports/blob/master/gnome/evince/Portfile)
+
+```
+brew install evince
+```
 
 ### Arch Linux/Manjaro Linux {#eb51c4f9}
 
@@ -200,7 +202,8 @@ ipaexg.ttf: "IPAexゴシック" "Regular"
 
 ### コマンドラインオプション {#bc93383b}
 
-- [https://gitlab.gnome.org/GNOME/evince/blob/master/shell/main.c](https://gitlab.gnome.org/GNOME/evince/blob/master/shell/main.c)
+- [https://gitlab.gnome.org/GNOME/evince/-/blob/main/shell/main.c](https://gitlab.gnome.org/GNOME/evince/-/blob/main/shell/main.c)
+- [https://gitlab.gnome.org/GNOME/evince/-/blob/main/po/ja.po](https://gitlab.gnome.org/GNOME/evince/-/blob/main/po/ja.po)
 
 ```
 $ evince --help
