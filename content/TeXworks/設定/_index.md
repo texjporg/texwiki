@@ -98,13 +98,13 @@ OK を押して最初の画面に戻り，必要ならば次の図に示すよ�
         - $fullname
     - 「実行後，PDF を表示する」にチェックを入れる．
 
-- Latexmk（とpLaTeX）によるタイプセット
-    - 名前：pLaTeX (latexmk)
+- Latexmk と upLaTeX によるタイプセット
+    - 名前：upLaTeX (latexmk)
     - プログラム：latexmk
     - 引数：
-        - -latex=platex -kanji=utf8 $synctexoption %O %S
+        - -latex=uplatex -kanji=utf8 $synctexoption %O %S
         - -e
-        - $dvipdf='dvipdfmx %O -o %D %S';$bibtex='pbibtex %O %B';$makeindex='mendex %O -o %D %S';
+        - $dvipdf='dvipdfmx %O -o %D %S';$bibtex='upbibtex %O %B';$makeindex='upmendex %O -o %D %S';
         - -pdfdvi
         - $fullname
     - 「実行後，PDF を表示する」にチェックを入れる．
