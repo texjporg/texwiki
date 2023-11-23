@@ -65,6 +65,7 @@ Chocolatey でインストールすることもできます．[https://chocolate
 ### コマンドラインオプション {#md2d6a7f}
 
 - [https://github.com/KDE/okular/blob/master/shell/main.cpp](https://github.com/KDE/okular/blob/master/shell/main.cpp)
+- [https://github.com/KDE/okular/blob/master/po/ja/okular.po](https://github.com/KDE/okular/blob/master/po/ja/okular.po)
 
 ```
 $ okular --help
@@ -86,7 +87,7 @@ Options:
   --noraise                  Not raise window
 
 Arguments:
-  urls                       Documents to open. Specify '-' to read from stdin.
+  urls                       開く文書。標準入力から読む場合は “-” を指定してください。
 ```
 
 ## SyncTeX {#ya8f4753}
