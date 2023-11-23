@@ -73,7 +73,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2023年 {#d39f7b4a}
 
-- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
     （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
 
@@ -82,7 +82,7 @@ TeX や LaTeX に関する本の紹介です．
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](http://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](http://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 
 - [明松 真司](https://mobile.twitter.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
-    （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4295013884](http://ja.wikipedia.org/wiki/Special:Booksources/978-4295013884)）
+    （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年 {#jf0f3e5a}
 
@@ -91,12 +91,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2020年 {#q26632bb}
 
-- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/book/2020/978-4-297-11712-2)』
-    （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，定価 &yen;3,608 (本体 &yen;3,280＋税)，[ISBN 978-4-297-11712-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11712-2)）
-    ……
-    [TeX Live](</TeX Live/>) 2020 を収録した
-    DVD-ROM 付。電子版もあります。
-    - [サポートページ](https://github.com/okumuralab/bibun8)
 - [水谷正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 
 #### 2019年 {#sf1a21f3}
@@ -136,9 +130,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2008年 {#qb443317}
 
-- [渡辺 徹](http://typeface.blog116.fc2.com/)『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版) （[プレアデス出版](http://www.pleiades-publishing.co.jp/)，2008年6月，定価 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-903814-15-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-903814-15-5)）
-    ← [電子媒体（オンライン本）](https://ja.osdn.net/projects/mytexpert/releases/p6276)もあります。
-
 - 吉永 徹美『[独習 LaTeX2ε](http://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](http://www.shoeisha.co.jp/)，2008年3月，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
@@ -158,7 +149,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
-    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月，価格 &yen;2,420 (本体 &yen;2,200)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
+    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
 #### 2005年 {#naf302ff}
