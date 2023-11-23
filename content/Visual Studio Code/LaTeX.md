@@ -120,7 +120,32 @@ recipe 内の tools で指定されている tool は latex-workshop.latex.tools
 Ctrl+Comma (Cmd+Comma) で設定(Settings) タブを開きます。
 「設定の検索」で「Tools」と入力して「Latex-workshop &gt; Latex: Tools」を探し，「settings.json で編集」をクリックするとユーザー設定 (settings.json) が開かれます。
 
-Windows で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
+LuaLaTeXmk (Latexmk-LuaLaTeX) を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
+
+```
+"latex-workshop.latex.tools": [
+{
+"name": "latexmk",
+"command": "latexmk",
+"args": [
+ "-e",
+ "$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
+ "-e",
+ "$bibtex=q/upbibtex %O %B/",
+ "-e",
+ "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
+ "-e",
+ "$makeindex=q/upmendex %O -o %D %S/",
+ "-norc",
+ "-gg",
+ "-pdflua",
+ "%DOC%"
+]
+}
+]
+```
+
+upLaTeXmk (Latexmk-upLaTeX) を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
 
 ```
 "latex-workshop.latex.tools": [
@@ -141,83 +166,6 @@ Windows で Latexmk-upLaTeX を使用する場合は右側に表示されてい�
  "-norc",
  "-gg",
  "-pdfdvi",
- "%DOC%"
-]
-}
-]
-```
-
-Windows で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
-
-```
-"latex-workshop.latex.tools": [
-{
-"name": "latexmk",
-"command": "latexmk",
-"args": [
- "-e",
- "$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
- "-e",
- "$bibtex=q/upbibtex %O %B/",
- "-e",
- "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
- "-e",
- "$makeindex=q/upmendex %O -o %D %S/",
- "-norc",
- "-gg",
- "-pdflua",
- "%DOC%"
-]
-}
-]
-```
-
-macOS, Linux で Latexmk-upLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
-
-```
-"latex-workshop.latex.tools": [
-{
-"name": "latexmk",
-"command": "latexmk",
-"args": [
- "-e",
- "$latex=q/uplatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
- "-e",
- "$bibtex=q/upbibtex %O %B/",
- "-e",
- "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
- "-e",
- "$makeindex=q/upmendex %O -o %D %S/",
- "-e",
- "$dvipdf=q/dvipdfmx %O -o %D %S/",
- "-norc",
- "-gg",
- "-pdfdvi",
- "%DOC%"
-]
-}
-]
-```
-
-macOS, Linux で Latexmk-LuaLaTeX を使用する場合は右側に表示されている settings.json の {} の中に以下の設定を追加・保存してユーザー設定を上書きします。
-
-```
-"latex-workshop.latex.tools": [
-{
-"name": "latexmk",
-"command": "latexmk",
-"args": [
- "-e",
- "$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
- "-e",
- "$bibtex=q/upbibtex %O %B/",
- "-e",
- "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
- "-e",
- "$makeindex=q/upmendex %O -o %D %S/",
- "-norc",
- "-gg",
- "-pdflua",
  "%DOC%"
 ]
 }
