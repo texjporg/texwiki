@@ -83,14 +83,14 @@ pLaTeX 2ε が出ました。
 
 組版処理による表記ができないプレーンテキストや電子メールなどで書くときには
 LaTeX 2ε を “LaTeX2e” と書くことになっています。
-以下では LaTeX 2ε, pLaTeX 2ε, upLaTeX, LuaLaTeX をそれぞれ
-“LaTeX2e”, “pLaTeX2e”, “upLaTeX”, “LuaLaTeX” と書きます。
+以下では LaTeX 2ε, pLaTeX 2ε をそれぞれ
+“LaTeX2e”, “pLaTeX2e” と書きます。
 
-## LaTeX2e, pLaTeX2e, upLaTeX, LuaLaTeX の入門書 {#l062c239}
+## LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書 {#l062c239}
 
-LaTeX2e, pLaTeX2e, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
+LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
 
-- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
+- [奥村 晴彦](https://oku.edu.mie-u.ac.jp/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
     （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
