@@ -32,11 +32,17 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/)
 
+<!-- Welcome to WinShell! -->
+<!-- It looks like you're using an ad blocker. That's okay. Who doesn't? -->
+<!--  -->
+<!-- But our website is made possible by displaying online advertisements to our visitors. -->
+<!-- Please consider supporting us by disabling your ad blocker. -->
+
 ### お知らせ {#z73b9e72}
 
 [奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)，黒木裕介 著
-『LaTeX2e 美文書作成入門』
-([改訂第8版](https://github.com/okumuralab/bibun8)) では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
+『[［改訂第9版］LaTeX美文書作成入門](https://github.com/okumuralab/bibun9)』
+では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
 
 ### 動作環境 {#f8ed906d}
 
