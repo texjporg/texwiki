@@ -73,7 +73,7 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
     - 数式を簡単に画像化できると思ってインストールを試みたらしい。
     - 統合環境の一つにすぎない [TeX2img](/TeX2img/) だけをダウンロード・展開し，TeX 処理系をインストールする必要性に気づいていない失敗例。
 
-- 「以前はpLaTex2eでしたが，最近TeXWorksに乗り換えました」（フォーラムの質問 [forum:655](https://okumuralab.org/tex/mod/forum/discuss.php?d=655) より）
+- 「以前はpLaTex2eでしたが，最近TeXworksに乗り換えました」（フォーラムの質問 [forum:655](https://okumuralab.org/tex/mod/forum/discuss.php?d=655) より）
     - これも「TeX 関連プログラム」と「統合環境」の区別がついていない例。
 
 最初に書いた「TeXworks をインストールしましたが，日本語が出ません」のケースでは
