@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1321ページの長大なマニュアル (ver 3.1.9a の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
+- [1321ページの長大なマニュアル (ver 3.1.10 の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはコマンドラインから
@@ -108,17 +108,19 @@ texdoc tikz
 
 を実行することでも表示できます。
 TeX Live に付属している TikZ/PDF のマニュアルが古い場合は上記の新しいマニュアルに更新してください。
-マニュアルの前半には 70 ページにも及ぶチュートリアルがあるので，学習を始めるのは比較的容易です。
+
+非公式版ですが，マニュアルの全貌がつかみやすい [HTML版のマニュアル](https://tikz.dev) もあります。
+マニュアルの前半には 70 ページにも及ぶチュートリアルが５つあるので，学習を始めるのは比較的容易です。
 ところが，示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり，マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
 
-たとえば，チュートリアルの p.41 (ver 3.1.9a の場合) にある[「パスの交錯（Intersecting Paths）」](https://ftp.kddilabs.jp/CTAN/graphics/pgf/base/doc/pgfmanual.pdf#subsection.2.16)のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
+たとえば，チュートリアルの p.41 (ver 3.1.10 の場合) にある[「パスの交錯（Intersecting Paths）」](https://ftp.kddilabs.jp/CTAN/graphics/pgf/base/doc/pgfmanual.pdf#subsection.2.16)のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
 プリアンブルに
 
 ```
 \usetikzlibrary{intersections}
 ```
 
-と設定しておく必要があります（コメントには記載があります）。
+と設定しておく必要があります（コメントにはその旨記載があります）。
 
 <!-- ver 3.0.0 からは examplefill という色は用いられなくなりましたので，以下の記述は obsolete です。 -->
 <!-- また，初期設定では examplefill という色は定義されていません。 -->
@@ -196,7 +198,7 @@ TeX Live に付属している TikZ/PDF のマニュアルが古い場合は上�
 #### ライブラリの読み込み {#p4b035b0}
 
 TikZ/PGF は初期設定の段階でも高い描画力がありますが，付属のライブラリを読み込むことでさらに多彩な表現力を得ます。
-ライブラリには，たとえば背景パターンを塗る patterns，交点を求める intersections，座標計算をする calc，矢印の種類を増やす arrows，パスを飾る decorations，角度記号を描く angles などがあります。
+ライブラリには，たとえば背景パターンを塗る patterns，交点を求める intersections，座標計算をする calc，矢印の種類を増やす arrows，パスを飾る decorations，角度記号を描く angles，行列を書くmatrix，３次元座標を利用する3d，などがあります。
 ライブラリを用いるときは，tikz パッケージを読み込んだ後で
 
 ```
@@ -330,7 +332,7 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
 ```
 \end{tikzpicture}
 
-%%関数による描画（マニュアルp.329の例）
+%%関数による描画（マニュアルp.344の例）
 %%plotのオプション[smooth]を忘れると折れ線で描画されます。
 \begin{tikzpicture}[domain=0:4]%グラフの描画領域は0≦x≦4
 \draw[very thin,color=gray] (-0.1,-1.1) grid (3.9,3.9);
@@ -409,7 +411,7 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
         - \draw\[smooth, samples=100, variable=\t, domain=-3.14:3.14\] plot (\t r:{cos(2\*\t r)});%%四葉線
         - デフォルトのサンプル数は25なので，オプションで samples=サンプル数と増やしたり smooth と指定するとより滑らかな曲線になる
     - ここでは PGF (TikZ) の計算機能を利用している
-        - 使用可能な PGF の計算機能についてはマニュアルの第93章 Mathematical Expressions を参照（四則演算、三角関数、指数・対数、平方根など）
+        - 使用可能な PGF の計算機能についてはマニュアルの第94章 Mathematical Expressions を参照（四則演算、三角関数、指数・対数、平方根など）
         - gnuplot 呼び出して描画することも可能（--shell-escape の設定が必要）
 
 ### スタイルの設定 {#vc8500e0}
