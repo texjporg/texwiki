@@ -30,7 +30,7 @@ dvipng で問題が発生する場合は PDF ファイルで出力して [MuPDF]
 DVI ファイルを PNG ファイルに変換する場合は
 
 ```
-$ dvipng hoge.dvi
+$ dvipng file.dvi
 ```
 
 #### DVI -> PDF -> MuPDF (mutool) -> PNG {#vf3c0c13}
@@ -39,7 +39,7 @@ $ dvipng hoge.dvi
 PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-$ mutool draw -o hoge.png hoge.pdf
+$ mutool draw -o file.png file.pdf
 ```
 
 #### DVI -> PDF -> Poppler (pdftocairo) -> PNG {#a65b7c7c}
@@ -48,7 +48,7 @@ $ mutool draw -o hoge.png hoge.pdf
 PDF ファイルの余白を削除する場合は [pdfcrop](/pdfcrop/) を使用してください．
 
 ```
-$ pdftocairo -png hoge.pdf
+$ pdftocairo -png file.pdf
 ```
 
 ### 関連リンク {#d403df71}
