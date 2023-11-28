@@ -411,7 +411,7 @@ TikZ/PGF での色指定は基本的にxcolorの形式を踏襲しますので�
         - \draw\[smooth, samples=100, variable=\t, domain=-3.14:3.14\] plot (\t r:{cos(2\*\t r)});%%四葉線
         - デフォルトのサンプル数は25なので，オプションで samples=サンプル数と増やしたり smooth と指定するとより滑らかな曲線になる
     - ここでは PGF (TikZ) の計算機能を利用している
-        - 使用可能な PGF の計算機能についてはマニュアルの第94章 Mathematical Expressions を参照（四則演算、三角関数、指数・対数、平方根など）
+        - 使用可能な PGF の計算機能についてはマニュアルの第94章 Mathematical Expressions を参照（四則演算，三角関数，指数・対数，平方根など）
         - gnuplot 呼び出して描画することも可能（--shell-escape の設定が必要）
 
 ### スタイルの設定 {#vc8500e0}
@@ -951,7 +951,7 @@ TikZ/PGF で作成した図画を含んだソースファイルから，図画�
 
 dvips または LuaTeX または pdfTeX を用いると，ちょうどその画像の大きさの ps ファイルまたは pdf ファイルが得られます。
 dvipdfmx を用いた場合は，コマンドラインから [pdfcrop](/pdfcrop/) を最後に適用することで画像の大きさちょうどの pdf を得られます。
-[Poppler](/Poppler/)のpdftocairoが使える環境（[TeX Live](</TeX Live/>)には標準で含まれている）にあれば、さらに以下のコマンドで svg や png 画像が生成できます。
+[Poppler](/Poppler/)のpdftocairoが使える環境（[TeX Live](</TeX Live/>)には標準で含まれている）にあれば，さらに以下のコマンドで svg や png 画像が生成できます。
 
 ```
 $ pdftocairo -png -r 150 -transp filename.pdf#150は画像のPPI値。-transpは背景透過を指定します。
@@ -1091,6 +1091,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - [tcolorbox の基本](http://texmedicine.hatenadiary.jp/entry/2015/12/17/000339)
     - [tcolorbox で遊んでみた](http://hikaru515.hatenablog.com/entry/2015/11/08/175348)
     - tcolorbox 2020/09/25 version 4.40 で若干の仕様変更が入り，テキストと後続の tcolorbox の間隔が少し開くようになりました。参考：[issue 115](https://github.com/T-F-S/tcolorbox/issues/115), [issue 121](https://github.com/T-F-S/tcolorbox/issues/121)
+    - [tcolorbox でピカチュウフレーム](https://hohei3108.hatenablog.com/entry/2017/09/23/165454)
+    - [tcolorboxで学参編集（TeXフォーラムより）](https://okumuralab.org/tex/mod/forum/discuss.php?d=3474)
 
 ### 使用例や解説 {#d081bd28}
 
@@ -1110,19 +1112,12 @@ $ uplatex --jobname=filename-fig1 filename.tex
         - TikZによるグラフ作成（折れ線グラフ，棒グラフ）の例
     - [TeX Alchemist Online / TikZによる連成振動アニメーション (1) ～ アニメーションGIF篇](http://doratex.hatenablog.jp/entry/20140417/1397742060) [(2) ～ 動くPDF篇](http://doratex.hatenablog.jp/entry/20140418/1397750533)
         - 連成振動（物理のバネ・おもり・壁など）の図の作成例，およびそのアニメーション化の方法
-- [Japanese TikZ Tutorial](https://github.com/Yasunari15/Japanese-TikZ-Tutorial)
 - [いわにぃのブログ : TikZ](http://blog.livedoor.jp/ti5942/tag/TikZ), [いわにぃのブログ : PGF/TikZ](http://blog.livedoor.jp/ti5942/archives/cat_131138.html)
-- [岩崎 隆盛/「TikZ」の検索結果 - Twilog](http://twilog.org/tweets.cgi?id=ti5942&word=TikZ)
 - [にっき&#9834;: TikZの検索結果](http://abenori.blogspot.com/search?q=TikZ&by-date=true)
 - [うぶつん: Tikz](http://ubutun.blogspot.jp/search/label/Tikz)
-- [TikZ | 人ごとな独り言](http://hitgot.org/archives/category/computer/programming/tex/tikz/)
 - [ちっちのぶろぐ: Tikz](http://chitchnoblog.blogspot.jp/search/label/Tikz)
-- [tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
 - [TeX memo](http://perikanfan.web.fc2.com/tex.html)
     - TikZの日本語マニュアルあり（未完）
-- [TikZを使う](http://blogs.yahoo.co.jp/igproj_fusion/14008346.html)
-- [Software Design Laboratory &raquo; TeX macros](http://softcream.oka-pu.ac.jp/tex-macros/)
-    - TikZ/PGFを利用して，構文解析器のXML出力から構文木を自動描画したり，２変数２次関数の等高線を描画するマクロなど。クリップアート集も。
 - [Fibonacci 数列で TikZ してみた](http://d.hatena.ne.jp/munepi/20120425/PGFandTikZ)
     - [TikZ（＋expl3）を用いてフィボナッチ数列](http://web.archive.org/web/20151230222501/http://d.hatena.ne.jp/abenori/20120425)
     - [テンプレート的 LaTeX，再び (1)](http://d.hatena.ne.jp/zrbabbler/20120504/1336153796)
@@ -1130,13 +1125,30 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - PracTeX journal(2007-1)の記事で，代表的な用法をシンプルに紹介（英文）
 - [BeamerのためのTikZ](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html)
     - 木構造を表す模式図の作成例
-- [Miffy Code Snipets](http://miffysora.wikidot.com/tikz)
-- [TikZを利用した図形描画](https://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)、[プレ高数学科](https://unilab.gbb60166.jp/prekou/prekou.htm)
-    - 初等幾何の作図例（扇型，円を組み合わせた面積，角度）、算数・数学の図形・グラフやイラストの描画
-- [http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ](http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ)
+- [TikZを利用した図形描画](https://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)，[プレ高数学科](https://unilab.gbb60166.jp/prekou/prekou.htm)
+    - 初等幾何の作図例（扇型，円を組み合わせた面積，角度），算数・数学の図形・グラフやイラストの描画
 - [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
 - [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
-- [TikZのHowTo](https://note.com/okami_room/m/m5d8c7ff3e33b)
+- [TikZ でこけし・Barnsley fern・トポロジカル欠陥](https://event.phys.s.u-tokyo.ac.jp/physlab2022/posts/12/)
+
+<!-- リンク切れ -->
+<!-- -[[Japanese TikZ Tutorial:https://github.com/Yasunari15/Japanese-TikZ-Tutorial]] -->
+<!-- -[[岩崎 隆盛/「TikZ」の検索結果 - Twilog:http://twilog.org/tweets.cgi?id=ti5942&word=TikZ]] -->
+<!-- -[[TikZ | 人ごとな独り言:http://hitgot.org/archives/category/computer/programming/tex/tikz/]] -->
+<!-- -[[tetsuok の旅 blog:http://tetsuok.hatenablog.com/archive/category/latex]] -->
+<!-- -[[TikZを使う:http://blogs.yahoo.co.jp/igproj_fusion/14008346.html]] -->
+<!-- -[[Software Design Laboratory &raquo; TeX macros:http://softcream.oka-pu.ac.jp/tex-macros/]] -->
+<!-- - -TikZ/PGFを利用して，構文解析器のXML出力から構文木を自動描画したり，２変数２次関数の等高線を描画するマクロなど。クリップアート集も。 -->
+<!-- -[[Miffy Code Snipets:http://miffysora.wikidot.com/tikz]] -->
+<!-- -http://mizupc8.bio.mie-u.ac.jp/pukiwiki/index.php?TeX%2FTikZ -->
+<!-- -[[TikZのHowTo:https://note.com/okami_room/m/m5d8c7ff3e33b]] -->
+
+### 市販されている解説書 {#b9ce0b6b}
+
+- [［改訂第9版］LaTeX美文書作成入門（2023年12月9日）](https://gihyo.jp/book/2023/978-4-297-13889-9)
+    - 付録DにTikZの簡単な解説と，R，Python，gnuplotとの連携についての記述がある
+- [LaTeX Graphics with TikZ](https://www.packtpub.com/product/latex-graphics-with-tikz/9781804618233)
+    - 英語版のみ。第1版2023年6月9日
 
 ### ChangeLog {#off3b30e}
 
