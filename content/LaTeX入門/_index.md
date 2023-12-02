@@ -152,4 +152,4 @@ LaTeX の使い方を簡単に解説しています。
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 - [発展編：最近の LaTeX の動向](</LaTeX入門/発展編/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[株式会社 KADOKAWA](https://www.kadokawa.co.jp/) のアスキー・メディアワークス）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) グループ会社の[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
