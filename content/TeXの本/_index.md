@@ -158,10 +158,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2003年 {#d710115e}
 
-- 生田 誠三
-    『[LaTeX2ε 入門](http://www.asakura.co.jp/books/isbn/978-4-254-12157-5/)』
-    （朝倉書店，2003年6月，定価 &yen;3,630 (本体 &yen;3,300＋税)，[ISBN 978-4-254-12157-5](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12157-5)）
-
 #### 2002年 {#cd408659}
 
 #### 2001年 {#f1b02c0b}
@@ -170,7 +166,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - 生田 誠三
     『[LaTeX2ε 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
-    （朝倉書店，2000年6月，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+    （朝倉書店，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 ### 書籍 (絶版) {#qa17acad}
 
