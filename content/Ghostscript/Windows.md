@@ -27,6 +27,8 @@ Windows 版の Ghostscript にはいくつかの種類があります。
     - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
         - W32TeX の配布者である角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
         - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+- winget Ghostscript
+    - winget からインストールできる Ghostscript
 - Scoop Ghostscript
     - Scoop からインストールできる Ghostscript
 - Chocolatey Ghostscript
@@ -62,30 +64,30 @@ TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が�
 
 #### インストール方法 {#q1167b48}
 
-1. Ghostscript インストーラ（gs10012w64.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs10.01.2” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.01.2” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. Ghostscript インストーラ（gs10021w64.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs10.02.1” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.02.1” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 1. [SumatraPDF](/SumatraPDF/) で PS ファイル、EPS ファイルが表示できます。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs10.01.2 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs10.01.2 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs10.02.1 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs10.02.1 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs10.01.2 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs10.02.1 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs10.01.2\bin
+C:\Program Files\gs\gs10.02.1\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs10.01.2\lib
+C:\Program Files\gs\gs10.02.1\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -93,7 +95,7 @@ C:\Program Files\gs\gs10.01.2\lib
 Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
 
 ```
-…;C:\Program Files\gs\gs10.01.2\bin;C:\Program Files\gs\gs10.01.2\lib;…
+…;C:\Program Files\gs\gs10.02.1\bin;C:\Program Files\gs\gs10.02.1\lib;…
 ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -751,6 +753,10 @@ composefont pop
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+
+#### winget Ghostscript {#lb8d3056}
+
+- [https://winget.run/pkg/ArtifexSoftware/GhostScript](https://winget.run/pkg/ArtifexSoftware/GhostScript)
 
 #### Scoop Ghostscript {#ze908a4d}
 
