@@ -18,6 +18,8 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 - [ghostscript.com Mailing Lists](https://ghostscript.com/mailman/listinfo/)
     - [The gs-bugs Archives](https://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](https://ghostscript.com/pipermail/gs-devel/)
+- [Welcome to Ghostscript &mdash; Ghostscript 10.03.0 documentation](https://ghostscript.readthedocs.io/)
+    - [https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
 ***
 
@@ -25,8 +27,11 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 9.55.0 (2021-09-27) 以降に更新してください。
-Ghostscript 9.54.0 (2021-03-19) およびそれ以前には，脆弱性が存在します。
+Ghostscript 10.02.0 (2023-08-30) 以降に更新してください。
+Ghostscript 10.01.2 (2023-06-21) およびそれ以前には，脆弱性が存在します。
+
+- [PDFを処理する「Ghostscript」にRCE脆弱性 - アップデートで修正](https://www.security-next.com/149859)
+- [Ghostscript においてパイプ処理の検証不備により任意のコードが実行可能となる脆弱性（Scan Tech Report）](https://scan.netsecurity.ne.jp/article/2023/10/11/50061.html)
 
 Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在します。
 
