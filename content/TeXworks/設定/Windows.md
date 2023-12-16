@@ -132,7 +132,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk-upLaTeX {#t6b9c629}
+#### upLaTeXmk {#t6b9c629}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -150,12 +150,12 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-upLaTeX</ins><br>
+　　名前:　　　　<ins>upLaTeXmk</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -171,7 +171,7 @@ Latexmk で PDF ファイルを作成します．
 
 ***
 
-#### Latexmk-LuaLaTeX {#o5201be5}
+#### LuaLaTeXmk {#o5201be5}
 
 Latexmk で PDF ファイルを作成します．
 
@@ -189,12 +189,12 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
+　　名前:　　　　<ins>LuaLaTeXmk</ins><br>
 　　プログラム: <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$lualatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -243,8 +243,8 @@ Latexmk で PDF ファイルを作成します．
 　　　　 ConTeXt (pdfTeX)<br>
 　　　　 ConTeXt (XeTeX)<br>
 　　　　 Latexmk<br>
-　　　　 Latexmk-upLaTeX<br>
-　　　　 Latexmk-LuaLaTeX<br>
+　　　　 upLaTeXmk<br>
+　　　　 LuaLaTeXmk<br>
 　　　　 BibTeX<br>
 　　　　 MakeIndex<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
