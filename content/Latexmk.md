@@ -53,10 +53,10 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
     latexmk -pdfdvi sample.tex
     ```
 
-- dvi 経由で pdf を生成，platex，dvipdfmx，pbibtex，mendex を使うことを明示する．
+- dvi 経由で pdf を生成，uplatex，dvipdfmx，bibtexu，upmendex を使うことを明示する．
 
     ```
-    latexmk -pdfdvi -latex=platex -synctex=1 -e "$dvipdf='dvipdfmx %O %S';$bibtex='pbibtex';$makeindex='mendex';" sample.tex
+    latexmk -pdfdvi -latex=uplatex -synctex=1 -e "$dvipdf='dvipdfmx %O %S';$bibtex='bibtexu';$makeindex='upmendex';" sample.tex
     ```
 
 - dvi 経由で pdf を生成し，更にプレビューを行う．
@@ -95,11 +95,11 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
     latexmk -C sample.tex
     ```
 
-「dvi 経由で pdf を生成，platex，dvipdfmx，pbibtex，mendex を使うことを明示する．」では %O や %S などを latexmk に補完させています．dvipdfmx は補完に失敗するため，指定しています．
+「dvi 経由で pdf を生成，uplatex，dvipdfmx，bibtexu，upmendex を使うことを明示する．」では %O や %S などを latexmk に補完させています．dvipdfmx は補完に失敗するため，指定しています．
 
 ### 設定 {#g2a2cf08}
 
-実際にコンパイル時に何を用いるか（platex か latex か，pbibtex か bibtex か等々）は，.latexmkrc と言うファイルに記述します．[^1].latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
+実際にコンパイル時に何を用いるか（lualatex か uplatex か，bibtexu か upbibtex か等々）は，.latexmkrc と言うファイルに記述します．[^1].latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
 
 1. 環境変数 HOME が定義されていればそのフォルダ
 1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
@@ -109,10 +109,10 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
 日本語用の簡単な .latexmkrc です．
 
 ```
-$latex = 'platex -synctex=1 %O %S';
-$bibtex = 'pbibtex %O %B';
+$latex = 'uplatex -synctex=1 %O %S';
+$bibtex = 'bibtexu %O %B';
 $dvipdf = 'dvipdfmx %O -o %D %S';
-$makeindex = 'mendex %O -o %D %S';
+$makeindex = 'upmendex %O -o %D %S';
 $max_repeat = 10;
 $pdf_previewer = '"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance %O %S';
 ```
@@ -141,7 +141,7 @@ if ($^O eq 'MSWin32') {
   $lualatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $xelatex = 'xelatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
+  $bibtex = 'bibtexu %O %B';
   $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -155,12 +155,12 @@ if ($^O eq 'MSWin32') {
     $pdf_previewer = 'texworks';
   }
 } else {
-  $latex = 'uplatex %O -synctex=1 -interaction=nonstopmode %S';
+  $latex = 'uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S';
   $pdflatex = 'pdflatex %O -synctex=1 -interaction=nonstopmode %S';
   $lualatex = 'lualatex %O -synctex=1 -interaction=nonstopmode %S';
   $xelatex = 'xelatex %O -synctex=1 -interaction=nonstopmode %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
+  $bibtex = 'bibtexu %O %B';
   $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
