@@ -17,7 +17,7 @@ pukiwiki: "TeXstudio/設定/macOS"
 
 - LaTeX のコマンドを latex から uplatex に変更し，-src を -synctex=1 に変更します．
 - DviPdf のコマンドを dvipdf から dvipdfmx に変更します．
-- BibTeX のコマンドを bibtex から upbibtex または pbibtex に変更します．
+- BibTeX のコマンドを bibtex から bibtexu に変更します．
 - Biber のコマンドを biber から biber --bblencoding=utf8 -u -U --output_safechars に変更します．
     <!-- -Latexmk-upLaTeX を使用する場合は コマンドの PdfLaTeX に設定されている "/Library/TeX/texbin/pdflatex" -synctex=1 -interaction=nonstopmode %.tex を "/Library/TeX/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O - -bblencoding=utf8 -u -U - -output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % に変更します．pdfLaTeX を実行したくなった場合は Latexmk の変数 $pdflatex が pdflatex コマンドに設定されていれば [ツール(T)] &gt; [コマンド(C)] &gt; [LaTeXmk] から Latexmk で pdfLaTeX を実行できます． -->
 
@@ -89,9 +89,9 @@ DviPdf
 BibTeX
 : &nbsp;
 
-: "/usr/local/bin/upbibtex" %
+: "/usr/local/bin/bibtexu" %
 
-: "/Library/TeX/texbin/upbibtex" %
+: "/Library/TeX/texbin/bibtexu" %
 
 BibTex 8ビット
 : &nbsp;
@@ -148,9 +148,9 @@ Ghostscript
 Latexmk
 : &nbsp;
 
-: "/usr/local/bin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+: "/usr/local/bin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
-: "/Library/TeX/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
+: "/Library/TeX/texbin/latexmk" -e "$latex=q/uplatex &#x25;&#x25;O -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O --bblencoding=utf8 -u -U --output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent %
 
 <!-- :|latexmk -pdf -silent -latexoption="-synctex=1" % -->
 
