@@ -53,7 +53,7 @@ pukiwiki: "TeXlipse/設定/Linux"
 
 　　 Setup the Bibtex program. If the program file field is empty, this program is disabled.<br>
 　　 Program file： 　　　　　　　<ins>/usr/bin/env</ins><br>
-　　 引数： 　　　　　　　　　　　<ins>upbibtex "&#x25;input"</ins><br>
+　　 引数： 　　　　　　　　　　　<ins>bibtexu "&#x25;input"</ins><br>
 　　　Input format： .bib 　　　出力フォーマット： .aux<br>
 
 <br>
