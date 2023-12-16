@@ -375,7 +375,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2023\bin\windows\upbibtex.exe</ins><br>
+<ins>C:\texlive\2023\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -449,7 +449,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2023\bin\windows\upbibtex.exe</ins><br>
+<ins>C:\texlive\2023\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -486,7 +486,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2023\bin\windows\upbibtex.exe</ins><br>
+<ins>C:\texlive\2023\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
