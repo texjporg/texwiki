@@ -71,7 +71,7 @@ pukiwiki: "TeXworks/設定/macOS"
 
 ***
 
-#### Latexmk-upLaTeX {#n543aa96}
+#### upLaTeXmk {#n543aa96}
 
 タイプセットの方法を設定します．
 
@@ -79,12 +79,12 @@ pukiwiki: "TeXworks/設定/macOS"
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-upLaTeX</ins><br>
+　　名前:　　　　<ins>upLaTeXmk</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
@@ -100,7 +100,7 @@ pukiwiki: "TeXworks/設定/macOS"
 
 ***
 
-#### Latexmk-LuaLaTeX {#pc34d1b7}
+#### LuaLaTeXmk {#pc34d1b7}
 
 タイプセットの方法を設定します．
 
@@ -108,12 +108,12 @@ pukiwiki: "TeXworks/設定/macOS"
 
 <br>
 
-　　名前:　　　　<ins>Latexmk-LuaLaTeX</ins><br>
+　　名前:　　　　<ins>LuaLaTeXmk</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$lualatex=q/lualatex %O -synctex=1 %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$bibtex=q/upbibtex %O %B/</ins><br>
+　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
