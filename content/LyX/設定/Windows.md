@@ -42,9 +42,9 @@ pukiwiki: "LyX/設定/Windows"
 > DVIビューア用紙寸法設定:　　[^2]<br>
 > 書誌情報の生成<br>
 > &nbsp;処理プログラム(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;コマンド(O):　　　　　<ins>upbibtex</ins>[^3]<br>
+> &nbsp;コマンド(O):　　　　　<ins>bibtexu</ins>[^3]<br>
 > &nbsp;日本語用処理プログラム(J):　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;コマンド(M):　　　　　<ins>upbibtex</ins>[^4]<br>
+> &nbsp;コマンド(M):　　　　　<ins>bibtexu</ins>[^4]<br>
 > 索引の生成<br>
 > &nbsp;処理プログラム(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　▼\]</span><br>
 > &nbsp;コマンド(M):　　　　　<ins>upmendex -c -q</ins>[^5]<br>
