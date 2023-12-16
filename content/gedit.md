@@ -7,7 +7,7 @@ pukiwiki: "gedit"
 
 # gedit
 
-## [gedit](https://wiki.gnome.org/Apps/Gedit) {#c704b7fa}
+## [gedit](https://gedit-technology.github.io/apps/gedit/) {#c704b7fa}
 
 <!-- #ref(https://gitlab.gnome.org/GNOME/gedit/raw/master/gedit/resources/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
 
@@ -17,9 +17,9 @@ pukiwiki: "gedit"
 
 ## gedit とは {#s7f61b9d}
 
-gedit は GNOME デスクトップ用に作られた小型軽量のテキストエディターです．
+gedit は小型軽量のテキストエディターです．
 
-- [Apps/Gedit - GNOME Wiki!](https://wiki.gnome.org/Apps/Gedit)
+- [gedit](https://gedit-technology.github.io/apps/gedit/)
 
 ***
 
@@ -120,7 +120,7 @@ ptex2pdf -u -l -ot '-synctex=1' "$filename"
 Latexmk-upLaTeX を使用する場合は
 
 ```
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
 ```
 
 を \[追加\] して設定します．
@@ -139,12 +139,10 @@ LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX �
 
 forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
 
-### [gedit-plugins (SyncTeX)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex) {#uc9a113c}
+### [gedit-plugins (SyncTeX)](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex) --&gt; [Remove synctex plugin](https://gitlab.gnome.org/GNOME/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd) {#uc9a113c}
 
-- [https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex](https://gitlab.gnome.org/GNOME/gedit-plugins/tree/master/plugins/synctex)
-    <!-- -https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex -->
-    <!-- -https://github.com/jaliste/gedit-synctex-plugin -->
-
+- [https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex](https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex)
+- [https://github.com/jaliste/gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
 - [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
 - [https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/](https://www.archlinux.org/packages/extra/x86_64/gedit-plugins/)
 - [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
@@ -152,7 +150,7 @@ forward and inverse search が必要な場合は SyncTeX プラグインを使�
 - [https://apps.fedoraproject.org/packages/gedit-plugin-synctex](https://apps.fedoraproject.org/packages/gedit-plugin-synctex) --&gt; [https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041](https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041)
 - [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
-SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90, 3.33.92, 3.34.0 には収録されていません．[2019年9月20日に元に戻された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/3f135d1719f1e6418fcbf175fdac1b48ca086eb5)ため gedit-plugins 3.34.1 以降には収録されています．
+SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90, 3.33.92, 3.34.0 には収録されていません。[2019年9月20日に元に戻された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/3f135d1719f1e6418fcbf175fdac1b48ca086eb5)ため gedit-plugins 3.34.1 から gedit-plugins 44.1 までは収録されていましたが [gedit-plugins 45.0 2023-06-23 で再び削除されました](https://gitlab.gnome.org/GNOME/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd)。
 
 SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
 
