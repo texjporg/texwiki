@@ -83,7 +83,7 @@ ForwardPDF<br>
 ### BibTeX {#kd1bef77}
 
 コマンド(<ins>M</ins>):
-: upbibtex
+: bibtexu
 
 オプション:
 : '%S'
