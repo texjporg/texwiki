@@ -182,10 +182,10 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-(setq makeindex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
+(setq bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq makeindex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
 (setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
 ;(setq dvi2-command "texworks")
 ;(setq dvi2-command "texstudio --pdf-viewer-only")
@@ -246,7 +246,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
@@ -303,10 +303,10 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
+(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq dvi2-command "open -a Skim")
 ;(setq dvi2-command "open -a Preview")
 ;(setq dvi2-command "open -a TeXShop")
@@ -340,7 +340,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
@@ -380,10 +380,10 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
+(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 ;(setq dvi2-command "xdg-open")
 (setq dvi2-command "evince")
 ;(setq dvi2-command "atril")
@@ -467,7 +467,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
 > <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>upbibtex, biber (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
@@ -595,7 +595,7 @@ M-x describe-variable RET tex-command RET
 %% -*- coding: utf-8-unix -*-
 %#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
 % #!tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe & ptex2pdf -u -l hogehoge && start Acrobat hogehoge.pdf
-%#BIBTEX upbibtex hogehoge
+%#BIBTEX bibtexu hogehoge
 %#MAKEINDEX upmendex hogehoge
 %#LPR if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" ("C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
 % #LPR acroread.bat /p hogehoge.pdf
@@ -700,22 +700,22 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-  (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
+    (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+  (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
 #### LuaLaTeXmk {#d4a80fb8}
 
 ```
 (if (eq system-type 'windows-nt)
-    (setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/upbibtex %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
-  (setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua"))
+    (setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
+  (setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua"))
 ```
 
-### upbibtex の指定 {#q198d21d}
+### bibtexu の指定 {#q198d21d}
 
 ```
-(setq bibtex-command "upbibtex")
+(setq bibtex-command "bibtexu")
 ```
 
 ### biber の指定 {#o3f4bd25}
