@@ -56,9 +56,9 @@ LaTeX -> <ins>P</ins>DF
 
 : lualatex -synctex=1 --file-line-error-style "%f"
 
-: latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
+: latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
 
-: latexmk -e '$lualatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
+: latexmk -e '$lualatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
 
 #### コマンドを実行 {#r981dc9c}
 
