@@ -18,6 +18,7 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 
 ### 公式サイト {#ha0b38ce}
 
+- [https://github.com/luatexja/luatexja](https://github.com/luatexja/luatexja)
 - [LuaTeX-ja プロジェクト wiki](https://ja.osdn.net/projects/luatex-ja/wiki/)
     - [LuaTeX-ja wiki (FrontPage(en))](https://ja.osdn.net/projects/luatex-ja/wiki/FrontPage%28en%29)
     - [LuaTeX-ja の使い方](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
@@ -249,11 +250,13 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と 
 
 #### リリース情報 {#g1f2f88f}
 
+- [https://github.com/luatexja/luatexja/tags](https://github.com/luatexja/luatexja/tags)
 - [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/tags](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/tags)
 - [http://git.osdn.net/view?p=luatex-ja/luatexja.git;a=tags](http://git.osdn.net/view?p=luatex-ja/luatexja.git;a=tags)
 
 #### ChangeLog {#ka55de08}
 
+- [https://github.com/luatexja/luatexja/commit/master](https://github.com/luatexja/luatexja/commit/master)
 - [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/)
     - [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/commits](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
