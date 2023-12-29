@@ -32,7 +32,6 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 LuaTeX-ja は
 
 - [TeX Live](</TeX Live/>)
-- [W32TeX](/W32TeX/) (luatexja.tar.xz)
 - [MiKTeX](/MiKTeX/) ([MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja))
 
 で利用可能です．
@@ -44,23 +43,6 @@ LuaTeX-ja は
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
 TeX Live には luatexja が含まれています．
-
-#### [W32TeX](/W32TeX/) {#a565ecc6}
-
-W32TeX には luatexja.tar.xz が含まれています．
-W32TeX をフルインストールすると
-
-```
-C:.
-└─w32tex
-    └─share
-        └─texmf-dist
-             └─tex
-                 └─luatex
-                     └─luatex-ja
-```
-
-にインストールされます．
 
 #### Debian/Ubuntuのリポジトリを使う場合 {#v06d4fe0}
 
@@ -92,7 +74,7 @@ $ sudo port install texlive-lang-japanese -doc
 \usepackage[hiragino-pron]{luatexja-preset}
 ```
 
-というようにします．オプションには，kozuka-pro, kozuka-pr6, kozuka-pr6n, hiragino-pro, hiragino-pron, morisawa-pro, morisawa-pr6n, yu-win, yu-osx, moga-mobo, noembed, ipa-hg, ipaex-hg, ms-hg が指定できます．具体的にどのようなフォントが埋め込まれるかは，luatexja-ja.pdf を参照してください．また，luatexja-preset には [OTF](/OTF/) パッケージのような機能も含まれています．詳しくは luatexja-ja.pdf をご覧ください．
+というようにします．オプションには，haranoaji, kozuka-pro, kozuka-pr6, kozuka-pr6n, hiragino-pro, hiragino-pron, morisawa-pro, morisawa-pr6n, yu-win, yu-osx, moga-mobo, noembed, ipa-hg, ipaex-hg, ms-hg が指定できます．具体的にどのようなフォントが埋め込まれるかは，luatexja-ja.pdf を参照してください．また，luatexja-preset には [OTF](/OTF/) パッケージのような機能も含まれています．詳しくは luatexja-ja.pdf をご覧ください．
 
 和文フォント用の fontspec である luatexja-fontspec パッケージも付属しています．luatexja-preset パッケージで用意されていないフォントを使うには，こちらで直接指定することになります．
 
@@ -107,8 +89,7 @@ $ sudo port install texlive-lang-japanese -doc
 - [LuaTeX+SumatraPDF+小塚Pr6N](http://d.hatena.ne.jp/eggtoothcroc/20121117/p1)
 - [2011-09-06 - にっき♪](http://web.archive.org/web/20160404124429/http://d.hatena.ne.jp/abenori/20110906)
 
-W32TeX の場合，mktexlsr で ls-R を作成しておくとだいたい 2～3倍ぐらい処理が速くなる場合もあるようです．
-また，LuajitTeX を使用すると 1.3 倍ぐらい早くなることもあるようです ([forum:911](https://okumuralab.org/tex/mod/forum/discuss.php?d=911))．
+LuajitTeX を使用すると 1.3 倍ぐらい早くなることもあるようです ([forum:911](https://okumuralab.org/tex/mod/forum/discuss.php?d=911))．
 逆に大きなフォントを使用する場合など，LuajitTeX のほうが極端に遅くなる場合もあります．
 
 たとえばファイルサイズが大きい SourceHanSans-Regular を使った次の [ConTeXt](/ConTeXt/) の例の場合，
