@@ -270,7 +270,7 @@ latexmk "$GEDIT_CURRENT_DOCUMENT_NAME"
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
@@ -286,7 +286,7 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -
 #!/bin/sh
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/upbibtex %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$GEDIT_CURRENT_DOCUMENT_NAME"
+latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$GEDIT_CURRENT_DOCUMENT_NAME"
 ```
 
 ***
