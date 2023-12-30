@@ -204,7 +204,7 @@ pdfencoding=auto または unicode=true を指定しないとしおりや文書�
 #### polyglossia {#vf242886}
 
 babel の代替として [polyglossia](https://ctan.org/pkg/polyglossia) が公開されています．
-polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live と W32TeX に含まれています．
+polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live に含まれています．
 
 ### 関連リンク {#sf395095}
 
