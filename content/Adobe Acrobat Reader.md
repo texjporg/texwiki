@@ -23,7 +23,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 23.001.20143 以降に更新してください。Adobe Acrobat Reader 23.001.20093 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB23-24）に関する注意喚起](https://www.jpcert.or.jp/at/2023/at230006.html)
+- Adobe Acrobat Reader 23.006.20380 以降に更新してください。Adobe Acrobat Reader 23.006.20360 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB23-54）に関する注意喚起](https://www.jpcert.or.jp/at/2023/at230027.html)
 - Adobe Acrobat Reader Version 2023 (64-bit) の DDE server name は AcroViewA23 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -206,7 +206,7 @@ wine64 cmd /c start Acrobat.exe file.pdf
 
 ### pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合の注意点 {#lff102b3}
 
-TeX Live（win32 版）には Adobe Acrobat Reader で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
+TeX Live（windows 版）には Adobe Acrobat Reader で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
 pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。これらは，Adobe による
 PDF Reader がファイルをロックするので，この状況を少しでも改善するために作成された
 ものです。つまり，
@@ -250,10 +250,10 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader バージョン 2022 (64-bit)
+Windows 版の Adobe Acrobat Reader バージョン 2023 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
-> AcroViewA22
+> AcroViewA23
 
 という1行だけを持ち，ファイル名が
 
@@ -261,13 +261,13 @@ Windows 版の Adobe Acrobat Reader バージョン 2022 (64-bit)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewA22 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewA23 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
 
-AcroViewA22 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+AcroViewA23 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
 
 Windows PowerShell の場合は
 
