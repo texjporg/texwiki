@@ -12,7 +12,7 @@ pukiwiki: "animate"
 [animate](https://github.com/agrahn/animate) は PDF ファイルにアニメーションを付加するためのパッケージです．
 GIF アニメのような動く画像を取り込む際に便利です．
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+[TeX Live](</TeX Live/>) に含まれています．
 
 ### お知らせ {#e30d27ac}
 
