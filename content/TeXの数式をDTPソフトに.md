@@ -114,7 +114,7 @@ EPS にプレビューを付けておけば，配置したときにプレビュ�
 こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
-mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（TeX Live なら “-Pdownload35”，W32TeX なら “-Pdl”）。
+mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に PostScript Level 2 での基本35書体をダウンロードするオプションを付けます（TeX Live なら “-Pdownload35”）。
 
 ## Illustrator に配置 3 (macOS) {#z9ef5010}
 
@@ -247,7 +247,7 @@ jsclasses を使う方法以外に，\scalebox で数式を拡大する方法も
 ### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
 
 [LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](https://sourceforge.net/projects/latexee/) です。
-本来は [MiKTeX](/MiKTeX/) を必要とするソフトウェアですが，MiKTeX の texify.exe の代わりに TeX Live や W32TeX の uplatex.exe を指定すれば MiKTeX がなくても動作します。
+本来は [MiKTeX](/MiKTeX/) を必要とするソフトウェアですが，MiKTeX の texify.exe の代わりに TeX Live の uplatex.exe を指定すれば MiKTeX がなくても動作します。
 PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の背景色が透過されず白地のままであるという注意点があります。
 
 ### 上記以外の方法 {#m911530d}
