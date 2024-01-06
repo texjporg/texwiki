@@ -63,7 +63,6 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2300820458/AcroRdrDCx642300820458_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2300820458/AcroRdrDCx642300820458_ja_JP.exe)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2300820458/AcroRdrDC2300820458_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2300820458/AcroRdrDC2300820458_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
     - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
