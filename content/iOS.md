@@ -30,7 +30,7 @@ Texifier はクラウドタイプセットで日本語の文書をコンパイ�
 
 - [https://www.texifier.com/](https://www.texifier.com/)
     - [https://www.texifier.com/ios](https://www.texifier.com/ios)
-- [https://apps.apple.com/jp/app/texpad-latex-editor/id550419159](https://apps.apple.com/jp/app/texpad-latex-editor/id550419159)
+- [https://apps.apple.com/jp/app/texifier-latex-editor/id550419159](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159)
 - [TeXPadで日本語を扱う方法(iPad , iPhoneでLaTeX)](https://murabitoleg.com/texpad-japanese/)
 
 ### TeX Writer {#q0ac10e0}
