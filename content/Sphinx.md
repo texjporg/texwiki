@@ -23,9 +23,7 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 ### License {#qc08e5c2}
 
-<!-- BSD 2-Clause:https://bitbucket.org/birkenfeld/sphinx/src/tip/LICENSE -->
-
-[BSD 2-Clause](https://github.com/sphinx-doc/sphinx/blob/master/LICENSE)
+[BSD 2-Clause](https://github.com/sphinx-doc/sphinx/blob/master/LICENSE.rst)
 
 ### ChangeLog {#b34742d0}
 
@@ -41,10 +39,9 @@ Sphinx は美しいドキュメントを簡単に作成できるツールです�
 
 #### [Sphinx-Users.jp](http://sphinx-users.jp/) {#j5b51377}
 
-- [Sphinxをはじめよう](http://sphinx-users.jp/gettingstarted/)
+- [Sphinxをはじめよう](https://sphinx-users.jp/gettingstarted/index.html)
     - [Windowsへのインストール](http://sphinx-users.jp/gettingstarted/install_windows.html)
-    - [Windowsへのインストール(スタンドアロンインストール)](http://sphinx-users.jp/gettingstarted/install_windows_standalone.html)
-    - [Mac OS X, Linuxへのインストール](http://sphinx-users.jp/gettingstarted/install_unix.html)
+    - [macOS と Linux(Ubuntu)へのインストール](http://sphinx-users.jp/gettingstarted/install_unix.html)
 - [http://docs.sphinx-users.jp/latest/](http://docs.sphinx-users.jp/latest/)
     - [http://docs.sphinx-users.jp/latest/contents.html](http://docs.sphinx-users.jp/latest/contents.html)
 - [sphinxjp – Bitbucket](https://bitbucket.org/sphinxjp/)
