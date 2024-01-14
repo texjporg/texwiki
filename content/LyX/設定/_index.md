@@ -41,7 +41,7 @@ pukiwiki: "LyX/設定"
 > <br>
 >
 > 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span>[^1]<br>
-> 言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを任意設定に変更し \usepackage{babel} を削除します．<br>
+> 言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを詳細設定に変更し \usepackage{babel} を削除します．<br>
 > 開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
 > 終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
 > 小数点記号の既定値(S): 　　<ins>.</ins><br>
@@ -84,47 +84,26 @@ babel のオプションを設定する場合は以下の方法があります�
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．
 
-jlreq を使用する場合はレイアウトファイルを作成して追加します．
-
-レイアウトファイルは [layouts](http://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [bxjsarticle.layout](http://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/bxjsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．
+レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD) などを参考にして作成すれば OK です．
 
 Format 番号は LyX のバージョンによって異なります．
 
 使用している LyX のバージョンの Format 番号を確認して編集してください．
 
-#### jlreq.layout <a id="jlreq-layout"></a> {#paa8e862}
-
-jlreq.layout ファイルを新規作成して以下の内容を編集します．
-
-```
-#% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass{Requirements for Japanese Text Layout (jlreq)}
-#  \DeclareCategory{Articles}
-# Requirements for Japanese Text Layout textclass definition file.
-
-# This style provides japanese features 
-Format 66
-Provides japanese 1
-
-# Input general definitions
-Input article.layout
-```
-
 #### レイアウトファイルを LyX に追加する {#k55c07b3}
 
 Windows の場合はレイアウトファイルを
 
-- %APPDATA%\LyX2.3\layouts\\
-    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.3\Resources\layouts\ -->
-    <!-- -C:\Program Files (x86)\LyX 2.3\Resources\layouts\ (64-bit Windows の場合) -->
-    <!-- -C:\Program Files\LyX 2.3\Resources\layouts\ (32-bit Windows の場合) -->
+- %APPDATA%\LyX2.4\layouts\\
+    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.4\Resources\layouts\ -->
+    <!-- -C:\Program Files\LyX 2.4\Resources\layouts\ -->
 
 フォルダーにコピーします．
 
 macOS の場合はレイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
-- &#x7e;/Library/Application Support/LyX-2.3/layouts/
+- &#x7e;/Library/Application Support/LyX-2.4/layouts/
 
 フォルダにコピーします．
 
@@ -136,9 +115,7 @@ Linux の場合はレイアウトファイルを
 
 \[ツール(T)\] &gt; \[環境構成(R)\] をクリックして LyX を再起動します．
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[文書クラス\] に
-
-- Requirements for Japanese Text Layout (jlreq)
-
+作成した文書クラス
 が追加されていることを確認します．
 
 ### 言語 {#a5afecd2}
@@ -377,38 +354,19 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-upLaTeX + dvipdfmx で Japanese Article (BXJS Class) を使用する場合は，グラフィックドライバに既定値を指定します．
-upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+文書クラスで Japanese Article (JLReq Class) または Japanese Article (BX Bundle) を選択し，クラスオプションを設定します．
+upLaTeX + dvipdfmx で Japanese Article (JLReq Class) を使用する場合は，クラスオプションに dvipdfmx を設定してグラフィックドライバに既定値を指定します．
+upLaTeX + dvipdfmx で Japanese Article (BX Bundle) を使用する場合は，グラフィックドライバに既定値を指定します．
 設定を反映させるために \[適用(A)\] をクリックします．
 
-■ Japanese Article (BXJS Class) の場合
+■ Japanese Article (JLReq Class) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BXJS Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
->
-> <br>
->
-> 　クラスオプション<br>
-> 　☑事前定義(P):　　<ins>autodetect-engine, dvi=dvipdfmx, ja=standard</ins><br>
-> 　任意設定(T):　　　 <ins>11pt</ins><br>
->
-> <br>
->
-> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
-
-■ Requirements for Japanese Text Layout (jlreq) の場合
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Requirements for Japanese Text Layout (jlreq)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (JLReq Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
@@ -420,21 +378,14 @@ upLaTeX + dvipdfmx で Requirements for Japanese Text Layout (jlreq) を使用�
 >
 > グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-#### LuaLaTeX の場合 {#l1a666c4}
-
-文書クラスで Japanese Article (BXJS Class) または Requirements for Japanese Text Layout (jlreq) を選択し，クラスオプションを設定します．
-LuaLaTeX で Japanese Article (BXJS Class) を使用する場合は，グラフィックドライバに既定値を指定します．
-LuaLaTeX で Requirements for Japanese Text Layout (jlreq) を使用する場合は，グラフィックドライバに既定値を指定します．
-設定を反映させるために \[適用(A)\] をクリックします．
-
-■ Japanese Article (BXJS Class) の場合
+■ Japanese Article (BX Bundle) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BXJS Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BX Bundle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
@@ -446,19 +397,45 @@ LuaLaTeX で Requirements for Japanese Text Layout (jlreq) を使用する場合
 >
 > グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-■ Requirements for Japanese Text Layout (jlreq) の場合
+#### LuaLaTeX の場合 {#l1a666c4}
+
+文書クラスで Japanese Article (JLReq Class) または Japanese Article (BX Bundle) を選択し，クラスオプションを設定します．
+LuaLaTeX で Japanese Article (JLReq Class) を使用する場合は，グラフィックドライバに既定値を指定します．
+LuaLaTeX で Japanese Article (BX Bundle) を使用する場合は，グラフィックドライバに既定値を指定します．
+設定を反映させるために \[適用(A)\] をクリックします．
+
+■ Japanese Article (JLReq Class) の場合
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 　文書クラス(C)<br>
-> 　<span style="color:Black;background-color:#EEEEEE;">\[Requirements for Japanese Text Layout (jlreq)　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (JLReq Class)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
 > 　クラスオプション<br>
 > 　<span style="color:#888888;background-color:#EEEEEE;">☑事前定義(P):</span>　　<span style="color:#888888;background-color:#EEEEEE;">\[事前定義されたオプションがありません\]</span><br>
+> 　任意設定(T):　　　 <ins>11pt</ins><br>
+>
+> <br>
+>
+> グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
+
+■ Japanese Article (BX Bundle) の場合
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 　文書クラス(C)<br>
+> 　<span style="color:Black;background-color:#EEEEEE;">\[Japanese Article (BX Bundle)　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> <br>
+>
+> 　クラスオプション<br>
+> 　☑事前定義(P):　　<ins>autodetect-engine, dvi=dvipdfmx, ja=standard</ins><br>
 > 　任意設定(T):　　　 <ins>11pt</ins><br>
 >
 > <br>
