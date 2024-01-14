@@ -152,12 +152,7 @@ Linux の場合はレイアウトファイルを
 > 　　　　　LaTeXプリアンブル<br>
 
 日本語の文書を作成する場合は，言語を日本語に設定します．
-LaTeX (pLaTeX) で書き出しするときに UTF-8 で出力したい場合は文字コードは 日本語(pLaTeX) (UTF8) を選択します．
-言語に日本語を選択して文字コードに言語既定値を選択した場合は文字コードは JIS (ISO-2022-JP) になります．
 出力した文書が文字化けしてしまう場合は uplatex, bibtexu, upmendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．
-
-LaTeX (pLaTeX) で書き出しすると指定した文字コードで出力されます．
-lyx ファイル自体は常に UTF-8 で保存されます．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -167,12 +162,12 @@ lyx ファイル自体は常に UTF-8 で保存されます．
 > 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
 > 　　　　　　☐動的引用符を使用する(Y)[^11]<br>
 > 文字コード<br>
-> 　◯言語既定値(G)<br>
-> 　🔘その他(R): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+> 　型(T):　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　　　▼\]</span><br>
+> 　類型(V): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
 
 \[適用(A)\] をクリックします．
 
@@ -188,33 +183,12 @@ babel を使用して文書を作成する場合は babel を on にします．
 > 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
 > 　　　　　　☐動的引用符を使用する(Y)<br>
 > 文字コード<br>
-> 　◯言語既定値(G)<br>
-> 　🔘その他(R): <span style="color:Black;background-color:#EEEEEE;">\[日本語(pLaTeX) (UTF8)　　　　　　▼\]</span><br>
+> 　型(T):　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　　　▼\]</span><br>
+> 　類型(V): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　▼\]</span><br>
 >
 > <br>
 >
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>\usepackage\[ngerman,english,japanese\]{babel}</ins> ← 言語パッケージを任意設定に変更し，使用する言語オプションを指定します．<br>
-
-\[適用(A)\] をクリックします．
-
-#### [LuaLaTeX](/LuaTeX/) で文書を作成する場合 {#n7a3be37}
-
-LuaLaTeX で文書を作成する場合は文字コードを ユニコード(XeTeX) (utf8) に設定します．
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
-> 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
-> 　　　　　　☐動的引用符を使用する(Y)<br>
-> 文字コード<br>
-> 　◯言語既定値(G)<br>
-> 　🔘その他(R): <span style="color:Black;background-color:#EEEEEE;">\[ユニコード(XeTeX) (utf8)　　　　　▼\]</span><br>
->
-> <br>
->
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>　<ins>　　　　　　　　　　</ins><br>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>　<ins>\usepackage\[ngerman,english,japanese\]{babel}</ins> ← 言語パッケージを詳細設定に変更し，使用する言語オプションを指定します．<br>
 
 \[適用(A)\] をクリックします．
 
