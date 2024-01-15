@@ -167,7 +167,7 @@ Linux の場合はレイアウトファイルを
 >
 > <br>
 >
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを任意設定に変更し，なにも入力しません．<br>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを詳細設定に変更し，なにも入力しません．<br>
 
 \[適用(A)\] をクリックします．
 
@@ -275,8 +275,7 @@ LuaLaTeX を使用して日本語文書を作成する場合は [LuaTeX-ja](/Lua
 
 #### PDF (dvipdfm) {#lca582a6}
 
-文字コードが 日本語(pLaTeX) の場合は既定値は PDF (dvipdfm) です．
-日本語の文書を作成する場合に，dvipdfmx を使用して PDF ファイルで表示を確認したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．
+dvipdfmx を使用したい場合は，既定出力形式を PDF (dvipdfm) に変更して \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -287,7 +286,6 @@ LuaLaTeX を使用して日本語文書を作成する場合は [LuaTeX-ja](/Lua
 
 #### PDF (LuaTeX) {#g2e3c1cf}
 
-文字コードが ユニコード(XeTeX) (utf8) の場合は既定値は PDF (pdflatex) です．
 LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更して \[適用(A)\] をクリックします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
