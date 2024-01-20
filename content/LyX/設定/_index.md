@@ -40,19 +40,20 @@ pukiwiki: "LyX/設定"
 >
 > <br>
 >
-> 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span>[^1]<br>
-> 言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[任意設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを詳細設定に変更し \usepackage{babel} を削除します．<br>
-> 開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
-> 終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
-> 小数点記号の既定値(S): 　　<ins>.</ins><br>
-> 長さ単位の既定値(U): <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　　　　　　　　　　 ▼\]</span><br>
-> ☐言語を大域的に設定(G)[^6] ← 言語を大域的に設定のチェックをはずします．<br>
-> ☑自動開始(B)[^7]<br>
-> ☑自動終了(E)[^8]<br>
-> ☐外国語をマークする(F)[^9] ← 外国語をマークするのチェックをはずします．<br>
-> 右から左書きの言語をサポート<br>
-> 　☑右横書きサポートを有効化(R)[^10]<br>
-> 　カーソルの動き: 🔘 論理的(L)　◯ 視覚的(V)<br>
+> 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　▼\]</span>[^1]<br>
+> LaTeX言語サポート<br>
+> 　言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを詳細設定に変更し \usepackage{babel} を削除します．<br>
+> 　開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
+> 　終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
+> 　☑言語を大域的に設定(G)[^6]<br>
+> 　☐文書言語を明示的に設定(X)[^7]<br>
+> 　☐文書言語を明示的に解除(U)[^8]<br>
+> エディタの設定<br>
+> 　☑追加言語をマークする(M)[^9]<br>
+> 　右横書きでのカーソルの移動: 🔘 論理的(L)　◯ 視覚的(V)<br>
+> ローカル設定<br>
+> 　小数点記号の既定値(S): <span style="color:Black;background-color:#EEEEEE;">\[言語既定値 ▼\]</span><br>
+> 　長さ単位の既定値(U):　 <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　▼\]</span><br>
 
 \[適用(A)\] &gt; \[保存(S)\] をクリックして設定を反映させます．
 
@@ -84,7 +85,7 @@ babel のオプションを設定する場合は以下の方法があります�
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．
 
-レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD) などを参考にして作成すれば OK です．
+レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD)、[jlreq-common.inc](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-common.inc;hb=HEAD) などを参考にして作成すれば OK です．
 
 Format 番号は LyX のバージョンによって異なります．
 
@@ -139,35 +140,35 @@ Linux の場合はレイアウトファイルを
 > 　　　　　ページ余白<br>
 > 　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　　　</span><br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　　フロートの配置<br>
+> 　　　　　フロートの設定<br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　　形式<br>
+> 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
-日本語の文書を作成する場合は，言語を日本語に設定します．
-出力した文書が文字化けしてしまう場合は uplatex, bibtexu, upmendex で処理する文字コードと出力文字コードが一致しているかどうか確認してください．
+日本語の文書を作成する場合は，類型を 拡張 \[pLaTeX\] (日本語) に設定します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
-> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
 > 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
-> 　　　　　　☐動的引用符を使用する(Y)[^11]<br>
+> 　　　　　　☐動的引用符を使用する(Y)[^10]<br>
 > 文字コード<br>
-> 　型(T):　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　　　▼\]</span><br>
-> 　類型(V): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　▼\]</span><br>
+> 　型(T):　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　▼\]</span><br>
+> 　類型(V):　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[拡張 \[pLaTeX\] (日本語) ▼\]</span> ← 類型を 拡張 \[pLaTeX\] (日本語) に設定します．<br>
 >
 > <br>
 >
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを詳細設定に変更し，なにも入力しません．<br>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^11]　<ins>　　　　　　　　　　</ins>[^12] ← 言語パッケージを詳細設定に変更し，なにも入力しません．<br>
 
 \[適用(A)\] をクリックします．
 
@@ -179,16 +180,37 @@ babel を使用して文書を作成する場合は babel を on にします．
 >
 > <br>
 >
-> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span> ← 言語を日本語に設定します<br>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
 > 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
 > 　　　　　　☐動的引用符を使用する(Y)<br>
 > 文字コード<br>
-> 　型(T):　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　　　▼\]</span><br>
-> 　類型(V): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　▼\]</span><br>
+> 　型(T):　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　▼\]</span><br>
+> 　類型(V):　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[拡張 \[pLaTeX\] (日本語) ▼\]</span><br>
 >
 > <br>
 >
 > 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>　<ins>\usepackage\[ngerman,english,japanese\]{babel}</ins> ← 言語パッケージを詳細設定に変更し，使用する言語オプションを指定します．<br>
+
+\[適用(A)\] をクリックします．
+
+#### [LuaLaTeX](/LuaTeX/) で文書を作成する場合 {#n7a3be37}
+
+LuaLaTeX で文書を作成する場合は類型を 直接 (inputencなし) に設定します．
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
+> 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
+> 　　　　　　☐動的引用符を使用する(Y)<br>
+> 文字コード<br>
+> 　型(T):　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　▼\]</span><br>
+> 　類型(V):　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[直接 (inputencなし) 　 ▼\]</span> ← 類型を 直接 (inputencなし) に設定します．<br>
+>
+> <br>
+>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>　<ins>　　　　　　　　　　</ins><br>
 
 \[適用(A)\] をクリックします．
 
@@ -209,16 +231,17 @@ babel を使用して文書を作成する場合は babel を on にします．
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　　フロートの配置<br>
+> 　　　　　フロートの設定<br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　　形式<br>
+> 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
 文書で使用するフォントを設定します．
@@ -231,22 +254,22 @@ LuaLaTeX を使用して日本語文書を作成する場合は [LuaTeX-ja](/Lua
 >
 > <br>
 >
-> ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^14]<br>
-> 既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^15]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[11　　　　▼\]</span><br>
-> LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^16]<br>
-> ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]<br>
-> サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-> タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-> 数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^20]<br>
-> CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^21]<br>
-> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^22]<br>
-> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^23]<br>
-> 　　　　　　　　　　　　　　　　　　　☐ マイクロタイポグラフィ拡張を有効にする(O)[^24]<br>
-> 　　　　　　　　　　　　　　　　　　　☐ Disallow line breaks after dashes[^25]<br>
+> ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^13]<br>
+> 既定のフォント族(D):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^14]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[11　　　　▼\]</span><br>
+> LaTeXフォントエンコーディング: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^15]<br>
+> ローマン体(R):　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^16]<br>
+> サンセリフ体(S):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^17]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> タイプライタ体(T):　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^18]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> 数式(M):　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^19]<br>
+> CJK:　　　　　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^20]<br>
+> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^21]<br>
+> 　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^22]<br>
+> 　　　　　　　　　　　　　　　　　　　☐ マイクロタイポグラフィ拡張を有効にする(O)[^23]<br>
+> 　　　　　　　　　　　　　　　　　　　☐ Disallow line breaks after dashes[^24]<br>
 
 ### 出力形式 {#pcd2eafa}
 
-\[文書(D)\] &gt; \[設定(S)...\] &gt; \[形式\]
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\]
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
 >
@@ -261,16 +284,17 @@ LuaLaTeX を使用して日本語文書を作成する場合は [LuaTeX-ja](/Lua
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　　フロートの配置<br>
+> 　　　　　フロートの設定<br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　<span style="color:Black;background-color:#DAEAFF;">　形式　　　　　　　　　　</span><br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　出力　　　　　　　　　　</span><br>
 > 　　　　　LaTeXプリアンブル<br>
 
 #### PDF (dvipdfm) {#lca582a6}
@@ -282,7 +306,7 @@ dvipdfmx を使用したい場合は，既定出力形式を PDF (dvipdfm) に�
 > <br>
 >
 > 出力形式<br>
-> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^26]<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^25]<br>
 
 #### PDF (LuaTeX) {#g2e3c1cf}
 
@@ -312,16 +336,17 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　　フロートの配置<br>
+> 　　　　　フロートの設定<br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　　形式<br>
+> 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
@@ -414,11 +439,11 @@ LuaLaTeX で Japanese Article (BX Bundle) を使用する場合は，グラフ�
 >
 > グラフィックドライバ(G):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　▼\]</span><br>
 
-### フロートの配置 {#ofebe217}
+### フロートの設定 {#ofebe217}
 
 図や表を使用する場合は
 
-\[文書(D)\] &gt; \[設定(S)...\] &gt; \[フロートの配置\] で設定可能です．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[フロートの設定\] で設定可能です．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
 >
@@ -433,16 +458,17 @@ LuaLaTeX で Japanese Article (BX Bundle) を使用する場合は，グラフ�
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　<span style="color:Black;background-color:#DAEAFF;">　フロートの配置　　　　</span><br>
+> 　　　　<span style="color:Black;background-color:#DAEAFF;">　フロートの設定　　　　</span><br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　　形式<br>
+> 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
 > ☐ 既定の配置を使用する(D) ← チェックをはずす<br>
@@ -473,16 +499,17 @@ LuaLaTeX で Japanese Article (BX Bundle) を使用する場合は，グラフ�
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
 > 　　　　　色<br>
+> 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
 > 　　　　　索引<br>
 > 　　　　　PDF特性<br>
 > 　　　　　数式オプション<br>
-> 　　　　　フロートの配置<br>
+> 　　　　　フロートの設定<br>
 > 　　　　　プログラムリスト<br>
 > 　　　　　ブリット<br>
 > 　　　　　派生枝<br>
-> 　　　　　形式<br>
+> 　　　　　出力<br>
 > 　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeXプリアンブル　　</span><br>
 
 upLaTeX + dvipdfmx あるいは LuaLaTeX で文書のプロパティのタイトル・作成者・サブタイトル・キーワードを作成したい場合は LaTeXプリアンブルで
@@ -546,24 +573,23 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 [^3]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
 [^4]: 外国語への切替を開始するLaTeXコマンド
 [^5]: 外国語への切替を終了させるLaTeXコマンド。
-[^6]: 言語を大域的に (文書クラスに) 渡して局所的に (言語パッケージに) は渡さない場合にチェックします
-[^7]: 有効にすると、言語切替コマンドで明示的に文書言語を設定することをしないようにします
-[^8]: 有効にすると、言語切替コマンドで文書言語を明示的に閉じることをしないようにします
-[^9]: 作業領域で外国語を視覚的にハイライトする時にチェックしてください
-[^10]: 右から左へ書く言語 (ヘブライ語、アラビア語など) をサポートするときに選択してください。
-[^11]: 上で選択した様式に自動的に適応した引用符を出力します．これを選択しない場合には，引用符は挿入されたときの様式を維持します．
-[^12]: どの言語パッケージをLyXが使うべきか選択してください
-[^13]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
-[^14]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
-[^15]: 文書の既定フォント族を選択してください
-[^16]: フォントエンコーディングを指定します (例: T1)。
-[^17]: ローマン (セリフ) 体の書体を選んでください
-[^18]: サンセリフ (グロテスク) 体の書体を選んでください
-[^19]: タイプライタ (等間隔) 体の書体を選んでください
-[^20]: 数式の書体を選んでください
-[^21]: 日中韓 (CJK) で文字で使用するフォントを入力してください
-[^22]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
-[^23]: ライニング数字ではなくオールドスタイル数字を使用する
-[^24]: microtypeパッケージを使用したぶら下げやフォント拡大などの拡張を有効にします
-[^25]: By default, a line break can occur en- and em-dashes. Checking this box prevents that.
-[^26]: 既定の用紙寸法を指定してください(表示・更新用) 
+[^6]: 有効にすると、言語を局所的に (言語パッケージに) は渡さずに、大域的に (文書クラスに) 渡すようになり、使用言語がほかのパッケージにも知れ渡るようになります．
+[^7]: 有効にすると、文書言語は、言語切替コマンドで明示的に設定されるようになります
+[^8]: 有効にすると、文書言語は、言語切替コマンドで明示的に閉じるようになります
+[^9]: 有効にすると、作業領域で (文書言語でない) 追加言語を視覚的にハイライトするようになります
+[^10]: 上で選択した様式に自動的に適応した引用符を出力します．これを選択しない場合には，引用符は挿入されたときの様式を維持します．
+[^11]: どの言語パッケージをLyXが使うべきか選択してください
+[^12]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
+[^13]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
+[^14]: 文書の既定フォント族を選択してください
+[^15]: フォントエンコーディングを指定します (例: T1)。
+[^16]: ローマン (セリフ) 体の書体を選んでください
+[^17]: サンセリフ (グロテスク) 体の書体を選んでください
+[^18]: タイプライタ (等間隔) 体の書体を選んでください
+[^19]: 数式の書体を選んでください
+[^20]: 日中韓 (CJK) で文字で使用するフォントを入力してください
+[^21]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
+[^22]: ライニング数字ではなくオールドスタイル数字を使用する
+[^23]: microtypeパッケージを使用したぶら下げやフォント拡大などの拡張を有効にします
+[^24]: By default, a line break can occur en- and em-dashes. Checking this box prevents that.
+[^25]: 既定の用紙寸法を指定してください(表示・更新用) 
