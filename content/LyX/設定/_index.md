@@ -16,96 +16,6 @@ pukiwiki: "LyX/設定"
 
 ## 設定 {#d6c4c951}
 
-### 言語 {#j97f863b}
-
-#### 日本語の文書を作成する場合 {#v60a198e}
-
-日本語の文書を作成する場合は babel を off にします．
-
-\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[言語設定\] &gt; \[言語\]
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
->
-> 　　　　　　▷　操作性<br>
-> 　　　　　　▷　編集<br>
-> 　　　　　　 　 パス<br>
-> 　　　　　　 　 利用者情報<br>
-> 　　　　　　◢　言語設定<br>
-> 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　</span><br>
-> 　　　　　　　　　　スペルチェッカー<br>
-> 　　　　　　▷　出力<br>
-> 　　　　　　▷　ファイル処理<br>
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　▼\]</span>[^1]<br>
-> LaTeX言語サポート<br>
-> 　言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^2]　<ins>　　　　　　　　　　</ins>[^3] ← 言語パッケージを詳細設定に変更し \usepackage{babel} を削除します．<br>
-> 　開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^4] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
-> 　終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^5]<br>
-> 　☐言語を大域的に設定(G)[^6] ← 言語を大域的に設定のチェックをはずします．<br>
-> 　☐文書言語を明示的に設定(X)[^7]<br>
-> 　☐文書言語を明示的に解除(U)[^8]<br>
-> エディタの設定<br>
-> 　☑追加言語をマークする(M)[^9]<br>
-> 　右横書きでのカーソルの移動: 🔘 論理的(L)　◯ 視覚的(V)<br>
-> ローカル設定<br>
-> 　小数点記号の既定値(S): <span style="color:Black;background-color:#EEEEEE;">\[言語既定値 ▼\]</span><br>
-> 　長さ単位の既定値(U):　 <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　▼\]</span><br>
-
-#### babel を使用して文書を作成する場合 {#j34bc968}
-
-babel を使用して文書を作成する場合は babel を on にします．
-
-babel のオプションを設定する場合は以下の方法があります．
-
-- クラスオプションでグローバルに設定する
-- babel のオプションでローカルに設定する
-
-### LaTeX {#m41cae1f}
-
-\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[出力\] &gt; \[LaTeX\]
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
->
-> <br>
->
-> 　　　　　　▷　操作性<br>
-> 　　　　　　▷　編集<br>
-> 　　　　　　 　 パス<br>
-> 　　　　　　 　 利用者情報<br>
-> 　　　　　　▷　言語設定<br>
-> 　　　　　　◢　出力<br>
-> 　　　　　　　　　　一般<br>
-> 　　　　　　　　　　プリンタ<br>
-> 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX　　　　　　　</span><br>
-> 　　　　　　▷　ファイル処理<br>
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> ☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^10] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
-> DVIビューア用紙寸法設定:　　[^11]<br>
-> 書誌情報の生成<br>
-> &nbsp;処理プログラム(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;コマンド(O):　　　　　<ins>bibtexu</ins>[^12]<br>
-> &nbsp;日本語用処理プログラム(J):　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> &nbsp;コマンド(M):　　　　　<ins>bibtexu</ins>[^13]<br>
-> 索引の生成<br>
-> &nbsp;処理プログラム(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　▼\]</span><br>
-> &nbsp;コマンド(M):　　　　　<ins>upmendex -c -q</ins>[^14]<br>
-> &nbsp;日本語用処理プログラム(J):　<ins>upmendex -c -q</ins>[^15]<br>
->
-> <br>
->
-> &nbsp;用語集コマンド(N):　<ins>upmendex -s nomencl.ist</ins>[^16]<br>
-> &nbsp;CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^17]<br>
-> &nbsp;☑ LaTeXファイルでWindows流のパス表記を使う(U)[^18]<br>
-> &nbsp;☐ 文書クラス変更時にクラスオプションをリセットする(E)[^19]<br>
-
 ### 変換子 {#l23ec9b3}
 
 \[ツール(T)\] &gt; \[設定(P)...\] &gt; \[ファイル処理\] &gt; \[変換子\]
@@ -124,25 +34,9 @@ babel のオプションを設定する場合は以下の方法があります�
 > 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　変換子　　　　　　</span><br>
 > 　　　　　　　　　　ファイル形式<br>
 
-#### LaTeX (plain) -> LyX {#tcc5ab59}
-
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
->
-> <br>
->
-> 変換子の定義(N)<br>
-> <span style="color:Black;background-color:#DAEAFF;">LaTeX (plain) -> LyX　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
->
-> ...<br>
-> 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
-> <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (plain)　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[LyX　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
->
-> 変換子(O):　　　<ins>tex2lyx -e utf8 -f $$i $$o</ins><br>
-> 追加フラグ(X):<br>
-
 #### LaTeX (pLaTeX) -> DVI {#p0550e68}
 
-upLaTeX を使用して文書を作成する場合は platex を uplatex に変更します．
+初期設定では platex が設定されているので uplatex に変更します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -190,6 +84,116 @@ upLaTeX を使用して文書を作成する場合は platex を uplatex に変�
 > 変換子(O):　　　<ins>lualatex -synctex=1</ins><br>
 > 追加フラグ(X):　<ins>latex=lualatex</ins><br>
 
+#### LaTeX (plain) -> LyX {#tcc5ab59}
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 変換子の定義(N)<br>
+> <span style="color:Black;background-color:#DAEAFF;">LaTeX (plain) -> LyX　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+>
+> ...<br>
+> 変換元の形式(F):　　　　　　　　　　　　　　　　　　変換先の形式(T):<br>
+> <span style="color:Black;background-color:#EEEEEE;">\[LaTeX (plain)　　　　　　　　　　　　　　　　　▼\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[LyX　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
+>
+> 変換子(O):　　　<ins>tex2lyx -e utf8 -f $$i $$o</ins><br>
+> 追加フラグ(X):<br>
+
+### LaTeX {#m41cae1f}
+
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[出力\] &gt; \[LaTeX\]
+
+書誌情報の生成の処理プログラムのコマンドを bibtexu に設定します。
+
+索引の生成の処理プログラムのコマンドを upmendex に設定します。
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> <br>
+>
+> 　　　　　　▷　操作性<br>
+> 　　　　　　▷　編集<br>
+> 　　　　　　 　 パス<br>
+> 　　　　　　 　 利用者情報<br>
+> 　　　　　　▷　言語設定<br>
+> 　　　　　　◢　出力<br>
+> 　　　　　　　　　　一般<br>
+> 　　　　　　　　　　プリンタ<br>
+> 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX　　　　　　　</span><br>
+> 　　　　　　▷　ファイル処理<br>
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> ☑ LaTeXフォントエンコーディング:　　<ins>T1</ins>[^1] ← デフォルトでは \usepackage\[T1\]{fontenc} がプリアンブルに追加されます．<br> <!-- 既定の用紙寸法(Z):　　　　　　&color(Black,#EEEEEE){[既定値　　　　　　　　　　　　▼]};&br; -->
+> DVIビューア用紙寸法設定:　　[^2]<br>
+> 書誌情報の生成<br>
+> &nbsp;処理プログラム(R):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;コマンド(O):　　　　　<ins>bibtexu</ins>[^3]<br>
+> &nbsp;日本語用処理プログラム(J):　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　　 ▼\]</span><br>
+> &nbsp;コマンド(M):　　　　　<ins>bibtexu</ins>[^4]<br>
+> 索引の生成<br>
+> &nbsp;処理プログラム(P):　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[詳細設定　　　　　　　　　　　　　　　　　▼\]</span><br>
+> &nbsp;コマンド(M):　　　　　<ins>upmendex -c -q</ins>[^5]<br>
+> &nbsp;日本語用処理プログラム(J):　<ins>upmendex -c -q</ins>[^6]<br>
+>
+> <br>
+>
+> &nbsp;用語集コマンド(N):　<ins>upmendex -s nomencl.ist</ins>[^7]<br>
+> &nbsp;CheckTeXコマンド:　<ins>chktex -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</ins>[^8]<br>
+> &nbsp;☑ LaTeXファイルでWindows流のパス表記を使う(U)[^9]<br>
+> &nbsp;☐ 文書クラス変更時にクラスオプションをリセットする(E)[^10]<br>
+
+### 言語 {#j97f863b}
+
+#### upLaTeX で日本語の文書を作成する場合 {#v60a198e}
+
+upLaTeX で日本語の文書を作成する場合は babel を無効にします．
+
+\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[言語設定\] &gt; \[言語\]
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span>　　　　　　　　　　　　　　　　　　</ins></span><br>
+>
+> 　　　　　　▷　操作性<br>
+> 　　　　　　▷　編集<br>
+> 　　　　　　 　 パス<br>
+> 　　　　　　 　 利用者情報<br>
+> 　　　　　　◢　言語設定<br>
+> 　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　</span><br>
+> 　　　　　　　　　　スペルチェッカー<br>
+> 　　　　　　▷　出力<br>
+> 　　　　　　▷　ファイル処理<br>
+
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+>
+> <br>
+>
+> 操作画面用言語(I): <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　▼\]</span>[^11]<br>
+> LaTeX言語サポート<br>
+> 　言語パッケージ(P): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^12]　<ins>　　　　　　　　　　</ins>[^13] ← 言語パッケージを詳細設定に変更し \usepackage{babel} を削除します．<br>
+> 　開始コマンド(T): 　　<ins>　　　　　　　　　　</ins>[^14] ← 開始コマンドの \selectlanguage{$$lang} を削除します．<br>
+> 　終了コマンド(N): 　　<ins>　　　　　　　　　　</ins>[^15]<br>
+> 　☐言語を大域的に設定(G)[^16] ← 言語を大域的に設定のチェックをはずします．<br>
+> 　☐文書言語を明示的に設定(X)[^17]<br>
+> 　☐文書言語を明示的に解除(U)[^18]<br>
+> エディタの設定<br>
+> 　☑追加言語をマークする(M)[^19]<br>
+> 　右横書きでのカーソルの移動[^20]: 🔘 論理的(L)　◯ 視覚的(V)<br>
+> ローカル設定<br>
+> 　小数点記号の既定値(S): <span style="color:Black;background-color:#EEEEEE;">\[言語既定値 ▼\]</span><br>
+> 　長さ単位の既定値(U):　 <span style="color:Black;background-color:#EEEEEE;">\[cm　　　　▼\]</span><br>
+
+#### upLaTeX で babel を使用して多言語文書を作成する場合 {#j34bc968}
+
+babel を使用して多言語文書を作成する場合は babel を有効にします．
+
+babel のオプションを設定する場合は以下の方法があります．
+
+- クラスオプションでグローバルに設定する (\[ツール(T)\] &gt; \[設定(P)...\] &gt; \[言語設定\] &gt; \[言語\])
+- babel のオプションでローカルに設定する (\[文書(D)\] &gt; \[設定(S)...\] &gt; \[言語\])
+
 ### ファイル形式, 順検索 (forward search) {#o4630905}
 
 {{< children >}}
@@ -209,7 +213,7 @@ upLaTeX を使用して文書を作成する場合は platex を uplatex に変�
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．
 
-レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD)、[jlreq-common.inc](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-common.inc;hb=HEAD) などを参考にして作成すれば OK です．
+レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD)、[jlreq-common.inc](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-common.inc;hb=HEAD)、[bxjsarticle.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/bxjsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．
 
 Format 番号は LyX のバージョンによって異なります．
 
@@ -245,9 +249,9 @@ Linux の場合はレイアウトファイルを
 
 ### 言語 {#a5afecd2}
 
-#### 日本語の文書を作成する場合 {#ea058295}
+#### upLaTeX で日本語の文書を作成する場合 {#ea058295}
 
-日本語の文書を作成する場合は babel を off にします．
+upLaTeX で日本語の文書を作成する場合は babel を無効にします．
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[言語\]
 
@@ -277,7 +281,7 @@ Linux の場合はレイアウトファイルを
 > 　　　　　出力<br>
 > 　　　　　LaTeXプリアンブル<br>
 
-日本語の文書を作成する場合は，文字コードの類型を 拡張 \[pLaTeX\] (日本語) に設定します．
+upLaTeX で日本語の文書を作成する場合は，文字コードの類型を 拡張 \[pLaTeX\] (日本語) に設定します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -285,18 +289,18 @@ Linux の場合はレイアウトファイルを
 >
 > 言語(L): 　　　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　　▼\]</span><br>
 > 引用様式(Q): <span style="color:Black;background-color:#EEEEEE;">\[「外側」および『内側』（言語既定値） ▼\]</span><br>
-> 　　　　　　☐動的引用符を使用する(Y)[^20]<br>
+> 　　　　　　☐動的引用符を使用する(Y)[^21]<br>
 > 文字コード<br>
 > 　型(T):　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[Unicode (utf8)　　　　▼\]</span><br>
 > 　類型(V):　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[拡張 \[pLaTeX\] (日本語) ▼\]</span> ← 類型を 拡張 \[pLaTeX\] (日本語) に設定します．<br>
 >
 > <br>
 >
-> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^21]　<ins>　　　　　　　　　　</ins>[^22] ← 言語パッケージを詳細設定に変更し，なにも入力しません．<br>
+> 言語パッケージ(C): <span style="color:Black;background-color:#EEEEEE;">\[詳細設定　▼\]</span>[^22]　<ins>　　　　　　　　　　</ins>[^23] ← 言語パッケージを詳細設定に変更し，なにも入力しません．<br>
 
-#### babel を使用して文書を作成する場合 {#ca4fc5c1}
+#### upLaTeX で babel を使用して多言語文書を作成する場合 {#ca4fc5c1}
 
-babel を使用して文書を作成する場合は babel を on にします．
+upLaTeX で babel を使用して文書を作成する場合は babel を有効にします．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -371,21 +375,21 @@ LuaLaTeX を使用して日本語文書を作成する場合は LaTeXプリア�
 >
 > <br>
 >
-> ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^23]<br>
-> 既定のフォント族(D):　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^24]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[11　　　　▼\]</span><br>
-> LaTeXフォント符号化方式: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^25]<br>
-> ローマン体(R):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^26]　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^27]<br>
-> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^28]<br>
-> サンセリフ体(S):　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^29]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(Y)</span>[^30]<br>
-> タイプライタ体(T):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^31]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
-> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(F)</span>[^32]<br>
-> 数式(M):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^33]<br>
-> CJK:　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^34]<br>
-> ☐ マイクロタイポグラフィ拡張を有効にする(O)[^35]<br>
-> ☐ ダッシュ後の改行を不許可(I)[^36]<br>
+> ☐ 非TeXフォントを使用（XeTeX/LuaTeX経由）(U)[^24]<br>
+> 既定のフォント族(D):　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^25]　基本寸法(B):<span style="color:Black;background-color:#EEEEEE;">\[11　　　　▼\]</span><br>
+> LaTeXフォント符号化方式: <span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>　<ins>　　　　　　　　　　　　</ins>[^26]<br>
+> ローマン体(R):　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^27]　<span style="color:#888888;background-color:#EEEEEE;">☐ 真のスモールキャップ体を使う(M)</span>[^28]<br>
+> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(O)</span>[^29]<br>
+> サンセリフ体(S):　　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^30]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(C) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(Y)</span>[^31]<br>
+> タイプライタ体(T):　　　　<span style="color:Black;background-color:#EEEEEE;">\[既定値　　　　　　　　　　　　　　　　　　　　▼\]</span>[^32]　<span style="color:#888888;background-color:#EEEEEE;">縮尺(A) (%): <ins>100　　　\[<strong>⇕</strong>\]</ins></span><br>
+> 　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">☐ オールドスタイル数字を使う(F)</span>[^33]<br>
+> 数式(M):　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[自動　　　　　　　　　　　　　　　　　　　　　▼\]</span>[^34]<br>
+> CJK:　　　　　　　　　　　<ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　</ins>[^35]<br>
+> ☐ マイクロタイポグラフィ拡張を有効にする(O)[^36]<br>
+> ☐ ダッシュ後の改行を不許可(I)[^37]<br>
 
-### 出力形式 {#pcd2eafa}
+### 出力 {#pcd2eafa}
 
 \[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\]
 
@@ -417,18 +421,18 @@ LuaLaTeX を使用して日本語文書を作成する場合は LaTeXプリア�
 
 #### PDF (dvipdfm) {#lca582a6}
 
-dvipdfmx を使用したい場合は，既定出力形式を PDF (dvipdfm) に変更します．
+upLaTeX + dvipdfmx の場合は，既定出力形式を PDF (dvipdfm) に変更します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <br>
 >
 > 出力形式<br>
-> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^37]<br>
+> 　既定出力形式(F):　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[PDF (dvipdfm)　　　　　　　　　　　　　　　　　　　　▼\]</span>[^38]<br>
 
 #### PDF (LuaTeX) {#g2e3c1cf}
 
-LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変更します．
+LuaLaTeX の場合は，既定出力形式を PDF (LuaTeX) に変更します．
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 文書の設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -469,7 +473,7 @@ LuaLaTeX を使用したい場合は，既定出力形式を PDF (LuaTeX) に変
 
 #### upLaTeX + dvipdfmx の場合 {#ica39b31}
 
-文書クラスで 日本語Article (JLReqクラス) または Japanese Article (BXシリーズ) を選択し，クラスオプションを設定します．
+文書クラスで 日本語Article (JLReqクラス) または 日本語Article (BXシリーズ) を選択し，クラスオプションを設定します．
 upLaTeX + dvipdfmx で 日本語Article (JLReqクラス) を使用する場合は，クラスオプションに uplatex,dvipdfmx を設定してグラフィックドライバに既定値を指定します．
 upLaTeX + dvipdfmx で 日本語Article (BXシリーズ) を使用する場合は，グラフィックドライバに既定値を指定します．
 
@@ -516,7 +520,6 @@ upLaTeX + dvipdfmx で 日本語Article (BXシリーズ) を使用する場合�
 文書クラスで 日本語Article (JLReqクラス) または 日本語Article (BXシリーズ) を選択し，クラスオプションを設定します．
 LuaLaTeX で 日本語Article (JLReqクラス) を使用する場合は，グラフィックドライバに既定値を指定します．
 LuaLaTeX で 日本語Article (BXシリーズ) を使用する場合は，グラフィックドライバに既定値を指定します．
-設定を反映させるために \[適用(A)\] をクリックします．
 
 ■ 日本語Article (JLReqクラス) の場合
 
@@ -648,9 +651,6 @@ upLaTeX + dvipdfmx あるいは LuaLaTeX で文書のプロパティのタイト
 >   \ifxetex
 >     \usepackage{hyperref}
 >     \usepackage{zxjatype}
->     \setjamainfont{ipaexm.ttf}
->     \setjasansfont{ipaexg.ttf}
->     \setjamonofont{ipaexg.ttf}
 >   \else
 >     \usepackage[dvipdfmx]{hyperref}
 >     \usepackage{pxjahyper}
@@ -685,40 +685,41 @@ LaTeXプリアンブルで [hyperref](/hyperref/) パッケージを読み込ん
 - [LyXとInkscapeを連携させる](http://shogo82148.hatenablog.com/entry/20100521/1274429760)
 - [LyX wiki | Tips / UseInkscapeSVGImages](http://wiki.lyx.org/Tips/UseInkscapeSVGImages)
 
-[^1]: 操作画面 (メニューやダイアログなど) 用言語を選択してください。
-[^2]: どの言語パッケージをLyXが使うべきか選択してください
-[^3]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
-[^4]: 外国語への切替を開始するLaTeXコマンド
-[^5]: 外国語への切替を終了させるLaTeXコマンド。
-[^6]: 有効にすると、言語を局所的に (言語パッケージに) は渡さずに、大域的に (文書クラスに) 渡すようになり、使用言語がほかのパッケージにも知れ渡るようになります．
-[^7]: 有効にすると、文書言語は、言語切替コマンドで明示的に設定されるようになります
-[^8]: 有効にすると、文書言語は、言語切替コマンドで明示的に閉じるようになります
-[^9]: 有効にすると、作業領域で (文書言語でない) 追加言語を視覚的にハイライトするようになります
-[^10]: フォントエンコーディングを指定します (例: T1)。
-[^11]: 特定のDVIビューアが使う用紙寸法フラグを設定(-paper) 
-[^12]: BibTeXコマンドとオプション
-[^13]: pLaTeX(日本語)使用時のBibTeXコマンドとオプション
-[^14]: 索引コマンドとオプション(makeindex, xindy) 
-[^15]: pLaTeX(日本語)使用時の索引コマンドとオプション
-[^16]: 用語集コマンドとオプション(通常makeindex) 
-[^17]: CheckTeX開始コマンドとオプション
-[^18]: Select whether LyX should output Windows or Cygwin style paths to LaTeX files. Don't change the default unless the TeX engine was not correctly detected at configure time. Warning: Your changes here will not be saved.
-[^19]: クラスが変更された時にクラスオプションを既定値にする
-[^20]: 上で選択した様式に自動的に適応した引用符を出力します．これを選択しない場合には，引用符は挿入されたときの様式を維持します．
-[^21]: どの言語パッケージをLyXが使うべきか選択してください
-[^22]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
-[^23]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
-[^24]: 文書の既定フォント族を選択してください
-[^25]: フォントエンコーディングを指定します (例: T1)。
-[^26]: ローマン (セリフ) 体の書体を選んでください
-[^27]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
-[^28]: ライニング数字ではなくオールドスタイル数字を使用する
-[^29]: サンセリフ (グロテスク) 体の書体を選んでください
-[^30]: ライニング数字ではなくオールドスタイル数字を使用する
-[^31]: タイプライタ (等間隔) 体の書体を選んでください
-[^32]: ライニング数字ではなくオールドスタイル数字を使用する
-[^33]: 数式の書体を選んでください
-[^34]: 日中韓 (CJK) で文字で使用するフォントを入力してください
-[^35]: microtypeパッケージを使用したぶら下げやフォント拡大などの拡張を有効にします
-[^36]: By default, a line break can occur en- and em-dashes. Checking this box prevents that.
-[^37]: 既定の用紙寸法を指定してください(表示・更新用) 
+[^1]: フォントエンコーディングを指定します (例: T1)。
+[^2]: 特定のDVIビューアが使う用紙寸法フラグを設定(-paper) 
+[^3]: BibTeXコマンドとオプション
+[^4]: pLaTeX(日本語)使用時のBibTeXコマンドとオプション
+[^5]: 索引コマンドとオプション(makeindex, xindy) 
+[^6]: pLaTeX(日本語)使用時の索引コマンドとオプション
+[^7]: 用語集コマンドとオプション(通常makeindex) 
+[^8]: CheckTeX開始コマンドとオプション
+[^9]: Select whether LyX should output Windows or Cygwin style paths to LaTeX files. Don't change the default unless the TeX engine was not correctly detected at configure time. Warning: Your changes here will not be saved.
+[^10]: クラスが変更された時にクラスオプションを既定値にする
+[^11]: 操作画面 (メニューやダイアログなど) 用言語を選択してください。
+[^12]: どの (LaTeX) 言語パッケージを既定として使うべきか選択してください
+[^13]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
+[^14]: 別の言語への切替を開始するLaTeXコマンドです。$$langは実際の言語名に置き換えられます。
+[^15]: 別の言語への切替を終了するLaTeXコマンドです。$$langは実際の言語名に置き換えられます。
+[^16]: 有効にすると、言語を局所的に (言語パッケージに) は渡さずに、大域的に (文書クラスに) 渡すようになり、使用言語が他のパッケージにも知れ渡るようになります。
+[^17]: 有効にすると、文書言語は、言語切替コマンドで明示的に設定されるようになります
+[^18]: 有効にすると、文書言語は、言語切替コマンドで明示的に閉じるようになります
+[^19]: 有効にすると、作業領域で (文書言語でない) 追加言語を視覚的にハイライトするようになります
+[^20]: 右横書き (RTL) のスクリプトにおける矢印キーの挙動をここで指定します
+[^21]: 上で選択した様式に自動的に適応した引用符を出力します．これを選択しない場合には，引用符は挿入されたときの様式を維持します．
+[^22]: どの言語パッケージをLyXが使うべきか選択してください
+[^23]: 言語パッケージを読み込むコマンドを入力してください (既定値：\usepackage{babel}) 
+[^24]: fontspecパッケージを使用して、OpenTypeやTrueTypeフォントを使用する (要XeTeXないしLuaTeX) 
+[^25]: 文書の既定フォント族を選択してください
+[^26]: フォントエンコーディングを指定します (例: T1)。
+[^27]: ローマン (セリフ) 体の書体を選んでください
+[^28]: フォントが提供していれば、擬似でないスモールキャップ体を使用する
+[^29]: ライニング数字ではなくオールドスタイル数字を使用する
+[^30]: サンセリフ (グロテスク) 体の書体を選んでください
+[^31]: ライニング数字ではなくオールドスタイル数字を使用する
+[^32]: タイプライタ (等間隔) 体の書体を選んでください
+[^33]: ライニング数字ではなくオールドスタイル数字を使用する
+[^34]: 数式の書体を選んでください
+[^35]: 日中韓 (CJK) で文字で使用するフォントを入力してください
+[^36]: microtypeパッケージを使用したぶら下げやフォント拡大などの拡張を有効にします
+[^37]: By default, a line break can occur en- and em-dashes. Checking this box prevents that.
+[^38]: 既定の用紙寸法を指定してください(表示・更新用) 
