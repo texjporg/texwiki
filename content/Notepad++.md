@@ -27,9 +27,7 @@ Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です．
 をサポートしています．
 
 - [Notepad++ 公式サイト](https://notepad-plus-plus.org/)
-    - [https://notepad-plus-plus.org/repository/](https://notepad-plus-plus.org/repository/)
     - [Download](https://notepad-plus-plus.org/download/)
-    - [Contributors](https://notepad-plus-plus.org/contributors/)
     - [twitter](https://twitter.com/notepad_plus)
     - [facebook](https://www.facebook.com/Notepad.plus.plus)
 - [Notepad++ 開発サイト](https://github.com/notepad-plus-plus/notepad-plus-plus)
