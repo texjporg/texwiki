@@ -9,18 +9,16 @@ pukiwiki: "MSYS2"
 
 ## MSYS2 {#x1532c23}
 
-MSYS2 は [MSYS](http://www.mingw.org/wiki/MSYS) を改良して機能を強化したものです．
+MSYS2 は [MSYS](https://ja.wikipedia.org/wiki/MSYS) を改良して機能を強化したものです．
 [Arch Linux](</Linux/Arch Linux/>) の標準パッケージマネージャーである pacman を使用してパッケージ管理ができます．
 
 - [https://www.msys2.org/](https://www.msys2.org/)
 - [https://github.com/msys2](https://github.com/msys2)
-- [https://sourceforge.net/projects/msys2/](https://sourceforge.net/projects/msys2/)
 - [https://github.com/Alexpux/MSYS2-packages](https://github.com/Alexpux/MSYS2-packages)
 
 ### Installing MSYS2 {#sb6496d0}
 
 - [https://www.msys2.org/](https://www.msys2.org/)
-- [https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/](https://sourceforge.net/p/msys2/wiki/MSYS2%20installation/)
 
 ### LANG {#w1a07eeb}
 
