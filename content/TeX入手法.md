@@ -59,7 +59,6 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
 
 インストールせずに Web で試してみることもできます．
 
-- [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 - [TeX を Web で](</TeXをWebで/>)
 
 ### インストール時のよくあるトラブル・勘違い {#l1a033e5}
