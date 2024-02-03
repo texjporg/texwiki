@@ -22,7 +22,7 @@ Skim は PDF ビューアです．
 
 ### 動作環境 {#rb90213b}
 
-macOS
+macOS High Sierra 10.13 以降
 
 ### License {#o9f5d76f}
 
