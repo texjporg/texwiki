@@ -21,13 +21,9 @@ pukiwiki: "TeXをWebで"
 
 - [Overleaf](https://github.com/overleaf/overleaf)（旧 writeLaTeX）
 - [CoCalc](https://github.com/sagemathinc/cocalc)
-- [JaxEdit](https://github.com/zohooo/jaxedit)
-- [texlive.js](https://github.com/manuels/texlive.js/)
-- [NoTex.ch](https://github.com/hsk81/notex-v2.0)
 
 #### フリーウェア（無料） {#e0fded48}
 
-- [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [Mathcha](https://www.mathcha.io/)
 
@@ -47,7 +43,7 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 
 ## TeX を Web 上で提供する方法 {#xdac6c3a}
 
-[TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/) のように，TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します．
+Web 上で TeX 形式で文章を打ち込めば PDF でダウンロードできるサービスを提供するための方法を解説します．
 ぜひ各組織でこのようなサービスを立ち上げていただければ幸いです．
 
 ### 準備 {#y7017653}
@@ -126,8 +122,8 @@ shell_escape = f の場合は shell_escape_commannds = に列挙してあるコ�
 
 この中に次の二つのファイルを置きます．
 
-- [index.php](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/index_php.txt)
-- [do.php](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/do_php.txt)
+- [index.php](https://web.archive.org/web/20220614152423/https://oku.edu.mie-u.ac.jp/~okumura/texonweb/index_php.txt)
+- [do.php](https://web.archive.org/web/20220614152422/https://oku.edu.mie-u.ac.jp/~okumura/texonweb/do_php.txt)
 
 また，空のファイル count.txt と空のディレクトリ work を作ります．
 これらは Apache のプロセスに書き込みができるようにします（ファイルは 666，ディレクトリは 777 にすればいいでしょう）．
