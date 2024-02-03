@@ -47,7 +47,7 @@ tpic 拡張機能は [dvips](/dvips/), [dvipdfm(x)](/dvipdfmx/), [dviout](/dviou
 
 tpic specials を半 WYSIWYG で作成するツールに，[WinTpic](http://aogaeru-lab.my.coocan.jp/sub1.html) があります．
 
-- 参考：[WinTpic - LaTeX](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/etc011.html)
+- 参考：[WinTpic: LaTeX](http://xyoshiki.web.fc2.com/tex/etc011.html)
 
 #### [Tpic --- 線画を描く4つの方法](http://konoyonohana.blog.fc2.com/blog-entry-127.html) {#v16a4aa2}
 
@@ -118,8 +118,8 @@ KETpic とは，数式処理システム (Computer algebra system; CAS)
 現在 Maple 版と Mathematica 版，Maxima 版，Scilab 版があります．
 CAS の出力図を tpic 形式に変換して TeX の picture 環境に埋め込みます．
 
-- [KETpic で楽々 TeX グラフ](https://oku.edu.mie-u.ac.jp/texconf11/presentations/yamashita.pdf)
-- [KETpic の使い方](https://oku.edu.mie-u.ac.jp/texconf10/presentations/yamashita.pdf)
+- [KETpic で楽々 TeX グラフ](https://okumuralab.org/texconf11/presentations/yamashita.pdf)
+- [KETpic の使い方](https://okumuralab.org/texconf10/presentations/yamashita.pdf)
 - [KETpic による曲面描画と教育利用](http://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1624-01.pdf)
 - [KETpic入門](http://www.ms.u-tokyo.ac.jp/~tado/ketpic/)
 - [KETpicメモ](http://www.math.sci.hokudai.ac.jp/~yano/ketpic/ketpic.html)
