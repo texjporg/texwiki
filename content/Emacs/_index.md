@@ -346,7 +346,7 @@ Source editor:
 
 ### macOS {#pa8b5a16}
 
-- [https://oku.edu.mie-u.ac.jp/~okumura/macosx/#emacs](https://oku.edu.mie-u.ac.jp/~okumura/macosx/#emacs)
+- [https://okumuralab.org/~okumura/macosx/#emacs](https://okumuralab.org/~okumura/macosx/#emacs)
 - [MacEmacs JP](https://ja.osdn.net/projects/macemacsjp/)
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
