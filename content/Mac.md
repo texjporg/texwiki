@@ -56,8 +56,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 ### フリーソフトウェア（オープンソースソフトウェア） {#editor-free}
 
-LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです．
-この場合は，[Karabiner](/Karabiner-Elements/) で Backslash が優先されるようにキーバインドを変更してください。
+<!-- LyX, TeXstudio, Texmaker, TeXworks 等の Qt アプリケーションでは，Qt のバグのせいでバックスラッシュが入力できないようです． -->
+<!-- この場合は，[[Karabiner>Karabiner-Elements]] で Backslash が優先されるようにキーバインドを変更してください。 -->
 
 <!-- ここに並べる統合環境は -->
 <!-- 1. TeX ディストリビューションにバンドルされているもの (TeXworks, TeXShop) -->
