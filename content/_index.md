@@ -44,7 +44,7 @@ TeX Wiki は，[TeX](/TeX/)，[LaTeX](/LaTeX/)，[PDF](/PDF/) などに関する
 <!-- - - [[graphicx パッケージの仕様変更（dvipdfmx オプション）>forum:2211]]~ -->
 <!-- - - [[graphicxパッケージでのPDF画像挿入の仕様が変わってヤバイ件:http://qiita.com/zr_tex8r/items/a0516f211831a3fc2c0e]] -->
 <!-- - 【重要】2016/11/30より前の TeX Live と W32TeX において TeX 実行時に任意の外部コマンドが実行できてしまうセキュリティ上の問題が発覚しました．''可能な場合は，速やかに TeX Live のアップデートを実行してください''．この問題についての詳細は[[こちら>外部コマンドの実行#security]]を参照してください． -->
-<!-- - [[奥村晴彦先生:https://oku.edu.mie-u.ac.jp/~okumura/]]が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[[日本語 TeX 開発コミュニティ:https://texjp.org/]]上の https://texwiki.texjp.org/ に移転しました． -->
+<!-- - [[奥村晴彦先生:https://okumuralab.org/~okumura/]]が運営なさっていました TeX Wiki は，2016 年 1 月 20 日をもって，[[日本語 TeX 開発コミュニティ:https://texjp.org/]]上の https://texwiki.texjp.org/ に移転しました． -->
 <!-- - OS X 10.10 Yosemite 以前で TeX Live 2015 以前または MacTeX-2015 以前を使っている場合， macOS 10.12 Sierra / OS X 10.11 El Capitan へのアップグレード後，設定作業が必要です．アップデート前に[[こちら>TeX Live/Mac#elcapitan]]をご覧ください． -->
 
 ### TeX，LaTeX とは？ {#la57baab}
@@ -57,7 +57,7 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OS ごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS](/iOS/)\]．
 
-インストールせずに Web で利用することもできます。 → [TeX を使ってみよう](https://oku.edu.mie-u.ac.jp/~okumura/texonweb/)（Web上で利用できるTeX/LaTeX），[TeX を Web で](</TeXをWebで/>)（解説）
+インストールせずに Web で利用することもできます。 → [TeX を Web で](</TeXをWebで/>)（解説）
 
 ### TeX 用の統合環境・エディタを使おう {#hb6b8133}
 
