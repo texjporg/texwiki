@@ -53,11 +53,11 @@ TeX Live 2023 universal-darwin バイナリが動作する macOS
 
 TeX Live のインストールガイド
 
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
+- [https://tug.org/texlive/quickinstall.html](https://tug.org/texlive/quickinstall.html)
+- [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2)
+- [https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.2](https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.2)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。[M1 Mac](https://oku.edu.mie-u.ac.jp/~okumura/macosx/m1.html) の TeX
+を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。[M1 Mac](https://okumuralab.org/~okumura/macosx/m1.html) の TeX
 の項目にも説明があります。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
@@ -161,9 +161,9 @@ $ sudo /usr/local/texlive/2023/bin/universal-darwin/tlmgr path add
 #### [Homebrew](http://brew.sh/) によるインストール {#texlive-install-brew}
 
 - [https://github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex.rb)
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex-no-gui.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/mactex-no-gui.rb)
-- [https://github.com/caskroom/homebrew-cask/blob/master/Casks/basictex.rb](https://github.com/caskroom/homebrew-cask/blob/master/Casks/basictex.rb)
+- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex.rb)
+- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex-no-gui.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex-no-gui.rb)
+- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/b/basictex.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/b/basictex.rb)
 
 TeX Live をフルインストールする場合は MacTeX をインストールしてください。
 Homebrew で MacTeX をインストールできます。
