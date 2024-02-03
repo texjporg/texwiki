@@ -10,11 +10,11 @@ pukiwiki: "SumatraPDF"
 
 ## [SumatraPDF](https://www.sumatrapdfreader.org/) {#afa7a42e}
 
-SumatraPDF は Windows で動作するタブ切り替え型の軽量な PDF ビューアです．
-eBook (ePub, MOBI), XPS, DjVu, CHM, Comic Book (CBZ, CBR) などの形式も閲覧できます．
-[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています．
-PDF ファイルだけではなく PostScript ファイルも表示可能です．
-PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要です．
+SumatraPDF は Windows で動作するタブ切り替え型の軽量な PDF ビューアです。
+eBook (ePub, MOBI), XPS, DjVu, CHM, Comic Book (CBZ, CBR) などの形式も閲覧できます。
+[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています。
+PDF ファイルだけではなく PostScript ファイルも表示可能です。
+PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要です。
 
 ***
 
@@ -30,9 +30,8 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### インストール {#r04b7fad}
 
-[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします．
-64-bit Windows であれば 64-bit builds の Installer をダウンロードします．
-後はダブルクリックして指示に従えばインストールが完了します．
+[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします。
+後はダブルクリックして指示に従えばインストールが完了します。
 
 SumatraPDF インストール先フォルダは
 
@@ -48,15 +47,15 @@ SumatraPDF を全てのユーザーに対してインストールした場合は
 
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
 
-[SyncTeX](/SyncTeX/) とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です．
-TeX エンジンが SyncTeX に対応しており（主要なエンジンは対応しています），またソースが -synctex=1 または -synctex=-1 オプションとともにコンパイルされている必要があります．（ソースファイルと同じフォルダに拡張子が .synctex のファイルができます．）
-ジャンプはエディタ→ SumatraPDF（forward search）と SumatraPDF →エディタ（inverse search）の両方が可能です．
+[SyncTeX](/SyncTeX/) とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です。
+TeX エンジンが SyncTeX に対応しており（主要なエンジンは対応しています）、かつ LaTeX ソースが -synctex=1 または -synctex=-1 オプションとともにコンパイルされている必要があります。（LaTeX ソースファイルと同じフォルダに拡張子が .synctex のファイルができます。）
+ジャンプはエディタ -&gt; SumatraPDF（forward search）と SumatraPDF -&gt; エディタ（inverse search）の両方が可能です。
 
 #### forward search {#m71d9172}
 
-コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です．
+コマンドラインオプション (-forward-search &lt;texfile> &lt;linenumber>) を指定して forward search を行うことが可能です。
 
-以下の統合環境，テキストエディタ +（マクロ・プラグイン）は SumatraPDF で forward and inverse search が可能です．
+以下の統合環境，テキストエディタ +（マクロ・プラグイン）は SumatraPDF で forward and inverse search が可能です。
 
 ■ フリーソフトウェア (オープンソースソフトウェア)
 
@@ -84,12 +83,12 @@ TeX エンジンが SyncTeX に対応しており（主要なエンジンは対�
 
 #### fwdsumatrapdf <a id="fwdsumatrapdf"></a> {#n8da77e2}
 
-forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使用します．
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照してください．
+forward search するときに SumatraPDF を前面に表示したくない場合は fwdsumatrapdf を使用します。
+[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) を参照してください。
 
 #### inverse search {#wfcdbef6}
 
-inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただし，設定が必要です．
+inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただし，設定が必要です。
 
 %APPDATA%\SumatraPDF\SumatraPDF-settings.txt に
 
@@ -97,7 +96,7 @@ inverse search は SumatraPDF の画面をダブルクリックすると実行�
 EnableTeXEnhancements = false
 ```
 
-と記述されている場合は逆順検索コマンドラインの設定が表示されません．
+と記述されている場合は逆順検索コマンドラインの設定が表示されません。
 
 逆順検索コマンドラインの設定が表示されていない場合は \[☰\] &gt; \[設定(S)\] &gt; \[詳細設定(A)\] で %APPDATA%\SumatraPDF\SumatraPDF-settings.txt を開いて
 
@@ -105,15 +104,15 @@ EnableTeXEnhancements = false
 EnableTeXEnhancements = true
 ```
 
-に修正します．
+に修正します。
 
-あるいは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください．（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください．）
+あるいは，-synctex オプションとともにコンパイルされた PDF ファイルを開いてください。（正確には，.synctex ファイルが同じフォルダにある PDF ファイルを開いてください。）
 
-SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います．
+SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定で inverse search で実行されるコマンドラインの設定を行います。
 
-inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です．
+inverse search の設定はコマンドラインから -inverse-search オプションで指定することも可能です。
 
-どのように設定するかは統合環境，テキストエディタ +（マクロ・プラグイン）によって異なるのでそれぞれのマニュアルを見て設定してください．
+設定方法については統合環境，テキストエディタ +（マクロ・プラグイン）によって異なるのでそれぞれのマニュアルを見て設定してください。
 
 [TeXstudio](/TeXstudio/) であれば
 
@@ -121,11 +120,11 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 "C:\Program Files\texstudio\texstudio.exe" "%f" -line %l
 ```
 
-となります．
+となります。
 
 #### コマンドラインオプション {#d9cff28c}
 
-プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します．
+プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します。
 
 - [https://www.sumatrapdfreader.org/manual.html](https://www.sumatrapdfreader.org/manual.html)
 - [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp)
