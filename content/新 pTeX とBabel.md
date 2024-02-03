@@ -97,9 +97,9 @@ TeX Live 2020 には Babel が収録されています。
 
 - 以下のファイルをタイプセットしてみてください。pdflatex, uplatex の
     いずれでも OK となっているはずです（出力結果は
-    『[［改訂第4版］ LaTeX2e 美文書作成入門](https://oku.edu.mie-u.ac.jp/~okumura/bibun4/)』
+    『[［改訂第4版］ LaTeX2e 美文書作成入門](https://okumuralab.org/~okumura/bibun4/)』
     付録J 357ページないし
-    『[［改訂第3版］ LaTeX2e 美文書作成入門](https://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun3/)』
+    『[［改訂第3版］ LaTeX2e 美文書作成入門](https://okumuralab.org/~okumura/texfaq/bibun3/)』
     付録J 340ページとほぼ同じになると思います）。
 
 ***
