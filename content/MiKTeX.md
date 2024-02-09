@@ -9,8 +9,9 @@ pukiwiki: "MiKTeX"
 
 ## [MiKTeX](https://miktex.org/) {#n766a2b6}
 
-MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビューションです．
-[TeX Live](</TeX Live/>) と並んで国際的に広く使われています．
+MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビューションです。
+[TeX Live](</TeX Live/>) と並んで国際的に広く使われています。
+LuaLaTeX で日本語 PDF ファイルも作成できます。
 
 - [Home - MiKTeX.org](https://miktex.org/)
 - [https://github.com/MiKTeX/miktex](https://github.com/MiKTeX/miktex)
@@ -145,7 +146,82 @@ dvipdfmx の実行結果は
 >
 > No output PDF file written.<br>
 
-となり、フォントに関するエラーが発生するため 2024年2月現在でもまだ不安定なようです。
+となり、フォントに関するエラーが発生するため 2024年2月現在でも uplatex + dvipdfmx のワークフローはまだ不安定なようです。
+
+MiKTeX 24.1 で lualatex を実行すると
+This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1)<br>
+&nbsp;restricted system commands enabled.<br>
+
+と表示された後で MiKTeX Package Mamager の
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;lua-uni-case.lua<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;lua-uni-algos<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;luatexja.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;luatexja<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;infwarerr.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;infwarerr<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;luatexbase.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;luatexbase<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;ctablestack.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;ctablestack<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;ltxcmds.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;ltxcmds<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;UniJIS2004-UTF32-H<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;adobemapping<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+
+lualatex の実行結果は
+
+> Output written on file.pdf (? page, ? bytes).<br>
+> Transcript written on file.log.<br>
+
+となり、日本語の PDF ファイルが出力されるため 2024年2月現在では lualatex のワークフローは動作します。
 
 ### インストール {#c18f5cec}
 
