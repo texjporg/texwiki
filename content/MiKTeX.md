@@ -21,20 +21,131 @@ MiKTeX は Windows, macOS, Linux で動作する TeX のディストリビュー
 
 ### お知らせ {#n83db2ac}
 
-2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されていますが，platex を実行して dvipdfmx を実行すると
+2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されています。
 
-> dvipdfmx:warning: Could not locate a virtual/physical font for TFM "rml".<br>
+- [https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07](https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07)
+
+MiKTeX 24.1 で uplatex を実行すると
+
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (MiKTeX 24.1) (preloaded format=uplatex.fmt)<br>
+&nbsp;restricted \write18 enabled.<br>
+
+と表示された後で MiKTeX Package Mamager の
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;uplatex.ini<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;uplatex<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;plcore.ltx<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;platex<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;upjisr-h.tfm<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;uptex-fonts<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;jlreq.cls<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;jlreq<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;everyshi.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;everyhook<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;svn-prov.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;svn-prov<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;filehook.sty<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;filehook<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+
+kanji-config-updmap-sys haranoaji  を実行すると MiKTeX Package Mamager の
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;kanji-config-updmap.pl<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;ptex-fontmaps<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;ipam.ttf<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;ipaex<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+次に
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;HaranoAjiMincho-Regular.otf<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;haranoaji<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+
+<!-- Sorry, but: Permission denied: path="C:\ProgramData\MiKTeX\fonts\map\dvipdfmx\kanjix.map" -->
+
+dvipdfmx を実行すると MiKTeX Package Mamager の
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+This required file could not be found:<br>
+&nbsp;&nbsp;&nbsp;ttfonts.map<br>
+The file is a part of this package:<br>
+&nbsp;&nbsp;&nbsp;zhmetrics<br>
+
+のダイアログが表示されるので \[Install\] ボタンを押下します。
+
+dvipdfmx の実行結果は
+
+> dvipdfmx:warning: Could not locate a virtual/physical font for TFM "uprml-h".<br>
 > dvipdfmx:warning: >> There are no valid font mapping entry for this font.<br>
-> dvipdfmx:warning: >> Font file name "rml" was assumed but failed to locate that font.<br>
+> dvipdfmx:warning: >> Font file name "uprml-h" was assumed but failed to locate that font.<br>
 > dvipdfmx:fatal: Cannot proceed without .vf or "physical" font for PDF output...<br>
 >
 > <br>
 >
 > No output PDF file written.<br>
 
-となり、フォントに関するエラーが発生するため 2022年12月現在でもまだ不安定なようです。
-
-- [https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07](https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07)
+となり、フォントに関するエラーが発生するため 2024年2月現在でもまだ不安定なようです。
 
 ### インストール {#c18f5cec}
 
