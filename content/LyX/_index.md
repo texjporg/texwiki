@@ -551,8 +551,8 @@ sudo zypper install lyx
 
 ### ChangeLog {#uf3685b6}
 
-- [git.lyx.org](http://git.lyx.org/?p=lyx.git;a=summary)
-    - [shortlog](http://git.lyx.org/?p=lyx.git;a=shortlog)
+- [git.lyx.org](https://git.lyx.org/gitweb/?p=lyx.git;a=summary)
+    - [shortlog](https://git.lyx.org/gitweb/?p=lyx.git;a=shortlog)
 - [timeline](https://www.lyx.org/trac/timeline)
 - [https://www.lyx.org/trac/log/lyxgit/](https://www.lyx.org/trac/log/lyxgit/)
 - [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
