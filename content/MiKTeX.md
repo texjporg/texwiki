@@ -31,9 +31,9 @@ MiKTeX 24.1 で uplatex を実行すると
 This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (MiKTeX 24.1) (preloaded format=uplatex.fmt)<br>
 &nbsp;restricted \write18 enabled.<br>
 
-と表示された後で MiKTeX Package Mamager の
+と表示された後で MiKTeX Package Manager の
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;uplatex.ini<br>
 The file is a part of this package:<br>
@@ -42,7 +42,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;plcore.ltx<br>
 The file is a part of this package:<br>
@@ -51,7 +51,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;upjisr-h.tfm<br>
 The file is a part of this package:<br>
@@ -60,7 +60,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;jlreq.cls<br>
 The file is a part of this package:<br>
@@ -69,7 +69,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;everyshi.sty<br>
 The file is a part of this package:<br>
@@ -78,7 +78,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;svn-prov.sty<br>
 The file is a part of this package:<br>
@@ -87,7 +87,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;filehook.sty<br>
 The file is a part of this package:<br>
@@ -95,9 +95,12 @@ The file is a part of this package:<br>
 
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 
-kanji-config-updmap-sys haranoaji  を実行すると MiKTeX Package Mamager の
+Strawberry Perl をインストールしてターミナルを管理者として実行後に
+kanji-config-updmap-sys --jis2004 haranoaji  を実行すると
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+MiKTeX Package Mamager の
+
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;kanji-config-updmap.pl<br>
 The file is a part of this package:<br>
@@ -106,7 +109,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;ipam.ttf<br>
 The file is a part of this package:<br>
@@ -115,7 +118,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;HaranoAjiMincho-Regular.otf<br>
 The file is a part of this package:<br>
@@ -125,9 +128,9 @@ The file is a part of this package:<br>
 
 <!-- Sorry, but: Permission denied: path="C:\ProgramData\MiKTeX\fonts\map\dvipdfmx\kanjix.map" -->
 
-dvipdfmx を実行すると MiKTeX Package Mamager の
+dvipdfmx を実行すると MiKTeX Package Manager の
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;ttfonts.map<br>
 The file is a part of this package:<br>
@@ -149,12 +152,13 @@ dvipdfmx の実行結果は
 となり、フォントに関するエラーが発生するため 2024年2月現在でも uplatex + dvipdfmx のワークフローはまだ不安定なようです。
 
 MiKTeX 24.1 で lualatex を実行すると
+
 This is LuaHBTeX, Version 1.17.1 (MiKTeX 24.1)<br>
 &nbsp;restricted system commands enabled.<br>
 
-と表示された後で MiKTeX Package Mamager の
+と表示された後で MiKTeX Package Manager の
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;lua-uni-case.lua<br>
 The file is a part of this package:<br>
@@ -163,7 +167,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;luatexja.sty<br>
 The file is a part of this package:<br>
@@ -172,7 +176,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;infwarerr.sty<br>
 The file is a part of this package:<br>
@@ -181,7 +185,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;luatexbase.sty<br>
 The file is a part of this package:<br>
@@ -190,7 +194,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;ctablestack.sty<br>
 The file is a part of this package:<br>
@@ -199,7 +203,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;ltxcmds.sty<br>
 The file is a part of this package:<br>
@@ -208,7 +212,7 @@ The file is a part of this package:<br>
 のダイアログが表示されるので \[Install\] ボタンを押下します。
 次に
 
-&nbsp;&nbsp;&nbsp;&nbsp;Package Instraion<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Package Installation<br>
 This required file could not be found:<br>
 &nbsp;&nbsp;&nbsp;UniJIS2004-UTF32-H<br>
 The file is a part of this package:<br>
