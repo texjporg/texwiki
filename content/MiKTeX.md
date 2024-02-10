@@ -22,9 +22,11 @@ LuaLaTeX で日本語 PDF ファイルも作成できます。
 
 ### お知らせ {#n83db2ac}
 
-2021-12-07 以降，MiKTeX にも日本語 pTeX 関連ソフトウェアとパッケージが順次導入されています。
+2021-12-07 以降，MiKTeX にも日本語 upTeX 関連ソフトウェアとパッケージが順次導入されています。
 
 - [https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07](https://github.com/MiKTeX/miktex/blob/next/CHANGELOG.md#2112---2021-12-07)
+
+### MiKTeX 24.1 でのワークフロー {#b05c90a0}
 
 MiKTeX 24.1 で uplatex を実行すると
 
