@@ -54,7 +54,6 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/jsclasses/?view=log)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/source/platex/jsclasses](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/jsclasses/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/source/platex/jsclasses/?view=log)
-- [http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/#new)
 
 #### CTAN 配布サイト {#q7ee37eb}
 
