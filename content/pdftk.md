@@ -11,49 +11,41 @@ pukiwiki: "pdftk"
 
 ### はじめに {#k42vf083}
 
-[pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
-は PDF ファイルを編集するコマンドラインツールです．
-PDF ファイルの結合，分割，並べ替え，ページ回転，ページ抽出，透かしの挿入，メタデータの追加や抽出，セキュリティの設定などが可能です．
+[pdftk-java](https://gitlab.com/pdftk-java/pdftk)
+は PDF ファイルを編集するコマンドラインツールです。
+
+PDF ファイルの結合，分割，並べ替え，ページ回転，ページ抽出，透かしの挿入，メタデータの追加や抽出，セキュリティの設定などが可能です。
 
 #### License {#a6o82c92}
 
-[GPLv2](https://www.pdflabs.com/docs/pdftk-license/)
+[GPLv2](https://gitlab.com/pdftk-java/pdftk/-/blob/master/LICENSE)
 
 #### ChangeLog {#f60e4cb3}
 
-[PDFtk Version History](https://www.pdflabs.com/docs/pdftk-version-history/)
+[CHANGELOG.md · master · pdftk-java / pdftk-java · GitLab](https://gitlab.com/pdftk-java/pdftk/-/blob/master/CHANGELOG.md)
 
 ### インストール {#a7k286v4}
 
-[本家](https://www.pdflabs.com/tools/pdftk-server/)に Windows 用インストーラがあります．
-
-macOS Catalina / macOS Mojave / macOS High Sierra / macOS Sierra / OS X El Capitan の場合は [https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/pdftk_server-2.02-mac_osx-10.11-setup.pkg) をダウンロードします．
-
-パッケージ管理からも可能です．macOS の場合は MacPorts を使用しているなら
+macOS Sonoma / macOS Ventura / macOS Monterey / macOS Big Sur の場合は
 
 ```
-sudo port install pdftk
+brew install pdftk-java
 ```
 
-を実行します．
+を実行します。
 
 #### ビルド {#s5yn263g}
 
 ソースからコンパイルするのも簡単です．
-ソースは[本家](https://www.pdflabs.com/tools/pdftk-server/)から入手できます．
+ソースは [pdftk-java](https://gitlab.com/pdftk-java/pdftk) から入手できます．
 
 ### 使い方 {#m37fe2x6}
 
-[本家ドキュメント](https://www.pdflabs.com/docs/pdftk-man-page/)参照．
+[PDFtk Server Manual](https://www.pdflabs.com/docs/pdftk-man-page/)参照．
 pdftk --help または pdftk -h と入力すれば詳しいマニュアルが現れます．
-
-### 派生版 {#le1443b7}
-
-- [pdftk-java](https://gitlab.com/pdftk-java/pdftk) A port of pdftk into java
 
 ### 関連リンク {#ex5bb0d4}
 
-- [pdftk: Linux Wiki](http://oku.edu.mie-u.ac.jp/~okumura/linux/?pdftk)
 - [PDFをコマンドラインから編集できるPDFtk使い方メモ ](http://nwpct1.hatenablog.com/entry/2013/12/14/192914)
 - [Tips: PDFの作り方(1) pdftkの活用](http://acetaminophen.hatenablog.com/entry/2014/11/10/000559)
-- [pdftk(OS10.13)](http://blog.toshihiro-kaneko.tonkotsu.jp/?eid=24)
+- [pdftkのインストール](https://www.softel.co.jp/blogs/tech/archives/6475)
