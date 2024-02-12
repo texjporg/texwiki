@@ -40,7 +40,7 @@ WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (
 
 ### お知らせ {#z73b9e72}
 
-[奥村晴彦](http://oku.edu.mie-u.ac.jp/~okumura/)，黒木裕介 著
+[奥村晴彦](https://okumuralab.org/~okumura/)，黒木裕介 著
 『[［改訂第9版］LaTeX美文書作成入門](https://github.com/okumuralab/bibun9)』
 では，おすすめの統合環境が [<strong>TeXworks</strong>](/TeXworks/) になりました。
 
