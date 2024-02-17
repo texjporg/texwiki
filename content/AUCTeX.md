@@ -199,11 +199,11 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                       (add-to-list 'TeX-command-list
                                    '("upLaTeXmk"
                                      "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e \"$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
                                      "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
@@ -318,12 +318,12 @@ C-x C-f ~/
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("upLaTeXmk"
-                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
+                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("Displayline"
                                      "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
@@ -434,12 +434,12 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
                       (add-to-list 'TeX-command-list
                                    '("upLaTeXmk"
-                                     "latexmk -e '$latex=q/uplatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-upLaTeX"))
+                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk-LuaLaTeX"))
+                                     TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("Xdg-open"
                                      "xdg-open %s.pdf"
@@ -998,6 +998,7 @@ AUCTeX とは関係ありませんが，先頭に
 - [AUCTeX | Amrta](http://skalldan.wordpress.com/tag/auctex/)
 - [AUCTeX | 検索結果:  | miyazakikenji](http://miyazakikenji.wordpress.com/?s=AUCTeX)
 - [Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する](http://d.hatena.ne.jp/gifnksm/20090420/)
+- [https://tam5917.hatenablog.com/archive/category/AUCTeX](https://tam5917.hatenablog.com/archive/category/AUCTeX)
 
 <!-- AUCTeX ここまで -->
 
