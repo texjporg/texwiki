@@ -61,4 +61,4 @@ jsclasses には標準で縦組み対応のクラスファイルがありませ�
 
 #### pLaTeX2e 新ドキュメントクラス {#k48ec8db}
 
-- [pLaTeX2e 新ドキュメントクラス](http://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)
+- [pLaTeX2e 新ドキュメントクラス](https://web.archive.org/web/20230119032705/https://oku.edu.mie-u.ac.jp/~okumura/jsclasses/)
