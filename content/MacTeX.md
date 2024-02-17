@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2023 には以下のパッケージが収録されています。
+MacTeX-2024 には以下のパッケージが収録されています。
 
-#### TeXLive-2023 {#v03e546d}
+#### TeXLive-2024 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -64,7 +64,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-10.00 {#n1354f54}
+#### Ghostscript-10.02.1 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
@@ -76,7 +76,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 MacTeX には「一度インストールすると、完全なアンインストールは難しい」という性質があります。macOS に TeX 環境を構築する手段には、他にも TeX Live 公式インストーラを利用する方法等があります。MacTeX を利用するべきか、TeX Live 公式インストーラを利用するべきか、それ以外の方法を利用するべきかは <strong>MacTeX をインストールする前に</strong>よく考えて判断してください。
 
-- TeX Live 公式インストーラを用いる方法については [TeX Live/Mac](</TeX Live/Mac/>) または [TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)を参照してください
+- TeX Live 公式インストーラを用いる方法については [TeX Live/Mac](</TeX Live/Mac/>) または [TeX Live ガイド](https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.2)を参照してください
 - 参考：[MacTeX をおすすめできる場合とそうでない場合（私見） | ラング・ラグー](https://blog.wtsnjp.com/2020/07/07/about-mactex/)
 
 ### インストール {#t244993f}
@@ -124,7 +124,7 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [Mac Ventura 対応 LaTeX環境の構築(インストール,VSCode設定)](https://frees.jp/2023/04/08/latex%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABvscode/)
-- [2022年のコンピューターノウハウ (Mac) 73 MacTeX 2023 が来た](http://m-katsurada.sakura.ne.jp/knowhow-2022/node73.html)
+- [2023年のコンピューターノウハウ (Mac) 2 MacTeX 2023が来ました (ただのリンク)](http://m-katsurada.sakura.ne.jp/knowhow-2023/node2.html)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](http://doratex.hatenablog.jp/entry/20190502/1556775026)
