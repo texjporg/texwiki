@@ -21,6 +21,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - [the status of texlive-pretest mirrors](http://www.tug.org/texlive/mirmon/)
 
 - Network Based Installer, MacTeX, BasicTeX
+    - [https://mirrors.tuna.tsinghua.edu.cn/tlpretest/](https://mirrors.tuna.tsinghua.edu.cn/tlpretest/)
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
 - TeX Live ISO Images
