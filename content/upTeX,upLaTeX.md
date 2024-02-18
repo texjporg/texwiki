@@ -125,9 +125,9 @@ biber --bblencoding=utf8 -u -U --output_safechars hoge
 
 [TeX Live](</TeX Live/>) には upTeX が含まれています。
 
-#### W32TeX {#sa412321}
+#### MiKTeX {#sa412321}
 
-[W32TeX](/W32TeX/) には [uptex-w32.tar.xz](ftp://ftp.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/uptex-w32.tar.xz) が含まれています。
+[MiKTeX](/MiKTeX/) には upTeX が含まれています。
 
 ### 最初の例 {#nea5a740}
 
