@@ -11,21 +11,13 @@ pukiwiki: "Drag and Drop UpTeX"
 
 Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている macOS 専用 TeX ディストリビューションです。
 
-構成はコンパクト（具体的には TeX Live scheme-small に collection-langjapanese + α）ですが，pLaTeX と upLaTeX を使うには十分です。
+構成はコンパクト（具体的には TeX Live scheme-small に collection-langjapanese + α）ですが，upLaTeX を使うには十分です。
 また，日本語フォントのセットアップを自動で行う GUI も付属しているため，日本語フォントの設定を最低限の操作で完了させることができます。
 TeX 環境をアプリケーション・バンドルのなかに包むことで，任意の場所に Drag &amp; Drop でインストールし，最低限の操作で必要な設定も完了します。
 
 ### 動作環境 {#s8a76771}
 
-- macOS Ventura 13
-- macOS Monterey 12
-- macOS Big Sur 11
-- macOS 10.15 Catalina
-- macOS 10.14 Mojave
-- macOS 10.13 High Sierra
-- macOS 10.12 Sierra
-- OS X 10.11 El Capitan
-- OS X 10.10 Yosemite
+- OS X 10.10 Yosemite 以降
 
 <!-- いちばん下に「派生版」とだけ書いても，日本向けだと伝わらないし， -->
 <!-- 誰も注目しないだろうと思うのでトップに移動。 - - アセトアミノフェン (2016-06-22) -->
@@ -47,23 +39,6 @@ TeX Live のアップデートは，環境設定パネルから「パッケー�
 
 これは BasicTeX + collection-langjapanese と状況はほぼ同じです。
 [BasicTeX + collection-langjapanese で LuaTeX-ja を使う](/BasicTeX/#f2230bb1) を参照してください。
-
-### 古い版（20160614 以前）を利用していた場合の注意 {#jc002f21}
-
-UTeX20160907.dmg 以降の版は，TeX Live scheme-small + collection-langjapanese を収録していますが，UTeX20160614.dmg までは BasicTeX + collection-langjapanese を収録していました。
-この場合，LaTeX や pLaTeX，upLaTeX を tlmgr で更新しても，フォーマットファイルが自動で更新されないという問題があります（これは元となっている [BasicTeX](/BasicTeX/) の仕様です）。
-
-- 参考：[forum:2018](https://okumuralab.org/tex/mod/forum/discuss.php?d=2018)
-
-このため，20160614 までの UpTeX.app をインストールしている場合は，ご自身で
-
-```
-~/Library/texlive/2016basic/texmf-var/web2c
-```
-
-以下に残っている，拡張子 .fmt のファイル (platex.fmt, etc.) を削除してください。
-texlive フォルダごと削除してしまってもかまいません。
-そのうえで，最新版 の Drag &amp; Drop UpTeX をインストールしてください。
 
 ### 更新履歴 {#a33a457a}
 
