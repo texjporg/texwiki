@@ -44,7 +44,7 @@ Windows の場合は [Windows 版 OpenJDK インストール手順](https://qiit
 
 ## Eclipse のインストール {#r143ba66}
 
-Windows の場合 [Pleiades All in One](http://mergedoc.osdn.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
+Windows の場合 [Pleiades All in One](https://willbrains.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
@@ -52,7 +52,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 を展開し，
 
-- [Pleiades プラグイン](http://mergedoc.osdn.jp/) (Eclipse 本体とプラグインの日本語化)
+- [Pleiades プラグイン](https://willbrains.jp/) (Eclipse 本体とプラグインの日本語化)
 
 を Eclipse のルートフォルダに展開して eclipse.ini の最終行に
 
@@ -69,6 +69,5 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 ## 関連リンク {#o908ecbb}
 
 - Eclipse - [https://www.eclipse.org/](https://www.eclipse.org/)
-- Pleiades - [http://mergedoc.osdn.jp/](http://mergedoc.osdn.jp/)
-    - [ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/](ftp://ftp.jaist.ac.jp/pub/mergedoc/pleiades/)
+- Pleiades - [https://willbrains.jp/](https://willbrains.jp/)
 - [OpenJDK](http://openjdk.java.net/)
