@@ -37,6 +37,8 @@ e-upTeX は upTeX に [e-TeX](/e-TeX/) 拡張を追加したものです。
 
 #### -guess-input-enc による文字コードの自動判別機能で間違った文字コードに判別されるパターンが存在する {#zb472e1c}
 
+(以下は TeX Live 2022年以前の実装(内部でnkfを呼び出し)に基づく記述です。最新版は[ptexenc内の判定ルーチン](/ptexenc/#zb472e1c)を使用しています)
+
 以下の様な TeX ファイルを hoge.tex という名前で UTF-8 without BOM で保存します．
 
 ```
