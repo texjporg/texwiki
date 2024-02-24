@@ -141,8 +141,7 @@ sudo zypper install evince poppler-data
 
 ### Beyond Linux From Scratch {#i9f92bae}
 
-- [http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](http://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
-- [http://lfsbookja.osdn.jp/BLFS/svn-ja/gnome/evince.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/gnome/evince.html)
+- [https://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html](https://www.linuxfromscratch.org/blfs/view/svn/gnome/evince.html)
 
 ## 代替フォントの設定 <a id="fallback"></a> {#id0a7178}
 
