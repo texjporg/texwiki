@@ -347,7 +347,6 @@ Source editor:
 ### macOS {#pa8b5a16}
 
 - [https://okumuralab.org/~okumura/macosx/#emacs](https://okumuralab.org/~okumura/macosx/#emacs)
-- [MacEmacs JP](https://ja.osdn.net/projects/macemacsjp/)
 - [Emacs : 紹介マニア](http://sakito.jp/emacs)
 - [Emacs Lisp で 変数や関数が定義されているファイルパスを取得するには](http://gongo.hatenablog.com/entry/2013/02/05/232633)
 - [Retina を活かす Emacs へ移行](http://milanista224.blogspot.jp/2012/08/retina-emacs24.html)
@@ -374,7 +373,7 @@ Source editor:
 - [emacs 29.1の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
-- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
+- [超入門 Emacs/asir](http://www.math.kobe-u.ac.jp/Asir/emacs-asir.pdf)
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
