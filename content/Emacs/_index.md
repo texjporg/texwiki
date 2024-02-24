@@ -157,7 +157,7 @@ C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-[AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) を参照してください．
+[AUCTeX の設定と便利な機能 | Amrta](https://web.archive.org/web/20170722130200/https://skalldan.wordpress.com/2011/07/20/auctex-%e3%81%ae%e8%a8%ad%e5%ae%9a%e3%81%a8%e4%be%bf%e5%88%a9%e3%81%aa%e6%a9%9f%e8%83%bd/) を参照してください．
 
 PDF-TeX 同期サポート:
 : &nbsp;
@@ -373,6 +373,7 @@ Source editor:
 - [emacs 29.1の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
+- [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
 - [超入門 Emacs/asir](http://www.math.kobe-u.ac.jp/Asir/emacs-asir.pdf)
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
