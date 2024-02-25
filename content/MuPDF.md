@@ -14,7 +14,7 @@ MuPDF は軽量な PDF/XPS/CBZ ビューアです．
 ビューアとして MuPDF を使用して問題が発生する場合は，代わりに [Poppler](/Poppler/) を利用することを検討してください．
 以下のプログラムが MuPDF を使用しています．
 
-- PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin), [llpp](/llpp/)
+- PDF ビューア: [SumatraPDF](/SumatraPDF/), [zathura](/zathura/) (zathura-pdf-mupdf), [qpdfview](/qpdfview/) (fitz-plugin), [Sioyek](/Sioyek/), [llpp](/llpp/)
 
 ***
 
