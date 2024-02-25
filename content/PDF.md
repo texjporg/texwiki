@@ -65,7 +65,7 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 - [いきなりPDF シリーズ](http://www.sourcenext.com/product/pdf/)
     ([ソースネクスト](http://www.sourcenext.com/))
 
-- [JUST PDF 3](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/))
+- [JUST PDF](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/))
 - [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
 - [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
 
@@ -138,12 +138,12 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [Sioyek](/Sioyek/) (Qt) SyncTeX に対応した教科書や論文を読むことに特化した PDF ビューア
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
 - PDF.js 系：PDF.js を利用したものが多数あります．
-    - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX](</Visual Studio Code/LaTeX/>) パッケージを使う
+    - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](</Visual Studio Code/LaTeX/>) を使う
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
 - [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
-- [PDF-XChange Viewer](https://www.tracker-software.com/product/pdf-xchange-viewer) タブ切り替え型で軽快に動作するフリーの PDF ビューア
-- [Foxit Reader](http://www.foxitsoftware.com/downloads/#reader) フリーのPDF Reader
+- [PDF-XChange Editor](https://www.pdf-xchange.com/product/pdf-xchange-editor) タブ切り替え型で軽快に動作するフリーの PDF ビューア
+- [Foxit PDF Reader](https://www.foxit.com/pdf-reader/) フリーのPDF Reader
 - [Skim](/Skim/) SyncTeX に対応した PDF ビューア．macOS 専用です．
 - [Slim PDF Reader](http://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
 
