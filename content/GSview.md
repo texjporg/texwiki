@@ -151,4 +151,5 @@ jisB8=181,258
 - [GSview Readme](https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=blob_plain;f=Readme.htm;hb=refs/heads/master)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
 - [■ \[Windows\] GSView 5.01beta](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20210402#p02)
+- [LaTeXでEPS画像をPDFファイルに出力したら真っ白になっちゃう問題の解決法](https://qiita.com/housewifeCat/items/dc74a9e625e63fe43bd2)
 - [https://fossies.org/linux/misc/old/ghost/ghostgum/](https://fossies.org/linux/misc/old/ghost/ghostgum/)
