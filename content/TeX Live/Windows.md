@@ -33,7 +33,7 @@ pukiwiki: "TeX Live/Windows"
 かなりの時間がかかります。
 環境にもよりますが，多くの場合一時間から二時間ほどかかると思います。
 
-以下は TeX Live 2023 の install-tl-windows.bat をダブルクリックして実行した例です。
+以下は TeX Live 2024 の install-tl-windows.bat をダブルクリックして実行した例です。
 
 > <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
@@ -112,12 +112,12 @@ pukiwiki: "TeX Live/Windows"
 
 > <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
 
-> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>TeX Live 2023 インストーラ</strong><br>
-> <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r.&#160;66578&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
+> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<strong>TeX Live 2024インストーラ</strong><br>
+> <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;r.&#160;69711&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
 >
-> インストール先&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;C:/texlive/2023&#160;\[&#160;&#160;&#160;&#160;変更&#160;&#160;&#160;&#160;\]<br>
-> 必要なディスク容量(MB):&#160;&#160;7851<br>
-> ディスクの空き容量(MB):&#160;&#160;1629102<br>
+> インストール先&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;C:/texlive/2024&#160;\[&#160;&#160;&#160;&#160;変更&#160;&#160;&#160;&#160;\]<br>
+> 必要なディスク容量(MB):&#160;&#160;8575<br>
+> ディスクの空き容量(MB):&#160;&#160;1592616<br>
 > デフォルト用紙サイズ&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;\[A4&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#x142f;\]<br>
 > すべてのユーザ向けにインストールする<br>
 > TeXworks&#160;をインストール<br>
@@ -129,7 +129,7 @@ pukiwiki: "TeX Live/Windows"
 
 <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
 
-\[インストール\] ボタンをクリックします。するとインストールを開始します。50分くらいかかります[^1]。
+\[インストール\] ボタンをクリックします。するとインストールを開始します。1時間くらいかかります[^1]。
 
 <!-- &ref(./2.png,100%); -->
 <!-- &ref(./final.png,100%); -->
@@ -138,7 +138,7 @@ pukiwiki: "TeX Live/Windows"
 
 > <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
-> Installing to: C:/texlive/2023<br> <!-- Time used for installing the packages: 48:53&br; --> <!-- running mktexlsr C:/texlive/2023/texmf-dist ...&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-dist/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-dist/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- writing fmtutil.cnf to C:/texlive/2023/texmf-dist/web2c/fmtutil.cnf&br; --> <!-- writing updmap.cfg to C:/texlive/2023/texmf-dist/web2c/updmap.cfg&br; --> <!-- writing language.dat to C:/texlive/2023/texmf-var/tex/generic/config/language.dat&br; --> <!-- writing language.def to C:/texlive/2023/texmf-var/tex/generic/config/language.def&br; --> <!-- writing language.dat.lua to C:/texlive/2023/texmf-var/tex/generic/config/language.dat.lua&br; --> <!-- running mktexlsr C:/texlive/2023/texmf-var C:/texlive/2023/texmf-config C:/texlive/2023/texmf-dist ...&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-var/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-var/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-config/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-config/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-dist/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-dist/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- running updmap-sys - -nohash ...done&br; --> <!-- re-running mktexlsr C:/texlive/2023/texmf-var C:/texlive/2023/texmf-config ...&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-var/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-var/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2023/texmf-config/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2023/texmf-config/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- setting up ConTeXt cache: running mtxrun - -generate ...done&br; --> <!-- running context - -luatex - -generate ...done&br; --> <!-- pre-generating all format files, be patient...&br; --> <!-- running fmtutil-sys - -no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit - -no-strict - -all ...done&br; --> <!-- running path adjustment actions&br; --> <!-- finished with path adjustment actions&br; --> <!-- running package-specific postactions&br; --> <!-- (ptex2pdf postinst: adjusting TeXworks tools.ini)(ptex2pdf postinst: adjusting &br; --> <!-- TeXworks.ini)3 個のファイルをコピーしました&br; --> <!-- 1 個のファイルをコピーしました&br; --> <!-- Running fc-cache -v -r&br; --> <!-- finished with package-specific postactions&br; -->
+> Installing to: C:/texlive/2024<br> <!-- Time used for installing the packages: 48:53&br; --> <!-- running mktexlsr C:/texlive/2024/texmf-dist ...&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-dist/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-dist/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- writing fmtutil.cnf to C:/texlive/2024/texmf-dist/web2c/fmtutil.cnf&br; --> <!-- writing updmap.cfg to C:/texlive/2024/texmf-dist/web2c/updmap.cfg&br; --> <!-- writing language.dat to C:/texlive/2024/texmf-var/tex/generic/config/language.dat&br; --> <!-- writing language.def to C:/texlive/2024/texmf-var/tex/generic/config/language.def&br; --> <!-- writing language.dat.lua to C:/texlive/2024/texmf-var/tex/generic/config/language.dat.lua&br; --> <!-- running mktexlsr C:/texlive/2024/texmf-var C:/texlive/2024/texmf-config C:/texlive/2024/texmf-dist ...&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-var/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-var/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-config/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-config/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-dist/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-dist/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- running updmap-sys - -nohash ...done&br; --> <!-- re-running mktexlsr C:/texlive/2024/texmf-var C:/texlive/2024/texmf-config ...&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-var/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-var/ls-R.&br; --> <!-- mktexlsr: Updating C:/texlive/2024/texmf-config/ls-R...&br; --> <!-- mktexlsr: Updated C:/texlive/2024/texmf-config/ls-R.&br; --> <!-- mktexlsr: Done.&br; --> <!-- setting up ConTeXt cache: running mtxrun - -generate ...done&br; --> <!-- running context - -luatex - -generate ...done&br; --> <!-- pre-generating all format files, be patient...&br; --> <!-- running fmtutil-sys - -no-error-if-no-engine=luametatex,luajithbtex,luajittex,mfluajit - -no-strict - -all ...done&br; --> <!-- running path adjustment actions&br; --> <!-- finished with path adjustment actions&br; --> <!-- running package-specific postactions&br; --> <!-- (ptex2pdf postinst: adjusting TeXworks tools.ini)(ptex2pdf postinst: adjusting &br; --> <!-- TeXworks.ini)3 個のファイルをコピーしました&br; --> <!-- 1 個のファイルをコピーしました&br; --> <!-- Running fc-cache -v -r&br; --> <!-- finished with package-specific postactions&br; -->
 > （途中省略）
 >
 > <br>
@@ -146,18 +146,20 @@ pukiwiki: "TeX Live/Windows"
 > <br>
 >
 > TeX Liveへようこそ！<br>
+> ドキュメントの一覧はC:/texlive/2024/index.htmlをご覧ください。<br>
 >
 > <br>
 >
-> <br>
->
-> ドキュメントの一覧はC:/texlive/2023/index.htmlをご覧ください。TeX <br>
+> TeX <br>
 > Liveのウェブサイト（[https://tug.org/texlive/](https://tug.org/texlive/)）にはすべてのアップデートとコレクションの情報が掲載さ<br>
 > れています。TeX Liveは全世界のTeXユーザ会有志による合同プロジェクトです。TeX <br>
 > Liveプロジェクトをサポートしていただける場合お好きなTeXユーザ会に入会することをご検討ください。TeX<br>
 > ユーザ会の一覧は[https://tug.org/usergroups.htmlでご確認いただけます](<https://tug.org/usergroups.htmlでご確認いただけます>)。<br>
-> Logfile: C:/texlive/2023/install-tl.log<br>
-> Installed on platform windows at C:/texlive/2023<br>
+>
+> <br>
+>
+> Logfile: C:/texlive/2024/install-tl.log<br>
+> Installed on platform windows at C:/texlive/2024<br>
 >
 > <br>
 >
@@ -169,7 +171,7 @@ pukiwiki: "TeX Live/Windows"
 
 #### テキストモードでのインストール {#f2f98067}
 
-Windows PowerShell またはコマンド プロンプトから install-tl-windows.bat に -no-gui オプションをつけて実行することで、テキストモードでのインストールが可能となります。
+ターミナルまたは Windows PowerShell またはコマンド プロンプトから install-tl-windows.bat に -no-gui オプションをつけて実行することで、テキストモードでのインストールが可能となります。
 
 > .\install-tl-windows.bat -help
 
@@ -187,7 +189,7 @@ ISO イメージが作成された当時に未解決であったバグや不具�
 ### トラブル時 {#s0045851}
 
 途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2023）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+また，インストールフォルダー（デフォルトではC:\texlive\2024）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
 
 TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
 
@@ -232,7 +234,7 @@ TeX Live 2020 対応の事例です．
 
 ## アップデート {#a6223106}
 
-\[スタート\] &gt; \[TeX Live 2023\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
+\[スタート\] &gt; \[TeX Live 2024\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
 \[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます．
 場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
 
@@ -246,7 +248,7 @@ tlmgr update --self --all
 
 ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
 
-- C:\texlive\2023\tlpkg\backups
+- C:\texlive\2024\tlpkg\backups
 
 にパッケージのバックアップが保存されます．
 アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
@@ -287,7 +289,7 @@ tlmgr update --self --all
     setx TEXLIVE_DOWNLOADER wget
     ```
 
-    C:\texlive\2023\tlpkg\installer\wget\\.wgetrc のファイルに以下のような内容で保存しておく。
+    C:\texlive\2024\tlpkg\installer\wget\\.wgetrc のファイルに以下のような内容で保存しておく。
 
     ```
     http_proxy=http://USER:PASSWORD@example.com:8080
@@ -297,7 +299,7 @@ tlmgr update --self --all
 
 ## アンインストール {#od7715ce}
 
-\[スタート\] &gt; \[TeX Live 2023\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です．
+\[スタート\] &gt; \[設定\] &gt; \[アプリ\] &gt; \[TeX Live 2024\] &gt; \[アンインストール\] を選択することで，TeX Live をアンインストールすることが可能です。
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
