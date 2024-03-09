@@ -24,21 +24,19 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - [https://mirrors.tuna.tsinghua.edu.cn/tlpretest/](https://mirrors.tuna.tsinghua.edu.cn/tlpretest/)
     - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
     - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
-- TeX Live ISO Images
-    - [http://ftp.math.utah.edu/pub/texlive/Images/test/](http://ftp.math.utah.edu/pub/texlive/Images/test/)
 
 ### TeX Live pretest のインストール {#j4d40fa3}
 
 #### Windows {#y535f93e}
 
 install-tl.zip をダウンロードして install-tl.zip を展開します．
-Windows PowerShell またはコマンド プロンプトから
+ターミナルから
 
 ```
 .\install-tl-windows.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
-または管理者として実行した Windows PowerShell またはコマンド プロンプトから
+または管理者として実行したターミナルから
 
 ```
 .\install-tl-advanced.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
