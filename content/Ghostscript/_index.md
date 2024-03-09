@@ -18,7 +18,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 - [ghostscript.com Mailing Lists](https://ghostscript.com/mailman/listinfo/)
     - [The gs-bugs Archives](https://ghostscript.com/pipermail/gs-bugs/)
     - [The gs-devel Archives](https://ghostscript.com/pipermail/gs-devel/)
-- [Welcome to Ghostscript &mdash; Ghostscript 10.03.0 documentation](https://ghostscript.readthedocs.io/)
+- [Welcome to Ghostscript &mdash; Ghostscript 10.04.0 documentation](https://ghostscript.readthedocs.io/)
     - [https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
 ***
@@ -80,7 +80,9 @@ Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
 
-Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([gs-9.22](https://okumuralab.org/tex/mod/forum/discuss.php?d=2276))
+[<strong>Ghostscript 10.03.0</strong> がリリースされました。<br><br>※ IPAフォントを指定した cidfmap を使って日本語データが問題なく印刷できることを確認しました。<br>$ gs /usr/share/ghostscript/10.03.0/examples/cjk/gscjk_aj.ps](https://twitter.com/jw_abekyun/status/1765766044860432515)
+
+<!-- Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([[gs-9.22:https://okumuralab.org/tex/mod/forum/discuss.php?d=2276]]) -->
 
 <!-- GNU Ghostscript 7.07 は日本の gs-cjk の寄与を含み，和文の扱い（縦書き）に優れています． -->
 <!-- 残念ながら Ghostscript 8 以降ではこれが削除されてしまいました． -->
