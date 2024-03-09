@@ -300,7 +300,7 @@ LyX のインストーラーを右クリックします。
 > <br>
 >
 > 　　　　"latex.exe"ファイルへのパス<br>
-> 　　　　　<ins>C:\texlive\2023\bin\windows</ins><br>
+> 　　　　　<ins>C:\texlive\2024\bin\windows</ins><br>
 >
 > <br>
 >
@@ -544,7 +544,7 @@ sudo zypper install lyx
 
 ### リリース情報 {#k8ba7cf7}
 
-- [http://git.lyx.org/?p=lyx.git;a=tags](http://git.lyx.org/?p=lyx.git;a=tags)
+- [https://git.lyx.org/gitweb/?p=lyx.git;a=tags](https://git.lyx.org/gitweb/?p=lyx.git;a=tags)
 - [LyX | ニュース](https://www.lyx.org/WebJa.News)
 
 を参照．
