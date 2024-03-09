@@ -27,7 +27,7 @@ $ sudo cjk-gs-integrate --link-texmf --force
 
 - [Richard Koch Home Page](https://pages.uoregon.edu/koch/)
 - [https://formulae.brew.sh/formula/ghostscript](https://formulae.brew.sh/formula/ghostscript)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/ghostscript.rb)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/ghostscript.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/ghostscript.rb)
 - [https://www.macports.org/ports.php?by=name&substr=ghostscript](https://www.macports.org/ports.php?by=name&substr=ghostscript)
     - [https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile](https://github.com/macports/macports-ports/blob/master/print/ghostscript/Portfile)
 
