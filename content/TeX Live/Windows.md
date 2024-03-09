@@ -171,7 +171,7 @@ pukiwiki: "TeX Live/Windows"
 
 #### テキストモードでのインストール {#f2f98067}
 
-ターミナルまたは Windows PowerShell またはコマンド プロンプトから install-tl-windows.bat に -no-gui オプションをつけて実行することで、テキストモードでのインストールが可能となります。
+ターミナルから install-tl-windows.bat に -no-gui オプションをつけて実行することで、テキストモードでのインストールが可能となります。
 
 > .\install-tl-windows.bat -help
 
