@@ -60,7 +60,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2023/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2024/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
