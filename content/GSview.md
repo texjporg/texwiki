@@ -11,7 +11,7 @@ pukiwiki: "GSview"
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
-なお、GSview 5.0 は gs-10.00.0 には対応していません。[GSview 5.01beta は gs-10.00.0 に対応しています。（動作確認済み）](/GSview/#install)
+なお、GSview 5.0 は gs-10.03.0 には対応していません。[GSview 5.01beta は gs-10.03.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
@@ -21,7 +21,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
-- GSview 5.0 は gs-10.00.0 には対応していません。[GSview 5.01beta は gs-10.00.0 に対応しています。（動作確認済み）](/GSview/#install)
+- GSview 5.0 は gs-10.03.0 には対応していません。[GSview 5.01beta は gs-10.03.0 に対応しています。（動作確認済み）](/GSview/#install)
 - gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して
     PDF を表示することは gs-9.27 では不可能になりましたので注意が必要です。
@@ -100,16 +100,16 @@ GSview のベータ版には使用期限が設けられており 5.01beta 2020-0
 
 を実行すると gsview-09e7545\bin に実行ファイル gsview64.exe が作成されます。
 
-64-bit 角藤版 Ghostscript 10.00.0 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
+64-bit Ghostscript 10.03.0 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行います。
 
 Ghostscript DLL:
-: C:\Program Files\gs\gs10.00.0\bin\gsdll64.dll
+: C:\Program Files\gs\gs10.03.0\bin\gsdll64.dll
 
 Ghostscript include Path:
-: C:\Program Files\gs\gs10.00.0\Resource\Init;C:\Program Files\gs\gs10.00.0\Resource;C:\Program Files\gs\gs10.00.0\bin;C:\Program Files\gs\gs10.00.0\lib;C:\Program Files\gs\gs10.00.0\kanji;C:\Program Files\gs\gs10.00.0\fonts
+: C:\Program Files\gs\gs10.03.0\bin;C:\Program Files\gs\gs10.03.0\lib;C:\Program Files\gs\gs10.03.0\fonts
 
 Ghostscript Options:
-: -dSAFER -dNOPLATFONTS -sFONTPATH="c:\psfonts"
+: -dNOPLATFONTS -sFONTPATH="c:\psfonts"
 
 ### 注意点 {#y9339e21}
 
