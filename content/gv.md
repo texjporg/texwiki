@@ -18,7 +18,7 @@ PostScript/PDF ファイルを表示します。
 
 [Cygwin](/Cygwin/) と [VcXsrv](https://sourceforge.net/projects/vcxsrv/) で gv が使用できます。
 
-VcXsrv を起動して Cygwin64 Terminal (64-bit Cygwin) あるいは Cygwin Terminal (32-bit Cygwin) から
+VcXsrv を起動して Cygwin64 Terminal (64-bit Cygwin) から
 
 ```
 DISPLAY=:0 gv foo.ps
@@ -37,15 +37,16 @@ gv foo.ps
 
 ### macOS {#k8b85c7c}
 
-- [https://github.com/denismm/homebrew-gv](https://github.com/denismm/homebrew-gv)
-    - [https://github.com/denismm/homebrew-gv/blob/master/Formula/gv.rb](https://github.com/denismm/homebrew-gv/blob/master/Formula/gv.rb)
+- [https://github.com/johnhcc/homebrew-gs-x11](https://github.com/johnhcc/homebrew-gs-x11)
+    - [https://github.com/johnhcc/homebrew-gs-x11/blob/main/Formula/gv.rb](https://github.com/johnhcc/homebrew-gs-x11/blob/main/Formula/gv.rb)
 
         ```
-        brew install denismm/gv/gv
+        brew install johnhcc/gs-x11/gv
         ```
 
-- [https://www.macports.org/ports.php?by=library&substr=gv](https://www.macports.org/ports.php?by=library&substr=gv)
+- [https://ports.macports.org/port/gv/](https://ports.macports.org/port/gv/)
     - [https://github.com/macports/macports-ports/blob/master/print/gv/Portfile](https://github.com/macports/macports-ports/blob/master/print/gv/Portfile)
+    - [74 久しぶりに Ghostscript でこけつまろびつ](https://m-katsurada.sakura.ne.jp/knowhow-2022/node74.html)
 
 ### Linux {#p8553828}
 
