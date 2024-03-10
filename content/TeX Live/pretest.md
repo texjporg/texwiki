@@ -39,7 +39,7 @@ install-tl.zip をダウンロードして install-tl.zip を展開します．
 または管理者として実行したターミナルから
 
 ```
-.\install-tl-advanced.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+.\install-tl-windows.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 を実行します．
