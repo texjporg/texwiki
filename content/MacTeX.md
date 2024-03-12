@@ -64,7 +64,7 @@ GUI Applications には以下のアプリケーションが収録されていま
     - メニューの「TeXShop」→「アップデートを確認...」を選択して TeXShop をアップデートします。アップデートが失敗する場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードし，アプリケーションフォルダ内の TeXShop.app を置き換えてください。
     - 設定は [TeXShop/設定](</TeXShop/設定/>) を参照してください。
 
-#### Ghostscript-10.02.1 {#n1354f54}
+#### Ghostscript-10.03.0 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
