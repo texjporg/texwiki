@@ -8,15 +8,15 @@ pukiwiki: "TeX Live"
 
 # TeX Live
 
-## [TeX Live](http://www.tug.org/texlive/) {#n4073ab3}
+## [TeX Live](https://www.tug.org/texlive/) {#n4073ab3}
 
 TeX Live は TeX のディストリビューションです．
 TeX の超巨大な集大成ともいえるもので，現在では国際的に最も普及している最新の TeX ディストリビューションです．
 
 <strong>公式サイト</strong>
 
-- [TeX Live - TeX Users Group](http://www.tug.org/texlive/)
-- [The tex-live Archives](http://tug.org/pipermail/tex-live/)
+- [TeX Live - TeX Users Group](https://www.tug.org/texlive/)
+- [The tex-live Archives](https://tug.org/pipermail/tex-live/)
 
 TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました．
 TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています．
