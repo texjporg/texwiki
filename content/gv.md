@@ -21,17 +21,17 @@ PostScript/PDF ファイルを表示します。
 VcXsrv を起動して Cygwin64 Terminal (64-bit Cygwin) から
 
 ```
-DISPLAY=:0 gv foo.ps
+DISPLAY=:0 gv file.ps
 ```
 
 あるいは
 
 ```
 export DISPLAY=:0
-gv foo.ps
+gv file.ps
 ```
 
-で foo.ps が gv で表示できます。
+で file.ps が gv で表示できます。
 
 適切に設定すれば日本語も表示可能です。
 
