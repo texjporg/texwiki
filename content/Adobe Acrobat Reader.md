@@ -62,10 +62,10 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2300820533/AcroRdrDCx642300820533_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2300820533/AcroRdrDCx642300820533_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
-    - [https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html](https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html)
+        <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
 
 ### macOS {#e9b65d66}
 
@@ -111,8 +111,8 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2300820533/AcroRdrDCx642300820533_ja_JP.exe
-wine64 AcroRdrDCx642300820533_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe
+wine64 AcroRdrDCx642400120604_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
@@ -252,7 +252,7 @@ exit                    exit acroview and pdfdde
 Windows 版の Adobe Acrobat Reader バージョン 2023 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
-> AcroViewA23
+> AcroViewA24
 
 という1行だけを持ち，ファイル名が
 
@@ -260,13 +260,13 @@ Windows 版の Adobe Acrobat Reader バージョン 2023 (64-bit)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewA23 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewA24 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
 
-AcroViewA23 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+AcroViewA24 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
 
 Windows PowerShell の場合は
 
@@ -498,6 +498,6 @@ synctex help edit
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23, Adobe Acrobat Reader Version 2024 (64-bit) は AcroViewA24 です。
 [^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
