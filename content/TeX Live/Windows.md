@@ -177,7 +177,7 @@ pukiwiki: "TeX Live/Windows"
 
 を実行してヘルプを参照してください。
 
-- [WimdowsにTeX Live 2024をインストールした。isoイメージをマウントしてinstall-tl-windows.batを実行したが、GUIがエラーを出す。結局、コマンドプロンプトで<br>> install-tl-windows.bat -no-gui<br>として、上手くインストールできた。](https://twitter.com/HelosianAgent/status/1768959460737995008)
+- [WindowsにTeX Live 2024をインストールした。isoイメージをマウントしてinstall-tl-windows.batを実行したが、GUIがエラーを出す。結局、コマンドプロンプトで<br>> install-tl-windows.bat -no-gui<br>として、上手くインストールできた。](https://twitter.com/HelosianAgent/status/1768959460737995008)
 
 ### ISO イメージからのインストール {#zc468876}
 
