@@ -177,6 +177,8 @@ pukiwiki: "TeX Live/Windows"
 
 を実行してヘルプを参照してください。
 
+- [WimdowsにTeX Live 2024をインストールした。isoイメージをマウントしてinstall-tl-windows.batを実行したが、GUIがエラーを出す。結局、コマンドプロンプトで<br>> install-tl-windows.bat -no-gui<br>として、上手くインストールできた。](https://twitter.com/HelosianAgent/status/1768959460737995008)
+
 ### ISO イメージからのインストール {#zc468876}
 
 [Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) から ISO イメージがダウンロードできます．
@@ -238,11 +240,13 @@ TeX Live 2020 対応の事例です．
 
 ## アップデート {#a6223106}
 
-\[スタート\] &gt; \[TeX Live 2024\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です．
-\[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます．
-場合によっては（特にインストール直後などは）かなり時間がかかることもあります．
+\[スタート\] &gt; \[TeX Live 2024\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です。
 
-コマンドラインから
+\[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます。
+
+場合によっては（特にインストール直後などは）かなり時間がかかることもあります。
+
+ターミナルから
 
 ```
 tlmgr update --self --all
@@ -250,14 +254,14 @@ tlmgr update --self --all
 
 でも行えます．
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません．
+ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません。
 
 - C:\texlive\2024\tlpkg\backups
 
-にパッケージのバックアップが保存されます．
-アップデートによって動作しなくなった場合は以前のバージョンに戻してください．
+にパッケージのバックアップが保存されます。
+アップデートによって動作しなくなった場合は以前のバージョンに戻してください。
 
-- アップデートが失敗した場合は以下の例のように再度アップデートできる
+- アップデートが失敗した場合は以下の例のように再度アップデートできます。
 
     ```
     tlmgr update --reinstall-forcibly-removed --all --repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
@@ -268,7 +272,7 @@ tlmgr update --self --all
 - [tlmgr](/tlmgr/) (コマンドライン)
 - [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) (GUI)
 
-で管理できます．
+で管理できます。
 
 ### プロキシ認証が必要な場合 {#a1f81a23}
 
