@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2024 には LuaHBTeX 1.18.0, LuaTeX 1.18.0 が収録されています。
+
 TeX Live 2023 [Revision 66967](https://tug.org/svn/texlive?view=revision&revision=66967), [Revision 66994](https://tug.org/svn/texlive?view=revision&revision=66994) には LuaHBTeX 1.17.0, LuaTeX 1.17.0 が収録されています。
 
 TeX Live 2023 初回リリース版には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。
@@ -40,6 +42,8 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 2016 年に LuaTeX 1.0.0 がリリースされました。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2024 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
 TeX Live 2023 には内蔵 Lua 処理系のバージョンが 5.3.6 である LuaHBTeX バイナリと LuaTeX バイナリが収録されています。
 
