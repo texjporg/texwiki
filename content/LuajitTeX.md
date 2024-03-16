@@ -13,7 +13,7 @@ LuajitTeX は [LuaTeX](/LuaTeX/) で使用されている [Lua](http://www.lua.o
 [LuaJIT](http://luajit.org/) に置き換えたものです．
 JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compiler，つまりその場で機械語へのコンパイルを行うという意味であり，これによりインタプリタ方式の通常の Lua よりも高速な動作が期待できます．
 
-- [http://www.ntg.nl/pipermail/ntg-context/2014/076633.html](http://www.ntg.nl/pipermail/ntg-context/2014/076633.html)
+- [https://mailman.ntg.nl/archives/list/ntg-context@ntg.nl/thread/N5TUUVQJTL7RSKIMDUIW7ESZEAFABWDP/](https://mailman.ntg.nl/archives/list/ntg-context@ntg.nl/thread/N5TUUVQJTL7RSKIMDUIW7ESZEAFABWDP/)
 
 上のように現在では LuaTeX と共通のソースとなっています．
 
@@ -22,6 +22,8 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 ***
 
 ### お知らせ {#jd858e78}
+
+TeX Live 2024 には LuajitHBTeX 1.18.0, LuajitTeX 1.18.0 が収録されています。
 
 TeX Live 2023 [Revision 66967](https://tug.org/svn/texlive?view=revision&revision=66967), [Revision 66994](https://tug.org/svn/texlive?view=revision&revision=66994) には LuajitHBTeX 1.17.0, LuajitTeX 1.17.0 が収録されています。
 
@@ -40,6 +42,8 @@ TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
 TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 #### 内蔵 LuaJIT 処理系のバージョン {#db5f144e}
+
+TeX Live 2024 には LuaJIT 2.1.0-beta3 が収録されています。
 
 TeX Live 2023 には LuaJIT 2.1.0-beta3 が収録されています。
 
@@ -154,8 +158,6 @@ LuajitTeX は MessageBox などの Windows API を呼び出すことが可能で
 ### 関連リンク {#s999db35}
 
 - [QA: luajittex](https://okumuralab.org/tex/mod/forum/discuss.php?d=911)
-- [http://standalone.contextgarden.net/current/bin/luajittex/](http://standalone.contextgarden.net/current/bin/luajittex/)
-- [http://svn.contextgarden.net/suite-bin/tex/](http://svn.contextgarden.net/suite-bin/tex/)
 
 #### License {#a9b7759e}
 
