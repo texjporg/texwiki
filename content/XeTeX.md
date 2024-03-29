@@ -126,6 +126,9 @@ TeX Live 2014 以降はWindows版においてファイル名に日本語や他�
 - \[[texlive\] Revision 32700](http://www.tug.org/svn/texlive?view=revision&revision=32700)
 - [xetex \[WIN32\]: Accept Unicode characters from STDIN on console](https://sourceforge.net/p/xetex/code/ci/3aff45f7aa7128fb489e2f0c78738a365d3dd630/)
 - [xetex \[win32\]: Display output of Unicode characters on console](https://sourceforge.net/p/xetex/code/ci/1da0e01d6a99108f284953aac94b4f874bdd997f/)
+- \[[XeTeX\] BMP超のファイル名の読み込みに失敗する](https://github.com/texjporg/tex-jp-build/issues/164)
+- \[[texlive\] Revision 70121](http://www.tug.org/svn/texlive?view=revision&revision=70121)
+- \[[texlive\] Revision 70123](http://www.tug.org/svn/texlive?view=revision&revision=70123)
 
 ## 不具合 {#u41787d2}
 
