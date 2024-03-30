@@ -23,14 +23,16 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 ### ChangeLog {#td463767}
 
-[コミットログ](https://github.com/josephwright/beamer/commits/master) を参照．
+- [CHANGELOG.md](https://github.com/josephwright/beamer/blob/main/CHANGELOG.md)
+- [コミットログ](https://github.com/josephwright/beamer/commits/main/)
+
+を参照．
 
 ### 利用可能な TeX ディストリビューション {#k1d828cf}
 
 Beamer は
 
 - [TeX Live](</TeX Live/>)
-- [W32TeX](/W32TeX/)
 - [MiKTeX](/MiKTeX/)
 
 で利用可能です．
