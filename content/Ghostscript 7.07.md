@@ -345,7 +345,7 @@ Ghostscript にはかつて（2006年頃まで），ライセンス形態によ�
 - リリースから一定の期間が経つと，よりアドバンテージのある最新バージョンを AFPL とするかわりに，古いバージョンに若干の修正を施したものを GPL Ghostscript としてリリースする
 
 という慣習でした[^2]。
-しかし AFPL Ghostscript は廃れてしまい，2006年の gs8.54 以降は GPL Ghostscript が最新バージョンとして開発されています（[参考](http://www.advogato.org/person/raph/diary.html?start=411)）。
+しかし AFPL Ghostscript は廃れてしまい，2006年の gs8.54 以降は GPL Ghostscript が最新バージョンとして開発されています（[参考](https://web.archive.org/web/20170629021353/http://www.advogato.org/person/raph/diary.html?start=411)）。
 ライセンスとバージョン番号の関係は [Ghostscript - pteTeX Wiki](http://tutimura.ath.cx/ptetex/?Ghostscript) で詳しく説明されています。
 
 Ghostscript は長らく日本語に対応しておらず，日本語化・CJK 化がさまざまな有志によって取り組まれてきました。
@@ -386,7 +386,7 @@ GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクで�
 - [ghostscript-7.07 のインストール](https://www.uconst.org/blog/archives/38)
 - [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](https://web.archive.org/web/20120418134149/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](https://web.archive.org/web/20101128090721/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
-- [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
+- [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](https://web.archive.org/web/20160316030258/http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
 - [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090925053250/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
 - [Ghostscript と Prosper のインストール](http://emoken.net/blog2/item_39.html)（Windows でのインストール事例）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
