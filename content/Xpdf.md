@@ -39,7 +39,7 @@ XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用
 
 Xpdf 4.00 で GUI に使用されるツールキットが Motif から Qt に変更されました。
 
-現在の Linux ディストリビューションや TeX Live 2017 (win32, win64) 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
+現在の Linux ディストリビューションや TeX Live 2017 (windows) 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
 
 ### Xpdf のツール一覧 {#tools}
 
@@ -61,20 +61,20 @@ PDF ビューアである [xpdf](http://www.xpdfreader.com/xpdf-man.html)（Xpdf
 
 [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Windows 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf command line tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
 
-Windows の場合は Xpdf command line tools をインストールしなくても [TeX Live](</TeX Live/>) (win32, win64) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前に含まれていた xpdf utilities は TeX Live 2017 以降は poppler utilities で置き換えられました。
+Windows の場合は Xpdf command line tools をインストールしなくても [TeX Live](</TeX Live/>) がインストールされていれば poppler utilities がすぐに使える状態になっています。TeX Live 2016 以前に含まれていた xpdf utilities は TeX Live 2017 以降は poppler utilities で置き換えられました。
 
 #### macOS {#inst-mac}
 
 macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
-Xpdf 4.04 の場合
+Xpdf 4.05 の場合
 
 - 公式サイトのバイナリを使用する方法
     - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf command line tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
 
 - Homebrew を用いる方法
     - [https://formulae.brew.sh/formula/xpdf](https://formulae.brew.sh/formula/xpdf)
-        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/xpdf.rb)
+        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/x/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/x/xpdf.rb)
 
             ```
             $ brew install xpdf
@@ -108,7 +108,7 @@ Xpdf 3.04 の場合
         ```
 
         さらに言語設定が必要です（以下のディレクトリ名は
-        MacPorts の場合。Homebrew なら /opt/local ではなく /usr/local/ のはず）。
+        MacPorts の場合。Homebrew なら /opt/local ではなく Apple Silicon 版では /opt/homebrew/ Intel 版では /usr/local/ のはず）。
         日本語を用いる場合は xpdf-japanese もインストールし，/opt/local/etc/xpdfrc を編集します。
 
         ```
@@ -138,13 +138,13 @@ Xpdf 3.04 の場合
 
 #### Linux {#inst-linux}
 
-[http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Linux 版の XpdfReader（64-bit 版と 32-bit 版がそれぞれ用意されている）と Xpdf command line tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
+[http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Linux 版の XpdfReader（64-bit 版が用意されている）と Xpdf command line tools（64-bit/32-bit 両方のバイナリが収録されている）がダウンロードできます。
 
 Linux の場合は Xpdf command line tools をインストールしなくても poppler-utils（Linux Mint/Debian/Ubuntu や Fedora など）あるいは poppler（Arch Linux など）という名前のパッケージと poppler-data をインストールすれば poppler utilities が使用できます。
 
 ### お知らせ {#notice}
 
-- [［改訂第6版］LaTeX2e 美文書作成入門サポートページ](http://oku.edu.mie-u.ac.jp/~okumura/bibun6/)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています。
+- [［改訂第6版］LaTeX2e 美文書作成入門サポートページ](https://okumuralab.org/~okumura/bibun6/)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています。
 
 ### 関連記事 {#links}
 
