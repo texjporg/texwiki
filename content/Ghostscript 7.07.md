@@ -382,9 +382,9 @@ Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクですが，いまでも一部は参考になるかもしれません。 <!-- gs-cjk に関する記述も10年以上経過してほとんど残っていないようなので， --> <!-- 言及があるサイトは（たとえ内容が gs7.07 でなくても）リンクに加えた -->
 
 - [Windows 用 Ghostscript 7.07 の環境設定](https://chirimenmonster.github.io/2021/08/22/gs7win.html)
-- [Overview of Ghostscript](http://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
+- [Overview of Ghostscript](https://web.archive.org/web/20171203015058/https://ghostscript.com/doc/7.07/Readme.htm) ← 公式ドキュメント
 - [ghostscript-7.07 のインストール](https://www.uconst.org/blog/archives/38)
-- [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
+- [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](https://web.archive.org/web/20120418134149/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](https://web.archive.org/web/20101128090721/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
 - [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
 - [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090925053250/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
