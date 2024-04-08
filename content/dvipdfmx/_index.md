@@ -389,12 +389,14 @@ TeX Live 2016 以降では，\includegraphics に pagebox オプションによ�
 
 ### dvipdfmx Version 20240305 でのみ起こる不具合 {#a8a0635d}
 
-以下の不具合は TeX Live 2023 (dvipdfmx Version 20230429) では問題ない，TeX Live 2024 (dvipdfmx Version 20240305) に特有のものです．
-最新のバージョンにアップデートして下さい．
+以下の不具合は TeX Live 2024 (dvipdfmx Version 20240305) に特有のものです．
+TeX Live 2023 (dvipdfmx Version 20230429) では問題ありません．
+[dvipdfmx Version 20240407](https://tug.org/svn/texlive?revision=70880&view=revision) で修正されました．
 
 #### dvipdfmx Version 20240305 で PDF ファイルサイズが肥大化する {#le72b5c5}
 
 - [dvipdfmxのバージョンでPDFファイルサイズが肥大化する](https://okumuralab.org/tex/mod/forum/discuss.php?d=3743)
+- [dvipdfm-x: fix issue when including the same image multiple times #169](https://github.com/texjporg/tex-jp-build/pull/169)
 
 ### dvipdfmx Version 20130624 でのみ起こる不具合 {#j774c931}
 
