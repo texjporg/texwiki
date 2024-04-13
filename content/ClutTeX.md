@@ -20,6 +20,7 @@ pukiwiki: "ClutTeX"
 
 ### リンク {#c70eb111}
 
-- [CTAN](https://ctan.org/pkg/cluttex)
+- [CTAN:support/cluttex](https://mirror.ctan.org/support/cluttex)
 - [GitHub](https://github.com/minoki/cluttex)
 - [LaTeX処理自動化ツール ClutTeX をリリースした](https://blog.miz-ar.info/2018/10/cluttex-release/)
+- [https://twitter.com/search?q=ClutTeX&f=live](https://twitter.com/search?q=ClutTeX&f=live)
