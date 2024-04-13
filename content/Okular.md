@@ -43,7 +43,7 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-[https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP](https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP) または [https://binary-factory.kde.org/job/Okular_Nightly_win64/](https://binary-factory.kde.org/job/Okular_Nightly_win64/) または [https://download.kde.org/Attic/release-service/23.08.1/windows/](https://download.kde.org/Attic/release-service/23.08.1/windows/) または [http://www.30agustososb.com/software/okular/](http://www.30agustososb.com/software/okular/) から Okular のインストーラーをダウンロードしてインストールできます．
+[https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) または [https://cdn.kde.org/ci-builds/graphics/okular/release-23.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-23.08/windows/) または [https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP](https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP) から Okular のインストーラーをダウンロードしてインストールできます．
 
 winget でインストールすることもできます．[https://winget.run/pkg/KDE/Okular](https://winget.run/pkg/KDE/Okular) や [https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular](https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular) を参照してください．
 
@@ -54,6 +54,8 @@ Chocolatey でインストールすることもできます．[https://chocolate
 ### macOS {#ye831736}
 
 - [https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb)
+- [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/)
+- [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-x86_64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-x86_64/)
 
 ### Linux {#c209770f}
 
