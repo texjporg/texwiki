@@ -7,7 +7,9 @@ pukiwiki: "Metafile to EPS Converter"
 
 # Metafile to EPS Converter
 
-Metafile to EPS Converter は EMF/WMF ファイルを EPS ファイルに変換するツールです。
+Metafile to EPS Converter (metafile2eps) は EMF/WMF ファイルを EPS ファイルに変換するツールです。
+
+PowerPoint の図を EPS ファイルに変換することもできます。
 
 ### 公式サイト {#m7061940}
 
@@ -33,6 +35,8 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 
 ### 関連リンク {#o6f53214}
 
+- [LaTeX図表の記述方法 - 制御工学ブログ#図の作成](https://blog.control-theory.com/entry/2024/02/18/120451#%E5%9B%B3%E3%81%AE%E4%BD%9C%E6%88%90)
+- [学術論文とプレゼンテーションで使う図の作成方法](https://note.com/control_eng_ch/n/n1759a3c6daf0)
 - [TeXに貼る図の作り方 EPS or PDF](http://qiita.com/patekawa/items/fe18b8a779af02bf23e3)
 - [Metafile to EPS Converter で Windows Metafile を EPS に変換](http://qiita.com/tubo28/items/1f8672fb164aafa9ab31)
 - [EPS変換 Metafile to EPS Converter](http://ameblo.jp/amazingsky/entry-12062809562.html)
@@ -41,3 +45,4 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 - [ExcelのグラフをTeXに持ち込む](http://www.caspar003.info/delta/archive/2011/09/26/2337)
 - [How to Convert PowerPoint Pictures for Use in LaTeX](http://www.cs.bu.edu/~reyzin/pictips.html)
 - [http://tex.stackexchange.com/questions/21418/inserting-a-emf-file-into-a-latex-document](http://tex.stackexchange.com/questions/21418/inserting-a-emf-file-into-a-latex-document)
+- [https://twitter.com/search?q=metafile2eps&f=live](https://twitter.com/search?q=metafile2eps&f=live)
