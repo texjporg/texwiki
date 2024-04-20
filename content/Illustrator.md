@@ -7,9 +7,9 @@ pukiwiki: "Illustrator"
 
 # Illustrator
 
-## [Adobe Illustrator CC](http://www.adobe.com/jp/products/illustrator.html) {#w6d2965c}
+## [Adobe Illustrator](http://www.adobe.com/jp/products/illustrator.html) {#w6d2965c}
 
-Illustrator は，アドビシステムズが販売するベクター画像編集ソフトウェア（ドローソフト）です。
+Illustrator は，アドビが販売するベクター画像編集ソフトウェア（ドローソフト）です。
 ここでは，TeX や LaTeX と関連づけた利用法を説明します。
 
 ***
@@ -21,7 +21,7 @@ Illustrator は，アドビシステムズが販売するベクター画像編�
 ### ai/PDF 形式ファイル {#l3862bb1}
 
 最終的に PDF で出力するならば，Adobe Illustrator Artwork （拡張子 “.ai”）のままで OK です。
-TeX Live 2016 以降, W32TeX では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。
+TeX Live 2016 以降では dvipdfmx で Adobe Illustrator Artwork （拡張子 “.ai”）がサポートされています。
 
 なお Adobe Illustrator の Artwork （拡張子 “.ai”）と同 PDF （拡張子 “.pdf”）ファイル（両者は実質的に同等）は，EPS 仕様型の bounding box 情報（描かれている図形ぴったりの矩形サイズの値）が内部に書き込まれています。
 TeX文書内への図の挿入は EPS ファイルの場合と同様に処理されます（[LaTeX入門/図表](</LaTeX入門/図表/>)も参照のこと）。 <!-- AI 形式は実質的に PDF なので，[[LaTeX入門/図表]]と同様に処理できる。Ghostscript が呼び出されないので処理も高速 -->
@@ -32,8 +32,8 @@ bounding box 情報に CropBox を指定する場合は
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
+\documentclass[uplatex,dvipdfmx]{jlreq}
+\usepackage{graphicx}
 \begin{document}
 \includegraphics[pagebox=cropbox]{hoge.ai}
 \end{document}
@@ -43,8 +43,8 @@ bounding box 情報に ArtBox を指定する場合は
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvipdfmx]{graphicx}
+\documentclass[uplatex,dvipdfmx]{jlreq}
+\usepackage{graphicx}
 \begin{document}
 \includegraphics[pagebox=artbox]{hoge.ai}
 \end{document}
@@ -56,8 +56,8 @@ Illustrator で EPS 保存したものを LaTeX に挿入する例：
 
 ```
 %%% -*- mode: yatex; Coding: utf-8; Encoding: UTF-8 -*-
-\documentclass[uplatex]{jsarticle}
-\usepackage[dvips]{graphicx}
+\documentclass[uplatex,dvipdfmx]{jlreq}
+\usepackage{graphicx}
 \begin{document}
 \includegraphics[width=50mm,clip]{hoge.eps}
 \end{document}
@@ -144,7 +144,7 @@ eq.tex の雛形になるテキストファイルです．テキストドキュ�
 作成したフォルダに保存します． <!-- 以下は一例ですので，場合によってはフォントサイズを変えたり適当なパッケージを読み込んだり，好きなマクロを追加したり自由に改変してください． -->
 
 ```
-\documentclass[uplatex,12pt]{jsarticle}
+\documentclass[uplatex,dvipdfmx,12pt]{jlreq}
 \pagestyle{empty}
 \usepackage{%
 amsmath,%
@@ -176,7 +176,7 @@ rungs -q -sDEVICE=eps2write -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutput
 #### TeX(&amp;T).js {#w5a4bc73}
 
 Illustrator CC で作業中に呼び出すことになるスクリプトです．
-テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
+テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator 2024\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator 2024\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
 
 第一行目の「AI = "/C/AI/";」は，[作業フォルダの作成](/Illustrator/#q425d35e)で作成したフォルダ名を指定しています．例えば，作業フォルダが"D:\hoge\test\\" なら，「AI = "/D/hoge/test/"」のように書き換えてください． <!-- [[作業用フォルダの作成>Illustrator#q425d35e]]でC:\Documents and Settings\All Users\Application Data\Adobe\Illustrator CS\temp\を作った場合は「AI = "/C/Documents and Settings/All Users/Application Data/Adobe/Illustrator CS/temp/";」に書き換えてください． -->
 
