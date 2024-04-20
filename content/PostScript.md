@@ -9,12 +9,37 @@ pukiwiki: "PostScript"
 
 ## PostScript {#g9b8f6ae}
 
-PostScript は業界標準のページ記述言語です．
+PostScript は DTP 業界標準のページ記述言語です．
 [PDF](/PDF/) は PostScript を元にして策定されました．
 
 ***
 
 ***
+
+### お知らせ {#wbf44675}
+
+EPS 形式は現在では非推奨です。
+
+- [ 10年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
+- [PDF&#x26;出力の手引き2024](https://blog.adobe.com/jp/publish/2023/11/16/cc-design-print2024)
+
+> <strong>※従来一般的であった EPS 形式は現在のワークフローには適していません。</strong><br>
+>
+> 　<strong>特別な場合を除き、EPS 以外のファイル形式をご利用ください。</strong><br>
+
+> mac OS 14 から OS での PostScript、EPS のプレビューはできなくなりました。<br>
+> プレビューする際は Acrobat などの対応アプリをご利用ください。<br>
+> ▶ [https://support.apple.com/ja-jp/108775](https://support.apple.com/ja-jp/108775)
+
+<strong>Creative Cloud を利用したワークフローの場合、入稿データは「PDF/X-4( ※ EPS 使用不可 )」を推奨します。</strong><br>
+
+macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換する機能が削除されました。
+
+- [Mac で .ps ファイルや .eps ファイルを表示する](https://support.apple.com/ja-jp/108775)
+- [macOS14 Sonoma でEPSをプレビューしたい](https://discussionsjapan.apple.com/thread/255488713)
+- [macOS 14 Sonomaでは、PostScriptとEPSのサポート終了がさらに進み、.ps/.epsファイルをプリンタキューにも追加できない状態に。](https://applech2.com/archives/macos-14-sonoma-eos-ps-and-eps.html)
+- [Apple、macOS 14 SonomaでPostScriptとEPSファイルをPDFへ変換する機能を削除。これによりAdobeのAcrobatなどでPDFファイルを印刷できなくなっているので注意を。](https://applech2.com/archives/20230612-apple-remove-ps-eps-to-pdf-from-macos-14-sonoma.html)
+- [Apple、macOS 13 VenturaのプレビューアプリでPostScript(.ps/.eps)ファイルのサポートを終了。](https://applech2.com/archives/20221028-macos-13-ventura-preview-app-drop-support-postscript.html)
 
 ### 技術情報 {#h5ddd3dc}
 
@@ -31,9 +56,9 @@ PostScript の技術情報は Adobe の [Technical Notes for Developers](http://
 
 [Ghostscript](/Ghostscript/) は PostScript/PDF インタープリタ (ソフトウェア RIP) です．
 
-#### Adobe Acrobat Distiller DC {#l57d69fc}
+#### Adobe Acrobat Distiller {#l57d69fc}
 
-Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するためのソフトウェアです．
+Adobe Acrobat Distiller は PostScript ファイルを PDF に変換するためのソフトウェアです．
 
 - [Creating PDFs with Acrobat Distiller](https://helpx.adobe.com/acrobat/using/creating-pdfs-acrobat-distiller.html)
 - [Acrobat Distiller による PDF の作成](https://helpx.adobe.com/jp/acrobat/using/creating-pdfs-acrobat-distiller.html)
@@ -58,4 +83,3 @@ Adobe Acrobat Distiller DC は PostScript ファイルを PDF に変換するた
 - [ページ記述言語 ポストスクリプトマニュアル](https://www1.doshisha.ac.jp/~jmizushi/ps.html)（同志社大学 水島研究室）
 - [PostScript Programing 入門](http://apollon.issp.u-tokyo.ac.jp/~watanabe/ps/)
 - [EPSグラフィック直書き入門](http://yubais.net/doc/eps/)
-- [Apple、macOS 13 VenturaのプレビューアプリでPostScript(.ps/.eps)ファイルのサポートを終了。](https://applech2.com/archives/20221028-macos-13-ventura-preview-app-drop-support-postscript.html)
