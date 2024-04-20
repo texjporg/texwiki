@@ -24,16 +24,13 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 </tbody>
 </table>
 
-[PostScript や EPS をインポートするには、Ghostscript をインストールする必要があり、ps2pdf が環境変数 Path 上になければなりません。](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
+[PostScript や EPS をインポートするには、Ghostscript をインストールする必要があり、ps2pdf が環境変数 Path 上になければなりません。](https://inkscape.org/ja/learn/faq-ja/#how-open-eps-files-windows)
 
 - [Inkscape 公式サイト](https://inkscape.org/)
 - [Inkscape 開発サイト](https://gitlab.com/inkscape/inkscape)
     - [コミットログ](https://gitlab.com/inkscape/inkscape/commits/master)
+    - [よくある質問 | Inkscape](https://inkscape.org/ja/learn/faq-ja/)
 - [Inkscape Wiki](http://wiki.inkscape.org)
-    - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
-    - [FAQ (Japanese) - Inkscape Wiki](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)>)
-        - [数学記号や特殊記号を入力するには?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#.E6.95.B0.E5.AD.A6.E8.A8.98.E5.8F.B7.E3.82.84.E7.89.B9.E6.AE.8A.E8.A8.98.E5.8F.B7.E3.82.92.E5.85.A5.E5.8A.9B.E3.81.99.E3.82.8B.E3.81.AB.E3.81.AF.3F>)
-        - [Inkscapeでインポート/エクスポートできるファイル形式はなんですか?](<http://wiki.inkscape.org/wiki/index.php/FAQ_(Japanese)#Inkscape.E3.81.A7.E3.82.A4.E3.83.B3.E3.83.9D.E3.83.BC.E3.83.88.2F.E3.82.A8.E3.82.AF.E3.82.B9.E3.83.9D.E3.83.BC.E3.83.88.E3.81.A7.E3.81.8D.E3.82.8B.E3.83.95.E3.82.A1.E3.82.A4.E3.83.AB.E5.BD.A2.E5.BC.8F.E3.81.AF.E3.81.AA.E3.82.93.E3.81.A7.E3.81.99.E3.81.8B.3F>)
     - [Tools](http://wiki.inkscape.org/wiki/index.php/Tools)
     - [Extension repository](http://wiki.inkscape.org/wiki/index.php/ExtensionsRepository)
 
@@ -60,6 +57,11 @@ Windows, macOS, Linux
 ## 不具合 {#caadafb3}
 
 - [https://gitlab.com/inkscape/inkscape/issues](https://gitlab.com/inkscape/inkscape/issues)
+
+## SVG/PowerPoint → PDF/EPS {#ha8334f6}
+
+- [PowerPointの図からInkscapeで余白のないPDFとEPSファイルを作成する方法](https://note.com/assistdev/n/nbdce484a091f)
+- [Inkscapeを使ってPowerPoint図をEPS画像に変換する](https://catdance124.hatenablog.jp/entry/2020/11/02/102253)
 
 ## PDF/EPS/PS + LaTeX {#d6b72996}
 
@@ -112,12 +114,22 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 
 コマンドラインから PDF, EPS, PS のテキストを除外して LaTeX ファイルを出力することも可能です．
 
-<!-- -https://inkscape.modevia.com/inkscape-man.html -->
+- [https://inkscape.org/nl/forums/questions/what-happened-to-save-as-pdf-tex/](https://inkscape.org/nl/forums/questions/what-happened-to-save-as-pdf-tex/)
+
+Windows の場合
 
 ```
-inkscape -D -z --file=image.svg --export-pdf=image.pdf --export-latex
-inkscape -D -z --file=image.svg --export-eps=image.eps --export-latex
-inkscape -D -z --file=image.svg --export-ps=image.ps --export-latex
+inkscape.com --export-type=pdf --export-latex file.svg
+inkscape.com --export-type=eps --export-latex file.svg
+inkscape.com --export-type=ps --export-latex file.svg
+```
+
+macOS, Linux の場合
+
+```
+inkscape --export-type=pdf --export-latex file.svg
+inkscape --export-type=eps --export-latex file.svg
+inkscape --export-type=ps --export-latex file.svg
 ```
 
 ## svg – Include and extract SVG pictures in LaTeX documents {#p2c351e1}
@@ -192,7 +204,7 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 
 ## Inkscape で TeX 数式 {#f9da7d32}
 
-[TeX2img](/TeX2img/) (Windows/Mac) を使用して，TeX ソースから数式画像を EPS/PDF 形式でアウトライン化して出力するのが簡単です．
+[TeX2img](/TeX2img/) (Windows/Mac) を使用して，TeX ソースから数式画像を PDF/EPS 形式でアウトライン化して出力するのが簡単です．
 なお，TeX2img は数式以外の地の文や日本語も問題なく処理できます．
 
 - [InkscapeでTeX数式](http://hooktail.org/computer/index.php?Inkscape%A4%C7TeX%BF%F4%BC%B0)
