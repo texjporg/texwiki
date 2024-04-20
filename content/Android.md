@@ -31,17 +31,17 @@ pukiwiki: "Android"
 
 ## PDF ビューア {#t5fdeba9}
 
-- [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdfdemo)
+- [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdf.viewer.app)
     <!-- - -MuPDF ベースの派生版 -->
     <!-- - --[[PDFView:https://play.google.com/store/apps/details?id=com.acadoid.pdfview]] -->
     <!-- - --[[APV PDF Viewer:https://play.google.com/store/apps/details?id=cx.hell.android.pdfview]] -->
 
-- [Foxit PDF Reader &amp; Editor](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
+- [Foxit PDF Editor](https://play.google.com/store/apps/details?id=com.foxit.mobile.pdf.lite)
 - [Adobe Acrobat Reader](https://play.google.com/store/apps/details?id=com.adobe.reader)
 
 ## BibTeX 関連 {#m2bc1f0c}
 
-- [Androidの文献管理アプリ](http://myfuturesightforpast.blogspot.jp/2014/04/android_19.html)
+- [Paperpile](https://play.google.com/store/apps/details?id=com.paperpile)
 
 ## 関連リンク {#o413eb91}
 
