@@ -9,7 +9,7 @@ pukiwiki: "PDF"
 
 ## PDF {#kf03468a}
 
-PDF (Portable Document Format) は [アドビシステムズ (Adobe Systems Incorporated)](https://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
+PDF (Portable Document Format) は [アドビ (Adobe)](https://www.adobe.com/) により，[PostScript](/PostScript/) をベースに開発された電子文書フォーマットです．
 現在は，国際規格 [ISO 32000-2:2020](https://www.iso.org/standard/75839.html) として ISO により公開されています．
 PDF の基本は，紙に書かれた文書を電子文書として表現することですが，単なるページ記述言語の枠を超え，HTML のようなハイパーリンクによる文書内外のデータの相互リンク，JavaScript などによるインタラクティブなコンテンツや動画の再生機能なども備えています．
 
@@ -60,7 +60,7 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 有償のソフトウェアも様々な価格帯で多数あります．
 
 - [Adobe Acrobat](https://www.adobe.com/jp/acrobat.html)
-    ([Adobe Systems](https://www.adobe.com/jp/))
+    ([Adobe](https://www.adobe.com/jp/))
 
 - [いきなりPDF シリーズ](http://www.sourcenext.com/product/pdf/)
     ([ソースネクスト](http://www.sourcenext.com/))
