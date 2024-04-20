@@ -20,7 +20,8 @@ PostScript は DTP 業界標準のページ記述言語です．
 
 EPS 形式は現在では非推奨です。
 
-- [ 10年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
+- [EPS形式のファイルはもう古い！？](https://rokustar.com/blog/archives/525)
+- [10年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
 - [PDF&#x26;出力の手引き2024](https://blog.adobe.com/jp/publish/2023/11/16/cc-design-print2024)
 
 > <strong>※従来一般的であった EPS 形式は現在のワークフローには適していません。</strong><br>
