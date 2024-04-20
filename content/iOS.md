@@ -15,7 +15,7 @@ pukiwiki: "iOS"
 
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
-- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2023, with Tikz and LuaTeX) for text processing.
+- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2024, with Tikz and LuaTeX) for text processing.
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
     - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
 - [iSH](https://ish.app/) A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more!
@@ -54,10 +54,11 @@ TeX Writer の公式サイトで日本語用のテンプレートファイル jp
 
 ## PDF ビューア {#cf5b731d}
 
-- [PDF Viewer App for iOS](https://github.com/vfr/Viewer)
-    - [PDF Reader Core for iOS](https://github.com/vfr/Reader)
-- [MuPDF](https://itunes.apple.com/jp/app/mupdf/id482941798)
-- [Adobe Acrobat DC – PDF Reader](https://itunes.apple.com/jp/app/adobe-reader/id469337564)
+- [Adobe Acrobat Reader：PDFの作成と管理](https://itunes.apple.com/jp/app/adobe-reader/id469337564)
+
+## BibTeX 関連 {#o847f7a5}
+
+- [Paperpile](https://apps.apple.com/jp/app/paperpile/id1187562736)
 
 ## 関連リンク {#f3da3e0a}
 
