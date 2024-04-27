@@ -19,9 +19,9 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 ### 公式サイト {#ha0b38ce}
 
 - [https://github.com/luatexja/luatexja](https://github.com/luatexja/luatexja)
-- [LuaTeX-ja プロジェクト wiki](https://ja.osdn.net/projects/luatex-ja/wiki/)
-    - [LuaTeX-ja wiki (FrontPage(en))](https://ja.osdn.net/projects/luatex-ja/wiki/FrontPage%28en%29)
-    - [LuaTeX-ja の使い方](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9)
+- [LuaTeX-ja プロジェクト wiki](https://ja.osdn.net/projects/luatex-ja/wiki/) ([新wiki](https://github.com/luatexja/luatexja/wiki))
+    - [LuaTeX-ja wiki (FrontPage(en))](https://ja.osdn.net/projects/luatex-ja/wiki/FrontPage%28en%29) ([new](<https://github.com/luatexja/luatexja/wiki/Home(en)>))
+    - [LuaTeX-ja の使い方](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9) ([new](https://github.com/luatexja/luatexja/wiki/%E4%BD%BF%E3%81%84%E6%96%B9))
     - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
 - [フォーラム](https://ja.osdn.net/projects/luatex-ja/forums/)
     - [公開討議/質問](https://ja.osdn.net/forum/forum.php?forum_id=25558)
