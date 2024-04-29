@@ -22,7 +22,7 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 - [LuaTeX-ja プロジェクト wiki](https://ja.osdn.net/projects/luatex-ja/wiki/) ([新wiki](https://github.com/luatexja/luatexja/wiki))
     - [LuaTeX-ja wiki (FrontPage(en))](https://ja.osdn.net/projects/luatex-ja/wiki/FrontPage%28en%29) ([new](<https://github.com/luatexja/luatexja/wiki/Home(en)>))
     - [LuaTeX-ja の使い方](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9) ([new](https://github.com/luatexja/luatexja/wiki/%E4%BD%BF%E3%81%84%E6%96%B9))
-    - [LuaTeX-jaの開発 (PDF)](http://oku.edu.mie-u.ac.jp/texconf11/presentations/kitagawa.pdf)
+    - [LuaTeX-jaの開発 (PDF)](https://okumuralab.org/texconf11/presentations/kitagawa.pdf)
 - [フォーラム](https://ja.osdn.net/projects/luatex-ja/forums/)
     - [公開討議/質問](https://ja.osdn.net/forum/forum.php?forum_id=25558)
 - [CTAN: /tex-archive/macros/luatex/generic/luatexja](https://ctan.org/tex-archive/macros/luatex/generic/luatexja)
@@ -38,7 +38,7 @@ LuaTeX-ja は
 
 ### インストール {#p4234337}
 
-[LuaTeX-jaの使い方#インストール・アップデート方法](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9#h2-.E3.82.A4.E3.83.B3.E3.82.B9.E3.83.88.E3.83.BC.E3.83.AB.E3.83.BB.E3.82.A2.E3.83.83.E3.83.97.E3.83.87.E3.83.BC.E3.83.88.E6.96.B9.E6.B3.95) を参照．
+[LuaTeX-jaの使い方#インストール・アップデート方法](https://github.com/luatexja/luatexja/wiki/%E4%BD%BF%E3%81%84%E6%96%B9#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%E6%96%B9%E6%B3%95) を参照．
 
 #### [TeX Live](</TeX Live/>) {#v2c7b507}
 
