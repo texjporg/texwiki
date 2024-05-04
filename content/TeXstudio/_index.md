@@ -116,8 +116,8 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 
 ### macOS の場合 {#ued437e7}
 
+- [Internal pdf viewer does not work properly with a file under xeCJK package · Issue #3558 · texstudio-org/texstudio · GitHub](https://github.com/texstudio-org/texstudio/issues/3558)
 - [TexStudio日本語設定（MacでもOK）#Macでの追加設定](https://mathphysnote.com/texstudio-jpn-macok/#toc3)
-- [MACのTexStudioで日本語を入力＆出力できるようにする](http://robomixcom.hatenablog.com/entry/2020/05/21/014858)
 
 #### 方法 {#d8cab603}
 
