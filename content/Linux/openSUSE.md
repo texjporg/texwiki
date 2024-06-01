@@ -22,7 +22,7 @@ openSUSE Tumbleweed はローリングリリースモデルで最新の Linux �
 #### TeX Live 公式パッケージ {#v87b6755}
 
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#opensuse)
-- [texliveを任意のディレクトリにインストールする](http://zashikiro.hateblo.jp/entry/2014/01/21/062124)
+- [openSUSE on WSL2で，VSCodeが使えるLuaLaTeX環境を構築する](https://qiita.com/isa02/items/03295945aba1a2167b64)
 
 #### TeX Live/TeX Live for SUSE Linux {#y0f6032d}
 
