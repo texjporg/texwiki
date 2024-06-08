@@ -9,7 +9,7 @@ pukiwiki: "Okular"
 
 ## [Okular](https://okular.kde.org/) {#x3070edc}
 
-Okular は KDE に搭載されている，PDF, PS, DVI ファイルが表示可能なドキュメント・ビューアです．
+Okular は KDE に搭載されている，PDF ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 
@@ -44,6 +44,8 @@ Windows, macOS, Linux
 ### Windows {#h8e4fcbd}
 
 [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) または [https://cdn.kde.org/ci-builds/graphics/okular/release-24.05/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-24.05/windows/) または [https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP](https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP) から Okular のインストーラーをダウンロードしてインストールできます．
+
+MSYS2 でインストールすることもできます．[https://packages.msys2.org/base/mingw-w64-okular](https://packages.msys2.org/base/mingw-w64-okular) / [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular) を参照してください．
 
 winget でインストールすることもできます．[https://winget.run/pkg/KDE/Okular](https://winget.run/pkg/KDE/Okular) や [https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular](https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular) を参照してください．
 
