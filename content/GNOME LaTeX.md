@@ -32,6 +32,7 @@ Windows, macOS, Linux
 
 - [Sébastien Wilmet / gnome-latex · GitLab](https://gitlab.gnome.org/swilmet/gnome-latex)
     - [NEWS](https://gitlab.gnome.org/swilmet/gnome-latex/-/blob/main/NEWS)
+    - [タグ](https://gitlab.gnome.org/swilmet/gnome-latex/-/tags)
     - [コミットログ](https://gitlab.gnome.org/swilmet/gnome-latex/-/commits/main/)
 
 <!-- *不具合 [#o7b20b21] -->
@@ -40,7 +41,7 @@ Windows, macOS, Linux
 
 ### Windows {#xe7a69b8}
 
-- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-gnome-latex](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-gnome-latex)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-gnome-latex](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-gnome-latex)
 
 Windows 版 GNOME LaTeX は MSYS2 の pacman でインストールできます．
 
