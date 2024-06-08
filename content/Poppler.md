@@ -44,8 +44,8 @@ TeX Live 2017 以降をインストールしている場合は poppler utilities
 
 > pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, pdfunite
 
-- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler)
-- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-poppler-data)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler-data)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 
 MSYS2 の pacman でインストールすることもできます。
