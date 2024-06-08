@@ -49,21 +49,21 @@ TeXstudio 公式サイトの Download ページ
 
 #### Windows {#ca4cc4c7}
 
-Windows 用のインストーラーをダウンロードして実行します．
+Windows 用のインストーラーをダウンロードして実行します。
 インストーラーを実行して「WindowsによってPCが保護されました」と表示される場合は
-インストーラーを右クリックして全般タブのセキュリティ:の項目の許可するをチェックして☑許可する(K)の状態にして再度インストーラーを実行します．
+インストーラーを右クリックして全般タブのセキュリティ:の項目の許可するをチェックして☑許可する(K)の状態にして再度インストーラーを実行します。
 
 #### Linux {#v5002500}
 
-各ディストリビューションのパッケージ管理システムからインストールします．
-パッケージ名は大抵 texstudio でしょう．
-Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう．
+各ディストリビューションのパッケージ管理システムからインストールします。
+パッケージ名は大抵 texstudio でしょう。
+Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう。
 
 #### macOS {#d9a96322}
 
-macOS 用の dmg ファイルをダウンロードしてダブルクリックします．
+macOS 用の zip ファイルまたは dmg ファイルをダウンロードしてインストールします。
 
-Homebrew でインストールすることもできます．
+Homebrew でインストールすることもできます。
 
 > [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb)
 
@@ -77,7 +77,7 @@ brew install --cask texstudio
 
 ### 使い方 {#ed1259ec}
 
-[TeXstudio/使い方](</TeXstudio/使い方/>) を参照．
+[TeXstudio/使い方](</TeXstudio/使い方/>) を参照。
 
 ### 更新履歴 {#w7aac056}
 
@@ -95,7 +95,7 @@ brew install --cask texstudio
 export PATH=$PATH:/Library/TeX/texbin
 ```
 
-を追加する必要があります．
+を追加する必要があります。
 
 - [(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)
 
@@ -105,12 +105,12 @@ export PATH=$PATH:/Library/TeX/texbin
 
 ## 文字コードの変換 {#v4ac40ab}
 
-TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
-このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります．
-文字コードの変換には，各種テキストエディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります．
+TeXstudio で使用する文字コードはデフォルトでは UTF-8 です。
+このため，Shift_JIS, ISO-2022-JP, EUC-JP の文字コードを使用しているファイルを開きたい場合は，事前にファイルの文字コードを UTF-8 に変換する必要があります。
+文字コードの変換には，各種テキストエディタの機能を使う方法と，コマンドラインから変換プログラムを使う方法があります。
 
-- テキストエディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](https://okumuralab.org/tex/mod/forum/discuss.php?d=496%23p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります．
-- コマンドラインからの場合，文字コード変換プログラムである [nkf](/nkf/) が利用できます．
+- テキストエディタの機能を使う場合は，[メモ帳で UTF-8 に変換する](https://okumuralab.org/tex/mod/forum/discuss.php?d=496%23p2654)方法や[サクラエディタ](</サクラエディタ/>)などのテキストエディタを使う方法があります。
+- コマンドラインからの場合，文字コード変換プログラムである [nkf](/nkf/) が利用できます。
 
 ## 組み込みの PDF ビューアに日本語を表示させる {#o84f3d5c}
 
@@ -122,23 +122,24 @@ TeXstudio で使用する文字コードはデフォルトでは UTF-8 です．
 #### 方法 {#d8cab603}
 
 macOS の TeXstudio で組み込みの PDF ビューアで日本語が表示されない場合は
-TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します．
-poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます．
+TeXstudio が使用している libpoppler から文字列 poppler を検索して出力結果に表示されるディレクトリに poppler-data を配置します。
+poppler-data は [Poppler の公式サイト](https://poppler.freedesktop.org/)から入手できます。
+TeXstudio 4.8.0 以降は poppler-data が付属しています。
 
-poppler-data を配置する場所は strings と grep で調べることができます．
+poppler-data を配置する場所は strings と grep で調べることができます。
 
 ```
 $ strings -a /Applications/texstudio.app/Contents/Frameworks/libpoppler.*.dylib | grep poppler
 ```
 
-TeXstudio 4.8.0 の場合の出力結果は以下のようになります．
+TeXstudio 4.8.1 の場合の出力結果は以下のようになります。
 
 > &amp;<span style="color:black,yellow">/usr/local/share/poppler</span>;<br>
 > %Produced by poppler pdftops version: {0:s} (&#x68;ttp://poppler.freedesktop.org)<br>
 
-出力結果から /usr/local/share/poppler が poppler-data を配置するディレクトリになります．
+出力結果から /usr/local/share/poppler が poppler-data を配置するディレクトリになります。
 
-poppler-data をインストールします．
+poppler-data をインストールします。
 
 ```
 $ cd ~
@@ -148,7 +149,7 @@ $ sudo mkdir -p /usr/local/share/poppler
 $ sudo cp -pR ~/poppler-data-0.4.12/* /usr/local/share/poppler
 ```
 
-<!-- poppler-data は以下のように配置されます． -->
+<!-- poppler-data は以下のように配置されます。 -->
 <!--  -->
 <!-- / -->
 <!-- └─usr/ -->
@@ -166,27 +167,27 @@ $ sudo cp -pR ~/poppler-data-0.4.12/* /usr/local/share/poppler
 <!--                 ├─Makefile -->
 <!--                 └─README -->
 
-TeXstudio を起動している場合は TeXstudio を再起動します．
+TeXstudio を起動している場合は TeXstudio を再起動します。
 
-組み込みの PDF ビューアで日本語が表示できることを確認します．
+組み込みの PDF ビューアで日本語が表示できることを確認します。
 
 ## 組み込みの PDF ビューアにゴシック体を表示させる {#j1641579}
 
-Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります．
+Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場合はフォントを埋め込む必要があります。
 
 ### TeX Live の場合 {#xf7e038f}
 
-デフォルトでは原ノ味フォントを埋め込みます．
+デフォルトでは原ノ味フォントを埋め込みます。
 
 ## 組み込みの PDF ビューアで日本語を表示するために使用される代替フォント {#u9344b03}
 
 ### Windows の TeXstudio の場合 {#kc4e2fb3}
 
-Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォントを埋め込んでいない PDF ファイルの場合は MS-Mincho で表示されます．
+Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォントを埋め込んでいない PDF ファイルの場合は MS-Mincho で表示されます。
 
 ### Linux の TeXstudio の場合 {#s6cbe6f1}
 
-[代替フォントの設定](/Evince/#fallback)を参照して代替フォントの設定をします．
+[代替フォントの設定](/Evince/#fallback)を参照して代替フォントの設定をします。
 
 ## 関連リンク {#b0ba1b9b}
 
