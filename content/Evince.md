@@ -9,13 +9,15 @@ pukiwiki: "Evince"
 
 ## [Evince](https://wiki.gnome.org/Apps/Evince) {#fec1fb99}
 
-Evince は PDF, PS, EPS, DVI ファイルが表示可能なドキュメントビューアーです．
-[SyncTeX](/SyncTeX/) に対応しています．
-ファイルの自動更新機能もあります．
-PS, EPS ファイルの表示には [Ghostscript](/Ghostscript/) と PS, EPS ファイルを表示できるようにビルドされた Evince が必要です．
+Evince は PDF ファイルが表示可能なドキュメントビューアーです。
+[SyncTeX](/SyncTeX/) に対応しています。
+ファイルの自動更新機能もあります。
+PS, EPS ファイルの表示はデフォルトで無効化されているため PS, EPS ファイルを表示するには PS, EPS ファイルの表示を有効化してビルドされた Evince が必要です。
 
 - [Evince](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
+- [Topics tagged evince](https://discourse.gnome.org/tags/c/applications/7/evince)
+- [Search results for &#39;evince&#39; - GNOME Discourse](https://discourse.gnome.org/search?q=evince)
 - [The evince-list Archives](https://mail.gnome.org/archives/evince-list/)
 - [MyTeXpert:Evince](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Evince)
 
@@ -64,7 +66,8 @@ Windows, macOS, Linux
 
 ### Windows {#f2460848}
 
-- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-evince)
+- [https://packages.msys2.org/base/mingw-w64-evince](https://packages.msys2.org/base/mingw-w64-evince)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 - [FOSS な PDF Viewer for Windows (Evince も導入できた)](https://text.baldanders.info/remark/2019/03/about-free-software-pdf-viewers/)
 
