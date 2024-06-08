@@ -29,7 +29,7 @@ Windows, macOS, Linux
 あるいは Chocolatey や MSYS2 の pacman などのパッケージ管理システムからインストールすることも可能です。
 
 - [https://chocolatey.org/packages/imagemagick](https://chocolatey.org/packages/imagemagick)
-- [https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick](https://github.com/Alexpux/MINGW-packages/tree/master/mingw-w64-imagemagick)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-imagemagick](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-imagemagick)
 - [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 
 <strong> <em>重要！</em> </strong>
