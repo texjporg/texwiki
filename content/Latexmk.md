@@ -11,7 +11,7 @@ pukiwiki: "Latexmk"
 
 Latexmk は文書を作成するのに必要な回数タイプセットしてくれるツールです．BibTeX や Makeindex などの実行も自動で行われます．
 
-- [http://personal.psu.edu/jcc8/software/latexmk/](http://personal.psu.edu/jcc8/software/latexmk/)
+- [https://www.cantab.net/users/johncollins/latexmk/](https://www.cantab.net/users/johncollins/latexmk/)
 
 <!-- https://okumuralab.org/tex/mod/forum/discuss.php?d=1645#p9535 -->
 <!-- に従い，設定は基本的にplatex + dvipdfmxで書く，ということにしています． -->
