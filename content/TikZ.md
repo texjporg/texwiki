@@ -1130,6 +1130,8 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
 - [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
 - [TikZ でこけし・Barnsley fern・トポロジカル欠陥](https://event.phys.s.u-tokyo.ac.jp/physlab2022/posts/12/)
+- [TeXについて](https://alg-d.com/math/tex.html)
+    - [TikZの使い方](https://alg-d.com/math/tikz.pdf)
 
 <!-- リンク切れ -->
 <!-- -[[Japanese TikZ Tutorial:https://github.com/Yasunari15/Japanese-TikZ-Tutorial]] -->
