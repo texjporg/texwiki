@@ -67,8 +67,6 @@ Windows の場合は Xpdf command line tools をインストールしなくて�
 
 macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていないので，別途インストールします。
 
-Xpdf 4.05 の場合
-
 - 公式サイトのバイナリを使用する方法
     - [http://www.xpdfreader.com/download.html](http://www.xpdfreader.com/download.html) から Mac 版の Xpdf command line tools をダウンロードしてインストールします。pdffonts を実行して Config Error: No display font for 'Symbol' と Config Error: No display font for 'ZapfDingbats' のエラーが発生する場合は xpdf-t1fonts.tar.gz，Syntax Error: Unknown character collection 'Adobe-Japan1' のエラーが発生する場合は xpdf-japanese.tar.gz をダウンロード・インストールして xpdfrc に設定を記述します。
 
@@ -79,8 +77,6 @@ Xpdf 4.05 の場合
             ```
             $ brew install xpdf
             ```
-
-Xpdf 3.04 の場合
 
 - MacPorts を用いる方法
     - MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
@@ -133,8 +129,6 @@ Xpdf 3.04 の場合
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
     - [https://ports.macports.org/port/xpdf/](https://ports.macports.org/port/xpdf/)
         - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
-- ソースコードからインストールする方法
-    - ソースコードからインストールする場合は [LinuxWiki:Xpdf](https://okumuralab.org/~okumura/linux/?Xpdf) を参照。
 
 #### Linux {#inst-linux}
 
@@ -150,6 +144,7 @@ Linux の場合は Xpdf command line tools をインストールしなくても 
 
 - [XPDFパッケージの使い方](http://konoyonohana.blog.fc2.com/blog-entry-48.html)
 - Xpdf の pdftotext （PDFファイルからテキストを抽出．参考：[＠IT：PDFファイルからテキストを抽出するには](http://www.atmarkit.co.jp/flinux/rensai/linuxtips/745textfpdf.html)）
+- [xpopple](https://offog.org/code/xpopple/) a Motif-based PDF viewer adapted from xpdf that uses the Poppler library.
 
 #### ライセンス {#license}
 
