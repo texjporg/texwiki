@@ -305,5 +305,6 @@ latexmk -gg -pdfxe foo.tex
 - [latexmk と ptex2pdf](http://konoyonohana.blog.fc2.com/blog-entry-25.html)
 - [latexmk を LaTeX コンパイルに使ってみた](http://unvalance.g.hatena.ne.jp/KainokiKaede/20111124/1322117707)
 - [latexmk つかって LaTeX コンパイルしたら簡単すぎて身長が10cm伸びた](http://d.hatena.ne.jp/yambi/20091117/1258452926)
+- [latexmkで中間ファイルのディレクトリを変える構成にすると、BibTeXが上手くいかなくなる。試行錯誤してみたところ、bibtex_fudgeを0にするとoutdir、auxdirともに機能するようになるようです。そのため、コマンドラインに -bibtexfudge- を追加することで解決しました！](https://x.com/yara_platypus/status/1802645620462870937)
 
 [^1]: .latexmkrc に記述せずに実行時オプションで指定することもできます（[使い方](/Latexmk/#usage)を参照）．
