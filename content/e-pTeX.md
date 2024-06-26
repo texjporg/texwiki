@@ -27,8 +27,8 @@ e-pTeX は内部処理が Unicode ではないので Unicode を使用した文�
 ### ChangeLog {#mf34fb2b}
 
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/eptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/eptexdir/)→[TeX Live svn r70943 で web2c/eptexdir を削除しました。](https://github.com/texjporg/tex-jp-build/issues/32#issuecomment-2053923798)、\[[ViewVC\] Revision 70943 of: texlive](https://www.tug.org/svn/texlive?revision=70943&view=revision)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/eptexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/eptexdir/ChangeLog?view=markup)
+    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/epTeX_doc/?view=log)
+    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/euptexdir/epTeX_doc/ChangeLog?view=markup)
 
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/ptexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/)
     - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/ptexdir/?view=log)
