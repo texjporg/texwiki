@@ -42,6 +42,7 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
 - [vs code で latex](https://kandai.hatenadiary.jp/entry/2019/02/21/091432)
 - [VSCode で LaTeX を書く (2018)](https://qiita.com/popunbom/items/7d02fc75ad23b735d28c)
 - [最速で最小構成のLaTeX環境をVSCodeに構築する](https://qiita.com//geek_shanshan/items/d2b6218bbd66e3f62497)
+- [VS CodeでLaTeX環境を構築する](https://obsica.com/latex-with-vscode/)
 
 ### 各種設定 {#xf8ab47d}
 
