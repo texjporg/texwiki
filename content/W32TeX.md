@@ -314,6 +314,7 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 ## 関連リンク {#b5892c8c}
 
 - [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
+- [「W32TeX に TeX Live を移植するプロジェクト」(「W32TeX_p」)](https://rivernizi.shinobiashi.com/PC/TeX/way_W32TeX_install.html)
 - [CTAN: Package w32tex](https://ctan.org/pkg/w32tex)
 - [CTAN: /tex-archive/systems/win32/w32tex](https://ctan.org/tex-archive/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
