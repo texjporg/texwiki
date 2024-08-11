@@ -23,7 +23,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 23.008.20533 以降に更新してください。Adobe Acrobat Reader 23.008.20470 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-07）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240005.html)
+- Adobe Acrobat Reader 24.002.20759 以降に更新してください。Adobe Acrobat Reader 24.002.20736 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-29）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240010.html)
 - Adobe Acrobat Reader Version 2023 (64-bit) の DDE server name は AcroViewA23 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -62,7 +62,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400220991/AcroRdrDCx642400220991_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400220991/AcroRdrDCx642400220991_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -111,8 +111,8 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400120604/AcroRdrDCx642400120604_ja_JP.exe
-wine64 AcroRdrDCx642400120604_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400220991/AcroRdrDCx642400220991_ja_JP.exe
+wine64 AcroRdrDCx642400220991_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
