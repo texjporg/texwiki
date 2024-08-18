@@ -15,9 +15,6 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 詳しくは次のページをご覧ください．
 
 - [Ghostscript Website](https://www.ghostscript.com/)
-- [ghostscript.com Mailing Lists](https://ghostscript.com/mailman/listinfo/)
-    - [The gs-bugs Archives](https://ghostscript.com/pipermail/gs-bugs/)
-    - [The gs-devel Archives](https://ghostscript.com/pipermail/gs-devel/)
 - [Welcome to Ghostscript &mdash; Ghostscript 10.04.0 documentation](https://ghostscript.readthedocs.io/)
     - [https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
@@ -27,18 +24,14 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 10.02.0 (2023-08-30) 以降に更新してください。
-Ghostscript 10.01.2 (2023-06-21) およびそれ以前には，脆弱性が存在します。
+Ghostscript 10.03.1 (2024-05-02) 以降に更新してください。
+Ghostscript 10.03.0 (2024-03-06) およびそれ以前には，リモートでコードを実行される脆弱性が存在します(CVE-2024-29510)。
 
-- [PDFを処理する「Ghostscript」にRCE脆弱性 - アップデートで修正](https://www.security-next.com/149859)
-- [Ghostscript においてパイプ処理の検証不備により任意のコードが実行可能となる脆弱性（Scan Tech Report）](https://scan.netsecurity.ne.jp/article/2023/10/11/50061.html)
+- [Fixes for CVE-2024-33869, CVE-2023-52722, CVE-2024-33870, CVE-2024-33871 and CVE-2024-29510 - News &mdash; Ghostscript 10.03.1 documentation](https://ghostscript.readthedocs.io/en/gs10.03.1/News.html)
+- [GhostScriptの脆弱性(Moderate: CVE-2024-29510)](https://security.sios.jp/vulnerability/ghostscript-security-vulnerability-20240709/)
+- [Ghostscriptでリモートでコードを実行される脆弱性が発生(CVE-2024-29510) ](https://rocket-boys.co.jp/ghost-script-vulnerability-cve2024-29510/)
 
 Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在します。
-
-- [Ghostscript: CVE-2021-3781](https://ghostscript.com/CVE-2021-3781.html)
-- [Ghostscriptの任意のコマンド実行が可能な脆弱性（CVE-2021-3781）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210039.html)
-
-Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
 
 - TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [commit 7b93a91](https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a)，gsftopk → [forum:2756#p16126](https://okumuralab.org/tex/mod/forum/discuss.php?d=2756%23p16126)）。TeX Live 2020 で修正されました。
 
@@ -54,14 +47,17 @@ Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限�
 <!-- gs-9.50 で XeTeX での pstricks も失敗する。以下で対応。 -->
 <!-- (1) dvipdfmx.cfg の変更 (r52766) -->
 <!-- (2) (x)dvipdfmx のソース spc_dvips.c の変更 (r52765) -->
+- [Ghostscript: CVE-2021-3781](https://ghostscript.com/CVE-2021-3781.html)
+- [Ghostscriptの任意のコマンド実行が可能な脆弱性（CVE-2021-3781）に関する注意喚起](https://www.jpcert.or.jp/at/2021/at210039.html)
 
-<!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
+Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。
 
 - [JVN#52486659: Ghostscript におけるアクセス制限回避の脆弱性](https://jvn.jp/jp/JVN52486659/)
 - [JVNDB-2019-012236 - JVN iPedia - 脆弱性対策情報データベース](https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012236.html)
 
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
+<!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
 - commit [06c920713e11bce9bd541bbf9bf294b2ba16aee8](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=06c920713e11bce9bd541bbf9bf294b2ba16aee8)
     で修正されたようです。--&gt; pdfcrop in gs-9.27 ([forum:2622](https://okumuralab.org/tex/mod/forum/discuss.php?d=2622))
 
