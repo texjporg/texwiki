@@ -43,16 +43,16 @@ HappyTeX.ini に HappyTeX の実行に必要な PATH を設定します．
 Type=Tokyo
 
 [Program]
-TeXbin=C:\texlive\2022\bin\win64
-dviout=C:\texlive\2022\bin\win64\dviout.exe
-GSmain=C:\Program Files\gs\gs9.56.1
+TeXbin=C:\texlive\2024\bin\windows
+dviout=C:\texlive\2024\bin\windows\dviout.exe
+GSmain=C:\Program Files\gs\gs10.03.1
 gsview=C:\Program Files\Ghostgum\gsview\gsview64.exe
 
 pdfviewer=C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=AcroViewA23/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=AcroViewA24/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
