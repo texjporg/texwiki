@@ -7,18 +7,18 @@ pukiwiki: "Gedit-TeX"
 
 # Gedit-TeX
 
-## [GNOME LaTeX](https://gitlab.gnome.org/swilmet/gnome-latex) {#e966f73d}
+## [Gedit-TeX](https://gitlab.gnome.org/swilmet/gedit-tex) {#e966f73d}
 
 ***
 
 ***
 
-## GNOME LaTeX とは {#h4d58d3b}
+## Gedit-TeX とは {#h4d58d3b}
 
-GNOME LaTeX は LaTeX 統合環境 (LaTeX エディタ) です．
+Gedit-TeX は TeX/LaTeX エディタです．
 SyncTeX に対応しています．
 
-- [Sébastien Wilmet / gnome-latex · GitLab](https://gitlab.gnome.org/swilmet/gnome-latex)
+- [Sébastien Wilmet / gedit-tex · GitLab](https://gitlab.gnome.org/swilmet/gedit-tex)
 
 ### 動作環境 {#a52783ff}
 
@@ -26,14 +26,14 @@ Windows, macOS, Linux
 
 ### License {#a34a81c6}
 
-[GPLv3](https://gitlab.gnome.org/swilmet/gnome-latex/-/blob/main/COPYING)
+[GPLv3](https://gitlab.gnome.org/swilmet/gedit-tex/-/blob/main/LICENSES/GPL-3.0-or-later.txt)
 
 ### リリース情報/ChangeLog {#p49a2369}
 
-- [Sébastien Wilmet / gnome-latex · GitLab](https://gitlab.gnome.org/swilmet/gnome-latex)
-    - [NEWS](https://gitlab.gnome.org/swilmet/gnome-latex/-/blob/main/NEWS)
-    - [タグ](https://gitlab.gnome.org/swilmet/gnome-latex/-/tags)
-    - [コミットログ](https://gitlab.gnome.org/swilmet/gnome-latex/-/commits/main/)
+- [Sébastien Wilmet / gedit-tex · GitLab](https://gitlab.gnome.org/swilmet/gedit-tex)
+    - [NEWS](https://gitlab.gnome.org/swilmet/gedit-tex/-/blob/main/NEWS)
+    - [タグ](https://gitlab.gnome.org/swilmet/gedit-tex/-/tags)
+    - [コミットログ](https://gitlab.gnome.org/swilmet/gedit-tex/-/commits/main)
 
 <!-- *不具合 [#o7b20b21] -->
 
@@ -54,7 +54,7 @@ pacman -S mingw-w64-x86_64-gnome-latex
 ### macOS {#b3c38ac4}
 
 - [https://formulae.brew.sh/formula/gnome-latex](https://formulae.brew.sh/formula/gnome-latex)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnome-latex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/gnome-latex.rb)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gnome-latex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gnome-latex.rb)
 
 ```
 brew install gnome-latex
