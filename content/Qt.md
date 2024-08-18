@@ -13,7 +13,7 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 以下のプログラムが Qt を使用しています．
 
 - LaTeX editor: [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/)
-- PDF viewer: [Okular](/Okular/), [qpdfview](/qpdfview/), [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/), [Xpdf (XpdfReader)](/Xpdf/)
+- PDF viewer: [Okular](/Okular/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/), [Xpdf (XpdfReader)](/Xpdf/)
 
 ***
 
@@ -26,11 +26,16 @@ Qt はクロスプラットフォーム・アプリケーションフレーム�
 
 ## ダウンロード {#de2773fb}
 
-Qt 5.15 以降のオープンソース版のオフラインインストーラーは提供されなくなりました。--&gt; [Qtライセンスに関する変更 – 2020年](https://www.qt.io/jp/blog/qt-offering-changes-2020)
+Qt 5.15 以降のオープンソース版のオフラインインストーラーは提供されなくなりました。--&gt; [Qtライセンスに関する変更 – 2020年](https://www.qt.io/ja-jp/blog/qt-offering-changes-2020)
 
 - [https://www.qt.io/download](https://www.qt.io/download)
-- [http://download.qt.io/archive/qt/](http://download.qt.io/archive/qt/)
-- [http://download.qt.io/development_releases/qt/](http://download.qt.io/development_releases/qt/)
+- [https://download.qt.io/official_releases/qt/](https://download.qt.io/official_releases/qt/)
+- [https://download.qt.io/development_releases/qt/](https://download.qt.io/development_releases/qt/)
+- [https://download.qt.io/archive/qt/](https://download.qt.io/archive/qt/)
+
+MSYS2 で Qt 6 が提供されています。
+
+- [https://packages.msys2.org/groups/mingw-w64-x86_64-qt6](https://packages.msys2.org/groups/mingw-w64-x86_64-qt6)
 
 ## 不具合 {#zc678b55}
 
