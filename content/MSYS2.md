@@ -71,6 +71,18 @@ MSYS2 で TeX Live をインストールしたりビルドしたりできます�
 pacman -S mingw-w64-x86_64-texlive-full
 ```
 
+- [https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-full](https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-full)
+
+```
+pacman -S mingw-w64-ucrt-x86_64-texlive-full
+```
+
+- [https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-full](https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-full)
+
+```
+pacman -S mingw-w64-clang-x86_64-texlive-full
+```
+
 ### Building TeX Live {#c3b844d4}
 
 - [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
