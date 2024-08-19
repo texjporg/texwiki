@@ -150,6 +150,7 @@ forward and inverse search が必要な場合は SyncTeX プラグインを使�
 - [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
 - [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
 - [https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041](https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041)
+- [https://packages.fedoraproject.org/pkgs/gedit-plugins/gedit-plugin-synctex/index.html](https://packages.fedoraproject.org/pkgs/gedit-plugins/gedit-plugin-synctex/index.html)
 - [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
 
 SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90, 3.33.92, 3.34.0 には収録されていません。[2019年9月20日に元に戻された](https://gitlab.gnome.org/GNOME/gedit-plugins/commit/3f135d1719f1e6418fcbf175fdac1b48ca086eb5)ため gedit-plugins 3.34.1 から gedit-plugins 44.1 までは収録されていましたが [gedit-plugins 45.0 2023-06-23 で再び削除されました](https://gitlab.gnome.org/GNOME/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd)。
