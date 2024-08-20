@@ -14,11 +14,16 @@ MSYS2 は [MSYS](https://ja.wikipedia.org/wiki/MSYS) を改良して機能を強
 
 - [https://www.msys2.org/](https://www.msys2.org/)
 - [https://github.com/msys2](https://github.com/msys2)
-- [https://github.com/Alexpux/MSYS2-packages](https://github.com/Alexpux/MSYS2-packages)
+- [https://repo.msys2.org/mingw/](https://repo.msys2.org/mingw/)
 
 ### Installing MSYS2 {#sb6496d0}
 
 - [https://www.msys2.org/](https://www.msys2.org/)
+
+### Environments {#w4856bbb}
+
+- [https://www.msys2.org/docs/environments/](https://www.msys2.org/docs/environments/)
+- [MSYS2 にある複数環境、C++ アプリ開発](https://qiita.com/hira_kuni_45/items/fc297bc3b34a631f8d69)
 
 ### LANG {#w1a07eeb}
 
