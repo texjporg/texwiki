@@ -70,22 +70,22 @@ MSYS2 で TeX Live をインストールしたりビルドしたりできます�
 
 ### TeX Live/Built by MSYS2 project {#p4932a37}
 
-- [https://packages.msys2.org/group/mingw-w64-x86_64-texlive-full](https://packages.msys2.org/group/mingw-w64-x86_64-texlive-full)
+- [https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-scheme-full](https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-scheme-full)
 
 ```
-pacman -S mingw-w64-x86_64-texlive-full
+pacman -S mingw-w64-ucrt-x86_64-texlive-scheme-full
 ```
 
-- [https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-full](https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-texlive-full)
+- [https://packages.msys2.org/group/mingw-w64-x86_64-texlive-scheme-full](https://packages.msys2.org/group/mingw-w64-x86_64-texlive-scheme-full)
 
 ```
-pacman -S mingw-w64-ucrt-x86_64-texlive-full
+pacman -S mingw-w64-x86_64-texlive-scheme-full
 ```
 
-- [https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-full](https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-full)
+- [https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-scheme-full](https://packages.msys2.org/groups/mingw-w64-clang-x86_64-texlive-scheme-full)
 
 ```
-pacman -S mingw-w64-clang-x86_64-texlive-full
+pacman -S mingw-w64-clang-x86_64-texlive-scheme-full
 ```
 
 ### Building TeX Live {#c3b844d4}
