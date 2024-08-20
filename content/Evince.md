@@ -67,12 +67,10 @@ Windows, macOS, Linux
 ### Windows {#f2460848}
 
 - [https://packages.msys2.org/search?t=binpkg&q=evince](https://packages.msys2.org/search?t=binpkg&q=evince)
-    - [https://packages.msys2.org/package/mingw-w64-x86_64-evince](https://packages.msys2.org/package/mingw-w64-x86_64-evince)
     - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-evince](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-evince)
     - [https://packages.msys2.org/package/mingw-w64-clang-x86_64-evince](https://packages.msys2.org/package/mingw-w64-clang-x86_64-evince)
     - [https://packages.msys2.org/package/mingw-w64-clang-aarch64-evince](https://packages.msys2.org/package/mingw-w64-clang-aarch64-evince)
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince)
-- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
 - [FOSS な PDF Viewer for Windows (Evince も導入できた)](https://text.baldanders.info/remark/2019/03/about-free-software-pdf-viewers/)
 
 Windows 版 Evince は MSYS2 の pacman でインストールできます．UCRT64 環境で
