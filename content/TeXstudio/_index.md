@@ -47,6 +47,11 @@ TeXstudio 公式サイトの Download ページ
 
 からダウンロードできます．
 
+MSYS2 からインストールもできます。
+
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-texstudio](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-texstudio)
+- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-texstudio](https://packages.msys2.org/package/mingw-w64-clang-x86_64-texstudio)
+
 #### Windows {#ca4cc4c7}
 
 Windows 用のインストーラーをダウンロードして実行します。
