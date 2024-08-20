@@ -36,6 +36,8 @@ Qt 5.15 以降のオープンソース版のオフラインインストーラー
 MSYS2 で Qt 6 が提供されています。
 
 - [https://packages.msys2.org/groups/mingw-w64-x86_64-qt6](https://packages.msys2.org/groups/mingw-w64-x86_64-qt6)
+- [https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-qt6](https://packages.msys2.org/groups/mingw-w64-ucrt-x86_64-qt6)
+- [https://packages.msys2.org/groups/mingw-w64-clang-x86_64-qt6](https://packages.msys2.org/groups/mingw-w64-clang-x86_64-qt6)
 
 ## 不具合 {#zc678b55}
 
