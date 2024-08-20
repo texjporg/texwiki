@@ -769,7 +769,9 @@ composefont pop
 #### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
 
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
-- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### Cygwin Ghostscript {#q45fc3c8}
 
