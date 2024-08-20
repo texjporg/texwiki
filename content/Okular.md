@@ -31,7 +31,7 @@ Windows, macOS, Linux
 
 ### リリース情報 {#v4dc0489}
 
-[Development News](https://okular.kde.org/news.php) を参照．
+[https://github.com/KDE/okular/tags](https://github.com/KDE/okular/tags)
 
 ### ChangeLog {#h7a9328d}
 
@@ -43,13 +43,21 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-[https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) または [https://cdn.kde.org/ci-builds/graphics/okular/release-24.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-24.08/windows/) または [https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP](https://apps.microsoft.com/detail/9n41msq1wnm8?rtc=1&hl=ja-jp&gl=JP) から Okular のインストーラーをダウンロードしてインストールできます．
+- [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-24.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-24.08/windows/)
 
-MSYS2 でインストールすることもできます．[https://packages.msys2.org/base/mingw-w64-okular](https://packages.msys2.org/base/mingw-w64-okular) / [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular) を参照してください．
+から Okular のインストーラーをダウンロードしてインストールできます．
 
-```
-pacman -S mingw-w64-x86_64-okular
-```
+MSYS2 でインストールすることもできます．
+
+- [https://packages.msys2.org/search?t=binpkg&q=okular](https://packages.msys2.org/search?t=binpkg&q=okular)
+    - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-okular](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-okular)
+    - [https://packages.msys2.org/package/mingw-w64-clang-x86_64-okular](https://packages.msys2.org/package/mingw-w64-clang-x86_64-okular)
+    - [https://packages.msys2.org/package/mingw-w64-clang-aarch64-okular](https://packages.msys2.org/package/mingw-w64-clang-aarch64-okular)
+- [https://packages.msys2.org/base/mingw-w64-okular](https://packages.msys2.org/base/mingw-w64-okular)
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-okular)
+
+を参照してください．
 
 winget でインストールすることもできます．[https://winget.run/pkg/KDE/Okular](https://winget.run/pkg/KDE/Okular) や [https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular](https://github.com/microsoft/winget-pkgs/tree/master/manifests/k/KDE/Okular) を参照してください．
 
