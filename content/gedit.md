@@ -80,6 +80,20 @@ Linux, Windows, macOS
 - [pluma](https://github.com/mate-desktop/pluma)
 - [xed](https://github.com/linuxmint/xed)
 
+## インストール {#a97adada}
+
+### Windows {#f78902e6}
+
+- [https://packages.msys2.org/package/mingw-w64-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-x86_64-gedit)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit)
+- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit)
+- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit](https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit)
+
+### macOS {#j8f7f037}
+
+- [https://formulae.brew.sh/formula/gedit](https://formulae.brew.sh/formula/gedit)
+    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gedit.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gedit.rb)
+
 ## プラグイン {#c01f900c}
 
 ### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
