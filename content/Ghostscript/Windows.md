@@ -745,14 +745,21 @@ composefont pop
 - [https://www.ghostscript.com/releases/gsdnld.html](https://www.ghostscript.com/releases/gsdnld.html)
 - [https://github.com/ArtifexSoftware/ghostpdl-downloads/releases](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases)
 
-#### 角藤版 Ghostscript の配布元 {#sbee10cb}
-
-- [http://mirror.ctan.org/systems/win32/TLW64/](http://mirror.ctan.org/systems/win32/TLW64/)
+<!-- ***角藤版 Ghostscript の配布元 [#sbee10cb] -->
+<!--  -->
+<!-- -http://mirror.ctan.org/systems/win32/TLW64/ -->
 
 #### tlgs.windows {#a9e655e3}
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+
+#### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
+
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### winget Ghostscript {#lb8d3056}
 
@@ -765,13 +772,6 @@ composefont pop
 #### Chocolatey Ghostscript {#x1695e76}
 
 - [https://community.chocolatey.org/packages/Ghostscript](https://community.chocolatey.org/packages/Ghostscript)
-
-#### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
-
-- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### Cygwin Ghostscript {#q45fc3c8}
 
