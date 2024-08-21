@@ -32,14 +32,12 @@ nkf は，文字コードを変換するツールです。
 [W32TeX](/W32TeX/) には標準で含まれています。
 Windows に [TeX Live](</TeX Live/>) を『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』からインストールした場合も付属しています。
 
-それ以外の場合は，Vector のサイトから，ビルド済みのバイナリを入手してインストールするのが簡単です。
+それ以外の場合は，以下のサイトから，ビルド済みのバイナリを入手してインストールするのが簡単です。
 
-- [nkf.exe nkf32.dll Windows用](http://www.vector.co.jp/soft/win95/util/se295331.html)
+- [Releases · kkato233/nkf · GitHub](https://github.com/kkato233/nkf/releases)
 
-アーカイブファイルを展開すると複数の exe ファイルがありますが，このうち
-nkfwin/vc2005/win32(98,Me,NT,2000,XP,Vista,7)Windows-31J/
-フォルダ配下の nkf32.exe はデフォルトで Windows-31J（Shift_JIS の拡張）に変換してくれるので，よく使われています。
-これを nkf.exe とリネームしてパスの通ったディレクトリに配置するとよいでしょう。
+アーカイブファイルを展開すると win フォルダーに nkf.exe がありますが，
+これをパスの通ったディレクトリに配置するとよいでしょう。
 （環境変数 Path については [Microsoft Windows/基礎知識](</Microsoft Windows/基礎知識/>) を参照してください。）
 
 #### macOS {#iac446b4}
