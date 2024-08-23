@@ -22,9 +22,13 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### 不具合 {#v813d27a}
 
-#### SumatraPDF 3.4.6 (2022-06-08) で SyncTeX のエラー表示 → SumatraPDF 3.3.3 (2021-07-20) に戻す {#o17d1f9c}
+#### SumatraPDF 3.5.2 (2023-10-25) でエラー表示 → [SumatraPDF 3.3.3 (2021-07-20)](https://www.sumatrapdfreader.org//dl//rel/3.3.3/SumatraPDF-3.3.3-64-install.exe) に戻す {#ec0b8b2d}
 
-- [https://twitter.com/arai_amide/status/1564784523216568320](https://twitter.com/arai_amide/status/1564784523216568320)
+- [https://x.com/arai_amide/status/1820667539023942016](https://x.com/arai_amide/status/1820667539023942016)
+
+#### SumatraPDF 3.4.6 (2022-06-08) で SyncTeX のエラー表示 → [SumatraPDF 3.3.3 (2021-07-20)](https://www.sumatrapdfreader.org//dl//rel/3.3.3/SumatraPDF-3.3.3-64-install.exe) に戻す {#o17d1f9c}
+
+- [https://x.com/arai_amide/status/1564784523216568320](https://x.com/arai_amide/status/1564784523216568320)
 - [zipped synctex · Discussion #2640 · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/discussions/2640)
 - [zipped synctex fails in 3.4.x · Issue #2642 · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/issues/2642)
 
