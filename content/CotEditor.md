@@ -15,15 +15,15 @@ pukiwiki: "CotEditor"
 
 ## CotEditor とは {#x19d88d4}
 
-CotEditor は macOS 専用テキストエディタです．
+CotEditor は macOS 専用プレーンテキストエディタです．
 
 - [CotEditor -Text Editor for macOS](https://coteditor.com/)
 - [CotEditor Project · GitHub](https://github.com/coteditor/)
-- [https://twitter.com/coteditor](https://twitter.com/coteditor)
+- [https://x.com/coteditor](https://x.com/coteditor)
 
 ### 動作環境 {#he679a78}
 
-macOS Ventura 13 以降
+macOS Sonoma 14 以降
 
 ### License {#m60344b8}
 
@@ -35,7 +35,7 @@ macOS Ventura 13 以降
 
 ### ChangeLog {#o0aedc6a}
 
-- [https://github.com/coteditor/CotEditor/commits/develop](https://github.com/coteditor/CotEditor/commits/develop)
+- [https://github.com/coteditor/CotEditor/blob/main/CHANGELOG.md](https://github.com/coteditor/CotEditor/blob/main/CHANGELOG.md)
 
 ## 不具合 {#yd9b9b72}
 
