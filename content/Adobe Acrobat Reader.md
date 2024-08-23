@@ -9,11 +9,11 @@ pukiwiki: "Adobe Acrobat Reader"
 
 ## [Adobe Acrobat Reader](https://acrobat.adobe.com/jp/ja/acrobat/pdf-reader.html) {#k3c2311c}
 
-Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです．
+Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです。
 
-Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません．PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです．
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
 
-Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります．
+Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります。
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
 
@@ -23,8 +23,8 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 24.002.21005 以降に更新してください。Adobe Acrobat Reader 24.002.20991 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-57）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240016.html)
-- Adobe Acrobat Reader Version 2023 (64-bit) の DDE server name は AcroViewA23 です。
+- Adobe Acrobat Reader 24.002.21005 以降に更新してください。Adobe Acrobat Reader 24.002.20991 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-57）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240016.html)。Adobe Acrobat 24.002.21005 は「極端に文字が小さくなる、大きくなる、文字が重なる」といった不具合が発生するようです。--&gt; [「Acrobat」を更新したらPDFが“読めなくなった”との声多数 ～Adobeが原因調査中](https://forest.watch.impress.co.jp/docs/news/1618107.html)
+- Adobe Acrobat Reader Version 2024 (64-bit) の DDE server name は AcroViewA24 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で
@@ -226,7 +226,7 @@ pdfclose --file foo.pdf
 ある程度効率が良いと思われます。
 pdfdde.exe の詳細については pdfdde.c を参照してください。
 
-[https://fossies.org/windows/misc/w32tex-src.tar.xz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/w32tex-src.tar.xz/ktx/utils/pdfopen/pdfdde.c)
+[https://fossies.org/windows/misc/texlive-windows-src2024.tar.xz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/texlive-windows-src2024.tar.xz/ktx/utils/pdfopen/pdfdde.c)
 
 pdfdde.exe で使用できる機能に関してはコマンドラインから
 
@@ -249,14 +249,14 @@ hide                    hide acroview
 exit                    exit acroview and pdfdde
 ```
 
-Windows 版の Adobe Acrobat Reader バージョン 2023 (64-bit)
+Windows 版の Adobe Acrobat Reader バージョン 2024 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
 > AcroViewA24
 
 という1行だけを持ち，ファイル名が
 
-> [pdfddeservername.txt](https://www.tug.org/svn/texlive/trunk/Master/bin/win32/pdfddeservername.txt?view=markup)
+> [pdfddeservername.txt](https://www.tug.org/svn/texlive/trunk/Master/bin/windows/pdfddeservername.txt?view=markup)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
