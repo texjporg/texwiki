@@ -41,7 +41,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します．[PDFリ�
 
 - [PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html)
 - [Adobe Acrobat Readerモバイル版アプリ | PDFアプリ | Adobe Acrobat](https://www.adobe.com/jp/acrobat/mobile/acrobat-reader.html)
-- [アドビ カスタマー サポート (AdobeSupportJ) on Twitter](https://twitter.com/AdobeSupportJ)
+- [アドビ カスタマー サポート (@AdobeSupportJ) さん / X](https://x.com/AdobeSupportJ)
 - [アドビの最新のプレスリリース | Adobe ニュースルーム](https://www.adobe.com/jp/about-adobe/newsroom.html)
 
 ### 動作環境 {#v8f82e43}
