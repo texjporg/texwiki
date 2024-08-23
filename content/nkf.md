@@ -29,10 +29,7 @@ nkf は，文字コードを変換するツールです。
 
 #### Windows {#md1ac383}
 
-[W32TeX](/W32TeX/) には標準で含まれています。
-Windows に [TeX Live](</TeX Live/>) を『[［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/)』からインストールした場合も付属しています。
-
-それ以外の場合は，以下のサイトから，ビルド済みのバイナリを入手してインストールするのが簡単です。
+[『［改訂第9版］LaTeX美文書作成入門』サポートページの文字コードを判別・変換するツールnkf、Windows版の入手先（p. 347）](https://github.com/okumuralab/bibun9?tab=readme-ov-file#%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89%E3%82%92%E5%88%A4%E5%88%A5%E5%A4%89%E6%8F%9B%E3%81%99%E3%82%8B%E3%83%84%E3%83%BC%E3%83%ABnkfwindows%E7%89%88%E3%81%AE%E5%85%A5%E6%89%8B%E5%85%88p-347)を参考に，以下のサイトから，ビルド済みのバイナリを入手してインストールするのが簡単です。
 
 - [Releases · kkato233/nkf · GitHub](https://github.com/kkato233/nkf/releases)
 
@@ -58,9 +55,7 @@ $ sudo port install nkf
 
 #### MSYS2 {#if83f36c}
 
-- [msys2にnkfを入れる](https://twinbird-htn.hatenablog.com/entry/2016/05/24/084002)
-- [&lt;msys2> nkfを入れる。](http://nekoyukimmm.hatenablog.com/entry/2016/03/31/152538)
-- [MSYS2上で動作するnkfコマンドのパッケージを作成する](https://qiita.com/magichan/items/1af5befb2b9750d585a2)
+- [MSYS2上で動作するnkfコマンドのパッケージを普通にmakeする](https://qiita.com/u1and0/items/53c9e677472bc1101be6)
 
 #### MinGW {#gdd930d3}
 
