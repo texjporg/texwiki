@@ -42,4 +42,4 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 ### macOS {#q6991b06}
 
-#### [macOS Big Sur の /usr/bin/python3 はユニバーサルバイナリで 3.8.2](https://twitter.com/h_okumura/status/1327154469130416129) {#r1052796}
+- [MacにPythonインストール](https://qiita.com/freshcl/items/b31913b71463ebfdd9d4)
