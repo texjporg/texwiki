@@ -131,7 +131,7 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 - [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](http://d.hatena.ne.jp/zariganitosh/20101026/text_key_binding)
 - [Macにおけるバックスラッシュ（\）の入力方法](http://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
 - [【Yosemite】U.S.キーでバックスラッシュの入力が円記号になってしまう時の対処法](http://ringo-with.com/archives/2668)
-- 参考：[(1)](https://twitter.com/doraTeX/status/630575968025849856), [(2)](https://twitter.com/doraTeX/status/630576724271435776)
+- 参考：[(1)](https://x.com/doraTeX/status/630575968025849856), [(2)](https://x.com/doraTeX/status/630576724271435776)
 
 ### &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更 {#defaultkeybinding-dict}
 
