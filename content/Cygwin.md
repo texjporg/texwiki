@@ -169,7 +169,6 @@ TeX Live/Cygwin の dvipdfmx が TeX Live 公式パッケージの dvipdfmx よ�
 TeX Live 公式パッケージの dvipdfmx が優先的に実行されるように PATH を変更するとうまくいくようです．
 
 - [Unable to find TFM file “″ で2時間無駄にした](http://masuku0w0.hatenablog.jp/entry/2016/04/27/013612)
-- [https://twitter.com/I1zkE/status/723790138212376577](https://twitter.com/I1zkE/status/723790138212376577) , [https://twitter.com/I1zkE/status/723795415124996096](https://twitter.com/I1zkE/status/723795415124996096)
 - [【cygwin】w32texとの競合問題](http://bluepost69-tech.hatenablog.com/entry/2016/01/22/031818)
 
 ### 不具合 {#iffd4e02}
