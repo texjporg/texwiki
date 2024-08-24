@@ -192,7 +192,8 @@ wine64 cmd /c start Acrobat.exe file.pdf
 
 ## Windows で Adobe Acrobat Reader をコマンドラインから操作する方法 {#f9d733e4}
 
-- [Acrobat および Adobe Reader のコマンドラインオプション](https://helpx.adobe.com/jp/acrobat/kb/510705.html)
+- [Parameters for Opening PDF Files （日本語版）](https://kb2.adobe.com/jp/cps/511/511759/attachments/511759_pdf_open_parameters.pdf)
+- [Acrobat Readerのコマンドライン引数について](https://misora05.hatenablog.com/entry/2019/06/15/040628)
 - [AcrobatやReaderでPDFをコマンドラインで操作する方法](http://www.lifedesignedit.com/use_adobe_pdf_command_line_options)
 - [Windows のコマンドラインから Acrobat や Adobe Reader を使用して印刷する方法](http://pdf-file.nnn2.com/?p=222)
 - [DDEを用いてページを指定してPDFを表示する](http://kb2.adobe.com/jp/cps/510/510047.html)
