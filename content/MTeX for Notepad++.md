@@ -9,18 +9,28 @@ pukiwiki: "MTeX for Notepad++"
 
 [Notepad++](/Notepad++/) > MTeX for Notepad++
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## [MTeX for Notepad++](http://ich.sakura.ne.jp/manabu/jp/html/program.html#MTeXnpp) {#i94bcee5}
 
-[MTeX for Notepad++](http://ich.sakura.ne.jp/manabu/jp/html/program.html#MTeXnpp) は，Notepad++ のプラグインで，TeX 文章の作成をサポートするツールです．
+[MTeX for Notepad++](http://ich.sakura.ne.jp/manabu/jp/html/program.html#MTeXnpp) は，Notepad++ のプラグインで，LaTeX 文章の作成をサポートするツールです．
 
-設定は \[プラグイン\]-\[MTeX for Notepad++\]-\[ツールバー\]-\[設定とヘルプ\]-\[設定...\] から行います．<br>
-ボタンの追加・削除は \[プラグイン\]-\[MTeX for Notepad++\]-\[ツールバー\]-\[設定とヘルプ\]-\[ツールバーのカスタマイズ...\] から行います．<br>
+設定は \[プラグイン\] &gt; \[MTeX for Notepad++\] &gt; \[ツールバー\] &gt; \[設定とヘルプ\] &gt; \[設定...\] から行います．<br>
+ボタンの追加・削除は \[プラグイン\] &gt; \[MTeX for Notepad++\] &gt; \[ツールバー\] &gt; \[設定とヘルプ\] &gt; \[ツールバーのカスタマイズ...\] から行います．<br>
 
 ツールバーとタブの間隔が広すぎる場合は，編集しているファイル名が表示されているタブの上部にマウスのカーソルを移動させてからサイズを変更してください．
 
-#### コマンド・パス設定 {#a0913685}
+### 動作環境 {#j643a8f0}
+
+MTeX for Notepad++ 1.0.0.1 は [Notepad++ 8.3.3](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.3.3) では動作しますが Notepad++ 8.4 以降は動作しないようです。
+
+### License {#b669f539}
+
+BSD 2-Clause
+
+### コマンド・パス設定 {#a0913685}
 
 ***
 
@@ -32,12 +42,19 @@ pukiwiki: "MTeX for Notepad++"
 > <table>
 > <tbody>
 > <tr><td>設定</td><td>説明</td><td>実行ファイル</td><td>引数</td></tr>
-> <tr><td>1</td><td>TeX処理</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 -sjis-terminal "%MTeXnpp_CFName%.tex"</td></tr>
-> <tr><td>1</td><td>BibTeX処理</td><td>"upbibtex"</td><td>-sjis-terminal "%MTeXnpp_CFName%"</td></tr>
-> <tr><td>1</td><td>Index処理</td><td>"mendex"</td><td>-U -T "%MTeXnpp_CFName%.idx"</td></tr>
-> <tr><td>1</td><td>DVIからPSへ変換</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u &gt; "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>TeX処理</td><td>"uplatex"</td><td>-kanji=utf8 -no-guess-input-enc -synctex=1 "%MTeXnpp_CFName%.tex"</td></tr>
+> <tr><td>1</td><td>BibTeX処理</td><td>"bibtexu"</td><td>"%MTeXnpp_CFName%"</td></tr>
+> <tr><td>1</td><td>Index処理</td><td>"upmendex"</td><td>"%MTeXnpp_CFName%.idx"</td></tr>
+> </tbody>
+> </table>
+>
+> <!-- |1|DVIからPSへ変換|"dvips"|-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &#x7c; convbkmk -u > "%MTeXnpp_CFName%.ps"| -->
+>
+> <table>
+> <tbody>
+> <tr><td>1</td><td>DVIからPSへ変換</td><td>"dvips"</td><td>-Ppdf -z -f "%MTeXnpp_CFName%.dvi" &gt; "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>DVIからPDFへ変換</td><td>"dvipdfmx"</td><td>"%MTeXnpp_CFName%.dvi"</td></tr>
-> <tr><td>1</td><td>PSからPDFへ変換</td><td>"cmd"</td><td>/c ps2pdf.bat "%MTeXnpp_CFName%.ps"</td></tr>
+> <tr><td>1</td><td>PSからPDFへ変換</td><td>"cmd"</td><td>/c ps2pdf.exe "%MTeXnpp_CFName%.ps"</td></tr>
 > <tr><td>1</td><td>PDFを表示</td><td>%MTeXnpp_start% "SumatraPDF.exe"</td><td>-reuse-instance "%MTeXnpp_CFPath%\%MTeXnpp_CFName%.pdf" -forward-search "%MTeXnpp_FName%.tex" %MTeXnpp_Line%</td></tr>
 > <tr><td>...</td><td>...</td><td>...</td><td>...</td></tr>
 > </tbody>
