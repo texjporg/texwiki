@@ -17,8 +17,8 @@ pukiwiki: "Notepad++"
 
 ## Notepad++ とは {#ife0659c}
 
-Notepad++ はテキストエディタです．
-Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です．
+Notepad++ はテキストエディタです。
+Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です。
 
 Notepad++ 7.5 で LaTeX のサポートが追加されました。
 
@@ -31,7 +31,7 @@ Notepad++ は
 - LaTeX キーワードの補完機能
 - 折りたたみ
 
-をサポートしています．
+をサポートしています。
 
 - [Notepad++ 公式サイト](https://notepad-plus-plus.org/)
     - [Download](https://notepad-plus-plus.org/download/)
@@ -54,6 +54,13 @@ Windows
 - [コミットログ](https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master)
 
 ### 派生版 {#l02b5ab5}
+
+#### Notepad-- {#nbb7ded3}
+
+Notepad-- は Notepad++ によく似たテキストエディタです。
+Windows/macOS/Linux で動作します。
+
+- [Notepad--](https://github.com/cxasm/notepad--)
 
 #### Notepad++和式 (aka Notepad++JS aka nppjs) {#vf0fc40a}
 
@@ -111,14 +118,10 @@ MTeX for Notepad++ を使うと LaTeX 環境を簡単に作ることができま
 "C:\Program Files\Notepad++\notepad++.exe" "%f" -n%l -c%c
 ```
 
-## Linux で Notepad++ {#hd58d1c7}
-
-- [Wikipedia.ja:Notepad++](https://ja.wikipedia.org/wiki/Notepad%2B%2B)
-
 ## 関連リンク {#d8eabd2e}
 
 - [Windowsで快適にTeX](http://qiita.com/mpyw/items/28979ee8dbfdde4ddff6)
-- [WindowsでWebコーディング→Notepad++使えば良いとおもうよ！](http://blog.56doc.net/%E9%9B%91%E8%AB%87%E3%83%AD%E3%82%B0/windows%E3%81%A7web%E3%82%B3%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E2%86%92notepad-)
+- [WindowsでWebコーディング→Notepad++使えば良いとおもうよ！](https://blog.56doc.net/Entry/499/)
 - [TeX EditorとしてのNotepad++](http://www-al.nii.ac.jp/~kameda/blog/cmlog/1203230924.htm)
 - [Notepad++の使用方法](http://www.crystal-creation.com/software/tech/tool/editor/notepad-plus/)
 - [GNU Octave, LaTeX, and Notepad++](http://www.tlhiv.org/ma497/software/)
