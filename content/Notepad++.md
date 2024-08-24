@@ -20,6 +20,13 @@ pukiwiki: "Notepad++"
 Notepad++ はテキストエディタです．
 Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です．
 
+Notepad++ 7.5 で LaTeX のサポートが追加されました。
+
+- [Add new languages support](https://github.com/notepad-plus-plus/notepad-plus-plus/commit/02bdd11700e6fb225157aa59f1f5f1a453865cee)
+- [「Notepad++」v7.5が公開、“LaTeX”や“Rust”、“Erlang”など19言語をサポート](http://forest.watch.impress.co.jp/docs/news/1076002.html)
+
+Notepad++ は
+
 - LaTeX キーワードの色分け
 - LaTeX キーワードの補完機能
 - 折りたたみ
@@ -46,11 +53,6 @@ Windows
 - [Releases](https://github.com/notepad-plus-plus/notepad-plus-plus/releases)
 - [コミットログ](https://github.com/notepad-plus-plus/notepad-plus-plus/commits/master)
 
-Notepad++ 7.5 で LaTeX のサポートが追加されました。
-
-- [Add new languages support](https://github.com/notepad-plus-plus/notepad-plus-plus/commit/02bdd11700e6fb225157aa59f1f5f1a453865cee)
-- [「Notepad++」v7.5が公開、“LaTeX”や“Rust”、“Erlang”など19言語をサポート](http://forest.watch.impress.co.jp/docs/news/1076002.html)
-
 ### 派生版 {#l02b5ab5}
 
 #### Notepad++和式 (aka Notepad++JS aka nppjs) {#vf0fc40a}
@@ -60,6 +62,7 @@ Notepad++ の派生版 で EUC-JP と ISO-2022-JP に対応した Notepad++和�
 Notepad++ JS npp-7.5.1.1-js-171025-2200 (日付: 2017-10-25) が最新リリース版のようです。
 
 - [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
+    - [https://ja.osdn.net/projects/l2jacmjpn/releases/p15218](https://ja.osdn.net/projects/l2jacmjpn/releases/p15218)
     - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
         - [http://jaist.dl.osdn.jp/l2jacmjpn/68568/](http://jaist.dl.osdn.jp/l2jacmjpn/68568/)
     - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
@@ -80,7 +83,12 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．
 jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ることができます．
 詳細は [jN - TeX Wiki](/jN/) を参照してください．
 
-### [LuaScript](https://github.com/dail8859/LuaScript) {#b879cf21}
+### [MTeX for Notepad++](</MTeX for Notepad++/>) {#vf3efa2d}
+
+MTeX for Notepad++ を使うと LaTeX 環境を簡単に作ることができます．
+詳細は [MTeX for Notepad++ - TeX Wiki](</MTeX for Notepad++/>) を参照してください．
+
+<!-- **[[LuaScript:https://github.com/dail8859/LuaScript]] [#b879cf21] -->
 
 ### [DSpellCheck](https://github.com/Predelnik/DSpellCheck) {#a6ef2445}
 
@@ -93,6 +101,7 @@ jN  (JavaScript for Notepad++) を使うと LaTeX 環境を簡単に作ること
 
 - [NppExec#SumatraPDF との連携](/NppExec/#jbc79e5b)
 - [jN#SumatraPDF との連携](/jN/#u247e15e)
+- [MTeX for Notepad++#SumatraPDF との連携](</MTeX for Notepad++/#q214c924>)
 
 を参照してください．
 
