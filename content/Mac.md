@@ -163,7 +163,7 @@ macOS 用の汎用的なキーボードカスタマイズツール [Karabiner-El
 
 ### Ukelele  によるキーバインドの変更 {#pc59ea4e}
 
-Unicode Keyboard Layout Editor の [Ukelele](http://scripts.sil.org/ukelele) で，\_（アンダースコア） を入力すると \ に変換することができます。
+Unicode Keyboard Layout Editor の [Ukelele](https://software.sil.org/ukelele/) で，\_（アンダースコア） を入力すると \ に変換することができます。
 
 - [Mac(Sierra)でのキーリマップ](https://uitspitss.hatenablog.com/entry/2017/05/31/031642)
 
