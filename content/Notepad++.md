@@ -48,21 +48,26 @@ Windows
 
 Notepad++ 7.5 で LaTeX のサポートが追加されました。
 
-- [Notepad++ Notepad++ 7.5 released](https://notepad-plus-plus.org/news/notepad-7.5-released.html)
 - [Add new languages support](https://github.com/notepad-plus-plus/notepad-plus-plus/commit/02bdd11700e6fb225157aa59f1f5f1a453865cee)
 - [「Notepad++」v7.5が公開、“LaTeX”や“Rust”、“Erlang”など19言語をサポート](http://forest.watch.impress.co.jp/docs/news/1076002.html)
 
 ### 派生版 {#l02b5ab5}
 
-Notepad++ の派生版 で EUC-JP と ISO-2022-JP に対応したものが公開されています．公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが EUC-JP と ISO-2022-JP には対応していません．
+#### Notepad++和式 (aka Notepad++JS aka nppjs) {#vf0fc40a}
+
+Notepad++ の派生版 で EUC-JP と ISO-2022-JP に対応した Notepad++和式 が公開されています。公式サイトで提供されている Notepad++ は Shift_JIS には対応していますが EUC-JP と ISO-2022-JP には対応していません。
+
+Notepad++ JS npp-7.5.1.1-js-171025-2200 (日付: 2017-10-25) が最新リリース版のようです。
 
 - [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
     - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
+        - [http://jaist.dl.osdn.jp/l2jacmjpn/68568/](http://jaist.dl.osdn.jp/l2jacmjpn/68568/)
     - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
+        - [http://iij.dl.osdn.jp/l2jacmjpn/68568/](http://iij.dl.osdn.jp/l2jacmjpn/68568/)
 
 ## プラグイン (Plugins) {#k2155ff2}
 
-- [http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central](http://docs.notepad-plus-plus.org/index.php?title=Plugin_Central)
+- [https://github.com/notepad-plus-plus/nppPluginList](https://github.com/notepad-plus-plus/nppPluginList)
 - [sftys's notepad++](http://freesftys.lv9.org/app/npp/)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
