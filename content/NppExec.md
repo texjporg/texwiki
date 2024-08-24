@@ -16,7 +16,7 @@ pukiwiki: "NppExec"
 ## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) を使用する {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
-[https://sourceforge.net/projects/npp-plugins/files/NppExec/](https://sourceforge.net/projects/npp-plugins/files/NppExec/) から NppExec の 64-bit プラグインあるいは 32-bit プラグインがダウンロードできます．<br>
+[https://sourceforge.net/projects/npp-plugins/files/NppExec/](https://sourceforge.net/projects/npp-plugins/files/NppExec/) から NppExec の 64-bit プラグインがダウンロードできます．<br>
 \[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
@@ -41,7 +41,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal" "$(NAME_PART)"<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8" "$(NAME_PART)"<br>
 
 <br>
 
