@@ -58,7 +58,7 @@ Windows
 #### Notepad-- {#nbb7ded3}
 
 Notepad-- は Notepad++ によく似たテキストエディタです。
-Windows/macOS/Linux で動作します。
+Windows/Linux/macOS で動作します。
 
 - [Notepad--](https://github.com/cxasm/notepad--)
 
