@@ -101,6 +101,16 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 などがあります．
 
+## PostScript、EPS ファイルについて {#ibffc092}
+
+macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換する機能が削除されたため、macOS の機能を用いた PostScript、EPS ファイルのプレビューはできなくなりました。
+
+- [Mac で .ps ファイルや .eps ファイルを表示する](https://support.apple.com/ja-jp/108775)
+- [macOS14 Sonoma でEPSをプレビューしたい](https://discussionsjapan.apple.com/thread/255488713)
+- [macOS 14 Sonomaでは、PostScriptとEPSのサポート終了がさらに進み、.ps/.epsファイルをプリンタキューにも追加できない状態に。](https://applech2.com/archives/macos-14-sonoma-eos-ps-and-eps.html)
+- [Apple、macOS 14 SonomaでPostScriptとEPSファイルをPDFへ変換する機能を削除。これによりAdobeのAcrobatなどでPDFファイルを印刷できなくなっているので注意を。](https://applech2.com/archives/20230612-apple-remove-ps-eps-to-pdf-from-macos-14-sonoma.html)
+- [Apple、macOS 13 VenturaのプレビューアプリでPostScript(.ps/.eps)ファイルのサポートを終了。](https://applech2.com/archives/20221028-macos-13-ventura-preview-app-drop-support-postscript.html)
+
 ## 周辺ツールの利用 {#tools}
 
 ### 文献管理ツール {#bibtex}
