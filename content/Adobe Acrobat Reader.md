@@ -206,10 +206,9 @@ wine64 cmd /c start Acrobat.exe file.pdf
 
 ### pdfopen.exe, pdfclose.exe, pdfdde.exe を使う場合の注意点 {#lff102b3}
 
-TeX Live（windows 版）には Adobe Acrobat Reader で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
-pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。これらは，Adobe による
-PDF Reader がファイルをロックするので，この状況を少しでも改善するために作成された
-ものです。つまり，
+windows 版の TeX Live には Adobe Acrobat Reader で DDE を使用して PDF ファイルを開いたり閉じたりするためのツールである
+pdfopen.exe, pdfclose.exe, pdfdde.exe が収録されています。これらは，Adobe Acrobat Reader
+がファイルをロックするので，この状況を少しでも改善するために作成されたものです。つまり，
 
 ```
 pdfopen --file foo.pdf
@@ -341,11 +340,11 @@ DDE でファイルを閉じなくても「Acrobat.exe で開く --&gt; Acrobat.
 
 ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
 
-- [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
+- [https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
 
 現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法で運用しているようです。[^3]
 
-- [http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](http://git.lyx.org/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
+- [https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
 
 ### ファイルを開く {#id6d0918}
 
