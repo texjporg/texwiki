@@ -31,7 +31,7 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 
 ### お知らせ {#qdd1dda1}
 
-- Poppler 21.12.0 以降はビルドする際に C++17 をサポートした処理系が必要です。--&gt; [Increase C++ standard to 17](https://cgit.freedesktop.org/poppler/poppler/commit/?id=3f8b9e92aade630b90943fd3936bdaa089e0603d)
+- Poppler 24.04.0 以降はビルドする際に C++20 をサポートした処理系が必要です。--&gt; [Require C++20](https://cgit.freedesktop.org/poppler/poppler/commit/CMakeLists.txt?id=d8ae3ba659c71b4f5913ecf74d525461bb831366)
 - Windows 版の TeX Live 2017 以降は xpdf utilities の代わりに poppler utilities が
     使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
@@ -46,12 +46,13 @@ TeX Live 2017 以降をインストールしている場合は poppler utilities
 
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler)
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler-data](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-poppler-data)
-- [http://repo.msys2.org/mingw/x86_64/](http://repo.msys2.org/mingw/x86_64/)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-poppler](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-poppler)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-poppler-data](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-poppler-data)
 
 MSYS2 の pacman でインストールすることもできます。
 
 ```
-pacman -S mingw-w64-x86_64-poppler mingw-w64-x86_64-poppler-data
+pacman -S mingw-w64-ucrt-x86_64-poppler mingw-w64-ucrt-x86_64-poppler-data
 ```
 
 を実行します．
