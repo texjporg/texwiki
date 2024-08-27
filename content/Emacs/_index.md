@@ -381,3 +381,4 @@ Source editor:
 - [emacsでtexの不要なファイルを適当に削除する方法](http://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
 - [Emacs JP](http://emacs-jp.github.com/)
 - [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
+- [Emacs29.1 導入](http://minischna.starfree.jp/Emacs29.1/000emacs29_1.pdf)
