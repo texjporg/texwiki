@@ -222,12 +222,13 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
 単独の LaTeX 用 PDF プレビューアとしては
 
-- [Evince](/Evince/)
-- [Okular](/Okular/)
-- [zathura](/zathura/)
-- [qpdfview](/qpdfview/)
-- [llpp](/llpp/)
-- [MuPDF](/MuPDF/)：軽量な PDF/XPS ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin), llpp などで使われています．
+- [Evince](/Evince/)：GNOME 標準の PDF ビューア
+- [Okular](/Okular/)：KDE 標準の PDF ビューア
+- [zathura](/zathura/)：軽量な PDF ビューア
+- [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
+- [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
+- [llpp](/llpp/)：PDF pager
+- [MuPDF](/MuPDF/)：軽量な PDF ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin), llpp などで使われています．
 - [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
 
 などがあります．
