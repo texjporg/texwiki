@@ -11,7 +11,7 @@ pukiwiki: "Adobe Acrobat Reader"
 
 Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです。
 
-Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
 
 Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります。
 
@@ -23,7 +23,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 24.002.21005 以降に更新してください。Adobe Acrobat Reader 24.002.20991 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-57）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240016.html)。Adobe Acrobat 24.002.21005 は「極端に文字が小さくなる、大きくなる、文字が重なる」といった不具合が発生するようです。--&gt; [「Acrobat」を更新したらPDFが“読めなくなった”との声多数 ～Adobeが原因調査中](https://forest.watch.impress.co.jp/docs/news/1618107.html)。Adobe Acrobat Reader 24.002.21005 でも同様の問題が発生するようです。--&gt; [Acrobat Readerで開くと資料内の文字が小さい](https://community.adobe.com/t5/acrobat%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0-discussions/acrobat-reader%E3%81%A7%E9%96%8B%E3%81%8F%E3%81%A8%E8%B3%87%E6%96%99%E5%86%85%E3%81%AE%E6%96%87%E5%AD%97%E3%81%8C%E5%B0%8F%E3%81%95%E3%81%84/td-p/14808022)。
+- Adobe Acrobat Reader 24.002.21005 以降に更新してください。Adobe Acrobat Reader 24.002.20991 およびそれ以前のバージョンには脆弱性が存在します。--&gt; [Adobe AcrobatおよびReaderの脆弱性（APSB24-57）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240016.html)。Adobe Acrobat 24.002.21005 は「極端に文字が小さくなる、大きくなる、文字が重なる」といった不具合が発生するようです。--&gt; [「Acrobat」を更新したらPDFが“読めなくなった”との声多数 ～Adobeが原因調査中【8月27日追記】](https://forest.watch.impress.co.jp/docs/news/1618107.html)。Adobe Acrobat Reader 24.002.21005 でも同様の問題が発生するようです。--&gt; [Acrobat Readerで開くと資料内の文字が小さい](https://community.adobe.com/t5/acrobat%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0-discussions/acrobat-reader%E3%81%A7%E9%96%8B%E3%81%8F%E3%81%A8%E8%B3%87%E6%96%99%E5%86%85%E3%81%AE%E6%96%87%E5%AD%97%E3%81%8C%E5%B0%8F%E3%81%95%E3%81%84/td-p/14808022)。24.003.20054 で修正されました。
 - Adobe Acrobat Reader Version 2024 (64-bit) の DDE server name は AcroViewA24 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -55,14 +55,14 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ## ダウンロード/インストール {#ne09e93f}
 
-- [https://get.adobe.com/jp/reader/](https://get.adobe.com/jp/reader/)
+<!-- -https://get.adobe.com/jp/reader/ -->
 - [https://get.adobe.com/jp/reader/enterprise/](https://get.adobe.com/jp/reader/enterprise/)
 
 ### Windows {#l93a8183}
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400221005/AcroRdrDCx642400221005_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400221005/AcroRdrDCx642400221005_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320054/AcroRdrDCx642400320054_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320054/AcroRdrDCx642400320054_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -111,8 +111,8 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400221005/AcroRdrDCx642400221005_ja_JP.exe
-wine64 AcroRdrDCx642400221005_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320054/AcroRdrDCx642400320054_ja_JP.exe
+wine64 AcroRdrDCx642400320054_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
