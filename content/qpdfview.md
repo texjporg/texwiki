@@ -25,7 +25,7 @@ PDF ファイルや PS ファイルが表示できます．
 
 ### 動作環境 {#g3b31065}
 
-Linux
+Windows, macOS, Linux
 
 ### License {#v29be396}
 
@@ -41,6 +41,16 @@ Linux
 - [コミットログ](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/changes)
 
 ## ダウンロード/インストール {#h3948c41}
+
+### Windows {#e69ac234}
+
+- [https://github.com/darealshinji/qpdfview](https://github.com/darealshinji/qpdfview)
+    - [https://github.com/darealshinji/qpdfview/releases](https://github.com/darealshinji/qpdfview/releases)
+
+### macOS {#p4590da3}
+
+- [https://github.com/vit9696/qpdfview](https://github.com/vit9696/qpdfview)
+    - [https://github.com/vit9696/qpdfview/releases](https://github.com/vit9696/qpdfview/releases)
 
 ### Arch Linux {#ua5dc612}
 
