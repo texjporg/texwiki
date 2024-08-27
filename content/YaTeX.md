@@ -186,10 +186,10 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
 (setq bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
 (setq makeindex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-(setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ;(setq dvi2-command "texworks")
 ;(setq dvi2-command "texstudio --pdf-viewer-only")
-(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ;(setq tex-pdfview-command "texworks")
 ;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process Acrobat -ArgumentList ($p)}\"")
@@ -1326,6 +1326,7 @@ TeX ソースの先頭行に例えば，
 
 ## 関連リンク {#fcad5d2d}
 
+- [YaTeXからSumatraPDFを起動](https://uep.media.hosei.ac.jp/yatex%E3%81%8B%E3%82%89sumatrapdf%E3%82%92%E8%B5%B7%E5%8B%95/)
 - [私的 YaTeX 事始め](http://mtino1594.hatenablog.com/entry/2019/04/07/200000)
 - [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 - [ Emacs26.1を入れてみる（その15）EmacsでLaTeX](https://blogs.yahoo.co.jp/t_terui/66967449.html), [ Emacs26.1を入れてみる（その16）YaTeX にアウトラインモードを追加](https://blogs.yahoo.co.jp/t_terui/66970175.html)
