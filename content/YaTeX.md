@@ -300,13 +300,13 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
+(setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 ;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq dvi2-command "open -a Skim")
 ;(setq dvi2-command "open -a Preview")
 ;(setq dvi2-command "open -a TeXShop")
@@ -377,13 +377,13 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "ptex2pdf -u -l -ot '-synctex=1'")
+(setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'")
 ;(setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 ;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 ;(setq dvi2-command "xdg-open")
 (setq dvi2-command "evince")
 ;(setq dvi2-command "atril")
@@ -685,15 +685,13 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 ```
 (if (eq system-type 'windows-nt)
     (setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-  (setq tex-command "ptex2pdf -u -l -ot \"-synctex=1\""))
+  (setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'"))
 ```
 
 #### LuaLaTeX {#r2c74452}
 
 ```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "lualatex -synctex=1")
-  (setq tex-command "lualatex -synctex=1"))
+(setq tex-command "lualatex -synctex=1")
 ```
 
 #### upLaTeXmk {#bc88da07}
@@ -701,7 +699,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 ```
 (if (eq system-type 'windows-nt)
     (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-  (setq tex-command "latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
+  (setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
 #### LuaLaTeXmk {#d4a80fb8}
@@ -742,7 +740,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 #### SumatraPDF {#d0c29303}
 
 ```
-(setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ```
 
 #### TeXworks {#v93f2569}
@@ -836,7 +834,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 #### SumatraPDF {#i2f07080}
 
 ```
-(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ```
 
 #### TeXworks {#y4efa0cf}
@@ -1092,8 +1090,8 @@ off の場合
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq dvi2-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
-(setq tex-pdfview-command "rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance")
+(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ```
 
 を設定して C-c C-g を入力すれば SumatraPDF で forward seasrch ができます．
