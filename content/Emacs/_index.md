@@ -42,8 +42,7 @@ GNU Emacs はフリーソフトウェアです．
 
 - [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
-- [最近のGNU Emacs for WindowsではフツーにMS IMEを使える話](https://scrapbox.io/tsuu32/%E6%9C%80%E8%BF%91%E3%81%AEGNU_Emacs_for_Windows%E3%81%A7%E3%81%AF%E3%83%95%E3%83%84%E3%83%BC%E3%81%ABMS_IME%E3%82%92%E4%BD%BF%E3%81%88%E3%82%8B%E8%A9%B1)
-- [Emacs 28.2 +パッチ20220917版 build on Cygwin](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs_28.2_build_20220917.html)
+- [emacs-w32 on Cygwinについて](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs.html#emacs-w32%20on%20Cygwin%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
     <!-- -[[NTEmacs / Emacs for Windows:http://cha.la.coocan.jp/doc/NTEmacs.html]] -->
     <!-- -[[64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）:https://github.com/mhatta/emacs-27-x86_64-win-ime]] -->
     <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
@@ -331,6 +330,7 @@ Source editor:
 
 ### Windows {#a1ddfe8b}
 
+- [Emacs29.1 導入](http://minischna.starfree.jp/Emacs29.1/000emacs29_1.pdf)
 - [NTEmacs の設定](https://www49.atwiki.jp/ntemacs/pages/1.html)
 - [Window版emacs24.4をclangでビルドする](http://blog.livedoor.jp/tek_nishi/archives/8597627.html)
 - [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
@@ -381,4 +381,3 @@ Source editor:
 - [emacsでtexの不要なファイルを適当に削除する方法](http://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
 - [Emacs JP](http://emacs-jp.github.com/)
 - [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
-- [Emacs29.1 導入](http://minischna.starfree.jp/Emacs29.1/000emacs29_1.pdf)
