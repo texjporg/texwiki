@@ -21,6 +21,7 @@ SyncTeX に対応しています．
 
 エディタ部分は [KTextEditor](https://api.kde.org/frameworks/ktexteditor/html/) を使用しています．
 
+- [Kile - KDE Applications](https://apps.kde.org/kile/)
 - [Kile - an Integrated LaTeX Environment](https://kile.sourceforge.io/)
 
 ### 動作環境 {#fc95c26d}
@@ -33,10 +34,13 @@ Windows, Linux
 
 ### リリース情報 {#qfb7e12c}
 
-[https://github.com/KDE/kile/releases](https://github.com/KDE/kile/releases)
+- [https://invent.kde.org/office/kile/-/tags](https://invent.kde.org/office/kile/-/tags)
+- [https://github.com/KDE/kile/tags](https://github.com/KDE/kile/tags)
 
 ### ChangeLog {#k30d45b0}
 
+- [https://invent.kde.org/office/kile](https://invent.kde.org/office/kile)
+    - [https://invent.kde.org/office/kile/-/commits/master](https://invent.kde.org/office/kile/-/commits/master)
 - [https://github.com/KDE/kile](https://github.com/KDE/kile)
     - [https://github.com/KDE/kile/commits/master](https://github.com/KDE/kile/commits/master)
 
