@@ -15,11 +15,11 @@ pukiwiki: "qpdfview"
 
 ## qpdfview とは {#o070cb99}
 
-qpdfview はタブ切り替え型のドキュメントビューアです．
-PDF ファイルや PS ファイルが表示できます．
-[SyncTeX](/SyncTeX/) に対応しています．
-ファイルの自動更新機能もあります．
-ファイルの自動更新機能はデフォルトでは無効になっているので設定で有効にする必要があります．
+qpdfview はタブ切り替え型のドキュメントビューアです。
+PDF ファイルが表示できます。
+[SyncTeX](/SyncTeX/) に対応しています。
+ファイルの自動更新機能もあります。
+ファイルの自動更新機能はデフォルトでは無効になっているので \[編集(E)\] > \[設定...\] > \[挙動(B)\] の自動更新の項目にチェックを入れて有効にする必要があります。
 
 - [qpdfview](https://launchpad.net/qpdfview)
 
@@ -46,6 +46,18 @@ Windows, macOS, Linux
 
 - [https://github.com/darealshinji/qpdfview](https://github.com/darealshinji/qpdfview)
     - [https://github.com/darealshinji/qpdfview/releases](https://github.com/darealshinji/qpdfview/releases)
+
+qpdfview-0.5.0-win64.zip を展開して qpdfview-0.5.0-win64 フォルダーを配置します。
+
+コンピューターを使用する全員が使用する場合は
+
+> C:\Program Files\qpdfview-0.5.0-win64
+
+自分のみ使用する場合は
+
+> C:\Users\\&lt;ユーザー名>\AppData\Local\Programs\qpdfview-0.5.0-win64
+
+に配置すればよいでしょう。
 
 ### macOS {#p4590da3}
 
@@ -78,26 +90,30 @@ Windows, macOS, Linux
 
 \[編集(E)\] &gt; \[設定...\] &gt; \[挙動(B)\]
 
-自動更新の項目をチェックするとファイルを自動的に更新してくれます．
+自動更新の項目をチェックするとファイルを自動的に更新してくれます。
 
-> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾鍵(M)　\]</ins></span><br>
+> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾キー(M)　\]</ins></span><br>
 >
-> 　　URLを開く:　　　　　　　　　　　　　　　 ☐<br>
-> 　　自動更新:　　　　　　　　　　　　　　　　☑<br>
-> 　　直近に使われたものを追跡:　　　　　☐<br>
-> 　　直近に閉じられたものを保持:　　　　☐<br>
-> 　　タブを戻す:　　　　　　　　　　　　　　　☐<br>
-> 　　しおりを復帰させる;　　　　　　　　　　☐<br>
-> 　　ファイル毎の設定を復帰させる:　　　☐<br>
-> 　　データベース保存間隔:　　　　　　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　プレゼンテーションを同期:　　　　　　☐<br>
-> 　　プレゼンテーションスクリーン:　　　　 <ins>\[既定　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　概要表示を同期:　　　　　　　　　　　 ☐<br>
-> 　　拡大因子:　　　　　　　　　　　　　　　 <ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　強調する時間:　　　　　　　　　　　　　<ins>\[5000 ミリ秒　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　強調表示の色:　　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-> 　　註釈の色:　　　　　　　　　　　　　　　 <ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-> 　　ソースエディタ:　　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
+> 　URLを開く:　　　　　　　　☐<br>
+> 　&amp;<span style="color:black,yellow">自動更新:　　　　　　　　　☑</span>;<br>
+> 　最近使用したものを追跡:　　☐<br>
+> 　最近閉じたものを保持:　　　☐<br>
+> 　タブを復元:　　　　　　　　☐<br>
+> 　ブックマークを復元;　　　　☐<br>
+> 　ファイル毎の設定を復元:　　☐<br>
+> 　データベース保存間隔:　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　プレゼンテーションを同期:　☐<br>
+> 　プレゼンテーション画面:　　<ins>\[既定　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　概要表示を同期:　　　　　　☐<br>
+> 　分割ビューを同期:　　　　　☑<br>
+> 　相対ジャンプ:　　　　　　　☑<br>
+> 　最小限のスクロール:　　　　☐<br>
+> 　拡大因子:　　　　　　　　　<ins>\[1.10　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　並行検索の実行:　　　　　　☐<br>
+> 　強調する時間:　　　　　　　<ins>\[5000 ミリ秒　　　　 \]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　強調表示の色:　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　註釈の色:　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　ソースエディタ:　　　　　　<ins>texstudio "%1" -line %2</ins><br>
 
 ## 使い方 {#n3df728b}
 
@@ -128,7 +144,7 @@ TeX ファイルの 30 行目に対応する PDF ファイルの該当する箇�
 $ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
 ```
 
-のように実行します．
+のように実行します。
 
 ### inverse search {#n500afd3}
 
@@ -141,25 +157,31 @@ $ qpdfview --unique "hoge.pdf#src:hoge.tex:30:0"
 texstudio "%1" -line %2
 ```
 
-を設定します．
+を設定します。
 
-> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾鍵(M)　\]</ins></span><br>
+「%1」は絶対ファイルパスで置き換えられます。「%2」および「%3」は、それぞれ行番号と列番号で置き換えられます。
+
+qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします。
+
+> <strong>\[　挙動(B)　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　画像(G)　\]\[　インタフェース(I)　\]\[　ショートカット(S)　\]\[　修飾キー(M)　\]</ins></span><br>
 >
-> 　　URLを開く:　　　　　　　　　　　　　　　 ☐<br>
-> 　　自動更新:　　　　　　　　　　　　　　　　☑<br>
-> 　　直近に使われたものを追跡:　　　　　☐<br>
-> 　　直近に閉じられたものを保持:　　　　☐<br>
-> 　　タブを戻す:　　　　　　　　　　　　　　　☐<br>
-> 　　しおりを復帰させる;　　　　　　　　　　☐<br>
-> 　　ファイル毎の設定を復帰させる:　　　☐<br>
-> 　　データベース保存間隔:　　　　　　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　プレゼンテーションを同期:　　　　　　☐<br>
-> 　　プレゼンテーションスクリーン:　　　　 <ins>\[既定　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　概要表示を同期:　　　　　　　　　　　 ☐<br>
-> 　　拡大因子:　　　　　　　　　　　　　　　 <ins>\[1.10　　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　強調する時間:　　　　　　　　　　　　　<ins>\[5000 ミリ秒　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
-> 　　強調表示の色:　　　　　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-> 　　註釈の色:　　　　　　　　　　　　　　　 <ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
-> 　　ソースエディタ:　　　　　　　　　　　　　<ins>texstudio "%1" -line %2</ins><br>
-
-qpdfview 上でダブルクリックすると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
+> 　URLを開く:　　　　　　　　☐<br>
+> 　自動更新:　　　　　　　　　☑<br>
+> 　最近使用したものを追跡:　　☐<br>
+> 　最近閉じたものを保持:　　　☐<br>
+> 　タブを復元:　　　　　　　　☐<br>
+> 　ブックマークを復元;　　　　☐<br>
+> 　ファイル毎の設定を復元:　　☐<br>
+> 　データベース保存間隔:　　　<ins>\[5 分　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　プレゼンテーションを同期:　☐<br>
+> 　プレゼンテーション画面:　　<ins>\[既定　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　概要表示を同期:　　　　　　☐<br>
+> 　分割ビューを同期:　　　　　☑<br>
+> 　相対ジャンプ:　　　　　　　☑<br>
+> 　最小限のスクロール:　　　　☐<br>
+> 　拡大因子:　　　　　　　　　<ins>\[1.10　　　　　　　　\]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　並行検索の実行:　　　　　　☐<br>
+> 　強調する時間:　　　　　　　<ins>\[5000 ミリ秒　　　　 \]</ins><ins>\[<strong>⇕</strong>\]</ins><br>
+> 　強調表示の色:　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　註釈の色:　　　　　　　　　<ins>\[#ffff00　　　　　　　\]</ins><ins>\[<strong>ᐯ</strong>\]</ins><br>
+> 　&amp;<span style="color:black,yellow">ソースエディタ:　　　　　　<ins>texstudio "%1" -line %2</ins></span>;<br>
