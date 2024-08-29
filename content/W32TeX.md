@@ -327,14 +327,15 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 
 <strong>HTTP</strong>
 
-- [北陸先端科学技術大学院大学](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
+- [JAIST 北陸先端科学技術大学院大学](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [理化学研究所](http://ftp.riken.jp/CTAN/systems/win32/w32tex/)
 - [KDDI総合研究所](http://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [ctan.ijs.si (スロベニア)](http://ctan.ijs.si/mirror/w32tex/current/) &lt;-- 更新が速い
-- [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/) &lt;-- 更新が速い
-- [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+    <!-- -[[ctan.ijs.si (スロベニア):http://ctan.ijs.si/mirror/w32tex/current/]] -->
+
 - [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
+- [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
 ### <del>過去のバージョンの W32TeX</del> {#mirror-old}
 
