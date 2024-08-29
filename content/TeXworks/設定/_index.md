@@ -94,7 +94,7 @@ OK を押して最初の画面に戻り，必要ならば次の図に示すよ�
         - -l
         - -u
         - -ot
-        - -kanji=utf8 $synctexoption
+        - -kanji=utf8 -no-guess-input-enc $synctexoption
         - $fullname
     - 「実行後，PDF を表示する」にチェックを入れる．
 
@@ -102,7 +102,7 @@ OK を押して最初の画面に戻り，必要ならば次の図に示すよ�
     - 名前：upLaTeX (latexmk)
     - プログラム：latexmk
     - 引数：
-        - -latex=uplatex -kanji=utf8 $synctexoption %O %S
+        - -latex=uplatex -kanji=utf8 -no-guess-input-enc $synctexoption %O %S
         - -e
         - $dvipdf='dvipdfmx %O -o %D %S';$bibtex='bibtexu %O %B';$makeindex='upmendex %O -o %D %S';
         - -pdfdvi
