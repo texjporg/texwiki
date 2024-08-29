@@ -187,7 +187,7 @@ $ sudo tlmgr paper a4
     - 理化学研究所
         - [http://ftp.riken.go.jp/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/CTAN/systems/mac/mactex/)
     - Ring Server
-        <!-- - --http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/ -->
+        - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
 - <strong>HTTPS</strong>
