@@ -30,7 +30,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTP, FTP)
 
-- [KDDI 研究所](http://www.kddilabs.jp/)
+- [KDDI総合研究所](https://www.kddi-research.jp/)
     - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
         (HTTP, FTP)
     - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
@@ -42,7 +42,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
         <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
-- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科](http://www.yz.yamagata-u.ac.jp/)
+- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科／大学院有機材料システム研究科](http://www.yz.yamagata-u.ac.jp/)
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
         (HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
