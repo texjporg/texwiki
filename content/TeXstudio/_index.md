@@ -90,20 +90,6 @@ brew install --cask texstudio
 - [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md)
 - [https://texstudio-org.github.io/CHANGELOG.html](https://texstudio-org.github.io/CHANGELOG.html)
 
-## 注意点 {#g9d4fa21}
-
-### macOS の TeXstudio で ptex2pdf が動作しない {#zfde7b69}
-
-&#x7e;/.bash_profile に
-
-```
-export PATH=$PATH:/Library/TeX/texbin
-```
-
-を追加する必要があります。
-
-- [(mac) TexStudioでptex2pdfが動かない](http://tipsboardx.blogspot.jp/2014/06/mac-texstudioptex2pdf.html)
-
 ## 不具合 {#k30ccccc}
 
 - [Issues · texstudio-org/texstudio · GitHub](https://github.com/texstudio-org/texstudio/issues)
