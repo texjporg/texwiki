@@ -50,7 +50,8 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### リリース情報 {#y313b500}
 
-- [リリースノート | Adobe Acrobat、Reader](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html)
+- [Release Notes | Adobe Acrobat、Reader](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)
+- [リリースノート | Adobe Acrobat、Reader](https://helpx.adobe.com/jp/acrobat/release-note/release-notes-acrobat-reader.html#AcrobatDCandAcrobatReaderDCContinuousTrackreleasenotes)
 - [Acrobat Enterprise Release Notes &mdash; Acrobat-Acrobat Reader Release Notes](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/)
 
 ## ダウンロード/インストール {#ne09e93f}
