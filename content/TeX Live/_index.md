@@ -114,7 +114,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - 理化学研究所
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/)
     - Ring Server
-        <!-- - --http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/ -->
+        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 - <strong>HTTPS</strong>
@@ -158,7 +158,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - 理化学研究所
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/CTAN/systems/texlive/Images/)
     - Ring Server
-        <!-- - --http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/ -->
+        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
 - <strong>HTTPS</strong>
