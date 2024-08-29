@@ -170,16 +170,37 @@ $ sudo tlmgr paper a4
 ### ミラーサイト (MacTeX) {#mirror}
 
 - <strong>HTTP</strong>
-    - [http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
-    - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
-    - [http://ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-    - [http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-    - [http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - [http://mirror.ctan.org/systems/mac/mactex/](http://mirror.ctan.org/systems/mac/mactex/)
-    - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
-    - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
+    - JAIST 北陸先端科学技術大学院大学
+        - [http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
+    - NAIST 奈良先端科学技術大学院大学
+        - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
+        - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
+    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
+        - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
+    - KDDI総合研究所
+        - [http://ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+        - [http://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/)
+        - [http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
+        - [http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+        - [http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
+        - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+    - 理化学研究所
+        - [http://ftp.riken.go.jp/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/CTAN/systems/mac/mactex/)
+    - Ring Server
+        <!-- - --http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/ -->
+        - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
+        - [http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
+- <strong>HTTPS</strong>
+    - JAIST 北陸先端科学技術大学院大学
+        - [https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
+    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
+        - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
+    - KDDI総合研究所
+        - [https://ftp.ne.jp/pub/ctan/systems/mac/mactex/](https://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+        - [https://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/](https://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/)
+        - [https://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](https://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
+        - [https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
+        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
+        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
