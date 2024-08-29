@@ -95,6 +95,7 @@ GNU Emacs はフリーソフトウェアです．
 - [M-x align で TeX の表を整列できるようにする](http://d.hatena.ne.jp/supermassiveblackhole/20110223/1298443861)
 - [pdf-tools](https://github.com/politza/pdf-tools)
 - [emacs-jp/migemo · GitHub](https://github.com/emacs-jp/migemo)
+- [GNU EmacsでLaTeX文書を書く話](https://zenn.dev/maswag/books/latex-on-emacs)
 
 ### [DocView](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/doc-view.el) <a id="docview"></a> {#s0614314}
 
