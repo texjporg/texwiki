@@ -96,6 +96,22 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 TeX Live は，ネットワーク経由でのインストールが推奨されています．
 ただし，ネットワーク経由ではうまくインストールできない場合があるので，その場合は ISO Image をダウンロードしてください．
 
+- <strong>HTTPS</strong>
+    - JAIST 北陸先端科学技術大学院大学
+        - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
+    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
+        - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
+    - KDDI総合研究所
+        - [https://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
+        - [https://ftp.kddi-research.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.kddi-research.jp/pub/ctan/systems/texlive/tlnet/)
+        - [https://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/)
+        - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
+        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/)
+        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
+    - 日本語 TeX 開発コミュニティ
+        - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
 - <strong>HTTP</strong>
     - JAIST 北陸先端科学技術大学院大学
         - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
@@ -114,25 +130,9 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
     - 理化学研究所
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/)
     - Ring Server
-        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
+        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
-- <strong>HTTPS</strong>
-    - JAIST 北陸先端科学技術大学院大学
-        - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
-        - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - KDDI総合研究所
-        - [https://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
-        - [https://ftp.kddi-research.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.kddi-research.jp/pub/ctan/systems/texlive/tlnet/)
-        - [https://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/](https://ftp.kddilabs.jp/pub/ctan/systems/texlive/tlnet/)
-        - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
-        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/)
-        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
-    - CTAN ミラー
-        - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
-    - 日本語 TeX 開発コミュニティ
-        - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
 
 ### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#iso}
 
@@ -140,6 +140,20 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 TeX Live の ISO Image はサイズが大きいので，以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 
+- <strong>HTTPS</strong>
+    - JAIST 北陸先端科学技術大学院大学
+        - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
+    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
+        - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
+    - KDDI総合研究所
+        - [https://ftp.ne.jp/pub/ctan/systems/texlive/Images/](https://ftp.ne.jp/pub/ctan/systems/texlive/Images/)
+        - [https://ftp.kddi-research.jp/pub/ctan/systems/texlive/Images/](https://ftp.kddi-research.jp/pub/ctan/systems/texlive/Images/)
+        - [https://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/](https://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/)
+        - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
+        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/)
+        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
 - <strong>HTTP</strong>
     - JAIST 北陸先端科学技術大学院大学
         - [http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
@@ -158,23 +172,9 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
     - 理化学研究所
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/CTAN/systems/texlive/Images/)
     - Ring Server
-        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
+        - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
-- <strong>HTTPS</strong>
-    - JAIST 北陸先端科学技術大学院大学
-        - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科
-        - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - KDDI総合研究所
-        - [https://ftp.ne.jp/pub/ctan/systems/texlive/Images/](https://ftp.ne.jp/pub/ctan/systems/texlive/Images/)
-        - [https://ftp.kddi-research.jp/pub/ctan/systems/texlive/Images/](https://ftp.kddi-research.jp/pub/ctan/systems/texlive/Images/)
-        - [https://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/](https://ftp.kddilabs.jp/pub/ctan/systems/texlive/Images/)
-        - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
-        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/)
-        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
-    - CTAN ミラー
-        - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
 
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
