@@ -27,14 +27,14 @@ CTAN の世界的なミラーリングとして次の URI があります．
 この接続先候補に含まれる日本国内でのサイトには次のものがあります．
 
 - [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
-    - [ftp.jaist.ac.jp/pub/CTAN/](http://ftp.jaist.ac.jp/pub/CTAN/)
-        (HTTP, FTP)
+    - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
+        (HTTPS, HTTP, FTP)
 
 - [KDDI総合研究所](https://www.kddi-research.jp/)
-    - [ftp.kddilabs.jp/CTAN/](http://ftp.kddilabs.jp/CTAN/)
-        (HTTP, FTP)
-    - [ftp-srv2.kddilabs.jp/CTAN/](http://ftp-srv2.kddilabs.jp/CTAN/)
-        (HTTP, FTP)
+    - [ftp.kddilabs.jp/CTAN/](https://ftp.kddilabs.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
+    - [ftp-srv2.kddilabs.jp/CTAN/](https://ftp-srv2.kddilabs.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
         <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
@@ -43,8 +43,8 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
 - [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科／大学院有機材料システム研究科](http://www.yz.yamagata-u.ac.jp/)
-    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTP, FTP)
+    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+        (HTTPS, HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
 
 ### オリジナルの CTAN {#original}
