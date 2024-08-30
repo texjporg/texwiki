@@ -383,7 +383,7 @@ settings.json の {} の中に以下の設定を追加・保存します。
 "-e",
 "$lualatex=q/lualatex %O -synctex=1 -interaction=nonstopmode -file-line-error %S/",
 "-e",
-"$bibtex=q/upbibtex %O %B/",
+"$bibtex=q/bibtexu %O %B/",
 "-e",
 "$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/",
 "-e",
