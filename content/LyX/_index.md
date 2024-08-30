@@ -52,14 +52,14 @@ Windows, Cygwin, macOS, Linux
     - [http://ftp.lyx.org/pub/lyx/bin/](http://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [http://ftp.lyx.org/pub/lyx/stable/](http://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [http://ftp.lyx.org/pub/lyx/devel/](http://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- HTTP (ミラーサイト)(日本)(KDDI総合研究所)
-    - [http://ftp.ne.jp/TeX/lyx/bin/](http://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
-    - [http://ftp.ne.jp/TeX/lyx/stable/](http://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
-    - [http://ftp.ne.jp/TeX/lyx/devel/](http://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
 - HTTPS (ミラーサイト)(日本)(山形大学)
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/) 安定版のバイナリ
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/) 安定版のソースコード
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/) 開発版のバイナリとソースコード
+- HTTPS (ミラーサイト)(日本)(KDDI総合研究所)
+    - [https://ftp.ne.jp/TeX/lyx/bin/](https://ftp.ne.jp/TeX/lyx/bin/) 安定版のバイナリ
+    - [https://ftp.ne.jp/TeX/lyx/stable/](https://ftp.ne.jp/TeX/lyx/stable/) 安定版のソースコード
+    - [https://ftp.ne.jp/TeX/lyx/devel/](https://ftp.ne.jp/TeX/lyx/devel/) 開発版のバイナリとソースコード
 
 ## インストール {#r9ac9b39}
 
