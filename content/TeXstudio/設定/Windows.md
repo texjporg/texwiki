@@ -31,7 +31,7 @@ LaTeX
 PdfLaTeX
 : &nbsp;
 
-<!-- :|latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/upbibtex &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O - -bblencoding=utf8 -u -U - -output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % -->
+<!-- :|latexmk.exe -e "$latex=q/uplatex &#x25;&#x25;O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode &#x25;&#x25;S/" -e "$bibtex=q/bibtexu &#x25;&#x25;O &#x25;&#x25;B/" -e "$biber=q/biber &#x25;&#x25;O - -bblencoding=utf8 -u -U - -output_safechars &#x25;&#x25;B/" -e "$makeindex=q/upmendex &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -e "$dvipdf=q/dvipdfmx &#x25;&#x25;O -o &#x25;&#x25;D &#x25;&#x25;S/" -norc -gg -pdfdvi -silent % -->
 
 : pdflatex.exe -synctex=1 -interaction=nonstopmode %.tex
 
@@ -82,12 +82,6 @@ BibTeX
 : &nbsp;
 
 : bibtexu.exe %
-
-<!-- TeX Live 2019 の upbibtex では修正されています。 -->
-<!-- ↓ -->
-<!-- 2019-02-05 以前に書かれていた "upbibtex.exe %" では，日本語を含むbibファイルで -->
-<!-- 文字化けまたはフリーズなどすることがあります． -->
-<!-- 参考: https://texwiki.texjp.org/?upTeX%2CupLaTeX#p35560b1 -->
 
 BibTex 8ビット
 : &nbsp;
