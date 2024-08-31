@@ -358,7 +358,7 @@ C-x C-f ~/
                                      TeX-run-discard-or-function t t :help "Run Google Chrome"))
                       (add-to-list 'TeX-command-list
                                    '("Acrobat"
-                                     "open -a \"Adobe Acrobat Reader DC\" %s.pdf"
+                                     "open -a \"Adobe Acrobat\" %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader")))))
 
 ;;
