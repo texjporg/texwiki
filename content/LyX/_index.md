@@ -52,7 +52,7 @@ Windows, Cygwin, macOS, Linux
     - [http://ftp.lyx.org/pub/lyx/bin/](http://ftp.lyx.org/pub/lyx/bin/) 安定版のバイナリ
     - [http://ftp.lyx.org/pub/lyx/stable/](http://ftp.lyx.org/pub/lyx/stable/) 安定版のソースコード
     - [http://ftp.lyx.org/pub/lyx/devel/](http://ftp.lyx.org/pub/lyx/devel/) 開発版のバイナリとソースコード
-- HTTPS (ミラーサイト)(日本)(山形大学)
+- HTTPS (ミラーサイト)(日本)(山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科)
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/bin/) 安定版のバイナリ
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/stable/) 安定版のソースコード
     - [https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/](https://ftp.yz.yamagata-u.ac.jp/pub/lyx/devel/) 開発版のバイナリとソースコード
@@ -466,10 +466,10 @@ sudo port install lyx
 
 #### Arch Linux {#p780bd78}
 
-- [https://www.archlinux.org/packages/?q=lyx](https://www.archlinux.org/packages/?q=lyx)
+- [https://aur.archlinux.org/packages/lyx](https://aur.archlinux.org/packages/lyx)
 
 ```
-sudo pacman -S lyx
+yay -S lyx
 ```
 
 #### Linux Mint/Debian/Ubuntu {#o9ab2f9b}
