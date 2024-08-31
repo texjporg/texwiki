@@ -68,7 +68,7 @@ qpdfview-0.5.0-win64.zip を展開して qpdfview-0.5.0-win64 フォルダーを
 
 - [https://www.archlinux.org/packages/?q=qpdfview](https://www.archlinux.org/packages/?q=qpdfview)
 
-### Linux Mint {#c6d3b357}
+### Linux Mint/Ubuntu {#c6d3b357}
 
 - [https://packages.ubuntu.com/ja/qpdfview](https://packages.ubuntu.com/ja/qpdfview)
 
