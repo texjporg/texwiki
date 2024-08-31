@@ -23,6 +23,7 @@ PDF ファイルや PS ファイルが表示できます．
 - [Home | pwmt.org](https://pwmt.org/)
     - [zathura](https://pwmt.org/projects/zathura/)
     - [girara](https://pwmt.org/projects/girara/)
+- [https://github.com/pwmt/zathura](https://github.com/pwmt/zathura)
 
 ### 動作環境 {#q9b59e7d}
 
@@ -32,7 +33,7 @@ macOS, Linux, BSD
 
 ### License {#v6901e72}
 
-[zlib/libpng License](https://git.pwmt.org/pwmt/zathura/blob/master/LICENSE)
+[zlib License](https://github.com/pwmt/zathura/blob/develop/LICENSE)
 
 ### リリース情報 {#p5c718a4}
 
@@ -45,11 +46,11 @@ macOS, Linux, BSD
 
 #### zathura {#wf24e546}
 
-- [https://git.pwmt.org/pwmt/zathura/commits/master](https://git.pwmt.org/pwmt/zathura/commits/master)
+- [https://github.com/pwmt/zathura/commits/develop/](https://github.com/pwmt/zathura/commits/develop/)
 
 #### girara {#l7dfb095}
 
-- [https://git.pwmt.org/pwmt/girara/commits/master](https://git.pwmt.org/pwmt/girara/commits/master)
+- [https://github.com/pwmt/girara/commits/develop/](https://github.com/pwmt/girara/commits/develop/)
 
 ## ダウンロード/インストール {#w2221884}
 
@@ -65,7 +66,7 @@ macOS, Linux, BSD
 - [https://www.archlinux.org/packages/?name=zathura](https://www.archlinux.org/packages/?name=zathura)
 - [https://www.archlinux.org/packages/?q=zathura](https://www.archlinux.org/packages/?q=zathura)
 
-### Linux Mint {#cc8ebe01}
+### Linux Mint/Ubuntu {#cc8ebe01}
 
 - [https://packages.ubuntu.com/ja/zathura](https://packages.ubuntu.com/ja/zathura)
 
@@ -83,7 +84,7 @@ macOS, Linux, BSD
 
 ## 不具合 {#ue94eec4}
 
-- [https://bugs.pwmt.org/](https://bugs.pwmt.org/)
+- [https://github.com/pwmt/zathura/issues](https://github.com/pwmt/zathura/issues)
 
 ## 使い方 {#w279d8d0}
 
@@ -94,7 +95,7 @@ zathura は [Vim](/Vim/) キーバインドを採用しています．
 
 ### コマンドラインオプション {#u4f91695}
 
-- [https://git.pwmt.org/pwmt/zathura/blob/master/zathura/main.c](https://git.pwmt.org/pwmt/zathura/blob/master/zathura/main.c)
+- [https://github.com/pwmt/zathura/blob/develop/zathura/main.c](https://github.com/pwmt/zathura/blob/develop/zathura/main.c)
 
 ```
 $ zathura --help
@@ -116,12 +117,14 @@ Application Options:
   --fork                               Fork into the background
   -w, --password=password              Document password
   -P, --page=number                    Page number to go to
-  -l, --debug=level                    Log level (debug, info, warning, error)
+  -l, --log-level=level                Log level (debug, info, warning, error)
   -v, --version                        Print version information
   -x, --synctex-editor-command=cmd     Synctex editor (forwarded to the synctex command)
   --synctex-forward=position           Move to given synctex position
   --synctex-pid=pid                    Highlight given position in the given process
   --mode=mode                          Start in a non-default mode
+  -b, --bookmark=bookmark              Bookmark to go to
+  -f, --find=string                    Search for the given phrase and display results
 ```
 
 ## SyncTeX {#g93d0312}
