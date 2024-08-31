@@ -178,7 +178,7 @@ C-x C-f ~/
 (setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "open -a Skim")
-(setq tex-dvi-print-command "open -a \"Adobe Acrobat Reader DC\"")
+(setq tex-dvi-print-command "open -a \"Adobe Acrobat\"")
 (setq tex-compile-commands
       '(("ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
         ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
@@ -193,7 +193,7 @@ C-x C-f ~/
         ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("open -a Firefox %r.pdf" "%r.pdf")
         ("open -a \"Google Chrome\" %r.pdf" "%r.pdf")
-        ("open -a \"Adobe Acrobat Reader DC\" %r.pdf" "%r.pdf")))
+        ("open -a \"Adobe Acrobat Reader\" %r.pdf" "%r.pdf")))
 
 (defun skim-forward-search ()
   (interactive)
