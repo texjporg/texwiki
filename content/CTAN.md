@@ -26,11 +26,16 @@ CTAN の世界的なミラーリングとして次の URI があります．
 [https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
 この接続先候補に含まれる日本国内でのサイトには次のものがあります．
 
-- [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/)
+- [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/) (石川県能美市)
     - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTPS, HTTP, FTP)
 
-- [KDDI総合研究所](https://www.kddi-research.jp/)
+- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科／大学院有機材料システム研究科](http://www.yz.yamagata-u.ac.jp/) (山形県米沢市)
+    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
+        (HTTPS, HTTP, FTP)
+        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
+
+- [KDDI総合研究所](https://www.kddi-research.jp/) (埼玉県ふじみ野市)
     - [ftp.kddilabs.jp/CTAN/](https://ftp.kddilabs.jp/CTAN/)
         (HTTPS, HTTP, FTP)
     - [ftp-srv2.kddilabs.jp/CTAN/](https://ftp-srv2.kddilabs.jp/CTAN/)
@@ -38,14 +43,9 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
-- [会津大学](http://www.u-aizu.ac.jp/)
-    - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
-        <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
-
-- [山形大学](http://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科／大学院有機材料システム研究科](http://www.yz.yamagata-u.ac.jp/)
-    - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTPS, HTTP, FTP)
-        <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
+- [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/)
+    - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
+        (HTTPS, HTTP)
 
 ### オリジナルの CTAN {#original}
 
@@ -73,14 +73,14 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 #### HTTP, FTP {#HTTP-FTP}
 
-- [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/)
+- [NAIST 奈良先端科学技術大学院大学](http://www.naist.jp/) (奈良県生駒市)
     - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
         (HTTP, FTP)
         <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
     - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
         (HTTP, FTP)
 
-- [理化学研究所](http://www.riken.jp/)
+- [理化学研究所](http://www.riken.jp/) (埼玉県和光市)
     - [ftp.riken.jp/tex-archive/](http://ftp.riken.jp/tex-archive/)
         (HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
@@ -93,7 +93,11 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.ring.gr.jp/pub/text/CTAN/](http://ftp.ring.gr.jp/pub/text/CTAN/index.html)
         (HTTP, FTP)
 
-<!-- ***FTP のみ [#FTP-only] -->
+#### FTP のみ {#FTP-only}
+
+- [会津大学](http://www.u-aizu.ac.jp/) (福島県会津若松市)
+    - [ftp.u-aizu.ac.jp/pub/tex/CTAN/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/)（FTP のみ）
+        <!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
 <!-- **Ring Server によるミラーリング [#RingServer] -->
 <!-- アメリカのウェブサイトは [[ctan.org:https://ctan.org/]] -->
