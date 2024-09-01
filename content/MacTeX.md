@@ -202,6 +202,8 @@ $ sudo tlmgr paper a4
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.go.jp/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/CTAN/systems/mac/mactex/)
+    - jp.mirrors.cicku.me
+        - [http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
