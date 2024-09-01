@@ -131,6 +131,8 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/)
+    - jp.mirrors.cicku.me
+        - [http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -175,6 +177,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.go.jp/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/CTAN/systems/texlive/Images/)
+    - jp.mirrors.cicku.me
+        - [http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
