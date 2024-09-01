@@ -173,11 +173,16 @@ pukiwiki: "TeX Live/Windows"
 
 ターミナルから install-tl-windows.bat に -no-gui オプションをつけて実行することで、テキストモードでのインストールが可能となります。
 
+> .\install-tl-windows.bat -no-gui
+
+詳しい使い方は
+
 > .\install-tl-windows.bat -help
 
 を実行してヘルプを参照してください。
 
 - [WindowsにTeX Live 2024をインストールした。isoイメージをマウントしてinstall-tl-windows.batを実行したが、GUIがエラーを出す。結局、コマンドプロンプトで<br>> install-tl-windows.bat -no-gui<br>として、上手くインストールできた。](https://twitter.com/HelosianAgent/status/1768959460737995008)
+- [TexLiveのインストールが上手くいかない時の解決策(Windows)](https://qiita.com/HayatoF/items/ac3bf4d64fb9a79a9f8d)
 
 ### ISO イメージからのインストール {#zc468876}
 
