@@ -27,10 +27,6 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 - [About FreeBSD Ports](https://www.freebsd.org/ports/)
 - [FreshPorts -- The Place For Ports](http://www.freshports.org/)
 
-#### お知らせ {#w2f34805}
-
-- [https://cgit.freebsd.org/ports/commit/?id=24e24a19568e8038e3926d7050e1a6052a8b0df5](https://cgit.freebsd.org/ports/commit/?id=24e24a19568e8038e3926d7050e1a6052a8b0df5) にて，Ports は TeX Live 2023 ベースとなりました．
-
 ### 派生版 {#t29f2245}
 
 - [GhostBSD](https://www.ghostbsd.org/)
@@ -53,8 +49,8 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 #### TeX Live のインストール <a id="texliveinstall"></a> {#v92cb887}
 
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
+- [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 - [Storage@Anthesphoria: TeX Live on FreeBSD | TeX Live 2014 on FreeBSD | Notes for FreeBSD users](http://anthesphoria.net/FreeBSD/TeXLive-2014/)
 
 を参照．
@@ -82,7 +78,7 @@ root 権限でインストーラを実行します．
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ sudo ./install-tl -no-gui -repository https://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
@@ -133,11 +129,10 @@ $ sudo tlmgr update --self --all
 
 ### TeX Live/FreeBSD {#p4fe1144}
 
+- [https://cgit.freebsd.org/ports/commit/print/texlive-base?id=7a740b7c908f95b55bf765364c1234b3f6750196](https://cgit.freebsd.org/ports/commit/print/texlive-base?id=7a740b7c908f95b55bf765364c1234b3f6750196) にて，Ports は TeX Live 2024 ベースとなりました．
 - [http://www.freshports.org/print/texlive-full/](http://www.freshports.org/print/texlive-full/)
-- [FreeBSD における TeXLive の導入](http://maikaze.cafe.coocan.jp/texlive1.html)
-- [FreeBSDへのTeXliveインストール](http://sphinx-users.jp/cookbook/pdf/latex-install-freebsd.html)
-- [FreeBSD のports TeXLive &amp; evince : 日本語フォントの設定 fonts.conf](http://blog.goo.ne.jp/koyusoma5102/e/4936476b9a197dda36799498a4bfd5c9)
-- \[[FreeBSD\]texlive](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20140726#p02)
+- [TeX Live on FreeBSD](http://maikaze.cafe.coocan.jp/texlive.html)
+    - [FreeBSD における TeX Live 2024 の導入](http://maikaze.cafe.coocan.jp/texlive4.html)
 
 ## その他関連Ports {#k9078aba}
 
