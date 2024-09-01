@@ -89,7 +89,7 @@ root 権限でインストーラを実行します．
 デフォルトでは Tcl/Tk による GUI インストーラが起動します．-no-gui オプションでテキストモードで起動します．-repository オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ sudo ./install-tl -no-gui -repository https://mirror.ctan.org/systems/texlive/tlnet/
 ```
 
 ```
