@@ -43,9 +43,9 @@ Linux で TeX 環境を構築するには，2つの方法があります．
 
 TeX Live のインストールガイド
 
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](http://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
+- [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
+- [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#c)
 
 に従えばよいですが，このページでもネットワークインストーラを使う場合について簡単に説明します．
 
@@ -54,13 +54,13 @@ TeX Live のインストールガイド
 - wget を使用する場合
 
     ```
-    $ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 - curl を使用する場合
 
     ```
-    $ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+    $ curl -OL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
     ```
 
 install-tl-unx.tar.gz を展開します．
@@ -79,7 +79,7 @@ root 権限でインストーラを実行します．
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ sudo ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ sudo ./install-tl -no-gui -repository https://mirror.ctan.org/systems/texlive/tlnet/
 ```
 
 ```
