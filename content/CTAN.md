@@ -23,8 +23,10 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 接続元の国の中の（もしくは接続元の国に最寄りの）ミラーサイトへ自動的にリダイレクトする仕組みです．
 
+### CTAN ミラーサイトの接続先候補に含まれる日本国内サイト {#u433cc1d}
+
 [https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
-この接続先候補に含まれる日本国内でのサイトには次のものがあります．
+この接続先候補に含まれる日本国内サイトには次のものがあります．
 
 - [JAIST 北陸先端科学技術大学院大学](http://www.jaist.ac.jp/) (石川県能美市)
     - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
@@ -47,12 +49,12 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
         (HTTPS, HTTP)
 
-### その他の日本国内での CTAN のミラーサイト（一部） {#others}
+### CTAN ミラーサイトの接続先候補以外の日本国内サイト（一部） {#others}
 
 #### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP}
 
 - [理化学研究所](http://www.riken.jp/) (埼玉県和光市)
-    - [ftp.riken.jp/tex-archive/](https://ftp.riken.jp/tex-archive/)
+    - [ftp.riken.jp/CTAN/](https://ftp.riken.jp/CTAN/)
         (HTTPS, HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
