@@ -265,7 +265,7 @@ tlmgr update --self --all
 - アップデートが失敗した場合は以下の例のように再度アップデートできます。
 
     ```
-    tlmgr update --reinstall-forcibly-removed --all --repository http://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
+    tlmgr update --reinstall-forcibly-removed --all --repository https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/
     ```
 
 パッケージは
