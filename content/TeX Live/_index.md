@@ -27,8 +27,8 @@ TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/)
 
 ### 動作環境 {#j0ebf49b}
 
-- [Supported systems](http://www.tug.org/texlive/doc.html#platforms)
-- [http://www.tug.org/svn/texlive/trunk/Master/bin/](http://www.tug.org/svn/texlive/trunk/Master/bin/)
+- [Supported systems](https://www.tug.org/texlive/doc.html#platforms)
+- [https://www.tug.org/svn/texlive/trunk/Master/bin/](https://www.tug.org/svn/texlive/trunk/Master/bin/)
 
 を参照．
 
@@ -60,7 +60,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は [texlive.tlpdb](http://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2024/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2024/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
@@ -89,7 +89,7 @@ TeX Live に収録されるのは，基本的には
 
 以下は詳細情報です．開発者向け情報も含まれます． <!-- 初めて TeX Live をインストールするユーザにはあまり関係のないことだと判断し， --> <!-- 並べ替えました．インストール用の記事は OS ごとに個別に記載されていますので， --> <!-- 以下の内容はそちらの個別ページから必要に応じてリンクする形で． --> <!-- メンテナ向けの情報もこの下で十分ですよね？ -->
 
-### [Network Based Installer](http://www.tug.org/texlive/acquire-netinstall.html) {#tlnet}
+### [Network Based Installer](https://www.tug.org/texlive/acquire-netinstall.html) {#tlnet}
 
 ネットワーク経由でのインストールは，以下のミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
@@ -108,6 +108,8 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/tlnet/)
         - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/)
         - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
+    - 理化学研究所 (埼玉県和光市)
+        - [https://ftp.riken.jp/CTAN/systems/texlive/tlnet/](https://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - CTAN ミラー
@@ -130,7 +132,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/](http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/tlnet/)
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/tlnet/)
     - 理化学研究所 (埼玉県和光市)
-        - [http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.go.jp/CTAN/systems/texlive/tlnet/)
+        - [http://ftp.riken.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - Ring Server
@@ -138,7 +140,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://core.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
 
-### [TeX Live ISO Images](http://www.tug.org/texlive/acquire-iso.html) {#iso}
+### [TeX Live ISO Images](https://www.tug.org/texlive/acquire-iso.html) {#iso}
 
 ネットワーク経由のインストールがうまくいかない場合は ISO Image をダウンロードしてください．
 TeX Live の ISO Image はサイズが大きいので，以下のミラーサイトを利用してください．
@@ -156,6 +158,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/](https://srv2.ftp.ne.jp/pub/ctan/systems/texlive/Images/)
         - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/)
         - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
+    - 理化学研究所 (埼玉県和光市)
+        - [https://ftp.riken.jp/CTAN/systems/texlive/Images/](https://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
     - CTAN ミラー
@@ -176,7 +180,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/](http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/texlive/Images/)
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/texlive/Images/)
     - 理化学研究所 (埼玉県和光市)
-        - [http://ftp.riken.go.jp/CTAN/systems/texlive/Images/](http://ftp.riken.go.jp/CTAN/systems/texlive/Images/)
+        - [http://ftp.riken.jp/CTAN/systems/texlive/Images/](http://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
     - Ring Server
@@ -202,20 +206,20 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 ### 関連リンク {#udd48b1b}
 
-- [日本語版 TeX Live ガイド](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
+- [日本語版『TeX Live ガイド』](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
 - [https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
-- [TeXLiveに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/texlive)
+- [TeXLiveに関する新着投稿 - Qiita \[キータ\]](https://qiita.com/tags/texlive)
 
 #### リリース情報 {#k5761e9e}
 
-[TeX Live - TeX Users Group](http://www.tug.org/texlive/) の Current release を参照．
+[TeX Live - TeX Users Group](https://www.tug.org/texlive/) の Current release を参照．
 
-- \[[texlive\] Index of /tags](http://www.tug.org/svn/texlive/tags/)
-    - [log](http://www.tug.org/svn/texlive/tags/?view=log)
+- \[[texlive\] Index of /tags](https://www.tug.org/svn/texlive/tags/)
+    - [log](https://www.tug.org/svn/texlive/tags/?view=log)
 
 #### ChangeLog {#g68f0fa7}
 
-- [TeX Live and Subversion](http://www.tug.org/texlive/svn/)
-- \[[texlive\] Index of /trunk](http://www.tug.org/svn/texlive/trunk/)
-    - [log](http://www.tug.org/svn/texlive/trunk/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/ChangeLog?view=markup)
+- [TeX Live and Subversion](https://www.tug.org/texlive/svn/)
+- \[[texlive\] Index of /trunk](https://www.tug.org/svn/texlive/trunk/)
+    - [log](https://www.tug.org/svn/texlive/trunk/?view=log)
+    - [ChangeLog](https://www.tug.org/svn/texlive/trunk/Build/source/ChangeLog?view=markup)
