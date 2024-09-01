@@ -12,18 +12,18 @@ pukiwiki: "TeX Live/pretest"
 TeX Live pretest はミラーサイトを利用してください．
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
 
-- [Testing TeX Live before release](http://www.tug.org/texlive/pretest.html)
-- [http://ftp.tug.org/texlive/Images/test/](http://ftp.tug.org/texlive/Images/test/)
-- [http://www.tug.org/texlive/Images/test/](http://www.tug.org/texlive/Images/test/)
+- [Testing TeX Live before release](https://www.tug.org/texlive/pretest.html)
+    <!-- -https://www.tug.org/texlive/Images/test/ -->
+    <!-- -http://ftp.tug.org/texlive/Images/test/ -->
 
-#### ミラーサイト {#b6196164}
+#### ミラーサイト (Network Based Installer, MacTeX, BasicTeX) {#b6196164}
 
-- [the status of texlive-pretest mirrors](http://www.tug.org/texlive/mirmon/)
-
-- Network Based Installer, MacTeX, BasicTeX
-    - [https://mirrors.tuna.tsinghua.edu.cn/tlpretest/](https://mirrors.tuna.tsinghua.edu.cn/tlpretest/)
-    - [http://ftp.math.utah.edu/pub/texlive/tlpretest/](http://ftp.math.utah.edu/pub/texlive/tlpretest/)
-    - [http://texlive.texjp.org/pretest/tlnet/](http://texlive.texjp.org/pretest/tlnet/)
+- TeX Live pretest ミラーサイト一覧
+    - [the status of texlive-pretest mirrors](https://www.tug.org/texlive/mirmon/)
+- ユタ大学 数学科
+    - [https://ftp.math.utah.edu/pub/texlive/tlpretest/](https://ftp.math.utah.edu/pub/texlive/tlpretest/)
+- 日本語 TeX 開発コミュニティ
+    - [https://texlive.texjp.org/pretest/tlnet/](https://texlive.texjp.org/pretest/tlnet/)
 
 ### TeX Live pretest のインストール {#j4d40fa3}
 
@@ -33,20 +33,22 @@ install-tl.zip をダウンロードして install-tl.zip を展開します．
 ターミナルから
 
 ```
-.\install-tl-windows.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
-```
-
-または管理者として実行したターミナルから
-
-```
-.\install-tl-windows.bat -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+.\install-tl-windows.bat -no-gui -repository https://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
 
 を実行します．
 
 #### macOS {#a9a1fd1b}
 
-mactex-\*.pkg または mactex-basictex-\*.pkg をダウンロードしてインストールします．
+MacTeX をインストールする場合は
+mactex-\*.pkg
+をダウンロードしてインストールします．
+
+BasicTeX をインストールする場合は
+mactex-basictex-\*.pkg
+をダウンロードしてインストールします．
+
+TeX Live をインストールする場合は Linux のやり方を参照してください．
 
 #### Linux {#v9c33c6a}
 
@@ -55,13 +57,13 @@ install-tl-unx.tar.gz をダウンロードします．
 - wget を使用する場合
 
     ```
-    $ wget http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
+    $ wget https://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
     ```
 
 - curl を使用する場合
 
     ```
-    $ curl -O http://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
+    $ curl -O https://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
     ```
 
 install-tl-unx.tar.gz を展開します．
@@ -77,8 +79,8 @@ $ cd install-tl-2*
 ```
 
 root 権限でインストーラを実行します．
-オプションでダウンロードするリポジトリを指定できます．
+オプションでダウンロードするリポジトリを指定します．
 
 ```
-$ sudo ./install-tl -no-gui -repository http://ftp.math.utah.edu/pub/texlive/tlpretest/
+$ sudo ./install-tl -no-gui -repository https://ftp.math.utah.edu/pub/texlive/tlpretest/
 ```
