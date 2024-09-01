@@ -317,7 +317,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 ;(setq tex-pdfview-command "open -a TeXShop")
 ;(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
 ;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
-(setq dviprint-command-format "open -a \"Adobe Acrobat Reader DC\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
+(setq dviprint-command-format "open -a \"Adobe Acrobat\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
 (add-hook 'yatex-mode-hook
           '(lambda ()
