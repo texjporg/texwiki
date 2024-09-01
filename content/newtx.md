@@ -272,10 +272,7 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
     の
     [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
 
-- 会津大学のCTANミラー:
-    [ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/](ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/fonts/txfonts/)
-
 - 本家CTANサーバ:
-    [ftp://ctan.tug.org/tex-archive/fonts/txfonts/](ftp://ctan.tug.org/tex-archive/fonts/txfonts/)
+    [https://ctan.org/tex-archive/fonts/txfonts/](https://ctan.org/tex-archive/fonts/txfonts/)
 
-- [txfonts のインテグラルのフォントを変える](http://blog.wgag.net/402.html)
+- [txfonts のインテグラルのフォントを変える](https://wgag.hatenadiary.com/entry/2013/07/17/txfonts-integral/)
