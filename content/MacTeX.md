@@ -181,6 +181,8 @@ $ sudo tlmgr paper a4
         - [https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
         - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
         - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+    - 理化学研究所 (埼玉県和光市)
+        - [https://ftp.riken.jp/CTAN/systems/mac/mactex/](https://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - CTAN ミラー
@@ -201,7 +203,7 @@ $ sudo tlmgr paper a4
         - [http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
         - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
     - 理化学研究所 (埼玉県和光市)
-        - [http://ftp.riken.go.jp/CTAN/systems/mac/mactex/](http://ftp.riken.go.jp/CTAN/systems/mac/mactex/)
+        - [http://ftp.riken.jp/CTAN/systems/mac/mactex/](http://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - Ring Server
