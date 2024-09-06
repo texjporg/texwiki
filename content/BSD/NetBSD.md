@@ -9,7 +9,7 @@ pukiwiki: "BSD/NetBSD"
 
 [BSD](/BSD/) > NetBSD
 
-## [NetBSD](http://www.netbsd.org/) {#qf29df7f}
+## [NetBSD](https://www.netbsd.org/) {#qf29df7f}
 
 ***
 
@@ -19,7 +19,7 @@ pukiwiki: "BSD/NetBSD"
 
 NetBSD はオープンソースの Unix 系オペレーティングシステムです．
 
-- [NetBSD](http://www.netbsd.org/)
+- [The NetBSD Project](https://www.netbsd.org/)
 - [Japan NetBSD Users' Group](http://www.jp.netbsd.org/)
 
 ## TeX Live <a id="texlive"></a> {#j32677f5}
@@ -104,5 +104,4 @@ $ sudo tlmgr update --self --all
 ### TeX Live/NetBSD {#ke8ac2b3}
 
 - [https://pkgsrc.se/meta-pkgs/texlive-collection-langjapanese](https://pkgsrc.se/meta-pkgs/texlive-collection-langjapanese)
-- [compiling whole texlive in pkgsrc](http://www.ki.nu/~makoto/diary/2013/10/27/)
-- [TeX (pkgsrc-2014Q1) が動かない](http://www.uconst.org/blog/archives/417)
+- [TeX 関連のパッケージを pkgsrc に追加する方法](https://s3b.astro.ncu.edu.tw/~daisuke/notebook/Computer___NetBSD/20230822_00.html)
