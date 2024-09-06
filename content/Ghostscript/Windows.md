@@ -775,5 +775,5 @@ composefont pop
 
 #### Cygwin Ghostscript {#q45fc3c8}
 
-- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript&arch=x86_64)
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=ghostscript)
 - [https://cygwin.com/cygwin/packages/x86_64/ghostscript/](https://cygwin.com/cygwin/packages/x86_64/ghostscript/)
