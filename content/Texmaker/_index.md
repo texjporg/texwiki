@@ -29,7 +29,7 @@ Windows, macOS, Linux
 
 ### License {#l7d7100c}
 
-GPLv2
+[GPLv2](https://fossies.org/linux/texmaker/COPYING)
 
 ### 派生版 {#n8123b82}
 
