@@ -80,6 +80,8 @@ GNU Emacs はフリーソフトウェアです．
 - [magic-latex-buffer.el](https://github.com/zk-phi/magic-latex-buffer)：magical syntax highlighting for LaTeX-mode buffers.
 - [AUCTeX](/AUCTeX/)：GNU Emacs で TeX ファイルを編集するための拡張パッケージ
 - [YaTeX](/YaTeX/)：Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
+- [LaTeX Labeler - Simplify equation labeling in LaTeX](https://github.com/X9hRRDys/latex-labeler)
+    - [LaTeXの数式ラベル管理を楽にするEmacsパッケージ、LaTeX Labelerの紹介](https://zenn.dev/mpotarch/articles/9a02e212525073)
 - [latex-math-preview.el](http://transitive.info/software/latex-math-preview/)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
     - [EmacsWiki:LaTeXMathPreview](https://www.emacswiki.org/emacs/LaTeXMathPreview)
     - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
