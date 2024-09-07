@@ -179,19 +179,11 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-;(setq tex-command "lualatex -synctex=1")
-;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-(setq makeindex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq tex-command "lualatex -synctex=1")
+(setq bibtex-command "bibtexu")
+(setq makeindex-command "upmendex")
 (setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
-;(setq dvi2-command "texworks")
-;(setq dvi2-command "texstudio --pdf-viewer-only")
 (setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
-;(setq tex-pdfview-command "texworks")
-;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process Acrobat -ArgumentList ($p)}\"")
 ```
 
@@ -245,9 +237,9 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
-> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>LuaLaTeX</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>SumatraPDF で forward search</td></tr>
@@ -300,23 +292,11 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'")
-;(setq tex-command "lualatex -synctex=1")
-;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq tex-command "lualatex -synctex=1")
+(setq bibtex-command "bibtexu")
+(setq makeindex-command "upmendex")
 (setq dvi2-command "open -a Skim")
-;(setq dvi2-command "open -a Preview")
-;(setq dvi2-command "open -a TeXShop")
-;(setq dvi2-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
-;(setq dvi2-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
 (setq tex-pdfview-command "open -a Skim")
-;(setq tex-pdfview-command "open -a Preview")
-;(setq tex-pdfview-command "open -a TeXShop")
-;(setq tex-pdfview-command "/Applications/TeXworks.app/Contents/MacOS/TeXworks")
-;(setq tex-pdfview-command "/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only")
 (setq dviprint-command-format "open -a \"Adobe Acrobat\" `echo %s | gsed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
 (add-hook 'yatex-mode-hook
@@ -339,9 +319,9 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
-> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>LuaLaTeX</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Skim で forward search</td></tr>
@@ -377,29 +357,11 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'")
-;(setq tex-command "lualatex -synctex=1")
-;(setq tex-command "latexmk")
-;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
-(setq bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-(setq makeindex-command  "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
-;(setq dvi2-command "xdg-open")
+(setq tex-command "lualatex -synctex=1")
+(setq bibtex-command "bibtexu")
+(setq makeindex-command "upmendex")
 (setq dvi2-command "evince")
-;(setq dvi2-command "atril")
-;(setq dvi2-command "okular --unique")
-;(setq dvi2-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
-;(setq dvi2-command "qpdfview --unique")
-;(setq dvi2-command "texworks")
-;(setq dvi2-command "texstudio --pdf-viewer-only")
-;(setq tex-pdfview-command "xdg-open")
 (setq tex-pdfview-command "evince")
-;(setq tex-pdfview-command "atril")
-;(setq tex-pdfview-command "okular --unique")
-;(setq tex-pdfview-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
-;(setq tex-pdfview-command "qpdfview --unique")
-;(setq tex-pdfview-command "texworks")
-;(setq tex-pdfview-command "texstudio --pdf-viewer-only")
 (setq dviprint-command-format "wine64 cmd /c start Acrobat.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 ```
 
@@ -466,9 +428,9 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#22D;text-align:center">メニュー [YaTeX]</th><th style="color:#FFF;background-color:#22D;text-align:center">キーバインド (setq YaTeX-inhibit-prefix-letter t)</th><th style="color:#FFF;background-color:#22D;text-align:center">機能</th></tr>
-> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>upLaTeX (ptex2pdf)</td></tr>
-> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu, biber (upLaTeXmk)</td></tr>
-> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex (upLaTeXmk)</td></tr>
+> <tr><td>Process -&gt; LaTeX</td><td>C-c C-t j または C-c C-t C-j</td><td>LuaLaTeX</td></tr>
+> <tr><td>Process -&gt; BibTeX</td><td>C-c C-t b RET</td><td>bibtexu</td></tr>
+> <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
 > <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
@@ -593,8 +555,8 @@ M-x describe-variable RET tex-command RET
 
 ```
 %% -*- coding: utf-8-unix -*-
-%#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
-% #!tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe & ptex2pdf -u -l hogehoge && start Acrobat hogehoge.pdf
+%#!lualatex -synctex=1 hogehoge
+% #!tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe & lualatex hogehoge && start Acrobat hogehoge.pdf
 %#BIBTEX bibtexu hogehoge
 %#MAKEINDEX upmendex hogehoge
 %#LPR if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" ("C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
@@ -602,7 +564,7 @@ M-x describe-variable RET tex-command RET
 ```
 
 ```
-\documentclass[uplatex,dvipdfmx,ja=standard]{bxjsarticle}
+\documentclass{jlreq}
 \begin{document}
 Welcom to YaTeX World!
 \end{document}
@@ -680,26 +642,10 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ### TeX typeset {#h9687728}
 
-#### upLaTeX (ptex2pdf) {#u98acf96}
-
-```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1\"")
-  (setq tex-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1'"))
-```
-
 #### LuaLaTeX {#r2c74452}
 
 ```
 (setq tex-command "lualatex -synctex=1")
-```
-
-#### upLaTeXmk {#bc88da07}
-
-```
-(if (eq system-type 'windows-nt)
-    (setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
-  (setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi"))
 ```
 
 #### LuaLaTeXmk {#d4a80fb8}
@@ -1299,25 +1245,19 @@ yatexhks.elにカスタマイズした関数を記述しておけばYaTeXの入�
 
 ### コンパイルプログラムの使い分け {#ga20e87e}
 
-普段は upLaTeX (ptex2pdf) を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．
+普段は LuaLaTeX を使っていても，投稿先のスタイルシートによっては pdfLaTeX を前提としているものがあります．
 TeX ソースの先頭行に例えば，
 
 ```
 %#!pdflatex
 ```
 
-と書いておくと、普段はタイプセットの時に upLaTeX (ptex2pdf) で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
+と書いておくと、普段はタイプセットの時に LuaLaTeX で処理されていても，この場合だけ pdfLaTeX で処理してくれます．
 
-記述例をいくつかあげると，Windows では
-
-```
-%#!ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc -synctex=1" hogehoge
-```
-
-としたり，macOS, Linux では
+記述例をあげると，
 
 ```
-%#!ptex2pdf -u -l -ot "-synctex=1" hogehoge
+%#!lualatex -synctex=1 hogehoge
 ```
 
 としたりできます．
