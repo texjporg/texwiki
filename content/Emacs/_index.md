@@ -30,7 +30,7 @@ GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS Windows, Solaris などの O
 ### License {#u2ed578f}
 
 GNU Emacs はフリーソフトウェアです．
-[GPLv3](http://gplv3.fsf.org/) ([日本語訳](https://licenses.opensource.jp/GPL-3.0/GPL-3.0.html)) ([Welcome to GPLv3](http://gplv3.fsf.org/)) でリリースされています．
+[GPLv3](https://git.savannah.gnu.org/cgit/emacs.git/tree/COPYING) ([日本語訳](https://licenses.opensource.jp/GPL-3.0/GPL-3.0.html)) ([Welcome to GPLv3](https://gplv3.fsf.org/)) でリリースされています．
 
 ### ダウンロード {#m56139cf}
 
