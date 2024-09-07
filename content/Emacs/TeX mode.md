@@ -9,9 +9,9 @@ pukiwiki: "Emacs/TeX mode"
 
 [Emacs](/Emacs/) > TeX mode
 
-## [TeX mode](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
+## [TeX mode](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el) <a id="tex-mode"></a> {#e09eebbf}
 
-[TeX mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) は TeX ファイルを編集・タイプセット・プレビューするための Emacs のメジャーモードです．
+[TeX mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode) は TeX ファイルを編集・タイプセット・プレビューするための Emacs のメジャーモードです．
 Emacs には標準で含まれています．
 
 標準添付ですが，設定すれば十分に使い物になります． <!-- 私が普段使っている環境は tex-mode に少し手を入れたものです（RefTeX, Helm や auto-complete も一緒に使っています）．- - kmaeda -->
@@ -29,7 +29,7 @@ Emacs には標準で含まれています．
 > <tr><th style="color:#FFF;background-color:#36A;text-align:center">メニュー [TeX]</th><th style="color:#FFF;background-color:#36A;text-align:center">キーバインド</th><th style="color:#FFF;background-color:#36A;text-align:center">機能</th></tr>
 > <tr><td>TeX File</td><td>C-c C-f</td><td>タイプセット</td></tr>
 > <tr><td>TeX Kill</td><td>C-c C-k</td><td>タイプセットを中断</td></tr>
-> <tr><td>BibTeX File</td><td>C-c C-i または C-c TAB</td><td>Biblatex, BibTeX</td></tr>
+> <tr><td>BibTeX File</td><td>C-c C-i または C-c TAB</td><td>BibTeX</td></tr>
 > <tr><td>TeX View</td><td>C-c C-v</td><td>プレビュー</td></tr>
 > <tr><td>TeX Print</td><td>C-c C-p</td><td>印刷</td></tr>
 > <tr><td></td><td>C-c C-c</td><td>ユーザー定義コマンドの実行</td></tr>
@@ -44,13 +44,13 @@ Emacs には標準で含まれています．
 
 C-c C-f によるタイプセットは，設定ファイルにおいて latex-run-command（latex-mode の場合．tex-mode の場合は tex-run-command）にセットされたコマンドが実行されます．
 デフォルトのコマンドは latex，つまり欧文用なので，このままでは日本語は出ません．
-下の設定例を参考に，ptex2pdf などに変更して下さい．
+下の設定例を参考に，lualatex などに変更して下さい．
 
 同様に，BibTeX のコマンドのデフォルトは bibtex，プレビューコマンドのデフォルトは xdvi (X Window System), yap (Windows), dvi2tty（それ以外）ですので，適宜変更する必要があります．
 
 プレビューコマンドと印刷コマンドを PDF ビューアに変更する場合は tex-print-file-extension を ".pdf" に設定して tex-dvi-view-command と tex-dvi-print-command をそれぞれ使用する PDF ビューアに設定してください．
 
-platex, uplatex, pdflatex, xelatex, lualatex など，複数のコマンドを併用したいときもあると思います．
+lualatex, uplatex, platex, xelatex, pdflatex  など，複数のコマンドを併用したいときもあると思います．
 このような時にはユーザー定義コマンド (tex-compile-commands) に登録しておくと，C-c C-c で選択することができます．
 
 ユーザー定義コマンドは C-c C-c C-i または C-c C-c TAB で一覧が表示できます．
@@ -89,22 +89,15 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -u -e -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
-;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\"")
-;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
-(setq tex-bibtex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
+(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
+(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
+(setq tex-bibtex-command "bibtexu")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 (setq tex-dvi-print-command "start Acrobat")
 (setq tex-compile-commands
-      '(("ptex2pdf -u -l -ot \"-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode\" %f" "%f" "%r.pdf")
-        ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
-        ("latexmk %f" "%f" "%r.pdf")
-        ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %f" "%f" "%r.pdf")
-        ("latexmk -e \"$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
+      '(("latexmk -e \"$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
-        ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$p)}\"" "%r.pdf")
         ("texworks %r.pdf" "%r.pdf")
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
@@ -171,29 +164,22 @@ C-x C-f ~/
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -u -e -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode'")
-;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode'")
-;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
-(setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
+(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
+(setq tex-bibtex-command "bibtexu")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "open -a Skim")
 (setq tex-dvi-print-command "open -a \"Adobe Acrobat\"")
 (setq tex-compile-commands
-      '(("ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
-        ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
-        ("latexmk %f" "%f" "%r.pdf")
-        ("latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
-        ("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
+      '(("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
-        ("open -a Skim %r.pdf" "%r.pdf")
         ("open -a Preview %r.pdf" "%r.pdf")
         ("open -a TeXShop %r.pdf" "%r.pdf")
         ("/Applications/TeXworks.app/Contents/MacOS/TeXworks %r.pdf" "%r.pdf")
         ("/Applications/texstudio.app/Contents/MacOS/texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("open -a Firefox %r.pdf" "%r.pdf")
         ("open -a \"Google Chrome\" %r.pdf" "%r.pdf")
-        ("open -a \"Adobe Acrobat Reader\" %r.pdf" "%r.pdf")))
+        ("open -a \"Adobe Acrobat\" %r.pdf" "%r.pdf")))
 
 (defun skim-forward-search ()
   (interactive)
@@ -233,23 +219,16 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
       (append '(("\\.tex$" . latex-mode)) auto-mode-alist))
 (setq tex-default-mode 'latex-mode)
 (setq tex-start-commands "\\nonstopmode\\input")
-(setq tex-run-command "ptex2pdf -u -e -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode'")
-;(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
-(setq latex-run-command "ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode'")
-;(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
-(setq tex-bibtex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
+(setq tex-run-command "luatex -synctex=1 -interaction=nonstopmode")
+(setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
+(setq tex-bibtex-command "bibtexu")
 (setq tex-print-file-extension ".pdf")
 (setq tex-dvi-view-command "evince")
 (setq tex-dvi-print-command "perl -e 'system(\"wine64 cmd /c start Acrobat.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
-      '(("ptex2pdf -u -l -ot '-kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode' %f" "%f" "%r.pdf")
-        ("lualatex -synctex=1 -interaction=nonstopmode %f" "%f" "%r.pdf")
-        ("latexmk %f" "%f" "%r.pdf")
-        ("latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
-        ("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
+      '(("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
         ("xdg-open %r.pdf &" "%r.pdf")
-        ("evince %r.pdf &" "%r.pdf")
         ("okular --unique %r.pdf &" "%r.pdf")
         ("zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" %r.pdf &" "%r.pdf")
         ("qpdfview --unique %r.pdf &" "%r.pdf")
@@ -367,9 +346,9 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 
 ### レポジトリ {#kdedd1cc}
 
-- [http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el)
-- [http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD](http://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD)
+- [https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/textmodes/tex-mode.el)
+- [https://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD](https://git.savannah.gnu.org/gitweb/?p=emacs.git;a=blob;f=lisp/textmodes/tex-mode.el;hb=HEAD)
 
 ### ChangeLog {#fe3d1392}
 
-- [http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el](http://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el)
+- [https://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el](https://git.savannah.gnu.org/cgit/emacs.git/log/lisp/textmodes/tex-mode.el)
