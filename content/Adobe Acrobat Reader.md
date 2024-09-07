@@ -13,6 +13,10 @@ Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が
 
 Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
 
+Adobe Acrobat Reader で印刷がうまくいかない場合は [SumatraPDF](/SumatraPDF/) などの Adobe Acrobat Reader 以外のビューアで印刷してください。
+
+- [QA: Excelで作成したグラフをpdfcropしたものを印刷すると線情報が無視される？ | TeX](https://okumuralab.org/tex/mod/forum/discuss.php?d=3820)
+
 Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリーダー | Adobe Acrobat Reader](https://www.adobe.com/jp/acrobat/pdf-reader.html) からダウンロードした場合は Continuous になります。
 
 - [エンタープライズ管理ガイド - 2 種類のトラック（Acrobat）](https://helpx.adobe.com/jp/acrobat/kb/cq04102108.html)
