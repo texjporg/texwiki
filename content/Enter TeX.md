@@ -102,20 +102,6 @@ sudo zypper install gnome-latex
 
 ### Personal build tools {#kcfc97ba}
 
-#### upLaTeXmk {#q6b26226}
-
-Commands
-: &nbsp;
-
-: latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
-
-Post Processor
-: &nbsp;
-
-: latexmk
-
-\[Build\] &gt; \[upLaTeXmk\] で実行できます．
-
 #### LuaLaTeXmk {#s8b1424d}
 
 Commands
