@@ -22,11 +22,9 @@ pukiwiki: "サクラエディタ"
 - [サクラエディタ - GitHub Pages](https://sakura-editor.github.io/)
 - [Sakura Editor Project Top Page - OSDN](https://osdn.net/projects/sakura-editor/)
 - [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
-    - 掲示板\[[一般\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](http://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
+    - 掲示板\[[一般\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
     - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
     - [Members](https://sourceforge.net/p/sakura-editor/_members/)
-- [SakuraEditorWiki](http://sakura.qp.land.to/)
-    - [FAQ](http://sakura.qp.land.to/?FAQ)
 
 ***
 
@@ -38,15 +36,22 @@ Windows 10
 
 ### ダウンロード {#p4ea6725}
 
+リリース版
+
 - [https://github.com/sakura-editor/sakura/releases](https://github.com/sakura-editor/sakura/releases)
-- [http://jaist.dl.sourceforge.net/project/sakura-editor/](http://jaist.dl.sourceforge.net/project/sakura-editor/)
-- [https://sourceforge.net/projects/sakura-editor/files/](https://sourceforge.net/projects/sakura-editor/files/)
-- [サクラエディタ アップローダ その２ | uploader.jp](http://ux.getuploader.com/sakura_editor/)
+
+開発版
+
+- [https://ci.appveyor.com/project/sakuraeditor/sakura](https://ci.appveyor.com/project/sakuraeditor/sakura)
+    - サクラエディタ開発版(64bit)をインストールする場合は AppVeyor の「Job name」から「Platform: x64」を選択して「Artifacts」を選択後、ファイルを選んでダウンロード（参考：[サクラエディタの64bit版の入手方法](https://suteakasann.hatenablog.com/entry/2021/11/02/173603)）
+
+<!-- -http://jaist.dl.sourceforge.net/project/sakura-editor/ -->
+<!-- -https://sourceforge.net/projects/sakura-editor/files/ -->
+<!-- -[[サクラエディタ アップローダ その２ | uploader.jp:http://ux.getuploader.com/sakura_editor/]] -->
 
 ### 不具合 {#jbc9f4c6}
 
 - [Issues · sakura-editor/sakura · GitHub](https://github.com/sakura-editor/sakura/issues)
-- [BugReport - SakuraEditorWiki](http://sakura.qp.land.to/?BugReport)
 
 ### コマンドラインオプション {#j41d5a42}
 
@@ -85,8 +90,8 @@ Unicode 化された TeX を使う場合は UTF-8 を選択します．
 
 - [bregonig.dll](http://k-takata.o.oo7.jp/mysoft/bregonig.html)
 - [k_takata / bregonig / ダウンロード &mdash; Bitbucket](https://bitbucket.org/k_takata/bregonig/downloads/)
-    <!-- -[[Downloads · k-takata/bregonig · GitHub:https://github.com/k-takata/bregonig/downloads]] -->
-    - [twitter](https://twitter.com/k_takata)
+- [GitHub - k-takata/bregonig: This is a source code repository of bregonig.dll regular expression library.](https://github.com/k-takata/bregonig)
+    - [K.Takata さん / X](https://x.com/k_takata)
 
 bregonig.dll を
 
