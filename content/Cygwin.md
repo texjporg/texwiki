@@ -43,8 +43,8 @@ Cygwin にインストールしておきましょう．
 #### TeX Live のインストール {#peed6637}
 
 - [CygwinにTeXlive公式パッケージを導入する](http://vraisamis.hatenadiary.jp/entry/2013/11/19/213227)
-- [http://www.tug.org/texlive/quickinstall.html](http://www.tug.org/texlive/quickinstall.html)
-- [http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](http://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
+- [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
 
 を参照．
 
@@ -144,11 +144,11 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 
 #### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
 
-- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86_64](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive&arch=x86_64)
+- [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive)
 - [https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/)
 - [https://cygwin.com/cygwin/packages/x86_64/texlive/](https://cygwin.com/cygwin/packages/x86_64/texlive/)
-- [http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](http://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
-- [http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](http://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
+- [https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
+- [https://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](https://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
 
@@ -168,8 +168,8 @@ TeX Live/Cygwin の dvipdfmx が TeX Live 公式パッケージの dvipdfmx よ�
 
 TeX Live 公式パッケージの dvipdfmx が優先的に実行されるように PATH を変更するとうまくいくようです．
 
-- [Unable to find TFM file “″ で2時間無駄にした](http://masuku0w0.hatenablog.jp/entry/2016/04/27/013612)
-- [【cygwin】w32texとの競合問題](http://bluepost69-tech.hatenablog.com/entry/2016/01/22/031818)
+- [Unable to find TFM file “″ で2時間無駄にした](https://masuku0w0.hatenablog.jp/entry/2016/04/27/013612)
+- [【cygwin】w32texとの競合問題](https://bluepost69-tech.hatenablog.com/entry/2016/01/22/031818)
 
 ### 不具合 {#iffd4e02}
 
@@ -195,7 +195,7 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
 
 - [dvipdfmx fails to call rungs](https://cygwin.com/ml/cygwin/2013-01/msg00366.html)
     - [Re: dvipdfmx fails to call rungs](https://cygwin.com/ml/cygwin/2013-01/msg00370.html)
-- [Cygwin の TeXLive の dvipdfmx が失敗する](http://d.hatena.ne.jp/tsntsumi/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](http://d.hatena.ne.jp/tsntsumi/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
+- [Cygwin の TeXLive の dvipdfmx が失敗する](https://tsntsumi.hatenadiary.org/entry/20120514/DvipdfmxInTexLiveOnCygwinFailed) → [Cygwin の TeXLive の dvipdfmx が成功した](https://tsntsumi.hatenadiary.org/entry/20120515/DvipdfmxInTeXLiveOnCygwinSucceeded)
 
 ### 関連リンク {#bc8cfcc3}
 
@@ -203,12 +203,12 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
     - [The Cygwin Project mailing list archives](https://cygwin.com/ml/cygwin/)
     - [The cygwin-announce mailing list archives](https://cygwin.com/ml/cygwin-announce/)
     - [The cygwin-apps mailing list archives](https://cygwin.com/ml/cygwin-apps/)
-- [Cygwin Ports project](http://sourceware.org/cygwinports/)
-- [gnupack](http://gnupack.osdn.jp/docs/latest/UsersGuide.html)
+- [Cygwin Ports project](https://sourceware.org/cygwinports/)
+    <!-- -[[gnupack:https://gnupack.osdn.jp/docs/latest/UsersGuide.html]] -->
 
 #### 動作環境 {#n6af06c2}
 
-- [http://www.cygwin.com/faq.html#faq.what.supported](http://www.cygwin.com/faq.html#faq.what.supported)
+- [https://www.cygwin.com/faq.html#faq.what.supported](https://www.cygwin.com/faq.html#faq.what.supported)
 
 #### License {#fe355f24}
 
