@@ -17,7 +17,7 @@ LaTeXiT は，TeX ソースコードをタイプセットして画像に変換�
 - [LaTeXiT](https://www.chachatelier.fr/latexit/)
 - [LaTeXiT | Facebook](https://www.facebook.com/LaTeXit)
 
-類似ソフトウェアとして，[TeX2img](/TeX2img/) があります．
+類似ソフトウェアとして，[TeX2img](/TeX2img/) または [KLatexFormula](/KLatexFormula/) があります．
 
 ***
 
@@ -119,6 +119,10 @@ pdfLaTeX
 - [LaTeXItで数式の一部に日本語](https://okumuralab.org/tex/mod/forum/discuss.php?d=833)
 - [LaTeXit(xelatex)でテンプレート変更](http://blog.cocomoff.info/archives/2016/01/13/7642/)
 - LaTeXitが使えません。([forum:2236](https://okumuralab.org/tex/mod/forum/discuss.php?d=2236))
+
+#### ライセンス {#r39f0d2a}
+
+[CeCILL license](https://cecill.info/index.en.html)
 
 #### ChangeLog {#sb3b1ab6}
 
