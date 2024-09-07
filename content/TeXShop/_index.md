@@ -17,6 +17,11 @@ TeXShop は macOS 用の TeX 統合環境です．[MacTeX](/MacTeX/) には標�
 - [Richard Koch Home Page](https://pages.uoregon.edu/koch/)
     - [TeXShop](https://pages.uoregon.edu/koch/texshop/)
 
+<strong>Unofficial TeXShop repository</strong>
+
+- [https://github.com/TeXShop](https://github.com/TeXShop)
+    - [https://github.com/TeXShop/TeXShop](https://github.com/TeXShop/TeXShop)
+
 TeXShop をモデルにしたクロスプラットフォームな統合環境として [TeXworks](/TeXworks/) があります．
 
 ***
@@ -31,7 +36,7 @@ macOS
 
 ### License {#x8f63441}
 
-GPLv2
+[GPLv2](https://github.com/TeXShop/TeXShop/blob/master/Docs/GNU%20General%20Public%20License.txt)
 
 <!-- **不具合 [#i75be8c7] -->
 
