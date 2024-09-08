@@ -44,6 +44,8 @@ GNU Emacs はフリーソフトウェアです．
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [emacs-w32 on Cygwinについて](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs.html#emacs-w32%20on%20Cygwin%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 - [Emacs Modified for Windows](https://emacs-modified.gitlab.io/windows/)
+- [https://packages.msys2.org/search?t=binpkg&q=emacs](https://packages.msys2.org/search?t=binpkg&q=emacs)
+    - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-emacs](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-emacs)
 
 #### macOS {#v2ece0ad}
 
@@ -93,7 +95,7 @@ GNU Emacs はフリーソフトウェアです．
 - [emacs内でTeX文書の作成からpdf閲覧まで行う](https://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
 - [emacsでpdfファイルを閲覧する](http://d.hatena.ne.jp/daharu/20111126/1322272094)
 - [M-x align で TeX の表を整列できるようにする](http://d.hatena.ne.jp/supermassiveblackhole/20110223/1298443861)
-- [pdf-tools](https://github.com/politza/pdf-tools)
+- [pdf-tools](https://github.com/vedang/pdf-tools)
 - [emacs-jp/migemo · GitHub](https://github.com/emacs-jp/migemo)
 - [GNU EmacsでLaTeX文書を書く話](https://zenn.dev/maswag/books/latex-on-emacs)
 
