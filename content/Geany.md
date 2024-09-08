@@ -41,10 +41,10 @@ Windows, macOS, Linux
 
 ### ビルドコマンドの設定 {#aaa2ae74}
 
-\[ビルド(<ins>B</ins>)\]-\[ビルドコマンドを設定(<ins>S</ins>)\]
+\[ビルド(<ins>B</ins>)\] &gt; \[ビルドコマンドを設定(<ins>S</ins>)\]
 
 Geany はデフォルトで LaTeX のビルドに対応しています．<br>
-以下の設定では [ptex2pdf](/ptex2pdf/) や latexmk を使用しています．<br>
+以下の設定では LuaLaTeX や latexmk を使用しています．<br>
 BibTeX や hyperref パッケージなどを使用する場合は latexmk を使用してください．<br>
 
 #### LaTeX コマンド {#z6996bd9}
@@ -52,11 +52,7 @@ BibTeX や hyperref パッケージなどを使用する場合は latexmk を使
 LaTeX -> <ins>P</ins>DF
 : &nbsp;
 
-: ptex2pdf -u -l -ot '-synctex=1 --file-line-error-style' "%f"
-
 : lualatex -synctex=1 --file-line-error-style "%f"
-
-: latexmk -e '$latex=q/uplatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "%f"
 
 : latexmk -e '$lualatex=q/lualatex %O -synctex=1 --file-line-error-style %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "%f"
 
@@ -100,9 +96,9 @@ V<ins>i</ins>ew PDF File
 
 - [https://github.com/geany/geany-plugins/tree/master/latex](https://github.com/geany/geany-plugins/tree/master/latex)
 
-\[ツール(<ins>T</ins>)\]-\[プラグインマネージャ(<ins>P</ins>)\] で GeanyLaTeX にチェックをいれてアクティブにします．<br>
+\[ツール(<ins>T</ins>)\] &gt; \[プラグインマネージャ(<ins>P</ins>)\] で GeanyLaTeX にチェックをいれてアクティブにします．<br>
 メニューに \[<ins>L</ins>aTeX\] や \[<ins>B</ins>ibTeX\] が追加されます．<br>
-\[ツール(<ins>T</ins>)\]-\[LaTeXウィザード(<ins>W</ins>)\] で LaTeX 文書を簡単に作成するウィザードを開始できます．<br>
+\[ツール(<ins>T</ins>)\] &gt; \[LaTeXウィザード(<ins>W</ins>)\] で LaTeX 文書を簡単に作成するウィザードを開始できます．<br>
 
 ## 関連リンク {#j4cca0b1}
 
