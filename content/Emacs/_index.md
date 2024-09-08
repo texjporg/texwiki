@@ -43,15 +43,13 @@ GNU Emacs はフリーソフトウェアです．
 - [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [emacs-w32 on Cygwinについて](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs.html#emacs-w32%20on%20Cygwin%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
-    <!-- -[[NTEmacs / Emacs for Windows:http://cha.la.coocan.jp/doc/NTEmacs.html]] -->
-    <!-- -[[64bit版 GNU Emacs 27.1 for Windows（w/ IMEパッチ）:https://github.com/mhatta/emacs-27-x86_64-win-ime]] -->
-    <!-- -[[Emacs Modified for Windows:http://vigou3.gitlab.io/emacs-modified-windows/]] -->
+- [Emacs Modified for Windows](https://emacs-modified.gitlab.io/windows/)
 
 #### macOS {#v2ece0ad}
 
 - [An enhanced inline patch for GNU Emacs](https://github.com/takaxp/ns-inline-patch#test-pre-built-distribution-package)
 - [GNU Emacs For Mac OS X](https://emacsformacosx.com/)
-    <!-- -[[Emacs Modified for macOS:http://vigou3.gitlab.io/emacs-modified-macos/]] -->
+- [Emacs Modified for macOS](https://emacs-modified.gitlab.io/macos/)
     <!-- -[[Emacs Mac port [experimental/hackers-only]:ftp://ftp.math.s.chiba-u.ac.jp/emacs/]] -->
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
@@ -82,16 +80,16 @@ GNU Emacs はフリーソフトウェアです．
 - [YaTeX](/YaTeX/)：Yet Another TeX mode for Emacs．YaTeX (野鳥) は，Emacs の TeX 入力支援環境です．
 - [LaTeX Labeler - Simplify equation labeling in LaTeX](https://github.com/X9hRRDys/latex-labeler)
     - [LaTeXの数式ラベル管理を楽にするEmacsパッケージ、LaTeX Labelerの紹介](https://zenn.dev/mpotarch/articles/9a02e212525073)
-- [latex-math-preview.el](http://transitive.info/software/latex-math-preview/)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
+- [latex-math-preview.el](https://gitlab.com/latex-math-preview/latex-math-preview)：TeX ファイル中の数式を Emacs でプレビューするための Emacs Lisp
+    - [https://transitive.info/software/latex-math-preview/](https://transitive.info/software/latex-math-preview/)
     - [EmacsWiki:LaTeXMathPreview](https://www.emacswiki.org/emacs/LaTeXMathPreview)
-    - [latex-math-previewについて &laquo; blog &#8211; 鶫](http://tsugumimath.wordpress.com/latex-math-preview%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/)
     - [QA: YaTeXで数式のpreview](https://okumuralab.org/tex/mod/forum/discuss.php?d=349)
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413)：(X)Emacs frontend to forward search with SumatraPDF
 - [RefTeX](https://www.emacswiki.org/emacs/RefTeX)：support for labels, references, citations and indices
 - [BibTeX](https://www.emacswiki.org/emacs/BibTeX)：bibliography in LaTeX, editing style files
 - [latex_editor](https://sourceforge.net/projects/editorlatex/)：emacs + auctex, vim + latex suite enviroment for windows.
 - [emacs, mozc, TeX 入力](https://okumuralab.org/tex/mod/forum/discuss.php?d=1319)
-- [Emacs上のPDFでisearch,occur,imenuとかなんでもしてしまうpdf-toolsの紹介](http://sheephead.homelinux.org/2014/03/17/7076/)
+- [Emacsでpdfを読む (pdf-tools) (2019.07.17追記)](https://taipapamotohus.com/post/pdf-tools/)
 - [emacs内でTeX文書の作成からpdf閲覧まで行う](https://ubutun.blogspot.jp/2014/05/emacstexpdf.html)
 - [emacsでpdfファイルを閲覧する](http://d.hatena.ne.jp/daharu/20111126/1322272094)
 - [M-x align で TeX の表を整列できるようにする](http://d.hatena.ne.jp/supermassiveblackhole/20110223/1298443861)
@@ -133,7 +131,7 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に
+inverse search は SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に
 
 ```
 C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
@@ -261,10 +259,10 @@ TeX Live 2021, Evince 42.0, GNU Emacs 28.1 で動作確認しています．
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-\[設定(<ins>S</ins>)\]-\[Okular を設定(<ins>O</ins>)...\]-\[エディタ\] の項目から Emacs client を選択します．
+\[設定(<ins>S</ins>)\] &gt; \[Okular を設定(<ins>O</ins>)...\] &gt; \[エディタ\] の項目から Emacs クライアント を選択します．
 
 エディタ:
-: Emacs client
+: Emacs クライアント
 
 コマンド:
 : emacsclient -a emacs --no-wait +%l %f
@@ -314,9 +312,9 @@ Ctrl + 左クリックで対応する TeX 文書の該当箇所にジャンプ�
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
 ```
 
-\[Edit\]-\[Settings...\]-\[Behaviour\]
+\[編集(E)\] &gt; \[設定...\] &gt; \[挙動(B)\]
 
-Source editor:
+ソースエディタ:
 : emacsclient -a emacs --no-wait +%2 "%1"
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします．
