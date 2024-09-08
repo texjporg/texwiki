@@ -196,7 +196,7 @@ $ wine sakura.exe
 - [「はじめてのサクラエディタ」筆者サポートページ](http://supportdoc.net/support-sakura/)
 - [Sakura EditorでLaTeXを使う](http://physics-station.blogspot.jp/2013/04/sakura-editorlatex.html)
 - [そっとプロジェクト＠Ｗｉｋｉ - ソフトウェア/サクラエディタ](http://www19.atwiki.jp/sotto_project/pages/151.html)
-- [Memo/SakuraEditor - DEX Lab](http://dex.qp.land.to/pukiwiki/index.php?Memo/SakuraEditor)
+- [Memo/SakuraEditor - DEX Lab](https://dexlab.net/pukiwiki/index.php?Memo/SakuraEditor)
 - [サクラエディタで、対応する括弧を探す。](http://3tackle.blog55.fc2.com/blog-entry-52.html)
 
 ### License {#y5064e03}
@@ -206,14 +206,12 @@ $ wine sakura.exe
 
 ### リリース情報 {#qe1b7074}
 
-[What's New](http://sakura-editor.sourceforge.net/), [SakuraEditorWiki](http://sakura.qp.land.to/) を参照．
+- [https://github.com/sakura-editor/sakura/tags](https://github.com/sakura-editor/sakura/tags)
 
 ### ChangeLog {#l31b371d}
 
 - [コミットログ](https://github.com/sakura-editor/sakura/commits/master)
 
-### 派生版 &amp; 改造版 {#mc0d532c}
+### 派生版 {#mc0d532c}
 
-- [派生版＆改造版 - SakuraEditorWiki](http://sakura.qp.land.to/?%C7%C9%C0%B8%C8%C7%A1%F5%B2%FE%C2%A4%C8%C7)
-- [Ver.2.3.2.0 64bit版バイナリ](https://ux.getuploader.com/sakura_editor/download/149)
-- [BeniZakura](https://bitbucket.org/suzzsegv/benizakura/downloads)
+- [紅桜エディタ](https://github.com/suzzsegv/BeniZakura)
