@@ -20,7 +20,7 @@ pukiwiki: "Notepad++"
 Notepad++ はテキストエディタです。
 Notepad++ のデフォルトの Encoding は UTF-8（BOMなし）です。
 
-Notepad++ 7.5 で LaTeX のサポートが追加されました。
+Notepad++ 7.5 (2017-08-16) で LaTeX のサポートが追加されました。
 
 - [Add new languages support](https://github.com/notepad-plus-plus/notepad-plus-plus/commit/02bdd11700e6fb225157aa59f1f5f1a453865cee)
 - [「Notepad++」v7.5が公開、“LaTeX”や“Rust”、“Erlang”など19言語をサポート](http://forest.watch.impress.co.jp/docs/news/1076002.html)
@@ -78,7 +78,6 @@ Notepad++ JS npp-7.5.1.1-js-171025-2200 (日付: 2017-10-25) が最新リリー�
 ## プラグイン (Plugins) {#k2155ff2}
 
 - [https://github.com/notepad-plus-plus/nppPluginList](https://github.com/notepad-plus-plus/nppPluginList)
-- [sftys's notepad++](http://freesftys.lv9.org/app/npp/)
 
 ### [NppExec](/NppExec/) {#cb7d631d}
 
