@@ -50,7 +50,7 @@ C-c C-f によるタイプセットは，設定ファイルにおいて latex-ru
 
 プレビューコマンドと印刷コマンドを PDF ビューアに変更する場合は tex-print-file-extension を ".pdf" に設定して tex-dvi-view-command と tex-dvi-print-command をそれぞれ使用する PDF ビューアに設定してください．
 
-lualatex, uplatex, platex, xelatex, pdflatex  など，複数のコマンドを併用したいときもあると思います．
+lualatex, xelatex, pdflatex, uplatex + dvipdfmx など，複数のコマンドを併用したいときもあると思います．
 このような時にはユーザー定義コマンド (tex-compile-commands) に登録しておくと，C-c C-c で選択することができます．
 
 ユーザー定義コマンドは C-c C-c C-i または C-c C-c TAB で一覧が表示できます．
@@ -97,6 +97,7 @@ C-x C-f ~/
 (setq tex-dvi-print-command "start Acrobat")
 (setq tex-compile-commands
       '(("latexmk -e \"$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
+        ("latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
         ("texworks %r.pdf" "%r.pdf")
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
@@ -172,6 +173,7 @@ C-x C-f ~/
 (setq tex-dvi-print-command "open -a \"Adobe Acrobat\"")
 (setq tex-compile-commands
       '(("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
+        ("latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
         ("open -a Preview %r.pdf" "%r.pdf")
         ("open -a TeXShop %r.pdf" "%r.pdf")
@@ -227,6 +229,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 (setq tex-dvi-print-command "perl -e 'system(\"wine64 cmd /c start Acrobat.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
       '(("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
+        ("latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %f" "%f" "%r.pdf")
         ((concat "\\doc-view" " \"" (car (split-string (format "%s" (tex-main-file)) "\\.")) ".pdf\"") "%r.pdf")
         ("xdg-open %r.pdf &" "%r.pdf")
         ("okular --unique %r.pdf &" "%r.pdf")
