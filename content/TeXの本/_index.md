@@ -23,10 +23,10 @@ TeX や LaTeX に関する本の紹介です．
 - ウィキブックス (Wikibooks) &mdash;
     [TeX/LaTeX 入門](http://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
-- [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://www.facebook.com/watanabe.thor))
+- [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
     <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
-    - [myTeXpert プロジェクト日本語トップページ - OSDN](https://ja.osdn.net/projects/mytexpert/)
-    - 『[好き好き LaTeX2e 初級編](https://ja.osdn.net/projects/mytexpert/releases/p6276)』
+    - [thortex (thortex) / Repositories · GitHub](https://github.com/thortex)
+    - 『[好き好き LaTeX2e 初級編](https://github.com/thortex/jlatex-man-lll-jou/blob/master/jouhyper.pdf)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
             として出版もされています。
             <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
@@ -55,11 +55,12 @@ TeX や LaTeX に関する本の紹介です．
             <!-- 事を考えれば，やり方次第ではうまく行くのではないでしょうか． -->
             <!--  -->
             <!-- ご出版おめでとうございます。さっそく購入しました。こういう形態の本を出してくれる出版社が増えることを願っています。- - 奥村 -->
-    - 『[好き好き LaTeX2e ポケットブック編](https://ja.osdn.net/projects/mytexpert/releases/p6829)』
-    - 『[LaTeX による論文作成の手引き](https://ja.osdn.net/projects/mytexpert/releases/p6274)』
+    - 『[好き好き LaTeX2e 中級編](https://github.com/thortex/jlatex-man-lll-kimi/blob/master/kimi.pdf)』
+    - 『[好き好き LaTeX2e ハンドブック編](https://github.com/thortex/jlatex-man-lll-jhb/blob/master/jhb.pdf)』
+    - 『[LaTeX による論文作成の手引き](https://github.com/thortex/jlatex-man-ronbun/blob/master/ronhyper.pdf)』
 
-- [阿部 紀行さん](http://www.ms.u-tokyo.ac.jp/~abenori/)
-    [TeXの話](http://www.ms.u-tokyo.ac.jp/~abenori/tex/)
+- [阿部 紀行さん](https://www.ms.u-tokyo.ac.jp/~abenori/)
+    [TeXの話](https://www.ms.u-tokyo.ac.jp/~abenori/tex/)
 
 - [藤田 眞作さん](http://xymtex.com/)
     [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp)
@@ -70,6 +71,12 @@ TeX や LaTeX に関する本の紹介です．
 [本棚.org ](http://hondana.org/TeX/) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
+
+#### 2024年 {#a293ab5d}
+
+- [やまいも](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』
+    （[BOOTH](https://imoarai.booth.pm/items/5799095)，2024年5月25日初版発行（技術書典16），電子版 &yen;700）
+    - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
 
 #### 2023年 {#d39f7b4a}
 
