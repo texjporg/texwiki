@@ -35,7 +35,7 @@ pukiwiki: "Texmaker/設定/Linux"
 LaTeX
 : &nbsp;
 
-: uplatex -synctex=1 -interaction=nonstopmode %.tex
+: uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
@@ -53,8 +53,6 @@ LuaLaTeX
 : &nbsp;
 
 : lualatex -synctex=1 -interaction=nonstopmode %.tex
-
-: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
 
 Latexmk
 : &nbsp;
