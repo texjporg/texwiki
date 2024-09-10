@@ -37,7 +37,7 @@ Beamer は
 
 で利用可能です．
 
-- LuaLaTeX/LuajitLaTeX の場合は [LuaTeX-ja](/LuaTeX-ja/) で日本語文書が作成できます．
+- LuaLaTeX の場合は [LuaTeX-ja](/LuaTeX-ja/) で日本語文書が作成できます．
 - XeLaTeX の場合は [xeCJK/ZXjatype](/xeCJK/) で日本語文書が作成できます．
 - pdfLaTeX の場合は [CJK LaTeX/BXcjkjatype](/LaTeX-CJK/) で日本語文書が作成出来ます．
 
