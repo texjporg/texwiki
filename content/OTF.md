@@ -249,7 +249,7 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
 OpenType フォントの用途として，Adobe Acrobat Reader または Adobe Acrobat でのプレビュー・印刷用途を想定しているようです。
-dvipdfmx, lualatex, luajitlatex を利用した Adobe Acrobat Reader または Adobe Acrobat 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
+dvipdfmx, lualatex を利用した Adobe Acrobat Reader または Adobe Acrobat 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
 [TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### Microsoft Windows の場合 {#p413a15f}
@@ -274,13 +274,6 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
     ```
     \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
     lualatex hoge.tex
-    ```
-
-- LuajitLaTeX の場合
-
-    ```
-    \usepackage[noembed,jis2004]{luatexja-preset} を \usepackage[kozuka-pr6n,jis2004]{luatexja-preset} に変更
-    luajitlatex hoge.tex
     ```
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
