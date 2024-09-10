@@ -240,6 +240,7 @@ TeX Live 2022 対応の事例です．
 
 TeX Live 2021 対応の事例です．
 
+- [【大学生向け】LaTeX完全導入ガイド Windows編 (2022年)](https://qiita.com/passive-radio/items/623c9a35e86b6666b89e)
 - [2021-w3 : LaTeX 環境の構築(Windows) : BYOD PC のセッティング](https://hkob.hatenablog.com/entry/2021/04/03/100000)
 
 TeX Live 2020 対応の事例です．
