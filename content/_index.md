@@ -3,7 +3,7 @@ title: "TeX Wiki"
 url: "/"
 date: 2014-07-10T02:13:46Z
 description: "TeX, LaTeX, PDF などに関する読者参加型ページです．"
-keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "upLaTeX", "upLaTeX2e", "pdfTeX", "pdfLaTeX", "LuaTeX", "LuaLaTeX", "LuajitTeX", "LuajitLaTeX", "XeTeX", "XeLaTeX", "DVI", "PostScript", "PDF"]
+keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "upLaTeX", "upLaTeX2e", "pdfTeX", "pdfLaTeX", "LuaTeX", "LuaLaTeX", "LuajitTeX", "XeTeX", "XeLaTeX", "DVI", "PostScript", "PDF"]
 pukiwiki: "FrontPage"
 ---
 
