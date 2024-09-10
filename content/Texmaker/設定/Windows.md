@@ -54,8 +54,6 @@ LuaLaTeX
 
 : lualatex -synctex=1 -interaction=nonstopmode %.tex
 
-: luajitlatex -synctex=1 -interaction=nonstopmode %.tex
-
 Latexmk
 : &nbsp;
 
