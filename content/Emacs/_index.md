@@ -19,7 +19,7 @@ pukiwiki: "Emacs"
 
 ## GNU Emacs {#e77c7c99}
 
-- [GNU Emacs - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/emacs/)
+- [GNU Emacs - GNU Project](https://www.gnu.org/software/emacs/)
 
 ### 動作環境 {#tabe669d}
 
