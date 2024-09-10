@@ -42,7 +42,7 @@ BibTeX と dvipdfmx がうまく動作しない場合は以下を参照してく
 LaTeX
 : &nbsp;
 
-: "/Library/TeX/texbin/uplatex" -synctex=1 -interaction=nonstopmode %.tex
+: "/Library/TeX/texbin/uplatex" -no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode %.tex
 
 PdfLaTeX
 : &nbsp;
@@ -60,8 +60,6 @@ LuaLaTeX
 : &nbsp;
 
 : "/Library/TeX/texbin/lualatex" -synctex=1 -interaction=nonstopmode %.tex
-
-: "/Library/TeX/texbin/luajitlatex" -synctex=1 -interaction=nonstopmode %.tex
 
 Latexmk
 : &nbsp;
