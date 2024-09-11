@@ -41,69 +41,67 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力されます．
 \`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．
 
-## 不具合 {#m12f4e1b}
-
-### YaTeX 1.80 で (setq dvi2-command "okular --unique") を設定して C-c C-g を入力すると forward search ができない {#l5f1c74e}
-
-Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります．
-ただし，[2016-01-08](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e) 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません．
-
-Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%s '%s.pdf#src:%d %s'" に修正する必要があります．
-
-&#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します．
-
-<!-- (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された -->
-<!-- (cf (buffer-file-name)) ではないのかと思います． -->
-
-<!-- ↑ -->
-<!-- ご指摘ありがとうございます． -->
-<!-- たしかに cf がフルパスに変更されていますね． -->
-<!-- Okular 以外のビューアはフルパスでなくても実行できると思うのですが -->
-<!-- すべてフルパスになっていても問題ないと思います． -->
-
-```
-(with-eval-after-load 'yatexprc
-  (defun YaTeX-preview-jump-line ()
-    "Call jump-line function of various previewer on current main file"
-    (interactive)
-    (save-excursion
-      (save-restriction
-        (widen)
-        (let*((pf (or YaTeX-parent-file
-                      (save-excursion (YaTeX-visit-main t) (buffer-file-name))))
-              (pdir (file-name-directory pf))
-              (bnr (substring pf 0 (string-match "\\....$" pf)))
-              ;(cf (file-relative-name (buffer-file-name) pdir))
-              (cf (buffer-file-name)) ;2016-01-08
-              (buffer (get-buffer-create " *preview-jump-line*"))
-              (line (count-lines (point-min) (point-end-of-line)))
-              (previewer (YaTeX-preview-default-previewer))
-              (cmd (cond
-                    ((string-match "Skim" previewer)
-                     (format "%s %d '%s.pdf' '%s'"
-                             YaTeX-cmd-displayline line bnr cf))
-                    ((string-match "evince" previewer)
-                     (format "%s '%s.pdf' %d '%s'"
-                             "fwdevince" bnr line cf))
-                    ((string-match "sumatra" previewer)
-                     (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
-                             previewer bnr cf line))
-                    ((string-match "zathura" previewer)
-                     (format "%s --synctex-forward '%d:0:%s' '%s.pdf'"
-                             previewer line cf bnr))
-                    ((string-match "qpdfview" previewer)
-                     (format "%s '%s.pdf#src:%s:%d:0'"
-                             previewer bnr cf line))
-                    ((string-match "okular" previewer)
-                     (format "%s '%s.pdf#src:%d %s'"
-                             previewer bnr line (expand-file-name cf)))
-                    )))
-          (YaTeX-system cmd "jump-line" 'noask pdir))))))
-```
-
-### C-c C-t j でのコンパイル時に \includeonly の引数の置き換えがうまくできない {#ga957746}
-
-Emacs 26.1 から switch-to-buffer の仕様が変更されたため想定通りの動作をしない．YaTeX 1.80.3 で修正されたので YaTeX を更新する．
+<!-- *不具合 [#m12f4e1b] -->
+<!--  -->
+<!-- **YaTeX 1.80 で (setq dvi2-command "okular - -unique") を設定して C-c C-g を入力すると forward search ができない [#l5f1c74e] -->
+<!--  -->
+<!-- Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります． -->
+<!-- ただし，[[2016-01-08:https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e]] 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません． -->
+<!--  -->
+<!-- Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%s '%s.pdf#src:%d %s'" に修正する必要があります． -->
+<!--  -->
+<!-- &#x7e;/.emacs.d/init.el に yatexprc.el の YaTeX-preview-jump-line を修正したものを再設定します． -->
+<!--  -->
+<!-- // (expand-file-name cf) はフルパスには関係なくて，フルパスになったの2016-01-08 に修正された -->
+<!-- // (cf (buffer-file-name)) ではないのかと思います． -->
+<!--  -->
+<!-- // ↑ -->
+<!-- // ご指摘ありがとうございます． -->
+<!-- // たしかに cf がフルパスに変更されていますね． -->
+<!-- // Okular 以外のビューアはフルパスでなくても実行できると思うのですが -->
+<!-- // すべてフルパスになっていても問題ないと思います． -->
+<!--  -->
+<!-- (with-eval-after-load 'yatexprc -->
+<!--   (defun YaTeX-preview-jump-line () -->
+<!--     "Call jump-line function of various previewer on current main file" -->
+<!--     (interactive) -->
+<!--     (save-excursion -->
+<!--       (save-restriction -->
+<!--         (widen) -->
+<!--         (let*((pf (or YaTeX-parent-file -->
+<!--                       (save-excursion (YaTeX-visit-main t) (buffer-file-name)))) -->
+<!--               (pdir (file-name-directory pf)) -->
+<!--               (bnr (substring pf 0 (string-match "\\....$" pf))) -->
+<!--               ;(cf (file-relative-name (buffer-file-name) pdir)) -->
+<!--               (cf (buffer-file-name)) ;2016-01-08 -->
+<!--               (buffer (get-buffer-create " *preview-jump-line*")) -->
+<!--               (line (count-lines (point-min) (point-end-of-line))) -->
+<!--               (previewer (YaTeX-preview-default-previewer)) -->
+<!--               (cmd (cond -->
+<!--                     ((string-match "Skim" previewer) -->
+<!--                      (format "%s %d '%s.pdf' '%s'" -->
+<!--                              YaTeX-cmd-displayline line bnr cf)) -->
+<!--                     ((string-match "evince" previewer) -->
+<!--                      (format "%s '%s.pdf' %d '%s'" -->
+<!--                              "fwdevince" bnr line cf)) -->
+<!--                     ((string-match "sumatra" previewer) -->
+<!--                      (format "%s \"%s.pdf\" -forward-search \"%s\" %d" -->
+<!--                              previewer bnr cf line)) -->
+<!--                     ((string-match "zathura" previewer) -->
+<!--                      (format "%s - -synctex-forward '%d:0:%s' '%s.pdf'" -->
+<!--                              previewer line cf bnr)) -->
+<!--                     ((string-match "qpdfview" previewer) -->
+<!--                      (format "%s '%s.pdf#src:%s:%d:0'" -->
+<!--                              previewer bnr cf line)) -->
+<!--                     ((string-match "okular" previewer) -->
+<!--                      (format "%s '%s.pdf#src:%d %s'" -->
+<!--                              previewer bnr line (expand-file-name cf))) -->
+<!--                     ))) -->
+<!--           (YaTeX-system cmd "jump-line" 'noask pdir)))))) -->
+<!--  -->
+<!-- **C-c C-t j でのコンパイル時に \includeonly の引数の置き換えがうまくできない [#ga957746] -->
+<!--  -->
+<!-- Emacs 26.1 から switch-to-buffer の仕様が変更されたため想定通りの動作をしない．YaTeX 1.80.3 で修正されたので YaTeX を更新する． -->
 
 ## ダウンロード {#g0fb682c}
 
