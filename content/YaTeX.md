@@ -361,55 +361,11 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq dvi2-command "evince")
 (setq tex-pdfview-command "evince")
 (setq dviprint-command-format "wine64 cmd /c start Acrobat.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
-```
 
-```
-(with-eval-after-load 'yatexprc
-  (defun YaTeX-preview-jump-line ()
-    "Call jump-line function of various previewer on current main file"
-    (interactive)
-    (save-excursion
-      (save-restriction
-        (widen)
-        (let*((pf (or YaTeX-parent-file
-                      (save-excursion (YaTeX-visit-main t) (buffer-file-name))))
-              (pdir (file-name-directory pf))
-              (bnr (substring pf 0 (string-match "\\....$" pf)))
-              ;(cf (file-relative-name (buffer-file-name) pdir))
-              (cf (buffer-file-name)) ;2016-01-08
-              (buffer (get-buffer-create " *preview-jump-line*"))
-              (line (count-lines (point-min) (point-end-of-line)))
-              (previewer (YaTeX-preview-default-previewer))
-              (cmd (cond
-                    ((string-match "Skim" previewer)
-                     (format "%s %d '%s.pdf' '%s'"
-                             YaTeX-cmd-displayline line bnr cf))
-                    ((string-match "evince" previewer)
-                     (format "%s '%s.pdf' %d '%s'"
-                             "fwdevince" bnr line cf))
-                    ((string-match "sumatra" previewer)
-                     (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
-                             previewer bnr cf line))
-                    ((string-match "zathura" previewer)
-                     (format "%s --synctex-forward '%d:0:%s' '%s.pdf'"
-                             previewer line cf bnr))
-                    ((string-match "qpdfview" previewer)
-                     (format "%s '%s.pdf#src:%s:%d:0'"
-                             previewer bnr cf line))
-                    ((string-match "okular" previewer)
-                     (format "%s '%s.pdf#src:%d %s'"
-                             previewer bnr line (expand-file-name cf)))
-                    )))
-          (YaTeX-system cmd "jump-line" 'noask pdir))))))
-```
-
-```
 (add-hook 'yatex-mode-hook
           '(lambda ()
              (auto-fill-mode -1)))
-```
 
-```
 ;;
 ;; RefTeX with YaTeX
 ;;
@@ -1115,43 +1071,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "okular --unique")
 (setq tex-pdfview-command "okular --unique")
-(with-eval-after-load 'yatexprc
-  (defun YaTeX-preview-jump-line ()
-    "Call jump-line function of various previewer on current main file"
-    (interactive)
-    (save-excursion
-      (save-restriction
-        (widen)
-        (let*((pf (or YaTeX-parent-file
-                      (save-excursion (YaTeX-visit-main t) (buffer-file-name))))
-              (pdir (file-name-directory pf))
-              (bnr (substring pf 0 (string-match "\\....$" pf)))
-              ;(cf (file-relative-name (buffer-file-name) pdir))
-              (cf (buffer-file-name)) ;2016-01-08
-              (buffer (get-buffer-create " *preview-jump-line*"))
-              (line (count-lines (point-min) (point-end-of-line)))
-              (previewer (YaTeX-preview-default-previewer))
-              (cmd (cond
-                    ((string-match "Skim" previewer)
-                     (format "%s %d '%s.pdf' '%s'"
-                             YaTeX-cmd-displayline line bnr cf))
-                    ((string-match "evince" previewer)
-                     (format "%s '%s.pdf' %d '%s'"
-                             "fwdevince" bnr line cf))
-                    ((string-match "sumatra" previewer)
-                     (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
-                             previewer bnr cf line))
-                    ((string-match "zathura" previewer)
-                     (format "%s --synctex-forward '%d:0:%s' '%s.pdf'"
-                             previewer line cf bnr))
-                    ((string-match "qpdfview" previewer)
-                     (format "%s '%s.pdf#src:%s:%d:0'"
-                             previewer bnr cf line))
-                    ((string-match "okular" previewer)
-                     (format "%s '%s.pdf#src:%d %s'"
-                             previewer bnr line (expand-file-name cf)))
-                    )))
-          (YaTeX-system cmd "jump-line" 'noask pdir))))))
 ```
 
 を設定して C-c C-g を入力すれば Okular で forward seasrch ができます．
