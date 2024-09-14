@@ -237,15 +237,15 @@ Scientific and Technical Information Exchange (STIX) フォントプロジェク
 [newtx](/newtx/) は Michael Sharpe によりメンテナンスされている Times 互換なフォントです。Young U. Ryu による txfonts がもとになっています。newtx, newtxtt, newpx, boondox, fontaxes があります。newpx は Palatino と調和するように設計されています。
 
 <table><tbody>
-<tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newtx.html">newtx の見本</a></td></tr>
-<tr><td>newpx</td><td>Palatino を元にした pxfonts の改良版</td><td><a href="http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/newpx.html">newpx の見本</a></td></tr>
+<tr><td>newtx</td><td>Times を元にした txfonts の改良版</td><td><a href="http://xyoshiki.web.fc2.com/tex/newtx.html">newtx の見本</a></td></tr>
+<tr><td>newpx</td><td>Palatino を元にした pxfonts の改良版</td><td><a href="http://xyoshiki.web.fc2.com/tex/newpx.html">newpx の見本</a></td></tr>
 </tbody></table>
 
 [Mathptmx](/Mathptmx/)：本文，数式をともに Times に変えます。
 
 ### AMS Euler {#db3b09f8}
 
-AMS の委託により Hermann Zapf が作成し、Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/euler.html)）
+AMS の委託により Hermann Zapf が作成し、Knuth が『コンピュータの数学』で用いた手書き風の数式フォントです。結城浩氏の『数学ガール』シリーズに用いられていることでも知られています。（[euler の見本](http://xyoshiki.web.fc2.com/tex/euler.html)）
 
 2008年に大規模な改定が行われたようです。
 
@@ -257,9 +257,9 @@ Computer Modern とはあまりよく調和なかったりと、あわせる本�
 
 その他には、
 
-- [mathabx](/mathabx/)：Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/mathabx.html)）
+- [mathabx](/mathabx/)：Computer Modern の上位互換で，記号類が改変・拡張されています。（[mathabx の見本](http://xyoshiki.web.fc2.com/tex/mathabx.html)）
 - [yhmath](/yhmath/)：通常より大きいものまで含まれた根号や括弧などのフォントです。
-- ceo.sty：安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/ceo.html)）
+- ceo.sty：安田亨氏作。日本の高校教科書や大学受験で一般的な数式書体（CenturyOldStyle）や関連記号が含まれています。（[ceo.sty の見本](http://xyoshiki.web.fc2.com/tex/ceo.html)）
 
 などがあります。商用フォントでは、
 
