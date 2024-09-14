@@ -24,7 +24,7 @@ AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 - [AUCTeX, an integrated TeX/LaTeX environment - 概要 \[Savannah\]](http://savannah.gnu.org/projects/auctex/)
 - [auctex Archives](http://lists.gnu.org/archive/html/auctex/)
-- [CTAN:help/Catalogue/entries/auctex.html](https://mirror.ctan.org/help/Catalogue/entries/auctex.html)
+- [CTAN:support/auctex](https://mirror.ctan.org/support/auctex)
 - [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
 - [http://thread.gmane.org/gmane.emacs.auctex.devel/](http://thread.gmane.org/gmane.emacs.auctex.devel/)
 
