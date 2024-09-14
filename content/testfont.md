@@ -89,7 +89,7 @@ testfont や fntproof では TFM 名を調べる必要がありますが，fontt
 のような「エンコーディング，ファミリー，シリーズ，シェイプ」という指定ができます[^2]．
 ファミリー名のほうがもう少しアクセスしやすいと思われます（美文書にもファミリー名を掲載）．
 
-- [fonttable.sty: LaTeX パッケージ](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/fonttable.html)
+- [fonttable.sty: LaTeX パッケージ](http://xyoshiki.web.fc2.com/tex/fonttable.html)
 - [TeX のフォントの文字一覧表：testfont](http://acetaminophen.hatenablog.com/entry/2015/02/14/004641)
 
 ### 実際に埋め込まれるフォントに関する注意 {#fa18401d}
