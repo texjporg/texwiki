@@ -109,16 +109,16 @@ bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
 
 ### [xcolor](http://www.ukern.de/tex/xcolor.html) {#j904c1e1}
 
-- [CTAN:help/Catalogue/entries/xcolor.html](https://mirror.ctan.org/help/Catalogue/entries/xcolor.html)
+- [CTAN:macros/latex/contrib/xcolor](https://mirror.ctan.org/macros/latex/contrib/xcolor)
 - [All about colors](http://www.math.umbc.edu/~rouben/beamer/quickstart-Z-H-25.html#node_sec_25)
 
-### [extsizes](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/extsizes.html) {#e19a97f8}
+### [extsizes](http://xyoshiki.web.fc2.com/tex/extsizes.html) {#e19a97f8}
 
-- [CTAN:help/Catalogue/entries/extsizes.html](https://mirror.ctan.org/help/Catalogue/entries/extsizes.html)
+- [CTAN:macros/latex/contrib/extsizes](https://mirror.ctan.org/macros/latex/contrib/extsizes)
 
 ### [LaTeX beamerposter](http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php) {#pabd14ab}
 
-- [CTAN:help/Catalogue/entries/beamerposter.html](https://mirror.ctan.org/help/Catalogue/entries/beamerposter.html)
+- [CTAN:macros/latex/contrib/beamerposter](https://mirror.ctan.org/macros/latex/contrib/beamerposter)
 - [Beamer ポスター入門](http://www.ms.u-tokyo.ac.jp/~tado/beamer/poster.html)
 - [LaTeXでポスターを作る](http://d.hatena.ne.jp/hkhn/comment?date=20110303)
 
