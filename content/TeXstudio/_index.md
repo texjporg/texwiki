@@ -25,7 +25,6 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 - [TeXstudio](https://www.texstudio.org/)
 - [GitHub - texstudio-org/texstudio: TeXstudio is a fully featured LaTeX editor. Our goal is to make writing LaTeX documents as easy and comfortable as possible.](https://github.com/texstudio-org/texstudio)
 - [Home · texstudio-org/texstudio Wiki · GitHub](https://github.com/texstudio-org/texstudio/wiki)
-- [https://twitter.com/texstudio](https://twitter.com/texstudio)
 
 ### 動作環境 {#e7cc7bd5}
 
