@@ -78,7 +78,7 @@ LaTeX2e では [hyperref](/hyperref/) パッケージを使うのが標準的な
 
 ### hyperref を上手に呼んで便利な PDF を作る {#ubbc3ac6}
 
-$TEXMF/doc/latex/hyperref/ や [hyperref.sty: TeX パッケージ (熊澤さん)](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/hyperref.html), [qa:33459](https://okumuralab.org/~okumura/texfaq/qa/33459.html) などを参考にして，うまく hyperref を呼ぶことで，手間少なく便利な PDF を作ることができます．
+$TEXMF/doc/latex/hyperref/ や [hyperref.sty: TeX パッケージ (熊澤さん)](http://xyoshiki.web.fc2.com/tex/hyperref.html), [qa:33459](https://okumuralab.org/~okumura/texfaq/qa/33459.html) などを参考にして，うまく hyperref を呼ぶことで，手間少なく便利な PDF を作ることができます．
 
 下にソース例を示しますが，\\@subtitle, \\@belongsto, \advisor@prefix, \\@advisor, \advisor@suffix, \\@keywords は適切に定義されているとします．このとき，注目点は {} の使い方です．
 
