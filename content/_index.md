@@ -63,7 +63,7 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 TeX はテキストデータを処理しますが，TeX そのものにエディタ機能はありません．入力支援や作業効率化などの TeX を使いやすくする機能を備えた統合環境やエディタを利用するとよいでしょう．
 
-- [TeXworks](/TeXworks/)，[TeXShop](/TeXShop/)，[TeXstudio](/TeXstudio/)，[LyX](/LyX/)
+- [TeXworks](/TeXworks/)，[TeXShop](/TeXShop/)，[TeXstudio](/TeXstudio/)，[LyX](/LyX/)，[Visual Studio Code](</Visual Studio Code/>) with [LaTeX Workshop](</Visual Studio Code/LaTeX/>) extension
 - その他：[TeX 用統合環境やエディタ](</TeX用エディタ/>)
     <!-- ここに並べる統合環境は -->
     <!-- 1. TeX ディストリビューションにバンドルされているもの（TeXworks，TeXShop） -->
