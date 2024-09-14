@@ -67,8 +67,9 @@ TeX や LaTeX に関する本の紹介です．
 
 ### 書籍 {#z5fa285b}
 
-[TeX/LaTeX：　文献](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/texbiblio.html) や
-[本棚.org ](http://hondana.org/TeX/) も参照．
+[TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html) や
+[本棚.org ](http://hondana.org/TeX/) や
+[The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
@@ -174,6 +175,10 @@ TeX や LaTeX に関する本の紹介です．
 - 生田 誠三
     『[LaTeX2ε 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
     （朝倉書店，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+
+#### 1994年 {#ifa2fe64}
+
+- 野寺 隆志『[楽々LaTeX 第2版](https://www.kyoritsu-pub.co.jp/book/b10011603.html)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，1994年06月15日，税込価格 &yen;3,190 (本体 &yen;2,900 + 税10%)，[ISBN 978-4-320-02703-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-02703-9)）
 
 ### 書籍 (絶版) {#qa17acad}
 
