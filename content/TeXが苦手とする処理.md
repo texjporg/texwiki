@@ -200,7 +200,7 @@ niceframe パッケージを用いる場合には，このパッケージで使�
 
 - 例 $\sqrt{5} \overline{D}$：  少し長過ぎる上線。平方根にくっついてしまう
 - 例 $\sqrt{5} \bar{D}$： 少し短すぎる上線
-- 工夫の情報：[widebar -- 綺麗な上線](http://www.biwako.shiga-u.ac.jp/sensei/kumazawa/tex/widebar.html)
+- 工夫の情報：[widebar -- 綺麗な上線](http://xyoshiki.web.fc2.com/tex/widebar.html)
 
 #### ボールド体 {#a45a0ccb}
 
