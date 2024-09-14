@@ -215,15 +215,14 @@ William Adams の
 
 【注意】 LaTeX の本ではありません。
 
-- [TeX by Topic](http://www.eijkhout.net/tbt/) (Victor Eijkhout)
-    - [CTAN:info/texbytopic](https://mirror.ctan.org/info/texbytopic)
-        - [CTAN:info/texbytopic/TeXbyTopic.pdf](http://www.ring.gr.jp/pub/text/CTAN/info/texbytopic/TeXbyTopic.pdf)
-- [A Gentle Introduction to TeX](https://mirror.ctan.org/help/Catalogue/entries/gentle.html)
+- [TeX by Topic](https://mirror.ctan.org/info/texbytopic) ([Victor Eijkhout](https://www.eijkhout.net/tex/tex-by-topic.html))
+    - [CTAN:info/texbytopic/TeXbyTopic.pdf](https://mirror.ctan.org/info/texbytopic/TeXbyTopic.pdf)
+- [A Gentle Introduction to TeX](https://mirror.ctan.org/info/gentle)
     (Michael Doob)
-    - [CTAN:info/gentle/gentle.pdf](http://www.ring.gr.jp/pub/text/CTAN/info/gentle/gentle.pdf)
-- [TeX for the Impatient](https://mirror.ctan.org/help/Catalogue/entries/impatient.html)
-    - [CTAN:info/impatient/book.pdf](http://www.ring.gr.jp/pub/text/CTAN/info/impatient/book.pdf)
-- [TeX Reference Manual](http://webpages.charter.net/davidlha/texrm.html)
+    - [CTAN:info/gentle/gentle.pdf](https://mirror.ctan.org/info/gentle/gentle.pdf)
+- [TeX for the Impatient](https://mirror.ctan.org/info/impatient)
+    - [CTAN:info/impatient/book.pdf](https://mirror.ctan.org/info/impatient/book.pdf)
+- [TeX Reference Manual](https://web.archive.org/web/20150719225312/http://webpages.charter.net/davidlha/texrm.html)
     (David Bausum)
 
 ### 書籍 {#i9f92f07}
