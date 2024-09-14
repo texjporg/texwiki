@@ -32,7 +32,7 @@ texlive-dummy をインストールすると TeX Live/Arch Linux に依存する
 yay -S texlive-dummy
 ```
 
-AUR の texlive-dummy は削除されました．--&gt; [http://mao.5ch.net/test/read.cgi/linux/1506160955/911-913](http://mao.5ch.net/test/read.cgi/linux/1506160955/911-913)
+AUR の texlive-dummy は削除されました．--&gt; [https://mao.5ch.net/test/read.cgi/linux/1506160955/911-913](https://mao.5ch.net/test/read.cgi/linux/1506160955/911-913)
 
 AUR の texlive-dummy は [https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.gz](https://aur.archlinux.org/cgit/aur.git/snapshot/texlive-dummy.tar.gz) からダウンロードできるようです．
 
@@ -78,7 +78,7 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget http://www.tug.org/texlive/files/debian-equivs-2023-ex.txt
+wget https://www.tug.org/texlive/files/debian-equivs-2023-ex.txt
 equivs-build debian-equivs-2023-ex.txt
 sudo dpkg -i texlive-local_2023.99999999-1_all.deb
 ```
@@ -92,7 +92,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
-sudo dnf install http://mirrors.ctan.org/support/texlive/texlive-dummy/Fedora/texlive-dummy-2022-1.fc36.noarch.rpm
+sudo dnf install https://mirrors.ctan.org/support/texlive/texlive-dummy/Fedora/texlive-dummy-2022-1.fc36.noarch.rpm
 ```
 
 ### [openSUSE](/Linux/openSUSE/) <a id="opensuse"></a> {#y33add76}
@@ -106,7 +106,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/TeX Live for SUSE Linux に依存するパッケージが TeX Live/TeX Live for SUSE Linux をインストールするのを防止できます．
 
 ```
-sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2024.9999-1.noarch.rpm
+sudo zypper install https://mirrors.ctan.org/support/texlive/texlive-dummy/openSUSE/texlive-dummy-2024.9999-1.noarch.rpm
 ```
 
 ### Red Hat Enterprise Linux (RHEL) {#xcb6b24c}
@@ -115,7 +115,7 @@ sudo zypper install http://mirrors.ctan.org/support/texlive/texlive-dummy/openSU
     - [https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8](https://ctan.org/tex-archive/support/texlive/texlive-dummy/EnterpriseLinux-8)
 
 ```
-sudo yum install http://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-8/texlive-dummy-2020-4.el8.noarch.rpm
+sudo yum install https://mirrors.ctan.org/support/texlive/texlive-dummy/EnterpriseLinux-8/texlive-dummy-2020-4.el8.noarch.rpm
 ```
 
 ### Gentoo Linux <a id="gentoolinux"></a> {#i10c1e71}
