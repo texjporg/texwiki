@@ -140,7 +140,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2008年 {#qb443317}
 
 - 吉永 徹美『[独習 LaTeX2ε](http://www.shoeisha.co.jp/book/detail/9784798115368)』
-    （[翔泳社](http://www.shoeisha.co.jp/)，2008年3月，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
+    （[翔泳社](http://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
     <!-- 「ただし，」以下の文章は，どの本についても言えることなので要らないと思います． -->
     <!-- - - 少なくとも「美文書」は違います。ただこの本に特筆すべきでない気もします。 -->
