@@ -166,7 +166,7 @@ W32TeX を利用するうえで，追加インストールしておくと便利�
 
 W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存しています（[latexmk](/Latexmk/) や [pdfcrop](/pdfcrop/) など）．
 余裕があればインストールをしておくとよいでしょう（TeX インストーラ 3 を利用した場合も，Perl は自動インストールの対象ではありません）．
-[Strawberry Perl の公式サイト](http://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
+[Strawberry Perl の公式サイト](https://strawberryperl.com/) からインストーラをダウンロードし，指示に従えばインストールが完了します．
 
 ### SumatraPDF {#g6688c53}
 
@@ -315,11 +315,10 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 
 - [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
 - [「W32TeX に TeX Live を移植するプロジェクト」(「W32TeX_p」)](https://rivernizi.shinobiashi.com/PC/TeX/way_W32TeX_install.html)
-- [CTAN: Package w32tex](https://ctan.org/pkg/w32tex)
-- [CTAN: /tex-archive/systems/win32/w32tex](https://ctan.org/tex-archive/systems/win32/w32tex)
+- [https://ctan.org/pkg/w32tex](https://ctan.org/pkg/w32tex)
+- [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
 - [W32TeXとは - はてなキーワード](http://d.hatena.ne.jp/keyword/W32TeX)
-- [「W32TeX」を含むブログ - はてなキーワード](http://k.hatena.ne.jp/keywordblog/W32TeX)
 
 ## W32TeX の詳細情報 {#icae16ae}
 
