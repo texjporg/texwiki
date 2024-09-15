@@ -82,16 +82,16 @@ pythontex を実行したときに
 
 ```
 Traceback (most recent call last):
-  File "c:/w32tex/share/texmf-dist/scripts/pythontex/pythontex.py", line 55, in
-<module>
+  File "c:\texlive\2024\texmf-dist\scripts\pythontex\pythontex.py", line 55, in <module>
     import pythontex3 as pythontex
-  File "c:\w32tex\share\texmf-dist\scripts\pythontex\pythontex3.py", line 61, in
- <module>
+  File "c:\texlive\2024\texmf-dist\scripts\pythontex\pythontex3.py", line 61, in <module>
     from pygments.styles import get_all_styles
-ImportError: No module named 'pygments'
+ModuleNotFoundError: No module named 'pygments'
+C:\texlive\2024\bin\windows\runscript.tlu:921: command failed with exit code 1:
+python.exe c:\texlive\2024\texmf-dist\scripts\pythontex\pythontex.py
 ```
 
-のように ImportError: No module named 'pygments' のエラーが発生する場合は pygments がインストールされていません．[インストール](/PythonTeX/#o64ddf5b)を参照して下さい．
+のように ModuleNotFoundError: No module named 'pygments' のエラーが発生する場合は pygments がインストールされていません．[インストール](/PythonTeX/#o64ddf5b)を参照して下さい．
 
 ### 関連リンク {#e0f26668}
 
