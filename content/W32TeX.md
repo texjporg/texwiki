@@ -7,7 +7,7 @@ pukiwiki: "W32TeX"
 
 # W32TeX
 
-## [W32TeX](http://w32tex.org/index-ja.html)（配布終了）→ [TeX Live](</TeX Live/>) に移行してください {#ba560630}
+## W32TeX（配布終了）→ [TeX Live](</TeX Live/>) に移行してください {#ba560630}
 
 <strong>配布が終了しました．以下は古い情報です．</strong>
 
@@ -19,13 +19,13 @@ W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>
 
 ## インストール {#ib4afbe8}
 
-インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，Windows PowerShell あるいはコマンド プロンプトで「簡易インストーラ」を動かす方法があります．
+インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，ターミナルで「簡易インストーラ」を動かす方法があります．
 以下で，それぞれの方法を説明します．
 初めての方は TeX インストーラ 3 を使う方をおすすめします．
 
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
-W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](http://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
+W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](https://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
 これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，[TeXworks](/TeXworks/)）を自動でインストールし，設定まで済ませてくれます．
 基本的にはインストーラを取得後，展開し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
@@ -38,9 +38,9 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 以下のサイトには，スクリーンショット付の詳細な解説があります．
 
-- [TeXのインストール方法　Windows 64bit　インストーラ3](http://www.mathtext.info/blog/2018/04/20/tex%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95/)
-- [簡単LaTeXインストールWindows編（2016年4月版）](http://did2memo.net/2016/04/24/easy-latex-install-windows-10-2016-04/)
-- [Windows への TeX インストール（簡単 W32TeX・前編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/142557)，[（簡単 W32TeX・後編）](http://acetaminophen.hatenablog.com/entry/2015/05/16/212810)，[（W32TeX・発展編）](http://acetaminophen.hatenablog.com/entry/2015/05/17/001048)
+- [TeXのインストール方法　Windows 64bit　インストーラ3](https://www.mathtext.info/blog/2018/04/20/tex%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%96%B9%E6%B3%95/)
+- [簡単LaTeXインストールWindows編（2016年4月版）](https://did2memo.net/2016/04/24/easy-latex-install-windows-10-2016-04/)
+- [Windows への TeX インストール（簡単 W32TeX・前編）](https://acetaminophen.hatenablog.com/entry/2015/05/16/142557)，[（簡単 W32TeX・後編）](https://acetaminophen.hatenablog.com/entry/2015/05/16/212810)，[（W32TeX・発展編）](https://acetaminophen.hatenablog.com/entry/2015/05/17/001048)
 
 #### トラブルシューティング {#t3a0d8db}
 
@@ -66,7 +66,7 @@ W32TeX 自身が簡易インストーラを提供しています．
 
 #### ダウンロードサイト {#y2ec963e}
 
-W32TeX の最新版は，[ミラーサイト](/W32TeX/#mirror)からダウンロード可能です．
+W32TeX は，[ミラーサイト](/W32TeX/#mirror)からダウンロード可能です．
 
 #### 注意点 {#s760b9ef}
 
@@ -90,22 +90,22 @@ W32TeX には，フルインストール / 標準インストール / 最小イ�
 
 構成によりダウンロードするファイルが変わります．
 [ダウンロードファイルの一覧](/W32TeX/#filelist)を参考に，適当なフォルダにダウンロードしてください．
-ここでは C:\w32tex\download にダウンロードしたとしておきます（日本語や空白の入っているフォルダはトラブルを引き起こす可能性がありますので，避けてください）．
+ここでは C:\w32tex\download にダウンロードしたとしておきます．日本語や空白の入っているフォルダはトラブルを引き起こす可能性がありますので，避けてください．
 
 ファイルによっては 64-bit バイナリが存在します．
 ただし，対応する 32-bit ファイルもダウンロードが必要です．
 
 #### 簡易インストーラの実行 {#wa3b57f2}
 
-[texinstwin.zip](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/texinstwin.zip) を展開してください．
+[texinstwin.zip](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/texinstwin.zip) を展開してください．
 展開した場所がインストールフォルダとなります．
 以下では，C:\w32tex 内に展開されたとします．
 
-Windows PowerShell またはコマンド プロンプトを起動し，C:\w32tex に移動後，texinstwin.exe を実行してください．（C:\w32tex\download は上記ファイルが保存されている場所です．）
+ターミナルを起動し，C:\w32tex に移動後，texinstwin.exe を実行してください．C:\w32tex\download はダウンロードファイルが保存されている場所です．
 
 ```
 C:\Users>cd C:\w32tex
-C:\w32tex>texinstwin C:\w32tex\download
+C:\w32tex>.\texinstwin C:\w32tex\download
 ```
 
 ファイルが展開されたら終了です．
@@ -123,16 +123,16 @@ to user's PATH in the control panel.
 #### 環境変数 Path の設定 {#g0475486}
 
 W32TeX は環境変数 Path を設定する必要があります．
-上で表示されたメッセージに従い，環境変数 Path に C:\w32tex\bin を追加します（64-bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します）．
+上で表示されたメッセージに従い，環境変数 Path に C:\w32tex\bin を追加します．64-bit をもちいる場合は，更に C:\w32tex\bin64 を C:\w32tex\bin32 の<strong>前に</strong>追加します．
 方法の詳細は[環境変数の設定（基礎知識）](</Microsoft Windows/基礎知識/#environment-variables>)を参照してください．
 
-自分だけが W32TeX を使いたい場合は，ユーザー環境変数 Path を編集します（なければ新規作成ししてください）．
+自分だけが W32TeX を使いたい場合は，ユーザー環境変数 Path を編集します．環境変数 Path がなければ新規作成してください．
 自分だけではなくユーザー全員に W32TeX を使わせたい場合は，管理者権限でシステム環境変数 Path に追加します．
 
-- 32-bit バイナリを使用する場合は Path の値の最後に “;C:\w32tex\bin” を追加し，\[OK\] を押します．
 - 64-bit バイナリを使用する場合は Path の値の最後に “;C:\w32tex\bin64;C:\w32tex\bin” を追加し，\[OK\] を押します．
+- 32-bit バイナリを使用する場合は Path の値の最後に “;C:\w32tex\bin” を追加し，\[OK\] を押します．
 
-追加したら，Windows PowerShell やコマンド プロンプトあるいは TeX 関連のソフトウェアを起動している場合は，いったん閉じてもう一度開きます．
+追加したら，ターミナルあるいは TeX 関連のソフトウェアを起動している場合は，いったん閉じてもう一度開きます．
 こうすることで，環境変数の変更が反映されます．
 
 #### 以前に TeX をインストールしたことがある場合 {#z02ac16d}
@@ -176,8 +176,7 @@ TeXworks などの PDF ビューア付きの統合環境を利用する場合は
 
 ## アップデート {#o482d037}
 
-W32TeX は常に新しいバイナリ・パッケージが提供され続けていますので，ときどき更新するとよいでしょう．
-アップデートもインストールと同様の手順で可能です．
+W32TeX のアップデートはインストールと同様の手順で可能です．
 
 ［古い W32TeX からアップデートする場合の参考］
 2013 年 4 月 7 日以前の W32TeX からアップデートする場合は，share/texmf というディレクトリが share/texmf-dist に変更されたことに注意してください（一度 share/texmf をディレクトリごと削除してからアップデートするとよいでしょう）．[古い情報](</古い情報/#c4916968>)も参照してください．
@@ -190,7 +189,7 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 ### 直接アップデート {#r88b7452}
 
 アップデートされたファイルをダウンロードし，texinstwin.exe をもちいてインストールと同様の操作を行うことで，古いファイルが上書きされてアップデートされます．
-ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](http://w32tex.org/ChangeLog) を参照してください．
+ただし，古いファイルを手動で消さなければならないことがありますので，[ChangeLog](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog) を参照してください．
 
 ## 注意点 {#maff36c0}
 
@@ -313,44 +312,111 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 
 ## 関連リンク {#b5892c8c}
 
-- [USBメモリ活用講座【実践編・W32TeXポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
+- [forumSearch:W32TeX](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=W32TeX)
+- [USBメモリ活用講座【実践編・W32TeXポータブル化】](https://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
 - [「W32TeX に TeX Live を移植するプロジェクト」(「W32TeX_p」)](https://rivernizi.shinobiashi.com/PC/TeX/way_W32TeX_install.html)
 - [https://ctan.org/pkg/w32tex](https://ctan.org/pkg/w32tex)
 - [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
-- [W32TeXとは - はてなキーワード](http://d.hatena.ne.jp/keyword/W32TeX)
+- [W32TeXとは - はてなキーワード](https://d.hatena.ne.jp/keyword/W32TeX)
 
 ## W32TeX の詳細情報 {#icae16ae}
 
-### W32TeX 最新版ミラーサイト {#mirror}
+### W32TeX ミラーサイト {#mirror}
+
+<strong>HTTPS</strong>
+
+- [JAIST 北陸先端科学技術大学院大学](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
+- [山形大学](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
+- [KDDI総合研究所](https://ftp.ne.jp/CTAN/systems/win32/w32tex/)
+- [理化学研究所](https://ftp.riken.jp/CTAN/systems/win32/w32tex/)
+- [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/ctan/systems/win32/w32tex/)
 
 <strong>HTTP</strong>
 
-- [JAIST 北陸先端科学技術大学院大学](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [理化学研究所](http://ftp.riken.jp/CTAN/systems/win32/w32tex/)
-- [KDDI総合研究所](http://ftp.ne.jp/CTAN/systems/win32/w32tex/)
-- [山形大学](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-    <!-- -[[ctan.ijs.si (スロベニア):http://ctan.ijs.si/mirror/w32tex/current/]] -->
-
+- [NAIST 奈良先端科学技術大学院大学](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
 - [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
-### <del>過去のバージョンの W32TeX</del> {#mirror-old}
+### 過去のバージョンの W32TeX {#mirror-old}
+
+何らかの理由で過去のバージョンが欲しい場合は，KTUG に
+W32TeX \[2013/12/24\] と W32TeX \[2008/03/18\] が保存されています。
+（参照：[古い TeX をインストールする (W32TeX, TeX Live)](https://acetaminophen.hatenablog.com/entry/2016/05/18/221948)）
+
+- [W32TeX \[2013/12/24\]](http://ftp.ktug.org/obsolete/TeX/ptex-win32/current/)
+- [W32TeX \[2008/03/18\]](http://ftp.ktug.org/obsolete/w32tex/win32/current/)
 
 <!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
 
-<del>何らかの理由で過去のバージョンが欲しい場合は，[兼宗さん](https://twitter.com/kanemune)が以下で提供してくださっています：</del>
-
-<del>-[eplang.jp/w32tex/archive/](http://eplang.jp/w32tex/archive/)</del>
+<!-- %%何らかの理由で過去のバージョンが欲しい場合は，[[兼宗さん:https://x.com/kanemune]]が以下で提供してくださっています：%% -->
+<!-- %%-[[eplang.jp/w32tex/archive/:http://eplang.jp/w32tex/archive/]]%% -->
 
 ### 過去の W32TeX の仕様変更 {#changelog-old}
 
-[古い情報](</古い情報/#w32tex-changelog-old>) を参照してください．
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog)
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.4](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.4)
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.3](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.3)
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.2](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.2)
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.1](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.1)
+- [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.0](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ChangeLog.0)
+
+を参照。
+
+- \[2013/04/08\]
+    - 4月8日付の W32TeX から share/texmf なるディレクトリ名が share/texmf-dist に変更されています。これは，TeX Live 2013 で texmf と texmf-dist が texmf-dist に統一されたことにあわせたものです。
+- \[2012/08/21\]
+    - 2012/08/20 までの dvipdfmx, xdvipdfmx は SEAC bug が存在するので 2012/08/21 以降の W32TeX にしてください。
+- \[2011/12/24\]
+    - upovf2ovp.exe と upovp2ovf.exe は無くなりました。更新された wovf2ovp.exe と wovp2ovf.exe が upTeX もサポートするようになっています。
+- \[2011/11/23\]
+    - updvi2tty.exe は無くなりました。更新された dvi2tty.exe が upTeX の dvi もサポートするようになっています。
+- \[2011/11/06\]
+    - updvipdfmx が無くなりました。(e-)upTeX でも dvipdfmx を使うようにしてください。hyperref でしおりを作成する場合は
+
+        ```
+        \AtBeginShipoutFirst{\special{pdf:tounicode UTF8-UTF16}}
+        ```
+
+        が必要になりました。PXjahyper パッケージ を使用しても OK です。詳細は[しおり（bookmark）つきのpdf文書作成](/hyperref/#fe7cad10)を参照してください。
+
+- \[2011/10/22\]
+    - euplatex が無くなりました。uplatex は uptex ではなくて euptex の上で動くようになりました。
+- \[2011/05/25\]
+    - eplatex が無くなりました。platex は ptex ではなくて eptex の上で動くようになりました。
+- \[2011/03/21\]
+    - ptex 関係において [ptexenc](https://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA) を用いて自動判別するようになりました。デフォルトで自動判別します。自動判別せずに手動で直接文字コードを指定する場合は
+
+        ```
+        platex -no-guess-input-enc -kanji=utf8 hoge.tex
+        euplatex -no-guess-input-enc -kanji=utf8 hoge.tex
+        ```
+
+        のように指定します。
+
+- \[2011/03/06\]
+    - ptex 関係において nkf を用いて自動判別する機能が追加されました。デフォルトで自動判別します。
+- \[2010/08/14\]
+    - pmpost.exe は pmetapost.exe に変更されました。 → 2011/12/23 に pmetapost.exe は元の名前 pmpost.exe に戻されました。
+    - upmpost.exe は upmetapost.exe に変更されました。 → 2011/12/23 に upmetapost.exe は元の名前 upmpost.exe に戻されました。
+- \[2010/05/06\]
+    - dvipsk.exe は dvips.exe に統合されました。
+- \[2009/07/20\]
+    - jbibtex.exe は pbibtex.exe に変更されました。([qa:53349](https://okumuralab.org/~okumura/texfaq/qa/53349.html))（2010/04/29 以降のものを使用してください → pbibtexの異常終了 ([forum:442](https://okumuralab.org/tex/mod/forum/discuss.php?d=442))）
+    - upjbibtex.exe は upbibtex.exe に変更されました。
+    - jmpost.exe は pmpost.exe に変更されました。
+    - upjmpost.exe は upmpost.exe に変更されました。
+- \[2007/08/01\]
+    - 7月31日付の W32TeX から $TEXMF/ptex/ ディレクトリが無くなったので pLaTeX のスタイルファイルは $TEXMFLOCAL/tex/platex/ 下のフォルダ（ディレクトリ）に移動するか，新規に入れると良いでしょう。
+- \[2004/05/10\]
+    - バージョンが 7.5.3 になって fmt ファイルの置き場所が変わったようです。上書きインストールする場合は $TEXMF/web2c// フォルダ（ディレクトリ）以下を削除してから行ってください。
+- \[2004/02/11\]
+    - 新しい [TDS](</TeX のディレクトリ構成/>) (<strong>T</strong>eX <strong>D</strong>irectory <strong>S</strong>tructure) に準拠した W32TeX がそろそろミラーサイトに出始めているようです。ディレクトリ構造が変わっていますので，古い $TEXMF/ を削除あるいは名前変更してからインストールしてください。
 
 ### W32TeX のダウンロードファイルの一覧 {#filelist}
 
-以下のリンクは [http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/) へのものですが，状況によって上記のミラーサイトを用いてください．
+以下のリンクは [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/) へのものですが，状況によって上記のミラーサイトを用いてください．
 
 なお，頻繁に更新されていますのでバージョン番号は下と異なるかもしれません．
 ファイルによっては 64-bit バイナリが存在します．
@@ -362,81 +428,81 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 </thead>
 <tbody>
 <tr><td colspan="3" style="text-align:left"><strong>最小インストール</strong></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/latex.tar.xz">latex.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/mftools-w64.tar.xz">mftools-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/mftools.tar.xz">mftools.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/platex.tar.xz">platex.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pdftex-w64.tar.xz">pdftex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pdftex-w32.tar.xz">pdftex-w32.tar.xz</a></td><td>必須アーカイブ．TeX → PDF 変換ツール (<a href="/pdfTeX/">pdfTeX</a>)</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-w64.tar.xz">ptex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-w32.tar.xz">ptex-w32.tar.xz</a></td><td>必須アーカイブ．<a href="/jlreq/">jlreq</a> など</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/web2c-lib.tar.xz">web2c-lib.tar.xz</a></td><td>必須アーカイブ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/web2c-w64.tar.xz">web2c-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/web2c-w32.tar.xz">web2c-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/latex.tar.xz">latex.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/mftools-w64.tar.xz">mftools-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/mftools.tar.xz">mftools.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/platex.tar.xz">platex.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pdftex-w64.tar.xz">pdftex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pdftex-w32.tar.xz">pdftex-w32.tar.xz</a></td><td>必須アーカイブ．TeX → PDF 変換ツール (<a href="/pdfTeX/">pdfTeX</a>)</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-w64.tar.xz">ptex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-w32.tar.xz">ptex-w32.tar.xz</a></td><td>必須アーカイブ．<a href="/jlreq/">jlreq</a> など</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/web2c-lib.tar.xz">web2c-lib.tar.xz</a></td><td>必須アーカイブ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/web2c-w64.tar.xz">web2c-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/web2c-w32.tar.xz">web2c-w32.tar.xz</a></td><td>必須アーカイブ</td></tr>
 <tr><td colspan="3" style="text-align:left"><strong>標準インストール（最小インストールに加えて）</strong></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/datetime2.tar.xz">datetime2.tar.xz</a></td><td>datetime2 パッケージ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvipdfm-w64.tar.xz">dvipdfm-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvipdfm-w32.tar.xz">dvipdfm-w32.tar.xz</a></td><td>DVI → <a href="/PDF/">PDF</a> 変換ツール (<a href="/dvipdfmx/">dvipdfmx</a>)</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvipsk-w64.tar.xz">dvipsk-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvipsk-w32.tar.xz">dvipsk-w32.tar.xz</a></td><td>DVI → <a href="/PostScript/">PostScript</a> 変換ツール (<a href="/dvips/">dvips</a>)</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/jtex-w64.tar.xz">jtex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/jtex-w32.tar.xz">jtex-w32.tar.xz</a></td><td>NTT JTeX<br>TeX Live には収録されていません．</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ltxpkgdocs.tar.xz">ltxpkgdocs.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/latex.html">LaTeX</a>2e の基本パッケージ集のドキュメント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ltxpkgs.tar.xz">ltxpkgs.tar.xz</a></td><td><a href="https://mirror.ctan.org/help/Catalogue/entries/latex.html">LaTeX</a>2e の基本パッケージ集</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luatexja.tar.xz">luatexja.tar.xz</a></td><td><a href="/LuaTeX-ja/">LuaTeX-ja</a></td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/luatex-w64.tar.xz">luatex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luatex-w32.tar.xz">luatex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/LuaTeX/">LuaTeX</a>)</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/makeindex-w64.tar.xz">makeindex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/makeindex-w32.tar.xz">makeindex-w32.tar.xz</a></td><td><a href="/索引作成/">索引作成</a>ツール (makeindex, mendex)</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/manual.tar.xz">manual.tar.xz</a></td><td>マニュアル類……質問する前に読みましょう</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/newtxpx-boondoxfonts.tar.xz">newtxpx-boondoxfonts.tar.xz</a></td><td><a href="/newtx/">newtx</a>, newpx, boondox フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pgfcontrib.tar.xz">pgfcontrib.tar.xz</a></td><td><a href="/TikZ/">pgf-tikz</a> contributions</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/t1fonts.tar.xz">t1fonts.tar.xz</a></td><td>Type 1 フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tex-gyre.tar.xz">tex-gyre.tar.xz</a></td><td><a href="/TeX Gyre/">TeX Gyre</a> フォントと TeX Gyre Math フォント</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/timesnew.tar.xz">timesnew.tar.xz</a></td><td>Times New Roman, Arial を使用するためのパッケージ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ttf2pk-w64.tar.xz">ttf2pk-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ttf2pk-w32.tar.xz">ttf2pk-w32.tar.xz</a></td><td>TrueType → PK 変換ツール</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/txpx-pazofonts.tar.xz">txpx-pazofonts.tar.xz</a></td><td><a href="/newtx/#uba8f4cc">TX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/pxfonts.html">PX</a>/<a href="https://mirror.ctan.org/help/Catalogue/entries/mathpazo.html">Pazo</a> フォント</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
-<tr><td>なし</td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ (<a href="/索引作成/">索引作成</a>ツール xindy)</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/Xy-pic/">Xy-pic</a> パッケージ: 可換図などを描くのに便利</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/datetime2.tar.xz">datetime2.tar.xz</a></td><td>datetime2 パッケージ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvipdfm-w64.tar.xz">dvipdfm-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvipdfm-w32.tar.xz">dvipdfm-w32.tar.xz</a></td><td>DVI → <a href="/PDF/">PDF</a> 変換ツール (<a href="/dvipdfmx/">dvipdfmx</a>)</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvipsk-w64.tar.xz">dvipsk-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvipsk-w32.tar.xz">dvipsk-w32.tar.xz</a></td><td>DVI → <a href="/PostScript/">PostScript</a> 変換ツール (<a href="/dvips/">dvips</a>)</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/jtex-w64.tar.xz">jtex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/jtex-w32.tar.xz">jtex-w32.tar.xz</a></td><td>NTT JTeX<br>TeX Live には収録されていません．</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ltxpkgdocs.tar.xz">ltxpkgdocs.tar.xz</a></td><td><a href="https://mirror.ctan.org/macros/latex/base">LaTeX</a>2e の基本パッケージ集のドキュメント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ltxpkgs.tar.xz">ltxpkgs.tar.xz</a></td><td><a href="https://mirror.ctan.org/macros/latex/base">LaTeX</a>2e の基本パッケージ集</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luatexja.tar.xz">luatexja.tar.xz</a></td><td><a href="/LuaTeX-ja/">LuaTeX-ja</a></td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/luatex-w64.tar.xz">luatex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luatex-w32.tar.xz">luatex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/LuaTeX/">LuaTeX</a>)</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/makeindex-w64.tar.xz">makeindex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/makeindex-w32.tar.xz">makeindex-w32.tar.xz</a></td><td><a href="/索引作成/">索引作成</a>ツール (makeindex, mendex)</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/manual.tar.xz">manual.tar.xz</a></td><td>マニュアル類……質問する前に読みましょう</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/newtxpx-boondoxfonts.tar.xz">newtxpx-boondoxfonts.tar.xz</a></td><td><a href="/newtx/">newtx</a>, newpx, boondox フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pgfcontrib.tar.xz">pgfcontrib.tar.xz</a></td><td><a href="/TikZ/">pgf-tikz</a> contributions</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/t1fonts.tar.xz">t1fonts.tar.xz</a></td><td>Type 1 フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tex-gyre.tar.xz">tex-gyre.tar.xz</a></td><td><a href="/TeX Gyre/">TeX Gyre</a> フォントと TeX Gyre Math フォント</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/timesnew.tar.xz">timesnew.tar.xz</a></td><td>Times New Roman, Arial を使用するためのパッケージ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ttf2pk-w64.tar.xz">ttf2pk-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ttf2pk-w32.tar.xz">ttf2pk-w32.tar.xz</a></td><td>TrueType → PK 変換ツール</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/txpx-pazofonts.tar.xz">txpx-pazofonts.tar.xz</a></td><td><a href="https://mirror.ctan.org/fonts/txfonts">TX</a>/<a href="https://mirror.ctan.org/fonts/pxfonts">PX</a>/<a href="https://mirror.ctan.org/fonts/mathpazo">Pazo</a> フォント</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/xetex-w64.tar.xz">xetex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xetex-w32.tar.xz">xetex-w32.tar.xz</a></td><td>TeX → PDF 変換ツール (<a href="/XeTeX/">XeTeX</a>)</td></tr>
+<tr><td>なし</td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xindy-w32.tar.xz">xindy-w32.tar.xz</a></td><td>Index プロセッサ (<a href="/索引作成/">索引作成</a>ツール xindy)</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xypic.tar.xz">xypic.tar.xz</a></td><td><a href="/Xy-pic/">Xy-pic</a> パッケージ: 可換図などを描くのに便利</td></tr>
 <tr><td colspan="3" style="text-align:left"><strong>フルインストール（標準インストールに加えて）</strong></td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/aleph-w64.tar.xz">aleph-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/aleph-w32.tar.xz">aleph-w32.tar.xz</a></td><td>Aleph</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/biblatex-biber-w64.tar.xz">biblatex-biber-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td><a href="/文献引用/">文献引用</a>ツール (biblatex, biber)</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cbfonts.tar.xz">cbfonts.tar.xz</a></td><td>cbgreek font</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cjkzr.tar.xz">cjkzr.tar.xz</a></td><td><a href="/LaTeX-CJK/">LaTeX-CJK</a></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/context-doc.tar.xz">context-doc.tar.xz</a></td><td>ConTeXt のドキュメント</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/context-w64.tar.xz">context-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/context.tar.xz">context.tar.xz</a></td><td><a href="/ConTeXt/">ConTeXt</a></td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/cweb-w64.tar.xz">cweb-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cweb-w32.tar.xz">cweb-w32.tar.xz</a></td><td>CWEB</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2ps-w64.tar.xz">dvi2ps-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2ps-w32.tar.xz">dvi2ps-w32.tar.xz</a></td><td>DVI to PS driver</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2tty-w64.tar.xz">dvi2tty-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2tty-w32.tar.xz">dvi2tty-w32.tar.xz</a></td><td>DVI to TTY driver</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvitools-w64.tar.xz">dvitools-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvitools-w32.tar.xz">dvitools-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/extractpdfmark-w64.tar.xz">extractpdfmark-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/extractpdfmark-w32.tar.xz">extractpdfmark-w32.tar.xz</a></td><td>extractpdfmark</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/gregorio-w64.tar.xz">gregorio-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/gregorio-w32.tar.xz">gregorio-w32.tar.xz</a></td><td>Gregorio</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/harftex-w64.tar.xz">harftex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/harftex-w32.tar.xz">harftex-w32.tar.xz</a></td><td>HarfTeX<br>TeX Live には収録されていません．</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td><a href="/LuajitTeX/">LuajitTeX</a></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/minitoc.tar.xz">minitoc.tar.xz</a></td><td>minitoc パッケージ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for <a href="/楽譜/#l0a501fd">MusiXTeX</a></td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td><a href="/pstoedit/">pstoedit</a></td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a><br>TeX Live には収録されていません．tltexjp から入手することはできます．</td></tr>
-<tr><td>なし</td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a><br>TeX Live には収録されていません．</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/tex4ht-w64.tar.xz">tex4ht-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tex4ht-w32.tar.xz">tex4ht-w32.tar.xz</a></td><td>TeX4ht</td></tr>
-<tr><td>なし</td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/texinfotools-w32.tar.xz">texinfotools-w32.tar.xz</a></td><td>TeXinfo tools（日本語サポートつき）</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/tiff2png-w64.tar.xz">tiff2png-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tiff2png-w32.tar.xz">tiff2png-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ttf2pt1-w64.tar.xz">ttf2pt1-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ttf2pt1-w32.tar.xz">ttf2pt1-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ums.tar.xz">ums.tar.xz</a></td><td>ums パッケージ</td></tr>
-<tr><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/aleph-w64.tar.xz">aleph-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/aleph-w32.tar.xz">aleph-w32.tar.xz</a></td><td>Aleph</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/biblatex-biber-w64.tar.xz">biblatex-biber-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/biblatex-biber.tar.xz">biblatex-biber.tar.xz</a></td><td><a href="/文献引用/">文献引用</a>ツール (biblatex, biber)</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cbfonts.tar.xz">cbfonts.tar.xz</a></td><td>cbgreek font</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cjkzr.tar.xz">cjkzr.tar.xz</a></td><td><a href="/LaTeX-CJK/">LaTeX-CJK</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/context-doc.tar.xz">context-doc.tar.xz</a></td><td>ConTeXt のドキュメント</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/context-w64.tar.xz">context-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/context.tar.xz">context.tar.xz</a></td><td><a href="/ConTeXt/">ConTeXt</a></td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/cweb-w64.tar.xz">cweb-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/cweb-w32.tar.xz">cweb-w32.tar.xz</a></td><td>CWEB</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2ps-w64.tar.xz">dvi2ps-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2ps-w32.tar.xz">dvi2ps-w32.tar.xz</a></td><td>DVI to PS driver</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvi2tty-w64.tar.xz">dvi2tty-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvi2tty-w32.tar.xz">dvi2tty-w32.tar.xz</a></td><td>DVI to TTY driver</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/dvitools-w64.tar.xz">dvitools-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/dvitools-w32.tar.xz">dvitools-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/extractpdfmark-w64.tar.xz">extractpdfmark-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/extractpdfmark-w32.tar.xz">extractpdfmark-w32.tar.xz</a></td><td>extractpdfmark</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/gregorio-w64.tar.xz">gregorio-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/gregorio-w32.tar.xz">gregorio-w32.tar.xz</a></td><td>Gregorio</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/harftex-w64.tar.xz">harftex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/harftex-w32.tar.xz">harftex-w32.tar.xz</a></td><td>HarfTeX<br>TeX Live には収録されていません．</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/lcdf-typetools-w64.tar.xz">lcdf-typetools-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/lcdf-typetools-w32.tar.xz">lcdf-typetools-w32.tar.xz</a></td><td>LCDF Typetools</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/luajittex-w64.tar.xz">luajittex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/luajittex-w32.tar.xz">luajittex-w32.tar.xz</a></td><td><a href="/LuajitTeX/">LuajitTeX</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/minitoc.tar.xz">minitoc.tar.xz</a></td><td>minitoc パッケージ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/m-tx-w64.tar.xz">m-tx-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/m-tx-w32.tar.xz">m-tx-w32.tar.xz</a></td><td>M-Tx</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/omegaj-w64.tar.xz">omegaj-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/omegaj-w32.tar.xz">omegaj-w32.tar.xz</a></td><td>日本語サポートつき Omega</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/otfbeta.tar.xz">otfbeta.tar.xz</a></td><td><a href="/OTF/">OTF</a> パッケージ［ベータ版］<br>otf パッケージを入れておくと，日本語文字の組版をより整えることができるようになります．</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/plain2-2.54-w64.tar.xz">plain2-2.54-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/plain2-2.54-w32.tar.xz">plain2-2.54-w32.tar.xz</a></td><td>text to TeX or NROFF translator</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pmx-w64.tar.xz">pmx-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pmx-w32.tar.xz">pmx-w32.tar.xz</a></td><td>pmx preprocessor for <a href="/楽譜/#l0a501fd">MusiXTeX</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td><a href="/pstoedit/">pstoedit</a></td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a><br>TeX Live には収録されていません．tltexjp から入手することはできます．</td></tr>
+<tr><td>なし</td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a><br>TeX Live には収録されていません．</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/tex4ht-w64.tar.xz">tex4ht-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tex4ht-w32.tar.xz">tex4ht-w32.tar.xz</a></td><td>TeX4ht</td></tr>
+<tr><td>なし</td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/texinfotools-w32.tar.xz">texinfotools-w32.tar.xz</a></td><td>TeXinfo tools（日本語サポートつき）</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/tiff2png-w64.tar.xz">tiff2png-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/tiff2png-w32.tar.xz">tiff2png-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ttf2pt1-w64.tar.xz">ttf2pt1-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ttf2pt1-w32.tar.xz">ttf2pt1-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ums.tar.xz">ums.tar.xz</a></td><td>ums パッケージ</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/uptex-w64.tar.xz">uptex-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/uptex-w32.tar.xz">uptex-w32.tar.xz</a></td><td><a href="/upTeX,upLaTeX/">upTeX (内部 Unicode 版 pTeX)</a></td></tr>
 </tbody>
 </table>
 
-<!-- |>|CENTER:&ref(http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/utf.tar.xz);|UTF パッケージ| -->
+<!-- |>|CENTER:&ref(https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/utf.tar.xz);|UTF パッケージ| -->
 
 <table>
 <tbody>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/vf-n2bk.tar.xz">vf-n2bk.tar.xz</a></td><td>NTT-jTeX 用の Virtual font</td></tr>
-<tr><td colspan="2" style="text-align:center"><a href="http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xymtex.tar.xz">xymtex.tar.xz</a></td><td><a href="/XyMTeX/">XyMTeX</a></td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/vf-n2bk.tar.xz">vf-n2bk.tar.xz</a></td><td>NTT-jTeX 用の Virtual font</td></tr>
+<tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/xymtex.tar.xz">xymtex.tar.xz</a></td><td><a href="/XyMTeX/">XyMTeX</a></td></tr>
 </tbody>
 </table>
 
-<!-- |&ref(http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/txtutil-w64.tar.xz);|&ref(http://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/txtutil.tar.xz);|ユーティリティ類| -->
+<!-- |&ref(https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/txtutil-w64.tar.xz);|&ref(https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/txtutil.tar.xz);|ユーティリティ類| -->
 
 [^1]: 64ビットプロセッサ ([x86-64](https://ja.wikipedia.org/wiki/X64)) または32ビットプロセッサ ([IA-32](https://ja.wikipedia.org/wiki/IA-32)) 環境で動作する Microsoft Windows．
