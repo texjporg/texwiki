@@ -102,11 +102,9 @@ Adobe Acrobat Reader DC では代替フォントとして AdobePiStd が充て�
 Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://twitter.com/aminophen/status/568380041106567168 -->
 
 - TeX Live -- dvipdfmx も pdftex も埋め込む
-- W32TeX -- dvipdfmx も pdftex も埋め込む
 
 Adobe のフォントは商品ですので，埋め込むためには購入する必要があります．
 そこで，多くの方は欧文基本 14 書体を埋め込むために URW のフォントを利用しています．
-W32TeX の dvipdfmx で URW のフォントを埋め込むのに使う map は dlbase14.map です．
 
 <!-- / というわけで，長らくこのページに残っていた以下の記述をより正確にしたつもりです． -->
 <!-- - -PDF に Zapf Dingbats フォントを埋め込むには，dvipdfmx.cfg ファイルの下の方に -->
