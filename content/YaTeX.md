@@ -176,7 +176,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
@@ -289,7 +289,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
@@ -354,7 +354,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
@@ -513,7 +513,7 @@ M-x describe-variable RET tex-command RET
 % #!tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe & lualatex hogehoge && start Acrobat hogehoge.pdf
 %#BIBTEX bibtexu hogehoge
 %#MAKEINDEX upmendex hogehoge
-%#LPR if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" ("C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /p hogehoge.pdf) else "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" /p hogehoge.pdf
+%#LPR if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" ("C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" /p hogehoge.pdf) else rundll32 shell32,ShellExec_RunDLL Acrobat /p hogehoge.pdf
 % #LPR acroread.bat /p hogehoge.pdf
 ```
 
@@ -539,7 +539,7 @@ REM USAGE: acroread.bat [options] filename
 if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" (
   "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
 ) else (
-  "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe" %1 %2 %3 %4 %5 %6 %7 %8 %9
+  rundll32 shell32,ShellExec_RunDLL Acrobat %1 %2 %3 %4 %5 %6 %7 %8 %9
 )
 ```
 
@@ -632,7 +632,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 ```
 
 ### dvi2-command (C-c C-t j でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#t737f278}
@@ -989,7 +989,7 @@ off の場合
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 (setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
 ```
@@ -1033,7 +1033,7 @@ forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタ�
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "open -a Skim")
 (setq tex-pdfview-command "open -a Skim")
 ```
@@ -1052,7 +1052,7 @@ Evince/fwdevince をインストールして
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "evince")
 (setq tex-pdfview-command "evince")
 ```
@@ -1068,7 +1068,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "okular --unique")
 (setq tex-pdfview-command "okular --unique")
 ```
@@ -1080,7 +1080,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 (setq tex-pdfview-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 (with-eval-after-load 'yatexprc
@@ -1129,7 +1129,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|AcroRd32\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|MicrosoftEdge\\|microsoft-edge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "qpdfview --unique")
 (setq tex-pdfview-command "qpdfview --unique")
 ```
