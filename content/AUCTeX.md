@@ -999,6 +999,7 @@ AUCTeX とは関係ありませんが，先頭に
 - [AUCTeX | 検索結果:  | miyazakikenji](http://miyazakikenji.wordpress.com/?s=AUCTeX)
 - [Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する](http://d.hatena.ne.jp/gifnksm/20090420/)
 - [https://tam5917.hatenablog.com/archive/category/AUCTeX](https://tam5917.hatenablog.com/archive/category/AUCTeX)
+- [https://dayinthelife-web.blogspot.com/search/label/AUCTeX](https://dayinthelife-web.blogspot.com/search/label/AUCTeX)
 
 <!-- AUCTeX ここまで -->
 
