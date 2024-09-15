@@ -142,10 +142,11 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
 - [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
-- [PDF-XChange Editor](https://www.pdf-xchange.com/product/pdf-xchange-editor) タブ切り替え型で軽快に動作するフリーの PDF ビューア
-- [Foxit PDF Reader](https://www.foxit.com/pdf-reader/) フリーのPDF Reader
 - [Skim](/Skim/) SyncTeX に対応した PDF ビューア．macOS 専用です．
-- [Slim PDF Reader](http://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
+- [PDF-XChange Editor](https://www.pdf-xchange.com/product/pdf-xchange-editor) タブ切り替え型で軽快に動作するフリーの PDF ビューア
+- [Foxit PDF Reader](https://www.foxit.com/pdf-reader/) フリーの PDF Reader
+- [UPDF](https://updf.com/jp/) Windows/macOS/iOS/Android で動作するAI搭載のPDFエディター
+- [Slim PDF Reader](https://www.investintech.com/resources/freetools/slimpdfreader/) 軽量な PDF ビューア
 
 Poppler を利用したものは多く，どれを使えばよいのかわかり辛いですが，使っているデスクトップ環境や好みの UI で選びましょう．
 
