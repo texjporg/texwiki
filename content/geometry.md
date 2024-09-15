@@ -77,7 +77,7 @@ geometry パッケージは，長らく（そして現在も）縦組みに対�
 
 そこで，geometry パッケージを無理矢理縦組クラスでも使えるようにする lltjp-geometry.sty が開発されました。
 もともとは [LuaTeX-ja](/LuaTeX-ja/) プロジェクトにおける縦組の実装で作られたものですが，単体で (u)pLaTeX でも使えます。
-LuaTeX-ja 20150420.0 リリースにより，これも TeX Live, W32TeX に含まれています。
+LuaTeX-ja 20150420.0 リリースにより，これも TeX Live に含まれています。
 
 - 縦組クラスでの overfull 警告 [forum:1442](https://okumuralab.org/tex/mod/forum/discuss.php?d=1442)
 - LuaTeX-ja 20150420.0 [qa:57629](https://okumuralab.org/~okumura/texfaq/qa/57629.html)
