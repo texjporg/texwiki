@@ -106,14 +106,10 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 ### 関連リンク {#we8f22aa}
 
 - [CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)
-- [GhostScriptあれこれ](http://xanadu62.blogspot.jp/2014/11/ghostscript_22.html)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
 - [Data storage for gs-cjk project](https://www.aihara.co.jp/~taiji/gyve/)（山田さん）
-- [情報工学特別講義 II](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/)
-    - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.distil.pdf) guide_to_gs-cjk.distil.pdf (PDF)
-    - [A Guide to gs-cjk Project](http://www.hisenkei.net/~tohru/Lectures/2003/SLICS2/PDFs/guide_to_gs-cjk.slide.distil.pdf) guide_to_gs-cjk.slide.distil.pdf (PDF)
 
 #### License {#g7897d81}
 
@@ -130,7 +126,7 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 #### ChangeLog {#ua2f6680}
 
 <!-- -[[git.ghostscript.com Git:http://git.ghostscript.com/]] -->
-- [git.ghostscript.com Git - ghostpdl.git/summary](http://git.ghostscript.com/?p=ghostpdl.git)
+- [git.ghostscript.com Git - ghostpdl.git/summary](https://git.ghostscript.com/?p=ghostpdl.git)
     - [コミットログ](http://git.ghostscript.com/?p=ghostpdl.git;a=shortlog)
 
 <!-- **Comment [#z51688d5] -->
