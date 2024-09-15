@@ -182,11 +182,11 @@ let g:Tex_CompileRule_pdf = 'ptex2pdf -u -l -ot "-kanji=utf8 -no-guess-input-enc
 let g:Tex_CompileRule_dvi = 'uplatex -kanji=utf8 -no-guess-input-enc -synctex=1 -interaction=nonstopmode -file-line-error-style $*'
 let g:Tex_BibtexFlavor = 'bibtexu'
 let g:Tex_MakeIndexFlavor = 'upmendex $*.idx'
-let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n -c \":RemoteOpen +\%l \%f\""'
+let g:Tex_ViewRule_pdf = 'C:/Program Files/SumatraPDF/SumatraPDF.exe -reuse-instance -inverse-search "\"' . $VIM . '\gvim.exe\" -n -c \":RemoteOpen +\%l \%f\""'
 "let g:Tex_ViewRule_pdf = 'texworks'
 "let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL firefox -new-window'
 "let g:Tex_ViewRule_pdf = 'powershell -Command "& {$p = [System.String]::Concat(''"""'',[System.IO.Path]::GetFullPath($args),''"""'');Start-Process chrome -ArgumentList (''--new-window'',$p)}"'
-"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL AcroRd32'
+"let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL Acrobat'
 ```
 
 ***
