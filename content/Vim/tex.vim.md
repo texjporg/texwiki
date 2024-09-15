@@ -80,8 +80,6 @@ function! TypesetFile()
     call PdfLaTeX("pdflatex")
   elseif g:typeset == 'lualatex'
     call PdfLaTeX("lualatex")
-  elseif g:typeset == 'luajitlatex'
-    call PdfLaTeX("luajitlatex")
   elseif g:typeset == 'xelatex'
     call PdfLaTeX("xelatex")
   elseif g:typeset == 'latexmk'
@@ -183,8 +181,6 @@ function! SetTypeset(type)
     let g:typeset = 'pdflatex'
   elseif a:type == 'lualatex'
     let g:typeset = 'lualatex'
-  elseif a:type == 'luajitlatex'
-    let g:typeset = 'luajitlatex'
   elseif a:type == 'xelatex'
     let g:typeset = 'xelatex'
   elseif a:type == 'latexmk'
@@ -213,9 +209,9 @@ function! PdfupLaTeX(type)
   let masterBaseName = fnamemodify(masterTeXFile, ":t:r")
   if a:type == 'pdfuplatex'
     if has('win32') || has('win64')
-      let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal"' . ' "' . masterTeXFile . '"'
+      let ptex2pdf = 'ptex2pdf -u -l -ot "-synctex=1 -no-guess-input-enc -kanji=utf8"' . ' "' . masterTeXFile . '"'
       if g:viewer == 'acroread'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . ptex2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . ptex2pdf
@@ -226,11 +222,11 @@ function! PdfupLaTeX(type)
     endif
   elseif a:type == 'pdfuplatex2'
     if has('win32') || has('win64')
-      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal' . ' "' . masterTeXFile . '"'
+      let latex = 'uplatex -synctex=1 -no-guess-input-enc -kanji=utf8' . ' "' . masterTeXFile . '"'
       let dvips = 'dvips -z -f' . ' "' . masterBaseName . '.dvi"' . ' | convbkmk -u > "' . masterBaseName . '.ps"'
       let ps2pdf = 'ps2pdf.exe' . ' "' . masterBaseName . '.ps"'
       if g:viewer == 'acroread'
-        let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
+        let pdfclose = 'tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe'
         let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latex . ' && ' . dvips . ' && ' . ps2pdf
       else
         let execString = 'cd /d ' . masterDir . ' && ' . latex . ' && ' . dvips . ' && ' . ps2pdf
@@ -264,15 +260,13 @@ function! PdfLaTeX(type)
     let pdflatex = 'pdflatex -synctex=1' . ' "' . masterTeXFile . '"'
   elseif a:type == 'lualatex'
     let pdflatex = 'lualatex -synctex=1' . ' "' . masterTeXFile . '"'
-  elseif a:type == 'luajitlatex'
-    let pdflatex = 'luajitlatex -synctex=1' . ' "' . masterTeXFile . '"'
   elseif a:type == 'xelatex'
     let pdflatex = 'xelatex -synctex=1' . ' "' . masterTeXFile . '"'
   endif
 
   if has('win32') || has('win64')
     if g:viewer == 'acroread'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . pdflatex
     else
       let execString = 'cd /d ' . masterDir . ' && ' . pdflatex
@@ -304,7 +298,7 @@ function! Latexmk(type)
 
   if has('win32') || has('win64')
     if g:viewer == 'acroread'
-      let pdfclose = 'tasklist /fi "IMAGENAME eq AcroRd32.exe" /nh | findstr "AcroRd32.exe" > nul && taskkill /im AcroRd32.exe'
+      let pdfclose = 'tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul && taskkill /im Acrobat.exe'
       let execString = 'cd /d ' . masterDir . ' && ' . pdfclose . ' & ' . latexmk
     else
       let execString = 'cd /d ' . masterDir . ' && ' . latexmk
@@ -329,9 +323,7 @@ function! TeXworks()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
-    if glob('C:/w32tex/share/texworks/TeXworks.exe') != ''
-      let viewer = '"' . glob('C:/w32tex/share/texworks/TeXworks.exe') . '"'
-    elseif glob('C:/texlive/*/tlpkg/texworks/texworks.exe') != ''
+    if glob('C:/texlive/*/tlpkg/texworks/texworks.exe') != ''
       let viewer = '"' . glob('C:/texlive/*/tlpkg/texworks/texworks.exe') . '"'
     else
       let viewer = 'TeXworks.exe'
@@ -557,19 +549,17 @@ function! AdobeAcrobatReaderDC()
   let masterTeXFile = g:master
   let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
   if has('win32') || has('win64')
-    if glob('C:/Program Files/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') != ''
-      let viewer = '"' . glob('C:/Program Files/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') . '"'
-    elseif glob('C:/Program Files (x86)/Adobe/Adobe Reader DC/Reader/AcroRd32.exe') != ''
-      let viewer = '"' . glob('C:/Program Files (x86)/Adobe/Acrobat Reader DC/Reader/AcroRd32.exe') . '"'
+    if glob('C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe') != ''
+      let viewer = '"' . glob('C:/Program Files/Adobe/Acrobat DC/Acrobat/Acrobat.exe') . '"'
     else
-      let viewer = 'rundll32 shell32,ShellExec_RunDLL AcroRd32'
+      let viewer = 'rundll32 shell32,ShellExec_RunDLL Acrobat'
     endif
     let execString = 'cd /d ' . masterDir . ' && echo ' . viewer . ' "' . masterPDFFile . '" | cmd'
   elseif has('macunix')
-    let viewer = 'open -a "Adobe Acrobat Reader DC.app"'
+    let viewer = 'open -a "Adobe Acrobat.app"'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   else
-    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Acrobat\ Reader\ DC/Reader/AcroRd32.exe'
+    let viewer = 'wine ~/.wine/drive_c/Program\ Files*/Adobe/Acrobat\ DC/Acrobat/Acrobat.exe'
     let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
   endif
 
@@ -608,7 +598,6 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer sumatrapdf &lt;Enter&gt;</td><td>ビューアを SumatraPDF に変更</td></tr>
@@ -643,7 +632,6 @@ noremap <expr> <C-K>v ViewFile()
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer skim &lt;Enter&gt;</td><td>ビューアを Skim に変更</td></tr>
@@ -680,7 +668,6 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset pdfuplatex2 &lt;Enter&gt;</td><td>タイプセットを pdfupLaTeX2 に変更</td></tr>
 > <tr><td>:Typeset pdflatex &lt;Enter&gt;</td><td>タイプセットを pdfLaTeX に変更</td></tr>
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
-> <tr><td>:Typeset luajitlatex &lt;Enter&gt;</td><td>タイプセットを LuajitLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
 > <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
