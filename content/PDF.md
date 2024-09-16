@@ -62,12 +62,12 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 - [Adobe Acrobat](https://www.adobe.com/jp/acrobat.html)
     ([Adobe](https://www.adobe.com/jp/))
 
-- [いきなりPDF シリーズ](http://www.sourcenext.com/product/pdf/)
-    ([ソースネクスト](http://www.sourcenext.com/))
+- [いきなりPDF シリーズ](https://www.sourcenext.com/product/pdf/)
+    ([ソースネクスト](https://www.sourcenext.com/))
 
-- [JUST PDF](http://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/))
-- [瞬簡PDF](http://www.antenna.co.jp/product/#pdf) ([アンテナハウス](http://www.antenna.co.jp/))
-- [SkyPDF](http://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
+- [JUST PDF](https://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/jp/))
+- [瞬簡PDF](https://www.antenna.co.jp/pds/) ([アンテナハウス](https://www.antenna.co.jp/))
+- [SkyPDF](https://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
 
 既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat では多様なことができます．使い方については，
 [Adobe Acrobat ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
@@ -118,7 +118,7 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 
 ### PDF ビューア {#zd559492}
 
-Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの PDFium がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 11/10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
+Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの [PDFium](https://pdfium.googlesource.com/pdfium/) がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 11/10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
 
 [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) が有名ですが，ほかにも様々あります：
 
@@ -155,12 +155,12 @@ Poppler を利用したものは多く，どれを使えばよいのかわかり
 PDF 関連のソフトウェアを作成するためのライブラリも様々あります．
 入門として，以下のサイトを参照すると良いでしょう：
 
-- [Open Source PDF Libraries and Tools](http://pdf-house.blogspot.com/)
-- [PDF開発の基礎](http://www.slideshare.net/field-works/pdf-29001511)
-- [手書きPDF入門](http://www.kobu.com/docs/pdf/pdfxhand.htm)
-- [詳細PDF入門 ー 実装して学ぼう！PDFファイルの構造とその書き方読み方](http://itchyny.hatenablog.com/entry/2015/09/16/100000)
+- [Open Source PDF Libraries and Tools](https://pdf-house.blogspot.com/)
+- [PDF開発の基礎](https://www.slideshare.net/slideshow/pdf-29001511/29001511)
+- [手書きPDF入門](https://kobu.com/docs/pdf/pdfxhand.htm)
+- [詳細PDF入門 ー 実装して学ぼう！PDFファイルの構造とその書き方読み方](https://itchyny.hatenablog.com/entry/2015/09/16/100000)
 
-PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](http://www.pdflib.com/) ([日本語サイト](http://www.pdflib.jp/)) が有名ですが，無償で公開されている [PDFlib Lite](http://www.pdflib.com/download/free-software/pdflib-lite-7/) は，機能がかなり限定的です．
+PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](https://www.pdflib.com/) ([日本語サイト](https://www.pdflib.jp/)) が有名ですが，無償で公開されている [PDFlib Lite](http://www.pdflib.com/download/free-software/pdflib-lite-7/) は，機能がかなり限定的です．
 
 #### C と C++ {#hc56261e}
 
