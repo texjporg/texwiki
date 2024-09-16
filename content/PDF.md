@@ -62,12 +62,25 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 - [Adobe Acrobat](https://www.adobe.com/jp/acrobat.html)
     ([Adobe](https://www.adobe.com/jp/))
 
-- [いきなりPDF シリーズ](https://www.sourcenext.com/product/pdf/)
+- [いきなりPDF](https://www.sourcenext.com/product/pdf/)
     ([ソースネクスト](https://www.sourcenext.com/))
 
-- [JUST PDF](https://www.justsystems.com/jp/products/justpdf/) ([ジャストシステム](https://www.justsystems.com/jp/))
-- [瞬簡PDF](https://www.antenna.co.jp/pds/) ([アンテナハウス](https://www.antenna.co.jp/))
-- [SkyPDF](https://www.skycom.jp/product/skypdf/) ([スカイコム](https://www.skycom.jp/))
+- [SkyPDF](https://www.skycom.jp/product/skypdf/)
+    ([スカイコム](https://www.skycom.jp/))
+
+- [瞬簡PDF](https://www.antenna.co.jp/pds/)
+    ([アンテナハウス](https://www.antenna.co.jp/))
+
+- [JUST PDF](https://www.justsystems.com/jp/products/justpdf/)
+    ([ジャストシステム](https://www.justsystems.com/jp/))
+
+- [UPDF](https://updf.com/jp/)
+    ([Superace Software Technologies](https://superace.com/))
+
+以下のサイトに詳しい説明があります。
+
+- [おすすめのPDF編集ソフト3選。価格、特徴、スペックを徹底比較｜デジ箱](https://www.digi-bako.net/)
+    - [【有料版】主なPDFソフト一覧](https://www.digi-bako.net/pdf-paid/)
 
 既存の PDF に対して，様々な操作や加工を行うソフトウェアが存在します．上述の Adobe Acrobat では多様なことができます．使い方については，
 [Adobe Acrobat ユーザーガイド](https://helpx.adobe.com/jp/acrobat/user-guide.html) を参照して下さい．
