@@ -22,27 +22,26 @@ AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 - [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
 
-- [AUCTeX, an integrated TeX/LaTeX environment - 概要 \[Savannah\]](http://savannah.gnu.org/projects/auctex/)
-- [auctex Archives](http://lists.gnu.org/archive/html/auctex/)
+- [AUCTeX, an integrated TeX/LaTeX environment - 概要 \[Savannah\]](https://savannah.gnu.org/projects/auctex/)
+- [auctex Archives](https://lists.gnu.org/archive/html/auctex/)
 - [CTAN:support/auctex](https://mirror.ctan.org/support/auctex)
-- [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX)
-- [http://thread.gmane.org/gmane.emacs.auctex.devel/](http://thread.gmane.org/gmane.emacs.auctex.devel/)
+- [EmacsWiki: AUCTeX](https://www.emacswiki.org/emacs/AUCTeX)
 
 ### License {#j807fd6e}
 
-[GPLv3](http://git.savannah.gnu.org/cgit/auctex.git/tree/COPYING)
+[GPLv3](https://git.savannah.gnu.org/cgit/auctex.git/tree/COPYING)
 
 ### リリース情報 {#bbfafcad}
 
-- [http://git.savannah.gnu.org/cgit/auctex.git/refs/](http://git.savannah.gnu.org/cgit/auctex.git/refs/)
-    - [http://git.savannah.gnu.org/cgit/auctex.git/refs/tags](http://git.savannah.gnu.org/cgit/auctex.git/refs/tags)
+- [https://git.savannah.gnu.org/cgit/auctex.git/refs/](https://git.savannah.gnu.org/cgit/auctex.git/refs/)
+    - [https://git.savannah.gnu.org/cgit/auctex.git/refs/tags](https://git.savannah.gnu.org/cgit/auctex.git/refs/tags)
 
 を参照．
 
 ### ChangeLog {#c24ccc65}
 
-- [log](http://git.savannah.gnu.org/cgit/auctex.git/log/)
-- [ChangeLog](http://git.savannah.gnu.org/cgit/auctex.git/tree/ChangeLog.1)
+- [log](https://git.savannah.gnu.org/cgit/auctex.git/log/)
+- [ChangeLog](https://git.savannah.gnu.org/cgit/auctex.git/tree/ChangeLog.1)
 
 ### スクリーンショット {#s450de09}
 
