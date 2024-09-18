@@ -47,15 +47,14 @@ PDF を出力できます．
 PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
 
 - [PDF24 Creator](https://www.pdf24.org/en/)
-- [PrimoPDF](http://www.primopdf.com/)
 - [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)
 
 広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
 
-- [CubePDF](http://www.cube-soft.jp/cubepdf/)
-- [PDFCreator](http://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
-- [BullZip PDF Printer Community Edition](http://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
-- [pdf995](http://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](https://susshiblog.blog.so-net.ne.jp/2005-07-29) を参照）
+- [CubePDF](https://www.cube-soft.jp/cubepdf/) &lt;-- [XユーザーのMana ･:\*+さん：「CubePDF、買い物ポケットとかいうマルウェアまがいの拡張機能を強制インストールするので絶対に導入してはいけません。アンインストールしても永遠に残り続け、ブラウザを立ち上げると強制的に余計な広告が表示されます」/ X](https://x.com/cordimana97/status/1812310063845163407)
+- [PDFCreator](https://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
+- [BullZip PDF Printer Community Edition](https://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
+- [pdf995](https://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](https://susshiblog.blog.ss-blog.jp/2005-07-29) を参照）
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
@@ -216,8 +215,8 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 - [PDFKit](http://pdfkit.org/): JavaScript
 - [TCPDF](http://www.tcpdf.org/): PHP
+- [pypdf](https://github.com/py-pdf/pypdf): Python
 - [PDFMiner](http://www.unixuser.org/~euske/python/pdfminer/): Python
-- [PyPDF2](https://github.com/mstamy2/PyPDF2): Python
 - [ThinReports Generator](http://www.thinreports.org/features/generator/): Ruby
 - [Origami](https://rubygems.org/gems/origami): Ruby
 
