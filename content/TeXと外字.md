@@ -54,8 +54,8 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 - [dvips](/dvips/) を使う場合は，これを次のようにして使います。
 
     ```
-    \documentclass{jsarticle}
-    \usepackage[dvips]{graphicx}
+    \documentclass[uplatex,dvips]{jsarticle}
+    \usepackage{graphicx}
     \begin{document}
 
     精興社
@@ -74,8 +74,8 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
     で kou-itai.pdf に変換し，それを次のようにして取り込みます。
 
     ```
-    \documentclass{jsarticle}
-    \usepackage[dvipdfmx]{graphicx}
+    \documentclass[uplatex,dvipdfmx]{jsarticle}
+    \usepackage{graphicx}
     \begin{document}
 
     精興社
@@ -92,21 +92,21 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 
 これを処理した結果です：
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
+<img src="https://web.archive.org/web/20101128142225if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
 
 同様にして Inkscape でも外字を作成することができます。
 
-- [Inkscape による TeX の外字作成メモ](http://miko.org/~tatyana/tech/OSX/inkscape/gaiji.html)
+- [Inkscape による TeX の外字作成メモ](https://miko.org/~tatyana/tech/OSX/inkscape/gaiji.html)
 
 ### IPAmj 明朝の利用 {#d0fddba5}
 
-人名の表記等，細かな字形の差異を特別に使い分ける必要のある業務等での活用を想定した [IPAmj 明朝](https://mojikiban.ipa.go.jp/)フォントを利用する [ipamjm パッケージ](http://psitau.kitunebi.com/experiment.html) があります。
+人名の表記等，細かな字形の差異を特別に使い分ける必要のある業務等での活用を想定した [IPAmj明朝フォント](https://moji.or.jp/mojikiban/font/)を利用する [ipamjm パッケージ](https://psitau.kitunebi.com/experiment.html) があります。
 IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表示させます。
 
 さらに，IVS による異体字表現をサポートする [PXipamjm パッケージ](https://github.com/zr-tex8r/PXipamjm)もあります。
 
-- [ipamjm パッケージでアレしてみた](http://d.hatena.ne.jp/zrbabbler/20131214/1387029624)
-- [pxipamjm パッケージの説明書のような何か](http://d.hatena.ne.jp/zrbabbler/20131221/1387651875)
+- [ipamjm パッケージでアレしてみた](https://zrbabbler.hatenablog.com/entry/20131214/1387029624)
+- [pxipamjm パッケージの説明書のような何か](https://zrbabbler.hatenablog.com/entry/20131221/1387651875)
 
 ### グリフウィキの活用 {#mf8ed6c1}
 
