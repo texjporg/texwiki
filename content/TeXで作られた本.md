@@ -136,7 +136,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
-- 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
+- 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](https://web.archive.org/web/20101219085445/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
 - 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) グループ会社の[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）．[ISBN 978-4-7561-1667-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-1667-3)
 - 吉田武『オイラーの贈り物』．2001年11月発売．筑摩書房．ISBN4 480-08675-7 C0141
 
