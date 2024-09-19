@@ -15,7 +15,7 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 詳しくは次のページをご覧ください．
 
 - [Ghostscript Website](https://www.ghostscript.com/)
-- [Welcome to Ghostscript &mdash; Ghostscript 10.04.0 documentation](https://ghostscript.readthedocs.io/)
+- [Welcome to Ghostscript &mdash; Ghostscript 10.05.0 documentation](https://ghostscript.readthedocs.io/)
     - [https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
 ***
