@@ -70,7 +70,6 @@ Vim-LaTeX は [Vim](/Vim/) で LaTeX ドキュメントを編集，コンパイ�
 ## 不具合 {#df88e09f}
 
 - [https://github.com/vim-latex/vim-latex/issues](https://github.com/vim-latex/vim-latex/issues)
-- [https://sourceforge.net/p/vim-latex/bugs/](https://sourceforge.net/p/vim-latex/bugs/)
 
 ### MacVim-KaoriYa を使用して Vim-LaTeX でノーマルモードに入る時に自動で IME がオフになる機能を有効にするとインサートモードでの日本語入力がおかしくなる → [VimでNormalモード切り替え時にIMEをOFFにする、をMacでKarabiner-Elementsを使って実現する](https://rcmdnk.com/blog/2017/08/31/computer-mac-vim/) {#p586f5da}
 
@@ -86,10 +85,6 @@ GVim の on-the-spot の実装に問題があるようです．<br>
 - [http://pc11.5ch.net/test/read.cgi/unix/1232035011/45](http://pc11.5ch.net/test/read.cgi/unix/1232035011/45)
 - [http://hibari.5ch.net/test/read.cgi/unix/1258278511/366](http://hibari.5ch.net/test/read.cgi/unix/1258278511/366)
 - [https://github.com/vim/vim/blob/master/src/mbyte.c](https://github.com/vim/vim/blob/master/src/mbyte.c)
-
-### CTRL-J が使えない → [https://github.com/vim-jp/issues/issues/523#issuecomment-35015892](https://github.com/vim-jp/issues/issues/523#issuecomment-35015892) {#v27fb866}
-
-- [vim-latexについて · Issue #523 · vim-jp/issues · GitHub](https://github.com/vim-jp/issues/issues/523)
 
 ### \int　や　{\pi} という表示が白く変換して表示される → [https://github.com/vim-jp/issues/issues/529#issuecomment-35566960](https://github.com/vim-jp/issues/issues/529#issuecomment-35566960) {#ee220d93}
 
