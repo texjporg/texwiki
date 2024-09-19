@@ -9,7 +9,7 @@ pukiwiki: "OTF"
 
 ## OTF パッケージ {#l22413ec}
 
-[OTF パッケージ](http://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](http://psitau.kitunebi.com/)による，[Adobe-Japan1-7](/Adobe-Japan1-7/) 相当のフォントあたり最大23,060文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
+[OTF パッケージ](https://psitau.kitunebi.com/otf.html)は，[齋藤修三郎さん](https://psitau.kitunebi.com/)による，[Adobe-Japan1-7](/Adobe-Japan1-7/) 相当のフォントあたり最大23,060文字の和文 OpenType フォントを upLaTeX, pLaTeX で使うためのパッケージです。
 ここでは OTF パッケージを Microsoft Windows と macOS で使う方法を説明します。
 
 OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeXと外字/>)を参照してください。
@@ -965,7 +965,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ### ChangeLog {#k32bef0c}
 
-- [変更履歴](http://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
+- [変更履歴](https://psitau.kitunebi.com/otf.html)（pLaTeX 用のオリジナル版）
 - [主な更新箇所](http://www.t-lab.opal.ne.jp/tex/uptex.html)（upLaTeX 用の改変版）
 
 #### japanese-otf {#b26e364e}
