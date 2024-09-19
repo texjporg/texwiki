@@ -172,7 +172,7 @@ PDF 関連のソフトウェアを作成するためのライブラリも様々�
 - [手書きPDF入門](https://kobu.com/docs/pdf/pdfxhand.htm)
 - [詳細PDF入門 ー 実装して学ぼう！PDFファイルの構造とその書き方読み方](https://itchyny.hatenablog.com/entry/2015/09/16/100000)
 
-PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](https://www.pdflib.com/) ([日本語サイト](https://www.pdflib.jp/)) が有名ですが，無償で公開されている [PDFlib Lite](http://www.pdflib.com/download/free-software/pdflib-lite-7/) は，機能がかなり限定的です．
+PDF ライブラリにはその用途に応じて，大別して3種類あります．描画（レンダリング）ライブラリ，生成ライブラリ，そして加工やデータ抽出などに使える操作ライブラリです．これら複数の用途に使えるライブラリも存在します．[PDFlib](https://www.pdflib.com/) ([日本語サイト](https://www.pdflib.jp/)) が有名ですが，無償で公開されている [PDFlib Lite](https://github.com/Distrotech/PDFlib-Lite) は，機能がかなり限定的です．
 
 #### C と C++ {#hc56261e}
 
