@@ -174,12 +174,12 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /VL-Gothic-Regular            << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/X11R6/lib/X11/fonts/TrueType/VL-Gothic-Regular.ttf) >> ;
 
 %%% IPAex Fonts
-%%% See https://ipafont.ipa.go.jp/
+%%% See https://moji.or.jp/ipafont/
 /IPAexMincho                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipaexm.ttf) >> ;
 /IPAexGothic                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipaexg.ttf) >> ;
 
 %%% IPA Fonts
-%%% See https://ipafont.ipa.go.jp/
+%%% See https://moji.or.jp/ipafont/
 /IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipam.ttf) >> ;
 /IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (/usr/local/share/fonts/truetype/ipafont/ipag.ttf) >> ;
 
