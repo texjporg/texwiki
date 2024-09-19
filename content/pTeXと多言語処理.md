@@ -737,7 +737,7 @@ hiramaru-w4-v  Identity-V          HiraMaruProN-W4.otf
 
 ***
 
-ここで日本語フォントに [IPAexフォント/IPAフォント](https://ipafont.ipa.go.jp/) (ipaexm.ttf, ipaexg.ttf) （TeX Live，W32TeX に収録されています）を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://ctan.org/tex-archive/fonts/arphic-ttf) (gbsn00lp.ttf) （TeX Live に収録されています）と [WenQuanYi outline fonts](http://wenq.org/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://web.archive.org/web/20120416135330/http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
+ここで日本語フォントに [IPAexフォント/IPAフォント](https://moji.or.jp/ipafont/) (ipaexm.ttf, ipaexg.ttf) （TeX Live，W32TeX に収録されています）を，中国語簡化字フォントに [Arphic （文鼎） Technology のフォント](https://ctan.org/tex-archive/fonts/arphic-ttf) (gbsn00lp.ttf) （TeX Live に収録されています）と [WenQuanYi outline fonts](http://wenq.org/) (wqy-zenhei.ttf) を，中国語繁體字フォントに [CJK-Unifonts](http://www.freedesktop.org/wiki/Software/CJKUnifonts) (uming.ttf) と [cwTeX TrueType font](http://web.archive.org/web/20120416135330/http://cle.linux.org.tw/fonts/cwttf/) (cwheib.ttf) を，韓国語フォントに [Un-fonts](http://kldp.net/projects/unfonts/) (UnBatang.ttf, UnDotum.ttf) を用いています。
 いずれも無償で入手できます。
 
 DVI → PS → PDF の流れで作りたい方は自分用のたとえば mydvips.map に次を記述します。(dvips のオプション -u+mydvips.map で使用)
@@ -1068,14 +1068,14 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ```
 %%% IPAex Fonts
-%%% See https://ipafont.ipa.go.jp/
+%%% See https://moji.or.jp/ipafont/
 /IPAexMincho                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexm.ttf) >> ;
 /IPAexGothic                  << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipaexg.ttf) >> ;
 ```
 
 ```
 %%% IPA Fonts
-%%% See https://ipafont.ipa.go.jp/
+%%% See https://moji.or.jp/ipafont/
 /IPAMincho                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipam.ttf) >> ;
 /IPAGothic                    << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (ipag.ttf) >> ;
 ```
