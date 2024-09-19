@@ -126,14 +126,17 @@ TeX で組まれていますが，それ以外のもの）：
 
 著者自身が (La)TeX で原稿を作成したと報告のあった本：
 
-- 高橋正雄. 『[基礎と演習 理工系の電磁気学](http://www.kyoritsu-pub.co.jp/kenpon/bookDetail/9784320034327)』. 2004年9月27日発売. 共立出版. ISBN 978-4-320-03432-7. ([qa:31795](https://okumuralab.org/~okumura/texfaq/qa/31795.html))
+- 高橋正雄. 『[基礎と演習 理工系の電磁気学](https://www.kyoritsu-pub.co.jp/book/b10010330.html)』. 2004年9月27日発売. 共立出版. ISBN 978-4-320-03432-7. ([qa:31795](https://okumuralab.org/~okumura/texfaq/qa/31795.html))
     <!-- http://www.kyoritsu-pub.co.jp/bookhtml/0406/002798.html -->
 
-- 宮腰忠. 『[高校数学 + α：基礎と論理の物語](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2004年9月24日発売. 共立出版．ISBN 978-4-320-01768-9. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
-    <!-- http://www.kyoritsu-pub.co.jp/shinkan/shin0409_08.html -->
+- 宮腰忠. 『[高校数学 + α：基礎と論理の物語](https://tad311.xsrv.jp/hsmath/index.html)』. 2004年9月24日発売. 共立出版．ISBN 978-4-320-01768-9. ([qa:31681](https://okumuralab.org/~okumura/texfaq/qa/31681.html))
+    <!-- https://www.kyoritsu-pub.co.jp/book/b10010328.html -->
+    <!-- https://web.archive.org/web/20041020140429/http://www.kyoritsu-pub.co.jp:80/shinkan/shin0409_08.html -->
 
-- 宮腰忠. 『[高校数学 + α：なっとくの線形代数](http://www.h6.dion.ne.jp/~hsbook_a/)』. 2007年7月11日発売. 共立出版．ISBN 978-4-320-01840-2.
-- 米村明芳・杉山義明.『[数IIICの完全攻略](http://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
+- 宮腰忠. 『[高校数学 + α：なっとくの線形代数](https://tad311.xsrv.jp/hsmath/indexL.html)』. 2007年7月11日発売. 共立出版．ISBN 978-4-320-01840-2.
+    <!-- https://www.kyoritsu-pub.co.jp/book/b10010575.html -->
+
+- 米村明芳・杉山義明.『[数IIICの完全攻略](https://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
 - 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](https://web.archive.org/web/20101219085445/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
