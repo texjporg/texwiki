@@ -75,7 +75,7 @@ $ dvips -E testeq.dvi -o testeq.eps
 <img src="http://web.archive.org/web/20111118063622if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
-「[数式フォントの比較](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
+「[数式フォントの比較](https://web.archive.org/web/20180404184346/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
 
 InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/) が便利です。
 
@@ -97,20 +97,20 @@ EPS を作るところまでは上と同じです。
 
 別の方法も後で書きますが，簡単かつ確実な方法は，「配置」ダイアログボックスの「リンク」チェックボックスをオンにすることです。
 dvips の出力する EPS にはプレビュー画像が附いていませんので，配置してもただの箱に見えます。
-これでも PostScript デバイス（PS プリンタや Adobe Acrobat Distiller DC）に出力すれば，きれいに出ます。
+これでも PostScript デバイス（PS プリンタや Adobe Acrobat Distiller）に出力すれば，きれいに出ます。
 また，Illustrator から EPS で保存しても大丈夫です（保存時に「配置した画像を含む」チェックボックスをオンにします）。
 
 EPS にプレビューを付けておけば，配置したときにプレビューを見ることができますので便利です。
 [GSview](/GSview/) の \[Edit\] → \[Add EPS Preview\] でプレビューが付けられます。
 
-この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化するならいったん EPS で保存してから Adobe Acrobat Distiller DC で処理してください。
+この方法では Illustrator から直接 PDF で保存すると文字化けしますので，PDF 化するならいったん EPS で保存してから Adobe Acrobat Distiller で処理してください。
 
 ## Illustrator に配置 2 (Microsoft Windows) {#wfad6f6b}
 
 箱じゃ不安，あるいは Illustrator の中で数式を編集したい，という場合には次のようにします。
 ただし，Illustrator のフォントリストにたくさんのフォントが追加されてしまいますのでご注意ください。
 
-あらかじめ $TEXMF\fonts\type1\ フォルダー（例えば C:\texlive\2018\texmf-dist\fonts\type1\）をフォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
+あらかじめ $TEXMF\fonts\type1\ フォルダー（例えば C:\texlive\2024\texmf-dist\fonts\type1\）をフォルダーごと "C:\Program Files\Common Files\Adobe\Fonts\\" 以下のフォルダーにコピーまたはリンクしておきます（Thanks: 長さん [qa:20350](https://okumuralab.org/~okumura/texfaq/qa/20350.html)，角藤さん [qa:20353](https://okumuralab.org/~okumura/texfaq/qa/20353.html)）。
 こうすると，TeX で使う多数の Type 1 フォントを Windows に登録せずに Adobe 製品で使うことができます。
 Illustrator から直接 PDF で保存しても大丈夫です。
 
@@ -121,11 +121,11 @@ mathpazo，newtx，newpx 等のパッケージを使った場合は，dvips に 
 （この項については内山さんからご教示をいただきました。）
 
 macOS でも，TeX からは UNIX や Windows と同じ Type 1 (PFB) フォントが使えますが，一般のアプリケーションからは使えません。
-[http://www.botik.ru/~znamensk/CTAN/fonts/cm/ps-type1/bluesky/](http://www.botik.ru/~znamensk/CTAN/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください（フォントについては両者の中身は同じようです）。
-スクリーンフォントも必要です（→ [MacでフォントをAdobeのアプリが認識しない](http://oversleptabit.com/?p=1319)）。
+[http://www.botik.ru/~znamensk/CTAN-2002/fonts/cm/ps-type1/bluesky/](http://www.botik.ru/~znamensk/CTAN-2002/fonts/cm/ps-type1/bluesky/) から cmps-oztex.hqx または cmps-textures.hqx をダウンロードしてお使いください（フォントについては両者の中身は同じようです）。
+スクリーンフォントも必要です（→ [MacでフォントをAdobeのアプリが認識しない](https://oversleptabit.com/archives/1319)）。
 
 インストールの場所は，Adobe 製品だけから使うなら /Library/"Application Support"/Adobe/Fonts/ 以下ですが，macOS では次の場所のいずれかに入れるのがいいかもしれません。
-macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\]OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](http://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[Mac OS X：フォントの保存場所とその目的](https://support.apple.com/ja-jp/HT201722)」，「[Mac OS X: Font locations and their purposes](https://support.apple.com/en-us/HT201722)」）。
+macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\]OS Xにおけるフォント（font）ファイルの保存場所3ヶ所とその意味について｜およびインストール方法](https://ozpa-h4.com/2013/01/11/mac-os-font/)」，「[macOS のフォントの保存場所はどこですか？](https://too-support.my.site.com/faq/s/article/knowledge23473)」）。
 
 1. /Library/"Application Support"// 以下（特定のアプリケーション用）
     - /Library/"Application Support"/Adobe/Fonts// 以下
@@ -147,7 +147,7 @@ macOS では次の順にフォントを探してくれます（→ 「\[[Mac OS\
 “\\\[ \Gamma - \gamma \\\]” で実験してみてください（“$\Gamma$” や “$-$” は化けやすいことで有名）。
 Windows 版なら大丈夫なのに残念です。
 Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。
-PDF にしたければ EPS で保存して Adobe Acrobat Distiller DC で変換すればいいでしょう。
+PDF にしたければ EPS で保存して Adobe Acrobat Distiller で変換すればいいでしょう。
 
 念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント： [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）でも試してみました。
 「テキストエディット」では使えましたが，Illustrator ではフォントリストには出るけれども表示できません。
@@ -183,7 +183,7 @@ eps2write は gs9.14 以降で追加されたデバイスなので，お使い�
 文字が小さいとアウトラインではなくビットマップ化されてしまいます。
 
 ```
-\documentclass[30pt]{jsarticle}
+\documentclass[uplatex,dvips,30pt]{jsarticle}
 \pagestyle{empty}
 \begin{document}
 \[ \int_{0}^{\infty} \frac{\sin x}{\sqrt{x}} dx = \sqrt{\frac{\pi}{2}} \]
@@ -193,7 +193,7 @@ eps2write は gs9.14 以降で追加されたデバイスなので，お使い�
 次のコマンドを順に打ち込みます（Unix-like OS の場合）。
 
 ```
-$ platex testeq.tex
+$ uplatex testeq.tex
 $ dvips -E testeq.dvi -o testeq.eps
 $ eps2eps testeq.eps testeq2.eps
 ```
@@ -258,10 +258,10 @@ PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の�
 
 - [IllustratorにLaTeXiT!で貼り付けた数式(PDF)をIllustratorで編集する](http://rhythm-waltz.tumblr.com/post/29630360920/illustrator-latexit-pdf-illustrator)
 - Computer Modern フォントの OpenType フォント形式ファイル：
-    [CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/)
+    [CTAN:fonts/cm/ps-type1/bakoma/otf](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf)
 
 - Latin Modern フォントの OpenType フォント形式ファイル：
-    [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/)
+    [CTAN:fonts/lm/fonts/opentype/public/lm](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm)
 
 - [Mac 版 Illustrator での数式の編集](https://okumuralab.org/tex/mod/forum/discuss.php?d=1048)
 
