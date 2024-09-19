@@ -241,7 +241,7 @@ CIDFnmap には以下のように記述すれば，表示も PDF 化も大丈夫
 /Sazanami-Gothic-Regular   (sazanami-gothic.ttf) ;
 ```
 
-情報処理推進機構 (IPA) の TrueType フォント5書体「[IPA フォント](http://ipafont.ipa.go.jp)」を利用するには，以下のように記述します：
+情報処理推進機構 (IPA) の TrueType フォント5書体「[IPA フォント](https://moji.or.jp/ipafont/)」を利用するには，以下のように記述します：
 
 ```
 /Ryumin-Light              /IPAMincho ;
