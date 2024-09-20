@@ -54,7 +54,6 @@ pacman -S mingw-w64-x86_64-gnome-latex
 ### macOS {#b3c38ac4}
 
 - [https://formulae.brew.sh/formula/gnome-latex](https://formulae.brew.sh/formula/gnome-latex)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gnome-latex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gnome-latex.rb)
 
 ```
 brew install gnome-latex
@@ -62,10 +61,10 @@ brew install gnome-latex
 
 ### Arch Linux/Manjaro Linux {#z0c32b42}
 
-- [https://www.archlinux.org/packages/?name=gnome-latex](https://www.archlinux.org/packages/?name=gnome-latex)
+- [https://archlinux.org/packages/?sort=&q=enter-tex](https://archlinux.org/packages/?sort=&q=enter-tex)
 
 ```
-sudo pacman -S gnome-latex
+sudo pacman -S enter-tex
 ```
 
 ### openSUSE {#z63d593b}
