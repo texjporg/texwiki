@@ -75,6 +75,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2024年 {#a293ab5d}
 
+- S. Kottwitz(著)／黒川 利明(訳)
+    『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
+    （[朝倉書店](https://www.asakura.co.jp/)，2024年11月01日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
+
 - [やまいも](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』
     （[BOOTH](https://imoarai.booth.pm/items/5799095)，2024年5月25日初版発行（技術書典16），電子版 &yen;700）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
@@ -174,8 +178,8 @@ TeX や LaTeX に関する本の紹介です．
 #### 2000年 {#o161a1dd}
 
 - 生田 誠三
-    『[LaTeX2ε 文典](http://www.asakura.co.jp/books/isbn/978-4-254-12140-7/)』
-    （朝倉書店，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
+    『[LaTeX2ε文典](https://www.asakura.co.jp/detail.php?book_code=12140)』
+    （[朝倉書店](https://www.asakura.co.jp/)，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 #### 1994年 {#ifa2fe64}
 
@@ -194,10 +198,10 @@ TeX や LaTeX に関する本の紹介です．
         英語版は [CTAN:info/lshort/english](https://mirror.ctan.org/info/lshort/english) を参照。
         日本語版は [CTAN:info/lshort/japanese](https://mirror.ctan.org/info/lshort/japanese) を参照。
 
-- [An essential guide to LaTeX2e usage: Obsolete commands and packages](https://mirror.ctan.org/help/Catalogue/entries/l2tabu-english.html)
+- [An essential guide to LaTeX2e usage: Obsolete commands and packages](https://mirror.ctan.org/info/l2tabu/english/l2tabuen.pdf)
 
 - [Making TeX Work](https://mirror.ctan.org/info/makingtexwork/) (O'Reilly)
-    - [http://makingtexwork.sourceforge.net/mtw/](http://makingtexwork.sourceforge.net/mtw/)
+    - [https://makingtexwork.sourceforge.net/mtw/](https://makingtexwork.sourceforge.net/mtw/)
 
 - Karl Berry,
     “[LaTeX: Structured documents for TeX&mdash;unofficial LaTeX reference manual](http://home.gna.org/latexrefman/)”
