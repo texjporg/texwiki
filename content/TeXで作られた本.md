@@ -19,10 +19,10 @@ pukiwiki: "TeXで作られた本"
 TeX で作った本を出している出版社：
 
 > - [KADOKAWA](https://www.kadokawa.co.jp/)
-> - [インプレス](http://www.impressjapan.jp/)
-> - [技術評論社](http://gihyo.jp/)
-> - [朝倉書店](http://www.asakura.co.jp/)
-> - [岩波書店](http://www.iwanami.co.jp/)
+> - [インプレス](https://book.impress.co.jp/)
+> - [技術評論社](https://gihyo.jp/)
+> - [朝倉書店](https://www.asakura.co.jp/)
+> - [岩波書店](https://www.iwanami.co.jp/)
 > - [内田老鶴圃](http://www.rokakuho.co.jp/)
 > - [旺文社](http://www.obunsha.co.jp/)
 > - [学術図書出版社](http://www.gakujutsu.co.jp/)
@@ -154,8 +154,8 @@ Date: 5 Nov 2002 11:11:53 -0800
 ```
 
 質問：
-[What has WYSIWYG done to us?](http://www.ideography.co.uk/library/seybold/WYSIWYG.html)
-や [Word Processors: Stupid and Inefficient](http://www.ecn.wfu.edu/~cottrell/wp.html)
+[What has WYSIWYG done to us?](https://xml.coverpages.org/taylorWYSIWYG.html)
+や [Word Processors: Stupid and Inefficient](http://cda.psych.uiuc.edu/latex_class_material/wp.html)
 を読んだが，TeX で作った本当に美しい本を紹介してほしい。
 
 その答えから：
