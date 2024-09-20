@@ -7,7 +7,7 @@ pukiwiki: "pdftk-java"
 
 # pdftk-java
 
-## pdftk {#v32u9c8e}
+## pdftk-java {#v32u9c8e}
 
 ### はじめに {#k42vf083}
 
@@ -26,13 +26,33 @@ PDF ファイルの結合，分割，並べ替え，ページ回転，ページ�
 
 ### インストール {#a7k286v4}
 
-macOS Sonoma / macOS Ventura / macOS Monterey / macOS Big Sur の場合は
+#### macOS {#c0e9bc49}
+
+- [https://formulae.brew.sh/formula/pdftk-java](https://formulae.brew.sh/formula/pdftk-java)
+
+macOS Sonoma / m-cOS Ventura / macOS Monterey / macOS Big Sur の場合は
 
 ```
 brew install pdftk-java
 ```
 
 を実行します。
+
+#### Arch Linux {#g0d03019}
+
+- [https://archlinux.org/packages/?sort=&q=pdftk](https://archlinux.org/packages/?sort=&q=pdftk)
+
+#### Debian {#v2f9ea11}
+
+- [https://packages.debian.org/ja/pdftk-java](https://packages.debian.org/ja/pdftk-java)
+
+#### Fedora {#h57fb0ed}
+
+- [https://packages.fedoraproject.org/pkgs/pdftk-java/pdftk-java/](https://packages.fedoraproject.org/pkgs/pdftk-java/pdftk-java/)
+
+#### openSUSE {#i6b20531}
+
+- [https://software.opensuse.org/package/pdftk](https://software.opensuse.org/package/pdftk)
 
 #### ビルド {#s5yn263g}
 
@@ -41,8 +61,9 @@ brew install pdftk-java
 
 ### 使い方 {#m37fe2x6}
 
-[PDFtk Server Manual](https://www.pdflabs.com/docs/pdftk-man-page/)参照．
-pdftk --help または pdftk -h と入力すれば詳しいマニュアルが現れます．
+[synopsis.txt](https://gitlab.com/pdftk-java/pdftk/-/blob/master/java/com/gitlab/pdftk_java/resources/synopsis.txt) と [description.txt](https://gitlab.com/pdftk-java/pdftk/-/blob/master/java/com/gitlab/pdftk_java/resources/description.txt) を参照．
+
+pdftk --help または pdftk -help または pdftk -h と入力すれば詳しいマニュアルが現れます．
 
 ### 関連リンク {#ex5bb0d4}
 
