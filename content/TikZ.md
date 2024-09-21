@@ -46,7 +46,7 @@ TikZ の発音について，“公式”のものは特に定められていな
 
 - [https://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz](https://tex.stackexchange.com/questions/40938/how-do-i-pronounce-tikz) ― /tiks/ という答え。
 - [https://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee](https://tex.stackexchange.com/questions/212355/how-is-tikz-meant-to-be-pronounced-tiks-tikz-or-tik-zee) ― /tikts/ という答え。
-- [TikZって何て発音すればいいの?](https://twitter.com/keno_ss/status/354006358468739072)
+- [TikZって何て発音すればいいの?](https://x.com/keno_ss/status/354006358468739072)
 
 ### 初期設定 {#e634a5d8}
 
@@ -1042,7 +1042,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - <strong>dvipdfmx で path picture は使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.176-177）
     - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.177-178）
     - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1148-1149）
-    - <strong>dvipdfmx で \[remember picture\] は使用可</strong> --&gt; [TikZ/PGF の図画間結合 (inter-picture connections) が pLaTeX/upLaTeX でも標準サポートされたようだ。つまり『pxpgfmark パッケージは不要になった』ということ。](https://twitter.com/aminophen/status/1114133430826987520)
+    - <strong>dvipdfmx で \[remember picture\] は使用可</strong> --&gt; [TikZ/PGF の図画間結合 (inter-picture connections) が pLaTeX/upLaTeX でも標準サポートされたようだ。つまり『pxpgfmark パッケージは不要になった』ということ。](https://x.com/aminophen/status/1114133430826987520)
         - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](https://zrbabbler.hatenablog.com/entry/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](https://zrbabbler.hatenablog.com/entry/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが，品質は落ちる／透明度は最近のGhostscriptを必要とする
@@ -1127,11 +1127,12 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - 木構造を表す模式図の作成例
 - [TikZを利用した図形描画](https://unilab.gbb60166.jp/TikZ_etude/TikZ_etude.htm)，[プレ高数学科](https://unilab.gbb60166.jp/prekou/prekou.htm)
     - 初等幾何の作図例（扇型，円を組み合わせた面積，角度），算数・数学の図形・グラフやイラストの描画
-- [TikZを使ってのび太を描いてみた。](https://twitter.com/wakuwakuwkwk/status/523127272992043008)
+- [TikZを使ってのび太を描いてみた。](https://x.com/wakuwakuwkwk/status/523127272992043008)
 - [TikZ - TeX Wikiの実行結果をまとめました](http://togetter.com/li/761383)
 - [TikZ でこけし・Barnsley fern・トポロジカル欠陥](https://event.phys.s.u-tokyo.ac.jp/physlab2022/posts/12/)
 - [TeXについて](https://alg-d.com/math/tex.html)
     - [TikZの使い方](https://alg-d.com/math/tikz.pdf)
+- [https://x.com/search?q=TikZ+lang%3Aja&f=live](https://x.com/search?q=TikZ+lang%3Aja&f=live)
 
 <!-- リンク切れ -->
 <!-- -[[Japanese TikZ Tutorial:https://github.com/Yasunari15/Japanese-TikZ-Tutorial]] -->
@@ -1149,8 +1150,13 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 - [［改訂第9版］LaTeX美文書作成入門（2023年12月9日）](https://gihyo.jp/book/2023/978-4-297-13889-9)
     - 付録DにTikZの簡単な解説と，R，Python，gnuplotとの連携についての記述がある
+- [TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)
+    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
+- [TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)
+    - LaTeX Graphics with TikZ の日本語訳。
 - [LaTeX Graphics with TikZ](https://www.packtpub.com/product/latex-graphics-with-tikz/9781804618233)
-    - 英語版のみ。第1版2023年6月9日
+    - LaTeX Graphics with TikZ の英語版。第1版2023年6月9日
+    - [LaTeXグラフィックスとTikZ](https://tikz.jp/) LaTeX Graphics with TikZ に関する追加情報
 
 ### ChangeLog {#off3b30e}
 
