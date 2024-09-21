@@ -1055,15 +1055,14 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TikzEdt](http://www.tikzedt.org/)
 - [TikZ Editor](https://github.com/fredokun/TikZ-Editor)
     - [TikZ Editor (Mac) で \\(backslash)が入力できない場合の対処法](http://yt-siden-memo.tumblr.com/post/96350093900/tikz-editor-mac-backslash)
-- [Circuit](http://wwwu.uni-klu.ac.at/magostin/cirkuit.html)
-- [KtikZ/QtikZ](http://kde-apps.org/content/show.php/ktikz?content=63188)
-    - [Ubuntu 12.10: QTikZ で日本語（１）導入，メニューの日本語化](http://blog.livedoor.jp/ti5942/archives/7563183.html)
+- [KtikZ](https://github.com/fhackenberger/ktikz)
 - [GeoGebra](https://www.geogebra.org/)
-    - GeoGebraの使い方…[GeoGebra日本](https://sites.google.com/site/geogebrajp/)
-- [Jpdgdraw](http://www.dickimaw-books.com/apps/jpgfdraw/)
-- [Sketch -- A 3D Scene Description Translator](http://www.frontiernet.net/~eugene.ressler/)
-- [ePiX](http://mathcs.holycross.edu/~ahwang/epix/ePiX.html)
-- [WhizzyTikZ](https://bitbucket.org/gvol/whizzy-tikz)
+    - [GeoGebra+TikZ](http://www.math-konami.com/blog/?p=828)
+    - [GeoGebraとCinderella - G TeXの図版を作る](https://sites.google.com/site/geogebratocinderella/hua-xiang/tex)
+- [FlowframTk](https://www.dickimaw-books.com/software/flowframtk/)
+- [Sketch -- A 3D Scene Description Translator](https://www.frontiernet.net/~eugene.ressler/)
+- [ePiX](https://mathcs.holycross.edu/~ahwang/epix/ePiX.html)
+- [私家版：TikZの情報源](https://qiita.com/ryutaatkagawanct/items/2be3ade57730fcaad019)
 
 ## 関連リンク {#rdbc5335}
 
