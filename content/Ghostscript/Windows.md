@@ -26,7 +26,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 - 角藤版 Ghostscript
     - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
         - TeX Live のコミッタである角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
-        - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://twitter.com/aminophen/status/856445778486636544)
+        - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://x.com/aminophen/status/856445778486636544)
 - winget Ghostscript
     - winget からインストールできる Ghostscript
 - Scoop Ghostscript
