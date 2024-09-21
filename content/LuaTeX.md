@@ -7,9 +7,9 @@ pukiwiki: "LuaTeX"
 
 # LuaTeX
 
-## [LuaTeX](http://www.luatex.org/) {#af5563d6}
+## [LuaTeX](https://www.luatex.org/) {#af5563d6}
 
-LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](http://www.lua.org/)
+LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト言語 [Lua](https://www.lua.org/)
 が使える TeX です．[pdfTeX](/pdfTeX/) の後継として期待されています。
 派生版として [LuajitTeX](/LuajitTeX/) があります．
 
@@ -60,7 +60,7 @@ TeX Live 2018 には内蔵 Lua 処理系のバージョンが異なる2つの Lu
 - luatex, texlua: Lua 5.2.4 を内蔵（デフォルト）
 - luatex53, texlua53: Lua 5.3.4 を内蔵
 
-LuaTeX 開発者 [Luigi Scarso のツイート](https://twitter.com/luigi_scarso/status/1054799795628453889)によれば LuaTeX 1.09.0 が Lua 5.2 をサポートする最後のバージョンになり、その後は Lua 5.3 に完全に移行する模様です。さらに LuaTeX チームには今後 Lua 5.4 に移行していく意思もあるようです。（参考：[NEWS (r6924)](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?revision=48591&view=markup)）
+LuaTeX 開発者 [Luigi Scarso のポスト](https://x.com/luigi_scarso/status/1054799795628453889)によれば LuaTeX 1.09.0 が Lua 5.2 をサポートする最後のバージョンになり、その後は Lua 5.3 に完全に移行する模様です。さらに LuaTeX チームには今後 Lua 5.4 に移行していく意思もあるようです。（参考：[NEWS (r6924)](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?revision=48591&view=markup)）
 
 #### LuaTeX, LuajitTeX と日本語ファイル名 {#r425bd72}
 
@@ -98,7 +98,6 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [os.execute() in LuaTeX 0.75.0](https://okumuralab.org/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
 - [LuaTeXによるマンデルブロ集合の描画](https://github.com/yoshimuraYuu/myBlog/blob/master/articles/luatex_mand.md)
-- [OMakeでlualatexをつかう](http://hideaki-t.blogspot.jp/2012/02/omakelualatex.html)
 - [明日できること。カテゴリ (TeX)](http://termoshtt.blog110.fc2.com/blog-category-4.html)
 - [LuaTeX - ConTeXt wiki](https://wiki.contextgarden.net/LuaTeX)
 - [slnunicode](https://github.com/LuaDist/slnunicode)
@@ -109,15 +108,16 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html), [qa:56952](https://okumuralab.org/~okumura/texfaq/qa/56952.html), [qa:56955](https://okumuralab.org/~okumura/texfaq/qa/56955.html))
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
+- [LuaLaTeX Lab](https://lualatexlab.blog.fc2.com/)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
-- [Luatex home page](http://www.luatex.org/)
-- [Main Page - LuaTeXWiki](http://wiki.luatex.org/)
+- [LuaTeX home](https://www.luatex.org/)
+- [Main Page - LuaTeXWiki](https://wiki.luatex.org/)
 - [lualatex · GitHub](https://github.com/lualatex)
-- [My View - MantisBT](http://tracker.luatex.org/my_view_page.php)
-- [The luatex Archives](http://tug.org/pipermail/luatex/) (TUG)
-- [The dev-luatex Archives](https://mailman.ntg.nl/pipermail/dev-luatex/)
+- [My View - MantisBT](https://tracker.luatex.org/my_view_page.php)
+- [luatex archives - TeX Users Group](https://tug.org/pipermail/luatex/)
+- [lualatex-dev archives - TeX Users Group](https://tug.org/pipermail/lualatex-dev/)
 
 #### License {#u58971dd}
 
@@ -128,10 +128,10 @@ GPLv3, GPLv2
 - [https://serveur-svn.lri.fr/svn/modhel/luatex/](https://serveur-svn.lri.fr/svn/modhel/luatex/)
 - [https://github.com/tex-mirror/luatex](https://github.com/tex-mirror/luatex)
     - [https://github.com/tex-mirror/luatex/commits/trunk](https://github.com/tex-mirror/luatex/commits/trunk)
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
-    - [NEWS](http://tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
+- \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
+    - [log](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
+    - [ChangeLog](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
+    - [NEWS](https://tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
 
 #### 派生版 {#n2ca8cf1}
 
