@@ -19,7 +19,7 @@ pukiwiki: "xeCJK"
 
 xeCJK は [XeLaTeX](/XeTeX/) で CJK 文書を作成するためのパッケージです．
 IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5%AD%97%E3%82%BB%E3%83%AC%E3%82%AF%E3%82%BF)) にも対応しています．
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/), [MiKTeX](/MiKTeX/) に含まれています．
+[TeX Live](</TeX Live/>), [MiKTeX](/MiKTeX/) に含まれています．
 
 - [CTeX-kit](https://github.com/CTeX-org/ctex-kit)
     - [xeCJK](https://github.com/CTeX-org/ctex-kit/tree/master/xeCJK) &lt;-- [https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx](https://raw.githubusercontent.com/CTeX-org/ctex-kit/master/xeCJK/xeCJK.dtx) をダウンロードして適切に処理[^1]すれば xeCJK.sty が得られます．
@@ -196,7 +196,7 @@ ZXjatype は xeCJK が必要です．
 
 #### ZXjatype 0.6b で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
 
-- [https://twitter.com/zr_tex8r/status/571372508261122048](https://twitter.com/zr_tex8r/status/571372508261122048)
+- [https://x.com/zr_tex8r/status/571372508261122048](https://x.com/zr_tex8r/status/571372508261122048)
 - [https://www.overleaf.com/read/drxbbhxpbyfm](https://www.overleaf.com/read/drxbbhxpbyfm)
 
 ZXjatype 0.6b で 丸1「①」(U+2460) が表示されません．
