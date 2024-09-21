@@ -374,7 +374,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 ## 使い方 {#e776cf5f}
 
 - [emacs 29.3の日本語マニュアル](https://ayatakesi.github.io/)
-- [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://twitter.com/tadsan/status/864861829448605696)
+- [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://x.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
 - [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
 - [超入門 Emacs/asir](http://www.math.kobe-u.ac.jp/Asir/emacs-asir.pdf)
