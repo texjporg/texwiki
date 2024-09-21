@@ -22,7 +22,7 @@ pukiwiki: "秀丸エディタ"
 
 ### 動作環境 {#m62ba31c}
 
-Windows 環境で幅広く動作します．
+Windows XP 以降で動作します．
 詳細は[秀まるおのホームページ(サイトー企画)－秀丸エディタ](https://hide.maruo.co.jp/software/hidemaru.html) を参照してください．
 
 ### 秀丸エディタフリー制度 {#faebc82e}
@@ -67,8 +67,8 @@ TeX で文書を作成する場合は行番号の計算方法をエディタ的�
 
 ### マクロ {#q3a2d324}
 
-- [秀まるおのホームページ(サイトー企画) ヘルプファイルサイト](http://hidemaruo.mydns.jp:81/helpsite/)
-    - [秀丸エディタ マクロ言語ヘルプ目次](http://hidemaruo.mydns.jp:81/helpsite/hidemac/html/010_Intro.html)
+- [秀まるおのホームページ ヘルプファイルサイト](https://help.maruo.co.jp/)
+    - [秀丸エディタ マクロ言語ヘルプ目次](https://help.maruo.co.jp/hidemac/html/010_Intro.html)
 
 マクロを使うと LaTeX 環境を簡単に作ることができます．
 一例を[秀丸エディタ/マクロ](</秀丸エディタ/マクロ/>)に挙げておきます．
