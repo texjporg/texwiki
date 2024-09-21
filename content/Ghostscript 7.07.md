@@ -83,7 +83,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 #### Windows {#y7d058ad}
 
-[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://twitter.com/aminophen/status/1304059223580450820) (gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
+[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://x.com/aminophen/status/1304059223580450820) (gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
 デフォルトでは C:\gs に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
