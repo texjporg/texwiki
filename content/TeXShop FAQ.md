@@ -163,7 +163,7 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 これで，補完用語ファイルに \UTF{2022} ではない • が保存されるので，以降正しく補完されるようになります。
 
-- [参考](https://twitter.com/bothiboru/status/756427080619864064)
+- [参考](https://x.com/bothiboru/status/756427080619864064)
 
 ### ソース上何も問題ないはずなのに，Text line contains an invalid character. ^^H や Package inputenc Error: Keyboard character used is undefined (inputenc) in inputencoding \`utf8' というエラーが出てコンパイルできない {#tb887cbe}
 
@@ -178,10 +178,10 @@ defaults write TeXShop ResetSourceTextColorEachTime YES
 
 これを除去するには，正規表現一括置換で \[\x{00}-\x{08}\x{0B}-\x{1F}\] を削除するのがよいでしょう。
 
-- [参考](https://twitter.com/doraTeX/status/657583498316779521)
+- [参考](https://x.com/doraTeX/status/657583498316779521)
 
 より一般には，改行や水平タブを除く制御文字全てを一括で取り除くとよいでしょう。
-\[[\u0000-\u0008\u000E-\u001F\u007F-\u0084\u0086-\u009F\u000B\u000C\u0085\u2028\u2029\] という正規表現で取り除く](https://twitter.com/monokano/status/659530759040974848)のがよさそうです。
+\[[\u0000-\u0008\u000E-\u001F\u007F-\u0084\u0086-\u009F\u000B\u000C\u0085\u2028\u2029\] という正規表現で取り除く](https://x.com/monokano/status/659530759040974848)のがよさそうです。
 
 ### 編集メニューの「統計情報...」が動かない {#nb06ea5c}
 
@@ -419,7 +419,7 @@ pTeX では，JIS X 0208 の範囲の文字しか扱えないため，JIS 第二
 
 [XeLaTeX](/XeTeX/) の場合も otf パッケージが使えませんので，同様に OFF にする必要があります。
 
-- [XeLaTeXでエラーが出る問題は，TeXShopのutf-Exportの設定項目をオンにしていたからいけなかったようだ。このチェックを外したら問題なくコンパイルされるようになった。](https://twitter.com/tolle_et_lege/status/265589597638119424)
+- [XeLaTeXでエラーが出る問題は，TeXShopのutf-Exportの設定項目をオンにしていたからいけなかったようだ。このチェックを外したら問題なくコンパイルされるようになった。](https://x.com/tolle_et_lege/status/265589597638119424)
 
 ### 環境設定 → 詳細 → 保存時の処理 → UTF-8-MAC を UTF-8 に自動変換 とは何？ {#i7c17a71}
 
