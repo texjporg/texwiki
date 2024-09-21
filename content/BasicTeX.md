@@ -53,8 +53,8 @@ $ sudo tlmgr install collection-langjapanese
 #### インストールの事例 {#q65e25e8}
 
 - [macOSにtexlive2023 をインストールする方法](https://pyopyopyo.hatenablog.com/entry/2023/04/07/173000)
-- [Macでの日本語LaTeXお手軽インストール](https://twitter.com/BeryLiuM_Green/status/1390235461667364864)
-- [Mac で日本語 LaTeX 環境最短手順](https://twitter.com/u_sho_KyoPro/status/1388020287233355778)
+- [Macでの日本語LaTeXお手軽インストール](https://x.com/BeryLiuM_Green/status/1390235461667364864)
+- [Mac で日本語 LaTeX 環境最短手順](https://x.com/u_sho_KyoPro/status/1388020287233355778)
 - [macOS Big SurでLaTeX環境整えた時のメモ(2020, x86_64/arm64対応)](https://qiita.com/yaplus/items/55fa6957c1b15dbcf387)
 - [初心者がBasicTexをmacにインストールする(2019年)](https://qiita.com/yuukami1024/items/bec77e17111ad95a1188)
 
@@ -88,6 +88,6 @@ TeX Live の collection-langjapanese には [LuaTeX-ja](/LuaTeX-ja/) も含ま�
 しかし，BasicTeX + collection-langjapanese だけでは ltjsarticle.cls などを使った文書をタイプセットすることができません。
 LuaTeX-ja を実際に使用するには，別途 collection-luatex (ctablestack.sty etc.) や collection-latexextra (filehook.sty etc.) などいくつかのパッケージを追加する必要があります。
 
-% [Twitter](https://twitter.com/_yyu_/status/728825087470632961) などを参考に再現してみて，最小構成を確認できれば追記します。 -- アセトアミノフェン (2016-06-22)
+% [X](https://x.com/_yyu_/status/728825087470632961) などを参考に再現してみて，最小構成を確認できれば追記します。 -- アセトアミノフェン (2016-06-22)
 
 % [ここ](https://qiita.com/yyu/items/e3451caa86779b94abe1)が参考になりそう。
