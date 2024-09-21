@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 [Mark A. Wicks](https://twitter.com/mawicks0930) 氏によって開発された [dvipdfm](http://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 [Mark A. Wicks](https://www.ctan.org/author/wicks) 氏によって開発された [dvipdfm](http://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -251,13 +251,15 @@ I 24
 のように設定しておきます．
 この場合，一日以内ならキャッシュにイメージがある場合，それを使用することを意味しています．
 
-#### extractbb などの名前でシンボリックリンクを作成する {#k882a214}
+#### extractbb などの名前でシンボリックリンクを作成する → extractbb は [extractbb.lua](https://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive/extractbb.lua?view=markup) に置き換えられました {#k882a214}
 
-- [#美文書 １１５ページ，「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://twitter.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://twitter.com/ti5942/status/273742359915794432)
+- [#美文書 １１５ページ，「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://x.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://x.com/ti5942/status/273742359915794432)
 
 dvipdfmx はコマンドの名前によって機能を変えることができます．
 [dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．
 UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．
+
+TeX Live 2025 では，extractbb コマンドを dvipdfmx へ symlink するのをやめて，同等の機能を持つ Lua スクリプトに置き換え，dvipdfmx のコード内の extractbb としての機能を削除する方向性とのこと．--&gt; [https://x.com/doraTeX/status/1807574412763529240](https://x.com/doraTeX/status/1807574412763529240)
 
 #### PDF/X について {#e2cc950a}
 
@@ -469,9 +471,9 @@ CHASS\'{\empty E} DU G\"{\empty O}BE
 
 - [Lucida fonts (T1) and dvipdfm.](https://groups.google.com/group/comp.text.tex/browse_thread/thread/429dd838fe75ea40/d26feb9baf78f9d6)
 - [Diacritics from Bitstream Charter are not translated to PDF](http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=639373)
-- [dvipdfmxがBitstream Charterでバグる！](https://twitter.com/h_okumura/status/209849248987090945)
-- [seac のバグは「構成要素の文字（例だと \\'{} e \\"{} o）を文書のどこかに紛れ込ませる」と逃げられる，はず．](https://twitter.com/zr_tex8r/status/209880317023109120)
-- [dvipdfm(x)のseacバグ](https://twitter.com/golden_lucky/status/209924362785140736)
+- [dvipdfmxがBitstream Charterでバグる！](https://x.com/h_okumura/status/209849248987090945)
+- [seac のバグは「構成要素の文字（例だと \\'{} e \\"{} o）を文書のどこかに紛れ込ませる」と逃げられる，はず．](https://x.com/zr_tex8r/status/209880317023109120)
+- [dvipdfm(x)のseacバグ](https://x.com/golden_lucky/status/209924362785140736)
 
 ## 注意点 {#n8c7de22}
 
@@ -481,8 +483,8 @@ map ファイルの UniJIS-UTF16-H を unicode に変更するか，ソース中
 
 - [upLaTeX + dvipdfmx で波ダッシュ「〜」(U+301C) が 全角チルダ「～」(U+FF5E) で表示される](https://okumuralab.org/tex/mod/forum/discuss.php?d=1218)
 - [qa:49109](https://okumuralab.org/~okumura/texfaq/qa/49109.html)
-- [https://twitter.com/zr_tex8r/status/422752198724825090](https://twitter.com/zr_tex8r/status/422752198724825090)
-- [https://twitter.com/zr_tex8r/status/422763693202350080](https://twitter.com/zr_tex8r/status/422763693202350080)
+- [https://x.com/zr_tex8r/status/422752198724825090](https://x.com/zr_tex8r/status/422752198724825090)
+- [https://x.com/zr_tex8r/status/422763693202350080](https://x.com/zr_tex8r/status/422763693202350080)
 - [pLaTeX + dvipdfmx で PUA 文字を何とかする話](http://d.hatena.ne.jp/zrbabbler/20130420/1366451325)
 
 ### PNG 画像を取り込むと色が変わってしまうことがある {#g4474796}
@@ -623,7 +625,7 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
     <!-- -[[EPS の負座標が欠ける問題:http://emath.a.la9.jp/xdir/bbs/treebbs.cgi?kako=1&all=8805&s=8840]] -->
     <!-- -[[dvipdfm(x)にはご注意を:http://emath.a.la9.jp/xdir/bbs/treebbs.cgi?kako=1&log=5586]] -->
     <!-- ↑これらは単に dvipdfmx.cfg の設定が悪かったというだけの話のようです．設定が悪いのを dvipdfmx に責任転嫁するのは考えものです． -->
-    <!-- -[[いかなる意味の印刷もしないのならばdvipdfmxの利用は考えてもいいかもしれない:https://twitter.com/p_typo/status/624638576509059072]] -->
+    <!-- -[[いかなる意味の印刷もしないのならばdvipdfmxの利用は考えてもいいかもしれない:https://x.com/p_typo/status/624638576509059072]] -->
     <!-- ↑これはどういう意味ですか？背景説明なくこのリンクだけでは意味が分かりません． -->
 
 ### ライセンス {#w1524716}
