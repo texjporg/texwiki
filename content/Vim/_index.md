@@ -32,7 +32,7 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 - [https://github.com/vim/vim-win32-installer](https://github.com/vim/vim-win32-installer)
     - [https://github.com/vim/vim-win32-installer/releases](https://github.com/vim/vim-win32-installer/releases)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
-    - [twitter](https://twitter.com/vim_jp)
+    - [X](https://x.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
         <!-- -https://sourceforge.net/projects/vim/ -->
