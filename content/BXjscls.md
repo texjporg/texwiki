@@ -557,7 +557,7 @@ BXJS クラス（標準設定）では \jachar{&lt;文字>} という命令を�
 
 #### macOS で IPAex フォントがシステムにインストールされていない状態で BXjscls のデフォルト設定のまま XeLaTeX を使用するとエラーになる {#gc18a2b0}
 
-macOS で IPAex フォントがシステムにインストールされていない状態で BXjscls のデフォルト設定のまま XeLaTeX を使用するとエラーになるようです。--&gt; ([参考](https://twitter.com/wtsnjp/status/1068110801381163008))
+macOS で IPAex フォントがシステムにインストールされていない状態で BXjscls のデフォルト設定のまま XeLaTeX を使用するとエラーになるようです。--&gt; ([参考](https://x.com/wtsnjp/status/1068110801381163008))
 
 ### 不具合 {#x3d34063}
 
