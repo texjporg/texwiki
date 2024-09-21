@@ -826,7 +826,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 ### use LaTeX2e and AMS-LaTeX {#s49fcef1}
 
 デフォルトでは YaTeX-use-AMS-LaTeX の値は t です．
-AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設定してみてください．(参照 [その1](https://twitter.com/hiroseyuuji/status/173544126686572544), [その2](https://twitter.com/liquid_amber/status/173975511570194432))
+AMS-LaTeX がうまく動作しない場合は YaTeX をロードする前に設定してみてください．
 
 ```
 (setq YaTeX-use-LaTeX2e t)
