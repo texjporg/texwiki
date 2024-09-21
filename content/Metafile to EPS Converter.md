@@ -45,4 +45,5 @@ metafile2eps.exe をダブルクリックしてインストーラーの指示に
 - [ExcelのグラフをTeXに持ち込む](http://www.caspar003.info/delta/archive/2011/09/26/2337)
 - [How to Convert PowerPoint Pictures for Use in LaTeX](http://www.cs.bu.edu/~reyzin/pictips.html)
 - [http://tex.stackexchange.com/questions/21418/inserting-a-emf-file-into-a-latex-document](http://tex.stackexchange.com/questions/21418/inserting-a-emf-file-into-a-latex-document)
-- [https://twitter.com/search?q=metafile2eps&f=live](https://twitter.com/search?q=metafile2eps&f=live)
+- [https://x.com/search?q=Metafile+to+EPS+Converter&f=live](https://x.com/search?q=Metafile+to+EPS+Converter&f=live)
+- [https://x.com/search?q=metafile2eps&f=live](https://x.com/search?q=metafile2eps&f=live)
