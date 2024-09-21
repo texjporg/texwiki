@@ -17,11 +17,8 @@ pukiwiki: "pdf2htmlEX"
 
 pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウェアです．
 
-- [pdf2htmlEX by coolwanglu](http://coolwanglu.github.com/pdf2htmlEX/)
-- [pdf2htmlEX](https://github.com/coolwanglu/pdf2htmlEX)
-    - [FAQ](https://github.com/coolwanglu/pdf2htmlEX/wiki/FAQ)
-- [WANG Lu (coolwanglu) - Twitter](https://twitter.com/coolwanglu)
-    - 日本語で返信していただいてもかまいません。
+- [GitHub - pdf2htmlEX/pdf2htmlEX: Convert PDF to HTML without losing text or format.](https://github.com/pdf2htmlEX/pdf2htmlEX)
+    - [FAQ](https://github.com/pdf2htmlEX/pdf2htmlEX/wiki/FAQ)
 
 ### License {#n5a65da7}
 
@@ -29,21 +26,21 @@ pdf2htmlEX は PDF ファイルを HTML ファイルに変換するソフトウ�
 
 ### ChangeLog {#z70dc8d6}
 
-- [https://github.com/coolwanglu/pdf2htmlEX/commits/master](https://github.com/coolwanglu/pdf2htmlEX/commits/master)
+- [https://github.com/pdf2htmlEX/pdf2htmlEX/commits/master/](https://github.com/pdf2htmlEX/pdf2htmlEX/commits/master/)
 
 ## 不具合 {#q60cf17d}
 
-- [https://github.com/coolwanglu/pdf2htmlEX/issues](https://github.com/coolwanglu/pdf2htmlEX/issues)
+- [https://github.com/pdf2htmlEX/pdf2htmlEX/issues](https://github.com/pdf2htmlEX/pdf2htmlEX/issues)
 
 ## インストール {#d5b9a2e9}
 
-see [https://github.com/coolwanglu/pdf2htmlEX/wiki/Building](https://github.com/coolwanglu/pdf2htmlEX/wiki/Building)
+see [https://github.com/pdf2htmlEX/pdf2htmlEX/wiki/Building](https://github.com/pdf2htmlEX/pdf2htmlEX/wiki/Building)
 
 ### Windows {#r72743bf}
 
-#### [MXE (M cross environment)](http://mxe.cc/) {#tecb65f1}
+#### [MXE (M cross environment)](https://mxe.cc/) {#tecb65f1}
 
-[pdf2htmlEX Windows Version](http://soft.rubypdf.com/software/pdf2htmlex-windows-version)
+[pdf2htmlEX Windows Version](https://soft.rubypdf.com/software/pdf2htmlex-windows-version)
 
 #### MinGW {#d9c5cb24}
 
@@ -541,11 +538,7 @@ Cygwin では問題なく動作するようです．<br>
 
 #### Homebrew {#db279f00}
 
-- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/pdf2htmlex.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/pdf2htmlex.rb)
-
-```
-$ brew install pdf2htmlex
-```
+- [pdf2htmlEXがbrewで使えなくなっていたのでDockerで使ってみた](https://qiita.com/ryors_k/items/d5c581aa745a23da80dd)
 
 #### MacPorts {#ub0beda7}
 
