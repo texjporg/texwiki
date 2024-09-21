@@ -21,7 +21,7 @@ TeX や LaTeX に関する本の紹介です．
 ### オンライン本 <a id="online"></a> {#n75007a3}
 
 - ウィキブックス (Wikibooks) &mdash;
-    [TeX/LaTeX 入門](http://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
+    [TeX/LaTeX 入門](https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
     <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
@@ -68,7 +68,7 @@ TeX や LaTeX に関する本の紹介です．
 ### 書籍 {#z5fa285b}
 
 [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html) や
-[本棚.org ](http://hondana.org/TeX/) や
+[本棚.org ](https://hondana.org/TeX/) や
 [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
@@ -83,22 +83,26 @@ TeX や LaTeX に関する本の紹介です．
     （[BOOTH](https://imoarai.booth.pm/items/5799095)，2024年5月25日初版発行（技術書典16），電子版 &yen;700）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
 
+- [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
+    （Independently published，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
+    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
+
 #### 2023年 {#d39f7b4a}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://twitter.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
     （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版、電子版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
 
 #### 2022年 {#v85cf0f1}
 
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](http://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](http://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
+- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 
-- [明松 真司](https://mobile.twitter.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
+- [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年 {#jf0f3e5a}
 
-- [ふぉれぽん](https://twitter.com/forepon1979)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集 ペーパーバック](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
+- [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
     （Independently published，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
 
 #### 2020年 {#q26632bb}
@@ -107,11 +111,11 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#sf1a21f3}
 
-- [坂東慶太](https://twitter.com/BandoKeita)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
+- 坂東慶太『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
 #### 2018年 {#l525d944}
 
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](http://www.cutt.co.jp/book/978-4-87783-438-8.html)』（[カットシステム](http://www.cutt.co.jp/)，2018年9月10日，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
+- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](https://www.cutt.co.jp/book/978-4-87783-438-8.html)』（[カットシステム](https://www.cutt.co.jp/)，2018年9月10日，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）
 
@@ -143,8 +147,8 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2008年 {#qb443317}
 
-- 吉永 徹美『[独習 LaTeX2ε](http://www.shoeisha.co.jp/book/detail/9784798115368)』
-    （[翔泳社](http://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
+- 吉永 徹美『[独習LaTeX2ε](https://www.shoeisha.co.jp/book/detail/9784798115368)』
+    （[翔泳社](https://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
     <!-- 「ただし，」以下の文章は，どの本についても言えることなので要らないと思います． -->
     <!-- - - 少なくとも「美文書」は違います。ただこの本に特筆すべきでない気もします。 -->
@@ -160,10 +164,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2006年 {#za2d8d5e}
 
-- [阿部 紀行](http://www.ms.u-tokyo.ac.jp/~abenori/)
+- [阿部 紀行](https://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
-    （[サイエンス社](http://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
-    - [「一歩踏み込む LaTeXの基本」サポートページ](http://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
+    （[サイエンス社](https://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
+    - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
 
 #### 2005年 {#naf302ff}
 
@@ -231,20 +235,20 @@ William Adams の
 
 ### 書籍 {#i9f92f07}
 
-- [Donald Ervin Knuth](http://www-cs-faculty.stanford.edu/~knuth/)
+- [Donald Ervin Knuth](https://www-cs-faculty.stanford.edu/~knuth/)
     『[The TeXbook](https://www.informit.com/store/texbook-9780201134483)』
-    （[Addison-Wesley Professional](http://www.informit.com/imprint/index.aspx?st=61085)，1984年，価格 &yen;4,972，[ISBN 978-0-201-13448-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-13448-3)）……TeX
+    （[Addison-Wesley Professional](https://www.informit.com/imprint/index.aspx?st=61085)，1984年，価格 &yen;4,972，[ISBN 978-0-201-13448-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-13448-3)）……TeX
     の原典です。LaTeX の解説ではありません。
     原著のソースファイル： [CTAN:systems/knuth/dist/mf/mfbook.tex](https://mirror.ctan.org/systems/knuth/dist/mf/mfbook.tex)
 
-- [Leslie Lamport](http://lamport.org/)
-    『[LaTeX: A Document Preparation System, 2nd Edition](http://www.informit.com/store/latex-a-document-preparation-system-9780201529838)』
-    （[Addison-Wesley Professional](http://www.informit.com/imprint/index.aspx?st=61085)，1994年，価格 &yen;3,938，[ISBN 978-0-201-52983-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-52983-8)）……LaTeX2e
+- [Leslie Lamport](https://lamport.org/)
+    『[LaTeX: A Document Preparation System, 2nd Edition](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)』
+    （[Addison-Wesley Professional](https://www.informit.com/imprint/index.aspx?st=61085)，1994年，価格 &yen;3,938，[ISBN 978-0-201-52983-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-52983-8)）……LaTeX2e
     の原典です。
 
-- TeX in Practice [Volume 1: Basics](http://link.springer.com/book/10.1007/978-1-4612-4354-0), [Volume II: Paragraphs, Math and Fonts](http://link.springer.com/book/10.1007/978-1-4613-9139-5), [Volume III: Tokens, Macros](http://link.springer.com/book/10.1007/978-1-4612-2724-3), [Volume IV: Output Routines, Tables](http://link.springer.com/book/10.1007%2F978-1-4613-9142-5) (Stephan von Bechtolsheim)
+- TeX in Practice [Volume 1: Basics](https://link.springer.com/book/10.1007/978-1-4612-4354-0), [Volume II: Paragraphs, Math and Fonts](https://link.springer.com/book/10.1007/978-1-4613-9139-5), [Volume III: Tokens, Macros](https://link.springer.com/book/10.1007/978-1-4612-2724-3), [Volume IV: Output Routines, Tables](https://link.springer.com/book/10.1007/978-1-4613-9142-5) (Stephan von Bechtolsheim)
 
 本を紹介しているサイト：
 
-- [Books about TeX and Friends](http://tug.org/books/) (TUG)
-- [Suggested TeX and LaTeX Books (and other printed resources)](http://www.macrotex.net/texbooks/)
+- [Books about TeX and Friends](https://tug.org/books/) (TUG)
+- [Recommended TeX and LaTeX Books (and other printed resources)](http://www.macrotex.net/texbooks/)
