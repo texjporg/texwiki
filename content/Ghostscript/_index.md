@@ -76,7 +76,7 @@ Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
 
-[<strong>Ghostscript 10.03.0</strong> がリリースされました。<br><br>※ IPAフォントを指定した cidfmap を使って日本語データが問題なく印刷できることを確認しました。<br>$ gs /usr/share/ghostscript/10.03.0/examples/cjk/gscjk_aj.ps](https://twitter.com/jw_abekyun/status/1765766044860432515)
+[<strong>Ghostscript 10.03.0</strong> がリリースされました。<br><br>※ IPAフォントを指定した cidfmap を使って日本語データが問題なく印刷できることを確認しました。<br>$ gs /usr/share/ghostscript/10.03.0/examples/cjk/gscjk_aj.ps](https://x.com/jw_abekyun/status/1765766044860432515)
 
 <!-- Ghostscript 9.22 (2017-10-04) 以降は日本語の縦書き PostScript ファイルがうまく表示できるようです。([[gs-9.22:https://okumuralab.org/tex/mod/forum/discuss.php?d=2276]]) -->
 
