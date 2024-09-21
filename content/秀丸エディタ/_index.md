@@ -14,7 +14,7 @@ pukiwiki: "秀丸エディタ"
 
 - [秀まるおのホームページ(サイトー企画)](https://hide.maruo.co.jp/)
     - [秀丸エディタ](https://hide.maruo.co.jp/software/hidemaru.html)
-    - [twitter](https://twitter.com/hidemaruinfo)
+    - [X](https://x.com/hidemaruinfo)
 
 ***
 
