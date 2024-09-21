@@ -239,7 +239,7 @@ synctex help edit
 - [TeX Users Group - subversion repository](https://www.tug.org/svn/dviout/)
 - [TeX Users Group - dviout Mailing List](https://tug.org/mailman/listinfo/dviout)
 - [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/) [関連ファイル](http://argent.shinshu-u.ac.jp/~otobe/tex/files/) (乙部先生@信州大学)
-- [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://twitter.com/aminophen/status/873785429765480448)
+- [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://x.com/aminophen/status/873785429765480448)
 
 ### ライセンス {#w9d4ec9d}
 
