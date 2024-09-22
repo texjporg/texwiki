@@ -418,7 +418,6 @@ W32TeX \[2013/12/24\] と W32TeX \[2008/03/18\] が保存されています。
 
 以下のリンクは [https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/) へのものですが，状況によって上記のミラーサイトを用いてください．
 
-なお，頻繁に更新されていますのでバージョン番号は下と異なるかもしれません．
 ファイルによっては 64-bit バイナリが存在します．
 ただし，対応する 32-bit ファイルもダウンロードが必要です．
 
@@ -481,7 +480,7 @@ W32TeX \[2013/12/24\] と W32TeX \[2008/03/18\] が保存されています。
 <tr><td colspan="2" style="text-align:center"><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstricks.tar.xz">pstricks.tar.xz</a></td><td><a href="/PSTricks/">PSTricks</a></td></tr>
 <tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/pstoedit-w64.tar.xz">pstoedit-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/pstoedit-w32.tar.xz">pstoedit-w32.tar.xz</a></td><td><a href="/pstoedit/">pstoedit</a></td></tr>
 <tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/psutils-w64.tar.xz">psutils-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/psutils-w32.tar.xz">psutils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
-<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a><br>TeX Live には収録されていません．tltexjp から入手することはできます．</td></tr>
+<tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/ptex-ng-w64.tar.xz">ptex-ng-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/ptex-ng-w32.tar.xz">ptex-ng-w32.tar.xz</a></td><td><a href="/pTeX-ng/">pTeX-ng</a><br>TeX Live には収録されていません．</td></tr>
 <tr><td>なし</td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/qpdf-w32.tar.xz">qpdf-w32.tar.xz</a></td><td><a href="/QPDF/">QPDF</a><br>TeX Live には収録されていません．</td></tr>
 <tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/sam2p-w64.tar.xz">sam2p-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/sam2p-w32.tar.xz">sam2p-w32.tar.xz</a></td><td>sam2p</td></tr>
 <tr><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/win64/t1utils-w64.tar.xz">t1utils-w64.tar.xz</a></td><td><a href="https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/t1utils-w32.tar.xz">t1utils-w32.tar.xz</a></td><td>ユーティリティ類</td></tr>
