@@ -70,7 +70,7 @@ Beamer は
 
 ### dvipdfmx, XeLaTeX でナビゲーションシンボルと \framezoom が機能しない → [bxdpx-beamer](https://ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/bxdpx-beamer) パッケージを使用する {#v3f3e1ec}
 
-bxdpx-beamer パッケージは TeX Live, W32TeX に含まれています．<br>
+bxdpx-beamer パッケージは TeX Live に含まれています．<br>
 
 - [LaTeX: to make the navigation symbols (and \framezoom) work with dvipdfmx](https://gist.github.com/zr-tex8r/4980892)
 - [Beamer は dvipdfmx をサポートするか否か？ (1)](http://d.hatena.ne.jp/zrbabbler/20130220/1361318258)
