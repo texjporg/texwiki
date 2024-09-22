@@ -35,20 +35,16 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
 - [https://github.com/CTeX-org/ctex-kit/releases](https://github.com/CTeX-org/ctex-kit/releases)
 - [https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx](https://github.com/CTeX-org/ctex-kit/commits/master/xeCJK/xeCJK.dtx)
 
-<!-- **注意点 [#w700f957] -->
+### 注意点 {#w700f957}
 
-### 不具合 {#t2600dd9}
+#### xeCJK 3.9.1 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
 
-[Issues](https://github.com/CTeX-org/ctex-kit/issues?q=xeCJK)
-
-#### xeCJK 3.6.1 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#p8d5ba51}
-
-xeCJK 3.6.1 で 丸1「①」(U+2460) が表示されません．
+xeCJK 3.9.1 で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass{scrartcl}
 \usepackage{xeCJK}
-\setCJKmainfont{ipaexm.ttf}
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}
 \begin{document}
 ABCDEあいうえお①
 \end{document}
@@ -59,12 +55,16 @@ ABCDEあいうえお①
 ```
 \documentclass{scrartcl}
 \usepackage{xeCJK}
-\setCJKmainfont{ipaexm.ttf}
+\setCJKmainfont{HaranoAjiMincho-Regular.otf}
 \xeCJKDeclareCharClass{CJK}{`①}
 \begin{document}
 ABCDEあいうえお①
 \end{document}
 ```
+
+### 不具合 {#t2600dd9}
+
+[Issues](https://github.com/CTeX-org/ctex-kit/issues?q=xeCJK)
 
 ### 使い方 {#k3d278aa}
 
@@ -192,19 +192,19 @@ ZXjatype は xeCJK が必要です．
 
 [Commit History · zr-tex8r/ZXjatype · GitHub](https://github.com/zr-tex8r/ZXjatype/commits/)
 
-### 不具合 {#u54213d7}
+### 注意点 {#w1bedbd6}
 
-#### ZXjatype 0.6b で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
+#### ZXjatype 0.7 で 丸1「①」(U+2460) が表示されない → \xeCJKDeclareCharClass{CJK}{\`①} または \XeTeXcharclass\`①=1 を追加 {#f847cc0f}
 
 - [https://x.com/zr_tex8r/status/571372508261122048](https://x.com/zr_tex8r/status/571372508261122048)
 - [https://www.overleaf.com/read/drxbbhxpbyfm](https://www.overleaf.com/read/drxbbhxpbyfm)
 
-ZXjatype 0.6b で 丸1「①」(U+2460) が表示されません．
+ZXjatype 0.7 で 丸1「①」(U+2460) が表示されません．
 
 ```
 \documentclass[xelatex]{bxjsarticle}
 \usepackage{zxjatype}
-\setjamainfont{ipaexm.ttf}
+\setjamainfont{HaranoAjiMincho-Regular.otf}
 \begin{document}
 ABCDEあいうえお①
 \end{document}
@@ -215,7 +215,7 @@ ABCDEあいうえお①
 ```
 \documentclass[xelatex]{bxjsarticle}
 \usepackage{zxjatype}
-\setjamainfont{ipaexm.ttf}
+\setjamainfont{HaranoAjiMincho-Regular.otf}
 \xeCJKDeclareCharClass{CJK}{`①}
 \begin{document}
 ABCDEあいうえお①
@@ -233,6 +233,10 @@ ABCDEあいうえお①
 ```
 
 #### [BXjsclsを使ったXeLaTeXのときだけparagraphの前にblacksquareが現れない](https://okumuralab.org/tex/mod/forum/discuss.php?d=1704) {#k0a25489}
+
+### 不具合 {#u54213d7}
+
+- [Issues](https://github.com/zr-tex8r/ZXjatype/issues)
 
 ### 使い方 {#v46b0c77}
 
