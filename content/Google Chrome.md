@@ -25,6 +25,10 @@ Chromium は Google Chrome で使用されているオープンソースの Web 
 
 - [Chromium派生ブラウザ総合 まとめWiki](http://www49.atwiki.jp/chromiumbased/)
 
+### コマンドラインオプション {#r806460f}
+
+- [List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
+
 ## プラグイン {#y795a936}
 
 ブラウザ ウィンドウの上部にあるアドレスバーに
