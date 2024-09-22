@@ -46,6 +46,8 @@ GNU Emacs はフリーソフトウェアです．
 - [Emacs Modified for Windows](https://emacs-modified.gitlab.io/windows/)
 - [https://packages.msys2.org/search?t=binpkg&q=emacs](https://packages.msys2.org/search?t=binpkg&q=emacs)
     - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-emacs](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-emacs)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-emacs](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-emacs)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-emacs](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-emacs)
 
 #### macOS {#v2ece0ad}
 
@@ -373,7 +375,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 
 ## 使い方 {#e776cf5f}
 
-- [emacs 29.3の日本語マニュアル](https://ayatakesi.github.io/)
+- [emacs 29.4の日本語マニュアル](https://ayatakesi.github.io/)
 - [2010年代のEmacs入門](http://knowledge.sakura.ad.jp/knowledge/8494/) &lt;-- [いま気付いたけど、nill…](https://x.com/tadsan/status/864861829448605696)
 - [Evil: EmacsをVimのごとく使う - 導入編](http://d.hatena.ne.jp/tarao/20130303/evil_intro)
 - [Emacs超入門［1］：Emacsの基本的な使い方とショートカットキー](https://mag.osdn.jp/09/04/06/1138226)
@@ -384,3 +386,4 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 - [emacsでtexの不要なファイルを適当に削除する方法](http://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
 - [Emacs JP](http://emacs-jp.github.com/)
 - [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
+- [Emacs Lisp TIPS](https://sci.nao.ac.jp/MEMBER/zenitani/elisp-j.html)
