@@ -93,7 +93,7 @@ C-x C-f ~/
 (setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
 (setq tex-bibtex-command "bibtexu")
 (setq tex-print-file-extension ".pdf")
-(setq tex-dvi-view-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq tex-dvi-view-command "powershell -Command \"& {$pdf=[System.String]::Concat('\"\"\"',$args,'\"\"\"');$sumatrapdf=[System.String]::Concat('\"\"\"C:/Users/',$Env:USERNAME,'/AppData/Local/SumatraPDF/SumatraPDF.exe\"\"\"');Start-Process $sumatrapdf -ArgumentList ('-reuse-instance',$pdf)}\"")
 (setq tex-dvi-print-command "start Acrobat")
 (setq tex-compile-commands
       '(("latexmk -e \"$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %f" "%f" "%r.pdf")
