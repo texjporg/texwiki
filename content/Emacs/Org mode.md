@@ -33,6 +33,7 @@ Org mode は
 ## インストール {#l69ff892}
 
 Org mode は Emacs に標準で含まれています．
+Emacs 29.4 の場合は [バージョン 9.6.15](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-29.4#n12) ([2023-12-31](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.6.15)) です．
 最新版を使いたい場合は以下の手順を踏みます．
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
@@ -66,7 +67,7 @@ M-x list-packages RET でリストを表示して org を選択
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
 Org mode はデフォルトでは pdfLaTeX が使われます．
-pdfLaTeX ではなく LuaLaTeX や upLaTeX + dvipdfmx を使用して処理をすることもできます．
+日本語を使用する場合は LuaLaTeX や upLaTeX + dvipdfmx を使用して処理をするように変更します．
 
 ### Windows {#q16766de}
 
@@ -80,12 +81,12 @@ pdfLaTeX ではなく LuaLaTeX や upLaTeX + dvipdfmx を使用して処理を�
 ;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 (setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex %S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %D %S/\" -e \"$dvipdf=q/dvipdfmx -o %D %S/\" -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx -o %%D %%S/\" -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (if (not (eq org-export-in-background t))
     (setq org-file-apps
-          '(("pdf" . "SumatraPDF -reuse-instance %s"))))
+          '(("pdf" . "powershell -Command \"& {\"C:/Users/*/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance %s}"))))
 
 (add-to-list 'org-latex-classes
              '("jlreq"
@@ -177,11 +178,11 @@ pdfLaTeX ではなく LuaLaTeX や upLaTeX + dvipdfmx を使用して処理を�
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
 (setq org-latex-default-class "jlreq")
-;(setq org-latex-default-class "jlreq")
+;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 (setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "open -a Skim %s")))
@@ -271,8 +272,8 @@ pdfLaTeX ではなく LuaLaTeX や upLaTeX + dvipdfmx を使用して処理を�
 ;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 (setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %D %S/' -e '$dvipdf=q/dvipdfmx -o %D %S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "evince %s")))
