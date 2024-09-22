@@ -18,6 +18,8 @@ pukiwiki: "Enter TeX"
 Enter TeX は TeX/LaTeX エディタです．
 SyncTeX に対応しています．
 
+バージョン 3.47.0 (2024-09-14) から Enter TeX という名前に変更されました。バージョン 3.27.2 (2018-01-17) から 3.46.0 (2023-07-29) までは GNOME LaTeX、バージョン 0.0.1 (2009-09-02) から 3.27.1 (2017-12-09) までは LaTeXila という名前でした。
+
 - [Sébastien Wilmet / enter-tex · GitLab](https://gitlab.gnome.org/swilmet/enter-tex)
 
 ### 動作環境 {#a52783ff}
@@ -34,6 +36,8 @@ Windows, macOS, Linux
     - [NEWS](https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/NEWS)
     - [タグ](https://gitlab.gnome.org/swilmet/enter-tex/-/tags)
     - [コミットログ](https://gitlab.gnome.org/swilmet/enter-tex/-/commits/main)
+- [https://download.gnome.org/sources/enter-tex/](https://download.gnome.org/sources/enter-tex/)
+    - [https://download.gnome.org/sources/enter-tex/cache.json](https://download.gnome.org/sources/enter-tex/cache.json)
 
 <!-- *不具合 [#o7b20b21] -->
 
@@ -42,11 +46,14 @@ Windows, macOS, Linux
 ### Windows {#xe7a69b8}
 
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-gnome-latex](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-gnome-latex)
+- [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gnome-latex](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-gnome-latex)
+- [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-gnome-latex](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-gnome-latex)
+- [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-gnome-latex](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-gnome-latex)
 
-Windows 版 GNOME LaTeX は MSYS2 の pacman でインストールできます．
+MSYS2 の pacman でインストールできます．UCRT64 環境で
 
 ```
-pacman -S mingw-w64-x86_64-gnome-latex
+pacman -S mingw-w64-ucrt-x86_64-gnome-latex
 ```
 
 を実行します．
@@ -97,7 +104,7 @@ sudo zypper install gnome-latex
 <!-- :Post Processor| -->
 <!-- :|latexmk -->
 <!--  -->
-<!-- [Build] &gt; [LaTeX → DVI → PDF (Latexmk)] で実行できます． -->
+<!-- [Build] &gt; [LaTeX → DVI → PDF (Latexmk)] で実行できます。 -->
 
 ### Personal build tools {#kcfc97ba}
 
@@ -113,7 +120,21 @@ Post Processor
 
 : latexmk
 
-\[Build\] &gt; \[LuaLaTeXmk\] で実行できます．
+\[Build\] &gt; \[LuaLaTeXmk\] で実行できます。
+
+#### upLaTeXmk {#q6b26226}
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\] &gt; \[upLaTeXmk\] で実行できます。
 
 ## Evince との連携 {#t97f1692}
 
