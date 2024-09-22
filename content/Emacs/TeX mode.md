@@ -103,6 +103,7 @@ C-x C-f ~/
         ("texstudio --pdf-viewer-only %r.pdf" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileName($r),'\"\"\"');Start-Process firefox -ArgumentList ('-new-window',$p)}\"" "%r.pdf")
         ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process chrome -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
+        ("powershell -Command \"& {$r = Write-Output %r.pdf;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process msedge -ArgumentList ('--new-window',$p)}\"" "%r.pdf")
         ("start Acrobat %r.pdf" "%r.pdf")))
 
 (defun sumatrapdf-forward-search ()
@@ -343,7 +344,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 ## 関連リンク {#ca23f166}
 
 - [TeX Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/TeX-Mode.html#TeX-Mode)
-- [TeX Mode (GNU Emacs Manual(Japanese Translation))](https://ayatakesi.github.io/emacs/29.1/html/TeX-Mode.html#TeX-Mode)
+- [TeX Mode (GNU Emacs Manual(Japanese Translation))](https://ayatakesi.github.io/emacs/29.4/html/TeX-Mode.html#TeX-Mode)
 - [RefTeX User Manual](https://www.gnu.org/software/emacs/manual/html_node/reftex/)
 - [【電脳】Mac OS Xで「EmacsでLaTeXファイルを編集→pdflatexでコンパイル→Previewでプレビュー」を繰り返す【自動リロード】](https://srad.jp/~t-nissie/journal/560083)
 
