@@ -139,6 +139,7 @@ TeXworks はスペルチェックの辞書が含まれていないので自分�
 
 ### 設定がうまくいかない場合 {#e58dee18}
 
+- texworks のスペルチェックを英国英語で行いたい ([forum:3828](https://okumuralab.org/tex/mod/forum/discuss.php?d=3828))
 - texworksでスペルチェッカーが機能しない([forum:3149](https://okumuralab.org/tex/mod/forum/discuss.php?d=3149))
 - texworks で スペルチェッカーがインストールできない ([forum:2651](https://okumuralab.org/tex/mod/forum/discuss.php?d=2651))
 
