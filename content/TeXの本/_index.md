@@ -63,7 +63,7 @@ TeX や LaTeX に関する本の紹介です．
     [TeXの話](https://www.ms.u-tokyo.ac.jp/~abenori/tex/)
 
 - [藤田 眞作さん](http://xymtex.com/)
-    [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp)
+    [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)
 
 ### 書籍 {#z5fa285b}
 
