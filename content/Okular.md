@@ -21,20 +21,27 @@ Okular は KDE に搭載されている，PDF ファイルが表示可能なド�
 
 - [Okular - The Universal Document Viewer](https://okular.kde.org/)
 
+### 開発サイト {#q8e2c31b}
+
+- [Graphics / Okular · GitLab](https://invent.kde.org/graphics/okular)
+- [GitHub - KDE/okular: KDE document viewer](https://github.com/KDE/okular)
+
 ### 動作環境 {#ca9192aa}
 
 Windows, macOS, Linux
 
 ### ライセンス {#qbc60c11}
 
-[GPLv2](https://github.com/KDE/okular/tree/master/LICENSES)
+[GPLv2](https://invent.kde.org/graphics/okular/-/tree/master/LICENSES)
 
 ### リリース情報 {#v4dc0489}
 
-[https://github.com/KDE/okular/tags](https://github.com/KDE/okular/tags)
+- [https://invent.kde.org/graphics/okular/-/tags](https://invent.kde.org/graphics/okular/-/tags)
+- [https://github.com/KDE/okular/tags](https://github.com/KDE/okular/tags)
 
 ### ChangeLog {#h7a9328d}
 
+- [https://invent.kde.org/graphics/okular/-/commits/master](https://invent.kde.org/graphics/okular/-/commits/master)
 - [https://github.com/KDE/okular/commits/master](https://github.com/KDE/okular/commits/master)
 
 ## インストール {#xecad964}
