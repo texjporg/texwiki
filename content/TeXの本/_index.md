@@ -69,7 +69,8 @@ TeX や LaTeX に関する本の紹介です．
 
 [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html) や
 [本棚.org ](https://hondana.org/TeX/) や
-[The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) も参照．
+[The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) や
+[TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
