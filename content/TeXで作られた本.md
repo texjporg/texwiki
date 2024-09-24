@@ -37,7 +37,8 @@ TeX で作った本を出している出版社：
 > - [白水社](https://www.hakusuisha.co.jp/)
 > - [平凡社](https://www.heibonsha.co.jp/)
 > - [マガジンハウス](https://magazineworld.jp/)
-> - シュプリンガー・ジャパン → 出版の権利を[丸善出版](https://www.maruzen-publishing.co.jp/)へ譲渡
+>     <!-- -シュプリンガー・ジャパン → 出版の権利を[[丸善出版:https://www.maruzen-publishing.co.jp/]]へ譲渡 -->
+>
 > - [丸善出版](https://www.maruzen-publishing.co.jp/)
 > - [森北出版](https://www.morikita.co.jp/)
 > - [オーム社](https://www.ohmsha.co.jp/)
