@@ -26,7 +26,7 @@ TeX や LaTeX に関する本の紹介です．
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
     <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
     - [thortex (thortex) / Repositories · GitHub](https://github.com/thortex)
-    - 『[好き好き LaTeX2e 初級編](https://github.com/thortex/jlatex-man-lll-jou/blob/master/jouhyper.pdf)』
+    - 『[好き好き LaTeX2e 初級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
             として出版もされています。
             <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
