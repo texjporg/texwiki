@@ -71,7 +71,7 @@ Windows, Cygwin, macOS, Linux
 
 <strong>Lydia の部分は自分のアカウント名に置き換えてください．</strong>
 
-LyX の Windows インストーラーを右クリックします。
+LyX のインストーラーを右クリックします。
 
 > 　　　<strong>開く(O)</strong><br>
 > 　　　...<br>
@@ -525,6 +525,7 @@ sudo zypper install lyx
 - [https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2](https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2)
 - [スタイルファイルの導入～LyXでのレイアウト設定まで\[Win10+texlive+LyX\]](https://qiita.com/merliborn/items/ac0d0a01f056d9e179b5)
 - [LyXで日本語を使うようにする設定(Windows)](https://differentialengine.wordpress.com/2018/10/24/lyx%E3%81%A7%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%82%92%E4%BD%BF%E3%81%86%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E8%A8%AD%E5%AE%9Awindows/)
+- [https://konno.wordpress.com/?s=LyX](https://konno.wordpress.com/?s=LyX)
 - [https://knnlog.wordpress.com/?s=LyX](https://knnlog.wordpress.com/?s=LyX)
 - [LyX: LaTeX文書を楽に作成できるツール](http://sci-tech.ksc.kwansei.ac.jp/~yamane/misc.html)
 - [日本語環境のためのLyX(TeXをグラフィカルに編集するためのソフト)の初期設定](http://qiita.com/Tats_U_/items/b7d207f6c453899fe29e)
