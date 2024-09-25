@@ -122,7 +122,7 @@ macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換�
 
 オープンソースの文献管理ツールとして，以下を挙げておきます。
 
-- [Zotero](https://www.zotero.org/)
+- [Zotero](/Zotero/)
 - [JabRef](http://www.jabref.org/)
 - [BibDesk](https://bibdesk.sourceforge.io/)
 
