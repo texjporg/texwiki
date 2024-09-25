@@ -9,7 +9,7 @@ pukiwiki: "Zotero"
 
 ## [Zotero](https://www.zotero.org/) {#d69bc1ba}
 
-Zotero は、研究のための収集、整理、注釈付け、引用、共有を手助けしてくれる無料で使いやすい文献管理ソフトです。
+Zotero は、研究のための収集、整理、注釈付け、引用、共有を手助けしてくれるオープンソースで使いやすい文献管理ソフトです。
 
 - [https://www.zotero.org/](https://www.zotero.org/)
 
@@ -38,21 +38,24 @@ Windows, macOS, Linux, iOS
 
 #### インストール {#s6f71eb7}
 
-\[ツール\] &gt; \[Plugins\] &gt; &#x2699;（画面右端の歯車） &gt; \[<ins>I</ins>nstall Plugin From File...\] &gt; zotero-better-bibtex-（バージョン）.xpi を選択して開く
+\[ツール\] &gt; \[Plugins\] &gt; \[&#x2699;\]（Plugins Manager 画面右端の歯車） &gt; \[<ins>I</ins>nstall Plugin From File...\] &gt; zotero-better-bibtex-（バージョン）.xpi を選択して開く
 
 #### 設定 {#pb6c4377}
 
-\[編集\] &gt; \[設定\] &gt; 画面左端の項目の中から Better BibTeX を選択
+\[編集\] &gt; \[設定\] &gt; Zotero Settings 画面左端の項目の中から Better BibTeX を選択
 
-Zotero Settings<br>
-&#x2699;一般<br>
-&#x1f504;同期<br>
-&#x2b06;エクスポート<br>
-“„引用<br>
-&#x1f6e0;詳細<br>
-<ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
+> <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
-<span style="color:White;background-color:#1188FF;">Better BibTeX</span><br>
+> &#x2699;一般<br>
+> &#x1f504;同期<br>
+> &#x2b06;エクスポート<br>
+> “„引用<br>
+> &#x1f6e0;詳細<br>
+> <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
+>
+> <span style="color:White;background-color:#1188FF;">Better BibTeX</span><br>
+
+<ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
 ### 開発サイト {#g44b3101}
 
@@ -69,6 +72,10 @@ Zotero Settings<br>
 #### ライセンス {#oe0c75af}
 
 [GNU Affero General Public License (AGPL)](https://github.com/zotero/zotero/blob/main/COPYING)
+
+#### 不具合 {#x70f0c89}
+
+[https://github.com/zotero/zotero/issues](https://github.com/zotero/zotero/issues)
 
 ### 関連リンク {#ba9b42b7}
 
