@@ -26,7 +26,7 @@ TeX や LaTeX に関する本の紹介です．
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
     <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
     - [thortex (thortex) / Repositories · GitHub](https://github.com/thortex)
-    - 『[好き好き LaTeX2e 初級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』
+    - 『[好き好き LaTeX2e 初級編(PDF)](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』
         - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
             として出版もされています。
             <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
@@ -63,7 +63,10 @@ TeX や LaTeX に関する本の紹介です．
     [TeXの話](https://www.ms.u-tokyo.ac.jp/~abenori/tex/)
 
 - [藤田 眞作さん](http://xymtex.com/)
-    [「LaTeX2e まくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)
+    [「LaTeX2εまくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)
+
+- [alg-dさん](https://alg-d.com/)
+    [TikZ の使い方(PDF)](https://alg-d.com/math/tikz.pdf)
 
 ### 書籍 {#z5fa285b}
 
