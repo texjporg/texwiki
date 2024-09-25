@@ -521,6 +521,7 @@ sudo zypper install lyx
 ## 関連リンク {#j2a0a89a}
 
 - [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
+- [2024年版LyXの使い方](https://qiita.com/777shuang/items/b486f70ab252748f2e4f)
 - [&#8220;LyX&#8221; の検索結果  |  数学で行こう](https://blog.lets-go-with-math.net/?s=LyX)
 - [https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2](https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2)
 - [スタイルファイルの導入～LyXでのレイアウト設定まで\[Win10+texlive+LyX\]](https://qiita.com/merliborn/items/ac0d0a01f056d9e179b5)
