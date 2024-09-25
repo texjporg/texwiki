@@ -65,6 +65,9 @@ TeX や LaTeX に関する本の紹介です．
 - [藤田 眞作さん](http://xymtex.com/)
     [「LaTeX2εまくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)
 
+- [isariさん](https://hakuoku.hatenablog.com/)
+    [あがきながら覚えるTeX](https://hakuoku.github.io/agakuTeX/)
+
 - [alg-dさん](https://alg-d.com/)
     [TikZ の使い方(PDF)](https://alg-d.com/math/tikz.pdf)
 
