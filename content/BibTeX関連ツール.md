@@ -19,12 +19,13 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-| [Zotero](/Zotero/) | Windows, macOS, Linux | フリーソフトウェア．[AGPLv3](https://github.com/zotero/zotero/blob/master/COPYING)．[文献管理ソフト Zotero ～紹介編～ - humosy’s blog](http://humosy.hatenablog.com/entry/2017/09/25/110331) |
+| [Zotero](/Zotero/) | Windows, macOS, Linux, iOS | フリーソフトウェア．[AGPLv3](https://github.com/zotero/zotero/blob/master/COPYING)．[文献管理ソフト Zotero ～紹介編～ - humosy’s blog](http://humosy.hatenablog.com/entry/2017/09/25/110331) |
 | [JabRef](http://www.jabref.org/)  | Java  | BibTeXファイル編集ソフト．日本語の読込書込OK，検索，PDFとの連携，ファイルごとにタブ化され，異なるファイル間でエントリをコピー＆ペーストできる．文献リストをhtmlへエクスポートでき，[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると，より詳しい情報の入った文献リストhtmlが作成できる． |
 | [BibDesk](https://bibdesk.sourceforge.io/)  | macOS |  BibTeXファイル編集ソフト．検索機能やBibTeXエントリとPDFを関連づける機能も持っているので，簡易的な論文データベースを構築できます  |
-| [KBibTeX](https://userbase.kde.org/KBibTeX) |  KDE  | KDE 用の BibTeX エディタ． |
+| [Citations](https://apps.gnome.org/Citations/) |  GNOME  | GNOME 用の文献管理ソフト． |
+| [KBibTeX](https://apps.kde.org/kbibtex/) |  KDE  | KDE 用の文献管理ソフト． |
 | [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) |   | .bib ファイルの管理ソフト．[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
-| [Tellico](http://tellico-project.org/)  | KDE Frameworks 5, Qt5, libxml2, libxslt |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
+| [Tellico](https://tellico-project.org/)  | KDE Frameworks 5, Qt5, libxml2, libxslt |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
 | [Xfbib](https://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ． |
 | [Pybliographer](https://pybliographer.org/) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
 | [Mendeley](https://www.mendeley.com/)  | Windows, macOS, Linux | 文献管理ソフト |
