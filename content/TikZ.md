@@ -33,7 +33,7 @@ LaTeX の場合について記述します。
 - [PGF and TikZ, Manual](https://pgf-tikz.github.io/)
 - [GitHub - pgf-tikz/pgf](https://github.com/pgf-tikz/pgf)
 - [https://ctan.org/pkg/pgf](https://ctan.org/pkg/pgf)
-- CTAN.ring:help/Catalogue/entries/pgf.html
+- [CTAN:graphics/pgf/base](https://mirror.ctan.org/graphics/pgf/base)
     - [e-TeX](/e-TeX/) 拡張が必要です。 ([qa:53665](https://okumuralab.org/~okumura/texfaq/qa/53665.html), [qa:53666](https://okumuralab.org/~okumura/texfaq/qa/53666.html), [qa:53672](https://okumuralab.org/~okumura/texfaq/qa/53672.html))
     - [TeX Live](</TeX Live/>) 2014 以降であれば動作に問題はありません。
         <!-- -[[Altermundus tkz-base:http://altermundus.com/pages/builds/]] -->
@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1321ページの長大なマニュアル (ver 3.1.10 の場合)](http://mirrors.ctan.org/graphics/pgf/base/doc/pgfmanual.pdf)
+- [1322ページの長大なマニュアル (version 3.1.10 2024年09月17日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはコマンドラインから
