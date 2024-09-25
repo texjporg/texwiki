@@ -25,17 +25,17 @@ CotEditor は macOS 専用プレーンテキストエディタです．
 
 macOS Sonoma 14 以降
 
-### License {#m60344b8}
-
-[Apache License 2.0](https://github.com/coteditor/CotEditor/blob/develop/LICENSE)
-
 ### リリース情報 {#ed02eb4b}
 
-- [https://github.com/coteditor/coteditor.github.io/tree/master/releasenotes](https://github.com/coteditor/coteditor.github.io/tree/master/releasenotes)
+- [https://github.com/coteditor/coteditor.github.io/commits/main/releasenotes](https://github.com/coteditor/coteditor.github.io/commits/main/releasenotes)
 
 ### ChangeLog {#o0aedc6a}
 
 - [https://github.com/coteditor/CotEditor/blob/main/CHANGELOG.md](https://github.com/coteditor/CotEditor/blob/main/CHANGELOG.md)
+
+### License {#m60344b8}
+
+[Apache License 2.0](https://github.com/coteditor/CotEditor/blob/develop/LICENSE)
 
 ## 不具合 {#yd9b9b72}
 
@@ -46,9 +46,9 @@ macOS Sonoma 14 以降
 - [CotEditor + Latexmk + AppleScript + Skim で LaTeX ファイルをタイプセットする](https://blog.lets-go-with-math.net/?p=661)
 - [CotEditor から LaTeX をタイプセットするスクリプト](https://qiita.com/yunarsoa/items/6573bbfcd1814124bb2f)
 - [CotEditor から AppleScript で latexmk を叩く](https://aximov.wordpress.com/2016/01/20/coteditor-latexmk/)
-    <!-- **[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] [#pf4c5318] -->
-    <!-- **[[CotEditorでLaTeXファイルをタイプセットするスクリプト:http://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] [#nbc61989] -->
-    <!-- **[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] [#yaef2f72] -->
+    <!-- -[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] -->
+    <!-- -[[CotEditorでLaTeXファイルをタイプセットするスクリプト:https://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] -->
+    <!-- -[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] -->
     <!-- *関連リンク [#t0e859e9] -->
     <!-- -[[Vimのシンタックス定義をCotEditor用に変換.app:http://odorusaboten.web.fc2.com/mac/coteditor_syntaxs.html#vim2cot]] -->
     <!-- -[[CotEditorまとめ:http://d.hatena.ne.jp/tanaponchikidun/20120207/1328603967]] -->
