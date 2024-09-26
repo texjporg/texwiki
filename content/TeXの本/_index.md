@@ -80,9 +80,11 @@ TeX や LaTeX に関する本の紹介です．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
-#### 2024年 {#a293ab5d}
+絶版の本に関しては [TeXの本/絶版](</TeXの本/絶版/>) を参照．
 
-- S. Kottwitz(著)／黒川 利明(訳)
+#### 2024年 {#year2024}
+
+- S. Kottwitz 著, 黒川 利明 訳
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月01日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
@@ -94,65 +96,76 @@ TeX や LaTeX に関する本の紹介です．
     （Independently published，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
     - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
 
-#### 2023年 {#d39f7b4a}
+#### 2023年 {#year2023}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
     （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版、電子版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
 
-#### 2022年 {#v85cf0f1}
+#### 2022年 {#year2022}
 
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
-#### 2021年 {#jf0f3e5a}
+#### 2021年 {#year2021}
 
 - [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
     （Independently published，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
 
-#### 2020年 {#q26632bb}
+#### 2020年 {#year2020}
 
 - [水谷正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
-#### 2019年 {#sf1a21f3}
+#### 2019年 {#year2019}
 
 - 坂東慶太『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
-#### 2018年 {#l525d944}
+#### 2018年 {#year2018}
 
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](https://www.cutt.co.jp/book/978-4-87783-438-8.html)』（[カットシステム](https://www.cutt.co.jp/)，2018年9月10日，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）
 
-#### 2017年 {#w6228190}
+#### 2017年 {#year2017}
 
-#### 2016年 {#ke204ca5}
+- [TeXの本/絶版](</TeXの本/絶版/#year2017>)
+
+#### 2016年 {#year2016}
 
 - 小林 雅人
     『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
     （[工学社](http://www.kohgakusha.co.jp/)，2016年3月，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
 
-#### 2015年 {#k912ee69}
+#### 2015年 {#year2015}
 
-#### 2014年 {#a05ab393}
+#### 2014年 {#year2014}
 
 - 赤間 世紀
     『[LaTeX論文作成マニュアル](http://www.kohgakusha.co.jp/books/detail/978-4-7775-1858-6)』
     （[工学社](http://www.kohgakusha.co.jp/)，2014年10月，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
 
-#### 2013年 {#f211a577}
+#### 2013年 {#year2013}
 
-#### 2012年 {#y2f27432}
+- [TeXの本/絶版](</TeXの本/絶版/#year2013>)
 
-#### 2011年 {#k477190e}
+#### 2012年 {#year2012}
 
-#### 2010年 {#w6539047}
+#### 2011年 {#year2011}
 
-#### 2009年 {#f22a42b4}
+- [TeXの本/絶版](</TeXの本/絶版/#year2011>)
 
-#### 2008年 {#qb443317}
+#### 2010年 {#year2010}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year2010>)
+
+#### 2009年 {#year2009}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year2009>)
+
+#### 2008年 {#year2008}
 
 - 吉永 徹美『[独習LaTeX2ε](https://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](https://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
@@ -167,38 +180,92 @@ TeX や LaTeX に関する本の紹介です．
     <!-- または学生用の計算機などですでに -->
     <!-- pLaTeX システムが利用できるようになっていることを前提としていると思われる。 -->
 
-#### 2007年 {#qcd3123e}
+- [TeXの本/絶版](</TeXの本/絶版/#year2008>)
 
-#### 2006年 {#za2d8d5e}
+#### 2007年 {#year2007}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year2007>)
+
+#### 2006年 {#year2006}
 
 - [阿部 紀行](https://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」～ 入力支援環境「祝鳥」を用いた文書作成 ～](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
     （[サイエンス社](https://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
+- [TeXの本/絶版](</TeXの本/絶版/#year2006>)
 
-#### 2005年 {#naf302ff}
+#### 2005年 {#year2005}
 
-#### 2004年 {#v7e7f685}
+- [TeXの本/絶版](</TeXの本/絶版/#year2005>)
 
-#### 2003年 {#d710115e}
+#### 2004年 {#year2004}
 
-#### 2002年 {#cd408659}
+- [TeXの本/絶版](</TeXの本/絶版/#year2004>)
 
-#### 2001年 {#f1b02c0b}
+#### 2003年 {#year2003}
 
-#### 2000年 {#o161a1dd}
+- [TeXの本/絶版](</TeXの本/絶版/#year2003>)
+
+#### 2002年 {#year2002}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year2002>)
+
+#### 2001年 {#year2001}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year2001>)
+
+#### 2000年 {#year2000}
 
 - 生田 誠三
     『[LaTeX2ε文典](https://www.asakura.co.jp/detail.php?book_code=12140)』
     （[朝倉書店](https://www.asakura.co.jp/)，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
-#### 1994年 {#ifa2fe64}
+- [TeXの本/絶版](</TeXの本/絶版/#year2000>)
+
+#### 1999年 {#year1999}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1999>)
+
+#### 1998年 {#year1998}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1998>)
+
+#### 1997年 {#year1997}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1997>)
+
+#### 1996年 {#year1996}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1996>)
+
+#### 1995年 {#year1995}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1995>)
+
+#### 1994年 {#year1994}
 
 - 野寺 隆志『[楽々LaTeX 第2版](https://www.kyoritsu-pub.co.jp/book/b10011603.html)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，1994年06月15日，税込価格 &yen;3,190 (本体 &yen;2,900 + 税10%)，[ISBN 978-4-320-02703-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-02703-9)）
+- [TeXの本/絶版](</TeXの本/絶版/#year1994>)
 
-### 書籍 (絶版) {#qa17acad}
+#### 1993年 {#year1993}
 
-[TeXの本/絶版](</TeXの本/絶版/>) を参照．
+- [TeXの本/絶版](</TeXの本/絶版/#year1993>)
+
+#### 1992年 {#year1992}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1992>)
+
+#### 1991年 {#year1991}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1991>)
+
+#### 1990年 {#year1990}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1990>)
+
+#### 1989年 {#year1989}
+
+- [TeXの本/絶版](</TeXの本/絶版/#year1989>)
 
 ## 英語の本 {#j5832dce}
 
