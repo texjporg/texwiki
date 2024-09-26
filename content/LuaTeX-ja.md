@@ -32,7 +32,7 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 LuaTeX-ja は
 
 - [TeX Live](</TeX Live/>)
-- [MiKTeX](/MiKTeX/) ([MiKTeX Package Information (luatexja)](http://miktex.org/packages/luatexja))
+- [MiKTeX](/MiKTeX/) ([MiKTeX Packages luatexja](http://miktex.org/packages/luatexja))
 
 で利用可能です．
 
