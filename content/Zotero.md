@@ -23,6 +23,7 @@ Windows, macOS, Linux, iOS
 - [Zotero と LaTeX Workshop で bib ファイルを扱いこなす](https://qiita.com/Yarakashi_Kikohshi/items/8f720643543ba175f7cc)
 - [VSCode + Zotero + BibTeXによる論文執筆ワークフロー](https://zenn.dev/nicetak/articles/zotero-tex-bibtex)
 - [【無料文献管理ソフト】Zotero バージョン 7 (ver. 7)の使い方決定版！これで引用も簡単！](https://tsuki-no-fune.com/zotero7/)
+- [文献管理ソフト Zotero ～紹介編～](https://humosy.hatenablog.com/entry/2017/09/25/110331)
 
 ### Better BibTeX {#s84a9cae}
 
@@ -39,7 +40,7 @@ Windows, macOS, Linux, iOS
 
 #### インストール {#s6f71eb7}
 
-\[ツール\] &gt; \[Plugins\] &gt; \[&#x2699;\]（Plugins Manager 画面右端の歯車） &gt; \[<ins>I</ins>nstall Plugin From File...\] &gt; zotero-better-bibtex-（バージョン）.xpi を選択して開く
+\[ツール\] &gt; \[Plugins\] &gt; \[&#x2699;\]（Plugins Manager 画面右上の歯車） &gt; \[<ins>I</ins>nstall Plugin From File...\] &gt; zotero-better-bibtex-（バージョン）.xpi を選択して開く
 
 #### 設定 {#pb6c4377}
 
