@@ -9,7 +9,7 @@ pukiwiki: "Zotero"
 
 ## [Zotero](https://www.zotero.org/) {#d69bc1ba}
 
-Zotero は、研究のための収集、整理、注釈付け、引用、共有を手助けしてくれるオープンソースで使いやすい文献管理ソフトです。
+Zotero は、研究のための収集、整理、注釈付け、引用、共有を手助けしてくれるフリーのオープンソースで使いやすい文献管理ソフトです。
 
 - [https://www.zotero.org/](https://www.zotero.org/)
 
@@ -59,6 +59,10 @@ Windows, macOS, Linux, iOS
 
 <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins>
 
+### ZotMoov {#da78f514}
+
+- [ZotMoov](https://github.com/wileyyugioh/zotmoov)
+
 ### 開発サイト {#g44b3101}
 
 [https://github.com/zotero/zotero](https://github.com/zotero/zotero)
@@ -85,4 +89,5 @@ Windows, macOS, Linux, iOS
 - [https://x.com/search?q=Zotero+LaTeX+lang%3Aja&f=live](https://x.com/search?q=Zotero+LaTeX+lang%3Aja&f=live)
 - [https://x.com/search?q=Zotero+TeX+lang%3Aja&f=live](https://x.com/search?q=Zotero+TeX+lang%3Aja&f=live)
 - [https://x.com/search?q=Better+BibTeX+lang%3Aja&f=live](https://x.com/search?q=Better+BibTeX+lang%3Aja&f=live)
+- [https://x.com/search?q=ZotMoov+lang%3Aja&f=live](https://x.com/search?q=ZotMoov+lang%3Aja&f=live)
 - [https://x.com/search?q=Zotero+lang%3Aja&f=live](https://x.com/search?q=Zotero+lang%3Aja&f=live)
