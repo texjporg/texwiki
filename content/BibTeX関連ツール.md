@@ -19,7 +19,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-| [Zotero](/Zotero/) | Windows, macOS, Linux, iOS | [Zotero - TeX Wiki](/Zotero/) 参照 |
+| [Zotero](/Zotero/) | Windows, macOS, Linux, [iOS](https://apps.apple.com/jp/app/zotero/id1513554812), [Android (ベータ版)](https://play.google.com/store/apps/details?id=org.zotero.android) | [Zotero - TeX Wiki](/Zotero/) 参照 |
 | [JabRef](/JabRef/)  | Windows, macOS, Linux<br>Java で動作 | [JabRef - TeX Wiki](/JabRef/) 参照 |
 | [BibDesk](https://bibdesk.sourceforge.io/)  | macOS | [BibDesk - TeX Wiki](/BibDesk/) 参照 |
 | [Citations](https://apps.gnome.org/Citations/) |  GNOME  | GNOME 用の文献管理ソフト． |
@@ -79,7 +79,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [mathsci2bibtex](https://mirror.ctan.org/help/Catalogue/entries/mathsci2bibtex.html) | perl | MathSciからBibTeXへの変換 |
 | [mathscinet](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/mathscinet) |   | MathSciNetからBibTeX形式に変換． |
 | [stdinRIS2bib.pl ris2bib.pl](http://marc.herbert.free.fr/refdb/) | perl | RIS形式をBibTeX形式へ変換する．[ris2bib](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/ris2bib)が正常に動作しない最近の環境でもOK．キーは自分でつける必要あり．出力されたbibファイルは，bibcleanに通した方がよいかも．ris2bib.plはstdinRIS2bib.plから内部的に呼び出されるので同一ディレクトリにおいておくこと．<br>【使い方】$ cat risファイル ｜ stdinRISbib.pl > bibファイル <br> T1やABをそれぞれtitleやabstractにするには，ris2bib.plにそれらの定義を追加する必要がある． |
-| [Bibutils](http://www.scripps.edu/~cdputnam/software/bibutils/) | なし | さまざまな形式の文献データをXML経由でBib形式に変換する．含まれるコマンドは，bib2xml, copac2xml, end2xml, isi2xml, med2xml, modsclean, ris2xml, xml2bib, xml2end, xml2risがあり，UNIX(SunOS, IRIX)版，Linux版，OSX版，Windows版などが用意されている．<br>【利用例】$ ris2xml risファイル｜xml2bib > bibファイル |
+| [Bibutils](https://sourceforge.net/p/bibutils/home/Bibutils/)<br>([Internet Archive](https://web.archive.org/web/20110216071720/http://www.scripps.edu:80/~cdputnam/software/bibutils/)) | なし | さまざまな形式の文献データをXML経由でBib形式に変換する．含まれるコマンドは，bib2xml, biblatex2xml, copac2xml, end2xml, isi2xml, med2xml, modsclean, ris2xml, xml2bib, xml2biblatex, xml2end, xml2risがあり，UNIX(SunOS, IRIX)版，Linux版，macOS版，Windows版などが用意されている．<br>【利用例】$ ris2xml risファイル｜xml2bib > bibファイル |
 | [mab2bib](http://texcatalogue.sarovar.org/entries/mab2bib.html) |  Python  |   Simple Python scripts to convert MAB bibliography files into BibTeX and UTF-8 encoded text files into ASCII with LaTeX codes  |
 | [ama2bib](https://ja.osdn.net/projects/mytexpert/releases/p6271) |  Perl  |  [Amazon Web Service](http://www.amazon.co.jp/exec/obidos/subst/associates/join/webservices.html/249-1233918-9751503)の検索結果をBibTeX形式に変換するスクリプト |
 
@@ -150,7 +150,9 @@ BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 
 ## 関連リンク {#j1aaae63}
 
+- [Wikipedia.en:Comparison_of_reference_management_software](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software)
 - [Bibliographic Conversion Tools](http://www.ecst.csuchico.edu/~jacobsd/bib/tools/converters.html)
 - [http://www.ccrnp.ncifcrf.gov/~toms/latex.html](http://www.ccrnp.ncifcrf.gov/~toms/latex.html) なども参考になるかも．
+- [【LaTeX】BibTeXにおけるbibファイルのかき方](https://mathlandscape.com/latex-bib/)
 
 <br>
