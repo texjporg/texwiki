@@ -19,8 +19,8 @@ Org mode は
 - TODO リストの管理
 - プロジェクト計画
 
-をするための Emacs のメジャーモードです．
-テキストファイルを高速・効率的に編集することができます．
+をするための Emacs のメジャーモードです。
+テキストファイルを高速・効率的に編集することができます。
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](https://orgmode.org/)
 - [Org Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
@@ -32,9 +32,9 @@ Org mode は
 
 ## インストール {#l69ff892}
 
-Org mode は Emacs に標準で含まれています．
-Emacs 29.4 の場合は [バージョン 9.6.15](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-29.4#n12) ([2023-12-31](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.6.15)) です．
-最新版を使いたい場合は以下の手順を踏みます．
+Org mode は Emacs に標準で含まれています。
+Emacs 29.4 の場合は [バージョン 9.6.15](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-29.4#n12) ([2023-12-31](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.6.15)) です。
+最新版を使いたい場合は以下の手順を踏みます。
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
 
@@ -46,7 +46,7 @@ M-x list-packages RET でリストを表示して org を選択
 
 ### 公式サイトのパッケージを使用する場合 {#vc647a74}
 
-パッケージを展開して名前を org にリネームして &#x7e;/.emacs.d/site-lisp に配置します．
+パッケージを展開して名前を org にリネームして &#x7e;/.emacs.d/site-lisp に配置します。
 
 ```
 ~
@@ -56,7 +56,7 @@ M-x list-packages RET でリストを表示して org を選択
             └─lisp
 ```
 
-&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します．
+&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します。
 
 ```
 (add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
@@ -64,10 +64,10 @@ M-x list-packages RET でリストを表示して org を選択
 
 ## 設定例 {#y73c067b}
 
-&#x7e;/.emacs.d/init.el に設定を記述します．
+&#x7e;/.emacs.d/init.el に設定を記述します。
 
 Org mode はデフォルトでは pdfLaTeX が使われます．
-日本語を使用する場合は LuaLaTeX や upLaTeX + dvipdfmx を使用して処理をするように変更します．
+日本語を使用する場合は LuaLaTeX あるいは upLaTeX + dvipdfmx を使用してタイプセットをするように設定を変更します。
 
 ### Windows {#q16766de}
 
@@ -80,8 +80,8 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 (setq org-latex-default-class "jlreq")
 ;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
-(setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("lualatex %f"))
+(setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -norc -gg -pdflua %f"))
 ;(setq org-latex-pdf-process '("latexmk -e \"$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx -o %%D %%S/\" -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (if (not (eq org-export-in-background t))
@@ -90,13 +90,17 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 
 (add-to-list 'org-latex-classes
              '("jlreq"
-               "\\documentclass[11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -112,13 +116,17 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 
 (add-to-list 'org-latex-classes
              '("jlreq-tate"
-               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[tate,11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -163,7 +171,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 
 ### macOS {#a97921ad}
 
-動作未確認です．
+動作未確認です。
 
 ```
 ;;
@@ -180,22 +188,26 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 (setq org-latex-default-class "jlreq")
 ;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
-(setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("lualatex %f"))
+(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "open -a Skim %s")))
 
 (add-to-list 'org-latex-classes
              '("jlreq"
-               "\\documentclass[11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -211,13 +223,17 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 
 (add-to-list 'org-latex-classes
              '("jlreq-tate"
-               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[tate,11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -271,22 +287,26 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 (setq org-latex-default-class "jlreq")
 ;(setq org-latex-default-class "jlreq-tate")
 ;(setq org-latex-default-class "bxjsarticle")
-(setq org-latex-pdf-process '("lualatex %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
-;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
+;(setq org-latex-pdf-process '("lualatex %f"))
+(setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
+;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
       '(("pdf" . "evince %s")))
 
 (add-to-list 'org-latex-classes
              '("jlreq"
-               "\\documentclass[11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -302,13 +322,17 @@ Org mode はデフォルトでは pdfLaTeX が使われます．
 
 (add-to-list 'org-latex-classes
              '("jlreq-tate"
-               "\\documentclass[tate,11pt,paper=a4]{jlreq}
+               "\\ifdefined\\kanjiskip
+  \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
+\\else
+  \\documentclass[tate,11pt,paper=a4]{jlreq}
+\\fi
 [NO-DEFAULT-PACKAGES]
 \\usepackage{amsmath}
 \\usepackage{newtxtext,newtxmath}
 \\ifdefined\\kanjiskip
-  \\usepackage[dvipdfmx]{graphicx}
-  \\usepackage[dvipdfmx]{hyperref}
+  \\usepackage{graphicx}
+  \\usepackage{hyperref}
   \\usepackage{pxjahyper}
   \\hypersetup{colorlinks=true}
 \\else
@@ -363,7 +387,7 @@ org ファイルの先頭に
 #+LATEX_CLASS: jlreq
 ```
 
-を追加します．
+を追加します。
 
 ### jlreq の縦書きを使用する場合 {#c3a15d54}
 
@@ -375,7 +399,7 @@ org ファイルの先頭に
 #+LATEX_CLASS: jlreq-tate
 ```
 
-を追加します．
+を追加します。
 
 ### bxjsarticle を使用する場合 {#mc51aa00}
 
@@ -387,13 +411,13 @@ org ファイルの先頭に
 #+LATEX_CLASS: bxjsarticle
 ```
 
-を追加します．
+を追加します。
 
 ### ファイルの出力 {#nee250e6}
 
-- C-c C-e l l で LaTeX ファイルを出力します．
-- C-c C-e l p で PDF ファイルを出力します．
-- C-c C-e l o で PDF ファイルを出力して表示します．
+- C-c C-e l l で LaTeX ファイルを出力します。
+- C-c C-e l p で PDF ファイルを出力します。
+- C-c C-e l o で PDF ファイルを出力して表示します。
 
 ## 関連リンク {#m969bd42}
 
