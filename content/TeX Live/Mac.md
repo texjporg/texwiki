@@ -245,11 +245,6 @@ $ sudo tlmgr update --self --all
 tlmgr は複数のリポジトリを管理できます。
 [TeX Live Utility](</TeX Live Utility/>) は tlmgr の機能を GUI で実現するものですので，上記の機能をメニュー項目から実行できます。
 
-### ［オプション（必須ではありません）］macOS に付属するヒラギノフォントを使用する設定 {#yf81dd15}
-
-macOS に付属するヒラギノフォントを使用したい場合は，インストールが完了した後で，[macOS に付属のヒラギノフォントを使う設定](https://texjp.org/install/macos.html#macos-%E3%81%AB%E4%BB%98%E5%B1%9E%E3%81%AE%E3%83%92%E3%83%A9%E3%82%AE%E3%83%8E%E3%83%95%E3%82%A9%E3%83%B3%E3%83%88%E3%82%92%E4%BD%BF%E3%81%86%E8%A8%AD%E5%AE%9A)を参考に設定を行ってください。
-<strong>この設定は必須ではありません</strong>。
-
 ### 原ノ味フォント {#zdc78348}
 
 原ノ味フォントは標準でインストールされていますので，updmap-sys の設定だけで PDF に埋め込めます。
@@ -260,7 +255,7 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 ### みかちゃんフォントなどのフリー書体・その他の日本語書体 {#i9ff3350}
 
-[みかちゃんフォント](http://mikachan-font.com/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
+[みかちゃんフォント](https://www.mia-lab.com/mf/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になるかもしれません。
