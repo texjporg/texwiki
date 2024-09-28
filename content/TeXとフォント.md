@@ -188,7 +188,7 @@ haranoaji, ipaex, ipa
 - Mac (macOS) でヒラギノを使いたい場合には事前準備が必要です。
     - [ヒラギノフォント](</ヒラギノフォント/>) を参照してください。
 - Windows でヒラギノを使いたい場合にも事前準備が必要です。
-    - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](http://ichiro-maruta.blogspot.jp/2013/08/windows-tex-live-2013.html)
+    - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](https://ichiro-maruta.blogspot.com/2013/08/windows-tex-live-2013.html)
     - ヒラギノ基本6書体パック [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
     - PDF へのフォントの埋め込みに失敗する [forum:1491](https://okumuralab.org/tex/mod/forum/discuss.php?d=1491)
 
@@ -214,7 +214,7 @@ uplatex
 
 ### その他のフォントの利用 {#m12273b7}
 
-[みかちゃんフォント](http://mikachan-font.com/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
+[みかちゃんフォント](https://www.mia-lab.com/mf/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
 [PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [(u)pTeX における和文多書体の実現 〜Sierraの全和文フォント出力を例として〜](http://doratex.hatenablog.jp/entry/20161206/1480950097) や [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
