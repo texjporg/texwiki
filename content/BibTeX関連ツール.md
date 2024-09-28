@@ -20,8 +20,8 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 | [Zotero](/Zotero/) | Windows, macOS, Linux, iOS | [Zotero - TeX Wiki](/Zotero/) 参照 |
-| [JabRef](http://www.jabref.org/)  | Java  | BibTeXファイル編集ソフト．日本語の読込書込OK，検索，PDFとの連携，ファイルごとにタブ化され，異なるファイル間でエントリをコピー＆ペーストできる．文献リストをhtmlへエクスポートでき，[JabRefによるBibTeX文献管理とJab2HTML](http://keijisaito.info/arc/biblio/jabref_jbib.htm)のJab2HTMLを用いると，より詳しい情報の入った文献リストhtmlが作成できる． |
-| [BibDesk](https://bibdesk.sourceforge.io/)  | macOS |  BibTeXファイル編集ソフト．検索機能やBibTeXエントリとPDFを関連づける機能も持っているので，簡易的な論文データベースを構築できます  |
+| [JabRef](/JabRef/)  | Windows, macOS, Linux<br>Java で動作 | [JabRef - TeX Wiki](/JabRef/) 参照 |
+| [BibDesk](https://bibdesk.sourceforge.io/)  | macOS | [BibDesk - TeX Wiki](/BibDesk/) 参照 |
 | [Citations](https://apps.gnome.org/Citations/) |  GNOME  | GNOME 用の文献管理ソフト． |
 | [KBibTeX](https://apps.kde.org/kbibtex/) |  KDE  | KDE 用の文献管理ソフト． |
 | [Tellico](https://tellico-project.org/)  | KDE Frameworks 5, Qt5, libxml2, libxslt |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
