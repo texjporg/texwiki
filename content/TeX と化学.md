@@ -12,7 +12,7 @@ pukiwiki: "TeX と化学"
 一般に化学の学術雑誌への投稿には，化学者専用の化学構造描画ツールとして商用の
 [ChemDraw](http://www.cambridgesoft.com/Ensemble_for_Chemistry/ChemDraw/)，または条件付きで無償で利用できる
 
-- [ChemSketch](http://www.acdlabs.com/resources/freeware/chemsketch/)
+- [ChemSketch](https://www.acdlabs.com/resources/free-chemistry-software-apps/chemsketch-freeware/)
     ：for Windows（要登録：個人または教育用に限り無償）
 
 - [BIOVIA Draw](https://ls.ctc-g.co.jp/products/accelrys/accelrys_draw_direct.html)
@@ -60,7 +60,7 @@ pukiwiki: "TeX と化学"
 
 #### 化学構造描画の専用ツールの利用 {#l7c47a01}
 
-- [ChemDraw](http://www.cambridgesoft.com/Ensemble_for_Chemistry/ChemDraw/)
+- [ChemDraw](https://www.hulinks.co.jp/software/chem/chembio/section_01/chemdraw)
     などのツールで構造式を描画し，汎用的な画像フォーマット (EPS, PDF, PNG) で出力して
     \includegraphics する
 
