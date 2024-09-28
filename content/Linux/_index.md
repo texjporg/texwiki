@@ -247,7 +247,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 オープンソースの文献管理ツールとして，以下を挙げておきます。
 
 - [Zotero](/Zotero/)
-- [JabRef](http://www.jabref.org/)
+- [JabRef](/JabRef/)
 
 このほかにも
 
