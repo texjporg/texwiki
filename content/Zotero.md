@@ -11,7 +11,9 @@ pukiwiki: "Zotero"
 
 Zotero は、研究のための収集、整理、注釈付け、引用、共有を手助けしてくれるフリーのオープンソースで使いやすい文献管理ソフトです。
 
-- [https://www.zotero.org/](https://www.zotero.org/)
+### 公式サイト {#m403b584}
+
+[Zotero | Your personal research assistant](https://www.zotero.org/)
 
 ### 動作環境 {#zbcfe2d8}
 
