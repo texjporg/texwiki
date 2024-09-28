@@ -47,7 +47,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 アプリケーションフォルダの中の TeX フォルダに収められています。
 
-- [BibDesk](https://bibdesk.sourceforge.io/)
+- [BibDesk](/BibDesk/)
     - 文献管理ソフト。
 
 - [LaTeXiT](/LaTeXiT/)
