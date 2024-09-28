@@ -66,7 +66,7 @@ M-x list-packages RET でリストを表示して org を選択
 
 &#x7e;/.emacs.d/init.el に設定を記述します。
 
-Org mode はデフォルトでは pdfLaTeX が使われます．
+Org mode はデフォルトでは pdfLaTeX が使われます。
 日本語を使用する場合は LuaLaTeX あるいは upLaTeX + dvipdfmx を使用してタイプセットをするように設定を変更します。
 
 ### Windows {#q16766de}
