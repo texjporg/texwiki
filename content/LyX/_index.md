@@ -29,7 +29,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
 
 ### 動作環境 {#xd7ee343}
 
-Windows, Cygwin, macOS, Linux
+Windows (x64, Cygwin), macOS, Linux
 
 ### LyX の読み方 {#r8403bf4}
 
@@ -506,9 +506,9 @@ sudo zypper install lyx
 
 - [LyX Bug Tracker](http://www.lyx.org/trac/wiki/BugTrackerHome)
 
-### Japanese IME: preedit is shown while selecting conversion candidate {#r4c8f06e}
-
-- [#11723 (Japanese IME: preedit is shown while selecting conversion candidate) – The LyX Project](https://www.lyx.org/trac/ticket/11723)
+<!-- **Japanese IME: preedit is shown while selecting conversion candidate → LyX 2.4.1 で修正確認 [#r4c8f06e] -->
+<!--  -->
+<!-- -[[#11723 (Japanese IME: preedit is shown while selecting conversion candidate) – The LyX Project:https://www.lyx.org/trac/ticket/11723]] -->
 
 ## 設定 {#ue19dc3a}
 
