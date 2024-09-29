@@ -83,8 +83,8 @@ TeX で組まれていますが，それ以外のもの）：
 
 - 宮岡伯人編『北の言語：類型と歴史』（1992.06.20，ISBN 4-385-35424-3）
 - 大島正二『[〈辞書〉の発明—中国言語学史入門](http://www.sanseido-publ.co.jp/publ/jisyo_hatumei.html)』（1997.12.15，ISBN 4-385-35817-6）
-- 東京外国語大学語学研究所編『[世界の言語ガイドブック 1 ヨーロッパ・アメリカ地域](http://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html)』（1998.03.10，ISBN 4-385-35813-3）
-- 東京外国語大学語学研究所編『[世界の言語ガイドブック 2 アジア・アフリカ地域](http://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html)』（1998.03.10，ISBN 4-385-35815-X）
+- 東京外国語大学語学研究所編『[世界の言語ガイドブック 1 ヨーロッパ・アメリカ地域](https://www.books-sanseido.jp/booksearch/BookSearchDetail.action?shopCode=&areaCode=&shoshiKubun=1&isbn=4-385-35813-3)』([Internet Archive](https://web.archive.org/web/20211023003249/https://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html))（1998.03.10，ISBN 978-4-385-35813-0）
+- 東京外国語大学語学研究所編『[世界の言語ガイドブック 2 アジア・アフリカ地域](https://www.books-sanseido.jp/booksearch/BookSearchDetail.action?shopCode=&areaCode=&shoshiKubun=1&isbn=4-385-35815-X)』([Internet Archive](https://web.archive.org/web/20211023003249/https://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html))（1998.03.10，ISBN 978-4-385-35815-4）
 - 風間喜代三『[ラテン語とギリシア語](http://www.sanseido-publ.co.jp/publ/latin_greek.html)』（1998.03.20，ISBN 4-385-35833-8）
 - G. A. クリモフ，石田修一訳『[新しい言語類型学](http://www.sanseido-publ.co.jp/publ/klimov.html)』（1999.04.25，ISBN 4-385-35915-6）
 - 石井米雄・千野栄一編『[世界のことば100語辞典 アジア編](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba100.html)』（1999.06.30，ISBN 4-385-15198-9）
