@@ -194,7 +194,7 @@ wine64 cmd /c start Acrobat.exe file.pdf
 <!-- -[http://blogs.yahoo.co.jp/naonori_msx/39965081.html Acrobat Reader DCの64ビットでサムネール表示] -->
 <!-- -[http://dslabo.blog4.fc2.com/blog-entry-2292.html 実験る～む Windows版Acrobat DCに追加された、待望（？）の機能] -->
 <!-- -[http://vergil.hateblo.jp/entry/2016/01/11/093214 Adobe Acrobat Reader DCのインストールでPDFの全文検索ができなくなる問題とその解決策] -->
-<!-- -[http://ikeda-jp2000.at.webry.info/201510/article_2.html Wind8.1x64+Adobe Reader DC環境でのPDF検索とサムネイル表示について] -->
+<!-- -[https://ikeda-jp2000.seesaa.net/article/201510article_2.html Win8.1(以降?)x64+Adobe Reader DC環境でのPDF検索とサムネイル表示] -->
 <!-- -[http://blog.livedoor.jp/digitaldolphins/archives/1756033.html 64ビットWindows 7で、PDFのサムネイル表示したい] -->
 <!-- -[http://www.adobe.com/support/downloads/detail.jsp?ftpID=5542 Adobe - Acrobat : For Windows : PDF iFilter 64 11.0.01] -->
 <!-- -https://github.com/kenjiuno/ThumbGensPack -->
