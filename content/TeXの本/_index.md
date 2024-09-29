@@ -76,6 +76,7 @@ TeX や LaTeX に関する本の紹介です．
 [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html) や
 [本棚.org ](https://hondana.org/TeX/) や
 [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) や
+[TeX/Biblio - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Biblio) や
 [TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm) も参照．
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
@@ -107,7 +108,7 @@ TeX や LaTeX に関する本の紹介です．
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
-    （[インプレス](https://www.impress.co.jp/)，2022年7月14日発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
+    （[インプレス](https://book.impress.co.jp/)，2022年7月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年 {#year2021}
 
@@ -116,18 +117,18 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2020年 {#year2020}
 
-- [水谷正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
 #### 2019年 {#year2019}
 
-- 坂東慶太『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
+- [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
 #### 2018年 {#year2018}
 
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 10/8/7対応](https://www.cutt.co.jp/book/978-4-87783-438-8.html)』（[カットシステム](https://www.cutt.co.jp/)，2018年9月10日，税込価格 &yen;2,860 (本体 &yen;2,600)，[ISBN 978-4-87783-438-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-438-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）
+- [TeXの本/絶版](</TeXの本/絶版/#year2018>)
 
 #### 2017年 {#year2017}
 
@@ -326,3 +327,11 @@ William Adams の
 
 - [Books about TeX and Friends](https://tug.org/books/) (TUG)
 - [Recommended TeX and LaTeX Books (and other printed resources)](http://www.macrotex.net/texbooks/)
+
+ISBN について：
+
+- [ISBNと書籍JANコードとは &#8211; 日本図書コード管理センター](https://isbn.jpo.or.jp/index.php/fix__about/fix__about_3/)
+- [Wikipedia.ja:ISBN](https://ja.wikipedia.org/wiki/ISBN)
+- [ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/ndb9b11644c34)
+- [続、ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/n44226bbc6a82)
+- [続々 ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/n3acc031f504c)
