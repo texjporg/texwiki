@@ -14,7 +14,6 @@ pukiwiki: "コメント/FrontPage"
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
 - [TeXstudio 4.8.4](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2024-09-28 (土) 08:48:04
-- [LyX 2.4.2](https://www.lyx.org/) -- [LyX](/LyX/) 2024-09-25 (水) 15:41:36
 - [TeXstudio 4.8.3](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2024-09-21 (土) 09:02:21
 - [LaTeX Workshop 10.4.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-09-20 (金) 18:20:01
 - [Ghostscript 10.04.0](https://www.ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2024-09-20 (金) 02:10:02
