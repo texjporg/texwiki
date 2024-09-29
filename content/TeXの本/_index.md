@@ -117,7 +117,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2020年 {#year2020}
 
-- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月20日発行，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
 #### 2019年 {#year2019}
