@@ -77,8 +77,8 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
 ;;
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-default-class "jlreq")
-;(setq org-latex-default-class "jlreq-tate")
+(setq org-latex-default-class "jlreq-article")
+;(setq org-latex-default-class "jlreq-article-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 ;(setq org-latex-pdf-process '("lualatex %f"))
 (setq org-latex-pdf-process '("latexmk -e \"$lualatex=q/lualatex %%S/\" -e \"$bibtex=q/bibtexu %B/\" -e \"$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex -o %%D %%S/\" -norc -gg -pdflua %f"))
@@ -89,7 +89,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
           '(("pdf" . "powershell -Command \"& {\"C:/Users/*/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance %s}"))))
 
 (add-to-list 'org-latex-classes
-             '("jlreq"
+             '("jlreq-article"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
 \\else
@@ -115,7 +115,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-tate"
+             '("jlreq-article-tate"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
 \\else
@@ -185,8 +185,8 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
 ;;
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-default-class "jlreq")
-;(setq org-latex-default-class "jlreq-tate")
+(setq org-latex-default-class "jlreq-article")
+;(setq org-latex-default-class "jlreq-article-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 ;(setq org-latex-pdf-process '("lualatex %f"))
 (setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
@@ -196,7 +196,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
       '(("pdf" . "open -a Skim %s")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq"
+             '("jlreq-article"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
 \\else
@@ -222,7 +222,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-tate"
+             '("jlreq-article-tate"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
 \\else
@@ -284,8 +284,8 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
 ;;
 (require 'ox-latex)
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
-(setq org-latex-default-class "jlreq")
-;(setq org-latex-default-class "jlreq-tate")
+(setq org-latex-default-class "jlreq-article")
+;(setq org-latex-default-class "jlreq-article-tate")
 ;(setq org-latex-default-class "bxjsarticle")
 ;(setq org-latex-pdf-process '("lualatex %f"))
 (setq org-latex-pdf-process '("latexmk -e '$lualatex=q/lualatex %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -norc -gg -pdflua %f"))
@@ -295,7 +295,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
       '(("pdf" . "evince %s")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq"
+             '("jlreq-article"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,11pt,paper=a4]{jlreq}
 \\else
@@ -321,7 +321,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
 
 (add-to-list 'org-latex-classes
-             '("jlreq-tate"
+             '("jlreq-article-tate"
                "\\ifdefined\\kanjiskip
   \\documentclass[uplatex,dvipdfmx,tate,11pt,paper=a4]{jlreq}
 \\else
@@ -377,26 +377,26 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
 
 ## 使い方 {#a6515cd5}
 
-### jlreq の横書きを使用する場合 {#t4ccb221}
+### jlreq article の横書きを使用する場合 {#t4ccb221}
 
 org ファイルの先頭に
 
 ```
 #+TITLE: hoge
 #+AUTHOR: fuga
-#+LATEX_CLASS: jlreq
+#+LATEX_CLASS: jlreq-article
 ```
 
 を追加します。
 
-### jlreq の縦書きを使用する場合 {#c3a15d54}
+### jlreq article の縦書きを使用する場合 {#c3a15d54}
 
 org ファイルの先頭に
 
 ```
 #+TITLE: hoge
 #+AUTHOR: fuga
-#+LATEX_CLASS: jlreq-tate
+#+LATEX_CLASS: jlreq-article-tate
 ```
 
 を追加します。
