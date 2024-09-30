@@ -68,6 +68,9 @@ TeX や LaTeX に関する本の紹介です．
 - [isariさん](https://hakuoku.hatenablog.com/)
     [あがきながら覚えるTeX](https://hakuoku.github.io/agakuTeX/)
 
+- [数学・物理学専門のインターネット家庭教師さん](http://phys.co-suite.jp/)
+    [LaTeX Tips &lt;TikZへの入門>](http://phys.co-suite.jp/textips.html)
+
 - [alg-dさん](https://alg-d.com/)
     [TikZ の使い方(PDF)](https://alg-d.com/math/tikz.pdf)
 
