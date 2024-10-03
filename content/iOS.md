@@ -16,33 +16,39 @@ pukiwiki: "iOS"
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
 - [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2024, with Tikz and LuaTeX) for text processing.
+    - [https://apps.apple.com/jp/app/a-shell/id1473805438](https://apps.apple.com/jp/app/a-shell/id1473805438)
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
     - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
+    - [iPad で『a-Shell』と『Documents』でLuaLaTeXを使ったのですが、日本語もすんなりできて、以前作ったファイルも問題なくコンパイルできました。ついにiPadのローカルでLaTeXを使う時代が来た！](https://x.com/dannchu/status/1543254523929833472)
+    - [ついに…、ついにiPadでLaTeX組版の夢が叶った！！](https://x.com/tan_pi_seconds/status/1720790331128725604)
 - [iSH](https://ish.app/) A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more!
+    - [https://apps.apple.com/us/app/ish-shell/id1436902243](https://apps.apple.com/us/app/ish-shell/id1436902243)
     - [iPadにTeXLiveを突っ込んでLaTeXを書く](https://trpfrog.hateblo.jp/entry/latex-on-ipad)
     - [iPadで「TeX」環境構築](https://yunavi.lsv.jp/tex.html#iPad)
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
+### [TeX Writer](</TeX Writer/>) {#q0ac10e0}
+
+TeX Writer は日本語の文書をローカルでコンパイルできます。
+
+TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています。
+
+- [https://texwriter.net/](https://texwriter.net/)
+- [https://apps.texwriter.net/](https://apps.texwriter.net/)
+- [https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222](https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222)
+- [TeX Writer - TeX Wiki](</TeX Writer/>)
+    <!-- -[[forumSearch:TeX Writer]] -->
+
 ### [Texifier](/Texifier/) {#f10ec168}
 
-Texifier はクラウドタイプセットで日本語の文書をコンパイルできるそうです．<br>
+iOS 版の Texifier はクラウドタイプセットで日本語の文書をコンパイルできます。
 
 - [https://www.texifier.com/](https://www.texifier.com/)
     - [https://www.texifier.com/ios](https://www.texifier.com/ios)
 - [https://apps.apple.com/jp/app/texifier-latex-editor/id550419159](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159)
 - [Texifier - TeX Wiki](/Texifier/)
     <!-- -[[forumSearch:Texifier]] -->
-
-### TeX Writer {#q0ac10e0}
-
-TeX Writer は日本語の文書をローカルでコンパイルできるそうです．<br>
-TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています．<br>
-
-- [https://apps.texwriter.net/](https://apps.texwriter.net/)
-- [https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222](https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222)
-- [TeX Writer - TeX Wiki](</TeX Writer/>)
-    <!-- -[[forumSearch:TeX Writer]] -->
 
 <!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
 <!-- -[[MobileOrg:https://itunes.apple.com/jp/app/mobileorg/id634225528]] -->
