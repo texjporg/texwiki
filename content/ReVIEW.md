@@ -15,7 +15,8 @@ pukiwiki: "ReVIEW"
 
 ### インストール {#c7d27379}
 
-- [Windows10環境でRe:VIEWの執筆環境を構築する方法](http://kaiware007.hatenablog.jp/entry/2017/08/15/025618)
-- [Arch Linux上にRe:VIEWをインストールする](http://ryochack.hatenablog.com/entry/2017/08/05/233651)
-- [Windows10でRe:VIEWでPDFを作成するまでの環境構築](https://blog.naotaco.com/archives/1396)
-- [Re:VIEWでドキュメントを書いた](http://d.hatena.ne.jp/E_Mattsan/20141223/1419318548)
+- [Windows10環境でRe:VIEWの執筆環境を構築する方法](https://kaiware007.hatenablog.jp/entry/2017/08/15/025618)
+- [Arch Linux上にRe:VIEWをインストールする](https://ryochack.hatenablog.com/entry/2017/08/05/233651)
+- [Windows10でRe:VIEWでPDFを作成するまでの環境構築](https://blog.naotaco.com/tips/%E4%BD%95%E3%81%8B/2017/03/20/windows10%E3%81%A7review%E3%81%A7pdf%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7%E3%81%AE%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89.html)
+- [Re:VIEWで売り物の本を作ってみた（InDesign抜き）](https://note.golden-lucky.net/2015/06/reviewindesign.html)
+- [Re:VIEWでドキュメントを書いた](https://blog.emattsan.org/entry/20141223/1419318548)
