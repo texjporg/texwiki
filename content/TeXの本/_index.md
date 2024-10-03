@@ -135,8 +135,12 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2018年 {#year2018}
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）……LaTeX2ε
+    で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
+
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
+    で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
+
 - [TeXの本/絶版](</TeXの本/絶版/#year2018>)
 
 #### 2017年 {#year2017}
