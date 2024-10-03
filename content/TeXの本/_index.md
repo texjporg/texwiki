@@ -90,20 +90,23 @@ TeX や LaTeX に関する本の紹介です．
 
 - S. Kottwitz 著, 黒川 利明 訳
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
-    （[朝倉書店](https://www.asakura.co.jp/)，2024年11月01日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
+    （[朝倉書店](https://www.asakura.co.jp/)，2024年11月10日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
-- [やまいも](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』
-    （[BOOTH](https://imoarai.booth.pm/items/5799095)，2024年5月25日初版発行（技術書典16），電子版 &yen;700）
+- [やまいも](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
+    （[BOOTH](https://booth.pm/)，2024年5月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
-    （Independently published，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
+    （Independently published (個人出版)，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
     - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
 
 #### 2023年 {#year2023}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
-    （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版、電子版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
 
 #### 2022年 {#year2022}
@@ -116,7 +119,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2021年 {#year2021}
 
 - [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
-    （Independently published，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
+    （Independently published (個人出版)，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
 
 #### 2020年 {#year2020}
 
@@ -335,6 +338,8 @@ ISBN について：
 
 - [ISBNと書籍JANコードとは &#8211; 日本図書コード管理センター](https://isbn.jpo.or.jp/index.php/fix__about/fix__about_3/)
 - [Wikipedia.ja:ISBN](https://ja.wikipedia.org/wiki/ISBN)
+- [ISBN (国際標準図書番号)](https://kdp.amazon.co.jp/ja_JP/help/topic/G201834170)
+- [ISBN と出版社名 (インプリント) とは? ](https://kdp.amazon.co.jp/ja_JP/help/topic/G7DMSKCM9DVS65TC)
 - [ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/ndb9b11644c34)
 - [続、ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/n44226bbc6a82)
 - [続々 ISBNコードの10桁13桁やハイフン有り無しの話](https://note.com/tosh1965/n/n3acc031f504c)
