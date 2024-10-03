@@ -32,6 +32,7 @@ Texifier はクラウドタイプセットで日本語の文書をコンパイ�
     - [https://www.texifier.com/ios](https://www.texifier.com/ios)
 - [https://apps.apple.com/jp/app/texifier-latex-editor/id550419159](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159)
 - [TeXPadで日本語を扱う方法(iPad , iPhoneでLaTeX)](https://murabitoleg.com/texpad-japanese/)
+    <!-- -[[forumSearch:Texifier]] -->
 
 ### TeX Writer {#q0ac10e0}
 
@@ -40,7 +41,10 @@ TeX Writer の公式サイトで日本語用のテンプレートファイル jp
 
 - [https://apps.texwriter.net/](https://apps.texwriter.net/)
 - [https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222](https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222)
+- [TeX Writerの使い方](https://sutasapo.com/tex-writer%E5%82%99%E5%BF%98%E9%8C%B2/)
 - [TeX Writer for iOS/Androidで日本語も大丈夫でした．](http://kwakita.wordpress.com/2014/08/29/tex-writer-for-tablets/)
+- TeX Writer でのtcolorbox のズレについて ([forum:3837](https://okumuralab.org/tex/mod/forum/discuss.php?d=3837))
+    <!-- -[[forumSearch:TeX Writer]] -->
 
 <!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
 <!-- -[[MobileOrg:https://itunes.apple.com/jp/app/mobileorg/id634225528]] -->
