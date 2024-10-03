@@ -11,6 +11,8 @@ pukiwiki: "Texifier"
 
 Texifier は macOS、iPadOS、iOSで動作する、高機能な(La)TeX統合環境です。
 
+iOS 版の Texifier はクラウドタイプセットで日本語の文書をコンパイルできます。
+
 <strong>公式Webサイト</strong>
 
 - [Texifier &middot; Smoothest way to write LaTeX](https://www.texifier.com/)
