@@ -91,15 +91,15 @@ LyX のインストーラーを右クリックします。
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Downloads<br>
-　　　　サイズ:　　　　　　　　56.8 MB (59,638,526 バイト)<br>
-　　　　ディスク上　　　　　　56.8 MB (59,641,856 バイト)<br>
+　　　　サイズ:　　　　　　　　56.8 MB (59,630,822 バイト)<br>
+　　　　ディスク上　　　　　　56.8 MB (59,633,664 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2024年9月21日、19:16:00<br>
-　　　　更新日時:　　　　　　2024年9月21日、19:16:00<br>
-　　　　アクセス日時:　　　　2024年9月21日、19:16:00<br>
+　　　　作成日時:　　　　　　2024年10月3日、00:30:00<br>
+　　　　更新日時:　　　　　　2024年10月3日、00:30:00<br>
+　　　　アクセス日時:　　　　2024年10月3日、00:30:00<br>
 
 <br>
 
@@ -327,8 +327,8 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > <br>
 >
-> 　　展開：<br>
-> 　　<span style="color:Black;background-color:#00CC44;">\[　　　　　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\]</span><br>
+> 　　LyXを構成しています (TeXLiveが不足分のパッケージをダウンロードするかもしれないので、時間のかかることがあります) ...<br>
+> 　　<span style="color:Black;background-color:#00CC44;">\[　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span><span style="color:Black;background-color:#EEEEEE;">　\]</span><br>
 > 　　<span style="color:Black;background-color:#DAEAFF;">\[ 詳細を表示(D) \]</span><br>
 >
 > <br>
