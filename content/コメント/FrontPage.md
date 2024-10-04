@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LyX 2.4.2.1](https://www.lyx.org/) -- [LyX](/LyX/) 2024-10-04 (金) 20:09:33
 - [LaTeX Workshop 10.4.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-10-03 (木) 04:13:13
 - [TeXstudio 4.8.4](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2024-09-28 (土) 08:48:04
 - [TeXstudio 4.8.3](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2024-09-21 (土) 09:02:21
