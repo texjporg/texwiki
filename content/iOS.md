@@ -34,20 +34,14 @@ TeX Writer は日本語の文書をローカルでコンパイルできます。
 
 TeX Writer の公式サイトで日本語用のテンプレートファイル jp-template.tex が配布されています。
 
-- [https://texwriter.net/](https://texwriter.net/)
-- [https://apps.texwriter.net/](https://apps.texwriter.net/)
-- [https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222](https://apps.apple.com/jp/app/tex-writer-latex-on-the-go/id552717222)
-- [TeX Writer - TeX Wiki](</TeX Writer/>)
+- [TeX Writer - TeX Wiki](</TeX Writer/>) を参照。
     <!-- -[[forumSearch:TeX Writer]] -->
 
 ### [Texifier](/Texifier/) {#f10ec168}
 
 iOS 版の Texifier はクラウドタイプセットで日本語の文書をコンパイルできます。
 
-- [https://www.texifier.com/](https://www.texifier.com/)
-    - [https://www.texifier.com/ios](https://www.texifier.com/ios)
-- [https://apps.apple.com/jp/app/texifier-latex-editor/id550419159](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159)
-- [Texifier - TeX Wiki](/Texifier/)
+- [Texifier - TeX Wiki](/Texifier/) を参照。
     <!-- -[[forumSearch:Texifier]] -->
 
 <!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
