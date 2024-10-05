@@ -118,7 +118,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2021年 {#year2021}
 
-- [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX: 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
+- [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX 美図数式 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
     （Independently published (個人出版)，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
 
 #### 2020年 {#year2020}
