@@ -136,10 +136,10 @@ TeXworks で \[編集\] &gt; \[設定\] のエディタタブの「エディタ�
 ## 関連リンク {#e07d54a5}
 
 - [MyTeXpert:TeXworks](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeXworks)
-- [新しい TeX ドキュメント制作環境 TeXworks の紹介  - I'm Just Another TeXnician.](http://d.hatena.ne.jp/munepi/20100819/texworks)
-- [TeXworks のテンプレートに日本語の雛形を入れてみました  - I'm Just Another TeXnician.](http://d.hatena.ne.jp/munepi/20110625/texworks)
+- [新しい TeX ドキュメント制作環境 TeXworks の紹介  - I'm Just Another TeXnician.](https://munepi.hatenablog.jp/entry/20100819/texworks)
+- [TeXworks のテンプレートに日本語の雛形を入れてみました  - I'm Just Another TeXnician.](https://munepi.hatenablog.jp/entry/20110625/texworks)
     - [munepi/texworks-templates-japanese: Japanese templates of TeXworks](https://github.com/munepi/texworks-templates-japanese)
-- [Texworksで背景色と文字の色やキーワードの色を変更するには - ちょっと便利なパソコンノート - Yahoo!ブログ](http://blogs.yahoo.co.jp/tensai10432/14697466.html)
-- [TeXworks for newcomers-and what's new for old hands - YouTube](http://www.youtube.com/watch?v=9-Z43CSPgM0)：Jonathan Kew（TeXworks project の一人）による TUG 2010 での講演ビデオ
+- [TeXworksの背景色・文字色を変える](https://tasusu.hatenablog.com/entry/20111106/1320588877)
+- [TeXworks for newcomers-and what's new for old hands - YouTube](https://www.youtube.com/watch?v=9-Z43CSPgM0)：Jonathan Kew（TeXworks project の一人）による TUG 2010 での講演ビデオ
 
 [^1]: TeXworks は Windows 版の TeX Live に収録されています．Cygwin, macOS, GNU/Linux の TeX Live には TeXworks は収録されていません．
