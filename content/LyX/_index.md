@@ -452,7 +452,7 @@ Homebrew, MacPorts でインストールすることもできます．
 
 #### Homebrew {#se88dc8b}
 
-- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/l/lyx.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/l/lyx.rb)
+- [https://formulae.brew.sh/cask/lyx](https://formulae.brew.sh/cask/lyx)
 
 ```
 brew install --cask lyx
@@ -460,7 +460,7 @@ brew install --cask lyx
 
 #### MacPorts {#q338f601}
 
-- [https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile](https://github.com/macports/macports-ports/blob/master/aqua/LyX/Portfile)
+- [https://ports.macports.org/port/lyx/](https://ports.macports.org/port/lyx/)
 
 ```
 sudo port install lyx
