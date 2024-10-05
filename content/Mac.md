@@ -143,9 +143,9 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 いくつかの対処法を紹介します。
 
 - [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](http://www.softantenna.com/wp/mac/input-backslash-on-osx/)
-- [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](http://d.hatena.ne.jp/zariganitosh/20101026/text_key_binding)
+- [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](https://zariganitosh.hatenablog.jp/entry/20101026/text_key_binding)
 - [Macにおけるバックスラッシュ（\）の入力方法](http://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
-- [【Yosemite】U.S.キーでバックスラッシュの入力が円記号になってしまう時の対処法](http://ringo-with.com/archives/2668)
+- [OS X Yosemiteでバックスラッシュが円マークになっちゃう問題](https://chalow.net/2014-10-28-1.html)
 - 参考：[(1)](https://x.com/doraTeX/status/630575968025849856), [(2)](https://x.com/doraTeX/status/630576724271435776)
 
 ### &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更 {#defaultkeybinding-dict}
