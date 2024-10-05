@@ -69,7 +69,7 @@ macOS 用の zip ファイルまたは dmg ファイルをダウンロードし�
 
 Homebrew でインストールすることもできます。
 
-> [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/t/texstudio.rb)
+> [https://formulae.brew.sh/cask/texstudio](https://formulae.brew.sh/cask/texstudio)
 
 ```
 brew install --cask texstudio
