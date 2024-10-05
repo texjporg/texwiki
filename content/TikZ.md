@@ -1117,9 +1117,9 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [ちっちのぶろぐ: Tikz](http://chitchnoblog.blogspot.jp/search/label/Tikz)
 - [TeX memo](http://perikanfan.web.fc2.com/tex.html)
     - TikZの日本語マニュアルあり（未完）
-- [Fibonacci 数列で TikZ してみた](http://d.hatena.ne.jp/munepi/20120425/PGFandTikZ)
+- [Fibonacci 数列で TikZ してみた](https://munepi.hatenablog.jp/entry/20120425/PGFandTikZ)
     - [TikZ（＋expl3）を用いてフィボナッチ数列](http://web.archive.org/web/20151230222501/http://d.hatena.ne.jp/abenori/20120425)
-    - [テンプレート的 LaTeX，再び (1)](http://d.hatena.ne.jp/zrbabbler/20120504/1336153796)
+    - [テンプレート的 LaTeX，再び (1)](https://zrbabbler.hatenablog.com/entry/20120504/1336153796)
 - [Graphics with PGF and TikZ](http://www.tug.org/pracjourn/2007-1/mertz/)
     - PracTeX journal(2007-1)の記事で，代表的な用法をシンプルに紹介（英文）
 - [BeamerのためのTikZ](http://www.opt.mist.i.u-tokyo.ac.jp/~tasuku/tikz.html)
