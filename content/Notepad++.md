@@ -130,6 +130,6 @@ MTeX for Notepad++ を使うと LaTeX 環境を簡単に作ることができま
     - [CMCDDE](http://www.robvanderwoude.com/ddecommandline.php#CMCDDE)
 - [Notepad++ Plugins / Discussion / NppExec:con_saveto &lt;file&gt; : &lt;encoding&gt;](https://sourceforge.net/p/npp-plugins/discussion/672146/thread/87237314)
 - [【エディタ】Notepad++のインストール後の設定とか、その辺。](http://osyamonnnnn.dispatch-site.com/wordpress/%E3%83%95%E3%83%AA%E3%83%BC%E3%82%BD%E3%83%95%E3%83%88/notepad_plusplus/)
-- [Notepad++のNppExecの出力からタグジャンプする設定方法](http://d.hatena.ne.jp/Koonies/20110504/NppExec_TagJump)
+- [Notepad++のNppExecの出力からタグジャンプする設定方法](https://koonies.hatenadiary.org/entry/20110504/NppExec_TagJump)
 - [The comment style in TEX language](https://sourceforge.net/p/notepad-plus/discussion/331754/thread/3bcdddda)
 - [A about TEX Project manage](https://sourceforge.net/p/notepad-plus/discussion/331753/thread/90de4bf9)
