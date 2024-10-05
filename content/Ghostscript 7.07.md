@@ -27,7 +27,7 @@ pukiwiki: "Ghostscript 7.07"
 <!-- いまだ有効であれば表に出してください。 - - 2015/10/14 アセトアミノフェン -->
 
 <!-- なお，個人的な作業メモが -->
-<!-- http://d.hatena.ne.jp/acetaminophen/searchdiary?word=ghostscript+7.07 -->
+<!-- https://acetaminophen.hatenablog.com/search?q=Ghostscript+7.07 -->
 <!-- に大量にあります。 -->
 
 ***
