@@ -46,10 +46,9 @@ macOS Sonoma 14 以降
 - [CotEditor + Latexmk + AppleScript + Skim で LaTeX ファイルをタイプセットする](https://blog.lets-go-with-math.net/?p=661)
 - [CotEditor から LaTeX をタイプセットするスクリプト](https://qiita.com/yunarsoa/items/6573bbfcd1814124bb2f)
 - [CotEditor から AppleScript で latexmk を叩く](https://aximov.wordpress.com/2016/01/20/coteditor-latexmk/)
-    <!-- -[[Coteditorで「¥」を「＼」に置換する:http://rakkyoo.net/?p=767]] -->
     <!-- -[[CotEditorでLaTeXファイルをタイプセットするスクリプト:https://satomacoto.blogspot.com/2010/01/coteditorlatex.html]] -->
     <!-- -[[TeX2PDF for CotEditor:https://gist.github.com/1601133]] -->
     <!-- *関連リンク [#t0e859e9] -->
     <!-- -[[Vimのシンタックス定義をCotEditor用に変換.app:http://odorusaboten.web.fc2.com/mac/coteditor_syntaxs.html#vim2cot]] -->
-    <!-- -[[CotEditorまとめ:http://d.hatena.ne.jp/tanaponchikidun/20120207/1328603967]] -->
-    <!-- -[[CotEditor Replacement Icon:http://wolfrosch.com/text/2011/04/08]] -->
+    <!-- -[[CotEditorまとめ:https://tanaponchikidun.hatenadiary.org/entry/20120207/1328603967]] -->
+    <!-- -[[CotEditor Replacement Icon:https://wolfrosch.com/works/goodies/coteditor]] -->
