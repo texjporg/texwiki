@@ -7,7 +7,7 @@ pukiwiki: "pTeX-ng"
 
 # pTeX-ng
 
-## pTeX-ng {#q8cbbf32}
+## pTeX-ng (Asiatic pTeX (ApTeX)) {#q8cbbf32}
 
 ***
 
@@ -15,7 +15,7 @@ pukiwiki: "pTeX-ng"
 
 ### pTeX-ng とは {#bdeeaf1c}
 
-pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](http://www.tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指すプロジェクトです。
+pTeX-ng (next generation pTeX) は [Y&amp;Y TeX](https://tug.org/yandy/) をベースに e-TeX, pTeX, upTeX の機能を追加した TeX の処理系を目指すプロジェクトです。
 pTeX-ng は PDF ファイルを直接出力します。DVI ファイルも同時に出力します。
 
 - [https://github.com/clerkma/ptex-ng](https://github.com/clerkma/ptex-ng)
@@ -33,14 +33,14 @@ pTeX-ng は PDF ファイルを直接出力します。DVI ファイルも同時
 
 - [https://github.com/clerkma/ptex-ng/commits/master](https://github.com/clerkma/ptex-ng/commits/master)
 
-## インストール {#s7b25ce6}
+## ビルド {#s7b25ce6}
 
-[https://github.com/clerkma/ptex-ng#how-to-install](https://github.com/clerkma/ptex-ng#how-to-install) を参照。
+[https://github.com/clerkma/ptex-ng?tab=readme-ov-file#how-to-build](https://github.com/clerkma/ptex-ng?tab=readme-ov-file#how-to-build) を参照。
 
 ## 関連リンク {#re1f2eda}
 
 - [http://twilog.org/clerk_ma/search?word=pTeX-ng](http://twilog.org/clerk_ma/search?word=pTeX-ng)
-- [「pTeX-ng」の検索結果 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/searchdiary?word=pTeX-ng)
+- [pTeX-ng の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=pTeX-ng)
 - [http://konoyonohana.blog.fc2.com/?q=pTeX-ng](http://konoyonohana.blog.fc2.com/?q=pTeX-ng)
     - [天地有情 pTeX-ng](http://konoyonohana.blog.fc2.com/blog-category-17.html)
     - \[[pTeX-ng\] 新しくエンジン "platex-ng" が加わった](http://konoyonohana.blog.fc2.com/blog-entry-395.html)
