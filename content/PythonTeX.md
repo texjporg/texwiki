@@ -95,7 +95,7 @@ python.exe c:\texlive\2024\texmf-dist\scripts\pythontex\pythontex.py
 
 ### 関連リンク {#e0f26668}
 
-- [「PythonTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=PythonTeX)
+- [PythonTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=PythonTeX)
 - [PythonTeX : はむ吉(のんびり)の雑記帳](http://blog.livedoor.jp/hamu_nbr/tag/PythonTeX)
     - [PythonTeXを試してみた：Pythonコードの出力結果をLaTeX文書に埋め込む](http://blog.livedoor.jp/hamu_nbr/archives/39582714.html)
 - [3 次元極座標のラプラシアンをPythonTeXで計算してみた](http://nsplat.wordpress.com/2013/10/04/3-%E6%AC%A1%E5%85%83%E6%A5%B5%E5%BA%A7%E6%A8%99%E3%81%AE%E3%83%A9%E3%83%97%E3%83%A9%E3%82%B7%E3%82%A2%E3%83%B3%E3%82%92pythontex%E3%81%A7%E8%A8%88%E7%AE%97%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
