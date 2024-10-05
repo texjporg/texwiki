@@ -7,18 +7,18 @@ pukiwiki: "MacTeX"
 
 # MacTeX
 
-## [MacTeX](http://tug.org/mactex/) {#mactex}
+## [MacTeX](https://tug.org/mactex/) {#mactex}
 
 MacTeX は [TeX Live](</TeX Live/>) をベースにした macOS 専用の TeX ディストリビューションです。
 TeX Live をフルインストールし，オプションでいくつかの追加アプリケーションもインストールします。
 
 <strong>公式サイト</strong>
 
-- [MacTeX - TeX Users Group](http://tug.org/mactex/)
-- [MacTeX Technical Working Group](http://www.tug.org/twg/mactex/)
-- [MacTeX Screen Saver](http://www.tug.org/tug2003/mactex/)
-    - [MacTeX Screen Saver](http://www.tug.org/tug2003/mactex/screensaver.html)
-        - [screen image](http://www.tug.org/tug2003/mactex/screen_images/)
+- [MacTeX - TeX Users Group](https://tug.org/mactex/)
+- [MacTeX Technical Working Group](https://www.tug.org/twg/mactex/)
+- [MacTeX Screen Saver](https://www.tug.org/tug2003/mactex/)
+    - [MacTeX Screen Saver](https://www.tug.org/tug2003/mactex/screensaver.html)
+        - [screen image](https://www.tug.org/tug2003/mactex/screen_images/)
 
 MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
 
