@@ -108,7 +108,7 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 - [CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
-- [Ghostscript についてちょっとだけ](http://d.hatena.ne.jp/naruoga/20130110/1357827274)
+- [Ghostscript についてちょっとだけ](https://naruoga.hatenablog.com/entry/20130110/1357827274)
 - [Data storage for gs-cjk project](https://www.aihara.co.jp/~taiji/gyve/)（山田さん）
 
 #### License {#g7897d81}
