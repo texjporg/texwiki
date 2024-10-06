@@ -9,7 +9,7 @@ pukiwiki: "cm-super"
 
 <!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/cm-super.html -->
 
-## CM-Super {#vb256d79}
+## CM-Super (非推奨) {#vb256d79}
 
 <strong>現在では [Latin Modern](</Latin Modern/>) のほうが品質において優れていますので，Latin Modern の使用をお薦めします．</strong>
 
@@ -42,5 +42,5 @@ CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Mode
 
 ### 関連リンク {#e74a0814}
 
-- [Babel な話：type1ec パッケージの 10pt オプションがアレな件](http://d.hatena.ne.jp/zrbabbler/20120906/1346931893)
+- [Babel な話：type1ec パッケージの 10pt オプションがアレな件](https://zrbabbler.hatenablog.com/entry/20120906/1346931893)
 - [cm-super - 松浦高志のページ](http://user.ecc.u-tokyo.ac.jp/users/user-12036/wiki.cgi?page=cm-super)
