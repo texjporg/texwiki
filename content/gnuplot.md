@@ -38,7 +38,7 @@ gnuplot は (La)TeX で処理できる形式でグラフを出力することが
 - PDF 形式や EPS 形式での出力例
     - [28.6 グラフを画像として保存する | HWB](http://hwb.ecc.u-tokyo.ac.jp/current/applications/gnuplot/output/)
     - [GNUPLOTを用いたグラフ作成](http://www.cse.kyoto-su.ac.jp/~oomoto/lecture/program/gnuplot/gnuplot.html)
-    - [gnuplotの出力をマージンを調整してpdfに変換する](http://d.hatena.ne.jp/yambi/20130717/1374064507)
+    - [gnuplotの出力をマージンを調整してpdfに変換する](https://yambi.hatenablog.com/entry/20130717/1374064507)
     - [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html)
 
 - TikZ との連携例
