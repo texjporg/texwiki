@@ -26,7 +26,7 @@ TeX は「テック」または「テフ」(\[tex\])と読みます。
 英語圏では \[tek\]，\[tekh\] または誤読ですが \[teks\]，ドイツ語圏では「テヒ」(\[t&#x25b;&ccedil;\]) とも読むようです。 <!-- 七不思議の一つではない（∵不思議でない）し、また「テック」の方が妥当であるという誤った印象を与えるので消しておきます --> <!-- 「テフ」と読む人が，日本以外で通用しにくいにもかかわらず「テック」と読むのを頑なに避ける傾向にあるのはTeX界の七不思議((7つあるか不明))です。 -->
 同様に LaTeX は「ラテック」「ラテフ」などと読みます。
 
-- [TeX の発音](http://d.hatena.ne.jp/takeda25/20140428/1398662547)
+- [TeX の発音](https://takeda25.hatenablog.jp/entry/20140428/1398662547)
 - [TeXはテック](http://kahei.org/blog/2014/04/tex-3.html)
 - [TeXはテック - Talpa memorandum](http://sonmin-sokuho.hatenablog.com/entry/2014/04/28/120221)
 - [「TeX」の読み方は「テック」だった | スラド](http://it.srad.jp/story/14/04/28/0911215/%E3%80%8CTeX%E3%80%8D%E3%81%AE%E8%AA%AD%E3%81%BF%E6%96%B9%E3%81%AF%E3%80%8C%E3%83%86%E3%83%83%E3%82%AF%E3%80%8D%E3%81%A0%E3%81%A3%E3%81%9F)
@@ -132,7 +132,7 @@ TeX を用いた組版を容易にするために作成されたマクロ集で�
 
 ```
 $ pdftex -ini
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (INITEX)
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (INITEX)
  restricted \write18 enabled.
 **
 ```
@@ -140,18 +140,21 @@ This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (INITEX)
 各マクロパッケージのファイル (.ini) をこのまっさらな状態から読み込ませ，最後に \dump を実行することでダンプファイル (.fmt) ができます．
 普段はこのようにして作成された fmt ファイルが読み込まれた状態で起動するわけです．
 
-- [てふてふの大群がとんでゐます - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20121024/1351076961)
-- [異様な LaTeX の話 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140321/1395360402)
+- [てふてふの大群がとんでゐます - マクロツイーター](https://zrbabbler.hatenablog.com/entry/20121024/1351076961)
+- [異様な LaTeX の話 - マクロツイーター](https://zrbabbler.hatenablog.com/entry/20140321/1395360402)
 
 ### 備考 {#d2892c04}
 
 ### OS による実行速度の違い {#d99944d5}
 
-Windows や macOS に比べ，Linux の方が LaTeX の実行速度が速いようです．
-もし Windows や macOS を使用していて LaTeX の実行速度が遅いと感じる場合は，この機会に Linux を試してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
+Windows や macOS に比べ，Linux の方が TeX の実行速度が速いようです．
+もし Windows や macOS を使用していて TeX の実行速度が遅いと感じる場合は，この機会に Linux を試してみるのも一つの手かもしれません． <!-- 以前は --> <!-- Windows や OS X を使用していて LaTeX の実行速度が遅い場合は Linux を使用してください． --> <!-- と書いてあったわけですが，そう簡単に乗り換えられませんよね？ -->
 
+- [Windows でも TeXLive のアップグレード作業完了。動作確認で typeset したら、絶望的に遅かった（学部時代、よくこれでレポート作成してたな...）。これだと確かに Overleaf で良いわってなる。なぜ TeX はここまで Windows との相性が悪いのか](https://x.com/watamario15/status/1799312011312177465) &lt;-- [Windows は I/O 関連の API はぜんぶ Windows Defender や 3rd party のために filter/hook でウィルススキャナとか噛ませるフレームワークみたいになってるはずなので、TeX に限らず小さなファイルたくさん I/O する処理は全部絶望的に遅いはず（git とかもそう](https://x.com/orumin/status/1799312615241551973)
+- [LaTeXコンパイラ時間比較 (Windows, Mac, iPad)](https://qiita.com/nhancoromochi/items/c4906794519b9b5febf7)
+- [Windowsで日本語texのコンパイルを爆速にする方法](https://qiita.com/kiy_at_dev/items/75aa8a13b97d2115f4de)
 - [TeXLiveのlatexが遅い件](http://pman0214.blog37.fc2.com/blog-entry-305.html)
-- [MacとUbuntuでのLaTeX実行速度の違い](http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
+- [MacとUbuntuでのLaTeX実行速度の違い](https://web.archive.org/web/20141027175213/http://ubutun.blogspot.jp/2014/06/macubuntulatex.html)
 
 ### 不具合 {#e730befe}
 
@@ -161,16 +164,15 @@ Windows や macOS に比べ，Linux の方が LaTeX の実行速度が速いよ�
 ### バッドノウハウ {#hcd7e588}
 
 - [バッドノウハウからグッドラッパーへ](http://www.hyuki.com/techinfo/knowhow.html)
-- [TeX はバッドノウハウか？](http://d.hatena.ne.jp/apkz/20040311#p4)
-- [バッドノウハウについて、ふたたび](http://d.hatena.ne.jp/apkz/20040316#p1)
-- [バッドノウハウと TeX と書籍組版](http://d.hatena.ne.jp/apkz/20040322/p1)
+- [TeX はバッドノウハウか？](https://apkz.hatenadiary.org/entry/20040311/p4)
+- [バッドノウハウについて、ふたたび](https://apkz.hatenadiary.org/entry/20040316/p1)
+- [バッドノウハウと TeX と書籍組版](https://apkz.hatenadiary.org/entry/20040322/p1)
 - [bemaerによるプレゼンテーション](https://okumuralab.org/tex/mod/forum/discuss.php?d=700)
     - [TeXソース内での全角スペースは有害](https://okumuralab.org/tex/mod/forum/discuss.php?d=700#p3831)
 - [インターフ ェ イスの街角– Perl で TEX](http://www.pitecan.com/UnixMagazine/PDF/if0101.pdf) (PDF)
-- [LaTeXのdfracで証明図を書くときのバッドノウハウ](http://d.hatena.ne.jp/moroha_y/20111229/p1)
 
 ## 関連リンク {#f53c2f34}
 
-- [TeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/TeX)
-- [TeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=TeX)
-- \[[tex-live\]  TeX versions](http://tug.org/pipermail/tex-live/2018-November/042697.html)
+- [TeXとは？開発に役立つ使い方、トレンド記事やtips - Qiita](https://qiita.com/tags/TeX)
+- [「TeX」の検索結果 - Qiita](https://qiita.com/search?utf8=%E2%9C%93&q=TeX)
+- \[[tex-live\]  TeX versions](https://tug.org/pipermail/tex-live/2018-November/042697.html)
