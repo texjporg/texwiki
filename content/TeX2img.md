@@ -74,7 +74,7 @@ Windows/macOS 版ともに TeX と [Ghostscript](/Ghostscript/) が正しくイ�
 - Windows 版は EMF 画像の出力に，Google が開発した
     [PDFium](</Google Chrome/#l83f1380>) という PDF レンダリングエンジンを利用しています．
 
-- macOS 版は，[Ghostscript 9.15 以降でテキスト形式の EPS を出力する](http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)ために，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵しています．
+- macOS 版は，[Ghostscript 9.15 以降でテキスト形式の EPS を出力する](https://web.archive.org/web/20150802051911/http://d.hatena.ne.jp/acetaminophen/20150514/1431625979)ために，[Xpdf](/Xpdf/) の付属ツールである pdftops を内蔵しています．
 
 ### トラブルシューティング・よくある質問 {#faq}
 
