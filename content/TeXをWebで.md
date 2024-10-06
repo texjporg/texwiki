@@ -19,7 +19,7 @@ pukiwiki: "TeXをWebで"
 
 #### フリーソフトウェア（オープンソースソフトウェア） {#g834836b}
 
-- [Overleaf](https://github.com/overleaf/overleaf)（旧 writeLaTeX）
+- [Overleaf](https://github.com/overleaf/overleaf)
 - [CoCalc](https://github.com/sagemathinc/cocalc)
 
 #### フリーウェア（無料） {#e0fded48}
@@ -33,13 +33,12 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 
 ### 関連リンク {#cfaeb364}
 
-- [PHPでTeXをPDF化してくれるサービスを作りたい(アドバイス歓迎)](http://qiita.com/inductor/items/6be85d61ea7c47680100)
-- [LaTeX Online: Options continue to grow at Some TeX Developments](http://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
-- [TeX implementations in the Cloud](http://cikitsa.blogspot.co.at/2013/01/tex-implementations-in-cloud.html)
-- [Cloud LaTeXとShareLaTeX、どっちがいい?](http://zopfcode.hateblo.jp/entry/2015/05/10/040303)
-- [ShareLatexでjarticleを使えるようにする](http://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
-- [Overleaf で日本語を使用する方法](http://doratex.hatenablog.jp/entry/20150903/1441252705)
-- [2016年3月22日 - にっき♪](http://abenori.blogspot.jp/2016/03/blog-post_82.html)
+- [LaTeX Online: Options continue to grow at Some TeX Developments](https://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
+- [TeX implementations in the Cloud](https://cikitsa.blogspot.com/2013/01/tex-implementations-in-cloud.html)
+- [Cloud LaTeXとShareLaTeX、どっちがいい?](https://www.zopfco.de/entry/2015/05/10/040303)
+- [ShareLatexでjarticleを使えるようにする](https://qiita.com/ishigaki/items/3191e1a330dfb4e11289)
+- [Overleaf で日本語を使用する方法](https://doratex.hatenablog.jp/entry/20150903/1441252705)
+- [2016年3月22日 - にっき♪](https://abenori.blogspot.com/2016/03/blog-post_82.html)
 
 ## TeX を Web 上で提供する方法 {#xdac6c3a}
 
@@ -50,7 +49,7 @@ Web 上で TeX 形式で文章を打ち込めば PDF でダウンロードでき
 
 まずサーバが必要です．
 通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します．
-最近の Pentium/Celeron クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます．
+最近の インテルプロセッサー Nシリーズ クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます．
 
 通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです．
 これらについては特に手を加える必要はありません．
