@@ -21,11 +21,11 @@ W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>
 
 インストール方法は，阿部紀行さんによって開発された「TeX インストーラ 3」を使う方法と，ターミナルで「簡易インストーラ」を動かす方法があります．
 以下で，それぞれの方法を説明します．
-初めての方は TeX インストーラ 3 を使う方をおすすめします．
+現在 TeX インストーラ 3 は配布が終了していますので W32TeX をインストールする場合は簡易インストーラによるインストールを参照してください．
 
 ### TeX インストーラ 3 によるインストール {#wd8675d9}
 
-W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3](https://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) を使うと，楽に Windows 用 TeX 環境を整えることができます．
+W32TeX 及び関連するソフトウェアを自動でインストールする [TeXインストーラ3（配布終了）](https://web.archive.org/web/20240419153453/https://www.ms.u-tokyo.ac.jp/~abenori/soft/abtexinst.html) ([abtexinst_0_91.zip（アーカイブ）](https://yueno.net/xoops/modules/xpwiki/?PC%2FWindows%2FTeX#y1e8700f)) を使うと，楽に Windows 用 TeX 環境を整えることができます．
 これは W32TeX 本体と周辺ソフトウェア（[dviout](/dviout/)，[Ghostscript](/Ghostscript/)，[TeXworks](/TeXworks/)）を自動でインストールし，設定まで済ませてくれます．
 基本的にはインストーラを取得後，展開し，abtexinst.exe をダブルクリックして指示に従ってください．
 環境によっては .exe が表示されていないかもしれませんが，以下のようなアイコンで表示されているものを選んでください．
@@ -44,7 +44,7 @@ W32TeX 及び関連するソフトウェアを自動でインストールする 
 
 #### トラブルシューティング {#t3a0d8db}
 
-まずは添付されている abtexinst.txt（やはり環境によっては .txt が表示されません）を参照してください．
+まずは添付されている readme.txt（やはり環境によっては .txt が表示されません）を参照してください．
 <strong>URL の変更は効果的なことが多い</strong>です．
 
 また，TeX インストーラ 3 を実行すると同じフォルダに abtexinst_log.txt（やはり（略））というファイルが作成されます．
@@ -72,14 +72,15 @@ W32TeX は，[ミラーサイト](/W32TeX/#mirror)からダウンロード可能
 
 ダウンロードツールをお使いの場合には，サーバーに迷惑をかけないようにするために同時接続数を1にしてください．
 
-ダウンロードしたら，念のため次のことをご確認ください．
-
-- ファイルの拡張子が正しいか？
-    - Microsoft Edge や Internet Explorer などの一部のブラウザーやダウンローダーは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Microsoft Edge あるいは Internet Explorer 11 を使って <del> [http://eplang.jp/w32tex/archive/latest/current/](http://eplang.jp/w32tex/archive/latest/current/) </del> から \*.tar.xz ファイルを保存した場合に，
-
-> &#x2a;.tar.xz → \*.tar.tar
-
-のようにファイルの拡張子が変わります． <!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
+<!-- ダウンロードしたら，念のため次のことをご確認ください． -->
+<!--  -->
+<!-- -ファイルの拡張子が正しいか？ -->
+<!-- - -Microsoft Edge や Internet Explorer などの一部のブラウザーやダウンローダーは勝手にファイルの拡張子を変えてしまうことがあります．例えば，Microsoft Edge あるいは Internet Explorer 11 を使って %% http://eplang.jp/w32tex/archive/latest/current/ %% から *.tar.xz ファイルを保存した場合に， -->
+<!-- > -->
+<!-- &#x2a;.tar.xz → *.tar.tar -->
+<!-- < -->
+<!-- のようにファイルの拡張子が変わります． -->
+<!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
 
 #### ダウンロードファイル {#i853d3d5}
 
@@ -318,7 +319,7 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [https://ctan.org/pkg/w32tex](https://ctan.org/pkg/w32tex)
 - [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
-- [W32TeXとは - はてなキーワード](https://d.hatena.ne.jp/keyword/W32TeX)
+- [W32TeXとは コンピュータの人気・最新記事を集めました - はてな](https://d.hatena.ne.jp/keyword/W32TeX)
 
 ## W32TeX の詳細情報 {#icae16ae}
 
