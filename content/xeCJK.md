@@ -165,7 +165,7 @@ c:/w32tex/share/texmf-dist/fonts/truetype/ipa/ipaexm.ttf: IPAexMincho,IPAex明�
 
 ### 関連リンク {#j53b1d05}
 
-- [「xeCJK」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=xeCJK)
+- [xeCJK の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=xeCJK)
 - [xeCJK を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=xeCJK)
 - [xeCJK : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/xeCJK)
 - [日本語の文章を XeLaTeX で書く](http://technology-memo.seesaa.net/article/313825378.html)
@@ -399,7 +399,7 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 
 ### 関連リンク {#q4a9591d}
 
-- [「zxjatype」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=zxjatype)
+- [zxjatype の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=zxjatype)
 - [ZXjatype を含む記事 : いわにぃのブログ](http://blog.livedoor.jp/ti5942/search?q=ZXjatype)
 - [ZXjatype : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/ZXjatype)
 - [QA: XeTeX で日本語、再び](https://okumuralab.org/tex/mod/forum/discuss.php?d=139)
