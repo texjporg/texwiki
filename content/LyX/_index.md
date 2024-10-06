@@ -535,7 +535,7 @@ sudo zypper install lyx
 - [LyX - My memory for future](https://sites.google.com/site/mymemoryforfuture/lyx)
 - [https://miyazakikenji.wordpress.com/tag/lyx/](https://miyazakikenji.wordpress.com/tag/lyx/)
 - [LyX の検索結果 - 跳慮跋考](http://kino.hateblo.jp/search?q=LyX)
-- [&quot;LyX&quot; - 記事一覧 - ill-identified diary](http://ill-identified.hatenablog.com/archive/category/LyX)
+- [LyX カテゴリーの記事一覧 - ill-identified diary](https://ill-identified.hatenablog.com/archive/category/LyX)
 - [LyX 2.xでUTF-8のプレーンLaTeXファイルを読みこむには](http://www.dbc-works.org/feedback/entry/2014/12/1/)
 - [LyX、TeXstudio、Texmakerを少しだけ試用](http://blawat2015.no-ip.com/~mieki256/diary/201409211.html)
 - [LyX を使用してグラフィカルな方法で LaTeX 文書を作成する](http://www.ibm.com/developerworks/jp/opensource/library/os-lyx/)
@@ -544,7 +544,7 @@ sudo zypper install lyx
 - [LyX HowTo](https://web.archive.org/web/20170802204739/http://www.int.otaru-uc.ac.jp/lyx-howto.aspx/) 横田 宏治 さんによる詳しい解説
 - [インド学仏教学における LyX の利用](https://web.archive.org/web/20200808084242/http://skalldan.wordpress.com/2011/12/01/%E3%82%A4%E3%83%B3%E3%83%89%E5%AD%A6%E4%BB%8F%E6%95%99%E5%AD%A6%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B-lyx-%E3%81%AE%E5%88%A9%E7%94%A8/)
 - [LyX の導入と Zotero との連携](https://web.archive.org/web/20170710224047/http://skalldan.wordpress.com/2011/11/30/lyx-%E3%81%AE%E5%B0%8E%E5%85%A5%E3%81%A8-zotero-%E3%81%A8%E3%81%AE%E9%80%A3%E6%90%BA/)
-- [Lyxを使ってみました](http://d.hatena.ne.jp/mFumi/20090902/1251900233)
+- [Lyxを使ってみました](https://mfumi.hatenadiary.org/entry/20090902/1251900233)
 
 ### License {#pb9a4019}
 
