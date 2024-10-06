@@ -7,11 +7,11 @@ pukiwiki: "KaTeX"
 
 # KaTeX
 
-## [KaTeX](http://khan.github.io/KaTeX/) {#x2d52443}
+## [KaTeX](https://katex.org/) {#x2d52443}
 
 KaTeX は，Web ブラウザ上で数式を高速に描画できるライブラリ (The fastest math typesetting library for the web) です。
 
-- [https://github.com/KaTeX/KaTeX](https://github.com/KaTeX/KaTeX)
+- [KaTeX – The fastest math typesetting library for the web](https://katex.org/)
 
 ***
 
