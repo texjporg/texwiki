@@ -1043,7 +1043,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - <strong>dvipdfmx でシェーディングは使用可</strong>であることをマニュアルのサンプルで確認（\usetikzlibrary{shadings,fadings}も有効）（マニュアル p.177-178）
     - <strong>dvipdfmx でマスクは使用可</strong>であることをマニュアルのサンプルで確認（マニュアル p.1148-1149）
     - <strong>dvipdfmx で \[remember picture\] は使用可</strong> --&gt; [TikZ/PGF の図画間結合 (inter-picture connections) が pLaTeX/upLaTeX でも標準サポートされたようだ。つまり『pxpgfmark パッケージは不要になった』ということ。](https://x.com/aminophen/status/1114133430826987520)
-        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](https://zrbabbler.hatenablog.com/entry/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](https://zrbabbler.hatenablog.com/entry/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](http://srad.jp/~ujimushi/journal/551945)
+        - dvipdfmx の制約の検証について（旧版のTikZ/pgf）[TikZ は dvipdfmx をどこまでサポートするか？(1)](https://zrbabbler.hatenablog.com/entry/20130222/1361495591), [TikZ は dvipdfmx をどこまでサポートするか？ (2)](https://zrbabbler.hatenablog.com/entry/20130302/1362228901), [数学雑談　LaTeX (TikZ)](http://mathsci.blog41.fc2.com/blog-entry-65.html), [あなたが知らない(かもしれない)PGF/TikZの世界](https://srad.jp/~ujimushi/journal/551945)
 - dvipsを使用することによる制約。
     - パスで画像をマスクできない／シェーディングは使用可能だが，品質は落ちる／透明度は最近のGhostscriptを必要とする
 
@@ -1118,7 +1118,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TeX memo](http://perikanfan.web.fc2.com/tex.html)
     - TikZの日本語マニュアルあり（未完）
 - [Fibonacci 数列で TikZ してみた](https://munepi.hatenablog.jp/entry/20120425/PGFandTikZ)
-    - [TikZ（＋expl3）を用いてフィボナッチ数列](http://web.archive.org/web/20151230222501/http://d.hatena.ne.jp/abenori/20120425)
+    - [TikZ（＋expl3）を用いてフィボナッチ数列](https://web.archive.org/web/20151230222501/http://d.hatena.ne.jp/abenori/20120425)
     - [テンプレート的 LaTeX，再び (1)](https://zrbabbler.hatenablog.com/entry/20120504/1336153796)
 - [Graphics with PGF and TikZ](http://www.tug.org/pracjourn/2007-1/mertz/)
     - PracTeX journal(2007-1)の記事で，代表的な用法をシンプルに紹介（英文）
