@@ -29,7 +29,7 @@ pukiwiki: "LaTeX入門"
 すなわち，活版印刷のような「文字や図版などの要素を紙面に配置する」という作業をコンピュータで行います。
 
 [LaTeX](/LaTeX/) は TeX の上に構築されたフリーの文書処理システムです。
-[Leslie Lamport](http://lamport.org/) によって開発されました。
+[Leslie Lamport](https://lamport.org/) によって開発されました。
 TeX は「組版のために開発された言語」でもあり，そのままでは使いにくい点もあるので，LaTeX によって一般的な文書作成に便利な機能拡張がなされています。
 
 現在では TeX で組版を行う場合には LaTeX を使うことが圧倒的に多いため，単に「TeX」と言った場合にそれが LaTeX のことを指している場合も多いのですが，本来 TeX と LaTeX は区別されるべきものです。
@@ -59,7 +59,7 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
     など）
 
 - Windows 上で UNIX ライクな環境を提供する [Cygwin](https://www.cygwin.com/)
-- モバイルオペレーティングシステム（[Android OS](https://www.android.com/)，[iOS](https://www.apple.com/jp/ios/) など）
+- モバイルオペレーティングシステム（[Android](https://www.android.com/)，[iOS](https://www.apple.com/jp/ios/)，[iPadOS](https://www.apple.com/jp/ipados/) など）
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
 
@@ -90,8 +90,11 @@ LaTeX 2ε を “LaTeX2e” と書くことになっています。
 
 LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』
-    （[技術評論社](https://gihyo.jp/)，2023年12月9日紙版、電子版発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
 
@@ -123,7 +126,7 @@ TeX Wiki には OS ごとのインストール方法が詳しく書かれてい�
 
 また，より進んだクラウドのサービスも提供されています。
 
-- [Overleaf](https://www.overleaf.com/)（旧称：writeLaTeX）
+- [Overleaf](https://www.overleaf.com/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 
 ## 使い方 {#hf6bc116}
@@ -148,4 +151,4 @@ LaTeX の使い方を簡単に解説しています。
 - [応用的な使い方](</LaTeX入門/応用的な使い方/>)
 - [発展編：最近の LaTeX の動向](</LaTeX入門/発展編/>)
 
-[^1]: pTeX, pLaTeX は株式会社アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) グループ会社の[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
+[^1]: pTeX, pLaTeX は株式会社アスキー（現：[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）が日本語化したものです。pTeX, pLaTeX の頭文字の p（ピー）は strongp/strongublishing（出版）の意味です。アスキーでは pTeX, pLaTeX を自社の本の製作に利用していました。
