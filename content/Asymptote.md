@@ -7,7 +7,7 @@ pukiwiki: "Asymptote"
 
 # Asymptote
 
-## [Asymptote](http://asymptote.sourceforge.net/) {#dd856e20}
+## [Asymptote](https://asymptote.sourceforge.io/) {#dd856e20}
 
 Asymptote は [MetaPost](/MetaPost/) を発展させたベクトルグラフィック記述言語です。
 TeX Live に標準で含まれています。
@@ -16,11 +16,15 @@ TeX Live に標準で含まれています。
 
 ***
 
+### 公式サイト {#m9a2a3cb}
+
+- [Asymptote](https://asymptote.sourceforge.io/)
+
 ### 発音 {#te374add}
 
 最初見たときにどう発音すればいいかよく分からなかったので，
-[Pronunciation of asymptote - how to pronounce asymptote correctly.](http://www.howjsay.com/index.php?word=asymptote)
-（注意：音が出ます）で確認したところ「アスィムトートゥ」みたいな感じで発音するみたいです。
+[ASYMPTOTE | Pronunciation in English](https://dictionary.cambridge.org/pronunciation/english/asymptote)
+（注意：音が出ます）で確認したところイギリス英語では「アスィムトートゥ」、アメリカ英語では「アスィムト」みたいな感じで発音するみたいです。
 発音記号では\[æ'sim(p)tout\]。
 英単語としての意味は“漸近線”。
 
@@ -36,12 +40,12 @@ Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がな�
 
 ソースからコンパイルするのも簡単です。
 
-[本家](https://github.com/vectorgraphics/asymptote/releases) や [CTAN:graphics/asymptote/](https://mirror.ctan.org/graphics/asymptote/) にソースコードがあります。
+[https://github.com/vectorgraphics/asymptote/tags](https://github.com/vectorgraphics/asymptote/tags) や [CTAN:graphics/asymptote](https://mirror.ctan.org/graphics/asymptote) にソースコードがあります。
 
 macOS でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
 Asymptote ソースを展開したディレクトリに
-[gc-8.0.4.tar.gz](https://www.hboehm.info/gc/gc_source/gc-8.0.4.tar.gz)
+[gc-8.2.4.tar.gz](https://www.hboehm.info/gc/gc_source/gc-8.2.4.tar.gz)
 を展開せずに置き，
 
 ```
@@ -106,9 +110,9 @@ tex="latex";
 texcommand="platex";
 ```
 
-platex のデフォルトが UTF-8 になっていない場合は "platex-utf8" とします。
-こういうコマンドがなければエイリアスかバッチファイルで作りましょう。
-"platex -kanji=utf8" のようにはできないようです。
+<!-- platex のデフォルトが UTF-8 になっていない場合は "platex-utf8" とします。 -->
+<!-- こういうコマンドがなければエイリアスかバッチファイルで作りましょう。 -->
+<!-- "platex -kanji=utf8" のようにはできないようです。 -->
 
 #### 日本語対応 (Windows) {#f6f53eb8}
 
@@ -176,8 +180,10 @@ yaxis("$y$",LeftRight,RightTicks);
 ```
 
 出力
-[dnorm-asy.pdf](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.pdf), 
-[dnorm-asy.png](http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png)
+[dnorm-asy.pdf](https://web.archive.org/web/20101128172948/http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.pdf), 
+[dnorm-asy.png](https://web.archive.org/web/20101128172748if_/http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png)
+
+<img src="https://web.archive.org/web/20101128172748if_/http://oku.edu.mie-u.ac.jp/~okumura/texwiki/image/dnorm-asy.png" alt="">
 
 #### 日本語対応 (Linux/BSD/macOS/Windows共通) {#k4f596cf}
 
@@ -215,10 +221,10 @@ unitsize(15pt);
 - [Asymptote のつかいかた \[Wayback Machine\]](http://web.archive.org/web/20170722173253/http://2nd.geocities.jp/asy_zenkin/) → ひととおりの使い方が説明された数少ない日本語リソース。TeX Live 2014 対応
 - [W32Tex や Asymptote の導入(インストール)に成功するまで経緯（１）](http://blogs.yahoo.co.jp/eikei375/38640701.html)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
-- [Asymptote 問題集](http://d.hatena.ne.jp/denpoya/)
+- [Asymptote の検索結果 - denpoyaのブログ](https://denpoya.hatenablog.com/search?q=Asymptote)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)
 - [実験室(Asymptote)](http://minamo.my.coocan.jp/asymptote.html)
-- [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](http://d.hatena.ne.jp/hyuki/20090216#tex)
+- [LaTeXで使えるベクタグラフィック言語AsymptoteをWindowsで試す](https://hyuki.hatenablog.com/entry/20090216/tex)
 - [Asymptoteを使って図形をきれいに描こう](https://www.juen.ac.jp/math/nakagawa/asymptoteguide.html)
 - [Asymptoteにおける\tate](https://okumuralab.org/tex/mod/forum/discuss.php?d=1077)
 - [Asymptoteで日本語を表示させられませんでした](https://okumuralab.org/tex/mod/forum/discuss.php?d=765)
