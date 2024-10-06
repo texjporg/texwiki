@@ -85,6 +85,7 @@ TeX や LaTeX に関する本の紹介です．
 - [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
 - [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
 - [「LaTeX｣の書籍検索結果｜講談社BOOK倶楽部](https://bookclub.kodansha.co.jp/search?_sw=LaTeX)
+- [検索 書籍一覧「 LaTeX 」の検索結果｜翔泳社の本](https://www.shoeisha.co.jp/search?search=LaTeX)
 - [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
 - [出版物検索結果：LaTeX - 工学社](https://www.kohgakusha.co.jp/books/search?ORDER=_PUBDATE&search=LaTeX)
 
@@ -99,7 +100,7 @@ TeX や LaTeX に関する本の紹介です．
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月10日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
 - [やまいも](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
-    （[技術書典](https://techbookfest.org/)，2024年5月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
+    （[技術書典](https://techbookfest.org/)，2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
@@ -160,7 +161,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - 小林 雅人
     『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
-    （[工学社](http://www.kohgakusha.co.jp/)，2016年3月14日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
+    （[工学社](http://www.kohgakusha.co.jp/)，2016年03月14日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
 
 #### 2015年 {#year2015}
 
