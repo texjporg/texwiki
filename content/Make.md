@@ -466,7 +466,7 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 ### arara {#vc2756b0}
 
 - [https://github.com/cereda/arara](https://github.com/cereda/arara)
-- [チョット arara してみた件](http://d.hatena.ne.jp/zrbabbler/20180627/1530099380)
+- [チョット arara してみた件](https://zrbabbler.hatenablog.com/entry/20180627/1530099380)
 
 ### OMake → 問題が発生する場合は [Latexmk](/Latexmk/) を使用する {#df86b9ce}
 
@@ -480,10 +480,9 @@ Make と LaTeX の組み合わせとして次のようなものもあります�
 - [latex-template](https://github.com/nojima/latex-template)
 - \[[OMake\]\[tex\] 複数ファイル](http://ameblo.jp/kaerunyaru/entry-11283143868.html)
 - [Windowsで快適なLaTeX環境を構築する](http://nojima.hatenablog.com/entry/2012/01/12/205857)
-- [TeXファイルの変更を監視して自動コンパイル](http://d.hatena.ne.jp/kaishin0527/20110915/1316159313)
 - [OMakeで快適に論文執筆：TeX編](http://leoclock.blogspot.jp/2009/09/omaketex.html)
 - [WindowsでOMakeを使って継続ビルド](http://blog.s21g.com/articles/1219)
-- [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](http://d.hatena.ne.jp/hayamiz/20081208/1228727272)
+- [OMake つかって LaTeX コンパイルしたら簡単すぎて身長が5cm伸びた](https://hayamiz.hatenadiary.org/entry/20081208/1228727272)
 
 ### Lua スクリプト {#v301e7db}
 
