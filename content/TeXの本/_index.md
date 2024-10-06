@@ -76,11 +76,17 @@ TeX や LaTeX に関する本の紹介です．
 
 ### 書籍 {#z5fa285b}
 
-[TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html) や
-[本棚.org ](https://hondana.org/TeX/) や
-[The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html) や
-[TeX/Biblio - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Biblio) や
-[TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm) も参照．
+- [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html)
+- [本棚.org ](https://hondana.org/TeX/)
+- [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html)
+- [TeX/Biblio - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Biblio)
+- [TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm)
+- [LaTeX の検索結果｜技術評論社](https://gihyo.jp/result?query=LaTeX&type=book)
+- [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
+- [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
+- [「LaTeX｣の書籍検索結果｜講談社BOOK倶楽部](https://bookclub.kodansha.co.jp/search?_sw=LaTeX)
+- [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
+- [出版物検索結果：LaTeX - 工学社](https://www.kohgakusha.co.jp/books/search?ORDER=_PUBDATE&search=LaTeX)
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
@@ -114,7 +120,7 @@ TeX や LaTeX に関する本の紹介です．
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
-    （[インプレス](https://book.impress.co.jp/)，2022年7月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
+    （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年 {#year2021}
 
@@ -126,12 +132,12 @@ TeX や LaTeX に関する本の紹介です．
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2020/978-4-297-11713-9)』電子版
     （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，2022年04月11日更新，税込 &yen;3,280，[ISBN 978-4-297-11713-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11713-9)）
     - [サポートページ](https://github.com/okumuralab/bibun8)
-- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年7月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.ismedia.jp/bluebacks) B-2145，2020年07月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
 #### 2019年 {#year2019}
 
-- [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年5月，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
+- [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年05月13日，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
 #### 2018年 {#year2018}
 
