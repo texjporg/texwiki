@@ -167,9 +167,9 @@ Eclipse を起動します．
 - [TeXlipse as a lightweight portable TeX editor](http://blog.keyboardplaying.org/2012/05/26/texlipse-lightweight-portable-tex-editor/)
 - [TeXlipse is again my favorite LaTeX environment](http://joelslinux.blogspot.jp/2012/05/texlipse-is-again-my-favorite-latex.html)
 - [【Ubuntu,Windows】TexlipseでB4や用紙を横にする場合のdvipdfmxの設定 --- ただ、設定しなくてもtexの記述で指定できる。](http://ankyo.blog.so-net.ne.jp/2012-05-18)
-- [TeXlipseでスペルチェック](http://d.hatena.ne.jp/bettamodoki/20111007/1318001930)
+- [TeXlipseでスペルチェック](https://bettamodoki.hatenadiary.jp/entry/20111007/1318001930)
 - [Setting up TeXlipse and Sumatra PDF](http://teakes.blogspot.com/2009/08/setting-up-texlipse-and-sumatra-pdf.html)
-- [EclipseでTeXを編集するTeXlipse](http://d.hatena.ne.jp/jun9128/20110323/)
+- [EclipseでTeXを編集するTeXlipse](https://jun9128.hatenadiary.org/entry/20110323/1300892341)
 - [Eclipse/TeXlipse - KLab Public Wiki](http://klab.eng.niigata-u.ac.jp/index.php?Eclipse%2FTeXlipse)
 - [Texlipse can't find Bibtex](http://latex.org/forum/viewtopic.php?f=27&t=10481&start=0)
 
