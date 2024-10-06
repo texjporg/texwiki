@@ -14,12 +14,6 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 
 <em>TODO</em>：実際の利用例を募集します．実際に利用するにあたり注意すべき点（環境依存性・表示速度など）が分かると利用しやすいと思います． -- アセトアミノフェン (2015-04-22)
 
-### mimeTeX {#w7d4afa0}
-
-[mimeTeX - TeX Wiki](/mimeTeX/) も参照．
-
-- [http://www.forkosh.com/mimetex.html](http://www.forkosh.com/mimetex.html)
-
 ### MathJax {#o195bffa}
 
 - [http://www.mathjax.org/](http://www.mathjax.org/)
@@ -30,11 +24,7 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 
 [KaTeX - TeX Wiki](/KaTeX/) も参照．
 
-- [http://khan.github.io/KaTeX/](http://khan.github.io/KaTeX/)
-
-### mathTeX {#he6333d4}
-
-- [http://www.forkosh.com/mathtex.html](http://www.forkosh.com/mathtex.html)
+- [https://katex.org/](https://katex.org/)
 
 ### imgTeX {#za7a547f}
 
@@ -93,6 +83,16 @@ jsMath.js の mathchardef テーブル内に追加
 
 - [Google Closure Library](https://developers.google.com/closure/library/)
 - 数式エディタデモがアーカイブ内 closure/goog/demos/editor/equationeditor.html にあります．
+
+### mimeTeX {#w7d4afa0}
+
+[mimeTeX - TeX Wiki](/mimeTeX/) も参照．
+
+- [https://web.archive.org/web/20210309043852/http://www.forkosh.com/mimetex.html](https://web.archive.org/web/20210309043852/http://www.forkosh.com/mimetex.html)
+
+### mathTeX {#he6333d4}
+
+- [https://web.archive.org/web/20210322222953/http://www.forkosh.com/mathtex.html](https://web.archive.org/web/20210322222953/http://www.forkosh.com/mathtex.html)
 
 ### 関連リンク {#l39ce401}
 
