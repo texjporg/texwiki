@@ -223,7 +223,7 @@ papersize=<横幅>,<縦幅>
 
 ※用紙サイズに関連するものとして他に landscape special（\special{landscape}）がありますが，現在は非推奨となっています。特に landscape と papersize を同時に使用すべきではありません。
 
-- 参照： [紙面サイズの指定 (1/2) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20101123/1290541806)
+- 参照： [紙面サイズの指定 (1/2) - マクロツイーター](https://zrbabbler.hatenablog.com/entry/20101123/1290541806)
 
 ### psfile special {#psfile-specials}
 
@@ -251,7 +251,7 @@ EPS 画像ファイルを読み込みその場に配置します。
 
 ※かつては dvips 以外にも様々な DVI→PS 変換用の DVI ウェアが存在し，それぞれが異なる形式の EPS 画像読込の special をサポートしていました。dvips では，互換性のためこれらの一部（“epsfile=...”，“postscriptbox...”）をサポートしています。
 
-- 参照： [ナントカBoxの話(3) - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/20140704/1404425429)
+- 参照： [ナントカBoxの話(3) - マクロツイーター](https://zrbabbler.hatenablog.com/entry/20140704/1404425429)
 
 ### color special {#color-specials}
 
@@ -338,7 +338,7 @@ dvips における PostScript special は非常に強力で，要するに PostS
 
 #### 各DVIウェアにおける PostScript special のサポートの状況 {#ps-specials-support}
 
-- dvips は全ての仕様をサポートします。dvips は PostScript コードを出力する DVI ウェアあので，与えられたコードを何も解釈することなく，ただ出力ファイルにそのまま書き出します。
+- dvips は全ての仕様をサポートします。dvips は PostScript コードを出力する DVI ウェアなので，与えられたコードを何も解釈することなく，ただ出力ファイルにそのまま書き出します。
 - dviout は「"」形式をサポートします。具体的には，与えられたコードを Ghostscript に渡して実行し，その描画結果（ビットマップデータ）を取り込むという動作になります。「ps:」形式もサポートしていますが，これは「"」形式と全く同じ扱いになるので，恐らく意図した結果にならないでしょう。その他の形式はサポートしていないようです。
 - (x)dvipdfmx は全ての形式をサポートしますが，解釈できる PostScript 命令がごく一部のものに限られます。（[MetaPost](/MetaPost/) の出力画像の取り込みを行うために，一部の PostScript 命令だけをサポートしているのです。）解釈に成功した場合は，PDF 描画命令に変換されます。失敗した場合は警告を出して special 命令全体を無視します。Ghostscript が呼び出されることはないことに注意してください。
 
@@ -357,7 +357,7 @@ XeTeX エンジン（つまり xdvipdfmx）で [PSTricks](/PSTricks/) をサポ�
 
 ちなみに，現在では xdvipdfmx と dvipdfmx のソースが統合されているため，これらの special は dvipdfmx でも有効です。つまり，ちょっと細工をすれば，dvipdfmx で PSTricks を動作させることが実はできるようです。
 
-- 参考：[なぜか dvipdfmx で PSTricks できる話](http://d.hatena.ne.jp/zrbabbler/20140712/1405179775)
+- 参考：[なぜか dvipdfmx で PSTricks できる話](https://zrbabbler.hatenablog.com/entry/20140712/1405179775)
 
 ### HyperTeX specials {#hypertex-specials}
 
@@ -554,7 +554,7 @@ pdf:tounicode が実行されると，dvipdfmx は引数に指定した名前の
 
 具体的にどのような文字列が変換の対象になるのかは，以下の記事で説明されています。
 
-- [(x)dvipdfmx が文書情報を Unicode する件に関するメモ(3)](http://d.hatena.ne.jp/zrbabbler/20160220/1455915826)
+- [(x)dvipdfmx が文書情報を Unicode する件に関するメモ(3)](https://zrbabbler.hatenablog.com/entry/20160220/1455915826)
 
 [PXjahyper](https://www.ctan.org/pkg/pxjahyper) パッケージはこの special 命令を利用しています。
 
