@@ -167,6 +167,9 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2014年 {#year2014}
 
+- [村上 智一 (TomOne)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](http://shop.comiczin.jp/products/detail.php?product_id=22487))
+    （[コミックマーケット](https://www.comiket.co.jp/)，2014年12月30日発行，PDF版 &yen;1,100，紙版 &yen;1,430）
+    - [よくわかるLaTeX小説サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - 赤間 世紀
     『[LaTeX論文作成マニュアル](http://www.kohgakusha.co.jp/books/detail/978-4-7775-1858-6)』
     （[工学社](http://www.kohgakusha.co.jp/)，2014年10月08日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
