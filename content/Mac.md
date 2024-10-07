@@ -142,10 +142,11 @@ macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換�
 macOS で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
 いくつかの対処法を紹介します。
 
-- [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](http://www.softantenna.com/wp/mac/input-backslash-on-osx/)
-- [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](https://zariganitosh.hatenablog.jp/entry/20101026/text_key_binding)
-- [Macにおけるバックスラッシュ（\）の入力方法](http://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
+- [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](https://softantenna.com/blog/input-backslash-on-osx/)
+- [MacのJISキーボードで円マークを打ったときにバックスラッシュが入るようにする（DefaultKeyBinding.dictを使う）](https://snap.hyuki.com/20180622223225/)
 - [OS X Yosemiteでバックスラッシュが円マークになっちゃう問題](https://chalow.net/2014-10-28-1.html)
+- [Macにおけるバックスラッシュ（\）の入力方法](https://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
+- [テキスト編集のキー操作を自在にコントロールする - ザリガニが見ていた…。](https://zariganitosh.hatenablog.jp/entry/20101026/text_key_binding)
 - 参考：[(1)](https://x.com/doraTeX/status/630575968025849856), [(2)](https://x.com/doraTeX/status/630576724271435776)
 
 ### &#x7e;/Library/KeyBindings/DefaultKeyBinding.dict によるキーバインドの変更 {#defaultkeybinding-dict}
