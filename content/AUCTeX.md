@@ -41,7 +41,7 @@ AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 ### ChangeLog {#c24ccc65}
 
 - [log](https://git.savannah.gnu.org/cgit/auctex.git/log/)
-- [ChangeLog](https://git.savannah.gnu.org/cgit/auctex.git/tree/ChangeLog.1)
+- [NEWS.org](https://git.savannah.gnu.org/cgit/auctex.git/tree/NEWS.org)
 
 ### スクリーンショット {#s450de09}
 
