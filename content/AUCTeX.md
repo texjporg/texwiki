@@ -75,7 +75,7 @@ AUCTeX でサポートされている日本語用 TeX は upTeX[^1], ASCII pTeX,
 
     ```
     %%% Local Variables:
-    %%% mode: japanese-latex
+    %%% mode: japanese-LaTeX
     %%% TeX-engine: uptex
     %%% End:
     ```
@@ -186,7 +186,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
-(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
+(add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
 (with-eval-after-load 'tex-jp
   (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
@@ -306,7 +306,7 @@ C-x C-f ~/
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
-(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
+(add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
 (with-eval-after-load 'tex-jp
   (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
@@ -422,7 +422,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
-(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
+(add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
 (with-eval-after-load 'tex-jp
   (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
@@ -540,7 +540,7 @@ Emacs 標準のパッケージ管理システムを使用してインストー�
 AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば次のように記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.91.0")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.0.7")
 (require 'tex-site)
 ```
 
@@ -561,7 +561,7 @@ upTeX をデフォルトにして dvipdfmx を使用する場合は次のよう�
 (setq japanese-TeX-engine-default 'uptex)
 (setq TeX-engine 'uptex)
 (setq TeX-PDF-from-DVI "Dvipdfmx")
-(add-hook 'LaTeX-mode-hook 'japanese-latex-mode)
+(add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
 ```
 
 ### 日本語ドキュメントクラスの設定 {#l246b90f}
@@ -786,20 +786,20 @@ AUCTeX Clean ターゲット機能
 
 ```
 %%% Local Variables:
-%%% mode: japanese-latex
+%%% mode: japanese-LaTeX
 %%% TeX-engine: uptex
 %%% TeX-master: "hogehoge"
 %%% End:
 ```
 
 すると，このバッファで C-c C-c すると，hogehoge.tex をコンパイルしたり hogehoge.dvi を表示したりします。
-これはこのファイルを japanese-latex モードで開くという便利な副作用もあります。
+これはこのファイルを japanese-LaTeX モードで開くという便利な副作用もあります。
 
 もし自分自身がマスターなら，次のように書いておきます。
 
 ```
 %%% Local Variables:
-%%% mode: japanese-latex
+%%% mode: japanese-LaTeX
 %%% TeX-engine: uptex
 %%% TeX-master: t
 %%% End:
@@ -996,7 +996,8 @@ AUCTeX とは関係ありませんが，先頭に
 - [yatex-modoki-mode](https://bitbucket.org/tequilasunset/yatex-modoki-mode/) AUCTeX を YaTeX っぽくするマイナーモード。
 - [AUCTeX | Amrta](http://skalldan.wordpress.com/tag/auctex/)
 - [AUCTeX | 検索結果:  | miyazakikenji](http://miyazakikenji.wordpress.com/?s=AUCTeX)
-- [Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する](http://d.hatena.ne.jp/gifnksm/20090420/)
+    <!-- -[[Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する:https://gifnksm.hatenablog.jp/entries/2009/04/20]] -->
+
 - [https://tam5917.hatenablog.com/archive/category/AUCTeX](https://tam5917.hatenablog.com/archive/category/AUCTeX)
 - [https://dayinthelife-web.blogspot.com/search/label/AUCTeX](https://dayinthelife-web.blogspot.com/search/label/AUCTeX)
 
@@ -1006,4 +1007,4 @@ AUCTeX とは関係ありませんが，先頭に
 [^2]: LuaTeX-ja を利用する場合は、日本語用に特別の設定は不要です。単純に engine として LuaTeX を選び、通常の LuaTeX 文書として編集するだけでよく、この節の話は当てはまりません。
 [^3]: 文書を親ファイルと子ファイルに分割する場合は、さらに TeX-auto-save も有効にするとよいかもしれません。文書の保存時にサブディレクトリ auto 内に情報が保存されるので、次回編集を再開するとき、子ファイルだけを開いても TeX-engine が正しい値にセットされます。
 [^4]: \documentclass\[uplatex\]{jsarticle} 等のように、jsclasses 系のクラスファイルに uplatex オプションを指定した場合 upTeX engine が選択されない問題は、AUCTeX 11.91 で修正されました。
-[^5]: directory local variable も、AUCTeX 11.90 からは japanese-latex-mode, japanese-plain-tex-mode で利用できるようになりました。
+[^5]: directory local variable も、AUCTeX 14.0.7 からは japanese-LaTeX-mode, japanese-plain-TeX-mode で利用できるようになりました。
