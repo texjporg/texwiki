@@ -85,6 +85,7 @@ TeX や LaTeX に関する本の紹介です．
 - [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
 - [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
 - [「LaTeX｣の書籍検索結果｜講談社BOOK倶楽部](https://bookclub.kodansha.co.jp/search?_sw=LaTeX)
+- [書籍検索「LaTeX」｜朝倉書店](https://www.asakura.co.jp/book_search_list.php?BOOK_SEARCH_STR=LaTeX)
 - [検索 書籍一覧「 LaTeX 」の検索結果｜翔泳社の本](https://www.shoeisha.co.jp/search?search=LaTeX)
 - [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
 - [出版物検索結果：LaTeX - 工学社](https://www.kohgakusha.co.jp/books/search?ORDER=_PUBDATE&search=LaTeX)
@@ -95,7 +96,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2024年 {#year2024}
 
-- S. Kottwitz 著, 黒川 利明 訳
+- Stefan Kottwitz \[著\], 黒川 利明 \[訳\]
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月10日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
@@ -141,8 +142,12 @@ TeX や LaTeX に関する本の紹介です．
 - [荒田 実樹 (だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
     （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
     - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
+- [hidaruma (Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
+    （[技術書典](https://techbookfest.org/)，2019年09月22日発行（技術書典7））
+    - [技術書典7で頒布した同人誌の公開](https://laughingandgrief.hatenablog.com/entry/2019/12/19/212237)
+    - [技術書典7で頒布した「LuaLaTeX微文書作成入門」の改稿版のリポジトリ。](https://github.com/virtual-ones/introduck-lualatex)
 - 日向たろし (日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
-    （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行，価格（税込）&yen;100）
+    （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行，価格（税込）&yen;100，[ISDN 278-4-565903-05-8](https://isdn.jp/2784565903058)）
 
 - [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年05月13日，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
 
