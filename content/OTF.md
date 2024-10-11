@@ -181,7 +181,7 @@ upLaTeX や LuaTeX-ja で使う場合は，Unicode で直接入力ができま�
 
 となります。
 
-[Adobe-Japan1-6](/Adobe-Japan1-6/) の文字を表示させて見ましょう。
+[Adobe-Japan1-7](/Adobe-Japan1-7/) の文字を表示させて見ましょう。
 OTF パッケージはベータ版を使用します。
 
 テスト用のソースは，例えば次のものを用いてみます。
@@ -250,7 +250,7 @@ upLaTeX を使用すると丸附き数字（e.g. &#x2460; \[U+2460\]）なども
 なお，Adobe に問い合わせたところ，アジア・拡張言語フォントパック内の
 OpenType フォントの用途として，Adobe Acrobat Reader または Adobe Acrobat でのプレビュー・印刷用途を想定しているようです。
 dvipdfmx, lualatex を利用した Adobe Acrobat Reader または Adobe Acrobat 用フォントの埋め込みはライセンス違反となりますのでご注意下さい。
-[TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-6](/Adobe-Japan1-6/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
+[TeXWiki:フォント](</フォント/>) にある [Adobe-Japan1-7](/Adobe-Japan1-7/) に完全対応した和文フォント（有償）を購入している場合には問題ありません。
 
 #### Microsoft Windows の場合 {#p413a15f}
 
@@ -276,7 +276,7 @@ Windows PowerShell またはコマンド プロンプトで次のようにして
     lualatex hoge.tex
     ```
 
-これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
+これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので，[Adobe-Japan1-7](/Adobe-Japan1-7/) の範囲なら誰でも読めるようになります。
 
 #### macOS の場合 {#c2475144}
 
@@ -298,7 +298,7 @@ $TEXMFLOCAL/fonts/opentype// ディレクトリ以下に、購入した KozMinPr
     ```
 
 これで明朝体については「小塚明朝 Pr6N R」が，ゴシック体については「小塚ゴシック Pr6N M」がそれぞれ埋め込まれるので
-[Adobe-Japan1-6](/Adobe-Japan1-6/) の範囲なら誰でも読めるようになります。
+[Adobe-Japan1-7](/Adobe-Japan1-7/) の範囲なら誰でも読めるようになります。
 
 ## ヒラギノと macOS {#l1d1369f}
 
@@ -311,7 +311,7 @@ TeX Live をインストールして[ヒラギノフォント](</ヒラギノフ
 
 \usepackage\[uplatex,jis2004,expert\]{otf} とすると，
 ご覧のように，縦書きと横書きで一部の字形が変わります（拙著旧版
-『[［改訂版］LaTeX2e 美文書作成入門](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/bibun2e.html)』も
+『[［改訂版］LaTeX2e 美文書作成入門](https://web.archive.org/web/20030605081611/http://www.gihyo.co.jp/books/syoseki.php/4-7741-1107-4)』も
 ヒラギノですが変わらなかったのは OpenType 版ヒラギノではなかったから）。
 ちなみに無指定の OTF パッケージでは
 \bfseries で同じウェイトのゴシックになるだけですので，上の図の例では “bold” オプションも加えて太いゴシックにしてあります。
