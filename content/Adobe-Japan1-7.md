@@ -28,7 +28,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 #### 商用 {#r57b1206}
 
 - [主にフォントベンダーの「令和」対応状況をまとめました](https://www.mojiru.com/entry/reiwa)
-- [アドビ、新元号「令和」の合字をAdobe Fontに追加 各ソリューションでも新元号への対応をサポート| Adobe](https://www.adobe.com/jp/news-room/news/201904/20190401-adobe-newera.html)
+- [Adobe Fontsの日本語フォントの新元号 「令和」の合字への対応について](https://blog.adobe.com/jp/publish/2019/04/01/adobefonts-adobe-support-ligatures-of-new-era-names)
     - [小塚明朝 Pr6N](https://fonts.adobe.com/fonts/kozuka-mincho-pr6n)
     - [小塚ゴシック Pr6N](https://fonts.adobe.com/fonts/kozuka-gothic-pr6n)
 - [モリサワフォント製品の新元号対応に関するお知らせ | ニュース&amp;プレスリリース | 企業情報 | 株式会社モリサワ](https://www.morisawa.co.jp/about/news/4506) / [『游明朝体ファミリー』『游ゴシック体ファミリー』の正規ユーザーの皆さまへアップデートのお知らせ](http://www.jiyu-kobo.co.jp/update/1779/)
