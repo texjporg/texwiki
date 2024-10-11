@@ -112,7 +112,7 @@ IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表�
 
 フリーな「漢字字形共有サイト」である[グリフウィキ](http://glyphwiki.org/)で登録された漢字字形を LaTeX 文書で簡単に利用できるようにするパッケージとして，[BXglyphwiki パッケージ](https://github.com/zr-tex8r/BXglyphwiki)が開発されています。
 
-- [LaTeX で使える漢字の数を劇的に増やす方法](http://d.hatena.ne.jp/zrbabbler/20131017/1382008498)（ZR さん）
+- [LaTeX で使える漢字の数を劇的に増やす方法](https://zrbabbler.hatenablog.com/entry/20131017/1382008498)（ZR さん）
 
 ### 各種マーク {#m89aa07c}
 
