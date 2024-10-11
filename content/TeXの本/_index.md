@@ -138,9 +138,9 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#year2019}
 
-- [荒田 実樹 (だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://lab.miz-ar.info/cluttex-book/)』
+- [荒田 実樹 (だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
     （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
-
+    - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
 - 日向たろし (日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行，価格（税込）&yen;100）
 
