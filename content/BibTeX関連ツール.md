@@ -76,11 +76,11 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [refer-tools](https://mirror.ctan.org/biblio/bibtex/utils/refer-tools/) | perl | refer 形式を BibTeX 形式に変換 |
 |  [r2bib](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/r2bib)  |   |  referからBibTeXに変換するツールだが，[EndNoteに対応した](http://www.mail-archive.com/ctan-ann@dante.de/msg00062.html)．8-bit Windows 文字コード(具体的な名称は不明)をLaTeX風に書き換えてくれるらしい．  |
 | [Writer2BibTeX](http://writer2latex.sourceforge.net/) | Java, LibreOffice/Apache OpenOffice | Writer文書から文献情報を抜き出し，BibTeX形式で保存するLibreOffice/Apache OpenOfficeのマクロ |
-| [mathsci2bibtex](https://mirror.ctan.org/help/Catalogue/entries/mathsci2bibtex.html) | perl | MathSciからBibTeXへの変換 |
+| [mathsci2bibtex](https://mirror.ctan.org/biblio/bibtex/utils/mathsci2bibtex) | perl | MathSciからBibTeXへの変換 |
 | [mathscinet](http://tug.ctan.org/tex-archive/biblio/bibtex/utils/mathscinet) |   | MathSciNetからBibTeX形式に変換． |
 | [stdinRIS2bib.pl ris2bib.pl](http://marc.herbert.free.fr/refdb/) | perl | RIS形式をBibTeX形式へ変換する．[ris2bib](http://www.ecst.csuchico.edu/~jacobsd/bib/archives/ris2bib)が正常に動作しない最近の環境でもOK．キーは自分でつける必要あり．出力されたbibファイルは，bibcleanに通した方がよいかも．ris2bib.plはstdinRIS2bib.plから内部的に呼び出されるので同一ディレクトリにおいておくこと．<br>【使い方】$ cat risファイル ｜ stdinRISbib.pl > bibファイル <br> T1やABをそれぞれtitleやabstractにするには，ris2bib.plにそれらの定義を追加する必要がある． |
 | [Bibutils](https://sourceforge.net/p/bibutils/home/Bibutils/)<br>([Internet Archive](https://web.archive.org/web/20110216071720/http://www.scripps.edu:80/~cdputnam/software/bibutils/)) | なし | さまざまな形式の文献データをXML経由でBib形式に変換する．含まれるコマンドは，bib2xml, biblatex2xml, copac2xml, end2xml, isi2xml, med2xml, modsclean, ris2xml, xml2bib, xml2biblatex, xml2end, xml2risがあり，UNIX(SunOS, IRIX)版，Linux版，macOS版，Windows版などが用意されている．<br>【利用例】$ ris2xml risファイル｜xml2bib > bibファイル |
-| [mab2bib](http://texcatalogue.sarovar.org/entries/mab2bib.html) |  Python  |   Simple Python scripts to convert MAB bibliography files into BibTeX and UTF-8 encoded text files into ASCII with LaTeX codes  |
+| [mab2bib](https://mirror.ctan.org/biblio/bibtex/utils/mab2bib) |  Python  |   Simple Python scripts to convert MAB bibliography files into BibTeX and UTF-8 encoded text files into ASCII with LaTeX codes  |
 | [ama2bib](https://ja.osdn.net/projects/mytexpert/releases/p6271) |  Perl  |  [Amazon Web Service](http://www.amazon.co.jp/exec/obidos/subst/associates/join/webservices.html/249-1233918-9751503)の検索結果をBibTeX形式に変換するスクリプト |
 
 ### Web 上で提供されている BibTeX 出力サービス {#o3a13db0}
