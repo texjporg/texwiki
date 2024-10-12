@@ -81,12 +81,8 @@ bxdpx-beamer パッケージは TeX Live に含まれています．<br>
 
 ## ダウンロード {#o77feabf}
 
-<!-- - -[[ダウンロード:https://bitbucket.org/rivanvx/beamer/downloads]] -->
-<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.zip -->
-<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.gz -->
-<!-- - --https://bitbucket.org/rivanvx/beamer/get/tip.tar.bz2 -->
-- [CTAN:help/Catalogue/entries/beamer.html](https://mirror.ctan.org/help/Catalogue/entries/beamer.html)
-- [https://ctan.org/tex-archive/macros/latex/contrib/beamer/](https://ctan.org/tex-archive/macros/latex/contrib/beamer/)
+- [https://github.com/josephwright/beamer/releases](https://github.com/josephwright/beamer/releases)
+- [CTAN:macros/latex/contrib/beamer](https://mirror.ctan.org/macros/latex/contrib/beamer)
 
 ### Arch Linux {#h5c71065}
 
