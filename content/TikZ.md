@@ -1081,17 +1081,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - TikZ/PGF をベースにしたtkz-base，tkz-euclideパッケージなどの紹介
 - [tikzDevice: A Device for R Graphics Output in PGF/TikZ Format](https://cran.r-project.org/web/packages/tikzDevice/index.html)
     - マニュアルは[こちら](https://cran.r-project.org/web/packages/tikzDevice/vignettes/tikzDevice.pdf)
-- [tcolorbox](https://ctan.org/pkg/tcolorbox) ：[TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る．ページ分割可．
-    - [公式の使用例（CTAN）](http://mirrors.ctan.org/macros/latex/contrib/tcolorbox/tcolorbox-example.pdf)
-    - [LaTeXの数式を映えさせる](https://qiita.com/t_kemmochi/items/483b8fcdb5db8d1f5d5e)
-    - [tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)
-    - [LaTeX におけるページをまたいだ囲み記事スタイルのまとめ](http://note.golden-lucky.net/2009/07/latex.html)
-    - [TeXユーザの集い2015 発表スライド：tcolorbox による装飾表現](http://texmedicine.hatenadiary.jp/entry/2015/11/08/122447)，[TeXユーザの集い2015](http://texmedicine.hatenadiary.jp/entry/2015/11/08/113310)
-    - [tcolorbox の基本](http://texmedicine.hatenadiary.jp/entry/2015/12/17/000339)
-    - [tcolorbox で遊んでみた](http://hikaru515.hatenablog.com/entry/2015/11/08/175348)
-    - tcolorbox 2020/09/25 version 4.40 で若干の仕様変更が入り，テキストと後続の tcolorbox の間隔が少し開くようになりました。参考：[issue 115](https://github.com/T-F-S/tcolorbox/issues/115), [issue 121](https://github.com/T-F-S/tcolorbox/issues/121)
-    - [tcolorbox でピカチュウフレーム](https://hohei3108.hatenablog.com/entry/2017/09/23/165454)
-    - [tcolorboxで学参編集（TeXフォーラムより）](https://okumuralab.org/tex/mod/forum/discuss.php?d=3474)
+- [tcolorbox](/tcolorbox/) ：[TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る．ページ分割可．
 
 ### 使用例や解説 {#d081bd28}
 
