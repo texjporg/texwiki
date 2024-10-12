@@ -130,7 +130,7 @@ LaTeX2e の一つ前の版であり，一昔前には広く使われていまし
 
 - [LaTeXに関する新着投稿 - Qiita \[キータ\]](http://qiita.com/tags/LaTeX)
 - [LaTeXの検索結果 - Qiita \[キータ\]](http://qiita.com/search?utf8=%E2%9C%93&q=LaTeX)
-- CTAN.ring:help/Catalogue/entries/latex.html
+- [CTAN:macros/latex](https://mirror.ctan.org/macros/latex)
 
 [^1]: 紛らわしいことに LaTeX にもパッケージという用語がありますが，マクロパッケージといった場合には単に「TeX のマクロ集（フォーマット）」という意味になります．[TeX の項目を参照](/TeX/#zf0ba6fa)．
 [^2]: 現在でも，tex, ptex, pdftex などのコマンドで plain TeX を使うことができます．
