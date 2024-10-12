@@ -100,9 +100,11 @@ TeX や LaTeX に関する本の紹介です．
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月10日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
-- [やまいも (サークル名：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
+- [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
     （[技術書典](https://techbookfest.org/)，2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
+- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[TikZ入門 座標を意識して線を引こう](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6?productVariantID=qyFYVsANvbqA9vh4vBgHYS)』
+    （[技術書典](https://techbookfest.org/)，2024年05月25日発行（技術書典16），電子版 &yen;500）
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
     （Independently published (個人出版)，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
@@ -116,6 +118,8 @@ TeX や LaTeX に関する本の紹介です．
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
+- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ?productVariantID=epMJ4TYn2GhyiqC5gD0Zqz)』
+    （[技術書典](https://techbookfest.org/)，2023年05月21日発行（技術書典14），電子版 &yen;500）
 
 #### 2022年 {#year2022}
 
@@ -139,14 +143,14 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#year2019}
 
-- [荒田 実樹 (サークル名：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
+- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
     （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
     - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
-- [hidaruma (サークル名：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
+- [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
     （[技術書典](https://techbookfest.org/)，2019年09月22日発行（技術書典7））
     - [技術書典7で頒布した同人誌の公開](https://laughingandgrief.hatenablog.com/entry/2019/12/19/212237)
     - [技術書典7で頒布した「LuaLaTeX微文書作成入門」の改稿版のリポジトリ。](https://github.com/virtual-ones/introduck-lualatex)
-- 日向たろし (サークル名：日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
+- 日向たろし (サークル：日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行（コミックマーケット96（4日目）），価格（税込）&yen;100，[ISDN 278-4-565903-05-8](https://isdn.jp/2784565903058)）
 
 - [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年05月13日，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
@@ -178,7 +182,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2014年 {#year2014}
 
-- [村上 智一 (TomOne) (サークル名：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](http://shop.comiczin.jp/products/detail.php?product_id=22487))
+- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](http://shop.comiczin.jp/products/detail.php?product_id=22487))
     （[コミックマーケット](https://www.comiket.co.jp/)，2014年12月30日発行（コミックマーケット87（3日目）），PDF版 &yen;1,100，紙版 &yen;1,430）
     - [よくわかるLaTeX小説サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - 赤間 世紀
