@@ -12,7 +12,7 @@ pukiwiki: "powerdot"
 powerdot は プレゼンテーション用の LaTeX クラスです．
 
 - [https://ctan.org/pkg/powerdot](https://ctan.org/pkg/powerdot)
-- [CTAN:help/Catalogue/entries/powerdot.html](https://mirror.ctan.org/help/Catalogue/entries/powerdot.html)
+- [CTAN:macros/latex/contrib/powerdot](https://mirror.ctan.org/macros/latex/contrib/powerdot)
 
 TeX Live に標準で含まれています．
 
