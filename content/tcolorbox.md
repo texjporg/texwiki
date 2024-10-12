@@ -19,6 +19,20 @@ tcolorbox は、[TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る�
 
 - tcolorbox version 4.40 (2020-09-25) で若干の仕様変更が入り，テキストと後続の tcolorbox の間隔が少し開くようになりました。参考：[issue 115](https://github.com/T-F-S/tcolorbox/issues/115), [issue 121](https://github.com/T-F-S/tcolorbox/issues/121)
 
+### マニュアルについて {#lc02a145}
+
+tcolorbox には
+
+- [549ページの長大なマニュアル（version 6.4.0 2024年09月27日版の場合）](https://raw.githubusercontent.com/T-F-S/tcolorbox/refs/heads/master/doc/latex/tcolorbox/tcolorbox.pdf)
+
+が付属しています。tcolorbox のマニュアルはターミナルから
+
+```
+texdoc tcolorbox
+```
+
+を実行することでも表示できます。TeX Live に付属している tcolorbox のマニュアルが古い場合は上記の新しいマニュアルに更新してください。
+
 ### 使い方 {#dbf5d6cb}
 
 - [公式の使用例（CTAN）](http://mirrors.ctan.org/macros/latex/contrib/tcolorbox/tcolorbox-example.pdf)
@@ -32,6 +46,7 @@ tcolorbox は、[TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る�
 - [tcolorbox でピカチュウフレーム](https://hohei3108.hatenablog.com/entry/2017/09/23/165454)
 - [tcolorboxで学参編集（TeXフォーラムより）](https://okumuralab.org/tex/mod/forum/discuss.php?d=3474)
 - [【LaTeX】tcolorboxでページ跨ぎ](https://qiita.com/PRESENT_Science/items/e74fa06065b0828e246f)
+- [\tcbset のスコープ（あるいはどうすれば tcolorbox の内部で局所化できるか）](https://zenn.dev/k16/articles/5b8fe72a3b84ae)
 - [forumSearch:tcolorbox](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=tcolorbox)
 - [https://x.com/search?q=tcolorbox+lang%3Aja&f=live](https://x.com/search?q=tcolorbox+lang%3Aja&f=live)
 
