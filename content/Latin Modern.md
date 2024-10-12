@@ -15,8 +15,9 @@ Latin Modern は，Comupter Modern や [CM-Super](/cm-super/) に代わるフォ
 
 ### Latin Modern Fonts {#e74254c6}
 
-- [The Latin Modern (LM) Family of Fonts &mdash; GUST](http://www.gust.org.pl/projects/e-foundry/latin-modern/)
-- [The LaTeX Font Catalogue &ndash; Latin Modern](http://www.tug.dk/FontCatalogue/lmodern/)
+- [The Latin Modern (LM) Family of Fonts &mdash; GUST](https://www.gust.org.pl/projects/e-foundry/latin-modern/)
+- [The LaTeX Font Catalogue &ndash; Latin Modern Roman](https://tug.org/FontCatalogue/latinmodernroman/)
+- [The LaTeX Font Catalogue &ndash; Latin Modern Mono](https://tug.org/FontCatalogue/latinmodernmono/)
 - [https://ctan.org/pkg/lm](https://ctan.org/pkg/lm)
 - [http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super](http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super)
 
