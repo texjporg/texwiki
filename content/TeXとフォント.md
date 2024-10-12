@@ -57,7 +57,7 @@ Computer Modern に飽きたら本文用フォントを変えてみましょう�
 
 以下のサイトに LaTeX で利用可能なフォント一覧があります：
 
-- [The LaTeX Font Catalogue](http://www.tug.dk/FontCatalogue/)
+- [The LaTeX Font Catalogue](https://tug.org/FontCatalogue/)
 
 ### [Latin Modern](http://www.gust.org.pl/projects/e-foundry/latin-modern) {#h96ac87b}
 
