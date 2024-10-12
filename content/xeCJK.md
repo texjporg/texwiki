@@ -27,7 +27,7 @@ IVS ([異体字セレクタ](https://ja.wikipedia.org/wiki/%E7%95%B0%E4%BD%93%E5
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/xelatex/xecjk/?view=log)
 - [http://miktex.org/packages/xecjk](http://miktex.org/packages/xecjk)
 - [xeCJK Package](https://ctan.org/pkg/xecjk)
-- [CTAN:help/Catalogue/entries/xecjk.html](https://mirror.ctan.org/help/Catalogue/entries/xecjk.html)
+- [CTAN:macros/xetex/latex/xecjk](https://mirror.ctan.org/macros/xetex/latex/xecjk)
 - [xecjk – Support for CJK documents in XeLaTeX](http://ctanhg.scharrer-online.de/pkg/xecjk.html) (Automated Mercurial Repositories of CTAN)
 
 ### リリース情報/ChangeLog {#if427aa7}
