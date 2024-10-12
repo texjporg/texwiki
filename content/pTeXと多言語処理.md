@@ -90,7 +90,7 @@ macOS や Linux などでは [Visual Studio Code](</Visual Studio Code/>)，[Ema
 
 #### グルジア語 (ジョージア語) {#mxeldrul}
 
-グルジア語の場合，TeX では [mxedruli パッケージ](https://mirror.ctan.org/help/Catalogue/entries/mxedruli.html)を用いることで，多数のグルジア文字を扱うことができます。
+グルジア語の場合，TeX では [mxedruli パッケージ](https://mirror.ctan.org/fonts/georgian/mxedruli)を用いることで，多数のグルジア文字を扱うことができます。
 mxedruli パッケージは ASCII アルファベットでグルジア語を記述することになります。
 入力ソフト (input method) がない場合は大変助かりますが，持っている方にとってはこのままではちょっと不便かもしれません。
 そんな方は UTF82TeX を -x オプションつきで実行してみてください。
@@ -1338,7 +1338,7 @@ ps2pdf cjkintro.ps
 
 ### モンゴル語 {#omoneast}
 
-モンゴル語については，[MonTeX](http://www.ring.gr.jp/pub/text/CTAN/help/Catalogue/entries/montex.html) というパッケージがあります。
+モンゴル語については，[MonTeX](https://mirror.ctan.org/language/mongolian/montex) というパッケージがあります。
 また，日本語とモンゴル語を共存させる際に役立つ LRTate.sty というものもあります。
 詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」にもありますが，ここではインストール方法について解説します。
 
