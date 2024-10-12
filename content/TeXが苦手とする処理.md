@@ -44,12 +44,7 @@ TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手�
 
 - 画像にする
 - [TikZ](/TikZ/) などの「描画用」パッケージを用いる
-    - [tcolorbox パッケージ](https://ctan.org/pkg/tcolorbox)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）
-        - [tcolorbox.sty を使ってみた． - 天地有情](http://konoyonohana.blog.fc2.com/blog-entry-61.html)
-        - [LaTeX におけるページをまたいだ囲み記事スタイルのまとめ](http://note.golden-lucky.net/2009/07/latex.html)
-        - [TeXユーザの集い2015 発表スライド：tcolorbox による装飾表現](http://texmedicine.hatenadiary.jp/entry/2015/11/08/122447)，[TeXユーザの集い2015](http://texmedicine.hatenadiary.jp/entry/2015/11/08/113310)
-        - [tcolorbox の基本](http://texmedicine.hatenadiary.jp/entry/2015/12/17/000339)
-        - [tcolorbox で遊んでみた](http://hikaru515.hatenablog.com/entry/2015/11/08/175348)
+    - [tcolorbox パッケージ](/tcolorbox/)： [TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る（ページまたぎ可）
 
 #### ひとつのページに収まる枠 {#zac9bf00}
 
