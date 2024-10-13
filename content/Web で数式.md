@@ -16,19 +16,25 @@ Web 上で数式を表示するための各種方法をまとめておきます�
 
 ### MathJax {#o195bffa}
 
-- [http://www.mathjax.org/](http://www.mathjax.org/)
-- [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
-- 利用例：[MathJax（v1.1）を使ってみた](http://tractatus-online.appspot.com/Math/MathJax.html)（MathJax/jsMath/MathML を同じソースで比較可能）
+[MathJax - TeX Wiki](/MathJax/) を参照．
+
+- [https://www.mathjax.org/](https://www.mathjax.org/)
 
 ### KaTeX {#kf09ac9a}
 
-[KaTeX - TeX Wiki](/KaTeX/) も参照．
+[KaTeX - TeX Wiki](/KaTeX/) を参照．
 
 - [https://katex.org/](https://katex.org/)
 
+### MathML {#ndc0f583}
+
+[MathML - TeX Wiki](/MathML/) を参照．
+
+- [https://developer.mozilla.org/ja/docs/Web/MathML](https://developer.mozilla.org/ja/docs/Web/MathML)
+
 ### imgTeX {#za7a547f}
 
-- [http://www.eaflux.com/imgtex/](http://www.eaflux.com/imgtex/)
+- [https://eaflux.com/imgtex/](https://eaflux.com/imgtex/)
     - [インタラクティヴに](http://www.eaflux.com/imgtex/interactive.html)
     - [PukiWikiプラグイン](http://www.eaflux.com/imgtex/sources/imgtex_inc_php.txt)
 
@@ -36,7 +42,7 @@ cf.) [qa:33461](https://okumuralab.org/~okumura/texfaq/qa/33461.html), [qa:33504
 
 ### jsMath {#o7441380}
 
-- [http://www.math.union.edu/~dpvc/jsMath/](http://www.math.union.edu/~dpvc/jsMath/)
+- [https://www.math.union.edu/~dpvc/jsMath/](https://www.math.union.edu/~dpvc/jsMath/)
 
 varGammaも利用可とする方法
 
@@ -56,10 +62,6 @@ jsMath.js の mathchardef テーブル内に追加
    varOmega:     [0,1,0x0A],
 ```
 
-### MathML {#ndc0f583}
-
-- [http://washitake.com/MathML/](http://washitake.com/MathML/)
-
 ### tex.inc.php {#qfd69102}
 
 - [http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php](http://abicky.net/pukiwiki/plugins/index.php?tex.inc.php)
@@ -76,12 +78,12 @@ jsMath.js の mathchardef テーブル内に追加
 
 ### phptex.inc {#ca665441}
 
-- [このサイトの数式](http://oku.edu.mie-u.ac.jp/~okumura/stat/phptex.php)
-- [LaTeX数式のweb表示方法（奥村晴彦先生方式）](http://www.makisima.org/v3/2011/09/06/web-latex-okumura/)
+- [このサイトの数式](https://okumuralab.org/~okumura/stat/phptex.php)
+- [LaTeX数式のweb表示方法（奥村晴彦先生方式）](https://www.makisima.org/v3/2011/09/06/web-latex-okumura/)
 
 ### Google Closure Library {#q729594e}
 
-- [Google Closure Library](https://developers.google.com/closure/library/)
+- [Google Closure Library](https://github.com/google/closure-library)
 - 数式エディタデモがアーカイブ内 closure/goog/demos/editor/equationeditor.html にあります．
 
 ### mimeTeX {#w7d4afa0}
