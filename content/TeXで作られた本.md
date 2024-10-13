@@ -49,8 +49,8 @@ TeX で作った本を出している出版社：
 TeX で組まれていますが，それ以外のもの）：
 
 - 旺文社『全国大学入試問題正解 数学』
-- 旺文社の高校数学教科書『数学基礎』（長岡亮介・森正武 編），教科書傍用問題集『数学Aワークブック』『数学Aナチュラル』『数学Iシステム演習』
-- 友田晶子編『スーパーで買えるワインの本』（マガジンハウス，1997年）……リーブルテック（株）では他にもこういったグラフィカルな本を TeX で製作されている
+- 旺文社の高校数学教科書『[数学基礎](https://jp-textbook.github.io/%e9%ab%98%e7%ad%89%e5%ad%a6%e6%a0%a1/2002/%e6%95%b0%e5%9f%ba/004)』（長岡亮介・森正武 編），教科書傍用問題集『数学Aワークブック』『数学Aナチュラル』『数学Iシステム演習』
+- 友田晶子編『[スーパーで買えるワインの本](https://magazineworld.jp/books/paper/8123/)』（マガジンハウス，1997年）……リーブルテック（株）では他にもこういったグラフィカルな本を TeX で製作されている
 - 古賀勝郎『日本語—ヒンディー語辞典』（1996年），
     古賀勝郎・高橋明『ヒンディー語=日本語辞典』
     （2006，大修館書店，[ISBN 978-4-469-01275-0](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-469-01275-0)）
@@ -86,10 +86,10 @@ TeX で組まれていますが，それ以外のもの）：
 - 東京外国語大学語学研究所編『[世界の言語ガイドブック 1 ヨーロッパ・アメリカ地域](https://www.books-sanseido.jp/booksearch/BookSearchDetail.action?shopCode=&areaCode=&shoshiKubun=1&isbn=4-385-35813-3)』([Internet Archive](https://web.archive.org/web/20211023003249/https://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html))（1998.03.10，ISBN 978-4-385-35813-0）
 - 東京外国語大学語学研究所編『[世界の言語ガイドブック 2 アジア・アフリカ地域](https://www.books-sanseido.jp/booksearch/BookSearchDetail.action?shopCode=&areaCode=&shoshiKubun=1&isbn=4-385-35815-X)』([Internet Archive](https://web.archive.org/web/20211023003249/https://www.sanseido-publ.co.jp/publ/dicts/sekaigengo_ea.html))（1998.03.10，ISBN 978-4-385-35815-4）
 - 風間喜代三『[ラテン語とギリシア語](http://www.sanseido-publ.co.jp/publ/latin_greek.html)』（1998.03.20，ISBN 4-385-35833-8）
-- G. A. クリモフ，石田修一訳『[新しい言語類型学](http://www.sanseido-publ.co.jp/publ/klimov.html)』（1999.04.25，ISBN 4-385-35915-6）
+- G. A. クリモフ，石田修一訳『[新しい言語類型学](http://www.sanseido-publ.co.jp/publ/klimov.html)』（1999.04.25，ISBN 978-4-385-35915-1）
 - 石井米雄・千野栄一編『[世界のことば100語辞典 アジア編](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba100.html)』（1999.06.30，ISBN 4-385-15198-9）
 - 千野栄一・石井米雄編『[世界のことば100語辞典 ヨーロッパ編](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba100.html)』（1999.06.30，ISBN 4-385-15199-7）
-- 河野六郎・千野栄一・西田龍雄編著『[言語学大辞典 別巻 世界文字辞典](http://www.sanseido-publ.co.jp/publ/dicts/gengogaku.html#6)』（2001.07.10，ISBN 4-385-15177-6） ([qa:1331](https://okumuralab.org/~okumura/texfaq/qa/1331.html))
+- 河野六郎・千野栄一・西田龍雄編著『[言語学大辞典 別巻 世界文字辞典](http://www.sanseido-publ.co.jp/publ/dicts/gengogaku.html#6)』（2001.07.10，ISBN 978-4-385-15177-9） ([qa:1331](https://okumuralab.org/~okumura/texfaq/qa/1331.html))
 - 宮岡伯人『[「語」とはなにか—エスキモー語から日本語をみる](http://www.sanseido-publ.co.jp/publ/gotowananika.html)』（2002.07.15，ISBN 4-385-36092-8）
 - 大角翠編著『[少数言語をめぐる10の旅](http://www.sanseido-publ.co.jp/publ/syosugengo.html)』（2003.03.15，ISBN 4-385-36145-2）
 - Geoffrey K. Pullum and William A. Ladusaw 著，土田滋・福井玲・中川裕 訳
