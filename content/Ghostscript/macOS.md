@@ -34,7 +34,7 @@ $ sudo cjk-gs-integrate --link-texmf --force
 
 ### /usr/local/share/ghostscript/\`gs --version\`/Resource/Init/cidfmap の記述例 {#g10fce9f}
 
-#### <a id="cidfmap-osx"></a> {#eb079434}
+#### <a id="cidfmap-macos">For macOS</a> {#eb079434}
 
 ***
 
