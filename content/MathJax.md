@@ -8,3 +8,11 @@ pukiwiki: "MathJax"
 # MathJax
 
 ## MathJax {#zb9120c2}
+
+- [MathJax | Beautiful math in all browsers.](https://www.mathjax.org/)
+- [https://github.com/mathjax/MathJax/](https://github.com/mathjax/MathJax/)
+- [MathJaxとKaTeXによるSSRを試す](https://168iroha.net/blog/article/202404291636/)
+- [とほほのMathJax入門](https://www.tohoho-web.com/ex/mathjax.html)
+- 利用例：[MathJax（v1.1）を使ってみた](http://tractatus.html.xdomain.jp/Math/MathJax.html)（MathJax/jsMath/MathML を同じソースで比較可能）
+- [forumSearch:MathJax](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=MathJax)
+- [https://x.com/search?q=MathJax+lang%3Aja&f=live](https://x.com/search?q=MathJax+lang%3Aja&f=live)
