@@ -40,8 +40,10 @@ AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 ### ChangeLog {#c24ccc65}
 
-- [log](https://git.savannah.gnu.org/cgit/auctex.git/log/)
 - [NEWS.org](https://git.savannah.gnu.org/cgit/auctex.git/tree/NEWS.org)
+- [log](https://git.savannah.gnu.org/cgit/auctex.git/log/)
+- [https://git.savannah.gnu.org/cgit/emacs/elpa.git/log/?h=externals/auctex](https://git.savannah.gnu.org/cgit/emacs/elpa.git/log/?h=externals/auctex)
+- [https://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=shortlog;h=refs/heads/externals/auctex](https://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=shortlog;h=refs/heads/externals/auctex)
 
 ### スクリーンショット {#s450de09}
 
@@ -993,7 +995,6 @@ AUCTeX とは関係ありませんが，先頭に
 - [emacsにauctex （texlive 2012）](http://miyazakikenji.wordpress.com/2013/06/02/emacs%E3%81%ABauctex-%EF%BC%88texlive-2012%EF%BC%89/)
 - [auctex-lua.el](https://github.com/vermiculus/auctex-lua) Lua editing utilities for AUCTeX
 - [sumatra-forward.el](http://william.famille-blum.org/blog/static.php?page=static081010-000413) (X)Emacs frontend to forward search with SumatraPDF
-- [yatex-modoki-mode](https://bitbucket.org/tequilasunset/yatex-modoki-mode/) AUCTeX を YaTeX っぽくするマイナーモード。
 - [AUCTeX | Amrta](http://skalldan.wordpress.com/tag/auctex/)
 - [AUCTeX | 検索結果:  | miyazakikenji](http://miyazakikenji.wordpress.com/?s=AUCTeX)
     <!-- -[[Emacs+AUCTeXのjapanese-latex-modeでplatexコマンドを実行するときにバッファの文字コードに応じて適切なオプションを付与する:https://gifnksm.hatenablog.jp/entries/2009/04/20]] -->
