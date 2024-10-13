@@ -105,8 +105,8 @@ W32TeX には，フルインストール / 標準インストール / 最小イ�
 ターミナルを起動し，C:\w32tex に移動後，texinstwin.exe を実行してください．C:\w32tex\download はダウンロードファイルが保存されている場所です．
 
 ```
-C:\Users>cd C:\w32tex
-C:\w32tex>.\texinstwin C:\w32tex\download
+PS C:\Users> cd C:\w32tex
+PS C:\w32tex> .\texinstwin C:\w32tex\download
 ```
 
 ファイルが展開されたら終了です．
@@ -172,7 +172,7 @@ W32TeX に含まれるいくつかのファイルは [Perl](/Perl/) に依存し
 ### SumatraPDF {#g6688c53}
 
 [SumatraPDF](/SumatraPDF/) は [SyncTeX](/SyncTeX/) に対応した PDF/PostScript ビューアです．
-Microsoft Edge や [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) のように開いている PDF ファイルをロックせず，ファイルの更新を自動で検知してプレビューを更新する優れもので，軽量な LaTeX 用 PDF ビューアとして最適です．
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/>) のように開いている PDF ファイルをロックせず，ファイルの更新を自動で検知してプレビューを更新する優れもので，軽量な LaTeX 用 PDF ビューアとして最適です．
 TeXworks などの PDF ビューア付きの統合環境を利用する場合は不要かもしれませんが，それ以外の場合はインストールするとよいでしょう（TeX インストーラ 3 を利用した場合も，SumatraPDF は自動インストールの対象ではありません）．
 
 ## アップデート {#o482d037}
@@ -253,26 +253,26 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 以下はその例です．
 
 ```
-C:\work>platex -kanji=utf8 sourcename.tex
+PS C:\work> platex -kanji=utf8 sourcename.tex
 ```
 
 ```
-C:\work>uplatex sourcename.tex
+PS C:\work> uplatex sourcename.tex
 ```
 
 dvi2tty の場合，コードページを UTF-8 に設定することで，文字化けせずに表示させることができます．
 以下はその例です．
 
 ```
-C:\work>chcp 65001
-C:\work>dvi2tty -Eu sourcename.dvi
+PS C:\work> chcp 65001
+PS C:\work> dvi2tty -Eu sourcename.dvi
 ```
 
 あるいは、ページャーを使用しない場合はそのまま，文字化けせずに表示させることができます．
 以下はその例です．
 
 ```
-C:\work>dvi2tty -Eu -q sourcename.dvi
+PS C:\work> dvi2tty -Eu -q sourcename.dvi
 ```
 
 以前存在したオプション -sjis-terminal は廃止されました(2018/6/15)．
