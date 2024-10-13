@@ -92,8 +92,10 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### Linux <a id="linux"></a> {#s5dbb0cf}
 
+- [WineHQ  - Adobe Reader DC](https://appdb.winehq.org/objectManager.php?sClass=version&iId=32266)
 - [Install Adobe Acrobat Reader DC on Ubuntu 22.04 LTS Jammy](https://www.how2shout.com/linux/install-adobe-acrobat-reader-dc-on-ubuntu-22-04-lts-jammy/)
 - [How to Install Latest Adobe Acrobat Reader DC on Ubuntu 18.04 Bionic Beaver Linux with Wine](https://linuxconfig.org/how-to-install-latest-adobe-acrobat-reader-dc-on-ubuntu-18-04-bionic-beaver-linux-with-wine)
+- [Ubuntu17.10 で Acrobat Pro DC 2017 を使う](https://motchy99.blog.fc2.com/blog-entry-103.html)
 - [Ubuntu16.04 で Acrobat Reader DC 2017 を使う](https://motchy99.blog.fc2.com/blog-entry-102.html)
 
 Arch Linux/Manjaro Linux の場合は
@@ -127,6 +129,7 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
+winetricks atmlib
 wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320180/AcroRdrDCx642400320180_ja_JP.exe
 wine64 AcroRdrDCx642400320180_ja_JP.exe
 ```
@@ -513,6 +516,7 @@ synctex help edit
 - [Adobe Reader XIを利用してPDFファイルのページ数を取得するVBAマクロ](http://www.ka-net.org/blog/?p=2337)
 - [Adobe Readerアプリケーションが終了してないです。](http://bbs.wankuma.com/index.cgi?mode=al2&namber=9751&KLOG=23)
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
+- \[[自分用メモ\] Acrobat ReaderでPDF開くたびに\[All tools\]が初期表示される問題、ようやく解決した…。環境設定メニュー「'All tools'ペインの前回の状態を記憶する」をONにしたら次から表示されなくなった。地味に毎回面倒だったんだよな](https://x.com/kozakitw/status/1844088642849185977)
 
 [^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23, Adobe Acrobat Reader Version 2024 (64-bit) は AcroViewA24 です。
 [^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
