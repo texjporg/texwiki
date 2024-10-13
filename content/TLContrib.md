@@ -63,5 +63,5 @@ getnonfreefonts はそのような「無料だが『フリー』でないフォ�
 
 ### ChangLog {#s9b42273}
 
-- [http://git.texlive.info/tlcontrib/](http://git.texlive.info/tlcontrib/)
-    - [log](http://git.texlive.info/tlcontrib/log/)
+- [https://git.texlive.info/tlcontrib/](https://git.texlive.info/tlcontrib/)
+    - [log](https://git.texlive.info/tlcontrib/log/)
