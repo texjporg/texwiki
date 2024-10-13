@@ -274,26 +274,26 @@ Windowsではコンソールやファイル名でのワイド文字・Unicodeの
 以下はその例です．
 
 ```
-C:\work>platex -kanji=utf8 sourcename.tex
+PS C:\work> platex -kanji=utf8 sourcename.tex
 ```
 
 ```
-C:\work>uplatex sourcename.tex
+PS C:\work> uplatex sourcename.tex
 ```
 
 dvi2tty の場合，コードページを UTF-8 に設定することで，文字化けせずに表示させることができます．
 以下はその例です．
 
 ```
-C:\work>chcp 65001
-C:\work>dvi2tty -Eu sourcename.dvi
+PS C:\work> chcp 65001
+PS C:\work> dvi2tty -Eu sourcename.dvi
 ```
 
 あるいは、ページャーを使用しない場合はそのまま，文字化けせずに表示させることができます．
 以下はその例です．
 
 ```
-C:\work>dvi2tty -Eu -q sourcename.dvi
+PS C:\work> dvi2tty -Eu -q sourcename.dvi
 ```
 
 最新の Windows版 TeX Live の場合は，texmf.cnf に
