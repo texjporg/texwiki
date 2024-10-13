@@ -126,9 +126,9 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 
 ### 「ネ申 Excel」への警鐘 {#q611269f}
 
-- [「ネ申Excel」問題](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013.pdf)
-- [「ネ申Excel」問題（スライド）](http://oku.edu.mie-u.ac.jp/~okumura/SSS2013slide.pdf)
-- [「ネ申Excel」はなぜ問題なのか](http://it.srad.jp/story/13/10/23/037221)
+- [「ネ申Excel」問題](https://okumuralab.org/~okumura/SSS2013.pdf)
+- [「ネ申Excel」問題（スライド）](https://okumuralab.org/~okumura/SSS2013slide.pdf)
+- [「ネ申Excel」はなぜ問題なのか](https://it.srad.jp/story/13/10/23/037221)
 
 ### 外部リンク {#i993cecd}
 
