@@ -25,6 +25,8 @@ KaTeX は，Web ブラウザ上で数式を高速に描画できるライブラ�
 - [KaTeXを試してみた](http://rinx.biz/blog/2014/09/20/katex/)
 - [katex使ってみた](http://firespeed.org/diary.php?diary=kensei-362)
 - [にっき♪ KaTeXの検索結果](http://abenori.blogspot.jp/search?q=KaTeX)
+- [forumSearch:KaTeX](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=KaTeX)
+- [https://x.com/search?q=KaTeX+lang%3Aja&f=live](https://x.com/search?q=KaTeX+lang%3Aja&f=live)
 
 #### License {#wc2593ee}
 
