@@ -19,7 +19,7 @@ pukiwiki: "pTeXと多言語処理"
 [upTeX](/upTeX,upLaTeX/) については、CJK 以外の言語では事情は pTeX とほぼ同じです。
 [upTeX, upLaTeXによる多言語処理](/upTeX,upLaTeX/#b41c00bb)も参照してください。
 
-pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 (Internet archive)](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory (Internet archive)](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」が知られています。
+pTeX 上で多言語混在文書を扱う方法をまとめたものとして，[稲垣徹さん](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)による「[pTeX 3.1.41とBabel 3.8 (Internet archive)](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#babel)」や「[日本語 LaTeX による多言語処理 &mdash; CTAN directory (Internet archive)](http://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」あるいは [皆川光男さん](http://a011w.broada.jp/wbaefznh35st/) による[Windows版LaTeX(pTeX)の細道・けもの道 - 南北館](http://a011w.broada.jp/wbaefznh35st/latex/babel110.html)が知られています。
 ただ，一部の言語，例えば中国語（&#x6c49;&#x8bed;［漢語］，中文）・韓国語（&#xd55c;&#xad6d;&#xc5b4;）・タイ語などについては取り扱っていませんし，個々のパッケージのインストール方法についても一部のパッケージについては割愛しています。
 そこで稲垣さんが取り上げてくださることを期待しつつ，補足情報のようなものを Wiki 上でまとめていこうと考えています。
 
