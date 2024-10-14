@@ -19,7 +19,7 @@ TeX および関連ソフトウェアに関する設定は texmf.cnf という�
 
 大昔の TeX 環境では入力ファイルの検索パス等の設定を（OS の）環境変数（TEXINPUTS 等）で行っていました。
 TeX 関連のソフトウェアの数や設定項目の件数が増えたためにこの方法での管理は困難となり，「TeX 環境版の環境変数」を管理するためのライブラリである Kpathsea が開発されました。
-現在では，TeX Live や W32TeX を含めほとんど全ての TeX 環境がこの Kpathsea ライブラリを利用しています。
+現在では，TeX Live を含めほとんど全ての TeX 環境がこの Kpathsea ライブラリを利用しています。
 
 Kpathsea における設定データの構造は，OS の環境変数のモデルを基礎としていて，「任意の“変数名”に任意の“値”（文字列）を割り当てる」という非常に単純なものです。
 しかし，OS の環境変数と比べて以下のような点で拡張されています。
@@ -32,7 +32,7 @@ Kpathsea は，このような変数について単に検索パスの値を格�
 
 ### 公式マニュアル {#g7e4e8e4}
 
-TeX Live や W32TeX では、以下のコマンドで Kpathsea ライブラリの公式マニュアルを開くことができます。
+TeX Live では、以下のコマンドで Kpathsea ライブラリの公式マニュアルを開くことができます。
 
 ```
 texdoc kpathsea
@@ -46,16 +46,16 @@ texdoc kpathsea
 kpsewhich -all texmf.cnf
 ```
 
-最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2020）のように 2 つのパスを返します。
+最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2024）のように 2 つのパスを返します。
 
 ```
-c:/texlive/2020/texmf.cnf
-c:/texlive/2020/texmf-dist/web2c/texmf.cnf
+c:/texlive/2024/texmf.cnf
+c:/texlive/2024/texmf-dist/web2c/texmf.cnf
 ```
 
 このように複数の有効な texmf.cnf がある場合，前にあるものほど高い優先度をもちます。
 つまり，後ろ（低い優先度）の texmf.cnf で設定された値は，前（高い優先度）の texmf.cnf によって上書きされます。
-TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2020/texmf.cnf の方を編集します。
+TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2024/texmf.cnf の方を編集します。
 TeX Live のバージョンを跨いで有効であって，上書きされないものは
 
 ```
@@ -69,32 +69,6 @@ c:/texlive/texmf-local/web2c/texmf.cnf
 ```
 
 です。
-
-一方，W32TeX においては既定では次のように「マスタの設定ファイル」しかありません。
-
-```
-c:/usr/local/share/texmf-dist/web2c/texmf.cnf
-```
-
-自分用の「カスタム用設定ファイル」は，「マスタの設定ファイル」より優先されるもの，例えば
-
-```
-c:/usr/local/share/texmf-local/web2c/texmf.cnf
-```
-
-作成して編集します。これは再インストール時に上書きされることがありません。ここで
-
-```
-c:/usr/local
-```
-
-とは，インストール ディレクトリであり，
-
-```
-c:/w32tex
-```
-
-の場合は，それに置き換えて解釈して下さい。
 
 texmf.cnf を“置くことができる”ディレクトリは次のコマンドで調べることができます。[^2]
 
@@ -170,7 +144,7 @@ tlmgr conf texmf shell_escape f
 Kpatthsea では一つの変数についてコマンドごとに読み取る値を変えることができます。
 例を挙げて説明します。
 
-W32TeX および Windows 版 TeX Live の pTeX 系エンジンには入力ソースファイルの文字コード自動判別を行う機能が備わっていて，既定で有効になっています。
+TeX Live の pTeX 系エンジンには入力ソースファイルの文字コード自動判別を行う機能が備わっていて，既定で有効になっています。
 Kpathsea 変数 guess_input_kanji_encoding によってこの機能の有効・無効を設定できます。
 
 ```
@@ -245,10 +219,10 @@ shell_escape=t
 kpsewhich article.cls
 ```
 
-Windows 版の TeX Live 2020 では次のような結果になりました。
+Windows 版の TeX Live 2024 では次のような結果になりました。
 
 ```
-c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
+c:/texlive/2024/texmf-dist/tex/latex/base/article.cls
 ```
 
 パス検索についても，コマンドによって検索対象のパスを変えることができます。
@@ -256,9 +230,9 @@ c:/texlive/2020/texmf-dist/tex/latex/base/article.cls
 
 ```
 kpsewhich pstricks.con -progname=latex
-#==>「c:/texlive/2020/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
+#==>「c:/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
 kpsewhich pstricks.con -progname=xelatex
-#==>「c:/texlive/2020/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
+#==>「c:/texlive/2024/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
 ```
 
 #### パス検索の手順 {#j7738f5b}
@@ -306,13 +280,7 @@ texmf.cnf ファイルは，TeX Live 2016 では
 c:/texlive/2016/texmf-dist/web2c           (windows)
 ```
 
-のような場所，W32TeX では（インストール場所を c:/w32tex とすると）
-
-```
-c:/w32tex/share/texmf-dist/web2c
-```
-
-にあります。
+のような場所にあります。
 
 ```
 shell_escape_commands = \
