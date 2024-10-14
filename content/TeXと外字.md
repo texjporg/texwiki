@@ -33,21 +33,29 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 まず目印に一辺100ポイントの正方形を描いておきます。
 間違えて消したり動かしたりしないようにロックしておくといいでしょう。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png" alt="100ポイントの正方形">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png" alt="100ポイントの正方形">
+
+<!-- #ref(https://web.archive.org/web/20101128142252if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png,nolink,100ポイントの正方形) -->
 
 左下隅から12ポイント上がったところが起点になるように元となる文字を入力します。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png" alt="元になる文字の入力">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png" alt="元になる文字の入力">
+
+<!-- #ref(https://web.archive.org/web/20101128142207if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png,nolink,元になる文字の入力) -->
 
 文字のアウトラインをとって，修正します。
 この場合，中央の「一」と「口」を選択して「←」キーを数回押し，次に「口」の左縦棒だけ選択してさらに「←」キーを数回押せばいいでしょう。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png" alt="文字の修正">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png" alt="文字の修正">
+
+<!-- #ref(https://web.archive.org/web/20101128142338if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png,nolink,文字の修正) -->
 
 目印の正方形の枠の塗りをなしにしてから EPS 形式で保存します。
 ここではファイル名を kou-itai.eps としました。
 
-<img src="http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png" alt="枠の塗りを無しに">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png" alt="枠の塗りを無しに">
+
+<!-- #ref(https://web.archive.org/web/20101128142310if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png,nolink,枠の塗りを無しに) -->
 
 実際に LaTeX 文書中に入れてみましょう。
 
@@ -92,7 +100,9 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 
 これを処理した結果です：
 
-<img src="https://web.archive.org/web/20101128142225if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
+
+<!-- #ref(https://web.archive.org/web/20101128142225if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png,nolink,精興社と外字の例) -->
 
 同様にして Inkscape でも外字を作成することができます。
 
