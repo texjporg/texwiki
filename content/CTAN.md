@@ -72,7 +72,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
         (HTTP, FTP)
     - [ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html)
         (HTTP, FTP)
-    - [ftp.ring.gr.jp/pub/text/CTAN/](http://ftp.ring.gr.jp/pub/text/CTAN/index.html)
+    - [ftp.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/index.html)
         (HTTP, FTP)
 
 ### オリジナルの CTAN {#original}
