@@ -34,7 +34,7 @@ $TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。
 
 #### お手軽なツールを使う方法 (Windows/Mac) {#oe0e5138}
 
-TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式などの画像ファイルに変換するツール [TeX2img](/TeX2img/) があります。
+TeX の数式をクリック一つで PDF/EPS/SVG/PNG/JPEG 形式などの画像ファイルに変換するツールとして [KLatexFormula](/KLatexFormula/) あるいは [TeX2img](/TeX2img/) があります。
 コマンドラインを使いたくない人は，このツールで EPS ファイルを生成し，InDesign や Illustrator に「配置」するのがお手軽でしょう。
 この方法は EPS ファイルの文字をアウトライン化してくれるので，数式用フォントを OS にインストールしなくても文字化けの心配がありません。
 
@@ -42,7 +42,9 @@ TeX の数式をクリック一つで EPS/PNG/JPEG/PDF 形式などの画像フ�
 
 例えば次の数式を作ってみましょう。
 
-<img src="http://web.archive.org/web/20111118063529if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
+
+<!-- #ref(https://web.archive.org/web/20111118063529if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg,nolink,LaTeX で作った数式) -->
 
 お好きなテキストエディタに次のように打ち込んでください（Linux でも macOS でも Microsoft Windows でも何でもかまいません）。
 
@@ -63,7 +65,7 @@ $ latex testeq.tex
 $ dvips -E testeq.dvi -o testeq.eps
 ```
 
-これで [testeq.eps](https://web.archive.org/web/20111118063732/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。
+これで [testeq.eps](https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps) という EPS ファイルができます。 <!-- これで &ref(https://web.archive.org/web/20111118063732/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.eps); という EPS ファイルができます。 -->
 ここで “-E” は EPS 形式で保存するオプションです。
 これを忘れると EPS でない PostScript 形式になってしまいます。
 この方法は（文字をアウトライン化しないので）テキストを保持した状態の EPS ファイルを出力します。
@@ -72,10 +74,12 @@ $ dvips -E testeq.dvi -o testeq.eps
 
 上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。
 
-<img src="http://web.archive.org/web/20111118063622if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
+<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
+
+<!-- #ref(https://web.archive.org/web/20111118063622if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg,nolink,InDesign 2.0 に配置したところ) -->
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
-「[数式フォントの比較](https://web.archive.org/web/20180404184346/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。
+「[数式フォントの比較](https://warp.da.ndl.go.jp/info:ndljp/pid/11040512/oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 <!-- 「[[数式フォントの比較:https://web.archive.org/web/20180404184346/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html]]」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 -->
 
 InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/) が便利です。
 
@@ -87,10 +91,13 @@ PDF でもリンク配置なら問題ありません。macOS のプレビュー�
 
 <table>
 <tbody>
-<tr><td><img src="http://web.archive.org/web/20111118063631if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="http://web.archive.org/web/20111118063533if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
+<tr><td><img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
 <tr><td>Illustrator 10.0.3 に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustrator から保存した EPS。</td></tr>
 </tbody>
 </table>
+
+<!-- |#ref(https://web.archive.org/web/20111118063631if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg,nolink,箱しか見えない EPS 画像)|#ref(https://web.archive.org/web/20111118063533if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg,nolink,Illustrator から保存したプレビュー附き EPS 画像)| -->
+<!-- |Illustrator 10.0.3 に配置したところ。箱しか見えない。|CENTER:Illustrator から保存した EPS。| -->
 
 EPS を作るところまでは上と同じです。
 ただ，この EPS をそのまま Illustrator に［ファイル］→［配置...］（「配置」ダイアログボックスの「リンク」チェックボックスをオフにした状態で）すると，「所在不明のフォントは，初期設定のフォントで代用されます。」というメッセージが出て，文字化けします。
@@ -214,9 +221,9 @@ jsclasses を使う方法以外に，\scalebox で数式を拡大する方法も
 次の例のように数式を $\displaystyle ...$ で書くといいでしょう。
 
 ```
-\documentclass{article}
+\documentclass[dvips]{article}
 \pagestyle{empty}
-\usepackage[dvips]{graphicx}
+\usepackage{graphicx}
 \begin{document}
 \scalebox{3}{$\displaystyle
   \int_0^\infty \frac{\sin x}{\sqrt{x}} dx = \sqrt{\frac{\pi}{2}}$}
