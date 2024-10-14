@@ -53,9 +53,9 @@ TeX Live 2020 には Babel が収録されています。
 
 ### キリルアルファベット（ロシア語）フォント関連ファイルのダウンロードとインストール {#ka19a2ab}
 
-- CTAN.ring:fonts/cyrillic/lh
-    から[lhfnt35g-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-gen-mf.zip)
-    と[lhfnt35g-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35g-source.zip)
+- [CTAN:fonts/cyrillic/lh/](https://mirror.ctan.org/fonts/cyrillic/lh/)
+    から[lhfnt35g-gen-mf.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35g-gen-mf.zip)
+    と[lhfnt35g-source.zip](https://mirror.ctan.org/fonts/cyrillic/lh/lhfnt35g-source.zip)
     をダウンロードし，lh/texmf/ を $TEXMFLOCAL/ と読み替える以外は
     元のツリー構造を保ったまま $TEXMFLOCAL/ 以下に展開する。
 
@@ -77,8 +77,8 @@ TeX Live 2020 には Babel が収録されています。
 
 ### ギリシアアルファベットフォント関連ファイルのダウンロードとインストール {#ud937b30}
 
-- CTAN.ring:fonts/greek
-    から[cbfonts.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/greek/cbfonts.zip) を
+- [CTAN:fonts/greek/](https://mirror.ctan.org/fonts/greek/)
+    から[cbfonts.zip](https://mirror.ctan.org/fonts/greek/cbfonts.zip) を
     ダウンロードし，適当な作業ディレクトリに展開する。
 
 - 展開してできた cbfonts/ ディレクトリを開き，
@@ -240,11 +240,11 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 ### 参考サイト {#af834ac1}
 
-- [Babel のマニュアル（英語）](http://www.ring.gr.jp/pub/text/CTAN/languages/babel/babel.pdf)
+- [Babel のマニュアル（英語）](https://mirror.ctan.org/languages/babel/base/babel-code.pdf)
     &#x5b;[CTAN](/CTAN/)\]
 
 - [TeX Live 2013 導入](http://yasuda.homeip.net/insomnia/2014/04/tex-live-2013.html)
-- [pTeX 3.1.41とBabel 3.8](http://www2.tba.t-com.ne.jp/ing/babel.html)
+- [pTeX 3.1.41とBabel 3.8](https://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)
     （稲垣徹さん）
 
 - [南北館](http://a011w.broada.jp/wbaefznh35st/)
