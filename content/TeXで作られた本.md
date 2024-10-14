@@ -53,10 +53,10 @@ TeX で組まれていますが，それ以外のもの）：
 - 友田晶子編『[スーパーで買えるワインの本](https://magazineworld.jp/books/paper/8123/)』（マガジンハウス，1997年）……リーブルテック（株）では他にもこういったグラフィカルな本を TeX で製作されている
 - 古賀勝郎『日本語—ヒンディー語辞典』（1996年），
     古賀勝郎・高橋明『ヒンディー語=日本語辞典』
-    （2006，大修館書店，[ISBN 978-4-469-01275-0](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-469-01275-0)）
+    （2006，大修館書店，[ISBN 978-4-469-01275-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-469-01275-0)）
 
 - 『パスポート独和辞典』（白水社，編集責任 細谷行輝）……東京書籍印刷（株）で組版。Computer Modern 使用
-- アラン・ソーカル，ジャン・ブリクモン著，田崎晴明，大野克嗣，堀茂樹訳『[「知」の欺瞞—ポストモダン思想における科学の濫用](http://www.gakushuin.ac.jp/~881791/fn/)』（岩波書店，2000年）
+- アラン・ソーカル，ジャン・ブリクモン著，田崎晴明，大野克嗣，堀茂樹訳『[「知」の欺瞞—ポストモダン思想における科学の濫用](https://www.gakushuin.ac.jp/~881791/fn/)』（岩波書店，2000年）
 - 村上宣寛，村上千恵子著『性格は五次元だった—性格心理学入門』（培風館，1999年）
 - ローレンス・レッシグ著，山形浩生，柏木亮二訳『CODE—インターネットの合法・違法・プライバシー』（翔泳社，2001年）……縦組，Computer Modern，以下の2冊も
 - ローレンス・レッシグ著，山形浩生訳『コモンズ』（翔泳社，2002年）
@@ -94,7 +94,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 大角翠編著『[少数言語をめぐる10の旅](http://www.sanseido-publ.co.jp/publ/syosugengo.html)』（2003.03.15，ISBN 4-385-36145-2）
 - Geoffrey K. Pullum and William A. Ladusaw 著，土田滋・福井玲・中川裕 訳
     『[世界音声記号辞典](http://www.sanseido-publ.co.jp/publ/dicts/sekai_onseikigo.html)』
-    （2003年5月12日，[ISBN 978-4-385-10756-1](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-385-10756-1)）
+    （2003年5月12日，[ISBN 978-4-385-10756-1](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-385-10756-1)）
 
 - 渡邉時夫監修，酒井英樹・塩川春彦・浦野研編『[英語が使える日本人の育成—MERRIER Approach のすすめ](http://www.sanseido-publ.co.jp/publ/eigo_kukaeru_j_ikusei.html)』（2003.05.30，ISBN 4-385-36155-X）
 - 石井米雄・千野栄一編『[世界のことば・出会いの表現辞典](http://www.sanseido-publ.co.jp/publ/dicts/sekainokotoba_deai_hyogen.html)』（2004.06.10，ISBN 4-385-15178-4） ([qa:29696](https://okumuralab.org/~okumura/texfaq/qa/29696.html), [qa:29724](https://okumuralab.org/~okumura/texfaq/qa/29724.html))
@@ -138,11 +138,18 @@ TeX で組まれていますが，それ以外のもの）：
     <!-- https://www.kyoritsu-pub.co.jp/book/b10010575.html -->
 
 - 米村明芳・杉山義明.『[数IIICの完全攻略](https://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
-- 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
-- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
+- 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
+- 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
 - 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](https://web.archive.org/web/20101219085445/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
-- 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) グループ会社の[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）．[ISBN 978-4-7561-1667-3](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-1667-3)
+- 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー（現：[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）．[ISBN 978-4-7561-1667-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-1667-3)
 - 吉田武『オイラーの贈り物』．2001年11月発売．筑摩書房．ISBN4 480-08675-7 C0141
+- 江添亮『江添亮のC++入門』．2019年09月20日発売．紙版：[KADOKAWA](https://store.kadokawa.co.jp/shop/g/g301908000774/)、Kindle版：[アスキードワンゴ](https://asciidwango.jp/post/187773990490/%E6%B1%9F%E6%B7%BB%E4%BA%AE%E3%81%AEc-%E5%85%A5%E9%96%80)、PDF版：[達人出版会](https://tatsu-zine.com/books/cpp-intro)． [ISBN 978-4-04-893071-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-04-893071-0)
+    - [江添亮のC++入門 (from:EzoeRyou) - 検索 / X](https://x.com/search?q=%E6%B1%9F%E6%B7%BB%E4%BA%AE%E3%81%AEC%2B%2B%E5%85%A5%E9%96%80+%28from%3AEzoeRyou%29&f=live)
+        - [江添亮のC++入門のtexソースコードが公開された。](https://x.com/EzoeRyou/status/1177137579235299328)
+    - [https://cpp.rainy.me/](https://cpp.rainy.me/)
+    - [https://ezoeryou.github.io/cpp-intro/](https://ezoeryou.github.io/cpp-intro/)
+    - [https://github.com/EzoeRyou/cpp-intro](https://github.com/EzoeRyou/cpp-intro)
+    - [PDF版はこちら。](https://github.com/kurema/cpp-intro/releases) cpp-intro.pdf
 
 ### comp.text.tex での話題（2002年11月） {#jcedce75}
 
@@ -164,15 +171,15 @@ Date: 5 Nov 2002 11:11:53 -0800
 - [Lettering Art in Modern Use](http://mysite.verizon.net/william_franklin_adams/) (William Adams) の Portfolio
     の [The Book of Tea](https://www.wikipedia.org/wiki/The_Book_of_Tea) ([PDF](http://mysite.verizon.net/william_franklin_adams/portfolio/typography/thebookoftea.pdf)) など。
 
-- [Bodhisattvamaarga in "Sik.saasamuccaya \[Intetnet Archive\]](http://web.archive.org/web/20041218020042/http://homepages.comnet.co.nz/~r-mahoney/ma_thesis/ma_thesis.html)
+- [Bodhisattvamaarga in "Sik.saasamuccaya \[Intetnet Archive\]](https://web.archive.org/web/20041218020042/http://homepages.comnet.co.nz/~r-mahoney/ma_thesis/ma_thesis.html)
 - The Memoir Class ([CTAN:macros/latex/contrib/memoir/](https://mirror.ctan.org/macros/latex/contrib/memoir/)) のドキュメント
 - [Beyond Words--Life Cast \[Internet Archive\]](http://web.archive.org/web/20041013181653/http://www.beyondword.com/books/lc.html)
-    （[サンプルページ \[Internet Archive\]](http://web.archive.org/web/20021219030553/http://bluesky.com/mask/mask.gif)）
+    （[サンプルページ \[Internet Archive\]](https://web.archive.org/web/20021219030553/http://bluesky.com/mask/mask.gif)）
 
 - 最近買った Latin poetry に関する Cambridge University Press の3冊の本は LaTeX で作られていたがたいへん美しい。
-- [The Caucasus Early Warning Network \[Internet Archive\]](http://web.archive.org/web/20040604154429/http://www.fewer.org/caucasus/)
-    の [Conflict Prevention in the Caucasus: Actors, Response Capacities, and Planning Processes (February 2002) \[Internet Archive\]](http://web.archive.org/web/20031209151619/http://www.fewer.org/caucasus/studcap.pdf) (Plain TeX)
-    (Typeset by [TeXframe Design \[Internet Archive\]](http://web.archive.org/web/20050126003050/http://www.texframe.co.uk/))
+- [The Caucasus Early Warning Network \[Internet Archive\]](https://web.archive.org/web/20040604154429/http://www.fewer.org/caucasus/)
+    の [Conflict Prevention in the Caucasus: Actors, Response Capacities, and Planning Processes (February 2002) \[Internet Archive\]](https://web.archive.org/web/20031209151619/http://www.fewer.org/caucasus/studcap.pdf) (Plain TeX)
+    (Typeset by [TeXframe Design \[Internet Archive\]](https://web.archive.org/web/20050126003050/http://www.texframe.co.uk/))
 
 - [Simple Nature](http://www.lightandmatter.com/area1sn.html) (with LaTeX source)
 - [The Computational Beauty of Nature](http://www.amazon.com/exec/obidos/tg/detail/-/0262561271/) (Gary William Flake)
