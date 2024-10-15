@@ -69,10 +69,10 @@ TeX や LaTeX に関する本の紹介です．
     [あがきながら覚えるTeX](https://hakuoku.github.io/agakuTeX/)
 
 - [数学・物理学専門のインターネット家庭教師さん](http://phys.co-suite.jp/)
-    [LaTeX Tips &lt;TikZへの入門>](http://phys.co-suite.jp/textips.html)
+    [LaTeX Tips &lt;TikZへの入門>](http://phys.co-suite.jp/textips.html) (PDF)
 
 - [alg-dさん](https://alg-d.com/)
-    [TikZ の使い方(PDF)](https://alg-d.com/math/tikz.pdf)
+    [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF)
 
 ### 書籍 {#z5fa285b}
 
@@ -174,6 +174,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2016年 {#year2016}
 
+- [渡辺 徹](https://github.com/thortex)
+    『[好き好き LaTeX2ε 初級編 第 1.14 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』(PDF)
+    （2016年07月23日）
+
 - 小林 雅人
     『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
     （[工学社](http://www.kohgakusha.co.jp/)，2016年03月14日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
@@ -238,7 +242,8 @@ TeX や LaTeX に関する本の紹介です．
 - [阿部 紀行](https://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」―入力支援環境「祝鳥」を用いた文書作成―](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
     （[サイエンス社](https://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
-    - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html)
+    - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html) (2013年08月10日)(Wayback Machine)
+    - [「一歩踏み込む LaTeXの基本」サポートページ](https://warp.da.ndl.go.jp/info:ndljp/pid/1233783/www.ms.u-tokyo.ac.jp/~abenori/book/tex.html) (2010年11月06日)(WARP)
 - [TeXの本/絶版](</TeXの本/絶版/#year2006>)
 
 #### 2005年 {#year2005}
