@@ -1146,6 +1146,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - LaTeX Graphics with TikZ の日本語訳。
 - [LaTeX Graphics with TikZ](https://www.packtpub.com/product/latex-graphics-with-tikz/9781804618233)
     - LaTeX Graphics with TikZ の英語版。第1版2023年6月9日
+    - [LaTeX Graphics with TikZ](https://tikz.org/) tikz.org
     - [LaTeXグラフィックスとTikZ](https://tikz.jp/) LaTeX Graphics with TikZ に関する追加情報
 
 ### ChangeLog {#off3b30e}
