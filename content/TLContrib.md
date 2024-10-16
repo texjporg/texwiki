@@ -59,7 +59,7 @@ getnonfreefonts はそのような「無料だが『フリー』でないフォ�
 ### 関連リンク {#vd8e3fd2}
 
 - \[[issue:200\] TLContrib packages into MacPorts?](https://ml.texjp.org/pipermail/issue/2018-July/#162)
-- [http://www.preining.info/blog/tag/tlcontrib/](http://www.preining.info/blog/tag/tlcontrib/)
+- [https://www.preining.info/blog/tag/tlcontrib/](https://www.preining.info/blog/tag/tlcontrib/)
 
 ### ChangLog {#s9b42273}
 
