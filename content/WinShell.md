@@ -99,7 +99,7 @@ Cannot start AcrobatReader or open the document.
 
 という警告メッセージが表示され，PDF ファイルが表示できない場合があります。
 
-<img src="https://okumuralab.org/tex/file.php/2/moddata/forum/2/10292/winshell.png" alt="" width="50%">
+<img src="https://okumuralab.org/tex/pluginfile.php/6/mod_forum/attachment/10292/winshell.png" alt="" width="50%">
 
 この問題は，Adobe Acrobat Reader を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
