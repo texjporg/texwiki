@@ -70,8 +70,8 @@ Illustrator で保存時の注意：
 - フォントを埋め込む
 
 不正な EPS は，
-[Tomas Rokicki](http://tomas.rokicki.com/)
-の [Illustrator 7.0/8.0/9.0 BeginData Bug](http://tomas.rokicki.com/illbug/)
+[Tomas Rokicki](https://tomas.rokicki.com/)
+の [Illustrator 7.0/8.0/9.0 BeginData Bug](https://tomas.rokicki.com/illbug/)
 から “fixill.pl” を頂いてきて直す。
 次のようにして使う。
 
@@ -80,7 +80,7 @@ $ fixill.pl <old.eps >new.eps
 ```
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
-W32TeX なら [Strawberry Perl](http://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
+W32TeX なら [Strawberry Perl](https://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
 W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
@@ -806,12 +806,12 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### リリース情報 {#u178a7b2}
 
-- Adobe Illustrator CC 2017 2017年および2016年
+- Adobe Illustrator デスクトップ版 29.0 2024年10月14日
 
 情報等
 
 - [http://ja.wikipedia.org/wiki/Adobe_Illustrator](http://ja.wikipedia.org/wiki/Adobe_Illustrator)
-- [Illustrator CC の新機能](http://helpx.adobe.com/jp/illustrator/using/whats-new.html)
+- [Adobe Illustrator の新機能](https://helpx.adobe.com/jp/illustrator/using/whats-new.html)
 
 ## コメント {#w6bf2331}
 
