@@ -9,7 +9,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 [奥村晴彦](https://okumuralab.org/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://gihyo.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
 
-本章のサポート責任は[稲垣徹](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://researchmap.jp/read0065375/)にあります。
+本章のサポート責任は[稲垣徹](https://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://researchmap.jp/read0065375/)にあります。
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
 
 なお全体のサポートページは[こちら](https://okumuralab.org/~okumura/bibun4/)になります。
