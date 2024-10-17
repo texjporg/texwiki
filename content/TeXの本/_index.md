@@ -108,7 +108,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
     （Independently published (個人出版)，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
-    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
+    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。--&gt; [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF、2024年05月06日更新)
 
 #### 2023年 {#year2023}
 
@@ -123,8 +123,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2022年 {#year2022}
 
-- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
+- [数学・物理学専門のインターネット家庭教師](http://phys.co-suite.jp/)『[TikZへの入門](http://phys.co-suite.jp/textips.html)』(PDF)
+    （2022年11月23日掲載、2024年01月21日更新）
 
+- [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
