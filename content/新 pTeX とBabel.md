@@ -22,7 +22,7 @@ pukiwiki: "新 pTeX とBabel"
 
 [TeX Live](</TeX Live/>) には TeX Live 所収の ハイフネーションファイルが同梱されています。
 8ビットコード対応済み
-([8bt2ptex.pl](http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
+([8bt2ptex.pl](https://web.archive.org/web/20121121181915/http://www2.tba.t-com.ne.jp/ing/ctan/8bt2ptex.pl))，
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
 [Microsoft Windows - TeX Wiki](</Microsoft Windows/>) を参照）。
 
@@ -38,7 +38,7 @@ TeX Live, MacTeX には TeX Live 所収の ハイフネーションファイル�
 TeX Live には TeX Live 所収の ハイフネーションファイルが同梱されています。
 UNIX 互換 OS ディストリビューション同梱のものを使用する場合には
 手作業で調整する必要があるかもしれません
-（「[日本語 LaTeX による多言語処理 &mdash; Babel](http://www2.tba.t-com.ne.jp/ing/babel.html)」
+（「[日本語 LaTeX による多言語処理 &mdash; Babel](https://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」
 を参照）。
 Cygwin については
 「[Cygwin - TeX Wiki](/Cygwin/)」
