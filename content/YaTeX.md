@@ -30,7 +30,7 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 
 <!-- #ref(https://okumuralab.org/tex/file.php/2/moddata/forum/2/1712/LaTeXMathPreviewScreenshot.png,nolink,latex-math-preview.el) -->
 
-<img src="http://www.emacswiki.org/pics/static/LaTeXMathPreviewScreenshot.png" alt="latex-math-preview.el">
+<img src="https://www.emacswiki.org/pics/static/LaTeXMathPreviewScreenshot.png" alt="latex-math-preview.el">
 
 ## 注意点 {#x8b18a1c}
 
