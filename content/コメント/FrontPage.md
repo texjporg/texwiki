@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.5.4](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-10-17 (木) 23:05:23
 - [LaTeX Workshop 10.5.3](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-10-16 (水) 22:42:39
 - [LaTeX Workshop 10.5.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-10-14 (月) 22:35:30
 - [AUCTeX 14.0.7](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2024-10-08 (火) 23:21:51
