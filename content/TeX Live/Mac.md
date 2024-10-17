@@ -158,15 +158,14 @@ $ sudo /usr/local/texlive/2024/bin/universal-darwin/tlmgr path add
 
 ### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#texlive-install-pacman}
 
-#### [Homebrew](http://brew.sh/) によるインストール {#texlive-install-brew}
+#### [Homebrew Cask](https://formulae.brew.sh/cask/) によるインストール {#texlive-install-brew}
 
-- [https://github.com/caskroom/homebrew-cask](https://github.com/caskroom/homebrew-cask)
-- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex.rb)
-- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex-no-gui.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/m/mactex-no-gui.rb)
-- [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/b/basictex.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/b/basictex.rb)
+- [https://formulae.brew.sh/cask/mactex](https://formulae.brew.sh/cask/mactex)
+- [https://formulae.brew.sh/cask/mactex-no-gui](https://formulae.brew.sh/cask/mactex-no-gui)
+- [https://formulae.brew.sh/cask/basictex](https://formulae.brew.sh/cask/basictex)
 
 TeX Live をフルインストールする場合は MacTeX をインストールしてください。
-Homebrew で MacTeX をインストールできます。
+Homebrew Cask で MacTeX をインストールできます。
 Ghostscript などのツールも Homebrew でインストールできます。
 
 GUI-Applications ありの場合
@@ -186,7 +185,7 @@ $ sudo tlmgr paper a4
 ```
 
 TeX Live をフルインストールしたくない場合は BasicTeX をインストールしてください。
-Homebrew で BasicTeX をインストールできます。
+Homebrew Cask で BasicTeX をインストールできます。
 
 ```
 $ brew install --cask basictex
@@ -205,10 +204,10 @@ $ sudo tlmgr install collection-langjapanese
 - [TeXLivePackages – MacPorts](https://trac.macports.org/wiki/TeXLivePackages)
 - [https://ports.macports.org/search/?installed_file=&q=texlive&name=on](https://ports.macports.org/search/?installed_file=&q=texlive&name=on)
 - [https://github.com/macports/macports-ports/tree/master/tex](https://github.com/macports/macports-ports/tree/master/tex)
-    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-lang-japanese/Portfile)
-    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-luatex/Portfile)
-    - [https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive-xetex/Portfile)
-    - [https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile](https://github.com/macports/macports-ports/blob/master/tex/texlive/Portfile)
+- [https://ports.macports.org/port/texlive-lang-japanese/](https://ports.macports.org/port/texlive-lang-japanese/)
+- [https://ports.macports.org/port/texlive-luatex/](https://ports.macports.org/port/texlive-luatex/)
+- [https://ports.macports.org/port/texlive-xetex/](https://ports.macports.org/port/texlive-xetex/)
+- [https://ports.macports.org/port/texlive/](https://ports.macports.org/port/texlive/)
 
 MacPorts 用に TeX Live/MacPorts というパッケージが提供されています。
 TeX Live/MacPorts をフルインストールする場合は
