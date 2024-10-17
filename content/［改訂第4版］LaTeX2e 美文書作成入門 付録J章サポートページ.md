@@ -7,7 +7,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 # ［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポートページ
 
-[奥村晴彦](https://okumuralab.org/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](http://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](http://gihyo.jp/)，2007年1月，[ISBN 978-4-7741-2984-6](http://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
+[奥村晴彦](https://okumuralab.org/~okumura/)著『[［改訂第4版］ LaTeX2e 美文書作成入門](https://gihyo.jp/book/2007/4-7741-2984-4)』（[技術評論社](https://gihyo.jp/)，2006年12月12日，[ISBN 978-4-7741-2984-6](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-2984-6)）のうち，「付録J章」のサポートページになります。
 
 本章のサポート責任は[稲垣徹](https://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)，[安田功](http://yasuda.homeip.net/)，[栗山雅俊](http://researchmap.jp/read0065375/)にあります。
 内容の誤り，ご不明な点（記述がわかりづらいなど），ご要望等ありましたら下記コメント欄にお願いいたします。
@@ -41,11 +41,11 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 369 中段 LH フォントのインストール—現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで展開します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
-- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」— [ptetex3](http://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
+- p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」— [ptetex3](https://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 
 - p. 370 language.dat 場所は $TEXMF/tex/generic/config/ にあります。オリジナルは書き替えずに $TEXMFLOCAL// (&asymp; texmf-local//) ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下にコピーして使った方がよいと思います。
 
-- p. 371 「fmtutil --byfmt platex」— ptetex3-20070508 で platex-euc, platex-sjis は廃止されました。20070508版より前の [ptetex3](http://tutimura.ath.cx/ptetex/) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します。
+- p. 371 「fmtutil --byfmt platex」— ptetex3-20070508 で platex-euc, platex-sjis は廃止されました。20070508版より前の [ptetex3](https://tutimura.ath.cx/ptetex/) では “--byfmt platex-euc” （または “--byfmt platex-sjis”）と指定します。
 
 - p. 372 「updmap コマンド」— map ファイルの置き場所は $TEXMF/fonts/map/dvips// 以下です。dvipdfm(x) は pfb を優先的に探します。その際 tfm 名と pfb 名が一致する場合は，マップファイルが無くてもかまいません。名称が異なる場合は tfm と pfb の対応を記述した map ファイルが必要です。一方，dvips(k) は常に map ファイルを必要とします。map ファイルが添付されていない場合は，pfb ファイルをエディタで開き，1行目に書かれている「フォント名」（大文字・小文字を区別します）を map ファイルに記述します。なお updmap の詳しい使い方は付録 D.5 節（p. 315 以下）にあります。（稲垣）
 
@@ -53,23 +53,23 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 372 「T1 フォントエンコーディング」—本文 12.2 節（p. 188 以下）にも詳しく記述されていますので参照ください。
 
-- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧ください。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 —試案— を[ここ \[Internet Archive\]](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
+- p. 373 EC フォントの Type 1 フォントには cm-super と Latin Modern があります。cm-super については上記 p. 357 errata もご覧ください。Latin Modern (“\usepackage{lmodern}”) を指定すると，ギリシア文字やキリル文字 Type 1 フォントの一部が埋め込まれず，Type 3 が埋め込まれてしまう現象が出ています。指定の仕方も含め現在調査中です。（対応策 —試案— を[ここ \[Wayback Machine\]](https://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html#latinmodern)に置きました。稲垣）
 
 - p. 374 「ギリシア語……は……直接入力を行うことは出来ません」—上記 p. 365 註28 errata を参照ください。
 
 - p. 377 註62 図 J.4 がありませんが，横の「CJK 字体」図のことです。
 
-- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを「[日本語 LaTeX による多言語処理 &mdash; CTAN directory \[Internet Archive\]](http://web.archive.org/web/20130522162657/http://www2.tba.t-com.ne.jp/ing/ctan/ctanindex.html)」に掲載しました。（稲垣）
+- p. 379 J.6 節で取り上げた言語・文字を含む各種パッケージのインストール方法，入出力例，使用上のヒントなどを「[日本語 LaTeX による多言語処理 &mdash; 世界の言語と文字 / CTAN Directory \[Wayback Machine\]](https://web.archive.org/web/20141028102725/http://www2.tba.t-com.ne.jp:80/ing/ctan/ctanindex.html)」に掲載しました。（稲垣）
 
 - p. 382 上から8行目 “\end{bebtext}” → “\end{hebtext}”（稲垣）
 
-- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
+- p. 385 「mongolian」（モンゴル語）— \begin{LRtatepar}{6cm} ... \end{LRtatepar} の指定を使うには東京都市大学・井上先生作成の[LRtate.sty](https://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) が必要です。p. 388 にも URI が挙げてあります。
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
 - p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」— ZR さんが「GT書体フォント」を pLaTeX, upLaTeX で使用するためのパッケージ [PXgtfont パッケージ](http://zrbabbler.sp.land.to/pxgtfont.html), XeLaTeX で使用するためのパッケージ [ZXgtfont パッケージ](http://zrbabbler.sp.land.to/zxgtfont.html) を公開されています。
 
-- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法 \[Internet Archive\]](https://web.archive.org/web/20150301230150/http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
+- p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法 \[Wayback Machine\]](https://web.archive.org/web/20150301230150/http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
 
 ## コメント {#l1a73338}
 
