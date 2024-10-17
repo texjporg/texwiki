@@ -58,7 +58,7 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
     OS（[FreeBSD](https://www.freebsd.org/)
     など）
 
-- Windows 上で UNIX ライクな環境を提供する [Cygwin](https://www.cygwin.com/)
+- Windows 上で Linux ライクな環境を提供する [Cygwin](https://www.cygwin.com/)，[MSYS2](https://www.msys2.org/)
 - モバイルオペレーティングシステム（[Android](https://www.android.com/)，[iOS](https://www.apple.com/jp/ios/)，[iPadOS](https://www.apple.com/jp/ipados/) など）
 
 ### 日本語化された TeX, LaTeX {#xb5d1a9c}
