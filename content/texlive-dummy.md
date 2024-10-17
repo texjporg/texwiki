@@ -120,4 +120,4 @@ sudo yum install https://mirrors.ctan.org/support/texlive/texlive-dummy/Enterpri
 
 ### Gentoo Linux <a id="gentoolinux"></a> {#i10c1e71}
 
-- [GentooでTeXLiveを使う話](http://ryokubudoh.hatenadiary.com/entry/2015/12/09/171356)
+- [GentooでTeXLiveを使う話](https://ryokubudoh.hatenadiary.com/entry/2015/12/09/171356)
