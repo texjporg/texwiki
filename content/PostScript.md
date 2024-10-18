@@ -84,3 +84,4 @@ Adobe Acrobat Distiller は PostScript ファイルを PDF に変換するため
 - [ページ記述言語 ポストスクリプトマニュアル](https://www1.doshisha.ac.jp/~jmizushi/ps.html)（同志社大学 水島研究室）
 - [PostScript Programing 入門](http://apollon.issp.u-tokyo.ac.jp/~watanabe/ps/)
 - [EPSグラフィック直書き入門](http://yubais.net/doc/eps/)
+- [Postscript プログラミングメモ](https://konamih.sakura.ne.jp/Documents/ps/psmemo.html)
