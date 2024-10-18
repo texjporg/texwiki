@@ -26,38 +26,37 @@ TeX や LaTeX に関する本の紹介です．
 - [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
     <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
     - [thortex (thortex) / Repositories · GitHub](https://github.com/thortex)
-    - 『[好き好き LaTeX2e 初級編(PDF)](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』
-        - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
-            として出版もされています。
-            <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
-            <!-- は少し違う形態で頒布されているので，線引きは曖昧ですね． -->
-            <!--  -->
-            <!-- 出版されたことでオンラインでの配布が中止されるなら，この項目は削除 -->
-            <!-- する必要があるかもしれませんが，引き続きオンラインで配布されるなら -->
-            <!-- 残しておいても良いと思います。 - - トニイ 2006/06/28 -->
-            <!--  -->
-            <!-- GNU FDL のライセンスが適用された文書は永続的にそのライセンスを継承 -->
-            <!-- します。たとえ紙媒体で出版されたとしても、'free'であることにかわり -->
-            <!-- ありません．そもそも私の目的は LaTeX のマニュアルを出版する事 -->
-            <!-- ではなく、永続的に free な LaTeX マニュアルを媒体に依存せずに， -->
-            <!-- 後世に残す事なのです。 by Th\'or &new{2006/06/28}; -->
-            <!--  -->
-            <!-- オンライン + 商業出版というのは既存の枠組みではあまり収まらない -->
-            <!-- ようですね，忘れていました ^^; by Th\'or &new{2006/06/29}; -->
-            <!--  -->
-            <!-- 「併存することが可能なのだろうか」と感じました。出版社としては販売を -->
-            <!-- 脅かす要素があれば事前に排除したいと考えることは当然だと思います。 -->
-            <!-- - - トニイ 2006/06/29 -->
-            <!--  -->
-            <!-- トニイさんの仰る通りです．僕は議論が好きではないので，実験的要素を -->
-            <!-- 含んでいるとしても，まずは行動を起こしただけです．オライリーの -->
-            <!-- Open Book Project (http://www.oreilly.com/openbook/) とかもまだある -->
-            <!-- 事を考えれば，やり方次第ではうまく行くのではないでしょうか． -->
-            <!--  -->
-            <!-- ご出版おめでとうございます。さっそく購入しました。こういう形態の本を出してくれる出版社が増えることを願っています。- - 奥村 -->
-    - 『[好き好き LaTeX2e 中級編](https://github.com/thortex/jlatex-man-lll-kimi/blob/master/kimi.pdf)』
-    - 『[好き好き LaTeX2e ハンドブック編](https://github.com/thortex/jlatex-man-lll-jhb/blob/master/jhb.pdf)』
-    - 『[LaTeX による論文作成の手引き](https://github.com/thortex/jlatex-man-ronbun/blob/master/ronhyper.pdf)』
+    - 『[好き好き LaTeX2ε 初級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』(PDF)
+        <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
+        <!-- は少し違う形態で頒布されているので，線引きは曖昧ですね． -->
+        <!--  -->
+        <!-- 出版されたことでオンラインでの配布が中止されるなら，この項目は削除 -->
+        <!-- する必要があるかもしれませんが，引き続きオンラインで配布されるなら -->
+        <!-- 残しておいても良いと思います。 - - トニイ 2006/06/28 -->
+        <!--  -->
+        <!-- GNU FDL のライセンスが適用された文書は永続的にそのライセンスを継承 -->
+        <!-- します。たとえ紙媒体で出版されたとしても、'free'であることにかわり -->
+        <!-- ありません．そもそも私の目的は LaTeX のマニュアルを出版する事 -->
+        <!-- ではなく、永続的に free な LaTeX マニュアルを媒体に依存せずに， -->
+        <!-- 後世に残す事なのです。 by Th\'or &new{2006/06/28}; -->
+        <!--  -->
+        <!-- オンライン + 商業出版というのは既存の枠組みではあまり収まらない -->
+        <!-- ようですね，忘れていました ^^; by Th\'or &new{2006/06/29}; -->
+        <!--  -->
+        <!-- 「併存することが可能なのだろうか」と感じました。出版社としては販売を -->
+        <!-- 脅かす要素があれば事前に排除したいと考えることは当然だと思います。 -->
+        <!-- - - トニイ 2006/06/29 -->
+        <!--  -->
+        <!-- トニイさんの仰る通りです．僕は議論が好きではないので，実験的要素を -->
+        <!-- 含んでいるとしても，まずは行動を起こしただけです．オライリーの -->
+        <!-- Open Book Project (http://www.oreilly.com/openbook/) とかもまだある -->
+        <!-- 事を考えれば，やり方次第ではうまく行くのではないでしょうか． -->
+        <!--  -->
+        <!-- ご出版おめでとうございます。さっそく購入しました。こういう形態の本を出してくれる出版社が増えることを願っています。- - 奥村 -->
+    - 『[好き好き LaTeX2ε 中級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-kimi/refs/heads/master/kimi.pdf)』(PDF)
+    - 『[好き好き LaTeX2ε ハンドブック編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jhb/refs/heads/master/jhb.pdf)』(PDF)
+    - 『[好き好き LATEX 2ε マクロ活用編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-mcr/refs/heads/master/mcrhyper.pdf)』(PDF)
+    - 『[LaTeX による論文作成の手引き](https://raw.githubusercontent.com/thortex/jlatex-man-ronbun/refs/heads/master/ronhyper.pdf)』(PDF)
 
 - [阿部 紀行さん](https://www.ms.u-tokyo.ac.jp/~abenori/)
     [TeXの話](https://www.ms.u-tokyo.ac.jp/~abenori/tex/)
@@ -179,6 +178,8 @@ TeX や LaTeX に関する本の紹介です．
 - [渡辺 徹](https://github.com/thortex)
     『[好き好き LaTeX2ε 初級編 第 1.14 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』(PDF)
     （2016年07月23日）
+    - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
+        として出版もされています。
 
 - 小林 雅人
     『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
