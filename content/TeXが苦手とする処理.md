@@ -25,11 +25,11 @@ pukiwiki: "TeXが苦手とする処理"
 
 現在入手可能なもののうち，和文テキストを取り扱うことを念頭に置いたもので，かつ比較的完成度の高いものを挙げます。 <!-- （特定のコミュニティのメンバーでなくとも） --> <!-- おそらく@niftyを指していると思いますが，TeXに関するフォーラムは無くなったので --> <!-- 言及しなくとも良いでしょう。 - - tony 2006/11/06 --> <!-- // いまどきはむしろ mixi のようなところが問題になるのでは？ --> <!-- mixi には今のところ @nifty にあったようなライブラリのような機能はありませんし， --> <!-- サイトの成り立ちを考えると今後も設置されるとは思えないです。- - tony 2006/11/06 -->
 
-- [jumoline パッケージ](http://www.para.media.kyoto-u.ac.jp/latex/)：中島 浩氏。下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
+- jumoline パッケージ（リンク切れ → [Wayback Machine](https://web.archive.org/web/20220614152416/http://www.para.media.kyoto-u.ac.jp/latex/)）：中島 浩氏（[2021年10月06日没](https://www.ipsj.or.jp/award/nakashima_hiroshi.html)）。下線 (\\<strong>U</strong>nderline)，打ち消し線 (\\<strong>M</strong>idline)，上線 (\\<strong>O</strong>verline) を提供
 - [udline パッケージ](http://minamo.my.coocan.jp/tex/udline.html)：みなも氏。実線・破線・点線・波線などによる下線・打ち消し線・上線を提供
-- uline-- パッケージ（リンク切れ → [Wayback Machine](http://web.archive.org/web/20170720074429/http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)）：吉永徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
-    - LuaTeX(-ja) には非対応（禁則処理に不具合が生じるといった問題あり）．LuaTeX ユーザは Lua-UL パッケージの利用を検討するとよいかもしれない．
-- [breakfbox パッケージ](http://doratex.hatenablog.jp/entry/20171219/1513609345)：doraTeX氏。同梱されたuline--.sty パーケージをベースに，行分割可能な四角囲み（\fboxと同等）を提供
+- uline-- パッケージ（リンク切れ → [Wayback Machine](http://web.archive.org/web/20170720074429/http://www.h4.dion.ne.jp/~latexcat/macros/macro-index.html)）：吉永 徹美氏。実線・波線による下線・打ち消し線・上線を提供（縦組み対応）
+    - LuaTeX(-ja) には非対応（禁則処理に不具合が生じるといった問題あり）．LuaTeX ユーザは [Lua-UL パッケージ](https://ctan.org/pkg/lua-ul)の利用を検討するとよいかもしれない．
+- [breakfbox パッケージ](http://doratex.hatenablog.jp/entry/20171219/1513609345)：寺田 侑祐氏（doraTeX）。同梱されたuline--.sty パーケージをベースに，行分割可能な四角囲み（\fboxと同等）を提供
 
 なお，欧文のみでよければ，[ulem パッケージ](https://ctan.org/pkg/ulem)が下線・二重下線・打ち消し線・波線などを提供しています。
 
