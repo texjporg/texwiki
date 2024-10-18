@@ -109,6 +109,7 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
 - [LuaLaTeX Lab](https://lualatexlab.blog.fc2.com/)
+- [p/upLaTeX から LuaLaTeX へ移行すべき理由と方法](https://www.metaphysica.info/2022/outdated-uplatex/)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
@@ -125,9 +126,9 @@ GPLv3, GPLv2
 
 #### ChangeLog <a id="changelog"></a> {#h5bae295}
 
-- [https://serveur-svn.lri.fr/svn/modhel/luatex/](https://serveur-svn.lri.fr/svn/modhel/luatex/)
-- [https://github.com/tex-mirror/luatex](https://github.com/tex-mirror/luatex)
-    - [https://github.com/tex-mirror/luatex/commits/trunk](https://github.com/tex-mirror/luatex/commits/trunk)
+<!-- -https://serveur-svn.lri.fr/svn/modhel/luatex/ -->
+<!-- -https://github.com/tex-mirror/luatex -->
+<!-- - -https://github.com/tex-mirror/luatex/commits/trunk -->
 - \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
     - [log](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
