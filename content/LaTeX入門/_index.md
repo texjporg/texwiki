@@ -86,6 +86,47 @@ LaTeX 2ε を “LaTeX2e” と書くことになっています。
 以下では LaTeX 2ε, pLaTeX 2ε をそれぞれ
 “LaTeX2e”, “pLaTeX2e” と書きます。
 
+<strong> <em>注意</em> </strong>：
+
+LaTeX には大きく分けて LaTeX2e と LaTeX 2.09 という二つの異なるバージョンがあります。
+<strong>LaTeX2e と LaTeX 2.09 は別物</strong>と考えて良いくらい異なるものですので，注意してください。
+
+文書ソースを \documentclass で始めるのが
+LaTeX2e，\documentstyle で始めるのが LaTeX 2.09 です。
+LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると以下のように自動的に
+LaTeX 2.09 の互換モードで処理されるので，エラーなどが出ないことも多くあります。
+
+&#160;         Entering LaTeX 2.09 COMPATIBILITY MODE<br>
+&#160;\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*<br>
+&#160;   !!WARNING!!    !!WARNING!!    !!WARNING!!    !!WARNING!!<br>
+
+<br>
+
+&#160;This mode attempts to provide an emulation of the LaTeX 2.09<br>
+&#160;author environment so that OLD documents can be successfully<br>
+&#160;processed. It should NOT be used for NEW documents!<br>
+
+<br>
+
+&#160;New documents should use Standard LaTeX conventions and start<br>
+&#160;with the \documentclass command.<br>
+
+<br>
+
+&#160;Compatibility mode is UNLIKELY TO WORK with LaTeX 2.09 style<br>
+&#160;files that change any internal macros, especially not with<br>
+&#160;those that change the FONT SELECTION or OUTPUT ROUTINES.<br>
+
+<br>
+
+&#160;Therefore such style files MUST BE UPDATED to use<br>
+&#160;         Current Standard LaTeX: LaTeX2e.<br>
+&#160;If you suspect that you may be using such a style file, which<br>
+&#160;is probably very, very old by now, then you should attempt to<br>
+&#160;get it updated by sending a copy of this error message to the<br>
+&#160;author of that file.<br>
+&#160;\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*<br>
+
 ## LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書 {#l062c239}
 
 LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書として次の本を挙げておきます。
@@ -97,16 +138,6 @@ LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書として次の本を挙げてお�
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
 
 これ以外にも多くの[良書](</TeXの本/>)が出ています。書店でお選びください。
-
-<strong> <em>注意</em> </strong>：
-
-LaTeX には大きく分けて LaTeX2e と LaTeX 2.09 という二つの異なるバージョンがあります。
-<strong>LaTeX2e と LaTeX 2.09 は別物</strong>と考えて良いくらい異なるものですので，注意してください。
-
-文書ソースを \documentclass で始めるのが
-LaTeX2e，\documentstyle で始めるのが LaTeX 2.09 です。
-LaTeX 2.09 用の古い原稿を LaTeX2e で処理すると自動的に
-LaTeX 2.09 の互換モードで処理されるので，エラーなどが出ないことも多くあります。
 
 ## LaTeX を使うためには {#i326adb5}
 
