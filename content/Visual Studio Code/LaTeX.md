@@ -38,6 +38,7 @@ LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する e
     - [https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md](https://github.com/James-Yu/LaTeX-Workshop/blob/master/CHANGELOG.md)
 - 公式マニュアル
     - [https://github.com/James-Yu/LaTeX-Workshop/wiki](https://github.com/James-Yu/LaTeX-Workshop/wiki)
+- [LaTeX Workshop を使いこなす](https://qiita.com/Yarakashi_Kikohshi/items/a9357dd469320ffb65a0)
 - [MyTeXpert:Visual Studio Code/LaTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code%2FLaTeX)
 - [vs code で latex](https://kandai.hatenadiary.jp/entry/2019/02/21/091432)
 - [VSCode で LaTeX を書く (2018)](https://qiita.com/popunbom/items/7d02fc75ad23b735d28c)
@@ -442,7 +443,7 @@ settings.json の {} の中に以下の設定を追加・保存します。&lt;�
 "%TEX%",
 "%LINE%",
 "-inverse-search",
-"\"C:\\Users\\<ユーザー名>\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd\" -r -g \"%f:%l\""
+"\"C:\\Users\\<ユーザー名>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\""
 ]
 ```
 
@@ -466,7 +467,7 @@ settings.json の {} の中に以下の設定を追加・保存します。&lt;�
 SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の「逆順検索コマンドラインの設定」に以下の設定をします。&lt;ユーザー名>の部分は自分のユーザー名に置き換えてください。
 
 ```
-"C:\Users\<ユーザー名>\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd" -r -g "%f:%l"
+"C:\Users\<ユーザー名>\AppData\Local\Programs\Microsoft VS Code\Code.exe" "C:\Users\<ユーザー名>\AppData\Local\Programs\Microsoft VS Code\resources\app\out\cli.js" --ms-enable-electron-run-as-node -r -g "%f:%l"
 ```
 
 ### 便利な設定 {#o2d1e90d}
