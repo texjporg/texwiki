@@ -106,7 +106,6 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [How to get \copyright when mixing T1 fonts and fontspec?](http://tex.stackexchange.com/questions/29895/how-to-get-copyright-when-mixing-t1-fonts-and-fontspec)
 - [Automatically downloading images to be included](https://groups.google.com/forum/?fromgroups=#!topic/comp.text.tex/_c_kcgQTfaw)
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html), [qa:56952](https://okumuralab.org/~okumura/texfaq/qa/56952.html), [qa:56955](https://okumuralab.org/~okumura/texfaq/qa/56955.html))
-- [最近的LuaTeX变动](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74466)
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
 - [LuaLaTeX Lab](https://lualatexlab.blog.fc2.com/)
 - [p/upLaTeX から LuaLaTeX へ移行すべき理由と方法](https://www.metaphysica.info/2022/outdated-uplatex/)
