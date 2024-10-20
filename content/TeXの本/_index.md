@@ -23,57 +23,53 @@ TeX や LaTeX に関する本の紹介です．
 - ウィキブックス (Wikibooks) &mdash;
     [TeX/LaTeX 入門](https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
-- [渡辺 徹さん](http://typeface.blog116.fc2.com/) ([Watanabe Thor さん](https://github.com/thortex))
-    <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
-    - [thortex (thortex) / Repositories · GitHub](https://github.com/thortex)
-    - 『[好き好き LaTeX2ε 初級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』(PDF)
-        <!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
-        <!-- は少し違う形態で頒布されているので，線引きは曖昧ですね． -->
-        <!--  -->
-        <!-- 出版されたことでオンラインでの配布が中止されるなら，この項目は削除 -->
-        <!-- する必要があるかもしれませんが，引き続きオンラインで配布されるなら -->
-        <!-- 残しておいても良いと思います。 - - トニイ 2006/06/28 -->
-        <!--  -->
-        <!-- GNU FDL のライセンスが適用された文書は永続的にそのライセンスを継承 -->
-        <!-- します。たとえ紙媒体で出版されたとしても、'free'であることにかわり -->
-        <!-- ありません．そもそも私の目的は LaTeX のマニュアルを出版する事 -->
-        <!-- ではなく、永続的に free な LaTeX マニュアルを媒体に依存せずに， -->
-        <!-- 後世に残す事なのです。 by Th\'or &new{2006/06/28}; -->
-        <!--  -->
-        <!-- オンライン + 商業出版というのは既存の枠組みではあまり収まらない -->
-        <!-- ようですね，忘れていました ^^; by Th\'or &new{2006/06/29}; -->
-        <!--  -->
-        <!-- 「併存することが可能なのだろうか」と感じました。出版社としては販売を -->
-        <!-- 脅かす要素があれば事前に排除したいと考えることは当然だと思います。 -->
-        <!-- - - トニイ 2006/06/29 -->
-        <!--  -->
-        <!-- トニイさんの仰る通りです．僕は議論が好きではないので，実験的要素を -->
-        <!-- 含んでいるとしても，まずは行動を起こしただけです．オライリーの -->
-        <!-- Open Book Project (http://www.oreilly.com/openbook/) とかもまだある -->
-        <!-- 事を考えれば，やり方次第ではうまく行くのではないでしょうか． -->
-        <!--  -->
-        <!-- ご出版おめでとうございます。さっそく購入しました。こういう形態の本を出してくれる出版社が増えることを願っています。- - 奥村 -->
-    - 『[好き好き LaTeX2ε 中級編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-kimi/refs/heads/master/kimi.pdf)』(PDF)
-    - 『[好き好き LaTeX2ε ハンドブック編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jhb/refs/heads/master/jhb.pdf)』(PDF)
-    - 『[好き好き LATEX 2ε マクロ活用編](https://raw.githubusercontent.com/thortex/jlatex-man-lll-mcr/refs/heads/master/mcrhyper.pdf)』(PDF)
-    - 『[LaTeX による論文作成の手引き](https://raw.githubusercontent.com/thortex/jlatex-man-ronbun/refs/heads/master/ronhyper.pdf)』(PDF)
+<!-- -[[渡辺 徹さん:http://typeface.blog116.fc2.com/]] ([[Watanabe Thor さん:https://github.com/thortex]]) -->
+<!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
+<!-- - -[[thortex (thortex) / Repositories · GitHub:https://github.com/thortex]] -->
+<!-- - -『[[好き好き LaTeX2ε 初級編:https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf]]』(PDF) -->
+<!-- 出版されたとなると，すでにオンライン本ではありませんよね．既存の書籍と -->
+<!-- は少し違う形態で頒布されているので，線引きは曖昧ですね． -->
+<!--  -->
+<!-- 出版されたことでオンラインでの配布が中止されるなら，この項目は削除 -->
+<!-- する必要があるかもしれませんが，引き続きオンラインで配布されるなら -->
+<!-- 残しておいても良いと思います。 - - トニイ 2006/06/28 -->
+<!--  -->
+<!-- GNU FDL のライセンスが適用された文書は永続的にそのライセンスを継承 -->
+<!-- します。たとえ紙媒体で出版されたとしても、'free'であることにかわり -->
+<!-- ありません．そもそも私の目的は LaTeX のマニュアルを出版する事 -->
+<!-- ではなく、永続的に free な LaTeX マニュアルを媒体に依存せずに， -->
+<!-- 後世に残す事なのです。 by Th\'or &new{2006/06/28}; -->
+<!--  -->
+<!-- オンライン + 商業出版というのは既存の枠組みではあまり収まらない -->
+<!-- ようですね，忘れていました ^^; by Th\'or &new{2006/06/29}; -->
+<!--  -->
+<!-- 「併存することが可能なのだろうか」と感じました。出版社としては販売を -->
+<!-- 脅かす要素があれば事前に排除したいと考えることは当然だと思います。 -->
+<!-- - - トニイ 2006/06/29 -->
+<!--  -->
+<!-- トニイさんの仰る通りです．僕は議論が好きではないので，実験的要素を -->
+<!-- 含んでいるとしても，まずは行動を起こしただけです．オライリーの -->
+<!-- Open Book Project (http://www.oreilly.com/openbook/) とかもまだある -->
+<!-- 事を考えれば，やり方次第ではうまく行くのではないでしょうか． -->
+<!--  -->
+<!-- ご出版おめでとうございます。さっそく購入しました。こういう形態の本を出してくれる出版社が増えることを願っています。- - 奥村 -->
 
 - [阿部 紀行さん](https://www.ms.u-tokyo.ac.jp/~abenori/)
     [TeXの話](https://www.ms.u-tokyo.ac.jp/~abenori/tex/)
 
-- [藤田 眞作さん](http://xymtex.com/)
-    [「LaTeX2εまくろの八衢」オンライン版(PDF)](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)
+<!-- -[[藤田 眞作さん:http://xymtex.com/]] -->
+<!-- [[「LaTeX2εまくろの八衢」オンライン版(PDF):http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf]] -->
 
 - [isariさん](https://hakuoku.hatenablog.com/)
     [あがきながら覚えるTeX](https://hakuoku.github.io/agakuTeX/)
 
-- [数学・物理学専門のインターネット家庭教師さん](http://phys.co-suite.jp/)
-    [LaTeX Tips &lt;TikZへの入門>](http://phys.co-suite.jp/textips.html) (PDF)
+<!-- -[[数学・物理学専門のインターネット家庭教師さん:http://phys.co-suite.jp/]] -->
+<!-- [[LaTeX Tips <TikZへの入門>:http://phys.co-suite.jp/textips.html]] (PDF) -->
 
-- [alg-dさん](https://alg-d.com/)
-    [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF)
+<!-- -[[alg-dさん:https://alg-d.com/]] -->
+<!-- [[TikZ の使い方:https://alg-d.com/math/tikz.pdf]] (PDF) -->
 
-### 書籍 {#z5fa285b}
+### 書籍（紙版、電子版(PDF版)） {#z5fa285b}
 
 - [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html)
 - [本棚.org ](https://hondana.org/TeX/)
@@ -221,6 +217,10 @@ TeX や LaTeX に関する本の紹介です．
     （2008年05月20日）
     - [Wynter Snow, TeX for the Beginner (Addison Wesley, 1992)](https://www.amazon.co.jp/-/en/Wynter-Snow/dp/0201547996) の私家版抄訳
     - ちょっとだけ訳したものを置かせてください ([forum:64](https://okumuralab.org/tex/mod/forum/discuss.php?d=64))
+- [渡辺 徹](https://github.com/thortex)
+    『[好き好き LaTeX2ε ハンドブック編 第 0.0.5 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jhb/refs/heads/master/jhb.pdf)』(PDF)
+    （2008年05月05日）
+
 - 吉永 徹美『[独習LaTeX2ε](https://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](https://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
@@ -238,6 +238,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2007年 {#year2007}
 
+- [渡辺 徹](https://github.com/thortex)
+    『[好き好き LaTeX2ε 中級編 第 0.0.2 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-kimi/refs/heads/master/kimi.pdf)』(PDF)
+    （2007年06月30日）
+
 - [TeXの本/絶版](</TeXの本/絶版/#year2007>)
 
 #### 2006年 {#year2006}
@@ -247,6 +251,18 @@ TeX や LaTeX に関する本の紹介です．
     （[サイエンス社](https://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
     - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html) (2013年08月10日)(Wayback Machine)
     - [「一歩踏み込む LaTeXの基本」サポートページ](https://warp.da.ndl.go.jp/info:ndljp/pid/1233783/www.ms.u-tokyo.ac.jp/~abenori/book/tex.html) (2010年11月06日)(WARP)
+- [渡辺 徹](https://github.com/thortex)
+    『[好き好き LaTeX2ε 周辺ツール編 第 0.1 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-tls/refs/heads/master/tls.pdf)』(PDF)
+    （2006年11月30日）
+
+- [渡辺 徹](https://github.com/thortex)
+    『[LaTeX による論文作成の手引き 2006 年度版 改訂 第 3 版](https://raw.githubusercontent.com/thortex/jlatex-man-ronbun/refs/heads/master/ronhyper.pdf)』(PDF)
+    （2006年03月）
+
+- [渡辺 徹](https://github.com/thortex)
+    『[好き好き LaTeX2ε マクロ活用編 第 0.2 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-mcr/refs/heads/master/mcrhyper.pdf)』(PDF)
+    （2006年02月27日）
+
 - [TeXの本/絶版](</TeXの本/絶版/#year2006>)
 
 #### 2005年 {#year2005}
@@ -254,6 +270,10 @@ TeX や LaTeX に関する本の紹介です．
 - [TeXの本/絶版](</TeXの本/絶版/#year2005>)
 
 #### 2004年 {#year2004}
+
+- [藤田 眞作](http://xymtex.com/)
+    『[LaTeX2εまくろの八衢 オンライン版 第 1 版](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)』(PDF)
+    （2004年07月30日）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2004>)
 
