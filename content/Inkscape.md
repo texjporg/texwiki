@@ -77,40 +77,60 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 >
 >  PDF バージョン制限 <ins> PDF 1.5               \[ <strong>ᐯ</strong> \]</ins><br>
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換する<br>
+>             ◯ テキストをパスに変換<br>
 >             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
->  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
->             ◯ エクスポートオブジェクトのサイズを使用<br>
->  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
->  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
+>  丸め補正：　　　　🔘 丸目を補正（推奨）<br>
+>             ◯ 補正しない<br>
+>
+> <br>
+>
+>  「エクスポート」ダイアログからエクスポートする場合、エクスポートするオブジェクト<br>
+>  を選択できます。「コピーを保存」/「名前を付けて保存」を選択すると、すべて<br>
+>  のページがエクスポートされます。<br>
+>
+> <br>
+>
+>  ページブリードはページツールで設定可能です。<br>
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換する<br>
->             🔘 EPS のテキストを除外して LaTeX ファイルを生成<br>
+>             ◯ テキストをパスに変換<br>
+>             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
->  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
->             ◯ エクスポートオブジェクトのサイズを使用<br>
->  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
->  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
+>
+> <br>
+>
+>  「エクスポート」ダイアログからエクスポートする場合、エクスポートするオブジェクト<br>
+>  を選択できます。「コピーを保存」/「名前を付けて保存」を選択すると、すべて<br>
+>  のページがエクスポートされます。<br>
+>
+> <br>
+>
+>  ページブリードはページツールで設定可能です。<br>
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
 >  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換する<br>
->             🔘 PS のテキストを除外して LaTeX ファイルを生成<br>
+>             ◯ テキストをパスに変換<br>
+>             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
 >  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
->  出力ページサイズ：　　　　🔘 ドキュメントのページサイズを使用<br>
->             ◯ エクスポートオブジェクトのサイズを使用<br>
->  裁ち落し/マージン (mm)： 　　　　　　　　　　　　　　　  　<ins>0.0　　　　\[<strong>⇕</strong>\]</ins><br>
->  オブジェクトのエクスポートを ID で制限する： <ins>　　　　　　　　　　　　　　　</ins><br>
+>
+> <br>
+>
+>  「エクスポート」ダイアログからエクスポートする場合、エクスポートするオブジェクト<br>
+>  を選択できます。「コピーを保存」/「名前を付けて保存」を選択すると、すべて<br>
+>  のページがエクスポートされます。<br>
+>
+> <br>
+>
+>  ページブリードはページツールで設定可能です。<br>
 
 コマンドラインから PDF, EPS, PS のテキストを除外して LaTeX ファイルを出力することも可能です．
 
@@ -200,7 +220,7 @@ Inkscape 等で作成した SVG ファイルを TikZ のコードに変換する
 
 ### [JessyInk](https://launchpad.net/jessyink) {#k0206a78}
 
-- [Inkscapeでプレゼンテーション](http://d.hatena.ne.jp/yambi/20110405/1301974923)
+- [Inkscapeでプレゼンテーション](https://yambi.hatenablog.com/entry/20110405/1301974923)
 
 ## Inkscape で TeX 数式 {#f9da7d32}
 
