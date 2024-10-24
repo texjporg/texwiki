@@ -112,11 +112,11 @@ C-x C-f ~/
          (mtf (tex-main-file))
          (pf (concat (car (split-string mtf "\\.")) ".pdf"))
          (ln (format "%d" (line-number-at-pos)))
-         (cmd "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\"")
+         (cmd (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\""))
          (args (concat "-reuse-instance \"" pf "\" -forward-search \"" ctf "\" " ln)))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "sumatrapdf" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "sumatrapdf" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -131,8 +131,8 @@ C-x C-f ~/
          (cmd "fwdsumatrapdf")
          (args (concat "\"" pf "\" \"" ctf "\" " ln)))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "fwdsumatrapdf" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "fwdsumatrapdf" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -193,8 +193,8 @@ C-x C-f ~/
          (cmd "/Applications/Skim.app/Contents/SharedSupport/displayline")
          (args (concat ln " " pf " " ctf)))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "displayline" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "displayline" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -252,8 +252,8 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "fwdevince")
          (args (concat "\"" pf "\" " ln " \"" ctf "\"")))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "fwdevince" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "fwdevince" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -294,8 +294,8 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "okular")
          (args (concat "--unique \"file:" pf "#src:" ln " " ctf "\"")))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "okular" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "okular" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -310,8 +310,8 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "zathura")
          (args (concat "--synctex-forward " ln ":0:" ctf " " pf)))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "zathura" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "zathura" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -326,8 +326,8 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (cmd "qpdfview")
          (args (concat "--unique \"" pf "#src:" ctf ":" ln ":0\"")))
     (message (concat cmd " " args))
-    (process-query-on-exit-flag
-     (start-process-shell-command "qpdfview" nil cmd args))))
+    (set-process-query-on-exit-flag
+     (start-process-shell-command "qpdfview" nil (concat cmd " " args)) nil)))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
