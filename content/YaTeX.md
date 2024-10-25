@@ -180,8 +180,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq tex-command "lualatex -synctex=1")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
-(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
-(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq dvi2-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
+(setq tex-pdfview-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 (setq dviprint-command-format "powershell -Command \"& {$r = Write-Output %s;$p = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');Start-Process Acrobat -ArgumentList ($p)}\"")
 ```
 
@@ -648,7 +648,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 #### SumatraPDF {#d0c29303}
 
 ```
-(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq dvi2-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 ```
 
 #### TeXworks {#v93f2569}
@@ -742,7 +742,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 #### SumatraPDF {#i2f07080}
 
 ```
-(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq tex-pdfview-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 ```
 
 #### TeXworks {#y4efa0cf}
@@ -998,8 +998,8 @@ off の場合
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq dvi2-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
-(setq tex-pdfview-command "\"C:\\Program Files\\SumatraPDF\\SumatraPDF.exe\" -reuse-instance")
+(setq dvi2-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
+(setq tex-pdfview-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 ```
 
 を設定して C-c C-g を入力すれば SumatraPDF で forward seasrch ができます．
