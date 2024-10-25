@@ -116,7 +116,7 @@ C-x C-f ~/
          (args (concat "-reuse-instance \"" pf "\" -forward-search \"" ctf "\" " ln)))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "sumatrapdf" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "sumatrapdf" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -132,7 +132,7 @@ C-x C-f ~/
          (args (concat "\"" pf "\" \"" ctf "\" " ln)))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "fwdsumatrapdf" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "fwdsumatrapdf" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -194,7 +194,7 @@ C-x C-f ~/
          (args (concat ln " " pf " " ctf)))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "displayline" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "displayline" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -253,7 +253,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (args (concat "\"" pf "\" " ln " \"" ctf "\"")))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "fwdevince" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "fwdevince" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -295,7 +295,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (args (concat "--unique \"file:" pf "#src:" ln " " ctf "\"")))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "okular" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "okular" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -311,7 +311,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (args (concat "--synctex-forward " ln ":0:" ctf " " pf)))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "zathura" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "zathura" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
@@ -327,7 +327,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
          (args (concat "--unique \"" pf "#src:" ctf ":" ln ":0\"")))
     (message (concat cmd " " args))
     (set-process-query-on-exit-flag
-     (start-process-shell-command "qpdfview" nil (concat cmd " " args)) nil)))
+     (start-process-shell-command "qpdfview" nil (concat cmd " " args)) nil) t))
 
 (add-hook 'latex-mode-hook
           '(lambda ()
