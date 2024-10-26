@@ -15,7 +15,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 - [Adobe-Japan1-7 Published!](https://ccjktype.fonts.adobe.com/2019/04/aj17-published.html)
 - [QA: upTeX 1.24, upTeXの新元号対応](https://okumuralab.org/tex/mod/forum/discuss.php?d=2570)
 - [新元号対応, Adobe-Japan1-7 · Issue #13 · texjporg/japanese-otf-mirror · GitHub](https://github.com/texjporg/japanese-otf-mirror/issues/13)
-- [グループ:aj1-23058-23059 - GlyphWiki](http://glyphwiki.org/wiki/Group:aj1-23058-23059)
+- [グループ:aj1-23058-23059 - GlyphWiki](https://glyphwiki.org/wiki/Group:aj1-23058-23059)
 
 ### Adobe-Japan1-7 対応フォント {#ca406051}
 
@@ -55,10 +55,24 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 
 #### 商用 {#ke35352a}
 
-- [新元号への対応について - Microsoft mscorp](https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47) / [http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdflive](http://www.jiyu-kobo.co.jp/wp@test/wp-content/uploads/2020/09/compatibility_2009.pdflive)
+- [新元号への対応について - Microsoft mscorp](https://web.archive.org/web/20190304100515/https://www.microsoft.com/ja-jp/mscorp/newera/default.aspx) --&gt; [https://web.archive.org/web/20190406175933/https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47](https://web.archive.org/web/20190406175933/https://www.meti.go.jp/press/2018/02/20190207002/20190207002-5.pdf#page=47)
     - 游明朝 Regular/Light/Demibold
     - 游ゴシック Regular/Light/Medium/Bold
 - Adobe-Japan1-7非対応でもAdobe-Japan1-7のグリフは利用できます(ややこしい)。
     - [Windows10の游明朝はどこまでAdobe-Japan1-7をサポートするか?](https://okumuralab.org/tex/mod/forum/discuss.php?d=2953)
     - [Windows10の游フォントで\CIDしたい話](https://zrbabbler.hatenablog.com/entry/2020/10/10/235701)
         - [https://github.com/zr-tex8r/ttf-cmaps](https://github.com/zr-tex8r/ttf-cmaps) を利用するとTeXLive2021ではdvipdfmxでフォント埋め込みできます。
+
+### CID 番号参照用のサンプルへのリンク {#dc96cb5d}
+
+- [Font technical notes | font-tech-notes](https://adobe-type-tools.github.io/font-tech-notes/)
+- [Adobe Type Tools · GitHub](https://github.com/adobe-type-tools/)
+    - [GitHub - adobe-type-tools/Adobe-Japan1: The Adobe-Japan1-7 Character Collection](https://github.com/adobe-type-tools/Adobe-Japan1)
+        - [The Adobe-Japan1-7 Character Collection (PDF)](https://raw.githubusercontent.com/adobe-type-tools/Adobe-Japan1/refs/heads/master/Adobe-Japan1-7.pdf)
+    - [GitHub - adobe-type-tools/Adobe-GB1: The Adobe-GB1-6 Character Collection](https://github.com/adobe-type-tools/Adobe-GB1)
+        - [The Adobe-GB1-6 Character Collection (PDF)](https://raw.githubusercontent.com/adobe-type-tools/Adobe-GB1/refs/heads/master/Adobe-GB1-6.pdf)
+    - [GitHub - adobe-type-tools/Adobe-CNS1: The Adobe-CNS1-7 Character Collection](https://github.com/adobe-type-tools/Adobe-CNS1)
+        - [The Adobe-CNS1-7 Character Collection (PDF)](https://raw.githubusercontent.com/adobe-type-tools/Adobe-CNS1/refs/heads/master/Adobe-CNS1-7.pdf)
+    - [GitHub - adobe-type-tools/Adobe-KR: The Adobe-KR-9 Character Collection](https://github.com/adobe-type-tools/Adobe-KR)
+        - [The Adobe-KR-9 Character Collection (PDF)](https://raw.githubusercontent.com/adobe-type-tools/Adobe-KR/refs/heads/master/Adobe-KR-9.pdf)
+- [コラム：文字セット | Unity用ビジュアルノベルツール「宴」](https://madnesslabo.net/utage/?page_id=12925)
