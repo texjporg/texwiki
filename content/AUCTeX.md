@@ -180,11 +180,11 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "jlreq")
-(setq TeX-engine 'uptex)
-(setq TeX-PDF-from-DVI "Dvipdfmx")
-(setenv "Path" (concat "C:\\Program Files\\SumatraPDF;" (getenv "Path")))
-(setq exec-path (append exec-path '("C:\\Program Files\\SumatraPDF")))
-(setq TeX-view-program-selection '((output-pdf "SumatraPDF")))
+(setq TeX-engine 'luatex)
+(setq TeX-view-program-list '(("SumatraPDF"
+                               "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process \"C:/Users/$Env:USERNAME/AppData/Local/SumatraPDF/SumatraPDF.exe\" -ArgumentList ('-reuse-instance',\"$o\",'-forward-search',\"$b\",\"%n\")}\"")))
+(setq TeX-view-program-selection '((output-dvi "SumatraPDF")
+                                   (output-pdf "SumatraPDF")))
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
@@ -207,7 +207,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
-                                     "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process SumatraPDF -ArgumentList ('-reuse-instance',$o,'-forward-search',$b,%n)}\""
+                                     "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process \"C:/Users/$Env:USERNAME/AppData/Local/SumatraPDF/SumatraPDF.exe\" -ArgumentList ('-reuse-instance',\"$o\",'-forward-search',\"$b\",\"%n\")}\""
                                      TeX-run-discard-or-function t t :help "Forward search with SumatraPDF"))
                       (add-to-list 'TeX-command-list
                                    '("Fwdsumatrapdf"
@@ -231,12 +231,12 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
                                      TeX-run-discard-or-function t t :help "Run Google Chrome"))
                       (add-to-list 'TeX-command-list
                                    '("Edge"
-                                     "powershell -Command \"& {Get-Process -Name MicrosoftEdgeCP 2>$null;if($?){for($i=0;$i -lt 3;$i++){Stop-Process -Name MicrosoftEdgeCP;Start-Sleep -Seconds 1}};Start-Process shell:AppsFolder\\Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge (Get-Item \"\"\"%s.pdf\"\"\").FullName}\""
+                                     "powershell -Command \"& {$r = Write-Output %s.pdf;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFullPath($r),'\"\"\"');Start-Process msedge -ArgumentList ('--new-window',$o)}\""
                                      TeX-run-discard-or-function t t :help "Run Microsoft Edge"))
                       (add-to-list 'TeX-command-list
                                    '("Acrobat"
-                                     "powershell -Command \"& {Get-Process -Name Acrobat 2>$null;if($?){Stop-Process -Name Acrobat};Start-Process synctex -ArgumentList ('view', '-i', '\"\"\"%n:0:%b\"\"\"', '-o', '\"\"\"%s.pdf\"\"\"', '-x', '\"\"\"rundll32 shell32,ShellExec_RunDLL Acrobat /A ''page=%%{page+1}'' ''%%{output}''\"\"\"')}\""
-                                     TeX-run-discard-or-function t t :help "Forward search with Adobe Acrobat Reader")))))
+                                     "start Acrobat %s.pdf"
+                                     TeX-run-discard-or-function t t :help "Run Adobe Acrobat Reader")))))
 
 ;;
 ;; RefTeX with AUCTeX
@@ -261,7 +261,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <tr><td>Firefox</td><td>C-c C-c firefox RET</td><td>Firefox でプレビュー</td></tr>
 > <tr><td>Chrome</td><td>C-c C-c chrome RET</td><td>Chrome でプレビュー</td></tr>
 > <tr><td>Edge</td><td>C-c C-c edge RET</td><td>Edge でプレビュー</td></tr>
-> <tr><td>Acrobat</td><td>C-c C-c acrobat RET</td><td>Adobe Acrobat Reader で forward search</td></tr>
+> <tr><td>Acrobat</td><td>C-c C-c acrobat RET</td><td>Adobe Acrobat Reader でプレビュー</td></tr>
 > </tbody>
 > </table>
 >
@@ -302,8 +302,7 @@ C-x C-f ~/
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "jlreq")
-(setq TeX-engine 'uptex)
-(setq TeX-PDF-from-DVI "Dvipdfmx")
+(setq TeX-engine 'luatex)
 (setq TeX-view-program-selection '((output-pdf "displayline")))
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -418,8 +417,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
     (delq (assoc command TeX-command-list) TeX-command-list)))
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "jlreq")
-(setq TeX-engine 'uptex)
-(setq TeX-PDF-from-DVI "Dvipdfmx")
+(setq TeX-engine 'luatex)
 (setq TeX-view-program-selection '((output-pdf "Evince")))
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
@@ -723,7 +721,7 @@ TeX-source-correlate-mode を有効にすると SyncTeX が使用可能になり
 
 次に C-c C-c するとコンパイルできます。
 
-次に C-c C-c すると依存関係を調べて出力ファイルが新しければ dvipdfmx を実行したりプレビューしたりします。
+次に C-c C-c すると依存関係を調べて出力ファイルが新しければプレビューしたり dvipdfmx を実行したりします。
 
 dvipdfmx が実行された場合は次に C-c C-c するとプレビューします。
 
