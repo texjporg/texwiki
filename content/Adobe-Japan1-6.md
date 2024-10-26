@@ -9,7 +9,7 @@ pukiwiki: "Adobe-Japan1-6"
 
 ## Adobe-Japan1-6 とは {#j54465d8}
 
-2004年6月に出た，現時点で最新の Adobe-Japan1-6 は，
+2004年6月に出た，Adobe-Japan1-6 は，
 JIS C 6226:1978，JIS X 0213:2000，JIS X 0212:1990の規格表示体，JIS X 0213:2004 の印刷標準字体や
 U-PRESS 用の文字を含む
 23,058 グリフの文字セットです。
@@ -37,11 +37,11 @@ Adobe Acrobat Reader を使用すれば豊富なフォントを利用できま�
 
 #### CID 番号参照用のサンプルへのリンク {#ze53c84a}
 
-- [Font and Type Technology Center&mdash;Font technical notes](http://www.adobe.com/devnet/font.html)
-    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](http://www.mathsoc.jp/assets/pdf/overview/committee/info_system/5078.Adobe-Japan1-6.pdf)
-    - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,15.2 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
-    - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf)
-    - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
+- [Font and Type Technology Center&mdash;Font technical notes](https://web.archive.org/web/20171227234739/http://www.adobe.com/devnet/font.html)
+    - [Adobe-Japan1-6 Character Collection for CID-Keyed Fonts #5078 (PDF,10.3 MiB)](https://web.archive.org/web/20211206220128/https://www.adobe.com/content/dam/acom/en/devnet/font/pdfs/5078.Adobe-Japan1-6.pdf)
+    - [Adobe-GB1-5 Character Collection for CID-Keyed Fonts #5079 (PDF,15.2 MiB)](https://web.archive.org/web/20170406021829/http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5079.Adobe-GB1-5.pdf)
+    - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](https://web.archive.org/web/20170428002724/http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf)
+    - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](https://web.archive.org/web/20170406022126/http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf)
 
 - [ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/)<br>
     [ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/](ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/)<br>
