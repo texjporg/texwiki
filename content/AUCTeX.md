@@ -17,7 +17,7 @@ pukiwiki: "AUCTeX"
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は Emacs の LaTeX, TeX, ConTeXt 用のメジャーモードです．
+AUCTeX は GNU Emacs 27.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 - [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
@@ -113,38 +113,34 @@ M-x package-install RET auctex RET
 
 M-x list-packages RET でリストを表示して auctex を選択
 
-### ソースコードからインストールする場合 (Linux) {#re9f47fd}
+### 開発版をソースコードからインストールする場合 (Linux) {#re9f47fd}
 
 ```
-$ wget https://git.savannah.gnu.org/cgit/auctex.git/snapshot/HEAD.tar.gz
+mkdir ~/development
+cd ~/development
+git clone https://git.savannah.gnu.org/git/auctex.git
+cd ~/development/auctex
+make
 ```
 
-または
+以下を &#x7e;/.emacs.d/init.el に記述します。
 
 ```
-$ curl -LO https://git.savannah.gnu.org/cgit/auctex.git/snapshot/HEAD.tar.gz
+(load "~/development/auctex/auctex-autoloads.el" nil t t)
+(with-eval-after-load 'info
+  (add-to-list 'Info-additional-directory-list
+               "~/development/auctex/doc"))
 ```
 
-で最新版の AUCTeX を入手します．
-
-AUCTeX を展開してビルド・インストールします．
+use-package を使用している場合は以下を &#x7e;/.emacs.d/init.el に記述します。
 
 ```
-$ tar xvf HEAD.tar.gz
-$ pushd HEAD
-$ make
-$ sudo make install
-$ popd
-```
-
-デフォルトでは preview-latex もインストールされます。
-
-load-path に追加して自動ロードする場合は以下を &#x7e;/.emacs.d/init.el に記述します．
-
-```
-(add-to-list 'load-path "/usr/share/emacs/site-lisp")
-(load "auctex.el" nil t t)
-(load "preview-latex.el" nil t t)
+(use-package auctex
+  :init
+  (load "~/development/auctex/auctex-autoloads.el" nil t t)
+  (with-eval-after-load 'info
+    (add-to-list 'Info-additional-directory-list
+                 "~/development/auctex/doc")))
 ```
 
 ## 設定 {#g686a32e}
@@ -260,10 +256,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 
 ### macOS での設定例 {#h32722ec}
 
-- [Mac OS X El Capitan の AUCTeX の設定](http://ryogan.org/blog/2015/12/30/mac-os-x-el-capitan-%E3%81%AE-auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A/)
-- [AUCTex + RefTexで快適論文作成](http://ochiailab.blogspot.jp/2013/01/auctex-reftex.html)
-- [EmacsとSkimの連携](http://ochiailab.blogspot.jp/2012/10/emacsskim.html)
-- [Build Latex environments](http://sorabu.tumblr.com/post/6703335969/build-latex-environments)
+- [AUCTex + RefTexで快適論文作成](https://ochiailab.blogspot.jp/2013/01/auctex-reftex.html)
+- [EmacsとSkimの連携](https://ochiailab.blogspot.com/2012/10/emacsskim.html)
 
 Emacs を起動して
 
@@ -521,7 +515,7 @@ AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば�
 
 ```
 (add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.0.7")
-(require 'tex-site)
+(load "~/.emacs.d/elpa/auctex-14.0.7/auctex-autoloads.el" nil t t)
 ```
 
 #### AUCTeX の公式サイトのパッケージからインストールした場合 {#db9dca5d}
