@@ -116,13 +116,13 @@ M-x list-packages RET でリストを表示して auctex を選択
 ### ソースコードからインストールする場合 (Linux) {#re9f47fd}
 
 ```
-$ wget http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
+$ wget https://git.savannah.gnu.org/cgit/auctex.git/snapshot/HEAD.tar.gz
 ```
 
 または
 
 ```
-$ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
+$ curl -LO https://git.savannah.gnu.org/cgit/auctex.git/snapshot/HEAD.tar.gz
 ```
 
 で最新版の AUCTeX を入手します．
@@ -130,10 +130,8 @@ $ curl -LO http://git.savannah.gnu.org/cgit/auctex.git/snapshot/master.tar.gz
 AUCTeX を展開してビルド・インストールします．
 
 ```
-$ tar xvf master.tar.gz
-$ pushd master
-$ ./autogen.sh
-$ ./configure --prefix=/usr
+$ tar xvf HEAD.tar.gz
+$ pushd HEAD
 $ make
 $ sudo make install
 $ popd
@@ -188,23 +186,18 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
+(setq LaTeX-math-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk"
-                                     "latexmk %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
-                      (add-to-list 'TeX-command-list
-                                   '("upLaTeXmk"
-                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e \"$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
+                      (add-to-list 'TeX-command-list
+                                   '("upLaTeXmk"
+                                     "latexmk -e \"$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/\" -e \"$bibtex=q/bibtexu %%O %%B/\" -e \"$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/\" -e \"$makeindex=q/upmendex %%O -o %%D %%S/\" -e \"$dvipdf=q/dvipdfmx %%O -o %%D %%S/\" -norc -gg -pdfdvi %t"
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("SumatraPDF"
                                      "powershell -Command \"& {$r = Write-Output %o;$t = Write-Output %b;$o = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($r),'.pdf','\"\"\"');$b = [System.String]::Concat('\"\"\"',[System.IO.Path]::GetFileNameWithoutExtension($t),'.tex','\"\"\"');Start-Process \"C:/Users/$Env:USERNAME/AppData/Local/SumatraPDF/SumatraPDF.exe\" -ArgumentList ('-reuse-instance',\"$o\",'-forward-search',\"$b\",\"%n\")}\""
@@ -241,8 +234,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
+(setq reftex-mode t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -251,9 +244,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>SumatraPDF</td><td>C-c C-c sumatrapdf RET</td><td>SumatraPDF で forward search</td></tr>
 > <tr><td>Fwdsumatrapdf</td><td>C-c C-c fwdsumatrapdf RET</td><td>fwdsumatrapdf で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
@@ -307,23 +299,18 @@ C-x C-f ~/
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
+(setq LaTeX-math-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk"
-                                     "latexmk %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
-                      (add-to-list 'TeX-command-list
-                                   '("upLaTeXmk"
-                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
+                      (add-to-list 'TeX-command-list
+                                   '("upLaTeXmk"
+                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("Displayline"
                                      "/Applications/Skim.app/Contents/SharedSupport/displayline %n %s.pdf \"%b\""
@@ -364,8 +351,8 @@ C-x C-f ~/
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
+(setq reftex-mode t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -374,9 +361,8 @@ C-x C-f ~/
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>Displayline</td><td>C-c C-c displayline RET</td><td>displayline で forward search</td></tr>
 > <tr><td>Skim</td><td>C-c C-c skim RET</td><td>Skim でプレビュー</td></tr>
 > <tr><td>Preview</td><td>C-c C-c preview RET</td><td>Preview でプレビュー</td></tr>
@@ -422,23 +408,18 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
+(setq LaTeX-math-mode t)
 (add-hook 'LaTeX-mode-hook 'japanese-LaTeX-mode)
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode))
 (add-hook 'LaTeX-mode-hook
           (function (lambda ()
-                      (add-to-list 'TeX-command-list
-                                   '("Latexmk"
-                                     "latexmk %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run Latexmk"))
-                      (add-to-list 'TeX-command-list
-                                   '("upLaTeXmk"
-                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
-                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("LuaLaTeXmk"
                                      "latexmk -e '$lualatex=q/lualatex %%O %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run LuaLaTeXmk"))
+                      (add-to-list 'TeX-command-list
+                                   '("upLaTeXmk"
+                                     "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
+                                     TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
                                    '("Xdg-open"
                                      "xdg-open %s.pdf"
@@ -497,8 +478,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 ;;
 ;; RefTeX with AUCTeX
 ;;
-(with-eval-after-load 'tex-jp
-  (add-hook 'LaTeX-mode-hook 'turn-on-reftex))
+(setq reftex-mode t)
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
 ```
 
@@ -507,9 +488,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <table>
 > <tbody>
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
-> <tr><td>Latexmk</td><td>C-c C-c latexmk RET</td><td>タイプセット (Latexmk)</td></tr>
-> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
+> <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
 > <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
