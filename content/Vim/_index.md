@@ -24,15 +24,12 @@ Vim は，他の多くのエディタと異なり，「モード」という概�
 ある程度快適に使用するためには練習が必要になりますが，習熟すれば高速で効率のよい編集が可能になります．
 
 - [Vim 公式サイト](https://www.vim.org/)
-    - [ftp://ftp.vim.org/pub/vim/](ftp://ftp.vim.org/pub/vim/)
-        - [ftp://ftp.vim.org/pub/vim/pc](ftp://ftp.vim.org/pub/vim/pc)
-        - [ftp://ftp.vim.org/pub/vim/unix/](ftp://ftp.vim.org/pub/vim/unix/)
 - [https://github.com/vim/vim](https://github.com/vim/vim)
     - [https://github.com/vim/vim/commits/master](https://github.com/vim/vim/commits/master)
 - [https://github.com/vim/vim-win32-installer](https://github.com/vim/vim-win32-installer)
     - [https://github.com/vim/vim-win32-installer/releases](https://github.com/vim/vim-win32-installer/releases)
 - [vim-jp &raquo; Vimのユーザと開発者を結ぶコミュニティサイト](http://vim-jp.org/)
-    - [X](https://x.com/vim_jp)
+    - [vim-jp / X](https://x.com/vim_jp)
 - [vim-jp's Profile - GitHub](https://github.com/vim-jp)
     - [vim-jp/vimdoc-ja - GitHub](https://github.com/vim-jp/vimdoc-ja)
         <!-- -https://sourceforge.net/projects/vim/ -->
@@ -116,6 +113,7 @@ Vim は拡張子“tex”のファイルを Plain TeX|(Plain)TeX として読み
 最も簡単な方法は LaTeX 記法で記述された原稿の拡張子を“ltx”にすることでしょう。
 これで，気持ち良く LaTeX on Vim できますね。 
 
+- [Neovim/Vim で LaTeX を書く (MMA部誌2022秋) ](https://ryota2357.com/blog/2022/latex-with-neovim-vim-mma2020b/)
 - [tex.vim](/Vim/tex.vim/)
 - [VimTeX](/VimTeX/)
 - [quickrun](/quickrun/)
