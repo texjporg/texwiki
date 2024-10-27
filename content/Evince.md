@@ -98,7 +98,6 @@ PS, EPS ファイルを表示できるようにビルドすれば表示できる
 Homebrew から Evince をインストールした場合は PostScript サポートが有効になっています。
 
 - [https://formulae.brew.sh/formula/evince](https://formulae.brew.sh/formula/evince)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/e/evince.rb)
 
 ```
 brew install evince
