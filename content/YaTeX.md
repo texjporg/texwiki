@@ -178,6 +178,8 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
+;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
+;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
 (setq dvi2-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
@@ -291,6 +293,8 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
+;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
 (setq dvi2-command "open -a Skim")
@@ -356,6 +360,8 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-dvi2-command-ext-alist
       '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
+;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
+;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
 (setq dvi2-command "evince")
