@@ -336,6 +336,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 ### Windows {#a1ddfe8b}
 
 - [Emacs29.1 導入](http://minischna.starfree.jp/Emacs29.1/000emacs29_1.pdf)
+- [EmacsとWindowsと人生と](https://qiita.com/sylx/items/46bc993471cd71980aa5)
 - [NTEmacs の設定](https://www49.atwiki.jp/ntemacs/pages/1.html)
 - [Window版emacs24.4をclangでビルドする](http://blog.livedoor.jp/tek_nishi/archives/8597627.html)
 - [Emacs の初期設定](http://tomokop.hatenablog.com/entry/2014/04/25/021053)
