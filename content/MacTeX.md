@@ -126,6 +126,7 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
+- [LaTeX+BibLaTeX+VSCodeでスッキリ環境構築 (Mac) (2024)](https://qiita.com/Muon/items/f4d4b93fb1f9cbec51d0)
 - [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
 - [2023年のコンピューターノウハウ (Mac) 67 MacTeX 2014 が来た](https://m-katsurada.sakura.ne.jp/knowhow-2023/node67.html)
 - [MacにTeXをインストールする方法【MacTeX】](https://mathphysnote.com/mactex-install/)
