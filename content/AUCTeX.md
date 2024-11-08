@@ -973,6 +973,7 @@ AUCTeX とは関係ありませんが，先頭に
 
 - [https://tam5917.hatenablog.com/archive/category/AUCTeX](https://tam5917.hatenablog.com/archive/category/AUCTeX)
 - [https://dayinthelife-web.blogspot.com/search/label/AUCTeX](https://dayinthelife-web.blogspot.com/search/label/AUCTeX)
+- [auctex-cluttex.el](https://github.com/tsuu32/auctex-cluttex)
 
 <!-- AUCTeX ここまで -->
 
