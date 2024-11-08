@@ -109,6 +109,7 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [LuaTeX について | 日本OSS推進フォーラム](http://ossforum.jp/node/1283)
 - [LuaLaTeX Lab](https://lualatexlab.blog.fc2.com/)
 - [p/upLaTeX から LuaLaTeX へ移行すべき理由と方法](https://www.metaphysica.info/2022/outdated-uplatex/)
+- [LuaLaTeXの環境構築をしてLuaLaTeXデビューする方法](https://digital-sp.net/2024/11/05/how-to-lualatex-debut/)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
