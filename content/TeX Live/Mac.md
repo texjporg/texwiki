@@ -37,6 +37,7 @@ MacTeX-2024 / BasicTeX-2024 に付属する TeX Live も universal-darwin バイ
 
 TeX Live 2024 universal-darwin バイナリが動作する macOS
 
+- macOS Sequoia 15
 - macOS Sonoma 14
 - macOS Ventura 13
 - macOS Monterey 12
