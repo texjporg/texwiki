@@ -69,7 +69,7 @@ TeX や LaTeX に関する本の紹介です．
 <!-- -[[alg-dさん:https://alg-d.com/]] -->
 <!-- [[TikZ の使い方:https://alg-d.com/math/tikz.pdf]] (PDF) -->
 
-### 書籍（紙版、電子版(PDF版)） {#z5fa285b}
+### 書籍（紙版、電子版(PDF版、Kindle版、楽天Kobo、…)） {#z5fa285b}
 
 - [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html)
 - [本棚.org ](https://hondana.org/TeX/)
@@ -93,7 +93,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - Stefan Kottwitz \[著\], 黒川 利明 \[訳\]
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
-    （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日発売予定，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
+    （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日紙版発売、2024年11月01日電子版発売，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
 
 - [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
     （[技術書典](https://techbookfest.org/)，2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
@@ -107,11 +107,11 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2023年 {#year2023}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
-    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
-
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
+
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
     - [サポートページ](https://github.com/okumuralab/bibun9)
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ?productVariantID=epMJ4TYn2GhyiqC5gD0Zqz)』
     （[技術書典](https://techbookfest.org/)，2023年05月21日発行（技術書典14），電子版 &yen;500）
@@ -141,7 +141,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2019年 {#year2019}
 
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
-    （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
+    （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
     - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
 - [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
     （[技術書典](https://techbookfest.org/)，2019年09月22日発行（技術書典7））
@@ -154,10 +154,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2018年 {#year2018}
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）……LaTeX2ε
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
+- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2018>)
@@ -290,10 +290,6 @@ TeX や LaTeX に関する本の紹介です．
 - [TeXの本/絶版](</TeXの本/絶版/#year2001>)
 
 #### 2000年 {#year2000}
-
-- 生田 誠三
-    『[LaTeX2ε文典](https://www.asakura.co.jp/detail.php?book_code=12140)』
-    （[朝倉書店](https://www.asakura.co.jp/)，2000年06月25日，定価 &yen;6,380 (本体 &yen;5,800＋税)，[ISBN 978-4-254-12140-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12140-7)）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2000>)
 
