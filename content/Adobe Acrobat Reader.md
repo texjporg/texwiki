@@ -70,7 +70,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [64-bit Unified App Installer &mdash; Acrobat Desktop  Windows Deployment](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/singleinstaller.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320180/AcroRdrDCx642400320180_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320180/AcroRdrDCx642400320180_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -130,8 +130,8 @@ sudo zypper install wine
 winetricks allfonts
 winetricks mspatcha
 winetricks atmlib
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400320180/AcroRdrDCx642400320180_ja_JP.exe
-wine64 AcroRdrDCx642400320180_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe
+wine64 AcroRdrDCx642400420243_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
