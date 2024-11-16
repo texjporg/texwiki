@@ -60,10 +60,10 @@ pacman -S mingw-w64-ucrt-x86_64-gnome-latex
 
 ### macOS {#b3c38ac4}
 
-- [https://formulae.brew.sh/formula/gnome-latex](https://formulae.brew.sh/formula/gnome-latex)
+- [https://formulae.brew.sh/formula/enter-tex](https://formulae.brew.sh/formula/enter-tex)
 
 ```
-brew install gnome-latex
+brew install enter-tex
 ```
 
 ### Arch Linux/Manjaro Linux {#z0c32b42}
@@ -74,13 +74,11 @@ brew install gnome-latex
 sudo pacman -S enter-tex
 ```
 
-### openSUSE {#z63d593b}
-
-- [https://software.opensuse.org/package/gnome-latex](https://software.opensuse.org/package/gnome-latex)
-
-```
-sudo zypper install gnome-latex
-```
+<!-- **openSUSE [#z63d593b] -->
+<!--  -->
+<!-- -https://software.opensuse.org/package/gnome-latex -->
+<!--  -->
+<!-- sudo zypper install gnome-latex -->
 
 ## Build Tool {#t1320044}
 
