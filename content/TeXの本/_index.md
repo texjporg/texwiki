@@ -23,6 +23,9 @@ TeX や LaTeX に関する本の紹介です．
 - ウィキブックス (Wikibooks) &mdash;
     [TeX/LaTeX 入門](https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
+- [Cute.Guides（きゅうとガイド）](https://guides.lib.kyushu-u.ac.jp/cuteguides/) &mdash;
+    [LaTeX事始め - ★はじめてのLaTeX - Cute.Guides at 九州大学 Kyushu University](https://guides.lib.kyushu-u.ac.jp/LaTeX-LectureNote/)
+
 <!-- -[[渡辺 徹さん:http://typeface.blog116.fc2.com/]] ([[Watanabe Thor さん:https://github.com/thortex]]) -->
 <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
 <!-- - -[[thortex (thortex) / Repositories · GitHub:https://github.com/thortex]] -->
