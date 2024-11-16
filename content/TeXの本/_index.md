@@ -97,7 +97,7 @@ TeX や LaTeX に関する本の紹介です．
 - Stefan Kottwitz \[著\], 黒川 利明 \[訳\]
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日紙版発売、2024年11月01日電子版発売，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
-
+    - [サポートページ](https://tikz.jp/)
 - [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
     （[技術書典](https://techbookfest.org/)，2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
