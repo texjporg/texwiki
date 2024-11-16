@@ -318,7 +318,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 1994年 {#year1994}
 
-- 野寺 隆志『[楽々LaTeX 第2版](https://www.kyoritsu-pub.co.jp/book/b10011603.html)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，1994年06月15日，税込価格 &yen;3,190 (本体 &yen;2,900 + 税10%)，[ISBN 978-4-320-02703-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-02703-9)）
 - [TeXの本/絶版](</TeXの本/絶版/#year1994>)
 
 #### 1993年 {#year1993}
@@ -338,6 +337,10 @@ TeX や LaTeX に関する本の紹介です．
 - [TeXの本/絶版](</TeXの本/絶版/#year1990>)
 
 #### 1989年 {#year1989}
+
+- 垣内 良子、櫻井 尚子
+    『[TeXのマクロパッケージLaTeXの紹介](https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1468198/p107.pdf)』(PDF)
+    （1989年03月15日）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1989>)
 
