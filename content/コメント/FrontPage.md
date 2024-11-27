@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.6.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-11-27 (水) 19:38:38
 - [LaTeX Workshop 10.6.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-11-25 (月) 22:09:18
 - [TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305) -- [TikZ](/TikZ/)、[TeXの本](</TeXの本/>) 2024-11-11 (月) 19:58:26
 - [LaTeX Workshop 10.5.6](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-11-01 (金) 05:05:21
