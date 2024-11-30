@@ -72,11 +72,10 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
 
 - Homebrew を用いる方法
     - [https://formulae.brew.sh/formula/xpdf](https://formulae.brew.sh/formula/xpdf)
-        - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/x/xpdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/x/xpdf.rb)
 
-            ```
-            $ brew install xpdf
-            ```
+        ```
+        $ brew install xpdf
+        ```
 
 - MacPorts を用いる方法
     - MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
@@ -128,7 +127,7 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
 
 - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
     - [https://ports.macports.org/port/xpdf/](https://ports.macports.org/port/xpdf/)
-        - [https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/xpdf/Portfile)
+    - [https://ports.macports.org/port/xpdf-japanese/](https://ports.macports.org/port/xpdf-japanese/)
 
 #### Linux {#inst-linux}
 
