@@ -13,6 +13,8 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [日本語版 chemfig マニュアル](https://okumuralab.org/tex/mod/forum/discuss.php?d=3876) -- [chemfig](/chemfig/) 2024-12-14 (土) 12:40:19
+- [TeXstudio 4.8.5](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2024-12-14 (土) 10:28:13
 - [AUCTeX 14.0.8](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2024-12-12 (木) 18:09:57
 - [LaTeX Workshop 10.7.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-12-04 (水) 04:08:10
 - [LaTeX Workshop 10.6.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-11-27 (水) 19:38:38
