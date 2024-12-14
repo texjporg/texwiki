@@ -27,9 +27,9 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 24.003.20112 以降に更新してください。Adobe Acrobat Reader 24.003.20054 およびそれ以前のバージョンには脆弱性が存在します。
-    - [Adobe AcrobatおよびReaderの脆弱性（APSB24-70）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240018.html)
-    - [Adobe Acrobat および Reader の脆弱性対策について(2024年9月)](https://www.ipa.go.jp/security/security-alert/2024/0911-adobereader.html)
+- Adobe Acrobat Reader 24.005.20320 以降に更新してください。Adobe Acrobat Reader 24.005.20307 およびそれ以前のバージョンには脆弱性が存在します。
+    - [Adobe AcrobatおよびReaderの脆弱性（APSB24-92）に関する注意喚起](https://www.jpcert.or.jp/at/2024/at240024.html)
+    - [Adobe Acrobat および Reader の脆弱性対策について(2024年12月)](https://www.ipa.go.jp/security/security-alert/2024/1211-adobereader.html)
 - Adobe Acrobat Reader Version 2024 (64-bit) の DDE server name は AcroViewA24 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -70,7 +70,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [64-bit Unified App Installer &mdash; Acrobat Desktop  Windows Deployment](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/singleinstaller.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400520320/AcroRdrDCx642400520320_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400520320/AcroRdrDCx642400520320_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -130,8 +130,8 @@ sudo zypper install wine
 winetricks allfonts
 winetricks mspatcha
 winetricks atmlib
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400420243/AcroRdrDCx642400420243_ja_JP.exe
-wine64 AcroRdrDCx642400420243_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2400520320/AcroRdrDCx642400520320_ja_JP.exe
+wine64 AcroRdrDCx642400520320_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
