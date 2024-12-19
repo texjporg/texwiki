@@ -20,13 +20,12 @@ pukiwiki: "Eclipse"
 Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 - [Eclipse.org home](https://www.eclipse.org/)
-- [Eclipse.org Git repositories](https://git.eclipse.org/)
-- [Eclipse - Google+](https://plus.google.com/+Eclipse)
+- [Eclipse Projects · GitLab](https://gitlab.eclipse.org/eclipse)
 
 ### 動作環境 {#aae7926e}
 
-- [https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_31.xml#target_environments](https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_31.xml#target_environments)
-- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_31.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_31.xml#target_environments)
+- [https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments](https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments)
+- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments)
 
 ### License {#aa464649}
 
@@ -34,13 +33,13 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
-- [https://projects.eclipse.org/projects/eclipse/governance](https://projects.eclipse.org/projects/eclipse/governance)
+- [https://projects.eclipse.org/content/eclipse-ide-simultaneous-release](https://projects.eclipse.org/content/eclipse-ide-simultaneous-release)
 
 ## Java のインストール {#ca668ec2}
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-Windows の場合は [Windows 版 OpenJDK インストール手順](https://qiita.com/ryo-sato/items/87d05021fcc0519e8828)を参照して OpenJDK をインストールします．
+[Home | Adoptium](https://adoptium.net/)を参照して OpenJDK をインストールします．
 
 ## Eclipse のインストール {#r143ba66}
 
@@ -70,4 +69,5 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 - Eclipse - [https://www.eclipse.org/](https://www.eclipse.org/)
 - Pleiades - [https://willbrains.jp/](https://willbrains.jp/)
-- [OpenJDK](http://openjdk.java.net/)
+- Adoptium - [https://adoptium.net/](https://adoptium.net/)
+- OpenJDK - [https://openjdk.org/](https://openjdk.org/)
