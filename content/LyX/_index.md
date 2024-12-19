@@ -435,7 +435,6 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　7. <strong>Linux ユーザーへの注釈:</strong> LaTeX頒布のTeX Live用の言語パッケージが導入済みかどうかチェッ<br>
 > 　　　クしてください．もしない場合は，LaTeXエラーが発生することになります．<br>
-> 　　　エラーが発生します．<br>
 > 　　　例えば，Linux頒布の(K,X)UbuntuおよびDebianでは，ドイツ語用のパッケージ名はtexliv<br>
 > 　　　e-lang-germanです．<br>
 > 　　　言語パッケージの導入後，LyXメニューからツール <span style="color:#1188FF;">▷</span> 環境構成を実行しなくてはなりません．<br>
