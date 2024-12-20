@@ -24,8 +24,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### 動作環境 {#aae7926e}
 
-- [https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments](https://www.eclipse.org/projects/project-plan.php?planurl=https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments)
-- [https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments](https://www.eclipse.org/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments)
+- [https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments](https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_34.xml#target_environments)
 
 ### License {#aa464649}
 
@@ -39,11 +38,11 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 Eclipse は Java アプリケーションなので Java のランタイムが必要です．
 
-[Home | Adoptium](https://adoptium.net/)を参照して OpenJDK をインストールします．
+[Home | Adoptium](https://adoptium.net/) から OpenJDK を入手してインストールします．
 
 ## Eclipse のインストール {#r143ba66}
 
-Windows の場合 [Pleiades All in One](https://willbrains.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
+Windows、Mac の場合 [Pleiades All in One](https://willbrains.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
 
 Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
 
@@ -53,13 +52,7 @@ Eclipse の公式サイトからダウンロードした Eclipse を日本語化
 
 - [Pleiades プラグイン](https://willbrains.jp/) (Eclipse 本体とプラグインの日本語化)
 
-を Eclipse のルートフォルダに展開して eclipse.ini の最終行に
-
-```
--javaagent:plugins/jp.sourceforge.mergedoc.pleiades/pleiades.jar
-```
-
-を追加します．
+を入手してインストールします．
 
 ## Eclipse で LaTeX {#i62a454e}
 
