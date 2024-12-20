@@ -44,11 +44,11 @@ Windows, macOS, Linux
 
 ### リリース情報 {#d961699f}
 
-[最新ニュース](https://inkscape.org/ja/news/)を参照．
+[タグ · Inkscape / inkscape · GitLab](https://gitlab.com/inkscape/inkscape/-/tags)
 
 ### ChangeLog {#q8a7ad68}
 
-[コミットログ](https://gitlab.com/inkscape/inkscape/commits/master)
+[コミット · master · Inkscape / inkscape · GitLab](https://gitlab.com/inkscape/inkscape/-/commits/master?ref_type=heads)
 
 ## ダウンロード {#i5a8dfd7}
 
@@ -159,7 +159,7 @@ inkscape --export-type=ps --export-latex file.svg
 
 ## エクステンション {#s696e33c}
 
-### LaTeX (pdflatex) {#w6edd3aa}
+### 公式 (pdflatex) {#w6edd3aa}
 
 pdflatex を実行して数式を埋め込むエクステンション．
 Inkscape に標準で収録されています．
@@ -169,7 +169,7 @@ Inkscape に標準で収録されています．
 
 #### 動作環境 {#z851d64f}
 
-Windows 10 Pro バージョン 1909 x64、Inkscape 1.0 x64 with Python 3.8.2、TeX Live 2020 win32 版で動作することを確認しています。
+Windows 10 Pro バージョン 22H2、Inkscape 1.4 with Python 3.11.10、TeX Live 2024 windows 版で動作することを確認しています。
 
 macOS では Finder からダブルクリックで Inkscape を実行するとグレーアウトされて動作しないようですが、Terminal から Inkscape を実行すると動作するようです。--&gt; [Mac版Inkscape1.0のpdflatex](https://okumuralab.org/tex/mod/forum/discuss.php?d=2849) <!-- macOS ではグレーアウトされて動作しないようですが、TexText が動作するので問題ないようです。- -&gt; [[Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？>forum:2844]], [[「Inkscape グレーアウト問題は解決」の報告フォーマットに関して>forum:2845]], [[Inkscape Can not find the command 'pdflatex'>forum:2847]], [[Can not find the command &#39;pdflatex&#39; (#1221) · Issues · Inkscape / Inbox · GitLab:https://gitlab.com/inkscape/inbox/issues/1221]] -->
 
@@ -177,16 +177,13 @@ Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linu
 
 #### 使用方法 {#se15d9b2}
 
-\[エクステンション(N)\] &gt; \[レンダリング\] &gt; \[Mathmatics\] &gt; \[LaTeX (pdflatex)...\] を選択．
+\[エクステンション(N)\] &gt; \[テキスト\] &gt; \[公式 (pdflatex)...\] を選択．
 
-> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>LaTeX (pdflatex)</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>公式 (pdflatex)</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
-> 　LaTeX Input: <ins>\\(\displaystyle\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
-> 　Additional packages(comma-separated)：<br>
->
-> <br>
->
-> 　☑ ライブプレビュー<br>
+> 　\[　基本設定　\]\[　高度な設定　\]<br>
+> 　LaTeX 入力: <ins>\\(\displaystyle\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
+> 　　　　　　　フォントサイズ (px)<br>
 
 ### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
