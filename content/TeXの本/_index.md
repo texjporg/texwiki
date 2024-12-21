@@ -154,7 +154,7 @@ TeX や LaTeX に関する本の紹介です．
 - 日向たろし (サークル：日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行（コミックマーケット96（4日目）），価格（税込）&yen;100，[ISDN 278-4-565903-05-8](https://isdn.jp/2784565903058)）
 
-- [坂東 慶太](https://researchmap.jp/keitabando/)『[インストールいらずのLaTeX入門――Overleafで手軽に文書作成](http://www.tokyo-tosho.co.jp/books/978-4-489-02311-8/)』（[東京図書](http://www.tokyo-tosho.co.jp/)，2019年05月13日，価格 &yen;2,640 (本体 &yen;2,400＋税)，[ISBN 978-4-489-02311-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-489-02311-8)）
+- [TeXの本/絶版](</TeXの本/絶版/#year2019>)
 
 #### 2018年 {#year2018}
 
