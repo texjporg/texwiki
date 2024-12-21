@@ -155,7 +155,7 @@ inkscape --export-type=ps --export-latex file.svg
 ## svg – Include and extract SVG pictures in LaTeX documents {#p2c351e1}
 
 - [svg](https://ctan.org/pkg/svg)
-    - \[[LaTeX\] svg --- LaTeX文書にSVG画像を含める方法](http://konoyonohana.blog.fc2.com/blog-entry-432.html)
+    - \[[LaTeX\] svg --- LaTeX文書にSVG画像を含める方法](https://konoyonohana.blog.fc2.com/blog-entry-432.html)
 
 ## エクステンション {#s696e33c}
 
