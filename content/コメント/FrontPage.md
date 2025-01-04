@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.7.4](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-04 (土) 11:03:25
 - [LaTeX Workshop 10.7.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-03 (金) 13:34:24
 - [LaTeX Workshop 10.7.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2024-12-24 (火) 20:49:46
 - [日本語版 chemfig マニュアル](https://okumuralab.org/tex/mod/forum/discuss.php?d=3876) -- [chemfig](/chemfig/) 2024-12-14 (土) 12:40:19
