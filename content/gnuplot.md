@@ -60,7 +60,6 @@ gnuplot は (La)TeX で処理できる形式でグラフを出力することが
 
 - [https://github.com/gnuplot/gnuplot](https://github.com/gnuplot/gnuplot)
     - [https://github.com/gnuplot/gnuplot/commits/master](https://github.com/gnuplot/gnuplot/commits/master)
-    - [https://github.com/gnuplot/gnuplot/blob/master/ChangeLog](https://github.com/gnuplot/gnuplot/blob/master/ChangeLog)
     - [https://github.com/gnuplot/gnuplot/blob/master/NEWS](https://github.com/gnuplot/gnuplot/blob/master/NEWS)
 
 [^1]: ただし英語ではセンテンスの頭では Gnuplot となり，タイトルなどでは GNUPLOT と表記することもあります．
