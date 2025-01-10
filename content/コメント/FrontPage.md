@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TexText 1.11.0 (2025-01-06)](https://textext.github.io/textext/) -- [Inkscape](/Inkscape/) 2025-01-11 (土) 00:07:43
 - [LaTeX Workshop 10.7.5](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-06 (月) 19:52:38
 - [LaTeX Workshop 10.7.4](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-04 (土) 11:03:25
 - [LaTeX Workshop 10.7.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-03 (金) 13:34:24
