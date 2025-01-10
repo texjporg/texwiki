@@ -187,7 +187,7 @@ Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linu
 
 ### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
-Inkscape で LaTeX のグラフィックスを埋め込むエクステンション．再編集可能．
+Inkscape で LaTeX/Typst のグラフィックスを埋め込むエクステンション．再編集可能．
 
 - [https://github.com/textext/textext](https://github.com/textext/textext)
 - [https://textext.github.io/textext/](https://textext.github.io/textext/)
@@ -196,10 +196,13 @@ Inkscape で LaTeX のグラフィックスを埋め込むエクステンショ�
 
 - [https://textext.github.io/textext/index.html#installation-toc](https://textext.github.io/textext/index.html#installation-toc)
 - [FYI：Mac版TeXTextのインストール](https://okumuralab.org/tex/mod/forum/discuss.php?d=2842)
+- [雑記 - inkscape](https://ult.riise.hiroshima-u.ac.jp/~nagato/?inkscape)
 
 #### 使用方法 {#fce319ec}
 
 - [https://textext.github.io/textext/index.html#usage-toc](https://textext.github.io/textext/index.html#usage-toc)
+
+\[エクステンション(N)\] &gt; \[テキスト\] &gt; \[TexText...\] を選択．
 
 ### SVG2TikZ, svg2tikz {#u5ee2f7d}
 
