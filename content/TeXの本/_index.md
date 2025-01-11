@@ -95,6 +95,9 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2024年 {#year2024}
 
+- doitsu『[ゼロから学べるLaTeX完全入門: レポート・論文執筆の新スタンダード](https://www.amazon.co.jp/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B9%E3%82%8BLaTeX%E5%AE%8C%E5%85%A8%E5%85%A5%E9%96%80-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%BB%E8%AB%96%E6%96%87%E5%9F%B7%E7%AD%86%E3%81%AE%E6%96%B0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89-doitsu-ebook/dp/B0DNGXC68Y/)』
+    （2024年11月18日Kindle版発売，税込 &yen;1,000）
+
 - Stefan Kottwitz \[著\], 黒川 利明 \[訳\]
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日紙版発売、2024年11月01日電子版発売，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
