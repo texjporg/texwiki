@@ -159,7 +159,15 @@ $ sudo /usr/local/texlive/2024/bin/universal-darwin/tlmgr path add
 
 ### パッケージ管理システムによる TeX Live (MacTeX, BasicTeX) のインストール {#texlive-install-pacman}
 
-#### [Homebrew Cask](https://formulae.brew.sh/cask/) によるインストール {#texlive-install-brew}
+#### [Homebrew](https://brew.sh/) によるインストール {#texlive-install-brew}
+
+- [https://formulae.brew.sh/formula/texlive](https://formulae.brew.sh/formula/texlive)
+
+```
+$ brew install texlive
+```
+
+#### [Homebrew Cask](https://formulae.brew.sh/cask/) によるインストール {#texlive-install-brew-cask}
 
 - [https://formulae.brew.sh/cask/mactex](https://formulae.brew.sh/cask/mactex)
 - [https://formulae.brew.sh/cask/mactex-no-gui](https://formulae.brew.sh/cask/mactex-no-gui)
