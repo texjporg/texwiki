@@ -181,9 +181,15 @@ Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linu
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>公式 (pdflatex)</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
-> 　\[　基本設定　\]\[　高度な設定　\]<br>
+> 　\[<ins>　基本設定　</ins>\]\[　高度な設定　\]<br>
 > 　LaTeX 入力: <ins>\\(\displaystyle\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
 > 　　　　　　　フォントサイズ (px)<br>
+
+> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>公式 (pdflatex)</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+>
+> 　\[　基本設定　\]\[<ins>　高度な設定　</ins>\]<br>
+> 　☑ スタンドアロンのドキュメントクラスを使用<br>
+> 　カスタムプリアンブルコード \usepackage{amsmath}\usepackage{amssymb}\usepackage{amsfonts}<br>
 
 ### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
