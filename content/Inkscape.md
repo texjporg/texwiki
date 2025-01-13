@@ -76,13 +76,13 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 > <span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PDF バージョン制限 <ins> PDF 1.5               \[ <strong>ᐯ</strong> \]</ins><br>
->  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換<br>
->             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション： ◯ フォントを埋め込む<br>
+>             　 ◯ テキストをパスに変換<br>
+>             　 🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
->  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
->  丸め補正：　　　　🔘 丸めを補正（推奨）<br>
->             ◯ 補正しない<br>
+>             　ラスタライズ解像度 (dpi)：　　　　　　　　　　　<ins>\[ 90 －＋ \]</ins><br>
+>  丸め補正： 🔘 丸めを補正（推奨）<br>
+>        ◯ 補正しない<br>
 >
 > <br>
 >
@@ -93,15 +93,16 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 > <br>
 >
 >  ページブリードはページツールで設定可能です。<br>
+> 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換<br>
->             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション： ◯ フォントを埋め込む<br>
+>             　 ◯ テキストをパスに変換<br>
+>             　 🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
->  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
+>             　ラスタライズ解像度 (dpi)：　　　　　　　　　　　<ins>\[ 90 －＋ \]</ins><br>
 >
 > <br>
 >
@@ -112,15 +113,16 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 > <br>
 >
 >  ページブリードはページツールで設定可能です。<br>
+> 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 >  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->  テキスト出力オプション：  ◯ フォントを埋め込む<br>
->             ◯ テキストをパスに変換<br>
->             🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
+>  テキスト出力オプション： ◯ フォントを埋め込む<br>
+>             　 ◯ テキストをパスに変換<br>
+>             　 🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
 >   ☑ フィルターエフェクトをラスタライズする<br>
->  ラスタライズ解像度 (dpi)：　　　　　　　　　　　　　　　　　　　　　　<ins>90 \[<strong>⇕</strong>\]</ins><br>
+>             　ラスタライズ解像度 (dpi)：　　　　　　　　　　　<ins>\[ 90 －＋ \]</ins><br>
 >
 > <br>
 >
@@ -131,6 +133,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 > <br>
 >
 >  ページブリードはページツールで設定可能です。<br>
+> 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
 
 コマンドラインから PDF, EPS, PS のテキストを除外して LaTeX ファイルを出力することも可能です．
 
@@ -171,9 +174,7 @@ Inkscape に標準で収録されています．
 
 Windows 10 Pro バージョン 22H2、Inkscape 1.4 with Python 3.11.10、TeX Live 2024 windows 版で動作することを確認しています。
 
-macOS では Finder からダブルクリックで Inkscape を実行するとグレーアウトされて動作しないようですが、Terminal から Inkscape を実行すると動作するようです。--&gt; [Mac版Inkscape1.0のpdflatex](https://okumuralab.org/tex/mod/forum/discuss.php?d=2849) <!-- macOS ではグレーアウトされて動作しないようですが、TexText が動作するので問題ないようです。- -&gt; [[Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない？>forum:2844]], [[「Inkscape グレーアウト問題は解決」の報告フォーマットに関して>forum:2845]], [[Inkscape Can not find the command 'pdflatex'>forum:2847]], [[Can not find the command &#39;pdflatex&#39; (#1221) · Issues · Inkscape / Inbox · GitLab:https://gitlab.com/inkscape/inbox/issues/1221]] -->
-
-Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linux 10 (Buster) で動作に失敗するようです。--&gt; [Re: Inkscape ver.1.0では LaTeX (pdflatex)のレンダリングは 出来ない。](https://okumuralab.org/tex/mod/forum/discuss.php?d=2844%23p16693)
+macOS ではターミナルから inkscape &amp; と入力してリターンを押して Inkscape を実行すると動作するようです。--&gt; [LaTeXの導入#inkscape](http://www-het.phys.sci.osaka-u.ac.jp/~yamaguch/j/tex.html#inkscape)
 
 #### 使用方法 {#se15d9b2}
 
@@ -183,13 +184,15 @@ Linux の AppImage 版ではグレーアウトはしませんが Debian GNU/Linu
 >
 > 　\[<ins>　基本設定　</ins>\]\[　高度な設定　\]<br>
 > 　LaTeX 入力: <ins>\\(\displaystyle\frac{\pi^2}{6}=\lim\_{n \to \infty}\sum\_{k=1}^n \frac{1}{k^2}\\)</ins><br>
-> 　　　　　　　フォントサイズ (px)<br>
+> 　　　　　　　フォントサイズ (px)　　　　　　\[ 10 　－＋\]<br>
+> 　　　　　　　　　　　　　　\[　閉じる(C)　\]　\[　適用(A)　\]<br>
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>公式 (pdflatex)</strong></span>　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
 > 　\[　基本設定　\]\[<ins>　高度な設定　</ins>\]<br>
 > 　☑ スタンドアロンのドキュメントクラスを使用<br>
 > 　カスタムプリアンブルコード \usepackage{amsmath}\usepackage{amssymb}\usepackage{amsfonts}<br>
+> 　　　　　　　　　　　　　　\[　閉じる(C)　\]　\[　適用(A)　\]<br>
 
 ### [TexText](https://github.com/textext/textext) {#l1a0873e}
 
@@ -209,6 +212,49 @@ Inkscape で LaTeX/Typst のグラフィックスを埋め込むエクステン�
 - [https://textext.github.io/textext/index.html#usage-toc](https://textext.github.io/textext/index.html#usage-toc)
 
 \[エクステンション(N)\] &gt; \[テキスト\] &gt; \[TexText...\] を選択．
+
+<span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　<span style="color:Black;"><strong>Enter LaTeX Formula - TexText 1.11.0</strong></span>　　　　　　<span style="color:#72C304;background-color:#72C304;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#72C304;background-color:#72C304;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+
+<ins>F</ins>ile　　<ins>V</ins>iew　　<ins>S</ins>ettings<br>
+
+Command　　　　　　　　　　　　　　　Preamble File<br>
+　\[　lualatex　　　　　　　　　　<strong>ᐯ</strong>\]　　　\[　default_packa...　\]　　　\[　Clear　\]<br>
+Scale Factor　　　　　　　　　　　　　　　　　　　　　　　　　　　　Alignment<br>
+　\[ 1,000　－　＋ \]　\[　　Reset　\]　\[　　As previous (1,000)　\]　　　\[　TeX　\]<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+\[　　キャンセル(<ins>C</ins>)　　\]　　　　　　\[　　Preview　　\]　　　　　　\[　　保存(<ins>S</ins>)　　\]<br>
 
 ### SVG2TikZ, svg2tikz {#u5ee2f7d}
 
