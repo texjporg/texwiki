@@ -204,7 +204,7 @@ Inkscape で LaTeX/Typst のグラフィックスを埋め込むエクステン�
 #### インストール {#j75ce7d3}
 
 - [https://textext.github.io/textext/index.html#installation-toc](https://textext.github.io/textext/index.html#installation-toc)
-- [FYI：Mac版TeXTextのインストール](https://okumuralab.org/tex/mod/forum/discuss.php?d=2842)
+- [Inkscape/MacへのTexTextインストール](https://mutolabworks.blogspot.com/2025/01/install-textext-mac.html)
 - [雑記 - inkscape](https://ult.riise.hiroshima-u.ac.jp/~nagato/?inkscape)
 
 #### 使用方法 {#fce319ec}
