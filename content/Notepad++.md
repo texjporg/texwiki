@@ -55,6 +55,13 @@ Windows
 
 ### 派生版 {#l02b5ab5}
 
+#### Notepad Next {#n8f98be2}
+
+Notepad Next はクロスプラットフォームに対応した Notepad++ によく似たテキストエディタです。
+Windows/Linux/macOS で動作します。
+
+- [Notepad Next](https://github.com/dail8859/NotepadNext)
+
 #### Notepad-- {#nbb7ded3}
 
 Notepad-- は Notepad++ によく似たテキストエディタです。
