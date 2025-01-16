@@ -10,12 +10,12 @@ pukiwiki: "Ghostscript"
 
 ## [Ghostscript](https://www.ghostscript.com/) {#odb09bf1}
 
-Ghostscript は [PostScript](/PostScript/)/[Portable Document Format (PDF)](/PDF/) インタプリタです．
+Ghostscript は [PostScript](/PostScript/)/[PDF](/PDF/) インタプリタです．
 PostScript/PDF ファイルを読み込んで，画面やプリンタや色々な形式のファイルに出力できます．
 詳しくは次のページをご覧ください．
 
 - [Ghostscript Website](https://www.ghostscript.com/)
-- [Welcome to Ghostscript &mdash; Ghostscript 10.05.0 documentation](https://ghostscript.readthedocs.io/)
+- [Welcome to Ghostscript &mdash; Ghostscript documentation](https://ghostscript.readthedocs.io/)
     - [https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
 ***
@@ -58,7 +58,7 @@ Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限�
 Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。
 
 <!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
-- commit [06c920713e11bce9bd541bbf9bf294b2ba16aee8](http://git.ghostscript.com/?p=ghostpdl.git;a=commit;h=06c920713e11bce9bd541bbf9bf294b2ba16aee8)
+- commit [06c920713e11bce9bd541bbf9bf294b2ba16aee8](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=06c920713e11bce9bd541bbf9bf294b2ba16aee8)
     で修正されたようです。--&gt; pdfcrop in gs-9.27 ([forum:2622](https://okumuralab.org/tex/mod/forum/discuss.php?d=2622))
 
 - [pdfcrop fails with gs9.27 · Issue #63 · ho-tex/oberdiek · GitHub](https://github.com/ho-tex/oberdiek/issues/63)
@@ -113,21 +113,20 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 
 #### License {#g7897d81}
 
-[GNU Affero General Public License (AGPL), Artifex Commercial License](http://artifex.com/licensing/)
+[GNU Affero General Public License (AGPL), Artifex Commercial License](https://artifex.com/licensing/)
 
 現在の Ghostscript のオープンソースライセンスは GNU Affero General Public License (AGPL) です．
 [^1]
 
 #### リリース情報 {#jbfe1b2f}
 
-- [http://git.ghostscript.com/?p=ghostpdl.git;a=tags](http://git.ghostscript.com/?p=ghostpdl.git;a=tags)
 - [Ghostscript: Releases](https://www.ghostscript.com/releases.html)
+- [https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/)
 
 #### ChangeLog {#ua2f6680}
 
-<!-- -[[git.ghostscript.com Git:http://git.ghostscript.com/]] -->
-- [git.ghostscript.com Git - ghostpdl.git/summary](https://git.ghostscript.com/?p=ghostpdl.git)
-    - [コミットログ](http://git.ghostscript.com/?p=ghostpdl.git;a=shortlog)
+- [ghostpdl.git - Ghostscript and GhostPDL](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/)
+    - [コミットログ](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/log/)
 
 <!-- **Comment [#z51688d5] -->
 <!--  -->
