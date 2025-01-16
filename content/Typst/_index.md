@@ -15,12 +15,13 @@ Typst は新しい組版ソフトです。
 - [Typst: Compose papers faster](https://typst.app/)
 - [GitHub - typst/typst: A new markup-based typesetting system that is powerful and easy to learn.](https://github.com/typst/typst)
 
-### Tinymist Typst VS Code Extension {#r572076e}
+### エディタ {#y36f971a}
 
-Tinymist Typst VS Code Extension は [Visual Studio Code](</Visual Studio Code/>) の Typst 用 extension です。
+- [Typst/Editors](/Typst/Editors/)
 
-- [Tinymist Typst - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
-- [GitHub - Myriad-Dreamin/tinymist: Tinymist \[ˈtaɪni mɪst\] is an integrated language service for Typst \[taɪpst\].](https://github.com/Myriad-Dreamin/tinymist)
+### 本 {#tbad3f0a}
+
+- [Typst/Books](/Typst/Books/)
 
 ### LaTeX との比較 {#zeb27eee}
 
