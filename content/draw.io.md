@@ -9,8 +9,10 @@ pukiwiki: "draw.io"
 
 ## draw.io {#h79d927a}
 
-- [https://app.diagrams.net/](https://app.diagrams.net/)
-- [https://app.diagrams.net/](https://app.diagrams.net/) Web アプリ
-- [https://github.com/jgraph/drawio-desktop/releases](https://github.com/jgraph/drawio-desktop/releases) デスクトップアプリ
+- [https://draw.io/](https://draw.io/)
+- [https://www.drawio.com/](https://www.drawio.com/)
+- [Flowchart Maker &amp; Online Diagram Software](https://app.diagrams.net/) Web アプリ
+- [GitHub - jgraph/drawio-desktop: Official electron build of draw.io](https://github.com/jgraph/drawio-desktop) デスクトップアプリ
+    - [Releases · jgraph/drawio-desktop · GitHub](https://github.com/jgraph/drawio-desktop/releases)
 - [draw.io のメモ](https://sogog.hatenablog.com/entry/2022/06/06/232723)
 - [draw ioで数式を書く方法](https://qiita.com/takahashi-ry/items/cd085391118396b95537)
