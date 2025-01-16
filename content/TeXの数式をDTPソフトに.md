@@ -81,7 +81,7 @@ $ dvips -E testeq.dvi -o testeq.eps
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
 「[数式フォントの比較](https://warp.da.ndl.go.jp/info:ndljp/pid/11040512/oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 <!-- 「[[数式フォントの比較:https://web.archive.org/web/20180404184346/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html]]」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 -->
 
-InDesign で数式を扱う場合は [inDesignにTeXの数式を貼り込むスクリプト「インてふてふ」](http://sysys.blog.shinobi.jp/Entry/18/) が便利です。
+InDesign で数式を扱う場合は [Latex to InDesign](https://creativepro.com/files/kahrel/indesign/Latex-to-InDesign.html) や [latex.insert](https://github.com/ksatolab-uec/latex-insert) が便利です。
 
 ## Illustrator に配置 1 {#q2427dd4}
 
