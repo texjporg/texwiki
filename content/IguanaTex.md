@@ -10,7 +10,7 @@ pukiwiki: "IguanaTex"
 ## IguanaTex {#q71cd1c4}
 
 IguanaTex は LaTeX ソースをタイプセットし，PowerPoint に貼り付けることができる PowerPoint アドインです。
-v1.60 以降は Windows と Mac に公式対応しました。
+Windows と Mac に対応しています。
 pLaTeX にも対応しているので日本語も使用できます。
 
 ### 公式サイト {#n7a418b3}
@@ -32,13 +32,14 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 - lualatex + gs + convert
 - platex + dvipdfmx + gs + convert
 
-日本語を使用する場合は，スタンダードな pLaTeX + [dvipdfmx](/dvipdfmx/) を経由する方法か，[XeLaTeX](/XeTeX/) または [LuaLaTeX](/LuaTeX/) を経由する方法を選択します[^1]。
+日本語を使用する場合は，日本語対応の pLaTeX + [dvipdfmx](/dvipdfmx/) を経由する方法か，[LuaLaTeX](/LuaTeX/) または [XeLaTeX](/XeTeX/) を経由する方法を選択します[^1]。
 
 欧文用の LaTeX + [dvipng](/dvipng/) を使う変換方法以外では，[Ghostscript](/Ghostscript/) と [ImageMagick](/ImageMagick/) のインストールが必要です。
 また，Ghostscript によるアウトライン化の際に eps2write デバイスを利用しているため，Ghostscript のバージョンは 9.14 以上である必要があります（v1.46 で確認）。
 
 ### 関連リンク {#pc5b4e12}
 
+- [IguanaTeX環境構築(Windows)](https://qiita.com/ryo-ww/items/28d1cb29b4bc1f431a76)
 - [PowerPointでLaTeXを使う【IguanaTeX】](https://beamdaisuki.com/iguanatex/)
 - [【フォント】IguanaTexでPowerPointの数式フォントをまともにする](https://meltingrabbit.com/blog/article/2018061801/)
 - [IguanaTeX で日本語が通るようになった！](http://margaret-sdpara.blogspot.jp/2015/07/iguanatex.html)
