@@ -18,12 +18,12 @@ nkf は，文字コードを変換するツールです。
 ### ダウンロード {#q89745b2}
 
 - [https://ja.osdn.net/projects/nkf/](https://ja.osdn.net/projects/nkf/)
-- [http://jaist.dl.osdn.jp/nkf/](http://jaist.dl.osdn.jp/nkf/)
-- [http://iij.dl.osdn.jp/nkf/](http://iij.dl.osdn.jp/nkf/)
-- [http://ymu.dl.osdn.jp/nkf/](http://ymu.dl.osdn.jp/nkf/)
-- [http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](http://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
-- [http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](http://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
-- [http://ftp.iij.ad.jp/pub/osdn.jp/nkf/](http://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
+- [https://jaist.dl.osdn.jp/nkf/](https://jaist.dl.osdn.jp/nkf/)
+- [https://iij.dl.osdn.jp/nkf/](https://iij.dl.osdn.jp/nkf/)
+- [https://ymu.dl.osdn.jp/nkf/](https://ymu.dl.osdn.jp/nkf/)
+- [https://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](https://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
+- [https://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](https://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
+- [https://ftp.iij.ad.jp/pub/osdn.jp/nkf/](https://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
 
 ### インストール {#s4661abd}
 
