@@ -49,6 +49,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
     - [Linux/Linux Mint/Debian/Ubuntu#texlive](</Linux/Linux Mint/#texlive>)
     - [Linux/Fedora](/Linux/Fedora/#texlive)
     - [Linux/openSUSE](/Linux/openSUSE/#texlive)
+- [ChromeOS](/ChromeOS/)
 - [BSD](/BSD/)
     - [BSD/FreeBSD](/BSD/FreeBSD/#texlive)
     - [BSD/OpenBSD](/BSD/OpenBSD/#texlive)
@@ -209,17 +210,18 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 - [日本語版『TeX Live ガイド』](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
 - [https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](https://qiita.com/tags/texlive)
+- [TeX Liveの記事一覧 | Zenn](https://zenn.dev/topics/texlive)
 
 #### リリース情報 {#k5761e9e}
 
 [TeX Live - TeX Users Group](https://www.tug.org/texlive/) の Current release を参照．
 
-- \[[texlive\] Index of /tags](https://www.tug.org/svn/texlive/tags/)
-    - [log](https://www.tug.org/svn/texlive/tags/?view=log)
+- \[[ViewVC\] Index of: texlive/tags](https://svn.tug.org/texlive/tags/)
+    - [log](https://svn.tug.org/texlive/tags/?view=log)
 
 #### ChangeLog {#g68f0fa7}
 
 - [TeX Live and Subversion](https://www.tug.org/texlive/svn/)
-- \[[texlive\] Index of /trunk](https://www.tug.org/svn/texlive/trunk/)
-    - [log](https://www.tug.org/svn/texlive/trunk/?view=log)
-    - [ChangeLog](https://www.tug.org/svn/texlive/trunk/Build/source/ChangeLog?view=markup)
+- \[[ViewVC\] Index of: texlive/trunk](https://svn.tug.org/texlive/trunk/)
+    - [log](https://svn.tug.org/texlive/trunk/?view=log)
+    - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/ChangeLog?view=markup)
