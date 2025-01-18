@@ -64,11 +64,11 @@ TeX Live のインストールガイド
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ curl -OL http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ curl -OL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 <!-- Unrecognized archive formatのエラーはLオプションがないのが原因？ -->
-<!-- $ curl -O http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -->
+<!-- $ curl -O https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz -->
 
 install-tl-unx.tar.gz を展開します．
 
