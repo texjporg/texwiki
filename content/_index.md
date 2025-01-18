@@ -55,7 +55,7 @@ LaTeX は TeX の上に構築されたフリーの文書処理システムです
 
 ### TeX をインストールしよう {#w774cf70}
 
-詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OS ごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[Android](/Android/)\]，\[[iOS/iPadOS](/iOS/)\]．
+詳しいインストール方法は，[TeX 入手法](</TeX入手法/>) を参照してください．OS ごとのページ：\[[Windows](</Microsoft Windows/>)\]，\[[macOS](/Mac/)\]，\[[Linux](/Linux/)\]，\[[ChromeOS](/ChromeOS/)\]，\[[Android](/Android/)\]，\[[iOS/iPadOS](/iOS/)\]．
 
 インストールせずに Web で利用することもできます。 → [TeX を Web で](</TeXをWebで/>)（解説）
 
