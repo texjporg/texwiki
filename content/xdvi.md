@@ -41,12 +41,12 @@ X Window System
 
 - [xdvik / Code (main) / \[HEAD\] /trunk/xdvik](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/)
     - [log](https://sourceforge.net/p/xdvi/code/log/)
-- \[[texlive\] Index of /trunk/Build/source/texk/xdvik](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/?view=log)
-    - [CHANGES](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
+- \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/xdvik](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/)
+    - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/?view=log)
+    - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
+    - [CHANGES](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
 - [https://www.freshports.org/print/tex-xdvik/](https://www.freshports.org/print/tex-xdvik/)
-- [http://pkgsrc.se/print/tex-xdvi](http://pkgsrc.se/print/tex-xdvi)
+- [https://pkgsrc.se/print/tex-xdvi](https://pkgsrc.se/print/tex-xdvi)
 
 ### インストール {#jfa6e6ec}
 
