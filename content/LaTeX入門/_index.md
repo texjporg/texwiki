@@ -54,6 +54,7 @@ TeX および LaTeX の正式なロゴはこのページのタイトルのよう
 - [Windows](https://www.microsoft.com/ja-jp/windows)
 - [macOS](https://www.apple.com/jp/macos/)
 - [Linux](https://www.kernel.org/)
+- [ChromeOS](https://chromeos.google/)
 - UNIX 互換
     OS（[FreeBSD](https://www.freebsd.org/)
     など）
