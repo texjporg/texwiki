@@ -15,6 +15,11 @@ Typst は新しい組版ソフトです。
 - [Typst: Compose papers faster](https://typst.app/)
 - [GitHub - typst/typst: A new markup-based typesetting system that is powerful and easy to learn.](https://github.com/typst/typst)
 
+### Typst 公式ドキュメント {#o7845bc9}
+
+- [Typst Documentation](https://typst.app/docs/)
+- [Typstについて – Typstドキュメント日本語版](https://typst-jp.github.io/docs/)
+
 ### エディタ {#y36f971a}
 
 - [Typst/Editors](/Typst/Editors/)
