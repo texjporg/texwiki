@@ -48,14 +48,13 @@ TeXstudio 公式サイトの Download ページ
 
 MSYS2 からインストールもできます。
 
-- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-texstudio](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-texstudio)
-- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-texstudio](https://packages.msys2.org/package/mingw-w64-clang-x86_64-texstudio)
+- [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio)
+- [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio)
+- [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio)
 
 #### Windows {#ca4cc4c7}
 
 Windows 用のインストーラーをダウンロードして実行します。
-インストーラーを実行して「WindowsによってPCが保護されました」と表示される場合は
-インストーラーを右クリックして全般タブのセキュリティ:の項目の許可するをチェックして☑許可する(K)の状態にして再度インストーラーを実行します。
 
 #### Linux {#v5002500}
 
