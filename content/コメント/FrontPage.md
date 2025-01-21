@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LyX 2.4.3](https://www.lyx.org/) -- [LyX](/LyX/) 2025-01-22 (水) 05:32:47
 - [VimTeX 2.16](https://github.com/lervag/vimtex) -- [VimTeX](/VimTeX/) 2025-01-19 (日) 15:18:02
 - [TexText 1.11.0 (2025-01-06)](https://textext.github.io/textext/) -- [Inkscape](/Inkscape/) 2025-01-11 (土) 00:07:43
 - [LaTeX Workshop 10.7.5](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-01-06 (月) 19:52:38
