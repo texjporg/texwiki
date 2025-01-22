@@ -26,6 +26,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
     - 小川版 Drag &amp; Drop UpTeX：TeX Live のサブセット (scheme-small) に日本語パッケージ + α が予め追加されており，日本語フォントのセットアップを自動で簡単に行う GUI も付いています。 → [こちら](</Drag and Drop UpTeX/>)
 - パッケージ管理システムを利用する
     - Homebrew 向けパッケージ → [こちら](#texlive-install-brew)
+    - Homebrew Cask 向けパッケージ → [こちら](#texlive-install-brew-cask)
     - MacPorts 向けパッケージ → [こちら](#texlive-install-port)
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
