@@ -64,9 +64,9 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 #### macOS {#d9a96322}
 
-macOS 用の zip ファイルまたは dmg ファイルをダウンロードしてインストールします。
+macOS 用の zip ファイルをダウンロードしてインストールします。
 
-Homebrew でインストールすることもできます。
+Homebrew Cask でインストールすることもできます。
 
 > [https://formulae.brew.sh/cask/texstudio](https://formulae.brew.sh/cask/texstudio)
 
