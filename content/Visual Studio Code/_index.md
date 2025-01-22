@@ -37,9 +37,5 @@ MIT License
 ### その他の Extension {#d3eb8f1f}
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
-- [LaTeX Preview](https://marketplace.visualstudio.com/items?itemName=ajshort.latex-preview)
-- [Generic Input Method for VSCode](https://github.com/konn/vscode-generic-input-method)
 
-## 参考 {#x78d281f}
-
-- [Visual Studio Code の日本語問題まとめ](https://qiita.com/EbXpJ6bp/items/e6a0ed52bdcb60bfd145)
+<!-- *参考 [#x78d281f] -->
