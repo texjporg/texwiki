@@ -20,6 +20,11 @@ Typst は新しい組版ソフトです。
 - [Typst Documentation](https://typst.app/docs/)
 - [Typstについて – Typstドキュメント日本語版](https://typst-jp.github.io/docs/)
 
+### リリース情報 {#rd39b860}
+
+- [https://github.com/typst/typst/releases](https://github.com/typst/typst/releases)
+- [https://github.com/typst/typst/tags](https://github.com/typst/typst/tags)
+
 ### エディタ {#y36f971a}
 
 - [Typst/Editors](/Typst/Editors/)
