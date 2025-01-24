@@ -447,9 +447,9 @@ Cygwin 版の LyX は公式サイトの Cygwin 用バイナリ以外に Cygwin �
 
 macOS 用の dmg ファイルをダブルクリックします．
 
-Homebrew, MacPorts でインストールすることもできます．
+Homebrew Cask、MacPorts でインストールすることもできます．
 
-#### Homebrew {#se88dc8b}
+#### Homebrew Cask {#se88dc8b}
 
 - [https://formulae.brew.sh/cask/lyx](https://formulae.brew.sh/cask/lyx)
 
@@ -520,6 +520,7 @@ sudo zypper install lyx
 ## 関連リンク {#j2a0a89a}
 
 - [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
+- [TeXインストール | Fluid Dynamics Lab.  Kyoto Univ.](https://fd.kuaero.kyoto-u.ac.jp/ja/lyx_install)
 - [2024年版LyXの使い方](https://qiita.com/777shuang/items/b486f70ab252748f2e4f)
 - [&#8220;LyX&#8221; の検索結果  |  数学で行こう](https://blog.lets-go-with-math.net/?s=LyX)
 - [https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2](https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2)
