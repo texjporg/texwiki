@@ -242,9 +242,9 @@ LyX のインストーラーをダブルクリックして起動します。
 > <br>
 >
 > 　　インストールする構成要素を選　　　　　　　　　　　　　　　　　　　　　　　説明<br>
-> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> ファイル関連付け　　　　　　　構成要素にマウスカーソ<br>
-> 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> デスクトップ・アイコン　　　　ルを載せると、説明が表示<br>
-> 　　　　　　　　　　　　　　　　　　　　 \[+\]　<span style="color:#EEEEEE;background-color:#888888;">☑</span> 辞書　　　　　　　　　　　　　されます。<br>
+> 　　択：　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> ファイル関連付け　　　　　　　<span style="color:#888888;background-color:White;">構成要素にマウスカーソ</span><br>
+> 　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Green;">☑</span> デスクトップ・アイコン　　　　<span style="color:#888888;background-color:White;">ルを載せると、説明が表示</span><br>
+> 　　　　　　　　　　　　　　　　　　　　 \[+\]　<span style="color:#EEEEEE;background-color:#888888;">☑</span> 辞書　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">されます。</span><br>
 > 　　　　　　　　　　　　　　　　　　　　 \[+\]　☐ シソーラス<br>
 >
 > <br>
