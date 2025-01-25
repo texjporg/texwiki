@@ -180,86 +180,79 @@ LaTeX などのメッセージ出力欄においても，日本語が出力さ�
 
 WinShell のポータブル版は WinShell.exe と同じフォルダーの Settings フォルダーに設定ファイルが作成されます。
 
-### 初回起動時 {#kc4f0896}
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　<span style="color:Black;"><strong>WinShell</strong></span>　　　　　　　</ins></span><br>
-
-　 Choose Language<br>
-
-<br>
-
-　　<span style="color:Black;background-color:#EEEEEE;">\[Japanese　　　　　　　　　<strong>ᐯ</strong>\]</span>　← Japanese (日本語) で \[ 　　　OK　　　 \]<br>
-<br><br>
-
-　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　　　OK　　　 \]</span>
-
-***
-
 ### 一般 {#w5d7526c}
 
-メニューから \[オプション(O)\] → \[全般(G)...\] をクリックします。
+メニューから \[オプション\] &gt; \[一般\] をクリックします。
 
-デフォルトではバックアップファイルを作成しません。<br>
 重要な文書を作成する場合は，バックアップ(.bak)ファイル作成(C) にチェックを入れておきましょう。
 
 ***
 
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
-　<strong>\[ 一般　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-　　　　　言語　　　　　　　　　　　　　　　　　　　　　　　　　　　　ファイル形式<br>
-　　　　　　WinShell: 　 　 　 　 　　 　 　 　 　 　 　　　　　　　　　🔘 Windows<br>
-　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[Japanese　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　 ◯ Unix<br>
-　　　　　　スペルチェック:<br>
-　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[en_US 　 　 　 　 　 　 　 　 　　<strong>ᐯ</strong>\]</span><br>
+　<strong>\[ 一般　\]</strong>　　　　　　　　　　　　　　　<strong>WinShellの一般的なオプションの変更</strong><br>
+　\[ 主なTeXプログラムの設定 \]<br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　　言語<br>
+　\[ テキストエディタ \]　　　　　　　　　　WinShell:　　　　　　　　　　　　　　　　　　　　スペルチェック:<br>
+　\[ アップデート \]　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[Japanese 　 　 　　　　　&nbsp;&nbsp;<strong>ᐯ</strong>\]</span>　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[en_US 　 　 　 　 　 　 　 　 　　<strong>ᐯ</strong>\]</span><br>
+　\[ 情報 \]　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　追加(A)　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　編集(E)...　\]</span>　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　追加(A)　\]</span><br>
 
 <br>
 
-　　　　☑ バックアップ(.bak)ファイル作成(C)<br>
-　　　　☐ 終了時に自動保存(S)<br>
-　　　　☑ エラー行に自動ジャンプ(J)<br>
-　　　　☑ BibTeXのエディタ表示を利用する<br>
-　　　　☑ 起動時に開いているファイルを再読込(R)
+　　　　　　　　　　　　　　　　　　ファイル<br>
+　　　　　　　　　　　　　　　　　　　　☑ バックアップ(.bak)ファイル作成(C)<br>
+　　　　　　　　　　　　　　　　　　　　☐ 終了時に自動保存(S)<br>
+　　　　　　　　　　　　　　　　　　　　☑ 起動時に開いているファイルを再読み込み<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　BibTeXのフロントエンド<br>
+　　　　　　　　　　　　　　　　　　　　☑ 内臓のBibTeXフロントエンドを使用<br>
 
 ***
 
-### フォント {#y5d09419}
+### テキストエディタ {#y5d09419}
 
-初回起動時に言語選択で Japanese を選択した場合は, デフォルトで『スクリプト』が「日本語」，『エンコーディング』が「ShiftJIS」に設定されます。<br>
-[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避する場合は『エンコーディング』の「ShiftJIS」を「UTF-8」に変更して「ワールドワイド言語サポートで Unicode UTF-8 を使用」を ON にします。<br>
-フォントは確認の上ご自分の用途に応じたものを選んでください。<br>
+メニューから \[オプション\] &gt; \[テキストエディタ\] をクリックするとテキストエディタで使用するフォントが選択できます。<br>
+日本語のフォントを選択して、『スクリプト』から「日本語」、『エンコーディング』から「UTF-8」を選択します。<br>
+『エンコーディング』から「ShiftJIS」を選択することもできますが、[上述](/WinShell/#n7cba889)のように，ShiftJIS では文字化けが発生しますので，これを回避するために『エンコーディング』を「UTF-8」に変更して「ワールドワイド言語サポートで Unicode UTF-8 を使用」を ON にします。<br>
+日本語のフォントは確認の上ご自分の用途に応じたものを選んでください。<br>
 フォント名として「@ＭＳ ゴシック」のような “@” から始まる名前のフォントを選択するとテキストエディタの和文文字が横倒しに表示されてしまいますので，そのような設定は避けましょう。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]\[ 主なTeXプログラムの設定 \]\[ ユーザ指定プログラム \]\[ マクロ　\]</ins></span><strong>\[ フォント \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
-
-<br>
-
-　　　　フォント:　　　　　　　　　　　　　　　　　　　　　サイズ:　　　　スクリプト:<br>
-　　　　<span style="color:Black;background-color:White;">\[　　Meiryo UI　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　　<strong>ᐯ</strong>\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
-
-<br>
-
-　　　　例:　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:<br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　　　　<strong>ᐯ</strong>\]</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;"> 　　　　　　　　　　　　AaBbAaAa　　　　　　　　　　　　　</span><br>
-　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　☐ Bold Font<br>
-
-***
-
-### 自動スペルチェック {#d5530dfb}
-
 デフォルトでは自動スペルチェックが有効になっています。<br>
-自動スペルチェックが必要ない場合は \[オプション(O)\] → \[自動スペルチェック(A)\] をオフにします。
+自動スペルチェックが必要ない場合は ☐ 自動スペルチェックのオン/オフ にしてチェックを外します。<br>
+
+***
+
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>テキストエディター、BibTeXフロントエンド、ウィンドウの外観変更</strong><br>
+　\[ 主なTeXプログラムの設定 \]<br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[文書　　　　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　<strong>\[ テキストエディタ \]</strong>　　　　　　　フォント:　　　　　　　　　　　サイズ:　　　スクリプト:　　　　　　　　例:<br>
+　\[ アップデート \]　　　　　　　　　<span style="color:Black;background-color:White;">\[　メイリオ　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　<strong>ᐯ</strong>\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　</span><br>
+　\[ 情報 \]　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:　　　　　　　　　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　AaBbAaAa　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　<strong>ᐯ</strong>\]</span>　☐ ボールドフォント　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　構文の強調表示<br>
+　　　　　　　　　　　　　　　　　　　☑ 構文の強調表示　　　　　　　　<span style="color:Black;background-color:White;">\[&nbsp;<span style="color:Black;background-color:Navy;">\[&nbsp;　&nbsp;\]</span>　\\(La)TeX命令　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　色(C)...　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　既定値(D)　　\]</span><br>
+　　　　　　　　　　　　　　　　　　　☑ 対応する括弧の強調表示(M)<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　　一般<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ エラー行に自動ジャンプ(J)<br>
+　　　　　　　　　　　　　　　　　　ファイル形式　　　　☑ 折りたたみ設定/解除<br>
+　　　　　　　　　　　　　　　　　　🔘 Windows　　　　☑ 行番号表示/非表示<br>
+　　　　　　　　　　　　　　　　　　◯ Unix　　　　　　&nbsp;&nbsp;☑ 行の折返し設定/解除<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 自動スペルチェックのオン/オフ<br>
+
+<br>
+
+***
 
 ## 主なTeXプログラムの設定：「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合 {#vfb035c6}
 
