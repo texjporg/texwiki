@@ -12,7 +12,7 @@ pukiwiki: "SumatraPDF"
 
 SumatraPDF は Windows で動作するタブ切り替え型の軽量な PDF ビューアです。
 eBook (ePub, MOBI), XPS, DjVu, CHM, Comic Book (CBZ, CBR) などの形式も閲覧できます。
-[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，TeX のプレビューアに向いています。
+[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，LaTeX のプレビューアに向いています。
 PDF ファイルだけではなく PostScript ファイルも表示可能です。
 PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要です。
 
@@ -34,7 +34,7 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### インストール {#r04b7fad}
 
-[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html) から Installer をダウンロードします。
+[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer) から Installer をダウンロードします。
 後はダブルクリックして指示に従えばインストールが完了します。
 
 SumatraPDF インストール先フォルダは
@@ -51,7 +51,7 @@ SumatraPDF を全てのユーザーに対してインストールした場合は
 
 ### 使い方（SyncTeX の利用） {#wd50e1d3}
 
-[SyncTeX](/SyncTeX/) とは PDF ファイルと TeX ソースファイルの相互ジャンプを行うための機能です。
+[SyncTeX](/SyncTeX/) とは PDF ファイルと LaTeX ソースファイルの相互ジャンプを行うための機能です。
 TeX エンジンが SyncTeX に対応しており（主要なエンジンは対応しています）、かつ LaTeX ソースが -synctex=1 または -synctex=-1 オプションとともにコンパイルされている必要があります。（LaTeX ソースファイルと同じフォルダに拡張子が .synctex のファイルができます。）
 ジャンプはエディタ -&gt; SumatraPDF（forward search）と SumatraPDF -&gt; エディタ（inverse search）の両方が可能です。
 
