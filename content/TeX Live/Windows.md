@@ -227,7 +227,7 @@ TeX Live 2024 対応の事例です．
 
 - [TeX Live 2024 へアップデートした話  \[05/04/2024\]](https://www-cc.gakushuin.ac.jp/~20050003/z-main.html#texlive2024)
 - [TeXのインストール方法 Windows11(TeX live 2024)](https://mathtext.info/blog/2024/03/17/texlive2024/)
-- [初心者のためのLaTeX入門 #1 はじめてのTeX～TeX Live 2024をインストールしてみよう～](https://qiita.com/absolute0chain/items/f83bb36d60e90d32f80e)
+- \[[初心者\]LaTeXのインストールから使い方までこれ一本！](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)
 
 TeX Live 2023 対応の事例です．
 
