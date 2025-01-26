@@ -310,4 +310,4 @@ tlmgr update --self --all
 <!-- [[VirtualBox:https://www.virtualbox.org/]] などの仮想マシン上に [[Linux]] をインストールして TeX Live を使用する方法もあります。 -->
 <!-- Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。 -->
 
-[^1]: [さとるさんの環境では、職場のパソコンでは24分、自宅では1時間10分](https://x.com/satl_jpn/status/1638062983611031554)となり、環境によってかかる時間は異なります。
+[^1]: [さとるさんの環境では、職場のパソコンでは24分、自宅では1時間10分](https://x.com/satl_jpn/status/1638062983611031554)、[あるかっぱ/アルパカ本家さんの環境では5時間](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)となり、環境によってかかる時間は異なります。
