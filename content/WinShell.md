@@ -12,7 +12,7 @@ pukiwiki: "WinShell"
 WinShell は Windows 向けに開発された TeX 用の統合環境です。
 しかし，WinShell には
 
-- 「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! が発生する
+- 「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[LaTeX\]、\[pdfLaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
     [^1]
 
@@ -31,6 +31,7 @@ WinShell は Windows 向けに開発された TeX 用の統合環境です。
 WinShell は，多言語に対応した LaTeX と TeX のための統合環境 (IDE) です。
 
 - [WinShell - LaTeX User Front End](http://www.winshell.org/)
+- [https://web.archive.org/web/20241225120748/http://winshell.org/](https://web.archive.org/web/20241225120748/http://winshell.org/)
 
 <!-- Welcome to WinShell! -->
 <!-- It looks like you're using an ad blocker. That's okay. Who doesn't? -->
@@ -85,10 +86,10 @@ WinShell には
 
 - [ACROBAT　Xと美文書４版との整合性](https://okumuralab.org/tex/mod/forum/discuss.php?d=1761)
 
-Adobe Acrobat Reader は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。
+Adobe Acrobat Reader は SumatraPDF のメニューの \[☰\] &gt; \[ファイル(F)\] &gt; \[Adobe Reader で開く(A)\] から起動できます。
 Adobe Acrobat Reader でないと確認できない PDF ファイルを作成する場合は以下の記述を参照してください。
 
-WinShell 3.3.2.6 は Adobe Acrobat Reader, Adobe Acrobat, SumatraPDF の DDE に対応しています。
+WinShell は Adobe Acrobat Reader, Adobe Acrobat, SumatraPDF の DDE に対応しています。
 [^2]
 これらのソフトウェアを PDFView に設定すると，WinShell は PDF ファイルの表示に DDE を使用します。
 ただし，Adobe Acrobat Reader で DDE を使用して PDF ファイルを表示しようとすると，レジストリの HKEY_CLASSES_ROOT\acrobat\shell\open\ddeexec\application の (既定) の値によっては
@@ -282,7 +283,7 @@ Runtime Error! を回避するには，「ワールドワイド言語サポー�
 
 <br>
 
-　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\ptex2pdf.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)　　\]</span><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\ptex2pdf.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
 
 <br>
 
@@ -299,6 +300,94 @@ Runtime Error! を回避するには，「ワールドワイド言語サポー�
 　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ コンソールウィンドウに結果をリダイレクト</span><br>
 
 ***
+
+### BibTeX {#rac1047d}
+
+***
+
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>BibTeX</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\bibtexu.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>"%s"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F6<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　☑ LaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　☑ pdfLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ コンソールウィンドウに結果をリダイレクト</span><br>
+
+***
+
+### dviView {#qe7d598d}
+
+***
+
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>dviView</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\Users\＜ユーザー名＞\AppData\Local\SumatraPDF\SumatraPDF.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F7<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　☑ LaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ pdfLaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ コンソールウィンドウに結果をリダイレクト</span><br>
+
+***
+
+<!-- ** dvi2ps [#ce93346a] -->
+
+<!-- ** psView [#v5b366e3] -->
 
 ### pdfLaTeX {#y3e5092f}
 
@@ -324,7 +413,7 @@ Runtime Error! を回避するには，「ワールドワイド言語サポー�
 
 <br>
 
-　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\lualatex.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)　　\]</span><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\lualatex.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
 
 <br>
 
@@ -342,17 +431,49 @@ Runtime Error! を回避するには，「ワールドワイド言語サポー�
 
 ***
 
-### BibTeX {#rac1047d}
-
-### dviView {#qe7d598d}
-
-### dvi2ps {#ce93346a}
-
-### psView {#v5b366e3}
-
 ### pdfView {#x6d29bc8}
 
-## ユーザ指定プログラム {#b923de85}
+***
+
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>pdfView</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\Users\＜ユーザー名＞\AppData\Local\SumatraPDF\SumatraPDF.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F11<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　☑ pdfLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ コンソールウィンドウに結果をリダイレクト</span><br>
+
+***
+
+<!-- * ユーザ指定プログラム [#b923de85] -->
 
 ## SumatraPDF との連携 {#r950d1ac}
 
@@ -360,34 +481,46 @@ Runtime Error! を回避するには，「ワールドワイド言語サポー�
 
 pdfView を [SumatraPDF](/SumatraPDF/) に変更します。
 
-WinShell は pdfView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても pdfView を実行すれば自動的に forward search をしてくれます。
+WinShell は pdfView で \[参照(B)...\] から SumatraPDF.exe を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても pdfView を実行すれば自動的に forward search をしてくれます。<br>
+事前に pdfLaTeX を実行したくない場合は ☐ pdfLaTeXを先に実行 としてチェックを外してください。<br>
 
 ***
 
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
 
 <br>
 
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>pdfView</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\Users\＜ユーザー名＞\AppData\Local\SumatraPDF\SumatraPDF.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F11<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　☑ pdfLaTeXを先に実行<br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ コンソールウィンドウに結果をリダイレクト</span><br>
 
 ***
 
@@ -414,17 +547,7 @@ TeX ファイルが無ければ左上の「WS」と書かれたアイコンに�
 打ち込み終わったら，［保存］ボタンをクリックします。<br>
 新規作成した文書の場合はファイル名を聞いてきますので，適当に答えます（例えば “test.tex”）。<br>
 
-### PDF ファイルの出力・表示・印刷 {#ndd7120c}
-
-\[主なTeXプログラムの設定\] の \[BibTeX\] と \[DVI -> PS\] の項目に PDF ファイルを出力するための設定をします。<br>
-設定は以下を参照して設定します。<br>
-
-- [WinShell#BibTeX#Latexmk-upLaTeX の場合](/WinShell/#kf0c5dfa)
-- [WinShell#DVI -> PS#Latexmk-upLaTeX-pdfps の場合](/WinShell/#c693c76d)
-
-\[BibTeX\] に設定したプログラム (Latexmk-upLaTeX) を実行する場合は \[BibTeX\] ボタンをクリックまたは F6 キーをタイプします。<br>
-\[DVI -> PS\] に設定したプログラム (Latexmk-upLaTeX-pdfps) を実行する場合は \[DVI -> PS\] ボタンをクリックまたは F8 キーをタイプします。<br>
-コマンド プロンプトに処理状況が表示されます。<br>
+### PDF ファイルの作成・表示 {#ndd7120c}
 
 <!-- >もしユーザ自身が作成したファイルとは異なるファイルが処理されているようなら， -->
 <!-- ユーザの意図しない「プロジェクト」が用いられていないかどうかを -->
@@ -433,23 +556,19 @@ TeX ファイルが無ければ左上の「WS」と書かれたアイコンに�
 <!-- WinShell のインストール直後などではデモ用のプロジェクトが用意されていることがあるので， -->
 <!-- 必要ならそれを解除してください (See [[qa:48695]])。~ -->
 
+PDF ファイルを作成したい場合は \[主なTeXプログラムの設定\] の \[LaTeX\] と \[pdfLaTeX\] の項目に PDF ファイルを作成するための設定をします。<br>
+
+\[LaTeX\] に設定したプログラム (upLaTeX (ptex2pdf)) を実行する場合は \[LaTeX\] ボタンをクリックします。<br>
+\[pdfLaTeX\] に設定したプログラム (LuaLaTeX) を実行する場合は \[pdfLaTeX\] ボタンをクリックします。<br>
+
 エラーがなければ PDF ファイルが出力されます。<br>
 
-PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\] の \[DVIView\] と \[GSView\] と \[PDFView\] の項目に PDF ファイルを表示するための設定をします。<br>
-設定は以下を参照して設定します。<br>
+PDF ファイルを表示したい場合は \[主なTeXプログラムの設定\] の \[dviView\] と \[pdfView\] の項目に PDF ファイルを表示するための設定をします。<br>
 
-- [WinShell#DVIView#SumatraPDF の場合](/WinShell/#tbcf6fd8)
-- [WinShell#GSView#SumatraPDF の場合](/WinShell/#ea77c809)
-- [WinShell#PDFView#SumatraPDF の場合](/WinShell/#a003ae3e)
-
-\[DVIView\] に設定したプログラム (SumatraPDF) を実行する場合は \[DVIView\] ボタンをクリックまたは F7 キーをタイプします。<br>
-\[GSView\] に設定したプログラム (SumatraPDF) を実行する場合は \[GSView\] ボタンをクリックまたは F9 キーをタイプします。<br>
-\[PDFView\] に設定したプログラム (SumatraPDF) を実行する場合は \[PDFView\] ボタンをクリックまたは F11 キーをタイプします。<br>
+\[dviView\] に設定したプログラム (SumatraPDF) を実行する場合は \[dviView\] ボタンをクリックします。<br>
+\[pdfView\] に設定したプログラム (SumatraPDF) を実行する場合は \[pdfView\] ボタンをクリックします。<br>
 
 エラーがなければ PDF ファイルが表示されます。<br>
-
-PDF ファイルを印刷する場合は Adobe Acrobat Reader から PDF ファイルを開いて印刷します。<br>
-Adobe Acrobat Reader は SumatraPDF のメニューの \[☰\]-\[ファイル(F)\]-\[Adobe Reader で開く(A)\] から起動できます。<br>
 
 ### 補完機能 {#c8bc5b6d}
 
@@ -460,10 +579,8 @@ Ctrl + Space でキーワードの補完ができます。<br>
 
 ### コメントイン・コメントアウト機能 {#w8b8733a}
 
-範囲選択後 ［編集］ → ［注釈による無効化/無効化の解除］ （言語が English なら
-\[Edit\] → \[Un/Comment\]）と選ぶと，選択した範囲の行頭に “%” が付けられたり
-外されたりします。<br>
-ショートカットキー Ctrl + K で同様のことができます。
+範囲選択後に右クリック → ［注釈化/注釈解除］と選ぶと，選択した範囲の行頭に “%” が付けられたり外されたりします。<br>
+ショートカットキー Ctrl + K で同様のことができます。<br>
 
 ### プロジェクト機能を使おう {#p6a2f200}
 
@@ -471,7 +588,7 @@ WinShell にはプロジェクト機能があります。長めの TeX 文書を
 非常に役立つと思いますのでやり方を紹介しておきます。<br>
 
 まず，TeX ファイルはあらかじめコンパイルしておきます。<br>
-メニューバーより ［プロジェクト］ → ［新規プロジェクト］ で
+プロジェクトエクスプローラーより［新規プロジェクト］で
 プロジェクトファイルを作ります。<br>
 そして，［プロジェクト］ → ［追加］ → ［中心となるTeX文書］ で
 現在編集中のファイルを追加します。<br>
