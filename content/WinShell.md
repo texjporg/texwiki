@@ -63,13 +63,13 @@ WinShell には
 
 などの機能があります。
 
-### 日本語言語ファイル {#z273ed84}
-
-- [winshell-lang-ja_JP](https://github.com/new3kinnnn/winshell-lang-ja_JP)
-
-[new3kinnnn](https://github.com/new3kinnnn) さんが WinShell 日本語言語ファイルを公開されています。
-WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください。
-ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください。
+<!-- ** 日本語言語ファイル [#z273ed84] -->
+<!--  -->
+<!-- -[[winshell-lang-ja_JP:https://github.com/new3kinnnn/winshell-lang-ja_JP]] -->
+<!--  -->
+<!-- [[new3kinnnn:https://github.com/new3kinnnn]] さんが WinShell 日本語言語ファイルを公開されています。 -->
+<!-- WinShell に付属の日本語言語ファイルは，一部翻訳されていない部分があるので，気になる方はこれも合わせてダウンロードしてください。 -->
+<!-- ダウンロードしたファイルは WinShell の Translations フォルダーに置いてください。 -->
 
 ## 不具合 {#m3e6b0cc}
 
@@ -233,7 +233,7 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 　<strong>\[ テキストエディタ \]</strong>　　　　　　　フォント:　　　　　　　　　　　サイズ:　　　スクリプト:　　　　　　　　例:<br>
 　\[ アップデート \]　　　　　　　　　<span style="color:Black;background-color:White;">\[　メイリオ　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[10　　<strong>ᐯ</strong>\]</span> 　<span style="color:Black;background-color:#EEEEEE;">\[日本語　　　　　　　　<strong>ᐯ</strong>\]</span>　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　</span><br>
 　\[ 情報 \]　　　　　　　　　　　　　　　　　　　　　　　　　　　　エンコーディング:　　　　　　　　　　　　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　AaBbAaAa　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　<strong>ᐯ</strong>\]</span>　☐ ボールドフォント　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[UTF-8　　　　<strong>ᐯ</strong>\]</span>　☐ ボールドフォント&thinsp;　<span style="color:Black;background-color:#E5E5EE;">　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
 <br>
 
@@ -250,352 +250,117 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 　　　　　　　　　　　　　　　　　　◯ Unix　　　　　　&nbsp;&nbsp;☑ 行の折返し設定/解除<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　☑ 自動スペルチェックのオン/オフ<br>
 
-<br>
+***
+
+## 主なTeXプログラムの設定：「ワールドワイド言語サポートで Unicode UTF-8 を使用」が ON でエンコーディングが UTF-8 の場合 {#vfb035c6}
+
+「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合は \[LaTeX\]、\[pdfLaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
+
+Runtime Error! を回避するには，「ワールドワイド言語サポートで Unicode UTF-8 を使用」を ON にします。
+
+### LaTeX {#neba460c}
 
 ***
 
-## 主なTeXプログラムの設定：「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合 {#vfb035c6}
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 
-「ワールドワイド言語サポートで Unicode UTF-8 を使用」が OFF でエンコーディングが UTF-8 の場合に \[PDFLaTeX\], \[LaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
-
-Runtime Error! を回避するには，\[主なTeXプログラムの設定\] のプログラムの
-
-- LaTeX
-- PDFLaTeX
-
-の <strong>exeファイル名の値を削除</strong>するほかはありません。<br>
-こうすれば，間違って LaTeX, PDFLaTeX を使用しても警告メッセージが表示されるだけになり，Runtime Error! を回避できます。
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　<span style="color:Black;"><strong>WinShell</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-<br>
-
-　　　　　　　実行(.exe)ファイルがありません。<br>
-　　　　<span style="font-size:35px"><strong>!</strong></span>　　オプションの指定を確認してください。<br>
-
-<br>
-
-***
-
-それから
-
-- BibTeX
-- DVIView
-- DVI -> PS
-- GSView
-- PDFView
-
-の LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックをはずします。<br>
-LaTeX と PDFLaTeX 以外のプログラムは Runtime Error! が発生しないので，LaTeX と PDFLaTeX のプログラムを使用しなければ，エラーにならずに使用できます。<br>
-
-### LaTeX → exeファイル名の値を削除する {#neba460c}
-
-<strong>exeファイル名の値を削除</strong>します。<br>
-
-コマンドラインの値は削除してもしなくてもかまいません。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
 
 <br>
 
-　　プログラム名　　<ins>LaTeX</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">LaTeX　　　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　<span style="color:black;background-color:yellow;"><strong>exeファイル名 ← exeファイル名の値を削除する</strong></span><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F5 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### PDFLaTeX → exeファイル名の値を削除する {#y3e5092f}
-
-<strong>exeファイル名の値を削除</strong>します。<br>
-
-コマンドラインの値は削除してもしなくてもかまいません。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>LaTeX</ins><br>
 
 <br>
 
-　　プログラム名　　<ins>PDFLaTeX</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　<span style="color:black;background-color:yellow;"><strong>exeファイル名 ← exeファイル名の値を削除する</strong></span><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFLaTeX　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F10　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\ptex2pdf.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>-u -l -ot "-synctex=1 -interaction=nonstopmode" "%s.tex"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F5<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ pdfLaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ コンソールウィンドウに結果をリダイレクト</span><br>
+
+***
+
+### pdfLaTeX {#y3e5092f}
+
+***
+
+<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
+
+　\[ 一般　\]　　　　　　　　　　　　　　　<strong>TeX ディストリビューションのコマンドラインコールの変更</strong><br>
+　<strong>\[ 主なTeXプログラムの設定 \]</strong><br>
+　\[ ユーザ指定プログラム \]<br>
+　\[ マクロ　\]　　　　　　　　　　　プログラム:<br>
+　\[ テキストエディタ \]　　　　　　　LaTeX<br>
+　\[ アップデート \]　　　　　　　　　BibTeX<br>
+　\[ 情報 \]　　　　　　　　　　　　　dviView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;dvi2ps<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;psView<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfLaTeX<br>
+　　　　　　　　　　　　　　　　　&nbsp;&thinsp;pdfView<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　名前:　　　　　　<ins>pdfLaTeX</ins><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2024\bin\windows\lualatex.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)　　\]</span><br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　コマンドライン:　<ins>-synctex=1 -interaction=nonstopmode "%s.tex"</ins>　　サフィックスも追加してください！<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　引数:<br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
+　　　　　　　　　　　　　　　　　実行キー:　　　　F10<br>
+
+<br>
+
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ pdfLaTeXを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ dvi2psを先に実行</span><br>
+　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☑ コンソールウィンドウに結果をリダイレクト</span><br>
 
 ***
 
 ### BibTeX {#rac1047d}
 
-LaTeXを先に実行 と PDFLaTeXを先に実行 のチェックを外します。<br>
+### dviView {#qe7d598d}
 
-#### Latexmk-upLaTeX の場合 {#kf0c5dfa}
+### dvi2ps {#ce93346a}
 
-以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です。<br>
+### psView {#v5b366e3}
 
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>BibTeX</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">BibTeX　　　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>rundll32.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/bibtexu '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/upmendex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvipdf=q/dvipdfmx '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -norc -gg -pdfdvi '+'%s.tex';system(cmd)"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F6 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### DVIView {#qe7d598d}
-
-LaTeXを先に実行 のチェックを外します。<br>
-
-#### SumatraPDF の場合 {#tbcf6fd8}
-
-■ SumatraPDF を前面に表示したい場合<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>DVIView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-reuse-instance "%s.pdf" -forward-search "%c.tex" %l</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F7 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-■ SumatraPDF を前面に表示したくない場合<br>
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>DVIView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>fwdsumatrapdf.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>"%s.pdf" "%c.tex" %l</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F7 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### DVI -> PS {#ce93346a}
-
-LaTeXを先に実行 のチェックを外します。<br>
-
-#### Latexmk-upLaTeX-pdfps の場合 {#c693c76d}
-
-以下の設定は [Ruby](/Ruby/) を使用しているので Ruby の処理系が必要です。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>DVI -> PS</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>rundll32.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☑ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVI -> PS　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>shell32,ShellExec_RunDLL cmd /c ruby -e "cmd='latexmk -e '+0x22.chr+'$latex=q/uplatex '+0x25.chr+'O'+' -kanji=utf8 -no-guess-input-enc -synctex=1 '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$bibtex=q/bibtexu '+0x25.chr+'O'+' '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$biber=q/biber '+0x25.chr+'O'+' --bblencoding=utf8 -u -U --output_safechars '+0x25.chr+'B'+'/'+0x22.chr+' -e '+0x22.chr+'$makeindex=q/upmendex '+0x25.chr+'O'+' -o '+0x25.chr+'D'+' '+0x25.chr+'S'+'/'+0x22.chr+' -e '+0x22.chr+'$dvips=q/dvips '+0x25.chr+'O'+' -z -f '+0x25.chr+'S'+' '+0x7c.chr+' convbkmk -u '+0x3e.chr+' '+0x25.chr+'D'+'/'+0x22.chr+' -e '+0x22.chr+'$ps2pdf=q/ps2pdf.exe '+0x25.chr+'O'+' '+0x25.chr+'S'+' '+0x25.chr+'D'+'/'+0x22.chr+' -norc -gg -pdfps '+'%s.tex';system(cmd)"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F8 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### GSView {#v5b366e3}
-
-LaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<br>
-
-#### SumatraPDF の場合 {#ea77c809}
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>GSView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">GSView　　　　　　　　　　　　</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-reuse-instance "%s.pdf"</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ DVIPSを先に実行<br>
-　　実行キー:　　　　引数:<br>
-　　F9 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### PDFView {#x6d29bc8}
-
-PDFLaTeXを先に実行 のチェックを外します。<br>
-Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，PDF ファイルのプレビューには向いていません。<br>
-PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/) を使用して，最終確認や印刷をする場合に Adobe Acrobat Reader を使用することをおすすめします。<br>
-
-#### SumatraPDF の場合 {#a003ae3e}
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>PDFView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVIView<br>
-　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins> (64-bit 版 Windows の場合) <ins>-reuse-instance -inverse-search "\\"C:\Program Files\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins> (32-bit 版 Windows の場合)<br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
+### pdfView {#x6d29bc8}
 
 ## ユーザ指定プログラム {#b923de85}
-
-\[ユーザ指定プログラム\] は“DOS”のチェックの ON, OFF を指定できます。<br>
-“DOS”のチェック (☑) は，exe ファイルが DOS (コンソール) アプリケーションで，出力先をコンソールではなく WinShell の Output Window に変更することを意味しています。<br>
-チェックを付けていないと，コマンド プロンプトが出るのは正しい動作です。<br>
-従って<br>
-
-- Window アプリケーションの場合
-- コンソールアプリケーションでコンソールに出力したい場合
-
-は“DOS”のチェックをはずしてください。<br>
-
-LaTeXを先に実行 と PDFLaTeXを先に実行 と DVIPSを先に実行 のチェックを外します。<br>
 
 ## SumatraPDF との連携 {#r950d1ac}
 
 ### forward and inverse search {#haf1936b}
 
-PDFView を [SumatraPDF](/SumatraPDF/) に変更します。
+pdfView を [SumatraPDF](/SumatraPDF/) に変更します。
 
-WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても PDFView を実行すれば自動的に forward search をしてくれます。
+WinShell は pdfView に SumatraPDF を指定すれば inverse search の設定を自動的に行い forward search の設定をしなくても pdfView を実行すれば自動的に forward search をしてくれます。
 
 ***
 
@@ -616,89 +381,13 @@ WinShell は PDFView に SumatraPDF を指定すれば inverse search の設定�
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">PDFView　　　　　　　　　　　　</span><br>
-　　コマンドライン 　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins> (64-bit 版 Windows の場合) <ins>-reuse-instance -inverse-search "\\"C:\Program Files\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins> (32-bit 版 Windows の場合)<br>
+　　コマンドライン 　<ins>-reuse-instance -inverse-search "\\"C:\Program Files (x86)\WinShell\WinShell.exe\\" -c \\"%f\\" -l %l" "%s.pdf"</ins><br>
 　　　　　　　　　　　　　サフィックスも追加してください！<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ LaTeXを先に実行</span><br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ PDFLaTeXを先に実行<br>
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
 　　実行キー:　　　　引数:<br>
 　　F11　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-### forward search {#ne2bfee1}
-
-#### SumatraPDF を前面に表示したい場合 {#l68af5c0}
-
-DVIView を [SumatraPDF](/SumatraPDF/) に変更します。
-
-コマンドラインに
-
-```
--reuse-instance "%s.pdf" -forward-search "%c.tex" %l
-```
-
-を設定します。
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>DVIView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe"</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>-reuse-instance "%s.pdf" -forward-search "%c.tex" %l</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F7 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
-
-***
-
-#### SumatraPDF を前面に表示したくない場合 {#ufb9a660}
-
-[SumatraPDF/fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) の fwdsumatrapdf.exe を使用します。<br>
-
-***
-
-<span style="color:#ACDEFE;background-color:#ACDEFE;"><ins>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;"><strong>オプション</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
-
-　<span style="color:Black;background-color:#EEEEEE;"><ins>\[ 一般　\]</ins></span><strong>\[ 主なTeXプログラムの設定 \]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ ユーザ指定プログラム \]\[ マクロ　\]\[ フォント \]\[ 構文の強調表示 \]\[ ◀ \]\[ ▶ \]</ins></span><br>
-
-<br>
-
-　　プログラム名　　<ins>DVIView</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　プログラム:<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　LaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　BibTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:White;background-color:#1188FF;">DVIView 　　　　　　　　　　　　</span><br>
-　　exeファイル名 　<ins>fwdsumatrapdf.exe</ins><br>
-　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　参照(B)...　　　　\]</span>　　<span style="color:#888888;background-color:White;">☐ DOS</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　DVI -> PS<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　GSView<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFLaTeX<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　PDFView<br>
-　　コマンドライン 　<ins>"%s.pdf" "%c.tex" %l</ins><br>
-　　　　　　　　　　　　　サフィックスも追加してください！<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　☐ LaTeXを先に実行<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ PDFLaTeXを先に実行</span><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:White;">☐ DVIPSを先に実行</span><br>
-　　実行キー:　　　　引数:<br>
-　　F7 　　　　　　　　%s&lt;.tex>&lt;.dvi>&lt;.ps>&lt;.pdf><br>
 
 ***
 
@@ -706,17 +395,9 @@ DVIView を [SumatraPDF](/SumatraPDF/) に変更します。
 
 inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下のように設定します。
 
-- 64-bit 版 Windows の場合
-
-    ```
-    "C:\Program Files (x86)\WinShell\WinShell.exe" -c "%f" -l %l
-    ```
-
-- 32-bit 版 Windows の場合
-
-    ```
-    "C:\Program Files\WinShell\WinShell.exe" -c "%f" -l %l
-    ```
+```
+"C:\Program Files (x86)\WinShell\WinShell.exe" -c "%f" -l %l
+```
 
 ダブルクリックで対応する TeX 文書の該当箇所にジャンプします。
 
@@ -725,10 +406,10 @@ inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\
 ### TeX ファイルの作成 {#n92b6cac}
 
 すでに TeX ファイルがあれば WinShell にドラッグ &amp; ドロップしてファイルを開きます。<br>
-TeX ファイルが無ければメニューの \[ファイル(F)\]-\[新規\]-\[TeX文書\] で新規作成できます。<br>
-ツールバーの \[新規TeX文書\] をクリックして作成することもできます。<br>
-プロジェクトウィンドウの右側にエディタウィンドウが開きます。<br>
-このエディタウィンドウに LaTeX の文書を打ち込みます。<br>
+TeX ファイルが無ければ左上の「WS」と書かれたアイコンにマウスカーソルを合わせると
+\[ファイルとオプション\] が表示されるのでクリックして \[新規\] &gt; \[新規TeX文書\] で新規作成できます。<br>
+プロジェクトウィンドウの右側のドキュメントエリアが表示されます。<br>
+このドキュメントエリアに LaTeX の文書を打ち込みます。<br>
 
 打ち込み終わったら，［保存］ボタンをクリックします。<br>
 新規作成した文書の場合はファイル名を聞いてきますので，適当に答えます（例えば “test.tex”）。<br>
@@ -835,7 +516,8 @@ WinShell を起動し，メニューから \[ヘルプ(H)\] → \[アップデ�
 
 ## 関連リンク {#i06febca}
 
-- [http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell](http://chiebukuro.search.yahoo.co.jp/search?sort=16&p=WinShell)
+- [forumSearch:WinShell](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=WinShell)
+- [https://x.com/search?q=WinShell%20lang%3Aja&f=live](https://x.com/search?q=WinShell%20lang%3Aja&f=live)
 
 [^1]: [ptexenc](/ptexenc/) に書かれているような，ファイル名に ShiftJIS のいわゆる「ダメ文字」を含む場合に -jobname= で指定してコンパイルする方法も，WinShell ではクラッシュを引き起こします。ただし -jobname= を指定してコンパイルするとクラッシュする現象は %s の値を % を使用しない Windows PowerShell や Ruby などの変数に代入して使用することにより回避することができます。
 [^2]: DDE については [Wikipedia.ja:動的データ交換](https://ja.wikipedia.org/wiki/%E5%8B%95%E7%9A%84%E3%83%87%E3%83%BC%E3%82%BF%E4%BA%A4%E6%8F%9B) を参照してください。
