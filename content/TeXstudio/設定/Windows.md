@@ -48,13 +48,11 @@ LuaLaTeX
 外部PDFビューア
 : &nbsp;
 
-: "C:\Users\\&lt;ユーザー名>\AppData\Local\SumatraPDF" -reuse-instance -inverse-search """"C:\Program Files\texstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
+: "C:\Users\\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search '"C:\Program Files\texstudio\texstudio.exe" "&#x25;&#x25;f" -line &#x25;&#x25;l' "?am.pdf" -forward-search "?c:am.tex" @
 
-: "C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files\texstudio\texstudio.exe""" """&#x25;&#x25;f""" -line &#x25;&#x25;l" "?am.pdf" -forward-search "?c:am.tex" @
+: dde:///"C:\Users\\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
 
-: dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)\]
-
-: dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
+: dde:///"C:\Users\\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe":SUMATRA/control/\[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)\]
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
@@ -166,16 +164,8 @@ LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマ
 
 forward and inverse search は 外部PDFビューア に以下のように設定します．<br>
 
-SumatraPDF をデフォルトでインストールした場合は
-
 ```
-"C:\Users\<ユーザー名>\AppData\Local\SumatraPDF" -reuse-instance -inverse-search """"C:\Program Files\texstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
-```
-
-SumatraPDF を全てのユーザーに対してインストールした場合は
-
-```
-"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search """"C:\Program Files\texstudio\texstudio.exe""" """%%f""" -line %%l" "?am.pdf" -forward-search "?c:am.tex" @
+"C:\Users\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe" -reuse-instance -inverse-search '"C:\Program Files\texstudio\texstudio.exe" "%%f" -line %%l' "?am.pdf" -forward-search "?c:am.tex" @
 ```
 
 ### forward search {#xd4d4cea}
@@ -185,7 +175,7 @@ SumatraPDF を全てのユーザーに対してインストールした場合は
 forward search は 外部PDFビューア に以下のように設定します．<br>
 
 ```
-dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
+dde:///"C:\Users\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,1)]
 ```
 
 #### SumatraPDF を前面に表示したくない場合 {#pa03cf5d}
@@ -193,12 +183,12 @@ dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSear
 forward search は 外部PDFビューア に以下のように設定します．<br>
 
 ```
-dde:///"C:\Program Files\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
+dde:///"C:\Users\%USERNAME%\AppData\Local\SumatraPDF\SumatraPDF.exe":SUMATRA/control/[ForwardSearch("?am.pdf","?c:am.tex",@,0,0,0)]
 ```
 
 ### inverse search {#bbb88480}
 
-inverse search は SumatraPDF の \[☰\]-\[設定(S)\]-\[オプション(O)...\] の逆順検索コマンドラインの設定に以下のように設定します．<br>
+inverse search は SumatraPDF の \[☰\] &gt;\[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に以下のように設定します．<br>
 
 ```
 "C:\Program Files\texstudio\texstudio.exe" "%f" -line %l
