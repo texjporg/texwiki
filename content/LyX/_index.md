@@ -548,7 +548,8 @@ sudo zypper install lyx
 
 ### License {#pb9a4019}
 
-[GPLv2](https://www.lyx.org/License) ([日本語訳](https://www.lyx.org/WebJa.License))
+- [GPLv2](https://www.lyx.org/License) ([日本語訳](https://www.lyx.org/WebJa.License))
+- [git.lyx.org Git - lyx.git/blob - COPYING](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=COPYING;hb=HEAD)
 
 ### リリース情報 {#k8ba7cf7}
 
