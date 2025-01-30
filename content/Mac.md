@@ -116,6 +116,12 @@ macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換�
 - [Apple、macOS 14 SonomaでPostScriptとEPSファイルをPDFへ変換する機能を削除。これによりAdobeのAcrobatなどでPDFファイルを印刷できなくなっているので注意を。](https://applech2.com/archives/20230612-apple-remove-ps-eps-to-pdf-from-macos-14-sonoma.html)
 - [Apple、macOS 13 VenturaのプレビューアプリでPostScript(.ps/.eps)ファイルのサポートを終了。](https://applech2.com/archives/20221028-macos-13-ventura-preview-app-drop-support-postscript.html)
 
+## 署名の無いアプリについて {#u25b42a8}
+
+macOS Sequoia 15 から署名の無いアプリを開く手続きが変わったようです。
+
+- \[[解決\]macOS Sequoiaで野良アプリが開けない問題](https://note.com/5mingame2/n/n5912b7ce9474)
+
 ## 周辺ツールの利用 {#tools}
 
 ### 文献管理ツール {#bibtex}
