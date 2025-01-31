@@ -48,9 +48,9 @@ Windows の場合は msi 形式のファイルをダウンロードして実行�
 
 macOS の場合は dmg 形式のファイルをダウンロードして展開します．
 
-Homebrew でインストールすることもできます．
+Homebrew Cask でインストールすることもできます．
 
-> [https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texmaker.rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/texmaker.rb)
+> [https://formulae.brew.sh/cask/texmaker](https://formulae.brew.sh/cask/texmaker)
 
 ```
 brew install --cask texmaker
@@ -70,7 +70,6 @@ texmaker_jp.qm を texmaker.exe と同じフォルダーに置いて Texmaker �
 <ins>O</ins>ptions &gt; Interface Language &gt; jp を選択して Texmaker を再起動するとメニューが日本語化されます．
 
 - [TexMaker で日本語文書を作成する環境を構築する](https://wiis.info/blog/how-to-write-japanese-documents-with-texmaker/#elementor-toc__heading-anchor-2)
-- [UbuntuでTeXmakerの日本語化（UI+日本語対応)](https://jp.magicode.io/nibosea/articles/8ac5ebe0b96c48e98bc65af8f3dcaae7)
 
 ## 不具合 {#h6093782}
 
