@@ -13,6 +13,8 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- lualatex ltjsbook.clsで \\@biblabelが変更できない  文献のブロックごとに文献番号の前にアルファベットをつけて区別したい。 -- 星野勉 2025-01-31 (金) 12:34:04
+- lualatex ltjsbook.clsde \\@biblabelが変更できない -- 星野勉 2025-01-31 (金) 12:32:53
 - [LyX 2.4.3](https://www.lyx.org/) -- [LyX](/LyX/) 2025-01-22 (水) 05:32:47
 - [VimTeX 2.16](https://github.com/lervag/vimtex) -- [VimTeX](/VimTeX/) 2025-01-19 (日) 15:18:02
 - [TexText 1.11.0 (2025-01-06)](https://textext.github.io/textext/) -- [Inkscape](/Inkscape/) 2025-01-11 (土) 00:07:43
