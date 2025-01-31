@@ -128,8 +128,8 @@ DocView を使用すると Emacs で PDF/PS/DVI ファイルを表示するこ�
 
 ### inverse search {#a06810d6}
 
-- [Emacs Server - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html#Emacs-Server)
-- [emacsclient Options - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html)
+- [Emacs Server - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html#Emacs-Server)、[Emacs Server (GNU Emacs Manual (Japanese Translation))](https://ayatakesi.github.io/emacs/29.4/html/Emacs-Server.html#Emacs-Server)
+- [emacsclient Options - GNU Emacs Manual](http://www.gnu.org/software/emacs/manual/html_node/emacs/emacsclient-Options.html)、[emacsclient Options (GNU Emacs Manual (Japanese Translation))](https://ayatakesi.github.io/emacs/29.4/html/emacsclient-Options.html)
 
 ```
 M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述しておきます
@@ -138,7 +138,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 inverse search は SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に
 
 ```
-C:\emacs\bin\emacsclientw.exe --no-wait +%l "%f"
+"C:\Program Files\Emacs\emacs-29.4\bin\emacsclientw.exe" --no-wait +%l "%f"
 ```
 
 です．
