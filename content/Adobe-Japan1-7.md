@@ -62,6 +62,7 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
     - [Windows10の游明朝はどこまでAdobe-Japan1-7をサポートするか?](https://okumuralab.org/tex/mod/forum/discuss.php?d=2953)
     - [Windows10の游フォントで\CIDしたい話](https://zrbabbler.hatenablog.com/entry/2020/10/10/235701)
         - [https://github.com/zr-tex8r/ttf-cmaps](https://github.com/zr-tex8r/ttf-cmaps) を利用するとTeXLive2021ではdvipdfmxでフォント埋め込みできます。
+    - LuaTeX-jaで\usepackage\[yu-win10\]{luatexja-preset}\usepackage{luatexja-otf}とした場合、Unicode外のグリフは出力されないようです。
 
 ### CID 番号参照用のサンプルへのリンク {#dc96cb5d}
 
