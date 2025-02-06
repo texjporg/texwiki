@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [IPSJ class v4.1](https://www.ipsj.or.jp/journal/submit/style.html) -- [IPSJ](/IPSJ/) 2025-02-06 (木) 22:34:03
 - lualatex ltjsbook.clsで \\@biblabelが変更できない  文献のブロックごとに文献番号の前にアルファベットをつけて区別したい。 -- 星野勉 2025-01-31 (金) 12:34:04
 - lualatex ltjsbook.clsde \\@biblabelが変更できない -- 星野勉 2025-01-31 (金) 12:32:53
 - [LyX 2.4.3](https://www.lyx.org/) -- [LyX](/LyX/) 2025-01-22 (水) 05:32:47
