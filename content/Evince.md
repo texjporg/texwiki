@@ -67,9 +67,9 @@ Windows, macOS, Linux
 ### Windows {#f2460848}
 
 - [https://packages.msys2.org/search?t=binpkg&q=evince](https://packages.msys2.org/search?t=binpkg&q=evince)
-    - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-evince](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-evince)
-    - [https://packages.msys2.org/package/mingw-w64-clang-x86_64-evince](https://packages.msys2.org/package/mingw-w64-clang-x86_64-evince)
-    - [https://packages.msys2.org/package/mingw-w64-clang-aarch64-evince](https://packages.msys2.org/package/mingw-w64-clang-aarch64-evince)
+    - [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-evince](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-evince)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-evince](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-evince)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-evince](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-evince)
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-evince)
 - [FOSS な PDF Viewer for Windows (Evince も導入できた)](https://text.baldanders.info/remark/2019/03/about-free-software-pdf-viewers/)
 
