@@ -43,6 +43,8 @@ TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 #### 内蔵 LuaJIT 処理系のバージョン {#db5f144e}
 
+TeX Live 2025 には LuaJIT 2.1.1736781742 が収録されています。
+
 TeX Live 2024 には LuaJIT 2.1.0-beta3 が収録されています。
 
 TeX Live 2023 には LuaJIT 2.1.0-beta3 が収録されています。
@@ -63,7 +65,7 @@ LuajitTeX は Windows, macOS, Linux, \*BSD で動作します。
 
 LuajitTeX は TeX Live がサポートしている全ての環境で提供されているわけではありません。
 
-[x86_64-solaris](http://www.tug.org/svn/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
+[x86_64-solaris](https://svn.tug.org/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
 
 ### インストール {#e0acc4f5}
 
