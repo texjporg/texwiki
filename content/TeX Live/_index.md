@@ -28,7 +28,7 @@ TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/)
 ### 動作環境 {#j0ebf49b}
 
 - [Supported systems](https://www.tug.org/texlive/doc.html#platforms)
-- [https://www.tug.org/svn/texlive/trunk/Master/bin/](https://www.tug.org/svn/texlive/trunk/Master/bin/)
+- [https://svn.tug.org/texlive/trunk/Master/bin/](https://svn.tug.org/texlive/trunk/Master/bin/)
 
 を参照．
 
@@ -61,7 +61,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
-これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2024/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2025/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
