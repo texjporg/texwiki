@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2024 には以下のパッケージが収録されています。
+MacTeX-2025 には以下のパッケージが収録されています。
 
-#### TeXLive-2024 {#v03e546d}
+#### TeXLive-2025 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -67,7 +67,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [hintview](https://hint.userweb.mwn.de/hint/hintview.html)
     - [HINT文書](https://hint.userweb.mwn.de/hint/hitex.html)ビューア。
 
-#### Ghostscript-10.03.0 {#n1354f54}
+#### Ghostscript-10.04.0 {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
@@ -100,9 +100,12 @@ MacTeX のインストールの概略は以下のとおりです。
 1. 必要に応じて，付属ソフトの設定やアップデートを行います。
     1. [LyX](/LyX/), [TeXstudio](/TeXstudio/), [Texmaker](/Texmaker/), [TeXworks](/TeXworks/), [TeXShop](/TeXShop/) などのソフトを用いる場合は，それぞれのソフトに対し適切な設定が必要です。
 
-#### Homebrew でインストール {#s59a1243}
+#### Homebrew Cask でインストール {#s59a1243}
 
-Homebrew で MacTeX をインストールできます。
+- [https://formulae.brew.sh/cask/mactex](https://formulae.brew.sh/cask/mactex)
+- [https://formulae.brew.sh/cask/mactex-no-gui](https://formulae.brew.sh/cask/mactex-no-gui)
+
+Homebrew Cask で MacTeX をインストールできます。
 
 GUI-Applications ありの場合
 
