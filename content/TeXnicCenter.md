@@ -139,7 +139,7 @@ UTF-8 で保存する場合は \[File\]-\[Save As...\] の Encoding のリスト
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2024\bin\windows</ins><br>
+　　　　　　　　　　　　　　　　　　　<ins>C:\texlive\2025\bin\windows</ins><br>
 
 <br>
 
@@ -367,7 +367,7 @@ LaTeX => PS => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2024\bin\windows\uplatex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\uplatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-no-guess-input-enc -kanji=utf8 -synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -375,7 +375,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2024\bin\windows\bibtexu.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -383,7 +383,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2024\bin\windows\upmendex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -404,7 +404,7 @@ LaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2024\bin\windows\pdflatex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\pdflatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -412,7 +412,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2024\bin\windows\bibtex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\bibtex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -420,7 +420,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2024\bin\windows\makeindex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\makeindex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -441,7 +441,7 @@ LuaLaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2024\bin\windows\lualatex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\lualatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -449,7 +449,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2024\bin\windows\bibtexu.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -457,7 +457,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2024\bin\windows\upmendex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -478,7 +478,7 @@ XeLaTeX => PDF<br>
 ☑ Run (La)TeX in this profile<br>
 ☐ Stop Compilation, if LaTeX-Error occures<br>
 Path to the (La)TeX<br>
-<ins>C:\texlive\2024\bin\windows\xelatex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\xelatex.exe</ins><br>
 
 Command line arguments to pass to the compiler:<br>
 <ins>-synctex=1 -interaction=nonstopmode "%wm"</ins><br>
@@ -486,7 +486,7 @@ Command line arguments to pass to the compiler:<br>
 BibTeX<br>
 ☐ Do not use BibTeX in this profile<br>
 Path to BibTeX<br>
-<ins>C:\texlive\2024\bin\windows\bibtexu.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\bibtexu.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm"</ins><br>
@@ -494,7 +494,7 @@ Command line arguments to pass to<br>
 MakeIndex<br>
 ☐ Do not use MakeIndex in this profile<br>
 Path to MakeIndex<br>
-<ins>C:\texlive\2024\bin\windows\upmendex.exe</ins><br>
+<ins>C:\texlive\2025\bin\windows\upmendex.exe</ins><br>
 
 Command line arguments to pass to<br>
 <ins>"%tm.idx" -t "%tm.ilg" -o "%tm.ind"</ins><br>
@@ -537,7 +537,7 @@ LaTeX => DVI => PDF<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2024\bin\windows\dvipdfmx.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2025\bin\windows\dvipdfmx.exe</ins><br>
 Arguments　　　　　 <ins>"%bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -578,7 +578,7 @@ Ghostscript (ps2pdf)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2024\bin\windows\dvips.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2025\bin\windows\dvips.exe</ins><br>
 Arguments　　　　　 <ins>-Ppdf -o "%Bm.ps" "%Bm.dvi"</ins><br>
 Input<br>
 Output<br>
@@ -612,7 +612,7 @@ DviPs (PDF)<br>
 
 <br>
 
-Executable:　　　　　<ins>C:\texlive\2024\bin\windows\rungs.exe</ins><br>
+Executable:　　　　　<ins>C:\texlive\2025\bin\windows\rungs.exe</ins><br>
 Arguments　　　　　 <ins>-sPAPERSIZE=a4 -dSAFER -dBATCH -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile="%bm.pdf" -c save pop -f "%bm.ps"</ins><br>
 Input<br>
 Output<br>
