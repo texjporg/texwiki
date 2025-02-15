@@ -189,6 +189,7 @@ make &amp;&amp; make installで導入できます．
 <table>
 <tbody>
 <tr><td>ghostscript10</td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
+<tr><td>evince</td><td><a href="https://www.freshports.org/graphics/evince">graphics/evince</a></td><td>GNOME multi-format document viewer</td></tr>
 </tbody>
 </table>
 
