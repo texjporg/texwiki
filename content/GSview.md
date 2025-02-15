@@ -7,7 +7,7 @@ pukiwiki: "GSview"
 
 # GSview
 
-## [GSview](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/) (Ghostgum GSview) {#o3c38991}
+## [GSview](https://web.archive.org/web/20241219012055/https://git.ghostscript.com/?p=user/ghostgum/gsview.git) (Ghostgum GSview) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
@@ -71,18 +71,16 @@ GSview 5.01beta はバイナリ配布されていないので自分でビルド�
 
 GSview のビルドには [Microsoft Visual Studio Community](</Microsoft Visual Studio Community/>) が必要です。
 
-ビルド方法は [GSview Readme#Compilation](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/Readme.htm#n218) を参照してください。
-
 64-bit GSview のビルド方法を以下に示します。
 
 GSview 5.01beta 2020-08-23 のソースコード
 
-[https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/?id=09e7545912ad1439e38d2b56516f50b150ff50eb](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/?id=09e7545912ad1439e38d2b56516f50b150ff50eb)
+[https://web.archive.org/web/20241219012133/https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz](https://web.archive.org/web/20241219012133/https://git.ghostscript.com/?p=user/ghostgum/gsview.git;a=snapshot;h=09e7545912ad1439e38d2b56516f50b150ff50eb;sf=tgz)
 
-をダウンロードします。
+をダウンロードして gsview-09e7545.tar.gz を展開します。
 
 GSview のベータ版には使用期限が設けられており 5.01beta 2020-08-23 の使用期限は 2020-12-30 までとなっています。
-このままビルドしても期限切れで使用できないので [src\gvcver.h](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/src/gvcver.h?id=09e7545912ad1439e38d2b56516f50b150ff50eb#n39) の
+このままビルドしても期限切れで使用できないので gsview-09e7545\src\gvcver.h の
 
 > #define
 
@@ -92,15 +90,15 @@ GSview のベータ版には使用期限が設けられており 5.01beta 2020-0
 
 に修正します。
 
-[srcwin\win.mak](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/srcwin/win.mak?id=09e7545912ad1439e38d2b56516f50b150ff50eb) を GSview のソースコードのトップディレクトリの配下に Makefile の名前でコピーします。
+gsview-09e7545\srcwin\win.mak を gsview-09e7545\Makefile にコピーします。
 
-スタートから x64 Native Tools Command Prompt for VS を起動して Makefile のディレクトリ移動後に
+スタートから x64 Native Tools Command Prompt for VS を起動して gsview-09e7545 ディレクトリ移動後に
 
 > nmake WIN64=1
 
-を実行すると bin ディレクトリに実行ファイル gsview64.exe が作成されます。
+を実行すると gsview-09e7545\bin に実行ファイル gsview64.exe が作成されます。
 
-64-bit Ghostscript 10.04.0 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合はメニューの \[Options\] &gt; \[Safer\] のチェックを外して \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行い、GSviewを再起動します。
+64-bit Ghostscript 10.04.0 をインストールして 64-bit GSview でファイルを開くとエラーが発生する場合は \[Options\] &gt; \[Advanced Configure...\] から以下の設定を行い、GSviewを再起動します。
 
 Ghostscript DLL:
 : C:\Program Files\gs\gs10.04.0\bin\gsdll64.dll
@@ -143,11 +141,11 @@ jisB8=181,258
 
 ### ライセンス {#y06b3066}
 
-[GPLv3](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/tree/LICENCE)
+GPLv3 (GSview 5.01beta 2020-08-23 のソースコード)
 
 ### 関連リンク {#yb0d4b4b}
 
-- [user/ghostgum/gsview.git - GSview](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/user/ghostgum/gsview.git/)
+- [https://web.archive.org/web/20241219012055/https://git.ghostscript.com/?p=user/ghostgum/gsview.git](https://web.archive.org/web/20241219012055/https://git.ghostscript.com/?p=user/ghostgum/gsview.git)
 - [USBメモリ活用講座【実践編・Ghostscript&amp;GSviewポータブル化】](http://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/gsview.shtml)
 - [■ \[Windows\] GSView 5.01beta](http://barutan.s296.xrea.com/cgi-bin/tdiary/?date=20210402#p02)
 - [LaTeXでEPS画像をPDFファイルに出力したら真っ白になっちゃう問題の解決法](https://qiita.com/housewifeCat/items/dc74a9e625e63fe43bd2)
