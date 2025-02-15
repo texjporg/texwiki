@@ -52,7 +52,7 @@ Cygwin にインストールしておきましょう．
 install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
@@ -71,7 +71,7 @@ $ cd install-tl-2*
 オプションでダウンロードするリポジトリを指定できます．
 
 ```
-$ ./install-tl -no-gui -repository http://mirror.ctan.org/systems/texlive/tlnet/
+$ ./install-tl -no-gui -repository https://mirror.ctan.org/systems/texlive/tlnet/
 
 ...
 
@@ -142,7 +142,7 @@ Cygwin 本家から提供されています．
 TeX Live のパッケージが一通りそろっていれば問題ないというユーザにとっては十分です．
 いわゆる OS のパッケージングなので，Cygwin 本家のパッケージングシステムから独自に変更を加えることに対する対応は甘いという点に，ヘビーユーザは気を付ける必要があります．
 
-#### TeX Live/Cygwin 64-bit 版 (x86_64) {#u7b94ff6}
+#### TeX Live/Cygwin {#u7b94ff6}
 
 - [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive)
 - [https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/)
