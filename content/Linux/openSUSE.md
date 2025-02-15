@@ -66,7 +66,7 @@ sudo zypper install evince
 ### [Okular](/Okular/) {#kfc5a9bf}
 
 ```
-sudo zypper install okular
+sudo zypper install okular okular-spectre
 ```
 
 ### [zathura](/zathura/) {#u6a6ff55}
