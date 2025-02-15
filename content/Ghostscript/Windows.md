@@ -23,17 +23,20 @@ Windows 版の Ghostscript にはいくつかの種類があります。
 
 - 本家の公式 Windows 版バイナリ
     - 本家の公式 Windows 版バイナリは，Ghostscript 公式サイトで配布されています。CJK (中国語・日本語・韓国語) の横書きと縦書きに対応しています。
-- 角藤版 Ghostscript
-    - 本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。
-        - TeX Live のコミッタである角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。
-        - TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです --&gt; [TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ )](https://x.com/aminophen/status/856445778486636544)
+        <!-- -角藤版 Ghostscript -->
+        <!-- - -本家版の機能に加え，-dWINKANJI オプションで日本語の縦書き PostScript ファイルをきれいに表示できるようにした角藤版 Ghostscript が存在します。 -->
+        <!-- - --TeX Live のコミッタである角藤さんが日本語用にカスタマイズしたもので，以下ではこれを角藤版 Ghostscript と呼ぶことにします。 -->
+        <!-- - --TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです - -&gt; [[TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ ):https://x.com/aminophen/status/856445778486636544]] -->
+
+- tlgs.windows
+    - Windows 版の TeX Live に収録されている Ghostscript
 - winget Ghostscript
     - winget からインストールできる Ghostscript
 - Scoop Ghostscript
     - Scoop からインストールできる Ghostscript
 - Chocolatey Ghostscript
     - Chocolatey からインストールできる Ghostscript
-- MSYS2 Ghostscript (mingw-w64-ghostscript)
+- mingw-w64-ghostscript
     - MSYS2 の pacman からインストールできる Ghostscript
 - Cygwin Ghostscript
     - Cygwin からインストールできる Ghostscript
@@ -68,7 +71,7 @@ TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が�
     - デフォルトのインストール先は “C:\Program Files\gs\gs10.04.0” です。
     - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.04.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
-1. [SumatraPDF](/SumatraPDF/) または [GSview](/GSview/) で PS ファイル、EPS ファイルが表示できます。
+1. [SumatraPDF](/SumatraPDF/) で PS ファイル、EPS ファイルが表示できます。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
 なお，歴史的な理由等から gs\gs10.04.0 などというフォルダーにインストールされることがほとんどです。
@@ -195,8 +198,7 @@ Windows で使用可能な Ghostscript のフロントエンド（プレビュ�
 ### cidfmap の初期設定 {#ra5fe424}
 
 日本語等のフォント (CJK font と呼ばれるもの) は，Ghostscript では CID font を用いることが基本的になっています。<br>
-これを他の CID font や TrueType font に代替させることを主な目的とした設定ファイルが cidfmap です。<br>
-角藤版 Ghoststscript では，gs\gs$(rungs --version)\lib に存在します。<br>
+これを他の CID font や TrueType font に代替させることを主な目的とした設定ファイルが cidfmap です。<br> <!-- 角藤版 Ghoststscript では，gs\gs$(rungs - -version)\lib に存在します。~ -->
 インストール時に \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックを入れておいたならば，この cidfmap は各自の PC に合わせて自動設定がなされます。<br>
 しかし，Ghostscript のアンインストールが不完全であった場合などには，この自動設定がなされない場合もあります。<br>
 cidfmap を見たときに，% から始まるコメント行ばかりであるならこの自動設定がなされていません。<br>
@@ -436,7 +438,8 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 
 ここでは日本語等 (CJK) の TrueType font を用いる場合のフォントの置き場所やパスの設定方法について説明します。
 
-1) まず，ここで用いる用語の説明をしておきます。LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です。これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，rungs -h で表示されるもののうちの Search path: の部分に記述される場所のことです。環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします。角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます。次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です。これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります。なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です。
+1) まず，ここで用いる用語の説明をしておきます。LIB PATH とは，フォントを含む様々なファイルを探すときに用いられる PATH です。これは，gs のシステム変数 GS_LIB, GS_LIB_DEFAULT で指定される場所であり，rungs -h で表示されるもののうちの Search path: の部分に記述される場所のことです。環境変数 GS_LIB の設定を行うと，デフォルトの GS_LIB の内容をオーバーライドします。 <!-- 角藤版 Ghostscript の場合には，GS_LIB_DEFAULT によって c:/windows/fonts と c:/winnt/fonts がはじめから設定されていることにも注意しておきます。 -->
+次に，FONT PATH とは，フォントファイルを探すため専用の追加の PATH です。これは，環境変数 GS_FONTPATH，または，gs の option の -sFONTPATH= に指定された場所になります。なお，-sFONTPATH= は GS_FONTPATH をオーバーライドすることに注意が必要です。
 
 2) 拡張子が .ttf や .ttc である TrueType font (拡張子が .otf であっても TrueType outline であるならば同様に使えるかもしれないが未確認) は，cidfmap での代替を行うことによって使用することができます。この場合，フォントファイルは，cidfmap に記述される /Path (c:/windows/fonts/msmincho.ttc) のようなパスによって探されます(フォントファイルは実ファイルではなくリンクでも構いません)。gs のドキュメントによれば，これは絶対パス指定でならなければならないようです。しかし，相対パス指定，つまり /Path (msmincho.ttc) のような記述も実際には使うことができます。相対パス指定の場合には，フォントは LIB PATH のみから探されます(FONT PATH の場所は探されない)。従って，相対パス指定の場合には，LIB PATH に含まれる場所にフォントファイル(またはリンク)を置いてください。
 
@@ -444,7 +447,8 @@ dvips -f ... dviname | ps2otfps -f >psfile.ps
 
 4) gs の option -dNOPLATFONTS が用いられた場合には，Windows のシステムフォントフォルダーにあるフォントは探されなくなります。ただし，LIB PATH, FONT PATH にそれが設定されているならば探されます。つまり，相対指定なら LIB PATH に，絶対指定ならば LIB PATH または FONT PATH にシステムフォントフォルダーの場所が記述されていれば探されます。
 
-5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
+5) 以上のことから，-dSAFER や -dNOPLATFONTS の問題が起こらないようにして cidfmap で新たにフォントの設定をする場合には，絶対パス指定にしておいてそのパスが必ず探されるようにしておくのが正統的な方法でしょう。しかし，相対パスの方が簡単かもしれません。 <!-- 相対パス指定の場合，例えば角藤版 Ghostscript であるならば，c:\windows\fonts にフォントを置いておけばそれだけでたいていはうまくいきます。 -->
+また，環境変数 GS_LIB に何を設定すべきであるかを知っているならば，GS_LIB に目的の場所を付け加えておくのも簡単な方法でしょう(例えば，gs\fonts に相当するものを付け加えて少し古めの形態で使うことも可能です)。
 
 ### <a id="otf">OTF パッケージ用の設定</a> {#ycff2f04}
 
@@ -747,19 +751,12 @@ composefont pop
 
 <!-- ***角藤版 Ghostscript の配布元 [#sbee10cb] -->
 <!--  -->
-<!-- -http://mirror.ctan.org/systems/win32/TLW64/ -->
+<!-- -https://mirror.ctan.org/systems/win32/TLW64/ -->
 
 #### tlgs.windows {#a9e655e3}
 
 - \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
-
-#### MSYS2 Ghostscript (mingw-w64-ghostscript) {#l8186e48}
-
-- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### winget Ghostscript {#lb8d3056}
 
@@ -772,6 +769,13 @@ composefont pop
 #### Chocolatey Ghostscript {#x1695e76}
 
 - [https://community.chocolatey.org/packages/Ghostscript](https://community.chocolatey.org/packages/Ghostscript)
+
+#### mingw-w64-ghostscript {#l8186e48}
+
+- [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
+- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### Cygwin Ghostscript {#q45fc3c8}
 
