@@ -54,4 +54,4 @@ mathabx は TeX Live に収録されており，たとえば Debian, Ubuntu な�
 
 [CTAN](https://mirror.ctan.org/fonts/mathabx/) から [METAFONT](/METAFONT/) 形式のフォント本体 (source ディレクトリ下) とマクロ (texinputs ディレクトリ下) を取ってきて，[README](http://www.ring.gr.jp/pub/text/CTAN/fonts/mathabx/README) にしたがって適切なディレクトリに収めてください。
 実際の利用時に mf ファイルから TFM (\*.tfm) が生成され，mathabx が利用可能となります。
-Type1 フォントを埋め込んだ PS ファイルを作成する場合などには，[CTAN](https://mirror.ctan.org/fonts/ps-type1/mathabx/) (<strong>mathabx-type1</strong> パッケージ) にある map ファイルと Type1 フォント (\*.pfb) も取ってきて，[README](http://mirror.ctan.org/fonts/ps-type1/mathabx/README) を参考にして適切なディレクトリに収め，必要に応じて mktexlsr や updmap を実行してください。
+Type1 フォントを埋め込んだ PS ファイルを作成する場合などには，[CTAN](https://mirror.ctan.org/fonts/ps-type1/mathabx/) (<strong>mathabx-type1</strong> パッケージ) にある map ファイルと Type1 フォント (\*.pfb) も取ってきて，[README](https://mirror.ctan.org/fonts/ps-type1/mathabx/README) を参考にして適切なディレクトリに収め，必要に応じて mktexlsr や updmap を実行してください。
