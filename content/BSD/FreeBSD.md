@@ -34,7 +34,7 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
-- [https://svnweb.freebsd.org/ports/head/print/texlive-full/](https://svnweb.freebsd.org/ports/head/print/texlive-full/)
+- [https://cgit.freebsd.org/ports/tree/print/texlive-full](https://cgit.freebsd.org/ports/tree/print/texlive-full)
 - [FreshPorts -- print/texlive-full](http://www.freshports.org/print/texlive-full/)
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
@@ -59,7 +59,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 ```
 $ sudo pkg install wget
-$ wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
@@ -100,7 +100,7 @@ ABORTED INSTALLATION FOUND: installation.profile
 Do you want to continue with the exact same settings as before (y/N): y
 ```
 
-再開できない場合は[接続先を変更](</TeX Live/#tlnet>)するか，または [ISO ファイル](</TeX Live/#iso>)をミラーサイトからダウンロードしてインストールしてください．
+再開できない場合は[接続先を変更](</TeX Live/#tlnet>)してください．
 インストールが終了したら /usr/local/bin ディレクトリ配下にシンボリックリンクを追加します．
 
 ```
@@ -146,7 +146,7 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td><a href="/LyX/">LyX</a></td><td>print/lyx</td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
+<tr><td><a href="/LyX/">LyX</a></td><td><a href="https://www.freshports.org/print/lyx/">print/lyx</a></td><td>Document processor interfaced with LaTeX (nearly WYSIWYG)</td></tr>
 </tbody>
 </table>
 
@@ -160,11 +160,11 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td><a href="/TeXstudio/">TeXstudio</a></td><td>editors/texstudio</td><td>Integrated writing environment for creating LaTeX documents</td></tr>
-<tr><td><a href="/Texmaker/">Texmaker</a></td><td>editors/texmaker</td><td>LaTeX Development Environment</td></tr>
-<tr><td><a href="/TeXworks/">TeXworks</a></td><td>editors/texworks</td><td>A simple TeX front-end program</td></tr>
-<tr><td><a href="/AUCTeX/">AUCTeX</a></td><td>print/auctex</td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
-<tr><td><a href="/YaTeX/">YaTeX</a></td><td>print/yatex</td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
+<tr><td><a href="/TeXstudio/">TeXstudio</a></td><td><a href="https://www.freshports.org/editors/texstudio/">editors/texstudio</a></td><td>Integrated writing environment for creating LaTeX documents</td></tr>
+<tr><td><a href="/Texmaker/">Texmaker</a></td><td><a href="https://www.freshports.org/editors/texmaker/">editors/texmaker</a></td><td>LaTeX Development Environment</td></tr>
+<tr><td><a href="/TeXworks/">TeXworks</a></td><td><a href="https://www.freshports.org/editors/texworks/">editors/texworks</a></td><td>A simple TeX front-end program</td></tr>
+<tr><td><a href="/AUCTeX/">AUCTeX</a></td><td><a href="https://www.freshports.org/print/auctex/">print/auctex</a></td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
+<tr><td><a href="/YaTeX/">YaTeX</a></td><td><a href="https://www.freshports.org/print/yatex/">print/yatex</a></td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
 </tbody>
 </table>
 
@@ -177,7 +177,7 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td>dvipdfmx</td><td>print/tex-dvipdfmx</td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
+<tr><td>dvipdfmx</td><td><a href="https://www.freshports.org/print/tex-dvipdfmx/">print/tex-dvipdfmx</a></td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
 </tbody>
 </table>
 
@@ -186,13 +186,13 @@ make &amp;&amp; make installで導入できます．
 
 #### PostScript関連 {#v58c994c}
 
-<!-- |ghostview|print/ghostview|An X11 front-end for ghostscript, the GNU postscript previewer| -->
-
 <table>
 <tbody>
-<tr><td>gv</td><td>print/gv</td><td>A PostScript and PDF previewer</td></tr>
+<tr><td>ghostscript10</td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
 </tbody>
 </table>
 
+<!-- |ghostview|[[print/ghostview:https://www.freshports.org/print/ghostview/]]|An X11 front-end for ghostscript, the GNU postscript previewer| -->
+<!-- |gv|[[print/gv:https://www.freshports.org/print/gv/]]|A PostScript and PDF previewer| -->
 <!-- |psutils-a4|print/psutils-a4|Utilities for manipulating PostScript documents| -->
 <!-- |psutils-letter|print/psutils-letter|Utilities for manipulating PostScript documents| -->
