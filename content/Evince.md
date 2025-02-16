@@ -103,6 +103,10 @@ Homebrew から Evince をインストールした場合は PostScript サポー
 brew install evince
 ```
 
+### Flatpak {#j2286d8f}
+
+- [https://flathub.org/apps/org.gnome.Evince](https://flathub.org/apps/org.gnome.Evince)
+
 ### Arch Linux/Manjaro Linux {#eb51c4f9}
 
 - [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
