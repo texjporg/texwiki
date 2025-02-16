@@ -80,6 +80,10 @@ Chocolatey でインストールすることもできます．[https://chocolate
 - [https://cdn.kde.org/ci-builds/graphics/okular/release-24.12/macos-x86_64/](https://cdn.kde.org/ci-builds/graphics/okular/release-24.12/macos-x86_64/)
 - [https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb)
 
+### Flatpak {#e979726d}
+
+- [https://flathub.org/apps/org.kde.okular](https://flathub.org/apps/org.kde.okular)
+
 ### Linux {#c209770f}
 
 ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
