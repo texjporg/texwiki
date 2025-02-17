@@ -177,7 +177,7 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td>dvipdfmx</td><td><a href="https://www.freshports.org/print/tex-dvipdfmx/">print/tex-dvipdfmx</a></td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
+<tr><td><a href="/dvipdfmx/">dvipdfmx</a></td><td><a href="https://www.freshports.org/print/tex-dvipdfmx/">print/tex-dvipdfmx</a></td><td>Dvipdfm with Asian languages by CID-keyed font technology support</td></tr>
 </tbody>
 </table>
 
@@ -188,8 +188,8 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td>ghostscript10</td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
-<tr><td>evince</td><td><a href="https://www.freshports.org/graphics/evince">graphics/evince</a></td><td>GNOME multi-format document viewer</td></tr>
+<tr><td><a href="/Ghostscript/">Ghostscript</a></td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
+<tr><td><a href="/Evince/">Evince</a></td><td><a href="https://www.freshports.org/graphics/evince">graphics/evince</a></td><td>GNOME multi-format document viewer</td></tr>
 </tbody>
 </table>
 
