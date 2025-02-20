@@ -83,6 +83,7 @@ Chocolatey でインストールすることもできます．[https://chocolate
 ### Flatpak {#e979726d}
 
 - [https://flathub.org/apps/org.kde.okular](https://flathub.org/apps/org.kde.okular)
+- [Tutorials/Flatpak - KDE UserBase Wiki](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
 
 ### Linux {#c209770f}
 
