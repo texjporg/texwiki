@@ -56,12 +56,6 @@ MSYS2 からインストールもできます。
 
 Windows 用のインストーラーをダウンロードして実行します。
 
-#### Linux {#v5002500}
-
-各ディストリビューションのパッケージ管理システムからインストールします。
-パッケージ名は大抵 texstudio でしょう。
-Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう。
-
 #### macOS {#d9a96322}
 
 macOS 用の zip ファイルをダウンロードしてインストールします。
@@ -73,6 +67,16 @@ Homebrew Cask でインストールすることもできます。
 ```
 brew install --cask texstudio
 ```
+
+#### Flatpak {#v04a0d08}
+
+- [https://flathub.org/apps/org.texstudio.TeXstudio](https://flathub.org/apps/org.texstudio.TeXstudio)
+
+#### Linux {#v5002500}
+
+各ディストリビューションのパッケージ管理システムからインストールします。
+パッケージ名は大抵 texstudio でしょう。
+Debian などでは localization のパッケージ texstudio-l10n として分離されているので，これもインストールするとよいでしょう。
 
 ### 設定 {#d18b43a8}
 
