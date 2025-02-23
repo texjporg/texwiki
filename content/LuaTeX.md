@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2025 には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されています。
+
 LuaTeX 1.20.0 で luaffi が [AArch64](https://ja.wikipedia.org/wiki/AArch64) に対応しました。--&gt; [Revision 73279](https://svn.tug.org/texlive?revision=73279&view=revision)
 
 TeX Live 2024 には LuaHBTeX 1.18.0, LuaTeX 1.18.0 が収録されています。
