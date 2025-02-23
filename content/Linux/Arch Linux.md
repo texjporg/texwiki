@@ -43,11 +43,12 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 sudo pacman -S texlive-langjapanese texlive
 ```
 
-日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-latexextra をインストールします．
+日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-latexextra と texlive-luatex をインストールします．
 [jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
+[LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-luatex をインストールする必要があります．
 
 ```
-sudo pacman -S texlive-langjapanese texlive-latexextra
+sudo pacman -S texlive-langjapanese texlive-latexextra texlive-luatex
 ```
 
 ### [Ghostscript](/Ghostscript/) {#q940a9dc}
