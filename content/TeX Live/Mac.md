@@ -209,8 +209,8 @@ $ sudo tlmgr install collection-langjapanese collection-latexextra collection-lu
 
 インストールのやり方などの事例も参考になります。
 
-- [MacTeX](/MacTeX/#n379ea53)
-- [BasicTeX](/BasicTeX/#q65e25e8)
+- [MacTeX](/MacTeX/#installationexample)
+- [BasicTeX](/BasicTeX/#installationexample)
 
 #### [MacPorts](http://www.macports.org/) によるインストール {#texlive-install-port}
 
