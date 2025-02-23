@@ -40,10 +40,11 @@ sudo zypper install texlive-scheme-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo zypper install texlive-collection-langjapanese
+sudo zypper install texlive-collection-langjapanese texlive-collection-latexextra texlive-collection-luatex
 ```
 
-を実行します．
+を実行します．[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-collection-latexextra をインストールする必要があります．
+[LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-collection-luatex をインストールする必要があります．
 
 ### [Ghostscript](/Ghostscript/) {#iea7fcc9}
 
