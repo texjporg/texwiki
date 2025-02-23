@@ -51,7 +51,7 @@ $ sudo tlmgr paper a4
 $ sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
 ```
 
-#### インストールの事例 {#q65e25e8}
+#### インストールの事例 <a id="installationexample"></a> {#q65e25e8}
 
 - [macOSにtexlive2023 をインストールする方法](https://pyopyopyo.hatenablog.com/entry/2023/04/07/173000)
 - [Macでの日本語LaTeXお手軽インストール](https://x.com/BeryLiuM_Green/status/1390235461667364864)
