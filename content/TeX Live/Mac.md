@@ -33,7 +33,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 ### TeX Live 2025 のバイナリの動作環境 {#binary}
 
-macOS 用として配布される TeX Live 2025 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートする方針です。
+macOS で動作する TeX Live 2025 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートする方針です。
 MacTeX-2025 / BasicTeX-2025 に付属する TeX Live も universal-darwin バイナリです。
 
 TeX Live 2025 universal-darwin バイナリが動作する macOS
@@ -182,6 +182,7 @@ GUI-Applications ありの場合
 
 ```
 $ brew install --cask mactex
+$ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -190,6 +191,7 @@ GUI-Applications なしの場合
 
 ```
 $ brew install --cask mactex-no-gui
+$ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
@@ -199,9 +201,10 @@ Homebrew Cask で BasicTeX をインストールできます。
 
 ```
 $ brew install --cask basictex
+$ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
-$ sudo tlmgr install collection-langjapanese
+$ sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
 ```
 
 インストールのやり方などの事例も参考になります。
@@ -215,9 +218,8 @@ $ sudo tlmgr install collection-langjapanese
 - [https://ports.macports.org/search/?installed_file=&q=texlive&name=on](https://ports.macports.org/search/?installed_file=&q=texlive&name=on)
 - [https://github.com/macports/macports-ports/tree/master/tex](https://github.com/macports/macports-ports/tree/master/tex)
 - [https://ports.macports.org/port/texlive-lang-japanese/](https://ports.macports.org/port/texlive-lang-japanese/)
+- [https://ports.macports.org/port/texlive-latex-extra/](https://ports.macports.org/port/texlive-latex-extra/)
 - [https://ports.macports.org/port/texlive-luatex/](https://ports.macports.org/port/texlive-luatex/)
-- [https://ports.macports.org/port/texlive-xetex/](https://ports.macports.org/port/texlive-xetex/)
-- [https://ports.macports.org/port/texlive/](https://ports.macports.org/port/texlive/)
 
 MacPorts 用に TeX Live/MacPorts というパッケージが提供されています。
 TeX Live/MacPorts をフルインストールする場合は
@@ -226,10 +228,10 @@ TeX Live/MacPorts をフルインストールする場合は
 $ sudo port install texlive +full
 ```
 
-日本語関連のパッケージと texlive-luatex パッケージと texlive-xetex パッケージと texlive パッケージをインストールする場合は
+日本語関連のパッケージと texlive-latex-extra パッケージと texlive-luatex パッケージをインストールする場合は
 
 ```
-$ sudo port install texlive-lang-japanese texlive-luatex texlive-xetex texlive
+$ sudo port install texlive-lang-japanese texlive-latex-extra texlive-luatex
 ```
 
 を実行します。
