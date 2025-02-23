@@ -48,6 +48,8 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
 - [debian/ubuntuのuplatexでNotoフォントの太明朝体や丸ゴシック体など７書体使う手順](https://qiita.com//kakinaguru_zo/items/8c34ee921a8bbfd1663a)
 - [Ubuntu/Debian上のLuaTeXでGoogle Notoフォントの日本語７書体を使う](https://qiita.com/kakinaguru_zo/items/764c54f2e84d21092069)
 - [私の LaTeX SetUp memo](https://qiita.com/QiitaTakenoko/items/26d495842968fa37e203)
+- \[[研究室向け\]texの導入と設定方法・Q&amp;A](https://qiita.com/Chansei/items/240e5e3046e9d3f9bcdb)
+- [ubuntuのtexlive](https://dabiyone.com/misc/mia035.html)
 - [https://okumuralab.org/tex/pluginfile.php/6/mod_forum/attachment/21026/howto-install-texlive-ubuntu.txt](https://okumuralab.org/tex/pluginfile.php/6/mod_forum/attachment/21026/howto-install-texlive-ubuntu.txt)
 
 フルインストールする場合は
@@ -59,11 +61,12 @@ sudo apt install texlive-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo apt install texlive texlive-luatex texlive-lang-japanese texlive-latex-extra texlive-fonts-extra
+sudo apt install texlive-lang-japanese texlive-latex-extra texlive-luatex
 ```
 
 を実行します．
 [jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latex-extra をインストールする必要があります．
+[LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-luatex をインストールする必要があります．
 
 tlmgr も実行できます．
 tlmgr の実行には xzdec パッケージが必要です．
