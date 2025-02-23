@@ -151,11 +151,7 @@ pukiwiki: "TeX Live/Windows"
 >
 > <br>
 >
-> TeX <br>
-> Liveのウェブサイト（[https://tug.org/texlive/](https://tug.org/texlive/)）にはすべてのアップデートとコレクションの情報が掲載さ<br>
-> れています。TeX Liveは全世界のTeXユーザ会有志による合同プロジェクトです。TeX <br>
-> Liveプロジェクトをサポートしていただける場合お好きなTeXユーザ会に入会することをご検討ください。TeX<br>
-> ユーザ会の一覧は[https://tug.org/usergroups.htmlでご確認いただけます](<https://tug.org/usergroups.htmlでご確認いただけます>)。<br>
+> TeX Liveのウェブサイト（&#x68;ttps://tug.org/texlive/）にはすべてのアップデートとコレクションの情報が掲載されています。TeX Liveは全世界のTeXユーザ会有志による合同プロジェクトです。TeX Liveプロジェクトをサポートしていただける場合お好きなTeXユーザ会に入会することをご検討ください。TeXユーザ会の一覧は&#x68;ttps://tug.org/usergroups.htmlでご確認いただけます。<br>
 >
 > <br>
 >
@@ -303,7 +299,7 @@ tlmgr update --self --all
 
 ## アンインストール {#od7715ce}
 
-\[スタート\] &gt; \[設定\] &gt; \[アプリ\] &gt; \[TeX Live 2025\] &gt; \[アンインストール\] を選択することで，TeX Live をアンインストールすることが可能です。
+\[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2025\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールすることが可能です。
 
 <!-- *仮想マシン上の Linux への TeX Live のインストール [#s797439a] -->
 
