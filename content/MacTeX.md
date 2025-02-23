@@ -86,13 +86,13 @@ MacTeX には「一度インストールすると、完全なアンインスト�
 
 #### MacTeX.pkg でインストール {#j62e687a}
 
-MacTeX はサイズが大きいので，ダウンロードする際は[ミラーサイト](/MacTeX/#mirror)を利用してください。
+MacTeX はサイズが大きいので，ダウンロードする際は[ミラーサイト (MacTeX)](/MacTeX/#mirror)を利用してください。
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
 Google Chrome, Mozilla Firefox で MacTeX をダウンロードしてインストールできない場合は Safari でダウンロードしてください。
 
 MacTeX のインストールの概略は以下のとおりです。
 
-1. [MacTeX のホームページ](http://tug.org/mactex/)または[ミラーサイト](/MacTeX/#mirror)から MacTeX.pkg をダウンロードします。
+1. [MacTeX のホームページ](http://tug.org/mactex/)または[ミラーサイト (MacTeX)](/MacTeX/#mirror)から MacTeX.pkg をダウンロードします。
 1. ダウンロードした MacTeX.pkg をダブルクリックしてインストールします。
 1. ターミナルを起動します。
     1. sudo tlmgr update --self --all を実行して最新版にアップデートします。
