@@ -29,10 +29,10 @@ BasicTeX のインストールの概略は以下のとおりです。
 1. ダウンロードした BasicTeX.pkg をダブルクリックしてインストールします。
 1. ターミナル上で sudo tlmgr update --self --all を実行し，最新版までアップデートします。
 1. ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更します。
-1. BasicTeX には標準で日本語 pTeX / upTeX が入っていませんので，collection-langjapanese を追加でインストールします。
+1. BasicTeX には標準で日本語 pTeX / upTeX が入っていませんので，以下のコレクションを追加でインストールします。
 
     ```
-    sudo tlmgr install collection-langjapanese
+    sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
     ```
 
     collection-langjapanese をインストールすれば，依存関係で collection-langcjk もインストールされます。
@@ -45,9 +45,10 @@ Homebrew で BasicTeX をインストールできます。
 
 ```
 $ brew install --cask basictex
+$ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
-$ sudo tlmgr install collection-langjapanese
+$ sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
 ```
 
 #### インストールの事例 {#q65e25e8}
@@ -73,7 +74,7 @@ $ sudo tlmgr install ptex
 2016 以降では platex は platex パッケージに分離されました。
 このため，ptex をインストールしただけでは platex が使えるようにはなりません。
 
-日本語環境を構成するには，このページで解説しているように collection-langjapanese を
+日本語環境を構成するには，このページで解説しているように collection-langjapanese、collection-latexextra、collection-luatex を
 インストールすることをおすすめします。
 
 <!-- TeX Live 2017 対応 -->
