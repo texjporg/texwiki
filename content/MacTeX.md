@@ -125,7 +125,7 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
 
-#### インストールの事例 {#n379ea53}
+#### インストールの事例 <a id="installationexample"></a> {#n379ea53}
 
 以下のインストールのやり方などの事例も参照してください。
 
