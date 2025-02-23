@@ -22,7 +22,7 @@ EPS 形式は現在では非推奨です。
 
 - [EPS形式のファイルはもう古い！？](https://rokustar.com/blog/archives/525)
 - [10年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
-- [PDF&#x26;出力の手引き2024](https://blog.adobe.com/jp/publish/2023/11/16/cc-design-print2024)
+- [PDF&#x26;出力の手引き2025](https://blog.adobe.com/jp/publish/2024/10/29/cc-design-print2025)
 
 > <strong>※従来一般的であった EPS 形式は現在のワークフローには適していません。</strong><br>
 >
@@ -84,4 +84,5 @@ Adobe Acrobat Distiller は PostScript ファイルを PDF に変換するため
 - [ページ記述言語 ポストスクリプトマニュアル](https://www1.doshisha.ac.jp/~jmizushi/ps.html)（同志社大学 水島研究室）
 - [PostScript Programing 入門](http://apollon.issp.u-tokyo.ac.jp/~watanabe/ps/)
 - [EPSグラフィック直書き入門](http://yubais.net/doc/eps/)
-- [Postscript プログラミングメモ](https://konamih.sakura.ne.jp/Documents/ps/psmemo.html)
+- [Postscript](https://konamih.sakura.ne.jp/Documents/ps/)（小波秀雄さん）
+    - [Postscript プログラミングメモ](https://konamih.sakura.ne.jp/Documents/ps/psmemo.html)
