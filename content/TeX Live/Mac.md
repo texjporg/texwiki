@@ -228,7 +228,7 @@ TeX Live/MacPorts をフルインストールする場合は
 $ sudo port install texlive +full
 ```
 
-日本語関連のパッケージと texlive-latex-extra パッケージと texlive-luatex パッケージをインストールする場合は
+日本語関連のパッケージと texlive-latex-extra と texlive-luatex をインストールする場合は
 
 ```
 $ sudo port install texlive-lang-japanese texlive-latex-extra texlive-luatex
