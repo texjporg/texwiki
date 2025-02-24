@@ -26,6 +26,7 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
 #### TeX Live 公式パッケージ <a id="texliveinstall"></a> {#ef984d1b}
 
 - [Linux](/Linux/#texliveinstall) &amp; [texlive-dummy](/texlive-dummy/#linuxmint)
+- [改めて TeX Live を Ubuntu に（APT を使わずに）導入する](https://text.baldanders.info/remark/2021/09/install-texlive-in-ubuntu-again/)
 
 #### TeX Live/Debian <a id="texlivedebian"></a> {#qcd9ce14}
 
