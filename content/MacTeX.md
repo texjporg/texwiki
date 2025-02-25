@@ -175,6 +175,7 @@ $ sudo tlmgr paper a4
 - [MacTeX で、使用しないバージョンの TeX Live を削除してみる。](https://ez-net.jp/article/29/CEWazhdF/8ITDHJPSLPq_/)
 - [Homebrewを使ったmactexのインストール・アンインストール](https://oversleptabit.com/archives/4701)
 - [MacTexのアンインストール](https://blog.ikappio.com/how-to-uninstall-mactex/)
+- \[[macOS + VSCode\] ローカルでLaTeXを書けるようにするよ#失敗してやり直す時](https://qiita.com/ikaring/items/980e1573151bba64118c#%E5%A4%B1%E6%95%97%E3%81%97%E3%81%A6%E3%82%84%E3%82%8A%E7%9B%B4%E3%81%99%E6%99%82)
 
 ### リリース情報 {#c5157a75}
 
