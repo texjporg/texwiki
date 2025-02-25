@@ -62,7 +62,7 @@ ASCII 翻字入力についての詳細は [アスキー文字を用いた転写
 Unicode のテキストファイルを作成して多言語処理をするためには外国語を直接入力するための入力ソフト (input method)，そして Unicode (UTF-8) 対応のテキストエディタが必要です。
 
 input method については，[Google](https://www.google.co.jp/) などで探してみましょう。
-参考までに，[フランス語入力](https://nice-na-france.com/clavier-francais/)，[ドイツ語入力](http://kazajirushi.net/germaninput_win10/)，[スペイン語入力](http://position.red/2016/05/pc/1322/)，[ギリシャ語入力](https://museion.sakura.ne.jp/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](https://www.tokyorus.ac.jp/windows/windows10.html)，[タイ語入力](https://sripasa.com/windows_thai) に関するサイトを挙げておきます。
+参考までに，[フランス語入力](https://www-cc.gakushuin.ac.jp/~20012441/francais/claviers_francais/input_methods.html)，[ドイツ語入力](https://mitsisi.com/german-keyboard/)，[スペイン語入力](https://barcelonar.net/entry/spanish-letter)，[ギリシャ語入力](https://museion.sakura.ne.jp/wiki/?eLearning/InputMethod/Greek/Windows)，[ロシア語入力](https://www.tokyorus.ac.jp/windows/windows10.html)，[タイ語入力](https://sripasa.com/windows_thai) に関するサイトを挙げておきます。
 
 Unicode (UTF-8) 対応テキストエディタについては，Microsoft Windows では元々付属しているメモ帳 (Notepad) の他にオープンソースソフトウェアとして
 [Visual Studio Code](</Visual Studio Code/>)，
