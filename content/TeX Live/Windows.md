@@ -207,11 +207,6 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
 - [「セキュリティソフト」がインストールの障害になっている例](https://okumuralab.org/tex/mod/forum/discuss.php?d=1226)
 
-以下も参考に．
-
-- [windowsにtexliveをインストール出来ません](https://okumuralab.org/tex/mod/forum/discuss.php?d=1126)
-- [インストーラーの初期化に失敗しました。](https://okumuralab.org/tex/mod/forum/discuss.php?d=1124)
-
 MinGWが悪さをする場合もあるようです．
 
 - [Error installing latest version of TeX Live on Windows 10](https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10)
@@ -234,9 +229,11 @@ TeX Live 2023 対応の事例です．
 
 \[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2025\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です。
 
-\[ファイル\] &gt; \[リポジトリを読み込む\] を選択して「すべてアップデート」を押せば更新されます。
+\[ファイル\] &gt; \[リポジトリを読み込む\] を選択して \[すべてアップデート\] をクリックすれば更新されます。
 
-場合によっては（特にインストール直後などは）かなり時間がかかることもあります。
+「tlmgrは最新版？　最新の状態です」と表示されていない場合は \[tlmgrをアップデート\] をクリックして tlmgr を最新の状態にしてから \[すべてアップデート\] をクリックして更新します。
+
+場合によっては（特にインストール直後などは）かなり時間がかかることがあります。
 
 ターミナルから
 
