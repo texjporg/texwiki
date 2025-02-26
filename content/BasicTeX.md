@@ -39,9 +39,9 @@ BasicTeX のインストールの概略は以下のとおりです。
 
 [Ghostscript](/Ghostscript/)、[Latexmk](/Latexmk/) は別途インストールする必要があります。
 
-#### Homebrew でインストール {#w71ff68b}
+#### Homebrew Cask でインストール {#w71ff68b}
 
-Homebrew で BasicTeX をインストールできます。
+Homebrew Cask で BasicTeX をインストールできます。
 
 ```
 $ brew install --cask basictex
