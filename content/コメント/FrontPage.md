@@ -13,6 +13,9 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [YaTeX 1.84](https://www.yatex.org/) -- [YaTeX](/YaTeX/) 2025-02-26 (水) 20:31:44
+- [AUCTeX 14.0.9](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2025-02-26 (水) 20:23:45
+- [GNU Emacs 30.1](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2025-02-26 (水) 18:54:31
 - [TeXworks 0.6.10](https://www.tug.org/texworks/) -- [TeXworks](/TeXworks/) 2025-02-14 (金) 08:12:06
 - [TeXstudio 4.8.6](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-02-08 (土) 08:26:27
 - [IPSJ class v4.1](https://www.ipsj.or.jp/journal/submit/style.html) -- [IPSJ](/IPSJ/) 2025-02-06 (木) 22:34:03
