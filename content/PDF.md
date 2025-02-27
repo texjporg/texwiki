@@ -224,3 +224,4 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 - [PDF 2.0 でドキュメントを次世代のステージへ](https://blogs.adobe.com/creativestation/taking-documents-to-the-next-level-with-pdf-2-0)
 - [今さら聞けない Adobe Acrobat &amp; PDF](http://m-school.biz/dev/acrobat-pdf/)
+- [PDF フォーマット](https://azelpg.gitlab.io/azsky2/note/prog/pdf/index.html)
