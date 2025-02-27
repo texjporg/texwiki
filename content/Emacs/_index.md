@@ -364,6 +364,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 ### リリース情報 {#z96ff3b2}
 
 - [GNU Emacs - Releases](http://www.gnu.org/software/emacs/#Releases)
+- [「GNU Emacs 30.1」が公開 ～Android版が追加、高速なネイティブコンパイルが既定有効](https://forest.watch.impress.co.jp/docs/news/1665225.html)
 - [「Unicode 15.0」に対応した「GNU Emacs 29.1」、高速パーサー「tree-sitter」の採用も - 窓の杜](https://forest.watch.impress.co.jp/docs/news/1520327.html)
 
 ### ChangeLog {#eba94bf5}
