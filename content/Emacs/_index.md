@@ -40,7 +40,7 @@ GNU Emacs はフリーソフトウェアです．
 
 #### Windows {#k091604e}
 
-- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-29/)
+- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-30/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-30/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [emacs-w32 on Cygwinについて](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs.html#emacs-w32%20on%20Cygwin%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 - [Emacs Modified for Windows](https://emacs-modified.gitlab.io/windows/)
@@ -190,7 +190,7 @@ Shift-Command-Click で対応する TeX 文書の該当箇所にジャンプし�
 ### inverse search {#vecb4fd9}
 
 AUCTeX を使用する場合は TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
-YaTeX を使用する場合は YaTeX 1.83 以降に更新します．TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
+YaTeX を使用する場合は YaTeX 1.84 以降に更新します．TeX mode を使用する場合は &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
 (require 'dbus)
