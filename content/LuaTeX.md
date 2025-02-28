@@ -135,10 +135,10 @@ GPLv3, GPLv2
 <!-- -https://serveur-svn.lri.fr/svn/modhel/luatex/ -->
 <!-- -https://github.com/tex-mirror/luatex -->
 <!-- - -https://github.com/tex-mirror/luatex/commits/trunk -->
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/luatexdir](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/)
-    - [log](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
-    - [ChangeLog](https://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
-    - [NEWS](https://tug.org/svn/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
+- \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/web2c/luatexdir](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/)
+    - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
+    - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
+    - [NEWS](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
 
 #### 派生版 {#n2ca8cf1}
 
