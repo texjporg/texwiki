@@ -138,7 +138,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 inverse search は SumatraPDF の \[☰\] &gt; \[設定(S)\] &gt; \[オプション(O)...\] の逆順検索コマンドラインの設定に
 
 ```
-"C:\Program Files\Emacs\emacs-29.4\bin\emacsclientw.exe" --no-wait +%l "%f"
+"C:\Program Files\Emacs\emacs-30.1\bin\emacsclientw.exe" --no-wait +%l "%f"
 ```
 
 です．
