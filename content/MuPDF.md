@@ -28,11 +28,15 @@ Windows, macOS, Linux, Android, iOS
 
 #### Windows {#j0820160}
 
-- [https://mupdf.com/releases/](https://mupdf.com/releases/) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
+- [https://mupdf.com/releases](https://mupdf.com/releases) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
+
+MSYS2 からインストールもできます。
+
+- [https://packages.msys2.org/base/mingw-w64-mupdf](https://packages.msys2.org/base/mingw-w64-mupdf)
 
 #### macOS {#bad1a3d8}
 
-- [https://github.com/Homebrew/homebrew-core/blob/master/Formula/mupdf.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/mupdf.rb)
+- [https://formulae.brew.sh/formula/mupdf](https://formulae.brew.sh/formula/mupdf)
 
 Homebrew を利用してインストールする場合は次のようにします．
 
@@ -40,7 +44,7 @@ Homebrew を利用してインストールする場合は次のようにしま�
 brew install mupdf
 ```
 
-- [https://github.com/macports/macports-ports/blob/master/graphics/mupdf/Portfile](https://github.com/macports/macports-ports/blob/master/graphics/mupdf/Portfile)
+- [https://ports.macports.org/port/mupdf/](https://ports.macports.org/port/mupdf/)
 
 MacPorts を利用してインストールする場合は次のようにします．
 
@@ -100,48 +104,6 @@ sudo zypper install mupdf
 
 Visual Studio (無償の Visual Studio Community も含む) がインストールされていればソリューションファイルを開くことでコンパイルができます．
 
-[MinGW](/MinGW/) でも可能です．
-
-zlib, libjpeg, OpenJPEG, HarfBuzz, FreeType 等のビルドに必要なライブラリをインストールします．
-
-- [jbig2dec](http://git.ghostscript.com/?p=jbig2dec.git) をインストールします．
-
-<!-- curl -RLo jbig2dec.tar.gz "http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz" -->
-
-```
-powershell -Command "& {Invoke-WebRequest -Uri 'http://git.ghostscript.com/?p=jbig2dec.git;a=snapshot;h=HEAD;sf=tgz' -OutFile 'jbig2dec.tar.gz'}"
-tar xvf jbig2dec.tar.gz
-pushd jbig2dec*
-./autogen.sh
-./configure --prefix=/mingw
-make && make install
-popd
-```
-
-- [MuJS](http://www.mujs.com/) をインストールします．
-
-<!-- curl -RLo mujs.tar.gz "http://git.ghostscript.com/?p=mujs.git;a=snapshot;h=HEAD;sf=tgz" -->
-
-```
-powershell -Command "& {Invoke-WebRequest -Uri 'http://git.ghostscript.com/?p=mujs.git;a=snapshot;h=HEAD;sf=tgz' -OutFile 'mujs.tar.gz'}"
-tar xvf mujs.tar.gz
-pushd mujs*
-CC="gcc" make prefix=/mingw install
-popd
-```
-
-- [MuPDF](http://mupdf.com/) をインストールします．
-
-<!-- curl -RLo mupdf.tar.gz "http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz" -->
-
-```
-powershell -Command "& {Invoke-WebRequest -Uri 'http://git.ghostscript.com/?p=mupdf.git;a=snapshot;h=HEAD;sf=tgz' -OutFile 'mupdf.tar.gz'}"
-tar xvf mupdf.tar.gz
-pushd mupdf*
-CC="gcc" XCFLAGS="`pkg-config --cflags harfbuzz freetype2 libopenjp2`" XLIBS="`pkg-config --libs harfbuzz freetype2 libopenjp2`" make build=release prefix=/mingw install
-popd
-```
-
 #### Android {#rd0a741b}
 
 - [How to build MuPDF for Android](http://mupdf.com/docs/how-to-build-mupdf-for-android)
@@ -150,15 +112,14 @@ popd
 
 #### ライセンス {#kcee43f7}
 
-[GNU Affero General Public License (AGPL), Artifex Commercial License](http://artifex.com/licensing/)
+[GNU Affero General Public License (AGPL), Artifex Commercial License](https://mupdf.com/#licensing)
 
 #### リリース情報/変更履歴 {#vbbec018}
 
-- [MuPDF Release History](https://mupdf.com/release_history.html)
-- [http://git.ghostscript.com/?p=mupdf.git](http://git.ghostscript.com/?p=mupdf.git)
-    - [shortlog](http://git.ghostscript.com/?p=mupdf.git;a=shortlog)
-    - [CHANGES](http://git.ghostscript.com/?p=mupdf.git;a=blob;f=CHANGES;hb=HEAD)
-- \[[gs-commits\] mupdf 1.7a.24 Merge 'mudraw' into 'mutool' binary.](http://ghostscript.com/pipermail/gs-commits/2015-May/018449.html)
+- [MuPDF Releases](https://mupdf.com/releases)
+- [https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mupdf.git/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mupdf.git/)
+    - [log](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mupdf.git/log/)
+    - [CHANGES](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/mupdf.git/tree/CHANGES)
 
 <!-- ***fork [#d573b664] -->
 <!-- -https://github.com/monami-ya/mupdf/ -->
