@@ -23,7 +23,7 @@ pukiwiki: "Emacs"
 
 ### 動作環境 {#tabe669d}
 
-GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, macOS, MS Windows, Solaris などの OS で動作します．
+GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, Haiku, macOS, MS Windows, Android, Solaris, MS-DOS/FreeDOS などの OS で動作します．
 
 - [GNU Emacs download - GNU Project](https://www.gnu.org/software/emacs/download.html)
 
