@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.8.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-03-04 (火) 20:33:07
 - [YaTeX 1.84](https://www.yatex.org/) -- [YaTeX](/YaTeX/) 2025-02-26 (水) 20:31:44
 - [AUCTeX 14.0.9](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2025-02-26 (水) 20:23:45
 - [GNU Emacs 30.1](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2025-02-26 (水) 18:54:31
