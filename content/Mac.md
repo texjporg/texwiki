@@ -149,6 +149,7 @@ macOS で日本語 JIS キーボードを利用している場合，設定によ
 いくつかの対処法を紹介します。
 
 - [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](https://softantenna.com/blog/input-backslash-on-osx/)
+- [Solutions for typing backslash on MacOS with Japanese keyboard in specific app](https://apple.stackexchange.com/questions/347389/solutions-for-typing-backslash-on-macos-with-japanese-keyboard-in-specific-app)
 - [MacのJISキーボードで円マークを打ったときにバックスラッシュが入るようにする（DefaultKeyBinding.dictを使う）](https://snap.hyuki.com/20180622223225/)
 - [OS X Yosemiteでバックスラッシュが円マークになっちゃう問題](https://chalow.net/2014-10-28-1.html)
 - [Macにおけるバックスラッシュ（\）の入力方法](https://qiita.com/miyohide/items/6cb8967282d4b2db0f61)
