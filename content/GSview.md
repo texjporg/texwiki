@@ -7,11 +7,11 @@ pukiwiki: "GSview"
 
 # GSview
 
-## [GSview](https://web.archive.org/web/20241219012055/https://git.ghostscript.com/?p=user/ghostgum/gsview.git) (Ghostgum GSview) {#o3c38991}
+## [GSview](https://web.archive.org/web/20241219012055/https://git.ghostscript.com/?p=user/ghostgum/gsview.git) (Ghostgum GSview) (開発終了) {#o3c38991}
 
 GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 紛らわしいですが，Artifex Software による [GSView](/GSview/) とは別物です。
-なお、GSview 5.0 は gs-10.04.0 には対応していません。[GSview 5.01beta は gs-10.04.0 に対応しています。（動作確認済み）](/GSview/#install)
+なお、GSview は開発が終了しており、GSview 5.0 は gs-10.04.0 には対応していません。[GSview 5.01beta は gs-10.04.0 に対応しています。（動作確認済み）](/GSview/#install)
 
 <!-- [[Ghostscript/Windows]] から移転してきました。 -->
 
