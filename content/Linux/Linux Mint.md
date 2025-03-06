@@ -77,51 +77,6 @@ sudo apt install xzdec
 tlmgr init-usertree
 ```
 
-texlive-lang-japanese パッケージのみインストールした場合は LuaTeX-ja や BXjscls を使用するとエラーが発生することがあります．
-エラーが発生する場合は必要なパッケージを追加でインストールします．
-
-- ! LaTeX Error: File \`luatexbase.sty' not found. が発生する場合
-
-```
-sudo apt install texlive-luatex
-```
-
-- ! LaTeX Error: File \`xkeyval.sty' not found. が発生する場合
-
-```
-sudo apt install texlive-latex-recommended
-```
-
-- ! LaTeX Error: File \`filehook.sty' not found. が発生する場合
-
-```
-sudo apt install texlive-latex-extra
-```
-
-- luaotfload | db : Reload initiated (formats: otf,ttf,ttc,dfont); reason: "File not found: lmroman10-regular.".<br>! Font \EU2/lmr/m/n/10=file:lmroman10-regular:script=latn;+trep;+tlig; at 10pt not loadable: metric data not found or bad. が発生する場合
-
-```
-sudo apt install fonts-lmodern
-```
-
-- ! LaTeX Error: File \`xunicode.sty' not found. が発生する場合
-
-```
-sudo apt install texlive-xetex
-```
-
-- ! LaTeX Error: File \`CJK.sty' not found. が発生する場合
-
-```
-sudo apt install latex-cjk-common
-```
-
-- kpathsea: Running mktextfm ipxm-r-u65<br>/usr/share/texlive/texmf-dist/web2c/mktexnam: Could not map source abbreviation  for ipxm-r-u65. が発生する場合
-
-```
-sudo apt install texlive-fonts-extra
-```
-
 ### [Ghostscript](/Ghostscript/) <a id="ghostscript"></a> {#t53b858c}
 
 ```
