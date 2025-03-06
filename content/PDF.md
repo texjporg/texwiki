@@ -47,7 +47,7 @@ PDF を出力できます．
 PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
 
 - [PDF24 Creator](https://www.pdf24.org/en/)
-- [CutePDF Writer](http://www.acrosoftware.com/Products/CutePDF/writer.asp)
+- [CutePDF Writer](https://www.acrosoftware.com/Products/CutePDF/writer.asp)
 
 広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
 
