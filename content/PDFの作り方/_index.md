@@ -33,7 +33,7 @@ PDF 編集ソフトウェア，PDF ビューアの一覧は [PDF](/PDF/) とい�
 
 macOS では標準で印刷機能から PDF で保存ができます．
 
-Windows でも，Windows 10 から「Microsoft Print to PDF」というプリンターが標準で追加され，Windows 11，Windows 10 で動作する様々なソフトウェアから手軽に PDF の作成ができるようになりました．今後は Windows でも PDF 環境はさらに改善するでしょう．
+Windows でも，Windows 11，Windows 10 では「Microsoft Print to PDF」というプリンターが標準で追加されており，様々なソフトウェアから手軽に PDF の作成ができます．
 
 PDF 出力用の仮想プリンタを導入することで，PDF への「印刷」機能を追加することもできます。仮想プリンタの導入については後述します．
 
@@ -55,9 +55,9 @@ PDF へ出力するための無償の仮想プリンタが多数あります：
 [Google Chrome](</Google Chrome/>) などのブラウザは，ウェブページを PDF で保存する機能を持っています．
 このため，HTML で文書を書いておけば，手軽に PDF 生成が可能です．
 
-いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](http://wkhtmltopdf.org/) などを使い，PDF の生成が可能です．wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています．Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです．
+いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](https://wkhtmltopdf.org/) などを使い，PDF の生成が可能です．wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています．Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです．
 
-wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](http://phantomjs.org/) も Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です．
+wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](https://phantomjs.org/) も Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です．
 
 ## LaTeX で PDF {#k0e3280f}
 
@@ -67,7 +67,7 @@ LaTeX のインストールについては
 [Linux へのインストール](/Linux/)
 などのページをご覧ください．
 
-LaTeX で PDF を作成する方法はいくつかあります．日本語を含む場合は，伝統的に dvips で PostScript ファイルを作成し，Adobe Acrobat で PDF へ変換する方法が好まれてきました．現在では platex/uplatex → dvipdfmx という流れが主流です．
+LaTeX で PDF を作成する方法はいくつかあります．dvipdfmx の登場以前に LaTeX で和文を作成する場合は，dvips で PostScript ファイルを作成し，Adobe Acrobat Distiller で PDF へ変換する方法が使われていました．現在では platex/uplatex → dvipdfmx という流れが主流です．
 欧米では，pdfLaTeX により LaTeX 文書から直接 PDF を生成するのが一般的です．
 Unicode を使用して多言語 PDF ファイルを作成する場合は，[LuaLaTeX](/LuaTeX/)
 が使えます．
@@ -118,8 +118,8 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 
 [Windowsで既定のプリンターを設定する](https://support.microsoft.com/ja-jp/windows/windows%E3%81%A7%E6%97%A2%E5%AE%9A%E3%81%AE%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-e10cf8b8-e596-b102-bf84-c41022b5036f) を参照して
 Adobe Acrobat を通常使うプリンターとして設定することができます．
-設定から 「デバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
-［プリンターとスキャナー］の「Windows で通常使うプリンターを管理する」のチェックをはずし，「Adobe PDF」プリンターアイコンをクリックして
+設定から 「Bluetooth とデバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
+［プリンターとスキャナー］の「Windows で通常使うプリンターを管理する」をオフに変更し，「Adobe PDF」プリンターアイコンをクリックして
 「管理」→「既定に設定」します．
 
 出力の細かい設定を行うには，「Adobe PDF」プリンターをクリックし，
