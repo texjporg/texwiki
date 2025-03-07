@@ -52,7 +52,7 @@ pdfviewer=C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe
 pdfviewertitle=
 pdflock=Yes
 pdfopen="%f"
-pdfjump=AcroViewA24/control/[DocOpen("%f")][DocGoTo("%f",%q)]
+pdfjump=AcroViewA25/control/[DocOpen("%f")][DocGoTo("%f",%q)]
 
 pdfviewer=C:\Program Files\SumatraPDF\SumatraPDF.exe
 pdfviewertitle=
