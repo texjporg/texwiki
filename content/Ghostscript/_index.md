@@ -135,4 +135,4 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 <!--  -->
 <!-- #comment -->
 
-[^1]: 過去の Ghostscript のバージョンには [AFPL](https://www.wikipedia.org/wiki/Aladdin_Free_Public_License) 版があります．AFPL 版は商業的な配布に制限があります．このあたりの事情は，古いですが，Ghostscript の作者 [L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください：[L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Internet Archive\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
+[^1]: 過去の Ghostscript のバージョンには [AFPL](https://www.wikipedia.org/wiki/Aladdin_Free_Public_License) 版があります．AFPL 版は商業的な配布に制限があります．このあたりの事情は，古いですが，Ghostscript の作者 [L. Peter Deutsch](https://www.wikipedia.org/wiki/L_Peter_Deutsch) の次のインタビュー記事をご覧ください：[L. Peter Deutsch in conversation with Stig Hackv&auml;n \[Wayback Machine\]](http://web.archive.org/web/20041013082602/http://devlinux.org/deutsch-interview.html)
