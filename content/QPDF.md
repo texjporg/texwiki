@@ -110,8 +110,8 @@ fix-qdf < output.qdf > output.pdf
 ### libqpdf {#l2e5ffe5}
 
 libqpdf は PDF を読み込み操作したりする C++ のライブラリです．
-詳しくは [http://github.com/qpdf/qpdf](http://github.com/qpdf/qpdf) の
-[examples](http://github.com/qpdf/qpdf/tree/master/examples) や [include/qpdf/QPDF.hh](http://github.com/qpdf/qpdf/blob/master/include/qpdf/QPDF.hh) あたりを参照してください。
+詳しくは [https://github.com/qpdf/qpdf](https://github.com/qpdf/qpdf) の
+[examples](https://github.com/qpdf/qpdf/tree/main/examples) や [include/qpdf/QPDF.hh](https://github.com/qpdf/qpdf/blob/main/include/qpdf/QPDF.hh) あたりを参照してください。
 
 libqpdf でプログラミングするには PDF の構造や仕組みに関する詳細な知識を必要とします．これは PDF の構造をあまり意識しないで済む高水準の API を提供する PDFlib とは対照的です．PDF の生成もできますが，libqpdf にはグラフィックス描画関数などはありません．
 
