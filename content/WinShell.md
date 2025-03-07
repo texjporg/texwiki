@@ -105,7 +105,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，Adobe Acrobat Reader を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewA24
+AcroViewA25
 ```
 
 に修正することで解消できます。
