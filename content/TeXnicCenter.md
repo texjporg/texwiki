@@ -897,21 +897,21 @@ Executable path<br>
 View project's output<br>
 ◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]</ins><br>
-Server: <ins>AcroViewA24</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>AcroViewA25</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Forward search<br>
 ◯ Command line argument　　🔘 DDE command<br>
 Command <ins>\[DocOpen("%bm.pdf")\]\[FileOpen("%bm.pdf")\]\[DocGoTo("%bm.pdf",0)\]</ins><br>
-Server: <ins>AcroViewA24</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>AcroViewA25</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
 Close document before running (La)TeX<br>
 ◯ Command line argument　🔘 DDE command　　◯ Do not close<br>
 Command <ins>\[DocClose("%bm.pdf")\]</ins><br>
-Server: <ins>AcroViewA24</ins>　　　　　　Topic: <ins>control</ins><br>
+Server: <ins>AcroViewA25</ins>　　　　　　Topic: <ins>control</ins><br>
 
 <br>
 
