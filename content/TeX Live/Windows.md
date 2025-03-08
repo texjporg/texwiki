@@ -207,8 +207,9 @@ TeX Live をインストールするときにウイルス対策ソフトが原�
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
 - [「セキュリティソフト」がインストールの障害になっている例](https://okumuralab.org/tex/mod/forum/discuss.php?d=1226)
 
-MinGWが悪さをする場合もあるようです．
+MinGW の xz が悪さをする場合もあるようです．
 
+- [ついでにWindows側にTexLive入れておくかと思ったら、うまくインストー<br>ルできない・・・<br>色々探してMinGWのxzが悪さをしていることを突き止めた。<br>インストールのときだけMinGW/をMinGWhoge/に書き換えたらすんなり<br>インストール始まりやがった・・・ｗ](https://x.com/Awed_Urshy/status/1898002831334162872)
 - [Error installing latest version of TeX Live on Windows 10](https://tex.stackexchange.com/questions/445086/error-installing-latest-version-of-tex-live-on-windows-10)
 - [No Such Blog or Diary - 今日の疑問](https://emoken.net/blog2/category_6/archive/2020-01-10/)
 
