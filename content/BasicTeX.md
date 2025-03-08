@@ -11,7 +11,7 @@ pukiwiki: "BasicTeX"
 
 BasicTeX は [TeX Live](</TeX Live/>) のサブセットで，macOS 専用の TeX ディストリビューションです。
 BasicTeX は TeX Live の scheme-small に対応し，LaTeX の文書作成に必要な最低限のパッケージと [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[XeTeX](/XeTeX/) などが含まれています。
-BasicTeX には [e-pTeX](/e-pTeX/) や [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
+BasicTeX には [e-upTeX](/upTeX,upLaTeX/) が含まれていませんので，日本語の LaTeX 文書を作成するためには別途 collection-langjapanese をインストールします。
 collection-langjapanese をインストールすれば，[jsclasses](/jsclasses/) や [OTF](/OTF/)，[BXjscls](/BXjscls/)，[jlreq](/jlreq/) も利用可能になります。 <!-- LuaTeX-ja は BasicTeX + collection-langjapanese だけではダメなので下へ移動 - - アセトアミノフェン (2016-06-22) -->
 
 ***
@@ -29,7 +29,7 @@ BasicTeX のインストールの概略は以下のとおりです。
 1. ダウンロードした BasicTeX.pkg をダブルクリックしてインストールします。
 1. ターミナル上で sudo tlmgr update --self --all を実行し，最新版までアップデートします。
 1. ターミナル上で sudo tlmgr paper a4 を実行してデフォルトの用紙サイズを A4 に変更します。
-1. BasicTeX には標準で日本語 pTeX / upTeX が入っていませんので，以下のコレクションを追加でインストールします。
+1. BasicTeX には標準で日本語 upTeX が入っていませんので，以下のコレクションを追加でインストールします。
 
     ```
     sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
@@ -58,30 +58,6 @@ $ sudo tlmgr install collection-langjapanese collection-latexextra collection-lu
 - [Mac で日本語 LaTeX 環境最短手順](https://x.com/u_sho_KyoPro/status/1388020287233355778)
 - [macOS Big SurでLaTeX環境整えた時のメモ(2020, x86_64/arm64対応)](https://qiita.com/yaplus/items/55fa6957c1b15dbcf387)
 - [初心者がBasicTexをmacにインストールする(2019年)](https://qiita.com/yuukami1024/items/bec77e17111ad95a1188)
-
-#### TeX Live 2016 以降での注意点 {#y0fc0688}
-
-<!-- [[古い情報]] に書くべきかもしれないが，影響ある人は少ないと思われるので，直接関係ありそうなこちらに． -->
-
-TeX Live 2015 以前でのインストール事例・解説記事では，BasicTeX に加えて
-
-```
-$ sudo tlmgr install ptex
-```
-
-などとすれば日本語環境ができるとしているものがあります。
-確かに 2015 以前では ptex をインストールすれば platex も使えるようになっていたのですが，
-2016 以降では platex は platex パッケージに分離されました。
-このため，ptex をインストールしただけでは platex が使えるようにはなりません。
-
-日本語環境を構成するには，このページで解説しているように collection-langjapanese、collection-latexextra、collection-luatex を
-インストールすることをおすすめします。
-
-<!-- TeX Live 2017 対応 -->
-<!-- -[[macOS に Tex Live 2017をインストールする:http://d.hatena.ne.jp/pyopyopyo/20170801/p1]] -->
-
-<!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
-<!-- -[[RStudioから使えるR Markdownで日本語のPDFを作成する:http://bicycle1885.hatenablog.com/entry/2014/10/15/032024]] -->
 
 ### BasicTeX + collection-langjapanese で LuaTeX-ja を使う {#f2230bb1}
 
