@@ -148,6 +148,7 @@ macOS Sequoia 15 から署名の無いアプリを開く手続きが変わった
 macOS で日本語 JIS キーボードを利用している場合，設定によっては Backslash (U+005C) を入力しているつもりが 円記号 (U+00A5) になる場合があります。
 いくつかの対処法を紹介します。
 
+- [Macでバックスラッシュを入力するための設定](https://www.cc.kyoto-su.ac.jp/~mmina/bp1/settingForBackslash.html)
 - [【Tips】Macで円記号ではなくバックスラッシュを確実に入力する方法](https://softantenna.com/blog/input-backslash-on-osx/)
 - [Solutions for typing backslash on MacOS with Japanese keyboard in specific app](https://apple.stackexchange.com/questions/347389/solutions-for-typing-backslash-on-macos-with-japanese-keyboard-in-specific-app)
 - [MacのJISキーボードで円マークを打ったときにバックスラッシュが入るようにする（DefaultKeyBinding.dictを使う）](https://snap.hyuki.com/20180622223225/)
