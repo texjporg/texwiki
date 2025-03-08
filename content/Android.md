@@ -25,6 +25,7 @@ pukiwiki: "Android"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
+- [Emacs](/Emacs/)
 - [DroidVim](https://play.google.com/store/apps/details?id=com.droidvim)
     - [https://github.com/shiftrot/droidvim](https://github.com/shiftrot/droidvim)
     - [Vim - TeX Wiki](/Vim/)
