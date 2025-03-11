@@ -50,13 +50,12 @@ $ powershell -? | iconv -f CP932 -t UTF-8
 cmd /c "chcp 65001 > NUL"
 ```
 
-## Mingw-w64 {#q2a4db43}
+## mingw-w64 {#q2a4db43}
 
-Mingw-w64 は 64-bit Windows または 32-bit Windows のバイナリを出力するためのソフトウェアです．
-[MinGW](/MinGW/) と比較すると 64-bit 対応や新しい API サポートなどが追加されています．
+mingw-w64 は 64-bit Windows (x64, aarch64) のバイナリを出力するためのソフトウェアです．
 MSYS2 でインストールできます．
 
-- [Mingw-w64 - GCC for Windows 64 &amp; 32 bits \[mingw-w64\]](http://mingw-w64.org/)
+- [mingw-w64](https://www.mingw-w64.org/)
     <!-- -[[MXE (M cross environment):http://mxe.cc/]] -->
     <!-- -[[MinGW 64 bit | Qt Wiki | Qt Developer Network:http://qt-project.org/wiki/MinGW-64-bit]] -->
     <!-- -[[mingw-w64-dgn:https://sourceforge.net/projects/mingw-w64-dgn/]] -->
