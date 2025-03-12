@@ -131,11 +131,11 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
+- [2024年のコンピューターノウハウ (Mac) 61 MacTeX 2025が来た](https://m-katsurada.sakura.ne.jp/knowhow-2024/node61.html)
 - [LaTeX+BibLaTeX+VSCodeでスッキリ環境構築 (Mac) (2024)](https://qiita.com/Muon/items/f4d4b93fb1f9cbec51d0)
 - [MacBook 研究室環境2024](https://zenn.dev/kogikun/articles/94aacb7fd5f86c)
 - [【初心者向け】Visual Studio CodeでLaTeX環境構築 （for Mac）](https://note.com/nonnonlife/n/nf7791a7df940)
 - [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
-- [2023年のコンピューターノウハウ (Mac) 67 MacTeX 2014 が来た](https://m-katsurada.sakura.ne.jp/knowhow-2023/node67.html)
 - [MacにTeXをインストールする方法【MacTeX】](https://mathphysnote.com/mactex-install/)
 - [Mac Ventura 対応 LaTeX環境の構築(インストール,VSCode設定)](https://frees.jp/2023/04/08/latex%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABvscode/)
 - [MacにHomebrewを用いてTexをインストールする](https://blog.interstellar.co.jp/2022/07/15/installing-tex-on-a-mac-using-brew/)
@@ -143,8 +143,6 @@ $ sudo tlmgr paper a4
 - [M1 Mac がやってきた（ソフトウェア設定編（4））](https://iio-lab.blogspot.com/2021/05/set-up-log-for-new-M1-mac-05.html)
 - [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](https://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
-- [Mac OS X&#x28;Mojave)にLaTeX環境を構築する\[VSCode版\]｜てくてくぷれいす](https://murabitoleg.com/mac-vscode-latex/)
-- [https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml](https://mac.softpedia.com/get/Developer-Tools/MacTeX.shtml)
 
 <!-- MacTeX-2016 の場合 -->
 <!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
