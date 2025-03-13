@@ -29,7 +29,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 | [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) | UNIX | .bib ファイルの管理ソフト．[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
 | [Pybliographer](https://gitlab.gnome.org/Archive/pybliographer) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
 | [Mendeley](https://www.mendeley.com/)  | Windows, macOS, Linux | 文献管理ソフト |
-| [QRef](http://hp.vector.co.jp/authors/VA011272/) | Windows, macOS | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://hp.vector.co.jp/authors/VA011272/html/latex.htm) |
+| [QRef](https://www.vector.co.jp/soft/winnt/edu/se498193.html) | Windows, macOS | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://hp.vector.co.jp/authors/VA011272/html/latex.htm) |
 
 ## bib ファイルの作成編集支援ツール {#t7b99d07}
 
