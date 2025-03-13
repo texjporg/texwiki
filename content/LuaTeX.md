@@ -21,15 +21,13 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-TeX Live 2025 には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されています。
+TeX Live 2025 初回リリース版には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されています。この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuaHBTeX 1.22.0, LuaTeX 1.22.0 が収録されています。
 
 LuaTeX 1.20.0 で luaffi が [AArch64](https://ja.wikipedia.org/wiki/AArch64) に対応しました。--&gt; [Revision 73279](https://svn.tug.org/texlive?revision=73279&view=revision)
 
 TeX Live 2024 には LuaHBTeX 1.18.0, LuaTeX 1.18.0 が収録されています。
 
-TeX Live 2023 [Revision 66967](https://tug.org/svn/texlive?view=revision&revision=66967), [Revision 66994](https://tug.org/svn/texlive?view=revision&revision=66994) には LuaHBTeX 1.17.0, LuaTeX 1.17.0 が収録されています。
-
-TeX Live 2023 初回リリース版には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。
+TeX Live 2023 初回リリース版には LuaHBTeX 1.16.0, LuaTeX 1.16.0 が収録されています。[Revision 66967](https://svn.tug.org/texlive?view=revision&revision=66967), [Revision 66994](https://svn.tug.org/texlive?view=revision&revision=66994) には LuaHBTeX 1.17.0, LuaTeX 1.17.0 が収録されています。
 
 TeX Live 2022 には LuaHBTeX 1.15.0, LuaTeX 1.15.0 が収録されています。
 
@@ -132,9 +130,8 @@ GPLv3, GPLv2
 
 #### ChangeLog <a id="changelog"></a> {#h5bae295}
 
-<!-- -https://serveur-svn.lri.fr/svn/modhel/luatex/ -->
-<!-- -https://github.com/tex-mirror/luatex -->
-<!-- - -https://github.com/tex-mirror/luatex/commits/trunk -->
+- [TeXLive / luatex · GitLab](https://gitlab.lisn.upsaclay.fr/texlive/luatex)
+    - [コミット](https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/commits/master)
 - \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/web2c/luatexdir](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/)
     - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
