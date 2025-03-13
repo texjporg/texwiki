@@ -178,7 +178,7 @@ TeX Live をフルインストールする場合は MacTeX をインストール
 Homebrew Cask で MacTeX をインストールできます。
 Ghostscript などのツールも Homebrew でインストールできます。
 
-GUI-Applications ありの場合
+GUI Applications ありの場合
 
 ```
 $ brew install --cask mactex
@@ -187,7 +187,7 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
 
-GUI-Applications なしの場合
+GUI Applications なしの場合
 
 ```
 $ brew install --cask mactex-no-gui
@@ -278,7 +278,7 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
     tlmgr および kanji-config-updmap-sys は updmap-sys を内部で呼びだしますが，-sys なしの kanji-config-updmap-sys は -sys なしの updmap を実行します。
     <strong>-sys をつけたコマンドによる新しい設定が反映されない場合は，-sys なしの updmap による設定が TEXMFHOME に残ってないか確認してください</strong>。（-sys なしの updmap による設定は不可視ファイルとなっています。）
 
-- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+](https://web.archive.org/web/20220121024503/https://tug.org/mactex/TeXLive2018+Changes.pdf) を参照)
+- updmap-sys は TEXMFLOCAL を検索対象とはしますが，TEXMFHOME は検索しませんので，フォントは原則として TEXMFLOCAL に置くことが推奨されています。(→ [Font Installation with TeX Live 2012+](https://tug.org/mactex/Adding-Fonts-and-Restricted-Shell-Escape.pdf) を参照)
     TEXMFHOME にフォントを置く場合は，updmap（-sys なし）を実行する必要があります。
     - 埋め込むフォントを細かく制御したい場合は，手動で map ファイルを書き換えます。
 
