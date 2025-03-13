@@ -7,11 +7,16 @@ pukiwiki: "W32TeX"
 
 # W32TeX
 
-## W32TeX（配布終了）→ [TeX Live](</TeX Live/>) に移行してください {#ba560630}
+## [W32TeX](https://w32tex.org/w32tex-ja.html)（配布終了）→ [TeX Live](</TeX Live/>) に移行してください {#ba560630}
 
 <strong>配布が終了しました．以下は古い情報です．</strong>
 
 W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成されていた TeX のディストリビューションでしたが現在は配布が終了しています．[TeX Live](</TeX Live/>) に移行してください．
+
+- [https://w32tex.org/](https://w32tex.org/)
+    - [https://w32tex.org/w32tex.html](https://w32tex.org/w32tex.html)
+    - [https://w32tex.org/w32tex-ja.html](https://w32tex.org/w32tex-ja.html)
+    - [https://w32tex.org/w32tex-zh.html](https://w32tex.org/w32tex-zh.html)
 
 ***
 
@@ -120,6 +125,10 @@ C:\w32tex\bin64;C:\w32tex\bin
 in the case of 64bit OS
 to user's PATH in the control panel.
 ```
+
+以下のサイトには，texinstwin を使用したインストールの解説があります．
+
+- [W32TeXの導入を自動化した](https://qiita.com/EAGLE_usagi/items/9ead6a9244075828b55a)
 
 #### 環境変数 Path の設定 {#g0475486}
 
