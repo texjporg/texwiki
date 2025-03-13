@@ -23,13 +23,11 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
-TeX Live 2025 には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されています。
+TeX Live 2025 初回リリース版には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されています。この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuajitHBTeX 1.22.0, LuajitTeX 1.22.0 が収録されています。
 
 TeX Live 2024 には LuajitHBTeX 1.18.0, LuajitTeX 1.18.0 が収録されています。
 
-TeX Live 2023 [Revision 66967](https://tug.org/svn/texlive?view=revision&revision=66967), [Revision 66994](https://tug.org/svn/texlive?view=revision&revision=66994) には LuajitHBTeX 1.17.0, LuajitTeX 1.17.0 が収録されています。
-
-TeX Live 2023 初回リリース版には LuajitHBTeX 1.16.0, LuajitTeX 1.16.0 が収録されています。
+TeX Live 2023 初回リリース版には LuajitHBTeX 1.16.0, LuajitTeX 1.16.0 が収録されています。[Revision 66967](https://svn.tug.org/texlive?view=revision&revision=66967), [Revision 66994](https://svn.tug.org/texlive?view=revision&revision=66994) には LuajitHBTeX 1.17.0, LuajitTeX 1.17.0 が収録されています。
 
 TeX Live 2022 には LuajitHBTeX 1.15.0, LuajitTeX 1.15.0 が収録されています。
 
