@@ -38,7 +38,7 @@ MacTeX-2025 には以下のパッケージが収録されています。
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
 
-#### GUI-Applications {#a9bfcdb5}
+#### GUI Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
 TeX フォルダの中に READ ME FIRST.pdf があります。
@@ -67,7 +67,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [hintview](https://hint.userweb.mwn.de/hint/hintview.html)
     - [HINT文書](https://hint.userweb.mwn.de/hint/hitex.html)ビューア。
 
-#### Ghostscript-10.04.0 {#n1354f54}
+#### Ghostscript 10.04.0<br>Ghostscript Dynamic Library {#n1354f54}
 
 以下の場合に当てはまる場合はチェックをはずします。
 
@@ -107,7 +107,7 @@ MacTeX のインストールの概略は以下のとおりです。
 
 Homebrew Cask で MacTeX をインストールできます。
 
-GUI-Applications ありの場合
+GUI Applications ありの場合
 
 ```
 $ brew install --cask mactex
@@ -116,7 +116,7 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
 
-GUI-Applications なしの場合
+GUI Applications なしの場合
 
 ```
 $ brew install --cask mactex-no-gui
