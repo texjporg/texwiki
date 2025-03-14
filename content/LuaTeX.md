@@ -21,7 +21,7 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
-TeX Live 2025 初回リリース版には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されています。この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuaHBTeX 1.22.0, LuaTeX 1.22.0 が収録されています。
+TeX Live 2025 初回リリース版には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されていますが、この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuaHBTeX 1.22.0, LuaTeX 1.22.0 が収録されています。
 
 LuaTeX 1.20.0 で luaffi が [AArch64](https://ja.wikipedia.org/wiki/AArch64) に対応しました。--&gt; [Revision 73279](https://svn.tug.org/texlive?revision=73279&view=revision)
 
