@@ -23,7 +23,7 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
-TeX Live 2025 初回リリース版には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されています。この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuajitHBTeX 1.22.0, LuajitTeX 1.22.0 が収録されています。
+TeX Live 2025 初回リリース版には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されていますが、この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) には LuajitHBTeX 1.22.0, LuajitTeX 1.22.0 が収録されています。
 
 TeX Live 2024 には LuajitHBTeX 1.18.0, LuajitTeX 1.18.0 が収録されています。
 
@@ -35,7 +35,7 @@ TeX Live 2021 には LuajitHBTeX 1.13.2, LuajitTeX 1.13.2 が収録されてい�
 
 TeX Live 2020 には LuajitHBTeX 1.12.0, LuajitTeX 1.12.0 が収録されています。
 
-TeX Live [Revision 52828](http://www.tug.org/svn/texlive?view=revision&revision=52828) で LuajitLaTeX が削除されました。
+TeX Live [Revision 52828](https://svn.tug.org/texlive?view=revision&revision=52828) で LuajitLaTeX が削除されました。
 
 TeX Live 2019 には LuajitTeX 1.10.0 が収録されています。
 
