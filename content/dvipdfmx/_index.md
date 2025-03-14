@@ -8,7 +8,7 @@ pukiwiki: "dvipdfmx"
 
 # dvipdfmx
 
-## [dvipdfmx](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
+## [dvipdfmx](https://svn.tug.org/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 元々 [Mark A. Wicks](https://www.ctan.org/author/wicks) 氏によって開発された [dvipdfm](http://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
@@ -388,6 +388,10 @@ TeX Live 2016 以降では，\includegraphics に pagebox オプションによ�
 <!-- // 「不具合」のところに誰かが記述を移したようなので困っていたのですが，適切なところに移していただいて助かります． -->
 
 ## 不具合 {#f5e1d97d}
+
+### dvipdfmx 20250205 での不具合 {#ubf42103}
+
+- [dvipdfmx20250205と\usepackage{otf}で処理に時間がかかる](https://okumuralab.org/tex/mod/forum/discuss.php?d=3903)
 
 ### dvipdfmx Version 20240305 でのみ起こる不具合 {#a8a0635d}
 
