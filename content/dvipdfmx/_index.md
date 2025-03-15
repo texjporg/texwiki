@@ -81,7 +81,7 @@ foo.dvi -> foo.pdf
 ```
 
 とします．
-macOS ではヒラギノを使うとよいかもしれません（設定については [TLContrib](/TLContrib/) を参照してください）．
+macOS ではヒラギノを使うとよいかもしれません（設定については [ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>) を参照してください）．
 
 ### コマンドラインオプション {#tc481bdb}
 
@@ -158,8 +158,8 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
 
 dvipdfmx には The dvipdfmx project team によるマニュアルが存在します．
 
-- [https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf)
+- [https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf)
+- [https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co](https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co)
 
 コマンドラインから
 
