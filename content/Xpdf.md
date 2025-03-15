@@ -35,11 +35,15 @@ XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用
 - [https://www.xpdfreader.com/](https://www.xpdfreader.com/)
 - [https://www.glyphandcog.com/](https://www.glyphandcog.com/) （開発元の Glyph &amp; Cog のページ）
 
-### お知らせ {#pd98a397}
+### お知らせ {#notice}
 
 Xpdf 4.00 で GUI に使用されるツールキットが Motif から Qt に変更されました。
 
 現在の Linux ディストリビューションや TeX Live 2017 (windows) 以降に収録されているのは xpdf utilities ではなく poppler utilities です。
+
+[［改訂第6版］LaTeX2e 美文書作成入門サポートページ#pdftotextと本書PDF版の相性問題](https://okumuralab.org/~okumura/bibun6/#pdftotext)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています。
+
+[http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html#o-20250307](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html#o-20250307) に Xpdf の設定ファイルの「fontFile」という設定の同じフォントに対して、 前の設定を後の設定が上書きするようにするパッチが公開されています。
 
 ### Xpdf のツール一覧 {#tools}
 
@@ -134,10 +138,6 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
 [https://www.xpdfreader.com/download.html](https://www.xpdfreader.com/download.html) から Linux 版の XpdfReader と Xpdf command line tools がダウンロードできます。
 
 Linux の場合は Xpdf command line tools をインストールしなくても poppler-utils（Linux Mint/Debian/Ubuntu や Fedora など）あるいは poppler（Arch Linux など）という名前のパッケージと poppler-data をインストールすれば poppler utilities が使用できます。
-
-### お知らせ {#notice}
-
-- [［改訂第6版］LaTeX2e 美文書作成入門サポートページ](https://okumuralab.org/~okumura/bibun6/)に，「pdftotextと本書PDF版の相性問題」と題して，Xpdf 付属の pdftotext で当該書籍の PDF 版をテキスト化する場合の注意点が記されています。
 
 ### 関連記事 {#links}
 
