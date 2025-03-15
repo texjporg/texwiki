@@ -23,11 +23,11 @@ JIT とは <strong>J</strong>ust-<strong>I</strong>n-<strong>T</strong>ime Compi
 
 ### お知らせ {#jd858e78}
 
-TeX Live 2025 初回リリース版には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されていますが、この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合を修正した [Revision 74611](https://svn.tug.org/texlive?view=revision&revision=74611) では積分記号は直っていますが，定積分の積分範囲上下限が積分記号よりかなり離れた位置に配置される新たな不具合が発生してます。
+TeX Live 2025 初回リリース版には LuajitHBTeX 1.21.0, LuajitTeX 1.21.0 が収録されていますが、この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合は [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) で修正され、[Revision 74609](https://svn.tug.org/texlive?view=revision&revision=74609) で TeX Live 2025 のブランチに取り込まれました。[Revision 74610](https://svn.tug.org/texlive?view=revision&revision=74610)、[Revision 74611](https://svn.tug.org/texlive?view=revision&revision=74611)、[Revision 74618](https://svn.tug.org/texlive?view=revision&revision=74618)、[Revision 74619](https://svn.tug.org/texlive?view=revision&revision=74619)、[Revision 74624](https://svn.tug.org/texlive?view=revision&revision=74624) に収録されている LuajitHBTeX 1.22.0, LuajitTeX 1.22.0 では積分記号は直っていますが，定積分の積分範囲上下限が積分記号よりかなり離れた位置に配置される新たな不具合が発生します。「[TL2025のlualatexにおける定積分](https://okumuralab.org/tex/mod/forum/discuss.php?d=3904)」の投稿によるとプリアンブルに \mathitalicsmode3 を記述することで問題が解消するようです。
 
 TeX Live 2024 には LuajitHBTeX 1.18.0, LuajitTeX 1.18.0 が収録されています。
 
-TeX Live 2023 初回リリース版には LuajitHBTeX 1.16.0, LuajitTeX 1.16.0 が収録されています。[Revision 66967](https://svn.tug.org/texlive?view=revision&revision=66967), [Revision 66994](https://svn.tug.org/texlive?view=revision&revision=66994) には LuajitHBTeX 1.17.0, LuajitTeX 1.17.0 が収録されています。
+TeX Live 2023 初回リリース版には LuajitHBTeX 1.16.0, LuajitTeX 1.16.0 が収録されていますが、この版には [CVE-2023-32668](https://security-tracker.debian.org/tracker/CVE-2023-32668) の脆弱性が存在します。この脆弱性は [Revision 66967](https://svn.tug.org/texlive?view=revision&revision=66967) で修正され、[Revision 66984](https://svn.tug.org/texlive?view=revision&revision=66984) で TeX Live 2023 のブランチに取り込まれました。[Revision 66986](https://svn.tug.org/texlive?view=revision&revision=66986), [Revision 66987](https://svn.tug.org/texlive?view=revision&revision=66987), [Revision 66994](https://svn.tug.org/texlive?view=revision&revision=66994), [Revision 66997](https://svn.tug.org/texlive?view=revision&revision=66997), [Revision 67006](https://svn.tug.org/texlive?view=revision&revision=67006) には LuajitHBTeX 1.17.0, LuajitTeX 1.17.0 が収録されています。
 
 TeX Live 2022 には LuajitHBTeX 1.15.0, LuajitTeX 1.15.0 が収録されています。
 
