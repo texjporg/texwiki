@@ -29,7 +29,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
         <!-- - --TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです - -&gt; [[TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ ):https://x.com/aminophen/status/856445778486636544]] -->
 
 - tlgs.windows
-    - Windows 版の TeX Live に収録されている Ghostscript
+    - Windows 版の TeX Live に収録されている Ghostscript。本家の公式 Windows 版バイナリとの違いについては [README.TEXLIVE](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/README.TEXLIVE?view=markup) を参照。
 - winget Ghostscript
     - winget からインストールできる Ghostscript
 - Scoop Ghostscript
@@ -67,30 +67,30 @@ TeX Live の windows 版を使用する場合は Ghostscript (tlgs.windows) が�
 
 #### インストール方法 {#q1167b48}
 
-1. Ghostscript インストーラ（gs10040w64.exe）を実行します。
-    - デフォルトのインストール先は “C:\Program Files\gs\gs10.04.0” です。
-    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.04.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
+1. Ghostscript インストーラ（gs10050w64.exe）を実行します。
+    - デフォルトのインストール先は “C:\Program Files\gs\gs10.05.0” です。
+    - 上のデフォルトのインストール先には空白文字が含まれるので，気になる人は “C:\gs\gs10.05.0” に変更するとよいでしょう（時に，この空白文字のせいで Ghostscript を利用するソフトウェアが動かないという現象があるようです）。
 1. インストールウィザードを終了するウィンドウで \[Generate cidfmap for Windows CJK TrueType fonts\] にチェックが入っていなければチェックを入れて \[Finish\] をクリックします。
 1. [SumatraPDF](/SumatraPDF/) で PS ファイル、EPS ファイルが表示できます。
 
 ［参考］Ghostscript は好きな場所にインストールすることができますが，日本語等の非 ASCII 文字を含む場所にインストールするのは避けておくのが無難です。
-なお，歴史的な理由等から gs\gs10.04.0 などというフォルダーにインストールされることがほとんどです。
-その関係から，様々な解説ではこの gs\gs10.04.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
+なお，歴史的な理由等から gs\gs10.05.0 などというフォルダーにインストールされることがほとんどです。
+その関係から，様々な解説ではこの gs\gs10.05.0 などといったフォルダー構造を仮定していることが多いということを理解しておいてください。
 
 #### ユーザー環境変数 Path またはシステム環境変数 Path の設定 {#w1241f25}
 
 インストールした Ghostscript に含まれる bin フォルダーと lib フォルダーをユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
 bin だけでなく lib も忘れずに追加しないと，正常に動作しません。
-Ghostscript を C:\Program Files\gs\gs10.04.0 にインストールした場合は
+Ghostscript を C:\Program Files\gs\gs10.05.0 にインストールした場合は
 
 ```
-C:\Program Files\gs\gs10.04.0\bin
+C:\Program Files\gs\gs10.05.0\bin
 ```
 
 と
 
 ```
-C:\Program Files\gs\gs10.04.0\lib
+C:\Program Files\gs\gs10.05.0\lib
 ```
 
 をユーザー環境変数 Path またはシステム環境変数 Path のリストに追加します。
@@ -98,7 +98,7 @@ C:\Program Files\gs\gs10.04.0\lib
 Ghostscript をインストールした場合，Windows PowerShell で echo $Env:Path を実行あるいはコマンド プロンプトで echo %Path% を実行した場合の環境変数 Path の表示は以下のようになるでしょう：
 
 ```
-…;C:\Program Files\gs\gs10.04.0\bin;C:\Program Files\gs\gs10.04.0\lib;…
+…;C:\Program Files\gs\gs10.05.0\bin;C:\Program Files\gs\gs10.05.0\lib;…
 ```
 
 ［注意］古い Ghostscript がインストールされていた場合には，環境変数 GS_LIB が残っているかもしれません。
@@ -127,7 +127,7 @@ Ghostscript をインストールした場合，Windows PowerShell で echo $Env
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合
     - TeX Live (windows) をインストールした場合は TeX Live (windows) に付属する Ghostscript (tlgs.windows) が自動的にインストールされます。
-    - Ghostscript (tlgs.windows) を起動するコマンドは rungs です。TeX Live 2024 (windows) の rungs は gswin64c が実行されます。
+    - Ghostscript (tlgs.windows) を起動するコマンドは rungs です。TeX Live 2025 (windows) の rungs は gswin64c が実行されます。
     - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.windows) を使用する場合は ps2pdf.exe という実行ファイルになっています。
 
 #### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
@@ -755,8 +755,8 @@ composefont pop
 
 #### tlgs.windows {#a9e655e3}
 
-- \[[texlive\] Index of /trunk/Master/tlpkg/tlgs](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+- \[[ViewVC\] Index of: texlive/trunk/Master/tlpkg/tlgs](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/)
+    - [log](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/?view=log)
 
 #### winget Ghostscript {#lb8d3056}
 
