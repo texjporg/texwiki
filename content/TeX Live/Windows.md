@@ -215,6 +215,10 @@ MinGW の xz が悪さをする場合もあるようです．
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
+TeX Live 2025 対応の事例です．
+
+- [TeX Live 2024から2025へのアップデート Windows 編](https://qiita.com/denkiuo604/items/971cf1aaa61285677c04)
+
 TeX Live 2024 対応の事例です．
 
 - [TeX Live 2024 へアップデートした話  \[05/04/2024\]](https://www-cc.gakushuin.ac.jp/~20050003/z-main.html#texlive2024)
