@@ -81,6 +81,7 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
         $ brew install xpdf
         ```
 
+        - 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
 - MacPorts を用いる方法
     - MacPorts では xpdf という名前で port が用意されており，xpdf の port には次のような variants が用意されています。
 
@@ -108,13 +109,19 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
 
         さらに言語設定が必要です（以下のディレクトリ名は
         MacPorts の場合。Homebrew なら /opt/local ではなく Apple Silicon 版では /opt/homebrew/ Intel 版では /usr/local/ のはず）。
-        日本語を用いる場合は xpdf-japanese もインストールし，/opt/local/etc/xpdfrc を編集します。
+        日本語を用いる場合は xpdf-japanese もインストールします。
+
+        ```
+        $ sudo port install xpdf-japanese
+        ```
+
+        [xpdfrc](http://nalab.mind.meiji.ac.jp/~mk/misc/20220226/xpdfrc) を ~/.xpdfrc にコピーして編集します。
 
         ```
         #textEncoding		UTF-8
         ```
 
-        のコメントアウトを外します。さらに
+        のようになっている場合はコメントアウトを外します。さらに
 
         ```
         cidToUnicode  Adobe-Japan1  /opt/local/share/xpdf/xpdf-japanese/Adobe-Japan1.cidToUnicode
@@ -129,7 +136,7 @@ macOS の [TeX Live](</TeX Live/>) には Poppler や Xpdf は含まれていな
 
 > pdffonts, pdfimages, pdfinfo, pdftops, pdftotext, pdftoppm, pdfdetach
 
-- 参考：[xpdfを使ってPDFから日本語抽出](http://akkunchoi.github.io/xpdf-japanese.html)
+- 参考：[2024年のコンピューターノウハウ (Mac) 62 MacPorts の xpdf -- やはり賞味期限切れなのかなあ](https://m-katsurada.sakura.ne.jp/knowhow-2024/node62.html)
     - [https://ports.macports.org/port/xpdf/](https://ports.macports.org/port/xpdf/)
     - [https://ports.macports.org/port/xpdf-japanese/](https://ports.macports.org/port/xpdf-japanese/)
 
