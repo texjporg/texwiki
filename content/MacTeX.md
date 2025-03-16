@@ -20,7 +20,7 @@ TeX Live をフルインストールし，オプションでいくつかの追�
     - [MacTeX Screen Saver](https://www.tug.org/tug2003/mactex/screensaver.html)
         - [screen image](https://www.tug.org/tug2003/mactex/screen_images/)
 
-MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
+MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
 
 ***
 
@@ -132,10 +132,11 @@ $ sudo tlmgr paper a4
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
 - [2024年のコンピューターノウハウ (Mac) 61 MacTeX 2025が来た](https://m-katsurada.sakura.ne.jp/knowhow-2024/node61.html)
+- [HomebrewでMacにTeX環境を構築する方法](https://zenn.dev/haruki1009/articles/7e5ae0ad825fa2)
 - [LaTeX+BibLaTeX+VSCodeでスッキリ環境構築 (Mac) (2024)](https://qiita.com/Muon/items/f4d4b93fb1f9cbec51d0)
+- [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
 - [MacBook 研究室環境2024](https://zenn.dev/kogikun/articles/94aacb7fd5f86c)
 - [【初心者向け】Visual Studio CodeでLaTeX環境構築 （for Mac）](https://note.com/nonnonlife/n/nf7791a7df940)
-- [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
 - [MacにTeXをインストールする方法【MacTeX】](https://mathphysnote.com/mactex-install/)
 - [Mac Ventura 対応 LaTeX環境の構築(インストール,VSCode設定)](https://frees.jp/2023/04/08/latex%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%ABvscode/)
 - [MacにHomebrewを用いてTexをインストールする](https://blog.interstellar.co.jp/2022/07/15/installing-tex-on-a-mac-using-brew/)
