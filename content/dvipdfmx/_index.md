@@ -389,9 +389,13 @@ TeX Live 2016 以降では，\includegraphics に pagebox オプションによ�
 
 ## 不具合 {#f5e1d97d}
 
-### dvipdfmx 20250205 での不具合 {#ubf42103}
+### dvipdfmx Version 20250205 での不具合 {#ubf42103}
+
+#### dvipdfmx20250205と\usepackage{otf}で処理に時間がかかる {#t9a67ebb}
 
 - [dvipdfmx20250205と\usepackage{otf}で処理に時間がかかる](https://okumuralab.org/tex/mod/forum/discuss.php?d=3903)
+
+[dvipdfmx Version 20250317](https://okumuralab.org/tex/mod/forum/discuss.php?d=3903#p24415) で修正されました．
 
 ### dvipdfmx Version 20240305 でのみ起こる不具合 {#a8a0635d}
 
