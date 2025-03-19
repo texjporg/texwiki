@@ -77,10 +77,10 @@ Notepad++ JS npp-7.5.1.1-js-171025-2200 (日付: 2017-10-25) が最新リリー�
 
 - [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
     - [https://ja.osdn.net/projects/l2jacmjpn/releases/p15218](https://ja.osdn.net/projects/l2jacmjpn/releases/p15218)
-    - [http://jaist.dl.osdn.jp/l2jacmjpn/](http://jaist.dl.osdn.jp/l2jacmjpn/)
-        - [http://jaist.dl.osdn.jp/l2jacmjpn/68568/](http://jaist.dl.osdn.jp/l2jacmjpn/68568/)
-    - [http://iij.dl.osdn.jp/l2jacmjpn/](http://iij.dl.osdn.jp/l2jacmjpn/)
-        - [http://iij.dl.osdn.jp/l2jacmjpn/68568/](http://iij.dl.osdn.jp/l2jacmjpn/68568/)
+    - [https://jaist.dl.osdn.jp/l2jacmjpn/](https://jaist.dl.osdn.jp/l2jacmjpn/)
+        - [https://jaist.dl.osdn.jp/l2jacmjpn/68568/](https://jaist.dl.osdn.jp/l2jacmjpn/68568/)
+    - [https://iij.dl.osdn.jp/l2jacmjpn/](https://iij.dl.osdn.jp/l2jacmjpn/)
+        - [https://iij.dl.osdn.jp/l2jacmjpn/68568/](https://iij.dl.osdn.jp/l2jacmjpn/68568/)
 
 ## プラグイン (Plugins) {#k2155ff2}
 
