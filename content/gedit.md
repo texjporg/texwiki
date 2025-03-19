@@ -7,9 +7,9 @@ pukiwiki: "gedit"
 
 # gedit
 
-## [gedit](https://gedit-technology.github.io/apps/gedit/) {#c704b7fa}
+## [gedit](https://gedit-text-editor.org/) {#c704b7fa}
 
-<!-- #ref(https://gitlab.gnome.org/GNOME/gedit/raw/master/gedit/resources/pixmaps/gedit-logo.png,right,around,nolink,gedit) -->
+<!-- #ref(https://gedit-text-editor.org/images/gedit-icon.png,right,around,nolink,gedit) -->
 
 ***
 
@@ -19,7 +19,7 @@ pukiwiki: "gedit"
 
 gedit は使いやすい一般的なテキストエディターです．
 
-- [gedit](https://gedit-technology.github.io/apps/gedit/)
+- [gedit, a text editor](https://gedit-text-editor.org/)
 
 ***
 
