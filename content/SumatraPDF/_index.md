@@ -92,7 +92,7 @@ forward search するときに SumatraPDF を前面に表示したくない場�
 
 #### inverse search {#wfcdbef6}
 
-inverse search は SumatraPDF の画面をダブルクリックすると実行されます．ただし，設定が必要です。
+inverse search は SumatraPDF の PDF ドキュメント上でダブルクリックすると実行されます．ただし，設定が必要です。
 
 %APPDATA%\SumatraPDF\SumatraPDF-settings.txt に
 
@@ -143,8 +143,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
     - [How to check programmatically if Sumatra is installed? #2855](https://github.com/sumatrapdfreader/sumatrapdf/discussions/2855)
 - [Discussions · sumatrapdfreader/sumatrapdf · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/discussions)
-- [MyTeXpert:SumatraPDF](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?SumatraPDF)
-- [Sumatra PDF のインストールと設定 | 　お知らせ＋活動記録＋たわごと](http://blog.fujioizumi.verse.jp/?eid=230)
+- [TeXデータを保存するメディアのフォーマットがexFATだとSumatraPDFが自動更新できなくなるので気を付けてください．](https://www.k-pmpstudy.com/entry/2018/08/29/210854)
 
 #### License {#f48c8095}
 
