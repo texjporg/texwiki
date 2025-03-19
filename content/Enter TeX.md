@@ -7,7 +7,7 @@ pukiwiki: "Enter TeX"
 
 # Enter TeX
 
-## [Enter TeX](https://gitlab.gnome.org/swilmet/enter-tex) {#e966f73d}
+## [Enter TeX](https://gitlab.gnome.org/World/gedit/enter-tex) {#e966f73d}
 
 ***
 
@@ -20,7 +20,7 @@ SyncTeX に対応しています．
 
 バージョン 3.47.0 (2024-09-14) から Enter TeX という名前に変更されました。バージョン 3.27.2 (2018-01-17) から 3.46.0 (2023-07-29) までは GNOME LaTeX、バージョン 0.0.1 (2009-09-02) から 3.27.1 (2017-12-09) までは LaTeXila という名前でした。
 
-- [Sébastien Wilmet / enter-tex · GitLab](https://gitlab.gnome.org/swilmet/enter-tex)
+- [World / gedit / enter-tex · GitLab](https://gitlab.gnome.org/World/gedit/enter-tex)
 
 ### 動作環境 {#a52783ff}
 
@@ -28,14 +28,14 @@ Windows, macOS, Linux
 
 ### License {#a34a81c6}
 
-[GPLv3](https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/LICENSES/GPL-3.0-or-later.txt)
+[GPLv3](https://gitlab.gnome.org/World/gedit/enter-tex/-/blob/main/LICENSES/GPL-3.0-or-later.txt)
 
 ### リリース情報/ChangeLog {#p49a2369}
 
-- [Sébastien Wilmet / enter-tex · GitLab](https://gitlab.gnome.org/swilmet/enter-tex)
-    - [NEWS](https://gitlab.gnome.org/swilmet/enter-tex/-/blob/main/NEWS)
-    - [タグ](https://gitlab.gnome.org/swilmet/enter-tex/-/tags)
-    - [コミットログ](https://gitlab.gnome.org/swilmet/enter-tex/-/commits/main)
+- [World / gedit / enter-tex · GitLab](https://gitlab.gnome.org/World/gedit/enter-tex)
+    - [NEWS](https://gitlab.gnome.org/World/gedit/enter-tex/-/blob/main/NEWS)
+    - [タグ](https://gitlab.gnome.org/World/gedit/enter-tex/-/tags)
+    - [コミットログ](https://gitlab.gnome.org/World/gedit/enter-tex/-/commits/main)
 - [https://download.gnome.org/sources/enter-tex/](https://download.gnome.org/sources/enter-tex/)
     - [https://download.gnome.org/sources/enter-tex/cache.json](https://download.gnome.org/sources/enter-tex/cache.json)
 
