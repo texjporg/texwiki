@@ -11,7 +11,7 @@ pukiwiki: "dvipdfmx"
 ## [dvipdfmx](https://svn.tug.org/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
-元々 [Mark A. Wicks](https://www.ctan.org/author/wicks) 氏によって開発された [dvipdfm](http://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
+元々 [Mark A. Wicks](https://www.ctan.org/author/wicks) 氏によって開発された [dvipdfm](https://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
 現在では dvipdfm コマンドは dvipdfmx へのシンボリックリンクとなっており，dvipdfm として実行した場合は互換モードで動作するようになっています[^1]．
 
 ***
@@ -20,7 +20,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 
 ### 特徴 {#ia9746cb}
 
-元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) に次に示す項目などが挙げられています．
+元となった dvipdfm の主な特徴としては，[Dvipdfm User's Manual Version 0.12.4b](https://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf) に次に示す項目などが挙げられています．
 
 - アウトラインやアノーテーション（注釈機能）など Adobe Acrobat Distiller の pdfmark に対応した多くの機能を提供します．
 - [HyperTeX](/HyperTeX/) (HTML)，[TPIC](/pic/)，カラー，PSFile，その他 [PostScript](/PostScript/) special など "標準的な" DVI special 機能を提供します．
@@ -34,7 +34,7 @@ dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 - Acrobat 製品群では不完全な（dvipdfm マニュアルが書かれた当時）エンコーディングの問題に対処するために，フォントの再エンコーディングの機能を提供します．
 - ページとデスティネーション・ツリーに対する平衡木の利用により，巨大な文書における PDF ビューアのアクセスを高速化します．
 
-dvipdfmx での主な変更・拡張は [The Dvipdfmx User's Manual](https://github.com/shirat74/dvipdfm-x-doc/blob/master/dvipdfmx.pdf) に次に示す項目などが挙げられています．
+dvipdfmx での主な変更・拡張は [The Dvipdfmx User's Manual](https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf) に次に示す項目などが挙げられています．
 
 - OpenType/TrueType に対するより完全な対応，特に2バイトフォントとしての利用や縦組み用のグリフ置換機能を提供します．
 - Subfont Definition ファイルへの対応．CJK-LaTeX を使う際のフォントの問題を解消します．
@@ -70,7 +70,7 @@ foo.dvi -> foo.pdf
 ファイルが存在する場合にも，単に foo とした場合，まず foo.dvi を優先して探します．
 
 なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．
-特に Windows 10 や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
+特に Windows 11/10 や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
 フォントは PDF へ埋め込むことを基本としてください．
 非埋め込みで PDF を作成することは推奨されません．
 
@@ -90,32 +90,35 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
 ```
 
 ```
- Usage: dvipdfmx [options] [dvifile[.dvi|.xdv]]
-        dvipdfmx --extractbb|--xbb|--ebb [options]     "extractbb" になる
-        dvipdfmx --help|--version
+ 使い方: dvipdfmx [options] [dvifile[.dvi|.xdv]]
+         dvipdfmx --extractbb|--xbb|--ebb [options]     "extractbb" になる
+         dvipdfmx --help|--showpaper|--version
+ DVIまたはXDV入力をPDFに変換する; デフォルトは以下の通り
 ```
 
 ```
- Options:
+ オプション:
    -c            カラースペシャルを無視する (モノクロ印刷用)
    --dvipdfm     DVIPDFM 互換モードを有効にする
-   -d 数値       PDF 出力の小数点以下の桁数を設定 (0-5) [2]
+   -d 数値       PDF 出力の小数点以下の桁数を設定 (0-5) [3]
    -f ファイル名 マップファイル名を設定 [pdftex.map]
    -g 寸法       アノーテーションの余白 [0.0in]
    -h | --help   このメッセージを表示し終了
+   -i 設定ファイル    追加設定ファイルの読み込み
+   --kpathsea-debug 数値      　kpathsearch デバッグフラグを設定 [0]
    -l            ランドスケープモード
    -m 数値       追加の拡大率を設定 [1.0]
    -o ファイル名 出力ファイル名を設定, "-" で標準出力 [dvifile.pdf]
    -p 用紙サイズ 用紙サイズを設定 [a4]
+   --pdfm-str-utf8       PDFMark の文字列が UTF-8 でエンコードされていると仮定する
    -q            静かに
    -r 解像度     ビットマップフォントの解像度を DPI で指定 [600]
-   -s ページ範囲 ページ範囲を指定 (-)
+   -s ページ範囲 ページ範囲を指定 [all pages]
    --showpaper   使用可能な用紙形式を表示して終了
-   -t            PNG 形式のサムネイルを埋め込む [dvifile.1]
+   -t            PNG 形式のサムネイルを埋め込む (dvifile.pageno, pageno=int)
    --version     バージョン情報を出力し終了
    -v            うるさく
    -vv           よりうるさく
-   --kpathsea-debug 数値      　kpathsearch デバッグフラグを設定 [0]
    -x 寸法       水平方向のオフセットを指定 [1.0in]
    -y 寸法       垂直方向のオフセットを指定 [1.0in]
    -z 数値       zlib の圧縮レベルを指定 (0-9) [9]
@@ -126,6 +129,8 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
                    0x0004 CID フォントを固定幅として扱う
                    0x0008 重複したフォントマップエントリーを置き換えない
                    0x0010 PDF デスティネーションの最適化を抑制する
+                   0x0020 Flate 圧縮に予測フィルタを使用しない
+                   0x0040 オブジェクトストリームを使用しない
                  正の値は常に前に与えられた値と OR される
                  負の値を指定すると前の値を置き換える
    -D 文字列     PS->PDF 変換コマンドラインテンプレート [none]
@@ -139,7 +144,7 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
    -O 数値       開いたブックマークアイテムの最大深度 [0]
    -P 数値       暗号化の許可フラグを設定 [0x003C]
    -S            PDF 暗号化を有効に
-   -V 数値       PDF のマイナーバージョンを設定 [5]
+   -V 数値       PDF のマイナーバージョンを設定 [1.5]
 ```
 
 ```
@@ -158,6 +163,7 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
 
 dvipdfmx には The dvipdfmx project team によるマニュアルが存在します．
 
+- [https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf](https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf)
 - [https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf)
 - [https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co](https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co)
 
@@ -171,7 +177,7 @@ texdoc dvipdfmx
 
 dvipdfm のマニュアルも参考になります．
 
-- [Dvipdfm User's Manual](http://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf)
+- [Dvipdfm User's Manual](https://mirrors.ctan.org/dviware/dvipdfm/dvipdfm.pdf)
 
 ### フォントの設定 {#tbddb566}
 
@@ -251,7 +257,7 @@ I 24
 のように設定しておきます．
 この場合，一日以内ならキャッシュにイメージがある場合，それを使用することを意味しています．
 
-#### extractbb などの名前でシンボリックリンクを作成する → extractbb は [extractbb.lua](https://tug.org/svn/texlive/trunk/Master/texmf-dist/scripts/texlive/extractbb.lua?view=markup) に置き換えられました {#k882a214}
+#### extractbb などの名前でシンボリックリンクを作成する → TeX Live 2024 [Revision 71664](https://svn.tug.org/texlive?revision=71664&view=revision) で extractbb は [extractbb.lua](https://svn.tug.org/texlive/trunk/Master/texmf-dist/scripts/extractbb/extractbb.lua?view=markup) に置き換えられました {#k882a214}
 
 - [#美文書 １１５ページ，「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://x.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://x.com/ti5942/status/273742359915794432)
 
@@ -259,7 +265,12 @@ dvipdfmx はコマンドの名前によって機能を変えることができ�
 [dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．
 UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．
 
-TeX Live 2025 では，extractbb コマンドを dvipdfmx へ symlink するのをやめて，同等の機能を持つ Lua スクリプトに置き換え，dvipdfmx のコード内の extractbb としての機能を削除する方向性とのこと．--&gt; [https://x.com/doraTeX/status/1807574412763529240](https://x.com/doraTeX/status/1807574412763529240)
+TeX Live [Revision 71664](https://svn.tug.org/texlive?revision=71664&view=revision) で extractbb.lua が追加されました。その結果「[extractbb が変わったようですが](https://okumuralab.org/tex/mod/forum/discuss.php?d=3791)」の投稿で起きているような現象が発生しました。
+
+TeX Live 2025 では，extractbb コマンドを dvipdfmx へ symlink するのをやめて、同等の機能を持つ Lua スクリプトに置き換え、dvipdfmx のコード内の extractbb としての機能を削除する方向性とのこと。extractbb に restricted mode の制限をかいくぐるセキュリティホールが見つかったためらしいです。--&gt; [https://x.com/doraTeX/status/1807574412763529240](https://x.com/doraTeX/status/1807574412763529240) , [https://x.com/zr_tex8r/status/1809910729052663945](https://x.com/zr_tex8r/status/1809910729052663945)
+
+- [https://github.com/gucci-on-fleek/extractbb](https://github.com/gucci-on-fleek/extractbb)
+- [https://svn.tug.org/texlive/trunk/Master/texmf-dist/scripts/extractbb/extractbb.lua?view=markup](https://svn.tug.org/texlive/trunk/Master/texmf-dist/scripts/extractbb/extractbb.lua?view=markup)
 
 #### PDF/X について {#e2cc950a}
 
@@ -389,7 +400,7 @@ TeX Live 2016 以降では，\includegraphics に pagebox オプションによ�
 
 ## 不具合 {#f5e1d97d}
 
-### dvipdfmx Version 20250205 での不具合 {#ubf42103}
+### dvipdfmx Version 20250205 の不具合 {#ubf42103}
 
 #### dvipdfmx20250205と\usepackage{otf}で処理に時間がかかる {#t9a67ebb}
 
