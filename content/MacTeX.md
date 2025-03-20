@@ -198,6 +198,8 @@ $ sudo tlmgr paper a4
         - [https://ftp.riken.jp/CTAN/systems/mac/mactex/](https://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
+    - mirror.aria-on-the-planet.es
+        - [https://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/](https://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
 - <strong>HTTP</strong>
@@ -219,6 +221,8 @@ $ sudo tlmgr paper a4
         - [http://ftp.riken.jp/CTAN/systems/mac/mactex/](http://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
+    - mirror.aria-on-the-planet.es
+        - [http://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/](http://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/](http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/)
