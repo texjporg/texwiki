@@ -113,6 +113,8 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://ftp.riken.jp/CTAN/systems/texlive/tlnet/](https://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
+    - mirror.aria-on-the-planet.es
+        - [https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/](https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - 日本語 TeX 開発コミュニティ
@@ -136,6 +138,8 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [http://ftp.riken.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](http://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
+    - mirror.aria-on-the-planet.es
+        - [http://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/](http://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/tlnet/)
@@ -163,6 +167,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://ftp.riken.jp/CTAN/systems/texlive/Images/](https://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
+    - mirror.aria-on-the-planet.es
+        - [https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/](https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
 - <strong>HTTP</strong>
@@ -184,6 +190,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [http://ftp.riken.jp/CTAN/systems/texlive/Images/](http://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](http://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
+    - mirror.aria-on-the-planet.es
+        - [http://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/](http://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/)
     - Ring Server
         - [http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
         - [http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/](http://www.ring.gr.jp/pub/text/CTAN/systems/texlive/Images/)
