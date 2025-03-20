@@ -21,6 +21,7 @@ SyncTeX に対応しています．
 バージョン 3.47.0 (2024-09-14) から Enter TeX という名前に変更されました。バージョン 3.27.2 (2018-01-17) から 3.46.0 (2023-07-29) までは GNOME LaTeX、バージョン 0.0.1 (2009-09-02) から 3.27.1 (2017-12-09) までは LaTeXila という名前でした。
 
 - [World / gedit / enter-tex · GitLab](https://gitlab.gnome.org/World/gedit/enter-tex)
+- [Enter TeX | Gedit Technology blog](https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html)
 
 ### 動作環境 {#a52783ff}
 
