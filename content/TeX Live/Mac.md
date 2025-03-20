@@ -87,8 +87,7 @@ $ cd install-tl-2*
 
 <!-- bashならこのままでいいですが，zshだとinstall-tl-unx.tar.gzをrenameしないとcd: string not in pwdとなります... -->
 
-root 権限でインストーラを実行します．
-デフォルトでは Tcl/Tk による GUI インストーラが起動します．-no-gui オプションでテキストモードで起動します．-repository オプションでダウンロードするリポジトリを指定できます．
+root 権限でインストーラを実行します．-no-gui オプションでテキストモードで起動します．-repository オプションでダウンロードするリポジトリを指定できます．
 
 ```
 $ sudo ./install-tl -no-gui -repository https://mirror.ctan.org/systems/texlive/tlnet/
