@@ -32,7 +32,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTPS, HTTP, FTP)
 
-- [山形大学](https://www.yamagata-u.ac.jp/) [工学部／大学院理工学研究科／大学院有機材料システム研究科](https://www.yz.yamagata-u.ac.jp/) (山形県米沢市)
+- [山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科](https://www.yz.yamagata-u.ac.jp/) (山形県米沢市)
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
         (HTTPS, HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
@@ -147,8 +147,12 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 - [日本語ディレクトリ](https://mirror.ctan.org/language/japanese/)
 
+### CTAN announcements {#d6c94080}
+
+- [CTAN: Announcements on CTAN-ann](https://ctan.org/ctan-ann)
+- [ctan-ann - ctan.org](https://mailman.ctan.org/hyperkitty/list/ctan-ann@ctan.org/)
+
 ### 関連リンク {#wc81d3dd}
 
-- [CTAN announcements list](http://www.mail-archive.com/ctan-ann@dante.de/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
 - [http://www.ring.gr.jp/ring/newfiles/CTAN.html](http://www.ring.gr.jp/ring/newfiles/CTAN.html)
