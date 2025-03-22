@@ -119,9 +119,8 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evi
 
 #### リリース情報 {#jbfe1b2f}
 
-- [Ghostscript](https://www.ghostscript.com/) の Current Release を参照．
+- [Ghostscript : Releases](https://ghostscript.com/releases/index.html)
 - [https://ghostscript.readthedocs.io/en/latest/News.html](https://ghostscript.readthedocs.io/en/latest/News.html)
-- [Ghostscript: Releases](https://www.ghostscript.com/releases.html)
 - [https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/)
 
 #### ChangeLog {#ua2f6680}
