@@ -33,7 +33,7 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 ### TeX Live 2025 のバイナリの動作環境 {#binary}
 
-macOS で動作する TeX Live 2025 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/HT201222)が提供されている macOS のみをサポートする方針です。
+macOS で動作する TeX Live 2025 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/100100)が提供されている macOS のみをサポートする方針です。
 MacTeX-2025 / BasicTeX-2025 に付属する TeX Live も universal-darwin バイナリです。
 
 TeX Live 2025 universal-darwin バイナリが動作する macOS
