@@ -74,7 +74,7 @@ foo.dvi -> foo.pdf
 フォントは PDF へ埋め込むことを基本としてください．
 非埋め込みで PDF を作成することは推奨されません．
 
-例えば，TeXLive/Windows 10 で標準搭載の游明朝・游ゴシックを埋め込むように設定するにはコマンドラインで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
+例えば，TeXLive/Windows で標準搭載の游明朝・游ゴシックを埋め込むように設定するにはコマンドラインで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
 
 ```
  kanji-config-updmap yu-win10
