@@ -117,7 +117,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2023年 {#year2023}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
-    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，2025年01月17日更新，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
