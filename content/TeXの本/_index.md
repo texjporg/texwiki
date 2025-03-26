@@ -23,6 +23,8 @@ TeX や LaTeX に関する本の紹介です．
 - ウィキブックス (Wikibooks) &mdash;
     [TeX/LaTeX 入門](https://ja.wikibooks.org/wiki/TeX/LaTeX%E5%85%A5%E9%96%80)
 
+- [Learn LaTeX: 無料の初心者向けオンラインレッスン | learnlatex.org](https://www.learnlatex.org/ja/)
+
 - [Cute.Guides（きゅうとガイド）](https://guides.lib.kyushu-u.ac.jp/cuteguides/) &mdash;
     [LaTeX事始め - ★はじめてのLaTeX - Cute.Guides at 九州大学 Kyushu University](https://guides.lib.kyushu-u.ac.jp/LaTeX-LectureNote/)
 
