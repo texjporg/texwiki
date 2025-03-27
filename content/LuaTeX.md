@@ -106,13 +106,13 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 - [LuaTeX - ConTeXt wiki](https://wiki.contextgarden.net/LuaTeX)
 - [UTF-8 module for Lua 5.x](https://github.com/starwing/luautf8)
 - [hyperref, lualatex and unicode bookmarks issue (garbled page numbers in AR for Linux)](http://tex.stackexchange.com/questions/24445/hyperref-lualatex-and-unicode-bookmarks-issue-garbled-page-numbers-in-ar-for-l)
-- [Switched to LuaLaTeX](http://the-user.org/post/switched-to-lualatex)
 - [How to get \copyright when mixing T1 fonts and fontspec?](http://tex.stackexchange.com/questions/29895/how-to-get-copyright-when-mixing-t1-fonts-and-fontspec)
 - [Automatically downloading images to be included](https://groups.google.com/forum/?fromgroups=#!topic/comp.text.tex/_c_kcgQTfaw)
 - LuaTeX で MePoTeX マクロを ([qa:56951](https://okumuralab.org/~okumura/texfaq/qa/56951.html), [qa:56952](https://okumuralab.org/~okumura/texfaq/qa/56952.html), [qa:56955](https://okumuralab.org/~okumura/texfaq/qa/56955.html))
 - [LuaLaTeX Lab](https://lualatexlab.blog.fc2.com/)
 - [p/upLaTeX から LuaLaTeX へ移行すべき理由と方法](https://www.metaphysica.info/2022/outdated-uplatex/)
 - [LuaLaTeXの環境構築をしてLuaLaTeXデビューする方法](https://digital-sp.net/2024/11/05/how-to-lualatex-debut/)
+- [モリサワの可変フォント（バリアブルフォント）であるDriveFluxをLuaLaTeXにて試す：LaTeX - ほとり](https://ho-tori.hateblo.jp/entry/2025/03/26/043359)
 
 #### LuaTeX 関連サイト {#p8fbba4f}
 
