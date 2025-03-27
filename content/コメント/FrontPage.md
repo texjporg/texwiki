@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.9.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-03-27 (木) 21:22:13
 - [Ghostscript 10.05.0](https://www.ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2025-03-16 (日) 22:33:52
 - [ClutTeX 0.7.0](https://github.com/minoki/cluttex) -- [ClutTeX](/ClutTeX/) 2025-03-16 (日) 21:41:18
 - [Drag &amp; Drop UpTeX 20250310版](https://www2.kumagaku.ac.jp/teacher/herogw/) -- [Drag &amp; Drop UpTeX](</Drag and Drop UpTeX/>) 2025-03-10 (月) 22:58:03
