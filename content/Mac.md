@@ -232,4 +232,3 @@ JIS キーボードの ¥ キーで入力する文字を \ に変更する設定
 
 - [Newest &#39;mac&#39; Questions - TeX - LaTeX Stack Exchange](https://tex.stackexchange.com/questions/tagged/mac)
 - [The MacOSX-TeX Archives](https://email.esm.psu.edu/pipermail/macosx-tex/)
-- [MacOSX-TeX | Mailing List Archive](http://macosx-tex.576846.n2.nabble.com/)
