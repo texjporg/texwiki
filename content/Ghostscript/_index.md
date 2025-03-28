@@ -24,12 +24,13 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 10.03.1 (2024-05-02) 以降に更新してください。
-Ghostscript 10.03.0 (2024-03-06) およびそれ以前には，リモートでコードを実行される脆弱性が存在します(CVE-2024-29510)。
+Ghostscript 10.05.0 (2025-03-12) 以降に更新してください。
+Ghostscript 10.04.0 (2024-09-18) およびそれ以前には，複数の深刻な脆弱性が存在します(CVE-2025-27835, CVE-2025-27832, CVE-2025-27831, CVE-2025-27836, CVE-2025-27830, CVE-2025-27833, CVE-2025-27837, CVE-2025-27834)。
 
-- [Fixes for CVE-2024-33869, CVE-2023-52722, CVE-2024-33870, CVE-2024-33871 and CVE-2024-29510 - News &mdash; Ghostscript 10.03.1 documentation](https://ghostscript.readthedocs.io/en/gs10.03.1/News.html)
-- [GhostScriptの脆弱性(Moderate: CVE-2024-29510)](https://security.sios.jp/vulnerability/ghostscript-security-vulnerability-20240709/)
-- [Ghostscriptでリモートでコードを実行される脆弱性が発生(CVE-2024-29510) ](https://rocket-boys.co.jp/ghost-script-vulnerability-cve2024-29510/)
+- [This release addresses CVEs: CVE-2025-27835, CVE-2025-27832, CVE-2025-27831, CVE-2025-27836, CVE-2025-27830, CVE-2025-27833, CVE-2025-27837, CVE-2025-27834 - News &mdash; Ghostscript 10.05.0 documentation](https://ghostscript.readthedocs.io/en/gs10.05.0/News.html)
+- [Ghostscript 10.05.0未満に深刻な脆弱性8件：CVSSスコア9.8「クリティカル」レベル脆弱性とアップデート対応の緊急性](https://nikkeimatome.com/?p=56266)
+- [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（1ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675)
+- [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（2ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675/2)
 
 <!-- Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在します。 -->
 <!--  -->
