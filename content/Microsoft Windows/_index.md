@@ -176,17 +176,8 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
         - [TeX mode](</Emacs/TeX mode/>)
         - [AUCTeX](/AUCTeX/)
         - [YaTeX](/YaTeX/)（野鳥）
-    - [Vim](/Vim/)
+    - [Vim](/Vim/)/[Neovim](/Neovim/)
         - [VimTeX](/VimTeX/)
-    - [Eclipse](/Eclipse/)
-        - [TeXlipse](/TeXlipse/)
-    - [gedit](/gedit/)
-    - [Geany](/Geany/)
-    - [Notepad++](/Notepad++/)
-        - [NppExec](/NppExec/)
-        - [jN](/jN/)
-    - [サクラエディタ](</サクラエディタ/>)
-        - [Happy](/Happy/)
 
 ## PDF ファイルビューア {#pdfviewer}
 
