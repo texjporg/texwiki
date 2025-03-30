@@ -208,12 +208,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
         - [TeX mode](</Emacs/TeX mode/>)
         - [AUCTeX](/AUCTeX/)
         - [YaTeX](/YaTeX/)（野鳥）
-    - [Vim](/Vim/)
+    - [Vim](/Vim/)/[Neovim](/Neovim/)
         - [VimTeX](/VimTeX/)
-    - [Eclipse](/Eclipse/)
-        - [TeXlipse](/TeXlipse/)
-    - [gedit](/gedit/)
-    - [Geany](/Geany/)
 
 ## PDF ファイルビューア {#pdfviewer}
 
