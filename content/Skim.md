@@ -55,4 +55,6 @@ DVI ファイルを PDF ファイルに変換してくれない場合は [Conver
 ## 関連リンク {#a3af5ca3}
 
 - [Skim &#8211; AppleScriptの穴](http://piyocast.com/as/archives/tag/skim)
+- [Skim / Wiki / Hidden_Preferences](https://sourceforge.net/p/skim-app/wiki/Hidden_Preferences/)
+- [PDFビューワ "Skim" で複数のPDFを同じウィンドウで開く方法](https://qiita.com/punshima/items/f6d69dcd72435450c4c9)
 - [PDF ViewerのSkimでTeXのdviファイルを見る](http://njet.oops.jp/wordpress/2011/01/27/pdf-viewer%E3%81%AEskim%E3%81%A7tex%E3%81%AEdvi%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E8%A6%8B%E3%82%8B/)
