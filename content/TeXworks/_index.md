@@ -133,6 +133,12 @@ TeXworks で \[編集\] &gt; \[設定\] のエディタタブの「エディタ�
 - [stloeffler/TeXworks-scripts - GitHub](https://github.com/stloeffler/TeXworks-scripts)
 - [TwScript Information Page](http://twscript.paulanorman.com/)
 
+## Emacs キーバインド {#c5b20dc1}
+
+- [Keyhac - Pythonによる柔軟なキーカスタマイズツール](https://sites.google.com/site/craftware/keyhac-ja)
+    - [Fakeymacs](https://github.com/smzht/fakeymacs)
+        - [FakeymacsにTeXworksの対応を追加しました。- smzht / X](https://x.com/smzht/status/1847524457403076890) --&gt; [Fekeymacs 20241019_01](https://github.com/smzht/fakeymacs/commit/9d1076865fcc8cc23b41cc799ebf6c75827d0bcf)
+
 ## 関連リンク {#e07d54a5}
 
 - [MyTeXpert:TeXworks](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?TeXworks)
