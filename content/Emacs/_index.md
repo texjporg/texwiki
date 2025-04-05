@@ -335,6 +335,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 
 ### Windows {#a1ddfe8b}
 
+- [Windows11 に Emacs や macOS に近いキーバインドを設定する](https://christina04.hatenablog.com/entry/emacs-keybinding-in-windows)
 - [Emacs29.1 導入](http://minischna.starfree.jp/Emacs29.1/000emacs29_1.pdf)
 - [EmacsとWindowsと人生と](https://qiita.com/sylx/items/46bc993471cd71980aa5)
 - [NTEmacs の設定](https://www49.atwiki.jp/ntemacs/pages/1.html)
