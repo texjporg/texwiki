@@ -42,5 +42,6 @@ MIT License
 ### その他の Extension {#d3eb8f1f}
 
 - [https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance](https://marketplace.visualstudio.com/search?term=LaTeX&target=VSCode&category=All%20categories&sortBy=Relevance)
+- [Visual Studio Code (VS Code)のオススメ設定と拡張機能の紹介](https://zenn.dev/yutotnh/articles/1577b6dc5ab7d9)
 
 <!-- *参考 [#x78d281f] -->
