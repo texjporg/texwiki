@@ -25,6 +25,9 @@ pukiwiki: "Android"
 
 ### フリーソフトウェア (オープンソースソフトウェア) {#w8f4ef4d}
 
+- [Acode - Code editor for android](https://acode.app/)
+    - [Acode - code editor | FOSS](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree)
+    - [GitHub - Acode-Foundation/Acode: Acode - powerful text/code editor for android](https://github.com/Acode-Foundation/Acode)
 - [Emacs](/Emacs/)
 - [DroidVim](https://play.google.com/store/apps/details?id=com.droidvim)
     - [https://github.com/shiftrot/droidvim](https://github.com/shiftrot/droidvim)
