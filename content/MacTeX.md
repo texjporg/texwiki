@@ -69,6 +69,8 @@ GUI Applications には以下のアプリケーションが収録されていま
 
 #### Ghostscript 10.04.0<br>Ghostscript Dynamic Library {#n1354f54}
 
+Ghostscript は PostScript/PDF インタプリタです。
+
 以下の場合に当てはまる場合はチェックをはずします。
 
 <!-- -MacTeX 付属の Ghostscript を使用すると不具合が発生する場合。- -&gt; [[Richard Koch Home Page:https://pages.uoregon.edu/koch/]] から不具合が発生しないバージョンを入手してください。 -->
@@ -190,14 +192,16 @@ $ sudo tlmgr paper a4
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [https://ftp.ne.jp/pub/ctan/systems/mac/mactex/](https://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-        - [https://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/](https://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/)
-        - [https://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](https://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
-        - [https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](https://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-        - [https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
-        - [https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](https://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+        - [https://ftp.ne.jp/CTAN/systems/mac/mactex/](https://ftp.ne.jp/CTAN/systems/mac/mactex/)
+        - [https://ftp.kddi-research.jp/CTAN/systems/mac/mactex/](https://ftp.kddi-research.jp/CTAN/systems/mac/mactex/)
+        - [https://ftp.kddilabs.jp/CTAN/systems/mac/mactex/](https://ftp.kddilabs.jp/CTAN/systems/mac/mactex/)
+        - [https://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/](https://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/)
+        - [https://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/](https://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/)
+        - [https://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/](https://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/)
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/mac/mactex/](https://ftp.riken.jp/CTAN/systems/mac/mactex/)
+    - ctan.tikz.jp
+        - [https://ctan.tikz.jp/systems/mac/mactex/](https://ctan.tikz.jp/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - mirror.aria-on-the-planet.es
@@ -213,14 +217,16 @@ $ sudo tlmgr paper a4
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [http://ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-        - [http://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddi-research.jp/pub/ctan/systems/mac/mactex/)
-        - [http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/](http://ftp.kddilabs.jp/pub/ctan/systems/mac/mactex/)
-        - [http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/](http://srv2.ftp.ne.jp/pub/ctan/systems/mac/mactex/)
-        - [http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddi-research.jp/TeX/ctan/systems/mac/mactex/)
-        - [http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/TeX/ctan/systems/mac/mactex/)
+        - [http://ftp.ne.jp/CTAN/systems/mac/mactex/](http://ftp.ne.jp/CTAN/systems/mac/mactex/)
+        - [http://ftp.kddi-research.jp/CTAN/systems/mac/mactex/](http://ftp.kddi-research.jp/CTAN/systems/mac/mactex/)
+        - [http://ftp.kddilabs.jp/CTAN/systems/mac/mactex/](http://ftp.kddilabs.jp/CTAN/systems/mac/mactex/)
+        - [http://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/](http://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/)
+        - [http://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/](http://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/)
+        - [http://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/)
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.jp/CTAN/systems/mac/mactex/](http://ftp.riken.jp/CTAN/systems/mac/mactex/)
+    - ctan.tikz.jp
+        - [http://ctan.tikz.jp/systems/mac/mactex/](http://ctan.tikz.jp/systems/mac/mactex/)
     - jp.mirrors.cicku.me
         - [http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](http://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - mirror.aria-on-the-planet.es
