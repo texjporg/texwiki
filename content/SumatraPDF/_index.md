@@ -139,6 +139,8 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
     - [News](https://www.sumatrapdfreader.org/news.html)
     - [Download](https://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
     - [SumatraPDF pre-release builds](https://www.sumatrapdfreader.org/prerelease.html) テスト用のプレリリースビルド版
+    - [SumatraPDF documentation](https://www.sumatrapdfreader.org/docs/SumatraPDF-documentation)
+        - [LaTeX integration](https://www.sumatrapdfreader.org/docs/LaTeX-integration)
 - [sumatrapdfreader · GitHub](https://github.com/sumatrapdfreader)
     - [Home · sumatrapdfreader/sumatrapdf Wiki · GitHub](https://github.com/sumatrapdfreader/sumatrapdf/wiki)
     - [How to check programmatically if Sumatra is installed? #2855](https://github.com/sumatrapdfreader/sumatrapdf/discussions/2855)
