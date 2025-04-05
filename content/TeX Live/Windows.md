@@ -27,11 +27,11 @@ pukiwiki: "TeX Live/Windows"
 - install-tl-windows.exe の場合はダウンロード後ダブルクリック（全ユーザにインストールする場合は右クリックから「管理者として実行(A)」を選ぶ）
 - install-tl.zip の場合は展開後 install-tl-windows.bat をダブルクリック（全ユーザにインストールする場合は右クリックから「管理者として実行(A)」を選ぶ）
 
-すればインストーラが起動します。
+インストーラが起動します。
 後は指示に従えば自動でインストールが行われます。
 
 かなりの時間がかかります。
-環境にもよりますが，多くの場合一時間から二時間ほどかかると思います。
+環境にもよりますが，多くの場合二時間から三時間ほどかかると思います。
 
 以下は TeX Live 2025 の install-tl-windows.bat をダブルクリックして実行した例です。
 
@@ -221,9 +221,10 @@ TeX Live 2025 対応の事例です．
 
 TeX Live 2024 対応の事例です．
 
+- [VSCodeから編集できるLaTeX環境構築 Windows編【環境構築】【Windows】【LaTeX】](https://qiita.com/namitech7373/items/6d1639bd01d151baa03c)
+- \[[初心者\]LaTeXのインストールから使い方までこれ一本！](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)
 - [TeX Live 2024 へアップデートした話  \[05/04/2024\]](https://www-cc.gakushuin.ac.jp/~20050003/z-main.html#texlive2024)
 - [TeXのインストール方法 Windows11(TeX live 2024)](https://mathtext.info/blog/2024/03/17/texlive2024/)
-- \[[初心者\]LaTeXのインストールから使い方までこれ一本！](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)
 
 TeX Live 2023 対応の事例です．
 
