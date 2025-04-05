@@ -28,6 +28,8 @@ CTAN の世界的なミラーリングとして次の URI があります．
 [https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
 この接続先候補に含まれる日本国内サイトには次のものがあります．
 
+#### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP-CTAN-MIRROR}
+
 - [JAIST 北陸先端科学技術大学院大学](https://www.jaist.ac.jp/) (石川県能美市)
     - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
         (HTTPS, HTTP, FTP)
@@ -38,12 +40,25 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
 
 - [KDDI総合研究所](https://www.kddi-research.jp/) (埼玉県ふじみ野市)
+    - [ftp.ne.jp/CTAN/](https://ftp.ne.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
+    - [ftp.kddi-research.jp/CTAN/](https://ftp.kddi-research.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
     - [ftp.kddilabs.jp/CTAN/](https://ftp.kddilabs.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
+    - [srv2.ftp.ne.jp/CTAN/](https://srv2.ftp.ne.jp/CTAN/)
+        (HTTPS, HTTP, FTP)
+    - [ftp-srv2.kddi-research.jp/CTAN/](https://ftp-srv2.kddi-research.jp/CTAN/)
         (HTTPS, HTTP, FTP)
     - [ftp-srv2.kddilabs.jp/CTAN/](https://ftp-srv2.kddilabs.jp/CTAN/)
         (HTTPS, HTTP, FTP)
-        <!-- - -[[ftp.ne.jp/CTAN/:http://ftp.ne.jp/CTAN/]] -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
+
+#### HTTPS, HTTP {#HTTPS-HTTP-CTAN-MIRROR}
+
+- [ctan.tikz.jp](https://ctan.tikz.jp/)
+    - [ctan.tikz.jp/](https://ctan.tikz.jp/)
+        (HTTPS, HTTP)
 
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/)
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
@@ -55,14 +70,14 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 ### CTAN ミラーサイトの接続先候補以外の日本国内サイト（一部） {#others}
 
-#### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP}
+#### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP-NO-CTAN-MIRROR}
 
 - [理化学研究所](https://www.riken.jp/) (埼玉県和光市)
     - [ftp.riken.jp/CTAN/](https://ftp.riken.jp/CTAN/)
         (HTTPS, HTTP, FTP)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
-#### HTTP, FTP {#HTTP-FTP}
+#### HTTP, FTP {#HTTP-FTP-NO-CTAN-MIRROR}
 
 - [NAIST 奈良先端科学技術大学院大学](https://www.naist.jp/) (奈良県生駒市)
     - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
