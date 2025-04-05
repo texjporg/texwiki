@@ -131,7 +131,9 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
+- [2025年のコンピューターノウハウ (Mac) 2 MacTeX 2025が来ました (ただのリンク)](https://m-katsurada.sakura.ne.jp/knowhow-2025/node2.html)
 - [2024年のコンピューターノウハウ (Mac) 61 MacTeX 2025が来た](https://m-katsurada.sakura.ne.jp/knowhow-2024/node61.html)
+- [VSCodeから編集できるLaTeX環境構築 Mac編【環境構築】【Mac】【LaTeX】](https://qiita.com/namitech7373/items/cc94cf5d68a7ba21c4bf)
 - [HomebrewでMacにTeX環境を構築する方法](https://zenn.dev/haruki1009/articles/7e5ae0ad825fa2)
 - [LaTeX+BibLaTeX+VSCodeでスッキリ環境構築 (Mac) (2024)](https://qiita.com/Muon/items/f4d4b93fb1f9cbec51d0)
 - [uplatex on Mac](https://qiita.com/takaf05/items/c36754a4e0c09641d7d7)
@@ -142,13 +144,14 @@ $ sudo tlmgr paper a4
 - [MacにHomebrewを用いてTexをインストールする](https://blog.interstellar.co.jp/2022/07/15/installing-tex-on-a-mac-using-brew/)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [M1 Mac がやってきた（ソフトウェア設定編（4））](https://iio-lab.blogspot.com/2021/05/set-up-log-for-new-M1-mac-05.html)
-- [MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online)](https://doratex.hatenablog.jp/entry/20190502/1556775026)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
+
+<!-- MacTeX-2019 の場合 -->
+<!-- -[[MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online):https://doratex.hatenablog.jp/entry/20190502/1556775026]] -->
 
 <!-- MacTeX-2016 の場合 -->
 <!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
 <!-- -[[[El Capitan] MacTeX-2016をインストールする:https://qiita.com/Aruneko/items/6a524896df0e90181044]] -->
-<!-- -[[LaTeX + Vim + Mendeley Desktopで論文執筆環境（on Mac）を整える：インストール編:https://qiita.com/KeitaNakamura/items/9163124ba8cbad3e0a68]] -->
 
 <!-- MacTeX-2015 の場合 -->
 <!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
@@ -163,10 +166,9 @@ $ sudo tlmgr paper a4
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
 <!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):https://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html]] -->
-<!-- -[『Fuzoku実践入門』サンプルリポジトリの紹介:http://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019]] -->
+<!-- -[『Fuzoku実践入門』サンプルリポジトリの紹介:https://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019]] -->
 <!-- - -[『Fuzoku実践入門』環境サンプルファイル:https://github.com/akinomurasame/learning-fuzoku-sample] -->
-<!-- -[[MacTeX 2014 - 一歩前進:http://succzero.hatenablog.com/entry/2014/07/17/041211]] -->
-<!-- -[[Sublime TextでTeX論文執筆できるようにした時のメモ:http://kzhrknt.hatenablog.com/entry/2014/09/14/032907]] -->
+<!-- -[[MacTeX 2014 - 一歩前進:https://succzero.hatenablog.com/entry/2014/07/17/041211]] -->
 
 ### アンインストール {#uninstalling}
 
