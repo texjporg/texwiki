@@ -360,7 +360,9 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 - [Cocoa Emacs のフォント設定について](http://d.hatena.ne.jp/setoryohei/20110117/1295336454)
 - [CocoaEmacsに環境変数は引き継がれない](http://d.hatena.ne.jp/sugyan/20100704/1278241492)
 
-<!-- **Linux [#l2b4bca7] -->
+### Linux {#l2b4bca7}
+
+- [Emacs30.1をUbuntu 22.04(WSL)にインストールする](https://zenn.dev/wurly/articles/221603a0a6472a)
 
 ### リリース情報 {#z96ff3b2}
 
