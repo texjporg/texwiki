@@ -63,7 +63,7 @@ TeX を使うには環境変数 Path の設定が必要です．
 > %SystemRoot%\system32<br>
 > %SystemRoot%<br>
 
-なお，%SystemRoot%（環境変数 SystemRoot）は，通常 C:\WINDOWS です．
+なお，%SystemRoot%（環境変数 SystemRoot）は，通常 C:\Windows です．
 
 ## TeX のインストールが成功したかどうかテストする {#test}
 
@@ -74,9 +74,9 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 特にこだわりのない方は，TeX Live とともにインストールされる [TeXworks](/TeXworks/) がお勧めです．
 そのほかのエディタなどについては，この後の[統合環境やエディタのインストール](</Microsoft Windows/#editor>)でも紹介しています．
 
-以下では，TeXworks をもちいてみます．
+以下では，TeXworks を使用して作業を進めます．
 TeXworks は
-スタートメニューの「TeX Live 2024」→「TeXworks editor」から
+スタートメニューの「TeX Live 2025」→「TeXworks editor」から
 起動することができます．
 
 次の四行を入力してみます．
