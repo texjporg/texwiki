@@ -77,3 +77,35 @@ synctex view -i "30:0:hoge.tex" -o "%CD%/hoge.pdf" -x "rundll32 shell32,ShellExe
 ```
 
 のように実行します．
+
+## ⋮ &gt; 設定 &gt; デザイン &gt; フォントをカスタマイズ {#zcb6330d}
+
+Windows Update によるフォント設定の更新
+
+### 更新後 {#f9c1c618}
+
+標準フォント
+: Noto Sans JP
+
+Serif フォント
+: Noto Serif JP
+
+Sans Serif フォント
+: Noto Sans JP
+
+<!-- :固定幅フォント|BIZ UDGothic -->
+<!-- :数字フォント|Cambria Math -->
+
+### 更新前 {#e4492738}
+
+標準フォント
+: Meiryo
+
+Serif フォント
+: Yu Mincho
+
+Sans Serif フォント
+: Meiryo
+
+<!-- :固定幅フォント|BIZ UDGothic -->
+<!-- :数字フォント|Cambria Math -->
