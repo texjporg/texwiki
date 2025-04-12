@@ -29,7 +29,7 @@ LaTeX Utilities は LaTeX Workshop への add-on で，LaTeX Workshop にない�
 
 ## LaTeX Workshop {#n2442e05}
 
-LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，などの機能があります。
+LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，[Live Share](https://github.com/James-Yu/LaTeX-Workshop/wiki/ExtraFeatures#collaborative-editing-using-live-share-experimental) などの機能があります。
 
 - [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
     - [https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog](https://marketplace.visualstudio.com/items/James-Yu.latex-workshop/changelog)
