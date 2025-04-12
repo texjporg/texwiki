@@ -13,7 +13,7 @@ pukiwiki: "Microsoft Edge"
 
 ## … &gt; 設定 &gt; 外観 &gt; フォント &gt; フォントのカスタマイズ {#zc18ca3f}
 
-Windows Update によるフォント設定の更新
+2025年4月の Windows Update によるフォント設定の更新
 
 ### 更新後 {#q95ee616}
 
