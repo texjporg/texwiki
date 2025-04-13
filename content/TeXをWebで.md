@@ -49,13 +49,13 @@ Web 上で TeX 形式で文章を打ち込めば PDF でダウンロードでき
 
 まずサーバが必要です．
 通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します．
-最近の インテルプロセッサー Nシリーズ クラスの PC に Linux や FreeBSD 等を載せれば，うまくすれば数万円でできます．
+最近の インテルプロセッサー Nシリーズ クラスの PC に Linux や FreeBSD 等を載せれば，手ごろな価格でできます．
 
 通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです．
 これらについては特に手を加える必要はありません．
 
 もし \ が \\\ になるようなら，php.ini で magic_quotes_gpc = Off にしてください．
-Mac OS X 10.3 では /etc/httpd/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;/IfModule>
+Apache HTTP Server 設定ファイル /etc/httpd/conf/httpd.conf の &lt;IfModule mod_php4.c> ... &lt;/IfModule>
 の中に書き込めばいいようです．
 
 Windows でも動作するようです． → ｢TeXを使ってみよう｣をWindows上で動かせました ([qa:35772](https://okumuralab.org/~okumura/texfaq/qa/35772.html))
