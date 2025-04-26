@@ -75,11 +75,22 @@ brew install enter-tex
 sudo pacman -S enter-tex
 ```
 
-<!-- **openSUSE [#z63d593b] -->
-<!--  -->
-<!-- -https://software.opensuse.org/package/gnome-latex -->
-<!--  -->
-<!-- sudo zypper install gnome-latex -->
+### Linux Mint/Debian/Ubuntu {#i25e2946}
+
+- [https://packages.debian.org/search?keywords=enter-tex](https://packages.debian.org/search?keywords=enter-tex)
+- [https://packages.ubuntu.com/ja/enter-tex](https://packages.ubuntu.com/ja/enter-tex)
+
+```
+sudo apt install enter-tex
+```
+
+### openSUSE {#z63d593b}
+
+- [https://software.opensuse.org/package/gnome-latex](https://software.opensuse.org/package/gnome-latex)
+
+```
+sudo zypper install gnome-latex
+```
 
 ## Build Tool {#t1320044}
 
