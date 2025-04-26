@@ -13,6 +13,8 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXstudio 4.8.7](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-04-26 (土) 10:39:15
+- [TeXShop (v 5.51) Release 4/24/2025](https://pages.uoregon.edu/koch/texshop/) -- [TeXShop](/TeXShop/) 2025-04-26 (土) 09:56:13
 - [https://www.learnlatex.org/ja/](https://www.learnlatex.org/ja/) -- LearnLaTeX.orgの日本語 2025-04-13 (日) 11:10:26
 - [LaTeX Workshop 10.9.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-03-27 (木) 21:22:13
 - [Ghostscript 10.05.0](https://www.ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2025-03-16 (日) 22:33:52
