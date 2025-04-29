@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXShop (v 5.52) Release 4/27/2025](https://pages.uoregon.edu/koch/texshop/) -- [TeXShop](/TeXShop/) 2025-04-29 (火) 10:34:06
 - [Texmaker 6.0.1](https://www.xm1math.net/texmaker/) -- [Texmaker](/Texmaker/) 2025-04-26 (土) 21:57:09
 - [TeXstudio 4.8.7](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-04-26 (土) 10:39:15
 - [TeXShop (v 5.51) Release 4/24/2025](https://pages.uoregon.edu/koch/texshop/) -- [TeXShop](/TeXShop/) 2025-04-26 (土) 09:56:13
