@@ -148,6 +148,8 @@ LuaTeX-ja では luatexja-otf.sty を使用します．
 \usepackage{luatexja-otf}
 ```
 
+- LuaTeX-jaで\usepackage\[yu-win10\]{luatexja-preset}\usepackage{luatexja-otf}とした場合、Unicode外のグリフは出力されないようです。
+
 #### [Beamer](/Beamer/) {#w67ac91d}
 
 [Beamer](/Beamer/) で LuaTeX-ja を使ってみたところ特に問題なく使用できています．
