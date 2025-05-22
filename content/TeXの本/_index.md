@@ -84,7 +84,7 @@ TeX や LaTeX に関する本の紹介です．
 - [LaTeX の検索結果｜技術評論社](https://gihyo.jp/result?query=LaTeX&type=book)
 - [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
 - [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
-- [「LaTeX｣の書籍検索結果｜講談社BOOK倶楽部](https://bookclub.kodansha.co.jp/search?_sw=LaTeX)
+- [「LaTeX」の検索結果（製品）｜講談社](https://www.kodansha.co.jp/products/search?keywords=LaTeX)
 - [書籍検索「LaTeX」｜朝倉書店](https://www.asakura.co.jp/book_search_list.php?BOOK_SEARCH_STR=LaTeX)
 - [検索 書籍一覧「 LaTeX 」の検索結果｜翔泳社の本](https://www.shoeisha.co.jp/search?search=LaTeX)
 - [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
