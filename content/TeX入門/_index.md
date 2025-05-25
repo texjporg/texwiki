@@ -54,6 +54,7 @@ TeX の使い方は以下を参照してください。
 - [TeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=TeX)
 - [プログラミング の検索結果 - hak7a3が書き残す何か](https://hak7a3.hatenablog.com/search?q=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)
 - [TeX の検索結果 - hak7a3が書き残す何か](https://hak7a3.hatenablog.com/search?q=TeX)
+- [TeX言語の条件分岐](https://qiita.com/kbhonda/items/bbc4322fb7d0a3b16804)
 - [プログラマーのためプログラミングLaTeX](https://itchyny.hatenablog.com/entry/20121027/1351299600)
 - [ドラゴン曲線（TeXブック付録Dのあれ）](https://qiita.com/golden_lucky/items/5a053dd952cf8baafdf1)
 - [TeXで三目並べ](https://iwatam-server.sakura.ne.jp/software/tictactoetex/)
@@ -77,6 +78,8 @@ TeX の使い方は以下を参照してください。
 
 ### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
 
+- [TeX &amp; LaTeX Advent Calendar 実績 · GitHub](https://gist.github.com/zr-tex8r/c3ba9b26820235b3d026fb5e94af374d)
+- [2024](https://adventar.org/calendars/10647)
 - [2023](https://adventar.org/calendars/9305)
 - [2022](https://adventar.org/calendars/7868)
 - [2021](https://adventar.org/calendars/6724)
@@ -86,6 +89,6 @@ TeX の使い方は以下を参照してください。
 - [2017](https://adventar.org/calendars/2229)
 - [2016](https://adventar.org/calendars/1734)
 - [2015](https://adventar.org/calendars/929)
-- [2014](https://www.adventar.org/calendars/553)
-- [2013](https://www.adventar.org/calendars/187)
-- [2012](https://atnd.org/events/34318)
+- [2014](https://adventar.org/calendars/553)
+- [2013](https://adventar.org/calendars/187)
+- [2012](https://atnd.org/events/34318) ([Wayback Machine](https://web.archive.org/web/20131222190429/https://atnd.org/events/34318)) → [TeX ＆ LaTeX Advent Calendar 2012 の記事一覧](https://zrbabbler.hatenablog.com/entry/20131124/1385268714)
