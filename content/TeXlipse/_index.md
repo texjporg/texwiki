@@ -27,7 +27,7 @@ TeXlipse は [Eclipse](/Eclipse/) の LaTeX 用プラグインです．
 
 ### License {#y9484ed1}
 
-[Eclipse Public License 1.0](https://github.com/eclipse/texlipse/blob/master/LICENSE)
+[Eclipse Public License 2.0](https://github.com/eclipse/texlipse/blob/master/LICENSE)
 
 ### スクリーンショット {#j94c34b3}
 
