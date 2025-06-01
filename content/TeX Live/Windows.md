@@ -218,6 +218,8 @@ MinGW の xz が悪さをする場合もあるようです．
 TeX Live 2025 対応の事例です．
 
 - [Tex Liveのインストールがバチクソ遅い](https://www.tmworks.club/2025/04/11/tex-live%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab%e3%81%8c%e3%83%90%e3%83%81%e3%82%af%e3%82%bd%e9%81%85%e3%81%84/)
+- [TeX Live 2025 をインストールしてみた。](https://iek.hatenablog.com/entry/2025/03/27/200011)
+- [【LaTeX】TeX Live 2025 にアップグレードしよう！](https://briboo-pc.hatenablog.jp/entry/2025/03/16/%E3%80%90LaTeX%E3%80%91TeX_Live_2025_%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%82%88%E3%81%86%EF%BC%81)
 - [TeX Live 2024から2025へのアップデート Windows 編](https://qiita.com/denkiuo604/items/971cf1aaa61285677c04)
 
 TeX Live 2024 対応の事例です．
