@@ -155,7 +155,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#year2019}
 
-- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』
+- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』(在庫：[BOOTH(電子版単体)](https://damepo-lab.booth.pm/items/1317394)、[BOOTH(紙+電子)](https://damepo-lab.booth.pm/items/1573098))
     （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
     - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
 - [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
@@ -168,6 +168,9 @@ TeX や LaTeX に関する本の紹介です．
 - [TeXの本/絶版](</TeXの本/絶版/#year2019>)
 
 #### 2018年 {#year2018}
+
+- [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』(紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
+    （[技術書典](https://techbookfest.org/)，2018年10月08日発行（技術書典5），紙版 &yen;1,320）
 
 - 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
@@ -208,7 +211,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2014年 {#year2014}
 
-- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](http://shop.comiczin.jp/products/detail.php?product_id=22487))
+- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=22487))
     （[コミックマーケット](https://www.comiket.co.jp/)，2014年12月30日発行（コミックマーケット87（3日目）），PDF版 &yen;1,100，紙版 &yen;1,430）
     - [よくわかるLaTeX小説サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - 赤間 世紀
@@ -272,8 +275,11 @@ TeX や LaTeX に関する本の紹介です．
 - [阿部 紀行](https://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」―入力支援環境「祝鳥」を用いた文書作成―](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
     （[サイエンス社](https://www.saiensu.co.jp/)，2006年12月25日，価格 &yen;2,420 (本体 &yen;2,200＋税)，[ISBN 978-4-7819-1158-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7819-1158-8)）
-    - [「一歩踏み込む LaTeXの基本」サポートページ](https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html) (2013年08月10日)(Wayback Machine)
-    - [「一歩踏み込む LaTeXの基本」サポートページ](https://warp.da.ndl.go.jp/info:ndljp/pid/1233783/www.ms.u-tokyo.ac.jp/~abenori/book/tex.html) (2010年11月06日)(WARP)
+    - [「一歩踏み込む LaTeXの基本」サポートページ](https://www.ms.u-tokyo.ac.jp/~abenori/book/tex.html)
+        <!-- - -[[「一歩踏み込む LaTeXの基本」サポートページ:https://web.archive.org/web/20130810054540/http://www.math.sci.hokudai.ac.jp/~abenori/book/tex.html]] (2013年08月10日)(Wayback Machine) -->
+        <!-- - -[[「一歩踏み込む LaTeXの基本」サポートページ:https://warp.da.ndl.go.jp/info:ndljp/pid/1233783/www.ms.u-tokyo.ac.jp/~abenori/book/tex.html]] (2010年11月06日)(WARP) -->
+        <!-- -[[「一歩踏み込む LaTeXの基本」サポートページ:https://web.archive.org/web/20080222183901/https://www.ms.u-tokyo.ac.jp/~abenori/book/tex.html]] (2008年02月22日)(Wayback Machine) -->
+
 - [渡辺 徹](https://github.com/thortex)
     『[好き好き LaTeX2ε 周辺ツール編 第 0.1 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-tls/refs/heads/master/tls.pdf)』(PDF)
     （2006年11月30日）
