@@ -1145,6 +1145,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
     - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。
 - [TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)
     - LaTeX Graphics with TikZ の日本語訳。
+    - [【技術書レビュー/書評/要約】TikZによるLATEXグラフィックス【StefanKottwitz】](https://itbook.hateblo.jp/archive/category/StefanKottwitz)
 - [LaTeX Graphics with TikZ](https://www.packtpub.com/product/latex-graphics-with-tikz/9781804618233)
     - LaTeX Graphics with TikZ の英語版。第1版2023年6月9日
     - [LaTeX Graphics with TikZ](https://tikz.org/) tikz.org
