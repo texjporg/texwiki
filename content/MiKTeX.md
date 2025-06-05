@@ -232,6 +232,7 @@ lualatex の実行結果は
 ### インストール {#c18f5cec}
 
 - [Getting MiKTeX - MiKTeX.org](https://miktex.org/download)
+- [LaTeX導入ガイド Windows編（MiKTex + VScode + Strawberry Perl）](https://qiita.com/okuduck/items/26ab214a78286c9360b6)
 - [MiKTeXのWindowsへのインストール](https://self-development.info/miktex%e3%81%aewindows%e3%81%b8%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab/)
 
 <!-- **注意事項 [#e87c6af7] -->
