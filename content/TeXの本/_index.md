@@ -90,6 +90,7 @@ TeX や LaTeX に関する本の紹介です．
 - [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
 - [出版物検索結果：LaTeX - 工学社](https://www.kohgakusha.co.jp/books/search?ORDER=_PUBDATE&search=LaTeX)
 - [検索: 「LaTeX」の検索結果 &ndash; 技術書出版と販売のラムダノート](https://www.lambdanote.com/search?q=LaTeX)
+- [【2025年最新】Yahoo!オークション - Tex(アプリケーション)の中古品・新品・古本一覧](https://auctions.yahoo.co.jp/category/list/2084008837/)
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
@@ -117,7 +118,7 @@ TeX や LaTeX に関する本の紹介です．
     （[技術書典](https://techbookfest.org/)，2024年05月25日発行（技術書典16），電子版 &yen;500）
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
-    （Independently published (個人出版)，2024年04月12日発売，定価 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
+    （Independently published (個人出版)，2024年04月12日発売，税込 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
     - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。--&gt; [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF、2024年05月06日更新)
 
 #### 2023年 {#year2023}
@@ -203,9 +204,7 @@ TeX や LaTeX に関する本の紹介です．
     - 『[学生・研究者・技術者のための LaTeX を用いた論文作成術](http://www.pleiades-publishing.co.jp/genre/sugaku.html)』 (新装版)
         として出版もされています。
 
-- 小林 雅人
-    『[LaTeX快適タイピング](https://www.kohgakusha.co.jp/books/detail/978-4-7775-1940-8)』
-    （[工学社](http://www.kohgakusha.co.jp/)，2016年03月14日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1940-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1940-8)）
+- [TeXの本/絶版](</TeXの本/絶版/#year2016>)
 
 #### 2015年 {#year2015}
 
@@ -214,9 +213,7 @@ TeX や LaTeX に関する本の紹介です．
 - [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=22487))
     （[コミックマーケット](https://www.comiket.co.jp/)，2014年12月30日発行（コミックマーケット87（3日目）），PDF版 &yen;1,100，紙版 &yen;1,430）
     - [よくわかるLaTeX小説サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
-- 赤間 世紀
-    『[LaTeX論文作成マニュアル](http://www.kohgakusha.co.jp/books/detail/978-4-7775-1858-6)』
-    （[工学社](http://www.kohgakusha.co.jp/)，2014年10月08日発売，価格 &yen;2,530 (本体 &yen;2,300)，[ISBN 978-4-7775-1858-6](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7775-1858-6)）
+- [TeXの本/絶版](</TeXの本/絶版/#year2014>)
 
 #### 2013年 {#year2013}
 
