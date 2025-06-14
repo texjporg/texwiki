@@ -81,6 +81,7 @@ TeX や LaTeX に関する本の紹介です．
 - [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html)
 - [TeX/Biblio - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Biblio)
 - [TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm)
+- [乙部厳己のホーム ページ 著書紹介](https://web.archive.org/web/19991005182259/http://ms326.ms.u-tokyo.ac.jp/otobe/tex/bookreview.html)
 - [LaTeX の検索結果｜技術評論社](https://gihyo.jp/result?query=LaTeX&type=book)
 - [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
 - [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
@@ -125,10 +126,10 @@ TeX や LaTeX に関する本の紹介です．
 #### 2023年 {#year2023}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
-    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，2025年01月17日更新，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，2025年01月17日更新，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）…… TeX Live 2023 に合わせて改訂した入門書。
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
-    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）
+    （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）…… TeX Live 2023 に合わせて改訂した入門書。
     - [サポートページ](https://github.com/okumuralab/bibun9)
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ?productVariantID=epMJ4TYn2GhyiqC5gD0Zqz)』
     （[技術書典](https://techbookfest.org/)，2023年05月21日発行（技術書典14），電子版 &yen;500）
