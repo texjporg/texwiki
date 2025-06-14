@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LuaTeX-ja 20250614.0](https://github.com/luatexja/luatexja) -- [LuaTeX-ja](/LuaTeX-ja/) 2025-06-15 (日) 03:23:51
 - [LaTeX Workshop 10.10.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-06-03 (火) 21:48:02
 - [LaTeX Workshop 10.9.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-05-07 (水) 19:01:35
 - [TeXShop (v 5.52) Release 4/27/2025](https://pages.uoregon.edu/koch/texshop/) -- [TeXShop](/TeXShop/) 2025-04-29 (火) 10:34:06
