@@ -93,6 +93,7 @@ TeX や LaTeX に関する本の紹介です．
 - [検索: 「LaTeX」の検索結果 &ndash; 技術書出版と販売のラムダノート](https://www.lambdanote.com/search?q=LaTeX)
 - [【2025年最新】Yahoo!オークション - Tex(アプリケーション)の中古品・新品・古本一覧](https://auctions.yahoo.co.jp/category/list/2084008837/)
 - [【2025年最新】LaTeXの人気アイテム - メルカリ](https://jp.mercari.com/search?keyword=LaTeX&category_id=674)
+- [LaTeXのフリマアイテム一覧](https://fril.jp/s?query=LaTeX)
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
