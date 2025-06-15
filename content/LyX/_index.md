@@ -384,41 +384,45 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > <span style="color:Black;background-color:#DAE0FE;"><ins>　ファイル(F)　 編集(E)　 表示(V)　 挿入(I)　 移動(N)　 文書(D)　 ツール(T)　 ヘルプ(H)　　　　　　　　　　　　　　　　　　 </ins></span><br>
 >
-> 　<span style="color:Black;background-color:#EEEEEE;">\[表題　　　　　　　　▼\]</span>
+> <span style="color:Black;background-color:#EEEEEE;">\[表題　　　　　　ᐯ\]</span>
+>
 > ![新規文書 [Ctrl+N]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-new.png)
 > ![文書を開く [Ctrl+O]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/file-open.png)
-> ![文書を保存 [Ctrl+S]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-write.png)
-> ![文書を印刷 [Ctrl+P]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_print.png)
+> ![文書を保存 [Ctrl+S]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-write.png) <!-- &ref(https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_print.png,around,nolink,文書を印刷 [Ctrl+P]); -->
 > ![スペルチェック [F7]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_spellchecker.png)
+> ![連続スペルチェック](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/spelling-continuously.png)
 > ![元に戻す [Ctrl+Z]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/undo.png)
 > ![やり直す [Ctrl+Y]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/redo.png)
 > ![切り取り [Ctrl+X]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/cut.png)
 > ![コピー [Ctrl+C]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/copy.png)
-> ![貼り付け [Ctrl+V]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/paste.png)
+> ![貼り付け [Ctrl+V]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/paste.png)▼
 > ![検索・置換 [Ctrl+F]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_findreplace.png)
 > ![検索・置換(詳細)](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-toggle_findreplaceadv.png)
 > ![元の位置に戻る [Ctrl+<]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/bookmark-goto_0.png)
 > ![強調の入切 [Ctrl+E]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/font-emph.png)
 > ![Noun形式の入切 [Alt+C C]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/font-noun.png)
-> ![再適用](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/textstyle-apply.png)
+> ![最近の文辞特性を適用する](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/textstyle-apply.png)▼
+> ![特別文辞様式](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/textstyle-apply.png)
 > ![数式を挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/math-mode.png)
 > ![画像を挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show-new-inset_graphics.png)
 > ![表を挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/tabular-insert.png)
 > ![文書構造を入切](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-toggle_toc.png)
-> ![数式ツールバーを入切](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/toolbar-toggle_math.png)
-> ![表ツールバーを入切](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/toolbar-toggle_table.png)<br>
-> 　![表示 [Ctrl+R]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-view.png)
+> ![数式ツールバーを表示](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/toolbar-toggle_math.png)
+> ![表ツールバーを表示](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/toolbar-toggle_table.png)
+> ![校閲ツールバーを表示](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/toolbar-toggle_table.png)<br>
+> ![表示 [Ctrl+R]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-view.png)
 > ![更新 [Ctrl+Shift+R]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-update.png)
-> ![親文書を表示します [Ctrl+Alt+R]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/master-buffer-view.png)
-> ![親文書を更新してください](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/master-buffer-update.png)
-> ![前方/後方検索を有効にする](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-toggle-output-sync.png)
+> ![親文書を表示 [Ctrl+Alt+R]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/master-buffer-view.png)
+> ![親文書を更新](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/master-buffer-update.png)
+> ![出力先検索・原文検索を有効にする](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/buffer-toggle-output-sync.png)
 > ![他の形式を表示](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/view-others.png)
 > ![他の形式を更新](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/update-others.png)
 > ![既定値](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout.png)
 > ![箇条書き(連番) [Alt+P E]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_Enumerate.png)
 > ![箇条書き(記号) [Alt+P B]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_Itemize.png)
-> ![箇条書き(一覧) [Alt+P L]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_List.png)
-> ![箇条書き(記述) [Alt+P D]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_Description.png)
+> ![ラベル一覧 [Alt+P L]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_List.png)
+> ![記述 [Alt+P D]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_Description.png)
+> ![節](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout_Section.png)
 > ![階層を下げる [Alt+Shift+Right]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/depth-increment.png)
 > ![階層を上げる [Alt+Shift+Left]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/depth-decrement.png)
 > ![図フロートの挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/float-insert_figure.png)
@@ -435,10 +439,10 @@ LyX のインストーラーをダブルクリックして起動します。
 > ![ハイパーリンクを挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/url-insert.png)
 > ![TeXコードを挿入 [Ctrl+L]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/ert-insert.png)
 > ![数式マクロを挿入](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/math-macro_newmacroname_newcommand.png)
-> ![ファイルを取り込む](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show-new-inset_include.png)
-> ![文字様式](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_character.png)
+> ![ファイルを内包する](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show-new-inset_include.png)
+> ![文辞特性](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/dialog-show_character.png)
 > ![段落設定](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/layout-paragraph.png)
-> ![類義語辞典 [Shift+F7]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/thesaurus-entry.png)<br>
+> ![類語辞典 [Shift+F7]](https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;hb=refs/heads/2.1.x;f=lib/images/thesaurus-entry.png)<br>
 >
 > <br>
 >
