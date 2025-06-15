@@ -101,9 +101,9 @@ LyX のインストーラーを右クリックします。
 
 <br>
 
-　　　　作成日時:　　　　　　2025年5月27日、00:00:00<br>
-　　　　更新日時:　　　　　　2025年5月27日、00:00:00<br>
-　　　　アクセス日時:　　　　2025年5月27日、00:00:00<br>
+　　　　作成日時:　　　　　　2025年6月6日、00:00:00<br>
+　　　　更新日時:　　　　　　2025年6月6日、00:00:00<br>
+　　　　アクセス日時:　　　　2025年6月6日、00:00:00<br>
 
 <br>
 
@@ -380,7 +380,7 @@ LyX のインストーラーをダブルクリックして起動します。
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　 完了(F) 　 \]</span>　<span style="color:#888888;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>Welcome.lyx (\[examples/ja\]) - LyX</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>Welcome.lyx (\[examples/ja\]) - LyX</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > <span style="color:Black;background-color:#DAE0FE;"><ins>　ファイル(F)　 編集(E)　 表示(V)　 挿入(I)　 移動(N)　 文書(D)　 ツール(T)　 ヘルプ(H)　　　　　　　　　　　　　　　　　　 </ins></span><br>
 >
