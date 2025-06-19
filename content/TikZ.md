@@ -1050,6 +1050,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
+- [tikzcd-editor](https://tikzcd.yichuanshen.de/)
 - [TikZiT](https://tikzit.github.io/)
 - [TikzEdt](http://www.tikzedt.org/)
 - [TikZ Editor](https://github.com/fredokun/TikZ-Editor)
