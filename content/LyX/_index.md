@@ -29,7 +29,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
 
 ### お知らせ {#o7c8c524}
 
-- LyX 2.5 で日本語入力のかな漢字変換の際に表示される文字列が既存の文章の文字列を上書きして表示していた（[OverTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-16/index.html)）のが上書きせずに表示するようになりました（[OnTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-6/index.html)）。 --&gt; [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)、[LyX 2.5 アルファ版がリリースされました。日本語入力関連で大きく修正が入っているので、日本語話者の方々にぜひテストをお願いしたく（テスター不足（涙](https://x.com/twit_uji/status/1931264364432207942)
+- LyX 2.5 で日本語入力のかな漢字変換の際に表示される文字列が既存の文章の文字列を上書きして表示していた（[OverTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-16/index.html)）のが上書きせずに表示するようになりました（[OnTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-6/index.html)）。 --&gt; [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)、[LyX 2.5 アルファ版がリリースされました。日本語入力関連で大きく修正が入っているので、日本語話者の方々にぜひテストをお願いしたく（テスター不足（涙](https://x.com/twit_uji/status/1931264364432207942)、[Introducing OnTheSpot-style input method editing &amp; IME integration](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
 
 ### 動作環境 {#xd7ee343}
 
