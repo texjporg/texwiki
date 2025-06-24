@@ -38,20 +38,21 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
         (HTTPS, HTTP, FTP)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
-
-- [KDDI総合研究所](https://www.kddi-research.jp/) (埼玉県ふじみ野市)
-    - [ftp.ne.jp/CTAN/](https://ftp.ne.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
-    - [ftp.kddi-research.jp/CTAN/](https://ftp.kddi-research.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
-    - [ftp.kddilabs.jp/CTAN/](https://ftp.kddilabs.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
-    - [srv2.ftp.ne.jp/CTAN/](https://srv2.ftp.ne.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
-    - [ftp-srv2.kddi-research.jp/CTAN/](https://ftp-srv2.kddi-research.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
-    - [ftp-srv2.kddilabs.jp/CTAN/](https://ftp-srv2.kddilabs.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
+        <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+        <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+        <!-- -[[KDDI総合研究所:https://www.kddi-research.jp/]] (埼玉県ふじみ野市) -->
+        <!-- - -[[ftp.ne.jp/CTAN/:https://ftp.ne.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- - -[[ftp.kddi-research.jp/CTAN/:https://ftp.kddi-research.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- - -[[ftp.kddilabs.jp/CTAN/:https://ftp.kddilabs.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- - -[[srv2.ftp.ne.jp/CTAN/:https://srv2.ftp.ne.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- - -[[ftp-srv2.kddi-research.jp/CTAN/:https://ftp-srv2.kddi-research.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- - -[[ftp-srv2.kddilabs.jp/CTAN/:https://ftp-srv2.kddilabs.jp/CTAN/]] -->
+        <!-- (HTTPS, HTTP, FTP) -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
 #### HTTPS, HTTP {#HTTPS-HTTP-CTAN-MIRROR}
