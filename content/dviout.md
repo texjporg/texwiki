@@ -50,14 +50,18 @@ TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 #### TeX Users Group repositoryの版 (Ver.3.19.0~) {#x61c7151}
 
 - [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
-- [http://ftp.kddilabs.jp/pub/ctan/dviware/dviout/](http://ftp.kddilabs.jp/pub/ctan/dviware/dviout/) (CTANに登録された最新版のミラー)
+    <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+    <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+    <!-- -http://ftp.kddilabs.jp/pub/ctan/dviware/dviout/ (CTANに登録された最新版のミラー) -->
 
 #### 東京大学の版 (Ver.3.18.5) {#zdd6e510}
 
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)（安定版）
 - [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/) (安定版)
 - [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)（安定版のミラー）
-- [http://ftp.kddilabs.jp/pub/tex/dviout/current/](http://ftp.kddilabs.jp/pub/tex/dviout/current/) (安定版のミラー)
+    <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+    <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+    <!-- -http://ftp.kddilabs.jp/pub/tex/dviout/current/ (安定版のミラー) -->
 
 ## ビルド {#d0101f83}
 
