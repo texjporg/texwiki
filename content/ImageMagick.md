@@ -70,7 +70,9 @@ ImageMagick 6.9.3-9 以前の画像変換コマンド名は convert でしたの
 
 #### ミラーサイト {#mirror}
 
-- [http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/](http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/)
+<!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+<!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+<!-- -http://ftp.kddlabs.co.jp/graphics/ImageMagick/binaries/ -->
 - [http://ftp.core.ring.gr.jp/pub/graphics/ImageMagick/binaries/](http://ftp.core.ring.gr.jp/pub/graphics/ImageMagick/binaries/)
 
 #### 派生版 {#t37f9970}
