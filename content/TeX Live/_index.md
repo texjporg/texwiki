@@ -102,13 +102,15 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [https://ftp.ne.jp/CTAN/systems/texlive/tlnet/](https://ftp.ne.jp/CTAN/systems/texlive/tlnet/)
-        - [https://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/](https://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/)
-        - [https://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/](https://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/)
-        - [https://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/](https://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/)
-        - [https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/](https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/)
-        - [https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/](https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --https://ftp.ne.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --https://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --https://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --https://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/ -->
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/texlive/tlnet/](https://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - ctan.tikz.jp
@@ -129,13 +131,15 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [http://ftp.ne.jp/CTAN/systems/texlive/tlnet/](http://ftp.ne.jp/CTAN/systems/texlive/tlnet/)
-        - [http://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/](http://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/)
-        - [http://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/](http://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/)
-        - [http://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/](http://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/)
-        - [http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/](http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/)
-        - [http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/](http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --http://ftp.ne.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://ftp.kddi-research.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://ftp.kddilabs.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://srv2.ftp.ne.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/tlnet/ -->
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.jp/CTAN/systems/texlive/tlnet/](http://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
     - ctan.tikz.jp
@@ -160,13 +164,15 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [https://ftp.ne.jp/CTAN/systems/texlive/Images/](https://ftp.ne.jp/CTAN/systems/texlive/Images/)
-        - [https://ftp.kddi-research.jp/CTAN/systems/texlive/Images/](https://ftp.kddi-research.jp/CTAN/systems/texlive/Images/)
-        - [https://ftp.kddilabs.jp/CTAN/systems/texlive/Images/](https://ftp.kddilabs.jp/CTAN/systems/texlive/Images/)
-        - [https://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/](https://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/)
-        - [https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/](https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/)
-        - [https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/](https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --https://ftp.ne.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --https://ftp.kddi-research.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --https://ftp.kddilabs.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --https://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --https://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --https://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/ -->
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/texlive/Images/](https://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - ctan.tikz.jp
@@ -185,13 +191,15 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [http://ftp.ne.jp/CTAN/systems/texlive/Images/](http://ftp.ne.jp/CTAN/systems/texlive/Images/)
-        - [http://ftp.kddi-research.jp/CTAN/systems/texlive/Images/](http://ftp.kddi-research.jp/CTAN/systems/texlive/Images/)
-        - [http://ftp.kddilabs.jp/CTAN/systems/texlive/Images/](http://ftp.kddilabs.jp/CTAN/systems/texlive/Images/)
-        - [http://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/](http://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/)
-        - [http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/](http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/)
-        - [http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/](http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --http://ftp.ne.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://ftp.kddi-research.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://ftp.kddilabs.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://srv2.ftp.ne.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://ftp-srv2.kddi-research.jp/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://ftp-srv2.kddilabs.jp/CTAN/systems/texlive/Images/ -->
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.jp/CTAN/systems/texlive/Images/](http://ftp.riken.jp/CTAN/systems/texlive/Images/)
     - ctan.tikz.jp
