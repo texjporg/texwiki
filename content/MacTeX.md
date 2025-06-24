@@ -191,13 +191,15 @@ $ sudo tlmgr paper a4
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [https://ftp.ne.jp/CTAN/systems/mac/mactex/](https://ftp.ne.jp/CTAN/systems/mac/mactex/)
-        - [https://ftp.kddi-research.jp/CTAN/systems/mac/mactex/](https://ftp.kddi-research.jp/CTAN/systems/mac/mactex/)
-        - [https://ftp.kddilabs.jp/CTAN/systems/mac/mactex/](https://ftp.kddilabs.jp/CTAN/systems/mac/mactex/)
-        - [https://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/](https://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/)
-        - [https://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/](https://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/)
-        - [https://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/](https://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --https://ftp.ne.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --https://ftp.kddi-research.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --https://ftp.kddilabs.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --https://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --https://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --https://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/ -->
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/mac/mactex/](https://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - ctan.tikz.jp
@@ -216,13 +218,15 @@ $ sudo tlmgr paper a4
         - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
         - [http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](http://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
-    - KDDI総合研究所 (埼玉県ふじみ野市)
-        - [http://ftp.ne.jp/CTAN/systems/mac/mactex/](http://ftp.ne.jp/CTAN/systems/mac/mactex/)
-        - [http://ftp.kddi-research.jp/CTAN/systems/mac/mactex/](http://ftp.kddi-research.jp/CTAN/systems/mac/mactex/)
-        - [http://ftp.kddilabs.jp/CTAN/systems/mac/mactex/](http://ftp.kddilabs.jp/CTAN/systems/mac/mactex/)
-        - [http://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/](http://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/)
-        - [http://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/](http://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/)
-        - [http://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/](http://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/)
+            <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
+            <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+            <!-- - -KDDI総合研究所 (埼玉県ふじみ野市) -->
+            <!-- - --http://ftp.ne.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://ftp.kddi-research.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://ftp.kddilabs.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://srv2.ftp.ne.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://ftp-srv2.kddi-research.jp/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://ftp-srv2.kddilabs.jp/CTAN/systems/mac/mactex/ -->
     - 理化学研究所 (埼玉県和光市)
         - [http://ftp.riken.jp/CTAN/systems/mac/mactex/](http://ftp.riken.jp/CTAN/systems/mac/mactex/)
     - ctan.tikz.jp
