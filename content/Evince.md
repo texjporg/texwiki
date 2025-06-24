@@ -61,6 +61,8 @@ Windows, macOS, Linux
 
 - [Atril](https://github.com/mate-desktop/atril)
 - [Xreader](https://github.com/linuxmint/xreader)
+- [Papers](https://apps.gnome.org/ja/Papers/)
+    - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/Incubator/papers/-/tags/46.0)
 
 ## ダウンロード/インストール {#j395f01d}
 
