@@ -7,19 +7,19 @@ pukiwiki: "Evince"
 
 # Evince
 
-## [Evince](https://wiki.gnome.org/Apps/Evince) {#fec1fb99}
+## [Evince](https://apps.gnome.org/ja/Evince/) {#fec1fb99}
 
 Evince は PDF ファイルが表示可能なドキュメントビューアーです。
 [SyncTeX](/SyncTeX/) に対応しています。
 ファイルの自動更新機能もあります。
 PS, EPS ファイルの表示はデフォルトで無効化されているため PS, EPS ファイルを表示するには PS, EPS ファイルの表示を有効化してビルドされた Evince が必要です。
 
-- [Evince](https://wiki.gnome.org/Apps/Evince)
+- [ドキュメントビューアー – GNOMEアプリ](https://apps.gnome.org/ja/Evince/)
+- [Apps/Evince – GNOME Wiki Archive](https://wiki.gnome.org/Apps/Evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
 - [Topics tagged evince](https://discourse.gnome.org/tags/c/applications/7/evince)
 - [Search results for &#39;evince&#39; - GNOME Discourse](https://discourse.gnome.org/search?q=evince)
 - [The evince-list Archives](https://mail.gnome.org/archives/evince-list/)
-- [MyTeXpert:Evince](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Evince)
 
 ***
 
@@ -33,7 +33,7 @@ Arch Linux, Fedora, openSUSE
 のパッケージ管理システムでインストールした Linux 版 Evince は
 PostScript バックエンドのサポートが有効化されているので PS, EPS ファイルを表示できます。
 
-- \[[evince\] evince 3.30.0 released](https://mail.gnome.org/archives/evince-list/2018-September/msg00000.html) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
+- [NEWS · Release 3.30.0 · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/-/blob/bfe177e42b460350893ce89c0f7a3ceaaf2953dc/NEWS#L17) &lt;-- [Disable PostScript backend by default](https://gitlab.gnome.org/GNOME/evince/commit/3e8ea509ccb9e32717f4856ee7a7e5ff12944e15)
 - [meson_options.txt · main · GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince/-/blob/main/meson_options.txt#L13) &lt;-- option('ps', type: 'feature', value: 'disabled', description: 'whether PS support is requested')
 - [https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads](https://gitlab.archlinux.org/archlinux/packaging/packages/evince/-/blob/main/PKGBUILD?ref_type=heads) &lt;-- Arch Linux の evince は ps=enabled
 - [https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt#L13](https://salsa.debian.org/gnome-team/evince/-/blob/debian/master/meson_options.txt#L13) &lt;-- Debian GNU/Linux の evince は ps=disabled
@@ -59,10 +59,9 @@ Windows, macOS, Linux
 
 ### 派生版 {#z48adc83}
 
-- [Atril](https://github.com/mate-desktop/atril)
+- [Papers](/Papers/)
 - [Xreader](https://github.com/linuxmint/xreader)
-- [Papers](https://apps.gnome.org/ja/Papers/)
-    - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/Incubator/papers/-/tags/46.0)
+- [Atril](https://github.com/mate-desktop/atril)
 
 ## ダウンロード/インストール {#j395f01d}
 
