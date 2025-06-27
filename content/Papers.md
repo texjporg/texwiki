@@ -22,3 +22,4 @@ Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Boo
 - [https://packages.ubuntu.com/search?keywords=papers](https://packages.ubuntu.com/search?keywords=papers)
 - [https://packages.fedoraproject.org/pkgs/papers/papers/](https://packages.fedoraproject.org/pkgs/papers/papers/)
 - [https://software.opensuse.org/package/papers](https://software.opensuse.org/package/papers)
+- [GNOME PDF viewer app Papers](https://lists.debian.org/debian-accessibility/2025/02/msg00018.html)
