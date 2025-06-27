@@ -15,16 +15,20 @@ pukiwiki: "iOS"
 
 ## TeX Live <a id="texlive"></a> {#w97b9c35}
 
-- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2024, with Tikz and LuaTeX) for text processing.
+### a-Shell {#cf16ab27}
+
+- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2025, with Tikz and LuaTeX) for text processing.
     - [https://apps.apple.com/jp/app/a-shell/id1473805438](https://apps.apple.com/jp/app/a-shell/id1473805438)
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
     - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
     - [iPad で『a-Shell』と『Documents』でLuaLaTeXを使ったのですが、日本語もすんなりできて、以前作ったファイルも問題なくコンパイルできました。ついにiPadのローカルでLaTeXを使う時代が来た！](https://x.com/dannchu/status/1543254523929833472)
     - [ついに…、ついにiPadでLaTeX組版の夢が叶った！！](https://x.com/tan_pi_seconds/status/1720790331128725604)
-- [iSH](https://ish.app/) A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more!
-    - [https://apps.apple.com/us/app/ish-shell/id1436902243](https://apps.apple.com/us/app/ish-shell/id1436902243)
-    - [iPadにTeXLiveを突っ込んでLaTeXを書く](https://trpfrog.hateblo.jp/entry/latex-on-ipad)
-    - [iPadで「TeX」環境構築](https://yunavi.lsv.jp/tex.html#iPad)
+    - [A-Shell on iPadで日本語LaTex](https://note.com/banb_studio/n/n3f7f1c4e5da6)
+    - [a-ShellでLuaLaTeX日本語文書作成](https://x.com/GiuseStudiando/status/1937393929823170628)
+        <!-- -[[iSH:https://ish.app/]] A Linux-like shell on iOS. You can edit files with sed and cat, move them around, and more! -->
+        <!-- - -https://apps.apple.com/us/app/ish-shell/id1436902243 -->
+        <!-- - -[[iPadにTeXLiveを突っ込んでLaTeXを書く:https://trpfrog.hateblo.jp/entry/latex-on-ipad]] -->
+        <!-- - -[[iPadで「TeX」環境構築:https://yunavi.lsv.jp/tex.html#iPad]] -->
 
 ## [統合環境・エディタ](</TeX用エディタ/>) {#g9bd1355}
 
