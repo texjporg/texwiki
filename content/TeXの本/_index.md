@@ -105,7 +105,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2025年 {#year2025}
 
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW)』
-    （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版単体 &yen;1,200，紙書籍+電子版 &yen;1,500）
+    （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
     - [サポートページ](https://lab.miz-ar.info/implementing-tex-lang/)
 
 #### 2024年 {#year2024}
@@ -179,10 +179,10 @@ TeX や LaTeX に関する本の紹介です．
 - [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』(紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
     （[技術書典](https://techbookfest.org/)，2018年10月08日発行（技術書典5），紙版 &yen;1,320）
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
+- [吉永 徹美](https://web.archive.org/web/20160922162927/http://www.h4.dion.ne.jp/~latexcat/)（[しっぽ 愛好家](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=%E3%81%97%E3%81%A3%E3%81%BD+%E6%84%9B%E5%A5%BD%E5%AE%B6)）『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
 
-- 吉永 徹美『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）……LaTeX2ε
+- [吉永 徹美](https://web.archive.org/web/20160922162927/http://www.h4.dion.ne.jp/~latexcat/)（[しっぽ 愛好家](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=%E3%81%97%E3%81%A3%E3%81%BD+%E6%84%9B%E5%A5%BD%E5%AE%B6)）『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798157078)』紙の書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5707-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5707-8)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
 
 - [木枝 祐介](https://note.com/yuw)
@@ -250,7 +250,7 @@ TeX や LaTeX に関する本の紹介です．
     『[好き好き LaTeX2ε ハンドブック編 第 0.0.5 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jhb/refs/heads/master/jhb.pdf)』(PDF)
     （2008年05月05日）
 
-- 吉永 徹美『[独習LaTeX2ε](https://www.shoeisha.co.jp/book/detail/9784798115368)』
+- [吉永 徹美](https://web.archive.org/web/20160922162927/http://www.h4.dion.ne.jp/~latexcat/)（[しっぽ 愛好家](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=%E3%81%97%E3%81%A3%E3%81%BD+%E6%84%9B%E5%A5%BD%E5%AE%B6)）『[独習LaTeX2ε](https://www.shoeisha.co.jp/book/detail/9784798115368)』
     （[翔泳社](https://www.shoeisha.co.jp/)，2008年03月13日，価格 &yen;3,520 (本体 &yen;3,200＋税10%)，[ISBN 978-4-7981-1536-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-1536-8)）……ごく
     オーソドックスな，しかし基本を忠実に押さえた内容の入門書。
     <!-- 「ただし，」以下の文章は，どの本についても言えることなので要らないと思います． -->
