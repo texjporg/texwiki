@@ -44,7 +44,7 @@ TeX Live 2025 universal-darwin バイナリが動作する macOS
 - macOS Monterey 12
 - macOS Big Sur 11
 - macOS Catalina 10.15
-- macOS Mojave 10.14
+- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポートされなくなる予定)
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -268,7 +268,7 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 [みかちゃんフォント](https://www.mia-lab.com/mf/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
-[PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
+[PXmika パッケージ](http://zrbabbler.sp.land.to/pxmika.html)，[MacTeX 2013とみかちゃんフォントの設定](https://web.archive.org/web/20211022084339/https://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になるかもしれません。
 
 ### updmap(-sys) の使用に関する注意点 {#qdce07c2}
