@@ -538,7 +538,7 @@ sudo port install lyx
 - [https://aur.archlinux.org/packages/lyx](https://aur.archlinux.org/packages/lyx)
 
 ```
-yay -S lyx
+paru -S lyx
 ```
 
 #### Linux Mint/Debian/Ubuntu {#o9ab2f9b}
