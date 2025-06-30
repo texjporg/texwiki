@@ -27,7 +27,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/Arch Linux に依存するパッケージが TeX Live/Arch Linux をインストールするのを防止できます．
 
 ```
-yay -S texlive-dummy
+paru -S texlive-dummy
 ```
 
 AUR の texlive-dummy ではなく pacman --assume-installed を使用する場合は &#x7e;/.bashrc に以下の記述を追加してターミナルから source &#x7e;/.bashrc を実行するといいようです．
