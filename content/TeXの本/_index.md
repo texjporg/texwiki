@@ -104,6 +104,9 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2025年 {#year2025}
 
+- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
+    （[各種書店にて委託販売中](https://x.com/tomone_pact/status/1939711484151656778)，2025年06月29日発行，イベント価格 &yen;1,500，PDF版 &yen;1,650，紙版 &yen;2,310）
+    - [LaTeX小説組版2025サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW)』
     （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
     - [サポートページ](https://lab.miz-ar.info/implementing-tex-lang/)
@@ -216,9 +219,6 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2014年 {#year2014}
 
-- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[よくわかるLaTeX小説 All You Need Is LaTeX](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ287179.html)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=22487))
-    （[コミックマーケット](https://www.comiket.co.jp/)，2014年12月30日発行（コミックマーケット87（3日目）），PDF版 &yen;1,100，紙版 &yen;1,430）
-    - [よくわかるLaTeX小説サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - [TeXの本/絶版](</TeXの本/絶版/#year2014>)
 
 #### 2013年 {#year2013}
