@@ -214,7 +214,7 @@ ipaexg.ttf: "IPAexゴシック" "Regular"
 - [https://gitlab.gnome.org/GNOME/evince/-/blob/main/po/ja.po](https://gitlab.gnome.org/GNOME/evince/-/blob/main/po/ja.po)
 
 ```
-$ evince --help
+$ evince --help-all
 用法:
   evince [OPTION…] [ファイル…] GNOME ドキュメントビューアー
 
@@ -224,6 +224,7 @@ $ evince --help
   --help-gtk                  GTK+ のオプションを表示する
 
 アプリケーションのオプション:
+  -o, --new-window            新しいウィンドウを開く
   -p, --page-label=PAGE       表示するドキュメントのページラベル
   -i, --page-index=NUMBER     表示するドキュメントのページ番号
   -n, --named-dest=DEST       表示する Named destination
@@ -238,7 +239,7 @@ $ evince --help
 
 Evince には Night Mode（夜間モード）という色を反転させる機能があります。
 
-Ctrl+I で色が反転します。
+Ctrl+I で Night Mode（夜間モード）を切り替えることができます。
 
 ## SyncTeX {#w699c2c2}
 
