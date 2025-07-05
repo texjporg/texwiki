@@ -27,7 +27,9 @@ Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Boo
 - [https://software.opensuse.org/package/papers](https://software.opensuse.org/package/papers)
 - [GNOME PDF viewer app Papers](https://lists.debian.org/debian-accessibility/2025/02/msg00018.html)
 
-### オプション {#lca61f1a}
+## 使い方 {#gb97275a}
+
+### コマンドラインオプション {#lca61f1a}
 
 ```
 $ papers --help-all
@@ -50,3 +52,9 @@ GApplication Options:
   -s, --presentation           プレゼンテーションモードで起動する
   --version                    Show the version of the program.
 ```
+
+### Night Mode（夜間モード） {#v40d9cc7}
+
+Papers には Night Mode（夜間モード）という色を反転させる機能があります。
+
+Ctrl+I で Night Mode（夜間モード）を切り替えることができます。
