@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1322ページの長大なマニュアル (version 3.1.10 2025年04月11日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
+- [1323ページの長大なマニュアル (version 3.1.10 2025年06月23日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはターミナルから
