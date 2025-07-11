@@ -33,6 +33,7 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ### リリース情報 {#q303f311}
 
+- [https://projects.eclipse.org/content/eclipse-ide-simultaneous-release](https://projects.eclipse.org/content/eclipse-ide-simultaneous-release)
 - [https://www.eclipse.org/downloads/packages/release](https://www.eclipse.org/downloads/packages/release)
 - [https://download.eclipse.org/eclipse/downloads/](https://download.eclipse.org/eclipse/downloads/)
 - [https://www.eclipse.org/downloads/packages/](https://www.eclipse.org/downloads/packages/)
