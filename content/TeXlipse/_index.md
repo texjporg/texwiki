@@ -122,7 +122,7 @@ TeXlipse と Pdf4Eclipse をインストールします．
 Eclipse を起動します．
 メニューの「ヘルプ &gt; 新規ソフトウェアのインストール...」を選択し，作業対象に
 
-> &#x68;ttp://download.eclipse.org/texlipse/2.0.3/
+> &#x68;ttps://download.eclipse.org/texlipse/updates/release/latest
 
 を入力して Enter キーを押します．
 
