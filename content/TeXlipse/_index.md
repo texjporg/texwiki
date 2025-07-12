@@ -175,8 +175,8 @@ Eclipse を起動します．
 
 ### リリース情報 {#f49b6dcf}
 
-- [https://projects.eclipse.org/projects/science.texlipse/governance](https://projects.eclipse.org/projects/science.texlipse/governance)
 - [Releases · eclipse/texlipse · GitHub](https://github.com/eclipse/texlipse/releases)
+- [https://projects.eclipse.org/projects/science.texlipse/governance](https://projects.eclipse.org/projects/science.texlipse/governance)
 
 ### ChangeLog {#e321b2d0}
 
