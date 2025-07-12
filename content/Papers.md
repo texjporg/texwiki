@@ -14,11 +14,11 @@ Papers は GNOME デスクトップ用のドキュメントビューアーです
 Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Books アーカイブ (CBR, CBT, CBZ, CB7)。
 
 - [Papers – GNOMEアプリ](https://apps.gnome.org/ja/Papers/)
-- [GNOME / Incubator / Papers · GitLab](https://gitlab.gnome.org/GNOME/Incubator/papers)
+- [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
     - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン 46.0 で Evince から Papers に名称変更
     - [Drop Synctex support](https://gitlab.gnome.org/GNOME/papers/-/commit/59409c2f18137ea794a21041b0a1a71367f255ed) &lt;-- バージョン 46.0 で SyncTeX をサポート対象外に
     - [Remove DVI support](https://gitlab.gnome.org/GNOME/papers/-/commit/edf8c1a71ca56ab0f99ccb27db3fa467137b97b2) &lt;-- バージョン 46.0 で DVI をサポート対象外に
-    - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/Incubator/papers/-/tags/46.0)
+    - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/papers/-/tags/46.0)
 - [https://flathub.org/apps/org.gnome.Papers](https://flathub.org/apps/org.gnome.Papers)
 - [https://archlinux.org/packages/?name=papers](https://archlinux.org/packages/?name=papers)
 - [https://packages.debian.org/search?keywords=papers](https://packages.debian.org/search?keywords=papers)
