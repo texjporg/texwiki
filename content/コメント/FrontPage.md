@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXstudio 4.8.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-07-12 (土) 09:49:59
 - [日本語フォント「IBM Plex Sans JP」に1万3千以上のグリフ追加 ～「Adobe-Japan1-7」を完全網羅](https://forest.watch.impress.co.jp/docs/news/2025991.html) -- [Adobe-Japan1-7](/Adobe-Japan1-7/) 2025-06-27 (金) 17:53:02
 - [KDDI総合研究所FTPサーバが2025/6/30をもって停止](https://web.archive.org/web/20250705094103/http://www.ftp.ne.jp/) -- [CTAN](/CTAN/) 2025-06-24 (火) 20:11:02
 - [LyX 2.4.4](https://www.lyx.org/) -- [LyX](/LyX/) 2025-06-22 (日) 15:04:08
