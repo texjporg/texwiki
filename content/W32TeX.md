@@ -11,7 +11,7 @@ pukiwiki: "W32TeX"
 
 <strong>配布が終了しました．以下は古い情報です．</strong>
 
-W32TeX はかつて角藤 亮さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成されていた TeX のディストリビューションでしたが現在は配布が終了しています．[TeX Live](</TeX Live/>) に移行してください．
+W32TeX はかつて[角藤 亮](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=Akira+Kakuto)さんが [Microsoft Windows](</Microsoft Windows/>)[^1] 向けに作成されていた TeX のディストリビューションでしたが現在は配布が終了しています．[TeX Live](</TeX Live/>) に移行してください．
 
 - [https://w32tex.org/](https://w32tex.org/)
     - [https://w32tex.org/w32tex.html](https://w32tex.org/w32tex.html)
@@ -326,7 +326,6 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [USBメモリ活用講座【実践編・W32TeXポータブル化】](https://www.nagaoka-ct.ac.jp/ec/labo/visu/usb/tex/w32tex.shtml)
 - [「W32TeX に TeX Live を移植するプロジェクト」(「W32TeX_p」)](https://rivernizi.shinobiashi.com/PC/TeX/way_W32TeX_install.html)
 - [https://ctan.org/pkg/w32tex](https://ctan.org/pkg/w32tex)
-- [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
 - [W32TeX - Wikipedia](https://ja.wikipedia.org/wiki/W32TeX)
 - [W32TeXとは コンピュータの人気・最新記事を集めました - はてな](https://d.hatena.ne.jp/keyword/W32TeX)
 
@@ -339,7 +338,10 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [JAIST 北陸先端科学技術大学院大学](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [山形大学](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [理化学研究所](https://ftp.riken.jp/CTAN/systems/win32/w32tex/)
+- [ctan.tikz.jp](https://ctan.tikz.jp/systems/win32/w32tex/)
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/ctan/systems/win32/w32tex/)
+- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/CTAN/systems/win32/w32tex/)
+- [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
 
 <strong>HTTP</strong>
 
