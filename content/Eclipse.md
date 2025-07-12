@@ -7,7 +7,7 @@ pukiwiki: "Eclipse"
 
 # Eclipse
 
-## [Eclipse](https://eclipseide.org/) {#t7934744}
+## [Eclipse IDE](https://eclipseide.org/) {#t7934744}
 
 ***
 
@@ -15,9 +15,9 @@ pukiwiki: "Eclipse"
 
 <div style="clear:both"></div>
 
-## Eclipse とは {#r72c2682}
+## Eclipse IDE とは {#r72c2682}
 
-Eclipse は Java で書かれた IDE (統合開発環境) です．
+Eclipse IDE は Java で書かれた IDE (統合開発環境) です．
 
 - [The Community for Open Collaboration and Innovation  | The Eclipse Foundation](https://www.eclipse.org/)
 - [Eclipse IDE | The Eclipse Foundation](https://eclipseide.org/)
@@ -40,25 +40,25 @@ Eclipse は Java で書かれた IDE (統合開発環境) です．
 
 ## Java のインストール {#ca668ec2}
 
-Eclipse は Java アプリケーションなので Java のランタイムが必要です．
+Eclipse IDE は Java アプリケーションなので Java のランタイムが必要です．
 
 [Home | Adoptium](https://adoptium.net/) から OpenJDK を入手してインストールします．
 
-## Eclipse のインストール {#r143ba66}
+## Eclipse IDE (Pleiades All in One) のインストール {#r143ba66}
 
-Windows、Mac の場合 [Pleiades All in One](https://willbrains.jp/) を使えば，すぐに日本語化された Eclipse が使えます．
+Windows、Mac の場合 [Pleiades All in One](https://willbrains.jp/) をインストールすれば，すぐに日本語化された Eclipse IDE が使えます．
 
-Eclipse の公式サイトからダウンロードした Eclipse を日本語化する場合は
+Eclipse IDE の公式サイトからダウンロードした Eclipse IDE を日本語化する場合は
 
-- [Eclipse の最新リリース版](https://download.eclipse.org/eclipse/downloads/) (本体)
+- [Eclipse IDE の最新リリース版](https://download.eclipse.org/eclipse/downloads/) (本体)
 
 を展開し，
 
-- [Pleiades プラグイン](https://willbrains.jp/) (Eclipse 本体とプラグインの日本語化)
+- [Pleiades プラグイン](https://willbrains.jp/) (Eclipse IDE 本体とプラグインの日本語化)
 
 を入手してインストールします．
 
-## Eclipse で LaTeX {#i62a454e}
+## Eclipse IDE で LaTeX {#i62a454e}
 
 - [TeXlipse](/TeXlipse/)
 
