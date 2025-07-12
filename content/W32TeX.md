@@ -338,7 +338,6 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 
 - [JAIST 北陸先端科学技術大学院大学](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [山形大学](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
-- [KDDI総合研究所](https://ftp.ne.jp/CTAN/systems/win32/w32tex/)
 - [理化学研究所](https://ftp.riken.jp/CTAN/systems/win32/w32tex/)
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/ctan/systems/win32/w32tex/)
 
@@ -349,14 +348,16 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 - [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
-### 過去のバージョンの W32TeX {#mirror-old}
+<!-- **過去のバージョンの W32TeX [#mirror-old] -->
 
-何らかの理由で過去のバージョンが欲しい場合は，KTUG に
-W32TeX \[2013/12/24\] と W32TeX \[2008/03/18\] が保存されています。
-（参照：[古い TeX をインストールする (W32TeX, TeX Live)](https://acetaminophen.hatenablog.com/entry/2016/05/18/221948)）
+<!-- 2025-07-12 リンク切れを確認 -->
 
-- [W32TeX \[2013/12/24\]](http://ftp.ktug.org/obsolete/TeX/ptex-win32/current/)
-- [W32TeX \[2008/03/18\]](http://ftp.ktug.org/obsolete/w32tex/win32/current/)
+<!-- 何らかの理由で過去のバージョンが欲しい場合は，KTUG に -->
+<!-- W32TeX [2013/12/24] と W32TeX [2008/03/18] が保存されています。 -->
+<!-- （参照：[[古い TeX をインストールする (W32TeX, TeX Live):https://acetaminophen.hatenablog.com/entry/2016/05/18/221948]]） -->
+
+<!-- -[[W32TeX [2013/12/24]:http://ftp.ktug.org/obsolete/TeX/ptex-win32/current/]] -->
+<!-- -[[W32TeX [2008/03/18]:http://ftp.ktug.org/obsolete/w32tex/win32/current/]] -->
 
 <!-- 2022-11-17 eplang.jpのリンク切れを確認 -->
 
