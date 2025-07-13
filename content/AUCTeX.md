@@ -17,7 +17,7 @@ pukiwiki: "AUCTeX"
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は GNU Emacs 27.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジャーモードです．
+AUCTeX は GNU Emacs 28.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 - [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
@@ -514,8 +514,8 @@ Emacs 標準のパッケージ管理システムを使用してインストー�
 AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば次のように記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.0.9")
-(load "~/.emacs.d/elpa/auctex-14.0.9/auctex-autoloads.el" nil t t)
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.1.0")
+(load "~/.emacs.d/elpa/auctex-14.1.0/auctex-autoloads.el" nil t t)
 ```
 
 #### AUCTeX の公式サイトのパッケージからインストールした場合 {#db9dca5d}
