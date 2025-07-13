@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [AUCTeX 14.1.0](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2025-07-13 (日) 23:05:51
 - [TeXstudio 4.8.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-07-12 (土) 09:49:59
 - [日本語フォント「IBM Plex Sans JP」に1万3千以上のグリフ追加 ～「Adobe-Japan1-7」を完全網羅](https://forest.watch.impress.co.jp/docs/news/2025991.html) -- [Adobe-Japan1-7](/Adobe-Japan1-7/) 2025-06-27 (金) 17:53:02
 - [KDDI総合研究所FTPサーバが2025/6/30をもって停止](https://tech-note.kddi.com/n/n9a93ac6d5051) -- [CTAN](/CTAN/) 2025-06-24 (火) 20:11:02
