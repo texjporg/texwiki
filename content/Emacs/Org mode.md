@@ -443,6 +443,7 @@ org ファイルの先頭に
 
 ### リリース情報 {#lb82f3d0}
 
+- [https://elpa.gnu.org/packages/org.html](https://elpa.gnu.org/packages/org.html)
 - [https://git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags)
 
 ### ChangeLog {#r21fa6e2}
