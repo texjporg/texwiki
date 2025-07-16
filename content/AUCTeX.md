@@ -33,6 +33,7 @@ AUCTeX は GNU Emacs 28.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジ
 
 ### リリース情報 {#bbfafcad}
 
+- [https://elpa.gnu.org/packages/auctex.html](https://elpa.gnu.org/packages/auctex.html)
 - [https://git.savannah.gnu.org/cgit/auctex.git/refs/](https://git.savannah.gnu.org/cgit/auctex.git/refs/)
     - [https://git.savannah.gnu.org/cgit/auctex.git/refs/tags](https://git.savannah.gnu.org/cgit/auctex.git/refs/tags)
 
