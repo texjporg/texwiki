@@ -40,6 +40,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
         <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
         <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
+        <!-- [[KDDI総合研究所 公開FTPサーバーの歩み｜KDDI Tech note:https://tech-note.kddi.com/n/n9a93ac6d5051]] -->
         <!-- -[[KDDI総合研究所:https://www.kddi-research.jp/]] (埼玉県ふじみ野市) -->
         <!-- - -[[ftp.ne.jp/CTAN/:https://ftp.ne.jp/CTAN/]] -->
         <!-- (HTTPS, HTTP, FTP) -->
@@ -58,6 +59,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
 #### HTTPS, HTTP {#HTTPS-HTTP-CTAN-MIRROR}
 
 - [ctan.tikz.jp](https://ctan.tikz.jp/)
+    <!-- https://vmd139524.contaboserver.net/ -->
     - [ctan.tikz.jp/](https://ctan.tikz.jp/)
         (HTTPS, HTTP)
 
