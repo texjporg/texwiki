@@ -109,28 +109,6 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- tug.ctan.org = ctan.org -->
         <!-- - -U.K.（イギリス）：[[www.tex.ac.uk:https://www.tex.ac.uk]] -->
     - BRD（ドイツ）：[www.dante.de](https://www.dante.de/)
-- HTTP
-    - U.S.A.（アメリカ）：[ctan.org](http://ctan.org/)
-        <!-- tug.ctan.org = ctan.org -->
-        <!-- - -U.K.（イギリス）：[[www.tex.ac.uk:http://www.tex.ac.uk]] -->
-    - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
-- FTP
-    - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
-        <!-- ctan.org = tug.ctan.org -->
-        <!-- - -U.K.（イギリス）：[[ftp.tex.ac.uk/tex-archive/:ftp://ftp.tex.ac.uk/tex-archive/]] -->
-    - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
-        <!-- www.dante.de = ftp.dante.de -->
-
-また，[ftp.ctan.org](http://ftp.ctan.org/) は
-[ctan.org](https://ctan.org/) (=
-[tug.ctan.org](http://tug.ctan.org/))，[ftp.tex.ac.uk](ftp://ftp.tex.ac.uk/)（FTP
-のみ），[www.dante.de](http://www.dante.de/) (=
-[ftp.dante.de](http://ftp.dante.de/)) のいずれかに&#x7e6b;がります．
-
-<!-- ***FTP のみ [#FTP-only] -->
-<!-- -[[会津大学:http://www.u-aizu.ac.jp/]] (福島県会津若松市) -->
-<!-- - -[[ftp.u-aizu.ac.jp/pub/tex/CTAN/:ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/]]（FTP のみ） -->
-<!-- ftp.u-aizu.ac.jp = ftpsv1.u-aizu.ac.jp -->
 
 <!-- **Ring Server によるミラーリング [#RingServer] -->
 <!-- アメリカのウェブサイトは [[ctan.org:https://ctan.org/]] -->
