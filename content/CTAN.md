@@ -59,15 +59,18 @@ CTAN の世界的なミラーリングとして次の URI があります．
 #### HTTPS, HTTP {#HTTPS-HTTP-CTAN-MIRROR}
 
 - [ctan.tikz.jp](https://ctan.tikz.jp/)
-    <!-- https://vmd139524.contaboserver.net/ -->
+    <!-- vmd139524.contaboserver.net -->
+    <!-- 84.247.157.65 -->
     - [ctan.tikz.jp/](https://ctan.tikz.jp/)
         (HTTPS, HTTP)
 
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/)
+    <!-- https://github.com/cicku -->
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
         (HTTPS, HTTP)
 
 - [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/)
+    <!-- 163.220.236.50 -->
     - [mirror.aria-on-the-planet.es/CTAN/](https://mirror.aria-on-the-planet.es/CTAN/)
         (HTTPS, HTTP)
 
@@ -101,15 +104,20 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 オリジナルの CTAN サイトは次のとおりです．
 
-- HTTP
+- HTTPS
     - U.S.A.（アメリカ）：[ctan.org](https://ctan.org/)
         <!-- tug.ctan.org = ctan.org -->
-    - U.K.（イギリス）：[www.tex.ac.uk](http://www.tex.ac.uk/)
+        <!-- - -U.K.（イギリス）：[[www.tex.ac.uk:https://www.tex.ac.uk]] -->
+    - BRD（ドイツ）：[www.dante.de](https://www.dante.de/)
+- HTTP
+    - U.S.A.（アメリカ）：[ctan.org](http://ctan.org/)
+        <!-- tug.ctan.org = ctan.org -->
+        <!-- - -U.K.（イギリス）：[[www.tex.ac.uk:http://www.tex.ac.uk]] -->
     - BRD（ドイツ）：[www.dante.de](http://www.dante.de/)
 - FTP
     - U.S.A.（アメリカ）：[tug.ctan.org/tex-archive/](ftp://tug.ctan.org/tex-archive/)
         <!-- ctan.org = tug.ctan.org -->
-    - U.K.（イギリス）：[ftp.tex.ac.uk/tex-archive/](ftp://ftp.tex.ac.uk/tex-archive/)
+        <!-- - -U.K.（イギリス）：[[ftp.tex.ac.uk/tex-archive/:ftp://ftp.tex.ac.uk/tex-archive/]] -->
     - BRD（ドイツ）：[ftp.dante.de/tex-archive/](ftp://ftp.dante.de/tex-archive/)
         <!-- www.dante.de = ftp.dante.de -->
 
