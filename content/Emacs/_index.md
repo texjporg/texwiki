@@ -54,7 +54,7 @@ GNU Emacs はフリーソフトウェアです．
 - [An enhanced inline patch for GNU Emacs](https://github.com/takaxp/ns-inline-patch#test-pre-built-distribution-package)
 - [GNU Emacs For Mac OS X](https://emacsformacosx.com/)
 - [Emacs Modified for macOS](https://emacs-modified.gitlab.io/macos/)
-    <!-- -[[Emacs Mac port [experimental/hackers-only]:ftp://ftp.math.s.chiba-u.ac.jp/emacs/]] -->
+- [Emacs Mac Port](https://github.com/railwaycat/homebrew-emacsmacport)
 
 ### [EmacsWiki](https://www.emacswiki.org/) {#mde20549}
 
