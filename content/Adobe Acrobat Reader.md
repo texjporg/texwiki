@@ -145,7 +145,6 @@ wine64 cmd /c start Acrobat.exe file.pdf
 ### Android {#k545c7f3}
 
 - [Adobe Acrobat Reader - Apps on Google Play](https://play.google.com/store/apps/details?id=com.adobe.reader&hl=ja)
-    <!-- -ftp://ftp.adobe.com/pub/adobe/reader/android/ -->
 
 ### iOS {#ac2b971a}
 
