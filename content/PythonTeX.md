@@ -103,3 +103,4 @@ python.exe c:\texlive\2024\texmf-dist\scripts\pythontex\pythontex.py
 - [&quot;Python&quot; - 記事一覧 - 何かを書き留める何か](http://xaro.hatenablog.jp/archive/category/Python)
     - [http://xaro.hatenablog.jp/search?q=PythonTeX](http://xaro.hatenablog.jp/search?q=PythonTeX)
 - [TeXでruby](https://okumuralab.org/tex/mod/forum/discuss.php?d=1185)
+- [PythonTeX による数学教育用の教材作成](https://researchmap.jp/hogawaraH1/misc/45938937)
