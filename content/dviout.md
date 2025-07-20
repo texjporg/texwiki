@@ -49,13 +49,15 @@ TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 
 #### TeX Users Group repositoryの版 (Ver.3.19.0~) {#x61c7151}
 
+- [https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
+- [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
+- [https://ftp.riken.jp/CTAN/dviware/dviout/](https://ftp.riken.jp/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
 
 #### 東京大学の版 (Ver.3.18.5) {#zdd6e510}
 
-- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current_in_Japanese/)（安定版）
-- [ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/dviout/current/) (安定版)
-- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)（安定版のミラー）
+- [https://www.ms.u-tokyo.ac.jp/~oshima/dviout/dvihist.html](https://www.ms.u-tokyo.ac.jp/~oshima/dviout/dvihist.html)（東京大学の版）
+- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)（東京大学の版）
 
 ## ビルド {#d0101f83}
 
