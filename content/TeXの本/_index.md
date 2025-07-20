@@ -78,6 +78,7 @@ TeX や LaTeX に関する本の紹介です．
 
 ### 書籍（紙版、電子版(PDF版、Kindle版、楽天Kobo、…)） {#z5fa285b}
 
+- [PDF/EPUBで本を売っているところ](https://okumuralab.org/~okumura/misc/250425.html) NotebookLMなどのAIに助けてもらいながら読むことのできるDRMフリー（テキスト抽出可能）なPDFまたはEPUBで本を売っているところのリストです（順不同）。
 - [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html)
 - [本棚.org ](https://hondana.org/TeX/)
 - [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html)
