@@ -28,87 +28,87 @@ CTAN の世界的なミラーリングとして次の URI があります．
 [https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
 この接続先候補に含まれる日本国内サイトには次のものがあります．
 
-#### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP-CTAN-MIRROR}
+#### HTTPS {#HTTPS-CTAN-MIRROR}
 
 - [JAIST 北陸先端科学技術大学院大学](https://www.jaist.ac.jp/) (石川県能美市)
     - [ftp.jaist.ac.jp/pub/CTAN/](https://ftp.jaist.ac.jp/pub/CTAN/)
-        (HTTPS, HTTP, FTP)
+        (HTTPS)
 
 - [山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科](https://www.yz.yamagata-u.ac.jp/) (山形県米沢市)
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
-        (HTTPS, HTTP, FTP)
+        (HTTPS)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
         <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
         <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
         <!-- [[KDDI総合研究所 公開FTPサーバーの歩み｜KDDI Tech note:https://tech-note.kddi.com/n/n9a93ac6d5051]] -->
         <!-- -[[KDDI総合研究所:https://www.kddi-research.jp/]] (埼玉県ふじみ野市) -->
         <!-- - -[[ftp.ne.jp/CTAN/:https://ftp.ne.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- - -[[ftp.kddi-research.jp/CTAN/:https://ftp.kddi-research.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- - -[[ftp.kddilabs.jp/CTAN/:https://ftp.kddilabs.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- - -[[srv2.ftp.ne.jp/CTAN/:https://srv2.ftp.ne.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- - -[[ftp-srv2.kddi-research.jp/CTAN/:https://ftp-srv2.kddi-research.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- - -[[ftp-srv2.kddilabs.jp/CTAN/:https://ftp-srv2.kddilabs.jp/CTAN/]] -->
-        <!-- (HTTPS, HTTP, FTP) -->
+        <!-- (HTTPS) -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
-
-#### HTTPS, HTTP {#HTTPS-HTTP-CTAN-MIRROR}
 
 - [ctan.tikz.jp](https://ctan.tikz.jp/)
     <!-- vmd139524.contaboserver.net -->
     <!-- 84.247.157.65 -->
     - [ctan.tikz.jp/](https://ctan.tikz.jp/)
-        (HTTPS, HTTP)
+        (HTTPS)
 
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/)
     <!-- https://github.com/cicku -->
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
-        (HTTPS, HTTP)
+        (HTTPS)
 
 - [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/)
     <!-- 163.220.236.50 -->
     - [mirror.aria-on-the-planet.es/CTAN/](https://mirror.aria-on-the-planet.es/CTAN/)
-        (HTTPS, HTTP)
+        (HTTPS)
 
 ### CTAN ミラーサイトの接続先候補以外の日本国内サイト（一部） {#others}
 
-#### HTTPS, HTTP, FTP {#HTTPS-HTTP-FTP-NO-CTAN-MIRROR}
+#### HTTPS {#HTTPS-NO-CTAN-MIRROR}
 
 - [理化学研究所](https://www.riken.jp/) (埼玉県和光市)
     - [ftp.riken.jp/CTAN/](https://ftp.riken.jp/CTAN/)
-        (HTTPS, HTTP, FTP)
+        (HTTPS)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
-#### HTTP, FTP {#HTTP-FTP-NO-CTAN-MIRROR}
+#### HTTP {#HTTP-NO-CTAN-MIRROR}
 
 - [NAIST 奈良先端科学技術大学院大学](https://www.naist.jp/) (奈良県生駒市)
     - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
-        (HTTP, FTP)
+        (HTTP)
         <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
     - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
-        (HTTP, FTP)
+        (HTTP)
 
 - [Ring Server](http://www.ring.gr.jp/index.html.ja)
     - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP, FTP)
+        (HTTP)
     - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP, FTP)
+        (HTTP)
     - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP, FTP)
+        (HTTP)
 
 ### オリジナルの CTAN {#original}
 
 オリジナルの CTAN サイトは次のとおりです．
 
-- HTTPS
-    - U.S.A.（アメリカ）：[ctan.org](https://ctan.org/)
-        <!-- tug.ctan.org = ctan.org -->
-        <!-- - -U.K.（イギリス）：[[www.tex.ac.uk:https://www.tex.ac.uk]] -->
+#### HTTPS {#HTTPS-ORIGINAL-CTAN-MIRROR}
+
+- U.S.A.（アメリカ）：[ctan.org](https://ctan.org/)
+    (HTTPS)
+    <!-- tug.ctan.org = ctan.org -->
     - BRD（ドイツ）：[www.dante.de](https://www.dante.de/)
+        (HTTPS)
 
 <!-- **Ring Server によるミラーリング [#RingServer] -->
 <!-- アメリカのウェブサイトは [[ctan.org:https://ctan.org/]] -->
@@ -129,12 +129,6 @@ CTAN の世界的なミラーリングとして次の URI があります．
 <!-- - -[[www.dnsbalance.ring.gr.jp/pub/text/CTAN/:http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/]] -->
 <!-- （近いサーバ優先 …… [[DNS Balance:http://openlab.jp/dns_balance/dns_balance.html]] による動的な負荷分散を行う） -->
 <!-- - -[[core.ring.gr.jp/pub/text/CTAN/:http://core.ring.gr.jp/pub/text/CTAN/]] -->
-<!-- -FTP -->
-<!-- - -[[ftp.ring.gr.jp/pub/text/CTAN/:ftp://ftp.ring.gr.jp/pub/text/CTAN/]] -->
-<!-- （代表 URI …… 一般的な DNS ラウンドロビンを採用して負荷分散を図る） -->
-<!-- - -[[ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/:ftp://ftp.dnsbalance.ring.gr.jp/pub/text/CTAN/]] -->
-<!-- （近いサーバ優先 …… [[DNS Balance:http://openlab.jp/dns_balance/dns_balance.html]] による動的な負荷分散を行う） -->
-<!-- - -[[core.ring.gr.jp/pub/text/CTAN/:ftp://core.ring.gr.jp/pub/text/CTAN/]] -->
 <!--  -->
 <!-- 【注意】Ring Server は複数のファイルサーバの集合体です． -->
 <!-- ホームページの中ほどにサーバの一覧がありますので， -->
