@@ -89,14 +89,13 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
     - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
         (HTTP)
-
-- [Ring Server](http://www.ring.gr.jp/index.html.ja)
-    - [core.ring.gr.jp/pub/text/CTAN/](http://core.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP)
-    - [www.dnsbalance.ring.gr.jp/pub/text/CTAN/](http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP)
-    - [www.ring.gr.jp/pub/text/CTAN/](http://www.ring.gr.jp/pub/text/CTAN/index.html)
-        (HTTP)
+        <!-- -[[Ring Server:http://www.ring.gr.jp/index.html.ja]] -->
+        <!-- - -[[core.ring.gr.jp/pub/text/CTAN/:http://core.ring.gr.jp/pub/text/CTAN/index.html]] -->
+        <!-- (HTTP) -->
+        <!-- - -[[www.dnsbalance.ring.gr.jp/pub/text/CTAN/:http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html]] -->
+        <!-- (HTTP) -->
+        <!-- - -[[www.ring.gr.jp/pub/text/CTAN/:http://www.ring.gr.jp/pub/text/CTAN/index.html]] -->
+        <!-- (HTTP) -->
 
 ### オリジナルの CTAN {#original}
 
