@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LuaTeX-ja 20250723.0](https://github.com/luatexja/luatexja) -- [LuaTeX-ja](/LuaTeX-ja/) 2025-07-23 (水) 23:59:04
 - [TexText 1.12.0](https://textext.github.io/textext/) -- [Inkscape](/Inkscape/) 2025-07-18 (金) 18:30:34
 - [AUCTeX 14.1.0](https://www.gnu.org/software/auctex/) -- [AUCTeX](/AUCTeX/) 2025-07-13 (日) 23:05:51
 - [TeXstudio 4.8.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-07-12 (土) 09:49:59
