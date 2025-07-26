@@ -52,12 +52,11 @@ TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 - [https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.riken.jp/CTAN/dviware/dviout/](https://ftp.riken.jp/CTAN/dviware/dviout/) (CTANに登録された最新版)
-- [http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/](http://www.ring.gr.jp/pub/text/CTAN/dviware/dviout/) (CTANに登録された最新版)
+- [http://ftp.naist.jp/pub/CTAN/dviware/dviout/](http://ftp.naist.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 
 #### 東京大学の版 (Ver.3.18.5) {#zdd6e510}
 
 - [https://www.ms.u-tokyo.ac.jp/~oshima/dviout/dvihist.html](https://www.ms.u-tokyo.ac.jp/~oshima/dviout/dvihist.html)（東京大学の版）
-- [http://www.ring.gr.jp/pub/text/TeX/dviout/](http://www.ring.gr.jp/pub/text/TeX/dviout/)（東京大学の版）
 
 ## ビルド {#d0101f83}
 
