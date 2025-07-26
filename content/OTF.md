@@ -460,9 +460,9 @@ dvips -f -Pdl ... dviname | ps2otfps -f >psname
 <!-- 中国語や韓国語についても同様のことが言えます。 -->
 <!-- （下の記述にある Microsoft Windows の TrueType フォントを使う場合の -->
 <!--   dvipdfmx 用の map ファイルや次のサイトをご参照ください。 -->
-<!--   http://oku.edu.mie-u.ac.jp/~okumura/texwiki/?LaTeX-CJK#odc3338f -->
-<!--   http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfmx/README?view=markup -->
-<!--   http://www.ring.gr.jp/pub/text/CTAN/dviware/dvipdfmx/README       ） -->
+<!--   https://texwiki.texjp.org/?LaTeX-CJK#odc3338f -->
+<!--   https://svn.tug.org/texlive/trunk/Build/source/texk/dvipdfm-x/README?view=markup -->
+<!--   https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf       ） -->
 <!-- 実際に，Adobe-Japan1-6 や “/AJ16” を使わずに -->
 <!-- Identity-H, Identity-V と TrueType フォントを使うように -->
 <!--  -->
