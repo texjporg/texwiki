@@ -38,8 +38,8 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
         (HTTPS)
 
-- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/) ([産業サイバーセキュリティセンター](https://www.ipa.go.jp/icscoe/) (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
-    <!-- 産業サイバーセキュリティセンター -->
+- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/) ([ICSCoE 産業サイバーセキュリティセンター](https://www.ipa.go.jp/icscoe/) (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
+    <!-- ICSCoE 産業サイバーセキュリティセンター -->
     <!-- 163.220.236.50 -->
     - [mirror.aria-on-the-planet.es/CTAN/](https://mirror.aria-on-the-planet.es/CTAN/)
         (HTTPS)
