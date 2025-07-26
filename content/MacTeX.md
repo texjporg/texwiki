@@ -193,12 +193,12 @@ $ sudo tlmgr paper a4
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/mac/mactex/)
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/mac/mactex/](https://ftp.riken.jp/CTAN/systems/mac/mactex/)
-    - ctan.tikz.jp
-        - [https://ctan.tikz.jp/systems/mac/mactex/](https://ctan.tikz.jp/systems/mac/mactex/)
-    - jp.mirrors.cicku.me
-        - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
-    - mirror.aria-on-the-planet.es
+    - mirror.aria-on-the-planet.es (産業サイバーセキュリティセンター (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
         - [https://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/](https://mirror.aria-on-the-planet.es/CTAN/systems/mac/mactex/)
+    - ctan.tikz.jp (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
+        - [https://ctan.tikz.jp/systems/mac/mactex/](https://ctan.tikz.jp/systems/mac/mactex/)
+    - jp.mirrors.cicku.me (Cloudflare CDN)
+        - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
 - <strong>HTTP</strong>
