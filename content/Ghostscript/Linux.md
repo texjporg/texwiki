@@ -223,8 +223,8 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /Wadalab-HosoMaruGothic       << /FileType /TrueType  /CSI [(Japan1) 6]  /Path (./TrueType/wadalab/wadalab-hosomarugo.ttf) >> ;
 
 %%% Chinese TrueType font by Arphic Technology
-%%% See ftp://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
-%%%     http://www.ring.gr.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
+%%% See https://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
+%%%     https://ftp.jaist.ac.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
 /ShanHeiSun-Light             << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/truetype/arphic/bsmi00lp.ttf) >> ;
 /ZenKai-Medium                << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/truetype/arphic/bkai00mp.ttf) >> ;
 /BousungEG-Light-GB           << /FileType /TrueType  /CSI [(GB1) 5]     /Path (/usr/share/fonts/truetype/arphic/gbsn00lp.ttf) >> ;
