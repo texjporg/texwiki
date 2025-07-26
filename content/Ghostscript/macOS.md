@@ -121,8 +121,8 @@ $ sudo cjk-gs-integrate --link-texmf --force
 /Gulim                        << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (/Library/Fonts/Microsoft/Gulim.ttf)      >> ;
 
 %%% Chinese TrueType font by Arphic Technology
-%%% See ftp://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
-%%%     http://www.ring.gr.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
+%%% See https://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
+%%%     https://ftp.jaist.ac.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
 /ShanHeiSun-Light             << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/arphic/bsmi00lp.ttf) >> ;
 /ZenKai-Medium                << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (./TrueType/arphic/bkai00mp.ttf) >> ;
 /BousungEG-Light-GB           << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/arphic/gbsn00lp.ttf) >> ;
