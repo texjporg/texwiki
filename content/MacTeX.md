@@ -205,7 +205,3 @@ $ sudo tlmgr paper a4
     - NAIST 奈良先端科学技術大学院大学 (奈良県生駒市)
         - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
         - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
-            <!-- - -Ring Server -->
-            <!-- - --http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/ -->
-            <!-- - --http://www.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/ -->
-            <!-- - --http://core.ring.gr.jp/pub/text/CTAN/systems/mac/mactex/ -->
