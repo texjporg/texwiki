@@ -104,12 +104,12 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/texlive/tlnet/](https://ftp.riken.jp/CTAN/systems/texlive/tlnet/)
-    - ctan.tikz.jp
-        - [https://ctan.tikz.jp/systems/texlive/tlnet/](https://ctan.tikz.jp/systems/texlive/tlnet/)
-    - jp.mirrors.cicku.me
-        - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
-    - mirror.aria-on-the-planet.es
+    - mirror.aria-on-the-planet.es (産業サイバーセキュリティセンター (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
         - [https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/](https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/tlnet/)
+    - ctan.tikz.jp (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
+        - [https://ctan.tikz.jp/systems/texlive/tlnet/](https://ctan.tikz.jp/systems/texlive/tlnet/)
+    - jp.mirrors.cicku.me (Cloudflare CDN)
+        - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - 日本語 TeX 開発コミュニティ
@@ -132,12 +132,12 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/texlive/Images/)
     - 理化学研究所 (埼玉県和光市)
         - [https://ftp.riken.jp/CTAN/systems/texlive/Images/](https://ftp.riken.jp/CTAN/systems/texlive/Images/)
-    - ctan.tikz.jp
-        - [https://ctan.tikz.jp/systems/texlive/Images/](https://ctan.tikz.jp/systems/texlive/Images/)
-    - jp.mirrors.cicku.me
-        - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
-    - mirror.aria-on-the-planet.es
+    - mirror.aria-on-the-planet.es (産業サイバーセキュリティセンター (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
         - [https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/](https://mirror.aria-on-the-planet.es/CTAN/systems/texlive/Images/)
+    - ctan.tikz.jp (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
+        - [https://ctan.tikz.jp/systems/texlive/Images/](https://ctan.tikz.jp/systems/texlive/Images/)
+    - jp.mirrors.cicku.me (Cloudflare CDN)
+        - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
 - <strong>HTTP</strong>
