@@ -37,6 +37,12 @@ CTAN の世界的なミラーリングとして次の URI があります．
 - [山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科](https://www.yz.yamagata-u.ac.jp/) (山形県米沢市)
     - [ftp.yz.yamagata-u.ac.jp/pub/CTAN/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/)
         (HTTPS)
+
+- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/) ([産業サイバーセキュリティセンター](https://www.ipa.go.jp/icscoe/) (東京都千代田区外神田４丁目１４−１ 秋葉原UDX 20階))
+    <!-- 産業サイバーセキュリティセンター -->
+    <!-- 163.220.236.50 -->
+    - [mirror.aria-on-the-planet.es/CTAN/](https://mirror.aria-on-the-planet.es/CTAN/)
+        (HTTPS)
         <!-- ftp.yz.yamagata-u.ac.jp = ftp.slb.yz.yamagata-u.ac.jp = freebsd.yz.yamagata-u.ac.jp -->
         <!-- 2025/6/30でKDDI総合研究所FTPサーバの運用を停止させていただきます。 -->
         <!-- 30年以上のご利用、ありがとうございました。(FTPサーバ管理人/admin@ftp.ne.jp) -->
@@ -56,20 +62,17 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- (HTTPS) -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
-- [ctan.tikz.jp](https://ctan.tikz.jp/)
+- [ctan.tikz.jp](https://ctan.tikz.jp/) (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
+    <!-- Contabo Asia Private Limited -->
     <!-- vmd139524.contaboserver.net -->
     <!-- 84.247.157.65 -->
     - [ctan.tikz.jp/](https://ctan.tikz.jp/)
         (HTTPS)
 
-- [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/)
+- [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/) (Cloudflare CDN)
+    <!-- Cloudflare CDN -->
     <!-- https://github.com/cicku -->
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
-        (HTTPS)
-
-- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/)
-    <!-- 163.220.236.50 -->
-    - [mirror.aria-on-the-planet.es/CTAN/](https://mirror.aria-on-the-planet.es/CTAN/)
         (HTTPS)
 
 ### CTAN ミラーサイトの接続先候補以外の日本国内サイト（一部） {#others}
