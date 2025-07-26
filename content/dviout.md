@@ -52,7 +52,6 @@ TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 - [https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.riken.jp/CTAN/dviware/dviout/](https://ftp.riken.jp/CTAN/dviware/dviout/) (CTANに登録された最新版)
-- [http://ftp.naist.jp/pub/CTAN/dviware/dviout/](http://ftp.naist.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 
 #### 東京大学の版 (Ver.3.18.5) {#zdd6e510}
 
@@ -237,7 +236,7 @@ synctex help edit
 - [CTAN dviout](https://ctan.org/tex-archive/dviware/dviout)
 - [TeX Users Group - subversion repository](https://www.tug.org/svn/dviout/)
 - [TeX Users Group - dviout Mailing List](https://tug.org/mailman/listinfo/dviout)
-- [TeX関係文書](http://argent.shinshu-u.ac.jp/~otobe/tex/docs/) [関連ファイル](http://argent.shinshu-u.ac.jp/~otobe/tex/files/) (乙部先生@信州大学)
+- [TeX関係文書](https://web.archive.org/web/20210509082947/http://argent.shinshu-u.ac.jp/~otobe/tex/docs/) [関連ファイル](https://web.archive.org/web/20240515161652/http://argent.shinshu-u.ac.jp/~otobe/tex/files/) (乙部先生@信州大学)
 - [dviout-util-win32.zip (dviout の一部である dvispc / chkfont / propw の改良版 Windows バイナリ)](https://x.com/aminophen/status/873785429765480448)
 
 ### ライセンス {#w9d4ec9d}
@@ -255,7 +254,7 @@ Expat License については
 
 #### 2021-05-09 dviout 3.19.0 {#z948889f}
 
-TeX Users Group [subversion repository](https://www.tug.org/svn/dviout/)のソースコードによるビルドです。
+TeX Users Group [subversion repository](https://svn.tug.org/dviout/)のソースコードによるビルドです。
 
 - 0x8000〜0xFFFFFF(24bit)の文字コードを持つjfmの読み込みに対応
 - CID コード → Unicode 変換を Adobe-Japan1-7 対応に
@@ -270,8 +269,8 @@ dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正�
 
 ### ChangeLog {#r5124b5a}
 
-- \[[dviout\] Index of /trunk](http://tug.org/svn/dviout/trunk/)
-    - [log](http://tug.org/svn/dviout/trunk/?view=log)
-    - [ChangeLog](http://tug.org/svn/dviout/trunk/ChangeLog?view=log)
-- \[[texlive\] Index of /trunk/Master/tlpkg/dviout](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/)
-    - [log](http://tug.org/svn/texlive/trunk/Master/tlpkg/dviout/?view=log)
+- \[[ViewVC\] Index of: dviout/trunk](https://svn.tug.org/dviout/trunk/)
+    - [log](https://svn.tug.org/dviout/trunk/?view=log)
+    - [ChangeLog](https://svn.tug.org/dviout/trunk/ChangeLog?view=log)
+- \[[ViewVC\] Index of: texlive/trunk/Master/tlpkg/dviout](https://svn.tug.org/texlive/trunk/Master/tlpkg/dviout/)
+    - [log](https://svn.tug.org/texlive/trunk/Master/tlpkg/dviout/?view=log)
