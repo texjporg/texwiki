@@ -720,18 +720,15 @@ composefont pop
 /ZenKai-Uni-Adobe-GB1         << /FileType /TrueType  /CSI [(GB1) 5]     /Path (./TrueType/ttf-arphic-ukai/ukai.ttf)   >> ;
 
 %%% Baekmuk fonts
-%%% See http://kldp.net/projects/baekmuk/
-%%%     ftp://ftp.mizi.com/pub/baekmuk/
+%%% See https://kldp.net/baekmuk/
 /Baekmuk-Batang               << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/batang.ttf) >> ;
 /Baekmuk-Dotum                << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/dotum.ttf)  >> ;
 /Baekmuk-Headline             << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/hline.ttf)  >> ;
 /Baekmuk-Gulim                << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (./TrueType/baekmuk-ttf/ttf/gulim.ttf)  >> ;
 
-%%% OpenType fonts with PostScript outlines in Adobe Acrobat Reader DC/Acrobat
+%%% OpenType fonts with PostScript outlines in Adobe Acrobat Reader/Acrobat
 %%% See https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html
-%%%     https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html
 %%%     "C:\Program Files\Adobe\Acrobat DC\Resource\CIDFont"
-%%%     "C:\Program Files (x86)\Adobe\Acrobat Reader DC\Resource\CIDFont\"
 %/Ryumin-Light                 /KozMinPr6N-Regular     ;
 %/GothicBBB-Medium             /KozGoPr6N-Medium       ;
 %/STSong-Light                 /AdobeSongStd-Light     ;
