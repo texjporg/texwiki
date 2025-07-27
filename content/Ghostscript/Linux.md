@@ -257,8 +257,7 @@ $TEXMFLOCAL/fonts/opentype// や $TEXMFLOCAL/fonts/truetype// からも
 /cwTeXFangSong-center         << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (/usr/share/fonts/truetype/cwtex/center/cwfs.ttf)   >> ;
 
 %%% Baekmuk fonts
-%%% See http://kldp.net/projects/baekmuk/
-%%%     ftp://ftp.mizi.com/pub/baekmuk/
+%%% See https://kldp.net/baekmuk/
 /Baekmuk-Batang               << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (/usr/share/fonts/truetype/baekmuk/batang.ttf) >> ;
 /Baekmuk-Dotum                << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (/usr/share/fonts/truetype/baekmuk/dotum.ttf)  >> ;
 /Baekmuk-Headline             << /FileType /TrueType  /CSI [(Korea1) 2]  /Path (/usr/share/fonts/truetype/baekmuk/hline.ttf)  >> ;
