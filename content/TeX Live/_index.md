@@ -112,7 +112,7 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
-    - 日本語 TeX 開発コミュニティ
+    - 日本語 TeX 開発コミュニティ (さくらインターネット (大阪府大阪市北区大深町６−３８ 3F グラングリーン大阪 北館 JAM BASE))
         - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
 - <strong>HTTP</strong>
     - NAIST 奈良先端科学技術大学院大学 (奈良県生駒市)
@@ -177,7 +177,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 #### ChangeLog {#g68f0fa7}
 
-- [TeX Live and Subversion](https://www.tug.org/texlive/svn/)
+- [TeX Live and Subversion (and Git)](https://www.tug.org/texlive/svn/)
 - \[[ViewVC\] Index of: texlive/trunk](https://svn.tug.org/texlive/trunk/)
     - [log](https://svn.tug.org/texlive/trunk/?view=log)
     - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/ChangeLog?view=markup)
