@@ -45,7 +45,7 @@ TeX Live のインストールガイド
 
 - [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
 - [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#section.3](https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#section.3)
+- [https://wtsnjp.com/pdf/texlive-ja.pdf#section.3](https://wtsnjp.com/pdf/texlive-ja.pdf#section.3)
 
 に従えばよいですが，このページでもネットワークインストーラを使う場合について簡単に説明します．
 
