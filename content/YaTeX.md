@@ -51,7 +51,7 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 <!-- **YaTeX 1.80 で (setq dvi2-command "okular - -unique") を設定して C-c C-g を入力すると forward search ができない [#l5f1c74e] -->
 <!--  -->
 <!-- Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります． -->
-<!-- ただし，[[2016-01-08:https://www.yatex.org/hgrepos/hgweb.cgi/yatex/rev/e78a87bc2c9e]] 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません． -->
+<!-- ただし，[[2016-01-08:https://www.yatex.org/gitbucket/yuuji/yatex/commit/b13a7d32a82e8a6f00acfa5a168d3932bded0d6c]] 以降では (cf (buffer-file-name)) に変更されて cf はフルパスになったため，この修正は必要ありません． -->
 <!--  -->
 <!-- Okular の format "%s '%s.pdf#src:%d' '%s'" の設定は間違いで，format "%s '%s.pdf#src:%d %s'" に修正する必要があります． -->
 <!--  -->
@@ -587,7 +587,7 @@ YaTeX-kanji-code を nil 以外にすると<strong>指定した文字コード�
 
 YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されました．
 
-- [8.4.3 文字エンコーディングの設定](http://hwb.ecc.u-tokyo.ac.jp/current/literacy/editor/emacs/encoding/)
+- [8.4.3 文字エンコーディングの設定 | HWB](https://hwb.ecc.u-tokyo.ac.jp/wp/literacy/editor-2/emacs/encoding/)
 
 ```
 ;;;   nil: Do not care (Preserve coding-system) -> ファイルの文字コードを変更せずに保存する
@@ -1233,15 +1233,14 @@ TeX ソースの先頭行に例えば，
 
 ### リリース情報 {#w889e1b2}
 
-[yatex: tags](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/tags) を参照．
+[Releases - yuuji/yatex](https://www.yatex.org/gitbucket/yuuji/yatex/releases) を参照．
 
 ### [ChangeLog](https://www.yatex.org/yatex-new.txt) {#n0cf386c}
 
-- [YaTeX Mercurial Repositories](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/)
-    - [コミットログ](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/shortlog/)
-    - [変更点](https://www.yatex.org/hgrepos/hgweb.cgi/yatex/file/tip/yatex.new)
-- [YaTeX Git Repositories](https://www.yatex.org/gitbucket/yuuji/yatex)
+- [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
+- [GitBucket - yuuji/yatex](https://www.yatex.org/gitbucket/yuuji/yatex)
     - [コミットログ](https://www.yatex.org/gitbucket/yuuji/yatex/commits/devel)
     - [変更点](https://www.yatex.org/gitbucket/yuuji/yatex/blob/devel/yatex.new)
-- [What's new in Japanese](https://www.yatex.org/yatex-new.txt)
-- [http://twilog.org/hiroseyuuji/search?word=YaTeX](http://twilog.org/hiroseyuuji/search?word=YaTeX)
+- [GitHub - hiroseyuuji/yatex: Yet Another LaTeX mode for Emacs](https://github.com/hiroseyuuji/yatex)
+    - [コミットログ](https://github.com/hiroseyuuji/yatex/commits/devel/)
+    - [変更点](https://github.com/hiroseyuuji/yatex/blob/master/yatex.new)
