@@ -25,7 +25,7 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 ### CTAN ミラーサイトの接続先候補に含まれる日本国内サイト {#u433cc1d}
 
-[https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) に接続先ミラーサイトの URI 一覧が記載されています．
+[https://ctan.org/mirrors](https://ctan.org/mirrors) や [https://ctan.org/mirrors/mirmon](https://ctan.org/mirrors/mirmon) や [CTAN:CTAN.sites](https://mirror.ctan.org/CTAN.sites) や [CTAN:README.mirrors](https://mirror.ctan.org/README.mirrors) や [ctan-mirrors.pl](https://svn.tug.org/texlive/trunk/Master/tlpkg/installer/ctan-mirrors.pl?view=markup) に接続先ミラーサイトの URI 一覧が記載されています．
 この接続先候補に含まれる日本国内サイトには次のものがあります．
 
 #### HTTPS {#HTTPS-CTAN-MIRROR}
