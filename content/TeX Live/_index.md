@@ -10,16 +10,16 @@ pukiwiki: "TeX Live"
 
 ## [TeX Live](https://www.tug.org/texlive/) {#n4073ab3}
 
-TeX Live は TeX のディストリビューションです．
-TeX の超巨大な集大成ともいえるもので，現在では国際的に最も普及している最新の TeX ディストリビューションです．
+TeX Live は TeX のディストリビューションです。
+TeX の超巨大な集大成ともいえるもので，現在では国際的に最も普及している最新の TeX ディストリビューションです。
 
 <strong>公式サイト</strong>
 
 - [TeX Live - TeX Users Group](https://www.tug.org/texlive/)
 - [The tex-live Archives](https://tug.org/pipermail/tex-live/)
 
-TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました．
-TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています．
+TeX Live 2010 以降は日本語対応のパッケージがマージされるようになり，現在では日本語の組版に必要な要素がすべて取り込まれました。
+TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
 
 ***
 
@@ -34,8 +34,9 @@ TeX Live には [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/)
 
 ### インストール {#w628bee6}
 
-TeX Live は OS ごとにインストール方法が異なります．
-それぞれの OS のインストール方法を参照してください．
+TeX Live は OS ごとにインストール方法が異なります。
+それぞれの OS のインストール方法を参照してください。
+日本語版のインストールマニュアルについては[日本語版『TeX Liveガイド』](https://github.com/wtsnjp/texlive-ja)を参照してください。
 
 TeX Live は年次ごとにバージョンが新しくなりますが，基本的に古い年次のものが既にインストールされていても，気にせずに新規インストールと同じ手順をとって構いません。
 
@@ -59,22 +60,22 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 ### TeX Live のサブセット {#p06f63c2}
 
-TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています．
-さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています．
+TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています。
+さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています。
 これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2025/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
-- scheme-full ： TeX Live に含まれるすべてのパッケージをインストールします．
-- scheme-basic ： [LaTeX](/LaTeX/) を使うために必要最小限のパッケージ (collection-basic + collection-latex) をインストールします．
-- scheme-small ： scheme-basic に [XeTeX](/XeTeX/)，[MetaPost](/MetaPost/) といくつかの言語の推奨パッケージを追加したもの．
-- scheme-medium ： scheme-small に欧州の主要言語のパッケージなどを追加したもの．
+- scheme-full ： TeX Live に含まれるすべてのパッケージをインストールします。
+- scheme-basic ： [LaTeX](/LaTeX/) を使うために必要最小限のパッケージ (collection-basic + collection-latex) をインストールします。
+- scheme-small ： scheme-basic に [XeTeX](/XeTeX/)，[MetaPost](/MetaPost/) といくつかの言語の推奨パッケージを追加したもの。
+- scheme-medium ： scheme-small に欧州の主要言語のパッケージなどを追加したもの。
 
-ここで挙げたスキームの例のうち，scheme-basic，scheme-small，scheme-medium には日本語の LaTeX 文書作成に必要なパッケージが含まれていません．
-日本語の LaTeX 文書を作成するためには scheme-full でインストールするか，各スキームでインストールした後に collection-langjapanese をインストールすることになります．
+ここで挙げたスキームの例のうち，scheme-basic，scheme-small，scheme-medium には日本語の LaTeX 文書作成に必要なパッケージが含まれていません。
+日本語の LaTeX 文書を作成するためには scheme-full でインストールするか，各スキームでインストールした後に collection-langjapanese をインストールすることになります。
 
-なお，TeX Live ベースの macOS 専用ディストリビューションである [MacTeX](/MacTeX/) は scheme-full に，[BasicTeX](/BasicTeX/) は scheme-small にそれぞれ対応します．
-また，Windows 向けの TeX Live インストーラ (install-tl-windows.exe) の Simple Install は scheme-full に対応します．
+なお，TeX Live ベースの macOS 専用ディストリビューションである [MacTeX](/MacTeX/) は scheme-full に，[BasicTeX](/BasicTeX/) は scheme-small にそれぞれ対応します。
+また，Windows 向けの TeX Live インストーラ (install-tl-windows.exe) の Simple Install は scheme-full に対応します。
 
 ### TeX Live に収録されるものとされないもの {#v97f014d}
 
@@ -92,10 +93,10 @@ TeX Live に収録されるのは，基本的には
 
 ### [Network Based Installer](https://www.tug.org/texlive/acquire-netinstall.html) {#tlnet}
 
-ネットワーク経由でのインストールは，以下のミラーサイトを利用してください．
-TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
-TeX Live は，ネットワーク経由でのインストールが推奨されています．
-ただし，ネットワーク経由ではうまくインストールできない場合があるので，その場合は ISO Image をダウンロードしてください．
+ネットワーク経由でのインストールは，以下のミラーサイトを利用してください。
+TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
+TeX Live は，ネットワーク経由でのインストールが推奨されています。
+ただし，ネットワーク経由ではうまくインストールできない場合があるので，その場合は ISO Image をダウンロードしてください。
 
 - <strong>HTTPS</strong>
     - JAIST 北陸先端科学技術大学院大学 (石川県能美市)
@@ -121,9 +122,9 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 
 ### [TeX Live ISO Images](https://www.tug.org/texlive/acquire-iso.html) {#iso}
 
-ネットワーク経由のインストールがうまくいかない場合は ISO Image をダウンロードしてください．
-TeX Live の ISO Image はサイズが大きいので，以下のミラーサイトを利用してください．
-TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます．
+ネットワーク経由のインストールがうまくいかない場合は ISO Image をダウンロードしてください。
+TeX Live の ISO Image はサイズが大きいので，以下のミラーサイトを利用してください。
+TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
 
 - <strong>HTTPS</strong>
     - JAIST 北陸先端科学技術大学院大学 (石川県能美市)
@@ -147,7 +148,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
-[TLContrib](/TLContrib/) は TeX Live の補完リポジトリです．
+[TLContrib](/TLContrib/) は TeX Live の補完リポジトリです。
 
 ### [Pretests](</TeX Live/pretest/>) <a id="pretest"></a> {#tfc3ba44}
 
@@ -163,14 +164,14 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 ### 関連リンク {#udd48b1b}
 
-- [日本語版『TeX Live ガイド』](https://www.tug.org/texlive/doc/texlive-ja/texlive-ja.pdf)
-- [https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
+- [日本語版『TeX Liveガイド』](https://github.com/wtsnjp/texlive-ja)
+- [「TeX Live」の検索結果（Q＆A） - Yahoo!知恵袋](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](https://qiita.com/tags/texlive)
 - [TeX Liveの記事一覧 | Zenn](https://zenn.dev/topics/texlive)
 
 #### リリース情報 {#k5761e9e}
 
-[TeX Live - TeX Users Group](https://www.tug.org/texlive/) の Current release を参照．
+[TeX Live - TeX Users Group](https://www.tug.org/texlive/) の Current release を参照。
 
 - \[[ViewVC\] Index of: texlive/tags](https://svn.tug.org/texlive/tags/)
     - [log](https://svn.tug.org/texlive/tags/?view=log)
