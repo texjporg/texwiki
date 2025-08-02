@@ -24,7 +24,7 @@ Org mode は
 
 - [Org mode for Emacs &ndash; Your Life in Plain Text](https://orgmode.org/)
 - [Org Mode - GNU Emacs Manual](https://www.gnu.org/software/emacs/manual/html_node/emacs/Org-Mode.html#Org-Mode)
-- [Org Mode (GNU Emacs Manual(Japanese Translation)): Org Mode](https://ayatakesi.github.io/emacs/26.1/html/TeX-Mode.html#TeX-Mode)
+- [Org Mode (GNU Emacs Manual(Japanese Translation)): Org Mode](https://ayatakesi.github.io/emacs/29.4/html/Org-Mode.html#Org-Mode)
 
 ***
 
@@ -46,20 +46,20 @@ M-x list-packages RET でリストを表示して org を選択
 
 ### 公式サイトのパッケージを使用する場合 {#vc647a74}
 
-パッケージを展開して名前を org にリネームして &#x7e;/.emacs.d/site-lisp に配置します。
+[emacs/org-mode.git - Emacs Org mode](https://cgit.git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags) のパッケージを使用する場合はアーカイブを展開して名前を org-mode にリネームして &#x7e;/.emacs.d/site-lisp に配置します。
 
 ```
 ~
 └─.emacs.d
     └─site-lisp
-        └─org
+        └─org-mode
             └─lisp
 ```
 
-&#x7e;/.emacs.d/init.el で load-path に ~/.emacs.d/site-lisp/org/lisp を追加します。
+&#x7e;/.emacs.d/init.el を編集して load-path に ~/.emacs.d/site-lisp/org-mode/lisp を追加します。
 
 ```
-(add-to-list 'load-path "~/.emacs.d/site-lisp/org/lisp")
+(add-to-list 'load-path "~/.emacs.d/site-lisp/org-mode/lisp")
 ```
 
 ## 設定例 {#y73c067b}
