@@ -29,7 +29,11 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
 
 ### お知らせ {#o7c8c524}
 
-- LyX 2.5 で日本語入力のかな漢字変換の際に表示される文字列が既存の文章の文字列を上書きして表示していた（[OverTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-16/index.html)）のが上書きせずに表示するようになりました（[OnTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-6/index.html)）。 --&gt; [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)、[LyX 2.5 アルファ版がリリースされました。日本語入力関連で大きく修正が入っているので、日本語話者の方々にぜひテストをお願いしたく（テスター不足（涙](https://x.com/twit_uji/status/1931264364432207942)、[Introducing OnTheSpot-style input method editing &amp; IME integration](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
+- LyX 2.5 で日本語入力のかな漢字変換の際に表示される文字列が既存の文章の文字列を上書きして表示していた（[OverTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-16/index.html)）のが上書きせずに表示するように変更されました（[OnTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-6/index.html)）。
+    - [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)
+    - [明星大学学術機関リポジトリ - LyX におけるOnTheSpot様式の実装](https://meisei.repo.nii.ac.jp/records/2000282)
+    - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
+    - [LyX 2.5 beta1 が出ました．](https://x.com/twit_uji/status/1945182779890917411)
 
 ### 動作環境 {#xd7ee343}
 
@@ -79,27 +83,27 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250alpha1-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250beta1-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="https://git.lyx.org/gitweb/?p=lyx.git;a=blob_plain;f=lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-250alpha1-Installer-1-x64.exe</ins><br>
+　　　　　　 <ins>LyX-250beta1-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Downloads<br>
-　　　　サイズ:　　　　　　　　57.9 MB (60,721,035 バイト)<br>
-　　　　ディスク上　　　　　　57.9 MB (60,723,200 バイト)<br>
+　　　　サイズ:　　　　　　　　57.8 MB (60,710,264 バイト)<br>
+　　　　ディスク上　　　　　　57.8 MB (60,710,912 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2025年6月6日、00:00:00<br>
-　　　　更新日時:　　　　　　2025年6月6日、00:00:00<br>
-　　　　アクセス日時:　　　　2025年6月6日、00:00:00<br>
+　　　　作成日時:　　　　　　2025年7月16日、00:00:00<br>
+　　　　更新日時:　　　　　　2025年7月16日、00:00:00<br>
+　　　　アクセス日時:　　　　2025年7月16日、00:00:00<br>
 
 <br>
 
