@@ -178,7 +178,7 @@ pukiwiki: "TeX Live/Windows"
 
 を実行してヘルプを参照してください。
 
-- [https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.3](https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.3)
+- [https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.3](https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.3)
 - [TexLiveのインストールが上手くいかない時の解決策(Windows)](https://qiita.com/HayatoF/items/ac3bf4d64fb9a79a9f8d)
 - [WindowsにTeX Live 2024をインストールした。isoイメージをマウントしてinstall-tl-windows.batを実行したが、GUIがエラーを出す。結局、コマンドプロンプトで<br>> install-tl-windows.bat -no-gui<br>として、上手くインストールできた。](https://x.com/HelosianAgent/status/1768959460737995008)
 
