@@ -81,7 +81,7 @@ Ghostscript は PostScript/PDF インタプリタです。
 
 MacTeX には「一度インストールすると、完全なアンインストールは難しい」という性質があります。macOS に TeX 環境を構築する手段には、他にも TeX Live 公式インストーラを利用する方法等があります。MacTeX を利用するべきか、TeX Live 公式インストーラを利用するべきか、それ以外の方法を利用するべきかは <strong>MacTeX をインストールする前に</strong>よく考えて判断してください。
 
-- TeX Live 公式インストーラを用いる方法については [TeX Live/Mac](</TeX Live/Mac/>) または [TeX Live ガイド](https://tug.org/texlive/doc/texlive-ja/texlive-ja.pdf#subsubsection.3.1.2)を参照してください
+- TeX Live 公式インストーラを用いる方法については [TeX Live/Mac](</TeX Live/Mac/>) または [日本語版『TeX Liveガイド』](https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2)を参照してください
 - 参考：[MacTeX をおすすめできる場合とそうでない場合（私見） | ラング・ラグー](https://blog.wtsnjp.com/2020/07/07/about-mactex/)
 
 ### インストール {#t244993f}
