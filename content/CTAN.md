@@ -154,5 +154,6 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 ### 関連リンク {#wc81d3dd}
 
+- [CTAN - CTAN daily syncs as git repository](https://git.texlive.info/CTAN/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
 - [http://www.ring.gr.jp/ring/newfiles/CTAN.html](http://www.ring.gr.jp/ring/newfiles/CTAN.html)
