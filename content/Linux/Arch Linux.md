@@ -31,11 +31,12 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 
 - [https://wiki.archlinux.org/index.php/TeX_Live](https://wiki.archlinux.org/index.php/TeX_Live)
 - [https://wiki.archlinux.jp/index.php/TeX_Live](https://wiki.archlinux.jp/index.php/TeX_Live)
-- [https://www.archlinux.jp/packages/?q=texlive](https://www.archlinux.jp/packages/?q=texlive)
-- [https://www.archlinux.jp/groups/x86_64/texlive/](https://www.archlinux.jp/groups/x86_64/texlive/)
-- [https://www.archlinux.jp/groups/x86_64/texlive-lang/](https://www.archlinux.jp/groups/x86_64/texlive-lang/)
-- [https://www.archlinux.org/packages/?name=texlive-langjapanese](https://www.archlinux.org/packages/?name=texlive-langjapanese)
-- [https://www.archlinux.org/packages/?name=texlive-latexextra](https://www.archlinux.org/packages/?name=texlive-latexextra)
+- [https://archlinux.jp/packages/?q=texlive](https://archlinux.jp/packages/?q=texlive)
+- [https://archlinux.jp/groups/x86_64/texlive/](https://archlinux.jp/groups/x86_64/texlive/)
+- [https://archlinux.jp/groups/x86_64/texlive-lang/](https://archlinux.jp/groups/x86_64/texlive-lang/)
+- [https://archlinux.org/packages/?name=texlive-langjapanese](https://archlinux.org/packages/?name=texlive-langjapanese)
+- [https://archlinux.org/packages/?name=texlive-latexextra](https://archlinux.org/packages/?name=texlive-latexextra)
+- [https://archlinux.org/packages/?name=texlive-luatex](https://archlinux.org/packages/?name=texlive-luatex)
 
 通常は texlive-langjapanese と texlive をインストールします．
 
