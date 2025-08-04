@@ -9,7 +9,7 @@ pukiwiki: "Linux/Arch Linux"
 
 [Linux](/Linux/) > Arch Linux/Manjaro Linux
 
-## [Arch Linux](https://www.archlinux.org/)/[Manjaro Linux](https://manjaro.org/) {#e64e7986}
+## [Arch Linux](https://archlinux.org/)/[Manjaro Linux](https://manjaro.org/) {#e64e7986}
 
 Arch Linux はシンプルで軽量な Linux ディストリビューションです．
 
@@ -31,9 +31,9 @@ Manjaro Linux は Arch Linux ベースのユーザーフレンドリーな Linux
 
 - [https://wiki.archlinux.org/index.php/TeX_Live](https://wiki.archlinux.org/index.php/TeX_Live)
 - [https://wiki.archlinux.jp/index.php/TeX_Live](https://wiki.archlinux.jp/index.php/TeX_Live)
-- [https://archlinux.jp/packages/?q=texlive](https://archlinux.jp/packages/?q=texlive)
 - [https://archlinux.jp/groups/x86_64/texlive/](https://archlinux.jp/groups/x86_64/texlive/)
 - [https://archlinux.jp/groups/x86_64/texlive-lang/](https://archlinux.jp/groups/x86_64/texlive-lang/)
+- [https://archlinux.jp/packages/?q=texlive](https://archlinux.jp/packages/?q=texlive)
 - [https://archlinux.org/packages/?name=texlive-langjapanese](https://archlinux.org/packages/?name=texlive-langjapanese)
 - [https://archlinux.org/packages/?name=texlive-latexextra](https://archlinux.org/packages/?name=texlive-latexextra)
 - [https://archlinux.org/packages/?name=texlive-luatex](https://archlinux.org/packages/?name=texlive-luatex)
