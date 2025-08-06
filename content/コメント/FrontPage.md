@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXiFy-IDEA 0.11.0](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-08-06 (水) 11:31:25
 - [japanese-otf 2025-07-24](https://okumuralab.org/tex/mod/forum/discuss.php?d=3979) -- [OTF](/OTF/) 2025-07-26 (土) 21:57:15
 - [LuaTeX-ja 20250723.0](https://github.com/luatexja/luatexja) -- [LuaTeX-ja](/LuaTeX-ja/) 2025-07-23 (水) 23:59:04
 - [TexText 1.12.0](https://textext.github.io/textext/) -- [Inkscape](/Inkscape/) 2025-07-18 (金) 18:30:34
