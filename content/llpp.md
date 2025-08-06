@@ -11,12 +11,11 @@ llpp は [MuPDF](/MuPDF/) ベースの PDF ビューアです．
 
 SyncTeX にも対応しています．
 
-- [https://repo.or.cz/llpp.git](https://repo.or.cz/llpp.git)
+- [https://repo.or.cz/w/llpp.git](https://repo.or.cz/w/llpp.git)
 
 ### インストール {#e6b097fa}
 
-- [https://launchpad.net/~alex-p/+archive/ubuntu/llpp](https://launchpad.net/~alex-p/+archive/ubuntu/llpp)
-- [https://packages.gentoo.org/packages/app-text/llpp](https://packages.gentoo.org/packages/app-text/llpp)
+- [https://aur.archlinux.org/packages/llpp-git](https://aur.archlinux.org/packages/llpp-git)
 
 ### 使い方 {#q4f7d920}
 
@@ -36,6 +35,7 @@ Options:
   -css <path>               Set path to the style sheet to use with EPUB/HTML
   -origin <origin>          <undocumented>
   -no-title                 ignore document title
+  -dcf <path>               <undocumented>
   -layout-height <height>   layout height html/epub/etc (-1, 0, N)
   -help                     Display this list of options
   --help                    Display this list of options
