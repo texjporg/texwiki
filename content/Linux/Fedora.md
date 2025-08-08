@@ -30,6 +30,8 @@ Fedora Workstation は、ノート PC やデスクトップ向けに洗練され
 - [https://packages.fedoraproject.org/pkgs/texlive/](https://packages.fedoraproject.org/pkgs/texlive/)
     - [https://packages.fedoraproject.org/pkgs/texlive/texlive-scheme-full/](https://packages.fedoraproject.org/pkgs/texlive/texlive-scheme-full/)
     - [https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-langjapanese/](https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-langjapanese/)
+    - [https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-latexextra/](https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-latexextra/)
+    - [https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-luatex/](https://packages.fedoraproject.org/pkgs/texlive/texlive-collection-luatex/)
 
 フルインストールする場合は
 
