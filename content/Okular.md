@@ -9,7 +9,7 @@ pukiwiki: "Okular"
 
 ## [Okular](https://okular.kde.org/) {#x3070edc}
 
-Okular は KDE に搭載されている，PDF ファイルが表示可能なドキュメント・ビューアです．
+Okular は KDE Plasma に搭載されている，PDF ファイルが表示可能なドキュメント・ビューアです．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 
