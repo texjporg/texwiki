@@ -19,17 +19,13 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
-| [Zotero](/Zotero/) | Windows, macOS, Linux, [iOS](https://apps.apple.com/jp/app/zotero/id1513554812), [Android (ベータ版)](https://play.google.com/store/apps/details?id=org.zotero.android) | [Zotero - TeX Wiki](/Zotero/) 参照 |
-| [JabRef](/JabRef/)  | Windows, macOS, Linux<br>Java で動作 | [JabRef - TeX Wiki](/JabRef/) 参照 |
+| [Zotero](https://www.zotero.org/) | Windows, macOS, Linux, [iOS](https://apps.apple.com/jp/app/zotero/id1513554812), [Android](https://play.google.com/store/apps/details?id=org.zotero.android) | [Zotero - TeX Wiki](/Zotero/) 参照 |
+| [JabRef](https://www.jabref.org/)  | Windows, macOS, Linux<br>Java で動作 | [JabRef - TeX Wiki](/JabRef/) 参照 |
 | [BibDesk](https://bibdesk.sourceforge.io/)  | macOS | [BibDesk - TeX Wiki](/BibDesk/) 参照 |
 | [Citations](https://apps.gnome.org/Citations/) |  GNOME  | GNOME 用の文献管理ソフト． |
-| [KBibTeX](https://apps.kde.org/kbibtex/) |  KDE  | KDE 用の文献管理ソフト． |
-| [Tellico](https://tellico-project.org/)  | KDE Frameworks 5, Qt5, libxml2, libxslt |  KDE用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
-| [Xfbib](https://goodies.xfce.org/projects/applications/xfbib) |  Xfce  | Xfce 用のLightweight な BibTeX エディタ． |
-| [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) | UNIX | .bib ファイルの管理ソフト．[CTAN](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
-| [Pybliographer](https://gitlab.gnome.org/Archive/pybliographer) | gtk python | 多機能な書誌データベース管理ツール．PubMedなど文献データベースにアクセスし自動検索・ダウンロード機能，著者別HTMLを出力など機能がてんこ盛り． |
+| [Tellico](https://tellico-project.org/)  | KDE Plasma |  KDE Plasma 用の蔵書管理ソフト．データファイルは独自の形式だが，bibファイルを含むいろいろな形式をインポートエキスポートできる． |
+| [BibTool](http://www.gerd-neugebauer.de/software/TeX/BibTool/index.en.html) | UNIX | .bib ファイルの管理ソフト．[CTAN:biblio/bibtex/utils/bibtool/](https://mirror.ctan.org/biblio/bibtex/utils/bibtool/) |
 | [Mendeley](https://www.mendeley.com/)  | Windows, macOS, Linux | 文献管理ソフト |
-| [QRef](https://www.vector.co.jp/soft/winnt/edu/se498193.html) | Windows, macOS | フリーウェア．文献をインターネット経由で収集，データベース管理，文献引用を自動化．[LaTeXのサポート](http://hp.vector.co.jp/authors/VA011272/html/latex.htm) |
 
 ## bib ファイルの作成編集支援ツール {#t7b99d07}
 
