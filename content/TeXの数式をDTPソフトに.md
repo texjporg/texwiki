@@ -24,7 +24,7 @@ TeX で無指定で使われるフォントは，本文は Computer Modern Roman
 
 Computer Modern フォントの OpenType 形式が [CTAN:fonts/cm/ps-type1/bakoma/otf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/otf/) から，Latin Modern フォントの OpenType 形式が [CTAN:fonts/lm/fonts/opentype/public/lm/](https://mirror.ctan.org/fonts/lm/fonts/opentype/public/lm/) から入手できます。
 
-TrueType 形式の Computer Modern フォントの一つである BaKoMa フォントは，例えば [CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/) や [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh) から入手できます。
+TrueType 形式の Computer Modern フォントの一つである BaKoMa フォントは，例えば [CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/) から入手できます。
 Type 1 フォント形式の一つである PFB 形式のフォントは TeX に標準で入っています。
 $TEXMF/fonts/type1/{bluesky,bakoma}/\*.pfb を検索してください。
 
@@ -156,7 +156,7 @@ Windows 版なら大丈夫なのに残念です。
 Mac 版でも，Illustrator から EPS で保存したものは大丈夫です。
 PDF にしたければ EPS で保存して Adobe Acrobat Distiller で変換すればいいでしょう。
 
-念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント： [bakoma.lzh](ftp://akagi.ms.u-tokyo.ac.jp/pub/TeX/font/bakoma/bakoma.lzh)）でも試してみました。
+念のため TrueType 形式の Computer Modern フォント（BaKoMa フォント：[CTAN:fonts/cm/ps-type1/bakoma/ttf/](https://mirror.ctan.org/fonts/cm/ps-type1/bakoma/ttf/)）でも試してみました。
 「テキストエディット」では使えましたが，Illustrator ではフォントリストには出るけれども表示できません。
 
 ## WMF/EMF に変換する方法 {#b65fa32a}
