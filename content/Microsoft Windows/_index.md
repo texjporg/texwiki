@@ -188,7 +188,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - <strong>[SumatraPDF](/SumatraPDF/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
 - [Evince](/Evince/)：GNOME 標準の PDF ビューア
-- [Okular](/Okular/)：KDE 標準の PDF ビューア
+- [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
 - [MuPDF](/MuPDF/)：軽量な PDF ビューア．SumatraPDF などで使われています．
