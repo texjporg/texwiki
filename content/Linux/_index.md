@@ -219,7 +219,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 単独の LaTeX 用 PDF プレビューアとしては
 
 - [Evince](/Evince/)：GNOME 標準の PDF ビューア
-- [Okular](/Okular/)：KDE 標準の PDF ビューア
+- [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
