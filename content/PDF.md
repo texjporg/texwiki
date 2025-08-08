@@ -51,7 +51,9 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 
 広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
 
-- [CubePDF](https://www.cube-soft.jp/cubepdf/) &lt;-- [XユーザーのMana ･:\*+さん：「CubePDF、買い物ポケットとかいうマルウェアまがいの拡張機能を強制インストールするので絶対に導入してはいけません。アンインストールしても永遠に残り続け、ブラウザを立ち上げると強制的に余計な広告が表示されます」/ X](https://x.com/cordimana97/status/1812310063845163407)
+- [CubePDF](https://www.cube-soft.jp/cubepdf/)
+    - [XユーザーのMana ･:\*+さん：「CubePDF、買い物ポケットとかいうマルウェアまがいの拡張機能を強制インストールするので絶対に導入してはいけません。アンインストールしても永遠に残り続け、ブラウザを立ち上げると強制的に余計な広告が表示されます」/ X](https://x.com/cordimana97/status/1812310063845163407)
+    - [「CubePDF」の提供を続けたくて。倒産寸前のフリーソフト会社を、開発者自ら再建させるまで【フォーカス】](https://levtech.jp/media/article/focus/detail_680/)
 - [PDFCreator](https://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
 - [BullZip PDF Printer Community Edition](https://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
 - [pdf995](https://www.pdf995.com/)（[ソフト関連覚え書き「pdf995」](https://susshiblog.blog.ss-blog.jp/2005-07-29) を参照）
