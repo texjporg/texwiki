@@ -27,6 +27,8 @@ openSUSE Tumbleweed はローリングリリースモデルで最新の Linux �
 
 - [https://software.opensuse.org/package/texlive-scheme-full](https://software.opensuse.org/package/texlive-scheme-full)
 - [https://software.opensuse.org/package/texlive-collection-langjapanese](https://software.opensuse.org/package/texlive-collection-langjapanese)
+- [https://software.opensuse.org/package/texlive-collection-latexextra](https://software.opensuse.org/package/texlive-collection-latexextra)
+- [https://software.opensuse.org/package/texlive-collection-luatex](https://software.opensuse.org/package/texlive-collection-luatex)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show/Publishing:TeXLive)
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 
