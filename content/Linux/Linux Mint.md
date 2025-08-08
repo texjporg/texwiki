@@ -37,6 +37,8 @@ Ubuntu は Ubuntu コミュニティにより開発されているオペレー�
 - [https://packages.debian.org/search?keywords=texlive-lang-japanese](https://packages.debian.org/search?keywords=texlive-lang-japanese)
 - [https://packages.ubuntu.com/ja/texlive-latex-extra](https://packages.ubuntu.com/ja/texlive-latex-extra)
 - [https://packages.debian.org/search?keywords=texlive-latex-extra](https://packages.debian.org/search?keywords=texlive-latex-extra)
+- [https://packages.ubuntu.com/ja/texlive-luatex](https://packages.ubuntu.com/ja/texlive-luatex)
+- [https://packages.debian.org/search?keywords=texlive-luatex](https://packages.debian.org/search?keywords=texlive-luatex)
 - [https://packages.ubuntu.com/ja/xzdec](https://packages.ubuntu.com/ja/xzdec)
 - [https://packages.debian.org/search?keywords=xzdec](https://packages.debian.org/search?keywords=xzdec)
 - [tex-live in Launchpad](https://launchpad.net/tex-live)
