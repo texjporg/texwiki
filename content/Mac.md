@@ -65,7 +65,7 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
 
 - 統合環境（TeX, LaTeX に特化した機能を備えています）
     - <strong>[TeXShop](/TeXShop/)</strong>
-        - MacTeX に標準で付属しています。
+        - MacTeX の GUI Applications に収録されています。
     - <strong>[TeXstudio](/TeXstudio/)</strong>
         - 【注意】組み込みの PDF ビューアで日本語が表示されない場合は poppler-data を適切な場所に配置してください。(→ [TeXstudio#組み込みの PDF ビューアに日本語を表示させる](/TeXstudio/#o84f3d5c))
     - <strong>[LyX](/LyX/)</strong>
@@ -92,7 +92,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 
 - <strong>[Skim](/Skim/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
 - [Evince](/Evince/)：GNOME 標準の PDF ビューア
-- [Okular](/Okular/)：KDE 標準の PDF ビューア
+- [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
