@@ -27,8 +27,8 @@ Adobe より，元となる PDF の仕様書が公開されています (ISO の
 - [PDF Reference and Adobe Extensions to the PDF Specification](https://www.adobe.com/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
-Windows 11/10 と macOS では標準で PDF 出力が可能です．
-Windows 11/10 では Microsoft Edge で閲覧可能になるなど，PDF 環境は整ってきています．
+Windows 11 と macOS では標準で PDF 出力が可能です．
+Microsoft Edge やプレビューなど，PDF 閲覧環境も整っています．
 
 ***
 
@@ -40,19 +40,20 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 ### PDF を扱うソフトウェア {#o7e2223a}
 
-Windows 11/10 と macOS では，プリント機能を持ったどんなアプリケーションからも，
+Windows 11 と macOS では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
 また，PostScript や PDF などを扱う，Ghostscript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
 
-PDF を出力するソフトウェアをフリーウェア（無料）として提供しているものが多数あります．
+PDF を出力するソフトウェアを広告なしのフリーウェア（無料）として提供しているものが多数あります．
 
-- [PDF24 Creator](https://www.pdf24.org/en/)
-- [CutePDF Writer](https://www.acrosoftware.com/Products/CutePDF/writer.asp)
+- [PDF24 Creator](https://www.pdf24.org/en/) 100% Free | 100% Free of spyware
+- [CutePDF Writer](https://www.acrosoftware.com/Products/CutePDF/writer.asp) FREE software for commercial and non-commercial use!  No Adware, No Malware!
 
 広告付きのフリーウェア（[アドウェア](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)）として評価されたり議論されたりしているものも多数あります．
 
 - [CubePDF](https://www.cube-soft.jp/cubepdf/)
-    - [XユーザーのMana ･:\*+さん：「CubePDF、買い物ポケットとかいうマルウェアまがいの拡張機能を強制インストールするので絶対に導入してはいけません。アンインストールしても永遠に残り続け、ブラウザを立ち上げると強制的に余計な広告が表示されます」/ X](https://x.com/cordimana97/status/1812310063845163407)
+    - [ビューワーのCubepdfを窓の杜からインストールしたら<br>買い物ポケット、ESTARTなるGMOのアプリが勝手にインストールされた<br><br>改めて最初から確認したけど、同意するチェックが無かったぞ<br><br>これマルウェアで犯罪じゃなかったっけ？<br>防ぎようがないorz](https://x.com/otaka_ss_mold/status/1778288399293767873)
+    - [CubePDF、買い物ポケットとかいうマルウェアまがいの拡張機能を強制インストールするので絶対に導入してはいけません。<br><br>アンインストールしても永遠に残り続け、ブラウザを立ち上げると強制的に余計な広告が表示されます](https://x.com/cordimana97/status/1812310063845163407)
     - [「CubePDF」の提供を続けたくて。倒産寸前のフリーソフト会社を、開発者自ら再建させるまで【フォーカス】](https://levtech.jp/media/article/focus/detail_680/)
 - [PDFCreator](https://www.pdfforge.org/)（[Wikipedia.en:PDFCreator#Adware_toolbar_controversy](https://en.wikipedia.org/wiki/PDFCreator%23Adware_toolbar_controversy) を参照）
 - [BullZip PDF Printer Community Edition](https://www.bullzip.com/products/pdf/download.php#CommunityEdition)（[Wikipedia.en:Bullzip_PDF_Printer](https://en.wikipedia.org/wiki/Bullzip_PDF_Printer) を参照）
@@ -74,6 +75,9 @@ PDF を出力するソフトウェアをフリーウェア（無料）として�
 
 - [JUST PDF](https://www.justsystems.com/jp/products/justpdf/)
     ([ジャストシステム](https://www.justsystems.com/jp/))
+
+- [PDF-XChangeシリーズ](https://www.pdf-xchange.jp/)
+    ([ジャングル](https://www.junglejapan.com/))
 
 - [UPDF](https://updf.com/jp/)
     ([Superace Software Technologies](https://superace.com/))
@@ -132,7 +136,7 @@ Web 用に最適化を行うと，Web サーバーからページ単位で PDF �
 
 ### PDF ビューア {#zd559492}
 
-Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの [PDFium](https://pdfium.googlesource.com/pdfium/) がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows 11/10, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
+Microsoft Edge が標準で PDF の描画をサポートしていたり，[Google Chrome](</Google Chrome/>) で使用されている PDF レンダリングエンジンの [PDFium](https://pdfium.googlesource.com/pdfium/) がオープンソース化されたり，ブラウザで PDF を描画させる [PDF.js](https://github.com/mozilla/pdf.js) という JavaScript ライブラリが存在するなど，今では PDF を表示する環境は様々です．Windows, macOS, Linux などのデスクトップ環境から Android 端末や iOS 端末などのモバイル環境まで，様々な環境で PDF を標準で，あるいは簡単に表示できます．
 
 [Adobe Acrobat Reader](</Adobe Acrobat Reader/>) が有名ですが，ほかにも様々あります：
 
@@ -224,6 +228,5 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 ### 関連リンク {#j6d79d4c}
 
-- [PDF 2.0 でドキュメントを次世代のステージへ](https://blogs.adobe.com/creativestation/taking-documents-to-the-next-level-with-pdf-2-0)
-- [今さら聞けない Adobe Acrobat &amp; PDF](http://m-school.biz/dev/acrobat-pdf/)
+- [PDF 2.0 でドキュメントを次世代のステージへ](https://blog.adobe.com/jp/publish/2017/08/30/taking-documents-to-the-next-level-with-pdf-2-0)
 - [PDF フォーマット](https://azelpg.gitlab.io/azsky2/note/prog/pdf/index.html)
