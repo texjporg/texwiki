@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXiFy-IDEA 0.11.2](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-08-11 (月) 07:10:44
 - [LaTeX Workshop 10.10.1](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-08-07 (木) 14:07:24
 - [TeXiFy-IDEA 0.11.1](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-08-06 (水) 11:31:25
 - [japanese-otf 2025-07-24](https://okumuralab.org/tex/mod/forum/discuss.php?d=3979) -- [OTF](/OTF/) 2025-07-26 (土) 21:57:15
