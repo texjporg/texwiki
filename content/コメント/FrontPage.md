@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.10.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-08-14 (木) 14:30:14
 - [原ノ味フォント / Harano Aji Fonts 20250811](https://github.com/trueroad/HaranoAjiFonts/releases/tag/20250811) -- [原ノ味フォント](</原ノ味フォント/>) 2025-08-13 (水) 22:00:23
 - [TeXShop 5.54](https://pages.uoregon.edu/koch/texshop/index.html) -- [TeXShop](/TeXShop/) 2025-08-13 (水) 06:39:52
 - [TeXiFy-IDEA 0.11.2](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-08-11 (月) 07:10:44
