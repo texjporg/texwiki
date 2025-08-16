@@ -14,6 +14,7 @@ Papers は GNOME デスクトップ用のドキュメントビューアーです
 Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Books アーカイブ (CBR, CBT, CBZ, CB7)。
 
 - [Papers – GNOMEアプリ](https://apps.gnome.org/ja/Papers/)
+- [GNOMEへようこそ – Papers](https://welcome.gnome.org/ja/app/Papers/)
 - [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
     - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン 46.0 で Evince から Papers に名称変更
     - [Drop Synctex support](https://gitlab.gnome.org/GNOME/papers/-/commit/59409c2f18137ea794a21041b0a1a71367f255ed) &lt;-- バージョン 46.0 で SyncTeX をサポート対象外に
