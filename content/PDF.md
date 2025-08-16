@@ -61,6 +61,7 @@ PDF を出力するソフトウェアを広告なしのフリーウェア（無�
 
 有償のソフトウェアも様々な価格帯で多数あります．
 
+- [Amazon.co.jp PDFソフトの売れ筋ランキング](https://www.amazon.co.jp/gp/bestsellers/software/11047021/ref=pd_zg_hrsr_software)
 - [Adobe Acrobat](https://www.adobe.com/jp/acrobat.html)
     ([Adobe](https://www.adobe.com/jp/))
 
