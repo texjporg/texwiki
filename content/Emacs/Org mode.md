@@ -33,7 +33,7 @@ Org mode は
 ## インストール {#l69ff892}
 
 Org mode は Emacs に標準で含まれています。
-Emacs 30.1 の場合は [バージョン 9.7.11](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-30.1#n12) ([2024-08-23](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.7.11)) です。
+Emacs 30.2 の場合は [バージョン 9.7.11](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-30.2#n12) ([2024-08-23](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.7.11)) です。
 最新版を使いたい場合は以下の手順を踏みます。
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
