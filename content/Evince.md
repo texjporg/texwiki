@@ -15,7 +15,7 @@ Evince は PDF ファイルが表示可能なドキュメントビューアー�
 PS, EPS ファイルの表示はデフォルトで無効化されているため PS, EPS ファイルを表示するには PS, EPS ファイルの表示を有効化してビルドされた Evince が必要です。
 
 - [ドキュメントビューアー – GNOMEアプリ](https://apps.gnome.org/ja/Evince/)
-- [Apps/Evince – GNOME Wiki Archive](https://wiki.gnome.org/Apps/Evince)
+- [GNOMEへようこそ – ドキュメントビューアー](https://welcome.gnome.org/ja/app/Evince/)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
 - [Topics tagged evince](https://discourse.gnome.org/tags/c/applications/7/evince)
 - [Search results for &#39;evince&#39; - GNOME Discourse](https://discourse.gnome.org/search?q=evince)
