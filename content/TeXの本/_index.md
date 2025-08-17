@@ -111,6 +111,8 @@ TeX や LaTeX に関する本の紹介です．
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW)』
     （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
     - [サポートページ](https://lab.miz-ar.info/implementing-tex-lang/)
+- [IMP AI・セキュリティ研究所](https://note.com/imp_aisec_lab)『[情報系論文はLaTeXで書くよ 情報系博士の日常](https://www.amazon.co.jp/%E6%83%85%E5%A0%B1%E7%B3%BB%E8%AB%96%E6%96%87%E3%81%AFLATEX%E3%81%A7%E6%9B%B8%E3%81%8F%E3%82%88-%E6%83%85%E5%A0%B1%E7%B3%BB%E5%8D%9A%E5%A3%AB%E3%81%AE%E6%97%A5%E5%B8%B8-IMP-AI%E3%83%BB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E7%A0%94%E7%A9%B6%E6%89%80-ebook/dp/B0F4SVGZ24/)』
+    （2025年04月14日Kindle版発売，税込 &yen;0）
 
 #### 2024年 {#year2024}
 
