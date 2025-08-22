@@ -389,7 +389,7 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 - [Emacs Lisp 入門の Texinfo の和訳](http://www.math.s.chiba-u.ac.jp/~matsu/lisp/emacs-lisp-intro-jp_toc.html)
 - [Emacs Lisp てほどき (PDF)](http://www.oki-osk.jp/esc/lecture/emacslisp.pdf)
 - [スクリプト言語としてのEmacs Lisp](http://cx4a.org/pub/emacs-lisp-for-scripting.ja.html)
-- [emacsでtexの不要なファイルを適当に削除する方法](http://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
+- [emacsでtexの不要なファイルを適当に削除する方法](https://web.archive.org/web/20250606023210/https://blog.goo.ne.jp/koyusoma5102/e/3741fbda5033eb6a46f3474d4626554a)
 - [Emacs JP](http://emacs-jp.github.com/)
 - [emacs-jp/emacs-jp.github.com · GitHub](https://github.com/emacs-jp/emacs-jp.github.com)
 - [Emacs Lisp TIPS](https://sci.nao.ac.jp/MEMBER/zenitani/elisp-j.html)
