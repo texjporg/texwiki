@@ -79,7 +79,7 @@ Unicode を使用して多言語 PDF ファイルを作成する場合は，[Lua
     - lualatex: tex → pdf
     - xelatex: tex (→ xdv) → pdf
 1. tex → dvi → pdf
-    - platex→dvipdfmx (現在日本で最も主流)
+    - platex→dvipdfmx (現在日本で最も主流) --&gt; [pLaTeX 入稿 lang:ja - 検索 / X](https://x.com/search?q=pLaTeX%20%E5%85%A5%E7%A8%BF%20lang%3Aja&src=typed_query&f=live)
     - uplatex→dvipdfmx (現在日本で主流)
 1. tex → dvi → ps → pdf
     - platex/uplatex などで DVI を，dvips で DVI→PS，ps2pdf (GhostScript) か "Adobe Acrobat Distiller" で ps → pdf
@@ -118,7 +118,7 @@ Adobe 製品は，なるべく最新のアップデートを適用しておき�
 
 [Windowsで既定のプリンターを設定する](https://support.microsoft.com/ja-jp/windows/windows%E3%81%A7%E6%97%A2%E5%AE%9A%E3%81%AE%E3%83%97%E3%83%AA%E3%83%B3%E3%82%BF%E3%83%BC%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B-e10cf8b8-e596-b102-bf84-c41022b5036f) を参照して
 Adobe Acrobat を通常使うプリンターとして設定することができます．
-設定から 「Bluetooth とデバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
+「スタート」 → 「設定」 → 「Bluetooth とデバイス」 → 「プリンターとスキャナー」をクリックして［プリンターとスキャナー］画面を表示します．
 ［プリンターとスキャナー］の「Windows で通常使うプリンターを管理する」をオフに変更し，「Adobe PDF」プリンターアイコンをクリックして
 「管理」→「既定に設定」します．
 
