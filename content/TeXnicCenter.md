@@ -992,8 +992,8 @@ dvipdfmx で PDF ファイルを作成する場合は，プロファイルを La
 
 - [Texnic center and Adobe Acrobat DC, again](https://tex.stackexchange.com/questions/618616/texnic-center-and-adobe-acrobat-dc-again)
 - [TeXnicCenter &amp; Adobe Reader DC](https://tex.stackexchange.com/questions/250472/texniccenter-adobe-reader-dc/)
-- [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その２](http://blog.goo.ne.jp/xmldtp/e/6c445d6fca39c15d20103bb28264384a)
-- [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その１](http://blog.goo.ne.jp/xmldtp/e/3694c7b9cef534f3555b1bc41a96b5de)
+- [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その２](https://web.archive.org/web/20170922070755/https://blog.goo.ne.jp/xmldtp/e/6c445d6fca39c15d20103bb28264384a)
+- [WindowsでTeXをeclipseみたいな感じで作れるTeXnicCenter　その１](https://web.archive.org/web/20170922070749/https://blog.goo.ne.jp/xmldtp/e/3694c7b9cef534f3555b1bc41a96b5de)
 - [TexnicCenter2.0の日本語使用について](https://okumuralab.org/tex/mod/forum/discuss.php?d=794)
 - [工大院生の学生メモ : Texniccenter](http://blog.livedoor.jp/gastttt3678/archives/2846954.html)
 - [Newest &#39;texniccenter&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/texniccenter)
