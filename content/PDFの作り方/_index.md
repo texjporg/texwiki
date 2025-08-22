@@ -55,9 +55,7 @@ PDF へ出力するための無償の仮想プリンタが多数あります：
 [Google Chrome](</Google Chrome/>) などのブラウザは，ウェブページを PDF で保存する機能を持っています．
 このため，HTML で文書を書いておけば，手軽に PDF 生成が可能です．
 
-いちいちブラウザを立ち上げたくない場合でも，[wkhtmltopdf](https://wkhtmltopdf.org/) などを使い，PDF の生成が可能です．wkhtmltopdf は Qt Webkit と呼ばれる，レンダリング・エンジンを利用しています．Qt Webkit の元となる [Webkit](https://www.webkit.org/) は様々なブラウザの中核となるレンダリング・エンジンです．
-
-wkhtmltopdf の他にも，いくつかのディスプレイへの出力を必要としない，"ヘッドレス"なブラウザが存在します。[PhantomJS](https://phantomjs.org/) も Qt Webkit を利用したヘッドレスブラウザで，JavaScript で利用可能です．
+いちいちブラウザを立ち上げたくない場合でも，[grover](https://github.com/Studiosity/grover) や [ferrum_pdf](https://github.com/excid3/ferrum_pdf) などを使い，PDF の生成が可能です．grover は [puppeteer とヘッドレスChrome](https://gihyo.jp/article/2022/09/rapid-learning-puppeteer-01)、ferrum_pdf は [ferrum](https://github.com/rubycdp/ferrum) とヘッドレスChrome を利用します．ヘッドレスChromeはディスプレイへの出力を必要としない，"ヘッドレス"なブラウザでヘッドレスChrome が使用している [Blink](https://www.chromium.org/blink/) は様々なブラウザの中核となるレンダリング・エンジンです．JavaScript で利用可能です．
 
 ## LaTeX で PDF {#k0e3280f}
 
