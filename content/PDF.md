@@ -27,7 +27,7 @@ Adobe より，元となる PDF の仕様書が公開されています (ISO の
 - [PDF Reference and Adobe Extensions to the PDF Specification](https://www.adobe.com/devnet/pdf/pdf_reference.html)
 - [Adobe PDF Reference Archives](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
 
-Windows 11 と macOS では標準で PDF 出力が可能です．
+Windows と macOS では標準で PDF 出力が可能です．
 Microsoft Edge やプレビューなど，PDF 閲覧環境も整っています．
 
 ***
@@ -40,7 +40,7 @@ TeX Wiki 内のページ "[PDFの作り方](</PDFの作り方/>)" を参照し�
 
 ### PDF を扱うソフトウェア {#o7e2223a}
 
-Windows 11 と macOS では，プリント機能を持ったどんなアプリケーションからも，
+Windows と macOS では，プリント機能を持ったどんなアプリケーションからも，
 PDF を出力できます．
 また，PostScript や PDF などを扱う，Ghostscript というソフトウェアを用いた，PDF へ出力するための仮想プリンタが多数あります：
 
