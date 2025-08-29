@@ -59,8 +59,12 @@ TeX Live のインストールガイド
 - [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2)
 - [https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2](https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2)
 
-を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。[M1 Mac](https://okumuralab.org/~okumura/macosx/m1.html) の TeX
-の項目にも説明があります。
+を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。
+
+- [M1 Mac](https://okumuralab.org/~okumura/macosx/m1.html) の TeX の項目
+- [macOS での TeX Live バージョンアップ（2020 → 2025）手順メモ](https://gist.github.com/hyuki/2c600fff10f77d03c5df6e06bff6677e)
+
+にも説明があります。
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
