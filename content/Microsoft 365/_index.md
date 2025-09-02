@@ -136,6 +136,7 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 - [Microsoft Office - Wikibooks](https://ja.wikibooks.org/wiki/Microsoft_Office)
 - [Word で UnicodeMath および LaTeX を使用して行形式の数式を入力する](https://support.microsoft.com/ja-jp/office/word-%E3%81%A7-unicodemath-%E3%81%8A%E3%82%88%E3%81%B3-latex-%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A1%8C%E5%BD%A2%E5%BC%8F%E3%81%AE%E6%95%B0%E5%BC%8F%E3%82%92%E5%85%A5%E5%8A%9B%E3%81%99%E3%82%8B-2e00618d-b1fd-49d8-8cb4-8d17f25754f8)
 - [LaTexスタイルの数式入力が「Office 365」で利用可能へ](http://forest.watch.impress.co.jp/docs/news/1073615.html)
+- [「Excel」「PowerPoint」もLaTeX記法に対応 ～「Microsoft 365」の数式対応が拡充](https://forest.watch.impress.co.jp/docs/news/2043287.html)
 
 [^1]: プリンター依存性は Word 2000 でほぼ解消されたようです。
 [^2]: 「ＭＳ 明朝を埋め込むこと」といった指示は Linux/macOS ユーザに酷ですが…
