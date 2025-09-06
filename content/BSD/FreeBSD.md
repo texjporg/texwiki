@@ -129,10 +129,9 @@ $ sudo tlmgr update --self --all
 
 ### TeX Live/FreeBSD {#p4fe1144}
 
-- [https://cgit.freebsd.org/ports/commit/print/texlive-base?id=7a740b7c908f95b55bf765364c1234b3f6750196](https://cgit.freebsd.org/ports/commit/print/texlive-base?id=7a740b7c908f95b55bf765364c1234b3f6750196) にて，Ports は TeX Live 2024 ベースとなりました．
+- [https://cgit.freebsd.org/ports/commit/print/texlive-base?id=993771b186bca2a5de9fa00f7f6788763306417c](https://cgit.freebsd.org/ports/commit/print/texlive-base?id=993771b186bca2a5de9fa00f7f6788763306417c) にて，Ports は TeX Live 2025 ベースとなりました．
 - [http://www.freshports.org/print/texlive-full/](http://www.freshports.org/print/texlive-full/)
 - [TeX Live on FreeBSD](http://maikaze.cafe.coocan.jp/texlive.html)
-    - [FreeBSD における TeX Live 2024 の導入](http://maikaze.cafe.coocan.jp/texlive4.html)
 
 ## その他関連Ports {#k9078aba}
 
@@ -160,9 +159,10 @@ make &amp;&amp; make installで導入できます．
 
 <table>
 <tbody>
-<tr><td><a href="/TeXstudio/">TeXstudio</a></td><td><a href="https://www.freshports.org/editors/texstudio/">editors/texstudio</a></td><td>Integrated writing environment for creating LaTeX documents</td></tr>
+<tr><td><a href="/TeXstudio/">TeXstudio</a></td><td><a href="https://www.freshports.org/editors/texstudio/">editors/texstudio</a></td><td>Integrated writing environment for LaTeX documents</td></tr>
 <tr><td><a href="/Texmaker/">Texmaker</a></td><td><a href="https://www.freshports.org/editors/texmaker/">editors/texmaker</a></td><td>LaTeX Development Environment</td></tr>
-<tr><td><a href="/TeXworks/">TeXworks</a></td><td><a href="https://www.freshports.org/editors/texworks/">editors/texworks</a></td><td>A simple TeX front-end program</td></tr>
+<tr><td><a href="/TeXworks/">TeXworks</a></td><td><a href="https://www.freshports.org/editors/texworks/">editors/texworks</a></td><td>Simple TeX front-end program</td></tr>
+<tr><td><a href="/Enter TeX/">Enter TeX</a></td><td><a href="https://www.freshports.org/editors/enter-tex/">editors/enter-tex</a></td><td>Integrated TeX/LaTeX editor</td></tr>
 <tr><td><a href="/AUCTeX/">AUCTeX</a></td><td><a href="https://www.freshports.org/print/auctex/">print/auctex</a></td><td>Integrated environment for writing LaTeX using GNU Emacs</td></tr>
 <tr><td><a href="/YaTeX/">YaTeX</a></td><td><a href="https://www.freshports.org/print/yatex/">print/yatex</a></td><td>Yet Another LaTeX mode and html mode on Emacs</td></tr>
 </tbody>
