@@ -40,7 +40,7 @@ Word は，同じファイルを開いても，同じように書いても，バ
 - 論文集などで論文ごとに違う和文フォントになるということが避けられる
 
 といった理由で，以前は好まれていました。
-しかし，最近では PDF の仕様が変更され，むしろ<strong>基本書体以外のフォントを埋め込むことが推奨</strong>されています（[PDF1.7 仕様書](https://wwwimages2.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf#page=285)）。
+しかし，最近では PDF の仕様が変更され，むしろ<strong>基本書体以外のフォントを埋め込むことが推奨</strong>されています（[PDF1.7 仕様書](https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf#page=285)）。
 
 > The Identity-H and Identity-V CMaps shall not be used with a non-embedded font. Only standardized character sets may be used.
 
@@ -100,12 +100,12 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 いわゆる「ワープロソフト」と LaTeX はまったく異なるツールで，見た目だけに注目した単純な比較はナンセンスです。
 [はじめての方へ](</はじめての方へ/>)もお読みください。
 
-- [学術論文を書くときは Microsoft Word と LaTeX のどちらが効率的か？｜Colorless Green Ideas](http://id.fnshr.info/2014/12/21/word-or-latex/)
-- [PLOS ONE: An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development](http://www.plosone.org/article/info:doi/10.1371/journal.pone.0115069)
-- [TeXは本当によいものか?](http://hdmr.org/d/?e=1947)
-- [WordとTexって結局どっちがええのんか](http://yakyuzuki.blogspot.jp/2013/05/wordtex.html)
-- [僕がTeXで仕様書を書く理由](http://setsulla.hatenablog.com/entry/2012/10/09/144243)
-- [TeXとOfficeの差異(前編)](http://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
+- [文書作成ツール LaTeXって何？Wordとの違いや便利なポイントを解説！ | お役立ちコンテンツ｜アカリク](https://acaric.jp/articles/5416)
+- [学術論文を書くときは Microsoft Word と LaTeX のどちらが効率的か？｜Colorless Green Ideas](https://id.fnshr.info/2014/12/21/word-or-latex/)
+- [TeXは本当によいものか?](https://hdmr.org/d/?e=1947)
+- [WordとTexって結局どっちがええのんか](https://yakyuzuki.blogspot.com/2013/05/wordtex.html)
+- [僕がTeXで仕様書を書く理由](https://web.archive.org/web/20170524074644/http://setsulla.hatenablog.com/entry/2012/10/09/144243)
+- [TeXとOfficeの差異(前編)](https://tatuyan-edson.blogspot.com/2011/08/texoffice.html)
 - [TeXからWordへの乗り換えを試みた](https://moccos.hatenablog.com/entry/20110801/p1)
 - [なぜ，我々はWordの絵がどっか言ってしまうと文句を言い募るだろうか？](https://smectic-g.hatenadiary.org/entry/20100223/1266934286)
 - [私がTeXを使い続ける理由 - くるるの数学ノート](https://kururu.hatenablog.com/entry/20100220/1266648484)
@@ -118,7 +118,8 @@ Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 - [まえがき (数式入力)](http://ufcpp.net/study/office/wordmath.html)
 - [最近、MS Equation Editor にどっぷり](http://ufcpp.wordpress.com/2010/02/16/%E6%9C%80%E8%BF%91%E3%80%81ms-equation-editor-%E3%81%AB%E3%81%A9%E3%81%A3%E3%81%B7%E3%82%8A/)
 - [10 の理由に増やしてみた](http://ufcpp.wordpress.com/2010/02/19/10-%E3%81%AE%E7%90%86%E7%94%B1%E3%81%AB%E5%A2%97%E3%82%84%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/)
-- [WordとLaTeX－どちらを使うべきか？](http://www.forte-science.co.jp/news/articles/20090106/wordorlatex.cfm)
+- [WordとLaTeX－どちらを使うべきか？](https://web.archive.org/web/20150623225450/http://www.forte-science.co.jp/news/articles/20090106/wordorlatex.cfm)
+- [jok's page, \[ なぜ私は LaTeX を使うのか？ \]](https://www-cc.gakushuin.ac.jp/~20050003/d-latex/why-latex.html)
 
 ### Word の正しい使い方 {#q1fc579f}
 
