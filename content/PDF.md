@@ -24,8 +24,8 @@ PDF から派生した規格として，主に以下のものがあります：
 
 Adobe より，元となる PDF の仕様書が公開されています (ISO の規格書は有償です)：
 
-- [PDF Reference and Adobe Extensions to the PDF Specification](https://www.adobe.com/devnet/pdf/pdf_reference.html)
-- [Adobe PDF Reference Archives](https://www.adobe.com/devnet/pdf/pdf_reference_archive.html)
+- [Adobe Open Source | Advancing technology through open initiatives#PDF Reference](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/#pdf-reference)
+    - [PDF Reference 1.7.pdf](https://opensource.adobe.com/dc-acrobat-sdk-docs/pdfstandards/PDF32000_2008.pdf) (PDF32000_2008.pdf)
 
 Windows と macOS では標準で PDF 出力が可能です．
 Microsoft Edge やプレビューなど，PDF 閲覧環境も整っています．
@@ -230,4 +230,5 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 ### 関連リンク {#j6d79d4c}
 
 - [PDF 2.0 でドキュメントを次世代のステージへ](https://blog.adobe.com/jp/publish/2017/08/30/taking-documents-to-the-next-level-with-pdf-2-0)
+- [PDF 2.0って何？　いままでのPDFとはどこが違うの？　PDF 2.0対応で注意すべきことがありますか？？ - アンテナハウス PDF資料室](https://www.antenna.co.jp/pdf/reference/What-is-pdf20.html)
 - [PDF フォーマット](https://azelpg.gitlab.io/azsky2/note/prog/pdf/index.html)
