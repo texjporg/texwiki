@@ -17,7 +17,7 @@ pukiwiki: "Visual Studio Code/LaTeX"
 
 Visual Studio Code 上で LaTeX の統合環境を構築する拡張機能(extension)としては LaTeX Workshop や CaTeX（軽鳥／怪鳥）などがあります。高機能でもっとも普及しているのは James Yu 氏による LaTeX Workshop です。
 
-左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（このとき Japanese Language Pack for VS Code を導入するとメニューや各種設定の説明も日本語化できます。）
+左端のアクティビティバーから拡張機能をクリックし，検索フィールドに latex と入力すれば関連拡張機能の一覧が示されます。そこから適切な拡張機能をインストールします。（このとき [Japanese Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-ja) を導入するとメニューや各種設定の説明も日本語化できます。）
 
 ### LaTeX Workshop と CaTeX の併用 {#qb107d73}
 
