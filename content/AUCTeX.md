@@ -91,6 +91,14 @@ AUCTeX でサポートされている日本語用 TeX は upTeX[^1], ASCII pTeX,
 
 [forum:2047](https://okumuralab.org/tex/mod/forum/discuss.php?d=2047) のように、NTT jLaTeX 用のクラスファイルを ASCII pLaTeX で利用する場合は、上述の file (directory) local variable で TeX-engine に ptex を指定してください。
 
+LuaTeX、LuaLaTeX を使用する場合は、変数 TeX-engine を &#x7e;/.emacs.d/init.el 等の初期化ファイルで
+
+```
+(setq TeX-engine 'luatex)
+```
+
+のように設定します。
+
 ## 注意点 {#gb666e4a}
 
 ### " を入力しようとすると \`\` が入力される {#q07274ce}
