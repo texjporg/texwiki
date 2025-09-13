@@ -111,6 +111,7 @@ brew install evince
 ### Arch Linux/Manjaro Linux {#eb51c4f9}
 
 - [https://www.archlinux.org/packages/?name=evince](https://www.archlinux.org/packages/?name=evince)
+- [https://aur.archlinux.org/packages/evince-no-gnome](https://aur.archlinux.org/packages/evince-no-gnome)
 - [Arch LinuxでTeXで出力された日本語pdfをevinceで表示する &amp; fonts.conf公開](http://blog.yomak.info/2015/03/arch-linuxtexpdfevince-fontsconf.html)
 
 ```
@@ -122,7 +123,7 @@ sudo pacman -S evince poppler-data
 - [https://packages.ubuntu.com/ja/evince](https://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
-Evince は GNOME の標準ドキュメントビューアーなので、最初からインストールされているケースがほとんどでしょう。手動でインストールするには次のようにします。
+GNOME 49 以降の標準ドキュメントビューアーは Evince から Papers に置き換えられたため、Evince をインストールするには次のようにします。
 
 ```
 sudo apt install evince poppler-data
