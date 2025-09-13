@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXstudio 4.8.9](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-09-13 (土) 10:58:21
 - [「Excel」「PowerPoint」もLaTeX記法に対応 ～「Microsoft 365」の数式対応が拡充](https://forest.watch.impress.co.jp/docs/news/2043287.html) -- [Microsoft 365](</Microsoft 365/>) 2025-09-02 (火) 22:07:50
 - [GNU Emacs 30.2](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2025-08-16 (土) 16:23:36
 - [LaTeX Workshop 10.10.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-08-14 (木) 14:30:14
