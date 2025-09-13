@@ -29,8 +29,9 @@ MIT License
 
 ### 派生版 {#w9aaefab}
 
-- [Cursor](https://www.cursor.com/)
-- [Eclipse Theia](https://theia-ide.org/)
+- [Cursor](https://cursor.com/)
+- [Windsurf](https://windsurf.com/)
+- [Eclipse Theia IDE](https://theia-ide.org/)
 
 ## Visul Studio Code の LaTeX 用 Extension {#ab9306b3}
 
