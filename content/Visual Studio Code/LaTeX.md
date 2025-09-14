@@ -27,6 +27,10 @@ CaTeX は LaTeX Workshop と共に使うことを想定し，LaTeX Workshop に�
 
 LaTeX Utilities は LaTeX Workshop への add-on で，LaTeX Workshop にない機能を追加します。文書全体をコンパイルすることなく tikzpicture 環境中の図表を単独プレビューする機能はこの add-on の機能として分離しました。
 
+### LaTeX Workshop と HyperSnips の併用 {#e0b5da9a}
+
+- [数式爆速入力のための LaTeX 動的スニペット in VSCode](https://zenn.dev/shena46/articles/latex-snippets-vscode)
+
 ## LaTeX Workshop {#n2442e05}
 
 LaTeX Workshop は Visual Studio Code に LaTeX の統合環境を追加する extension です。入力支援，複数のコンパイル設定の使い分け，文書のアウトライン表示，マウスを合わせたときの数式や引用のプレビューやパッケージのドキュメントの表示，[Live Share](https://github.com/James-Yu/LaTeX-Workshop/wiki/ExtraFeatures#collaborative-editing-using-live-share-experimental) などの機能があります。
