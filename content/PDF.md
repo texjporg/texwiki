@@ -144,8 +144,9 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
 - [Poppler](/Poppler/) 系：Poppler を利用したものが多数あります．
     - [TeXstudio](/TeXstudio/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
     - [TeXworks](/TeXworks/) (Qt) PDF ビューアとしても使える LaTeX の統合環境
-    - [Evince](/Evince/) (GTK) SyncTeX に対応した GNOME 標準の PDF ビューア
     - [Okular](/Okular/) (Qt) SyncTeX に対応した KDE Plasma 標準の PDF ビューア
+    - [Papers](/Papers/) (GTK) GNOME 標準の PDF ビューア
+    - [Evince](/Evince/) (GTK) SyncTeX に対応した PDF ビューア
     - [zathura](/zathura/) (GTK) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [pdfpc](https://pdfpc.github.io/) (GTK) presentation viewer
