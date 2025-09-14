@@ -123,14 +123,16 @@ sudo pacman -S evince poppler-data
 - [https://packages.ubuntu.com/ja/evince](https://packages.ubuntu.com/ja/evince)
 - [https://packages.debian.org/ja/evince](https://packages.debian.org/ja/evince)
 
-GNOME 49 以降の標準ドキュメントビューアーは Evince から Papers に置き換えられたため、Evince をインストールするには次のようにします。
+Ubuntu 25.04 から標準ドキュメントビューアーが Evince から Papers に置き換えられたため、Evince をインストールするには次のようにします。
 
 ```
+sudo apt install software-properties-common
+sudo add-apt-repository universe
 sudo apt install evince poppler-data
 ```
 
 依存関係により evince-common パッケージもインストールされます。
-GNOME keyring サポートを外した evince-gtk パッケージもあります。なお、Evince に依存したプログラムをコンパイルするには
+なお、Evince に依存したプログラムをコンパイルするには
 libevince-dev パッケージが必要です。
 
 ### Fedora {#jbf882d0}
