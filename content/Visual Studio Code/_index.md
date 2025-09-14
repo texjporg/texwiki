@@ -36,6 +36,7 @@ MIT License
 ## Visul Studio Code の LaTeX 用 Extension {#ab9306b3}
 
 - [LaTeX Workshop](</Visual Studio Code/LaTeX/>)
+- [LaTeX Utilities](https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities)
 - [CaTeX](https://marketplace.visualstudio.com/items?itemName=mr-konn.catex)
     - [CaTeX（軽鳥／怪鳥）で快適 LaTeX ライフ in VSCode](https://konn-san.com/articles/2018-11-26-happy-latex-with-catex.html)
     - [VSCode で YaTeX のイメージ補完やユニコード数式記号を入力する為の拡張をつくった](https://konn-san.com/prog/generic-input-method-and-latex-in-vscode.html)
