@@ -181,14 +181,14 @@ TeXworks がよいならばそれでもよいですし，下記のを色々と�
 
 ## PDF ファイルビューア {#pdfviewer}
 
-長らく LaTeX ファイルの編集は，dvi によるプレビューがもちいられてきました．
-ただ，最近は様々な理由から PDF によるプレビューが推奨されています（[古い情報](</古い情報/>)も参考に）．
+かつて LaTeX ファイルの編集には，dvi によるプレビューがもちいられていました．
+現在では様々な理由から PDF によるプレビューが推奨されています．（[古い情報](</古い情報/>)も参考に．）
 TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み込まれています．
 単独の LaTeX 用 PDF プレビューアとしては
 
 - <strong>[SumatraPDF](/SumatraPDF/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
-- [Evince](/Evince/)：GNOME 標準の PDF ビューア
 - [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
+- [Evince](/Evince/)：PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
 - [MuPDF](/MuPDF/)：軽量な PDF ビューア．SumatraPDF などで使われています．
