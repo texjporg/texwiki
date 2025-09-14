@@ -8,13 +8,13 @@ pukiwiki: "Ghostscript"
 
 # Ghostscript
 
-## [Ghostscript](https://www.ghostscript.com/) {#odb09bf1}
+## [Ghostscript](https://ghostscript.com/) {#odb09bf1}
 
 Ghostscript は [PostScript](/PostScript/)/[PDF](/PDF/) インタプリタです．
 PostScript/PDF ファイルを読み込んで，画面やプリンタや色々な形式のファイルに出力できます．
 詳しくは次のページをご覧ください．
 
-- [Ghostscript Website](https://www.ghostscript.com/)
+- [Ghostscript Website](https://ghostscript.com/)
 - [Welcome to Ghostscript &mdash; Ghostscript documentation](https://ghostscript.readthedocs.io/)
 - [Ghostscript Documentation (PDF)](https://ghostscript.readthedocs.io/_/downloads/en/latest/pdf/)
 
@@ -31,44 +31,6 @@ Ghostscript 10.04.0 (2024-09-18) およびそれ以前には，複数の深刻�
 - [Ghostscript 10.05.0未満に深刻な脆弱性8件：CVSSスコア9.8「クリティカル」レベル脆弱性とアップデート対応の緊急性](https://nikkeimatome.com/?p=56266)
 - [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（1ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675)
 - [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（2ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675/2)
-
-<!-- Ghostscript 9.54.0 (2021-03-19)，9.53.3 (2020-10-01)，9.52 (2020-03-19)，9.50 (2019-10-15) には，任意のコマンド実行が可能な脆弱性が存在します。 -->
-<!--  -->
-<!-- - TeX Live 2019 に含まれるいくつかのツールは Ghostscript 9.50 で起きた仕様変更に対応できていない場合があります（例：dvisvgm → [[commit 7b93a91:https://github.com/mgieseki/dvisvgm/commit/7b93a9197b69305429183affd24fa40ee04a663a]]，gsftopk → [[forum:2756#p16126]]）。TeX Live 2020 で修正されました。 -->
-<!--  -->
-<!-- - gs-9.50 を使うと [[dviout]] で EPS 画像が表示できない問題が発生します。gsx: を -->
-<!-- c:\path_to_gs\gs9.50\bin\gswin32c.exe -dDELAYSAFER -->
-<!-- に書き換えると表示できるようになります。（path_to_gs はお使いの環境の Ghostscript のパスに従ってください。） -->
-<!--  -->
-<!-- gs-9.50 で hyperref のリンク枠線が太くなる？ https://tex.stackexchange.com/questions/524044 -->
-<!--  -->
-<!-- gs-9.50 で .setpdfwrite オペレータが deprecated とマークされた。 -->
-<!-- ちなみに .dashpath オペレータが削除されたのは gs-9.22 の模様。 -->
-
-<!-- gs-9.50 で XeTeX での pstricks も失敗する。以下で対応。 -->
-<!-- (1) dvipdfmx.cfg の変更 (r52766) -->
-<!-- (2) (x)dvipdfmx のソース spc_dvips.c の変更 (r52765) -->
-<!-- -[[Ghostscript: CVE-2021-3781:https://ghostscript.com/CVE-2021-3781.html]] -->
-<!-- -[[Ghostscriptの任意のコマンド実行が可能な脆弱性（CVE-2021-3781）に関する注意喚起:https://www.jpcert.or.jp/at/2021/at210039.html]] -->
-<!--  -->
-<!-- Ghostscript 9.27 (2019-04-04) およびそれ以前には，アクセス制限回避の脆弱性が存在します。 -->
-<!--  -->
-<!-- -[[JVN#52486659: Ghostscript におけるアクセス制限回避の脆弱性:https://jvn.jp/jp/JVN52486659/]] -->
-<!-- -[[JVNDB-2019-012236 - JVN iPedia - 脆弱性対策情報データベース:https://jvndb.jvn.jp/ja/contents/2019/JVNDB-2019-012236.html]] -->
-<!--  -->
-<!-- Ghostscript 9.27 (2019-04-04) は， pdfcrop がおかしくなる問題が発生します。 -->
-<!--  -->
-<!-- gs-9.27 は下記のとおり bounding box の計算にバグがあり，より深刻なためオススメしない。 -->
-<!-- -commit [[06c920713e11bce9bd541bbf9bf294b2ba16aee8:https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/commit/?id=06c920713e11bce9bd541bbf9bf294b2ba16aee8]] -->
-<!-- で修正されたようです。- -&gt; pdfcrop in gs-9.27 ([[forum:2622]]) -->
-<!-- -[[pdfcrop fails with gs9.27 · Issue #63 · ho-tex/oberdiek · GitHub:https://github.com/ho-tex/oberdiek/issues/63]] -->
-<!-- -Debian GNU/Linux では ghostscript (9.27~dfsg-2) で修正されました。- -&gt; [[#927429 - ghostscript: incorrect bbox is produced in pdfcrop - Debian Bug report //logs:https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=927429]] -->
-<!--  -->
-<!-- gs-9.27 の他の仕様変更：GS_PDF_ProcSet オペレータの削除 -->
-<!-- https://github.com/mgieseki/dvisvgm/issues/108#issuecomment-496382796 -->
-<!--  -->
-<!-- gs-9.27 で xdvi 22.87.03 で EPS 画像が表示されない → TeX Live r51707 で対処 -->
-<!-- http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html#20190924 -->
 
 ### 動作環境 {#e8b195dc}
 
@@ -88,7 +50,7 @@ Windows, macOS, Linux
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Evince](/Evince/), [Okular](/Okular/),  Linux では [Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
+Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Okular](/Okular/), [Evince](/Evince/),  Linux では [Okular](/Okular/), [Evince](/Evince/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
