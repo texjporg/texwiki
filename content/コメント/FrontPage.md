@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [Ghostscript 10.06.0](https://ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2025-09-15 (月) 03:27:07
 - [TeXstudio 4.8.9](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-09-13 (土) 10:58:21
 - [「Excel」「PowerPoint」もLaTeX記法に対応 ～「Microsoft 365」の数式対応が拡充](https://forest.watch.impress.co.jp/docs/news/2043287.html) -- [Microsoft 365](</Microsoft 365/>) 2025-09-02 (火) 22:07:50
 - [GNU Emacs 30.2](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2025-08-16 (土) 16:23:36
