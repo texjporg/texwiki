@@ -11,7 +11,7 @@ pukiwiki: "Adobe Acrobat Reader"
 
 Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです。
 
-Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Evince](/Evince/), [Okular](/Okular/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), [Evince](/Evince/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
 
 Adobe Acrobat Reader で印刷がうまくいかない場合は [SumatraPDF](/SumatraPDF/) などの Adobe Acrobat Reader 以外のビューアで印刷してください。
 
@@ -27,9 +27,9 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 25.001.20531 以降に更新してください。Adobe Acrobat Reader 25.001.20521 およびそれ以前のバージョンには脆弱性が存在します。
-    - [Adobe AcrobatおよびReaderの脆弱性（APSB25-57）に関する注意喚起](https://www.jpcert.or.jp/at/2025/at250014.html)
-    - [Adobe Acrobat および Reader の脆弱性対策について(2025年6月)](https://www.ipa.go.jp/security/security-alert/2025/0611-adobereader.html)
+- Adobe Acrobat Reader 25.001.20693 以降に更新してください。Adobe Acrobat Reader 25.001.20672 およびそれ以前のバージョンには脆弱性が存在します。
+    - [Adobe AcrobatおよびReaderの脆弱性（APSB25-85）に関する注意喚起](https://www.jpcert.or.jp/at/2025/at250020.html)
+    - [Adobe Acrobat および Reader の脆弱性対策について(2025年9月)](https://www.ipa.go.jp/security/security-alert/2025/0910-adobereader.html)
 - Adobe Acrobat Reader Version 2025 (64-bit) の DDE server name は AcroViewA25 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
@@ -70,7 +70,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [64-bit Unified App Installer &mdash; Acrobat Desktop  Windows Deployment](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/singleinstaller.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120531/AcroRdrDCx642500120531_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120531/AcroRdrDCx642500120531_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120693/AcroRdrDCx642500120693_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120693/AcroRdrDCx642500120693_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -130,8 +130,8 @@ sudo zypper install wine
 winetricks allfonts
 winetricks mspatcha
 winetricks atmlib
-wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120531/AcroRdrDCx642500120531_ja_JP.exe
-wine64 AcroRdrDCx642500120531_ja_JP.exe
+wget https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500120693/AcroRdrDCx642500120693_ja_JP.exe
+wine64 AcroRdrDCx642500120693_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
