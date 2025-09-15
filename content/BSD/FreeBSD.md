@@ -184,11 +184,12 @@ make &amp;&amp; make installで導入できます．
 <!-- |dvi2tty|print/dvi2tty|A dvi-file previewer for text only devices| -->
 <!-- |ja-dvi2tty|japanese/dvi2tty|Character-based DVI file previewer| -->
 
-#### PostScript関連 {#v58c994c}
+#### PDF/PostScript関連 {#v58c994c}
 
 <table>
 <tbody>
 <tr><td><a href="/Ghostscript/">Ghostscript</a></td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
+<tr><td><a href="/Okular/">Okular</a></td><td><a href="https://www.freshports.org/graphics/okular">graphics/okular</a></td><td>KDE universal document viewer</td></tr>
 <tr><td><a href="/Evince/">Evince</a></td><td><a href="https://www.freshports.org/graphics/evince">graphics/evince</a></td><td>GNOME multi-format document viewer</td></tr>
 </tbody>
 </table>
