@@ -89,6 +89,12 @@ Chocolatey でインストールすることもできます．[https://chocolate
 
 ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
 
+- [https://archlinux.org/packages/?name=okular](https://archlinux.org/packages/?name=okular)
+- [https://packages.ubuntu.com/ja/okular](https://packages.ubuntu.com/ja/okular)
+- [https://packages.debian.org/ja/okular](https://packages.debian.org/ja/okular)
+- [https://packages.fedoraproject.org/pkgs/okular/okular/](https://packages.fedoraproject.org/pkgs/okular/okular/)
+- [https://software.opensuse.org/package/okular](https://software.opensuse.org/package/okular)
+
 ## 代替フォントの設定 {#o2eb9a55}
 
 - [Evince#代替フォントの設定](/Evince/#fallback)
