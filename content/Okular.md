@@ -94,6 +94,7 @@ Chocolatey でインストールすることもできます．[https://chocolate
 - [https://packages.debian.org/ja/okular](https://packages.debian.org/ja/okular)
 - [https://packages.fedoraproject.org/pkgs/okular/okular/](https://packages.fedoraproject.org/pkgs/okular/okular/)
 - [https://software.opensuse.org/package/okular](https://software.opensuse.org/package/okular)
+- [https://software.opensuse.org/package/okular-spectre](https://software.opensuse.org/package/okular-spectre)
 
 ## 代替フォントの設定 {#o2eb9a55}
 
