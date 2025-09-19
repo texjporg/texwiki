@@ -38,13 +38,14 @@ MacTeX-2025 / BasicTeX-2025 に付属する TeX Live も universal-darwin バイ
 
 TeX Live 2025 universal-darwin バイナリが動作する macOS
 
+- macOS Tahoe 26
 - macOS Sequoia 15
 - macOS Sonoma 14
 - macOS Ventura 13
 - macOS Monterey 12
 - macOS Big Sur 11
 - macOS Catalina 10.15
-- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポートされなくなる予定)
+- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポート外となる予定)
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -171,15 +172,19 @@ $ sudo /usr/local/texlive/2025/bin/universal-darwin/tlmgr path add
 $ brew install texlive
 ```
 
+Homebrew で TeX Live をインストールできます。
+Ghostscript などのツールも Homebrew でインストールできます。
+
+[TeX Live を brew install texlive としてインストールした環境で tlmgr update --self --all とアップデートしようとすると tlmgr: action not allowed in system mode と怒られてアップデートできない](https://okumuralab.org/tex/mod/forum/discuss.php?d=3994#p24953)場合は TeX Live 公式のインストーラを使用してください。
+
 #### [Homebrew Cask](https://formulae.brew.sh/cask/) によるインストール {#texlive-install-brew-cask}
 
 - [https://formulae.brew.sh/cask/mactex](https://formulae.brew.sh/cask/mactex)
 - [https://formulae.brew.sh/cask/mactex-no-gui](https://formulae.brew.sh/cask/mactex-no-gui)
 - [https://formulae.brew.sh/cask/basictex](https://formulae.brew.sh/cask/basictex)
 
-TeX Live をフルインストールする場合は MacTeX をインストールしてください。
 Homebrew Cask で MacTeX をインストールできます。
-Ghostscript などのツールも Homebrew でインストールできます。
+TeX Live をフルインストールする場合は MacTeX をインストールしてください。
 
 GUI Applications ありの場合
 
@@ -199,8 +204,8 @@ $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
 ```
 
-TeX Live をフルインストールしたくない場合は BasicTeX をインストールしてください。
 Homebrew Cask で BasicTeX をインストールできます。
+TeX Live をフルインストールしたくない場合は MacTeX ではなく BasicTeX をインストールしてください。
 
 ```
 $ brew install --cask basictex
