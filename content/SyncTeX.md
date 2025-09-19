@@ -47,10 +47,11 @@ SyncTeX 用のデータが出力できたら，エディタとビューワのそ
 - [TeXShop](/TeXShop/)
 - [SumatraPDF](/SumatraPDF/)
 - [Skim](/Skim/)
-- [Evince/Atril/Xreader](/Evince/)
 - [Okular](/Okular/)
+- [Evince/Atril/Xreader](/Evince/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
+- [Sioyek](/Sioyek/)
 - [llpp](/llpp/)
 
 ### 関連リンク {#b9d9b106}
