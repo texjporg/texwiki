@@ -11,7 +11,7 @@ pukiwiki: "Xpdf"
 
 Xpdf は Windows, macOS, Linux で動作する PDF ビューア（XpdfReader）および PDF 操作ツール（Xpdf command line tools）です。
 
-XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Evince](/Evince/), [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
+XpdfReader でトラブルが生じる場合は，[Poppler](/Poppler/) を使用した PDF ビューア（[Okular](/Okular/), [Papers](/Papers/), [Evince](/Evince/), [zathura](/zathura/), [qpdfview](/qpdfview/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) など）または [MuPDF](/MuPDF/) を利用してください。
 
 <!-- とりあえず項目を復活させました。 -->
 <!-- ビューアとして obsolete な理由説明がほしいです。 -->
