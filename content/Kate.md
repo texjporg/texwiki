@@ -12,3 +12,11 @@ pukiwiki: "Kate"
 Kate は高機能なテキストエディタです。
 
 - [Kate - Get an Edge in Editing](https://kate-editor.org/)
+
+### プラグイン {#w47d550e}
+
+設定(S) &gt; Kate を設定(C)... &gt; プラグイン
+
+#### LaTeX completion {#i0c544e5}
+
+LaTeX syntax for unicode symbols
