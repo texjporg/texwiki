@@ -79,12 +79,6 @@ TeX や LaTeX に関する本の紹介です．
 ### 書籍（紙版、電子版(PDF版、Kindle版、楽天Kobo、…)） {#z5fa285b}
 
 - [PDF/EPUBで本を売っているところ](https://okumuralab.org/~okumura/misc/250425.html) NotebookLMなどのAIに助けてもらいながら読むことのできるDRMフリー（テキスト抽出可能）なPDFまたはEPUBで本を売っているところのリストです（順不同）。
-- [TeX/LaTeX：　文献](http://xyoshiki.web.fc2.com/texbiblio.html)
-- [本棚.org ](https://hondana.org/TeX/)
-- [The publishing TeX (books)](https://asciidwango.github.io/ptex/base/books.html)
-- [TeX/Biblio - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Biblio)
-- [TeX 関連書籍およびホームページ](http://kanielabo.org/book/booktex.htm)
-- [乙部厳己のホーム ページ 著書紹介](https://web.archive.org/web/19991005182259/http://ms326.ms.u-tokyo.ac.jp/otobe/tex/bookreview.html)
 - [LaTeX の検索結果｜技術評論社](https://gihyo.jp/result?query=LaTeX&type=book)
 - [検索：LaTeX | ネットワーク・UNIX・データベース | Gihyo Digital Publishing … 技術評論社の電子書籍](https://gihyo.jp/dp/genre/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%BBUNIX%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9?query=LaTeX)
 - [書籍検索結果：LaTeX - インプレスブックス](https://book.impress.co.jp/s/?q=LaTeX)
