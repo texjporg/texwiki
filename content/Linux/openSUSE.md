@@ -59,16 +59,16 @@ sudo zypper install ghostscript
 sudo zypper install poppler-data
 ```
 
-### [Evince](/Evince/) {#p27ad2e3}
-
-```
-sudo zypper install evince
-```
-
 ### [Okular](/Okular/) {#kfc5a9bf}
 
 ```
 sudo zypper install okular okular-spectre
+```
+
+### [Papers](/Papers/) {#p27ad2e3}
+
+```
+sudo zypper install papers
 ```
 
 ### [zathura](/zathura/) {#u6a6ff55}
