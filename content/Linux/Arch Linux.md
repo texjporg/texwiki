@@ -90,16 +90,16 @@ sudo pacman -S perl
 sudo pacman -S poppler poppler-data
 ```
 
-### [Evince](/Evince/) {#qd63d30c}
-
-```
-sudo pacman -S evince poppler-data
-```
-
 ### [Okular](/Okular/) {#d36d48ab}
 
 ```
 sudo pacman -S okular poppler-data
+```
+
+### [Papers](/Papers/) {#qd63d30c}
+
+```
+sudo pacman -S papers poppler-data
 ```
 
 ### [zathura](/zathura/) {#cae6188b}
