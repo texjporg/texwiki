@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TikZ and PGF 3.1.11a](https://github.com/pgf-tikz/pgf) -- [TikZ](/TikZ/) 2025-09-20 (土) 15:24:49
 - [TeXiFy-IDEA 0.11.3](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-09-15 (月) 10:39:21
 - [Ghostscript 10.06.0](https://ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2025-09-15 (月) 03:27:07
 - [TeXstudio 4.8.9](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-09-13 (土) 10:58:21
