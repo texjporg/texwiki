@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1323ページの長大なマニュアル (version 3.1.10 2025年06月23日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
+- [1323ページの長大なマニュアル (version 3.1.11a 2025年09月08日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはターミナルから
@@ -112,7 +112,7 @@ texdoc tikz
 マニュアルの前半には 70 ページにも及ぶチュートリアルが５つあるので，学習を始めるのは比較的容易です。
 ところが，示されているコードには必要なライブラリの読み込み指示が徹底されていないなどの不備があり，マニュアルにある例をコピー＆ペーストしてもエラーが出て動作しないことがあります。
 
-たとえば，チュートリアルの p.41 (ver 3.1.10 の場合) にある[「パスの交錯（Intersecting Paths）」](https://pgf-tikz.github.io/pgf/pgfmanual.pdf#subsection.2.16)のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
+たとえば，チュートリアルの p.41 にある[「パスの交錯（Intersecting Paths）」](https://pgf-tikz.github.io/pgf/pgfmanual.pdf#subsection.2.16)のセクションでは，説明の本文には「intersections ライブラリ」について言及されているものの，例にはその設定が記述されていないため，そのままではエラーが出ます。
 プリアンブルに
 
 ```
@@ -1048,6 +1048,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ## TikZ 対応エディタ {#ta16acba}
 
+- [Mathcha](https://www.mathcha.io/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
 - [tikzcd-editor](https://tikzcd.yichuanshen.de/)
