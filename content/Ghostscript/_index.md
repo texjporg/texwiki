@@ -50,7 +50,7 @@ Windows, macOS, Linux
 
 ### フロントエンド {#ka477802}
 
-Microsoft Windows では [SumatraPDF](/SumatraPDF/),  macOS では [Okular](/Okular/), [Evince](/Evince/),  Linux では [Okular](/Okular/), [Evince](/Evince/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
+Microsoft Windows では [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), macOS では [Okular](/Okular/), Linux では [Okular](/Okular/), [zathura](/zathura/), [qpdfview](/qpdfview/) などの Ghostscript のフロントエンドがあります．
 これらはいずれも背後で Ghostscript を動かすことにより，PostScript ファイルを表示することができます．
 
 <!-- **不具合 [#o389845b] -->
