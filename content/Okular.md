@@ -50,8 +50,8 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-- [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/)
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/windows/) (リリースビルド版)
+- [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) (ナイトリービルド版)
 
 から Okular のインストーラーをダウンロードしてインストールできます．
 
@@ -74,10 +74,8 @@ Chocolatey でインストールすることもできます．[https://chocolate
 
 ### macOS {#ye831736}
 
-- [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/)
-- [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-x86_64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-x86_64/)
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/)
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-x86_64/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-x86_64/)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/) (リリースビルド版)
+- [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/) (ナイトリービルド版)
 - [https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb)
 
 ### Flatpak {#e979726d}
