@@ -109,16 +109,16 @@ sudo apt install ruby
 sudo apt install perl
 ```
 
-### [Evince](/Evince/) <a id="evince"></a> {#qfdb160b}
-
-```
-sudo apt install evince
-```
-
 ### [Okular](/Okular/) <a id="okular"></a> {#ba1358b3}
 
 ```
 sudo apt install okular kde-l10n-ja
+```
+
+### [Papers](/Papers/) <a id="papers"></a> {#qfdb160b}
+
+```
+sudo apt install papers
 ```
 
 ### [zathura](/zathura/) <a id="zathura"></a> {#eabe50ed}
