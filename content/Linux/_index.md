@@ -225,7 +225,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
 - [llpp](/llpp/)：PDF pager
 - [MuPDF](/MuPDF/)：軽量な PDF ビューア．zathura (zathura-pdf-mupdf), qpdfview (fitz-plugin), Sioyek, llpp などで使われています．
-- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Evince, Okular, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
+- [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio, Okular, Papers, zathura (zathura-pdf-poppler), qpdfview (pdf-plugin) などで使われています．
 
 などがあります．
 ほかにも
