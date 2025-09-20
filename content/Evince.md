@@ -14,8 +14,7 @@ Evince は PDF ファイルが表示可能なドキュメントビューアー�
 ファイルの自動更新機能もあります。
 PS, EPS ファイルの表示はデフォルトで無効化されているため PS, EPS ファイルを表示するには PS, EPS ファイルの表示を有効化してビルドされた Evince が必要です。
 
-- [ドキュメントビューアー – GNOMEアプリ](https://apps.gnome.org/ja/Evince/)
-- [GNOMEへようこそ – ドキュメントビューアー](https://welcome.gnome.org/ja/app/Evince/)
+- [GNOME / evince · GitLab](https://gitlab.gnome.org/GNOME/evince)
 - [Evince Document Viewer](https://help.gnome.org/users/evince/stable/index.html.en)
 - [Topics tagged evince](https://discourse.gnome.org/tags/c/applications/7/evince)
 - [Search results for &#39;evince&#39; - GNOME Discourse](https://discourse.gnome.org/search?q=evince)
@@ -26,6 +25,8 @@ PS, EPS ファイルの表示はデフォルトで無効化されているため
 ***
 
 ### お知らせ {#i6e6a97a}
+
+GNOME 49 (2025-09-17) で標準のドキュメントビューアーが Evince から [Papers](/Papers/) に変更されました。--&gt; [https://release.gnome.org/49/#new-document-viewer](https://release.gnome.org/49/#new-document-viewer)
 
 Evince 3.30.0 (2018-09-04) で PostScript バックエンドがデフォルトで無効化されました。
 
