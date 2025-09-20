@@ -85,16 +85,16 @@ sudo dnf install ruby
 sudo dnf install perl
 ```
 
-### [Evince](/Evince/) {#na36e8b6}
-
-```
-sudo dnf install evince
-```
-
 ### [Okular](/Okular/) {#k7d05705}
 
 ```
 sudo dnf install okular
+```
+
+### [Papers](/Papers/) {#na36e8b6}
+
+```
+sudo dnf install papers
 ```
 
 ### [zathura](/zathura/) {#i470648d}
