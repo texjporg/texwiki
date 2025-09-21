@@ -76,7 +76,7 @@ Chocolatey でインストールすることもできます．[https://chocolate
 
 - [https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.08/macos-arm64/) (リリースビルド版)
 - [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/) (ナイトリービルド版)
-- [https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb](https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb)
+    <!-- -https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb -->
 
 ### Flatpak {#e979726d}
 
