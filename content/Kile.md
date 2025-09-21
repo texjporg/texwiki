@@ -121,17 +121,6 @@ ForwardPDF<br>
 オプション:
 : --unique '%target'
 
-#### Evince の場合 {#c83cd000}
-
-選択:
-: Evince
-
-コマンド(<ins>M</ins>):
-: evince
-
-オプション:
-: '%target'
-
 #### qpdfview Unique の場合 {#x84dd0b8}
 
 \[新規...\]
@@ -183,59 +172,6 @@ Okular のメニューの \[設定(S)\]-\[Okular を設定(O)...\]-\[エディ�
 : kile --line %l
 
 Shift + 左クリックで対応する TeX 文書の該当箇所にジャンプします．
-
-## Evince との連携 {#f6cbca7e}
-
-### forward search {#ob62a5ad}
-
-fwdevince は Evince/fwdevince の fwdevince を使用します．
-
-***
-
-- kile2fwdevince
-
-***
-
-```
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-import sys
-import re
-import subprocess
-
-if __name__ == '__main__':
-    m = re.match(r'file:(\S*)#src:(\S*) (\S*)', sys.argv[1])
-    if m:
-        pdf = m.group(1)
-        line = m.group(2)
-        tex = m.group(3)
-        subprocess.call(['fwdevince', pdf, line, tex])
-```
-
-***
-
-```
-$ chmod +x kile2fwdevince
-$ sudo cp -p kile2fwdevince /usr/local/bin
-```
-
-\[設定(<ins>S</ins>)\]-\[Kile を設定(<ins>C</ins>)...\]-\[ツール\]-\[ビルド\]
-
-#### ForwardPDF {#ace63589}
-
-\[新規...\] をクリックして Evince を入力します．
-
-選択:
-: Evince
-
-コマンド(<ins>M</ins>):
-: kile2fwdevince
-
-オプション:
-: '%target'
-
-Kile のメニューの \[ビルド(<ins>U</ins>)\]-\[表示(<ins>V</ins>)\]-\[ForwardPDF\] で forward search ができます．
 
 ## qpdfview との連携 {#u024daea}
 
