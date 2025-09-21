@@ -145,7 +145,7 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e
 出力した PDF ファイルを表示するようにしたい場合は
 
 ```
- evince "$shortname.pdf"
+ okular --unique "$shortname.pdf"
 ```
 
 も \[追加\] してください．
@@ -153,35 +153,6 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e
 LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX → PDF\] で実行できます．
 
 \[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
-
-forward and inverse search が必要な場合は SyncTeX プラグインを使用してください．
-
-### gedit-plugins (SyncTeX) --&gt; [Remove synctex plugin](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd) --&gt; pluma-plugins (SyncTeX) を使用する {#uc9a113c}
-
-- [https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex](https://salsa.debian.org/gnome-team/gedit-plugins/tree/debian/master/plugins/synctex/synctex)
-- [https://github.com/jaliste/gedit-synctex-plugin](https://github.com/jaliste/gedit-synctex-plugin)
-- [SyncTeX による検索](https://help.gnome.org/users/evince/stable/synctex-search.html.ja)
-- [https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex](https://packages.ubuntu.com/search?keywords=gedit-plugin-synctex)
-- [https://packages.debian.org/search?keywords=gedit-plugin-synctex](https://packages.debian.org/search?keywords=gedit-plugin-synctex)
-- [https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041](https://koji.fedoraproject.org/koji/rpminfo?rpmID=19697041)
-- [https://packages.fedoraproject.org/pkgs/gedit-plugins/gedit-plugin-synctex/index.html](https://packages.fedoraproject.org/pkgs/gedit-plugins/gedit-plugin-synctex/index.html)
-- [https://software.opensuse.org/package/gedit-plugin-synctex](https://software.opensuse.org/package/gedit-plugin-synctex)
-
-SyncTeX プラグインは gedit-plugins 2.31.5 から gedit-plugins 3.32.2 までは gedit-plugins に収録されていましたが，[2019年5月28日にリポジトリから削除された](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/9f59fd8292e1c0cc88824010a61b32a049444632)ため gedit-plugins 3.33.90, 3.33.92, 3.34.0 には収録されていません。[2019年9月20日に元に戻された](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/3f135d1719f1e6418fcbf175fdac1b48ca086eb5)ため gedit-plugins 3.34.1 から gedit-plugins 44.1 までは収録されていましたが [gedit-plugins 45.0 2023-06-23 で再び削除されました](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd)。[pluma-plugins](https://github.com/mate-desktop/pluma-plugins) の [SyncTeX](https://github.com/mate-desktop/pluma-plugins/tree/master/plugins/synctex) を使用してください。
-
-SyncTeX プラグインを使用すると gedit と Evince の間で forward and inverse search ができます．
-
-\[☰\] &gt; \[設定\] &gt; \[プラグイン\] の SyncTeX にチェックをいれます．
-
-forward search は gedit で \[☰\] &gt; \[ツール\] &gt; \[Forward Search\] または Ctrl+Alt+F または Ctrl + 左クリックを使用すると Evince の該当行にジャンプします．
-
-inverse search は Evince で Ctrl + 左クリックを使用すると gedit の該当行にジャンプします．
-
-<!-- エラーメッセージが表示される場合は -->
-<!-- /usr/lib/gedit/plugins/synctex/synctex.py または -->
-<!-- /usr/lib64/gedit/plugins/synctex/synctex.py を -->
-<!-- [[削除される前の最新版の synctex.py:https://gitlab.gnome.org/GNOME/gedit-plugins/blob/8a5676e03499819f483d097def826b0f42fc2396/plugins/synctex/synctex/synctex.py]] で上書きすれば -->
-<!-- forward and inverse search が動作するかもしれません． -->
 
 ### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/codecomment) {#q8313fab}
 
@@ -263,34 +234,6 @@ latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/
 保存(S):
 : 編集中のドキュメント
 
-#### Evince {#t53bc494}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-synctex view -i $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" -o "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" -x "evince -i %{page+1} %{output}"
-```
-
-***
-
-#### fwdevince {#s41c2ddc}
-
-fwdevince は Evince/fwdevince の fwdevince を使用します．
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-fwdevince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" $GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
 #### Okular {#gaa0fcf1}
 
 ***
@@ -300,6 +243,19 @@ fwdevince "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" $GEDIT_CURRENT_LI
 
 cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
 okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_PATH""
+```
+
+***
+
+#### Papers {#t53bc494}
+
+***
+
+```
+#!/bin/sh
+
+cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
+synctex view -i $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" -o "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" -x "papers -i %{page+1} %{output}"
 ```
 
 ***
