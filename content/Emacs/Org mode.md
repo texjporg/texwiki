@@ -292,7 +292,7 @@ Org mode はデフォルトでは pdfLaTeX が使われます。
 ;(setq org-latex-pdf-process '("latexmk -e '$latex=q/uplatex -kanji=utf8 -no-guess-input-enc %%S/' -e '$bibtex=q/bibtexu %B/' -e '$biber=q/biber --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex -o %%D %%S/' -e '$dvipdf=q/dvipdfmx -o %%D %%S/' -norc -gg -pdfdvi %f"))
 ;(setq org-export-in-background t)
 (setq org-file-apps
-      '(("pdf" . "evince %s")))
+      '(("pdf" . "okular --unique %s")))
 
 (add-to-list 'org-latex-classes
              '("jlreq-article"
