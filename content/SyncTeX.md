@@ -48,7 +48,6 @@ SyncTeX 用のデータが出力できたら，エディタとビューワのそ
 - [SumatraPDF](/SumatraPDF/)
 - [Skim](/Skim/)
 - [Okular](/Okular/)
-- [Evince/Atril/Xreader](/Evince/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
 - [Sioyek](/Sioyek/)
