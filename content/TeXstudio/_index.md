@@ -178,10 +178,6 @@ Windows 版 TeXstudio の PDF ビューアでゴシック体を表示する場�
 
 Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォントを埋め込んでいない PDF ファイルの場合は MS-Mincho で表示されます。
 
-### Linux の TeXstudio の場合 {#s6cbe6f1}
-
-[代替フォントの設定](/Evince/#fallback)を参照して代替フォントの設定をします。
-
 ## 関連リンク {#b0ba1b9b}
 
 - [forumSearch:TeXstudio](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=TeXstudio)
