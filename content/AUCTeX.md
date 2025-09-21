@@ -393,8 +393,6 @@ C-x C-f ~/
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
-fwdevince は Evince/fwdevince の fwdevince を使用します．
-
 ***
 
 ```
@@ -407,7 +405,7 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 (setq japanese-TeX-engine-default 'uptex)
 (setq japanese-LaTeX-default-style "jlreq")
 (setq TeX-engine 'luatex)
-(setq TeX-view-program-selection '((output-pdf "Evince")))
+(setq TeX-view-program-selection '((output-pdf "Okular")))
 (setq TeX-source-correlate-method 'synctex)
 (setq TeX-source-correlate-start-server t)
 (setq TeX-source-correlate-mode t)
@@ -428,23 +426,14 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
                                      "xdg-open %s.pdf"
                                      TeX-run-discard-or-function t t :help "Run xdg-open"))
                       (add-to-list 'TeX-command-list
-                                   '("Evince"
-                                     ;"synctex view -i \"%n:0:%b\" -o %s.pdf -x \"evince -i %%{page+1} %%{output}\""
-                                     "TeX-evince-sync-view"
-                                     TeX-run-discard-or-function t t :help "Forward search with Evince"))
-                      (add-to-list 'TeX-command-list
-                                   '("Fwdevince"
-                                     "fwdevince %s.pdf %n \"%b\""
-                                     TeX-run-discard-or-function t t :help "Forward search with fwdevince"))
-                      (add-to-list 'TeX-command-list
-                                   '("Atril"
-                                     ;"synctex view -i \"%n:0:%b\" -o %s.pdf -x \"atril -i %%{page+1} %%{output}\""
-                                     "TeX-atril-sync-view"
-                                     TeX-run-discard-or-function t t :help "Forward search with Atril"))
-                      (add-to-list 'TeX-command-list
                                    '("Okular"
                                      "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
+                      (add-to-list 'TeX-command-list
+                                   '("Papers"
+                                     ;"synctex view -i \"%n:0:%b\" -o %s.pdf -x \"papers -i %%{page+1} %%{output}\""
+                                     "TeX-atril-sync-view"
+                                     TeX-run-discard-or-function t t :help "Forward search with Papers"))
                       (add-to-list 'TeX-command-list
                                    '("Zathura"
                                      "zathura -x \"emacsclient --no-wait +%%{line} %%{input}\" --synctex-forward \"%n:0:%b\" %s.pdf"
@@ -494,10 +483,8 @@ fwdevince は Evince/fwdevince の fwdevince を使用します．
 > <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
 > <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
 > <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
-> <tr><td>Evince</td><td>C-c C-c evince RET</td><td>Evince で forward search</td></tr>
-> <tr><td>Fwdevince</td><td>C-c C-c fwdevince RET</td><td>fwdevince で forward search</td></tr>
-> <tr><td>Atril</td><td>C-c C-c atril RET</td><td>Atril で forward search</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
+> <tr><td>Papers</td><td>C-c C-c atril RET</td><td>Papers で forward search</td></tr>
 > <tr><td>Zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
 > <tr><td>Qpdfview</td><td>C-c C-c qpdfview RET</td><td>qpdfview で forward search</td></tr>
 > <tr><td>TeXworks</td><td>C-c C-c texworks RET</td><td>TeXworks で forward search</td></tr>
@@ -859,48 +846,6 @@ forward search は [AUCTeX#インストール#macOS#設定](/AUCTeX/#n55816de) �
 C-c C-c displayline で forward search ができます．
 
 [AUCTeX の設定と便利な機能 | Amrta](http://skalldan.wordpress.com/2011/07/20/auctex-%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%81%A8%E4%BE%BF%E5%88%A9%E3%81%AA%E6%A9%9F%E8%83%BD/) も参考になります．
-
-## Evince との連携 (forward and inverse search) {#l4ab70a6}
-
-AUCTeX は Evince の forward and inverse search に対応しています．
-
-TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Evince を指定します．
-
-```
-(setq TeX-view-program-selection '((output-pdf "Evince")))
-```
-
-C-c C-c view で View command: に TeX-evince-sync-view が表示され forward search が実行できます．
-
-TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
-
-TeX-command-list に fwdevince を追加して使用することもできます．
-
-forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) を参照してください．
-
-C-c C-c fwdevince で forward search ができます．
-
-以下のページも参考になります．
-
-- [Make AUCTeX do forward and inverse search with SyncTeX and Evince](https://gist.github.com/2297447)
-- [Debian wheezy の TeX 統合環境で SyncTeX を試してみる](http://skalldan.wordpress.com/2011/10/07/tex-%E7%B5%B1%E5%90%88%E7%92%B0%E5%A2%83%E3%81%A7-synctex-%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/)
-- [Evince - TeX Wiki](/Evince/)
-- [EmacsWiki: AUCTeX](http://www.emacswiki.org/emacs/AUCTeX) の Synctex and Evince
-- [latex - From .ps/.dvi/.pdf, go to the corresponding location of .tex in Emacs - Stack Overflow](http://stackoverflow.com/questions/5737801/from-ps-dvi-pdf-go-to-the-corresponding-location-of-tex-in-emacs)
-
-## Atril との連携 (forward and inverse search) {#nfc32f0c}
-
-AUCTeX は Atril の forward and inverse search に対応しています．
-
-TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Atril を指定します．
-
-```
-(setq TeX-view-program-selection '((output-pdf "Atril")))
-```
-
-C-c C-c view で View command: に TeX-atril-sync-view が表示され forward search が実行できます．
-
-TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
 
 ## Okular との連携 (forward and inverse search) {#d95e95ee}
 
