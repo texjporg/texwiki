@@ -86,9 +86,6 @@ YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力�
 <!--                     ((string-match "Skim" previewer) -->
 <!--                      (format "%s %d '%s.pdf' '%s'" -->
 <!--                              YaTeX-cmd-displayline line bnr cf)) -->
-<!--                     ((string-match "evince" previewer) -->
-<!--                      (format "%s '%s.pdf' %d '%s'" -->
-<!--                              "fwdevince" bnr line cf)) -->
 <!--                     ((string-match "sumatra" previewer) -->
 <!--                      (format "%s \"%s.pdf\" -forward-search \"%s\" %d" -->
 <!--                              previewer bnr cf line)) -->
@@ -181,7 +178,7 @@ SumatraPDF の inverse search については [Emacs#SumatraPDF との連携#inv
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk -e \"$lualatex=q/lualatex %O -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -norc -gg -pdflua")
 ;(setq tex-command "latexmk -e \"$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/\" -e \"$bibtex=q/bibtexu %O %B/\" -e \"$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/\" -e \"$makeindex=q/upmendex %O -o %D %S/\" -e \"$dvipdf=q/dvipdfmx %O -o %D %S/\" -norc -gg -pdfdvi")
@@ -296,7 +293,7 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
 ;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
@@ -340,9 +337,6 @@ Skim の inverse search については [Emacs#Skim との連携#inverse search]
 
 &#x7e;/.emacs.d/init.el に設定を記述します．
 
-fwdevince は Evince/fwdevince にあるものを使用します．
-Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．
-
 ***
 
 ```
@@ -363,14 +357,14 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 (setq YaTeX-use-LaTeX2e t)
 (setq YaTeX-use-AMS-LaTeX t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq tex-command "lualatex -synctex=1")
 ;(setq tex-command "latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua")
 ;(setq tex-command "latexmk -e '$latex=q/uplatex %O -kanji=utf8 -no-guess-input-enc -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi")
 (setq bibtex-command "bibtexu")
 (setq makeindex-command "upmendex")
-(setq dvi2-command "evince")
-(setq tex-pdfview-command "evince")
+(setq dvi2-command "okular --unique")
+(setq tex-pdfview-command "okular --unique")
 (setq dviprint-command-format "wine64 cmd /c start Acrobat.exe `echo %s | sed -e \"s/\\.[^.]*$/\\.pdf/\"`")
 
 (add-hook 'yatex-mode-hook
@@ -398,7 +392,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 > <tr><td>Process -&gt; makeindex</td><td>C-c C-t i RET</td><td>upmendex</td></tr>
 > <tr><td>Process -&gt; Preview</td><td>C-c C-t p RET RET</td><td>PDF プレビュー</td></tr>
 > <tr><td>Process -&gt; lpr</td><td>C-c C-t l RET</td><td>Adobe Acrobat Reader で PDF プレビューまたは印刷</td></tr>
-> <tr><td></td><td>C-c C-g</td><td>Evince で forward search<br>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
+> <tr><td></td><td>C-c C-g</td><td>Okular で forward search<br>zathura で forward search<br>qpdfview で forward search</td></tr>
 > </tbody>
 > </table>
 >
@@ -651,7 +645,7 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ```
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 ```
 
 ### dvi2-command (C-c C-t j でタイプセットしたあとで C-c C-t p すると表示される PDF ビューア) {#t737f278}
@@ -716,18 +710,6 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ```
 (setq dvi2-command "open -a TeXShop")
-```
-
-#### Evince {#k6ed9ab5}
-
-```
-(setq dvi2-command "evince")
-```
-
-#### Atril {#vf039437}
-
-```
-(setq dvi2-command "atril")
 ```
 
 #### Okular {#uf59e41d}
@@ -810,18 +792,6 @@ YaTeX 1.80 で YaTeX-kanji-code のデフォルトが nil に変更されまし�
 
 ```
 (setq tex-pdfview-command "open -a TeXShop")
-```
-
-#### Evince {#j390cbe8}
-
-```
-(setq tex-pdfview-command "evince")
-```
-
-#### Atril {#vb288c5f}
-
-```
-(setq tex-pdfview-command "atril")
 ```
 
 #### Okular {#y8537029}
@@ -1008,7 +978,7 @@ off の場合
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 (setq tex-pdfview-command (concat "\"C:/Users/" (getenv "USERNAME") "/AppData/Local/SumatraPDF/SumatraPDF.exe\" -reuse-instance"))
 ```
@@ -1052,42 +1022,19 @@ forward search は C-c f または M-x fwdsumatrapdf-forward-search RET をタ�
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "open -a Skim")
 (setq tex-pdfview-command "open -a Skim")
 ```
 
 を設定して C-c C-g を入力すれば Skim で forward seasrch ができます．
 
-### Evince との連携 (forward and inverse search) {#g214bbe8}
-
-- [https://gitlab.com/latex-math-preview/synctex-for-evince-yatex](https://gitlab.com/latex-math-preview/synctex-for-evince-yatex)
-- [http://kurasawa.c.ooco.jp/ubuntu.html#emacs](http://kurasawa.c.ooco.jp/ubuntu.html#emacs)
-
-### Evince との連携 (forward search) {#h118b5e5}
-
-Evince/fwdevince をインストールして
-
-```
-(setq YaTeX-inhibit-prefix-letter t)
-(setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
-(setq dvi2-command "evince")
-(setq tex-pdfview-command "evince")
-```
-
-を設定して C-c C-g を入力すれば Evince で forward seasrch ができます．
-
-### Evince との連携 (inverse search) {#tfced2b6}
-
-Evince の inverse search については [Emacs#Evince との連携#inverse search](/Emacs/#vecb4fd9) を参照してください．
-
 ### Okular との連携 (forward search) {#o8772291}
 
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "okular --unique")
 (setq tex-pdfview-command "okular --unique")
 ```
@@ -1099,7 +1046,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 (setq tex-pdfview-command "zathura -x \"emacsclient --no-wait +%{line} %{input}\"")
 (with-eval-after-load 'yatexprc
@@ -1122,9 +1069,6 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
                     ((string-match "Skim" previewer)
                      (format "%s %d '%s.pdf' '%s'"
                              YaTeX-cmd-displayline line bnr cf))
-                    ((string-match "evince" previewer)
-                     (format "%s '%s.pdf' %d '%s'"
-                             "fwdevince" bnr line cf))
                     ((string-match "sumatra" previewer)
                      (format "%s \"%s.pdf\" -forward-search \"%s\" %d"
                              previewer bnr cf line))
@@ -1148,7 +1092,7 @@ Evince の inverse search については [Emacs#Evince との連携#inverse sea
 ```
 (setq YaTeX-inhibit-prefix-letter t)
 (setq YaTeX-dvi2-command-ext-alist
-      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|evince\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
+      '(("TeXworks\\|texworks\\|texstudio\\|mupdf\\|SumatraPDF\\|Preview\\|Skim\\|TeXShop\\|papers\\|atril\\|xreader\\|okular\\|zathura\\|qpdfview\\|Firefox\\|firefox\\|chrome\\|chromium\\|msedge\\|Adobe\\|Acrobat\\|acroread\\|pdfopen\\|xdg-open\\|open\\|start" . ".pdf")))
 (setq dvi2-command "qpdfview --unique")
 (setq tex-pdfview-command "qpdfview --unique")
 ```
@@ -1202,7 +1146,6 @@ TeX ソースの先頭行に例えば，
 
 - [YaTeXからSumatraPDFを起動](https://uep.media.hosei.ac.jp/yatex%E3%81%8B%E3%82%89sumatrapdf%E3%82%92%E8%B5%B7%E5%8B%95/)
 - [私的 YaTeX 事始め](http://mtino1594.hatenablog.com/entry/2019/04/07/200000)
-- [YaTeXのカスタマイズおよびevinceとの連携](http://startlinux.ninja-mania.jp/yatex/index.html)
 - [ Emacs26.1を入れてみる（その15）EmacsでLaTeX](https://blogs.yahoo.co.jp/t_terui/66967449.html), [ Emacs26.1を入れてみる（その16）YaTeX にアウトラインモードを追加](https://blogs.yahoo.co.jp/t_terui/66970175.html)
 - [YaTeX \[ShotakahaDokuWiki](http://www-he.scphys.kyoto-u.ac.jp/member/shotakaha/dokuwiki/doku.php?id=toolbox:emacs:yatex:start)\]
 - [モダンな日本語 TeX 環境を整える](http://qiita.com/ynakayama/items/706ae9e59c1b6fd3e3d2)
@@ -1223,7 +1166,6 @@ TeX ソースの先頭行に例えば，
 - [YaTeX World (野鳥わぁるど)](http://www.nk.rim.or.jp/~naru/yatex/) (成宮 隆之 さん)
 - [yatex キー操作](http://www.cosmo.sci.hokudai.ac.jp/~kk/emacs/yatex_key.html)
 - [YaTeXとRefTeXの共存](http://ubutun.blogspot.com/2011/06/yatexreftex.html)
-- [SyncTeXの設定。 Emacs(YaTeX) + Evince](http://ubutun.blogspot.jp/2012/05/synctex-emacsyatex-evince.html)
 - [RjpWiki:SweaveでエディタとDVIビューア間の相互移動](<http://www.okadajp.org/RWiki/?SweaveでエディタとDVIビューア間の相互移動>)
 - [EmacsとSkim.appでTeX・PDFシンクロ](http://d.hatena.ne.jp/setoryohei/20110102/1294003836)
 - [http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX](http://d.hatena.ne.jp/munepi/searchdiary?word=YaTeX)
