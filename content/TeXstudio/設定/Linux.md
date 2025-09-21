@@ -48,11 +48,9 @@ LuaLaTeX
 外部PDFビューア
 : &nbsp;
 
-: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "evince -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
-
-: fwdevince "?am.pdf" @ "?c:am.tex"
-
 : okular --unique "file:?am.pdf#src:@ ?c:am.tex"
+
+: synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "papers -i &#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
 : zathura -x "texstudio '&#x25;&#x25;{input}' -line &#x25;&#x25;{line}" --synctex-forward "@:0:?c:am.tex" "?am.pdf"
 
@@ -152,36 +150,6 @@ GIT
 : git
 
 ***
-
-## [Evince](/Evince/) との連携 {#y63d1279}
-
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
-
-### forward search {#c5c506ca}
-
-Evince/fwdevince の fwdevince を使用します．<br>
-
-forward search は外部PDFビューアに
-
-```
-fwdevince "?am.pdf" @ "?c:am.tex"
-```
-
-です．
-
-### inverse search {#b18e31c8}
-
-Evince/fwdevince の invevince を使用します．<br>
-
-inverse search はユーザーコマンドに invevince を作成して以下のようにコマンドを設定します．<br>
-
-```
-invevince "?am.pdf" "texstudio '%%f' -line %%l"
-```
-
-外部PDFビューアに evince を設定して evince で PDF ファイルを表示してユーザーコマンドを実行します．<br>
-Ctrl + 左クリックで inverse search ができます．<br>
-ユーザーコマンドを実行するタイミングは evince で PDF ファイルを表示する前でも後でもどちらでも OK です．<br>
 
 ## [Okular](/Okular/) との連携 {#c6d921dc}
 
