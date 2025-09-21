@@ -145,13 +145,3 @@ Post Processor
 : latexmk
 
 \[Build\] &gt; \[upLaTeXmk\] で実行できます。
-
-## Evince との連携 {#t97f1692}
-
-### forward search {#o187dfd8}
-
-\[Search\] &gt; \[Search Forward\] または Ctrl+Alt+F で forward search ができます．
-
-### inverse search {#tc58bb85}
-
-Evince 上で Ctrl + 左クリックを実行すると TeX 文書の対応する行にジャンプします．
