@@ -210,8 +210,6 @@ C-x C-f ~/
 
 ### Linux での設定例 {#q1bd16f3}
 
-fwdevince は Evince/fwdevince にあるものを使用することを想定します．
-
 ***
 
 ```
@@ -226,7 +224,7 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
 (setq latex-run-command "lualatex -synctex=1 -interaction=nonstopmode")
 (setq tex-bibtex-command "bibtexu")
 (setq tex-print-file-extension ".pdf")
-(setq tex-dvi-view-command "evince")
+(setq tex-dvi-view-command "okular --unique")
 (setq tex-dvi-print-command "perl -e 'system(\"wine64 cmd /c start Acrobat.exe `basename $ARGV[0]`\")'")
 (setq tex-compile-commands
       '(("latexmk -e '$lualatex=q/lualatex %%O -synctex=1 -interaction=nonstopmode %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -norc -gg -pdflua %f" "%f" "%r.pdf")
@@ -242,48 +240,6 @@ fwdevince は Evince/fwdevince にあるものを使用することを想定し�
         ("firefox -new-window %r.pdf &" "%r.pdf")
         ("chromium --new-window %r.pdf &" "%r.pdf")
         ("wine64 cmd /c start Acrobat.exe %r.pdf &" "%r.pdf")))
-
-(defun evince-forward-search ()
-  (interactive)
-  (let* ((ctf (buffer-name))
-         (mtf (tex-main-file))
-         (pf (concat (car (split-string mtf "\\.")) ".pdf"))
-         (ln (format "%d" (line-number-at-pos)))
-         (cmd "fwdevince")
-         (args (concat "\"" pf "\" " ln " \"" ctf "\"")))
-    (message (concat cmd " " args))
-    (set-process-query-on-exit-flag
-     (start-process-shell-command "fwdevince" nil (concat cmd " " args)) nil) t))
-
-(add-hook 'latex-mode-hook
-          '(lambda ()
-             (define-key latex-mode-map (kbd "C-c e") 'evince-forward-search)))
-
-(require 'dbus)
-
-(defun un-urlify (fname-or-url)
-  "A trivial function that replaces a prefix of file:/// with just /."
-  (if (string= (substring fname-or-url 0 8) "file:///")
-      (substring fname-or-url 7)
-    fname-or-url))
-
-(defun evince-inverse-search (file linecol &rest ignored)
-  (let* ((fname (decode-coding-string (url-unhex-string (un-urlify file)) 'utf-8))
-         (buf (find-file fname))
-         (line (car linecol))
-         (col (cadr linecol)))
-    (if (null buf)
-        (message "[Synctex]: %s is not opened..." fname)
-      (switch-to-buffer buf)
-      (goto-line (car linecol))
-      (unless (= col -1)
-        (move-to-column col))
-      (x-focus-frame (selected-frame)))))
-
-(dbus-register-signal
- :session nil "/org/gnome/evince/Window/0"
- "org.gnome.evince.Window" "SyncSource"
- 'evince-inverse-search)
 
 (defun okular-forward-search ()
   (interactive)
