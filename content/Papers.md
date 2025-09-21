@@ -16,19 +16,34 @@ Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Boo
 - [Papers – GNOMEアプリ](https://apps.gnome.org/ja/Papers/)
 - [GNOMEへようこそ – Papers](https://welcome.gnome.org/ja/app/Papers/)
 - [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
+- [GNOME PDF viewer app Papers](https://lists.debian.org/debian-accessibility/2025/02/msg00018.html)
+
+### お知らせ {#t48892bd}
+
+GNOME 49 (2025-09-17) で標準のドキュメントビューアーが Evince から Papers に変更されました。--&gt; [https://release.gnome.org/49/#new-document-viewer](https://release.gnome.org/49/#new-document-viewer)
+
+Papers では Evince の機能である SyncTeX、PostScript、DVI のサポートが削除されました。
+
+- [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
     - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン 46.0 で Evince から Papers に名称変更
     - [Drop Synctex support](https://gitlab.gnome.org/GNOME/papers/-/commit/59409c2f18137ea794a21041b0a1a71367f255ed) &lt;-- バージョン 46.0 で SyncTeX をサポート対象外に
         - [Synctex support](https://gitlab.gnome.org/GNOME/papers/-/issues/47) &lt;-- SyncTeX サポート復活の要望
         - [Draft: libdocument: restore synctex support](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/90) &lt;-- SyncTeX サポート復活のマージリクエスト
     - [Remove DVI support](https://gitlab.gnome.org/GNOME/papers/-/commit/edf8c1a71ca56ab0f99ccb27db3fa467137b97b2) &lt;-- バージョン 46.0 で DVI をサポート対象外に
     - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/papers/-/tags/46.0)
+    - [libdocument: backends: remove PostScript backend](https://gitlab.gnome.org/GNOME/papers/-/commit/5ca1f851babab56ffdb0023410626903929b396f) &lt;-- バージョン 47.1 で PostScript をサポート対象外に
+        - [What to do with PostScript support?](https://gitlab.gnome.org/GNOME/papers/-/issues/151) &lt;-- PostScript サポートについて
+
+## ダウンロード {#ybca190a}
+
+### Linux {#p9649c9c}
+
 - [https://flathub.org/apps/org.gnome.Papers](https://flathub.org/apps/org.gnome.Papers)
 - [https://archlinux.org/packages/?name=papers](https://archlinux.org/packages/?name=papers)
 - [https://packages.debian.org/search?keywords=papers](https://packages.debian.org/search?keywords=papers)
 - [https://packages.ubuntu.com/search?keywords=papers](https://packages.ubuntu.com/search?keywords=papers)
 - [https://packages.fedoraproject.org/pkgs/papers/papers/](https://packages.fedoraproject.org/pkgs/papers/papers/)
 - [https://software.opensuse.org/package/papers](https://software.opensuse.org/package/papers)
-- [GNOME PDF viewer app Papers](https://lists.debian.org/debian-accessibility/2025/02/msg00018.html)
 
 ## 使い方 {#gb97275a}
 
