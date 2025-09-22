@@ -11,6 +11,7 @@ Sioyek は教科書や論文を読むことに特化した PDF ビューアー�
 
 - [https://sioyek.info/](https://sioyek.info/)
 - [https://github.com/ahrm/sioyek](https://github.com/ahrm/sioyek)
+    - [https://github.com/ahrm/sioyek?tab=readme-ov-file#third-party-packages-for-linux](https://github.com/ahrm/sioyek?tab=readme-ov-file#third-party-packages-for-linux)
 - [https://sioyek-documentation.readthedocs.io/](https://sioyek-documentation.readthedocs.io/)
     - [https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex](https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex)
 - [sioyekコマンドまとめ](https://qiita.com/lwn/items/d7fd428283165514be0d)
