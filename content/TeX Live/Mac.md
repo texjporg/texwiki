@@ -45,7 +45,7 @@ TeX Live 2025 universal-darwin バイナリが動作する macOS
 - macOS Monterey 12
 - macOS Big Sur 11
 - macOS Catalina 10.15
-- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポート外となる予定)
+- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポート対象外となる予定)
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -367,7 +367,11 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 ## その他の選択肢 {#qab24fbc}
 
-[VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし，その上で TeX Live を使用する方法もあります。
+[VirtualBox](https://www.virtualbox.org/) などの仮想マシン上に [Linux](/Linux/) をインストールし、その上で TeX Live を使用する方法もあります。
 macOS を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。
+
+macOS では TeX Live や MacTeX をインストールするのが一般的ですが、ほかの TeX ディストリビューションをインストールすることもできます。
+
+[MiKTeX](/MiKTeX/)：主に Microsoft Windows で使用されている TeX ディストリビューションですが macOS にも対応しています。
 
 [^1]: TeX Live 2021 で x86_64-darwin バイナリが削除されて universal-darwin バイナリに置き換えられました ([r57908](http://www.tug.org/svn/texlive?limit_changes=0&view=revision&revision=57908))。
