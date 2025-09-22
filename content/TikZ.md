@@ -7,7 +7,7 @@ pukiwiki: "TikZ"
 
 # TikZ
 
-## [TikZ/PGF](https://pgf-tikz.github.io/) {#w315bc8f}
+## [TikZ and PGF](https://pgf-tikz.github.io/) {#w315bc8f}
 
 PGF (Portable Graphics Format) は，[Till Tantau](https://www.tcs.uni-luebeck.de/mitarbeiter/tantau/)（Beamerのオリジナルの開発者）によって作成され，現在は [Henri Menke](https://www.henrimenke.com/), Christian Feuers&auml;nger などのメンバーによって開発・メンテナンスされている TeX 用の描画パッケージです。
 PGF のフロントエンドとして一般的には TikZ (TikZ ist kein Zeichenprogramm = "TikZ is not a drawing program") を使用します。
