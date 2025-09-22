@@ -100,6 +100,16 @@ MSYS2 でインストールすることもできます。
 
 - [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](https://fusion0202.blog.jp/archives/603103.html)
 
+## ファイルをタブで開く設定 {#w7907039}
+
+ファイルをタブで開くようにするには以下の設定を行います。
+
+\[設定(S)\] &gt; \[Okular を設定(O)...\] &gt; \[全般\]
+
+全般オプション<br>
+　　　　　　　プログラムの機能: ☑ Open new files in tabs<br>
+　　　　　　　　　　　　　　 　 ☑ Switch to existing tab if file is already open<br>
+
 ## 使い方 {#jf24f8bb}
 
 ### コマンドラインオプション {#md2d6a7f}
