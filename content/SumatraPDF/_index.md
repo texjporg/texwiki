@@ -12,7 +12,7 @@ pukiwiki: "SumatraPDF"
 
 SumatraPDF は Windows で動作するタブ切り替え型の軽量な PDF ビューアです。
 SVG[^1], eBook (ePub, MOBI), Comic Book (CBZ, CBR), DjVu, XPS, CHM などの形式も閲覧できます。
-[SyncTeX](/SyncTeX/) への対応，ファイルの自動更新機能もあり，LaTeX のプレビューアに向いています。
+[SyncTeX](/SyncTeX/) への対応、ファイルの自動更新機能もあり、LaTeX のプレビューアに向いています。
 PDF ファイルだけではなく PostScript ファイルも表示可能です。
 PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要です。
 
