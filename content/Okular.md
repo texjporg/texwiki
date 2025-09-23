@@ -9,9 +9,8 @@ pukiwiki: "Okular"
 
 ## [Okular](https://okular.kde.org/) {#x3070edc}
 
-Okular は KDE Plasma デスクトップに搭載されている、PDF ファイルが表示可能なドキュメント・ビューアです。
-[SyncTeX](/SyncTeX/) に対応しています。
-ファイルの自動更新機能があります。
+Okular は KDE Plasma デスクトップに搭載されている、PDF ファイルが表示可能なドキュメントビューアです。
+[SyncTeX](/SyncTeX/) への対応、ファイルの自動更新機能もあり、PostScript を PDF としてインポートできます。
 初期設定では無効になっていますが、ファイルをタブで開く機能もあります。
 
 ***
@@ -140,6 +139,10 @@ Options:
 Arguments:
   urls                       開く文書。標準入力から読む場合は “-” を指定してください。
 ```
+
+### PostScript を PDF としてインポート {#d2bee3bd}
+
+\[ファイル(F)\] &gt; \[PostScript を PDF としてインポート(I)...\]
 
 ## SyncTeX {#ya8f4753}
 
