@@ -11,7 +11,8 @@ pukiwiki: "Okular"
 
 Okular は KDE Plasma デスクトップに搭載されている、PDF ファイルが表示可能なドキュメント・ビューアです。
 [SyncTeX](/SyncTeX/) に対応しています。
-ファイルの自動更新機能もあります。
+ファイルの自動更新機能があります。
+初期設定では無効になっていますが、ファイルをタブで開く機能もあります。
 
 ***
 
@@ -96,10 +97,6 @@ MSYS2 でインストールすることもできます。
 - [https://software.opensuse.org/package/okular](https://software.opensuse.org/package/okular)
 - [https://software.opensuse.org/package/okular-spectre](https://software.opensuse.org/package/okular-spectre)
 
-## 代替フォントの設定 {#o2eb9a55}
-
-- [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](https://fusion0202.blog.jp/archives/603103.html)
-
 ## ファイルをタブで開く設定 {#w7907039}
 
 ファイルをタブで開くようにするには以下の設定を行います。
@@ -109,6 +106,10 @@ MSYS2 でインストールすることもできます。
 全般オプション<br>
 　　　　　　　プログラムの機能: ☑ Open new files in tabs<br>
 　　　　　　　　　　　　　　 　 ☑ Switch to existing tab if file is already open<br>
+
+## 代替フォントの設定 {#o2eb9a55}
+
+- [KDE-Okular や Texmaker で和文フォント非埋め込みPDFを表示させるには](https://fusion0202.blog.jp/archives/603103.html)
 
 ## 使い方 {#jf24f8bb}
 
