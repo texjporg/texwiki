@@ -220,6 +220,8 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
 - [Papers](/Papers/)：GNOME 標準の PDF ビューア
+- [Atril](https://github.com/mate-desktop/atril)：MATE 標準の PDF ビューア
+- [Xreader](https://github.com/linuxmint/xreader)：Linux Mint Cinnamon 標準の PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
