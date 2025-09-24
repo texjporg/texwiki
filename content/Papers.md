@@ -25,14 +25,23 @@ GNOME 49 (2025-09-17) で標準のドキュメントビューアーが Evince �
 Papers では Evince の機能である SyncTeX、PostScript、DVI のサポートが削除されました。
 
 - [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
-    - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン 46.0 で Evince から Papers に名称変更
-    - [Drop Synctex support](https://gitlab.gnome.org/GNOME/papers/-/commit/59409c2f18137ea794a21041b0a1a71367f255ed) &lt;-- バージョン 46.0 で SyncTeX をサポート対象外に
+    - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン [46.0](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-460) で Evince から Papers に名称変更
+    - [Drop Synctex support](https://gitlab.gnome.org/GNOME/papers/-/commit/59409c2f18137ea794a21041b0a1a71367f255ed) &lt;-- バージョン [46.0](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-460) で SyncTeX をサポート対象外に
         - [Synctex support](https://gitlab.gnome.org/GNOME/papers/-/issues/47) &lt;-- SyncTeX サポート復活の要望
         - [Draft: libdocument: restore synctex support](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/90) &lt;-- SyncTeX サポート復活のマージリクエスト
-    - [Remove DVI support](https://gitlab.gnome.org/GNOME/papers/-/commit/edf8c1a71ca56ab0f99ccb27db3fa467137b97b2) &lt;-- バージョン 46.0 で DVI をサポート対象外に
+    - [Remove DVI support](https://gitlab.gnome.org/GNOME/papers/-/commit/edf8c1a71ca56ab0f99ccb27db3fa467137b97b2) &lt;-- バージョン [46.0](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-460) で DVI をサポート対象外に
     - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/papers/-/tags/46.0)
-    - [libdocument: backends: remove PostScript backend](https://gitlab.gnome.org/GNOME/papers/-/commit/5ca1f851babab56ffdb0023410626903929b396f) &lt;-- バージョン 47.1 で PostScript をサポート対象外に
+    - [libdocument: backends: remove PostScript backend](https://gitlab.gnome.org/GNOME/papers/-/commit/5ca1f851babab56ffdb0023410626903929b396f) &lt;-- バージョン [48.beta](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-48beta) で PostScript をサポート対象外に
         - [What to do with PostScript support?](https://gitlab.gnome.org/GNOME/papers/-/issues/151) &lt;-- PostScript サポートについて
+        - [libdocument: backends: remove XPS and PostScript backends](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/367) &lt;-- PostScript のバックエンドの削除について
+
+### リリース情報 {#edce1549}
+
+- [https://gitlab.gnome.org/GNOME/papers/-/tags](https://gitlab.gnome.org/GNOME/papers/-/tags)
+
+### ChangeLog {#g9f7c4d0}
+
+- [https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md)
 
 ## ダウンロード {#ybca190a}
 
@@ -49,6 +58,9 @@ Papers では Evince の機能である SyncTeX、PostScript、DVI のサポー�
 
 ### コマンドラインオプション {#lca61f1a}
 
+- [https://gitlab.gnome.org/GNOME/papers/-/blob/main/shell/src/application.rs](https://gitlab.gnome.org/GNOME/papers/-/blob/main/shell/src/application.rs)
+- [https://gitlab.gnome.org/GNOME/papers/-/blob/main/po/ja.po](https://gitlab.gnome.org/GNOME/papers/-/blob/main/po/ja.po)
+
 ```
 $ papers --help-all
 用法:
@@ -63,12 +75,12 @@ GApplication Options:
   --gapplication-service       GApplication サービスモードに入る（D-Bus サービスファイル使用）
 
 アプリケーションのオプション:
-  -p, --page-label=PAGE        表示するドキュメントのページラベル
-  -i, --page-index=NUMBER      表示するドキュメントのページ番号
-  -n, --named-dest=DEST        表示する Named destination
-  -f, --fullscreen             フルスクリーンモードで起動する
-  -s, --presentation           プレゼンテーションモードで起動する
-  --version                    Show the version of the program.
+  -p, --page-label=PAGE        表示するドキュメントのページラベル。
+  -i, --page-index=NUMBER      表示するドキュメントのページ番号。
+  -n, --named-dest=DEST        表示する名前付きリンク先。
+  -f, --fullscreen             papers をフルスクリーンモードで実行する。
+  -s, --presentation           プレゼンテーションモードで実行する。
+  --version                    プログラムのバージョンを表示する。
 ```
 
 ### Night Mode（夜間モード） {#v40d9cc7}
