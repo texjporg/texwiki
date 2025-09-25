@@ -220,8 +220,8 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 
 - [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
 - [Papers](/Papers/)：GNOME 標準の PDF ビューア
-- [Atril](https://github.com/mate-desktop/atril)：MATE 標準の PDF ビューア
-- [Xreader](https://github.com/linuxmint/xreader)：Linux Mint Cinnamon 標準の PDF ビューア
+- [Atril](/Atril/)：MATE 標準の PDF ビューア
+- [Xreader](/Xreader/)：X-Apps の PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
@@ -232,6 +232,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 などがあります．
 ほかにも
 
+- [PDF, PS and DjVu - ArchWiki](https://wiki.archlinux.org/title/PDF,_PS_and_DjVu)
 - [List of applications/Documents - ArchWiki](https://wiki.archlinux.org/index.php/List_of_applications/Documents)
 - [Get a Free Software PDF reader!](http://pdfreaders.org/)
     <!-- -[[A PDF viewer supporting SyncTeX for Gnome:http://askubuntu.com/questions/23322/a-pdf-viewer-supporting-synctex-for-gnome]] -->
