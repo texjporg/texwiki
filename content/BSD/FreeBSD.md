@@ -190,6 +190,7 @@ make &amp;&amp; make installで導入できます．
 <tbody>
 <tr><td><a href="/Ghostscript/">Ghostscript</a></td><td><a href="https://www.freshports.org/print/ghostscript10/">print/ghostscript10</a></td><td>PostScript and PDF interpreter</td></tr>
 <tr><td><a href="/Okular/">Okular</a></td><td><a href="https://www.freshports.org/graphics/okular">graphics/okular</a></td><td>KDE universal document viewer</td></tr>
+<tr><td><a href="/Atril/">Atril</a></td><td><a href="https://www.freshports.org/graphics/atril">graphics/atril</a></td><td>MATE multi-format document viewer</td></tr>
 </tbody>
 </table>
 
