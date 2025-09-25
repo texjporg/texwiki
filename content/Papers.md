@@ -22,7 +22,7 @@ Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Boo
 
 GNOME 49 (2025-09-17) で標準のドキュメントビューアーが Evince から Papers に変更されました。--&gt; [https://release.gnome.org/49/#new-document-viewer](https://release.gnome.org/49/#new-document-viewer)
 
-Papers では Evince の機能である SyncTeX、PostScript、DVI のサポートが削除されました。
+Papers では Evince の機能である SyncTeX、XPS、PostScript、DVI のサポートが削除されました。
 
 - [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
     - [Rebrand Evince to Papers](https://gitlab.gnome.org/GNOME/papers/-/commit/4341dc7988ab9b31eefc7f283dca1c57878de970) &lt;-- バージョン [46.0](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-460) で Evince から Papers に名称変更
@@ -31,9 +31,10 @@ Papers では Evince の機能である SyncTeX、PostScript、DVI のサポー�
         - [Draft: libdocument: restore synctex support](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/90) &lt;-- SyncTeX サポート復活のマージリクエスト
     - [Remove DVI support](https://gitlab.gnome.org/GNOME/papers/-/commit/edf8c1a71ca56ab0f99ccb27db3fa467137b97b2) &lt;-- バージョン [46.0](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-460) で DVI をサポート対象外に
     - [Dropped support for DVI file format.<br>Dropped synctex support.](https://gitlab.gnome.org/GNOME/papers/-/tags/46.0)
+    - [libdocument: backends: remove XPS support](https://gitlab.gnome.org/GNOME/papers/-/commit/3aa9c695e533705fe3cadba07c75f5f8ee5a6955) &lt;-- バージョン [48.beta](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-48beta) で XPS をサポート対象外に
     - [libdocument: backends: remove PostScript backend](https://gitlab.gnome.org/GNOME/papers/-/commit/5ca1f851babab56ffdb0023410626903929b396f) &lt;-- バージョン [48.beta](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md?ref_type=heads#papers-48beta) で PostScript をサポート対象外に
         - [What to do with PostScript support?](https://gitlab.gnome.org/GNOME/papers/-/issues/151) &lt;-- PostScript サポートについて
-        - [libdocument: backends: remove XPS and PostScript backends](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/367) &lt;-- PostScript のバックエンドの削除について
+        - [libdocument: backends: remove XPS and PostScript backends](https://gitlab.gnome.org/GNOME/papers/-/merge_requests/367) &lt;-- XPS と PostScript バックエンドの削除について
 
 ### リリース情報 {#edce1549}
 
