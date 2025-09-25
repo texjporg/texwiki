@@ -7,4 +7,6 @@ pukiwiki: "Xreader"
 
 # Xreader
 
-## Xreader {#gcc7d137}
+## [Xreader](https://github.com/linuxmint/xreader) {#gcc7d137}
+
+- [GitHub - linuxmint/xreader: A generic Document Reader](https://github.com/linuxmint/xreader)
