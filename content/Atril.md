@@ -9,6 +9,8 @@ pukiwiki: "Atril"
 
 ## [Atril](https://github.com/mate-desktop/atril) {#x498e285}
 
+Atril は MATE デスクトップのドキュメントビューアーです。SyncTeX に対応しています。
+
 - [GitHub - mate-desktop/atril: A document viewer for MATE](https://github.com/mate-desktop/atril)
 
 ### リリース情報 {#re025d19}
@@ -23,6 +25,14 @@ pukiwiki: "Atril"
 
 ### インストール {#n40b8ac1}
 
-#### Arch Linux {#s35b31c9}
+#### Linux {#s35b31c9}
 
 - [https://archlinux.org/packages/?name=atril](https://archlinux.org/packages/?name=atril)
+- [https://packages.ubuntu.com/atril](https://packages.ubuntu.com/atril)
+- [https://packages.debian.org/atril](https://packages.debian.org/atril)
+- [https://packages.fedoraproject.org/pkgs/atril/atril/](https://packages.fedoraproject.org/pkgs/atril/atril/)
+- [https://software.opensuse.org/package/atril](https://software.opensuse.org/package/atril)
+
+### SyncTeX {#ra20a002}
+
+[pluma-plugins](https://github.com/mate-desktop/pluma-plugins) の [synctex](https://github.com/mate-desktop/pluma-plugins/tree/master/plugins/synctex) を参照。
