@@ -75,6 +75,7 @@ TeX の使い方は以下を参照してください。
 - [難読化されたTeXの解読（tkbctf3 Misc 100 Real World TeX）](https://kusano-k.hatenadiary.com/entry/20140506/1399356192)
 - [Notes On Programming in TeX](https://pgfplots.sourceforge.net/TeX-programming-notes.pdf) (PDF)
 - [プログラマーのためプログラミングLaTeX](https://itchyny.hatenablog.com/entry/20121027/1351299600)
+- [TeXの出力を文字列として得る術（テコテフ⹀TecoTeX）](https://zenn.dev/tyty/articles/e4b62474657e79)
 
 ### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
 
