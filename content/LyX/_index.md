@@ -630,5 +630,7 @@ sudo zypper install lyx
 - [https://www.lyx.org/trac/log/lyxgit/](https://www.lyx.org/trac/log/lyxgit/)
 - [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
     - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
+- [https://salsa.debian.org/debian/lyx](https://salsa.debian.org/debian/lyx)
+    - [https://salsa.debian.org/debian/lyx/-/commits/debian/latest](https://salsa.debian.org/debian/lyx/-/commits/debian/latest)
 
 <!-- **派生版 [#h5bb137d] -->
