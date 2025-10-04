@@ -61,6 +61,10 @@ Notable Features
 
 ***
 
+### お知らせ {#t429bed2}
+
+GNOME 42 (2022-03-23) で標準のテキストエディターが gedit から GNOME Text Editor に変更されました。--&gt; [https://release.gnome.org/42/#new-default-apps](https://release.gnome.org/42/#new-default-apps)
+
 ### 動作環境 {#kd6ded02}
 
 Linux, Windows, macOS
@@ -92,7 +96,6 @@ Linux, Windows, macOS
 ### macOS {#j8f7f037}
 
 - [https://formulae.brew.sh/formula/gedit](https://formulae.brew.sh/formula/gedit)
-    - [https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gedit.rb](https://github.com/Homebrew/homebrew-core/blob/master/Formula/g/gedit.rb)
 
 ## プラグイン {#c01f900c}
 
