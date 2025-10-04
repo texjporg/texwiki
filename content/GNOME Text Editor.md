@@ -17,3 +17,7 @@ GNOME Text Editor は、シンプルで使いやすいテキストエディタ�
 - [https://gitlab.gnome.org/GNOME/gtksourceview](https://gitlab.gnome.org/GNOME/gtksourceview)
     - [https://gitlab.gnome.org/GNOME/gtksourceview/-/blob/master/data/language-specs/latex.lang](https://gitlab.gnome.org/GNOME/gtksourceview/-/blob/master/data/language-specs/latex.lang)
 - [https://flathub.org/ja/apps/org.gnome.TextEditor](https://flathub.org/ja/apps/org.gnome.TextEditor)
+
+### お知らせ {#r110cc90}
+
+GNOME 42 (2022-03-23) で標準のテキストエディターが gedit から GNOME Text Editor に変更されました。--&gt; [https://release.gnome.org/42/#new-default-apps](https://release.gnome.org/42/#new-default-apps)
