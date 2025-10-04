@@ -210,6 +210,8 @@ LaTeX での文書作成を支援するための統合環境・エディタが�
         - [YaTeX](/YaTeX/)（野鳥）
     - [Vim](/Vim/)/[Neovim](/Neovim/)
         - [VimTeX](/VimTeX/)
+    - [Kate](/Kate/)
+    - [GNOME Text Editor](</GNOME Text Editor/>)
 
 ## PDF ファイルビューア {#pdfviewer}
 
