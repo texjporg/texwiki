@@ -17,6 +17,7 @@ Papers は次の文書をサポートしています: PDF, DjVu, TIFF, Comic Boo
 - [GNOMEへようこそ – Papers](https://welcome.gnome.org/ja/app/Papers/)
 - [GNOME / Papers · GitLab](https://gitlab.gnome.org/GNOME/papers)
 - [GNOME PDF viewer app Papers](https://lists.debian.org/debian-accessibility/2025/02/msg00018.html)
+- [PapersはGNOMEのデフォルトPDFビューアとしてEvinceに取って代わることが期待されています。](https://ja.linux-terminal.com/?p=8507)
 
 ### お知らせ {#t48892bd}
 
