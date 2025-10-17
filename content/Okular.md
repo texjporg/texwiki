@@ -9,7 +9,7 @@ pukiwiki: "Okular"
 
 ## [Okular](https://okular.kde.org/) {#x3070edc}
 
-Okular は KDE Plasma デスクトップに搭載されている、PDF ファイルが表示可能なドキュメントビューアです。
+Okular は KDE Plasma デスクトップに搭載されている、PDF ファイルが表示可能な汎用文書ビューアです。
 [SyncTeX](/SyncTeX/) への対応、ファイルの自動更新機能もあり、PostScript を PDF としてインポートできます。
 初期設定では無効になっていますが、ファイルをタブで開く機能もあります。
 
@@ -114,29 +114,43 @@ MSYS2 でインストールすることもできます。
 
 ### コマンドラインオプション {#md2d6a7f}
 
+- [https://invent.kde.org/graphics/okular/-/blob/master/shell/main.cpp](https://invent.kde.org/graphics/okular/-/blob/master/shell/main.cpp)
+- [https://invent.kde.org/graphics/okular/-/blob/master/po/ia/okular.po](https://invent.kde.org/graphics/okular/-/blob/master/po/ia/okular.po)
 - [https://github.com/KDE/okular/blob/master/shell/main.cpp](https://github.com/KDE/okular/blob/master/shell/main.cpp)
 - [https://github.com/KDE/okular/blob/master/po/ja/okular.po](https://github.com/KDE/okular/blob/master/po/ja/okular.po)
 
 ```
-$ okular --help
-Usage: okular [options] urls
+$ okular --help-all
+使い方: okular [オプション] urls
 Okular, 汎用文書ビューア
 
-Options:
-  -h, --help                 Displays this help.
-  -v, --version              Displays version information.
-  --author                   Show author information.
-  --license                  Show license information.
-  --desktopfile <file name>  The base file name of the desktop entry for this
-                             application.
+オプション:
+  -?, -h, --help              Displays help on commandline options.
+  --help-all                 Displays help, including generic Qt options.
+  -v, --version              バージョン情報を表示する。
+  --author                   作者に関する情報を表示します。
+  --license                  ライセンス情報を表示します。
+  --desktopfile <ファイル名>  このアプリケーションのデスクトップエントリのベースファイル名です。
   -p, --page <number>        表示する文書のページ
   --presentation             文書をプレゼンテーションモードで開く
   --print                    Start with print dialog
   --print-and-exit           Start with print dialog and exit after printing
   --unique                   1 つのインスタンスのみ許可
   --noraise                  Not raise window
+  --find <string>            Find a string on the text
+  --editor-cmd <string>      Sets the external editor command
+  --qmljsdebugger <value>    Activates the QML/JS debugger with a specified port. The value must be of format port:1234[,block]. "block" makes the application wait for a connection.
+  --platform <platformName[:options]> QPA plugin. See QGuiApplication documentation for available options for each plugin.
+  --platformpluginpath <path> Path to the platform plugins.
+  --platformtheme <theme>      Platform theme.
+  --plugin <plugin>          Additional plugins to load, can be specified multiple times.
+  --qwindowgeometry <geometry> Window geometry for the main window, using the X11-syntax, like 100x100+50+50.
+  --qwindowicon <icon>       Default window icon.
+  --qwindowtitle <title>     Title of the first window.
+  --reverse                  Sets the application's layout direction to Qt::RightToLeft (debugging helper).
+  --session <session>        Restores the application from an earlier session.
 
-Arguments:
+引数:
   urls                       開く文書。標準入力から読む場合は “-” を指定してください。
 ```
 
@@ -180,3 +194,5 @@ texstudio "%f" -line %l
 を設定します．
 
 Okular 上で Shift + 左クリックを実行すると TeXstudio が起動して TeX 文書の対応する行にジャンプします．
+
+Okular 22.03.80 (2022-03-12) 以降ではコマンドラインオプションから設定できるようになりました。--&gt; [Adds option editor-cmd to the commandline](https://invent.kde.org/graphics/okular/-/commit/147a638619b4f8bbe80f42b9279c1e993cafc783)
