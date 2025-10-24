@@ -33,7 +33,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)
     - [明星大学学術機関リポジトリ - LyX におけるOnTheSpot様式の実装](https://meisei.repo.nii.ac.jp/records/2000282)
     - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
-    - [LyX 2.5 beta2 が出ました．とくに問題がなければ，速やかにリリースキャンディデートに移行する見込みです．](https://x.com/twit_uji/status/1965031290719338745)
+    - [LyX 2.5 Release Candidate 1 が出ました．](https://x.com/twit_uji/status/1980773216374476955)
 
 ### 動作環境 {#xd7ee343}
 
@@ -83,35 +83,35 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250beta2-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250rc1-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="https://raw.githubusercontent.com/cburschka/lyx/refs/heads/master/lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-250beta2-Installer-1-x64.exe</ins><br>
+　　　　　　 <ins>LyX-250rc1-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Downloads<br>
-　　　　サイズ:　　　　　　　　57.9 MB (60,729,982 バイト)<br>
-　　　　ディスク上　　　　　　57.9 MB (60,731,392 バイト)<br>
+　　　　サイズ:　　　　　　　　58.3 MB (61,144,589 バイト)<br>
+　　　　ディスク上　　　　　　58.3 MB (61,145,088 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2025年9月7日、00:00:00<br>
-　　　　更新日時:　　　　　　2025年9月7日、00:00:00<br>
-　　　　アクセス日時:　　　　2025年9月7日、00:00:00<br>
+　　　　作成日時:　　　　　　2025年10月20日、00:00:00<br>
+　　　　更新日時:　　　　　　2025年10月20日、00:00:00<br>
+　　　　アクセス日時:　　　　2025年10月20日、00:00:00<br>
 
 <br>
 
 　　　　属性:　　　　　　☐読み取り専用(R)　　☐隠しファイル(H)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 詳細設定(D)... \]</span><br>
-　　　　セキュリティ:　　このファイルは他のコンピューターから取得し　☑許可する(K) &lt;-- 許可するをチェックして \[適用(A)\] と \[OK\] をクリック<br>
-　　　　　　　　　　　　　 たものです。このコンピューターを保護するた<br>
-　　　　　　　　　　　　　 め、このファイルへのアクセスはブロックされる<br>
-　　　　　　　　　　　　　 可能性があります。<br>
+　　　　セキュリティ:　　このファイルは他のコンピューターから取得し<br>
+　　　　　　　　　　　　 たものです。このコンピューターを保護するた　　☑許可する(K) &lt;-- 許可するをチェックして \[適用(A)\] と \[OK\] をクリック<br>
+　　　　　　　　　　　　 め、このファイルへのアクセスはブロックされる<br>
+　　　　　　　　　　　　 可能性があります。<br>
 
 <br>
 
