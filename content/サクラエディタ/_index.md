@@ -88,8 +88,9 @@ Unicode 化された TeX を使う場合は UTF-8 を選択します．
 
 #### 正規表現ライブラリ {#j57d8050}
 
-- [bregonig.dll](http://k-takata.o.oo7.jp/mysoft/bregonig.html)
+- [bregonig.dll](https://web.archive.org/web/20250916074147/http://k-takata.o.oo7.jp/mysoft/bregonig.html)
 - [k_takata / bregonig / ダウンロード &mdash; Bitbucket](https://bitbucket.org/k_takata/bregonig/downloads/)
+    - [bron420.zip](https://web.archive.org/web/20201012050938/https://bbuseruploads.s3.amazonaws.com/7d3d1e84-84fc-4435-b34e-9a5f791dbc58/downloads/72d305ae-4a91-4fc6-9586-dec019c5ff84/bron420.zip?Signature=ALbix1Qj6dR3ikDwiKGnVGKb5GY%3D&Expires=1602480732&AWSAccessKeyId=AKIA6KOSE3BNJRRFUUX6&versionId=cHiLeu80ugk7KwsgI789tD5ySI_l.dmH&response-content-disposition=attachment%3B%20filename%3D%22bron420.zip%22)
 - [GitHub - k-takata/bregonig: This is a source code repository of bregonig.dll regular expression library.](https://github.com/k-takata/bregonig)
     - [K.Takata さん / X](https://x.com/k_takata)
 
