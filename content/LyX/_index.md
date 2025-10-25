@@ -32,7 +32,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
 - LyX 2.5 で日本語入力のかな漢字変換の際に表示される文字列が既存の文章の文字列を上書きして表示していた（[OverTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-16/index.html)）のが上書きせずに表示するように変更されました（[OnTheSpot](https://docs.oracle.com/cd/E19455-01/806-2798/appendixa-6/index.html)）。
     - [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)
     - [明星大学学術機関リポジトリ - LyX におけるOnTheSpot様式の実装](https://meisei.repo.nii.ac.jp/records/2000282)
-    - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
+    - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://codeberg.org/LyX-org/lyx/commit/b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
     - [LyX 2.5 Release Candidate 1 が出ました．](https://x.com/twit_uji/status/1980773216374476955)
 
 ### 動作環境 {#xd7ee343}
@@ -531,6 +531,10 @@ sudo port install lyx
 
 ### Linux {#g8a44f96}
 
+#### Flatpak {#c888fa06}
+
+- [https://flathub.org/ja/apps/org.lyx.LyX](https://flathub.org/ja/apps/org.lyx.LyX)
+
 #### Arch Linux {#p780bd78}
 
 - [https://aur.archlinux.org/packages/lyx](https://aur.archlinux.org/packages/lyx)
@@ -613,23 +617,21 @@ sudo zypper install lyx
 ### License {#pb9a4019}
 
 - [GPLv2](https://www.lyx.org/License) ([日本語訳](https://www.lyx.org/WebJa.License))
-- [git.lyx.org Git - lyx.git/blob - COPYING](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=COPYING;hb=HEAD)
+- [lyx/COPYING at master - LyX-org/lyx - Codeberg.org](https://codeberg.org/LyX-org/lyx/src/branch/master/COPYING)
 
 ### リリース情報 {#k8ba7cf7}
 
 - [LyX | ニュース](https://www.lyx.org/WebJa.News)
-- [https://git.lyx.org/gitweb/?p=lyx.git;a=tags](https://git.lyx.org/gitweb/?p=lyx.git;a=tags)
+- [https://codeberg.org/LyX-org/lyx/tags](https://codeberg.org/LyX-org/lyx/tags)
 
 を参照．
 
 ### ChangeLog {#uf3685b6}
 
-- [git.lyx.org](https://git.lyx.org/gitweb/?p=lyx.git;a=summary)
-    - [shortlog](https://git.lyx.org/gitweb/?p=lyx.git;a=shortlog)
+- [LyX-org/lyx: Official mirror of the main LyX Git repository - Codeberg.org](https://codeberg.org/LyX-org/lyx)
+    - [コミットログ](https://codeberg.org/LyX-org/lyx/commits/branch/master)
 - [timeline](https://www.lyx.org/trac/timeline)
 - [https://www.lyx.org/trac/log/lyxgit/](https://www.lyx.org/trac/log/lyxgit/)
-- [https://code.launchpad.net/lyx](https://code.launchpad.net/lyx)
-    - [https://code.launchpad.net/~lyx-devel/lyx/trunk](https://code.launchpad.net/~lyx-devel/lyx/trunk)
 - [https://salsa.debian.org/debian/lyx](https://salsa.debian.org/debian/lyx)
     - [https://salsa.debian.org/debian/lyx/-/commits/debian/latest](https://salsa.debian.org/debian/lyx/-/commits/debian/latest)
 
