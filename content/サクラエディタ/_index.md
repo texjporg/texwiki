@@ -13,14 +13,14 @@ pukiwiki: "サクラエディタ"
 サクラエディタは国産のテキストエディタです．
 サクラエディタは
 
-- TeX の色分け
-- TeX の入力補完
-- TeX のアウトライン解析
+- LaTeX の色分け
+- LaTeX の入力補完
+- LaTeX のアウトライン解析
 
 に対応しています．
 
 - [サクラエディタ - GitHub Pages](https://sakura-editor.github.io/)
-- [Sakura Editor Project Top Page - OSDN](https://osdn.net/projects/sakura-editor/)
+- [GitHub - sakura-editor/sakura: SAKURA Editor (Japanese text editor for MS Windows)](https://github.com/sakura-editor/sakura)
 - [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
     - 掲示板\[[一般\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
     - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
@@ -32,13 +32,19 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 10
+Windows 11, Windows 10
 
 ### ダウンロード {#p4ea6725}
 
 リリース版
 
 - [https://github.com/sakura-editor/sakura/releases](https://github.com/sakura-editor/sakura/releases)
+
+> 解説
+>
+> - [サクラエディタはWindows11でも動く？ダウンロード対象とインストール方法 - プロエンジニア](https://proengineer.internous.co.jp/content/columnfeature/5319)
+> - [【Windows11】サクラエディタをダウンロード・インストールする方法 - Steganom](https://steganom.co.jp/windows11-download-install-sakura-editor/)
+> - [【サクラエディタ】インストールするやり方を解説します（Windows11向け） | たいらのエンジニアノート](https://www.tairaengineer-note.com/sakura-editor-install-for-windows11/)
 
 開発版
 
@@ -140,7 +146,7 @@ $ と $，$$ と $$ の間に \\$ のある場合も色分けします．
 
 ### 入力補完 {#b1c33ed1}
 
-TeX の入力補完機能があります．
+LaTeX の入力補完機能があります．
 
 入力補完は，メニューの \[ツール(T)\] &gt; \[入力補完(/)\] または Ctrl+Space で実行できます．
 単語ファイルを作成するのが面倒な場合は，候補の「編集中のファイル」と「強調キーワード」にチェックを入れると，単語ファイルを作成しなくても編集中のファイルと強調キーワードから候補を探して補完してくれます．
@@ -149,7 +155,7 @@ TeX の入力補完機能があります．
 
 ### アウトライン解析 {#kb277c8a}
 
-TeX のアウトライン解析機能があります．
+LaTeX のアウトライン解析機能があります．
 
 アウトライン解析は，メニューの \[検索(S)\] &gt; \[アウトライン解析(L)...\] で実行できます．
 アウトライン解析画面のドッキングも可能です．
@@ -216,3 +222,5 @@ $ wine sakura.exe
 ### 派生版 {#mc0d532c}
 
 - [紅桜エディタ](https://github.com/suzzsegv/BeniZakura)
+- [SAKURA Editor (Japanese text editor for MS Windows) 改良版](https://github.com/niki/sakura)
+    - [サクラエディタを改良してるんよっ](https://note.com/katakotori/n/n7463242cc326)
