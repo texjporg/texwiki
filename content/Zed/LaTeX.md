@@ -7,7 +7,10 @@ pukiwiki: "Zed/LaTeX"
 
 # Zed/LaTeX
 
-[Zed](/Zed/) &gt; laTeX
+[Zed](/Zed/) &gt; LaTeX
 
-- [LaTeX — Zed Extension](https://zed.dev/extensions/latex)
+- [https://zed.dev/extensions?query=LaTeX](https://zed.dev/extensions?query=LaTeX)
+    - [LaTeX — Zed Extension](https://zed.dev/extensions/latex)
+    - [TeXpresso — Zed Extension](https://zed.dev/extensions/texpresso)
 - [GitHub - rzukic/zed-latex](https://github.com/rzukic/zed-latex)
+- [GitHub - lnay/zed-texpresso: Zed extension to use TeXpresso](https://github.com/lnay/zed-texpresso)
