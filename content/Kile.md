@@ -19,7 +19,7 @@ Kile は LaTeX の統合環境です．
 
 SyncTeX に対応しています．
 
-エディタ部分は [KTextEditor](https://api.kde.org/frameworks/ktexteditor/html/) を使用しています．
+エディタ部分は [KTextEditor](https://invent.kde.org/frameworks/ktexteditor) を使用しています．
 
 - [Kile - KDE Applications](https://apps.kde.org/kile/)
 - [Kile - an Integrated LaTeX Environment](https://kile.sourceforge.io/)
