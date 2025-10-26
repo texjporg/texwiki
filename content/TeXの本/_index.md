@@ -125,7 +125,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
     （Independently published (個人出版)，2024年04月12日発売，税込 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
-    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。--&gt; [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF、2025年07月05日更新)
+    - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。--&gt; [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF、2025年08月24日更新)
 
 #### 2023年 {#year2023}
 
