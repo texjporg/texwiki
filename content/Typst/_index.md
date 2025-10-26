@@ -45,3 +45,4 @@ Typst は新しい組版ソフトです。
 - [Typst lang:ja - 検索 / X](https://x.com/search?q=Typst+lang%3Aja&f=live)
 - [Typstの記事一覧 | Zenn](https://zenn.dev/topics/typst)
 - [Typstとは？開発に役立つ使い方、トレンド記事やtips - Qiita](https://qiita.com/tags/typst)
+- [「Typst」の人気の記事一覧｜note ――つくる、つながる、とどける。](https://note.com/search?context=note&q=Typst&sort=new)
