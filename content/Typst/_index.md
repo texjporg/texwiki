@@ -12,7 +12,7 @@ pukiwiki: "Typst"
 
 Typst は新しい組版ソフトです。
 
-- [Typst: Compose papers faster](https://typst.app/)
+- [Typst: The new foundation for documents](https://typst.app/)
 - [GitHub - typst/typst: A new markup-based typesetting system that is powerful and easy to learn.](https://github.com/typst/typst)
 
 ### Typst 公式ドキュメント {#o7845bc9}
