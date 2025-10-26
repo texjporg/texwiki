@@ -534,6 +534,7 @@ sudo port install lyx
 #### Flatpak {#c888fa06}
 
 - [https://flathub.org/ja/apps/org.lyx.LyX](https://flathub.org/ja/apps/org.lyx.LyX)
+- [Lyxをflatpakで入れようとするとtexliveのフルセット(6GB)が付いてくるので軽量ではないです。aptで。](https://x.com/ytomino/status/1976731658788520270)
 
 #### Arch Linux {#p780bd78}
 
