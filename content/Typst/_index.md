@@ -46,3 +46,4 @@ Typst は新しい組版ソフトです。
 - [Typstの記事一覧 | Zenn](https://zenn.dev/topics/typst)
 - [Typstとは？開発に役立つ使い方、トレンド記事やtips - Qiita](https://qiita.com/tags/typst)
 - [「Typst」の人気の記事一覧｜note ――つくる、つながる、とどける。](https://note.com/search?context=note&q=Typst&sort=new)
+- [Typst のお勉強 \[text.Baldanders.info\]](https://text.baldanders.info/typst/)
