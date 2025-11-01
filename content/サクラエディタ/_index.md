@@ -161,7 +161,7 @@ LaTeX のアウトライン解析機能があります．
 アウトライン解析画面のドッキングも可能です．
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
-- [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/DockingOutline)
+- [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](https://web.archive.org/web/20211129232016/http://sakura.qp.land.to/?Junk/DockingOutline)
 - [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](https://sourceforge.net/p/sakura-editor/patchunicode/116/)
 
 \[設定(O)\] &gt; \[タイプ別設定(Y)...\] &gt; \[スクリーン\] でアウトライン解析方法を指定できます．
@@ -184,7 +184,7 @@ LaTeX のアウトライン解析機能があります．
 
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
-- [本体へ関連付けツールを組み込み - SakuraEditorWiki](http://sakura.qp.land.to/?Junk/49)
+- [本体へ関連付けツールを組み込み - SakuraEditorWiki](https://web.archive.org/web/20211129233326/http://sakura.qp.land.to/?Junk/49)
 - [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](https://sourceforge.net/p/sakura-editor/patchunicode/148/)
 
 ## Linux で サクラエディタを使う {#pf5d83cb}
