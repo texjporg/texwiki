@@ -17,7 +17,7 @@ pukiwiki: "AUCTeX"
 
 ## AUCTeX とは {#h92ad1b8}
 
-AUCTeX は GNU Emacs 28.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジャーモードです．
+AUCTeX は GNU Emacs で動作する LaTeX, TeX, ConTeXt 用のメジャーモードです．
 
 - [AUCTeX - Sophisticated document creation](https://www.gnu.org/software/auctex/)
     (公式ページ)
@@ -26,6 +26,10 @@ AUCTeX は GNU Emacs 28.1 以降で動作する LaTeX, TeX, ConTeXt 用のメジ
 - [auctex Archives](https://lists.gnu.org/archive/html/auctex/)
 - [CTAN:support/auctex](https://mirror.ctan.org/support/auctex)
 - [EmacsWiki: AUCTeX](https://www.emacswiki.org/emacs/AUCTeX)
+
+### 動作環境 {#s0954c00}
+
+GNU Emacs 28.1 以降
 
 ### License {#j807fd6e}
 
