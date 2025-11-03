@@ -12,8 +12,8 @@ pukiwiki: "Visual Studio Code"
 
 Visual Studio Code は軽量で高機能なテキストエディタです．JavaScript, TypeScript, Node.js を組み込みでサポートしています．
 
-- [Visual Studio Code - Code Editing. Redefined](https://code.visualstudio.com/)
-- [MyTeXpert:Visual Studio Code](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Visual%20Studio%20Code)
+- [Visual Studio Code - The open source AI code editor](https://code.visualstudio.com/)
+- [GitHub - microsoft/vscode: Visual Studio Code](https://github.com/microsoft/vscode)
 
 ***
 
@@ -25,7 +25,7 @@ Windows, macOS, Linux
 
 ### License {#n8c65cf9}
 
-MIT License
+[MIT License](https://github.com/microsoft/vscode/blob/main/LICENSE.txt)
 
 ### 派生版 {#w9aaefab}
 
