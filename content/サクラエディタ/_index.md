@@ -199,6 +199,7 @@ $ wine sakura.exe
 
 ## 関連リンク {#c879d1c4}
 
+- [サクラエディタを Python に対応させるファイルの配布](https://python.snow-flowers.com/python/sakura-editor-python/)
 - [sakurawmemo @ ウィキ](http://www37.atwiki.jp/sakurawmemo/)
 - [「はじめてのサクラエディタ」筆者サポートページ](http://supportdoc.net/support-sakura/)
 - [Sakura EditorでLaTeXを使う](http://physics-station.blogspot.jp/2013/04/sakura-editorlatex.html)
