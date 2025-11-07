@@ -28,7 +28,7 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 11
+Windows
 
 ### ダウンロード {#p4ea6725}
 
@@ -57,16 +57,20 @@ Windows 11
 
 ### コマンドラインオプション {#j41d5a42}
 
+- [コマンドラインオプション](https://sakura-editor.github.io/help/HLP000109.html)
 - [https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp](https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp)
     <!-- -[[コマンドラインオプション:http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html]] -->
-
-- [コマンドラインオプション - SakuraEditorWiki](http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3)
+    <!-- -[[コマンドラインオプション - SakuraEditorWiki:http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3]] -->
 
 ## 設定例 {#l23350b5}
 
 ### 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
-- [help2](https://sourceforge.net/projects/sakura-editor/files/help2/)
+- [サクラエディタヘルプファイル](https://sakura-editor.github.io/help/)
+- [https://github.com/sakura-editor/sakura/tree/master/help/sakura/res](https://github.com/sakura-editor/sakura/tree/master/help/sakura/res)
+    <!-- -[[help2:https://sourceforge.net/projects/sakura-editor/files/help2/]] -->
+
+- [インクリメンタルサーチについて](https://sakura-editor.github.io/help/HLP000008.html)
 - [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
 
