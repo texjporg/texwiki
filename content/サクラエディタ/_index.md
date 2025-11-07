@@ -21,10 +21,6 @@ pukiwiki: "サクラエディタ"
 
 - [サクラエディタ - GitHub Pages](https://sakura-editor.github.io/)
 - [GitHub - sakura-editor/sakura: SAKURA Editor (Japanese text editor for MS Windows)](https://github.com/sakura-editor/sakura)
-- [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
-    - 掲示板\[[一般\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
-    - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
-    - [Members](https://sourceforge.net/p/sakura-editor/_members/)
 
 ***
 
@@ -32,7 +28,7 @@ pukiwiki: "サクラエディタ"
 
 ### 動作環境 {#vfdecfda}
 
-Windows 11, Windows 10
+Windows 11
 
 ### ダウンロード {#p4ea6725}
 
@@ -61,7 +57,9 @@ Windows 11, Windows 10
 
 ### コマンドラインオプション {#j41d5a42}
 
-- [コマンドラインオプション](http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html)
+- [https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp](https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp)
+    <!-- -[[コマンドラインオプション:http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html]] -->
+
 - [コマンドラインオプション - SakuraEditorWiki](http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3)
 
 ## 設定例 {#l23350b5}
@@ -206,6 +204,10 @@ $ wine sakura.exe
 - [そっとプロジェクト＠Ｗｉｋｉ - ソフトウェア/サクラエディタ](http://www19.atwiki.jp/sotto_project/pages/151.html)
 - [Memo/SakuraEditor - DEX Lab](https://dexlab.net/pukiwiki/index.php?Memo/SakuraEditor)
 - [サクラエディタで、対応する括弧を探す。](http://3tackle.blog55.fc2.com/blog-entry-52.html)
+- [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
+    - 掲示板\[[一般\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
+    - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
+    - [Members](https://sourceforge.net/p/sakura-editor/_members/)
 
 ### License {#y5064e03}
 
