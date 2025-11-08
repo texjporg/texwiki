@@ -130,7 +130,7 @@ inverse search の設定はコマンドラインから -inverse-search オプシ
 
 プレビューする場合に複数の SumatraPDF が起動するのを防止したい場合は -reuse-instance オプションを追加します。
 
-- [https://www.sumatrapdfreader.org/manual.html](https://www.sumatrapdfreader.org/manual.html)
+- [https://www.sumatrapdfreader.org/docs/Command-line-arguments](https://www.sumatrapdfreader.org/docs/Command-line-arguments)
 - [https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp](https://github.com/sumatrapdfreader/sumatrapdf/blob/master/src/Flags.cpp)
 
 ### リンク {#pad542dc}
