@@ -56,6 +56,10 @@ LuaLaTeX
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
+: "C:\Program Files\Okular\bin\okular.exe" --unique "file:?am.pdf#src:@ ?c:am.tex"
+
+: "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --single-argument "?am.pdf"
+
 DviPs
 : &nbsp;
 
