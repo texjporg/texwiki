@@ -174,7 +174,7 @@ $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 
 \[設定(<ins>S</ins>)\] &gt; \[Okular を設定(<ins>O</ins>)...\] &gt; \[エディタ\]
 
-例えば [TeXstudio](/TeXstudio/) の場合は
+例えば Windows 版の [TeXstudio](/TeXstudio/) の場合は
 エディタ の項目に
 
 エディタ
@@ -188,7 +188,7 @@ $ okular --unique "file:hoge.pdf#src:30 `pwd`/hoge.tex"
 : &nbsp;
 
 ```
-texstudio "%f" -line %l
+"C:\Program Files\texstudio\texstudio.exe" -line %l "%f"
 ```
 
 を設定します．
