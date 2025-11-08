@@ -47,6 +47,9 @@ MSYS2 で Qt 6 が提供されています。
 
 ## Unicode {#oce7c878}
 
+- [Unicode in Qt](https://doc.qt.io/qt-6/unicode.html)
+- [Qtの基礎 - 文字コード](http://mochiuwiki.e2.valueserver.jp/index.php?title=Qt%E3%81%AE%E5%9F%BA%E7%A4%8E_-_%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89)
+
 ### Qt 5.11 {#f03ec2c2}
 
 One of the larger updates in Qt Core went into our Unicode support. QChar, QString, QText&#x42;oundaryFinder and our algorithm for bidirectional text are now fully compatible with [Unicode 10](http://www.unicode.org/versions/Unicode10.0.0/).
