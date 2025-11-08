@@ -51,17 +51,6 @@ Windows
 <!-- -https://sourceforge.net/projects/sakura-editor/files/ -->
 <!-- -[[サクラエディタ アップローダ その２ | uploader.jp:http://ux.getuploader.com/sakura_editor/]] -->
 
-### 不具合 {#jbc9f4c6}
-
-- [Issues · sakura-editor/sakura · GitHub](https://github.com/sakura-editor/sakura/issues)
-
-### コマンドラインオプション {#j41d5a42}
-
-- [コマンドラインオプション](https://sakura-editor.github.io/help/HLP000109.html)
-- [https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp](https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp)
-    <!-- -[[コマンドラインオプション:http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html]] -->
-    <!-- -[[コマンドラインオプション - SakuraEditorWiki:http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3]] -->
-
 ## 設定例 {#l23350b5}
 
 ### 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
@@ -136,16 +125,6 @@ bregonig.dll が有効になると，検索／置換／Grep で
 $ と $，$$ と $$ の間を色分けするように正規表現キーワードを /\\${1,2}\[\s\S\]\*?\[^\\\\\]\\${1,2}/k に設定します．
 $ と $，$$ と $$ の間に \\$ のある場合も色分けします．
 
-### マクロ {#k426cf51}
-
-[サクラエディタ/マクロ](</サクラエディタ/マクロ/>) を参照．
-
-### スクリプト {#ud39d64a}
-
-#### Happy {#n1688725}
-
-- [Happy](/Happy/)
-
 ### 入力補完 {#b1c33ed1}
 
 LaTeX の入力補完機能があります．
@@ -182,14 +161,38 @@ LaTeX のアウトライン解析機能があります．
 
 ### 関連付け {#jcb237bc}
 
-タイプ別設定一覧からの関連付けが可能です．
+ファイル拡張子関連付けについてはサクラエディタヘルプファイルを参照してください。
 
-詳細は SakuraEditorWiki, PatchUnicode を参照してください．
+- [Windows 10 でのファイル拡張子関連付け](https://sakura-editor.github.io/help/HLP000374.html)
+- [Windows 10 でのファイル拡張子関連付けのための準備作業](https://sakura-editor.github.io/help/HLP000375.html)
 
-- [本体へ関連付けツールを組み込み - SakuraEditorWiki](https://web.archive.org/web/20211129233326/http://sakura.qp.land.to/?Junk/49)
-- [Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け](https://sourceforge.net/p/sakura-editor/patchunicode/148/)
+<!-- タイプ別設定一覧からの関連付けが可能です． -->
+<!--  -->
+<!-- 詳細は SakuraEditorWiki, PatchUnicode を参照してください． -->
+<!--  -->
+<!-- -[[本体へ関連付けツールを組み込み - SakuraEditorWiki:https://web.archive.org/web/20211129233326/http://sakura.qp.land.to/?Junk/49]] -->
+<!-- -[[Sakura Editor / PatchUnicode / #148 タイプ別設定一覧からの関連付け:https://sourceforge.net/p/sakura-editor/patchunicode/148/]] -->
 
-## Linux で サクラエディタを使う {#pf5d83cb}
+## 使い方 {#uda30728}
+
+### コマンドラインオプション {#j41d5a42}
+
+- [コマンドラインオプション](https://sakura-editor.github.io/help/HLP000109.html)
+- [https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp](https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp)
+    <!-- -[[コマンドラインオプション:http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html]] -->
+    <!-- -[[コマンドラインオプション - SakuraEditorWiki:http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3]] -->
+
+### マクロ {#k426cf51}
+
+[サクラエディタ/マクロ](</サクラエディタ/マクロ/>) を参照．
+
+### スクリプト {#ud39d64a}
+
+#### Happy {#n1688725}
+
+- [Happy](/Happy/)
+
+### Linux で サクラエディタを使う {#pf5d83cb}
 
 [Wine](https://www.winehq.org/) を使えば Linux でサクラエディタが使用できます．
 
@@ -225,6 +228,10 @@ $ wine sakura.exe
 ### ChangeLog {#l31b371d}
 
 - [コミットログ](https://github.com/sakura-editor/sakura/commits/master)
+
+### 不具合 {#jbc9f4c6}
+
+- [Issues · sakura-editor/sakura · GitHub](https://github.com/sakura-editor/sakura/issues)
 
 ### 派生版 {#mc0d532c}
 
