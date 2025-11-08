@@ -22,9 +22,9 @@ TeXstudio は [Texmaker](/Texmaker/) から派生[^1]して機能追加・不具
 
 ### Webサイト {#w233c0c1}
 
-- [TeXstudio](https://www.texstudio.org/)
+- [TeXstudio - A LaTeX editor](https://www.texstudio.org/)
 - [GitHub - texstudio-org/texstudio: TeXstudio is a fully featured LaTeX editor. Our goal is to make writing LaTeX documents as easy and comfortable as possible.](https://github.com/texstudio-org/texstudio)
-- [Home · texstudio-org/texstudio Wiki · GitHub](https://github.com/texstudio-org/texstudio/wiki)
+    - [Home · texstudio-org/texstudio Wiki · GitHub](https://github.com/texstudio-org/texstudio/wiki)
 
 ### 動作環境 {#e7cc7bd5}
 
@@ -88,9 +88,9 @@ Debian などでは localization のパッケージ texstudio-l10n として分�
 
 ### 更新履歴 {#w7aac056}
 
-- [https://github.com/texstudio-org/texstudio/commits/master](https://github.com/texstudio-org/texstudio/commits/master)
-- [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md)
 - [https://texstudio-org.github.io/CHANGELOG.html](https://texstudio-org.github.io/CHANGELOG.html)
+- [https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md](https://github.com/texstudio-org/texstudio/blob/master/utilities/manual/source/CHANGELOG.md)
+- [https://github.com/texstudio-org/texstudio/commits/master](https://github.com/texstudio-org/texstudio/commits/master)
 
 ## 不具合 {#k30ccccc}
 
