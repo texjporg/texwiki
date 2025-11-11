@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.11.3](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-11-11 (火) 19:52:27
 - [TeXstudio 4.9.0](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-11-08 (土) 00:16:27
 - [LaTeX Workshop 10.11.2](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-11-04 (火) 15:01:58
 - [TeXiFy-IDEA 0.11.4](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-11-04 (火) 13:28:29
