@@ -99,8 +99,8 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2025年 {#year2025}
 
-- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
-    （[各種書店にて委託販売中](https://x.com/tomone_pact/status/1939711484151656778)，2025年06月29日発行，イベント価格 &yen;1,500，PDF版 &yen;1,650，紙版 &yen;2,310）
+- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3)、電子＋紙：[技術書典19](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U))
+    （[各種書店にて委託販売中](https://x.com/tomone_pact/status/1939711484151656778)，2025年06月29日発行（Girls Love Festival44），イベント価格（電子版 &yen;1,500，電子＋紙 &yen;2,000），PDF版 &yen;1,650，紙版 &yen;2,310）
     - [LaTeX小説組版2025サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW)』
     （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
