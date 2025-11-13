@@ -67,6 +67,7 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), macOS �
 
 ### 関連リンク {#we8f22aa}
 
+- [https://qiita.com/tags/ghostscript](https://qiita.com/tags/ghostscript)
 - [CJK fonts and Ghostscript integration](http://www.preining.info/blog/software-projects/cjk-fonts-ghostscript/)
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
