@@ -22,6 +22,7 @@ SyncTeX に対応しています．
 
 - [World / gedit / enter-tex · GitLab](https://gitlab.gnome.org/World/gedit/enter-tex)
 - [Enter TeX | Gedit Technology blog](https://gedit-text-editor.org/blog/2025-02-11-enter-tex.html)
+- [Enter TeX Reference Manual: Enter TeX Reference Manual](https://gedit-text-editor.org/developer-docs/enter-tex/)
 
 ### 動作環境 {#a52783ff}
 
