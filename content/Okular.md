@@ -115,8 +115,10 @@ MSYS2 でインストールすることもできます。
 ### コマンドラインオプション {#md2d6a7f}
 
 - [https://invent.kde.org/graphics/okular/-/blob/master/shell/main.cpp](https://invent.kde.org/graphics/okular/-/blob/master/shell/main.cpp)
+- [https://invent.kde.org/graphics/okular/-/blob/master/shell/shell.cpp](https://invent.kde.org/graphics/okular/-/blob/master/shell/shell.cpp)
 - [https://invent.kde.org/graphics/okular/-/blob/master/po/ia/okular.po](https://invent.kde.org/graphics/okular/-/blob/master/po/ia/okular.po)
 - [https://github.com/KDE/okular/blob/master/shell/main.cpp](https://github.com/KDE/okular/blob/master/shell/main.cpp)
+- [https://github.com/KDE/okular/blob/master/shell/shell.cpp](https://github.com/KDE/okular/blob/master/shell/shell.cpp)
 - [https://github.com/KDE/okular/blob/master/po/ja/okular.po](https://github.com/KDE/okular/blob/master/po/ja/okular.po)
 
 ```
