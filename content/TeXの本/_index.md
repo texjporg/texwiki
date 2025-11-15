@@ -99,11 +99,11 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2025年 {#year2025}
 
-- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3)、電子＋紙：[技術書典19](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U))
-    （[各種書店にて委託販売中](https://x.com/tomone_pact/status/1939711484151656778)，2025年06月29日発行（Girls Love Festival44），イベント価格（電子版 &yen;1,500，電子＋紙 &yen;2,000），PDF版 &yen;1,650，紙版 &yen;2,310）
+- [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U)、PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
+    （2025年06月29日発行（Girls Love Festival44），イベント価格（電子版 &yen;1,500，電子＋紙 &yen;2,000），PDF版 &yen;1,650，紙版 &yen;2,310）
     - [LaTeX小説組版2025サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
-- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW)』
-    （[技術書典](https://techbookfest.org/)，2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
+- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://lab.miz-ar.info/implementing-tex-lang/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW))
+    （2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
     - [サポートページ](https://lab.miz-ar.info/implementing-tex-lang/)
 - [IMP AI・セキュリティ研究所](https://note.com/imp_aisec_lab)『[情報系論文はLaTeXで書くよ 情報系博士の日常](https://www.amazon.co.jp/%E6%83%85%E5%A0%B1%E7%B3%BB%E8%AB%96%E6%96%87%E3%81%AFLATEX%E3%81%A7%E6%9B%B8%E3%81%8F%E3%82%88-%E6%83%85%E5%A0%B1%E7%B3%BB%E5%8D%9A%E5%A3%AB%E3%81%AE%E6%97%A5%E5%B8%B8-IMP-AI%E3%83%BB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E7%A0%94%E7%A9%B6%E6%89%80-ebook/dp/B0F4SVGZ24/)』
     （2025年04月14日Kindle版発売，税込 &yen;0）
@@ -117,11 +117,11 @@ TeX や LaTeX に関する本の紹介です．
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日紙版発売、2024年11月01日電子版発売，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
     - [サポートページ](https://tikz.jp/)
-- [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x?productVariantID=qeY5N5fALcsRrm18GD1LZ9)』(在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
-    （[技術書典](https://techbookfest.org/)，2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
+- [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://www.yamaimo.dev/entry/HardTexLang)』([技術書典マーケット](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x)、在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
+    （2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
     - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
-- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[TikZ入門 座標を意識して線を引こう](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6?productVariantID=qyFYVsANvbqA9vh4vBgHYS)』
-    （[技術書典](https://techbookfest.org/)，2024年05月25日発行（技術書典16），電子版 &yen;500）
+- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[TikZ入門 座標を意識して線を引こう](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6)』([技術書典マーケット](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6))
+    （2024年05月25日発行（技術書典16），電子版 &yen;500）
 
 - [alg-d](https://x.com/alg_d)『[TikZの使い方](https://www.amazon.co.jp/TikZ%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9-alg-d/dp/B0D1MJJBVD)』
     （Independently published (個人出版)，2024年04月12日発売，税込 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
@@ -135,16 +135,16 @@ TeX や LaTeX に関する本の紹介です．
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）…… TeX Live 2023 に合わせて改訂した入門書。
     - [サポートページ](https://github.com/okumuralab/bibun9)
-- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ?productVariantID=epMJ4TYn2GhyiqC5gD0Zqz)』
-    （[技術書典](https://techbookfest.org/)，2023年05月21日発行（技術書典14），電子版 &yen;500）
+- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5p))
+    （2023年05月21日発行（技術書典14），電子版 &yen;500）
 
 #### 2022年 {#year2022}
 
 - [数学・物理学専門のインターネット家庭教師](http://phys.co-suite.jp/)『[TikZへの入門](http://phys.co-suite.jp/textips.html)』(PDF)
     （2022年11月23日掲載、2024年01月21日更新）
 
-- [MZ工房 (サークル：MZ工房)](https://x.com/mzfactory86)『[TeXを用いた卒論の作り方](https://techbookfest.org/product/5813532014673920)』
-    （[技術書典](https://techbookfest.org/)，2022年11月23日発行（技術書典12），電子版 [&yen;500](https://x.com/mzfactory86/status/1485118462850523137) --&gt; [&yen;0](https://x.com/mzfactory86/status/1723968724926132642)）
+- [MZ工房 (サークル：MZ工房)](https://x.com/mzfactory86)『[TeXを用いた卒論の作り方](https://techbookfest.org/product/5813532014673920)』([技術書典マーケット](https://techbookfest.org/product/5813532014673920))
+    （2022年11月23日発行（技術書典12），電子版 [&yen;500](https://x.com/mzfactory86/status/1485118462850523137) --&gt; [&yen;0](https://x.com/mzfactory86/status/1723968724926132642)）
 
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
@@ -165,11 +165,11 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2019年 {#year2019}
 
-- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://techbookfest.org/product/5999916325273600)』(在庫：[BOOTH(電子版単体)](https://damepo-lab.booth.pm/items/1317394)、[BOOTH(紙+電子)](https://damepo-lab.booth.pm/items/1573098))
-    （[技術書典](https://techbookfest.org/)，2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
+- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://lab.miz-ar.info/cluttex-book/)』([技術書典マーケット](https://techbookfest.org/product/5999916325273600)、在庫：[BOOTH(電子版単体)](https://damepo-lab.booth.pm/items/1317394)、[BOOTH(紙+電子)](https://damepo-lab.booth.pm/items/1573098))
+    （2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
     - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
-- [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』
-    （[技術書典](https://techbookfest.org/)，2019年09月22日発行（技術書典7））
+- [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』([技術書典マーケット](https://techbookfest.org/product/5683850353049600))
+    （2019年09月22日発行（技術書典7））
     - [技術書典7で頒布した同人誌の公開](https://laughingandgrief.hatenablog.com/entry/2019/12/19/212237)
     - [技術書典7で頒布した「LuaLaTeX微文書作成入門」の改稿版のリポジトリ。](https://github.com/virtual-ones/introduck-lualatex)
 - 日向たろし (サークル：日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
@@ -179,8 +179,8 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2018年 {#year2018}
 
-- [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』(紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
-    （[技術書典](https://techbookfest.org/)，2018年10月08日発行（技術書典5），紙版 &yen;1,320）
+- [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』([技術書典マーケット](https://techbookfest.org/product/32850001)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
+    （2018年10月08日発行（技術書典5），紙版 &yen;1,320）
 
 - [吉永 徹美](https://web.archive.org/web/20160922162927/http://www.h4.dion.ne.jp/~latexcat/)（[しっぽ 愛好家](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=%E3%81%97%E3%81%A3%E3%81%BD+%E6%84%9B%E5%A5%BD%E5%AE%B6)）『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
