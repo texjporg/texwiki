@@ -143,6 +143,9 @@ TeX や LaTeX に関する本の紹介です．
 - [数学・物理学専門のインターネット家庭教師](http://phys.co-suite.jp/)『[TikZへの入門](http://phys.co-suite.jp/textips.html)』(PDF)
     （2022年11月23日掲載、2024年01月21日更新）
 
+- [MZ工房 (サークル：MZ工房)](https://x.com/mzfactory86)『[TeXを用いた卒論の作り方](https://techbookfest.org/product/5813532014673920)』
+    （[技術書典](https://techbookfest.org/)，2022年11月23日発行（技術書典12），電子版 [&yen;500](https://x.com/mzfactory86/status/1485118462850523137) --&gt; [&yen;0](https://x.com/mzfactory86/status/1723968724926132642)）
+
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
@@ -301,7 +304,7 @@ TeX や LaTeX に関する本の紹介です．
 #### 2004年 {#year2004}
 
 - [藤田 眞作](http://xymtex.com/)
-    『[LaTeX2εまくろの八衢 オンライン版 第 1 版](http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)』(PDF)
+    『[LaTeX2εまくろの八衢 オンライン版 第 1 版](https://web.archive.org/web/20220516111700/http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)』(PDF)
     （2004年07月30日）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2004>)
