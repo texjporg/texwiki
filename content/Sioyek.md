@@ -13,7 +13,6 @@ Sioyek は教科書や論文を読むことに特化した PDF ビューアー�
 - [https://github.com/ahrm/sioyek](https://github.com/ahrm/sioyek)
     - [https://github.com/ahrm/sioyek?tab=readme-ov-file#third-party-packages-for-linux](https://github.com/ahrm/sioyek?tab=readme-ov-file#third-party-packages-for-linux)
 - [https://sioyek-documentation.readthedocs.io/](https://sioyek-documentation.readthedocs.io/)
-    - [https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex](https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex)
 - [https://scoop.sh/#/apps?q=sioyek&s=0&d=1&o=true](https://scoop.sh/#/apps?q=sioyek&s=0&d=1&o=true)
 - [https://community.chocolatey.org/packages/sioyek](https://community.chocolatey.org/packages/sioyek)
 
@@ -89,3 +88,12 @@ Options:
  --help-all                    Displays help, including
                                generic Qt options.
 ```
+
+### SyncTeX {#u90d3e87}
+
+F4キーで synctex mode の ON/OFF 切り替えができます。
+
+inverse search は synctex mode が ON の場合に PDF ドキュメント上で右クリックすると --inverse-search コマンドラインオプションで指定したコマンドが実行されます。
+
+- [https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex](https://sioyek-documentation.readthedocs.io/en/latest/usage.html#synctex)
+- [https://www.reddit.com/r/neovim/comments/1h0t4qv/how_to_texlab_sioyek_forward_and_inverse_search/](https://www.reddit.com/r/neovim/comments/1h0t4qv/how_to_texlab_sioyek_forward_and_inverse_search/)
