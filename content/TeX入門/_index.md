@@ -80,6 +80,7 @@ TeX の使い方は以下を参照してください。
 ### TeX ＆ LaTeX Advent Calendar {#p538a8a6}
 
 - [TeX &amp; LaTeX Advent Calendar 実績 · GitHub](https://gist.github.com/zr-tex8r/c3ba9b26820235b3d026fb5e94af374d)
+- [2025](https://adventar.org/calendars/12019)
 - [2024](https://adventar.org/calendars/10647)
 - [2023](https://adventar.org/calendars/9305)
 - [2022](https://adventar.org/calendars/7868)
