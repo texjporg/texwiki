@@ -204,7 +204,6 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
     - [The cygwin-announce mailing list archives](https://cygwin.com/ml/cygwin-announce/)
     - [The cygwin-apps mailing list archives](https://cygwin.com/ml/cygwin-apps/)
 - [Cygwin Ports project](https://sourceware.org/cygwinports/)
-    <!-- -[[gnupack:https://gnupack.osdn.jp/docs/latest/UsersGuide.html]] -->
 
 #### 動作環境 {#n6af06c2}
 
