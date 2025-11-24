@@ -216,8 +216,6 @@ print/tex-xdvik は日本語対応 DVI プレビューアです。
 - [FreeBSD: その他のメモ](http://takeno.iee.niit.ac.jp/~shige/FreeBSD/fbsd-omemo.html)
 - [UNIX に関するメモ等](http://takeno.iee.niit.ac.jp/~shige/unix/memo/unix-memo.html)
 - [Cygwin の xdvi で日本語を表示する](http://proglab.blog.fc2.com/blog-entry-26.html)
-- [xdvik 日本語化パッチ整理プロジェクト](http://xdvi.osdn.jp/)
-- [MLアーカイブ: users - xdvi-jp-cleanup - OSDN](https://ja.osdn.net/projects/xdvi/lists/archive/users/)
 
 ## xdvik-ja (非推奨) <a id="xdvik-ja"></a> {#vab2aa47}
 
