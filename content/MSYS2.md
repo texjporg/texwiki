@@ -109,3 +109,4 @@ $ ../Build --no-clean
 - [MSYS2を試してみる](http://verifiedby.me/adiary/055)
 - [MSYS2＋VagrantによるWindowsでのUNIX環境](https://tamosblog.wordpress.com/2014/12/25/msys2_vagrant_1/)
 - [msys2のpacmanを使ってみた](http://otsukemono.blogspot.jp/2013/11/msys2pacman.html)
+- [gnupack_msys2](https://github.com/oziidi/gnupack_msys2)
