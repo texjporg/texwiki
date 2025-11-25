@@ -163,7 +163,6 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 - [pdfgrepでPDFをgrepする](http://emasaka.blog65.fc2.com/blog-entry-1010.html)
 - Poppler (BLFS)
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html](http://www.linuxfromscratch.org/blfs/view/svn/general/poppler.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn-ja/general/poppler.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/general/poppler.html)
 
 #### License {#i424d155}
 
