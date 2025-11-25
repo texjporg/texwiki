@@ -31,5 +31,4 @@ pukiwiki: "TeX Live/build"
 
 - Beyond Linux From Scratch
     - [http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html](http://www.linuxfromscratch.org/blfs/view/svn/pst/texlive.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn-ja/pst/texlive.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/pst/texlive.html)
     - [BLFS での TeXLive ビルド](https://okumuralab.org/tex/mod/forum/discuss.php?d=609)
