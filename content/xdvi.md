@@ -152,7 +152,7 @@ $ pdflatex -synctex=1 hoge
 #### コマンドラインオプション {#ce42827f}
 
 - [https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c)
-- [http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup](http://www.tug.org/svn/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup)
+- [https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup)
 
 ### SyncTeX {#g4e4f193}
 
