@@ -157,7 +157,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2020年 {#year2020}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2020/978-4-297-11713-9)』電子版
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2020/978-4-297-11713-9)』電子版
     （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，2022年04月11日更新，税込 &yen;3,280，[ISBN 978-4-297-11713-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11713-9)）
     - [サポートページ](https://github.com/okumuralab/bibun8)
 - [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.media/bluebacks) B-2145，2020年07月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
@@ -200,7 +200,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2017年 {#year2017}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第7版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2017/978-4-7741-8764-8)』電子版
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第7版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2017/978-4-7741-8764-8)』電子版
     （[技術評論社](http://gihyo.jp/)，2017年01月20日発売，2020年04月22日更新，税込 &yen;3,200，[ISBN 978-4-7741-8764-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8764-8)）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2017>)
@@ -223,7 +223,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2013年 {#year2013}
 
-- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](http://ptetexwin.osdn.jp/)『[［改訂第6版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2013/978-4-7741-6107-5)』電子版（[技術評論社](http://gihyo.jp/)，2013年10月23日発売，2015年05月13日更新，税込 &yen;3,200，[ISBN 978-4-7741-6107-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6107-5)）
+- [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第6版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2013/978-4-7741-6107-5)』電子版（[技術評論社](http://gihyo.jp/)，2013年10月23日発売，2015年05月13日更新，税込 &yen;3,200，[ISBN 978-4-7741-6107-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6107-5)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2013>)
 
 #### 2012年 {#year2012}
