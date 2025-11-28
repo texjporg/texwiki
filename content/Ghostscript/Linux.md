@@ -51,7 +51,7 @@ $ sudo cjk-gs-integrate --link-texmf --force
 
 #### ソースコードからインストール {#u4ad1919}
 
-[http://git.ghostscript.com/?p=ghostpdl.git](http://git.ghostscript.com/?p=ghostpdl.git)
+[https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/)
 
 から Ghostscript のソースコードを入手します。
 
