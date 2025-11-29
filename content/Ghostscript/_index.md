@@ -86,11 +86,14 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), macOS �
 - [Ghostscript : Releases](https://ghostscript.com/releases/index.html)
 - [https://ghostscript.readthedocs.io/en/latest/News.html](https://ghostscript.readthedocs.io/en/latest/News.html)
 - [https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/refs/tags/)
+- [https://github.com/ArtifexSoftware/ghostpdl/tags](https://github.com/ArtifexSoftware/ghostpdl/tags)
 
 #### ChangeLog {#ua2f6680}
 
 - [ghostpdl.git - Ghostscript and GhostPDL](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/)
     - [コミットログ](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/log/)
+- [GitHub - ArtifexSoftware/ghostpdl: This is a mirror: the canonical repo is: git.ghostscript.com/ghostpdl.git https://www.ghostscript.com](https://github.com/ArtifexSoftware/ghostpdl)
+    - [コミットログ](https://github.com/ArtifexSoftware/ghostpdl/commits/master/)
 
 <!-- **Comment [#z51688d5] -->
 <!--  -->
