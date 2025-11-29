@@ -145,9 +145,13 @@ TeX Live のパッケージが一通りそろっていれば問題ないとい�
 #### TeX Live/Cygwin {#u7b94ff6}
 
 - [https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive](https://cygwin.com/cgi-bin2/package-grep.cgi?grep=texlive)
-- [https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/](https://cygwin.com/cygwin/packages/x86_64/texlive-collection-langjapanese/)
-- [https://cygwin.com/cygwin/packages/x86_64/texlive/](https://cygwin.com/cygwin/packages/x86_64/texlive/)
+- [https://cygwin.com/packages/summary/texlive-collection-langjapanese.html](https://cygwin.com/packages/summary/texlive-collection-langjapanese.html)
+- [https://cygwin.com/packages/summary/texlive-collection-luatex.html](https://cygwin.com/packages/summary/texlive-collection-luatex.html)
+- [https://cygwin.com/packages/summary/texlive-collection-latexextra.html](https://cygwin.com/packages/summary/texlive-collection-latexextra.html)
+- [https://cygwin.com/packages/summary/texlive.html](https://cygwin.com/packages/summary/texlive.html)
 - [https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/](https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-langjapanese/)
+- [https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-luatex/](https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-luatex/)
+- [https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-latexextra/](https://ftp.jaist.ac.jp/pub/cygwin/noarch/release/texlive-collection-latexextra/)
 - [https://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/](https://ftp.jaist.ac.jp/pub/cygwin/x86_64/release/texlive/)
 
 #### TeX Live/Cygwin のインストール {#fc129d62}
