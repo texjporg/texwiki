@@ -51,14 +51,14 @@ $ sudo cjk-gs-integrate --link-texmf --force
 
 #### ソースコードからインストール {#u4ad1919}
 
-[https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/](https://cgit.ghostscript.com/cgi-bin/cgit.cgi/ghostpdl.git/)
+[https://github.com/ArtifexSoftware/ghostpdl/tags](https://github.com/ArtifexSoftware/ghostpdl/tags)
 
 から Ghostscript のソースコードを入手します。
 
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ curl -R -L -o ghostscript.tar.gz "http://git.ghostscript.com/?p=ghostpdl.git;a=snapshot;h=HEAD;sf=tgz"
+$ curl -R -L -o ghostscript.tar.gz "https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/ghostpdl-10.06.0.tar.gz"
 $ tar xvf ghostscript.tar.gz
 $ cd ghostscript*
 $ ./autogen.sh
