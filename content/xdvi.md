@@ -11,7 +11,7 @@ pukiwiki: "xdvi"
 
 xdvi は X Window System 上で動作する DVI ビューアです。
 
-X Window System には [X.Org](https://www.x.org/) などのオープンソースの実装があり Cygwin, macOS, Linux などで動作します。
+X Window System には [X.Org](https://www.x.org/)、[VcXsrv](https://vcxsrv.com/)、Cygwin/X、[XQuartz](https://www.xquartz.org/) などのオープンソースの実装があり Windows, macOS, Linux などで動作します。
 
 xdvi を使用すると，日本語が表示されないといった問題が発生する場合があります（[古い情報](</古い情報/#je1d5241>)もご覧ください）。
 
