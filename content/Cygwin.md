@@ -28,16 +28,16 @@ Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
 
 ### TeX Live 公式パッケージ {#cfed3869}
 
-以下の操作で wget というコマンドを使用しますが，Cygwin
-インストール時にパッケージ選択画面で Default のままインストールした場合，wget
+以下の操作で curl というコマンドを使用しますが，Cygwin
+インストール時にパッケージ選択画面で Default のままインストールした場合，curl
 がインストールされていないので，そのコマンドが使えません．
 あらためて setup-x86_64.exe
-を立ち上げ，パッケージ選択画面で wget を検索し，Default から Install
-に変更し，wget をインストールしましょう．
+を立ち上げ，パッケージ選択画面で curl を検索し，Default から Install
+に変更し，curl をインストールしましょう．
 
 また，TeX Live のインストールには [Perl](/Perl/) も必要です．
 さらに，TeX で eps 形式の図を扱うときは [Ghostscript](/Ghostscript/) も必要です．
-少なくとも wget, Perl, Ghostscript は事前に
+少なくとも curl, Perl, Ghostscript は事前に
 Cygwin にインストールしておきましょう．
 
 #### TeX Live のインストール {#peed6637}
@@ -52,7 +52,7 @@ Cygwin にインストールしておきましょう．
 install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ curl -OL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
