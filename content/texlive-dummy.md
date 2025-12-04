@@ -43,7 +43,7 @@ TeX Live/Debian がインストールされないように [dummy パッケー�
 
 ```
 sudo apt install equivs
-wget https://www.tug.org/texlive/files/debian-equivs-2023-ex.txt
+wcurl https://www.tug.org/texlive/files/debian-equivs-2023-ex.txt
 equivs-build debian-equivs-2023-ex.txt
 sudo dpkg -i texlive-local_2023.99999999-1_all.deb
 ```
