@@ -58,8 +58,8 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 [ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ sudo pkg install wget
-$ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ sudo pkg install wget2
+$ wget2 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
