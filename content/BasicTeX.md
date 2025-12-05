@@ -48,7 +48,7 @@ $ brew install --cask basictex
 $ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
-$ sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
+$ sudo tlmgr install collection-langjapanese collection-luatex collection-latexextra
 ```
 
 #### インストールの事例 <a id="installationexample"></a> {#q65e25e8}
