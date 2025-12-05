@@ -51,17 +51,9 @@ TeX Live のインストールガイド
 
 まず，[ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
-- wcurl を使用する場合
-
-    ```
-    $ wcurl https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    ```
-
-- curl を使用する場合
-
-    ```
-    $ curl -OL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-    ```
+```
+$ wcurl https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+```
 
 install-tl-unx.tar.gz を展開します．
 
