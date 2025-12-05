@@ -36,7 +36,7 @@ NetBSD はオープンソースの Unix 系オペレーティングシステム�
 [ミラーサイト](</TeX Live/#tlnet>)から install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ wget2 https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wcurl https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
