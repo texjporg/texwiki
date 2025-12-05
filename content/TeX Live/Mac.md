@@ -212,7 +212,7 @@ $ brew install --cask basictex
 $ eval "$(/usr/libexec/path_helper)"
 $ sudo tlmgr update --self --all
 $ sudo tlmgr paper a4
-$ sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
+$ sudo tlmgr install collection-langjapanese collection-luatex collection-latexextra
 ```
 
 インストールのやり方などの事例も参考になります。
@@ -226,8 +226,8 @@ $ sudo tlmgr install collection-langjapanese collection-latexextra collection-lu
 - [https://ports.macports.org/search/?installed_file=&q=texlive&name=on](https://ports.macports.org/search/?installed_file=&q=texlive&name=on)
 - [https://github.com/macports/macports-ports/tree/master/tex](https://github.com/macports/macports-ports/tree/master/tex)
 - [https://ports.macports.org/port/texlive-lang-japanese/](https://ports.macports.org/port/texlive-lang-japanese/)
-- [https://ports.macports.org/port/texlive-latex-extra/](https://ports.macports.org/port/texlive-latex-extra/)
 - [https://ports.macports.org/port/texlive-luatex/](https://ports.macports.org/port/texlive-luatex/)
+- [https://ports.macports.org/port/texlive-latex-extra/](https://ports.macports.org/port/texlive-latex-extra/)
 
 MacPorts 用に TeX Live/MacPorts というパッケージが提供されています。
 TeX Live/MacPorts をフルインストールする場合は
@@ -236,10 +236,10 @@ TeX Live/MacPorts をフルインストールする場合は
 $ sudo port install texlive +full
 ```
 
-日本語関連のパッケージと texlive-latex-extra と texlive-luatex をインストールする場合は
+日本語関連のパッケージと texlive-luatex と texlive-latex-extra をインストールする場合は
 
 ```
-$ sudo port install texlive-lang-japanese texlive-latex-extra texlive-luatex
+$ sudo port install texlive-lang-japanese texlive-luatex texlive-latex-extra
 ```
 
 を実行します。
