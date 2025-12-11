@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeX Workshop 10.12.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-12-11 (木) 19:52:36
 - [japanese-otf 2025-12-06](https://okumuralab.org/tex/mod/forum/discuss.php?d=4014) -- [OTF](/OTF/) 2025-12-07 (日) 20:11:25
 - Gsviewが最新のGhostscriptに対応しなくなったので、Windows専用ですが、PsvieWinを作成しました。Microsoft Storeで配布しています。良かったら使ってください。 -- 平手幸治 2025-12-02 (火) 20:32:44
 - [TeXiFy-IDEA 0.11.5](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-12-02 (火) 07:29:59
