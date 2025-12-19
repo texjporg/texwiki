@@ -61,7 +61,8 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [EasyTeX](https://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
 - [Google Chrome](</Google Chrome/>) with [LaTeX Editor](https://github.com/sevinalucia/latex-editor) extension
 - [Microsoft Edge](</Microsoft Edge/>) with [LaTeX Editor](https://github.com/sevinalucia/latex-editor) extension
-- [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin、[Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
+- [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
+- [Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
 - [WinShell](/WinShell/)
 
 ### シェアウェア {#l3ad4355}
