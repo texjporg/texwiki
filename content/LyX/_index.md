@@ -590,6 +590,7 @@ sudo zypper install lyx
 
 - [Newest &#39;lyx&#39; Questions - TeX - LaTeX - Stack Exchange](http://tex.stackexchange.com/questions/tagged/lyx)
 - [TeXインストール | Fluid Dynamics Lab.  Kyoto Univ.](https://fd.kuaero.kyoto-u.ac.jp/ja/lyx_install)
+- [Lyxでレポートを書こう](https://ouhare.hatenablog.com/entry/2023/12/11/095352)
 - [2024年版LyXの使い方](https://qiita.com/777shuang/items/b486f70ab252748f2e4f)
 - [&#8220;LyX&#8221; の検索結果  |  数学で行こう](https://blog.lets-go-with-math.net/?s=LyX)
 - [https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2](https://okumuralab.org/tex/mod/forum/search.php?search=LyX&id=2)
