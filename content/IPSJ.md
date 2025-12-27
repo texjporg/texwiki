@@ -25,10 +25,11 @@ pukiwiki: "IPSJ"
 ### 注意 {#q68d87fb}
 
 現在の情報処理学会スタイル ipsj.cls は jis フォントメトリックに対応しています． <!-- というわけなので，「ipsj+jisフォントメトリック」という項目名から「IPSJ」に変更しました． -->
-ただし，upLaTeX には対応できていないようです．
+ただし，upLaTeX には対応できていないようです． --&gt; [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
+
 upLaTeX に対応した up-ipsj.cls が存在します --&gt; [ipsj.cls を upLaTeX 用にしてみる（源ノ明朝・源ノ角ゴシックを使う）](https://gist.github.com/trueroad/c44312923bf02226c2274388941d0453)
 
-- [ipsj.cls で uplatex → NG](http://web.archive.org/web/20150228010937/http://uep.ipe.media.kyoto-u.ac.jp/)
+LuaLaTeX に対応した ipsj.cls が存在します --&gt; [GitHub - watayan/ipsj_cls_for_techrep: 情報処理学会研究報告用クラスファイル（LuaLaTeX対応）](https://github.com/watayan/ipsj_cls_for_techrep)
 
 <!-- （情報処理学会論文誌の投稿に関する）『LaTeX による論文作成のガイド』（第 7.2 版）の 4.1 項には -->
 <!-- > -->
