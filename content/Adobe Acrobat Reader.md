@@ -79,14 +79,8 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html)
-    - [解決済み: Acrobatを立ち上げると、無料体験版の使用開始またはログインを求められる - Adobe Community - 14637749](https://community.adobe.com/t5/acrobat%E3%83%95%E3%82%A9%E3%83%BC%E3%83%A9%E3%83%A0-discussions/acrobat%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%81%A8-%E7%84%A1%E6%96%99%E4%BD%93%E9%A8%93%E7%89%88%E3%81%AE%E4%BD%BF%E7%94%A8%E9%96%8B%E5%A7%8B%E3%81%BE%E3%81%9F%E3%81%AF%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%E3%82%92%E6%B1%82%E3%82%81%E3%82%89%E3%82%8C%E3%82%8B/td-p/14637749?profile.language=ja)
-    - [Acrobat SCA: QuickTimer](https://quicktimer.cocolog-nifty.com/icefloe/cat76058373/index.html)
-    - [AcroRdrSCADC2400220759_MUI（Acrobat Readerの大幅仕様変更）](https://quicktimer.cocolog-nifty.com/icefloe/2024/05/post-be8c04.html)
-    - [Acrobat SCA (SingleClientApp)版 Unified App 版　現時点まとめ（更新）](https://quicktimer.cocolog-nifty.com/icefloe/2024/06/post-37b2fa.html)
-    - [Acrobat バージョン24からの　SCA版（SingleClientApp版）のアップデータの種類](https://quicktimer.cocolog-nifty.com/icefloe/2024/06/post-103718.html)
-        <!-- - -https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2400221005/AcroRdrSCADC2400221005_MUI.dmg -->
-        <!-- - -https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2400221005/AcroRdrDC_2400221005_MUI.dmg -->
-
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2500120997/AcroRdrSCADC2500120997_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2500120997/AcroRdrSCADC2500120997_MUI.dmg)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2500120997/AcroRdrDC_2500120997_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2500120997/AcroRdrDC_2500120997_MUI.dmg)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
 
