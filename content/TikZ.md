@@ -522,7 +522,7 @@ node はそれ自体に大きさがあり，色や形も指定できます。
 
 <!-- +, ++について -->
 
-#### 直交する2つの直線の交点 {#o7fb6e19}
+#### 対角線上の2点から長方形の残り2点を決定する {#o7fb6e19}
 
 2点P，Qがあるとして，Pを通る垂直な線とQを通る水平な線との交点は
 
@@ -611,6 +611,20 @@ intersectionsライブラリを読み込んでおく必要があります。
 ```
 
 <a href="/attach/TikZ/tikz-samp05.jpg"><img src="/attach/TikZ/tikz-samp05.jpg" alt=""></a>
+
+％2直線の交点ならば，pathに名を付けないまま簡易的な書き方も可能です。
+
+```
+\begin{tikzpicture}
+\coordinate (A) at (0,0) node at (A) [below left]{A};
+\coordinate (B) at (4,-1) node at (B) [below right]{B};
+\coordinate (C) at (3,3) node at (C) [above right]{C};
+\coordinate (D) at (1,2) node at (D) [above left]{D};
+\draw (A)--(C);
+\draw (B)--(D);
+\coordinate (P) at (intersection of A--C and B--D) node at (P)[below]{P};
+\end{tikzpicture}
+```
 
 #### 計算による座標設定（例：三角形の重心と垂心を求めてみる） {#vc9ec410}
 
