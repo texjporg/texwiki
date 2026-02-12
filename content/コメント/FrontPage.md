@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- &lt;a href="[https://www.tug.org/texworks/](https://www.tug.org/texworks/)">TeXworks 0.6.11&lt;/a> -- &lt;a href="[https://texwiki.texjp.org/?TeXworks](/TeXworks/)">TeXworks&lt;/a> -- 1770892456 2026-02-12 (木) 19:34:16
 - [TeXstudio 4.9.1](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-12-17 (水) 05:36:15
 - [LaTeX Workshop 10.12.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-12-11 (木) 19:52:36
 - [japanese-otf 2025-12-06](https://okumuralab.org/tex/mod/forum/discuss.php?d=4014) -- [OTF](/OTF/) 2025-12-07 (日) 20:11:25
