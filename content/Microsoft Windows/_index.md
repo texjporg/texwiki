@@ -221,7 +221,7 @@ TeX Live 以外にも Windows で利用可能な TeX ディストリビューシ
 
 ### 漢字入出力対応状況 {#effb8e13}
 
-コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2023/7/16 現在）．
+コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2026/3/2 現在）．
 Windowsではコンソールやファイル名でのワイド文字・Unicodeの扱いがLinux系と異なるので，それに対応するため「command_line_encoding」という kpathsearch の変数が導入されました．当初W32TeX上のupTeX系のみでしたが，現在はWindows版TeX Live上でXeTeX系, pdfTeX系にも導入されています．
 
 <table>
@@ -243,7 +243,7 @@ Windowsではコンソールやファイル名でのワイド文字・Unicodeの
 <tr><td> dvi2tty.exe  </td><td> none          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> --- </td></tr>
 <tr><td> dvi2tty.exe -Eu </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
 <tr><td> upmendex.exe </td><td> (無視される)        </td><td> Unicode         </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
-<tr><td> dvibook.exe<br>dviconcat.exe<br>dviselect.exe<br>dvitodvi.exe<br>dvidvi.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
+<tr><td> dvibook.exe<br>dviconcat.exe<br>dviselect.exe<br>dvitodvi.exe<br>dvidvi.exe<br>dvispc.exe<br>chkdvifont.exe </td><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
 <tr><td rowspan="2"> bibtex8.exe<br>bibtexu.exe  </td><td> none          </td><td> CP932          </td><td> --- </td><td> --- </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> --- </td></tr>
 <tr><td> utf-8         </td><td> Unicode        </td><td> --- </td><td> --- </td><td> Unicode </td><td> UTF-8 </td><td> Unicode </td><td> --- </td></tr>
 <tr><td rowspan="2"> kpsewhich.exe  </td><td rowspan="2"> (-progname= <br>指定先に依存する) </td><td> CP932          </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td><td> CP932 </td><td> Shift_JIS </td></tr>
