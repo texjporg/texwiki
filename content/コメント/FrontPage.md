@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- TeX Live 2026がリリースされ，国内のCTANミラーにも下りてきています -- 1772502263 2026-03-03 (火) 10:44:23
 - [TeXworks 0.6.11](https://www.tug.org/texworks/) -- [TeXworks](/TeXworks/) 2026-02-12 (木) 19:34:16
 - [TeXstudio 4.9.1](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-12-17 (水) 05:36:15
 - [LaTeX Workshop 10.12.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-12-11 (木) 19:52:36
