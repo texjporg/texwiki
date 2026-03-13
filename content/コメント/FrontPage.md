@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [japanese-otf 2026-03-09](https://okumuralab.org/tex/mod/forum/discuss.php?d=4024) -- [OTF](/OTF/) 2026-03-13 (金) 18:25:00
 - TeX Live 2026がリリースされ，国内のCTANミラーにも下りてきています -- 1772502263 2026-03-03 (火) 10:44:23
 - [TeXworks 0.6.11](https://www.tug.org/texworks/) -- [TeXworks](/TeXworks/) 2026-02-12 (木) 19:34:16
 - [TeXstudio 4.9.1](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-12-17 (水) 05:36:15
