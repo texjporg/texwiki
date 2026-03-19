@@ -142,9 +142,9 @@ LaTeX, pLaTeX, upLaTeX, LuaLaTeX の入門書として次の本を挙げてお�
 
 ## LaTeXのオンラインチュートリアル {#y5a6f8a1}
 
-LearnLaTeX.orgという、LaTeXの開発チームが作成した無料のオンラインチュートリアル（入門コンテンツ）もあります。Overleafや独自のオンラインTeXシステムと連携しており、環境構築不要ですぐにコード例を試すことができるのが特徴です。
+Learn LaTeXという、LaTeXの開発チームが作成した無料のオンラインチュートリアル（入門コンテンツ）もあります。Overleafや独自のオンラインTeXシステムと連携しており、環境構築不要ですぐにコード例を試すことができるのが特徴です。
 
-- [Learn LaTeX.org（日本語版）](https://www.learnlatex.org/ja/)
+- [Learn LaTeX（日本語版）](https://www.learnlatex.org/ja/)
 
 ## LaTeX を使うためには {#i326adb5}
 
