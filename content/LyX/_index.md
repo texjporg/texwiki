@@ -33,7 +33,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [What is new in LyX 2.5?#7.  Text editing features](https://wiki.lyx.org/LyX/NewInLyX25#toc7)
     - [明星大学学術機関リポジトリ - LyX におけるOnTheSpot様式の実装](https://meisei.repo.nii.ac.jp/records/2000282)
     - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://codeberg.org/LyX-org/lyx/commit/b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
-    - [LyX 2.5 Release Candidate 1 が出ました．](https://x.com/twit_uji/status/1980773216374476955)
+    - [LyX 2.5.0がリリースされました。](https://x.com/kojiyokota0/status/2025369175464829023)
 
 ### 動作環境 {#xd7ee343}
 
