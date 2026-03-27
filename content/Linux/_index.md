@@ -107,10 +107,10 @@ Do you want to continue with the exact same settings as before (y/N): y
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2025，\* は x86_64-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2026，\* は x86_64-linux にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2025/bin/x86_64-linux/tlmgr path add
+$ sudo /usr/local/texlive/2026/bin/x86_64-linux/tlmgr path add
 ```
 
 以下の警告が表示された場合は指示に従って tlmgr update --all --reinstall-forcibly-removed を実行してください．
