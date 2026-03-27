@@ -31,9 +31,9 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
 MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2025 には以下のパッケージが収録されています。
+MacTeX-2026 には以下のパッケージが収録されています。
 
-#### TeXLive-2025 {#v03e546d}
+#### TeXLive-2026 {#v03e546d}
 
 TeX Live 本体です。
 MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
@@ -67,7 +67,7 @@ GUI Applications には以下のアプリケーションが収録されていま
 - [hintview](https://hint.userweb.mwn.de/hint/hintview.html)
     - [HINT文書](https://hint.userweb.mwn.de/hint/hitex.html)ビューア。
 
-#### Ghostscript 10.04.0<br>Ghostscript Dynamic Library {#n1354f54}
+#### Ghostscript 10.06.0<br>Ghostscript Dynamic Library {#n1354f54}
 
 Ghostscript は PostScript/PDF インタプリタです。
 
@@ -133,8 +133,7 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
-- [2025年のコンピューターノウハウ (Mac) 2 MacTeX 2025が来ました (ただのリンク)](https://m-katsurada.sakura.ne.jp/knowhow-2025/node2.html)
-- [2024年のコンピューターノウハウ (Mac) 61 MacTeX 2025が来た](https://m-katsurada.sakura.ne.jp/knowhow-2024/node61.html)
+- [2025年のコンピューターノウハウ (Mac) 46 MacTeX 2026 が来た](https://m-katsurada.sakura.ne.jp/knowhow-2025/node54.html)
 - [VSCodeから編集できるLaTeX環境構築 Mac編【環境構築】【Mac】【LaTeX】](https://qiita.com/namitech7373/items/cc94cf5d68a7ba21c4bf)
 - [HomebrewでMacにTeX環境を構築する方法](https://zenn.dev/haruki1009/articles/7e5ae0ad825fa2)
 - [LaTeX+BibLaTeX+VSCodeでスッキリ環境構築 (Mac) (2024)](https://qiita.com/Muon/items/f4d4b93fb1f9cbec51d0)
@@ -199,9 +198,11 @@ $ sudo tlmgr paper a4
         - [https://ctan.tikz.jp/systems/mac/mactex/](https://ctan.tikz.jp/systems/mac/mactex/)
     - jp.mirrors.cicku.me (Cloudflare CDN)
         - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
+    - mirror.kris.fail (Cloudflare CDN)
+        - [https://mirror.kris.fail/ctan/systems/mac/mactex/](https://mirror.kris.fail/ctan/systems/mac/mactex/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
-- <strong>HTTP</strong>
-    - NAIST 奈良先端科学技術大学院大学 (奈良県生駒市)
-        - [http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/](http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/)
-        - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/)
+            <!-- -''HTTP'' -->
+            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
+            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/ -->
+            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/ -->
