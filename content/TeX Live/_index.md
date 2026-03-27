@@ -62,7 +62,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 TeX Live には数千ものパッケージが含まれており，これらは collection にグループ分けされています。
 さらに，パッケージの依存関係を解決しつつインストールする scheme も複数用意されていて，それぞれインストールする collection と追加パッケージが定義されています。
-これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2025/tlpkg/texlive.tlpdb など）．
+これらの詳細は [texlive.tlpdb](https://mirror.ctan.org/systems/texlive/tlnet/tlpkg/texlive.tlpdb) というファイルを見ればわかります（たとえば /usr/local/texlive/2026/tlpkg/texlive.tlpdb など）．
 
 主なスキームには以下が挙げられます：
 
@@ -111,14 +111,16 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://ctan.tikz.jp/systems/texlive/tlnet/](https://ctan.tikz.jp/systems/texlive/tlnet/)
     - jp.mirrors.cicku.me (Cloudflare CDN)
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
+    - mirror.kris.fail (Cloudflare CDN)
+        - [https://mirror.kris.fail/ctan/systems/texlive/tlnet/](https://mirror.kris.fail/ctan/systems/texlive/tlnet/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - 日本語 TeX 開発コミュニティ (さくらインターネット (大阪府大阪市北区大深町６−３８ 3F グラングリーン大阪 北館 JAM BASE))
         - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
-- <strong>HTTP</strong>
-    - NAIST 奈良先端科学技術大学院大学 (奈良県生駒市)
-        - [http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/)
-        - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/)
+            <!-- -''HTTP'' -->
+            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
+            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/ -->
+            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/ -->
 
 ### [TeX Live ISO Images](https://www.tug.org/texlive/acquire-iso.html) {#iso}
 
@@ -139,12 +141,14 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://ctan.tikz.jp/systems/texlive/Images/](https://ctan.tikz.jp/systems/texlive/Images/)
     - jp.mirrors.cicku.me (Cloudflare CDN)
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
+    - mirror.kris.fail (Cloudflare CDN)
+        - [https://mirror.kris.fail/ctan/systems/texlive/Images/](https://mirror.kris.fail/ctan/systems/texlive/Images/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
-- <strong>HTTP</strong>
-    - NAIST 奈良先端科学技術大学院大学 (奈良県生駒市)
-        - [http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/](http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/)
-        - [http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/](http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/)
+            <!-- -''HTTP'' -->
+            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
+            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/ -->
+            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/ -->
 
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
