@@ -75,6 +75,11 @@ CTAN の世界的なミラーリングとして次の URI があります．
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
         (HTTPS)
 
+- [mirror.kris.fail](https://mirror.kris.fail/) (Cloudflare CDN)
+    <!-- Cloudflare CDN -->
+    - [mirror.kris.fail/ctan/](https://mirror.kris.fail/ctan/)
+        (HTTPS)
+
 ### CTAN ミラーサイトの接続先候補以外の日本国内サイト（一部） {#others}
 
 #### HTTPS {#HTTPS-NO-CTAN-MIRROR}
@@ -84,21 +89,20 @@ CTAN の世界的なミラーリングとして次の URI があります．
         (HTTPS)
         <!-- ftp.riken.jp = riksun.riken.go.jp = ftp.riken.go.jp -->
 
-#### HTTP {#HTTP-NO-CTAN-MIRROR}
-
-- [NAIST 奈良先端科学技術大学院大学](https://www.naist.jp/) (奈良県生駒市)
-    - [ftp.naist.jp/pub/CTAN/](http://ftp.naist.jp/pub/CTAN/)
-        (HTTP)
-        <!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
-    - [ftp.nara.wide.ad.jp/pub/CTAN/](http://ftp.nara.wide.ad.jp/pub/CTAN/)
-        (HTTP)
-        <!-- -[[Ring Server:http://www.ring.gr.jp/index.html.ja]] -->
-        <!-- - -[[core.ring.gr.jp/pub/text/CTAN/:http://core.ring.gr.jp/pub/text/CTAN/index.html]] -->
-        <!-- (HTTP) -->
-        <!-- - -[[www.dnsbalance.ring.gr.jp/pub/text/CTAN/:http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html]] -->
-        <!-- (HTTP) -->
-        <!-- - -[[www.ring.gr.jp/pub/text/CTAN/:http://www.ring.gr.jp/pub/text/CTAN/index.html]] -->
-        <!-- (HTTP) -->
+<!-- ***HTTP [#HTTP-NO-CTAN-MIRROR] -->
+<!-- -[[NAIST 奈良先端科学技術大学院大学:https://www.naist.jp/]] (奈良県生駒市) -->
+<!-- - -[[ftp.naist.jp/pub/CTAN/:http://ftp.naist.jp/pub/CTAN/]] -->
+<!-- (HTTP) -->
+<!-- ftp.naist.jp = amida.naist.jp = ftp.aist-nara.ac.jp -->
+<!-- - -[[ftp.nara.wide.ad.jp/pub/CTAN/:http://ftp.nara.wide.ad.jp/pub/CTAN/]] -->
+<!-- (HTTP) -->
+<!-- -[[Ring Server:http://www.ring.gr.jp/index.html.ja]] -->
+<!-- - -[[core.ring.gr.jp/pub/text/CTAN/:http://core.ring.gr.jp/pub/text/CTAN/index.html]] -->
+<!-- (HTTP) -->
+<!-- - -[[www.dnsbalance.ring.gr.jp/pub/text/CTAN/:http://www.dnsbalance.ring.gr.jp/pub/text/CTAN/index.html]] -->
+<!-- (HTTP) -->
+<!-- - -[[www.ring.gr.jp/pub/text/CTAN/:http://www.ring.gr.jp/pub/text/CTAN/index.html]] -->
+<!-- (HTTP) -->
 
 ### オリジナルの CTAN {#original}
 
