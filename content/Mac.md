@@ -30,7 +30,7 @@ macOS 上で日本語が利用可能な TeX ディストリビューションは
 macOS への TeX Live のインストール方法は [TeX Live/Mac](</TeX Live/Mac/>) を参照してください。
 
 - [https://tug.org/texlive/quickinstall.html](https://tug.org/texlive/quickinstall.html)
-- [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2)
+- [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-160003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-160003.1.2)
 - [https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2](https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2)
 
 にも情報があります。
