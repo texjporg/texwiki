@@ -83,27 +83,27 @@ LyX のインストーラーを右クリックします。
 
 \[プロパティ(R)\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250rc2-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-250-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="https://raw.githubusercontent.com/cburschka/lyx/refs/heads/master/lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-250rc2-Installer-1-x64.exe</ins><br>
+　　　　　　 <ins>LyX-250-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Downloads<br>
-　　　　サイズ:　　　　　　　　58.2 MB (61,124,346 バイト)<br>
-　　　　ディスク上　　　　　　 58.2 MB (61,128,704 バイト)<br>
+　　　　サイズ:　　　　　　　　58.2 MB (61,068,937 バイト)<br>
+　　　　ディスク上　　　　　　 58.2 MB (61,071,360 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2025年12月12日、00:00:00<br>
-　　　　更新日時:　　　　　　2025年12月12日、00:00:00<br>
-　　　　アクセス日時:　　　　2025年12月12日、00:00:00<br>
+　　　　作成日時:　　　　　　2026年2月14日、00:00:00<br>
+　　　　更新日時:　　　　　　2026年2月14日、00:00:00<br>
+　　　　アクセス日時:　　　　2026年2月14日、00:00:00<br>
 
 <br>
 
