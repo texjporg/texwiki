@@ -31,7 +31,7 @@ pukiwiki: "TeX Live/Windows"
 後は指示に従えば自動でインストールが行われます。
 
 かなりの時間がかかります。
-環境にもよりますが，多くの場合2時間から3時間ほどかかると思います。
+環境にもよりますが，多くの場合2時間から3時間、あるいは4時間から5時間ほどかかると思います。
 
 以下は TeX Live 2026 の install-tl-windows.bat をダブルクリックして実行した例です。
 
@@ -327,4 +327,4 @@ Please make sure that no TeX Live programs are still running!<br>
 <!-- [[VirtualBox:https://www.virtualbox.org/]] などの仮想マシン上に [[Linux]] をインストールして TeX Live を使用する方法もあります。 -->
 <!-- Windows を使用していて LaTeX の実行速度が遅い場合は Linux を使用するのも一つの手です。 -->
 
-[^1]: [さとるさんの環境では、職場のパソコンでは24分、自宅では1時間10分](https://x.com/satl_jpn/status/1638062983611031554)、[あるかっぱ/アルパカ本家さんの環境では5時間](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)となり、環境によってかかる時間は異なります。
+[^1]: [さとるさんの環境では、職場のパソコンでは24分、自宅では1時間10分](https://x.com/satl_jpn/status/1638062983611031554)、[あるかっぱ/アルパカ本家さんの環境では5時間](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)、[名雪まふゆさんの環境では4時間43分20秒](https://x.com/NayukiMafuyu/status/2037522327139963077)となり、環境によってかかる時間は異なります。
