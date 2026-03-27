@@ -21,6 +21,8 @@ LuaTeX は パワフル・高速・軽量で組み込み可能なスクリプト
 
 #### リリース情報 {#x6fec2ee}
 
+TeX Live 2026 には LuaHBTeX 1.24.0, LuaTeX 1.24.0 が収録されています。
+
 TeX Live 2025 初回リリース版には LuaHBTeX 1.21.0, LuaTeX 1.21.0 が収録されていますが、この版には「[TL2025でSTIX2とNewComputerModernの積分記号が変わった？](https://okumuralab.org/tex/mod/forum/discuss.php?d=3900)」の投稿で示される不具合があります。この不具合は [Revision 74603](https://svn.tug.org/texlive?view=revision&revision=74603) で修正され、[Revision 74609](https://svn.tug.org/texlive?view=revision&revision=74609) で TeX Live 2025 のブランチに取り込まれました。[Revision 74610](https://svn.tug.org/texlive?view=revision&revision=74610)、[Revision 74611](https://svn.tug.org/texlive?view=revision&revision=74611)、[Revision 74618](https://svn.tug.org/texlive?view=revision&revision=74618)、[Revision 74619](https://svn.tug.org/texlive?view=revision&revision=74619)、[Revision 74624](https://svn.tug.org/texlive?view=revision&revision=74624) に収録されている LuaHBTeX 1.22.0, LuaTeX 1.22.0 では積分記号は直っていますが，定積分の積分範囲上下限が積分記号よりかなり離れた位置に配置される新たな不具合が発生します。「[TL2025のlualatexにおける定積分](https://okumuralab.org/tex/mod/forum/discuss.php?d=3904)」の投稿によるとプリアンブルに \mathitalicsmode3 を記述することで問題が解消するようです。[Revision 74669](https://svn.tug.org/texlive?view=revision&revision=74669)、[Revision 74670](https://svn.tug.org/texlive?view=revision&revision=74670)、[Revision 74672](https://svn.tug.org/texlive?view=revision&revision=74672)、[Revision 74677](https://svn.tug.org/texlive?view=revision&revision=74677)、[Revision 74680](https://svn.tug.org/texlive?view=revision&revision=74680) で \mathitalicsmode3 なしでも正しい出力になったようです。[Revision 74708](https://svn.tug.org/texlive?view=revision&revision=74708) で LuaHBTeX 1.23.1, LuaTeX 1.23.1 になりました。
 
 LuaTeX 1.20.0 で luaffi が [AArch64](https://ja.wikipedia.org/wiki/AArch64) に対応しました。--&gt; [Revision 73279](https://svn.tug.org/texlive?revision=73279&view=revision)
@@ -44,6 +46,8 @@ TeX Live 2017 には LuaTeX 1.0.4 が収録されています。
 2016 年に LuaTeX 1.0.0 がリリースされました。
 
 #### 内蔵 Lua 処理系のバージョン {#wb3b0391}
+
+TeX Live 2026 には Lua 5.3.6 が収録されています。
 
 TeX Live 2025 には Lua 5.3.6 が収録されています。
 
