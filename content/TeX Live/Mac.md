@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-動作環境については[TeX Live 2025 のバイナリの動作環境](#binary)をお読みください。
+動作環境については[TeX Live 2026 のバイナリの動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -31,12 +31,12 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2025 のバイナリの動作環境 {#binary}
+### TeX Live 2026 のバイナリの動作環境 {#binary}
 
-macOS で動作する TeX Live 2025 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/100100)が提供されている macOS のみをサポートする方針です。
-MacTeX-2025 / BasicTeX-2025 に付属する TeX Live も universal-darwin バイナリです。
+macOS で動作する TeX Live 2026 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/100100)が提供されている macOS のみをサポートする方針です。
+MacTeX-2026 / BasicTeX-2026 に付属する TeX Live も universal-darwin バイナリです。
 
-TeX Live 2025 universal-darwin バイナリが動作する macOS
+TeX Live 2026 universal-darwin バイナリが動作する macOS
 
 - macOS Tahoe 26
 - macOS Sequoia 15
@@ -44,8 +44,6 @@ TeX Live 2025 universal-darwin バイナリが動作する macOS
 - macOS Ventura 13
 - macOS Monterey 12
 - macOS Big Sur 11
-- macOS Catalina 10.15
-- macOS Mojave 10.14 (TeX Live 2026 universal-darwin バイナリではサポート対象外となる予定)
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
@@ -57,7 +55,7 @@ TeX Live 2025 universal-darwin バイナリが動作する macOS
 TeX Live のインストールガイド
 
 - [https://tug.org/texlive/quickinstall.html](https://tug.org/texlive/quickinstall.html)
-- [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-170003.1.2)
+- [https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-160003.1.2](https://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-160003.1.2)
 - [https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2](https://wtsnjp.com/pdf/texlive-ja.pdf#subsubsection.3.1.2)
 
 を見ると [MacTeX](/MacTeX/) が推奨されていますので特にこだわりがなければ MacTeX をお勧めします。ここでは MacTeX ではなく TeX Live 公式のインストーラを使用します。
@@ -129,10 +127,10 @@ $ sudo ./install-tl -no-gui -profile installation.profile
 $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 
-上記の ???? は 2025，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
+上記の ???? は 2026，\* は universal-darwin にマッチすることが想定されていますがうまく動作しない場合は以下のようにして具体的なディレクトリ名を指定してください．
 
 ```
-$ sudo /usr/local/texlive/2025/bin/universal-darwin/tlmgr path add
+$ sudo /usr/local/texlive/2026/bin/universal-darwin/tlmgr path add
 ```
 
 <!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
@@ -317,8 +315,8 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 インストール方法によってディレクトリが異なりますので，ここにまとめておきます。
 
 > <table><tbody>
-> <tr><td></td><td>TeX Live 2025 / MacTeX-2025</td><td><a href="https://github.com/okumuralab/bibun8">［改訂第8版］LaTeX2e美文書作成入門</a></td></tr>
-> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2025</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2020</td></tr>
+> <tr><td></td><td>TeX Live 2026 / MacTeX-2026</td><td><a href="https://github.com/okumuralab/bibun8">［改訂第8版］LaTeX2e美文書作成入門</a></td></tr>
+> <tr><td>基本インストール</td><td style="text-align:right">/usr/local/texlive/2026</td><td style="text-align:right">/Applications/TeXLive/Library/texlive/2020</td></tr>
 > <tr><td>TEXMFLOCAL</td><td style="text-align:right">/usr/local/texlive/texmf-local</td><td style="text-align:right">/Users/Shared/TeXLive/texmf</td></tr>
 > <tr><td>TEXMFHOME</td><td style="text-align:right">~/Library/texmf</td><td style="text-align:right">~/TeXLive/texmf</td></tr>
 > </tbody></table>
@@ -326,7 +324,7 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 
 ### 基本システムのインストール場所 {#ffbf8218}
 
-- TeX Live 2025 および MacTeX-2025 に収録されている TeX Live は，デフォルトでは /usr/local/texlive/2025 以下にインストールされます。
+- TeX Live 2026 および MacTeX-2026 に収録されている TeX Live は，デフォルトでは /usr/local/texlive/2026 以下にインストールされます。
 - [［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)からインストールすると，デフォルトではアプリケーションフォルダにインストールされます。
 
 #### TEXMFLOCAL {#d2b2c9d5}
@@ -334,13 +332,13 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 - TEXMFLOCAL とは，MacTeX/TeX Live 本体のアップデートに影響を受けないディレクトリで，そのコンピュータのユーザー全員に共通の設定を保存します。<br>
     <strong>自分でスタイルファイル（.sty）やフォントなどを追加するときは，この TEXMFLOCAL または下記の TEXMFHOME 以下に置きます。</strong>
 
-- TeX Live 2025 および MacTeX-2025 に収録されている TeX Live による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
+- TeX Live 2026 および MacTeX-2026 に収録されている TeX Live による TEXMFLOCAL は /usr/local/texlive/texmf-local で，以前に作成されていない場合に新たに作成されます。
 - [［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)からのインストールでは，TEXMFLOCAL はユーザのホームフォルダの一つ上の階層「ユーザ」の中の「共有」フォルダに作成されます。
 
 #### TEXMFHOME {#qf071757}
 
 - TEXMFHOME はユーザー個別の設定を保存する場所です。
-- TeX Live 2025 および MacTeX-2025 に収録されている TeX Live では，初期設定ではホームのライブラリ以下に収めます。
+- TeX Live 2026 および MacTeX-2026 に収録されている TeX Live では，初期設定ではホームのライブラリ以下に収めます。
 - [［改訂第8版］LaTeX2e美文書作成入門](https://github.com/okumuralab/bibun8)からのインストールでは，TEXMFHOME はユーザのホームフォルダに作成されます。
 
 #### その他 {#w4248b01}
@@ -355,9 +353,9 @@ IPAexフォント/IPAフォントは標準でインストールされていま�
 - ユーザー個別の TEXMF（~/以下の TEXMF）は検索優先順位が高いため，/usr/local/texlive 以下の設定よりも優先されます。<br>また，mktexlsr（ls-Rの作成）は不要です。<br>実際にターミナル上で sudo mktexlsr としても ~/以下の TEXMF に対しては ls-R は作成されません。
 
 > <table><tbody>
-> <tr><td></td><td>TeX Live 2025 / MacTeX-2025</td></tr>
-> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2025/texmf-config</td></tr>
-> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2025/texmf-var</td></tr>
+> <tr><td></td><td>TeX Live 2026 / MacTeX-2026</td></tr>
+> <tr><td>TEXMFCONFIG</td><td>~/Library/texlive/2026/texmf-config</td></tr>
+> <tr><td>TEXMFVAR</td><td>~/Library/texlive/2026/texmf-var</td></tr>
 > <tr><td>TEXMFHOME</td><td>~/Library/texmf</td></tr>
 > </tbody></table>
 >
