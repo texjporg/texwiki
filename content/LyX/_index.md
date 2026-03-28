@@ -87,7 +87,7 @@ LyX のインストーラーを右クリックします。
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
-　　　　<img src="https://raw.githubusercontent.com/cburschka/lyx/refs/heads/master/lib/images/lyx.png" alt="LyX" style="float:left">　
+　　　　<img src="https://codeberg.org/LyX-org/lyx/raw/branch/master/lib/images/lyx.png" alt="LyX" style="float:left">　
 　　　　　　 <ins>LyX-250-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor
@@ -387,63 +387,63 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > <span style="color:Black;background-color:#EEEEEE;">\[表題　　　　　　ᐯ\]</span>
 >
-> ![新規文書 [Ctrl+N]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/buffer-new.png)
-> ![文書を開く [Ctrl+O]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/file-open.png)
-> ![文書を保存 [Ctrl+S]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/buffer-write.png) <!-- &ref(https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show_print.png,around,nolink,文書を印刷 [Ctrl+P]); -->
-> ![スペルチェック [F7]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show_spellchecker.png)
-> ![連続スペルチェック](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/spelling-continuously.png)
-> ![元に戻す [Ctrl+Z]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/undo.png)
-> ![やり直す [Ctrl+Y]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/redo.png)
-> ![切り取り [Ctrl+X]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/cut.png)
-> ![コピー [Ctrl+C]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/copy.png)
-> ![貼り付け [Ctrl+V]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/paste.png)▼
-> ![検索・置換 [Ctrl+F]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show_findreplace.png)
-> ![検索・置換(詳細)](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-toggle_findreplaceadv.png)
-> ![元の位置に戻る [Ctrl+<]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/bookmark-goto_0.png)
-> ![強調の入切 [Ctrl+E]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/font-emph.png)
-> ![Noun形式の入切 [Alt+C C]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/font-noun.png)
-> ![最近の文辞特性を適用する](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/textstyle-apply.png)▼
-> ![特別文辞様式](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/textstyle-apply.png)
-> ![数式を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/math-mode.png)
-> ![画像を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show-new-inset_graphics.png)
-> ![表を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/tabular-insert.png)
-> ![文書構造を入切](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-toggle_toc.png)
-> ![数式ツールバーを表示](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/toolbar-toggle_math.png)
-> ![表ツールバーを表示](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/toolbar-toggle_table.png)
-> ![校閲ツールバーを表示](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/toolbar-toggle_table.png)<br>
-> ![表示 [Ctrl+R]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/buffer-view.png)
-> ![更新 [Ctrl+Shift+R]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/buffer-update.png)
-> ![親文書を表示 [Ctrl+Alt+R]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/master-buffer-view.png)
-> ![親文書を更新](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/master-buffer-update.png)
-> ![出力先検索・原文検索を有効にする](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/buffer-toggle-output-sync.png)
-> ![他の形式を表示](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/view-others.png)
-> ![他の形式を更新](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/update-others.png)
-> ![既定値](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout.png)
-> ![箇条書き(連番) [Alt+P E]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout_Enumerate.png)
-> ![箇条書き(記号) [Alt+P B]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout_Itemize.png)
-> ![ラベル一覧 [Alt+P L]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout_List.png)
-> ![記述 [Alt+P D]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout_Description.png)
-> ![節](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout_Section.png)
-> ![階層を下げる [Alt+Shift+Right]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/depth-increment.png)
-> ![階層を上げる [Alt+Shift+Left]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/depth-decrement.png)
-> ![図フロートの挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/float-insert_figure.png)
-> ![表フロートの挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/float-insert_table.png)
-> ![ラベルを挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/label-insert.png)
-> ![相互参照を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show-new-inset_ref.png)
-> ![書誌情報を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show-new-inset_citation.png)
-> ![索引登録](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/index-insert.png)
-> ![用語集登録](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/nomencl-insert.png)
-> ![脚注を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/footnote-insert.png)
-> ![傍注を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/marginalnote-insert.png)
-> ![LyX注釈を挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/note-insert.png)
-> ![ボックスを挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/box-insert.png)
-> ![ハイパーリンクを挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/url-insert.png)
-> ![TeXコードを挿入 [Ctrl+L]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/ert-insert.png)
-> ![数式マクロを挿入](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/math-macro_newmacroname_newcommand.png)
-> ![ファイルを内包する](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show-new-inset_include.png)
-> ![文辞特性](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/dialog-show_character.png)
-> ![段落設定](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/layout-paragraph.png)
-> ![類語辞典 [Shift+F7]](https://raw.githubusercontent.com/cburschka/lyx/refs/heads/2.1.x/lib/images/thesaurus-entry.png)<br>
+> ![新規文書 [Ctrl+N]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/buffer-new.png)
+> ![文書を開く [Ctrl+O]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/file-open.png)
+> ![文書を保存 [Ctrl+S]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/buffer-write.png) <!-- &ref(https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show_print.png,around,nolink,文書を印刷 [Ctrl+P]); -->
+> ![スペルチェック [F7]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show_spellchecker.png)
+> ![連続スペルチェック](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/spelling-continuously.png)
+> ![元に戻す [Ctrl+Z]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/undo.png)
+> ![やり直す [Ctrl+Y]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/redo.png)
+> ![切り取り [Ctrl+X]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/cut.png)
+> ![コピー [Ctrl+C]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/copy.png)
+> ![貼り付け [Ctrl+V]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/paste.png)▼
+> ![検索・置換 [Ctrl+F]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show_findreplace.png)
+> ![検索・置換(詳細)](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-toggle_findreplaceadv.png)
+> ![元の位置に戻る [Ctrl+<]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/bookmark-goto_0.png)
+> ![強調の入切 [Ctrl+E]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/font-emph.png)
+> ![Noun形式の入切 [Alt+C C]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/font-noun.png)
+> ![最近の文辞特性を適用する](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/textstyle-apply.png)▼
+> ![特別文辞様式](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/textstyle-apply.png)
+> ![数式を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/math-mode.png)
+> ![画像を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show-new-inset_graphics.png)
+> ![表を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/tabular-insert.png)
+> ![文書構造を入切](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-toggle_toc.png)
+> ![数式ツールバーを表示](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/toolbar-toggle_math.png)
+> ![表ツールバーを表示](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/toolbar-toggle_table.png)
+> ![校閲ツールバーを表示](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/toolbar-toggle_table.png)<br>
+> ![表示 [Ctrl+R]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/buffer-view.png)
+> ![更新 [Ctrl+Shift+R]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/buffer-update.png)
+> ![親文書を表示 [Ctrl+Alt+R]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/master-buffer-view.png)
+> ![親文書を更新](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/master-buffer-update.png)
+> ![出力先検索・原文検索を有効にする](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/buffer-toggle-output-sync.png)
+> ![他の形式を表示](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/view-others.png)
+> ![他の形式を更新](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/update-others.png)
+> ![既定値](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout.png)
+> ![箇条書き(連番) [Alt+P E]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout_Enumerate.png)
+> ![箇条書き(記号) [Alt+P B]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout_Itemize.png)
+> ![ラベル一覧 [Alt+P L]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout_List.png)
+> ![記述 [Alt+P D]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout_Description.png)
+> ![節](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout_Section.png)
+> ![階層を下げる [Alt+Shift+Right]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/depth-increment.png)
+> ![階層を上げる [Alt+Shift+Left]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/depth-decrement.png)
+> ![図フロートの挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/float-insert_figure.png)
+> ![表フロートの挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/float-insert_table.png)
+> ![ラベルを挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/label-insert.png)
+> ![相互参照を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show-new-inset_ref.png)
+> ![書誌情報を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show-new-inset_citation.png)
+> ![索引登録](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/index-insert.png)
+> ![用語集登録](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/nomencl-insert.png)
+> ![脚注を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/footnote-insert.png)
+> ![傍注を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/marginalnote-insert.png)
+> ![LyX注釈を挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/note-insert.png)
+> ![ボックスを挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/box-insert.png)
+> ![ハイパーリンクを挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/url-insert.png)
+> ![TeXコードを挿入 [Ctrl+L]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/ert-insert.png)
+> ![数式マクロを挿入](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/math-macro_newmacroname_newcommand.png)
+> ![ファイルを内包する](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show-new-inset_include.png)
+> ![文辞特性](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/dialog-show_character.png)
+> ![段落設定](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/layout-paragraph.png)
+> ![類語辞典 [Shift+F7]](https://codeberg.org/LyX-org/lyx/raw/commit/2.1.x/lib/images/thesaurus-entry.png)<br>
 >
 > <br>
 >
