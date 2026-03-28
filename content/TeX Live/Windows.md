@@ -15,7 +15,7 @@ pukiwiki: "TeX Live/Windows"
 
 ## インストール {#rc65f8ae}
 
-ここではネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法と，全てのファイルが入っている ISO イメージをダウンロードする方法を説明します。
+ここではネットワークインストーラである install-tl-windows.exe / install-tl.zip を用いる方法と、全てのファイルが入っている ISO イメージをダウンロードする方法を説明します。
 
 基本的には ネットワークインストーラ を用いる方法をおすすめします。
 ネットワークインストーラで問題のある場合は ISO イメージ を用いる方法をご利用ください。 <!-- [[https://texwiki.texjp.org/?TeX%20Live]] と 公式ページの説明とおすすめするインストール方法を合わせます。 -->
@@ -31,7 +31,7 @@ pukiwiki: "TeX Live/Windows"
 後は指示に従えば自動でインストールが行われます。
 
 かなりの時間がかかります。
-環境にもよりますが，多くの場合2時間から3時間、あるいは4時間から5時間ほどかかると思います。
+環境にもよりますが、多くの場合2時間から3時間、あるいは4時間から5時間ほどかかると思います。
 
 以下は TeX Live 2026 の install-tl-windows.bat をダブルクリックして実行した例です。
 
@@ -184,24 +184,24 @@ pukiwiki: "TeX Live/Windows"
 
 ### ISO イメージからのインストール {#zc468876}
 
-[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) または [TeX Live](</TeX Live/#iso>) から ISO イメージがダウンロードできます．
-「download from a nearby CTAN mirror」から，texlive.iso をダウンロードしてください．
-ダブルクリックすると DVD-ROM ドライブとしてマウントされます．
-中には install-tl-windows.bat がありますので，後はネットワークインストールと同様の手順でインストールが可能です．
-なお，ISO イメージの更新頻度は1年に1度のため，インストールが完了した直後に後述するアップデートを行うことをおすすめします．
-ISO イメージが作成された当時に未解決であったバグや不具合が解決されていることがあります．
+[Acquiring TeX Live as an ISO image](http://www.tug.org/texlive/acquire-iso.html) または [TeX Live](</TeX Live/#iso>) から ISO イメージがダウンロードできます。
+「download from a nearby CTAN mirror」から、texlive.iso をダウンロードしてください。
+ダブルクリックすると DVD-ROM ドライブとしてマウントされます。
+中には install-tl-windows.bat がありますので、後はネットワークインストールと同様の手順でインストールが可能です。
+なお、ISO イメージの更新頻度は1年に1度のため、インストールが完了した直後に後述するアップデートを行うことをおすすめします。
+ISO イメージが作成された当時に未解決であったバグや不具合が解決されていることがあります。
 
 ### トラブル時 {#s0045851}
 
-途中でエラーが発生した場合には，もう一度実行してみるとよいかもしれません．
-また，インストールフォルダー（デフォルトではC:\texlive\2026）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です．
+途中でエラーが発生した場合には、もう一度実行してみるとよいかもしれません．
+また、インストールフォルダー（デフォルトではC:\texlive\2026）以下の instal-tl.log にはインストール時の情報が書き込まれています．Forum で相談する際などにも有用です。
 
-TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください．
+TeX Live をインストールするときにウイルス対策ソフトが原因でインストールできない場合はウイルス対策ソフトを無効にしてから TeX Live をインストールしてください。
 
 - [TeX Live インストールがウイルスバスターに阻まれる件](https://x.com/aminophen/status/1143491330116476928)
 - [TeX Live 2019 インストール失敗](https://okumuralab.org/tex/mod/forum/discuss.php?d=2659)
 - [Texliveのインストールに失敗する](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387)
-    （[Re: Texliveのインストールに失敗する#p14036](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387#p14036),
+    （[Re: Texliveのインストールに失敗する#p14036](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387#p14036)、
     [Re: Texliveのインストールに失敗する#p14035](https://okumuralab.org/tex/mod/forum/discuss.php?d=2387#p14035)）
 
 - [TeX Live へようこそ！](http://www.baldanders.info/spiegel/log2/000698.shtml)
@@ -215,29 +215,29 @@ MinGW の xz が悪さをする場合もあるようです．
 
 #### インストールのやり方などの事例 {#w0a33f0d}
 
-TeX Live 2026 対応の事例です．
+TeX Live 2026 対応の事例です。
 
 - [TeX Live 2025から2026へのアップデート Windows 編](https://qiita.com/denkiuo604/items/971cf1aaa61285677c04)
 
-TeX Live 2025 対応の事例です．
+TeX Live 2025 対応の事例です。
 
 - [TeX Live 2025 をインストールしてみた。](https://iek.hatenablog.com/entry/2025/03/27/200011)
 - [【LaTeX】TeX Live 2025 にアップグレードしよう！](https://briboo-pc.hatenablog.jp/entry/2025/03/16/%E3%80%90LaTeX%E3%80%91TeX_Live_2025_%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%82%88%E3%81%86%EF%BC%81)
 
-TeX Live 2024 対応の事例です．
+TeX Live 2024 対応の事例です。
 
 - [VSCodeから編集できるLaTeX環境構築 Windows編【環境構築】【Windows】【LaTeX】](https://qiita.com/namitech7373/items/6d1639bd01d151baa03c)
 - \[[初心者\]LaTeXのインストールから使い方までこれ一本！](https://qiita.com/alpaca-honke/items/f30a2d04eedaa3c36a21)
 - [TeX Live 2024 へアップデートした話  \[05/04/2024\]](https://www-cc.gakushuin.ac.jp/~20050003/z-main.html#texlive2024)
 - [TeXのインストール方法 Windows11(TeX live 2024)](https://mathtext.info/blog/2024/03/17/texlive2024/)
 
-TeX Live 2023 対応の事例です．
+TeX Live 2023 対応の事例です。
 
 - [重点解説！ TeX Live 2023はココが違う！](https://qiita.com/zr_tex8r/items/18a78c93221ddb20d639)
 
 ## アップデート {#a6223106}
 
-\[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2026\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで，パッケージをアップデートすることが可能です。
+\[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2026\] &gt; \[TLShell TeX Live Manager\] を選択して TeX Live Shell を起動することで、パッケージをアップデートすることが可能です。
 
 \[ファイル\] &gt; \[リポジトリを読み込む\] を選択して \[すべてアップデート\] をクリックすれば更新されます。
 
@@ -251,9 +251,9 @@ TeX Live 2023 対応の事例です．
 tlmgr update --self --all
 ```
 
-でも行えます．
+でも行えます。
 
-ただし，アップデートによってパッケージや設定が変更されて，今まで動いていたものが動かなくなったりすることがあるかもしれません。
+ただし、アップデートによってパッケージや設定が変更されて、今まで動いていたものが動かなくなったりすることがあるかもしれません。
 
 - C:\texlive\2026\tlpkg\backups
 
@@ -306,7 +306,7 @@ tlmgr update --self --all
 
 ## アンインストール {#od7715ce}
 
-\[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2026\] &gt; \[Uninstall TeX Live\] を選択することで，TeX Live をアンインストールできます。
+\[スタート\] &gt; \[すべて\] &gt; \[TeX Live 2026\] &gt; \[Uninstall TeX Live\] を選択することで、TeX Live をアンインストールできます。
 
 <ins>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</ins><br>
 
