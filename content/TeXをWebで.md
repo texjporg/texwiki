@@ -38,6 +38,7 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 
 ### 関連リンク {#cfaeb364}
 
+- [OpenAI PrismのLaTeXで日本語を使う](https://okumuralab.org/~okumura/misc/260131.html)
 - [LaTeX Online: Options continue to grow at Some TeX Developments](https://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
 - [TeX implementations in the Cloud](https://cikitsa.blogspot.com/2013/01/tex-implementations-in-cloud.html)
 - [Cloud LaTeXとShareLaTeX、どっちがいい?](https://www.zopfco.de/entry/2015/05/10/040303)
