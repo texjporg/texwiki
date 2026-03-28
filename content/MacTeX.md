@@ -10,7 +10,7 @@ pukiwiki: "MacTeX"
 ## [MacTeX](https://tug.org/mactex/) {#mactex}
 
 MacTeX は [TeX Live](</TeX Live/>) をベースにした macOS 専用の TeX ディストリビューションです。
-TeX Live をフルインストールし，オプションでいくつかの追加アプリケーションもインストールします。
+TeX Live をフルインストールし、オプションでいくつかの追加アプリケーションもインストールします。
 
 <strong>公式サイト</strong>
 
@@ -20,7 +20,7 @@ TeX Live をフルインストールし，オプションでいくつかの追�
     - [MacTeX Screen Saver](https://www.tug.org/tug2003/mactex/screensaver.html)
         - [screen image](https://www.tug.org/tug2003/mactex/screen_images/)
 
-MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
+MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じく [e-upTeX](/upTeX,upLaTeX/), [XeTeX](/XeTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/) が収録されています。
 
 ***
 
@@ -28,33 +28,29 @@ MacTeX には，ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 
 ### MacTeX の中身 {#defa4d85}
 
-MacTeX には TeX Live のほかに，いくつかの GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
-MacTeX.pkg からインストールする際に，インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
+MacTeX には TeX Live のほかに、複数の GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
+MacTeX.pkg からインストールする際に、インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
 MacTeX-2026 には以下のパッケージが収録されています。
 
 #### TeXLive-2026 {#v03e546d}
 
 TeX Live 本体です。
-MacTeX は TeX Live の scheme-full に対応していますので，TeX Live に含まれるすべてのパッケージをインストールします。
+MacTeX は TeX Live の scheme-full に対応していますので、TeX Live に含まれるすべてのパッケージをインストールします。
 
 #### GUI Applications {#a9bfcdb5}
 
 インストールするとアプリケーションフォルダに TeX フォルダが作成されます。
-TeX フォルダの中に READ ME FIRST.pdf があります。
-
-GUI Applications には以下のアプリケーションが収録されています。
-
-アプリケーションフォルダの中の TeX フォルダに収められています。
+TeX フォルダには READ ME FIRST.pdf と以下のアプリが収録されています。
 
 - [BibDesk](/BibDesk/)
     - 文献管理ソフト。
 
 - [LaTeXiT](/LaTeXiT/)
-    - 単独の数式を作成して他のアプリケーションにコピペするのに便利な Mac アプリ。
+    - 単独の数式を作成して他のアプリケーションにコピペするのに便利なアプリ。
 
 - [TeX Live Utility](</TeX Live Utility/>)
-    - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリケーション。
+    - [tlmgr](/tlmgr/)（[TeX Live Manager](</TeX Live Manager/>)）の macOS ネイティブの GUI アプリ。
     - 最初の起動時に，最新版へのアップデートを促されます。複数のリポジトリを並行管理できます。
     - デフォルトの用紙サイズはメニューの \[設定\] &gt; \[用紙寸法を変更…\] を選択することで設定できます（A4またはレター）。
     - 過去のバージョンの MacTeX がインストールされている場合，メニューの \[設定\] &gt; \[TeX Live の既定版を変更…\] を選択することで使用する TeX Live を切り替えることができます。
@@ -88,9 +84,9 @@ MacTeX には「一度インストールすると、完全なアンインスト�
 
 #### MacTeX.pkg でインストール {#j62e687a}
 
-MacTeX はサイズが大きいので，ダウンロードする際は[ミラーサイト (MacTeX)](/MacTeX/#mirror)を利用してください。
+MacTeX はサイズが大きいので、ダウンロードする際は[ミラーサイト (MacTeX)](/MacTeX/#mirror)を利用してください。
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
-Google Chrome, Mozilla Firefox で MacTeX をダウンロードしてインストールできない場合は Safari でダウンロードしてください。
+Google Chrome、Mozilla Firefox で MacTeX をダウンロードしてインストールできない場合は Safari でダウンロードしてください。
 
 MacTeX のインストールの概略は以下のとおりです。
 
@@ -151,11 +147,11 @@ $ sudo tlmgr paper a4
 <!-- -[[MacTeX 2019 のインストール＆日本語環境構築法 (TeX Alchemist Online):https://doratex.hatenablog.jp/entry/20190502/1556775026]] -->
 
 <!-- MacTeX-2016 の場合 -->
-<!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):http://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
+<!-- -[[MacTeX 2016 のインストール＆日本語環境構築法 (El Capitan 以前/以後両対応)  (TeX Alchemist Online):https://doratex.hatenablog.jp/entry/20160608/1465311609]] -->
 <!-- -[[[El Capitan] MacTeX-2016をインストールする:https://qiita.com/Aruneko/items/6a524896df0e90181044]] -->
 
 <!-- MacTeX-2015 の場合 -->
-<!-- -[[TeX環境の構築方法【OS X El Capitan】:http://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
+<!-- -[[TeX環境の構築方法【OS X El Capitan】:https://kengo92i.hatenablog.jp/entry/2016/05/04/204519]] -->
 <!-- -[[OS X El Capitan に Homebrew を使って TeX Live 2015 をインストールする手順:https://snap.textfile.org/20151006085255/]] -->
 
 <!-- 以下は TeX Live 2014 以前に書かれたものですが，中には統合環境のセットアップや -->
@@ -166,7 +162,7 @@ $ sudo tlmgr paper a4
 <!-- そして，そんな場合は上の最新記事に“昇格”です． -->
 
 <!-- 念のため TeX Live 2014 対応のものも残しておきます． -->
-<!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):https://karlsnautr.blogspot.jp/2015/05/mac-os-yosemitetextexstudio.html]] -->
+<!-- -[[Mac OS YosemiteへのTeX環境の導入(含TeXStudio):https://karlsnautr.blogspot.com/2015/05/mac-os-yosemitetextexstudio.html]] -->
 <!-- -[『Fuzoku実践入門』サンプルリポジトリの紹介:https://learning-fuzoku.hatenablog.com/entry/2014/11/11/163019]] -->
 <!-- - -[『Fuzoku実践入門』環境サンプルファイル:https://github.com/akinomurasame/learning-fuzoku-sample] -->
 <!-- -[[MacTeX 2014 - 一歩前進:https://succzero.hatenablog.com/entry/2014/07/17/041211]] -->
