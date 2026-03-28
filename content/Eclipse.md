@@ -25,8 +25,8 @@ Eclipse IDE は Java で書かれた IDE (統合開発環境) です．
 
 ### 動作環境 {#aae7926e}
 
-<!-- -https://eclipse.dev/eclipse/development/plans.html?file=plans/eclipse_project_plan_4_38.xml -->
-- [https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_38.xml#target_environments](https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_38.xml#target_environments)
+<!-- -https://eclipse.dev/eclipse/development/plans.html?file=plans/eclipse_project_plan_4_39.xml -->
+- [https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_39.xml#target_environments](https://eclipse.dev/eclipse/development/plans/eclipse_project_plan_4_39.xml#target_environments)
 
 ### License {#aa464649}
 
