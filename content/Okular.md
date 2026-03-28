@@ -50,7 +50,7 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.12/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.12/windows/) (リリースビルド版)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/windows/) (リリースビルド版)
 - [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) (ナイトリービルド版)
 
 から Okular のインストーラーをダウンロードしてインストールできます。
@@ -76,7 +76,7 @@ MSYS2 でインストールすることもできます。
 
 ### macOS {#ye831736}
 
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-25.12/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/release-25.12/macos-arm64/) (リリースビルド版)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/macos-arm64/) (リリースビルド版)
 - [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/) (ナイトリービルド版)
     <!-- -https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb -->
 
