@@ -514,8 +514,8 @@ Emacs 標準のパッケージ管理システムを使用してインストー�
 AUCTeX が自動ロードされない場合は ~/.emacs.d/init.el に例えば次のように記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.1.0")
-(load "~/.emacs.d/elpa/auctex-14.1.0/auctex-autoloads.el" nil t t)
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-14.1.2")
+(load "~/.emacs.d/elpa/auctex-14.1.2/auctex-autoloads.el" nil t t)
 ```
 
 #### AUCTeX の公式サイトのパッケージからインストールした場合 {#db9dca5d}
@@ -932,6 +932,7 @@ AUCTeX とは関係ありませんが，先頭に
 - [https://tam5917.hatenablog.com/archive/category/AUCTeX](https://tam5917.hatenablog.com/archive/category/AUCTeX)
 - [https://dayinthelife-web.blogspot.com/search/label/AUCTeX](https://dayinthelife-web.blogspot.com/search/label/AUCTeX)
 - [auctex-cluttex.el](https://github.com/tsuu32/auctex-cluttex)
+- [AUCTeX と latexmk の連携(2026年版)](https://uwabami.junkhub.org/log/20260218.html)
 
 <!-- AUCTeX ここまで -->
 
