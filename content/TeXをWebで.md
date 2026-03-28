@@ -19,11 +19,16 @@ pukiwiki: "TeXをWebで"
 
 #### フリーソフトウェア（オープンソースソフトウェア） {#g834836b}
 
-- [Overleaf](https://github.com/overleaf/overleaf)
-- [CoCalc](https://github.com/sagemathinc/cocalc)
+- [Overleaf](https://www.overleaf.com/)
+    - [GitHub - overleaf/overleaf: A web-based collaborative LaTeX editor · GitHub](https://github.com/overleaf/overleaf)
+- [Octree](https://www.useoctree.com/)
+    - [GitHub - octree-labs/octree: Octree - Open Source AI LaTeX Editor · GitHub](https://github.com/octree-labs/octree)
+- [CoCalc](https://cocalc.com/)
+    - [GitHub - sagemathinc/cocalc: CoCalc: Collaborative Calculation in the Cloud · GitHub](https://github.com/sagemathinc/cocalc)
 
 #### フリーウェア（無料） {#e0fded48}
 
+- [Prism](https://openai.com/ja-JP/prism/)
 - [Cloud LaTeX](https://cloudlatex.io/ja)
 - [Mathcha](https://www.mathcha.io/)
 
@@ -49,7 +54,7 @@ Web 上で TeX 形式で文章を打ち込めば PDF でダウンロードでき
 
 まずサーバが必要です．
 通常の Web サーバ上で運用することもできますが，心配なら独立したマシンを調達します．
-最近の インテルプロセッサー Nシリーズ クラスの PC に Linux や FreeBSD 等を載せれば，手ごろな価格でできます．
+最近の インテルプロセッサー Nシリーズ/Pentium/ Celeron クラスの PC に Linux や FreeBSD 等を載せれば，手ごろな価格でできます．
 
 通常は Linux などをサーバ用にインストールすれば Apache や PHP が入るはずです．
 これらについては特に手を加える必要はありません．
