@@ -169,6 +169,8 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 ### 関連リンク {#udd48b1b}
 
 - [日本語版『TeX Liveガイド』](https://github.com/wtsnjp/texlive-ja)
+- [Install-LaTeX-Guide-zh-cn (A short introduction to LaTeX installation written in Chinese)](https://github.com/OsbertWang/install-latex-guide-zh-cn)
+    - [一份简短的关于 LaTeX 安装的介绍](https://tug.ctan.org/info/install-latex-guide-zh-cn/install-latex-guide-zh-cn.pdf) (PDF)
 - [「TeX Live」の検索結果（Q＆A） - Yahoo!知恵袋](https://chiebukuro.yahoo.co.jp/search?p=TeX%20Live)
 - [TeXLiveに関する新着投稿 - Qiita \[キータ\]](https://qiita.com/tags/texlive)
 - [TeX Liveの記事一覧 | Zenn](https://zenn.dev/topics/texlive)
