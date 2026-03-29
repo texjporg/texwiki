@@ -67,7 +67,7 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 385 「ctib」（チベット語）— dbumedTeX のバージョンが上がっています。[トップページ](http://www.aliadne.net/tibet/)をご参照ください。
 
-- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」— ZR さんが「GT書体フォント」を pLaTeX, upLaTeX で使用するためのパッケージ [PXgtfont パッケージ](http://zrbabbler.sp.land.to/pxgtfont.html), XeLaTeX で使用するためのパッケージ [ZXgtfont パッケージ](http://zrbabbler.sp.land.to/zxgtfont.html) を公開されています。
+- p. 389 「[GT書体](http://www.l.u-tokyo.ac.jp/GT/)」— ZR さんが「GT書体フォント」を pLaTeX, upLaTeX で使用するためのパッケージ [PXgtfont パッケージ](https://web.archive.org/web/20260103075135/http://zrbabbler.sp.land.to/pxgtfont.html), XeLaTeX で使用するためのパッケージ [ZXgtfont パッケージ](https://web.archive.org/web/20240918143654/http://zrbabbler.sp.land.to/zxgtfont.html) を公開されています。
 
 - p. 389 「『[今昔文字鏡](http://www.mojikyo.com/)』」— 文字鏡フォントのTeXでの使用は，トニイさんの [Windows 用 TeX で文字鏡フォントを利用する方法 \[Wayback Machine\]](https://web.archive.org/web/20150301230150/http://www.nsknet.or.jp/~tony/TeX/install/win/mojikyo.htm) をご覧ください。
 
