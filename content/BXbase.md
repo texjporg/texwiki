@@ -9,7 +9,7 @@ pukiwiki: "BXbase"
 
 ## BXbase/PXbase {#ra97a6fe}
 
-- [BXbase／PXbase パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxbase.html)
+- [BXbase／PXbase パッケージ \[電脳世界の奥底にて\]](https://web.archive.org/web/20260103075133/http://zrbabbler.sp.land.to/pxbase.html)
 
 ## BXbase {#t6a7cef2}
 
