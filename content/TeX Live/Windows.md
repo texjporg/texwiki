@@ -221,6 +221,7 @@ TeX Live 2026 対応の事例です。
 
 TeX Live 2025 対応の事例です。
 
+- [TeXLive のインストールが終わっていないようだが使える](https://okumuralab.org/tex/mod/forum/discuss.php?d=3999)
 - [TeX Live 2025 をインストールしてみた。](https://iek.hatenablog.com/entry/2025/03/27/200011)
 - [【LaTeX】TeX Live 2025 にアップグレードしよう！](https://briboo-pc.hatenablog.jp/entry/2025/03/16/%E3%80%90LaTeX%E3%80%91TeX_Live_2025_%E3%81%AB%E3%82%A2%E3%83%83%E3%83%97%E3%82%B0%E3%83%AC%E3%83%BC%E3%83%89%E3%81%97%E3%82%88%E3%81%86%EF%BC%81)
 
