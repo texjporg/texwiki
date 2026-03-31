@@ -63,7 +63,7 @@ TeX フォルダには READ ME FIRST.pdf と以下のアプリが収録されて
 - [hintview](https://hint.userweb.mwn.de/hint/hintview.html)
     - [HINT文書](https://hint.userweb.mwn.de/hint/hitex.html)ビューア。
 
-#### Ghostscript 10.06.0<br>Ghostscript Dynamic Library {#n1354f54}
+#### Ghostscript 10.07.0<br>Ghostscript Dynamic Library {#n1354f54}
 
 Ghostscript は PostScript/PDF インタプリタです。
 
