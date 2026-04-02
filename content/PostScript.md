@@ -20,19 +20,21 @@ PostScript は DTP 業界標準のページ記述言語です．
 
 EPS 形式は現在では非推奨です。
 
-- [EPS形式のファイルはもう古い！？](https://rokustar.com/blog/archives/525)
-- [10年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
-- [PDF&#x26;出力の手引き2025](https://blog.adobe.com/jp/publish/2024/10/29/cc-design-print2025)
+- [PDF&#x26;出力の手引き2026](https://blog.adobe.com/jp/publish/2025/11/27/cc-design-print2026)
 
 > <strong>※従来一般的であった EPS 形式は現在のワークフローには適していません。</strong><br>
 >
 > 　<strong>特別な場合を除き、EPS 以外のファイル形式をご利用ください。</strong><br>
 
 > mac OS 14 から OS での PostScript、EPS のプレビューはできなくなりました。<br>
+> Office 製品は EPS ファイルをサポートしていません。<br>
 > プレビューする際は Acrobat などの対応アプリをご利用ください。<br>
 > ▶ [https://support.apple.com/ja-jp/108775](https://support.apple.com/ja-jp/108775)
 
 <strong>Creative Cloud を利用したワークフローの場合、入稿データは「PDF/X-4( ※ EPS 使用不可 )」を推奨します。</strong><br>
+
+- [EPS形式のファイルはもう古い！？](https://rokustar.com/blog/archives/525)
+- [15年以上前からEPS形式は非推奨です！](https://note.com/dtp_tranist/n/n039b4a249c9f)
 
 macOS Sonoma 14 で PostScript、EPS ファイルを PDF ファイルに変換する機能が削除されました。
 
