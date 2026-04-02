@@ -45,7 +45,7 @@ TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 #### 内蔵 LuaJIT 処理系のバージョン {#db5f144e}
 
-TeX Live 2026 には LuaJIT 2.1.81742 が収録されています。
+TeX Live 2026 には LuaJIT 2.1.81742 (windows バイナリ)、LuaJIT 2.1.1736781742 (universal-darwin バイナリ、x86_64-linux バイナリ) が収録されています。
 
 TeX Live 2025 には LuaJIT 2.1.1736781742 が収録されています。
 
