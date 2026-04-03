@@ -127,7 +127,7 @@ Ghostscript をインストールした場合，Windows PowerShell で echo $Env
     - PostScript を PDF に変換する ps2pdf というプログラムは，ps2pdf.bat というバッチファイルです。
 - TeX Live をインストールした場合
     - TeX Live (windows) をインストールした場合は TeX Live (windows) に付属する Ghostscript (tlgs.windows) が自動的にインストールされます。
-    - Ghostscript (tlgs.windows) を起動するコマンドは rungs です。TeX Live 2025 (windows) の rungs は gswin64c が実行されます。
+    - Ghostscript (tlgs.windows) を起動するコマンドは rungs です。TeX Live 2026 (windows) の rungs は gswin64c が実行されます。
     - PostScript を PDF に変換する ps2pdf というプログラムは，Ghostscript (tlgs.windows) を使用する場合は ps2pdf.exe という実行ファイルになっています。
 
 #### Windows PowerShell またはコマンド プロンプトから ps2pdf.bat "予定.ps" を実行するとエラー {#m2fac411}
