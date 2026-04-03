@@ -9,10 +9,10 @@ pukiwiki: "WinShell"
 
 ## WinShell (非推奨) {#t788b13b}
 
-WinShell は Windows 向けに開発された TeX 用の統合環境です。
+WinShell は Windows 向けに開発された LaTeX 用の統合環境です。
 しかし，WinShell には
 
-- 設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 をクリック &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合に主なTeXプログラムの設定の \[LaTeX\]、\[pdfLaTeX\] を実行すると Runtime Error! が発生する
+- 設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合に主なTeXプログラムの設定の \[LaTeX\]、\[pdfLaTeX\] を実行すると Runtime Error! が発生する
 - エンコーディングが ShiftJIS の場合に文字化けの問題が回避できない
     [^1]
 
@@ -74,7 +74,7 @@ WinShell には
 
 ## 不具合 {#m3e6b0cc}
 
-### 設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 をクリック &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合に主なTeXプログラムの設定の \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
+### 設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合に主なTeXプログラムの設定の \[PDFLaTeX\], \[LaTeX\] を実行すると Runtime Error! → [LyX](/LyX/), [TeXstudio](/TeXstudio/), [TeXworks](/TeXworks/) などの統合環境を使用する {#g47585a4}
 
 - [LyX](/LyX/)
 - [TeXstudio](/TeXstudio/)
@@ -144,7 +144,7 @@ Ruby, Windows PowerShell の他に バッチファイルを使用しても OK �
 と入力してから “}” を付けると，括弧が緑色に表示され，文字入力カーソルを “本” の後ろに移動させると文字化けします。
 
 エンコーディングが ShiftJIS の場合，特定の文字を{}の中で使用し，文字入力カーソルを特定の文字の後ろに移動させると文字化けします。
-設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 をクリック &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオンの状態で WinShell のエンコーディングに UTF-8 を使用すれば文字化けと Runtime Error! を回避できます。
+設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオンの状態で WinShell のエンコーディングに UTF-8 を使用すれば文字化けと Runtime Error! を回避できます。
 ShiftJIS を使用してなおかつ文字化けを回避したければ，対応する括弧の強調表示のチェックを外すほかありません。
 「オプション」から「強調表示」を選択し，対応する括弧の強調表示(M) のチェックをはずしてください。
 
@@ -255,9 +255,9 @@ WinShell のポータブル版は WinShell.exe と同じフォルダーの Setti
 
 ## 主なTeXプログラムの設定：ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオンの状態でエンコーディングが UTF-8 の場合 {#vfb035c6}
 
-設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 をクリック &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合は \[LaTeX\]、\[pdfLaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
+設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオフの状態で WinShell のエンコーディングが UTF-8 の場合は \[LaTeX\]、\[pdfLaTeX\] を実行すると [Runtime Error!](/WinShell/#g47585a4) が発生します。
 
-Runtime Error! を回避するには，設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 をクリック &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオンの状態にします。
+Runtime Error! を回避するには，設定 &gt; 時刻と言語 &gt; 言語と地域 &gt; 言語 &gt; Windows の表示言語 &gt; ベータ版: 世界中の言語に対応するために Unicode UTF-8 を使用します がオンの状態にします。
 
 ### LaTeX {#neba460c}
 
