@@ -63,15 +63,11 @@ Windows, macOS, Linux
 - [PowerPointの図からInkscapeで余白のないPDFとEPSファイルを作成する方法](https://note.com/assistdev/n/nbdce484a091f)
 - [Inkscapeを使ってPowerPoint図をEPS画像に変換する](https://catdance124.hatenablog.jp/entry/2020/11/02/102253)
 
-## PDF/EPS/PS + LaTeX {#d6b72996}
+## PDF + LaTeX {#d6b72996}
 
-- [Inkscape Wiki](http://wiki.inkscape.org)
-    - [LaTeX - Inkscape Wiki](http://wiki.inkscape.org/wiki/index.php/LaTeX)
-        - [Release notes/0.92 - Inkscape Wiki#Export PDF / EPS / PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Export_PDF_.2F_EPS_.2F_PS)
-        - [Release notes/0.91 - Inkscape Wiki#PDF/EPS/PS + LaTeX](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.91#PDF.2FEPS.2FPS_.2B_LaTeX)
-        - [Release notes/0.48 - Inkscape Wiki#New LaTeX export for PDF/EPS/PS](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.48#New_LaTeX_export_for_PDF.2FEPS.2FPS)
+- [Exporting a PDF File &mdash; Inkscape Beginners&#39; Guide 1.3 documentation](https://inkscape-manuals.readthedocs.io/en/latest/export-pdf.html)
 
-Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS のテキストを除外して LaTeX ファイルを生成できます．
+Inkscape は PDF ファイルで保存する場合に PDF のテキストを除外して LaTeX ファイルを生成できます．
 
 > <span style="color:#72C304;background-color:#72C304;"><ins>        <span style="color:Black;"><strong>Portable Document Format</strong></span>       <span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
 >
@@ -95,47 +91,7 @@ Inkscape は PDF, EPS, PS ファイルで保存する場合に PDF, EPS, PS の�
 >  ページブリードはページツールで設定可能です。<br>
 > 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
 
-> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　<span style="color:Black;"><strong>Encapsulated PostScript</strong></span>　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
->
->  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->  テキスト出力オプション： ◯ フォントを埋め込む<br>
->             　 ◯ テキストをパスに変換<br>
->             　 🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
->   ☑ フィルターエフェクトをラスタライズする<br>
->             　ラスタライズ解像度 (dpi)：　　　　　　　　　　　<ins>\[ 90 －＋ \]</ins><br>
->
-> <br>
->
->  「エクスポート」ダイアログからエクスポートする場合、エクスポートするオブジェクト<br>
->  を選択できます。「コピーを保存」/「名前を付けて保存」を選択すると、すべて<br>
->  のページがエクスポートされます。<br>
->
-> <br>
->
->  ページブリードはページツールで設定可能です。<br>
-> 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
-
-> <span style="color:#72C304;background-color:#72C304;"><ins>　　　　　　　　　　　　　　　　　 <span style="color:Black;"><strong>PostScript</strong></span> 　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;"><strong>🗙</strong></span> \]<ins></span></ins></span><br>
->
->  PS レベル制限 <ins> PostScript level 3             \[ <strong>ᐯ</strong> \]</ins><br>
->  テキスト出力オプション： ◯ フォントを埋め込む<br>
->             　 ◯ テキストをパスに変換<br>
->             　 🔘 PDF のテキストを除外して LaTeX ファイルを生成<br>
->   ☑ フィルターエフェクトをラスタライズする<br>
->             　ラスタライズ解像度 (dpi)：　　　　　　　　　　　<ins>\[ 90 －＋ \]</ins><br>
->
-> <br>
->
->  「エクスポート」ダイアログからエクスポートする場合、エクスポートするオブジェクト<br>
->  を選択できます。「コピーを保存」/「名前を付けて保存」を選択すると、すべて<br>
->  のページがエクスポートされます。<br>
->
-> <br>
->
->  ページブリードはページツールで設定可能です。<br>
-> 　　　　　　　　　　　　　　　　　　\[　キャンセル(C)　\]　\[　OK(O)　\]<br>
-
-コマンドラインから PDF, EPS, PS のテキストを除外して LaTeX ファイルを出力することも可能です．
+コマンドラインから PDF のテキストを除外して LaTeX ファイルを出力することも可能です．
 
 - [https://inkscape.org/nl/forums/questions/what-happened-to-save-as-pdf-tex/](https://inkscape.org/nl/forums/questions/what-happened-to-save-as-pdf-tex/)
 
@@ -143,16 +99,12 @@ Windows の場合
 
 ```
 inkscape.com --export-type=pdf --export-latex file.svg
-inkscape.com --export-type=eps --export-latex file.svg
-inkscape.com --export-type=ps --export-latex file.svg
 ```
 
 macOS, Linux の場合
 
 ```
 inkscape --export-type=pdf --export-latex file.svg
-inkscape --export-type=eps --export-latex file.svg
-inkscape --export-type=ps --export-latex file.svg
 ```
 
 ## svg – Include and extract SVG pictures in LaTeX documents {#p2c351e1}
