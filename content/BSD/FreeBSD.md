@@ -20,7 +20,6 @@ pukiwiki: "BSD/FreeBSD"
 FreeBSD はオープンソースの Unix 系オペレーティングシステムです．
 
 - [The FreeBSD Project](https://www.freebsd.org)
-- [The FreeBSD Project (ja)](https://www.freebsd.org/ja/)
 
 ### Ports {#j8583985}
 
@@ -192,6 +191,7 @@ make &amp;&amp; make installで導入できます．
 <tr><td><a href="/Okular/">Okular</a></td><td><a href="https://www.freshports.org/graphics/okular">graphics/okular</a></td><td>KDE universal document viewer</td></tr>
 <tr><td><a href="/Papers/">Papers</a></td><td><a href="https://www.freshports.org/graphics/papers">graphics/papers</a></td><td>View multipage documents</td></tr>
 <tr><td><a href="/Atril/">Atril</a></td><td><a href="https://www.freshports.org/graphics/atril">graphics/atril</a></td><td>MATE multi-format document viewer</td></tr>
+<tr><td><a href="/zathura/">zathura</a></td><td><a href="https://www.freshports.org/graphics/zathura">graphics/zathura</a></td><td>Customizable lightweight pdf viewer</td></tr>
 </tbody>
 </table>
 
