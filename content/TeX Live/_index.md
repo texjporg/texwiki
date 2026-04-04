@@ -42,7 +42,7 @@ TeX Live は年次ごとにバージョンが新しくなりますが，基本�
 
 - [Microsoft Windows](</Microsoft Windows/>)
     - Windows へのインストールは，[TeX Live/Windows](</TeX Live/Windows/>) を参照してください．
-    - [MSYS2](/MSYS2/#texlive)、[Cygwin](/Cygwin/#texlive) へのインストールも可能です．
+    - [WSL](/WSL/)、[MSYS2](/MSYS2/#texlive)、[Cygwin](/Cygwin/#texlive) へのインストールも可能です．
 - [macOS](/Mac/)
     - macOS へのインストールは，[TeX Live/Mac](</TeX Live/Mac/>) を参照してください．
 - [Linux](/Linux/#texlive)
