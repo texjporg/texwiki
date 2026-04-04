@@ -9,5 +9,11 @@ pukiwiki: "WSL"
 
 ## WSL {#m30c2ccc}
 
-- [WSL を使用して Windows に Linux をインストールする方法](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+Windows Subsystem for Linux (WSL) は Windows で Linux のプログラムを実行するための機能です。
+
+- [Windows Subsystem for Linux のドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/)
+    - [WSL を使用して Windows に Linux をインストールする方法](https://learn.microsoft.com/ja-jp/windows/wsl/install)
+    - [WSL 開発環境を設定する](https://learn.microsoft.com/ja-jp/windows/wsl/setup/environment)
+- [GitHub - microsoft/WSL: Windows Subsystem for Linux · GitHub](https://github.com/microsoft/WSL)
 - [WindowsのWSL2でVS Codeを使って開発](https://okumuralab.org/~okumura/misc/221004.html)
+- [WSL + TeXLive + VSCodeのTeX環境構築](https://zenn.dev/takamasa272/articles/11ff4230bdcde0)
