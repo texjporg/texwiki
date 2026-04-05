@@ -245,7 +245,7 @@ PDF ファイルを見ると，ヴェトナム語が正常に表示されてい�
 
 ### タイ語 {#thiocpaq}
 
-[タイ語をどうにかする実験 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/bxthai.html) を参照．
+[タイ語をどうにかする実験 \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/bxthai.html) を参照．
 
 タイ語はthailatexを使って記述できます。
 ただし，タイ文字を7ビット化するなど，一工夫必要です。
