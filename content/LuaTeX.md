@@ -101,7 +101,7 @@ LuaLaTeX では [LuaTeX-ja](/LuaTeX-ja/)，[BXjscls](/BXjscls/), [jlreq](/jlreq/
 
 - [LuaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=LuaTeX)
 - [LuaLaTeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=LuaLaTeX)
-- [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](http://zrbabbler.sp.land.to/)
+- [En toi Pythmeni tes TeXnopoleos［電脳世界の奥底にて］](https://zr-tex8r.github.io/pythmeni/)
 - [にっき&#9834;: LuaTeXの検索結果](http://abenori.blogspot.com/search?q=LuaTeX&by-date=true)
 - [「LuaTeX」の検索結果一覧 - Luoyang Press](http://d.hatena.ne.jp/ratbeta/archive?word=LuaTeX)
 - [os.execute() in LuaTeX 0.75.0](https://okumuralab.org/tex/mod/forum/discuss.php?d=955), [Lua: Return values of os.execute()](https://gist.github.com/anonymous/5134368)
