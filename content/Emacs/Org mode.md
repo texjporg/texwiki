@@ -424,6 +424,7 @@ org ファイルの先頭に
 ### Export to LaTeX {#k6bbb6c5}
 
 - [LaTeX export](https://orgmode.org/manual/LaTeX-export.html#LaTeX-export)
+- [Emacs Org-mode の覚え書き](http://tanehp.ec-net.jp/heppoko-lab/prog/resource/org_mode/org_mode_memo.html)
 - [Emacsのorg-modeで論文を書く（その1：pdfとhtmlへの出力）](https://taipapamotohus.com/post/org-mode_paper_1/)
 - [BasicTeX + LuaTeX-ja + OrgMode on OSX で beamer な PDF を出すまで](https://gongo.hatenablog.com/entry/2014/01/13/225304)
 - [org-mode による論文作成入門](https://akisute3.hatenablog.com/entry/2013/12/28/144918)
