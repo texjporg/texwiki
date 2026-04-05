@@ -216,7 +216,7 @@ uplatex
 
 [みかちゃんフォント](https://www.mia-lab.com/mf/)などのフリー書体（[フォント](</フォント/>)参照）や，その他の日本語書体を埋め込みたい場合は，そのためのスタイルファイルを利用するのが便利でしょう。
 設定は，多少面倒です。
-[PXシリーズ](http://zrbabbler.sp.land.to/index.html)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
+[PXシリーズ](https://zr-tex8r.github.io/pythmeni/)，[MacTeX 2013とみかちゃんフォントの設定](http://appcar.jp/wp/casual/2013/06/19/mactex-2013-mikachan/)を参考にしてください。
 自力で一から構築する場合は [(u)pTeX における和文多書体の実現 〜Sierraの全和文フォント出力を例として〜](http://doratex.hatenablog.jp/entry/20161206/1480950097) や [MacPortsのpTeXにおける和文多書体環境の整えかた](https://miko.org/~tatyana/tech/OSX/pTeX/fonts.html) が参考になります。
 
 ## フォントを変えてみる（数式フォント） {#k266362f}
