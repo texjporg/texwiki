@@ -218,6 +218,30 @@ $ sudo tlmgr install collection-langjapanese collection-luatex collection-latexe
 - [MacTeX](/MacTeX/#installationexample)
 - [BasicTeX](/BasicTeX/#installationexample)
 
+Homebrew Cask でインストールした場合，Cask がアップデートされると
+
+```
+$ brew upgrade
+```
+
+では Cask 全体の数GBがダウンロード／アップデートされてしまいます。
+Cask の自動アップデートを停止するには以下の外部ツールを使用します。
+
+- [buo/homebrew-cask-upgrade](https://github.com/buo/homebrew-cask-upgrade)
+
+```
+$ brew tap buo/cask-upgrade
+$ brew cu pin mactex （← または mactex-no-gui または basictex）
+```
+
+Cask のアップデートを再開するには以下のようにします。
+
+```
+$ brew cu unpin mactex （← または mactex-no-gui または basictex）
+```
+
+日常的な個々のパッケージのアップデートは tlmgr で可能です。
+
 #### [MacPorts](http://www.macports.org/) によるインストール {#texlive-install-port}
 
 - [TeXLivePackages – MacPorts](https://trac.macports.org/wiki/TeXLivePackages)
