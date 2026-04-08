@@ -60,14 +60,14 @@ Windows
     <!-- -[[help2:https://sourceforge.net/projects/sakura-editor/files/help2/]] -->
 
 - [インクリメンタルサーチについて](https://sakura-editor.github.io/help/HLP000008.html)
-- [Install/migemo.dll - SakuraEditorWiki](http://sakura.qp.land.to/?Install%2Fmigemo.dll)
+- [Install/migemo.dll - SakuraEditorWiki](https://web.archive.org/web/20211130000855/http://sakura.qp.land.to/?Install%2Fmigemo.dll)
 - [C/Migemo &mdash; KaoriYa](http://www.kaoriya.net/software/cmigemo)
 
 ### 文字コード {#a47f6241}
 
 #### デフォルトの文字コード {#bbabcd0a}
 
-- [FAQ/57 - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ%2F57)
+- [FAQ/57 - SakuraEditorWiki](https://web.archive.org/web/20211206184254/http://sakura.qp.land.to/?FAQ%2F57)
 
 \[設定(O)\] &gt; \[タイプ別設定(Y)...\] &gt; \[ウィンドウ\] からデフォルトの文字コードを指定することができます．
 Unicode 化された TeX を使う場合は UTF-8 を選択します．
@@ -79,9 +79,9 @@ Unicode 化された TeX を使う場合は UTF-8 を選択します．
 
 ### 正規表現 {#ucca1b07}
 
-- [正規表現 - SakuraEditorWiki](http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD)
-    - [正規表現/投稿](http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD%2F%C5%EA%B9%C6)
-        - [正規表現キーワード登録数節約例(LaTeXの場合)](http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD%2F%C5%EA%B9%C6#i35f0017)
+- [正規表現 - SakuraEditorWiki](https://web.archive.org/web/20251016194416/http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD)
+    - [正規表現/投稿](https://web.archive.org/web/20251016185651/http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD%2F%C5%EA%B9%C6)
+        - [正規表現キーワード登録数節約例(LaTeXの場合)](https://web.archive.org/web/20251016185651/http://sakura.qp.land.to/?%C0%B5%B5%AC%C9%BD%B8%BD%2F%C5%EA%B9%C6#i35f0017)
 
 #### 正規表現ライブラリ {#j57d8050}
 
@@ -149,14 +149,14 @@ LaTeX のアウトライン解析機能があります．
 
 ### プラグイン {#z82af691}
 
-- [Plugin - SakuraEditorWiki](http://sakura.qp.land.to/?Plugin)
-    - [Plugin/投稿](http://sakura.qp.land.to/?Plugin%2F%C5%EA%B9%C6)
+- [Plugin - SakuraEditorWiki](https://web.archive.org/web/20250813060346/http://sakura.qp.land.to/?Plugin)
+    - [Plugin/投稿](https://web.archive.org/web/20250813071240/http://sakura.qp.land.to/?Plugin%2F%C5%EA%B9%C6)
 
 プラグイン機能があります．
 
 詳細は SakuraEditorWiki, PatchUnicode を参照してください．
 
-- [プラグイン機能 - SakuraEditorWiki](http://sakura.qp.land.to/?Junk%2F48)
+- [プラグイン機能 - SakuraEditorWiki](https://web.archive.org/web/20251006180122/http://sakura.qp.land.to/?Junk%2F48)
 - [Sakura Editor / PatchUnicode / #85 WSHプラグイン](https://sourceforge.net/p/sakura-editor/patchunicode/85/)
 
 ### 関連付け {#jcb237bc}
@@ -180,7 +180,7 @@ LaTeX のアウトライン解析機能があります．
 - [コマンドラインオプション](https://sakura-editor.github.io/help/HLP000109.html)
 - [https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp](https://github.com/sakura-editor/sakura/blob/master/sakura_core/_main/CCommandLine.cpp)
     <!-- -[[コマンドラインオプション:http://sakura-editor.sourceforge.net/htmlhelp2/HLP000109.html]] -->
-    <!-- -[[コマンドラインオプション - SakuraEditorWiki:http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3]] -->
+    <!-- -[[コマンドラインオプション - SakuraEditorWiki:https://web.archive.org/web/20251006163246/http://sakura.qp.land.to/?%A5%B3%A5%DE%A5%F3%A5%C9%A5%E9%A5%A4%A5%F3%A5%AA%A5%D7%A5%B7%A5%E7%A5%F3]] -->
 
 ### マクロ {#k426cf51}
 
