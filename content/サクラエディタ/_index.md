@@ -196,7 +196,7 @@ LaTeX のアウトライン解析機能があります．
 
 [Wine](https://www.winehq.org/) を使えば Linux でサクラエディタが使用できます．
 
-- [Linux でサクラエディタを使いたい - SakuraEditorWiki](http://sakura.qp.land.to/?FAQ/47)
+- [Linux でサクラエディタを使いたい - SakuraEditorWiki](https://web.archive.org/web/20251006165042/http://sakura.qp.land.to/?FAQ/47)
 
 ```
 $ wine sakura.exe
