@@ -67,7 +67,7 @@ Windows
 
 #### デフォルトの文字コード {#bbabcd0a}
 
-- [FAQ/57 - SakuraEditorWiki](https://web.archive.org/web/20211206184254/http://sakura.qp.land.to/?FAQ%2F57)
+- [FAQ/57 - SakuraEditorWiki](https://web.archive.org/web/20251006174648/http://sakura.qp.land.to/?FAQ%2F57)
 
 \[設定(O)\] &gt; \[タイプ別設定(Y)...\] &gt; \[ウィンドウ\] からデフォルトの文字コードを指定することができます．
 Unicode 化された TeX を使う場合は UTF-8 を選択します．
