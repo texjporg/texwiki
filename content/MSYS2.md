@@ -81,6 +81,12 @@ pacman -S mingw-w64-ucrt-x86_64-texlive-scheme-full
 pacman -S mingw-w64-clang-x86_64-texlive-scheme-full
 ```
 
+- [https://packages.msys2.org/groups/mingw-w64-clang-aarch64-texlive-scheme-full](https://packages.msys2.org/groups/mingw-w64-clang-aarch64-texlive-scheme-full)
+
+```
+pacman -S mingw-w64-clang-aarch64-texlive-scheme-full
+```
+
 ### Building TeX Live {#c3b844d4}
 
 - [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
@@ -102,8 +108,7 @@ $ ../Build --no-clean
 ## MSYS2 関連リンク {#i2a5ff0e}
 
 - [http://qiita.com/tags/msys](http://qiita.com/tags/msys)
-- [https://sourceforge.jp/projects/msys2-crossgcc/](https://sourceforge.jp/projects/msys2-crossgcc/)
-    - [https://sourceforge.jp/projects/msys2-crossgcc/howto/install](https://sourceforge.jp/projects/msys2-crossgcc/howto/install)
+- [https://packages.msys2.org/packages/mingw-w64-cross-gcc](https://packages.msys2.org/packages/mingw-w64-cross-gcc)
 - [https://blog.miz-ar.info/?s=MSYS2](https://blog.miz-ar.info/?s=MSYS2)
 - [http://yaritakunai.hatenablog.com/archive/category/MSYS2](http://yaritakunai.hatenablog.com/archive/category/MSYS2)
 - [MSYS2を試してみる](http://verifiedby.me/adiary/055)
