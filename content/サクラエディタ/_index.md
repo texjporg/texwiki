@@ -140,8 +140,9 @@ LaTeX のアウトライン解析機能があります．
 
 アウトライン解析は，メニューの \[検索(S)\] &gt; \[アウトライン解析(L)...\] で実行できます．
 アウトライン解析画面のドッキングも可能です．
-詳細は SakuraEditorWiki, PatchUnicode を参照してください．
+詳細は サクラエディタ  ヘルプ、SakuraEditorWiki,、PatchUnicode を参照してください．
 
+- [アウトライン解析](https://sakura-editor.github.io/help/HLP000064.html)
 - [アウトライン解析画面のドッキング機能追加 - SakuraEditorWiki](https://web.archive.org/web/20211129232016/http://sakura.qp.land.to/?Junk/DockingOutline)
 - [Sakura Editor / PatchUnicode / #116 アウトライン解析画面のドッキング機能追加](https://sourceforge.net/p/sakura-editor/patchunicode/116/)
 
@@ -149,13 +150,13 @@ LaTeX のアウトライン解析機能があります．
 
 ### プラグイン {#z82af691}
 
-- [Plugin - SakuraEditorWiki](https://web.archive.org/web/20250813060346/http://sakura.qp.land.to/?Plugin)
-    - [Plugin/投稿](https://web.archive.org/web/20250813071240/http://sakura.qp.land.to/?Plugin%2F%C5%EA%B9%C6)
-
 プラグイン機能があります．
 
-詳細は SakuraEditorWiki, PatchUnicode を参照してください．
+詳細は サクラエディタ  ヘルプ、SakuraEditorWiki、PatchUnicode を参照してください．
 
+- [プラグイン](https://sakura-editor.github.io/help/HLP000110.html)
+- [Plugin - SakuraEditorWiki](https://web.archive.org/web/20250813060346/http://sakura.qp.land.to/?Plugin)
+    - [Plugin/投稿](https://web.archive.org/web/20250813071240/http://sakura.qp.land.to/?Plugin%2F%C5%EA%B9%C6)
 - [プラグイン機能 - SakuraEditorWiki](https://web.archive.org/web/20251006180122/http://sakura.qp.land.to/?Junk%2F48)
 - [Sakura Editor / PatchUnicode / #85 WSHプラグイン](https://sourceforge.net/p/sakura-editor/patchunicode/85/)
 
