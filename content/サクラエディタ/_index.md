@@ -55,7 +55,7 @@ Windows
 
 ### 外部ヘルプ, 外部HTMLヘルプの設定 &amp; migemo設定 {#w3004970}
 
-- [サクラエディタヘルプファイル](https://sakura-editor.github.io/help/)
+- [サクラエディタ最新版ヘルプ](https://sakura-editor.github.io/help/)
 - [https://github.com/sakura-editor/sakura/tree/master/help/sakura/res](https://github.com/sakura-editor/sakura/tree/master/help/sakura/res)
     <!-- -[[help2:https://sourceforge.net/projects/sakura-editor/files/help2/]] -->
 
