@@ -212,6 +212,7 @@ $ wine sakura.exe
 - [そっとプロジェクト＠Ｗｉｋｉ - ソフトウェア/サクラエディタ](http://www19.atwiki.jp/sotto_project/pages/151.html)
 - [Memo/SakuraEditor - DEX Lab](https://dexlab.net/pukiwiki/index.php?Memo/SakuraEditor)
 - [サクラエディタで、対応する括弧を探す。](http://3tackle.blog55.fc2.com/blog-entry-52.html)
+- [過去ログ](https://sakura-editor.github.io/)
 - [Sakura Editor - SourceForge.net](https://sourceforge.net/projects/sakura-editor/) (Old)
     - 掲示板\[[一般\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=data)\[[開発A\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=dev)\[[開発U\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=unicode)\[[文書\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=help)\[[管理\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=web)\[[MACRO\]](https://sakura-editor.sourceforge.net/cgi-bin/cyclamen/cyclamen.cgi?log=macro)
     - [Sakura Editor / Wiki / Home](https://sourceforge.net/p/sakura-editor/wiki/)
