@@ -13,6 +13,7 @@ SyncTeX は TeX ソースを開いたエディタと PDF ビューワとの間�
 PDF プレビューが主流になった現在では，かつて DVI プレビューがよく用いられていた頃の [src-specials](</special 命令/#src-specials>) を置き換えるものとしてよく使われています．
 
 - [https://github.com/jlaurens/synctex](https://github.com/jlaurens/synctex)
+- \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/web2c/synctexdir](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/synctexdir/)
 
 ***
 
@@ -56,13 +57,12 @@ SyncTeX 用のデータが出力できたら，エディタとビューワのそ
 ### 関連リンク {#b9d9b106}
 
 - [LyX wiki | LyX / SyncTeX](https://wiki.lyx.org/LyX/SyncTeX)
-- [MyTeXpert:SyncTeX](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?SyncTeX)
 - [SyncTeX対応のPDFビューワ。](https://chiyosuke.blogspot.com/2018/05/synctexpdf.html)
 
 #### ChangeLog {#q711590a}
 
 - [https://github.com/jlaurens/synctex](https://github.com/jlaurens/synctex)
     - [https://github.com/jlaurens/synctex/commits/master](https://github.com/jlaurens/synctex/commits/master)
-- \[[texlive\] Index of /trunk/Build/source/texk/web2c/synctexdir](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/web2c/synctexdir/ChangeLog?view=markup)
+- \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/web2c/synctexdir](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/synctexdir/)
+    - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/synctexdir/?view=log)
+    - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/synctexdir/ChangeLog?view=markup)
