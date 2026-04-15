@@ -96,6 +96,7 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
 - [MuPDF](/MuPDF/)：軽量な PDF ビューア．
+- [Galley](https://munepi.github.io/Galley/)：macOS用TeX/LaTeXの軽量なPDFビューア
 - [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio などで使われています．
 - [LiveTeX](https://github.com/questbeat/LiveTeX)：LiveTeX is a PDF previewer for TeX writing. --&gt; [TeX のプレビュー用アプリを作った](http://questbeat.hatenablog.jp/entry/2016/02/16/213249)
 
