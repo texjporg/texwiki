@@ -13,13 +13,15 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [hiragino-patch](https://github.com/munepi/hiragino-patch) -- [ヒラギノフォント](</ヒラギノフォント/>) 2026-04-15 (水) 00:00:00
+- [Galley](https://munepi.github.io/Galley/) -- [Mac](/Mac/) 2026-04-04 (土) 11:37:00
 - [japanese-otf 2026-03-09](https://okumuralab.org/tex/mod/forum/discuss.php?d=4024) -- [OTF](/OTF/) 2026-03-13 (金) 18:25:00
-- TeX Live 2026がリリースされ，国内のCTANミラーにも下りてきています -- 1772502263 2026-03-03 (火) 10:44:23
+- [TeX Live 2026](https://www.tug.org/texlive/)がリリースされ，国内のCTANミラーにも下りてきています -- [TeX Live](</TeX Live/>) 2026-03-03 (火) 10:44:23
 - [TeXworks 0.6.11](https://www.tug.org/texworks/) -- [TeXworks](/TeXworks/) 2026-02-12 (木) 19:34:16
 - [TeXstudio 4.9.1](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-12-17 (水) 05:36:15
 - [LaTeX Workshop 10.12.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-12-11 (木) 19:52:36
 - [japanese-otf 2025-12-06](https://okumuralab.org/tex/mod/forum/discuss.php?d=4014) -- [OTF](/OTF/) 2025-12-07 (日) 20:11:25
-- Gsviewが最新のGhostscriptに対応しなくなったので、Windows専用ですが、PsvieWinを作成しました。Microsoft Storeで配布しています。良かったら使ってください。 -- 平手幸治 2025-12-02 (火) 20:32:44
+- Gsviewが最新のGhostscriptに対応しなくなったので、Windows専用ですが、[PsvieWin](https://apps.microsoft.com/detail/xpdp54xpn0cttc?hl=ja-JP&gl=JP)（Microsoft Storeで配布）を作成しました。良かったら使ってください。 -- 平手幸治 2025-12-02 (火) 20:32:44
 - [TeXiFy-IDEA 0.11.5](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2025-12-02 (火) 07:29:59
 - [LaTeX Workshop 10.11.3](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2025-11-11 (火) 19:52:27
 - [TeXstudio 4.9.0](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2025-11-08 (土) 00:16:27
