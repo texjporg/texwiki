@@ -17,3 +17,5 @@ Windows Subsystem for Linux (WSL) は Windows で Linux のプログラムを実
 - [GitHub - microsoft/WSL: Windows Subsystem for Linux · GitHub](https://github.com/microsoft/WSL)
 - [WindowsのWSL2でVS Codeを使って開発](https://okumuralab.org/~okumura/misc/221004.html)
 - [WSL + TeXLive + VSCodeのTeX環境構築](https://zenn.dev/takamasa272/articles/11ff4230bdcde0)
+- [手軽にLatex環境を構築する with VSCode + Docker](https://zenn.dev/kneephys/articles/a1f95c4d620524)
+- [日本語 upLaTeX 環境構築 using VSCode &amp; Podman in 2026 Spring](https://note.com/f_matano44/n/n7dbfa54207e2)
