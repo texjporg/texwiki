@@ -29,3 +29,10 @@ Typst Preview for Neovim は Tinymist の Neovim plugin です。
 typst-preview.el は Tinymist で Live preview を行うための Emacs の minor mode です。
 
 - [GitHub - havarddj/typst-preview.el: Typst live preview minor mode for emacs](https://github.com/havarddj/typst-preview.el)
+
+### TyX {#b95cf536}
+
+TyX は Typst における LyX ライクなエディタです。
+
+- [TyX](https://tyx-editor.com/)
+- [GitHub - tyx-editor/TyX: A LyX-like experience rewritten for Typst and the modern era · GitHub](https://github.com/tyx-editor/TyX)
