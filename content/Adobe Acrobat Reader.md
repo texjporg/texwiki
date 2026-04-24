@@ -27,10 +27,10 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 25.001.21288 以降に更新してください。Adobe Acrobat Reader 25.001.21265 およびそれ以前のバージョンには脆弱性が存在します。
-    - [Adobe AcrobatおよびReaderの脆弱性（APSB26-26）に関する注意喚起](https://www.jpcert.or.jp/at/2026/at260006.html)
-    - [Adobe Acrobat および Reader の脆弱性対策について(2026年3月)](https://www.ipa.go.jp/security/security-alert/2025/0311-adobereader.html)
-- Adobe Acrobat Reader Version 2025 (64-bit) の DDE server name は AcroViewA25 です。
+- Adobe Acrobat Reader 26.001.21431 以降に更新してください。Adobe Acrobat Reader 26.001.21411 およびそれ以前のバージョンには脆弱性が存在します。
+    - [Adobe AcrobatおよびReaderの脆弱性（APSB26-44）に関する注意喚起](https://www.jpcert.or.jp/at/2026/at260011.html)
+    - [Adobe Acrobat および Reader の脆弱性対策について(2026年4月)\_2](https://www.ipa.go.jp/security/security-alert/2026/0415-adobereader.html)
+- Adobe Acrobat Reader Version 2026 (64-bit) の DDE server name は AcroViewA26 です。
 - [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
     pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
     Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で
@@ -70,7 +70,7 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
     - [64-bit Unified App Installer &mdash; Acrobat Desktop  Windows Deployment](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/singleinstaller.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500121288/AcroRdrDCx642500121288_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500121288/AcroRdrDCx642500121288_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121431/AcroRdrDCx642600121431_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121431/AcroRdrDCx642600121431_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
         <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
@@ -79,8 +79,8 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 - Adobe Acrobat Reader
     - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2500120997/AcroRdrSCADC2500120997_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2500120997/AcroRdrSCADC2500120997_MUI.dmg)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2500120997/AcroRdrDC_2500120997_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2500120997/AcroRdrDC_2500120997_MUI.dmg)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2600121431/AcroRdrSCADC2600121431_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2600121431/AcroRdrSCADC2600121431_MUI.dmg)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121431/AcroRdrDC_2600121431_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121431/AcroRdrDC_2600121431_MUI.dmg)
 - Adobe Acrobat Reader Font Pack (Continuous)
     - [https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
 
@@ -124,8 +124,8 @@ sudo zypper install wine
 winetricks allfonts
 winetricks mspatcha
 winetricks atmlib
-wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2500121288/AcroRdrDCx642500121288_ja_JP.exe
-wine64 AcroRdrDCx642500121288_ja_JP.exe
+wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121431/AcroRdrDCx642600121431_ja_JP.exe
+wine64 AcroRdrDCx642600121431_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
@@ -264,7 +264,7 @@ exit                    exit acroview and pdfdde
 Windows 版の Adobe Acrobat Reader バージョン 2025 (64-bit)
 に対して，pdfopen.exe, pdfclose.exe, pdfdde.exe を使うには，内容が
 
-> AcroViewA25
+> AcroViewA26
 
 という1行だけを持ち，ファイル名が
 
@@ -272,13 +272,13 @@ Windows 版の Adobe Acrobat Reader バージョン 2025 (64-bit)
 
 であるファイルを，pdfdde.exe が存在するディレクトリに置いて下さい．
 
-AcroViewA25 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
+AcroViewA26 という1行だけの内容を持つ pdfddeservername.txt が pdfdde.exe と同じディレクトリに存在しない場合は
 
 > Cannot contact a server.
 
 というエラーが発生して PDF ファイルが開けません。
 
-AcroViewA25 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
+AcroViewA26 に設定して pdfopen foo.pdf を実行すると Cannot contact a server. エラーがでてファイルが開けない場合は
 
 Windows PowerShell の場合は
 
@@ -511,6 +511,6 @@ synctex help edit
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 - \[[自分用メモ\] Acrobat ReaderでPDF開くたびに\[All tools\]が初期表示される問題、ようやく解決した…。環境設定メニュー「'All tools'ペインの前回の状態を記憶する」をONにしたら次から表示されなくなった。地味に毎回面倒だったんだよな](https://x.com/kozakitw/status/1844088642849185977)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23, Adobe Acrobat Reader Version 2024 (64-bit) は AcroViewA24, Adobe Acrobat Reader Version 2025 (64-bit) は AcroViewA25 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23, Adobe Acrobat Reader Version 2024 (64-bit) は AcroViewA24, Adobe Acrobat Reader Version 2025 (64-bit) は AcroViewA25, Adobe Acrobat Reader Version 2026 (64-bit) は AcroViewA26 です。
 [^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
