@@ -511,13 +511,13 @@ Chrome PDF Viewer を使用する場合は，
 　　 ビューアー引数：　　　　　　　　　　　　　　 <ins>"&#x25;fullfile"</ins><br>
 　　　　ビューで送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocOpen("%fullfile")\]\[FileOpen("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>AcroViewA25</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　　　サーバー： <ins>AcroViewA26</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 
 <br>
 
 　　　　再ビルド前に送信する DDE メッセージ<br>
 　　　　コマンド： <ins>\[DocClose("%fullfile")\]</ins><br>
-　　　　サーバー： <ins>AcroViewA25</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
+　　　　サーバー： <ins>AcroViewA26</ins>　　　　　　　　　　　　　　　　　　　　トピック： <ins>control</ins><br>
 　　 ビューアー入力ファイル・フォーマット：　 <span style="color:Black;background-color:#EEEEEE;">\[pdf　<strong>ᐯ</strong>\]</span><br>
 　　 逆検索サポート：　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[使用不可　　　　　　　　　　　　　　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 　　 ☐ ビューアーでフォーマット済み検索をサポート<br>
