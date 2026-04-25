@@ -59,6 +59,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 ソースコードは非公開ですが無料で利用できる LaTeX 用統合環境・エディタの一覧です。
 
 - [EasyTeX](https://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
+- [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 学生版
 - [Mery](https://www.haijin-boys.com/software/mery) with [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
 - [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
 - [Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
@@ -71,6 +72,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 継続利用に料金が必要となる LaTeX 用統合環境・エディタの一覧です。
 
 - [秀丸エディタ](</秀丸エディタ/>) with [祝鳥（のりてふ）](https://www.ms.u-tokyo.ac.jp/~abenori/soft/fortex.html)
+- [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 正式版
 - [Sublime Text](https://www.sublimetext.com/) with [LaTeXTools](https://github.com/SublimeText/LaTeXTools) plugin
 - [TeX Writer](</TeX Writer/>)
 - [TeX64](/TeX64/) Basic/Pro
