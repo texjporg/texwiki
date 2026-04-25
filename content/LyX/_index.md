@@ -86,12 +86,12 @@ LyX のインストーラーを右クリックします。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-251-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
-> 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
+> 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ デジタル署名 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="https://codeberg.org/LyX-org/lyx/raw/branch/master/lib/images/lyx.png" alt="LyX" style="float:left">　
 　　　　　　 <ins>LyX-251-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
-　　　　説明:　　　　　　　　　LyX - The Document Processor
+　　　　説明:　　　　　　　　　LyX - The Document Processor<br>
 
 <br>
 
@@ -108,11 +108,11 @@ LyX のインストーラーを右クリックします。
 
 <br>
 
-　　　　属性:　　　　　　☐読み取り専用(R)　　☐隠しファイル(H)　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 詳細設定(D)... \]</span><br>
-　　　　セキュリティ:　　このファイルは他のコンピューターから取得し<br>
-　　　　　　　　　　　　 たものです。このコンピューターを保護するた　　☑許可する(K) &lt;-- 許可するをチェックして \[適用(A)\] と \[OK\] をクリック<br>
-　　　　　　　　　　　　 め、このファイルへのアクセスはブロックされる<br>
-　　　　　　　　　　　　 可能性があります。<br>
+　　　　属性:　　　　　　☐読み取り専用(R)　　☐隠しファイル(H)　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 詳細設定(D)... \]</span><br>
+　　　　セキュリティ:　　このファイルは他のコンピューターから取得<br>
+　　　　　　　　　　　　 したものです。このコンピューターを保護す　　☑許可する(K) &lt;-- 許可するをチェックして \[適用(A)\] と \[OK\] をクリック<br>
+　　　　　　　　　　　　 るため、このファイルへのアクセスはブロッ<br>
+　　　　　　　　　　　　 クされる可能性があります。<br>
 
 <br>
 
