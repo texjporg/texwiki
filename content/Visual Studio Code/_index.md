@@ -29,6 +29,7 @@ Windows, macOS, Linux
 
 ### 派生版 {#w9aaefab}
 
+- [VSCodium](https://vscodium.com/)
 - [Cursor](https://cursor.com/)
 - [Windsurf](https://windsurf.com/)
 - [Eclipse Theia IDE](https://theia-ide.org/)
