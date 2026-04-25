@@ -34,6 +34,7 @@ LyX は，文書の「構造」 (WYSIWYM) に基づいた書き方を支援し�
     - [明星大学学術機関リポジトリ - LyX におけるOnTheSpot様式の実装](https://meisei.repo.nii.ac.jp/records/2000282)
     - [Introducing OnTheSpot-style input method editing &amp; IME integration](https://codeberg.org/LyX-org/lyx/commit/b9c5f6be5ef617d4776abeeaec4c271410fedcc2)
     - [LyX 2.5.1がリリースされました。長時間の使用で引き起こされうる問題やmacOS終了時の問題等が修正されています。](https://x.com/kojiyokota0/status/2047347857116823570)
+    - [最新のmacOS（Tahoe以降？）ではインストール直後の起動時に「安全性を確認できないので起動できない」旨の警告が出て、削除するか閉じるかしかできなくなります。この後、システム設定の「プライバシーとセキュリティ」欄の一番下に、LyXを開くことを認めるボタンが出ますので、それを押してください](https://x.com/kojiyokota0/status/2047497485120327932)
 
 ### 動作環境 {#xd7ee343}
 
