@@ -157,9 +157,9 @@ LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX �
 
 \[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
 
-### [gedit-plugins (Code Comment)](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/codecomment) {#q8313fab}
+### gedit-plugins (Code Comment) {#q8313fab}
 
-- [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/codecomment](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/codecomment)
+- [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads)
 
 Code Comment プラグインは gedit-plugins に収録されています．
 
@@ -169,9 +169,9 @@ Code Comment プラグインを使用するとコメントアウト，コメン�
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
-### [gedit-plugins (Bracket Completion)](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/bracketcompletion) {#af44b88e}
+### gedit-plugins (Bracket Completion) {#af44b88e}
 
-- [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/bracketcompletion](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/master/plugins/bracketcompletion)
+- [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads)
 
 Bracket Completion プラグインは gedit-plugins に収録されています．
 
