@@ -89,9 +89,10 @@ Linux, Windows, macOS
 
 ### Windows {#f78902e6}
 
-- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit)
-- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit)
-- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit](https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit)
+- [https://packages.msys2.org/base/mingw-w64-gedit](https://packages.msys2.org/base/mingw-w64-gedit)
+    - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-gedit)
+    - [https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit](https://packages.msys2.org/package/mingw-w64-clang-x86_64-gedit)
+    - [https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit](https://packages.msys2.org/package/mingw-w64-clang-aarch64-gedit)
 
 ### macOS {#j8f7f037}
 
