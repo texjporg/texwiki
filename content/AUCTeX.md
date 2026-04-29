@@ -871,6 +871,34 @@ forward search は [AUCTeX#インストール#Linux#設定](/AUCTeX/#p2d711b9) �
 
 C-c C-c okular で forward search ができます．
 
+## Atril との連携 (forward and inverse search) <a id="atril"></a> {#nfc32f0c}
+
+AUCTeX は Atril の forward and inverse search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Atril を指定します．
+
+```
+(setq TeX-view-program-selection '((output-pdf "Atril")))
+```
+
+C-c C-c view で View command: に TeX-atril-sync-view が表示され forward search が実行できます．
+
+TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
+
+## Xreader との連携 (forward and inverse search) <a id="xreader"></a> {#a6eadb73}
+
+AUCTeX は Xreader の forward and inverse search に対応しています．
+
+TeX-view-program-selection の output-pdf に TeX-view-program-list-builtin で設定されている Xreader を指定します．
+
+```
+(setq TeX-view-program-selection '((output-pdf "Xreader")))
+```
+
+C-c C-c view で View command: に TeX-reader-sync-view が表示され forward search が実行できます．
+
+TeX-source-correlate-mode が有効になっていれば Ctrl + 左クリックで inverse search が実行できます．
+
 ## zathura との連携 (forward and inverse search) {#nf2a372b}
 
 AUCTeX は zathura の forward and inverse search に対応しています．
