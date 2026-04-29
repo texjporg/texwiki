@@ -28,9 +28,9 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 
 ### スクリーンショット {#c84d00bd}
 
-<!-- #ref(https://okumuralab.org/tex/file.php/2/moddata/forum/2/1712/LaTeXMathPreviewScreenshot.png,nolink,latex-math-preview.el) -->
+<img src="https://okumuralab.org/tex/pluginfile.php/6/mod_forum/attachment/1712/LaTeXMathPreviewScreenshot.png" alt="latex-math-preview.el">
 
-<img src="https://www.emacswiki.org/pics/static/LaTeXMathPreviewScreenshot.png" alt="latex-math-preview.el">
+<!-- #ref(https://www.emacswiki.org/pics/static/LaTeXMathPreviewScreenshot.png,nolink,latex-math-preview.el) -->
 
 ## 注意点 {#x8b18a1c}
 
@@ -41,13 +41,12 @@ YaTeX（野鳥）は Emacs の TeX 用メジャーモードです．
 YaTeX, TeX mode, AUCTeX では " を入力しようとすると \`\` が入力されます．
 \`\` ではなく " を入力したい場合は C-q " (Ctrl-Q を入力した後で " を入力) とします．
 
-## 不具合 {#m12f4e1b}
-
-### YaTeX 1.83 と Emacs 30.1 で TeX ファイルが色分けされない --&gt; YaTeX 1.84 で修正されました {#p49b5498}
-
-- [ubuntu の emacs が更新されて yatex の設定による編集時の tex ファイルに色がつかなくて全部黒になったので使いにくいですね。](https://x.com/HiroyukiChihara/status/1899363449605693507)
-- [Emacs: やてふモードで TeX ファイルが色付きにならない問題](https://fanblogs.jp/goodfornothing/archive/3440/0)
-
+<!-- *不具合 [#m12f4e1b] -->
+<!--  -->
+<!-- ** YaTeX 1.83 と Emacs 30.1 で TeX ファイルが色分けされない - -&gt; YaTeX 1.84 で修正されました [#p49b5498] -->
+<!--  -->
+<!-- -[[ubuntu の emacs が更新されて yatex の設定による編集時の tex ファイルに色がつかなくて全部黒になったので使いにくいですね。:https://x.com/HiroyukiChihara/status/1899363449605693507]] -->
+<!--  -->
 <!-- **YaTeX 1.80 で (setq dvi2-command "okular - -unique") を設定して C-c C-g を入力すると forward search ができない [#l5f1c74e] -->
 <!--  -->
 <!-- Okular は TeX ファイルをフルパスで指定しないと forward search ができないので，cf がフルパスでない場合は (expand-file-name cf) に修正する必要があります． -->
