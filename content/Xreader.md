@@ -21,3 +21,7 @@ Xreader は X-Apps のドキュメントビューアーです。SyncTeX に対�
 ### インストール {#c7459ad2}
 
 - [https://github.com/linuxmint/xreader/blob/master/INSTALL.md](https://github.com/linuxmint/xreader/blob/master/INSTALL.md)
+
+### SyncTeX {#h73c0bb5}
+
+[AUCTeX](/AUCTeX/#xreader) を参照。
