@@ -48,9 +48,10 @@ Windows, macOS, Linux
 ### Windows {#xe7a69b8}
 
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-enter-tex](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-enter-tex)
-- [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-enter-tex](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-enter-tex)
-- [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-enter-tex](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-enter-tex)
-- [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-enter-tex](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-enter-tex)
+- [https://packages.msys2.org/base/mingw-w64-enter-tex](https://packages.msys2.org/base/mingw-w64-enter-tex)
+    - [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-enter-tex](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-enter-tex)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-enter-tex](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-enter-tex)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-enter-tex](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-enter-tex)
 
 MSYS2 の pacman でインストールできます．UCRT64 環境で
 
