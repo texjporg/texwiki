@@ -19,7 +19,7 @@ pukiwiki: "gedit"
 
 gedit は使いやすい一般的なテキストエディターです．
 
-- [gedit, a text editor](https://gedit-text-editor.org/)
+- [gedit, an easy-to-learn text editor](https://gedit-text-editor.org/)
 
 ***
 
@@ -81,8 +81,7 @@ Linux, Windows, macOS
 
 ### 派生版 {#k13d1526}
 
-- [pluma](https://github.com/mate-desktop/pluma)
-    - [pluma-plugins](https://github.com/mate-desktop/pluma-plugins)
+- [Pluma](/Pluma/)
 - [xed](https://github.com/linuxmint/xed)
 
 ## インストール {#a97adada}
