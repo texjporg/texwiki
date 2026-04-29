@@ -426,10 +426,6 @@ C-x C-f ~/
                                      "latexmk -e '$latex=q/uplatex %%O -kanji=utf8 -no-guess-input-enc %(file-line-error) %(extraopts) %S %(mode) %%S/' -e '$bibtex=q/bibtexu %%O %%B/' -e '$biber=q/biber %%O --bblencoding=utf8 -u -U --output_safechars %%B/' -e '$makeindex=q/upmendex %%O -o %%D %%S/' -e '$dvipdf=q/dvipdfmx %%O -o %%D %%S/' -norc -gg -pdfdvi %t"
                                      TeX-run-TeX nil (latex-mode) :help "Run upLaTeXmk"))
                       (add-to-list 'TeX-command-list
-                                   '("Xdg-open"
-                                     "xdg-open %s.pdf"
-                                     TeX-run-discard-or-function t t :help "Run xdg-open"))
-                      (add-to-list 'TeX-command-list
                                    '("Okular"
                                      "okular --unique \"file:\"%s.pdf\"#src:%n %a\""
                                      TeX-run-discard-or-function t t :help "Forward search with Okular"))
@@ -486,7 +482,6 @@ C-x C-f ~/
 > <tr><th style="color:#FFF;background-color:#568;text-align:center">メニュー [Command]</th><th style="color:#FFF;background-color:#568;text-align:center">入力</th><th style="color:#FFF;background-color:#568;text-align:center">機能</th></tr>
 > <tr><td>LuaLaTeXmk</td><td>C-c C-c lualatexmk RET</td><td>タイプセット (LuaLaTeXmk)</td></tr>
 > <tr><td>upLaTeXmk</td><td>C-c C-c uplatexmk RET</td><td>タイプセット (upLaTeXmk)</td></tr>
-> <tr><td>Xdg-open</td><td>C-c C-c xdg-open RET</td><td>xdg-open でプレビュー</td></tr>
 > <tr><td>Okular</td><td>C-c C-c okular RET</td><td>Okular で forward search</td></tr>
 > <tr><td>Papers</td><td>C-c C-c atril RET</td><td>Papers で forward search</td></tr>
 > <tr><td>Zathura</td><td>C-c C-c zathura RET</td><td>zathura で forward and inverse search</td></tr>
