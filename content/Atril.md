@@ -9,7 +9,7 @@ pukiwiki: "Atril"
 
 ## [Atril](https://github.com/mate-desktop/atril) {#x498e285}
 
-Atril は MATE デスクトップのドキュメントビューアーです。SyncTeX に対応しています。
+Atril は複数ページの文書を表示可能なビューアです。SyncTeX に対応しています。
 
 - [GitHub - mate-desktop/atril: A document viewer for MATE](https://github.com/mate-desktop/atril)
 
@@ -36,4 +36,4 @@ Atril は MATE デスクトップのドキュメントビューアーです。Sy
 
 ### SyncTeX {#ra20a002}
 
-[pluma-plugins](https://github.com/mate-desktop/pluma-plugins) の [synctex](https://github.com/mate-desktop/pluma-plugins/tree/master/plugins/synctex) を参照。
+[Pluma](/Pluma/#synctex) を参照。
