@@ -21,8 +21,8 @@ Atril は複数ページの文書を表示可能なビューアです。SyncTeX 
 ### ChangeLog {#z8d9c1b2}
 
 - [https://github.com/mate-desktop/atril/commits/master/](https://github.com/mate-desktop/atril/commits/master/)
-    - [meson: Replace backend boolean options with features · mate-desktop/atril@46997f7 · GitHub](https://github.com/mate-desktop/atril/commit/46997f7337803637f52a246c07de90500b3ef1d2) Replace backend boolean options with features
-        <!-- - - [[meson: make ps and epub optional backends · mate-desktop/atril@27fc5fe · GitHub:https://github.com/mate-desktop/atril/commit/27fc5fef126e173d922db3aa22df12ed6a4aa6ea]] &lt;- - Atril 1.28.2 (2025-04-25) で PostScript のバックエンドが無効化される -->
+    <!-- - - [[meson: Replace backend boolean options with features · mate-desktop/atril@46997f7 · GitHub:https://github.com/mate-desktop/atril/commit/46997f7337803637f52a246c07de90500b3ef1d2]] Replace backend boolean options with features -->
+    <!-- - - [[meson: make ps and epub optional backends · mate-desktop/atril@27fc5fe · GitHub:https://github.com/mate-desktop/atril/commit/27fc5fef126e173d922db3aa22df12ed6a4aa6ea]] &lt;- - Atril 1.28.2 (2025-04-25) で PostScript のバックエンドが無効化される -->
 
 ### インストール {#n40b8ac1}
 
@@ -36,4 +36,4 @@ Atril は複数ページの文書を表示可能なビューアです。SyncTeX 
 
 ### SyncTeX {#ra20a002}
 
-[Pluma](/Pluma/#synctex) を参照。
+[Pluma](/Pluma/#synctex)、[AUCTeX](/AUCTeX/#atril) を参照。
