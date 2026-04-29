@@ -66,15 +66,15 @@ Papers では Evince の機能である SyncTeX、XPS、PostScript、DVI のサ�
 ```
 $ papers --help-all
 用法:
- papers [オプション…] [ファイル…] Papers
+ papers [オプション…] [ファイル…] Document Viewer
 
 ヘルプのオプション:
   -h, --help                   ヘルプのオプションを表示する
   --help-all                   ヘルプのオプションをすべて表示する
   --help-gapplication          GApplication のオプションを表示する
 
-GApplication Options:
-  --gapplication-service       GApplication サービスモードに入る（D-Bus サービスファイル使用）
+GApplication オプション:
+  --gapplication-service       GApplication サービスモードに入る（D-Bus サービスファイルから使用）
 
 アプリケーションのオプション:
   -p, --page-label=PAGE        表示するドキュメントのページラベル。
