@@ -77,3 +77,9 @@ GTK+ のオプション
   -l, --find=STRING               文書の中から単語や語句を検索する
   --display=DISPLAY               使用する X のディスプレイを指定する
 ```
+
+### Night Mode（夜間モード） {#z37861d3}
+
+Atril には Night Mode（夜間モード）という色を反転させる機能があります。
+
+Ctrl+I で Night Mode（夜間モード）を切り替えることができます。
