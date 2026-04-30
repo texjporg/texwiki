@@ -63,3 +63,9 @@ GTK+ のオプション
   -l, --find=文字列               文書の中から検索する単語や語句です
   --display=DISPLAY               使用する X のディスプレイを指定する
 ```
+
+### Night Mode（夜間モード） {#u64f9f27}
+
+Xreader には Night Mode（夜間モード）という色を反転させる機能があります。
+
+Ctrl+I で Night Mode（夜間モード）を切り替えることができます。
