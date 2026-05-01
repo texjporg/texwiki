@@ -139,6 +139,8 @@ GPLv3, GPLv2
     - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/?view=log)
     - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/ChangeLog?view=markup)
     - [NEWS](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
+- [https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/](https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/)
+    - [https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/?view=log](https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/?view=log)
 
 #### 派生版 {#n2ca8cf1}
 
