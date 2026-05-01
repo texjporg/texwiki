@@ -23,7 +23,7 @@ gedit は使いやすい一般的なテキストエディターです．
 
 ***
 
-<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　<span style="color:Black;">\[開く(O)\]</span> <span style="color:Black;">\[+\]</span>　 　　　　　　　<span style="color:Black;">無題のドキュメント1</span>　　　　　　　　<span style="color:Black;">\[保存(S)\]</span> <span style="color:Black;">\[☰\]</span> <span style="color:Black;">×</span>　</ins></span><br>
+<span style="color:#DAF0FE;background-color:#DAE0FE;"><ins>　<span style="color:Black;">\[開く(O)\]</span> <span style="color:Black;">\[ᐯ\]</span>　  <span style="color:Black;">\[+\]</span>　 　　　　　　　<span style="color:Black;">無題のドキュメント1</span>　　　　　　　　<span style="color:Black;">\[保存(S)\]</span> <span style="color:Black;">\[☰\]</span> <span style="color:Black;">×</span>　</ins></span><br>
 
 ```
 \documentclass[12pt]{scrartcl}
@@ -65,6 +65,10 @@ Notable Features
 
 GNOME 42 (2022-03-23) で標準のテキストエディターが gedit から GNOME Text Editor に変更されました。--&gt; [https://release.gnome.org/42/#new-default-apps](https://release.gnome.org/42/#new-default-apps)
 
+SyncTeX プラグインは gedit-plugins 45.0 (2023-06-23) で削除されました。--&gt; [Remove synctex plugin (7624d8b3) · コミット · World / gedit / gedit-plugins · GitLab](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/commit/7624d8b31e01fce1277c82fd14acf75ee04aa1cd)
+
+外部ツールプラグインは gedit 48.1 (2024-12-08) で削除されました。--&gt; [externaltools plugin: remove its code (3f217ab4) · コミット · World / gedit / gedit · GitLab](https://gitlab.gnome.org/World/gedit/gedit/-/commit/3f217ab4b1777a713e0c3646033dc9690e768240)
+
 ### 動作環境 {#kd6ded02}
 
 Linux, Windows, macOS
@@ -82,7 +86,7 @@ Linux, Windows, macOS
 ### 派生版 {#k13d1526}
 
 - [Pluma](/Pluma/)
-- [xed](https://github.com/linuxmint/xed)
+- [Xed](https://github.com/linuxmint/xed)
 
 ## インストール {#a97adada}
 
@@ -97,9 +101,19 @@ Linux, Windows, macOS
 
 - [https://formulae.brew.sh/formula/gedit](https://formulae.brew.sh/formula/gedit)
 
+### Linux {#e758f237}
+
+- [https://archlinux.org/packages/extra/x86_64/gedit/](https://archlinux.org/packages/extra/x86_64/gedit/)
+- [https://packages.ubuntu.com/search?keywords=gedit](https://packages.ubuntu.com/search?keywords=gedit)
+- [https://packages.debian.org/search?keywords=gedit](https://packages.debian.org/search?keywords=gedit)
+- [https://packages.fedoraproject.org/pkgs/gedit/gedit/](https://packages.fedoraproject.org/pkgs/gedit/gedit/)
+- [https://software.opensuse.org/package/gedit](https://software.opensuse.org/package/gedit)
+
 ## プラグイン {#c01f900c}
 
-### [gedit-latex](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
+- [geditのプラグイン](https://gihyo.jp/admin/serial/01/ubuntu-recipe/0486)
+
+### [gedit-latex (gedit-latex-plugin)](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin) {#p2206363}
 
 - [https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin](https://wiki.gnome.org/Apps/Gedit/LaTeXPlugin)
 - [https://gitlab.gnome.org/GNOME/gedit-latex](https://gitlab.gnome.org/GNOME/gedit-latex)
@@ -107,14 +121,14 @@ Linux, Windows, macOS
 - [https://repology.org/project/gedit-latex/versions](https://repology.org/project/gedit-latex/versions)
 - [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
 - [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
-- [https://packages.ubuntu.com/search?keywords=gedit-latex](https://packages.ubuntu.com/search?keywords=gedit-latex)
-- [https://packages.debian.org/search?keywords=gedit-latex](https://packages.debian.org/search?keywords=gedit-latex)
+- [https://packages.ubuntu.com/search?keywords=gedit-latex-plugin](https://packages.ubuntu.com/search?keywords=gedit-latex-plugin)
+- [https://packages.debian.org/search?keywords=gedit-latex-plugin](https://packages.debian.org/search?keywords=gedit-latex-plugin)
 - [https://packages.fedoraproject.org/pkgs/gedit-latex/gedit-latex/](https://packages.fedoraproject.org/pkgs/gedit-latex/gedit-latex/)
 - [https://software.opensuse.org/package/gedit-latex](https://software.opensuse.org/package/gedit-latex)
 
-gedit-latex は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．
+gedit-latex (gedit-latex-plugin) は gedit で LaTeX の文書作成を簡単にできるようにするためのプラグインです．
 
-\[☰\] &gt; \[設定\] &gt; \[プラグイン\] の LaTeX Plugin にチェックをいれます．
+\[☰\] &gt; \[設定(P)\] &gt; \[プラグイン\] の LaTeX Plugin にチェックをいれます．
 
 LaTeX Plugin の \[設定\] で LaTeX Plugin で使用する Tools の設定ができます．
 
@@ -131,10 +145,10 @@ gvfs-open "$shortname.pdf"
 
 これらを \[削除\] して
 
-[ptex2pdf](/ptex2pdf/)-upLaTeX を使用する場合は
+Latexmk-LuaLaTeX を使用する場合は
 
 ```
-ptex2pdf -u -l -ot '-synctex=1' "$filename"
+latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$filename"
 ```
 
 Latexmk-upLaTeX を使用する場合は
@@ -153,12 +167,14 @@ latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e
 
 も \[追加\] してください．
 
-LaTeX → PDF は \[☰\] &gt; \[ツール\] &gt; \[LaTeX Tools\] &gt; \[LaTeX → PDF\] で実行できます．
+LaTeX → PDF は \[☰\] &gt; \[ツール(T)\] &gt; \[LaTeX Tools\] &gt; \[LaTeX → PDF\] で実行できます．
 
-\[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
+\[☰\] &gt; \[表示(V)\] &gt; \[ボトムパネル(B)\] を ON にして \[Tools\] タブをクリックすると Job (処理状況) が表示されます．
 
-### gedit-plugins (Code Comment) {#q8313fab}
+### コードコメント (Code Comment) {#q8313fab}
 
+- [https://gedit-text-editor.org/user-manuals/gedit/gedit-plugin-code-comment.html](https://gedit-text-editor.org/user-manuals/gedit/gedit-plugin-code-comment.html)
+- [https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/plugins/codecomment?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/plugins/codecomment?ref_type=heads)
 - [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads)
 
 Code Comment プラグインは gedit-plugins に収録されています．
@@ -169,7 +185,7 @@ Code Comment プラグインを使用するとコメントアウト，コメン�
 
 - [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
-### gedit-plugins (Bracket Completion) {#af44b88e}
+### カッコの補完 (Bracket Completion) {#af44b88e}
 
 - [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads)
 
@@ -186,170 +202,3 @@ Bracket Completion プラグインを使用すると閉じかっこを自動的�
 \[☰\] &gt; \[設定\] &gt; \[プラグイン\] の コードスニペットにチェックをいれます．
 
 \[☰\] &gt; \[スニペットの管理...\] からコードスニペットの設定ができます．
-
-### 外部ツール {#qa44ee46}
-
-外部ツールは，外部コマンドと Shell スクリプトを実行するためのプラグインです．
-
-\[☰\] &gt; \[設定\] &gt; \[プラグイン\] の 外部ツールにチェックをいれます．
-
-\[☰\] &gt; \[外部ツールの管理...\] から外部ツールの設定ができます．
-
-\[＋\] をクリックするとツールが追加できます．
-
-#!/bin/sh が記述されている編集画面にシェルスクリプトを追加します．
-
-適用範囲はデフォルトでは All Languages に指定されているので LaTeX に変更します．
-
-\[☰\] &gt; \[ツール\] &gt; \[外部ツール\] から設定した外部ツールを実行できます．
-
-\[☰\] &gt; \[表示\] &gt; \[ボトムパネル\] を ON にして \[Tool Output\] タブをクリックすると処理状況が表示されます．
-
-#### LuaLaTeX {#dacfdc34}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-lualatex -synctex=1 "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### LuaLaTeXmk {#gd49f6fd}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$GEDIT_CURRENT_DOCUMENT_NAME"
-```
-
-***
-
-保存(S):
-: 編集中のドキュメント
-
-#### Okular {#gaa0fcf1}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-okular --unique "file:"`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:$GEDIT_CURRENT_LINE_NUMBER "$GEDIT_CURRENT_DOCUMENT_PATH""
-```
-
-***
-
-#### Papers {#t53bc494}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-synctex view -i $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" -o "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf" -x "papers -i %{page+1} %{output}"
-```
-
-***
-
-#### zathura {#db749118}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-zathura -x "gedit "%{input}" +%{line}" --synctex-forward $GEDIT_CURRENT_LINE_NUMBER:0:"$GEDIT_CURRENT_DOCUMENT_NAME" "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### qpdfview {#ud4fadf3}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-qpdfview --unique ""`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"#src:"$GEDIT_CURRENT_DOCUMENT_NAME":$GEDIT_CURRENT_LINE_NUMBER:0"
-```
-
-***
-
-#### TeXworks {#b3f685e3}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-texworks "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### TeXstudio {#u27bd777}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-texstudio --pdf-viewer-only "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### MuPDF {#cdaf098f}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-mupdf "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### Mozilla Firefox (PDF.js) {#h50b5c23}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-firefox -new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
-
-#### Chrome PDF Viewer {#l9d9720f}
-
-***
-
-```
-#!/bin/sh
-
-cd "$GEDIT_CURRENT_DOCUMENT_DIR" && \
-chromium --new-window "`basename "$GEDIT_CURRENT_DOCUMENT_NAME" .tex`.pdf"
-```
-
-***
