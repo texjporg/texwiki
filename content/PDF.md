@@ -221,6 +221,10 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 
 [Python](/Python/) では，PDF 生成ライブラリとして， [ReportLab](http://www.reportlab.com/opensource/) などがよく知られています．
 
+#### TypeScript {#nad4e568}
+
+- [LibPDF - The PDF library TypeScript deserves](https://libpdf.documenso.com/)
+
 #### その他 {#t2dca5c2}
 
 - [PDFKit](http://pdfkit.org/): JavaScript
