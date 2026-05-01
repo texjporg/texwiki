@@ -171,4 +171,6 @@ GPLv3, GPLv2
 
 #### ChangeLog <a id="changelog"></a> {#s3ef1408}
 
-[LuaTeX](/LuaTeX/#changelog)
+- [LuaTeX](/LuaTeX/#changelog)
+- [https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/](https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/)
+    - [https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/?view=log](https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/?view=log)
