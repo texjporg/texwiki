@@ -47,7 +47,7 @@ TeX Live 2018 には LuajitTeX 1.07.0 が収録されています。
 
 TeX Live 2026 には LuaJIT 2.1.81742 (windows バイナリ)、LuaJIT 2.1.1736781742 (universal-darwin バイナリ、x86_64-linux バイナリ) が収録されています。
 
-TeX Live 2025 には LuaJIT 2.1.1736781742 が収録されています。
+TeX Live 2025 には LuaJIT 2.1.1736781742 が収録されています。--&gt; [LuaJIT 2.1.1736781742 (work in progress). LuaTeX 1.21.0 (7c07c1db) · コミット · TeXLive / luatex · GitLab](https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/commit/7c07c1db91770ec62328b6a1876c186cc5ee9a36)
 
 TeX Live 2024 には LuaJIT 2.1.0-beta3 が収録されています。
 
@@ -174,3 +174,5 @@ GPLv3, GPLv2
 - [LuaTeX](/LuaTeX/#changelog)
 - [https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/](https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/)
     - [https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/?view=log](https://svn.tug.org/texlive/trunk/Build/source/libs/luajit/?view=log)
+- [https://github.com/TeX-Live/texlive-source/tree/trunk/libs/luajit](https://github.com/TeX-Live/texlive-source/tree/trunk/libs/luajit)
+    - [https://github.com/TeX-Live/texlive-source/commits/trunk/libs/luajit](https://github.com/TeX-Live/texlive-source/commits/trunk/libs/luajit)
