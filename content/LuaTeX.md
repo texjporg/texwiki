@@ -141,6 +141,8 @@ GPLv3, GPLv2
     - [NEWS](https://svn.tug.org/texlive/trunk/Build/source/texk/web2c/luatexdir/NEWS?view=markup)
 - [https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/](https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/)
     - [https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/?view=log](https://svn.tug.org/texlive/trunk/Build/source/libs/lua53/?view=log)
+- [https://github.com/TeX-Live/texlive-source/tree/trunk/libs/lua53](https://github.com/TeX-Live/texlive-source/tree/trunk/libs/lua53)
+    - [https://github.com/TeX-Live/texlive-source/commits/trunk/libs/lua53](https://github.com/TeX-Live/texlive-source/commits/trunk/libs/lua53)
 
 #### 派生版 {#n2ca8cf1}
 
