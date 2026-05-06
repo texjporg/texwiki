@@ -42,7 +42,7 @@ TeX Live の公式サイトのパッケージをインストールしたあと�
 TeX Live/Debian がインストールされないように [dummy パッケージ](https://wiki.debian.org/TeXLive#Integrating_vanilla_TeX_Live_with_Debian)を作成して依存関係の問題を回避します．
 
 ```
-sudo apt install equivs
+sudo apt install curl equivs
 wcurl https://www.tug.org/texlive/files/debian-equivs-2023-ex.txt
 equivs-build debian-equivs-2023-ex.txt
 sudo dpkg -i texlive-local_2023.99999999-1_all.deb
