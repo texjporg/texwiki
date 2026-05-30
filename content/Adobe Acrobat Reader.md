@@ -101,7 +101,7 @@ sudo pacman -S wine winetricks
 Linux Mint/Debian/Ubuntu の場合は
 
 ```
-sudo apt install wine64 winetricks
+sudo apt install wine winetricks
 ```
 
 Fedora の場合は
@@ -125,13 +125,13 @@ winetricks allfonts
 winetricks mspatcha
 winetricks atmlib
 wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121431/AcroRdrDCx642600121431_ja_JP.exe
-wine64 AcroRdrDCx642600121431_ja_JP.exe
+wine AcroRdrDCx642600121431_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
 
 ```
-wine64 cmd /c start Acrobat.exe file.pdf
+wine cmd /c start Acrobat.exe file.pdf
 ```
 
 のように実行して「常に保護モードを無効にして開く(<ins>A</ins>)」を選択して OK を押します。
