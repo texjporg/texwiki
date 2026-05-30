@@ -123,7 +123,6 @@ sudo zypper install wine
 ```
 winetricks allfonts
 winetricks mspatcha
-winetricks atmlib
 wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121431/AcroRdrDCx642600121431_ja_JP.exe
 wine AcroRdrDCx642600121431_ja_JP.exe
 ```
