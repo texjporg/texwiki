@@ -35,7 +35,7 @@ Notable Features
 
 \begin{itemize}
   \item Files are opened in tabs
-  \item Full support for internationalized text (UTF-8)
+  \item Full support for internationalized text (Unicode/UTF-8)
   \item Syntax highlighting for lots of languages (Python, Shell, C, C++, HTML, CSS, JavaScript, XML, Markdown and many others)
   \item Configurable fonts and colors
   \item Print and print preview support
