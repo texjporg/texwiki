@@ -75,7 +75,7 @@ Linux, Windows, macOS
 
 ### License {#bf49560f}
 
-[GPLv2](https://gitlab.gnome.org/World/gedit/gedit/-/blob/master/COPYING)
+[GPLv2](https://gitlab.gnome.org/World/gedit/gedit/-/blob/main/COPYING)
 
 ### リリース情報/ChangeLog {#z39e4e65}
 
@@ -174,22 +174,24 @@ LaTeX → PDF は \[☰\] &gt; \[ツール(T)\] &gt; \[LaTeX Tools\] &gt; \[LaTe
 ### コードコメント (Code Comment) {#q8313fab}
 
 - [https://gedit-text-editor.org/user-manuals/gedit/gedit-plugin-code-comment.html](https://gedit-text-editor.org/user-manuals/gedit/gedit-plugin-code-comment.html)
-- [https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/plugins/codecomment?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit/-/tree/master/plugins/codecomment?ref_type=heads)
-- [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/codecomment?ref_type=heads)
+- [https://gitlab.gnome.org/World/gedit/gedit/-/tree/main/plugins/codecomment](https://gitlab.gnome.org/World/gedit/gedit/-/tree/main/plugins/codecomment)
+- [https://packages.ubuntu.com/search?keywords=gedit-plugin-code-comment](https://packages.ubuntu.com/search?keywords=gedit-plugin-code-comment)
+- [https://packages.debian.org/search?keywords=gedit-plugin-code-comment](https://packages.debian.org/search?keywords=gedit-plugin-code-comment)
+- [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
 
-Code Comment プラグインは gedit-plugins に収録されています．
+Code Comment プラグインは gedit あるいは gedit-plugins あるいは gedit-plugin-code-comment に収録されています．
 
 Code Comment プラグインを使用するとコメントアウト，コメントアウトの解除ができます．
 
 \[☰\] &gt; \[設定(P)\] &gt; \[プラグイン\] の Code Comment にチェックをいれます．
 
-- [geditのプラグイン： Code comment](http://blog.livedoor.jp/ti5942/archives/7584204.html)
-
 ### カッコの補完 (Bracket Completion) {#af44b88e}
 
 - [https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads](https://gitlab.gnome.org/World/gedit/gedit-plugins/-/tree/gedit-plugins-46/plugins/bracketcompletion?ref_type=heads)
+- [https://packages.ubuntu.com/search?keywords=gedit-plugin-bracket-completion](https://packages.ubuntu.com/search?keywords=gedit-plugin-bracket-completion)
+- [https://packages.debian.org/search?keywords=gedit-plugin-bracket-completion](https://packages.debian.org/search?keywords=gedit-plugin-bracket-completion)
 
-Bracket Completion プラグインは gedit-plugins に収録されています．
+Bracket Completion プラグインは gedit-plugins あるいは gedit-plugin-bracket-completion に収録されています．
 
 Bracket Completion プラグインを使用すると閉じかっこを自動的に追加してくれます．
 
