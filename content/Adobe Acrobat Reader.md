@@ -352,11 +352,11 @@ DDE でファイルを閉じなくても「Acrobat.exe で開く --&gt; Acrobat.
 
 ちなみに [LyX](/LyX/) では PDF ファイルを Adobe Acrobat Reader で表示するために pdfview.exe というプログラムを使用していますが旧バージョンの pdfview.exe では pdfopen.exe と pdfclose.exe で PDF ファイルを閉じる方法で運用していました。
 
-- [https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview-old.nsi;hb=HEAD)
+- [https://codeberg.org/LyX-org/lyx/src/branch/master/development/Win32/pdfview/pdfview-old.nsi](https://codeberg.org/LyX-org/lyx/src/branch/master/development/Win32/pdfview/pdfview-old.nsi)
 
 現在の LyX の pdfview.exe は pdfopen.exe, pdfclose.exe を使用して PDF ファイルを閉じる方法ではなく編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法で運用しているようです。[^3]
 
-- [https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=development/Win32/pdfview/pdfview.nsi;hb=HEAD)
+- [https://codeberg.org/LyX-org/lyx/src/branch/master/development/Win32/pdfview/pdfview.nsi](https://codeberg.org/LyX-org/lyx/src/branch/master/development/Win32/pdfview/pdfview.nsi)
 
 ### ファイルを開く {#id6d0918}
 
@@ -511,6 +511,6 @@ synctex help edit
 - [レジストリから Acrobat・Adobe Reader のバージョン情報を得る方法について（別解）](http://helpx.adobe.com/jp/acrobat/kb/511265.html)
 - \[[自分用メモ\] Acrobat ReaderでPDF開くたびに\[All tools\]が初期表示される問題、ようやく解決した…。環境設定メニュー「'All tools'ペインの前回の状態を記憶する」をONにしたら次から表示されなくなった。地味に毎回面倒だったんだよな](https://x.com/kozakitw/status/1844088642849185977)
 
-[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Reader X は AcroViewR10, Adobe Reader XI は AcroViewR11, Adobe Acrobat Reader DC Version 2015 は AcroViewR15, Adobe Acrobat Reader DC Version 2017 は AcroViewR17, Adobe Acrobat Reader DC Version 2018 は AcroViewR18, Adobe Acrobat Reader DC Version 2019 は AcroViewR19, Adobe Acrobat Reader DC Version 2020 は AcroViewR20, Adobe Acrobat Reader DC Version 2021 (32-bit) は AcroViewR21, Adobe Acrobat Reader DC Version 2021 (64-bit) は AcroViewA21, Adobe Acrobat Reader Version 2022 (32-bit) は AcroViewR22, Adobe Acrobat Reader Version 2022 (64-bit) は AcroViewA22, Adobe Acrobat Reader Version 2023 (64-bit) は AcroViewA23, Adobe Acrobat Reader Version 2024 (64-bit) は AcroViewA24, Adobe Acrobat Reader Version 2025 (64-bit) は AcroViewA25, Adobe Acrobat Reader Version 2026 (64-bit) は AcroViewA26 です。
+[^1]: DDE サーバー名は Adobe Reader 9 までは AcroView という名前でしたが Adobe Reader X 以降は DDE サーバー名がバージョンによって変化するようになりました。Adobe Acrobat Reader Version 2026 (64-bit) は AcroViewA26, Adobe Acrobat Reader Version 2026 (32-bit) は AcroViewR26 です。
 [^2]: ただし起動している Adobe Acrobat Reader を終了する方法では現在編集中の PDF ファイル以外の無関係の PDF ファイルを開いていても Adobe Acrobat Reader ごと終了してしまうという問題があります。
 [^3]: 編集中の PDF ファイルが開かれている Adobe Acrobat Reader のウィンドウを閉じる方法であれば他の PDF ファイルを開いていても Adobe Acrobat Reader は終了することなくそのまま他の PDF ファイルが開いた状態を保つことができます。
