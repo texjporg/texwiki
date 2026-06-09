@@ -217,6 +217,7 @@ MinGW の xz が悪さをする場合もあるようです．
 
 TeX Live 2026 対応の事例です。
 
+- [【2026年】Windows 11 LaTeX 環境構築チュートリアル](https://note.com/hatomatsu/n/n93b80d333acb)
 - [TeX Live 2025から2026へのアップデート Windows 編](https://qiita.com/denkiuo604/items/971cf1aaa61285677c04)
 
 TeX Live 2025 対応の事例です。
