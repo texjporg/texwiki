@@ -106,6 +106,8 @@ dviout は [OTF パッケージ](/OTF/)に完全対応していません。
 代わりに CID → Unicode の変換を経由した表示機能があります。
 dviout ではなく，dvipdfmx や dvips など CID に完全対応した DVIware を利用しましょう。
 
+- [QA: texlive2026でotfパッケージの\UTF{～}をdvioutで表示させたい | TeX](https://okumuralab.org/tex/mod/forum/discuss.php?d=4036)
+
 ### [PSTricks](/PSTricks/) {#x2d3abf4}
 
 dviout は dvips と完全互換ではありません。
