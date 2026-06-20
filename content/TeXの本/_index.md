@@ -88,6 +88,7 @@ TeX や LaTeX に関する本の紹介です．
 - [書籍検索：LaTeX - 共立出版](https://www.kyoritsu-pub.co.jp/search/?search_menu=keyword&tab=3&search_word=LaTeX)
 - [出版物検索結果：LaTeX - 工学社](https://www.kohgakusha.co.jp/books/search?ORDER=_PUBDATE&search=LaTeX)
 - [検索: 「LaTeX」の検索結果 &ndash; 技術書出版と販売のラムダノート](https://www.lambdanote.com/search?q=LaTeX)
+- [「LaTeX」を含む検索結果 - KADOKAWA](https://www.kadokawa.co.jp/product/search/?kw=LaTeX)
 - [【2025年最新】Yahoo!オークション - Tex(アプリケーション)の中古品・新品・古本一覧](https://auctions.yahoo.co.jp/category/list/2084008837/)
 - [【2025年最新】LaTeXの人気アイテム - メルカリ](https://jp.mercari.com/search?keyword=LaTeX&category_id=674)
 - [LaTeXのフリマアイテム一覧](https://fril.jp/s?query=LaTeX)
