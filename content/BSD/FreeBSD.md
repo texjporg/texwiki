@@ -192,6 +192,7 @@ make &amp;&amp; make installで導入できます．
 <tr><td><a href="/Papers/">Papers</a></td><td><a href="https://www.freshports.org/graphics/papers">graphics/papers</a></td><td>View multipage documents</td></tr>
 <tr><td rowspan="2"><a href="/Atril/">Atril</a></td><td><a href="https://www.freshports.org/graphics/atril">graphics/atril</a></td><td rowspan="2">MATE multi-format document viewer</td></tr>
 <tr><td><a href="https://www.freshports.org/graphics/atril-lite">graphics/atril-lite</a></td></tr>
+<tr><td><a href="/Xreader/">Xreader</a></td><td><a href="https://www.freshports.org/graphics/xreader">graphics/xreader</a></td><td>GTK multi-format document viewer</td></tr>
 <tr><td><a href="/zathura/">zathura</a></td><td><a href="https://www.freshports.org/graphics/zathura">graphics/zathura</a></td><td>Customizable lightweight pdf viewer</td></tr>
 </tbody>
 </table>
