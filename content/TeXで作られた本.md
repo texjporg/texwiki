@@ -62,9 +62,9 @@ TeX で組まれていますが，それ以外のもの）：
 - ローレンス・レッシグ著，山形浩生訳『コモンズ』（翔泳社，2002年）
 - ローレンス・レッシグ著，山形浩生，守岡桜訳『Free Culture』（翔泳社，2004年）
 - 亀田隆，高村正樹
-    『[Z会数学基礎問題集 数学I・A チェック＆リピート 改訂第2版](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2139)』
-    『[同II・B](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2140)』
-    『[同III](http://www.zkai.co.jp/books/search/book_detail.asp?ID=2141)』
+    『[Z会数学基礎問題集 数学I・A チェック＆リピート 改訂第2版](https://web.archive.org/web/20231202183236/https://www.zkai.co.jp/books/guide/id-2139/)』
+    『[同II・B](https://web.archive.org/web/20221222073407/https://www.zkai.co.jp/books/guide/id-2140/)』
+    『[同III](https://web.archive.org/web/20221222222429/https://www.zkai.co.jp/books/guide/id-2141/)』
     （Z会出版，2013年）
 
 - 力武健次『インターネットコミュニティ —国際ネットワーク最前線—』（オーム社，1994年）
@@ -140,7 +140,7 @@ TeX で組まれていますが，それ以外のもの）：
 - 米村明芳・杉山義明.『[数IIICの完全攻略](https://www.gensu.co.jp/book_print.cgi?isbn=978-4-7687-0501-8)』. 2005年10月11日発売. 現代数学社. ISBN 978-4-7687-0501-8. ([qa:38489](https://okumuralab.org/~okumura/texfaq/qa/38489.html))
 - 小川清.『データベース検索技術者試験 傾向と対策』.1993年7月発売. 紀伊國屋書店.[ISBN 978-4-8169-1200-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-8169-1200-9)
 - 長島隆廣.『常微分方程式80余例とその厳密解』.2005年5月発売. 近代文芸社.[ISBN 978-4-7733-7282-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7733-7282-3)
-- 上西俊雄『[英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案](https://web.archive.org/web/20101219085445/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)』.2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
+- 上西俊雄『英語は日本人教師だから教えられる--アルファベットから始める英語教育改革試案』([PDF](https://warp.ndl.go.jp/web/20151105110519/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/archive/wkmr.pdf)).2004年4月発売. [洋泉社](http://www.yosensha.co.jp/). ISBN4-89691-805-3([qa:52278](https://okumuralab.org/~okumura/texfaq/qa/52278.html),[qa:52280](https://okumuralab.org/~okumura/texfaq/qa/52280.html))
 - 中野賢『日本語LaTeX2εブック』．1996年11月発売．アスキー（現：[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）．[ISBN 978-4-7561-1667-3](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7561-1667-3)
 - 吉田武『オイラーの贈り物』．2001年11月発売．筑摩書房．ISBN4 480-08675-7 C0141
 - 江添亮『江添亮のC++入門』．2019年09月20日発売．紙版：[KADOKAWA](https://store.kadokawa.co.jp/shop/g/g301908000774/)、Kindle版：[アスキードワンゴ](https://asciidwango.jp/post/187773990490/%E6%B1%9F%E6%B7%BB%E4%BA%AE%E3%81%AEc-%E5%85%A5%E9%96%80)、PDF版：[達人出版会](https://tatsu-zine.com/books/cpp-intro)． [ISBN 978-4-04-893071-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-04-893071-0)
