@@ -238,7 +238,7 @@ pdfclose --file foo.pdf
 ある程度効率が良いと思われます。
 pdfdde.exe の詳細については pdfdde.c を参照してください。
 
-[https://fossies.org/windows/misc/texlive-windows-src2024.tar.xz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/texlive-windows-src2024.tar.xz/ktx/utils/pdfopen/pdfdde.c)
+[https://fossies.org/windows/misc/texlive-windows-src2025.tar.xz/ktx/utils/pdfopen/pdfdde.c](https://fossies.org/windows/misc/texlive-windows-src2025.tar.xz/ktx/utils/pdfopen/pdfdde.c)
 
 pdfdde.exe で使用できる機能に関してはコマンドラインから
 
