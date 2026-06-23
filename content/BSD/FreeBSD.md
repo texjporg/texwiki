@@ -33,8 +33,8 @@ FreeBSD はオープンソースの Unix 系オペレーティングシステム
 
 ## TeX Live <a id="texlive"></a> {#w7ff21ac}
 
-- [https://cgit.freebsd.org/ports/tree/print/texlive-full](https://cgit.freebsd.org/ports/tree/print/texlive-full)
-- [FreshPorts -- print/texlive-full](http://www.freshports.org/print/texlive-full/)
+- [https://cgit.freebsd.org/ports/tree/print/texlive-base](https://cgit.freebsd.org/ports/tree/print/texlive-base)
+- [FreshPorts -- print/texlive-base](https://www.freshports.org/print/texlive-base/)
 
 FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
