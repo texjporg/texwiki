@@ -97,7 +97,7 @@ TikZ/PGF は [dvips](/dvips/), [dvipdfmx](/dvipdfmx/), [dvisvgm](/dvisvgm/), [pd
 
 TikZ/PGF には
 
-- [1323ページの長大なマニュアル (version 3.1.11a 2026年4月13日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
+- [1323ページの長大なマニュアル (version 3.1.11a 2026年6月27日更新版の場合)](https://pgf-tikz.github.io/pgf/pgfmanual.pdf)
 
 が付属しています。
 TikZ/PGF のマニュアルはターミナルから
@@ -1062,6 +1062,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 
 ## TikZ 対応エディタ {#ta16acba}
 
+- [TikZ Editor](https://tikz.dev/editor/)
 - [Mathcha](https://www.mathcha.io/)
 - [TeXstudio](/TeXstudio/)
 - [Texmaker](/Texmaker/)
