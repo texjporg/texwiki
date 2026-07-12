@@ -22,6 +22,10 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### 不具合 {#v813d27a}
 
+#### lualatex+秀丸v9.55(utf-8)+祝鳥1.11(シフトJIS)+sumatraPDF(x64)v3.6.1でのsynctexエラー → [SumatraPDF 3.3.3 (2021-07-20)](https://www.sumatrapdfreader.org//dl//rel/3.3.3/SumatraPDF-3.3.3-64-install.exe) に戻す {#mdacf213}
+
+- [https://x.com/arai_amide/status/2076097255631941950](https://x.com/arai_amide/status/2076097255631941950)
+
 #### SumatraPDF 3.5.2 (2023-10-25) でエラー表示 → [SumatraPDF 3.3.3 (2021-07-20)](https://www.sumatrapdfreader.org//dl//rel/3.3.3/SumatraPDF-3.3.3-64-install.exe) に戻す {#ec0b8b2d}
 
 - [https://x.com/arai_amide/status/1820667539023942016](https://x.com/arai_amide/status/1820667539023942016)
