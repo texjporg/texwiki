@@ -12,7 +12,7 @@ pukiwiki: "TeX64"
 TeX64 は macOS 専用の AI-Powered LaTeX エディタです。Monaco Editor（VS Code のエディタコア）をベースに、LaTeX 執筆に特化した機能を多数搭載しています。
 
 - [TeX64 — AI-Powered LaTeX Editor for macOS](https://tex64.com/)
-- [https://x.com/TeX64AI](https://x.com/TeX64AI)
+- [https://x.com/search?q=TeX64&f=live](https://x.com/search?q=TeX64&f=live)
 - [https://zenn.dev/tex64](https://zenn.dev/tex64)
 - [https://qiita.com/tex64](https://qiita.com/tex64)
 
