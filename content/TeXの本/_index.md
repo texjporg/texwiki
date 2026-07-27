@@ -98,6 +98,12 @@ TeX や LaTeX に関する本の紹介です．
 
 絶版の本に関しては [TeXの本/絶版](</TeXの本/絶版/>) を参照．
 
+#### 2026年 {#year2026}
+
+- Stefan Kottwitz \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[協力\]
+    『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
+    （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日発売予定、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
+
 #### 2025年 {#year2025}
 
 - [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U)、PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
