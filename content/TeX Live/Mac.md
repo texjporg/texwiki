@@ -62,6 +62,7 @@ TeX Live のインストールガイド
 
 - [M1 Mac](https://okumuralab.org/~okumura/macosx/m1.html) の TeX の項目
 - [macOS での TeX Live バージョンアップ（2020 → 2025）手順メモ](https://gist.github.com/hyuki/2c600fff10f77d03c5df6e06bff6677e)
+- [MacでVSCode＋TeX環境を構築する最短手順【2026年版】](https://j7tech.jp/blog/mac-vscode-tex-setup-2026/)
 
 にも説明があります。
 
