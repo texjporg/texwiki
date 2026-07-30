@@ -129,6 +129,7 @@ $ sudo tlmgr paper a4
 
 <!-- 上記の標準的なインストールが想定していない特殊なケースや特別な対応が求められた -->
 <!-- ケースを中心に，参考事例を紹介するのがよろしいかと思います。 -->
+- [MacでVSCode＋TeX環境を構築する最短手順【2026年版】](https://j7tech.jp/blog/mac-vscode-tex-setup-2026/)
 - [2025年のコンピューターノウハウ (Mac) 46 MacTeX 2026 が来た](https://m-katsurada.sakura.ne.jp/knowhow-2025/node54.html)
 - [VSCodeから編集できるLaTeX環境構築 Mac編【環境構築】【Mac】【LaTeX】](https://qiita.com/namitech7373/items/cc94cf5d68a7ba21c4bf)
 - [HomebrewでMacにTeX環境を構築する方法](https://zenn.dev/haruki1009/articles/7e5ae0ad825fa2)
