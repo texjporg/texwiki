@@ -143,6 +143,7 @@ $ sudo tlmgr paper a4
 - [MacにHomebrewを用いてTexをインストールする](https://blog.interstellar.co.jp/2022/07/15/installing-tex-on-a-mac-using-brew/)
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [M1 Mac がやってきた（ソフトウェア設定編（4））](https://iio-lab.blogspot.com/2021/05/set-up-log-for-new-M1-mac-05.html)
+- [https://zenn.dev/search?q=MacTeX&mode=semantic](https://zenn.dev/search?q=MacTeX&mode=semantic)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 
 <!-- MacTeX-2019 の場合 -->
