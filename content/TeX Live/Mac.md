@@ -89,8 +89,6 @@ $ tar xvf install-tl-unx.tar.gz
 $ cd install-tl-2*
 ```
 
-<!-- bashならこのままでいいですが，zshだとinstall-tl-unx.tar.gzをrenameしないとcd: string not in pwdとなります... -->
-
 root 権限でインストーラを実行します．-no-gui オプションでテキストモードで起動します．-repository オプションでダウンロードするリポジトリを指定できます．
 
 ```
@@ -133,8 +131,6 @@ $ sudo /usr/local/texlive/????/bin/*/tlmgr path add
 ```
 $ sudo /usr/local/texlive/2026/bin/universal-darwin/tlmgr path add
 ```
-
-<!-- ↑ TeX Live 2021からディレクトリ名が変わったみたいです， -->
 
 <!-- https://okumuralab.org/tex/mod/forum/discuss.php?d=2675#p17225 により TeX Live 2020 の tlmgr で対応されたようです。 -->
 <!-- ↓ -->
