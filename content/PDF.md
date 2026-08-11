@@ -166,7 +166,7 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
 - PDFKit 系：PDFKit を利用したものが多数あります．
     - [TeXShop](/TeXShop/) PDF ビューアとしても使える LaTeX の統合環境
     - [Skim](/Skim/) SyncTeX に対応した PDF ビューア．macOS 専用です．
-    - [Galley](https://munepi.github.io/Galley/) SyncTeX に対応した macOS 用 TeX/LaTeX の軽量な PDF ビューア
+    - [Galley](/Galley/) SyncTeX に対応した macOS 用 TeX/LaTeX の軽量な PDF ビューア
 - [PDF-XChange Editor](https://www.pdf-xchange.com/product/pdf-xchange-editor) タブ切り替え型で軽快に動作するフリーの PDF ビューア
 - [Foxit PDF Reader](https://www.foxit.com/pdf-reader/) フリーの PDF Reader
 - [UPDF](https://updf.com/jp/) Windows/macOS/iOS/Android で動作するAI搭載のPDFエディター
