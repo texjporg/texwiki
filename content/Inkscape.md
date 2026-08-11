@@ -209,12 +209,14 @@ Scale Factor　　　　　　　　　　　　　　　　　　　　　　�
 
 \[　　キャンセル(<ins>C</ins>)　　\]　　　　　　\[　　Preview　　\]　　　　　　\[　　保存(<ins>S</ins>)　　\]<br>
 
-### SVG2TikZ, svg2tikz {#u5ee2f7d}
+### SVG2TikZ {#u5ee2f7d}
 
 Inkscape 等で作成した SVG ファイルを TikZ のコードに変換するプログラムです．
 
 - [SVG2TikZ](https://github.com/kjellmf/svg2tikz)
-- [svg2tikz](https://github.com/paaguti/svg2tikz)
+- [https://xyz2tex.github.io/svg2tikz/install.html#installing-for-use-with-inkscape](https://xyz2tex.github.io/svg2tikz/install.html#installing-for-use-with-inkscape)
+    <!-- -[[svg2tikz:https://github.com/paaguti/svg2tikz]] -->
+
 - [SVG を TikZ ソースに変換する Docker コンテナを作る](https://qiita.com/doraTeX/items/4d48e86cf3fc6f2ae132)
 
 ### svg2pdf {#g07406d0}
