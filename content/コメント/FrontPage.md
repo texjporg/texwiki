@@ -13,11 +13,11 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
-- [Galley v0.4](https://munepi.github.io/Galley/) -- [Mac](/Mac/) 2026-08-11 (火) 20:46:00
+- [Galley v0.4](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-08-11 (火) 20:46:00
 - [Texmaker 6.0.2](https://www.xm1math.net/texmaker/) -- [Texmaker](/Texmaker/) 2026-08-11 (火) 19:06:28
 - [TikZ and PGF 3.1.12](https://pgf-tikz.github.io/) -- [TikZ](/TikZ/) 2026-08-11 (火) 18:55:47
 - [hiragino-patch](https://github.com/munepi/hiragino-patch) -- [ヒラギノフォント](</ヒラギノフォント/>) 2026-04-15 (水) 00:00:00
-- [Galley](https://munepi.github.io/Galley/) -- [Mac](/Mac/) 2026-04-04 (土) 11:37:00
+- [Galley](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-04-04 (土) 11:37:00
 - [japanese-otf 2026-03-09](https://okumuralab.org/tex/mod/forum/discuss.php?d=4024) -- [OTF](/OTF/) 2026-03-13 (金) 18:25:00
 - [TeX Live 2026](https://www.tug.org/texlive/)がリリースされ，国内のCTANミラーにも下りてきています -- [TeX Live](</TeX Live/>) 2026-03-03 (火) 10:44:23
 - [TeXworks 0.6.11](https://www.tug.org/texworks/) -- [TeXworks](/TeXworks/) 2026-02-12 (木) 19:34:16
