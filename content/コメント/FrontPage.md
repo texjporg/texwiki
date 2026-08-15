@@ -13,6 +13,8 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXstudio 4.9.7](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2026-08-15 (土) 20:33:54
+- [LaTeX Workshop 10.18.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2026-08-15 (土) 20:24:44
 - [Galley v0.4](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-08-11 (火) 20:46:00
 - [Texmaker 6.0.2](https://www.xm1math.net/texmaker/) -- [Texmaker](/Texmaker/) 2026-08-11 (火) 19:06:28
 - [TikZ and PGF 3.1.12](https://pgf-tikz.github.io/) -- [TikZ](/TikZ/) 2026-08-11 (火) 18:55:47
