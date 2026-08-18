@@ -78,33 +78,33 @@ Windows (x64, Cygwin), macOS, Linux
 
 LyX のインストーラーを右クリックします。
 
-> 　　　<strong>開く(O)</strong><br>
+> 　　　<strong>開く</strong><br>
 > 　　　...<br>
-> <span style="color:Black;background-color:#DAEAFF;">　　　プロパティ(R)　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
+> <span style="color:Black;background-color:#DAEAFF;">　　　プロパティ　　　　　　　　　　　　　　　　　　　　　　　　</span><br>
 
-\[プロパティ(R)\] を選択します。
+\[プロパティ\] を選択します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-251-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX-252-Installer-1-x64.exeのプロパティ</strong></span>　　　　　　　　　　　　　　　　　　　　　<span style="color:#DD4444;background-color:#DD4444;"></ins>\[ <span style="color:White;">&#x1f5d9;</span> \]<ins></span></ins></span><br>
 >
 > 　　<strong>\[ 全般　　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[ 互換性 \]\[ デジタル署名 \]\[ セキュリティ \]\[ 詳細　　\]\[ 以前のバージョン \]</ins></span><br>
 
 　　　　<img src="https://codeberg.org/LyX-org/lyx/raw/branch/master/lib/images/lyx.png" alt="LyX" style="float:left">　
-　　　　　　 <ins>LyX-251-Installer-1-x64.exe</ins><br>
+　　　　　　 <ins>LyX-252-Installer-1-x64.exe</ins><br>
 　　　　ファイルの種類:　　 アプリケーション (.exe)<br>
 　　　　説明:　　　　　　　　　LyX - The Document Processor<br>
 
 <br>
 
 　　　　場所:　　　　　　　　　C:\Users\Lydia\Downloads<br>
-　　　　サイズ:　　　　　　　　60.1 MB (63,039,063 バイト)<br>
-　　　　ディスク上　　　　　　 60.1 MB (63,041,536 バイト)<br>
+　　　　サイズ:　　　　　　　　60.2 MB (63,136,291 バイト)<br>
+　　　　ディスク上　　　　　　 60.2 MB (63,139,840 バイト)<br>
 　　　　のサイズ:<br>
 
 <br>
 
-　　　　作成日時:　　　　　　2026年4月19日、00:00:00<br>
-　　　　更新日時:　　　　　　2026年4月19日、00:00:00<br>
-　　　　アクセス日時:　　　　2026年4月19日、00:00:00<br>
+　　　　作成日時:　　　　　　2026年8月18日、00:00:00<br>
+　　　　更新日時:　　　　　　2026年8月18日、00:00:00<br>
+　　　　アクセス日時:　　　　2026年8月18日、00:00:00<br>
 
 <br>
 
@@ -116,7 +116,7 @@ LyX のインストーラーを右クリックします。
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　　OK　　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　　キャンセル　　\]</span>　<span style="color:Gray;background-color:#EEEEEE;">\[ 　　適用(A)　　 \]</span><br>
+　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[　　　OK　　　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[　キャンセル　\]</span>　<span style="color:Gray;background-color:#EEEEEE;">\[　　適用(A)　　\]</span><br>
 
 ☑許可する(K) の状態にして \[適用(A)\] と \[OK\] をクリックします。
 
@@ -132,9 +132,9 @@ LyX のインストーラーを右クリックします。
 
 LyX のインストーラーをダブルクリックして起動します。
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.5.1 セットアップへようこそ</strong><br>
+　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.5.2 セットアップへようこそ</strong><br>
 
 <br>
 
@@ -159,10 +159,10 @@ LyX のインストーラーをダブルクリックして起動します。
 
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>使用許諾契約</strong><br>
-> 　　LyX 2.5.1 をインストールする前に、ライセンス条件を確認してくださ<br>
+> 　　LyX 2.5.2 をインストールする前に、ライセンス条件を確認してくださ<br>
 > 　　い。<br>
 >
 > <br>
@@ -170,7 +170,7 @@ LyX のインストーラーをダブルクリックして起動します。
 > 　　\[Page Down\] を押し契約をすべてお読みください。<br>
 > 　　　　　　　　　　　　<strong>LyX Windows Distribution License Agreement</strong><br>
 > 　　...<br>
-> 　　誓約のすべての条件に同意するなら、「同意する」を選択しインストールを続行します。LyX 2.5.1 を<br>
+> 　　誓約のすべての条件に同意するなら、「同意する」を選択しインストールを続行します。LyX 2.5.2 を<br>
 > 　　インストールするには、契約に同意する必要があります。<br>
 >
 > <br>
@@ -179,15 +179,15 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[　同意する(A)　\]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>ユーザーの選択</strong><br>
-> 　　どのユーザーのために LyX 2.5.1 をインストールするか選択してくださ<br>
+> 　　どのユーザーのために LyX 2.5.2 をインストールするか選択してくださ<br>
 > 　　い。<br>
 >
 > <br>
 >
-> 　　LyX 2.5.1 を自分自身のためだけにインストールするのか、このコンピューターのすべてのユーザー<br>
+> 　　LyX 2.5.2 を自分自身のためだけにインストールするのか、このコンピューターのすべてのユーザー<br>
 > 　　にインストールするのか選択してください。「次へ」をクリックし続行します。<br>
 >
 > <br>
@@ -210,14 +210,14 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>インストール先の選択</strong><br>
-> 　　LyX 2.5.1 をインストールするフォルダを選択してください。<br>
+> 　　LyX 2.5.2 をインストールするフォルダを選択してください。<br>
 >
 > <br>
 >
-> 　　LyX 2.5.1 を以下のフォルダにインストールします。別のフォルダにインストールするには、「参照」を<br>
+> 　　LyX 2.5.2 を以下のフォルダにインストールします。別のフォルダにインストールするには、「参照」を<br>
 > 　　押しフォルダを選択してください。「次へ」をクリックし続行します。<br>
 >
 > <br>
@@ -236,10 +236,10 @@ LyX のインストーラーをダブルクリックして起動します。
 > 　　空き容量: 272.1 GB<br>
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>構成要素の選択</strong><br>
-> 　　インストールしたい LyX 2.5.1 の機能を選択してください。<br>
+> 　　インストールしたい LyX 2.5.2 の機能を選択してください。<br>
 >
 > <br>
 >
@@ -259,10 +259,10 @@ LyX のインストーラーをダブルクリックして起動します。
 > 　　必要容量: 283.1 MB<br>
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>スタートメニューのフォルダの選択</strong><br>
-> 　　LyX 2.5.1 のショートカットを作成するスタートメニューのフォルダを選<br>
+> 　　LyX 2.5.2 のショートカットを作成するスタートメニューのフォルダを選<br>
 > 　　択してください。<br>
 >
 > <br>
@@ -292,7 +292,7 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ 　次へ(N) >　 \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>LaTeX頒布版</strong><br>
 > 　　LyXが使うべきLaTeX頒布版を指定してください。<br>
@@ -325,10 +325,10 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:Black;background-color:#DAEAFF;">\[ インストール(I) \]</span>　<span style="color:Black;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
 > 　<strong>インストール</strong><br>
-> 　　LyX 2.5.1 をインストール中です。お待ちください。<br>
+> 　　LyX 2.5.2 をインストール中です。お待ちください。<br>
 >
 > <br>
 >
@@ -352,15 +352,15 @@ LyX のインストーラーをダブルクリックして起動します。
 >
 > 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#888888;background-color:#EEEEEE;">\[ 　&lt; 戻る(B)　 \]</span><span style="color:#888888;background-color:#EEEEEE;">\[ 　次へ(N) >　 \]</span>　<span style="color:#888888;background-color:#EEEEEE;">\[ 　キャンセル　 \]</span>
 
-> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.1 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
+> <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　<span style="color:#2C9EEF;background-color:#805000;"><strong>L</strong></span><span style="color:#DFCE3C;background-color:#805000;"><strong>Y</strong></span><span style="color:#DE3232;background-color:#805000;"><strong>X</strong></span> <span style="color:White;"><strong>LyX 2.5.2 セットアップ</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d5;</span> \]<ins></span><span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;">&#x1f5d6;</span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 
-　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.5.1 セットアップの完了</strong><br>
-
-<br>
+　　　　　　　　　　　　　　　　　　　　　 <strong>LyX 2.5.2 セットアップの完了</strong><br>
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　LyX 2.5.1 は、このコンピュータにインストールされました。
+<br>
+
+　　　　　　　　　　　　　　　　　　　　　LyX 2.5.2 は、このコンピュータにインストールされました。
 
 　　　　　　　　　　　　　　　　　　　　　「完了」をクリックしセットアップを閉じます。<br>
 
