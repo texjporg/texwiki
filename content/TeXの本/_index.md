@@ -100,6 +100,10 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2026年 {#year2026}
 
+- [tsumugi (サークル：Jelly milk)](https://x.com/tsumugi_prr) (著者)、[funi](https://x.com/mmkr38) (表紙)
+    『[ペロロ様LaTeX解説本](https://x.com/tsumugi_prr/status/2091137872175022092)』
+    （[コミックマーケット](https://www.comiket.co.jp/)，2026年12月29日～31日開催予定（コミックマーケット109））
+
 - Stefan Kottwitz \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[日本語版協力\]
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
     （[朝倉書店](https://www.asakura.co.jp/)，2026年10月01日発売予定、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
