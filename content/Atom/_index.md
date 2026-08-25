@@ -45,6 +45,10 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 <!-- -https://atom.io/packages/search?q=latex -->
 <!-- -https://atom.io/packages/search?q=keyword:latex -->
 <!-- -[[atom-latex:https://web.pulsar-edit.dev/packages/atom-latex]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
+- [latex-tools](https://packages.pulsar-edit.dev/packages/latex-tools) Pular から LaTeX 文書をコンパイル
+    - [https://github.com/asiloisad-pulsar/latex-tools](https://github.com/asiloisad-pulsar/latex-tools)
+- [pdf-viewer](https://packages.pulsar-edit.dev/packages/pdf-viewer) SyncTeX に対応した PDF ビューア
+    - [https://github.com/asiloisad-pulsar/pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer)
 - [latex](https://web.pulsar-edit.dev/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー
     - [https://github.com/thomasjo/atom-latex](https://github.com/thomasjo/atom-latex)
         <!-- -[[latextools:https://atom.io/packages/latextools]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
