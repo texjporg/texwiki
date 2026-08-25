@@ -93,6 +93,7 @@ TeX や LaTeX に関する本の紹介です．
 - [【2025年最新】LaTeXの人気アイテム - メルカリ](https://jp.mercari.com/search?keyword=LaTeX&category_id=674)
 - [LaTeXのフリマアイテム一覧](https://fril.jp/s?query=LaTeX)
 - [「LaTeX」の検索結果 | NDLサーチ | 国立国会図書館](https://ndlsearch.ndl.go.jp/search?cs=bib&display=panel&from=0&size=100&keyword=LaTeX&f-ht=ndl&f-ht=library)
+- [技術書典：技術書典オンラインマーケット：検索 - LaTeX](https://techbookfest.org/market/search?q=LaTeX)
 
 このリストの一部を BibTeX の形式でまとめたものも用意されています → [文献データベース](</TeXの本/文献データベース/>)
 
@@ -100,7 +101,7 @@ TeX や LaTeX に関する本の紹介です．
 
 #### 2026年 {#year2026}
 
-- [tsumugi (サークル：Jelly milk)](https://x.com/tsumugi_prr) (著者)、[funi](https://x.com/mmkr38) (表紙)
+- [tsumugi (サークル：Jellymilk)](https://x.com/tsumugi_prr) (著者)、[funi](https://x.com/mmkr38) (表紙)
     『[ペロロ様LaTeX解説本](https://x.com/tsumugi_prr/status/2091137872175022092)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2026年12月29日～31日開催予定（コミックマーケット109））
 
