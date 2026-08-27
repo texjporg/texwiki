@@ -107,7 +107,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - Stefan Kottwitz \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[日本語版協力\]
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
-    （[朝倉書店](https://www.asakura.co.jp/)，2026年10月01日発売予定、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
+    （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日発売予定、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
 
 #### 2025年 {#year2025}
 
