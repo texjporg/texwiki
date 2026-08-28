@@ -80,7 +80,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [TeX Writer](</TeX Writer/>)
 - [TeX64](/TeX64/) Basic/Pro
 - [Texifier](/Texifier/)
-- [TeXTyping](https://apps.microsoft.com/detail/9mxg6bq1pl8q?hl=ja-jp&gl=JP)
+- [TeXTyping](https://opendemjapan.parallel.jp/latex.html)
 - [VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro&hl=ja)
 - [WinEdt](https://www.winedt.com/)
 
