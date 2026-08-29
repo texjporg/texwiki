@@ -9,12 +9,14 @@ pukiwiki: "TeX64"
 
 ## TeX64 {#qe7c5e61}
 
-TeX64 は macOS 専用の AI-Powered LaTeX エディタです。Monaco Editor（VS Code のエディタコア）をベースに、LaTeX 執筆に特化した機能を多数搭載しています。
+TeX64 は AI-Powered LaTeX エディタです。Monaco Editor（VS Code のエディタコア）をベースに、LaTeX 執筆に特化した機能を多数搭載しています。
 
-- [TeX64 — AI-Powered LaTeX Editor for macOS](https://tex64.com/)
-- [https://x.com/search?q=TeX64&f=live](https://x.com/search?q=TeX64&f=live)
-- [https://zenn.dev/tex64](https://zenn.dev/tex64)
-- [https://qiita.com/tex64](https://qiita.com/tex64)
+- [TeX64 — AI-Powered LaTeX Editor for macOS and Windows](https://tex64.com/)
+- [TeX64 — macOS・Windows対応のAI搭載LaTeXエディタ](https://tex64.com/ja)
+- [TeX64 - 検索 / X](https://x.com/search?q=TeX64&f=live)
+- [TeX64さんの記事一覧 | Zenn](https://zenn.dev/tex64)
+- [tex64のマイページ - Qiita](https://qiita.com/tex64)
+- [KKTeXのマイページ - Qiita](https://qiita.com/KKTeX)
 
 ### エディタ {#editor}
 
@@ -132,5 +134,5 @@ LaTeX ドキュメントの構造を自動解析し、数式環境やセクシ�
 
 ### 動作環境 {#requirements}
 
-- macOS 専用（Electron 31 ベース）
+- macOS と Windows に対応（Electron 31 ベース）
 - TeX Live などの LaTeX ディストリビューションが必要
