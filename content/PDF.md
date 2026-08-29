@@ -161,6 +161,7 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [LEKTRA](https://github.com/dheerajshenoy/lektra) (Qt) SyncTeX に対応した画面スペースとコントロールを優先した PDF ビューア。
 - PDF.js 系：PDF.js を利用したものが多数あります．
     - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](</Visual Studio Code/LaTeX/>) を使う
+    - [Pulsar](/Pulsar/) で [pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer) を使う
 - PDFium 系：PDFium を利用したものが多数あります．
     - [Texmaker](/Texmaker/) (Qt) LaTeX の統合環境
 - PDFKit 系：PDFKit を利用したものが多数あります．
