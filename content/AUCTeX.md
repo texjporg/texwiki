@@ -747,7 +747,7 @@ AUCTeX Clean ターゲット機能
 
 ### カスタマイズ {#l23cdb90}
 
-サイトごとのカスタマイズは /usr/local/share/emacs/site-lisp/tex-site.el で行います。
+サイトごとのカスタマイズは &#x7e;/.emacs.d/elpa/auctex-14.1.2/tex-site.el で行います。
 
 ### 複数ファイルの文書 {#fd84843a}
 
