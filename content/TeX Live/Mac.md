@@ -20,9 +20,10 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
-- TeX Live をベースにした macOS 専用の TeX ディストリビューションを入手する
+- TeX Live をベースにした TeX ディストリビューションを入手する
     - MacTeX：TeX Live のフルインストールと，Ghostscript および関連 GUI アプリケーションのインストールを行います。 → [こちら](/MacTeX/)
     - BasicTeX：TeX Live のサブセット (scheme-small) をインストールします。 → [こちら](/BasicTeX/)
+    - TinyTeX：軽量、クロスプラットフォーム、ポータブル、メンテナンスが容易な TeX Live ベースの LaTeX ディストリビューションです。 → [こちら](/TinyTeX/)
     - 小川版 Drag &amp; Drop UpTeX：TeX Live のサブセット (scheme-small) に日本語パッケージ + α が予め追加されており，日本語フォントのセットアップを自動で簡単に行う GUI も付いています。 → [こちら](</Drag and Drop UpTeX/>)
 - パッケージ管理システムを利用する
     - Homebrew 向けパッケージ → [こちら](#texlive-install-brew)
