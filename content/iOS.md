@@ -7,7 +7,7 @@ pukiwiki: "iOS"
 
 # iOS
 
-## [iOS](http://www.apple.com/jp/ios/)/[iPadOS](https://www.apple.com/jp/ipados/) での LaTeX の利用 {#h8fdec00}
+## [iOS](https://www.apple.com/jp/ios/)/[iPadOS](https://www.apple.com/jp/ipados/) での LaTeX の利用 {#h8fdec00}
 
 ***
 
@@ -23,6 +23,8 @@ a-Shell の LuaLaTeX で日本語文章が作成できます。
     - [https://apps.apple.com/jp/app/a-shell/id1473805438](https://apps.apple.com/jp/app/a-shell/id1473805438)
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
     - [a-Shellを使う(1)](https://zenn.dev/drbobt1122/articles/blog26052701)
+        - [🔡 LaTeX・TeX 組版システム](https://zenn.dev/drbobt1122/articles/blog26052701#%F0%9F%94%A1-latex%E3%83%BBtex-%E7%B5%84%E7%89%88%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0)
+    - [a-shellでiPad用のLaTeX環境を整える](https://trivial-pocket.hatenablog.jp/entry/2025/07/04/214544)
     - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
     - [iPad で『a-Shell』と『Documents』でLuaLaTeXを使ったのですが、日本語もすんなりできて、以前作ったファイルも問題なくコンパイルできました。ついにiPadのローカルでLaTeXを使う時代が来た！](https://x.com/dannchu/status/1543254523929833472)
     - [ついに…、ついにiPadでLaTeX組版の夢が叶った！！](https://x.com/tan_pi_seconds/status/1720790331128725604)
