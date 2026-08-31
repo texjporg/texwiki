@@ -19,9 +19,10 @@ pukiwiki: "iOS"
 
 a-Shell の LuaLaTeX で日本語文章が作成できます。
 
-- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (texlive 2026, with Tikz and LuaTeX) for text processing.
+- [a-Shell](https://apps.apple.com/jp/app/a-shell/id1473805438) a-Shell includes Python, Lua, Perl, JavaScript, C, C++ for programming and TeX (TeX Live 2026, with TikZ and LuaTeX) for text processing.
     - [https://apps.apple.com/jp/app/a-shell/id1473805438](https://apps.apple.com/jp/app/a-shell/id1473805438)
     - [https://holzschu.github.io/a-Shell_iOS/](https://holzschu.github.io/a-Shell_iOS/)
+    - [a-Shellを使う(1)](https://zenn.dev/drbobt1122/articles/blog26052701)
     - [iPadとa-Shellでローカル環境のLaTeXを使う！](https://zenn.dev/dannchu/articles/dd32b051211b69)
     - [iPad で『a-Shell』と『Documents』でLuaLaTeXを使ったのですが、日本語もすんなりできて、以前作ったファイルも問題なくコンパイルできました。ついにiPadのローカルでLaTeXを使う時代が来た！](https://x.com/dannchu/status/1543254523929833472)
     - [ついに…、ついにiPadでLaTeX組版の夢が叶った！！](https://x.com/tan_pi_seconds/status/1720790331128725604)
