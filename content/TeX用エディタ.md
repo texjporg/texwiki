@@ -68,10 +68,11 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [EasyTeX](https://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
 - [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 学生版
 - [Mery](https://www.haijin-boys.com/software/mery) with [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
+- [NO.B612 LaTeX Editor](https://apps.microsoft.com/detail/9p1rcn1l1bmh?hl=ja-JP&gl=JP) (Windows)、[NO.B612 LaTeX Editor](https://apps.apple.com/jp/app/no-b612-latex-editor/id6757142880?mt=12) (Mac)
 - [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
 - [Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
 - [TeX64](/TeX64/) Free
-- [VerbTeX LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtex&hl=ja)
+- [VerbTeX LaTeX Editor](https://www.verbosus.com/) (Android, iOS)
 - [WinShell](/WinShell/)
 
 ### シェアウェア {#l3ad4355}
@@ -85,7 +86,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [TeX64](/TeX64/) Basic/Pro
 - [Texifier](/Texifier/)
 - [TeXTyping](https://opendemjapan.parallel.jp/latex.html)
-- [VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro&hl=ja)
+- [VerbTeX LaTeX Editor](https://apps.microsoft.com/detail/9pg6ktdzvpnn?hl=ja-JP&gl=JP) (Windows)、[VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro&hl=ja) (Android)、[VerbTeX Pro LaTeX Editor](https://apps.apple.com/jp/app/verbtex-pro-latex-editor/id560872078) (iOS)
 - [WinEdt](https://www.winedt.com/)
 
 ## 表の説明 {#x494c9e3}
