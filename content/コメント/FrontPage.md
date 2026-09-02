@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXConf 2026](https://texconf.github.io/2026/) -- TeXConf 2026-09-02 (水) 19:50:00
 - [GNU Emacs 31.1](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2026-08-29 (土) 21:45:18
 - [LyX 2.5.2](https://www.lyx.org/) -- [LyX](/LyX/) 2026-08-18 (火) 13:09:39
 - [TeXstudio 4.9.7](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2026-08-15 (土) 20:33:54
