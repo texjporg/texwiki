@@ -68,7 +68,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [EasyTeX](https://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
 - [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 学生版
 - [Mery](https://www.haijin-boys.com/software/mery) with [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
-- [NO.B612 LaTeX Editor](https://apps.microsoft.com/detail/9p1rcn1l1bmh?hl=ja-JP&gl=JP) (Windows)、[NO.B612 LaTeX Editor](https://apps.apple.com/jp/app/no-b612-latex-editor/id6757142880?mt=12) (Mac)
+- [NO.B612 LaTeX Editor](https://apps.microsoft.com/detail/9p1rcn1l1bmh?hl=ja-JP&gl=JP) (Windows)、[NO.B612 LaTeX Editor](https://apps.apple.com/jp/app/no-b612-latex-editor/id6757142880?mt=12) (macOS)
 - [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
 - [Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
 - [TeX64](/TeX64/) Free
