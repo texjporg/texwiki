@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318) -- [TeXの本](</TeXの本/>) 2026-09-04 (金) 18:37:27
 - [TeXConf 2026](https://texconf.github.io/2026/) -- TeXConf 2026-09-02 (水) 19:50:00
 - [GNU Emacs 31.1](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2026-08-29 (土) 21:45:18
 - [LyX 2.5.2](https://www.lyx.org/) -- [LyX](/LyX/) 2026-08-18 (火) 13:09:39
