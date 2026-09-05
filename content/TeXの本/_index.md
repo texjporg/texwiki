@@ -10,7 +10,7 @@ pukiwiki: "TeXの本"
 
 ## TeX についての本 {#t7384365}
 
-TeX や LaTeX に関する本の紹介です．
+TeX や LaTeX に関する本の紹介です。
 
 ***
 
@@ -394,12 +394,12 @@ TeX や LaTeX に関する本の紹介です．
 
 ### オンライン本 {#kc5cec06}
 
-- The Not So Short Introduction to LaTeX2e
+- The Not So Short Introduction to LaTeX2ε
     - [CTAN:info/lshort](https://mirror.ctan.org/info/lshort) に各国語版あり。
         英語版は [CTAN:info/lshort/english](https://mirror.ctan.org/info/lshort/english) を参照。
         日本語版は [CTAN:info/lshort/japanese](https://mirror.ctan.org/info/lshort/japanese) を参照。
 
-- [An essential guide to LaTeX2e usage: Obsolete commands and packages](https://mirror.ctan.org/info/l2tabu/english/l2tabuen.pdf)
+- [An essential guide to LaTeX2ε usage: Obsolete commands and packages](https://mirror.ctan.org/info/l2tabu/english/l2tabuen.pdf)
 
 - [Making TeX Work](https://mirror.ctan.org/info/makingtexwork/) (O'Reilly)
     - [https://makingtexwork.sourceforge.net/mtw/](https://makingtexwork.sourceforge.net/mtw/)
@@ -440,7 +440,7 @@ William Adams の
 
 - [Leslie Lamport](https://lamport.org/)
     『[LaTeX: A Document Preparation System, 2nd Edition](https://www.informit.com/store/latex-a-document-preparation-system-9780201529838)』
-    （[Addison-Wesley Professional](https://www.informit.com/imprint/index.aspx?st=61085)，1994年，価格 &yen;3,938，[ISBN 978-0-201-52983-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-52983-8)）……LaTeX2e
+    （[Addison-Wesley Professional](https://www.informit.com/imprint/index.aspx?st=61085)，1994年，価格 &yen;3,938，[ISBN 978-0-201-52983-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-0-201-52983-8)）……LaTeX2ε
     の原典です。
 
 - TeX in Practice [Volume 1: Basics](https://link.springer.com/book/10.1007/978-1-4612-4354-0), [Volume II: Paragraphs, Math and Fonts](https://link.springer.com/book/10.1007/978-1-4613-9139-5), [Volume III: Tokens, Macros](https://link.springer.com/book/10.1007/978-1-4612-2724-3), [Volume IV: Output Routines, Tables](https://link.springer.com/book/10.1007/978-1-4613-9142-5) (Stephan von Bechtolsheim)
