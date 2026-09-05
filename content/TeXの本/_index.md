@@ -100,7 +100,7 @@ TeX や LaTeX に関する本の紹介です．
 
 絶版の本に関しては [TeXの本/絶版](</TeXの本/絶版/>) を参照．
 
-#### 2026年 {#year2026}
+#### 2026年（令和8年） {#year2026}
 
 - [tsumugi (サークル：Jellymilk)](https://x.com/tsumugi_prr) (著者)、[funi](https://x.com/mmkr38) (表紙)
     『[ペロロ様LaTeX解説本](https://x.com/tsumugi_prr/status/2091137872175022092)』
@@ -110,7 +110,7 @@ TeX や LaTeX に関する本の紹介です．
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
     （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日紙版、電子版発売、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
 
-#### 2025年 {#year2025}
+#### 2025年（令和7年） {#year2025}
 
 - [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U)、PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
     （2025年06月29日発行（Girls Love Festival44），イベント価格（電子版 &yen;1,500，電子＋紙 &yen;2,000），PDF版 &yen;1,650，紙版 &yen;2,310）
@@ -121,7 +121,7 @@ TeX や LaTeX に関する本の紹介です．
 - [IMP AI・セキュリティ研究所](https://note.com/imp_aisec_lab)『[情報系論文はLaTeXで書くよ 情報系博士の日常](https://www.amazon.co.jp/%E6%83%85%E5%A0%B1%E7%B3%BB%E8%AB%96%E6%96%87%E3%81%AFLATEX%E3%81%A7%E6%9B%B8%E3%81%8F%E3%82%88-%E6%83%85%E5%A0%B1%E7%B3%BB%E5%8D%9A%E5%A3%AB%E3%81%AE%E6%97%A5%E5%B8%B8-IMP-AI%E3%83%BB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E7%A0%94%E7%A9%B6%E6%89%80-ebook/dp/B0F4SVGZ24/)』
     （2025年04月14日Kindle版発売，税込 &yen;0）
 
-#### 2024年 {#year2024}
+#### 2024年（令和6年） {#year2024}
 
 - [神和電子 (サークル：神和電子)](https://xn--kst.jp/)『[詠ちゃんと学ぶ同人誌組版の技術 ～Pandoc+LuaLaTeXでMarkdownから技術同人誌を作ろう～](https://xn--kst.jp/works/yomi-pandoc/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/kwEKbyfipAhaFdT6iq3zXq)、紙版：[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=2746856))
     （2024年12月30日初版第1刷（コミックマーケット105），2025年06月01日初版第2刷（技術書典18），電子版 &yen;792，紙版 &yen;792）
@@ -143,7 +143,7 @@ TeX や LaTeX に関する本の紹介です．
     （Independently published (個人出版)，2024年04月12日発売，税込 &yen;1,980，[ISBN 979-8322174073](https://ja.wikipedia.org/wiki/Special:Booksources/979-8322174073)）
     - PDF が [https://alg-d.com/math/tex.html](https://alg-d.com/math/tex.html) で公開されている。--&gt; [TikZ の使い方](https://alg-d.com/math/tikz.pdf) (PDF、2026年01月19日更新)
 
-#### 2023年 {#year2023}
+#### 2023年（令和5年） {#year2023}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/dp/ebook/2023/978-4-297-13890-5)』電子版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，2025年01月17日更新，税込 &yen;3,300，[ISBN 978-4-297-13890-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13890-5)）…… TeX Live 2023 に合わせて改訂した入門書。
@@ -154,7 +154,7 @@ TeX や LaTeX に関する本の紹介です．
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5p))
     （2023年05月21日発行（技術書典14），電子版 &yen;500）
 
-#### 2022年 {#year2022}
+#### 2022年（令和4年） {#year2022}
 
 - [数学・物理学専門のインターネット家庭教師](http://phys.co-suite.jp/)『[TikZへの入門](http://phys.co-suite.jp/textips.html)』(PDF)
     （2022年11月23日掲載、2024年01月21日更新）
@@ -166,12 +166,12 @@ TeX や LaTeX に関する本の紹介です．
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
-#### 2021年 {#year2021}
+#### 2021年（令和3年） {#year2021}
 
 - [ふぉれぽん](https://forepon.com/)『[めちゃ簡単挫折知らずのLaTeX 美図数式 中学・高校数学教材作成用レシピ集](https://www.amazon.co.jp/%E3%82%81%E3%81%A1%E3%82%83%E7%B0%A1%E5%8D%98%E6%8C%AB%E6%8A%98%E7%9F%A5%E3%82%89%E3%81%9A%E3%81%AELaTeX-%E4%B8%AD%E5%AD%A6%E3%83%BB%E9%AB%98%E6%A0%A1%E6%95%B0%E5%AD%A6%E6%95%99%E6%9D%90%E4%BD%9C%E6%88%90%E7%94%A8%E3%83%AC%E3%82%B7%E3%83%94%E9%9B%86-%E3%81%B5%E3%81%89%E3%82%8C%E3%81%BD%E3%82%93/dp/B09K1XG5WK/)』
     （Independently published (個人出版)，2021年10月20日発売，定価 &yen;1,650，[ISBN 979-8750511181](https://ja.wikipedia.org/wiki/Special:Booksources/979-8750511181)）
 
-#### 2020年 {#year2020}
+#### 2020年（令和2年） {#year2020}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2020/978-4-297-11713-9)』電子版
     （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，2022年04月11日更新，税込 &yen;3,280，[ISBN 978-4-297-11713-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11713-9)）
@@ -179,7 +179,7 @@ TeX や LaTeX に関する本の紹介です．
 - [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.media/bluebacks) B-2145，2020年07月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
-#### 2019年 {#year2019}
+#### 2019年（令和元年） {#year2019}
 
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://lab.miz-ar.info/cluttex-book/)』([技術書典マーケット](https://techbookfest.org/product/5999916325273600)、在庫：[BOOTH(電子版単体)](https://damepo-lab.booth.pm/items/1317394)、[BOOTH(紙+電子)](https://damepo-lab.booth.pm/items/1573098))
     （2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
@@ -193,7 +193,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2019>)
 
-#### 2018年 {#year2018}
+#### 2018年（平成30年） {#year2018}
 
 - [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』([技術書典マーケット](https://techbookfest.org/product/32850001)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
     （2018年10月08日発行（技術書典5），紙版 &yen;1,320）
@@ -214,14 +214,14 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2018>)
 
-#### 2017年 {#year2017}
+#### 2017年（平成29年） {#year2017}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第7版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2017/978-4-7741-8764-8)』電子版
     （[技術評論社](http://gihyo.jp/)，2017年01月20日発売，2020年04月22日更新，税込 &yen;3,200，[ISBN 978-4-7741-8764-8](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-8764-8)）
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2017>)
 
-#### 2016年 {#year2016}
+#### 2016年（平成28年） {#year2016}
 
 - [渡辺 徹](https://github.com/thortex)
     『[好き好き LaTeX2ε 初級編 第 1.14 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-jou/refs/heads/master/jouhyper.pdf)』(PDF)
@@ -231,32 +231,32 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2016>)
 
-#### 2015年 {#year2015}
+#### 2015年（平成27年） {#year2015}
 
-#### 2014年 {#year2014}
+#### 2014年（平成26年） {#year2014}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2014>)
 
-#### 2013年 {#year2013}
+#### 2013年（平成25年） {#year2013}
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第6版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2013/978-4-7741-6107-5)』電子版（[技術評論社](http://gihyo.jp/)，2013年10月23日発売，2015年05月13日更新，税込 &yen;3,200，[ISBN 978-4-7741-6107-5](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7741-6107-5)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2013>)
 
-#### 2012年 {#year2012}
+#### 2012年（平成24年） {#year2012}
 
-#### 2011年 {#year2011}
+#### 2011年（平成23年） {#year2011}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2011>)
 
-#### 2010年 {#year2010}
+#### 2010年（平成22年） {#year2010}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2010>)
 
-#### 2009年 {#year2009}
+#### 2009年（平成21年） {#year2009}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2009>)
 
-#### 2008年 {#year2008}
+#### 2008年（平成20年） {#year2008}
 
 - [ut](http://texuttex.g2.xrea.com/)『[私立文系初級 LaTeX ユーザーが訳してみた初級 LaTeX ユーザーのための実用 TeX 入門の入門〔抄〕](http://texuttex.g2.xrea.com/)』
     （2008年05月20日）
@@ -281,7 +281,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2008>)
 
-#### 2007年 {#year2007}
+#### 2007年（平成19年） {#year2007}
 
 - [渡辺 徹](https://github.com/thortex)
     『[好き好き LaTeX2ε 中級編 第 0.0.2 版](https://raw.githubusercontent.com/thortex/jlatex-man-lll-kimi/refs/heads/master/kimi.pdf)』(PDF)
@@ -289,7 +289,7 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2007>)
 
-#### 2006年 {#year2006}
+#### 2006年（平成18年） {#year2006}
 
 - [阿部 紀行](https://www.ms.u-tokyo.ac.jp/~abenori/)
     『[一歩踏み込む「LaTeXの基本」―入力支援環境「祝鳥」を用いた文書作成―](https://www.saiensu.co.jp/search/?isbn=978-4-7819-1158-8&y=2006)』
@@ -313,11 +313,11 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2006>)
 
-#### 2005年 {#year2005}
+#### 2005年（平成17年） {#year2005}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2005>)
 
-#### 2004年 {#year2004}
+#### 2004年（平成16年） {#year2004}
 
 - [藤田 眞作](http://xymtex.com/)
     『[LaTeX2εまくろの八衢 オンライン版 第 1 版](https://web.archive.org/web/20220516111700/http://xymtex.my.coocan.jp/fujitas2/yatimata2/v200/yatimata2.pdf)』(PDF)
@@ -325,64 +325,64 @@ TeX や LaTeX に関する本の紹介です．
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2004>)
 
-#### 2003年 {#year2003}
+#### 2003年（平成15年） {#year2003}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2003>)
 
-#### 2002年 {#year2002}
+#### 2002年（平成14年） {#year2002}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2002>)
 
-#### 2001年 {#year2001}
+#### 2001年（平成13年） {#year2001}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2001>)
 
-#### 2000年 {#year2000}
+#### 2000年（平成12年） {#year2000}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year2000>)
 
-#### 1999年 {#year1999}
+#### 1999年（平成11年） {#year1999}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1999>)
 
-#### 1998年 {#year1998}
+#### 1998年（平成10年） {#year1998}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1998>)
 
-#### 1997年 {#year1997}
+#### 1997年（平成9年） {#year1997}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1997>)
 
-#### 1996年 {#year1996}
+#### 1996年（平成8年） {#year1996}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1996>)
 
-#### 1995年 {#year1995}
+#### 1995年（平成7年） {#year1995}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1995>)
 
-#### 1994年 {#year1994}
+#### 1994年（平成6年） {#year1994}
 
 - 野寺 隆志『[楽々LaTeX 第2版](https://www.kyoritsu-pub.co.jp/book/b10011603.html)』（[共立出版](https://www.kyoritsu-pub.co.jp/)，1994年06月15日，税込価格 &yen;3,190 (本体 &yen;2,900 + 税10%)，[ISBN 978-4-320-02703-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-320-02703-9)）
 - [TeXの本/絶版](</TeXの本/絶版/#year1994>)
 
-#### 1993年 {#year1993}
+#### 1993年（平成5年） {#year1993}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1993>)
 
-#### 1992年 {#year1992}
+#### 1992年（平成4年） {#year1992}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1992>)
 
-#### 1991年 {#year1991}
+#### 1991年（平成3年） {#year1991}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1991>)
 
-#### 1990年 {#year1990}
+#### 1990年（平成2年） {#year1990}
 
 - [TeXの本/絶版](</TeXの本/絶版/#year1990>)
 
-#### 1989年 {#year1989}
+#### 1989年（平成元年） {#year1989}
 
 - 垣内 良子、櫻井 尚子
     『[TeXのマクロパッケージLaTeXの紹介](https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1468198/p107.pdf)』(PDF)
