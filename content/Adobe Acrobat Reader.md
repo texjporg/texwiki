@@ -31,17 +31,17 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
     - [Adobe AcrobatおよびReaderの脆弱性（APSB26-63）に関する注意喚起](https://www.jpcert.or.jp/at/2026/at260018.html)
     - [Adobe Acrobat および Reader の脆弱性対策について(2026年6月)](https://www.ipa.go.jp/security/security-alert/2026/0610-adobereader.html)
 - Adobe Acrobat Reader Version 2026 (64-bit) の DDE server name は AcroViewA26 です。
-- [TeX Live Revision 48819](http://www.tug.org/svn/texlive?view=revision&revision=48819) で
-    pdfddeservername.txt の中身が AcroViewR19 に変更されましたが
-    Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で
-    pdfopen file.pdf を実行すると Cannot contact a server. エラーが表示され
-    file.pdf が開けないようです。
-    Acrobat Reader が起動した状態では file.pdf を開くことができます。
-    起動していない状態でも開ける方もおられるようです。--&gt;
-    バージョン 2019.008.20074 と表示されるものでは，起動していない状態で開くことが
-    できました。しかし環境によるかも知れません。いずれにしても
-    起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen,
-    pdfclose を繰り返すのが良いでしょう。
+    <!-- -[[TeX Live Revision 48819:http://www.tug.org/svn/texlive?view=revision&revision=48819]] で -->
+    <!-- pdfddeservername.txt の中身が AcroViewR19 に変更されましたが -->
+    <!-- Adobe Acrobat Reader 2019.008.20071 または Adobe Acrobat Reader 2019.008.20074 が起動していない状態で -->
+    <!-- pdfopen file.pdf を実行すると Cannot contact a server. エラーが表示され -->
+    <!-- file.pdf が開けないようです。 -->
+    <!-- Acrobat Reader が起動した状態では file.pdf を開くことができます。 -->
+    <!-- 起動していない状態でも開ける方もおられるようです。- -&gt; -->
+    <!-- バージョン 2019.008.20074 と表示されるものでは，起動していない状態で開くことが -->
+    <!-- できました。しかし環境によるかも知れません。いずれにしても -->
+    <!-- 起動していない状態では起動に時間がかかるでしょうから，起動した状態で pdfopen, -->
+    <!-- pdfclose を繰り返すのが良いでしょう。 -->
 
 ### 公式 Web ページ {#t103678c}
 
