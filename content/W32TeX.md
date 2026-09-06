@@ -76,7 +76,7 @@ W32TeX は，[ミラーサイト](/W32TeX/#mirror)からダウンロード可能
 
 #### ダウンロードファイル {#i853d3d5}
 
-W32TeX には，フルインストール / 標準インストール / 最小インストール の三つの構成があります．<strong>HDD の容量に余裕があればフルインストールを選んでおくのが無難</strong>でしょう．フルインストールで 2.8 GiB 程度の容量が必要です．
+W32TeX は，フルインストール / 標準インストール / 最小インストール の三つから構成されています．<strong>HDD の容量に余裕があればフルインストールを選んでおくのが無難</strong>でしょう．フルインストールで 2.8 GiB 程度の容量が必要です．
 
 構成によりダウンロードするファイルが変わります．[ダウンロードファイルの一覧](/W32TeX/#filelist)を参考に，適当なフォルダにダウンロードしてください．ここでは C:\w32tex\download にダウンロードしたとしておきます．日本語や空白の入っているフォルダはトラブルを引き起こす可能性がありますので，避けてください．
 
@@ -121,8 +121,7 @@ W32TeX は環境変数 Path を設定する必要があります．上で表示�
 
 #### 以前に TeX をインストールしたことがある場合 {#z02ac16d}
 
-もしユーザー環境変数またはシステ
-ム環境変数に “TEXMF”，“TEXMFCNF”，“TEXMFMAIN” といった変数が登録されているなら，削除してください．次に，ユーザー環境変数のところを見てください．Path という欄があればそれをクリックして［編集］を押します．変数値の中に古い TeX へのパス（“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など）があったら削除します．
+もしユーザー環境変数またはシステム環境変数に "TEXMF"，"TEXMFCNF"，"TEXMFMAIN" といった変数が登録されているなら，削除してください．次に，ユーザー環境変数のところを見てください．Path という欄があればそれをクリックして［編集］を押します．変数値の中に古い TeX へのパス（“;C:\usr\local\bin”，“;C:\tex\bin”，“;C:\ptex\bin” など）があったら削除します．
 
 #### Ghostscript {#zd901fa9}
 
@@ -165,7 +164,7 @@ abtexinst.exe をもう一度起動します（インストール時に設定を
 
 ### 文字コードの自動判別 {#z6946085}
 
-<strong>TeX Liveにも導入されているため [https://texwiki.texjp.org/?ptexenc#x100a023](https://texwiki.texjp.org/?ptexenc#x100a023) に転記しました．以下は古い情報です．</strong>
+<strong>TeX Live にも導入されているため [https://texwiki.texjp.org/?ptexenc#x100a023](https://texwiki.texjp.org/?ptexenc#x100a023) に転記しました．以下は古い情報です．</strong>
 
 W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイルの文字コードを自動判別します．殆どの場合正しく推定がされますが，誤判定することもあります．（[例](/upTeX,upLaTeX/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
 
@@ -175,11 +174,11 @@ W32TeX はデフォルトの設定では (e-)(u)pTeX を使用するとファイ
 platex --no-guess-input-enc --kanji=utf8 sample.tex
 ```
 
-常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は，[texmf.cnf ファイル](</texmf.cnf ファイル/>)を参照．）
+常に自動判定を無効にするには，kpathsea 変数である guess_input_kanji_encoding を 0 に設定します．（変更方法は [texmf.cnf ファイル](</texmf.cnf ファイル/>) を参照）
 
 ### 漢字入出力対応状況 {#qc9f2e7d}
 
-<strong>TeX Liveにも導入されているため [https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13](https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13) に転記しました．以下は古い情報です．</strong>
+<strong>TeX Live にも導入されているため [https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13](https://texwiki.texjp.org/?Microsoft%20Windows#effb8e13) に転記しました．以下は古い情報です．</strong>
 
 コンソールやファイル名等での漢字（日本語）の入出力の対応状況をまとめました（2020/12/11 現在）．
 
