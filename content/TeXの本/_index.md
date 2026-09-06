@@ -126,8 +126,8 @@ TeX や LaTeX に関する本の紹介です。
 
 #### 2024年（令和6年） {#year2024}
 
-- [神和電子 (サークル：神和電子)](https://xn--kst.jp/)『[詠ちゃんと学ぶ同人誌組版の技術 ～Pandoc+LuaLaTeXでMarkdownから技術同人誌を作ろう～](https://xn--kst.jp/works/yomi-pandoc/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/kwEKbyfipAhaFdT6iq3zXq)、紙版：[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=2746856))
-    （2024年12月30日初版第1刷（コミックマーケット105），2025年06月01日初版第2刷（技術書典18），電子版 &yen;792，紙版 &yen;792）
+- [神和電子 (サークル：神和電子)](https://xn--kst.jp/)『[詠ちゃんと学ぶ同人誌組版の技術 ～Pandoc+LuaLaTeXでMarkdownから技術同人誌を作ろう～](https://xn--kst.jp/works/yomi-pandoc/)』(電子版：[技術書典マーケット](https://techbookfest.org/product/kwEKbyfipAhaFdT6iq3zXq)、紙版：[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=2746856))
+    （2024年12月30日初版第1刷発行（コミックマーケット105），2025年06月01日初版第2刷発行（技術書典18），&yen;792）
 
 - doitsu『[ゼロから学べるLaTeX完全入門: レポート・論文執筆の新スタンダード](https://www.amazon.co.jp/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B9%E3%82%8BLaTeX%E5%AE%8C%E5%85%A8%E5%85%A5%E9%96%80-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%BB%E8%AB%96%E6%96%87%E5%9F%B7%E7%AD%86%E3%81%AE%E6%96%B0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89-doitsu-ebook/dp/B0DNGXC68Y/)』
     （2024年11月18日Kindle版発売，税込 &yen;1,000）
