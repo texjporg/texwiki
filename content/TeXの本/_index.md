@@ -110,6 +110,9 @@ TeX や LaTeX に関する本の紹介です。
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
     （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日紙版、電子版発売、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
 
+- [川口 晃世 (KKTeX)](https://kktexportfolio.klassikore.com/)『[expl3基礎](https://market.tex64.com/products/pdf-da188b94dbad479a958cfc389ca816c8)』
+    ([Folio64](https://market.tex64.com/)，2026年09月01日PDF版発売，&yen;500)
+
 #### 2025年（令和7年） {#year2025}
 
 - [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U)、PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
@@ -151,7 +154,7 @@ TeX や LaTeX に関する本の紹介です。
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）…… TeX Live 2023 に合わせて改訂した入門書。
     - [サポートページ](https://github.com/okumuralab/bibun9)
-- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5p))
+- [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ))
     （2023年05月21日発行（技術書典14），電子版 &yen;500）
 
 #### 2022年（令和4年） {#year2022}
@@ -181,22 +184,9 @@ TeX や LaTeX に関する本の紹介です。
 
 #### 2019年（令和元年） {#year2019}
 
-- [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[LaTeX文書処理自動化ツールClutTeX 使い方とその仕組み 第2版](https://lab.miz-ar.info/cluttex-book/)』([技術書典マーケット](https://techbookfest.org/product/5999916325273600)、在庫：[BOOTH(電子版単体)](https://damepo-lab.booth.pm/items/1317394)、[BOOTH(紙+電子)](https://damepo-lab.booth.pm/items/1573098))
-    （2019年09月22日第2版発行（技術書典7），2019年04月14日初版発行（技術書典6），電子版単体 (PDF) &yen;300，紙書籍+電子版 (PDF) &yen;500）
-    - [サポートページ](https://lab.miz-ar.info/cluttex-book/)
-- [hidaruma (サークル：Virtual Ones)](https://x.com/hid_alma1026)『[LuaLaTeX微文書作成入門](https://techbookfest.org/product/5683850353049600)』([技術書典マーケット](https://techbookfest.org/product/5683850353049600))
-    （2019年09月22日発行（技術書典7））
-    - [技術書典7で頒布した同人誌の公開](https://laughingandgrief.hatenablog.com/entry/2019/12/19/212237)
-    - [技術書典7で頒布した「LuaLaTeX微文書作成入門」の改稿版のリポジトリ。](https://github.com/virtual-ones/introduck-lualatex)
-- 日向たろし (サークル：日向基研)『[LaTeX Hand Book 第2版](https://shop.comiczin.jp/products/detail.php?product_id=40968)』
-    （[コミックマーケット](https://www.comiket.co.jp/)，2019年08月12日第2版発行（コミックマーケット96（4日目）），価格（税込）&yen;100，[ISDN 278-4-565903-05-8](https://isdn.jp/2784565903058)）
-
 - [TeXの本/絶版](</TeXの本/絶版/#year2019>)
 
 #### 2018年（平成30年） {#year2018}
-
-- [わかめそば (サークル：53鍵盤)](https://www.wakamesoba98.net/)『[LinuxとLaTeXで技術同人誌を書く本](https://techbookfest.org/product/32850001)』([技術書典マーケット](https://techbookfest.org/product/32850001)、紙版：[COMIC ZIN](https://shop.comiczin.jp/products/detail.php?product_id=38085))
-    （2018年10月08日発行（技術書典5），紙版 &yen;1,320）
 
 - [吉永 徹美](https://web.archive.org/web/20160922162927/http://www.h4.dion.ne.jp/~latexcat/)（[しっぽ 愛好家](https://okumuralab.org/tex/mod/forum/search.php?id=2&words=&phrase=&notwords=&fullwords=&hfromday=1&hfrommonth=1&hfromyear=1&hfromhour=1&hfromminute=1&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid=&subject=&user=%E3%81%97%E3%81%A3%E3%81%BD+%E6%84%9B%E5%A5%BD%E5%AE%B6)）『[LaTeX2ε辞典 増補改訂版](https://www.shoeisha.co.jp/book/detail/9784798159157)』電子書籍（[翔泳社](https://www.shoeisha.co.jp/)，2018年08月24日，価格 &yen;3,278 (本体 &yen;2,980＋税10%)，[ISBN 978-4-7981-5915-7](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-7981-5915-7)）……LaTeX2ε
     で行いたいことを逆引きで調べることができる。解説はコンパクトにまとまっており、その詳細を知りたければ、同著者の『独習LaTeX2ε』（翔泳社）とのセットを手元に置き、相互参照するとよい。そうすることで、より深い理解が得られるからだ。
