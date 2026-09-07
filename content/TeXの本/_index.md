@@ -157,6 +157,8 @@ TeX や LaTeX に関する本の紹介です。
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ))
     （2023年05月21日発行（技術書典14），電子版 &yen;500）
 
+- [TeXの本/絶版](</TeXの本/絶版/#year2023>)
+
 #### 2022年（令和4年） {#year2022}
 
 - [数学・物理学専門のインターネット家庭教師](http://phys.co-suite.jp/)『[TikZへの入門](http://phys.co-suite.jp/textips.html)』(PDF)
