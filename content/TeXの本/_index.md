@@ -169,7 +169,7 @@ TeX や LaTeX に関する本の紹介です。
 
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
 - [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
-    （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
+    （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，[2026年06月22日第2刷発売](https://book.impress.co.jp/staff_blog/article/202605281100/)，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年（令和3年） {#year2021}
 
