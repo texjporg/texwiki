@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXstudio 4.9.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2026-09-12 (土) 08:05:05
 - [LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318) -- [TeXの本](</TeXの本/>) 2026-09-04 (金) 18:37:27
 - [TeXConf 2026](https://texconf.github.io/2026/) -- [TeXConf](/TeXConf/) 2026-09-02 (水) 19:50:00
 - [GNU Emacs 31.1](https://www.gnu.org/software/emacs/) -- [Emacs](/Emacs/) 2026-08-29 (土) 21:45:18
