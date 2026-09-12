@@ -28,8 +28,6 @@ TeX や LaTeX に関する本の紹介です。
 - [Cute.Guides（きゅうとガイド）](https://guides.lib.kyushu-u.ac.jp/cuteguides/) &mdash;
     [LaTeX事始め - ★はじめてのLaTeX - Cute.Guides at 九州大学 Kyushu University](https://guides.lib.kyushu-u.ac.jp/LaTeX-LectureNote/)
 
-- [LSS企画「Cloud LaTeX入門」公開中 | 九州工業大学附属図書館](https://www.lib.kyutech.ac.jp/library/ja/node/1585)
-
 <!-- -[[渡辺 徹さん:http://typeface.blog116.fc2.com/]] ([[Watanabe Thor さん:https://github.com/thortex]]) -->
 <!-- - -[[FrontPage - MyTeXpert>MyTeXpert:FrontPage]] -->
 <!-- - -[[thortex (thortex) / Repositories · GitHub:https://github.com/thortex]] -->
