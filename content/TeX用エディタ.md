@@ -23,7 +23,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 </thead>
 </table>
 
-<!-- |>|BGCOLOR(#CFC):~[[Eclipse IDE:https://eclipseide.org/]]|CENTER:[[2026-06:https://eclipse.dev/eclipse/development/plans.html]]|2026-06-10|W, M, L|BGCOLOR(#CFC):IDE|BGCOLOR(#CCF):[[EPL-2.0:https://www.eclipse.org/legal/epl-2.0/]]|[[''解説''>Eclipse]]| -->
+<!-- |>|BGCOLOR(#CFC):~[[Eclipse IDE:https://eclipseide.org/]]|CENTER:[[2026-09:https://eclipse.dev/eclipse/development/plans.html]]|2026-09-09|W, M, L|BGCOLOR(#CFC):IDE|BGCOLOR(#CCF):[[EPL-2.0:https://www.eclipse.org/legal/epl-2.0/]]|[[''解説''>Eclipse]]| -->
 <!-- ||BGCOLOR(#FFC):[[TeXlipse:https://github.com/eclipse-texlipse/texlipse]]|CENTER:[[2.0.4:https://github.com/eclipse-texlipse/texlipse/releases]]|2025-06-28||BGCOLOR(#FFC):RIGHT:プラグイン|BGCOLOR(#CCF):[[EPL-2.0:https://github.com/eclipse-texlipse/texlipse/blob/master/LICENSE]]|[[''解説''>TeXlipse]]| -->
 <!-- |>|BGCOLOR(#CFF):~[[Enter TeX:https://gitlab.gnome.org/World/gedit/enter-tex]]|CENTER:[[3.49.0:https://gitlab.gnome.org/World/gedit/enter-tex/-/blob/main/NEWS]]|2026-01-03|W, M, L|BGCOLOR(#CFF):LaTeX|BGCOLOR(#CCF):[[GPLv3:https://gitlab.gnome.org/World/gedit/enter-tex/-/blob/main/LICENSES/GPL-3.0-or-later.txt]]|[[''解説''>Enter TeX]]| -->
 
