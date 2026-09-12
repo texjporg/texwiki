@@ -27,9 +27,9 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 
 ### お知らせ {#k350f003}
 
-- Adobe Acrobat Reader 26.001.21662 以降に更新してください。Adobe Acrobat Reader 26.001.21651 およびそれ以前のバージョンには脆弱性が存在します。
-    - [Adobe AcrobatおよびReaderの脆弱性（APSB26-63）に関する注意喚起](https://www.jpcert.or.jp/at/2026/at260018.html)
-    - [Adobe Acrobat および Reader の脆弱性対策について(2026年6月)](https://www.ipa.go.jp/security/security-alert/2026/0610-adobereader.html)
+- Adobe Acrobat Reader 26.002.21901 以降に更新してください。Adobe Acrobat Reader 26.002.21900 およびそれ以前のバージョンには脆弱性が存在します。
+    - [Adobe AcrobatおよびReaderの脆弱性（APSB26-141）に関する注意喚起](https://www.jpcert.or.jp/at/2026/at260026.html)
+    - [Adobe Acrobat および Reader の脆弱性対策について(2026年9月)](https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html)
 - Adobe Acrobat Reader Version 2026 (64-bit) の DDE server name は AcroViewA26 です。
     <!-- -[[TeX Live Revision 48819:http://www.tug.org/svn/texlive?view=revision&revision=48819]] で -->
     <!-- pdfddeservername.txt の中身が AcroViewR19 に変更されましたが -->
@@ -68,21 +68,20 @@ Adobe Acrobat Reader には Continuous と Classic が存在します。[PDFリ�
 ### Windows {#l93a8183}
 
 - Adobe Acrobat Reader
-    - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-windows.html)
+    - [https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/install-acrobat-reader.html](https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/install-acrobat-reader.html)
     - [64-bit Unified App Installer &mdash; Acrobat Desktop  Windows Deployment](https://www.adobe.com/devnet-docs/acrobatetk/tools/DesktopDeployment/singleinstaller.html)
-    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121677/AcroRdrDCx642600121677_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121677/AcroRdrDCx642600121677_ja_JP.exe)
+    - [https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600221901/AcroRdrDCx642600221901_ja_JP.exe](https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600221901/AcroRdrDCx642600221901_ja_JP.exe)
 - Adobe Acrobat Reader Font Pack (Continuous)
-    - [https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html](https://helpx.adobe.com/jp/acrobat/kb/font-pack-spelling-dictionary-64-bit-windows.html)
-        <!-- - -https://helpx.adobe.com/jp/acrobat/kb/windows-font-packs-32-bit-reader.html -->
+    - [https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/font-spelling-pack.html](https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/font-spelling-pack.html)
 
 ### macOS {#e9b65d66}
 
 - Adobe Acrobat Reader
-    - [https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html](https://helpx.adobe.com/jp/acrobat/kb/install-reader-dc-mac-os.html)
-    - [https://ardownload3.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2600121677/AcroRdrSCADC2600121677_MUI.dmg](https://ardownload3.adobe.com/pub/adobe/acrobat/mac/AcrobatDC/2600121677/AcroRdrSCADC2600121677_MUI.dmg)
-    - [https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121677/AcroRdrDC_2600121677_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121677/AcroRdrDC_2600121677_MUI.dmg)
+    - [https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/install-acrobat-reader.html](https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/install-acrobat-reader.html)
+    - [https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600221901/AcroRdrDC_2600221901_MUI.dmg](https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600221901/AcroRdrDC_2600221901_MUI.dmg)
+    - macOS 版のインストーラーは MUI(Multi-Language User Interface) で提供されており、1つのインストーラーで複数言語に切り替え可能なパッケージです。
 - Adobe Acrobat Reader Font Pack (Continuous)
-    - [https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html](https://helpx.adobe.com/jp/acrobat/kb/macintosh-font-packs--acrobat---reader-.html)
+    - [https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/font-spelling-pack.html](https://helpx.adobe.com/jp/acrobat/desktop/get-started/access-the-app/font-spelling-pack.html)
 
 ### Linux <a id="linux"></a> {#s5dbb0cf}
 
@@ -124,8 +123,8 @@ sudo zypper install wine
 winetricks allfonts
 winetricks cjkfonts
 winetricks mspatcha
-wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600121677/AcroRdrDCx642600121677_ja_JP.exe
-wine AcroRdrDCx642600121677_ja_JP.exe
+wcurl https://ardownload2.adobe.com/pub/adobe/acrobat/win/AcrobatDC/2600221901/AcroRdrDCx642600221901_ja_JP.exe
+wine AcroRdrDCx642600221901_ja_JP.exe
 ```
 
 Linux で Adobe Acrobat Reader (64-bit) を起動して file.pdf を表示するには
