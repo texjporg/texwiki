@@ -100,13 +100,17 @@ TeX や LaTeX に関する本の紹介です。
 
 #### 2026年（令和8年） {#year2026}
 
+- [奥村 晴彦](https://okumuralab.org/~okumura/)『LaTeX美文書作成入門 第10版』[年内出版に向けて鋭意執筆中](https://x.com/h_okumura/status/2093618762549506484)
+    - [GitHub - okumuralab/bibun10: LaTeX美文書作成入門 第10版 サポートサイト · GitHub](https://github.com/okumuralab/bibun10) サポートページ
+
 - [tsumugi (サークル：Jellymilk)](https://x.com/tsumugi_prr) (著者)、[funi](https://x.com/mmkr38) (表紙)
     『[ペロロ様LaTeX解説本](https://x.com/tsumugi_prr/status/2091137872175022092)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2026年12月29日～31日開催予定（コミックマーケット109））
 
-- Stefan Kottwitz \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[日本語版協力\]
+- [Stefan Kottwitz](https://tex.jp/) \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[日本語版協力\]
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
     （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日紙版、電子版発売、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
+    - [LaTeXクックブック &#8211; 実践レシピ集](https://tex.jp/) サポートページ
 
 - [川口 晃世 (KKTeX)](https://kktexportfolio.klassikore.com/)『[expl3基礎](https://market.tex64.com/products/pdf-da188b94dbad479a958cfc389ca816c8)』
     ([Folio64](https://market.tex64.com/)，2026年09月01日PDF版発売，&yen;500)
@@ -115,10 +119,10 @@ TeX や LaTeX に関する本の紹介です。
 
 - [村上 智一 (TomOne) (サークル：PARALLEL ACT)](https://x.com/tomone_pact)『[LaTeX小説組版2025](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/pLxVL1cnKbZh7KHwE6uu2U)、PDF版：[DLsite](https://www.dlsite.com/home/work/=/product_id/RJ01420252.html)、紙版：[とらのあな](https://ecs.toranoana.jp/tora/ec/item/040031251574/)、[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=3058786)、[アリスブックス](https://alice-books.com/item/show/10534-3))
     （2025年06月29日発行（Girls Love Festival44），イベント価格（電子版 &yen;1,500，電子＋紙 &yen;2,000），PDF版 &yen;1,650，紙版 &yen;2,310）
-    - [LaTeX小説組版2025サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/)
+    - [LaTeX小説組版2025サポートページ](https://p-act.sakura.ne.jp/PARALLEL_ACT/LaTeX-Dojin/) サポートページ
 - [荒田 実樹 (サークル：だめぽラボ)](https://lab.miz-ar.info/)『[作ってわかるTeX言語](https://lab.miz-ar.info/implementing-tex-lang/)』(電子版、電子＋紙：[技術書典マーケット](https://techbookfest.org/product/5DXS1MRCfPrVvKaYxWdGPW))
     （2025年05月31日発行（技術書典18），電子版 &yen;1,200，紙書籍+電子版 &yen;1,500）
-    - [サポートページ](https://lab.miz-ar.info/implementing-tex-lang/)
+    - [だめぽラボ 「作ってわかるTeX言語」](https://lab.miz-ar.info/implementing-tex-lang/) サポートページ
 - [IMP AI・セキュリティ研究所](https://note.com/imp_aisec_lab)『[情報系論文はLaTeXで書くよ 情報系博士の日常](https://www.amazon.co.jp/%E6%83%85%E5%A0%B1%E7%B3%BB%E8%AB%96%E6%96%87%E3%81%AFLATEX%E3%81%A7%E6%9B%B8%E3%81%8F%E3%82%88-%E6%83%85%E5%A0%B1%E7%B3%BB%E5%8D%9A%E5%A3%AB%E3%81%AE%E6%97%A5%E5%B8%B8-IMP-AI%E3%83%BB%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E7%A0%94%E7%A9%B6%E6%89%80-ebook/dp/B0F4SVGZ24/)』
     （2025年04月14日Kindle版発売，税込 &yen;0）
 
@@ -126,17 +130,17 @@ TeX や LaTeX に関する本の紹介です。
 
 - [神和電子 (サークル：神和電子)](https://xn--kst.jp/)『[詠ちゃんと学ぶ同人誌組版の技術 ～Pandoc+LuaLaTeXでMarkdownから技術同人誌を作ろう～](https://xn--kst.jp/works/yomi-pandoc/)』(電子版：[技術書典マーケット](https://techbookfest.org/product/kwEKbyfipAhaFdT6iq3zXq)、紙版：[メロンブックス](https://www.melonbooks.co.jp/detail/detail.php?product_id=2746856))
     （2024年12月30日初版第1刷発行（コミックマーケット105），2025年06月01日初版第2刷発行（技術書典18），&yen;792）
-
+    - [詠ちゃんと学ぶ同人誌組版の技術 - 神和電子](https://xn--kst.jp/works/yomi-pandoc/) サポートページ
 - doitsu『[ゼロから学べるLaTeX完全入門: レポート・論文執筆の新スタンダード](https://www.amazon.co.jp/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B9%E3%82%8BLaTeX%E5%AE%8C%E5%85%A8%E5%85%A5%E9%96%80-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%83%BB%E8%AB%96%E6%96%87%E5%9F%B7%E7%AD%86%E3%81%AE%E6%96%B0%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%80%E3%83%BC%E3%83%89-doitsu-ebook/dp/B0DNGXC68Y/)』
     （2024年11月18日Kindle版発売，税込 &yen;1,000）
 
-- Stefan Kottwitz \[著\], 黒川 利明 \[訳\]
+- [Stefan Kottwitz](https://tikz.jp/) \[著\], 黒川 利明 \[訳\]
     『[TikZによるLaTeXグラフィックス](https://www.asakura.co.jp/detail.php?book_code=12305)』
     （[朝倉書店](https://www.asakura.co.jp/)，2024年11月12日紙版発売、2024年11月01日電子版発売，定価 &yen;4,400 (本体 &yen;4,000＋税)，[ISBN 978-4-254-12305-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12305-0)）
-    - [サポートページ](https://tikz.jp/)
+    - [TikZによるLaTeXグラフィックス](https://tikz.jp/) サポートページ
 - [やまいも (サークル：いもあらい。)](https://www.yamaimo.dev/)『[苦しみのTeX言語プログラミング](https://www.yamaimo.dev/entry/HardTexLang)』([技術書典マーケット](https://techbookfest.org/product/8f7TevDUk3TfHMmQPhw61x)、在庫：[BOOTH](https://imoarai.booth.pm/items/5799095))
     （2024年05月25日初版発行（技術書典16），電子版 &yen;700，書籍+電子 &yen;1,000）
-    - [サポートページ](https://www.yamaimo.dev/entry/HardTexLang)
+    - [『苦しみのTeX言語プログラミング』 - やまいも](https://www.yamaimo.dev/entry/HardTexLang) サポートページ
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[TikZ入門 座標を意識して線を引こう](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6)』([技術書典マーケット](https://techbookfest.org/product/8zCLEL94Nty2U2Q2ZCGkB6))
     （2024年05月25日発行（技術書典16），電子版 &yen;500）
 
@@ -151,7 +155,7 @@ TeX や LaTeX に関する本の紹介です。
 
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第9版］LaTeX美文書作成入門](https://gihyo.jp/book/2023/978-4-297-13889-9)』紙版
     （[技術評論社](https://gihyo.jp/)，2023年12月09日発売，定価 &yen;3,630 (本体 &yen;3,300＋税10%)，[ISBN 978-4-297-13889-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-13889-9)）…… TeX Live 2023 に合わせて改訂した入門書。
-    - [サポートページ](https://github.com/okumuralab/bibun9)
+    - [GitHub - okumuralab/bibun9: 『［改訂第9版］LaTeX美文書作成入門』サポートページ · GitHub](https://github.com/okumuralab/bibun9) サポートページ
 - [徒然メカ (サークル：徒然メカ)](https://x.com/tsureduremecha)『[tcolorbox入門　～いろんな枠に触れる～](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ)』([技術書典マーケット](https://techbookfest.org/product/rdfGnnRgAH8dEHSsKCT5pJ))
     （2023年05月21日発行（技術書典14），電子版 &yen;500）
 
