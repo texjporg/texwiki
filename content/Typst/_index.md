@@ -40,6 +40,10 @@ Typst は新しい組版ソフトです。
 - [Typstのここがすごい！！](https://qiita.com/hikoharu14142/items/aa8cfb70d079b0324fba)
 - [Typst で論文を書く (How-to-use-typst-for-paper-jp.pdf)](https://kimushun1101.github.io/How-to-use-typst-for-paper-jp/How-to-use-typst-for-paper-jp.pdf) (PDF)
 
+### Typst ↔ LaTeX {#dc855731}
+
+- [Tylax](https://github.com/scipenai/tylax)
+
 ### 関連リンク {#k587fb6a}
 
 - [Typst lang:ja - 検索 / X](https://x.com/search?q=Typst+lang%3Aja&f=live)
@@ -47,3 +51,5 @@ Typst は新しい組版ソフトです。
 - [Typstとは？開発に役立つ使い方、トレンド記事やtips - Qiita](https://qiita.com/tags/typst)
 - [「Typst」の人気の記事一覧｜note ――つくる、つながる、とどける。](https://note.com/search?context=note&q=Typst&sort=new)
 - [Typst のお勉強 \[text.Baldanders.info\]](https://text.baldanders.info/typst/)
+- [縦書き Typst 組版の際に遭遇した問題たち | AK47&#39;s Page](https://www.ak47.work/blog/tategaki-typst/)
+- [Typst: ドイツ語入力環境を整えるの巻](https://iek.hatenablog.com/entry/2025/04/13/151845)
