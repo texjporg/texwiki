@@ -16,7 +16,7 @@ pukiwiki: "TeX Live/Mac"
 ## インストール {#install}
 
 macOS に TeX Live をインストールする場合，以下の方法があります。
-動作環境については[TeX Live 2026 のバイナリの動作環境](#binary)をお読みください。
+動作環境については[TeX Live 2026 の動作環境](#binary)をお読みください。
 
 - TeX Live 公式のインストーラを使用する
     - install-tl を入手してターミナルから実行します → [こちら](#texlive-install-official)
@@ -32,13 +32,14 @@ macOS に TeX Live をインストールする場合，以下の方法があり�
 
 以下でそれぞれのインストール法およびセットアップ法を説明します。
 
-### TeX Live 2026 のバイナリの動作環境 {#binary}
+### TeX Live 2026 の動作環境 {#binary}
 
 macOS で動作する TeX Live 2026 は，universal-darwin バイナリです[^1]。universal-darwin バイナリは基本的に [Apple セキュリティアップデート](https://support.apple.com/ja-jp/100100)が提供されている macOS のみをサポートする方針です。
 MacTeX-2026 / BasicTeX-2026 に付属する TeX Live も universal-darwin バイナリです。
 
 TeX Live 2026 universal-darwin バイナリが動作する macOS
 
+- macOS 27 Golden Gate
 - macOS Tahoe 26
 - macOS Sequoia 15
 - macOS Sonoma 14
