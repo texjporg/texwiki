@@ -170,7 +170,7 @@ TeX や LaTeX に関する本の紹介です。
     （2022年11月23日発行（技術書典12），電子版 [&yen;500](https://x.com/mzfactory86/status/1485118462850523137) --&gt; [&yen;0](https://x.com/mzfactory86/status/1723968724926132642)）
 
 - [土屋 勝](https://www.erde.co.jp/~masaru/)『[LaTeX はじめの一歩 Windows 11/10 対応](https://www.cutt.co.jp/book/978-4-87783-535-4.html)』（[カットシステム](https://www.cutt.co.jp/)，2022年10月20日発売，税込価格 &yen;3,300 (本体 &yen;3,000)，[ISBN 978-4-87783-535-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-87783-535-4)）
-- [明松 真司](https://x.com/minami106)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
+- [明松 真司](https://s-akematsu.net/)『[1週間でLaTeXの基礎が学べる本](https://book.impress.co.jp/books/1121101076)』
     （[インプレス](https://book.impress.co.jp/)，2022年07月14日紙版、電子版発売，[2026年06月22日第2刷発売](https://book.impress.co.jp/staff_blog/article/202605281100/)，定価 &yen;2,750（本体&yen;2,500＋税10%），[ISBN 978-4-295-01388-4](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-295-01388-4)）
 
 #### 2021年（令和3年） {#year2021}
@@ -183,7 +183,7 @@ TeX や LaTeX に関する本の紹介です。
 - [奥村 晴彦](https://okumuralab.org/~okumura/), [黒木 裕介](https://x.com/kuroky_plus)『[［改訂第8版］LaTeX2ε美文書作成入門](https://gihyo.jp/dp/ebook/2020/978-4-297-11713-9)』電子版
     （[技術評論社](https://gihyo.jp/)，2020年11月14日発売，2022年04月11日更新，税込 &yen;3,280，[ISBN 978-4-297-11713-9](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-297-11713-9)）
     - [サポートページ](https://github.com/okumuralab/bibun8)
-- [水谷 正大](http://www.ic.daito.ac.jp/~mizutani/)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.media/bluebacks) B-2145，2020年07月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
+- [水谷 正大](https://www2.ic.daito.ac.jp/mizutani/index.html)『[LaTeX超入門 ゼロからはじめる理系の文書作成術](https://bookclub.kodansha.co.jp/product?item=0000343850)』（[講談社](https://www.kodansha.co.jp/)，[ブルーバックス](https://gendai.media/bluebacks) B-2145，2020年07月16日紙版、電子版発売，定価 &yen;1,320（本体&yen;1,200＋税），[ISBN 978-4-06-520496-2](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-06-520496-2)）
 - [TeXの本/絶版](</TeXの本/絶版/#year2020>)
 
 #### 2019年（令和元年） {#year2019}
