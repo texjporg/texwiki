@@ -39,13 +39,13 @@ MacTeX-2026 / BasicTeX-2026 に付属する TeX Live も universal-darwin バイ
 
 TeX Live 2026 universal-darwin バイナリが動作する macOS
 
-- macOS 27 Golden Gate
-- macOS Tahoe 26
-- macOS Sequoia 15
-- macOS Sonoma 14
-- macOS Ventura 13
-- macOS Monterey 12
-- macOS Big Sur 11
+- macOS 27
+- macOS 26
+- macOS 15
+- macOS 14
+- macOS 13
+- macOS 12
+- macOS 11
 
 <!-- 「クソ」という言葉は、ネタであることが明確でないかぎり、一般的に読み手が不快に感じると思うので、一旦、コメントアウトしておきます。 -->
 <!-- このような自分のやりたいことがすぐにできないだけで、自分の門外漢のOSSに対して、暴言の吐く記事を載せる必要もないと考えます。 -->
