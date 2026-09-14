@@ -7,7 +7,7 @@ pukiwiki: "Mac"
 
 # Mac
 
-## [macOS](http://www.apple.com/jp/macos/) (Mac) での TeX の利用 {#headline}
+## [macOS](https://www.apple.com/jp/os/macos/) (Mac) での TeX の利用 {#headline}
 
 macOS (Mac) に TeX をインストールして使えるようになるまでの大まかな流れとしては，[TeX 入手法](</TeX入手法/>)で簡単に述べたとおり
 
