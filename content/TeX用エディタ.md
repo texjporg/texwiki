@@ -61,12 +61,27 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 
 <!-- ||BGCOLOR(#FFC):[[LaTeX Utilities:https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities]]|CENTER:[[0.4.14:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/changelog]]|2024-03-25||BGCOLOR(#FFC):RIGHT:Extension|BGCOLOR(#CCF):[[MIT License:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/license]]|~| -->
 
+- [Eclipse IDE](/Eclipse/) with [TeXlipse](/TeXlipse/)
+- [Enter TeX](</Enter TeX/>)
+- [Geany](/Geany/)
+- [gedit](/gedit/)
+- [GNOME Text Editor](</GNOME Text Editor/>)
+- [Kate](/Kate/)
+- [Kile](/Kile/)
+- [Notepad++](/Notepad++/)
+- [Pulsar](/Pulsar/)
+- [サクラエディタ](</サクラエディタ/>)
+- [TeXnicCenter](/TeXnicCenter/)
+- [xyzzy](/xyzzy/)
+- [Zed](/Zed/)
+
 ### フリーウェア {#pbf12be5}
 
 ソースコードは非公開ですが無料で利用できる LaTeX 用統合環境・エディタの一覧です。
 
 - [EasyTeX](https://www.juen.ac.jp/math/nakagawa/texguide.html#easytex)
 - [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 学生版
+- [JTeX](/JTeX/)
 - [Mery](https://www.haijin-boys.com/software/mery) with [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
 - [NO.B612 LaTeX Editor](https://apps.microsoft.com/detail/9p1rcn1l1bmh?hl=ja-JP&gl=JP) (Windows)、[NO.B612 LaTeX Editor](https://apps.apple.com/jp/app/no-b612-latex-editor/id6757142880?mt=12) (macOS)
 - [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
@@ -88,6 +103,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [TeXTyping](https://opendemjapan.parallel.jp/latex.html)
 - [VerbTeX LaTeX Editor](https://apps.microsoft.com/detail/9pg6ktdzvpnn?hl=ja-JP&gl=JP) (Windows)、[VerbTeX Pro LaTeX Editor](https://play.google.com/store/apps/details?id=verbosus.verbtexpro&hl=ja) (Android)、[VerbTeX Pro LaTeX Editor](https://apps.apple.com/jp/app/verbtex-pro-latex-editor/id560872078) (iOS)
 - [WinEdt](https://www.winedt.com/)
+- [WZ EDITOR](https://www.wzsoft.jp/)
 
 ## 表の説明 {#x494c9e3}
 
