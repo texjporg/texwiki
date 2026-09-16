@@ -87,6 +87,11 @@ pacman -S mingw-w64-clang-x86_64-texlive-scheme-full
 pacman -S mingw-w64-clang-aarch64-texlive-scheme-full
 ```
 
+### TeX Live 2026 for Windows ARM64 {#d1f63069}
+
+- [GitHub - abenori/texlive-2026-windows-arm64 · GitHub](https://github.com/abenori/texlive-2026-windows-arm64)
+    - [Windows ARM64 向け TeX Live 2026](https://github.com/abenori/texlive-2026-windows-arm64/blob/main/README.ja.md)
+
 ### Building TeX Live {#c3b844d4}
 
 - [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
