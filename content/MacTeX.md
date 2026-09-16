@@ -144,6 +144,7 @@ $ sudo tlmgr paper a4
 - [TeX/Install - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Install)
 - [M1 Mac がやってきた（ソフトウェア設定編（4））](https://iio-lab.blogspot.com/2021/05/set-up-log-for-new-M1-mac-05.html)
 - [https://zenn.dev/search?q=MacTeX&mode=semantic](https://zenn.dev/search?q=MacTeX&mode=semantic)
+- [mathhirachi - macosx](https://sites.google.com/site/mathhirachi/ms_web/macosx)
 - [MacTeXに関する投稿 - Qiita](https://qiita.com/tags/MacTeX)
 
 <!-- MacTeX-2019 の場合 -->
