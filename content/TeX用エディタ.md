@@ -61,6 +61,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 
 <!-- ||BGCOLOR(#FFC):[[LaTeX Utilities:https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities]]|CENTER:[[0.4.14:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/changelog]]|2024-03-25||BGCOLOR(#FFC):RIGHT:Extension|BGCOLOR(#CCF):[[MIT License:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/license]]|~| -->
 
+- [CotEditor](/CotEditor/)
 - [Eclipse IDE](/Eclipse/) with [TeXlipse](/TeXlipse/)
 - [Enter TeX](</Enter TeX/>)
 - [Geany](/Geany/)
