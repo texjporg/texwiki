@@ -73,6 +73,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [Notepad++](/Notepad++/)
 - [Pulsar](/Pulsar/)
 - [サクラエディタ](</サクラエディタ/>)
+- [Scientific Word](</Scientific Word/>)
 - [TeXnicCenter](/TeXnicCenter/)
 - [xyzzy](/xyzzy/)
 - [Zed](/Zed/)
