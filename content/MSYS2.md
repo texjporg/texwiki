@@ -96,6 +96,7 @@ pacman -S mingw-w64-clang-aarch64-texlive-scheme-full
 - [GitHub - abenori/texlive-2026-windows-arm64 · GitHub](https://github.com/abenori/texlive-2026-windows-arm64)
     - [Windows ARM64 向け TeX Live 2026](https://github.com/abenori/texlive-2026-windows-arm64/blob/main/README.ja.md)
     - [にっき&#9834;AIに作ってもらったWindows ARMなTeX Live 2026バイナリはGitHubにおいてみました．手元では使っていますがいまのところ問題なく動いていそうです．Releasesにあるバイナリを落として適当にTeX Live 2026のディレクトリに入れれば使えるはずです．](https://abenori.blogspot.com/2026/09/blog-post_15.html)
+    - [和欧	エンジン	x64全体	x64メイン	arm全体	armメイン<br>欧文	pdflatex	3.10秒	1.87秒	1.43秒	0.96秒<br>欧文	lualatex	16.01秒	11.5秒	11.3秒	8.56秒<br>和文	platex	7.19秒	5.59秒	5.47秒	4.67秒<br>和文	uplatex	6.62秒	5.04秒	4.58秒	3.85秒<br>和文	lualatex	41.46秒	29.44秒	29.91秒	19.79秒<br>](https://abenori.blogspot.com/2026/09/tex-live-2026armai-pc-x64-x64-arm-arm.html)
 
 ### Building TeX Live {#c3b844d4}
 
