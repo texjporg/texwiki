@@ -25,6 +25,16 @@ Typst は新しい組版ソフトです。
 - [https://github.com/typst/typst/releases](https://github.com/typst/typst/releases)
 - [https://github.com/typst/typst/tags](https://github.com/typst/typst/tags)
 
+### 不具合 {#u7f403ae}
+
+- [https://github.com/typst/typst/issues](https://github.com/typst/typst/issues)
+    - [Ignore linebreaks between Chinese/Japanese characters in source code · Issue #792 · typst/typst · GitHub](https://github.com/typst/typst/issues/792) (Closed)
+
+### プルリクエスト {#j74b00de}
+
+- [https://github.com/typst/typst/pulls](https://github.com/typst/typst/pulls)
+    - [Remove spaces from newlines between CJK characters by isuffix · Pull Request #7350 · typst/typst · GitHub](https://github.com/typst/typst/pull/7350) (Merged)
+
 ### エディタ {#y36f971a}
 
 - [Typst/Editors](/Typst/Editors/)
