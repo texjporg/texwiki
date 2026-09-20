@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51) -- cjk-gs-integrate.pl 2026-09-20 (日) 12:06:14
 - [LaTeX Workshop 10.19.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2026-09-18 (金) 21:39:15
 - [TeXstudio 4.9.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2026-09-12 (土) 08:05:05
 - [LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318) -- [TeXの本](</TeXの本/>) 2026-09-04 (金) 18:37:27
