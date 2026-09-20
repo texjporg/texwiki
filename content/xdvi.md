@@ -11,7 +11,7 @@ pukiwiki: "xdvi"
 
 xdvi は X Window System 上で動作する DVI ビューアです。
 
-X Window System には [X.Org](https://www.x.org/)、[VcXsrv](https://vcxsrv.com/)、Cygwin/X、[XQuartz](https://www.xquartz.org/) などのオープンソースの実装があり Windows, macOS, Linux などで動作します。
+X Window System には [X.Org](https://www.x.org/)、[VcXsrv](https://github.com/marchaesen/vcxsrv)、[Cygwin/X](https://x.cygwin.com/)、[XQuartz](https://www.xquartz.org/)、[yserver](https://github.com/joske/yserver) などのオープンソースの実装があり Windows, macOS, Linux などで動作します。
 
 xdvi を使用すると，日本語が表示されないといった問題が発生する場合があります（[古い情報](</古い情報/#je1d5241>)もご覧ください）。
 
@@ -41,10 +41,10 @@ X Window System
 
 - [xdvik / Code (main) / \[HEAD\] /trunk/xdvik](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/)
     - [log](https://sourceforge.net/p/xdvi/code/log/)
-- \[[ViewVC\] Index of: texlive/trunk/Build/source/texk/xdvik](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/)
-    - [log](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/?view=log)
-    - [ChangeLog](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/ChangeLog?view=markup)
-    - [CHANGES](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/CHANGES?view=markup)
+- [https://git.texlive.info/texlive/tree/Build/source/texk/xdvik](https://git.texlive.info/texlive/tree/Build/source/texk/xdvik)
+    - [log](https://git.texlive.info/texlive/log/Build/source/texk/xdvik)
+    - [ChangeLog](https://git.texlive.info/texlive/tree/Build/source/texk/xdvik/ChangeLog)
+    - [CHANGES](https://git.texlive.info/texlive/tree/Build/source/texk/xdvik/CHANGES)
 - [https://www.freshports.org/print/tex-xdvik/](https://www.freshports.org/print/tex-xdvik/)
 - [https://pkgsrc.se/print/tex-xdvi](https://pkgsrc.se/print/tex-xdvi)
 
@@ -152,7 +152,7 @@ $ pdflatex -synctex=1 hoge
 #### コマンドラインオプション {#ce42827f}
 
 - [https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c](https://sourceforge.net/p/xdvi/code/HEAD/tree/trunk/xdvik/texk/xdvik/main.c)
-- [https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup](https://svn.tug.org/texlive/trunk/Build/source/texk/xdvik/main.c?view=markup)
+- [https://git.texlive.info/texlive/tree/Build/source/texk/xdvik/main.c](https://git.texlive.info/texlive/tree/Build/source/texk/xdvik/main.c)
 
 ### SyncTeX {#g4e4f193}
 
