@@ -10,9 +10,9 @@ pukiwiki: "Ghostscript"
 
 ## [Ghostscript](https://ghostscript.com/) {#odb09bf1}
 
-Ghostscript は [PostScript](/PostScript/)/[PDF](/PDF/) インタプリタです．
-PostScript/PDF ファイルを読み込んで，画面やプリンタや色々な形式のファイルに出力できます．
-詳しくは次のページをご覧ください．
+Ghostscript は [PostScript](/PostScript/)/[PDF](/PDF/) インタプリタです。
+PostScript/PDF ファイルを読み込んで、画面やプリンタや色々な形式のファイルに出力できます。
+詳しくは次のページをご覧ください。
 
 - [Ghostscript Website](https://ghostscript.com/)
 - [Welcome to Ghostscript &mdash; Ghostscript documentation](https://ghostscript.readthedocs.io/)
@@ -23,6 +23,10 @@ PostScript/PDF ファイルを読み込んで，画面やプリンタや色々�
 ***
 
 ### お知らせ {#c2f53cec}
+
+Ghostscript 10.08.0 (2026-09-08) で cjk-gs-integrate を実行してエラーになる場合は以下のプルリクエストを参照して cjk-gs-integrate.pl を修正してください。
+
+- [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51)
 
 Ghostscript 10.05.0 (2025-03-12) 以降に更新してください。
 Ghostscript 10.04.0 (2024-09-18) およびそれ以前には，複数の深刻な脆弱性が存在します(CVE-2025-27835, CVE-2025-27832, CVE-2025-27831, CVE-2025-27836, CVE-2025-27830, CVE-2025-27833, CVE-2025-27837, CVE-2025-27834)。
