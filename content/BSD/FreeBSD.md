@@ -50,7 +50,6 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 - [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
 - [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
-- [Storage@Anthesphoria: TeX Live on FreeBSD | TeX Live 2014 on FreeBSD | Notes for FreeBSD users](http://anthesphoria.net/FreeBSD/TeXLive-2014/)
 
 を参照．
 
@@ -184,6 +183,10 @@ make &amp;&amp; make installで導入できます．
 <!-- |ja-dvi2tty|japanese/dvi2tty|Character-based DVI file previewer| -->
 
 #### PDF/PostScript関連 {#v58c994c}
+
+Ghostscript 10.08.0 (2026-09-08) で cjk-gs-integrate を実行してエラーになる場合は以下のプルリクエストを参照して cjk-gs-integrate.pl を修正してください。
+
+- [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51)
 
 <table>
 <tbody>
