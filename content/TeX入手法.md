@@ -35,9 +35,10 @@ TeX ディストリビューションごとの解説ページです．
 現在，日本国内では [TeX Live](</TeX Live/>) というディストリビューションが多く用いられています．
 macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです．
 
-- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows, Cygwin, macOS, Linux)
+- <strong>[TeX Live](</TeX Live/>)</strong> (for Windows (WSL, MSYS2, Cygwin を含む), macOS, Linux)
 - <strong>[MacTeX](/MacTeX/)</strong> (for macOS)
 - [BasicTeX](/BasicTeX/) (for macOS)
+- [TinyTeX](/TinyTeX/) (for Windows, macOS, Linux)
 - [MiKTeX](/MiKTeX/) (for Windows, macOS, Linux)
 
 ### OS別のTeXのインストール {#w6f35a2c}
