@@ -240,6 +240,7 @@ tltexjp リポジトリが削除されたので pxdvi は配布終了しまし�
 
 - [https://github.com/texjporg/tltexjp](https://github.com/texjporg/tltexjp)
 - [pxdvi の使用用途について](https://okumuralab.org/tex/mod/forum/discuss.php?d=731)
+- [Fedora 31でuptex環境を設定](https://hanaokaiwa.hatenablog.jp/entry/2020/01/20/174909)
 
 ### ChangeLog {#y0777637}
 
