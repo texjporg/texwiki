@@ -13,6 +13,8 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [TeXiFy-IDEA 1.1.1](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2026-09-21 (月) 11:58:12
+- [LyX 2.5.3](https://www.lyx.org/) -- [LyX](/LyX/) 2026-09-21 (月) 11:36:24
 - [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51) -- cjk-gs-integrate.pl 2026-09-20 (日) 12:06:14
 - [LaTeX Workshop 10.19.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2026-09-18 (金) 21:39:15
 - [TeXstudio 4.9.8](https://www.texstudio.org/) -- [TeXstudio](/TeXstudio/) 2026-09-12 (土) 08:05:05
