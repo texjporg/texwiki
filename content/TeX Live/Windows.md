@@ -20,6 +20,8 @@ pukiwiki: "TeX Live/Windows"
 基本的には ネットワークインストーラ を用いる方法をおすすめします。
 ネットワークインストーラで問題のある場合は ISO イメージ を用いる方法をご利用ください。 <!-- [[https://texwiki.texjp.org/?TeX%20Live]] と 公式ページの説明とおすすめするインストール方法を合わせます。 -->
 
+Arm ベース PC 用 Windows を使用している方で x64（AMD64）版よりも高速に動作する ARM64 版の TeX Live バイナリを使用したい方は [MSYS2](/MSYS2/#texlive) を参照してください。
+
 ### ネットワークインストーラの場合 {#w369638d}
 
 [Installing TeX Live over the Internet](https://www.tug.org/texlive/acquire-netinstall.html) または [TeX Live](</TeX Live/#tlnet>) から install-tl-windows.exe または install-tl.zip のどちらかをダウンロードします。
