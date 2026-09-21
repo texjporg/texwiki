@@ -71,6 +71,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [Kate](/Kate/)
 - [Kile](/Kile/)
 - [Notepad++](/Notepad++/)
+- [Pluma](/Pluma/)
 - [Pulsar](/Pulsar/)
 - [サクラエディタ](</サクラエディタ/>)
 - [Scientific Word](</Scientific Word/>)
