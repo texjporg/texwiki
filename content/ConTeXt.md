@@ -39,38 +39,22 @@ ConTeXt では，内容と体裁を分離するのは LaTeX と同じですが�
 
 ### はじめの一歩 {#uba3ae77}
 
-まず，ConTeXt がインストールされているかどうかを確かめます（以下は [TeX Live](</TeX Live/>) の場合）．
+まず，ConTeXt がインストールされているかどうかを確かめます．
 
 ```
 $ context --version
 ```
 
 ```
-mtx-context     | ConTeXt Process Management 1.02
+mtx-context     | ConTeXt Process Management 1.06
 mtx-context     |
-mtx-context     | main context file: /usr/local/texlive/2019/texmf-dist/tex/context/base/mkiv/context.mkiv
-mtx-context     | current version: 2019.03.21 21:39
+mtx-context     | main context file: C:/texlive/2026/texmf-dist/tex/context/base/mkiv/context.mkiv
+mtx-context     | current version: 2026.09.10 10:02
+mtx-context     | main context file: C:/texlive/2026/texmf-dist/tex/context/base/mkxl/context.mkxl
+mtx-context     | current version: 2026.09.10 10:02
 ```
 
 上のようにバージョン情報が出ればOKです．
-
-[W32TeX](/W32TeX/) の場合は，最初に installmk4 を実行する必要があります．
-この際 mktexlsr が実行されるため，ls-R が必要ない人は deltexlsr も実行しましょう．
-
-```
-C:\Users\user>installmk4
-Generate ConTeXt mkiv format.
-first, run mktexlsr
-（大量のログ）
-```
-
-```
-C:\Users\user>deltexlsr
-Deleted : C:/w32tex/share/texmf-projects/ls-R
-Deleted : C:/w32tex/share/texmf-local/ls-R
-Deleted : C:/w32tex/share/texmf-dist/ls-R
-deltexlsr: Done.
-```
 
 確認が終わったら，次の hello.tex を作成します．
 
