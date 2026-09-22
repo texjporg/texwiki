@@ -116,7 +116,7 @@ TeX Live の場合は初回実行時に fmt ファイルを作成するため，
 MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に使うことができます．
 このおかげで，あとは日本語組版ルールがきちんと実装されれば実用になると期待されます．
 
-まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](https://okumuralab.org/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（TeX Live 2015 および 2015/05/04 以降の W32TeX では不要）．
+まず，フォーラムの以下のトピックから [type-imp-ipaex.mkiv](https://okumuralab.org/tex/file.php/2/moddata/forum/2/8903/type-imp-ipaex.mkiv) をダウンロードし，適当なディレクトリに保存します（TeX Live 2015 では不要）．
 
 - ConTeXt での日本語設定：[forum:1562](https://okumuralab.org/tex/mod/forum/discuss.php?d=1562)
 
@@ -176,3 +176,4 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
 - [天地有情](http://konoyonohana.blog.fc2.com/blog-category-1.html)
 - [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)，[(3)](http://abenori.blogspot.jp/2015/11/context3.html)，[(4)](http://abenori.blogspot.fr/2015/12/context-4.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
+- [ConTeXtとLuaMetaTeXの覚書](https://zenn.dev/tyty/scraps/debce5194639b3)
