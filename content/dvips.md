@@ -7,10 +7,10 @@ pukiwiki: "dvips"
 
 # dvips
 
-## dvips {#y40d302b}
+## dvips（非推奨） {#y40d302b}
 
 dvips は DVI ファイルを [PostScript](/PostScript/) ファイルに変換するソフトウェアです。
-実績があり、信頼のおけるプログラムとして TeX の世界では広く用いられてきました。
+実績があり、信頼のおけるプログラムとして、かつては TeX の世界で広く用いられていました。
 
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)
@@ -54,10 +54,10 @@ dvips -z -o foo.ps foo.dvi
 
 #### 制限事項 {#x73150ff}
 
-長い間新機能の追加もなく、このため技術的にはかなり遅れています。
+長い間新機能の追加がないため、技術的にはかなり遅れています。
 以下のような制限があります。
 
-- TrueType や OpenType フォントは利用できない。
+- OpenType や TrueType フォントは利用できない。
 
 > 利用できるのは PostScript Type1 フォントと PK フォントです。
 
@@ -140,20 +140,20 @@ A4 にするには，ジョブオプションの設定でページサイズを�
 
 LaTeX で作成した日本語文書を
 dvips を用いて PDF 化する際，しおりが文字化けしないようにするためには
-[convbkmk](https://ctan.org/pkg/convbkmk) または bkmk2uni を使います。
+[convbkmk](https://ctan.org/pkg/convbkmk) を使います。
 
 - [http://www.t-lab.opal.ne.jp/tex/uptex.html](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - [convbkmkコマンドの使い方　覚え書き](http://konoyonohana.blog.fc2.com/blog-entry-35.html)
 
 なお，convbkmk は Ruby スクリプトですので，[Ruby](/Ruby/) の処理系が必要です．
 
+#### ChangeLog {#o96c7d5c}
+
+- [https://git.texlive.info/texlive/tree/Build/source/texk/dvipsk](https://git.texlive.info/texlive/tree/Build/source/texk/dvipsk)
+    - [log](https://git.texlive.info/texlive/log/Build/source/texk/dvipsk)
+    - [ChangeLog](https://git.texlive.info/texlive/tree/Build/source/texk/dvipsk/ChangeLog)
+
 ### リンク集 {#fd89856f}
 
 - TeXLiveのdvips [forum:678](https://okumuralab.org/tex/mod/forum/discuss.php?d=678)
 - pdfへのフォントの埋め込みとPSプリンタ [qa:38540](https://okumuralab.org/~okumura/texfaq/qa/38540.html)
-
-#### ChangeLog {#o96c7d5c}
-
-- \[[texlive\] Index of /trunk/Build/source/texk/dvipsk](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipsk/ChangeLog?view=markup)
