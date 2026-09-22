@@ -7,7 +7,7 @@ pukiwiki: "PostScript"
 
 # PostScript
 
-## PostScript {#g9b8f6ae}
+## PostScript（非推奨） {#g9b8f6ae}
 
 PostScript は DTP 業界標準のページ記述言語です．
 [PDF](/PDF/) は PostScript を元にして策定されました．
@@ -17,6 +17,12 @@ PostScript は DTP 業界標準のページ記述言語です．
 ***
 
 ### お知らせ {#wbf44675}
+
+Adobe PostScript Type1 フォントは現在では非推奨です。
+
+- [PostScript Type 1 フォントのサポート終了](https://helpx.adobe.com/jp/fonts/web/kb/postscript-type-1-fonts-end-of-support.html)
+- [Windowsでも「Adobe PostScript Type1」フォントが非推奨に - 窓の杜](https://forest.watch.impress.co.jp/docs/news/1614490.html)
+- [AdobeによるType 1フォントサポート終了について知っておくべき4つのポイント. | Monotype.](https://www.monotype.com/ja/resources/expertise/4-things-about-adobe-ending-type1-support)
 
 EPS 形式は現在では非推奨です。
 
