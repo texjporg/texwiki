@@ -50,6 +50,7 @@ FreeBSD で [TeX Live](</TeX Live/>) をインストールする場合は
 
 - [https://www.tug.org/texlive/quickinstall.html](https://www.tug.org/texlive/quickinstall.html)
 - [https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation](https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#installation)
+- [TeX Live 2024 版を FreeBSD に導入してテフライブ！する東北ずん子姉妹](https://neko3nano.blog.jp/archives/52550839.html)
 
 を参照．
 
@@ -130,6 +131,7 @@ $ sudo tlmgr update --self --all
 - [https://cgit.freebsd.org/ports/commit/print/texlive-base?id=993771b186bca2a5de9fa00f7f6788763306417c](https://cgit.freebsd.org/ports/commit/print/texlive-base?id=993771b186bca2a5de9fa00f7f6788763306417c) にて，Ports は TeX Live 2025 ベースとなりました．
 - [http://www.freshports.org/print/texlive-full/](http://www.freshports.org/print/texlive-full/)
 - [TeX Live on FreeBSD](http://maikaze.cafe.coocan.jp/texlive.html)
+- [FreeBSD で組版システム TeX を導入し執筆する東北ずん子（LuaLaTeX）](https://neko3nano.blog.jp/archives/51847654.html)
 
 ## その他関連Ports {#k9078aba}
 
