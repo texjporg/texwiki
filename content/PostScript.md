@@ -12,6 +12,9 @@ pukiwiki: "PostScript"
 PostScript は DTP 業界標準のページ記述言語です．
 [PDF](/PDF/) は PostScript を元にして策定されました．
 
+- [Adobe PostScript](https://www.adobe.com/jp/products/postscript.html)
+- [Adobe Printing Technologies -About PostScript 3](https://www.adobe.com/jp/print/postscript/)
+
 ***
 
 ***
