@@ -7,15 +7,16 @@ pukiwiki: "Ghostscript 7.07"
 
 # Ghostscript 7.07
 
-## GNU Ghostscript 7.07 (非推奨) {#u1488af6}
+## GNU Ghostscript 7.07 (2003-05-17)（非推奨） {#u1488af6}
 
 <strong> <em>この項目は編集途中です</em> </strong>：削除されていた項目をとりあえず復活させることを急ぎました。
 
 全面的に2015年の環境で可能かどうか検証作業中です。
 動く保証はまったくありませんので，<strong>よくわからない方はこのページは無視してください</strong>。 (2015-10-16)
 
-最新の GPL [Ghostscript](/Ghostscript/)（ライセンスは AGPL）は，日本語の縦書き PostScript ファイルが正しく表示できます。
-かつて Ghostscript には GNU Ghostscript 7.07 というバージョンが存在し，日本の gs-cjk プロジェクトの寄与を含み，日本語の縦書き PostScript ファイルを正しく扱うことができました。
+Ghostscript 10.08.0 (2026-09-08) は、日本語の縦書き PostScript ファイルを画面に表示すると正しく表示できるのですが、ps2pdf で PDF に変換すると句読点（。、）などの表示がおかしくなりました。
+
+かつて Ghostscript には GNU Ghostscript 7.07 (2003-05-17) というバージョンが存在し，日本の gs-cjk プロジェクトの寄与を含み，日本語の縦書き PostScript ファイルを正しく扱うことができました。
 ここではその Ghostscript 7.07 について説明します。
 
 なお，Ghostscript 7.07 には脆弱性が存在しますので，最新の Ghostscript を利用することをお勧めします。
@@ -83,7 +84,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 #### Windows {#y7d058ad}
 
-[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://x.com/aminophen/status/1304059223580450820) (gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
+[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://x.com/aminophen/status/1304059223580450820) [gs707w32full-20200910.zip](https://dl.dropboxusercontent.com/s/3y6jly3o6mlzl5z/gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](https://w32tex.org/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
 デフォルトでは C:\gs に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
@@ -375,6 +376,7 @@ dvips のサイズ指定については [dvips](/dvips/) を参照してくだ�
 Mac OS X 10.3 では API レベルで PS → PDF 変換ができます。
 “pstopdf” というコマンドも用意されています。
 しかし日本語はフォントが埋め込まれていないといけないようです。
+pstopdf コマンドは macOS 14 で削除されました。
 <em>←最新の状況はどうでしょうか</em>
 
 ### 関連リンク {#d80c1879}
@@ -387,12 +389,14 @@ GNU Ghostscript 7.07 そのものが古いので全体的に古いリンクで�
 - [GNU Ghostscript 7.07 on Linux](https://web.archive.org/web/20040807160606/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs707.html)，[GNU Ghostscript 7.06 on Linux](https://web.archive.org/web/20120418134149/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs706.html)，[GNU Ghostscript 7.05 on Linux](https://web.archive.org/web/20101128090721/http://oku.edu.mie-u.ac.jp/~okumura/linux/gs705.html)（奥村先生：Wiki 移転前のもの）
 - [GNU Ghostscript 7.07 Windows 版のインストールと設定](http://www.trueroad.jp/pdf-make/gs-install.html)（細田さん）
 - [Ghostscript 日中韓対応パッケージ (バイナリ・ソース)](https://web.archive.org/web/20160316030258/http://www.misojiro.t.u-tokyo.ac.jp/~kuroky/ghostscript/)（黒木さん：Cygwin 向けバイナリとソース）
-- [Install GNU GhostScript 7.07 and dvipdfmx \[Intetnet Archive\]](http://web.archive.org/web/20090925053250/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
+- [Install GNU GhostScript 7.07 and dvipdfmx \[Wayback Machine\]](http://web.archive.org/web/20090925053250/http://pop-club.hp.infoseek.co.jp/tex/gs_dvipdfm.html)（安宅さん）
 - [Ghostscript と Prosper のインストール](http://emoken.net/blog2/item_39.html)（Windows でのインストール事例）
 - [GNU Ghostscript 7.06 for Windows の導入](http://www.fan.gr.jp/~ring/doc/gs7.06.html)（新堂さん）
 - [Ghostscriptで日本語PDFファイルをつくる](https://web.archive.org/web/20161025040648/http://kony.no-ip.info/~kon/tips/gsjpn.html)
 - [JIS X0212 for pTeX](http://www2.kumagaku.ac.jp/teacher/herogw/)（小川弘和さん）：かつて ESP Ghostscript の macOS 版を配布
 - [Mac OS X でレーザープリンターを使うスレ（過去ログ）](http://pc5.2ch.net/test/read.cgi/mac/1037063324/)
+- [TeX2img で Ghostscript Cannot Be Exexuted ではまる](https://tasuwo.github.io/blog/2016/05/14/tex-to-img/)
+- [Ghostscript のバージョンが古すぎる場合への対処](https://github.com/doraTeX/TeX2img/issues/74) (doraTeXさん)
 
 ### TeX Forum / Q &amp; A より {#w096d520}
 
