@@ -84,7 +84,7 @@ TeX が組版機能を担う一方で，実際の処理には TeX 以外にも�
 
 ### TeX 処理系について {#d8f42d41}
 
-Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されてきました．
+Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発されています．
 
 - [TeX](/TeX/)
 - [e-TeX](/e-TeX/)
@@ -93,6 +93,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [e-pTeX](/e-pTeX/)，[e-upTeX](/upTeX,upLaTeX/)，[pTeX-ng](/pTeX-ng/)
 - [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[LuajitTeX](/LuajitTeX/)
 - [XeTeX](/XeTeX/)
+- ratex
 - マクロパッケージ：[LaTeX](/LaTeX/)，[ConTeXt](/ConTeXt/)
 
 <!-- *** TeX 処理系を変更する際にはソースにも変更が必要となることがあります．例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります． [#j08ab319] -->
