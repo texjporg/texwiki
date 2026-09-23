@@ -24,23 +24,27 @@ PostScript/PDF ファイルを読み込んで、画面やプリンタや色々�
 
 ### お知らせ {#c2f53cec}
 
-Ghostscript 10.08.0 (2026-09-08) で cjk-gs-integrate を実行してエラーになる場合は以下のプルリクエストを参照して cjk-gs-integrate.pl を修正してください。
+Ghostscript 10.08.0 (2026-09-08) 以降に更新してください。Ghostscript 10.07.1 (2026-05-19) およびそれ以前には、脆弱性が存在します(CVE-2026-39919)。
+
+- [CVE-2026-39919 — GhostscriptのJPEG 2000ヒープオーバーフロー CVE-2026-39919：影響範囲と対応方法 | つみかさね | つみかさね](https://tsumikasane.net/security/cve/CVE-2026-39919/)
+- [【セキュリティ日報】GhostscriptのPDF経由コード実行やruby-jwt認証回避ほか 167件 | つみかさね](https://tsumikasane.net/security/daily/2026-09-21/)
+- [GhostscriptのJPEG 2000出力処理にヒープバッファオーバーフロー（CVE-2026-39919）— 細工したPDFでメモリ破損からコード実行のおそれ、CVSS 4.0は9.3で10.08.0が修正](https://cyber.nexsight.co/articles/2026/09/17/ghostscript-cve-2026-39919-jpeg2000-heap-overflow-2026-09-17/)
+
+Ghostscript 10.08.0 (2026-09-08) にアップデートして cjk-gs-integrate 20210625.0 を実行するとエラーになるようです。
+
+- [cjk-gs-integrate is not compatible with ghostscript 10.08.0](https://github.com/texjporg/cjk-gs-support/issues/52)
+
+以下のプルリクエストを参照して cjk-gs-integrate.pl を修正するとエラーが解消するようです。
 
 - [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51)
-
-Ghostscript 10.05.0 (2025-03-12) 以降に更新してください。
-Ghostscript 10.04.0 (2024-09-18) およびそれ以前には，複数の深刻な脆弱性が存在します(CVE-2025-27835, CVE-2025-27832, CVE-2025-27831, CVE-2025-27836, CVE-2025-27830, CVE-2025-27833, CVE-2025-27837, CVE-2025-27834)。
-
-- [This release addresses CVEs: CVE-2025-27835, CVE-2025-27832, CVE-2025-27831, CVE-2025-27836, CVE-2025-27830, CVE-2025-27833, CVE-2025-27837, CVE-2025-27834 - News &mdash; Ghostscript 10.05.0 documentation](https://ghostscript.readthedocs.io/en/gs10.05.0/News.html)
-- [Ghostscript 10.05.0未満に深刻な脆弱性8件：CVSSスコア9.8「クリティカル」レベル脆弱性とアップデート対応の緊急性](https://nikkeimatome.com/?p=56266)
-- [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（1ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675)
-- [【セキュリティ ニュース】「Ghostscript」に複数の深刻な脆弱性 - 最新版で修正（2ページ目 / 全2ページ）：Security NEXT - 2025/03/28](https://www.security-next.com/168675/2)
 
 ### 動作環境 {#e8b195dc}
 
 Windows, macOS, Linux
 
 ### 縦書きに関して {#o39e11da}
+
+Ghostscript 10.08.0 (2026-09-08) は、日本語の縦書き PostScript ファイルを画面に表示すると正しく表示できるのですが、ps2pdf で PDF に変換すると句読点（。、）などの表示がおかしくなりました。
 
 [<strong>Ghostscript 10.03.0</strong> がリリースされました。<br><br>※ IPAフォントを指定した cidfmap を使って日本語データが問題なく印刷できることを確認しました。<br>$ gs /usr/share/ghostscript/10.03.0/examples/cjk/gscjk_aj.ps](https://x.com/jw_abekyun/status/1765766044860432515)
 
@@ -76,7 +80,6 @@ Microsoft Windows では [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), macOS �
 - [ghostscriptのコマンドライン引数](http://sage-t.tumblr.com/post/71333720989/ghostscript)
 - [ghoastscriptの日本語文字化けについて．](http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11121158676)
 - [Ghostscript についてちょっとだけ](https://naruoga.hatenablog.com/entry/20130110/1357827274)
-- [Data storage for gs-cjk project](https://www.aihara.co.jp/~taiji/gyve/)（山田さん）
 
 #### License {#g7897d81}
 
