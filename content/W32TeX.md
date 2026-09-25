@@ -287,17 +287,11 @@ OS のデフォルト code page (日本語 Windows の場合 CP932) で DVI に�
 - [JAIST 北陸先端科学技術大学院大学](https://ftp.jaist.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [山形大学](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/systems/win32/w32tex/)
 - [理化学研究所](https://ftp.riken.jp/CTAN/systems/win32/w32tex/)
+- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/CTAN/systems/win32/w32tex/)
 - [ctan.tikz.jp](https://ctan.tikz.jp/systems/win32/w32tex/)
 - [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/ctan/systems/win32/w32tex/)
-- [mirror.aria-on-the-planet.es](https://mirror.aria-on-the-planet.es/CTAN/systems/win32/w32tex/)
+- [mirror.kris.fail](https://mirror.kris.fail/ctan/systems/win32/w32tex/)
 - [CTAN:systems/win32/w32tex](https://mirror.ctan.org/systems/win32/w32tex)
-
-<strong>HTTP</strong>
-
-- [NAIST 奈良先端科学技術大学院大学](http://ftp.naist.jp/pub/CTAN/systems/win32/w32tex/)
-- [Ring Server](http://www.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [Ring Server (近いサーバー優先)](http://www.dnsbalance.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
-- [Ring Server (core.ring.gr.jp)](http://core.ring.gr.jp/pub/text/TeX/ptex-win32/current/)
 
 <!-- **過去のバージョンの W32TeX [#mirror-old] -->
 
