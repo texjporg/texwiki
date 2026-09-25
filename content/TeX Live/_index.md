@@ -119,10 +119,6 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - 日本語 TeX 開発コミュニティ (さくらインターネット (大阪府大阪市北区大深町６−３８ 3F グラングリーン大阪 北館 JAM BASE))
         - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
-            <!-- -''HTTP'' -->
-            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
-            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/texlive/tlnet/ -->
-            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/tlnet/ -->
 
 ### [TeX Live ISO Images](https://www.tug.org/texlive/acquire-iso.html) {#iso}
 
@@ -147,10 +143,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://mirror.kris.fail/ctan/systems/texlive/Images/](https://mirror.kris.fail/ctan/systems/texlive/Images/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
-            <!-- -''HTTP'' -->
-            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
-            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/texlive/Images/ -->
-            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/texlive/Images/ -->
 
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
