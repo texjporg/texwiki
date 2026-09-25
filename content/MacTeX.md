@@ -202,7 +202,3 @@ $ sudo tlmgr paper a4
         - [https://mirror.kris.fail/ctan/systems/mac/mactex/](https://mirror.kris.fail/ctan/systems/mac/mactex/)
     - CTAN ミラー
         - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
-            <!-- -''HTTP'' -->
-            <!-- - -NAIST 奈良先端科学技術大学院大学 (奈良県生駒市) -->
-            <!-- - --http://ftp.naist.jp/pub/CTAN/systems/mac/mactex/ -->
-            <!-- - --http://ftp.nara.wide.ad.jp/pub/CTAN/systems/mac/mactex/ -->
