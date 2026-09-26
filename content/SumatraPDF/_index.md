@@ -38,7 +38,7 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### インストール {#r04b7fad}
 
-[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer) から 64-bit Installer をダウンロードします。ARM 版の Windows を使用している方は ARM64 Installer をダウンロードします。
+[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer) から 64-bit Installer をダウンロードします。ARM 版 Windows の場合は ARM64 Installer をダウンロードします。
 後はダブルクリックして指示に従えばインストールが完了します。
 
 SumatraPDF インストール先フォルダは
