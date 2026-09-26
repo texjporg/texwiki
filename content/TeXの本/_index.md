@@ -25,6 +25,8 @@ TeX や LaTeX に関する本の紹介です。
 
 - [Learn LaTeX: 無料の初心者向けオンラインレッスン | learnlatex.org](https://www.learnlatex.org/ja/)
 
+- [筑波大学 情報学群 情報科学類 教育用計算機システム使用の手引き（付録）2026 年度版 第3章 LaTeX](https://www.coins.tsukuba.ac.jp/tebiki/2026/tebiki_appendix2026.pdf#page=59) (PDF)
+
 - [Cute.Guides（きゅうとガイド）](https://guides.lib.kyushu-u.ac.jp/cuteguides/) &mdash;
     [LaTeX事始め - ★はじめてのLaTeX - Cute.Guides at 九州大学 Kyushu University](https://guides.lib.kyushu-u.ac.jp/LaTeX-LectureNote/)
 
