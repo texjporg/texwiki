@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [cjk-gs-integrate 20260926.0](https://github.com/texjporg/cjk-gs-support) -- cjk-gs-integrate 2026-09-26 (土) 23:51:25
 - [Texpile 1.2.0](https://texpile.com/) -- [Texpile](/Texpile/) 2026-09-26 (土) 14:28:55
 - [ratex 0.4.4](https://github.com/leoliu0/ratex) -- ratex 2026-09-23 (水) 19:24:33
 - [Ghostscript 10.08.0](https://ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2026-09-23 (水) 14:01:35
