@@ -29,6 +29,14 @@ Adobe PostScript Type1 フォントは現在では非推奨です。
 
 EPS 形式は現在では非推奨です。
 
+- [EPS 画像のサポートが Office で無効になっている | Microsoft Support](https://support.microsoft.com/ja-jp/office/lifecycle/support-for-eps-images-has-been-turned-off-in-office)
+
+> EPS ファイルにセキュリティの脆弱性があるため、Office 2024、Office 2021、Office 2019、Office 2016、Office 2013、Office 2010、および Microsoft 365 は、EPS ファイルを Office ドキュメントに挿入する機能をオフにしました。 この変更は、2017 年 4 月 11 日のセキュリティ更新プログラムの時点で有効です。<br>
+>
+> <br>
+>
+> Windows ベースのすべてのバージョンの Office が影響を受けます。 (この変更は、2015 年から Office 2007 ですでに適用されています)。
+
 - [PDF&#x26;出力の手引き2026](https://blog.adobe.com/jp/publish/2025/11/27/cc-design-print2026)
 
 > <strong>※従来一般的であった EPS 形式は現在のワークフローには適していません。</strong><br>
