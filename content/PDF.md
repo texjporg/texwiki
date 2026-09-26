@@ -154,11 +154,11 @@ Microsoft Edge が標準で PDF の描画をサポートしていたり，[Googl
     - [Dual-Screen PDF Viewer \[dspdfviewer\]](http://dspdfviewer.danny-edel.de/) (Qt) Dual-Screen PDF Viewer for LaTeX-beamer
 - [MuPDF](/MuPDF/) 系：MuPDF を利用したものが多数あります．
     - [SumatraPDF](/SumatraPDF/) SyncTeX に対応したタブ切り替え型の PDF ビューア
+    - [LEKTRA](/LEKTRA/) (Qt) SyncTeX に対応した画面スペースとコントロールを優先した PDF ビューア
     - [zathura](/zathura/) (GTK) SyncTeX に対応した軽量な PDF ビューア
     - [qpdfview](/qpdfview/) (Qt) SyncTeX に対応したタブ切り替え型の PDF ビューア
     - [Sioyek](/Sioyek/) (Qt) SyncTeX に対応した教科書や論文を読むことに特化した PDF ビューア
     - [llpp](/llpp/) SyncTeX に対応した軽量な PDF ビューア
-    - [LEKTRA](https://github.com/dheerajshenoy/lektra) (Qt) SyncTeX に対応した画面スペースとコントロールを優先した PDF ビューア。
 - PDF.js 系：PDF.js を利用したものが多数あります．
     - [Visual Studio Code](</Visual Studio Code/>) で [LaTeX Workshop](</Visual Studio Code/LaTeX/>) を使う
     - [Pulsar](/Pulsar/) で [pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer) を使う
