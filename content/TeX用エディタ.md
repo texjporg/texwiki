@@ -9,9 +9,9 @@ pukiwiki: "TeX用エディタ"
 
 ## LaTeX 用統合環境・エディタ {#ab7592a7}
 
-LaTeX 文書はテキストファイルですので、Windows 付属の「メモ帳」など，どんなテキストエディタでも LaTeX 文書を書くことができます。
+LaTeX 文書はテキストファイルですので、Windows 付属の「メモ帳」など、どんなテキストエディタでも LaTeX 文書を書くことができます。
 
-以下は特に LaTeX 文書編集のための便利な機能を持つ <strong>LaTeX専用の統合環境</strong>（青背景），<strong>エディタ</strong>（緑背景）と LaTeX 関連パッケージ（段下がりの黄背景）です。
+以下は特に LaTeX 文書編集のための便利な機能を持つ <strong>LaTeX専用の統合環境</strong>（青背景）、<strong>エディタ</strong>（緑背景）と LaTeX 関連パッケージ（段下がりの黄背景）です。
 
 ### オープンソース {#b6c880d8}
 
@@ -63,7 +63,7 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 <!-- ||BGCOLOR(#FFC):[[LaTeX Utilities:https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities]]|CENTER:[[0.4.14:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/changelog]]|2024-03-25||BGCOLOR(#FFC):RIGHT:Extension|BGCOLOR(#CCF):[[MIT License:https://marketplace.visualstudio.com/items/tecosaur.latex-utilities/license]]|~| -->
 
 - [CotEditor](/CotEditor/)
-- [Eclipse IDE](/Eclipse/) with [TeXlipse](/TeXlipse/)
+- [Eclipse IDE](/Eclipse/) + [TeXlipse](/TeXlipse/)
 - [Enter TeX](</Enter TeX/>)
 - [Geany](/Geany/)
 - [gedit](/gedit/)
@@ -87,10 +87,10 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 学生版
 - [JTeX](/JTeX/)
 - [mi](/mi/)
-- [Mery](https://www.haijin-boys.com/software/mery) with [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
+- [Mery](https://www.haijin-boys.com/software/mery) + [TeX文書のコンパイル](https://www.haijin-boys.com/wiki/TeX%E6%96%87%E6%9B%B8%E3%81%AE%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
 - [NO.B612 LaTeX Editor](https://apps.microsoft.com/detail/9p1rcn1l1bmh?hl=ja-JP&gl=JP) (Windows)、[NO.B612 LaTeX Editor](https://apps.apple.com/jp/app/no-b612-latex-editor/id6757142880?mt=12) (macOS)
-- [Obsidian](https://obsidian.md/) with [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite) plugin
-- [Obsidian](https://obsidian.md/) with [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin) plugin
+- [Obsidian](https://obsidian.md/) + [Latex Suite](https://github.com/artisticat1/obsidian-latex-suite)
+- [Obsidian](https://obsidian.md/) + [MdTex](https://github.com/Mekann2904/obsidian-mdtex-plugin)
 - [TeX64](/TeX64/) Free
 - [VerbTeX LaTeX Editor](https://www.verbosus.com/) (Android, iOS)
 - [WinShell](/WinShell/)
@@ -99,11 +99,11 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 
 継続利用に料金が必要となる LaTeX 用統合環境・エディタの一覧です。
 
-- [EmEditor](https://jp.emeditor.com/) with [M's TeX Helper 2](https://ich.sakura.ne.jp/manabu/jp/html/program.html)
-- [秀丸エディタ](</秀丸エディタ/>) with [祝鳥（のりてふ）](https://www.ms.u-tokyo.ac.jp/~abenori/soft/fortex.html)
+- [EmEditor](https://jp.emeditor.com/) + [M's TeX Helper 2](https://ich.sakura.ne.jp/manabu/jp/html/program.html)
+- [秀丸エディタ](</秀丸エディタ/>) + [祝鳥（のりてふ）](https://www.ms.u-tokyo.ac.jp/~abenori/soft/fortex.html)
 - [InftyEditor](https://sciaccess.net/jp/InftyEditor/index.html) 正式版
 - [MIFES](https://www.megasoft.co.jp/mifes11/)
-- [Sublime Text](https://www.sublimetext.com/) with [LaTeXTools](https://github.com/SublimeText/LaTeXTools) plugin
+- [Sublime Text](https://www.sublimetext.com/) + [LaTeXTools](https://github.com/SublimeText/LaTeXTools)
 - [TeX Writer](</TeX Writer/>)
 - [TeX64](/TeX64/) Basic/Pro
 - [Texifier](/Texifier/)
@@ -138,11 +138,11 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - BSD 2-Clause (二条項 BSD License)
 - BSD 3-Clause (三条項 BSD License)
 
-ライセンスは，途中で変更されたり，複数のライセンスが適用されていたり，表のライセンス表記と実際のライセンスが違っていたりすることがあります．
+ライセンスは、途中で変更されたり、複数のライセンスが適用されていたり、表のライセンス表記と実際のライセンスが違っていたりすることがあります。
 
-表に書かれているライセンスは当てにせず，利用する場合は各自きちんと調べてください．
+表に書かれているライセンスは当てにせず、利用する場合は各自きちんと調べてください。
 
-参考ページ：[OSI](https://opensource.org/), [OSG-JP](https://opensource.jp/)
+参考ページ：[OSI](https://opensource.org/)、[OSG-JP](https://opensource.jp/)
 
 ## 関連リンク {#yebc81f9}
 
@@ -150,7 +150,8 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [https://en.wikibooks.org/wiki/LaTeX/Installation#Editors](https://en.wikibooks.org/wiki/LaTeX/Installation#Editors)
 - [LaTeX Editors/IDEs](https://tex.stackexchange.com/questions/339/latex-editors-ides)
 - [What is the best TeX editor for LaTeX?](https://www.researchgate.net/post/What-is-the-best-TeX-editor-for-LaTeX)
-- [Comparison of text editors](https://www.wikipedia.org/wiki/Comparison_of_text_editors)，[TextEditors Wiki](https://texteditors.org/)
+- [Comparison of text editors](https://www.wikipedia.org/wiki/Comparison_of_text_editors)
+- [TextEditors Wiki](https://texteditors.org/)
 - [比較 - テキストエディタ・スクリーンショット Wiki\*](https://wikiwiki.jp/texteditor/?%C8%E6%B3%D3)
 - [サダオのLaTeXページ#LaTeX Editor](https://www.dm.ufscar.br/~sadao/latex/tex-inst-win.php#Editor)
 - [最強のエディタはどれだ！！ (2022年版)](https://zenn.dev/booink/articles/programmers-editor-list)
