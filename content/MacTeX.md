@@ -28,10 +28,10 @@ MacTeX には、ベースとなっている [TeX Live](</TeX Live/>) と同じ�
 
 ### MacTeX の中身 {#defa4d85}
 
-MacTeX には TeX Live のほかに、複数の GUI アプリケーションと [Ghostscript](/Ghostscript/) が含まれています。
+MacTeX には TeX Live のほかに、複数の GUI アプリケーションと Ghostscript が含まれています。
 MacTeX.pkg からインストールする際に、インストールの種類で \[カスタマイズ\] をクリックするとインストールするパッケージを選択できます。
 
-MacTeX-2026 には以下のパッケージが収録されています。
+以下は収録パッケージについての説明です。
 
 #### TeXLive-2026 {#v03e546d}
 
@@ -65,7 +65,7 @@ TeX フォルダには READ ME FIRST.pdf と以下のアプリが収録されて
 
 #### Ghostscript 10.07.0<br>Ghostscript Dynamic Library {#n1354f54}
 
-Ghostscript は PostScript/PDF インタプリタです。
+[Ghostscript](/Ghostscript/) は PostScript/PDF インタプリタです。
 
 以下の場合に当てはまる場合はチェックをはずします。
 
@@ -186,6 +186,8 @@ $ sudo tlmgr paper a4
 ### ミラーサイト (MacTeX) {#mirror}
 
 - <strong>HTTPS</strong>
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
     - JAIST 北陸先端科学技術大学院大学 (石川県能美市)
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/](https://ftp.jaist.ac.jp/pub/CTAN/systems/mac/mactex/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
@@ -200,5 +202,3 @@ $ sudo tlmgr paper a4
         - [https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/](https://jp.mirrors.cicku.me/ctan/systems/mac/mactex/)
     - mirror.kris.fail (Cloudflare CDN)
         - [https://mirror.kris.fail/ctan/systems/mac/mactex/](https://mirror.kris.fail/ctan/systems/mac/mactex/)
-    - CTAN ミラー
-        - [https://mirror.ctan.org/systems/mac/mactex/](https://mirror.ctan.org/systems/mac/mactex/)
