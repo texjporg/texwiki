@@ -89,8 +89,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [TeX](/TeX/)
 - [e-TeX](/e-TeX/)
 - [pTeX](/pTeX/)，[upTeX](/upTeX,upLaTeX/)
-- [pTeX と多言語処理](</pTeXと多言語処理/>)
-- [e-pTeX](/e-pTeX/)，[e-upTeX](/upTeX,upLaTeX/)，[pTeX-ng](/pTeX-ng/)
+- [e-pTeX](/e-pTeX/)，[e-upTeX](/upTeX,upLaTeX/)，[Asiatic pTeX](</Asiatic pTeX/>)
 - [pdfTeX](/pdfTeX/)，[LuaTeX](/LuaTeX/)，[LuajitTeX](/LuajitTeX/)
 - [XeTeX](/XeTeX/)
 - ratex
