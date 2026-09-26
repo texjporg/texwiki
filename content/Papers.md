@@ -45,7 +45,15 @@ Papers では Evince の機能である SyncTeX、XPS、PostScript、DVI のサ�
 
 - [https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md](https://gitlab.gnome.org/GNOME/papers/-/blob/main/NEWS.md)
 
-## ダウンロード {#ybca190a}
+## ダウンロード/インストール {#ybca190a}
+
+### Windows {#idf7eb36}
+
+- [https://github.com/cosmicvi/papers-for-windows](https://github.com/cosmicvi/papers-for-windows)
+
+### macOS {#c720955a}
+
+- [https://formulae.brew.sh/formula/gnome-papers](https://formulae.brew.sh/formula/gnome-papers)
 
 ### Linux {#p9649c9c}
 
