@@ -49,6 +49,7 @@ TeX Live の windows 版には 32-bit 版の dviout が含まれています。
 
 #### TeX Users Group repositoryの版 (Ver.3.19.0~) {#x61c7151}
 
+- [https://mirror.ctan.org/dviware/dviout/](https://mirror.ctan.org/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.jaist.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/](https://ftp.yz.yamagata-u.ac.jp/pub/CTAN/dviware/dviout/) (CTANに登録された最新版)
 - [https://ftp.riken.jp/CTAN/dviware/dviout/](https://ftp.riken.jp/CTAN/dviware/dviout/) (CTANに登録された最新版)
@@ -274,5 +275,7 @@ dviout 3.18.3 ALPHA 5 以前の dviout にあった，以下の問題が修正�
 - \[[ViewVC\] Index of: dviout/trunk](https://svn.tug.org/dviout/trunk/)
     - [log](https://svn.tug.org/dviout/trunk/?view=log)
     - [ChangeLog](https://svn.tug.org/dviout/trunk/ChangeLog?view=log)
-- \[[ViewVC\] Index of: texlive/trunk/Master/tlpkg/dviout](https://svn.tug.org/texlive/trunk/Master/tlpkg/dviout/)
-    - [log](https://svn.tug.org/texlive/trunk/Master/tlpkg/dviout/?view=log)
+- [https://git.texlive.info/texlive/tree/Master/tlpkg/dviout](https://git.texlive.info/texlive/tree/Master/tlpkg/dviout)
+    - [log](https://git.texlive.info/texlive/log/Master/tlpkg/dviout)
+- [https://git.texlive.info/texlive/tree/Build/source/texk/dviout-util](https://git.texlive.info/texlive/tree/Build/source/texk/dviout-util)
+    - [log](https://git.texlive.info/texlive/log/Build/source/texk/dviout-util)
