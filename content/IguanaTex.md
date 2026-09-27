@@ -17,6 +17,12 @@ pLaTeX にも対応しているので日本語も使用できます。
 
 - [IguanaTex - A Free Latex Add-In for PowerPoint on Windows and Mac](http://www.jonathanleroux.org/software/iguanatex/)
 
+### 動作環境 {#ce059009}
+
+Windows, Mac
+
+Microsoft 365, Office 2024 の PowerPoint
+
 ### ダウンロード {#v2c4c993}
 
 - [https://github.com/Jonathan-LeRoux/IguanaTex/releases](https://github.com/Jonathan-LeRoux/IguanaTex/releases)
@@ -39,6 +45,7 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 
 ### 関連リンク {#pc5b4e12}
 
+- [初学者によるIguana TeXの導入](https://qiita.com/Trigger-FK/items/380f5fc86e2f2b871c9e)
 - [IguanaTeX環境構築(Windows)](https://qiita.com/ryo-ww/items/28d1cb29b4bc1f431a76)
 - [PowerPointでLaTeXを使う【IguanaTeX】](https://beamdaisuki.com/iguanatex/)
 - [【フォント】IguanaTexでPowerPointの数式フォントをまともにする](https://meltingrabbit.com/blog/article/2018061801/)
