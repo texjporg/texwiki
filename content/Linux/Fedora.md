@@ -55,9 +55,9 @@ cjk-gs-integrate を使用することで文字化けせずに出力できるよ
 
 ```
 sudo dnf install ghostscript
-wcurl https://github.com/texjporg/cjk-gs-support/releases/download/20260926.0/cjk-gs-integrate-20260926.0.tar.gz
-tar xvf cjk-gs-integrate-20260926.0.tar.gz
-cd cjk-gs-integrate-20260926.0
+wcurl https://github.com/texjporg/cjk-gs-support/archive/refs/tags/20260926.0.tar.gz
+tar xvf 20260926.0.tar.gz
+cd cjk-gs-support-20260926.0
 sudo ./cjk-gs-integrate.pl --link-texmf --force
 ```
 
