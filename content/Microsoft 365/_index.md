@@ -24,6 +24,27 @@ pukiwiki: "Microsoft 365"
 
 ***
 
+### Microsoft 365 と Office 2024 の違い {#y8fcd61c}
+
+- [Microsoft 365 と Office 2024 の違いは何ですか? | Microsoft Support](https://support.microsoft.com/ja-jp/office/lifecycle/lc-account/what-s-the-difference-between-microsoft-365-and-office-2024)
+
+### サポートの終了 {#d86d0d5c}
+
+#### Office 2024 {#cbd8f2cc}
+
+- [Office 2024 - Microsoft Lifecycle | Microsoft Learn](https://learn.microsoft.com/ja-jp/lifecycle/products/office-2024)
+
+#### Office 2021 {#k0852482}
+
+- [Office 2021 - Microsoft Lifecycle | Microsoft Learn](https://learn.microsoft.com/ja-jp/lifecycle/products/office-2021)
+- [Office 2021 のサポートの終了 | Microsoft Support](https://support.microsoft.com/ja-jp/office/system-requirements/end-of-support-for-office-2021)
+
+[Office 2021 のサポートは 2026 年 10 月 13 日に終了](https://learn.microsoft.com/ja-jp/lifecycle/products/office-2021)し、拡張機能および拡張セキュリティ更新プログラムはありません。 すべての Office 2021 アプリは引き続き動作する可能性があります。 ただし、深刻な問題を引き起こす可能性のあるセキュリティ リスクにさらされる可能性があります。
+
+### PowerPoint アドイン {#w6cd2e21}
+
+- [IguanaTex](/IguanaTex/) …… Microsoft 365, Office 2024 の PowerPoint (pLaTeX 対応) (Windows, Mac 対応)
+
 ### Microsoft Word で PDF を作る {#l3ff32fb}
 
 <!-- 「PDFの作り方」から移転して少し加筆 (2015-06-18) -->
@@ -90,10 +111,6 @@ Word は，同じファイルを開いても，同じように書いても，バ
 
 Word などの極細 (0.25 pt) の罫線は使わないほうが無難です。
 画面では見えても，印刷すると飛んでしまうことがあります。
-
-### アドイン {#w6cd2e21}
-
-[プレゼンツール](</プレゼンツール/>)を参照．
 
 ### LaTeX との比較 {#k678548a}
 
