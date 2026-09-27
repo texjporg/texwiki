@@ -13,6 +13,10 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 
 以下は特に LaTeX 文書編集のための便利な機能を持つ <strong>LaTeX専用の統合環境</strong>（青背景）、<strong>エディタ</strong>（緑背景）と LaTeX 関連パッケージ（段下がりの黄背景）です。
 
+***
+
+***
+
 ### オープンソース {#b6c880d8}
 
 ソースコードが公開されている Unicode (UTF-8) に対応した LaTeX 用統合環境・エディタの一覧です。
@@ -156,3 +160,76 @@ LaTeX 文書はテキストファイルですので、Windows 付属の「メモ
 - [サダオのLaTeXページ#LaTeX Editor](https://www.dm.ufscar.br/~sadao/latex/tex-inst-win.php#Editor)
 - [最強のエディタはどれだ！！ (2022年版)](https://zenn.dev/booink/articles/programmers-editor-list)
 - [TeX・LaTeXエディタの選び方 — Windows・Mac、数式入力、共同編集で比較](https://tex64.com/ja/latex-editor)
+
+## ChatGPT に LaTeX で日本語の文書を作成する場合 TeXstudio と Visual Studio Code + LaTeX Workshop では どちらが適しているか質問した結果 {#s2e4e85d}
+
+質問：
+
+LaTeX で日本語の文書を作成する場合 TeXstudio と Visual Studio Code + LaTeX Workshop では どちらが適していますか。
+
+回答：
+
+日本語の LaTeX 文書を作るのであれば、<strong>どちらでも十分実用的</strong>ですが、用途によって向き不向きがあります。
+
+| <strong>観点</strong> | <strong>TeXstudio</strong> | <strong>VS Code + LaTeX Workshop</strong> |
+|---|---|---|
+| 日本語 LaTeX の始めやすさ | <strong>◎</strong> | ○ |
+| LaTeX 専用機能 | <strong>◎</strong> | ◎ |
+| エディタとしての自由度 | ○ | <strong>◎</strong> |
+| 補完・ジャンプ・検索 | ◎ | <strong>◎</strong> |
+| Git との連携 | ○ | <strong>◎</strong> |
+| 複数ファイルの大規模文書 | ◎ | <strong>◎</strong> |
+| 設定の簡単さ | <strong>◎</strong> | △ |
+| 他のプログラミングとの併用 | ○ | <strong>◎</strong> |
+| 軽快さ | ◎ | ○ |
+| 初心者へのおすすめ | <strong>◎</strong> | ○ |
+| 長期的に環境を拡張したい | ○ | <strong>◎</strong> |
+
+<strong>結論</strong>
+
+<strong>「LaTeX で論文・レポートを書くことが主目的」なら TeXstudio が扱いやすい</strong>です。
+
+特に日本語文書では、uplatex + dvipdfmx などのコンパイル環境を一度設定してしまえば、TeXstudio のビルドボタンから PDF を作成でき、<strong>LaTeX に集中しやすい</strong>のが利点です。
+
+一方、
+
+<strong>「LaTeX も使うが、普段のエディタとして VS Code を使いたい」なら VS Code + LaTeX Workshop</strong> が適しています。
+
+たとえば、
+
+- Git/GitHub で論文を管理する
+- LaTeX のソースを複数ファイルに分割する
+- Markdown、Python、R、HTML なども扱う
+- Git の差分を見ながら論文を書く
+- 拡張機能を使って自分好みの環境にしたい
+
+といった場合は VS Code のメリットが大きくなります。
+
+<strong>日本語 LaTeX で特に重要な点</strong>
+
+実は、<strong>TeXstudio と VS Code の違いより、LaTeX 環境の選択のほうが重要</strong>です。
+
+現在の日本語文書なら、たとえば
+
+> LuaLaTeX
+
+を使う構成と、
+
+> upLaTeX + dvipdfmx
+
+を使う構成があります。
+
+既存の大学・研究室のテンプレートや学会テンプレートを使う場合は、<strong>テンプレートが要求しているエンジンに合わせる</strong>のが最優先です。エディタを変えても、LaTeX コンパイル環境そのものは別途必要です。
+
+個人的な使い分けとしては、
+
+- <strong>LaTeX 初心者</strong> → <strong>TeXstudio</strong>
+- <strong>卒論・修論を初めて書く</strong> → <strong>TeXstudio</strong>
+- <strong>学会論文をテンプレートに沿って書く</strong> → <strong>どちらでもよい</strong>
+- <strong>Git で管理する研究プロジェクト</strong> → <strong>VS Code + LaTeX Workshop</strong>
+- <strong>LaTeX とプログラミングを同じ環境で扱う</strong> → <strong>VS Code + LaTeX Workshop</strong>
+- <strong>すでに VS Code に慣れている</strong> → <strong>VS Code + LaTeX Workshop</strong>
+
+という選択が分かりやすいです。
+
+もし <strong>Windows で日本語 LaTeX を使うことを想定している</strong>のであれば、TeXstudio と VS Code のどちらを選ぶかだけでなく、<strong>「TeX Live + upLaTeX」「TeX Live + LuaLaTeX」のどちらにするか</strong>まで含めて、おすすめの環境構成を具体的に説明できます。
