@@ -43,7 +43,7 @@ pukiwiki: "Microsoft 365"
 
 ### PowerPoint アドイン {#w6cd2e21}
 
-- [IguanaTex](/IguanaTex/) …… Microsoft 365, Office 2024 の PowerPoint (pLaTeX 対応) (Windows, Mac 対応)
+- [IguanaTex](/IguanaTex/) …… Microsoft 365, Office 2024 の PowerPoint アドイン（pLaTeX 対応）(Windows, Mac 対応)
 
 ### Microsoft Word で PDF を作る {#l3ff32fb}
 
