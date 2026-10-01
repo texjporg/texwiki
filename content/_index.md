@@ -91,7 +91,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [pTeX](/pTeX/)、[upTeX](/upTeX,upLaTeX/)
 - [e-pTeX](/e-pTeX/)、[e-upTeX](/upTeX,upLaTeX/)、[Asiatic pTeX](</Asiatic pTeX/>)
 - [pdfTeX](/pdfTeX/)、[LuaTeX](/LuaTeX/)、[LuajitTeX](/LuajitTeX/)
-- [XeTeX](/XeTeX/)
+- [XeTeX](/XeTeX/)、[Tectonic](/Tectonic/)
 - ratex
 - マクロパッケージ：[LaTeX](/LaTeX/)、[ConTeXt](/ConTeXt/)
 
