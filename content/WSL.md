@@ -19,3 +19,4 @@ Windows Subsystem for Linux (WSL) は Windows で Linux のプログラムを実
 - [WSL + TeXLive + VSCodeのTeX環境構築](https://zenn.dev/takamasa272/articles/11ff4230bdcde0)
 - [手軽にLatex環境を構築する with VSCode + Docker](https://zenn.dev/kneephys/articles/a1f95c4d620524)
 - [日本語 upLaTeX 環境構築 using VSCode &amp; Podman in 2026 Spring](https://note.com/f_matano44/n/n7dbfa54207e2)
+- [TeXLive2024 のインストール記録](https://bakkyalo.hatenablog.jp/entry/2024/04/09/175415)
