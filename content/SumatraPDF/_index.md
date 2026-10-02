@@ -20,7 +20,11 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ***
 
-### 不具合 {#v813d27a}
+### 要望/不具合 {#v813d27a}
+
+#### \[Feature Request\] Add option to disable window focus stealing when PDF reloads (version 3.6.1) {#q61833ae}
+
+- [https://github.com/sumatrapdfreader/sumatrapdf/issues/5648](https://github.com/sumatrapdfreader/sumatrapdf/issues/5648)
 
 #### lualatex+秀丸v9.55(utf-8)+祝鳥1.11(シフトJIS)+sumatraPDF(x64)v3.6.1でのsynctexエラー → [SumatraPDF 3.3.3 (2021-07-20)](https://www.sumatrapdfreader.org//dl//rel/3.3.3/SumatraPDF-3.3.3-64-install.exe) に戻す {#mdacf213}
 
@@ -38,7 +42,7 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### インストール {#r04b7fad}
 
-[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer) から 64-bit Installer をダウンロードします。ARM 版 Windows の場合は ARM64 Installer をダウンロードします。
+[Sumatra PDF reader download page](https://www.sumatrapdfreader.org/download-free-pdf-viewer) から 64-bit Installer をダウンロードします。ARM64 版 Windows の場合は ARM64 Installer をダウンロードします。
 後はダブルクリックして指示に従えばインストールが完了します。
 
 SumatraPDF インストール先フォルダは
