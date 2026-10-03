@@ -16,7 +16,7 @@ pukiwiki: "Ghostscript 7.07"
 
 Ghostscript 10.08.0 (2026-09-08) は、日本語の縦書き PostScript ファイルを画面に表示すると正しく表示できるのですが、ps2pdf で PDF に変換すると句読点（。、）などの表示がおかしくなりました。
 
-かつて Ghostscript には GNU Ghostscript 7.07 (2003-05-17) というバージョンが存在し，日本の gs-cjk プロジェクトの寄与を含み，日本語の縦書き PostScript ファイルを正しく扱うことができました。
+かつて Ghostscript には GNU Ghostscript 7.07 (2003-05-17) というバージョンが存在し、日本の gs-cjk プロジェクトの寄与を含み、日本語の縦書き PostScript ファイルを正しく扱うことができました。
 ここではその Ghostscript 7.07 について説明します。
 
 なお，Ghostscript 7.07 には脆弱性が存在しますので，最新の Ghostscript を利用することをお勧めします。
@@ -84,7 +84,7 @@ CJK フォントを扱うためには CMap Resource も必要で，これは [Ad
 
 #### Windows {#y7d058ad}
 
-[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://x.com/aminophen/status/1304059223580450820) [gs707w32full-20200910.zip](https://dl.dropboxusercontent.com/s/3y6jly3o6mlzl5z/gs707w32full-20200910.zip) または角藤さんが配布している [gs707w32full.zip](https://w32tex.org/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
+[Windows 用 Ghostscript 7.07 (gs-cjk) パッケージ一式](https://x.com/aminophen/status/1304059223580450820) [gs707w32full-20200910.zip](https://dl.dropboxusercontent.com/s/3y6jly3o6mlzl5z/gs707w32full-20200910.zip) または角藤さんの [gs707w32full.zip](https://w32tex.org/gs/gs707w32full.zip) を展開し，中にある “setupgs.exe” を実行します。
 デフォルトでは C:\gs に入ります（ご自分でドキュメントを読んでトラブルを解決するつもりの人以外は，安易に変えないでください）。
 C:\gs\gs7.07\bin\gswin32.exe が実行ファイルです（コンソール版は gswin32c.exe）。
 Ghostscript fonts も同時に C:\gs\fonts にインストールされます。
@@ -414,7 +414,7 @@ CIDFnmap の設定でわからないことが起きた場合に参考になる�
 
 回答：
 
-はい。調べてみると、これは単純に「gs-cjk のコードが忘れられた」というより、Ghostscript 7 系と 8 系の開発・ライセンス上の分岐、および CJK 実装のメンテナンス方針の変化が重なった結果、と見るのが適切です。
+はい。調べてみると、これは単純に「gs-cjk のコードが忘れられた」というより、<strong>Ghostscript 7 系と 8 系の開発・ライセンス上の分岐、および CJK 実装のメンテナンス方針の変化</strong>が重なった結果、と見るのが適切です。
 
 まず重要な点
 ご指摘の認識はほぼ正しいです。Ghostscript 7.07 には gs-cjk プロジェクトの成果がかなり深く取り込まれていました。
@@ -424,30 +424,30 @@ Ghostscript 自身の 7.x の変更履歴には、たとえば
 - OCF の FMapType 4/5 の処理
 - CIDFontType 2 の metrics 計算
 - cshow
-- 縦書き時の glyph cache
-- 縦書き時の glyphshow
+- <strong>縦書き時の glyph cache</strong>
+- <strong>縦書き時の glyphshow</strong>
 
-などについて、gs-cjk のメンバーによる修正が列挙されています。つまり、単に「日本語フォントを登録できる」という程度ではなく、CID フォントを Ghostscript の内部で扱う部分そのものにパッチが入っていたわけです。
+などについて、gs-cjk のメンバーによる修正が列挙されています。つまり、単に「日本語フォントを登録できる」という程度ではなく、<strong>CID フォントを Ghostscript の内部で扱う部分そのものにパッチが入っていた</strong>わけです。
 
-また、7.07 の CJK ドキュメントには、横書き・縦書き双方の CJK サンプル gscjk\_\* が用意されていたことも確認できます。
+また、7.07 の CJK ドキュメントには、横書き・縦書き双方の CJK サンプル <strong>gscjk\_\*</strong> が用意されていたことも確認できます。
 
 なぜ 8 系にそのまま移植されなかったのか
-大きな転機は Ghostscript 7 → 8 の開発ラインの変更です。
+大きな転機は <strong>Ghostscript 7 → 8 の開発ラインの変更</strong>です。
 
 gs-cjk の当時の資料には、かなり明確に、
 
 > 2003/05 GNU gs7.07<br>
-> 2003/06 AFPL gs8 (cjk は統合されていない)<br>
+> 2003/06 AFPL gs8 (<strong>cjk は統合されていない</strong>)<br>
 
 という開発史が記録されています。
 
-つまり 7.07 の直後、Ghostscript の開発主体が扱っていた AFPL Ghostscript 8.x の新しい系列には、7.x に統合されていた gs-cjk のパッチセットがそのまま継承されなかったのです。
+つまり 7.07 の直後、Ghostscript の開発主体が扱っていた <strong>AFPL Ghostscript 8.x の新しい系列には、7.x に統合されていた gs-cjk のパッチセットがそのまま継承されなかった</strong>のです。
 
 これはかなり重要です。
 
 7.07 は「gs-cjk が完成して、それが以後の Ghostscript の標準実装になった」という状態ではありませんでした。むしろ、
 
-gs-cjk → GNU Ghostscript 6.53 → 7.05 → 7.06 → 7.07
+<strong>gs-cjk → GNU Ghostscript 6.53 → 7.05 → 7.06 → 7.07</strong>
 
 という形で統合が進んだところで、Ghostscript 8 系への移行時にその流れが途切れています。
 
@@ -459,11 +459,11 @@ gs-cjk が追加していたのは、単に V の CMap を解釈して文字を9
 
 CJK の PostScript は、
 
-文字コード → CMap → CID → CIDFont → glyph
+<strong>文字コード → CMap → CID → CIDFont → glyph</strong>
 
 という仕組みになっており、さらに縦書きでは CMap による縦書き用のマッピングと、glyph の位置決めなどが絡みます。
 
-7.07 のドキュメントには CJK TrueType を CIDFontType 2 として扱う機能まで説明されており、gs-cjk の修正はこの CID-font machinery のかなり深い部分に入っています。
+7.07 のドキュメントには CJK TrueType を <strong>CIDFontType 2 として扱う機能</strong>まで説明されており、gs-cjk の修正はこの CID-font machinery のかなり深い部分に入っています。
 
 したがって 8.x の内部構造が変わった際、
 
@@ -473,7 +473,7 @@ CJK の PostScript は、
 
 実際、その後の Ghostscript 8.x では CJK 関連について別系統の修正が続いています。
 
-たとえば Red Hat の 8.15 系の履歴を見ると、2006 年になってから CJKV patch が追加されたり、いったん revert されたり、再度適用されたりしています。最終的には 8.15.3 付近で cjkv パッチが不要になっています。
+たとえば Red Hat の 8.15 系の履歴を見ると、2006 年になってから <strong>CJKV patch</strong> が追加されたり、いったん revert されたり、再度適用されたりしています。最終的には 8.15.3 付近で cjkv パッチが不要になっています。
 
 これは、
 
@@ -483,7 +483,7 @@ CJK の PostScript は、
 
 むしろ、
 
-7.x の gs-cjk 実装 → 8.x の新しいフォント/CID 処理 → CJKV 関連の個別修正 → 後の Ghostscript で再整理
+<strong>7.x の gs-cjk 実装 → 8.x の新しいフォント/CID 処理 → CJKV 関連の個別修正 → 後の Ghostscript で再整理</strong>
 
 という流れだった、と考えるほうが実態に近いです。
 
@@ -491,7 +491,7 @@ CJK の PostScript は、
 
 Ghostscript はこの時期にライセンス体系も大きく変わっています。
 
-7.07 は GNU Ghostscript で、7.07 の CJK 関係のソースには GPL の著作権表示があります。たとえば CJKTTCID.htm には gs-cjk の著作権表示があり、GNU Ghostscript の GPL の下に置かれています。
+7.07 は <strong>GNU Ghostscript</strong> で、7.07 の CJK 関係のソースには GPL の著作権表示があります。たとえば <strong>CJKTTCID.htm</strong> には gs-cjk の著作権表示があり、GNU Ghostscript の GPL の下に置かれています。
 
 一方、8.x の初期系列は AFPL Ghostscript としてリリースされています。8.14 のリリースノートも明確に「stable 8.1x series of AFPL Ghostscript」としています。
 
@@ -500,13 +500,13 @@ Ghostscript はこの時期にライセンス体系も大きく変わってい�
 - GNU Ghostscript 7.x
 - AFPL Ghostscript 8.x
 
-という開発・配布モデルそのものの切り替えが、7.07 のコードをそのまま継承するうえでの一つの障壁になっています。
+という<strong>開発・配布モデルそのものの切り替え</strong>が、7.07 のコードをそのまま継承するうえでの一つの障壁になっています。
 
-ただし、ここは注意が必要で、「AFPL になったから gs-cjk を取り込めなかった」と断定するのは資料からは強すぎます。実際には gs-cjk の成果物の一部は後の Ghostscript にも残っていますし、後年の Ghostscript の著作権一覧にも 2001, gs-cjk project が残っています。
+ただし、ここは注意が必要で、<strong>「AFPL になったから gs-cjk を取り込めなかった」と断定するのは資料からは強すぎます</strong>。実際には gs-cjk の成果物の一部は後の Ghostscript にも残っていますし、後年の Ghostscript の著作権一覧にも <strong>2001, gs-cjk project</strong> が残っています。
 
 ですから、ライセンスだけを理由とするより、
 
-Ghostscript 8 系への大規模な内部変更・開発ラインの変更の際に、gs-cjk の 7.x 向け実装をそのまま upstream の標準実装として維持する体制がなくなり、CJK 部分が別の形で再実装・修正されていった
+> <strong>Ghostscript 8 系への大規模な内部変更・開発ラインの変更の際に、gs-cjk の 7.x 向け実装をそのまま upstream の標準実装として維持する体制がなくなり、CJK 部分が別の形で再実装・修正されていった</strong>
 
 と説明するのが安全です。
 
@@ -514,7 +514,7 @@ Ghostscript 8 系への大規模な内部変更・開発ラインの変更の際
 
 これが現在でも 7.07 が日本語 TeX 環境などで特別扱いされる理由です。
 
-実際、pTeX 関係の資料でも、Cygwin の通常の Ghostscript は特に日本語の縦書きが扱えなかったため、gs-cjk を使ってカスタマイズした Ghostscript を用意していたと記録されています。
+実際、pTeX 関係の資料でも、Cygwin の通常の Ghostscript は<strong>特に日本語の縦書きが扱えなかったため、gs-cjk を使ってカスタマイズした Ghostscript を用意していた</strong>と記録されています。
 
 さらに FreeBSD の ports の後年の記録には、かなり露骨に、
 
@@ -528,16 +528,16 @@ Ghostscript 8 系への大規模な内部変更・開発ラインの変更の際
 
 したがって、「なぜ 7.07 の gs-cjk がそのまま後継版に取り込まれなかったのか？」への答えは、
 
-1. gs-cjk は 6.53～7.07 の GNU Ghostscript 系列には実際に積極的に統合された。
-1. 7.07 の直後、Ghostscript は AFPL Ghostscript 8.x という別の開発系列へ移行した。
-1. その際、Ghostscript の内部、特に CID/CMap/フォント処理も変化し、7.07 の gs-cjk パッチをそのまま forward-port するのが容易ではなかった。
+1. <strong>gs-cjk は 6.53～7.07 の GNU Ghostscript 系列には実際に積極的に統合された</strong>。
+1. <strong>7.07 の直後、Ghostscript は AFPL Ghostscript 8.x という別の開発系列へ移行した</strong>。
+1. その際、Ghostscript の内部、特に CID/CMap/フォント処理も変化し、<strong>7.07 の gs-cjk パッチをそのまま forward-port するのが容易ではなかった</strong>。
 1. その後 CJK/CJKV 対応は別の修正として断続的に再構築され、8.15 前後では CJKV パッチなどが存在した。
-1. その結果、7.07 の「gs-cjk が統合された状態」と、後の Ghostscript の CJK 実装は同じものではなくなった。
-1. 特に日本の TeX 界隈が必要としていた 古い CMap/CIDFont + 縦書き PostScript の組み合わせについては、7.07 の挙動が後のバージョンより都合がよく、結果として 7.07 が長く使われることになった。
+1. その結果、<strong>7.07 の「gs-cjk が統合された状態」と、後の Ghostscript の CJK 実装は同じものではなくなった</strong>。
+1. 特に日本の TeX 界隈が必要としていた <strong>古い CMap/CIDFont + 縦書き PostScript の組み合わせ</strong>については、7.07 の挙動が後のバージョンより都合がよく、結果として 7.07 が長く使われることになった。
 
 ということになります。
 
-なお、資料をさらに掘ると、「gs-cjk 側がなぜ Ghostscript 8 に追従しなかったのか」について、当時のメーリングリストや開発者（鈴木俊哉氏・山田泰司氏ら）の発言まで追跡できます。ここまで調べると、「技術的理由だったのか、Artifex/gs-cjk 間の開発方針の問題だったのか、ライセンスだったのか」をさらに切り分けられます。
+なお、資料をさらに掘ると、<strong>「gs-cjk 側がなぜ Ghostscript 8 に追従しなかったのか」について、当時のメーリングリストや開発者（鈴木俊哉氏・山田泰司氏ら）の発言まで追跡できます</strong>。ここまで調べると、「技術的理由だったのか、Artifex/gs-cjk 間の開発方針の問題だったのか、ライセンスだったのか」をさらに切り分けられます。
 
 ### ChatGPT に「gs-cjk 側がなぜ Ghostscript 8 に追従しなかったのか。技術的理由だったのか、Artifex/gs-cjk 間の開発方針の問題だったのか、ライセンスだったのか。」と質問した結果 {#k2eff4eb}
 
@@ -547,7 +547,7 @@ gs-cjk 側がなぜ Ghostscript 8 に追従しなかったのか。技術的理�
 
 回答：
 
-調べ直すと、前回の回答は少し修正したほうがよいです。「ライセンスが原因で gs-cjk が Ghostscript 8 に入らなかった」という証拠は見つかりませんでした。むしろ資料から見えてくるのは、主因が開発系列の分岐と技術的な追従の断絶で、ライセンスはその背景を複雑にした要因という構図です。
+調べ直すと、前回の回答は少し修正したほうがよいです。<strong>「ライセンスが原因で gs-cjk が Ghostscript 8 に入らなかった」という証拠は見つかりませんでした。むしろ資料から見えてくるのは、主因が開発系列の分岐と技術的な追従の断絶で、ライセンスはその背景を複雑にした要因</strong>という構図です。
 
 <strong>1. gs-cjk は、もともと AFPL 系にも追従するつもりだった</strong><br>
 
@@ -564,7 +564,7 @@ gs-cjk の開発者である山田泰司氏の資料には、プロジェクト�
 - GNU Ghostscript 6.53 への統合
 - GNU Ghostscript 7.05 への統合
 
-という流れです。つまり、gs-cjk は「AFPL版には絶対に協力しない」というプロジェクトではありませんでした。
+という流れです。つまり、<strong>gs-cjk は「AFPL版には絶対に協力しない」というプロジェクトではありませんでした</strong>。
 
 実際、7.05 の公式リリース告知も、6.5x 系で開発された gs-cjk の成果を GNU 7.05 に移植したことを明記しています。
 
@@ -582,48 +582,48 @@ gs-cjk の開発者である山田泰司氏の資料には、プロジェクト�
 |---|---|---|
 | 2000–01 | AFPL GS 6.x | gs-cjk がパッチ開発 |
 | 2001 | GNU GS 6.50/6.51 | gs-cjk パッチ |
-| 2002-02 | GNU GS 6.53 | gs-cjk 統合 |
-| 2002-04 | GNU GS 7.05 | gs-cjk 統合 |
-| 2003-04 | GNU GS 7.06 | 継続 |
+| 2002-02 | GNU GS 6.53 | <strong>gs-cjk 統合</strong> |
+| 2002-04 | GNU GS 7.05 | <strong>gs-cjk 統合</strong> |
+| 2003-04 | GNU GS 7.06 | <strong>継続</strong> |
 | 2003-05-17 | GNU GS 7.07 | 7.x 最終世代 |
-| 2003-06 | AFPL GS 8.x | gs-cjk は統合されず |
+| 2003-06 | AFPL GS 8.x | <strong>gs-cjk は統合されず</strong> |
 
 この最後の切り替わりは、gs-cjk 自身の資料にも明記されています。
 
-一方、Ghostscript 8.00 は 2002 年11月21日にすでに AFPL Ghostscript の新しい開発系列として始まっていました。8.00 の公式履歴を見ると、7.x の CJK 統合とは別の開発ラインになっていることが分かります。
+一方、Ghostscript 8.00 は 2002 年11月21日にすでに <strong>AFPL Ghostscript の新しい開発系列</strong>として始まっていました。8.00 の公式履歴を見ると、7.x の CJK 統合とは別の開発ラインになっていることが分かります。
 
 つまり「7.07 の次が普通に 8.00」というより、実際の開発史としては、
 
-AFPL 8.x の新しい trunk
+<strong>AFPL 8.x の新しい trunk</strong>
 
 と
 
-GNU 7.x の安定/free branch
+<strong>GNU 7.x の安定/free branch</strong>
 
 が並行していた、と理解したほうが正確です。
 
 <strong>3. 技術的な理由はかなり大きかったと思われる</strong><br>
 
-ここには直接的な「8.x に移植しなかった理由」という開発者発言をまだ発見できていないので、以下はソース履歴からかなり強く推測できることとして区別します。
+ここには直接的な「8.x に移植しなかった理由」という開発者発言をまだ発見できていないので、以下は<strong>ソース履歴からかなり強く推測できること</strong>として区別します。
 
 7.05 への gs-cjk 統合を見ると、変更は非常に大規模です。
 
 たとえば、
 
-- gs_cmap.ps
-- zfcid0.c
-- zchar.c
-- zcfont.c
-- zchar42.c
-- zchar1.c
-- zcharout.c
-- gstext.c
-- gstype42.c
-- gxchar.c
-- gs_ttf.ps
-- gsfcmap.c
-- gs_cidfn.ps
-- pdf_font.ps
+- <strong>gs_cmap.ps</strong>
+- <strong>zfcid0.c</strong>
+- <strong>zchar.c</strong>
+- <strong>zcfont.c</strong>
+- <strong>zchar42.c</strong>
+- <strong>zchar1.c</strong>
+- <strong>zcharout.c</strong>
+- <strong>gstext.c</strong>
+- <strong>gstype42.c</strong>
+- <strong>gxchar.c</strong>
+- <strong>gs_ttf.ps</strong>
+- <strong>gsfcmap.c</strong>
+- <strong>gs_cidfn.ps</strong>
+- <strong>pdf_font.ps</strong>
 
 など、Ghostscript のフォント処理の広範囲に変更が入っています。
 
@@ -633,7 +633,7 @@ GNU 7.x の安定/free branch
 
 > glyph cache の縦書き処理
 
-> glyphshow の縦書き処理
+> <strong>glyphshow</strong> の縦書き処理
 
 など、インタープリタのかなり低い層まで修正されています。
 
@@ -641,11 +641,11 @@ GNU 7.x の安定/free branch
 
 <strong>4. そして Ghostscript 8.x はフォント処理そのものを発展させていた</strong><br>
 
-8.00 の変更履歴を見ると、特に pdfwrite のフォント処理が大幅に改善されています。
+8.00 の変更履歴を見ると、特に <strong>pdfwrite</strong> のフォント処理が大幅に改善されています。
 
 7.x で gs-cjk が手を入れた部分と、8.x で Ghostscript 本体が発展させた部分が重なっていたため、
 
-7.07 の gs-cjk patch を 8.x に機械的に forward-port するのが難しかった
+<strong>7.07 の gs-cjk patch を 8.x に機械的に forward-port するのが難しかった</strong>
 
 と考えるのが自然です。
 
@@ -664,11 +664,11 @@ GNU 7.x の安定/free branch
 
 つまり、
 
-「Artifex が CJK を捨てた」
+<strong>「Artifex が CJK を捨てた」</strong>
 
 というより、
 
-「7.07 の gs-cjk 実装をそのまま維持するのではなく、8.x の新しいコードベースの中で CJK 対応を別途進める形になった」
+<strong>「7.07 の gs-cjk 実装をそのまま維持するのではなく、8.x の新しいコードベースの中で CJK 対応を別途進める形になった」</strong>
 
 と見るほうが資料に合っています。
 
@@ -688,11 +688,11 @@ CUPS の Ghostscript 8.15 系の変更履歴には、
 
 逆に、
 
-7.07 の gs-cjk が直していた問題を、8.x の別のコードベースに対して別の人々が再び直していた
+<strong>7.07 の gs-cjk が直していた問題を、8.x の別のコードベースに対して別の人々が再び直していた</strong>
 
 という歴史とよく整合します。
 
-<strong>6. ライセンスについては、むしろ「直接原因ではない」証拠がある</strong><br>
+<strong>6. ライセンスについては、むしろ<br>「直接原因ではない」証拠がある</strong><br>
 
 ここは前回より強く訂正できます。
 
@@ -704,7 +704,7 @@ CUPS の Ghostscript 8.15 系の変更履歴には、
 
 の著作権表示があり、GNU GPL の Ghostscript に含まれています。
 
-ところが後年の Ghostscript の著作権情報にも、2001 gs-cjk project が明示的に残っています。
+ところが後年の Ghostscript の著作権情報にも、<strong>2001 gs-cjk project</strong> が明示的に残っています。
 
 つまり、
 
@@ -712,19 +712,19 @@ CUPS の Ghostscript 8.15 系の変更履歴には、
 
 とは言えません。
 
-むしろ後の GPL/AGPL Ghostscript に gs-cjk の著作権表示が残っていることは、ライセンス面で完全に断絶したわけではないことを示します。
+むしろ後の GPL/AGPL Ghostscript に gs-cjk の著作権表示が残っていることは、<strong>ライセンス面で完全に断絶したわけではない</strong>ことを示します。
 
 <strong>7. ただし「GPL vs AFPL」の問題は無視できない</strong><br>
 
 ここは少し微妙です。
 
-Ghostscript 8.x の初期は AFPL でした。たとえば 8.14 は公式に AFPL Ghostscript とされています。
+Ghostscript 8.x の初期は AFPL でした。たとえば 8.14 は公式に <strong>AFPL Ghostscript</strong> とされています。
 
 そして Debian の資料を見ると、8.x 時代には実際に
 
-- gs-afpl
-- gs-gpl
-- gs-esp
+- <strong>gs-afpl</strong>
+- <strong>gs-gpl</strong>
+- <strong>gs-esp</strong>
 
 という複数の Ghostscript 系列が存在していました。
 
@@ -744,14 +744,15 @@ Ghostscript 8.x の初期は AFPL でした。たとえば 8.14 は公式に AFP
 
 ことの証拠ではありません。
 
-むしろ Ghostscript 自体が AFPL の先端開発版と GPL の安定版に分かれていたため、機能の同期が遅れたという説明のほうがよく合います。
+むしろ <strong>Ghostscript 自体が AFPL の先端開発版と GPL の安定版に分かれていたため、機能の同期が遅れた</strong>という説明のほうがよく合います。
 
-8. そして 2006 年に、この構造自体が終わる
+<strong>8. そして 2006 年に、この構造自体が終わる</strong><br>
+
 非常に重要な転換点が 2006 年です。
 
 Ghostscript 開発者は 8.54 から、
 
-AFPL の先端開発系列と GPL 系列を統合する
+<strong>AFPL の先端開発系列と GPL 系列を統合する</strong>
 
 ことを発表しました。
 
@@ -759,7 +760,7 @@ OpenPrinting の歴史資料によれば、その理由の一つは、開発ツ�
 
 つまり、
 
-7.x → 8.x の時代に存在していた「AFPL の最新開発版 vs GPL の安定/free版」という構造そのものが、2006 年に解消された
+<strong>7.x → 8.x の時代に存在していた「AFPL の最新開発版 vs GPL の安定/free版」という構造そのものが、2006 年に解消された</strong>
 
 のです。
 
@@ -775,11 +776,11 @@ OpenPrinting の歴史資料によれば、その理由の一つは、開発ツ�
 
 7.07 の gs-cjk は非常に深いフォント処理部分を変更しており、8.x のコードベースに単純移植できる規模ではありませんでした。
 
-8.x でも CJK/縦書きの問題が個別に修正されていることから、実際に別系統の CJK 実装・修正が進められたことが確認できます。
+8.x でも CJK/縦書きの問題が個別に修正されていることから、<strong>実際に別系統の CJK 実装・修正が進められた</strong>ことが確認できます。
 
 <strong>Artifex / gs-cjk の開発方針</strong><br>
 
-かなり重要だった可能性が高いが、直接的な「対立」を示す資料はまだ見つかっていない。
+<strong>かなり重要だった可能性が高いが、直接的な「対立」を示す資料はまだ見つかっていない</strong>。
 
 gs-cjk はそもそも「本家 Ghostscript への統合」を目標にしており、AFPL 6.x にもパッチを提供していました。
 
@@ -789,7 +790,7 @@ gs-cjk はそもそも「本家 Ghostscript への統合」を目標にしてお
 
 <strong>直接原因だったとは考えにくい。</strong>
 
-AFPL/GPL の二系列化によって機能同期が難しくなった、という意味では間接的には非常に重要です。
+AFPL/GPL の二系列化によって機能同期が難しくなった、という意味では<strong>間接的には非常に重要</strong>です。
 
 しかし gs-cjk の著作権表示は後の Ghostscript にも残っているので、「ライセンス上 gs-cjk を取り込めなかった」という説明には証拠がありません。
 
@@ -797,33 +798,42 @@ AFPL/GPL の二系列化によって機能同期が難しくなった、とい�
 
 かなり簡略化すると、
 
-gs-cjk が CJK の難しい部分を実装する<br>
+<strong>gs-cjk が CJK の難しい部分を実装する</strong><br>
+
 ↓<br>
-GNU Ghostscript 6.53 / 7.05 に大量に統合される<br>
+<strong>GNU Ghostscript 6.53 / 7.05 に大量に統合される</strong><br>
+
 ↓<br>
-7.07 が一つの完成度の高いスナップショットになる<br>
+<strong>7.07 が一つの完成度の高いスナップショットになる</strong><br>
+
 ↓<br>
-Ghostscript の開発は AFPL 8.x と GNU 7.x に分岐<br>
+<strong>Ghostscript の開発は AFPL 8.x と GNU 7.x に分岐</strong><br>
+
 ↓<br>
-8.x は別の内部改変を進める<br>
+<strong>8.x は別の内部改変を進める</strong><br>
+
 ↓<br>
-gs-cjk 7.x のコードをそのまま forward-port する開発が続かなかった<br>
+<strong>gs-cjk 7.x のコードをそのまま forward-port する開発が続かなかった</strong><br>
+
 ↓<br>
-8.x の CJK 対応は別々のパッチ・修正として進む<br>
+<strong>8.x の CJK 対応は別々のパッチ・修正として進む</strong><br>
+
 ↓<br>
-8.15 前後でも縦書き日本語/CJKV の修正が残る<br>
+<strong>8.15 前後でも縦書き日本語/CJKV の修正が残る</strong><br>
+
 ↓<br>
-2006 年、AFPL/GPL の開発系列を統合<br>
+<strong>2006 年、AFPL/GPL の開発系列を統合</strong><br>
+
 ↓<br>
-その後は CJK 対応も Ghostscript 本体の開発に吸収されていく<br>
+<strong>その後は CJK 対応も Ghostscript 本体の開発に吸収されていく</strong><br>
 
 というものです。
 
-そして、これは\*\*「7.07 の CJK 実装が技術的に優れていたから後継版が意図的に捨てられた」\*\*という話とも少し違います。むしろ 7.07 の gs-cjk は、当時の Ghostscript の開発ラインに非常に深く食い込んだ一種の大規模な CJK 拡張で、その後 Ghostscript 自体の内部構造と開発モデルが変わったため、同じ形では継承されなかった、というのが現時点では最も資料に忠実です。
+そして、これは\*\*「7.07 の CJK 実装が技術的に優れていたから後継版が意図的に捨てられた」\*\*という話とも少し違います。むしろ <strong>7.07 の gs-cjk は、当時の Ghostscript の開発ラインに非常に深く食い込んだ一種の大規模な CJK 拡張で、その後 Ghostscript 自体の内部構造と開発モデルが変わったため、同じ形では継承されなかった</strong>、というのが現時点では最も資料に忠実です。
 
 <strong>さらに掘るなら、かなり面白いところがあります</strong><br>
 
-次に調べる価値があるのは、2003～2006 年の gs-devel / gs-cjk のメールアーカイブで、「8.x への port」「CJK」「Suzuki Toshiya」「Taiji Yamada」「Raph Levien」などを追うことです。
+次に調べる価値があるのは、<strong>2003～2006 年の gs-devel / gs-cjk のメールアーカイブで、「8.x への port」「CJK」「Suzuki Toshiya」「Taiji Yamada」「Raph Levien」などを追うこと</strong>です。
 
 そこまで掘れば、「単に誰も port しなかった」のか、それとも \*\*「8.x の新しいフォントモデルに対して gs-cjk 側が port を試みたが、Ghostscript 本体側との設計上の折り合いがつかなかった」\*\*のかを、かなり直接的に確認できる可能性があります。
 
