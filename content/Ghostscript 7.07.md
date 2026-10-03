@@ -7,6 +7,8 @@ pukiwiki: "Ghostscript 7.07"
 
 # Ghostscript 7.07
 
+[Ghostscript](/Ghostscript/) &gt; Ghostscript 7.07
+
 ## GNU Ghostscript 7.07 (2003-05-17)（非推奨） {#u1488af6}
 
 <strong> <em>この項目は編集途中です</em> </strong>：削除されていた項目をとりあえず復活させることを急ぎました。
