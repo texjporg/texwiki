@@ -14,7 +14,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
 - [ratex 0.5.0](https://github.com/leoliu0/ratex) -- ratex 2026-10-03 (土) 22:55:53
-- [TikZ Editor 0.6.0](https://github.com/DominikPeters/tikz-editor/releases) -- [TikZ Editor](</TikZ Editor/>) 2026-10-02 (金) 11:32:36
+- [TikZ Editor 0.6.0](https://tikz.dev/editor/) -- [TikZ Editor](</TikZ Editor/>) 2026-10-02 (金) 11:32:36
 - [ratex 0.4.6](https://github.com/leoliu0/ratex) -- ratex 2026-10-01 (木) 19:26:32
 - [cjk-gs-integrate 20260926.0](https://github.com/texjporg/cjk-gs-support) -- cjk-gs-integrate 2026-09-26 (土) 23:51:25
 - [Texpile 1.2.0](https://texpile.com/) -- [Texpile](/Texpile/) 2026-09-26 (土) 14:28:55
