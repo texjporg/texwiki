@@ -19,14 +19,14 @@ ratex は超高速で自己完結型の pure Rust で書かれた TeX エンジ�
 - [Leo Liu — Assistant Professor of Finance](https://leoliu0.github.io/)
     - [Blog — Leo Liu](https://leoliu0.github.io/blog.html)
         - [Why I Built ratex: Modernizing TeX While Waiting for Typst](https://leoliu0.github.io/blog-ratex.html)
-- [Rust製TeX「ratex」で日本語PDFを作る：v0.4.0でxeCJKが通るように。Typst・LuaLaTeXとの速度比較](https://zenn.dev/dannchu/articles/ratex-japanese-pdf-typst-benchmark)
+- [Rust製TeX「ratex」で日本語PDFを作る：v0.5まで検証。xeCJKで教材、LuaLaTeX、Typstと速度比較](https://zenn.dev/dannchu/articles/ratex-japanese-pdf-typst-benchmark)
 - [今更だがRatexの0.3.0版で日本語する件について](https://zrbabbler.hatenablog.com/entry/2026/09/22/062924)
 - [ratexがつけられた記事一覧 - Qiita](https://qiita.com/tags/ratex)
     - [とりあえずRatexの仕様をまとめてみた](https://qiita.com/zr_tex8r/items/de9b8d5b108dd3967710)
 
 ### インストール {#ye61bf13}
 
-Windows, macOS, Linux のバイナリがあります。ratex 0.4.6 をインストールしたところディスク容量の消費サイズは 748 MB でした。
+Windows, macOS, Linux のバイナリがあります。ratex 0.5.0 をインストールしたところディスク容量の消費サイズは 804 MB でした。
 
 - [Releases · leoliu0/ratex · GitHub](https://github.com/leoliu0/ratex/releases)
 
@@ -36,7 +36,7 @@ Windows, macOS, Linux のバイナリがあります。ratex 0.4.6 をインス�
 
 ```
 PS C:\> ratex --version
-ratex 0.4.6 (Rust TeX engine)
+ratex 0.5.0 (Rust TeX engine)
 PS C:\> ratex --help
 usage: texmk [options] file.tex
   -pdf / -xelatex / -lualatex   engine (default: auto from preamble)
