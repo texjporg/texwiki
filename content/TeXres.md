@@ -334,7 +334,7 @@ Linux、macOS、Windows向けのネイティブパッケージが提供されて
 <strong>Arch Linux（AUR）</strong><br>
 
 ```
-yay -S ratex-bin
+yay -S texres
 ```
 
 <strong>macOS</strong><br>
