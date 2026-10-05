@@ -13,12 +13,14 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
-- [ratex 0.5.0](https://github.com/leoliu0/ratex) -- ratex 2026-10-03 (土) 22:55:53
+- [TeXres 0.7.0](https://github.com/leoliu0/texres) -- [TeXres](/TeXres/) 2026-10-05 (月) 19:13:53
+- [Galley v0.6](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-10-05 (月) 18:40:00
+- [ratex 0.5.0](https://github.com/leoliu0/ratex) -- [ratex](/TeXres/) 2026-10-03 (土) 22:55:53
 - [TikZ Editor 0.6.0](https://tikz.dev/editor/) -- [TikZ Editor](</TikZ Editor/>) 2026-10-02 (金) 11:32:36
-- [ratex 0.4.6](https://github.com/leoliu0/ratex) -- ratex 2026-10-01 (木) 19:26:32
+- [ratex 0.4.6](https://github.com/leoliu0/ratex) -- [ratex](/TeXres/) 2026-10-01 (木) 19:26:32
 - [cjk-gs-integrate 20260926.0](https://github.com/texjporg/cjk-gs-support) -- cjk-gs-integrate 2026-09-26 (土) 23:51:25
 - [Texpile 1.2.0](https://texpile.com/) -- [Texpile](/Texpile/) 2026-09-26 (土) 14:28:55
-- [ratex 0.4.4](https://github.com/leoliu0/ratex) -- ratex 2026-09-23 (水) 19:24:33
+- [ratex 0.4.4](https://github.com/leoliu0/ratex) -- [ratex](/TeXres/) 2026-09-23 (水) 19:24:33
 - [Ghostscript 10.08.0](https://ghostscript.com/) -- [Ghostscript](/Ghostscript/) 2026-09-23 (水) 14:01:35
 - [cjk-gs-integrate is not compatible with ghostscript 10.08.0](https://github.com/texjporg/cjk-gs-support/issues/52) -- cjk-gs-integrate 2026-09-23 (水) 13:06:27
 - [TeXiFy-IDEA 1.1.1](https://github.com/Hannah-Sten/TeXiFy-IDEA) -- [TeXiFy-IDEA](/TeXiFy-IDEA/) 2026-09-21 (月) 11:58:12
