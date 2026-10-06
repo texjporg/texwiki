@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [Texpile 1.3.1](https://texpile.com/) -- [Texpile](/Texpile/) 2026-10-06 (火) 22:01:55
 - [TeXres 0.7.1](https://github.com/leoliu0/texres) -- [TeXres](/TeXres/) 2026-10-06 (火) 18:40:40
 - [TeXres 0.7.0](https://github.com/leoliu0/texres) -- [TeXres](/TeXres/) 2026-10-05 (月) 19:13:53
 - [Galley v0.6](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-10-05 (月) 18:40:00
