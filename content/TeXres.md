@@ -19,7 +19,8 @@ TeXres は、Rust で記述された、単一の実行ファイルで構成さ�
 - [Leo Liu — Assistant Professor of Finance](https://leoliu0.github.io/)
     - [Blog — Leo Liu](https://leoliu0.github.io/blog.html)
         - [Why I Built ratex: Modernizing TeX While Waiting for Typst](https://leoliu0.github.io/blog-ratex.html)
-- [Rust製TeX「ratex」で日本語PDFを作る：v0.5まで検証。xeCJKで教材、LuaLaTeX、Typstと速度比較](https://zenn.dev/dannchu/articles/ratex-japanese-pdf-typst-benchmark)
+- [texresの記事一覧 | Zenn](https://zenn.dev/topics/texres)
+    - [ratexはtexresに改名。Rust製TeX「texres」v0.7.0で日本語の文書を作る方法まとめ](https://zenn.dev/dannchu/articles/texres-japanese-guide)
 - [今更だがRatexの0.3.0版で日本語する件について](https://zrbabbler.hatenablog.com/entry/2026/09/22/062924)
 - [ratexがつけられた記事一覧 - Qiita](https://qiita.com/tags/ratex)
     - [とりあえずRatexの仕様をまとめてみた](https://qiita.com/zr_tex8r/items/de9b8d5b108dd3967710)
@@ -334,12 +335,18 @@ Linux、macOS、Windows向けのネイティブパッケージが提供されて
 <strong>Arch Linux（AUR）</strong><br>
 
 ```
-yay -S texres
+yay -S texres-bin
 ```
 
 <strong>macOS</strong><br>
 
-> Homebrewまたはネイティブ .pkg を使用します。<br>
+> Homebrew
+>
+> ```
+> brew install leoliu0/texres/texres
+> ```
+>
+> またはネイティブ .pkg を使用します。<br>
 >
 > <br>
 >
@@ -347,12 +354,12 @@ yay -S texres
 
 <strong>Windows</strong><br>
 
-> GitHub ReleasesからInno Setup形式の .exe インストーラーをダウンロードします。<br>
+> GitHub Releasesからtexres-setup-…-windows-x64.exeをダウンロードします。<br>
 
 <strong>Ubuntu / Debian</strong><br>
 
 ```
-sudo apt install ./texres_0.7.0_amd64.deb
+sudo apt install ./texres_0.7.1_amd64.deb
 ```
 
 BibTeXの収束も自動的に処理して論文をコンパイルするには、
