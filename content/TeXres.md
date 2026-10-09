@@ -18,18 +18,19 @@ TeXres は、Rust で記述された、単一の実行ファイルで構成さ�
 - [GitHub - leoliu0/texres · GitHub](https://github.com/leoliu0/texres)
 - [Leo Liu — Assistant Professor of Finance](https://leoliu0.github.io/)
     - [Blog — Leo Liu](https://leoliu0.github.io/blog.html)
-        - [Why I Built ratex: Modernizing TeX While Waiting for Typst](https://leoliu0.github.io/blog-ratex.html)
+        - [Why I Built TeXres: Modernizing TeX While Waiting for Typst](https://leoliu0.github.io/blog-texres.html)
 - [texresの記事一覧 | Zenn](https://zenn.dev/topics/texres)
     - [ratexはtexresに改名。Rust製TeX「texres」v0.7.0で日本語の文書を作る方法まとめ](https://zenn.dev/dannchu/articles/texres-japanese-guide)
+- [「TeXres」の検索結果 - Qiita](https://qiita.com/search?q=TeXres)
+    - [とりあえずRatexの仕様をまとめてみた（0.4版）](https://qiita.com/zr_tex8r/items/de9b8d5b108dd3967710)
 - [今更だがRatexの0.3.0版で日本語する件について](https://zrbabbler.hatenablog.com/entry/2026/09/22/062924)
-- [ratexがつけられた記事一覧 - Qiita](https://qiita.com/tags/ratex)
-    - [とりあえずRatexの仕様をまとめてみた](https://qiita.com/zr_tex8r/items/de9b8d5b108dd3967710)
 
 ### インストール {#ye61bf13}
 
-Windows, macOS, Linux のバイナリがあります。TeXres 0.7.0 をインストールしたところディスク容量の消費サイズは 823 MB でした。
+Windows, macOS, Linux のバイナリがあります。TeXres 0.7.7 をインストールしたところディスク容量の消費サイズは 850 MB でした。
 
 - [Releases · leoliu0/texres · GitHub](https://github.com/leoliu0/texres/releases)
+    - [Release Latest · leoliu0/texres · GitHub](https://github.com/leoliu0/texres/releases/latest)
 
 ### 使い方 {#h990923c}
 
@@ -37,7 +38,7 @@ Windows, macOS, Linux のバイナリがあります。TeXres 0.7.0 をインス
 
 ```
 PS C:\> texres --version
-texres 0.7.0 (Rust TeX engine)
+texres 0.7.7 (Rust TeX engine)
 PS C:\> texres --help
 usage: texmk [options] file.tex
   -pdf / -xelatex / -lualatex   engine (default: auto from preamble)
@@ -46,16 +47,30 @@ usage: texmk [options] file.tex
   --cache-directory DIR         use DIR as the private cache root
   -jobname NAME                 job name (default: file stem)
   --keep-intermediates, -k       export auxiliary files beside the PDF
-  --keep-logs                    export the transcript beside the PDF
+  --keep-logs                    export the transcript beside the PDF (also
+                                 implied by -interaction, -file-line-error
+                                 and -synctex, which editors pass)
   --optimize-pdf-size            spend more CPU minimizing converted PNG streams
   -c                             remove cached state; preserve the PDF
   -C                             remove cached state and an owned PDF
+  -g                             discard cached state, then build
+  -pvc, --watch, -w              build, then rebuild whenever an input changes
+                                 (Ctrl-C stops; cannot be combined with -c/-C)
+  -e '$success_cmd = "CMD"'      with -pvc, run CMD after each good build
+                                 (also $compiling_cmd, $failure_cmd; %D is the PDF)
+  -cd                            build in the directory of file.tex
+  -f                             publish the PDF even when TeX reports errors
   -interaction=MODE             passed to the engine (default nonstopmode)
   -halt-on-error                passed to the engine
+  -file-line-error              passed to the engine
+  -latexoption=OPTION           pass OPTION to the engine
   --silent, -q                  suppress engine output (default)
   --verbose, -V                 print detailed engine and tool output
   -h, --help                    this text
   -v, --version                 version
+Viewer options (-view=..., -pv, -new-viewer) are accepted and ignored.
+Other commands: texres fmt [--check] FILE...   format LaTeX sources and .bib files (see texres fmt --help)
+                texres latexdiff OLD.tex NEW.tex DIFF.tex
 ```
 
 #### xeCJK {#ub2222d3}
@@ -78,27 +93,31 @@ PS C:\> texres -xelatex xeCJK_test.tex
 texmk: build OK: \\?\C:\xeCJK_test.pdf (1 page, 1 TeXres pass(es))
 ```
 
-### ChatGPT に「[https://leoliu0.github.io/blog-ratex.html](https://leoliu0.github.io/blog-ratex.html) の内容を日本語にしてください。」と質問した結果 {#v5ca9eb3}
+### ChatGPT に「[https://leoliu0.github.io/blog-texres.html](https://leoliu0.github.io/blog-texres.html) の内容を日本語にしてください。」と質問した結果 {#v5ca9eb3}
 
 質問：
 
-[https://leoliu0.github.io/blog-ratex.html](https://leoliu0.github.io/blog-ratex.html) の内容を日本語にしてください。
+[https://leoliu0.github.io/blog-texres.html](https://leoliu0.github.io/blog-texres.html) の内容を日本語にしてください。
 
-回答：※ratexをTeXresに修正しています。
+回答：
 
-はい。以下が、リンク先の記事 <strong>「Why I Built TeXres: Modernizing TeX While Waiting for Typst」</strong> の日本語訳です。記事の構成・技術用語・コード例はできるだけ原文に沿っています。
+ご指定の記事「Why I Built TeXres: Modernizing TeX While Waiting for Typst（TeXres を開発した理由：Typst を待つ間に TeX を現代化する）」を確認しました。
 
-<strong>TeXresを作った理由：Typstを待つ間にTeXを現代化する</strong>
+この記事は、LaTeX のコンパイルを高速化し、エラーメッセージを改善する新しいツール <strong>TeXres</strong> の開発者による技術解説です。
+
+著作権上の都合により、リンク先の記事全体をそのまま日本語に翻訳することはできませんが、<strong>各セクションの内容を日本語で詳しく解説し、主要な技術情報やベンチマーク数値を整理する</strong>ことはできます。
+
+<strong>TeXres を開発した理由：Typst を待つ間に TeX を現代化する</strong>
 
 2026年9月 • 読了約8分 • TeXres / Rust / Systems
 
-私はTypstが大好きです。構文はきれいで、コンパイラは現代的なRustで書かれており、インクリメンタルレンダリングも非常に新鮮です。Typstが科学・技術文書作成の未来であることは間違いありません。
+私は [Typst](https://typst.app/) が大好きです。Typst は構文が簡潔で、Rust という現代的なプログラミング言語でコンパイラが実装されており、文書の一部を変更したときの再描画も高速です。Typst が科学・技術文書作成の未来であることは間違いありません。
 
-しかし、<strong>現在のところ、ほとんどの学術誌にTypstを提出することはできません</strong>。
+しかし、<strong>現在のところ、ほとんどの学術誌に Typst を提出することはできません</strong>。
 
-数学、物理学、経済学、コンピュータサイエンスなどの主要な学術誌のほぼすべて、さらにarXivのようなプレプリントサーバーも、Typstのソースファイルを受け付けていません。LaTeXが必須です。そして、20～30年前に書かれた、不可解なマクロ展開や古いパッケージに依存する40ページもの .cls や .sty テンプレートを提供しています。
+数学、物理学、経済学、コンピュータサイエンスなどの主要な学術誌のほぼすべて、さらに arXiv のようなプレプリントサーバーも、Typst のソースファイルを受け付けていません。LaTeX が必須です。そして、20～30 年前に書かれた、不可解なマクロ展開や古いパッケージに依存する 40 ページもの .cls や .sty テンプレートを提供しています。
 
-学術出版の投稿・組版インフラ全体が刷新されるまで――それには10年以上かかる可能性があります――研究者やエンジニアにとってTeXを扱うことは避けられません。
+学術出版の投稿・組版インフラ全体が刷新されるまで――それには 10 年以上かかる可能性があります――研究者やエンジニアにとってTeXを扱うことは避けられません。
 
 そこで、現実的な問題はこうなりました。
 
@@ -108,11 +127,11 @@ texmk: build OK: \\?\C:\xeCJK_test.pdf (1 page, 1 TeXres pass(es))
 
 これは新しい言語を作るものではありません。<strong>従来のLaTeX原稿を変更せずに、2020年代のソフトウェア速度でコンパイルできる、TeXエンジンとツールチェーン全体の現代的な純Rustによる再実装</strong>です。
 
-<strong>1. TeXにおける「毎日の4つの苦痛」</strong>
+<strong>1. LaTeX で日常的に困る 4 つの問題</strong>
 
 LaTeXで研究論文を書く人なら、次の問題点をよく知っているでしょう。
 
-- <strong>ツールが細かく分かれすぎている</strong><br>
+- <strong>ツールが分散している</strong>。<br>
 
     <br>
 
@@ -123,16 +142,16 @@ LaTeXで研究論文を書く人なら、次の問題点をよく知っている
 
     <br>
 
-- <strong>ほとんど役に立たない補助ファイルが大量に生成される</strong><br>
+- <strong>補助ファイルが大量に生成される</strong>。<br>
 
     <br>
 
-    たった5ページの原稿でも、フォルダには <strong>.aux、.log、.out、.toc、.bbl、.blg、.fls、.fdb_latexmk、.synctex.gz</strong> などが散乱します。<br>
+    たった 5 ページの原稿でも、フォルダには <strong>.aux、.log、.out、.toc、.bbl、.blg、.fls、.fdb_latexmk、.synctex.gz</strong> などが散乱します。<br>
     補助ファイルの1バイトでも壊れると、手動でディレクトリを消去するまでコンパイラ全体が停止してしまいます。<br>
 
     <br>
 
-- <strong>直感に反する、暗号のようなエラーメッセージ</strong><br>
+- <strong>エラーメッセージが分かりにくい</strong>。<br>
 
     <br>
 
@@ -141,7 +160,7 @@ LaTeXで研究論文を書く人なら、次の問題点をよく知っている
 
     <br>
 
-- <strong>コンパイルが非常に遅い</strong><br>
+- <strong>コンパイルが遅い</strong>。<br>
 
     <br>
 
@@ -328,39 +347,25 @@ error[E0042]: undefined command `\textbld`
 
 <strong>6. インストールと使い始め方</strong>
 
-TeXresは<strong>MITおよびApache 2.0ライセンスの完全なオープンソース</strong>です。
+TeXres は MIT ライセンスおよび Apache License 2.0 の完全なオープンソースです。
 
 Linux、macOS、Windows向けのネイティブパッケージが提供されています。
 
-<strong>Arch Linux（AUR）</strong><br>
+<strong># macOS (Homebrew)</strong><br>
+
+```
+brew install leoliu0/texres/texres
+```
+
+<strong># Arch Linux (AUR)</strong><br>
 
 ```
 yay -S texres-bin
 ```
 
-<strong>macOS</strong><br>
+<strong># Windows, Debian/Ubuntu, Fedora and other Linux:</strong><br>
 
-> Homebrew
->
-> ```
-> brew install leoliu0/texres/texres
-> ```
->
-> またはネイティブ .pkg を使用します。<br>
->
-> <br>
->
-> GitHub Releasesから .pkg インストーラーをダウンロードできます。<br>
-
-<strong>Windows</strong><br>
-
-> GitHub Releasesからtexres-setup-…-windows-x64.exeをダウンロードします。<br>
-
-<strong>Ubuntu / Debian</strong><br>
-
-```
-sudo apt install ./texres_0.7.1_amd64.deb
-```
+> [https://github.com/leoliu0/texres/releases/latest](https://github.com/leoliu0/texres/releases/latest) からダウンロードしてください。<br>
 
 BibTeXの収束も自動的に処理して論文をコンパイルするには、
 
@@ -396,5 +401,5 @@ TeXresは新しい文書言語ではなく、<strong>既存のLaTeX資産をそ�
 
 なお、記事に掲載されている性能値や「3,000本のarXiv論文で検証した」という結果は<strong>記事の著者による記述</strong>です。上記では原文の主張として翻訳しており、それらのベンチマーク結果自体を独立に検証したものではありません。
 
-[原文（Leo Liuのブログ）](https://leoliu0.github.io/blog-ratex.html)<br>
+[原文（Leo Liuのブログ）](https://leoliu0.github.io/blog-texres.html)<br>
 [TeXres GitHubリポジトリ](https://github.com/leoliu0/texres)<br>
