@@ -13,6 +13,7 @@ pukiwiki: "コメント/FrontPage"
 <!-- 場合は,以前のものを削除する」という運用をやめたほうがいいのでは？ -->
 <!-- いつ何がどう更新されたのか,あとから参照するのが難しくなります…. -->
 
+- [Galley v0.7](https://munepi.github.io/Galley/) -- [Galley](/Galley/) 2026-10-18 (日) 16:16:00
 - [LaTeX Workshop 10.20.0](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) -- [Visual Studio Code/LaTeX](</Visual Studio Code/LaTeX/>) 2026-10-18 (日) 01:26:48
 - [Texpile 1.5.0](https://texpile.com/) -- [Texpile](/Texpile/) 2026-10-15 (木) 07:05:39
 - [Texpile 1.4.1](https://texpile.com/) -- [Texpile](/Texpile/) 2026-10-10 (土) 05:34:47
