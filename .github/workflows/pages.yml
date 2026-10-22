@@ -55,8 +55,10 @@ jobs:
         with:
           path: ./public
 
+  # Deploys only once the repository variable PAGES_ENABLED is "true"
+  # (set at the switch-over, when GitHub Pages is turned on).
   deploy:
-    if: github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && vars.PAGES_ENABLED == 'true'
     needs: build
     runs-on: ubuntu-latest
     environment:
