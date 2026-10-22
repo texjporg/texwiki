@@ -103,5 +103,6 @@ $ sudo tlmgr update --self --all
 
 ### TeX Live/NetBSD {#ke8ac2b3}
 
+- [https://github.com/NetBSD/pkgsrc/tree/trunk/print/texlive](https://github.com/NetBSD/pkgsrc/tree/trunk/print/texlive)
 - [https://pkgsrc.se/meta-pkgs/texlive-collection-langjapanese](https://pkgsrc.se/meta-pkgs/texlive-collection-langjapanese)
 - [TeX 関連のパッケージを pkgsrc に追加する方法](https://s3b.astro.ncu.edu.tw/~daisuke/notebook/Computer___NetBSD/20230822_00.html)

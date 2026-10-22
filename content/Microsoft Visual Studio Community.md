@@ -7,15 +7,14 @@ pukiwiki: "Microsoft Visual Studio Community"
 
 # Microsoft Visual Studio Community
 
-## [Microsoft Visual Studio Community](http://www.microsoft.com/ja-jp/dev/products/community.aspx) {#n0a0eb8b}
+## [Microsoft Visual Studio Community](https://visualstudio.microsoft.com/ja/vs/community/) {#n0a0eb8b}
 
 TeX 関連プログラムには C, C++, C++/CLI, C#, F#, VB で書かれたプログラムがあります．<br>
 Microsoft Visual Studio Community を使用すれば自分でビルドして使用することができます．<br>
 
-- [https://www.visualstudio.com/products/visual-studio-community-vs](https://www.visualstudio.com/products/visual-studio-community-vs)
-- [http://www.microsoft.com/ja-jp/dev/products/community.aspx](http://www.microsoft.com/ja-jp/dev/products/community.aspx)
-- [https://www.visualstudio.com/news/vs2015-preview-vs](https://www.visualstudio.com/news/vs2015-preview-vs)
-- [【Unity】Visual Studio Community 2013 で Visual Studio Tools for Unity を使用する](http://baba-s.hatenablog.com/entry/2014/11/13/150428)
+- [https://visualstudio.microsoft.com/ja/vs/community/](https://visualstudio.microsoft.com/ja/vs/community/)
+- [https://visualstudio.microsoft.com/ja/](https://visualstudio.microsoft.com/ja/)
+- [https://visualstudio.microsoft.com/ja/vs/preview/](https://visualstudio.microsoft.com/ja/vs/preview/)
 - [Visual Studio Advent Calendar 2014 - Qiita](http://qiita.com/advent-calendar/2014/vs)
 
 ### 動作環境 {#md46ea8e}

@@ -14,6 +14,11 @@ Atril は複数ページの文書を表示可能な MATE デスクトップ環�
 - [Atril - PDF ビューア | MATEwiki](https://wiki.mate-desktop.org/ja/mate-desktop/applications/atril/)
 - [GitHub - mate-desktop/atril: A document viewer for MATE](https://github.com/mate-desktop/atril)
 
+### お知らせ {#c4fe5ed2}
+
+- [Linux向けPDFビューア「Evince」「Atril」「xreader」に、細工されたPDFファイルを開くだけで任意コード実行につながる深刻な脆弱性「CVE-2026-46529」が報告された。<br><br>公開された検証コードによると、PDF内部の/GoToRアクションと引数処理の不備を悪用し、外部ライブラリを読み込ませることで、利用者権限で任意コードを実行できるという。<br><br>影響を受けるのは、Atril 1.28.4未満、xreader 4.6.3未満、GTK3版Evince 48.1未満など。研究者の João Medeiros 氏はGitHub上でPoCを公開しており、PDFとELF共有ライブラリを一体化した「ポリグロットファイル」を用いることで、閲覧時のクリック操作だけでリバースシェルを起動できるとしている。<br><br>脆弱性は長年存在していた可能性があり、原因はユーザー制御可能な文字列を適切にエスケープせずコマンドラインへ渡していた点にある。GTK4版Evinceでは特定の悪用経路が無効化されているものの、根本的な引数注入自体は残ると指摘されている。利用者には速やかなアップデート適用が推奨される。](https://x.com/yousukezan/status/2057723843159236609)
+- [GitHub - N1et/CVE-2026-46529: Evince/xreader/Atril RCE exploit to CVE-2026-46529 · GitHub](https://github.com/N1et/CVE-2026-46529)
+
 ### リリース情報 {#re025d19}
 
 - [https://github.com/mate-desktop/atril/releases](https://github.com/mate-desktop/atril/releases)

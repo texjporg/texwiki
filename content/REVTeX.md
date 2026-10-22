@@ -30,7 +30,7 @@ TeX Live には既にインストールされています．
 
 ### AMS-LaTeX と natbib のインストール {#f1d3fb76}
 
-TeX Live, W32TeX には既にインストールされています．
+TeX Live には既にインストールされています．
 
 REVTeX の使用には次のパッケージも必要です。
 

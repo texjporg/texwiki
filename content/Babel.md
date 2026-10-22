@@ -9,13 +9,13 @@ pukiwiki: "Babel"
 
 ## Babel {#r809659f}
 
-Babel は LaTeX で多言語文書を作成するためのパッケージです．
+Babel は LaTeX, pdfLaTeX, LuaLaTeX, XeLaTeX で多言語文書を作成するためのパッケージです．
 
 - [CTAN: Package babel](https://ctan.org/pkg/babel)
-- [CTAN: /tex-archive/macros/latex/required/babel](https://ctan.org/tex-archive/macros/latex/required/babel)
-- [「Babel」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=Babel)
-- [多言語環境 Babel](http://www.clas.kitasato-u.ac.jp/~fujiwara/infoScienceB/TeX/babel.html)
-- [日本語 LaTeX による多言語処理](http://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)
+- [CTAN:macros/latex/required/babel](https://mirror.ctan.org/macros/latex/required/babel)
+- [Babel の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=Babel)
+- [多言語環境 Babel](https://www.clas.kitasato-u.ac.jp/~fujiwara/infoScienceB/TeX/babel.html)
+- [日本語 LaTeX による多言語処理](https://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)
 - [upTeX, pTeX と多言語処理](</pTeXと多言語処理/>)
 - [upTeX, 新 pTeX と Babel](</新 pTeX とBabel/>)
 
@@ -23,7 +23,7 @@ Babel は LaTeX で多言語文書を作成するためのパッケージです�
 
 #### Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない {#r73ec466}
 
-Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない問題は [pLaTeX 2018-05-11](https://github.com/texjporg/platex/releases/tag/2018-05-11) ([TeX Live revision 47683](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/base/plcore.ltx?r1=47402&r2=47683&pathrev=47683)) で修正されました．
+Babel 3.21 2018-05-10 で pLaTeX / upLaTeX が動作しない問題は [pLaTeX 2018-05-11](https://github.com/texjporg/platex/releases/tag/2018-05-11) ([TeX Live revision 47683](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/platex/base/plcore.ltx?r1=47402&r2=47683&pathrev=47683)) で修正されました．
 
 - [Babel v3.21 で pLaTeX 2018-04-01 patch level 1 は動きません](https://okumuralab.org/tex/mod/forum/discuss.php?d=2428)
 - [\everyjob でのバナー表示の簡略化 &#183; Issue #71 &#183; texjporg/platex &#183; GitHub](https://github.com/texjporg/platex/issues/71)
@@ -48,7 +48,7 @@ l.1
 
 - [https://ctan.org/pkg/babel-japanese](https://ctan.org/pkg/babel-japanese)
 - [https://github.com/texjporg/babel-japanese](https://github.com/texjporg/babel-japanese)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup)
+- [https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/babel-japanese/japanese.ldf?view=markup)
 
 2016/12/17 以降，従来の japanese パッケージは babel-japanese パッケージとリネームされています（ただし使い方は従来と全く同じ）．
 
@@ -56,7 +56,7 @@ l.1
 
 もう一つの方法が pxbabel パッケージです．
 
-- [美文書付録Iについて思うことをグダグダ書き連ねるシリーズ (7)](http://d.hatena.ne.jp/zrbabbler/20120905/1346805180)
+- [美文書付録Iについて思うことをグダグダ書き連ねるシリーズ (7)](https://zrbabbler.hatenablog.com/entry/20120905/1346805180)
 
 #### インストール {#u48e60e8}
 

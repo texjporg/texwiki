@@ -56,6 +56,8 @@ LuaLaTeX
 
 : qpdfview --unique "?am.pdf#src:?c:am.tex:@:0"
 
+: sioyek --reuse-window --execute-command "turn_on_synctex" --inverse-search 'texstudio "&#x25;&#x25;1" -line &#x25;&#x25;2' "?am.pdf" --forward-search-file "?c:am.tex" --forward-search-line @
+
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
 DviPs

@@ -13,7 +13,7 @@ pukiwiki: "TeX のディレクトリ構成"
 <!-- 有用そうです． -->
 
 TDS (TeX Directory Structure) とは，TeX の標準的なディレクトリ構成です。
-[TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) はこの TDS に従っています。
+[TeX Live](</TeX Live/>) はこの TDS に従っています。
 
 - [http://www.tug.org/texinfohtml/tds.html](http://www.tug.org/texinfohtml/tds.html)
 - [https://ctan.org/tex-archive/tds](https://ctan.org/tex-archive/tds)
@@ -32,17 +32,13 @@ TDS (TeX Directory Structure) とは，TeX の標準的なディレクトリ構�
 現在の TeX ディストリビューションのほとんどは TEXMF ツリー[^1]を採用しています。
 TEXMF ツリーには，パッケージやクラスファイル・フォント・スクリプト・説明文書などが規則に従って分類され，収録されています。
 
-TeX Live や W32TeX では複数の TEXMF ツリーを使い分ける「多重 TEXMF ツリー」が採用されています。
+TeX Live では複数の TEXMF ツリーを使い分ける「多重 TEXMF ツリー」が採用されています。
 これにより，ディストリビューションが用意したファイルとユーザが追加したローカルなファイルなどを明確に区別できます。
 
 TeX Live では例えば（以下の YYYY には年が入ります）
 
 - C:\texlive\YYYY\texmf-dist や C:\texlive\texmf-local（Windows での典型的な例）
 - /usr/local/texlive/YYYY/texmf-dist や /usr/local/texlive/texmf-local（Unix 系での典型的な例）
-
-W32TeX では
-
-- C:\w32tex\share\texmf-dist や C:\w32tex\share\texmf-local（典型的な例）
 
 などのディレクトリがそれにあたります。
 
@@ -199,20 +195,20 @@ TDS は次の &lt;category&gt; を予約しています。
 
 ### ユーザがファイルを追加したい場合は（ローカルな追加） {#local}
 
-はじめに述べたとおり，TeX Live や W32TeX では「多重 TEXMF ツリー」を採用し，「ローカルなファイル」を置く場所を明確に分けています。
+はじめに述べたとおり，TeX Live では「多重 TEXMF ツリー」を採用し，「ローカルなファイル」を置く場所を明確に分けています。
 
-2015年6月3日以降，W32TeX の TEXMF 等の変数には以下の値が設定されています（上のものほど優先）。
-なお，W32TeX が C:\w32tex 以下にインストールされていると仮定します。
+TeX Live 2023 の TEXMF 等の変数には以下の値が設定されています（上のものほど優先）。
+なお，TeX Live 2023 が C:\texlive\2023 以下にインストールされていると仮定します。
 
 <table>
 <tbody>
+<tr><td>TEXMFCONFIG</td><td>C:/Users/ユーザ名/.texlive2023/texmf-config</td></tr>
+<tr><td>TEXMFVAR</td><td>C:/Users/ユーザ名/.texlive2023/texmf-var</td></tr>
 <tr><td>TEXMFHOME</td><td>C:/Users/ユーザ名/texmf</td></tr>
-<tr><td>TEXMFPROJECT</td><td>C:/w32tex/share/texmf-project</td></tr>
-<tr><td>TEXMFCONTEXT</td><td>C:/w32tex/share/texmf-context</td></tr>
-<tr><td>TEXMFFONTS</td><td>C:/w32tex/share/texmf-fonts</td></tr>
-<tr><td>TEXMFLOCAL</td><td>C:/w32tex/share/texmf-local</td></tr>
-<tr><td>TEXMFMAIN</td><td>C:/w32tex/share/texmf-dist</td></tr>
-<tr><td>TEXMFDIST</td><td>C:/w32tex/share/texmf-dist</td></tr>
+<tr><td>TEXMFLOCAL</td><td>C:/texlive/texmf-local</td></tr>
+<tr><td>TEXMFSYSCONFIG</td><td>C:/texlive/2023/texmf-config</td></tr>
+<tr><td>TEXMFSYSVAR</td><td>C:/texlive/2023/texmf-var</td></tr>
+<tr><td>TEXMFDIST</td><td>C:/texlive/2023/texmf-dist</td></tr>
 </tbody>
 </table>
 
@@ -220,10 +216,8 @@ TDS は次の &lt;category&gt; を予約しています。
 
 ```
 > kpsewhich -var-value=TEXMF
-{C:/Users/ユーザ名/texmf,C:/w32tex/share/texmf-project,C:/w32tex/share/texmf-context,C:/w32tex/share/texmf-fonts,C:/w32tex/share/texmf-local,C:/w32tex/share/texmf-dist}
+{{}C:/Users/ユーザ名/.texlive2023/texmf-config,C:/Users/ユーザ名/.texlive2023/texmf-var,C:/Users/ユーザ名/texmf,!!C:/texlive/texmf-local,!!C:/texlive/2023/texmf-config,!!C:/texlive/2023/texmf-var,!!C:/texlive/2023/texmf-dist}
 ```
-
-% \[TODO\] <em>TeX Live の場合について要加筆</em>
 
 このうち重要なものは TEXMFDIST と TEXMFLOCAL，それに TEXMFHOME です。
 
@@ -303,22 +297,10 @@ mktexlsr は TEXMFDIST, TEXMFLOCAL などをたどり，そこにあるファイ
 
     として実行します。
 
-- [W32TeX](/W32TeX/) では，一覧表を使う運用と全く使わない運用の両方が可能です。一覧表を使用している場合は
-
-    ```
-    mktexlsr
-    ```
-
-    を実行して一覧表を更新します。一覧表を使用しない場合は，deltexlsr を実行することで ls-R ファイルを削除することができます。
-
-近年はハードディスク等も高速になっていることから，必ずしも ls-R が必要でなくなったようです。
-
-```
-rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
-```
-
-として ls-R を削除してしまっても構わない場合もあるでしょう。
-削除した方がファイルの追加を気がねなく行えるという意見もあります。
+<!-- 近年はハードディスク等も高速になっていることから，必ずしも ls-R が必要でなくなったようです。 -->
+<!-- rm `kpsewhich - -expand-path='$TEXMFMAIN'`/ls-R -->
+<!-- として ls-R を削除してしまっても構わない場合もあるでしょう。 -->
+<!-- 削除した方がファイルの追加を気がねなく行えるという意見もあります。 -->
 
 - mktexlsr に関する TeX Forum での話題（賛否両論）：[forum:454](https://okumuralab.org/tex/mod/forum/discuss.php?d=454), [forum:700](https://okumuralab.org/tex/mod/forum/discuss.php?d=700), [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
 - [mktexlsr は有害だ (mktexlsr Considered Harmful)](http://0xcc.net/misc/mktexlsr.html)
@@ -398,5 +380,5 @@ rm `kpsewhich --expand-path='$TEXMFMAIN'`/ls-R
 <!--  -->
 
 [^1]: TEXMF とは，emTeX/em と emM/emETAemF/emONT という意味です。
-[^2]: アップデートは，TeX Live の場合は [tlmgr](/tlmgr/) を使用し，W32TeX の場合は初回インストールと同様の操作を繰り返すことになるでしょう。
+[^2]: アップデートは，TeX Live の場合は [tlmgr](/tlmgr/) を使用します。
 [^3]: 環境によっては，コマンド名は mktexlsr ではなく texhash という名前になっているかもしれません。

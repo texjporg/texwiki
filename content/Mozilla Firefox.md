@@ -52,7 +52,7 @@ Opera でも PDF.js が動作するようです．<br>
 
 ### 設定方法 {#u5cf20d8}
 
-Mozilla Firefox 19.0 以降はデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
+Mozilla Firefox はデフォルトで PDF Viewer が有効になっているので何も設定する必要はありません．<br>
 
 PDF Viewer が有効になっていない場合は Mozilla Firefox のアドレスバーに
 

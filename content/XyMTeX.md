@@ -14,7 +14,7 @@ XyMTeX は[藤田眞作さん](http://xymtex.com/fujitas/)@[湘南情報数理�
 - [XyMTeX 化学構造式描画](http://xymtex.com/fujitas3/xymtex/)
 - [https://ctan.org/pkg/xymtex](https://ctan.org/pkg/xymtex)
 
-TeX Live, W32TeX に含まれています．
+TeX Live に含まれています．
 
 ***
 

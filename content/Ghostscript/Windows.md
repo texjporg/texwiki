@@ -29,7 +29,7 @@ Windows 版の Ghostscript にはいくつかの種類があります。
         <!-- - --TeX Live 2017 (win32) の Ghostscript に角藤さんのバイナリが採用されたようです - -&gt; [[TeX Live (win32) の ghostscript に，角藤さんのバイナリが採用された！ これで日中韓フォントのサポートを作れる ！✌︎('ω'✌︎ ):https://x.com/aminophen/status/856445778486636544]] -->
 
 - tlgs.windows
-    - Windows 版の TeX Live に収録されている Ghostscript。本家の公式 Windows 版バイナリとの違いについては [README.TEXLIVE](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/README.TEXLIVE?view=markup) を参照。
+    - Windows 版の TeX Live に収録されている Ghostscript。本家の公式 Windows 版バイナリとの違いについては [README.TEXLIVE](https://git.texlive.info/texlive/tree/Master/tlpkg/tlgs/README.TEXLIVE) を参照。
 - winget Ghostscript
     - winget からインストールできる Ghostscript
 - Scoop Ghostscript
@@ -752,6 +752,8 @@ composefont pop
 
 - \[[ViewVC\] Index of: texlive/trunk/Master/tlpkg/tlgs](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/)
     - [log](https://svn.tug.org/texlive/trunk/Master/tlpkg/tlgs/?view=log)
+- [tlgs « tlpkg « Master - texlive - Mirror of svn TeX Live plus development branches](https://git.texlive.info/texlive/tree/Master/tlpkg/tlgs)
+    - [log](https://git.texlive.info/texlive/log/Master/tlpkg/tlgs)
 
 #### winget Ghostscript {#lb8d3056}
 
@@ -768,9 +770,10 @@ composefont pop
 #### mingw-w64-ghostscript {#l8186e48}
 
 - [https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript](https://github.com/msys2/MINGW-packages/tree/master/mingw-w64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
-- [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
+- [https://packages.msys2.org/base/mingw-w64-ghostscript](https://packages.msys2.org/base/mingw-w64-ghostscript)
+    - [https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-ucrt-x86_64-ghostscript)
+    - [https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-x86_64-ghostscript)
+    - [https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript](https://packages.msys2.org/package/mingw-w64-clang-aarch64-ghostscript)
 
 #### Cygwin Ghostscript {#q45fc3c8}
 

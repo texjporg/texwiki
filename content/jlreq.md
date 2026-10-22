@@ -28,3 +28,4 @@ jlreq は LuaLaTeX + LuaTeX-ja, upLaTeX, pLaTeX で日本語組版処理の要�
 - [jlreq | 澍法雨](https://ryogan.org/blog/?s=jlreq)
 - \[[LaTeX\] jlreq --- もう一つの日本語ドキュメントクラス](http://konoyonohana.blog.fc2.com/blog-entry-382.html)
 - [https://github.com/zr-tex8r/latex-jlreq-sample](https://github.com/zr-tex8r/latex-jlreq-sample)
+- [LuaLaTeX+jlreq での行末の句読点](https://okumuralab.org/tex/mod/forum/discuss.php?d=3491)

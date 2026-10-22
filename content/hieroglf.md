@@ -9,8 +9,8 @@ pukiwiki: "hieroglf"
 
 ## hieroglf {#ja1baf4e}
 
-- [http://www.ctan.org/pkg/hieroglf](http://www.ctan.org/pkg/hieroglf)
-- [http://www.ctan.org/pkg/hieroglyph](http://www.ctan.org/pkg/hieroglyph)
+- [https://ctan.org/pkg/hieroglf](https://ctan.org/pkg/hieroglf)
+- [https://ctan.org/pkg/hieroglyph](https://ctan.org/pkg/hieroglyph)
 
 ### hieroglf とは {#t53f65cd}
 

@@ -19,12 +19,10 @@ plain TeX と [LaTeX](/LaTeX/) の両方に対応しています．
 ### 公式サイト {#ha0b38ce}
 
 - [https://github.com/luatexja/luatexja](https://github.com/luatexja/luatexja)
-- [LuaTeX-ja プロジェクト wiki](https://ja.osdn.net/projects/luatex-ja/wiki/) ([新wiki](https://github.com/luatexja/luatexja/wiki))
-    - [LuaTeX-ja wiki (FrontPage(en))](https://ja.osdn.net/projects/luatex-ja/wiki/FrontPage%28en%29) ([new](<https://github.com/luatexja/luatexja/wiki/Home(en)>))
-    - [LuaTeX-ja の使い方](https://ja.osdn.net/projects/luatex-ja/wiki/LuaTeX-ja%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9) ([new](https://github.com/luatexja/luatexja/wiki/%E4%BD%BF%E3%81%84%E6%96%B9))
+- [LuaTeX-ja プロジェクト wiki](https://github.com/luatexja/luatexja/wiki)
+    - [Home(en) - LuaTeX-ja wiki](<https://github.com/luatexja/luatexja/wiki/Home(en)>)
+    - [LuaTeX-ja の使い方](https://github.com/luatexja/luatexja/wiki/%E4%BD%BF%E3%81%84%E6%96%B9)
     - [LuaTeX-jaの開発 (PDF)](https://okumuralab.org/texconf11/presentations/kitagawa.pdf)
-- [フォーラム](https://ja.osdn.net/projects/luatex-ja/forums/)
-    - [公開討議/質問](https://ja.osdn.net/forum/forum.php?forum_id=25558)
 - [CTAN: /tex-archive/macros/luatex/generic/luatexja](https://ctan.org/tex-archive/macros/luatex/generic/luatexja)
 
 ### 利用可能な TeX ディストリビューション {#ca58332d}
@@ -118,7 +116,7 @@ Shift_JIS, EUC-JP, ISO-2022-JP は使用できません．
 
 ### 不具合 {#m2b9f4bc}
 
-[チケット一覧/検索 - LuaTeX-ja - OSDN](https://ja.osdn.net/projects/luatex-ja/ticket/) を参照．
+[Issues - Github - LuaTeX-ja](https://github.com/luatexja/luatexja/issues) を参照．
 
 ### 他のパッケージとの併用 {#kdbc7cfe}
 
@@ -234,13 +232,9 @@ polyglossia は LuaLaTeX と XeLaTeX をサポートしており，TeX Live に�
 #### リリース情報 {#g1f2f88f}
 
 - [https://github.com/luatexja/luatexja/tags](https://github.com/luatexja/luatexja/tags)
-- [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/tags](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/tags)
-- [http://git.osdn.net/view?p=luatex-ja/luatexja.git;a=tags](http://git.osdn.net/view?p=luatex-ja/luatexja.git;a=tags)
 
 #### ChangeLog {#ka55de08}
 
 - [https://github.com/luatexja/luatexja/commit/master](https://github.com/luatexja/luatexja/commit/master)
-- [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/)
-    - [https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/commits](https://ja.osdn.net/projects/luatex-ja/scm/git/luatexja/commits)
 - \[[texlive\] Index of /trunk/Master/texmf-dist/tex/luatex/luatexja](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/)
     - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/luatex/luatexja/?view=log)

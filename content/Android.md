@@ -35,7 +35,7 @@ pukiwiki: "Android"
 
 ## PDF ビューア {#t5fdeba9}
 
-- [MuPDF](https://play.google.com/store/apps/details?id=com.artifex.mupdf.viewer.app)
+- [MuPDF viewer](https://play.google.com/store/apps/details?id=com.artifex.mupdf.viewer.app)
     <!-- - -MuPDF ベースの派生版 -->
     <!-- - --[[PDFView:https://play.google.com/store/apps/details?id=com.acadoid.pdfview]] -->
     <!-- - --[[APV PDF Viewer:https://play.google.com/store/apps/details?id=cx.hell.android.pdfview]] -->

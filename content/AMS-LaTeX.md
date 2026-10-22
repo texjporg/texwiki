@@ -17,7 +17,7 @@ AMS-LaTeX は，数式に関する各種のコマンド・環境を定義した 
 
 TeX Live には最初から含まれていますが，
 [http://www.ams.org/publications/authors/tex/amslatex](http://www.ams.org/publications/authors/tex/amslatex) や
-[CTAN:macros/latex/required/amslatex/](https://mirror.ctan.org/macros/latex/required/amslatex/) から入手することもできます。
+[CTAN:macros/latex/required/amsmath](https://mirror.ctan.org/macros/latex/required/amsmath)，[CTAN:macros/latex/required/amscls](https://mirror.ctan.org/macros/latex/required/amscls) から入手することもできます。
 
 ドキュメント等
 

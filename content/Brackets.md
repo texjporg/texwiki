@@ -9,18 +9,20 @@ pukiwiki: "Brackets"
 
 ## [Brackets](http://brackets.io/) {#h3ab6d24}
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 ## Summary {#pd6336fa}
 
-Brackets はテキストエディタです．<br>
+Brackets はテキストエディタです．
 
 - [http://brackets.io/](http://brackets.io/)
 - [Brackets Extension Registry](https://brackets-registry.aboutweb.com/)
 
 ### System Requirements {#u0ccbb39}
 
-Windows, OS X, Linux
+Windows, macOS, Linux
 
 ### License {#h102f68a}
 

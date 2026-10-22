@@ -76,7 +76,10 @@ LaTeX ソース編集には統合環境やテキストエディタが必要で�
 
 以下では，TeXworks を使用して作業を進めます．
 TeXworks は
-スタートメニューの「TeX Live 2025」→「TeXworks editor」から
+
+> スタート &gt; TeX Live 2026 &gt; TeXworks editor
+
+から
 起動することができます．
 
 次の四行を入力してみます．

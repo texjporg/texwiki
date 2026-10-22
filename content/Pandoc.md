@@ -41,7 +41,9 @@ pandoc で documentclass に [LuaTeX-ja](/LuaTeX-ja/) の ltjsarticle を指定�
 ### 関連リンク {#ud9aba13}
 
 - [Pandoc ユーザーズガイド 日本語版](http://sky-y.github.io/site-pandoc-jp/users-guide/)
-- [http://qiita.com/tags/pandoc](http://qiita.com/tags/pandoc)
+- [https://qiita.com/tags/Pandoc](https://qiita.com/tags/Pandoc)
+- [https://qiita.com/search?q=Pandoc](https://qiita.com/search?q=Pandoc)
+    - [Markdown原稿からPandocしてLaTeX組版する本作りの事例](https://qiita.com/munepi/items/7ff9d00505735bd80790)
 - [macOSとPandoc、MacTeXでMarkDownをPDFに変換する](http://ytooyama.hatenadiary.jp/entry/2017/08/10/004244)
 - [Markdownで書いたテキストをPDFに変換して納品用ドキュメントを作成する方法](http://www.clear-code.com/blog/2015/4/27.html)
 - [pandoc : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/pandoc)

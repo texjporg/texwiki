@@ -38,7 +38,7 @@ pdfTeX の Microtypography 拡張は主に次の二つの部分からなりま�
 
 マニュアル (英語) は
 
-- [ftp://ctan.tug.org/tex-archive/systems/pdftex/manual/pdftex-l.pdf](ftp://ctan.tug.org/tex-archive/systems/pdftex/manual/pdftex-l.pdf)
+- [https://mirror.ctan.org/systems/doc/pdftex/manual/pdftex-a.pdf](https://mirror.ctan.org/systems/doc/pdftex/manual/pdftex-a.pdf)
 
 です。
 

@@ -32,7 +32,7 @@ BasicTeX のインストールの概略は以下のとおりです。
 1. BasicTeX には標準で日本語 upTeX が入っていませんので，以下のコレクションを追加でインストールします。
 
     ```
-    sudo tlmgr install collection-langjapanese collection-latexextra collection-luatex
+    sudo tlmgr install collection-langjapanese collection-luatex collection-latexextra
     ```
 
     collection-langjapanese をインストールすれば，依存関係で collection-langcjk もインストールされます。

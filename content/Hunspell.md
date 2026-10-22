@@ -103,16 +103,8 @@ export WORDLIST=$HOME/.hunspell_personal_dictionary
 
 #### MSYS2 {#iadb0245}
 
-64-bit Hunspell の場合は
-
 ```
 $ pacman -S mingw-w64-x86_64-hunspell
-```
-
-32-bit Hunspell の場合は
-
-```
-$ pacman -S mingw-w64-i686-hunspell
 ```
 
 #### MinGW {#deab3978}

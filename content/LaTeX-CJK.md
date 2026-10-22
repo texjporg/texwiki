@@ -30,12 +30,6 @@ CJK パッケージは FreeType プロジェクトのオリジナルの著者の
 
 TeX Live は CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が最初からインストールされています．
 
-#### W32TeX {#gb5c8c94}
-
-W32TeX は cjkzr.tar.xz をインストールすれば CJK パッケージ, ipaex-type1, BXjscls &amp; BXcjkjatype が使用できます．
-
-- [和文文書でCJKパッケージを使ってpdflatexを実行](http://myfuturesightforpast.blogspot.jp/2013/10/cjkpdflatex.html)
-
 ### 日本語に関するパッケージ {#zd452c87}
 
 ipaex-type1, BXjscls &amp; BXcjkjatype を使用すると [pdfLaTeX](/pdfTeX/) で日本語の文書が作成できます．

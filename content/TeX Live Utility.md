@@ -25,6 +25,7 @@ TeX Live のパッケージ管理などができる [TeX Live Manager](</TeX Liv
 - [http://amaxwell.github.io/tlutility/](http://amaxwell.github.io/tlutility/)
 - [https://github.com/amaxwell/tlutility](https://github.com/amaxwell/tlutility)
 - [TeX Live Utilityについて](http://www2.kumagaku.ac.jp/teacher/herogw/tlu.html)
+- [https://formulae.brew.sh/cask/tex-live-utility](https://formulae.brew.sh/cask/tex-live-utility)
 
 ### リリース情報 {#d0019337}
 

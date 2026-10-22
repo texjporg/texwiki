@@ -21,6 +21,16 @@ pukiwiki: "Emacs"
 
 - [GNU Emacs - GNU Project](https://www.gnu.org/software/emacs/)
 
+### リリース情報 {#z96ff3b2}
+
+GNU Emacs 31.1 (2026-08-24) で [Unicode 17.0](https://www.unicode.org/versions/Unicode17.0.0/) (2025-09-09) に対応しました。
+
+- [GNU Emacs - Releases](http://www.gnu.org/software/emacs/#Releases)
+- [https://cgit.git.savannah.gnu.org/cgit/emacs.git/refs/tags](https://cgit.git.savannah.gnu.org/cgit/emacs.git/refs/tags)
+- [https://www.gnu.org/software/emacs/news/NEWS.31.1](https://www.gnu.org/software/emacs/news/NEWS.31.1)
+- [「GNU Emacs 31.1」が公開 ～ターミナルでのマウス操作が既定で有効に、新規ユーザー向けプリセットも](https://forest.watch.impress.co.jp/docs/news/2135207.html)
+- [「GNU Emacs 31.1」リリース ─ Tree-sitter文法の自動インストールに対応](https://thinkit.co.jp/news/39489)
+
 ### 動作環境 {#tabe669d}
 
 GNU, GNU/Linux, FreeBSD, NetBSD, OpenBSD, Haiku, macOS, MS Windows, Android, Solaris, MS-DOS/FreeDOS などの OS で動作します．
@@ -40,7 +50,7 @@ GNU Emacs はフリーソフトウェアです．
 
 #### Windows {#k091604e}
 
-- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-30/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-30/)
+- [https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-31/](https://ftp.gnu.org/pub/gnu/emacs/windows/emacs-31/)
     - MELPAで[tr-ime](https://github.com/trueroad/tr-emacs-ime-module)をインストール・設定すると従来のIMEパッチ版とほぼ同じ使い方ができます
 - [emacs-w32 on Cygwinについて](http://tanehp.ec-net.jp/heppoko-lab/prog/zakki/emacs/emacs.html#emacs-w32%20on%20Cygwin%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 - [Emacs Modified for Windows](https://emacs-modified.gitlab.io/windows/)
@@ -293,12 +303,6 @@ M-x server-start もしくは ~/.emacs.d/init.el に (server-start) を記述し
 ### Linux {#l2b4bca7}
 
 - [Emacs30.1をUbuntu 22.04(WSL)にインストールする](https://zenn.dev/wurly/articles/221603a0a6472a)
-
-### リリース情報 {#z96ff3b2}
-
-- [GNU Emacs - Releases](http://www.gnu.org/software/emacs/#Releases)
-- [「GNU Emacs 30.1」が公開 ～Android版が追加、高速なネイティブコンパイルが既定有効](https://forest.watch.impress.co.jp/docs/news/1665225.html)
-- [「Unicode 15.0」に対応した「GNU Emacs 29.1」、高速パーサー「tree-sitter」の採用も - 窓の杜](https://forest.watch.impress.co.jp/docs/news/1520327.html)
 
 ### ChangeLog {#eba94bf5}
 

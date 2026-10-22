@@ -24,6 +24,9 @@ Adobe-Japan1-7 は 23,060 グリフの文字セットで [Adobe-Japan1-6](/Adobe
 - [原ノ味フォント](</原ノ味フォント/>)
     - 原ノ味明朝 20211103 以降
     - 原ノ味角ゴシック 20190413 以降
+- [IBM Plex Sans JP](https://github.com/IBM/plex)
+    - IBM Plex Sans JP 2.0.0 以降
+    - [日本語フォント「IBM Plex Sans JP」に1万3千以上のグリフ追加 ～「Adobe-Japan1-7」を完全網羅](https://forest.watch.impress.co.jp/docs/news/2025991.html)
 
 #### 商用 {#r57b1206}
 

@@ -19,12 +19,10 @@ Inkscape はベクターグラフィックエディタ (SVG エディタ) です
 
 <table>
 <tbody>
-<tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>インポート可能な形式</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
-<tr><td>SVG, PDF</td><td>EPS, PS</td><td>SVG, PDF, EPS, PS, ODG</td></tr>
+<tr><td style="color:#FFF;background-color:#7C0"><strong>入力</strong></td><td style="color:#FFF;background-color:#7C0"><strong>出力</strong></td></tr>
+<tr><td>SVG, PDF</td><td>SVG, PDF</td></tr>
 </tbody>
 </table>
-
-[PostScript や EPS をインポートするには、Ghostscript をインストールする必要があり、ps2pdf が環境変数 Path 上になければなりません。](https://inkscape.org/ja/learn/faq-ja/#how-open-eps-files-windows)
 
 - [Inkscape 公式サイト](https://inkscape.org/)
 - [Inkscape 開発サイト](https://gitlab.com/inkscape/inkscape)

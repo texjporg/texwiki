@@ -91,14 +91,15 @@ TeXShop, TeXworks, TeXstudio, Texmaker などの統合環境には PDF 用のビ
 単独の LaTeX 用 PDF プレビューアとしては
 
 - <strong>[Skim](/Skim/)</strong>：軽量な LaTeX 用の PDF ビューアとして最適で，特にお勧めします．
-- <strong>[Galley](/Galley/)</strong>：macOS用TeX/LaTeXの軽量なPDFビューア
+- <strong>[Galley](/Galley/)</strong>：macOS 用 TeX/LaTeX の軽量な PDF ビューア
 - [Okular](/Okular/)：KDE Plasma 標準の PDF ビューア
+- [Papers](/Papers/)：GNOME 標準の PDF ビューア
+- [LEKTRA](/LEKTRA/)：画面スペースとコントロールを優先した PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア
 - [MuPDF](/MuPDF/)：軽量な PDF ビューア．
 - [Poppler](/Poppler/)：PDF のレンダリングライブラリ．TeXworks, TeXstudio などで使われています．
-- [LiveTeX](https://github.com/questbeat/LiveTeX)：LiveTeX is a PDF previewer for TeX writing. --&gt; [TeX のプレビュー用アプリを作った](http://questbeat.hatenablog.jp/entry/2016/02/16/213249)
 
 などがあります．
 

@@ -176,6 +176,7 @@ libqpdf でプログラミングするには PDF の構造や仕組みに関す�
 
 - mingw64 バイナリ
 - mingw32 バイナリ
+- msvc-arm64 バイナリ
 - msvc64 バイナリ
 - msvc32 バイナリ
 

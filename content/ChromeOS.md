@@ -9,7 +9,7 @@ pukiwiki: "ChromeOS"
 
 ## [ChromeOS](https://chromeos.google/) {#m725ee74}
 
-### TeX Live {#s5e6d264}
+### TeX Live <a id="texlive"></a> {#s5e6d264}
 
 - [ChromeOS setup - TeX Live - TeX Users Group](https://tug.org/texlive/chromeos/)
 - [Chromebookに論文執筆環境（TeXLive+TeXworks）を設定する！ - ゆるふわクオンツの日常](https://dw-dw-dt.hatenablog.com/entry/2023/01/27/234848)

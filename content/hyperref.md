@@ -1087,7 +1087,7 @@ abc
 ### 関連リンク {#h792e133}
 
 - [http://www.tug.org/applications/hyperref/](http://www.tug.org/applications/hyperref/)
-- [CTAN:help/Catalogue/entries/hyperref.html](https://mirror.ctan.org/help/Catalogue/entries/hyperref.html)
+- [CTAN:macros/latex/contrib/hyperref](https://mirror.ctan.org/macros/latex/contrib/hyperref)
 - [https://miktex.org/packages/pxjahyper](https://miktex.org/packages/pxjahyper)
 - [「hyperref」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=hyperref)
 - [LaTeXの縦書き右綴じの文書をPDFにしたときに、うまく見開き表示するための方法](http://id.fnshr.info/2015/11/03/latex-pdf-r2l/)

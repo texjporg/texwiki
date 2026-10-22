@@ -30,7 +30,7 @@ pukiwiki: "TeXworks/設定/macOS"
 　　引数:　　　　<ins>-u</ins><br>
 　　　　　　　　　<ins>-l</ins><br>
 　　　　　　　　　<ins>-ot</ins><br>
-　　　　　　　　　<ins>$synctexoption</ins><br>
+　　　　　　　　　<ins>$synctexoption -no-guess-input-enc -kanji=utf8</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
 
 <br>
@@ -82,7 +82,7 @@ pukiwiki: "TeXworks/設定/macOS"
 　　名前:　　　　<ins>upLaTeXmk</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>

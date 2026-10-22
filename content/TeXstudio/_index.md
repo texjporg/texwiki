@@ -46,15 +46,24 @@ TeXstudio 公式サイトの Download ページ
 
 からダウンロードできます．
 
-MSYS2 からインストールもできます。
-
-- [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio)
-- [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio)
-- [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio)
-
 #### Windows {#ca4cc4c7}
 
 Windows 用のインストーラーをダウンロードして実行します。
+
+winget でインストールすることもできます。[https://winget.run/pkg/TeXstudio/TeXstudio](https://winget.run/pkg/TeXstudio/TeXstudio) や [https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXstudio/TeXstudio](https://github.com/microsoft/winget-pkgs/tree/master/manifests/t/TeXstudio/TeXstudio) を参照してください。
+
+Scoop でインストールすることもできます。[https://scoop.sh/#/apps?q=texstudio&s=0&d=1&o=true](https://scoop.sh/#/apps?q=texstudio&s=0&d=1&o=true) を参照してください。
+
+Chocolatey でインストールすることもできます。[https://community.chocolatey.org/packages/texstudio](https://community.chocolatey.org/packages/texstudio) を参照してください。
+
+MSYS2 からインストールもできます。
+
+- [https://packages.msys2.org/search?t=binpkg&q=texstudio](https://packages.msys2.org/search?t=binpkg&q=texstudio)
+    - [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-texstudio)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-texstudio)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-texstudio)
+
+を参照してください。
 
 #### macOS {#d9a96322}
 
@@ -181,8 +190,6 @@ Windows の TeXstudio の組み込みの PDF ビューアは日本語のフォ�
 ## 関連リンク {#b0ba1b9b}
 
 - [forumSearch:TeXstudio](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=TeXstudio)
-- [TeXstudio - MyTeXpert](https://web.archive.org/web/20211201054049/http://mytexpert.osdn.jp/index.php?TeXstudio)
 - [August 2013: Project of the Month: TeXstudio  |  SourceForge Community Blog](https://sourceforge.net/blog/august-2013-project-of-the-month-texstudio/)
-- [TeXの問題点を解決する開発環境を目指す！開発者に聞く：高機能なTeX・LaTeXコードエディタTeXstudio編](https://mag.osdn.jp/12/07/16/0613248)
 
 [^1]: [Wikipedia.ja:フォーク\_(ソフトウェア開発)](https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%82%AF_%28%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA%29)

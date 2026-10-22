@@ -13,11 +13,12 @@ Scientific Word はワープロ感覚で入力できる WYSIWYG な LaTeX エデ
 
 MacKichan Software, Inc.の製品であった Scientific Word が販売終了してオープンソース化されたものです。
 
+- [Announcement draft](https://www.mackichan.com/)
 - [GitHub - ScientificWord/sciword: Open source Scientific Word (from MacKichan Software, Inc.)](https://github.com/ScientificWord/sciword)
 
 ### MacKichan Software, Inc.製品販売終了のお知らせ {#z9588b62}
 
-- [MacKichan Software - The Home of Scientific WorkPlace, Scientific Word, and Scientific Notebook](https://www.mackichan.com/)
+- [MacKichan Software - The Home of Scientific WorkPlace, Scientific Word, and Scientific Notebook](https://web.archive.org/web/20250711220901/https://www.mackichan.com/)
 - [TeX, LaTeX文書作成ソフト Scientific WorkPlace/Word | ライトストーン](https://www.lightstone.co.jp/latex/)
 
 <!-- -[[開始番号の設定  | TeX, LaTeX文書作成ソフト Scientific WorkPlace/Word | ライトストーン:https://www.lightstone.co.jp/latex/kb0025.html]] -->
@@ -27,6 +28,7 @@ MacKichan Software, Inc.の製品であった Scientific Word が販売終了し
 
 ### ダウンロード {#o0073951}
 
+- [https://www.mackichan.com/#installingyourfreescientificword](https://www.mackichan.com/#installingyourfreescientificword)
 - [https://www.mackichan.com/techtalk/v60/SciWord.zip](https://www.mackichan.com/techtalk/v60/SciWord.zip)
 
 ### インストール {#c018756e}

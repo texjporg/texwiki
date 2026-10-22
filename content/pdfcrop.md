@@ -7,11 +7,14 @@ pukiwiki: "pdfcrop"
 
 # pdfcrop
 
-## [pdfcrop](https://mirror.ctan.org/help/Catalogue/entries/pdfcrop.html) {#pdcba349}
+## [pdfcrop](https://ctan.org/pkg/pdfcrop) {#pdcba349}
 
 pdfcrop は，PDF の余白をクロップ/付与する Perl スクリプトです。
 [TeX Live](</TeX Live/>) に含まれています。
 [MiKTeX](/MiKTeX/) の場合は MiKTeX Console (MiKTeX Package Manager) でインストールできますが、別途 Perl インタプリタが必要です（[Perl](/Perl/) の項目参照）。
+
+- [https://ctan.org/pkg/pdfcrop](https://ctan.org/pkg/pdfcrop)
+- [CTAN:support/pdfcrop](https://mirror.ctan.org/support/pdfcrop)
 
 ### 使い方 {#v3083d79}
 

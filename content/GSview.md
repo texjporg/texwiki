@@ -21,6 +21,7 @@ GSview は，[Ghostscript](/Ghostscript/) のフロントエンドです。
 
 ### お知らせ <a id="information"></a> {#x301c4e2}
 
+- Gsviewが最新のGhostscriptに対応しなくなったので、Windows専用ですが、PsvieWinを作成しました。Microsoft Storeで配布しています。良かったら使ってください。 -- 平手幸治 2025-12-02 (火) 20:32:44
 - GSview 5.0 は gs-10.04.0 には対応していません。[GSview 5.01beta は gs-10.04.0 に対応しています。（動作確認済み）](/GSview/#install)
 - gs-9.27 では GS_PDF_ProcSet が廃止されました。gsview-5.0 は
     GS_PDF_ProcSet の存在を仮定しています。従って gsview-5.0 を通して

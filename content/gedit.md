@@ -119,7 +119,7 @@ Linux, Windows, macOS
 - [https://gitlab.gnome.org/GNOME/gedit-latex](https://gitlab.gnome.org/GNOME/gedit-latex)
 - [https://repology.org/project/gedit-latex-plugin/versions](https://repology.org/project/gedit-latex-plugin/versions)
 - [https://repology.org/project/gedit-latex/versions](https://repology.org/project/gedit-latex/versions)
-- [http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/](http://ftp.gnome.org/pub/GNOME/sources/gedit-latex/)
+- [https://download.gnome.org/sources/gedit-latex/](https://download.gnome.org/sources/gedit-latex/)
 - [https://aur.archlinux.org/packages/gedit-latex/](https://aur.archlinux.org/packages/gedit-latex/)
 - [https://packages.ubuntu.com/search?keywords=gedit-latex-plugin](https://packages.ubuntu.com/search?keywords=gedit-latex-plugin)
 - [https://packages.debian.org/search?keywords=gedit-latex-plugin](https://packages.debian.org/search?keywords=gedit-latex-plugin)

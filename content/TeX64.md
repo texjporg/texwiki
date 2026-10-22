@@ -9,10 +9,10 @@ pukiwiki: "TeX64"
 
 ## TeX64 {#qe7c5e61}
 
-TeX64 は、数式を見たまま編集できる Windows・Mac 向けの LaTeX エディタです。画像の数式も、取り込んでその場で修正できます。Monaco Editor（VS Code のエディタコア）をベースに、LaTeX 執筆に特化した機能を多数搭載しています。
+TeX64 は、数式を見たまま編集できる Windows・Mac 向けの AI 搭載の LaTeX 専用エディターです。画像の数式も、取り込んでその場で修正できます。Monaco Editor（VS Code のエディタコア）をベースに、LaTeX 執筆に特化した機能を多数搭載しています。
 
-- [TeX64 — Free LaTeX Editor for Windows and macOS](https://tex64.com/)
-- [TeX64 — 無料のTeX・LaTeXエディタ｜Windows・Mac対応](https://tex64.com/ja)
+- [TeX64 — the LaTeX editor with AI built in](https://tex64.com/)
+- [TeX64 — AI搭載のLaTeX専用エディター](https://tex64.com/ja)
 - [TeX64 | ChatGPT Plugins](https://chatgpt.com/plugins/plugin_asdk_app_6a8abcc3f22c819196d21cf6e44e3a3b?locale=ja-JP&q=TeX64)
 - [TeX64 - 検索 / X](https://x.com/search?q=TeX64&f=live)
 - [TeX64さんの記事一覧 | Zenn](https://zenn.dev/tex64)

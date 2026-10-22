@@ -16,7 +16,7 @@ WSL (<strong>W</strong>indows <strong>S</strong>ubsystem for <strong>L</strong>i
     - [WSL 開発環境を設定する](https://learn.microsoft.com/ja-jp/windows/wsl/setup/environment)
 - [GitHub - microsoft/WSL: Windows Subsystem for Linux · GitHub](https://github.com/microsoft/WSL)
 
-### WSL 3 {#yc4ff526}
+### WSL 3.0.1 {#yc4ff526}
 
 - [VSCodeのLaTeX-Workshop拡張、WSL3も使えた！！<br>Dockerを使用する設定にし、Dockerパスにwslcの場所を入れたら動いた。<br><br>動く想定はされていないのだろうけど、あまりにもDockerとWSL3のコマ<br>ンドが同じだったので動いたのだと思われる。<br><br>Latex-workshop &gt; Docker: Enabled<br>☑ Enable docker-based LaTeX distribution support. Do not set this item to true unless you are aware of what it means. This extension will<br>　use this images defined in Latex-workshop &gt; Docker &gt; Image: Latex to execute latexmk, synctex, texcount, and latexindent.<br><br>Latex-workshop &gt; Docker &gt; Image:Latex<br>Define the image for latexmk, synctex, texcount, and latexindent.<br>texlive/texlive<br><br>Latex-workshop &gt; Docker:Path<br>Docker (or Podman) executable name or path.<br>"C:\Program Files\WSL\wslc.exe"](https://x.com/omiyayimo/status/2107303488292352238)
 

@@ -45,7 +45,7 @@ $2^{10}=\pow{2}{10}$.
 \end{document}
 ```
 
-これを pdflatex で処理します（platex でも大丈夫です）．
+これを pdflatex で処理します（lualatex でも大丈夫です）．
 
 ```
 $ pdflatex pow

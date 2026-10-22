@@ -17,12 +17,13 @@ Zotero は、研究のための収集、整理、注釈付け、引用、共有�
 
 ### 動作環境 {#zbcfe2d8}
 
-Windows, macOS, Linux, [iOS](https://apps.apple.com/jp/app/zotero/id1513554812), [Android (ベータ版)](https://play.google.com/store/apps/details?id=org.zotero.android)
+Windows, macOS, Linux, [iOS](https://apps.apple.com/jp/app/zotero/id1513554812), [Android](https://play.google.com/store/apps/details?id=org.zotero.android)
 
 - [https://www.zotero.org/support/mobile](https://www.zotero.org/support/mobile)
 
 ### 使い方 {#zfc0da64}
 
+- [Zoteroに乗り換えた（Zotero 7にアップグレードした）](https://ntakahashirad.netlify.app/article_zotero)
 - [Zotero紹介](https://www.slideshare.net/slideshow/zotero-258277906/258277906)
 - [Zotero と LaTeX Workshop で bib ファイルを扱いこなす](https://qiita.com/Yarakashi_Kikohshi/items/8f720643543ba175f7cc)
 - [VSCode + Zotero + BibTeXによる論文執筆ワークフロー](https://zenn.dev/nicetak/articles/zotero-tex-bibtex)

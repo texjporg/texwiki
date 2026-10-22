@@ -121,8 +121,8 @@ $ ptex2pdf -u -l hoge.tex
 
 の texlua の後ろの余分なスペース2つを削除してください．
 
-- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://twitter.com/tsubuyakisc/status/351962192901443585)
-- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://twitter.com/tsubuyakisc/status/351962660453093376)
+- [Cygwin の setup から texlive パッケージを入れて ptex2pdf -l &lt;FILENAME> としたら "/usr/bin/env: texlua  : No such file or directory" ってエラーになった．](https://x.com/tsubuyakisc/status/351962192901443585)
+- [#!/usr/bin/env texlua   って texlua の後ろに空白文字が2文字ついてた．これを削除して無事 ptex2pdf が動くようになった．](https://x.com/tsubuyakisc/status/351962660453093376)
 
 バージョン 0.6 でこのバグは修正されました．
 

@@ -21,3 +21,8 @@ Publishing TeXの略である。
     - [和文フォントによるスペース](</pTeX/文字間スペースについて/#jfmglue>)
     - [記号類との間](</pTeX/文字間スペースについて/#yakumono>)
 - [pTeXの追加プリミティブと変数](</pTeX/pTeXの追加プリミティブと変数/>)
+
+## 関連リンク {#raa02a73}
+
+- [アスキー日本語TeX（pTeX）](https://asciidwango.github.io/ptex/) (株式会社ドワンゴ アスキードワンゴ編集部)
+- コミュニティ版 [ptex-base](https://github.com/texjporg/ptex-base), [ptex-fonts](https://github.com/texjporg/ptex-fonts), [platex](https://github.com/texjporg/platex), [ptex-manual](https://github.com/texjporg/ptex-manual)

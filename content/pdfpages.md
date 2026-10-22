@@ -17,6 +17,6 @@ pdfpages を利用して PDF ファイルの結合・分割・割付をコマン
 ### 関連リンク {#p2e9c582}
 
 - pdfpages on (u)platex ([forum:1630](https://okumuralab.org/tex/mod/forum/discuss.php?d=1630))
-- [TeX/Manual/pdfpages - 松浦高志のWikiページ](http://user.ecc.u-tokyo.ac.jp/users/user-15826/wiki/?TeX/Manual/pdfpages)
+- [TeX/Manual/pdfpages - 松浦高志のWikiページ](https://museion.sakura.ne.jp/wiki/?TeX/Manual/pdfpages)
 - [pdfpages - にっき♪](http://abenori.blogspot.jp/2015/07/pdfpages.html)
 - [LaTeXを使ったPDFファイルの面付け - I’m just another TeXnician.](http://d.hatena.ne.jp/munepi/20130323/tex)

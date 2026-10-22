@@ -49,6 +49,7 @@ $ sudo apt install pdf2svg
 
 ### 関連リンク {#r1d0a945}
 
+- [PDF を SVG に変換する pdf2svg をで使う (Linux/Windows)](http://scientre.hateblo.jp/entry/20160129/pdf2svg_on_sl6)
 - [pdf2svg - Rubyで遊ぶよ](http://rubyist.g.hatena.ne.jp/edvakf/20090303/1236057136)
 - [https://github.com/db9052/pdf2svg](https://github.com/db9052/pdf2svg)
 - [textext, pdf2svg on Windows](http://tako.nakano.net/textext_pdf2svg.html)

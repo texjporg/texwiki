@@ -270,7 +270,7 @@ $ sudo port install texlive-lang-japanese texlive-luatex texlive-latex-extra
 - [MacでTeXをインストールし直す方法](https://sites.google.com/site/kazunoriweb/memo/%E9%9B%91%E8%A8%98%E9%9B%86/mac%E3%81%A7tex%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E7%9B%B4%E3%81%99%E6%96%B9%E6%B3%95)
 - [SphinxでLatex拡張を使ってPDF出力する](https://qiita.com/H-A-L/items/8222d894daf1552cef67)
 - [LaTeXをmacportsを使ってインストール](http://regry358.hatenablog.com/entry/2014/06/02/155405)
-- [OSXへのTeXliveインストール (MacTex / MacPorts)](http://sphinx-users.jp/cookbook/pdf/latex-install-osx.html)
+- [OSX / macOSへのTeX Liveインストール (MacTex / MacPorts)](https://sphinx-users.jp/cookbook/pdf/latex-install-osx.html)
 
 ## TeX Live のセットアップ {#bcb0d462}
 

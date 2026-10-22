@@ -80,8 +80,6 @@ $ fixill.pl <old.eps >new.eps
 ```
 
 “fixill.pl” は Perl スクリプトであり，実行には Perl が必要。
-W32TeX なら [Strawberry Perl](https://strawberryperl.com/) をダウンロードしてインストールすればいいであろう。
-W32TeX の “dvipsk-w32.tar.xz” には “fixill.pl” と “fixill.exe” が含まれる。
 
 ```
 >fixill.exe <old.eps >new.eps
@@ -176,7 +174,7 @@ rungs -q -sDEVICE=eps2write -r19200 -dNOPAUSE -dBATCH -dSAFER -dEPSCrop -sOutput
 #### TeX(&amp;T).js {#w5a4bc73}
 
 Illustrator CC で作業中に呼び出すことになるスクリプトです．
-テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator 2024\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator 2024\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
+テキストドキュメントを新規作成して，以下の内容を書き込んでTeX(&amp;T).js という名前で"C:\Program Files\Adobe\Adobe Illustrator 2025\Presets\ja_JP\スクリプト\\" に保存します．なお，"C:\Program Files..." はIllustrator をデフォルトの設定でインストールした場合です．"Adobe Illustrator 2025\Presets\ja_JP\スクリプト\\"に保存すれば，スクリプトを呼び出すときに便利です．
 
 第一行目の「AI = "/C/AI/";」は，[作業フォルダの作成](/Illustrator/#q425d35e)で作成したフォルダ名を指定しています．例えば，作業フォルダが"D:\hoge\test\\" なら，「AI = "/D/hoge/test/"」のように書き換えてください． <!-- [[作業用フォルダの作成>Illustrator#q425d35e]]でC:\Documents and Settings\All Users\Application Data\Adobe\Illustrator CS\temp\を作った場合は「AI = "/C/Documents and Settings/All Users/Application Data/Adobe/Illustrator CS/temp/";」に書き換えてください． -->
 
@@ -673,7 +671,7 @@ function ImportImg(filepath,objName,savedText,x,y,d){
 ### スクリプトの利用 {#h8061542}
 
 Illustrator を起動してください．
-TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator CC (64 Bit)\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．
+TeX(&amp;T).js を"C:\Program Files\Adobe\Adobe Illustrator 2025\Presets\ja_JP\スクリプト\\" に保存してあれば，\[ファイル\]→\[スクリプト\]とたどれば"TeX(T)" があるはずです．
 なお，別の場所に保存した場合は，\[ファイル\]→\[スクリプト\]の末尾にある\[参照\]からTeX(&amp;T).js を指定する必要があります．
 新規ドキュメントを作成し，テキストツールを使って，例えば次の内容のテキストアイテムを作ります．
 (テキストツールを使わずに，以下をコピーして，Illustrator 上で貼り付けを行っても問題ありません．)
@@ -806,7 +804,7 @@ Illustrator CS で CM フォントの数式が変になる [qa:27936](https://ok
 
 ### リリース情報 {#u178a7b2}
 
-- Adobe Illustrator デスクトップ版 29.0 2024年10月14日
+- Adobe Illustrator デスクトップ版 30.0 2025年10月
 
 情報等
 

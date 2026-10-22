@@ -46,16 +46,16 @@ texdoc kpathsea
 kpsewhich -all texmf.cnf
 ```
 
-最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2025）のように 2 つのパスを返します。
+最近の TeX Live の場合は，次の例（これは Windows の TeX Live 2026）のように 2 つのパスを返します。
 
 ```
-c:/texlive/2025/texmf.cnf
-c:/texlive/2025/texmf-dist/web2c/texmf.cnf
+c:/texlive/2026/texmf.cnf
+c:/texlive/2026/texmf-dist/web2c/texmf.cnf
 ```
 
 このように複数の有効な texmf.cnf がある場合，前にあるものほど高い優先度をもちます。
 つまり，後ろ（低い優先度）の texmf.cnf で設定された値は，前（高い優先度）の texmf.cnf によって上書きされます。
-TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2025/texmf.cnf の方を編集します。
+TeX Live においては，この後ろが「マスタの設定ファイル」，前が「カスタム用設定ファイル」であり，ユーザが設定をカスタマイズしたい場合は，c:/texlive/2026/texmf.cnf の方を編集します。
 TeX Live のバージョンを跨いで有効であって，上書きされないものは
 
 ```
@@ -219,10 +219,10 @@ shell_escape=t
 kpsewhich article.cls
 ```
 
-Windows 版の TeX Live 2025 では次のような結果になりました。
+Windows 版の TeX Live 2026 では次のような結果になりました。
 
 ```
-c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
+c:/texlive/2026/texmf-dist/tex/latex/base/article.cls
 ```
 
 パス検索についても，コマンドによって検索対象のパスを変えることができます。
@@ -230,9 +230,9 @@ c:/texlive/2025/texmf-dist/tex/latex/base/article.cls
 
 ```
 kpsewhich pstricks.con -progname=latex
-#==>「c:/texlive/2025/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
+#==>「c:/texlive/2026/texmf-dist/tex/generic/pstricks/pstricks.con」と出力
 kpsewhich pstricks.con -progname=xelatex
-#==>「c:/texlive/2025/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
+#==>「c:/texlive/2026/texmf-dist/tex/xelatex/xetex-pstricks/pstricks.con」」と出力
 ```
 
 #### パス検索の手順 {#j7738f5b}

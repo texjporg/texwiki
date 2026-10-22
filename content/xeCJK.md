@@ -240,7 +240,7 @@ ABCDEあいうえお①
 
 ### 使い方 {#v46b0c77}
 
-[ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/zxjatype.html) を参照．<br>
+[ZXjatype パッケージ ～XeLaTeX でまともな日本語組版を～ \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/zxjatype.html) を参照．<br>
 
 以下の様な文書を作成して UTF-8 で保存します．
 
@@ -406,4 +406,4 @@ zxjatype.sty が見つからなかった場合に xeCJK.sty を使用する場�
 - [記事一覧 - tetsuok の旅 blog](http://tetsuok.hatenablog.com/archive/category/latex)
 - 仮名だけ別フォント ([qa:57028](https://okumuralab.org/~okumura/texfaq/qa/57028.html), [qa:57030](https://okumuralab.org/~okumura/texfaq/qa/57030.html), [qa:57031](https://okumuralab.org/~okumura/texfaq/qa/57031.html), [qa:57032](https://okumuralab.org/~okumura/texfaq/qa/57032.html))
 
-[^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/note.html)を参照
+[^1]: [蛇足事項、その他 \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/note.html)を参照

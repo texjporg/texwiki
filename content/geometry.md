@@ -56,8 +56,8 @@ TeX Liveに含まれています。
 ### 使い方 {#c2c67492}
 
 - [geometry.sty LaTeX パッケージ](http://xyoshiki.web.fc2.com/tex/geometry.html)
-- [LaTeX メモ ― geometry パッケージによるページレイアウトの設定](http://dayinthelife.at.webry.info/201401/article_2.html)
-- [geometryパッケージ 再訪](http://konoyonohana.blog.fc2.com/blog-entry-119.html)
+- [LaTeX メモ ― geometry パッケージによるページレイアウトの設定](https://dayinthelife-web.blogspot.com/2014/01/latex-geometry.html)
+- [geometryパッケージ 再訪](https://konoyonohana.blog.fc2.com/blog-entry-119.html)
 
 ### ドライバ指定の注意 {#qfffde83}
 

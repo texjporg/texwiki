@@ -16,7 +16,7 @@ PostScript/PDF ファイルを表示します。
 
 ### Cygwin {#n4a211dd}
 
-[Cygwin](/Cygwin/) と [VcXsrv](https://sourceforge.net/projects/vcxsrv/) で gv が使用できます。
+[Cygwin](/Cygwin/) と [VcXsrv](https://github.com/marchaesen/vcxsrv) で gv が使用できます。
 
 VcXsrv を起動して Cygwin64 Terminal (64-bit Cygwin) から
 
@@ -50,11 +50,10 @@ gv file.ps
 
 ### Linux {#p8553828}
 
-- [https://www.archlinux.jp/packages/?name=gv](https://www.archlinux.jp/packages/?name=gv)
+- [https://aur.archlinux.org/packages/gv](https://aur.archlinux.org/packages/gv)
 - [https://packages.debian.org/search?keywords=gv](https://packages.debian.org/search?keywords=gv)
-- [https://packages.ubuntu.com/search?keywords=gv](https://packages.ubuntu.com/search?keywords=gv)
-- [https://apps.fedoraproject.org/packages/gv](https://apps.fedoraproject.org/packages/gv)
-- [https://software.opensuse.org/package/gv](https://software.opensuse.org/package/gv)
+- [https://packages.ubuntu.com/gv](https://packages.ubuntu.com/gv)
+- [https://packages.fedoraproject.org/pkgs/gv/gv/](https://packages.fedoraproject.org/pkgs/gv/gv/)
 
 ### 関連リンク {#u6f90105}
 

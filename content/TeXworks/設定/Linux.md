@@ -52,7 +52,7 @@ pukiwiki: "TeXworks/設定/Linux"
 
 　　名前:　　　　<ins>Latexmk</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
-　　引数:　　　　<ins>$fullname</ins><br>
+　　引数:　　　　<ins>$fullname -no-guess-input-enc -kanji=utf8</ins><br>
 
 <br>
 
@@ -82,7 +82,7 @@ pukiwiki: "TeXworks/設定/Linux"
 　　名前:　　　　<ins>upLaTeXmk</ins><br>
 　　プログラム:　 <ins>latexmk</ins><br>
 　　引数:　　　　<ins>-e</ins><br>
-　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 %S/</ins><br>
+　　　　　　　　　<ins>$latex=q/uplatex %O -synctex=1 -kanji=utf8 -no-guess-input-enc %S/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>
 　　　　　　　　　<ins>$bibtex=q/bibtexu %O %B/</ins><br>
 　　　　　　　　　<ins>-e</ins><br>

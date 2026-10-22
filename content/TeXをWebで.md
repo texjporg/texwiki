@@ -39,6 +39,12 @@ Web サイトに数式を表示する各種方法を，[Web で数式](</Web で
 ### 関連リンク {#cfaeb364}
 
 - [OpenAI PrismのLaTeXで日本語を使う](https://okumuralab.org/~okumura/misc/260131.html)
+- [LSS企画「Cloud LaTeX入門」公開中 | 九州工業大学附属図書館](https://web.archive.org/web/20230606162247/https://www.lib.kyutech.ac.jp/library/ja/node/1585)
+    - [CloudLaTeX入門~LaTeX・CloudLaTeXについて~ : 九州工業大学図書館学生サポーターブログ](https://web.archive.org/web/20221121051410/https://kyutechlc.blog.jp/archives/1080127154.html)
+    - [CloudLaTeX入門(2)~簡単な書き方について~ : 九州工業大学図書館学生サポーターブログ](https://web.archive.org/web/20221128045732/https://kyutechlc.blog.jp/archives/1080167908.html)
+    - [CloudLaTeX入門(3)~数式・画像の挿入~ : 九州工業大学図書館学生サポーターブログ](https://web.archive.org/web/20221205062228/https://kyutechlc.blog.jp/archives/1080188422.html)
+    - [CloudLaTeX入門(4)~プログラムの入力~ : 九州工業大学図書館学生サポーターブログ](https://web.archive.org/web/20221212081812/https://kyutechlc.blog.jp/archives/1080228617.html)
+    - [CloudLaTeX入門~PDF化・エラー対処・まとめ~ : 九州工業大学図書館学生サポーターブログ](https://web.archive.org/web/20230116063150/https://kyutechlc.blog.jp/archives/1080248452.html)
 - [LaTeX Online: Options continue to grow at Some TeX Developments](https://www.texdev.net/2013/02/24/latex-online-options-continue-to-grow/)
 - [TeX implementations in the Cloud](https://cikitsa.blogspot.com/2013/01/tex-implementations-in-cloud.html)
 - [Cloud LaTeXとShareLaTeX、どっちがいい?](https://www.zopfco.de/entry/2015/05/10/040303)

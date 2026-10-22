@@ -62,20 +62,20 @@ CTAN の世界的なミラーリングとして次の URI があります．
         <!-- (HTTPS) -->
         <!-- ftp.kddilabs.jp = ftp.kddlabs.co.jp = ftp.ne.jp -->
 
-- [ctan.tikz.jp](https://ctan.tikz.jp/) (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
+- [TikZによるLaTeXグラフィックス](https://tikz.jp/), [ctan.tikz.jp](https://ctan.tikz.jp/) (vmd139524.contaboserver.net) (Contabo Asia Private Limited)
     <!-- Contabo Asia Private Limited -->
     <!-- vmd139524.contaboserver.net -->
     <!-- 84.247.157.65 -->
     - [ctan.tikz.jp/](https://ctan.tikz.jp/)
         (HTTPS)
 
-- [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/) (Cloudflare CDN)
+- [CICKU](https://cicku.me/), [jp.mirrors.cicku.me](https://jp.mirrors.cicku.me/) (Cloudflare CDN)
     <!-- Cloudflare CDN -->
     <!-- https://github.com/cicku -->
     - [jp.mirrors.cicku.me/ctan/](https://jp.mirrors.cicku.me/ctan/)
         (HTTPS)
 
-- [mirror.kris.fail](https://mirror.kris.fail/) (Cloudflare CDN)
+- [KRIS.FAIL](https://kris.fail/), [mirror.kris.fail](https://mirror.kris.fail/) (Cloudflare CDN)
     <!-- Cloudflare CDN -->
     - [mirror.kris.fail/ctan/](https://mirror.kris.fail/ctan/)
         (HTTPS)
@@ -160,4 +160,4 @@ CTAN の世界的なミラーリングとして次の URI があります．
 
 - [CTAN - CTAN daily syncs as git repository](https://git.texlive.info/CTAN/)
 - [comp.text.tex](https://groups.google.com/forum/?fromgroups#!forum/comp.text.tex)
-- [http://www.ring.gr.jp/ring/newfiles/CTAN.html](http://www.ring.gr.jp/ring/newfiles/CTAN.html)
+- [新年、CTANミラー](https://kris.fail/posts/%E6%96%B0%E5%B9%B4ctan%E3%83%9F%E3%83%A9%E3%83%BC/)

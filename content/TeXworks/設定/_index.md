@@ -117,13 +117,13 @@ OK を押して最初の画面に戻り，必要ならば次の図に示すよ�
 
 TeXworks はスペルチェックの辞書が含まれていないので自分で設定する必要があります．
 
-### Windows の TeX Live 2025 の場合 {#ycb12d64}
+### Windows の TeX Live 2026 の場合 {#ycb12d64}
 
 1. [https://addons.mozilla.org/ja/thunderbird/language-tools/](https://addons.mozilla.org/ja/thunderbird/language-tools/) から辞書をダウンロードします．
 1. ダウンロードしたファイルの拡張子を zip に変更して展開します．
 1. TeXworks を起動してすぐに終了します．
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2025\texmf-config\texworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーが作成されていることを確認します
-1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2025\texmf-config\texworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2026\texmf-config\texworks フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks フォルダーが作成されていることを確認します
+1. C:\ユーザー\\&lt;ユーザー アカウント名>\\.texlive2026\texmf-config\texworks\dictionaries フォルダーまたは C:\ユーザー\\&lt;ユーザー アカウント名>\TeXworks\dictionaries フォルダーを作成して辞書 (English (US) であれば en-US.aff と en-US.dic) を配置します
 1. TeXworks を起動して \[編集\] &gt; \[設定\] &gt; \[エディタ\] &gt; \[スペルチェッカの言語\] から辞書を選択します．
 1. \[編集\] &gt; \[スペルチェック\] で辞書を選択します．
 

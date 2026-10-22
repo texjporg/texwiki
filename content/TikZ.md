@@ -1141,6 +1141,7 @@ $ uplatex --jobname=filename-fig1 filename.tex
 - [TeXについて](https://alg-d.com/math/tex.html)
     - [TikZの使い方](https://alg-d.com/math/tikz.pdf)
 - [Doraemon &#8211; TikZによるLaTeXグラフィックス](https://tikz.jp/doraemon/)
+- [【番外編】TikZだけで傘が描けるの楽しいよね！](https://note.com/yukkurimining/n/n2f1e686ec61e)
 - [https://x.com/search?q=TikZ+lang%3Aja&f=live](https://x.com/search?q=TikZ+lang%3Aja&f=live)
 
 <!-- リンク切れ -->

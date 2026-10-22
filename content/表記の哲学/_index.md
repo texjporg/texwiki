@@ -86,7 +86,7 @@ pukiwiki: "表記の哲学"
 - BibTeX データの人名で，“Jr” か “Jr.” か？
     - どちらも間違いではない。
     - 試しに BibTeXing (Oren Patashnik,
-        [CTAN.ring:biblio/bibtex/contrib/doc/btxdoc.pdf](http://www.ring.gr.jp/pub/text/CTAN/biblio/bibtex/contrib/doc/btxdoc.pdf))
+        [CTAN:biblio/bibtex/contrib/doc/btxdoc.pdf](https://mirror.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf))
         を調べてみると，例の中では “Jr” となっている。
     - 自分で .bst ファイルを書いて置換を行うようにすれば，最終出力をどちらかに統一できそう。
 

@@ -33,7 +33,7 @@ Org mode は
 ## インストール {#l69ff892}
 
 Org mode は Emacs に標準で含まれています。
-Emacs 30.2 の場合は [バージョン 9.7.11](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-30.2#n12) ([2024-08-23](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.7.11)) です。
+Emacs 31.1 (2026-08-24)  の場合は [バージョン 9.8.7](https://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/org/org.el?h=emacs-31.1#n12) ([2026-07-04](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/tag/?h=release_9.8.7)) です。
 最新版を使いたい場合は以下の手順を踏みます。
 
 ### Emacs 標準のパッケージ管理システムを使用する場合 {#f8230508}
@@ -46,20 +46,20 @@ M-x list-packages RET でリストを表示して org を選択
 
 ### 公式サイトのパッケージを使用する場合 {#vc647a74}
 
-[emacs/org-mode.git - Emacs Org mode](https://cgit.git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags) のパッケージを使用する場合はアーカイブを展開して名前を org-mode にリネームして &#x7e;/.emacs.d/site-lisp に配置します。
+[emacs/org-mode.git - Emacs Org mode](https://cgit.git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags) のパッケージを使用する場合はアーカイブを展開して名前を org-mode にリネームして &#x7e;/.emacs.d/user-lisp に配置します。
 
 ```
 ~
 └─.emacs.d
-    └─site-lisp
+    └─user-lisp
         └─org-mode
             └─lisp
 ```
 
-&#x7e;/.emacs.d/init.el を編集して load-path に ~/.emacs.d/site-lisp/org-mode/lisp を追加します。
+&#x7e;/.emacs.d/init.el を編集して load-path に ~/.emacs.d/user-lisp/org-mode/lisp を追加します。
 
 ```
-(add-to-list 'load-path "~/.emacs.d/site-lisp/org-mode/lisp")
+(add-to-list 'load-path "~/.emacs.d/user-lisp/org-mode/lisp")
 ```
 
 ## 設定例 {#y73c067b}
@@ -445,8 +445,10 @@ org ファイルの先頭に
 ### リリース情報 {#lb82f3d0}
 
 - [https://elpa.gnu.org/packages/org.html](https://elpa.gnu.org/packages/org.html)
+- [https://cgit.git.savannah.nongnu.org/cgit/org-mode.git/refs/tags](https://cgit.git.savannah.nongnu.org/cgit/org-mode.git/refs/tags)
 - [https://git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/refs/tags)
 
 ### ChangeLog {#r21fa6e2}
 
+- [https://cgit.git.savannah.nongnu.org/cgit/org-mode.git/log/](https://cgit.git.savannah.nongnu.org/cgit/org-mode.git/log/)
 - [https://git.savannah.gnu.org/cgit/emacs/org-mode.git/log/](https://git.savannah.gnu.org/cgit/emacs/org-mode.git/log/)

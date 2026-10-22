@@ -22,7 +22,7 @@ BibLaTeX はバックエンドとして biber や BibTeX を使用します．
 - [https://ctan.org/pkg/biblatex](https://ctan.org/pkg/biblatex)
 - [https://ctan.org/pkg/biber](https://ctan.org/pkg/biber)
 - [http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=Biblatex&sort=rel](http://qiita.com/search?utf8=%E2%9C%93&sort=rel&q=Biblatex&sort=rel)
-- [「biblatex」の検索結果一覧 - にっき♪](http://d.hatena.ne.jp/abenori/archive?word=biblatex)
+- [にっき&#9834;: biblatexの検索結果](http://abenori.blogspot.com/search?q=biblatex&by-date=true)
 - [biblatex ～初歩の初歩～ ---- もう一つの［参考文献］生成ツール](http://konoyonohana.blog.fc2.com/blog-entry-96.html)
 - [latexmk で楽々 TeX タイプセットの薦め（＆ biblatex+biberで先進的な参考文献処理） - konn-san.com](http://konn-san.com/prog/why-not-latexmk.html)
 - [BibLaTeXの使い方まとめ](http://tasusu.hatenablog.com/entry/2014/01/30/214338)

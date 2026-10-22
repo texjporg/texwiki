@@ -19,13 +19,13 @@ Kate は高機能なテキストエディタです。
 
 #### Windows {#o93d187e}
 
-- [https://cdn.kde.org/ci-builds/utilities/kate/release-25.08/windows/](https://cdn.kde.org/ci-builds/utilities/kate/release-25.08/windows/) (リリースビルド版)
-- [https://cdn.kde.org/ci-builds/utilities/kate/master/windows/](https://cdn.kde.org/ci-builds/utilities/kate/master/windows/) (ナイトリービルド版)
+- [https://origin.cdn.kde.org/ci-builds/utilities/kate/release-26.08/windows/](https://origin.cdn.kde.org/ci-builds/utilities/kate/release-26.08/windows/) (リリースビルド版)
+- [https://origin.cdn.kde.org/ci-builds/utilities/kate/master/windows/](https://origin.cdn.kde.org/ci-builds/utilities/kate/master/windows/) (ナイトリービルド版)
 
 #### macOS {#ne573a71}
 
-- [https://cdn.kde.org/ci-builds/utilities/kate/release-25.08/macos-arm64/](https://cdn.kde.org/ci-builds/utilities/kate/release-25.08/macos-arm64/) (リリースビルド版)
-- [https://cdn.kde.org/ci-builds/utilities/kate/master/macos-arm64/](https://cdn.kde.org/ci-builds/utilities/kate/master/macos-arm64/) (ナイトリービルド版)
+- [https://origin.cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/](https://origin.cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/) (リリースビルド版)
+- [https://origin.cdn.kde.org/ci-builds/utilities/kate/master/macos-arm64/](https://origin.cdn.kde.org/ci-builds/utilities/kate/master/macos-arm64/) (ナイトリービルド版)
 
 ### プラグイン {#w47d550e}
 

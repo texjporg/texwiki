@@ -54,6 +54,12 @@ iOS 版の Texifier はクラウドタイプセットで日本語の文書をコ
 - [Texifier - TeX Wiki](/Texifier/) を参照。
     <!-- -[[forumSearch:Texifier]] -->
 
+### TextEdit {#x82ee121}
+
+TextEdit は LaTeX 文書の作成・編集に対応しており、デバイス上で LaTeX を直接記述してコンパイルできます。
+
+- [TextEdit - テキストエディタアプリ - App Store](https://apps.apple.com/jp/app/textedit-%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/id1070883678)
+
 <!-- **フリーソフトウェア (オープンソースソフトウェア) [#o1e16332] -->
 <!-- -[[MobileOrg:https://itunes.apple.com/jp/app/mobileorg/id634225528]] -->
 <!-- - -http://mobileorg.github.io/ -->

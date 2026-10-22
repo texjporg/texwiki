@@ -75,3 +75,19 @@ pukiwiki: "LaTeX文書作成時に注意すべきこと"
     とかやってみると hoge が（イタリックではない）ボールドになります．（使い方がこれで合っているのかよくわからないですが．） そもそも cmbxti という文字列がどのファイルにもないようなのですが，ボールドイタリックはどうやって出していたのでしょうか．そのためのスタイルファイルがあったりしたのかな？ [昔の comp.text.tex の投稿](https://groups.google.com/forum/#!topic/comp.text.tex/BruaU9xFxL4)を見る限り，そうだったのでしょうか． -- kmaeda 2016-07-21 (木) 15:34:16
 
 - 私自身は plain TeX や 2.09 の頃から使っているわけではないのですけれど、ちょっと調べてみましたら、例えば、plain TeX の入門ドキュメントである “A Gentle Introduction to TeX” では既に、“External Fonts Names” というリストに、CMBXTI10 ですとか、CMSS の BX や I なんかも載っています。なので、plain TeX の頃なら \font を直接使って、2.09 の頃なら \newfont を使って、tfm を自分で指定していたのではないでしょうか （大きさはその際の決め打ちになってしまいますが）。 -- ut 2016-07-21 (木) 20:35:30
+- 2003年の W32TeX を入手できたので、みてみると「latex209」というコマンドがありました。起動してみると
+
+    ```
+    This is TeX, Version 3.141592 (Web2C 7.5.2) (format=latex209 2003.2.20)
+    ```
+
+    で LaTeX Version 2.09 &lt;25 March 1992> が利用できます。おそらくこれが、現在でも容易にネット上から入手可能な LaTeX 2.09 に近い環境だと思われます。ちゃんと \documentclass が ! Undefined control sequence. になるところまで ;)
+
+    ```
+    \documentstyle{article}
+    \begin{document}
+    {\bf\it ABCabc}/{\it\bf ABCabc}
+    \end{document}
+    ```
+
+    を実行すると、\bf と \it を同時に使うと「後の方」だけが効くことがわかります。ボールドイタリックはいろいろ試さないとわかりません… -- aminophen 2016-07-22 (金) 22:31:21

@@ -53,7 +53,7 @@ $ pdftocairo -png file.pdf
 
 ### 関連リンク {#d403df71}
 
-- [PXtosb パッケージ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/pxtosb.html)
+- [PXtosb パッケージ \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/pxtosb.html)
 - [dvipng - \[物理のかぎしっぽ\]](http://hooktail.org/computer/index.php?dvipng)
 - [qa:17730](https://okumuralab.org/~okumura/texfaq/qa/17730.html)
 - [qa:51671](https://okumuralab.org/~okumura/texfaq/qa/51671.html) からの議論で，dvi2dviを通してサブフォント化した日本語dviファイルが変換できるようになりました．

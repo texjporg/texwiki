@@ -361,7 +361,7 @@ PostScript 言語には色の透明度の概念はありませんが， PDF 1.4 
 \end{document}
 ```
 
-<img src="http://oku.edu.mie-u.ac.jp/tex/file.php/2/moddata/forum/2/73/transparency0.jpg" alt="">
+<img src="https://okumuralab.org/tex/file.php/2/moddata/forum/2/73/transparency0.jpg" alt="">
 
 上の pst-IIID.sty は, 現在配布されている pst-3d.sty とは違うものらしく,
 現在では入手することが困難なので，この例をコンパイルするのは難しいかも知れません.
@@ -1337,7 +1337,7 @@ all    : $(IMGSRCS:.tex=.pdf) $(IMGSRCS:.tex=.bb) $(IMGSRCS:.tex=.eps)
 
 ### 実際に<em>使える</em>画像ファイルを作るには (別解2) {#r5c8eeee}
 
-[epstool](http://pages.cs.wisc.edu/~ghost/gsview/epstool.htm) を使うと，
+[epstool](http://www.ghostgum.com.au/software/epstool.htm) を使うと，
 よい BoundingBox を得ることができます．<br>
 PSTricks で描く図だけを別ファイル foo.tex に保存して，
 

@@ -15,5 +15,5 @@ pukiwiki: "reStructuredText"
 
 ### エディタ {#e8f896d0}
 
-- [ReText](http://sourceforge.net/p/retext/home/ReText/)
+- [ReText](https://github.com/retext-project/retext)
 - [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!

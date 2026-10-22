@@ -21,7 +21,7 @@ JTeX は TeX 総合環境です．
 
 ### リリース情報/ChangeLog {#o3362d68}
 
-\[\[JTeX:https://imi.kyushu-u.ac.jp/~nkoiso/JTeX.html\] の最近の変更を参照．
+[JTeX](https://imi.kyushu-u.ac.jp/~nkoiso/JTeX.html) の最近の変更を参照．
 
 ### 動作環境 {#n90ed6bb}
 

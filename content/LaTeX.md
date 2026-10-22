@@ -90,7 +90,7 @@ TeX エンジンを必須とする方向に開発が進められています． 
 pTeX エンジン向けに，日本語組版に必要な機能を LaTeX2e に追加，もしくは改変したものです．
 注意が必要な改変点として，フォント関係のコマンド (NFSS2)，脚注とボトムフロートの出力順序の入れ替えなどがあります．
 
-もともと pTeX と同様にアスキー（現：[KADOKAWA](https://www.kadokawa.co.jp/) グループ会社の[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）によって開発されてきましたが，2016 年から日本語 TeX 開発コミュニティによって fork されて開発が続けられています．
+もともと pTeX と同様にアスキー（現：[角川アスキー総合研究所](https://www.lab-kadokawa.com/)）によって開発されてきましたが，2016 年から日本語 TeX 開発コミュニティによって fork されて開発が続けられています．
 
 - [GitHub - texjporg/platex: pLaTeX2e and miscellaneous macros for pTeX](https://github.com/texjporg/platex)
 

@@ -33,47 +33,53 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 まず目印に一辺100ポイントの正方形を描いておきます。
 間違えて消したり動かしたりしないようにロックしておくといいでしょう。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png" alt="100ポイントの正方形">
+<img src="https://warp.ndl.go.jp/20150806/20150804074413/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png" alt="100ポイントの正方形">
 
 <!-- #ref(https://web.archive.org/web/20101128142252if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji1.png,nolink,100ポイントの正方形) -->
 
 左下隅から12ポイント上がったところが起点になるように元となる文字を入力します。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png" alt="元になる文字の入力">
+<img src="https://warp.ndl.go.jp/20150806/20150804074414/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png" alt="元になる文字の入力">
 
 <!-- #ref(https://web.archive.org/web/20101128142207if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji2.png,nolink,元になる文字の入力) -->
 
 文字のアウトラインをとって，修正します。
 この場合，中央の「一」と「口」を選択して「←」キーを数回押し，次に「口」の左縦棒だけ選択してさらに「←」キーを数回押せばいいでしょう。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png" alt="文字の修正">
+<img src="https://warp.ndl.go.jp/20150806/20150804074411/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png" alt="文字の修正">
 
 <!-- #ref(https://web.archive.org/web/20101128142338if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji3.png,nolink,文字の修正) -->
 
 目印の正方形の枠の塗りをなしにしてから EPS 形式で保存します。
 ここではファイル名を kou-itai.eps としました。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png" alt="枠の塗りを無しに">
+<img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png" alt="枠の塗りを無しに">
 
 <!-- #ref(https://web.archive.org/web/20101128142310if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/gaiji4.png,nolink,枠の塗りを無しに) -->
 
 実際に LaTeX 文書中に入れてみましょう。
 
-- [dvips](/dvips/) を使う場合は，これを次のようにして使います。
+- [LuaLaTeX](/LuaTeX/) を使う場合は，まず EPS ファイルを PDF ファイルに変換します。
 
     ```
-    \documentclass[uplatex,dvips]{jsarticle}
+    epstopdf kou-itai.eps
+    ```
+
+    で kou-itai.pdf に変換し，それを次のようにして取り込みます。
+
+    ```
+    \documentclass{ltjsarticle}
     \usepackage{graphicx}
     \begin{document}
 
     精興社
 
-    精\raisebox{-0.12zw}{\includegraphics[width=1zw]{kou-itai.eps}}社
+    精\raisebox{-0.12zw}{\includegraphics[width=1zw]{kou-itai}}社
 
     \end{document}
     ```
 
-- [dvipdfmx](/dvipdfmx/) を使う場合は，まず EPS ファイルを PDF ファイルに変換しておくと処理が早くなります。
+- [upLaTeX](/upTeX,upLaTeX/) + [dvipdfmx](/dvipdfmx/) を使う場合は，まず EPS ファイルを PDF ファイルに変換します。
 
     ```
     epstopdf kou-itai.eps
@@ -88,11 +94,6 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 
     精興社
 
-    ```
-
-    <!-- 精\raisebox{-0.12zw}{\includegraphics[width=1zw,bb=0 0 100 100]{kou-itai}}社 -->
-
-    ```
     精\raisebox{-0.12zw}{\includegraphics[width=1zw]{kou-itai}}社
 
     \end{document}
@@ -100,7 +101,7 @@ Adobe-Japan1-7 にもない文字は [Illustrator](/Illustrator/) や [Inkscape]
 
 これを処理した結果です：
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9480318/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
+<img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png" alt="精興社と外字の例">
 
 <!-- #ref(https://web.archive.org/web/20101128142225if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/seikosha.png,nolink,精興社と外字の例) -->
 
@@ -128,7 +129,7 @@ IPAmj 明朝の MJ 文字図形名の番号を指定して当該グリフを表�
 
 有用なマークを EPS 化されたものがありましたら，実体または URL を送っていただければ幸いです。 
 
-- Apple マーク [apple.eps](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/apple.eps)（comp.text.tex に流れていたもの）
+- Apple マーク [apple.eps](https://warp.ndl.go.jp/20150806/20150805053920/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/apple.eps)（comp.text.tex に流れていたもの）
     - コメントにも書いてありますが stroke を fill に直すと塗り潰されます。
 
 - Command マーク（要調整）：

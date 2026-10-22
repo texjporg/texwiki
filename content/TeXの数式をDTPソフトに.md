@@ -42,7 +42,7 @@ TeX の数式をクリック一つで PDF/EPS/SVG/PNG/JPEG 形式などの画像
 
 例えば次の数式を作ってみましょう。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
+<img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg" alt="LaTeX で作った数式">
 
 <!-- #ref(https://web.archive.org/web/20111118063529if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/testeq.jpg,nolink,LaTeX で作った数式) -->
 
@@ -74,14 +74,14 @@ $ dvips -E testeq.dvi -o testeq.eps
 
 上で作った EPS ファイルをそのまま InDesign 2.0 に「配置」すると，次のようになります。
 
-<img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
+<img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg" alt="InDesign 2.0 に配置したところ">
 
 <!-- #ref(https://web.archive.org/web/20111118063622if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/indesign.jpg,nolink,InDesign 2.0 に配置したところ) -->
 
 上の例では，LaTeX のデフォルトのフォント (Computer Modern) を使いました。
 「[数式フォントの比較](https://warp.da.ndl.go.jp/info:ndljp/pid/11040512/oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html)」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 <!-- 「[[数式フォントの比較:https://web.archive.org/web/20180404184346/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/comparison.html]]」のページに，LaTeX で簡単に使えるいくつかの数式フォントを比較しています。 -->
 
-InDesign で数式を扱う場合は [Latex to InDesign](https://creativepro.com/files/kahrel/indesign/Latex-to-InDesign.html) や [latex.insert](https://github.com/ksatolab-uec/latex-insert) が便利です。
+InDesign で数式を扱う場合は [Latex to InDesign](https://creativepro.com/latex-to-indesign/) や [latex.insert](https://github.com/ksatolab-uec/latex-insert) が便利です。
 
 ## Illustrator に配置 1 {#q2427dd4}
 
@@ -91,7 +91,7 @@ PDF でもリンク配置なら問題ありません。macOS のプレビュー�
 
 <table>
 <tbody>
-<tr><td><img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="https://warp.da.ndl.go.jp/info:ndljp/pid/9530765/oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
+<tr><td><img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator.jpg" alt="箱しか見えない EPS 画像"></td><td><img src="https://warp.ndl.go.jp/20150806/20150805053920im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/illustrator2.jpg" alt="Illustrator から保存したプレビュー附き EPS 画像"></td></tr>
 <tr><td>Illustrator 10.0.3 に配置したところ。箱しか見えない。</td><td style="text-align:center">Illustrator から保存した EPS。</td></tr>
 </tbody>
 </table>
@@ -251,12 +251,6 @@ jsclasses を使う方法以外に，\scalebox で数式を拡大する方法も
 
 [LibreOffice/Apache OpenOffice](/LibreOffice/) Math は OLE に対応しています。
 
-### LaTeX Equation Editor (LaTeX EE) {#d5aceebb}
-
-[LaTeX Equation Editor (for Windows)](http://latexeqedit.sourceforge.net/) に OLE 機能を追加したものが [LaTeX Equation Editor (LaTeX EE)](https://sourceforge.net/projects/latexee/) です。
-本来は [MiKTeX](/MiKTeX/) を必要とするソフトウェアですが，MiKTeX の texify.exe の代わりに TeX Live の uplatex.exe を指定すれば MiKTeX がなくても動作します。
-PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の背景色が透過されず白地のままであるという注意点があります。
-
 ### 上記以外の方法 {#m911530d}
 
 [プレゼンツール](</プレゼンツール/>)を参照してください。
@@ -276,5 +270,6 @@ PNG 形式での貼りつけになるので拡大・縮小に弱く，数式の�
 
 ## オマケ {#u03ab148}
 
-- [tex.eps](http://web.archive.org/web/20111118062821/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/tex.eps)
+- [tex.eps](https://warp.ndl.go.jp/20150806/20150805053920/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/tex.eps)
+    <!-- -&ref(http://web.archive.org/web/20111118062821/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/tex.eps); -->
     （Illustrator でアウトラインを取った TeX のロゴです。何かに使えるかな？）

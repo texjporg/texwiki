@@ -54,10 +54,10 @@ TeX Live をインストールする場合は Linux のやり方を参照して�
 
 install-tl-unx.tar.gz をダウンロードします．
 
-- wget を使用する場合
+- wcurl を使用する場合
 
     ```
-    $ wget https://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
+    $ wcurl https://ftp.math.utah.edu/pub/texlive/tlpretest/install-tl-unx.tar.gz
     ```
 
 - curl を使用する場合

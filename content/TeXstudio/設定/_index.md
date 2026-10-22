@@ -55,7 +55,7 @@ PDF ビューアは
 
 - 組み込みPDFビューア（埋め込み）
 - 組み込みPDFビューア（別枠）
-- 外部 PDF ビューア
+- 外部PDFビューア
 
 のいずれかを選択するようになっているので環境や用途に合わせて適切な PDF ビューアを選択してください．
 
@@ -65,7 +65,7 @@ PDF ビューアは
 
 {{< children >}}
 
-を参照して「LaTeX」「PdfLaTeX」「DviPdf」「BibTeX」「Biber」などの項目に具体的なコマンドを割り当てます．
+を参照して「LaTeX」「DviPdf」「BibTeX」「Biber」「Makeindex」などの項目に具体的なコマンドを割り当てます．
 
 ### エディタ {#m95b4393}
 
@@ -92,9 +92,44 @@ Qt 5 版の TeXstudio で日本語入力するとカーソルが文字の位置�
 
 <img src="/attach/TeXstudio/%E8%A8%AD%E5%AE%9A/TeXstudio-editor-detail-02.png" alt="">
 
-### 構文の強調表示 {#w15e140c}
+### 一般 {#w15e140c}
 
-- [http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio](http://tex.stackexchange.com/questions/108315/anyone-willing-to-share-his-her-custom-dark-theme-for-texstudio)
+外観の設定ができます．
+
+#### スタイル {#i9d82915}
+
+Windows 版の TeXstudio では以下のスタイルが選択できます．
+
+- windowsvista
+- Windows
+- Fusion
+- Adwaita (txs)
+- Adwaita Dark (txs)
+- Orion Dark
+- 既定
+
+ダークテーマを使用したい場合はリストから
+
+- Adwaita Dark (txs)
+- Orion Dark
+
+のどちらかを選択します．
+
+#### 配色 {#s2c26a03}
+
+- クラシック
+- モダン
+- モダン － ダーク
+
+の中から選択できます．
+
+#### Icon Theme {#d3b00909}
+
+- Colibre
+- Oxygen Modern
+- Oxygen Classic
+
+の中から選択できます．
 
 ### 設定ファイル {#g2cec334}
 

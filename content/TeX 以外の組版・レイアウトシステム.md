@@ -19,7 +19,7 @@ TeX 以外の組版・レイアウトシステムについて紹介します。T
 
 Apache FOPは、XSL-FOの処理系で、[Apache XML Graphics プロジェクト](http://xmlgraphics.apache.org/)により開発されています。PDF を含む様々な出力フォーマットに対応しています。Java による実装です。
 
-2022年12月11日の段階では Version 2.8 が最新のリリースとなっています。フロートのサポートや macOS のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
+2025年1月24日の段階では Version 2.10 が最新のリリースとなっています。フロートのサポートや macOS のヒラギノなど PostScript 系 OpenType フォントへの対応といった、重要な更新が含まれます。
 
 活発な開発下にあります。
 
@@ -285,13 +285,13 @@ SILE の最新版は 2015年6月3日現在、0.9.2 です。[公式ページ](ht
 
 YesLogic Pty. Ltd. によって開発されている商品です。オープンソースではありません。非商用利用については無償で提供されています。（最初のページにロゴが入るなどの制限がありますが）
 
-### [Vivliostyle](http://vivliostyle.com/ja/) {#v10e66b1}
+### [Vivliostyle](https://vivliostyle.org/ja/) {#v10e66b1}
 
 Vivliostyle プロジェクトは電子出版の時代にマッチする新しい組版システムを、Webブラウザ技術をベースに作ることを目指しています。
 
-現在（2022年12月11日）、入手可能な最新安定版はv2.19.2です。
+現在（2025年1月24日）、入手可能な最新安定版はv2.31.0です。
 
-- [Vivliostyle](http://vivliostyle.com/ja/sample/)
+- [サンプル | Vivliostyle](https://vivliostyle.org/ja/samples/)
 - [Vivliostyle Chrome 拡張](https://chrome.google.com/webstore/detail/vivliostyle/ffeiildjegeigkbobbakjjmfeacadbne)
 
 詳細はまだ分かりませんが、品質に関してはブラウザのレンダリング能力に大きく依存するようです。

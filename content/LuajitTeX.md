@@ -69,7 +69,7 @@ LuajitTeX は Windows, macOS, Linux, \*BSD で動作します。
 
 LuajitTeX は TeX Live がサポートしている全ての環境で提供されているわけではありません。
 
-[x86_64-solaris](https://svn.tug.org/texlive/trunk/Master/bin/x86_64-solaris/) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
+[x86_64-solaris](https://git.texlive.info/texlive/tree/Master/bin/x86_64-solaris?h=tags/texlive-2026.1) では LuajitTeX は提供されていないのでこれらの環境を使用している場合は LuaTeX を使用してください。
 
 ### インストール {#e0acc4f5}
 

@@ -29,5 +29,5 @@ TeX 関連プログラムには Ruby で書かれたスクリプトがありま�
 
 #### Windows でのインストール {#g82e00ee}
 
-Windows 用の配布バイナリには [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases) や [RubyInstaller](https://rubyinstaller.org/) や [ActiveScriptRuby](http://www.artonx.org/data/asr/) があります．
+Windows 用の配布バイナリには [RubyInstaller](https://rubyinstaller.org/) や [RubyInstaller2](https://github.com/oneclick/rubyinstaller2/releases) があります．
 必要に応じて好みのバイナリをインストールするとよいでしょう．

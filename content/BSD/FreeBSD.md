@@ -186,13 +186,9 @@ make &amp;&amp; make installで導入できます．
 
 #### PDF/PostScript関連 {#v58c994c}
 
-Ghostscript 10.08.0 (2026-09-08) にアップデートして cjk-gs-integrate 20210625.0 を実行するとエラーになるようです。
+Ghostscript 10.08.0 (2026-09-08) にアップデートして cjk-gs-integrate 20210625.0 を実行するとエラーになるので cjk-gs-integrate 20260926.0 を使用してください。
 
 - [cjk-gs-integrate is not compatible with ghostscript 10.08.0](https://github.com/texjporg/cjk-gs-support/issues/52)
-
-以下のプルリクエストを参照して cjk-gs-integrate.pl を修正するとエラーが解消するようです。
-
-- [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51)
 
 <table>
 <tbody>

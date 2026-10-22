@@ -58,7 +58,7 @@ elseif has('macunix')
   let g:viewer = 'skim'
 else
   let g:typeset = 'pdfuplatex'
-  let g:viewer = 'evince'
+  let g:viewer = 'okular'
 endif
 let g:master = expand("%:t")
 
@@ -108,10 +108,6 @@ function! ViewFile()
     call TeXShop()
   elseif g:viewer == 'skim'
     call Skim()
-  elseif g:viewer == 'evince'
-    call Evince()
-  elseif g:viewer == 'fwdevince'
-    call FwdEvince()
   elseif g:viewer == 'okular'
     call Okular()
   elseif g:viewer == 'zathura'
@@ -152,11 +148,7 @@ function! SetViewer(viewer)
       let g:viewer = 'preview'
     endif
   else
-    if a:viewer == 'evince'
-      let g:viewer = 'evince'
-    elseif a:viewer == 'fwdevince'
-      let g:viewer = 'fwdevince'
-    elseif a:viewer == 'texworks'
+    if a:viewer == 'texworks'
       let g:viewer = 'texworks'
     elseif a:viewer == 'okular'
       let g:viewer = 'okular'
@@ -167,7 +159,7 @@ function! SetViewer(viewer)
     elseif a:viewer == 'acroread'
       let g:viewer = 'acroread'
     else
-      let g:viewer = 'evince'
+      let g:viewer = 'okular'
     endif
   endif
 endfunction
@@ -446,43 +438,6 @@ function! Skim()
   return ''
 endfunction
 
-function! Evince()
-  if &ft != 'tex'
-    echo "calling Evince from a non-tex file"
-    return ''
-  end
-
-  let masterDir = expand("%:p:h")
-  let masterTeXFile = g:master
-  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
-  let viewer = 'evince'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" &'
-
-  execute 'lcd ' . masterDir
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
-function! FwdEvince()
-  if &ft != 'tex'
-    echo "calling FwdEvince from a non-tex file"
-    return ''
-  end
-
-  let masterDir = expand("%:p:h")
-  let currentTeXFile = expand("%:t")
-  let masterTeXFile = g:master
-  let masterPDFFile = fnamemodify(masterTeXFile, ":t:r") . '.pdf'
-  let viewer = 'fwdevince'
-  let execString = 'cd ' . masterDir . ' && ' . viewer . ' "' . masterPDFFile . '" ' . line(".") . ' "' . currentTeXFile . '" &'
-
-  execute 'lcd ' . masterDir
-  execute 'silent! !' execString
-  redraw!
-  return ''
-endfunction
-
 function! Okular()
   if &ft != 'tex'
     echo "calling Okular from a non-tex file"
@@ -647,8 +602,7 @@ noremap <expr> <C-K>v ViewFile()
 ### Linux の場合 {#q23aa2de}
 
 タイプセットはデフォルトでは pdfupLaTeX を使用します．<br>
-ビューアはデフォルトでは Evince を使用します．<br>
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
+ビューアはデフォルトでは Okular を使用します．<br>
 GVim を使用するとエラーが発生しても表示されずに GVim が固まったように見える (x を入力して &lt;Enter> を入力すると OK です) ので，コンソール版の Vim を使用することをおすすめします．<br>
 
 > <table>
@@ -670,8 +624,6 @@ GVim を使用するとエラーが発生しても表示されずに GVim が固
 > <tr><td>:Typeset lualatex &lt;Enter&gt;</td><td>タイプセットを LuaLaTeX に変更</td></tr>
 > <tr><td>:Typeset xelatex &lt;Enter&gt;</td><td>タイプセットを XeLaTeX に変更</td></tr>
 > <tr><td>:Typeset latexmk &lt;Enter&gt;</td><td>タイプセットを Latexmk に変更</td></tr>
-> <tr><td>:Viewer evince &lt;Enter&gt;</td><td>ビューアを Evince に変更</td></tr>
-> <tr><td>:Viewer fwdevince &lt;Enter&gt;</td><td>ビューアを fwdevince に変更</td></tr>
 > <tr><td>:Viewer okular &lt;Enter&gt;</td><td>ビューアを Okular に変更</td></tr>
 > <tr><td>:Viewer zathura &lt;Enter&gt;</td><td>ビューアを zathura に変更</td></tr>
 > <tr><td>:Viewer qpdfview &lt;Enter&gt;</td><td>ビューアを qpdfview に変更</td></tr>

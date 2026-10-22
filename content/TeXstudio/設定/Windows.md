@@ -56,7 +56,7 @@ LuaLaTeX
 
 : synctex view -i "@:0:?c:am.tex" -o "?am.pdf" -x "texworks --position=&#x25;&#x25;{page+1} '&#x25;&#x25;{output}'"
 
-: "C:\Users\\%USERNAME%\AppData\Local\Programs\sioyek-release-windows\sioyek.exe" --inverse-search '"C:\Program Files\texstudio\texstudio.exe" "&#x25;&#x25;1" -line &#x25;&#x25;2' "?am.pdf" --forward-search-file "?c:am.tex" --forward-search-line @
+: "C:\Users\\%USERNAME%\AppData\Local\Programs\sioyek-release-windows\sioyek.exe" --reuse-window --execute-command "turn_on_synctex" --inverse-search '"C:\Program Files\texstudio\texstudio.exe" "&#x25;&#x25;1" -line &#x25;&#x25;2' "?am.pdf" --forward-search-file "?c:am.tex" --forward-search-line @
 
 : "C:\Program Files\Okular\bin\okular.exe" --unique "file:?am.pdf#src:@ ?c:am.tex"
 

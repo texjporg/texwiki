@@ -36,6 +36,7 @@ neocomplete は Vim のプラグインです．
 neosnippet は Vim のプラグインです．
 
 - [neosnippet](https://github.com/Shougo/neosnippet.vim)
+- [neosnippet-snippets](https://github.com/Shougo/neosnippet-snippets)
 
 ### License {#d570ab41}
 

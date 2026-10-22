@@ -23,6 +23,7 @@ Sierra 以降の macOS では Karabiner は動作せず、Karabiner-Elements を
 
 - [https://ke-complex-modifications.pqrs.org/#swap_yen_and_backslash_jis](https://ke-complex-modifications.pqrs.org/#swap_yen_and_backslash_jis)
 - [https://ke-complex-modifications.pqrs.org/json/swap_yen_and_backslash_jis.json](https://ke-complex-modifications.pqrs.org/json/swap_yen_and_backslash_jis.json)
+- [TeX打ちの最高環境を構築したい](https://ddd3h.github.io/posts/2022-09-13/)
 - [M1 Macでバックスラッシュを打つ](https://qiita.com/nekoko/items/ad0c6d36cbe7d7ac36f4)
 - [【エンジニア必見】Macでのバックスラッシュ2つの入力方法](https://q3task.com/mac_backslash/)
 - [JIS配列のMacで、バックスラッシュをさくっと入力する方法(JetBrainsのIDE対応)](https://qiita.com/kunit/items/f6ec7e159d93002bfc48)

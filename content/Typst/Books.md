@@ -11,6 +11,7 @@ pukiwiki: "Typst/Books"
 
 ## Typst/Books {#s845eb33}
 
+- [技術書典：技術書典オンラインマーケット：検索 - Typst](https://techbookfest.org/market/search?q=Typst)
 - [縦書きTypst](https://raintrees.net/projects/a-painter-and-a-black-cat/wiki/%E7%B8%A6%E6%9B%B8%E3%81%8DTypst) ([技術書典マーケット](https://techbookfest.org/product/k0LEpgzNvHPixwXXrmbegB)) 2026年04月11日 (技術書典20)
 - Re:VIEWとTypst 4版 ([技術書典マーケット](https://techbookfest.org/product/hSrUQ0qPtvVJRhbf5xQagr)) 2026年04月11日 (技術書典20) &lt;-- [Re:VIEWとTypst 3版](https://x.com/masashi_214/status/1994949248732074046) 2025年11月30日 (技術書典19) &lt;-- [Re:VIEWとTypst 2版](https://x.com/masashi_214/status/1989303426476650994) 2025年11月15日 (技術書典19) &lt;-- [Re:VIEWとTypst](https://x.com/masashi_214/status/1933635912770203803) 2025年06月14日 (技術書典18)
 - [組版ソフトウェアTypstを活用しよう](https://usami-k.hatenablog.com/entry/2025/10/26/192601) ([技術書典マーケット](https://techbookfest.org/product/4f4ja1rWFuAzgakQ2FQ3TH)、[BOOTH](https://booth.pm/ja/items/7558156)) 2025年10月26日 (技書博12)

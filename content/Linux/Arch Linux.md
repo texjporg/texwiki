@@ -37,8 +37,8 @@ Manjaro は Arch Linux ベースのユーザーフレンドリーな Linux デ�
 - [https://archlinux.jp/groups/x86_64/texlive-lang/](https://archlinux.jp/groups/x86_64/texlive-lang/)
 - [https://archlinux.jp/packages/?q=texlive](https://archlinux.jp/packages/?q=texlive)
 - [https://archlinux.org/packages/?name=texlive-langjapanese](https://archlinux.org/packages/?name=texlive-langjapanese)
-- [https://archlinux.org/packages/?name=texlive-latexextra](https://archlinux.org/packages/?name=texlive-latexextra)
 - [https://archlinux.org/packages/?name=texlive-luatex](https://archlinux.org/packages/?name=texlive-luatex)
+- [https://archlinux.org/packages/?name=texlive-latexextra](https://archlinux.org/packages/?name=texlive-latexextra)
 
 通常は texlive-langjapanese と texlive をインストールします．
 
@@ -46,12 +46,12 @@ Manjaro は Arch Linux ベースのユーザーフレンドリーな Linux デ�
 sudo pacman -S texlive-langjapanese texlive
 ```
 
-日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-latexextra と texlive-luatex をインストールします．
-[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
+日本語関連パッケージのみインストールする場合は texlive-langjapanese と texlive-luatex と texlive-latexextra をインストールします．
 [LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-luatex をインストールする必要があります．
+[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-latexextra をインストールする必要があります．
 
 ```
-sudo pacman -S texlive-langjapanese texlive-latexextra texlive-luatex
+sudo pacman -S texlive-langjapanese texlive-luatex texlive-latexextra
 ```
 
 ### [Ghostscript](/Ghostscript/) {#q940a9dc}

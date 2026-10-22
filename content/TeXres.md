@@ -23,7 +23,7 @@ TeXres は、Rust で記述された、単一の実行ファイルで構成さ�
     - [ratexはtexresに改名。Rust製TeX「texres」v0.7.0で日本語の文書を作る方法まとめ](https://zenn.dev/dannchu/articles/texres-japanese-guide)
 - [「TeXres」の検索結果 - Qiita](https://qiita.com/search?q=TeXres)
     - [とりあえずRatexの仕様をまとめてみた（0.4版）](https://qiita.com/zr_tex8r/items/de9b8d5b108dd3967710)
-- [今更だがRatexの0.3.0版で日本語する件について](https://zrbabbler.hatenablog.com/entry/2026/09/22/062924)
+- [TeXres lang:ja - 検索 / X](https://x.com/search?q=TeXres%20lang%3Aja&f=live)
 
 ### インストール {#ye61bf13}
 
@@ -35,6 +35,8 @@ Windows, macOS, Linux のバイナリがあります。TeXres 0.7.7 をインス
 ### 使い方 {#h990923c}
 
 #### コマンドラインオプション {#d8f63fc9}
+
+- [https://github.com/leoliu0/texres/blob/main/crates/tex-cli/src/bin/texmk.rs](https://github.com/leoliu0/texres/blob/main/crates/tex-cli/src/bin/texmk.rs)
 
 ```
 PS C:\> texres --version

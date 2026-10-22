@@ -286,9 +286,8 @@ let g:Tex_CompileRule_dvi = 'uplatex -synctex=1 -interaction=nonstopmode -file-l
 let g:Tex_BibtexFlavor = 'bibtexu'
 let g:Tex_MakeIndexFlavor = 'upmendex $*.idx'
 let g:Tex_UseEditorSettingInDVIViewer = 1
-let g:Tex_ViewRule_pdf = 'xdg-open'
-"let g:Tex_ViewRule_pdf = 'evince'
-"let g:Tex_ViewRule_pdf = 'okular --unique'
+let g:Tex_ViewRule_pdf = 'okular --unique'
+"let g:Tex_ViewRule_pdf = 'papers'
 "let g:Tex_ViewRule_pdf = 'zathura -x "vim --servername synctex -n --remote-silent +\%{line} \%{input}"'
 "let g:Tex_ViewRule_pdf = 'qpdfview --unique'
 "let g:Tex_ViewRule_pdf = 'texworks'
@@ -298,8 +297,6 @@ let g:Tex_ViewRule_pdf = 'xdg-open'
 ```
 
 ***
-
-[Evince](/Evince/) の forward and inverse search は [Vim-LaTeX#Evince との連携 (forward and inverse search)](/Vim-LaTeX/#j6ff1448) を参照してください．
 
 ## 使い方 {#v4639f7b}
 
@@ -694,107 +691,6 @@ let g:Tex_ViewRule_pdf = 'rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-in
 に設定します．
 
 SumatraPDF の inverse search は ダブルクリックで行います．
-
-## Evince との連携 (forward and inverse search) {#j6ff1448}
-
-- Evince/fwdevince
-- [Vim, Evince and forward and backward LaTeX synctex search](http://jlebl.wordpress.com/2011/01/13/vim-evince-and-forward-and-backward-latex-synctex-search/)
-- [Synctex support for Vim and Evince through DBus](https://github.com/peder2tm/sved)
-
-evince で forward and inverse search を使用するには LaTeX コマンドに -synctex=1 を追加して
-
-$HOME/.vim/vimrc の g:Tex_ViewRule_pdf を
-
-***
-
-```
-let g:Tex_ViewRule_pdf = 'evince'
-```
-
-***
-
-に設定します．
-
-$HOME/.vim/ftplugin/latex-suite/compiler.vim を修正します．<br>
-fwdevince は Evince/fwdevince の fwdevince を使用します．<br>
-
-***
-
-- $HOME/.vim/ftplugin/latex-suite/compiler.vim
-
-***
-
-```
-function! Tex_ForwardSearchLaTeX()
-...
-  else
-    " We're either UNIX or Mac and using a UNIX-type viewer
-...
-    else
-      " We must be using a generic UNIX viewer
-      " syntax is: viewer TARGET_FILE LINE_NUMBER SOURCE_FILE
-
-      if viewer =~? "evince"
-
-        let execString = 'silent! !fwdevince' .' '. fnamemodify(Tex_GetMainFileName(), ":p:r") .'.pdf '. line(".") .' '. expand("%:p")
-
-```
-
-<!--       elseif viewer =~? "okular" -->
-<!--  -->
-<!--         let execString = 'silent! !'.viewer.' - -unique "file:'.mainfnameRoot.'.'.s:target.'\#src:'.line('.').' '.expand("%:p").'"' -->
-<!--  -->
-
-```
-      else
-
-        let execString = 'silent! !'.viewer.' "'.mainfnameRoot.'.'.s:target.'" '.line('.').' "'.expand('%').'"'
-
-      endif
-
-    endif
-```
-
-***
-
-evince の forward search は
-
-1. Vim を起動して TeX ファイルを開きます．
-1. :TTarget pdf
-1. \ll でコンパイルして PDF ファイルを作成します．
-1. \ls で evince で PDF ファイルをプレビューして forward search を行います．
-
-evince で inverse search をする場合は
-
-```
-$ vim --servername hoge hoge.tex
-```
-
-または
-
-```
-$ gvim --servername hoge hoge.tex
-```
-
-として起動します．
-
-evince の inverse search は Ctrl + 左クリックで行います．
-
-evince_backward_search を使って inverse search を行う場合は
-
-```
-$ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l<Enter>' %f"
-```
-
-として evince_backward_search を起動すると evince から inverse search ができます．
-
-行をハイライトしたい場合は
-
-```
-$ evince_backward_search hoge.pdf "vim --servername hoge -n --remote-silent '+%l<Enter>:match Search /\%%ll/' %f"
-```
-
-とします．
 
 ## 関連サイト {#fc8d75eb}
 

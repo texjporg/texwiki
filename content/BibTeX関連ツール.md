@@ -39,11 +39,7 @@ BibTeX を便利に使うためのソフトウェアの一覧です．
 |  bible  | windows | bibファイル作成  |
 |  bibextract  | UNIX | bibファイルから検索条件に合致したエントリを抽出  |
 |  bibsort  | UNIX  | .bibファイルの中の文献データをsortするプログラム．emacsのBiBTeXモードのM-x bibtex-sort-bufferよりの断然速い  |
-| [xbibfile](https://mirror.ctan.org/biblio/bibtex/utils/xbibfile/) | GTK | .bib ファイルの作成・検索などを対話的に行う GUI プログラム．日本語が通らない． |
-| [tkbibtex](https://mirror.ctan.org/biblio/bibtex/utils/tkbibtex/) | tcl/tk | .bib ファイル作成編集プログラム．日本語表示 OK だが，atokx では入力できない． |
-| [lookbibtex](https://mirror.ctan.org/biblio/bibtex/utils/lookbibtex/) |   | .bib ファイル内の検索と置換 |
 | [bibcursed](https://github.com/dominictristram/bibcursed) | ncurses | .bibファイル編集ソフト．ncursesを利用したインターフェイスで非常に高速に入力できる．日本語OK |
-| [BibFile Editor](https://www.vector.co.jp/soft/win95/writing/se082871.html) | Windows | 簡易エディタ． |
 | [bibclean](https://ftp.math.utah.edu/pub/bibclean/) | unix | .bibファイルの文法チェックや整形を行うプログラム．日本語可． |
 
 [Emacs](/Emacs/) を使用する場合は，bibtex-mode (bibtex.el) が断然効率的です．<br>
@@ -131,13 +127,13 @@ BibTeX 形式の出力がある Web アプリを公開しているサイトで�
 |  名前  |  動作条件  |  説明  |
 |---|---|---|
 |  [findbib](https://ctan.org/pkg/findbib)  | UNIX, lynx  | 決められたキーで引用しておくと，WWW-SPIRES.SLAC.STANFORD.EDUの文献アーカイブから文献情報を取得してくれるプログラム  |
-| [Text-BibTeX](http://www.gerg.ca/software/btOOL/) | perl | BibTeXを扱うためのperlモジュール．[btOOL](http://www.gerg.ca/software/btOOL/)で公開されている． |
+| [Text-BibTeX](https://metacpan.org/dist/Text-BibTeX) | perl | BibTeXを扱うためのperlモジュール． |
 | [RubyBTeX](https://github.com/kazutomi/rubybtex) | Ruby | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
 | [BibTeX-Ruby](https://github.com/inukshuk/bibtex-ruby) | Ruby | BibTeXを扱うためのRubyライブラリ |
 | [Bibulous](https://nzhagen.github.io/bibulous/) | Python | BibTeXコマンド・クローン．文献スタイルファイルは独自型式のものを用いる． |
 | [Pybtex](https://pybtex.org/) | Python | BibTeXコマンド・クローン．書誌データはYAML形式で書く |
-| [bibtex-spirit](https://bitbucket.org/sergiu/bibtex-spirit) | C++ | BibTeX C++ parser library |
-| [BibtexParser](https://bibtexparser.readthedocs.org/en/latest/) | Python | bibファイル形式をパースするライブラリ |
+| [bibtex-spirit](https://github.com/sergiud/bibtex-spirit) | C++ | BibTeX C++ parser library |
+| [BibtexParser](https://pypi.org/project/bibtexparser/) | Python | bibファイル形式をパースするライブラリ |
 
 ## LaTeX パッケージの利用 {#baf51e15}
 

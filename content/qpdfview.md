@@ -29,7 +29,7 @@ Windows, macOS, Linux
 
 ### License {#v29be396}
 
-[GPLv2](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/COPYING)
+[GPLv2](https://github.com/darealshinji/qpdfview/blob/master/COPYING)
 
 ### リリース情報 {#k3e6b6c1}
 
@@ -37,8 +37,8 @@ Windows, macOS, Linux
 
 ### ChangeLog {#ne9f67d7}
 
-- [CHANGES](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/CHANGES)
-- [コミットログ](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/changes)
+- [CHANGES](https://github.com/darealshinji/qpdfview/blob/master/CHANGES)
+- [コミットログ](https://github.com/darealshinji/qpdfview/commits/master/)
 
 ## ダウンロード/インストール {#h3948c41}
 
@@ -66,7 +66,8 @@ qpdfview-0.5.0-win64.zip を展開して qpdfview-0.5.0-win64 フォルダーを
 
 ### Arch Linux {#ua5dc612}
 
-- [https://www.archlinux.org/packages/?q=qpdfview](https://www.archlinux.org/packages/?q=qpdfview)
+- [https://aur.archlinux.org/packages/qpdfview](https://aur.archlinux.org/packages/qpdfview)
+- [https://aur.archlinux.org/packages/qpdfview-bzr](https://aur.archlinux.org/packages/qpdfview-bzr)
 
 ### Linux Mint/Ubuntu {#c6d3b357}
 
@@ -119,7 +120,7 @@ qpdfview-0.5.0-win64.zip を展開して qpdfview-0.5.0-win64 フォルダーを
 
 ### コマンドラインオプション {#f3a7bfad}
 
-- [http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/sources/main.cpp](http://bazaar.launchpad.net/~adamreichold/qpdfview/trunk/view/head:/sources/main.cpp)
+- [https://github.com/darealshinji/qpdfview/blob/master/sources/main.cpp](https://github.com/darealshinji/qpdfview/blob/master/sources/main.cpp)
 
 ```
 $ qpdfview --help

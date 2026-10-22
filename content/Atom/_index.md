@@ -8,7 +8,7 @@ pukiwiki: "Atom"
 
 # Atom
 
-## [Atom](https://github.com/atom/atom) (開発終了) → [Pulsar](https://pulsar-edit.dev/) (Atom の後継) {#f28ffeb8}
+## [Atom](https://github.com/atom/atom) (開発終了) → [Pulsar](/Pulsar/) (Atom の後継) {#f28ffeb8}
 
 Atom は、開発終了したオープンソースのテキストエディタです。
 
@@ -19,7 +19,7 @@ Windows、macOS、 Linux をはじめとした、様々な環境で動作しま�
 "A hackable text editor for the 21st Century" として、拡張可能で柔軟な、新技術を積極的に応用したエディタを目指していましたが開発は終了しました。
 内蔵のパッケージマネージャを用いて、多種多様な拡張パッケージを導入・管理することができ、また、Node.js (JavaScript) や CSS などの Web 技術を使ってカスタマイズ可能なエディタでした。
 
-現在では [Pulsar](https://pulsar-edit.dev/) が Atom の後継として開発されています。
+現在では [Pulsar](/Pulsar/) が Atom の後継として開発されています。
 
 ***
 
@@ -47,6 +47,8 @@ LaTeX での文書作成を補助するパッケージも色々とあります�
 <!-- -[[atom-latex:https://web.pulsar-edit.dev/packages/atom-latex]] - - Atom から LaTeX 文書をコンパイル・プレビュー -->
 - [latex-tools](https://packages.pulsar-edit.dev/packages/latex-tools) Pular から LaTeX 文書をコンパイル
     - [https://github.com/asiloisad-pulsar/latex-tools](https://github.com/asiloisad-pulsar/latex-tools)
+- [language-latex-plus](https://packages.pulsar-edit.dev/packages/language-latex-plus) LaTeX の構文ハイライトとスニペット
+    - [https://github.com/asiloisad-pulsar/language-latex-plus](https://github.com/asiloisad-pulsar/language-latex-plus)
 - [pdf-viewer](https://packages.pulsar-edit.dev/packages/pdf-viewer) SyncTeX に対応した PDF ビューア
     - [https://github.com/asiloisad-pulsar/pdf-viewer](https://github.com/asiloisad-pulsar/pdf-viewer)
 - [latex](https://web.pulsar-edit.dev/packages/latex) -- Atom から LaTeX 文書をコンパイル・プレビュー

@@ -24,7 +24,7 @@ PostScript 形式での出力が可能なため TeX への挿入も簡単に行�
 
 ### 動作環境 {#g2cd5520}
 
-Windows (Win64, Win32, Cygwin), OS X, Linux
+Windows (Windows, Cygwin), macOS, Linux
 
 ### ダウンロード {#c2add6d5}
 

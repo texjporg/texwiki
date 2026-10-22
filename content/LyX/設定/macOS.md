@@ -34,7 +34,7 @@ PDFコマンドのリストから /Applications/Skim.app/Contents/SharedSupport/
 
 ## Skim との連携 {#m16eb5ea}
 
-\[文書(D)\] &gt; \[設定(S)...\] &gt; \[形式\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
+\[文書(D)\] &gt; \[設定(S)...\] &gt; \[出力\] の出力と同期(Y)をチェックして調整用マクロ(U):から \synctex=1 を選択します．
 
 変換子のコマンドオプションに直接 -synctex=1 を追加しても OK です．
 

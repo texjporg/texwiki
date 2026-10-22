@@ -28,7 +28,7 @@ Cygwin で [TeX Live](</TeX Live/>) を使用する場合は
 
 ### TeX Live 公式パッケージ {#cfed3869}
 
-以下の操作で curl というコマンドを使用しますが，Cygwin
+以下の操作で wcurl というコマンドを使用しますが，Cygwin
 インストール時にパッケージ選択画面で Default のままインストールした場合，curl
 がインストールされていないので，そのコマンドが使えません．
 あらためて setup-x86_64.exe
@@ -52,7 +52,7 @@ Cygwin にインストールしておきましょう．
 install-tl-unx.tar.gz をダウンロードします．
 
 ```
-$ curl -OL https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+$ wcurl https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 ```
 
 install-tl-unx.tar.gz を展開します．
@@ -121,19 +121,11 @@ $ tlmgr update --self --all
 
 #### タイプセットのしかた {#dab5905e}
 
-(u)pLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
+upLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
 
-- pLaTeX + dvipdfmx の場合
-
-    ```
-    $ ptex2pdf -l -ot '-synctex=1' foo.tex
-    ```
-
-- upLaTeX + dvipdfmx の場合
-
-    ```
-    $ ptex2pdf -u -l -ot '-synctex=1' foo.tex
-    ```
+```
+$ ptex2pdf -u -l -ot '-synctex=1' foo.tex
+```
 
 ### TeX Live/Cygwin <a id="texlive-cygwin"></a> {#xad0a00d}
 
@@ -161,7 +153,7 @@ Cygwin オフィシャルインストーラの setup-x86_64.exe を使って TeX
 
 #### タイプセットのしかた {#ba49fc90}
 
-(u)pLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
+upLaTeX + dvipdfmx を実行する場合は [ptex2pdf](/ptex2pdf/) が便利です．
 使用法は上の TeX Live 公式パッケージの該当項目を参照してください．
 
 ### 注意点 {#o2b6fd0e}
@@ -207,7 +199,6 @@ D  "gs -q -dNOPAUSE -dBATCH -dEPSCrop -sDEVICE=pdfwrite -dCompatibilityLevel=%v 
     - [The Cygwin Project mailing list archives](https://cygwin.com/ml/cygwin/)
     - [The cygwin-announce mailing list archives](https://cygwin.com/ml/cygwin-announce/)
     - [The cygwin-apps mailing list archives](https://cygwin.com/ml/cygwin-apps/)
-- [Cygwin Ports project](https://sourceware.org/cygwinports/)
 
 #### 動作環境 {#n6af06c2}
 

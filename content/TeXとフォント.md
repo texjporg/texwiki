@@ -155,7 +155,7 @@ TeX (LaTeX) が登場した当時は，日本語フォントは「本文用明�
 なお，フォントの埋め込みの可否については，ライセンスも考慮する必要があります。
 [フォントの埋め込みとライセンス](</フォントの埋め込みとライセンス/>)を参照してください。
 
-最新の TeX Live / W32TeX では，TeX と共に配布されている 原ノ味フォント，IPAex/IPA フォントの他，ヒラギノ，MS，小塚，モリサワ，游明朝・游ゴシックが簡便に指定できるようになっています。[OTF](/OTF/) パッケージを利用すると，5書体以上の多書体化もできます。[和文の仕組み](</和文の仕組み/>)に日本語フォントを使う仕組みについての説明があります。
+TeX Live では，TeX と共に配布されている 原ノ味フォント，IPAex/IPA フォントの他，ヒラギノ，MS，小塚，モリサワ，游明朝・游ゴシックが簡便に指定できるようになっています。[OTF](/OTF/) パッケージを利用すると，5書体以上の多書体化もできます。[和文の仕組み](</和文の仕組み/>)に日本語フォントを使う仕組みについての説明があります。
 
 （ヒラギノは，Mac (macOS) では OS に付属していますが，Windows で利用する場合は別途購入する必要があります。）
 
@@ -164,8 +164,8 @@ TeX (LaTeX) が登場した当時は，日本語フォントは「本文用明�
 dvipdfmx を使用して IPAex を埋め込んだ PDF を作成するには以下のようにします。
 
 ```
-$ ptex2pdf -e -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex （pLaTeX 用）
 $ ptex2pdf -u -l -ot '-synctex=1' -od '-f uptex-ipaex.map' hoge.tex （upLaTeX 用）
+$ ptex2pdf -e -l -ot '-synctex=1' -od '-f ptex-ipaex.map' hoge.tex （pLaTeX 用）
 ```
 
 ### PDF に埋め込むフォントをあらかじめ設定する {#ge692ee0}
@@ -184,13 +184,6 @@ $ sudo kanji-config-updmap-sys status      （現在の埋め込み設定を確�
 ```
 haranoaji, ipaex, ipa
 ```
-
-- Mac (macOS) でヒラギノを使いたい場合には事前準備が必要です。
-    - [ヒラギノフォント](</ヒラギノフォント/>) を参照してください。
-- Windows でヒラギノを使いたい場合にも事前準備が必要です。
-    - [Windows の TeX Live 2013 でヒラギノフォントを埋め込む方法](https://ichiro-maruta.blogspot.com/2013/08/windows-tex-live-2013.html)
-    - ヒラギノ基本6書体パック [forum:1467](https://okumuralab.org/tex/mod/forum/discuss.php?d=1467)
-    - PDF へのフォントの埋め込みに失敗する [forum:1491](https://okumuralab.org/tex/mod/forum/discuss.php?d=1491)
 
 ### OTF の設定（TeX 文書のプリアンブルにて設定） {#xad9bd71}
 
@@ -368,7 +361,7 @@ LaTeX におけるフォントの基礎をおさえたら、実際にフォン�
 
 ### ツールのインストール {#qb371a3e}
 
-フォントファイルから必要なものを生成するツールとして、LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。pltotf プログラムをあらかじめインストールしておく必要があります。これは fontware パッケージに含まれます。W32TeX には，LCDF Typetools も pltotf も入っています。
+フォントファイルから必要なものを生成するツールとして、LCDF Typetools を導入します。 [tlmgr](/tlmgr/) からインストール可能です。パッケージ名は lcdftypetools です。pltotf プログラムをあらかじめインストールしておく必要があります。これは fontware パッケージに含まれます。
 
 LCDF Typetools のインストールができたら、とりあえず付属の otfinfo でフォント情報を見てみましょう。
 
@@ -583,7 +576,7 @@ Virtual Font は小さなプログラムの集まりです。これは様々な�
    kpsewhich ptmr7t.vf
 ```
 
-が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeX Live では　fontware パッケージに含まれます。W32TeX では最小インストールに含まれますので既に入っています。
+が、そのファイルの場所を返すかどうかでわかります。VF ファイルはバイナリファイルですが、vftovp というプログラムで、人間が読める形のテキストファイルに「戻す」ことができます。vftovp は TeX Live では　fontware パッケージに含まれます。
 
 ```
    vftovp ptmr7t

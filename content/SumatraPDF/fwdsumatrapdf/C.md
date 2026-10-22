@@ -7,6 +7,8 @@ pukiwiki: "SumatraPDF/fwdsumatrapdf/C"
 
 # SumatraPDF/fwdsumatrapdf/C
 
+[SumatraPDF](/SumatraPDF/) > [fwdsumatrapdf](/SumatraPDF/fwdsumatrapdf/) > C
+
 ## fwdsumatrapdf の例示ソース {#w4b5f216}
 
 fwdsumatrapdf（SumatraPDF で forward search を行うツール）の，C 言語による例示ソースです． <!-- 意外と fwdsumatrapdf 自体は外部サイトからリンクされていることが判明したため，最も使いやすい --> <!-- C 言語版のみソースを再公開します． -->

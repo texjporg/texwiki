@@ -11,8 +11,9 @@ pukiwiki: "VimTeX"
 
 ## VimTeX {#z107ab3c}
 
-VimTeX は Vim/Neovim の LaTeX プラグインです．
+VimTeX は Vim と Neovim の LaTeX プラグインです．
 
+- [VimTeX — LaTeX for Vim &amp; Neovim](https://vimtex.org/)
 - [GitHub - lervag/vimtex: VimTeX: A modern Vim and neovim filetype plugin for LaTeX files.](https://github.com/lervag/vimtex)
 - [MyTeXpert:Vim/vimtex](https://web.archive.org/web/20211022201430/https://mytexpert.osdn.jp/?Vim%2Fvimtex)
 

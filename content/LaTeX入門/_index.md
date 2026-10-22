@@ -8,9 +8,7 @@ pukiwiki: "LaTeX入門"
 
 # LaTeX入門
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/320px-LaTeX_logo.svg.png" alt="&quot;LaTeX 入門&quot;" width="140" height="57">
-
-<div style="text-align:left"><span style="font-size:36px">入門</span></div>
+<img src="https://warp.ndl.go.jp/20151106/20151105020853im_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/intro/title.jpg" alt="&quot;LaTeX 入門&quot;">
 
 <div style="text-align:right"><strong>TeX</strong> /t&eacute;k/［名］〔コンピュータ〕テフ，テック</div>
 

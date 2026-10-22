@@ -11,7 +11,7 @@ pukiwiki: "Atom/Markdown"
 
 ## Markdown 環境の整備 {#gb093a0b}
 
-Markdown 関連の拡張パッケージも様々あります。Markdown での文書作成にはそれほど苦労しないと思われるので、入力補助ツールはあまり必要ないでしょう。必要に応じて探していくことになると思いますが、とりあえず、[markdown-writer](https://atom.io/packages/markdown-writer) などがあればよいでしょう。
+Markdown 関連の拡張パッケージも様々あります。Markdown での文書作成にはそれほど苦労しないと思われるので、入力補助ツールはあまり必要ないでしょう。必要に応じて探していくことになると思いますが、とりあえず、[markdown-writer](https://web.pulsar-edit.dev/packages/markdown-writer) などがあればよいでしょう。
 
 Atom は標準で Markdown 文書のリアルタイムプレビュー機能を備えています。
 
@@ -65,9 +65,9 @@ markdown-pdf パッケージを導入することで、PDF への出力も可能
 
 ### 数式の表示 {#s3c9391f}
 
-[markdown-preview-plus](http://atom.io/packages/markdown-preview-plus) パッケージにより、LaTeX 形式での数式入力と表示が可能となります。
+[markdown-preview-plus](https://web.pulsar-edit.dev/packages/markdown-preview-plus) パッケージにより、LaTeX 形式での数式入力と表示が可能となります。
 MathJax による描画で、保存した HTML にも結果は反映されますが、markdown-pdf では対応していないようです。MathJax を用いる markdown-preview-plus 以外にも、KaTeX を用いる
-[markdown-preview-katex](https://atom.io/packages/markdown-preview-katex) や [atom-markdown-katex](https://atom.io/packages/atom-markdown-katex) があります。
+[markdown-preview-katex](https://web.pulsar-edit.dev/packages/markdown-preview-katex) や [atom-markdown-katex](https://web.pulsar-edit.dev/packages/atom-markdown-katex) があります。
 
 数式を含んだ文書を PDF へ変換したい場合は、一旦 HTML で保存してから、
 [wkhtmltopdf](http://wkhtmltopdf.org/) を利用するとなんとかできます。

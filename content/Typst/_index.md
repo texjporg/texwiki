@@ -49,6 +49,7 @@ Typst は新しい組版ソフトです。
 - [Typst を試す・学ぶための記事](https://www.metaphysica.info/2024/typst-guidance/)
 - [Typstのここがすごい！！](https://qiita.com/hikoharu14142/items/aa8cfb70d079b0324fba)
 - [Typst で論文を書く (How-to-use-typst-for-paper-jp.pdf)](https://kimushun1101.github.io/How-to-use-typst-for-paper-jp/How-to-use-typst-for-paper-jp.pdf) (PDF)
+- [Rust製TeX「ratex」で日本語PDFを作る：字形の埋め込みとTypst・LuaLaTeXとの速度比較](https://zenn.dev/dannchu/articles/ratex-japanese-pdf-typst-benchmark)
 
 ### Typst ↔ LaTeX {#dc855731}
 

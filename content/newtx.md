@@ -268,10 +268,7 @@ MathTime については [MathTime](/MathTime/) にまとめて書きました�
 
 ### 関連リンク {#na79627d}
 
-- [Ringサーバ](http://www.ring.gr.jp/)
-    の
-    [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
-
+- [CTAN:fonts/txfonts/](https://mirror.ctan.org/fonts/txfonts/)
 - 本家CTANサーバ:
     [https://ctan.org/tex-archive/fonts/txfonts/](https://ctan.org/tex-archive/fonts/txfonts/)
 

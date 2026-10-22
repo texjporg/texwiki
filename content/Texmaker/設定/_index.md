@@ -45,7 +45,7 @@ pukiwiki: "Texmaker/設定"
 
 <ins>O</ins>ptions &gt; Configure Texmaker &gt; Quick Build
 
-LaTeX + dvipdfm + View PDF を選択します．
+LuaLaTeX + View PDF を選択します．
 
 ユーザー定義でコマンドを指定して実行することもできます．
 
@@ -66,4 +66,4 @@ Quick Build を実行して複数のビューアが起動してしまう場合�
 
 日本語の文書を作成する場合は Spelling dictionary の Inline のチェックを外します．
 
-重要なファイルを作成する場合は Backup documents every 10 min にチェックを入れます．
+重要なファイルを作成する場合は Record backup of opened files every 10 minutes にチェックを入れます．

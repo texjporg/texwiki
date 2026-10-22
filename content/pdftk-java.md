@@ -26,21 +26,21 @@ PDF ファイルの結合，分割，並べ替え，ページ回転，ページ�
 
 ### インストール {#a7k286v4}
 
+#### Windows {#z534175a}
+
+- [https://community.chocolatey.org/packages/pdftk-java](https://community.chocolatey.org/packages/pdftk-java)
+
 #### macOS {#c0e9bc49}
 
 - [https://formulae.brew.sh/formula/pdftk-java](https://formulae.brew.sh/formula/pdftk-java)
 
-macOS Sonoma / m-cOS Ventura / macOS Monterey / macOS Big Sur の場合は
-
-```
-brew install pdftk-java
-```
-
-を実行します。
-
 #### Arch Linux {#g0d03019}
 
 - [https://archlinux.org/packages/?sort=&q=pdftk](https://archlinux.org/packages/?sort=&q=pdftk)
+
+#### Ubuntu {#b7eeaec5}
+
+- [https://packages.ubuntu.com/ja/pdftk-java](https://packages.ubuntu.com/ja/pdftk-java)
 
 #### Debian {#v2f9ea11}
 

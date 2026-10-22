@@ -14,7 +14,7 @@ bidi は，左から右または右から左へ双方向 (Bi-Directional)
 
 ### bidi {#w2512f78}
 
-- [https://github.com/tex-xet/bidi](https://github.com/tex-xet/bidi)
+- [https://gitlab.com/persian-tex/bidi](https://gitlab.com/persian-tex/bidi)
 - [https://ctan.org/pkg/bidi](https://ctan.org/pkg/bidi)
 - [http://tex.stackexchange.com/questions/tagged/bidi](http://tex.stackexchange.com/questions/tagged/bidi)
 

@@ -101,6 +101,8 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
 ただし、ネットワーク経由ではうまくインストールできない場合があるので、その場合は ISO Image をダウンロードしてください。
 
 - <strong>HTTPS</strong>
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - JAIST 北陸先端科学技術大学院大学 (石川県能美市)
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/tlnet/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
@@ -115,8 +117,6 @@ TeX Live は，ネットワーク経由でのインストールが推奨され�
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/](https://jp.mirrors.cicku.me/ctan/systems/texlive/tlnet/)
     - mirror.kris.fail (Cloudflare CDN)
         - [https://mirror.kris.fail/ctan/systems/texlive/tlnet/](https://mirror.kris.fail/ctan/systems/texlive/tlnet/)
-    - CTAN ミラー
-        - [https://mirror.ctan.org/systems/texlive/tlnet/](https://mirror.ctan.org/systems/texlive/tlnet/)
     - 日本語 TeX 開発コミュニティ (さくらインターネット (大阪府大阪市北区大深町６−３８ 3F グラングリーン大阪 北館 JAM BASE))
         - [https://texlive.texjp.org/current/tlnet/](https://texlive.texjp.org/current/tlnet/)
 
@@ -127,6 +127,8 @@ TeX Live の ISO Image はサイズが大きいので、以下のミラーサイ
 TUG から直接ダウンロードするよりもミラーサイトを利用したほうが早くダウンロードできます。
 
 - <strong>HTTPS</strong>
+    - CTAN ミラー
+        - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
     - JAIST 北陸先端科学技術大学院大学 (石川県能美市)
         - [https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/](https://ftp.jaist.ac.jp/pub/CTAN/systems/texlive/Images/)
     - 山形大学 工学部／大学院理工学研究科／大学院有機材料システム研究科 (山形県米沢市)
@@ -141,8 +143,6 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
         - [https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/](https://jp.mirrors.cicku.me/ctan/systems/texlive/Images/)
     - mirror.kris.fail (Cloudflare CDN)
         - [https://mirror.kris.fail/ctan/systems/texlive/Images/](https://mirror.kris.fail/ctan/systems/texlive/Images/)
-    - CTAN ミラー
-        - [https://mirror.ctan.org/systems/texlive/Images/](https://mirror.ctan.org/systems/texlive/Images/)
 
 ### [TLContrib](/TLContrib/) <a id="tlcontrib"></a> {#obb5b17e}
 
@@ -159,6 +159,10 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 ### Archive {#s2007652}
 
 [Historic archive - TeX Users Group](https://www.tug.org/historic/)
+
+### メーリングリスト {#c93fb114}
+
+[tug.org Mailing Lists](https://tug.org/mailman/listinfo)
 
 ### 関連リンク {#udd48b1b}
 
@@ -178,6 +182,7 @@ TUG から直接ダウンロードするよりもミラーサイトを利用し�
 
 #### ChangeLog {#g68f0fa7}
 
+- [https://tug.org/pipermail/tex-live-commits/](https://tug.org/pipermail/tex-live-commits/)
 - [TeX Live and Subversion (and Git)](https://www.tug.org/texlive/svn/)
 - \[[ViewVC\] Index of: texlive/trunk](https://svn.tug.org/texlive/trunk/)
     - [log](https://svn.tug.org/texlive/trunk/?view=log)

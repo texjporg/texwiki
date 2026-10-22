@@ -13,7 +13,7 @@ pukiwiki: "siunitx"
 
 siunitx とは，SI 単位をサポートするスタイルファイルで，si, SIstyle, siunits
 等のパッケージの上位版といえるものです．
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に標準で含まれています．
+[TeX Live](</TeX Live/>) に標準で含まれています．
 
 ### SI 単位の正しい表記法 {#ue8fdee5}
 

@@ -50,7 +50,7 @@ TeX は「お絵描き」ソフトではない以上，飾り枠の類は苦手�
 
 枠の途中でのページ分割の必要がなければ，比較的単純な形状の枠については ascmac パッケージが提供する itembox 環境といったものが存在します。
 さらに，枠の四隅の形状を変更した例が [qa:45183](https://okumuralab.org/~okumura/texfaq/qa/45183.html) にみられます。
-ascmac を pict2e パッケージと共存させると \oval が衝突するので，ZR さんの [bxascmac パッケージ](http://zrbabbler.sp.land.to/bxptool.html)を代わりに使いましょう ([qa:57384](https://okumuralab.org/~okumura/texfaq/qa/57384.html), [qa:57396](https://okumuralab.org/~okumura/texfaq/qa/57396.html))。
+ascmac を pict2e パッケージと共存させると \oval が衝突するので，ZR さんの [bxascmac パッケージ](https://zr-tex8r.github.io/pythmeni/bxptool.html)を代わりに使いましょう ([qa:57384](https://okumuralab.org/~okumura/texfaq/qa/57384.html), [qa:57396](https://okumuralab.org/~okumura/texfaq/qa/57396.html))。
 
 また，[niceframe パッケージ](https://mirror.ctan.org/macros/latex/contrib/niceframe/)は「飾り文字を並べて作成した枠（ページ分割は不可）」を作成するマクロを提供しています。
 niceframe パッケージを用いる場合には，このパッケージで使用するフォントの Type 1 版を [CTAN:fonts/niceframe/](https://mirror.ctan.org/fonts/niceframe/) から入手しておくとよいでしょう。

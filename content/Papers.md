@@ -50,10 +50,21 @@ Papers では Evince の機能である SyncTeX、XPS、PostScript、DVI のサ�
 ### Windows {#idf7eb36}
 
 - [https://github.com/cosmicvi/papers-for-windows](https://github.com/cosmicvi/papers-for-windows)
+- [https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Papers/PDF/Desktop](https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Papers/PDF/Desktop)
+
+    ```
+    winget install Papers.PDF.Desktop
+    ```
+
+    <!-- winget install -e - -id Papers.PDF.Desktop -->
 
 ### macOS {#c720955a}
 
 - [https://formulae.brew.sh/formula/gnome-papers](https://formulae.brew.sh/formula/gnome-papers)
+
+    ```
+    brew install gnome-papers
+    ```
 
 ### Linux {#p9649c9c}
 

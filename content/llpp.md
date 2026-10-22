@@ -11,10 +11,12 @@ llpp は [MuPDF](/MuPDF/) ベースの PDF ビューアです．
 
 SyncTeX にも対応しています．
 
+- [https://github.com/criticic/llpp](https://github.com/criticic/llpp)
 - [https://repo.or.cz/w/llpp.git](https://repo.or.cz/w/llpp.git)
 
 ### インストール {#e6b097fa}
 
+- [https://aur.archlinux.org/packages/llpp](https://aur.archlinux.org/packages/llpp)
 - [https://aur.archlinux.org/packages/llpp-git](https://aur.archlinux.org/packages/llpp-git)
 
 ### 使い方 {#q4f7d920}
@@ -44,4 +46,3 @@ Options:
 ### 関連リンク {#y89558ab}
 
 - [https://wiki.archlinux.org/index.php/Llpp](https://wiki.archlinux.org/index.php/Llpp)
-- [https://wiki.archlinuxjp.org/index.php/Llpp](https://wiki.archlinuxjp.org/index.php/Llpp)

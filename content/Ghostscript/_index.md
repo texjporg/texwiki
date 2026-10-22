@@ -30,13 +30,9 @@ Ghostscript 10.08.0 (2026-09-08) 以降に更新してください。Ghostscript
 - [【セキュリティ日報】GhostscriptのPDF経由コード実行やruby-jwt認証回避ほか 167件 | つみかさね](https://tsumikasane.net/security/daily/2026-09-21/)
 - [GhostscriptのJPEG 2000出力処理にヒープバッファオーバーフロー（CVE-2026-39919）— 細工したPDFでメモリ破損からコード実行のおそれ、CVSS 4.0は9.3で10.08.0が修正](https://cyber.nexsight.co/articles/2026/09/17/ghostscript-cve-2026-39919-jpeg2000-heap-overflow-2026-09-17/)
 
-Ghostscript 10.08.0 (2026-09-08) にアップデートして cjk-gs-integrate 20210625.0 を実行するとエラーになるようです。
+Ghostscript 10.08.0 (2026-09-08) にアップデートして cjk-gs-integrate 20210625.0 を実行するとエラーになるので cjk-gs-integrate 20260926.0 を使用してください。
 
 - [cjk-gs-integrate is not compatible with ghostscript 10.08.0](https://github.com/texjporg/cjk-gs-support/issues/52)
-
-以下のプルリクエストを参照して cjk-gs-integrate.pl を修正するとエラーが解消するようです。
-
-- [bugfix: cidfmap genaration uses currentsystemparams instead of pssystemparams](https://github.com/texjporg/cjk-gs-support/pull/51)
 
 ### 動作環境 {#e8b195dc}
 

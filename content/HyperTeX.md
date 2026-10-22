@@ -71,7 +71,7 @@ LaTeX2e では [hyperref](/hyperref/) パッケージを使うのが標準的な
 や
 
 ```
-\href{http://oku.edu.mie-u.ac.jp/~okumura/foo.html#bar}{ここ}
+\href{https://okumuralab.org/~okumura/foo.html#bar}{ここ}
 ```
 
 のようにします．

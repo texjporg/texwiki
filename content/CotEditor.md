@@ -23,7 +23,7 @@ CotEditor は macOS 専用プレーンテキストエディタです．
 
 ### 動作環境 {#he679a78}
 
-macOS Sonoma 14 以降
+macOS
 
 ### リリース情報 {#ed02eb4b}
 

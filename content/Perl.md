@@ -59,6 +59,6 @@ C:\strawberry\perl\bin
 
 ### 関連リンク {#f1072f2a}
 
-- [https://twitter.com/zr_tex8r/status/1760325097947279422](https://twitter.com/zr_tex8r/status/1760325097947279422)
+- [https://x.com/zr_tex8r/status/1760325097947279422](https://x.com/zr_tex8r/status/1760325097947279422)
 - [Windows の ANSI コードページを知りたい話(1)](https://zrbabbler.hatenablog.com/entry/20180512/1526105583)
 - [Windows の ANSI コードページを知りたい話(2)](https://zrbabbler.hatenablog.com/entry/20180513/1526160513)

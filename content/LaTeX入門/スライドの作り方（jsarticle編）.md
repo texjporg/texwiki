@@ -21,7 +21,7 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 [文献引用](</文献引用/>) /
 [索引作成](</索引作成/>) /
 [LaTeX マクロの作成](</LaTeX入門/LaTeXマクロの作成/>) /
-スライドの作り方（jsarticle 編） /
+スライドの作り方（ltjsarticle 編） /
 [応用的な使い方](</LaTeX入門/応用的な使い方/>) /
 [発展編](</LaTeX入門/発展編/>)
 
@@ -29,16 +29,16 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 
 ## スライドの作り方 {#zce7020e}
 
-これまでレポート作成の例などを jsarticle クラスを使って示してきましたが，同じ jsarticle クラスに slide オプションを与えると簡単にスライドを作成できます．
+ltjsarticle クラスに slide オプションを与えると簡単にスライドを作成できます．
 また，LaTeX にはスライド作成に特化したクラスもありますので，ここで簡単に紹介します。
 
-### jsarticle クラスによるスライドの雛形 {#c192429c}
+### ltjsarticle クラスによるスライドの雛形 {#c192429c}
 
-スライドに特化した他のパッケージのような高度な機能はありませんが，通常の jsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
+スライドに特化した他のパッケージのような高度な機能はありませんが，通常の ltjsartlcle と同じ機能が使えますので，覚え直すことがほとんどないという利点があります．
 
 ```
-\documentclass[dvipdfmx,slide,papersize]{jsarticle}
-\usepackage[dvipdfmx]{graphicx,color}
+\documentclass[slide,papersize]{ltjsarticle}
+\usepackage{graphicx,color}
 \begin{document}
 
 \title{題名}
@@ -65,7 +65,7 @@ pukiwiki: "LaTeX入門/スライドの作り方（jsarticle編）"
 \begin{document} の前に
 \pagecolor\[rgb\]{0.8,0.8,1} のようにページ色を指定することもできます．
 
-### jsarticle クラスの slide オプション実例 {#jce15567}
+### ltjsarticle クラスの slide オプション実例 {#jce15567}
 
 - [LaTeX jsclassesでプレゼンテーション](http://windom.phys.hirosaki-u.ac.jp/fswiki/wiki.cgi?page=LaTeX+jsclasses%A4%C7%A5%D7%A5%EC%A5%BC%A5%F3%A5%C6%A1%BC%A5%B7%A5%E7%A5%F3)
 - [LaTeX + jsarticle + slide でスライドを作る](http://xaro.hatenablog.jp/entry/2013/09/26/004920)

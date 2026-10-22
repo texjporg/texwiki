@@ -61,9 +61,9 @@ LaTeX -> <ins>P</ins>DF
 V<ins>i</ins>ew PDF File
 : &nbsp;
 
-: evince "%e.pdf"
-
 : okular --unique "%e.pdf"
+
+: papers "%e.pdf"
 
 : zathura -x "geany +&#x25;{line} &#x25;{input}" "%e.pdf"
 
@@ -102,5 +102,4 @@ V<ins>i</ins>ew PDF File
 
 ## 関連リンク {#j4cca0b1}
 
-- [GeanyでもSyncTeX、fwdevinceを使って逆順検索（inverse search）も可能にする方法](https://web.archive.org/web/20211023055055/https://www.lab-ssk.com/modifications-of-fwdevince-and-geany-to-enable-synctex-especially-inverse_search-on-chaletos)
 - [geany-dark-scheme](https://github.com/dflock/geany-dark-scheme)

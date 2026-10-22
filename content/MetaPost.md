@@ -58,9 +58,10 @@ mpost heart
 
 TeX Live 収録の MetaPost のバージョンは以下の通りです。
 
-- TeX Live 2013： バージョン 1.803
-- TeX Live 2014： バージョン 1.902
+- TeX Live 2019： バージョン 2.00
 - TeX Live 2015： バージョン 1.999
+- TeX Live 2014： バージョン 1.902
+- TeX Live 2013： バージョン 1.803
 
 ### ソフトウェア情報 {#qc61f4d1}
 

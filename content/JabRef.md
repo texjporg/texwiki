@@ -13,7 +13,7 @@ JabRef は オープンソースでクロスプラットフォームの文献管
 
 以下の特徴があります。
 
-- BibTeX ファイル編集ソフトとして使用可能で、日本語の読込書込ができます。
+- bib ファイル編集ソフトとして使用可能で、日本語の読込書込ができます。
 - 検索、PDF との連携、ファイルごとにタブ化され、異なるファイル間でエントリをコピー＆ペーストできます。
 - 文献リストを HTML へエクスポートでき，[JabRefによるBibTeX文献管理とJab2HTML](https://keijisaito.info/arc/biblio/jabref_jbib.htm)の Jab2HTML を用いると、より詳しい情報の入った文献リスト HTML が作成できます。
 
@@ -25,6 +25,11 @@ JabRef は オープンソースでクロスプラットフォームの文献管
 
 Windows, macOS, Linux<br>
 Java で動作
+
+### 使い方 {#c622d611}
+
+- [論文情報管理ツールJabRef](https://www.aise.ics.saitama-u.ac.jp/~gotoh/HowToUseJabRef.html)
+- [雰囲気でBibTeX入門（その２）](https://paper3510mm.github.io/latex/bibtex2.html)
 
 ### 開発サイト {#h6ded3f1}
 
@@ -47,3 +52,8 @@ Java で動作
 #### 不具合 {#gaf56730}
 
 [https://github.com/JabRef/jabref/issues](https://github.com/JabRef/jabref/issues)
+
+### 関連リンク {#jad6ac05}
+
+- [forumSearch:JabRef](https://okumuralab.org/tex/mod/forum/search.php?id=2&search=JabRef)
+- [https://x.com/search?q=JabRef+lang%3Aja&f=live](https://x.com/search?q=JabRef+lang%3Aja&f=live)

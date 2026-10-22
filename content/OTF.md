@@ -25,7 +25,7 @@ OTF パッケージでも文字が足りない場合は，[TeX と外字](</TeX�
     OTF では正方形（高さ : 深さ = 88 : 12）に直されました。
     従来のものは min10.tfm のしがらみを引きずった長方形でした。
 
-- OTF パッケージの扱えるグリフは [Adobe-Japan1-7](/Adobe-Japan1-7/)，Adobe-GB1-5，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
+- OTF パッケージの扱えるグリフは [Adobe-Japan1-7](/Adobe-Japan1-7/)，Adobe-GB1-6，Adobe-CNS1-7，Adobe-Korea1-2 のプロポーショナルでない固定幅のもの（全角幅，半角幅，1/3 角幅など）です。
     CID 番号に完全対応している DVIware で[ヒラギノ](http://www.jiyu-kobo.co.jp/works/works.html#Anchor-001)を使用する場合には従属欧文およびプロポーショナル仮名が使用可能です。
 
 ## インストール {#g2a8e99e}
@@ -38,7 +38,7 @@ Adobe 提供の CMap ファイルが2009年9月、オープンソースになり
 [adobe-type-tools/cmap-resources · GitHub](https://github.com/adobe-type-tools/cmap-resources/) から "Clone or download" &gt; "Download ZIP" をクリックすると、
 Adobe-Identity-0,
 Adobe-Japan1-7,
-Adobe-GB1-5,
+Adobe-GB1-6,
 Adobe-CNS1-7,
 Adobe-KR-9,
 Adobe-Korea1-2
@@ -68,7 +68,7 @@ Adobe Acrobat Reader で使えるアジア・拡張言語フォントパック
 
 これで次のものをテストしてみます。
 
-- \UTF{...} は十六進4桁の Unicode 番号
+- \UTF{...} は十六進4桁または5桁の Unicode 番号
 - \CID{...} は十進の CID 番号
 
 を使います。
@@ -962,6 +962,7 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 - [otf パッケージを使って明朝体太文字を出力する](http://d.hatena.ne.jp/chichimotsu/20120831#1346430178) （chichimotsu さん）
 - [pLaTeX2e における和文フォントの扱いと多書体化の話](http://texuttex.g2.xrea.com/jfontsettings.html) （ut さん）
 - [TeX Live and upTeX](https://okumuralab.org/tex/mod/forum/discuss.php?d=1148)
+- [japanese-otf の非公式マニュアル](https://github.com/yarakos95/japanese-otf-unofficial-guide) （Yarakashi Kikohshi さん）
 
 ### ChangeLog {#k32bef0c}
 

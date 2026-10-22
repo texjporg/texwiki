@@ -13,16 +13,17 @@ TeX Writer は iOS, iPadOS, Android で動作する、高機能な(La)TeX統合�
 
 TeX Writer は日本語の文書をローカルでコンパイルできます。
 
-TeX Writer の公式サイトで日本語用のテンプレートファイル [jp-template.tex](https://litchie.com/tex-writer/ios-guide#toc-7) が配布されています。
+TeX Writer の公式サイトで日本語用のテンプレートファイル [jp-template.tex](https://texwriter.net/templates?c=language&id=12) が配布されています。
 
 <strong>公式Webサイト</strong>
 
-- [TeX Writer](https://texwriter.net/) 接続がタイムアウトする場合は --&gt; [Wayback Machine](https://web.archive.org/web/20240521002221/https://texwriter.net/)
-    <!-- ([[Wayback Machine:https://web.archive.org/web/20240521002221/https://texwriter.net/]]) -->
-    <!-- - - [[Templates:https://texwriter.net/templates]] -->
-    <!-- ([[Wayback Machine:https://web.archive.org/web/20200810042527/https://texwriter.net/templates]]) -->
-
-- [https://litchie.com/tex-writer/ios-guide](https://litchie.com/tex-writer/ios-guide)
+- [TeX Writer](https://texwriter.net/)
+    - [Guide](https://texwriter.net/apps/guide.html)
+        <!-- ([[Wayback Machine:https://web.archive.org/web/20240521002221/https://texwriter.net/]]) -->
+        - [TeX Writer iOS User Manual](https://litchie.com/tex-writer/ios-guide)
+        - [TeX Writer LISP Reference Manual(twinit.l)](https://litchie.com/tex-writer/twlisp)
+        - [TeX Writer - Templates](https://texwriter.net/templates)
+            <!-- ([[Wayback Machine:https://web.archive.org/web/20200810042527/https://texwriter.net/templates]]) -->
 
 <strong>App Store</strong>
 

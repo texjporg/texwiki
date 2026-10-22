@@ -1118,8 +1118,8 @@ hiramaru-w4-v     HiraMaruProN-W4-Identity-V
 
 ```
 %%% Chinese TrueType font by Arphic Technology
-%%% See ftp://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
-%%%     http://www.ring.gr.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
+%%% See https://ftp.gnu.org/pub/non-gnu/chinese-fonts-truetype/
+%%%     https://ftp.jaist.ac.jp/pub/GNU/non-gnu/chinese-fonts-truetype/
 /ShanHeiSun-Light             << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (bsmi00lp.ttf) >> ;
 /ZenKai-Medium                << /FileType /TrueType  /CSI [(CNS1) 5]    /Path (bkai00mp.ttf) >> ;
 /BousungEG-Light-GB           << /FileType /TrueType  /CSI [(GB1) 5]     /Path (gbsn00lp.ttf) >> ;
@@ -1342,7 +1342,7 @@ ps2pdf cjkintro.ps
 また，日本語とモンゴル語を共存させる際に役立つ LRTate.sty というものもあります。
 詳細は「[Babel を使った最新版 LaTeX2e、pLaTeX2e での多言語環境構築](http://web.archive.org/web/20130727072828/http://www2.tba.t-com.ne.jp/ing/babel.html)」にもありますが，ここではインストール方法について解説します。
 
-まず[montex.tgz](http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[diagnose.sty](http://www.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/diagnose/texinput/diagnose.sty)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) の3つをダウンロードします。
+まず[montex.tgz](https://web.archive.org/web/20250810150847/http://userpage.fu-berlin.de/~corff/im/MLS/montex.tgz)，[diagnose.sty](https://ftp.jaist.ac.jp/pub/CTAN//macros/latex/contrib/diagnose/texinput/diagnose.sty)，[LRtate.sty](http://web.archive.org/web/20061111070106/http://www.ns.musashi-tech.ac.jp/~inoue/Pages/TeX/LRtate.sty) の3つをダウンロードします。
 
 montex.tgz のファイルを tar + gzip 形式に対応した展開ソフトで展開し，次のようにコピーします。
 $TEXMF は share/texmf-local など，ご自分の環境に読み替えてください。
@@ -1484,7 +1484,7 @@ uplatex  でコンパイルします。
 
 - 何かここの記述について間違いなどございましたらコメント欄にお願いします。 -- 書いた人 2005-12-14 (水) 16:33:57
 - 今回の修正事項はレイアウト上の単純ミスの訂正のみです。 -- 書いた人 2005-12-21 (水) 18:34:10
-- 多言語処理についてまとめて下さりありがとうございます（素晴らしいです!）。VnTeXについてですが、CTANでより新しいバージョンが配布されているようです（[VnTeX-3.02](ftp://ftp.ring.gr.jp/pub/text/CTAN/language/vietnamese/vntex/)）。[安田さんの解説](http://yasuda.homeip.net/tex/cjk.html#d)もあります。 -- 栗山雅俊 2005-12-26 (月) 20:58:48
+- 多言語処理についてまとめて下さりありがとうございます（素晴らしいです!）。VnTeXについてですが、CTANでより新しいバージョンが配布されているようです（[VnTeX-3.2.2](https://mirror.ctan.org/language/vietnamese/vntex/)）。[安田さんの解説](http://yasuda.homeip.net/tex/cjk.html#d)もあります。 -- 栗山雅俊 2005-12-26 (月) 20:58:48
 - ありがとうございます。最新のものについても暇を見て試してみたいと思います。 -- 書いた人 2005-12-27 (火) 08:56:43
 - Utf82TeX をバージョンアップしました。 -- 安田 2005-12-28 (水) 10:49:28
 - ご報告ありがとう御座いました。新しい記述に暇を見つけて直していきたいと思います。 -- 書いた人 2005-12-28 (水) 18:31:31

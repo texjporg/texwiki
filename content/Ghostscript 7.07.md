@@ -16,7 +16,7 @@ pukiwiki: "Ghostscript 7.07"
 全面的に2015年の環境で可能かどうか検証作業中です。
 動く保証はまったくありませんので，<strong>よくわからない方はこのページは無視してください</strong>。 (2015-10-16)
 
-Ghostscript 10.08.0 (2026-09-08) は、日本語の縦書き PostScript ファイルを画面に表示すると正しく表示できるのですが、ps2pdf で PDF に変換すると句読点（。、）などの表示がおかしくなりました。
+Ghostscript 10.08.0 (2026-09-08) は、日本語の縦書き PostScript ファイル（[article9.ps](https://git.texlive.info/texlive/plain/Master/tlpkg/tlgs/kanji/article9.ps)）を画面に表示すると正しく表示できるのですが、ps2pdf で PDF に変換すると句読点（。、）などの表示がおかしくなりました。
 
 かつて Ghostscript には GNU Ghostscript 7.07 (2003-05-17) というバージョンが存在し、日本の gs-cjk プロジェクトの寄与を含み、日本語の縦書き PostScript ファイルを正しく扱うことができました。
 ここではその Ghostscript 7.07 について説明します。

@@ -39,7 +39,7 @@ $ sudo cjk-gs-integrate --link-texmf --force
 
 #### Fedora {#v3e95c6b}
 
-- [https://apps.fedoraproject.org/packages/ghostscript](https://apps.fedoraproject.org/packages/ghostscript)
+- [https://packages.fedoraproject.org/pkgs/ghostscript/ghostscript/](https://packages.fedoraproject.org/pkgs/ghostscript/ghostscript/)
 
 #### openSUSE {#n12ef824}
 
@@ -58,7 +58,7 @@ $ sudo cjk-gs-integrate --link-texmf --force
 /usr/local/ 以下にインストールする場合です。
 
 ```
-$ curl -R -L -o ghostscript.tar.gz "https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/ghostpdl-10.06.0.tar.gz"
+$ curl -R -L -o ghostscript.tar.gz "https://github.com/ArtifexSoftware/ghostpdl/archive/refs/tags/ghostpdl-10.08.0.tar.gz"
 $ tar xvf ghostscript.tar.gz
 $ cd ghostscript*
 $ ./autogen.sh

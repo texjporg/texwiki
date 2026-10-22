@@ -7,7 +7,7 @@ pukiwiki: "BXjscls"
 
 # BXjscls
 
-## [BXjscls](http://zrbabbler.sp.land.to/bxjscls.html) {#l3cac28c}
+## [BXjscls](https://github.com/zr-tex8r/BXjscls) {#l3cac28c}
 
 BXjscls パッケージは pdflatex, lualatex, xelatex, platex-ng, uplatex, platex で使用可能な日本語文書組版のための LaTeX 文書クラスのコレクションです．
 TeX Live に含まれています．

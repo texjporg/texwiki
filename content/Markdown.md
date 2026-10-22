@@ -19,6 +19,8 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
 
 様々なエディタで Markdown 文書編集のための環境を整えることができます。
 
+- [Visual Studio Code](</Visual Studio Code/>)
+    - [Markdown editing with Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown)
 - [Emacs](/Emacs/)
     - [Emacs Markdown Mode](http://jblevins.org/projects/markdown-mode/)
 - [Vim](/Vim/)
@@ -26,11 +28,6 @@ Markdown は軽量マークアップ言語の一種で，プレーンテキス�
     - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
     - [VimでMarkdown, ブラウザでプレビュー](http://qiita.com/us10096698/items/1ac05c5c9543d2f79fa3)
     - [Vim で GitHub Flavored Markdown をプレビューする](http://superbrothers.hatenablog.com/entry/2013/09/28/123546)
-- [Visual Studio Code](</Visual Studio Code/>)
-- [CuteMarkEd](http://cloose.github.io/CuteMarkEd/)
-- [StackEdit](https://stackedit.io/)
-    - [https://github.com/benweet/stackedit](https://github.com/benweet/stackedit)
-- [NoTex](https://notex.ch) An online text editor for reStructuredText, Markdown, LaTex and more!
 
 ### Markdown から LaTeX への変換 {#v519987b}
 

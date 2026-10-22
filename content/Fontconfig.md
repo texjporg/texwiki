@@ -177,4 +177,3 @@ fc-match はあるパターンに最も良くマッチするフォントを表�
 
 - fontconfig (BLFS)
     - [http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html](http://www.linuxfromscratch.org/blfs/view/svn/general/fontconfig.html)
-    - [http://lfsbookja.osdn.jp/BLFS/svn-ja/general/fontconfig.html](http://lfsbookja.osdn.jp/BLFS/svn-ja/general/fontconfig.html)

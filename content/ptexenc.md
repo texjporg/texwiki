@@ -24,7 +24,7 @@ pukiwiki: "ptexenc"
 ### 文字コードの自動判別 {#x100a023}
 
 TeX Live (開発版r63556以降，TeX Live 2023以降) はデフォルトの設定では (e-)pTeX, platex, pbibtex, mendex を使用するとファイルの文字コードを自動判別します．
-殆どの場合正しく推定がされますが，誤判定することもあります．（[例](/upTeX,upLaTeX/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
+殆どの場合正しく推定がされますが，意図通りでない文字コードに判定することもあります．（[例](/ptexenc/#zb472e1c)，文字コードの完全な自動判別は原理的に不可能です．）
 
 自動判定を無効にし，文字コードを指定するには次のようにします．
 
@@ -37,6 +37,37 @@ platex --no-guess-input-enc --kanji=utf8 sample.tex
 - [ptexenc/文字コード判定 - ptexlive Wiki](http://tutimura.ath.cx/ptexlive/?ptexenc%2F%CA%B8%BB%FA%A5%B3%A1%BC%A5%C9%C8%BD%C4%EA)
 - [文字コード自動判定 TeX Live 2023](https://okumuralab.org/tex/mod/forum/discuss.php?d=3407)
 - \[[ptexenc\] 入力ファイルの文字コードの自動判定](https://github.com/texjporg/tex-jp-build/issues/142)
+
+#### -guess-input-enc による文字コードの自動判別機能で意図通りでない文字コードに判別されるパターンが存在する {#zb472e1c}
+
+以下の様な upLaTeX ファイルを fuga.tex という名前で EUC-JP で保存します．
+
+```
+\documentclass[uplatex,dvipdfmx]{jsarticle}
+\begin{document}
+両立 離陸 速達 天丼 弌弍 略奪 尊属
+\end{document}
+```
+
+fuga.tex を
+
+```
+uplatex -guess-input-enc fuga
+```
+
+のように文字コードの自動判別機能を使用してタイプセットすると“EUC-JPまたはUTF-8”と判定され，UTF-8を仮定してタイプセットされます．
+
+```
+(./fuga.tex(guessed encoding #3: AMBIGUOUS(e,u) = utf8)
+```
+
+この場合は
+
+```
+uplatex -kanji=euc -no-guess-input-enc fuga
+```
+
+として -kanji=euc -no-guess-input-enc オプションを指定してタイプセットすれば OK です．あるいは，入力ファイルが UTF-8 の場合は UTF-8 with BOM で保存しても OK です．
 
 ### 丸附き数字の使用について {#s7930698}
 

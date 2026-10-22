@@ -26,8 +26,8 @@ pukiwiki: "新 pTeX とBabel"
 日本語環境 (pTeX) 用フォーマットファイルも作成済みです（インストール方法は
 [Microsoft Windows - TeX Wiki](</Microsoft Windows/>) を参照）。
 
-- [TeX hyphenation patterns · TeX Users Group](http://tug.org/tex-hyphen/)
-- [http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
+- [TeX hyphenation patterns · TeX Users Group](https://hyphenation.org//)
+- [https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/](https://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/generic/hyph-utf8/loadhyph/)
 
 #### macOS {#l63154db}
 
@@ -235,7 +235,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
 
 世界の言語あるいは文字をどこまで表現できるかについては，
 稲垣徹さんのウェブサイト
-「[日本語 LaTeX による多言語処理](http://www2.tba.t-com.ne.jp/ing/)」を
+「[日本語 LaTeX による多言語処理](https://web.archive.org/web/20140709181648/http://www2.tba.t-com.ne.jp/ing/)」を
 参照してください。
 
 ### 参考サイト {#af834ac1}
@@ -295,7 +295,7 @@ I svet vo t{p1}me svetit, i t{p1}ma ne ob{p2}{ya}la ego.
     fmtutil --byfmt のように「ハイフン」を追加しておきました。
 
 - \[2004/10/20\]
-    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの 8-bit-Hyphenation](http://www2.tba.t-com.ne.jp/ing/babel.html#THIRD) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
+    ハンガリー語・トルコ語・ウクライナ語等々までをも含めた pLaTeX のフォーマットファイルを作成する方法については [稲垣さんの 8-bit-Hyphenation](https://web.archive.org/web/20130725214005/http://www2.tba.t-com.ne.jp/ing/babel.html#THIRD) をご覧ください。現時点で Babel がサポートしている言語すべてを，正確なハイフネーションパタンまで含めて，pLaTeX を用いて処理できるようになります。
 
 - \[2004/09/29\]
     ギリシア数字の出力に関して greek.ldf にバグがあります ([qa:31769](https://okumuralab.org/~okumura/texfaq/qa/31769.html))。

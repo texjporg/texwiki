@@ -132,19 +132,19 @@ C-x C-f ~/
 
 で，ホームディレクトリ (&#x7e;/) の場所を確認します．
 
-yatex フォルダーをコピーして &#x7e;/.emacs.d/site-lisp/ にペーストします．(&#x7e;/.emacs.d/site-lisp/ が無ければ新規に作成します．)
+yatex フォルダーをコピーして &#x7e;/.emacs.d/user-lisp/ にペーストします．(&#x7e;/.emacs.d/suser-lisp/ が無ければ新規に作成します．)
 
 ```
 ~
 └─.emacs.d
-    └─site-lisp
+    └─user-lisp
         └─yatex
 ```
 
 &#x7e;/.emacs.d/init.el に以下の設定を記述します．
 
 ```
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+(add-to-list 'load-path "~/.emacs.d/user-lisp/yatex")
 ```
 
 ## 設定 {#p24cdf4a}
@@ -555,7 +555,7 @@ if exist "C:\Program Files\Adobe\Acrobat DC\Acrobat\Acrobat.exe" (
 ### ‘load-path’に yatex.el が存在するフォルダー (ディレクトリ) を追加 {#pe637e19}
 
 ```
-(add-to-list 'load-path "~/.emacs.d/site-lisp/yatex")
+(add-to-list 'load-path "~/.emacs.d/user-lisp/yatex")
 ```
 
 ### \*.texで自動的にYaTeXモード {#d7fc1e0e}

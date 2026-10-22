@@ -43,6 +43,8 @@ macOS High Sierra 10.13 以降
 
 ## SyncTeX {#n30dc96c}
 
+- [https://sourceforge.net/p/skim-app/wiki/TeX_and_PDF_Synchronization/](https://sourceforge.net/p/skim-app/wiki/TeX_and_PDF_Synchronization/)
+
 ### forward search {#c02e2c91}
 
 forward search を行う場合は Skim に含まれている [displayline](https://sourceforge.net/p/skim-app/code/HEAD/tree/trunk/displayline) を使用します．

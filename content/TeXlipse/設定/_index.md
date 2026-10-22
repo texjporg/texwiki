@@ -22,10 +22,12 @@ pukiwiki: "TeXlipse/設定"
 >
 > 　　…<br>
 > 　　◢　一般<br>
-> 　　　　　　JStyle<br>
+> 　　　　　　UI フリーズ・モニター<br>
 > 　　　　　　Web ブラウザー<br>
 > 　　　　▷　エディター<br>
 > 　　　　　　キー<br>
+> 　　　　　　クイック検索<br>
+> 　　　　　　グローバリゼーション<br>
 > 　　　　　<span style="color:Black;background-color:#DAEAFF;">　コンテンツ・タイプ　</span><br>
 > 　　　　…<br>
 > 　　…<br>
@@ -40,14 +42,14 @@ pukiwiki: "TeXlipse/設定"
 >
 > 　各ファイル・タイプに関連づけられたエディターについては、<span style="color:#1188FF;"><ins>'ファイルの関連づけ'</ins></span> を参照してください。<br>
 > 　コンテンツ・タイプ(C)：<br>
-> 　　　　Java クラス・ファイル<br>
 > 　　　　Word ドキュメント<br>
+> 　　　　イメージ<br>
 > 　　◢　テキスト<br>
-> 　　　　▷　JAR マニフェスト・ファイル<br>
-> 　　　　　　Java ソース・ファイル<br>
-> 　　　　▷　Java プロパティー・ファイル<br>
 > 　　　　　<span style="color:Black;background-color:#DAEAFF;">　LaTeX File　</span><br>
+> 　　　　　　Windows バッチ・ファイル<br>
 > 　　　　▷　XML<br>
+> 　　　　　　バッチまたは Diff ファイル<br>
+> 　　　　▷　プロパティー<br>
 > 　　　　　　ランタイム・ログ・ファイル<br>
 > 　　　　　　リファクタリング・ヒストリー・インデックス<br>
 > 　　　　　　リファクタリング・ヒストリー・ファイル<br>
@@ -66,13 +68,10 @@ pukiwiki: "TeXlipse/設定"
 >
 > <br>
 >
-> <br>
->
-> <br>
->
-> <br>
->
-> <br>
+> 　関連付けられたエディター：<br>
+> 　Latex エディター<br>
+> 　テキスト・エディター<br>
+> 　汎用テキスト・エディター<br>
 >
 > <br>
 >
@@ -125,7 +124,7 @@ pukiwiki: "TeXlipse/設定"
 >
 > 　　使用するエンジンのスペルを選択(U): <span style="color:Black;background-color:#EEEEEE;">\[Latex　　　　　　　　　<strong>ᐯ</strong>\]</span><br>
 
-[https://github.com/dcharkes/texlipse-en_US-dictionary](https://github.com/dcharkes/texlipse-en_US-dictionary) や [http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/](http://jaist.dl.sourceforge.net/project/texlipse/dictionaries/) や [https://sourceforge.net/projects/texlipse/files/dictionaries/](https://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
+[https://github.com/dcharkes/texlipse-en_US-dictionary](https://github.com/dcharkes/texlipse-en_US-dictionary) や [https://sourceforge.net/projects/texlipse/files/dictionaries/](https://sourceforge.net/projects/texlipse/files/dictionaries/) などから辞書をダウンロードします．
 
 辞書ファイルを展開します．
 

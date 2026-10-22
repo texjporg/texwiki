@@ -159,3 +159,7 @@ GPLv3, GPLv2
 #### ChangeLog {#g8361031}
 
 - [https://fossies.org/linux/xpdf/CHANGES](https://fossies.org/linux/xpdf/CHANGES)
+- [https://svn.tug.org/texlive/trunk/Build/source/libs/xpdf/](https://svn.tug.org/texlive/trunk/Build/source/libs/xpdf/)
+    - [https://svn.tug.org/texlive/trunk/Build/source/libs/xpdf/?view=log](https://svn.tug.org/texlive/trunk/Build/source/libs/xpdf/?view=log)
+- [https://github.com/TeX-Live/texlive-source/tree/trunk/libs/xpdf](https://github.com/TeX-Live/texlive-source/tree/trunk/libs/xpdf)
+    - [https://github.com/TeX-Live/texlive-source/commits/trunk/libs/xpdf](https://github.com/TeX-Live/texlive-source/commits/trunk/libs/xpdf)

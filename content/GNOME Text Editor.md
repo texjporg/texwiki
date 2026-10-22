@@ -14,9 +14,11 @@ GNOME Text Editor は、シンプルで使いやすいテキストエディタ�
 - [https://apps.gnome.org/ja/TextEditor/](https://apps.gnome.org/ja/TextEditor/)
 - [https://gitlab.gnome.org/GNOME/gnome-text-editor](https://gitlab.gnome.org/GNOME/gnome-text-editor)
     - [https://gitlab.gnome.org/GNOME/gnome-text-editor/-/blob/main/build-aux/win32/build-mingw.sh](https://gitlab.gnome.org/GNOME/gnome-text-editor/-/blob/main/build-aux/win32/build-mingw.sh)
+- [https://github.com/GNOME/gnome-text-editor](https://github.com/GNOME/gnome-text-editor)
 - [https://gitlab.gnome.org/GNOME/gtksourceview](https://gitlab.gnome.org/GNOME/gtksourceview)
     - [https://gitlab.gnome.org/GNOME/gtksourceview/-/blob/master/data/language-specs/latex.lang](https://gitlab.gnome.org/GNOME/gtksourceview/-/blob/master/data/language-specs/latex.lang)
 - [https://flathub.org/ja/apps/org.gnome.TextEditor](https://flathub.org/ja/apps/org.gnome.TextEditor)
+- [https://packages.msys2.org/base/mingw-w64-gnome-text-editor](https://packages.msys2.org/base/mingw-w64-gnome-text-editor)
 
 ### お知らせ {#r110cc90}
 

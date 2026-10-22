@@ -7,11 +7,13 @@ pukiwiki: "TeXnicCenter"
 
 # TeXnicCenter
 
-## [TeXnicCenter](http://www.texniccenter.org/) {#f2674e4f}
+## [TeXnicCenter](https://www.texniccenter.org/) {#f2674e4f}
 
 <!-- #ref(http://texniccenter.sourceforge.net/_static/TeXnicCenter.png,right,around,nolink,TeXnicCenter) -->
 
-<span style="color:White;background-color:#5F2F2F;">　　<strong>◆CONTENTS◆</strong>　　</span><br>
+***
+
+***
 
 <div style="clear:both"></div>
 
@@ -19,8 +21,8 @@ pukiwiki: "TeXnicCenter"
 
 TeXnicCenter は多機能で使いやすい LaTeX 統合環境です．<br>
 
-- [TeXnicCenter](http://www.texniccenter.org/)
-- [TeXnicCenter | SourceForge.net](https://sourceforge.net/projects/texniccenter/)
+- [TeXnicCenter](https://www.texniccenter.org/)
+    <!-- -[[TeXnicCenter | SourceForge.net:https://sourceforge.net/projects/texniccenter/]] -->
 
 ### 動作環境 {#sa939c6e}
 
@@ -39,9 +41,11 @@ Windows
 
 ### ChangeLog {#y2c9ad23}
 
-- [Hg tools](https://sourceforge.net/p/texniccenter/_list/hg)
-    - [Code](https://sourceforge.net/p/texniccenter/code/)
-        - [log](https://sourceforge.net/p/texniccenter/code/ci/tip/log/)
+- [GitHub - texniccenter/TeXnicCenter: Official source code repository of TeXnicCenter - a free LaTeX editor for Windows. · GitHub](https://github.com/texniccenter/TeXnicCenter)
+    - [コミットログ](https://github.com/texniccenter/TeXnicCenter/commits/master/)
+        <!-- -[[Hg tools:https://sourceforge.net/p/texniccenter/_list/hg]] -->
+        <!-- - -[[Code:https://sourceforge.net/p/texniccenter/code/]] -->
+        <!-- - --[[log:https://sourceforge.net/p/texniccenter/code/ci/tip/log/]] -->
 
 ### 特徴 {#c8ac578a}
 

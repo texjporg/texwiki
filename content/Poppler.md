@@ -27,11 +27,12 @@ Poppler は，PDF ドキュメントのレンダリングに利用されるラ�
 ### 公式サイト {#fd295383}
 
 - [Poppler](https://poppler.freedesktop.org/)
+- [poppler / poppler · GitLab](https://gitlab.freedesktop.org/poppler/poppler)
 - [The poppler Archives](https://lists.freedesktop.org/archives/poppler/)
 
 ### お知らせ {#qdd1dda1}
 
-- Poppler 24.04.0 以降はビルドする際に C++20 をサポートした処理系が必要です。--&gt; [Require C++20](https://cgit.freedesktop.org/poppler/poppler/commit/CMakeLists.txt?id=d8ae3ba659c71b4f5913ecf74d525461bb831366)
+- Poppler 25.12.0 以降はビルドする際に C++23 をサポートした処理系が必要です。--&gt; [CMakeLists.txt · poppler-25.12.0 · poppler / poppler · GitLab](https://gitlab.freedesktop.org/poppler/poppler/-/blob/poppler-25.12.0/CMakeLists.txt?ref_type=tags#L50)、[Switch to C++23 (218e25a1) · コミット · poppler / poppler · GitLab](https://gitlab.freedesktop.org/poppler/poppler/-/commit/218e25a11a6bbf85cf77ad0f535e81ed0ad982fd)
 - Windows 版の TeX Live 2017 以降は xpdf utilities の代わりに poppler utilities が
     使われるようになりました --&gt; [TeX Live Revision 43299](http://www.tug.org/svn/texlive?view=revision&revision=43299) bin/win32: Replace xpdf utilities by poppler utilities
 
@@ -166,17 +167,10 @@ GothicBBB-Medium (ゴシック体) をきちんと表示したい場合は font 
 
 #### License {#i424d155}
 
-[GPLv3](https://cgit.freedesktop.org/poppler/poppler/tree/COPYING3), [GPLv2](https://cgit.freedesktop.org/poppler/poppler/tree/COPYING)
+[GPLv3](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING3), [GPLv2](https://gitlab.freedesktop.org/poppler/poppler/-/blob/master/COPYING)
 
 #### ChangeLog {#u62118c7}
 
 - [poppler / poppler · GitLab](https://gitlab.freedesktop.org/poppler/poppler)
     - [https://gitlab.freedesktop.org/poppler/poppler/-/tags](https://gitlab.freedesktop.org/poppler/poppler/-/tags)
     - [https://gitlab.freedesktop.org/poppler/poppler/-/commits/master](https://gitlab.freedesktop.org/poppler/poppler/-/commits/master)
-- [poppler/poppler - The poppler pdf rendering library](https://cgit.freedesktop.org/poppler/poppler)
-    - [https://cgit.freedesktop.org/poppler/poppler/refs/tags](https://cgit.freedesktop.org/poppler/poppler/refs/tags)
-    - [https://cgit.freedesktop.org/poppler/poppler/log/](https://cgit.freedesktop.org/poppler/poppler/log/)
-- [https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/](https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/)
-    - [https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/?view=log](https://www.tug.org/svn/texlive/trunk/Build/source/libs/poppler/?view=log)
-- [https://github.com/TeX-Live/texlive-source/tree/trunk/libs/poppler](https://github.com/TeX-Live/texlive-source/tree/trunk/libs/poppler)
-    - [https://github.com/TeX-Live/texlive-source/commits/trunk/libs/poppler](https://github.com/TeX-Live/texlive-source/commits/trunk/libs/poppler)

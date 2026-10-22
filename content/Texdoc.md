@@ -41,3 +41,7 @@ $ texdoc --help
 $ texdoc texdoc
 
 により texdoc 自体の説明文書（texdoc.pdf）をご覧になるといいでしょう．
+
+### 関連記事 {#y4a9bd8e}
+
+- [TeX Live ドキュメント案内](http://qiita.com/wtsnjp/items/f8d853cccb9fd95b012c)

@@ -16,7 +16,7 @@ pukiwiki: "zathura"
 ## zathura とは {#s6eb3d04}
 
 zathura は高いカスタマイズ性と機能性を備えたドキュメントビューアです．
-PDF ファイルや PS ファイルが表示できます．
+PDF ファイルが表示できます．
 [SyncTeX](/SyncTeX/) に対応しています．
 ファイルの自動更新機能もあります．
 

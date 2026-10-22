@@ -30,7 +30,7 @@ TeX Live に標準で含まれています。
 
 ### インストール {#a2be7136}
 
-[http://jaist.dl.sourceforge.net/project/asymptote/](http://jaist.dl.sourceforge.net/project/asymptote/) や [https://sourceforge.net/projects/asymptote/files/](https://sourceforge.net/projects/asymptote/files/) に各種バイナリがあります。
+[https://sourceforge.net/projects/asymptote/files/](https://sourceforge.net/projects/asymptote/files/) に各種バイナリがあります。
 
 また，Asymptote は [Ghostscript](/Ghostscript/) に依存しています。
 
@@ -45,7 +45,7 @@ Asymptote 2.33 以降は，Ghostscript の仕様変更[^1]に伴う改変がな�
 macOS でコンパイルする際は，OS の readline ライブラリが古いので，あらかじめ新しい
 readline ライブラリをインストールしておくと，コマンドラインのヒストリー機能などが使えるようになります。
 Asymptote ソースを展開したディレクトリに
-[gc-8.2.4.tar.gz](https://www.hboehm.info/gc/gc_source/gc-8.2.4.tar.gz)
+[gc-8.2.8.tar.gz](https://www.hboehm.info/gc/gc_source/gc-8.2.8.tar.gz)
 を展開せずに置き，
 
 ```
@@ -219,7 +219,6 @@ unitsize(15pt);
 - [Asymptote project on SourceForge](https://sourceforge.net/projects/asymptote/)
 - [Asymptote に関する投稿 - Qiita](http://qiita.com/tags/asymptote)
 - [Asymptote のつかいかた \[Wayback Machine\]](http://web.archive.org/web/20170722173253/http://2nd.geocities.jp/asy_zenkin/) → ひととおりの使い方が説明された数少ない日本語リソース。TeX Live 2014 対応
-- [W32Tex や Asymptote の導入(インストール)に成功するまで経緯（１）](http://blogs.yahoo.co.jp/eikei375/38640701.html)
 - [Sukarabe&#8217;s Easy Living &raquo; Asymptote](http://njet.oops.jp/wordpress/category/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF/asymptote/)
 - [Asymptote の検索結果 - denpoyaのブログ](https://denpoya.hatenablog.com/search?q=Asymptote)
 - [asymptote メモ](http://www.kabipan.com/computer/asymptote/)

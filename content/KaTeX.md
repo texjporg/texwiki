@@ -36,3 +36,7 @@ KaTeX は，Web ブラウザ上で数式を高速に描画できるライブラ�
 #### ChangeLog {#e5861658}
 
 - [https://github.com/KaTeX/KaTeX/commits/main](https://github.com/KaTeX/KaTeX/commits/main)
+
+#### 派生版 {#w400006d}
+
+- [RaTeX](/RaTeX/)

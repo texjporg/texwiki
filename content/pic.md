@@ -36,7 +36,7 @@ TeX 用図形プリプロセッサ，およびそれが出力する [special](</
 tpic 拡張機能は [dvips](/dvips/), [dvipdfm(x)](/dvipdfmx/), [dviout](/dviout/), [xdvi](/xdvi/) 等の数多くの DVIWare でサポートされています．
 一方で，DVI を扱わない [pdfTeX](/pdfTeX/) では tpic 拡張機能がサポートされていません．
 
-- 参考：[BXpict2e パッケージ ～pict2e で eepic な世界～ \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/bxpict2e.html)
+- 参考：[BXpict2e パッケージ ～pict2e で eepic な世界～ \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/bxpict2e.html)
 
 #### tpic specials を利用する LaTeX 用のマクロ {#kaa909af}
 

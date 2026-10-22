@@ -105,7 +105,7 @@ Cannot start AcrobatReader or open the document.
 この問題は，Adobe Acrobat Reader を最新版にアップデートして上記のレジストリの (既定) の値のデータを
 
 ```
-AcroViewA25
+AcroViewA26
 ```
 
 に修正することで解消できます。
@@ -283,7 +283,7 @@ Runtime Error! を回避するには，設定 &gt; 時刻と言語 &gt; 言語�
 
 <br>
 
-　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2025\bin\windows\ptex2pdf.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2026\bin\windows\ptex2pdf.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
 
 <br>
 
@@ -325,7 +325,7 @@ Runtime Error! を回避するには，設定 &gt; 時刻と言語 &gt; 言語�
 
 <br>
 
-　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2025\bin\windows\bibtexu.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2026\bin\windows\bibtexu.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
 
 <br>
 
@@ -413,7 +413,7 @@ Runtime Error! を回避するには，設定 &gt; 時刻と言語 &gt; 言語�
 
 <br>
 
-　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2025\bin\windows\lualatex.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
+　　　　　　　　　　　　　　　　　exeファイル名:　<ins>C:\texlive\2026\bin\windows\lualatex.exe</ins>　<span style="color:Black;background-color:#EEEEEE;">\[　　参照(B)...　　\]</span><br>
 
 <br>
 

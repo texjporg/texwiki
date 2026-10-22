@@ -16,8 +16,8 @@ GUI 版としては [TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell
 
 公式ドキュメントに解説があります．
 
-- [http://www.tug.org/texlive/tlmgr.html](http://www.tug.org/texlive/tlmgr.html)
-- [http://www.tug.org/texlive/doc/tlmgr.html](http://www.tug.org/texlive/doc/tlmgr.html)
+- [https://www.tug.org/texlive/tlmgr.html](https://www.tug.org/texlive/tlmgr.html)
+- [https://www.tug.org/texlive/doc/tlmgr.html](https://www.tug.org/texlive/doc/tlmgr.html)
 
 ```
 $ tlmgr --help
@@ -49,17 +49,20 @@ $ tlmgr --help
 $ tlmgr info geometry
 package:     geometry
 category:    Package
-shortdesc:   Flexible and complete interface to document dimensions.
-longdesc:    The package provides an easy and flexible user interface (以下略)
+shortdesc:   Flexible and complete interface to document dimensions
+longdesc:    The package provides an easy and flexible user interface to customize page layout, implementing auto-centering and auto-balancing mechanisms so that the users have only to give the least description for the page layout. For example, if you 
+want to set each margin 2cm without header space, what you need is just \usepackage[margin=2cm,nohead]{geometry}. The package knows about all the standard paper sizes, so that the user need not know what the nominal 'real' dimensions of the paper are, 
+just its standard name (such as a4, letter, etc.). An important feature is the package's ability to communicate the paper size it's set up to the output (whether via DVI \specials or via direct interaction with pdf(La)TeX).
 installed:   Yes
-revision:    47638
-sizes:       src: 157k, doc: 465k, run: 45k
+revision:    61719
+sizes:       src: 325k, doc: 921k, run: 45k
 relocatable: No
-cat-version: 5.8
-cat-date:    2018-05-07 13:41:20 +0200
-cat-license: lppl
+cat-version: 5.9
+cat-license: lppl1.3c
 cat-topics:  geometry
-cat-related: vmargin typearea
+cat-related: vmargin typearea geometry-de
+cat-contact-bugs: https://github.com/LaTeX-Package-Repositories/geometry/issues
+cat-contact-repository: https://github.com/LaTeX-Package-Repositories/geometry
 collection:  collection-latex
 ```
 
@@ -107,5 +110,6 @@ Restoring luatexja, 39105 from /usr/local/texlive/2015/tlpkg/backups/luatexja.r3
 
 ### 関連リンク {#links}
 
+- [tlmgrの使用例とトラブルシューティング](https://tm23forest.com/contents/tlmgr-usage-troubleshooting)
 - [tlmgr オンラインアップデータ](http://www.fugenji.org/~thomas/texlive-guide/tlmgr.html)
 - [tlmgr user mode - There and back again](http://www.preining.info/blog/2013/04/tlmgr-user-mode/)

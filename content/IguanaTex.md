@@ -45,14 +45,9 @@ LaTeX ソースをタイプセットしたのち PNG 形式の画像ファイル
 
 ### 関連リンク {#pc5b4e12}
 
-- [初学者によるIguana TeXの導入](https://qiita.com/Trigger-FK/items/380f5fc86e2f2b871c9e)
-- [IguanaTeX環境構築(Windows)](https://qiita.com/ryo-ww/items/28d1cb29b4bc1f431a76)
-- [PowerPointでLaTeXを使う【IguanaTeX】](https://beamdaisuki.com/iguanatex/)
-- [【フォント】IguanaTexでPowerPointの数式フォントをまともにする](https://meltingrabbit.com/blog/article/2018061801/)
-- [IguanaTeX で日本語が通るようになった！](http://margaret-sdpara.blogspot.jp/2015/07/iguanatex.html)
-- [【 IguanaTeX 日本語対応版 】 PowerPoint で TeX な数式を。そして、日本語も。](http://karat5i.blogspot.jp/2015/04/iguanatex-powerpoint-tex.html)
-- [Iguana TeX で日本語を通す](http://margaret-sdpara.blogspot.jp/2014/02/iguana-tex.html)
-- [PowerPointとの連携 - Kobayashi Laboratory Homepage](http://c.nagaokaut.ac.jp/index.php?PowerPoint%A4%C8%A4%CE%CF%A2%B7%C8)
+- [「IguanaTex」の検索結果 - Qiita](https://qiita.com/search?q=IguanaTex)
+    - [初学者によるIguana TeXの導入](https://qiita.com/Trigger-FK/items/380f5fc86e2f2b871c9e)
+    - [IguanaTeX環境構築(Windows)](https://qiita.com/ryo-ww/items/28d1cb29b4bc1f431a76)
 
 #### ライセンス {#k7bfbe3c}
 

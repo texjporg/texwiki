@@ -120,11 +120,9 @@ PDF Viewer
 
 : ◯ External Viewer
 
-: ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'evince -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
-
-: fwdevince %.pdf @ #.tex
-
 : ruby -e "cmd='okular --unique '+0x22.chr+'file:'+'"%.pdf"'+0x23.chr+'src:'+'"@"'+' '+'"!/#.tex"'+0x22.chr;system(cmd)"
+
+: ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'papers -i '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
 
 : ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'zathura -P '+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
 
@@ -135,37 +133,6 @@ PDF Viewer
 : ruby -e "cmd='synctex view -i '+0x27.chr+'"@:0:#.tex"'+0x27.chr+' -o '+0x27.chr+'"%.pdf"'+0x27.chr+' -x '+0x27.chr+'texworks --position='+0x25.chr+'{page+1} '+0x22.chr+0x25.chr+'{output}'+0x22.chr+0x27.chr;system(cmd)"
 
 ***
-
-## [Evince](/Evince/) との連携 {#xd595a5d}
-
-LaTeX コマンド, PdfLaTeX コマンド, XeLaTeX コマンド, LuaLaTeX コマンドのオプションに -synctex=1 を追加します．
-
-### forward search {#dc58c25f}
-
-Evince/fwdevince の fwdevince を使用します．<br>
-
-forward search は PDFビューアに
-
-```
-fwdevince %.pdf @ #.tex
-```
-
-です．
-
-### inverse search {#zb2ae21e}
-
-Evince/fwdevince の invevince を使用します．<br>
-
-ユーザーコマンドに invevince を作成して以下のようにコマンドを設定します．<br>
-
-```
-ruby -e "cmd='invevince'+' '+0x22.chr+'"%.pdf"'+0x22.chr+' '+0x22.chr+'texmaker '+0x27.chr++0x25.chr+'f'+0x27.chr+' -line '+0x25.chr+'l'+0x22.chr;system(cmd)"
-```
-
-PDFビューアに evince を設定して evince で PDF ファイルを表示してユーザーコマンドを実行します．<br>
-Ctrl + 左クリックで inverse search ができます．<br>
-ユーザーコマンドを実行するタイミングは evince で PDF ファイルを表示する前でも後でもどちらでも OK です．<br>
-Texmaker の動作がおかしくなる場合は使用を中止してください．<br>
 
 ## Okular との連携 {#e1d5124a}
 

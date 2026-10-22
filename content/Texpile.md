@@ -12,3 +12,4 @@ pukiwiki: "Texpile"
 Texpile は LaTeX、Typest、Markdown に対応したオフラインで動作するエディタです。
 
 - [Texpile - a local, offline LaTeX and Typst editor](https://texpile.com/)
+- [GitHub - texpile/texpile: Modern offline LaTeX &amp; Typst editor with visual and source editing. · GitHub](https://github.com/texpile/texpile)

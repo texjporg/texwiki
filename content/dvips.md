@@ -7,10 +7,12 @@ pukiwiki: "dvips"
 
 # dvips
 
-## dvips（非推奨） {#y40d302b}
+## dvips (非推奨) → [dvipdfmx](/dvipdfmx/) を使用する {#y40d302b}
 
 dvips は DVI ファイルを [PostScript](/PostScript/) ファイルに変換するソフトウェアです。
 実績があり、信頼のおけるプログラムとして、かつては TeX の世界で広く用いられていました。
+
+現在では PostScript は非推奨となっているため、dvips の代わりに dvipdfmx を使用してください。
 
 - [Tom Rokicki and Radical Eye Software](http://www.radicaleye.com/)
     - [The Official Dvips Home Page](http://www.radicaleye.com/dvips.html)

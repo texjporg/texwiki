@@ -50,7 +50,7 @@ pukiwiki: "LyX/設定/Windows"
 > MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 > 捷径(U):　　　　　　　 <ins>m</ins><br>
 > 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+> 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
 > 複写子(P):<br>
 
 ■ [TeXworks](/TeXworks/) の場合
@@ -106,7 +106,7 @@ pukiwiki: "LyX/設定/Windows"
 > MIME:　　　　　　　　　<ins>application/pdf</ins><br>
 > 捷径(U):　　　　　　　 <ins>u</ins><br>
 > 編集プログラム(I):　 <span style="color:Black;background-color:#EEEEEE;">\[なし　　　　　　　　　　　　　　　　 ▼\]</span><br>
-> 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>start SumatraPDF -reuse-instance</ins><br>
+> 閲覧プログラム(V):　<span style="color:Black;background-color:#EEEEEE;">\[任意設定　　　　　　　　　　　　　▼\]</span>　<ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance</ins><br>
 > 複写子(P):<br>
 
 ■ [TeXworks](/TeXworks/) の場合
@@ -174,7 +174,7 @@ PDFコマンドは [SumatraPDF](/SumatraPDF/) を使用します．
 >
 > 順検索<br>
 > 　DVIコマンド: <br>
-> 　PDFコマンド: <ins>rundll32 shell32,ShellExec_RunDLL SumatraPDF -reuse-instance $$o -forward-search $$t $$n</ins><br>
+> 　PDFコマンド: <ins>"C:\Program Files\SumatraPDF\SumatraPDF.exe" -reuse-instance $$o -forward-search $$t $$n</ins><br>
 
 #### SumatraPDF を前面に表示したくない場合 {#w7121c3e}
 

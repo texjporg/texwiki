@@ -18,7 +18,7 @@ pukiwiki: "TLContrib"
 この方針やその他の様々な事情で TeX Live には収録されないものの，「パッケージ自体にはライセンスの制約がなく，利用や再配布が自由である」という場合が多々あります。
 このようなパッケージを代わりに収録して，いわば「TeX Live を補完する」という目的で作られているディストリビューションが TLContrib です。
 
-- [TeX Live Contrib Area](http://contrib.texlive.info/)
+- [TeX Live Contrib Area](https://contrib.texlive.info/)
 
 ***
 

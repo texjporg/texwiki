@@ -30,7 +30,7 @@ powerdot は [dvipdfmx](/dvipdfmx/) に対応していないので，PDF を作�
 
 ### 関連リンク {#w637da69}
 
-- [最強のプレゼンテーションツールpowerdotをMacにインストールする](http://adragoona.hatenablog.com/entry/2014/10/20/214022)
+- [最強のプレゼンテーションツールpowerdotをMacにインストールする](https://adragoona.hatenablog.com/entry/2014/10/20/214022)
 - [powerdot で作ったDVIファイルを W32TeX の dvips で処理](https://okumuralab.org/tex/mod/forum/discuss.php?d=1187)
 - [177びぼーろく;powerdot その2](http://phys-diary.blogspot.jp/2012/11/177powerdot-2.html)
 - [Powerdot.clsのマニュアルを日本語訳したもの](http://dokoka.org/wiki.cgi?page=%A4%A4%A4%ED%A4%F3%A4%CA%CA%B8%BD%F1%A4%CE%CB%DD%CC%F5)

@@ -13,7 +13,6 @@ Beamer は プレゼンテーション用の LaTeX クラスです．
 
 - [https://ctan.org/pkg/beamer](https://ctan.org/pkg/beamer)
 - [https://github.com/josephwright/beamer](https://github.com/josephwright/beamer)
-- [https://bitbucket.org/rivanvx/beamer/wiki/Home](https://bitbucket.org/rivanvx/beamer/wiki/Home)
 
 ### 目次 {#xf53b953}
 

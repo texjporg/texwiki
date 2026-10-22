@@ -242,3 +242,4 @@ AGPL と商用ライセンスの2ライセンス形態で利用可能です．
 - [PDF 2.0 でドキュメントを次世代のステージへ](https://blog.adobe.com/jp/publish/2017/08/30/taking-documents-to-the-next-level-with-pdf-2-0)
 - [PDF 2.0って何？　いままでのPDFとはどこが違うの？　PDF 2.0対応で注意すべきことがありますか？？ - アンテナハウス PDF資料室](https://www.antenna.co.jp/pdf/reference/What-is-pdf20.html)
 - [PDF フォーマット](https://azelpg.gitlab.io/azsky2/note/prog/pdf/index.html)
+- [今や必要不可欠の「PDF」は誕生わずか30年！インターネットが一般普及していなかった30年前のPDF開発秘話を聞く](https://www.walkerplus.com/article/1178498/)

@@ -11,7 +11,7 @@ pukiwiki: "Adobe Acrobat Reader"
 
 Adobe Acrobat Reader は PDF ファイルの表示，印刷，注釈の追加が可能なソフトウェアです。
 
-Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), [qpdfview](/qpdfview/), [Sioyek](/Sioyek/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
+Windows 版の Adobe Acrobat Reader は PDF ファイルをロックしてしまうので，編集中の PDF ファイルのプレビューには向いていません。PDF ファイルのプレビューには [SumatraPDF](/SumatraPDF/), [Okular](/Okular/), [Papers](/Papers/), [LEKTRA](/LEKTRA/), [TeXworks](/TeXworks/), [TeXstudio](/TeXstudio/) などのビューワを用いて，Adobe Acrobat Reader を使用するのは最終確認や印刷時のみとするのがおすすめです。
 
 Adobe Acrobat Reader で印刷がうまくいかない場合は [SumatraPDF](/SumatraPDF/) などの Adobe Acrobat Reader 以外のビューアで印刷してください。
 

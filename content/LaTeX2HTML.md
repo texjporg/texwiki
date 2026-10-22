@@ -29,6 +29,8 @@ LaTeX2HTML は Perl で記述されています．
 
 ### macOS {#u17fe485}
 
+- [2020年のコンピューターノウハウ (Mac)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2020/knowhow-2020.html)
+    - [15 久しぶりの LaTeX2HTML](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2020/node15.html)
 - [LaTeX2HTMLのインストール（OS X 10.9 Mavericks以降）](http://www.geidai.ac.jp/~marui/dont_forget/node3.html#SECTION00036000000000000000)
 - [若松久仁光のブログ - LaTeX2HTML, eLyXer](http://flutecore.g2.xrea.com/Weblog/archives/cat_latex2htmlelyxer.html)
 - [LaTeX2HTMLのインストール con gusto](http://flutecore.g2.xrea.com/install-latex2html.html)
@@ -38,8 +40,6 @@ LaTeX2HTML は Perl で記述されています．
 
 - [LaTeX HTMLに変換 (latex2html)](http://www.yamamo10.jp/yamamoto/comp/latex/latex2html/latex2html.html)
 - [latex2html](http://fugenji.org/thomas/diary/index.php?no=r785), [latex2html (2)](http://fugenji.org/thomas/diary/index.php?no=r786), [latex2html（まとめ）](http://www.fugenji.org/~thomas/diary/index.php?mode=res_view&no=814)
-- [2012年のコンピューターノウハウ (Mac, CentOS)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2012/knowhow-2012.html)
-    - [LaTeX2HTML (LaTeX を WWW 用のデータに変換)](http://nalab.mind.meiji.ac.jp/~mk/knowhow-2012/node73.html)
 
 ## 使い方 {#x9a76c36}
 
@@ -49,6 +49,6 @@ LaTeX2HTML は Perl で記述されています．
 
 ## 関連リンク {#lddbd39b}
 
-- [latex2html 日本語の使用について](http://oku.edu.mie-u.ac.jp/tex/mod/forum/discuss.php?d=748)
+- [latex2html 日本語の使用について](https://okumuralab.org/tex/mod/forum/discuss.php?d=748)
 - [やる夫で学ぶディジタル信号処理](http://www.ic.is.tohoku.ac.jp/~swk/lecture/yaruodsp/main.html)
 - [Tools for Publishing LaTeX Documents on the Web](https://ccrma.stanford.edu/~jos/webpub/webpub.html)

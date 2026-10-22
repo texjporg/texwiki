@@ -23,7 +23,7 @@ tcolorbox は、[TikZ](/TikZ/) を内部で読み込み，綺麗な枠を作る�
 
 tcolorbox には
 
-- [549ページの長大なマニュアル（version 6.4.0 2024年09月27日版の場合）](https://raw.githubusercontent.com/T-F-S/tcolorbox/refs/heads/master/doc/latex/tcolorbox/tcolorbox.pdf)
+- [549ページの長大なマニュアル（version 6.4.1 2024年10月22日版の場合）](https://raw.githubusercontent.com/T-F-S/tcolorbox/refs/heads/master/doc/latex/tcolorbox/tcolorbox.pdf)
 
 が付属しています。tcolorbox のマニュアルはターミナルから
 

@@ -40,3 +40,7 @@ pukiwiki: "Microsoft Edge"
 : Meiryo
 
 <!-- :固定幅フォント|BIZ UDGothic -->
+
+## 拡張機能 {#cc41e737}
+
+- [LaTeX Editor](https://microsoftedge.microsoft.com/addons/detail/latex-editor/mnjcaagmacdllcgakfikkcocooiamgid?hl=ja-JP) extension

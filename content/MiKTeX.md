@@ -234,6 +234,7 @@ lualatex の実行結果は
 - [Getting MiKTeX - MiKTeX.org](https://miktex.org/download)
 - [LaTeX導入ガイド Windows編（MiKTex + VScode + Strawberry Perl）](https://qiita.com/okuduck/items/26ab214a78286c9360b6)
 - [MiKTeXのWindowsへのインストール](https://self-development.info/miktex%e3%81%aewindows%e3%81%b8%e3%81%ae%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab/)
+- [Windows へ LaTeX (日本語) の環境をインストールして PDF を作成する手順](https://www.hikari-dev.com/blog/2026/07/19/windows-latex-miktex-ltjsarticle)
 
 <!-- **注意事項 [#e87c6af7] -->
 

@@ -32,14 +32,14 @@ pukiwiki: "［改訂第4版］LaTeX2e 美文書作成入門 付録J章サポー�
 
 - p. 364 「ロシア語におけるいくつかの補足」—数式モードにおけるキリル文字の利用について，amsmath.sty (AMS-LaTeX)，mathtext.sty を使った例を[アーカイブ](http://yasuda.homeip.net/archives/mathcyr-examples-070107.zip)にしました。（安田）
 
-- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」— Babel 本体では未サポートですが，オプションで[iso-8859-7.def](http://www.ring.gr.jp/pub/text/CTAN/fonts/greek/package-babel/encodings/iso-8859-7.def) が配布されています。
+- p. 365 註28 「ギリシア文字の直接入力はサポートされていません」— Babel 本体では未サポートですが，オプションで[iso-8859-7.def](https://mirror.ctan.org/fonts/greek/package-babel/encodings/iso-8859-7.def) が配布されています。
     現代 monotonic ギリシア語については “\usepackage\[iso-8859-7\]{inputenc}” で直接入力ができます（現代 polytonic，古典ギリシア語は不可）。他言語との併用での問題については未確認ですが，わかり次第報告いたします。
 
-- p. 368 表 J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ[teubner.sty](ftp://ftp.ring.gr.jp/pub/text/CTAN/macros/latex/contrib/teubner.zip) を使ってください。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
+- p. 368 表 J.9 Babel オリジナルのギリシア数字，アルカイック文字は幾つかバグがあり，正しく出力されないものがあります。これらの文字を使用する場合はできるだけ[teubner.sty](https://mirror.ctan.org/macros/latex/contrib/teubner.zip) を使ってください。teubner.sty の使用法，出力例についてはそのうちまとめてみたいと思っています。
 
 - p. 369 上段 インストールディレクトリは C:\usr\local\share\texmf\\... と記してありますが，現在 (TDS 1.1) ユーザによる追加ファイルは $TEXMFLOCAL// (&asymp; texmf-local//) 以下ないし $TEXMFHOME// (= ~/texmf// = $HOME/texmf//) 以下が奨励されています。ディレクトリ構造を再現するのが大変と思われる方は texmf// 以下でも結構です。
 
-- p. 369 中段 LH フォントのインストール—現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35f-gen-mf.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-gen-mf.zip) と[lhfnt35f-source.zip](ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/cyrillic/lh/lhfnt35f-source.zip) をダウンロードし，適当なディレクトリで展開します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
+- p. 369 中段 LH フォントのインストール—現在 (3.5f) はディレクトリ構成が変わっています。[lhfnt35g-gen-mf.zip](https://mirrors.ctan.org/fonts/cyrillic/lh/lhfnt35g-gen-mf.zip) と[lhfnt35g-source.zip](https://mirrors.ctan.org/fonts/cyrillic/lh/lhfnt35g-source.zip) をダウンロードし，適当なディレクトリで展開します。親ディレクトリ “texmf” を必要ならば “texmf-local” 等に直して TeX をインストールしたディレクトリ（/usr/local/ など）に丸ごと上書きコピーしてください。setter.tex や 99allenc.tex は $TEXMF/source/fonts/lh/tex/ にあります。wrk// 以下に出来た mf ファイルは，$TEXMF/fonts/source/lh// 以下にディレクトリごと上書きコピーしてください。
 
 - p. 369 下段 「日本語環境 (pTeX) で使用する場合はこれを OT2 用に改変し，フォーマットファイルを作り直す必要が」— [ptetex3](https://tutimura.ath.cx/ptetex/) ではすでに OT2 用の設定になっています。従って改変不要です。
 

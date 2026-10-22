@@ -19,19 +19,13 @@ PowerPoint の図を EPS ファイルに変換することもできます。
 
 metafile2eps.exe をダブルクリックしてインストーラーの指示に従ってインストールします。
 
-インストールされる場所は初期設定の場合
-
-64-bit Windows では
+インストールされる場所はデフォルトでは
 
 > C:\Program Files (x86)\Metafile to EPS Converter
 
-32-bit Windows では
-
-> C:\Program Files\Metafile to EPS Converter
-
 です。
 
-スタート &gt; 設定 &gt; デバイス &gt; プリンターとスキャナー にも Metafile to EPS Converter が追加されるのでプリンターとして使用することもできます。
+スタート &gt; 設定 &gt; Bluetooth とデバイス &gt; プリンターとスキャナー にも Metafile to EPS Converter が追加されるのでプリンターとして使用することもできます。
 
 ### 関連リンク {#o6f53214}
 

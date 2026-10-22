@@ -116,6 +116,7 @@ $ pdftocairo -svg hoge.pdf
 
 - [dvisvgm : いわにぃのブログ](http://blog.livedoor.jp/ti5942/tag/dvisvgm)
 - [LaTeX dviをsvgに変換 (dvisvgm)](http://www.yamamo10.jp/yamamoto/comp/latex/dvisvgm/)
+- [dvisvgm 2.1.3 を試す](https://blog.miz-ar.info/2017/03/dvisvgm-2/)
 
 #### 公式サイト {#vab19c08}
 

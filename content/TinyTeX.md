@@ -23,3 +23,4 @@ TinyTeX は軽量、クロスプラットフォーム、ポータブル、メン
 - [https://gedevan-aleksizde.github.io/tinytex-doc-ja/#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB](https://gedevan-aleksizde.github.io/tinytex-doc-ja/#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 - [500MBで始める最先端のTeX - Qiita](https://qiita.com/KKTeX/items/f521c144cb36d7d6e991)
 - [Windowsで手軽に始める最小限のLaTeX環境構築【Neovim・VSCode対応】](https://zenn.dev/glmlm/articles/latex-windows-neovim-vscode-20260330)
+- [TeX Live を使わずに LaTeX 環境を作る！ – Yosuke Abe](https://yo5uke.com/pages/tips/2024/05/240520_latex/)

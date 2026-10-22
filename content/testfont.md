@@ -99,7 +99,7 @@ PDF ではフォントが埋め込まれていないと代替フォントが充�
 Adobe Acrobat Reader DC では代替フォントとして AdobePiStd が充てられます．
 
 欧文 14 書体（Times, Helvetica, Courier 各 4 書体に記号用フォントの
-Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://twitter.com/aminophen/status/568380041106567168 -->
+Symbol と Zapf Dingbats を加えたもの）の扱いは，デフォルトでは以下のようになっています． <!-- / -http://acetaminophen.hatenablog.com/entry/2015/02/14/004641 --> <!-- / -https://x.com/aminophen/status/568380041106567168 -->
 
 - TeX Live -- dvipdfmx も pdftex も埋め込む
 

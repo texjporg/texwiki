@@ -10,15 +10,16 @@ pukiwiki: "mi"
 mi は macOS 用のテキストエディタです。
 
 - [mi - テキストエディタ](http://www.mimikaki.net/)
-- [GitHub - DaisukeKamiyama/mi_proj](https://github.com/DaisukeKamiyama/mi_proj)
+    <!-- -[[DaisukeKamiyama/miTextEditor · GitHub:https://github.com/DaisukeKamiyama/miTextEditor]] -->
 
 ### 動作環境 {#f832cf6b}
 
 macOS
 
-### License {#q1cb2864}
-
-GPLv3
+<!-- **License [#q1cb2864] -->
+<!--  -->
+<!-- GPLv3 -->
+<!--  -->
 
 ### mi で LaTeX {#cb1c97b5}
 

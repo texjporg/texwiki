@@ -7,9 +7,9 @@ pukiwiki: "Aspell"
 
 # Aspell
 
-## [Aspell](http://aspell.net/) {#asp4a889}
+## [GNU Aspell](http://aspell.net/) {#asp4a889}
 
-Aspell は [Ispell](/Ispell/) に機能を追加した新しいスペルチェッカです．
+GNU Aspell は [Ispell](/Ispell/) に機能を追加した新しいスペルチェッカです．
 英語はもちろんのこと，ドイツ語・フランス語・ギリシア語・ロシア語などにも対応しています．
 TeX の命令を無視する機能もあります．
 
@@ -28,10 +28,18 @@ Aspell は本体と辞書ファイルが別々に配布されています．
 
 Windows の場合は MSYS2 で Aspell をインストールします．
 
-[Windows での Emacs の設定覚書#Aspell](http://qiita.com/ignorant/items/76e4c162cedc47336e75#aspell)
+- [https://packages.msys2.org/base/mingw-w64-aspell](https://packages.msys2.org/base/mingw-w64-aspell)
+    - [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-aspell](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-aspell)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-aspell](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-aspell)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-aspell](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-aspell)
+- [https://packages.msys2.org/base/mingw-w64-aspell-en](https://packages.msys2.org/base/mingw-w64-aspell-en)
+    - [https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-aspell-en](https://packages.msys2.org/packages/mingw-w64-ucrt-x86_64-aspell-en)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-x86_64-aspell-en](https://packages.msys2.org/packages/mingw-w64-clang-x86_64-aspell-en)
+    - [https://packages.msys2.org/packages/mingw-w64-clang-aarch64-aspell-en](https://packages.msys2.org/packages/mingw-w64-clang-aarch64-aspell-en)
+- [Windows での Emacs の設定覚書#Aspell](http://qiita.com/ignorant/items/76e4c162cedc47336e75#aspell)
 
 ```
-pacman -S mingw-w64-x86_64-aspell mingw-w64-x86_64-aspell-en
+pacman -S mingw-w64-ucrt-x86_64-aspell mingw-w64-ucrt-x86_64-aspell-en
 ```
 
 #### macOS の場合 {#g5b60c70}

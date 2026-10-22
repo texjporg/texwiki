@@ -9,7 +9,7 @@ pukiwiki: "yhmath"
 
 ## yhmath {#c1ec97da}
 
-[Yannis Haralambous](http://tug.org/interviews/haralambous.html) ([twitter](https://twitter.com/y_haralambous)) 作の根号や括弧などのフォントです。
+[Yannis Haralambous](http://tug.org/interviews/haralambous.html) ([X](https://x.com/y_haralambous)) 作の根号や括弧などのフォントです。
 通常より大きいものまで用意されています。
 
 yhmath を紹介してくださった本田さんに感謝します。

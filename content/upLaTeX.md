@@ -26,3 +26,4 @@ uplatex (pLaTeX2ε and miscellaneous macros for upTeX)とは、アスキー社�
 - [upTeX, upLaTeX − 内部Unicode版 pTeX, pLaTeX の実装](http://www.t-lab.opal.ne.jp/tex/uptex.html)
 - [uptex – Unicode version of pTeX](https://ctan.org/pkg/uptex)
 - [uplatex – pLaTeX2ε and miscellaneous macros for upTeX](https://ctan.org/pkg/uplatex)
+- [uplatexはTeXLive2020とTeXLive2021とでは異なるのか：パソコンや自然科学っぽい話題：SSブログ](https://math-sci.blog.ss-blog.jp/2021-07-26)

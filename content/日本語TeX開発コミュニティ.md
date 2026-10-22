@@ -23,7 +23,7 @@ pukiwiki: "日本語TeX開発コミュニティ"
 
 ### 関連記事 {#ce2b0eda}
 
-- [知ってるようで知らないTeXの世界 自分の人生より歴史あるソフトウェア開発をマネジメントする技術 - エンジニアHub｜若手Webエンジニアのキャリアを考える！](https://eh-career.com/engineerhub/entry/2019/07/04/103000)
+- [知ってるようで知らないTeXの世界 自分の人生より歴史あるソフトウェア開発をマネジメントする技術｜ハイクラス転職・求人情報サイト AMBI（アンビ）](https://en-ambi.com/itcontents/entry/2019/07/04/103000/)
 - [日本語 TeX 開発コミュニティの活動近況 - Acetaminophen’s diary](https://acetaminophen.hatenablog.com/entry/texadvent2020)
 
 ### コメント {#f0f56c11}

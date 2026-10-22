@@ -36,7 +36,9 @@ pukiwiki: "LyX/設定"
 
 #### LaTeX (pLaTeX) -> DVI {#p0550e68}
 
-初期設定では platex が設定されているので uplatex に変更します．
+2024年12月08日に日本語の文書のデフォルトが upLaTeX に変更されました。--&gt; [Make upLaTeX a default compiler for Japanese documents](https://git.lyx.org/gitweb/?p=lyx.git;a=commit;h=6bfa5f2e380e7513257a5373e537f9f3e461f439)
+
+platex が設定されている場合は uplatex に変更します。
 
 > <span style="color:#DFBE0C;background-color:#DFBE0C;"><ins>　　　　　　　　　　　　<span style="color:Black;"><strong>LyX: 設定</strong></span>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:#DFBE0C;background-color:#DFBE0C;"></ins>\[ <span style="color:Black;"><strong>？</strong></span> \]<ins></span><span style="color:#DD4444;background-color:#DD4444;"></ins>\[　<span style="color:White;">&#x1f5d9;</span>　\]<ins></span></ins></span><br>
 >
@@ -213,7 +215,7 @@ babel のオプションを設定する場合は以下の方法があります�
 
 LyX で自作文書クラスなどを使用したい場合は \[ヘルプ(H)\] &gt; \[カスタマイズ篇(C)\] の 『第5章 文書クラスを新規に導入する』 を参照してください．
 
-レイアウトファイルは [layouts](https://git.lyx.org/?p=lyx.git;a=tree;f=lib/layouts;hb=HEAD) フォルダーに存在する [jlreq-article.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout;hb=HEAD)、[jlreq-common.inc](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/jlreq-common.inc;hb=HEAD)、[bxjsarticle.layout](https://git.lyx.org/?p=lyx.git;a=blob;f=lib/layouts/bxjsarticle.layout;hb=HEAD) などを参考にして作成すれば OK です．
+レイアウトファイルは [layouts](https://git.lyx.org/gitweb/?p=lyx.git;a=tree;f=lib/layouts) フォルダーに存在する [article.layout](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=lib/layouts/article.layout)、[jlreq-common.inc](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=lib/layouts/jlreq-common.inc)、[jlreq-article.layout](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=lib/layouts/jlreq-article.layout)、[bxjsarticle.layout](https://git.lyx.org/gitweb/?p=lyx.git;a=blob;f=lib/layouts/bxjsarticle.layout) などを参考にして作成すれば OK です．
 
 Format 番号は LyX のバージョンによって異なります．
 
@@ -223,16 +225,16 @@ Format 番号は LyX のバージョンによって異なります．
 
 Windows の場合はレイアウトファイルを
 
-- %APPDATA%\LyX2.4\layouts\\
-    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.4\Resources\layouts\ -->
-    <!-- -C:\Program Files\LyX 2.4\Resources\layouts\ -->
+- %APPDATA%\LyX2.5\layouts\\
+    <!-- -C:\Users\Lydia\AppData\Local\LyX 2.5\Resources\layouts\ -->
+    <!-- -C:\Program Files\LyX 2.5\Resources\layouts\ -->
 
 フォルダーにコピーします．
 
 macOS の場合はレイアウトファイルを
 
 <!-- -/Applications/LyX.app/Contents/Resources/layouts/ -->
-- &#x7e;/Library/Application Support/LyX-2.4/layouts/
+- &#x7e;/Library/Application Support/LyX-2.5/layouts/
 
 フォルダにコピーします．
 
@@ -267,7 +269,7 @@ upLaTeX で日本語の文書を作成する場合は babel を無効にしま�
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　<span style="color:Black;background-color:#DAEAFF;">　言語　　　　　　　　　　</span><br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
@@ -352,7 +354,7 @@ LuaLaTeX で文書を作成する場合は，文字コードの類型を 直接 
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
@@ -405,7 +407,7 @@ LuaLaTeX を使用して日本語文書を作成する場合は LaTeXプリア�
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
@@ -457,7 +459,7 @@ LuaLaTeX の場合は，既定出力形式を PDF (LuaTeX) に変更します．
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
@@ -577,7 +579,7 @@ LuaLaTeX で 日本語Article (BXシリーズ) を使用する場合は，グラ
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>
@@ -618,7 +620,7 @@ LuaLaTeX で 日本語Article (BXシリーズ) を使用する場合は，グラ
 > 　　　　　ページレイアウト<br>
 > 　　　　　ページ余白<br>
 > 　　　　　言語<br>
-> 　　　　　色<br>
+> 　　　　　色彩<br>
 > 　　　　　変更追跡機能<br>
 > 　　　　　連番と目次<br>
 > 　　　　　書誌情報<br>

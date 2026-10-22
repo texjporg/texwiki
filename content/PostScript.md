@@ -7,10 +7,11 @@ pukiwiki: "PostScript"
 
 # PostScript
 
-## PostScript（非推奨） {#g9b8f6ae}
+## PostScript (非推奨) → [PDF](/PDF/) を使用する {#g9b8f6ae}
 
-PostScript は DTP 業界標準のページ記述言語です．
-[PDF](/PDF/) は PostScript を元にして策定されました．
+PostScript は DTP 業界標準のページ記述言語です。
+現在では PostScript の代わりに [PDF](/PDF/) が広く普及しています。
+[PDF](/PDF/) は PostScript を元にして策定されました。
 
 - [Adobe PostScript](https://www.adobe.com/jp/products/postscript.html)
 - [Adobe Printing Technologies -About PostScript 3](https://www.adobe.com/jp/print/postscript/)

@@ -20,7 +20,7 @@ pukiwiki: "TeX Live/Windows"
 基本的には ネットワークインストーラ を用いる方法をおすすめします。
 ネットワークインストーラで問題のある場合は ISO イメージ を用いる方法をご利用ください。 <!-- [[https://texwiki.texjp.org/?TeX%20Live]] と 公式ページの説明とおすすめするインストール方法を合わせます。 -->
 
-ARM64 版 Windows を使用している方で x64（AMD64）版よりも高速に動作する AArch64（ARM64） 版の TeX Live バイナリを使用したい方は [MSYS2](/MSYS2/#texlive) を参照してください。
+ARM64 版 Windows を使用している方で x64（AMD64）版よりも高速に動作する ARM64（AArch64） 版の TeX Live バイナリを使用したい方は [MSYS2](/MSYS2/#texlive) を参照してください。
 
 ### ネットワークインストーラの場合 {#w369638d}
 
@@ -225,6 +225,7 @@ TeX Live 2026 対応の事例です。
 
 TeX Live 2025 対応の事例です。
 
+- [理系の必須ツールLaTeX環境構築(Windows編)【新歓ブログリレー2026 vol.7】](https://tpgd.jp/blog/%E7%90%86%E7%B3%BB%E3%81%AE%E5%BF%85%E9%A0%88%E3%83%84%E3%83%BC%E3%83%ABlatex%E6%A7%8B%E7%AF%89windows%E7%B7%A8/)
 - [VSCode meets Tex Live【超簡単】【LaTeX環境構築】【pdflatex / lualatex / bibtex】【コードのコピペのみで完結】【Windows】](https://note.com/yasu0704xx/n/n9bf6b62686b9)
 - [TeXLive のインストールが終わっていないようだが使える](https://okumuralab.org/tex/mod/forum/discuss.php?d=3999)
 - [TeX Live 2025 をインストールしてみた。](https://iek.hatenablog.com/entry/2025/03/27/200011)

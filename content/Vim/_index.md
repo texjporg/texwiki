@@ -183,14 +183,6 @@ tex.vim, VimTeX, LaTeX Box, quickrun の場合 inverse search は SumatraPDF の
 です．<br>
 設定ファイルから SumatraPDF の -inverse-search コマンドラインオプションで指定することもできます．<br>
 
-## Evince との連携 {#p78ad52b}
-
-### forward and inverse search {#p2367ca6}
-
-[tex.vim](/Vim/#y0b061e7) を参照してください．
-
-- [http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html](http://blog.wuzzeb.org/posts/2013-05-11-vim-latex-forward-search.html)
-
 ## 使い方 {#j3d4339e}
 
 - [MBA-HACK: vim](http://mba-hack.blogspot.jp/search/label/vim)

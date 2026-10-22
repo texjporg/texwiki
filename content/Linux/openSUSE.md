@@ -27,8 +27,8 @@ openSUSE Tumbleweed はローリングリリースモデルで最新の Linux �
 
 - [https://software.opensuse.org/package/texlive-scheme-full](https://software.opensuse.org/package/texlive-scheme-full)
 - [https://software.opensuse.org/package/texlive-collection-langjapanese](https://software.opensuse.org/package/texlive-collection-langjapanese)
-- [https://software.opensuse.org/package/texlive-collection-latexextra](https://software.opensuse.org/package/texlive-collection-latexextra)
 - [https://software.opensuse.org/package/texlive-collection-luatex](https://software.opensuse.org/package/texlive-collection-luatex)
+- [https://software.opensuse.org/package/texlive-collection-latexextra](https://software.opensuse.org/package/texlive-collection-latexextra)
 - [Show Publishing:TeXLive - openSUSE Build Service](https://build.opensuse.org/project/show/Publishing:TeXLive)
 - [Index of /repositories/Publishing:/TeXLive](http://download.opensuse.org/repositories/Publishing:/TeXLive/)
 
@@ -41,11 +41,11 @@ sudo zypper install texlive-scheme-full
 日本語関連のパッケージのみインストールする場合は
 
 ```
-sudo zypper install texlive-collection-langjapanese texlive-collection-latexextra texlive-collection-luatex
+sudo zypper install texlive-collection-langjapanese texlive-collection-luatex texlive-collection-latexextra
 ```
 
-を実行します．[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-collection-latexextra をインストールする必要があります．
-[LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-collection-luatex をインストールする必要があります．
+を実行します．[LuaTeX-ja](/LuaTeX-ja/) は luatexja-core.sty で luatexbase.sty が必要なので texlive-collection-luatex をインストールする必要があります．
+[jlreq](/jlreq/) は LuaLaTeX 非利用時は everyhook.sty が必要なので texlive-collection-latexextra をインストールする必要があります．
 
 ### [Ghostscript](/Ghostscript/) {#iea7fcc9}
 

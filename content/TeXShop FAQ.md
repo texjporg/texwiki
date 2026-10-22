@@ -31,7 +31,7 @@ TeXShop には文字コード自動判定機能はありませんので，開き
 
 ### TeXShop のアップデートに失敗する {#bc4016e9}
 
-OS X Mavericks 10.9.5 のアップデートにおいて，[デジタル署名のバージョンがアップデートされた](http://readwrite.jp/archives/11485)影響で，それ以前の時代に開発されたアプリを自動アップデートしようとすると，アップデートに失敗することがあります。
+OS X Mavericks 10.9.5 のアップデートにおいて，[デジタル署名のバージョンがアップデートされた](https://ascii.jp/elem/000/000/921/921616/)影響で，それ以前の時代に開発されたアプリを自動アップデートしようとすると，アップデートに失敗することがあります。
 TeXShop のメニューからの自動アップデートがうまくいかない場合は，[TeXShop の公式サイト](https://pages.uoregon.edu/koch/texshop/)から最新版の TeXShop をダウンロードして，既存の TeXShop.app を上書きすることで，手動アップデートを行ってください。
 
 - TeX Forum: [1575](https://okumuralab.org/tex/mod/forum/discuss.php?d=1575#p8979)
@@ -105,7 +105,7 @@ defaults write TeXShop FixLineNumberScroll NO
 
 前者2つは今後新規に開くウィンドウのデフォルト挙動を規定し，後者2つは現在開いているウィンドウの設定値を規定しています。
 
-なお，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を導入すれば，TeXの文法を考慮したスペルチェック（例えば \newcommand のような制御綴をスペルチェック対象から除外するなど）が可能になります。詳細は [cocoAspellの利用](https://texwiki.texjp.org/?TeXShop%20FAQ#s065005c) の項目をご覧ください。
+なお，[cocoAspell](https://people.ict.usc.edu/~leuski/cocoaspell/home.php) を導入すれば，TeXの文法を考慮したスペルチェック（例えば \newcommand のような制御綴をスペルチェック対象から除外するなど）が可能になります。詳細は [cocoAspellの利用](https://texwiki.texjp.org/?TeXShop%20FAQ#s065005c) の項目をご覧ください。
 
 ### 黒背景に白文字になるよう設定変更していても，日本語入力時の未確定文字が黒色になってしまって見づらい {#lf54248c}
 
@@ -544,7 +544,7 @@ Command + 2 でタグ行を挿入できます。
 
 ### cocoAspell の利用 {#s065005c}
 
-\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を利用します。cocoAspell は MacTeX にも収録されています。
+\newcommand といったTeXのコマンド部分をスペルチェック対象から除外してスペルチェックを行うには，[cocoAspell](https://people.ict.usc.edu/~leuski/cocoaspell/home.php) を利用します。
 
 インストール手順は以下の通り：
 
@@ -556,7 +556,7 @@ Command + 2 でタグ行を挿入できます。
 
 を実行してインストールしておきます。
 
-2. [cocoAspell](http://people.ict.usc.edu/~leuski/cocoaspell/) を公式サイトからダウンロードしてインストールします。macOS のバージョンごとに使用するバージョンが異なりますので，適切なバージョンをダウンロードしてインストールしてください。なお，インストール時に「開発元が未確認のため開けません」というエラーメッセージが出る場合は，右クリック(Control+Click)して「開く」を選択すればOKです。
+2. [cocoAspell](https://people.ict.usc.edu/~leuski/cocoaspell/home.php) を公式サイトからダウンロードしてインストールします。macOS のバージョンごとに使用するバージョンが異なりますので，適切なバージョンをダウンロードしてインストールしてください。なお，インストール時に「開発元が未確認のため開けません」というエラーメッセージが出る場合は，右クリック(Control+Click)して「開く」を選択すればOKです。
 
 3. システム環境設定の一番下の段に Spelling という項目が追加されます。その中の English \[w_accents\] にチェックを入れて，右側の「TeX/LaTeX」にチェックを入れます。
 

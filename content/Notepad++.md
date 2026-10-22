@@ -75,12 +75,11 @@ Notepad++ の派生版 で EUC-JP と ISO-2022-JP に対応した Notepad++和�
 
 Notepad++ JS npp-7.5.1.1-js-171025-2200 (日付: 2017-10-25) が最新リリース版のようです。
 
-- [Notepad++和式 (aka Notepad++JS aka nppjs)](https://ja.osdn.net/projects/l2jacmjpn/)
-    - [https://ja.osdn.net/projects/l2jacmjpn/releases/p15218](https://ja.osdn.net/projects/l2jacmjpn/releases/p15218)
-    - [https://jaist.dl.osdn.jp/l2jacmjpn/](https://jaist.dl.osdn.jp/l2jacmjpn/)
-        - [https://jaist.dl.osdn.jp/l2jacmjpn/68568/](https://jaist.dl.osdn.jp/l2jacmjpn/68568/)
-    - [https://iij.dl.osdn.jp/l2jacmjpn/](https://iij.dl.osdn.jp/l2jacmjpn/)
-        - [https://iij.dl.osdn.jp/l2jacmjpn/68568/](https://iij.dl.osdn.jp/l2jacmjpn/68568/)
+- Notepad++和式 (aka Notepad++JS aka nppjs)
+    - [https://ftp.jaist.ac.jp/pub/sourceforge.jp/l2jacmjpn/](https://ftp.jaist.ac.jp/pub/sourceforge.jp/l2jacmjpn/)
+        - [https://ftp.jaist.ac.jp/pub/sourceforge.jp/l2jacmjpn/68568/](https://ftp.jaist.ac.jp/pub/sourceforge.jp/l2jacmjpn/68568/)
+    - [https://ftp.iij.ad.jp/pub/osdn.jp/l2jacmjpn/](https://ftp.iij.ad.jp/pub/osdn.jp/l2jacmjpn/)
+        - [https://ftp.iij.ad.jp/pub/osdn.jp/l2jacmjpn/68568/](https://ftp.iij.ad.jp/pub/osdn.jp/l2jacmjpn/68568/)
 
 ## プラグイン (Plugins) {#k2155ff2}
 

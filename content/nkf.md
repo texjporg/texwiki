@@ -7,7 +7,7 @@ pukiwiki: "nkf"
 
 # nkf
 
-## [nkf](https://ja.osdn.net/projects/nkf/) {#ie06d283}
+## [nkf](https://github.com/nurse/nkf) {#ie06d283}
 
 nkf は，文字コードを変換するツールです。
 
@@ -17,10 +17,8 @@ nkf は，文字コードを変換するツールです。
 
 ### ダウンロード {#q89745b2}
 
-- [https://ja.osdn.net/projects/nkf/](https://ja.osdn.net/projects/nkf/)
-- [https://jaist.dl.osdn.jp/nkf/](https://jaist.dl.osdn.jp/nkf/)
-- [https://iij.dl.osdn.jp/nkf/](https://iij.dl.osdn.jp/nkf/)
-- [https://ymu.dl.osdn.jp/nkf/](https://ymu.dl.osdn.jp/nkf/)
+- [https://github.com/nurse/nkf](https://github.com/nurse/nkf)
+- [https://github.com/kkato233/nkf](https://github.com/kkato233/nkf)
 - [https://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/](https://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/)
 - [https://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/](https://ftp.iij.ad.jp/pub/sourceforge.jp/nkf/)
 - [https://ftp.iij.ad.jp/pub/osdn.jp/nkf/](https://ftp.iij.ad.jp/pub/osdn.jp/nkf/)
@@ -62,7 +60,7 @@ $ sudo port install nkf
 ソースからビルドする方法です。
 
 ```
-$ curl -kRLO http://jaist.dl.osdn.jp/nkf/70406/nkf-2.1.5.tar.gz
+$ curl -kRLO https://ftp.jaist.ac.jp/pub/sourceforge.jp/nkf/70406/nkf-2.1.5.tar.gz
 $ tar xvf nkf-2.1.5.tar.gz
 $ pushd nkf-2.1.5
 $ make

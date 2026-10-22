@@ -78,11 +78,11 @@ pdfTeX は PDF 直接出力と Microtypography 機能を搭載した TeX の派�
 pTeX は日本語の処理のために拡張された TeX の派生プログラムです。
 そこからさらに，[e-TeX](/e-TeX/) 拡張を取り入れた [e-pTeX](/e-pTeX/) と，
 それに Unicode 対応版と合流した [e-upTeX](/upTeX,upLaTeX/) があります。
-これらとは別に，[pTeX-ng](/pTeX-ng/) という，PDF 出力をするように拡張されたものもあります。
+これらとは別に，[Asiatic pTeX](</Asiatic pTeX/>) という，PDF 出力をするように拡張されたものもあります。
 
 - [e-pTeX](/e-pTeX/)
 - [e-upTeX](/upTeX,upLaTeX/)
-- [pTeX-ng](/pTeX-ng/)
+- [Asiatic pTeX](</Asiatic pTeX/>)
 
 #### XeTeX {#zd6f8a63}
 

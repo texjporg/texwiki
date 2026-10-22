@@ -13,7 +13,7 @@ Mathptmx は，本文・数式の両方のフォントを Times に変更する�
 
 ***
 
-> ![](http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/mathptmx.jpg)
+> ![](https://web.archive.org/web/20151107130735if_/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/mathtime/mathptmx.jpg)
 >
 > ***
 >

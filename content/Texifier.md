@@ -9,7 +9,7 @@ pukiwiki: "Texifier"
 
 ## Texifier {#q728ac5b}
 
-Texifier は macOS、iPadOS、iOSで動作する、高機能な(La)TeX統合環境です。
+Texifier は macOS、iOS、iPadOSで動作する、高機能な(La)TeX統合環境です。
 
 iOS 版の Texifier はクラウドタイプセットで日本語の文書をコンパイルできます。
 
@@ -19,11 +19,12 @@ iOS 版の Texifier はクラウドタイプセットで日本語の文書をコ
 
 <strong>App Store</strong>
 
-- [Texifier : LaTeX editor](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159)
+- [Texifier - LaTeX Editor](https://apps.apple.com/jp/app/texifier-latex-editor/id458866234) (macOS)
+- [Texifier : LaTeX editor](https://apps.apple.com/jp/app/texifier-latex-editor/id550419159) (iOS, iPadOS)
 
 ### 動作環境 {#m6120f50}
 
-macOS, iPadOS, iOS
+macOS, iOS, iPadOS
 
 ### 使い方（macOS版） {#b748650e}
 

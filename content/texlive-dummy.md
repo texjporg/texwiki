@@ -71,7 +71,7 @@ TeX Live の公式サイトのインストーラで TeX Live をインストー�
 texlive-dummy をインストールすると TeX Live/Fedora に依存するパッケージが TeX Live/Fedora をインストールするのを防止できます．
 
 ```
-sudo dnf install https://mirrors.ctan.org/support/texlive/texlive-dummy/Fedora/texlive-dummy-2022-1.fc36.noarch.rpm
+sudo dnf install https://mirrors.ctan.org/support/texlive/texlive-dummy/Fedora/texlive-dummy-2026-1.fc44.noarch.rpm
 ```
 
 ### Red Hat Enterprise Linux (RHEL) {#xcb6b24c}

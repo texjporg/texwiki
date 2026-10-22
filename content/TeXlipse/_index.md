@@ -159,7 +159,6 @@ Eclipse を起動します．
 - [TeX環境構築（TeXlipse）](http://kougen.iobb.net/hobbygardens/article.php?id=64)
 - [Haru Blog｜TeXlipse](http://harublo9.blog57.fc2.com/?q=TeXlipse)
 - [Eclipseワードラップ用プラグイン](http://dogwood.skr.jp/blog/2013/10/389/)
-- [Eclipse/TeXlipse and evince: How to make backward search work? (Example using Ubuntu 14.04)](http://solutions4linux.blogspot.com/2014/05/eclipsetexlipse-and-evince-how-to-make.html)
 - [TeXlipse＋Pdf4EclipseでTeX執筆環境を構築する](http://tatuas.hatenablog.com/entry/2012/12/11/211105)
 - [【Win8】 TeXlipse (eclipseでLaTexを作成するためのプラグイン) インストール：なんでもかんでもコンピュータ：So-netブログ](http://ankyo.blog.so-net.ne.jp/2012-12-01)
 - [spell check does not run](https://sourceforge.net/projects/texlipse/forums/forum/451977/topic/3669794)

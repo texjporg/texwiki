@@ -19,12 +19,12 @@ Python Script を使うと LaTeX 環境を簡単に作ることができます�
 plugins\Config\PythonScript\scripts\ フォルダーに Pyhton Script を作成すると Machine Scripts に Python Script が表示されます．<br>
 表示された Python Script は Menu items に追加できます．<br>
 
-- [Python Script - Plugin for Notepad++](http://npppythonscript.sourceforge.net/)
+- [https://github.com/bruderstein/PythonScript](https://github.com/bruderstein/PythonScript)
 - [Welcome to PythonScript’s documentation!](http://npppythonscript.sourceforge.net/docs/latest/)
 
 ### License {#cb3f7a8f}
 
-GPLv3
+[GPLv3](https://github.com/bruderstein/PythonScript/blob/master/www/header.inc#L37)
 
 <!-- **注意事項 [#f37b5e02] -->
 <!--  -->
@@ -59,84 +59,6 @@ if __name__ == '__main__':
 
 ***
 
-### pdfupLaTeX2.py {#rc9f8392}
-
-***
-
-```
-import os
-import os.path
-
-class Command:
-    def run(self):
-        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-        c = os.path.dirname(notepad.getCurrentFilename())
-        uplatex = 'uplatex -no-guess-input-enc -kanji=utf8 -synctex=1 "' + b + '"'
-        dvips = 'dvips -Ppdf -z -f "' + b + '.dvi" | convbkmk -u > "' + b + '.ps"'
-        ps2pdf = 'ps2pdf.exe "' + b + '.ps"'
-        uplatex_dvips_ps2pdf = uplatex + ' && ' + dvips + ' && ' + ps2pdf
-        notepad.save()
-        os.chdir(c)
-        console.clear()
-        console.show()
-        console.run(r'cmd /c ' + uplatex_dvips_ps2pdf)
-
-if __name__ == '__main__':
-    Command().run()
-```
-
-***
-
-### pLaTeX-ng.py {#kba9ea83}
-
-***
-
-```
-import os
-import os.path
-
-class Command:
-    def run(self):
-        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-        c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'platex-ng -synctex=1 "' + b + '"'
-        notepad.save()
-        os.chdir(c)
-        console.clear()
-        console.show()
-        console.run(pdflatex)
-
-if __name__ == '__main__':
-    Command().run()
-```
-
-***
-
-### pdfLaTeX.py {#l6e1425f}
-
-***
-
-```
-import os
-import os.path
-
-class Command:
-    def run(self):
-        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-        c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'pdflatex -synctex=1 "' + b + '"'
-        notepad.save()
-        os.chdir(c)
-        console.clear()
-        console.show()
-        console.run(pdflatex)
-
-if __name__ == '__main__':
-    Command().run()
-```
-
-***
-
 ### LuaLaTeX.py {#p03245f3}
 
 ***
@@ -150,56 +72,6 @@ class Command:
         b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
         c = os.path.dirname(notepad.getCurrentFilename())
         pdflatex = 'lualatex -synctex=1 "' + b + '"'
-        notepad.save()
-        os.chdir(c)
-        console.clear()
-        console.show()
-        console.run(pdflatex)
-
-if __name__ == '__main__':
-    Command().run()
-```
-
-***
-
-### LuajitLaTeX.py {#w98c875c}
-
-***
-
-```
-import os
-import os.path
-
-class Command:
-    def run(self):
-        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-        c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'luajitlatex -synctex=1 "' + b + '"'
-        notepad.save()
-        os.chdir(c)
-        console.clear()
-        console.show()
-        console.run(pdflatex)
-
-if __name__ == '__main__':
-    Command().run()
-```
-
-***
-
-### XeLaTeX.py {#zcb23cff}
-
-***
-
-```
-import os
-import os.path
-
-class Command:
-    def run(self):
-        b = os.path.splitext(os.path.basename(notepad.getCurrentFilename()))[0]
-        c = os.path.dirname(notepad.getCurrentFilename())
-        pdflatex = 'xelatex -synctex=1 "' + b + '"'
         notepad.save()
         os.chdir(c)
         console.clear()

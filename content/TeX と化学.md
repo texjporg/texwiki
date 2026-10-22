@@ -55,8 +55,8 @@ pukiwiki: "TeX と化学"
 
 #### パッケージの利用 {#v18ced72}
 
+- [chemfig](/chemfig/) ：[TikZ](/TikZ/) ベースの化学構造描画パッケージ．
 - [XyMTeX](/XyMTeX/) ：藤田眞作先生による化学構造描画パッケージ．
-- ChemFig ：[TikZ](/TikZ/) ベースの化学構造描画パッケージ．
 
 #### 化学構造描画の専用ツールの利用 {#l7c47a01}
 

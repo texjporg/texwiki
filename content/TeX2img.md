@@ -19,7 +19,7 @@ TeX2img は TeX ソースコードをタイプセットし，画像に変換す�
 
 類似ソフトウェアとして，[LaTeXiT](/LaTeXiT/) または [KLatexFormula](/KLatexFormula/) があります．
 
-奥村先生の [［改訂第7版］LaTeX2e 美文書作成入門](http://okumuralab.org/bibun7/) には，Windows版/macOS版が標準インストールソフトウェアとしてバンドルされています．
+奥村先生の [［改訂第7版］LaTeX2e 美文書作成入門](https://okumuralab.org/bibun7/) には，Windows版/macOS版が標準インストールソフトウェアとしてバンドルされています．
 
 ***
 

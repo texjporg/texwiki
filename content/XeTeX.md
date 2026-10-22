@@ -759,7 +759,7 @@ Hello, \TeX !
 
 - \[[XeTeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5BXeTeX%5D) (ZR (八登 崇之) さん)
 - [「XeTeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=XeTeX)
-- [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](http://zrbabbler.sp.land.to/)
+- [En toi Pythmeni tes TeXnopoleos \[電脳世界の奥底にて\]](https://zr-tex8r.github.io/pythmeni/)
 - [XeLaTeX : いわにぃのブログ](http://blog.livedoor.jp/ti5942/archives/cat_127398.html)
 - [xelatex | 検索結果:  | miyazakikenji](https://miyazakikenji.wordpress.com/?s=xelatex)
 - [XeLaTeX覚書：多言語環境で部分的に日本語を使おう！](https://jamejammy.hatenablog.com/entry/2014/05/14/211112)

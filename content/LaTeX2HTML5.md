@@ -9,12 +9,4 @@ pukiwiki: "LaTeX2HTML5"
 
 ## LaTeX2HTML5 {#f6c1ef79}
 
-- [latex2html5.com](http://latex2html5.com/)
-
-### License {#o449ea73}
-
-[BSD 3-Clause](https://github.com/Mathapedia/LaTeX2HTML5/blob/master/LICENSE.txt)
-
-### ChangeLog {#q178ffe2}
-
-- [https://github.com/Mathapedia/LaTeX2HTML5/commits/](https://github.com/Mathapedia/LaTeX2HTML5/commits/)
+後継の [LaTeX2JS](/LaTeX2JS/) を参照ください。

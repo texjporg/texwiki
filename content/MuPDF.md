@@ -28,7 +28,7 @@ Windows, macOS, Linux, Android, iOS
 
 #### Windows {#j0820160}
 
-- [https://mupdf.com/releases](https://mupdf.com/releases) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
+- [https://mupdf.com/releases?product=MuPDF](https://mupdf.com/releases?product=MuPDF) から mupdf-リリース番号-windows.zip をダウンロードして展開します．
 
 MSYS2 からインストールもできます。
 
@@ -76,7 +76,6 @@ pacman -S mupdf-gl mupdf-tools
 Linux Mint や Debian GNU/Linux や Ubuntu では、MuPDF のパッケージは libmupdf-dev と mupdf と mupdf-tools の3つに分かれています。
 自分で MuPDF を使ったプログラムをコンパイルするのでなければ、libmupdf-dev をインストールする必要はありません。
 mupdf と mupdf-tools を入れたら OK です。
-Ubuntu 16.04 LTS に収録されている mupdf-tools 1.7a-1 には mutool と mudraw が含まれていますが現在の MuPDF では mudraw の機能は mutool に統合されており mudraw バイナリは存在しません。
 
 ```
 sudo apt install mupdf mupdf-tools
@@ -84,7 +83,7 @@ sudo apt install mupdf mupdf-tools
 
 #### Fedora {#k5d2c514}
 
-- [https://apps.fedoraproject.org/packages/mupdf](https://apps.fedoraproject.org/packages/mupdf)
+- [https://packages.fedoraproject.org/pkgs/mupdf/mupdf/](https://packages.fedoraproject.org/pkgs/mupdf/mupdf/)
 
 ```
 sudo dnf install mupdf

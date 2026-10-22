@@ -30,9 +30,11 @@ Windows, macOS, Linux
 ### 派生版 {#w9aaefab}
 
 - [VSCodium](https://vscodium.com/)
+    - LaTeX Workshop は VSCodium を公式にサポートしていません --&gt; [VSCodium is not officially supported](https://github.com/James-Yu/latex-workshop/wiki/FAQ#vscodium-is-not-officially-supported)
 - [Cursor](https://cursor.com/)
-- [Windsurf](https://windsurf.com/)
+- [Devin Desktop](https://devin.ai/desktop)
 - [Eclipse Theia IDE](https://theia-ide.org/)
+    - LaTeX Workshop は Eclipse Theia をサポートしていません --&gt; [Eclipse Theia is not supported](https://github.com/James-Yu/latex-workshop/wiki/FAQ#eclipse-theia-is-not-supported)
 
 ## Visul Studio Code の LaTeX 用 Extension {#ab9306b3}
 

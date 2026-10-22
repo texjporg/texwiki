@@ -102,18 +102,6 @@ pacman -S mingw-w64-clang-aarch64-texlive-scheme-full
 
 - [Building TeX Live](http://www.tug.org/texlive/doc/tlbuild.html)
 - [MSYS2 / Windows ARM64 ビルドスクリプトの説明](https://github.com/abenori/texlive-2026-windows-arm64/blob/main/docs/BUILD-SCRIPTS.ja.md)
-    <!-- -[http://abenori.blogspot.jp/2015/11/tex-live.html にっき&#9834;: TeX Liveのビルド] -->
-    <!--  -->
-    <!-- C:\msys64\mingw64.exe をダブルクリックして以下のコマンドを実行するとビルドできます． -->
-    <!--  -->
-    <!-- $ pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-libs mingw-w64-x86_64-fontconfig make rsync -->
-    <!-- $ mkdir texlive-win64 && cd texlive-win64 -->
-    <!-- $ rsync -a - -delete - -exclude=.svn - -exclude=Work tug.org::tldevsrc/Build/source/ . -->
-    <!-- $ mkdir Work && cd Work -->
-    <!-- $ ../Build - -no-clean -->
-    <!--  -->
-    <!-- 途中でエラーが発生する場合はエラーメッセージを読んで適切に修正します． -->
-    <!-- 上記の方法でビルドした場合は  ~/texlive-win64/inst/bin/x86_64-pc-mingw64/ 配下に実行ファイルが作成されました． -->
 
 ## MSYS2 関連リンク {#i2a5ff0e}
 

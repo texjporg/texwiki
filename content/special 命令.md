@@ -838,7 +838,7 @@ TeX の出力結果 "Hello World!" を切り取り，uxobj で貼り付けます
 
 ## 関連リンク {#links}
 
-- [dvipdfmx（谷村さん）](http://r03.nurse.medic.mie-u.ac.jp/LaTeX/dvipdfmx.html)：dvipdfm/dvipdfmx 用の \special の様々な使用例
+- [dvipdfmx（谷村さん）](https://web.archive.org/web/20250427162209/http://r03.nurse.medic.mie-u.ac.jp/LaTeX/dvipdfmx.html)：dvipdfm/dvipdfmx 用の \special の様々な使用例
 
 [^1]: モノクロのプリンターで紙に印刷する場合にはこれらの機能は意味を持たないので，“デバイス非依存”を旨とする DVI 標準でサポートされないのは当然でしょう。
 [^2]: special 命令を扱うのに，DVI 仕様の詳細についての理解は（一般には）不要です。

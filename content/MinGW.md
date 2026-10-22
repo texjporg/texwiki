@@ -25,6 +25,7 @@ mingw-w64 を使用すれば [TeX Live](</TeX Live/>) の 64-bit(x64), AArch64(A
 
 ### インストール {#x50e277a}
 
+- [WindowsにMinGW-w64をインストールする 2025年版](https://qiita.com/yomei_o/items/2e706a5fa3ac5ffc3a50)
 - [MinGWインストール手順](https://web.yokkaichi-u.ac.jp/yucc/archives/3298)
 
 ### 注意点 {#e1429662}

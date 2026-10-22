@@ -7,6 +7,10 @@ pukiwiki: "TeX Live Shell"
 
 # TeX Live Shell
 
+## TeX Live Shell {#y2f56373}
+
+TeX Live Shell (GUI 版 TeX Live Manager) は [TeX Live](</TeX Live/>) のパッケージ管理ツールです．
+
 ### 使い方 {#jf67d712}
 
 コマンドラインから

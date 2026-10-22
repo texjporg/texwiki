@@ -18,6 +18,13 @@ Tinymist Typst VS Code Extension は [Visual Studio Code](</Visual Studio Code/>
 - [Tinymist Typst - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=myriad-dreamin.tinymist)
 - [GitHub - Myriad-Dreamin/tinymist: Tinymist \[ˈtaɪni mɪst\] is an integrated language service for Typst \[taɪpst\].](https://github.com/Myriad-Dreamin/tinymist)
 
+### Typst Extension for Zed {#x6b8d1f5}
+
+Typst Extension for Zed は Zed の Typst 用 extension です。
+
+- [GitHub - zed-extensions/typst: Typst extension for zed · GitHub](https://github.com/zed-extensions/typst)
+- [ZedでTypstの執筆・プレビュー環境を整える方法](https://zenn.dev/itsukikigoshi/articles/typst-in-zed-prevew-setup)
+
 ### typst.vim {#zaea2116}
 
 typst.vim は Typst のための Vim と Neovim の plugin です。

@@ -26,3 +26,5 @@ pukiwiki: "ClutTeX"
 - [LaTeX処理自動化ツール ClutTeX をリリースした](https://blog.miz-ar.info/2018/10/cluttex-release/)
 - [https://x.com/search?q=ClutTeX&f=live](https://x.com/search?q=ClutTeX&f=live)
 - [追：latexmkの例と同一の環境・ディレクトリ構成・ファイルでClutTeXを以下のように実行したところ、問題なく処理されました。<br><br>cluttex --engine=pdflatex --output-directory=out --bibtex=bibtex main.tex](https://x.com/yara_platypus/status/1802664815602893065)
+- [auctex-cluttex.el](https://github.com/tsuu32/auctex-cluttex)
+- [clutealtex](https://github.com/atticus-sullivan/cluttealtex)

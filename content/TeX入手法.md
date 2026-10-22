@@ -51,6 +51,7 @@ macOS 用の [MacTeX](/MacTeX/) は TeX Live をベースにしたものです�
 - [macOS](/Mac/)
 - [Linux](/Linux/)
 - [BSD](/BSD/)
+- [ChromeOS](/ChromeOS/)
 - [Android](/Android/)
 - [iOS](/iOS/)
 

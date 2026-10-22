@@ -9,7 +9,7 @@ pukiwiki: "BSD/OpenBSD"
 
 [BSD](/BSD/) > OpenBSD
 
-## [OpenBSD](http://www.openbsd.org/) {#xa96e58c}
+## [OpenBSD](https://www.openbsd.org/) {#xa96e58c}
 
 ***
 
@@ -19,13 +19,14 @@ pukiwiki: "BSD/OpenBSD"
 
 OpenBSD はオープンソースの Unix 系オペレーティングシステムです．<br>
 
-- [OpenBSD](http://www.openbsd.org/)
-- [OpenBSD プロジェクト](http://www.openbsd.org/ja/)
+- [OpenBSD](https://www.openbsd.org/)
+- [OpenBSD Solutions ブログ](https://obsd.solutions/ja/blog/)
 
 ## TeX Live <a id="texlive"></a> {#xd125334}
 
 ### TeX Live/OpenBSD {#ra162963}
 
-- [OpenBSD ports &there4; print/texlive/texmf,-full](http://ports.su/print/texlive/texmf,-full)
-- [http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/](http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/)
-    - [http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/README](http://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/README)
+- [OpenBSD Ports Readme: port print/texlive/texmf,-full](https://openports.pl/path/print/texlive/texmf,-full)
+- [OpenBSD print/texlive/texmf,-full port](https://ports.to/path/print/texlive/texmf,-full.html)
+- [https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/](https://cvsweb.openbsd.org/cgi-bin/cvsweb/ports/print/texlive/)
+- [https://github.com/openbsd/ports/tree/master/print/texlive](https://github.com/openbsd/ports/tree/master/print/texlive)

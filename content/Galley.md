@@ -27,6 +27,6 @@ brew install --cask munepi/galley/galley
 
 ### 設定 {#t67b6e8b}
 
-SyncTeX を使用して Visual Studio Code、Emacs、Vim/Neovim (VimTeX) 等と連携ができます。
+SyncTeX を使用して Visual Studio Code、Emacs、Vim/Neovim (VimTeX) などと連携ができます。
 
 - [https://github.com/munepi/Galley#configuration](https://github.com/munepi/Galley#configuration)

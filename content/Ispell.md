@@ -10,7 +10,7 @@ pukiwiki: "Ispell"
 ## [Ispell](http://www.cs.hmc.edu/~geoff/ispell.html) {#m5b4a889}
 
 Ispell は，西洋の多くの言語をサポートした 古典的な UNIX 向けスペルチェッカです。Ispellの代替として [Aspell](/Aspell/) が長く使われてきましたが、現在は、[MySpell](https://en.wikipedia.org/wiki/MySpell) をベースに開発された [Hunspell](/Hunspell/) が主流です。
-Windows の場合は[角藤さんによる移植版](http://www.ring.gr.jp/archives/text/TeX/ptex-win32/w32/)を利用できます．
+Windows の場合は[角藤さんによる移植版](https://ftp.math.utah.edu/pub/tex/historic/systems/w32tex/w32/)を利用できます．
 
 ### 使い方 {#web8b1ab}
 

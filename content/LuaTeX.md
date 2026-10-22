@@ -61,7 +61,7 @@ TeX Live 2021 には Lua 5.3.6 が収録されています。--&gt; [Lua 5.3.6 (
 
 TeX Live 2020 には Lua 5.3.5 が収録されています。
 
-TeX Live 2019 には Lua 5.3.5 が収録されています。
+TeX Live 2019 には Lua 5.3.5 が収録されています。--&gt; [lua 5.3.5 (45dd2753) · コミット · TeXLive / luatex · GitLab](https://gitlab.lisn.upsaclay.fr/texlive/luatex/-/commit/45dd2753c64e06f28bc047b7e5f10328d8e32dc2)、[sync with luatex revision 6924. - \[ViewVC\] Revision 48591 of: texlive: texlive](https://svn.tug.org:8369/texlive?revision=48591&view=revision)、[sync with luatex revision 6924. · TeX-Live/texlive-source@aa5363b · GitHub](https://github.com/TeX-Live/texlive-source/commit/aa5363bd0dc180752c7d8eb9d847c2581e453b1a)
 
 TeX Live 2018 には Lua 処理系のバージョンが異なる2つの LuaTeX バイナリが収録されています。
 

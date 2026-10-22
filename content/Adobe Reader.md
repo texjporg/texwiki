@@ -7,4 +7,4 @@ pukiwiki: "Adobe Reader"
 
 # Adobe Reader
 
-[Adobe Acrobat Reader DC](</Adobe Acrobat Reader DC/>) に移転しました。
+[Adobe Acrobat Reader](</Adobe Acrobat Reader/>) に移転しました。

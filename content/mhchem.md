@@ -11,7 +11,7 @@ pukiwiki: "mhchem"
 
 [mhchem](https://ctan.org/pkg/mhchem) は，化学式や反応式を書くためのパッケージです．
 
-[TeX Live](</TeX Live/>), [W32TeX](/W32TeX/) に含まれています．
+[TeX Live](</TeX Live/>) に含まれています．
 
 ### 関連リンク {#f16db64d}
 

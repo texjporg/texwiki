@@ -43,16 +43,11 @@ Adobe Acrobat Reader を使用すれば豊富なフォントを利用できま�
     - [Adobe-CNS1-6 Character Collection for CID-Keyed Fonts #5080 (PDF,9.5 MiB)](https://web.archive.org/web/20170428002724/http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5080.Adobe-CNS1-6.pdf) (Wayback Machine)
     - [Adobe-Korea1-2 Character Collection for CID-Keyed Fonts #5093 (PDF,6.8 MiB)](https://web.archive.org/web/20170406022126/http://www.adobe.com/content/dam/Adobe/en/devnet/font/pdfs/5093.Adobe-Korea1-2.pdf) (Wayback Machine)
 
-<!-- -ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/~ -->
-<!-- -ftp://ftp.oreilly.de/pub/examples/english_examples/nutshell/cjkv/adobe/~ -->
-- [https://web.archive.org/web/20140911143826/http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/](https://web.archive.org/web/20140911143826/http://examples.oreilly.de/english_examples/nutshell/cjkv/adobe/)  (Wayback Machine)
-    - [aj16-radical-stroke.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-radical-stroke.pdf)
-    - [aj16-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/aj16-utf32.pdf)
-    - [ag15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ag15-utf32.pdf)
-    - [ac15-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ac15-utf32.pdf)
-    - [ak12-utf32.pdf](ftp://ftp.oreilly.com/pub/examples/nutshell/cjkv/adobe/ak12-utf32.pdf)
 - [Adobe-Japan1-6 Radical/Stroke Database](https://ccjktype.fonts.adobe.com/2012/04/aj16-radical-stroke-db.html)
     - [radical-stroke.pdf](https://ccjktype.fonts.adobe.com/wp-content/uploads/2012/04/radical-stroke.pdf)
+- [Adobe-Japan1-6 Unicode Version 6.1 Tables](https://ccjktype.fonts.adobe.com/2012/05/aj16-u61-tables.html)
+    - [aj16-utf32-jis2004.pdf](https://ccjktype.fonts.adobe.com/wp-content/uploads/2012/05/aj16-utf32-jis2004.pdf)
+    - [aj16-utf32.pdf](https://ccjktype.fonts.adobe.com/wp-content/uploads/2012/05/aj16-utf32.pdf)
 - [安岡孝一先生の website](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/index-j.html)
     - [Adobe-Japan1 の漢字（部首画数順） (PDF)](http://kanji.zinbun.kyoto-u.ac.jp/~yasuoka/publications/Adobe-Japan1kanji.pdf)
 

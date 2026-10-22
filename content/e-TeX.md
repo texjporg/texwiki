@@ -14,7 +14,7 @@ e-TeX とは，The NTS (<strong>N</strong>ew <strong>T</strong>ypesetting <stron
 Knuth オリジナルの TeX と100%の互換性を保ちながら TeX の少々不便なところを補うような実用性の高い拡張となっています．
 
 近年，[ConTeXt](/ConTeXt/) や [LaTeX](/LaTeX/) における [hyperref](/hyperref/) パッケージなど，e-TeX の拡張モードを要求するマクロ類が増加しつつあります．
-また [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [pdfTeX](/pdfTeX/), [LuaTeX](/LuaTeX/), [XeTeX](/XeTeX/), [Aleph](http://wiki.contextgarden.net/Aleph) （Omega と e-TeX のマージ）といった主だった TeX の拡張版においても e-TeX の拡張機能は取り入れられており，事実上の新標準とも呼ぶべき重要な拡張と言えます．
+また [e-pTeX](/e-pTeX/), [e-upTeX](/upTeX,upLaTeX/), [pdfTeX](/pdfTeX/), [LuaTeX](/LuaTeX/), [LuajitTeX](/LuajitTeX/), [XeTeX](/XeTeX/), [Aleph](https://wiki.contextgarden.net/Aleph) （Omega と e-TeX のマージ）といった主だった TeX の拡張版においても e-TeX の拡張機能は取り入れられており，事実上の新標準とも呼ぶべき重要な拡張と言えます．
 
 ***
 
@@ -97,8 +97,7 @@ TeX では，例えば
 
 - マニュアルは [W32TeX](/W32TeX/) の配布にも 含まれています．(See [qa:50569](https://okumuralab.org/~okumura/texfaq/qa/50569.html))
 - [The e-TeX Short Reference Manual](http://tex.loria.fr/moteurs/etex_ref.html)
-- \[[e-TeX\]記事一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=%2A%5Be-TeX%5D)
-- [「e-TeX」の検索結果一覧 - マクロツイーター](http://d.hatena.ne.jp/zrbabbler/archive?word=e-TeX)
+- [e-TeX の検索結果 - マクロツイーター](https://zrbabbler.hatenablog.com/search?q=e-TeX)
 
 ### コメント {#a61ff5c1}
 

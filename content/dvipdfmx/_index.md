@@ -8,7 +8,7 @@ pukiwiki: "dvipdfmx"
 
 # dvipdfmx
 
-## [dvipdfmx](https://svn.tug.org/texlive/trunk/Build/source/texk/dvipdfm-x/) {#x9826408}
+## [dvipdfmx](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x) {#x9826408}
 
 dvipdfmx は DVI を PDF へ変換するソフトウェアです．
 元々 [Mark A. Wicks](https://www.ctan.org/author/wicks) 氏によって開発された [dvipdfm](https://web.archive.org/web/20160801211444/http://gaspra.kettering.edu/dvipdfm/) というソフトウェアがあり，dvipdfmx は主に CJK 対応を強化した拡張版 (e<strong>X</strong>tended version) です．
@@ -69,21 +69,22 @@ foo.dvi -> foo.pdf
 ただし，別に foo という（拡張子のない）ファイルが存在する場合は明示的に foo.dvi と書く必要があります． なお，遅くても TeX Live 2019 から別に foo という
 ファイルが存在する場合にも，単に foo とした場合，まず foo.dvi を優先して探します．
 
-なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの OS にあった設定がなされていることを確認しましょう．
-特に Windows 11/10 や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んで来ているため古い習慣にとらわれず新しいものを使いましょう．
+なにも設定しなくともとりあえず動く場合がほとんどだとは思いますが，フォントなどはそれぞれの環境にあった設定がなされていることを確認しましょう．
+Windows や macOS では収録文字数が大幅に増え，また多ウェイト化なども進んでいるため古い習慣にとらわれず新しいものを使いましょう．
 フォントは PDF へ埋め込むことを基本としてください．
 非埋め込みで PDF を作成することは推奨されません．
 
-例えば，TeXLive/Windows で標準搭載の游明朝・游ゴシックを埋め込むように設定するにはコマンドラインで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージをインストールしておきます）
+例えば，TeX Live に標準搭載の原ノ味フォントを埋め込むように設定するにはコマンドラインで（[tlmgr](/tlmgr/) で ptex-fontmaps パッケージと haranoaji パッケージをインストールしておきます）
 
 ```
- kanji-config-updmap yu-win10
+ kanji-config-updmap-sys --jis2004 haranoaji
 ```
 
 とします．
-macOS ではヒラギノを使うとよいかもしれません（設定については [ヒラギノフォント](</ヒラギノフォント/#macos-hiragino-setup>) を参照してください）．
 
 ### コマンドラインオプション {#tc481bdb}
+
+- [https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x/dvipdfmx.c](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x/dvipdfmx.c)
 
 ```
  $ dvipdfmx -h
@@ -108,6 +109,7 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
    --kpathsea-debug 数値      　kpathsearch デバッグフラグを設定 [0]
    -l            ランドスケープモード
    -m 数値       追加の拡大率を設定 [1.0]
+   --mvorigin    MP の読み込みに対する原点の変換
    -o ファイル名 出力ファイル名を設定, "-" で標準出力 [dvifile.pdf]
    -p 用紙サイズ 用紙サイズを設定 [a4]
    --pdfm-str-utf8       PDFMark の文字列が UTF-8 でエンコードされていると仮定する
@@ -156,7 +158,7 @@ macOS ではヒラギノを使うとよいかもしれません（設定につ�
 ```
 
 ```
- バグ報告は電子メールで: tex-k@tug.org.
+ パッケージのホームページ: https://ctan.org/pkg/dvipdfmx
 ```
 
 ### マニュアル {#da69bb5d}
@@ -165,7 +167,7 @@ dvipdfmx には The dvipdfmx project team によるマニュアルが存在し�
 
 - [https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf](https://mirrors.ctan.org/systems/doc/dvipdfmx/dvipdfmx.pdf)
 - [https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf](https://github.com/shirat74/dvipdfm-x-doc/raw/refs/heads/master/dvipdfmx.pdf)
-- [https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co](https://svn.tug.org/texlive/trunk/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf?view=co)
+- [https://git.texlive.info/texlive/plain/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf](https://git.texlive.info/texlive/plain/Master/texmf-dist/doc/dvipdfmx/dvipdfmx.pdf)
 
 コマンドラインから
 
@@ -262,7 +264,7 @@ I 24
 - [#美文書 １１５ページ，「TeX Liveではextractbbやebbは実はdvipdfmxへのシンボリックリンクです」？](https://x.com/ti5942/status/273700405341483008) → [extractbbのプロパティ](https://x.com/ti5942/status/273742359915794432)
 
 dvipdfmx はコマンドの名前によって機能を変えることができます．
-[dvipdfmx.c](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/dvipdfmx.c?view=markup) の main 関数を見るとコマンド名によって処理を変えています．
+[dvipdfmx.c](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x/dvipdfmx.c) の main 関数を見るとコマンド名によって処理を変えています．
 UNIX ではプログラムに複数の機能を実装してシンボリックリンクを使用して別の名前をつけることで機能を変えることは普通に行われます．
 
 TeX Live [Revision 71664](https://svn.tug.org/texlive?revision=71664&view=revision) で extractbb.lua が追加されました。その結果「[extractbb が変わったようですが](https://okumuralab.org/tex/mod/forum/discuss.php?d=3791)」の投稿で起きているような現象が発生しました。
@@ -649,14 +651,14 @@ ZR さんによるパッチ（[pxtatescale パッケージ](https://gist.github.
 
 ### ライセンス {#w1524716}
 
-[GPLv2](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/COPYING?view=markup)
+[GPLv2](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x/COPYING)
 
 ### ChangeLog {#he60a3d0}
 
-- \[[texlive\] Index of /trunk/Build/source/texk/dvipdfm-x](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/)
-    - [log](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/?view=log)
-    - [ChangeLog](http://www.tug.org/svn/texlive/trunk/Build/source/texk/dvipdfm-x/ChangeLog?view=markup)
-- \[[texlive\] Contents of /trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=markup)
-    - [log](http://www.tug.org/svn/texlive/trunk/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def?view=log)
+- [https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x)
+    - [log](https://git.texlive.info/texlive/log/Build/source/texk/dvipdfm-x)
+    - [ChangeLog](https://git.texlive.info/texlive/tree/Build/source/texk/dvipdfm-x/ChangeLog)
+- [https://git.texlive.info/texlive/tree/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def](https://git.texlive.info/texlive/tree/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def)
+    - [log](https://git.texlive.info/texlive/log/Master/texmf-dist/tex/latex/graphics-def/dvipdfmx.def)
 
 [^1]: ただし，完全に同じというわけではありません．

@@ -16,7 +16,6 @@ pukiwiki: "Enter TeX"
 ## Enter TeX とは {#h4d58d3b}
 
 Enter TeX は TeX/LaTeX エディタです．
-SyncTeX に対応しています．
 
 バージョン 3.47.0 (2024-09-14) から Enter TeX という名前に変更されました。バージョン 3.27.2 (2018-01-17) から 3.46.0 (2023-07-29) までは GNOME LaTeX、バージョン 0.0.1 (2009-09-02) から 3.27.1 (2017-12-09) までは LaTeXila という名前でした。
 
@@ -98,25 +97,65 @@ sudo zypper install enter-tex
 
 \[Build\] &gt; \[Manage Build Tools\]
 
-<!-- **Default build tools [#s9d34304] -->
-<!--  -->
-<!-- ***LaTeX → DVI → PDF (Latexmk) [#kfbc0e63] -->
-<!--  -->
-<!-- デフォルトでは -->
-<!-- :Commands| -->
-<!-- :|latexmk -pdfdvi -synctex=1 $filename -->
-<!-- :Post Processor| -->
-<!-- :|latexmk -->
-<!--  -->
-<!-- となっています． -->
-<!-- デフォルトの設定を削除して以下のように設定します． -->
-<!--  -->
-<!-- :Commands| -->
-<!-- :|latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O - -bblencoding=utf8 -u -U - -output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename" -->
-<!-- :Post Processor| -->
-<!-- :|latexmk -->
-<!--  -->
-<!-- [Build] &gt; [LaTeX → DVI → PDF (Latexmk)] で実行できます。 -->
+### Default build tools {#s9d34304}
+
+#### LaTeX → PDF (Latexmk) {#je9a3b40}
+
+デフォルトでは
+
+Commands
+: &nbsp;
+
+: latexmk -pdf -synctex=1 $filename
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+となっています．
+デフォルトの設定を削除して以下のように設定します．
+
+Commands
+: &nbsp;
+
+: latexmk -e '$lualatex=q/lualatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -norc -gg -pdflua "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\] &gt; \[LaTeX→ PDF (Latexmk)\] で実行できます。
+
+#### LaTeX → DVI → PDF (Latexmk) {#kfbc0e63}
+
+デフォルトでは
+
+Commands
+: &nbsp;
+
+: latexmk -pdfdvi -synctex=1 $filename
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+となっています．
+デフォルトの設定を削除して以下のように設定します．
+
+Commands
+: &nbsp;
+
+: latexmk -e '$latex=q/uplatex %O -synctex=1 %S/' -e '$bibtex=q/bibtexu %O %B/' -e '$biber=q/biber %O --bblencoding=utf8 -u -U --output_safechars %B/' -e '$makeindex=q/upmendex %O -o %D %S/' -e '$dvipdf=q/dvipdfmx %O -o %D %S/' -norc -gg -pdfdvi "$filename"
+
+Post Processor
+: &nbsp;
+
+: latexmk
+
+\[Build\] &gt; \[LaTeX → DVI → PDF (Latexmk)\] で実行できます。
 
 ### Personal build tools {#kcfc97ba}
 

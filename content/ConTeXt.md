@@ -177,3 +177,4 @@ MkIV は LuaTeX の上で動作するため，OpenType フォントを簡単に�
 - [ConTeXtで遊ぶ (1)](http://abenori.blogspot.jp/2015/10/context-1.html)，[(2)](http://abenori.blogspot.jp/2015/11/context-2.html)，[(3)](http://abenori.blogspot.jp/2015/11/context3.html)，[(4)](http://abenori.blogspot.fr/2015/12/context-4.html)
 - ConTeXt の索引について：[forum:1266](https://okumuralab.org/tex/mod/forum/discuss.php?d=1266)
 - [ConTeXtとLuaMetaTeXの覚書](https://zenn.dev/tyty/scraps/debce5194639b3)
+- [なぜか ConTeXt が mtx-context.lua や mtx-mtx-context.lua がないって言う<br>問題、<br>export PATH="/usr/local/texlive/2026/bin/x86_64-linux:$PATH"<br>のようにすることで直った。tlmgr path add と相性が悪いのかな](https://x.com/scrwnl/status/2110541702901756048)

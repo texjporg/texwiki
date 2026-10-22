@@ -21,14 +21,14 @@ CM-Super とは，Knuth が [METAFONT](/METAFONT/) で作成した Computer Mode
 <!-- [[cm-super.zip>CTAN:fonts/ps-type1/cm-super.zip]] がダウンロードできます． -->
 
 <!-- -[[CTAN:fonts/ps-type1/cm-super/]] -->
-<!-- から&ref(http://www.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super/type1ec.sty); -->
+<!-- から&ref(https://mirror.ctan.org/fonts/ps-type1/cm-super/type1ec.sty); -->
 <!-- をダウンロードし，$TEXMFLOCAL/tex/latex/cm-super/ 内に格納する -->
 <!-- （存在しないディレクトリは予め作っておく）． -->
 
 <!-- -（cm-super には LH ［キリルアルファベット］や EC ［ラテンアルファベット］の -->
 <!-- Type 1 フォントが含まれています） -->
 <!-- [[CTAN:fonts/ps-type1/]] -->
-<!-- から&ref(ftp://ftp.ring.gr.jp/pub/text/CTAN/fonts/ps-type1/cm-super.zip); を -->
+<!-- から&ref(https://mirror.ctan.org/fonts/ps-type1/cm-super.zip); を -->
 <!-- ダウンロードし， -->
 <!-- 元のツリー構造を保ったまま $TEXMFLOCAL/tex/latex/cm-super/ 以下に展開する． -->
 <!-- 先の type1ec.sty は上書きして良い． -->

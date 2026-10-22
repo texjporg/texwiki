@@ -432,6 +432,8 @@ external を指定した際には，さらにそのビューワーを latex-work
 ### SumatraPDF との synctex 連携 {#g142ea7e}
 
 - [https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#synctex)
+- [https://github.com/James-Yu/LaTeX-Workshop/wiki/View#sumatrapdf](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#sumatrapdf)
+- [VS Code上のLaTeX WorkshopからSumatra PDFを使うやつ、なんかSyncTexがうまく動かないなぁと思っていたら、オフィシャルサイトに"Note: As of mid-2025, this function is not working. This function is not officially supported."って書いてあった(https://github.com/james-yu/latex-workshop/wiki/View)。](https://x.com/kururu_goedel/status/2063398679449338087)
 
 #### forward and inverse search {#a05fb9f6}
 

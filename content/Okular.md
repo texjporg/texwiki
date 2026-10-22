@@ -50,7 +50,7 @@ Windows, macOS, Linux
 
 ### Windows {#h8e4fcbd}
 
-- [https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-26.04/windows/) (リリースビルド版)
+- [https://cdn.kde.org/ci-builds/graphics/okular/release-26.08/windows/](https://cdn.kde.org/ci-builds/graphics/okular/release-26.08/windows/) (リリースビルド版)
 - [https://cdn.kde.org/ci-builds/graphics/okular/master/windows/](https://cdn.kde.org/ci-builds/graphics/okular/master/windows/) (ナイトリービルド版)
 
 から Okular のインストーラーをダウンロードしてインストールできます。
@@ -80,15 +80,11 @@ MSYS2 でインストールすることもできます。
 - [https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/](https://cdn.kde.org/ci-builds/graphics/okular/master/macos-arm64/) (ナイトリービルド版)
     <!-- -https://github.com/KDE/homebrew-kde/blob/master/Formula/okular.rb -->
 
-### Flatpak {#e979726d}
-
-- [https://flathub.org/apps/org.kde.okular](https://flathub.org/apps/org.kde.okular)
-- [Tutorials/Flatpak - KDE UserBase Wiki](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
-
 ### Linux {#c209770f}
 
 ほとんどのディストリビューションではパッケージ管理システムからインストールできます．
 
+- [https://flathub.org/apps/org.kde.okular](https://flathub.org/apps/org.kde.okular) , [Tutorials/Flatpak - KDE UserBase Wiki](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
 - [https://archlinux.org/packages/?name=okular](https://archlinux.org/packages/?name=okular)
 - [https://packages.ubuntu.com/ja/okular](https://packages.ubuntu.com/ja/okular)
 - [https://packages.debian.org/ja/okular](https://packages.debian.org/ja/okular)

@@ -18,4 +18,5 @@ macOS
 
 ### Xcode で LaTeX {#p470b06a}
 
+- [LaTeX language support for Xcode](https://github.com/valentindusollier/LaTeX-for-Xcode)
 - [TeX with Xcode](http://math.huji.ac.il/~piz/Site/TeX%20%26%20XCode.html)

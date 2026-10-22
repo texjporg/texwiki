@@ -42,6 +42,7 @@ gnuplot は (La)TeX で処理できる形式でグラフを出力することが
     - [gnuplot で pdf 出力するときの注意](http://blog.livedoor.jp/ooboofo3/archives/53922133.html)
 
 - TikZ との連携例
+    - [texファイルにgnuplotコマンドを埋め込む](https://event.phys.s.u-tokyo.ac.jp/physlab2024/advent-calendar/22-2/)
     - [gnuplotでlatex数式を埋め込んできれいな図を作る方法](https://8ttyan.hatenablog.com/entry/2014/11/22/154722)
 
 ### 関連リンク {#mba731ab}

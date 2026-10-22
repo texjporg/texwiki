@@ -48,7 +48,7 @@ plugins\jN\includes\Typeset.js を作成します．<br>
             var c = fso.GetParentFolderName(currentTeXFile);
             var b = fso.GetBaseName(currentTeXFile);
             var cd = "cd /d " + ["\"", c, "\""].join("");
-            var ptex2pdf = "ptex2pdf -u -l -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8 -sjis-terminal\"" + " " + ["\"", b, "\""].join("");
+            var ptex2pdf = "ptex2pdf -u -l -ot \"-synctex=1 -no-guess-input-enc -kanji=utf8\"" + " " + ["\"", b, "\""].join("");
             var cmd = "cmd /c " + cd + " && " + ptex2pdf;
             execute(cmd);
         }

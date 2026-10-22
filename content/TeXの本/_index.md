@@ -109,7 +109,7 @@ TeX や LaTeX に関する本の紹介です。
     『[ペロロ様LaTeX解説本](https://x.com/tsumugi_prr/status/2091137872175022092)』
     （[コミックマーケット](https://www.comiket.co.jp/)，2026年12月29日～31日開催予定（コミックマーケット109））
 
-- [Stefan Kottwitz](https://tex.jp/) \[著\], 黒川 利明 \[訳\], 荒田 実樹 \[日本語版協力\]
+- [Stefan Kottwitz](https://tex.jp/) \[著\], 黒川 利明 \[訳\], [荒田 実樹](https://blog.miz-ar.info/2026/09/latex-cookbook/) \[日本語版協力\]
     『[LaTeXクックブック―デザインの洗練・TikZによる可視化・LuaLaTeX活用―](https://www.asakura.co.jp/detail.php?book_code=12318)』
     （[朝倉書店](https://www.asakura.co.jp/)，2026年09月05日紙版、電子版発売、定価 &yen;5,940 (本体 &yen;5,400＋税)，[ISBN 978-4-254-12318-0](https://ja.wikipedia.org/wiki/Special:Booksources/978-4-254-12318-0)）
     - [LaTeXクックブック &#8211; 実践レシピ集](https://tex.jp/) サポートページ

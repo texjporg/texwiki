@@ -216,6 +216,7 @@ TeXworks, TeXstudio などの統合環境には PDF 用のビューアが組み�
 - [Papers](/Papers/)：GNOME 標準の PDF ビューア
 - [Atril](/Atril/)：MATE 標準の PDF ビューア
 - [Xreader](/Xreader/)：X-Apps の PDF ビューア
+- [LEKTRA](/LEKTRA/)：画面スペースとコントロールを優先した PDF ビューア
 - [zathura](/zathura/)：軽量な PDF ビューア
 - [qpdfview](/qpdfview/)：タブ切り替え型の PDF ビューア
 - [Sioyek](/Sioyek/)：教科書や論文を読むことに特化した PDF ビューア

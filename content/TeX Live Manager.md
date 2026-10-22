@@ -10,7 +10,6 @@ pukiwiki: "TeX Live Manager"
 ## TeX Live Manager {#l32e41e6}
 
 TeX Live Manager は [TeX Live](</TeX Live/>) のパッケージ管理ツールです．
-macOS では [TeX Live Utility](</TeX Live Utility/>) というツールで管理することもできます．
 
 ***
 
@@ -18,11 +17,12 @@ macOS では [TeX Live Utility](</TeX Live Utility/>) というツールで管�
 
 ### 使い方 {#jf67d712}
 
-コマンドラインから
+#### GUI 版 {#g4cadef3}
 
-```
-tlmgr-gui
-```
+[TeX Live Shell (GUI 版 TeX Live Manager)](</TeX Live Shell/>) を使用します．
 
-を実行すると TeX Live Manager が起動します．
+macOS では [TeX Live Utility](</TeX Live Utility/>) というツールで管理することもできます．
+
+#### コマンドライン版 {#xfcb56e4}
+
 コマンドラインでパッケージ管理する場合は [tlmgr](/tlmgr/) を使用します．

@@ -7,8 +7,6 @@ keywords: ["TeX", "LaTeX", "LaTeX2e", "pTeX", "pLaTeX", "pLaTeX2e", "upTeX", "up
 pukiwiki: "FrontPage"
 ---
 
-# FrontPage
-
 <span style="font-size:30px"><strong>TeX Wiki へようこそ！</strong></span>
 
 <!-- * FrontPage [#pe4f375a] -->
@@ -92,7 +90,7 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [e-pTeX](/e-pTeX/)、[e-upTeX](/upTeX,upLaTeX/)、[Asiatic pTeX](</Asiatic pTeX/>)
 - [pdfTeX](/pdfTeX/)、[LuaTeX](/LuaTeX/)、[LuajitTeX](/LuajitTeX/)
 - [XeTeX](/XeTeX/)、[Tectonic](/Tectonic/)
-- ratex
+- [TeXres](/TeXres/)
 - マクロパッケージ：[LaTeX](/LaTeX/)、[ConTeXt](/ConTeXt/)
 
 <!-- *** TeX 処理系を変更する際にはソースにも変更が必要となることがあります。例えば，従来 pLaTeX を用いていたのを upLaTeX に変更する際には，以下の変更を施すことで upLaTeX 対応になります。 [#j08ab319] -->

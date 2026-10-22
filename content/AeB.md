@@ -7,7 +7,7 @@ pukiwiki: "AeB"
 
 # AeB
 
-## [The AcroTeX eDucation Bundle (AeB)](http://www.acrotex.net/aeb_index.php) {#laec97db}
+## [The AcroTeX eDucation Bundle (AeB)](https://www.math.uakron.edu/~dpstory/acrotex.html) {#laec97db}
 
 ***
 
@@ -17,12 +17,14 @@ pukiwiki: "AeB"
 
 The AcroTeX eDucation Bundle (AeB) は Web 用の PDF ファイルを作成するためのパッケージです．<br>
 The AcroTeX eDucation Bundle (AeB) を使うと LaTeX で JavaScript を使った PDF ファイルを作成することもできます．<br>
+作者の [Donald P. Story](https://ctan.org/author/story) 氏は 2022年にお亡くなりになりました。(R.I.P.)<br>
 
-- [AcroTeX - eDucational System Tools](http://www.acrotex.net/)
-    - [AcroTeX - AcroTeX eDucation Bundle](http://www.acrotex.net/aeb_index.php)
-    - [The AcroTeX blog | The AcroTeX blog publishes articles on PDF and the AcroTeX family of LaTeX packages](http://www.acrotex.net/blog/)
+> [Don Story, an active participant in the LaTeX com-<br>munity, passed away on the last day of 2022, after a<br>long battle with ALS.](http://svn.tug.org/TUGboat/tb44-1/tb136beet.pdf)
+
+- [D. P. Story's Home Page](https://www.math.uakron.edu/~dpstory/)
+- [AcroTeX](https://www.math.uakron.edu/~dpstory/acrotex.html)
 - [https://ctan.org/pkg/acrotex](https://ctan.org/pkg/acrotex)
-- [CTAN:help/Catalogue/entries/acrotex.html](https://mirror.ctan.org/help/Catalogue/entries/acrotex.html)
+- [CTAN:macros/latex/contrib/acrotex](https://mirror.ctan.org/macros/latex/contrib/acrotex)
 - [https://aur.archlinux.org/packages/texlive-acrotex/](https://aur.archlinux.org/packages/texlive-acrotex/)
 
 ## インストール {#a7637893}

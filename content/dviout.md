@@ -7,18 +7,20 @@ pukiwiki: "dviout"
 
 # dviout
 
-## dviout (非推奨) {#db720534}
+## dviout (非推奨) → [dvipdfmx](/dvipdfmx/) を使用する {#db720534}
 
 dviout は (e-)(u)pTeX 対応の高機能な DVI プレビューアです。
 しかし，dviout を使用すると
 
 - 挿入した画像が適切に表示されない
 - CID に完全対応していない（Adobe-Japan1 の CID 直接参照の機能は無い）
-- PDF や PostScript の機能に強く依存するパッケージに未対応
+- TikZ などの PDF の機能に強く依存するパッケージに未対応
 
 などの問題があります（[古い情報](</古い情報/#je1d5241>)も参考に）。
 
 このため，<strong>現在は DVI ではなく PDF でのプレビューが推奨されています。</strong>
+
+dviout の代わりに dvipdfmx を使用してください。
 
 ***
 

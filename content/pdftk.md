@@ -30,7 +30,7 @@ GPLv2
 
 ソースからコンパイルする場合
 pdftk は GCJ に依存しているため GCC が必要になりますが GCC 7.1 で GCJ が削除されたため
-[pdftk-java](https://gitlab.com/pdftk-java/pdftk) をおすすめします。
+[pdftk-java](/pdftk-java/) をおすすめします。
 
 ### 使い方 {#m37fe2x6}
 

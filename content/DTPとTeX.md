@@ -7,7 +7,7 @@ pukiwiki: "DTPとTeX"
 
 # DTPとTeX
 
-<!-- http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/ -->
+<!-- http://web.archive.org/web/20151101004049/http://oku.edu.mie-u.ac.jp/~okumura/texfaq/dtp/ -->
 
 ## DTP と TeX {#c60998c7}
 
@@ -30,7 +30,7 @@ TeX が DTP ソフトと呼ばれることは多くありませんが，
 
 - [TeX で DTP](http://www.dab.hi-ho.ne.jp/t-wata/tex/) ← 渡邉たけしさんによるページ．非常に詳しい．
 - [DTPWiki](http://dtpwiki.jp/) ← DTP・印刷関連の Wiki
-- [日本語組版処理の要件（W3C 技術ノート日本語版）](http://www.w3.org/TR/jlreq/ja/)
-- [図解 DTP 用語事典](http://www.japanlink.co.jp/dtpjiten/index.html)
+- [日本語組版処理の要件（W3C 技術ノート日本語版）](https://www.w3.org/TR/jlreq/ja/)
+- [図解 DTP 用語事典](http://web.archive.org/web/20160401101829/http://www.japanlink.co.jp/dtpjiten/)
 - [電子出版技術関連用語](http://www.y-adagio.com/public/standards/tr_faptrm/term.htm)
-- [日本印刷技術協会 (JAGAT)](http://www.jagat.jp/)
+- [日本印刷技術協会 (JAGAT)](https://www.jagat.or.jp/)

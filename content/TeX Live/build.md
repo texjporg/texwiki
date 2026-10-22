@@ -15,7 +15,7 @@ pukiwiki: "TeX Live/build"
 
 ### Windows {#mc7cf9a9}
 
-#### x86_64-pc-mingw64 {#w2cf51ec}
+#### mingw-w64-ucrt-x86_64, mingw-w64-clang-x86_64, mingw-w64-clang-aarch64 {#w2cf51ec}
 
 - [MSYS2#TeX Live](/MSYS2/#texlive)
 

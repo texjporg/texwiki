@@ -21,7 +21,7 @@ pukiwiki: "TeXworks/設定/Windows"
 
 公式サイトで配布されている TeXworks は pdfLaTeX がデフォルトになっています．
 
-upLaTeX (ptex2pdf), Latexmk, Latexmk-upLaTeX, Latexmk-LuaLaTeX を使ってタイプセットできるように設定します．
+upLaTeX (ptex2pdf), Latexmk, upLaTeXmk, LuaLaTeXmk を使ってタイプセットできるように設定します．
 
 タイプセットの設定については [Common Workflows](https://github.com/TeXworks/texworks/wiki/AdvancedTypesettingTools#common-workflows) にも記述されているので参考にしてください．
 
@@ -33,7 +33,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]\[　エディタ　\]\[　プレビュー　\]</ins></span><strong>\[　タイプセット　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリプト　\]</ins></span><br>
 　　　　TeXおよび関連プログラムのパス<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 
 <br>
 
@@ -41,12 +41,12 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 
 <br>
 
 　　　　タイプセットの方法<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;"> pdfTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　<span style="color:Black;background-color:#DAEAFF;"> pdfTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 　　　　 pdfLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
 　　　　 LuaTeX<br>
 　　　　 LuaLaTeX<br>
@@ -57,7 +57,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 　　　　 ConTeXt (XeTeX)<br>
 　　　　 BibTeX<br>
 　　　　 MakeIndex<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ pdfLaTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
@@ -88,7 +88,7 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
 
 ***
@@ -97,11 +97,11 @@ $synctexoption, $fullname, $basename などの意味に関しては，[Defining 
 
 Latexmk で PDF ファイルを作成します．
 
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
 名前とプログラムを入力します．
 
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
@@ -127,7 +127,7 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
 
 ***
@@ -136,11 +136,11 @@ Latexmk で PDF ファイルを作成します．
 
 Latexmk で PDF ファイルを作成します．
 
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
 名前とプログラムを入力します．
 
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
@@ -166,7 +166,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdfdvi</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
 
 ***
@@ -175,11 +175,11 @@ Latexmk で PDF ファイルを作成します．
 
 Latexmk で PDF ファイルを作成します．
 
-タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
+タイプセットの方法の <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックします．
 
 名前とプログラムを入力します．
 
-<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
+<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> をクリックして新しい引数を追加し，入力します． 
 
 実行後、PDFを表示するにチェックをしてください．組み込みビューアを使用して PDF ファイルを表示します．
 
@@ -203,7 +203,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　　　　　　<ins>-gg</ins><br>
 　　　　　　　　　<ins>-pdflua</ins><br>
 　　　　　　　　　<ins>$fullname</ins><br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☑ 実行後、PDFを表示する<br>
 
 ***
@@ -219,7 +219,7 @@ Latexmk で PDF ファイルを作成します．
 
 　　<span style="color:Black;background-color:#EEEEEE;"><ins>\[　全体　\]\[　エディタ　\]\[　プレビュー　\]</ins></span><strong>\[　タイプセット　\]</strong><span style="color:Black;background-color:#EEEEEE;"><ins>\[　スクリプト　\]</ins></span><br>
 　　　　TeXおよび関連プログラムのパス<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 
 <br>
 
@@ -227,12 +227,12 @@ Latexmk で PDF ファイルを作成します．
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 
 <br>
 
 　　　　タイプセットの方法<br>
-　　　　<span style="color:Black;background-color:#DAEAFF;"> upLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　 <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/go-down.png" alt="go down" width="25" height="25">\]</span><br>
+　　　　<span style="color:Black;background-color:#DAEAFF;"> upLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　</span>　　　 <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-up.png" alt="go up" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/go-down.png" alt="go down" width="25" height="25">\]</span><br>
 　　　　 pdfTeX　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 <span style="color:Black;background-color:#EEEEEE;">\[ 編集 \]</span><br>
 　　　　 pdfLaTeX<br>
 　　　　 LuaTeX<br>
@@ -247,7 +247,7 @@ Latexmk で PDF ファイルを作成します．
 　　　　 LuaLaTeXmk<br>
 　　　　 BibTeX<br>
 　　　　 MakeIndex<br>
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　　　デフォルト: <span style="color:Black;background-color:#EEEEEE;">\[ upLaTeX (ptex2pdf)　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　▼\]</span><br>
 
 <br>
@@ -305,7 +305,7 @@ cmd
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☐ 実行後、PDFを表示する<br>
 
 ***
@@ -357,7 +357,7 @@ cmd
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☐ 実行後、PDFを表示する<br>
 
 ***
@@ -422,7 +422,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☐ 実行後、PDFを表示する<br>
 
 ***
@@ -473,7 +473,7 @@ powershell -Command "& {$pdf = """%~n1.pdf"""; $pages = (pdfinfo $pdf | Select-S
 
 <br>
 
-　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://github.com/TeXworks/texworks/raw/master/res/tango/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　<span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-add.png" alt="list add" width="25" height="25">\]</span> <span style="color:Black;background-color:#EEEEEE;">\[<img src="https://raw.githubusercontent.com/TeXworks/texworks/refs/heads/main/res/icons/tango-texworks/actions/32x32/list-remove.png" alt="list remove" width="25" height="25">\]</span><br>
 　　☐ 実行後、PDFを表示する<br>
 
 ***

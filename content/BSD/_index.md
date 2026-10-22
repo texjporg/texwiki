@@ -10,8 +10,6 @@ pukiwiki: "BSD"
 
 ## BSD での TeX の利用 {#s075206e}
 
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/BSD_wordmark.svg/200px-BSD_wordmark.svg.png" alt="BSD" style="float:right">
-
 ***
 
 ***

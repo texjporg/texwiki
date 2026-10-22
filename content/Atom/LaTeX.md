@@ -20,10 +20,10 @@ pukiwiki: "Atom/LaTeX"
 1. Ctrl+Comma で Settings タブを開きます。
 1. 左側の Install をクリックします。
 1. Install Packages の Search packages と表示されている入力欄にパッケージ名を入力してパッケージをインストールします。
-    1. 入力欄に latex を入力して [latex](https://atom.io/packages/latex) パッケージをインストールします。
-    1. 入力欄に language-latex を入力して [language-latex](https://atom.io/packages/language-latex) パッケージをインストールします。
-    1. 入力欄に latex-tree を入力して [latex-tree](https://atom.io/packages/latex-tree) パッケージをインストールします。
-    1. 入力欄に pdf-view を入力して [pdf-view](https://atom.io/packages/pdf-view) パッケージをインストールします。
+    1. 入力欄に latex を入力して [latex](https://web.pulsar-edit.dev/packages/latex) パッケージをインストールします。
+    1. 入力欄に language-latex を入力して [language-latex](https://web.pulsar-edit.dev/packages/language-latex) パッケージをインストールします。
+    1. 入力欄に latex-tree を入力して [latex-tree](https://web.pulsar-edit.dev/packages/latex-tree) パッケージをインストールします。
+    1. 入力欄に pdf-view を入力して [pdf-view](https://web.pulsar-edit.dev/packages/pdf-view) パッケージをインストールします。
 
 ### 日本語文書向けの設定 {#ca64206f}
 

@@ -24,18 +24,18 @@ TeX 関連プログラムには Python で書かれたスクリプトがあり�
 
 ### インストール (Windows) {#y6c76d8e}
 
-#### 本家 Windows executable installer {#vff4acd8}
+#### Windows installer (64-bit) {#vff4acd8}
 
-本家の Windows executable installer を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python39\ にインストールした場合は
+Windows installer (64-bit) を使用して %USERPROFILE%\AppData\Local\Programs\Python\Python312\ にインストールした場合は
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python39\Scripts\
+%USERPROFILE%\AppData\Local\Programs\Python\Python312\Scripts\
 ```
 
 と
 
 ```
-%USERPROFILE%\AppData\Local\Programs\Python\Python39\
+%USERPROFILE%\AppData\Local\Programs\Python\Python312\
 ```
 
 を環境変数 Path に追加します．

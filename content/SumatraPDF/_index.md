@@ -22,6 +22,11 @@ PostScript ファイルの表示には [Ghostscript](/Ghostscript/) が必要で
 
 ### 要望/不具合 {#v813d27a}
 
+#### VSCodeからSumatraPDFを起動するとinverse searchできないのをAIに聞いたら，環境変数ELECTRON_RUN_AS_NODE=1が渡っているせいと教えてもらった {#t2babe11}
+
+- [https://x.com/abenori/status/2108391326421324022](https://x.com/abenori/status/2108391326421324022)
+- [VSCodeから起動した場合，SumatraPDFのinverse searchが効かないことへの対処（by codex）](https://github.com/abenori/vscode-fortex/commit/eb7119d5836437358974a3c03e9aa9742b235a4e)
+
 #### \[Feature Request\] Add option to disable window focus stealing when PDF reloads (version 3.6.1) {#q61833ae}
 
 - [https://github.com/sumatrapdfreader/sumatrapdf/issues/5648](https://github.com/sumatrapdfreader/sumatrapdf/issues/5648)

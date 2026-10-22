@@ -94,7 +94,7 @@ dvips で変換した PS ファイルは Ghostscript 付属の ps2pdf コマン�
 
 ## Adobe Acrobat で PDF {#w441bc87}
 
-Adobe Acrobat は，[Adobe Systems](http://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
+Adobe Acrobat は，[アドビ](https://www.adobe.com/jp/) が開発する，PDF ファイルを作成・編集・加工・管理するためのソフトです．PDF の作成だけでなく，様々な機能を備えています．
 
 ### Adobe Acrobat Reader と Adobe Acrobat の違い {#c982e6e9}
 

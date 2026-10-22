@@ -50,6 +50,7 @@ LuaLaTeX に対応した ipsj.cls が存在します --&gt; [GitHub - watayan/ip
 ### 派生版 {#q33e05d4}
 
 - [ipsj.cls を upLaTeX 用にしてみる（源ノ明朝・源ノ角ゴシックを使う）](https://gist.github.com/trueroad/c44312923bf02226c2274388941d0453)
+- [GitHub - watayan/ipsj_cls_for_techrep: 情報処理学会研究報告用クラスファイル（LuaLaTeX対応）](https://github.com/watayan/ipsj_cls_for_techrep)
 - [IPSJ-techrep-xelatex](https://github.com/ken1row/IPSJ-techrep-xelatex) 情報処理学会研究会原稿をOverleafなどのXeLaTeX環境で執筆するための疑似スタイルファイル
 - [ShareLatex を用いた情報処理学会研究会原稿の共同執筆](http://blog.k-tanaka.me/archives/42)
 

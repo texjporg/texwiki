@@ -12,6 +12,7 @@ pukiwiki: "TIPA"
 TIPA は東京大学の[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)が作られた IPA（<strong>I</strong>nternational <strong>P</strong>honetic <strong>A</strong>lphabet，[国際音声記号](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E9%9F%B3%E5%A3%B0%E8%A8%98%E5%8F%B7)；謂ゆる発音記号）のフォントです．
 
 - [https://ctan.org/pkg/tipa](https://ctan.org/pkg/tipa)
+- [CTAN:fonts/tipa/tipa](https://mirror.ctan.org/fonts/tipa/tipa)
 
 TIPA の T は <strong>T</strong>eX または <strong>T</strong>okyo（東京大学？）を意味するとのことです．
 同じ福井さんが製作に携わった TSIPA をベースに，大幅に機能およびフォントデザインを改良したものです．
@@ -27,11 +28,11 @@ TIPA のフォントには IPA の記号のほか，アメリカの音声学，�
 また，Times 及び Helvetica にデザインを近付けたフォント xipa も含まれています．
 
 [https://ctan.org/pkg/tipa](https://ctan.org/pkg/tipa) から最新版がダウンロードできます（執筆時点での最新版は tipa-1.3 です）．
-[CTAN:help/Catalogue/entries/tipa.html](https://mirror.ctan.org/help/Catalogue/entries/tipa.html) でもミラーされています．
+[CTAN:fonts/tipa/tipa](https://mirror.ctan.org/fonts/tipa/tipa) でもミラーされています．
 
 ### インストール {#j6ff5f64}
 
-[TeX Live](</TeX Live/>) や [W32TeX](/W32TeX/) に最初から含まれています．
+[TeX Live](</TeX Live/>) に最初から含まれています．
 
 make が使える環境であれば，Makefile の先頭の PREFIX の定義を適宜変更し
 
@@ -127,12 +128,12 @@ updmap --enable Map tipa.map
     ```
 
 使用できるコマンドやフォントの詳細は
-[CTAN:fonts/tipa/tipaman.pdf](http://www.ring.gr.jp/pub/text/CTAN/fonts/tipa/tipaman.pdf)
+[CTAN:fonts/tipa/tipaman.pdf](https://mirrors.ctan.org/fonts/tipa/tipaman.pdf)
 をご参照ください．
 
 ### 関連リンク {#vd0297b3}
 
-- [コンピューターの部屋 TIPA](https://web.archive.org/web/20131011023815/http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](http://www.l.u-tokyo.ac.jp/~fkr/)
+- [コンピューターの部屋 TIPA](https://web.archive.org/web/20131011023815/http://www.l.u-tokyo.ac.jp/~fkr/computer.htm)（[福井玲さん](https://www.l.u-tokyo.ac.jp/~fkr/)
     @ 東京大学大学院 人文社会系研究科 韓国朝鮮文化研究専攻）
 
-- [LaTeX と TIPA を用いて音声科学／音声学する \[Wayback Machine\]](http://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)（藤野さん）
+- [LaTeX と TIPA を用いて音声科学／音声学する \[Wayback Machine\]](https://web.archive.org/web/20050904230658/http://www.geocities.com/yfujino2002/platex2eTIPA-jp.html)（藤野さん）

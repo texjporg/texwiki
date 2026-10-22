@@ -80,7 +80,7 @@ synctex view -i "30:0:hoge.tex" -o "%CD%/hoge.pdf" -x "rundll32 shell32,ShellExe
 
 ## ⋮ &gt; 設定 &gt; デザイン &gt; フォントをカスタマイズ {#zcb6330d}
 
-Windows Update によるフォント設定の更新
+2025年4月の Windows Update によるフォント設定の更新
 
 ### 更新後 {#f9c1c618}
 

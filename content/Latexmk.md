@@ -99,7 +99,7 @@ sample.tex をコンパイルする例です．詳しくは latexmk --help や t
 
 ### 設定 {#g2a2cf08}
 
-実際にコンパイル時に何を用いるか（lualatex か uplatex か，bibtexu か upbibtex か等々）は，.latexmkrc と言うファイルに記述します．[^1].latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
+実際にコンパイル時に何を用いるか（lualatex か uplatex か）は，.latexmkrc と言うファイルに記述します．[^1].latexmkrc はホームディレクトリに作成します．ただし Windows の場合ホームディレクトリとは
 
 1. 環境変数 HOME が定義されていればそのフォルダ
 1. そうでなければ環境変数 USERPROFILE で指定されたフォルダ
@@ -225,7 +225,7 @@ if ($^O eq 'MSWin32') {
   $lualatex = 'lualatex %O -synctex=1 %S';
   $xelatex = 'xelatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
+  $bibtex = 'bibtexu %O %B';
   $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';
@@ -244,7 +244,7 @@ if ($^O eq 'MSWin32') {
   $lualatex = 'lualatex %O -synctex=1 %S';
   $xelatex = 'xelatex %O -synctex=1 %S';
   $biber = 'biber %O --bblencoding=utf8 -u -U --output_safechars %B';
-  $bibtex = 'upbibtex %O %B';
+  $bibtex = 'bibtexu %O %B';
   $makeindex = 'upmendex %O -o %D %S';
   $dvipdf = 'dvipdfmx %O -o %D %S';
   $dvips = 'dvips %O -z -f %S | convbkmk -u > %D';

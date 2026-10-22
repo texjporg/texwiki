@@ -22,5 +22,5 @@ pukiwiki: "科研費LaTeX"
 - [やる模  【寺村輝夫】やる王さまのはなし【王さまシリーズ】　1．ぞうのたまごのたまごやき](http://yarumo.blog83.fc2.com/blog-entry-423.html)
     - [最終話．ぞうのたまごのたまごやき](http://wiki.livedoor.jp/neiker7/d/%BA%C7%BD%AA%CF%C3%A1%A5%A4%BE%A4%A6%A4%CE%A4%BF%A4%DE%A4%B4%A4%CE%A4%BF%A4%DE%A4%B4%A4%E4%A4%AD)
 - [科研費の書類を TeX で書く](http://www.clas.kitasato-u.ac.jp/~fujiwara/kakenhi/kakenhi.html)
-- [科研費LaTeXの破線処理](http://d.hatena.ne.jp/takehikom/20101027/1288124853)
+- [科研費LaTeXの破線処理](https://takehikom.hateblo.jp/entry/20101027/1288124853)
 - [科研費LaTeXマクロをTeXShop+XeLaTeXで動かす。](http://user.math.kyushu-u.ac.jp/index.php?iwase%2Fkaken)

@@ -7,9 +7,9 @@ pukiwiki: "Drag and Drop UpTeX"
 
 # Drag and Drop UpTeX
 
-## [Drag &amp; Drop UpTeX](http://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
+## [Drag &amp; Drop UpTeX](https://www2.kumagaku.ac.jp/teacher/herogw/) {#ha7286b6}
 
-Drag &amp; Drop UpTeX は，小川弘和さんによって配布されている macOS 専用 TeX ディストリビューションです。
+Drag &amp; Drop UpTeX は，小川 弘和さんによって配布されている macOS 専用 TeX ディストリビューションです。
 
 構成はコンパクト（具体的には TeX Live scheme-small に collection-langjapanese + α）ですが，upLaTeX を使うには十分です。
 また，日本語フォントのセットアップを自動で行う GUI も付属しているため，日本語フォントの設定を最低限の操作で完了させることができます。
@@ -24,7 +24,7 @@ TeX 環境をアプリケーション・バンドルのなかに包むことで�
 
 ### Drag &amp; Drop UpTeX のインストールと設定 {#e30d8e71}
 
-添付の [ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) をよくお読みください。
+添付の [ReadMe.pdf](https://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) をよくお読みください。
 アプリケーションファイル名は UpTeX.app です。
 基本的にはこれを /Applications 以下などにインストールするとよいでしょう。
 
@@ -42,4 +42,4 @@ TeX Live のアップデートは，環境設定パネルから「パッケー�
 
 ### 更新履歴 {#a33a457a}
 
-[ReadMe.pdf](http://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。
+[ReadMe.pdf](https://www2.kumagaku.ac.jp/teacher/herogw/archive/ReadMe.pdf) の更新履歴と公式サイトの What's NEW を参照。

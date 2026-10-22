@@ -87,8 +87,12 @@ dvipdf
 Ghostscript (gs)
 : /usr/local/bin/gs-noX11
 
+: /opt/homebrew/bin/gs
+
 ps2pdf
 : /usr/local/bin/ps2pdf
+
+: /opt/homebrew/bin/ps2pdf
 
 > [![](/attach/LaTeXiT/LaTeXiT-program.png)](/attach/LaTeXiT/LaTeXiT-program.png)
 
@@ -112,8 +116,8 @@ pdfLaTeX
 ### 関連リンク {#tab9989c}
 
 - [LaTeXiT FAQ](https://www.chachatelier.fr/latexit/latexit-faq.php)
-- [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](http://ottan.xyz/mac-latex-presentation-92/)
-- [Texの設定(MacTex)](https://sites.google.com/site/yoshitoshimajiri/memo-for-researches/texno-she-ding-m)
+- [MacでTeXを使う](http://js2iiu.wp.xdomain.jp/2021/11/28/mac%E3%81%A7tex%E3%82%92%E4%BD%BF%E3%81%86/)
+- [MacのLaTeX環境構築とプレゼン資料に数式を貼り付けるのに便利な「LaTeXiT」](https://ottan.jp/posts/2014/09/mac-latex-presentation/)
 - [tips of LaTeXiT](http://astr.phys.saga-u.ac.jp/~funakubo/research/LaTeXiT_tips/LaTeXiT.html)
 - LaTeXiT で Undefined control sequence. l.1 \documentclass とのエラーメッセージ ([qa:56339](https://okumuralab.org/~okumura/texfaq/qa/56339.html), [qa:56340](https://okumuralab.org/~okumura/texfaq/qa/56340.html), [qa:56341](https://okumuralab.org/~okumura/texfaq/qa/56341.html), [qa:56342](https://okumuralab.org/~okumura/texfaq/qa/56342.html), [qa:56343](https://okumuralab.org/~okumura/texfaq/qa/56343.html), [qa:56344](https://okumuralab.org/~okumura/texfaq/qa/56344.html), [qa:56345](https://okumuralab.org/~okumura/texfaq/qa/56345.html), [qa:56346](https://okumuralab.org/~okumura/texfaq/qa/56346.html), [qa:56347](https://okumuralab.org/~okumura/texfaq/qa/56347.html), [qa:56352](https://okumuralab.org/~okumura/texfaq/qa/56352.html), [qa:56353](https://okumuralab.org/~okumura/texfaq/qa/56353.html), [qa:56359](https://okumuralab.org/~okumura/texfaq/qa/56359.html))
 - [LaTeXItで数式の一部に日本語](https://okumuralab.org/tex/mod/forum/discuss.php?d=833)

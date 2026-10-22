@@ -16,7 +16,7 @@ pukiwiki: "NppExec"
 ## [NppExec](https://sourceforge.net/projects/npp-plugins/files/NppExec/) → 問題が発生する場合は [jN](/jN/) を使用する {#n297fed5}
 
 NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
-[https://sourceforge.net/projects/npp-plugins/files/NppExec/](https://sourceforge.net/projects/npp-plugins/files/NppExec/) から NppExec の 64-bit プラグインがダウンロードできます．<br>
+[https://github.com/d0vgan/nppexec/releases](https://github.com/d0vgan/nppexec/releases) または [https://sourceforge.net/projects/npp-plugins/files/NppExec/](https://sourceforge.net/projects/npp-plugins/files/NppExec/) から NppExec の 64-bit プラグインがダウンロードできます．<br>
 \[プラグイン\]-\[NppExec\]-\[Show Console Dialog\] にチェックをいれた場合は，NPP_CONSOLE 1 の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Follow $(CURRENT_DIRECTORY)\] にチェックをいれた場合は，cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; の処理は書かなくても OK です．<br>
 \[プラグイン\]-\[NppExec\]-\[Execute...\] または F6 キーで設定および実行ができます．<br>
@@ -24,7 +24,7 @@ NppExec を使うと LaTeX 環境を簡単に作ることができます．<br>
 設定した後で \[プラグイン\]-\[NppExec\]-\[Advanced Options...\] の Menu item から設定した項目を登録します．<br>
 \[設定\]-\[ショートカット管理...\]-\[Plugin commands\] から登録した項目のショートカットの設定をします．<br>
 
-- [NppExec (コマンドの実行) - Notepad++のプラグイン解説](http://www.crystal-creation.com/software/technical-information/tool/editor/notepad-plus/plug-in/nppexec/)
+- [NppExec (コマンドの実行) - Notepad++のプラグイン解説](https://so-zou.jp/software/tech/tool/editor/notepad-plus/plug-in/nppexec/)
 
 ### License {#b6f13e16}
 
@@ -275,7 +275,7 @@ GPLv3
 　　Command(s):<br>
 　　　NPP_SAVE<br>
 　　　NPP_CONSOLE 1<br>
-　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1 -sjis-terminal" "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
+　　　cmd /c cd /d "$(CURRENT_DIRECTORY)" &amp;&amp; tasklist /fi "IMAGENAME eq Acrobat.exe" /nh | findstr "Acrobat.exe" > nul &amp;&amp; pdfopen --file "$(NAME_PART).pdf" &amp;&amp; pdfclose --file "$(NAME_PART).pdf" &amp; ptex2pdf -u -l -ot "-no-guess-input-enc -kanji=utf8 -synctex=1" "$(NAME_PART)" &amp;&amp; set CURRENT_LINE=$(CURRENT_LINE) &amp;&amp; set /a CURRENT_LINE=CURRENT_LINE+1 &amp;&amp; echo synctex view -i "%CURRENT_LINE%:0:$(FILE_NAME)" -o "$(NAME_PART).pdf" -x "pdfopen --file "%{output}" --page %{page+1}" | cmd<br>
 
 <br>
 

@@ -48,7 +48,7 @@ SyncTeX 用のデータが出力できたら，エディタとビューワのそ
 - [TeXShop](/TeXShop/)
 - [SumatraPDF](/SumatraPDF/)
 - [Skim](/Skim/)
-- [Galley](https://munepi.github.io/Galley/)
+- [Galley](/Galley/)
 - [Okular](/Okular/)
 - [zathura](/zathura/)
 - [qpdfview](/qpdfview/)
