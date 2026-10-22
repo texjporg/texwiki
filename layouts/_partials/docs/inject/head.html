@@ -1,0 +1,6 @@
+{{- /* Old PukiWiki URLs (/?PageName ...) arrive at the home page. */ -}}
+{{- if .IsHome -}}
+{{- with resources.Get "texwiki-redirect.js" | resources.Minify -}}
+<script src="{{ .RelPermalink }}"></script>
+{{- end -}}
+{{- end -}}

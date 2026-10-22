@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{ partial "docs/html-head" . }}
+  {{- with resources.Get "texwiki-redirect.js" | resources.Minify }}
+  <script src="{{ .RelPermalink }}"></script>
+  {{- end }}
+  <style>
+    .not-found { min-height: 100vh; padding: 2rem; }
+    .not-found h1 { font-weight: lighter; }
+  </style>
+</head>
+<body class="not-found flex justify-center align-center">
+  <main class="text-center">
+    <h1>ページが見つかりません</h1>
+    <p>このページは存在しないか、名前が変わりました。
+      <a href="{{ .Site.Home.RelPermalink }}">トップページ</a>か
+      <a href="/ページ一覧/">ページ一覧</a>から探してください。</p>
+  </main>
+</body>
+</html>

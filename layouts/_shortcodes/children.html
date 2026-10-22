@@ -1,0 +1,6 @@
+{{- /* {{< children >}}: the pages under this one, as #ls did */ -}}
+<ul>
+{{- range .Page.Pages.ByTitle }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{- end }}
+</ul>

@@ -1,0 +1,6 @@
+{{- /* {{< include "ページ名" >}}: another page's body, as #pcomment did */ -}}
+{{- with .Site.GetPage (printf "/%s" (.Get 0)) -}}
+<div class="texwiki-include">{{ .Content | replaceRE `(?s)^\s*<h1[^>]*>.*?</h1>` "" | safeHTML }}</div>
+{{- else -}}
+{{- errorf "include: page %q not found (%s)" (.Get 0) .Page.File.Path -}}
+{{- end -}}

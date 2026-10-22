@@ -1,0 +1,10 @@
+{{- /* {{< pagelist >}}: every page, as PukiWiki's ?cmd=list did */ -}}
+{{- $pages := where .Site.RegularPages "Params.pukiwiki" "!=" nil -}}
+{{- $sections := where .Site.Sections "Params.pukiwiki" "!=" nil -}}
+{{- $all := sort ($pages | append $sections | append (where .Site.Sections "Params.pukiwiki" nil)) "Title" -}}
+<p>{{ len $all }}ページ</p>
+<ul class="texwiki-pagelist">
+{{- range $all }}
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+{{- end }}
+</ul>

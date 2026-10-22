@@ -1,0 +1,80 @@
+# TeX Wiki (https://texwiki.texjp.org/), built with Hugo and the hugo-book
+# theme. The GitHub Actions workflow passes --baseURL, so the value here
+# only matters for local `hugo server`.
+baseURL: https://texwiki.texjp.org/
+title: TeX Wiki
+theme: hugo-book
+locale: ja
+defaultContentLanguage: ja
+hasCJKLanguage: true
+timeZone: Asia/Tokyo
+
+# Page URLs are the old PukiWiki page names, spaces and Japanese included
+# (each page sets `url` in its front matter). Never lower-case them.
+disablePathToLower: true
+
+# "Last modified" comes from git (the workflow checks out the full history).
+enableGitInfo: true
+
+markup:
+  goldmark:
+    renderer:
+      # The pages use inline HTML for what Markdown lacks (colours, spans,
+      # merged table cells, anchors).
+      unsafe: true
+    extensions:
+      # "--" and quotes must stay as typed: this is a TeX wiki.
+      typographer:
+        disable: true
+      # A newline between two Japanese characters is not a space.
+      cjk:
+        enable: true
+        eastAsianLineBreaks: true
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+  highlight:
+    noClasses: false
+
+outputs:
+  home: [html, rss]
+  page: [html]
+  section: [html]
+
+menus:
+  before:
+    - name: トップページ
+      url: /
+      weight: 10
+    - name: サイトマップ
+      url: /サイトマップ/
+      weight: 20
+    - name: ページ一覧
+      url: /ページ一覧/
+      weight: 30
+    - name: 最近の更新
+      url: /最近の更新/
+      weight: 40
+  after:
+    - name: TeX Wiki編集方針
+      url: /TeX Wiki編集方針/
+      weight: 10
+    - name: このWikiについて
+      url: https://github.com/texjporg/texwiki#readme
+      weight: 20
+    - name: GitHub
+      url: https://github.com/texjporg/texwiki
+      weight: 30
+
+params:
+  BookTheme: auto
+  BookToC: true
+  BookBreadcrumbs: true
+  BookSection: "/"
+  BookSearch: true
+  BookRepo: https://github.com/texjporg/texwiki
+  BookEditLink: "{{ .Site.Params.BookRepo }}/edit/main{{ .Path }}"
+  BookLastChangeLink: "{{ .Site.Params.BookRepo }}/commit/{{ .GitInfo.Hash }}"
+  BookDateFormat: "2006-01-02"
+  BookPortableLinks: false
+  BookServiceWorker: false
