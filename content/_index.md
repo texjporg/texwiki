@@ -11,7 +11,7 @@ pukiwiki: "FrontPage"
 
 <!-- * FrontPage [#pe4f375a] -->
 
-TeX Wiki は、[TeX](/TeX/)、[LaTeX](/LaTeX/)、[PDF](/PDF/) などに関する情報を提供する、読者参加型ページです。誰でも編集できますので、「誤りを見つけた」「読みづらいので直したい」「最新情報を追記したい」などあれば、気軽に編集して下さい。編集に必要なパスワードはこのページの左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>に書いてあります。
+TeX Wiki は、[TeX](/TeX/)、[LaTeX](/LaTeX/)、[PDF](/PDF/) などに関する情報を提供する、読者参加型ページです。誰でも編集できますので、「誤りを見つけた」「読みづらいので直したい」「最新情報を追記したい」などあれば、気軽に編集して下さい。各ページの末尾の「このページを編集する」から、GitHubのアカウントで編集を提案できます（[編集のしかた](https://github.com/texjporg/texwiki#編集するには)）。
 
 編集方針は[TeX Wiki編集方針](</TeX Wiki編集方針/>)にあります．また、編集方針についてのご意見がありましたら [TeX Forum での議論](https://okumuralab.org/tex/mod/forum/discuss.php?d=1485)の方にお寄せください。
 
@@ -135,11 +135,9 @@ Unicode 対応やその他の拡張を施した新たな TeX 処理系が開発�
 - [海外リンク](</海外リンク/>)
 - [CTAN](/CTAN/)
 
-## TeX 関連情報 <span style="font-size:10px">（ユーザ名・パスワードは左の<span style="color:#FF2800;background-color:white;"><strong>赤色の文</strong></span>を参照）</span> {#i40caa06}
+## TeX 関連情報 {#i40caa06}
 
-<span style="font-size:10px"><em>ここは検索ボックスではありません．</em></span>
 
 {{< include "コメント/FrontPage" >}}
 
-★↑ TeX 関連情報をご提供ください
-（ユーザ名・パスワードは左の<span style="color:#FF2800;"><strong>赤色の文</strong></span>を参照）。
+TeX 関連情報は[コメント/FrontPage](</コメント/FrontPage/>)のページに、新しいものを上にして書き足してください（「このページを編集する」から）。
